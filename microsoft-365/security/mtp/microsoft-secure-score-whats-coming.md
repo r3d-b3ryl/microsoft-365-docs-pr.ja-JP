@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3e9a8b34f8f112cadc0377dd73ba846c88b8604c
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374009"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409235"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft のセキュリティで保護されたスコア
 
@@ -33,6 +33,17 @@ Microsoft セキュリティスコアは https://security.microsoft.com/securesc
 ## <a name="proposed-changes"></a>Proposed changes
 
 弊社では、セキュリティ上の姿勢をより良いものにするために、近日中に変更を行っており、利便性を向上 [さ](microsoft-secure-score.md) せています。 スコアと可能な最大スコアは変わる可能性があります。
+
+### <a name="december-2020"></a>2020年12月
+
+エンドポイント (以前の Microsoft Defender ATP) に対する Microsoft Defender のアカウント関連の改善アクションを6つ追加します。
+
+- ' Minimum password length ' を ' 14 以上の文字 ' に設定します
+- [パスワードの履歴を強制する] を [24 以上のパスワード] に設定します。
+- ' 最大パスワードの有効期間 ' を ' 60 以下に設定し、0以外の日数を設定します。
+- ' Minimum password age ' を ' 1 またはそれ以上 ' 日 ' に設定します
+- 組み込みの管理者アカウントを無効にする
+- 組み込みのゲストアカウントを無効にする
 
 ### <a name="november-2020"></a>2020 年 11 月
 

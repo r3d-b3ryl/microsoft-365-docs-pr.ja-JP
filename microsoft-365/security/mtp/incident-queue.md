@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender でインシデントの優先度を設定する
-description: Microsoft 365 Defender でインシデントキューからインシデントの優先順位を設定する方法について説明します。
+description: Microsoft 365 Defender でインシデントキューからインシデントをフィルター処理する方法について説明します。
 keywords: インシデント、キュー、概要、デバイス、ID、ユーザー、メールボックス、メール、インシデント
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877221"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409257"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデントの優先度を設定する
 
@@ -38,7 +38,7 @@ ms.locfileid: "48877221"
 
 
 
-Microsoft 365 Defender は、関連付け分析を適用し、さまざまな製品からのすべての関連アラートと調査を1つのインシデントに集約します。 また、microsoft 365 Defender は、Microsoft 365 Defender が不動産および製品スイート全体で使用するエンドツーエンドの可視性を与えられた悪意のあるアクティビティに対して、固有のアラートをトリガーします。 これにより、Microsoft 365 Defender narrates によって、より広範な攻撃ストーリーが実現されます。これにより、セキュリティ運用アナリストは、組織全体にわたる複雑な脅威を理解し、扱うことができます。
+Microsoft 365 Defender は、関連付け分析を適用し、さまざまな製品からのすべての関連アラートと調査を1つのインシデントに集約します。 また、microsoft 365 Defender は、Microsoft 365 Defender が不動産および製品スイート全体で使用するエンドツーエンドの可視性を与えられた悪意のあるアクティビティに対して、固有のアラートをトリガーします。 このビューを使用すると、セキュリティ運用アナリストにより広範な攻撃ストーリーが提供されます。これにより、組織全体にわたる複雑な脅威をより深く理解し、扱うことができます。
 
 
 **インシデント キュー** には、デバイス、ユーザー、メールボックス全体からフラグが付けられたインシデントのコレクションが表示されます。 これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。
@@ -52,7 +52,7 @@ Microsoft 365 Defender は、関連付け分析を適用し、さまざまな製
 
 わかりやすくするために、自動インシデントの名前付けは、影響を受けるエンドポイント数、影響を受けたユーザー、検出ソース、カテゴリなどのアラート属性に基づいてインシデント名を生成します。 これにより、インシデントの範囲をすばやく理解することができます。
 
-例: 複数の *ソースによって報告された複数のエンドポイントのマルチステージインシデント* 。
+例: 複数の *ソースによって報告された複数のエンドポイントのマルチステージインシデント*。
 
 > [!NOTE]
 > 自動インシデントの名前の公開前に存在していたインシデントは、名前が変更されません。
@@ -100,8 +100,7 @@ Microsoft 365 Defender は、関連付け分析を適用し、さまざまな製
 ### <a name="status"></a>状態
 状態に基づいて表示されるインシデントのリストを制限して、アクティブなインシデントまたは解決されたインシデントを確認できます。
 
->[!IMPORTANT]
->現在、分類、デバイスグループ、調査状態、OS プラットフォームの各フィルターは、パブリックプレビューでのみ使用できます。
+
 
 
 ## <a name="next-steps"></a>次の手順
