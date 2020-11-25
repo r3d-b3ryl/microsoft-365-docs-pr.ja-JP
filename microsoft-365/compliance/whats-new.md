@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンスセンターに新しい新しいソリューションを追加したり、フィードバックに基づいて既存の機能を更新したり、最新のドキュメントを展開したりすることができるかどうかにかかわらず、Microsoft 365 は、変更されたコンプライアンスの状況を常に把握するのに役立つ情報を用意しています。 今月の内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1d4583e5216a369801c48a47b488a35fc4e62b37
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376610"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407341"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -93,7 +93,7 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-[米国政府機関のお客様のサポート](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 機密ラベルは、GCC、GCC High、DoD の各お客様がサポートされるようになりました。これは、Azure Information Protection の統合されたラベル付きクライアントとスキャナーに対してのみサポートされます。
+[米国政府機関のお客様のサポート](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 機密ラベルは、GCC、GCC High、DoD の各お客様がサポートされるようになりました。これは、Azure Information Protection の統合されたラベル付きクライアントとスキャナーに対してのみサポートされます。
 
 ### <a name="trainable-classifiers"></a>トレーニング可能な分類子
 
@@ -114,7 +114,7 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 
 今月の公開プレビューには、いくつかの新機能と強化された機能があります。
 
-**Insider リスク管理**
+**インサイダー リスクの管理**
 
 - 6つの新しい [ポリシーテンプレート](insider-risk-management-policies.md#policy-templates)を確認してください。
     - 優先度の高いユーザーによるデータリーク
