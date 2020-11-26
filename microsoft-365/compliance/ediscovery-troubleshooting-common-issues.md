@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Office 365 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順について説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5c9d917306c1a4ffd0dd1e11e1dd87c135e94f05
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545955"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422866"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、および解決する
 
@@ -113,25 +113,25 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 ### <a name="resolution"></a>解決方法
 
-1. この記事に記載されている手順を使用して、 [ダウンロード速度を上げ](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)ます。
-
-2. それでも問題が解決しない場合は、 [セキュリティに & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) に接続し、次のコマンドを実行します。
+1. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
    ```
 
-3. SearchResults パラメーターと Searchresults パラメーターにダウンロードされるデータの量を検索します。
+2. SearchResults パラメーターと Searchresults パラメーターにダウンロードされるデータの量を検索します。
 
-4. 次のコマンドを実行します。
+3. 次のコマンドを実行します。
 
    ```powershell
    Get-ComplianceSearchAction | FL
    ```
 
-5. [結果] フィールドに、エクスポートされたデータを検索し、発生したエラーがあるかどうかを確認します。
+4. [結果] フィールドに、エクスポートされたデータを検索し、発生したエラーがあるかどうかを確認します。
 
-6. エラーが発生した場合に、コンテンツをエクスポートしたディレクトリにある、トレースログファイルを確認します。
+5. エラーが発生した場合に、コンテンツをエクスポートしたディレクトリにある、トレースログファイルを確認します。
+
+6. それでも問題が解決しない場合は、大規模な結果セットを返す検索を小さな検索に分割することを検討してください。 たとえば、検索クエリで日付範囲を使用して、より短時間でダウンロードできる結果セットを返すことができます。
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>エラー/問題: "内部サーバーエラー (500) が発生しました"
 
