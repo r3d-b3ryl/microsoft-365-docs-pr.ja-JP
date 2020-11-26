@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを非常に効率的に制御します。必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 4479731af4787a6ef77dc48d27e5dfb60834d9c5
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376580"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385253"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -99,7 +99,7 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer のアイテム保持ポリシー
 
 > [!NOTE]
-> Yammer のアイテム保持ポリシーがプレビューで展開されています。まだ Yammer の新しい場所が表示されていない場合は、数日後にもう一度お試しください。
+> Yammer のアイテム保持ポリシーがプレビューで展開されています。 まだ Yammer の新しい場所が表示されていない場合は、数週間後にもう一度お試しください。
 >
 > この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
 
@@ -193,7 +193,7 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 
 Microsoft 365 グループ (以前の Office 365 グループ) のコンテンツを保持または削除するには、**Microsoft 365 グループ** の場所を使用する必要があります。Microsoft 365 グループには Exchange メールボックスがありますが、**Exchange メール** の場所全体を含むアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。さらに、**Exchange メール** の場所では、最初に含めるまたは除外するグループ メールボックスを指定できますが、アイテム保持ポリシーを保存しようとすると、"RemoteGroupMailbox" が Exchange の場所の有効な選択ではないというエラーが表示されます。
 
-Microsoft 365 グループに適用される保持ポリシーには、グループのメール ボックスと SharePoint チーム サイトが含まれます。 SharePoint の Teams サイトに保存されたファイルは、場所でカバーされていますが、独自の保持ポリシーの場所を持つ Teams のチャットや Teams のチャネルはカバーされません。
+Microsoft 365 グループに適用されるアイテム保持ポリシーには、グループ メールボックスと SharePoint チーム サイトが含まれます。SharePoint チーム サイトに保存されているファイルはこの場所でカバーされますが、独自のアイテム保持ポリシーの場所を持つ Teams チャットまたは Teams チャネル メッセージはカバーされません。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business の構成情報
 
@@ -227,7 +227,7 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 
 アイテム保持ポリシーを構成するときは、コンテンツを無期限に、または特定の日数、月数、または年数の間保持することを選択できます。保持期間は、アイテム保持ポリシーが適用された時点からではなくコンテンツの経過時間から計算されます。
 
-保持期間の開始時に、コンテンツがいつ作成されたか、またはファイルと、コンテンツが最後に変更された SharePoint、OneDrive、Office 365 の場所でのみサポートされるかを選択することもできます。
+保持期間の開始時に、コンテンツがいつ作成されたか、またはファイルと、コンテンツが最後に変更された SharePoint、OneDrive、Microsoft 365 グループの場所でのみサポートされるかを選択することもできます。
 
 例:
 
@@ -279,6 +279,9 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 > このシナリオでは、その場所の **All** 設定をアイテム保持ポリシーの対象にしたくない場合、場所をオフに切り替えます。あるいは、ポリシーの適用から除外されるように指定することもできます。
 
 ## <a name="updating-retention-policies"></a>アイテム保持ポリシーの更新
+
+アイテム保持ポリシーを作成して保存した後には変更できない設定があり、それらは以下のものを含みます。
+- アイテム保持ポリシー名と保持期間を除く保持設定、および保持期間を開始するタイミング。
 
 アイテム保持ポリシーを編集し、アイテムが既にアイテム保持ポリシーの元の設定の対象となっている場合、更新された設定は、新しく特定されたアイテムに加えて、このアイテムに自動的に適用されます。
 
