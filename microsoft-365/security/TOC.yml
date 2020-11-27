@@ -139,8 +139,10 @@
                       href: mtp/advanced-hunting-expert-training.md
                     - name: 共有クエリを使用する
                       href: mtp/advanced-hunting-shared-queries.md
-                    - name: デバイス、メール、アプリ、ID 全体で捜索する
+                    - name: デバイス、メール、アプリ、ID 全体で探す
                       href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: ランサムウェアを探す
+                      href: mtp/advanced-hunting-find-ransomware.md
                     - name: Defender for Endpoint からの移行
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: クエリ結果を操作する
