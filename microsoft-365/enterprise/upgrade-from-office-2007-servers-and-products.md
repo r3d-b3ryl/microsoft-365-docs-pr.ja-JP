@@ -24,18 +24,18 @@ f1.keywords:
 - NOCSH
 description: この記事では、office 2007 のサーバーおよびクライアントからのアップグレードに役立つリソースを提供します。これは、Office 2007 のサポートが終了したためです。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3dc33d03c32880627f3c85d6212756f45548ce0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28fa1d56ef66297eaf69d2d11b720e3de2d668f7
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691590"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519788"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Office 2007 製品とサービスを使用している場合は、これらのアプリケーションのサポートが終了しています。 アップグレードを計画している間は、microsoft 365 以降の Microsoft Cloud への移行を検討するのに非常に時間がかかる場合があります。 この記事を出発点として、オプションを確認してアップグレードを計画します。
+Office 2007 製品とサービスを使用している場合は、これらのアプリケーションのサポートが終了していることに注意してください。 Microsoft クラウドに移行することを検討してください (Microsoft 365 以降)。 この記事を出発点として、オプションを確認してアップグレードを計画します。
       
 ## <a name="office-2007-planning-roadmaps"></a>Office 2007 の計画のロードマップ
   
@@ -50,7 +50,13 @@ Office 2007 製品とサービスのサポートが終了しました。 次の�
 |[Office Communications Server からのアップグレード](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |2018年1月8日  <br/> |
 |[PerformancePoint Server 2007 のサポート終了ロードマップ](pps-2007-end-of-support.md) <br/> |2018 年 1 月 9 日  <br/> |
    
-Microsoft 製品のサポートが終了するときには、新しいセキュリティ更新プログラム、セキュリティ以外の更新プログラム、無料または有料サポートのオプション (カスタムサポート契約を含む)、またはオンライン技術コンテンツの更新はありません。エンタープライズ組織か個人のホームユーザーかにかかわらず、いくつかのオプションを検討する必要があります。
+Microsoft 製品のサポートが終了した後は、それ以上のことはありません。
+- 新しいセキュリティ更新プログラム
+- 新しいセキュリティ以外の更新プログラム
+- 利用可能な無料または有料サポートオプション (カスタムサポート契約を含む)
+- 新しいオンライン技術コンテンツの更新
+
+エンタープライズ組織か個人ユーザーかにかかわらず、いくつかのオプションを考慮する必要があります。
 
 ## <a name="im-a-home-user-what-do-i-do"></a>私はホーム ユーザーです。 どうしたらよいでしょうか。
 
@@ -64,4 +70,3 @@ Microsoft 製品のサポートが終了するときには、新しいセキュ�
 
 [Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる](plan-upgrade-previous-versions-office.md)
   
-

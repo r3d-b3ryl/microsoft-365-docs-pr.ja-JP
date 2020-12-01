@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: deeced350ad867a374a486967c2cbd278ba91710
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371672"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519331"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルにアクセスする
 
@@ -59,7 +59,7 @@ Azure portal または Microsoft エンドポイントマネージャーのい�
 Azure Active Directory の役割の割り当てに関するヘルプが必要な場合は、「 [Azure Active directory の管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)」を参照してください。
 
 組み込みの役割を簡単に管理するために、カスタム役割ごとにセキュリティグループが作成されています (たとえば、「モダン Workplace Roles –セキュリティマネージャー」)。 ユーザーをセキュリティグループのいずれかに割り当てるには、次の手順を実行します。
-1.  Azure portal に移動して、Azure Active Directory ブレードに移動します。
+1.  Microsoft エンドポイントマネージャーポータルに移動する
 2.  左側の [グループ] を選択します。
 3.  モダンワークプレースの役割を検索し、割り当てる役割に関連付けられているグループを選択します。 
 4.  左側の [メンバー] を選択し、コマンドバーで [+ メンバーの追加] を選択します。

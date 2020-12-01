@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 生産性スコアによるプライバシーの保護
-ms.openlocfilehash: 8686c7c86249a408fe8d4fda14c2ae23a168cafe
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: c88886e9d1470bda48d023b77472e7dd296508a0
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999408"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519355"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生産性スコアのプライバシー制御
 
@@ -54,7 +54,7 @@ People エクスペリエンスエリア内では、組織レベルで指標を�
 
 変更の管理と採用を担当するすべてのユーザーにレポート閲覧者の役割を割り当てます。 この役割により、テナントレベルの指標とユーザーごとのレベルの詳細を含む完全な環境にアクセスできるようになります。
 
-People エクスペリエンスレポートには、カテゴリ詳細ページごとのユーザーごとのアクティビティの詳細が含まれています。 ユーザーエクスペリエンスの集約指標のみにアクセスできるようにするには、利用状況の概要レポート閲覧者 (2020 年10月10日開始) と呼ばれるカスタムロールを割り当てます。 この役割は、11/15/2020 の Microsoft 管理センターから割り当てが可能になるまで、PowerShell コマンドレットを通じて割り当てる必要があります。
+People エクスペリエンスレポートには、カテゴリ詳細ページごとのユーザーごとのアクティビティの詳細が含まれています。 ユーザーエクスペリエンスの集約指標のみにアクセスできるようにするには、利用状況の概要レポート閲覧者 (2020 年10月10日開始) と呼ばれるカスタムロールを割り当てます。 この役割は、この年の後に Microsoft 管理センターから割り当てられるまで、PowerShell コマンドレットを通じて割り当てる必要があります。
 
 PowerShell で利用状況の概要レポートの閲覧者の役割を割り当てるには、次のようにします。
 
@@ -62,6 +62,7 @@ PowerShell で利用状況の概要レポートの閲覧者の役割を割り当
 
 ```powershell
 Connect-AzureAD
+Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
 $role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
 Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
 $u=Get-AzureADUser -ObjectId <user upn>
@@ -76,9 +77,9 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 すべてのレポートで匿名で収集されるデータを作成するには、全体管理者である必要があります。 この操作を行うと、生産性のスコアや Microsoft 365 の使用状況を含む、すべてのレポートのユーザー、グループ、サイト名など、識別可能な情報が表示されなくなります。
 
-1. 管理センターで、[設定] [ **Settings**   >   **組織設定** ] に移動し、[ **サービス** ] タブの [ **レポート** ] を選択します。
-2. [  **レポート** ] を選択し、[  **生産性スコアと利用状況レポート] にユーザー、グループ、およびサイト名の匿名識別子を表示** するように選択します。 この設定は、利用状況レポートとテンプレートアプリの両方に適用されます。
-3. [  **Save changes** ] を選びます。
+1. 管理センターで、[設定] [ **Settings**   >   **組織設定**] に移動し、[**サービス**] タブの [**レポート**] を選択します。
+2. [  **レポート**] を選択し、[  **生産性スコアと利用状況レポート] にユーザー、グループ、およびサイト名の匿名識別子を表示** するように選択します。 この設定は、利用状況レポートとテンプレートアプリの両方に適用されます。
+3. [  **Save changes**] を選びます。
 
 :::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="ユーザー情報をレポート用に匿名にします。":::
 
@@ -86,8 +87,8 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 生産性スコアが一般公開されている場合は、生産性スコアの people エクスペリエンス領域をオプトアウトすることもできます。 オプトインした場合、組織からこれらの指標を表示することはできません。また、コミュニケーション、会議、チームワーク、コンテンツコラボレーション、モビリティを含む計算から組織が削除されることはありません。
 
-1. 管理センターで、[設定] [ **Settings**   >   **組織設定** ] に移動し、[ **サービス** ] タブの [ **レポート** ] を選択します。
-2. [  **レポート** ] を選択し、[  **Microsoft 365 の利用状況データをユーザーエクスペリエンスの分析に使用できるよう** にする] チェックボックスをオフにします。 Intune 構成マネージャーでエンドポイント分析のデータ共有設定を変更する方法について理解するには、[ **詳細情報** ] をクリックします。
-3. [  **Save changes** ] を選びます。
+1. 管理センターで、[設定] [ **Settings**   >   **組織設定**] に移動し、[**サービス**] タブの [**レポート**] を選択します。
+2. [  **レポート**] を選択し、[  **Microsoft 365 の利用状況データをユーザーエクスペリエンスの分析に使用できるよう** にする] チェックボックスをオフにします。 Intune 構成マネージャーでエンドポイント分析のデータ共有設定を変更する方法について理解するには、[ **詳細情報**] をクリックします。
+3. [  **Save changes**] を選びます。
 
 :::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="ユーザーエクスペリエンスからオプトアウトできる [組織の設定] ページ":::

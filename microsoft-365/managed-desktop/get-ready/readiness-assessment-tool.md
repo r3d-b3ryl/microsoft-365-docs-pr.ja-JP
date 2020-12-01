@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931926"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519823"
 ---
 # <a name="readiness-assessment-tool"></a>準備状況評価ツール
 
@@ -22,7 +22,7 @@ Microsoft マネージドデスクトップに登録するときに、よりス�
 
 このツールは、microsoft のマネージドデスクトップで機能することを確認するために、Microsoft エンドポイントマネージャー (特に、Microsoft Intune)、Azure Active Directory (Azure AD)、および Microsoft 365 の設定をチェックします。 Microsoft マネージドデスクトップは、前回 Azure AD 組織 (テナント) でチェックを実行してから12か月間、これらのチェックに関連付けられているデータを保持します。 12か月を過ぎると、そのフォームは重複して識別された形式で保持されます。  収集するデータを削除することもできます。
 
-少なくとも Intune 管理者の役割を持つすべてのユーザーはこのツールを実行できますが、2つのチェック ([証明書コネクタ](readiness-assessment-fix.md#certificate-connectors) と [多要素認証](readiness-assessment-fix.md#multi-factor-authentication) には追加のアクセス許可が必要です。
+少なくとも Intune 管理者の役割を持つすべてのユーザーはこのツールを実行できますが、2つのチェック ([条件付きアクセスポリシー](readiness-assessment-fix.md#conditional-access-policies) と [多要素認証](readiness-assessment-fix.md#multi-factor-authentication) には追加のアクセス許可が必要です。
  
 評価ツールは、次の項目をチェックします。
 
@@ -77,5 +77,5 @@ Microsoft マネージドデスクトップに登録するときに、よりス�
 |---------|---------|
 |準備完了     | 登録を完了する前に、何もする必要はありません。        |
 |アドバイザリ    | 登録とユーザーのための最適な手順については、このツールの手順を実行してください。 登録は完了 *でき* ますが、最初のデバイスを展開する前に、これらの問題を修正する必要があります。        |
-|使用不可能 | これらの問題を修正しない場合、 *登録は失敗* します。 ツールの手順に従って解決します。        |
+|使用不可能 | これらの問題を修正しない場合、*登録は失敗* します。 ツールの手順に従って解決します。        |
 |Error | 使用している Azure Active Director (AD) の役割には、このチェックを実行するための十分な権限がありません。 |

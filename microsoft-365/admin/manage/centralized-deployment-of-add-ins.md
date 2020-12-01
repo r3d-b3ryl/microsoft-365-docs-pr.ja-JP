@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしているかどうかを判断し、一元展開を使用して Office アドインを展開できるようにします。
-ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 04c5f9090ca788f00f2d17d3af59e8022195e9be
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681626"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519367"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
@@ -43,9 +43,9 @@ ms.locfileid: "48681626"
 
 すべてのユーザーについて、アドインがクライアントに対して表示されるまでに最大24時間かかる場合があります。
   
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
-アドインを一元展開するには、ユーザーが microsoft 365 365 Apps for enterprise、microsoft 365 for business (および組織 ID を使用して Office にサインインしている)、および Exchange Online と Exchange Online の Exchange Online メールボックスを使用している必要があります。 サブスクリプションディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
+アドインを一元展開するには、ユーザーが Microsoft 365 Enterprise Sku: E3/E5/F3 または Business Sku: Business Basic、Business Standard、Business Premium (組織の ID を使用して Office にサインインしている)、および Exchange Online および Exchange Online の Exchange Online メールボックスを使用している必要があります。 サブスクリプションディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
 以下の Office および Exchange の特定の要件を確認することも、 [集中展開の互換性チェック](#centralized-deployment-compatibility-checker)を使用することもできます。
 
 一元展開は、次の機能をサポートしていません。
@@ -55,17 +55,17 @@ ms.locfileid: "48681626"
 - Exchange オンプレミスメールボックスへのアドインの展開
 - SharePoint に展開するアドイン  
 - Teams アプリ
-- コンポーネント オブジェクト モデル (COM) アドインまたは Visual Studio Tools for Office (VSTO) アドインの展開
-- Microsoft 365 の展開には、Microsoft 365 Apps for business などの Exchange は含まれていません。
+- コンポーネントオブジェクトモデル (COM) アドインまたは Visual Studio Tools for Office (VSTO) アドインの展開。
+- Microsoft 365 の展開 (Sku など) Exchange Online は含まれていません: Microsoft 365 Apps for Business および Microsoft 365 Apps for Enterprise。
 
 ### <a name="office-requirements"></a>Office の要件
 
 - Word、Excel、PowerPoint のアドインでは、ユーザーが次のいずれかを使用している必要があります。
-  - Windows デバイスで、バージョン1704以降の Microsoft 365 アプリ 365 for enterprise、または Microsoft 365 for business。
+  - Windows デバイス、バージョン1704以降の Microsoft 365 Enterprise Sku: E3/E5/F3 または Business Sku: Business Basic、Business Standard、Business Premium。
   - Mac では、バージョン15.34 以降。
 
 - Outlook の場合、ユーザーは次のいずれかを使用する必要があります。 
-  - Microsoft 365 for enterprise、または Microsoft 365 for business のバージョン1701以降の Microsoft 365 アプリ。
+  - バージョン1701以降の Microsoft 365 Enterprise Sku: E3/E5/F3 または Business Sku: Business Basic、Business Standard、Business Premium。
   - バージョン1808以降の Office Professional Plus 2019 または Office Standard 2019。
   - 16.0.4494.1000 以降のバージョンの Office Professional Plus 2016 (MSI) または Office Standard 2016 (MSI)\*
   - 15.0.4937.1000 以降のバージョンの Office Professional Plus 2013 (MSI) または Office Standard 2013 (MSI)\*
@@ -74,20 +74,6 @@ ms.locfileid: "48681626"
 - Outlook mobile for Android のバージョン2.2.145 以降 
     
     * MSI バージョンの Outlook では、[個人用アドイン] セクションではなく、適切な Outlook リボンに管理者がインストールしたアドインが表示されます。
-    
-
-#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>Microsoft 365 Apps for enterprise がインストールされているかどうかを確認する
-
-Microsoft 365 Apps for enterprise を使用するには、ユーザーは Microsoft 365 アカウントを持っていて、ライセンスが割り当てられている必要があります。 詳細については、「 [Microsoft 365 Apps for enterprise](https://go.microsoft.com/fwlink/p/?linkid=846328)」を参照してください。
-
-ユーザーがエンタープライズ向けの Microsoft 365 アプリをインストールしていて、それを最近使用しているかどうかを検出する最も簡単な方法は、microsoft 365 管理センターで利用できる Microsoft Office ライセンス認証レポートを使用することです。 このレポートでは、過去7日間、30日間、90日間、または180日以内に、エンタープライズ向けの Microsoft 365 アプリをアクティブ化したすべてのユーザーの一覧を示します。 一元展開をするという目的のため、Windows または Mac のデスクトップで行ったライセンス認証は、レポートの重要な列に表示されます。 このレポートは、Excel にエクスポートできます。 レポートの詳細については、「 [Microsoft Office ライセンス認証」の「microsoft 365 レポート](../activity-reports/microsoft-office-activations.md)」を参照してください。
-  
-ライセンス認証レポートを使用しない場合は、ユーザーが Word などの Office アプリケーションを自分のコンピューターで開くように求めることができます。次に、[**ファイル**アカウント] を選択し \> **Account**ます。 [ **製品情報**] の下に、次の図に示すように、 **サブスクリプション製品** と **microsoft 365 for Enterprise**または microsoft 365 Business Premium が表示されます。
-
-![Office アプリケーションの製品情報](../../media/product-information-microsoft-365-enterprise.png)
-  
-Microsoft 365 App for enterprise のヘルプについては、「 [microsoft 365 apps for enterprise のトラブルシューティングのヒント](https://go.microsoft.com/fwlink/p/?linkid=846339)」を参照してください。
-
 
 ### <a name="exchange-online-requirements"></a>Exchange Online の要件
 
@@ -110,7 +96,7 @@ Microsoft Exchange では、アドインのマニフェストが組織のテナ�
    Import-Module O365CompatibilityChecker
    ```
     
-3. **CompatabilityCheck**コマンドを実行します。
+3. **CompatabilityCheck** コマンドを実行します。
 
    ```powershell
    Invoke-CompatibilityCheck
@@ -170,5 +156,5 @@ Microsoft Exchange では、アドインのマニフェストが組織のテナ�
 |**プラットフォーム**|**デバッグ情報**|
 |:-----|:-----|
 |Office  <br/> | Charles/Fiddler ログ  <br/>  テナント ID ( [詳細情報](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. いずれかの office ページのソースを表示し、関連付け ID の値を探して、サポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
-|リッチ クライアント (Windows、Mac)  <br/> | Charles/Fiddler ログ  <br/>  クライアントアプリのビルド番号 ( **ファイル/アカウント**のスクリーンショットとして推奨)  <br/> |
+|リッチ クライアント (Windows、Mac)  <br/> | Charles/Fiddler ログ  <br/>  クライアントアプリのビルド番号 ( **ファイル/アカウント** のスクリーンショットとして推奨)  <br/> |
    

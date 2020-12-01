@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7674777214cb5684bb02039f739458352bc701ad
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 65d1d18037a10cd36c3be9498a4373fa67b6afd9
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262281"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519612"
 ---
 # <a name="compliance"></a>コンプライアンス
 
@@ -24,17 +24,17 @@ Microsoft マネージドデスクトップをサービスとして使用する�
 
 Microsoft マネージドデスクトップでは、次の資格が得られました。
 
-- [ISO 27001 情報セキュリティ管理標準 (ISMS)](../../compliance/offering-ISO-27001.md)
-- [ISO 27701 プライバシー情報管理システム (PIMS)](../../compliance/offering-iso-27701.md)
-- [ISO 27017 情報セキュリティ制御のプラクティスのコード](../../compliance/offering-ISO-27017.md)
-- [ISO 27018 クラウド内の個人データを保護するためのプラクティスのコード](../../compliance/offering-ISO-27018.md)
-- [ISO 9001 品質管理システム標準](../../compliance/offering-ISO-9001.md)
-- [ISO 20000-1 Information Ts Service Management](../../compliance/offering-ISO-20000-1-2011.md)
-- [ISO 22301 ビジネス継続性管理標準](../../compliance/offering-ISO-22301.md)
-- [クラウド セキュリティ アライアンス (CSA) STAR 証明](../../compliance/offering-CSA-STAR-Attestation.md)
-- [Cloud Security Alliance (CSA) STAR Certification](../../compliance/offering-CSA-Star-Certification.md)
-- [サービス組織の制御 (SOC) 1、2、3](../../compliance/offering-SOC.md)
-- [Payment Card Industry (PCI) Data Security Standard (DSS)](../../compliance/offering-PCI-DSS.md)
+- [ISO 27001 情報セキュリティ管理標準 (ISMS)](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001)
+- [ISO 27701 プライバシー情報管理システム (PIMS)](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701)
+- [ISO 27017 情報セキュリティ制御のプラクティスのコード](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017)
+- [ISO 27018 クラウド内の個人データを保護するためのプラクティスのコード](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
+- [ISO 9001 品質管理システム標準](https://docs.microsoft.com/compliance/regulatory/offering-ISO-9001)
+- [ISO 20000-1 Information Ts Service Management](https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011)
+- [ISO 22301 ビジネス継続性管理標準](https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301)
+- [クラウド セキュリティ アライアンス (CSA) STAR 証明](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
+- [Cloud Security Alliance (CSA) STAR Certification](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
+- [サービス組織の制御 (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>監査者レポートとコンプライアンス証明書
 

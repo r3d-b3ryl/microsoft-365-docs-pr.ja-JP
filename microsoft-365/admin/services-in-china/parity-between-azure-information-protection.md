@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用している Office 365 の Azure Information Protection と、中国のお客様に対して構成する方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: ad3420483701c83ffef65994996047de56a7085c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7be40466c43a49cf51a2a2c1c273cef035bee831
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644665"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519343"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>21Vianet が運用している Office 365 の Azure Information Protection 間のパリティ
 
@@ -42,8 +42,6 @@ ms.locfileid: "48644665"
 - ドキュメントと電子メールの添付ファイルを商用クラウドのユーザーに共有することは現在使用できません。 これには、商用クラウドの21Vianet ユーザーが運用している Office 365、商用クラウドの21Vianet ユーザーが運用している非 Office 365、および個人ライセンスの RMS を使用するユーザーが含まれます。
   
 - SharePoint を使用した IRM (IRM で保護されたサイトおよびライブラリ) は現在使用できません。
-  
-- Rights Management コネクタは現在使用できません。
   
 - AD RMS のモバイルデバイス拡張機能は現在使用できません。
 

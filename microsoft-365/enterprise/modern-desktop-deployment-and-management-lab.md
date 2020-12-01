@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171412"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519624"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows および Office 展開ラボキット
 
@@ -34,9 +34,9 @@ ms.locfileid: "48171412"
 
 このラボでは、自動的にプロビジョニングされた仮想ラボ環境が提供されます。これには、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、および完全に構成された Configuration Manager インスタンスが含まれます。 ラボには、次の製品の最新の評価バージョンが含まれています。
 
-  - 新機能! Windows 10 Enterprise バージョン 2004
+  - 新機能! Windows 10 Enterprise、バージョン20H2
   - Windows 7 Enterprise
-  - 新機能! Microsoft Endpoint Configuration Manager、バージョン 2002
+  - Microsoft Endpoint Configuration Manager、バージョン 2002
   - Windows 10 用 Windows アセスメント & デプロイメント キット
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -90,11 +90,11 @@ ms.locfileid: "48171412"
 ### <a name="deploy-windows-virtual-desktop"></a>Windows 仮想デスクトップを展開する  
 - 準備、展開、最適化
  
-### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キットのダウンロード
+## <a name="download-the-windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キットのダウンロード
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-*このコンテンツをダウンロードするには広い帯域幅を使用して、ダウンロードの機能を強化し、自動プロビジョニングに30-45 分を許可してください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB のディスクの空き領域が必要です。最適なパフォーマンスを得るためには、32 GB の使用可能なメモリが推奨されます。ラボは2020年12月5日に期限切れになります。有効期限が切れる前に、新しいバージョンが公開されます。*
+* このコンテンツをダウンロードするには広い帯域幅を使用して、ダウンロードの機能を強化し、自動プロビジョニングに30-45 分を許可してください。 ラボ環境には、少なくとも 16 GB の使用可能なメモリと 300 GB のディスクの空き領域が必要です。 最適なパフォーマンスを得るためには、32 GB の使用可能なメモリが推奨されます。 このラボは2020年2月に有効期限が切れます。 有効期限が切れる前に、新しいバージョンが公開されます。
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 
