@@ -3,7 +3,7 @@ title: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいド�
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 09/30/2020
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: '
-ms.openlocfilehash: 41f3e928bde0b366b17f698c30f33359a471e757
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 76cad72d742f6bf7ab6ddd1f90bfe0e5a2435df1
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327191"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552089"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター リージョンの Office 365 サービスへの移行をオプトインする方法
 
@@ -62,10 +62,27 @@ Microsoft の365、Dynamics 365、および Power BI データとサブスクリ
 
 お客様とパートナーのテナント管理者は、移行プロセスをできるだけ早く開始できるように、管理センターで移行をオプトインすることをお勧めします。
 
+
+## <a name="next-step"></a>次のステップ
+
+[移行中にお客様の環境を理解する](ms-cloud-germany-transition-experience.md)
+
 ## <a name="more-information"></a>詳細情報
 
+はじめに:
+
+- [新しいドイツ語のデータセンターリージョンの Microsoft Cloud Deutランドから Office 365 サービスへの移行](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland 移行アシスタント](https://aka.ms/germanymigrateassist)
-- [Microsoft Cloud Deutschlandのユーザー向け Office 365 移行プログラム](https://aka.ms/office365germanymove)
-- [Microsoft Cloud Deutschlandのユーザー向け Dynamics 365 移行プログラム](https://aka.ms/d365ceoptin)
-- [Microsoft Cloud Deutschlandのユーザー向け Power BI 移行プログラム](https://aka.ms/pbioptin)
-- 「ヘルプが必要ですか?」を使用して質問を送信する [Microsoft 365 管理センター](https://portal.office.de/)のリンクです。
+- [移行中の顧客の利便性](ms-cloud-germany-transition-experience.md)
+
+遷移を移動します。
+
+- [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
+- [その他の準備作業](ms-cloud-germany-transition-add-pre-work.md)
+- [サービス](ms-cloud-germany-transition-add-general.md)、[デバイス](ms-cloud-germany-transition-add-devices.md)、[エクスペリエンス](ms-cloud-germany-transition-add-experience.md)、 [AD FS](ms-cloud-germany-transition-add-adfs.md)の追加情報。
+
+クラウドアプリ:
+
+- [Dynamics 365 移行プログラム情報](https://aka.ms/d365ceoptin)
+- [Power BI 移行プログラム情報](https://aka.ms/pbioptin)
+- [Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)

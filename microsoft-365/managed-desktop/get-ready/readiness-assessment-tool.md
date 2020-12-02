@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519823"
+ms.locfileid: "49527711"
 ---
 # <a name="readiness-assessment-tool"></a>準備状況評価ツール
 
@@ -22,7 +22,7 @@ Microsoft マネージドデスクトップに登録するときに、よりス�
 
 このツールは、microsoft のマネージドデスクトップで機能することを確認するために、Microsoft エンドポイントマネージャー (特に、Microsoft Intune)、Azure Active Directory (Azure AD)、および Microsoft 365 の設定をチェックします。 Microsoft マネージドデスクトップは、前回 Azure AD 組織 (テナント) でチェックを実行してから12か月間、これらのチェックに関連付けられているデータを保持します。 12か月を過ぎると、そのフォームは重複して識別された形式で保持されます。  収集するデータを削除することもできます。
 
-少なくとも Intune 管理者の役割を持つすべてのユーザーはこのツールを実行できますが、2つのチェック ([条件付きアクセスポリシー](readiness-assessment-fix.md#conditional-access-policies) と [多要素認証](readiness-assessment-fix.md#multi-factor-authentication) には追加のアクセス許可が必要です。
+少なくとも Intune 管理者の役割を持つすべてのユーザーはこのツールを実行できますが、2つのチェック ([条件付きアクセスポリシー](readiness-assessment-fix.md#conditional-access-policies) および [多元的な認証](readiness-assessment-fix.md#multifactor-authentication) には追加のアクセス許可が必要です。
  
 評価ツールは、次の項目をチェックします。
 
@@ -39,7 +39,7 @@ Microsoft マネージドデスクトップに登録するときに、よりス�
 |登録の状態ページ     | 登録の状態ページが有効になっていないことを確認する      |
 |Intune の登録     | Azure AD 組織の Windows 10 デバイスが Intune に自動的に登録されていることを確認します。         |
 |ビジネス向け Microsoft Store     | Microsoft Store for Business が有効になっており、Intune と同期されていることを確認します。        |
-|多要素認証 | Microsoft マネージドデスクトップサービスアカウントに多要素認証が適用されていないことを確認します。
+|多要素認証 | 多要素認証が Microsoft マネージドデスクトップサービスアカウントに適用されないことを確認します。
 |PowerShell スクリプト     | Microsoft マネージドデスクトップデバイスを対象とする方法で Windows PowerShell スクリプトが割り当てられて *いない* ことを確認します。    |
 |地域     | Microsoft マネージドデスクトップで地域がサポートされていることを確認する        |
 |セキュリティベースライン     | セキュリティベースラインプロファイルがすべてのユーザーまたはすべてのデバイスを対象としていないことを確認します (セキュリティ基準ポリシーでは、Microsoft マネージドデスクトップデバイスを対象としてはいけ *ません* )。       |
@@ -55,7 +55,7 @@ Microsoft マネージドデスクトップに登録するときに、よりス�
 |エンタープライズ状態ローミングの "アドホック" サブスクリプション     | 設定をチェックする方法 ("false" に設定されている場合) を確認する方法を説明します。エンタープライズ状態の移動が正常に動作しない可能性があります  |
 |Enterprise State Roaming     | エンタープライズ状態ローミングが有効になっているかどうかを確認する方法をアドバイスします。       |
 |ライセンス     | 必要な[ライセンス](prerequisites.md#more-about-licenses)を取得済みであることを確認します。         |
-|多要素認証     | 多要素認証がすべてのユーザーに適用されていないことを確認します (多要素認証を誤って Microsoft Managed Desktop サービスアカウントに適用する必要はありません)。|
+|多要素認証     | 多元的な認証がすべてのユーザーに適用されていないことを確認します (多要素認証は、Microsoft Managed Desktop service アカウントに誤って適用されることはありません)。|
 |セキュリティアカウント名   | Microsoft Managed Desktop が独自に使用するものと競合しているユーザー名がないことを確認します。        |
 |セキュリティ管理者の役割     | セキュリティリーダ、セキュリティオペレーター、またはグローバル閲覧者の役割を持つユーザーに、エンドポイントの Microsoft Defender でこれらの役割が割り当てられていることを確認します。         |
 |セキュリティの既定値 | Azure AD 組織のセキュリティの既定が Azure Active Directory で有効になっているかどうかを確認します。 |
@@ -79,3 +79,7 @@ Microsoft マネージドデスクトップに登録するときに、よりス�
 |アドバイザリ    | 登録とユーザーのための最適な手順については、このツールの手順を実行してください。 登録は完了 *でき* ますが、最初のデバイスを展開する前に、これらの問題を修正する必要があります。        |
 |使用不可能 | これらの問題を修正しない場合、*登録は失敗* します。 ツールの手順に従って解決します。        |
 |Error | 使用している Azure Active Director (AD) の役割には、このチェックを実行するための十分な権限がありません。 |
+
+## <a name="after-enrollment"></a>登録後
+
+Microsoft マネージドデスクトップでの登録を完了したら、前に戻って、特定の Intune および Azure AD の設定を調整してください。 詳細については、「 [登録後の設定を調整](../get-started/conditional-access.md)する」を参照してください。

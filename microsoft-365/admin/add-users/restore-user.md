@@ -2,8 +2,8 @@
 title: ユーザーを復元する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 削除されたユーザーアカウントとすべての関連データを復元する方法について説明します。
-ms.openlocfilehash: 905113c40f49f433a3d84810e04abc5f26724ecb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7d7269ec338aafb9be317c2ee10a57d23c775c0a
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646669"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551846"
 ---
 # <a name="restore-a-user"></a>ユーザーを復元する
 
@@ -54,19 +54,19 @@ ms.locfileid: "48646669"
  
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[ **ユーザー**の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">削除済み</a> ユーザー] ページに移動します。
+1. 管理センターで、[ **ユーザー** の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">削除済み</a> ユーザー] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動し、[ユーザーが**Users** \> **削除されました**] を選択します。
+1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動し、[ユーザーが**Users** \> **削除されました**] を選択します。
+1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
 
 ::: moniker-end
 
@@ -89,19 +89,19 @@ ms.locfileid: "48646669"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[ **ユーザー**の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">削除済み</a> ユーザー] ページに移動します。
+1. 管理センターで、[ **ユーザー** の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">削除済み</a> ユーザー] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動し、[ユーザーが**Users** \> **削除されました**] を選択します。
+1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動し、[ユーザーが**Users** \> **削除されました**] を選択します。
+1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
 
 ::: moniker-end
 
@@ -130,19 +130,19 @@ ms.locfileid: "48646669"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[ **ユーザー**の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">削除済み</a> ユーザー] ページに移動します。
+1. 管理センターで、[ **ユーザー** の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">削除済み</a> ユーザー] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-[管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動し、[ユーザーが**Users** \> **削除されました**] を選択します。
+[管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動し、[ユーザーが**Users** \> **削除されました**] を選択します。
+1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
 
 ::: moniker-end
 

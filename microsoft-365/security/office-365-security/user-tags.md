@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 プラン2の Microsoft Defender でユーザータグを使用して、ユーザーの特定のグループを特定する方法について説明します。 タグフィルターは、Microsoft Defender for Office 365 のアラート、レポート、および調査に対して利用でき、タグ付きユーザーをすばやく識別できます。
-ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123621"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552021"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のユーザータグ
 
@@ -66,9 +66,9 @@ ms.locfileid: "49123621"
 
    完了したら、**[次へ]** をクリックします。
 
-4. [ **メールボックスの割り当て** ] ページで、次のいずれかの手順を実行します。
+4. [ **ユーザーの割り当て** ] ページで、次のいずれかの手順を実行します。
 
-   - [ **メールボックスの追加**] をクリックします。 スライドが表示されたら、次のいずれかの手順を実行して、個々のユーザーまたはグループを追加します。
+   - [ **ユーザーの追加**] をクリックします。 スライドが表示されたら、次のいずれかの手順を実行して、個々のユーザーまたはグループを追加します。
      - ボックスをクリックしてリストをスクロールし、ユーザーまたはグループを選択します。
      - ボックス内をクリックして入力を開始し、リストにフィルターを適用してユーザーまたはグループを選択します。
      - その他の値を追加するには、ボックスの空の領域をクリックします。

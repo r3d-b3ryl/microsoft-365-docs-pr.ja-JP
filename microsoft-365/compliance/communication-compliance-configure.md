@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357192"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527526"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
@@ -45,6 +45,7 @@ ms.locfileid: "49357192"
 - Microsoft 365 G5 サブスクリプション + Microsoft 365 G5 コンプライアンスアドオン
 - Microsoft 365 G5 サブスクリプション + Microsoft 365 G5 Insider リスク管理アドオン
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
+- Office 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced コンプライアンスアドオン (新しいサブスクリプションでは使用できなくなりました)。メモを参照してください。
 
 通信コンプライアンスポリシーに含まれるユーザーには、上記のいずれかのライセンスを割り当てる必要があります。
@@ -52,7 +53,7 @@ ms.locfileid: "49357192"
 >[!IMPORTANT]
 >Office 365 Advanced コンプライアンスは、スタンドアロンサブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れた場合、お客様は上記のサブスクリプションのいずれかに移行する必要があります。これには、同じまたは追加のコンプライアンス機能が含まれます。
 
-既存の Office 365 Enterprise E5 プランを所有しておらず、insider リスク管理を試みる場合は、既存のサブスクリプションに [Microsoft 365 を追加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) するか、Office 365 Enterprise e5 の [試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise) することができます。
+既存の Office 365 Enterprise E5 プランを所有しておらず、通信のコンプライアンスを試みる場合は、既存のサブスクリプションに [Microsoft 365 を追加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) するか、Office 365 Enterprise e5 の [試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise) することができます。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>手順 1 (必須): 通信のコンプライアンスのためのアクセス許可を有効にする
 
@@ -125,10 +126,10 @@ ms.locfileid: "49357192"
 
 次の表を使用して、通信コンプライアンスポリシー用に組織内のグループを構成する方法について説明します。
 
-| ポリシー メンバー | サポートされているグループ | サポートされていないグループ |
+| **ポリシー メンバー** | **サポートされているグループ** | **サポートされていないグループ** |
 |:-----|:-----|:-----|
-|監督対象ユーザー <br> 非監督対象ユーザー | 配布グループ <br> Microsoft 365 グループ | 動的配布グループ <br> メールが有効なセキュリティ グループ |
-| レビュー担当者 | なし | 配布グループ <br> 動的配布グループ <br> メールが有効なセキュリティ グループ |
+|監督対象ユーザー <br> 非監督対象ユーザー | 配布グループ <br> Microsoft 365 グループ | 動的配布グループ <br> ネストされた配布グループ <br> メールが有効なセキュリティ グループ |
+| レビュー担当者 | None | 配布グループ <br> 動的配布グループ <br> ネストされた配布グループ <br> メールが有効なセキュリティ グループ |
   
 ポリシーに配布グループを割り当てると、ポリシーによって、配布グループ内の各ユーザーからのすべての電子メールと Teams のチャットが監視されます。 ポリシーに Microsoft 365 グループを割り当てると、ポリシーによって、そのグループに送信されたすべての電子メールと Teams のチャットが監視されます。各グループメンバーが受信した個人のメールとチャットは監視しません。
 

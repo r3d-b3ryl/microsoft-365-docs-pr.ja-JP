@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8355b1609746abee12e4ca02942a567fec940623
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1ddac923849abfa2c912244c5ff987ec885f3d45
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846218"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527595"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft マネージドデスクトップの操作と監視
 
@@ -87,7 +87,7 @@ Categories |    Microsoft は | お客様は
 サービス アカウント |-資格情報を実装し、安全に保存および管理します。<br> -許可されていないアクセスまたはこれらの資格情報の使用をセキュリティ運用チームに通知します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-ポリシー、多要素認証、条件付きアクセス、またはアプリケーション展開を Microsoft 管理されたデスクトップサービスアカウントに割り当てません。<br>-パスワードをリセットしたり、資格情報を使用したりしません。<br>-これらのサービスアカウントに関連する、不審なアクティビティが Intune または Azure の監査ログで検出された場合は、Microsoft マネージドデスクトップ操作に対する重大度 C サポート要求を開きます。
 デバイスグループ | -Microsoft マネージドデスクトップグループ内のデバイスのメンバーシップを実装および管理します。<br>-Microsoft マネージドデスクトップグループを使用して、構成の割り当てとリリースおよびデバイスに対する更新を管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft マネージドデスクトップグループのメンバーシップを変更しません。<br>-VPN、Windows Hello for Business または電子メールの暗号化、または企業 Wi-Fi プロファイルの構成などのサービスの企業証明書を割り当てるには、グループを使用します。<br>-共同管理が存在する場合は、構成マネージャークライアントを展開するときに、すべての Microsoft 管理対象デスクトップグループを明示的に除外します。
 Policies |  -サービス内のデバイスの構成状態を制御する Microsoft マネージドデスクトップポリシーを実装および管理します。<br>-更新プログラムをポリシーまたは Windows に展開し、デバイスグループを徐々に使用します。<br> -Microsoft 以外の管理対象ではないデスクトップグループを明示的に除外します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft managed Desktop service で管理されていないデバイスまたはユーザーに対して、Microsoft 管理対象のデスクトップポリシーを編集または割り当てないようにします。
-Microsoft Defender for Endpoint | Microsoft Managed Desktop service の範囲内のデバイスを監視および調査します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用する
+エンドポイントの Microsoft Defender | Microsoft Managed Desktop service の範囲内のデバイスを監視および調査します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用する
 ビジネス向け Microsoft Store |  Microsoft マネージドデスクトップサービスの Windows 自動操縦プロファイルを構成して管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft Managed Desktop Windows 自動操縦プロファイルの構成を変更したり、割り当てられたデバイスを追加または削除したりしません。
 証明書 | | -証明書が期限切れになるまでのサポート60要求を作成し、計画された構成の変更に関する情報を要求します。これには、構成の詳細、スコープ、タイムライン、および Microsoft が確認するためのその他の関連情報が含まれます。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-証明書プロファイル、VPN プロファイル、および Wi-Fi プロファイルを構成するために必要なすべての証明書を更新します。
 

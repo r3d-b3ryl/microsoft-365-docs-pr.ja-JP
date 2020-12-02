@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: モビリティの詳細。ユーザーの生産性スコアが発生します。
-ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: e37d5ff0377163bea270b1d16e8b4fddae9099b4
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804783"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551865"
 ---
 # <a name="mobility--people-experiences"></a>モビリティ–ユーザーエクスペリエンス
 
-生産性スコアは、ユーザーが Microsoft 365 アプリを使用する方法と、テクノロジエクスペリエンスをサポートする方法について測定基準を使用して作業を行う方法を変革するのに役立ちます。 スコアは、ユーザーとテクノロジの分野のための組織&#39;のパフォーマンスを反映し、自分のスコアを自分のような組織と比較します。 チームワークカテゴリは、ユーザーエクスペリエンスの下にある測定値の一部です。 詳細については、「 [生産性スコアの概要](productivity-score.md) 」を参照してください。
+生産性スコアは、組織が Microsoft 365 とそのテクノロジをどのように使用しているかに関する洞察による、デジタル変換への移行をサポートします。 組織のスコアは、人と技術実績の測定基準を反映しており、サイズが自分のものと同じであるベンチマークと比較できます。 Mobility カテゴリは、人のエクスペリエンスの一部です。 詳細については、「 [生産性スコアの概要](productivity-score.md) 」を参照してください。
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>組織が s mobility score&#39;する理由
 
@@ -48,7 +48,7 @@ Microsoft 365 では、Microsoft Outlook、Word、Excel、PowerPoint、OneNote�
 2. **本文:** これらのアプリケーションを複数のプラットフォームで使用することによって、効率性と満足度が向上することについて詳しく説明します。
 3. **視覚エフェクト (現在の状態):** 次のように、デスクトップ、モバイル、および web 上で少なくとも1つの Microsoft 365 (下で説明するリスト) に対して複数のプラットフォームを使用するユーザー数を示します。
     - 青色の色の部分は、ヘッダーで **表されるパーセンテージ** を表します。
-    - バーの **分数は** 、ヘッダーのパーセンテージの計算に使用される (分子/分母) を強調表示します。
+    - バーの **分数は**、ヘッダーのパーセンテージの計算に使用される (分子/分母) を強調表示します。
         - 分子: 過去28日以内に、Microsoft Outlook、Word、Excel、PowerPoint、OneNote、Microsoft Teams、Yammer、およびモバイルの複数のプラットフォームで、デスクトップ、web、モバイルからのアプリケーションを使用しているユーザーの数。
         - 分母: 過去28日間の少なくとも1つの Microsoft 365 アプリ、Exchange、Yammer、Microsoft Teams、または Skype for Business にライセンスされているユーザーの数。
     - 重要な指標の **ピアベンチマーク** 値もパーセンテージとして表示されます。
@@ -56,19 +56,20 @@ Microsoft 365 では、Microsoft Outlook、Word、Excel、PowerPoint、OneNote�
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>主要な洞察の傾向を視覚化
 
-:::image type="content" source="../../media/mobility-primary.png" alt-text="モビリティの主要な洞察を示すグラフ。生産性スコアが発生します。":::
+:::image type="content" source="../../media/mobility-primary.png" alt-text="複数のプラットフォームと時間を使用しているユーザーの数を示すグラフ。":::
 
 このグラフは、分子が過去180日を超えたアプリを使用したユーザーの数を示す傾向線を示しています。 折れ線グラフの各データ要素は、過去28日間のアクティビティの集計です。 各データポイントには、x 軸上の日付ごとに、過去28日以内に少なくとも2つのプラットフォームにわたってアプリケーションを使用しているすべてのユーザーの数が表示されます。
 
 ### <a name="scoring-framework"></a>スコアリングフレームワーク
 
-Mobility score は、ユーザーが Microsoft 365 アプリを使用しているかどうか、Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、および Skype-異なるプラットフォーム (デスクトップ、web、モバイル) を使用しているかどうかを測定します。
+組織のモビリティスコアは、ユーザーが Microsoft 365 のアプリを使用しているかどうか (集計) レベルで、Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、および Skype-さまざまなプラットフォーム (デスクトップ、web、モバイル) を使用しているかどうかを判断します。
+スコアは個別のユーザーレベルでは提供されません。
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>複数のプラットフォームと場所で組織がどのように機能するかを調べる
 
 ### <a name="use-of-outlook-across-platforms"></a>プラットフォーム間での Outlook の使用
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="モビリティの主要な洞察を示すグラフ。生産性スコアが発生します。":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="複数のプラットフォーム上で Outlook を使用しているユーザー数を示すグラフ。":::
 
 1. **ヘッダー:** 複数のプラットフォーム上で Outlook を使用している Outlook 上でアクティブになっているユーザーの割合を示します。
 2. **本文:** モバイルデバイス上の Outlook を使用して電子メールのどこからでも接続できるようにするための価値に関する情報を提供します。
@@ -89,7 +90,7 @@ Mobility score は、ユーザーが Microsoft 365 アプリを使用してい�
 
 ### <a name="use-of-teams-across-platforms"></a>プラットフォーム間での Teams の使用
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="モビリティの主要な洞察を示すグラフ。生産性スコアが発生します。":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="複数のプラットフォームまたは単一のプラットフォームで Teams を使用しているユーザーの数を示すグラフ。":::
 
 1. **ヘッダー:** Microsoft Teams でアクティブになっているユーザーが複数のプラットフォームで使用している割合を示します。
 2. **本文:** モバイルデバイスで Teams を使用して、任意の場所で作業しながら、ユーザーがメッセージに対して最新の状態を維持するのに役立つ情報を提供します。
@@ -110,7 +111,7 @@ Mobility score は、ユーザーが Microsoft 365 アプリを使用してい�
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>プラットフォーム間で Microsoft 365 アプリを使用する
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="モビリティの主要な洞察を示すグラフ。生産性スコアが発生します。":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="複数または1つのプラットフォームで Microsoft 365 アプリを使用するユーザーの数を示すグラフ。":::
 
 1. **ヘッダー:** 複数のプラットフォーム上の Microsoft 365 アプリ (Word、Excel、PowerPoint、OneNote) 上でアクティブになっているユーザーの割合を示します。
 2. **本文:** 組織内のユーザーに、どこからでも自分のファイルに柔軟にアクセスできるというメリットについての情報が記載されています。
@@ -123,7 +124,7 @@ Mobility score は、ユーザーが Microsoft 365 アプリを使用してい�
 
 ### <a name="remote-work"></a>リモート作業
 
-:::image type="content" source="../../media/remotework-trend.png" alt-text="モビリティの主要な洞察を示すグラフ。生産性スコアが発生します。":::
+:::image type="content" source="../../media/remotework-trend.png" alt-text="リモート、オンサイト、またはその両方で作業しているユーザーの数を示すグラフ。":::
 
 1. **ヘッダー:** 会社&#39;のネットワークの外部からの自宅または場所からのユーザーの作業の割合を示します。
 2. **本文:** 組織&#39;の物理的なオフィスにアクセスせずに、ユーザーのリモート作業を容易にすることの重要性を強調しています。

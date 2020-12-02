@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コミュニケーションについてのユーザーの生産性スコアの詳細。
-ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a6fccdcc7f6440195bb83949ee294bbb4fe5ce7f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123450"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527503"
 ---
 # <a name="communication--people-experiences"></a>コミュニケーション–ユーザーエクスペリエンス
 
@@ -119,9 +119,9 @@ Microsoft 365 では、複数のモードを提供することにより、すべ
 2. **本文:** Microsoft Teams 内でチャネルメッセージを使用するための価値に関する情報を提供します。
 3. **視覚エフェクト:** チャットおよびチャネルのメッセージの使用を中断します。
       - **チャットメッセージを送信するユーザー:** 色の部分と分数は、Microsoft Teams でメッセージを送信したユーザーの間でのチャットメッセージの使用を表します。 分数は次のように構成されています。
-        - **分子:** 過去28日以内に Microsoft Teams でチャットメッセージを送信したユーザー
-        - **分母:** 過去28日以内に Microsoft Teams でメッセージを送信したユーザー
-      - **チャットメッセージを送信するユーザー:** 色の部分と分数は、Microsoft Teams でメッセージを送信するユーザーの間でチャネルメッセージを使用することを表します。 分数は次のように構成されています。
+        - **分子:** 過去28日以内に Microsoft Teams でチャットメッセージを送信した人。
+        - **分母:** 過去28日以内に Microsoft Teams でメッセージを送信した人。
+      - **チャネルメッセージを送信するユーザー:** 色の部分と分数は、Microsoft Teams でメッセージを送信するユーザーの間でチャネルメッセージを使用することを表します。 分数は次のように構成されています。
         - **分子:** 過去28日以内に Microsoft Teams でチャットメッセージを送信した人。
         - **分母:** 過去28日以内に Microsoft Teams でメッセージを送信した人。
 4. **関連するコンテンツを表示する:** このリンクを選択すると、丁合いされたビデオやその他の関連するヘルプコンテンツが表示されます。

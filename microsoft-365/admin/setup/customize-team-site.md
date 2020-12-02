@@ -2,8 +2,8 @@
 title: SharePoint チームサイトをカスタマイズしてファイルの保存と共有を行う
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: SharePoint チームサイトをドキュメントライブラリ、リスト、およびハブを使用してカスタマイズ、整理、および管理する方法について説明します。
-ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3ef82cecf22226380fbb18492a7630aa023b4036
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906491"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525535"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>ファイルの保存と共有についてチームサイトをカスタマイズする
 
@@ -85,7 +85,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
 
 チームサイトは、サイトに関連付けられたグループのすべてのメンバーとほぼすべての情報を共有します。 特定の顧客に対して別のサイトを使用する場合は、追加のチームサイトを作成し、それらを SharePoint ハブサイトを使用して管理します。 詳細については、以下を参照してください。
   
-ハブサイトを使用すると、サイトを追加して関連付けることができます。 詳細について [は、「SharePoint ハブサイトとは](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f)」を参照してください。
+ハブサイトを使用すると、サイトを追加して関連付けることができます。 詳細については、「 [SharePoint ハブサイトとは](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f)」を参照してください。
   
 ハブサイトを構築する準備ができたら、「 [SharePoint Online でハブサイトを作成](/sharepoint/create-hub-site)する」を参照してください。
   
@@ -93,11 +93,11 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
   
 ## <a name="sharing-files-with-the-team"></a>チームでファイルを共有する
 
-ファイルストレージとドキュメントの管理は開始ですが、チームや外部クライアントとの共有も重要です。 ここでは、ユーザーを管理し、データを共有するのに役立つトピックへのリンクを示します。
+ファイルストレージとドキュメントの管理は開始ですが、チームや外部クライアントとの共有も重要です。 次の記事は、ユーザーを管理し、データを共有するのに役立ちます。
   
-チームとのファイル共有については、「 [Microsoft 365 で SharePoint ファイルまたはフォルダーを共有](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)する」を参照してください。
+- チームとのファイル共有については、「 [Microsoft 365 で SharePoint ファイルまたはフォルダーを共有](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)する」を参照してください。
   
-チーム外での共有について理解するには、「 [外部共有の概要](/sharepoint/external-sharing-overview)」を参照してください。
+- チーム外での共有について理解するには、「 [外部共有の概要](/sharepoint/external-sharing-overview)」を参照してください。
   
 ## <a name="managing-users-and-groups"></a>ユーザーおよびグループを管理する
 
@@ -109,9 +109,9 @@ Microsoft 365 グループにユーザーを追加するには、「 [ユーザ�
   
 [アクセス要求のセットアップと管理](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)を使用してアクセス要求を処理する方法について説明します。
   
-## <a name="here-are-more-topics-you-might-be-interested-in"></a>その他の関連トピック
+## <a name="here-are-more-articles-you-might-be-interested-in"></a>興味深い記事があります。
 
-- **タブレットとスマートフォンで Office アプリをセットアップします。** この操作を行うと、チーム サイトに保存されているファイルをタブレットやスマートフォンから編集できるようになります。Office アプリをタブレットやスマートフォンにインストールしない場合、チーム サイトのファイルを表示することはできますが、編集はできません。 
+- **タブレットとスマートフォンで Office アプリをセットアップします。** これを行う必要があります。これにより、チームサイトに保存されているファイルをタブレットまたは電話から編集できるようになります。 Office アプリをタブレットやスマートフォンにインストールしない場合、チーム サイトのファイルを表示することはできますが、編集はできません。 
     
   - [Microsoft 365 を使用して Android に Office をインストールしてセットアップする](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

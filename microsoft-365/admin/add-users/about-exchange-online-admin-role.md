@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 管理者は、組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みのアイテムを復元します。 '
-ms.openlocfilehash: cd2c4c10554cbaf425fa6ae9156a8ceeb1a21503
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e332e886ca25221fefbbc5d1bb790bd4f513f00
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646705"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527515"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
@@ -44,7 +44,7 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
 
 - メールボックスの機能をセットアップします。たとえば、メールボックス共有ポリシーを設定すると、ユーザーが予定表や連絡先の情報を組織外の人とどのように共有できるかを指定できます。
 
-- 他のユーザーのメールボックスの [[送信者](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)] および [[送信 abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)] の代理人を設定します。 たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。
+- 他のユーザーのメールボックスの [送信者] および [代理人[として](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)[送信](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)する] 代理人を設定します。 たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。
 
 - ユーザーのグループが共通の電子メールアドレスからメールを監視して送信できるように、[共有メールボックスを作成](../email/create-a-shared-mailbox.md)します。
 
@@ -58,7 +58,7 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
   
  たとえば、証拠開示管理という役割グループに割り当てられたユーザーは、メールボックスの検索を実行して条件に一致するデータを得ることができます。詳細については、「 [Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)」と「[役割グループの管理](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help)」を参照してください。
   
-## <a name="learn-about-other-admin-role"></a>その他の管理者の役割について説明します。
+## <a name="learn-about-other-admin-roles"></a>その他の管理者の役割について説明します。
 
 - [Microsoft 365 管理者ロールについて](about-admin-roles.md)
 

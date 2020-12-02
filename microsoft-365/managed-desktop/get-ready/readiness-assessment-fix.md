@@ -1,5 +1,5 @@
 ---
-title: 準備評価ツールで見つかった問題を修正する
+title: 準備評価ツールによって検出された問題を修正します。
 description: ツールによって検出された各問題に対して実行する詳細なアクション
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021087"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527735"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールによって検出された問題を修正します。
 
 チェックが行われるたびに、ツールは次の4つの結果のいずれかを報告します。
 
@@ -120,7 +120,7 @@ Microsoft マネージドデスクトップデバイスでは、Intune への登
 
 **使用不可能**
 
-「 [登録の制限を設定](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) する」の手順に従って、設定を [ **許可** ] に変更します。
+「 [登録の制限を設定](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) する」の手順に従って、設定を [ **許可**] に変更します。
 
 
 ### <a name="enrollment-status-page"></a>登録の状態ページ
@@ -141,7 +141,7 @@ Azure AD 組織の Windows 10 デバイスは、自動的に Intune に登録す
 
 **アドバイザリ**
 
-MDM ユーザースコープが **一部** または **すべて** に設定されていることを確認し、 **[なし** ] をオンにします。 **一部** を選択した場合は、登録した後に戻って、 **グループ** の **モダンワークプレースすべて** の Azure AD グループを選択します。
+MDM ユーザースコープが **一部** または **すべて** に設定されていることを確認し、 **[なし**] をオンにします。 **一部** を選択した場合は、登録した後に戻って、**グループ** の **モダンワークプレースすべて** の Azure AD グループを選択します。
 
 
 ### <a name="microsoft-store-for-business"></a>ビジネス向け Microsoft Store
@@ -152,14 +152,14 @@ Microsoft Store for Business を使用して、会社のポータルをダウン
 
 Microsoft Store for Business が有効になっていないか、Intune と同期されていません。 詳細については、「microsoft [Store For Business For Business With Microsoft intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) 」と「 [デバイス上に intune ポータルサイトをインストール](../get-started/company-portal.md)する」を参照してください。
 
-### <a name="multi-factor-authentication"></a>多要素認証
+### <a name="multifactor-authentication"></a>多要素認証
 
-多要素認証は、誤って Microsoft Managed Desktop service アカウントに適用されてはなりません。
+多元的認証は、Microsoft マネージドデスクトップサービスアカウントに誤って適用されることはありません。
 
 
 **使用不可能**
 
-すべてのユーザーに割り当てられている条件付きアクセスポリシーについて、"required" として設定されている多要素認証 (MFA) ポリシーがあります。 Microsoft マネージドデスクトップデバイスを一切含まない特定の Azure AD グループを対象とする割り当てを使用するようにポリシーを変更します。 詳細については、「 [条件付きアクセスポリシー](#conditional-access-policies) と [条件付きアクセス: すべてのユーザーに MFA を必須にする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)」を参照してください。
+すべてのユーザーに割り当てられている条件付きアクセスポリシーについては、いくつかの多元的な認証 (MFA) ポリシーを "必須" として設定しています。 Microsoft マネージドデスクトップデバイスを一切含まない特定の Azure AD グループを対象とする割り当てを使用するようにポリシーを変更します。 詳細については、「 [条件付きアクセスポリシー](#conditional-access-policies) と [条件付きアクセス: すべてのユーザーに MFA を必須にする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)」を参照してください。
 
 **アドバイザリ**
 

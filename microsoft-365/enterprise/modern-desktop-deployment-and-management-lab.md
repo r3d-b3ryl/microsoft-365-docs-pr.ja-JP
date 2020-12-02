@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4ee3663e326dc5a7fbefce06a696cca6a4b060a9
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519624"
+ms.locfileid: "49527457"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows および Office 展開ラボキット
 
@@ -36,7 +36,7 @@ ms.locfileid: "49519624"
 
   - 新機能! Windows 10 Enterprise、バージョン20H2
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager、バージョン 2002
+  - Microsoft エンドポイント構成マネージャー、バージョン 2010 *
   - Windows 10 用 Windows アセスメント & デプロイメント キット
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -94,7 +94,7 @@ ms.locfileid: "49519624"
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-* このコンテンツをダウンロードするには広い帯域幅を使用して、ダウンロードの機能を強化し、自動プロビジョニングに30-45 分を許可してください。 ラボ環境には、少なくとも 16 GB の使用可能なメモリと 300 GB のディスクの空き領域が必要です。 最適なパフォーマンスを得るためには、32 GB の使用可能なメモリが推奨されます。 このラボは2020年2月に有効期限が切れます。 有効期限が切れる前に、新しいバージョンが公開されます。
+* インストールされている基準バージョン2002は、コンソール内の更新プログラムを使用してバージョン2010に更新できます。 このコンテンツをダウンロードするには広い帯域幅を使用して、ダウンロードの機能を強化し、自動プロビジョニングに30-45 分を許可してください。 ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを実現するには、使用可能なメモリと 300 GB の空き領域を 32 GB することをお勧めします。 このラボは2021年2月7日に有効期限が切れます。 有効期限が切れる前に、新しいバージョンが公開されます。
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 

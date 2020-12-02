@@ -3,7 +3,7 @@ title: 新しいドイツ語のデータセンターリージョンの Microsoft
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 09/30/2020
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 23ccc30bab5d1045e4716cd637899e20362fc597
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 37bf052739bf15c1a0d3712539779e9dff31d9e8
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846942"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551536"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツ語のデータセンターリージョンの Microsoft Cloud Deutランドから Office 365 サービスへの移行
 
@@ -59,7 +59,7 @@ Microsoft による方法をオプトインしている組織の場合、移行�
 
 \*\*\*これらのサービスの移行の前提条件と影響については、 [Dynamics 365 カスタマーエンゲージメント](https://aka.ms/d365ceoptin) の記事を参照してください。
 
-Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 テナントを新しいドイツのデータセンター リージョンに移行することを選択した場合、SharePoint Online の移行が完了した後、Office 365 ビデオはサポートされません。 詳細について [は、ここ](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline) をクリックしてください。
+Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 テナントを新しいドイツのデータセンター リージョンに移行することを選択した場合、SharePoint Online の移行が完了した後、Office 365 ビデオはサポートされません。 詳細については、「 [Microsoft Cloud Deut上陸陸地 timeline](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)」を参照してください。
 
 ## <a name="how-is-the-migration-organized"></a>移行の整理方法
 
@@ -69,7 +69,10 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 
 移行は、 [移行のオプトイン](https://aka.ms/office365germanymoveoptin)時にすべて開始されるフェーズで実行されます。 移行フェーズのほとんどは、顧客との対話が最小限に抑えられたバックエンドサービスとして実行され、もう1つのフェーズの後で実行されます。 その他のお客様主導のタスクおよび全体的な移行状態は、移行プロセスの間に Microsoft 365 管理センターのメッセージセンターを通じて伝えられます。 タスクの例としては、お客様が管理する DNS の更新、Exchange ハイブリッドのお客様のためのハイブリッドセットアップの再構成、Azure の移行などがあります。
 
-オプトインが発生しても、移行がすぐに開始されるわけではありません。 組織は、後で移行するようにスケジュールされているテナントの一覧に追加されます。 移行と使用が正常に完了したことを確実にするためには、これらのフェーズを開始することが重要です。
+オプトインが発生しても、移行がすぐに開始されるわけではありません。 組織は、後で移行するようにスケジュールされているテナントの一覧に追加されます。 完了時に移行と使用が正常に行われるようにするには、今すぐ準備段階を開始することが重要です。
+
+- [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
+- [その他の準備作業](ms-cloud-germany-transition-add-pre-work.md)
 
 テナントの移行開始の1週間前に、すべての前提条件を満たす必要があることを示す最終警告として、メッセージセンターサービスで通知を受け取ります。
 
@@ -102,6 +105,7 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 最初の手順として、新しいドイツデータセンターリージョンの Microsoft Cloud Deut上陸陸から Office 365 サービスにサブスクリプションとデータを移行する権限があることを Microsoft に通知します。 手順については、「 [オプトインプロセス」](https://aka.ms/office365germanymoveoptin) を参照してください。次の点に注意してください。
 
 - すべての移行お客様は、Office 365 Services [office 365 の url と IP アドレス](urls-and-ip-address-ranges.md)への接続を確認する必要があります。これには、新しいドイツ語のデータセンター地域が含まれます。 Inaction を実行すると、サービスとクライアントの障害が発生する可能性があります。
+- [事前作業前](ms-cloud-germany-transition-add-pre-work.md)アクティビティのリストを確認して、組織に情報が伝えられ、変更を準備していることを確認します。
 - ドイツ地域への移行によって、組織が使用できる機能とサービスについては、「Office 365 プラットフォームサービスの説明」を参照してください。
 - 試用版サブスクリプションは移行されず、すべての有料サブスクリプションの移行がブロックされます。 移行を開始する前に、すべての試行をキャンセルするか、有料サブスクリプションに変換する必要があります。
 
@@ -125,6 +129,7 @@ Microsoft は、新しいドイツ語のデータセンターリージョンに�
 - 既存のオンライン サービス契約を通じてアクセスできます。
 
 ### <a name="what-is-the-service-availability-between-the-different-office-365-cloud-service-offerings"></a>さまざまな Office 365 クラウド サービス間のサービス可用性はどのくらいですか?
+<h2 id="serv-avail"></h2>
 
 次の15個のサービスは、Microsoft Cloud Deut/陸 cloud service サービスで提供されています。 Microsoft Cloud Deut上陸陸に新しいサービスを追加していません。
 
@@ -180,7 +185,9 @@ Microsoft は、新しいドイツ語のデータセンターリージョンに�
 
 **Azure**
 
-Azure お客様のみである場合は、Azure リソースの現在の [移行](https://docs.microsoft.com/azure/germany/germany-migration-main) を開始できます。 Office 365、Dynamics 365、または Power BI で Azure を使用している場合は、次の手順を実行してください。
+Azure お客様のみである場合は、Azure リソースの現在の [移行](https://docs.microsoft.com/azure/germany/germany-migration-main) を開始できます。 
+
+Office 365、Dynamics 365、または Power BI を使用している Azure を使用している場合は、移行プロセスを実行して、AzureAD の Azure 移行を開始する前に、移行が正常に完了していることを確認する必要があります。 AzureAD および Office 365 組織と Azure ワークロードを維持するために、サービスを閉じる前に、Azure の移行を完了する必要があります。
 
 **Office 365**
 
@@ -266,13 +273,27 @@ Microsoft クラウドの統合によって Office 365 サービスに移行す�
 - Office 365 では、 &quot; &quot; [Microsoft 365 管理センター](https://portal.office.de/)の [ヘルプが必要ですか?] リンクを使用して、質問を送信することができます。
 - Dynamics 365 カスタマーエンゲージメントおよび Power BI のお客様で、かつ Office 365 も所有している場合は、「 &quot; 必要なヘルプ」を参照してください。 &quot; [Microsoft 365 管理センター](https://portal.office.de/)のリンクを使用して、質問を送信することができます。 Dynamics 365 Customer Engagement のサポート オプションは[こちら](https://docs.microsoft.com/dynamics365/get-started/support/)にあります。 Power BI のサポート オプションは[こちら](https://powerbi.microsoft.com/support/)にあります。
 
+
+## <a name="next-step"></a>次のステップ
+
+[移行のオプトイン](ms-cloud-germany-migration-opt-in.md)
+
 ## <a name="more-information"></a>詳細情報
 
-新しいドイツ語のデータセンターリージョンへの移行に関するその他の情報が出てきます。 このページにブックマークを作成し、チェックインして現在の状態を維持できるようにします。
+はじめに:
 
 - [Microsoft Cloud Deutschland 移行アシスタント](https://aka.ms/germanymigrateassist)
-- [移行のオプトイン方法](https://aka.ms/office365germanymoveoptin)
+- [移行のオプトイン方法](ms-cloud-germany-migration-opt-in.md)
+- [移行中の顧客の利便性](ms-cloud-germany-transition-experience.md)
+
+遷移を移動します。
+
+- [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
+- [その他の準備作業](ms-cloud-germany-transition-add-pre-work.md)
+- [サービス](ms-cloud-germany-transition-add-general.md)、[デバイス](ms-cloud-germany-transition-add-devices.md)、[エクスペリエンス](ms-cloud-germany-transition-add-experience.md)、 [AD FS](ms-cloud-germany-transition-add-adfs.md)の追加情報。
+
+クラウドアプリ:
+
 - [Dynamics 365 移行プログラム情報](https://aka.ms/d365ceoptin)
 - [Power BI 移行プログラム情報](https://aka.ms/pbioptin)
-- [Office 365 の URL と IP アドレスの範囲](https://aka.ms/o365endpoints)
 - [Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)
