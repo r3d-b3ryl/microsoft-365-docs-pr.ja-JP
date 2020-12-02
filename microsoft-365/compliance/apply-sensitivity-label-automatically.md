@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 2cfe509e61737cde77dbf865d4d56d9e7f8d0d33
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+ms.openlocfilehash: 705752a63d3cd1ca5f6950643648ba5c3dd50336
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407351"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551348"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -35,9 +35,11 @@ ms.locfileid: "49407351"
 
 - ユーザーへの依存は、一部のコンテンツを正しく分類するためにのみ必要。
 
-- ユーザーはポリシーについて把握する必要がなくなり、自分たちの仕事に集中できる。
+- ユーザーはポリシーについて把握する必要がなくなり、自分たちの仕事に集中できます。
 
-機密ラベルを自動的に適用するには、次の 2 つの方法があります。
+コンテンツが手動でラベル付けされている場合、そのラベルが自動ラベル付けに置き換えられることはありません。 ただし、自動ラベル付けは、自動的に適用された[低い優先度ラベル](sensitivity-labels.md#label-priority-order-matters)に置き換えることができます。
+
+機密ラベルを自動的に適用するには、次の 2 つの異なる方法があります。
 
 - **ユーザーがドキュメントを編集したり、メールを作成 (返信または転送) するときのクライアント側のラベル付け**: Office アプリ (Word、Excel、PowerPoint、Outlook) の自動ラベル付け用に構成されたラベルを使用します。 
     
@@ -86,10 +88,7 @@ ms.locfileid: "49407351"
 |ラベルなしで適用された IRM 暗号化の上書き|はい (ユーザーがエクスポートの最小使用権を持っている場合) |はい (メール専用) |
 |受信メールのラベル付け|いいえ |はい (暗号化は適用されません) |
 
-\* 自動ラベル付けは、現在、一部の地域では利用できません。 テナントがこの機能をサポートできない場合、[自動ラベル付け] タブは管理ラベル センターに表示されません。
-
-> [!NOTE]
-> コンテンツが手動でラベル付けされている場合、そのラベルが自動ラベル付けに置き換えられることはありません。 ただし、自動ラベル付けポリシーは、Office アプリの自動ラベル付けを使用して適用された[優先度の低いラベル](sensitivity-labels.md#label-priority-order-matters)を置き換えることができます。
+\* 自動ラベル付けは、現在、一部の地域では利用できません。 テナントがこの機能をサポートできない場合、自動ラベル付けタブは管理ラベル センターに表示されません。
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>複数のラベルに適用するときの複数の条件の評価方法
 

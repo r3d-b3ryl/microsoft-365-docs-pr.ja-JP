@@ -121,6 +121,8 @@
               href: create-groups/compare-groups.md
             - name: グループを作成する
               href: create-groups/create-groups.md
+            - name: グループについて説明する
+              href: create-groups/explain-groups-knowledge-worker.md
             - name: グループを管理する
               href: create-groups/manage-groups.md
             - name: グループ メンバーを追加または削除する
@@ -208,9 +210,9 @@
     - name: データとサービスを管理する
       href: manage/index.yml
       items:
-        - name: レポートを使用してユーザー アクティビティを監視する
+        - name: レポートを使用して Microsoft 365 のアクティビティを監視する
           href: activity-reports/activity-reports.md
-        - name: 生産性スコアを使用してユーザーの生産性を監視する
+        - name: 'Microsoft 生産性スコア: 概要'
           href: productivity/productivity-score.md
           items:
             - name: コンテンツの共同作業

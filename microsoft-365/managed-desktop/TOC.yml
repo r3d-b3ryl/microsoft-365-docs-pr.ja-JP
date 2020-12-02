@@ -80,9 +80,9 @@
       items:
         - name: 管理ポータルにアクセスする
           href: get-started/access-admin-portal.md
-        - name: 管理ポータルで管理者の連絡先を追加および確認する
+        - name: 管理ポータルで、管理者の連絡先を、追加および確認する
           href: get-started/add-admin-contacts.md
-        - name: 条件付きアクセスを調整する
+        - name: 登録後に設定を調整する
           href: get-started/conditional-access.md
         - name: ライセンスを割り当てる
           href: get-started/assign-licenses.md

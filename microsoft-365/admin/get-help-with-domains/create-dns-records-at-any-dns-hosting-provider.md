@@ -20,12 +20,12 @@ description: 任意の DNS ホスティング プロバイダーで Microsoft 36
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 6c2359cbf2da24fa7e2cd579d61216d948e0cb83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645373"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519295"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -33,7 +33,7 @@ ms.locfileid: "48645373"
 
 これらの手順を完了すると、お客様のドメインは、ドメインを購入したホストには登録されたままとなりますが、Microsoft 365 では、メール アドレス (user@yourdomain.com など) やその他のサービスで使用できます。
 
-ドメインを追加しない場合、組織内のユーザーは、メール アドレスに onmicrosoft.com ドメインを使用します。 ユーザーを追加する前にドメインを追加することが重要です。それにより、ユーザーを再度セットアップする必要がなくなります。
+ドメインを追加しない場合、組織内のユーザーは、追加するまでの間メール アドレスに onmicrosoft.com ドメインを使用します。 ユーザーを追加する前にドメインを追加することが重要です。それにより、ユーザーを再度セットアップする必要がなくなります。
 
 探している内容が見つからない場合は、[ドメインに関する FAQ](../setup/domains-faq.md) を確認してください。
 
@@ -152,7 +152,7 @@ SPF はスプーフィングの防止に役立ちますが、SPF では保護で
 一部のホスティング プロバイダーは、SRV レコード内のフィールド値を制限します。 これらの制限の一般的な回避策をいくつか紹介します。
 
 ##### <a name="name"></a>名前
-ホスティング プロバイダーが、このフィールドに **@** の設定を許可しない場合は、空白のままにします。 この方法は、ホスティング プロバイダーが Service 値と Protocol 値のフィールドを個別に用意している場合に*のみ*使用します。 それ以外の場合は、下の Service と Protocol に関する注を参照してください。
+ホスティング プロバイダーが、このフィールドに **@** の設定を許可しない場合は、空白のままにします。 この方法は、ホスティング プロバイダーが Service 値と Protocol 値のフィールドを個別に用意している場合に *のみ* 使用します。 それ以外の場合は、下の Service と Protocol に関する注を参照してください。
 
 ##### <a name="service-and-protocol"></a>Service と Protocol
 ホスティング プロバイダーが SRV レコードにこれらのフィールドを用意していない場合は、**Service** 値と **Protocol** 値をレコードの **Name** フィールドに指定する必要があります。 (注: ホスティング プロバイダーによっては、**Name** フィールドが **Host**、**Hostname**、**Subdomain** など、他の名称になっている場合があります)。これらの値を追加するには、値をドットで区切って単一の文字列を作成します。 
