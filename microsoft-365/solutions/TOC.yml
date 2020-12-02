@@ -109,14 +109,16 @@
           items:
             - name: 概要
               href: collaboration-governance-overview.md
-            - name: 最初にガバナンス
+            - name: ガバナンスプランを作成する
               href: collaboration-governance-first.md
-            - name: SharePoint を使用するグループ
-              href: groups-sharepoint-governance.md
-            - name: グループ、SharePoint、Teams
-              href: groups-sharepoint-teams-governance.md
-            - name: サービスの相互作用のリファレンス
-              href: groups-services-interactions.md
+            - name: サービスの設定
+              items:
+                - name: SharePoint を使用するグループ
+                  href: groups-sharepoint-governance.md
+                - name: グループ、SharePoint、Teams
+                  href: groups-sharepoint-teams-governance.md
+                - name: 他のサービスが含まれるグループ
+                  href: groups-services-interactions.md
             - name: Access
               href: groups-teams-access-governance.md
             - name: コンプライアンス
