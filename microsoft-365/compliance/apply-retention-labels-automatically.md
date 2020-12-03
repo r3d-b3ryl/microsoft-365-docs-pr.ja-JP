@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: ebfd088dd6dc3205f02e563e31f6fb25372608ad
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 766106e9c650047e37c9fa341bd2e78b390d814d
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385263"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519455"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -55,7 +55,7 @@ ms.locfileid: "49385263"
 > [!NOTE]
 > 自動ポリシーは、条件付きのサービス側のラベル付けを使用して、保持ラベルを自動的に適用します。次の手順を実行すると、ラベル ポリシーを使用して保持ラベルを自動的に適用することもできます。 
 >
-> - SharePoint ライブラリ、フォルダー、ドキュメントに既定の保持ラベルを適用して、そのコンテナー内のラベルのないコンテンツに自動的にラベルが付けられるようにする
+> - SharePoint と Outlook に既定の保持ラベルを適用して、ラベル付けされていないコンテンツが自動的にラベル付けされるようにする
 >- ルールを使用して、保持ラベルをメールに自動的に適用する
 >
 > これらのシナリオについては、[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)を参照してください。
@@ -92,7 +92,6 @@ ms.locfileid: "49385263"
 
 既存のラベルを編集するには、そのラベルを選択してから [**ラベルの編集**] オプションを選択し、手順 2 からラベルの説明や [有効な設定](#updating-retention-labels-and-their-policies)を変更するための保持の編集ウィザードを開始します。
 
-
 ### <a name="step-2-create-an-auto-apply-policy"></a>手順 2: 自動適用ポリシーを作成する
 
 自動適用ポリシーを作成する場合、指定した条件に基づいてコンテンツに自動的に適用する保持ラベルを選択します。
@@ -115,6 +114,7 @@ ms.locfileid: "49385263"
 
 既存の自動適用ポリシーを編集するには、ポリシーを選択して、アイテム保持ポリシーの編集ウィザードを起動します。このウィザードでは、手順 2 で選択した保持ラベルと[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
 
+自動適用ラベル ポリシーを使用してコンテンツにラベル付けをした後で、コンテンツやポリシーを変更したり、新しい自動適用ラベル ポリシーを使用したりして、適用されているラベルを自動的に削除したり変更したりすることはできません。 詳細については、「[一度に 1 つの保持ラベルのみ](retention.md#only-one-retention-label-at-a-time)」を参照してください。
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>自動適用の保持ラベルの条件の構成
 
