@@ -14,14 +14,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 脅威エクスプローラおよびリアルタイム検出レポートを使用して、セキュリティコンプライアンスセンターで脅威を調査し、対応する方法について説明し &amp; ます。
+description: 脅威エクスプローラおよびリアルタイム検出レポートを使用して、セキュリティ & コンプライアンスセンターで脅威を調査して対処する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367191"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561233"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイムの検出
 
@@ -30,7 +30,7 @@ ms.locfileid: "49367191"
 
 ![脅威エクスプローラー](../../media/ThreatExplorerFirstOpened.png)
 
-[脅威エクスプローラー](threat-explorer.md) (およびリアルタイムの検出レポート) は、セキュリティ運用チームがセキュリティコンプライアンスセンターで脅威を調査して対応するのに役立つ、強力でほぼリアルタイムのツールです &amp; 。 エクスプローラー (およびリアルタイム検出レポート) は、疑いのあるマルウェアおよびフィッシングに関する情報を、Office 365 の電子メールとファイル、および組織に対する他のセキュリティ上の脅威やリスクと共に表示します。
+[脅威エクスプローラー](threat-explorer.md) (およびリアルタイムの検出レポート) は、セキュリティ運用チームがセキュリティ & コンプライアンスセンターの脅威を調査して対応するのに役立つ、強力でほぼリアルタイムのツールです。 エクスプローラー (およびリアルタイム検出レポート) は、疑いのあるマルウェアおよびフィッシングに関する情報を、Office 365 の電子メールとファイル、および組織に対する他のセキュリティ上の脅威やリスクと共に表示します。
 
 - [Microsoft Defender For Office 365](office-365-atp.md)プラン2がある場合は、エクスプローラーがインストールされています。
 - Microsoft Defender for Office 365 プラン1がある場合は、リアルタイムの検出があります。

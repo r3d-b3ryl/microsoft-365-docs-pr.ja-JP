@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business Premium から Microsoft 365 E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 3f840a27cdcf50bba7710681135f6c2e241ad14b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 3f1bb9591e1bd2bac49326325ce6c8c2d6778497
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367057"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558241"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Microsoft 365 Business Premium から Microsoft 365 E3 への移行
 
@@ -62,7 +62,7 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 | 攻撃対象領域の削減機能    | [このリストを表示する](#threat-protection) | Microsoft Edge のハードウェアベースの分離のエンタープライズ管理 | 
 | Office 用 Defender 365 プラン1 | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | 含まれていませんが、に追加できます。 | 
 | **ID 管理**        | | | 
-| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure AD 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | Cloud App Discovery、Azure AD Connect Health    |     | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | Azure AD Office 365 apps Single Sign-On (SSO): ユーザーあたり10個のアプリ (Salesforce などのギャラリー SaaS アプリ) * | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | Azure AD Premium 1 SSO: 制限なし (Self-Service アプリ統合テンプレートを使用した、Azure AD アプリケーションプロキシおよび非ギャラリーアプリからのオンプレミスアプリ)    |     | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 

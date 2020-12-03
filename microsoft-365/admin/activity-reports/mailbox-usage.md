@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: メールボックス使用状況レポートを取得して、ユーザーのメールボックスを持つユーザーのアクティビティについて把握する方法について説明します。
-ms.openlocfilehash: 8d942f507c1e3102f909fb33eb16e00f7ebf05ea
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 988f6e638e01cb5929e2ad9dd74e3d08f8e51c97
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126569"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561461"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>管理センターでの Microsoft 365 レポート-メールボックスの使用状況
 
@@ -36,9 +36,9 @@ ms.locfileid: "49126569"
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>メールボックスの使用状況レポートを取得する方法
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
-
 2. [**アクティブなユーザー] の下に** ある [**詳細表示**] を選択します。 Microsoft 365 Services。 
 3. [ **アクティブなユーザー** ] ドロップダウンリストから、[ **Exchange** \> **メールボックスの使用状況**] を選択します。
+
   
 ## <a name="interpret-the-mailbox-usage-report"></a>メールボックスの使用状況レポートを解釈する
 

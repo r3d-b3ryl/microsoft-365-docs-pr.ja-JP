@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft の予約についてよく寄せられる質問。
-ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445453"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561557"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 予約のよく寄せられる質問
 
@@ -29,7 +29,7 @@ Microsoft の予約は、予定のスケジュール設定と管理を簡単に�
 
 ### <a name="who-has-access-to-microsoft-bookings"></a>Microsoft の予約にアクセスできるユーザー
 
-予約は既定で利用可能であり、Microsoft 365 Business Premium、A3、A5、E3、および世界中の E5 のお客様に対して有効になっています。 予約は、21Vianet が運用している Office 365 でも使用できます。
+予約は既定で利用可能であり、microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、および世界中の E5 のお客様に対して有効になっています。 予約は、21Vianet が運用している Office 365 でも使用できます。
 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>お客様に個人またはビジネスの予定表が表示されますか。
 
@@ -37,7 +37,7 @@ Microsoft の予約は、予定のスケジュール設定と管理を簡単に�
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>エンドユーザーが予約アプリにアクセスする方法
 
-Microsoft 365 Business Premium、A3、A5、E3、E5、または管理者のいずれかの役割でスタッフメンバーとしてライセンスされているすべてのユーザーは、Microsoft 365 Web 環境内のアプリ選択ウィンドウで予約にアクセスできます。 IOS および Android 用のコンパニオンアプリも用意されています。
+Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5 のいずれかのライセンスを所有しているすべてのユーザーは、Microsoft 365 Web 環境内のアプリ選択ウィンドウで予約にアクセスできます。 IOS および Android 用のコンパニオンアプリも用意されています。
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>自分の Web サイトで予約を使用できますか。
 
@@ -49,9 +49,9 @@ Microsoft 365 Business Premium、A3、A5、E3、E5、または管理者のいず
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>IT 部門はエンドユーザーが予約にアクセスできるかどうかを制御できますか。
 
-予約は、既定では、Business Premium、M365 A3/A5、E3/E5 テナントで利用できますが、管理者は Microsoft 365 管理センターで選択した場合に、この機能をオフにすることができます。 そのためには、次の [手順に従い](turn-bookings-on-or-off.md)ます。
+予約は、microsoft 365 Business Premium、Microsoft 365 Business Standard、M365 A3/A5、および E3/E5 テナントでは既定で利用できますが、管理者はこのオプションを選択すると、Microsoft 365 管理センターで無効にすることができます。 そのためには、次の [手順に従い](turn-bookings-on-or-off.md)ます。
 
-お客様がテナント内の特定の適格なライセンスで予約へのアクセスを無効にする必要がある場合は、ユーザーはグループポリシーを使用してライセンスを制限するか、新しい予約予定表を作成できるユーザーを制限する OWA メールボックスポリシーを実装することができます。
+お客様がテナント内の特定の適格なライセンスに対するアクセスを無効にする必要がある場合は、グループポリシーを使用してライセンスを制限するか、新しい予約予定表を作成できるユーザーを制限する OWA メールボックスポリシーを実装することができます。
 
 OWA メールボックスポリシーを使用して予約へのアクセスを無効にした場合、すべてのユーザーに予約ライセンスが付与されますが、アプリにアクセスしようとする場合は、ポリシーの一部である場合や、既存の予約カレンダーにスタッフとして追加されている場合にのみ成功します。 詳細については、「選択したユーザーのみに予約予定表を作成できる [ようにする](turn-bookings-on-or-off.md) 」を参照してください。
 
@@ -114,7 +114,7 @@ OWA メールボックスポリシーを使用して予約へのアクセスを�
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Microsoft の予約を取得するにはどうすればよいですか?
 
-予約は、Microsoft 365 で、Business Premium、A3、A5、E3、および E5 のライセンスを持つお客様が iOS および Android コンパニオンアプリと共に利用できます。 予約はスタンドアロンアプリとして使用できません。 Outlook Web App または outlook on the Web では、Outlook 内でデータを保存するため、予約を使用できるようにする必要があります。
+予約は、microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、および E5 ライセンスと、iOS および Android コンパニオンアプリと共に、Microsoft 365 で利用できます。 予約はスタンドアロンアプリとして使用できません。 Outlook Web App または outlook on the Web では、Outlook 内でデータを保存するため、予約を使用できるようにする必要があります。
 
 予約ライセンスは、予定表の作成および管理を含む、製品へのすべての機能を提供します。 また、ユーザーが管理者または閲覧者の役割でスタッフとして追加されたときに、ユーザーが既存の予定表を表示および編集できるようにします。
 
@@ -172,9 +172,9 @@ Skype または Microsoft Teams クライアントを使用している場合、
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>タイムゾーン間での予約のしくみ
 
-すべての時刻は、既定では、勤務時間領域 (ローカルタイムゾーン) にあります。 これは、勤務時間などの予約カレンダーに対して構成したすべての設定がこのタイムゾーンに表示されることを意味します。 セルフサービスページには、すべての予定時間をエンドユーザーのタイムゾーンで表示する機能があり、必要に応じてオフにすることができます。[予約ページ] タブの [ **常に勤務時間帯にタイムスロットを表示する** ] チェックがオフになっている場合、ページを訪れたユーザーには、自分のローカルタイムゾーンのタイムスロットが表示されます。
+すべての時刻は、既定では、勤務時間領域 (ローカルタイムゾーン) にあります。 これは、勤務時間などの予約カレンダーに対して構成したすべての設定がこのタイムゾーンに表示されることを意味します。 セルフサービスページには、すべての予定時間をエンドユーザーのタイムゾーンで表示する機能があり、必要に応じてオフにすることができます。 [予約ページ] タブの [ **常に勤務時間帯にタイムスロットを表示する** ] チェックがオフになっている場合、ページを訪れたユーザーには、自分のローカルタイムゾーンのタイムスロットが表示されます。
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="予約のスケジューリング":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="予約地域とタイムゾーンの設定":::
 
 予約にスタッフのタイムゾーンを設定するためのプロビジョニングはありません。 スタッフのタイムゾーン、つまり営業時間帯は、ビジネスタイムゾーンになります。
 
@@ -200,9 +200,9 @@ Skype または Microsoft Teams クライアントを使用している場合、
 
 ### <a name="can-calendars-remain-unpublished-not-public-facing-but-still-accessible-to-designated-users"></a>予定表を非公開にすることはできますが (公開はできません)、指定されたユーザーが引き続きアクセスできますか。
 
-はい。 Web アプリの [予約ページ] タブにあるチェックボックス: **Microsoft 365 または Office 365 アカウントを組織から予約する必要**があります。 このチェックボックスをオンにすると、セルフサービスページアクセスがテナント内のユーザーにのみ制限されます。 Web アプリの作成と管理に含まれる予約予定表は、管理者または閲覧者の役割を持つページにスタッフとして追加された個人のみがアクセスできます。
+はい。 Web アプリの [予約ページ] タブにあるチェックボックス: **Microsoft 365 または Office 365 アカウントを組織から予約する必要** があります。 このチェックボックスをオンにすると、セルフサービスページアクセスがテナント内のユーザーにのみ制限されます。 Web アプリの作成と管理に含まれる予約予定表は、管理者または閲覧者の役割を持つページにスタッフとして追加された個人のみがアクセスできます。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のスケジューリング":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のページのアクセス制御":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>ホームページの更新頻度
 
@@ -250,7 +250,7 @@ Web アプリが読み込まれるたびに、ホームページにリンクさ�
 
 予約 Web アプリへのアクセスには、通常の Azure Active Directory (AAD) 認証による認証が伴います。 セルフサービス予約ページは、[Web ページ] リンクを使用してすべてのユーザーが利用できるようにすることができます。 ただし、 **[microsoft 365 または Office 365 アカウントを組織に必要** とする] 設定が選択されている場合、ページは microsoft 365 テナント内でのみ使用することができます (AAD 認証を使用)。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のスケジューリング":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のページのアクセス制御":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>お客様のデータは何らかの理由で運用システムから出ますか?
 
@@ -303,18 +303,20 @@ SMS テキストメッセージが有効になっている予定を予約する�
 
 1. Microsoft 365 にサインインし、アプリ起動ツールから [ **Outlook** ] を選択します。
 
-   ![アプリ起動ツールの Outlook の画像](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![アプリ起動ツールの Outlook の画像](../media/bookings-applauncher-outlook.png)
 
-1. ページの上部で、[ **Share** \> **予定表**の共有] を選択します。
+1. ページの上部で、[ **Share** \> **予定表** の共有] を選択します。
 
    ![予定表共有メニューの画像](../media/bookings-share-calendar.png)
 
 1. [ **組織内のユーザー** ] セクションで、 **[自分の所属組織**] の横のドロップダウンボックスを選択し、[ **ビジー状態のときに表示する**] を選択します。
 
-> [!NOTE]
-> この設定では、空き時間情報を、組織内の他のユーザーとの予約および予約と共有します。 これには、スケジュールされている予定の種類、予定を予約したユーザー、または場所など、その他の情報は含まれません。
+   > [!NOTE]
+   > この設定では、空き時間情報を、組織内の他のユーザーとの予約および予約と共有します。 これには、スケジュールされている予定の種類、予定を予約したユーザー、または場所など、その他の情報は含まれません。
 
-   ![[予定表の共有] 画面の画像で、使用中の状態を確認できます。](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![[予定表の共有] 画面の画像で、使用中の状態を確認できます。](../media/bookings-view-busy.png)
 
 1. [**完了**] を選択します。
 
@@ -322,7 +324,7 @@ SMS テキストメッセージが有効になっている予定を予約する�
 
 従業員が会社を離れており、Microsoft 365 または Office 365 組織からその従業員を削除した場合は、そのユーザーを予約から削除して、予定表に表示されないようにし、顧客が予定を予約できないようにする必要があります。
 
-1. Microsoft 365 にサインインして、[**予約**スタッフ] に移動し \> **Staff**ます。
+1. Microsoft 365 にサインインして、[**予約** スタッフ] に移動し \> **Staff** ます。
 
 1. マウスカーソルをスタッフメンバーの名前の上に置きます。 [**編集**] アイコンと [**削除**] アイコンが [**電話**] 列の右側に表示されます。
 
@@ -335,7 +337,7 @@ SMS テキストメッセージが有効になっている予定を予約する�
 
 複数の予定表があるかどうかを確認するには、左側のメニューで会社名の横にあるドロップダウン矢印を選択し、[ **開く**] を選択します。 カレンダーが1つだけの場合は、予約予定表を追加するオプションのみが表示されます。 この例は、"Contoso CO" という名前の2番目の予定表があることを示しています。
 
-   ![2番目の予定表が表示されている予定表画面を選択する画像](../media/bookings-choose-calendar.png)
+![2番目の予定表が表示されている予定表画面を選択する画像](../media/bookings-choose-calendar.png)
 
 ### <a name="theres-a-syncing-error-we-cant-identify"></a>識別できない同期エラーが発生しています
 

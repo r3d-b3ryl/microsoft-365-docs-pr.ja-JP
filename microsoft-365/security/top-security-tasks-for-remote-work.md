@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。
-ms.openlocfilehash: 8f170079a5542f703376139cdd6ec4550712d0fd
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: df6d837c31244efb1b6cea804972601acdb5dc17
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944383"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558540"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
@@ -42,17 +42,17 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 
 |手順|タスク|すべての Office 365 Enterprise プラン|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1-d|[Azure 多要素認証 (MFA) を有効にする](#1-enable-azure-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|pbm-2|[脅威からの保護](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|1/3|[Microsoft Defender for Office 365 を構成する](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1 |[Azure AD 多要素認証 (MFA) を有効にする](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2 |[脅威からの保護](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Microsoft Defender for Office 365 を構成する](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Id 用に Microsoft Defender を構成する](#4-configure-microsoft-defender-for-identity)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Microsoft 365 Defender を有効にする](#5-turn-on-microsoft-365-defender)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Microsoft 365 Defender をオンにする](#5-turn-on-microsoft-365-defender)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[電話とタブレットの Intune モバイルアプリ保護を構成する](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Intune アプリ保護を含むゲストの MFA および条件付きアクセスを構成する](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Pc をデバイス管理に登録し、準拠している Pc を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[クラウド接続のためにネットワークを最適化する](#9-optimize-your-network-for-cloud-connectivity)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10  |[ユーザーのトレーニング](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|#|[Microsoft Cloud App Security の使用を開始する](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11 |[Microsoft Cloud App Security の使用を開始する](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[脅威を監視し、処理を実行する](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
@@ -60,7 +60,7 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 
 ![Microsoft セキュリティスコアのスクリーンショット](../media/secure-score.png)
 
-## <a name="1-enable-azure-multi-factor-authentication-mfa"></a>1: Azure 多要素認証 (MFA) を有効にする
+## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1: Azure AD 多要素認証 (MFA) を有効にする
 
 自宅から仕事をしている従業員のセキュリティを向上させるには、1つの最適な方法は、MFA を有効にすることです。 まだプロセスが準備されていない場合は、このことを緊急パイロットとして扱って、行き詰まった従業員を支援するためのスタッフをサポートしていることを確認してください。 おそらくハードウェアセキュリティデバイスを配布できないようにするには、Windows Hello 生体認証アプリと Microsoft Authenticator などのスマートフォン認証アプリを使用します。
 
@@ -70,7 +70,7 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 
 ****
 
-|プラン|推奨事項|
+|計画|推奨事項|
 |---|---|
 |Microsoft 365 プラン (Azure AD P1 または P2 なし)|[Azure AD でセキュリティの既定値を有効にします](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。|
 |Microsoft 365 E3 (Azure AD P1 を使用)|[一般的な条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br/>- [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [すべてのユーザーに MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [従来の認証をブロックする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
@@ -112,7 +112,7 @@ Microsoft Defender for Office 365:
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: Id 用に Microsoft Defender を構成する
 
-[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) はクラウドベースのセキュリティ ソリューションであり、オンプレミスの Active Directory のシグナルを活用して、組織に対する高度な脅威、ID の漏えい、内部関係者の不正な行動を特定、検出、調査します。 オンプレミスとクラウドインフラストラクチャを保護し、依存関係または前提条件を持たず、すぐにメリットを得ることができるため、このことに注目してください。
+[Microsoft Defender For Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) は、クラウドベースのセキュリティソリューションであり、オンプレミスの Active Directory シグナルを活用して、組織に向けた高度な脅威、侵害された id、および悪意のある insider 操作を識別、検出、調査します。 オンプレミスとクラウドインフラストラクチャを保護し、依存関係または前提条件を持たず、すぐにメリットを得ることができるため、このことに注目してください。
 
 - セットアップをすばやく取得するには、 [Id クイックスタートの Microsoft Defender](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) を参照してください。
 - [ビデオを見る: Identity の Microsoft Defender の概要](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
@@ -249,6 +249,6 @@ Microsoft 365 には、状態を監視し、適切な操作を実行するいく
 
 ## <a name="next-steps"></a>次の手順
 
-おめでとうございます。 最も重要なセキュリティ保護の一部を迅速に実装し、組織のセキュリティをさらに強化しています。 これで、脅威保護機能 (エンドポイントの Microsoft Defender を含む)、データ分類と保護機能、および管理アカウントの保護をさらに進める準備ができました。 Microsoft 365 のセキュリティに関する推奨事項の詳細については、「 [microsoft 365 security For Business 意思決定者 (bdm)](Microsoft-365-security-for-bdm.md)」を参照してください。
+おめでとうございます! 最も重要なセキュリティ保護の一部を迅速に実装し、組織のセキュリティをさらに強化しています。 これで、脅威保護機能 (エンドポイントの Microsoft Defender を含む)、データ分類と保護機能、および管理アカウントの保護をさらに進める準備ができました。 Microsoft 365 のセキュリティに関する推奨事項の詳細については、「 [microsoft 365 security For Business 意思決定者 (bdm)](Microsoft-365-security-for-bdm.md)」を参照してください。
 
 また、 [docs.microsoft.com/security](https://docs.microsoft.com/security)の Microsoft の新しいセキュリティセンターにアクセスしてください。

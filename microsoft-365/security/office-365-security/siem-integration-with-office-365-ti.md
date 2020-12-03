@@ -18,21 +18,21 @@ ms.collection:
 - M365-security-compliance
 description: 組織の SIEM サーバーを Microsoft Defender for Office 365 に、関連する脅威イベントを Office 365 アクティビティ管理 API に統合します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 185e6e816cfff4131d7b5af11c4e3ea9cf94b338
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6253ed0133bf53bdbeca71bb595a850e25441311
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843578"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561707"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Office 365 用の Microsoft Defender との SIEM の統合
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用している場合は、Microsoft Defender for Office 365 を SIEM サーバーと統合することができます。 この統合は、 [Office 365 アクティビティ管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用してセットアップできます。 
+組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用している場合は、Microsoft Defender for Office 365 を SIEM サーバーと統合することができます。 この統合は、 [Office 365 アクティビティ管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用してセットアップできます。
 
-SIEM の統合により、SIEM サーバーのレポートで、Microsoft Defender for Office 365 によって検出されたマルウェアやフィッシングなどの情報を表示できます。 
+SIEM の統合により、SIEM サーバーのレポートで、Microsoft Defender for Office 365 によって検出されたマルウェアやフィッシングなどの情報を表示できます。
 
 - Microsoft Defender for Office 365 との SIEM の統合の例については、「 [Tech Community blog: office 365 および O365 管理 API の defender で SOC の有効性を向上させる](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)」を参照してください。
 
@@ -40,11 +40,11 @@ SIEM の統合により、SIEM サーバーのレポートで、Microsoft Defend
 
 ## <a name="how-siem-integration-works"></a>SIEM 統合のしくみ
 
-Office 365 Activity Management API は、組織の Microsoft 365 および Azure Active Directory のアクティビティログから、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を取得します。 組織に Microsoft Defender for Office 365 プラン1または2、あるいは Office 365 E5 がある場合は、 [Microsoft defender For office 365 スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)を使用することができます。  
+Office 365 Activity Management API は、組織の Microsoft 365 および Azure Active Directory のアクティビティログから、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を取得します。 組織に Microsoft Defender for Office 365 プラン1または2、あるいは Office 365 E5 がある場合は、 [Microsoft defender For office 365 スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)を使用することができます。
 
 最近では、 [Microsoft Defender For office 365 プラン2の](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) 自動調査および応答機能からのイベントが Office 365 MANAGEMENT Activity API に追加されました。 API には、ID、名前、状態などの主要な調査の詳細に関するデータだけでなく、調査のアクションとエンティティについての詳細な情報も含まれています。
 
-SIEM サーバーまたはその他の同様のシステムが監査をポーリングして、検出イベントにアクセスし **ます** 。 詳細については、「 [Office 365 管理 api の使用を開始](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)する」を参照してください。 
+SIEM サーバーまたはその他の同様のシステムが監査をポーリングして、検出イベントにアクセスし **ます** 。 詳細については、「 [Office 365 管理 api の使用を開始](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)する」を参照してください。
 
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>列挙値: AuditLogRecordType - 型: Edm.Int32
 

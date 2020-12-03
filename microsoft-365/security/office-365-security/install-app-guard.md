@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: ハードウェアベースの分離の最新情報を取得します。 悪用または悪意のあるリンクのような最新の攻撃や、従業員の生産性や企業のセキュリティを阻止できないようにします。
-ms.openlocfilehash: c9b31ff91521b6badda31b6eb3202f370769a0fd
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021075"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561437"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>管理者向けの Office 用アプリケーションガード (パブリックプレビュー)
 
@@ -29,8 +29,8 @@ ms.locfileid: "49021075"
 
 **適用対象:** Word、Excel、および PowerPoint for Microsoft 365、Windows 10 Enterprise
 
->[!IMPORTANT]
->一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> [!IMPORTANT]
+> 一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Microsoft Defender Application Guard for Office (Application Guard for Office) は、信頼されていないファイルが信頼されたリソースにアクセスしないようにすることにより、新しい攻撃や新たな攻撃からエンタープライズを保護します。 この記事では、管理者が Office 用 Application Guard のプレビュー用のデバイスをセットアップする手順を説明します。 デバイス上の Office 用 Application Guard を有効にするためのシステム要件とインストール手順に関する情報を提供します。
 
@@ -38,15 +38,15 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
 
 ### <a name="minimum-hardware-requirements"></a>ハードウェアの最小要件
 
-* **CPU** :64 ビット、4コア (物理または仮想)、仮想化拡張機能 (Intel VT-x または AMD-V)、コア i5 同等またはそれ以上推奨
-* **物理メモリ** : 8 GB の RAM
-* **ハードディスク** : システムドライブに 10 GB の空き領域 (SSD を推奨)
+* **CPU**:64 ビット、4コア (物理または仮想)、仮想化拡張機能 (Intel VT-x または AMD-V)、コア i5 同等またはそれ以上推奨
+* **物理メモリ**: 8 GB の RAM
+* **ハードディスク**: システムドライブに 10 GB の空き領域 (SSD を推奨)
 
 ### <a name="minimum-software-requirements"></a>最小ソフトウェア要件
 
-* **Windows 10** : Windows 10 Enterprise Edition、クライアントビルドバージョン 2004 (20H1) ビルド19041
-* **Office** : Office ベータチャネルビルドバージョン 2008 16.0.13212 以降
-* **更新プログラムパッケージ** : 毎月の Windows 10 累積セキュリティ更新プログラム [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
+* **Windows 10**: Windows 10 Enterprise Edition、クライアントビルドバージョン 2004 (20H1) ビルド19041
+* **Office**: Office ベータチャネルビルドバージョン 2008 16.0.13212 以降
+* **更新プログラムパッケージ**: 毎月の Windows 10 累積セキュリティ更新プログラム [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 システム要件の詳細については、「 [Microsoft Defender Application Guard のシステム要件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)」を参照してください。 Office Insider Preview ビルドの詳細については、「 [Office insider ビルドの展開の](https://insider.office.com/business/deploy)概要」を参照してください。
 
@@ -70,7 +70,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. 「 **コンピューターの構成 \\ 管理用テンプレート \\ Windows コンポーネント \\ microsoft defender application guard** 」にある「管理モードグループポリシー」の「microsoft defender application Guard」を参照してください。 [オプション] の値を **2** または **3** に設定し、[ **OK]** または [ **適用** ] を選択して、このポリシーを有効にします。
+3. 「 **コンピューターの構成 \\ 管理用テンプレート \\ Windows コンポーネント \\ microsoft defender application guard**」にある「管理モードグループポリシー」の「microsoft defender application Guard」を参照してください。 [オプション] の値を **2** または **3** に設定し、[ **OK]** または [ **適用**] を選択して、このポリシーを有効にします。
 
    ![管理モードで AG を有効にする](../../media/ag04-deploy.png)
 
@@ -90,11 +90,11 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
 
    ![[スタート] メニュー](../../media/ag05-diagnostic.png)
 
-2. [ **Windows の設定** ] で、[ **プライバシー** ] を選択します。
+2. [ **Windows の設定**] で、[ **プライバシー**] を選択します。
 
    ![[Windows の設定] メニュー](../../media/ag06-diagnostic.png)
 
-3. [プライバシー] で [ **診断 &** ] を選択し、[ **オプションの診断データ** ] を選択します。
+3. [プライバシー] で [ **診断 &** ] を選択し、[ **オプションの診断データ**] を選択します。
 
    ![[診断とフィードバック] メニュー](../../media/ag07a-diagnostic.png)
 
@@ -156,15 +156,15 @@ Office の Application Guard を起動するときに問題が発生した場合
 
 3. [フィードバックを **要約** する] ボックスに入力します (まだ入力されていない場合)。
 
-4. 発生した問題についての詳細な説明と必要な手順を記入し **て、[** **次へ** ] を選択します。
+4. 発生した問題についての詳細な説明と必要な手順を記入し **て、[** **次へ**] を選択します。
 
-5. [問題] の横にある [バブル] を選択します。 選択したカテゴリが [ **セキュリティとプライバシー] \> Microsoft Defender Application Guard – Office** ] であることを確認して、[ **次へ** ] を選択します。
+5. [問題] の横にある [バブル] を選択します。 選択したカテゴリが [ **セキュリティとプライバシー] \> Microsoft Defender Application Guard – Office**] であることを確認して、[ **次へ**] を選択します。
 
-6. [ **新しいフィードバック** ] を選択し、[ **次へ** ] をクリックします。
+6. [ **新しいフィードバック**] を選択し、[ **次へ**] をクリックします。
 
 7. 次の問題に関するトレースを収集します。
 
-   1. **[問題の再作成** ] タイルを展開します。
+   1. **[問題の再作成**] タイルを展開します。
 
    2. Application Guard の実行中に発生している問題が発生した場合は、Application Guard インスタンスを開きます。 これにより、Application Guard コンテナー内から追加のトレースを収集できます。
 

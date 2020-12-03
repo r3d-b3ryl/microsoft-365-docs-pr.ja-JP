@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、Microsoft 365 プランに含まれています。
-ms.openlocfilehash: b9568d0aad03fc3c8a5c81d02f98f5b238124a82
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930167"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561497"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本的なモビリティとセキュリティまたは Intune のどちらかを選択する
 
@@ -33,7 +33,7 @@ Microsoft [Intune](https://docs.microsoft.com/mem/intune/)は、特定の micros
  
 基本的なモビリティとセキュリティと Intune は、次の表に示すさまざまなプランに含まれています。
 
-|**計画**|**基本的なモビリティとセキュリティ**|**Microsoft Intune**|
+| 計画 | 基本的なモビリティとセキュリティ | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 アプリ|必要|いいえ|
 |Microsoft 365 Business Basic|必要|いいえ|
@@ -48,9 +48,9 @@ Microsoft [Intune](https://docs.microsoft.com/mem/intune/)は、特定の micros
 |Microsoft 365 エデュケーション A1 |はい|必要|
 |Microsoft 365 Education A3 |はい|必要|
 |Microsoft 365 Education A5 |はい|はい|
-|Microsoft Intune |いいえ|必要|
-|Enterprise Mobility & Security E3 |いいえ|必要|
-|Enterprise Mobility & Security E5 |いいえ|必要|
+|Microsoft Intune |いいえ|はい|
+|Enterprise Mobility & Security E3 |いいえ|はい|
+|Enterprise Mobility & Security E5 |いいえ|はい|
 
 >[!NOTE]
 >既に Microsoft Intune を使用している場合は、基本的なモビリティとセキュリティの使用を開始することはできません。
@@ -62,22 +62,22 @@ Microsoft [Intune](https://docs.microsoft.com/mem/intune/)は、特定の micros
 Microsoft Intune および組み込みの基本的なモビリティとセキュリティはどちらも、組織内のモバイルデバイスを管理する機能を備えていますが、次の表で説明する機能には大きな違いがあります。
 
 >[!NOTE]
->*最初に基本的なモビリティとセキュリティを設定し、次に Microsoft Intune を追加することで* 、同じ Microsoft 365 Business Standard 組織での Intune と基本的なモビリティおよびセキュリティの両方を使用して、ユーザーとモバイルデバイスを管理することができます。 これにより、基本的なモビリティとセキュリティ、または機能豊富な Intune ソリューションを選択することができます。 Intune の機能を有効にするために Intune ライセンスを割り当てます。
+>*最初に基本的なモビリティとセキュリティを設定し、次に Microsoft Intune を追加することで*、同じ Microsoft 365 Business Standard 組織での Intune と基本的なモビリティおよびセキュリティの両方を使用して、ユーザーとモバイルデバイスを管理することができます。 これにより、基本的なモビリティとセキュリティ、または機能豊富な Intune ソリューションを選択することができます。 Intune の機能を有効にするために Intune ライセンスを割り当てます。
 
-|**機能領域**|**機能のハイライト**|**基本的なモビリティとセキュリティ**|**Microsoft Intune**|
+| 機能領域 | 機能のハイライト | 基本的なモビリティとセキュリティ | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |デバイスの種類|さまざまな OS プラットフォームと主要な管理モードのバリエーションを管理します。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS、iPad OS|
 |デバイスのポリシー準拠|デバイスレベルの PIN ロックや jailbreak の検出などのセキュリティポリシーを設定および管理します。 |Android 9 以降のデバイスの制限。 [詳細](capabilities.md)を参照してください。 |必要|
-|デバイスコンプライアンスに基づく条件付きアクセス |準拠していないデバイスが、クラウドから会社の電子メールやデータにアクセスできないようにします。 |Windows 10 ではサポートされていません。<br/>Exchange Online、SharePoint Online、Outlook へのアクセスを制御することに制限されています。 |いいえ |
+|デバイスコンプライアンスに基づく条件付きアクセス |準拠していないデバイスが、クラウドから会社の電子メールやデータにアクセスできないようにします。 |Windows 10 ではサポートされていません。<br/>Exchange Online、SharePoint Online、Outlook へのアクセスを制御することに制限されています。 |必要 |
 |デバイス構成  |デバイスの設定を構成する (たとえば、カメラを無効にする)|デバイスのポリシー準拠|デバイスレベルの PIN ロックや jailbreak の検出などのセキュリティポリシーを設定および管理します。 |Android 9 以降のデバイスの制限。 [詳細](capabilities.md)を参照してください。 |必要|
  |設定の制限されたセット。 |必要|
 |電子メール プロファイル  |デバイス上にネイティブの電子メールプロファイルをプロビジョニングします。 |はい|必要|
-|WiFi プロファイル |デバイス上にネイティブ Wi-fi プロファイルをプロビジョニングします。 |いいえ|必要|
-|VPN プロファイル |デバイス上にネイティブの VPN プロファイルをプロビジョニングします。 |いいえ|必要|
-|MDM アプリケーション管理 |内部の基幹業務アプリとアプリストアをユーザーに展開します。 |いいえ|必要|
-|MAM |ユーザーが Office mobile および基幹業務アプリを使用して企業情報に安全にアクセスできるようにします。これにより、コピー、切り取り、貼り付け、および名前を付けて保存のような操作を、企業データに対して承認されたアプリケーションにのみ制限することができます。 |いいえ|必要|
-|Managed browser  |エッジアプリを使用して、より安全な web ブラウジングを有効にします。 |いいえ|必要|
-|ゼロタッチ登録プログラム自動操縦) |企業が所有する多数のデバイスを登録し、ユーザーの設定を簡素化します。 |いいえ|必要|
+|WiFi プロファイル |デバイス上にネイティブ Wi-fi プロファイルをプロビジョニングします。 |いいえ|はい|
+|VPN プロファイル |デバイス上にネイティブの VPN プロファイルをプロビジョニングします。 |いいえ|はい|
+|MDM アプリケーション管理 |内部の基幹業務アプリとアプリストアをユーザーに展開します。 |いいえ|はい|
+|MAM |ユーザーが Office mobile および基幹業務アプリを使用して企業情報に安全にアクセスできるようにします。これにより、コピー、切り取り、貼り付け、および名前を付けて保存のような操作を、企業データに対して承認されたアプリケーションにのみ制限することができます。 |いいえ|はい|
+|Managed browser  |エッジアプリを使用して、より安全な web ブラウジングを有効にします。 |いいえ|はい|
+|ゼロタッチ登録プログラム自動操縦) |企業が所有する多数のデバイスを登録し、ユーザーの設定を簡素化します。 |いいえ|はい|
 |||
 
 上記の表に記載されている機能に加えて、基本的な Mobility and Security and Intune には、インターネット経由でデバイスにコマンドを送信するリモート操作のセットが含まれています。 たとえば、個人データを保存しておくか (削除)、従業員のデバイスから Office アプリを削除するか、またはデバイスを出荷時の設定 (完全ワイプ) にリセットすると、従業員のデバイスから Office データを削除することができます。 

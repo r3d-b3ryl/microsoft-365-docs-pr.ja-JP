@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Apps health-テクノロジエクスペリエンスの生産性スコアの詳細。
-ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123513"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562945"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 アプリの正常性–テクノロジエクスペリエンス
 
-生産性スコアは、ユーザーが Microsoft 365 アプリを使用する方法と、テクノロジエクスペリエンスをサポートする方法について測定基準を使用して作業を行う方法を変革するのに役立ちます。 スコアは、ユーザーとテクノロジの分野のための組織&#39;のパフォーマンスを反映し、自分のスコアを自分のような組織と比較します。 アプリの正常性カテゴリは、テクノロジエクスペリエンスの下にある測定値の一部です。 詳細については、「 [生産性スコアの概要](productivity-score.md) 」を参照してください。
+生産性スコアは、Microsoft 365 とそれをサポートするテクノロジエクスペリエンスを利用して、組織のデジタル変換に関する洞察を提供します。 組織のスコアは、人とテクノロジの実績を反映しており、組織と同じようなベンチマークと比較できます。 アプリの正常性カテゴリは、テクノロジエクスペリエンスの下にある測定値の一部です。 詳細については、「 [生産性スコアの概要」](productivity-score.md) と「 [Microsoft のプライバシー](https://privacy.microsoft.com/privacystatement)に関する声明」を参照してください。
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>組織&#39;Microsoft 365 アプリの正常性スコアが重要である理由
 
@@ -101,11 +101,11 @@ Microsoft 365 アプリの正常性スコアは、推奨チャネルおよび最
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="サポートされている最新バージョンのアプリを長期間にわたって実行するデバイスの数を showa するグラフ。":::
 
-## <a name="people-in-your-organization"></a>組織内のユーザー
+## <a name="devices-in-your-organization"></a>組織内のデバイス
 
 このセクションでは、Microsoft 365 アプリの正常性テクノロジエクスペリエンスに関するすべての指標に関連情報を提供することによって、注目する指標を操作するのに役立つ情報を提供します。
 
-ユーザーレベルの表には、次の列が表示されます。
+次の列が、channel/version レベルの表に表示されます。
 
 - **Channel** : デバイス上の現在の Microsoft 365 アプリチャネル。
 - **状態:**   Microsoft 365 アプリは、現在のチャネルとバージョンに基づくデバイスの状態をサポートしています。

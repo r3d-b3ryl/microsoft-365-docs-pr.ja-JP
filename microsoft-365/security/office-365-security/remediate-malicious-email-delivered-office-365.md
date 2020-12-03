@@ -14,19 +14,19 @@ search.appverid: MET150
 description: 脅威の修復
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 5568a296697c7cdbbada333d45f498a2876603f9
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350736"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561293"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Office 365 で配信される悪意のある電子メールを修復する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-修復とは、脅威に対して定められたアクションを実行することです。 組織に送信された悪意のある電子メールは、システムによって、ゼロ時間の自動削除 (ZAP)、またはセキュリティチームによるクリーンアップを行うことができます。たとえば、 *[受信トレイへ* 移動]、 *[迷惑メールに* 移動]、[削除 *済みアイテムに* 移動]、[削除済みアイテム *]、*[削除済みアイテム]、[*ハード削除* Microsoft Defender for Office 365 P2/E5 は、セキュリティチームが手動および自動調査により、電子メールおよびコラボレーション機能の脅威を修復できるようにします。
+修復とは、脅威に対して定められたアクションを実行することです。 組織に送信される悪意のある電子メールは、システムによって、ゼロ時間の自動削除 (ZAP)、またはセキュリティチームによるクリーンアップが可能です。たとえば、 *[受信トレイへ* 移動]、 *[迷惑* メールに移動]、[削除 *済みアイテムに* 移動]、[削除済みアイテム]、[削除済みアイテム]、[*ハード削除* *]、* または Microsoft Defender for Office 365 P2/E5 は、セキュリティチームが手動および自動調査により、電子メールおよびコラボレーション機能の脅威を修復できるようにします。
 
 > [!NOTE]
 > 悪意のある電子メールを修復するには、セキュリティチームに、 *検索と削除* の役割が割り当てられている必要があります。 役割の割り当ては、セキュリティ/コンプライアンスセンターのアクセス許可によって実行されます。
@@ -85,7 +85,7 @@ ms.locfileid: "49350736"
       > 現時点では、回復可能な削除によって削除されたフォルダーからアイテムを回復できるのは、メールボックスへのアクセス権を持つユーザーのみです。
 
   - 使用 **不可**: 次の場所のメールは、修復アクションでは処理または移動できません。
-    - Quarantine
+    - 検疫する
     - ハード削除されたフォルダー
     - オンプレミス/外部
     - 失敗/削除

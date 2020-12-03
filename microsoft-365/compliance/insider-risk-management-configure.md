@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9c8d9dbc0087f1b7311863ea63e578bad3040249
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 793f51146dc85dc1c6750e82301d0e1206187ad9
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357436"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558201"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -92,8 +92,6 @@ Insider リスク管理ポリシーに含まれるユーザーには、上記の
 ## <a name="step-3-configure-prerequisites-for-templates"></a>手順 3: テンプレートの前提条件を構成する
 
 ほとんどの insider リスク管理テンプレートには、関連するアクティビティ通知を生成するためにポリシーインジケーターに対して構成する必要がある前提条件があります。 組織に対して構成するポリシーに応じて、適切な前提条件を構成します。
-
-*電子メールポリシーテンプレートで不快な言語* を使用してポリシーを構成している場合は、この手順を省略して **手順 4** に直接進むことができます。
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Microsoft 365 HR コネクタを構成する
 

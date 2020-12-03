@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: 新しいドイツデータセンターリージョンの Microsoft Cloud ドイツ (Microsoft Cloud Deut上陸ランド) から Office 365 services に移行する際の、サービスに関するその他の一般的な情報。'
-ms.openlocfilehash: 6fa09165f8aaa68e0f9fc567d96a4e53baaa594e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 93692200f2519dbc647bb4e81b4bd8c646815858
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551784"
+ms.locfileid: "49558432"
 ---
 # <a name="additional-general-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft クラウドの移行に関するその他の一般的な情報
 
@@ -49,14 +49,14 @@ Azure ドイツ cloud から Azure パブリッククラウドへの移行を完
 
 アプリケーションには、次のいずれかを指定できます。
 
-- シングルページアプリ (SPA)
-- ユーザーにサインインする Web アプリ
-- Web Api を呼び出す web アプリ
-- 保護された web API
-- Web api を呼び出す web API
-- デスクトップ アプリ
-- デーモンアプリ
-- モバイル アプリ
+- [シングルページアプリ (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [ユーザーにサインインする Web アプリ](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Web Api を呼び出す web アプリ](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [保護された web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [Web api を呼び出す web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [デスクトップ アプリ](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+- [デーモンアプリ](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+- [モバイル アプリ](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > アプリケーションが権限としてを使用するように切り替えると `login.microsoftonline.com` 、この新しい権限によってトークンが署名されます。 他のアプリから呼び出されるリソースアプリケーションをホストしている場合は、有効なトークン検証を許可する必要があります。 これは、アプリが Azure AD ドイツと Azure AD パブリッククラウドの両方によって署名されたトークンを許可する必要があることを意味します。 この柔軟なトークン検証は、サービスを呼び出すすべてのクライアントアプリケーションが Azure AD パブリッククラウドに完全に移行されるまで必要です。 移行後、リソースアプリケーションは、Azure AD パブリッククラウドによって署名されたトークンのみを受け入れる必要があります。
@@ -76,10 +76,10 @@ Azure ドイツ cloud から Azure パブリッククラウドへの移行を完
 
 5. `AzurePublic` `AzureGermany` 次のための管理ツールおよびスクリプトで、環境パラメーター (ではなく) を更新します。
 
-    - Azure PowerShell
-    - Azure AD PowerShell (MSOnline)
-    - Azure AD PowerShell (AzureAD)
-    - Azure CLI
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
+    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
  
 **公開するアプリケーションについて**
 

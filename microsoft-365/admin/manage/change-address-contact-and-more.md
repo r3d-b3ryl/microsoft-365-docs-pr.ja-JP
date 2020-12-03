@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 組織名、住所、電話、技術連絡先、電子メールなど、組織のプロファイルを変更する方法について説明します。
-ms.openlocfilehash: 17202bb35e6d5e7d40b135f65467aef111aad070
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19769c827284000e1ad0e86e3666d9980322b6a9
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645109"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560859"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
 
@@ -74,14 +74,15 @@ ms.locfileid: "48645109"
 1. 
             <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に戻ります。
 
-2. ヘッダーで、プロファイルアイコンを選択し、[ **マイアカウント**] を選択します。
+2. ヘッダーで、プロファイルアイコンを選択し、[ **アカウントの表示**] を選択します。
 
-3. 左側の [ **個人情報**] を選択します。
+3. 左側の [ **セキュリティ情報**] を選択します。
 
-4. [ **連絡先の詳細** カード] で、[ **編集**] を選択します。
+4. [電子メール] セクションで、[**変更**] を選択します。
 
-5. [ **連絡用メール** ] ボックスのアドレスを編集し、[ **保存**] を選択します。
+5. [ **連絡用メール** ] ボックスでアドレスを編集し、[ **次へ**] を選択します。
 
+6. 別の電子メールアドレスに送信されたコードを入力し、[ **OK]** を選択して変更を確認します。
 他のプロファイル情報を変更する方法については、「 [連絡先の設定を変更](change-contact-preferences.md) する」または「 [表示言語を変更](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)する」を参照してください。
   
 ### <a name="email-signatures"></a>メールの署名

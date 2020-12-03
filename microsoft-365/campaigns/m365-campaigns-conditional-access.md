@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: MFA を要求し、Microsoft 365 for business の条件付きアクセスポリシーを設定する方法について説明します。
-ms.openlocfilehash: 5908a36f09753cd8f66169c6a67be45c748807b7
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: 08a77615d6801eef52465c450c2559a9d786befb
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071503"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558276"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>多要素認証を必要とし、条件付きアクセスポリシーを設定する
 
@@ -39,13 +39,13 @@ ms.locfileid: "49071503"
 
 現在、ベースラインポリシーには次のものが含まれています。
 - Microsoft 365 管理センターでのセットアップ:
-    - 管理者 **に MFA を要求** —グローバル管理者を含む、最も特権のある管理者の役割に対して多要素認証が必要です。
+    - 管理者 **に MFA を要求**—グローバル管理者を含む、最も特権のある管理者の役割に対して多要素認証が必要です。
     - **エンドユーザーによる保護** —サインインが危険な場合にのみ、ユーザーに対して多要素認証が必要です。 
 - Azure Active Directory ポータルで設定します。
     - **従来の認証をブロック** する: 以前のクライアントアプリや一部の新しいアプリでは、より新しい、より安全な認証プロトコルを使用しません。 これらの古いアプリは、条件付きアクセスポリシーをバイパスし、環境への権限のないアクセスを取得できます。 このポリシーは、条件付きアクセスをサポートしていないクライアントからのアクセスをブロックします。 
     - **サービス管理に MFA を必要と** する— Azure portal を含む、管理ツールへのアクセスに多要素認証が必要です (基準ポリシーの構成場所)。 
 
-Microsoft では、これらのベースラインポリシーのすべてを有効にすることをお勧めします。 これらのポリシーが有効になると、管理者とユーザーは Azure 多要素認証を登録するように求められます。
+Microsoft では、これらのベースラインポリシーのすべてを有効にすることをお勧めします。 これらのポリシーを有効にした後、管理者とユーザーは Azure AD 多要素認証を登録するように求められます。
 
 これらのポリシーの詳細については、「 [baseline ポリシーとは](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)」を参照してください。
 
@@ -54,16 +54,16 @@ Microsoft では、これらのベースラインポリシーのすべてを有�
 
 すべてのユーザーに2番目の形式の ID を使用してサインインするよう要求するには、次のようにします。
 
-1. 管理センターに移動し <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> て、[ **セットアップ** ] を選びます。
+1. 管理センターに移動し <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> て、[ **セットアップ**] を選びます。
 
-2. [セットアップ] ページで、[サインイン] の [ **セキュリティで保護さ** れたカードの作成] で [ **表示** ] を選択します。
+2. [セットアップ] ページで、[サインイン] の [**セキュリティで保護さ** れたカードの作成] で [**表示**] を選択します。
 
 
     ![サインインして、より安全なカードを作成します。](../media/setupmfa.png)
-3. [サインインを強化する] ページで、[ **開始** ] を選択します。
+3. [サインインを強化する] ページで、[ **開始**] を選択します。
  
 4. [サインインのセキュリティを強化する] ウィンドウで、[ **管理者に多要素認証を必要** とする] の横にあるチェックボックスをオンにし、[ **ユーザーに多要素認証の登録を要求し、リスクが検出された場合はアクセスをブロック** する] チェックボックスをオンにします。
-    [ **ユーザーの検索** ] ボックスの [MFA] 要件から、 [緊急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)または "破損" 管理者アカウントを除外するようにしてください。
+    [**ユーザーの検索**] ボックスの [MFA] 要件から、[緊急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)または "破損" 管理者アカウントを除外するようにしてください。
     
     ![[セキュリティを強化する] ページ。](../media/requiremfa.png)
 
@@ -71,7 +71,7 @@ Microsoft では、これらのベースラインポリシーのすべてを有�
 
 ## <a name="set-up-baseline-policies"></a>ベースラインポリシーを設定する
 
-1. [Azure portal](https://portal.azure.com)に移動し、[ **azure Active Directory** の \> **条件付きアクセス** ] に移動して、 **新しいポリシー** を作成します。
+1. [Azure portal](https://portal.azure.com)に移動し、[ **azure Active Directory** の \> **条件付きアクセス**] に移動して、**新しいポリシー** を作成します。
 
 各ポリシーについて、次の具体的な手順を参照してください。 <br>
     - [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>

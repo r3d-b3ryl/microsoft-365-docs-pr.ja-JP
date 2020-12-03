@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: エンドポイントとして microsoft defender for Office 365 を使用して、デバイスや電子メールコンテンツに対する脅威に関する詳細な情報を取得します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8a598dce3a8049d97d43b742477ca8f7a2bfeadb
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357781"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561221"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>エンドポイントの Microsoft Defender と Office 365 の Microsoft Defender を併用する
 
@@ -43,11 +43,11 @@ Microsoft defender for Office 365 とエンドポイントの Microsoft Defender
 > [!TIP]
 > **[Microsoft Defender セキュリティセンター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (エンドポイントポータルの microsoft defender とも呼ばれます) の詳細については、こちらを参照してください。
   
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 - 組織には、Microsoft Defender for Office 365 (または Office 365 E5) および Microsoft Defender for Endpoint が必要です。
     
-- [セキュリティ/ &amp; コンプライアンスセンター](https://protection.office.com)では、全体管理者であるか、セキュリティ管理者の役割 (セキュリティ管理者など) が割り当てられている必要があります。 ( [セキュリティ &amp; コンプライアンスセンターのアクセス許可を](permissions-in-the-security-and-compliance-center.md)参照)
+- [セキュリティ & コンプライアンスセンター](https://protection.office.com)では、全体管理者であるか、セキュリティ管理者の役割 (セキュリティ管理者など) が割り当てられている必要があります。 ( [セキュリティ & コンプライアンスセンターのアクセス許可を](permissions-in-the-security-and-compliance-center.md)参照してください)
     
 - セキュリティ & コンプライアンスセンターと Microsoft Defender セキュリティセンターの両方の [エクスプローラー (またはリアルタイム検出)](threat-explorer.md) にアクセスできる必要があります。
     
@@ -75,4 +75,4 @@ Microsoft defender for Office 365 とエンドポイントの Microsoft Defender
   
 [Microsoft Defender for Office 365](office-365-atp.md)
   
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)
+[エンドポイントの Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)

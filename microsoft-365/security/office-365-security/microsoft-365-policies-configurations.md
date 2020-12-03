@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 993dd1ed66ca5bc6635c0eadf2dc7345ab84b57d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356921"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558288"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -83,7 +83,7 @@ Id とデバイスのアクセスの設定とポリシーは3層で推奨され�
 
 **Microsoft 365 アーキテクチャモデルの id およびデバイス保護** は、どの機能が同等であるかを示しています。
 
-[![Microsoft 365 ポスターの Id およびデバイス保護のサムネイル画像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [PDF として表示する](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
+[![Microsoft 365 ポスターの Id およびデバイス保護のサムネイル画像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  PDF とし[て表示する](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|PDF とし[てダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 また、Microsoft 365 に保存されている情報を保護するために、「 [Deploy information protection for data privacy 規制](../../solutions/information-protection-deploy.md) ソリューション」を参照してください。
 
@@ -110,7 +110,7 @@ Azure AD には、id 管理機能の完全なスイートが用意されてい�
 
 |機能|説明|ライセンス|
 |---|---|---|
-|[多要素認証 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA では、ユーザーのパスワード、Microsoft Authenticator アプリまたは電話からの通知など、2つの形式の認証を提供する必要があります。 MFA は、ユーザーの環境へのアクセスに使用できる資格情報を収集するリスクを大幅に軽減します。 Microsoft 365 は、MFA ベースのサインインに Azure 多要素認証サービスを使用します。|Microsoft 365 E3 または E5|
+|[多要素認証 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA では、ユーザーのパスワード、Microsoft Authenticator アプリまたは電話からの通知など、2つの形式の認証を提供する必要があります。 MFA は、ユーザーの環境へのアクセスに使用できる資格情報を収集するリスクを大幅に軽減します。 Microsoft 365 は、MFA ベースのサインインに Azure AD 多要素認証サービスを使用します。|Microsoft 365 E3 または E5|
 |[条件付きアクセス](/azure/active-directory/conditional-access/overview)|Azure AD は、ユーザーサインインの条件を評価し、条件付きアクセスポリシーを使用して許可されたアクセスを決定します。 たとえば、このガイダンスでは、機密データへのアクセスにデバイスのコンプライアンスを必要とする条件付きアクセスポリシーを作成する方法を示します。 これにより、自分のデバイスを持つハッカーが機密データにアクセスするリスクが大幅に軽減されます。 また、デバイスは正常性とセキュリティの特定の要件を満たす必要があるため、デバイス上の機密データを保護します。|Microsoft 365 E3 または E5|
 |[Azure AD グループ](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件付きアクセスポリシー、Intune を使用したデバイス管理、組織内のファイルおよびサイトへのアクセス許可は、ユーザーアカウントまたは Azure AD グループへの割り当てに依存しています。 実装する保護のレベルに対応する Azure AD グループを作成することをお勧めします。 たとえば、役員スタッフの方が、ハッカーの価値が高いと考えられます。 そのため、これらの従業員のユーザーアカウントを Azure AD グループに追加して、このグループを条件付きアクセスポリシーと、より高いレベルのアクセス保護を適用するその他のポリシーに割り当てることをお勧めします。|Microsoft 365 E3 または E5|
 |[デバイスの登録](/azure/active-directory/devices/overview)|デバイスの id を作成するために、デバイスを Azure AD に登録します。 この id は、ユーザーがサインインして、ドメインに参加しているか、準拠している Pc を必要とする条件付きアクセスポリシーを適用するときに、デバイスを認証するために使用されます。 このガイダンスでは、device enrollment を使用して、ドメインに参加している Windows コンピューターを自動的に登録します。 デバイスの登録は、Intune を使用してデバイスを管理するための前提条件です。|Microsoft 365 E3 または E5|
@@ -157,7 +157,7 @@ Windows 10 for Microsoft 365 enterprise for enterprise は、Pc に推奨され�
 |---|---|---|---|
 |**MFA の強制**|中程度以上のサインイン リスクで|低以上のサインイン リスクで|すべての新しいセッションで|
 |**パスワードの変更を強制する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|
-|**Intune アプリケーション保護を強制する**|はい|はい|はい|
+|**Intune アプリケーション保護を強制する**|はい|はい|必要|
 |**組織が所有するデバイスの Intune 登録を強制する**|PC に準拠しているか、ドメインに参加している必要がありますが、独自のデバイス (BYOD) の電話とタブレットを許可します。|準拠しているまたはドメインに参加しているデバイスを必要とする|準拠しているまたはドメインに参加しているデバイスを必要とする|
 |
 
@@ -197,6 +197,6 @@ Microsoft では、意図しない構成が発生する可能性があるため�
 
 Id とデバイスのアクセスを構成した後は、「 [azure ad 機能展開ガイド](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) 」を参照して、考慮すべき追加機能の段階的チェックリストと、アクセスの保護、監視、および監査を行う [Azure ad identity ガバナンス](https://docs.microsoft.com/azure/active-directory/governance/) に関する説明を参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [Id およびデバイスアクセスポリシーを実装するための前提条件](identity-access-prerequisites.md)

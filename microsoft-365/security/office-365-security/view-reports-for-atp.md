@@ -17,14 +17,14 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: セキュリティ/コンプライアンスセンターの Microsoft Defender for Office 365 のレポートを検索して使用し &amp; ます。
+description: セキュリティ & コンプライアンスセンターで Microsoft Defender for Office 365 のレポートを検索して使用します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087720"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561729"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のレポートを表示する
 
@@ -35,7 +35,7 @@ Microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 ![セキュリティ & コンプライアンスセンターのレポートダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Defender for Office 365 のファイル型レポート
+## <a name="defender-for-office-365-file-types-report"></a>Office 365 の Defender のファイルの種類レポート
 
 「 **Defender For Office 365 ファイルの種類レポート** レポート」には、 [安全な添付ファイル](atp-safe-attachments.md)によって悪意のあるファイルとして検出されたファイルの種類が表示されます。
 
@@ -92,7 +92,7 @@ Microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 - **データの表示方法: ファイル**:
 
-  - **日付**
+  - **Date**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - メッセージ **id**: メッセージヘッダーの **メッセージ id** ヘッダーフィールドで利用可能で、一意である必要があります。 値の例を次に示し `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` ます (角かっこに注意してください)。
@@ -105,12 +105,12 @@ Microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 - **データの表示: メッセージ**:
 
-  - **日付**
+  - **Date**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
   - **File**
-  - **[件名]**
+  - **Subject**
 
   [ **フィルター**] をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -119,7 +119,7 @@ Microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 レポートビューに戻るには、[ **レポートの表示**] をクリックします。
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Defender for Office 365 のメッセージ処理レポート
+## <a name="defender-for-office-365-message-disposition-report"></a>Defender for Office 365 メッセージ廃棄レポート
 
 **ATP メッセージディスポジション** レポートには、悪意のあるコンテンツが含まれていることが検出された電子メールメッセージに対して実行されたアクションが表示されます。
 
@@ -174,12 +174,12 @@ Microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 - **データの表示: メッセージ**:
 
-  - **日付**
+  - **Date**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
   - **File**
-  - **[件名]**
+  - **Subject**
 
   [ **フィルター**] をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -188,7 +188,7 @@ Microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 - **データの表示方法: ファイル**:
 
-  - **日付**
+  - **Date**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
@@ -245,7 +245,7 @@ Microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 詳細テーブルビューには、次の情報が表示されます。
 
-- **日付**
+- **Date**
 - **Percentiles**
 - **メッセージ数**
 - **全体的な待機時間**
@@ -338,7 +338,7 @@ Microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Office 365 レポートの Defender を表示するには、どのようなアクセス許可が必要ですか。
 
-このトピックで説明されているレポートを表示して使用するには、 **セキュリティ &amp; コンプライアンスセンターと Exchange 管理センターの両方に対して適切な役割が割り当てられている必要があり** ます。
+このトピックで説明されているレポートを表示して使用するには、 **セキュリティ & コンプライアンスセンターと Exchange 管理センターの両方に対して適切な役割が割り当てられている必要があり** ます。
 
 - セキュリティ & コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
 

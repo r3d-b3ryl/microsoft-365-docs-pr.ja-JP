@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社では、Microsoft 365 for enterprise のセキュリティ機能を使用する方法について説明します。
-ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920420"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558396"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のエンタープライズセキュリティのための Microsoft 365 の概要
 
@@ -56,7 +56,7 @@ Contoso 社は、次の手順に従って、Microsoft 365 for enterprise の展�
 
 - MFA および PIM を設定した全体管理者専用アカウント
 
-  Contoso 社は、グローバル管理者の役割を毎日のユーザーアカウントに割り当てる代わりに、強力なパスワードを持つ3つの専用のグローバル管理者アカウントを作成しました。 アカウントは、Azure 多要素認証 (MFA) と Azure Active Directory (Azure AD) の特権 Id 管理 (PIM) によって保護されています。 *PIM は、Microsoft 365 E5 でのみ使用可能です。*
+  Contoso 社は、グローバル管理者の役割を毎日のユーザーアカウントに割り当てる代わりに、強力なパスワードを持つ3つの専用のグローバル管理者アカウントを作成しました。 アカウントは、Azure AD 多要素認証 (MFA) と Azure Active Directory (Azure AD) の特権 Id 管理 (PIM) によって保護されています。 *PIM は、Microsoft 365 E5 でのみ使用可能です。*
 
   全体管理者アカウントでのサインインは、特定の管理タスクに対してのみ行われます。 このパスワードは、指定されたスタッフのみが知っており、Azure AD PIM で構成された期間内にのみ使用できます。
 

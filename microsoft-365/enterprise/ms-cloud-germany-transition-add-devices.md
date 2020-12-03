@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: 新しいドイツデータセンターリージョンの Microsoft Cloud ドイツ (Microsoft Cloud Deut上陸ランド) から Office 365 services に移行する場合の、サービスに関する追加のデバイス情報。'
-ms.openlocfilehash: da05a3c2eb6a8d579c53d403a1ef575c389eda12
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551955"
+ms.locfileid: "49560861"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft クラウドの移行に関するその他のデバイス情報
 
@@ -136,6 +136,12 @@ Private key state : Okay
 
 
 ## <a name="windows-azure-ad-join"></a>Windows Azure AD Join
+
+**重要:** Intune サービスプリンシパルは、commerce 移行後に有効になります。これは、Azure AD Device Registration のアクティブ化を意味します。 移行の前に Azure AD Device Registration をブロックした場合は、PowerShell を使用して Intune サービスプリンシパルを無効にし、azure ad ポータルとの azure ad Device 登録を再度無効にする必要があります。 [Azure Active Directory PowerShell for Graph] モジュールで、このコマンドを使用して Intune サービスプリンシパルを無効にすることができます。
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ### <a name="unjoin"></a>切断
 

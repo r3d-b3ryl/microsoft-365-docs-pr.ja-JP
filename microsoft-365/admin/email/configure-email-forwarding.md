@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Office365 を使用して、1つまたは複数の電子メールアカウントへのメール転送を設定します。
-ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c821d4363a053b432c4376d7b4fec4926df7b568
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551836"
+ms.locfileid: "49560794"
 ---
 # <a name="configure-email-forwarding"></a>メール転送を構成する
 
@@ -39,6 +39,9 @@ ms.locfileid: "49551836"
 ::: moniker-end
   
 組織の管理者として、ユーザーのメールボックスの電子メール転送を設定するには、会社の要件がある場合があります。 メール転送を利用すれば、あるユーザーのメールボックスに送信されたメール メッセージを組織内外の別のユーザーのメールボックスに転送できます。
+
+> [!IMPORTANT]
+> 送信スパムフィルターポリシーを使用して、外部の受信者への自動転送を制御することができます。 詳細については、「 [Microsoft 365 での自動外部電子メール転送の制御](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)」を参照してください。
 
   
 ## <a name="configure-email-forwarding"></a>メール転送を構成する
@@ -102,5 +105,6 @@ ms.locfileid: "49551836"
      または、管理センターで [配布グループを作成](../setup/create-distribution-lists.md)し、 [そこにアドレスを追加](add-user-or-contact-to-distribution-list.md)してから、この記事の手順に従って DL を指すように転送を設定します。
     
 5. 転送しているメールのユーザーのアカウントを削除したり、ライセンスを削除したりしないでください。  その場合、電子メールの転送は停止します。 
+
 
 ::: moniker-end 

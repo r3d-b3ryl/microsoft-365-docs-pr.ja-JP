@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、Teams、SharePoint でのアクセス管理について説明します。
-ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377571"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558224"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Microsoft 365 グループ、Teams、SharePoint でのアクセスの管理
 
@@ -28,14 +28,14 @@ ms.locfileid: "48377571"
 
 次の表に、Microsoft 365 で利用可能なアクセス制御のクイックリファレンスを示します。 詳細については、以下のセクションを参照してください。
 
-|カテゴリ|説明|参照|
+|カテゴリ|説明|Reference|
 |:-------|:----------|:--------|
 |メンバーシップ|||
 ||プライベートチームの検出|[Microsoft Teams でプライベートチームの検出を管理する](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)|
 ||ルールに基づく動的なグループメンバーシップ|[Azure Active Directory で動的グループを作成または更新する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||ファイル、フォルダー、サイトを共有できるユーザーを制御します。|[アクセス要求の設定と管理](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |条件付きアクセス|||
-||多要素認証|[Azure 多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
+||多要素認証|[Azure AD 多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||グループ、チーム、またはサイトの秘密度に基づいてデバイスアクセスを制御します。|[秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||管理されていないデバイスのサイトアクセスを制限します。|[非管理対象デバイスから SharePoint へのアクセスを制御する](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||場所に基づいてサイトアクセスを制御する|[ネットワークの場所に基づいて SharePoint と OneDrive のデータへのアクセスを制御する](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
@@ -73,7 +73,7 @@ SharePoint サイトには、グループまたはチームメンバーシップ
 
 Microsoft 365 では、組織の内部および外部の両方のユーザーに多要素認証を要求できます。 2番目の認証のためにユーザーにメッセージが表示される場合、さまざまな状況に対応するオプションがあります。 組織には、多要素認証を展開することを強くお勧めします。
 
-- [Azure 多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD 多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 一部のグループとチームに機密情報がある場合は、グループまたはチームの機密ラベルに基づいてデバイス管理ポリシーを適用できます。 管理されていないデバイスからのアクセスを完全にブロックしたり、制限された web のみのアクセスを許可したりすることができます。
 
@@ -109,7 +109,7 @@ Microsoft 365 では、 *すべて* の共有リンクを使用して、ファ�
 
 - [[すべてのユーザー] リンクの有効期限を設定する](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-an-expiration-date-for-anyone-links)
 
-ファイルまたはフォルダーを共有する場合、ユーザーはさまざまなリンクの種類を選択できます。 偶発的な適切でない共有の危険性を軽減するために、ユーザーが共有するときに表示される既定のリンクの種類を変更することができます。 たとえば、*組織リンク内のユーザー*に匿名アクセスを許可する、[*すべて*のユーザー] リンクから既定の設定を変更すると、機密情報の不必要な外部共有のリスクを軽減できます。
+ファイルまたはフォルダーを共有する場合、ユーザーはさまざまなリンクの種類を選択できます。 偶発的な適切でない共有の危険性を軽減するために、ユーザーが共有するときに表示される既定のリンクの種類を変更することができます。 たとえば、*組織リンク内のユーザー* に匿名アクセスを許可する、[*すべて* のユーザー] リンクから既定の設定を変更すると、機密情報の不必要な外部共有のリスクを軽減できます。
 
 - [サイトの既定のリンクの種類を変更する](https://docs.microsoft.com/sharepoint/change-default-sharing-link)
 

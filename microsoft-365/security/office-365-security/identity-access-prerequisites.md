@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 4b354d124cfd9c1ae0eab19c8feee7e0fd59df25
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357805"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558552"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
@@ -45,7 +45,7 @@ ms.locfileid: "49357805"
 |[PHS を構成](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)します。  これを有効にして、リークした資格情報を検出し、リスクベースの条件付きアクセスに対して動作するようにする必要があります。 **注:** これは、組織がフェデレーション認証を使用しているかどうかに関係なく必要になります。|クラウド専用|
 |ユーザーが組織のネットワークに接続されている組織のデバイス上にいるときに、ユーザーに対して自動的にサインインするために、[シームレスなシングルサインオンを有効](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)にします。|クラウドのみとフェデレーション|
 |[名前付きネットワークを構成します](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal)。 Azure AD Identity Protection は使用できるすべてのセッション データを収集し、分析してリスク スコアを生成します。 「Networks configuration」という名前の Azure AD で、組織のパブリック IP 範囲をネットワークに指定することをお勧めします。 これらの範囲から来たトラフィックにはリスクスコアが減少し、組織環境外からのトラフィックにはより高いリスクスコアが与えられます。||
-|[セルフサービスのパスワードのリセット (SSPR) および多要素認証 (MFA) に対して、すべてのユーザーを登録](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)します。 事前に Azure 多要素認証を使用するようにユーザーを登録することをお勧めします。 Azure AD Identity Protection は、Azure の多要素認証を使用して、追加のセキュリティ検証を実行します。 さらに、お客様のデバイスに [Microsoft Authenticator アプリ](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) と Microsoft ポータルサイトアプリをインストールすることをお勧めします。 これらは、各プラットフォームのアプリストアからインストールできます。||
+|[セルフサービスのパスワードのリセット (SSPR) および多要素認証 (MFA) に対して、すべてのユーザーを登録](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)します。 Azure AD 多要素認証用のユーザーを事前に登録することをお勧めします。 Azure AD Identity Protection は、Azure AD 多要素認証を使用して、追加のセキュリティ検証を実行します。 さらに、お客様のデバイスに [Microsoft Authenticator アプリ](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) と Microsoft ポータルサイトアプリをインストールすることをお勧めします。 これらは、各プラットフォームのアプリストアからインストールできます。||
 |ドメインに参加している[Windows コンピューターの自動デバイス登録を有効に](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)します。 条件付きアクセスでは、アプリに接続されているデバイスがドメインに参加しているか、準拠しているかを確認します。 Windows コンピューターでこの方法をサポートするには、デバイスを Azure AD に登録する必要があります。  この記事では、自動デバイス登録を構成する方法について説明します。|クラウド専用|
 |**サポート チームを用意します**。 MFA を完了できないユーザーのための計画を立てます。 これにより、それらをポリシー除外グループに追加したり、新しい MFA 情報を登録したりすることができます。 これらのセキュリティで保護された変更を行う前に、実際のユーザーが要求を行っていることを確認する必要があります。 同意を支援するようにユーザーの上司に依頼する方法も効果的です。||
 |[オンプレミス AD へのパスワード ライトバックを構成します](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 パスワードの書き戻しを使用すると、高リスクなアカウントの侵害が検出されたときに、ユーザーがオンプレミスのパスワードを変更するよう要求することができます。 この機能を有効にするには、次の2つの方法のいずれかを使用します。 Azure AD Connect セットアップウィザードの [オプション機能] 画面で **パスワードの書き戻し** を有効にするか、Windows PowerShell で有効にすることができます。|クラウド専用|
@@ -93,12 +93,12 @@ BYOD Windows デバイスでは、ユーザーは **職場または学校のア�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|[OneDrive 同期クライアント](https://docs.microsoft.com/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 8.1|サポート|サポート|N/A|N/A|サポート|
-|Windows 10|サポート|サポート|N/A|N/A|サポート|
-|Android|サポート|サポート|サポート|サポート|N/A|
-|iOS|サポート|サポート|サポート|サポート|N/A|
-|macOS|サポート|サポート|N/A|N/A|サポートされていません|
-|Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
+|Windows 8.1|サポート済み|サポート済み|N/A|N/A|サポート済み|
+|Windows 10|サポート済み|サポート済み|N/A|N/A|サポート済み|
+|Android|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
+|iOS|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
+|macOS|サポート済み|サポート済み|N/A|N/A|サポートされていません|
+|Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 |
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 のクライアント サポート
@@ -121,7 +121,7 @@ Microsoft 365 E3 または E5、または個別の Azure AD Premium P1 または
 - [Microsoft 365 管理者](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*の* 役割が割り当てられている個別のアカウントを作成して使用します。 管理者は、管理者が通常使用できない専用のユーザーアカウントを持っていて、役割またはジョブ関数に関連付けられているタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。 
 - Azure AD で権限のあるアカウントを保護するための [ベストプラクティス](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) に従います。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [![手順 2: 共通 id を構成し、条件付きアクセスポリシーにアクセスする](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 

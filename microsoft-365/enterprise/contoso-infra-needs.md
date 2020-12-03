@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のオンプレミスの IT インフラストラクチャの基本構造と、企業のビジネスニーズが Microsoft 365 for enterprise によってどのように満たされるかについて説明します。
-ms.openlocfilehash: b3b67429faccc5d22d49a2921fff4c8b3c3c062e
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 72d502b5078a1e572eeba27832550af52907e209
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920456"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558408"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT インフラストラクチャとビジネスニーズ
 
@@ -121,7 +121,7 @@ Contoso 社の IT 部門は、展開する前に、次のビジネスニーズ�
 |  | リモート ワーカーとモバイル ワーカーの生産性を向上させる | Microsoft 365 のワークロードとクラウドベースのデータ |
 |  | 独創性と革新性を向上させる | Windows Ink、職場の Cortana、PowerPoint |
 | セキュリティ |  |  |
-|  | ID およびアクセス管理 | Azure 多要素認証 (MFA) および Azure AD Privileged Identity Management (PIM) 付きの専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> Windows Hello <BR> Windows Credential Guard |
+|  | ID およびアクセス管理 | Azure AD 多要素認証 (MFA) と Azure AD Privileged Identity Management (PIM) を使用した専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 脅威保護 | Advanced Threat Analytics <BR> Windows Defender <BR> Office 365 の Defender <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 脅威の調査と応答 <BR> |
 |  | 情報保護 | Azure Information Protection <BR> データ損失防止 (DLP) <BR> Windows 情報保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | セキュリティ管理 | Azure Defender  <BR> Windows Defender セキュリティ センター |
@@ -141,6 +141,6 @@ Contoso 社 [のオンプレミスネットワーク](contoso-networking.md) に
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

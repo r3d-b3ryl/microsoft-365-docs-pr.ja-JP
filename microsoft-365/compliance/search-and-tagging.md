@@ -2,8 +2,8 @@
 title: 検索とタグ付け
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: ITPro
@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 高度な電子情報開示では、検索とタグ付けモジュールを使用して、ケースでドキュメントを検索、プレビュー、および整理することができます。 現時点では、このモジュールはベータ版です。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eba95f4832e674bae0a26d3fa8466b0118a9715d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7afa106d07e60dfc297b90c25965dafeeb7337a7
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818896"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562934"
 ---
 # <a name="search-and-tagging"></a>検索とタグ付け
 
-高度な電子情報開示では、検索とタグ付けモジュールを使用して、ケースでドキュメントを検索、プレビュー、および整理することができます。 現時点では、このモジュールはベータ版です。 検索とタグ付けの概要については、「 [Advanced eDiscovery ビデオでデータを管理](https://www.youtube.com/watch?v=VaPYL3DHP6I)する」を参照してください。
+高度な電子情報開示では、検索とタグ付けモジュールを使用して、ケースでドキュメントを検索、プレビュー、および整理することができます。 現時点では、このモジュールはベータ版です。 検索とタグ付けの概要については、「 [Advanced eDiscovery ビデオでデータを管理](https://www.youtube.com/watch?v=VaPYL3DHP6I) する」を参照してください。
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -35,7 +35,7 @@ ms.locfileid: "44818896"
 
 次の表に、KQL キーワードクエリを使用して検索できるプロパティを示します。 または、高度な電子情報開示検索ツールで条件カードを使用して、検索クエリに条件 (選択したプロパティの場合) を追加することもできます。
 
-|**プロパティ**|**説明**|
+|**Property**|**説明**|
 |:-----|:-----|
 |**caselabel** <br/> | 文書にタグ付けするときに作成/適用されるタグの名前を指定します。 <br/> |
 |**保管担当者** <br/> | ドキュメントに関連付けられている保管担当者。制限の対象となります。 <br/> |
@@ -64,15 +64,15 @@ ms.locfileid: "44818896"
 |**relevancetag_ [tagname]**\*\* <br/> | 関連性に対して手動でタグ付けされたアイテムの場合は、[tagname] で定義されているタグ。 <br/> |
 |||
 
-\*Themes モジュールが実行されている場合にのみ使用できます。
+\* Themes モジュールが実行されている場合にのみ使用できます。
 
-\*\*関連性モジュールが実行されている場合にのみ使用できます。
+\*\* 関連性モジュールが実行されている場合にのみ使用できます。
 
-または、高度な電子情報開示検索ツールの条件カードを使用して、検索クエリに条件 (選択したプロパティの場合) を追加することもできます。 次のスクリーンショットは、クエリに追加できる条件を示しています。 [**グループ]** 列は、プロパティが電子メール、サイトドキュメント、またはその両方に適用されるかどうかを示します (*共通*の値で示されます)。 この列は、関連性モジュールを実行した後に使用できる検索可能なプロパティも識別します。
+または、高度な電子情報開示検索ツールの条件カードを使用して、検索クエリに条件 (選択したプロパティの場合) を追加することもできます。 次のスクリーンショットは、クエリに追加できる条件を示しています。 [ **グループ]** 列は、プロパティが電子メール、サイトドキュメント、またはその両方に適用されるかどうかを示します ( *共通* の値で示されます)。 この列は、関連性モジュールを実行した後に使用できる検索可能なプロパティも識別します。
 
 ![高度な電子情報開示検索ツールの検索条件](../media/AeDSearchConditions.png)
 
-検索可能なプロパティの詳細については、「[キーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
+検索可能なプロパティの詳細については、「 [キーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
   
 ## <a name="related-topics"></a>関連項目
 

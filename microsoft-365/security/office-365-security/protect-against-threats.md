@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: 管理者は、Microsoft 365 の脅威保護について学習し、組織での使用方法を構成することができます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356681"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561209"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -36,7 +36,7 @@ Office 365 の Defender の構成をチャンクに分割するクイックス�
 > [!IMPORTANT]
 > **ポリシーの種類ごとに最初に推奨される設定が含まれています。ただし、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもでき** ます。 使用しているポリシーまたは変更がデータセンターによって処理されるまで約30分間待機します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -56,7 +56,7 @@ Office 365 の Defender の構成をチャンクに分割するクイックス�
 |ゼロ時間自動削除 (電子メール用)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |電子メールおよび Office ドキュメント内の悪意のある Url やファイルからの保護 (安全なリンクと安全な添付ファイル)|[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |SharePoint、OneDrive、Microsoft Teams のワークロードに対して ATP を有効にする|[Office 365 の Defender ](atp-for-spo-odb-and-teams.md)|
-|高度なフィッシング対策保護|[Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|高度なフィッシング対策保護|[Office 365 の Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>ロールと権限
 
@@ -71,7 +71,7 @@ Office 365 ポリシーの Defender を構成するには、 [セキュリティ
 |Exchange Online 組織の管理|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>および<br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
-詳細については、「 [Security &amp; コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「 [セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>開始する前に、レポートと調査の監査ログを有効にします。
 
@@ -91,7 +91,7 @@ Office 365 ポリシーの Defender を構成するには、 [セキュリティ
 
     - [ **一般的な添付ファイルの種類のフィルター** ] セクションで、 **[オン**] を選択します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 マルウェア対策ポリシーオプションの詳細については、「 [マルウェア対策ポリシーを構成](configure-anti-malware-policies.md)する」を参照してください。
 
@@ -145,7 +145,7 @@ Office 365 ポリシーの Defender を構成するには、 [セキュリティ
 
    - [ **許可するリスト** ] セクションで、許可された送信者とドメインを確認 (または編集) します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 スパム対策ポリシーオプションの詳細については、「 [CONFIGURE EOP」の「スパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
@@ -167,7 +167,7 @@ Office 365 ポリシーの Defender を構成するには、 [セキュリティ
      - [ **安全な添付ファイルの不明なマルウェアの応答** ] セクションで、[ **ブロック**] を選択します。
      - [ **添付ファイルのリダイレクト** ] セクションで、[ **リダイレクトを有効にする**] オプションを選択します。 組織のセキュリティ管理者またはオペレーターの電子メールアドレスを指定して、検出されたファイルを確認します。
 
-     **[次へ]** をクリックします。
+     [**次へ**] をクリックします。
 
 3. [ **適用先** ] ページで、[ **条件の追加**] をクリックし、[次の場合は適用] を選択し **ます。受信者のドメインが** である場合は、[ **追加**] をクリックし、ドメインまたはドメインを選択し、[ **追加**] **をクリックし**、[ **次へ**] をクリックします。
 

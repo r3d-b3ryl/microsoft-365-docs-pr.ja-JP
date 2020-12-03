@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、リストから除外ポータルを使用して、Microsoft 365 の受信拒否リストから自分自身を削除する方法について説明します。
-ms.openlocfilehash: 637b610d0dd621e6d922d23354aead8e3824ad6a
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f4e7bcc13ac6c133880eb0ebe69ba3f724d0a84e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445533"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561425"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>無効化ポータルを使って、受信拒否リストから自分自身を削除する
 
@@ -39,13 +39,13 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
 メール メッセージに対して、次のようなエラーが含まれた応答を受信する場合、お客様は受信拒否リストに追加されています。
 
-> 550 5.7.606-649 アクセス拒否、禁止された送信 IP [_ip address_]、このリストからの削除を要求するには、にアクセスして https://sender.office.com/ 、指示に従ってください。 詳細については、「 [Exchange Online のメール配信不能レポート](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)」を参照してください。
+> 550 5.7.606-649 アクセス拒否、禁止された送信 IP [_ip address_]、このリストからの削除を要求するには、にアクセスして <https://sender.office.com/> 、指示に従ってください。 詳細については、「 [Exchange Online のメール配信不能レポート](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)」を参照してください。
 
 ここで、 _IP address_ は、メール サーバーを稼働しているコンピューターの IP アドレスです。
 
 ### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>リストから除外ポータルを使用して、受信拒否リストから自分自身を削除するには
 
-1. Web ブラウザーで、[https://sender.office.com](https://sender.office.com) に移動します。
+1. Web ブラウザーで、<https://sender.office.com> に移動します。
 
 2. ページ上の指示に従います。エラー メッセージを受信したメール アドレス、エラー メッセージで特定されている IP アドレスを使っていることを確認してください。1 回のアクセスにつき、1 つのメール アドレス、1 つの IP アドレスのみ入力できます。
 

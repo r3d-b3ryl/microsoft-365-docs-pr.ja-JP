@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 E3 から Microsoft 365 Business Premium にビジネスを移行する方法について説明します。
-ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: eebf78c24ed4bfd1a4fc2d843f37aebbe3d35e31
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842162"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558260"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Office 365 E3 から Microsoft 365 Business Premium への移行 
 
@@ -53,7 +53,7 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 | **脅威保護**        | | | 
 | Office 用 Defender 365 プラン1 | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | 含まれていませんが、に追加できます。 | 
 | **ID 管理**        | | | 
-| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    |  | 
+| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure AD 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    |  | 
 | **デバイスとアプリの管理**        | | |
 | Microsoft Intune、Windows 自動操縦|     ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    |  |
 | 共有コンピューターのライセンス認証|     ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Office 365 E3 に含まれている](../media/check-mark.png)| 
@@ -95,9 +95,9 @@ Microsoft 365 Business Premium にライセンスを割り当てたら、ユー�
 
 [デバイス] ページでは、次の手順を実行することもできます。
   
-1. 管理センターの左側のナビゲーションで、[ **デバイス** \> **ポリシー** ] に移動します。
+1. 管理センターの左側のナビゲーションで、[ **デバイス** \> **ポリシー**] に移動します。
     
-2. [ **デバイスポリシー** ] ページで、[ **追加** ] を選択します。
+2. [ **デバイスポリシー** ] ページで、[ **追加**] を選択します。
     
 3. [ **ポリシーの追加** ] ウィンドウで、ポリシーの名前を指定し、ドロップダウンから **ポリシーの種類** を選択します。 
     
@@ -124,6 +124,6 @@ Microsoft 365 Business Premium では、Exchange Online プラン1を使用し�
 
 Microsoft 365 Business Premium に移行した後、Office 365 用の Defender がインストールされています。 概要については、「 [Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 」を参照してください。 セットアップするには、「セキュリティで保護された [リンクのセットアップ](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)」、「安全な [添付ファイルの設定](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)」、および「 [Office 365 の Defender でのフィッシング対策の設定](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)」を参照してください。
 
-### <a name="sensitivity-labels"></a>機密ラベル
+### <a name="sensitivity-labels"></a>秘密度ラベル
 
 機密ラベルの使用を開始するには、機密ラベル [の概要](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) と、 [機密ラベルの作成と管理](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) に関するビデオを参照してください。

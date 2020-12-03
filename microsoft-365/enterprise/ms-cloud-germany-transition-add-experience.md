@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: 新しいドイツデータセンターリージョンの Microsoft Cloud ドイツ (Microsoft Cloud Deut上陸ランド) から Office 365 services に移行する際に、お客様が追加された情報をご利用いただけるようになります。'
-ms.openlocfilehash: b282a12966e7a6dc8a1a331409834322c5087a10
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 1eef8be624a92bf2dcaba8f0df2147697202be3a
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551877"
+ms.locfileid: "49560840"
 ---
 # <a name="additional-experience-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft クラウドの移行に関するその他の技術情報 
 
@@ -101,7 +101,7 @@ ms.locfileid: "49551877"
 
 | ステップ (s) | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
-| クライアント、office Online の office クライアントのカットオーバー中、Azure AD は、Office 365 サービスを指すようにテナントスコープを終了します。<!--v-gmoor: What?--> | この構成変更により、Office クライアントは Office 365 サービスエンドポイントを更新してポイントすることができます。 | すべての Office のお客様 | -ユーザーが所有する DNS から MSOID CName を削除します (存在する場合)。 <br><br> -Office クライアントが変更を選択できるようにするには、 _すべて_ の office アプリを閉じてから再度サインインするようにユーザーに通知します (または、クライアントを強制的に再起動し、ユーザーにサインインしてください)。 <br><br> -ユーザーやヘルプデスクスタッフには、Office バナーが表示され、カットオーバーの72時間以内に Office アプリのライセンス認証を行うよう求めるメッセージが表示されること *があり* ます。 <br><br> -個人用コンピューター上のすべての Office アプリケーションを閉じる必要があり、ユーザーはサインアウトしてから再度サインインする必要があります。 黄色のアクティブ化バーで、サインインして Office 365 サービスに対して再アクティブ化します。 <br><br> -共有マシンには、パーソナルマシンに似たアクションが必要であり、特別な手順は必要ありません。 <br><br> -モバイルデバイスでは、ユーザーはアプリからサインアウトし、それを閉じてから再度サインインする必要があります。 |
+| クライアント、office Online の office クライアントのカットオーバー中、Azure AD は、Office 365 サービスを指すようにテナントスコープを終了します。 | この構成変更により、Office クライアントは Office 365 サービスエンドポイントを更新してポイントすることができます。 | すべての Office のお客様 | -ユーザーが所有する DNS から MSOID CName を削除します (存在する場合)。 <br><br> -Office クライアントが変更を選択できるようにするには、 _すべて_ の office アプリを閉じてから再度サインインするようにユーザーに通知します (または、クライアントを強制的に再起動し、ユーザーにサインインしてください)。 <br><br> -ユーザーやヘルプデスクスタッフには、Office バナーが表示され、カットオーバーの72時間以内に Office アプリのライセンス認証を行うよう求めるメッセージが表示されること *があり* ます。 <br><br> -個人用コンピューター上のすべての Office アプリケーションを閉じる必要があり、ユーザーはサインアウトしてから再度サインインする必要があります。 黄色のアクティブ化バーで、サインインして Office 365 サービスに対して再アクティブ化します。 <br><br> -共有マシンには、パーソナルマシンに似たアクションが必要であり、特別な手順は必要ありません。 <br><br> -モバイルデバイスでは、ユーザーはアプリからサインアウトし、それを閉じてから再度サインインする必要があります。 |
 |||||
 
 <!--
@@ -117,7 +117,7 @@ ms.locfileid: "49551877"
 
 | ステップ (s) | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
-| 移行中に、電子情報開示の検索が失敗するか、SharePoint Online、OneDrive for Business、および移行された Exchange Online の場所に対して0件の結果が返されます。 | 移行時に、顧客はセキュリティ & コンプライアンスセンター (コンテンツ検索を含む) でケース、保持、検索、エクスポートを引き続き作成できます。  ただし、SharePoint Online、OneDrive for Business、および移行された Exchange Online の場所を対象とした検索では、0の結果が返されるか、エラーが生成されます。 修復については、「 _影響_ 」列を参照してください。 | 電子情報開示を使用するすべてのお客様 |  検索が0件の結果を返す場合や、移行中にエラーが返された場合は、SharePoint Online に対して次の操作を実行してください。 <br><br>  「 [Onedrive または sharepoint のファイルとフォルダーをダウンロード](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)する」の手順に従って、SharePoint Online/Onedrive for business サイトからサイトを直接ダウンロードします。 このメソッドには、サイトでの SharePoint Online 管理者権限または読み取り専用アクセス許可が必要です。 <br><br> 「 [Onedrive または sharepoint からのファイルとフォルダーのダウンロード](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)」で説明されているように、制限を超過した場合、ユーザーは [SharePoint と Teams のファイルをコンピューターに同期](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)するガイダンスに従って onedrive for business 同期クライアントを使用できます。 <br><br> -Exchange Online <br><br> - [Exchange Server のインプレース電子情報開示](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| 移行中に、電子情報開示の検索が失敗するか、SharePoint Online、OneDrive for Business、および移行された Exchange Online の場所に対して0件の結果が返されます。 | 移行時に、顧客は [セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)( [コンテンツ検索](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)を含む) でケース、保持、検索、エクスポートを引き続き作成できます。  ただし、SharePoint Online、OneDrive for Business、および移行された Exchange Online の場所を対象とした検索では、0の結果が返されるか、エラーが生成されます。 修復については、「 _影響_ 」列を参照してください。 | 電子情報開示を使用するすべてのお客様 |  検索が0件の結果を返す場合や、移行中にエラーが返された場合は、SharePoint Online に対して次の操作を実行してください。 <br><br>  「 [Onedrive または sharepoint のファイルとフォルダーをダウンロード](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)する」の手順に従って、SharePoint Online/Onedrive for business サイトからサイトを直接ダウンロードします。 このメソッドには、サイトでの SharePoint Online 管理者権限または読み取り専用アクセス許可が必要です。 <br><br> 「 [Onedrive または sharepoint からのファイルとフォルダーのダウンロード](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)」で説明されているように、制限を超過した場合、ユーザーは [SharePoint と Teams のファイルをコンピューターに同期](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)するガイダンスに従って onedrive for business 同期クライアントを使用できます。 <br><br> -Exchange Online <br><br> - [Exchange Server のインプレース電子情報開示](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 |||||
 
 <!--
