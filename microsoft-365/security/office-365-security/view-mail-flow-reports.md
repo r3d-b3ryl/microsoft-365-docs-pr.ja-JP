@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ & コンプライアンスセンターのレポートダッシュボードで使用できるメールフローレポートについて説明しています。
 ms.custom: ''
-ms.openlocfilehash: 840b9920fc3f994140702eae0bf5ddbdeac4b465
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357925"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572803"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのレポートダッシュボードでメールフローレポートを表示する
 
@@ -76,7 +76,7 @@ ms.locfileid: "49357925"
 
 レポートビューで [ **詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
-- **日付**
+- **Date**
 - **コネクタの方向と名前**
 - **コネクタの種類**
 - **FORCED TLS?**: 値 **True** または **False**。
@@ -132,24 +132,24 @@ ms.locfileid: "49357925"
 
 - **データの表示方法: Exchange トランスポートルール**:
 
-  - **日付**
+  - **Date**
   - **トランスポートルール**
-  - **[件名]**
+  - **Subject**
   - **[送信者のアドレス]**
   - **受信者のアドレス**
   - **重大度**
-  - **[方向]**
+  - **Direction**
 
 - **データの表示方法: DLP Exchange トランスポートルール**:
 
-  - **日付**
+  - **Date**
   - **DLP ポリシー**
   - **トランスポートルール**
-  - **[件名]**
+  - **Subject**
   - **[送信者のアドレス]**
   - **受信者のアドレス**
   - **重大度**
-  - **[方向]**
+  - **Direction**
 
 詳細テーブルビューで [ **フィルター** ] をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -240,7 +240,7 @@ ms.locfileid: "49357925"
 
 データテーブルには、次の情報が含まれています。
 
-- **[方向]**
+- **Direction**
 - **型**
 - **24 時間**
 - **3 日間**
@@ -318,7 +318,7 @@ EOP または Defender for Office 365 によってフィルター処理された
 
 データテーブルには、次の情報が含まれています (日付の順序は降順)。
 
-- **日付**
+- **Date**
 - **合計メール数**
 - **エッジ保護**
 - **マルウェア対策、ファイルの評価、ファイルの種類のブロック**:
@@ -387,7 +387,7 @@ EOP または Defender for Office 365 によってフィルター処理された
 
 データテーブルには、次の情報が含まれています (日付の順序は降順)。
 
-- **日付**
+- **Date**
 - **合計メール数**
 - **エッジのフィルター処理**
 - **マルウェア対策エンジン、安全な添付ファイル、フィルター処理** されたルール:
@@ -463,7 +463,7 @@ EOP または Defender for Office 365 によってフィルター処理された
 
 - **日付 (UTC)**
 - **型**
-- **[方向]**
+- **Direction**
 - **メッセージ数**
 
 詳細テーブルビューで [ **フィルター** ] をクリックすると、次のフィルターを使用して結果を変更できます。
@@ -535,19 +535,16 @@ EOP または Defender for Office 365 によってフィルター処理された
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するには、どのようなアクセス許可が必要ですか。
 
-レポートを表示して使用するには、セキュリティ & コンプライアンスセンター **および** Exchange Online で、指定された役割グループのメンバーである必要があります。
+このトピックで説明されているレポートを表示して使用するには、セキュリティ & コンプライアンスセンターの次のいずれかの役割グループのメンバーである必要があります。
 
-- セキュリティ & コンプライアンスセンターでは、次のいずれかの役割グループのメンバーである必要があります。
+- **組織の管理**
+- **セキュリティ管理者**
+- **セキュリティリーダ**
+- **グローバル閲覧者**
 
-  -組織の管理-セキュリティ管理者 ( [Azure Active Directory 管理センター](https://aad.portal.azure.com) -セキュリティリーダでこれを実行することもできます)
+詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-  詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
-
-- Exchange Online では、次のいずれかの役割グループのメンバーである必要があります。
-
-  -組織の管理-表示のみの組織の管理-表示のみの受信者-コンプライアンス管理
-
-詳細については、「exchange online の [アクセス許可](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) 」および「 [Manage Role Groups in exchange online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
+**注**: microsoft 365 管理センターで対応する Azure Active Directory の役割にユーザーを追加すると、セキュリティ & コンプライアンスセンター _と_ 、microsoft 365 の他の機能に対するアクセス許可で必要なアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 

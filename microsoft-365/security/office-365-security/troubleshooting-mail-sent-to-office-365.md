@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、microsoft 365 お客様に一括メールを送信するためのベストプラクティス &、Microsoft 365 の受信トレイへの電子メールの送信に関するトラブルシューティング情報を提供します。
-ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201739"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568556"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Microsoft 365 に送信されるメールのトラブルシューティング
 
@@ -51,9 +51,7 @@ EOP filtering technologies は、Microsoft 365 および Exchange Server など�
 DNS 逆引き参照を行えない送信者からの電子メールは受け付けないことがあります。場合によっては、正当な送信者が、EOP に対して接続しようとするときに、インターネット ルーティング不能な IP で自身をアドバタイズすることがあります。プライベート (ルーティング不能な) ネットワーク用に予約されている IP アドレスは次のとおりです。
 
 - 192.168.0.0/16 (または 192.168.0.0 ～ 192.168.255.255)
-
 - 10.0.0.0/8 (または 10.0.0.0 ～ 10.255.255.255)
-
 - 172.16.0.0/11 (または 172.16.0.0 ～ 172.31.255.255)
 
 ## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Office 365 でユーザーに電子メールを送信すると、配信不能レポート (NDR) を受信する

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターの送信ポータルを使用して、疑わしいメール、疑わしいフィッシングメール、スパム、その他の潜在的な有害なメッセージ、Url、およびその他の潜在的な問題を報告する方法について説明します。
-ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 0c01afff2e9e5a656099192f3867bb3a6f1cee23
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527747"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568592"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -60,10 +60,10 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 
 1. [ **オブジェクトの種類** ] セクションで、[ **電子メール**] を選択します。 [ **提出形式** ] セクションで、次のいずれかのオプションを使用します。
 
-   - **ネットワークメッセージ id**: これは、メッセージ内の、 **Exchange 組織のネットワークメッセージ id** ヘッダーで使用可能な GUID 値になります。
+   - [**ネットワークメッセージ ID**]: この値は、メッセージ内の **Exchange 組織のネットワークメッセージ id** ヘッダー、または検疫されたメッセージの "x-------------------------------------の **相関 id** ヘッダーで使用できます。
 
    - [**ファイル**]: [**ファイルの選択] を** クリックします。 開いたダイアログで、.eml または .msg ファイルを見つけて選択し、[ **開く**] をクリックします。
-   
+
    > [!NOTE]
    > Office 365 プラン1またはプラン2の Defender を使用している管理者は、メッセージを過去30日間として送信することができます。 他の管理者は、7日間のみ戻ることができます。
 
@@ -244,7 +244,7 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 
 ## <a name="undo-user-submissions"></a>ユーザー送信の取り消し
 
-ユーザーが疑わしいメールをカスタムメールボックスに送信すると、ユーザーと管理者には送信を取り消すオプションがありません。 ユーザーがメールを回復したい場合は、[削除済みアイテム] フォルダーまたは [迷惑メール] フォルダーに復元できます。 
+ユーザーが疑わしいメールをカスタムメールボックスに送信すると、ユーザーと管理者には送信を取り消すオプションがありません。 ユーザーがメールを回復したい場合は、[削除済みアイテム] フォルダーまたは [迷惑メール] フォルダーに復元できます。
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>カスタムメールボックスから Microsoft にメッセージを送信する
 

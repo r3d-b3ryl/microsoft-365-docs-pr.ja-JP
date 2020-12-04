@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスは、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。 共有メールボックスを作成する前に知っておく必要のある情報について説明します。
-ms.openlocfilehash: d0e0888a71e2a017b3934caa67f8d53ffb787fe7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: cc94ae30edcc7a8307328230989dc4a883732b0e
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445701"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568296"
 ---
 # <a name="about-shared-mailboxes"></a>共有メールボックスについて
 
@@ -42,7 +42,7 @@ ms.locfileid: "48445701"
 
 - **外部ユーザー:** 会社外のユーザー (Gmail アカウントを持つユーザーなど) に共有メールボックスへのアクセス権を付与することはできません。 この操作を行う必要がある場合は、代わりに Outlook 用グループを作成することを検討してください。 詳細については、「 [管理センターで Microsoft 365 グループを作成](../create-groups/create-groups.md)する」を参照してください。
 
--  **Outlook で使用:** ブラウザーから web 上の Outlook を使用して共有メールボックスにアクセスするだけでなく、Outlook for iOS アプリまたは Outlook for Android アプリを使用することもできます。 詳細については、「 <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">共有メールボックスを Outlook mobile に追加</a>する」を参照してください。 別の方法として、共有メールボックスのグループを作成することもできます。 詳細については、「 [グループを比較](../create-groups/compare-groups.md)する」を参照してください。  
+- **Outlook で使用:** ブラウザーから web 上の Outlook を使用して共有メールボックスにアクセスするだけでなく、Outlook for iOS アプリまたは Outlook for Android アプリを使用することもできます。 詳細については、「 [共有メールボックスを Outlook mobile に追加](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f)する」を参照してください。 別の方法として、共有メールボックスのグループを作成することもできます。 詳細については、「 [グループを比較](../create-groups/compare-groups.md)する」を参照してください。
 
 - **暗号化:** 共有メールボックスから送信された電子メールを暗号化することはできません。 これは、共有メールボックスには独自のセキュリティコンテキスト (username/password) が含まれていないため、キーを割り当てることができないためです。 複数のユーザーがメンバーであり、自分のキーで暗号化された電子メールを送信または受信した場合、他のメンバーが電子メールの暗号化に使用された公開キーによっては電子メールを読むことができますが、そうでない場合があります。
 

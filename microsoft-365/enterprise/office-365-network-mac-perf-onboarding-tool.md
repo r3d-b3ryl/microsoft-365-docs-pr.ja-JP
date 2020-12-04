@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ネットワーク接続テストツール (プレビュー)
-ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b29eb29cd390c3febd0992e942cf8ab39f652fb2
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087081"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569989"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 ネットワーク接続テストツール (プレビュー)
 
 Microsoft 365 ネットワーク接続テストツールは、にあり <https://connectivity.office.com> ます。 これは、Microsoft 365 管理センターで利用可能なネットワーク評価およびネットワーク insights 情報に対する adjunct ツールであり、正常性の下にあります。 **[接続** ] メニュー
+
+> [!IMPORTANT]
+> すべてのテストレポートが管理者と共有され、サインインしている間はテナントにアップロードされるので、Microsoft 365 テナントにサインインすることが重要です。
 
 ![接続テストツール](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
@@ -239,7 +242,7 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 ![ネットワーク正常性の状態](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 ここでは、よく寄せられる質問の一部に対する回答を示します。
 

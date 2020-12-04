@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Microsoft 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: 44e858286377350f82050b8a1814f761dad9c2fd
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e3424a9cc916c9464478fbe4411bbbf7b971d989
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377319"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572623"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
@@ -31,39 +31,26 @@ ms.locfileid: "48377319"
 組織でグループを作成できるユーザーを制限する必要がある場合は、この記事の手順に従ってください。 グループを作成できるユーザーを制限すると、次のようなアクセスのためにグループに依存するすべてのサービスに影響します。
 
 - Outlook
-    
 - SharePoint
-    
 - Yammer
-    
 - Microsoft Teams
-
 - Microsoft Stream
-
 - Planner
-    
 - PowerBI (クラシック)
-    
 - Web/ロードマップのプロジェクト
-    
-Microsoft 365 グループの作成を特定のセキュリティグループのメンバーに制限できます。 制限するには、Windows PowerShell を使用します。 この記事では、必要な手順について説明します。
-  
-この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365 のグローバル管理者は、Microsoft 365 管理センター、Planner、Teams、Exchange、SharePoint Online などの方法でグループを作成できます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
-        
-  - Exchange 管理者: Exchange 管理センター、Azure AD
-    
-  - パートナー レベル 1 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD
-    
-  - パートナー レベル 2 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD
-    
-  - ディレクトリ製作者: Azure AD
 
-  - SharePoint 管理者: SharePoint 管理センター、Azure AD
-  
-  - Teams サービス管理者: Teams 管理センター、Azure AD
-  
-  - ユーザー管理の管理者: Microsoft 365 管理センター、Yammer、Azure AD
-     
+Microsoft 365 グループの作成を特定のセキュリティグループのメンバーに制限できます。 制限するには、Windows PowerShell を使用します。 この記事では、必要な手順について説明します。
+
+この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365 のグローバル管理者は、Microsoft 365 管理センター、Planner、Teams、Exchange、SharePoint Online などの方法でグループを作成できます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
+
+- Exchange 管理者: Exchange 管理センター、Azure AD
+- パートナー レベル 1 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD
+- パートナー レベル 2 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD
+- ディレクトリ製作者: Azure AD
+- SharePoint 管理者: SharePoint 管理センター、Azure AD
+- Teams サービス管理者: Teams 管理センター、Azure AD
+- ユーザー管理の管理者: Microsoft 365 管理センター、Yammer、Azure AD
+
 これらの役割のいずれかのメンバーである場合は、制限されたユーザーに対して Microsoft 365 グループを作成し、そのユーザーをグループの所有者として割り当てることができます。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
@@ -72,7 +59,7 @@ Microsoft 365 グループの作成を特定のセキュリティグループの
 
 - これらのグループ作成の設定を管理している管理者
 - グループの作成が許可されているセキュリティグループのメンバー
- 
+
 > [!NOTE]
 > Azure ライセンスの割り当て方法の詳細については [、「Azure Active Directory ポータルでライセンスを割り当てるまたは削除](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) する」を参照してください。
 
@@ -87,18 +74,18 @@ Microsoft 365 グループの作成を特定のセキュリティグループの
 上記の役割の管理者は、このグループのメンバーである必要はなく、グループを作成することができます。
 
 > [!IMPORTANT]
-> グループを作成できるユーザーを制限するには、必ず **セキュリティー グループ** を使用してください。 Microsoft 365 グループの使用はサポートされていません。 
-    
+> グループを作成できるユーザーを制限するには、必ず **セキュリティー グループ** を使用してください。 Microsoft 365 グループの使用はサポートされていません。
+
 1. 管理センターで、[ [グループ] ページ](https://admin.microsoft.com/adminportal/home#/groups)に移動します。
 
 2. [**グループの追加**] をクリックします。
 
 3. グループの種類として [**セキュリティ**] を選択します。 グループの名前は覚えておいてください。 後で必要になります。
-  
+
 4. セキュリティグループの設定を終了し、組織内でグループを作成できるユーザーまたは他のセキュリティグループを追加します。
-    
+
 詳細については、「[Microsoft 365 管理センターでのセキュリティ グループの作成、編集、または削除](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group)」を参照してください。
- 
+
 ## <a name="step-2-run-powershell-commands"></a>手順 2: PowerShell コマンドを実行する
 
 グループレベルのゲスト アクセス設定を変更するには、[Graph 用 Azure Active Directory PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (モジュール名 **AzureADPreview**) のプレビュー バージョンを使用する必要があります。
@@ -115,7 +102,7 @@ Microsoft 365 グループの作成を特定のセキュリティグループの
 
 `$GroupName = "Group Creators"`
 
-GroupCreators.ps1 としてファイルを保存します。 
+GroupCreators.ps1 としてファイルを保存します。
 
 PowerShell ウィンドウで、ファイルを保存した場所に移動 します ("CD <FileLocation>" と入力)。
 
@@ -127,14 +114,14 @@ PowerShell ウィンドウで、ファイルを保存した場所に移動 し�
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"
-$AllowGroupCreation = "False"
+$AllowGroupCreation = $False"
 
 Connect-AzureAD
 
 $settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
 if(!$settingsObjectID)
 {
-      $template = Get-AzureADDirectorySettingTemplate | Where-object {$_.displayname -eq "group.unified"}
+    $template = Get-AzureADDirectorySettingTemplate | Where-object {$_.displayname -eq "group.unified"}
     $settingsCopy = $template.CreateDirectorySetting()
     New-AzureADDirectorySetting -DirectorySetting $settingsCopy
     $settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
@@ -145,7 +132,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 
 if($GroupName)
 {
-    $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
+  $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
 }
  else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
@@ -162,24 +149,24 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 使用するセキュリティグループを変更する場合は、新しいセキュリティグループの名前でスクリプトを再実行します。
 
 グループ作成の制限をオフにして、もう一度すべてのユーザーがグループを作成できるようにするには、$GroupName を "" に、$AllowGroupCreation を "True" に設定して、スクリプトを再実行します。
-    
+
 ## <a name="step-3-verify-that-it-works"></a>手順 3: 動作することを確認する
 
 変更が有効になるまでに30分以上かかる場合があります。 新しい設定を確認するには、次の手順を実行します。
 
 1. グループを作成する権限を持たないユーザーアカウントを使用して、Microsoft 365 にサインインします。 作成したセキュリティ グループのメンバーまたは管理者ではないユーザーのアカウントを使用します。
-    
-2. [**Planner**] タイルを選択します。 
-    
-3. Planner では、左側のナビゲーションで **[新しいプラン]** を選択してプランを作成します。 
-  
+
+2. [**Planner**] タイルを選択します。
+
+3. Planner では、左側のナビゲーションで **[新しいプラン]** を選択してプランを作成します。
+
 4. プランとグループの作成が無効になっていることを示すメッセージが表示されます。
 
 セキュリティグループのメンバーと同じ手順をもう一度試してください。
 
 > [!NOTE]
 > セキュリティグループのメンバーがグループを作成できない場合は、そのグループが [OWA メールボックス ポリシー](https://go.microsoft.com/fwlink/?linkid=852135) によってブロックされていないことを確認します。
-    
+
 ## <a name="related-articles"></a>関連記事
 
 [Office 365 PowerShell の概要](https://go.microsoft.com/fwlink/p/?LinkId=808033)

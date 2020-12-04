@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Microsoft Defender for Office 365 で利用可能なフィッシング対策ポリシーについて学ぶことができます。
-ms.openlocfilehash: a02d69b278420d814871df8eebdd6efcdf5d8e7f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376354"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568582"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
@@ -30,7 +30,7 @@ ms.locfileid: "49376354"
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックス、スタンドアロン Exchange Online Protection (EOP) 組織、Exchange Online メールボックスを使用しない組織、Microsoft Defender for Office 365 組織で使用できます。
 
-Microsoft Defender for Office 365 のフィッシング対策ポリシーは、Office 365 の Defender を所有する組織でのみ使用できます。 以下に例を示します。
+Microsoft Defender for Office 365 のフィッシング対策ポリシーは、Office 365 の Defender を所有する組織でのみ使用できます。 例:
 
 - Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -200,11 +200,10 @@ EOP のフィッシング対策ポリシーおよび Office 365 の Microsoft De
   - **偽装ドメイン**: 差出人アドレスには保護されたドメインが含まれています。
   - **通常の文字**: 差出人アドレスには、保護された送信者またはドメインに、一般的でない文字セット (数学記号、文字、大文字と小文字の組み合わせなど) が含まれています。
 
-> [!IMPORTANT]
->
-> 偽装の安全のヒントがオフになっている場合でも、メールフロールール (トランスポートルールとも呼ばれます) を使用して、 **Exchange-Enablefirstcontactsaf** のメッセージヘッダーをメッセージに追加することを **お勧め** します。 特定の安全のヒントが表示されるのは、受信者が送信者からの電子メールを受信しないことがよくあることや、受信者が最初に送信者から電子メールを受信した場合です。
->:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="複数の受信者による偽装保護の安全性ヒントのテキスト。":::
-<p>
+  > [!IMPORTANT]
+  >
+  > 偽装による安全のヒントがオフになっている場合でも、メールフロールール (トランスポートルールとも呼ばれます) を使用して、値を **enable** という値 **を持つメッセージ** ヘッダーをメッセージに追加することを **お勧め** します。 安全性のヒントは、受信者が送信者からメッセージを初めて取得したときや、送信者からメッセージを受信する頻度がない場合に、受信者に通知します。
+  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="複数の受信者による偽装保護の安全性ヒントのテキスト。":::
 
 - **メールボックスインテリジェンス**: 頻繁に使用する連絡先とユーザーの電子メールのパターンを決定する人工知能 (AI) を有効または無効にします。 この設定により、AI は、これらの連絡先からの正当な電子メールとスプーフィングされたメールを区別します。 メールボックスインテリジェンスは、Exchange Online メールボックスに対してのみ使用できます。
 

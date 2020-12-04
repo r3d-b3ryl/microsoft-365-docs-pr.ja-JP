@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 038f310d8690652a3aefb2eab5ac01f76986d210
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357937"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572563"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -67,7 +67,7 @@ ms.locfileid: "49357937"
 
 ## <a name="encryption-report"></a>暗号化レポート
 
-**暗号化レポート** は、EOP (exchange online またはスタンドアロン EOP の exchange online メールボックスなしのメールボックスを使用したサブスクリプション) で利用できます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。 以下に例を示します。
+**暗号化レポート** は、EOP (exchange online またはスタンドアロン EOP の exchange online メールボックスなしのメールボックスを使用したサブスクリプション) で利用できます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。 例:
 
 - ユーザーによって大量の電子メールメッセージが暗号化されている場合、暗号化ポリシーを追加して、特定のユースケースの暗号化を自動化することができます。 詳細については、「 [Microsoft 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](../../compliance/define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
 
@@ -117,16 +117,16 @@ ms.locfileid: "49357937"
 
 - **下に移動: 暗号化方法** または次のよう **に分割します。暗号化テンプレート**: 次の情報が表示されます。
 
-  - **日付**
+  - **Date**
   - **[送信者のアドレス]**
   - **暗号化テンプレート**
   - **暗号化方法**
   - **受信者のアドレス**
-  - **[件名]**
+  - **Subject**
 
 - **データの表示方法: 上位5受信者ドメイン**:
 
-  - **日付**
+  - **Date**
   - **受信者ドメイン**
   - **メッセージ数**
 
@@ -162,11 +162,11 @@ ms.locfileid: "49357937"
 
 [ **詳細テーブルの表示**] をクリックすると、次の詳細情報が表示されます。
 
-- **日付**
+- **Date**
 - **[送信者のアドレス]**
 - **受信者のアドレス**
 - メッセージ **id**: メッセージヘッダーの **メッセージ id** ヘッダーフィールドで利用可能で、一意である必要があります。 値の例を次に示し `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` ます (角かっこに注意してください)。
-- **[件名]**
+- **Subject**
 - **Filename**
 - **マルウェアの名前**
 
@@ -224,12 +224,12 @@ ms.locfileid: "49357937"
 
 いずれかのレポートビューで [ **詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
-- **日付**
+- **Date**
 - **[送信者のアドレス]**
 - **受信者のアドレス**
 - **イベントの種類**
 - **操作**
-- **[件名]**
+- **Subject**
 
 詳細テーブルで [ **フィルター** ] をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -263,7 +263,7 @@ ms.locfileid: "49357937"
 
 [ **詳細テーブルの表示**] をクリックすると、次の詳細情報が表示されます。
 
-- **日付**
+- **Date**
 - **スプーフィングされた送信者**
 - **True 送信者**
 - [**Sender IP (送信者の IP)**]
@@ -408,7 +408,7 @@ ms.locfileid: "49357937"
 
 - **データの表示方法: コンテンツ \> マルウェア**:
 
-  - **日付**
+  - **Date**
   - **Location**
   - **転送者**
   - **マルウェアの名前**
@@ -417,8 +417,8 @@ ms.locfileid: "49357937"
 
 - **データの表示: メッセージの上書き**:
 
-  - **日付**
-  - **[件名]**
+  - **Date**
+  - **Subject**
   - **送信者**
   - **受信者**
   - **検出者**
@@ -436,8 +436,8 @@ ms.locfileid: "49357937"
 
 - その他のすべてのグラフ:
 
-  - **日付**
-  - **[件名]**
+  - **Date**
+  - **Subject**
   - **送信者**
   - **受信者**
   - **検出者**
@@ -498,19 +498,16 @@ Office 365 の Microsoft Defender では、 **URL の脅威保護レポート** 
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するには、どのようなアクセス許可が必要ですか。
 
-レポートを表示して使用するには、セキュリティ & コンプライアンスセンター **および** Exchange Online で、指定された役割グループのメンバーである必要があります。
+このトピックで説明されているレポートを表示して使用するには、セキュリティ & コンプライアンスセンターの次のいずれかの役割グループのメンバーである必要があります。
 
-- セキュリティ & コンプライアンスセンターでは、次のいずれかの役割グループのメンバーである必要があります。
+- **組織の管理**
+- **セキュリティ管理者**
+- **セキュリティリーダ**
+- **グローバル閲覧者**
 
-  -組織の管理-セキュリティ管理者 ( [Azure Active Directory 管理センター](https://aad.portal.azure.com) -セキュリティリーダでこれを実行することもできます)
+詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-  詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
-
-- Exchange Online では、次のいずれかの役割グループのメンバーである必要があります。
-
-  -組織の管理-表示のみの組織の管理-表示のみの受信者-コンプライアンス管理
-
-詳細については、「exchange online の [アクセス許可](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) 」および「 [Manage Role Groups in exchange online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
+**注**: microsoft 365 管理センターで対応する Azure Active Directory の役割にユーザーを追加すると、セキュリティ & コンプライアンスセンター _と_ 、microsoft 365 の他の機能に対するアクセス許可で必要なアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートでデータが表示されない場合はどうなりますか。
 

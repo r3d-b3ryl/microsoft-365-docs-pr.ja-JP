@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、スプーフィングインテリジェンスの理解がどのように機能するかを知ることができます。 電子メール認証の確認 (SPF、DKIM、または DMARC) を通過しないドメインから組織に対して、どの送信者がメールを正当に送信しているかを迅速に判断できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89a31c6df7c9b6e02f52ea414ceb6334427feab1
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6f5ebd0fd42d17354eeb1e03c946ac5446c3667c
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920480"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572743"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>チュートリアル-Office 365 の Microsoft Defender のスプーフィングインテリジェンスの洞察
 
@@ -44,12 +44,13 @@ Office 365 の Defender を使用する Microsoft 365 組織では、スプー�
 
   セキュリティ & コンプライアンスセンターでは、複数のダッシュボードからスプーフィングインテリジェンスの洞察を確認できます。 どのダッシュボードを使用しているかに関係なく、洞察は同じ情報を提供し、同じタスクをすばやく実行することができます。
 
-- このトピックの手順を実行する前に、アクセス許可を割り当てる必要があります。 スプーフィングインテリジェンスの洞察を使用するには、次のいずれかの役割グループのメンバーである必要があります。
+- この記事の手順を実行する前に、セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
+  - **組織の管理**
+  - **セキュリティ管理者**
+  - **セキュリティリーダ**
+  - **グローバル閲覧者**
 
-  - **組織の管理** または [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の **セキュリティ管理者** 。
-  - **組織の管理** または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **検疫管理** 。
-  - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の **セキュリティ閲覧者** 。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **表示限定の組織管理** 。
+  **注**: microsoft 365 管理センターで対応する Azure Active Directory の役割にユーザーを追加すると、セキュリティ & コンプライアンスセンター _と_ 、microsoft 365 の他の機能に対するアクセス許可で必要なアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。
 
 - Office 365 の Microsoft Defender で、フィッシング対策ポリシーのスプーフィングインテリジェンスを有効または無効にします。 詳細については、「 [Configure フィッシング対策ポリシーを Microsoft Defender の Office 365 に構成する](configure-atp-anti-phishing-policies.md)」を参照してください。
 
@@ -57,7 +58,7 @@ Office 365 の Defender を使用する Microsoft 365 組織では、スプー�
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでのスプーフィングインテリジェンスに関する洞察を開く
 
-1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** ] ダッシュボードに移動し \> **ます。**
+1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理**] ダッシュボードに移動し \> **ます。**
 
 2. [ **Insights** ] 行で、次のいずれかのアイテムを探します。
 
@@ -70,9 +71,9 @@ Office 365 の Defender を使用する Microsoft 365 組織では、スプー�
 
    この洞察には、次の2つのモードがあります。
 
-   - [ **洞察モード** ]: スプーフィングインテリジェンスが有効になっている場合、過去30日間のスプーフィングインテリジェンス機能によって影響を受けたメッセージの数が洞察に表示されます。
+   - [**洞察モード**]: スプーフィングインテリジェンスが有効になっている場合、過去30日間のスプーフィングインテリジェンス機能によって影響を受けたメッセージの数が洞察に表示されます。
 
-   - **If モード** : スプーフィングインテリジェンスが無効な場合、過去30日間のスプーフィングインテリジェンス機能によって影響を受け *たメッセージの数が洞察* に表示されます。
+   - **If モード**: スプーフィングインテリジェンスが無効な場合、過去30日間のスプーフィングインテリジェンス機能によって影響を受け *たメッセージの数が洞察* に表示されます。
 
    どちらの方法でも、洞察に表示される偽装されたドメインは、 **疑わしいドメイン** の組と **不審でないドメインのペア** という2つのカテゴリに分かれています。 これらのカテゴリは、確認のために3つの異なるバケットにさらに細分化されています。
 
@@ -84,9 +85,9 @@ Office 365 の Defender を使用する Microsoft 365 組織では、スプー�
 
    **疑わしいドメインペア** は次のとおりです。
 
-   - **信頼度の高いスプーフィング** : 過去の送信パターンとドメインの評価スコアに基づいて、ドメインがスプーフィングされており、これらのドメインからのメッセージが悪意を持っている可能性が高いことを確信しています。
+   - **信頼度の高いスプーフィング**: 過去の送信パターンとドメインの評価スコアに基づいて、ドメインがスプーフィングされており、これらのドメインからのメッセージが悪意を持っている可能性が高いことを確信しています。
 
-   - **適度な信頼度のスプーフィング** : 過去の送信パターンとドメインの評価スコアに基づいて、ドメインがスプーフィングされており、これらのドメインから送信されたメッセージが正当であると確信しています。 誤検知は、信頼度の高いスプーフィングよりも、このカテゴリの可能性が高くなります。
+   - **適度な信頼度のスプーフィング**: 過去の送信パターンとドメインの評価スコアに基づいて、ドメインがスプーフィングされており、これらのドメインから送信されたメッセージが正当であると確信しています。 誤検知は、信頼度の高いスプーフィングよりも、このカテゴリの可能性が高くなります。
 
    - **不審でないドメインのペア** ( **rescued スプーフィング** を含む): ドメインに障害が発生した明示的な電子メール認証チェック [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [dkim](use-dkim-to-validate-outbound-email.md)、および [DMARC](use-dmarc-to-validate-email.md))。 しかし、ドメインは暗黙的な電子メール認証チェック ([複合認証](email-validation-and-authentication.md#composite-authentication)) に合格しています。 その結果、メッセージに対してスプーフィング対策アクションが実行されませんでした。
 

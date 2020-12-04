@@ -25,28 +25,16 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 61ba3b0a8a753c9c441fc5a2ffa66b63da9af675
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644557"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572419"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Microsoft Business Standard をセットアップする
 
-Microsoft 365 Business Standard のセットアップに関する短いビデオをご覧ください。<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
-
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
-  
- 次の手順は、**[Microsoft 365 Business Standard プラン](https://go.microsoft.com/fwlink/p/?LinkId=627220)** を所有する企業および[非営利団体](https://go.microsoft.com/fwlink/p/?LinkId=627221)を対象としています。_
-
-Microsoft 365 Business Standard (旧称: Office 365 Business Premium) のセットアップに関する短いビデオをご覧ください。<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
-
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>ドメインを追加してサインインをカスタマイズする
 
@@ -56,14 +44,14 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 
 1. グローバル管理者の資格情報を使用して、[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。 
 
-2. _[*セットアップに移動*]* を選択して、ウィザードを開始します。
+2. [**セットアップに移動**] を選択して、ウィザードを開始します。
 
 3. [**Office アプリのインストール**] ページでは、オプションで自分のコンピューターにアプリをインストールすることができます。
     
-4. **ドメインの追加**ステップで、使用するドメイン名 (Contoso.com など) を入力します。
+4. **ドメインの追加** ステップで、使用するドメイン名 (Contoso.com など) を入力します。
 
     > [!IMPORTANT]
-    > サインアップ時にドメインを購入した場合、ここでは**ドメインの追加**ステップは表示されません。 代わりに [[ユーザーの追加](#add-users-and-assign-licenses)] に移動します。
+    > サインアップ時にドメインを購入した場合、ここでは **ドメインの追加** ステップは表示されません。 代わりに [[ユーザーの追加](#add-users-and-assign-licenses)] に移動します。
 
     
 4. ウィザードの手順に従って[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)し、ドメインの所有を確認します。 ドメイン ホストがわかっている場合は、「[ホスト特有の手順](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)」も参照してください。

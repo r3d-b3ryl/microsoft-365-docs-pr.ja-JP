@@ -1,5 +1,5 @@
 ---
-title: Defender for Office 365 のレポートの表示
+title: レポートダッシュボードで Office 365 の Defender のレポートを表示する
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: セキュリティ & コンプライアンスセンターで Microsoft Defender for Office 365 のレポートを検索して使用します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561729"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572491"
 ---
-# <a name="view-reports-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のレポートを表示する
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのレポートダッシュボードで Office 365 の Defender を表示するレポート
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -338,27 +338,16 @@ Microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Office 365 レポートの Defender を表示するには、どのようなアクセス許可が必要ですか。
 
-このトピックで説明されているレポートを表示して使用するには、 **セキュリティ & コンプライアンスセンターと Exchange 管理センターの両方に対して適切な役割が割り当てられている必要があり** ます。
+このトピックで説明されているレポートを表示して使用するには、セキュリティ & コンプライアンスセンターの次のいずれかの役割グループのメンバーである必要があります。
 
-- セキュリティ & コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
+- **組織の管理**
+- **セキュリティ管理者**
+- **セキュリティリーダ**
+- **グローバル閲覧者**
 
-  - 組織管理
-  - セキュリティ管理者 (Azure Active Directory 管理センターで割り当て [https://aad.portal.azure.com](https://aad.portal.azure.com) 可能)
-  - Security Operator (Azure Active Directory 管理センター () で割り当てることができます [https://aad.portal.azure.com](https://aad.portal.azure.com) )
-  - セキュリティ閲覧者
+詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-- Exchange Online の場合は、Exchange 管理センター ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) または PowerShell コマンドレット (「 [Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
-
-  - 組織の管理
-  - 表示限定の組織管理
-  - "View-Only Recipients/表示専用受信者" 役割
-  - コンプライアンス管理
-
-詳細については、次のリソースを参照してください。
-
-- [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
-
-- [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+**注**: microsoft 365 管理センターで対応する Azure Active Directory の役割にユーザーを追加すると、セキュリティ & コンプライアンスセンター _と_ 、microsoft 365 の他の機能に対するアクセス許可で必要なアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートでデータが表示されない場合はどうなりますか。
 

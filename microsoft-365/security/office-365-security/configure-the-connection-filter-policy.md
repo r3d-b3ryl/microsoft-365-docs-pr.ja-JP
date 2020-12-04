@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で、電子メールサーバーからのメールを許可またはブロックするように接続フィルターを構成する方法について説明します。
-ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318254"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572827"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターの構成
 
@@ -49,17 +49,16 @@ Exchange Online または exchange online メールボックスを持たない�
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
+- この記事の手順を実行する前に、セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
+  - 既定の接続フィルターポリシーを変更するには、 **組織の管理** または **セキュリティ管理者** の役割グループのメンバーである必要があります。
+  - 既定の接続フィルターポリシーへの読み取り専用アクセスでは、 **グローバル閲覧** 者または **セキュリティリーダー** の役割グループのメンバーである必要があります。
 
-  - 既定の接続フィルターポリシーを変更するには、次のいずれかの役割グループのメンバーである必要があります。
+  詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-    - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
-    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
+  **注**:
 
-  - 既定の接続フィルターポリシーに対する読み取り専用アクセスでは、次のいずれかの役割グループのメンバーである必要があります。
-
-    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
+  - Microsoft 365 管理センターで対応する Azure Active Directory の役割にユーザーを追加すると、セキュリティ & コンプライアンスセンター _および_ microsoft 365 の他の機能に対するアクセス許可で必要なアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **表示のみの組織の管理** 役割グループは、機能への読み取り専用アクセス権も付与します。
 
 - 許可またはブロックする電子メールサーバー (送信者) の送信元 IP アドレスを確認するには、メッセージヘッダーの [接続 IP (**CIP**)] ヘッダーフィールドを確認します。 さまざまな電子メールクライアントのメッセージヘッダーを表示するには、「 [Outlook でインターネットメッセージヘッダーを表示](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)する」を参照してください。
 
@@ -69,7 +68,7 @@ Exchange Online または exchange online メールボックスを持たない�
 
 ## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>セキュリティ & コンプライアンスセンターを使用して既定の接続フィルターポリシーを変更する
 
-1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理**ポリシーのスパム対策] に移動し \> **Policy** \> **Anti-Spam**ます。
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** ポリシーのスパム対策] に移動し \> **Policy** \> **Anti-Spam** ます。
 
 2. [ **スパム対策設定** ] ページで、[展開] アイコンをクリックして [ **接続フィルターポリシー** ] を展開し、 ![ ](../../media/scc-expand-icon.png) [ **ポリシーの編集**] をクリックします。
 
@@ -87,17 +86,17 @@ Exchange Online または exchange online メールボックスを持たない�
 
      IP アドレスまたはアドレスの範囲を追加するには、[追加] アイコン **をクリックし** ![ ](../../media/ITPro-EAC-AddIcon.png) ます。 エントリを削除するには、[ **許可された IP アドレス** ] でエントリを選択し、 **[削除] をクリックし** ![ ](../../media/scc-remove-icon.png) ます。 完了したら、**[保存]** をクリックします。
 
-   - **IP 禁止一覧**: [ **編集**] をクリックします。 表示される**Ip 禁止一覧**のポップアップで、Ip**許可一覧**の設定で前述したように、[**アドレスまたはアドレスの範囲**] ボックスに1つの ip、IP 範囲、または CIDR IP を入力します。
+   - **IP 禁止一覧**: [ **編集**] をクリックします。 表示される **Ip 禁止一覧** のポップアップで、Ip **許可一覧** の設定で前述したように、[**アドレスまたはアドレスの範囲**] ボックスに1つの ip、IP 範囲、または CIDR IP を入力します。
 
      IP アドレスまたはアドレスの範囲を追加するには、[追加] アイコン **をクリックし** ![ ](../../media/ITPro-EAC-AddIcon.png) ます。 エントリを削除するには、[ **ブロックする IP アドレス** ] のエントリを選択し、 **[削除] をクリックし** ![ ](../../media/scc-remove-icon.png) ます。 完了したら、**[保存]** をクリックします。
 
-   - **セーフ**リストを有効にする: セーフリストの使用を有効または無効にして、スパムフィルターをスキップする既知の良好な送信者を特定します。
+   - **セーフ** リストを有効にする: セーフリストの使用を有効または無効にして、スパムフィルターをスキップする既知の良好な送信者を特定します。
 
 4. 完了したら、**[保存]** をクリックします。
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>セキュリティ & コンプライアンスセンターを使用して既定の接続フィルターポリシーを表示する
 
-1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理**ポリシーのスパム対策] に移動し \> **Policy** \> **Anti-Spam**ます。
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** ポリシーのスパム対策] に移動し \> **Policy** \> **Anti-Spam** ます。
 
 2. [ **スパム対策設定** ] ページで、[ **接続フィルターポリシー**] という名前の既定のポリシーの横にあるドロップダウンをクリックします。
 
@@ -145,7 +144,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 既定の接続フィルターポリシーが正常に変更されたことを確認するには、次のいずれかの手順を実行します。
 
-- [セキュリティ & コンプライアンスセンター] で、[**脅威管理**ポリシーのスパム対策] に移動し \> **Policy** \> **Anti-Spam** \> て、[**接続フィルターポリシー (always ON**)] の横にあるドロップダウンをクリックし、設定を確認します。
+- [セキュリティ & コンプライアンスセンター] で、[**脅威管理** ポリシーのスパム対策] に移動し \> **Policy** \> **Anti-Spam** \> て、[**接続フィルターポリシー (always ON**)] の横にあるドロップダウンをクリックし、設定を確認します。
 
 - Exchange Online PowerShell またはスタンドアロンの EOP PowerShell で、次のコマンドを実行し、設定を確認します。
 
@@ -165,9 +164,9 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 潜在的な問題について十分に理解できたので、以下の設定を使用してメールフロールールを作成し、これらの IP アドレスからのメッセージがスパムフィルタリングをスキップするようにすることができます。
 
-- ルールの条件**Apply this rule if** : \> **送信者**の \> **ip アドレスがこれらのいずれかの範囲内にある場合、または完全に一致する**場合は、このルールを適用 \> します (/1 ~ 23 のネットワークマスクで CIDR ip を入力します)。
+- ルールの条件 **Apply this rule if** : \> **送信者** の \> **ip アドレスがこれらのいずれかの範囲内にある場合、または完全に一致する** 場合は、このルールを適用 \> します (/1 ~ 23 のネットワークマスクで CIDR ip を入力します)。
 
-- ルールの処理: **メッセージのプロパティを変更する** \> **スパム信頼レベル (SCL) を設定**する \> **スパムフィルターをバイパス**する。
+- ルールの処理: **メッセージのプロパティを変更する** \> **スパム信頼レベル (SCL) を設定** する \> **スパムフィルターをバイパス** する。
 
 ルールを監査したり、ルールをテストしたり、特定の期間にルールをアクティブ化したり、その他の選択を行ったりすることができます。 ルールを施行する前に一定期間ルールをテストすることをお勧めします。 詳細については、「 [Exchange Online でメールフロールールを管理](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)する」を参照してください。
 
@@ -181,9 +180,9 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 2. 少なくとも次の設定を使用してメールフロールールを構成します。
 
-   - ルールの条件**Apply this rule if** : \> **送信者**の \> **IP アドレスがこれらのいずれかの範囲内にある場合、または** \> 192.168.1.25 (前の手順で ip 許可一覧に追加したものと同じ ip アドレスまたはアドレスの範囲) に正確に一致する場合は、このルールを適用します。
+   - ルールの条件 **Apply this rule if** : \> **送信者** の \> **IP アドレスがこれらのいずれかの範囲内にある場合、または** \> 192.168.1.25 (前の手順で ip 許可一覧に追加したものと同じ ip アドレスまたはアドレスの範囲) に正確に一致する場合は、このルールを適用します。
 
-   - ルールの処理: **メッセージのプロパティを変更する** \> **スパム信頼レベル (SCL)** \> **0**を設定します。
+   - ルールの処理: **メッセージのプロパティを変更する** \> **スパム信頼レベル (SCL)** \> **0** を設定します。
 
    - ルールの例外: **送信者** \> **ドメインは** \> fabrikam.com です (スパムフィルターをスキップするドメインのみ)。
 
@@ -197,12 +196,12 @@ IP 許可一覧内の電子メールサーバーからのメッセージは、�
 
 これらのシナリオのいずれかが発生した場合は、次の設定を使用してメールフロールールを作成することができます (最低限)。これにより、問題のある IP アドレスからのメッセージがスパムフィルター処理をスキップすることを確認できます。
 
-- ルールの条件**Apply this rule if** : \> **送信者の** \> **IP アドレスがこれらの範囲内にある場合、または完全に一致する**場合は \> (IP アドレスまたはアドレス)、このルールを適用します。
+- ルールの条件 **Apply this rule if** : \> **送信者の** \> **IP アドレスがこれらの範囲内にある場合、または完全に一致する** 場合は \> (IP アドレスまたはアドレス)、このルールを適用します。
 
-- ルールの処理: **メッセージのプロパティを変更する** \> **スパム信頼レベル (SCL) を設定**する \> **スパムフィルターをバイパス**する。
+- ルールの処理: **メッセージのプロパティを変更する** \> **スパム信頼レベル (SCL) を設定** する \> **スパムフィルターをバイパス** する。
 
 ## <a name="new-to-microsoft-365"></a>Microsoft 365 の新機能
 
 ****
 
-![LinkedIn Learning の短いアイコンは、 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される **Microsoft 365 管理者および IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。
+![LinkedIn Learning の短いアイコンは、 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される **Microsoft 365 管理者および IT プロフェッショナル** 向けの無料のビデオコースを見つけることができます。
