@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーのユーザー権限とロールを設定し、アクションの自動化されたテストを構成します。 ユーザー履歴を管理し、ダッシュボードビューにフィルターを適用します。
-ms.openlocfilehash: bcb75943df88578b30063d8e35877cb2e3e6250b
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 9a09e12457d39e2f4aab99d3bec68b77c1a3a975
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376558"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572396"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -32,7 +32,7 @@ ms.locfileid: "49376558"
 
 コンプライアンスマネージャーは、Office 365 と Microsoft 365 のライセンスを持つ組織、および米国政府機関 (GCC) のお客様を対象としています。 評価の可用性および管理機能は、使用許諾契約によって異なります。  [サービスの説明の詳細を表示](https://go.microsoft.com/fwlink/?linkid=2132371)します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 通常、コンプライアンスマネージャーにアクセスする最初のユーザーは、組織の Microsoft 365 グローバル管理者になることがあります。 初めてコンプライアンスマネージャーを訪れた場合は、グローバル管理者サインインを推奨し、以下の説明に従ってユーザーのアクセス許可を設定することをお勧めします。
 
@@ -72,7 +72,7 @@ Microsoft 365 コンプライアンスセンター内でアクセス許可を設
 
 8. ユーザーの割り当てが終了したら、[ **完了**] を選択し、[ **保存**]、[ **閉じる**] の順に選択します。
 
-##### <a name="more-about-the-office-365-secruity--compliance-center"></a>Office 365 Secて & コンプライアンスセンターの詳細
+##### <a name="more-about-the-office-365-security--compliance-center"></a>Office 365 セキュリティ & コンプライアンスセンターの詳細情報
 
 アクセス許可の詳細について [は、「Office 365 セキュリティ & コンプライアンスセンター」を](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)参照してください。
 
@@ -361,5 +361,5 @@ Microsoft 365 コンプライアンスセンターのコンプライアンスマ
 
 **詳細については**、「 [評価テンプレートの使用方法」を参照して](compliance-manager-templates.md)ください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 [評価を設定](compliance-manager-assessments.md)してコンプライアンスマネージャーをカスタマイズします。

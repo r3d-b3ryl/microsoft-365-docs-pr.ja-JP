@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 管理者は、検疫タグを使用して、検疫済みメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
-ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357649"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572671"
 ---
 # <a name="quarantine-tags"></a>検疫タグ
 
@@ -62,9 +62,7 @@ EOP は、従来、 [検疫](find-and-release-quarantined-messages-as-a-user.md)
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- 検疫タグを表示、作成、変更、または削除するには、次のいずれかの役割グループのメンバーである必要があります。
-  - **組織の管理** または [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の **セキュリティ管理者**。
-  - **組織の管理** または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **検疫管理**。
+- 検疫タグを表示、作成、変更、または削除するには、[セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)で、[**組織の管理**] または [**セキュリティ管理者**] の役割のメンバーである必要があります。
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>手順 1: セキュリティ & コンプライアンスセンターで検疫タグを作成する
 
@@ -131,13 +129,13 @@ _EndUserQuarantinePermissionsValue_ パラメーターは、バイナリ値か�
 
 |アクセス許可|アクセスなし|制限付きアクセス|フルアクセス|
 |---|:---:|:---:|:---:|
-|PermissionToAllowSender|.0|.0|1-d|
-|PermissionToBlockSender|.0|1-d|1-d|
-|PermissionToDelete|.0|1-d|1-d|
+|PermissionToAllowSender|.0|.0|1 |
+|PermissionToBlockSender|.0|1 |1 |
+|PermissionToDelete|.0|1 |1 |
 |PermissionToDownload<sup>\*</sup>|.0|.0|.0|
-|PermissionToPreview|.0|1-d|1-d|
-|PermissionToRelease<sup>\*\*</sup>|.0|.0|1-d|
-|PermissionToRequestRelease<sup>\*\*</sup>|.0|1-d|.0|
+|PermissionToPreview|.0|1 |1 |
+|PermissionToRelease<sup>\*\*</sup>|.0|.0|1 |
+|PermissionToRequestRelease<sup>\*\*</sup>|.0|1 |.0|
 |PermissionToViewHeader<sup>\*</sup>|.0|.0|.0|
 |バイナリ値|00000000|01101010|11101100|
 |使用する10進値|.0|106|236|
@@ -228,7 +226,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 |機能|検疫タグはサポートされていますか?|使用される既定の検疫タグ|
 |---|:---:|---|
-|[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**信頼度の高いスパム** (_HighConfidenceSpamAction_)</li><li>**フィッシング電子メール** (_PhishSpamAction_)</li><li>**高信頼フィッシング電子メール** (_HighConfidencePhishAction_)</li><li>**バルクメール** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultSpamTag (フルアクセス)</li><li>DefaultHighConfSpamTag (フルアクセス)</li><li>DefaultPhishTag (フルアクセス)</li><li>DefaultHighConfPhishTag (アクセス不可)</li><li>DefaultBulkTag (フルアクセス)</li></ul>
+|[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**信頼度の高いスパム** (_HighConfidenceSpamAction_)</li><li>**フィッシング電子メール** (_PhishSpamAction_)</li><li>**高信頼フィッシング電子メール** (_HighConfidencePhishAction_)</li><li>**バルクメール** (_BulkSpamAction_)</li></ul>|必要|<ul><li>DefaultSpamTag (フルアクセス)</li><li>DefaultHighConfSpamTag (フルアクセス)</li><li>DefaultPhishTag (フルアクセス)</li><li>DefaultHighConfPhishTag (アクセス不可)</li><li>DefaultBulkTag (フルアクセス)</li></ul>
 |フィッシング対策ポリシー: <ul><li>[スプーフィングインテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_authenticationfailaction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装ユーザーによって電子メールが送信される場合** (_targeteduserprotectionaction_)</li><li>**偽装ドメインによって電子メールが送信される場合** (_targeteddomainprotectionaction_)</li><li>**メールボックスインテリジェンス** \>**偽装ユーザーによって電子メールが送信される場合**(_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|いいえ|該当なし|
 |[マルウェア対策ポリシー](configure-anti-malware-policies.md): 検出されたすべてのメッセージが常に検疫されます。|いいえ|該当なし|
 |[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)|いいえ|該当なし|
@@ -491,7 +489,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 受信拒否リストの詳細については、「 [ユーザーからのメッセージをブロック](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) する」と「 [Exchange Online の PowerShell を使用してメールボックスのセーフリストコレクションを構成する](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)」を参照してください。
 
-#### <a name="delete-permission"></a>削除のアクセス許可
+#### <a name="delete-permission"></a>アクセス許可を削除する
 
 **Delete** アクセス許可 (_PermissionToDelete_) は、検疫からユーザーが自分のメッセージ (ユーザーが受信者であるメッセージ) を削除する機能を制御します。
 

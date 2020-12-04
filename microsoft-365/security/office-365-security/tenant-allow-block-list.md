@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ & コンプライアンスセンターのテナントの許可/ブロックリストで URL エントリを構成する方法について説明します。
-ms.openlocfilehash: eb9dcc5b239aae1366a0a2e0eebd68b3f0082e6b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202341"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572643"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL を管理する
 
@@ -52,33 +52,32 @@ Exchange online または exchange online メールボックスを使用しな�
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
+- この記事の手順を実行する前に、セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
+  - テナントの許可/禁止リストに値を追加したり、削除したりするには、 **組織の管理** または **セキュリティ管理者** の役割グループのメンバーである必要があります。
+  - テナントの許可/禁止リストへの読み取り専用アクセスでは、 **グローバル閲覧** 者または **セキュリティ閲覧** 者の役割グループのメンバーである必要があります。
 
-  - テナントの許可/禁止リストの値を追加および削除するには、次のいずれかの役割グループのメンバーである必要があります。
+  詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-    - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
-    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
+  **注**:
 
-  - テナントの許可/禁止リストに対する読み取り専用アクセスの場合は、次のいずれかの役割グループのメンバーである必要があります。
-
-    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
+  - Microsoft 365 管理センターで対応する Azure Active Directory の役割にユーザーを追加すると、セキュリティ & コンプライアンスセンター _および_ microsoft 365 の他の機能に対するアクセス許可で必要なアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **表示のみの組織の管理** 役割グループは、機能への読み取り専用アクセス権も付与します。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストで URL エントリを作成する
 
 URL エントリの構文の詳細については、このトピックで後述する「 [テナントの許可/ブロックリスト」セクションの url 構文](#url-syntax-for-the-tenant-allowblock-list) を参照してください。
 
-1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。
+1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** の \> **テナントの許可/ブロックリスト**] に移動します。
 
 2. [**テナントの許可/ブロックリスト**] ページで、[ **url** ] タブが選択されていることを確認し、[**追加**] をクリックします。
 
 3. 表示される [ **新しい url の追加** ] ポップアップで、次の設定を構成します。
 
-   - **ワイルドカードを使用して url を追加**します。1行に1つの url を入力します。最大値は20です。
+   - **ワイルドカードを使用して url を追加** します。1行に1つの url を入力します。最大値は20です。
 
-   - [**ブロック/許可**]: 指定した Url を**許可**または**ブロック**するかどうかを選択します。
+   - [**ブロック/許可**]: 指定した Url を **許可** または **ブロック** するかどうかを選択します。
 
-   - **無期限: 次**のいずれかの手順を実行します。
+   - **無期限: 次** のいずれかの手順を実行します。
 
      - 設定がオフ (トグルオフ) になっていることを確認 ![ ](../../media/scc-toggle-off.png) し、 **[有効期限** ] ボックスを使用して、エントリの有効期限を指定します。
 
@@ -92,7 +91,7 @@ URL エントリの構文の詳細については、このトピックで後述�
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストのエントリを表示する
 
-1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。
+1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** の \> **テナントの許可/ブロックリスト**] に移動します。
 
 2. [ **Url** ] タブを選択します。
 
@@ -104,7 +103,7 @@ URL エントリの構文の詳細については、このトピックで後述�
 - **有効期限**
 - **注**
 
-[ **グループ化** ] をクリックして、エントリを **アクション** (**ブロック** または **許可**) または **なし**とグループ化します。
+[ **グループ化** ] をクリックして、エントリを **アクション** (**ブロック** または **許可**) または **なし** とグループ化します。
 
 [ **検索**] をクリックして、値の全体または一部を入力し、enter キーを押して特定の値を検索します。 完了したら、[検索のクリア検索の **クリア**] をクリックし ![ ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) ます。
 
@@ -114,9 +113,9 @@ URL エントリの構文の詳細については、このトピックで後述�
 
 - **無期限: オフ**(オフ ![ ](../../media/scc-toggle-off.png) ) またはオン ( ![ トグルオン ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) )。
 
-- **最終更新**日時: 開始日 (開始**日)、** 終了日 (**To**)、またはその両方を選択します。
+- **最終更新** 日時: 開始日 (開始 **日)、** 終了日 (**To**)、またはその両方を選択します。
 
-- [**有効期限**]: 開始日 (開始**日)、** 終了日 (**To**)、またはその両方を選択します。
+- [**有効期限**]: 開始日 (開始 **日)、** 終了日 (**To**)、またはその両方を選択します。
 
 完了したら、[ **適用**] をクリックします。
 
@@ -126,7 +125,7 @@ URL エントリの構文の詳細については、このトピックで後述�
 
 URL の値自体を変更することはできません。 代わりに、エントリを削除して再作成する必要があります。
 
-1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。
+1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** の \> **テナントの許可/ブロックリスト**] に移動します。
 
 2. [ **Url** ] タブを選択します。
 
@@ -136,7 +135,7 @@ URL の値自体を変更することはできません。 代わりに、エン
 
    - [**ブロック/許可**]: [**許可**] または [**ブロック**] を選択します。
 
-   - **無期限: 次**のいずれかの手順を実行します。
+   - **無期限: 次** のいずれかの手順を実行します。
 
      - 設定がオフ (トグルオフ) になっていることを確認 ![ ](../../media/scc-toggle-off.png) し、 **[有効期限** ] ボックスを使用して、エントリの有効期限を指定します。
 
@@ -150,7 +149,7 @@ URL の値自体を変更することはできません。 代わりに、エン
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストからエントリを削除する
 
-1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。
+1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** の \> **テナントの許可/ブロックリスト**] に移動します。
 
 2. [ **Url** ] タブを選択します。
 
@@ -314,12 +313,12 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **Entry**: `*.contoso.com`
 
-- 一致と**ブロックの一致**を**許可する**:
+- 一致と **ブロックの一致** を **許可する**:
 
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- [一致しない] と [**ブロックが一致**し**ません**] を許可します。
+- [一致しない] と [**ブロックが一致** し **ません**] を許可します。
 
   - 123contoso.com
   - contoso.com
@@ -330,13 +329,13 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **Entry**: `contoso.com/a/*`
 
-- 一致と**ブロックの一致**を**許可する**:
+- 一致と **ブロックの一致** を **許可する**:
 
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso .com/a/? q = joe@t
 
-- [一致しない] と [**ブロックが一致**し**ません**] を許可します。
+- [一致しない] と [**ブロックが一致** し **ません**] を許可します。
 
   - contoso.com
   - contoso.com/a
@@ -347,13 +346,13 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **Entry**: `~contoso.com`
 
-- 一致と**ブロックの一致**を**許可する**:
+- 一致と **ブロックの一致** を **許可する**:
 
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- [一致しない] と [**ブロックが一致**し**ません**] を許可します。
+- [一致しない] と [**ブロックが一致** し **ません**] を許可します。
 
   - 123contoso.com
   - contoso.com/abc
@@ -363,7 +362,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **Entry**: `contoso.com/*`
 
-- 一致と**ブロックの一致**を**許可する**:
+- 一致と **ブロックの一致** を **許可する**:
 
   - contoso .com/? q = whatever@fabrikam
   - contoso.com/a
@@ -379,7 +378,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **Entry**: `*.contoso.com/*`
 
-- 一致と**ブロックの一致**を**許可する**:
+- 一致と **ブロックの一致** を **許可する**:
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -393,7 +392,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **Entry**: `~contoso.com~`
 
-- 一致と**ブロックの一致**を**許可する**:
+- 一致と **ブロックの一致** を **許可する**:
 
   - contoso.com
   - contoso.com/a
@@ -401,7 +400,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - www.contoso.com/b
   - xyz.abc.contoso.com
 
-- [一致しない] と [**ブロックが一致**し**ません**] を許可します。
+- [一致しない] と [**ブロックが一致** し **ません**] を許可します。
 
   - 123contoso.com
   - contoso.org
@@ -410,9 +409,9 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **Entry**: `1.2.3.4`
 
-- Match と**Block match**を**許可する**: 1.2.3.4
+- Match と **Block match** を **許可する**: 1.2.3.4
 
-- [一致しない] と [**ブロックが一致**し**ません**] を許可します。
+- [一致しない] と [**ブロックが一致** し **ません**] を許可します。
 
   - 1.2.3.4/a
   - 11.2.3.4/a
@@ -421,7 +420,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **Entry**: `1.2.3.4/*`
 
-- 一致と**ブロックの一致**を**許可する**:
+- 一致と **ブロックの一致** を **許可する**:
 
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
@@ -430,14 +429,14 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 次のエントリは無効です。
 
-- **ドメイン値がないか、または無効**です。
+- **ドメイン値がないか、または無効** です。
 
   - 拠点
   - \*拠点.\*
   - \*.com
   - \*.pdf
 
-- **文字列の場合はワイルドカード、文字間隔は使用しませ**ん。
+- **文字列の場合はワイルドカード、文字間隔は使用しませ** ん。
 
   - \*contoso.com
   - contoso.com\*
