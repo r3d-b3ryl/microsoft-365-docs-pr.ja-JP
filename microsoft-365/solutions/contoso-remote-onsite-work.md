@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso Corporation が COVID-19 pandemic にどのように反応したかを理解し、リモートおよびオンサイト作業のためのインフラストラクチャをインストールおよび更新するインフラストラクチャを設計しました。
-ms.openlocfilehash: 8e25b399d7acd2cb3486283623d29315eac9491e
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: d04b4efcdd4dd04315ad37311cdd2cfbc2e64e88
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371759"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580675"
 ---
 # <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contoso 社の COVID-19 の応答と、リモートおよびオンサイト作業のサポート
 
@@ -44,8 +44,8 @@ VPN クライアントがインストールされているリモートワーカ�
 地域ロックダウン時にほとんどのリモートワーカーをサポートするように初期変更を行った後、Contoso 社は、次のような作業を行うことができる、リモートおよびオンサイトの作業をサポートするインフラストラクチャの変更を行いました。
 
 - 常にリモート。
-- 常にオンプレミス。
-- リモートとオンプレミスの組み合わせ。
+- 常にオンサイト。
+- オンサイトとリモートの組み合わせ。
 
 Microsoft 365 の id、セキュリティ、およびコンプライアンス機能は、信頼度がゼロになるように設計されており、ユーザーとデバイスの場所に関係なく動作します。 詳細については、「 [ゼロ信頼](https://www.microsoft.com/security/business/zero-trust)」を参照してください。
 
@@ -85,6 +85,6 @@ Microsoft 365 の id、セキュリティ、およびコンプライアンス機
 
 新しいリモートデバイスが新しい作業者に対して発行されると、そのワーカーが RoamingDevices グループのメンバーシップに基づいてデバイスにサインインすると、Intune cloud service およびその他のサービスに接続し、Windows 10、Microsoft 365 Apps for enterprise、および Edge 用の最新の更新プログラムをダウンロードしてインストールします。 完了すると、リモートデバイスは使用できる状態になります。また、インストールされている VPN クライアントを使用して、オンプレミスのリソースにアクセスし、Microsoft 365 ネットワークに更新を継続して実行します。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 組織内の[リモートワーカーを](empower-people-to-work-remotely.md)強化します。

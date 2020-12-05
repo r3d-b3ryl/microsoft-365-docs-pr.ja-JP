@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: この記事では、microsoft 365 複数地域を使用して、複数の地域に Microsoft 365 プレゼンスを展開する方法について説明します。
-ms.openlocfilehash: 10f941549fd4899d5b3a14c97e6f301339702722
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171328"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580699"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -40,7 +40,7 @@ Microsoft 365 Multi-Geo は、パフォーマンスの最適化を目的とし�
 
 Office 365 Multi-Geo の説明に使用される重要な用語を以下に示します。
 
-- **中央の場所**のテナントが最初にプロビジョニングされた地域の場所です。
+- **中央の場所** のテナントが最初にプロビジョニングされた地域の場所です。
 - **地域管理者** - 指定された 1 つ以上のサテライトの場所を管理できる管理者。
 - **地域コード** - 特定の地域の場所を表す 3 文字のコード。
 - **地域の場所** - Exchange メールボックス、OneDrive サイト、SharePoint サイトなど、データをホストする複数地域テナントで使用できる地理的な場所。
@@ -52,7 +52,8 @@ Office 365 Multi-Geo の説明に使用される重要な用語を以下に示�
 
 Microsoft 365 Multi-Geo は、テナント内に 250 以上の Microsoft 365 シートがあり、そのうち 5% 以上が複数地域を使用している EA 顧客向けに、次の Microsoft 365 サブスクリプション プランのアドオンとして利用可能できます。 詳細については、Microsoft アカウント チームにお問い合わせください。
 
-- Microsoft 365 F1、E1、E3、または E5
+- Microsoft 365 F1、F3、E3、または E5
+- Office 365 F3、E1、E3、または E5
 - Exchange Online プラン 1 またはプラン 2
 - OneDrive for Business プラン 1 またはプラン 2
 - SharePoint Online プラン 1 またはプラン 2
@@ -67,9 +68,9 @@ Microsoft 365 Multi-Geo は、テナント内に 250 以上の Microsoft 365 シ
 
 以下の手順に従って複数地域を開始しましょう。
 
-1. アカウント チームと協力して、_Microsoft 365 の複数地域機能_をサービス プランに追加します。 必要なライセンス数の追加方法を説明いたします。 Multi-Geo 機能は、250 以上の Microsoft 365 サブスクリプションを使用している EA のお客様が利用できます。
+1. アカウント チームと協力して、_Microsoft 365 の複数地域機能_ をサービス プランに追加します。 必要なライセンス数の追加方法を説明いたします。 Multi-Geo 機能は、250 以上の Microsoft 365 サブスクリプションを使用している EA のお客様が利用できます。
 
-   Microsoft 365 Multi-Geo の使用を開始するには、事前に Microsoft が複数地域サポート用に Exchange Online テナントを構成する必要があります。 この 1 回限りの構成プロセスは、*Microsoft 365 の複数地域機能*サービス プランを注文し、ライセンスがテナントに表示された後にトリガーされます。 テナントが各ワークロードの構成プロセスを完了すると、 [microsoft 365 メッセージセンター](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) でワークロード固有の通知を受け取り、microsoft 365 の複数地域機能の構成と使用を開始できるようになります。 複数地域サポートのためにテナントを構成するために必要な時間は、テナントからテナントによって異なりますが、ほとんどのテナントは、機能ライセンスの受信後1か月以内に終了します。 より大規模または複雑なテナントでは、構成プロセスの完了により多くの時間が必要になることがあります。 特定のテナントについて必要な場合は、アカウントチームにお問い合わせください。
+   Microsoft 365 Multi-Geo の使用を開始するには、事前に Microsoft が複数地域サポート用に Exchange Online テナントを構成する必要があります。 この 1 回限りの構成プロセスは、*Microsoft 365 の複数地域機能* サービス プランを注文し、ライセンスがテナントに表示された後にトリガーされます。 テナントが各ワークロードの構成プロセスを完了すると、 [microsoft 365 メッセージセンター](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) でワークロード固有の通知を受け取り、microsoft 365 の複数地域機能の構成と使用を開始できるようになります。 複数地域サポートのためにテナントを構成するために必要な時間は、テナントからテナントによって異なりますが、ほとんどのテナントは、機能ライセンスの受信後1か月以内に終了します。 より大規模または複雑なテナントでは、構成プロセスの完了により多くの時間が必要になることがあります。 特定のテナントについて必要な場合は、アカウントチームにお問い合わせください。
 
 2. 「[OneDrive for Business 複数地域の計画](plan-for-multi-geo.md)」を参照します。
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、Microsoft 365 プランに含まれています。
-ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 75fef5bd70d7b8926d31b80f16952aa996bc625c
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561497"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580663"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本的なモビリティとセキュリティまたは Intune のどちらかを選択する
 
@@ -69,8 +69,7 @@ Microsoft Intune および組み込みの基本的なモビリティとセキュ
 |デバイスの種類|さまざまな OS プラットフォームと主要な管理モードのバリエーションを管理します。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS、iPad OS|
 |デバイスのポリシー準拠|デバイスレベルの PIN ロックや jailbreak の検出などのセキュリティポリシーを設定および管理します。 |Android 9 以降のデバイスの制限。 [詳細](capabilities.md)を参照してください。 |必要|
 |デバイスコンプライアンスに基づく条件付きアクセス |準拠していないデバイスが、クラウドから会社の電子メールやデータにアクセスできないようにします。 |Windows 10 ではサポートされていません。<br/>Exchange Online、SharePoint Online、Outlook へのアクセスを制御することに制限されています。 |必要 |
-|デバイス構成  |デバイスの設定を構成する (たとえば、カメラを無効にする)|デバイスのポリシー準拠|デバイスレベルの PIN ロックや jailbreak の検出などのセキュリティポリシーを設定および管理します。 |Android 9 以降のデバイスの制限。 [詳細](capabilities.md)を参照してください。 |必要|
- |設定の制限されたセット。 |必要|
+|デバイス構成  |デバイスの設定を構成する (たとえば、カメラを無効にする)|設定の制限されたセット。|必要|デバイスのポリシー準拠|デバイスレベルの PIN ロックや jailbreak の検出などのセキュリティポリシーを設定および管理します。 |Android 9 以降のデバイスの制限。 [詳細](capabilities.md)を参照してください。 |必要|
 |電子メール プロファイル  |デバイス上にネイティブの電子メールプロファイルをプロビジョニングします。 |はい|必要|
 |WiFi プロファイル |デバイス上にネイティブ Wi-fi プロファイルをプロビジョニングします。 |いいえ|はい|
 |VPN プロファイル |デバイス上にネイティブの VPN プロファイルをプロビジョニングします。 |いいえ|はい|

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Windows PowerShell を使用して、一部のユーザーパスワードを期限切れにしないように設定する方法について説明します。
-ms.openlocfilehash: 9497dfb5793ddbfc3d6845ec1efba91ad972ea38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2d60a8312be070d3f56cfef7cfb93e6c5da32991
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646657"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580639"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>個別のユーザーのパスワードを無期限に設定する
 
@@ -60,7 +60,7 @@ AzureAD モジュールの Get-AzureADUser コマンドの詳細については�
     }
     ```
 
-    例: 
+    例:
 
     ```powershell
     Get-AzureADUser -ObjectId userUPN@contoso.com | Select-Object UserprincipalName,@{
@@ -76,7 +76,7 @@ AzureAD モジュールの Get-AzureADUser コマンドの詳細については�
      }
     ```
 
-- PasswordNeverExpires を使用しているすべてのユーザーのレポートを取得するには、現在のユーザーのデスクトップに名前**ReportPasswordNeverExpires.html**を指定します。
+- PasswordNeverExpires を使用しているすべてのユーザーのレポートを取得するには、現在のユーザーのデスクトップに名前 **ReportPasswordNeverExpires.html** を指定します。
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -107,6 +107,9 @@ Run one of the following commands:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
+> [!WARNING]
+> パラメーターで構成されたユーザーアカウント `-PasswordPolicies DisablePasswordExpiration` は、属性に基づいてエージングを続行し `pwdLastSet` ます。 属性に基づいて `pwdLastSet` 有効期限を変更する場合、 `-PasswordPolicies None` 90 日より前の pwdLastSet を持つすべてのパスワードについては、次にサインインするときにユーザーを変更する必要があります。 この変更によって、多数のユーザーに影響を与える可能性があります。
+
 ### <a name="set-a-password-to-expire"></a>パスワードの有効期限を設定する
 
 次のいずれかのコマンドを実行します：
@@ -122,9 +125,6 @@ Run one of the following commands:
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
-
-> [!WARNING]
-> パラメーターを使用して構成されたユーザーアカウント `-PasswordPolicies DisablePasswordExpiration` は、ユーザーアカウント属性に基づいてエージングを維持し `pwdLastSet` ます。 たとえば、ユーザーのパスワードを期限切れにしないように設定してから90日以上経過した場合、パスワードの有効期限はまだ切れません。 ユーザー `pwdLastSet` アカウント属性に基づいて、パラメーターで構成されたユーザーアカウントの場合、 `-PasswordPolicies None` 90 日より前のパスワードはすべて、 `pwdLastSet` 次にサインインするときにユーザーを変更する必要があります。この変更によって、多数のユーザーに影響を与える可能性があります。
 
 ## <a name="related-content"></a>関連コンテンツ
 

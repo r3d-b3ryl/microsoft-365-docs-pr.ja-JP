@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: ユーザーがデスクトップ、モバイル、および web 用の Office アプリで機密ラベルを操作する方法と、機密ラベルをサポートするアプリについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb1918d2d6b39d01cf6340276c8d8ee00a5e1670
-ms.sourcegitcommit: ad0a63aa94cbfa686bf1ecbfec0152bb8e0e35af
+ms.openlocfilehash: 685228823c87eff975fabd2dd398c1b67be8eeef
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49413055"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580740"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -63,8 +63,8 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004年以降 | 16.35 +   | レビュー   | レビュー         | レビュー                                                        |
 |[ラベル分析を使用](label-analytics.md) してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー            | レビュー        | レビュー   | レビュー         | はい <sup>\*</sup>                                                        |
-|[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
-|[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009年以降                                  | Word および PowerPoint のプレビュー: 現在のチャネルへのロールアウト [(プレビュー)](https://office.com/insider) | レビュー | レビュー | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | プレビュー: [ベータチャネル](https://office.com/insider)             | プレビュー: [ベータチャネル](https://office.com/insider)         | レビュー   | レビュー         | レビュー                                            
+|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009年以降                                  | Word および PowerPoint のプレビュー: 現在のチャネルへのロールアウト [(プレビュー)](https://office.com/insider) | レビュー | レビュー | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |ラベル付きおよび保護されたドキュメントでの [自動保存](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) と [共同編集](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) をサポートする | レビュー | レビュー | レビュー | レビュー | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -76,17 +76,17 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 
 |機能                                                                                                        |Windows デスクトップ上の Outlook |Outlook on Mac デスクトップ  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[コンテンツをマークする](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
+|[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[コンテンツをマークする](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
 |[変数を含む動的マーキング](#dynamic-markings-with-variables)                                              | レビュー                     | レビュー                 | レビュー         | レビュー           | レビュー               |
-|[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
-|[ラベル分析を使用](label-analytics.md) してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー                       | レビュー                    | レビュー           | レビュー               | はい               |
-|[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
-|[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009年以降                      | レビュー                    | レビュー           | レビュー               | はい |
+|[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | プレビュー: [ベータチャネル](https://office.com/insider)                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | 必要                |
+|[ラベル分析を使用](label-analytics.md) してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー                       | レビュー                    | レビュー           | レビュー               | 必要               |
+|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009年以降                      | レビュー                    | レビュー           | レビュー               | 必要 |
 |
 
 
@@ -264,6 +264,29 @@ Office アプリの外部に機密ラベルを適用する方法には、次の�
 > [!NOTE]
 > これらの変数の構文は大文字と小文字を区別します。
 
+## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>ユーザーが電子メールとドキュメントにラベルを適用することを必須にする
+
+> [!IMPORTANT]
+> 必須のラベルとしても知られていますが、すべてのプラットフォーム上のすべてのアプリが現在、 **電子メールとドキュメントにラベルを適用するようにユーザーに要求する** ポリシー設定をサポートしているわけではありません。
+> 
+> [Azure Information Protection の統合](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)されたラベルクライアントは、必須のラベル付けおよび Office アプリに組み込みのラベル付けに対してサポートされています。このページの [[機能](#support-for-sensitivity-label-capabilities-in-apps)] セクションの表を参照してください。
+
+このポリシー設定が選択されている場合は、ポリシーを割り当てられたユーザーは、次のシナリオの下で機密ラベルを選択して適用する必要があります。
+
+- Azure Information Protection のユニファイドラベルクライアントの場合:
+    - ドキュメントの場合 (Word、Excel、PowerPoint): ラベルのないドキュメントが保存されたとき、またはユーザーがドキュメントを閉じるとき。
+    - 電子メール (Outlook) の場合: ユーザーがラベルのないメッセージを送信するとき。
+
+- Office アプリに組み込まれているラベルの場合:
+    - 文書 (Word、Excel、PowerPoint): ラベルのない文書を開いたとき、または保存したとき。
+    - メール用 (Outlook): ユーザーがラベルのない電子メールメッセージを送信するとき。
+
+組み込みのラベル付けに関する追加情報:
+
+- ラベルのないドキュメントを開いたためにユーザーに機密ラベルを追加するように求めるメッセージが表示されたら、ラベルを追加するか、ドキュメントを読み取り専用モードで開くかを選択します。
+
+- 必須のラベル付けが有効になっている場合、ユーザーはドキュメントから機密ラベルを削除することはできませんが、既存のラベルを変更することはできます。
+
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Word、Excel、PowerPoint、および Outlook に異なる視覚的なマーキングを設定する
 
 追加の変数として、テキスト文字列で "App-info" 変数ステートメントを使用して Office アプリケーションの種類ごとに視覚的なマーキングを構成し、 **Word**、 **Excel**、 **PowerPoint**、または **Outlook** の値を使用してアプリケーションの種類を識別できます。 また、これらの値を省略することもできます。これは、同じ If App ステートメントに複数の値を指定する場合に必要になります。
@@ -298,6 +321,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
     `${If.App.WP}This content is ${If.End}Confidential`
 
     Word および PowerPoint では、ラベルにウォーターマークのテキスト "このコンテンツは機密です" が適用されます。 Excel では、ラベルにウォーターマークのテキスト "Confidential" が適用されます。 Outlook では、ウォーターマークが Outlook でサポートされていないため、ラベルはウォーターマークのテキストを適用しません。
+>>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
 
 ## <a name="end-user-documentation"></a>エンドユーザードキュメント
 
