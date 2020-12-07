@@ -527,7 +527,7 @@
               href: ./office-365-security/campaigns.md
             - name: 悪意のあるメールを調査する
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: セキュリティ/コンプライアンス センターのレポートを表示する
+            - name: セキュリティ/コンプライアンス センターで Office 365 Defender のレポートを表示する
               href: ./office-365-security/view-reports-for-atp.md
             - name: 自動調査の詳細と結果を表示する
               href: ./office-365-security/air-view-investigation-results.md
