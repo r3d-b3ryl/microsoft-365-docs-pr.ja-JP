@@ -2,8 +2,8 @@
 title: ユーザー名とメール アドレスを変更する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'グローバル管理者によって行われる、ユーザーのメール アドレスと表示名の変更方法について説明します。 '
-ms.openlocfilehash: 82284f653675ee4f8c89fe52d75bbc0a0efe2e2b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646693"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551510"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -38,15 +38,15 @@ ms.locfileid: "48646693"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
-
-## <a name="change-a-users-email-address"></a>ユーザーの電子メール アドレスを変更する
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 次の手順を実行するには、[グローバル管理者](about-admin-roles.md)である必要があります。 
 
+## <a name="change-a-users-email-address"></a>ユーザーの電子メール アドレスを変更します。
+
 ::: moniker range="o365-worldwide"
  
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
     
 2. ユーザー名を選択し、 [**アカウント**] タブで、[**ユーザー名の管理**] を選択します。
     

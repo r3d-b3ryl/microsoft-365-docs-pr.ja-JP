@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を欧州連合内で確認する
-ms.openlocfilehash: 5a50600c123dad1a0e4d14fd8f47283f951d3edc
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376716"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527687"
 ---
 # <a name="data-locations-for-the-european-union"></a>欧州連合のデータの場所
 
@@ -63,8 +63,10 @@ Microsoft 365 サービスを使用する場合、企業のお客様がビジネ
 ||||| 
 
 >[!Note]
->フランスまたはドイツに請求先住所がある Office 365 Education サブスクリプションをお持ちの場合、データは地域の欧州連合データ センターに保存される場合があります。 
+>フランスまたはドイツに請求先住所がある Office 365 Education サブスクリプションをお持ちの場合、データは地域の欧州連合データ センターに保存される場合があります。 EU 外のテナントデータの保存場所については、[[Microsoft 365 の顧客データの保存場所]](o365-data-locations.md) を参照してください。
 >
+
+
 
 ### <a name="where-eu-data-is-computed"></a>EU のデータの保存場所
 

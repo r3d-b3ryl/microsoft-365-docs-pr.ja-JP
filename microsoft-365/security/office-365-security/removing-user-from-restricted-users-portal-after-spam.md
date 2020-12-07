@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 の制限されたユーザー ポータルからユーザーを削除する方法についての管理者向けの説明です。 アカウントを侵害していると見なされたユーザーは通常、スパム送信者として、制限されたユーザー ポータルに追加されます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c63d50fcf24e19c6a3265d57ea34fb8ab852c61c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201557"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572443"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Office 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -41,21 +41,20 @@ ms.locfileid: "48201557"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **制限されたユーザー**のページに直接移動するには <https://protection.office.com/restrictedusers> を使用します。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **制限されたユーザー** のページに直接移動するには <https://protection.office.com/restrictedusers> を使用します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
+- この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります:
+  - 制限されたユーザー ポータルからユーザーを削除するには、**組織の管理** または **セキュリティ管理者** 役割グループのメンバーである必要があります。
+  - 制限されたユーザー ポータルに読み取り専用でアクセスするには、**グローバル閲覧者** または **セキュリティ 閲覧者** 役割グループのメンバーである必要があります。
 
-  - 制限されたユーザー ポータルからユーザーを削除するには、次の役割グループのメンバーである必要があります。
+  詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-    - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
-    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
+  **注**:
 
-  - 制限されたユーザー ポータルに読み取り専用でアクセスするには、次の役割グループのメンバーである必要があります。
-
-    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 送信メールの制限を超える送信者は、アカウントが侵害されていることを示しています。 制限されたユーザー ポータルからユーザーを削除する前に、必要な手順に従ってアカウントの制御を再度行ってください。 詳細については、「[侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)」を参照してください。
 
@@ -76,7 +75,7 @@ ms.locfileid: "48201557"
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>制限されたユーザーのアラート設定を確認する
 
-ユーザーがメールの送信をブロックされている場合、**メール送信を制限されているユーザー**という既定のアラート ポリシーにより、管理者に自動的に通知されます。 その設定を確認し、通知するユーザーを追加することができます。 アラート ポリシーの詳細については、「[セキュリティ/コンプライアンス センターでのアラート ポリシー](../../compliance/alert-policies.md)」を参照してください。
+ユーザーがメールの送信をブロックされている場合、**メール送信を制限されているユーザー** という既定のアラート ポリシーにより、管理者に自動的に通知されます。 その設定を確認し、通知するユーザーを追加することができます。 アラート ポリシーの詳細については、「[セキュリティ/コンプライアンス センターでのアラート ポリシー](../../compliance/alert-policies.md)」を参照してください。
 
 > [!IMPORTANT]
 > アラートを機能させるには、監査ログ検索をオンにする必要があります。 詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。
@@ -93,9 +92,9 @@ ms.locfileid: "48201557"
 
      - **メール通知の送信**: チェック ボックスが選択済み (**オン**) になっていることを確認します。
 
-     - **メール受信者**: 既定値は **TenantAdmins** (つまり、**グローバル管理者**のメンバー) です。 受信者を追加するには、ボックスの空白の領域をクリックします。 受信者の一覧が表示されますので、名前を入力して、フィルター処理で受信者を選択します。 名前の横にある![削除アイコン](../../media/scc-remove-icon.png)をクリックすると、既存の受信者をボックスから削除することができます。
+     - **メール受信者**: 既定値は **TenantAdmins** (つまり、**グローバル管理者** のメンバー) です。 受信者を追加するには、ボックスの空白の領域をクリックします。 受信者の一覧が表示されますので、名前を入力して、フィルター処理で受信者を選択します。 名前の横にある![削除アイコン](../../media/scc-remove-icon.png)をクリックすると、既存の受信者をボックスから削除することができます。
 
-     - **1 日の通知の上限**: 既定値は**制限なし**ですが、1 日あたりの通知数の上限を選択することができます。
+     - **1 日の通知の上限**: 既定値は **制限なし** ですが、1 日あたりの通知数の上限を選択することができます。
 
      完了したら、**[保存]** をクリックします。
 
