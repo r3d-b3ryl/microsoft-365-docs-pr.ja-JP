@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
-ms.openlocfilehash: 7f9e33a6f117f5da592d875e40cefc6a0072fd4a
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126675"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560886"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -130,6 +130,9 @@ DKIM を構成するには、次の手順を完了します。
 
 DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME レコードを発行する必要があります。
 
+> [!NOTE]
+> 記事全体を読んでいない場合は、この時間を節約する PowerShell 接続情報を見逃している可能性があります: [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです。) 
+
 以下のコマンドを実行してセレクター レコードを作成します。
 
 ```powershell
@@ -187,8 +190,6 @@ TTL:                3600
 > [!NOTE]
 > 2 番目のレコードを作成することは重要ですが、作成時に使用できるのはセレクターのうち 1 つのみである場合があります。 本質的に、2 番目のセレクターはまだ作成されていないアドレスを指している可能性があります。 それでも、キーの交換がシームレスに行われるようになるため、2 番目の CNAME レコードを作成することをお勧めします。
 
-> [!CAUTION]
-> キーを作成する方法のいくつかのデザイン変更実装するため、自動キーのローテーションは一時的に無効になっています。 複数のキーを持つことで、定期的にローテーションさせることができます。 解読するのは困難ですが、なりすましなどから保護するための実用的な対策戦略です。 「[Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)」ドキュメントを参考にして、組織でこれを行うことができます。 自動ローテーションは 2020 年 8月より再度有効になる予定です。
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>カスタム ドメインに対して DKIM 署名を有効にする
 <a name="EnableDKIMinO365"> </a>
@@ -311,7 +312,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>サードパーティのサービスがカスタム ドメインに代わって電子メールを送信つまり偽装できるように DKIM を設定する
 <a name="SetUp3rdPartyspoof"> </a>
 
-一部の一括電子メール サービス プロバイダー、または Software-as-a-Service プロバイダーでは、サービスから送信される電子メールに DKIM キーを設定できます。この場合、必要な DNS レコードを設定するために自分とサードパーティの間で調整が必要です。一部のサードパーティ サーバーは、異なるセレクターを持つ独自の CNAME レコードを持つことがあります。まったく同じ方法を用いる組織は 2 つとなく、プロセスは完全に組織に依存します。
+一部の一括電子メール サービス プロバイダー、または Software-as-a-Service プロバイダーでは、サービスから送信される電子メールに DKIM キーを設定できます。 この場合、必要な DNS レコードを設定するために自分とサードパーティの間で調整が必要です。 一部のサードパーティのサーバーは、異なるセレクターを持つ独自の CNAME レコードを持つことができます。 2 つの組織がまったく同じ方法で行動することはありません。 それどころか、プロセスは完全に組織に依存します。
 
 contoso.com および bulkemailprovider.com 用に適切に構成された DKIM を示すメッセージの例は、次のようになります。
 
@@ -349,4 +350,8 @@ Return-Path: <communication@bulkemailprovider.com>
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>次の手順: Microsoft 365 に SPF をセットアップした後
 <a name="DKIMNextSteps"> </a>
 
-DKIM はスプーフィングを防止するように設計されていますが、SPF と DMARC を併用すると DKIM はより有効に機能します。 DKIM をセットアップした後、まだ SPF を構成していなければ、SPF を構成する必要があります。 SPF の概要と SPF を迅速に構成する方法については、「[スプーフィングを防止するために Microsoft 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Microsoft 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。 次は、「[DMARC を使用してメールを検証する](use-dmarc-to-validate-email.md)」を参照してください。 [スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)には、Microsoft 365 が KIM チェックに使用する構文とヘッダー フィールドが含まれています。
+DKIM はスプーフィングを防止するように設計されていますが、SPF と DMARC を併用すると DKIM はより有効に機能します。 DKIM をセットアップした後、まだ SPF を構成していなければ、SPF を構成する必要があります。 SPF の概要と SPF を迅速に構成する方法については、「[スプーフィングを防止するために Microsoft 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Microsoft 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。 次は、「[DMARC を使用してメールを検証する](use-dmarc-to-validate-email.md)」を参照してください。 [スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)には、Microsoft 365 が DKIM チェックに使用する構文とヘッダー フィールドが含まれています。
+
+## <a name="more-information"></a>詳細情報
+
+PowerShell を介したキー ローテーション [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)

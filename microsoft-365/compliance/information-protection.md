@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Microsoft Information Protection (MIP) を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: 4c8f4af11779cd8b3df043bc92187625c41f4ac9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4afc73b5a2cefe88d2e3af5fd6665ec64e5c0ee3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519812"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568319"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 の Microsoft Information Protection
 
@@ -38,7 +38,10 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 
 ## <a name="know-your-data"></a>データを把握する
 
-データの状況を把握し、ハイブリッド環境全体にわたって重要なデータを識別するには、次の機能を使用します。
+> [!NOTE]
+> Azure Purview でのデータの分類およびラベル付けの詳細については、現在プレビューですが、「[Azure Purviewにあるコンテンツに自動的にラベルを付ける](https://docs.microsoft.com/azure/purview/create-sensitivity-label)」を参照し てください。
+
+データの状況を把握し、ハイブリッド環境全体にわたって重要なデータを識別するには、次の機能を使用します:
  
 |機能|解決される問題|作業の開始|
 |:------|:------------|:--------------------|:-----------------------------|
@@ -62,6 +65,7 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 |[Azure Information Protection 統合ラベル付けスキャナー](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| オンプレミスのデータ ストア内にある機密情報の検出、ラベル付け、保護 | [Azure Information Protection 統合ラベル付けスキャナーの構成とインストール](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| クラウド上のデータ ストア内にある機密情報の検出、ラベル付け、保護 | [クラウドに保存されている規制対象データや機密データを検出し、分類し、ラベル付けし、保護する](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|秘密度ラベルの適用をサード パーティ製アプリやサービスに拡大する  <br /><br /> サンプル シナリオ: [秘密度ラベルの設定と取得 (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK の設定と構成](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+
 
 ## <a name="prevent-data-loss"></a>データの損失を防止する
 

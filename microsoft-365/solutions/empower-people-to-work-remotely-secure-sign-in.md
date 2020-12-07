@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: リモート ワーカーが多要素認証 (MFA) でサインインすることを要求します。
-ms.openlocfilehash: aa9b122ca18c4d8a8123914ee2d29d41c9ec789e
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 85bac90085b47b5114db875c822d98aa1365cf97
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681458"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558166"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>手順 1. MFA を使用してリモート ワーカーのサインイン セキュリティを強化する
 
@@ -43,7 +43,7 @@ Microsoft 365 プランに基づいてユーザーに MFA の使用を要求す�
 
 ## <a name="security-defaults"></a>セキュリティの既定値
 
-セキュリティの既定値は、2019 年 10 月 21 日以降に作成された Microsoft 365 および Office 365 の有料または試用版サブスクリプションの新機能です。 これらのサブスクリプションではセキュリティの既定値がオンになっており、***すべてのユーザーが Microsoft Authenticator アプリで MFA を使用する必要があります**_。
+セキュリティの既定値は、2019 年 10 月 21 日以降に作成された Microsoft 365 および Office 365 の有料または試用版サブスクリプションの新機能です。 これらのサブスクリプションではセキュリティの既定値がオンになっており、***すべてのユーザーが Microsoft Authenticator アプリで MFA を使用する必要があります** _。
  
 ユーザーは、スマートフォンから Microsoft Authenticator アプリを使用して MFA に 14 日間登録できます。これは、セキュリティの既定値が有効になった後、初めてサインインしたときから始まります。 14 日が経過すると、ユーザーは MFA 登録が完了するまでサインインできなくなります。
 
@@ -75,7 +75,7 @@ Azure AD Identity Protection には、Microsoft 365 E5 に含まれている Azu
 
 詳細については、「[Risk-based Conditional Access (リスク ベースの条件付きアクセス)](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users)」を参照してください。
 
-Azure AD Identity Protection を使用すると、ユーザーに MFA への登録を要求するポリシーを作成することもできます。 詳細については、「[Azure 多要素認証の登録ポリシーの構成](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)」を参照してください。
+Azure AD Identity Protection を使用すると、ユーザーに MFA への登録を要求するポリシーを作成することもできます。 詳細については、「[Azure AD 多要素認証の登録ポリシーの構成](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)」を参照してください。
 
 
 ## <a name="using-these-methods-together"></a>これらの方法を組み合わせて使用する
@@ -91,7 +91,7 @@ Azure AD Identity Protection を使用すると、ユーザーに MFA への登�
 
 | メソッド | Enabled | 無効 | 追加の認証方法 |
 |:-------|:-----|:-------|:-------|
-| _*セキュリティの既定値**  | 条件付きアクセス ポリシーを使用できない | 条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
+| _ *セキュリティの既定値**  | 条件付きアクセス ポリシーを使用できない | 条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
 | **条件付きアクセス ポリシー** | いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます  | MFA 登録中にユーザーが指定  |
 ||||
 

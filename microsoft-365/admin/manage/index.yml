@@ -11,23 +11,25 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 821bfbac12e01f73fa3fbb52be9f95165bb3dd1b
-  ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+  ms.openlocfilehash: f9bb89aa0f42f487abcd0d44785c257184024941
+  ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "48804565"
+  ms.lasthandoff: 12/03/2020
+  ms.locfileid: "49562923"
 landingContent:
 - title: サービスの状態を監視する
   linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft 365 の使用状況レポート - 概要
+      url: ../activity-reports/activity-reports.md
+    - text: 生産性スコア - 概要
+      url: ../productivity/productivity-score.md
+    - text: Microsoft 365 利用状況分析 - PowerBI
+      url: ../usage-analytics/usage-analytics.md
   - linkListType: how-to-guide
     links:
-    - text: レポートを使用してユーザー アクティビティを監視する
-      url: ../activity-reports/activity-reports.md
-    - text: 生産性スコアを使用してユーザーの生産性を監視する
-      url: ../productivity/productivity-score.md
-    - text: 利用状況分析を監視する
-      url: ../usage-analytics/usage-analytics.md
     - text: 利用状況分析を有効化する
       url: ../usage-analytics/enable-usage-analytics.md
     - text: 組織の連絡先情報を変更する

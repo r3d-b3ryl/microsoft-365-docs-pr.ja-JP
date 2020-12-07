@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1bbca8efe09655195605f0610f92c8f66486b940
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: db858cbd4242a096261942fd12b911ecff43f71f
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001503"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558212"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
 
@@ -42,7 +42,7 @@ ms.locfileid: "49001503"
 - MFA を管理するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../add-users/about-admin-roles.md)」を参照してください。
 - 従来のユーザーごとの MFA をオンにしている場合は、[従来のユーザーごとの MFA をオフにします](#turn-off-legacy-per-user-mfa)。
 - Windows デバイスで Office 2013 クライアントを使用している場合は、[Office 2013 クライアントの最新のライセンス認証をオンにします](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)。
-- 高度: Active Directory フェデレーション サービス (AD FS) を使用しているサードパーティ ディレクトリ サービスがある場合は、Azure MFA サーバーをセットアップします。 詳細については、「[Azure Multi-Factor Authentication およびサードパーティ製の VPN ソリューションでの高度なシナリオ](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」 を参照してください。
+- 高度: Active Directory フェデレーション サービス (AD FS) を使用しているサードパーティのディレクトリ サービスがある場合は、Azure MFA Server をセットアップします。 詳細については、「[Azure AD 多要素認証およびサードパーティ製の VPN ソリューションでの高度なシナリオ](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」 を参照してください。
 
 ## <a name="turn-security-defaults-on-or-off"></a>セキュリティの既定値をオンまたはオフにする
 
@@ -53,18 +53,18 @@ ms.locfileid: "49001503"
 Azure ポータル内の Azure Active Directory (Azure AD) の **プロパティ** ウィンドウで、セキュリティの既定値を有効または無効にします。
 
 1. グローバル管理者の資格情報を使用して、[MIcrosoft 365 管理センター](https://admin.microsoft.com) にサインインします。
-2. 左側のナビゲーションで、 **[すべて表示]** を選択し、 **[管理センター]** の **[Azure Active Directory]** を選択します。
-3. **Azure Active Directory 管理センター** で、 **[Azure Active Directory]** \> **[プロパティ]** の順に選択します。
-4. ページの下部で、 **[セキュリティの既定値の管理]** を選択します。
-5. セキュリティの規定値を有効にするには **[はい]** を選び、セキュリティの規定値を無効にするには **[いいえ]** を選んで、 **[保存]** を選択します。
+2. 左側のナビゲーションで、**[すべて表示]** を選択し、**[管理センター]** の **[Azure Active Directory]** を選択します。
+3. **Azure Active Directory 管理センター** で、**[Azure Active Directory]** \> **[プロパティ]** の順に選択します。
+4. ページの下部で、**[セキュリティの既定値の管理]** を選択します。
+5. セキュリティの規定値を有効にするには **[はい]** を選び、セキュリティの規定値を無効にするには **[いいえ]** を選んで、**[保存]** を選択します。
 
 [条件付きアクセスのベースライン ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection) を使用している場合は、セキュリティの既定値の使用に移行する前に、オフにするように求めるメッセージが表示されます。
 
 1. [条件付きアクセス ポリシー ページ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) へ移動します。
-2. 各ベースライン ポリシーで [ **オン** ] を選択し、 [ **ポリシーを有効にする** ] を [ **オフ** ] に設定します。
+2. 各ベースライン ポリシーで [**オン**] を選択し、 [**ポリシーを有効にする**] を [**オフ**] に設定します。
 3. [[Azure Active Directory] のプロパティ ページ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) にアクセスします。
-4. ページの下部で、[ **セキュリティの既定値の管理** ] を選択します。
-5. セキュリティの規定値を有効にするには [ **はい** ] を選び、セキュリティの規定値を無効にするには [ **いいえ** ] を選んで [ **保存** ] を選択します。
+4. ページの下部で、[**セキュリティの既定値の管理**] を選択します。
+5. セキュリティの規定値を有効にするには [**はい**] を選び、セキュリティの規定値を無効にするには [**いいえ**] を選んで [**保存**] を選択します。
 
 ## <a name="use-conditional-access-policies"></a>条件付きアクセス ポリシーを使用する
 
@@ -84,14 +84,14 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 ほとんどのサブスクリプションでは、先進認証が自動的にオンになりますが、サブスクリプションをずっと前に購入した場合は、オンにならない可能性があります。 Office アプリで MFA が適切に機能する前に、この機能をオンにする必要があります。
 
 1. Microsoft 365 管理センターで、左側のナビゲーションの **[設定]** \> **[組織の設定]** の順に選択します。
-1. **[サービス]** タブで、 **[先進認証]** を選択し、 **[先進認証]** ウィンドウで、 **[先進認証を有効にする]** が選択されていることを確認します。 **[変更の保存]** を選びます。
+1. **[サービス]** タブで、**[先進認証]** を選択し、**[先進認証]** ウィンドウで、**[先進認証を有効にする]** が選択されていることを確認します。 **[変更の保存]** を選びます。
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>従来のユーザーごとの MFA をオフにする
 
 以前にユーザーごとの MFA をオンにしている場合は、セキュリティの既定値が有効になる前にオフにする必要があります。
 
 1. Microsoft 365 管理センターで、左側のナビゲーションの **[ユーザー]** \> **[アクティブ ユーザー]** の順に選択します。
-1. **[アクティブ ユーザー]** ページで、 **[多要素認証]** を選択します。
+1. **[アクティブ ユーザー]** ページで、**[多要素認証]** を選択します。
 1. 多要素認証ページで、各ユーザーを選択し、その多要素認証ステータスを **[無効]** に設定します。
 
 ## <a name="next-steps"></a>次の手順

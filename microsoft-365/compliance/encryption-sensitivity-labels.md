@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: b862cbffcc4268876444618f7c2708c04b63630e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446158"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561718"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -43,15 +43,15 @@ ms.locfileid: "48446158"
 最後に、管理者は、暗号化に適用する秘密度ラベルを構成するときに、次のいずれかを選択できます。
 
 - **アクセス許可を割り当てます**。これにより、どのユーザーがそのラベルのコンテンツにどのアクセス許可を取得するかを正確に決定します。
-- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
+- ラベルをコンテンツに適用するときに、**ユーザーがアクセス許可を割り当てる** ことができます。 このようにして、組織内のユーザーに、共同作業を行って作業を完了するために必要な柔軟性を与えることができます。
 
 暗号化の設定は、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、またはセキュリティ/コンプライアンス センターで[秘密度ラベルを作成](create-sensitivity-labels.md)するときに使用できます。
 
 ## <a name="understand-how-the-encryption-works"></a>暗号化のしくみを理解する
 
-Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
+暗号化では、Azure Information Protection の Azure Rights Management サービス (Azure RMS) が使用されます。 この保護ソリューションでは、暗号化ポリシー、ID ポリシー、および認識ポリシーが使用されます。 詳細については、 Azure Information Protection ドキュメントの「[Azure Rights Management とは](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)」を参照してください。 
 
-When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+暗号化ソリューションを使用すると、**スーパー ユーザー** 機能により、認証されたユーザーとサービスが、組織のために暗号化されたデータの閲覧と検査を常に行えるようにできます。 必要に応じて、暗号化を削除または変更することができます。 詳細については、「[Azure Information Protection および検索サービスまたはデータ回復用のスーパー ユーザーの構成](https://docs.microsoft.com/azure/information-protection/configure-super-users)」を参照してください。
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>暗号化のラベルを構成する方法
 
@@ -79,13 +79,13 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 ただし、コンテンツが既に暗号化されている場合があります。 たとえば、別のユーザーにより次のようなアクセス許可などが適用されている場合があります。
 
-- ラベルにより求められた際にユーザーが定義したアクセス許可などのユーザー自身のアクセス許可、Azure Information Protection クライアントによるカスタムのアクセス許可、および Office アプリ内での**アクセス制限**によるドキュメントの保護。
+- ラベルにより求められた際にユーザーが定義したアクセス許可などのユーザー自身のアクセス許可、Azure Information Protection クライアントによるカスタムのアクセス許可、および Office アプリ内での **アクセス制限** によるドキュメントの保護。
 - ラベルとは別にコンテンツの暗号化を行う、Azure Rights Management の保護テンプレート。 このカテゴリには、権限の保護を使用して暗号化を適用する、メール フロー ルールが含まれます。
 - 管理者によって割り当てられているアクセス許可を使用して暗号化を適用するラベル。
 
-そのようなコンテンツに秘密度ラベルが適用された際の既存の暗号化への影響を次の表に示します。
+そのコンテンツに秘密度ラベルが適用された際の既存の暗号への影響を次の表に示します:
 
-| |**暗号化: 選択されていない**|**暗号化: 構成されている**|**暗号化: Remove (削除)**|
+| | 暗号化: 選択されていない | 暗号化: 構成されている | 暗号化: 削除 |
 |:-----|:-----|:-----|:-----|
 |**ユーザーによって指定されたアクセス許可**|元の暗号化が維持されます|新しいラベルの暗号化が適用されます|元の暗号化が削除されます|
 |**保護テンプレート**|元の暗号化が維持されます|新しいラベルの暗号化が適用されます|元の暗号化が削除されます|
@@ -127,7 +127,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 - **ラベル付けされたコンテンツへのアクセスに有効期限を設定します。** 特定の日付または指定するラベル適用後の経過日数で有効期限が切れるようにします。期限が切れると、ユーザーはラベル付きのアイテムを開くことができなくなります。日付を指定した場合、現在のタイム ゾーンでその日付の午前 0 時に有効期限が切れます。(一部のメール クライアントでは、キャッシュの仕組みにより、有効期限が適用されず、有効期限を過ぎたメールが表示されることがある点に注意してください。)
 
-- **オフライン アクセス**を禁止、常に許可、または指定の日数 (ラベル適用後の経過日数) で許可します。オフライン アクセスを禁止または日数で制限すると、そのしきい値に達したときに、ユーザーは再認証される必要があり、ユーザーのアクセスがログに記録されます。詳細については、Rights Management 使用ライセンスに関する次のセクションを参照してください。
+- **オフライン アクセス** を禁止、常に許可、または指定の日数 (ラベル適用後の経過日数) で許可します。オフライン アクセスを禁止または日数で制限すると、そのしきい値に達したときに、ユーザーは再認証される必要があり、ユーザーのアクセスがログに記録されます。詳細については、Rights Management 使用ライセンスに関する次のセクションを参照してください。
 
 暗号化されたコンテンツに対するアクセス制御の設定:
 
@@ -276,7 +276,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 - Windows: [**ファイル**] タブ > [**情報**] > [**文書の保護**] > [**アクセスの制限**] > [**制限アクセス**]
 
-- MacOS: [**校閲**] タブ > [**保護**] > [**アクセス許可**] > [**制限アクセス**]
+- macOS: [**校閲**] タブ > [**保護**] > [**アクセス許可**] > [**制限アクセス**]
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>暗号化の設定の構成例
 
@@ -384,6 +384,8 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 - Office アプリ (Windows、Mac、Android、iOS) の[自動保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)機能は、暗号化されたファイルに対しては無効になっています。 自動保存を有効にする前に削除する必要があるアクセスの制限がファイルに適用されているというメッセージがユーザーに表示されます。
 
 - 暗号化されたファイルは、Office アプリ (Windows、Mac、Android、iOS) で開くのに時間がかかる場合があります。
+
+- ドキュメントを [SharePoint でチェックアウト](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)するときに Office アプリを使用することによって、暗号化されたラベルが追加されれ、その後、ユーザーがチェックアウトを破棄すると、ドキュメントはラベル付きの暗号化されたままになります。
 
 - 暗号化されたファイルに対する次の操作は Office アプリ (Windows、Mac、Android、iOS) ではサポートされておらず、問題が発生したことを示すエラー メッセージがユーザーに表示されます。 ただし、代替手段として SharePoint 機能を使用できます。
 

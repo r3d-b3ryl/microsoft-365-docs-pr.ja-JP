@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 12da7f3dd5e6d0d4650d19a8cd5f6f41b51f2558
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79dc57e545c3063cae641bab2603e3011c5a1769
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398844"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568603"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -62,7 +62,7 @@ ms.locfileid: "48398844"
 
 既定では、テナントのグローバル管理者はこれらの管理センターへのアクセス権を所有し、コンプライアンス責任者や他のユーザーにアクセス権を付与できます (テナント管理者が持つすべての権限を付与する必要はありません)。この委任された制限付き管理者アクセス許可については、ユーザーを [**コンプライアンス データ管理者**]、[**コンプライアンス管理者**]、または [**セキュリティ管理者**] 役割グループに追加します。 
 
-既定の役割を使用する代わりに、新しい役割グループを作成し、**秘密度ラベル管理者**の役割または**組織の構成**の役割をこのグループに追加できます。 読み取り専用の役割の場合は、**秘密度ラベルリーダー**を使用します。 
+既定の役割を使用する代わりに、新しい役割グループを作成し、**秘密度ラベル管理者** の役割または **組織の構成** の役割をこのグループに追加できます。 読み取り専用の役割の場合は、**秘密度ラベルリーダー** を使用します。 
 
 ユーザーを既定の役割に追加する方法、または独自の役割グループを作成する方法については、「[ユーザーに Office 365 セキュリティ/コンプライアンス センターへのアクセス権を付与する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」をご覧ください。
 
@@ -92,7 +92,9 @@ ms.locfileid: "48398844"
 |クラウドのデータ ストアに保存されているファイルを検出、ラベル付け、保護する|[クラウドに保存されている規制対象および機密データを検出、分類、ラベル付け、保護する](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Power BI で秘密度ラベルを適用して表示し、データのエクスポート時にデータを保護します。|[Power BI に秘密度ラベルを適用する](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
 |組織で秘密度ラベルがどのように使用されているかを監視し、理解する|[データを把握する - データ分類の概要](data-classification-overview.md) <br /><br /> [ラベル分析によるラベル使用状況を表示する](label-analytics.md)|
-|秘密度ラベルの適用をサード パーティ製アプリやサービスに拡大する|[Microsoft 情報保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|秘密度ラベルの適用をサード パーティ製アプリやサービスに拡大する|[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|Azure Blob Storage、Azure ファイル、azure Data Lake Storage Gen1、および Azure Data Lake Storage Gen12 のコンテンツに対して、感度ラベルを拡張する|[ Azure Purview のコンテンツに自動的にラベルを付ける](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>機密度ラベルのエンド ユーザー向けのドキュメント
 
