@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d1d18037a10cd36c3be9498a4373fa67b6afd9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: d47757e8e9b36baf060c86436bd7840ded7c324d
+ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519612"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586675"
 ---
 # <a name="compliance"></a>コンプライアンス
 
-Microsoft マネージドデスクトップをサービスとして使用すると、Microsoft によってコンプライアンスの包括的な一連のサービスが提供されます。 この取り組みにより、組織はさまざまなコンプライアンス要件に準拠します。
+Microsoft マネージドデスクトップを使用している場合、Microsoft は、コンプライアンスに関する包括的な一連のサービスを提供しています。 この取り組みにより、組織はさまざまなコンプライアンス要件に準拠します。
 
 ## <a name="compliance-coverage"></a>コンプライアンスの適用範囲
 
@@ -35,6 +35,9 @@ Microsoft マネージドデスクトップでは、次の資格が得られま�
 - [Cloud Security Alliance (CSA) STAR Certification](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [サービス組織の制御 (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
+- [健康保険の携行性と責任に関する法律 (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
+- [オーストラリア自治体情報セキュリティ登録された査定者プログラム (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>監査者レポートとコンプライアンス証明書
 
@@ -45,4 +48,4 @@ Microsoft マネージドデスクトップでは、次の資格が得られま�
 
 ## <a name="shared-responsibility"></a>共有の責任
 
-クラウドサービスのコンプライアンスは、クラウドサービスプロバイダーとお客様との間で共有される責任があります。 詳細については、TechNet ギャラリーの「 [クラウドコンピューティングの共有責任](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91) 」を参照してください。
+クラウドサービスのコンプライアンスは、クラウドサービスプロバイダーとお客様との間で共有される責任があります。 詳細については、「 [クラウドコンピューティングの共有責任](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility)」を参照してください。

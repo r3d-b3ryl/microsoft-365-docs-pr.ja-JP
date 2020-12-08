@@ -1,5 +1,5 @@
 ---
-title: 検出された脅威を確認して対処する
+title: 検出された脅威をレビューし、アクションを実行する
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Windows 10 デバイスで Microsoft Defender ウイルス対策によって検出された脅威を確認および管理する方法について説明します。
-ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385242"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588519"
 ---
-# <a name="review-detected-threats-and-take-action"></a>検出された脅威を確認して対処する
+# <a name="review-detected-threats-and-take-action"></a>検出された脅威をレビューし、アクションを実行する
 
 悪意のあるファイルまたはソフトウェアが検出されるとすぐに、Microsoft Defender ウイルス対策によってブロックされ、実行が禁止されます。 また、クラウドで提供される保護が有効になっている場合は、新たに検出された脅威がウイルス対策およびマルウェア対策エンジンに追加されるため、他のデバイスやユーザーも保護されます。
 
@@ -42,7 +42,7 @@ IT プロフェッショナル/管理者は、Microsoft 365 管理センター�
 
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の [**アクティブなデバイス**] ページ この記事の「 [アクティブなデバイス」ページで、「脅威の検出を管理する」を](#manage-threat-detections-on-the-active-devices-page) 参照してください。
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の [**アクティブな脅威**] ページ この記事の「 [アクティブな脅威の検出を管理する」ページを](#manage-threat-detections-on-the-active-threats-page) 参照してください。
-- <a href="https://endpoint.microsoft.com" target="_blank">Microsoft エンドポイントマネージャー</a>の [**ウイルス対策**] ページ この記事の「 [脅威検出を管理](#manage-threat-detections-in-microsoft-endpoint-manager) する」を参照してください。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft エンドポイントマネージャー</a>の [**ウイルス対策**] ページ この記事の「 [脅威検出を管理](#manage-threat-detections-in-microsoft-endpoint-manager) する」を参照してください。
 
 詳細については、「 [Microsoft Defender ウイルス対策によって検出された脅威](threats-detected-defender-av.md)」を参照してください。
 
@@ -88,7 +88,7 @@ IT プロフェッショナル/管理者は、Microsoft 365 管理センター�
 
 Microsoft エンドポイントマネージャーを使用して、脅威の検出を管理することができます。 Windows 10 デバイスを Intune (Microsoft エンドポイントマネージャーの一部) [に登録](/mem/intune/enrollment/windows-enrollment-methods) する必要があります。
 
-1. Microsoft エンドポイントマネージャー管理センターに移動し、 <a href="https://endpoint.microsoft.com" target="_blank">https://endpoint.microsoft.com</a> サインインします。
+1. Microsoft エンドポイントマネージャー管理センターに移動し、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> サインインします。
 
 2. ナビゲーションウィンドウで、[ **エンドポイントセキュリティ**] を選択します。
 
