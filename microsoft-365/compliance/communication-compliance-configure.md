@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: e88b26fcfbcc9cbb0c2c53ed8fdb6b875ef4adc9
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527526"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585307"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
@@ -129,7 +129,7 @@ ms.locfileid: "49527526"
 | **ポリシー メンバー** | **サポートされているグループ** | **サポートされていないグループ** |
 |:-----|:-----|:-----|
 |監督対象ユーザー <br> 非監督対象ユーザー | 配布グループ <br> Microsoft 365 グループ | 動的配布グループ <br> ネストされた配布グループ <br> メールが有効なセキュリティ グループ |
-| レビュー担当者 | None | 配布グループ <br> 動的配布グループ <br> ネストされた配布グループ <br> メールが有効なセキュリティ グループ |
+| レビュー担当者 | なし | 配布グループ <br> 動的配布グループ <br> ネストされた配布グループ <br> メールが有効なセキュリティ グループ |
   
 ポリシーに配布グループを割り当てると、ポリシーによって、配布グループ内の各ユーザーからのすべての電子メールと Teams のチャットが監視されます。 ポリシーに Microsoft 365 グループを割り当てると、ポリシーによって、そのグループに送信されたすべての電子メールと Teams のチャットが監視されます。各グループメンバーが受信した個人のメールとチャットは監視しません。
 
@@ -137,6 +137,35 @@ Exchange オンプレミス展開または外部電子メールプロバイダ�
 
 >[!IMPORTANT]
 >組織がセキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスを使用して、オンプレミス ユーザーの Teams チャット データを検索できるようにするには、Microsoft サポートに要求を提出する必要があります。 詳細については、「 [オンプレミスユーザーのクラウドベースのメールボックスの検索](search-cloud-based-mailboxes-for-on-premises-users.md)」を参照してください。
+
+大規模な企業組織の監督対象ユーザーを管理するには、大規模なグループ全体のユーザーすべてを監視する必要がある場合があります。 PowerShell を使用して、割り当てられたグループのグローバル通信コンプライアンスポリシーの配布グループを構成できます。 これにより、数千人のユーザーを1つのポリシーで監視し、新しい従業員が組織に参加するときに通信コンプライアンスポリシーを更新することができます。
+
+1. 次のプロパティを使用して、グローバル通信コンプライアンスポリシー用の専用の [配布グループ](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) を作成します。この配布グループは、他の目的や他の Office 365 サービスで使用されていないことを確認してください。
+
+    - **MemberDepartRestriction = Closed**。 ユーザーが配布グループから自分自身を削除できないようにします。
+    - **MemberJoinRestriction = Closed**。 ユーザーが配布グループに自分自身を追加できないようにします。
+    - **ModerationEnabled = True**。 このグループに送信されるすべてのメッセージが承認の対象となり、通信コンプライアンスポリシー構成の外部で通信するためにグループが使用されていないことを確認します。
+
+    ```PowerShell
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+
+2. 組織内の通信コンプライアンスポリシーに追加されたユーザーを追跡するには、未使用の [Exchange カスタム属性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) を選択します。
+
+3. 次の PowerShell スクリプトを定期的なスケジュールで実行して、コミュニケーションコンプライアンスポリシーにユーザーを追加します。
+
+    ```PowerShell
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
 
 グループの設定の詳細については、次の記事を参照してください。
 
