@@ -99,10 +99,20 @@
       items:
         - name: Teams アーキテクチャのポスター
           href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: テレフォニー ソリューション
+        - name: Microsoft 365 で Teams 音声を展開する
           items:
-            - name: Teams の音声ソリューションを選択します
+            - name: 概要
+              href: deploy-voice.md
+            - name: 手順 1. 音声ソリューションを選択する
               href: 'https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: 手順 2. - 電話システムをセットアップする
+              href: 'https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: 手順 3. - PSTN 接続をセットアップする
+              items:
+                - name: 通話プラン オプション
+                  href: 'https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+                - name: ダイレクト ルーティング オプション
+                  href: 'https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 多国籍企業のケーススタディ
               href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 共同作業ガバナンス
