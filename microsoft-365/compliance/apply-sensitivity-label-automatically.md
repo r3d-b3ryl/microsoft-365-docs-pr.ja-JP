@@ -1,5 +1,5 @@
 ---
-title: 機密ラベルをコンテンツに自動的に適用する
+title: Microsoft 365 で秘密度ラベルをコンテンツに自動的に適用する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,23 +15,26 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 705752a63d3cd1ca5f6950643648ba5c3dd50336
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
+ms.openlocfilehash: 15b841f857eee1861a39a3d0e2e27025fadb90f4
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551348"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568499"
 ---
-# <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
+# <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-機密ラベルを作成する場合、指定した条件に一致したときに、そのラベルをコンテンツに自動的に割り当てることができます。
+> [!NOTE]
+> Azure Purview (プレビュー) での秘密度ラベルの自動適用の詳細については、「[Azure Purview のコンテンツに自動的にラベルを付ける](https://docs.microsoft.com/azure/purview/create-sensitivity-label)」を参照してください。
 
-機密ラベルを自動的にコンテンツに適用する機能が重要である理由は次のとおりです。
+秘密度ラベルを作成する場合、指定した条件に一致したときに、そのラベルをファイルやメールに自動的に割り当てることができます。
 
-- ユーザーのトレーニングは、一部の分類方法をいつ使用するかについてのみ必要。
+秘密度ラベルを自動的にコンテンツに適用する機能が重要である理由は次のとおりです。
+
+- それぞれの分類をいつ使用するかについて、ユーザーをトレーニングする必要がなくなる。
 
 - ユーザーへの依存は、一部のコンテンツを正しく分類するためにのみ必要。
 
@@ -39,9 +42,9 @@ ms.locfileid: "49551348"
 
 コンテンツが手動でラベル付けされている場合、そのラベルが自動ラベル付けで置き換えられることはありません。 ただし、自動ラベル付けは、自動的に適用された[優先度が低いラベル](sensitivity-labels.md#label-priority-order-matters)を置き換えることができます。
 
-機密ラベルを自動的に適用するには、次の 2 つの異なる方法があります。
+Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用するには、次の 2 つの方法があります。
 
-- **ユーザーがドキュメントを編集したり、メールを作成 (返信または転送) するときのクライアント側のラベル付け**: Office アプリ (Word、Excel、PowerPoint、Outlook) の自動ラベル付け用に構成されたラベルを使用します。 
+- **ユーザーがドキュメントを編集したり、メールを作成 (返信または転送) するときのクライアント側のラベル付け**: ファイルやメール (Word、Excel、PowerPoint、Outlook を含む) の自動ラベル付け用に構成されたラベルを使用します。 
     
     この方法は、ユーザーへのラベルの推奨と、ラベルの自動適用をサポートしています。 ただし、どちらの場合も、ユーザーはラベルを承諾または拒否するかどうかを決定し、コンテンツの正しいラベル付けを行います。 このクライアント側のラベル付けでは、ドキュメントを保存する前であってもラベルを適用できるため、ドキュメントの遅延が最小限に抑えられます。 ただし、すべてのクライアント アプリが自動ラベル付けをサポートしているわけではありません。 この機能は、Azure Information Protection 統合ラベル付けクライアント、および [Office の一部のバージョン](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)でサポートされています。 
     
@@ -75,7 +78,7 @@ ms.locfileid: "49551348"
 
 次の表は、2 つの相補的な自動ラベル付け方法の違いを特定するのに役立ちます。
 
-|機能または動作|ラベル設定: Office アプリの自動ラベル付け |ポリシー: 自動ラベル付け|
+|機能または動作|ラベル設定: ファイルやメールの自動ラベル付け  |ポリシー: 自動ラベル付け|
 |:-----|:-----|:-----|
 |アプリの依存関係|[はい](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |いいえ \* |
 |場所による制限|いいえ |はい |
@@ -108,11 +111,11 @@ Windows 用 Office アプリの自動ラベル付けは、Azure Information Prot
 
 Office アプリの自動ラベル付け設定は、[機密ラベルを作成または編集する](create-sensitivity-labels.md)ときに使用できます。 ラベルのスコープとして **[ファイルとメール]** が選択されていることを確認してください。 
 
-![ファイルとメールの秘密度レベル スコープ オプション](../media/filesandemails-scope-options-sensitivity-label.png)
+![ファイルとメールの秘密度ラベルの範囲オプション](../media/filesandemails-scope-options-sensitivity-label.png)
 
-ウィザードを移動すると、**[Office アプリの自動ラベル付け]** ページが表示されます。このページでは、機密情報の種類またはトレーニング可能な分類子のリストから選択できます。
+ウィザード内を移動すると、**[ファイルやメールの自動ラベル付け]** ページが表示されます。このページでは、機密情報の種類またはトレーニング可能な分類子の一覧から選択できます。
 
-![Office アプリの自動ラベル付けのラベル条件](../media/sensitivity-labels-conditions.png)
+![Office アプリでの自動ラベル付けのラベル条件](../media/sensitivity-labels-conditions.png)
 
 この機密ラベルが自動的に適用されると、ユーザーの Office アプリに通知が表示されます。 例:
 
