@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Microsoft 365 コンプライアンスセンターのコンテンツ検索からローカルコンピューターに検索結果をエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 SharePoint と OneDrive for Business サイトのコンテンツは、ネイティブの Office ドキュメントとしてエクスポートされます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422876"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602054"
 ---
 # <a name="export-content-search-results"></a>コンテンツ検索の結果をエクスポートする
 
@@ -49,7 +49,7 @@ ms.locfileid: "49422876"
 
   - Microsoft Edge <sup>2</sup>
   
-    または
+    OR
 
   - Microsoft Internet Explorer 10 以降のバージョン
   
@@ -165,7 +165,7 @@ ms.locfileid: "49422876"
   
     **電子情報開示エクスポート ツール** には、ダウンロードする残りのアイテムの数とサイズの見積もりなど、エクスポート プロセスの状態に関する情報が表示されます。 エクスポートプロセスが完了すると、ダウンロードされた場所にあるファイルにアクセスできます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 検索結果のエクスポートの詳細については、以下を参照してください。
   
@@ -345,6 +345,8 @@ ms.locfileid: "49422876"
 
 ### <a name="miscellaneous"></a>その他
   
+- 電子情報開示エクスポートツールを使用して検索結果をダウンロードする場合、次のエラーが表示されることがあります。 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` これは、通常、Azure ストレージの場所で発生する一時的なエラーです。 この問題を解決するには、 [検索結果のダウンロード](#step-2-download-the-search-results)を再試行します。これにより、電子情報開示エクスポートツールが再起動されます。
+
 - すべての検索結果とエクスポート レポートが、コンテンツ検索と同じ名前のフォルダーに含まれています。 エクスポートされたメール メッセージは、**Exchange** という名前のフォルダーにあります。 ドキュメントは、**SharePoint** という名前のフォルダーにあります。
 
 - SharePoint および OneDrive for Business サイトのドキュメントのファイルシステムメタデータは、ドキュメントをローカルコンピューターにエクスポートするときに維持されます。 つまり、作成日や最終更新日などのドキュメントのプロパティは、ドキュメントがエクスポートされる時に変更されません。

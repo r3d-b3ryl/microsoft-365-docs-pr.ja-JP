@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、DLP ポリシーを Microsoft Teams のチャットおよびチャネルに適用できるようになります。 機能の詳細については、この記事を参照してください。
-ms.openlocfilehash: 22f279eaccaed20984a59b9b3ae5655df00b2ae3
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 4903056a9a7e7ae74a8ada52bd491f2b8efe771e
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951090"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604361"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
 > [!NOTE]
-> 最近、Office 365 Advanced Compliance のライセンスを取得しているユーザー向けに、データ損失防止機能が Microsoft Teams のチャットとチャネルのメッセージに追加されました。これはスタンドアロンのオプションとして提供されており、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 Office 365 と Microsoft 365 E3 には、SharePoint Online、OneDrive、および Exchange Online の DLP 保護が含まれています。 これには、Teams が SharePoint Online と OneDrive を使用してファイルを共有するため、Teams によって共有されるファイルも含まれます。
+> データ損失防止機能は、最近、Office 365 E5/A5、Microsoft 365 E5/a5、Microsoft 365 情報保護とガバナンス、または Office 365 Advanced コンプライアンスのユーザー向けに、Microsoft Teams のチャットおよびチャネルメッセージに追加されました。 Office 365 と Microsoft 365 E3 には、SharePoint Online、OneDrive、および Exchange Online の DLP 保護が含まれています。 これには、Teams が SharePoint Online と OneDrive を使用してファイルを共有するため、Teams によって共有されるファイルも含まれます。
 Teams チャットで DLP 保護をサポートするには、E5 が必要です。
 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
 
@@ -67,17 +67,17 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 1. セキュリティ & コンプライアンスセンター () に移動し、 [https://protection.office.com](https://protection.office.com) サインインします。
 
-2. [ **データ損失防止** ポリシー] を選択し  >  **Policy** ます。
+2. [**データ損失防止** ポリシー] を選択し  >  **Policy** ます。
 
-3. ポリシーを選択し、[ **ポリシー設定** ] の横にある [ **編集** ] を選択します。
+3. ポリシーを選択し、[ **ポリシー設定**] の横にある [ **編集**] を選択します。
 
 4. 新しいルールを作成するか、ポリシーの既存のルールを編集します。<br/>![ポリシーのルールを編集する](../media/dlp-teams-editrule.png)<br/>
 
 5. [ **ユーザー通知** ] タブで、[ **電子メールテキストのカスタマイズ** ] または [ **ポリシーヒントテキストオプションのカスタマイズ** ] を選択します。<br/>![ユーザー通知とポリシーヒントをカスタマイズする](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
-6. 電子メール通知やポリシーヒントに使用するテキストを指定し、[ **保存** ] を選択します。
+6. 電子メール通知やポリシーヒントに使用するテキストを指定し、[ **保存**] を選択します。
 
-7. [ **ポリシー設定** ] タブで、[ **保存** ] を選択します。
+7. [ **ポリシー設定** ] タブで、[ **保存**] を選択します。
 
 変更がデータセンターを経由して、ユーザーアカウントに同期されるまで約1時間の時間を確保します。
  <!-- why are these syncing to user accounts? -->
@@ -87,15 +87,15 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 1. セキュリティ & コンプライアンスセンター () に移動し、 [https://protection.office.com](https://protection.office.com) サインインします。
 
-2. [ **データ損失防止** ポリシー] を選択し  >  **Policy** ます。
+2. [**データ損失防止** ポリシー] を選択し  >  **Policy** ます。
 
-3. ポリシーを選択し、[ **場所** ] で値を確認します。 **Teams のチャットおよびチャネルメッセージ** が表示される場合は、すべて設定されています。 表示しない場合は、[ **編集** ] をクリックします。<br/>![既存のポリシーの場所](../media/dlp-teams-editexistingpolicy.png)<br/>
+3. ポリシーを選択し、[ **場所**] で値を確認します。 **Teams のチャットおよびチャネルメッセージ** が表示される場合は、すべて設定されています。 表示しない場合は、[ **編集**] をクリックします。<br/>![既存のポリシーの場所](../media/dlp-teams-editexistingpolicy.png)<br/>
 
 4. [ **状態** ] 列で、 **Teams のチャットおよびチャネルメッセージ** のポリシーをオンにします。<br/>![Teams のチャットおよびチャネルの DLP](../media/dlp-teams-addteamschatschannels.png)<br/>
 
 5. すべてのアカウントの既定の設定をそのまま使用するか、または含めるアカウントまたは除外するアカウントを指定します。
 
-6. [ **保存** ] をクリックします。
+6. **[保存]** をクリックします。
 
 変更がデータセンターを経由して、ユーザーアカウントに同期されるまで約1時間の時間を確保します。
 <!-- again, why user accounts? -->
@@ -105,25 +105,25 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 1. セキュリティ & コンプライアンスセンター () に移動し、 [https://protection.office.com](https://protection.office.com) サインインします。
 
-2. [ **データ損失防止** ポリシー] を選択して  >  **Policy**  >  **、ポリシーを作成** します。
+2. [**データ損失防止** ポリシー] を選択して  >  **Policy**  >  **、ポリシーを作成** します。
 
-3. [テンプレート](data-loss-prevention-policies.md#dlp-policy-templates)を選択し、[ **次へ** ] を選択します。<br/>この例では、米国の個人を特定できる情報データテンプレートを選択しました。<br/>![DLP ポリシーのプライバシーテンプレート](../media/dlp-teams-createnewpolicy-template.png)<br/>
+3. [テンプレート](data-loss-prevention-policies.md#dlp-policy-templates)を選択し、[**次へ**] を選択します。<br/>この例では、米国の個人を特定できる情報データテンプレートを選択しました。<br/>![DLP ポリシーのプライバシーテンプレート](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
-4. [ **ポリシーに名前** をつける] タブで、ポリシーの名前と説明を指定し、[ **次へ** ] を選択します。
+4. [ **ポリシーに名前** をつける] タブで、ポリシーの名前と説明を指定し、[ **次へ**] を選択します。
 
-5. [ **場所の選択** ] タブで、すべての場所の既定の設定をそのまま使用するか、[特定の **場所を選択** する] を選択して、[ **次へ** ] を選択します。<br/>特定の場所を選択した場合は、DLP ポリシーに対してそれらの場所を選択し、[ **次へ** ] を選択します。<br/>![DLP ポリシーの場所](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. [ **場所の選択** ] タブで、すべての場所の既定の設定をそのまま使用するか、[特定の **場所を選択** する] を選択して、[ **次へ**] を選択します。<br/>特定の場所を選択した場合は、DLP ポリシーに対してそれらの場所を選択し、[ **次へ**] を選択します。<br/>![DLP ポリシーの場所](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > 機密情報が含まれるドキュメントが Teams で不適切に共有されないようにするには、 **SharePoint サイト** と **OneDrive アカウント** が有効になっていることを、 **teams のチャットおよびチャネルメッセージ** と一緒に確認します。
 
 <br/>
 
-6. [ **ポリシー設定** ] タブの [ **保護するコンテンツの種類をカスタマイズ** する] で、既定の簡易設定をそのまま使用するか、[ **詳細設定** ] を選択して [ **次へ** ] を選択します。 [詳細設定] を選択した場合は、ポリシーのルールを作成または編集することができます。 (詳細については、「 [Simple settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)」と「advanced settings」を参照してください)。
+6. [ **ポリシー設定** ] タブの [ **保護するコンテンツの種類をカスタマイズ** する] で、既定の簡易設定をそのまま使用するか、[ **詳細設定**] を選択して [ **次へ**] を選択します。 [詳細設定] を選択した場合は、ポリシーのルールを作成または編集することができます。 (詳細については、「 [Simple settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)」と「advanced settings」を参照してください)。
 
-7.  [ **ポリシー設定** ] タブの [ **機密情報が検出された場合に実行** する操作] で、設定を確認します。 (既定の [ポリシーヒントと電子メール通知](use-notifications-and-policy-tips.md)を保持するか、カスタマイズするかを選択できます)。<br/>![ヒントと通知を含む DLP ポリシー設定](../media/dlp-teams-policysettings-tipsemails.png)<br/>設定の確認または編集が完了したら、[ **次へ** ] を選択します。
+7.  [ **ポリシー設定** ] タブの [ **機密情報が検出された場合に実行** する操作] で、設定を確認します。 (既定の [ポリシーヒントと電子メール通知](use-notifications-and-policy-tips.md)を保持するか、カスタマイズするかを選択できます)。<br/>![ヒントと通知を含む DLP ポリシー設定](../media/dlp-teams-policysettings-tipsemails.png)<br/>設定の確認または編集が完了したら、[ **次へ**] を選択します。
 
-8. [ **ポリシー設定** ] タブの [ **ポリシーをオンにするか、または最初にテストしますか?** ] で、ポリシーをオンにするか、 [最初にテスト](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)するか、または今すぐ有効にしないかを選択し、[ **次へ** ] を選択します。<br/>![ポリシーを有効にするかどうかを指定する](../media/dlp-teams-policysettings-turnonnow.png)<br/>
+8. [ **ポリシー設定** ] タブの [ **ポリシーをオンにするか、または最初にテストしますか?**] で、ポリシーをオンにするか、 [最初にテスト](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)するか、または今すぐ有効にしないかを選択し、[ **次へ**] を選択します。<br/>![ポリシーを有効にするかどうかを指定する](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
-9. [ **設定の確認** ] タブで、新しいポリシーの設定を確認します。 [ **編集** ] を選択して変更を加えます。 完了したら、[ **作成** ] を選択します。
+9. [ **設定の確認** ] タブで、新しいポリシーの設定を確認します。 [ **編集** ] を選択して変更を加えます。 完了したら、[ **作成**] を選択します。
 
 新しいポリシーがデータセンターを使用して動作し、ユーザーアカウントに同期できるようになるまで約1時間かかります。
 

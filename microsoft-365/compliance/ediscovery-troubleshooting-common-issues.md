@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Office 365 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順について説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422866"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602038"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、および解決する
 
@@ -49,7 +49,7 @@ ms.locfileid: "49422866"
    ' Useralias@contoso.com ' の出力は次のようになります。
 
    > 
-   > |Name|RecipientType|
+   > |名前|RecipientType|
    > |---|---|
    > |Alias、User|Enable-mailuser|
    > |Alias、User|User|
@@ -58,8 +58,7 @@ ms.locfileid: "49422866"
 
 ## <a name="errorissue-search-fails-on-specific-locations"></a>エラー/問題: 特定の場所で検索が失敗する
 
-電子情報開示またはコンテンツの検索では、次のエラーが発生することがあります。
->この検索は (#) エラーで完了しました。  失敗した場所で検索を再試行しますか?
+電子情報開示またはコンテンツの検索では、次のエラーが発生することがあります。 `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![検索固有の場所が失敗するエラーのスクリーンショット](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -194,6 +193,14 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
    ```
 
 4. Microsoft サポートにお問い合わせください。
+
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>エラー: "HTTP 条件付きヘッダーを使用して指定された条件は満たされていません"
+
+電子情報開示エクスポートツールを使用して検索結果をダウンロードする場合、次のエラーが表示されることがあります。 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` これは、通常、Azure ストレージの場所で発生する一時的なエラーです。
+
+### <a name="resolution"></a>解決方法
+
+この問題を解決するには、 [検索結果のダウンロード](export-search-results.md#step-2-download-the-search-results)を再試行します。これにより、電子情報開示エクスポートツールが再起動されます。
 
 ## <a name="see-also"></a>関連項目
 

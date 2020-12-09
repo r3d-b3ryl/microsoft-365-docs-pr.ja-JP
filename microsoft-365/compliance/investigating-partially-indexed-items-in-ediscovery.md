@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 組織内の Exchange、SharePoint、および OneDrive for Business から、部分的にインデックス化 (またはインデックスを作成) されたアイテムを管理する方法について説明します。
-ms.openlocfilehash: 132a174f0c163c75939b75906baa3833c6387fa7
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 94dc568aa889e76241ef7bd48e3dedaba9b92f2f
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588564"
+ms.locfileid: "49602064"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示での部分的にインデックスが作成されたアイテムの調査
 
@@ -124,66 +124,67 @@ Microsoft 365 コンプライアンスセンターから実行する電子情報
   
 1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、のように `PartiallyIndexedItems.ps1` なります。
 
-```powershell
-  write-host "**************************************************"
-  write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
-  write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
-  write-host "**************************************************"
-  " " 
-  # Create a search with Error Tags Refinders enabled
-  Remove-ComplianceSearch "RefinerTest" -Confirm:$false -ErrorAction 'SilentlyContinue'
-  New-ComplianceSearch -Name "RefinerTest" -ContentMatchQuery "size>0" -RefinerNames ErrorTags -ExchangeLocation ALL
-  Start-ComplianceSearch "RefinerTest"
-  # Loop while search is in progress
-  do{
-      Write-host "Waiting for search to complete..."
-      Start-Sleep -s 5
-      $complianceSearch = Get-ComplianceSearch "RefinerTest"
-  }while ($complianceSearch.Status -ne 'Completed')
-  $refiners = $complianceSearch.Refiners | ConvertFrom-Json
-  $errorTagProperties = $refiners.Entries | Get-Member -MemberType NoteProperty
-  $partiallyIndexedRatio = $complianceSearch.UnindexedItems / $complianceSearch.Items
-  $partiallyIndexedSizeRatio = $complianceSearch.UnindexedSize / $complianceSearch.Size
-  " "
-  "===== Partially indexed items ====="
-  "         Total          Ratio"
-  "Count    {0:N0}{1:P2}" -f $complianceSearch.Items.ToString("N0").PadRight(15, " "), $partiallyIndexedRatio
-  "Size(GB) {0:N2}{1:P2}" -f ($complianceSearch.Size / 1GB).ToString("N2").PadRight(15, " "), $partiallyIndexedSizeRatio
-  " "
-  Write-Host ===== Reasons for partially indexed items =====
-  foreach($errorTagProperty in $errorTagProperties)
-  {
-      $name = $refiners.Entries.($errorTagProperty.Name).Name
-      $count = $refiners.Entries.($errorTagProperty.Name).TotalCount
-      $frag = $name.Split("{_}")
-      $errorTag = $frag[0]
-      $fileType = $frag[1]
-      if ($errorTag -ne $lastErrorTag)
-      {
-          $errorTag
-      }
-      "    " + $fileType + " => " + $count
-      $lastErrorTag = $errorTag
-  }
-```
+   ```powershell
+     write-host "**************************************************"
+     write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "**************************************************"
+     " " 
+     # Create a search with Error Tags Refinders enabled
+     Remove-ComplianceSearch "RefinerTest" -Confirm:$false -ErrorAction 'SilentlyContinue'
+     New-ComplianceSearch -Name "RefinerTest" -ContentMatchQuery "size>0" -RefinerNames ErrorTags -ExchangeLocation ALL
+     Start-ComplianceSearch "RefinerTest"
+     # Loop while search is in progress
+     do{
+         Write-host "Waiting for search to complete..."
+         Start-Sleep -s 5
+         $complianceSearch = Get-ComplianceSearch "RefinerTest"
+     }while ($complianceSearch.Status -ne 'Completed')
+     $refiners = $complianceSearch.Refiners | ConvertFrom-Json
+     $errorTagProperties = $refiners.Entries | Get-Member -MemberType NoteProperty
+     $partiallyIndexedRatio = $complianceSearch.UnindexedItems / $complianceSearch.Items
+     $partiallyIndexedSizeRatio = $complianceSearch.UnindexedSize / $complianceSearch.Size
+     " "
+     "===== Partially indexed items ====="
+     "         Total          Ratio"
+     "Count    {0:N0}{1:P2}" -f $complianceSearch.Items.ToString("N0").PadRight(15, " "), $partiallyIndexedRatio
+     "Size(GB) {0:N2}{1:P2}" -f ($complianceSearch.Size / 1GB).ToString("N2").PadRight(15, " "), $partiallyIndexedSizeRatio
+     " "
+     Write-Host ===== Reasons for partially indexed items =====
+     foreach($errorTagProperty in $errorTagProperties)
+     {
+         $name = $refiners.Entries.($errorTagProperty.Name).Name
+         $count = $refiners.Entries.($errorTagProperty.Name).TotalCount
+         $frag = $name.Split("{_}")
+         $errorTag = $frag[0]
+         $fileType = $frag[1]
+         if ($errorTag -ne $lastErrorTag)
+         {
+             $errorTag
+         }
+         "    " + $fileType + " => " + $count
+         $lastErrorTag = $errorTag
+     }
+   ```
 
 2. [セキュリティ/コンプライアンス センター PowerShell に接続します](https://go.microsoft.com/fwlink/p/?linkid=627084)。
 
 3. [セキュリティ & コンプライアンスセンター] PowerShell で、手順1でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 
-    ```powershell
-    .\PartiallyIndexedItems.ps1
-    ```
+   ```powershell
+   .\PartiallyIndexedItems.ps1
+   ```
 
 このスクリプトによって返される出力の例を次に示します。
   
 ![部分的にインデックスが作成された電子メールアイテムに対する組織の公開に関するレポートを生成するスクリプトからの出力の例](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
-  
-次の点に注意してください。
-  
-1. 電子メールアイテムの合計数とサイズ、および部分的にインデックスが作成された電子メールアイテムの組織の比率 (カウントとサイズ順)
 
-2. エラーが発生したエラータグと対応するファイルの種類を一覧表示します。
+> [!NOTE]
+> 次の点に注意してください。
+>  
+> - 電子メールアイテムの合計数とサイズ、および部分的にインデックスが作成された電子メールアイテムの組織の比率 (カウントとサイズ順)。
+> 
+> - エラーが発生したエラータグと対応するファイルの種類を一覧表示します。
   
 ## <a name="see-also"></a>関連項目
 

@@ -195,6 +195,8 @@
       items:
         - name: Microsoft 365 サービス正常性の状態
           href: microsoft-365-service-health.md
+        - name: Exchange Online の監視
+          href: microsoft-365-exchange-monitoring.md
         - name: セットアップ ガイド
           href: setup-guides-for-microsoft-365.md
     - name: 複数のテナント

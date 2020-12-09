@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ffeb1f1ca3296390fa10a636d3806127095712f8
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: ed4c9caba59eee9f01bdb1db3bafba91bac78437
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941432"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604227"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -68,12 +68,14 @@ ms.locfileid: "48941432"
 
 - スコープ付きディレクトリ検索-組織の最初の情報バリアポリシーを定義する前に、 [Microsoft Teams でスコープ付きディレクトリ検索を有効](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)にする必要があります。 情報バリアポリシーを設定または定義する前に、スコープ付きディレクトリ検索を有効にした後、少なくとも24時間待機します。
 
+- EXO license-IB ポリシーは、ターゲットユーザーに EXO ライセンスが割り当てられている場合にのみ機能します。
+
 - 監査ログ-ポリシーアプリケーションの状態を参照するには、監査ログを有効にする必要があります。 セグメントまたはポリシーの定義を開始する前に、この手順を実行することをお勧めします。 詳細については、「 [監査ログの検索を有効または無効](turn-audit-log-search-on-or-off.md)にする」を参照してください。
 
 - アドレス帳ポリシーなし-情報バリアポリシーを定義して適用する前に、Exchange アドレス帳ポリシーが設定されていないことを確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2 種類のポリシーには互換性がありません。 このようなポリシーがある場合は、最初に [アドレス帳ポリシーを削除](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) するようにしてください。 情報バリアポリシーが有効になっていて、階層型アドレス帳が有効になっている場合、すべてのユーザー * 情報バリアセグメントに _ *_が含まれていない_* と、Exchange online では [階層型アドレス帳](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) が表示されます。
 
 - PowerShell-現在、情報バリアポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ & コンプライアンスセンターで定義および管理されます。 この記事ではいくつかの例が示されていますが、PowerShell のコマンドレットとパラメーターについて理解しておく必要があります。 Azure PowerShell モジュールも必要になります。
-    - [セキュリティ/コンプライアンス センター PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+    - [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     - [Azure PowerShell モジュールをインストールする](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Microsoft Teams の情報障壁に対する管理者の同意-ポリシーが設定されている場合、情報バリアは、ユーザーが意図したものではないチャットセッションからユーザーを削除することができます。 これにより、組織はポリシーと規制に準拠したままになります。 次の手順を使用して、Microsoft Teams で情報バリアポリシーが期待どおりに動作するようにします。 
@@ -90,7 +92,7 @@ ms.locfileid: "48941432"
 
    2. メッセージが表示されたら、Office 365 の職場または学校アカウントを使用してサインインします。
 
-   3. [ *要求されたアクセス許可* ] ダイアログボックスで、情報を確認してから、[ **承諾** ] を選択します。
+   3. [*要求されたアクセス許可*] ダイアログボックスで、情報を確認してから、[ **承諾**] を選択します。
 
 すべての前提条件が満たされたら、次のセクションに進みます。
 
@@ -116,7 +118,7 @@ ms.locfileid: "48941432"
 > [!IMPORTANT]
 > ユーザーは1つのセグメントのみに配置できます。
 
-セグメントを定義するために使用する組織のディレクトリデータの属性を決定します。 *Department* 、 *MemberOf* 、またはサポートされている属性のいずれかを使用できます。 ユーザー用に選択した属性の値があることを確認してください。 [情報バリアに対してサポートされている属性の一覧を参照してください](information-barriers-attributes.md)。
+セグメントを定義するために使用する組織のディレクトリデータの属性を決定します。 *Department*、 *MemberOf*、またはサポートされている属性のいずれかを使用できます。 ユーザー用に選択した属性の値があることを確認してください。 [情報バリアに対してサポートされている属性の一覧を参照してください](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
 > **次のセクションに進む前に、セグメントを定義するために使用できる属性の値がディレクトリデータにあることを確認して** ください。 ディレクトリデータに使用する属性の値が含まれていない場合は、情報の障壁を処理する前に、その情報を含めるようにユーザーアカウントを更新する必要があります。 これに関するヘルプを表示するには、次のリソースを参照してください。<br/>- [Office 365 PowerShell を使用してユーザーアカウントのプロパティを構成する](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
@@ -125,7 +127,7 @@ ms.locfileid: "48941432"
 
 セグメントを定義しても、ユーザーに影響はありません。情報バリアポリシーが定義され、適用される段階を設定するだけです。
 
-1. 使用する [属性](information-barriers-attributes.md)に対応する **usergroupfilter** パラメーターを指定して、 **新しい-組織セグメント** コマンドレットを使用します。
+1. 使用する [属性](information-barriers-attributes.md)に対応する **usergroupfilter** パラメーターを指定して、**新しい-組織セグメント** コマンドレットを使用します。
 
     |構文   |例  |
     |---------|---------|
@@ -147,7 +149,7 @@ ms.locfileid: "48941432"
 
 |例  |
 |---------|
-|`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>この例では、セグメント定義に "equals" パラメーター **(-eq** ) が含まれていることに注意してください。 
+|`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>この例では、セグメント定義に "equals" パラメーター **(-eq**) が含まれていることに注意してください。 
   |
 
 次の表に示すように、"not equals" パラメーターを使用してセグメントを定義することもできます ( **-ne** で示されます)。
@@ -200,7 +202,7 @@ ms.locfileid: "48941432"
 
     |例  |
     |---------|
-    |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p>    この例では、リサーチという名前のポリシーを定義して、 *研究**部門* との通信によるコミュニケーションを防止し *ています* 。     |
+    |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p>    この例では、リサーチという名前のポリシーを定義して、*研究**部門* との通信によるコミュニケーションを防止し *ています*。     |
 
 2. 次のいずれかの手順を実行します。
 
@@ -213,7 +215,7 @@ ms.locfileid: "48941432"
 
     |構文  |例  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>    この例では、 *製造* と呼ばれるセグメントに対して、 *工場* という名前のポリシーを定義しています。 このポリシーを有効にして適用すると、 *製造* 者は *HR* というセグメントにあるユーザーとのみ通信できるようになります。 (この場合、 *製造* は *人事* の一部ではないユーザーと通信できません)。         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>    この例では、*製造* と呼ばれるセグメントに対して、*工場* という名前のポリシーを定義しています。 このポリシーを有効にして適用すると、 *製造* 者は *HR* というセグメントにあるユーザーとのみ通信できるようになります。 (この場合、 *製造* は *人事* の一部ではないユーザーと通信できません)。         |
 
     **必要に応じて、次の例に示すように、このコマンドレットで複数のセグメントを指定できます。**
 
@@ -319,9 +321,9 @@ Contoso は3つのポリシーを定義します。次の表で説明します�
 
 |ポリシー  |ポリシー定義  |
 |---------|---------|
-|ポリシー 1: 営業部門がリサーチ部門と通信できないようにする     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> この例では、情報バリアポリシーは、 *営業-リサーチ* と呼ばれています。 このポリシーが適応されると、営業セグメント内のユーザーがリサーチセグメント内のユーザーと通信できなくなります。 これは一方向ポリシーで、リサーチ担当者からは営業担当社に通信できます。 そのため、ポリシー2が必要です。      |
-|ポリシー 2: リサーチ部門が営業部門と通信できないようにする     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> この例では、情報バリアポリシーは、 *リサーチ-営業* と呼ばれています。 このポリシーが適応されると、リサーチセグメント内のユーザーが、営業セグメント内のユーザーと通信できなくなります。       |
-|ポリシー 3: 製造に HR と Marketing のみが通信できるようにする     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>この場合、情報バリアポリシーは、 *製造-人事マーケティング* と呼ばれています。 このポリシーが適応されると、製造部門は人事およびマーケティング部門とだけ通信を行えます。 人事およびマーケティング部門では、他のセグメントとの通信に制限はありません。ご注意ください。 |
+|ポリシー 1: 営業部門がリサーチ部門と通信できないようにする     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> この例では、情報バリアポリシーは、*営業-リサーチ* と呼ばれています。 このポリシーが適応されると、営業セグメント内のユーザーがリサーチセグメント内のユーザーと通信できなくなります。 これは一方向ポリシーで、リサーチ担当者からは営業担当社に通信できます。 そのため、ポリシー2が必要です。      |
+|ポリシー 2: リサーチ部門が営業部門と通信できないようにする     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> この例では、情報バリアポリシーは、*リサーチ-営業* と呼ばれています。 このポリシーが適応されると、リサーチセグメント内のユーザーが、営業セグメント内のユーザーと通信できなくなります。       |
+|ポリシー 3: 製造に HR と Marketing のみが通信できるようにする     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>この場合、情報バリアポリシーは、*製造-人事マーケティング* と呼ばれています。 このポリシーが適応されると、製造部門は人事およびマーケティング部門とだけ通信を行えます。 人事およびマーケティング部門では、他のセグメントとの通信に制限はありません。ご注意ください。 |
 
 セグメントとポリシーが定義されているので、Contoso は **InformationBarrierPoliciesApplication** コマンドレットを実行してポリシーを適用します。 
 

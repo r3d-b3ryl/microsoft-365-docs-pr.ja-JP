@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft マネージド デスクトップのドキュメント
-summary: Microsoft マネージド デスクトップは、Microsoft 365 Enterprise、Microsoft によるクラウドベースのデバイス管理、およびセキュリティ監視を統合し、IT チームを解放してコア ビジネス ニーズに集中できるようにします。
+summary: Microsoft マネージド デスクトップは、エンドポイント管理とセキュリティ監視を組み合わせた独自の ITaaS ソリューションで、IT 担当者が信頼できる安全で生産性の高いデバイス エクスペリエンスをユーザーに提供します。
 metadata:
   title: Microsoft マネージド デスクトップのドキュメント
   description: Microsoft マネージド デスクトップは、Microsoft 365 Enterprise、Microsoft によるクラウドベースのデバイス管理、およびセキュリティ監視を統合し、IT チームを解放してコア ビジネス ニーズに集中できるようにします。
@@ -9,13 +9,13 @@ metadata:
   ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.date: 07/13/2020
-  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
-  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.date: 12/04/2020
+  ms.openlocfilehash: 59d8d4ae0986af58c086ea08f486feca5cb23f71
+  ms.sourcegitcommit: 9d5ddfc856926ce6919498c9c42a7421fef78328
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/05/2020
-  ms.locfileid: "46564145"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "49576777"
 landingContent:
 - title: Microsoft マネージド デスクトップについて
   linkLists:
@@ -33,21 +33,33 @@ landingContent:
       url: get-started/index.md
     - text: Microsoft マネージド デスクトップを使用する
       url: /microsoft-365/managed-desktop/working-with-managed-desktop/
-- title: 新しい記事とブログ投稿
+- title: 記事とブログ投稿
   linkLists:
-  - linkListType: whats-new
+  - linkListType: learn
     links:
-    - text: '[ロードマップ] Microsoft マネージド デスクトップの完全なロードマップ'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
-    - text: '[ホワイトペーパー] スタディ: マネージド デスクトップサービスの需要が高まり'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
-    - text: '[電子ブック]最新のワークプレースで会社に喜びをあたえる'
-      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
-- title: 動画
+    - text: '[ブログ] ワークプレイス デバイスは新しい "無料のスナック" である'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/workplace-devices-are-the-new-free-snacks/ba-p/1675936
+    - text: '[ホワイトペーパー] 研究: Microsoft マネージド デスクトップが時間とコストを節約'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/study-microsoft-managed-desktop-saves-time-and-costs/ba-p/1403408
+    - text: '[ホワイトペーパー] Microsoft マネージド デスクトップはエンゲージメントを高めるのに役立つ'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/microsoft-managed-desktop-can-help-boost-engagement/ba-p/1031932
+    - text: '[ホワイトペーパー] SA Power Networks が進化するユーザー ニーズを満たすために Microsoft マネージド デスクトップを導入'
+      url: https://customers.microsoft.com/story/832888-sa-power-networks-case-study-energy-microsoft-managed-desktop
+- title: メリットと特徴
   linkLists:
   - linkListType: video
     links:
-    - text: Lloyds 銀行グループのエンジニアリング ディレクターから Microsoft マネージド デスクトップの利点について説明します。
+    - text: Microsoft マネージド デスクトップ - IT 管理者エクスペリエンス
+      url: https://www.youtube.com/watch?v=UQ8VRSysUXw&feature=youtu.be
+    - text: Microsoft マネージド デスクトップが企業に愛されるポイント
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4yjfL
+    - text: Microsoft マネージド デスクトップ - 優れたデバイス エクスペリエンス
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE41urx?autoplay=false
+    - text: Microsoft マネージド デスクトップ - セキュリティ運用
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: Microsoft マネージド デスクトップ - 変更およびリリースのプロセス
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: Shiproom/IGM/エピソード 29 - セキュリティでユーザー エクスペリエンスを優先する
+      url: https://www.youtube.com/watch?v=im11J9C1MTA&feature=youtu.be
+    - text: Shiproom/Lloyds Banking Group/エピソード 25 - 急速な変化の中でのリーダーシップ
       url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
-    - text: 年間 Ignite コンファレンスの Microsoft マネージド デスクトップの特徴
-      url: /microsoft-365/managed-desktop/service-description
