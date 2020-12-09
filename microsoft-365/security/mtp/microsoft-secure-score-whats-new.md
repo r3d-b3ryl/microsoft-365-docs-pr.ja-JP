@@ -20,22 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6d1358da465bd7e31ca7b234f140aa8e48bb7508
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49373997"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604385"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft セキュリティスコアの新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 予定されている変更の詳細については、「 [Microsoft Secure Score の内容](microsoft-secure-score-whats-coming.md)」を参照してください。
+Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
 
 Microsoft セキュリティスコアは https://security.microsoft.com/securescore 、 [microsoft 365 セキュリティセンター](overview-security-center.md)で入手できます。
 
-## <a name="november-2020"></a>2020 年 11 月
+## <a name="november-2020"></a>2020年11月
+
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>セキュリティで保護されたスコアで ServiceNow チケットを作成する機能を削除しました 
+
+**> servicenow を共有** することによって、セキュリティで保護されたスコアで servicenow チケットを作成する機能は使用できなくなりました。 フィードバックをお寄せいただきありがとうございます。次の手順を決定しています。
 
 ### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>エンドポイント (以前の Microsoft Defender ATP) に関する Microsoft Defender のサービス関連の改善アクションを3つ追加しました。
 
@@ -43,7 +47,7 @@ Microsoft セキュリティスコアは https://security.microsoft.com/securesc
 - サービスの実行可能パスを共通の保護された場所に変更する
 - Windows レジストリでパスワードがキャッシュされないようにサービスアカウントを変更する
 
-## <a name="october-2020"></a>2020 年 10 月
+## <a name="october-2020"></a>2020年10月
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>エンドポイントの Microsoft Defender に関連する向上アクションを削除する
 

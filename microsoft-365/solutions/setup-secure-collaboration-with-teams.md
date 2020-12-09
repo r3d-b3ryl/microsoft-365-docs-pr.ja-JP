@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: 機密情報に基づいてデータを保護するために Teams でセキュリティで保護されたコンテンツコラボレーションをセットアップする方法について説明します。
-ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906801"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602075"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Microsoft 365 とセキュリティで保護された共同作業を設定する
 
@@ -60,14 +60,14 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 
 上記のすべてのシナリオでは、Microsoft Teams の teams を使用して、情報を格納、共有、および共同作業することができます。 
 
-セキュリティで保護された設定を構成するには、次の Microsoft 365 の機能と機能を使用します。
+セキュリティで保護されたグループ作業を構成するには、次の Microsoft 365 の機能と機能を使用します。
 
 | 製品またはコンポーネント | 機能 | ライセンス |
 |:-------|:-----|:-------|
 | Microsoft Defender for Office 365 | SPO、OneDrive、Teams の安全な添付ファイル。安全なドキュメント。Teams の安全なリンク    | Microsoft 365 E1、E3、E5 |
 | SharePoint    | サイトとファイルの共有のポリシー、サイトの共有のアクセス許可、共有リンク、アクセスの要求、サイトのゲスト共有設定 | Microsoft 365 E1、E3、E5 |
 | Microsoft Teams   | ゲストアクセス、プライベートチーム、プライベートチャネル | Microsoft 365 E1、E3、E5 |
-| Microsoft 365 コンプライアンス  | 機密ラベル    | Microsoft 365 E3、E5 |
+| Microsoft 365 コンプライアンス  | 秘密度ラベル    | Microsoft 365 E3、E5 |
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>すべての種類のデータに Teams を使用する
 
@@ -78,9 +78,9 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 
 次の表に示すよう *に、これら* の *階層によって、過度**な共有* や情報漏洩を防止するための保護が徐々に増加します。
 
-||**ベースライン層**|**機密層**|**非常に機密性の高い層**|
+|-|**ベースライン層**|**機密層**|**非常に機密性の高い層**|
 |:--|:-----------|:------------|:-------------------|
-|パブリックまたはプライベートチーム|[Either/リンク/埋め込み]|プライベート|プライベート|
+|パブリックまたはプライベートチーム|[Either/リンク/埋め込み]|Kirkland|Kirkland|
 |認証されていない共有|Blocked|Blocked|Blocked|
 |ファイル共有|可|可|チーム所有者のみが共有できます。|
 |チームメンバーシップ|すべてのユーザーがパブリックチームに参加できます。<br>チーム所有者の承認は、プライベートチームに参加するために必要です。|参加するには、チーム所有者の承認が必要です。|参加するには、チーム所有者の承認が必要です。|

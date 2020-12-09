@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) の [既定でセキュリティ保護] の設定についての詳細情報
-ms.openlocfilehash: 54000d351463ba90751f1f27638fb52847cf05ce
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 758d2169d80630a38c0b498e8c1848568e5ec941
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558516"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602043"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 で既定でセキュリティ保護されている
 
@@ -40,6 +40,8 @@ Exchange Online のメールボックスを使用する Microsoft 365 組織は�
 
 - 疑いのあるマルウェアを含む電子メールは自動的に検疫され、受信者に通知されます。 [EOP でマルウェア対策ポリシーを構成するを](configure-anti-malware-policies.md)参照してください。
 - 精度の高いフィッシングとして識別されたメールは、スパム対策ポリシーアクションに従って処理されます。 [EOP の「スパム対策ポリシーの構成」を](configure-your-spam-filter-policies.md)参照してください。
+
+EOP の詳細については、「 [Exchange Online Protection の概要](exchange-online-protection-overview.md)」を参照してください。
 
 Microsoft は、お客様を既定で安全なものにすることを目的としているため、一部のテナントの上書きは、マルウェアや高精度のフィッシングには適用されません。 これらのオーバーライドは次のとおりです。
 
@@ -65,5 +67,5 @@ Microsoft は、お客様を既定で安全なものにすることを目的と�
 
 - フィッシングのシミュレーション: 実際の攻撃が組織に影響を与える前に、脆弱性のあるユーザーを特定するのに役立つ、シミュレートされた攻撃。
 - セキュリティ/SecOps メールボックス: セキュリティチームがフィルター処理されていないメッセージを取得するために使用する専用のメールボックス (良好および不良)。 チームは、悪意のあるコンテンツが含まれているかどうかを確認することができます。
-- サードパーティ製のフィルター: サードパーティ製のフィルターによってメールフィルターが管理されるため、サードパーティベンダーによっては EOP (SCL =-1) をオフにすることをお勧めします。 Microsoft では、EOP をオフにすることは推奨されていません。 EOP は、Defender for Office 365 のために必要です。 代わりに、 [コネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)を有効にすることをお勧めします。
+- サードパーティ製のフィルター: サードパーティ製のフィルターによってメールフィルターが管理されるため、サードパーティベンダーによっては EOP (SCL =-1) をオフにすることをお勧めします。 Microsoft [Defender For Office 365](office-365-atp.md)の EOP が必要な場合は、EOP をオフにすることはお勧めしません。 代わりに、 [コネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)を有効にすることをお勧めします。
 - 誤検知: Microsoft によって引き続き分析されている特定のメッセージを、 [管理者送信で](admin-submission.md)一時的に許可することができます。 すべてのオーバーライドと同様に、一時的なものにすることをお勧めします。

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409235"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604397"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft のセキュリティで保護されたスコア
 
@@ -44,14 +44,6 @@ Microsoft セキュリティスコアは https://security.microsoft.com/securesc
 - ' Minimum password age ' を ' 1 またはそれ以上 ' 日 ' に設定します
 - 組み込みの管理者アカウントを無効にする
 - 組み込みのゲストアカウントを無効にする
-
-### <a name="november-2020"></a>2020 年 11 月
-
-#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>セキュリティで保護されたスコアで ServiceNow チケットを作成する機能を削除する 
-
-**> servicenow を共有** することによって、セキュリティで保護されたスコアで servicenow チケットを作成する機能は削除されます。
-
-ServiceNow コネクタのプレビュー期間が終了します。 この機能は、2020の終わりまでは利用できなくなります。 フィードバックをお寄せいただきありがとうございます。次の手順を決定しています。
 
 ## <a name="related-resources"></a>関連リソース
 

@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: fbe98b814b253551432ea35102f2bd6eeba921f8
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920504"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602093"
 ---
-# <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
+# <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender をオンにする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -52,13 +52,13 @@ Microsoft 365 Defender は、既に展開したさまざまなサポートされ
 最適な保護を得るために、Microsoft 365 Defender を最適化するには、ネットワーク上に該当するすべてのサポートされているサービスを展開することをお勧めします。 詳細については、「 [サポートされるサービスの展開について](deploy-supported-services.md)」を参照してください。
 
 ## <a name="before-starting-the-service"></a>サービスを開始する前に
-サービスを有効にする前に、Microsoft 365 セキュリティセンター ( [security.microsoft.com](https://security.microsoft.com)) で、[ **インシデント** ]、[ **アクションセンター** ]、または [ナビゲーション] ウィンドウから **探し** ているものを選択すると、[microsoft 365 Defender 設定] ページが表示されます。 これらのナビゲーション項目は、Microsoft 365 Defender を使用する資格がない場合は表示されません。
+サービスを有効にする前に、Microsoft 365 セキュリティセンター ([security.microsoft.com](https://security.microsoft.com)) で、[ **インシデント**]、[ **アクションセンター**]、または [ナビゲーション] ウィンドウから **探し** ているものを選択すると、[microsoft 365 Defender 設定] ページが表示されます。 これらのナビゲーション項目は、Microsoft 365 Defender を使用する資格がない場合は表示されません。
 
 ![Microsoft 365 Defender が microsoft ](../../media/mtp-enable/mtp-settings.png)
  *365 セキュリティセンターの Microsoft 365 defender 設定* で有効になっていない場合に表示される microsoft 365 defender 設定ページのイメージ
 
 ## <a name="starting-the-service"></a>サービスを開始する
-Microsoft 365 Defender をオンにするには、[ **microsoft 365 defender をオン** にする] を選択して変更を適用します。 このオプションにアクセスするには、ナビゲーションウィンドウで [ **設定** ] ( [security.microsoft.com/settings](https://security.microsoft.com/settings)) を選択してから、[ **microsoft 365 Defender** ] を選択する方法もあります。
+Microsoft 365 Defender をオンにするには、[ **microsoft 365 defender をオン** にする] を選択して変更を適用します。 このオプションにアクセスするには、ナビゲーションウィンドウで [ **設定** ] ([security.microsoft.com/settings](https://security.microsoft.com/settings)) を選択してから、[ **microsoft 365 Defender**] を選択する方法もあります。
 
 >[!NOTE]
 >ナビゲーションウィンドウに **設定** が表示されない場合や、ページにアクセスできなかった場合は、アクセス許可とライセンスを確認してください。
@@ -84,11 +84,6 @@ Microsoft 365 セキュリティセンターの microsoft サポートに連絡�
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Id データの Microsoft Defender を取得する
 Microsoft 365 Defender を使用して Id データの Microsoft Defender を共有するには、Id 統合のための microsoft Cloud App Security と Microsoft Defender が有効になっていることを確認してください。 [この統合に関する詳細情報](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
-
-## <a name="turn-off-microsoft-365-defender"></a>Microsoft 365 Defender をオフにする
-Microsoft 365 defender の使用を停止するには、microsoft 365 セキュリティセンターの [ **設定** ] の [microsoft  >  **365 Defender**  >  **オプトイン/オプトアウト** ] に移動します。 選択解除 **Microsoft 365 Defender をオンに** して、変更を適用します。
-
-対応する機能は、Microsoft 365 セキュリティセンターから削除されます。
 
 ## <a name="get-assistance"></a>サポートを利用する
 

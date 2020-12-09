@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 生産性スコアによるプライバシーの保護
-ms.openlocfilehash: db123042761b07ed64dd2dd94e783d65205e1460
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561516"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604328"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生産性スコアのプライバシー制御
 
@@ -73,7 +73,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>ユーザーエクスペリエンスをオプトアウトする機能
 
-また、生産性スコアの people エクスペリエンス領域をオプトアウトすることもできます。 脱退した場合、組織内のユーザーがこれらの指標を表示することはできません。また、コミュニケーション、会議、チームワーク、コンテンツコラボレーション、モビリティを含む計算から組織が削除されます。
+また、生産性スコアの people エクスペリエンス領域をオプトアウトすることもできます。 脱退した場合、組織内のユーザーがこれらの指標を表示することはできません。また、コミュニケーション、会議、チームワーク、コンテンツコラボレーション、モビリティを含む計算から組織が削除されます。 ユーザーエクスペリエンスレポートから組織を脱退するには、グローバル管理者である必要があります。
 
 Opt put:
 

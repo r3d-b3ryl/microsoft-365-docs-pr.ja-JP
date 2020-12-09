@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、特定のスプーフィングされた送信者を許可またはブロックする Exchange Online Protection (EOP) のスプーフィングインテリジェンスについて学ぶことができます。
-ms.openlocfilehash: 9168d43e6e5544ad3454729afc8140642deba0ef
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bc8ae2664acf96ea6cd4c20c2f9195db9b75b3da
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572731"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602123"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>EOP でスプーフィングインテリジェンスを構成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "49572731"
 
 Exchange online またはスタンドアロンの exchange Online Protection (EOP) 組織にメールボックスがあり、Exchange Online メールボックスを使用していない場合、受信電子メールメッセージは2018年10月の間に EOP によって自動的に保護されます。365 EOP は、組織のフィッシングに対する全体的な防衛の一環としてスプーフィングインテリジェンスを使用します。 詳細については、「 [EOP でのスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
 
-送信者が電子メールアドレスをスプーフすると、組織のドメインのいずれかのユーザー、または組織に電子メールを送信する外部ドメインのユーザーのように見えます。 スパムやフィッシング詐欺メールを送信するための送信者スプーフィングを行う攻撃者は、ブロックする必要があります。 しかし、正当な送信者がスプーフィングになっているシナリオもあります。 例:
+送信者が電子メールアドレスをスプーフすると、組織のドメインのいずれかのユーザー、または組織に電子メールを送信する外部ドメインのユーザーのように見えます。 スパムやフィッシング詐欺メールを送信するための送信者スプーフィングを行う攻撃者は、ブロックする必要があります。 しかし、正当な送信者がスプーフィングになっているシナリオもあります。 以下に例を示します。
 
 - 内部ドメインのスプーフィングの正当なシナリオ:
 
@@ -65,8 +65,8 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 
   **注**:
 
-  - Microsoft 365 管理センターで対応する Azure Active Directory の役割にユーザーを追加すると、セキュリティ & コンプライアンスセンター _および_ microsoft 365 の他の機能に対するアクセス許可で必要なアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **表示のみの組織の管理** 役割グループは、機能への読み取り専用アクセス権も付与します。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - スプーフィングインテリジェンスに推奨される設定については、「 [EOP default フィッシング対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)」を参照してください。
 
@@ -103,7 +103,7 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 
      - [ **外部ドメイン** ] タブの値には、完全な電子メールアドレスではなく、偽装されたユーザーのドメインが含まれています。
 
-   - [**インフラストラクチャの送信**]: 送信元の電子メールサーバーの IP アドレスの逆引き DNS 参照 (PTR レコード) にあるドメイン、またはソースに PTR レコードがない場合は ip アドレス。
+   - **インフラストラクチャの送信**: 送信元の電子メールサーバーの IP アドレスの逆引き DNS 参照 (PTR レコード) にあるドメイン。 送信元 IP アドレスに PTR レコードがない場合は、送信元のインフラストラクチャが \<source IP\> /24 (たとえば、192.168.100.100/24) として識別されます。
 
      メッセージソースとメッセージ送信者の詳細については、「 [電子メールメッセージの標準の概要](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)」を参照してください。
 
@@ -112,22 +112,18 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
    - **ユーザーの苦情**: 過去30日間にこの送信者に対してユーザーが提出した苦情。 通常、苦情は Microsoft への迷惑メール送信の形式です。
 
    - **認証結果**: 次のいずれかの値です。
-
       - **成功**: 送信者が送信者の電子メール認証チェック (SPF または dkim) を通過しました。
       - **失敗** しました。送信者は EOP の認証チェックに失敗しました。
       - **Unknown**: これらのチェックの結果は不明です。
 
    - **Decision set by**: 送信インフラストラクチャがユーザーのスプーフィングを許可されているかどうかを示します。
-
        - **スプーフィングインテリジェンスポリシー** (自動)
        - **管理者** (手動)
 
    - **最終表示** 日: 偽装されたユーザーを含む送信元インフラストラクチャからメッセージが受信された最後の日付。
 
    - **スプーフィングが許可されますか?**: ここに表示される値は次のとおりです。
-
      - **Yes**: スプーフィングされたユーザーと送信インフラストラクチャの組み合わせからのメッセージが許可され、スプーフィングされた電子メールとして扱われることはありません。
-
      - **いいえ**: スプーフィングされたユーザーと送信元インフラストラクチャの組み合わせからのメッセージは、スプーフィングとしてマークされます。 このアクションは、既定のフィッシング対策ポリシーまたはカスタムのマルウェア対策ポリシーによって制御されます (既定値は **[迷惑メールフォルダーにメッセージを移動** します)]。 詳細については、次のセクションを参照してください。
 
      - **一部のユーザー** ([**自分のドメイン** ] タブのみ): 送信元のインフラストラクチャは複数のユーザーをスプーフィングしています。これには、一部のスプーフィングされたユーザーが許可されています。 特定のアドレスを表示するには、[ **詳細** ] タブを使用します。
