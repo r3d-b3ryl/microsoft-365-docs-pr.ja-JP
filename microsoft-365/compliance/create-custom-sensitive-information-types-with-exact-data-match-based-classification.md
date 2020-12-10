@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 229eb733af85ea5f450969c6d70709cfadcb8f06
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: b120e2bffa4554fb435fe8de2e22d6de2f851544
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681775"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604339"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -59,7 +59,7 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
-この記事で説明されているタスクを実行するには、全体管理者、コンプライアンス管理者、または Exchange Online 管理者である必要があります。 DLP アクセス許可の詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
+この記事で説明されているタスクを実行するには、全体管理者、コンプライアンス管理者、または Exchange Online の管理者である必要があります。 DLP アクセス許可の詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
 これらのサブスクリプションには、EDM ベースの分類が含まれています
 
@@ -104,11 +104,13 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
 2. EDM ベースの分類に使用されるフィールドの名前が 1 行目に含まれるように、.csv ファイル内の機密データを構成します。 .csv ファイルには、"ssn"、"birthdate"、"firstname"、"lastname" のフィールド名がある可能性があります。 列見出しの名前にスペースやアンダースコアを含めることはできません。 たとえば、この記事で使用するサンプルの .csv ファイルは *PatientRecords.csv* と呼ばれており、その列には *PatientID*、*MRN*、*LastName*、*FirstName*、*SSN* などが含まれています。
 
+3. 機密データ フィールドの形式に注意してください。 特に、コンテンツにカンマが含まれている可能性のあるフィールド (たとえば、"シアトル, WA" の値を含むストリート アドレス) は、EDM ツールによって解析されるときに、2 つの別のフィールドとして解析されます。 この問題を回避するには、機密データ テーブル内の該当するフィールドが一重引用符または二重引用符で確実に囲まれているようにすることが必要です。 カンマを含むフィールドにスペースが含まれている可能性がある場合は、カスタムの機密情報の種類を作成する必要があります。それは、対応する書式 (コンマとスペースを含む複数の単語を含む文字列) と一致しており、ドキュメントがスキャンされたときに文字列が正しく合致したことを確認します。
+
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>機密情報のデータベースのスキーマを定義する
 
-3. 機密情報のデータベースのスキーマを XML 形式で定義します (次の例と同様)。 このスキーマ ファイルの名前を **edm.xml** にして、データベースの各列に対して構文を使用する行があるように構成します。 
+1. 機密情報のデータベースのスキーマを XML 形式で定義します (次の例と同様)。 このスキーマ ファイルの名前を **edm.xml** にして、データベースの各列に対して構文を使用する行があるように構成します。 
 
-      `\<Field name="" searchable=""/\>`
+      `\<Field name="" searchable=""/\>`.
 
       - *Field name* の値に列名を使用します。
       - *searchable="true"* を使用して、最大 5 つのフィールドで検索可能にします。 少なくとも 1 つのフィールドは検索可能である必要があります。
@@ -446,7 +448,7 @@ just copy SALT over in a secure fashion
 
 例: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
 
-**ProcessingInProgress** にある状態を確認します。 状態が**完了**に変わるまで、数分ごとにご確認ください。 状態が完了になれば、EDM データはいつでも使用することができます。
+**ProcessingInProgress** にある状態を確認します。 状態が **完了** に変わるまで、数分ごとにご確認ください。 状態が完了になれば、EDM データはいつでも使用することができます。
 
 #### <a name="separate-hash-and-upload"></a>ハッシュ化とアップロードを分離する
 
@@ -640,4 +642,3 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [DLP ポリシーの概要](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
-

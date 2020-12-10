@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
-ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 038d3326df2572f792f1cfc7efa6ad6d03e0a602
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130853"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611366"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -148,8 +148,6 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 - **[メッセージのプレビュー]**: 表示されるポップアップ ウィンドウで、次のいずれかのオプションを選択します。
   - **[ソースを表示]**: すべてのリンクが無効になったメッセージ本文の HTML バージョンを表示します。
   - **[テキスト表示]**: プレーン テキストでメッセージ本文を表示します。
-
-- **[メッセージをダウンロード]**: 表示されるポップアップ ウィンドウで、**[このメッセージをダウンロードするリスクを理解しています]** を選択して、メッセージのローカル コピーを .eml 形式で保存します。
 
 - **[検疫から削除]**: 表示される警告で **[はい]** をクリックすると、メッセージは直ちに削除されます。
 

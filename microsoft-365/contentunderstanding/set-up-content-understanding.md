@@ -2,6 +2,7 @@
 title: SharePoint Syntex の設定
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
@@ -10,12 +11,12 @@ ms.collection: enabler-strategic
 search.appverid: MET150
 localization_priority: Priority
 description: Project Cortex のコンテンツ理解をセットアップする
-ms.openlocfilehash: dfbcc8e41a28e3107b58ac6b8d471e3a2a08d036
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 1abcc71200642de3f74a92e83299e079ffffb038
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087573"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604270"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -23,12 +24,12 @@ ms.locfileid: "49087573"
 
 事前に、次のことを考慮します。
 
-- Which SharePoint sites will you enable form processing? All of them, some, or select sites?
+- フォームの処理を有効にする SharePoint サイトはどれですか? これらのすべて、それともサイトのいくつかを選択しますか?
 - 既定のコンテンツセンターの名前を何にしますか?
 
 Microsoft 365管理センターでの最初のセットアップの後でも設定を変更できます。
 
-Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
+設定する前に、使用している環境のコンテンツ解釈をセットアップして構成する最適な方法を計画してください。 たとえば、次の名前について考慮する必要があります。
 
 - フォームの処理を有効にする SharePoint サイト (すべてのサイト、一部、または選択したサイト)
 - コンテンツセンターと、プライマリサイト管理者の名前
@@ -51,7 +52,7 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
     > [!div class="mx-imgBorder"]
     > ![セットアップを開始する](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
+4. [ **フォーム処理の構成**] ページで、特定の SharePoint ドキュメントライブラリにユーザーがフォーム処理モデルを作成できるようにするかどうかを選択できます。 ドキュメントライブラリのリボンには、メニューオプションが用意されています。これを有効にしている SharePoint ドキュメントライブラリで  **フォーム処理モデルを作成** します。
  
      **どの SharePoint ライブラリがフォーム処理モデルを作成するためのオプションを表示するようにするか** については、次を選択できます。</br>
       - **すべての SharePoint ライブラリ** は、組織内のすべての SharePoint ライブラリで使用できるようにします。</br>
@@ -68,18 +69,18 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 
     1. [**サイト名**] に、コンテンツ センター サイトの名前を入力します。
     
-    1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
+    1. [ **サイトアドレス** には、サイト名に選択した内容に基づいて、サイトの URL が表示されます。 変更する場合は、[ **編集**] をクリックします。
 
        > [!div class="mx-imgBorder"]
        > ![コンテンツ センターを作成する](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        [**次へ**] を選択します。
 
-6. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
+6. [ **確認と完了**] ページで、選択した設定を確認して、変更を行うことができます。 選択内容に問題がない場合は、[**ライセンス認証**]を行います。
 
 7. [確認]ページで、 **[完了]** をクリックします。
 
-8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+8. **コンテンツ理解の自動作成** ページに戻ります。 このページでは、[ **管理** ] を選択して、構成設定に変更を加えることができます。 
 
 ## <a name="assign-licenses"></a>ライセンスを割り当てる
 
@@ -91,9 +92,9 @@ SharePoint Syntex を構成したら、SharePoint Syntex機能を使用するユ
 
 2. ライセンスを付与するユーザーを選択し、[ **製品ライセンスの管理**] をクリックします。
 
-3. **[さらに割り当てる]** を選択します。
+3. [**もっと割り当てる**] を選択します。
 
-4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
+4. **[SharePoint Syntex]** を選択します。 **[アプリ]** で、**Common Data Service for SharePoint Syntex**、**SharePoint Syntex**、**SharePoint Syntex - SPO type** がすべて選択されていることを確認します。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 管理センターの SharePoint Syntex ライセンス](../media/content-understanding/sharepoint-syntex-licenses.png)
@@ -102,7 +103,7 @@ SharePoint Syntex を構成したら、SharePoint Syntex機能を使用するユ
 
 ## <a name="ai-builder-credits"></a>AI ビルダークレジット
 
-If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
+組織に300以上のSharePoint Syntex用 SharePoint Syntexライセンスがある場合は、100万のAI Builder クレジットが割り当てられます。 ライセンス数が300未満の場合、フォーム処理を使用するには、AI ビルダークレジットを購入する必要があります。
 
 Ai builder の容量は、[ [AI ビルダー電卓](https://powerapps.microsoft.com/ai-builder-calculator)を使用して見積もることができます。
 

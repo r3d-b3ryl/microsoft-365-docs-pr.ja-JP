@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
-ms.openlocfilehash: 57d6dc8d9c1935578db15abdbb3e17e72bb64257
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: cae99cce070e6dc362dc678c153074fee53ca6a6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130831"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616718"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -84,13 +84,13 @@ Microsoft では、2 種類のスプーフィングされたメッセージを�
 - **組織内スプーフィング**: _自己完結型_ スプーフィングとも呼ばれます。 以下に例を示します。
 
   - 送信者と受信者は同じドメインにあります。
-    > From: chris@contoso.com <br/> To: michelle@contoso.com
+    > From: chris@contoso.com <br> To: michelle@contoso.com
 
   - 送信者と受信者は同じドメインのサブドメインにあります。
-    > From: laura@marketing.fabrikam.com <br/> To: julia@engineering.fabrikam.com
+    > From: laura@marketing.fabrikam.com <br> To: julia@engineering.fabrikam.com
 
   - 送信者と受信者は同じ組織に属する異なるドメインに属しています (つまり、両方のドメインが同じ組織内の[承認済みドメイン](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)として構成されています)。
-    > From: sender @ microsoft.com <br/> To: recipient @ bing.com
+    > From: sender @ microsoft.com <br> To: recipient @ bing.com
 
     スパムボットの収集活動を阻止するために、メールアドレスにスペースが使用されます。
 
@@ -105,7 +105,7 @@ Microsoft では、2 種類のスプーフィングされたメッセージを�
   - SFTY はメッセージの安全レベルです。 9 はフィッシング詐欺、11 は組織内スプーフィングを示します。
 
 - **クロスドメイン スプーフィング**: 送信者ドメインと受信者ドメインは異なり、互いに関係がありません (外部ドメインとも呼ばれます)。 以下に例を示します。
-    > From: chris@contoso.com <br/> To: michelle@tailspintoys.com
+    > From: chris@contoso.com <br> To: michelle@tailspintoys.com
 
   クロスドメイン スプーフィングのために[複合認証](email-validation-and-authentication.md#composite-authentication)に失敗したメッセージには、次のヘッダー値が含まれます。
 
@@ -125,7 +125,7 @@ DMARC の詳細については、「[DMARC を使用して Microsoft 365 でメ�
 
 EOP 組織は、セキュリティ/コンプライアンス センターのレポート ダッシュボードの **スプーフィング検出** レポートを利用できます。 詳細については、「[スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
 
-Microsoft Defender for Office 365 組織は、セキュリティ/コンプライアンス センターで脅威エクスプローラーを使用して、フィッシング詐欺に関する情報を表示できます。 詳細については、「[Microsoft 365 脅威の調査と対応](office-365-ti.md)」をご覧ください。
+Microsoft Defender for Office 365 組織は、セキュリティ/コンプライアンス センターで脅威エクスプローラーを使用して、フィッシング詐欺に関する情報を表示できます。 詳細については、「[Microsoft 365 脅威の調査および対応](office-365-ti.md)」をご覧ください。
 
 ## <a name="problems-with-anti-spoofing-protection"></a>スプーフィング対策保護の問題
 
@@ -133,11 +133,11 @@ Microsoft Defender for Office 365 組織は、セキュリティ/コンプライ
 
 たとえば、Gabriela Laureano (glaureano @ contoso.com) はバード ウォッチングに興味があり、メーリングリスト birdwatchers @ fabrikam.com に参加し、リストに次のメッセージを送信します。
 
-> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br/> **件名:** 今週、レーニア山からアオカケス を見ることができます <p> 今週、レーニア山からの風景を 眺めてみませんか?
+> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **件名:** 今週、レーニア山からアオカケス を見ることができます <p> 今週、レーニア山からの風景を 眺めてみませんか?
 
 メーリングリスト サーバーはメッセージを受信し、その内容を変更して、リストのメンバーにリプレイします。 リプレイされたメッセージの From アドレス (glaureano @ contoso.com) は同じですが、件名行にタグを追加して、メッセージの下側にフッターを追加します。 この種の変更は、メーリング リストでは一般的なものですが、スプーフィングの誤検出の原因になることがあります。
 
-> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br/> **件名:** [BIRDWATCHERS] 今週、レーニア山からアオカケス を見ることができます <p> 今週、レーニア山からの風景を 眺めてみませんか? <p> このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
+> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **件名:** [BIRDWATCHERS] 今週、レーニア山からアオカケス を見ることができます <p> 今週、レーニア山からの風景を 眺めてみませんか? <p> このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
 
 メーリング リストのメッセージがスプーフィング対策チェックにパスできるようにするには、メーリングリストを制御するかどうかに応じて、次の手順を実行します。
 

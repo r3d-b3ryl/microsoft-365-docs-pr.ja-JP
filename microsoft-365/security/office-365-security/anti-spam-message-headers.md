@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Exchange Online Protection (EOP) によってメッセージに追加されるヘッダー フィールドについて学習することができます。 これらのヘッダー フィールドは、メッセージとそのメッセージがどのように処理されたかについての情報を提供します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f54ffad5107e0de00b0098d5f347ab37ae92d80
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: bb3b2eb9e4ce4a63d4bef276dde9e19b491aae53
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123474"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615542"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
 
@@ -60,7 +60,7 @@ ms.locfileid: "49123474"
 |フィールド|説明|
 |---|---|
 |`ARC`|`ARC` プロトコルには次のフィールドがあります。 <ul><li>`AAR`: DMARC からの **Authentication-results** ヘッダーのコンテンツを記録します。</li><li>`AMS`: メッセージの暗号化署名が含まれます。</li><li>`AS`: メッセージ ヘッダーの暗号化署名が含まれます。 このフィールドには、`"cv="` と呼ばれるチェーン検証のタグが含まれます。チェーン検証の結果は、**none**、**pass**、または **fail** として含まれています。</li></ul>|
-|`CAT:`|メッセージに適用される保護ポリシーです。 <ul><li>`BULK`: バルク</li><li>`DIMP`: ドメインの偽装</li><li>`GIMP`: [メールボックス インテリジェンスに基づく偽装](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` または `HPHISH`: 高精度フィッシング詐欺</li><li>`HSPM`: 高確度迷惑メール</li><li>`MALW`: マルウェア</li><li>`PHSH`: フィッシング詐欺</li><li>`SPM`: スパム</li><li>`SPOOF`: スプーフィング</li><li>`UIMP`: ユーザーの偽装</li><li>`AMP`: マルウェア対策</li><li>`SAP`: 添付ファイル保護</li><li>`OSPM`: 送信スパム</li></ul><br/>受信メッセージには、複数の種類の保護と複数の検出スキャンによりフラグが付けられる場合があります。 ポリシーの優先度はそれぞれ異なり、優先度が最も高いポリシーが最初に適用されます。 詳細については、「[複数の保護方法および検出スキャンがメールで実行される場合に適用されるポリシー](how-policies-and-protections-are-combined.md)」を参照してください。|
+|`CAT:`|メッセージに適用される保護ポリシーです。 <ul><li>`BULK`: バルク</li><li>`DIMP`: ドメインの偽装</li><li>`GIMP`: [メールボックス インテリジェンスに基づく偽装](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` または `HPHISH`: 高精度フィッシング</li><li>`HSPM`: 高確度迷惑メール</li><li>`MALW`: マルウェア</li><li>`PHSH`: フィッシング詐欺</li><li>`SPM`: スパム</li><li>`SPOOF`: スプーフィング</li><li>`UIMP`: ユーザーの偽装</li><li>`AMP`: マルウェア対策</li><li>`SAP`: 添付ファイル保護</li><li>`OSPM`: 送信スパム</li></ul> <p> 受信メッセージには、複数の種類の保護と複数の検出スキャンによりフラグが付けられる場合があります。 ポリシーの優先度はそれぞれ異なり、優先度が最も高いポリシーが最初に適用されます。 詳細については、「[複数の保護方法および検出スキャンがメールで実行される場合に適用されるポリシー](how-policies-and-protections-are-combined.md)」を参照してください。|
 |`CIP:[IP address]`|接続 IP アドレス。 この IP アドレスは、IP 許可一覧または IP 禁止一覧で使用できます。 詳細については、「[接続フィルターを構成する](configure-the-connection-filter-policy.md)」を参照してください。|
 |`CTRY`|接続 IP アドレスから特定される発信国ですが、発信元の送信 IP アドレスとは異なる可能性があります。|
 |`H:[helostring]`|接続メール サーバーの HELO または EHLO 文字列。|
@@ -70,9 +70,9 @@ ms.locfileid: "49123474"
 |`PTR:[ReverseDNS]`|逆引き DNS 参照とも呼ばれる、送信元の IP アドレスの PTR レコード。|
 |`SCL`|メッセージの SCL (Spam Confidence Level) です。 値が高いほど、メッセージがスパムである可能性が高くなります。 詳細については、「[Spam Confidence Level (SCL)](spam-confidence-levels.md)」を参照してください。|
 |`SFTY`|メッセージはフィッシングとして識別され、次のいずれかの値が付けられます。 <ul><li>9.1: 既定値。 メッセージには、フィッシング URL、他のフィッシング コンテンツ、またはオンプレミスの Exchange によってフィッシングとしてマークされた要素の一部またはすべてが含まれます。</li><li>9.11: [組織内または自己完結型のスプーフィング](anti-spoofing-protection.md#different-types-of-spoofing)。 組織内スプーフィングの安全性に関するヒントがメッセージに追加されます。</li><li>9.19: ドメインの偽装。 送信ドメインが、[保護されたドメインを偽装](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)しようとしています。 ドメイン偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li><li>9.20: ユーザーの偽装。 送信ユーザーが、受信者の組織内のユーザー、または Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーで指定されている保護ユーザーを偽装しようとしています。 ユーザー偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li><li>9.21: [クロスドメイン スプーフィング](anti-spoofing-protection.md#different-types-of-spoofing)。 メッセージはスプーフィング対策チェックにパスしませんでした。 差出人ヘッダー内の送信者のメール ドメインは認証されません。また、このドメインは外部ドメインです。 [複合認証](#authentication-results-message-header-fields)と組み合わせて使用されます。</li><li>9.22: ユーザーが、オーバーライドされた差出人セーフ リストを持っている点を除き、9.21 と同じです。 </li><li>9.23: ただし、組織が、オーバーライドされた許可された送信者またはドメインを持っている点を除き、9.22 と同じです。</li><li>9.24: ユーザーが、オーバーライドされた Exchange メール フロー ルール (トランスポート ルールとも呼ばれます) を持っている点を除き、9.23 と同じです。</li></ul>|
-|`SFV:BLK`|メッセージがユーザーの受信拒否リスト内のアドレスから送信されているため、フィルター処理が省略され、メッセージはブロックされました。<br/></br> 管理者がユーザーの受信拒否リストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
+|`SFV:BLK`|メッセージがユーザーの受信拒否リスト内のアドレスから送信されているため、フィルター処理が省略され、メッセージはブロックされました。 <p> 管理者がユーザーの受信拒否リストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
 |`SFV:NSPM`|スパム フィルタリングによって、メッセージがスパムではないとしてマークされ、メッセージは意図された受信者に送信されました。|
-|`SFV:SFE`|メッセージがユーザーの差出人セーフ リスト内のアドレスから送信されているため、フィルター処理が省略され、メッセージは許可されました。<br/></br> 管理者がユーザーの信頼できる差出人のリストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
+|`SFV:SFE`|メッセージがユーザーの差出人セーフ リスト内のアドレスから送信されているため、フィルター処理が省略され、メッセージは許可されました。 <p> 管理者がユーザーの信頼できる差出人のリストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
 |`SFV:SKA`|送信者がスパム対策ポリシーの許可された送信者リストまたは許可されたドメイン リストに含まれるため、メッセージはスパム フィルタリングが省略され、受信トレイに配信されました。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
 |`SFV:SKB`|メッセージは、スパム対策ポリシーの受信拒否リストまたはブロックされているドメイン リスト内の送信者と一致したため、スパムとしてマークされました。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
 |`SFV:SKI`|SFV:SKN と同様に、メッセージは別の理由 (例: テナント内の組織内メールなど) でスパム フィルタリングが省略されました。|
