@@ -125,9 +125,6 @@
           items:
             - name: デバイス一覧レポート
               href: working-with-managed-desktop/device-inventory-report.md
-        - name: 分析情報を操作する
-          href: working-with-managed-desktop/insights.md
-          items:
             - name: 使用状況の分析情報
               href: working-with-managed-desktop/usage-insights.md
             - name: 信頼性の分析情報
