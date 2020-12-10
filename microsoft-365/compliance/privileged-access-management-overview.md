@@ -1,12 +1,13 @@
 ---
-title: 特権アクセス管理
-f1.keywords:
-- NOCSH
+title: 特権アクセス管理の詳細
+description: この記事では、よく寄せられる質問 (Faq) に対する回答を含む、Microsoft 365 での特権アクセス管理の概要について説明します。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: overview
+f1.keywords:
+- NOCSH
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,16 +20,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.assetid: ''
-description: この記事では、よく寄せられる質問 (Faq) に対する回答を含む、Microsoft 365 での特権アクセス管理の概要について説明します。
-ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: dc7c6807e8c89b4146784e5be7f57472777a4c84
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341235"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613331"
 ---
-# <a name="privileged-access-management"></a>特権アクセス管理
+# <a name="learn-about-privileged-access-management"></a>特権アクセス管理の詳細
 
 特権アクセスの管理では、Office 365 の特権的管理タスクを細かくアクセス制限できます。 これは、機密データや重要な構成設定への継続的なアクセス権を持つ既存の特権管理アカウントが使用される違反から組織を保護するために役立ちます。 特権アクセス管理では、ユーザーはジャストインタイムアクセスを要求して、高度に範囲指定された、時間の制限のある承認ワークフローを通じて、昇格された権限のあるタスクを完了させる必要があります。 この構成では、機密性の高いデータや重要な構成の設定を危険にさらすことなくタスクが行えるように、ユーザーに十分なアクセス権が与えられます。 Microsoft 365 で特権アクセス管理を有効にすることで、組織はゼロに立った権限で運用し、管理者アクセスの脆弱性に対する防御層を提供できます。
 

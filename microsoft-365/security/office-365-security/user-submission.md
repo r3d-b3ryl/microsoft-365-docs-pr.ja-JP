@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、ユーザーによって報告されたスパムやフィッシング電子メールを収集するようにメールボックスを構成する方法について説明します。
-ms.openlocfilehash: 31249ab930c44d84f27efac95d8e57bd88d9742f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7064e2d26722c433d33fe2f983484a40fa33c1e6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130901"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615626"
 ---
 # <a name="user-submissions-policy"></a>ユーザー送信ポリシー
 
@@ -51,7 +51,7 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
 
 - カスタムメールボックス内のマルウェアの添付ファイルのスキャンを無効にします。 「 [Set Up Safe attachments policy In Defender In Office 365」](set-up-atp-safe-attachments-policies.md)を使用して、「**安全な添付ファイルの不明なマルウェア応答** の設定を **オフ** にした安全な添付ファイルのポリシーを作成します。
 
-- カスタムメールボックス内のメッセージに対する URL スキャンを無効にします。 「 [Set Up Safe links policy In Office 365」](set-up-atp-safe-links-policies.md)を使用して安全リンクポリシーを作成し **Off** 、 **[メッセージ内の不明な悪意のある Url に対するアクションを選択** します。
+- カスタムメールボックス内のメッセージに対する URL スキャンを無効にします。 「 [Set Up Safe links policy In Office 365」](set-up-atp-safe-links-policies.md)を使用して安全リンクポリシーを作成し 、 **[メッセージ内の不明な悪意のある Url に対するアクションを選択** します。
 
 - マルウェア対策ポリシーを作成して、マルウェアのゼロ時間の自動削除を無効にします。 **マルウェアのゼロ時間自動削除** を **オフ** に設定するに [は、「セキュリティ & コンプライアンスセンターを使用してマルウェア対策ポリシーを作成する」を](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)参照してください。
 
@@ -72,7 +72,7 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>セキュリティ & コンプライアンスセンターを使用してユーザー送信メールボックスを構成する
 
-1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** ポリシーのユーザーの送信] に移動 \> **Policy** \> **User submissions** します。
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** ポリシーのユーザーの送信] に移動 \>  \> します。
 
 2. 表示される [ **ユーザーの送信** ] ページで、次のいずれかのオプションを選択します。
 
@@ -99,7 +99,7 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
         - **カスタムメールボックス**: 表示されるボックスに、既存の Exchange Online メールボックスの電子メールアドレスを入力します。 配布グループは許可されていません。 このオプションを使用するのは、最初に分析のために管理者またはセキュリティ操作チームのみにメッセージを移動する場合です。 管理者が自分を転送しない限り、メッセージは Microsoft には送られません。
 
         > [!NOTE]
-        > 米国政府機関 (GCC、GCC、.H、DoD) は、 **カスタムメールボックス** のみを構成できます。 他の2つのオプションは無効になっています。 
+        > 米国政府機関 (GCC、GCC、.H、DoD) は、 **カスタムメールボックス** のみを構成できます。 他の2つのオプションは無効になっています。
 
       完了したら、[ **確認**] をクリックします。
 

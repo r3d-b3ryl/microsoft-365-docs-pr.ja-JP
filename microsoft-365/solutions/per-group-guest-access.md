@@ -1,5 +1,5 @@
 ---
-title: ゲストユーザーを特定のグループに追加できないようにする
+title: 特定のグループにゲストが追加されないようにする
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: ゲストユーザーが特定のグループに追加されないようにする方法について説明します。
-ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+description: 特定のグループにゲストが追加されないようにする方法について説明します。
+ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651352"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613058"
 ---
-# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>ゲストユーザーが特定の Microsoft 365 グループまたは Microsoft Teams チームに追加されないようにする
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>特定の Microsoft 365 グループまたは Microsoft Teams チームにゲストが追加されないようにする
 
 ほとんどのグループおよびチームへのゲストアクセスを許可するが、ゲストアクセスを禁止する場所がある場合は、個々のグループおよびチームのゲストアクセスをブロックすることができます。 (チームへのゲストアクセスをブロックするには、関連するグループへのゲストアクセスをブロックすることによって行います)。これにより、新しいゲストは追加されませんが、グループまたはチームに既に存在するゲストは削除されません。
 
@@ -69,7 +69,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
   
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>ゲストのドメインに応じてゲスト アクセスを許可またはブロックする
 
-特定のドメインを使用しているゲスト ユーザーを許可またはブロックできます。たとえば、自分の会社 (Contoso) が他の会社 (Fabrikam) とパートナーシップを結んでいる場合、許可リストに Fabrikam を追加し、ユーザーが自分のグループにそれらのゲストを追加できるようにすることができます。
+特定のドメインを使用しているゲストを許可またはブロックすることができます。 たとえば、ビジネス (Contoso) が別のビジネス (Fabrikam) とパートナーシップを持っている場合は、Fabrikam を許可リストに追加して、ユーザーが自分のグループにそのゲストを追加できるようにすることができます。
 
 詳細については、「[B2B ユーザーに対する特定組織からの招待を許可またはブロックする](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)」を参照してください。
 
@@ -77,7 +77,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 既定では、ゲストは Exchange グローバル アドレス一覧に表示されません。 グローバル アドレス一覧にゲストを表示するには、次の手順を使用します。
 
-ゲスト ユーザーの ObjectID を検索するには、次を実行します。
+を実行して、ゲストの ObjectID を検索します。
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"
@@ -89,7 +89,11 @@ Get-AzureADUser -Filter "userType eq 'Guest'"
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-topics"></a>関連項目
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
 
 [グループ メンバーシップを Microsoft 365 管理センターから管理する](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)
   

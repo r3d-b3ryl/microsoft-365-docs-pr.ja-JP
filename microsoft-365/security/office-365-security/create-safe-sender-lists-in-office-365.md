@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で受信メッセージを許可するための使用可能なオプションと優先するオプションについて学ぶことができます。
-ms.openlocfilehash: 6d862f0ed6d6bbea56cb2bb79fee69a044e4fede
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 71c413cdf3f9a189420c33953d7bce41362ab6a9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130795"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616634"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP での差出人セーフリストの作成
 
@@ -61,12 +61,12 @@ Exchange Online およびスタンドアロン EOP のメールフロールー�
 
 2. 次のいずれかの設定を構成します。
 
-   - **メールフロールールの条件**:**メッセージヘッダーには、** 次 \> **のいずれかの単語ヘッダー名が含まれてい** ます。 \> **Header name** `Authentication-Results` \> **ヘッダー値**: `dmarc=pass` または `dmarc=bestguesspass` 。
+   - **メールフロールールの条件**:**メッセージヘッダーには、** 次 \> **のいずれかの単語ヘッダー名が含まれてい** ます。 \>  `Authentication-Results` \> **ヘッダー値**: `dmarc=pass` または `dmarc=bestguesspass` 。
 
      この条件は、送信側の電子メールドメインの電子メール認証状態をチェックして、送信側ドメインがスプーフィングされていないことを確認します。 電子メール認証の詳細については、「 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [dkim](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)」を参照してください。
 
    - **IP 許可一覧**: 接続フィルターポリシーの送信元 IP アドレスまたはアドレス範囲を指定します。
-  
+
      送信ドメインが電子メール認証を使用しない場合は、この設定を使用します。 IP 許可一覧の送信元 IP アドレスに関して、できる限り制限されたものにします。 IP アドレスの範囲を/24 以下にすることをお勧めします (less の方が望ましい)。 コンシューマーサービス (たとえば、outlook.com) または共有インフラストラクチャに属する IP アドレス範囲を使用しないでください。
 
    > [!IMPORTANT]
@@ -89,7 +89,7 @@ Exchange Online およびスタンドアロン EOP のメールフロールー�
 
    b. **メッセージのプロパティ** \> を変更する **メッセージヘッダーを設定** する: **メッセージヘッダー** \<CustomHeaderName\> **を値に** 設定 \<CustomHeaderValue\> します。
 
-      たとえば、`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'` のようにします。 ルールに複数のドメインがある場合は、ヘッダーテキストを必要に応じてカスタマイズできます。
+      たとえば、`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'` などです。 ルールに複数のドメインがある場合は、ヘッダーテキストを必要に応じてカスタマイズできます。
 
       メールフロールールによってスパムフィルター処理がスキップされると、値の `SFV:SKN` 値は **スパム対策** ヘッダーにスタンプされます。 メッセージが IP 許可一覧にあるソースからのものである場合は、その値 `IPV:CAL` も追加されます。 これらの値は、トラブルシューティングに役立ちます。
 

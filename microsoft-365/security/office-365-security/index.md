@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Office 365 のセキュリティ。 Office 365 プラン1および2では、EOP から Defender に、標準のセキュリティ構成と厳密に比較します。 現在の状況と、プロパティをセキュリティで保護する方法について理解します。
-ms.openlocfilehash: 008488149a403fdafef9de0b0f64a9a43616debe
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 84d7dcfc68ce78bfde92f3d7096cd4104355ce94
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357757"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616250"
 ---
 # <a name="office-365-security-overview"></a>Office 365 のセキュリティの概要
 
@@ -124,16 +124,16 @@ Microsoft Defender for Office 365 P1 と P2 の詳細については、 **[こ�
 
 |Office 用 Defender 365 プラン1|Office 用 Defender 365 プラン2|
 |---|---|
-|構成、保護、および検出機能: <ul><li>[添付ファイル保護](atp-safe-attachments.md)</li><li>[リンク保護](atp-safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)</li><li>[Office 365 の Defender でのフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Office 用 Defender (365 プラン 1) の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:</li><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレータ](attack-simulator.md)</li></ul>|
+|構成、保護、および検出機能: <ul><li>[添付ファイル保護](atp-safe-attachments.md)</li><li>[リンク保護](atp-safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)</li><li>[Office 365 の Defender でのフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Office 用 Defender (365 プラン 1) の機能 <p> --- プラスのもの --- <p> 自動化、調査、修復、教育の機能: <ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレータ](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender for Office 365 プラン2は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 に含まれています。
 
-- Microsoft Defender for Office 365 プラン 1 は、Microsoft 365 Business Premium に含まれています。
+- Microsoft Defender for Office 365 プラン1は、Microsoft 365 Business Premium に含まれています。
 
 - Microsoft Defender for Office 365 プラン1および Defender for Office 365 プラン2は、それぞれ特定のサブスクリプションのアドオンとして利用できます。 詳細については、 [office 365 プランの Microsoft Defender で利用できる](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)もう1つのリンク機能を参照してください。
 
-- [安全なドキュメント](safe-docs.md)機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティ ライセンス (Microsoft Defender for Office 365 プランには含まれません) を持つユーザーのみが利用できます。
+- [ [安全なドキュメント](safe-docs.md) ] 機能は、Microsoft 365 e5 または Microsoft 365 E5 セキュリティライセンスを持つユーザーのみが使用できます (microsoft Defender for Office 365 プランには含まれていません)。
 
 - 現在のサブスクリプションに Microsoft Defender for Office 365 が含まれておらず、これを必要としている場合は、 [販売に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)し、microsoft Defender for office 365 が組織内でどのように動作するかを確認してください。
 

@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357239"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615554"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -41,7 +41,7 @@ ms.locfileid: "49357239"
 > [!TIP]
 > Microsoft Defender for Office 365 はまだお持ちではありませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。
 
-## <a name="november-2020"></a>2020 年 11 月
+## <a name="november-2020"></a>2020年11月
 
 - 「レビュー > アクションセンターでのメール送信およびアクションログからの修復 > の更新のエクスポートの制限 (Office 365 プラン2の Defender の場合)」を参照してください。
 
@@ -56,7 +56,7 @@ ms.locfileid: "49357239"
 ## <a name="julyaugust-2020"></a>2020年7月/8 月
 
 - お[探しの環境が改善されました](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)(Microsoft Defender for Office 365 プラン1またはプラン 2)
-- [事前設定されたセキュリティポリシーを使用して推奨設定を簡単に適用する](preset-security-policies.md) 
+- [事前設定されたセキュリティポリシーを使用して推奨設定を簡単に適用する](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
@@ -71,7 +71,7 @@ ms.locfileid: "49357239"
   - 高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。
   - 詳細な時間フィルター (日、時間、半時間)
 
-- **インシデント** ウィジェットは、**アクションセンター** ウィジェットとなりました。 (セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[**脅威の管理**  >  ] に移動します。**レビュー**)(Microsoft Defender for Office 365 プラン 2)
+- **インシデント** ウィジェットは、**アクションセンター** ウィジェットとなりました。 (セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[ **脅威の管理** \> ] に移動します。 **レビュー**)(Microsoft Defender for Office 365 プラン 2)
 
 - [Microsoft 365 の安全なドキュメント](safe-docs.md) **(プレビュー)**
 
@@ -105,7 +105,7 @@ ms.locfileid: "49357239"
 
 - [フィッシング url に関するデータを表示し、[verdict] をクリックし](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) ます (Microsoft Defender for Office 365 プラン1またはプラン 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 プラン 1 およびプラン 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 プラン1およびプラン2
 
 Microsoft Defender for Office 365 は2つのプランで利用できることをご存知ですか? [各プランに含まれる内容について説明](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)します。
 

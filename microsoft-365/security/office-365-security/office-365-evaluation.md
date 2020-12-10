@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12b6499822f8ed97ace8468054f219361d925332
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: b5b095a1d75ead0f963a71d816e7d879b7cd3697
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562996"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614800"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の評価
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
->[!IMPORTANT]
->Microsoft Defender for Office 365 の評価はまもなく公開プレビューになります。このプレビュー版は、サービスレベル契約なしで提供されます。 一部の機能はサポートされていない場合や、制限された機能を備えている場合があります。
+> [!IMPORTANT]
+> Microsoft Defender for Office 365 の評価は、すぐにパブリックプレビューに表示されます。 このプレビュー版は、サービスレベル契約なしで提供されます。 一部の機能はサポートされていない場合や、制限された機能を備えている場合があります。
 
 包括的なセキュリティ製品の評価を実施することで、アップグレードと購入に関する情報を得られるようになります。 セキュリティ製品の機能を試して、毎日のタスクでセキュリティ運用チームをどのように支援するかを評価することができます。
 
@@ -73,7 +73,7 @@ Office 365 用の Microsoft Defender をサポートするライセンスをま�
 
 Microsoft Defender for Office 365 の試用版ライセンスを取得するには、 **課金管理者** ロールまたは **グローバル管理者ロール** を持っている必要があります。 グローバル管理者の役割を持つユーザーからアクセス許可を要求します。 [サブスクリプションとライセンスについて](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-適切な役割を持っている場合は、365 Microsoft Defender for Office 365 (Plan 2) の試用版ライセンスを取得するには、「Billing > Purchase services」にアクセスすることをお勧めします。 試用版には、30日間の無料試用版の25ライセンスが含まれています。 [Microsoft Defender For Office 365 (Plan 2) の試用版を取得](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)します。 
+適切な役割を持っている場合は、365 Microsoft Defender for Office 365 (Plan 2) の試用版ライセンスを取得するには、「Billing > Purchase services」にアクセスすることをお勧めします。 試用版には、30日間の無料試用版の25ライセンスが含まれています。 [Microsoft Defender For Office 365 (Plan 2) の試用版を取得](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)します。
 
 高度な脅威を監視して報告するための評価については、30日間のウィンドウが用意されています。 Office 365 の機能を完全に Defender 使用する場合は、有料サブスクリプションを購入するオプションもあります。
 
@@ -81,13 +81,14 @@ Microsoft Defender for Office 365 の試用版ライセンスを取得するに�
 
 評価モードで Office 365 の Defender をセットアップするには、Exchange Online の役割が必要です。 次の役割が必要です。
 
-|タスク | Role |
-|-----| -----|
-| 無料試用版を入手するか、Microsoft Defender for Office 365 (Plan 2) を購入する| 課金管理者の役割またはグローバル管理者の役割|
-| 評価ポリシーを作成する| [リモートドメインと承認済みドメイン] 役割セキュリティ管理者の役割|
-| 評価ポリシーの編集 | [リモートドメインと承認済みドメイン] 役割セキュリティ管理者の役割 |
-| 評価ポリシーを削除する | [リモートドメインと承認済みドメイン] 役割セキュリティ管理者の役割 |
-|評価レポートを表示する | セキュリティ管理者の役割またはセキュリティリーダーの役割|
+|タスク|Role|
+|---|---|
+|無料試用版を入手するか、Microsoft Defender for Office 365 (Plan 2) を購入する|課金管理者の役割またはグローバル管理者の役割|
+|評価ポリシーを作成する|[リモートドメインと承認済みドメイン] 役割セキュリティ管理者の役割|
+|評価ポリシーの編集|[リモートドメインと承認済みドメイン] 役割セキュリティ管理者の役割|
+|評価ポリシーを削除する|[リモートドメインと承認済みドメイン] 役割セキュリティ管理者の役割 |
+|評価レポートを表示する|セキュリティ管理者の役割またはセキュリティリーダーの役割|
+|
 
 ### <a name="enhanced-filtering"></a>拡張されたフィルター処理
 
@@ -107,7 +108,7 @@ Microsoft Defender for Office 365 の試用版ライセンスを取得するに�
 
 サポートされている電子メールルーティングのシナリオは次のとおりです。
 
-- **サードパーティのパートナーまたはオンプレミスのサービスプロバイダー**: 評価する受信コネクタがサードパーティプロバイダーを使用しているか、オンプレミスのメールセキュリティ用のソリューションを使用しています。  
+- **サードパーティのパートナーまたはオンプレミスのサービスプロバイダー**: 評価する受信コネクタがサードパーティプロバイダーを使用しているか、オンプレミスのメールセキュリティ用のソリューションを使用しています。
 - **Microsoft Exchange Online Protection のみ**: 評価するテナントは、電子メールのセキュリティに Office 365 を使用し、メール交換 (MX) レコードは Microsoft を指しています。
 
 ### <a name="email-security-gateway"></a>電子メールセキュリティゲートウェイ
@@ -154,7 +155,7 @@ Microsoft Defender for Office 365 評価レポートは、1日に1回生成さ�
 
 ## <a name="evaluate-capabilities"></a>機能を評価する
 
-評価レポートが生成された後、組織内の電子メールおよびコラボレーションワークスペースで、高度な脅威のリンク数、高度な脅威の添付ファイル、および潜在的な impersonations が特定されているかどうかを確認します。  
+評価レポートが生成された後、組織内の電子メールおよびコラボレーションワークスペースで、高度な脅威のリンク数、高度な脅威の添付ファイル、および潜在的な impersonations が特定されているかどうかを確認します。
 
 試用期間が終了したら、90日間レポートへのアクセスを続行できます。 ただし、これ以上情報は収集されません。 試用期間が終了した後に Microsoft Defender for Office 365 を引き続き使用する場合は、 [Microsoft defender For office 365 (Plan 2) の有料サブスクリプションを購入](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)してください。
 

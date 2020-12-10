@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) の送信スパムポリシーを表示、作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: 792cd44d1571c407477671c6223b8ec38ad9b7f8
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 237703d9ad6ed652a3feb4dda57a7af0e99240f7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572839"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614942"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパムフィルターを構成する
 
@@ -75,12 +75,12 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
   **注**:
 
-  - Microsoft 365 管理センターで対応する Azure Active Directory の役割にユーザーを追加すると、セキュリティ & コンプライアンスセンター _および_ microsoft 365 の他の機能に対するアクセス許可で必要なアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **表示のみの組織の管理** 役割グループは、機能への読み取り専用アクセス権も付与します。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 送信スパムポリシーの推奨設定については、「 [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)」を参照してください。
 
-- **電子メール送信の制限** が設定されている既定の [警告ポリシー](../../compliance/alert-policies.md) 、**疑わしい電子メール送信パターンが検出さ** れたこと、および電子メールが送信 **Global admins** を拒否したことによって、電子メール通知が通常の送信電子メールアクティビティやブロックされたユーザーについて **は、送信** スパムによる **もの** であることを示します。 詳細については、「制限され [たユーザーの通知設定を確認する](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)」を参照してください。 送信スパムポリシーの通知オプションではなく、これらのアラートポリシーを使用することをお勧めします。
+- **電子メール送信の制限** が設定されている既定の [警告ポリシー](../../compliance/alert-policies.md) 、**疑わしい電子メール送信パターンが検出さ** れたこと、および電子メールが送信を拒否したことによって、電子メール通知が通常の送信電子メールアクティビティやブロックされたユーザーについて **は、送信** スパムによる **もの** であることを示します。 詳細については、「制限され [たユーザーの通知設定を確認する](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)」を参照してください。 送信スパムポリシーの通知オプションではなく、これらのアラートポリシーを使用することをお勧めします。
 
 ## <a name="use-the-security--compliance-center-to-create-outbound-spam-policies"></a>セキュリティ & コンプライアンスセンターを使用して送信スパムポリシーを作成する
 
@@ -127,7 +127,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
      >
      > - この設定は、送信スパムポリシーから廃止されるプロセスです。
      >
-     > - ユーザーが [**受信者の制限**] セクションの制限を超えたためにユーザーがブロックされた **Global admins** 場合は、ユーザーによって [**送信メールが電子メール** によって制限されました] という名前の既定の [警告ポリシー](../../compliance/alert-policies.md)が、既に **tenantadmins** グループのメンバーに電子メール通知を送信します。 **送信スパムポリシーのこの設定ではなく、通知ポリシーを使用して、管理者およびその他のユーザーに通知することを強くお勧め** します。 手順については、「制限され [たユーザーの通知設定を確認する](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)」を参照してください。
+     > - ユーザーが [**受信者の制限**] セクションの制限を超えたためにユーザーがブロックされた場合は、ユーザーによって [**送信メールが電子メール** によって制限されました] という名前の既定の [警告ポリシー](../../compliance/alert-policies.md)が、既に **tenantadmins** グループのメンバーに電子メール通知を送信します。 **送信スパムポリシーのこの設定ではなく、通知ポリシーを使用して、管理者およびその他のユーザーに通知することを強くお勧め** します。 手順については、「制限され [たユーザーの通知設定を確認する](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)」を参照してください。
 
 5. オプション[ **受信者の制限** ] セクションを展開して、疑わしい送信電子メールメッセージの制限およびアクションを構成します。
 
@@ -173,7 +173,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
    - **自動システム制御**: 送信スパムフィルターを使用して、外部電子メールの自動転送を制御します。 これは既定の値です。
    - **オン**: ポリシーによって、自動外部電子メール転送が無効になっていません。
    - **Off**: すべての自動外部電子メール転送がポリシーによって無効にされています。
- 
+
 7. 要する[ **適用先** ] セクションを展開して、ポリシーが適用される内部送信者を特定します。
 
     各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<sender1\>_ または _\<sender2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<sender1\>_ かつ _\<member of group 1\>_) が適用されます。
@@ -250,7 +250,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
    - 最も低い優先度を持つカスタムの送信スパムポリシーには、上矢印アイコン ![ ](../../media/ITPro-EAC-UpArrowIcon.png) **n** ( ![ 上矢印アイコン ](../../media/ITPro-EAC-UpArrowIcon.png) **3**) の値が設定されています。
 
-   - ユーザー設定の送信スパムポリシーが3つ以上ある場合、最高の優先度と最も低い優先順位の間のポリシーは、上矢印アイコンの ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ 下矢印アイコン ](../../media/ITPro-EAC-DownArrowIcon.png) **n** (たとえば、 ![ 上矢印アイコンを下矢印アイコン 2) に設定し ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) **2** ます。
+   - ユーザー設定の送信スパムポリシーが3つ以上ある場合、最高の優先度と最も低い優先順位の間のポリシーは、上矢印アイコンの ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ 下矢印アイコン ](../../media/ITPro-EAC-DownArrowIcon.png) **n** (たとえば、 ![ 上矢印アイコンを下矢印アイコン 2) に設定し ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) ます。
 
 3. 上 ![矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) または ![下矢印アイコンをクリックして](../../media/ITPro-EAC-DownArrowIcon.png) を押して、カスタムの送信スパムポリシーを優先順位一覧で上または下に移動します。
 
@@ -289,8 +289,8 @@ PowerShell で送信スパムポリシーを作成するには、2つの手順�
 
 - ポリシーを作成するまでは、セキュリティ & コンプライアンスセンターでは使用できない PowerShell の新しい送信スパムフィルターポリシーに対して、次の設定を構成できます。
 
-  - 新しいポリシーを無効として _Enabled_ 作成し `$false` ます ( **HostedOutboundSpamFilterRule** コマンドレットでは有効)。
-  - HostedOutboundSpamFilterRule コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _\<Number\>_ )。 **New-HostedOutboundSpamFilterRule**
+  - 新しいポリシーを無効として作成し `$false` ます ( **HostedOutboundSpamFilterRule** コマンドレットでは有効)。
+  - HostedOutboundSpamFilterRule コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _\<Number\>_ )。 
 
 - PowerShell で作成した新しい送信スパムフィルターポリシーは、そのポリシーをスパムフィルタールールに割り当てるまで、セキュリティ & コンプライアンスセンターに表示されません。
 

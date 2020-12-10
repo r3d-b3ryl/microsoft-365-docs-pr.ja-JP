@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Microsoft Defender for Office 365 を使用する組織での管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫されたファイルを管理することもできます。
-ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357135"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616778"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -99,11 +99,11 @@ Microsoft Defender for Office 365 を使用する組織での管理者は、Shar
      - **スパム**
      - **精度の高いフィッシング**
 
-   - **ポリシーの種類**: 次のポリシーの種類ごとに、メッセージをフィルター処理します。
+   - **ポリシーの種類**: ポリシーの種類でメッセージをフィルター処理します。
      - **マルウェア対策ポリシー**
      - **安全な添付ファイルポリシー**
-     - **フィッシング対策ポリシー**
-     - **ホストされているコンテンツ フィルター ポリシー** (スパム対策ポリシー)
+     - **フィッシングポリシー**
+     - **ホステッドコンテンツフィルターポリシー** (スパム対策ポリシー)
      - **トランスポートルール**
 
    - **電子メール受信者**: すべてのユーザーまたは自分に送信されたメッセージのみ。 エンドユーザーは、それらに送信された検疫済みメッセージのみを管理できます。
@@ -123,7 +123,7 @@ Microsoft Defender for Office 365 を使用する組織での管理者は、Shar
    - **[受信者のメール アドレス]**: 単一の受信者のメール アドレス。
 
    - **[件名]**: メッセージの件名全体を使用します。 この検索では大文字と小文字は区別されません。
-  
+
    - [**ポリシー名**: メッセージの検疫を担当したポリシーの名前です。
 
    検索条件を入力したら、![[更新] ボタン](../../media/scc-quarantine-refresh.png) **[更新]** をクリックすると、結果がフィルター処理されます。
@@ -165,7 +165,7 @@ Microsoft Defender for Office 365 を使用する組織での管理者は、Shar
   - 次のいずれかのオプションを選択します。
     - **すべての受信者にメッセージを解放する**
     - **特定の受信者にメッセージを解放する**
-    - **他のユーザーへのメッセージの解放**: 元の受信者以外のユーザーにマルウェアメッセージをリリースすることはサポートされていないことに注意してください。 
+    - **他のユーザーへのメッセージの解放**: 元の受信者以外のユーザーにマルウェアメッセージをリリースすることはサポートされていないことに注意してください。
 
   完了したら、**[メッセージの解放]** をクリックします。
 

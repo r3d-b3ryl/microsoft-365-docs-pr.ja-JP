@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 59e2c938c70dd8e3060fd85d084acbe8f79856ad
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: bbe341899599d5092db0b0961add5a9825eca3b4
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806632"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616598"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Microsoft 365 での自動外部電子メール転送の制御
 
@@ -35,31 +35,31 @@ Microsoft 365 では、次の種類の自動転送を使用できます。
 
 送信スパムフィルターポリシーを使用して、外部の受信者への自動転送を制御することができます。 次の3つの設定を使用できます。
 
-- **Automatic** : 自動外部転送がブロックされます。 メッセージの内部自動転送は引き続き機能します。 これは、既定の設定です。
+- **Automatic**: 自動外部転送がブロックされます。 メッセージの内部自動転送は引き続き機能します。 これは、既定の設定です。
 
-- **オン** : 外部の自動転送が許可されており、制限されていません。
+- **オン**: 外部の自動転送が許可されており、制限されていません。
 
-- **Off** : 自動外部転送が無効になり、送信者に配信不能レポート (NDR またはバウンスメッセージとも呼ばれます) が発生します。
+- **Off**: 自動外部転送が無効になり、送信者に配信不能レポート (NDR またはバウンスメッセージとも呼ばれます) が発生します。
 
 これらの設定を構成する方法については、「 [EOP で送信スパムフィルターを構成](configure-the-outbound-spam-policy.md)する」を参照してください。
 
 > [!NOTE]
-> 
+>
 > - 自動転送を無効にすると、メッセージを外部アドレスにリダイレクトする受信トレイルール (ユーザー) またはメールボックス転送 (管理者) が無効になります。
-> 
+>
 > - 内部ユーザー間でのメッセージの自動転送は、送信スパムフィルターポリシーの設定の影響を受けません。
-> 
+>
 > - 自動転送された [メッセージレポート](mfi-auto-forwarded-messages-report.md)で、外部の受信者にメッセージを自動的に転送するユーザーに関する情報を確認できます。
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>送信スパムフィルターポリシーの設定が他の自動メール転送コントロールとどのように機能するか
 
-管理者は、電子メールの自動転送を許可またはブロックするように、既に他のコントロールを構成している場合があります。 以下に例を示します。
+管理者は、電子メールの自動転送を許可またはブロックするように、既に他のコントロールを構成している場合があります。 例:
 
 - [リモートドメイン](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) によって、一部またはすべての外部ドメインへの自動電子メール転送を許可またはブロックすることができます。
 
 - Exchange [メールフロールール](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (トランスポートルールとも呼ばれます) 内の条件とアクションは、外部の受信者に自動的に転送されるメッセージを検出してブロックします。
 
-リモートドメインの設定とメールフロールールは、送信スパムフィルターポリシーの設定とは独立しています。 以下に例を示します。
+リモートドメインの設定とメールフロールールは、送信スパムフィルターポリシーの設定とは独立しています。 例:
 
 - リモートドメインへの自動転送を許可するが、送信スパムフィルターポリシーの自動転送をブロックする。 この例では、自動的に転送されるメッセージがブロックされます。
 

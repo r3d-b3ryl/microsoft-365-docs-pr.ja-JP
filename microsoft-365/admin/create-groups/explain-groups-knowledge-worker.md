@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: ユーザーに対して Microsoft 365 グループについて説明する方法について説明します。
-ms.openlocfilehash: 179452800fb28c193622b47dce85dd6419ae5ac2
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 2f983d69f8b3138634739a82e35de9e62821d252
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49554792"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613010"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>ユーザーに Microsoft 365 グループを説明する
 
@@ -38,6 +38,8 @@ Microsoft 365 グループを使用すると、共有メールボックスと予
 [画像の説明 ![ ](../../media/03.png)](../../media/03.png#lightbox)
 
 他のユーザーとの共同作業のためのスペースが必要な場合に、その方法に最も合ったグループ作成方法を常に使用するようにユーザーをトレーニングすることで、混乱を防ぎ、リソースを重複させないようにすることができます。 ユーザーの経験が多くなるにつれて、グループに付属するサービスのコレクションがわかりやすくなり、作成方法が異なると、同じ結果が得られます。
+
+ユーザー向けのトレーニングプレゼンテーションの開始点として、 [Business User-PowerPoint テンプレートの Microsoft 365 グループ](https://www.microsoft.com/download/details.aspx?id=102396) を使用できます。
 
 ## <a name="related-topics"></a>関連項目
 

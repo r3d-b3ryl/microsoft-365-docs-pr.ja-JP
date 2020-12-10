@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループと SharePoint の間の設定の相互作用について説明します。
-ms.openlocfilehash: e8d4189c2d945d5a6d2aa78bd7ea980a77360ce0
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a00e863fead8e74cf0f169471ebb36f9539ed103
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377559"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613492"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Microsoft 365 グループと SharePoint の間の設定の相互作用
 
@@ -48,6 +48,10 @@ Microsoft 365 グループおよび Microsoft 365 の SharePoint の一部の設
 |グループの有効期限ポリシー|アクティブに使用されていないグループが自動的に削除されるまでの期間を指定します。|グループが削除されると、関連付けられている SharePoint サイトも削除されます。 アイテム保持ポリシーによって保護されたコンテンツは保持されます。|有効期限ポリシーを使用して、未使用のグループとサイトが無秩序に増大しないようにします。|
 
 ## <a name="related-topics"></a>関連項目
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
 
 [組織外のユーザーとの共同作業](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 

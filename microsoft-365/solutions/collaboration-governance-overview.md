@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、Teams、SharePoint、Yammer の関連する機能を管理する方法について説明します。
-ms.openlocfilehash: 2e4064ec64c52d4d3afe3d2e83f34079b3749f97
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 2319a0f5b8c74925569d00eb781d247fe61a5a76
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568446"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613034"
 ---
 # <a name="what-is-collaboration-governance"></a>コラボレーションガバナンスとは
 
@@ -141,7 +141,7 @@ Microsoft 365 のコラボレーションのためのガバナンス機能には
 |グループの有効期限ポリシー|非アクティブなグループと teams を期限切れにし、指定した期間が経過した後に削除するように設定します。|Microsoft 365 E5 または E3 (Azure AD Premium ライセンスを使用)|
 |グループごとのゲスト アクセス|グループごとに、組織外のユーザーとのチームおよびグループの共有を許可または禁止します。|Microsoft 365 E5 または E3|
 
-## <a name="create-your-governance-plan"></a>ガバナンス計画を作成する
+## <a name="collaboration-governance-planning-step-by-step"></a>コラボレーションガバナンスの計画のステップバイステップ
 
 ガバナンス計画を作成するには、次の基本的な手順に従います。
 
@@ -208,12 +208,12 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 
 Microsoft 365 には、幅広い情報保護とコンプライアンス機能が含まれています。 Microsoft の生産性ツールと共に、これらの機能は、組織がリアルタイムで共同作業を行って、厳格な規制コンプライアンスフレームワークに準拠できるように設計されています。 
 
-この一連の図では、最も規制されている業界の金融サービスの1つを使用して、これらの機能を適用して一般的な規制要件に対応する方法を示します。 これらのイラストは、自分の使用に合わせて自由にご利用いただけます。 
+この一連の図では、最も規制されている業界の金融サービスの1つを使用して、これらの機能を適用して一般的な規制要件に対応する方法を示します。 これらのイラストを自分の用途に合わせて自由にアレンジしてください。 
 
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデルポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英語: [PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)のダウンロードとして \| [Visio として](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)ダウンロードする   <br/> 日本語: [PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)のダウンロードとして \| [Visio として](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)ダウンロードする   <br/> 更新されたのは2020年11月|インクルード <ul><li>  Microsoft information protection およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>通信コンプライアンス</li><li>Insider のリスク</li><li>サードパーティのデータの取り込み</li>|
+|[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英語: [PDF としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日本語: [PDF としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> 更新日: 2020 年 11 月|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスク</li><li>サードパーティのデータの取り込み</li>|
 
 ## <a name="conference-sessions"></a>会議セッション
 

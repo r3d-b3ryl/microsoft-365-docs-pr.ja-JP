@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、Teams、SharePoint でのアクセス管理について説明します。
-ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: fb1bec219ef0d27c2a908f5f385185a1a70e01e1
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558224"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613468"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Microsoft 365 グループ、Teams、SharePoint でのアクセスの管理
 
@@ -28,7 +28,7 @@ ms.locfileid: "49558224"
 
 次の表に、Microsoft 365 で利用可能なアクセス制御のクイックリファレンスを示します。 詳細については、以下のセクションを参照してください。
 
-|カテゴリ|説明|Reference|
+|カテゴリ|説明|参照|
 |:-------|:----------|:--------|
 |メンバーシップ|||
 ||プライベートチームの検出|[Microsoft Teams でプライベートチームの検出を管理する](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)|
@@ -158,6 +158,10 @@ Teams のプライベートチャネルでは、チームメンバーのサブ�
 - [Azure Active Directory Id ガバナンス](https://docs.microsoft.com/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>関連項目
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
 
 [Microsoft Teams のセキュリティとコンプライアンス](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
 

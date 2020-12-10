@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: ハードウェアベースの分離の最新情報を取得します。 悪用または悪意のあるリンクのような最新の攻撃や、従業員の生産性や企業のセキュリティを阻止できないようにします。
-ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a1d0fb857a80d5500036f6d9a95f930ec4df38a0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561437"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616790"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>管理者向けの Office 用アプリケーションガード (パブリックプレビュー)
 
@@ -76,9 +76,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
 
    または、対応する CSP ポリシーを設定することもできます。
 
-   OMA URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard**<br/>
-   データ型: **Integer**<br/>
-   値: **2**
+   > OMA URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> データ型: **Integer** <br> 値: **2**
 
 4. システムを再起動します。
 

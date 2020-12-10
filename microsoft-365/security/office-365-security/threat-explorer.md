@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: セキュリティ & コンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 4328bfc52497f911c57256f8366b3742523b17b0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561401"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615566"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -67,7 +67,7 @@ ms.locfileid: "49561401"
 
 これで、優先度の高いアカウント、または特定のユーザータグシナリオにわたってタグが表示されるようになりました。また、この環境の一部として特定のタグを含む結果を除外することもできます。 このような他の複数のフィルターを組み合わせて使用することで、調査の範囲を絞ることができます。
 
-[![タグ ](../../media/tags-filter-normal.png) のフィルター](../../media/tags-filter-normal.png#lightbox)
+[![タグのフィルター](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![非フィルタータグ](../../media/tags-filter-not.png)
@@ -149,7 +149,7 @@ ms.locfileid: "49561401"
 > - 検出テクノロジとその他のアクションについては、新しいフィールドと値が追加されています (特に ZAP シナリオの場合)。 既存の保存済みのクエリと追跡されたクエリを評価して、新しい値で動作することを確認します。
 
 > [!div class="mx-imgBorder"]
-> ![Additional_Actions](../../media/Additional_Actions.png)
+> ![エクスプローラーでの追加のアクション](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>システムの上書き
 
@@ -161,10 +161,10 @@ ms.locfileid: "49561401"
 - 組織のポリシーによってブロックされます。これは、組織のセキュリティチームが、組織内のユーザーに対して送信者、ドメイン、メッセージの言語、または送信元の Ip アドレスをブロックするポリシーまたはメールフロールールを設定する場合です。 これは、一連のユーザーまたは組織全体に対しても可能です。
 - 組織のポリシーによってブロックされているファイル拡張子: これは、ファイルの種類の拡張子がマルウェア対策ポリシー設定を使用して組織のセキュリティチームによってブロックされる場合です。 これらの値は、調査に役立つように、メールの詳細に表示されるようになりました。 Secops teams では、リッチフィルター処理機能を使用して、ブロックするファイル拡張子に対してフィルターを適用することもできます。
 
-[![System_Overrides ](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![エクスプローラーでのシステムのオーバーライド](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> ![エクスプローラーでのシステムオーバーライドグリッド](../../media/System_Overrides_Grid.png)
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>URL とクリックの動作に関する機能強化
 
@@ -184,7 +184,7 @@ URL と URL をクリックすると、次のような機能が強化されま�
 
 フィッシング信頼度は、電子メールがフィッシングとして分類された信頼度を識別するのに役に立ちます。 2つの値は、High と Normal です。 初期段階では、このフィルターは、脅威エクスプローラーのフィッシングビューでのみ使用できます。
 
-[![Phish_Confidence_Level ](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![エクスプローラーでのフィッシング信頼レベル](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>ZAP URL 信号
 
@@ -354,14 +354,14 @@ ETR の検索と名前の可用性は、自分に割り当てられている特�
 
 Microsoft 365 テクノロジを使用して、電子メールで検出されたマルウェアを確認するとします。 これを行うには、エクスプローラーの [ [電子メール > マルウェア](threat-explorer-views.md#email--malware) ] ビュー (またはリアルタイムの検出) を使用します。
 
-1. セキュリティ & コンプライアンスセンター () で [https://protection.office.com](https://protection.office.com) 、[**脅威管理**  >  **エクスプローラー** (または **リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
+1. セキュリティ & コンプライアンスセンター () で <https://protection.office.com> 、[ **脅威管理** \> **エクスプローラー** (または **リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューで、[**電子メール**  >  **マルウェア**] を選択します。
+2. [ **表示** ] メニューで、[ **電子メール** \> **マルウェア**] を選択します。
 
    > [!div class="mx-imgBorder"]
    > ![エクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. [**送信者**] をクリックし、[**基本**  >  **検出テクノロジ**] を選択します。
+3. [ **送信者**] をクリックし、[ **基本** \> **検出テクノロジ**] を選択します。
 
    これで、検出テクノロジがレポートのフィルターとして使用できるようになります。
 
@@ -381,14 +381,14 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 
 メッセージ内のフィッシング Url を確認し、フィッシングメッセージで Url をクリックするには、Explorer の [電子メール > フィッシング](threat-explorer-views.md#email--phish) ビュー (またはリアルタイムの検出) を使用します。
 
-1. セキュリティ & コンプライアンスセンター () で [https://protection.office.com](https://protection.office.com) 、[**脅威管理**  >  **エクスプローラー** (または **リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
+1. セキュリティ & コンプライアンスセンター () で <https://protection.office.com> 、[ **脅威管理** \> **エクスプローラー** (または **リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューの [**電子メール** フィッシング] をクリックし  >  **Phish** ます。
+2. [**表示**] メニューの [**電子メール** フィッシング] をクリックし \> **Phish** ます。
 
    > [!div class="mx-imgBorder"]
    > ![フィッシングコンテキストでのエクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. [**送信者**] をクリックし、[ **url**] を選択して、  >  **[verdict] をクリック** します。
+3. [ **送信者**] をクリックし、[ **url** ] を選択して、 \> **[verdict] をクリック** します。
 
 4. 1つまたは複数のオプション ([ **ブロック** されて **ブロック** する] など) を選択し、[ **更新** ] ボタンをクリックして、そのフィルターを適用するオプションと同じ行にあるものをクリックします。 (ブラウザーウィンドウを更新しないでください)。
 
@@ -428,14 +428,14 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 
 組織内のユーザーが、 [outlook 用のレポートメッセージアドインと web 上の outlook](enable-the-report-message-add-in.md)を使用して、迷惑メールではなく迷惑メールとして報告した電子メールメッセージを表示したいとします。 これを行うには、エクスプローラー (またはリアルタイムの検出) の [電子メール > 提出](threat-explorer-views.md#email--submissions) の表示] を使用します。
 
-1. セキュリティ & コンプライアンスセンター () で [https://protection.office.com](https://protection.office.com) 、[**脅威管理**  >  **エクスプローラー** (または **リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
+1. セキュリティ & コンプライアンスセンター () で <https://protection.office.com> 、[ **脅威管理** \> **エクスプローラー** (または **リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューの [**電子メール** の送信] を選択し  >  **Submissions** ます。
+2. [**表示**] メニューの [**電子メール** の送信] を選択し \> **Submissions** ます。
 
    > [!div class="mx-imgBorder"]
    > ![エクスプローラーの電子メール用の [表示] メニュー](../../media/explorer-view-menu-email-user-reported.png)
 
-3. [**送信者**] をクリックし、[**基本** レポートの種類] を選択し  >  **Report type** ます。
+3. [**送信者**] をクリックし、[**基本** レポートの種類] を選択し \> **Report type** ます。
 
 4. オプション ( **フィッシング** など) を選択し、[ **更新** ] ボタンをクリックします。
 
@@ -476,14 +476,14 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 - セキュリティ & コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
 
   - 組織管理
-  - セキュリティ管理者 (Azure Active Directory 管理センターで割り当て [https://aad.portal.azure.com](https://aad.portal.azure.com) 可能)
+  - セキュリティ管理者 (Azure Active Directory 管理センターで割り当てることができます ( <https://aad.portal.azure.com> )
   - セキュリティ閲覧者
 
-- Exchange Online の場合は、Exchange 管理センター ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) または PowerShell コマンドレット (「 [Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
+- Exchange Online の場合は、Exchange 管理センター ( <https://admin.protection.outlook.com/ecp/> ) または [Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)で次のいずれかの役割が割り当てられている必要があります。
 
   - 組織の管理
-  - 表示限定の組織管理
-  - "View-Only Recipients/表示専用受信者" 役割
+  - 表示専用組織の管理
+  - "View-Only Recipients/表示専用受信者"
   - コンプライアンス管理
 
 役割とアクセス許可の詳細については、以下のリソースを参照してください。

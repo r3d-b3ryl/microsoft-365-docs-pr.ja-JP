@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 新しい注目すべきトラッカーを含む脅威のトラッカーについて説明します。これにより、組織はセキュリティ上の問題に常に役立てることができます。
-ms.openlocfilehash: e173bb2b4ee6e7c54c7414c7f102d8c4d1d06641
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 551f5704337ef8989fd1568854822bc1d9d4c14b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568458"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615458"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
@@ -46,7 +46,7 @@ ms.locfileid: "49568458"
 
 トラッカーは、 [Microsoft Defender For Office 365 プラン 2](office-365-ti.md)で入手できる、多くの重要な機能のほんの一部に過ぎません。 脅威のトラッカーには、 [注意を価値トラッカー](#noteworthy-trackers)、 [傾向分析](#trending-trackers)、 [追跡クエリ](#tracked-queries)、および [保存されたクエリ](#saved-queries)が含まれます。
 
-組織の脅威のトラッカーを表示して使用するには、セキュリティ & コンプライアンスセンター ( [https://protection.office.com](https://protection.office.com) ) に移動して、[ **脅威管理** の \> **脅威の追跡ツール**] を選択します。
+組織の脅威のトラッカーを表示して使用するには、セキュリティ & コンプライアンスセンター ( <https://protection.office.com> ) に移動して、[ **脅威管理** の \> **脅威の追跡ツール**] を選択します。
 
 > [!NOTE]
 > 脅威のトラッカーを使用するには、全体管理者、セキュリティ管理者、またはセキュリティリーダーである必要があります。 「 [セキュリティ & コンプライアンスセンター」の「アクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。

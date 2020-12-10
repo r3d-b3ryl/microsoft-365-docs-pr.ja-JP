@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: 管理者は、Microsoft Defender for Office 365 の安全な添付ファイル機能について学習できます。
-ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d38f95991a1d310e8a894a32e06b5891ebb498a9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357217"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616682"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全な添付ファイル
 

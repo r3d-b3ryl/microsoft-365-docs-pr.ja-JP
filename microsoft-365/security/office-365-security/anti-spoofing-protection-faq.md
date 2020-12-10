@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Exchange Online Protection (EOP) のスプーフィング対策保護についてよく寄せられる質問と回答を参照できます。
-ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f567c7bc0c6a6efed7621cec86c5db4e616290b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844394"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616733"
 ---
 # <a name="anti-spoofing-protection-faq"></a>スプーフィング対策保護に関する FAQ
 
@@ -71,9 +71,9 @@ Microsoft は、お客様への展開を開始する前に、新しい電子メ�
 
 ほぼすべての大規模な電子メールサービスは、従来の SPF、DKIM、DMARC のチェックを実装しています。 一部のサービスでは、他の厳密なチェックが行われますが、認証されていない電子メールをブロックし、それらをスプーフィングされたメッセージとして処理することはほとんどありません EOP。 しかし、特にフィッシングの問題により、認証されていない電子メールに関する問題について、業界はより多くの情報を把握してきています。
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>まだスプーフィング対策を有効にしている場合は、高度なスパムフィルター設定 "SPF レコード: hard fail" ( _MarkAsSpamSpfRecordHardFail_ ) を有効にする必要がありますか?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>まだスプーフィング対策を有効にしている場合は、高度なスパムフィルター設定 "SPF レコード: hard fail" (_MarkAsSpamSpfRecordHardFail_) を有効にする必要がありますか?
 
-いいえ。 この ASF 設定は不要になりました。 スプーフィング対策保護では、SPF に障害が発生した場合と、非常に幅広い条件セットがあると見なされます。 スプーフィング対策を有効にしているときに、 **SPF レコード: Hard Fail** ( _MarkAsSpamSpfRecordHardFail_ ) も有効にすると、誤検出が多くなる可能性があります。
+いいえ。 この ASF 設定は不要になりました。 スプーフィング対策保護では、SPF に障害が発生した場合と、非常に幅広い条件セットがあると見なされます。 スプーフィング対策を有効にしているときに、**SPF レコード: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) も有効にすると、誤検出が多くなる可能性があります。
 
 この機能を無効にすることをお勧めします。これにより、スパムやフィッシングメッセージを検出するための追加のメリットはほとんど提供されず、その代わりに、ほとんどが誤検知を生成することになります。 詳細については、「 [Advanced Spam Filter (ASF) settings IN EOP](advanced-spam-filtering-asf-options.md)」を参照してください。
 

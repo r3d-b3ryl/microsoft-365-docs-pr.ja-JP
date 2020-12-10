@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c5c6dae49943aba4288ef2a0dfe9662b02d3b054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558288"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616370"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -43,9 +43,8 @@ Id とデバイスのアクセスの設定とポリシーは3層で推奨され�
 
 組織に固有の環境要件や複雑さがある場合は、これらの推奨事項を出発点として使用します。 ただし、ほとんどの組織では、これらの推奨事項を定められたとおりに実装できます。
 
->[!Note]
->Microsoft は、Office 365 サブスクリプションの Enterprise Mobility + Security (EMS) ライセンスも販売しています。 EMS E3 および EMS E5 機能は、Microsoft 365 E3 および Microsoft 365 E5 の機能と同じです。 詳細については、「 [EMS プラン](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 」を参照してください。
->
+> [!NOTE]
+> Microsoft は、Office 365 サブスクリプションの Enterprise Mobility + Security (EMS) ライセンスも販売しています。 EMS E3 および EMS E5 機能は、Microsoft 365 E3 および Microsoft 365 E5 の機能と同じです。 詳細については、「 [EMS プラン](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 」を参照してください。
 
 ## <a name="intended-audience"></a>対象ユーザー
 
@@ -83,7 +82,7 @@ Id とデバイスのアクセスの設定とポリシーは3層で推奨され�
 
 **Microsoft 365 アーキテクチャモデルの id およびデバイス保護** は、どの機能が同等であるかを示しています。
 
-[![Microsoft 365 ポスターの Id およびデバイス保護のサムネイル画像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  PDF とし[て表示する](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|PDF とし[てダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Microsoft 365 ポスターの Id およびデバイス保護のサムネイル画像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> PDF とし[て表示する](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|PDF とし[てダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 また、Microsoft 365 に保存されている情報を保護するために、「 [Deploy information protection for data privacy 規制](../../solutions/information-protection-deploy.md) ソリューション」を参照してください。
 
@@ -157,7 +156,7 @@ Windows 10 for Microsoft 365 enterprise for enterprise は、Pc に推奨され�
 |---|---|---|---|
 |**MFA の強制**|中程度以上のサインイン リスクで|低以上のサインイン リスクで|すべての新しいセッションで|
 |**パスワードの変更を強制する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|
-|**Intune アプリケーション保護を強制する**|はい|はい|必要|
+|**Intune アプリケーション保護を強制する**|はい|はい|はい|
 |**組織が所有するデバイスの Intune 登録を強制する**|PC に準拠しているか、ドメインに参加している必要がありますが、独自のデバイス (BYOD) の電話とタブレットを許可します。|準拠しているまたはドメインに参加しているデバイスを必要とする|準拠しているまたはドメインに参加しているデバイスを必要とする|
 |
 

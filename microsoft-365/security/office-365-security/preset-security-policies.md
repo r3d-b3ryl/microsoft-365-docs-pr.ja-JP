@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection (EOP) および Microsoft Defender for Office 365 の保護機能において標準ポリシー設定と厳密なポリシー設定を適用する方法を学習できます。
-ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572779"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616046"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Microsoft Defender for Office 365 の事前設定されたセキュリティポリシー
 
@@ -62,7 +62,7 @@ ms.locfileid: "49572779"
 事前設定されたセキュリティポリシーでは、EOP のさまざまな保護機能と Microsoft Defender for Office 365 の対応するポリシーが使用されます。 これらのポリシーは、**標準保護** または厳格な **保護** の事前設定のセキュリティポリシーをユーザーに割り当てた _後_ に作成されます。 これらのポリシーを変更することはできません。
 
 - **Exchange Online Protection (EOP) ポリシー**: これには、exchange online メールボックスを使用する Microsoft 365 組織と、exchange online メールボックスを持たないスタンドアロン EOP 組織が含まれます。
-  
+
   - **標準の事前設定** されたセキュリティポリシーと **厳密な事前設定セキュリティポリシー** という名前 [のスパム対策ポリシー](configure-your-spam-filter-policies.md) 。
   - **標準の事前設定** されたセキュリティポリシーと **厳密な事前設定セキュリティポリシー** という名前 [のマルウェア対策ポリシー](configure-anti-malware-policies.md) 。
   - EOP の **既定のセキュリティポリシー** および厳密な事前設定された **セキュリティポリシー** (スプーフィング設定) という名前の [フィッシング対策ポリシー](set-up-anti-phishing-policies.md#spoof-settings)を設定します。
@@ -154,6 +154,6 @@ Microsoft Defender for Office 365 の保護とは異なるユーザーに EOP �
 
 **標準保護** または **厳格な保護** セキュリティポリシーがユーザーに正常に割り当てられたことを確認するには、保護設定を使用します。既定値は **標準保護** 設定とは異なります。これは **厳密な保護** 設定とは異なります。
 
-たとえば、スパムとして検出された電子メール (高精度スパムではない) の場合は、メッセージが [迷惑メール]**フォルダーに配信** され **Strict protection** ていることを確認してください。
+たとえば、スパムとして検出された電子メール (高精度スパムではない) の場合は、メッセージが [迷惑メール]**フォルダーに配信** されていることを確認してください。
 
 または、 [バルクメール](bulk-complaint-level-values.md)の場合は、bcl 値6以上が **標準の保護** ユーザー用の迷惑メールフォルダーにメッセージを配信していることを確認し、bcl 値4以上の検疫を使用して、 **厳正な保護** ユーザーにメッセージを送信します。

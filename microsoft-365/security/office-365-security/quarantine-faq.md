@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: 管理者は、Exchange Online Protection (EOP) で、検疫されたメッセージについてよく寄せられる質問と回答を確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d21ae67295d0186546783fd56bb602742db0649
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9cf1281338de66f54a6c4546b047259d647cc3ea
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430849"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615998"
 ---
 # <a name="quarantined-messages-faq"></a>検疫済みメッセージに関する FAQ
 
@@ -58,7 +58,7 @@ ms.locfileid: "48430849"
 
 スパム対策ポリシーを使用して、スパム、フィッシング、およびバルクメールメッセージを検疫に保持する期間を構成します。 既定値は30日で、これも最大数です。 詳細については、「 [EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
 
-メールフロールールアクションによって検疫されたメッセージは、ホストされた **検疫にメッセージを配信する**ため、メッセージは30日間検疫に保持されます。 この期間を構成することはできません。
+メールフロールールアクションによって検疫されたメッセージは、ホストされた **検疫にメッセージを配信する** ため、メッセージは30日間検疫に保持されます。 この期間を構成することはできません。
 
 期間が過ぎると、メッセージは削除され、復元することはできません。
 

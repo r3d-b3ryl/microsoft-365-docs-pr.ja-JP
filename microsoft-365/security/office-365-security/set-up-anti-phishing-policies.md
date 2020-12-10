@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Microsoft Defender for Office 365 で利用可能なフィッシング対策ポリシーについて学ぶことができます。
-ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568582"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615770"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
@@ -84,7 +84,7 @@ EOP のフィッシング対策ポリシーおよび Office 365 の Microsoft De
     - **受信者のドメインが**
 
   > [!NOTE]
-  > [**適用先**] 設定は、カスタムのフィッシング対策ポリシーで、ポリシーが **recipients** <u>適用される</u>メッセージ受信者を識別するために必要です。 Microsoft Defender for Office 365 のフィッシング対策ポリシーには、このトピックで後述するように、<u>偽装保護を受信する個々の</u>送信者の電子メールアドレスまたは送信者ドメインを指定できる[偽装設定](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)もあります。
+  > [**適用先**] 設定は、カスタムのフィッシング対策ポリシーで、ポリシーが <u>適用される</u>メッセージ受信者を識別するために必要です。 Microsoft Defender for Office 365 のフィッシング対策ポリシーには、このトピックで後述するように、<u>偽装保護を受信する個々の</u>送信者の電子メールアドレスまたは送信者ドメインを指定できる[偽装設定](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)もあります。
 
 ## <a name="spoof-settings"></a>スプーフィング設定
 
@@ -129,7 +129,6 @@ EOP のフィッシング対策ポリシーおよび Office 365 の Microsoft De
 - スプーフィングインテリジェンスポリシーで、送信者にスプーフィングすることを許可します。 この操作により、認証されていない送信者の識別が無効になっている場合に、送信者からのメッセージに via タグが表示されないようにします。 手順については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
 
 - 送信者ドメインの[電子メール認証を構成](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)します。
-  
   - 送信者の写真の疑問符の場合は、SPF または DKIM が最も重要です。
   - Via タグの場合は、d KIM 署名のドメイン、または From アドレスのドメインの **メール** アドレスが一致する (またはサブドメインである) ことを確認します。
 

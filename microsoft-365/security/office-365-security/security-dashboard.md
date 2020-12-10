@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: b49422621e70d597251cd342559e59ffa0e128f6
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 6a2669e3e36ee9238de99014a6c899df75204726
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877327"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615818"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -40,7 +40,7 @@ ms.locfileid: "48877327"
 
 組織のサブスクリプションに含まれるものに応じて、セキュリティダッシュボードには、次のセクションで説明するように、脅威管理の概要、脅威の保護の状態、グローバルな週次の脅威の検出、マルウェアなど、いくつかのウィジェットが含まれています。
 
-セキュリティダッシュボードを表示するには、 [セキュリティ & コンプライアンスセンター](../../compliance/go-to-the-securitycompliance-center.md)で、[ **脅威管理** ] ダッシュボードに移動し \> **Dashboard** ます。
+セキュリティダッシュボードを表示するには、[セキュリティ & コンプライアンスセンター](../../compliance/go-to-the-securitycompliance-center.md)で、[**脅威管理**] ダッシュボードに移動し \> ます。
 
 > [!NOTE]
 > セキュリティダッシュボードを表示するには、全体管理者、セキュリティ管理者、またはセキュリティリーダーである必要があります。 一部のウィジェットには、表示するための追加のアクセス許可が必要です。 詳細については、「 [セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
@@ -55,7 +55,7 @@ ms.locfileid: "48877327"
 
 |Office 365 E3|Office 365 E5|
 |---|---|
-|ブロックされるマルウェアメッセージ<br/>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br><br><br><br>|ブロックされるマルウェアメッセージ<br>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br>ゼロ日のマルウェアがブロックされる<br>検出された高度なフィッシングメッセージ<br>ブロックされた悪意のある Url|
+|ブロックされるマルウェアメッセージ<br>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br><br><br><br>|ブロックされるマルウェアメッセージ<br>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br>ゼロ日のマルウェアがブロックされる<br>検出された高度なフィッシングメッセージ<br>ブロックされた悪意のある Url|
 
 脅威管理の概要ウィジェットを表示またはアクセスするには、Office 365 レポートの Defender を表示するためのアクセス許可が必要です。 詳細については、「 [Office 365 の Defender のレポートを表示するために必要なアクセス許可に](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)ついて」を参照してください。
 
@@ -69,8 +69,8 @@ ms.locfileid: "48877327"
 
 |サブスクリプションに含まれるもの|これらの詳細が表示できます。|
 |---|---|
-|EOP (Microsoft Defender for Office 365 以外)|EOP によって検出およびブロックされた悪意のある電子メール。<br><br> 「 [脅威保護の状態レポート (EOP)](view-email-security-reports.md#threat-protection-status-report)」を参照してください。|
-|Microsoft Defender for Office 365|悪意のあるコンテンツと悪意のある電子メールが検出され、EOP および Defender for Office 365 によってブロックされる<br><br>マルウェア対策エンジン、 [ゼロ時間自動削除](zero-hour-auto-purge.md)、および office 365 機能の defender (「 [安全なリンク](atp-safe-links.md)」、「 [安全な添付ファイル](atp-safe-attachments.md)」、および「 [defender For office 365」の「フィッシング対策](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)」を含む) によってブロックされた、悪意のあるコンテンツを含む一意の電子メールメッセージの合計数。<br><br>「 [脅威保護の状態レポート](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。|
+|EOP (Microsoft Defender for Office 365 以外)|EOP によって検出およびブロックされた悪意のある電子メール。<p> 「 [脅威保護の状態レポート (EOP)](view-email-security-reports.md#threat-protection-status-report)」を参照してください。|
+|Microsoft Defender for Office 365|悪意のあるコンテンツと悪意のある電子メールが検出され、EOP および Defender for Office 365 によってブロックされる <p> マルウェア対策エンジン、 [ゼロ時間自動削除](zero-hour-auto-purge.md)、および office 365 機能の defender (「 [安全なリンク](atp-safe-links.md)」、「 [安全な添付ファイル](atp-safe-attachments.md)」、および「 [defender For office 365」の「フィッシング対策](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)」を含む) によってブロックされた、悪意のあるコンテンツを含む一意の電子メールメッセージの合計数。 <p> 「 [脅威保護の状態レポート](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。|
 
 脅威保護状態ウィジェットを表示またはアクセスするには、Office 365 の Defender のレポートを表示するアクセス許可が必要です。 詳細については、「 [Defender For Office 365 レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)」を参照してください。
 
@@ -127,6 +127,6 @@ ms.locfileid: "48877327"
 
 [Microsoft Defender for Office 365 のレポートを表示する](view-reports-for-atp.md)
 
-[Office 365 の Defender](office-365-atp.md)
+[Defender for Office 365](office-365-atp.md)
 
 [Office 365 の脅威の調査と対応](office-365-ti.md)

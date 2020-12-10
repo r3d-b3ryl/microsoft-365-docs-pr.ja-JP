@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 81e729d9b0ff145d1d10a385cdd3f0856287dd9f
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 1a82fc414bfed2f7a054ae533700c52a8270ed6d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588587"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615290"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
@@ -146,7 +146,7 @@ Microsoft 365 およびその他の Microsoft クラウドテクノロジを使�
 Microsoft 365 を使用すると、Microsoft Teams でプライベートチームを構成し、SharePoint サイトのセキュリティ設定と一意の機密ラベルを使用してファイルを暗号化することができます。これにより、チームメンバーのみがファイルを復号化できるようになります。
 
 [![セキュリティの分離ポスター を使用した Microsoft Teams](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) <br> 2020年8月更新
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> 2020年8月更新
 
 詳細については、このポスターの記事「 [セキュリティの分離を使用してチームを構成する](secure-teams-security-isolation.md)」を参照してください。
 

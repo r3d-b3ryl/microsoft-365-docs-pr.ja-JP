@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft の cybersecurity チームからの、Microsoft 365 環境を保護するためのセキュリティ機能の実装に関する主な推奨事項。 '
-ms.openlocfilehash: d62db9206a98078ae5adaad220a7c9b53ff116cd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 452ce2a303f02cadfcdcbe12310f2538d33a24e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561701"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615806"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>セキュリティロードマップ-最初の30日間、90日以降の優先度
 
@@ -77,7 +77,7 @@ ms.locfileid: "49561701"
 
 |分野|タスク|
 |---|---|
-|セキュリティ管理|<ul><li>お使いの環境で推奨されるアクションについては、「Secure Score」を確認 [https://securescore.office.com](https://securescore.office.com) してください ()。</li><li>引き続き、Microsoft 365 セキュリティセンター、Cloud App Security、および SIEM ツールのダッシュボードとレポートを定期的に確認してください。</li><li>ソフトウェア更新プログラムを検索して実装します。</li><li>[アタックシミュレータ](attack-simulator.md)を使用して、スピアーフィッシング、パスワードスプレー、ブルートフォースパスワード攻撃に対する攻撃のシミュレーションを行います ( [Office 365 の脅威インテリジェンス](office-365-ti.md)に含まれています)。</li><li>Cloud App Security ([調査] タブ) の組み込みレポートを確認して、共有のリスクを探します。</li><li>組織に適用される規制の状態を確認するために [コンプライアンスマネージャー](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) をチェックします (GDPR、NIST 800-171 など)。</li></ul>|
+|セキュリティ管理|<ul><li>お使いの環境で推奨されるアクションについては、「Secure Score」を確認 <https://securescore.office.com> してください ()。</li><li>引き続き、Microsoft 365 セキュリティセンター、Cloud App Security、および SIEM ツールのダッシュボードとレポートを定期的に確認してください。</li><li>ソフトウェア更新プログラムを検索して実装します。</li><li>[アタックシミュレータ](attack-simulator.md)を使用して、スピアーフィッシング、パスワードスプレー、ブルートフォースパスワード攻撃に対する攻撃のシミュレーションを行います ( [Office 365 の脅威インテリジェンス](office-365-ti.md)に含まれています)。</li><li>Cloud App Security ([調査] タブ) の組み込みレポートを確認して、共有のリスクを探します。</li><li>組織に適用される規制の状態を確認するために [コンプライアンスマネージャー](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) をチェックします (GDPR、NIST 800-171 など)。</li></ul>|
 |脅威保護|管理者アカウントの強化された保護を実装します。 <ul><li>管理者アクティビティ用に [特権アクセスワークステーション](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) を構成します。</li><li>[AZURE AD の特権 Id 管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)を構成します。</li><li>セキュリティ情報およびイベント管理 (SIEM) ツールを構成して、Office 365、Cloud App Security、およびその他のサービス (AD FS を含む) からログデータを収集します。 監査ログには、90日のみのデータが格納されます。 このデータを SIEM ツールで取得すると、長期間にデータを格納することができます。</li></ul>|
 |ID およびアクセス管理|<ul><li>すべてのユーザーに対して MFA を有効にし、適用します。</li><li>一連の [条件付きアクセスと関連ポリシー](microsoft-365-policies-configurations.md)を実装します。</li></ul>|
 |情報保護| 情報保護ポリシーを調整して実装します。 これらのリソースには例があります。 <ul><li>[GDPR のための Office 365 の情報保護](https://aka.ms/o365gdpr)</li><li>[3 層の保護を使ってチームを構成する](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Microsoft 365 のデータ損失防止ポリシーおよび監視ツールを使用して、Microsoft 365 に保存されたデータ (Cloud App Security ではない) を使用します。 <p> 高度な警告機能 (データ損失防止) については、Microsoft 365 で Cloud App Security を使用します。|

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の SIEM サーバーを Microsoft Defender for Office 365 に、関連する脅威イベントを Office 365 アクティビティ管理 API に統合します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6253ed0133bf53bdbeca71bb595a850e25441311
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 93ff1606130c60ceb46087d28bb26f9a6d27d330
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561707"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615662"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Office 365 用の Microsoft Defender との SIEM の統合
 
@@ -61,7 +61,9 @@ SIEM サーバーまたはその他の同様のシステムが監査をポーリ
 |
 
 > [!IMPORTANT]
-> SIEM と Microsoft Defender for Office 365 の統合をセットアップするには、全体管理者であるか、セキュリティ & コンプライアンスセンターに対してセキュリティ管理者の役割が割り当てられている必要があります。<br/>Microsoft 365 環境では、監査ログを有効にする必要があります。 この問題に関するヘルプを表示するには、「 [監査ログの検索を有効または無効](../../compliance/turn-audit-log-search-on-or-off.md)にする」を参照してください。
+> SIEM と Microsoft Defender for Office 365 の統合をセットアップするには、全体管理者であるか、セキュリティ & コンプライアンスセンターに対してセキュリティ管理者の役割が割り当てられている必要があります。
+>
+> Microsoft 365 環境では、監査ログを有効にする必要があります。 この問題に関するヘルプを表示するには、「 [監査ログの検索を有効または無効](../../compliance/turn-audit-log-search-on-or-off.md)にする」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

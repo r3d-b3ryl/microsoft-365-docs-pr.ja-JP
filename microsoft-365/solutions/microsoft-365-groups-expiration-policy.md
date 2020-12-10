@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: d55cc7fff939cb07ae2eba92de411e8f0d088885
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350714"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613656"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
@@ -51,7 +51,7 @@ Microsoft 365 グループと Microsoft Teams の使用率が向上したこと�
 |Role|できること|
 |---------|---------|
 |Office 365 のグローバル管理者 (Azure、会社の管理者の場合)、ユーザー管理者|Microsoft 365 グループの有効期限ポリシーの設定を作成、読み取り、更新、または削除します。|
-|User|自分が所有する Microsoft 365 グループを更新または [復元](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) する|
+|ユーザー|自分が所有する Microsoft 365 グループを更新または [復元](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) する|
 
 ## <a name="how-to-set-the-expiration-policy"></a>有効期限ポリシーを設定する方法
 
@@ -81,7 +81,11 @@ Microsoft 365 グループと Microsoft Teams の使用率が向上したこと�
 
 使用を計画していないものの、そのコンテンツを保持する必要があるグループがある場合は、「 [Archive groups, teams, And Yammer](end-life-cycle-groups-teams-sites-yammer.md) 」を参照して、さまざまなグループサービスから情報をエクスポートする方法に関する情報を参照してください。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-topics"></a>関連項目
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
 
 [アイテム保持ポリシーの概要](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558552"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616562"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
@@ -38,7 +38,7 @@ ms.locfileid: "49558552"
 - パススルー認証を使用したハイブリッド (PTA)
 - 分散
 
-次の表では、すべての id モデルに適用される必要な機能とその構成について詳しく説明しています (記載されている場合を除く)。 
+次の表では、すべての id モデルに適用される必要な機能とその構成について詳しく説明しています (記載されている場合を除く)。
 
 |構成|例外|
 |---|:---:|
@@ -76,7 +76,7 @@ BYOD Windows デバイスでは、ユーザーは **職場または学校のア�
 
 ### <a name="recommended-email-clients"></a>推奨される電子メール クライアント
 
-次の電子メールクライアントは、モダン認証と条件付きアクセスをサポートしています。 
+次の電子メールクライアントは、モダン認証と条件付きアクセスをサポートしています。
 
 |プラットフォーム|クライアント|バージョン/注|
 |---|---|---|
@@ -116,9 +116,9 @@ Microsoft 365 E3 または E5、または個別の Azure AD Premium P1 または
 
 その他の推奨事項を以下に示します。
 
-- [AZURE AD 特権 Id 管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)を使用して、永続的な管理アカウントの数を減らします。 
-- [特権アクセス管理を使用](../../compliance/privileged-access-management-overview.md) して、機密データへの永続的なアクセス権を持つ既存の特権のある管理者アカウントを使用したり、重要な構成設定にアクセスしたりすることができる侵害から組織を保護します。 
-- [Microsoft 365 管理者](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*の* 役割が割り当てられている個別のアカウントを作成して使用します。 管理者は、管理者が通常使用できない専用のユーザーアカウントを持っていて、役割またはジョブ関数に関連付けられているタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。 
+- [AZURE AD 特権 Id 管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)を使用して、永続的な管理アカウントの数を減らします。
+- [特権アクセス管理を使用](../../compliance/privileged-access-management-overview.md) して、機密データへの永続的なアクセス権を持つ既存の特権のある管理者アカウントを使用したり、重要な構成設定にアクセスしたりすることができる侵害から組織を保護します。
+- [Microsoft 365 管理者](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*の* 役割が割り当てられている個別のアカウントを作成して使用します。 管理者は、管理者が通常使用できない専用のユーザーアカウントを持っていて、役割またはジョブ関数に関連付けられているタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。
 - Azure AD で権限のあるアカウントを保護するための [ベストプラクティス](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) に従います。
 
 ## <a name="next-step"></a>次のステップ

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 のコラボレーションツールに関するリーンライフサイクルガバナンスオプション
-ms.openlocfilehash: 706f1aaecf22c4088d4539c208fef68320c5e710
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377189"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613022"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Microsoft 365 グループおよび Microsoft Teams の組織およびライフサイクルのガバナンスを計画する
 
@@ -74,3 +74,9 @@ Microsoft 365 グループが削除されると、既定では30日間保持さ�
 - 削除されたグループは、グループの所有者または管理者が30日以内に復元できます。
 
 有効期限ポリシーは、使用されなくなったグループが削除されるようにすることで、グループの拡散を制限するのに適した方法です。 グループの有効期限ポリシーを作成する場合は、「 [Microsoft 365 グループの有効期限](microsoft-365-groups-expiration-policy.md)ポリシー」を参照してください。
+
+## <a name="related-topics"></a>関連項目
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)

@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365 セキュリティセンターの攻撃シミュレーショントレーニングが従業員にどのように影響し、シミュレーションおよびトレーニングの結果から得られるかについて説明します。
-ms.openlocfilehash: 6a8ee15f14475a1cebb169ab49bdb0f490c81345
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 772815add47d2e0a61187f2d687ff047a4de9c31
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357353"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615182"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 
@@ -45,7 +45,7 @@ ms.locfileid: "49357353"
 
 ## <a name="recommended-actions"></a>推奨処理
 
-[シミュレーション [ **Simulations** ] タブ](https://security.microsoft.com/attacksimulator?viewid=simulations)で、シミュレーションのいずれかを選択すると、シミュレーションの詳細が表示されます。 ここでは、[ **推奨** されるアクション] セクションについて説明します。
+[シミュレーション[  ] タブ](https://security.microsoft.com/attacksimulator?viewid=simulations)で、シミュレーションのいずれかを選択すると、シミュレーションの詳細が表示されます。 ここでは、[ **推奨** されるアクション] セクションについて説明します。
 
 「推奨されるアクション」セクションでは、 [Microsoft セキュリティスコア](../mtp/microsoft-secure-score.md)で利用できる推奨事項について説明します。 これらの推奨事項は、シミュレーションで使用されるペイロードに基づいており、従業員や環境を保護するのに役立ちます。 各改善アクションをクリックすると、その詳細が表示されます。
 

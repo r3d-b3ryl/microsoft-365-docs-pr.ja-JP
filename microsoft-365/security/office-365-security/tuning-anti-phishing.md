@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: 管理者は、フィッシングメッセージが Microsoft 365 でどのように表示されるのか、および今後のフィッシングメッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 8a2c63d499317427b921d7786dd60b3ad4f18c42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131323"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615386"
 ---
 # <a name="tune-anti-phishing-protection"></a>フィッシング対策保護を調整する
 
@@ -61,7 +61,7 @@ Microsoft 365 には、既定で有効になっているさまざまなフィッ
 
 - スプーフィングされたメールは、Office 365 の Defender でフィッシングとしてタグ付けされます。 場合によっては、スプーフィングに害がなく、ユーザーが検疫を望まないことがあります。 ユーザーへの影響を最小限に抑えるために、 [スプーフィングインテリジェンスレポート](learn-about-spoof-intelligence.md)を定期的に確認してください。 必要な上書きを確認して必要な場合は、ユーザーの迷惑メールフォルダーに配信するのではなく、疑わしいメッセージを **検疫** するように [スプーフィングインテリジェンスを構成](set-up-anti-phishing-policies.md#spoof-settings)することができます。
 
-- 偽装 (ドメインまたはユーザー) に対して上記の手順を繰り返すことができます。 偽装レポートは、[**脅威管理**] \> **ダッシュボード** Insights の下にあり \> **Insights** ます。
+- 偽装 (ドメインまたはユーザー) に対して上記の手順を繰り返すことができます。 偽装レポートは、[**脅威管理**] \> **ダッシュボード** Insights の下にあり \> ます。
 
 - [脅威保護状態レポート](view-reports-for-atp.md#threat-protection-status-report)を定期的に確認します。
 

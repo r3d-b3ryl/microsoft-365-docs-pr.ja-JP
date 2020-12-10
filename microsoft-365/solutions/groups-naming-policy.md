@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Microsoft 365 グループの名前付けポリシーを作成する方法について説明します。
-ms.openlocfilehash: 55faf5c61d577b35b34923efc7b65457fe46de29
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377607"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613504"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 グループの名前付けポリシー
 
@@ -37,7 +37,7 @@ ms.locfileid: "48377607"
 
 - **プレフィックス/サフィックスの名前付けポリシー**: グループの名前付け規則を定義するには、プレフィックスまたはサフィックスを使用できます (例: "US \_ My Group \_ Engineering")。 プレフィックス/サフィックスは、固定文字列、またはグループを作成しているユーザーに基づいて置換される [Department] などのユーザー属性のいずれかにすることができます。
 
-- ユーザー**設定のブロック**された単語: 組織に固有で、ユーザーが作成したグループでブロックされるブロックされる単語のセットをアップロードできます。 (例: "CEO, Payroll, HR")。
+- ユーザー **設定のブロック** された単語: 組織に固有で、ユーザーが作成したグループでブロックされるブロックされる単語のセットをアップロードできます。 (例: "CEO, Payroll, HR")。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
@@ -45,7 +45,7 @@ Microsoft 365 グループの Azure AD 名前付けポリシーを使用する�
 
 これは、グループの名前付けポリシーを作成する管理者にも必要になります。
 
-## <a name="prefix-suffix-naming-policy"></a>プレフィックスサフィックスの名前付けポリシー
+## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix 名前付けポリシー
 
 プレフィックスとサフィックスは、固定文字列またはユーザー属性のいずれかにすることができます。
 
@@ -94,7 +94,7 @@ Microsoft 365 グループの Azure AD 名前付けポリシーを使用する�
 
 サブ文字列検索は実行されません。具体的には、エラーを発生させるには、ユーザーが入力した名前とカスタムのブロックされた単語が完全に一致している必要があります。
 
-次**の点に注目して**ください。
+次 **の点に注目して** ください。
 
 - ブロックする単語は、大文字と小文字を区別します。
 
@@ -132,5 +132,9 @@ Microsoft 365 グループの Azure AD 名前付けポリシーを使用する�
 ![Azure Active Directory のグループの名前付けポリシーの設定のスクリーンショット](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>関連項目
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
 
 [グループ設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?linkid=868341)

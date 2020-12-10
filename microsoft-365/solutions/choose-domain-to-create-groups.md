@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: PowerShell を使用して電子メールアドレスポリシーを構成することによって、Microsoft 365 グループを作成するときに使用するドメインを選択する方法について説明します。
-ms.openlocfilehash: bb6137a3dfce17bc9c94648e5ea9e12ec2776195
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377439"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612942"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Microsoft 365 グループを作成するときに使用するドメインを選択する
 
@@ -59,13 +59,13 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 どのサブドメインの Microsoft 365 グループを作成するかを制御する必要があるとします。 あなたの希望です：
   
-- Students.groups.contoso.com ドメインで、学生 ( **Department** が **学生**に設定されているユーザー) によって作成されたグループ。 次のコマンドを使用します。
+- Students.groups.contoso.com ドメインで、学生 ( **Department** が **学生** に設定されているユーザー) によって作成されたグループ。 次のコマンドを使用します。
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- 教職員メンバーによって作成されたグループ ( **学科** に [ **教職員] または [電子メールアドレスが含まれ**ているユーザー]) が faculty.groups.contoso.com ドメインにある。 次のコマンドを使用します。
+- 教職員メンバーによって作成されたグループ ( **学科** に [ **教職員] または [電子メールアドレスが含まれ** ているユーザー]) が faculty.groups.contoso.com ドメインにある。 次のコマンドを使用します。
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
@@ -119,5 +119,9 @@ EAP を変更しても、プロビジョニング済みのグループには影�
 - 1 つの組織につき最大で 100 のメール アドレス ポリシーを構成できます。
     
 ## <a name="related-articles"></a>関連記事
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
 
 [管理センターで Microsoft 365 グループを作成する](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)

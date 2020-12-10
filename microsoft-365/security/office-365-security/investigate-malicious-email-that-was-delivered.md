@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a411e221d49a30a103de6e0f169588d13c387443
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561330"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616526"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを調査する
 
@@ -58,11 +58,11 @@ ms.locfileid: "49561330"
 |---|---|---|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
-|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者 <p> Preview|必要|
+|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者 <p> Preview|はい|
 |
 
 > [!NOTE]
-> *プレビュー* は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 グローバル管理者の役割には、Microsoft 365 管理センター () が割り当てられ [https://admin.microsoft.com](https://admin.microsoft.com) ており、セキュリティ管理者およびセキュリティリーダーの役割はセキュリティ & コンプライアンスセンター () で割り当てられ [https://protection.office.com](https://protection.office.com) ます。 役割とアクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+> *プレビュー* は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 グローバル管理者の役割には、Microsoft 365 管理センター () が割り当てられ <https://admin.microsoft.com> ており、セキュリティ管理者およびセキュリティリーダーの役割はセキュリティ & コンプライアンスセンター () で割り当てられ <https://protection.office.com> ます。 役割とアクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>配信された疑わしい電子メールを検索する
 
@@ -71,9 +71,9 @@ ms.locfileid: "49561330"
 > [!NOTE]
 > 現在、エクスプローラーでの既定の検索には Zapped の項目は含まれていません。  これは、マルウェアまたはフィッシングのようなビューなど、すべてのビューに適用されます。 Zapped アイテムを含めるには、' 配信アクション ' セットを追加して、「削除による ZAP」を含める必要があります。 すべてのオプションを含めると、Zapped アイテムを含むすべての配信アクションの結果が表示できます。
 
-1. [**脅威エクスプローラー] に移動** します。「 [https://protection.office.com](https://protection.office.com) Office 365 の職場または学校アカウントを使用してサインインする」に移動します。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
+1. [**脅威エクスプローラー] に移動** します。「 <https://protection.office.com> Office 365 の職場または学校アカウントを使用してサインインする」に移動します。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
 
-2. 左側のナビゲーションサイドリンクバーで、[**脅威管理** エクスプローラー] を選択し \> **Explorer** ます。
+2. 左側のナビゲーションサイドリンクバーで、[**脅威管理** エクスプローラー] を選択し \> ます。
 
     ![配信アクションと配信場所フィールドを含むエクスプローラ。](../../media/ThreatExFields.PNG)
 

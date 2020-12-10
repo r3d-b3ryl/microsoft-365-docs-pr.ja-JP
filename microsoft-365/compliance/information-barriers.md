@@ -1,5 +1,5 @@
 ---
-title: 情報バリアについて
+title: Microsoft 365 の情報障壁について
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ ms.collection:
 localization_priority: None
 description: 情報バリアを使用して、組織内の Microsoft Teams を使用して通信のコンプライアンスを確保します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636964"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613099"
 ---
-# <a name="information-barriers"></a>情報バリア
+# <a name="learn-about-information-barriers-in-microsoft-365"></a>Microsoft 365 の情報障壁について
 
 Microsoft クラウドサービスには、強力なコミュニケーションとコラボレーションの機能が含まれています。 しかし、2つのグループ間の通信とコラボレーションを制限して、組織での利益の競合を回避する必要があるとします。 または、内部情報を保護するために、組織内の特定のユーザー間のコミュニケーションとコラボレーションを制限する必要がある場合があります。 Microsoft 365 は、グループと組織間での通信とコラボレーションを可能にするため、必要に応じて特定のユーザーグループ間の通信とコラボレーションを制限する方法がありますか。 情報バリアを使用して、できることはありません。 
 
@@ -35,7 +35,7 @@ Microsoft Teams、SharePoint Online、OneDrive for Business では、情報バ�
 - 研究チームは、製品開発チームとの通話またはオンラインチャットのみを行います。
 
 > [!IMPORTANT]
-> 情報バリア ***は**、2つの方法の制限のみをサポートしています。 マーケティングなどの1つの方法の制限は、マーケティングとの通信はサポートされて_い_ません。
+> 情報バリア ***は**、2つの方法の制限のみをサポートしています。 マーケティングなどの1つの方法の制限は、マーケティングとの通信はサポートされて _い_ ません。
 
 これらのすべてのシナリオ例 (およびその他) については、Microsoft Teams での通信を禁止または許可するように情報バリアポリシーを定義できます。 このようなポリシーを使用すると、ユーザーが不要な通話やチャットを行うことができなくなり、Microsoft Teams 内の特定のグループとのみ通信できるようになります。 情報バリアポリシーが有効になっていると、そのポリシーの対象となっているユーザーが Microsoft Teams 内の他のユーザーと通信しようとするたびに、チェックが行われて、通信 (情報バリアポリシーによって定義されている) を回避 (または許可) します。 情報の障壁に関するユーザーの作業の詳細については、「 [Microsoft Teams の情報障壁](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)」を参照してください。
 

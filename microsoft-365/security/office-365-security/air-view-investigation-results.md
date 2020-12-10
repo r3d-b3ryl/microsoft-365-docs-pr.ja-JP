@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Microsoft 365 の自動調査の最中および実行後に、結果と主要な結果を表示することができます。
 ms.date: 11/05/2020
-ms.openlocfilehash: 4dc74987619c3f958c874927af6e4240b9d7e154
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 2018f008e043f36cd41047185f305209fcb725d7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357287"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615146"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 での自動調査の詳細と結果
 
@@ -53,7 +53,7 @@ ms.locfileid: "49357287"
 
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 
-1. セキュリティ & コンプライアンスセンター () に移動し、 [https://protection.office.com](https://protection.office.com) サインインします。
+1. セキュリティ & コンプライアンスセンター () に移動し、 <https://protection.office.com> サインインします。
 
 2. 次のいずれかの操作を行います。
 
@@ -77,7 +77,7 @@ ms.locfileid: "49357287"
 
 次の手順を使用して、自動調査に関連付けられている通知の詳細を表示します。
 
-1. セキュリティ & コンプライアンスセンター () に移動し、 [https://protection.office.com](https://protection.office.com) サインインします。
+1. セキュリティ & コンプライアンスセンター () に移動し、 <https://protection.office.com> サインインします。
 
 2. [ **脅威管理** \> の **調査**] に移動します。
 

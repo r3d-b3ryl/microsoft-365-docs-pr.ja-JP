@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: コミュニケーションガバナンスのグループ作業のシナリオについて説明します。
-ms.openlocfilehash: 05644b5d86fc3ca83e7d140a73666a172937bd54
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b60f0be3cde23330880d652bc62110cf4e55175
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377523"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613680"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>コラボレーションシナリオのためのコミュニケーションガバナンス
 
@@ -67,6 +67,10 @@ Microsoft 365 の通信コンプライアンスにより、不快な言葉、機
 [Microsoft 365 での通信コンプライアンス](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)
 
 ## <a name="related-topics"></a>関連項目
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
 
 [組織の Microsoft Teams の設定を管理する](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 

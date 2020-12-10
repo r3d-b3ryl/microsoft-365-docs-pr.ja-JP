@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: コラボレーションのガバナンス計画を作成する方法について説明します。
-ms.openlocfilehash: 2fb2db16df3c83347831f4ea3489835e5037bbec
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: c27ac401d06808d1a4337e9ec7ec0700bfba19ea
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568284"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613298"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>コラボレーションのガバナンス計画を作成する
 
@@ -133,6 +133,8 @@ Microsoft 365 のガバナンスは、"once and done" ではありません。 M
 - お客様の組織用に Microsoft 365 チャンピオンプログラムを作成できますか。 さらに、ワールドワイドの [microsoft 365 チャンピオンプログラム](https://aka.ms/O365Champions) に参加して、自分のエキスパートプログラムのアイデアや方法を取得したり、microsoft の内外で minded people や思考リーダーと接続したりするようにしてください。
 
 ## <a name="related-topics"></a>関連項目
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Azure の Microsoft クラウド導入フレームワークのガバナンス](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
 

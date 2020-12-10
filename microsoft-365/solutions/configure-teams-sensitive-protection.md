@@ -3,7 +3,7 @@ title: 機密データに対する保護機能を使用してチームを構成�
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 3c68e6690d9fdab28a5dd1369876bec5b3fd9bc7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528196"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612954"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -80,7 +80,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 1. Teams で、アプリの左側にある **[Teams]** をクリックして、チーム リストの下部にある **[チームに参加またはチームの作成]** をクリックします。
 2. **[チームの作成]** (最初のカード、左上隅) をクリックします。
 3. **[初めからチームを作成する]** を選びます。
-4. **[秘密度]** リストで、作成した**秘密度**ラベルを選びます。
+4. **[秘密度]** リストで、作成した **秘密度** ラベルを選びます。
 5. **[プライバシー]** で、**[プライベート]** をクリックします。
 6. チームの名前を入力し、**[作成]** をクリックします。
 7. チームにユーザーを追加し、**[閉じる]** をクリックします。
@@ -100,7 +100,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 
 秘密度ラベルを使用して新しいチームを作成するたびに、SharePoint で次の 2 つの手順を実行します。
 
-- ラベルを作成したときに選択したものと一致するように、SharePoint 管理センターでサイトのゲスト共有設定を更新し、*特定のユーザー*に対して、既定の共有リンクを更新します。
+- ラベルを作成したときに選択したものと一致するように、SharePoint 管理センターでサイトのゲスト共有設定を更新し、*特定のユーザー* に対して、既定の共有リンクを更新します。
 - サイト自体の共有の設定を更新し、メンバーがサイトを共有できないようにします。
 
 ### <a name="site-guest-sharing-settings"></a>サイトのゲスト共有設定
@@ -109,8 +109,8 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 
 |ラベルの設定|SharePoint サイトの設定|
 |:------------|:----------------------|
-|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする**が選択されている|**新規および既存のゲスト** (新規チームの既定値)|
-|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする**が選択されていない|**組織内のユーザーのみ**|
+|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする** が選択されている|**新規および既存のゲスト** (新規チームの既定値)|
+|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする** が選択されていない|**組織内のユーザーのみ**|
 
 サイトの設定を更新するには
 1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
@@ -124,7 +124,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 これをチーム作成プロセスの一部としてスクリプト化する場合は、次のパラメーターを指定して [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) を使用します。
 
 - `-SharingCapability Disabled` ゲスト共有を無効にするには (既定では有効です)
-- `-DefaultSharingLinkType Internal` 既定の共有リンクを*特定のユーザー*に変更するには
+- `-DefaultSharingLinkType Internal` 既定の共有リンクを *特定のユーザー* に変更するには
 
 #### <a name="private-channels"></a>プライベート チャネル
 

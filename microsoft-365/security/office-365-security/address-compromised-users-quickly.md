@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Microsoft Defender for Office 365 プラン2で自動調査および応答機能を使用して、侵害されたユーザーアカウントを検出して対処するプロセスを高速化する方法について説明します。
-ms.openlocfilehash: 80e4529f864d83d2a1711007f0f095de39955e68
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 19c9bad33263178f92c6fe523b44497cf38ebd53
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357913"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616739"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>自動調査と応答によって侵害されたユーザーアカウントに対処する
 
@@ -63,11 +63,11 @@ ms.locfileid: "49357913"
 
 ### <a name="view-and-investigate-restricted-users"></a>制限されたユーザーの表示と調査
 
-制限されたユーザーのリストに移動するためのいくつかのオプションがあります。 たとえば、セキュリティ & コンプライアンスセンターでは、[**脅威の管理**] [  >  **Review**  >  **制限付きユーザー** のレビュー] に移動できます。 次の手順では、 **通知** ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性のあるさまざまな種類の通知を確認するための適切な方法です。
+制限されたユーザーのリストに移動するためのいくつかのオプションがあります。 たとえば、セキュリティ & コンプライアンスセンターでは、[**脅威の管理**] [ \>  \> **制限付きユーザー** のレビュー] に移動できます。 次の手順では、 **通知** ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性のあるさまざまな種類の通知を確認するための適切な方法です。
 
-1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。
+1. <https://protection.office.com> に移動し、サインインします。
 
-2. ナビゲーションウィンドウで、[**通知** ダッシュボード] を選択し  >  **Dashboard** ます。
+2. ナビゲーションウィンドウで、[**通知** ダッシュボード] を選択し \> ます。
 
 3. [ **その他の通知** ] ウィジェットで、[制限された **ユーザー**] を選択します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "49357913"
 
 ### <a name="view-details-about-automated-investigations"></a>自動調査に関する詳細を表示する
 
-自動調査が開始されたら、セキュリティ & コンプライアンスセンターでその詳細と結果を確認できます。 [**脅威管理**  >  の **調査**] に移動し、詳細を表示する調査を選択します。
+自動調査が開始されたら、セキュリティ & コンプライアンスセンターでその詳細と結果を確認できます。 [ **脅威管理** \> の **調査**] に移動し、詳細を表示する調査を選択します。
 
 詳細については、「 [調査の詳細を表示](air-view-investigation-results.md)する」を参照してください。
 

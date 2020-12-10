@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Microsoft 365 クラウドサービスおよびアプリケーションとのセキュリティ情報およびイベント管理 (SIEM) サーバーの統合の概要を理解する
-ms.openlocfilehash: 17e21d19463187744afe855b2304ac71956545d2
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 851b27769badb2629b7e9fb1c93992c76828a633
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919766"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615650"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報およびイベント管理 (SIEM) サーバーと Microsoft 365 のサービスおよびアプリケーションとの統合
 
@@ -53,7 +53,7 @@ SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプ
 |Microsoft 365 サービスまたはアプリケーション|SIEM サーバーの入力/メソッド|追加情報|
 |---|---|---|
 |[Microsoft Defender for Office 365](office-365-atp.md)|監査ログ|[Office 365 用の Microsoft Defender との SIEM の統合](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|Azure でホストされている HTTPS エンドポイント <br/>REST API|[SIEM ツールに通知を取得する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|Azure でホストされている HTTPS エンドポイント <p> REST API|[SIEM ツールに通知を取得する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|ログの統合|[SIEM と Microsoft Cloud App Security との統合](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で、スパム対策保護についてよく寄せられる質問と回答を参照できます。
-ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 21c70f1942703b8e5f3f4d96b136aff46afcc32b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844466"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615434"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護に関する FAQ
 
@@ -105,9 +105,9 @@ Exchange Online のお客様: [Exchange online での監視、レポート、メ
 
 はい。 MX レコードを Microsoft に指定することをお勧めしますが、Microsoft 以外の場所に電子メールをルーティングする正当な業務上の理由があることを認識しています。
 
-- **Inbound** : サードパーティプロバイダーをポイントするように MX レコードを変更し、追加の処理のためにメッセージを EOP にリダイレクトします。 詳細については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
+- **Inbound**: サードパーティプロバイダーをポイントするように MX レコードを変更し、追加の処理のためにメッセージを EOP にリダイレクトします。 詳細については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
-- **送信** : Microsoft 365 から送信先のサードパーティプロバイダーにスマートホストルーティングを構成します。
+- **送信**: Microsoft 365 から送信先のサードパーティプロバイダーにスマートホストルーティングを構成します。
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>マイクロソフトには、フィッシング詐欺から自分を守る方法に関するドキュメントはありますか。
 
@@ -124,7 +124,7 @@ Exchange Online のお客様: [Exchange online での監視、レポート、メ
 - **ソースメールドメインが DNS で解決される必要があります。**
 
   たとえば、送信者が user@fabrikam 場合、ドメイン fabrikam は IP アドレス192.0.43.10 に解決されます。
-  
+
   DNS で送信者のドメインの A-record と MX レコードが存在しない場合、メッセージのコンテンツがスパムであるなしにかかわらず、サービスはより危険度の高い配信プール経由でメッセージをルーティングします。 より危険度の高い配信プールの詳細については、「 [送信メッセージ用の高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。
 
 - **送信メールの eserver には、逆引き DNS (PTR) エントリが必要です。**
@@ -155,17 +155,17 @@ Exchange Online のお客様: [Exchange online での監視、レポート、メ
 
   メッセージの本文は、提供、サービス、製品の分かりやすい説明である必要があります。 たとえば、送信者が Contoso 会社のバルク メールを送信している場合、電子メールの差出人および件名は以下のようになります:
 
-  > From: marketing@contoso.com <br/> 件名: クリスマス シーズンの最新カタログ!
+  > From: marketing@contoso.com <br> 件名: クリスマス シーズンの最新カタログ!
 
   以下の例は説明的ではないため、バルク メールとしては不適切です。
 
-  > From: user@hotmail.com <br/> 件名: カタログ
+  > From: user@hotmail.com <br> 件名: カタログ
 
 - **バルク メールが多数の受信者に送信されるもので、メッセージが広報形式である場合、メッセージの最下部に登録解除手段が存在する必要があります。**
 
   登録解除オプションは次のように表示されるはずです:
 
-  > このメッセージは、sender@fabrikam.com から example@contoso.com に送信されました。 プロファイルの更新/メールアドレス | **Safeunsubscribe** を使用した即時削除 &trade; |プライバシーポリシー
+  > このメッセージは、sender@fabrikam.com から example@contoso.com に送信されました。 プロファイルの更新/メールアドレス |**Safeunsubscribe** を使用した即時削除 &trade; |プライバシーポリシー
 
 - **バルク メールを送信する場合、ダブル オプトインを使用してリスト取得を実行する必要があります。バルク メールの送信者にとって、ダブル オプトインは業界のベスト プラクティスです。**
 

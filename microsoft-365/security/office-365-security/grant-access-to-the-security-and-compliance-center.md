@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Microsoft 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202809"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616610"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
 
@@ -35,7 +35,7 @@ ms.locfileid: "48202809"
 
 セキュリティ & コンプライアンスセンターでユーザーに付与できるさまざまなアクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンターでアクセス許可](permissions-in-the-security-and-compliance-center.md)を確認する」を参照してください。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - この記事に記載されている手順を完了するには、グローバル管理者であるか、またはセキュリティ & コンプライアンスセンターの組織の組織の管理役割グループのメンバーである必要があります。
 
@@ -53,7 +53,7 @@ ms.locfileid: "48202809"
 
 3. 役割グループのプロパティページの [**メンバー**] で、 **[追加** ![ ] アイコンをクリックし、 ](../../media/ITPro-EAC-AddIcon.gif) 追加するユーザーの名前を選択します。
 
-4. 役割グループに追加するすべてのユーザーを選択したら、[ ** \> 追加**] をクリックし、[ **OK]** をクリックします。
+4. 役割グループに追加するすべてのユーザーを選択したら、[ **\> 追加**] をクリックし、[ **OK]** をクリックします。
 
 5. 完了したら、**[保存]** をクリックします。
 
@@ -81,7 +81,7 @@ ms.locfileid: "48202809"
 
 セキュリティ & コンプライアンスセンターへのアクセスが正常に付与されたことを確認するには、次のいずれかの手順を実行します。
 
-- [セキュリティ & コンプライアンスセンター] で、[ **アクセス許可** ] に移動して役割グループを選択します。 表示される詳細ポップアップで、役割グループのメンバーを確認します。 
+- [セキュリティ & コンプライアンスセンター] で、[ **アクセス許可** ] に移動して役割グループを選択します。 表示される詳細ポップアップで、役割グループのメンバーを確認します。
 
 - セキュリティ & コンプライアンスセンターの PowerShell で、を \<RoleGroupName\> 役割グループの名前に置き換えて、次のコマンドを実行します。
 

@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 脅威の修復
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 742f19c4051b2cab3311562f688da51975bd3c48
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561293"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615890"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Office 365 で配信される悪意のある電子メールを修復する
 
@@ -40,7 +40,7 @@ ms.locfileid: "49561293"
 *手動による* 検索は、セキュリティチームが脅威エクスプローラーの検索とフィルター処理機能を使用して手動で脅威を識別する場合に発生します。 修復が必要な一連のメールを特定したら、電子メールを手動で修復することができます (*マルウェア*、 *フィッシング*、または *すべての電子* メール)。
 
 > [!div class="mx-imgBorder"]
-> [![日付で Office 365 の脅威エクスプローラーを手動で探す。 ](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![日付で Office 365 の脅威エクスプローラーを手動で探す。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 セキュリティチームは脅威エクスプローラーを使用して、次の方法で電子メールを選択できます。
 
@@ -59,12 +59,12 @@ ms.locfileid: "49561293"
 自動化された **調査と応答** アクションは、脅威エクスプローラーからのアラートまたはセキュリティ運用チームによってトリガーされます。 これらには、セキュリティ運用チームによって承認される必要がある、推奨される修復アクションが含まれることがあります。 これらのアクションは自動調査の [ **操作** ] タブに含まれています。
 
 > [!div class="mx-imgBorder"]
-> [![Zap の実行時間を示す "Zapped" ページのマルウェアを含むメール。 ](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+> [![Zap の実行時間を示す "Zapped" ページのマルウェアを含むメール。](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-脅威エクスプローラーで作成されたすべての remediations (直接的な承認または2段階の承認) に加えて、自動調査による承認済みアクションがアクションセンターに表示されます。 これらにアクセスするには、「 **Review**  >  **アクションセンター** をレビューする」の左側のナビゲーションパネルを使用します。
+脅威エクスプローラーで作成されたすべての remediations (直接的な承認または2段階の承認) に加えて、自動調査による承認済みアクションがアクションセンターに表示されます。 これらにアクセスするには、「 **Review** \> **アクションセンター** をレビューする」の左側のナビゲーションパネルを使用します。
 
 > [!div class="mx-imgBorder"]
-> [![日付と重要度別の脅威の一覧を含むアクションセンター。 ](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
+> [![日付と重要度別の脅威の一覧を含むアクションセンター。](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
 アクションセンター過去30日間のすべての修復アクションを表示します。 脅威エクスプローラーを介して実行されたアクションは、修復の作成時にセキュリティ運用チームが提供した名前で一覧表示されます。 自動化された調査によって実行されるアクションには、調査をトリガーした関連アラートから始まるタイトルがあります。たとえば、"Zap email cluster...." のようになります。
 
@@ -73,7 +73,7 @@ ms.locfileid: "49561293"
 - [**メールの送信**] タブ: 脅威エクスプローラまたは自動調査で修復するメールの数が表示されます。 これらの電子メールは、操作可能であれば、操作できません。
 
   > [!div class="mx-imgBorder"]
-  > [![操作可能で、操作可能でない脅威を持つアクションセンター。 ](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![操作可能で、操作可能でない脅威を持つアクションセンター。](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
   - **操作可能**: 次のクラウドメールボックスの場所の電子メールを処理して移動することができます。
     - 受信トレイ
@@ -108,7 +108,7 @@ ms.locfileid: "49561293"
   次の図は、アクションセンターで提出物がどのように表示されるかを示しています。 修復には複数の送信を含めることができます。 複数のアクションが1つの自動調査で承認された場合、各電子メールまたは電子メールクラスターアクションは、異なる送信と同じ修復に表示されます。
 
   > [!div class="mx-imgBorder"]
-  > [![ZAP 電子メールクラスターのフライアウトパネル。 ](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
+  > [![ZAP 電子メールクラスターのフライアウトパネル。](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
   [メール送信] アイテムを選択して、クエリ (自動調査、またはクエリを選択することで修復がトリガーされた場合)、修復の開始時刻と終了時刻を表示するなど、その修復の詳細を表示します。 また、修復のために送信されたメッセージの一覧も表示します。 メッセージが脅威エクスプローラの保持期間外に移動すると、メッセージはこのリストから消去されます。 この一覧には、remediable の個々のメッセージも表示されます。
 
@@ -129,7 +129,7 @@ ms.locfileid: "49561293"
   - **Failure**: remediable 電子メールで必要なアクションが失敗しました。 たとえば、管理者がメールボックスからメールを削除しようとすると、管理者はメールを削除する操作を実行します。 アクションが実行された後もメールボックス内で remediable 電子メールが見つかった場合、状態は [失敗] と表示されます。
 
   アクションログで、修復の詳細を表示するアイテムを選択します。 詳細が "成功" または "メールボックス内に見つかりません" と言う場合は、そのアイテムはメールボックスから既に削除されています。 修復中に体系的なエラーが発生することがあります。 そのような場合は、修復を再試行することをお勧めします。
-  
+
   修復の大規模なバッチの場合は、メールの送信と、アクションログによって修復されたメッセージを使用して、[修復のために送信する] メッセージをエクスポートすることもできます。 エクスポートの制限は、10万レコードに増加します。
 
   修復は、脅威を軽減し、疑わしいメールに対処するための強力なツールです。 組織のセキュリティを確保するのに役に立ちます。

@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) をセットアップしてオンプレミスの電子メール環境を保護する方法について説明します。
-ms.openlocfilehash: 53386b700c2a2832cf16d47da0678dfb91c5b6d7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197169"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615674"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>スタンドアロンの EOP サービスをセットアップする
 
@@ -29,7 +29,9 @@ ms.locfileid: "48197169"
 このトピックでは、スタンドアロンの Exchange Online Protection (EOP) を設定する方法について説明します。 Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。 コネクタの構成方法の詳細については、「[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)」をご覧ください。
 
 > [!NOTE]
-> このトピックは、対象とする社内メールボックスがあり、それらをスタンドアロン シナリオとして知られている EOP で保護する場合を前提としています。 Exchange Online によりクラウド上のすべてのメールボックスをホストする場合、このトピックに記載されているすべての作業を行う必要はありません。 「 [Exchange Online プランの比較](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) 」に移動して、クラウドメールボックスをサインアップして購入します。 社内メールボックスの一部をホストし、一部をクラウド上に置く場合は、ハイブリッド シナリオと呼びます。 この場合、より高度なメール フローの設定が必要です。 「 [Exchange Server のハイブリッド展開](https://docs.microsoft.com/exchange/exchange-hybrid)」には、ハイブリッドメールフローについての説明と、設定方法を示すリソースへのリンクがあります。
+> このトピックは、対象とする社内メールボックスがあり、それらをスタンドアロン シナリオとして知られている EOP で保護する場合を前提としています。 Exchange Online によりクラウド上のすべてのメールボックスをホストする場合、このトピックに記載されているすべての作業を行う必要はありません。 「 [Exchange Online プランの比較](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) 」に移動して、クラウドメールボックスをサインアップして購入します。
+>
+> 社内メールボックスの一部をホストし、一部をクラウド上に置く場合は、ハイブリッド シナリオと呼びます。 この場合、より高度なメール フローの設定が必要です。 「 [Exchange Server のハイブリッド展開](https://docs.microsoft.com/exchange/exchange-hybrid)」には、ハイブリッドメールフローについての説明と、設定方法を示すリソースへのリンクがあります。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
@@ -96,4 +98,6 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 - 送信電子メールのテストを実行する場合は、組織内のユーザーから Web ベースの電子メール アカウントに電子メールを送信し、メッセージが受信されたかを確認できます。
 
 > [!TIP]
-> セットアップが完了したら、EOP を使用してスパムやマルウェアを削除するために、特別な手順を実行する必要はありません。 EOP はスパムやマルウェアを自動的に削除します。 ただし、ビジネス要件に基づいて設定を微調整することができます。 詳細については、「 [Office 365 のスパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md) 」および「 [Configure スプーフ知能](learn-about-spoof-intelligence.md)」を参照してください。 <br/><br/> サービスが実行されたので、 [EOP を構成するためのベストプラクティス](best-practices-for-configuring-eop.md)を読み取ることをお勧めします。これは、EOP のセットアップ後に推奨される設定と考慮事項について説明します。
+> セットアップが完了したら、EOP を使用してスパムやマルウェアを削除するために、特別な手順を実行する必要はありません。 EOP はスパムやマルウェアを自動的に削除します。 ただし、ビジネス要件に基づいて設定を微調整することができます。 詳細については、「 [Office 365 のスパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md) 」および「 [Configure スプーフ知能](learn-about-spoof-intelligence.md)」を参照してください。
+>
+> サービスが実行されたので、 [EOP を構成するためのベストプラクティス](best-practices-for-configuring-eop.md)を読み取ることをお勧めします。これは、EOP のセットアップ後に推奨される設定と考慮事項について説明します。

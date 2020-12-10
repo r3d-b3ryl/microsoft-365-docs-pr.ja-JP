@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 管理者は、検疫タグを使用して、検疫済みメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
-ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572671"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616010"
 ---
 # <a name="quarantine-tags"></a>検疫タグ
 
@@ -87,7 +87,7 @@ EOP は、従来、 [検疫](find-and-release-quarantined-messages-as-a-user.md)
        - **受信者が検疫から解放されるメッセージを要求できるようにする**
 
      - **受信者が検疫済みメッセージに対して実行できる追加のアクションを選択** します。以下のいずれかの値を選択します。
-       - **Delete**
+       - **削除**
        - **プレビュー**
        - **送信者を許可する**
        - **受信拒否**
@@ -161,7 +161,9 @@ New-QuarantineTag -Name NoAccess -EndUserQuarantinePermissionsValue 0
 _EndUserQuarantinePermissionsValue_ パラメーターを使用して検疫タグを作成するには、次の手順を実行します。
 
 A. **QuarantinePermissions** コマンドレットを使用して、変数に検疫アクセス許可オブジェクトを格納します。
-<br/>
+
+<p>
+
 B. 変数は、 **QuarantineTag** コマンドの _EndUserQuarantinePermissions_ 値として使用します。
 
 ##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>手順 A: 検疫アクセス許可オブジェクトを変数に格納する
@@ -226,7 +228,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 |機能|検疫タグはサポートされていますか?|使用される既定の検疫タグ|
 |---|:---:|---|
-|[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**信頼度の高いスパム** (_HighConfidenceSpamAction_)</li><li>**フィッシング電子メール** (_PhishSpamAction_)</li><li>**高信頼フィッシング電子メール** (_HighConfidencePhishAction_)</li><li>**バルクメール** (_BulkSpamAction_)</li></ul>|必要|<ul><li>DefaultSpamTag (フルアクセス)</li><li>DefaultHighConfSpamTag (フルアクセス)</li><li>DefaultPhishTag (フルアクセス)</li><li>DefaultHighConfPhishTag (アクセス不可)</li><li>DefaultBulkTag (フルアクセス)</li></ul>
+|[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**信頼度の高いスパム** (_HighConfidenceSpamAction_)</li><li>**フィッシング電子メール** (_PhishSpamAction_)</li><li>**高信頼フィッシング電子メール** (_HighConfidencePhishAction_)</li><li>**バルクメール** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultSpamTag (フルアクセス)</li><li>DefaultHighConfSpamTag (フルアクセス)</li><li>DefaultPhishTag (フルアクセス)</li><li>DefaultHighConfPhishTag (アクセス不可)</li><li>DefaultBulkTag (フルアクセス)</li></ul>
 |フィッシング対策ポリシー: <ul><li>[スプーフィングインテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_authenticationfailaction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装ユーザーによって電子メールが送信される場合** (_targeteduserprotectionaction_)</li><li>**偽装ドメインによって電子メールが送信される場合** (_targeteddomainprotectionaction_)</li><li>**メールボックスインテリジェンス** \>**偽装ユーザーによって電子メールが送信される場合**(_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|いいえ|該当なし|
 |[マルウェア対策ポリシー](configure-anti-malware-policies.md): 検出されたすべてのメッセージが常に検疫されます。|いいえ|該当なし|
 |[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)|いいえ|該当なし|
@@ -246,11 +248,11 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 2. 編集する既存のスパム対策ポリシーを検索して選択するか、新しいスパム対策ポリシーを作成します。
 
 3. ポリシーの詳細ポップアップで、[ **スパムと一括アクション** ] セクションを展開します。
-  
+
 4. [利用可能なスパムフィルター処理] verdict のアクションに対して [ **検疫メッセージ** ] を選択した場合、[ **検疫ポリシータグを適用** します] ボックスを使用して、その verdict の検疫タグを選択できます。
 
    **注**: 新しいポリシーを作成すると、スパムフィルター verdict の空の検疫タグ値は、その verdict が使用されている既定の quarantine タグを示します。 後でポリシーを編集すると、空の値は、前の表で説明したように、実際の既定の検査タグ名に置き換えられます。
-  
+
    ![スパム対策ポリシーでのタグ選択の検疫](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. 完了したら、**[保存]** をクリックします。
@@ -516,7 +518,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 - **検疫済みメッセージの詳細**:
   - アクセス許可: [ **メッセージの解放** ] ボタンを使用できます。
   - アクセス許可が無効: [ **メッセージの解放** ] ボタンは使用できません。
-  
+
 - **エンドユーザーのスパム通知**:
   - アクセス許可: [ **リリース** ] ボタンを使用できます。
   - アクセス許可が無効: **リリース** ボタンは使用できません。

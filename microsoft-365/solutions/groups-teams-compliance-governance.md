@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、チーム、および SharePoint コラボレーションのコンプライアンスオプションについて説明します。
-ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377535"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613632"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 グループ、チーム、および SharePoint コラボレーションのコンプライアンスオプション
 
@@ -113,8 +113,10 @@ Teams の DLP は、機密情報を含むメッセージを削除することで
 
 ## <a name="related-topics"></a>関連項目
 
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
+
 [Exchange Online のセキュリティとコンプライアンス](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [情報を保護する](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
-
-

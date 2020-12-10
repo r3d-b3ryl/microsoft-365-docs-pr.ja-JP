@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357401"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616178"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能の誤検知/ネガを報告する方法
 
@@ -36,7 +36,7 @@ ms.locfileid: "49357401"
 **適用対象:**
 - Microsoft Defender for Office 365
 
-[Office 365 ミスの自動化された調査と応答 (AIR) 機能](automated-investigation-response-office.md)が、誤って検出されたのでしょうか。 この問題を解決するには、以下の手順を実行します。 次の操作を行うことができます:
+[Office 365 ミスの自動化された調査と応答 (AIR) 機能](automated-investigation-response-office.md)が、誤って検出されたのでしょうか。 この問題を解決するには、以下の手順を実行します。 以下のことを実行できます。
 
 - [False 正/負の値を Microsoft に報告し](#report-a-false-positivenegative-to-microsoft-for-analysis)ます。
 - [通知を調整し](#adjust-an-alert-to-prevent-false-positives-from-recurring) ます (必要な場合)。そして
@@ -79,9 +79,9 @@ Office 365 に加えて、 [エンドポイントに Microsoft Defender](https:/
 
 アクションセンターでは、実行された修復アクションを確認し、アクションを元に戻す可能性があります。
 
-1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
+1. <https://protection.office.com> に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
 
-2. [**脅威管理**  >  の **調査**] に移動します。
+2. [ **脅威管理** \> の **調査**] に移動します。
 
 3. 調査の一覧で、アイテムの ID の横にある [ **新しいウィンドウで開く** ] アイコンを選択します。
 

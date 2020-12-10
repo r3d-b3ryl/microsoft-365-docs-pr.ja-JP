@@ -21,12 +21,12 @@ description: Office 365 の Microsoft Defender で自動調査および応答機
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 86414eaf0917a6cad7debc44e3f7aa604c55ae70
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357745"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614836"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の自動調査と応答 (AIR)
 
@@ -124,7 +124,7 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 |タスク|必要な役割|
 |---|---|
 |エア機能を設定する|次のいずれかの役割: <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらのロールは、 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) または [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)で割り当てることができます。|
-|自動調査を開始する <p> --- または --- <p> 推奨されるアクションを承認または拒否する|[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)または[セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)で割り当てられている次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ閲覧者 <br/>--- さらに ---</li><li>検索と削除 (この役割は [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)のみで割り当てられます。 そこに新しい役割グループを作成し、その新しい役割グループに検索役割と削除役割を追加する必要がある場合があります。</li></ul>|
+|自動調査を開始する <p> --- または --- <p> 推奨されるアクションを承認または拒否する|[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)または[セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)で割り当てられている次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)のみで割り当てられます。 そこに新しい役割グループを作成し、その新しい役割グループに検索役割と削除役割を追加する必要がある場合があります。</li></ul>|
 |
 
 ## <a name="required-licenses"></a>必要なライセンス

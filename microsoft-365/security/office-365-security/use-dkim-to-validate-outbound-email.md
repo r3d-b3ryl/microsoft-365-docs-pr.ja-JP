@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
-ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: f8ae6334a078d635de069d2fe7af351ad42d8df3
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560886"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615362"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -90,7 +90,7 @@ DKIM キーでは 1024 ビットと 2048 ビットの両方がサポートされ
    1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです)。
    1. 次のコマンドを実行します。
 
-      ```powershell 
+      ```powershell
       Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
       ```
 
@@ -131,7 +131,7 @@ DKIM を構成するには、次の手順を完了します。
 DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME レコードを発行する必要があります。
 
 > [!NOTE]
-> 記事全体を読んでいない場合は、この時間を節約する PowerShell 接続情報を見逃している可能性があります: [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです。) 
+> 記事全体を読んでいない場合は、この時間を節約する PowerShell 接続情報を見逃している可能性があります: [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです。)
 
 以下のコマンドを実行してセレクター レコードを作成します。
 
@@ -254,7 +254,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 
 後で別のカスタム ドメインを追加して、その新しいドメインに対して DKIM を有効にする場合は、各ドメインに対してこの記事の手順を完了する必要があります。 具体的には、「[DKIM を手動でセットアップする方法](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)」のすべての手順を完了します。
 
-## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>カスタム ドメインの DKIM 署名ポリシーを無効にする 
+## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>カスタム ドメインの DKIM 署名ポリシーを無効にする
 <a name="DisableDKIMSigningPolicy"> </a>
 
 署名ポリシーを無効にしても、DKIM は完全には無効になりません。 一定の期間が経過すると、Microsoft 365 はドメインの既定のポリシーを自動的に適用します。 詳細については「[DKIM と Microsoft 365 の既定の動作](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)」をご覧ください。
@@ -336,7 +336,7 @@ Return-Path: <communication@bulkemailprovider.com>
    > sender@**contoso.com**
 
    > d=**contoso.com**
-   
+
 ## <a name="identify-domains-that-do-not-send-email"></a>メールを送信しないドメインを特定する
 
 組織は、ドメインのDKIM レコードで`v=DKIM1; p=`を指定して、そのドメインがメールを送信しないことを明示的に述べる必要があります。 これにより、そのドメインには有効な公開鍵が存在しないことをメール受信サーバーに知らせ、そのドメインからのメールを拒否するように、要求します。 ワイルドカード DKIM を使用して、ドメインとサブドメインごとにこの操作を実行する必要があります。

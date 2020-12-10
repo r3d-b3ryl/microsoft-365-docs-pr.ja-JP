@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Microsoft 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チームサイトを構成します。'
-ms.openlocfilehash: e21dccb9ef535bb997d6e62b70e5576bf531041c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e056cd1d930d13e1ae20f8f8d0cdc9aa886f17e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199663"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616490"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>分離した SharePoint Online チーム サイト開発/テスト環境
 
@@ -35,9 +35,7 @@ Microsoft 365 の SharePoint Online チームサイトは、一般的なドキ�
 SharePoint Online チーム サイトへのアクセスとユーザーが実行できる操作は、SharePoint グループとアクセス許可レベルによって制御されます。既定では、SharePoint Online サイトには、3 つのアクセス レベルがあります。
 
 - **メンバー** 。サイトでリソースを表示、作成、変更できるユーザー。
-
 - **所有者** 。権限の変更を含め、サイトを完全に制御できるユーザー。
-
 - **訪問者** 。サイトのリソースの表示のみが可能なユーザー。
 
 この記事では、ProjectX という秘密調査プロジェクトのための、分離した SharePoint Online チーム サイトの構成について順を追って説明します。アクセス要件は、次のとおりです。
@@ -144,7 +142,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 図 1 は、アクセス グループとそのメンバーシップを示しています。
 
-**図 1**
+**図 1**:
 
 ![分離した SharePoint Online グループサイトの Microsoft 365 グループとそのメンバーシップ](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
@@ -152,7 +150,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 ProjectX 用の SharePoint Online チーム サイトを作成するには、次の操作を行います。
 
-1. ローカルコンピューター (軽量構成) または CLIENT1 (シミュレートされたエンタープライズ構成) のどちらかでブラウザーを使用して、 [https://admin.microsoft.com](https://admin.microsoft.com) 全体管理者アカウントを使用して Microsoft 365 管理センター () にサインインします。
+1. ローカルコンピューター (軽量構成) または CLIENT1 (シミュレートされたエンタープライズ構成) のどちらかでブラウザーを使用して、 <https://admin.microsoft.com> 全体管理者アカウントを使用して Microsoft 365 管理センター () にサインインします。
 
 2. タイルのリストで、 **[SharePoint]** をクリックします。
 
@@ -220,7 +218,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 2. 全体管理者の名前をクリックし、 **[サインアウト]** をクリックします。
 
-3. [https://admin.microsoft.com](https://admin.microsoft.com)デザイナーのリーダーのアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
+3. <https://admin.microsoft.com>デザイナーのリーダーのアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
 
 4. タイルのリストで、 **[SharePoint]** をクリックします。
 
@@ -238,7 +236,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 11. ブラウザーの **[ProjectX-Documents]** タブで、 **[新規] > [Word 文書]** の順にクリックします。
 
-12. ページに何らかのテキストを入力し、状態が [ **保存済み**] になっていることを待ってから、ブラウザーの [戻る] ボタンをクリックし、ページを更新します。 **ドキュメント**フォルダーに新しい**Document.docx**が表示されます。
+12. ページに何らかのテキストを入力し、状態が [ **保存済み**] になっていることを待ってから、ブラウザーの [戻る] ボタンをクリックし、ページを更新します。 **ドキュメント** フォルダーに新しい **Document.docx** が表示されます。
 
 13. **[Document.docx]** ドキュメントの省略記号をクリックし、 **[リンクの取得]** をクリックします。
 
@@ -250,7 +248,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 開発 VP のユーザー アカウントを使用したアクセスをデモンストレーションします。
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com)開発 VP のアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
+1. <https://admin.microsoft.com>開発 VP のアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
 
 2. タイルのリストで、 **[SharePoint]** をクリックします。
 
@@ -266,7 +264,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 権限を持たないユーザー アカウントでのアクセスをデモンストレーションします。
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com)User 3 のアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
+1. <https://admin.microsoft.com>User 3 のアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
 
 2. タイルのリストで、 **[SharePoint]** をクリックします。
 

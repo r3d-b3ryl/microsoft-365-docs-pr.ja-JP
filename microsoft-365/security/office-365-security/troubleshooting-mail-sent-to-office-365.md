@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、microsoft 365 お客様に一括メールを送信するためのベストプラクティス &、Microsoft 365 の受信トレイへの電子メールの送信に関するトラブルシューティング情報を提供します。
-ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568556"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615410"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Microsoft 365 に送信されるメールのトラブルシューティング
 
@@ -92,11 +92,11 @@ IP アドレスが EOP によって調整されたことを示す NDR を EOP �
 
 正しい:
 
-> From: marketing@shoppershandbag.com <br/> 件名: クリスマスシーズンのカタログを更新しました。
+> From: marketing@shoppershandbag.com <br> 件名: クリスマスシーズンのカタログを更新しました。
 
 正しくない:
 
-> From: someone@outlook.com <br/> 件名: カタログ
+> From: someone@outlook.com <br> 件名: カタログ
 
 送信元について、また実行内容について分かりやすくすれば、ほとんどのスパム フィルターに引っかかることなく配信しやすくなります。
 

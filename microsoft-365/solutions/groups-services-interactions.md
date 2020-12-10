@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: グループサービスの相互作用
-ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 6d5681b11cdbd837f784b6c8364cce23f964b167
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377631"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613228"
 ---
 # <a name="groups-services-interactions"></a>グループサービスの相互作用
 
@@ -95,8 +95,8 @@ Web SharePoint Stream の Outlook Planner プロジェクト Microsoft Teams Yam
 |Planner|**新しいプラン** グループの作成がオフになっていること、および既存のグループへのプランの追加を提供することを説明します。|
 |Web およびロードマップのプロジェクト|[**グループの作成**] メニューグループの作成が制限されていて、既存のグループを使用していることを説明します。|
 |SharePoint|グループに接続されていないチームサイトを作成することはできます。|
-|Stream|[**作成] メニュー**の下に [**グループ**] オプションは表示されません。|
-|Teams|ユーザーが新しいグループを使用してチームを作成することはできませんが、既存のグループを利用するチームを作成することはできます。<br><br>[**チームの作成**] ボタンは、**グループからのチームの作成**に置き換えられました。|
+|Stream|[**作成] メニュー** の下に [**グループ**] オプションは表示されません。|
+|Teams|ユーザーが新しいグループを使用してチームを作成することはできませんが、既存のグループを利用するチームを作成することはできます。<br><br>[**チームの作成**] ボタンは、**グループからのチームの作成** に置き換えられました。|
 |Yammer|[**グループの作成**] オプションは、メイングループ/コミュニティナビゲーションから削除されます。|
 
 ## <a name="services-interactions-with-groups"></a>サービスとグループの相互作用
@@ -111,21 +111,21 @@ Web SharePoint Stream の Outlook Planner プロジェクト Microsoft Teams Yam
 
 |製品|機能|サービス<br>グループを使用しない場合|サービスを使用できます。<br>グループを作成する|を削除します。<br>インスタンスはグループを削除しますか?|
 |:---|:---|:---|:---|:---|
-|Azure AD|メンバーシップ、グループ制御、ゲスト|はい|はい|必要|
-|Exchange|予定表、メールボックス|はい|はい|必要|
-|フォーム|フォーム|必要|いいえ|いいえ|
-|OneNote|ノートブック|必要|いいえ|いいえ|
-|Planner|タスクボード|いいえ|はい|必要|
-|Power Apps アプリ|アプリ|必要|いいえ|いいえ|
-|Power Automate|ワークフロー|必要|いいえ|いいえ|
-|Power BI (クラシック)|Workspace|いいえ|はい|必要|
-|Power BI (新機能)|Workspace|必要|いいえ|はい|
-|Project for the web|Project plan|はい|必要|いいえ|
-|ロードマップ|ロードマップ|はい|必要|いいえ|
-|SharePoint|Site|はい|はい|必要|
-|Stream|チャネル、ビデオ|はい|はい|必要|
-|Teams|チーム|いいえ|はい|必要|
-|Yammer|Group|はい|はい|必要|
+|Azure AD|メンバーシップ、グループ制御、ゲスト|はい|はい|はい|
+|Exchange|予定表、メールボックス|はい|はい|はい|
+|フォーム|フォーム|はい|いいえ|いいえ|
+|OneNote|ノートブック|はい|いいえ|いいえ|
+|Planner|タスクボード|いいえ|はい|はい|
+|Power Apps アプリ|アプリ|はい|いいえ|いいえ|
+|Power Automate|ワークフロー|はい|いいえ|いいえ|
+|Power BI (クラシック)|Workspace|いいえ|はい|はい|
+|Power BI (新機能)|Workspace|はい|いいえ|はい|
+|Web 用 Project|Project plan|はい|はい|いいえ|
+|ロードマップ|ロードマップ|はい|はい|いいえ|
+|SharePoint|Site|はい|はい|はい|
+|Stream|チャネル、ビデオ|はい|はい|はい|
+|Teams|チーム|いいえ|はい|はい|
+|Yammer|Group|はい|はい|はい|
 
 上記の表は、Microsoft 365 サービスとのグループの相互作用の概要を示していますが、いくつかの微妙で複雑で理解する必要があります。 次のセクションでは、特定のワークロードとグループとの相互作用について詳しく説明します。
 
@@ -469,7 +469,7 @@ Power BI で新しいワークスペースを作成しても、Microsoft 365 グ
 
 はい。 Power BI でワークスペースを削除すると、グループとグループに関連付けられたサービスとコンテンツが削除されます。
 
-## <a name="project-for-the-web"></a>Project for the web
+## <a name="project-for-the-web"></a>Web 用 Project
 
 Project for web には、プロジェクト計画、ガントチャート、およびロードマップを作成する機能が用意されています。
 グループに提供される主な機能。
@@ -639,4 +639,10 @@ Yammer プラットフォームが Microsoft 365 グループに接続されて�
 **Yammer グループを削除するには、Microsoft 365 グループを削除しますか?**
 
 はい、Yammer のグループを削除すると、関連する Microsoft グループおよびグループ関連のサービスとコンテンツが削除されます。
+
+## <a name="related-topics"></a>関連項目
+
+[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
 

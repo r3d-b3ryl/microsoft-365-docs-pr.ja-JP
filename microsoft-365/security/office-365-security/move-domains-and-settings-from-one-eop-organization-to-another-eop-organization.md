@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、ドメインと設定を1つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) から別の組織に移動する方法について説明します。
-ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 485911ff7ac94c820d6f1e0f7cfa54da08943054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200505"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614824"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>ドメインと設定を EOP 組織から別の EOP 組織に移動する
 
@@ -29,7 +29,10 @@ ms.locfileid: "48200505"
 ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。1 つの EOP 組織から別の EOP 組織へ移動するのは難しい作業ですが、いくつかの基本的なリモート Windows PowerShell スクリプトを用意し、少しの準備作業を行えば、比較的短いメンテナンス期間で完了できます。
 
 > [!NOTE]
-> 設定を確実に移動できるのは、EOP スタンドアロン (Standard) 組織から別の EOP Standard または Exchange Enterprise CAL with Services (EOP Premium) 組織のいずれかへの移動、または EOP Premium 組織から別の EOP Premium 組織への移動だけです。 一部のプレミアム機能は EOP Standard 組織ではサポートされていないため、EOP Premium 組織から EOP 標準組織への移動は成功しないことがあります。 <br><br> この記事の指示は、EOP フィルターのみの組織を対象にしています。1 つの Exchange Online 組織から別の Exchange Online 組織への移動には、追加の考慮事項があります。Exchange Online 組織は、この記事の指示の適用範囲外です。
+>
+> - 設定を確実に移動できるのは、EOP スタンドアロン (Standard) 組織から別の EOP Standard または Exchange Enterprise CAL with Services (EOP Premium) 組織のいずれかへの移動、または EOP Premium 組織から別の EOP Premium 組織への移動だけです。 一部のプレミアム機能は EOP Standard 組織ではサポートされていないため、EOP Premium 組織から EOP 標準組織への移動は成功しないことがあります。
+>
+> - この記事の指示は、EOP フィルターのみの組織を対象にしています。1 つの Exchange Online 組織から別の Exchange Online 組織への移動には、追加の考慮事項があります。Exchange Online 組織は、この記事の指示の適用範囲外です。
 
 次の例では、Contoso, Ltd. 社を Contoso Suites 社に併合します。次の図は、ドメイン、メール ユーザーとグループ、および設定を、移動元 EOP 組織 (contoso.onmicrosoft.com) から移動先 EOP 組織 (contososuites.onmicrosoft.com) に移動するプロセスを示しています。
 
@@ -42,21 +45,14 @@ ms.locfileid: "48200505"
 移動元の組織を移動先の組織に再作成するには、移動元の組織について次に挙げる情報を収集して保管してください。
 
 - ドメイン
-
 - メール ユーザー
-
 - グループ
-
 - スパム対策
-
   - スパム対策ポリシー (コンテンツフィルターポリシーとも呼ばれます)
   - 送信スパムフィルターポリシー
   - 接続フィルターポリシー
-
 - マルウェア対策ポリシー
-
 - コネクタ
-
 - メール フロー ルール (トランスポート ルールとも呼ばれます)
 
   > [!NOTE]
@@ -252,7 +248,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>手順 5: 移動先の組織のドメインを検証する
 
-1. の管理センターにサインイン [https://portal.office.com](https://portal.office.com) します。
+1. の管理センターにサインイン <https://portal.office.com> します。
 
 2. **[ドメイン]** をクリックします。
 

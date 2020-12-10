@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Office 365 セキュリティ & コンプライアンスセンターの通知機能を使用して、アラートの表示と管理を行う方法について説明します。詳細な通知の管理を含みます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: a40e880315b49620c372cf09416457c1bcaa00e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984890"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615050"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのアラート
 
@@ -50,9 +50,9 @@ ms.locfileid: "48984890"
 
 1. 職場または学校のアカウントを使用してサインインします。
 
-2. 左上隅にあるアプリ起動ツールをクリックし、[ **セキュリティ & コンプライアンス** ] をクリックします。
+2. 左上隅にあるアプリ起動ツールをクリックし、[ **セキュリティ & コンプライアンス**] をクリックします。
 
-   アプリが見つからない場合は、アプリ起動ツールから、[ **すべてのアプリ** ] を選択して、利用できる Office 365 アプリのアルファベット順の一覧を表示します。そこから、特定のアプリを検索できます。
+   アプリが見つからない場合は、アプリ起動ツールから、[**すべてのアプリ**] を選択して、利用できる Office 365 アプリのアルファベット順の一覧を表示します。そこから、特定のアプリを検索できます。
 
 3. 左側のウィンドウで、[ **警告** ] をクリックして通知機能を表示します。
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '利用状況分析が API に接続する方法について説明し、さまざまな Microsoft 365 サービスの利用状況の月単位の傾向を示します。  '
-ms.openlocfilehash: 9d13d979e64a68aaffb3582ad6b09ab901843cd4
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841377"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611450"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
@@ -215,8 +215,8 @@ Microsoft 365 usage analytics は、多次元データモデルを公開する A
 |DocumentCount  <br/> |Timeframe の最後にサイトに存在していたドキュメントの数です。  <br/> |
 |Diplan sed  <br/> |Timeframe の最後にすべてのサイト全体で集計した使用済み記憶域の合計です。  <br/> |
 |ActivityType  <br/> |ファイル アクティビティのさまざまな種類 (任意/アクティブなファイル/外部共有ファイル/内部共有ファイル/同期されているファイル) が記録されているサイトの数。  <br/> 実行されたファイルアクティビティのいずれかを表します。  <br/> |
-|SitesWithOwnerActivities  <br/> |サイトの所有者が自分のサイトで特定のファイル アクティビティを実行したアクティブ サイト数です。  <br/> |
-|(所有) 非所有者アクティビティ  <br/> |サイトの所有者以外のユーザーがその月にサイトで特定のファイルのアクティビティを実行したアクティブ サイト数の合計です。  <br/> |
+|SitesWithOwnerActivities  <br/> |サイトの所有者が自分のサイトで特定のファイル アクティビティを実行したアクティブ サイト数です。 サイト所有者は、PowerShell コマンド **get-sposite** から取得できます。 これは、サイトの責任者です。   <br/> |
+|(所有) 非所有者アクティビティ  <br/> |サイトの所有者以外のユーザーがその月にサイトで特定のファイルのアクティビティを実行したアクティブ サイト数の合計です。 サイト所有者は、PowerShell コマンド **get-sposite** から取得できます。 これは、サイトの責任者です。 <br/> |
 |ActivityTotalSites  <br/> |その Timeframe でアクティビティを記録したサイトの数です。サイトで Timeframe の前半にアクティビティが存在し、Timeframe の終わりまでに削除された場合でも、その Timeframe のアクティブ サイトの合計で数えられます。  <br/> |
 |Timeframe  <br/> |この列は、日付の値を持っています。予定表テーブルに対する多対 1 のリレーションシップとして使用されます。  <br/> |
 |Content Date  <br/> |Timeframe が現在の月を示している場合、この値はデータが利用できる現在の月の最後の日付を表します。  <br/> Timeframe が前月を示している場合、この値は Timeframe の月の最後の日付を表します。  <br/> |

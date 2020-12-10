@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80454477bc55ab54ae7edf14ded5b4fa49fe1530
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203361"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614908"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "48203361"
 
 このフェーズでは、選挙運動を務める架空の組織用に Office 365 E5 と Enterprise Mobility + Security (EMS) E5 の試用版サブスクリプションを取得します。
 
-まず、「[軽量な基本構成](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)」の**フェーズ 2** の指示に従います。
+まず、「[軽量な基本構成](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)」の **フェーズ 2** の指示に従います。
 
 次に、EMS E5 試用版サブスクリプションにサインアップして、試用版サブスクリプションと同じ組織に追加します。
 
@@ -68,7 +68,7 @@ ms.locfileid: "48203361"
 
 最初に、Azure portal で一般的な選挙運動グループのセットを作成します。
 
-1. ブラウザーの別タブで、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。必要に応じて、Office 365 E5 試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。
+1. ブラウザーの別タブで、Azure portal (<https://portal.azure.com>) に移動します。必要に応じて、Office 365 E5 試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。
 
 2. Azure portal で **[Azure Active Directory] > [ユーザーとグループ] > [すべてのグループ]** の順にクリックします。
 
@@ -175,7 +175,7 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 1. ブラウザーの **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。
 
-2. ブラウザーの新しい **Microsoft 365 管理センター**のタブで、**[ユーザー]** をクリックします。
+2. ブラウザーの新しい **Microsoft 365 管理センター** のタブで、**[ユーザー]** をクリックします。
 
 3. ユーザーの一覧で **[候補]** をクリックします。
 
