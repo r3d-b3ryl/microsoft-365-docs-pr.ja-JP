@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 6064ee5c086f99ff3d5bc4c04ed4d29b87429255
-  ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+  ms.openlocfilehash: ef129fe2a7fc38ffb9cfaa8ae40322712faabbc8
+  ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/10/2020
-  ms.locfileid: "48990531"
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "49620589"
 highlightedContent:
   items:
   - title: リモート ワーカーの支援
@@ -54,10 +54,10 @@ productDirectory:
     links:
     - url: /MicrosoftTeams/quick-start-meetings-live-events
       text: Microsoft Teams での会議とライブ イベント
+    - url: solutions/deploy-voice.md
+      text: Teams 音声ソリューションを計画し展開する
     - url: /MicrosoftTeams/business-voice/whats-business-voice
       text: Microsoft 365 Business Voice
-    - url: /MicrosoftTeams/cloud-voice-landing-page
-      text: Microsoft Teams のクラウド ボイス
     - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
       text: Microsoft テレフォニー ソリューション
   - title: チームと連携する
@@ -90,14 +90,16 @@ productDirectory:
     - url: solutions/configure-teams-three-tiers-protection.md
       text: Microsoft Teams を使用して ３ つのレベルでの保護を構成する
     - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
-      text: Microsoft Defender Advanced Threat Protection の展開
+      text: Microsoft Defender for Endpoint を展開する
     - url: security/office-365-security/office-365-atp.md
-      text: Office 365 Advanced Threat Protection の展開
+      text: Microsoft Defender for Office 365 を展開する
     - url: security/office-365-security/microsoft-365-policies-configurations.md
       text: ID と デバイス アクセスの保護を構成する
   - title: 情報の保護と規制遵守
     imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
     links:
+    - url: compliance/insider-risk-solution-overview.md
+      text: Microsoft 365 のインサイダー リスク ソリューション
     - url: compliance/compliance-quick-tasks.md
       text: Microsoft 365 コンプライアンスを開始するためのクイック タスク
     - url: compliance/information-protection.md
@@ -106,8 +108,6 @@ productDirectory:
       text: 情報ガバナンスの管理
     - url: compliance/overview-data-investigations.md
       text: 内部調査と外部調査の管理
-    - url: compliance/insider-risk-management.md
-      text: インサイダー リスクの管理
   - title: デスクトップとデバイスの展開と管理
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
     links:

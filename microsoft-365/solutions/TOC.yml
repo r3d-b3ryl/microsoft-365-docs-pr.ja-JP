@@ -169,6 +169,18 @@
           href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: コンプライアンス
       items:
+        - name: Microsoft 365 のインサイダー リスク ソリューション
+          items:
+            - name: 概要
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/insider-risk-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: コミュニケーション コンプライアンス
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: インサイダー リスクの管理
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: 情報バリア
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/information-barriers-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: 特権アクセス管理
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 法令遵守アクション プラン
           items:
             - name: ISO - 推奨アクション プラン
@@ -179,6 +191,8 @@
               href: 'https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: GDPR - 推奨する対策計画
               href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+        - name: Contoso のコンプライアンス事例
+          href: 'https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-case-study?view=o365-worldwide?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Contoso の事例
       items:
         - name: Contoso Corporation 向けの Microsoft 365 ソリューション
