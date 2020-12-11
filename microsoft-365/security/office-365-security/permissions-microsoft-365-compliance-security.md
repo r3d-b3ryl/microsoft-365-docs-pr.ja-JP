@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5322a972a93ee603ef31754288e9ab9b7eb401a9
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 266d8184db5ebc79609c0a5f27c7511087ea42d0
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624724"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
 
@@ -85,7 +85,7 @@ Azure Active Directoryでこれらのロールを管理するときは、**す�
 |Microsoft Defender for Identity|[Microsoft Defender for Identity の役割グループ](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |コンプライアンス マネージャー|[コンプライアンス マネージャー](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
-|Exchange Online|[Exchange のロール ベースのアクセス制御](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
+|Exchange Online|[Exchange のロール ベースのアクセス制御](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)|
 |Intune|[Intune のロール ベースのアクセス制御](https://docs.microsoft.com/intune/role-based-access-control)|
 |管理対象デスクトップ|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Cloud App Security|[ロールベースのアクセス制御](https://docs.microsoft.com/cloud-app-security/manage-admins)|
