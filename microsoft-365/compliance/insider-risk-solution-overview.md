@@ -1,7 +1,7 @@
 ---
-title: Insider リスクソリューション
-description: Microsoft 365 で insider リスクソリューションを使用して組織のリスクを最小限に抑える方法について説明します。
-keywords: Microsoft 365、内部者のリスク、コンプライアンス
+title: インサイダー リスク ソリューション
+description: Microsoft 365 のインサイダー リスク ソリューションを使用して、組織のリスクを最小限に抑える方法について説明します。
+keywords: Microsoft 365, インサイダー リスク, コンプライアンス
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -15,62 +15,76 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 26579f9904e09dce6fa92d11850480e8fbbdfa95
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: a7a37464dc011d319021496c6d06bdf975c53f82
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624799"
 ---
-# <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 の内部者リスクソリューション
+# <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 のインサイダー リスク ソリューション
 
-Insider のリスクは、モダンワークプレースのセキュリティおよびコンプライアンスの専門家の主な懸念の1つです。 業界の調査では、一般に、特定のユーザーイベントやアクティビティに insider のリスクが関連付けられていることが示されています。 これらのリスクから組織を保護することは、容易に特定して軽減することが難しい場合があります。 内部のリスクには、さまざまな分野の脆弱性が含まれており、組織にとって重大な問題が発生する可能性があります。たとえば、知的財産が失われたり、社内の嫌がらせになったりします。 次の図は、一般的な insider のリスクの概要を示しています。
+インサイダー リスクは、最新の職場におけるセキュリティとコンプライアンスの専門家の最も懸念事項の 1 つです。 業界調査では、インサイダー リスクは多くの場合、特定のユーザー イベントやアクティビティに関連付けられていることが示されています。 これらのリスクから組織を保護することは、識別が困難で軽減が困難な場合があります。 インサイダー リスクには、さまざまな分野の脆弱性が含まれます。また、知的財産の喪失から職場のハラスメントなど、組織にとって大きな問題を引き起こす可能性があります。 次の図は、一般的なインサイダー リスクの概要を示しています。
 
-![Insider リスクの脅威](../media/ir-solution-threats.png)
+![インサイダー リスクの脅威](../media/ir-solution-threats.png)
 
-Microsoft 365 リスク防止機能は、insider のリスク製品とソリューションに対して設計され、組み込まれています。 これらのソリューションは連携して機能し、高度なサービスとサードパーティの指標を使用して、リスクアクティビティを迅速に特定し、トリアージし、操作するのに役立ちます。 ほとんどのソリューションは、データアナリストと調査担当に対して、これらのリスクを迅速に行動して最小化するために使用する、包括的な検出、アラート、および修復のワークフローを提供します。
+Microsoft 365 のリスク防止機能は、インサイダー リスク製品とソリューションに設計され、組み込みされています。 これらのソリューションは一緒に動作し、高度なサービスとサードパーティのインジケーターを使用して、リスク アクティビティをすばやく特定、トリアージ、および行動するのに役立ちます。 ほとんどのソリューションは、データ アナリストや調査担当者がこれらのリスクに迅速に対応し、最小限に抑えるために使用するための包括的な検出、警告、修復ワークフローを提供します。
 
-| | **生じ** | **通信コンプライアンス** | **インサイダー リスクの管理** | **情報障壁** | **特権アクセスの管理** |
+| | リスク | コミュニケーション コンプライアンス | インサイダー リスクの管理 | 情報バリア | 特権アクセス管理 |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
-| ![Data 流出 icon](../media/ir-risk-data-spillage.png)| データ流出 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |  |
-| ![機密違反アイコン](../media/ir-risk-confidentiality-violations.png)| 機密違反 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |
-| ![IP 窃盗アイコン](../media/ir-risk-ip-theft.png)| IP 窃盗 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |
-| ![Workplace 暴力アイコン](../media/ir-risk-workplace-violence.png)| Workplace 暴力 | ![サポート済み](../media/check-mark.png) |  |  |  |
-| ![詐欺/窃盗のアイコン](../media/ir-risk-fraud.png)| 詐欺 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |  |
-| ![ポリシー違反アイコン](../media/ir-risk-policy-violations.png)| ポリシー違反 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |
-| ![Insider トレーディング/ハンドシェイクアイコン](../media/ir-risk-insider-trading.png)| インサイダー取引 | ![サポート済み](../media/check-mark.png) |  |  |  |
-| ![利息アイコンの競合](../media/ir-risk-conflicts-of-interest.png)| 目的の競合 | ![サポート済み](../media/check-mark.png) |  | ![サポート済み](../media/check-mark.png) |  |
-| ![機密データのリーク/デバイスのアイコン](../media/ir-risk-sensitive-data-leaks.png)| 機密データのリーク | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |  |
-| ![Workplace 嫌がらせ/people アイコン](../media/ir-risk-workplace-harassment.png)| Workplace 嫌がらせ | ![サポート済み](../media/check-mark.png) |  |  |  |
-| ![セキュリティ違反アイコン](../media/ir-risk-security-violations.png)| セキュリティ違反 |  | ![サポート済み](../media/check-mark.png) |  | ![サポート済み](../media/check-mark.png) |
-| ![法令遵守違反のアイコン](../media/ir-risk-regulatory-compliance-violations.png)| 規制遵守違反 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |
+| ![データ流出アイコン](../media/ir-risk-data-spillage.png)| データ流出 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![[機密保持違反] アイコン](../media/ir-risk-confidentiality-violations.png)| 機密違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
+| ![IP 盗難アイコン](../media/ir-risk-ip-theft.png)| IP 盗難 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
+| ![職場の暴力アイコン](../media/ir-risk-workplace-violence.png)| 職場の暴力 | ![サポート](../media/check-mark.png) |  |  |  |
+| ![詐欺/盗盗アイコン](../media/ir-risk-fraud.png)| 詐欺 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![ポリシー違反アイコン](../media/ir-risk-policy-violations.png)| ポリシー違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
+| ![Insider の取引/ハンドシェイク アイコン](../media/ir-risk-insider-trading.png)| インサイダー取引 | ![サポート](../media/check-mark.png) |  |  |  |
+| ![[競合] アイコン](../media/ir-risk-conflicts-of-interest.png)| 利害の競合 | ![サポート](../media/check-mark.png) |  | ![サポート](../media/check-mark.png) |  |
+| ![機密性の高いデータ漏洩/デバイス アイコン](../media/ir-risk-sensitive-data-leaks.png)| 機密性の高いデータの漏洩 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![職場のワークプレース/人のアイコン](../media/ir-risk-workplace-harassment.png)| 職場のハラスメント | ![サポート](../media/check-mark.png) |  |  |  |
+| ![セキュリティ違反アイコン](../media/ir-risk-security-violations.png)| セキュリティ違反 |  | ![サポート](../media/check-mark.png) |  | ![サポート](../media/check-mark.png) |
+| ![規制コンプライアンス違反アイコン](../media/ir-risk-regulatory-compliance-violations.png)| 規制遵守違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
 
-## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 insider のリスク解決策
+## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 インサイダー リスク ソリューション
 
-内部のリスクから組織を保護するために、これらの Microsoft 365 の機能と機能を使用してください。
+インサイダー リスクから組織を保護するには、次の Microsoft 365 の機能を使用します。
 
-| **ソリューション/機能** | **説明** | **ライセンス** |
+| ソリューション/機能 | 説明 | ライセンス |
 | :------------------------ | :-------------- | :------------ |
-| 通信コンプライアンス | コミュニケーションの法令遵守は、組織内の不適切なメッセージを検出、取得、および処理できるようにすることによって、通信リスクを最小限に抑えるために役立ちます。 | Microsoft 365 E5 <br> Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider リスク管理アドオン <br> Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンスアドオン |
-| インサイダー リスクの管理 | Insider リスク管理は、組織内の悪意のある偶発的なアクティビティを検出、調査、および行動できるようにすることにより、内部リスクを最小限にします。 | Microsoft 365 E5 <br> Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider リスク管理アドオン <br> Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンスアドオン |
-| 情報バリア | 情報バリアを使用すると、2つの内部グループ間の通信とコラボレーションを制限して、組織での重複が発生することを防ぐことができます。  | Microsoft 365 E5/A5 <br> Office 365 E5/A5 <br> Office 365 Advanced Compliance <br> Microsoft 365 コンプライアンス E5/A5 <br> Microsoft 365 Insider リスク管理 |
-| 特権アクセス管理 | 特権アクセス管理を使用すると、Office 365 で権限のある Exchange Online 管理タスクに対するきめ細かいアクセス制御が可能になります。 これは、機密データや重要な構成設定への継続的なアクセス権を持つ既存の特権管理アカウントが使用される違反から組織を保護するために役立ちます。 | Microsoft 365 E5/A5 <br> Office 365 E5/A5 <br> Microsoft 365 E5/A5 コンプライアンス <br> Microsoft 365 E5/A5 情報の保護とガバナンス |
+| コミュニケーション コンプライアンス | 通信コンプライアンスは、組織内の不適切なメッセージの検出、キャプチャ、および処理を支援することで、通信リスクを最小限に抑えるのに役立ちます。 | Microsoft 365 E5 <br> Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider Risk Management アドオン <br> Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンス アドオン |
+| インサイダー リスクの管理 | インサイダー リスク管理は、組織内の悪意のあるアクティビティや不注意なアクティビティを検出、調査、および処理できる内部リスクを最小限に抑えるのに役立ちます。 | Microsoft 365 E5 <br> Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider Risk Management アドオン <br> Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンス アドオン |
+| 情報バリア | 情報バリアを使用すると、2 つの内部グループ間の通信とコラボレーションを制限して、組織内で利益の競合が発生しないようにすることができます。  | Microsoft 365 E5/A5 <br> Office 365 E5/A5 <br> Office 365 Advanced Compliance <br> Microsoft 365 コンプライアンス E5/A5 <br> Microsoft 365 Insider Risk Management |
+| 特権アクセス管理 | 特権アクセス管理を使用すると、Exchange 365 で特権を持つ Exchange Online 管理者タスクに対する詳細Office制御できます。 これは、機密データや重要な構成設定への継続的なアクセス権を持つ既存の特権管理アカウントが使用される違反から組織を保護するために役立ちます。 | Microsoft 365 E5/A5 <br> Office 365 E5/A5 <br> Microsoft 365 E5/A5 コンプライアンス <br> Microsoft 365 E5/A5 情報保護とガバナンス |
 
-## <a name="deploy-microsoft-365-insider-risk-solutions"></a>Microsoft 365 insider のリスクソリューションを展開する
+## <a name="deploy-microsoft-365-insider-risk-solutions"></a>Microsoft 365 インサイダー リスク ソリューションを展開する
 
-内部者のリスクから組織を保護するために、次の Microsoft 365 ソリューションをセットアップして展開します。
+インサイダー リスクから組織を保護するには、次の Microsoft 365 ソリューションをセットアップして展開します。
 
-![Insider リスクソリューション多層防御](../media/ir-solution-defense-in-depth.png)
+![インサイダー リスク ソリューションの詳細な防御](../media/ir-solution-defense-in-depth.png)
 
-1. [通信コンプライアンスポリシー](communication-compliance-solution-overview.md)を構成および作成する
-2. [Insider リスク管理ポリシー](insider-risk-management-solution-overview.md)を構成および作成する
-3. オプション:[情報バリアポリシー](information-barriers-solution-overview.md)を構成および作成する
-4. オプション:[特権アクセス管理](privileged-access-management-solution-overview.md)を有効にして構成する
+1. 通信コンプライアンス ポリシー [を構成および作成します](communication-compliance-solution-overview.md)。
+2. インサイダー リスク管理 [ポリシーを構成および作成します](insider-risk-management-solution-overview.md)。
+3. オプション: 情報バリア ポリシー [を構成および作成します](information-barriers-solution-overview.md)。
+4. オプション: 特権アクセス管理 [を有効にして構成します](privileged-access-management-solution-overview.md)。
 
-## <a name="illustrations-with-examples"></a>例の図
+## <a name="illustrations-with-examples"></a>例を含む図
 
-Microsoft 365 insider のリスク機能を実装するための統合戦略を計画するのに役立つように、 *microsoft 365 information protection およびコンプライアンス機能* セットの図をダウンロードしてください。 Insider のリスク機能については、アーキテクチャの図のトピック5-7 を参照してください。 これらのイラストを自分の用途に合わせて自由にアレンジしてください。
+Microsoft 365 インサイダー リスク機能を実装するための統合戦略を計画する場合は *、Microsoft 365* の情報保護およびコンプライアンス機能セットの図をダウンロードしてください。 インサイダー リスク機能については、アーキテクチャの図のトピック 5 から 7 を参照してください。 これらのイラストを自分の用途に合わせて自由にアレンジしてください。
 
 | アイテム | 説明 |
-|:-----|:-----|
-|[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> PDF とし[てダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \|[Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 2020年10月更新|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスクの管理</li><li>サードパーティのデータの取り込み</li>|
+|:-----|:------------|
+|[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [PDF としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \|[Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 更新日: 2020 年 10 月|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスクの管理</li><li>サードパーティのデータの取り込み</li>|
+
+## <a name="training"></a>トレーニング
+
+各インサイダー リスク ソリューションの基本に関する管理者とコンプライアンス チームのトレーニングは、展開と実装の取り組みにより、組織の作業を迅速に開始するのに役立ちます。 
+
+Microsoft 365 には、組織内のこれらのユーザーに通知およびトレーニングを行う際に役立つ次のリソースが提供されています。
+
+| ソリューション/エリア | リソース |
+|:------------------|:--------------|
+| Microsoft 365 で insider リスクを管理する |[完全なラーニング パス](/learn/paths/m365-compliance-insider) <br> このラーニング パスには、通信コンプライアンス、インサイダー リスク管理、情報障壁、特権アクセス管理のための個々のソリューション モジュールすべてが含まれています。 すべてのモジュールを完了するには、このラーニング パスを選択します。 |
+| コミュニケーション コンプライアンス | [学習モジュール: Microsoft 365 で通信コンプライアンスを準備する](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> このモジュールは、通信コンプライアンスを使用して実施コード ポリシー違反を特定して修復する方法、通信コンプライアンス ポリシーを作成する前に必要な前提条件をカバーする方法、および通信コンプライアンスの組み込みの定義済みポリシー テンプレートの種類について説明する方法の基本を学習するのに役立ちます。 |
+| インサイダー リスクの管理 | [学習モジュール: Microsoft 365 でのインサイダー リスク管理](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> このモジュールは、Microsoft 365 のインサイダー リスク管理が組織内の内部リスクの防止、検出、および格納に役立つ方法、組み込みの定義済みポリシー テンプレートの種類、インサイダー リスク ポリシーを作成する前に必要な基本的な前提条件を理解する方法、およびインサイダー リスク管理ケースに対して実行できるアクションの種類について説明します。 |
+| 情報バリア | [学習モジュール: 情報障壁を計画する](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> このモジュールは、情報バリア ポリシーを使用して、組織が関連する業界標準と規制への準拠を維持する方法、情報障壁が適用される状況の種類を示す方法、情報バリア ポリシーを作成するプロセスを説明する方法、および情報障壁が設定された後の予期しない問題のトラブルシューティング方法を説明するのに役立ちます。 |
+| 特権アクセス管理 | [学習モジュール: 特権アクセス管理を実装する](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> このモジュールは、特権アクセス管理と特権 ID 管理の違いを理解し、特権アクセス管理プロセス フローを理解し、特権アクセス管理を構成および有効にする方法の基本を理解するのに役立ちます。 |

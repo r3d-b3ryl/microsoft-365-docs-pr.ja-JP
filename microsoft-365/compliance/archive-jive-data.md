@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 で Jive データをアーカイブするためのコネクタをセットアップする
+title: Microsoft 365 で Jive データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,82 +11,78 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Microsoft 365 の Globanet から Jive データをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 9017e6a7e26c823243abe188328cf62a22ea91c6
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+description: 管理者は、Microsoft 365 の Globanet から Jive データをインポートおよびアーカイブするコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースのデータをアーカイブして、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: e89404362505dbe276e351e95ebd30a0c0bdf88c
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816560"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620394"
 ---
-# <a name="set-up-a-connector-to-archive-jive-data"></a>Jive データをアーカイブするためのコネクタの設定
+# <a name="set-up-a-connector-to-archive-jive-data"></a>Jive データをアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、コラボレーションプラットフォームから Microsoft 365 組織のユーザーメールボックスへのデータのインポートとアーカイブを行います。 Globanet には、サードパーティのデータソースからアイテムを取得するように構成された [Jive](https://globanet.com/jive/) コネクタがあり (定期的に)、それらのアイテムを Microsoft 365 にインポートします。 コネクタは、電子メールメッセージ、チャット、添付ファイルなどのコンテンツをユーザーの Jive アカウントから電子メールメッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、コラボレーション プラットフォームから Microsoft 365 組織内のユーザー メールボックスにデータをインポートしてアーカイブします。 Globanet は、サード パーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された [Jive](https://globanet.com/jive/) コネクタを提供します。 コネクタは、電子メール メッセージ、チャット、添付ファイルなどのコンテンツをユーザーの Jive アカウントから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
-Jive データがユーザーのメールボックスに格納された後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベル、および通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Jive コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすることで、組織は政府および規制ポリシーに準拠し続けることができます。
+Jive データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Jive コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府や規制のポリシーに準拠しつながっているのに役立ちます。
 
-## <a name="overview-of-archiving-jive-data"></a>Jive データのアーカイブの概要
+## <a name="overview-of-archiving-jive-data"></a>アーカイブ Jive データの概要
 
 次の概要では、コネクタを使用して Microsoft 365 の Jive データをアーカイブするプロセスについて説明します。
 
-![Jive データのアーカイブワークフロー](../media/JiveConnectorWorkflow.png)
+![Jive データのアーカイブ ワークフロー](../media/JiveConnectorWorkflow.png)
 
-1. 組織は Jive を使用して、Jive サイトをセットアップおよび構成します。
+1. 組織は Jive と共同で Jive サイトをセットアップおよび構成します。
 
-2. 24時間ごとに Jive のアイテムが Globanet Merge1 サイトにコピーされます。 また、コネクタは Jive アイテムのコンテンツを電子メールメッセージの形式に変換します。
+2. 24 時間ごとに、Jive からのアイテムが Globanet Merge1 サイトにコピーされます。 コネクタは、Jive アイテムのコンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンスセンターで作成した Jive コネクタは、毎日 Globanet Merge1 サイトに接続し、そのコンテンツを Microsoft クラウド内のセキュリティ保護された Azure ストレージの場所に転送します。
+3. Microsoft 365 コンプライアンス センターで作成する Jive コネクタは、毎日 Globanet Merge1 サイトに接続し、Microsoft クラウド内のセキュリティで保護された Azure Storage の場所にコンテンツを転送します。
 
-4. このコネクタは、 [手順 3](#step-3-map-users-and-complete-the-connector-setup)で説明されているように、自動ユーザーマッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 ユーザーメールボックスに **Jive** という名前の受信トレイフォルダーに新しいサブフォルダーが作成され、そのフォルダーにアイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべての Jive item には、アイテムのすべての参加者の電子メールアドレスが設定されたこのプロパティが含まれています。
+4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 ユーザー メールボックスに **Jive** という名前の受信トレイ フォルダーに新しいサブフォルダーが作成され、アイテムがフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての Jive アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには、 [globanet カスタマーサポート](https://globanet.com/ms-connectors-contact/)に問い合わせてください。 このアカウントは、手順1でコネクタを作成するときにサインインします。
+- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには [、globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact/)。 このアカウントは、手順 1 でコネクタを作成するときにサインインします。
 
-- 手順1で Jive コネクタを作成したユーザー (手順3で完了します) は、Exchange Online のメールボックスのインポートのエクスポート役割に割り当てる必要があります。 この役割は、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
+- 手順 1 で Jive コネクタを作成する (および手順 3 で完了する) ユーザーは、Exchange Online の Mailbox Import Export 役割に割り当てられている必要があります。 この役割は、Microsoft 365コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていない。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
-## <a name="step-1-set-up-the-jive-connector"></a>手順 1: Jive コネクタを設定する
+## <a name="step-1-set-up-the-jive-connector"></a>手順 1: Jive コネクタをセットアップする
 
-最初の手順として、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページにアクセスし、Jive データ用のコネクタを作成します。
+最初の手順は、Microsoft 365 コンプライアンス センターの [Data **Connectors]** ページにアクセスし、Jive データ用のコネクタを作成することです。
 
-1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com/) し、[ **データコネクタ** の Jive] をクリックし  >  **Jive** ます。
+1. [データ [https://compliance.microsoft.com](https://compliance.microsoft.com/) コネクタ  >  **Jive]** に移動してクリックします。
 
-2. **Jive** 製品の説明ページで、[ **コネクタの追加** ] をクリックします。
+2. **[Jive 製品の説明]** ページで、[コネクタの追加]**をクリックします**。
 
-3. [ **サービス利用規約** ] ページで、[ **同意** する] をクリックします。
+3. [サービス条件 **] ページで、[** 承諾] を **クリックします**。
 
-4. コネクタを識別する一意の名前を入力し、[ **次へ** ] をクリックします。
+4. コネクタを識別する一意の名前を入力し、[次へ] をクリック **します**。
 
-5. Merge1 アカウントにサインインして、コネクタを構成します。
+5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
 ## <a name="step-2-configure-the-jive-connector"></a>手順 2: Jive コネクタを構成する
 
-2番目の手順は、Merge1 サイト上の Jive コネクタを構成することです。 Jive コネクタを構成する方法については、「 [Merge1 サードパーティ製コネクタユーザーガイド](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Jive%20User%20Guide.pdf)」を参照してください。
+2 番目の手順は、Merge1 サイトで Jive コネクタを構成することです。 Jive コネクタを構成する方法の詳細については [、「Merge1 Third-Party Connectors User Guide」を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Jive%20User%20Guide.pdf)。
 
-[ **保存 & 完了** ] をクリックすると、Microsoft 365 コンプライアンスセンターのコネクタウィザードの [ **ユーザーマッピング** ] ページが表示されます。
+[ Save **& Finish]** をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップしてコネクタのセットアップを完了する
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-ユーザーをマップして、Microsoft 365 コンプライアンスセンターでコネクタの設定を完了するには、次の手順を実行します。
+ユーザーをマップし、Microsoft 365 コンプライアンス センターでコネクタのセットアップを完了するには、次の手順を実行します。
 
-1. [ **Map Jive users To Microsoft 365 users** ] ページで、[自動ユーザーマッピング] を有効にします。 Jive のアイテムには、組織内のユーザーの電子メールアドレスを含む *email* というプロパティが含まれています。 コネクタがこのアドレスを Microsoft 365 ユーザーに関連付けることができる場合は、そのユーザーのメールボックスにアイテムがインポートされます。
+1. **[Jive ユーザーを Microsoft 365** ユーザーにマップする] ページで、ユーザーの自動マッピングを有効にします。 Jive アイテムには、組織内のユーザーの電子メール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスを Microsoft 365 ユーザーに関連付けできる場合、アイテムはユーザーのメールボックスにインポートされます。
 
-2. [ **管理者の同意** ] ページで、[ **同意を提供** する] をクリックします。 Microsoft サイトにリダイレクトされます。 同意を得るには、[ **承諾** ] をクリックします。
-
-   組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 管理者の同意を得るには、Microsoft 365 グローバル管理者の資格情報を使用してサインインし、同意要求を承諾する必要があります。 グローバル管理者としてサインインしていない場合は、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) に移動して、グローバル管理者の資格情報を使用してサインインし、要求を承諾することができます。
-
-3. [ **次へ** ] をクリックして設定を確認し、[ **データコネクタ** ] ページに移動して、新しいコネクタのインポート処理の進行状況を確認します。
+2. [**次へ**] をクリックして設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
 ## <a name="step-4-monitor-the-jive-connector"></a>手順 4: Jive コネクタを監視する
 
-Jive コネクタを作成した後、Microsoft 365 コンプライアンスセンターでコネクタの状態を表示できます。
+Jive コネクタを作成した後、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com)左側のナビゲーションに移動し、[ **データコネクタ** ] をクリックします。
+1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションの **[データ コネクタ]** に移動してクリックします。
 
-2. [ **コネクタ** ] タブをクリックし、[ **Jive** コネクタ] を選択して、フライアウトページを表示します。 このページには、コネクタに関するプロパティと情報が含まれています。
+2. [ **コネクタ] タブを** クリックし **、[Jive** コネクタ] を選択して、フライアウト ページを表示します。 このページには、コネクタに関するプロパティと情報が含まれる。
 
-3. [ **コネクタの状態 (ソース付き** )] の下で、[ **ログのダウンロード** ] リンクをクリックしてコネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータに関する情報が含まれています。
+3. [**コネクタの状態とソース**]で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存する) 必要があります。 このログには、Microsoft クラウドにインポートされたデータに関する情報が含まれます。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。
+- 現時点では、添付ファイルまたは 10 MB を超えるアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日利用可能になります。

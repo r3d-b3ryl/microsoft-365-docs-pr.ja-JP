@@ -1,5 +1,5 @@
 ---
-title: SMS/MMS ネットワークデータ&のアーカイブへのコネクタの設定
+title: T SMS/MMS ネットワーク データを AT&アーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,80 +11,74 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、TeleMessage コネクタをセットアップして、AT&のモバイルネットワークから SMS および MMS データをインポートおよびアーカイブすることができます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 253acb23e9ac2cd5d97dfd2aaaedecec3d91a91f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+description: 管理者は TeleMessage コネクタをセットアップして、SMS および MMS データを AT&T Mobile Network からインポートおよびアーカイブできます。 これにより、Microsoft 365 のサード パーティデータ ソースのデータをアーカイブして、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: ba728a690db4d4c31158ad68fc853c29218226cc
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408975"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620123"
 ---
-# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>SMS/MMS データ&のアーカイブへのコネクタの設定
+# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>T SMS/MMS データを AT&アーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンスセンターの TeleMessage コネクタを使用して、SMS および MMS データを&のモバイルネットワークからインポートおよびアーカイブします。 コネクタをセットアップして構成した後は、組織の&のネットワークに毎日接続し、SMS および MMS データを Microsoft 365 のメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの TeleMessage コネクタを使用して、AT&T Mobile Network から SMS および MMS データをインポートおよびアーカイブします。 コネクタをセットアップして構成した後、毎日 1 回、組織の AT&T Network に接続し、SMS および MMS データを Microsoft 365 のメールボックスにインポートします。
 
-SMS および MMS のメッセージをユーザーのメールボックスに格納した後、訴訟ホールド、コンテンツ検索、Microsoft 365 のアイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を&T ネットワークデータに適用できます。 たとえば、コンテンツ検索を使用してネットワークデータ&を検索したり、保管担当者のネットワークコネクタデータを&含むメールボックスを高度な電子情報開示ケースのに関連付けることができます。 Microsoft 365 でデータをインポートおよびアーカイブするために AT&T ネットワークコネクタを使用することにより、組織は政府および規制ポリシーに準拠し続けることができます。
+SMS および MMS メッセージがユーザー メールボックスに保存された後、訴訟ホールド、コンテンツ検索、Microsoft 365 アイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を AT&T Network データに適用できます。 たとえば、コンテンツ検索を使用して AT&T ネットワーク データを検索したり、AT&T ネットワーク コネクタ データを含むメールボックスを Advanced eDiscovery ケースの保管担当者に関連付けできます。 AT&T Network コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府や規制のポリシーに準拠しつながっているのに役立ちます。
 
-## <a name="overview-of-archiving-att-network-data"></a>&T ネットワークデータでのアーカイブの概要
+## <a name="overview-of-archiving-att-network-data"></a>AT&T ネットワーク データのアーカイブの概要
 
-次の概要は、コネクタを使用して Microsoft 365 の&T ネットワークデータにアーカイブする方法について説明しています。
+次の概要では、コネクタを使用して、Microsoft 365 の T ネットワーク&をアーカイブするプロセスについて説明します。
 
-![AT&T Network のアーカイブワークフロー](../media/ATTNetworkConnectorWorkflow.png)
+![ATT ネットワーク アーカイブ ワークフロー](../media/ATTNetworkConnectorWorkflow.png)
 
-1. 組織は TeleMessage を使用して、AT&T ネットワークコネクタを設定します。 詳細については、「 [AT&T Network Archiver](https://www.telemessage.com/office365-activation-for-atnt-network-archiver/)」を参照してください。
+1. 組織は TeleMessage と一緒に、T ネットワーク コネクタの AT&セットアップします。 詳細については、「AT&[T Network Archiver」を参照してください](https://www.telemessage.com/office365-activation-for-atnt-network-archiver/)。
 
-2. 24時間ごとに、組織の&T ネットワークの SMS および MMS メッセージは TeleMessage サイトにコピーされます。
+2. 24 時間ごとに、組織の AT ネットワークからの SMS メッセージと MMS&TeleMessage サイトにコピーされます。
 
-3. Microsoft 365 コンプライアンスセンターで作成した AT&T ネットワークコネクタが、毎日 TeleMessage サイトに接続し、SMS および MMS メッセージを、過去24時間から Microsoft クラウド内のセキュアな Azure ストレージの場所に転送します。 また、このコネクタは、SMS メッセージと MMS メッセージの内容を電子メールメッセージ形式に変換します。
+3. Microsoft 365 コンプライアンス センターで作成する AT&T ネットワーク コネクタは、毎日 TeleMessage サイトに接続し、過去 24 時間の SMS メッセージと MMS メッセージを Microsoft Cloud のセキュリティで保護された Azure Storage の場所に転送します。 コネクタは、SMS メッセージと MMS メッセージのコンテンツを電子メール メッセージ形式に変換します。
 
-4. コネクタは、特定のユーザーのメールボックスにモバイル通信アイテムをインポートします。 [ **&** ] という名前の新しいフォルダーが、ユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *ユーザーの電子メールアドレス* プロパティの値を使用して、このマッピングを行います。 すべての SMS および MMS メッセージには、このプロパティが含まれています。このプロパティには、メッセージのすべての参加者の電子メールアドレスが設定されます。
+4. コネクタは、モバイル通信アイテムを特定のユーザーのメールボックスにインポートします。 AT&**T SMS/MMS ネットワーク** アーカイブーという名前の新しいフォルダーがユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、ユーザーの電子メール アドレス プロパティの値を使用して *、このマッピングを行* います。 すべての SMS および MMS メッセージには、このプロパティが含まれるので、メッセージのすべての参加者の電子メール アドレスが設定されます。
  
-   *ユーザーの電子メールアドレス*プロパティの値を使用した自動ユーザーマッピングに加えて、CSV マッピングファイルをアップロードしてカスタムマッピングを定義することもできます。 このマッピングファイルには、組織内のユーザーの携帯電話番号と、対応する Microsoft 365 メールアドレスが含まれています。 自動ユーザーマッピングとカスタムマッピングの両方を有効にした場合、すべての電子メールアイテムに対して、コネクタは最初にカスタムマッピングファイルを参照します。 携帯電話番号に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはインポートしようとしているアイテムの [電子メールアドレス] プロパティの値を使用します。 コネクタがカスタムマッピングファイルまたは電子メールアイテムの電子メールアドレスプロパティに有効な Microsoft 365 ユーザーを見つけられない場合、アイテムはインポートされません。
+   ユーザーの電子メール アドレス プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義できます。 このマッピング ファイルには、組織内のユーザーの携帯電話番号と対応する Microsoft 365 電子メール アドレスが含まれている。 自動ユーザー マッピングとカスタム マッピングの両方を有効にした場合、すべての電子メール アイテムについて、コネクタは最初にカスタム マッピング ファイルを確認します。 携帯電話番号に対応する有効な Microsoft 365 ユーザーが見つからなかった場合、コネクタはインポートしようとしているアイテムの電子メール アドレス プロパティの値を使用します。 コネクタがカスタム マッピング ファイルまたは電子メール アイテムの電子メール アドレス プロパティに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-&T ネットワークデータでアーカイブするために必要な実装手順の一部は、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
+AT&T Network データをアーカイブするために必要な実装手順のいくつかは Microsoft 365 の外部にあるので、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 
-- [Mobile archiver service を TeleMessage から](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/)注文して、組織の有効な管理アカウントを取得します。 コンプライアンスセンターでコネクタを作成するときに、このアカウントにサインインする必要があります。
+- [TeleMessage からモバイル アーカイブ サービスを注文](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/)し、組織の有効な管理アカウントを取得します。 コンプライアンス センターでコネクタを作成するときに、このアカウントにサインインする必要があります。
 
-- TeleMessage のオンプレ&T のアカウントと請求先の連絡先の詳細を取得して、&T からメッセージアーカイブサービスの注文を行うことができるようにします。
+- TeleMessage オンボード フォームに入力し、&AT&T からメッセージ アーカイブ サービスを注文できるよう、AT&T アカウントと請求連絡先の詳細を取得します。
 
-- TeleMessage アカウントで、SMS/MMS ネットワークアーカイブを&する必要があるすべてのユーザーを登録します。 ユーザーを登録する場合は、Microsoft 365 アカウントに使用しているのと同じ電子メールアドレスを使用してください。
+- T SMS/MMS ネットワーク アーカイブ&AT を必要とするすべてのユーザーを TeleMessage アカウントに登録します。 ユーザーを登録する場合は、Microsoft 365 アカウントと同じメール アドレスを使用してください。
 
-- 従業員は、社内所有の携帯電話と会社が責任を負い、AT&のモバイルネットワークに設置する必要があります。 Microsoft 365 のメッセージのアーカイブは、従業員が所有している場合、または "独自のデバイス (BYOD) デバイスを使用している場合には利用できません。
+- 従業員は、会社が所有し、会社が責任を持つ携帯電話を AT&T モバイル ネットワーク上に持っている必要があります。 Microsoft 365 のアーカイブ メッセージは、従業員が所有するデバイスや "Bring Your Own Devices (BYOD) デバイスでは使用できません。
 
-- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この同意を得るには、コネクタを作成する必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Microsoft 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 AT&T ネットワークコネクタを正常に作成するには、この手順を完了する必要があります。
+- T ネットワーク コネクタを使用して AT&ユーザーには、Exchange Online の "Mailbox Import Export/メールボックスのインポートエクスポート" 役割が割り当てられている必要があります。 これは、Microsoft 365コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
-- AT&T ネットワークコネクタを作成したユーザーには、Exchange Online のメールボックスのインポートのエクスポート役割が割り当てられている必要があります。 これは、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
+## <a name="create-a-att-network-connector"></a>AT&T ネットワーク コネクタを作成する
 
-## <a name="create-a-att-network-connector"></a>AT&T ネットワークコネクタを作成する
+前のセクションで説明した前提条件を完了したら、Microsoft 365 コンプライアンス センターで AT&T Network コネクタを作成できます。 このコネクタは、指定した情報を使用して TeleMessage サイトに接続し、SMS メッセージと MMS メッセージを Microsoft 365 の対応するユーザー メールボックス ボックスに転送します。
 
-前のセクションで説明されている前提条件を完了した後、Microsoft 365 コンプライアンスセンターで、AT&T ネットワークコネクタを作成できます。 コネクタは、提供された情報を使用して、TeleMessage サイトに接続し、SMS および MMS メッセージを Microsoft 365 の対応するユーザーメールボックスに転送します。
+1. T [https://compliance.microsoft.com](https://compliance.microsoft.com/) Network で [データ コネクタ] に **移動**  \  **&クリックします**。
 
-1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com/) し、[**データコネクタ**] をクリックし  \  **&T Network**] をクリックします。
+2. AT&**T Network 製品の説明** ページで、[コネクタの追加] **をクリックします。**
 
-2. [ **AT&T Network product** description] ページで、[**コネクタの追加**] をクリックします。
+3. [サービス条件 **] ページで、[** 承諾] を **クリックします**。
 
-3. [ **サービス利用規約** ] ページで、[ **同意**する] をクリックします。
-
-4. [ **TeleMessage へのログイン** ] ページの [ステップ 3] で、必要な情報を次のボックスに入力し、[ **次へ**] をクリックします。
+4. **[TeleMessage へのログイン**] ページの手順 3 で、次のボックスに必要な情報を入力し、[次へ] をクリック **します**。
 
    - **ユーザー名:** TeleMessage ユーザー名。
 
-   - **パスワード:** TeleMessage のパスワードを入力します。
+   - **パスワード:** TeleMessage パスワード。
 
-5. コネクタが作成されたら、ポップアップウィンドウを閉じて次のページに進むことができます。
+5. コネクタを作成したら、ポップアップ ウィンドウを閉じて次のページに移動できます。
 
-6. [ **ユーザーマッピング** ] ページで、[自動ユーザーマッピング] を有効にします。 カスタムマッピングを有効にするには、ユーザーマッピング情報を含む CSV ファイルをアップロードし、[ **次へ**] をクリックします。
+6. [ユーザー マッピング **] ページで** 、自動ユーザー マッピングを有効にする。 カスタム マッピングを有効にするには、ユーザー マッピング情報を含む CSV ファイルをアップロードし、[次へ] をクリック **します**。
 
-7. 管理者の同意を得てから、[ **次へ**] をクリックします。
+7. 設定を確認し、[完了] を **クリックして** コネクタを作成します。
 
-   管理者の同意を得るには、Office 365 グローバル管理者の資格情報を使用してサインインし、同意要求を承諾する必要があります。 グローバル管理者としてサインインしていない場合は、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) に移動して、グローバル管理者の資格情報を使用してサインインし、要求を承諾することができます。 
-
-8. 設定内容を確認し、[ **完了** ] をクリックしてコネクタを作成します。
-
-9. コンプライアンスセンターの [**データコネクタ**] ページで、[**コネクタ**] タブに移動して、新しいコネクタのインポート処理の進行状況を確認します。
+8. コンプライアンス センターの **[データ** コネクタ] ページの [コネクタ] タブに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。
+- 現時点では、添付ファイルまたは 10 MB を超えるアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日利用可能になります。

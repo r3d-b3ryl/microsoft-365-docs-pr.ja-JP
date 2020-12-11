@@ -1,5 +1,5 @@
 ---
-title: Bloomberg メッセージデータをアーカイブするためのコネクタの設定
+title: Bloomberg メッセージ データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,128 +11,126 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Bloomberg メッセージ電子メールツールから Microsoft 365 にデータをインポートしてアーカイブするためのデータコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 8cb5575c4565153f2819e745fedc9608963299e4
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+description: 管理者は、データ コネクタをセットアップして、Bloomberg メッセージ 電子メール ツールから Microsoft 365 にデータをインポートおよびアーカイブできます。 これにより、Microsoft 365 のサード パーティデータ ソースのデータをアーカイブして、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: 0f08c4ff43cd868b95b965673cfbdd3308ed801f
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408955"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620063"
 ---
-# <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Bloomberg メッセージデータをアーカイブするためのコネクタの設定
+# <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Bloomberg メッセージ データをアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンスセンターのデータコネクタを使用して、 [Bloomberg メッセージ](https://www.bloomberg.com/professional/product/collaboration/) コラボレーションツールから金融サービスの電子メールデータをインポートおよびアーカイブします。 コネクタをセットアップして構成した後は、組織の Bloomberg secure FTP (SFTP) サイトに毎日一度接続し、メールアイテムを Microsoft 365 のメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターのデータ コネクタを使用して [、Bloomberg Message](https://www.bloomberg.com/professional/product/collaboration/) コラボレーション ツールから金融サービスの電子メール データをインポートしてアーカイブします。 コネクタをセットアップして構成した後、毎日 1 回、組織の Bloomberg セキュア FTP (SFTP) サイトに接続し、Microsoft 365 のメールボックスに電子メール アイテムをインポートします。
 
-Bloomberg メッセージデータがユーザーのメールボックスに保存された後、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、通信コンプライアンス、Microsoft 365 アイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を Bloomberg メッセージデータに適用することができます。 たとえば、コンテンツ検索ツールを使用して Bloomberg メッセージメールを検索したり、Bloomberg メッセージデータを含むメールボックスを高度な電子情報開示ケースの保管担当者に関連付けることができます。 Microsoft 365 で Bloomberg メッセージコネクタを使用してデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
+Bloomberg メッセージ データがユーザー メールボックスに保存された後、訴訟ホールド、コンテンツ検索、インサイト アーカイブ、監査、通信コンプライアンス、Microsoft 365 アイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を Bloomberg メッセージ データに適用できます。 たとえば、コンテンツ検索ツールを使用して Bloomberg メッセージのメールを検索したり、Bloomberg メッセージ データを含むメールボックスを Advanced eDiscovery ケースの保管担当者に関連付けできます。 Bloomberg メッセージ コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠しつながっているのに役立ちます。
 
-## <a name="overview-of-archiving-bloomberg-message-data"></a>Bloomberg メッセージデータのアーカイブの概要
+## <a name="overview-of-archiving-bloomberg-message-data"></a>Bloomberg メッセージ データのアーカイブの概要
 
-次の概要では、コネクタを使用して Microsoft 365 で Bloomberg メッセージデータをアーカイブするプロセスについて説明します。
+次の概要では、コネクタを使用して、Microsoft 365 の Bloomberg メッセージ データをアーカイブするプロセスについて説明します。
 
 ![Bloomberg メッセージのインポートとアーカイブのプロセス](../media/BloombergMessageArchiving.png)
 
-1. 組織は Bloomberg を使用して、Bloomberg SFTP サイトをセットアップします。 また、Bloomberg を使用して Bloomberg メッセージを構成し、電子メールメッセージを Bloomberg SFTP サイトにコピーします。
+1. 組織は Bloomberg と共同で Bloomberg SFTP サイトをセットアップします。 また、Bloomberg と共同で、電子メール メッセージを Bloomberg SFTP サイトにコピーする Bloomberg Message を構成します。
 
-2. 24時間ごとに、Bloomberg メッセージからの電子メールメッセージが Bloomberg SFTP サイトにコピーされます。
+2. 24 時間ごとに、Bloomberg メッセージからの電子メール メッセージが Bloomberg SFTP サイトにコピーされます。
 
-3. Microsoft 365 コンプライアンスセンターで作成した Bloomberg メッセージコネクタが、毎日 Bloomberg SFTP サイトに接続し、電子メールメッセージを、過去24時間から Microsoft クラウド内のセキュアな Azure ストレージ領域に転送します。
+3. Microsoft 365 コンプライアンス センターで作成する Bloomberg メッセージ コネクタは、毎日 Bloomberg SFTP サイトに接続し、過去 24 時間の電子メール メッセージを Microsoft Cloud のセキュリティで保護された Azure Storage 領域に転送します。
 
-4. コネクタは、電子メールメッセージアイテムを特定のユーザーのメールボックスにインポートします。 BloombergMessage という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 
+4. コネクタは、電子メール メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 BloombergMessage という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 
 
-   コネクタは、CorporateEmailAddress プロパティの値を使用してこれを実行します。 すべての電子メールメッセージにはこのプロパティが含まれており、電子メールメッセージのすべての参加者の電子メールアドレスが設定されます。 *CorporateEmailAddress*プロパティの値を使用した自動ユーザーマッピングに加えて、CSV マッピングファイルをアップロードしてカスタムマッピングを定義することもできます。 このマッピングファイルには、組織内の各ユーザーの Bloomberg UUID と、対応する Microsoft 365 メールボックスアドレスが含まれています。 自動ユーザーマッピングを有効にしてカスタムマッピングを指定すると、コネクタはまずカスタムマッピングファイルを調べます。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタは電子メールアイテムの *CorporateEmailAddress* プロパティを使用します。 コネクタが、カスタムマッピングファイルまたは電子メールアイテムの *CorporateEmailAddress* プロパティに有効な Microsoft 365 ユーザーを見つけられない場合、アイテムはインポートされません。
+   コネクタは、CorporateEmailAddress プロパティの値を使用してこれを行います。 すべての電子メール メッセージには、このプロパティが含まれるので、電子メール メッセージのすべての参加者の電子メール アドレスが設定されます。 *CorporateEmailAddress* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義できます。 このマッピング ファイルには、組織内の各ユーザーの Bloomberg UUID と対応する Microsoft 365 メールボックス アドレスが含まれている。 自動ユーザー マッピングを有効にしてカスタム マッピングを提供する場合、すべての電子メール アイテムについて、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタは電子メール アイテムの *CorporateEmailAddress* プロパティを使用します。 コネクタがメール アイテムのカスタム マッピング ファイルまたは *CorporateEmailAddress* プロパティのどちらかに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-Bloomberg メッセージデータをアーカイブするために必要な実装手順の一部は、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
+Bloomberg メッセージ データをアーカイブするために必要な実装手順の一部は Microsoft 365 の外部にあるので、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 
-- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 手順3で Bloomberg メッセージコネクタを正常に作成するには、この手順を完了する必要があります。
+- [Bloomberg Anywhere にサブスクライブします](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA)。 これは、設定と構成が必要な Bloomberg SFTP サイトにアクセスするために Bloomberg Anywhere にログインするために必要です。
 
-- [Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA)にサブスクライブします。 これは、Bloomberg Anywhere にログインして、設定および構成する必要がある Bloomberg SFTP サイトにアクセスできるようにするために必要です。
+- Bloomberg SFTP (セキュア ファイル転送プロトコル) サイトをセットアップします。 Bloomberg と共同で SFTP サイトをセットアップした後、Bloomberg Message からのデータは毎日 SFTP サイトにアップロードされます。 手順 2 で作成したコネクタは、この SFTP サイトに接続し、電子メール データを Microsoft 365 メールボックスに転送します。 SFTP は、転送プロセス中にメールボックスに送信される Bloomberg メッセージ データも暗号化します。
 
-- Bloomberg SFTP (Secure file transfer protocol) サイトをセットアップします。 Bloomberg を使用して SFTP サイトを設定した後は、Bloomberg メッセージからのデータが毎日 SFTP サイトにアップロードされます。 手順2で作成したコネクタがこの SFTP サイトに接続し、電子メールデータを Microsoft 365 メールボックスに転送します。 SFTP は、転送プロセス中にメールボックスに送信される Bloomberg メッセージデータも暗号化します。
+  Bloomberg SFTP (BB-SFTP とも呼ばれる) の詳細については、次の *情報を参照してください*。
 
-  Bloomberg SFTP ( *BB*とも呼ばれます) の詳細については、以下を参照してください。
+  - Bloomberg サポートの「SFTP Connectivity Standards」ドキュメント [を参照してください](https://www.bloomberg.com/professional/support/documentation/)。
 
-  - 「 [Bloomberg Support](https://www.bloomberg.com/professional/support/documentation/)」の「SFTP Connectivity 標準」ドキュメントを参照してください。
-
-  - [Bloomberg カスタマーサポート](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)に問い合わせてください。
+  - [Bloomberg カスタマー サポートにお問い合わせください](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)。
 
    > [!NOTE]
-   > 組織がインスタント Bloomberg データをアーカイブするためにコネクタを既に展開している場合は、別の SFTP サイトを設定する必要はありません。 Bloomberg メッセージコネクタと同じ SFTP サイトを使用できます。
+   > Instant Bloomberg データをアーカイブするコネクタが組織で既に展開されている場合は、別の SFTP サイトをセットアップする必要があります。 Bloomberg メッセージ コネクタには同じ SFTP サイトを使用できます。
 
-- Bloomberg を使用して SFTP サイトを設定した後、Bloomberg は Bloomberg 実装の電子メールメッセージに応答した後に情報を提供します。 次の情報のコピーを保存します。 これを使用して、手順3でコネクタを設定します。
+- Bloomberg と共同で SFTP サイトをセットアップすると、Bloomberg 実装の電子メール メッセージに応答した後、Bloomberg から情報が提供されます。 次の情報のコピーを保存します。 手順 3 でコネクタをセットアップするために使用します。
 
-  - 企業の ID であり、Bloomberg SFTP サイトにログインするために使用される、企業のコードです。
+  - 組織の ID であり、Bloomberg SFTP サイトへのログインに使用される会社コード。
 
   - Bloomberg SFTP サイトのパスワード
 
-  - Bloomberg SFTP サイトの URL (たとえば、sftp.bloomberg.com)。 さらに、Bloomberg は Bloomberg SFTP サイトに対応する IP アドレスも提供することがあります。これは、コネクタの設定にも使用できます。
+  - Bloomberg SFTP サイトの URL (例: sftp.bloomberg.com)。 また、Bloomberg は、コネクタのセットアップにも使用できる、Bloomberg SFTP サイトの対応する IP アドレスを提供する場合もあります。
 
   - Bloomberg SFTP サイトのポート番号
 
-- 手順3で Bloomberg メッセージコネクタを作成したユーザー (および手順1で公開キーと IP アドレスをダウンロードするユーザー) に、Exchange Online のメールボックスのインポートのエクスポート役割を割り当てる必要があります。 これは、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
+- 手順 3 で Bloomberg メッセージ コネクタを作成するユーザー (および手順 1 で公開キーと IP アドレスをダウンロードするユーザー) には、Exchange Online の Mailbox Import Export 役割が割り当てられている必要があります。 これは、Microsoft 365コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
 
-## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>手順 1: SSH と PGP の公開キーを取得する
+## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>手順 1: SSH および PGP 公開キーを取得する
 
-最初の手順として、Secure Shell (SSH) およびかなり良好なプライバシー (PGP) のための公開キーのコピーを取得します。 手順2でこれらのキーを使用して、Bloomberg SFTP サイトを構成して、コネクタ (手順3で作成したもの) が SFTP サイトに接続し、Bloomberg メッセージの電子メールデータを Microsoft 365 メールボックスに転送できるようにします。 また、この手順では IP アドレスも取得します。これは、Bloomberg SFTP サイトを構成するときに使用します。
+最初の手順では、セキュア シェル (SSH) と Pretty Good Privacy (PGP) の公開キーのコピーを取得します。 手順 2 でこれらのキーを使用して、(手順 3 で作成した) コネクタが SFTP サイトに接続し、Bloomberg メッセージの電子メール データを Microsoft 365 メールボックスに転送することを許可するために、Bloomberg SFTP サイトを構成します。 この手順では、Bloomberg SFTP サイトを構成するときに使用する IP アドレスも取得します。
 
-1. [] に移動し https://compliance.microsoft.com\ https://compliance.microsoft.com) 、左側のナビゲーションで [ **データコネクタ** ] をクリックします。
+1. []( に https://compliance.microsoft.com\ 移動 https://compliance.microsoft.com) し、左側 **のナビゲーションで [** データ コネクタ] をクリックします。
 
-2. [ **データコネクタ** ] ページの **Bloomberg メッセージ**で、[ **表示**] をクリックします。
+2. [データ コネクタ **] ページの** **[Bloomberg** メッセージ] で、[表示] を **クリックします**。
 
-3. [ **Bloomberg Message** product description] ページで、[**コネクタの追加**] をクリックします。
+3. **Bloomberg メッセージ製品の** 説明ページで、[コネクタの追加]**をクリックします。**
 
-4. [ **サービス利用規約** ] ページで、[ **同意**する] をクリックします。
+4. [サービス条件 **] ページで、[** 承諾] を **クリックします**。
 
-5. [ **BLOOMBERG SFTP の資格情報の追加** ] の手順1で、 **[SSH キーのダウンロード**]、[ **PGP キーのダウンロード**]、および [ **IP アドレス** のダウンロード] リンクをクリックして、各ファイルのコピーをローカルコンピューターに保存します。 これらのファイルには、手順2で Bloomberg SFTP サイトを構成するために使用される次の項目が含まれています。
+5. 手順 1 の下にある **Bloomberg SFTP** サイトの資格情報の追加で **、SSH** キーのダウンロード **、PGP** キーのダウンロード **、IP** アドレス リンクのダウンロードをクリックして、各ファイルのコピーをローカル コンピューターに保存します。 これらのファイルには、手順 2 で Bloomberg SFTP サイトを構成するために使用される次の項目が含まれています。
 
-   - SSH 公開キー: このキーは、コネクタが Bloomberg SFTP サイトに接続する際にセキュリティで保護されたリモートログインを有効にするように Secure Shell (SSH) を構成するために使用されます。
+   - SSH 公開キー: このキーは、コネクタが Bloomberg SFTP サイトに接続するときにセキュリティで保護されたリモート ログインを有効にするためのセキュア シェル (SSH) を構成するために使用されます。
 
    - PGP 公開キー: このキーは、Bloomberg SFTP サイトから Microsoft 365 に転送されるデータの暗号化を構成するために使用されます。
 
-   - IP アドレス: Bloomberg SFTP サイトは、この IP アドレスからの接続要求のみを受け入れるように構成されています。これは、手順3で作成した Bloomberg メッセージコネクタによって使用されます。
+   - IP アドレス: Bloomberg SFTP サイトは、この IP アドレスからの接続要求のみを受け付けするように構成されています。この IP アドレスは、手順 3 で作成した Bloomberg メッセージ コネクタによって使用されます。
 
-6. ウィザードを閉じるには、[ **キャンセル** ] をクリックします。 このウィザードに戻り、手順3でコネクタを作成します。
+6. [ **キャンセル] を** クリックしてウィザードを閉じます。 手順 3 でこのウィザードに戻り、コネクタを作成します。
 
 ## <a name="step-2-configure-the-bloomberg-sftp-site"></a>手順 2: Bloomberg SFTP サイトを構成する
 
 > [!NOTE]
-> 前述したように、インスタント Bloomberg データをアーカイブするために以前に Bloomberg SFTP サイトをセットアップしている組織の場合は、別のデータを設定する必要はありません。 手順3でコネクタを作成するときに、同じ SFTP サイトを指定することができます。
+> 前に説明したように、組織が以前に Bloomberg SFTP サイトをセットアップして Instant Bloomberg データをアーカイブしている場合は、別のサイトをセットアップする必要がなされます。 手順 3 でコネクタを作成するときに、同じ SFTP サイトを指定できます。
 
-次の手順では、SSH と PGP の公開キーと、手順1で取得した IP アドレスを使用して、Bloomberg SFTP サイトの SSH 認証と PGP 暗号化を構成します。 これにより、手順3で作成した Bloomberg メッセージコネクタが Bloomberg SFTP サイトに接続し、Bloomberg メッセージデータを Microsoft 365 に転送できるようになります。 Bloomberg SFTP サイトを設定するには、Bloomberg カスタマーサポートと連携する必要があります。 詳細については、 [Bloomberg カスタマーサポート](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) にお問い合わせください。
+次の手順では、SSH および PGP 公開キーと、手順 1 で取得した IP アドレスを使用して、Bloomberg SFTP サイトの SSH 認証と PGP 暗号化を構成します。 これにより、手順 3 で作成した Bloomberg メッセージ コネクタが Bloomberg SFTP サイトに接続し、Bloomberg メッセージ データを Microsoft 365 に転送できます。 Bloomberg SFTP サイトをセットアップするには、Bloomberg カスタマー サポートと一緒に作業する必要があります。 [Bloomberg カスタマー サポートにお問い](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)合わせください。
 
 > [!IMPORTANT]
-> Bloomberg では、手順1でダウンロードした3つのファイルを電子メールメッセージに添付して、Bloomberg SFTP サイトを設定するために作業する際にカスタマーサポートチームに送信することをお勧めします。
+> Bloomberg は、手順 1 でダウンロードした 3 つのファイルを電子メール メッセージに添付し、Bloomberg SFTP サイトをセットアップする際に顧客サポート チームに送信することを推奨します。
 
-## <a name="step-3-create-a-bloomberg-message-connector"></a>手順 3: Bloomberg メッセージコネクタを作成する
+## <a name="step-3-create-a-bloomberg-message-connector"></a>手順 3: Bloomberg メッセージ コネクタを作成する
 
-最後の手順では、Microsoft 365 コンプライアンスセンターで Bloomberg メッセージコネクタを作成します。 コネクタは、提供された情報を使用して、Bloomberg SFTP サイトに接続し、電子メールメッセージを Microsoft 365 の対応するユーザーメールボックスに転送します。
+最後の手順では、Microsoft 365 コンプライアンス センターで Bloomberg メッセージ コネクタを作成します。 コネクタは、入力した情報を使用して Bloomberg SFTP サイトに接続し、Microsoft 365 の対応するユーザー メールボックス ボックスに電子メール メッセージを転送します。
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com)左側のナビゲーションに移動し、[**データコネクタ**] をクリックします。
+1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションの **[データ コネクタ]** に移動してクリックします。
 
-2. [ **データコネクタ** ] ページの **Bloomberg メッセージ**で、[ **表示**] をクリックします。
+2. [データ コネクタ **] ページの** **[Bloomberg** メッセージ] で、[表示] を **クリックします**。
 
-3. [ **Bloomberg Message** product description] ページで、[**コネクタの追加**] をクリックします。
+3. **Bloomberg メッセージ製品の** 説明ページで、[コネクタの追加]**をクリックします。**
 
-4. [ **サービス利用規約** ] ページで、[ **同意**する] をクリックします。
+4. [サービス条件 **] ページで、[** 承諾] を **クリックします**。
 
-5. [ **BLOOMBERG SFTP サイトの資格情報の追加** ] ページの [ステップ 3] で、必要な情報を次のボックスに入力し、[ **次へ**] をクリックします。
+5. **[Bloomberg SFTP** サイトの資格情報の追加] ページの手順 3 で、次のボックスに必要な情報を入力し、[次へ] をクリック **します**。
 
-      - **確定コード:** Bloomberg SFTP サイトのユーザー名として使用される組織の ID。
+      - **会社コード:** Bloomberg SFTP サイトのユーザー名として使用される組織の ID。
 
       - **パスワード:** 組織の Bloomberg SFTP サイトのパスワード。
 
-      - **SFTP URL:** Bloomberg SFTP サイトの URL (たとえば、sftp.bloomberg.com)。
+      - **SFTP URL:** Bloomberg SFTP サイトの URL (例: sftp.bloomberg.com)。
 
-      - **SFTP ポート:** Bloomberg SFTP サイトのポート番号。 コネクタはこのポートを使用して、SFTP サイトに接続します。
+      - **SFTP ポート:** Bloomberg SFTP サイトのポート番号。 コネクタはこのポートを使用して SFTP サイトに接続します。
 
-6. [ **ユーザーマッピング** ] ページで、自動ユーザーマッピングを有効にし、必要に応じてカスタムユーザーマッピングを提供します。
+6. [ユーザー マッピング **] ページで** 、自動ユーザー マッピングを有効にし、必要に応じてカスタム ユーザー マッピングを提供します。
 
-7. [ **次へ**] をクリックして設定を確認し、[準備] をクリックしてコネクタを作成します。
+7. [ **次へ]** をクリックし、設定を確認し、[準備] をクリックしてコネクタを作成します。
 
-8. [ **データコネクタ** ] ページに移動して、新しいコネクタのインポート処理の進行状況を確認します。
+8. [データ コネクタ **] ページに移動** して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
 ## <a name="known-issues"></a>既知の問題
 
-- Bloomberg のスレッド化 Microsoft 365 にインポートされた電子メールメッセージはサポートされていません。 個人に送信された個々のメッセージはインポートされますが、スレッド化された会話では表示されません。 Microsoft は、Bloomberg メッセージデータコネクタの今後のバージョンでのスレッド処理をサポートしています。
+- Microsoft 365 にインポートされた Bloomberg メッセージメールのスレッドはサポートされていません。 個人に送信された個々のメッセージはインポートされますが、スレッド化された会話では表示されません。 Microsoft は、Bloomberg メッセージ データ コネクタの新しいバージョンでスレッド化をサポートする取り組みです。

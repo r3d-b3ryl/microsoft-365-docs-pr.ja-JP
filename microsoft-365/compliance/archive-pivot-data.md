@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 でピボットデータをアーカイブするためのコネクタの設定
+title: Microsoft 365 でピボット データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,82 +11,78 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Microsoft 365 で Globanet からピボットデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: f9c0925856ffb9c43fa985c9da4bcd17485a5e39
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+description: 管理者は、Microsoft 365 の Globanet からピボット データをインポートおよびアーカイブするコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースのデータをアーカイブして、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: 23badcb2a8d2873f03b86499ccfd4c9a96b81090
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816580"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620374"
 ---
-# <a name="set-up-a-connector-to-archive-pivot-data"></a>ピボットデータをアーカイブするコネクタを設定する
+# <a name="set-up-a-connector-to-archive-pivot-data"></a>ピボット データをアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、ピボットプラットフォームから Microsoft 365 組織のユーザーメールボックスにデータをインポートし、アーカイブします。 Globanet では、サードパーティのデータソースからアイテムを取得するように構成された [ピボット](https://globanet.com/pivot/) コネクタ (定期的に) が提供され、それらのアイテムを Microsoft 365 にインポートします。 Pivot は、財務市場の参加者とのコラボレーションを可能にするインスタントメッセージングプラットフォームです。 このコネクタは、チャットメッセージなどのアイテムを、ユーザーのピボットアカウントから電子メールメッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、ピボット プラットフォームから Microsoft 365 組織内のユーザー メールボックスにデータをインポートしてアーカイブします。 Globanet は、サードパーティ[](https://globanet.com/pivot/)のデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成されたピボット コネクタを提供します。 Pivot は、市場参加者との共同作業を可能にするインスタント メッセージング プラットフォームです。 コネクタは、チャット メッセージなどのアイテムをユーザーの Pivot アカウントから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
-ユーザーのメールボックスにピボットデータが格納されると、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベル、および通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Microsoft 365 でピボットコネクタを使用してデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
+ピボット データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 ピボット コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府や規制のポリシーに準拠しつながっているのに役立ちます。
 
-## <a name="overview-of-archiving-pivot-data"></a>ピボットデータのアーカイブの概要
+## <a name="overview-of-archiving-pivot-data"></a>ピボット データのアーカイブの概要
 
-次の概要では、コネクタを使用して Microsoft 365 のピボットデータをアーカイブするプロセスについて説明します。
+次の概要では、コネクタを使用して Microsoft 365 のピボット データをアーカイブするプロセスについて説明します。
 
-![ピボットデータのアーカイブワークフロー](../media/PivotConnectorWorkflow.png)
+![ピボット データのアーカイブ ワークフロー](../media/PivotConnectorWorkflow.png)
 
-1. 組織はピボットを使用して、ピボットソースサイトを設定して構成します。
+1. 組織は Pivot と共同でピボット ソース サイトをセットアップおよび構成します。
 
-2. 24時間ごとに、ピボットアイテムは Globanet Merge1 サイトにコピーされます。 また、コネクタは、ピボットアイテムを電子メールメッセージの形式に変換します。
+2. 24 時間ごとに、Pivot アイテムが Globanet Merge1 サイトにコピーされます。 コネクタは、ピボット アイテムを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンスセンターで作成した Pivot connector は、Globanet Merge1 サイトに毎日接続し、そのピボットアイテムを Microsoft クラウド内のセキュリティで保護された Azure ストレージの場所に転送します。
+3. Microsoft 365 コンプライアンス センターで作成するピボット コネクタは、毎日 Globanet Merge1 サイトに接続し、ピボット アイテムを Microsoft クラウド内のセキュリティで保護された Azure Storage の場所に転送します。
 
-4. コネクタは、 [手順 3](#step-3-map-users-and-complete-the-connector-setup)で説明されているように、自動ユーザーマッピングの *Email* プロパティの値を使用して、ピボットアイテムを特定のユーザーのメールボックスにインポートします。 ユーザーのメールボックスに、 **Pivot** という名前の受信トレイフォルダー内のサブフォルダーが作成され、そのフォルダーにアイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべてのピボットアイテムには、アイテムのすべての参加者の電子メールアドレスが設定されたこのプロパティが含まれています。
+4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、ピボット アイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 ユーザーのメールボックスに **Pivot** という名前の受信トレイ フォルダー内のサブフォルダーが作成され、アイテムがフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべてのピボット アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには、 [Globanet カスタマーサポート](https://globanet.com/ms-connectors-contact/)に問い合わせてください。 このアカウントは、手順1でコネクタを作成するときにサインインします。
+- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact/)。 このアカウントは、手順 1 でコネクタを作成するときにサインインします。
 
-- 手順1でピボットコネクタを作成する (および手順3で完了する) ユーザーは、Exchange Online のメールボックスのインポートのエクスポート役割に割り当てられている必要があります。 この役割は、Microsoft 365 コンプライアンスセンターの [データコネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
+- 手順 1 でピボット コネクタを作成する (および手順 3 で完了する) ユーザーは、Exchange Online の "Mailbox Import Export/メールボックスのインポートエクスポート" 役割に割り当てられている必要があります。 この役割は、Microsoft 365 コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていない。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
-## <a name="step-1-set-up-the-pivot-connector"></a>手順 1: ピボットコネクタを設定する
+## <a name="step-1-set-up-the-pivot-connector"></a>手順 1: ピボット コネクタをセットアップする
 
-最初の手順として、Microsoft コンプライアンスセンターの [ **データコネクタ** ] ページにアクセスし、ピボットデータ用のコネクタを作成します。
+最初の手順は、Microsoft コンプライアンス センターの **[データ** コネクタ] ページにアクセスし、ピボット データ用のコネクタを作成することです。
 
-1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com/) し、[ **データコネクタ** ] ピボットをクリックし  >  **Pivot** ます。
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click Data **connectors**  >  **Pivot**.
 
-2. [ **ピボット** 製品の説明] ページで、[ **コネクタの追加** ] をクリックします。
+2. ピボット製品の **説明ページ** で、[コネクタの追加] **をクリックします**。
 
-3. [ **サービス利用規約** ] ページで、[ **同意** する] をクリックします。
+3. [サービス条件 **] ページで、[** 承諾] を **クリックします**。
 
-4. コネクタを識別する一意の名前を入力し、[ **次へ** ] をクリックします。
+4. コネクタを識別する一意の名前を入力し、[次へ] をクリック **します**。
 
-5. Merge1 アカウントにサインインして、コネクタを構成します。
+5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-pivot-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトでピボットコネクタを構成する
+## <a name="step-2-configure-the-pivot-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトでピボット コネクタを構成する
 
-2番目の手順では、Merge1 サイト上にピボットコネクタを構成します。 Globanet Merge1 サイトでピボットコネクタを構成する方法については、「 [Merge1 サードパーティ製コネクタユーザーガイド](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Pivot%20User%20Guide%20.pdf)」を参照してください。
+2 番目の手順は、Merge1 サイトでピボット コネクタを構成することです。 Globanet Merge1 サイトでピボット コネクタを構成する方法については [、「Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Pivot%20User%20Guide%20.pdf)」を参照してください。
 
-[ **保存 & 完了** ] をクリックすると、Microsoft 365 コンプライアンスセンターのコネクタウィザードの [ **ユーザーマッピング** ] ページが表示されます。
+[ Save **& Finish]** をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップしてコネクタのセットアップを完了する
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-ユーザーをマップし、Microsoft 356 コンプライアンスセンターでコネクタの設定を完了するには、次の手順を実行します。
+ユーザーをマップし、Microsoft 356 コンプライアンス センターでコネクタのセットアップを完了するには、次の手順を実行します。
 
-1. [ **ピボットユーザーを Microsoft 365 ユーザーにマップする** ] ページで、[自動ユーザーマッピング] を有効にします。 Pivot アイテムには、 *電子メール* というプロパティが含まれています。このプロパティには、組織内のユーザーの電子メールアドレスが含まれています。 コネクタがこのアドレスを Microsoft 365 ユーザーに関連付けることができる場合は、そのユーザーのメールボックスにアイテムがインポートされます。
+1. [ピボット ユーザー **を Microsoft 365 ユーザーに** マップする] ページで、ユーザーの自動マッピングを有効にします。 ピボット アイテムには、組織内のユーザー *の電子* メール アドレスを含む Email というプロパティが含まれます。 コネクタでこのアドレスを Microsoft 365 ユーザーに関連付けできる場合、アイテムはユーザーのメールボックスにインポートされます。
 
-2. [ **管理者の同意** ] ページで、[ **同意を提供** する] をクリックします。 Microsoft サイトにリダイレクトされます。 同意を得るには、[ **承諾** ] をクリックします。
+2. [**次へ**] をクリックして設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
-   組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 管理者の同意を得るには、Microsoft 365 グローバル管理者の資格情報を使用してサインインし、同意要求を承諾する必要があります。 グローバル管理者としてサインインしていない場合は、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) に移動して、グローバル管理者の資格情報を使用してサインインし、要求を承諾することができます。
+## <a name="step-4-monitor-the-pivot-connector"></a>手順 4: ピボット コネクタを監視する
 
-3. [ **次へ** ] をクリックして設定を確認し、[ **データコネクタ** ] ページに移動して、新しいコネクタのインポート処理の進行状況を確認します。
+ピボット コネクタを作成すると、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
 
-## <a name="step-4-monitor-the-pivot-connector"></a>手順 4: ピボットコネクタを監視する
+1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションの **[データ コネクタ]** に移動してクリックします。
 
-ピボットコネクタを作成した後、Microsoft 365 コンプライアンスセンターでコネクタの状態を表示できます。
+2. [ **コネクタ] タブを** クリックし、ピボット **コネクタを選択** して、フライアウト ページを表示します。 このページには、コネクタに関するプロパティと情報が含まれる。
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com)左側のナビゲーションに移動し、[ **データコネクタ** ] をクリックします。
-
-2. [ **コネクタ** ] タブをクリックし、[ **ピボット** コネクタ] を選択して、フライアウトページを表示します。 このページには、コネクタに関するプロパティと情報が含まれています。
-
-3. [ **コネクタの状態 (ソース付き** )] の下で、[ **ログのダウンロード** ] リンクをクリックしてコネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれています。
+3. [**コネクタの状態とソース**]で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存する) 必要があります。 このログには、Microsoft クラウドにインポートされたデータが含まれます。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。
+- 現時点では、添付ファイルまたは 10 MB を超えるアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日利用可能になります。

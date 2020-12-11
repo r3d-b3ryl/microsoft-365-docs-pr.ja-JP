@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 で会議のデータをアーカイブするためのコネクタの設定
+title: Microsoft 365 でズーム会議データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,96 +11,92 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Globanet の会議から Microsoft 365 にデータをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: fbedf0521464e5faa0f74e6429d12a3eaa1d0f12
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+description: 管理者は、Globanet Zoom Meetings から Microsoft 365 にデータをインポートおよびアーカイブするコネクタを設定できます。 これにより、Microsoft 365 のサード パーティデータ ソースのデータをアーカイブして、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: c61c9a40d85b3bea266df9b1f2dba32301e54e08
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816720"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620203"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>会議データをアーカイブするためのコネクタを設定するズームする
+# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>ズーム会議データをアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、ズーム会議のデータを Microsoft 365 組織のユーザーのメールボックスにインポートし、アーカイブします。 Globanet では、サードパーティのデータソースからアイテムを取得するように構成された (定期的に)、そのアイテムをズームするための [会議](https://globanet.com/zoom/) コネクタが用意されており、それらのアイテムを Microsoft 365 にインポートします。 コネクタは会議のコンテンツ (チャット、記録されたファイル、およびメタデータを含む) を電子メールメッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Zoom Meetings から Microsoft 365 組織のユーザー メールボックスにデータをインポートしてアーカイブします。 Globanet は、サード パーティのデータ ソースから (定期的に) アイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された Zoom [Meetings](https://globanet.com/zoom/) コネクタを提供します。 コネクタは、会議のコンテンツ (チャット、記録されたファイル、メタデータを含む) を Zoom Meetings アカウントから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
-ズーム会議データがユーザーのメールボックスに保存された後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベル、および通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Microsoft 365 でデータをインポートおよびアーカイブするためにズーム会議コネクタを使用することにより、組織は政府および規制ポリシーに準拠したままにすることができます。
+ズーム会議のデータがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Zoom Meetings コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府や規制のポリシーに準拠しつながっているのに役立ちます。
 
-## <a name="overview-of-archiving-zoom-meetings-data"></a>アーカイブズーム会議データの概要
+## <a name="overview-of-archiving-zoom-meetings-data"></a>ズーム会議データのアーカイブの概要
 
-次の概要では、コネクタを使用して Microsoft 365 の会議データをアーカイブするプロセスについて説明します。
+次の概要では、コネクタを使用して Microsoft 365 のズーム会議データをアーカイブするプロセスについて説明します。
 
-![会議のズームのアーカイブワークフロー](../media/ZoomMeetingsConnectorWorkflow.png)
+![会議のアーカイブ ワークフローのズーム](../media/ZoomMeetingsConnectorWorkflow.png)
 
-1. 組織は、会議のズームサイトをセットアップして構成するために、ズーム会議を処理します。
+1. 組織はズーム会議と共同で、ズーム会議サイトをセットアップおよび構成します。
 
-2. 24時間ごとに、ズーム会議からの会議アイテムは Globanet Merge1 サイトにコピーされます。 また、コネクタは、会議の内容を電子メールメッセージの形式に変換します。
+2. 24 時間ごとに、Zoom Meetings の会議アイテムが Globanet Merge1 サイトにコピーされます。 コネクタは、会議の内容を電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンスセンターで作成するズーム会議コネクタは、Globanet Merge1 に毎日接続し、Microsoft クラウド内のセキュリティで保護された Azure ストレージの場所に会議メッセージを転送します。
+3. Microsoft 365 コンプライアンス センターで作成した Zoom Meetings コネクタは、毎日 Globanet Merge1 に接続し、会議メッセージを Microsoft クラウド内のセキュリティで保護された Azure Storage の場所に転送します。
 
-4. このコネクタは、手順3で説明されているように、 *電子メール* プロパティの値と自動ユーザーマッピングを使用して、変換された会議アイテムを特定のユーザーのメールボックスにインポートします。 ユーザーのメールボックスには、" **ズーム会議** " という名前の受信トレイフォルダーに新しいサブフォルダーが作成され、会議アイテムはそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべての会議アイテムには、会議のすべての参加者の電子メールアドレスが設定されたこのプロパティが含まれています。
+4. コネクタは、手順 3 で説明するように *、Email* プロパティの値と自動ユーザー マッピングを使用して、変換された会議アイテムを特定のユーザーのメールボックスにインポートします。 Zoom **Meetings** という名前の受信トレイ フォルダーに新しいサブフォルダーがユーザー メールボックスに作成され、会議アイテムがフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての会議アイテムには、このプロパティが含まれるので、会議のすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには、 [Globanet カスタマーサポート](https://globanet.com/ms-connectors-contact)に問い合わせてください。 このアカウントは、手順1でコネクタを作成するときにサインインします。
+- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 このアカウントは、手順 1 でコネクタを作成するときにサインインします。
 
-- 組織の拡大または縮小のエンタープライズアカウントのユーザー名とパスワードを取得します。 会議コネクタをズームするには、手順2でこのアカウントにサインインする必要があります。
+- 組織の Zoom Business アカウントまたは Zoom Enterprise アカウントのユーザー名とパスワードを取得します。 Zoom Meetings コネクタを構成する場合は、手順 2 でこのアカウントにサインインする必要があります。
 
-- [ズーム Marketplace](https://marketplace.zoom.us)で以下のアプリケーションを作成します。
+- Zoom Marketplace で次のアプリケーション [を作成します](https://marketplace.zoom.us)。
 
   - OAuth アプリケーション
 
   - JWT アプリケーション
 
-  これらのアプリケーションを作成した後、Zoom プラットフォームは、トークンの生成に使用される一意の資格情報のセットを生成します。 これらのトークンは、拡大/縮小アカウントに接続してアイテムを Merge1 サイトにコピーするときにコネクタを認証するために使用されます。 これらのトークンは、手順2でズームコネクタを構成するときに使用します。
+  これらのアプリケーションを作成すると、Zoom プラットフォームはトークンの生成に使用される一意の資格情報のセットを生成します。 これらのトークンは、Zoom アカウントに接続してアイテムを Merge1 サイトにコピーするときにコネクタを認証するために使用されます。 これらのトークンは、手順 2 でズーム コネクタを構成するときに使用します。
 
-  OAuth および JWT アプリケーションを作成する手順については、「 [Merge1 サードパーティコネクタのユーザーガイド](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)」を参照してください。
+  OAuth アプリケーションと JWT アプリケーションを作成する方法の詳細な手順については [、「Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)」を参照してください。
 
-- 手順1で [ズーム] 会議コネクタを作成する (および手順3で完了する) ユーザーは、Exchange Online のメールボックスのインポートのエクスポート役割に割り当てられている必要があります。 この役割は、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
+- 手順 1 で Zoom Meetings コネクタを作成する (および手順 3 で完了する) ユーザーは、Exchange Online の Mailbox Import Export 役割に割り当てられている必要があります。 この役割は、Microsoft 365コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていない。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
-## <a name="step-1-set-up-the-zoom-meetings-connector"></a>手順 1: ズーム会議コネクタを設定する
+## <a name="step-1-set-up-the-zoom-meetings-connector"></a>手順 1: 会議のズーム コネクタを設定する
 
-最初の手順として、Microsoft 365 コンプライアンスセンターの **データコネクタ** にアクセスし、会議コネクタのズームを作成します。
+最初の手順は、Microsoft 365 コンプライアンス センターの **Data Connector に** アクセスし、Zoom Meetings コネクタを作成することです。
 
-1. に移動し [https://compliance.microsoft.com](https://compliance.microsoft.com/) 、[ **データコネクタ** ] [  >  **会議のズーム** ] をクリックします。
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click Data **connectors**  >  **Zoom Meetings**.
 
-2. [会議製品の説明を **拡大/縮小** する] ページで、[ **コネクタの追加** ] をクリックします。
+2. [ **会議のズーム] 製品の** 説明ページで、[コネクタの追加] **をクリックします**。
 
-3. [ **サービス利用規約** ] ページで、[ **同意** する] をクリックします。
+3. [サービス条件 **] ページで、[** 承諾] を **クリックします**。
 
-4. コネクタを識別する一意の名前を入力し、[ **次へ** ] をクリックします。
+4. コネクタを識別する一意の名前を入力し、[次へ] をクリック **します**。
 
-5. Merge1 アカウントにサインインして、コネクタを構成します。
+5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-zoom-meetings-connector"></a>手順 2: ズーム会議コネクタを構成する
+## <a name="step-2-configure-the-zoom-meetings-connector"></a>手順 2: 会議のズーム コネクタを構成する
 
-2番目の手順では、Merge1 サイト上のズーム会議コネクタを構成します。 Globanet Merge1 サイトにズーム会議コネクタを構成する方法の詳細については、「 [Merge1 サードパーティコネクタユーザーガイド](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)」を参照してください。
+2 番目の手順は、Merge1 サイトで会議のズーム コネクタを構成することです。 Globanet Merge1 サイトで Zoom Meetings コネクタを構成する方法の詳細については [、「Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)」を参照してください。
 
-[ **保存 & 完了** ] をクリックすると、Microsoft 365 コンプライアンスセンターのコネクタウィザードの [ **ユーザーマッピング** ] ページが表示されます。
+[ Save **& Finish]** をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップしてコネクタのセットアップを完了する
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-1. [ **外部ユーザーを Microsoft 365 ユーザーにマップする** ] ページで、[自動ユーザーマッピング] を有効にします。
+1. [外部ユーザー **を Microsoft 365 ユーザーに** マップする] ページで、自動ユーザー マッピングを有効にします。
 
-   会議アイテムをズームするには、組織内のユーザーの電子メールアドレスを含む *電子メール* というプロパティを含みます。 コネクタがこのアドレスを Microsoft 365 ユーザーに関連付けることができる場合は、そのユーザーのメールボックスにアイテムがインポートされます。
+   会議アイテムのズームには、組織内のユーザーの電子メール アドレスを含む [電子メール] というプロパティが含まれます。 コネクタでこのアドレスを Microsoft 365 ユーザーに関連付けできる場合、アイテムはユーザーのメールボックスにインポートされます。
 
-2. [ **管理者の同意** ] ページで、[ **同意を提供** する] をクリックします。 Microsoft サイトにリダイレクトされます。 同意を得るには、[ **承諾** ] をクリックします。
-  
-   組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 管理者の同意を得るには、Microsoft 365 グローバル管理者の資格情報を使用してサインインし、同意要求を承諾する必要があります。 グローバル管理者としてサインインしていない場合は、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) に移動して、グローバル管理者の資格情報を使用してサインインし、要求を承諾することができます。
+2. [**次へ**] をクリックして設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
-3. [ **次へ** ] をクリックして設定を確認し、[ **データコネクタ** ] ページに移動して、新しいコネクタのインポート処理の進行状況を確認します。
+## <a name="step-4-monitor-the-zoom-meetings-connector"></a>手順 4: 会議のズーム コネクタを監視する
 
-## <a name="step-4-monitor-the-zoom-meetings-connector"></a>手順 4: ズーム会議コネクタを監視する
+Zoom Meetings コネクタを作成した後、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
 
-ズーム会議コネクタを作成した後、Microsoft 365 コンプライアンスセンターでコネクタの状態を表示できます。
+1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションの **[データ コネクタ]** に移動してクリックします。
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com)左側のナビゲーションに移動し、[ **データコネクタ** ] をクリックします。
+2. [ **コネクタ] タブをクリック** し、[ **会議コネクタのズーム]** を選択して、フライアウト ページを表示します。 このページには、コネクタに関するプロパティと情報が含まれる。
 
-2. [ **コネクタ** ] タブをクリックし、[会議コネクタを **ズーム** ] を選択して、フライアウトページを表示します。 このページには、コネクタに関するプロパティと情報が含まれています。
-
-3. [ **コネクタの状態 (ソース付き** )] の下で、[ **ログのダウンロード** ] リンクをクリックしてコネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータに関する情報が含まれています。
+3. [**コネクタの状態とソース**]で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存する) 必要があります。 このログには、Microsoft クラウドにインポートされたデータに関する情報が含まれます。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。
+- 現時点では、添付ファイルまたは 10 MB を超えるアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日利用可能になります。
 
-- 会議のズームコネクタを機能させるには、ズーム会議を設定するときに録画を有効にする必要があります。
+- Zoom Meetings コネクタが機能するには、Zoom Meetings を設定するときにレコーディングを有効にする必要があります。

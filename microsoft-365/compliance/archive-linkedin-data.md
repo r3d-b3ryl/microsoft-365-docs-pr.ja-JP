@@ -14,60 +14,56 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: ネイティブコネクタを使用して、LinkedIn Company ページから Microsoft 365 にデータをインポート &、管理者が設定を行う方法について説明します。
-ms.openlocfilehash: 00e4d233efa6ee86111e3497063ad1276b5df041
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+description: 管理者がネイティブ コネクタを使用&して LinkedIn Company Page から Microsoft 365 にデータをインポートする方法について説明します。
+ms.openlocfilehash: 42183be3663fbf4b55eadde2173b492feeae5373
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255814"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619983"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>コネクタをセットアップして LinkedIn データをアーカイブする
 
-Microsoft 365 コンプライアンスセンターのコネクタを使用して、LinkedIn の会社のページからデータをインポートおよびアーカイブします。 コネクタを設定して構成すると、24時間ごとに、特定の LinkedIn 会社のページのアカウントに接続されます。 コネクタは、会社のページに投稿されたメッセージを電子メールメッセージに変換し、そのアイテムを Microsoft 365 のメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターのコネクタを使用して、LinkedIn Company ページからデータをインポートおよびアーカイブします。 コネクタを設定して構成すると、24 時間ごとに 1 回、特定の LinkedIn Company ページのアカウントに接続されます。 コネクタは、会社のページに投稿されたメッセージを電子メール メッセージに変換し、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
 
-LinkedIn 会社のページデータをメールボックスに格納した後、Microsoft 365 のコンプライアンス機能 (訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、Microsoft 365 アイテム保持ポリシーなど) を LinkedIn データに適用することができます。 たとえば、コンテンツ検索を使用してこれらのアイテムを検索したり、高度な電子情報開示ケースの保管担当者にストレージメールボックスを関連付けたりすることができます。 Microsoft 365 で LinkedIn データをインポートおよびアーカイブするためのコネクタを作成することで、組織は政府および規制ポリシーに準拠し続けることができます。
+LinkedIn Company ページのデータがメールボックスに保存された後、Microsoft 365 コンプライアンス機能 (訴訟ホールド、コンテンツ検索、In-Place アーカイブ、監査、Microsoft 365 アイテム保持ポリシーなど) を LinkedIn データに適用できます。 たとえば、コンテンツ検索を使用してこれらのアイテムを検索したり、Advanced eDiscovery ケースの保管担当者にストレージ メールボックスを関連付けできます。 Microsoft 365 で LinkedIn データをインポートおよびアーカイブするためのコネクタを作成すると、組織が政府や規制のポリシーに準拠しつながっているのに役立ちます。
 
-## <a name="give-consent-assign-roles-and-verify-credentials"></a>同意を得る、役割を割り当て、資格情報を確認する
+## <a name="assign-roles-and-verify-credentials"></a>役割を割り当て、資格情報を確認する
 
-- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Microsoft 365 グローバル管理者の資格情報でサインインし、要求を承諾します。
+- LinkedIn Company Page コネクタを作成するユーザーには、Exchange Online の "Mailbox Import Export/メールボックスのインポートエクスポート" 役割が割り当てられている必要があります。 これは、Microsoft 365コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
-- LinkedIn Company Page コネクタを作成したユーザーには、Exchange Online のメールボックスのインポートのエクスポート役割が割り当てられている必要があります。 これは、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
-
-- アーカイブする LinkedIn の会社のページの管理者である LinkedIn ユーザーアカウントのサインイン資格情報 (電子メールアドレスまたは電話番号とパスワード) を持っている必要があります。 これらの資格情報を使用して、コネクタを設定するときに LinkedIn にサインインします。
+- アーカイブする LinkedIn 会社ページの管理者である LinkedIn ユーザー アカウントのサインイン資格情報 (電子メール アドレスまたは電話番号とパスワード) が必要です。 コネクタを設定するときに、これらの資格情報を使用して LinkedIn にサインインします。
 
 ## <a name="create-a-linkedin-connector"></a>LinkedIn コネクタを作成する
 
-1. に移動 <https://compliance.microsoft.com> して、[**データコネクタ**  >  **LinkedIn の会社のページ**] をクリックします。
+1. <https://compliance.microsoft.com>[LinkedIn Company] ページに移動し、[**データ コネクタ**  >  **] をクリックします**。
 
-2. [ **LinkedIn company pages** product] ページで、[ **コネクタの追加**] をクリックします。
+2. **LinkedIn 会社ページの製品ページで、[** コネクタの追加]**をクリックします**。
 
-3. [ **サービス利用規約** ] ページで、[ **同意**する] を選択します。
+3. On the **Terms of service page,** select **Accept**.
 
-4. [ **Linkedin を使用** してサインインする] ページで、[ **linkedin でサインイン**] をクリックします。
+4. **[LinkedIn でサインイン] ページで、[LinkedIn** でサインイン]**をクリックします**。
 
-   LinkedIn サインインページが表示されます。
+   LinkedIn サインイン ページが表示されます。
 
-   ![LinkedIn サインインページ](../media/LinkedInSigninPage.png)
+   ![LinkedIn サインイン ページ](../media/LinkedInSigninPage.png)
 
-5. LinkedIn の [サインイン] ページで、アーカイブする会社のページに関連付けられている LinkedIn アカウントの電子メールアドレス (または電話番号) とパスワードを入力し、[ **サインイン**] をクリックします。
+5. LinkedIn サインイン ページで、アーカイブする会社のページに関連付けられている LinkedIn アカウントの電子メール アドレス (または電話番号) とパスワードを入力し、[サインイン] をクリック **します**。
 
-   ウィザードページが、サインインしたアカウントに関連付けられているすべての LinkedIn 会社のページの一覧と共に表示されます。 コネクタは、1つの会社のページに対してのみ構成できます。 組織に複数の LinkedIn Company ページがある場合は、それぞれに対してコネクタを作成する必要があります。
+   ウィザード ページが表示され、サインインしたアカウントに関連付けられているすべての LinkedIn Company Pages の一覧が表示されます。 コネクタは、1 つの会社ページにのみ構成できます。 組織に複数の LinkedIn 会社ページがある場合は、それぞれにコネクタを作成する必要があります。
 
-   ![LinkedIn 会社のページの一覧を含むページが表示されます。](../media/LinkedInSelectCompanyPage.png)
+   ![LinkedIn Company Pages のリストを含むページが表示される](../media/LinkedInSelectCompanyPage.png)
 
-6. アイテムをアーカイブする会社のページを選択し、[ **次へ**] をクリックします。
+6. アイテムをアーカイブする会社のページを選択し、[次へ] をクリック **します**。
 
-7. [ **記憶域の場所の選択** ] ページで、ボックス内のをクリックし、LinkedIn アイテムをインポートする Microsoft 365 メールボックスの電子メールアドレスを選択して、[ **次へ**] をクリックします。 アイテムは、このメールボックスの受信トレイフォルダーにインポートされます。
+7. [ストレージ **の場所** の選択] ページで、ボックスをクリックし、LinkedIn アイテムのインポート先の Microsoft 365 メールボックスの電子メール アドレスを選択し、[次へ] をクリック **します。** アイテムは、このメールボックスの受信トレイ フォルダーにインポートされます。
 
-8. [ **管理者に同意**する] で、[ **同意を提供** する] をクリックし、手順に従います。 組織内のデータにアクセスするために Office 365 Import service への同意を提供するには、グローバル管理者である必要があります。
+8. [ **次へ]** をクリックしてコネクタの設定を確認し、[完了] **をクリックして** コネクタのセットアップを完了します。
 
-9. [ **次** へ] をクリックしてコネクタの設定を確認し、[ **完了** ] をクリックしてコネクタのセットアップを完了します。
+コネクタを作成した後、[データ コネクタ] ページに戻り、新しいコネクタのインポート プロセスの進行状況を確認できます (必要に応じて [最新の情報に更新] を選択してコネクタの一覧を更新します)。 The value in the **Status** column is **Waiting to start**. 最初のインポート プロセスが開始するには、最大 24 時間かかります。 コネクタが初めて実行され、LinkedIn アイテムをインポートした後、コネクタは 24 時間ごとに 1 回実行され、過去 24 時間以内に LinkedIn Company Page で作成された新しいアイテムがインポートされます。
 
-コネクタを作成したら、[ **データコネクタ** ] ページに戻り、新しいコネクタのインポート処理の進行状況を確認できます (コネクタの一覧を更新する必要がある場合は、[ **更新** ] を選択します)。 [ **状態** ] 列の値は、 **開始を待機**しています。 最初のインポート処理が開始されるまでに最大で24時間かかります。 コネクタが初めて実行され、LinkedIn アイテムがインポートされると、コネクタは24時間ごとに1回実行され、過去24時間に LinkedIn Company ページに作成された新しいアイテムをインポートします。
-
-詳細を表示するには、[ **データコネクタ** ] ページの一覧でコネクタを選択して、フライアウトページを表示します。 [ **状態**] の下に表示される日付の範囲は、コネクタの作成時に選択された年齢フィルターを示します。
+詳細を表示するには、[データ コネクタ] ページの一覧でコネクタを **選択して、** フライアウト ページを表示します。 [ **状態]** の下に表示される日付範囲は、コネクタの作成時に選択された年齢フィルターを示します。
 
 ## <a name="more-information"></a>詳細
 
-LinkedIn アイテムは、Microsoft 365 のストレージメールボックスの受信トレイの LinkedIn サブフォルダーにインポートされます。 電子メールメッセージとして表示されます。
+LinkedIn アイテムは、Microsoft 365 のストレージ メールボックスの受信トレイにある LinkedIn サブフォルダーにインポートされます。 電子メール メッセージとして表示されます。

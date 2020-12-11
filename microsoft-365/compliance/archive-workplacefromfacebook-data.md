@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の Facebook データからワークプレースをアーカイブするためのコネクタの設定
+title: Microsoft 365 で Facebook データから Workplace をアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,86 +11,82 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Globanet の Merge1 サイトにアーカイブされた Facebook からのデータを Microsoft 365 にインポートしてアーカイブするためのコネクタを設定できます。 コネクタを設定するには、Globanet を使用する必要があります。このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して組織のサードパーティデータを管理することができます。
-ms.openlocfilehash: ce92302da73151945e42a8120363221fe7b393b3
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+description: 管理者は、Globanet の Merge1 サイトにアーカイブされている Facebook から Microsoft 365 に Workplace からデータをインポートおよびアーカイブするコネクタを設定できます。 コネクタをセットアップするには、Globanet で作業する必要があります。このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースのデータをアーカイブできます。これにより、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: 0bcea998e857365b512b2a6f773dca17a85c08f9
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816730"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619853"
 ---
-# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Facebook データからワークプレースをアーカイブするためのコネクタの設定
+# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Facebook データから Workplace をアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、Facebook から Microsoft 365 組織のユーザーのメールボックスにデータをインポートし、アーカイブします。 Globanet は、サードパーティのデータソースからアイテムを取得するように構成された [Facebook](https://globanet.com/workplace/) コネクタ (定期的に) を提供し、それらのアイテムを Microsoft 365 にインポートします。 コネクタは、職場からのチャット、添付ファイル、投稿、ビデオなどのコンテンツを電子メールメッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Workplace から Microsoft 365 組織のユーザー メールボックスにデータをインポートしてアーカイブします。 Globanet は、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された Facebook コネクタから [Workplace](https://globanet.com/workplace/) を提供します。 コネクタは、チャット、添付ファイル、投稿、ビデオなどのコンテンツを Workplace から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
-ユーザーのメールボックスに Workplace データを格納した後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベル、および通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Facebook connector から Workplace を使用して Microsoft 365 のデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠したままにすることができます。
+Workplace データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Facebook コネクタから Workplace を使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府や規制のポリシーに準拠しつながっているのに役立ちます。
 
-## <a name="overview-of-archiving-workplace-from-facebook-data"></a>Facebook データからのワークプレースのアーカイブの概要
+## <a name="overview-of-archiving-workplace-from-facebook-data"></a>Facebook データからの Workplace のアーカイブの概要
 
 次の概要では、コネクタを使用して Microsoft 365 の Workplace データをアーカイブするプロセスについて説明します。
 
-![Facebook データからの Workplace のアーカイブワークフロー](../media/WorkplaceConnectorWorkflow.png)
+![Facebook データからの Workplace のアーカイブ ワークフロー](../media/WorkplaceConnectorWorkflow.png)
 
-1. 組織は Facebook の Workplace を使用して、Workplace サイトをセットアップして構成します。
+1. 組織は Facebook から Workplace と一緒に作業し、Workplace サイトをセットアップして構成します。
 
-2. 24時間ごとに、Workplace のアイテムは Globanet Merge1 サイトにコピーされます。 また、コネクタは、これらのアイテムの内容を電子メールメッセージの形式に変換します。
+2. 24 時間ごとに、Workplace のアイテムが Globanet Merge1 サイトにコピーされます。 コネクタは、これらのアイテムの内容を電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンスセンターで作成した Facebook コネクタの Workplace は、Globanet Merge1 に毎日接続し、Microsoft クラウド内のセキュアな Azure ストレージの場所に Workplace items を転送します。
+3. Microsoft 365 コンプライアンス センターで作成した Facebook コネクタからの Workplace は、毎日 Globanet Merge1 に接続し、Workplace アイテムを Microsoft クラウド内のセキュリティで保護された Azure Storage の場所に転送します。
 
-4. このコネクタは、手順3で説明されているように、自動ユーザーマッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 **Facebook からの workplace** という名前の受信トレイフォルダー内のサブフォルダーが作成され、そのフォルダーに workplace アイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべての Workplace アイテムには、すべてのチャットまたは投稿の参加者の電子メールアドレスが設定された、このプロパティが含まれています。
+4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 Facebook から **Workplace** という名前の受信トレイ フォルダー内にサブフォルダーが作成され、Workplace アイテムがフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての Workplace アイテムには、このプロパティが含まれているので、すべてのチャットまたは投稿参加者のメール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには、 [Globanet カスタマーサポート](https://globanet.com/ms-connectors-contact)に問い合わせてください。 このアカウントは、手順1でコネクタを作成するときにサインインします。
+- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 このアカウントは、手順 1 でコネクタを作成するときにサインインします。
 
-- https://my.workplace.com/work/admin/apps/コンプライアンスと電子情報開示の目的で、api 経由でワークプレースからデータを取得するためのカスタム統合を作成します。
+- コンプライアンスと電子情報開示の目的で API を介して Workplace からデータを取得するカスタム https://my.workplace.com/work/admin/apps/ 統合を作成します。
 
-   統合の作成時に、Workplace プラットフォームは認証に使用されるトークンの生成に使用される一意の資格情報のセットを生成します。 これらのトークンは、手順2の Facebook コネクタ構成ウィザードで使用されます。 アプリケーションの作成方法に関するステップバイステップの手順については、「 [Merge1 サードパーティコネクタのユーザーガイド](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Workplace%20from%20Facebook%20User%20Guide%20.pdf)」を参照してください。
+   統合を作成すると、Workplace プラットフォームは認証に使用されるトークンを生成するために使用される一連の固有の資格情報を生成します。 これらのトークンは、手順 2 の Facebook コネクタ構成ウィザードの Workplace で使用されます。 アプリケーションを作成する方法の詳細な手順については [、「Merge1 Third-Party Connectors User Guide」を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Workplace%20from%20Facebook%20User%20Guide%20.pdf)。
 
-- 手順1で Facebook コネクタから Workplace を作成する (および手順3で完了する) ユーザーは、Exchange Online のメールボックスのインポートのエクスポート役割に割り当てられている必要があります。 この役割は、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
+- 手順 1 で Facebook コネクタから Workplace を作成する (および手順 3 で完了する) ユーザーは、Exchange Online の Mailbox Import Export 役割に割り当てられている必要があります。 この役割は、Microsoft 365コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていない。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
 ## <a name="step-1-set-up-the-workplace-from-facebook-connector"></a>手順 1: Facebook コネクタから Workplace をセットアップする
 
-最初の手順として、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページにアクセスし、Workplace データ用のコネクタを作成します。
+最初の手順は、Microsoft 365 コンプライアンス センターの [ **データ** コネクタ] ページにアクセスし、Workplace データ用のコネクタを作成することです。
 
-1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com/) し、[ **データコネクタ**  >  **Workplace from Facebook** ] をクリックします。
+1. Facebook から [https://compliance.microsoft.com](https://compliance.microsoft.com/) [Data **connectors** Workplace] に移動  >  **してクリックします**。
 
-2. [ **Facebook 製品の** 説明] ページで、[ **コネクタの追加** ] をクリックします。
+2. Facebook 製品の **説明ページの Workplace** で、[コネクタの追加] **をクリックします**。
 
-3. [ **サービス利用規約** ] ページで、[ **同意** する] をクリックします。
+3. [サービス条件 **] ページで、[** 承諾] を **クリックします**。
 
-4. コネクタを識別する一意の名前を入力し、[ **次へ** ] をクリックします。
+4. コネクタを識別する一意の名前を入力し、[次へ] をクリック **します**。
 
-5. Merge1 アカウントにサインインして、コネクタを構成します。
+5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-workplace-from-facebook-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトの Facebook コネクタから Workplace を構成する
+## <a name="step-2-configure-the-workplace-from-facebook-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトで Facebook コネクタから Workplace を構成する
 
-2番目の手順は、Merge1 サイトの Facebook コネクタからの Workplace を構成することです。 Facebook コネクタからの Workplace を構成する方法については、「 [Merge1 サードパーティコネクタユーザーガイド](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Workplace%20from%20Facebook%20User%20Guide%20.pdf)」を参照してください。
+2 番目の手順は、Merge1 サイトで Facebook コネクタから Workplace を構成することです。 Facebook コネクタから Workplace を構成する方法については [、「Merge1 Third-Party Connectors User Guide」を参照してください](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Workplace%20from%20Facebook%20User%20Guide%20.pdf)。
 
-[ **保存 & 完了** ] をクリックすると、Microsoft 365 コンプライアンスセンターのコネクタウィザードの [ **ユーザーマッピング** ] ページが表示されます。
+[ Save **& Finish]** をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップしてコネクタのセットアップを完了する
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-ユーザーをマップし、Microsoft 365 コンプライアンスセンターでコネクタの設定を完了するには、次の手順を実行します。
+ユーザーをマップし、Microsoft 365 コンプライアンス センターでコネクタのセットアップを完了するには、次の手順を実行します。
 
-1. [ **外部ユーザーを Microsoft 365 ユーザーにマップする** ] ページで、[自動ユーザーマッピング] を有効にします。 Workplace アイテムには、組織内のユーザーの電子メールアドレスを含む *email* というプロパティが含まれています。 コネクタがこのアドレスを Microsoft 365 ユーザーに関連付けることができる場合は、そのユーザーのメールボックスにアイテムがインポートされます。
+1. [外部ユーザー **を Microsoft 365 ユーザーに** マップする] ページで、自動ユーザー マッピングを有効にします。 Workplace アイテムには、組織内のユーザー *の電子* メール アドレスを含む Email というプロパティが含まれます。 コネクタでこのアドレスを Microsoft 365 ユーザーに関連付けできる場合、アイテムはユーザーのメールボックスにインポートされます。
 
-2. [ **管理者の同意** ] ページで、[ **同意を提供** する] をクリックします。 Microsoft サイトにリダイレクトされます。 同意を得るには、[ **承諾** ] をクリックします。
-  
-   組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 管理者の同意を得るには、Microsoft 365 グローバル管理者の資格情報を使用してサインインし、同意要求を承諾する必要があります。 グローバル管理者としてサインインしていない場合は、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) に移動して、グローバル管理者の資格情報を使用してサインインし、要求を承諾することができます。
-
-3. [ **次へ** ] をクリックして設定を確認し、[ **データコネクタ** ] ページに移動して、新しいコネクタのインポート処理の進行状況を確認します。
+2. [**次へ**] をクリックして設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
 ## <a name="step-4-monitor-the-workplace-from-facebook-connector"></a>手順 4: Facebook コネクタから Workplace を監視する
 
-Facebook コネクタから Workplace を作成した後、Microsoft 365 コンプライアンスセンターでコネクタの状態を表示できます。
+Facebook コネクタから Workplace を作成すると、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com)左側のナビゲーションに移動し、[ **データコネクタ** ] をクリックします。
+1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションの **[データ コネクタ]** に移動してクリックします。
 
-2. [ **コネクタ** ] タブをクリックしてから、[ **Facebook から Workplace** ] コネクタを選択して、フライアウトページを表示します。 このページには、コネクタに関するプロパティと情報が含まれています。
+2. [ **コネクタ] タブを** クリックし **、Facebook** コネクタから Workplace を選択して、フライアウト ページを表示します。 このページには、コネクタに関するプロパティと情報が含まれる。
 
-3. [ **コネクタの状態 (ソース付き** )] の下で、[ **ログのダウンロード** ] リンクをクリックしてコネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータに関する情報が含まれています。
+3. [**コネクタの状態とソース**]で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存する) 必要があります。 このログには、Microsoft クラウドにインポートされたデータに関する情報が含まれます。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。
+- 現時点では、添付ファイルまたは 10 MB を超えるアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日利用可能になります。

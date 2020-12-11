@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 で Verizon ネットワークデータをアーカイブするためのコネクタの設定
+title: Microsoft 365 で Verizon Network データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,80 +11,74 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Microsoft 365 の Verizon ネットワークから SMS および MMS データをインポートしてアーカイブするための TeleMessage コネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 8d3d23a4383f15b9390db3fb84b20a5566a28b8d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 管理者は TeleMessage コネクタをセットアップして、Microsoft 365 の Verizon Network から SMS および MMS データをインポートおよびアーカイブできます。 これにより、Microsoft 365 のサード パーティデータ ソースのデータをアーカイブして、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: 2628a373a0232d5cadbb54db7253e56e35596b04
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196556"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619773"
 ---
-# <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Verizon ネットワークデータをアーカイブするためのコネクタの設定
+# <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Verizon Network データをアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンスセンターの TeleMessage コネクタを使用して、Verizon ネットワークからの短いメッセージングサービス (SMS) およびマルチメディアメッセージングサービス (MMS) データのインポートとアーカイブを行います。 コネクタをセットアップして構成した後は、組織の Verizon ネットワークに毎日接続し、SMS および MMS データを Microsoft 365 のメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの TeleMessage コネクタを使用して、Verizon Network からショート メッセージング サービス (SMS) およびマルチメディア メッセージング サービス (MMS) データをインポートおよびアーカイブします。 コネクタをセットアップして構成すると、毎日 1 回、組織の Verizon Network に接続し、SMS および MMS データを Microsoft 365 のメールボックスにインポートします。
 
-Verizon ネットワークコネクタのデータがユーザーのメールボックスに格納された後、Microsoft 365 のコンプライアンス機能 (訴訟ホールド、コンテンツ検索、Microsoft 365 アイテム保持ポリシーなど) を Verizon データに適用することができます。 たとえば、コンテンツ検索を使用して Verizon SMS および MMS メッセージを検索したり、Verizon ネットワークデータを含むメールボックスを高度な電子情報開示ケースの保管担当者に関連付けることができます。 Microsoft 365 で、Verizon ネットワークコネクタを使用してデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠したままにすることができます。
+Verizon ネットワーク コネクタのデータがユーザー メールボックスに保存された後、訴訟ホールド、コンテンツ検索、Microsoft 365 アイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を Verizon データに適用できます。 たとえば、コンテンツ検索を使用して Verizon SMS および MMS メッセージを検索したり、Verizon Network データを含むメールボックスを Advanced eDiscovery ケースの保管担当者に関連付けできます。 Verizon Network コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府や規制のポリシーに準拠しつながっているのに役立ちます。
 
-## <a name="overview-of-archiving-verizon-network-data"></a>Verizon ネットワークデータのアーカイブの概要
+## <a name="overview-of-archiving-verizon-network-data"></a>Verizon ネットワーク データのアーカイブの概要
 
-次の概要では、コネクタを使用して、Microsoft 365 で Verizon ネットワークデータをアーカイブするプロセスについて説明します。
+次の概要では、コネクタを使用して Microsoft 365 の Verizon Network データをアーカイブするプロセスについて説明します。
 
-![Verizon ネットワークアーカイブワークフロー](../media/VerizonNetworkConnectorWorkflow.png)
+![Verizon ネットワーク アーカイブ ワークフロー](../media/VerizonNetworkConnectorWorkflow.png)
 
-1. 組織は、TeleMessage と Verizon を使用して、Verizon ネットワークコネクタを設定します。 詳細については、「 [Verizon Network Archiver](https://www.telemessage.com/office365-activation-for-verizon-network-archiver/)」を参照してください。
+1. 組織は TeleMessage および Verizon と一緒に Verizon ネットワーク コネクタをセットアップします。 詳細については [、「Verizon Network Archiver」を参照してください](https://www.telemessage.com/office365-activation-for-verizon-network-archiver/)。
 
-2. 24時間ごとに、組織の Verizon ネットワークからの SMS および MMS メッセージは TeleMessage サイトにコピーされます。
+2. 24 時間ごとに、組織の Verizon Network からの SMS メッセージと MMS メッセージが TeleMessage サイトにコピーされます。
 
-3. Microsoft 365 コンプライアンスセンターで作成した Verizon ネットワークコネクタは、TeleMessage サイトに毎日接続し、SMS および MMS メッセージを過去24時間から Microsoft クラウド内のセキュアな Azure ストレージの場所に転送します。 また、このコネクタは、SMS メッセージと MMS メッセージの内容を電子メールメッセージ形式に変換します。
+3. Microsoft 365 コンプライアンス センターで作成する Verizon ネットワーク コネクタは、毎日 TeleMessage サイトに接続し、過去 24 時間の SMS メッセージと MMS メッセージを Microsoft Cloud のセキュリティで保護された Azure Storage の場所に転送します。 コネクタは、SMS メッセージと MMS メッセージのコンテンツを電子メール メッセージ形式に変換します。
 
-4. コネクタは、特定のユーザーのメールボックスにモバイル通信アイテムをインポートします。 「 **VERIZON SMS/MMS Network Archiver** 」という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *ユーザーの電子メールアドレス* プロパティの値を使用して、このマッピングを行います。 すべての SMS および MMS メッセージには、このプロパティが含まれています。このプロパティには、メッセージのすべての参加者の電子メールアドレスが設定されます。
+4. コネクタは、モバイル通信アイテムを特定のユーザーのメールボックスにインポートします。 **Verizon SMS/MMS Network Archiver** という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、ユーザーの電子メール アドレス プロパティの値を使用して *、このマッピングを行* います。 すべての SMS および MMS メッセージには、このプロパティが含まれるので、メッセージのすべての参加者の電子メール アドレスが設定されます。
 
-   *ユーザーの電子メールアドレス*プロパティの値を使用した自動ユーザーマッピングに加えて、CSV マッピングファイルをアップロードしてカスタムマッピングを実装することもできます。 このマッピングファイルには、組織内のユーザーの携帯電話番号と、対応する Microsoft 365 メールアドレスが含まれています。 自動ユーザーマッピングとカスタムマッピングの両方を有効にした場合、すべての Verizon アイテムに対して、コネクタは最初にカスタムマッピングファイルを検索します。 ユーザーの携帯電話番号に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはインポートしようとしているアイテムの [電子メールアドレス] プロパティの値を使用します。 コネクタが、カスタムマッピングファイルまたは Verizon アイテムの電子メールアドレスプロパティに有効な Microsoft 365 ユーザーを見つけられない場合、アイテムはインポートされません。
+   ユーザーの電子メール アドレス プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを実装できます。 このマッピング ファイルには、組織内のユーザーの携帯電話番号と対応する Microsoft 365 電子メール アドレスが含まれている。 自動ユーザー マッピングとカスタム マッピングの両方を有効にした場合、Verizon のすべての項目について、コネクタは最初にカスタム マッピング ファイルを参照します。 ユーザーの携帯電話番号に対応する有効な Microsoft 365 ユーザーが見つからなかった場合、コネクタはインポートしようとしているアイテムの電子メール アドレス プロパティの値を使用します。 コネクタがカスタム マッピング ファイルまたは Verizon アイテムの電子メール アドレス プロパティに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
 
 ## <a name="before-you-begin"></a>はじめに
 
-Verizon ネットワークデータをアーカイブするために必要ないくつかの実装手順は、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
+Verizon Network データのアーカイブに必要な実装手順の一部は Microsoft 365 の外部にあるので、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 
-- [TeleMessage から Verizon Network Archiver service](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365)を注文して、組織の有効な管理アカウントを取得します。 コンプライアンスセンターでコネクタを作成するときに、このアカウントにサインインする必要があります。
+- [TeleMessage から Verizon Network Archiver サービス](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365)を注文し、組織の有効な管理アカウントを取得します。 コンプライアンス センターでコネクタを作成するときに、このアカウントにサインインする必要があります。
 
-- Verizon ネットワークアカウントと請求連絡先の詳細を取得して、TeleMessage のオンボードフォームに記入し、Verizon からメッセージアーカイブサービスを注文することができるようにします。
+- TeleMessage オンボード フォームに入力し、Verizon からメッセージ アーカイブ サービスを注文できるよう、Verizon ネットワーク アカウントと請求先の連絡先の詳細を取得します。
 
-- TeleMessage アカウントに、Verizon SMS および MMS アーカイブを必要とするすべてのユーザーを登録します。 ユーザーを登録する場合は、Microsoft 365 アカウントに使用しているのと同じ電子メールアドレスを使用してください。
+- TeleMessage アカウントに Verizon SMS と MMS のアーカイブを必要とするユーザーを登録します。 ユーザーを登録する場合は、Microsoft 365 アカウントと同じメール アドレスを使用してください。
 
-- 従業員は、Verizon モバイルネットワーク上で企業所有の携帯電話と会社の責任を持つ携帯電話を所有している必要があります。 Microsoft 365 のアーカイブメッセージは、従業員が所有したり、独自のデバイス (BYOD) デバイスを使用したりすることはできません。
+- 従業員は、Verizon モバイル ネットワーク上に会社が所有し、会社が責任を持つ携帯電話を持っている必要があります。 Microsoft 365 のアーカイブ メッセージは、従業員が所有するデバイスや BYOD (Bring Your Own Devices) デバイスでは使用できません。
 
-- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この同意を得るには、コネクタを作成する必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Microsoft 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 Verizon ネットワークコネクタを正常に作成するには、この手順を完了する必要があります。
+- Verizon Network コネクタを作成するユーザーには、Exchange Online の Mailbox Import Export 役割が割り当てられている必要があります。 これは、Microsoft 365コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
-- Verizon ネットワークコネクタを作成したユーザーには、Exchange Online のメールボックスのインポートのエクスポート役割が割り当てられている必要があります。 これは、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
+## <a name="create-a-verizon-network-connector"></a>Verizon ネットワーク コネクタを作成する
 
-## <a name="create-a-verizon-network-connector"></a>Verizon ネットワークコネクタを作成する
+前のセクションで説明した前提条件が完了したら、Microsoft 365 コンプライアンス センターで Verizon Network コネクタを作成できます。 このコネクタは、指定した情報を使用して TeleMessage サイトに接続し、SMS メッセージと MMS メッセージを Microsoft 365 の対応するユーザー メールボックス ボックスに転送します。
 
-前のセクションで説明した前提条件を完了した後、Microsoft 365 コンプライアンスセンターで、Verizon ネットワークコネクタを作成できます。 コネクタは、提供された情報を使用して、TeleMessage サイトに接続し、SMS および MMS メッセージを Microsoft 365 の対応するユーザーメールボックスに転送します。
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click Data **connectors**  >  **Verizon Network**.
 
-1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、[**データコネクタ**  >  **Verizon ネットワーク**] をクリックします。
+2. **Verizon Network 製品の説明ページ** で、[コネクタの追加]**をクリックします。**
 
-2. [ **Verizon ネットワーク**製品の説明] ページで、[**コネクタの追加**] をクリックします。
+3. [サービス条件 **] ページで、[** 承諾] を **クリックします**。
 
-3. [ **サービス利用規約** ] ページで、[ **同意**する] をクリックします。
-
-4. [ **TeleMessage へのログイン** ] ページの [ステップ 3] で、必要な情報を次のボックスに入力し、[ **次へ**] をクリックします。
+4. **[TeleMessage へのログイン**] ページの手順 3 で、次のボックスに必要な情報を入力し、[次へ] をクリック **します**。
   
    - **ユーザー名:** TeleMessage ユーザー名。
 
-   - **パスワード:** TeleMessage のパスワードを入力します。
+   - **パスワード:** TeleMessage パスワード。
 
-5. コネクタが作成されたら、ポップアップウィンドウを閉じて次のページに進むことができます。
+5. コネクタを作成したら、ポップアップ ウィンドウを閉じて次のページに移動できます。
 
-6. [ **ユーザーマッピング** ] ページで、[ユーザーマッピングの自動設定] を有効にして、[ **次へ**] をクリックします。 カスタムマッピングが必要な場合は、CSV ファイルをアップロードし、[ **次へ**] をクリックします。
+6. [ユーザー マッピング **] ページで** 、自動ユーザー マッピングを有効にし、[次へ] を **クリックします**。 カスタム マッピングで CSV ファイルをアップロードする必要がある場合は、[次へ] をクリック **します**。
 
-7. 管理者の同意を得てから、[ **次へ**] をクリックします。
+7. 設定を確認し、[完了] を **クリックして** コネクタを作成します。
 
-   管理者の同意を得るには、Office 365 グローバル管理者の資格情報を使用してサインインし、同意要求を承諾する必要があります。 グローバル管理者としてサインインしていない場合は、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) に移動して、グローバル管理者の資格情報を使用してサインインし、要求を承諾することができます。
-
-8. 設定内容を確認し、[ **完了** ] をクリックしてコネクタを作成します。
-
-9. [ **データコネクタ** ] ページの [コネクタ] タブに移動して、新しいコネクタのインポート処理の進行状況を確認します。
+8. [データ コネクタ] ページの [コネクタ] タブに **移動** して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。
+- 現時点では、添付ファイルまたは 10 MB を超えるアイテムのインポートはサポートされていません。 より大きなアイテムのサポートは、後日利用可能になります。
