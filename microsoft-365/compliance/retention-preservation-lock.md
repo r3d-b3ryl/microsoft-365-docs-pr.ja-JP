@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベル ポリシーとともに保管ロックを使用して、規制要件を満たし、不正な管理者から保護します。
-ms.openlocfilehash: 6f6cfc5bef9b93af08fcc9b703b29facb9a7c576
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 9890c73495bd14ea7264f3314f6313254ef1bf6b
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920719"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612989"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する
 
@@ -28,18 +28,27 @@ ms.locfileid: "48920719"
 
 保管ロックは、アイテム保持ポリシーまたは保持ラベル ポリシーをロックして、グローバル管理者を含む誰もがポリシーをオフにしたり、ポリシーを削除したり、制限を緩和したりできないようにします。 この構成は、規制要件のために必要になる場合があります。また、不正な管理者からの保護に役立ちます。
 
-保持に関するポリシーがロックされている場合:
+保持ポリシーがロックされている場合:
 
-- だれもオフにすることはできません。
+- ポリシーを無効にしたり削除したりすることはできません
 - 場所は追加できますが、削除できません
-- 保持期間を延長することはできますが、減らすことはできません
+- 保持期間を延長することはできますが、短縮することはできません
+
+保持ラベル ポリシーがロックされている場合:
+
+- ポリシーを無効にしたり削除したりすることはできません
+- 場所は追加できますが、削除できません
+- ラベルは追加できますが、削除できません
 
 つまり、ロックされたアイテム保持ポリシーを増やしたり延長したりすることは可能ですが、減らしたり、オフにしたりすることはできません。
-  
+
 > [!IMPORTANT]
 > アイテム保持ポリシーまたは保持ラベル ポリシーをロックする前に、その影響を理解し、それが組織に必要であるかどうかを確認することが非常に重要です。 たとえば、規制要件を満たす必要がある場合があります。 保管ロックを適用すると、管理者はこれらのポリシーを無効にすることも削除することもできなくなります。
 
 [発行](create-apply-retention-labels.md)または[自動適用](apply-retention-labels-automatically.md)する[アイテム保持ポリシー](create-retention-policies.md)、または保持ラベル ポリシーを作成した後、保管ロックを構成します。 
+
+> [!NOTE]
+> ラベル ポリシーをロックしても、管理者はロックされたポリシーに含まれているラベルの保持期間を短縮できます。 アイテムを[規制レコード](records-management.md#records)としてマークするようにラベルを構成するときに、この要件を他の制限とともに満たすことができます。
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>アイテム保持ポリシーまたは保持ラベル ポリシーをロックする方法
 
@@ -49,11 +58,11 @@ ms.locfileid: "48920719"
 
 1. [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
-2. [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy) を実行してロックするポリシーの名前を検索します。 例:
+2. [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy) を実行してロックするポリシーの名前を検索します。 以下に例を示します。
     
    ![PowerShell のアイテム保持ポリシーの一覧](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
-3. ポリシーに保管ロックを設定するには、ポリシーの名前を指定して [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) コマンドレットを実行し、 *RestrictiveRetention* パラメーターを true に設定します。
+3. ポリシーに保管ロックを設定するには、ポリシーの名前を指定して [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) コマンドレットを実行し、*RestrictiveRetention* パラメーターを true に設定します。
     
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
@@ -63,7 +72,7 @@ ms.locfileid: "48920719"
     
     ![PowerShell の RestrictiveRetention パラメーター](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     メッセージが表示されたら、この構成に含まれる制限事項を読んで確認し、 **Y** を選びます。
+     メッセージが表示されたら、この構成に含まれる制限事項を読んで確認し、**Y** を選びます。
     
    ![PowerShell でアイテム保持ポリシーをロックすることを確認するプロンプト](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 

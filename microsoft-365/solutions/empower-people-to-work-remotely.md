@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: リモート ワーカーの生産性を最大化して、サーバー、データ、およびクラウドへの安全なアクセスを維持するために、Microsoft 365 のすべての機能が有効になっていることを確認します。
-ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371504"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616358"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -99,7 +99,17 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 [![リモート ワーカーを支援するポスター](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
-このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
+このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) または [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
+
+## <a name="provide-remote-working-for-all-of-your-workers"></a>すべての従業員にリモート ワークを提供する
+
+これらのデバイスを使用すると、すべての従業員がどこからでも生産性を維持できるようになります。
+
+- Surface Laptop や Windows 10 などの最新のデバイスです。Web 経由で直接 Microsoft 365 クラウド アプリやサービスにアクセスするための機能、セキュリティ、パフォーマンスを備えています。
+
+- 迅速に展開された [Windows 10 ベースの仮想デスクトップ](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices)を介して間接的に Microsoft 365 クラウド アプリとサービスにアクセスできる、自宅で使用されている以前のラップトップやデスクトップを含むすべてのデバイスです。 このオプションは、高い性能、強力なセキュリティ、およびシンプルな IT 管理を提供します。
+
+## <a name="next-steps"></a>次の手順
 
 次の手順を実行することにより、組織のサーバー、クラウド サービスへのアクセスをセキュリティで保護して最適化し、リモート ワーカーの生産性を最大限に高めることができます。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 927b85a5c2ef14313acd5c1637f561342d71ccc0
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: c1232e8e839837fc5564909322c90f634f1c6fa9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527572"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614931"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -79,7 +79,7 @@ ms.locfileid: "49527572"
     
     ラベルにこのスコープのみが選択されている場合、秘密度レベルをサポートする Office アプリにはラベルが表示されず、ファイルやメールに適用できません。 このようにラベルを分離すると、ユーザーと管理者の両方に役立ちますが、ラベルの展開が複雑になる可能性もあります。
     
-    たとえば、SharePoint はラベル付きドキュメントがラベル付きサイトにアップロードされたことを検出するため、[ラベルの順序](sensitivity-labels.md#label-priority-order-matters)を注意深く確認する必要があります。 このシナリオでは、ドキュメントの優先度がサイトのラベルよりも高い場合、監査イベントとメールが自動的に生成されます。 詳細については、このページの「[秘密度レベル アクティビティの監査](#auditing-sensitivity-label-activities)」セクションを参照してください。 
+    たとえば、SharePoint はラベル付きドキュメントがラベル付きサイトにアップロードされたことを検出するため、[ラベルの順序](sensitivity-labels.md#label-priority-order-matters)を注意深く確認する必要があります。 このシナリオでは、ドキュメントの秘密度ラベルの優先度がサイトのラベルよりも高い場合、監査イベントとメールが自動的に生成されます。 詳細については、このページの「[秘密度レベル アクティビティの監査](#auditing-sensitivity-label-activities)」セクションを参照してください。 
 
 2. 次に、**[グループとサイトの保護設定の定義]** ページで、使用可能なオプションの 1 つまたは両方を選択します。
     
@@ -359,7 +359,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 ## <a name="auditing-sensitivity-label-activities"></a>機密ラベル アクティビティの監査
 
 > [!IMPORTANT]
-> コンテナを保護するラベルの **[グループとサイト]** スコープのみを選択してラベル分離を使用する場合: このセクションで説明する **検出されたドキュメントの機密性の不一致** の監査イベントとメールのため、**ファイルとメール** のスコープを持つラベルの前に[これらのラベルの順序付け](sensitivity-labels.md#label-priority-order-matters)を検討してください。 
+> コンテナを保護するラベルの **[グループとサイト]** スコープのみを選択してラベル分離を使用する場合: このセクションで説明する **検出されたドキュメントの機密性の不一致** の監査イベントとメールのため、**ファイルとメール** のスコープを持つラベルの前に [これらのラベルの順序付け](sensitivity-labels.md#label-priority-order-matters)を検討してください。 
 
 誰かが機密ラベルで保護されているサイトにドキュメントをアップロードし、そのドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも[優先度が高く](sensitivity-labels.md#label-priority-order-matters)なっている場合、このアクションはブロックされません。 たとえば、「**一般**」ラベルを SharePoint サイトに適用し、誰かがこのサイトに「**社外秘**」というラベルの付けられたドキュメントをアップロードしたとします。 優先度の高い機密ラベルは、優先順位の低いコンテンツよりも機密性の高いコンテンツを識別するため、この状況はセキュリティ上の懸念になる可能性があります。
 
