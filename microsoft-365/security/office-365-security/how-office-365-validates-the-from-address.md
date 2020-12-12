@@ -1,5 +1,5 @@
 ---
-title: EOP がフィッシングを防ぐために From アドレスを検証する方法
+title: EOP がフィッシング詐欺を防ぐために From アドレスを検証する方法
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,102 +16,102 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online Protection (EOP) および Outlook.com によって承諾または拒否される電子メールアドレスの種類について学び、フィッシングを防ぐことができます。
+description: 管理者は、Exchange Online Protection (EOP) によって受け付けまたは拒否される電子メール アドレスの種類と、フィッシングOutlook.comに役立つ情報を確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 25fbca8fa5d264a212ac25e2035bffde0819383d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196061"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659656"
 ---
-# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP がフィッシングを防ぐために From アドレスを検証する方法
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP がフィッシングを防止するために From アドレスを検証する方法
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-フィッシング攻撃は、電子メール組織にとって常に脅威となります。 [スプーフィング (偽造) された送信者電子メールアドレス](anti-spoofing-protection.md)を使用することに加えて、多くの場合、攻撃者は、インターネット標準に違反した From アドレスの値を使用します。 この種のフィッシングを防ぐために、Exchange Online Protection (EOP) と Outlook.com では、このトピックで説明するように、受信メッセージに RFC 準拠の差出人のアドレスを含めるように要求されています。 この強制は、2017年11月に有効になっています。
+フィッシング攻撃は、すべての電子メール組織にとって絶え間ない脅威です。 攻撃者は、スプーフィング [された (偽造された)](anti-spoofing-protection.md)送信者の電子メール アドレスを使用する以外に、インターネット標準に違反する差出人アドレスの値を使用する場合があります。 この種のフィッシングを防止するために、Exchange Online Protection (EOP) と Outlook.com では、この記事で説明するように、RFC 準拠の差出人アドレスを含める受信メッセージが必要になります。 この実施は、2017 年 11 月に有効になっています。
 
 **注**:
 
-- このトピックで説明されているように、アドレスが正しくない組織から電子メールを定期的に受信している場合は、最新のセキュリティ標準に準拠するように電子メールサーバーを更新するように組織を促します。
+- この記事で説明したように、From アドレスの形式が正しい組織からメールを定期的に受信する場合は、最新のセキュリティ標準に準拠するように電子メール サーバーを更新するよう組織に勧めします。
 
-- 関連する Sender フィールド (代理人とメーリングリストで使用) は、これらの要件の影響を受けません。 詳細については、次のブログ投稿を参照してください。 [電子メールの ' sender ' を参照するとどういう](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)ことですか。
+- 関連する Sender フィールド ([代理送信] および [郵送リスト] で使用) は、これらの要件の影響を受け取らない。 詳細については、次のブログ投稿を参照してください。メールの「送信者」を参照すると、どのような[意味がありますか?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)
 
-## <a name="an-overview-of-email-message-standards"></a>電子メールメッセージの標準の概要
+## <a name="an-overview-of-email-message-standards"></a>電子メール メッセージの標準の概要
 
-標準的な SMTP 電子メール メッセージは、*メッセージ エンベロープ*とメッセージのコンテンツで構成されます。 メッセージエンベロープには、SMTP サーバー間でメッセージを送信および配信するために必要な情報が含まれています。 メッセージのコンテンツには、総称して "*メッセージ ヘッダー*" と呼ばれるメッセージ ヘッダー フィールドと、メッセージ本文があります。 メッセージエンベロープは [rfc 5321](https://tools.ietf.org/html/rfc5321)で説明されており、メッセージヘッダーについては [rfc 5322](https://tools.ietf.org/html/rfc5322)で説明されています。 メッセージの送信プロセスによって生成されたメッセージエンベロープがメッセージの一部ではないため、受信者に実際のメッセージエンベロープが表示されることはありません。
+標準的な SMTP 電子メール メッセージは、*メッセージ エンベロープ* とメッセージのコンテンツで構成されます。 メッセージ エンベロープには、SMTP サーバー間でメッセージを送信および配信するために必要な情報が含まれます。 メッセージのコンテンツには、総称して "*メッセージ ヘッダー*" と呼ばれるメッセージ ヘッダー フィールドと、メッセージ本文があります。 メッセージ エンベロープは [RFC 5321](https://tools.ietf.org/html/rfc5321)で記述され、メッセージ ヘッダーは [RFC 5322 で記述されています](https://tools.ietf.org/html/rfc5322)。 実際のメッセージ エンベロープはメッセージ送信プロセスによって生成され、実際にはメッセージの一部ではないので、受信者には表示されません。
 
-- `5321.MailFrom`アドレス ( **MAIL FROM** address、P1 sender、または envelope sender とも呼ばれます) は、メッセージの SMTP 送信で使用される電子メールアドレスです。 通常、この電子メールアドレスは、メッセージヘッダーの **リターンパス** ヘッダーフィールドに記録されます (ただし、送信者は別の **リターンパス** 電子メールアドレスを指定することもできます)。
+- アドレス (MAIL FROM アドレス、P1 送信者、またはエンベロープ送信者とも呼ばれる) は、メッセージの SMTP 送信で使用される電子メール `5321.MailFrom` アドレスです。  この電子メール アドレスは、通常、メッセージ ヘッダーの **Return-Path** ヘッダー フィールドに記録されます (ただし、送信者が別の **Return-Path** 電子メール アドレスを指定することもできます)。
 
-- `5322.From`(From アドレスまたは P2 送信者とも呼ばれる) は、[送信**元**アドレス] フィールドの電子メールアドレスであり、電子メールクライアントに表示される送信者の電子メールアドレスです。 From アドレスは、このトピックに記載されている要件の焦点です。
+- The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. From アドレスは、この記事の要件の焦点です。
 
-From アドレスは、いくつかの Rfc (たとえば、RFC 5322 セクション3.2.3、3.4、3.4.1、 [rfc 3696](https://tools.ietf.org/html/rfc3696)) にわたって詳細に定義されています。 アドレス指定には多くのバリエーションがあり、どのような意味があるかは無効です。 簡単にするために、次の形式と定義をお勧めします。
+From アドレスは、いくつかの RFC (RFC 5322 セクション 3.2.3、3.4、3.4.1、RFC [3696](https://tools.ietf.org/html/rfc3696)など) で詳細に定義されます。 アドレス指定には多くのバリエーションが存在し、有効または無効と見なされるものがあります。 シンプルに保つために、次の形式と定義をお勧めします。
 
 `From: "Display Name" <EmailAddress>`
 
-- [**表示名**: 電子メールアドレスの所有者を説明する省略可能な語句です。
+- **表示名**: 電子メール アドレスの所有者を説明するオプションの語句。
 
-  - 表示名は常に二重引用符 (") で囲むようにすることをお勧めします。 表示名にコンマが含まれている場合は、RFC 5322 ごとに文字列を二重引用符で囲む _必要があり_ ます。
-  - [差出人] アドレスに表示名を指定する場合は、EmailAddress の値を山かっこ (< >) で囲む必要があります。
-  - Microsoft では、表示名と電子メールアドレスの間にスペースを挿入することを強くお勧めします。
+  - 次に示すように、表示名は常に二重引用符 (") で囲む必要があります。 表示名にコンマが含まれている場合は、RFC 5322 ごとに文字列を二重引用符で囲む必要があります。 
+  - From アドレスに表示名が含まれる場合は、次に示すように EmailAddress 値を角かっこ (< >) で囲む必要があります。
+  - 表示名と電子メール アドレスの間にスペースを挿入強く推奨します。
 
-- **EmailAddress**: 電子メールアドレスの形式は `local-part@domain` 次のとおりです。
+- **EmailAddress**: 電子メール アドレスは次の形式を使用します `local-part@domain` 。
 
-  - **ローカルパート**: アドレスに関連付けられているメールボックスを識別する文字列。 この値は、ドメイン内で一意です。 多くの場合、メールボックスの所有者のユーザー名または GUID が使用されます。
-  - **ドメイン**: 電子メールアドレスのローカル部分で識別されたメールボックスをホストする電子メールサーバーの完全修飾ドメイン名 (FQDN)。
+  - **local-part**: アドレスに関連付けられているメールボックスを識別する文字列。 この値はドメイン内で一意です。 多くの場合、メールボックス所有者のユーザー名または GUID が使用されます。
+  - **domain**: 電子メール アドレスのローカル部分によって識別されるメールボックスをホストする電子メール サーバーの完全修飾ドメイン名 (FQDN)。
 
-  EmailAddress の値に関するその他の考慮事項を次に示します。
+  EmailAddress 値に関する追加の考慮事項を次に示します。
 
-  - 電子メールアドレスは1つだけです。
-  - 角かっこは、スペースで区切り文字として使用しないことをお勧めします。
-  - 電子メールアドレスの後に追加のテキストを含めないでください。
+  - 1 つのメール アドレスのみ。
+  - 角かっこはスペースで区切らはお勧めしません。
+  - メール アドレスの後にテキストを追加しない。
 
-## <a name="examples-of-valid-and-invalid-from-addresses"></a>有効な/無効なアドレスの例
+## <a name="examples-of-valid-and-invalid-from-addresses"></a>有効な From アドレスと無効な From アドレスの例
 
-以下は、有効な電子メールアドレスです。
+次の From 電子メール アドレスが有効です。
 
 - `From: sender@contoso.com`
 
 - `From: <sender@contoso.com>`
 
-- `From: < sender@contoso.com >` (角かっこと電子メールアドレスの間にスペースがあるため、この方法は推奨されません)。
+- `From: < sender@contoso.com >` (角かっこと電子メール アドレスの間にスペースが含まれているため、お勧めしません。
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
 - `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Microsoft 365 <sender@contoso.com>` (表示名が二重引用符で囲まれていないため、推奨されません)。
+- `From: Microsoft 365 <sender@contoso.com>` (表示名は二重引用符で囲んでいないので、お勧めしません。
 
-次の電子メールアドレスは無効です。
+次の From 電子メール アドレスは無効です。
 
-- **From アドレスなし**: 一部の自動メッセージに差出人住所が含まれていません。 以前は、Microsoft 365 または Outlook.com が差出人アドレスを持たないメッセージを受信すると、サービスは次の既定の From: address を追加して、メッセージを配信するようにしました。
+- **[From アドレスなし**]: 一部の自動メッセージには From アドレスが含まれます。 Microsoft 365 または Outlook.com が From アドレスのないメッセージを受信した場合、サービスは次の既定の From: アドレスを追加してメッセージを配信可能にしました。
 
   `From: <>`
 
-  これで、空の差出人アドレスを持つメッセージは受け付けられなくなりました。
+  これで、空の From アドレスを持つメッセージは受け付けなくなりました。
 
-- `From: Microsoft 365 sender@contoso.com` (表示名は存在しますが、電子メールアドレスは角かっこで囲まれていません)。
+- `From: Microsoft 365 sender@contoso.com` (表示名は表示されますが、電子メール アドレスは角かっこで囲む必要があります)。
 
-- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (電子メールアドレスの後のテキスト)
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (メール アドレスの後のテキスト)。
 
-- `From: Sender, Example <sender.example@contoso.com>` (表示名にはコンマが含まれていますが、二重引用符で囲まれていません)。
+- `From: Sender, Example <sender.example@contoso.com>` (表示名にはコンマが含まれますが、二重引用符で囲む必要はありません)。
 
-- `From: "Microsoft 365 <sender@contoso.com>"` (全体の値が誤って二重引用符で囲まれています。)
+- `From: "Microsoft 365 <sender@contoso.com>"` (値全体が誤って二重引用符で囲まれている。
 
-- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (表示名は存在しますが、電子メールアドレスは角かっこで囲まれていません)。
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (表示名は表示されますが、電子メール アドレスは角かっこで囲む必要があります)。
 
-- `From: Microsoft 365<sender@contoso.com>` (表示名と左山かっこの間にスペースはありません)。
+- `From: Microsoft 365<sender@contoso.com>` (表示名と左の角かっこの間にはスペースはありません。
 
-- `From: "Microsoft 365"<sender@contoso.com>` (閉じる二重引用符と左山かっこの間にスペースを入れることはできません)。
+- `From: "Microsoft 365"<sender@contoso.com>` (終了二重引用符と左の角かっこの間にはスペースはありません。
 
-## <a name="suppress-auto-replies-to-your-custom-domain"></a>カスタムドメインへの自動返信を抑制する
+## <a name="suppress-auto-replies-to-your-custom-domain"></a>カスタム ドメインへの自動返信を抑制する
 
-この値を使用して `From: <>` 自動応答を抑制することはできません。 代わりに、カスタムドメインの null MX レコードを設定する必要があります。 応答サーバーがメッセージを送信できる公開アドレスがないため、自動応答 (およびすべての返信) は自然に抑制されます。
+この値を使用して `From: <>` 自動応答を抑制することはできません。 代わりに、カスタム ドメインの NULL MX レコードを設定する必要があります。 自動応答 (およびすべての返信) は、応答側サーバーがメッセージを送信できる発行済みアドレスが存在しないので、自然に抑制されます。
 
-- 電子メールを受信できない電子メールドメインを選択します。 たとえば、プライマリドメインが contoso.com の場合は、noreply.contoso.com を選択することができます。
+- メールを受信できないメール ドメインを選択します。 たとえば、プライマリ ドメインがcontoso.com場合は、次のnoreply.contoso.com。
 
-- このドメインの null MX レコードは、1つのピリオドで構成されます。
+- このドメインの NULL MX レコードは、1 つのピリオドで構成されます。
 
 例:
 
@@ -119,16 +119,16 @@ From アドレスは、いくつかの Rfc (たとえば、RFC 5322 セクショ
 noreply.contoso.com IN MX .
 ```
 
-MX レコードのセットアップの詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)する」を参照してください。
+MX レコードの設定の詳細については [、「Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)の任意の DNS ホスティング プロバイダーで DNS レコードを作成する」を参照してください。
 
-Null MX の公開の詳細については、「 [RFC 7505](https://tools.ietf.org/html/rfc7505)」を参照してください。
+NULL MX の公開の詳細については [、RFC 7505 を参照](https://tools.ietf.org/html/rfc7505)してください。
 
-## <a name="override-from-address-enforcement"></a>アドレスの強制/無効化
+## <a name="override-from-address-enforcement"></a>アドレスの適用による上書き
 
-受信電子メールの From アドレス要件をバイパスするには、「 [Microsoft 365 の「差出人セーフリストを作成](create-safe-sender-lists-in-office-365.md)する」の説明に従って、IP 許可一覧 (接続フィルター) またはメールフロールール (トランスポートルールとも呼ばれます) を使用できます。
+受信メールの差出人アドレスの要件を回避するには [、「Microsoft 365](create-safe-sender-lists-in-office-365.md)で差出人セーフ リストを作成する」の説明に従って、IP 許可一覧 (接続フィルター) またはメール フロー ルール (トランスポート ルールとも呼ばれる) を使用できます。
 
-Microsoft 365 から送信する送信電子メールについては、From アドレスの要件を無効にすることはできません。 さらに、Outlook.com では、サポートによっても、あらゆる種類の上書きを許可しません。
+Microsoft 365 から送信する送信メールの From アドレス要件を上書きできない。 また、サポートOutlook.com、どのような種類のオーバーライドも許可されていません。
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Microsoft 365 で cybercrimes を防止および保護する他の方法
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Microsoft 365 でのサイバー犯罪を防止して保護するその他の方法
 
-フィッシング、スパム、データ漏洩、およびその他の脅威から組織を強化する方法の詳細については、「 [Microsoft 365 for business プランをセキュリティで保護するための上位10の方法](../../admin/security-and-compliance/secure-your-business-data.md)」を参照してください。
+フィッシング、スパム、データ侵害、その他の脅威に対して組織を強化する方法の詳細については、「ビジネス プラン向け [Microsoft 365](../../admin/security-and-compliance/secure-your-business-data.md)をセキュリティで保護するトップ 10 の方法」を参照してください。

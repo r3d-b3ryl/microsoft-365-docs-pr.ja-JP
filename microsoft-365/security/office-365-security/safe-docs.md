@@ -15,51 +15,60 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 E5 または Microsoft 365 E5 セキュリティの安全なドキュメントについて説明します。
-ms.openlocfilehash: 7fbee440298aea3609665b62a946ae3ce2857e37
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0acb5d4ee0c80deebc4d0b040b046d63037037a7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845482"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659875"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[安全なドキュメント] は、 [エンドポイントに Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) を使用して、 [保護さ](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)れたビューで開かれたドキュメントやファイルをスキャンする、microsoft 365 e5 または microsoft 365 E5 セキュリティの機能です。
+安全なドキュメントは、Microsoft 365 E5 または Microsoft 365 E5 セキュリティの機能で[、Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)を使用して、保護ビューで開いているドキュメントとファイルをスキャン[します。](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- セーフドキュメントは、 *microsoft 365 E5* または *Microsoft 365 E5 セキュリティ* ライセンスを持つユーザーのみが利用できます。 これらのライセンスは、Microsoft Defender for Office 365 プランには含まれていません。
+- 安全なドキュメントは *、Microsoft 365 E5* または *Microsoft 365 E5 セキュリティ* ライセンスを持つユーザーだけが利用できます。 これらのライセンスは、Office 365 プランの Microsoft Defender には含まれていません。
 
-- 「安全なドキュメント」は、Microsoft 365 for enterprise (旧称 Office 365 ProPlus) version 2004 以降でサポートされています。
+- 安全なドキュメントは、Microsoft 365 Apps for enterprise (以前の Office 365 ProPlus) バージョン 2004 以降でサポートされています。
 
-- <https://protection.office.com> でセキュリティ/コンプライアンス センターを開きます。 [ATP の安全な **添付ファイル** ] ページに直接移動するには、を開き <https://protection.office.com/safeattachmentv2> ます。
+- <https://protection.office.com> でセキュリティ/コンプライアンス センターを開きます。 [ATP の安全な添付ファイル **] ページに直接移動するには** 、開きます <https://protection.office.com/safeattachmentv2> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- このトピックの手順を実行するには、あらかじめアクセス許可を割り当てる必要があります。 安全なドキュメントを有効にして構成するには、組織の **管理** 役割グループまたは **セキュリティ管理者** 役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
+- この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります。
+  - 安全なドキュメントの設定を構成するには、組織の管理役割グループまたはセキュリティ管理者役割グループの **メンバーである** 必要があります。
+  - 安全なドキュメントの設定に読み取り専用でアクセスするには、グローバル閲覧者またはセキュリティ閲覧者の役割グループのメンバー **である** 必要があります。
 
-### <a name="how-does-microsoft-handle-your-data"></a>Microsoft はどのようにデータを処理していますか?
+  詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-保護された状態を維持するために、安全なドキュメントは、分析のために [エンドポイントクラウドのファイルを Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) に送信します。 エンドポイントの Microsoft Defender がデータを処理する方法の詳細については、「 [エンドポイントのデータの保存とプライバシーに関する Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)」を参照してください。
+  **注**:
 
-Safe ドキュメントによって送信されたファイルは、分析に必要な時間 (通常は24時間未満) を超えて、Defender に保持されません。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
-## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>セキュリティ & コンプライアンスセンターを使用して安全なドキュメントを構成する
+### <a name="how-does-microsoft-handle-your-data"></a>Microsoft はデータを処理する方法を説明します。
 
-1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル** ] に移動し、[ **グローバル設定** ] をクリックします。
+保護された状態を維持するために、安全なドキュメントは分析のために [Microsoft Defender for Endpoint クラウド](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) にファイルを送信します。 Microsoft Defender for Endpoint がデータを処理する方法の詳細については、Microsoft Defender for Endpoint のデータストレージとプライバシーに関するページ [をご覧ください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
 
-2. [ **グローバル設定** ] が表示されたら、次の設定を構成します。
+安全なドキュメントによって送信されたファイルは、分析に必要な時間を超えて Defender に保持されません (通常、24 時間未満)。
 
-   - **Office クライアントに対して安全なドキュメントを有効** にします。トグルを右に移動して、機能をオンにします。オン ![ に ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) します。
+## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>セキュリティ/コンプライアンス センター&使用して安全なドキュメントを構成する
 
-   - **安全なドキュメントが悪意のあるファイルを識別している場合でも、保護されたビューのクリックをユーザーに許可** します。このオプションはオフのままにしておくことをお勧めします (トグルオフのままにし ![ ](../../media/scc-toggle-off.png) ます)。
+1. セキュリティ/コンプライアンス センター&、**脅威管理** ポリシー ATP の安全な添付ファイルに移動し、[グローバル設定] \>  \> を **クリックします**。
 
-   完了したら、 **[保存]** をクリックします。
+2. 表示される **グローバル設定** のフライアウトで、次の設定を構成します。
 
-   ![[安全な添付ファイル] ページでグローバル設定を選択した後の、安全なドキュメントの設定。](../../media/safe-docs.png)
+   - **[安全な** ドキュメント] を Officeクライアントに対して有効にする: トグルを右に移動して機能を有効にします。オンに切り ![ 替えます ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+
+   - **安全な** ドキュメントでファイルが悪意のあるものとして識別された場合でも、保護ビューをクリックすることを許可します。このオプションをオフのままにすることをお勧めします (左側に切り替え: オフ ![ にします ](../../media/scc-toggle-off.png) )。
+
+   完了したら、**[保存]** をクリックします。
+
+   ![[安全な添付ファイル] ページで [グローバル設定] を選択した後の安全なドキュメントの設定。](../../media/safe-docs.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Exchange Online PowerShell を使用して安全なドキュメントを構成する
 
@@ -69,22 +78,22 @@ Safe ドキュメントによって送信されたファイルは、分析に必
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
-- _Enablesafedocs_ パラメーターは、組織全体に対して安全なドキュメントを有効または無効にします。
-- _Allowsafedocsopen_ パラメーターを使用すると、ドキュメントが悪意のあるものとして識別された場合に、保護されたビュー (ドキュメントを開く操作) をユーザーが終了できないようにすることができます。
+- _EnableSafeDocs パラメーターは_、組織全体の安全なドキュメントを有効または無効にします。
+- _AllowSafeDocsOpen_ パラメーターは、ドキュメントが悪意のあるものとして識別された場合に、ユーザーが保護ビューを離れる (つまり、ドキュメントを開く) のを許可または防止します。
 
-この例では、組織全体に対して安全なドキュメントを有効にし、保護されたビューから悪意があると識別されたドキュメントをユーザーが開くことができないようにします。
+この例では、組織全体に対して安全なドキュメントを有効にし、悪意のあるドキュメントとして識別されたドキュメントを保護ビューからユーザーが開くのを防止します。
 
 ```powershell
 Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
-構文およびパラメーターの詳細については、「 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)」を参照してください。
+構文およびパラメーターの詳細については [、「Set-AtpPolicyForO365」を参照](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)してください。
 
 ### <a name="how-do-i-know-this-worked"></a>設定が適用されたことを確認する方法
 
-安全なドキュメントを有効にして構成したことを確認するには、次のいずれかの手順を実行します。
+安全なドキュメントを有効にし、構成されていることを確認するには、次の手順を実行します。
 
-- [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル** ] に移動し、[ **グローバル設定** ] をクリックし、[ **Office クライアントの安全なドキュメントを有効** にする] をオンにして、 **安全なドキュメントでファイルが悪意のある設定として識別される場合でも、[保護されたビューを使用してクリックできる**
+- セキュリティ & コンプライアンス センターで、脅威管理ポリシー ATP の安全な添付ファイルに移動し、[グローバル設定] をクリックして \>  \> **、Office** クライアントの安全なドキュメントを有効にし、安全なドキュメントが悪意のある設定としてファイルを識別した場合でも、保護ビューをクリックできるユーザーを許可します。
 
 - Exchange Online PowerShell で次のコマンドを実行し、プロパティの値を確認します。
 
@@ -92,7 +101,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
   Get-AtpPolicyForO365 | Format-List *SafeDocs*
   ```
 
-- 次のファイルを使用して、安全なドキュメント保護をテストできます。 これらのドキュメントは、マルウェア対策およびウイルス対策ソリューションをテストするための EICAR.TXT ファイルに似ています。 これらのファイルは有害ではありませんが、安全なドキュメント保護をトリガーします。
+- 安全なドキュメント保護をテストするには、次のファイルを使用できます。 これらのドキュメントは、マルウェア対策EICAR.TXTウイルス対策ソリューションをテストする目的で使用されるファイルと似ています。 ファイルは有害ではないが、安全なドキュメント保護をトリガーします。
 
   - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
   - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)

@@ -1,5 +1,5 @@
 ---
-title: メンバーがグループに代わって送信または送信できるようにする
+title: メンバーがグループとして送信またはグループの代わりに送信を許可する
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,72 +16,72 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: メンバーが Microsoft 365 グループとしてメールを送信できるようにする方法、または Microsoft 365 グループの代理としてメールを送信できるようにする方法について説明します。
-ms.openlocfilehash: 2abf0668411ccd08db5bbd8408605dcd0aa2d832
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: メンバーが Microsoft 365 グループとしてメールを送信したり、Microsoft 365 グループの代わりにメールを送信したりする方法について説明します。
+ms.openlocfilehash: 6dff559eceec1b719f31d577d7fff8f604636a47
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613574"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663585"
 ---
-# <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>メンバーがグループに代わって送信または送信できるようにする
+# <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>メンバーがグループとして送信またはグループの代わりに送信を許可する
 
-送信者または **代理人****と** して送信するアクセス許可が付与されている Microsoft 365 グループのメンバーは、グループとして、またはグループの代わりにメールを送信できます。 この記事では、管理者がこれらのアクセス許可を設定する方法について説明します。
+[送信者] または [代理送信] アクセス許可が付与されているMicrosoft 365 グループのメンバーは、グループとして、またはグループの代理として電子メールを送信できます。 この記事では、グローバル管理者または Exchange 管理者がこれらのアクセス許可を設定する方法について説明します。
   
-たとえば、Megan Bowen が **トレーニング** の Microsoft 365 グループに含まれていて、グループに対して **送信** 者アクセス許可を持っている場合、グループとして電子メールを送信すると、その電子メールを送信した **トレーニング** グループのように表示されます。 
+たとえば、Megan Bowen が **Training** Microsoft 365 グループの一部であり、グループに対する送信アクセス許可を持つ場合、そのユーザーがグループとしてメールを送信すると、そのメールを送信したトレーニング グループのようになります。 
   
-**[代理人として送信** する] アクセス許可を使用すると、ユーザーは Microsoft 365 グループに代わって電子メールを送信できます。 たとえば、Alex が **marketing** Microsoft 365 グループの一部であり、 **代理送信** アクセス許可を持ち、グループとして電子メールを送信する場合、電子メールは **Alex がマーケティングの代理** として送信されたように見えます。
+[ **代理送信] アクセス** 許可を使用すると、ユーザーは Microsoft 365 グループの代わりにメールを送信できます。 たとえば、Alex Wilber が **Marketing** Microsoft 365 グループの一部であり、代理送信のアクセス許可を持ち、グループとしてメールを送信する場合、電子メールはマーケティングの代わりに **Alex Wilber** によって送信されたように見えます。
 
 > [!IMPORTANT]
-> 特定のユーザーに対し **て [送信** ] または **[代理送信** ] を構成できますが、両方を構成することはできません。 両方を構成した場合、既定では **として送信** されます。
+> 指定したユーザー **の [ユーザーとして送信]** または [ **代理** 送信] を構成できますが、両方を構成することはできません。 両方を構成する場合は、既定で [次のように **送信] が設定されます**。
 
 > [!TIP]
-> Outlook および Outlook on the Web を使用してグループから電子メールを送信する方法について [は、「Microsoft 365 グループの代理](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) としてメールを送信する」を参照してください。
+> Outlook と Outlook on the Web を使用してグループからメールを送信する方法については [、「Microsoft 365](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) グループからメールを送信する」または「Microsoft 365 グループの代理でメールを送信する」を参照してください。
     
-## <a name="allow-members-to-send-email-as-a-group"></a>メンバーがグループとしてメールを送信できるようにする
+## <a name="allow-members-to-send-email-as-a-group"></a>メンバーがグループとしてメールを送信する
 
-このセクションでは、exchange Online の [exchange 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) でユーザーがグループとしてメールを送信できるようにする方法について説明します。
+このセクションでは、ユーザーが Exchange Online の [Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) 管理センター (EAC) でグループとしてメールを送信する方法について説明します。
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
-2.  ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) ユーザーが送信者として送信できるようにするグループの [編集グループの編集] アイコンを選択します。   
+2. ユーザー **に送信** を許可するグループの [グループの編集] ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) アイコンを選択します。   
     
 3. [ **グループ委任**] を選びます。
     
-4. [ **送信** ] セクションで、 **+** グループとして送信するユーザーを追加するための署名を選択します。 
+4. [送信 **者] セクション** で、署名を選択して、グループとして送信 **+** するユーザーを追加します。 
     
-    ![[送信] ダイアログボックスのスクリーンショット](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![[送信] ダイアログ ボックスのスクリーンショット](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
-5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 [ **OK]** を選択して、 **保存** します。
+5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 **[OK] を選択** し、[保存 **] を選択します**。
     
-    ![リストからユーザーを検索または選択するには、「」と入力します。](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![一覧からユーザーを検索または選択する入力](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
-## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>メンバーがグループに代わって電子メールを送信することを許可する
+## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>グループの代わりにメンバーが電子メールを送信できる
 
-このセクションでは、exchange Online の Exchange 管理センター (EAC) で、ユーザーがグループに代わって電子メールを送信できるようにする方法について説明します。
+このセクションでは、ユーザーが Exchange Online の Exchange 管理センター (EAC) でグループの代理として電子メールを送信する方法について説明します。
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
-2.  ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) ユーザーが送信者として送信できるようにするグループの [編集グループの編集] アイコンを選択します。 
+2. ユーザー **に送信** を許可するグループの [グループの編集] ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) アイコンを選択します。 
     
 3. [ **グループ委任**] を選びます。
     
-4. [代理人として送信する] セクションで、 **+** グループとして送信するユーザーを追加するための署名を選択します。 
+4. [代理送信] セクションで、署名を選択して、グループとして送信 **+** するユーザーを追加します。 
     
     ![[代理送信] ダイアログのスクリーンショット](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
-5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 [ **OK]** を選択して、 **保存** します。
+5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 **[OK] を選択** し、[保存 **] を選択します**。
     
-    ![リストからユーザーを検索または選択するには、「」と入力します。](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![一覧からユーザーを検索または選択する入力](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>関連記事
 
-[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[グループコラボレーション ガバナンスの計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
+[コラボレーション ガバナンス計画を作成する](collaboration-governance-first.md)
 
-[Microsoft 365 グループの詳細情報](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Microsoft 365 グループの詳細](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[[受信者の追加] アクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=723960)
+[Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 
 [Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189)

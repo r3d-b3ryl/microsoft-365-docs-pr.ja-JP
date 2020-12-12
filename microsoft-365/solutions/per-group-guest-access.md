@@ -1,5 +1,5 @@
 ---
-title: 特定のグループにゲストが追加されないようにする
+title: 特定のグループにゲストが追加されるのを防ぐ
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,25 +14,25 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 特定のグループにゲストが追加されないようにする方法について説明します。
-ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: 特定のグループにゲストが追加されるのを防ぐ方法について説明します。
+ms.openlocfilehash: 8bee26bf5ec323536ca1ac6f25ce96927634cee7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660050"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>特定の Microsoft 365 グループまたは Microsoft Teams チームにゲストが追加されないようにする
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>特定の Microsoft 365 グループまたは Microsoft Teams チームにゲストが追加されるのを防ぐ
 
-ほとんどのグループおよびチームへのゲストアクセスを許可するが、ゲストアクセスを禁止する場所がある場合は、個々のグループおよびチームのゲストアクセスをブロックすることができます。 (チームへのゲストアクセスをブロックするには、関連するグループへのゲストアクセスをブロックすることによって行います)。これにより、新しいゲストは追加されませんが、グループまたはチームに既に存在するゲストは削除されません。
+ほとんどのグループやチームへのゲスト アクセスを許可するが、ゲスト アクセスを防止する必要がある場合は、個々のグループとチームのゲスト アクセスをブロックできます。 (チームへのゲスト アクセスをブロックするには、関連付けられているグループへのゲスト アクセスをブロックします)。これにより、新しいゲストは追加されませんが、グループまたはチームに既に存在するゲストは削除されません。
 
-組織で機密ラベルを使用する場合は、グループごとのゲストアクセスを制御するためにそれらを使用することをお勧めします。 これを行う方法については、「 [機密ラベルを使用して Microsoft Teams、microsoft 365 グループ、および SharePoint サイトのコンテンツを保護する](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)」を参照してください。 これが推奨アプローチです。
+組織で感度ラベルを使用する場合は、グループごとにゲスト アクセスを制御するために使用することをお勧めします。 これを行う方法については [、Microsoft Teams、Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)グループ、および SharePoint サイトのコンテンツを保護するために、感度ラベルを使用します。 これが推奨アプローチです。
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Microsoft PowerShell を使用してグループ設定を変更する
 
-PowerShell を使用して、個々のグループに新しいゲストを追加することを禁止することもできます。
+PowerShell を使用して、個々のグループへの新しいゲストの追加を防止することもできます。 (チームに関連付けられた SharePoint サイトには、個別の [ゲスト共有コントロールがある点に注意してください](https://docs.microsoft.com/sharepoint/change-external-sharing-site))。
 
-グループレベルのゲストアクセス設定を変更するには、 [Graph 用の Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (モジュール名 **AzureADPreview**) のプレビューバージョンを使用する必要があります。
+グループ レベルのゲスト アクセス設定を変更するには、Graph 用 [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) のプレビュー バージョン (モジュール名 **AzureADPreview)** を使用する必要があります。
 
 - 以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Installing the Azure AD Module (Azure AD モジュールのインストール)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。
 
@@ -69,7 +69,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
   
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>ゲストのドメインに応じてゲスト アクセスを許可またはブロックする
 
-特定のドメインを使用しているゲストを許可またはブロックすることができます。 たとえば、ビジネス (Contoso) が別のビジネス (Fabrikam) とパートナーシップを持っている場合は、Fabrikam を許可リストに追加して、ユーザーが自分のグループにそのゲストを追加できるようにすることができます。
+特定のドメインを使用しているゲストを許可またはブロックできます。 たとえば、会社 (Contoso) が別のビジネス (Fabrikam) とパートナーシップを持っている場合は、許可リストに Fabrikam を追加して、ユーザーがそれらのゲストを自分のグループに追加できます。
 
 詳細については、「[B2B ユーザーに対する特定組織からの招待を許可またはブロックする](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)」を参照してください。
 
@@ -77,7 +77,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 既定では、ゲストは Exchange グローバル アドレス一覧に表示されません。 グローバル アドレス一覧にゲストを表示するには、次の手順を使用します。
 
-を実行して、ゲストの ObjectID を検索します。
+次のコマンドを実行して、ゲストの ObjectID を検索します。
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"
@@ -91,9 +91,9 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## <a name="related-topics"></a>関連項目
 
-[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[グループコラボレーション ガバナンスの計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
+[コラボレーション ガバナンス計画を作成する](collaboration-governance-first.md)
 
 [グループ メンバーシップを Microsoft 365 管理センターから管理する](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)
   
