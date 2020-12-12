@@ -1,5 +1,5 @@
 ---
-title: MyDomain を使用して Microsoft をセットアップするためにネームサーバーを変更する
+title: MyDomain で Microsoft をセットアップするためにネームサーバーを変更する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
-description: ユーザーが自分のカスタムドメインの DNS レコードを管理するように Microsoft を設定する方法については、MyDomain を参照してください。
-ms.openlocfilehash: 44d36f872ddbeeba1948ee8a7a4db029895fcb8c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: MyDomain でカスタム ドメインの DNS レコードを管理するために Microsoft をセットアップする方法について説明します。
+ms.openlocfilehash: fbfa3c495f54a9890be6d9c9e31a7878b21f12fe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646417"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658418"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>MyDomain を使用して Microsoft をセットアップするためにネームサーバーを変更する
+# <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>MyDomain で Microsoft をセットアップするためにネームサーバーを変更する
 
- 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。
   
-Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ [て、MyDomain にあるすべての MICROSOFT DNS レコードを管理](create-dns-records-at-mydomain.md)することができます)。
+Microsoft が DNS レコードを管理する場合は、次の手順に従います。 (必要に応じて [、MyDomain ですべての Microsoft DNS レコードを管理できます](create-dns-records-at-mydomain.md))。
   
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 
@@ -80,10 +80,10 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>ドメインのネーム サーバー (NS) レコードを変更する
 
-Microsoft によるドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、Microsoft プライマリネームサーバーとセカンダリネームサーバーをポイントするようにします。 これにより、ドメインの DNS レコードが更新されるように Microsoft が設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
+Microsoft でドメインのセットアップを完了するには、ドメイン レジストラーでドメインの NS レコードを変更して、Microsoft のプライマリ ネーム サーバーとセカンダリ ネーム サーバーをポイントします。 これにより、ドメインの DNS レコードを更新する Microsoft がセットアップされます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ など *your_domain。* この変更を行った後、com) は Microsoft に送られ始めます。 
+> Microsoft ネーム サーバーを指すドメインの NS レコードを変更すると、現在ドメインに関連付けられているすべてのサービスが影響を受ける。 たとえば、ドメインに送信されたメール (たとえば *、rob@your_domain。* com) は、この変更を行った後に Microsoft に公開されます。 
   
 > [!IMPORTANT]
 > 次の手順では、他の不要なネームサーバーを一覧から削除する方法、および上記のネームサーバーが一覧に表示されていない場合に、正しいネームサーバーを追加する方法を説明します。<br/> When you have completed the steps in this section, the only nameservers that should be listed are these four:
@@ -94,34 +94,34 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
     
 3. [**ドメイン**] で、編集するドメインの名前を選択します。
     
-4. **概要**行で、[**ネーム**サーバー] を選択します。
+4. [概要 **] 行** で **、[Nameservers] を選択します**。
     
-    ![MyDomain-BP-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
+    ![MyDomain-BP-Redelegate-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
   
 5. [ **Update Name Servers**] セクションで [ **Use different name servers**] を選びます。
     
-    ![MyDomain-BP-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
+    ![MyDomain-BP-Redelegate-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
   
-6. 現在表示されているページに既にネームサーバーが表示されているかどうかに応じて、次の2つの手順のいずれかに進みます。
+6. 現在表示されているページにネームサーバーが既にリストされているかどうかに応じて、次の 2 つの手順のいずれかを実行します。
     
 ### <a name="if-the-correct-nameservers-are-already-listed"></a>正しいネームサーバーが表示されている場合
 
 - 正しいネームサーバーが表示されている場合は、この手順をスキップできます。
     
-    ![MyDomain-BP-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
+    ![MyDomain-BP-Redelegate-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
   
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>正しいネームサーバーが表示されていない場合
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers. (つまり、 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**、または**ns4.bdm.microsoftonline.com**という名前が付いて*いない*現在のネームサーバーのみを削除します)。 
+> Follow these steps only if you have existing nameservers other than the four correct nameservers. (つまり、名前が **ns1.bdm.microsoftonline.com**、ns2.bdm.microsoftonline.com、ns3.bdm.microsoftonline.com、または ns4.bdm.microsoftonline.com **))**   
   
 1. [ **Nameserver**] フィールドの各エントリを選び、キーボードの **Delete** キーを押して既存のネームサーバーを削除します。 
     
-    ![MyDomain-BP-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
+    ![MyDomain-BP-Redelegate-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
   
-2. [ **追加** ] を2回選択して、2つの新しいネームサーバー行を追加します。 
+2. [Add **More] を** 2 回選択して、2 つの新しいネームサーバー行を追加します。 
     
-    ![MyDomain-BP-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
+    ![MyDomain-BP-Redelegate-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
   
 3. レコードのボックスに、次の表の nameserver の値を入力するか、コピーして貼り付けます。
     
@@ -132,11 +132,11 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
 |**Nameserver 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Nameserver 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![MyDomain-BP-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
+   ![MyDomain-BP-Redelegate-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
 4. **[保存]** を選択します。
     
-    ![MyDomain-BP-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
+    ![MyDomain-BP-Redelegate-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   
 > [!NOTE]
-> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 
+> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、Microsoft のメールと他のサービスはすべて、ドメインで動作する設定に設定されます。 

@@ -13,47 +13,47 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) で管理者の役割グループレポートを実行する方法について説明します。 このレポートは、管理者が管理者の役割グループにメンバーを追加または削除したときにログに記録されます。
-ms.openlocfilehash: 95b216b41d1c83ba36bcc00e1f571e08c8bd1f73
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) で管理者の役割グループ レポートを実行する方法について説明します。 このレポートは、管理者が管理者役割グループにメンバーを追加または削除するとログに記録されます。
+ms.openlocfilehash: cd7ca13a3d863240a0f2608ed13321cbe3d50ad2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920622"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659289"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>スタンドアロン EOP で管理者の役割グループ レポートを実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Exchange Online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 組織では、管理者が管理役割グループにメンバーを追加したり、管理者の役割グループからメンバーを削除したりすると、サービスによって各発生がログに記録されます。 スタンドアロン EOP の役割グループの詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md)」を参照してください。
+Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、管理者が管理役割グループにメンバーを追加または削除すると、サービスは各発生をログに記録します。 スタンドアロン EOP の役割グループの詳細については、「 [スタンドアロン EOP のアクセス許可」を参照してください](feature-permissions-in-eop.md)。
 
-Exchange 管理センター (EAC) で管理者の役割グループレポートを実行すると、エントリが検索結果として表示され、影響を受ける役割グループ、役割グループのメンバーシップと日時、および作成されたメンバーシップの更新が含まれます。 このレポートを使用して、組織内のユーザーに割り当てられた管理アクセス許可の変更を監視します。
+Exchange 管理センター (EAC) で管理者役割グループ レポートを実行すると、エントリが検索結果として表示され、影響を受ける役割グループ、役割グループのメンバーシップを変更したユーザー、いつ、どのようなメンバーシップの更新が行われたかが含まれます。 このレポートを使用して、組織内のユーザーに割り当てられた管理アクセス許可に対する変更を監視します。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
+- Exchange 管理センターを開く方法については、 [スタンドアロン EOP の Exchange 管理センターを参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、ComplianceManagement、組織の管理 (グローバル管理者)、および SecurityAdministrator の役割グループに既定で割り当てられている監査ログまたは View-Only の監査ログの役割が必要です。 詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、 [役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。
+- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理、コンプライアンス管理、およびセキュリティ管理者の役割グループに割り当てられる監査ログまたは表示専用の監査ログの役割が必要です。  詳細については、「スタンドアロン [EOP のアクセス許可](feature-permissions-in-eop.md) 」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- この記事の手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
+- この記事の手順に適用できるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
 
 > [!TIP]
 > 問題が発生する場合 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) フォーラムでサポートをご依頼ください。
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>EAC を使用して管理者役割グループ レポートを実行する
 
-管理者の役割グループレポートを実行して、特定の期間における管理役割グループへの変更を検索します。
+管理者役割グループ レポートを実行して、特定の時間枠内の管理役割グループに対する変更を検索します。
 
-1. EAC で、[ **コンプライアンス管理** ] [監査] に移動し、 \> **Auditing** [ **管理者の役割グループレポートの実行** ] を選択します。
+1. EAC で、**コンプライアンス管理の** 監査に移動し、[管理者の役割グループ レポートの実行] \> **を選択します**。
 
-2. [ **管理者の役割グループへの変更の検索** ] ページが開いたら、次の設定を構成します。
+2. 開く **[管理者の役割グループに対する変更の検索** ] ページで、次の設定を構成します。
 
-   - **開始** 日と **終了日** : 日付の範囲を入力します。 既定では、管理者役割グループに対する過去 2 週間の変更のレポート検索が実行されます。
+   - **開始日と** 終了日 : **日付** 範囲を入力します。 既定では、管理者役割グループに対する過去 2 週間の変更のレポート検索が実行されます。
 
-   - **役割グループの選択** : 既定では、すべての役割グループが検索されます。 特定の役割グループによって結果をフィルター処理するには、[ **役割グループの選択** ] をクリックします。 表示されるダイアログで、役割グループを選択し、[ **追加->** ] をクリックします。 必要な回数だけこの手順を繰り返し、完了したら [ **OK** ] をクリックします。
+   - **役割グループの選択**: 既定では、すべての役割グループが検索されます。 特定の役割グループで結果をフィルター処理するには、[役割グループの選択] **をクリックします**。 表示されるダイアログで、役割グループを選択し、[追加] **->。** 必要な回数この手順を繰り返し、完了したら **[OK]** をクリックします。
 
-3. 完了したら、[ **検索** ] をクリックします。
+3. 完了したら、[検索] をクリック **します**。
 
 指定した条件を使用して変更を検索した場合は、結果が結果ウィンドウに表示されます。検索結果内で役割グループをクリックすると、変更内容が詳細ウィンドウに表示されます。
 
@@ -67,16 +67,16 @@ Exchange 管理センター (EAC) で管理者の役割グループレポート�
 
 ユーザーが追加または削除されたかどうかを判断するには、レポート内の 2 つの異なるエントリを比較する必要があります。たとえば、 **HelpDesk** 役割グループの次のログ エントリを見てみましょう。
 
-> 1/27/2018 4:43 PM <br> 管理者 <br> Updated members: Administrator;annb,florencef;pilarp <br> 2/06/2018 10:09 AM <br> 管理者 <br> Updated members: Administrator;annb;florencef;pilarp;tonip <br> 2/19/2018 2:12 PM <br> 管理者 <br> Updated members: Administrator;annb;florencef;tonip
+> 2018 年 1 月 27 日午後 4 時 43 分 <br> 管理者 <br> Updated members: Administrator;annb,florencef;pilarp <br> 2018/2/06 10:09 AM <br> 管理者 <br> Updated members: Administrator;annb;florencef;pilarp;tonip <br> 2018/2/19 14:12 <br> 管理者 <br> Updated members: Administrator;annb;florencef;tonip
 
 この例では、管理者ユーザー アカウントによって次の変更が加えられています。
 
-- 2/06/2018 で、ユーザー tonip を追加しました。
-- 2/19/2018 で、ユーザー pilarp がが削除されました。
+- 2018 年 2 月 6 日に、ユーザー tonip を追加しました。
+- 2018 年 2 月 19 日に、ユーザー pilarp が削除されました。
 
-## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>スタンドアロンの Exchange Online PowerShell を使用して監査ログエントリを検索する
+## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>スタンドアロンの Exchange Online PowerShell を使用して監査ログ エントリを検索する
 
-Exchange Online の PowerShell を使用して、指定した条件に一致する監査ログエントリを検索できます。 検索条件の一覧については、「 [検索-AdminAuditLog ログの検索条件](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)」を参照してください。 この手順では、 **検索-AdminAuditLog** コマンドレットを使用して、Exchange Online PowerShell で検索結果を表示します。 このコマンドレットは、 **New-AdminAuditLogSearch** コマンドレットまたは EAC 監査レポートのレポートで定義されている制限値を超える結果セットを返す必要がある場合に使用できます。
+Exchange Online PowerShell を使用して、指定した条件に一致する監査ログ エントリを検索できます。 検索条件の一覧については [、「Search-AdminAuditLog 検索条件」を参照してください](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 この手順では **、Search-AdminAuditLog** コマンドレットを使用して、Exchange Online PowerShell で検索結果を表示します。 このコマンドレットは、 **New-AdminAuditLogSearch** コマンドレットまたは EAC 監査レポートのレポートで定義されている制限値を超える結果セットを返す必要がある場合に使用できます。
 
 指定した条件で監査ログを検索するには、次の構文を使用します。
 
@@ -85,15 +85,15 @@ Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 
 ```
 
 > [!NOTE]
-> **Search-AdminAuditLog** コマンドレットを実行すると、既定で最大 1,000 個のログ エントリが返されます。 _Resultsize_ パラメーターを使用して、最大25万のログエントリを指定します。 または、値を使用して `Unlimited` すべてのエントリを返します。
+> **Search-AdminAuditLog** コマンドレットを実行すると、既定で最大 1,000 個のログ エントリが返されます。 _ResultSize パラメーターを使用_ して、最大 250,000 のログ エントリを指定します。 または、値を使用して `Unlimited` すべてのエントリを返します。
 
 この例では、次の条件を使用してすべての監査ログ エントリで検索を実行します。
 
-- **開始日** : 08/04/2018
-- **終了日** : 10/03/2018
-- **ユーザー id** : `davids` 、 `chrisd` 、 `kima`
-- **コマンドレット** : **Set-Mailbox**
-- **パラメーター** : _ProhibitSendQuota_ 、 _ProhibitSendReceiveQuota_ 、 _warnings ewarnings quota_ 、 _maxsendsize_ 、 _MaxReceiveSize_
+- **開始日 :** 2018 年 8 月 4 日
+- **終了日 :** 2018 年 10 月 3 日
+- **ユーザー ID**: `davids` `chrisd` , , `kima`
+- **コマンドレット**: **Set-Mailbox**
+- **Parameters**: _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, _IssueWarningQuota_, _MaxSendSize_, _MaxReceiveSize_
 
 ```PowerShell
 Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
@@ -101,23 +101,23 @@ Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohibit
 
 この例では、特定のメールボックスの変更を検索します。これは、トラブルシューティングを実行している場合や、調査のために情報を入手する必要がある場合に便利です。次の条件を使用します。
 
-- **開始日** : 05/01/2018
-- **終了日** : 10/03/2018
-- **オブジェクト ID** : contoso.com/Users/DavidS
+- **開始日 :** 05/01/2018
+- **終了日 :** 2018 年 10 月 3 日
+- **オブジェクト ID**: contoso.com/Users/DavidS
 
 ```PowerShell
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
-検索に多数のログエントリが返される場合は、この記事で後述する「 **Exchange Online PowerShell を使用して監査ログエントリを検索し、結果を受信者に送信** する」で説明されている手順を使用することをお勧めします。 その手順を実行すると、指定した受信者に XML ファイルが電子メールの添付ファイルとして送信されるため、目的のデータをより簡単に抽出することができます。
+検索で多数のログ エントリが返される場合は **、「Exchange Online PowerShell** を使用する」の手順を使用して監査ログ エントリを検索し、後で受信者に結果を送信することをお勧めします。 その手順を実行すると、指定した受信者に XML ファイルが電子メールの添付ファイルとして送信されるため、目的のデータをより簡単に抽出することができます。
 
 構文およびパラメーターの詳細については、「[Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)」を参照してください。
 
 ### <a name="view-details-of-audit-log-entries"></a>監査ログ エントリの詳細を表示する
 
-**検索-Adminauditlog** コマンドレットは、「 [監査ログの内容](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)」に記載されているフィールドを返します。 コマンドレットによって返されるフィールドのうち、 **CmdletParameters** と **ModifiedProperties** の 2 つのフィールドには、既定では表示できない追加情報が含まれます。
+**Search-AdminAuditLog** コマンドレットは、監査ログの内容で説明されている [フィールドを返します](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)。 コマンドレットによって返されるフィールドのうち、 **CmdletParameters** と **ModifiedProperties** の 2 つのフィールドには、既定では表示できない追加情報が含まれます。
 
-**CmdletParameters** フィールドと **ModifiedProperties** フィールドの内容を表示するには、次の手順を実行します。 または、この記事で後述する「 **Exchange Online PowerShell を使用して監査ログエントリを検索し、結果を受信者に送信** する」の手順を使用して、XML ファイルを作成することもできます。
+**CmdletParameters** フィールドと **ModifiedProperties** フィールドの内容を表示するには、次の手順を実行します。 または **、「Exchange Online PowerShell** を使用する」の手順を使用して監査ログ エントリを検索し、後で受信者に結果を送信して XML ファイルを作成することもできます。
 
 この手順では、次の概念を使用します。
 
@@ -131,7 +131,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
    $Results = Search-AdminAuditLog <search criteria>
    ```
 
-2. 各監査ログエントリは、変数に配列要素として格納され `$Results` ます。 配列要素のインデックスを指定することで、配列要素を選択できます。 配列要素のインデックスは、最初の配列要素のゼロ (0) から始まります。 たとえば、5 番目の配列要素 (インデックスは 4) を取得するには、次のコマンドを使用します。
+2. 各監査ログ エントリは、変数に配列要素として格納されます `$Results` 。 配列要素のインデックスを指定することで、配列要素を選択できます。 配列要素のインデックスは、最初の配列要素のゼロ (0) から始まります。 たとえば、5 番目の配列要素 (インデックスは 4) を取得するには、次のコマンドを使用します。
 
    ```PowerShell
    $Results[4]

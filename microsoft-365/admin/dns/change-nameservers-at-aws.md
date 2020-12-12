@@ -1,5 +1,5 @@
 ---
-title: Amazon Web サービスを使用して Microsoft をセットアップするためにネームサーバーを変更する (AWS)
+title: Amazon Web Services (AWS) で Microsoft をセットアップするためにネームサーバーを変更する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
-description: 'Amazon Web サービス (AWS) で DNS レコードを管理するように Microsoft をセットアップする方法について説明します。 '
-ms.openlocfilehash: 9f5bfd54020dfb793bbaad9aa8e081e87abc5ce8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 'Amazon Web Services (AWS) で DNS レコードを管理するために Microsoft をセットアップする方法について説明します。 '
+ms.openlocfilehash: 4700557c40973ab051cced81c129197a826964ab
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646489"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658454"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-with-amazon-web-services-aws"></a>Amazon Web サービスを使用して Microsoft をセットアップするためにネームサーバーを変更する (AWS)
+# <a name="change-nameservers-to-set-up-microsoft-with-amazon-web-services-aws"></a>Amazon Web Services (AWS) で Microsoft をセットアップするためにネームサーバーを変更する
 
- 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ [て、すべての MICROSOFT DNS レコードを AWS で管理](create-dns-records-at-aws.md)できます。)
+Microsoft が DNS レコードを管理する場合は、次の手順に従います。 (必要に応じて [、AWS ですべての Microsoft DNS レコードを管理できます](create-dns-records-at-aws.md))。
   
     
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
@@ -44,11 +44,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [ **リソース** ] ページで、[ **Hosted Zones**] を選択します。
+2. [リソース **] ページで** 、[ホストゾーン] **を選択します**。
     
-3. [ **Hosted Zones** ] ページの [ **domain Name** ] 列で、編集するドメインの名前を選択します。 
+3. [ **ホストゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
     
-4. [ **Create Record Set**] を選びます。
+4. [レコード **セットの作成] を選択します**。
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -62,11 +62,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 |**名前** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
 |(このフィールドは空のままにします)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)  <br/>  |Simple <br/> |
    
-6. [**作成**] を選択します。
+6. **[作成]** を選択します。
     
 7. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメインレジストラーのサイトでレコードが追加されました。 Microsoft に戻って、レコードの検索を要求します。
+ドメイン レジストラーのサイトでレコードを追加した後、Microsoft に戻り、レコードの検索を要求します。
   
 Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
@@ -84,19 +84,19 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>ドメインのネーム サーバー (NS) レコードを変更する
 
-Microsoft によるドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、Microsoft プライマリネームサーバーとセカンダリネームサーバーをポイントするようにします。 これにより、ドメインの DNS レコードが更新されるように Microsoft が設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
+Microsoft でドメインのセットアップを完了するには、ドメイン レジストラーでドメインの NS レコードを変更して、Microsoft のプライマリ ネーム サーバーとセカンダリ ネーム サーバーをポイントします。 これにより、ドメインの DNS レコードを更新する Microsoft がセットアップされます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ *your_domain*  など) は、この変更を行った後に Microsoft に送られ始めます。 
+> Microsoft ネーム サーバーを指すドメインの NS レコードを変更すると、現在ドメインに関連付けられているすべてのサービスが影響を受ける。 たとえば、ドメインに送信されたメール (rob@ *your_domain*  .com など) は、この変更を行った後に Microsoft に届きます。 
   
 > [!IMPORTANT]
->  次の手順では、リストからその他の不要なネームサーバーを削除する方法と、正しいネームサーバーが表示されていない場合には追加する方法について説明します。 > このセクションの手順を完了すると、次の4つのネームサーバーのみが表示されます。 > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
+>  次の手順では、他の不要なネームサーバーを一覧から削除する方法と、正しいネームサーバーが一覧に表示されていない場合に追加する方法を示します。 >このセクションの手順を完了すると、次の 4 つのネームサーバーだけが表示されます。> ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
   
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [ **リソース** ] ページで、[ **Hosted Zones**] を選択します。
+2. [リソース **] ページで** 、[ホストゾーン] **を選択します**。
     
-3. [ **Hosted Zones** ] ページの [ **domain Name** ] 列で、編集するドメインの名前を選択します。 
+3. [ **ホストゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
     
 4. [ **Nameserver**] レコード セットを選びます。 
     
@@ -105,15 +105,15 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
 5. [ **Value**] ボックスの [ **NS - Name server**] レコード セットで、すべてのネームサーバーを選んでキーボードの **Delete** キーを押して削除します。 
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (つまり、 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**、または**ns4.bdm.microsoftonline.com**という名前が付いて*いない*現在のネームサーバーのみを削除します)。 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (つまり、名前が **ns1.bdm.microsoftonline.com**、ns2.bdm.microsoftonline.com、ns3.bdm.microsoftonline.com、または ns4.bdm.microsoftonline.com **))**   
   
     ![Select and delete all of the nameservers in the Value box](../../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
   
-6. [ **TTL (秒):** ] 領域で、[ **1H** (1 時間)] を選択します。 
+6. TTL **(秒):** 領域で **、1h (1** 時間) を選択します。 
     
-    ![1時間の場合は [1H] を選択します。](../../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
+    ![1 時間に 1H を選択する](../../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
   
-7. [ **Value**] ボックスの [ **NS - Name server**] レコード セットで、次の表の **第 1 行**の値を入力するかコピーして貼り付けてからキーボードの **Enter** キーを押し、次の **行**の値を入力するかコピーして貼り付けます。 
+7. [ **Value**] ボックスの [ **NS - Name server**] レコード セットで、次の表の **第 1 行** の値を入力するかコピーして貼り付けてからキーボードの **Enter** キーを押し、次の **行** の値を入力するかコピーして貼り付けます。 
     
     > [!IMPORTANT]
     > Each nameserver value  *must*  be on its own separate line within the **Value** box, as shown in the following illustration. 
@@ -127,9 +127,9 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
    
    ![[値] ボックスに最初の行の値を入力するか貼り付けます。](../../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
   
-8. [ **Save Record Set**] を選択します。
+8. [レコード **セットの保存] を選択します**。
     
-    ![レコードセットの保存の選択](../../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
+    ![[レコード セットの保存] を選択する](../../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
   
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. その後、Microsoft のメールと他のサービスはすべて、ドメインで動作する設定に設定されます。 

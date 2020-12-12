@@ -1,5 +1,5 @@
 ---
-title: ネットワークソリューションを使用して Microsoft をセットアップするためにネームサーバーを変更する
+title: ネットワーク ソリューションで Microsoft をセットアップするためにネームサーバーを変更する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
-description: 'DNS レコードを管理する場合は、microsoft カスタムドメインとネットワークソリューションをセットアップする方法について説明します。 '
-ms.openlocfilehash: 1cb5cd3cc8628a629fb6d7044063914e37adfac2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 'Microsoft で DNS レコードを管理する場合は、ネットワーク ソリューションを使用して Microsoft カスタム ドメインをセットアップする方法について説明します。 '
+ms.openlocfilehash: 04817ca24b13b4c138986df3875b6d397100fffd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646405"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658430"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>ネットワークソリューションを使用して Microsoft をセットアップするためにネームサーバーを変更する
+# <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>ネットワーク ソリューションで Microsoft をセットアップするためにネームサーバーを変更する
 
- 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。
   
-Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ [て、すべての MICROSOFT DNS レコードをネットワークソリューションで管理](create-dns-records-at-network-solutions.md)できます。)
+Microsoft が DNS レコードを管理する場合は、次の手順に従います。 (必要に応じて、ネットワーク ソリューション [ですべての Microsoft DNS レコードを管理できます](create-dns-records-at-network-solutions.md))。
   
     
 ## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a>Network Solutions で TXT レコードを追加して、ドメインを所有していることを確認する
@@ -47,7 +47,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
-    > [**ログイン**] ボタンを選択する前に、[ **Log in to** ] ドロップダウンリストで [ **Manage My Domain Names** ] を選びます。
+    > [ログイン] ボタンを **選択する** 前に、[ログイン先] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。
   
     ![[Manage My Domain Names] を選択して、Network Solutions にログインします](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -55,19 +55,19 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![自分のドメインのチェック ボックスを選択します](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. [ **EDIT DNS**] を選びます。
+3. Select **Edit DNS**.
     
-    ![[DNS の編集] を選択します。](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. [ **Manage ADVANCED DNS Records**] を選びます。
+4. Select **Manage Advanced DNS Records**.
     
     (下へスクロールしなければならないことがあります。)
     
-    ![[Manage Advanced DNS Records] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Select Manage Advanced DNS Records](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. [ **テキスト (Txt レコード)** ] セクションまでスクロールしてから、[ **Txt レコードの編集**] を選択します。
+5. テキスト **(TXT レコード) セクションまで** 下にスクロールし、[EDIT **TXT Records] を選択します**。
     
-    ![[TXT レコードの編集] を選択する](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![Select Edit TXT Records](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
@@ -76,13 +76,13 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **注**: これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)
    
     
-   ![新しいレコードのボックスに値を入力するか貼り付けます。](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+   ![新しいレコードのボックスに値を入力または貼り付ける](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. [ **続行**] を選択します。
+7. [続行] **を選択します**。
     
     ![[続行] を選択する](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
-8. [ **Save Changes**] を選びます。
+8. [変更 **の保存] を選択します**。
     
     ![[変更の保存] を選択する](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
@@ -112,20 +112,20 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>ドメインのネーム サーバー (NS) レコードを変更する
 
-Microsoft によるドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、Microsoft プライマリネームサーバーとセカンダリネームサーバーをポイントするようにします。 これにより、ドメインの DNS レコードが更新されるように Microsoft が設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
+Microsoft でドメインのセットアップを完了するには、ドメイン レジストラーでドメインの NS レコードを変更して、Microsoft のプライマリ ネーム サーバーとセカンダリ ネーム サーバーをポイントします。 これにより、ドメインの DNS レコードを更新する Microsoft がセットアップされます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ *your_domain*  など) は、この変更を行った後に Microsoft に送られ始めます。
+> Microsoft ネーム サーバーを指すドメインの NS レコードを変更すると、現在ドメインに関連付けられているすべてのサービスが影響を受ける。 たとえば、ドメインに送信されたメール (rob@ *your_domain*  .com など) は、この変更を行った後に Microsoft に届きます。
   
-Microsoft がドメインをセットアップできるように、NS レコードを変更する準備はできましたか? 次の手順を実行するか、[ビデオ (2 分 23 秒から開始) を参照](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)してください。
+Microsoft がドメインをセットアップできるよう、NS レコードを変更する準備はできましたか? 次の手順を実行するか、[ビデオ (2 分 23 秒から開始) を参照](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)してください。
   
 > [!IMPORTANT]
->  このセクションの手順を完了すると、次の4つのネームサーバー  *のみ*  が一覧表示されます。 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**、および **ns4.bdm.microsoftonline.com**。 次の手順では、他の不要なネームサーバーを一覧から削除する方法、および上記のネームサーバーが一覧に表示されていない場合に、 *正しい*  ネームサーバーを追加する方法を説明します。 
+>  このセクションの手順を完了すると、次の 4 つのネームサーバーだけが表示されます。ns1.bdm.microsoftonline.com、ns2.bdm.microsoftonline.com、ns3.bdm.microsoftonline.com、および ns4.bdm.microsoftonline.com 。    次の手順では、他の不要なネームサーバーを一覧から削除する方法、および上記のネームサーバーが一覧に表示されていない場合に、 *正しい*  ネームサーバーを追加する方法を説明します。 
   
 1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。 ログインするように求められます。
     
     > [!IMPORTANT]
-    > [**ログイン**] ボタンを選択する前に、[ **Log in to** ] ドロップダウンリストで [ **Manage My Domain Names** ] を選びます。 
+    > [ログイン] ボタンを **選択する** 前に、[ログイン先] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
   
     ![[Manage My Domain Names] を選択して、Network Solutions にログインします](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -133,13 +133,13 @@ Microsoft がドメインをセットアップできるように、NS レコー�
     
     ![自分のドメインのチェック ボックスを選択します](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. [ **EDIT DNS**] を選びます。
+3. Select **Edit DNS**.
     
-    ![[DNS の編集] を選択します。](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. [ **MOVE DNS**] を選びます。
+4. Select **Move DNS**.
     
-    ![NetworkSolutionsBP-1-1](../../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
+    ![NetworkSolutionsBP-Redelegate-1-1](../../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
   
 5. 現在表示されているページに既に一覧表示されているネームサーバーがあるかどうかに応じて、以下の 2 つの手順のいずれかに進みます。
     
@@ -149,9 +149,9 @@ Microsoft がドメインをセットアップできるように、NS レコー�
     
 ### <a name="if-there-are-no-nameservers-already-listed"></a>既に一覧表示されているネームサーバーがない場合
 
-1. [ **ドメイン** ] ページの [ **Domain Name servers の指定** ] セクションで、[さらに **ネームサーバーを追加**] を選択します。
+1. [ドメイン **] ページの** [ドメイン ネーム サーバーの **指定** ] セクションで、[その他のネーム サーバーの追加 **] を選択します**。
     
-    ![NetworkSolutionsBP-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 2. [ **Domain Names**] ページに、次の表のネームサーバーの値を入力するか、コピーして貼り付けます。 
     
@@ -163,18 +163,18 @@ Microsoft がドメインをセットアップできるように、NS レコー�
 |**Name Server 2** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-Redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
-3. [ **MOVE DNS**] を選びます。
+3. Select **Move DNS**.
     
-    ![NetworkSolutionsBP-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
-4. [ **Save Changes**] を選びます。
+4. [変更 **の保存] を選択します**。
     
-    ![NetworkSolutionsBP-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
-> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 
+> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、Microsoft のメールと他のサービスはすべて、ドメインで動作する設定に設定されます。 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>既に一覧表示されているネームサーバーがある場合
 
@@ -185,9 +185,9 @@ Microsoft がドメインをセットアップできるように、NS レコー�
     
     ![NetworkSolutions-BP-Redelegate-1-5](../../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
   
-2. [ **その他のネームサーバーを追加**] を選択します。
+2. [その他 **のネーム サーバーの追加] を選択します**。
     
-    ![NetworkSolutionsBP-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 3. [ **Domain Names**] ページに、次の表のネームサーバーの値を入力するか、コピーして貼り付けます。 
     
@@ -199,15 +199,15 @@ Microsoft がドメインをセットアップできるように、NS レコー�
 |**Name Server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-Redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
-4. [ **MOVE DNS**] を選びます。
+4. Select **Move DNS**.
     
-    ![NetworkSolutionsBP-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
-5. [ **Save Changes** ] を選びます。
+5. [変更 **の保存] を選択します。**
     
-    ![NetworkSolutionsBP-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
-> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。
+> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、Microsoft のメールと他のサービスはすべて、ドメインで動作する設定に設定されます。

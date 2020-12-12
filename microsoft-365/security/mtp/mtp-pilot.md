@@ -1,7 +1,7 @@
 ---
-title: パイロットを実行する Microsoft 365 Defender プロジェクト
-description: 試験的な Microsoft 365 Defender プロジェクトを運用環境で実行して、Microsoft 365 Defender の利点と導入を効果的に決定します。
-keywords: Microsoft Threat Protection パイロット、パイロットを実行する Microsoft threat protection プロジェクトを実行する、microsoft threat protection を運用環境において評価する、Microsoft Threat Protection パイロットプロジェクト、サイバーセキュリティ、高度な永続脅威、エンタープライズセキュリティ、デバイス、デバイス、id、ユーザー、データ、アプリケーション、インシデント、自動化された調査と修復、高度な検索
+title: パイロット Microsoft 365 Defender プロジェクトを実行する
+description: 実稼働環境で Microsoft 365 Defender のパイロット プロジェクトを実行し、Microsoft 365 Defender のメリットと導入を効果的に決定します。
+keywords: Microsoft Threat Protection パイロット、パイロット Microsoft Threat Protection プロジェクトの実行、Microsoft Threat Protection の実稼働での Microsoft Threat Protection の評価、Microsoft Threat Protection パイロット プロジェクト、サイバー セキュリティ、高度な持続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な捜ティング
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: f01e918d35ce77d9239c200355c7b4c48c9e2b84
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659323"
 ---
-# <a name="run-your-pilot-microsoft-365-defender-project"></a>パイロットを実行する Microsoft 365 Defender プロジェクト 
+# <a name="run-your-pilot-microsoft-365-defender-project"></a>パイロット Microsoft 365 Defender プロジェクトを実行する 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,44 +35,50 @@ ms.locfileid: "49131288"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender の利点と導入を効果的に決定するために、パイロットプロジェクトを実行できます。 運用環境で Microsoft 365 Defender を有効にし、ユースケースを開始する前に、パイロットプロジェクトに対して実行するタスクを決定し、成功の基準を設定することを計画することをお勧めします。 
+
+このガイドは、十分に構造化された計画を立て、攻撃シミュレーション機能を使用してパイロットを終了し、最終的にパイロットを終了して結果を反映および文書化することにより、パイロット プロジェクトを実行するのに役立ちます。
+
+![Microsoft 365 Defender パイロットの実行のフェーズ](../../media/pilotphases.png)
 
 
-## <a name="how-to-use-this-pilot-playbook"></a>このパイロットプレイブックの使用方法
+パイロットを実行すると、Microsoft 365 Defender を導入するメリットを効果的に判断できます。 実稼働環境で Microsoft 365 Defender を有効にし、使用例を開始する前に、パイロット プロジェクトで実行するタスクを決定し、成功基準を設定する計画を立ておきます。 
 
-このガイドでは、パイロットプロジェクトをセットアップする方法について、Microsoft 365 Defender の概要と詳細な手順について説明します。 
 
-Microsoft 365 Defender は、統合された事前違反および適用後のエンタープライズ防衛スイートで、エンドポイント、id、電子メール、およびアプリケーション間の応答をネイティブに調整し、高度な攻撃に対する統合保護を提供します。 そのためには、次の機能を結合して、単一のセキュリティソリューションにオーケストレーションします。
-  - エンドポイントの microsoft Defender。 Microsoft Defender Advanced Threat Protection (エンドポイント) の新しい名前
-  - Microsoft Defender for Office 365、Office 365 ATP (電子メール) の新しい名前 
-  - Id の Microsoft Defender。 Azure ATP (identity) の新しい名前 
-  - Microsoft Cloud App Security (apps)
+## <a name="how-to-use-this-pilot-playbook"></a>このパイロット プレイブックの使い方
 
-![画像 of_Microsoft ユーザーの場合は 365 Defender ソリューション、エンドポイントの場合は microsoft defender、エンドポイントの場合は microsoft defender、クラウドアプリの場合は microsoft Cloud App Security、データについては Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
+このガイドでは、Microsoft 365 Defender の概要と、パイロット プロジェクトのセットアップ方法に関する詳細な手順について説明します。 
 
-統合された Microsoft 365 Defender ソリューションを使用することにより、セキュリティ担当者は microsoft Defender for Endpoint、microsoft defender for Office 365、Id 用 Microsoft Defender、および Microsoft Cloud App Security receive という脅威について協力することができ、脅威の完全な範囲と影響、その脅威がどのような影響を受けるか、どのように組織をどのように Microsoft 365 Defender は、攻撃を阻止または停止する、または影響を受けるメールボックス、エンドポイント、ユーザー id を自己回復させるための自動操作を行います。 詳細については、 [Microsoft 365 Defender の概要](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) を参照してください。
+Microsoft 365 Defender は、高度な攻撃に対する統合された保護を提供するために、エンドポイント、ID、電子メール、アプリケーション間で保護、検出、防止、調査、応答をネイティブに調整する、侵害前および侵害後の統合エンタープライズ防御スイートです。 これは、次の機能を組み合わせて 1 つのセキュリティ ソリューションに統合することで実現されます。
+  - Microsoft Defender for Endpoint、Microsoft Defender Advanced Threat Protection (エンドポイント) の新しい名前
+  - Microsoft Defender for Office 365、 Office 365 ATP の新しい名前 (メール) 
+  - Microsoft Defender for Identity、Azure ATP (ID) の新しい名前 
+  - Microsoft Cloud App Security (アプリ)
 
-![Microsoft 365 Defender パイロットの実行フェーズ](../../media/pilotphases.png)
+![ユーザー向of_Microsoft 365 Defender ソリューション、Id 用 Microsoft Defender、エンドポイント用の Microsoft Defender for Endpoint、クラウド アプリ、Microsoft Cloud App Security、データ用の Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
 
-次のサンプルタイムラインは、環境内に適切なリソースがあるかによって異なります。 一部の検出とワークフローでは、他のユーザーよりも多くの学習時間が必要になることがあります。
+統合された Microsoft 365 Defender ソリューションを使用すると、セキュリティ担当者は、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity、および Microsoft Cloud App Security が受け取る脅威シグナルをまとめ、脅威の全範囲と影響、環境にどのような影響を与え、現在組織に影響を与えているかを判断できます。 Microsoft 365 Defender は、攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、ユーザー ID を自己回復する自動アクションを実行します。 詳細については [、Microsoft 365 Defender の概要](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) を参照してください。
 
-![Microsoft 365 Defender パイロットの実行におけるサンプルタイムライン](../../media/phase-diagrams/pilot-phases.png)
+
+
+次のサンプル タイムラインは、環境に適切なリソースがある場合に異なります。 検出とワークフローによっては、他の検出とワークフローよりも多くの学習時間が必要になる場合があります。
+
+![Microsoft 365 Defender パイロットの実行に関するサンプル タイムライン](../../media/phase-diagrams/pilot-phases.png)
 
 >[!IMPORTANT]
->最適な結果を得るには、パイロットの手順をできるだけ忠実に実行します。
+>最適な結果を得る場合は、パイロットの指示にできる限り近い手順に従ってください。
 
 
-### <a name="pilot-playbook-phases"></a>パイロットプレイブックのフェーズ 
+### <a name="pilot-playbook-phases"></a>パイロット プレイブックフェーズ 
 
-Microsoft 365 Defender パイロットの実行には、次の4つのフェーズがあります。
+Microsoft 365 Defender パイロットの実行には、次の 4 つのフェーズがあります。
 
-|フェーズ | 説明 | 
+|フェーズ | 内容 | 
 |:-------|:-----|
-| [計画](mtp-pilot-plan.md)<br> ~ 1 日| Microsoft 365 Defender パイロットプロジェクトを実行する前に考慮する必要のある事項について説明します。 <br><br>-スコープ <br> -ユースケース <br>- 要件 <br>-テスト計画 <br> -成功の条件 <br> -スコアカード 
-| [準備](mtp-evaluation.md) <br>~ 2 日|  Microsoft 365 セキュリティセンターにアクセスして、Microsoft 365 Defender パイロット環境を設定します。 次のようなガイドが表示されます。<br><br>-パイロットの関係者を特定し、承認を求める <br> -環境に関する考慮事項 <br>-アクセス <br>-Azure Active Directory のセットアップ <br> -構成の順序 <br> -Microsoft 365 E5 試用版にサインアップする <br> -ドメインの構成 <br>-Microsoft 365 E5 ライセンスを割り当てる <br> -ポータルのセットアップウィザードを完了します。|
-| [攻撃シミュレーション](mtp-pilot-simulate.md) <br>~ 2 日| 攻撃をシミュレートするために、次のように指導します。<br><br>-テスト環境の要件を確認する <br>-シミュレーションを実行する <br>-インシデントを調査する <br>-インシデントを解決する 
-| [決算と概要](mtp-pilot-close.md) <br>~ 1 日| プロセスの最後に達すると、次のようになります。<br><br>-最終出力に進む<br>-利害関係者への出力を提示する <br>-フィードバックを提供する <br>-次の手順を実行します。 
+| [計画](mtp-pilot-plan.md)<br> ~ 1 日| Microsoft 365 Defender パイロット プロジェクトを実行する前に考慮する必要がある点について説明します。 <br><br>- スコープ <br> - 使用事例 <br>- 要件 <br>- テスト計画 <br> - 成功条件 <br> - スコアカード 
+| [準備](mtp-evaluation.md) <br>~2 日|  Microsoft 365 セキュリティ センターにアクセスして、Microsoft 365 Defender パイロット環境をセットアップします。 次のガイドが表示されます。<br><br>- 関係者を特定し、パイロットのサインオフを求める <br> - 環境に関する考慮事項 <br>- Access <br>- Azure Active Directory のセットアップ <br> - 構成順序 <br> - Microsoft 365 E5 試用版にサインアップする <br> - ドメインを構成する <br>- Microsoft 365 E5 ライセンスを割り当てる <br> - ポータルでセットアップ ウィザードを完了する|
+| [攻撃シミュレーション](mtp-pilot-simulate.md) <br>~2 日| 攻撃をシミュレートするには、次のガイドが表示されます。<br><br>- テスト環境の要件を確認する <br>- シミュレーションを実行する <br>- インシデントを調査する <br>- インシデントを解決する 
+| [終了と概要](mtp-pilot-close.md) <br>~ 1 日| プロセスの最後に到達すると、次のガイドが表示されます。<br><br>- 最終的な出力を確認する<br>- 関係者に出力を表示する <br>- フィードバックの提供 <br>- 次の手順を実行する 
 
 ## <a name="next-step"></a>次の手順
-|[計画フェーズ](mtp-pilot-plan.md) | Microsoft 365 Defender パイロットプロジェクトを計画する 
+|[計画フェーズ](mtp-pilot-plan.md) | Microsoft 365 Defender パイロット プロジェクトを計画する 
 |:-------|:-----|

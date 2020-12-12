@@ -1,5 +1,5 @@
 ---
-title: Google ドメインで Microsoft をセットアップするためにネームサーバーを変更する
+title: Google Domains で Microsoft をセットアップするためにネームサーバーを変更する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
-description: Google ドメインでカスタムドメインの DNS レコードを管理するように Microsoft をセットアップする方法について説明します。
-ms.openlocfilehash: 05d77ef4cb78351727870a384f4a28c6e4acc4b0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Google Domains でカスタム ドメインの DNS レコードを管理するために Microsoft をセットアップする方法について説明します。
+ms.openlocfilehash: e475e222b6f1c9717008a49b172b0ecac5ec6fc7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646429"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658442"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Google ドメインで Microsoft をセットアップするためにネームサーバーを変更する
+# <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Google Domains で Microsoft をセットアップするためにネームサーバーを変更する
 
- 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ [て、すべての DNS レコードを Google ドメインで管理](create-dns-records-at-google-domains.md)できます。)
+Microsoft が DNS レコードを管理する場合は、次の手順に従います。 (必要に応じて [、Google Domains ですべての DNS レコードを管理できます](create-dns-records-at-google-domains.md))。
   
     
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
@@ -42,11 +42,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 > [!NOTE]
 >  このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
   
-1. 開始するには、 [このリンク](https://domains.google.com/registrar)を使用して Google domains のドメインページにアクセスしてください。 You'll be prompted to sign in. To do so:
+1. To get started, go to your domains page at Google Domains via [this link](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
     
 1. [**サインイン**] を選びます。
     
-2. ログイン資格情報を入力して、もう一度 [ **サインイン**] を選択します。
+2. ログイン資格情報を入力し、もう一度 [サインイン] **を選択します**。
     
 2. [**ドメイン**] ページの [**ドメイン**] セクションで、編集するドメインの [**DNS の構成**] を選択します。 
     
@@ -65,7 +65,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
 5. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメインレジストラーのサイトでレコードが追加されました。 Microsoft に戻って、レコードの検索を要求します。
+ドメイン レジストラーのサイトでレコードを追加したので、Microsoft に戻り、レコードの検索を要求します。
   
 Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
@@ -83,13 +83,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>ドメインのネーム サーバー (NS) レコードを変更する
 
-Microsoft によるドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、Microsoft プライマリネームサーバーとセカンダリネームサーバーをポイントするようにします。 これにより、ドメインの DNS レコードが更新されるように Microsoft が設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
+Microsoft でドメインのセットアップを完了するには、ドメイン レジストラーでドメインの NS レコードを変更して、Microsoft のプライマリ ネーム サーバーとセカンダリ ネーム サーバーをポイントします。 これにより、ドメインの DNS レコードを更新する Microsoft がセットアップされます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ など *your_domain。*  この変更を行った後、com) は Microsoft に送られ始めます。 
+> Microsoft ネーム サーバーを指すドメインの NS レコードを変更すると、現在ドメインに関連付けられているすべてのサービスが影響を受ける。 たとえば、ドメインに送信されたメール (たとえば *、rob@your_domain。*  com) は、この変更を行った後に Microsoft に公開されます。 
   
 > [!IMPORTANT]
-> 次の手順では、他の不要なネームサーバーを一覧から削除する方法、および上記のネームサーバーが一覧に表示されていない場合に、正しいネームサーバーを追加する方法を説明します。 > このセクションの手順を完了すると、次の4つのネームサーバーのみが表示されます。 
+> 次の手順では、他の不要なネームサーバーを一覧から削除する方法、および上記のネームサーバーが一覧に表示されていない場合に、正しいネームサーバーを追加する方法を説明します。 >このセクションの手順を完了すると、以下の 4 つのネームサーバーだけが表示されます。 
   
 1. まず、[このリンク](https://domains.google.com/registrar)を使って Google Domains でドメイン ページにアクセスします。 サインインするように求められます。 そのためには、次の操作を行います。
     
@@ -122,15 +122,15 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
 |**3 番目のネーム サーバー** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**4 番目のネーム サーバー** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-ドメイン-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
+   ![Google-Domains-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
-2. 空の行を作成するには、[ **+ (追加)** ] コントロールを選択します。 
+2. + **(追加) コントロールを選択** して空の行を作成します。 
     
     ![Google-Domains-BP-Redelegate-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. 他の 3 つのネームサーバー レコードを追加します。
     
-    [ **カスタムの名前サーバーを使用** する] セクションで、表の次の行の値を使用してレコードを作成し、[ **+ (追加)** ] コントロールを選択して別の行を追加します。 
+    [カスタム ネーム **サーバーの** 使用] セクションで、表の次の行の値を使用してレコードを作成し、+ **(追加)** コントロールを選択して別の行を追加します。 
     
     4 つのネームサーバー レコードの作成がすべて完了するまで、このプロセスを繰り返します。
     
@@ -139,14 +139,14 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
-> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 
+> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、Microsoft のメールと他のサービスはすべて、ドメインで動作する設定に設定されます。 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>既に一覧表示されているネームサーバーがある場合
 
-1. 他のネームサーバーが表示されている場合は、[ **編集**] を選択します。
+1. 他のネームサーバーが一覧表示されている場合は、[編集] を選択 **します**。
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (つまり、 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**、または**ns4.bdm.microsoftonline.com**という名前が付いて*いない*現在のネームサーバーのみを削除します)。 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (つまり、名前が **ns1.bdm.microsoftonline.com**、ns2.bdm.microsoftonline.com、ns3.bdm.microsoftonline.com、または ns4.bdm.microsoftonline.com **))**   
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
@@ -163,15 +163,15 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
 |**3 番目のネーム サーバー** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**4 番目のネーム サーバー** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-ドメイン-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
+   ![Google-Domains-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
-4. 空の行を作成するには、[ **+ (追加)** ] コントロールを選択します。 
+4. **+(add) コントロールを選択** して空の行を作成します。 
     
     ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. 他の 2 つのネームサーバー レコードを追加します。
     
-    [ **カスタムの名前サーバーを使用** する] セクションで、表の次の行の値を使用してレコードを作成し、[ **+ (追加)** ] コントロールを選択して別の行を追加します。 
+    [カスタムネーム サーバーの使用] セクションで、表の次の行の値を使用してレコードを作成し **、+(add)** コントロールを選択して別の行を追加します。 
     
     4 つのネームサーバー レコードの作成がすべて完了するまで、このプロセスを繰り返します。
     
@@ -180,5 +180,5 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
-> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 
+> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、Microsoft のメールと他のサービスはすべて、ドメインで動作する設定に設定されます。 
   

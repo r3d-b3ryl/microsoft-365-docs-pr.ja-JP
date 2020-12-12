@@ -23,67 +23,67 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Microsoft 365 の DNS レコードを作成するために必要な値と情報を検索する方法について説明します。 '
-ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 'Microsoft 365 の DNS レコードを作成するために必要な値/情報を見つける方法について説明します。 '
+ms.openlocfilehash: db9aff1fdcd9fa52c90cc96b1a32cd3908c30edb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645313"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658509"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードの作成に必要な情報を収集する
 
- 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>手順 1: TXT レコード値を検索して確認する
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>手順 1: TXT レコードの値を見つけて確認する
 
 ::: moniker range="o365-worldwide"
 
-1. Microsoft 365 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。
+1. Microsoft 365 管理センターで、[セットアップ ドメイン] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">に移動</a> します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> ] ページに移動します。
+1. 管理センターで、[セットアップ ドメイン] **ページ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">に移動</a> します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> ] ページに移動します。
+1. 管理センターで、[セットアップ ドメイン] **ページ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">に移動</a> します。
 
 ::: moniker-end
     
-2. [ **ドメイン** ] ページで、ドメインを選択し、[ **セットアップの開始**] を選択します。 追加する必要がある特定の値を確認するには、ドメインのセットアップ ウィザードに戻ります。
+2. On the **Domains** page, select your domain, then select **Start setup**. 追加する必要がある特定の値を確認するには、ドメインのセットアップ ウィザードに戻ります。
     
-3. [ **ドメインの確認** ] ページで、[ **代わりに TXT レコードを追加する**] を選択し、[ **次へ**] を選択します。
+3. [ドメイン **の確認] ページで** 、代わりに **[TXT レコード** の追加] を選択し、[次へ] を選択 **します**。
     
-4. 表示されている **TXT 値** をコピーします。 次のようになります。 **MS = msXXXXXXXX**。 
+4. 表示された **TXT 値をコピー** します。 **MS=msXXXXXXXX**. 
     
-5. 「 [任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動し、レジストラーのリストから dns ホストを選択し、手順を追って説明します。
+5. 任意の DNS ホスティング [プロバイダーで DNS](create-dns-records-at-any-dns-hosting-provider.md)レコードを作成するに移動し、レジストラーの一覧から DNS ホストを選択して、詳しい手順を確認します。
     
-6. DNS ホストで TXT レコード (または MX レコード) を作成する手順に従い、Microsoft 365 でドメインを再度確認します。
+6. DNS ホストで TXT レコード (または MX レコード) を作成する手順に従い、Microsoft 365 でドメインを確認します。
 
-7. Microsoft 365 でドメインが検証されたら、DNS ホストから TXT レコード (または MX レコード) を削除します。
+7. ドメインが Microsoft 365 で確認された後、DNS ホストから TXT レコード (または MX レコード) を削除します。
     
-### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>手順 2: メールの MX レコード値を検索する
+### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>手順 2: メールの MX レコードの値を検索する
 
 ::: moniker range="o365-worldwide"
 
-1. Microsoft 365 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。
+1. Microsoft 365 管理センターで、[セットアップ ドメイン] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">に移動</a> します。
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> ] ページに移動します。
+1. 管理センターで、[セットアップ ドメイン] **ページ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">に移動</a> します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> ] ページに移動します。
+1. 管理センターで、[セットアップ ドメイン] **ページ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">に移動</a> します。
 
 ::: moniker-end
     
@@ -95,6 +95,6 @@ ms.locfileid: "48645313"
     
     このページにリストされる DNS レコードのグループは、[ **ドメインの目的**] における選択によって変わります。
     
-4. 「 [任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動して、レジストラーのリストから dns ホストを選択し、その dns ホストの web サイトにレコードを追加するための手順を順を追って説明します。
+4. 任意の DNS ホスティング プロバイダーで [DNS](create-dns-records-at-any-dns-hosting-provider.md)レコードを作成するに移動し、レジストラーの一覧から DNS ホストを選択して、その DNS ホストの Web サイトでレコードを追加する手順を確認します。
     
 5. 手順に従って、DNS ホストでレコードを作成します。

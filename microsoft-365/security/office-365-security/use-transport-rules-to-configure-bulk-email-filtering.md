@@ -1,5 +1,5 @@
 ---
-title: メールフロールールを使用してバルクメールをフィルター処理する
+title: メール フロー ルールを使用してバルク メールをフィルター処理する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,39 +14,41 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: 管理者は、メールフロールール (トランスポートルール) を使用して、Exchange Online Protection (EOP) で大量メール (灰色のメール) を識別し、フィルター処理する方法を学習できます。
+description: 管理者は、Exchange Online Protection (EOP) でメール フロー ルール (トランスポート ルール) を使用してバルク メール (灰色のメール) を識別およびフィルター処理する方法について学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: b029e805147218551ba6ff80fb5abfda3fbfef7f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615638"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658639"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>メール フロー ルールを使用して EOP でバルク メールをフィルタリングする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、EOP はスパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) を使用して、スパムやバルクメール (灰色のメール) の受信メッセージをスキャンします 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、EOP はスパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれる) を使用して、受信メッセージでスパムおよびバルク メール (グレー メールとも呼ばれる) をスキャンします。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
-バルクメールをフィルター処理するためのその他のオプションが必要な場合は、メールフロールール (トランスポートルールとも呼ばれる) を作成して、バルクメールでよく見られるテキストパターンや語句を検索し、それらのメッセージをスパムとしてマークします。 バルクメールの詳細については、EOP の「 [迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md) 」および「 [バルク苦情レベル (BCL)](bulk-complaint-level-values.md)」を参照してください。
+バルク メールをフィルター処理するためのその他のオプションが必要な場合は、メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、バルク メールでよく見られるテキスト パターンまたは語句を検索し、それらのメッセージをスパムとしてマークできます。 バルク メールの詳細については、「 [迷惑](what-s-the-difference-between-junk-email-and-bulk-email.md) メールとバルク メールの違い」と EOP のバルク苦情レベル [(BCL) を参照してください](bulk-complaint-level-values.md)。
 
-このトピックでは、exchange 管理センター (EAC) および PowerShell (exchange online のメールボックスを使用する Microsoft 365 組織の場合は exchange Online PowerShell、exchange Online メールボックスを使用しない組織の場合はスタンドアロン EOP PowerShell) でこれらのメールフロールールを作成する方法について説明します。
+このトピックでは、Exchange 管理センター (EAC) と PowerShell でこれらのメール フロー ルールを作成する方法について説明します (Exchange Online にメールボックスがある Microsoft 365 組織向け Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- これらの手順を実行する前に、アクセス許可を割り当てる必要があります。
+- この記事の手順を実行する前に、Exchange Online または Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理、コンプライアンス管理 **(グローバル** 管理者)、および **レコード** 管理の役割グループに割り当てられるトランスポート ルールの役割が必要です。
 
-  - Exchange Online の場合は、「 [Exchange online の機能のアクセス許可](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions)」の「メールフロー」エントリを参照してください。
+  詳細については、次のトピックをご覧ください。
 
-  - スタンドアロン EOP では、既定で、組織の管理、ComplianceManagement、およびレコードの管理役割に割り当てられているトランスポートルールの役割が必要です。 詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、 [役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。
+  - [Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [スタンドアロン EOP のアクセス許可](feature-permissions-in-eop.md)
+  - [EAC を使用して役割グループのメンバーの一覧を変更する](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Exchange Online で EAC を開くには、「exchange [online の exchange 管理センター](https://docs.microsoft.com/Exchange/exchange-admin-center)」を参照してください。 スタンドアロン EOP で EAC を開くには、「 [Exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
+- Exchange Online で EAC を開く方法については [、Exchange Online の Exchange 管理センターを参照してください](https://docs.microsoft.com/Exchange/exchange-admin-center)。 スタンドアロン EOP で EAC を開く方法については、 [スタンドアロン EOP の Exchange 管理センターを参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- Exchange Online およびスタンドアロン EOP のメールフロールールの詳細については、以下のトピックを参照してください。
+- Exchange Online およびスタンドアロン EOP のメール フロー ルールの詳細については、次のトピックを参照してください。
 
   - [Exchange Online のメール フロー ルール (トランスポート ルール)](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
@@ -54,27 +56,27 @@ Exchange online または exchange online メールボックスを使用しな�
 
   - [Exchange Online でのメール フロー ルールの処理](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- この例では、バルクメールを識別するために使用される単語とテキストパターンの一覧は完全ではありません。必要に応じて、エントリを追加および削除できます。 ただし、開始点として適しています。
+- 例でバルク メールを識別するために使用される単語とテキスト パターンのリストは完全ではありません。必要に応じてエントリを追加および削除できます。 ただし、これらは良い開始点です。
 
 - メッセージ内の件名または他のヘッダー フィールドでの単語またはテキスト パターンの検索は、SMTP サーバー間で ASCII テキスト内のバイナリ メッセージ送信に使用された MIME コンテンツ転送エンコーディング方式に基づいてメッセージがデコードされた *後* に行われます。条件または例外を使用して、メッセージ内の件名または他のヘッダー フィールドの未加工 (通常は Base64) のエンコード値を検索することはできません。
 
-- 次の手順では、組織全体に対してバルクメッセージをスパムとしてマークします。 ただし、これらのルールを特定の受信者にのみ適用する別の条件を追加することができます。そのため、一部の高度な対象ユーザーに対して積極的にフィルターを適用することができます。ただし、ユーザーの残りの部分 (頻繁に使用するバルクメールを取得する場合) は影響を受けません。
+- 次の手順では、一括メッセージを組織全体のスパムとしてマークします。 ただし、別の条件を追加してこれらのルールを特定の受信者にのみ適用することができます。そのため、数名の対象を絞り込むユーザーに対して積極的なフィルター処理を使用できます。一方、他のユーザー (ほとんどがサインアップしたバルク メールを受け取るユーザー) は影響を受け取らない状態です。
 
-## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a>EAC を使用して、バルクメールをフィルター処理するメールフロールールを作成する
+## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a>EAC を使用してバルク メールをフィルター処理するメール フロー ルールを作成する
 
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
-2. [追加] アイコン **をクリックし**、[ ![ ](../../media/ITPro-EAC-AddIcon.png) **新しいルールの作成**] を選択します。
+2. [追加 **] アイコン** ![ をクリックし ](../../media/ITPro-EAC-AddIcon.png) 、[新しいルールの **作成] を選択します**。
 
 3. **[新しいルール]** のページが開いたら、以下の設定を行ってください:
 
-   - [**名前**]: わかりやすい一意のルールの名前を入力します。
+   - **[名前**]: ルールのわかりやすい一意の名前を入力します。
 
    - [**その他のオプション**] をクリックします。
 
-   - [次の **場合、このルールを適用** する]: 正規表現 (RegEx) または単語または語句を使用したメッセージのコンテンツを検索するには、次のいずれかの設定を構成します。
+   - **次のいずれかの** 設定を構成して、正規表現 (RegEx) または単語または語句を使用してメッセージ内のコンテンツを検索する場合に、このルールを適用します。
 
-     - **件名または本文** \>**件名または本文が次のテキストパターンと一致** する: 表示される [**単語または語句の指定**] ダイアログボックスで、次のいずれかの値を入力し、[追加] アイコン **をクリックし** て、 ![ ](../../media/ITPro-EAC-AddIcon.png) すべての値を入力するまで繰り返します。
+     - **件名または本文** \>**件名または** 本文が次のテキスト パターンと一致する: 表示される [単語または語句の指定] ダイアログで、次のいずれかの値を入力し、[追加] アイコンをクリックして、すべての値を入力するまで繰り返します。 ![ ](../../media/ITPro-EAC-AddIcon.png)
 
        - `If you are unable to view the content of this email\, please`
        - `\>(safe )?unsubscribe( here)?\</a\>`
@@ -89,11 +91,11 @@ Exchange online または exchange online メールボックスを使用しな�
        - `to change your (subscription preferences|preferences or unsubscribe)`
        - `click (here to|the) unsubscribe`
 
-      エントリを編集するには、エントリを選択し、[編集] [編集] アイコン **をクリックし** ![ ](../../media/ITPro-EAC-EditIcon.png) ます。 エントリを削除するには、エントリを選択し、[削除] [削除] アイコン **をクリックし** ![ ](../../media/ITPro-EAC-DeleteIcon.png) ます。
+      エントリを編集するには、そのエントリを選択し、[編集] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-EditIcon.png) 。 エントリを削除するには、そのエントリを選択し、[削除] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
        完了したら、 **[OK]** をクリックします。
 
-     - **件名または本文** \>**件名または本文に次のいずれかの単語が含まれ** ている場合: 表示される [**単語または語句の指定**] ダイアログボックスで、次のいずれかの値を入力し、[追加] アイコンを **クリックして**、 ![ ](../../media/ITPro-EAC-AddIcon.png) すべての値を入力するまで繰り返します。
+     - **件名または本文** \>**件名または** 本文に次のいずれかの単語が含まれています:表示される [単語または語句の指定] ダイアログで、次のいずれかの値を入力し、[追加] アイコンをクリックして、すべての値を入力するまで繰り返します。 ![ ](../../media/ITPro-EAC-AddIcon.png)
 
        - `to change your preferences or unsubscribe`
        - `Modify email preferences or unsubscribe`
@@ -109,35 +111,35 @@ Exchange online または exchange online メールボックスを使用しな�
        - `view this email as a webpage`
        - `You are receiving this email because you are subscribed`
 
-      エントリを編集するには、エントリを選択し、[編集] [編集] アイコン **をクリックし** ![ ](../../media/ITPro-EAC-EditIcon.png) ます。 エントリを削除するには、エントリを選択し、[削除] [削除] アイコン **をクリックし** ![ ](../../media/ITPro-EAC-DeleteIcon.png) ます。
+      エントリを編集するには、エントリを選択し、[編集] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-EditIcon.png) 。 エントリを削除するには、そのエントリを選択し、[削除] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
        完了したら、 **[OK]** をクリックします。
 
-   - **次の操作を行い** ます。 [ **メッセージのプロパティを変更する**] [ \> **スパム信頼レベル (SCL) を設定** する] を選択します。 表示される [ **SCL の指定** ] ダイアログで、次のいずれかの設定を構成します。
+   - **Do the following**: Select **Modify the message properties** set the spam confidence level \> **(SCL)**. 表示される **[SCL の** 指定] ダイアログで、次のいずれかの設定を構成します。
 
-     - メッセージを **スパム** としてマークするには、[ **6**] を選択します。 スパム対策ポリシーで verdicts **スパム** フィルター処理用に構成したアクションがメッセージに適用されます (既定値は **[迷惑メールフォルダーにメッセージを移動** します)]。
+     - メッセージをスパムとしてマーク **するには****、6 を選択します**。 スパム対策ポリシーでスパム フィルターの条件に対して構成したアクションがメッセージに適用されます (既定値は [メッセージを迷惑メール フォルダーに移動]**です**)。
 
-     - メッセージを **高精度のスパム** としてマークするには、[ **9**] を選択します。 迷惑メール対策ポリシーで、 **高信頼度の高いスパム** フィルター処理に対して構成したアクションがメッセージに適用されます (既定値は **[迷惑メールフォルダーにメッセージを移動**] です)。
+     - メッセージを信頼度の **高いスパムとしてマークするには****、9 を選択します**。 スパム対策ポリシーで信頼度の高いスパム フィルターの条件に対して構成したアクションがメッセージに適用されます (既定値は [メッセージを迷惑メール フォルダーに移動]**です)。**
 
-    SCL 値の詳細については、「 [EOP」の「スパム信頼レベル (SCL)](spam-confidence-levels.md)」を参照してください。
+    SCL 値の詳細については [、EOP の「Spam Confidence Level (SCL)」を参照してください](spam-confidence-levels.md)。
 
-   完了したら、[**保存**] をクリックします。
+   完了したら、[保存] をクリック **します。**
 
-## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>PowerShell を使用してバルクメールをフィルター処理するメールフロールールを作成する
+## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>PowerShell を使用してバルク メールをフィルター処理するメール フロー ルールを作成する
 
-次の構文を使用して、1つまたは両方のメールフロールール (正規表現と単語の比較) を作成します。
+メール フロー ルール (正規表現と単語) の一方または両方を作成するには、次の構文を使用します。
 
 ```powershell
 New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPhrase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
 ```
 
-この例では、メッセージを **スパム** として設定するために、前述したものと同じ正規表現のリストを使用する "バルクメールフィルター-RegEx" という名前の新しいルールを作成します。
+この例では、トピックの前の例と同じ正規表現の一覧を使用してメッセージをスパムとして設定する、"バルク メール フィルター - RegEx" という名前の新しいルールを作成 **します**。
 
 ```powershell
 New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? src=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
 ```
 
-この例では、「バルクメールフィルター-単語」という名前の新しいルールを作成して、このトピックの前の部分と同じ単語リストを使用して、メッセージを **高精度のスパム** として設定します。
+この例では、トピックの前の部分と同じ単語の一覧を使用してメッセージを信頼度の高いスパムとして設定する、"バルク メール フィルター - 単語" という名前の新しいルール **を作成します**。
 
 ```powershell
 New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
@@ -147,14 +149,14 @@ New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWor
 
 ## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
-バルクメールをフィルター処理するようにメールフロールールが構成されていることを確認するには、次のいずれかの手順を実行します。
+バルク メールをフィルター処理するようにメール フロー ルールが構成されていることを確認するには、次の手順を実行します。
 
-- EAC で、[ **メールフロー** \> **ルール**] に移動し \> 、 \> [ **編集** ![ ] 編集アイコンをクリックして ](../../media/ITPro-EAC-EditIcon.png) 設定を確認します。
+- EAC で、メール フロー ルールに **移動** し、ルールを選択して編集アイコンをクリックし、 \>  \> \>  ![ ](../../media/ITPro-EAC-EditIcon.png) 設定を確認します。
 
-- PowerShell で、を \<Rule Name\> ルールの名前に置き換え、次のコマンドを実行して設定を確認します。
+- PowerShell で、ルールの名前に置き換え、次のコマンドを \<Rule Name\> 実行して設定を確認します。
 
   ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List
   ```
 
-- 外部アカウントから、語句またはテキストパターンの1つを含む、影響を受ける受信者にテストメッセージを送信し、結果を確認します。
+- 外部アカウントから、影響を受ける受信者に、語句またはテキスト パターンのいずれかを含むテスト メッセージを送信し、結果を確認します。

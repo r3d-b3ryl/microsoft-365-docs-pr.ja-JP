@@ -1,5 +1,5 @@
 ---
-title: Microsoft の Register365 で DNS レコードを作成する
+title: Register365 for Microsoft で DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,17 +20,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
-description: ドメインを確認し、電子メール、Skype for Business Online、および Register365 のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: a4c66a4c16960332150a51779207defb00df3044
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Register365 for Microsoft でドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
+ms.openlocfilehash: 6cefdeff3da1256911d80066b55b00f5bef24055
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656917"
 ---
-# <a name="create-dns-records-at-register365-for-microsoft"></a>Microsoft の Register365 で DNS レコードを作成する
+# <a name="create-dns-records-at-register365-for-microsoft"></a>Register365 for Microsoft で DNS レコードを作成する
 
- **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。 
+ **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。 
   
 使用している DNS ホスティング プロバイダーが Register365 の場合は、この記事に記載された手順に従って、ドメインの確認とメールや Skype for Business Online などの DNS レコードのセットアップを行います。 
   
@@ -40,13 +40,13 @@ ms.locfileid: "48645769"
     
 - [MX レコードを追加して、自分のドメインのメールが Microsoft に届くようにする](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Microsoft に必要な6つの CNAME レコードを追加する](#add-the-six-cname-records-that-are-required-for-microsoft)
+- [Microsoft に必要な 6 つの CNAME レコードを追加する](#add-the-six-cname-records-that-are-required-for-microsoft)
     
 - [迷惑メールの防止に役立つ、SPF の TXT レコードを追加する](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
 - [Microsoft で必要な 2 つの SRV レコードを追加する](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-これらのレコードを Microsoft で追加すると、使用しているドメインが Microsoft サービスで機能するように設定されます。
+これらのレコードを Microsoft で追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
   
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
@@ -73,7 +73,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     (ドロップダウン リストから [**Type**] の値を選びます。) 
     
-    (行を追加する必要がある場合は、[ **a/CNAME レコードの追加] (+)** を選択します)。
+    (行を追加する必要がある場合は **、[A/CNAME レコードの追加 (+)**] を選択します)。
     
     (下へスクロールしなければならないことがあります。)
     
@@ -131,7 +131,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**ホスト名**|**Priority**|**Result**|
     |:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)     |
+    |(このフィールドは空のままにします。)  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![[DNS ゾーンの追加/変更] ページで値を入力する](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
@@ -151,7 +151,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![[保存] を選択します。](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な6つの CNAME レコードを追加する
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な 6 つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
 
 1. まず、[このリンク](https://admin.register365.com/dns/)を使って Register365 でドメイン ページにアクセスします。 最初にログインするように求められます。
@@ -168,7 +168,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (ドロップダウン リストから [**Type**] の値を選びます。) 
     
-    (行を追加する必要がある場合は、[ **a/CNAME レコードの追加] (+)** を選択します)。
+    (行を追加する必要がある場合は **、[A/CNAME レコードの追加 (+)**] を選択します)。
     
     (下へスクロールしなければならないことがあります。)
     
@@ -190,7 +190,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。 
   
 1. まず、[このリンク](https://admin.register365.com/dns/)を使って Register365 でドメイン ページにアクセスします。 最初にログインするように求められます。
     
@@ -206,7 +206,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (ドロップダウン リストから [**Type**] の値を選びます。) 
     
-    (行を追加する必要がある場合は、[ **a/CNAME レコードの追加] (+)** を選択します)。
+    (行を追加する必要がある場合は **、[A/CNAME レコードの追加 (+)**] を選択します)。
     
     (下へスクロールしなければならないことがあります。)
     
@@ -241,10 +241,10 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Name**|**Priority**|**Weight**|**Port**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![[サービスレコード] セクションに値を入力する](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
+    ![[サービス レコード] セクションに値を入力する](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
 4. **[保存]** を選択します。
     

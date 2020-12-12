@@ -11,32 +11,32 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
-description: 管理者は、exchange Online Protection の Exchange 管理センター (EAC) でアクセス許可を割り当てる、または削除する方法を学習できます。
-ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 管理者は、Exchange Online Protection の Exchange 管理センター (EAC) でアクセス許可を割り当てるまたは削除する方法について学習できます。
+ms.openlocfilehash: 4a1353963e5e3eadc1a07f8b4aa3a765b06c86ec
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201903"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659299"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>スタンドアロン EOP で役割グループを管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Exchange Online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 組織では、Exchange 管理センター (EAC) を使用してユーザーを役割グループに追加できます。 ユーザーを役割グループに追加すると、特定の管理タスクを実行するためのアクセス許可が付与されます。 役割グループからユーザーを削除することもできます。
+Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、Exchange 管理センター (EAC) を使用してユーザーを役割グループに追加できます。 役割グループにユーザーを追加すると、特定の管理タスクを実行するためのアクセス許可がユーザーに付与されます。 役割グループからユーザーを削除することもできます。
 
-役割と役割グループの詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md)」を参照してください。
+役割と役割グループの詳細については、「スタンドアロン [EOP のアクセス許可」を参照してください](feature-permissions-in-eop.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- Exchange 管理センター (EAC) を開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
+- Exchange 管理センター (EAC) を開く方法については、スタンドアロン EOP の [Exchange 管理センターを参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- スタンドアロン EOP PowerShell を開くには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
+- スタンドアロンの EOP PowerShell を開く方法については [、「Exchange Online Protection PowerShell への接続」を参照してください](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、役割管理役割が必要です。これは、既定では、組織の管理 (グローバル管理者) 役割グループに割り当てられています。 詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、 [役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。
+- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で **"Organization Management/** 組織の管理" 役割グループに割り当てられる **"Role Management/** 役割管理" 役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
+- この記事の手順に適用できるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
 
 > [!TIP]
 > 問題が発生する場合 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) フォーラムでサポートをご依頼ください。
@@ -45,37 +45,37 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 ### <a name="use-the-eac-to-view-role-groups"></a>EAC を使用して役割グループを表示する
 
-1. EAC で、[ **アクセス許可** \> **管理者の役割**] に移動します。 組織の役割グループのすべてが一覧表示されます。
+1. EAC で、アクセス許可管理者 **の役割に** \> **移動します**。 組織の役割グループのすべてが一覧表示されます。
 
-2. 役割グループを選択します。 詳細ウィンドウには、役割グループの **名前**、 **説明**、 **割り当てられた役割**、および **管理者** が表示されます。 この情報は **、[編集**] 編集アイコンをクリックして確認することもでき ![ ](../../media/ITPro-EAC-EditIcon.png) ます。
+2. 役割グループを選択します。 [詳細] ウィンドウには、 **名前**、 **説明**、 **割** り当てられた役割、 **および役割グループ** の管理が表示されます。 この情報は、[編集] アイコンをクリック **して** ![ 表示することもできます ](../../media/ITPro-EAC-EditIcon.png) 。
 
 ### <a name="use-the-eac-to-create-role-groups"></a>EAC を使用して役割グループを作成する
 
-新しい役割グループを作成する場合、すべての設定を (グループの作成時または実行後に) 自分で構成できます。 または、既存の役割グループをコピーして変更することもできます。
+新しい役割グループを作成する場合は、(グループの作成時または作成後に) すべての設定を自分で構成できます。 または、既存の役割グループをコピーして変更できます。
 
-1. EAC で、[ **アクセス許可** \> **管理者の役割**] に移動し、次のいずれかの手順を実行します。
+1. EAC で、アクセス許可管理者 **の役割に** \> **移動** し、次のいずれかの手順を実行します。
 
-   - **新しい役割グループを手動で作成**します **。 [追加** ![ ] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。
+   - **新しい役割グループを手動で作成する**: [追加 **] アイコンを** ![ クリックします ](../../media/ITPro-EAC-AddIcon.png) 。
 
-   - **既存の役割グループをコピー**する: コピーする役割グループを選択し、[コピー **のコピー** ![ ] アイコンをクリックし ](../../media/ITPro-EAC-CopyIcon.png) ます。
+   - **既存の役割グループをコピー** する : コピーする役割グループを選択し、[コピー  ] アイコン ![ をクリックします ](../../media/ITPro-EAC-CopyIcon.png) 。
 
-2. 表示される [ **役割グループの新規作成** ] ウィンドウで、次の設定を構成します。
+2. 表示される **[新しい役割グループ** ] ウィンドウで、次の設定を構成します。
 
-    - [**名前**]: 役割グループの一意の名前を入力します。
+    - **Name**: 役割グループの一意の名前を入力します。
 
-    - [**説明**]: 役割グループの説明 (オプション) を入力します。
+    - **説明**: 役割グループのオプションの説明を入力します。
 
-    - **役割**: **Add** ![ ](../../media/ITPro-EAC-AddIcon.png) **Remove** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) 役割グループに割り当てられている役割を選択または変更するには、[追加] アイコンまたは [削除ITPro-EAC-RemoveIcon.gifをクリックします。
+    - **役割**: [追加 **] アイコン** または [削除] アイコンをクリックして、役割グループに割り当てられている役割を ![ ](../../media/ITPro-EAC-AddIcon.png)  ![ ](../../media/ITPro-EAC-RemoveIcon.gif) 選択または変更します。
 
-    - **メンバー**: **Add** ![ ](../../media/ITPro-EAC-AddIcon.png) **Remove** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) 役割グループのメンバーシップを変更するには、[追加] アイコンをクリックするかITPro-EAC-RemoveIcon.gifを削除します。
+    - **メンバー**: [追加 **] アイコンまたは**[削除] アイコンをクリック ![ して、 ](../../media/ITPro-EAC-AddIcon.png)  ![ ](../../media/ITPro-EAC-RemoveIcon.gif) 役割グループのメンバーシップを変更します。
 
-3. 完了したら、[ **保存** ] をクリックして役割グループを作成します。
+3. 完了したら、[保存] をクリック **して** 役割グループを作成します。
 
 ### <a name="use-the-eac-to-modify-role-groups"></a>EAC を使用して役割グループを変更する
 
-EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、変更する役割グループを選択し**Edit**てから、[編集 ![ ] 編集アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) ます。
+EAC で、アクセス許可の管理役割に移動し、変更する役割グループを選択して、[編集] アイコン \> **を** ![ クリックします ](../../media/ITPro-EAC-EditIcon.png) 。
 
-役割グループの作成時に役割グループを変更する場合も、同じオプションを使用できます。 以下のことを実行できます。
+役割グループを変更する場合と役割グループを作成する場合と同じオプションを使用できます。 以下のことを実行できます。
 
 - 名前と説明を変更します。
 
@@ -83,17 +83,17 @@ EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、変�
 
 - メンバーを追加および削除します。
 
-**注**: 一部の役割グループ (たとえば、組織管理) は、グループから削除できる役割を制限します。
+**注**: 一部の役割グループ (組織の管理など) では、グループから削除できる役割が制限されます。
 
 #### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a>EAC を使用して役割グループのメンバーの一覧を変更する
 
-1. EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、変更する役割グループを選択して**Edit**から、[編集 ![ ] 編集アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) ます。
+1. EAC で、[アクセス許可の管理 **]** 役割に移動し、変更する役割グループを選択して、[編集] アイコン \>  ![ をクリックします ](../../media/ITPro-EAC-EditIcon.png) 。
 
-2. 開いている役割グループのプロパティページの [ **メンバー** ] セクションで、次のいずれかの手順を実行します。
+2. 開く役割グループのプロパティ ページの [ **メンバー** ] セクションで、次のいずれかの手順を実行します。
 
-   - [ **追加** ![ ] アイコン ](../../media/ITPro-EAC-AddIcon.png) をクリックします。 表示されるページで、wou を追加するユーザーを見つけ、[ **追加->**] をクリックします。 [ユーザー] を選択し、必要に応じて [ **>** ] を繰り返しクリックします。 完了したら、 **[OK]** をクリックします。
+   - [追加 **] アイコンを** ![ クリックします ](../../media/ITPro-EAC-AddIcon.png) 。 表示されるページで、追加するユーザーを見つけ、[追加] **->。** ユーザーを選択し、[ **追加] ->** 何度もクリックします。 完了したら、 **[OK]** をクリックします。
 
-   - 削除するユーザーを選択し、[削除] [削除] アイコン **をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。
+   - 削除するユーザーを選択し、[削除] アイコン **を** ![ クリックします ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
 3. 完了したら、**[保存]** をクリックします。
 
@@ -102,13 +102,13 @@ EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、変�
 
 ### <a name="use-the-eac-to-remove-role-groups"></a>EAC を使用して役割グループを削除する
 
-組み込みの役割グループを削除することはできませんが、作成したカスタム役割グループを削除することはできます。
+組み込みの役割グループは削除できませんが、作成したカスタム役割グループは削除できます。
 
-1. EAC で、[ **アクセス許可** \> **管理者の役割**] に移動します。
+1. EAC で、アクセス許可管理者 **の役割に** \> **移動します**。
 
-2. 削除する役割グループを選択し、[削除] **[削除] アイコンをクリックし** ![ ](../../media/ITPro-EAC-DeleteIcon.png) ます。
+2. 削除する役割グループを選択し、[削除] アイコン **を** ![ クリックします ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
-3. 確認ウィンドウが表示されたら、[ **はい** ] をクリックします。
+3. 表示 **される確認** ウィンドウで [はい] をクリックします。
 
 ## <a name="use-powershell-to-manage-role-groups"></a>PowerShell を使用して役割グループを管理する
 
@@ -126,13 +126,13 @@ Get-RoleGroup [-Identity "<Role Group Name>"] [-Filter <Filter>]
 Get-RoleGroup
 ```
 
-この例では、"受信者管理者" という名前の役割グループの詳細情報を返します。
+この例では、Recipient Administrators という名前の役割グループの詳細情報を返します。
 
 ```PowerShell
 Get-RoleGroup -Identity "Recipient Administrators" | Format-List
 ```
 
-この例では、ユーザージュリアがメンバーであるすべての役割グループを返します。 次のコマンドを実行すると、ジュリアの DistinguishedName (DN) 値を使用する必要があります `Get-User -Identity Julia | Format-List DistinguishedName` 。
+この例では、ユーザー Julia がメンバーであるすべての役割グループを返します。 You need to use the DistinguishedName (DN) value for Julia, which you can find by running the `Get-User -Identity Julia | Format-List DistinguishedName` command:
 
 ```PowerShell
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
@@ -142,7 +142,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
 
 ### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>スタンドアロンの EOP PowerShell を使用して役割グループを作成する
 
-新しい役割グループを作成する場合、すべての設定を手動で構成できます (グループの作成時または実行後)。 または、既存の役割グループをコピーして変更することもできます。
+新しい役割グループを作成する場合、すべての設定を手動で構成できます (グループの作成中または作成後)。 または、既存の役割グループをコピーして変更できます。
 
 - 新しい役割グループを手動で作成するには、次の構文を使用します。
 
@@ -150,15 +150,15 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
   New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...>
   ```
 
-  - _Roles_パラメーターは、次の構文を使用して、役割グループに割り当てる管理役割を指定し `"Role1","Role1",..."RoleN"` ます。 **Get-ManagementRole** コマンドレットを使用して、使用できる役割を確認できます。
+  - _Roles パラメーター_ は、次の構文を使用して、役割グループに割り当てる管理役割を指定します `"Role1","Role1",..."RoleN"` 。 **Get-ManagementRole** コマンドレットを使用して、使用できる役割を確認できます。
 
-  - _Members_パラメーターは、次の構文を使用して、役割グループのメンバーを指定し `"Member1","Member2",..."MemberN"` ます。 ユーザー、メールが有効なユニバーサル セキュリティ グループ (USG)、またはその他の役割グループ (セキュリティ プリンシパル) を指定できます。
+  - _Members パラメーター_ は、次の構文を使用して役割グループのメンバーを指定します `"Member1","Member2",..."MemberN"` 。 ユーザー、メールが有効なユニバーサル セキュリティ グループ (USG)、またはその他の役割グループ (セキュリティ プリンシパル) を指定できます。
 
-  この例では、次の設定を使用して "制限付き受信者管理" という名前の新しい役割グループを作成します。
+  この例では、次の設定を使用して、"Limited Recipient Management" という名前の新しい役割グループを作成します。
 
   - "Mail Recipients/メール受信者" 役割は、役割グループに割り当てられます。
 
-  - Kim と Martin のユーザーは、メンバーとして追加されます。
+  - ユーザー Kim と Martin がメンバーとして追加されます。
 
   ```PowerShell
   New-RoleGroup -Name "Limited Recipient Management" -Roles "Mail Recipients" -Members "Kim","Martin"
@@ -178,22 +178,22 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
      New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>]
      ```
 
-     _Members_パラメーターは、次の構文を使用して、役割グループのメンバーを指定し `"Member1","Member2",..."MemberN"` ます。 ユーザー、メールが有効なユニバーサル セキュリティ グループ (USG)、またはその他の役割グループ (セキュリティ プリンシパル) を指定できます。
+     _Members パラメーター_ は、次の構文を使用して役割グループのメンバーを指定します `"Member1","Member2",..."MemberN"` 。 ユーザー、メールが有効なユニバーサル セキュリティ グループ (USG)、またはその他の役割グループ (セキュリティ プリンシパル) を指定できます。
 
-     この例では、組織の管理役割グループを "制限された組織の管理" という名前の新しい役割グループにコピーします。 役割グループのメンバーは、Isabelle、Carter、Lukas です。
+     この例では、Organization Management 役割グループを "Limited Organization Management" という名前の新しい役割グループにコピーします。 役割グループのメンバーは、Isabelle、Carter、Lukas です。
 
      ```PowerShell
      $RoleGroup = Get-RoleGroup "Organization Management"
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-構文およびパラメーターの詳細については、「 [新しい-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup)」を参照してください。
+構文およびパラメーターの詳細については [、New-RoleGroup を参照してください](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup)。
 
-### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>スタンドアロンの EOP PowerShell を使用する役割グループのメンバーの一覧を変更する
+### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>スタンドアロンの EOP PowerShell を使用して役割グループのメンバーの一覧を変更する
 
-- **Add-rolegroupmember**および**add-rolegroupmember**コマンドレットは、個々のメンバーを一度に1つずつ追加または削除します。 **Add-rolegroupmember**コマンドレットでは、既存のメンバーの一覧を置き換えたり変更したりできます。
+- **Add-RoleGroupMember** コマンドレットと **Remove-RoleGroupMember** コマンドレットは、個々のメンバーを一度に 1 人追加または削除します。 **Update-RoleGroupMember コマンドレットは、メンバー** の既存のリストを置き換えまたは変更できます。
 
-- 役割グループのメンバーは、ユーザー、メールが有効なユニバーサルセキュリティグループ (Usg)、またはその他の役割グループ (セキュリティプリンシパル) にすることができます。
+- 役割グループのメンバーには、ユーザー、メールが有効なユニバーサル セキュリティ グループ (USG)、または他の役割グループ (セキュリティ プリンシパル) を指定できます。
 
 役割グループのメンバーを変更するには、次の構文を使用します。
 
@@ -201,27 +201,27 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
 Update-RoleGroupMember -Identity "<Role Group Name>" -Members <Members>
 ```
 
-- 既存のメンバーリストを指定した値に _置き換える_ には、次の構文を使用し `"Member1","Member2",..."MemberN"` ます。
+- 既存 _の_ メンバーの一覧を指定した値に置き換える場合は、次の構文を使用します `"Member1","Member2",..."MemberN"` 。
 
-- 既存のメンバーリストを _選択的に変更_ するには、次の構文を使用し `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}` ます。
+- メンバー _の既存の_ 一覧を選択的に変更するには、次の構文を使用します `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}` 。
 
-この例では、ヘルプデスク役割グループの現在のすべてのメンバーを指定されたユーザーに置き換えます。
+この例では、Help Desk 役割グループのすべての現在のメンバーを、指定されたユーザーに置き換えています。
 
 ```PowerShell
 Update-RoleGroupMember -Identity "Help Desk" -Members "Gabriela Laureano","Hyun-Ae Rim","Jacob Berger"
 ```
 
-この例では、Daigoro Akai を追加し、ヘルプデスク役割グループのメンバーの一覧から Valeria Barrio を削除します。
+次の使用例は、"Help Desk/ヘルプ デスク" 役割グループのメンバーの一覧から Valeria Barrio を追加し、Valeria Barrio を削除します。
 
 ```PowerShell
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-構文およびパラメーターの詳細については、「 [add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember)」を参照してください。
+構文およびパラメーターの詳細については [、「Update-RoleGroupMember」を参照してください](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember)。
 
 ### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>スタンドアロンの EOP PowerShell を使用して役割グループを削除する
 
-組み込みの役割グループを削除することはできませんが、作成したカスタム役割グループを削除することはできます。
+組み込みの役割グループは削除できませんが、作成したカスタム役割グループは削除できます。
 
 カスタム役割グループを削除するには、次の構文を使用します。
 
@@ -241,9 +241,9 @@ Remove-RoleGroup -Identity "Training Administrators"
 
 役割グループが正常にコピーされたことを確認するには、次のいずれかの手順を実行します。
 
-- EAC で、[ **アクセス許可** \> **管理者の役割**] に移動し、役割グループが表示されている (または一覧に表示されていない) ことを確認します。 役割グループを選択して、詳細ウィンドウで設定を確認するか **、[編集** ![ ] 編集アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) て設定を確認します。
+- EAC で、アクセス許可管理者の **役割** に移動し、役割グループが一覧に表示 (または一覧に表示されていない \> ) を確認します。 役割グループを選択し、[詳細] ウィンドウで設定を確認するか、[編集] アイコンをクリックして設定 ![ ](../../media/ITPro-EAC-EditIcon.png) を確認します。
 
-- Exchange Online PowerShell で、を \<Role Group Name\> 役割グループの名前に置き換え、次のコマンドを実行して役割グループが存在する (または存在しない) ことを確認し、設定を確認します。
+- Exchange Online PowerShell で、役割グループの名前に置き換え、次のコマンドを実行して役割グループが存在する (または存在しない) か確認し、設定を \<Role Group Name\> 確認します。
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

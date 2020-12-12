@@ -1,5 +1,5 @@
 ---
-title: Microsoft の Netregistry で DNS レコードを作成する
+title: Netregistry for Microsoft で DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,17 +21,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
-description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Netregistry にあるその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Microsoft Netregistry でドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードをセットアップする方法について説明します。
+ms.openlocfilehash: 857645c685cce946b39a7c3dcadb0a45b43686cf
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645973"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657805"
 ---
-# <a name="create-dns-records-at-netregistry-for-microsoft"></a>Microsoft の Netregistry で DNS レコードを作成する
+# <a name="create-dns-records-at-netregistry-for-microsoft"></a>Netregistry for Microsoft で DNS レコードを作成する
 
-探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)してください。 
+探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)してください。 
   
 使用している DNS ホスティング プロバイダーが Netregistry の場合は、この記事に記載された手順に従って、ドメインの確認とメールや Skype for Business Online などの DNS レコードのセットアップを行います。
   
@@ -47,7 +47,7 @@ ms.locfileid: "48645973"
     
 - [Microsoft で必要な 2 つの SRV レコードを追加する](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-これらのレコードを Netregistry で追加すると、使用しているドメインが Microsoft サービスで機能するように設定されます。
+Netregistry でこれらのレコードを追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
   
   
 > [!NOTE]
@@ -73,22 +73,22 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![Netregistry_selectZoneManager](../../media/e18c32f9-c1e7-4aa2-9aa6-8dc9c5ea44af.png)
   
-4. [ **Add a zone record**] の一覧から [ **TXT record** ] を選択し、[ **新しいレコードの作成**] を選択します。
+4. [Add **a zone record] (ゾーン レコードの** 追加) で、一覧から **[TXT Record]** を選び **、[Create new record] (** 新しいレコードの作成) を選択します。
     
     ![Netregistry_TXT_select](../../media/eb1761e6-9deb-4631-8deb-bc5d09926722.png)
   
     > [!NOTE]
-    > TXT ボックスでは、エントリの前後に引用符を使用する必要があります。 
+    > TXT ボックスのエントリの前と後に引用符を使用する必要があります。 
   
     [ **New TXT Record** ] フォームに、次の表の値を入力するか、コピーして貼り付けます。 
     
     |**名前**|**TTL (秒)**|**TXT (ポイント先のアドレスまたは値)**|
     |:-----|:-----|:-----|
-    |(空白のまま)  <br/> |3600 (秒)  <br/> |"MS = msXXXXXXXX"  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)  |
+    |(空白のまま)  <br/> |3600 (秒)  <br/> |"MS=msXXXXXXXX"  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)  |
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
-6. [ **Add record**] を選択します。
+6. Select **Add record**.
     
 これで、ドメイン レジストラーのサイトでレコードが追加されました。Microsoft に戻り、レコードをリクエストします。
   
@@ -126,19 +126,19 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Netregistry_selectZoneManager](../../media/914021f6-dff3-4640-84d6-b83cf8f61cf1.png)
   
-4. [ **現在のゾーンレコード**] で、リスト内の各 mx レコードの横にある [ **削除** ] を選択して、既定の mx レコードを削除します。 
+4. [**現在のゾーンのレコード**] で、一覧の各 MX レコードの横にある [削除] を選択して、既定の MX レコードを削除します。 
     
     ![Netregistry_MX_remove](../../media/494670a9-8b8d-46e5-8136-05e82212a115.png)
   
-5. [ **Add a zone record**] の一覧から [ **MX record** ] を選択し、[ **新しいレコードの作成**] を選択します。
+5. [ **ゾーン レコードの追加] で**、一覧から **[MX レコード** ] を選択し、[新しいレコードの作成 **] を選択します**。
     
     ![Netregistry_MX_select](../../media/29b60eb9-6c40-490f-9669-e65b65962f37.png)
   
-6. [ **新しい MX レコード** ] フォームで、次の表の値を入力するか、コピーして貼り付けます。 
+6. [New **MX Record]** フォームで、次の表の値を入力するか、コピーして貼り付けます。 
     
-    |**名前**|**TTL (秒)**|**Exchange (ポイント先アドレスまたは値)**|**ホストは完全に修飾されていますか?**|**優先順位 (優先度)**|
+    |**名前**|**TTL (秒)**|**Exchange (ポイント先アドレスまたは値)**|**ホストは完全修飾されますか?**|**Preference (Priority)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(空白のまま)  <br/> |3600 (秒)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)      |(チェックボックスをオンにします)  <br/> |10    <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(空白のまま)  <br/> |3600 (秒)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)      |(チェック ボックスをオンにする)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -161,13 +161,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Netregistry_selectZoneManager](../../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
   
-4. [  **Add a zone record**] の一覧から [ **CNAME record** ] を選択し、[ **新しいレコードの作成**] を選択します。
+4. [  **ゾーン レコードの追加] で、** リストから **[CNAME レコード** ] を選択し、[新しいレコードの作成 **] を選択します**。
     
     ![Netregistry_CNAME_CreateNewRecord](../../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
   
 5. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    |**名前**|**Type**|**TTL**|**ホスト (ポイントまたはアドレスの値)**|
+    |**名前**|**Type**|**TTL**|**HOST (ポイント先またはアドレス値)**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600 (秒)  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600 (秒)  <br/> |sipdir.online.lync.com  <br/> |
@@ -177,7 +177,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
        
     ![Netregistry_CNAME_values](../../media/93c479f0-3ce2-491a-9113-6dde1cd7131b.png)
       
-6. [ **Add record**] を選択します。
+6. Select **Add record**.
     
     ![Netregistry_CNAME_values_AddRecord](../../media/046c8c64-ea71-4530-9fc6-69f0c70993b6.png)
   
@@ -189,7 +189,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。
   
 1. まず、[こちらのリンク](https://theconsole.netregistry.com.au/)を使って、Netregistry のドメイン ページにアクセスします。ログインするように求められます。
     
@@ -203,18 +203,18 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Netregistry_selectZoneManager](../../media/372e5918-b6dc-4268-8f9a-0aa71d65deef.png)
   
-4. [ **Add a zone record**] の一覧から [ **TXT record** ] を選択し、[ **新しいレコードの作成**] を選択します。
+4. [Add **a zone record] (ゾーン レコードの** 追加) で、一覧から **[TXT Record]** を選び **、[Create new record] (** 新しいレコードの作成) を選択します。
     
     ![Netregistry_TXT_select](../../media/a2930d03-853a-4f1e-9205-d00f25bed35f.png)
   
 5. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。 
     
     > [!NOTE]
-    > TXT ボックスでは、エントリの前後に引用符を使用する必要があります。 
+    > TXT ボックスのエントリの前と後に引用符を使用する必要があります。 
   
     |**名前**|**Type**|**TTL**|**TXT データ (ターゲット)**|
     |:-----|:-----|:-----|:-----|
-    |(空白のまま)  <br/> |TXT  <br/> |3600 (秒)  <br/> |"v = spf1 には、以下のようにします。  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |(空白のまま)  <br/> |TXT  <br/> |3600 (秒)  <br/> |"v=spf1 include:spf.protection.outlook.com -all"  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
     ![Netregistry_SPF-TXTvalues](../../media/a369345a-d774-48bc-8160-b628ab8247f9.png)
   
@@ -229,7 +229,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Netregistry_login](../../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
   
-2. 管理するドメインの横にある [  **manage**] を選択します。
+2. 管理するドメインの横にある [管理] を選択  **します**。
     
     ![Netregistry_Manage](../../media/e0ddc79e-0123-4e24-8380-9645bdb41aac.png)
   
@@ -237,19 +237,19 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Netregistry_selectZoneManager](../../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
   
-4. [  **Add a zone record**] の一覧から [ **SRV record** ] を選択し、[ **新しいレコードの作成**] を選択します。
+4. [Add  **a zone record] (ゾーン レコードの** 追加) で、一覧から **[SRV Record]** を選び、[Create new record ] (新しいレコードの作成 **) を選択します**。
     
     ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   
 5. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
     > [!NOTE]
-    > [名前] フィールドは、サービス (たとえば、_sip) とプロトコル (たとえば、_tls) の組み合わせです。 
+    > Name フィールドは、サービス (_sip など) とプロトコル (たとえば、_tls) の組み合わせです。 
   
     |**Type**|**名前**|**TTL (秒)**|**Priority**|**Weight**|**Port**|**対象**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (サービス)  <br/> |_sip._tls  <br/> |3600 (秒)  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV (サービス)  <br/> |_sipfederationtls._tcp  <br/> |3600 (秒)  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (サービス)  <br/> |_sip._tls  <br/> |3600 (秒)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (サービス)  <br/> |_sipfederationtls._tcp  <br/> |3600 (秒)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

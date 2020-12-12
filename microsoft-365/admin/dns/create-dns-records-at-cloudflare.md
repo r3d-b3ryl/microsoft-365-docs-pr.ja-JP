@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: ドメインを確認し、電子メール、Skype for Business Online、および Cloudflare for Microsoft の他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 301ed156584d9a9a2b84b88db7d6969ade5b34a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Cloudflare for Microsoft でドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードをセットアップする方法について説明します。
+ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646153"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657962"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Cloudflare で Microsoft 用の DNS レコードを作成する
 
- 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
 使用している DNS ホスティング プロバイダーが Cloudflare の場合は、この記事に記載された手順に従って、ドメインの確認とメールや Skype for Business Online などの DNS レコードのセットアップを行います。
   
-Cloudflare でこれらのレコードを追加すると、使用しているドメインが、Microsoft 365 サービスで機能するように設定されます。
+Cloudflare でこれらのレコードを追加すると、ドメインは Microsoft 365 サービスで動作する設定に設定されます。
   
   
 > [!NOTE]
@@ -48,7 +48,7 @@ Cloudflare でこれらのレコードを追加すると、使用しているド
   
 Cloudflare にサインアップしたときに、Cloudflare の [ **Setup**] プロセスを使用してドメインを追加しました。 
   
-追加したドメインは、Cloudflare または別のドメインレジストラーから購入されました。 Microsoft 365 でドメインの DNS レコードを確認および作成するには、まず、Cloudflare のネームサーバーを使用するようにドメインレジストラーでネームサーバーを変更する必要があります。
+追加したドメインは、Cloudflare または別のドメイン レジストラーから購入されました。 Microsoft 365 でドメインの DNS レコードを確認して作成するには、まず、Cloudflare のネームサーバーを使用するために、ドメイン レジストラーのネームサーバーを変更する必要があります。
   
 ドメイン レジストラーの Web サイトで、自分でドメインのネーム サーバーを変更するには、次の手順に従います。
   
@@ -62,12 +62,12 @@ Cloudflare にサインアップしたときに、Cloudflare の [ **Setup**] �
     |2 番目のネーム サーバー  <br/> |Cloudflare によって提供されるネーム サーバーの値を使用します。  <br/> |
    
     > [!TIP]
-    > You should use at least two name server records. 他のネームサーバーが表示されている場合は、それらを削除する必要があります。 
+    > You should use at least two name server records. 他のネーム サーバーが一覧に表示されている場合は、それらを削除する必要があります。 
   
 3. 変更内容を保存します。
     
 > [!NOTE]
-> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 
+> ネーム サーバー レコードの更新がインターネットの DNS システム全体に反映されるまでに、最大で数時間かかる場合があります。 その後、Microsoft のメールと他のサービスはすべて、ドメインで動作する設定に設定されます。 
   
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 <a name="BKMK_verify"> </a>
@@ -79,12 +79,12 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. まず、[このリンク](https://www.cloudflare.com/a/login)を使って Cloudflare でドメイン ページにアクセスします。最初にログインするように求められます。
   
-2. [ **ホーム** ] ページで、更新するドメインを選択します。 
+2. ホーム ページ **で** 、更新するドメインを選択します。 
   
-3. ドメインの [ **概要** ] ページで、[ **DNS**] を選択します。
+3. ドメインの **[概要]** ページで **、[DNS]** を選択します。
 
   
-4. [ **DNS の管理** ] ページで、[ **レコードの追加**] をクリックし、次の表の値を選択します。 
+4. [DNS 管理 **] ページ** で、[ **レコードの追加**] をクリックし、次の表から値を選択します。 
     
     |**Type**|**Name**|**Automatic TTL**|**Content**|
     |:-----|:-----|:-----|:----|
@@ -96,7 +96,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft に戻ってレコードを検索します。
+これで、ドメイン レジストラーのサイトにレコードが追加されたので、Microsoft に戻り、レコードを検索します。
   
 Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
@@ -123,16 +123,16 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://www.cloudflare.com/a/login)を使って Cloudflare でドメイン ページにアクセスします。最初にログインするように求められます。
   
-2. [ **ホーム** ] ページで、更新するドメインを選択します。 
+2. ホーム ページ **で** 、更新するドメインを選択します。 
   
-3. ドメインの [ **概要** ] ページで、[ **DNS**] を選択します。
+3. ドメインの **[概要]** ページで **、[DNS]** を選択します。
 
   
-4. [ **DNS の管理** ] ページで、[ **レコードの追加**] をクリックし、次の表の値を選択します。 
+4. [DNS 管理 **] ページ** で、[ **レコードの追加**] をクリックし、次の表から値を選択します。 
     
     |**Type**|**名前**|**メール サーバー**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft 365 アカウントからを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/>|30 分  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft  *\<domain-key\>*  365 アカウントから取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/>|30 分  <br/> |
    
 
   
@@ -140,23 +140,23 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 9. [ **MX Records**] セクションに他の MX レコードが一覧表示されている場合は、[ **Delete (X)**] アイコンを選択してそれらを削除します。 
   
-10. 確認ダイアログボックスで、[ **削除** ] を選択して変更を確認します。 
+10. 確認ダイアログ ボックスで、[削除] を選択 **して** 変更を確認します。 
 
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な6つの CNAME レコードを追加する
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な 6 つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
 
 1. まず、[このリンク](https://www.cloudflare.com/a/login)を使って Cloudflare でドメイン ページにアクセスします。最初にログインするように求められます。
     
   
-2. [ **ホーム** ] ページで、更新するドメインを選択します。 
+2. ホーム ページ **で** 、更新するドメインを選択します。 
   
-3. ドメインの [ **概要** ] ページで、[ **DNS**] を選択します。
+3. ドメインの **[概要]** ページで **、[DNS]** を選択します。
 
   
-4. 5つの CNAME レコードの最初のレコードを追加します。
+4. 5 つの CNAME レコードの最初のレコードを追加します。
     
-    [ **DNS の管理** ] ページで、[ **レコードの追加**] をクリックし、次の表の値を選択します。
+    [DNS 管理 **] ページ** で、[ **レコードの追加**] をクリックし、次の表から値を選択します。
     
     
     |**Type**|**Name**|**Target**|**TTL**|
@@ -169,7 +169,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
     
   
-5. [ **DNS トラフィック** ] アイコン (オレンジのクラウド) を選択して、cloudflare サーバーをバイパスします。
+5. **Cloudflare サーバーをバイパスするには、DNS** トラフィック アイコン (オレンジ色のクラウド) を選択します。
   
 6. **[保存]** を選択します。
   
@@ -185,12 +185,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 1. まず、[このリンク](https://www.cloudflare.com/a/login)を使って Cloudflare でドメイン ページにアクセスします。 最初にログインするように求められます。
     
   
-2. [ **ホーム** ] ページで、更新するドメインを選択します。 
+2. ホーム ページ **で** 、更新するドメインを選択します。 
   
-3. ドメインの [ **概要** ] ページで、[ **DNS**] を選択します。
+3. ドメインの **[概要]** ページで **、[DNS]** を選択します。
 
   
-4. [ **DNS の管理** ] ページで、[ **レコードの追加**] をクリックし、次の表の値を選択します。  
+4. [DNS 管理 **] ページ** で、[ **レコードの追加**] をクリックし、次の表から値を選択します。  
     
     |**Type**|**Name**|**TTL**|**Content**|
     |:-----|:-----|:-----|:-----|
@@ -205,28 +205,28 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> Cloudflare は、この機能を使用できるようにする必要があることに留意してください。 次の手順と現在の Cloudflare GUI (グラフィカルユーザーインターフェイス) の間に矛盾がある場合は、 [Cloudflare コミュニティ](https://community.cloudflare.com/)を活用してください。 
+> この機能を利用するには Cloudflare が責任を負うという注意が必要です。 以下の手順と現在の Cloudflare GUI (グラフィカル ユーザー インターフェイス) の間に不一致が表示される場合は [、Cloudflare コミュニティを活用してください](https://community.cloudflare.com/)。 
 
 1. まず、[このリンク](https://www.cloudflare.com/a/login)を使って Cloudflare でドメイン ページにアクセスします。 最初にログインするように求められます。
       
-2. [ **ホーム** ] ページで、更新するドメインを選択します。 
+2. ホーム ページ **で** 、更新するドメインを選択します。 
   
-3. ドメインの [ **概要** ] ページで、[ **DNS**] を選択します。
+3. ドメインの **[概要]** ページで **、[DNS]** を選択します。
   
 4. 2 つの SRV レコードの最初のレコードを追加します。
 
-    [ **DNS の管理** ] ページで、[ **レコードの追加**] をクリックし、次の表の1行目の値を選択します。
+    [DNS 管理 **]** ページで、[レコードの追加] をクリックし、次の表の最初の行から値を選択します。
         
     |**Type**|**Service**|**Protocol**|**Name**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |*Domain_name*を使用します。たとえば、contoso.com  |30 分 | 100|1-d |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|*Domain_name*を使用します。たとえば、contoso.com   |30 分 |100 |1-d |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |お使 *domain_name*;たとえば、contoso.com  |30 分 | 100|1  |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|お使 *domain_name*;たとえば、contoso.com   |30 分 |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. **[保存]** を選択します。
 
   
-6. 表の2行目の値を選択して、他の SRV レコードを追加します。 
+6. テーブルの 2 行目の値を選択して、他の SRV レコードを追加します。 
 
     
 > [!NOTE]

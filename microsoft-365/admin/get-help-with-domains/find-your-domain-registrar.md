@@ -22,16 +22,16 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: InterNIC 検索を使用して、ドメイン レジストラーと DNS ホスティング プロバイダーを探す方法を説明します。
-ms.openlocfilehash: 8fa75800125179f046f3af76eea490d760b9f6cd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645325"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655544"
 ---
 # <a name="find-your-domain-registrar"></a>ドメイン レジストラーを検索する
 
- 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
+ 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
 ## <a name="domain-registrar"></a>ドメイン レジストラー
   

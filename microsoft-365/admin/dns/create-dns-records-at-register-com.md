@@ -1,5 +1,5 @@
 ---
-title: Microsoft の Register.com で DNS レコードを作成する
+title: Microsoft 向け Register.com DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,17 +20,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
-description: ドメインを確認し、電子メール、Skype for Business Online、および Register.com のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 96ec44875d5bc86f46e4945d4021deb0ca427fed
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを microsoft Register.comセットアップする方法について説明します。
+ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657594"
 ---
-# <a name="create-dns-records-at-registercom-for-microsoft"></a>Microsoft の Register.com で DNS レコードを作成する
+# <a name="create-dns-records-at-registercom-for-microsoft"></a>Microsoft 向け Register.com DNS レコードを作成する
 
- **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.md)** してください。 
+ **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。 
   
 使用している DNS ホスティング プロバイダーが Register.com の場合は、この記事に示す手順に従って、ドメインの確認とメールや Skype for Business Online などの DNS レコードの設定を行います。
   
@@ -46,7 +46,7 @@ ms.locfileid: "48645805"
 
 - [Microsoft で必要な 2 つの SRV レコードを追加する](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-これらのレコードを Register.com で追加すると、使用しているドメインが、Microsoft サービスで機能するように設定されます。
+これらのレコードを Register.comすると、ドメインは Microsoft サービスで動作する設定に設定されます。
   
 
   
@@ -67,11 +67,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
 2. [ **ドメイン**] を選択します。
     
-3. [ **管理**] を選択します。
+3. [管理] **を選択します**。
     
-4. 変更するドメインの名前を含む行を検索します。その行で、[ **管理**] を選択します。
+4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [ **高度な技術設定** ] セクションまで下にスクロールしてから、[ **TXT レコードの編集 (SPF)**] を選択します。
+5. [Advanced **Technical Settings] セクションまで下にスクロール** し **、[Edit TXT Records (SPF) ] を選択します**。
     
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -80,9 +80,9 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     |**Host Name** <br/> |**TXT Record** <br/> |
     |@  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. [ **続行**] を選択します。
+7. [続行] **を選択します**。
     
-8. 次のページで、[ **続行** ] をもう一度選択して、変更内容を確認します。 
+8. 次のページで、もう一度 **[続行** ] を選択して変更を確認します。 
     
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -110,33 +110,33 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 2. [ **ドメイン**] を選択します。
     
-3. [ **管理**] を選択します。
+3. [管理] **を選択します**。
     
-4. 変更するドメインの名前を含む行を検索します。その行で、[ **管理**] を選択します。
+4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [ **高度な技術設定** ] セクションまでスクロールし、[ **メールエクスチェンジャーレコードの編集**] を選択します。
+5. [Advanced **Technical Settings] セクションまでスクロール** し **、[Edit Mail Exchanger Records] を選択します**。
     
-    ![[メールエクスチェンジャーレコードの編集] を選択する](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
+    ![[メール エクスチェンジャー レコードの編集] を選択する](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
 6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    (ドロップダウンリストから **優先度** の値を選択します。) 
+    (ドロップダウン **リストから** [優先度] の値を選択します)。 
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**注: Microsoft アカウントから**取得\<*domain-key*\> します。 <br> [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**注: Microsoft アカウントから** 取得\<*domain-key*\> します。 <br> [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![テーブルから値をコピーして貼り付けます。](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
+    ![テーブルから値をコピーして貼り付ける](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
 7. MX レコードが他にもリストされている場合は、レコードを 1 つずつ選択して削除します。
     
     ![Select each record to delete](../../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
   
-8. [ **続行**] を選択します。
+8. [続行] **を選択します**。
     
     ![[続行] を選択する](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
   
-9. 次のページで [ **続行** ] を選択して、変更を確認して保存します。 
+9. 次のページで、もう一度 **[続行] を** 選択して確認し、変更を保存します。 
     
     ![[続行] を選択する](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
   
@@ -149,17 +149,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 2. [ **ドメイン**] を選択します。
     
-3. [ **管理**] を選択します。
+3. [管理] **を選択します**。
     
-4. 変更するドメインの名前を含む行を検索します。その行で、[ **管理**] を選択します。
+4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [ **高度な技術設定** ] セクションまでスクロールし、[ **ドメインエイリアスレコードの編集**] を選択します。
+5. [Advanced **Technical Settings] セクションまでスクロール** し **、[Edit Domain Aliases Records] を選択します**。
     
-    ![[ドメインエイリアスレコードの編集] を選択する](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
+    ![[ドメイン エイリアス レコードの編集] を選択する](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
-6. [ **追加するドメインエイリアス**] を選択します。
+6. [ドメイン **エイリアスの追加] を選択します**。
     
-    ![[その他のドメインエイリアスの追加] を選択します。](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
+    ![[ドメイン エイリアスを追加する] を選択する](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
 7. 必要な CNAME レコードを追加します。
     
@@ -173,13 +173,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/>  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/>  <br/> |
    
-     ![テーブルから DNS の値をコピーして貼り付けます。](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
+     ![テーブルから DNS 値をコピーして貼り付ける](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
   
-8. 必要な CNAME レコードをすべて追加したら、[ **続行**] を選択します。
+8. 必要なすべての CNAME レコードを追加した後、[続行] を選択 **します**。
     
     ![[続行] を選択する](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
   
-9. 次のページで [ **続行** ] を選択して、変更を確認して保存します。 
+9. 次のページで、もう一度 **[続行] を** 選択して確認し、変更を保存します。 
     
     ![[続行] を選択する](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
@@ -195,13 +195,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 2. [ **ドメイン**] を選択します。
     
-3. [ **管理**] を選択します。
+3. [管理] **を選択します**。
     
-4. 変更するドメインの名前を含む行を検索します。その行で、[ **管理**] を選択します。
+4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [ **高度な技術設定** ] セクションまでスクロールして、[ **TXT レコードの編集 (SPF)**] を選択します。
+5. [Advanced **Technical Settings] セクションまでスクロール** し **、[Edit TXT Records (SPF) ] を選択します**。
     
-    ![[Edit TXT Records (SPF)] を選択します。](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
+    ![Select Edit TXT Records (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   
 6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
@@ -209,13 +209,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。  |
    
-     ![テーブルから値をコピーして貼り付けます。](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
+     ![テーブルの値をコピーして貼り付ける](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
   
-7. [ **続行**] を選択します。
+7. [続行] **を選択します**。
     
     ![[続行] を選択する](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
   
-8. 次のページで [ **続行** ] を選択して、変更を確認して保存します。 
+8. 次のページで、もう一度 **[続行] を** 選択して確認し、変更を保存します。 
     
     ![[続行] を選択する](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
   
@@ -228,11 +228,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 2. [ **ドメイン**] を選択します。
     
-3. [ **管理**] を選択します。
+3. [管理] **を選択します**。
     
-4. 変更するドメインの名前を含む行を検索します。その行で、[ **管理**] を選択します。
+4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [ **高度な技術設定** ] セクションまでスクロールして、[ **SRV レコードの編集**] を選択します。
+5. [Advanced **Technical Settings] セクションまでスクロール** し **、[SRV レコードの編集] を選択します**。
     
     ![[SRV レコードの編集] を選択する](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
@@ -240,28 +240,28 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。
     
-    (ドロップダウンリストから **優先度** の値を選択します。) 
+    (ドロップダウン **リストから** [優先度] の値を選択します)。 
     
     |****Service****|****Proto****|****Name****|****Priority****|****Weight****|****Port****|****Target****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
-    ![テーブルから値をコピーして貼り付けます。](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
+    ![テーブルの値をコピーして貼り付ける](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
-7. [ **Add MORE SRV records**] を選びます。
+7. **[SRV レコードの追加] を選択します**。
     
-    ![[追加する SRV レコードの追加] を選択する](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
+    ![[SRV レコードの追加] を選択する](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
   
 8. 2 番目の SRV レコードを追加します。
     
     上の表の 2 行目の値を 2 つ目のレコードのボックスに入力するか、コピーして貼り付けます。
     
-9. 両方の SRV レコードを追加したら、[ **続行**] を選択します。
+9. 両方の SRV レコードを追加した場合は、[続行] を選択 **します**。
     
     ![[続行] を選択する](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
   
-10. 次のページで [ **続行** ] を選択して、変更を確認して保存します。 
+10. 次のページで、もう一度 **[続行] を** 選択して確認し、変更を保存します。 
     
     ![[続行] を選択する](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   
