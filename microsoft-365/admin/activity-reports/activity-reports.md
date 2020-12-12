@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988460"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611351"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -41,24 +41,24 @@ ms.locfileid: "48988460"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[ **レポート** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
+1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[ **レポート** ] \> [ **使用状況** ] ページの順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**レポート**] \> [**使用状況**] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[ **レポート** ] \> [ **使用状況** ] ページの順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**レポート**] \> [**使用状況**] ページの順に移動します。
 
 ::: moniker-end
 
-2. レポートの詳細ページを表示するには、サービス (メール、OneDrive など) の概要アクティビティ カードから [ **その他を表示** ] ボタンをクリックします。 サービスに関するさまざまなレポートがタブに表示されます。 <br/>![利用状況ダッシュボード](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. レポートの詳細ページを表示するには、サービス (メール、OneDrive など) の概要アクティビティ カードから [**その他を表示**] ボタンをクリックします。 サービスに関するさまざまなレポートがタブに表示されます。 <br/>![利用状況ダッシュボード](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>レポートを閲覧できるユーザー
 
@@ -90,13 +90,17 @@ ms.locfileid: "48988460"
     
 - [メールボックス使用状況](mailbox-usage.md)
     
-- [Office ライセンス認証数](microsoft-office-activations.md)
+- [Office ライセンス認証数](microsoft-office-activations-ww.md)
 
-- [アクティブなユーザー](active-users.md)
+- [米国政府機関向けの Office ライセンス認証](microsoft-office-activations.md)
+
+- [アクティブなユーザー](active-users-ww.md)
+
+- [米国政府機関のアクティブなユーザー](active-users.md)
   
 - [メール アプリの利用状況](email-apps-usage.md)
 
-- [Forms のアクティビティ](forms-activity-ww.md)
+- [フォームのアクティビティ](forms-activity-ww.md)
 
 - [米国政府の Forms のアクティビティ](forms-activity.md)
 
@@ -104,7 +108,9 @@ ms.locfileid: "48988460"
   
 - [米国政府向けの Dynamics 365 顧客音声アクティビティ](forms-pro-activity.md)
 
-- [Microsoft 365 グループ](office-365-groups.md)
+- [Microsoft 365 グループ](office-365-groups-ww.md)
+
+- [米国政府機関用 Microsoft 365 グループ](office-365-groups.md)
   
 - [OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity-ww.md)
 
@@ -114,7 +120,9 @@ ms.locfileid: "48988460"
 
 - [米国政府の OneDrive for Business の利用状況](onedrive-for-business-usage.md)
 
-- [Microsoft 365 Apps の使用法](microsoft365-apps-usage.md)
+- [Microsoft 365 Apps の利用状況](microsoft365-apps-usage-ww.md)
+
+- [米国政府機関向け Microsoft 365 アプリの利用状況](microsoft365-apps-usage.md)
   
 - [SharePoint サイトの利用状況](sharepoint-site-usage-ww.md)
 
@@ -194,25 +202,27 @@ ms.locfileid: "48988460"
 
 ## <a name="how-to-view-licensing-information"></a>ライセンス情報を表示する方法
 
-- 割り当て済みおよび未割り当てのライセンスの数を表示するには、管理センターで、[ **課金** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] の順に移動します。 
+- 割り当て済みおよび未割り当てのライセンスの数を表示するには、管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] の順に移動します。 
     
-- ライセンスのあるユーザー、ライセンスのないユーザー、またはゲストを表示するには、管理センターで、[ **ユーザー** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。 
+- ライセンスのあるユーザー、ライセンスのないユーザー、またはゲストを表示するには、管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。 
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>特定のユーザーの使用状況の情報を表示する方法
 
 特定のユーザーがどの程度サービスを使用しているかを調べるには、サービス レポートを使います。たとえば、特定のユーザーが使っているメールボックス記憶域の量を確認するには、メールボックスの利用状況レポートを開き、ユーザーを名前で並べ替えます。ユーザーが何千人もいる場合は、レポートを Excel にエクスポートすると、一覧をすばやくフィルター処理できます。
   
-ユーザーのアカウントを入力してから、ユーザーが使っているサービスとその量の一覧を取得すると、レポートを生成できません。
+ユーザーのアカウントを入力してから、ユーザーが使っているサービスとその使用量の一覧を取得すると、レポートを生成できません。
+
+時には新しいユーザーが **不明** と表示される場合もあります。 これは、通常、ユーザー プロファイルの作成がときどき遅延するためです。  
   
 ## <a name="hide-user-details-in-the-reports"></a>レポートでユーザーの詳細を非表示にする
 
 レポートを生成するときに、ユーザー レベルの情報を非表示にする場合は、管理センターで簡単に変更することができます。
   
-1. 管理センターで、 [ **設定** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">サービス&amp;アドイン</a>] ページの順に移動します。
+1. 管理センターで、 [**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">サービス&amp;アドイン</a>] ページの順に移動します。
 
-2. [ **レポート** ] を選択します。 
+2. [**レポート**] を選択します。 
   
-3. [ **レポート** ] ウィンドウで、必要なオプションを選択し、変更を保存します。
+3. [**レポート**] ウィンドウで、必要なオプションを選択し、変更を保存します。
   
 ユーザー リストは次のように表示されます。
   

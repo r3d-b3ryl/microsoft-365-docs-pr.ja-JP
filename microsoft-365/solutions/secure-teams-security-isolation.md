@@ -3,7 +3,7 @@ title: セキュリティの分離を使用してチームを構成する
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487484"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616298"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -50,7 +50,7 @@ ms.locfileid: "48487484"
 
 [![セキュリティの分離ポスター を使用した Microsoft Teams](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) 形式でダウンロードし、レター、リーガル、タブロイド (11 x 17) のサイズの用紙に印刷することもできます。
+このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) または [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
 ## <a name="initial-protections"></a>初期保護
 
@@ -125,7 +125,7 @@ ms.locfileid: "48487484"
 12. **[Office 365 グループに接続されているチーム サイトのプライバシー]** ドロップダウンで、**[非公開 - メンバーのみがサイトにアクセス可能]** を選びます。
 13. ゲスト アクセスを許可する場合は、**[Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする**] チェック ボックスを選択します。 
 14. **[非管理対象デバイス]** で、**[アクセスをブロックする]** を選びます。
-15. [**次へ**] をクリックします。
+15. **[次へ]** をクリックします。
 16. **[Office アプリの自動ラベル付け]** ページで、**[次へ]** をクリックします。
 17. **[送信]** をクリックしてから、**[完了]** をクリックします。
 
@@ -140,7 +140,7 @@ ms.locfileid: "48487484"
 6. [ユーザーとグループに発行] ページで、**[ユーザーとグループの選択]** をクリックします。
 7. **[追加]** をクリックし、作成したチームを選びます。
 8. **[追加]** をクリックし、**[完了]** をクリックします。
-9. [**次へ**] をクリックします。
+9. **[次へ]** をクリックします。
 10. [ポリシーの設定] ページで、**[ユーザーはラベルを削除するか、分類ラベルを下げるために正当な理由を提供する必要がある]** チェック ボックスをオンにし、**[次へ]** をクリックします。
 11. ポリシーの名前を入力し、**[次へ]** をクリックします。
 12. **[送信]** をクリックしてから、**[完了]** をクリックします。
@@ -160,7 +160,7 @@ ms.locfileid: "48487484"
 
 SharePoint では、次の 3 つの手順を実行します。
 
-- ラベルを作成したときに選択したものと一致するように、SharePoint 管理センターでサイトのゲスト共有設定を更新し、*既存のアクセス権を持つユーザー*に対して、既定の共有リンクを更新します。
+- ラベルを作成したときに選択したものと一致するように、SharePoint 管理センターでサイトのゲスト共有設定を更新し、*既存のアクセス権を持つユーザー* に対して、既定の共有リンクを更新します。
 - サイト自体の共有設定を更新し、メンバーがファイル、フォルダー、サイトを共有できないようにし、アクセス要求を無効にします。
 - 閲覧者アクセス許可を持つラベルにユーザーまたはグループを追加した場合は、それらを読み取りアクセス許可を持つ SharePoint サイトに追加できます。
 
@@ -170,8 +170,8 @@ SharePoint では、次の 3 つの手順を実行します。
 
 |ラベルの設定|SharePoint サイトの設定|
 |:------------|:----------------------|
-|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする**が選択されている|**新規および既存のゲスト** (新規チームの既定値)|
-|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする**が選択されていない|**組織内のユーザーのみ**|
+|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする** が選択されている|**新規および既存のゲスト** (新規チームの既定値)|
+|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする** が選択されていない|**組織内のユーザーのみ**|
 
 また、既定の共有リンクの種類を更新して、意図したよりも広い対象ユーザーにファイルやフォルダーが不用意に共有されるリスクを軽減します。
 
@@ -189,7 +189,7 @@ SharePoint では、次の 3 つの手順を実行します。
 チームにプライベート チャネルを追加する場合、各プライベート チャネルは、既定の共有設定を使用して新しい SharePoint サイトを作成します。 これらのサイトは SharePoint 管理センターでは表示されないので、次のパラメーターと共に [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) PowerShell コマンドレットを使用して、ゲスト共有設定を更新する必要があります。
 
 - `-SharingCapability Disabled` ゲスト共有を無効にするには (既定では有効です)
-- `-DefaultSharingLinkType Internal` 既定の共有リンクを*特定のユーザー*に変更するには
+- `-DefaultSharingLinkType Internal` 既定の共有リンクを *特定のユーザー* に変更するには
 
 チームでプライベート チャネルを使用する予定がない場合は、[[チーム設定]](https://support.microsoft.com/office/ce053b04-1b8e-4796-baa8-90dc427b3acc) の **[メンバーのアクセス許可]** で、チーム メンバーがチームを作成する権限を無効にすることを検討してください。
 
@@ -221,7 +221,7 @@ SharePoint サイトがチーム メンバーではないユーザーと共有�
 
 Microsoft 365 は、コンテンツを保護するための追加の方法を提供しています。 次のオプションを使用して、組織のセキュリティを強化することを検討してください。
 
-- ゲスト ユーザーを[使用条件](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)に同意させる。
+- ゲストを[使用条件](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)に同意させる。
 - ゲストに[セッション タイムアウト ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を構成する。
 - [機密情報の種類](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)を作成し、[データ損失防止](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)を使用して、機密情報にアクセスするポリシーを設定する。
 - [Azure Active Directory アクセス](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) レビューを使用して、チームのアクセス権とメンバーシップを定期的に確認する。

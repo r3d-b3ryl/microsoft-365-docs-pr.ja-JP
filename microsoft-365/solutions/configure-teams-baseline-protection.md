@@ -3,7 +3,7 @@ title: ベースライン保護を使用してチームを構成する
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845302"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613444"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -50,11 +50,11 @@ ms.locfileid: "48845302"
 Teams ゲスト アクセスの設定を行うには
 
 1. [https://admin.microsoft.com](https://admin.microsoft.com) で、Microsoft 365 管理センターにログインします。
-2. 左側のナビゲーションで [ **すべて表示** ] をクリックします。
-3. [ **管理センター** ] で、[ **Teams** ] をクリックします。
-4. Teams 管理センターの左側のナビゲーションで、[ **組織全体の設定** ] を展開して [ **ゲスト アクセス** ] をクリックします。
-5. [ **Teams でのゲスト アクセスを許可する** ] が [ **オン** ] に設定されていることを確認します。
-6. 追加のゲスト設定に必要な変更を加えて、[ **保存** ] をクリックします。
+2. 左側のナビゲーションで [**すべて表示**] をクリックします。
+3. [**管理センター**] で、[**Teams**] をクリックします。
+4. Teams 管理センターの左側のナビゲーションで、[**組織全体の設定**] を展開して [**ゲスト アクセス**] をクリックします。
+5. [**Teams でのゲスト アクセスを許可する**] が [**オン**] に設定されていることを確認します。
+6. 追加のゲスト設定に必要な変更を加えて、[**保存**] をクリックします。
 
 > [!NOTE]
 > Teams のゲスト設定をオンにした後、有効になるまでには、最大で 24 時間かかる場合があります。
@@ -63,13 +63,13 @@ Office 365 グループや SharePoint では既定でゲスト共有がオンに
 
 ## <a name="site-and-file-sharing"></a>サイトとファイル共有
 
-誤って組織外のユーザーとファイルやフォルダを共有してしまうリスクを減らすために、SharePoint の既定の共有リンクを [ *自分の組織内のユーザーのみ* ] に変更することをお勧めします。 (ユーザーが外部との共有を行う必要があり、ゲスト共有を有効にしている場合、ユーザーは共有時にリンクの種類を変更することができます。)
+誤って組織外のユーザーとファイルやフォルダを共有してしまうリスクを減らすために、SharePoint の既定の共有リンクを [*自分の組織内のユーザーのみ*] に変更することをお勧めします。 (ユーザーが外部との共有を行う必要があり、ゲスト共有を有効にしている場合、ユーザーは共有時にリンクの種類を変更することができます。)
 
 既定の共有リンクを変更するには
 1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. [ **ポリシー** ] で、[ **共有** ] をクリックします。
-3. [ **ファイルとフォルダーのリンク** ] で、[ **自分の組織内のユーザーのみ** ] を選択します。
-4. [ **保存** ] をクリックします。
+2. [**ポリシー**] で、[**共有**] をクリックします。
+3. [**ファイルとフォルダーのリンク**] で、[**自分の組織内のユーザーのみ**] を選択します。
+4. [**保存**] をクリックします。
 
 最高のゲスト共有エクスペリエンスのために、[SharePoint および OneDrive の Azure AD B2B との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)を有効にすることもお勧めします。
 
@@ -84,17 +84,17 @@ Office 365 グループや SharePoint では既定でゲスト共有がオンに
 アクセス許可の管理をサポートするために、関連付けられたサイトを構成して、所有者のみがサイトを単独で共有できるようにすることをお勧めします。 これにより、アクセス許可の管理が簡素化され、チームの所有者が知らないユーザーによるアクセスを防ぐことができます。 ベースライン保護を必要とするチームごとに、この操作を行います。
 
 サイト共有設定を更新するには
-1. チームのツール バーで、[ **ファイル** ] をクリックします。
-2. [ **SharePoint で開く** ] をクリックします。
-3. SharePoint サイトのツール バーで、設定アイコンをクリックしてから、[ **サイトの権限** ] をクリックします。
-4. [ **サイトの権限** ] ウィンドウで、[ **共有設定** ] の [ **共有設定の変更** ] をクリックします。
-5. [ **共有アクセス許可** ] で、[ **サイトの所有者とメンバー、および編集権限を持つユーザーはファイルとフォルダを共有できますが、サイトを共有できるのはサイト所有者だけです** ] を選択し、[ **保存** ] をクリックします。
+1. チームのツール バーで、[**ファイル**] をクリックします。
+2. [**SharePoint で開く**] をクリックします。
+3. SharePoint サイトのツール バーで、設定アイコンをクリックしてから、[**サイトの権限**] をクリックします。
+4. [**サイトの権限**] ウィンドウで、[**共有設定**] の [**共有設定の変更**] をクリックします。
+5. [**共有アクセス許可**] で、[**サイトの所有者とメンバー、および編集権限を持つユーザーはファイルとフォルダを共有できますが、サイトを共有できるのはサイト所有者だけです**] を選択し、[**保存**] をクリックします。
 
 ## <a name="additional-protections"></a>追加の保護
 
 Microsoft 365 は、コンテンツを保護するための追加の方法を提供しています。 次のオプションを使用して、組織のセキュリティを強化することを検討してください。
 
-- ゲスト ユーザーを[使用条件](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)に同意させる。
+- ゲストを[使用条件](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)に同意させる。
 - ゲストに[セッション タイムアウト ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を構成する。
 - [機密情報の種類](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)を作成し、[データ損失防止](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)を使用して、機密情報にアクセスするポリシーを設定する。
 

@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
-ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202701"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616382"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -117,7 +117,6 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 これらの属性タイプは、Cloud App Security に近日公開されます。
 
 - 機密情報の種類
-
 - Microsoft 365 および Azure Information Protection での統一ラベル
 
 ### <a name="cloud-app-security-dashboard"></a>Cloud App Security ダッシュボード
@@ -142,69 +141,24 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 承認されたクラウド アプリから、クレジット カード番号を含むファイルが共有されたときに警告します。
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>コントロール</strong></th>
-<th align="left"><strong>設定</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">ポリシーの種類</td>
-<td align="left">ファイル ポリシー</td>
-</tr>
-<tr class="even">
-<td align="left">ポリシー テンプレート</td>
-<td align="left">テンプレートなし</td>
-</tr>
-<tr class="odd">
-<td align="left">ポリシーの重要度</td>
-<td align="left">高</td>
-</tr>
-<tr class="even">
-<td align="left">カテゴリ</td>
-<td align="left">DLP</td>
-</tr>
-<tr class="odd">
-<td align="left">フィルター設定</td>
-<td align="left"><p>Access level = Public (Internet), Public, External</p>
-<p>App = &lt;select apps&gt; (特定の SaaS アプリに監視を制限する場合は、この設定を使用します)</p></td>
-</tr>
-<tr class="even">
-<td align="left">適用先</td>
-<td align="left">すべてのファイル、すべての所有者</td>
-</tr>
-<tr class="odd">
-<td align="left">内容の検査</td>
-<td align="left"><p>現在の式に一致するファイルを含む: All countries: Finance: Credit card number</p>
-<p>関連するコンテキストを必要としない: オフ (これはキーワードと正規表現に一致します)</p>
-<p>1 つでも一致するファイルを含む</p>
-<p>違反の最後の 4 文字をマスク解除する: オン</p></td>
-</tr>
-<tr class="even">
-<td align="left">アラート</td>
-<td align="left"><p>一致するファイルごとにアラートを作成する: オン</p>
-<p>1 日のアラート制限: 1000</p>
-<p>電子メールとしてアラートを選択する: オン</p>
-<p>宛先: infosec@contoso.com</p></td>
-</tr>
-<tr class="odd">
-<td align="left">ガバナンス</td>
-<td align="left"><p>Microsoft OneDrive for Business</p>
-<p>非公開にする: 外部ユーザーの削除をオン</p>
-<p>その他のすべての設定: オフ</p>
-<p>Microsoft SharePoint Online</p>
-<p>非公開にする: 外部ユーザーの削除をオン</p>
-<p>その他のすべての設定: オフ</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|コントロール|設定|
+|---|---|
+|ポリシーの種類|ファイル ポリシー|
+|ポリシー テンプレート|テンプレートなし|
+|ポリシーの重要度|高|
+|カテゴリ|DLP|
+|フィルター設定|Access level = Public (Internet), Public, External <p> App = \<select apps\> (特定の SaaS アプリに監視を制限する場合は、この設定を使用します)|
+|適用先|すべてのファイル、すべての所有者|
+|内容の検査|現在の式に一致するファイルを含む: All countries: Finance: Credit card number <p> 関連するコンテキストを必要としない: オフ (これはキーワードと正規表現に一致します) <p> 1 つでも一致するファイルを含む <p> 違反の最後の 4 文字をマスク解除する: オン|
+|アラート|一致するファイルごとにアラートを作成する: オン <p> 1 日のアラート制限: 1000 <p> 電子メールとしてアラートを選択する: オン <p> 宛先: infosec@contoso.com|
+|ガバナンス|Microsoft OneDrive for Business <p> 非公開にする: 外部ユーザーの削除をオン <p> その他のすべての設定: オフ <p> Microsoft SharePoint Online <p> 非公開にする: 外部ユーザーの削除をオン <p> その他のすべての設定: オフ|
+|
 
 類似のポリシー:
 
 - PII (メール アドレス) を含むファイルの共有を検出する
-
 - PII (パスポート番号) を含むファイルの共有を検出する
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Box for Business または OneDrive for Business の顧客データや人事データを検出する
@@ -214,64 +168,23 @@ OneDrive for Business または Box for Business に Customer Data (顧客デー
 注:
 
 - Box の監視では、API Connector SDK を使用してコネクタを設定する必要があります。
-
 - このポリシーには、現在プライベート プレビューになっている機能が必要です。
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>コントロール</strong></th>
-<th align="left"><strong>設定</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">ポリシーの種類</td>
-<td align="left">アクティビティ ポリシー</td>
-</tr>
-<tr class="even">
-<td align="left">ポリシー テンプレート</td>
-<td align="left">テンプレートなし</td>
-</tr>
-<tr class="odd">
-<td align="left">ポリシーの重要度</td>
-<td align="left">高</td>
-</tr>
-<tr class="even">
-<td align="left">カテゴリ</td>
-<td align="left">制御を共有</td>
-</tr>
-<tr class="odd">
-<td align="left">操作対象</td>
-<td align="left">1 つのアクティビティ</td>
-</tr>
-<tr class="even">
-<td align="left">フィルター設定</td>
-<td align="left"><p>アクティビティの種類 = ファイルのアップロード</p>
-<p>アプリ = Microsoft OneDrive for Business および Box</p>
-<p>分類ラベル (現在はプライベート プレビュー): Azure Information Protection = 顧客データ、人事—給与データ、人事—従業員データ</p></td>
-</tr>
-<tr class="odd">
-<td align="left">アラート</td>
-<td align="left"><p>アラートを作成する: オン</p>
-<p>1 日のアラート制限: 1000</p>
-<p>電子メールとしてアラートを選択する: オン</p>
-<p>宛先: infosec@contoso.com</p></td>
-</tr>
-<tr class="even">
-<td align="left">ガバナンス</td>
-<td align="left"><p>すべてのアプリ</p>
-<p>ユーザーを検疫に入れる: オン</p>
-<p>その他のすべての設定: オフ</p>
-<p>Office 365</p>
-<p>ユーザーを検疫に入れる: オン</p>
-<p>その他のすべての設定: オフ</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|コントロール|設定|
+|---|---|
+|ポリシーの種類|アクティビティ ポリシー|
+|ポリシー テンプレート|テンプレートなし|
+|ポリシーの重要度|高|
+|カテゴリ|制御を共有|
+|操作対象|1 つのアクティビティ|
+|フィルター設定|アクティビティの種類 = ファイルのアップロード <p> アプリ = Microsoft OneDrive for Business および Box <p> 分類ラベル (現在はプライベート プレビュー): Azure Information Protection = 顧客データ、人事—給与データ、人事—従業員データ|
+|アラート|アラートを作成する: オン <p> 1 日のアラート制限: 1000 <p> 電子メールとしてアラートを選択する: オン <p> 宛先: infosec@contoso.com|
+|ガバナンス|すべてのアプリ <p> ユーザーを検疫に入れる: オン <p> その他のすべての設定: オフ <p> Office 365 <p> ユーザーを検疫に入れる: オン <p> その他のすべての設定: オフ|
+|
 
 類似のポリシー:
 
 - 顧客データや人事データの大量ダウンロードを検出する — 顧客データや人事データを含む多数のファイルが、単一ユーザーによって短時間にダウンロードされたことが検出されたときに警告します。
-
 - 顧客および人事データの共有を検出する — 顧客または人事データを含むファイルが共有されたときに警告します。
