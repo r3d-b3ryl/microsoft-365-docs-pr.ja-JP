@@ -2,8 +2,8 @@
 title: Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -14,94 +14,94 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
-description: 高度な電子情報開示を使用してデータを分析し、ドキュメントレビューを合理化し、効率的な電子情報開示に関する決定を行う方法について説明します。
-ms.openlocfilehash: 231064266a2498ec2eb8845da325fba6e5cfeb76
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Advanced eDiscovery が、データの分析、ドキュメント レビューの合理化、効率的な電子情報開示のための決定を行う上でどのように役立つのかについて説明します。
+ms.openlocfilehash: f8ada5d377e72516ea42d8c5dc5680573daec717
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649714"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662822"
 ---
 # <a name="advanced-ediscovery-classic"></a>Advanced eDiscovery (クラシック)
 
 > [!IMPORTANT]
-> **上級電子情報開示 (クラシック) は、2020年12月31日に完全に廃止されます。**<br/>
-> 高度な電子情報開示の新しいバージョンへの投資を継続するうちに、microsoft は、高度な電子情報開示 (クラシック) からのケースとケースデータの完全な廃止および削除を発表しています。
-> 上級電子情報開示 (クラシック) ( *上級電子*情報開示とも呼ばれる) を引き続き使用している場合は、できるだけ早く、使用状況を [advanced](overview-ediscovery-20.md) ediscovery v2.0 ( *Microsoft 365 の高度な電子情報開示ソリューション*ともいいます) に移行してください。  すべてのケースとケースデータの削除の準備では、ケース [からデータをエクスポート](https://docs.microsoft.com/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide)することによってケースデータをアーカイブできます。
-> 上級電子情報開示 v2.0 では、Advanced eDiscovery v2.0 と同様の機能が含まれていますが、保管担当者管理、コミュニケーション管理、およびレビューセットなどの多くの新機能も提供しています。 Advanced eDiscovery v2.0 の以前の retirment フェーズの詳細については、「 [従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)」を参照してください。
+> **Advanced eDiscovery (クラシック) は、2020 年 12 月 31 日に完全に廃止されます。**<br/>
+> 新しいバージョンの Advanced eDiscovery に投資し続ける中で、Advanced eDiscovery (クラシック) からのケースとケース データの完全な削除と削除を発表します。
+> Advanced eDiscovery (クラシック) *(Advanced eDiscovery v1.0* とも呼ばれる) をまだ使用している場合は、使用を [Advanced eDiscovery v2.0](overview-ediscovery-20.md) *(Microsoft 365* の Advanced eDiscovery ソリューションとも呼ばれる) にできるだけ早く移行してください。  すべてのケースとケース データを削除する準備として、ケースからデータをエクスポートすることで、ケース [データをアーカイブできます](https://docs.microsoft.com/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide)。
+> Advanced eDiscovery v2.0 には、Advanced eDiscovery v1.0 と同様の機能が含まれるだけでなく、保管担当者の管理、通信管理、レビュー セットなどの多くの新機能も提供されます。 Advanced eDiscovery v1.0 の以前の廃止フェーズの詳細については、「従来の電子情報開示ツールの廃止」 [を参照してください](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。
 
-高度な電子情報開示を使用すると、データの理解を深め、電子情報開示コストを削減できます。 高度な電子情報開示を使用すると、非構造化データの分析、ドキュメントレビューの効率化、電子情報開示のためのデータの削減に関する決定を行うことができます。 Exchange Online、SharePoint Online、OneDrive for Business、Skype for Business、Microsoft 365 グループ、および Microsoft Teams に格納されているデータを操作できます。 セキュリティ/コンプライアンスセンターで電子情報開示検索を実行して、グループ、個々のメールボックス、サイト内のコンテンツを検索し、高度な電子情報開示を使用して検索結果を分析することができます。 高度な電子情報開示で分析のために検索結果を準備する場合、光学式文字認識で画像からテキストを抽出することができます。 この機能により、高度な電子情報開示の強力なテキスト分析機能を画像ファイルに適用することができます。
+Advanced eDiscovery を使用すると、データをよりよく理解し、電子情報開示のコストを削減できます。 Advanced eDiscovery は、非構造化データの分析、より効率的なドキュメント レビューの実行、および電子情報開示のデータ削減に関する決定を行うのに役立ちます。 Exchange Online、SharePoint Online、OneDrive for Business、Skype for Business、Microsoft 365 グループ、および Microsoft Teams に保存されているデータを使用できます。 セキュリティ/コンプライアンス センターで電子情報開示検索を実行して、グループ、個々のメールボックス、サイト内のコンテンツを検索し、Advanced eDiscovery を使用して検索結果を分析できます。 Advanced eDiscovery で分析用に検索結果を準備すると、光学式文字認識によって画像からテキストを抽出できます。 この機能を使用すると、Advanced eDiscovery の強力なテキスト分析機能を画像ファイルに適用できます。
   
-高度な電子情報開示では、同一の重複を検出し、電子メールスレッド分析などの機能を使用して、重複する情報を特定することで、ドキュメントのレビュープロセスを効率化し、スピードアップします 関連性機能は、予測コーディングテクノロジを適用して、関連するドキュメントを特定します。 高度な電子情報開示は、サンプルドキュメントでのタグ付けの決定から学んで、統計情報と自己学習技術を適用して、データセット内の各ドキュメントの関連性を計算します。 これにより、主要なドキュメントに集中して、必要な場合について迅速に判断し、データをカリングし、レビューの優先順位付けを行うことができます。
+Advanced eDiscovery は、近重複データ検出や電子メール スレッド分析のような機能を使用して冗長な情報を識別することで、ドキュメントレビュー プロセスを合理化し、高速化します。 関連性機能は、関連するドキュメントを識別するための予測コーディング テクノロジを適用します。 Advanced eDiscovery は、サンプル ドキュメントに関するタグ付けの決定から学習し、データ セット内の各ドキュメントの関連性を計算するために統計および自己学習の手法を適用します。 これにより、主要なドキュメントに焦点を当てたり、ケース戦略に関する迅速かつ情報に基づいた意思決定を行い、データをカカル処理し、レビューに優先順位を付けすることができます。
   
- **高度な電子情報開示が理由** 高度な電子情報開示は、Office 365 の既存の電子情報開示機能のセットに基づいて構築されます。 たとえば、セキュリティコンプライアンスセンターの検索機能を使用して、 &amp; 組織内のすべてのコンテンツソースの最初の検索を実行し、特定の訴訟に関連する可能性があるデータを識別して収集できます。 その後、高度な電子情報開示のためのテキスト分析、マシン学習、および関連性/予測のコーディング機能を適用することによって、そのデータに対する分析を実行できます。 これにより、組織は、多数の電子メールメッセージ、ドキュメント、およびその他の種類のデータをすばやく処理して、特定のアイテムに関連している可能性の高いものを見つけることができます。 
+ **Advanced eDiscovery を使用する理由** Advanced eDiscovery は、Office 365 の既存の一連の電子情報開示機能に基Officeされています。 たとえば、セキュリティ コンプライアンス センターの検索機能を使用して、組織内のすべてのコンテンツ ソースの初期検索を実行し、特定の法的事例に関連する可能性のあるデータを特定して収集できます。 &amp; その後、Advanced eDiscovery のテキスト分析、機械学習、および関連性/予測コーディング機能を適用することで、そのデータに関する分析を実行できます。 これにより、組織は何千もの電子メール メッセージ、ドキュメント、その他の種類のデータを迅速に処理し、特定のアイテムに最も関連する可能性が高いアイテムを見つけるのに役立ちます。 
  
 > [!NOTE]
-> 高度な電子情報開示では、組織の高度なコンプライアンスアドオンまたは E5 サブスクリプションに Office 365 E3 が必要です。 その計画がなく、高度な電子情報開示を試行する必要がある場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。 当て. その後、削減されたデータセットは、さらなるレビューのために Office 365 からエクスポートすることができます。 
+> Advanced eDiscovery には、Advanced Compliance Office付き 365 E3 または組織の E5 サブスクリプションが必要です。 If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 大文字と小文字を区別します。 その後、縮小されたデータ セットを 365 からエクスポートOffice、詳細を確認できます。 
   
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>概要
 
-高度な電子情報開示を開始する最も簡単な方法は、ケースを作成して、セキュリティ & コンプライアンスセンターで検索結果を準備し、それらの結果を高度な電子情報開示にロードして、そのケースデータを分析してから、外部レビューの結果をエクスポートするためのエクスプレス分析を実行することです。
+Advanced eDiscovery を使い始める最も簡単な方法は、ケースを作成し、セキュリティ & コンプライアンス センターで検索結果を準備し、それらの結果を Advanced eDiscovery に読み込み、高速分析を実行してケース データを分析し、外部レビューの結果をエクスポートすることです。
   
-- 高度な電子情報開示ワークフローの[簡単な概要を取得する](quick-setup-for-advanced-ediscovery.md) 
+- Advanced eDiscovery[ワークフローの](quick-setup-for-advanced-ediscovery.md)概要を簡単に説明する 
     
-- セキュリティ & コンプライアンスセンターを使用して、ケースの作成、電子情報開示のアクセス許可の割り当て、ケースメンバーの追加を行うことで、高度な電子情報開示の[ユーザーおよびケースをセットアップ](set-up-users-and-cases-in-advanced-ediscovery.md)する 
+- [ケースの作成](set-up-users-and-cases-in-advanced-ediscovery.md) 、電子情報開示のアクセス許可の割り当て、ケース メンバーの追加を行って、Advanced eDiscovery のユーザーとケースをセットアップします。すべては、セキュリティ/コンプライアンス センター&使用します。 
     
-- 高度な電子情報開示のケースへの[検索データの準備と読み込み](prepare-data-for-advanced-ediscovery.md) 
+- Advanced eDiscovery[のケースに](prepare-data-for-advanced-ediscovery.md)検索データを準備して読み込む 
     
-- [Office 以外の365データ](import-non-office-365-data-into-advanced-ediscovery.md) をケースに読み込み、高度な電子情報開示で分析する 
+- Advanced eDiscovery[でOffice 365](import-non-office-365-data-into-advanced-ediscovery.md)以外のデータをケースに読み込む 
     
-- [エクスプレス分析を使用](use-express-analysis-in-advanced-ediscovery.md) してデータをケースにすばやく分析し、結果を簡単にエクスポートする 
+- [高速分析を使用](use-express-analysis-in-advanced-ediscovery.md) してケース内のデータをすばやく分析し、結果を簡単にエクスポートする 
     
 ## <a name="analyze-data"></a>データを分析する
 
-高度な電子情報開示のケースに検索データが読み込まれたら、Analyze モジュールを使用して分析を開始します。 分析プロセスの最初の部分では、ファイルを一意のファイルのグループに分類し、重複して、重複しないようにします (ドキュメントの類似性とも呼ばれます)。 その後、データを再編成して、階層構造の電子メールのスレッドとテーマをグループ化し、オプションで、特定のテキストを分析から除外するように無視するテキストフィルターを設定します。 次に、分析を実行し、結果を表示します。
+Advanced eDiscovery のケースに検索データが読み込まれたら、分析モジュールを使用して分析を開始します。 分析プロセスの最初の部分は、ファイルを一意のファイル、重複、および類似度 (ドキュメントの類似性) のグループに整理します。 次に、データを再び電子メール スレッドとテーマの階層構造のグループに整理し、必要に応じて、テキスト フィルターを無視して分析から特定のテキストを除外するように設定します。 次に、分析を実行し、結果を表示します。
   
-- 詳細な電子情報開示でのデータの分析を準備するための[ドキュメントの類似](understand-document-similarity-in-advanced-ediscovery.md)点について 
+- Advanced eDiscovery[でデータ](understand-document-similarity-in-advanced-ediscovery.md)を分析するための準備をするためのドキュメントの類似性について説明します 
     
-- ほぼ重複、テーマ、および電子メールのスレッド処理の[オプションを設定](set-analyze-options-in-advanced-ediscovery.md)してから、Analyze モジュールを実行します。 
+- [ほぼ重複、テーマ](set-analyze-options-in-advanced-ediscovery.md) 、および電子メールスレッドのオプションを設定し、分析モジュールを実行します。 
     
-- テキストおよびテキスト文字列を分析対象から除外するように、[無視するテキストフィルターを設定](set-ignore-text-in-advanced-ediscovery.md)します。このフィルターでは、関連性分析を実行するときにもテキストは無視されます。 
+- [[テキストの無視] フィルターを設定](set-ignore-text-in-advanced-ediscovery.md) して、テキスト文字列とテキスト文字列を分析対象から除外します。これらのフィルターは、関連性分析の実行時にもテキストを無視します。 
     
-- 分析プロセスの[結果を表示する](view-analyze-results-in-advanced-ediscovery.md) 
+- [分析プロセスの](view-analyze-results-in-advanced-ediscovery.md) 結果を表示する 
     
-- 分析プロセスの[詳細設定を構成する](set-analyze-advanced-settings-in-advanced-ediscovery.md) 
+- [分析プロセスの詳細設定](set-analyze-advanced-settings-in-advanced-ediscovery.md) を構成する 
     
 ## <a name="set-up-relevance-training"></a>関連トレーニングの設定
 
-上級電子情報開示の予測コーディング (関連性と呼ばれる) を使用すると、ドキュメントの小さなセットに対して意思決定 (関連性があるかどうかに関する決定) を行うことができます。
+Advanced eDiscovery の予測コーディング (関連性と呼ばれる) を使用すると、ドキュメントの小さなセットで (関連性のあるものかどうかに関して) 判断を下せ、探している情報に関するシステムをトレーニングできます。
   
-- 関連性トレーニングのセットアップ、ケースに関連するタグ付けファイル、ケース問題の定義[について説明](manage-relevance-setup-in-advanced-ediscovery.md)します。 
+- [関連トレーニングの設定、ケース](manage-relevance-setup-in-advanced-ediscovery.md) に関連するファイルのタグ付け、ケースの問題の定義について説明します。 
     
-- [ケースの問題を定義](define-issues-and-assign-users.md) し、各問題をファイルをトレーニングするユーザーに割り当てる 
+- [ケースの問題を定義し](define-issues-and-assign-users.md) 、ファイルをトレーニングするユーザーに各問題を割り当てる 
     
-- インポートされたファイルを、関連トレーニングに追加する[現在のまたは新しい負荷に追加](set-up-loads-to-add-imported-files.md)します。 ロードは、ケースに追加され、関連トレーニングに使用されるファイルの新しいバッチです。 
+- [関連性トレーニングに追加される現在または](set-up-loads-to-add-imported-files.md) 新しい負荷にインポートしたファイルを追加します。 読み込みとは、ケースに追加され、関連性トレーニングに使用されるファイルの新しいバッチです。 
     
-- 関連性トレーニングに追加できる[強調表示](define-highlighted-keywords-and-advanced-options.md)されたキーワードを定義します。 これにより、ケースに関連するファイルを特定しやすくなります。 
+- [関連性トレーニングに追加](define-highlighted-keywords-and-advanced-options.md) できる強調表示されたキーワードを定義します。 これにより、ケースに関連するファイルをより適切に識別できます。 
     
 ## <a name="run-the-relevance-module"></a>関連性モジュールを実行する
 
-トレーニングを設定すると、関連性モジュールを実行し、トレーニング設定の有効性を評価できます。 これにより、追加のトレーニングを実行する必要があるかどうかを判断したり、ケースに関連してファイルのタグ付けを開始する準備が整っているかどうかを判断したりするのに役立つ関連性ランキングが得られます。
+トレーニングをセットアップした後、関連性モジュールを実行し、トレーニング設定の有効性を評価する準備が整いました。 これにより、追加のトレーニングを実行する必要がある場合や、ケースに関連するファイルのタグ付けを開始する準備ができているかを判断するのに役立つ関連性ランキングが作成されます。
   
-- サンプルのファイルセットに基づいた評価、タグ付け、追跡、再トレーニングの関連性プロセスと反復プロセス[について説明](use-relevance-in-advanced-ediscovery.md)します。 
+- [ファイルのサンプル セットに基づく](use-relevance-in-advanced-ediscovery.md) 評価、タグ付け、追跡、再トレーニングの関連性プロセスと反復プロセスについて説明します。 
     
-- ケースに精通したエキスパートがケースファイルのセットをレビューし、関連性トレーニングの効果を判断する[評価について説明](assessment-in-relevance-in-advanced-ediscovery.md)します。 
+- [ケースに精通している](assessment-in-relevance-in-advanced-ediscovery.md) 専門家が一連のケース ファイルをレビューし、関連性トレーニングの有効性を判断する評価について説明します 
     
-- [ケースファイルを評価](tagging-and-assessment-in-advanced-ediscovery.md) して、トレーニング設定の有効性 (* 多様性) を計算し、ケースに関連するファイルまたは関連しないファイルにタグ付けします。 これにより、現在のトレーニングが十分かどうか、またはトレーニングの設定を調整する必要があるかどうかを判断できます。 
+- [ケース ファイルを評価](tagging-and-assessment-in-advanced-ediscovery.md) してトレーニング設定の有効性 (*リッチと呼ばれる) を計算し、ファイルに関連するタグまたはケースに関連しないタグを付ける。 これにより、現在のトレーニングで十分かどうかを判断したり、トレーニング設定を調整する必要がある場合に役立ちます。 
     
-- 評価が完了した後に[関連性トレーニングを実行](tagging-and-relevance-training-in-advanced-ediscovery.md)し、そのケースに対して定義した問題に関連するファイルまたは関連していないファイルに再度タグ付けする 
+- [評価の完了後に](tagging-and-relevance-training-in-advanced-ediscovery.md) 関連性トレーニングを実行し、もう一度ファイルに関連するタグを付けるか、ケースに対して定義した問題に関連しないかのタグを付ける 
     
-- 関連性[の分析プロセスを追跡して、](track-relevance-analysis-in-advanced-ediscovery.md)関連性トレーニングが評価目標を達成したか (* stable トレーニング状態)、またはさらにトレーニングが必要かどうかを判断します。各ケースの問題に関する関連性の結果を表示することもできます。 
+- [関連性分析プロセスを](track-relevance-analysis-in-advanced-ediscovery.md) 追跡して、関連性トレーニングが評価目標 (*安定したトレーニング状態と呼ばれる) を達成したかどうか、またはより多くのトレーニングが必要かどうかを判断します。また、各ケースの問題の関連性の結果を表示できます。 
     
-- レビュー用にエクスポートできるケースファイルの結果セットのサイズを決定するために、[関連性分析に基づいて決定を行い](decision-based-on-the-results-in-advanced-ediscovery.md)ます。 
+- [関連性分析に基づいて](decision-based-on-the-results-in-advanced-ediscovery.md) 決定を行い、レビューのためにエクスポートできるケース ファイルの結果セットのサイズを決定する 
     
-- 関連性[分析の品質をテスト](test-relevance-analysis-in-advanced-ediscovery.md)して、関連性プロセス中に行われたカリングの決定を検証する 
+- [関連性分析の品質をテストして](test-relevance-analysis-in-advanced-ediscovery.md) 、関連性プロセス中に行われたカリングの決定を検証する 
     
-## <a name="export-results"></a>結果のエクスポート
+## <a name="export-results"></a>結果をエクスポートする
 
-Advanced eDiscovery でケースデータを分析する最後の手順は、外部レビューの分析結果をエクスポートすることです。
+Advanced eDiscovery でケース データを分析する最後の手順は、外部レビュー用に分析の結果をエクスポートすることです。
   
-- [ケースデータのエクスポートについて](export-case-data-in-advanced-ediscovery.md)
+- [ケース データのエクスポートについて](export-case-data-in-advanced-ediscovery.md)
     
 - [ケース データをエクスポートする](export-results-in-advanced-ediscovery.md)
     
@@ -109,12 +109,12 @@ Advanced eDiscovery でケースデータを分析する最後の手順は、外
     
 - [レポート フィールドのエクスポート](export-report-fields-in-advanced-ediscovery.md)
     
-## <a name="other-advanced-ediscovery-tools"></a>その他の高度な電子情報開示ツール
+## <a name="other-advanced-ediscovery-tools"></a>その他の Advanced eDiscovery ツール
 
-Advanced eDiscovery は、ケースデータの分析、関連性分析、データのエクスポート以外に、追加のツールと機能を提供します。
+Advanced eDiscovery には、ケース データの分析、関連性分析、およびデータのエクスポート以外にも、追加のツールと機能が用意されています。
   
-- [高度な電子情報開示レポートを実行する](run-reports-in-advanced-ediscovery.md)
+- [Advanced eDiscovery レポートを実行する](run-reports-in-advanced-ediscovery.md)
     
 - [ケースとテナントの設定を定義する](define-case-and-tenant-settings-in-advanced-ediscovery.md)
     
-- [高度な電子情報開示ユーティリティ](use-advanced-ediscovery-utilities.md)
+- [Advanced eDiscovery ユーティリティ](use-advanced-ediscovery-utilities.md)

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
-ms.openlocfilehash: ce8a982b875632ad58b34ae240c02b507c4656fe
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 137937b106be9ce0cf782a84b988913e2c6dac4b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021063"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615722"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -53,11 +53,11 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 
 - カスタム ドメインの現在の SPF TXT レコード。手順に関しては、「[Office 365 の DNS レコードの作成に必要な情報を収集する](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records)」をご覧ください。
 
-- すべてのオンプレミス メッセージ サーバーの外部 IP アドレス。たとえば、 **131.107.2.200** などです。
+- すべてのオンプレミス メッセージ サーバーの外部 IP アドレス。たとえば、**131.107.2.200** などです。
 
 - SPF TXT レコードに含める必要があるサードパーティ製のすべてのドメインに使用するドメイン名。一部のバルク メール プロバイダーは、顧客用のサブドメインを設定しています。たとえば、会社 MailChimp に **servers.mcsv.net** を設定するなどです。
 
-- SPF TXT レコードで使う強制ルールを決定します。 **-all** をお勧めします。その他の構文オプションについて詳しくは、「 [Office 365 用の SPF TXT レコードの構文](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)」をご覧ください。
+- SPF TXT レコードで使う強制ルールを決定します。**-all** をお勧めします。その他の構文オプションについて詳しくは、「[Office 365 用の SPF TXT レコードの構文](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)」をご覧ください。
 
 ### <a name="to-add-or-update-your-spf-txt-record"></a>SPF TXT レコードを追加または更新するには
 
@@ -69,11 +69,11 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
    |---|---|---|---|
    |1|いずれかの電子メール システム (必須)|共通。この値で始まるすべての SPF レコード|`v=spf1`|
    |2|Exchange Online|共通|`include:spf.protection.outlook.com`|
-   |3|Exchange Online 専用のみ|共通ではない|`ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com`|
+   |3|Exchange Online 専用のみ|共通ではない|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
    |4|Office 365 Germany、Microsoft Cloud Germany のみ|共通ではない|`include:spf.protection.outlook.de`|
-   |5|サード パーティ製の電子メール システム|共通ではない|`include:<domain_name>`  <br/> \<domain_name\> は、サード パーティ製の電子メール システムのドメイン名です。|
-   |6|オンプレミスの電子メール システム。たとえば、Exchange Online Protection と別のメール システム|共通ではない|各追加メール システムで次のいずれかを使用します。 <br> `ip4:<IP_address>` <br/> `ip6:<IP_address>` <br/> `include:<domain_name>` <br/> \<IP_address\> と \<domain_name\> は、ドメインの代理としてメールを送信する他のメールシステムの IP アドレスとドメインです。|
-   |7|いずれかの電子メール システム (必須)|共通。この値で終わるすべての SPF レコード|`<enforcement rule>` <br/> これは、いくつかの値のどれか 1 つかもしれません。 値 ``-all` をお勧めします。|
+   |5|サード パーティ製の電子メール システム|共通ではない|`include:<domain_name>` <p> \<domain_name\> は、サード パーティ製の電子メール システムのドメインです。|
+   |6|オンプレミスの電子メール システム。たとえば、Exchange Online Protection と別のメール システム|共通ではない|各追加メール システムで次のいずれかを使用します。 <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> と \<domain_name\> は、ドメインの代理としてメールを送信する他のメールシステムの IP アドレスとドメインです。|
+   |7|いずれかの電子メール システム (必須)|共通。この値で終わるすべての SPF レコード|`<enforcement rule>` <p> これは、いくつかの値のどれか 1 つかもしれません。 値 `-all` をお勧めします。|
    |
 
 2. まだ行っていない場合は、表の構文を使用して SPF TXT レコードを作成します。

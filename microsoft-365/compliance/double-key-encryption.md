@@ -1,6 +1,6 @@
 ---
 title: 二重キー暗号化 (DKE)
-description: DKE を使用すると、キーのフルコントロールを維持しながら、機密性の高いデータを保護することができます。
+description: DKE を使用すると、キーのフル コントロールを維持しながら、機密性の高いデータを保護できます。
 author: kccross
 ms.author: krowley
 manager: laurawi
@@ -12,112 +12,112 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 39d7933014f1dc71f8c94e467954d36ede4fb451
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9607b095ba073229edae43c1d2f0e893db07c634
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277537"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663092"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Microsoft 365 の二重キー暗号化
 
-> *適用対象: Microsoft 365、 [microsoft 365 コンプライアンス](https://www.microsoft.com/microsoft-365/business/compliance-management)、 [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)の二重キー暗号化*
+> *適用対象: Microsoft 365 の二重キー暗号化 [、Microsoft 365 コンプライアンス](https://www.microsoft.com/microsoft-365/business/compliance-management)[、Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *手順: [Azure Information Protection を使用した Windows 用の統一されたラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *手順: [Windows 用 Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *サービスの説明: [Microsoft 365 コンプライアンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-二重キー暗号化 (DKE) は、2つのキーを一緒に使用して、保護されたコンテンツにアクセスします。 Microsoft は Microsoft Azure に1つのキーを格納し、もう1つのキーを保持します。 キーの1つの完全な制御は、二重キー暗号化サービスを使用して管理します。 機密性の高いコンテンツに対して Azure Information Protection のユニファイドラベルクライアントを使用して保護を適用します。
+二重キー暗号化 (DKE) では、2 つのキーを組み合わせて使用して、保護されたコンテンツにアクセスします。 Microsoft は 1 つのキーを Microsoft Azure に保存し、もう一方のキーを保持します。 Double Key Encryption サービスを使用して、キーの 1 つを完全に制御します。 Azure Information Protection 統合ラベル付けクライアントを使用して、機密性の高いコンテンツに保護を適用します。
 
-二重キー暗号化は、クラウドとオンプレミスの両方の展開をサポートしています。 これらの展開は、保護されたデータを格納する際に、暗号化されたデータが透過的であるようにするのに役立ちます。
+二重キー暗号化は、クラウドとオンプレミスの両方の展開をサポートします。 これらの展開は、保護されたデータを保存する場所で暗号化されたデータが不透明なままに維持されるのに役立ちます。
 
-既定のクラウドベースのテナントルートキーの詳細については、「 [Azure Information Protection のテナントキーを計画および実装](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)する」を参照してください。
+既定のクラウドベースのテナント ルート キーの詳細については [、「Azure Information Protection](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)テナント キーの計画と実装」を参照してください。
 
-## <a name="when-your-organization-should-adopt-dke"></a>組織で DKE を導入する必要がある場合
+## <a name="when-your-organization-should-adopt-dke"></a>組織で DKE を採用する必要が生じ
 
-二重キー暗号化は、最も機密性の高いデータを対象としたもので、最も厳しい保護要件が適用されます。 DKE は、すべてのデータを対象としたものではありません。 一般的には、データ全体を保護するために、2つのキー暗号化を使用します。 を展開する前に、このソリューションでカバーする適切なデータを特定することによって慎重に行う必要があります。 場合によっては、microsoft の管理キーや BYOK による Microsoft 情報保護など、データの大部分について、スコープの絞り込みと他のソリューションの利用が必要になることがあります。 これらのソリューションは、強化された保護と規制の要件を満たしていないドキュメントに十分です。 また、これらのソリューションにより、最も強力な Office 365 サービスを使用できます。DKE 暗号化されたコンテンツでは使用できないサービス。 例:
+二重キー暗号化は、最も厳しい保護要件の対象となる最も機密性の高いデータを対象とします。 DKE は、すべてのデータを対象としているのではありません。 一般に、Double Key Encryption を使用して、データ全体の一部のみを保護します。 展開する前に、このソリューションでカバーする適切なデータを特定する上で注意を引く必要があります。 場合によっては、Microsoft が管理するキーや BYOK を使用した Microsoft Information Protection など、データの大部分に対して範囲を絞り込み、その他のソリューションを利用する必要があります。 これらのソリューションは、強化された保護と規制要件の対象ではないドキュメントでは十分です。 また、これらのソリューションを使用すると、最も強力な Office 365 サービスを使用できます。DKE で暗号化されたコンテンツでは使用できないサービス。 例:
 
-- 添付ファイルの表示が必要なマルウェア対策およびスパムを含むトランスポートルール
+- 添付ファイルの可視性が必要なマルウェア対策とスパムを含むトランスポート ルール
 - Microsoft Delve
 - 電子情報開示
 - コンテンツ検索とインデックス作成
-- 共同編集機能を含む Office Web Apps
+- Office機能を含む Web アプリの作成
 
-MIP SDK を介して DKE に統合されていない外部アプリケーションまたはサービスは、暗号化されたデータに対してアクションを実行できません。
+MIP SDK を介して DKE と統合されていない外部アプリケーションまたはサービスは、暗号化されたデータに対してアクションを実行できません。
 
-Microsoft Information Protection SDK 1.7 以降では、2倍のキー暗号化がサポートされています。SDK と統合されたアプリケーションは、十分なアクセス許可と統合によって、このデータを理由にすることができます。
+Microsoft Information Protection SDK 1.7+ は、二重キー暗号化をサポートしています。SDK と統合するアプリケーションは、十分なアクセス許可と統合を適用して、このデータを理由にできます。
 
-Microsoft の情報保護機能 (分類とラベル付け) を使用して、機密データの大部分を保護し、ミッションクリティカルなデータに対して DKE のみを使用することをお勧めします。 二重キー暗号化は、金融サービスや医療などの高度に規制された業界の非常に機密性の高いデータに特に関連しています。
+組織では、Microsoft 情報保護機能 (分類とラベル付け) を使用して機密データのほとんどを保護し、ミッション クリティカルなデータにのみ DKE を使用することをお勧めします。 二重キー暗号化は、金融サービスや医療などの厳しく規制された業界の非常に機密性の高いデータに特に関連します。
 
 組織に次の要件がある場合は、DKE を使用してコンテンツをセキュリティで保護できます。
 
-- すべての状況で保護されたコンテンツの暗号化を *解除できるよう* にする必要があります。
-- 保護されたデータへのアクセス権を Microsoft に付与しないようにします。
-- 地理的な境界内にキーを保持する規制要件があります。 データの暗号化と復号化に使用するすべてのキーは、データセンターに保持されます。
+- すべての状況で、 *保護* されたコンテンツの暗号化を解除できるのは自分だけである必要があります。
+- Microsoft が独自に保護されたデータにアクセスしたくはない。
+- 地理的境界内にキーを保持する規制要件があります。 データの暗号化と暗号化解除のために保持するキーはすべて、データ センターで保持されます。
 
-## <a name="system-and-licensing-requirements-for-dke"></a>DKE のシステムおよびライセンスの要件
+## <a name="system-and-licensing-requirements-for-dke"></a>DKE のシステム要件とライセンス要件
 
-**Microsoft 365 の二重キー暗号化には** 、Microsoft 365 E5 および Office 365 E5 が付属しています。 Microsoft 365 E5 ライセンスを持っていない場合は、 [試用版](https://aka.ms/M365E5ComplianceTrial)にサインアップできます。 これらのライセンスの詳細については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
+**Microsoft 365 の二** 重キー暗号化には、Microsoft 365 E5 が付属しています。 Microsoft 365 E5 ライセンスをお持ちない場合は、試用版にサインアップ [できます](https://aka.ms/M365E5ComplianceTrial)。 これらのライセンスの詳細については、セキュリティとコンプライアンスに関する [Microsoft 365 ライセンス ガイダンス&してください](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-**Azure Information Protection**。 DKE は機密ラベルを使用し、Azure Information Protection を必要とします。
+**Azure Information Protection**。 DKE は、区別ラベルで動作し、Azure Information Protection を必要とします。
 
-DKE 機密ラベルをエンドユーザーが使用できるようにするには、Office デスクトップアプリの [秘密度リボンを使用する」を参照してください。 保護されたドキュメントを保護して使用する各クライアントコンピューターにこれらの必須コンポーネントをインストールします。
+DKE の感度ラベルは、デスクトップ アプリでエンド ユーザーがOfficeできます。 保護されたドキュメントを保護して使用する各クライアント コンピューターに、これらの前提条件をインストールします。
 
-**Microsoft Office Apps for enterprise** バージョン * 12711 以降 (デスクトップ版の Word、PowerPoint、Excel) (Windows)。
+**Microsoft Office の** エンタープライズ バージョン *.12711 以降 (デスクトップ バージョンの Word、PowerPoint、Excel) 用アプリ。
 
-**Azure Information Protection クライアント** バージョン2.7.93.0 またはそれ以降のラベルを統合しています。 [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=53018)から、統合されたラベル付けクライアントをダウンロードしてインストールします。
+**Azure Information Protection 統合ラベル付けクライアント** バージョン 2.7.93.0 以降。 Microsoft ダウンロード センターから統合ラベル付けクライアントを [ダウンロードしてインストールします](https://www.microsoft.com/download/details.aspx?id=53018)。
 
-## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>DKE で保護されたコンテンツを保存および表示するためにサポートされている環境
+## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>DKE で保護されたコンテンツを保存および表示するためのサポートされている環境
 
-**サポートされるアプリケーション**。 Word、Excel、PowerPoint など、Windows の[エンタープライズクライアント用の Microsoft 365 アプリ](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product)。
+**サポートされているアプリケーション**。 Word、Excel、PowerPoint を含む、Windows 上の[Microsoft 365](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) Apps for enterprise クライアント。
 
-**オンラインコンテンツのサポート**。 Microsoft SharePoint と OneDrive for business の両方でオンラインで格納されたドキュメントやファイルはサポートされています。 暗号化されたコンテンツを電子メールで共有することはできますが、暗号化されたドキュメントやファイルをオンラインで表示することはできません。 代わりに、ローカルコンピューターのデスクトップアプリを使用して、保護されたコンテンツを表示する必要があります。
+**オンライン コンテンツのサポート**。 Microsoft SharePoint と OneDrive for Business の両方にオンラインで保存されているドキュメントとファイルがサポートされています。 暗号化されたコンテンツは電子メールで共有できますが、暗号化されたドキュメントやファイルをオンラインで表示できません。 代わりに、ローカル コンピューター上のデスクトップ アプリを使用して、保護されたコンテンツを表示する必要があります。
 
 ## <a name="overview-of-deploying-dke"></a>DKE の展開の概要
 
-DKE をセットアップするには、次の一般的な手順に従います。 これらの手順を完了すると、エンドユーザーは二重のキー暗号化を使用して機密性の高いデータを保護できるようになります。
+DKE をセットアップするには、次の一般的な手順に従います。 これらの手順を完了すると、エンド ユーザーは、二重キー暗号化を使用して機密性の高いデータを保護できます。
 
-1. この記事で説明されているように、DKE サービスを展開します。
+1. この記事の説明に従って DKE サービスを展開します。
 
-2. 二重のキー暗号化を使用してラベルを作成します。 [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com)の [情報保護] に移動し、2重のキー暗号化を使用して新しいラベルを作成します。 [暗号化を適用するには、「機密ラベルを使用してコンテンツへのアクセスを制限する」を](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)参照してください。
+2. 二重キー暗号化を使用してラベルを作成します。 [Microsoft 365](https://compliance.microsoft.com)コンプライアンス センターの下の情報保護に移動し、二重キー暗号化を使用して新しいラベルを作成します。 「 [コンテンツへのアクセスを制限する」を参照してください。暗号化を適用するには、区別ラベルを使用します](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)。
 
-3. 二重キーの暗号化ラベルを使用します。 Microsoft Office の [秘密度] リボンから [二重キー暗号化] ラベルを選択して、データを保護します。
+3. 二重キー暗号化ラベルを使用します。 データを保護するには、次のページの [Sensitivity] リボンで [Double Key Encrypted] ラベルをMicrosoft Office。
 
-二重キー暗号化を展開するための手順のいくつかを実行するには、いくつかの方法があります。 この記事では、より熟練していない管理者がサービスを正常に展開するための詳細な手順について説明します。 使いやすい場合は、独自のメソッドを使用することを選択できます。
+二重キー暗号化を展開するには、いくつかの手順を実行する方法があります。 この記事では、経験の少ない管理者がサービスを正常に展開できるよう、詳細な手順を示します。 この方法に問題が生じない場合は、独自の方法を選択できます。
 
 ## <a name="deploy-dke"></a>DKE の展開
 
-この記事と展開ビデオでは、DKE サービスの展開先として Azure を使用します。 別の場所に展開している場合は、独自の値を指定する必要があります。
+この記事と展開ビデオでは、DKE サービスの展開先として Azure を使用します。 別の場所に展開する場合は、独自の値を指定する必要があります。
 
-この記事で説明した概念の詳細な手順については、「 [キー暗号化の展開](https://youtu.be/vDWfHN_kygg) に関するダブルポイント」を参照してください。 ビデオの完了に約18分かかります。
+二重 [キー暗号化の展開のビデオ](https://youtu.be/vDWfHN_kygg) を見て、この記事の概念の詳しい概要を確認してください。 ビデオが完成するのに約 18 分かかります。
 
-次の一般的な手順に従って、組織のために二重キー暗号化を設定します。
+次の一般的な手順に従って、組織の二重キー暗号化を設定します。
 
-1. [DKE サービスの前提条件となるソフトウェアをインストールする](#install-software-prerequisites-for-the-dke-service)
-1. [二重キー暗号化 GitHub リポジトリのクローンを作成する](#clone-the-dke-github-repository)
-1. [アプリケーションの設定を変更する](#modify-application-settings)
-1. [テストキーを生成する](#generate-test-keys)
+1. [DKE サービスの前提条件ソフトウェアをインストールする](#install-software-prerequisites-for-the-dke-service)
+1. [二重キー暗号化 GitHub リポジトリを複製する](#clone-the-dke-github-repository)
+1. [アプリケーション設定の変更](#modify-application-settings)
+1. [テスト キーを生成する](#generate-test-keys)
 1. [プロジェクトをビルドする](#build-the-project)
-1. [DKE サービスを展開し、キーストアを発行する](#deploy-the-dke-service-and-publish-the-key-store)
+1. [DKE サービスを展開し、キー ストアを発行する](#deploy-the-dke-service-and-publish-the-key-store)
 1. [展開を検証する](#validate-your-deployment)
-1. [キーストアを登録する](#register-your-key-store)
-1. [DKE を使用して機密ラベルを作成する](#create-sensitivity-labels-using-dke)
+1. [キー ストアを登録する](#register-your-key-store)
+1. [DKE を使用して感度ラベルを作成する](#create-sensitivity-labels-using-dke)
 1. [クライアントで DKE を有効にする](#enable-dke-in-your-client)
 1. [保護されたファイルを HYOK ラベルから DKE ラベルに移行する](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
-完了すると、DKE を使用してドキュメントやファイルを暗号化できます。 詳細については、「 [Office のファイルと電子メールに機密ラベルを適用する](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)」を参照してください。
+完了したら、DKE を使用してドキュメントとファイルを暗号化できます。 詳細については、「ファイルと [電子メールにラベル](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)を適用する」を参照Office。
 
-### <a name="install-software-prerequisites-for-the-dke-service"></a>DKE サービスの前提条件となるソフトウェアをインストールする
+### <a name="install-software-prerequisites-for-the-dke-service"></a>DKE サービスの前提条件ソフトウェアをインストールする
 
-これらの必須コンポーネントを、DKE サービスをインストールするコンピューターにインストールします。
+これらの前提条件を、DKE サービスをインストールするコンピューターにインストールします。
 
-**.Net Core 3.1 SDK**。 SDK をダウンロードしてインストールします。 [.Net Core 3.1 をダウンロード](https://dotnet.microsoft.com/download/dotnet-core/3.1)します。
+**.NET Core 3.1 SDK**. [DOWNLOAD .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)から SDK をダウンロードしてインストールします。
 
-**Visual Studio Code**。 から Visual Studio コードをダウンロード [https://code.visualstudio.com/](https://code.visualstudio.com) します。 インストールされたら、Visual Studio Code を実行し、[**ビュー**拡張] を選択し \> **Extensions**ます。 これらの拡張機能をインストールします。
+**Visual Studio コード**。 コードVisual Studioダウンロードします [https://code.visualstudio.com/](https://code.visualstudio.com) 。 インストールが完了したら、Visual Studioコードを実行し、[拡張機能の **表示]** \> **を選択します**。 これらの拡張機能をインストールします。
 
-- Visual Studio Code の C#
+- コードの C# Visual Studioコード
 
-- NuGet パッケージマネージャー
+- NuGet パッケージ マネージャー
 
 **Git リソース**。 次のいずれかをダウンロードしてインストールします。
 
@@ -127,115 +127,115 @@ DKE をセットアップするには、次の一般的な手順に従います�
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
-**OpenSSL**DKE の展開後に[テストキーを生成](#generate-test-keys)するには、 [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)がインストールされている必要があります。 環境変数のパスから適切に呼び出していることを確認してください。 たとえば、詳細については、「」の「インストールディレクトリをパスに追加する」を参照してください [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) 。
+**OpenSSL** DKE の展開 [後にテスト キー](https://slproweb.com/products/Win32OpenSSL.html) を [生成するには、OpenSSL](#generate-test-keys) がインストールされている必要があります。 環境変数パスから正しく呼び出されていることを確認してください。 たとえば、詳細については、「インストール ディレクトリを PATH に追加する」 [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) を参照してください。
 
-### <a name="clone-the-dke-github-repository"></a>DKE GitHub リポジトリのクローンを作成する
+### <a name="clone-the-dke-github-repository"></a>DKE GitHub リポジトリを複製する
 
-Microsoft は、GitHub リポジトリに DKE ソースファイルを提供しています。 リポジトリを複製して、組織の使用に合わせてプロジェクトをローカルに構築します。 DKE GitHub リポジトリは、にあり [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) ます。
+Microsoft は、GitHub リポジトリに DKE ソース ファイルを提供しています。 リポジトリを複製して、組織で使用するためにプロジェクトをローカルにビルドします。 DKE GitHub リポジトリの場所は次の場所にあります [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) 。
 
-次の手順は、経験のない git または Visual Studio Code ユーザーを対象としています。
+次の手順は、経験の浅い git またはコード Visual Studio向けです。
 
-1. ブラウザーで、に移動 [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) します。
+1. ブラウザーで、次の場所に移動します [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) 。
 
-2. 画面の右側にある [ **コード**] を選択します。 使用しているバージョンの UI には、[ **クローン] または [ダウンロード** ] ボタンが表示される場合があります。 次に、表示されたドロップダウンで、[コピー] アイコンを選択して、URL をクリップボードにコピーします。
-
-    例:
-
-   ![GitHub から二重キー暗号化サービスリポジトリを複製する](../media/dke-clone.png)
-
-3. Visual Studio Code で、[ **View** \> **Command Palette** ] を選択し、[ **Git: Clone**] を選択します。 一覧のオプションに移動するには、入力を開始して `git: clone` エントリをフィルター処理し、ドロップダウンから選択します。 例:
-
-   ![Visual Studio Code GIT: Clone オプション](../media/dke-vscode-clone.png)
-
-4. テキストボックスに、Git からコピーした URL を貼り付けて、[ **GitHub から複製**] を選択します。
-
-5. 表示される **[フォルダーの選択** ] ダイアログで、リポジトリを格納する場所を参照して選択します。 プロンプトで、[ **開く**] を選択します。
-
-    リポジトリが Visual Studio Code で開き、左下に現在の Git ブランチが表示されます。 ブランチは **master**である必要があります。
+2. 画面の右側に移動し、[コード] を **選択します**。 バージョンの UI に [複製] または [ダウンロード] **ボタンが表示される場合** があります。 次に、表示されるドロップダウンでコピー アイコンを選択し、URL をクリップボードにコピーします。
 
     例:
 
-   ![Visual Studio Code master 分岐](../media/dke-vscode-master.png)
+   ![GitHub から Double Key Encryption サービス リポジトリを複製する](../media/dke-clone.png)
 
-6. ブランチのリストから [単語 **マスター** ] を選択します。
+3. [コードVisual Studioコマンド パレットの **表示]** \> **を** 選択し **、[Git:** Clone] を選択します。 リスト内のオプションに移動するには、入力を開始してエントリをフィルター処理し、ドロップダウン `git: clone` から選択します。 例:
+
+   ![Visual Studio GIT:Clone オプション](../media/dke-vscode-clone.png)
+
+4. テキスト ボックスに、Git からコピーした URL を貼り付け **、GitHub から [Clone] を選択します**。
+
+5. 表示される **[フォルダーの** 選択] ダイアログで、リポジトリを格納する場所を参照して選択します。 プロンプトで、[開く] を **選択します**。
+
+    リポジトリがコードVisual Studio開き、左下に現在の Git 分岐が表示されます。 分岐はマスター である **必要があります**。
+
+    例:
+
+   ![Visual Studio コード マスター分岐](../media/dke-vscode-master.png)
+
+6. 分岐の一 **覧から** 単語マスターを選択します。
 
    > [!IMPORTANT]
-   > マスター分岐を選択すると、プロジェクトをビルドするための適切なファイルがあることが保証されます。 適切なブランチを選択しない場合、展開は失敗します。
+   > マスター分岐を選択すると、プロジェクトをビルドするための適切なファイルが確実に作成されます。 正しい分岐を選択しない場合、展開は失敗します。
 
-これで、DKE ソースリポジトリがローカルに設定されました。 次に、組織の [アプリケーション設定を変更](#modify-application-settings) します。
+これで、DKE ソース リポジトリがローカルにセットアップされます。 次に [、組織のアプリケーション設定](#modify-application-settings) を変更します。
 
-### <a name="modify-application-settings"></a>アプリケーションの設定を変更する
+### <a name="modify-application-settings"></a>アプリケーション設定の変更
 
 DKE サービスを展開するには、次の種類のアプリケーション設定を変更する必要があります。
 
-- [キーアクセス設定](#key-access-settings)
+- [キー アクセスの設定](#key-access-settings)
 - [テナントとキーの設定](#tenant-and-key-settings)
 
-[ファイル] の appsettings.jsで、アプリケーションの設定を変更します。 このファイルは、DoubleKeyEncryptionService\src\customer-key-store. でローカルに複製した DoubleKeyEncryptionService リポジトリにあります。 たとえば、次の図に示すように、Visual Studio Code でファイルを参照できます。
+アプリケーション設定は、ファイルのappsettings.js変更します。 このファイルは、ローカルで DoubleKeyEncryptionService\src\customer-key-store の下に複製した DoubleKeyEncryptionService リポジトリにあります。 たとえば、コードVisual Studio、次の図に示すようにファイルを参照できます。
 
-![DKE のファイルの appsettings.jsを検索します。](../media/dke-appsettingsjson.png)
+![DKE 用appsettings.jsの場所。](../media/dke-appsettingsjson.png)
 
-#### <a name="key-access-settings"></a>キーアクセス設定
+#### <a name="key-access-settings"></a>キー アクセスの設定
 
-メールまたはロールの承認を使用するかどうかを選択します。 DKE は、一度に1つの認証方法のみをサポートします。
+電子メールまたは役割の承認を使用するかどうかを選択します。 DKE では、一度にサポートされる認証方法は 1 つのみです。
 
-- **電子メールの承認**。 組織は、電子メールアドレスのみに基づいてキーへのアクセスを承認できます。
+- **電子メールの承認**。 電子メール アドレスにのみ基づいてキーへのアクセスを組織が承認できます。
 
-- **役割の承認**。 組織は、Active Directory グループに基づいてキーへのアクセスを承認でき、web サービスが LDAP を照会できるようにする必要があります。
+- **役割の承認**。 組織が Active Directory グループに基づいてキーへのアクセスを承認し、Web サービスが LDAP を照会できる必要があります。
 
-**電子メール認証を使用して DKE のキーアクセス設定を設定するには**
+**電子メールの承認を使用して DKE のキー アクセス設定を設定するには**
 
-1. ファイル ** でappsettings.js** を開き、設定を探し `AuthorizedEmailAddress` ます。
+1. ファイルの **appsettings.jsを開き** 、設定を探 `AuthorizedEmailAddress` します。
 
-2. 承認するメールアドレスを追加します。 複数の電子メールアドレスは、二重引用符とコンマで区切ります。 例:
+2. 承認する電子メール アドレスを追加します。 複数の電子メール アドレスを二重引用符とコンマで区切ります。 例:
 
    ```json
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
    ```
 
-3. 設定を検索 `LDAPPath` し、 `If you use role authorization (AuthorizedRoles) then this is the LDAP path.` 二重引用符の間のテキストを削除します。 二重引用符はそのままにします。 完了すると、設定は次のようになります。
+3. 設定を `LDAPPath` 見つけて、二重引用符の `If you use role authorization (AuthorizedRoles) then this is the LDAP path.` 間のテキストを削除します。 二重引用符はそのまま残します。 完了すると、設定は次のように表示されます。
 
    ```json
    "LDAPPath": ""
    ```
 
-4. 設定を検索 `AuthorizedRoles` し、行全体を削除します。
+4. 設定を `AuthorizedRoles` 見つけて、行全体を削除します。
 
-このイメージは、電子メールの承認用に正しく書式設定されたファイル ** のappsettings.js** を示しています。
+この画像は、電子 **メールのappsettings.js形式の** ファイルに関する情報を示しています。
 
-   ![電子メール認証方法が表示されているファイルの appsettings.js](../media/dke-email-accesssetting.png)
+   ![電子appsettings.js方法を示すファイルの例](../media/dke-email-accesssetting.png)
 
-**ロール認証を使用して DKE のキーアクセス設定を設定するには**
+**役割の承認を使用して DKE のキー アクセス設定を設定するには**
 
-1. ファイル ** でappsettings.js** を開き、設定を探し `AuthorizedRoles` ます。
+1. ファイルの **appsettings.jsを開き** 、設定を探 `AuthorizedRoles` します。
 
-2. 承認する Active Directory グループ名を追加します。 複数のグループ名は、二重引用符とコンマで区切ります。 例:
+2. 承認する Active Directory グループ名を追加します。 複数のグループ名を二重引用符とコンマで区切ります。 例:
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. `LDAPPath`設定を見つけて、Active Directory ドメインを追加します。 例:
+3. 設定を `LDAPPath` 見つけて、Active Directory ドメインを追加します。 例:
 
    ```json
    "LDAPPath": "contoso.com"
    ```
 
-4. 設定を検索 `AuthorizedEmailAddress` し、行全体を削除します。
+4. 設定を `AuthorizedEmailAddress` 見つけて、行全体を削除します。
 
-このイメージは、役割承認用に正しく書式設定されたファイル ** のappsettings.js** を示しています。
+この画像は、ロールの **承認appsettings.js形式の** ファイルに関する情報を示しています。
 
-   ![ロール認証方法が表示されているファイルの appsettings.js](../media/dke-role-accesssetting.png)
+   ![appsettings.jsの承認方法を示すファイルの作成](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>テナントとキーの設定
 
-DKE テナントとキー設定は、ファイルの **appsettings.js** にあります。
+DKE テナントとキーの設定は、appsettings.js **に保存** されます。
 
-**DKE のテナントとキー設定を構成するには**
+**DKE のテナントとキーの設定を構成するには**
 
-1. ファイル ** でappsettings.js** を開きます。
+1. ファイルの **appsettings.jsを開** きます。
 
-2. `ValidIssuers`設定を見つけて、 `<tenantid>` テナント ID に置き換えます。 Azure ポータルに移動して、 [テナントのプロパティ](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)を表示することによって、テナント ID を見つけることができます。 例:
+2. 設定を `ValidIssuers` 見つけて、テナント `<tenantid>` ID に置き換える。 テナント ID を見つけるには、Azure ポータルにアクセスしてテナントのプロパティを [表示します](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。 例:
 
    ```json
    "ValidIssuers": [
@@ -243,35 +243,35 @@ DKE テナントとキー設定は、ファイルの **appsettings.js** にあ�
    ]
    ```
 
-を探し `JwtAudience` ます。 を、 `<yourhostname>` DKE サービスが実行されるコンピューターのホスト名に置き換えます。 例:
+を探します `JwtAudience` 。 `<yourhostname>`DKE サービスを実行するコンピューターのホスト名に置き換える。 例:
 
   > [!IMPORTANT]
-  > の値は、 `JwtAudience` ホストの名前と *正確*に一致している必要があります。 デバッグ中に **localhost: 5001** を使用することができます。 ただし、デバッグを完了したら、この値をサーバーのホスト名に更新するようにしてください。
+  > 値は、 `JwtAudience` ホストの名前と正確に一致 *する必要があります*。 デバッグ中は **localhost:5001** を使用できます。 ただし、デバッグが完了したら、この値をサーバーのホスト名に更新してください。
 
 - `TestKeys:Name`. キーの名前を入力します。 例: `TestKey1`
-- `TestKeys:Id`. GUID を作成し、値として入力し `TestKeys:ID` ます。 たとえば、`DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE` などです。 [ONLINE Guid ジェネレーター](https://guidgenerator.com/)のようなサイトを使用して、guid をランダムに生成することができます。
+- `TestKeys:Id`. GUID を作成し、値として入力 `TestKeys:ID` します。 たとえば、`DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE` などです。 オンライン GUID ジェネレーターのようなサイト [を使用して、GUID](https://guidgenerator.com/) をランダムに生成できます。
 
-この画像 ** にはappsettings.js**のテナントとキーの設定の正しい形式が表示されます。 `LDAPPath` は、ロールの承認のために構成されています。
+この画像は、テナントとキーの設定の正しい形式を示appsettings.js **オンです**。 `LDAPPath` は、役割の承認用に構成されます。
 
-![ファイルの appsettings.jsの DKE の正しいテナントとキー設定を示します。](../media/dke-appsettingsjson-tenantkeysettings.png)
+![ファイルのコピーに、DKE の正しいテナントとappsettings.js設定を表示します。](../media/dke-appsettingsjson-tenantkeysettings.png)
 
-### <a name="generate-test-keys"></a>テストキーを生成する
+### <a name="generate-test-keys"></a>テスト キーを生成する
 
-アプリケーション設定を定義したら、パブリックおよびプライベートのテストキーを生成する準備ができています。
+アプリケーション設定を定義したら、公開キーとプライベート テスト キーを生成する準備が整います。
 
-キーを生成するには
+キーを生成するには:
 
-1. Windows の [スタート] メニューから、OpenSSL コマンドプロンプトを実行します。
+1. Windows の [スタート] メニューから、OpenSSL コマンド プロンプトを実行します。
 
-2. テストキーを保存するフォルダーに移動します。 このタスクの手順を完了することによって作成したファイルは、同じフォルダーに格納されます。
+2. テスト キーを保存するフォルダーに移動します。 このタスクの手順を完了して作成するファイルは、同じフォルダーに格納されます。
 
-3. 新しいテストキーを生成します。
+3. 新しいテスト キーを生成します。
 
    ```dos
    openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
    ```
 
-4. 秘密キーを生成します。
+4. プライベート キーを生成します。
 
    ```dos
    openssl rsa -in key.pem -out privkeynopass.pem
@@ -283,18 +283,18 @@ DKE テナントとキー設定は、ファイルの **appsettings.js** にあ�
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
-6. テキストエディターで、 **pubkeyonly**を開きます。 最初と最後の行を除く、 **pubkeyonly** のすべてのコンテンツを `PublicPem` ファイルの **appsettings.js** のセクションにコピーします。
+6. テキスト エディターで **、pubkeyonly.pem を開きます**。 **pubkeyonly.pem** ファイルのすべてのコンテンツ (最初の行と最後の行を除く) を、ファイルのappsettings.js`PublicPem` **セクションにコピー** します。
 
-7. テキストエディターで、 **privkeynopass pem**を開きます。 最初の行と最後の行を除いて、 **privkeynopass** のすべてのコンテンツを `PrivatePem` ファイルの **appsettings.js** のセクションにコピーします。
+7. テキスト エディターで **、prikeynopass.pem を開きます**。 最初の行と最後の行を除く **、appsettings.js** `PrivatePem` on ファイル内のすべてのコンテンツ **をコピー** します。
 
-8. セクションとセクションの両方で空白スペースと改行を削除し `PublicPem` `PrivatePem` ます。
+8. セクションとセクションの両方のすべての空白と改行 `PublicPem` を `PrivatePem` 削除します。
 
     > [!IMPORTANT]
-    > このコンテンツをコピーする場合は、PEM データを削除しないでください。
+    > このコンテンツをコピーする場合、PEM データは削除してください。
 
-9. Visual Studio Code で、 **Startup.cs** ファイルを参照します。 このファイルは、DoubleKeyEncryptionService\src\customer-key-store\. でローカルに複製した DoubleKeyEncryptionService リポジトリにあります。
+9. [Visual Studioコード] で、次のファイル **Startup.cs** します。 このファイルは、ローカルで DoubleKeyEncryptionService\src\customer-key-store\ の下に複製した DoubleKeyEncryptionService リポジトリにあります。
 
-10. 次の行を見つけます。
+10. 次の行を探します。
 
    ```c#
         #if USE_TEST_KEYS
@@ -304,39 +304,39 @@ DKE テナントとキー設定は、ファイルの **appsettings.js** にあ�
         #endif
    ```
 
-11. これらの行を次のテキストに置き換えます。
+11. これらの行を次のテキストに置き換える。
 
    ```csharp
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
    ```
 
-   最終結果は次のようになります。
+   最後の結果は次のようになります。
 
-   ![パブリックプレビュー用の startup.cs ファイル](../media/dke-startupcs-usetestkeys.png)
+   ![startup.csプレビュー用のファイルを作成する](../media/dke-startupcs-usetestkeys.png)
 
-これで [、DKE プロジェクトを構築](#build-the-project)する準備ができました。
+これで [、DKE プロジェクトをビルドする準備ができました](#build-the-project)。
 
 ### <a name="build-the-project"></a>プロジェクトをビルドする
 
-次の手順を使用して、ローカルに DKE プロジェクトをビルドします。
+DKE プロジェクトをローカルにビルドするには、次の手順を使用します。
 
-1. Visual Studio Code の dke サービスリポジトリで、[コマンドパレットの**表示**] を選択し、 \> **Command Palette**プロンプトで「 **build** 」と入力します。
+1. [Visual Studioコード] の DKE サービス リポジトリで、[コマンド パレットの表示] を選択し、プロンプトで \> **「ビルド**」と入力します。
 
-2. リストから、[ **タスク: ビルドタスクの実行**] を選択します。
+2. 一覧から、[タスク: ビルド タスク **の実行] を選択します**。
 
-   ビルドタスクが見つからない場合は、[ **ビルドタスクの構成** ] を選択し、次のように .net コア用のタスクを作成します。
+   ビルド タスクが見つからない場合は、[ビルド タスクの構成] を選択し、次のように .NET コア用に作成します。
 
-   ![.NET の不明なビルドタスクを構成する](../media/dke-configurebuildtask.png)
+   ![.NET の不足しているビルド タスクを構成する](../media/dke-configurebuildtask.png)
 
-   1. [ **テンプレートから tasks.jsを作成**] を選択します。
+   1. Choose **Create tasks.json from template**.
 
-      ![DKE テンプレートからファイルに tasks.jsを作成する](../media/dke-createtasksjsonfromtemplate.png)
+      ![DKE tasks.jsテンプレートからファイル上にデータを作成する](../media/dke-createtasksjsonfromtemplate.png)
 
-   2. テンプレートの種類の一覧から [ **.Net Core**] を選択します。
+   2. テンプレートの種類の一覧から **、[.NET Core] を選択します**。
 
-      ![DKE の正しいテンプレートを選択する](../media/dke-tasksjsontemplate.png)
+      ![DKE 用の適切なテンプレートを選択する](../media/dke-tasksjsontemplate.png)
 
-   3. [ビルド] セクションで、 **顧客キーストア** ファイルへのパスを見つけます。 存在しない場合は、次の行を追加します。
+   3. ビルド セクションで **、customerkeystore.csproj ファイルへのパスを見** つけます。 表示されない場合は、次の行を追加します。
 
       ```json
       "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
@@ -344,13 +344,13 @@ DKE テナントとキー設定は、ファイルの **appsettings.js** にあ�
 
    4. ビルドを再度実行します。
 
-3. 出力ウィンドウに赤のエラーが表示されないことを確認します。
+3. 出力ウィンドウに赤いエラーが表示されません。
 
-   赤のエラーがある場合は、コンソール出力を確認します。 上記の手順がすべて正常に完了し、適切なビルドバージョンが存在することを確認してください。
+   赤いエラーがある場合は、コンソールの出力を確認します。 前のすべての手順が正しく完了し、正しいビルド バージョンが存在していることを確認します。
 
-4. [ **実行** \> **開始デバッグ** ] を選択してプロセスをデバッグします。 環境を選択するように求めるメッセージが表示されたら、[ **.net core**] を選択します。
+4. [ **デバッグの** \> **開始] を選択して** 、プロセスをデバッグします。 環境を選択するように求めるメッセージが表示されたら **、.NET core を選択します**。
 
-.NET コアデバッガーは通常、に起動し `https://localhost:5001` ます。 テストキーを表示するには、に移動して、 `https://localhost:5001` スラッシュ (/) とキーの名前を追加します。 例:
+.NET コア デバッガーは、通常起動します `https://localhost:5001` 。 テスト キーを表示するには、スラッシュ (/) とキーの名前に `https://localhost:5001` 移動して追加します。 例:
 
 ```https
 https://localhost:5001/TestKey1
@@ -358,39 +358,39 @@ https://localhost:5001/TestKey1
 
 キーは JSON 形式で表示されます。
 
-セットアップが完了しました。 キーストアを発行する前に、JwtAudience の設定 appsettings.jsで、[] 設定で、[ホスト名] の値が App Service ホスト名と正確に一致していることを確認してください。 ビルドのトラブルシューティングを行うために、localhost に変更した可能性があります。
+これでセットアップが完了しました。 jwtAudience 設定の appsettings.jsを公開する前に、ホスト名の値が App Service ホスト名と正確に一致するようにします。 ビルドのトラブルシューティングを行う際に localhost に変更した可能性があります。
 
-### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>DKE サービスを展開し、キーストアを発行する
+### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>DKE サービスを展開し、キー ストアを発行する
 
-運用環境の展開では、サービスをサードパーティ製のクラウドに展開するか、 [オンプレミスのシステムに発行](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli)します。
+実稼働展開の場合は、サード パーティ製のクラウドにサービスを展開するか、オンプレミス システム [に発行します](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli)。
 
-他の方法でキーを展開することもできます。 組織に最も適した方法を選択します。
+他の方法でキーを展開することもできます。 組織に最適な方法を選択します。
 
-パイロット展開の場合は、Azure に展開し、すぐに作業を開始できます。
+パイロット展開の場合は、Azure に展開して、今すぐ開始できます。
 
-**DKE 展開をホストするための Azure Web App インスタンスを作成するには**
+**DKE 展開をホストする Azure Web App インスタンスを作成するには**
 
-キーストアを発行するには、DKE 展開をホストする Azure App Service インスタンスを作成します。 次に、生成されたキーを Azure に発行します。
+キー ストアを公開するには、DKE 展開をホストする Azure App Service インスタンスを作成します。 次に、生成されたキーを Azure に公開します。
 
-1. ブラウザーで、 [Microsoft Azure ポータル](https://ms.portal.azure.com)にサインインし、[ **App Services**追加] に移動し  >  **Add**ます。
+1. ブラウザーで Microsoft Azure ポータルにサインインし、[[アプリ](https://ms.portal.azure.com)サービスの追加]**に移動**  >  **します**。
 
-2. サブスクリプションとリソースグループを選択し、インスタンスの詳細を定義します。
+2. サブスクリプションとリソース グループを選択し、インスタンスの詳細を定義します。
 
-    - DKE サービスをインストールするコンピューターのホスト名を入力します。 [ファイルのappsettings.js] の [** [**](#tenant-and-key-settings) JwtAudience] 設定に定義されている名前と同じ名前であることを確認してください。 名前に指定する値は WebAppInstanceName でもあります。
+    - DKE サービスをインストールするコンピューターのホスト名を入力します。 ファイルに対するファイルの JwtAudience 設定に定義されている名前と同appsettings.js [**してください**](#tenant-and-key-settings) 。 名前に指定する値も WebAppInstanceName です。
 
-    - [ **発行**] で、[ **コード**] を選択し、[ **ランタイムスタック**] で [ **.net Core 3.1**] を選択します。
+    - [**発行]** でコード **を選択し**、ランタイム スタックの場合は **、[.NET Core 3.1] を選択します**。 
 
     例:
 
-   ![アプリサービスを追加する](../media/dke-azure-add-app-service.png)
+   ![App Service を追加する](../media/dke-azure-add-app-service.png)
 
-3. ページの下部にある [ **レビュー + 作成**] を選択し、[ **追加**] を選択します。
+3. At the bottom of the page, select **Review + create,** and then select **Add**.
 
-4. 生成されたキーを公開するには、次のいずれかの操作を行います。
+4. 生成されたキーを発行するには、次のいずれかを実行します。
 
     - [ZipDeployUI を使用して発行する](#publish-via-zipdeployui)
-    - [FTP を使用した発行](#publish-via-ftp)
-    - [Visual Studio 2019 以降での発行](https://docs.microsoft.com/aspnet/core/tutorials/)
+    - [FTP 経由で発行する](#publish-via-ftp)
+    - [Visual Studio 2019 以降で発行する](https://docs.microsoft.com/aspnet/core/tutorials/)
 
 #### <a name="publish-via-zipdeployui"></a>ZipDeployUI を使用して発行する
 
@@ -398,53 +398,53 @@ https://localhost:5001/TestKey1
 
     例: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
-2. キーストアのコードベースで、 **customer-key-store\src\customer-key-store** フォルダーに移動し、このフォルダーに **顧客キーストア** ファイルが含まれていることを確認します。
+2. キー ストアのコードベースで **、customer-key-store\src\customer-key-store** フォルダーに移動し、このフォルダーに **customerkeystore.csproj** ファイルが含まれているか確認します。
 
-3. 実行: **dotnet publish**
+3. 実行: **dotnet 発行**
 
-     [出力] ウィンドウには、発行が展開されたディレクトリが表示されます。
+     出力ウィンドウには、発行が展開されたディレクトリが表示されます。
 
     例: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-4. Publish ディレクトリ内のすべてのファイルを .zip ファイルに送信します。 .Zip ファイルを作成するときは、ディレクトリ内のすべてのファイルが .zip ファイルのルートレベルにあることを確認してください。
+4. 発行ディレクトリ内のすべてのファイルを .zip ファイルに送信します。 .zip ファイルを作成する場合は、ディレクトリ内のすべてのファイルが .zip ファイルのルート レベルに存在する必要があります。
 
-5. 先ほど開いた ZipDeployUI サイトに、作成した .zip ファイルをドラッグアンドドロップします。 例: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
+5. 作成した .zip ファイルを、上で開いた ZipDeployUI サイトにドラッグ アンド ドロップします。 例: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
-DKE が展開されており、作成したテストキーを参照することができます。 引き続き「 [展開を検証](#validate-your-deployment) する」を参照してください。
+DKE が展開され、作成したテスト キーを参照できます。 以下の「 [展開の検証」に進](#validate-your-deployment) んでください。
 
-#### <a name="publish-via-ftp"></a>FTP を使用した発行
+#### <a name="publish-via-ftp"></a>FTP 経由で発行する
 
-1. [上記の手順](#deploy-the-dke-service-and-publish-the-key-store)で作成した App Service に接続します。
+1. 上で作成したアプリ サービスに接続 [します](#deploy-the-dke-service-and-publish-the-key-store)。
 
-    ブラウザーで、「 **Azure portal**  >  **App Service**  >  **Deployment Center**  >  **Manual Deployment**  >  **FTP**  >  **Dashboard**」に移動します。
+    ブラウザーで **、「Azure portal**  >  **App Service** Deployment Center Manual  >  **Deployment**  >    >  **FTP**  >  **Dashboard」** に移動します。
 
-2. ローカルファイルに表示される接続文字列をコピーします。 これらの文字列を使用して Web App サービスに接続し、FTP を使用してファイルをアップロードします。
+2. 表示された接続文字列をローカル ファイルにコピーします。 これらの文字列を使用して Web App Service に接続し、FTP 経由でファイルをアップロードします。
 
     例:
 
    ![FTP ダッシュボードから接続文字列をコピーする](../media/dke-ftp-dashboard.png)
 
-3. キーの格納用のコードベースで、 **customer-key-store\src\customer-key-store ディレクトリ**に移動します。
+3. キー ストレージのコードベースで **、customer-key-store\src\customer-key-store ディレクトリに移動します**。
 
-4. このディレクトリに、 **顧客キーストアの .csproj** ファイルが含まれていることを確認します。
+4. このディレクトリに **customerkeystore.csproj ファイルが含まれているか確認** します。
 
-5. 実行: **dotnet publish**
+5. 実行: **dotnet 発行**
 
-    この出力には、発行が展開されたディレクトリが含まれています。
+    出力には、発行が展開されたディレクトリが含まれます。
 
     例: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-6. 発行ディレクトリ内のすべてのファイルを zip ファイルに送信します。 .Zip ファイルを作成するときは、ディレクトリ内のすべてのファイルが .zip ファイルのルートレベルにあることを確認してください。
+6. 発行ディレクトリ内のすべてのファイルを zip ファイルに送信します。 .zip ファイルを作成する場合は、ディレクトリ内のすべてのファイルが .zip ファイルのルート レベルに存在する必要があります。
 
-7. FTP クライアントから、コピーした接続情報を使用して App Service に接続します。 前の手順で作成した .zip ファイルを Web アプリのルートディレクトリにアップロードします。
+7. FTP クライアントから、コピーした接続情報を使用して App Service に接続します。 前の手順で作成した .zip ファイルを Web App のルート ディレクトリにアップロードします。
 
-DKE が展開されており、作成したテストキーを参照することができます。 次に、 [展開を検証](#validate-your-deployment)します。
+DKE が展開され、作成したテスト キーを参照できます。 次に、 [展開を検証します](#validate-your-deployment)。
 
 ### <a name="validate-your-deployment"></a>展開を検証する
 
-前述の方法のいずれかを使用して DKE を展開した後、展開とキーストアの設定を検証します。
+上記のいずれかの方法を使用して DKE を展開した後、展開とキー ストアの設定を検証します。
 
-実行
+次のコマンドを実行します。
 
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 
@@ -452,92 +452,92 @@ src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 
 key_store_tester.ps1 https://mydkeservice.com/mykey
 
-出力にエラーが表示されないことを確認します。 準備が整ったら、 [キーストアを登録](#register-your-key-store)します。
+出力にエラーが表示されないか確認します。 準備ができたら、キー [ストアを登録します](#register-your-key-store)。
 
-## <a name="register-your-key-store"></a>キーストアを登録する
+## <a name="register-your-key-store"></a>キー ストアを登録する
 
-次の手順に従って、DKE サービスを登録できます。 Dke サービスの登録は、ラベルの作成を開始する前に DKE を展開するための最後の手順です。
+次の手順を実行すると、DKE サービスを登録できます。 DKE サービスの登録は、ラベルの作成を開始する前に DKE を展開する最後の手順です。
 
-DKE サービスを登録するには、次のようにします。
+DKE サービスを登録するには:
 
-1. ブラウザーで、 [Microsoft Azure portal](https://ms.portal.azure.com/)を開き、[ **すべてのサービス** \> **id** \> **アプリの登録**] に移動します。
+1. ブラウザーで [、Microsoft Azure ポータルを開](https://ms.portal.azure.com/)き、[すべての **サービス** ID アプリの登録] \>  \> **に移動します**。
 
-2. [ **新しい登録**] を選択し、わかりやすい名前を入力します。
+2. [ **新規登録] を** 選択し、わかりやすい名前を入力します。
 
-3. 表示されているオプションから、アカウントの種類を選択します。
+3. 表示されるオプションからアカウントの種類を選択します。
 
-    **Onmicrosoft.com**などの非ユーザー設定ドメインを使用して Microsoft Azure を使用している場合は、[**この組織ディレクトリ内のアカウントのみ (microsoft のみ)** ] を選択します。
+    **onmicrosoft.com** などの非カスタム ドメインで Microsoft Azure を使用している場合は、この組織のディレクトリでのみ [アカウント] を選択します **(Microsoft のみ - シングル テナント)。**
 
     例:
 
    ![新しいアプリの登録](../media/dke-app-registration.png)
 
-4. ページの下部にある [ **登録** ] を選択して、新しいアプリの登録を作成します。
+4. ページの下部にある [登録] **を選択して** 、新しいアプリ登録を作成します。
 
-5. 新しいアプリの登録で、左側のウィンドウの [ **管理**] で [ **認証**] を選択します。
+5. 新しいアプリの登録の左側のウィンドウで、[管理] の [ **認証]** を **選択します**。
 
-6. [ **プラットフォームの追加**] を選択します。
+6. [プラットフォーム **の追加] を選択します**。
 
-7. [ **プラットフォームの構成** ] ポップアップで、[ **Web**] を選択します。
+7. [プラットフォーム **の構成] ポップアップで****、[Web] を選択します**。
 
-8. [ **リダイレクト uri**] で、二重キー暗号化サービスの URI を入力します。 ホスト名とドメインの両方を含む、App Service の URL を入力します。
+8. [ **リダイレクト URI] で**、二重キー暗号化サービスの URI を入力します。 ホスト名とドメインの両方を含む App Service URL を入力します。
 
     例: https://mydkeservicetest.com
 
     - 入力する URL は、DKE サービスが展開されているホスト名と一致している必要があります。
-    - Visual Studio を使用してローカルでテストしている場合は、を使用 **https://localhost:5001** します。
-    - すべての場合において、スキームは **https**である必要があります。
+    - If you're testing locally with Visual Studio, use **https://localhost:5001** .
+    - すべての場合、スキームは https である **必要があります**。
 
-    ホスト名が App Service ホスト名と正確に一致していることを確認します。 ビルドをトラブルシューティングするために、に変更した可能性があり `localhost` ます。 **appsettings.js**の場合、この値は、に設定したホスト名です `JwtAudience` 。
+    ホスト名が App Service のホスト名と正確に一致する必要があります。 ビルドのトラブルシューティングに変更 `localhost` した可能性があります。 In **appsettings.json,** this value is the hostname you set for `JwtAudience` .
 
-9. [ **暗黙的な付与**] で、[ **ID トークン** ] チェックボックスをオンにします。
+9. [**暗黙的な許可] で****、[ID トークン] チェック ボックスをオン** にします。
 
 10. **[保存]** を選択し、変更内容を保存します。
 
-11. 左側のウィンドウで、[ **API の公開**] を選択し、[アプリケーション ID URI] の横にある [ **設定**] を選択します。
+11. 左側のウィンドウで、[API の公開] **を選択** し、[アプリケーション ID URI] の横にある [設定] を選択 **します**。
 
-12. 引き続き [ **api の公開** ] ページで、[ **この api によって定義されるスコープ** ] 領域の [ **範囲の追加**] を選択します。 新しい範囲の場合:
+12. 引き続き **[API の公開** ] ページで、この **API** 領域で定義されているスコープで、[スコープの追加 **] を選択します**。 新しいスコープで、次の条件を実行します。
 
-    1. スコープ名を **user_impersonation**として定義します。
+    1. スコープ名を次のように定義 **user_impersonation。**
 
     2. 同意できる管理者とユーザーを選択します。
 
-    3. 残りの必要な値を定義します。
+    3. 必要な残りの値を定義します。
 
     4. **[スコープの追加]** を選択します。
 
-    5. 上部にある [ **保存** ] を選択して変更を保存します。
+    5. 上部 **の [** 保存] を選択して変更を保存します。
 
-13. 引き続き [ **API の公開** ] ページの [承認された **クライアントアプリケーション** ] 領域で、[ **クライアントアプリケーションの追加**] を選択します。
+13. 引き続き **[API の** 公開] ページの [承認された **クライアント** アプリケーション] 領域で、[クライアント アプリケーションの追加 **] を選択します**。
 
-    新しいクライアントアプリケーションの場合:
+    新しいクライアント アプリケーションで、次の条件を実行します。
 
-    1. クライアント ID を **d3590ed6-52b3-4102-aeff-aad2292ab01c**として定義します。 この値は Microsoft Office クライアント ID であり、Office はキーストアのアクセストークンを取得することができます。
+    1. クライアント ID を **d3590ed6-52b3-4102-aeff-aad2292ab01c** として定義します。 この値はクライアント ID Microsoft Officeであり、キー ストアOfficeトークンを取得できます。
 
-    2. [ **承認**されたスコープ] で、 **user_impersonation** スコープを選択します。
+    2. [ **承認済みスコープ] で、** 次 **のuser_impersonationします** 。
 
     3. **[アプリケーションの追加]** を選択します。
 
-    4. 上部にある [ **保存** ] を選択して変更を保存します。
+    4. 上部 **の [** 保存] を選択して変更を保存します。
 
-これで、DKE サービスが登録されました。 引き続き、 [DKE を使用してラベルを作成](#create-sensitivity-labels-using-dke)します。
+これで、DKE サービスが登録されました。 [DKE を使用してラベルを作成します](#create-sensitivity-labels-using-dke)。
 
-## <a name="create-sensitivity-labels-using-dke"></a>DKE を使用して機密ラベルを作成する
+## <a name="create-sensitivity-labels-using-dke"></a>DKE を使用して感度ラベルを作成する
 
-Microsoft 365 コンプライアンスセンターで、別の方法として、新しい機密ラベルを作成し、暗号化を適用します。 [ **2 重のキー暗号化を使用する** ] を選択し、キーのエンドポイント URL を入力します。
+Microsoft 365 コンプライアンス センターで、新しい区別ラベルを作成し、それ以外の場合と同様に暗号化を適用します。 [Use **Double Key Encryption] を選択** し、キーのエンドポイント URL を入力します。
 
 例:
 
-![Microsoft 365 コンプライアンスセンターで [二重のキー暗号化を使用する] を選択します。](../media/dke-use-dke.png)
+![Microsoft 365 コンプライアンス センターで [二重キー暗号化を使用する] を選択する](../media/dke-use-dke.png)
 
-追加した DKE ラベルは、Microsoft 365 Apps for enterprise の最新バージョンのユーザーに対して表示され始めます。
+追加した DKE ラベルは、Microsoft 365 Apps for enterprise の最新バージョンのユーザーに対して表示されます。
 
 > [!NOTE]
-> クライアントが新しいラベルで更新されるまで、最大24時間かかる場合があります。
+> クライアントが新しいラベルで更新するには、最大 24 時間かかる場合があります。
 
 ### <a name="enable-dke-in-your-client"></a>クライアントで DKE を有効にする
 
-Office Insider を使用している場合は、DKE が有効になります。 それ以外の場合は、次のレジストリキーを追加して、クライアントに対して DKE を有効にします。
+Insider を使用している場合Office DKE が有効になります。 それ以外の場合は、次のレジストリ キーを追加して、クライアントの DKE を有効にします。
 
 ```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
@@ -549,6 +549,6 @@ Office Insider を使用している場合は、DKE が有効になります。 
 
 ## <a name="migrate-protected-files-from-hyok-labels-to-dke-labels"></a>保護されたファイルを HYOK ラベルから DKE ラベルに移行する
 
-必要に応じて、DKE の設定を終了すると、HYOK labels を使用して保護したコンテンツを DKE ラベルに移行できます。 移行するには、AIP スキャナーを使用します。 スキャナーの使用を開始するには、「 [Azure Information Protection の統合ラベル付けされたスキャナーとは](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)」を参照してください。
+必要な場合は、DKE の設定が完了したら、HYOK ラベルを使用して保護したコンテンツを DKE ラベルに移行できます。 移行するには、AIP スキャナーを使用します。 スキャナーの使用を開始するには [、「Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)統合ラベル付けスキャナーとは」を参照してください。
 
-コンテンツを移行しない場合、HYOK の保護されたコンテンツは影響を受けません。
+コンテンツを移行しない場合、HYOK で保護されたコンテンツは影響を受けません。

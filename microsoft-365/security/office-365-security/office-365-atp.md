@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: 11b6445e17fc870c2999ddb56715b0c5cee5b5fc
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 86e738fa9390cc40b06c10a27f3198715bb991fd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357709"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614812"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -72,7 +72,7 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 |Microsoft Defender for Office 365 プラン 1|Microsoft Defender for Office 365 プラン 2|
 |---|---|
-|<br/>構成、保護、および検出機能: <ul><li>[添付ファイル保護](atp-safe-attachments.md)</li><li>[リンク保護](atp-safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保護のフィッシング詐欺対策](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 プラン 1 機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:</li><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレータ](attack-simulator.md)</li></ul>|
+|構成、保護、および検出機能: <ul><li>[添付ファイル保護](atp-safe-attachments.md)</li><li>[リンク保護](atp-safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保護のフィッシング詐欺対策](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 プラン 1 機能 <br>--- プラスのもの ---<br> 自動化、調査、修復、教育の機能:<ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレータ](attack-simulator.md)</li><li>[キャンペーン ビュー](campaigns.md)</li></ul>|
 |
 
 - Microsoft Defender for Office 365 プラン 2 は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 Security と Microsoft 365 E5 に含まれています。
@@ -85,12 +85,12 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 - 現在のサブスクリプションに Microsoft Defender for Office 365 が含まれていない場合は、[販売員に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)し、Defender for Office 365 が組織でどのように機能するかを確認してください。
 
-## <a name="configure-microsoft-defender-for-office-365-policies"></a>Microsoft Defender for Office 365 ポリシーを構成する
+## <a name="configure-microsoft-defender-for-office-365-policies"></a>Microsoft Defender for Office 365 のポリシーを構成する
 
-Microsoft Defender for Office 365 を使用して、組織のセキュリティ チームは、セキュリティ/コンプライアンス センターでポリシーを定義することにより、保護を構成できます ([https://protection.office.com](https://protection.office.com) > **脅威管理** > **ポリシー** に移動します)。
+Microsoft Defender for Office 365 を使用して、組織のセキュリティ チームは、セキュリティ/コンプライアンス センターでポリシーを定義することにより、保護を構成できます ([<https://protection.office.com> \> **脅威管理** \> **ポリシー**] に移動します)。
 
 > [!TIP]
-> 定義するポリシーの簡単なリストについては、「[脅威から保護する](protect-against-threats.md)」を参照してください。
+> 定義するポリシーの簡便なリストについては、「[脅威から保護する](protect-against-threats.md)」を参照してください。
 
 ## <a name="defender-for-office-365-policies"></a>Defender for Office 365 ポリシー
 
@@ -106,7 +106,7 @@ Microsoft Defender for Office 365 を使用して、組織のセキュリティ 
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Microsoft Defender for Office 365 レポートを表示する
 
-Microsoft Defender for Office 365 には、Defender for Office 365 パフォーマンスを監視するための高度な[レポート ダッシュボード](view-reports-for-atp.md)が含まれています。 アクセスするには、セキュリティ/コンプライアンス センターの [**レポート**]  >  [**ダッシュ ボード**] の順に移動します。
+Microsoft Defender for Office 365 には、Defender for Office 365 のパフォーマンスを監視するための高度な[レポート ダッシュボード](view-reports-for-atp.md)が含まれています。 セキュリティ/コンプライアンス センターの [**レポート**] \> [**ダッシュ ボード**] でアクセスできます。
 
 レポートはリアルタイムで更新され、最新の分析情報を提供します。 また、これらのレポートは推奨事項を提供し、間近に迫った脅威を警告します。 定義済みレポートには次のものが含まれます:
 

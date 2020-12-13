@@ -1,9 +1,9 @@
 ---
-title: 高度な電子情報開示でケースデータをエクスポートする
+title: Advanced eDiscovery でケース データをエクスポートする
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -14,35 +14,35 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: 高度な電子情報開示のエクスポートプロセスを使用して、電子情報開示ケースのデータおよびレビューの結果をエクスポートするためのガイドラインについて説明します。
+description: Advanced eDiscovery のエクスポート プロセスを使用して、電子情報開示ケース データとレビュー結果をエクスポートする際のガイドラインについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef717ca82962417856c65cae605c445971b27256
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 52546e9107e0a1524a32c4c85c896a47dd66b35c
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936414"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662862"
 ---
-# <a name="export-case-data-in-advanced-ediscovery-classic"></a>高度な電子情報開示でケースデータをエクスポートする (クラシック)
+# <a name="export-case-data-in-advanced-ediscovery-classic"></a>Advanced eDiscovery (クラシック) でケース データをエクスポートする
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
-上級電子情報開示のエクスポートプロセスでは、高度な電子情報開示のコンテンツと外部レビューの結果をエクスポートできます。 
+Advanced eDiscovery のエクスポート プロセスでは、Advanced eDiscovery コンテンツと外部レビューの結果をエクスポートできます。 
   
-## <a name="guidelines-for-exporting-data"></a>データをエクスポートするためのガイドライン
+## <a name="guidelines-for-exporting-data"></a>データをエクスポートする際のガイドライン
 
-- 高度な電子情報開示から生成されたエクスポートデータを確認できます。たとえば、関連する要素をドキュメントレビューチームに配布したり、外部ドキュメントレビューツールにエクスポートしたりすることができます。
+- Advanced eDiscovery から生成されたエクスポート データを確認して、関連する要素をドキュメント レビュー チームに配布したり、外部のドキュメント レビュー ツールにエクスポートしたりすることができます。
     
-- 高度な電子情報開示処理中およびその後に、いつでもエクスポート出力を生成して操作できます。 標準のシナリオでは、関連性トレーニングとバッチ計算が正常に完了した後で、重要な結果が得られます。 たとえば、最も関連のあるファイル1000のサンプルを生成し、高度な電子情報開示のパフォーマンスを評価してから進めることができます。
+- Advanced eDiscovery 処理中および Advanced eDiscovery 処理後のエクスポート出力は、いつでも生成および操作できます。 標準的なシナリオでは、関連性トレーニングとバッチ計算が正常に完了した後、重要な結果が得られます。 たとえば、1,000 の最も関連性の高いファイルのサンプルを生成し、Advanced eDiscovery のパフォーマンスを評価してから続行できます。
     
-- データベースに大量のデータをエクスポートすると、必要なデータベースのサイズや、高度な電子情報開示データベースの必要な構成に大きな影響を与える可能性があります。
+- 大量のデータをデータベースにエクスポートすると、必要なデータベース サイズと Advanced eDiscovery データベースの必要な構成に大きな影響を与える可能性があります。
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   
-[結果のエクスポート](export-results-in-advanced-ediscovery.md)
+[結果のエクスポート ](export-results-in-advanced-ediscovery.md)
   
 [バッチ履歴の表示と結果のエクスポート](view-batch-history-and-export-past-results.md)
 

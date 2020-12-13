@@ -20,12 +20,12 @@ description: 任意の DNS ホスティング プロバイダーで Microsoft 36
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 01fd78033afb6add41975826ed8daddf052826b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519295"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655602"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -33,9 +33,9 @@ ms.locfileid: "49519295"
 
 これらの手順を完了すると、お客様のドメインは、ドメインを購入したホストには登録されたままとなりますが、Microsoft 365 では、メール アドレス (user@yourdomain.com など) やその他のサービスで使用できます。
 
-ドメインを追加しない場合、組織内のユーザーは、追加するまでの間メール アドレスに onmicrosoft.com ドメインを使用します。 ユーザーを追加する前にドメインを追加することが重要です。それにより、ユーザーを再度セットアップする必要がなくなります。
+ドメインを追加しない場合、組織内のユーザーは、メール アドレスに onmicrosoft.com ドメインを使用します。 ユーザーを追加する前にドメインを追加することが重要です。それにより、ユーザーを再度セットアップする必要がなくなります。
 
-探している内容が見つからない場合は、[ドメインに関する FAQ](../setup/domains-faq.md) を確認してください。
+探している内容が見つからない場合は、[ドメインに関する FAQ](../setup/domains-faq.yml) を確認してください。
 
 ## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>手順 1: TXT または MX レコードを追加してドメインの所有を確認する 
 
