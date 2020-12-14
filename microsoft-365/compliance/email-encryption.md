@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: Office Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Microsoft 365 暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
-ms.openlocfilehash: 4b18110664c602b5b09e60cbd791559069297be4
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Office 365 Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Microsoft 365 暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
+ms.openlocfilehash: 25568d4e39c2fe7ca2dea214276be5d7f6986518
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580710"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663022"
 ---
 # <a name="email-encryption"></a>メールの暗号化
 
-この記事では、Office 365 Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Microsoft 365 での暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
+この記事では、Office Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Microsoft 365 での暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
   
 Microsoft 365 では、電子メールのセキュリティのビジネス ニーズを満たすために複数の暗号化オプションが提供されています。 この記事では、Office 365 でメールを暗号化する 3 つの方法を紹介します。 Office 365 のすべてのセキュリティ機能については、[Office 365 トラスト センター](https://go.microsoft.com/fwlink/p/?LinkID=282470)にアクセスしてください。 この記事では、Microsoft 365 管理者が Office 365 で電子メールを保護する上で役立つ次の 3 つの種類の暗号化を紹介します。
   
@@ -38,7 +38,7 @@ Microsoft 365 では、電子メールのセキュリティのビジネス ニ�
 
 - Information Rights Management (IRM)。
 
-## <a name="email-encryption-and-how-microsoft-365-uses-it"></a>メールの暗号化と Microsoft 365 での使用方法
+## <a name="what-is-email-encryption-and-how-does-microsoft-365-use-it"></a>電子メールの暗号化とはどのようなもので、Microsoft 365 ではどのように使用しますか?
 
 暗号化とは、認証された受信者だけが特定の情報をデコードおよび利用できるようにその情報をエンコードするプロセスのことです。 Microsoft 365 では、サービスでの使用とカスタマー コントロールとしての使用の 2 つの方法で暗号化を使用します。 サービスでは、暗号化は Microsoft 365 で既定で使用されるため、ユーザーによる設定は特に必要ありません。 たとえば、Microsoft 365 はトランスポート層セキュリティ (TLS) を使用して、2 つのサーバー間の接続またはセッションを暗号化します。 
   
@@ -68,16 +68,11 @@ Microsoft 365 内の組織間、または Microsoft 365 と Microsoft 365 外部
 |推奨事項とシナリオ例|顧客であろうと他の会社であろうと、組織外のユーザーに機密のビジネス情報を送信する場合は、OME を使用することをお勧めします。 例:  <br/>  顧客にクレジット カード請求書を送信する銀行員  <br/>  患者に医療記録を送信する診療所  <br/>  他の弁護士に法的な機密情報を送信する弁護士|使用制限と暗号化の両方を適用する場合は、IRM を使用することをお勧めします。例:  <br/>  新しい製品に関する機密情報の詳細をチームに送信するマネージャーが [転送不可] オプションを適用する場合。  <br/>  エグゼクティブが、Office 365 を使用しているパートナーからの添付ファイルを含む重要な提案書を別の会社と共有しなければならず、電子メールと添付ファイルの両方を保護する必要がある場合。|ユーザーの組織または受信者の組織のいずれかが、適切なピアツーピア暗号化を必要とする場合は、S/MIME を使用することをお勧めします。  <br/>  S/MIME は、次のシナリオで最もよく使用されます。  <br/>  他の政府機関と通信する政府機関  <br/>  政府機関と通信する会社|
 ||
 
-[Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information) とメール暗号化の両方を使用してデータを保護する場合は、次のことを検討してください。
-- OME および IRM 暗号化で秘密度ラベルを使用できます。 詳細については、「[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#what-happens-to-existing-encryption-when-a-labels-applied)」を参照してください。
-- S/MIME を使用してデジタル署名されたメールに秘密度ラベルを適用できます。
-- エンドツーエンド暗号化によって保護されたメッセージはポリシーによって処理されないため、S/MIME を使用して暗号化されたメールに秘密度ラベルを適用することはできません。
-
-## <a name="encryption-options-available-for-my-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションで利用可能な暗号化オプション
+## <a name="what-encryption-options-are-available-for-my-microsoft-365-subscription"></a>使用中の Microsoft 365 サブスクリプションでは、どの暗号化オプションを利用できますか?
 
 Microsoft 365 サブスクリプションの電子メール暗号化オプションについては、「[Exchange Online サービスの説明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)」を参照してください。 ここでは、次の暗号化の機能に関する情報を確認できます。
-
-- IRM 機能と新しい OME 機能の両方を含む Azure RMS
+  
+- Azure RMS、IRM 機能と OME の両方を含む
 
 - S/MIME
 

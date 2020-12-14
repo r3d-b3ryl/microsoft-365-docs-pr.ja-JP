@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b120e2bffa4554fb435fe8de2e22d6de2f851544
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: a5fa261f1e0db5c8ed66dfdebdca764976fe3130
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604339"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658674"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
-[カスタムの機密情報の種類](custom-sensitive-info-types.md) は機密性の高いアイテムの識別に利用され、これにより、不注意による共有や不適切な共有を防止することができます。 以下に基づいて、カスタムの機密情報の種類を定義します。
+[カスタムの機密情報の種類](custom-sensitive-info-types.md) は機密性の高いアイテムの識別に利用され、不注意による共有や不適切な共有の防止に役立ちます。 以下に基づいて、カスタムの機密情報の種類を定義します。
 
 - パターン
 - *従業員*、*バッジ*、*ID* などのキーワード証拠
@@ -37,7 +37,7 @@ ms.locfileid: "49604339"
 
 しかし、汎用的なパターンに基づいて一致を検出するカスタムの機密情報の種類ではなく、正確なデータ値を使用するカスタムの機密情報の種類が必要な場合はどうでしょう。 Exact Data Match (EDM) ベースの分類では、次の目的で設計されたカスタムの機密情報の種類を作成できます。
 
-- 動的で更新可能なものにする
+- 動的に、簡単に更新する
 - 拡張性の高いものにする
 - 結果的に誤検知の数を減らす
 - 構造化された機密データを操作する
@@ -122,7 +122,7 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
       ```xml
       <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
             <DataStore name="PatientRecords" description="Schema for patient records" version="1">
-                  <Field name="PatientID" searchable="true" />
+                  <Field name="PatientID" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
                   <Field name="MRN" searchable="true" />
                   <Field name="FirstName" />
                   <Field name="LastName" />
@@ -134,6 +134,39 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
             </DataStore>
       </EdmSchema>
       ```
+
+##### <a name="configurable-match-using-the-caseinsensitive-and-ignoreddelimiters-fields"></a>大文字と小文字を区別せず、区切り文字フィールドを無視する構成可能な一致
+
+上記のXMLサンプルは、`caseInsensitive` フィールドと `ignoredDelimiters` フィールドを使用しています。 
+
+スキーマ定義に `true` の値に設定された ***caseInsensitive** _ フィールドを含めると、EDM は `PatientID` フィールドの大文字と小文字の違いに基づいてアイテムを除外しません。 したがって、EDM は、`PatientID` _ *FOO-1234** と **fOo-1234** が同一であると見なします。
+
+サポートされている文字を含む **_ignoreDelimiters_*_ フィールドを含めると、EDM は`PatientID`  内のそれらの文字を無視します。 したがって、EDM は、`PatientID` _* FOO-1234** と `PatientID`**FOO＃1234** が同一であると見なします。 `ignoredDelimiters` フラグは英数字以外の文字をサポートします。次にいくつかの例を示します。
+- \.
+- \-
+- \/
+- \_
+- \*
+- \^
+- \#
+- \!
+- \?
+- \[
+- \]
+- \{
+- \}
+- \\
+- \~
+- \; 
+
+- `ignoredDelimiters`フラグは以下をサポートしていません:
+- 0 から 9 の文字
+- A から Z
+- a から z
+- \"
+- \,
+
+この例では、`caseInsensitive` と`ignoredDelimiters` の両方が使用されている場合、EDMは **FOO-1234** と **fOo#1234** を同一と見なし、アイテムを患者記録の機密情報タイプとして分類します。  
 
 4. [セキュリティ/コンプライアンス センター PowerShellに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
@@ -265,6 +298,9 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
 EDM ベースの分類に使用するフィールドの変更など、**edm.xml** ファイルを変更する場合は、次の手順に従います:
 
+> [!TIP]
+> EDM スキーマとデータ ファイルを変更して、**構成可能な一致** を利用できます。 構成されている場合、EDM はアイテムを評価するときに、大文字と小文字の違いと一部の区切り文字を無視します。 これにより、xml スキーマと機密データ ファイルの定義が容易になります。 詳細については、「[構成可能な一致を使用するために完全一致スキーマを変更する](sit-modify-edm-schema-configurable-match.md)」を参照してください。
+
 1. **edm.xml** ファイルを編集します (これは、この記事の「[スキーマを定義する](#define-the-schema-for-your-database-of-sensitive-information)」セクションで説明したファイルです)。
 
 2. [セキュリティ/コンプライアンス センター PowerShellに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
@@ -317,66 +353,6 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
       > [!TIP]
       >  確認なしで変更を行う場合は、手順 2 で次のコマンドレットを代わりに使用します: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
 
-
-<!-- salt notes
-need two salting procedures, one for onestep from the externally facing and another for two step, on an internal machine then the upload from the external machine
-
-- create A  folder put the edmupload agent and, csv and salt file there, run all processes there
-- 
-- stuff you need to have first: DataStoreName, /DataFile name (csv file)  /Hashlocation
-
-- salt can be randomly generated by Microsoft or can be provided by the customer. If provided by the customer it must follow  format of 64 character, and can contain only letters or 0-9 characters.  Use a website to generate a valid salt value.
- 
-- can run EDMuploadagent.exe from PS or Windows cmd window . tested on Windows Server 2016 or Windows 10 and dot net version 4.6.2
-
-when defiuning the schema file the searchable fields must be either an out of box SIT or custom SIT, only 5 fields )column headings) can be searchable
-
-1. From outbound access device from the cmd prompt run EdmUploadAgent.exe /Authorize -  
-2. data store schema must have already been uploaded
-3.  create hash first then do upload
-4. EdmUploadAgent.exe /CreateHash /DataFile (where the data file is ) E:\emd\test\data\schema32_1000000,csv /HashLocation  (where to store it) E:\edm\tat\hash this makes the salt file and the hash file as output
-5. next is upload EdmUploadAgent.exe /UploadHash /DataStoreName (found in the Schema file DataSore name="FOO" /HashFile (path to hash file locaztion and file name /HashLocation path to hash)  for example
-1.EdmUploadAgent/exe /UploadHash /DataStoreName schema321 /HashFile E:\edm\test\hash\schema32_10000000.EdmHash /HashLocation E:\edm\test\hash  -this one  uses MSFT generated salt, so no need to provide
-
-Salt is an optional parameter so if yo uwant to use a custom salt add /salt and the salt value if salt file not copied to the outbound machine 
-
-OR copy both files hash and salt to the same directory and the commmand will get both
-
-
-OR do it in single step hash, salt ulopad
-
-!! once they download the updated upload agent they will always have SALT, there is no going back.
-
-
-all in one step: EdmUploadAgent.exe /UploadData /DataStoreName schema321 /DataFile E:\edm\test\data\schema32_10000.csv /HashLocation E:\edm\test\hash
-
-tshooting/check status cmd
-
-
-
-Once it gets to completed the admin can start using it in the custom SIT
-
-they have to get their own custom SALT
-
-just copy SALT over in a secure fashion
-
-
-
-
-
-
-
-
-
-
-1.
-6.
-7.
-1.  
-
-
- -->
-
 ### <a name="part-2-hash-and-upload-the-sensitive-data"></a>パート 2: 機密データをハッシュ化してアップロードする
 
 このフェーズでは、カスタムのセキュリティ グループとユーザー アカウントをセットアップし、EDM アップロード エージェント ツールをセットアップします。 次に、このツールを使用して機密データにソルト値を付与してハッシュ化し、データをアップロードします。
@@ -410,11 +386,21 @@ just copy SALT over in a secure fashion
 >[!NOTE]
 > この手順を開始する前に、自分が **EDM\_DataUploaders** セキュリティ グループのメンバーであることを確認します。
 
+> [!TIP]
+> オプションとして、アップロードする前に、以下を実行して csv ファイルに対して検証を実行することもできます。
+>
+>`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+>
+>すべての EdmUploadAgent.exe > サポートされているパラメータの詳細情報については
+>
+> `EdmUploadAgent.exe /?`
+
+
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>サブスクリプションの種類別の EDM アップロードエージェントへのリンク
 
-- [商用 + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
-- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
-- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
+- [商用 + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) - ほとんどの商用のお客様はこれを使用する必要があります
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) - これは特に高セキュリティの政府機関向けクラウド加入者を対象にしています
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - これは特に米国国防総省のクラウド顧客対象にしています
 
 1. EDMUploadAgent の作業ディレクトリを作成します。 たとえば、**C:\EDM\Data** です。 そこに **PatientRecords.csv** ファイルを配置します。
 
@@ -436,9 +422,9 @@ just copy SALT over in a secure fashion
 
 4. 機密データをハッシュ化してアップロートするには、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
-`EdmUploadAgent.exe /UploadData /DataStoreName \<DataStoreName\> /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
+`EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
 
-例: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash**
+例: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
 これにより、ランダムに生成されたソルト値がハッシュに自動的に追加され、セキュリティが強化されます。 オプションで独自のソルト値を使用する場合は、コマンドに **/Salt<saltvalue>** を追加します。 この値は 64 文字の長さにする必要があり、a-z 文字と 0-9 文字のみを使用することができます。
 
@@ -456,11 +442,11 @@ just copy SALT over in a secure fashion
 
 1. コマンド プロンプト ウィンドウで、次のコマンドを実行します。
 
-`EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
+`EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
 
 例:
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash**
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
 **/Salt<saltvalue>** オプションを指定しなかった場合、このコマンドは次の拡張子を持つハッシュ化されたファイルとソルト ファイルを出力します。
 - .EdmHash
@@ -524,11 +510,14 @@ $user = "$env:USERDOMAIN\\$env:USERNAME"
 $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
+$schemaext = '.xml'
 \# Assuming CSV file name is same as data store name
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
-$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ' /HashLocation' + $hashLocation
+\# Assuming Schema file name is same as data store name
+$schemaFile = "$fileLocation\\$dataStoreName$schemaext"
+$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ' /HashLocation' + $hashLocation + ' /Schema ' + $schemaFile
 \# Set up actions associated with the task
 $actions = @()
 $actions += New-ScheduledTaskAction -Execute $edmuploader -Argument $uploadDataArgs -WorkingDirectory $edminstallpath
@@ -557,12 +546,16 @@ $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $edmext = '.EdmHash'
+$schemaext = '.xml'
 \# Assuming CSV file name is same as data store name
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 $hashFile = "$fileLocation\\$dataStoreName$edmext"
+\# Assuming Schema file name is same as data store name
+$schemaFile = "$fileLocation\\$dataStoreName$schemaext "
+
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
-$createHashArgs = '/CreateHash' + ' /DataFile ' + $dataFile + ' /HashLocation ' + $hashLocation
+$createHashArgs = '/CreateHash' + ' /DataFile ' + $dataFile + ' /HashLocation ' + $hashLocation + ' /Schema ' + $schemaFile
 $uploadHashArgs = '/UploadHash /DataStoreName ' + $dataStoreName + ' /HashFile ' + $hashFile
 \# Set up actions associated with the task
 $actions = @()
@@ -581,6 +574,7 @@ $password=\[Runtime.InteropServices.Marshal\]::PtrToStringAuto(\[Runtime.Interop
 \# Register the scheduled task
 $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
+
 ```
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>パート 3: Microsoft クラウド サービスで EDM ベースの分類を使用する
@@ -642,3 +636,5 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [DLP ポリシーの概要](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [構成可能な一致を使用するために完全一致スキーマを変更する](sit-modify-edm-schema-configurable-match.md)
+

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
-ms.openlocfilehash: 81c5e74ec45cc633b3a4ba46c7865d0a643af2cd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d83c41b52db5c0533a9a5d52ab20ace9b612e1e6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616694"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658651"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -45,7 +45,7 @@ Exchange Online のメールボックスを使用している Microsoft 365 の�
 - スパム対策ポリシーを変更する場合、名前、優先順位、有効/無効の切り替え、そして受信者フィルターに関連する設定の変更は、実際にはスパム フィルター ルールを変更しています。 他のすべての設定は、関連付けられているスパム フィルター ポリシーを変更します。
 - スパム対策ポリシーを削除すると、スパム フィルター ルールおよび関連付けられたスパム フィルター ポリシーが削除されます。
 
-Exchange Online PowerShell またはスタンドアロン EOP PowerShell では、ポリシーとルールを個別に管理します。 詳細については、このトピックで後述する「[Exchange Online PowerShell または スタンドアロン EOP PowerShell を使用して迷惑メール対策ポリシーを構成する](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies)」セクションを参照してください。
+Exchange Online PowerShell またはスタンドアロン EOP PowerShell では、ポリシーとルールを個別に管理します。 詳細については、この記事で後述する「[Exchange Online PowerShell または スタンドアロン EOP PowerShell を使用して迷惑メール対策ポリシーを構成する](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies)」セクションを参照してください。
 
 各組織には Default という名前の組み込みのスパム対策ポリシーがあり、以下の特徴があります。
 
@@ -86,7 +86,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
    - **[名前]**: わかりやすい一意のポリシー名を入力します。 以下の文字は使用しないでください: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`
 
-      これらの文字が含まれているスパム対策ポリシーを、Exchange 管理センター (EAC) で以前に作成した場合は、PowerShell でそのスパム対策ポリシーの名前を変更する必要があります。 手順については、このトピックで後述する「[PowerShell を使用してスパム フィルター ルールを変更する](#use-powershell-to-modify-spam-filter-rules)」を参照してください。
+      これらの文字が含まれているスパム対策ポリシーを、Exchange 管理センター (EAC) で以前に作成した場合は、PowerShell でそのスパム対策ポリシーの名前を変更する必要があります。 手順については、この記事で後述する「[PowerShell を使用してスパム フィルター ルールを変更する](#use-powershell-to-modify-spam-filter-rules)」を参照してください。
 
    - **[説明]**: ポリシーについての説明を入力します (オプション)。
 
@@ -382,7 +382,7 @@ Exchange Online PowerShell またはスタンドアロンの EOP PowerShell で�
 
 次の迷惑メール対策ポリシー設定は、PowerShell でのみ使用できます。
 
-- _MarkAsSpamBulkMail_ パラメーター (既定は `On`)。 この設定の影響については、このトピックで前述した「[セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを作成する](#use-the-security--compliance-center-to-create-anti-spam-policies)」で説明されています。
+- _MarkAsSpamBulkMail_ パラメーター (既定は `On`)。 この設定の影響については、この記事で前述した「[セキュリティ/コンプライアンス センターを使用して迷惑メール対策ポリシーを作成する](#use-the-security--compliance-center-to-create-anti-spam-policies)」で説明されています。
 
 - 次の設定は、エンドユーザーの迷惑メール検疫通知の設定です。
 
@@ -513,7 +513,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>PowerShell を使用してスパム フィルター ポリシーを変更する
 
-以下の項目以外には、、PowerShell を使ってスパム フィルター ポリシーを変更する場合も、このトピックで前述の「[手順 1: PowerShell を使用してスパム フィルター ポリシーを作成する](#step-1-use-powershell-to-create-a-spam-filter-policy)」で説明したポリシーを作成する場合と同じ設定を使用できます。
+以下の項目以外には、、PowerShell を使ってスパム フィルター ポリシーを変更する場合も、この記事で前述の「[手順 1: PowerShell を使用してスパム フィルター ポリシーを作成する](#step-1-use-powershell-to-create-a-spam-filter-policy)」で説明したポリシーを作成する場合と同じ設定を使用できます。
 
 - 特定のポリシーを既定のポリシー (全員に適用され、常に **Lowest** 優先度を持ち、削除することはできない) に切り替える _MakeDefault_ スイッチは、PowerShell でスパム フィルター ポリシーを変更するときにのみ使用できます。
 
@@ -531,7 +531,7 @@ Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 
 PowerShell でスパム フィルター ルールを変更するときに使用できない唯一の設定は、無効なルールの作成を可能にする _Enabled_ パラメーターです。 既存のスパム フィルター ルールを有効または無効にするには、次のセクションを参照してください。
 
-それ以外は、PowerShell でスパム フィルター ルールを変更する際に利用可能な追加の設定はありません。 このトピックで前述の「[手順 2: PowerShell を使用してスパム フィルター ルールを作成する](#step-2-use-powershell-to-create-a-spam-filter-rule)」セクションでルールを作成したときと同じ設定を使用できます。
+それ以外は、PowerShell でスパム フィルター ルールを変更する際に利用可能な追加の設定はありません。 この記事で前述の「[手順 2: PowerShell を使用してスパム フィルター ルールを作成する](#step-2-use-powershell-to-create-a-spam-filter-rule)」セクションでルールを作成したときと同じ設定を使用できます。
 
 スパム フィルター ルールを変更するには、次の構文を使用します。
 
