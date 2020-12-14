@@ -106,6 +106,8 @@
           href: custom-sensitive-info-types.md
         - name: Exact Data Match によりカスタムの機密情報の種類を作成する
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: 構成可能な一致を使用するために完全一致スキーマを変更する
+          href: sit-modify-edm-schema-configurable-match.md
         - name: カスタムの機密情報の種類を作成する -セキュリティ/コンプライアンス センター
           href: create-a-custom-sensitive-information-type.md
         - name: カスタムの機密情報の種類を作成する - PowerShell
