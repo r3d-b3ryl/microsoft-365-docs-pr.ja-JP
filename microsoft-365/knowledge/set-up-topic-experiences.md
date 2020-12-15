@@ -1,148 +1,147 @@
 ---
-title: 'ナレッジ管理をセットアップする (プレビュー) '
-description: ナレッジ管理をセットアップする方法について説明します。
+title: Microsoft 365 でのトピック エクスペリエンスのセットアップ
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 8/1/2020
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-search.appverid: ''
+search.appverid: MET150
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-ms.openlocfilehash: c7c30c0f8c1ec4cf8836547e2a23e1e2e6f4f783
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: Microsoft 365 でトピック エクスペリエンスをセットアップする方法について説明します。
+ms.openlocfilehash: cc157463c8c85f25ba232c344294ef3e0fabba23
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48989001"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667969"
 ---
-# <a name="set-up-knowledge-management-preview"></a><span data-ttu-id="b2388-103">ナレッジ管理をセットアップする (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="b2388-103">Set up Knowledge Management (Preview)</span></span>
+# <a name="set-up-topic-experiences-in-microsoft-365"></a><span data-ttu-id="f664a-103">Microsoft 365 でのトピック エクスペリエンスのセットアップ</span><span class="sxs-lookup"><span data-stu-id="f664a-103">Set up topic experiences in Microsoft 365</span></span>
 
-> [!Note] 
-> <span data-ttu-id="b2388-104">この記事の内容は、Project Cortex のプライベートプレビュー用です。</span><span class="sxs-lookup"><span data-stu-id="b2388-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="b2388-105">[Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)</span><span class="sxs-lookup"><span data-stu-id="b2388-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
+<span data-ttu-id="f664a-104">Microsoft 365 管理センターを使用して、トピックエクスペリエンスを設定および [構成できます](knowledge-management-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="f664a-104">You can use the Microsoft 365 admin center to set up and configure [topic experiences](knowledge-management-overview.md).</span></span> 
 
-<span data-ttu-id="b2388-106">Microsoft 365 管理センターを使用して、 [ナレッジ管理](knowledge-management-overview.md)をセットアップして構成することができます。</span><span class="sxs-lookup"><span data-stu-id="b2388-106">You can use the Microsoft 365 admin center to set up and configure [Knowledge Management](knowledge-management-overview.md).</span></span> 
+<span data-ttu-id="f664a-105">環境内でトピックをセットアップおよび構成する最善の方法を計画することが重要です。</span><span class="sxs-lookup"><span data-stu-id="f664a-105">It is important to plan the best way to set up and configure topics in your environment.</span></span> <span data-ttu-id="f664a-106">この記事の手順を開始 [する前に、「](plan-topic-experiences.md) トピックエクスペリエンスを計画する」を必ずお読みください。</span><span class="sxs-lookup"><span data-stu-id="f664a-106">Be sure to read [Plan topic experiences](plan-topic-experiences.md) before you begin the procedures in this article.</span></span>
 
-> [!Important]
-> <span data-ttu-id="b2388-107">環境でナレッジマネジメントをセットアップして構成するための最善の方法を計画することが重要です。</span><span class="sxs-lookup"><span data-stu-id="b2388-107">It is important to plan the best way to set up and configure Knowledge Management in your environment.</span></span> <span data-ttu-id="b2388-108">たとえば、次の点について考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2388-108">For example, you will need to make considerations about the following:</span></span>
-- <span data-ttu-id="b2388-109">トピックを分析する SharePoint サイト。</span><span class="sxs-lookup"><span data-stu-id="b2388-109">Which SharePoint sites you want to analyze for topics.</span></span>
-- <span data-ttu-id="b2388-110">トピックを表示するユーザーを指定します。</span><span class="sxs-lookup"><span data-stu-id="b2388-110">Which users you want to make topics visible to.</span></span>
-- <span data-ttu-id="b2388-111">トピックセンターのトピックを管理するためのアクセス許可を付与するユーザー。</span><span class="sxs-lookup"><span data-stu-id="b2388-111">Which users you want to give permissions to manage topics in the topic center.</span></span>
-- <span data-ttu-id="b2388-112">トピックセンターでトピックを作成または編集するためのアクセス許可を付与するユーザー。</span><span class="sxs-lookup"><span data-stu-id="b2388-112">Which users you want to give permissions to create or edit topics in the topic center.</span></span>
-- <span data-ttu-id="b2388-113">トピックセンターに付ける名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="b2388-113">What name you want to give your topic center.</span></span>
+<span data-ttu-id="f664a-107">Microsoft 365 管理センターにアクセスしてトピックエクスペリエンスを設定するには、全体管理者または SharePoint 管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="f664a-107">You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up topic experiences.</span></span>
 
-> [!Note]
-> <span data-ttu-id="b2388-114">トピックの表示、トピックの管理、およびトピックの作成と編集に必要なアクセス許可をユーザーに割り当てるには、セキュリティグループを作成すると便利です。</span><span class="sxs-lookup"><span data-stu-id="b2388-114">You may find it useful to create security groups to assign your users the permissions needed to view topics, manage topic, and create and edit topics.</span></span>
+## <a name="set-up-topic-experiences"></a><span data-ttu-id="f664a-108">トピック エクスペリエンスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="f664a-108">Set up topic experiences</span></span>
 
-<span data-ttu-id="b2388-115">管理者は、Microsoft 365 管理センターのナレッジ管理設定を使用して、 [選択した設定をいつ](topic-experiences-discovery.md) でも変更することができます。</span><span class="sxs-lookup"><span data-stu-id="b2388-115">An admin can also [make changes to your selected settings anytime after setup](topic-experiences-discovery.md) through the Knowledge Management settings in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="f664a-109">Microsoft 365 でトピック エクスペリエンスを設定するには</span><span class="sxs-lookup"><span data-stu-id="f664a-109">To set up topic experiences in Microsoft 365</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="b2388-116">Requirements</span><span class="sxs-lookup"><span data-stu-id="b2388-116">Requirements</span></span> 
-<span data-ttu-id="b2388-117">グローバル管理者または SharePoint 管理者のアクセス許可を持っている必要があります。これを行うには、Microsoft 365 管理センターにアクセスして、組織のナレッジタスクを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2388-117">You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Organizational knowledge tasks.</span></span>
+1. <span data-ttu-id="f664a-110">Microsoft [365 管理センターで、[](https://admin.microsoft.com)セットアップ] **を選択し**、[ファイルとコンテンツ] **セクションを表示** します。</span><span class="sxs-lookup"><span data-stu-id="f664a-110">In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then view the **Files and content** section.</span></span>
+2. <span data-ttu-id="f664a-111">[ファイルと **コンテンツ] セクションで** 、[ユーザーをナレッジに **接続する] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="f664a-111">In the **Files and content** section, click **Connect people to knowledge**.</span></span>
 
-## <a name="set-up-your-knowledge-network"></a><span data-ttu-id="b2388-118">ナレッジネットワークをセットアップする</span><span class="sxs-lookup"><span data-stu-id="b2388-118">Set up your knowledge network</span></span>
+    ![ユーザーを知識に接続する](../media/admin-org-knowledge-options.png) 
 
-<span data-ttu-id="b2388-119">ナレッジネットワークをセットアップするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="b2388-119">Setting up your knowledge network walks you through the following:</span></span>
+3. <span data-ttu-id="f664a-113">[知識 **へのユーザーの** 接続] ページで、[開始 **]** をクリックしてセットアップ プロセスの手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="f664a-113">On the **Connect people to knowledge** page, click **Get started** to walk you through the setup process.</span></span>
 
-- <span data-ttu-id="b2388-120">トピック検出: 検出から除外するトピックソースとトピックを選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-120">Topic discovery: Selecting topic sources and topics to  exclude from discovery.</span></span>
-- <span data-ttu-id="b2388-121">トピックの表示: [検索] および [トピックページ] で、トピックを強調表示できるユーザーを選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-121">Topic visibility: Selecting who can view topics as highlights, in search and topic pages.</span></span>
-- <span data-ttu-id="b2388-122">トピックのアクセス許可: トピックを作成、編集、および管理できるユーザーを選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-122">Topic permissions: Selecting who can create, edit, and manage topics.</span></span>
-- <span data-ttu-id="b2388-123">トピックセンター: トピックセンターを作成します。</span><span class="sxs-lookup"><span data-stu-id="b2388-123">Topic center: Create your topic center.</span></span>
-- <span data-ttu-id="b2388-124">レビュー: 設定を確認して適用します。</span><span class="sxs-lookup"><span data-stu-id="b2388-124">Review: Check and apply your settings.</span></span>
+    ![開始する](../media/k-get-started.png) 
 
-<span data-ttu-id="b2388-125">ナレッジネットワークをセットアップするには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="b2388-125">To set up your knowledge network:</span></span>
+4. <span data-ttu-id="f664a-115">[ナレッジ **ネットワークでトピックを検索する方法** の選択] ページで、トピックの検出を構成します。</span><span class="sxs-lookup"><span data-stu-id="f664a-115">On the **Choose how the knowledge network can find topics** page, you will configure topic discovery.</span></span> <span data-ttu-id="f664a-116">**[SharePoint トピック ソース** の選択] セクションで、検出時にトピックのソースとしてクロールする SharePoint サイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-116">In the **Select SharePoint topic sources** section, select which SharePoint sites will be crawled as sources for your topics during discovery.</span></span> <span data-ttu-id="f664a-117">次から選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-117">Choose from:</span></span>
+    - <span data-ttu-id="f664a-118">**すべてのサイト**: 組織内のすべての SharePoint サイト。</span><span class="sxs-lookup"><span data-stu-id="f664a-118">**All sites**: All SharePoint sites in your organization.</span></span> <span data-ttu-id="f664a-119">これには、現在および将来のサイトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f664a-119">This includes current and future sites.</span></span>
+    - <span data-ttu-id="f664a-120">**すべて (選択したサイトを** 除く): 除外するサイトの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="f664a-120">**All, except selected sites**: Type the names of the sites you want to exclude.</span></span>  <span data-ttu-id="f664a-121">検出からオプトアウトするサイトの一覧をアップロードできます。</span><span class="sxs-lookup"><span data-stu-id="f664a-121">You can also upload a list of sites that you want to opt out from discovery.</span></span> <span data-ttu-id="f664a-122">今後作成されるサイトは、トピック検出のソースとして含まれる予定です。</span><span class="sxs-lookup"><span data-stu-id="f664a-122">Sites created in future will be included as sources for topic discovery.</span></span> 
+    - <span data-ttu-id="f664a-123">**選択したサイト** のみ: 含めるサイトの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="f664a-123">**Only selected sites**: Type the names of the sites you want to include.</span></span> <span data-ttu-id="f664a-124">サイトの一覧をアップロードできます。</span><span class="sxs-lookup"><span data-stu-id="f664a-124">You can also upload a list of sites.</span></span> <span data-ttu-id="f664a-125">将来作成されるサイトは、トピック検出のソースとして含まれません。</span><span class="sxs-lookup"><span data-stu-id="f664a-125">Sites created in the future will not be included as sources for topic discovery.</span></span>
+    - <span data-ttu-id="f664a-126">**サイトなし**: SharePoint サイトを含めない。</span><span class="sxs-lookup"><span data-stu-id="f664a-126">**No sites**: Do not include any SharePoint sites.</span></span>
 
-1. <span data-ttu-id="b2388-126">Microsoft 365 管理センター (admin.microsoft.com) で、[ **セットアップ** ] を選択し、[ **組織ナレッジ** ] セクションを表示します。</span><span class="sxs-lookup"><span data-stu-id="b2388-126">In the Microsoft 365 admin center (admin.microsoft.com), select **Setup** , and then view the **Organizational Knowledge** section.</span></span>
-2. <span data-ttu-id="b2388-127">[ **組織ナレッジ** ] セクションで、[ **ユーザーをナレッジに接続する** ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2388-127">In the **Organizational Knowledge** section, click **Connect people to knowledge**.</span></span><br/>
-
-    ![ユーザーを知識に結び付ける](../media/content-understanding/admin-org-knowledge-options.png) </br>
-
-3. <span data-ttu-id="b2388-129">[ **ユーザーをナレッジに接続** する] ページで、[ **開始** ] をクリックして、セットアッププロセスを案内します。</span><span class="sxs-lookup"><span data-stu-id="b2388-129">On the **Connect people to knowledge** page, click **Get started** to walk you through the setup process.</span></span><br/>
-
-    ![概要](../media/content-understanding/k-get-started.png) </br>
-
-4. <span data-ttu-id="b2388-131">[ **ナレッジネットワークでトピックを検索する方法を選択** してください] ページで、トピック検出を構成します。</span><span class="sxs-lookup"><span data-stu-id="b2388-131">On the **Choose how the knowledge network can find topics** page, you will configure topic discovery.</span></span> <span data-ttu-id="b2388-132">**[Sharepoint トピックソースの選択** ] セクションで、検出時にトピックのソースとしてクロールする sharepoint サイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-132">In the **Select SharePoint topic sources** section, select which SharePoint sites will be crawled as sources for your topics during discovery.</span></span> <span data-ttu-id="b2388-133">保持されるデータには以下が含まれます。</span><span class="sxs-lookup"><span data-stu-id="b2388-133">This includes:</span></span></br>
-    <span data-ttu-id="b2388-134">a.</span><span class="sxs-lookup"><span data-stu-id="b2388-134">a.</span></span> <span data-ttu-id="b2388-135">**すべてのサイト** : テナント内のすべての SharePoint サイト。</span><span class="sxs-lookup"><span data-stu-id="b2388-135">**All sites** : All SharePoint sites in your tenant.</span></span> <span data-ttu-id="b2388-136">これにより、現在および今後のサイトがキャプチャされます。</span><span class="sxs-lookup"><span data-stu-id="b2388-136">This captures current and future sites.</span></span></br>
-    <span data-ttu-id="b2388-137">b.</span><span class="sxs-lookup"><span data-stu-id="b2388-137">b.</span></span> <span data-ttu-id="b2388-138">**[すべて]: 選択したサイトを除き、** 除外するサイトの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b2388-138">**All, except selected sites** : Type the names of the sites you want to exclude.</span></span>  <span data-ttu-id="b2388-139">また、探索対象から除外するサイトの一覧をアップロードすることもできます。</span><span class="sxs-lookup"><span data-stu-id="b2388-139">You can also upload a list of sites that you want to opt out from discovery.</span></span> <span data-ttu-id="b2388-140">今後作成されるサイトは、トピック検出のソースとして含まれます。</span><span class="sxs-lookup"><span data-stu-id="b2388-140">Sites created in future will be included as sources for topic discovery.</span></span> </br>
-    <span data-ttu-id="b2388-141">c.</span><span class="sxs-lookup"><span data-stu-id="b2388-141">c.</span></span> <span data-ttu-id="b2388-142">[ **選択したサイトのみ** : 含めるサイトの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b2388-142">**Only selected sites** : Type the names of the sites you want to include.</span></span> <span data-ttu-id="b2388-143">サイトのリストをアップロードすることもできます。</span><span class="sxs-lookup"><span data-stu-id="b2388-143">You can also upload a list of sites.</span></span> <span data-ttu-id="b2388-144">今後作成されるサイトは、トピック検出のソースとしては含まれません。</span><span class="sxs-lookup"><span data-stu-id="b2388-144">Sites created in the future will not be included as sources for topic discovery.</span></span> </br>
-
-    ![トピックの検索方法を選択する](../media/content-understanding/ksetup1.png) </br>
+    ![トピックの検索方法を選択する](../media/ksetup1.png) 
    
-5. <span data-ttu-id="b2388-146">[ **トピックを名前で除外** する] セクションで、検出された結果に含めるトピックの名前を含めることを選択できます。</span><span class="sxs-lookup"><span data-stu-id="b2388-146">In the **Exclude topics by name** section, you can choose to includes names of topics you don't want to be in the discovered results.</span></span> <span data-ttu-id="b2388-147">この設定を使用して、機密性の高いトピックがナレッジネットワークの一部として含まれないようにします。</span><span class="sxs-lookup"><span data-stu-id="b2388-147">Use this setting to prevent sensitive topics from being included as part of the knowledge network.</span></span> <span data-ttu-id="b2388-148">次のようなオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="b2388-148">Your options include:</span></span></br>
-    <span data-ttu-id="b2388-149">a.</span><span class="sxs-lookup"><span data-stu-id="b2388-149">a.</span></span> <span data-ttu-id="b2388-150">**トピックを除外しない**</span><span class="sxs-lookup"><span data-stu-id="b2388-150">**Don't exclude any topics**</span></span> </br>
-    <span data-ttu-id="b2388-151">b.</span><span class="sxs-lookup"><span data-stu-id="b2388-151">b.</span></span> <span data-ttu-id="b2388-152">**トピックを名前で除外** する: ナレッジネットワークの一部としてユーザーに表示されないトピックがある場合。</span><span class="sxs-lookup"><span data-stu-id="b2388-152">**Exclude topics by name** :  If you have topics you don’t want shown to users as part of the knowledge network.</span></span></br>
+5. <span data-ttu-id="f664a-128">[名前 **で除外するトピック] セクション** では、トピックの検出から除外するトピックの名前を追加できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-128">In the **Exclude topics by name** section, you can add names of topics you want to exclude from topic discovery.</span></span> <span data-ttu-id="f664a-129">機密情報がトピックとして含まれるのを防ぐには、この設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="f664a-129">Use this setting to prevent sensitive information from being included as topics.</span></span> <span data-ttu-id="f664a-130">以下のオプションがあります:</span><span class="sxs-lookup"><span data-stu-id="f664a-130">The options are:</span></span>
+    - <span data-ttu-id="f664a-131">**トピックを除外しない**</span><span class="sxs-lookup"><span data-stu-id="f664a-131">**Don't exclude any topics**</span></span> 
+    - <span data-ttu-id="f664a-132">**名前でトピックを除外する**</span><span class="sxs-lookup"><span data-stu-id="f664a-132">**Exclude topics by name**</span></span>
 
-    ![トピックを除外する](../media/content-understanding/topics-excluded-by-name.png) </br>
+    ![除外トピック](../media/topics-excluded-by-name.png) 
 
-    #### <a name="how-to-exclude-topics-by-name"></a><span data-ttu-id="b2388-154">名前によってトピックを除外する方法</span><span class="sxs-lookup"><span data-stu-id="b2388-154">How to exclude topics by name</span></span>    
+    <span data-ttu-id="f664a-134">(ナレッジ マネージャーは、検出後にトピック センターのトピックを除外できます)。</span><span class="sxs-lookup"><span data-stu-id="f664a-134">(Knowledge managers can also exclude topics in the topic center after discovery.)</span></span>
 
-    <span data-ttu-id="b2388-155">トピックを除外する必要がある場合は、[ **名前でトピックを除外** する] を選択した後、[ **.Csv テンプレートをダウンロード** する] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-155">If you need to exclude topics, after selecting **Exclude topics by name** , select **Download the .csv template**.</span></span> <span data-ttu-id="b2388-156">Excel を使用します。CSV テンプレートを使用して、検出結果から除外するトピックの一覧を追加します。</span><span class="sxs-lookup"><span data-stu-id="b2388-156">Use the Excel .CSV template to include a list of topics that you want to exclude from your discovery results.</span></span>
+    #### <a name="how-to-exclude-topics-by-name"></a><span data-ttu-id="f664a-135">トピックを名前で除外する方法</span><span class="sxs-lookup"><span data-stu-id="f664a-135">How to exclude topics by name</span></span>    
 
-    ![CSV テンプレートでトピックを除外する](../media/content-understanding/csv1.png) </br>
+    <span data-ttu-id="f664a-136">トピックを除外する必要がある場合は、[名前でトピックを除外する] を選択した後、.csv テンプレートをダウンロードし、検出結果から除外するトピックの一覧で更新します。</span><span class="sxs-lookup"><span data-stu-id="f664a-136">If you need to exclude topics, after selecting **Exclude topics by name**, select download the .csv template and update it with the list of topics that you want to exclude from your discovery results.</span></span>
 
-    <span data-ttu-id="b2388-158">CSV テンプレートで、除外するトピックについて次の情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="b2388-158">In the CSV template, enter the following information about the topics you want to exclude:</span></span>
+    ![CSV テンプレートでトピックを除外する](../media/exclude-topics-csv.png) 
 
-    - <span data-ttu-id="b2388-159">[ **名前** : 除外するトピックの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b2388-159">**Name** : Type the name of the topic you want to exclude.</span></span> <span data-ttu-id="b2388-160">これを行うには 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="b2388-160">There are two ways to do this:</span></span></br>
-        - <span data-ttu-id="b2388-161">完全一致: 完全に一致する名前または頭字語 (たとえば、 *Contoso* または *ATL* ) を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="b2388-161">Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL* ).</span></span></br>
-        - <span data-ttu-id="b2388-162">部分一致: 特定の単語が含まれるすべてのトピックを除外することができます。</span><span class="sxs-lookup"><span data-stu-id="b2388-162">Partial match: You can exclude all topics that have a specific word in it.</span></span>  <span data-ttu-id="b2388-163">たとえば、 *arc* は、円弧の *円* 、 *プラズマの円弧溶接* 、 *教育* 用の円弧など *、弧が単語で* あるすべてのトピックを除外します。テキストが *アーキテクチャ* などの単語の一部として含まれるトピックは除外されないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="b2388-163">For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle* , *Plasma arc welding* , or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.</span></span></br>
-    - <span data-ttu-id="b2388-164">**拡張 (省略可能)** : 頭字語を除外する場合は、頭字語という単語を入力します。</span><span class="sxs-lookup"><span data-stu-id="b2388-164">**Expansion (optional)** : If you want to exclude an acronym, type the words the acronym stands for.</span></span></br>
-    - <span data-ttu-id="b2388-165">**MatchType-exact/partial** : 入力した名前が、 *完全* 一致または *一部* 一致の種類であるかどうかを入力します。</span><span class="sxs-lookup"><span data-stu-id="b2388-165">**MatchType-Exact/Partial** : Type whether the name you entered was an *exact* or *partial* match type.</span></span></br>
+    <span data-ttu-id="f664a-138">CSV テンプレートで、除外するトピックに関する次の情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="f664a-138">In the CSV template, enter the following information about the topics you want to exclude:</span></span>
 
-    <span data-ttu-id="b2388-166">CSV テンプレートファイルが完成して保存されたら、[ **参照** ] を選択して、それを見つけて選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-166">After you've completed and saved your CSV template file, select **Browse** to locate and select it.</span></span>
+    - <span data-ttu-id="f664a-139">**[名前**]: 除外するトピックの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="f664a-139">**Name**: Type the name of the topic you want to exclude.</span></span> <span data-ttu-id="f664a-140">これを行うには 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="f664a-140">There are two ways to do this:</span></span>
+        - <span data-ttu-id="f664a-141">完全一致: 正確な名前または頭字語 *(Contoso* や ATL など) *を含めできます*。</span><span class="sxs-lookup"><span data-stu-id="f664a-141">Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).</span></span>
+        - <span data-ttu-id="f664a-142">部分一致: 特定の単語を含むすべてのトピックを除外できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-142">Partial match: You can exclude all topics that have a specific word in it.</span></span>  <span data-ttu-id="f664a-143">たとえば、円弧 *には*、円弧、円弧の円弧、トレーニング用の円弧など、その中に円弧を含むすべてのトピック *が除外されます*。 Architecture など、単語の一部としてテキストが含まれるトピックは除外されない点に注意 *してください*。</span><span class="sxs-lookup"><span data-stu-id="f664a-143">For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.</span></span>
+    - <span data-ttu-id="f664a-144">**略語 (省略可能)**: 頭字語を除外する場合は、略語の略語を入力します。</span><span class="sxs-lookup"><span data-stu-id="f664a-144">**Stands for (optional)**: If you want to exclude an acronym, type the words the acronym stands for.</span></span>
+    - <span data-ttu-id="f664a-145">**MatchType-Exact/Partial**: 入力した名前が完全一致型か部分一致型 *かを入力します*。</span><span class="sxs-lookup"><span data-stu-id="f664a-145">**MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.</span></span>
+
+    <span data-ttu-id="f664a-146">.csv ファイルを完成して保存したら、[参照] を **選択して** 見つけて選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-146">After you've completed and saved your .csv file, select **Browse** to locate and select it.</span></span>
     
-    <span data-ttu-id="b2388-167">[ **次へ** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-167">Select **Next**.</span></span></br>
+    <span data-ttu-id="f664a-147">[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-147">Select **Next**.</span></span>
 
-6. <span data-ttu-id="b2388-168">[ **トピックを見ることができるユーザー] および** それらのページが表示される場所については、トピックの表示を構成します。</span><span class="sxs-lookup"><span data-stu-id="b2388-168">On the **Who can see topics and where they can see them** page, you will configure topic visibility.</span></span> <span data-ttu-id="b2388-169">[ナレッジネットワーク設定] の [ **トピックを参照できるユーザー** ] で、強調表示されているトピック、トピックカード、トピックの回答、トピックページなど、トピックの詳細にアクセスできるユーザーを選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-169">In the **Who can see topics in the knowledge network** setting, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages.</span></span> <span data-ttu-id="b2388-170">次のものが選択できます。</span><span class="sxs-lookup"><span data-stu-id="b2388-170">You can select:</span></span></br>
-    <span data-ttu-id="b2388-171">a.</span><span class="sxs-lookup"><span data-stu-id="b2388-171">a.</span></span> <span data-ttu-id="b2388-172">**組織内のすべてのユーザー**</span><span class="sxs-lookup"><span data-stu-id="b2388-172">**Everyone in your organization**</span></span></br>
-    <span data-ttu-id="b2388-173">b.</span><span class="sxs-lookup"><span data-stu-id="b2388-173">b.</span></span> <span data-ttu-id="b2388-174">**選択したユーザーまたはセキュリティグループのみ**</span><span class="sxs-lookup"><span data-stu-id="b2388-174">**Only selected people or security groups**</span></span></br>
-    <span data-ttu-id="b2388-175">c.</span><span class="sxs-lookup"><span data-stu-id="b2388-175">c.</span></span> <span data-ttu-id="b2388-176">**だれも**</span><span class="sxs-lookup"><span data-stu-id="b2388-176">**No one**</span></span></br>
+6. <span data-ttu-id="f664a-148">[トピック **を表示できるユーザーと** トピックを表示できる場所] ページで、トピックの可視性を構成します。</span><span class="sxs-lookup"><span data-stu-id="f664a-148">On the **Who can see topics and where can they see them** page, you will configure topic visibility.</span></span> <span data-ttu-id="f664a-149">[ナレッジ **ネットワーク** の設定でトピックを表示できるユーザー] で、強調表示されているトピック、トピック カード、検索内のトピック回答、トピック ページなど、トピックの詳細にアクセスできるユーザーを選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-149">In the **Who can see topics in the knowledge network** setting, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages.</span></span> <span data-ttu-id="f664a-150">次のものが選択できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-150">You can select:</span></span>
+    - <span data-ttu-id="f664a-151">**組織内のすべてのユーザー**</span><span class="sxs-lookup"><span data-stu-id="f664a-151">**Everyone in my organization**</span></span>
+    - <span data-ttu-id="f664a-152">**選択したユーザーまたはセキュリティ グループのみ**</span><span class="sxs-lookup"><span data-stu-id="f664a-152">**Only selected people or security groups**</span></span>
+    - <span data-ttu-id="f664a-153">**だれも**</span><span class="sxs-lookup"><span data-stu-id="f664a-153">**No one**</span></span>
 
-    ![トピックを参照できるユーザー](../media/content-understanding/ksetup2.png) </br> 
+    ![トピックを表示できるユーザー](../media/ksetup2.png)  
 
  > [!Note] 
- > <span data-ttu-id="b2388-178">この設定では、組織内のユーザーを選択できますが、ナレッジ管理ライセンスが割り当てられているユーザーのみがトピックを表示できます。</span><span class="sxs-lookup"><span data-stu-id="b2388-178">While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics.</span></span> 
+ > <span data-ttu-id="f664a-155">この設定では組織内の任意のユーザーを選択することができますが、トピック エクスペリエンス のライセンスが割り当てられているユーザーだけがトピックを表示できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-155">While this setting allows you to select any user in your organization, only users who have Topic Experiences licenses assigned to them will be able to view topics.</span></span>
 
-7. <span data-ttu-id="b2388-179">[ **トピック管理のアクセス許可** ] ページで、トピックを作成、編集、または管理できるユーザーを選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-179">In the **Permissions for topic management** page, you choose who will be able to create, edit, or manage topics.</span></span> <span data-ttu-id="b2388-180">[ **トピックの作成と編集が可能なユーザー** ] セクションで、次の項目を選択できます。</span><span class="sxs-lookup"><span data-stu-id="b2388-180">In the **Who can create and edit topics** section, you can select:</span></span></br>
-    <span data-ttu-id="b2388-181">a.</span><span class="sxs-lookup"><span data-stu-id="b2388-181">a.</span></span> <span data-ttu-id="b2388-182">**組織内のすべてのユーザー**</span><span class="sxs-lookup"><span data-stu-id="b2388-182">**Everyone in your organization**</span></span></br>
-    <span data-ttu-id="b2388-183">b.</span><span class="sxs-lookup"><span data-stu-id="b2388-183">b.</span></span> <span data-ttu-id="b2388-184">**選択したユーザーまたはセキュリティグループのみ**</span><span class="sxs-lookup"><span data-stu-id="b2388-184">**Only selected people or security groups**</span></span></br>
-8. <span data-ttu-id="b2388-185">[ **トピックを管理できるユーザー** ] セクションで、次の項目を選択できます。</span><span class="sxs-lookup"><span data-stu-id="b2388-185">In the **Who can manage topics** section, you can select:</span></span></br>
-    <span data-ttu-id="b2388-186">a.</span><span class="sxs-lookup"><span data-stu-id="b2388-186">a.</span></span> <span data-ttu-id="b2388-187">**組織内のすべてのユーザー**</span><span class="sxs-lookup"><span data-stu-id="b2388-187">**Everyone in your organization**</span></span></br>
-    <span data-ttu-id="b2388-188">b.</span><span class="sxs-lookup"><span data-stu-id="b2388-188">b.</span></span> <span data-ttu-id="b2388-189">**選択されたユーザーまたはセキュリティグループ**</span><span class="sxs-lookup"><span data-stu-id="b2388-189">**Selected people or security groups**</span></span></br>
+7. <span data-ttu-id="f664a-156">[トピック **管理のアクセス許可]** ページで、トピックを作成、編集、または管理できるユーザーを選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-156">In the **Permissions for topic management** page, you choose who will be able to create, edit, or manage topics.</span></span> <span data-ttu-id="f664a-157">[トピック **を作成および編集できるユーザー** ] セクションで、次の項目を選択できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-157">In the **Who can create and edit topics** section, you can select:</span></span>
+    - <span data-ttu-id="f664a-158">**組織内のすべてのユーザー**</span><span class="sxs-lookup"><span data-stu-id="f664a-158">**Everyone in my organization**</span></span>
+    - <span data-ttu-id="f664a-159">**選択したユーザーまたはセキュリティ グループのみ**</span><span class="sxs-lookup"><span data-stu-id="f664a-159">**Only selected people or security groups**</span></span>
+    - <span data-ttu-id="f664a-160">**だれも**</span><span class="sxs-lookup"><span data-stu-id="f664a-160">**No one**</span></span>
 
-    ![トピック管理のアクセス許可](../media/content-understanding/ksetup3.png) </br>
+    ![トピックを作成および編集できるトピック管理のアクセス許可](../media/ksetup3.png) 
 
-    <span data-ttu-id="b2388-191">[ **次へ** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-191">Select **Next**.</span></span></br>
-9. <span data-ttu-id="b2388-192">[ **トピックセンターの作成** ] ページでトピックセンターサイトを作成し、トピックページを表示したり、トピックを管理したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="b2388-192">On the **Create Topic  Center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed.</span></span>  <span data-ttu-id="b2388-193">[ **トピックセンター名** ] ボックスに、トピックセンターの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b2388-193">In the **Topic center name** box, type a name for your Topic center.</span></span> <span data-ttu-id="b2388-194">必要に応じて、簡単な説明を [ **サイトの説明** ] ボックスに入力できます。</span><span class="sxs-lookup"><span data-stu-id="b2388-194">You can optionally type a short description in the **Site description** box.</span></span> </br>
+8. <span data-ttu-id="f664a-162">[トピック **を管理できるユーザー] セクション** で、次の項目を選択できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-162">In the **Who can manage topics** section, you can select:</span></span>
+    - <span data-ttu-id="f664a-163">**組織内のすべてのユーザー**</span><span class="sxs-lookup"><span data-stu-id="f664a-163">**Everyone in my organization**</span></span>
+    - <span data-ttu-id="f664a-164">**選択したユーザーまたはセキュリティ グループのみ**</span><span class="sxs-lookup"><span data-stu-id="f664a-164">**Only selected people or security groups**</span></span>
 
-<span data-ttu-id="b2388-195">[ **次へ** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-195">Select **Next**.</span></span></br>
+    ![トピック管理のアクセス許可](../media/km-setup-create-edit-topics.png) 
 
-   ![ナレッジセンターを作成する](../media/content-understanding/ksetup4.png) </br> 
+    <span data-ttu-id="f664a-166">[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-166">Select **Next**.</span></span>
 
-10. <span data-ttu-id="b2388-197">[ **確認と完了** ] ページで、選択した設定を確認して、変更を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="b2388-197">On the **Review and finish** page, you can look at your selected setting and choose to make changes.</span></span> <span data-ttu-id="b2388-198">選択内容に問題がない場合は、[ **ライセンス認証** ]を行います。</span><span class="sxs-lookup"><span data-stu-id="b2388-198">If you are satisfied with your selections, select **Activate**.</span></span>
+9. <span data-ttu-id="f664a-167">[ **トピック センターの** 作成] ページでは、トピック ページを表示し、トピックを管理できるトピック センター サイトを作成できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-167">On the **Create topic center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed.</span></span> <span data-ttu-id="f664a-168">[サイト **名] ボックス** に、トピック センターの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="f664a-168">In the **Site name** box, type a name for your Topic center.</span></span> <span data-ttu-id="f664a-169">必要に応じて、[説明] ボックスに簡単な説明 **を入力** できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-169">You can optionally type a short description in the **Description** box.</span></span> 
 
-    ![完了して確認する](../media/content-understanding/ksetup5.png) </br> 
+<span data-ttu-id="f664a-170">[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-170">Select **Next**.</span></span>
 
-11. <span data-ttu-id="b2388-200">[ **ナレッジネットワークがアクティブ化** されました] ページが表示され、選択したサイトの分析が開始され、ナレッジセンターサイトが作成されることを確認できます。</span><span class="sxs-lookup"><span data-stu-id="b2388-200">The **Knowledge network activated** page will display, confirming that the system will now start analyzing your selected sites for topics and creating the Knowledge Center site.</span></span> <span data-ttu-id="b2388-201">[ **完了** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b2388-201">Select **Done**.</span></span></br>
+   ![ナレッジ センターを作成する](../media/ksetup4.png)  
 
-    ![Activated](../media/content-understanding/ksetup6.png) </br> 
+10. <span data-ttu-id="f664a-172">[ **確認と完了**] ページで、選択した設定を確認して、変更を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="f664a-172">On the **Review and finish** page, you can look at your selected setting and choose to make changes.</span></span> <span data-ttu-id="f664a-173">選択内容に問題がない場合は、[**ライセンス認証**]を行います。</span><span class="sxs-lookup"><span data-stu-id="f664a-173">If you are satisfied with your selections, select **Activate**.</span></span>
 
-12. <span data-ttu-id="b2388-203">**ユーザーをナレッジに接続** するページに戻ります。</span><span class="sxs-lookup"><span data-stu-id="b2388-203">You'll be returned to your **Connect people to knowledge** page.</span></span> <span data-ttu-id="b2388-204">このページでは、[ **管理** ] を選択して、構成設定に変更を加えることができます。</span><span class="sxs-lookup"><span data-stu-id="b2388-204">From this page, you can select **Manage** to make any changes to your configuration settings.</span></span> 
+11. <span data-ttu-id="f664a-174">サポート **技術情報ネットワークがアクティブ** 化されたページが表示され、選択したサイトのトピックの分析とナレッジ センター サイトの作成がシステムによって開始されるのを確認します。</span><span class="sxs-lookup"><span data-stu-id="f664a-174">The **Knowledge network activated** page will display, confirming that the system will now start analyzing your selected sites for topics and creating the Knowledge Center site.</span></span> <span data-ttu-id="f664a-175">[**完了**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-175">Select **Done**.</span></span>
 
-    ![適用される設定](../media/content-understanding/ksetup7.png) </br>   
+12. <span data-ttu-id="f664a-176">[Connect people to knowledge] (知識への接続 **) ページに戻** ります。</span><span class="sxs-lookup"><span data-stu-id="f664a-176">You'll be returned to your **Connect people to knowledge** page.</span></span> <span data-ttu-id="f664a-177">このページでは、[ **管理** ] を選択して、構成設定に変更を加えることができます。</span><span class="sxs-lookup"><span data-stu-id="f664a-177">From this page, you can select **Manage** to make any changes to your configuration settings.</span></span> 
 
-> [!Note]
-> <span data-ttu-id="b2388-206">セットアップ後、管理者はこのページに戻って、 [選択したナレッジ管理設定を](topic-experiences-discovery.md) いつでも変更できます。</span><span class="sxs-lookup"><span data-stu-id="b2388-206">After setup, an admin can [make changes to your selected knowledge management settings](topic-experiences-discovery.md) any time by returning to this page.</span></span>
+    ![適用される設定](../media/ksetup7.png)    
 
+## <a name="assign-licenses"></a><span data-ttu-id="f664a-179">ライセンスを割り当てる</span><span class="sxs-lookup"><span data-stu-id="f664a-179">Assign licenses</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b2388-207">関連項目</span><span class="sxs-lookup"><span data-stu-id="b2388-207">See also</span></span>
+<span data-ttu-id="f664a-180">トピック エクスペリエンスを構成したら、トピック エクスペリエンスを使用するユーザーにライセンスを割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="f664a-180">Once you have configured topic experiences, you must assign licenses for the users who will be using topic experiences.</span></span> <span data-ttu-id="f664a-181">ライセンスを持つユーザーだけが、ハイライト、トピック カード、トピック ページ、トピック センターなどのトピックに関する情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-181">Only users with a license can see information on topics including highlights, topic cards, topic pages and the topic center.</span></span> 
 
+<span data-ttu-id="f664a-182">ライセンスを割り当てる</span><span class="sxs-lookup"><span data-stu-id="f664a-182">To assign licenses:</span></span>
 
+1. <span data-ttu-id="f664a-183">Microsoft 365 管理センターで、**[ユーザー** ]、[**アクティブなユーザー**]の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="f664a-183">In the Microsoft 365 admin center, under **Users**, click **Active users**.</span></span>
 
-  
+2. <span data-ttu-id="f664a-184">ライセンスを付与するユーザーを選択し、[ **製品ライセンスの管理**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f664a-184">Select the users that you want to license, and click **Manage product licenses**.</span></span>
 
+3. <span data-ttu-id="f664a-185">[**もっと割り当てる**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f664a-185">Select **Assign more**.</span></span>
 
+4. <span data-ttu-id="f664a-186">[ライセンス **] で**、[トピックエクスペリエンス] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="f664a-186">Under **Licenses**, select **Topic Experiences**.</span></span>
 
+5. <span data-ttu-id="f664a-187">[ **アプリ]** で、[ **インデックス付き Graph コネクタ検索]** と [トピック エクスペリエンス] の **両方が** 選択されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="f664a-187">Under **Apps**, make sure **Graph Connectors Search with Index** and **Topic Experiences** are both selected.</span></span>
 
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="f664a-188">![Microsoft 365 管理センターの SharePoint Syntex ライセンス](../media/topic-experiences-licenses.png)</span><span class="sxs-lookup"><span data-stu-id="f664a-188">![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)</span></span>
 
+6. <span data-ttu-id="f664a-189">**[変更の保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f664a-189">Click **Save changes**.</span></span>
 
+## <a name="manage-topic-experiences"></a><span data-ttu-id="f664a-190">トピック エクスペリエンスを管理する</span><span class="sxs-lookup"><span data-stu-id="f664a-190">Manage topic experiences</span></span>
+
+<span data-ttu-id="f664a-191">トピックエクスペリエンスを設定したら [、Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)管理センターでセットアップ時に選択した設定を変更できます。</span><span class="sxs-lookup"><span data-stu-id="f664a-191">Once you have set up topic experiences, you can change the settings that you chose during setup in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement).</span></span> <span data-ttu-id="f664a-192">次のリファレンスを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f664a-192">See the following references:</span></span>
+
+- [<span data-ttu-id="f664a-193">Microsoft 365 でのトピック検出の管理</span><span class="sxs-lookup"><span data-stu-id="f664a-193">Manage topic discovery in Microsoft 365</span></span>](topic-experiences-discovery.md)
+- [<span data-ttu-id="f664a-194">Microsoft 365 でトピックの表示を管理する</span><span class="sxs-lookup"><span data-stu-id="f664a-194">Manage topic visibility in Microsoft 365</span></span>](topic-experiences-knowledge-rules.md)
+- [<span data-ttu-id="f664a-195">Microsoft 365 でトピックのアクセス許可を管理する</span><span class="sxs-lookup"><span data-stu-id="f664a-195">Manage topic permissions in Microsoft 365</span></span>](topic-experiences-user-permissions.md)
+- [<span data-ttu-id="f664a-196">Microsoft 365 のトピック センターの名前を変更する</span><span class="sxs-lookup"><span data-stu-id="f664a-196">Change the name of the topic center in Microsoft 365</span></span>](topic-experiences-administration.md)
+
+## <a name="see-also"></a><span data-ttu-id="f664a-197">関連項目</span><span class="sxs-lookup"><span data-stu-id="f664a-197">See also</span></span>
+
+[<span data-ttu-id="f664a-198">ナレッジ マネジメントの概要</span><span class="sxs-lookup"><span data-stu-id="f664a-198">Knowledge management Overview</span></span>](knowledge-management-overview.md)

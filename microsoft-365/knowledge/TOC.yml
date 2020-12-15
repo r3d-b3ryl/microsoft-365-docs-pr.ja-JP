@@ -1,16 +1,26 @@
-- name: ナレッジ管理の概要
+- name: ナレッジ マネジメントの使用を開始する
   items:
-    - name: ナレッジ管理の概要
+    - name: ナレッジ マネジメントの概要
       href: knowledge-management-overview.md
-    - name: トピックセンターの概要
+    - name: トピック センターの概要
       href: topic-center-overview.md
-    - name: トピックセンターのトピックを操作する
+    - name: トピック センターでトピックを使用する
       href: work-with-topics.md
-    - name: ユーザーにトピックセンターへのアクセス許可を付与する
+    - name: トピック センターへのアクセス許可をユーザーに付与する
       href: give-user-permissions-to-the-topic-center.md
-- name: セットアップの概要
+- name: セットアップと管理
   items:
-    - name: ナレッジ管理の設定
+    - name: トピックのセキュリティ
+      href: topic-experiences-security-privacy.md
+    - name: トピックエクスペリエンスを計画する
+      href: plan-topic-experiences.md
+    - name: トピック エクスペリエンスをセットアップする
       href: set-up-topic-experiences.md
-    - name: ナレッジマネージメントネットワークを管理する
+    - name: トピック検出を管理する
       href: topic-experiences-discovery.md
+    - name: トピックの可視性を管理する
+      href: topic-experiences-knowledge-rules.md
+    - name: トピックのアクセス許可を管理する
+      href: topic-experiences-user-permissions.md
+    - name: トピック センター名を変更する
+      href: topic-experiences-administration.md
