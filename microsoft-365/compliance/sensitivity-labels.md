@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: c012b422e5c1452bf6ccd58e0743509a2cf07f32
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: 61bb7afedbbafb1272c3dfdbbecd0ede9777effe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624789"
+ms.locfileid: "49655579"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -109,11 +109,11 @@ Microsoft 365 の秘密度ラベルを使用することにより、これらす
     
     この機能を有効にするまで、グループおよびサイトの保護設定を構成することはできません。 このラベル構成では、ドキュメントやメールに自動的にラベルが付けられることはありませんが、代わりに、ラベル設定は、コンテンツを保存できるコンテナーへのアクセスを制御することによってコンテンツを保護します。 これらの設定には、プライバシー設定、外部ユーザー アクセスと外部共有、および非管理対象デバイスからのアクセスが含まれます。
 
-- **Office アプリでラベルを自動的に適用するか、ラベルを推奨します。** ラベルを付ける機密情報のタイプを選択できます。ラベルは自動的に適用されることも、推奨するラベルを適用するようにユーザーに求めることもできます。 ラベルを推奨すると、選択したテキストがプロンプトに表示されます。 次に例を示します。
+- **ファイルやメールでラベルを自動的に適用するか、ラベルを推奨します。** ラベルを付ける機密情報を識別する方法を選択すると、ラベルを自動的に適用するか、ユーザーに推奨するラベルを適用するように求めることができます。 ラベルを推奨すると、選択したテキストがプロンプトに表示されます。 次に例を示します。
     
     ![必要なラベルを割り当てるかを確認するダイアログ](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    秘密度ラベルを作成または編集する場合の **Office アプリの自動ラベル付け** の詳細については、 「[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)」を参照してください。
+    機密ラベルを作成または編集するときの **ファイルと電子メールの自動ラベル設定** の詳細については、「[Office アプリのコンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でデータに自動的にラベルを付ける](https://docs.microsoft.com/azure/purview/create-sensitivity-label)」を参照してください。
 
 ### <a name="label-scopes"></a>ラベル スコープ
 
@@ -274,4 +274,3 @@ Cloud App Security をこれらのラベルで使用する手順については�
 ## <a name="deployment-guidance"></a>展開ガイダンス
 
 ライセンス情報、アクセス許可、展開戦略、およびサポートされているシナリオとエンド ユーザー ドキュメントのリソースのリストを含む展開計画とガイダンスについては、「[秘密度ラベルの開始](get-started-with-sensitivity-labels.md)」を参照してください。
-
