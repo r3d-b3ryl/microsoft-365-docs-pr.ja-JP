@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Microsoft Defender for Office 365 の安全なリンク ポリシーとグローバルな安全なリンクの設定を表示、作成、変更、削除する方法について説明します。
-ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
-ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
+ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675243"
+ms.locfileid: "49683165"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender で安全なリンク ポリシーを Office 365 用にセットアップする
 
@@ -178,7 +178,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
    - ポリシーを無効にするには、左に切り替えます。 ![ポリシーをオフにする](../../media/scc-toggle-off.png).
 
-   - ポリシーを有効にするには、右に切り替えます。 ![ポリシーを有効にする](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - ポリシーを有効にするには、右に切り替えます。 ![ポリシーを有効にする](../../media/scc-toggle-on.png).
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>安全なリンク ポリシーの優先度を設定する
 

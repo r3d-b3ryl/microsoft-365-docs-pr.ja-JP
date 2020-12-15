@@ -1,7 +1,7 @@
 ---
 title: Microsoft セキュア スコア
 description: Microsoft 365 セキュリティ センターの Microsoft セキュア スコアについて、どのようにセキュリティ体制を改善するか、セキュリティ管理者がどんなことを期待できるかについて説明します。
-keywords: microsoft secure score、secure score、office 365 のセキュリティスコア、microsoft セキュリティスコア、microsoft 365 セキュリティセンター、改善アクション
+keywords: Microsoft セキュア スコア, セキュア スコア, Office 365 セキュア スコア, Microsoft セキュリティ スコア, Microsoft 365 セキュリティ センター, 改善アクション
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,21 +20,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843842"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682573"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 https://security.microsoft.com/securescore[これは、Microsoft 365](overview-security-center.md)セキュリティ センターにあります。
 
-Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 この点については https://security.microsoft.com/securescore 、「 [Microsoft 365 セキュリティセンター](overview-security-center.md)」を参照してください。
-
-セキュリティで保護されたスコアの推奨事項に従うことで、組織を脅威から保護することができます。 Microsoft 365 セキュリティ センターの集中管理されたダッシュボードから、組織の Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視し、操作することができます。
+セキュリティ スコアの推奨事項に従って、組織を脅威から保護できます。 Microsoft 365 セキュリティ センターの一元的なダッシュボードから、組織は Microsoft 365 の ID、アプリ、デバイスのセキュリティを監視し、作業できます。
 
 セキュア スコアは、次のような方法で組織の役に立ちます。  
 
@@ -44,52 +43,52 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 指標と傾向の堅牢な視覚化、他の Microsoft 製品との統合、類似組織とのスコア比較などを、組織で利用することができます。 スコアは、サードパーティのソリューションが推奨アクションに対応した場合も反映されます。
 
-![セキュリティで保護されたスコアホームページ](../../media/secure-score/secure-score-homepage-new.png)
+![セキュア スコア ホームページ](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="how-it-works"></a>メカニズム
 
-ここでは、次のアクションのポイントを指定します。
+次のアクションのポイントが与えられる。
 
-- 推奨されるセキュリティ機能を構成する
-- セキュリティ関連タスクの実行
-- サードパーティ製のアプリケーションまたはソフトウェア、または別の対策を使用した改善アクションへの対応
+- 推奨されるセキュリティ機能の構成
+- セキュリティ関連のタスクの実行
+- サード パーティ製のアプリケーションまたはソフトウェア、または代替の軽減策を使用して改善アクションに対処する
 
-一部の改善アクションでは、完全に完了した時点のみが指定できます。 一部のデバイスまたはユーザーについては、一部のポイントを部分的に指定します。 改善アクションの1つを実行できない、または実行する必要がない場合は、リスクまたは残存リスクを受け入れるかどうかを選択できます。
+一部の改善アクションは、完全に完了した時点でのみポイントを与える場合があります。 一部のデバイスまたはユーザーに対して完了した場合、部分的にポイントを与える場合があります。 改善アクションの 1 つを実行できない場合、または実行しない場合は、リスクまたは残存リスクを受け入れるか選択できます。
 
-サポートされているいずれかの Microsoft 製品のライセンスを所有している場合は、これらの製品に関する推奨事項が表示されます。 ライセンスエディション、サブスクリプション、またはプランに関係なく、製品に対して提供される機能強化の完全なセットについて説明します。 これにより、セキュリティ上のベストプラクティスを理解し、スコアを向上させることができます。 セキュリティで保護されたスコアで表される絶対的なセキュリティに関する姿勢は、組織が特定の製品についてどのライセンスを所有しているかにかかわらず変わりません。 セキュリティは使いやすさとバランスが取れている必要があり、すべての推奨事項がご使用の環境に適しているわけではないことを覚えておいてください。
+サポートされている Microsoft 製品の 1 つのライセンスを持っている場合は、それらの製品に関する推奨事項が表示されます。 ライセンスのエディション、サブスクリプション、プランに関係なく、製品に対して可能な一連の改善点が表示されます。 これにより、セキュリティのベスト プラクティスを理解し、スコアを向上できます。 セキュリティ スコアで表される絶対的なセキュリティ体制は、組織が特定の製品に対して所有するライセンスに関係なく同じままです。 セキュリティは使いやすさとバランスが取れている必要があり、すべての推奨事項がご使用の環境に適しているわけではないことを覚えておいてください。
 
 スコアはリアルタイムで更新され、視覚エフェクト ページと改善のための処置 ページに表示された情報を反映します。 またセキュア スコアは毎日同期を行い、各アクションで達成されたポイントに関するシステム データを受信します。
 
 ### <a name="key-scenarios"></a>重要なシナリオ
 
 - [現在のスコアを確認する](microsoft-secure-score-improvement-actions.md#check-your-current-score)
-- [自分のスコアを組織と同じように比較する](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
-- [改善アクションを表示し、アクションプランを決定する](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
-- [調査または実装のための作業フローの開始](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
-    - [Microsoft 365 セキュリティセンターと ServiceNow 統合](tickets-security-center.md)
+- [スコアを自分のような組織と比較する](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
+- [改善アクションを表示し、アクション プランを決定する](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
+- [調査または実装するためのワーク フローの開始](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
+    - [Microsoft 365 セキュリティ センターと ServiceNow の統合](tickets-security-center.md)
 
 ### <a name="how-improvement-actions-are-scored"></a>改善のための処置のスコア
 
-各改善アクションは、10ポイント以下の価値があり、ほとんどはバイナリ形式でスコアされます。 [改善] アクションを実装して、新しいポリシーを作成したり、特定の設定を有効にしたりすると、ポイントの100% が得られます。 その他の改善のための処置では、ポイントは構成全体に対するパーセンテージに応じて与えられます。
+各改善アクションは 10 ポイント以下の価値を持ち、そのほとんどはバイナリ形式でスコア付けされます。 新しいポリシーの作成や特定の設定のオンなど、改善アクションを実装すると、ポイントの 100% が取得されます。 その他の改善のための処置では、ポイントは構成全体に対するパーセンテージに応じて与えられます。
 
-たとえば、改善アクションによって、多要素認証を使用するすべてのユーザーを保護することで、10ポイントが得られることが示されます。 保護されているユーザー100の総数は50のみで、5ポイント (50 保護/100 合計 * 10、最大ポイント5ポイント) の部分的なスコアを取得します。
+たとえば、改善アクションでは、多要素認証を使用してすべてのユーザーを保護することで 10 ポイントを取得できます。 保護されているユーザーの総数は 100 人中 50 人だけなので、部分的なスコアは 5 ポイント (50 保護 / 100 合計 * 10 最大 pts = 5 pts) になります。
 
 ### <a name="products-included-in-secure-score"></a>セキュア スコアに含まれる製品
 
-現時点では、Microsoft 365 (Exchange Online)、Azure Active Directory、Microsoft Defender for Endpoint、microsoft Defender for Identity、および Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日リリース予定です。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅しているわけではありませんが、適切な基準になっています。 また、強化された機能をサードパーティの対象としてマークしたり、別の軽減対策にマークしたりすることもできます。
+現在、Microsoft 365 (Exchange Online を含む)、Azure Active Directory、エンドポイント用 Microsoft Defender、Id 用 Microsoft Defender、Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日リリース予定です。 推奨事項は、各製品に関連付けられているすべての攻撃表面をカバーしているのではなく、優れたベースラインです。 また、改善アクションをサード パーティまたは代替の軽減策の対象としてマークできます。
 
 ### <a name="security-defaults"></a>セキュリティの既定値
 
-Microsoft のセキュリティで保護されたスコア [では、Azure Active Directory のセキュリティの既定](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)をサポートするように改善アクションが更新されているため、一般的な攻撃に対して構成済みのセキュリティ設定を使用して組織を保護することが容易になります
+Microsoft セキュア スコアは [、Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)のセキュリティの既定値をサポートするように改善アクションを更新しました。これは、一般的な攻撃に対して事前に構成されたセキュリティ設定を使用して組織を簡単に保護するのに役立ちます。
 
-[セキュリティの既定] をオンにすると、次の強化された操作について完全なポイントが与えられます。
+セキュリティの既定値を有効にした場合、次の改善のためのすべてのポイントが与されます。
 
-- すべてのユーザーが、セキュリティで保護されたアクセスに対して多要素認証を完了できるようにする (9 ポイント)
-- 管理役割に MFA を必要とする (10 ポイント)
+- すべてのユーザーがセキュリティで保護されたアクセスのための多要素認証を完了できる (9 ポイント)
+- 管理者ロールに MFA を要求する (10 ポイント)
 - 従来の認証をブロックするポリシーを有効にする (7 ポイント)
 
 >[!IMPORTANT]
->セキュリティの既定値には、「サインインリスクポリシー」と「ユーザーリスクポリシー」の強化アクションに似たセキュリティを提供するセキュリティ機能が含まれます。 これらのポリシーをセキュリティの既定の設定の上で設定する代わりに、それぞれの状態を "代替対策によって解決されました" に更新することをお勧めします。
+>セキュリティの既定値には、"サインイン リスク ポリシー" および "ユーザー リスク ポリシー" の改善アクションと同様のセキュリティを提供するセキュリティ機能が含まれます。 これらのポリシーをセキュリティの既定値の上に設定する代わりに、状態を 「代替の軽減策で解決」に更新することをお勧めします。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 
@@ -107,7 +106,7 @@ Microsoft セキュア スコアにアクセスするためのアクセス許可
 
 ### <a name="read-only-roles"></a>読み取り専用の役割
 
-読み取り専用アクセスでは、改善アクションの状態やメモを編集したり、スコア領域を編集したり、カスタム比較を編集したりすることはできません。
+読み取り専用アクセスでは、改善アクションの状態やメモを編集したり、スコア ゾーンを編集したり、カスタム比較を編集したりできない。
 
 * ヘルプデスク管理者
 * ユーザー管理者
@@ -118,15 +117,15 @@ Microsoft セキュア スコアにアクセスするためのアクセス許可
 
 ## <a name="risk-awareness"></a>リスク認識
 
-Microsoft Secure Score は、システム構成、ユーザーの行動、およびその他のセキュリティ関連の測定値に基づいて、セキュリティについての数値の概要です。 これは、システムやデータが侵害される可能性の絶対的な測定値ではありません。 そうではなく、侵害されるリスクを相殺できるように、Microsoft 環境にセキュリティコントロールを採用している範囲を表しています。 セキュリティ侵害の対象となるオンラインサービスは一切なく、セキュリティ違反に対する保証としては、どのような方法でも安全なスコアを保証しないようにする必要があります。
+Microsoft セキュア スコアは、システム構成、ユーザーの動作、その他のセキュリティ関連の測定値に基づく、セキュリティ体制の数値の要約です。 これは、システムまたはデータが侵害される可能性を絶対に測定する方法ではない。 これは、侵害のリスクを軽減するために役立つ、Microsoft 環境でどの程度のセキュリティ制御を採用したのかという点を表しています。 どのオンライン サービスもセキュリティ侵害から完全に影響を受け、セキュリティ スコアはセキュリティ違反に対する保証とは解釈されません。
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 
-問題がある場合は、「 [Security, Privacy & コンプライアンス](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) コミュニティ」に投稿してお知らせください。 コミュニティを監視しているので、問題に対応します。
+問題がある場合は、セキュリティ/プライバシー/コンプライアンス コミュニティに投稿して [&知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) らせてください。 コミュニティを監視しているので、問題に対応します。
 
 ## <a name="related-resources"></a>関連リソース
 
 - [セキュリティ体制にアクセス](microsoft-secure-score-improvement-actions.md)
-- [Microsoft のセキュリティで保護されたスコア履歴を追跡し、目標を達成する](microsoft-secure-score-history-metrics-trends.md)
+- [Microsoft セキュア スコアの履歴を追跡し、目標を達成する](microsoft-secure-score-history-metrics-trends.md)
 - [今後の予定](microsoft-secure-score-whats-coming.md)
 - [新機能](microsoft-secure-score-whats-new.md)

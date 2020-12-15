@@ -84,7 +84,7 @@ Graph 用 Azure Active Directory PowerShell モジュールにおいて新しい
     Install-Module -Name AzureAD
     ```
 
-   信頼されていないリポジトリからモジュールをインストールするようにメッセージが表示されたら、「 **Y** 」と入力し、Enter キーを押します。
+   信頼されていないリポジトリからモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、Enter キーを押します。
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>手順 2: Microsoft 365 サブスクリプション用の Azure AD に接続する
 
@@ -98,7 +98,7 @@ Graph 用 Azure Active Directory PowerShell モジュールにおいて新しい
 | Office 365 U.S. Government DoD と Office 365 U.S. Government GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-[ **アカウントにサインイン** ] ダイアログ ボックスで、Microsoft 365 の職場または学校のアカウントのユーザー名とパスワードを入力し、[ **OK** ] を選択します。
+[**アカウントにサインイン**] ダイアログ ボックスで、Microsoft 365 の職場または学校のアカウントのユーザー名とパスワードを入力し、[**OK**] を選択します。
 
 多要素認証を使用している場合は、手順に従って確認コードなどの追加認証情報を入力します。
 
@@ -123,8 +123,8 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
     
    1. 管理者特権で Windows PowerShell コマンド プロンプトを開きます (Windows PowerShell を管理者として実行)。
    1.  **Install-Module MSOnline** コマンドを実行します。
-   1. NuGet プロバイダーをインストールするようにメッセージが表示されたら、「 **Y** 」と入力し、Enter キーを押します。
-   1. PSGallery からモジュールをインストールするようにメッセージが表示されたら、「 **Y** 」と入力し、Enter キーを押します。
+   1. NuGet プロバイダーをインストールするようにメッセージが表示されたら、「**Y**」と入力し、Enter キーを押します。
+   1. PSGallery からモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、Enter キーを押します。
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>手順 2: Microsoft 365 サブスクリプション用の Azure AD に接続する
 
@@ -138,17 +138,17 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
 | Office 365 U.S. Government DoD と Office 365 U.S. Government GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-[ **アカウントにサインイン** ] ダイアログ ボックスで、Microsoft 365 の職場または学校のアカウントのユーザー名とパスワードを入力し、[ **OK** ] を選択します。
+[**アカウントにサインイン**] ダイアログ ボックスで、Microsoft 365 の職場または学校のアカウントのユーザー名とパスワードを入力し、[**OK**] を選択します。
 
 多要素認証を使用している場合は、手順に従って確認コードなどの追加認証情報を入力します。
 
 ### <a name="how-do-you-know-it-worked"></a>正常な動作を確認する方法
 
-エラー メッセージが表示されなければ、正常に接続されています。 簡単に確かめるには、 **Get-MsolUser** などの Microsoft 365 コマンドレットを実行して結果を確認します。
+エラー メッセージが表示されなければ、正常に接続されています。 簡単に確かめるには、**Get-MsolUser** などの Microsoft 365 コマンドレットを実行して結果を確認します。
   
 エラー メッセージが表示される場合は、次の点を確認します。
   
-- **よくある原因は、正しくないパスワードです** 。 [手順 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) をもう一度実行し、その際入力するユーザー名とパスワードには特に注意します。
+- **よくある原因は、正しくないパスワードです**。 [手順 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) をもう一度実行し、その際入力するユーザー名とパスワードには特に注意します。
     
 - **Windows PowerShell 用 Microsoft Azure Active Directory モジュールには、Microsoft .NET Framework 3.5 が必要です。お使いのコンピューターで* x* が有効になっています**。コンピューターにより新しいバージョンがインストールされている可能性があります (4 または 4.5.* x* など)。 ただし、以前の .NET Framework のバージョンとの下位互換性を有効または無効にすることができます。 詳細については、次の記事を参照してください。
     
@@ -165,9 +165,9 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    返されたバージョン番号が *1.0.8070.2* より小さい場合は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールをアンインストールして、上の [手順 1](#step-1-install-the-required-software) からインストールします。
+    返されたバージョン番号が *1.0.8070.2* より小さい場合は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールをアンインストールして、上の[手順 1](#step-1-install-the-required-software) からインストールします。
 
-- **接続エラーが発生した場合** は、 ["Connect-MsolService: 例外がスローされました" というエラー](https://go.microsoft.com/fwlink/p/?LinkId=532377)に関するトピックをご覧ください。
+- **接続エラーが発生した場合** は、["Connect-MsolService: 例外がスローされました" というエラー](https://go.microsoft.com/fwlink/p/?LinkId=532377)に関するトピックをご覧ください。
     
 - **「Get-Item: パスが見つかりません」エラーが表示された場合** は、次のコマンドを使用します。
 

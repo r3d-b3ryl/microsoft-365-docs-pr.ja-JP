@@ -36,7 +36,7 @@ ms.locfileid: "49409227"
 - [Yammerの保持の詳細](retention-policies-yammer.md)
 - [Exchange の保持の詳細](retention-policies-exchange.md)
 
-## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象
+## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
 次の Teams アイテムは、Teams のアイテム保持ポリシーを使用して保持および削除できます: 埋め込みの画像、テーブル、ハイパーテキスト リンク、および他の Teams メッセージやファイルへのリンクを含む、チャット メッセージとチャネル メッセージ。 チャット メッセージには、チャット内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
 

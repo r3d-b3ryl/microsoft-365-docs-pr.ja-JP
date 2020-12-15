@@ -1,5 +1,5 @@
 ---
-title: Office 365 の Defender での安全なリンク設定のグローバル設定を構成する
+title: Defender for Office 365 の安全なリンク設定のグローバル設定を構成する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,85 +16,85 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Microsoft Defender for Office 365 の「安全なリンク」のグローバル設定を表示および構成する方法について説明します (「Office 365 アプリの次の Url のリストと保護」を参照してください)。
-ms.openlocfilehash: 2793985e6289b26baad268925cbf9c5e9a89dce9
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+description: 管理者は、Microsoft Defender for Office 365 の安全なリンクに関するグローバル設定 ([次の URL をブロックする] リストと Office 365 アプリの保護) を表示および構成する方法について説明します。
+ms.openlocfilehash: bc44432d4d9478e4c6a2414a70acc785c5b2c005
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572431"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682908"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全なリンクのグローバル設定を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> この記事は [、Microsoft Defender For Office 365 を](office-365-atp.md)使用しているビジネスのお客様を対象としています。 Outlook の Safelinks に関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Microsoft Defender for Office 365](office-365-atp.md) をご利用の法人のお客様を対象としています。 If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-「安全なリンク」とは、メールフローで受信電子メールメッセージの URL スキャンを行う [Office 365 の](office-365-atp.md) 機能の1つであり、電子メールメッセージやその他の場所で url とリンクの確認をクリックしたときに表示されるものです。 詳細については、「 [Microsoft Defender For Office 365」](atp-safe-links.md)の「安全なリンク」を参照してください。
+「安全なリンク」は [、Microsoft Defender for Office 365](office-365-atp.md) の機能で、メール フロー内の受信メール メッセージの URL スキャンや、電子メール メッセージや他の場所での URL とリンクのクリック検証の時間を提供します。 詳細については [、Microsoft Defender の 「安全なリンク」を参照してください。Office 365](atp-safe-links.md).
 
-[安全なリンク] ポリシーで、ほとんどの安全なリンクの設定を構成します。 手順については、「 [Set Up Safe Links policies In office 365](set-up-atp-safe-links-policies.md)」を参照してください。
+ほとんどの安全なリンクの設定は、安全なリンク ポリシーで構成します。 手順については、「Microsoft Defender で安全なリンク ポリシーをセットアップする(Office [365)」を参照](set-up-atp-safe-links-policies.md)してください。
 
-しかし、安全なリンクは、アクティブな安全リンクポリシーに含まれるすべてのユーザーに適用されるグローバル設定も使用します。 これらのグローバル設定領域:
+ただし、安全なリンクは、アクティブな安全なリンク ポリシーに含まれるすべてのユーザーに適用されるグローバル設定も使用します。 次のグローバル設定領域:
 
-- [ **次の url をブロック** する] の一覧。 詳細については、 [「安全なリンク」の「次の url をブロックする」の一覧](atp-safe-links.md#block-the-following-urls-list-for-safe-links)を参照してください。
-- Office 365 アプリの安全なリンク保護。 詳細については、「 [Office 365 アプリの安全なリンク設定](atp-safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。
+- [ **次の URL をブロックする] の一覧** 。 詳細については、「安全なリンク」の「次の [URL をブロックする」を参照してください。](atp-safe-links.md#block-the-following-urls-list-for-safe-links)
+- 365 アプリの安全Office保護。 詳細については、「365 アプリの安全なリンク [設定Office参照してください](atp-safe-links.md#safe-links-settings-for-office-365-apps)。
 
-セキュリティ & コンプライアンスセンターまたは PowerShell (exchange online のメールボックスを使用する対象の Microsoft 365 組織用の Exchange Online PowerShell、exchange online メールボックスを持たない組織の場合はスタンドアロン EOP PowerShell、Office 365 アドオンサブスクリプションの場合は Microsoft Defender) で、グローバルな安全リンク設定を構成できます。
+セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online のメールボックスを持つ対象の Microsoft 365 組織の場合は Exchange Online PowerShell、Exchange Online メールボックスのない組織の場合はスタンドアロンの EOP PowerShell、Microsoft Defender for Office 365 アドオン サブスクリプションの場合) では、グローバルな安全なリンク設定を構成できます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- 「安全なリンク」のグローバル設定で提供される機能は、アクティブな安全リンクポリシーに含まれているユーザーにのみ適用されます。 組み込みまたは既定の安全なリンクポリシーはありません。そのため、これらのグローバル設定をアクティブにするには、少なくとも1つの安全なリンクポリシーを作成する必要があります。 手順については、「 [Set Up Safe Links policies In office 365](set-up-atp-safe-links-policies.md)」を参照してください。
+- 安全なリンクのグローバル設定によって提供される機能は、アクティブな安全なリンク ポリシーに含まれているユーザーにのみ適用されます。 組み込みまたは既定の安全なリンク ポリシーはないので、これらのグローバル設定をアクティブ化するには、少なくとも 1 つの安全なリンク ポリシーを作成する必要があります。 手順については、「Microsoft Defender で安全なリンク ポリシーをセットアップする(Office [365)」を参照](set-up-atp-safe-links-policies.md)してください。
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [ **安全なリンク** ] ページに直接移動するには、を使用 <https://protection.office.com/safelinksv2> します。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [安全なリンク] ページ **に直接移動するには** 、次の値を使用します <https://protection.office.com/safelinksv2> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- この記事の手順を実行する前に、セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
-  - 安全なリンクのためのグローバル設定を構成するには、 **組織の管理** または **セキュリティ管理者** の役割グループのメンバーである必要があります。
-  - [安全なリンク] のグローバル設定に対する読み取り専用アクセスの場合は、 **グローバル閲覧** 者または **セキュリティ閲覧** 者の役割グループのメンバーである必要があります。
+- この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります。
+  - 安全なリンクのグローバル設定を構成するには、組織の管理役割グループまたはセキュリティ管理者役割グループのメンバー **である** 必要があります。
+  - 安全なリンクのグローバル設定に読み取り専用でアクセスするには、グローバル閲覧者またはセキュリティ閲覧者の役割グループのメンバー **である** 必要があります。
 
   詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
   **注**:
 
-  - Microsoft 365 管理センターで対応する Azure Active Directory の役割にユーザーを追加すると、セキュリティ & コンプライアンスセンター _および_ microsoft 365 の他の機能に対するアクセス許可で必要なアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **表示のみの組織の管理** 役割グループは、機能への読み取り専用アクセス権も付与します。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
-- 「安全なリンク」の「グローバル設定」に推奨される値については、「 [安全なリンクの設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)」を参照してください。
+- 安全なリンクのグローバル設定の推奨値については、「安全なリンクの設定 [」を参照してください](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)。
 
-- 新規または更新されたポリシーが適用されるまで最大30分かかります。
+- 新しいポリシーまたは更新されたポリシーを適用するには、最大 30 分かかります。
 
-- [新しい機能は、Microsoft Defender For Office 365 に継続的に追加](office-365-atp.md#new-features-in-microsoft-defender-for-office-365)されています。 新機能が追加されたときに、既存の安全なリンクポリシーを調整する必要がある場合があります。
+- [新しい機能は、Microsoft Defender for Office 365](office-365-atp.md#new-features-in-microsoft-defender-for-office-365)に継続的に追加されています。 新機能が追加された場合は、既存の安全なリンク ポリシーの調整が必要な場合があります。
 
-## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターの [次の Url をブロックする] の一覧を構成する
+## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターの [次の URL をブロックする] &構成します。
 
-[ **次の url をブロック** する] リストは、サポートされているアプリでの安全なリンクスキャンによって常にブロックされるリンクを示しています。 詳細については、 [「安全なリンク」の「次の url をブロックする」の一覧](atp-safe-links.md#block-the-following-urls-list-for-safe-links)を参照してください。
+[ **次の URL をブロック** する] リストは、サポートされているアプリの安全なリンク スキャンによって常にブロックする必要があるリンクを示します。 詳細については、「安全なリンク」の「次の URL を [ブロックする」を参照してください](atp-safe-links.md#block-the-following-urls-list-for-safe-links)。
 
-1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** \> **ATP セーフリンク**] に移動し、[ **グローバル設定**] をクリックします。
+1. セキュリティ/コンプライアンス センター&、**脅威管理** ポリシー ATP の安全なリンクに移動し、[グローバル設定] \>  \> を **クリックします**。
 
-2. [ **組織の安全なリンク] ポリシー** が表示されたら、[ **次の url をブロック** する] ボックスに移動します。
+2. 表示される **組織の安全なリンク** ポリシーで、[次の URL をブロックする] **ボックスに移動** します。
 
-3. [「次の url をブロックする」リストの「Entry 構文](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)」に記載されている1つ以上のエントリを構成します。
+3. 「次の URL をブロックする」の一覧のエントリ構文の説明に従って、1 つ以上の [エントリを構成します](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)。
 
    完了したら、**[保存]** をクリックします。
 
-### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>PowerShell で [次の Url をブロックする] の一覧を構成する
+### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>PowerShell で "次の URL をブロックする" リストを構成する
 
-エントリの構文の詳細については、 [「次の url をブロックする」のリストの「エントリの構文」](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)を参照してください。
+エントリ構文の詳細については、「次の URL をブロックする」の一覧 [のエントリ構文を参照してください](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)。
 
-**AtpPolicyForO365** コマンドレットを使用して、 _blockurls_ プロパティの既存のエントリを表示できます。
+**Get-AtpPolicyForO365** コマンドレットを使用すると _、BlockURLs_ プロパティの既存のエントリを表示できます。
 
-- 既存のエントリを置き換える値を追加するには、Exchange Online PowerShell または Exchange Online Protection の PowerShell で次の構文を使用します。
+- 既存のエントリを置き換える値を追加するには、Exchange Online PowerShell または Exchange Online Protection PowerShell で次の構文を使用します。
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls "Entry1","Entry2",..."EntryN"
   ```
 
-  この例では、次のエントリをリストに追加します。
+  次の使用例は、次のエントリをリストに追加します。
 
-  - Fabrikam.com のドメイン、サブドメイン、およびパスをブロックします。
-  - サブドメインの調査をブロックするが、tailspintoys.com で親ドメインまたは他のサブドメインをブロックする
+  - ドメイン、サブドメイン、およびドメインのパスをブロックfabrikam.com。
+  - サブドメインの調査をブロックしますが、サブドメイン内の親ドメインや他のサブドメインはtailspintoys.com
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls "fabrikam.com","https://research.tailspintoys.com*"
@@ -106,53 +106,53 @@ ms.locfileid: "49572431"
   Set-AtpPolicyForO365 -BlockUrls @{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}
   ```
 
-  次の使用例は、adatum.com の新しいエントリを追加し、fabrikam.com のエントリを削除します。
+  次の使用例は、新しいadatum.comを追加し、そのエントリを削除fabrikam.com。
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで Office 365 アプリの安全なリンク保護を構成する
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで Office 365 アプリの安全なリンク保護&構成する
 
-安全なリンク保護 Office 365 アプリは、サポート対象の Office デスクトップ、モバイル、および web アプリのドキュメントに適用されます。 詳細については、「 [Office 365 アプリの安全なリンク設定](atp-safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。
+Office 365 アプリの安全なリンク保護は、サポートされているデスクトップ、モバイル、および web アプリOfficeドキュメントに適用されます。 詳細については、「365 アプリの安全なリンク [設定Office参照してください](atp-safe-links.md#safe-links-settings-for-office-365-apps)。
 
-1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** \> **ATP セーフリンク**] に移動し、[ **グローバル設定**] をクリックします。
+1. セキュリティ/コンプライアンス センター&、**脅威管理** ポリシー ATP の安全なリンクに移動し、[グローバル設定] \>  \> を **クリックします**。
 
-2. [ **組織の安全なリンク] ポリシー** が表示されたら、[ **電子メール以外のコンテンツに適用する設定** ] で、次の設定を構成します。
+2. 表示される **組織の安全な** リンク ポリシーで、[メール以外のコンテンツに適用される設定] セクションで次の **設定を構成** します。
 
-   - **Office 365 アプリケーション**: サポートされている office 365 アプリの安全なリンクを有効にするには、[切り替え] が [オン] になっていることを確認します。 ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   - **Office 365** アプリケーション: トグルが右側に表示され、サポートされている Office 365 アプリの安全なリンクを有効にしてください。オンに切り替 ![ え ](../../media/scc-toggle-on.png) 。
 
-   - **ユーザーが [安全なリンク] をクリックしたときに追跡しない**: サポートされている Office 365 アプリでブロックされる url に関連するユーザークリックを追跡するには、トグルをオフにします。 ![ ](../../media/scc-toggle-off.png)
+   - **Do not track when users click Safe Links**: Move the toggle to the left to track user clicks related to blocked URLs in supported Office 365 apps: Toggle off ![ ](../../media/scc-toggle-off.png) .
 
-   - **ユーザーが元の URL に安全なリンクをクリックできない** ようにします。 [トグル] が [サポートされている Office 365 アプリの元のブロックする url] をクリックすると、[オン] に切り替えられないようにします。 ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   - **元** の URL への安全なリンクをユーザーがクリックで許可しない: トグルが右側に表示され、ユーザーがサポートされている Office 365 アプリの元のブロックされた URL をクリックしてクリックを防ぐことを確認します。オンに切り替え ![ ](../../media/scc-toggle-on.png) 。
 
    完了したら、**[保存]** をクリックします。
 
-### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>PowerShell で Office 365 アプリの安全なリンク保護を構成する
+### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>PowerShell で 365 Officeの安全なリンク保護を構成する
 
-PowerShell を使用して Office 365 アプリの安全なリンク保護を構成する場合は、Exchange Online PowerShell または Exchange Online Protection の PowerShell で次の構文を使用します。
+PowerShell を使用して Office 365 アプリの安全なリンク保護を構成する場合は、Exchange Online PowerShell または Exchange Online Protection PowerShell で次の構文を使用します。
 
 ```powershell
 Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowClickThrough <$true | $false>] [-TrackClicks <$true | $false>]
 ```
 
-この例では、Office 365 アプリの安全なリンク保護について次の設定を構成します。
+この例では、365 アプリの安全なリンク保護に関する次Office設定を構成します。
 
-- Office 365 アプリの安全なリンクが有効になっています ( _EnableSafeLinksForO365Clients_ パラメーターは使用しておらず、既定値は $true)。
-- サポートされている Office 365 でブロックされている Url に関連するユーザークリックが追跡されます。
-- サポートされている Office 365 アプリの元のブロックされた URL をクリックすることはできません ( _allowclickthrough クリックスルー_ パラメーターは使用しておらず、既定値は $false)。
+- Office 365 アプリの安全なリンクが有効になっています _(EnableSafeLinksForO365Clients_ パラメーターは使用していないので、既定値は $true)。
+- サポートされている 365 アプリのブロックされた URL にOfficeクリックが追跡されます。
+- ユーザーは、サポートされている Office 365 アプリで元のブロックされた URL をクリックしてクリックすることはできません _(AllowClickThrough_ パラメーターは使用しません。既定値は $false)。
 
 ```powershell
 Set-AtpPolicyForO365 -TrackClicks $true
 ```
 
-構文およびパラメーターの詳細については、「 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)」を参照してください。
+構文およびパラメーターの詳細については [、「Set-AtpPolicyForO365」を参照](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)してください。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
-安全なリンクのグローバル設定が正常に構成されたことを確認するには ([ **次の url をブロック** する] と [Office 365 app protection] の設定)、次のいずれかの手順を実行します。
+安全なリンクのグローバル設定 ([次の **URL** をブロックする] リストと Office 365 アプリ保護設定) が正常に構成されたことを確認するには、次の手順を実行します。
 
-- セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> **ATP セーフリンク**] に移動し、[ **グローバル設定**] をクリックして、画面上に表示される設定を確認します。
+- セキュリティ & コンプライアンス センターで、脅威 **管理** ポリシー ATP の安全なリンクに移動し、[グローバル設定] をクリックして、表示されるフライアウトの設定 \>  \> を確認します。 
 
 - Exchange Online PowerShell または Exchange Online Protection PowerShell で、次のコマンドを実行し、設定を確認します。
 
@@ -160,4 +160,4 @@ Set-AtpPolicyForO365 -TrackClicks $true
   Get-AtpPolicyForO365 | Format-List BlockUrls,EnableSafeLinksForO365Clients,AllowClickThrough,TrackClicks
   ```
 
-  構文およびパラメーターの詳細については、「 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365)」を参照してください。
+  構文およびパラメーターの詳細については [、Get-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365)を参照してください。

@@ -15,21 +15,21 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 E5 または Microsoft 365 E5 セキュリティの安全なドキュメントについて説明します。
-ms.openlocfilehash: 0acb5d4ee0c80deebc4d0b040b046d63037037a7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1bf802422dc05babaf5e2616468f8326b7007dc8
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659875"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682939"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-安全なドキュメントは、Microsoft 365 E5 または Microsoft 365 E5 セキュリティの機能で[、Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)を使用して、保護ビューで開いているドキュメントとファイルをスキャン[します。](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
+安全なドキュメントは、Microsoft 365 E5 または Microsoft 365 E5 セキュリティの機能で[、Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)を使用して、保護ビューで開いているドキュメントやファイルをスキャン[します。](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - 安全なドキュメントは *、Microsoft 365 E5* または *Microsoft 365 E5 セキュリティ* ライセンスを持つユーザーだけが利用できます。 これらのライセンスは、Office 365 プランの Microsoft Defender には含まれていません。
 
@@ -62,9 +62,9 @@ ms.locfileid: "49659875"
 
 2. 表示される **グローバル設定** のフライアウトで、次の設定を構成します。
 
-   - **[安全な** ドキュメント] を Officeクライアントに対して有効にする: トグルを右に移動して機能を有効にします。オンに切り ![ 替えます ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **[安全な** ドキュメント] を Officeクライアントに対して有効にする: トグルを右に移動して機能を有効にします。オンに切り ![ 替えます ](../../media/scc-toggle-on.png) 。
 
-   - **安全な** ドキュメントでファイルが悪意のあるものとして識別された場合でも、保護ビューをクリックすることを許可します。このオプションをオフのままにすることをお勧めします (左側に切り替え: オフ ![ にします ](../../media/scc-toggle-off.png) )。
+   - **安全な** ドキュメントでファイルが悪意のあるものとして識別された場合でも、保護ビューをクリックすることを許可します。このオプションはオフのままにすることをお勧めします (左側のトグルをオフのままに ![ します ](../../media/scc-toggle-off.png) )。
 
    完了したら、**[保存]** をクリックします。
 
@@ -93,7 +93,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 安全なドキュメントを有効にし、構成されていることを確認するには、次の手順を実行します。
 
-- セキュリティ & コンプライアンス センターで、脅威管理ポリシー ATP の安全な添付ファイルに移動し、[グローバル設定] をクリックして \>  \> **、Office** クライアントの安全なドキュメントを有効にし、安全なドキュメントが悪意のある設定としてファイルを識別した場合でも、保護ビューをクリックできるユーザーを許可します。
+- セキュリティ & コンプライアンス センターで、脅威管理ポリシー ATP の安全な添付ファイルに移動し、[グローバル設定] をクリックして \>  \> **、Office** クライアントの安全なドキュメントを有効にし、安全なドキュメントでファイルが悪意のある設定として識別された場合でも、保護ビューをクリックできるユーザーを許可します。
 
 - Exchange Online PowerShell で次のコマンドを実行し、プロパティの値を確認します。
 

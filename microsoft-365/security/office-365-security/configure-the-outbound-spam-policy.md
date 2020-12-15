@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で送信スパム ポリシーを表示、作成、変更、および削除する方法について説明します。
-ms.openlocfilehash: 0deafe2817c3e10371b02349aca2612af090af65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1e25d687ea22c70ba36f7c183b1fd8e578f7fa13
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659704"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683333"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパム フィルターを構成する
 
@@ -109,7 +109,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
      1. [ユーザー **の追加] をクリックします**。 表示される **受信者の追加または削除** のフライアウトで、次のようにします。
 
-     1. 送信者の電子メール アドレスを入力します。 複数の電子メール アドレスをセミコロンで区切って指定できます (;)または 1 行に 1 人の受信者。
+     1. 送信者の電子メール アドレスを入力します。 複数の電子メール アドレスをセミコロンで区切って指定;)または 1 行に 1 人の受信者。
 
      1. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) をクリックして受信者を追加します。
 
@@ -154,7 +154,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
        - ユーザーは、UTC 時間に基づいて、次の日までそれ以上メッセージを送信できません。 管理者がこのブロックを上書きする方法はありません。
 
-     - **ユーザー** によるメールの送信を制限する : 電子メール通知が送信され、セキュリティ & コンプライアンス センターの [制限されたユーザー **] <https://sip.protection.office.com/restrictedusers>** ポータルにユーザーが追加され、ユーザーは管理者によって制限付きユーザーポータルから削除されるまで電子メールを送信できません。管理者が一覧からユーザーを削除した後、その日のユーザーは再び制限されません。 手順については、「迷惑メールの送信後に制限付きユーザー ポータルからユーザーを削除する」 [を参照してください](removing-user-from-restricted-users-portal-after-spam.md)。
+     - **メール** の送信を制限する : 電子メール通知が送信され、セキュリティ & コンプライアンス センターの [制限されたユーザー **] <https://sip.protection.office.com/restrictedusers>** ポータルにユーザーが追加され、ユーザーは管理者によって制限付きユーザー ポータルから削除されるまで電子メールを送信できません。管理者が一覧からユーザーを削除した後、その日のユーザーは再び制限されません。 手順については、「迷惑メールの送信後に制限付きユーザー ポータルからユーザーを削除する」 [を参照してください](removing-user-from-restricted-users-portal-after-spam.md)。
 
      - **アクションなし、アラートのみ**: 電子メール通知が送信されます。
 
@@ -184,7 +184,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
     - **送信者:** 組織内の 1 人または複数のユーザーを指定します。 **[タグの追加]** をクリックして、リストをフィルター処理するための入力を始めます。 もう一度 [ **タグの追加] ボックスをクリック** して、追加の送信者を選択します。
 
-    - **Sender is a member of**: Specifies one or more groups in your organization. **[タグの追加]** をクリックして、リストをフィルター処理するための入力を始めます。 もう一度 [ **タグの追加] ボックスをクリック** して、追加の送信者を選択します。
+    - **Sender が次のメンバーである**: 組織内の 1 つ以上のグループを指定します。 **[タグの追加]** をクリックして、リストをフィルター処理するための入力を始めます。 もう一度 [ **タグの追加] ボックスをクリック** して、追加の送信者を選択します。
 
     - **次の場合を除く**: ルールの例外を追加するには、**[条件の追加]** を 3 回クリックして、使用可能なすべての例外を表示します。 設定と動作は、条件とまったく同じです。
 
@@ -230,7 +230,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
    ポリシーを無効にするには、左に切り替えます。 ![オフに切り替え](../../media/scc-toggle-off.png)
 
-   ポリシーを有効にするには、右に切り替えます。 ![オンに切り替え](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   ポリシーを有効にするには、右に切り替えます。 ![オンに切り替え](../../media/scc-toggle-on.png)
 
 既定の送信スパム ポリシーを無効にできない。
 
@@ -244,7 +244,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
 
-2. [スパム **対策の設定]** ページで、[種類] 列の値が[カスタム送信スパム ポリシー] であるポリシー **を探します**。 **[優先度]** 列の値に注目します。
+2. [スパム **対策の設定]** ページで、[種類] 列の値が[カスタム送信スパム ポリシー] である **ポリシーを探します**。 **[優先度]** 列の値に注目します。
 
    - 優先度が最も高いカスタム送信スパム ポリシーの値は、 ![ 下方向キー アイコン ](../../media/ITPro-EAC-DownArrowIcon.png) **0 です**。
 
@@ -411,7 +411,7 @@ Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパム フィルター ルールを変更する
 
-PowerShell で送信スパム フィルター ルールを変更する場合に使用できない唯一の設定は、無効にされたルールを作成できる _Enabled_ パラメーターです。 既存の送信スパム フィルター ルールを有効または無効にするには、次のセクションを参照してください。
+PowerShell で送信スパム フィルター ルールを変更する場合に使用できない唯一の設定は _、_ 無効にされたルールを作成できる Enabled パラメーターです。 既存の送信スパム フィルター ルールを有効または無効にするには、次のセクションを参照してください。
 
 それ以外の場合は、PowerShell で送信スパム フィルター ルールを変更するときに追加の設定を使用できません。 「手順 [2: PowerShell](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) を使用して送信スパム フィルター ルールを作成する」セクションで説明したルールを作成する場合と同じ設定を使用できます。
 

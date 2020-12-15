@@ -1,7 +1,7 @@
 ---
-title: Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
-description: Microsoft 365 セキュリティセンターで Microsoft セキュリティスコアを向上させるための処置を行う方法について説明します。
-keywords: microsoft secure score、secure score、office 365 のセキュリティスコア、microsoft セキュリティスコア、microsoft 365 セキュリティセンター、改善アクション
+title: Microsoft セキュア スコアを使用してセキュリティの状態を評価する
+description: Microsoft 365 セキュリティ センターで Microsoft セキュア スコアを向上させるアクションを実行する方法について説明します。
+keywords: Microsoft セキュア スコア, セキュア スコア, Office 365 セキュア スコア, Microsoft セキュリティ スコア, Microsoft 365 セキュリティ センター, 改善アクション
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,107 +20,105 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920538"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683345"
 ---
-# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft セキュア スコアを使用してセキュリティの状況を評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 この点については https://security.microsoft.com/securescore 、「 [Microsoft 365 セキュリティセンター](overview-security-center.md)」を参照してください。
+Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 https://security.microsoft.com/securescore[これは、Microsoft 365](overview-security-center.md)セキュリティ センターにあります。
 
 必要な情報を迅速に把握できるように、Microsoft の改善のための処置は次のグループに分類されています。
 
-* Identity (Azure Active Directory アカウント & の役割)
-* データ (現時点では改善アクションを行わない)
-* デバイス (エンドポイントの Microsoft Defender ( [microsoft のデバイスのセキュリティで保護されたスコア](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)と呼ばれる))
+* ID (Azure Active Directory アカウント&ロール)
+* デバイス (デバイスの Microsoft セキュア スコアと呼ばれる [、エンドポイント用 Microsoft](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)Defender)
 * アプリ (Office 365 や Microsoft Cloud App Security を含む、メール アプリとクラウド アプリ)
-* インフラストラクチャ (現在のところ、改善のための処置はありません)
 
 >[!NOTE]
->Microsoft Secure Score の最近のリリースでは、Microsoft セキュリティスコアを Id のセキュリティで保護されたスコアと Graph API とは一時的に互換性がない、向上したスコアリングモデルがリリースされました。 [詳細の表示](microsoft-secure-score-whats-new.md)
+>Microsoft セキュア スコアの最近のリリースでは、スコアモデルが改善され、Microsoft セキュア スコアと Id セキュア スコアおよび Graph API との互換性が一時的に改善されました。 [詳細の表示](microsoft-secure-score-whats-new.md)
 
-[Microsoft セキュリティスコアの概要] ページで、これらのグループ間のポイントの分割方法と、使用可能なポイントを参照してください。 また、ベンチマークの総合スコア、セキュリティスコアの履歴傾向、ベンチマーク比較を使用して、スコアを向上させるために実行できる改善措置の優先順位を取得することもできます。
+Microsoft セキュア スコアの概要ページで、これらのグループ間でのポイントの分割方法と使用可能なポイントを確認します。 また、合計スコアの全体表示、ベンチマーク比較によるセキュア スコアの履歴傾向、スコアを向上させるために実行できる優先順位付けされた改善アクションを取得できます。
 
-![セキュリティで保護されたスコアホームページ](../../media/secure-score/secure-score-homepage-new.png)
+![セキュア スコア ホームページ](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="check-your-current-score"></a>現在のスコアを確認する
 
-現在のスコアを確認するには、Microsoft の [セキュリティスコアの概要] ページに移動して、 **セキュリティで保護さ** れたスコアを示すタイルを探します。 スコアは、パーセンテージとして表示され、総ポイント数で得られたポイント数として表示されます。
+To check on your current score, go to the Microsoft Secure Score overview page and look for the tile that says **Your secure score**. スコアは、合計で得たポイント数と共にパーセンテージで表示されます。
 
-また、スコアの横にある [ **追加** ] ボタンを選択すると、スコアのさまざまなビューを選択できます。 これらの異なるスコア表示は、スコアタイルおよび点の内訳グラフのグラフに表示されます。
+さらに、スコアの横にある [ **含** める] ボタンを選択した場合は、スコアの異なるビューを選択できます。 これらのさまざまなスコア ビューは、スコア タイルとポイントブレークダウン グラフのグラフに表示されます。
 
-次のスコアは、全体的なスコアの表示に追加して、全体的なスコアをより正確に把握することができます。
+全体的なスコアのビューに追加できるスコアを次に示します。スコア全体の全体像を確認できます。
 
-- **予定スコア** : 計画されたアクションが完了したときに予想されるスコアを表示する
-- **現在のライセンススコア** : 現在の Microsoft ライセンスで達成できるスコアを表示する
-- **実現** 可能なスコア: Microsoft のライセンスと現在のリスクの受け入れによって得られるスコアを表示します。
+- **計画されたスコア**: 計画されたアクションが完了すると、投影されたスコアを表示する
+- **現在のライセンス スコア**: 現在の Microsoft ライセンスで実現できるスコアを表示する
+- **達成可能なスコア**: Microsoft ライセンスと現在のリスク受け入れで達成できるスコアを表示する
 
-このビューは、次のように表示されます。すべてのスコアの表示が含まれている場合は、以下のようになります。
+考えられるすべてのスコア ビューを含めた場合、このビューは次のように表示されます。
 
-![予定スコア、現在のライセンススコア、実現可能スコアを含む、セキュリティで保護されたスコア](../../media/secure-score/your-secure-score.png)
+![計画されたスコア、現在のライセンス スコア、達成可能なスコアを含むセキュリティ スコア](../../media/secure-score/your-secure-score.png)
 
 ## <a name="take-action-to-improve-your-score"></a>スコアを上げるための対策
 
-[ **向上** したアクション] タブには、攻撃対象となる可能性のあるセキュリティ推奨が一覧表示されます。 また、それらの状態 (住所、計画済み、リスクの承諾、サードパーティによる解決、代替の軽減による解決、完了) も含まれます。 すべての改善のための処置の検索、フィルター処理、グループ化を行うことができます。  
+[ **改善アクション]** タブには、攻撃の可能性に対処するセキュリティの推奨事項が一覧表示されます。 また、その状態 (対処、計画済み、リスク受け入れ、サード パーティ経由での解決、代替軽減策による解決、完了) も含まれます。 すべての改善のための処置の検索、フィルター処理、グループ化を行うことができます。  
 
 ### <a name="ranking"></a>ランク付け
 
-ランク付けは、残されているポイント数、実装の難易度、ユーザーへの影響、および複雑さに基づいています。 最高ランクの改善のための処置では、難易度、ユーザーへの影響度、複雑度は低く、高ポイントを取ることができます。
+ランク付けは、達成するポイント数、実装の難易度、ユーザーへの影響、複雑さに基づいて行います。 最高ランクの改善のための処置では、難易度、ユーザーへの影響度、複雑度は低く、高ポイントを取ることができます。
 
-### <a name="view-improvement-action-details"></a>向上アクションの詳細を表示する
+### <a name="view-improvement-action-details"></a>改善アクションの詳細を表示する
 
-特定の改善アクションを選択すると、完全なページポップアップが表示されます。  
+特定の改善アクションを選択すると、ページ全体のフライアウトが表示されます。  
 
-![改善アクションのポップアップの例 ](../../media/secure-score/secure-score-improvement-action-details.png)
- *図 2: 改善アクションのポップアップの例*
+![改善アクションのフライアウトの例 ](../../media/secure-score/secure-score-improvement-action-details.png)
+ *図 2: 改善アクションのフライアウトの例*
 
 この操作を完了するには、いくつかの選択肢があります。
 
-* [ **管理** ] を選択して、構成画面に移動し、変更を行います。 その後、そのアクションに価値があるポイントを取得します。通常、更新には約24時間かかります。
+* [ **管理] を** 選択して構成画面に移動し、変更を行います。 その後、アクションが価値のあるポイントを取得し、フライアウトに表示されます。ポイントの更新には、通常約 24 時間かかります。
 
-* [ **共有** ] を選択して、[改善] アクションへの直接リンクをコピーします。 また、電子メール、Microsoft Teams、Microsoft Planner、または ServiceNow など、リンクを共有するプラットフォームを選択することもできます。 ServiceNow を選択すると、[変更チケット] を作成できます。このチケットは ServiceNow と Microsoft 365 セキュリティセンターのホームに表示されます。 詳細については、「 [Microsoft 365 セキュリティセンターと ServiceNow 統合](tickets-security-center.md)」を参照してください。
+* [ **共有]** を選択して、改善アクションへの直接リンクをコピーします。 また、電子メール、Microsoft Teams、Microsoft Planner、ServiceNow などのリンクを共有するプラットフォームを選択できます。 ServiceNow を選択すると、ServiceNow と Microsoft 365 セキュリティ センター ホームに表示される変更チケットを作成できます。 詳細については [、Microsoft 365 セキュリティ センターと ServiceNow の統合を参照してください](tickets-security-center.md)。
 
 ### <a name="choose-an-improvement-action-status"></a>改善アクションの状態を選択する
 
-[改善] アクションに固有の状態を選択し、メモを記録します。
+状態を選択し、改善アクションに固有のメモを記録します。
 
-- **To アドレス** -改善アクションが必要であることを認識し、将来のある時点での対処を計画します。 この状態は、部分的に検出されたが完全に完了していないアクションにも適用されます。
-- **計画** 済み-改善アクションを完了するための具体的なプランが用意されています。
-- **承認済みリスク** -セキュリティは常にユーザビリティにバランスをとる必要があり、お客様の環境ですべての推奨事項が機能するわけではありません。 その場合は、リスクを受け入れるか、またはリスクを軽減するかを選択して、改善アクションが実行されないようにすることができます。 ポイントは表示されませんが、改善アクションの一覧には表示されなくなります。 このアクションは履歴で表示したり、いつでも元に戻したりできます。
-- **サード** パーティによって解決され、 **別の軽減** によって解決されました。改善アクションは、サードパーティ製のアプリケーションまたはソフトウェア、または内部ツールによって既に対処されています。 この操作に必要なポイントが得られます。このため、スコアは全体的なセキュリティ対策をより適切に反映できます。 サードパーティまたは内部ツールがコントロールをカバーしなくなった場合は、別の状態を選択することができます。 改善アクションがこれらの状態のどちらかとしてマークされている場合、Microsoft は、実装の完全性を確認できません。
+- **対処するには** 、 - 改善アクションが必要なと認識し、将来ある時点で対処する予定です。 この状態は、部分的に検出されたが、完全には完了していないアクションにも適用されます。
+- **計画済** み - 改善アクションを完了する具体的な計画が実施されています。
+- **受け入れられる** リスク - セキュリティは常に使いやすさとバランスを取る必要があります。すべての推奨事項が環境で機能するとは限しません。 その場合は、リスクまたは残りのリスクを受け入れ、改善アクションを実行しない選択をすることができます。 ポイントは与えらえませんが、改善アクションの一覧にアクションが表示されなくなりました。 このアクションは履歴で表示したり、いつでも元に戻したりできます。
+- **サード パーティを通** じて解決され、別の軽減策によって **解決されました。** 改善アクションは、サードパーティのアプリケーションまたはソフトウェア、または内部ツールによって既に対処されています。 アクションの価値のあるポイントが得られるので、スコアは全体的なセキュリティの体勢をより良く反映します。 サードパーティまたは内部ツールがコントロールをカバーしなくなった場合は、別の状態を選択できます。 改善アクションがこれらの状態のいずれかとしてマークされている場合、Microsoft は実装の完全性を確認できません。
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>脅威 & 脆弱性管理の改善アクション
+#### <a name="threat--vulnerability-management-improvement-actions"></a>脅威&脆弱性管理の改善アクション
 
-"デバイス" カテゴリの向上アクションについては、状態を選択できません。 代わりに、 [Microsoft Defender セキュリティセンター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)の関連する[脅威 & 脆弱性管理 (tvm) セキュリティに関する推奨事項](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)に従ってアクションを実行します。 選択する例外と、作成する根拠は、そのポータルに固有のものになります。 これは、Microsoft セキュリティスコアポータルには含まれません。
+[デバイス] カテゴリの改善のためのアクションでは、状態を選択できません。 代わりに[、Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)セキュリティ センターの関連する脅威&脆弱性管理[(TVM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)のセキュリティに関する推奨事項に指示されます。 選択した例外と記述する正当な理由は、そのポータルに固有です。 Microsoft セキュア スコア ポータルには表示されません。
 
 #### <a name="completed-improvement-actions"></a>完了した改善アクション
 
-改善アクションのすべての可能なポイントが達成されたら、改善アクションの状態は "完了" になります。 完了した改善アクションは Microsoft データによって確認され、状態を変更することはできません。
+改善アクションの可能性があるすべてのポイントが達成された後、改善アクションは"完了" 状態になります。 完了した改善アクションは Microsoft データによって確認され、ステータスを変更する必要はありません。
 
 ### <a name="assess-information-and-review-user-impact"></a>情報を評価し、ユーザーへの影響を確認する
 
-「 **ひとめで** 」というセクションでは、カテゴリ、保護できる攻撃、および製品について説明します。
+「一目 **で」という** セクションには、カテゴリ、保護できる攻撃、製品が表示されます。
 
-**ユーザーへの影響** は、改善アクションが実行された場合にユーザーが **受ける** 影響を示しています。
+ユーザー **への影響は**、改善アクションが実施された場合にユーザーが経験する操作を示し、影響を受けるユーザーには、その操作を行うユーザーが表示されます。
 
-### <a name="implement-the-improvement-action"></a>向上アクションを実装する
+### <a name="implement-the-improvement-action"></a>改善アクションを実装する
 
-[ **実装** ] セクションには、すべての前提条件、[改善] アクションを完了するためのステップバイステップの手順、向上アクションの現在の実装状態、詳細なリンクが表示されます。
+[ **実装** ] セクションには、すべての前提条件、改善アクションを完了するためのステップ バイ ステップの次の手順、改善アクションの現在の実装状態、および詳細なリンクが表示されます。
 
-前提条件は、取得する必要があるライセンス、または改善アクションが解決される前に完了する必要があるアクションを含みます。 改善アクションを完了し、それらのライセンスが必要なユーザーに適用されるように、ライセンスに十分な座席があることを確認してください。  
+前提条件には、取得する必要があるライセンス、または改善アクションに対処する前に完了する必要があるアクションが含まれます。 改善アクションを完了するのに十分なシートがライセンスに含まれています。また、それらのライセンスが必要なユーザーに適用されます。  
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 
-問題がある場合は、「 [Security, Privacy & コンプライアンス](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) コミュニティ」に投稿してお知らせください。 コミュニティを監視しているので、問題に対応します。
+問題がある場合は、セキュリティ/プライバシー/コンプライアンス コミュニティに投稿して [&知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) らせてください。 コミュニティを監視しているので、問題に対応します。
 
 ## <a name="related-resources"></a>関連リソース
 
-- [Microsoft セキュリティスコアの概要](microsoft-secure-score.md)
-- [Microsoft のセキュリティで保護されたスコア履歴を追跡し、目標を達成する](microsoft-secure-score-history-metrics-trends.md)
+- [Microsoft セキュア スコアの概要](microsoft-secure-score.md)
+- [Microsoft セキュア スコアの履歴を追跡し、目標を達成する](microsoft-secure-score-history-metrics-trends.md)
 - [今後の予定](microsoft-secure-score-whats-coming.md)
 - [新機能](microsoft-secure-score-whats-new.md)

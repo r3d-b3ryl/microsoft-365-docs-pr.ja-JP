@@ -29,7 +29,7 @@ Microsoft 情報ガバナンス (MIG と略されることもあります) 機�
 
 ![データを管理する - 情報ガバナンスとレコード管理](../media/information-governance-records-management.png)
 
-データをセキュリティで保護するには、「[Microsoft 365 の Microsoft Information Protection](information-protection.md)」を参照してください。
+データをセキュリティで保護するには、 「[Microsoft 365 の Microsoft Information Protection](information-protection.md)」を参照してください。
 
 ## <a name="information-governance"></a>情報ガバナンス
 

@@ -8,6 +8,8 @@
       href: work-with-topics.md
     - name: トピック センターへのアクセス許可をユーザーに付与する
       href: give-user-permissions-to-the-topic-center.md
+    - name: 環境を準備する
+      href: topic-experiences-get-ready.md
 - name: セットアップと管理
   items:
     - name: トピックのセキュリティ
@@ -24,3 +26,7 @@
       href: topic-experiences-user-permissions.md
     - name: トピック センター名を変更する
       href: topic-experiences-administration.md
+- name: 導入
+  items:
+    - name: 導入の推進を開始する
+      href: topics-adoption-getstarted.md
