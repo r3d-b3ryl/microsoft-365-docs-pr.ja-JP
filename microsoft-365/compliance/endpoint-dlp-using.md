@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 0a6883bd785141af6f198f0cd871c11794618e27
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561684"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667812"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -85,13 +85,6 @@ DLP うるさすぎ、関心のあるファイルが含まれないので、デ�
 #### <a name="unallowed-browsers"></a>許可されていないブラウザー
 
 実行可能ファイル名で識別された、クラウド サービスへのアップロードの制限がブロックまたは上書きのブロックに設定されている強制された DLP ポリシーの条件に一致するファイルへのアクセスがブロックされるブラウザーを追加します。 これらのブラウザーがファイルへのアクセスからブロックされている場合、エンドユーザーには、Edge Chromium 経由でファイルを開くように依頼するトースト通知が表示されます。
-
-### <a name="always-audit-file-activity-from-onboarded-devices"></a>オンボード デバイスからファイル アクティビティを常に監査する
-
-Office、PDF、CSV ファイルの DLP アクティビティが、自動的にオンボード デバイスの監査テレメトリおよびアクティビティ エクスプローラーにて監査され確認できるかどうかを制御します。 
-
-このオプションが有効(既定)になっている場合は、アクティブな DLP ポリシーに含まれているかどうかに関係なく、オンボード デバイスに対して常にファイルアクティビティが監査されます。
-このオプションが無効になっている場合、ファイル アクティビティは、アクティブな DLP ポリシーに含まれている場合にのみオンボード デバイスにて監査されます。 
 
 
 ## <a name="tying-dlp-settings-together"></a>DLP 設定の結合
