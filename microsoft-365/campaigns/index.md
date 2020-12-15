@@ -60,12 +60,12 @@ ms.locfileid: "48897295"
 
 含まれる機能の詳細については、[[Microsoft 365 Business Premium]](https://www.microsoft.com/microsoft-365/business)を参照してください。
 
-<a name="get-started"></a>はじめに
+<a name="get-started"></a>作業の開始
 --------------------------
 
 以下の手順に従って開始しましょう。
 
-- [Microsoft 365 for Campaigns を入手する](get-microsoft-365-campaigns.md)
+- [Microsoft 365 for campaigns を入手する](get-microsoft-365-campaigns.md)
 - [ユーザーが Microsoft 365 を使用する方法について説明](m365-campaigns-users.md)
 - [Microsoft 365 for Campaigns を設定する](microsoft-365-campaigns-setup-overview.md)
 
@@ -82,7 +82,7 @@ ms.locfileid: "48897295"
 | 機密情報を暗号化またはラベル付けする | コミュニケーション サイトを作成する |
 | ------------- | ------------- |
 | ![暗号化され、ラベル付けされたメール](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint​​ コミュニケーションサイト](../media/sm-m365-democracy-comms-site.png) |
-| 社外秘や機密情報を含むメールを保護するには、暗号化と秘密度ラベルを使用します。 [暗号化されたメールを送信する](send-encrypted-email.md) | SharePoint で作成した内部のコミュニケーション サイトで、イベント、メッセージ、画像などをチームと共有できます。 [サイトを作成する](create-communications-site.md) |
+| 機密情報や機密情報を含むメールを保護するには、暗号化と機密ラベルを使用します。 [暗号化された電子メールを送信する](send-encrypted-email.md) | SharePoint で作成した内部のコミュニケーションサイトで、イベント、メッセージ、画像などをチームと共有できます。 [サイトを作成する](create-communications-site.md) |
 
 | ファイルやビデオを共有する |
 | ------------- |
