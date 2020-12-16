@@ -1,5 +1,5 @@
 - name: Microsoft 365 ソリューションおよびアーキテクチャ センター
-  href: solution-architecture-center.md
+  href: index.yml
   displayName: Home
 - name: ソリューションとアーキテクチャの図
   items:
@@ -7,10 +7,10 @@
       href: productivity-illustrations.md
     - name: Microsoft クラウド アーキテクチャ モデル
       href: cloud-architecture-models.md
+    - name: アーキテクチャのアイコンとテンプレート
+      href: architecture-icons-templates.md
 - name: Microsoft 365 foundation ソリューション
   items:
-    - name: 概要
-      href: foundation-solutions-overview.md
     - name: Microsoft 365 でリモート ワーカーを支援する
       items:
         - name: 概要
@@ -93,8 +93,6 @@
           href: information-protection-deploy-monitor-respond.md
 - name: 作業負荷のソリューションとシナリオ
   items:
-    - name: 概要
-      href: workload-solutions-scenarios-overview.md
     - name: チームワークと共同作業
       items:
         - name: Teams アーキテクチャのポスター
@@ -211,8 +209,6 @@
           href: team-security-isolation-dev-test.md
 - name: 業界固有のガイダンス
   items:
-    - name: 概要
-      href: industry-specific-guidance-overview.md
     - name: 財務
       items:
         - name: 金融サービスのセキュリティとコンプライアンス
