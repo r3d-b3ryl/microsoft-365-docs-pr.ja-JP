@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558190"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667707"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -162,7 +162,7 @@ Azure AD のアクセス レビューを使用すると、さまざまなチー�
 
 Microsoft 365 グループとTeamsの場合は、Azure AD の条件付きアクセスポリシーで行います。 SharePointについては、SharePoint 管理センターで構成されます。 ( [機密ラベルを使用して、ゲストのアクセスを web のみに制限する](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)ことができます)
 
-グループとチームに対して、ゲストのアクセスを web のみに制限する方法
+グループとチームに対して、ゲストのアクセスを 　Web のみに制限する方法
 
 1. [Azure条件付きアクセスポリシー](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade)に移動する。
 2. **[条件付きアクセス - ポリシー]** ブレードで、**[新しいポリシー]** をクリックします。

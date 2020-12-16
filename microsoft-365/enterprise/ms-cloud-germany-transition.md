@@ -1,5 +1,5 @@
 ---
-title: 新しいドイツ語のデータセンターリージョンの Microsoft Cloud Deutランドから Office 365 サービスへの移行
+title: Microsoft Cloud Deutschland から新しいドイツのデータセンター リージョンOffice 365 サービスへの移行
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -19,29 +19,29 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 37bf052739bf15c1a0d3712539779e9dff31d9e8
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551536"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688643"
 ---
-# <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツ語のデータセンターリージョンの Microsoft Cloud Deutランドから Office 365 サービスへの移行
+# <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Deutschland から新しいドイツのデータセンター リージョンOffice 365 サービスへの移行
 
 > [!NOTE]
-> この記事は、対象となる Microsoft Cloud Deut上陸お客様にのみ適用されます。
+> この記事は、対象となる Microsoft Cloud Deutschland のお客様にのみ適用されます。
 
-2018年8月に、Microsoft は、お客様のデジタル変換をさらに有効にするために、ドイツの新しいクラウド地域から、完全な Microsoft cloud-Azure、Office 365、Dynamics 365、および電源プラットフォームを提供することを目指して発表しました。 2019 年 8 月に、ドイツで新しいクラウド リージョンを開設する準備を進めていることを発表しました。 その後、Azure、Office 365、Dynamics 365、および電源プラットフォームの可用性について発表しました。
+2018 年 8 月、Microsoft は、お客様のデジタル変換をより良く実現するために、ドイツの新しいクラウド地域から完全な Microsoft クラウド (Azure、Office 365、Dynamics 365、および Power Platform) を提供する意向を発表しました。 2019 年 8 月に、ドイツで新しいクラウド リージョンを開設する準備を進めていることを発表しました。 その後、Azure、Office 365、Dynamics 365、および Power Platform の可用性が発表されました。
 
-新しい地域は、ドイツのお客様のニーズに対応するように設計されており、ドイツのユーザーの柔軟性、最新のインテリジェントなクラウドサービス、およびドイツでのお客様のデータ常駐サービスへの完全な接続365にも対応しています。
+新しい地域は、ドイツのお客様の進化するニーズに柔軟に対応し、最新のインテリジェント クラウド サービス、Microsoft 365 サービス のクラウド ネットワークへの完全な接続、およびドイツ内の顧客データ常駐に対応するように設計されています。
 
-## <a name="how-to-migrate-to-the-new-german-regions"></a>新しいドイツ地域に移行する方法
+## <a name="how-to-migrate-to-the-new-german-regions"></a>新しいドイツリージョンに移行する方法
 
-既存の Microsoft Cloud Deutお客様は、Office 365、Dynamics 365 顧客契約、および電源プラットフォームのお客様の移行を開始できます。 最初のステップは、新しいドイツのデータセンター リージョンへの [Microsoft 主導の移行にオプトインする](https://aka.ms/office365germanymoveoptin)ことです。
+既存の Microsoft Cloud Deutschland のお客様は、Office 365、Dynamics 365 Customer Engagement、および Power Platform のお客様の移行を開始できます。 最初のステップは、新しいドイツのデータセンター リージョンへの [Microsoft 主導の移行にオプトインする](https://aka.ms/office365germanymoveoptin)ことです。
 
-Microsoft による方法をオプトインしている組織の場合、移行は2021より前に開始される予定で、2021年10月29日に完了することが予想されます。 移行の結果、主要な顧客データおよびサブスクリプションは新しいドイツ リージョンへと移動します。
+Microsoft によるアプローチにオプトインする組織の場合、移行は 2021 年初めに開始され、2021 年 10 月 29 日までに完了する予定です。 移行の結果、主要な顧客データおよびサブスクリプションは新しいドイツ リージョンへと移動します。
 
-この記事では、移行のための Microsoft による手法の概要を示し、移行中および移行後のユーザーと管理者のエクスペリエンスを明確にします。また、使用するワークロードに基づいてお客様に必要な操作についても説明します。
+この記事では、移行に関する Microsoft によるアプローチの概要、移行中および移行後のユーザーと管理者の両方のエクスペリエンス、および利用するワークロードに基づいてお客様に必要になる可能性があるアクションについて明確に説明します。
 
 以下のサービスは、Microsoft 主導のアプローチの一部として移行されます。
 
@@ -53,92 +53,92 @@ Microsoft による方法をオプトインしている組織の場合、移行�
 
 - Skype for Business Online\*\*
 - Office 365 グループ
-- Dynamics 365/Power Platform\*\*\*
+- Dynamics 365 / Power Platform\*\*\*
 
-\*\*ドイツのデータセンターリージョンへの Microsoft クラウドの移行時に、既存の Skype for Business Online のお客様は Microsoft Teams に移行します。 詳細情報については、「[Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)」を参照してください。
+\*\*Microsoft Cloud Deutschland からドイツのデータセンター リージョンへの移行中に、既存の Skype for Business Online のお客様は Microsoft Teams に移行されます。 詳細情報については、「[Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)」を参照してください。
 
-\*\*\*これらのサービスの移行の前提条件と影響については、 [Dynamics 365 カスタマーエンゲージメント](https://aka.ms/d365ceoptin) の記事を参照してください。
+\*\*\*これらのサービスの移行の前提条件と影響については [、Dynamics 365 Customer engagement の記事を参照](https://aka.ms/d365ceoptin) してください。
 
-Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 テナントを新しいドイツのデータセンター リージョンに移行することを選択した場合、SharePoint Online の移行が完了した後、Office 365 ビデオはサポートされません。 詳細については、「 [Microsoft Cloud Deut上陸陸地 timeline](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)」を参照してください。
+Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 テナントを新しいドイツのデータセンター リージョンに移行することを選択した場合、SharePoint Online の移行が完了した後、Office 365 ビデオはサポートされません。 詳細については [、Microsoft Cloud Deutschland のタイムラインを参照してください](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)。
 
-## <a name="how-is-the-migration-organized"></a>移行の整理方法
+## <a name="how-is-the-migration-organized"></a>移行の編成方法
 
-この図は、新しいドイツデータセンターへの移行における Office 365 と Dynamics 365 のさまざまなコンポーネントを表しています。
+この図は、新しいドイツのデータセンターへの移行における Office 365 および Dynamics 365 のさまざまなコンポーネントを表しています。
 
-![新しいドイツデータセンターへの移行における Office 365 および Dynamics 365 のコンポーネント](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![新しいドイツOffice移行における Office 365 および Dynamics 365 のコンポーネント](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
-移行は、 [移行のオプトイン](https://aka.ms/office365germanymoveoptin)時にすべて開始されるフェーズで実行されます。 移行フェーズのほとんどは、顧客との対話が最小限に抑えられたバックエンドサービスとして実行され、もう1つのフェーズの後で実行されます。 その他のお客様主導のタスクおよび全体的な移行状態は、移行プロセスの間に Microsoft 365 管理センターのメッセージセンターを通じて伝えられます。 タスクの例としては、お客様が管理する DNS の更新、Exchange ハイブリッドのお客様のためのハイブリッドセットアップの再構成、Azure の移行などがあります。
+移行は、移行をオプトインするときにすべて開始 [するフェーズで実行されます](https://aka.ms/office365germanymoveoptin)。 移行フェーズの大部分は、最小限のカスタマー操作でバック エンド サービス操作として実行され、次に 1 つのフェーズが実行されます。 追加のお客様主導のタスクと全体的な移行状態の開始は、移行プロセス中に Microsoft 365 管理センターのメッセージ センターを通じて伝達されます。 タスクの例としては、顧客管理の DNS 更新、Exchange ハイブリッド顧客のハイブリッド セットアップの再構成、Azure 移行があります。
 
-オプトインが発生しても、移行がすぐに開始されるわけではありません。 組織は、後で移行するようにスケジュールされているテナントの一覧に追加されます。 完了時に移行と使用が正常に行われるようにするには、今すぐ準備段階を開始することが重要です。
+オプトインが発生しても、移行はすぐには開始されません。 組織は、後で移行する予定のテナントの一覧に追加されます。 完了時に正常な移行と使用を確実に行う上で重要な作業前フェーズを今すぐ開始できます。
 
 - [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
-- [その他の準備作業](ms-cloud-germany-transition-add-pre-work.md)
+- [追加の作業前作業](ms-cloud-germany-transition-add-pre-work.md)
 
-テナントの移行開始の1週間前に、すべての前提条件を満たす必要があることを示す最終警告として、メッセージセンターサービスで通知を受け取ります。
+テナントの移行が開始される 1 週間前に、メッセージ センター サービスに、すべての前提条件を完了する必要があるという最終警告として通知が表示されます。
 
-移行により、Azure ad テナントは、独立ドイツ Azure AD サービスから EU 地域の Azure AD の Office 365 services インスタンスに移動されます。
+移行では、Azure AD テナントが、主権を持つドイツの Azure AD サービスから EU 地域の Azure AD の Office 365 サービス インスタンスに移行されます。
 
-次のフェーズでは、ドイツ固有の製品からテナント&#39;のサブスクリプションとユーザーライセンスを移行します。
+次のフェーズでは、テナントのサブスクリプション&#39;ドイツ固有の製品からのユーザー ライセンスの移行です。
 
-お客様の Azure 移行を含むすべての手順が完了すると、Office 365 services サービスでテナントがファイナライズされ、移行が完了としてマークされます。 この時点で、メッセージセンターの最終更新が提供されます。 これで、テナントは完全なグローバル Office 365 組織にはなりません。
+顧客の Azure 移行を含むすべての手順が完了すると、テナントは Office 365 サービス サービスで最終決定され、移行は完了としてマークされます。 この時点で、メッセージ センターの最終更新プログラムが提供されます。 テナントは、365 組織Officeグローバルではありません。
 
-移行の進行状況がメッセージセンターの投稿と一緒に通知されます。 投稿は特定のマイルストーンで行われ、手順の進行状況、および顧客がプロセスの要件に基づいて行動するための重要な情報についてのガイダンスを提供します。 メッセージセンターの通知は、次のマイルストーンで提供されます。
+移行の進行状況がメッセージ センターの投稿で通知されます。 投稿は特定のマイルストーンで行われるので、手順の進捗状況に関するガイダンスと、お客様がプロセス要件に基づいて行動する重要な情報を提供します。 メッセージ センターの通知は、次のマイルストーンで提供されます。
 
-- 移行の開始 (Azure AD の移行が開始されるまでの5営業日)
-- Azure AD の移行の完了
+- 移行の開始 (Azure 移行が開始AD 5 営業日前)
+- Azure AD移行の完了
 - サブスクリプションとライセンスの移行の完了
-- SharePoint の移行の完了
-- Exchange の移行の完了
+- SharePoint 移行の完了
+- Exchange 移行の完了
 - Skype for Business の完了
-- ダイナミクスの完了
+- Dynamics complete
 - Power BI の完了
-- 最後のサービスのカットオーバーが完了
+- サービスの最終的なカットオーバーが完了しました
 
 ## <a name="moving-to-the-new-german-regions"></a>新しいドイツ リージョンへの移動
 
-既存の Microsoft Cloud ドイツ (Microsoft Cloud Deut上陸陸地) お客様は、Office 365、Dynamics 365 カスタマー契約、および電源プラットフォームのお客様の移行を開始できます。 最初のステップは、新しいドイツのデータセンター リージョンへの [Microsoft 主導の移行にオプトインする](https://aka.ms/office365germanymoveoptin)ことです。 サブスクリプションを更新すると、Microsoft がサポートする移行のオプトインが自動的に選択されます。 Microsoft は、この問題が発生した場合に、顧客のテナント管理者に電子メールを通知し、Microsoft 365 管理センターのメッセージセンターに通知します。 ただし、すぐにプロセスを開始する場合は、Microsoft 365 管理センターで直接 [オプトイン](https://aka.ms/office365germanymoveoptin) することができます。 移行は2021の初期段階で開始される予定であり、2021年10月29日までに完了します。 
+既存の Microsoft Cloud Germany (Microsoft Cloud Deutschland) のお客様は、Office 365、Dynamics 365 Customer Engagement、および Power Platform のお客様の移行を開始できます。 最初のステップは、新しいドイツのデータセンター リージョンへの [Microsoft 主導の移行にオプトインする](https://aka.ms/office365germanymoveoptin)ことです。 サブスクリプションを更新すると、Microsoft による移行が自動的にオプトインされます。 このような場合、Microsoft は顧客テナント管理者に電子メールと Microsoft 365 管理センターのメッセージ センターで通知します。 ただし、今すぐプロセスを開始する場合は、 [今すぐ](https://aka.ms/office365germanymoveoptin) Microsoft 365 管理センターで直接オプトインできます。 移行は 2021 年初めに開始する予定で、2021 年 10 月 29 日までに完了する予定です。 
 
 移行の結果、主要な顧客データおよびサブスクリプションは新しいドイツ リージョンへと移動します。
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター リージョンでの Office 365 サービスへの移行を準備する方法
 
-最初の手順として、新しいドイツデータセンターリージョンの Microsoft Cloud Deut上陸陸から Office 365 サービスにサブスクリプションとデータを移行する権限があることを Microsoft に通知します。 手順については、「 [オプトインプロセス」](https://aka.ms/office365germanymoveoptin) を参照してください。次の点に注意してください。
+最初の手順は、サブスクリプションとデータを Microsoft Cloud Deutschland から新しいドイツのデータセンター リージョンの Office 365 サービスに移行するアクセス許可を Microsoft に付与することを Microsoft に通知することです。 手順については、 [オプトイン プロセス](https://aka.ms/office365germanymoveoptin) を参照し、次の点に注意してください。
 
-- すべての移行お客様は、Office 365 Services [office 365 の url と IP アドレス](urls-and-ip-address-ranges.md)への接続を確認する必要があります。これには、新しいドイツ語のデータセンター地域が含まれます。 Inaction を実行すると、サービスとクライアントの障害が発生する可能性があります。
-- [事前作業前](ms-cloud-germany-transition-add-pre-work.md)アクティビティのリストを確認して、組織に情報が伝えられ、変更を準備していることを確認します。
-- ドイツ地域への移行によって、組織が使用できる機能とサービスについては、「Office 365 プラットフォームサービスの説明」を参照してください。
-- 試用版サブスクリプションは移行されず、すべての有料サブスクリプションの移行がブロックされます。 移行を開始する前に、すべての試行をキャンセルするか、有料サブスクリプションに変換する必要があります。
+- 移行を行うすべてのお客様は、新しいドイツのデータセンター リージョンを含む [Office 365 サービス Office 365](urls-and-ip-address-ranges.md)の URL と IP アドレスへの接続を確認する必要があります。 不作為により、サービスとクライアントの障害が発生する可能性があります。
+- 作業前のアクティビティ [の一覧を確認](ms-cloud-germany-transition-add-pre-work.md) して、組織に通知し、変更に備えます。
+- Office 365 プラットフォーム サービスの説明を確認して、ドイツ地域への移行後に組織で利用できる機能とサービスを把握する必要があります。
+- 試用版サブスクリプションは移行されません。また、すべての有料サブスクリプションの移行がブロックされます。 移行を開始する前に、試用版をキャンセルするか、有料サブスクリプションに変換する必要があります。
 
-## <a name="where-do-i-go-from-here"></a>ここから先に進むことができます。
+## <a name="where-do-i-go-from-here"></a>ここから行く場所
 
-次のよく寄せられる質問セクションを確認してください。
+次のよく寄せられる質問のセクションを確認します。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="is-migration-required"></a>移行は必要ですか ?
 
-Microsoft は、新しいドイツ語のデータセンターリージョンにある Microsoft Cloud Deut上陸ランドから Office 365 サービスへの Office 365 テナント移行を追加料金なしで提供しています。 新しいドイツのデータセンターリージョンへの移行をオプトインすることを強くお勧めしますが、今後も Microsoft Cloud Deut/陸の地域に必要なセキュリティ更新プログラムを提供することをお勧めします。
+Microsoft はOffice 365 テナントを Microsoft Cloud Deutschland から新しいドイツのデータセンター リージョンの Office 365 サービスに無料で移行します。 新しいドイツのデータセンター リージョンへの移行をオプトインすることを強く推奨しますが、Microsoft Cloud Deutschland 地域に必要なセキュリティ更新プログラムは引き続き提供されます。
 
-新しいドイツ語のデータセンターリージョンの Office 365 サービス:
+Officeのデータセンター リージョンに 365 のサービスを展開します。
 
 - [Azure](https://azure.microsoft.com/pricing/calculator/)、[Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)、[Dynamics 365 Customer Engagement](https://dynamics.microsoft.com/pricing/)、および [Power BI](https://powerbi.microsoft.com/pricing/) について、市場競争力のある価格を提供します。
-- は Microsoft&#39;のグローバルネットワークに接続されており、何百ものネットワークエッジサイト、ピアリング場所、および出口を提供して、世界中のあらゆる場所で堅牢なユーザー環境を提供します。
+- Microsoft&#39;のグローバル ネットワークに接続され、数百のネットワーク エッジ サイト、ピアリングの場所、エグレス ポイントを提供し、世界中のどこでも堅牢なユーザー エクスペリエンスを提供します。
 - ドイツ国内での顧客データの常駐要件を満たすのに役立ちます。
-- Microsoft が提供するサービスの最新バージョンと、Office 365 の Microsoft Teams と複数地域を含む新機能を備えた、完全な機能を備えたグローバルクラウド製品を提供します。 [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&amp;regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central)、[Office 365](o365-data-locations.md)、[Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability) について、地域ごとに製品を比較します。
+- Microsoft 365 の Microsoft Teams や Multi-Geo などの最新バージョンのサービスと新機能を使用して、フル機能を備えたグローバル クラウド サービスOffice提供します。 [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&amp;regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central)、[Office 365](o365-data-locations.md)、[Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability) について、地域ごとに製品を比較します。
 - 完全な機能、エンタープライズグレードのセキュリティ、および包括的な機能を提供し、顧客がコンプライアンスおよび規制要件を満たすのを支援します。
 - 既存のオンライン サービス契約を通じてアクセスできます。
 
 ### <a name="what-is-the-service-availability-between-the-different-office-365-cloud-service-offerings"></a>さまざまな Office 365 クラウド サービス間のサービス可用性はどのくらいですか?
 <h2 id="serv-avail"></h2>
 
-次の15個のサービスは、Microsoft Cloud Deut/陸 cloud service サービスで提供されています。 Microsoft Cloud Deut上陸陸に新しいサービスを追加していません。
+Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサービスを利用できます。 Microsoft Cloud Deutschland に新しいサービスを追加しているのではありません。
 
 1. Exchange Online
 2. カスタマー ロックボックス (Exchange Online)
 3. グループ (モダン グループ)
 4. Delve プロファイル
 5. Exchange Online Protection
-6. Office 365 の Defender
+6. Defender for Office 365
 7. Advanced eDiscovery
 8. 高度なデータ ガバナンス
 9. SharePoint Online
@@ -152,22 +152,22 @@ Microsoft は、新しいドイツ語のデータセンターリージョンに�
 現在、新しいドイツのデータセンター リージョンでの Office 365 サービスの一部として 29 のサービスを利用できます。 新しい機能とサービスは、グローバルな Office 365 サービスと一貫性を持つ形で継続的に利用可能になります。
 
 1. Exchange Online
-2. Exchange Online のカスタマーロックボックス
+2. Exchange Online のカスタマー ロックボックス
 3. Microsoft 365 グループ
 4. Delve プロファイル
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Office 365 の Defender
+8. Defender for Office 365
 9. Advanced eDiscovery
 10. Advanced Security Management
 11. Information Rights Management
 12. 高度なデータ ガバナンス
 13. SharePoint Online
-14. SharePoint Online のカスタマーロックボックス
+14. SharePoint Online のカスタマー ロックボックス
 15. OneDrive for Business
 16. Microsoft Stream
-17. Skype for Business (移行中に Microsoft Teams に移行します)
+17. Skype for Business (移行中に Microsoft Teams に移行されます)
 18. クラウド PBX
 19. PSTN 会議
 20. PSTN 通話
@@ -178,121 +178,121 @@ Microsoft は、新しいドイツ語のデータセンターリージョンに�
 25. Sway
 26. Microsoft 365 アプリ
 27. Outlook モバイル
-28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1、Intune、および Rights Management Service)
+28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1、Intune、Rights Management Service)
 29. Yammer Online
 
 ### <a name="when-will-migration-happen"></a>移行はいつ行われますか ?
 
 **Azure**
 
-Azure お客様のみである場合は、Azure リソースの現在の [移行](https://docs.microsoft.com/azure/germany/germany-migration-main) を開始できます。 
+Azure の顧客のみである場合は、Azure[](https://docs.microsoft.com/azure/germany/germany-migration-main)リソースの別の地域への移行を今すぐ開始できます。 
 
-Office 365、Dynamics 365、または Power BI を使用している Azure を使用している場合は、移行プロセスを実行して、AzureAD の Azure 移行を開始する前に、移行が正常に完了していることを確認する必要があります。 AzureAD および Office 365 組織と Azure ワークロードを維持するために、サービスを閉じる前に、Azure の移行を完了する必要があります。
+azure に Office 365、Dynamics 365、または Power BI がある場合は、移行プロセスに従って、AzureAD の移行を成功してから、Azure への自己ダイレクト移行を開始する必要があります。 AzureAD と 365 組織で Azure ワークロードを維持するには、サービス終了前に Azure Office完了する必要があります。
 
 **Office 365**
 
-今すぐ、Microsoft 主導の移行に[オプトイン](https://aka.ms/office365germanymoveoptin)してください。 移行を開始する準備ができたら、Microsoft 365 管理センターのメッセージセンターで通知されます。
+今すぐ、Microsoft 主導の移行に[オプトイン](https://aka.ms/office365germanymoveoptin)してください。 移行を開始する準備ができたら、Microsoft 365 管理センターのメッセージ センターでお知らせします。
 
 **Dynamics 365 および Power BI**
 
-[Dynamics 365 のカスタマーエンゲージメント](https://aka.ms/D365ceOptIn)および[Power BI](https://aka.ms/PBIOptIn)の Microsoft による移行を選択します。 移行を開始する準備ができたら、Microsoft 365 管理センターのメッセージ センターからお知らせします。
+現在 [、Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) と Power BI の Microsoft による移行 [にオプトイン](https://aka.ms/PBIOptIn) します。 移行を開始する準備ができたら、Microsoft 365 管理センターのメッセージ センターからお知らせします。
 
-### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>使用する Office 365 サービスの価格は変わりますか?
+### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>使用している 365 サービスOffice価格は変わりますか?
 
-はい。 Microsoft&#39;のグローバルクラウド地域 (新しいデータセンターリージョンを含む) の価格設定は一般的に低くなります。
+はい。 Microsoft&#39;(新しいデータセンター リージョンを含む) の価格は、通常、低くなります。
 
-### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>サブスクリプションの移行中に、どの Sku およびライセンスが組織とユーザーに適用されますか。
+### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>サブスクリプションの移行中に、組織とユーザーに適用される SKU とライセンスは何ですか?
 
-Microsoft クラウドの統合によって Office 365 サービスに移行する際に、ドイツのサービス固有の Sku は同じまたは類似した SKU のグローバルバージョンに置き換えられます。 ほとんどの場合、Office 365 services の SKU は同じですが、ドイツの SKU が Office 365 サービスで利用できなくなった場合、置換はほとんどありません。 移行の完了後に組織に割り当てられている SKU を更新する場合は、販売者に連絡して、割り当てられたサービスを追加または変更してください。
+Microsoft Cloud Deutschland から Office 365 サービスへの移行中に、ドイツのサービス固有の SKU は、同じまたは同様の SKU のグローバル バージョンに置き換えられる。 ほとんどの場合、Office 365 サービスの SKU は同じですが、ドイツの SKU が Office 365 サービスで使用できなくなった代替機能は少数です。 移行の完了後に組織に割り当てられている SKU を更新する場合は、販売者に連絡して、割り当てられたサービスを追加または変更してください。
 
-| Microsoft Cloud Deut土地-製品 SKU (DE) | Microsoft クラウドグローバル-製品 SKU (WW) |
+| Microsoft Cloud Deutschland - 製品 SKU (DE) | Microsoft Cloud Global - 製品 SKU (WW) |
 | --- | --- |
-| 顧客ロックボックスの \_ 解除 (ロックボックスの \_ 解除) | 顧客ロックボックス (ロックボックス) |
-| Dynamics 365 Enterprise Edition-追加のデータベースストレージ \_ DE (CRMSTORAGE \_ de) | Dynamics 365 Enterprise Edition-追加のデータベースストレージ (CRMSTORAGE) |
-| Dynamics 365 Enterprise Edition-追加の非運用インスタンスの \_ de (CRMTESTINSTANCE \_ de) | Dynamics 365 Enterprise Edition-追加の非運用インスタンス (CRMTESTINSTANCE) |
-| Customer Service Enterprise Edition \_ de (DYN365 \_ enterprise \_ customer \_ service \_ de) の Dynamics 365 | Customer Service Enterprise Edition の Dynamics 365 (DYN365 \_ enterprise \_ Customer \_ service) |
-| Dynamics 365 for Sales Enterprise Edition \_ de (DYN365 \_ enterprise \_ Sales \_ de) | Dynamics 365 for Sales Enterprise Edition (DYN365 \_ Enterprise \_ Sales) |
-| Dynamics 365 for teams Members Enterprise Edition \_ de (DYN365 \_ enterprise \_ Team \_ members \_ de) | Dynamics 365 for Team Members Enterprise Edition (DYN365 \_ enterprise \_ Team \_ members) |
-| Dynamics 365 プラン 1 Enterprise Edition \_ DE (DYN365 \_ Enterprise \_ PLAN1 \_ de) | Dynamics 365 プラン 1 Enterprise Edition (DYN365 \_ Enterprise \_ PLAN1) |
-| ECAL サービス (EOA、EOP、DLP) \_ DE (ecal \_ services \_ de) | ECAL サービス (EOA、EOP、DLP) (ECAL \_ サービス) |
-| Enterprise Mobility + Security E3 \_ de (EMS \_ de) | Enterprise Mobility + Security E3 (EMS) |
+| カスタマー ロックボックス \_ DE (LOCKBOX \_ DE) | カスタマー ロックボックス (LOCKBOX) |
+| Dynamics 365 Enterprise Edition - その他のデータベース ストレージ \_ DE (CRMSTORAGE \_ DE) | Dynamics 365 Enterprise Edition - 追加のデータベース ストレージ (CRMSTORAGE) |
+| Dynamics 365 Enterprise Edition - その他の非実稼働インスタンス \_ DE (CRMTESTINSTANCE \_ DE) | Dynamics 365 Enterprise Edition - 追加の非実稼働インスタンス (CRMTESTINSTANCE) |
+| Dynamics 365 for Customer Service Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ CUSTOMER \_ SERVICE \_ DE) | Dynamics 365 for Customer Service Enterprise Edition (DYN365 \_ ENTERPRISE \_ CUSTOMER \_ SERVICE) |
+| Dynamics 365 for Sales Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ SALES \_ DE) | Dynamics 365 for Sales Enterprise Edition (DYN365 \_ ENTERPRISE \_ SALES) |
+| Dynamics 365 for Team Members Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ TEAM \_ MEMBERS \_ DE) | Dynamics 365 for Team Members Enterprise Edition (DYN365 \_ ENTERPRISE \_ TEAM \_ MEMBERS) |
+| Dynamics 365 プラン 1 Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ PLAN1 \_ DE) | Dynamics 365 プラン 1 Enterprise Edition (DYN365 \_ ENTERPRISE \_ プラン1) |
+| ECAL サービス (EOA、EOP、DLP) \_ DE (ECAL \_ SERVICES \_ DE) | ECAL サービス (EOA、EOP、DLP) (ECAL \_ サービス) |
+| Enterprise Mobility + Security E3 \_ DE (EMS \_ DE) | Enterprise Mobility + Security E3 (EMS) |
 | Exchange Online (プラン 1) \_ DE (EXCHANGESTANDARD \_ DE) | Exchange Online (プラン 1) (EXCHANGESTANDARD) |
 | Exchange Online (プラン 2) \_ DE (EXCHANGEENTERPRISE \_ DE) | Exchange Online (プラン 2) (EXCHANGEENTERPRISE) |
-| Exchange online の exchange online のアーカイブ \_ (EXCHANGEARCHIVE \_ ADDON \_ de) | Exchange online の exchange Online アーカイブ (EXCHANGEARCHIVE \_ アドオン) |
-| Exchange Server DE の exchange Online アーカイブ \_ (EXCHANGEARCHIVE \_ DE) | Exchange Server 用の exchange Online アーカイブ (EXCHANGEARCHIVE) |
-| Exchange Online Essentials \_ de (exchange \_ ! \_ essentials \_ de) | Exchange Online Essentials (EXCHANGE \_ ! \_ essentials) |
-| Exchange Online Kiosk \_ de (exchangeている \_ ) | Exchange Online Kiosk (EXCHANGEを低) |
-| Exchange Online Protection \_ de (EOP \_ ENTERPRISE \_ de) | Exchange Online Protection (EOP \_ ENTERPRISE) |
-| Microsoft 365 Business Standard (O365 \_ Business \_ PREMIUM) | Microsoft 365 Business Standard (O365 \_ Business \_ PREMIUM) |
-| Microsoft Dynamics CRM Online インスタンスの \_ DE (CRMINSTANCE \_ de) | Microsoft Dynamics CRM Online インスタンス (CRMINSTANCE) |
-| Office 365 A1 for faculty \_ DE (STANDARDWOFFPACK \_ 教職員 \_ de) | Office 365 A1 for faculty (STANDARDWOFFPACK \_ 教職員) |
-| 学生の Office 365 A1 \_ (STANDARDWOFFPACK \_ STUDENT \_ de) | 学生用 Office 365 A1 (STANDARDWOFFPACK \_ STUDENT) |
-| Office 365 Advanced コンプライアンス \_ de (EQUIVIO \_ ANALYTICS \_ de) | Microsoft 365 E5 コンプライアンス (情報 \_ 保護 \_ コンプライアンス) |
+| Exchange Online Archiving for Exchange Online \_ DE (EXCHANGEARCHIVE \_ ADDON \_ DE) | Exchange Online Archiving for Exchange Online (EXCHANGEARCHIVE \_ ADDON) |
+| Exchange Online Archiving for Exchange Server \_ DE (EXCHANGEARCHIVE \_ DE) | Exchange Online ArchivingのExchange Server (EXCHANGEARCHIVE) |
+| Exchange Online Essentials \_ DE (EXCHANGE \_ S \_ ESSENTIALS \_ DE) | Exchange Online Essentials (EXCHANGE \_ S \_ ESSENTIALS) |
+| Exchange Online Kiosk \_ DE (EXCHANGEDESKLESS \_ DE) | Exchange Online Kiosk (EXCHANGEDESKLESS) |
+| Exchange Online Protection \_ DE (EOP \_ ENTERPRISE \_ DE) | Exchange Online Protection (EOP \_ ENTERPRISE) |
+| Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
+| Microsoft Dynamics CRM Online インスタンス \_ DE (CRMINSTANCE \_ DE) | Microsoft Dynamics CRM Online インスタンス (CRMINSTANCE) |
+| Office 365 A1 for faculty \_ DE (STANDARDWOFFPACK \_ FACULTY \_ DE) | Office 365 A1 for faculty (STANDARDWOFFPACK \_ FACULTY) |
+| Office DE \_ (STANDARDWOFFPACK \_ STUDENT \_ DE) 用の Office 365 A1 | Office 365 A1 for students (STANDARDWOFFPACK \_ STUDENT) |
+| Office 365 Advanced Compliance \_ DE (EQUIVIO \_ ANALYTICS \_ DE) | Microsoft 365 E5 コンプライアンス (情報 \_ 保護 \_ コンプライアンス) |
 |Microsoft Defender for Office 365 (プラン 1) \_ DE (ATP \_ ENTERPRISE \_ DE) |Microsoft Defender for Office 365 (プラン 1) (ATP \_ ENTERPRISE) |
-| Office 365 Business Essentials \_ de (O365 \_ Business \_ Essentials \_ de) | Microsoft 365 Business Basic (O365 \_ Business \_ ESSENTIALS) |
-| Office 365 Business Premium \_ de (O365 \_ Business \_ premium \_ de) | Microsoft 365 Business Standard (O365 \_ Business \_ PREMIUM) |
-| Office 365 Business \_ de (O365 \_ Business \_ de) | Microsoft 365 Apps for business (O365 \_ business) |
-| Office 365 E1 \_ de (STANDARDPACK \_ DE) | Office 365 E1 (STANDARDPACK) |
-| ProPlus de を使用しない Office 365 E3 \_ (ENTERPRISEPACKWITHOUTPROPLUS \_ de) | Office 365 E3 (ProPlus なし) (ENTERPRISEPACKWITHOUTPROPLUS) |
-| Office 365 E3 \_ de (ENTERPRISEPACK \_ de) | Office 365 E3 (ENTERPRISEPACK) |
-| Office 365 Enterprise E1 \_ de (STANDARDPACK \_ de) | Office 365 Enterprise E1 (STANDARDPACK) |
-| Office 365 Enterprise E3 \_ de (ENTERPRISEPACK \_ de) | Office 365 Enterprise E3 (ENTERPRISEPACK) |
-| Office 365 特別なファイル記憶域の \_ 除外 (SHAREPOINTSTORAGE \_ de) | Office 365 の特別なファイル記憶域 (SHAREPOINTSTORAGE) |
-| Office 365 F1 \_ de (DESKLESSPACK \_ de) | Office 365 F1 (DESKLESSPACK) |
-| Office 365 ProPlus for Faculty \_ de (OFFICESUBSCRIPTION \_ 教職員 \_ de) | Office 365 ProPlus for Faculty (OFFICESUBSCRIPTION \_ 教職員向け) |
-| Office 365 ProPlus for Students \_ (OFFICESUBSCRIPTION \_ STUDENT \_ de) | 学生用 Office 365 ProPlus (OFFICESUBSCRIPTION \_ STUDENT) |
-| Office 365 ProPlus \_ de (OFFICESUBSCRIPTION \_ de) | Office 365 ProPlus (OFFICESUBSCRIPTION) |
-| OneDrive for Business (プラン 1) \_ DE (WACONEDRIVE 標準 \_ DE) | OneDrive for Business (プラン 1) (WACONEDRIVE STANDARD) |
-| OneDrive for Business (プラン 2) \_ DE (WACONEDRIVE enterprise \_ de) | OneDrive for Business (プラン 2) (WACONEDRIVE ENTERPRISE) |
-| Power BI Pro for faculty \_ DE (power \_ bi \_ pro \_ 教職員 \_ de) | Power BI Pro for faculty (POWER \_ bi \_ pro \_ 教職員) |
-| Power BI Pro \_ de (power \_ bi \_ pro \_ de) | Power BI Pro (POWER \_ bi \_ pro) |
-| Project Online Essentials \_ de (PROJECTESSENTIALS \_ de) | Project Online Essentials (PROJECTESSENTIALS) |
-| Project Online Premium \_ de (PROJECTPREMIUM \_ de) | Project Online Premium (PROJECTPREMIUM) |
-| Project Online Professional \_ de (PROJECTPROFESSIONAL \_ de) | Project Online Professional (PROJECTPROFESSIONAL) |
-| プロジェクト計画 3 \_ DE (PROJECTPROFESSIONAL \_ de) | プロジェクト計画 3 (PROJECTPROFESSIONAL) |
-| Office 365 E4 \_ de (ENTERPRISEWITHSCAL \_ de) | Office 365 E3 (ENTERPRISEPACK) |
+| Office 365 Business Essentials \_ DE (O365 \_ BUSINESS \_ ESSENTIALS \_ DE) | Microsoft 365 Business Basic (O365 \_ BUSINESS \_ ESSENTIALS) |
+| Office 365 Business Premium \_ DE (O365 \_ BUSINESS \_ PREMIUM \_ DE) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
+| Office 365 Business \_ DE (O365 \_ BUSINESS \_ DE) | Microsoft 365 Apps for business (O365 \_ BUSINESS) |
+| Office 365 E1 \_ DE (STANDARDPACK \_ DE) | Office 365 E1 (STANDARDPACK) |
+| Office 365 E3 (ProPlus \_ DE なし) (ENTERPRISEPACKWITHOUTPROPLUS \_ DE) | Office 365 E3 (ProPlus なし) (ENTERPRISEPACKWITHOUTPROPLUS) |
+| Office 365 E3 \_ DE (ENTERPRISEPACK \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
+| Office 365 Enterprise E1 \_ DE (STANDARDPACK \_ DE) | Office 365 Enterprise E1 (STANDARDPACK) |
+| Office 365 Enterprise E3 \_ DE (ENTERPRISEPACK \_ DE) | Office 365 Enterprise E3 (ENTERPRISEPACK) |
+| Office 365 Extra File Storage \_ DE (SHAREPOINTSTORAGE \_ DE) | Office 365 Extra File Storage (SHAREPOINTSTORAGE) |
+| Office 365 F1 \_ DE (DESKLESSPACK \_ DE) | Office 365 F1 (DESKLESSPACK) |
+| Office 365 ProPlus for Faculty \_ DE (OFFICESUBSCRIPTION \_ FACULTY \_ DE) | Office 365 ProPlus for Faculty (OFFICESUBSCRIPTION \_ FACULTY) |
+| Office 365 ProPlus for Students \_ DE (OFFICESUBSCRIPTION \_ STUDENT \_ DE) | Office 365 ProPlus for Students (OFFICESUBSCRIPTION \_ STUDENT) |
+| Office 365 ProPlus \_ DE (OFFICESUBSCRIPTION \_ DE) | Office 365 ProPlus (OFFICESUBSCRIPTION) |
+| OneDrive for Business (プラン 1) \_ DE (WACONEDRIVESTANDARD \_ DE) | OneDrive for Business (プラン 1) (WACONEDRIVESTANDARD) |
+| OneDrive for Business (プラン 2) \_ DE (WACONEDRIVEENTERPRISE \_ DE) | OneDrive for Business (プラン 2) (WACONEDRIVEENTERPRISE) |
+| Power BI Pro for faculty \_ DE (POWER \_ BI \_ PRO \_ FACULTY \_ DE) | Power BI Pro for faculty (POWER \_ BI \_ PRO \_ FACULTY) |
+| Power BI Pro \_ DE (POWER \_ BI \_ PRO \_ DE) | Power BI Pro (POWER \_ BI \_ PRO) |
+| Project Online Essentials \_ DE (PROJECTESSENTIALS \_ DE) | Project Online Essentials (PROJECTESSENTIALS) |
+| Project Online Premium \_ DE (PROJECTPREMIUM \_ DE) | Project Online Premium (PROJECTPREMIUM) |
+| Project Online Professional \_ DE (PROJECTPROFESSIONAL \_ DE) | Project Online Professional (PROJECTPROFESSIONAL) |
+| Project Plan 3 \_ DE (PROJECTPROFESSIONAL \_ DE) | Project Plan 3 (PROJECTPROFESSIONAL) |
+| Office 365 E4 \_ DE (ENTERPRISEWITHSCAL \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
 | SharePoint Online (プラン 1) \_ DE (SHAREPOINTSTANDARD \_ DE) | SharePoint Online (プラン 1) (SHAREPOINTSTANDARD) |
 | SharePoint Online (プラン 2) \_ DE (SHAREPOINTENTERPRISE \_ DE) | SharePoint Online (プラン 2) (SHAREPOINTENTERPRISE) |
-| Skype for Business Online (プラン 1) \_ de (MCOIMP \_ de) | Office 365 E1 (STANDARDPACK) |
-| Skype for Business Online (プラン 1) \_ de (MCOIMP \_ de) | Skype for Business Online (プラン 1) (MCOIMP) |
-| Skype for Business Online (プラン 2) \_ DE (MCOSTANDARD \_ de) | Skype for Business Online (プラン 2) (MCOSTANDARD) |
-| Skype for Business Plus CAL \_ de (MCOPLUSCAL \_ de) | Skype for Business Plus CAL (MCOPLUSCAL) |
-| Visio Online プラン 1 for faculty \_ DE (VISIOONLINE \_ PLAN1 \_ FAC \_ DE) | Visio Online プラン 1 for faculty (VISIOONLINE \_ PLAN1 \_ FAC) |
-| Visio Online プラン 1 \_ DE (VISIOONLINE \_ PLAN1 \_ de) | Visio Online プラン 1 (VISIOONLINE \_ PLAN1) |
-| 教職員 de の Visio Online プラン 2 \_ (VISIOCLIENT \_ 教職員 \_ de) | 教職員用の Visio Online プラン 2 (VISIOCLIENT \_ 教職員) |
-| Visio Online プラン 2 \_ de (VISIOCLIENT \_ de) | Visio Online プラン 2 (VISIOCLIENT) |
-| Visio プラン 1 \_ de (VISIOONLINE \_ PLAN1 \_ de) | Visio プラン 1 (VISIOONLINE \_ PLAN1) |
-| Visio プラン 2 \_ de (VISIOCLIENT \_ de) | Visio プラン 2 (VISIOCLIENT) |
+| Skype for Business Online (プラン 1) \_ DE (MCOIMP \_ DE) | Office 365 E1 (STANDARDPACK) |
+| Skype for Business Online (プラン 1) \_ DE (MCOIMP \_ DE) | Skype for Business Online (プラン 1) (MCOIMP) |
+| Skype for Business Online (プラン 2) \_ DE (MCOSTANDARD \_ DE) | Skype for Business Online (プラン 2) (MCOSTANDARD) |
+| Skype for Business Plus CAL \_ DE (MCOPLUSCAL \_ DE) | Skype for Business Plus CAL (MCOPLUSCAL) |
+| Visio Online Plan 1 for faculty \_ DE (VISIOONLINE \_ PLAN1 \_ FAC \_ DE) | Visio Online Plan 1 for faculty (VISIOONLINE \_ PLAN1 \_ FAC) |
+| Visio Online プラン 1 \_ DE (VISIOONLINE \_ PLAN1 \_ DE) | Visio Online プラン 1 (VISIOONLINE \_ PLAN1) |
+| Visio Online Plan 2 for faculty \_ DE (VISIOCLIENT \_ FACULTY \_ DE) | Visio Online Plan 2 for faculty (VISIOCLIENT \_ FACULTY) |
+| Visio Online プラン 2 \_ DE (VISIOCLIENT \_ DE) | Visio Online プラン 2 (VISIOCLIENT) |
+| Visio Plan 1 \_ DE (VISIOONLINE \_ PLAN1 \_ DE) | Visio プラン 1 (VISIOONLINE \_ PLAN1) |
+| Visio Plan 2 \_ DE (VISIOCLIENT \_ DE) | Visio プラン 2 (VISIOCLIENT) |
 |||
 
 ### <a name="how-do-i-get-help-from-microsoft-to-migrate-to-a-new-region-or-answer-support-questions"></a>新しいリージョンに移行したりサポートの質問に答えたりするために、Microsoft からヘルプを得るにはどうすればよいですか ?
 
-ご質問がある場合は、弊社またはパートナーにお問い合わせください。
+ご不明な点がある場合は、お問い合わせ先またはパートナーにお問い合わせください。
 
 - Azure の場合、Azure ポータルで[新しいサポート リクエスト](https://portal.microsoftazure.de/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)を送信できます。
-- Office 365 では、 &quot; &quot; [Microsoft 365 管理センター](https://portal.office.de/)の [ヘルプが必要ですか?] リンクを使用して、質問を送信することができます。
-- Dynamics 365 カスタマーエンゲージメントおよび Power BI のお客様で、かつ Office 365 も所有している場合は、「 &quot; 必要なヘルプ」を参照してください。 &quot; [Microsoft 365 管理センター](https://portal.office.de/)のリンクを使用して、質問を送信することができます。 Dynamics 365 Customer Engagement のサポート オプションは[こちら](https://docs.microsoft.com/dynamics365/get-started/support/)にあります。 Power BI のサポート オプションは[こちら](https://powerbi.microsoft.com/support/)にあります。
+- For Office 365, you may submit questions using the &quot; Need Help? &quot; link of the [Microsoft 365 admin center](https://portal.office.de/).
+- Dynamics 365 Customer Engagement および Power BI のお客様で、Office 365 も持っている場合は &quot; &quot; [、Microsoft 365](https://portal.office.de/)管理センターの [ヘルプが必要ですか? ] リンクを使用して質問を送信できます。 Dynamics 365 Customer Engagement のサポート オプションは[こちら](https://docs.microsoft.com/dynamics365/get-started/support/)にあります。 Power BI のサポート オプションは[こちら](https://powerbi.microsoft.com/support/)にあります。
 
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [移行のオプトイン](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 
 - [Microsoft Cloud Deutschland 移行アシスタント](https://aka.ms/germanymigrateassist)
 - [移行のオプトイン方法](ms-cloud-germany-migration-opt-in.md)
-- [移行中の顧客の利便性](ms-cloud-germany-transition-experience.md)
+- [移行中のカスタマー エクスペリエンス](ms-cloud-germany-transition-experience.md)
 
-遷移を移動します。
+移行を進む:
 
 - [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
-- [その他の準備作業](ms-cloud-germany-transition-add-pre-work.md)
-- [サービス](ms-cloud-germany-transition-add-general.md)、[デバイス](ms-cloud-germany-transition-add-devices.md)、[エクスペリエンス](ms-cloud-germany-transition-add-experience.md)、 [AD FS](ms-cloud-germany-transition-add-adfs.md)の追加情報。
+- [追加の作業前作業](ms-cloud-germany-transition-add-pre-work.md)
+- Azure [AD、](ms-cloud-germany-transition-add-devices.md)[デバイス](ms-cloud-germany-transition-azure-ad.md)、[エクスペリエンス、および](ms-cloud-germany-transition-add-experience.md)AD FS[に関する追加情報](ms-cloud-germany-transition-add-adfs.md)。
 
-クラウドアプリ:
+クラウド アプリ:
 
 - [Dynamics 365 移行プログラム情報](https://aka.ms/d365ceoptin)
 - [Power BI 移行プログラム情報](https://aka.ms/pbioptin)

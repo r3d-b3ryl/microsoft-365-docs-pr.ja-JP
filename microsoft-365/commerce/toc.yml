@@ -8,7 +8,7 @@
       href: try-or-buy-microsoft-365.md
     - name: 試用期間を延長する
       href: extend-your-trial.md
-    - name: アドオンを購入または編集する
+    - name: アドオンを購入するか、管理します
       href: buy-or-edit-an-add-on.md
     - name: 記憶領域を追加する
       href: add-storage-space.md
@@ -56,7 +56,7 @@
       href: billing-and-payments/change-payment-method.md
     - name: 請求頻度の変更
       href: billing-and-payments/change-payment-frequency.md
-    - name: 課金プロフィールを管理する
+    - name: 課金プロファイルを理解する
       href: billing-and-payments/manage-billing-profiles.md
     - name: 請求先住所を変更する
       href: billing-and-payments/change-your-billing-addresses.md

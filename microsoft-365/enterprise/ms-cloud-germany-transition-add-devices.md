@@ -1,5 +1,5 @@
 ---
-title: Microsoft クラウドの移行に関するその他のデバイス情報
+title: Microsoft Cloud Deutschland からの移行に関するその他のデバイス情報
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,63 +17,63 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: '概要: 新しいドイツデータセンターリージョンの Microsoft Cloud ドイツ (Microsoft Cloud Deut上陸ランド) から Office 365 services に移行する場合の、サービスに関する追加のデバイス情報。'
-ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター リージョンの Office 365 サービスに移行する場合のサービスに関するその他のデバイス情報。'
+ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560861"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688656"
 ---
-# <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft クラウドの移行に関するその他のデバイス情報
+# <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行に関するその他のデバイス情報
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**組織に影響があるかどうかを確認するには、どうすればよいですか?**
+**組織が影響を受けるのを確認する方法**
 
-管理者は、 `https://portal.microsoftazure.de` 登録済みデバイスがあるかどうかを確認する必要があります。 組織にデバイスが登録されている場合は、影響を受けます。
+管理者は、デバイス `https://portal.microsoftazure.de` が登録されていないかどうかを確認する必要があります。 組織にデバイスが登録されている場合は、影響を受ける可能性があります。
 
-**ユーザーにどのような影響があるか。**
+**ユーザーにどのような影響がありますか?**
 
-登録済みデバイスのユーザーは、移行後に [AZURE AD](ms-cloud-germany-transition.md#how-is-the-migration-organized) 移行フェーズを終了した後、サインインできなくなります。  
+登録されたデバイスのユーザーは、移行が Azure 移行フェーズの最終段階に入った後 [AD](ms-cloud-germany-transition.md#how-is-the-migration-organized) でサインインできなくなりました。  
 
-組織が Microsoft Cloud Deut上陸陸から切断される前に、すべてのデバイスがワールドワイドエンドポイントに登録されていることを確認してください。
+組織が Microsoft Cloud Deutschland から切断される前に、すべてのデバイスがワールドワイド エンドポイントに登録されている必要があります。
   
-**ユーザーが自分のデバイスを再登録するのはいつですか。**
+**ユーザーがデバイスを再登録する場合**
 
-[Microsoft Cloud Deut/陸](ms-cloud-germany-transition.md#how-is-the-migration-organized)の移行フェーズとは別に、デバイスの登録を解除して再登録することは、成功にとって不可欠です。
+成功するには [、Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) 移行フェーズとは別にデバイスの登録を解除して再登録する必要があります。
 
-**移行後にデバイスの状態を復元するにはどうすればよいですか?**
+**移行後にデバイスの状態を復元する方法**
 
-Azure AD に登録されているハイブリッド Azure AD –参加済みおよび会社所有の Windows デバイスでは、管理者は、古いデバイス状態の登録を解除するリモートでトリガーされたワークフローを使用してこれらのデバイスの移行を管理できます。
+Azure AD に登録されているハイブリッド Azure AD に参加し、会社が所有する Windows デバイスが Azure AD に登録されている場合、管理者は、古いデバイスの状態の登録を解除するリモートでトリガーされたワークフローを通じて、これらのデバイスの移行を管理できます。
   
-他のすべてのデバイス (Azure AD に登録されている個人の Windows デバイスを含む) については、エンドユーザーはこれらの手順を手動で実行する必要があります。 Azure AD と参加しているデバイスの場合、ユーザーはローカル管理者アカウントを持っている必要があります。デバイスの登録を解除してから登録し直す必要があります。
+Azure AD に登録されている個人用 Windows デバイスを含む他のすべてのデバイスでは、エンド ユーザーは手動でこれらの手順を実行する必要があります。 Azure ADに参加しているデバイスの場合、ユーザーはデバイスの登録を解除してから再登録するためにローカル管理者アカウントを持っている必要があります。
 
-Microsoft は、デバイス状態を正常に復元する方法についての指示を公開します。 
+Microsoft は、デバイスの状態を正常に復元する方法に関する手順を公開します。 
  
-**パブリッククラウドにすべてのデバイスが登録されていることを確認するには、どうすればよいですか?**
+**すべてのデバイスがパブリック クラウドに登録されているのを確認する方法**
 
-デバイスがパブリッククラウドに登録されているかどうかを確認するには、Azure AD ポータルから Excel スプレッドシートにデバイスの一覧をエクスポートしてダウンロードする必要があります。 その後、 [Microsoft Cloud Deut上陸土地](ms-cloud-germany-transition.md#how-is-the-migration-organized)移行フェーズとは別に、登録されているデバイス ( _registeredtime_ 列を使用) にフィルターを適用します。
+デバイスがパブリック クラウドに登録されているかどうかを確認するには、Azure AD ポータルから Excel スプレッドシートにデバイスの一覧をエクスポートしてダウンロードする必要があります。 次に [、Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized)移行フェーズから分離した後、登録されているデバイスを _(registeredTime_ 列を使用して) フィルター処理します。
 
-テナントの移行後はデバイスの登録が非アクティブになり、有効または無効にすることはできません。 Intune を使用しない場合は、サブスクリプションにサインインして、次のコマンドを実行してオプションを再度アクティブ化します。
+デバイスの登録は、テナントの移行後に非アクティブ化され、有効または無効にすることはできません。 Intune が使用されていない場合は、サブスクリプションにサインインし、次のコマンドを実行してオプションを再アクティブ化します。
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="windows-hybrid-azure-ad-join"></a>Windows ハイブリッド Azure AD join
+## <a name="windows-hybrid-azure-ad-join"></a>Windows ハイブリッド Azure AD参加
 
-### <a name="windows-down-level"></a>Windows ダウンレベル
+### <a name="windows-down-level"></a>Windows のダウンレベル
 
-_Windows ダウンレベルデバイス_ は、以前のバージョンの Windows (windows 8.1 や windows 7 など) を現在実行している windows デバイス、または2019および2016より前のバージョンの windows Server を実行している windows デバイスです。 そのようなデバイスが以前に登録されていた場合は、それらのデバイスの登録を解除してから登録し直す必要があります。 
+_Windows_ ダウンレベル デバイスは、現在、以前のバージョンの Windows (Windows 8.1 や Windows 7 など) を実行している、または 2019 および 2016 より前のバージョンの Windows Server を実行している Windows デバイスです。 このようなデバイスが以前に登録されている場合は、それらのデバイスの登録を解除して再登録する必要があります。 
 
-Windows のダウンレベルデバイスが以前 Azure AD に参加していたかどうかを確認するには、デバイス上で次のコマンドを使用します。
+Windows のダウンレベル デバイスが以前に Azure AD に参加したかどうかを確認するには、デバイスで次のコマンドを使用します。
 
 ```console
 %programfiles%\Microsoft Workplace Join\autoworkplace /status
 ```
 
-デバイスが以前 Azure AD に参加していて、デバイスがグローバルな Azure AD エンドポイントにネットワーク接続されている場合は、次の出力が表示されます。
+デバイスが以前に Azure AD に参加し、デバイスがグローバル Azure AD エンドポイントへのネットワーク接続を持つ場合は、次の出力が表示されます。
 
 ```console
 +----------------------------------------------------------------------+
@@ -86,29 +86,29 @@ Private key state : Okay
      Device state : Unknown
 ```
 
-影響を受けるデバイスの "デバイス状態" に "Unknown" という値が設定されます。 出力が "デバイスが参加していません" または "Device state" の値が "Ok" の場合は、次のガイダンスは無視してください。
+影響を受けるデバイスは、値が "Unknown" の "Device state" になります。 出力が "デバイスに参加していない" 場合、または "デバイスの状態" の値が "Okay" の場合は、次のガイダンスは無視してください。
 
-デバイスが (deviceId、拇印などを使用して) 結合されていて、"Device state" 値が "Unknown" であることを示すデバイスに対してのみ、次のコマンドを実行する必要があります。このようなダウンレベルデバイスでは、ドメインユーザーがサインインしています。
+デバイスが参加している (deviceId、拇印などによって) "Device state" の値が "Unknown" であるデバイスに対してだけ、管理者はこのようなダウンレベル デバイスにサインインするドメイン ユーザーのコンテキストで次のコマンドを実行する必要があります。
 
 ```console
 "%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
 ```
 
-上記のコマンドは、Windows ダウンレベルデバイスでサインインしたドメインユーザーごとに1回だけ実行する必要があります。 このコマンドは、サインインしているドメインユーザーのコンテキストで実行する必要があります。 
+上のコマンドは、Windows のダウンレベル デバイスにサインインするドメイン ユーザーごとに 1 回だけ実行する必要があります。 このコマンドは、ドメイン ユーザーのサインインのコンテキストで実行する必要があります。 
 
-ユーザーが後でサインインしたときに、このコマンドを実行しないように十分な注意を払う必要があります。 上記のコマンドを実行すると、サインインしたユーザーについて、ローカルハイブリッド Azure AD に参加しているコンピューターの参加状態がクリアされます。 また、コンピューターが依然としてハイブリッド Azure AD として構成されている場合は、テナントに参加すると、ユーザーが再度サインインするときに参加が試みられます。
+ユーザーが後でサインインするときに、このコマンドを実行しない場合は十分な注意が必要です。 前のコマンドを実行すると、サインインしたユーザーのローカル ハイブリッド Azure ADに参加しているコンピューターの参加状態がクリアされます。 また、コンピューターが引き続きハイブリッド Azure AD に参加するように構成されている場合は、ユーザーが再びサインインするときに参加を試みます。
 
-### <a name="windows-current"></a>現在の Windows
+### <a name="windows-current"></a>Windows Current
 
-#### <a name="unjoin"></a>切断
+#### <a name="unjoin"></a>Unjoin
 
-以前に Windows 10 デバイスが Azure AD に参加していたかどうかを確認するには、デバイス上で次のコマンドを実行します。
+Windows 10 デバイスが以前に Azure AD に参加したかどうかを確認するには、デバイスで次のコマンドを実行します。
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-デバイスがハイブリッド Azure AD に参加している場合は、管理者に次の出力が表示されます。
+デバイスがハイブリッド Azure AD参加している場合、管理者には次の出力が表示されます。
 
 ```console
 +----------------------------------------------------------------------+
@@ -120,32 +120,32 @@ Private key state : Okay
               DomainJoined : YES
 ```
 
-出力が "AzureAdJoined: No" の場合は、次のガイダンスは無視してください。
+出力が "AzureAdJoined : No" の場合は、次のガイダンスは無視してください。
 
-デバイスが Azure AD に参加していることを示すデバイスに対してのみ、次のコマンドを管理者として実行して、デバイスの結合状態を削除します。
+デバイスが Azure AD に参加しているデバイスの場合にのみ、管理者として次のコマンドを実行して、デバイスの参加状態を削除します。
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-上記のコマンドは、Windows デバイスの管理コンテキストで1回だけ実行する必要があります。
+上のコマンドは、Windows デバイスの管理コンテキストで 1 回だけ実行する必要があります。
 
-#### <a name="hybrid-ad-joinre-registration"></a>ハイブリッド AD Join\ 再登録
+#### <a name="hybrid-ad-joinre-registration"></a>ハイブリッド AD Join\Re-Registration
 
-デバイスがグローバルな Azure AD エンドポイントにネットワーク接続されている限り、ユーザーまたは管理者の介入なしに、デバイスは自動的に Azure AD に参加します。 
+デバイスは、グローバル Azure AD エンドポイントへのネットワーク接続がある限り、ユーザーまたは管理者の介入なしに自動的に Azure AD に参加します。 
 
 
 ## <a name="windows-azure-ad-join"></a>Windows Azure AD Join
 
-**重要:** Intune サービスプリンシパルは、commerce 移行後に有効になります。これは、Azure AD Device Registration のアクティブ化を意味します。 移行の前に Azure AD Device Registration をブロックした場合は、PowerShell を使用して Intune サービスプリンシパルを無効にし、azure ad ポータルとの azure ad Device 登録を再度無効にする必要があります。 [Azure Active Directory PowerShell for Graph] モジュールで、このコマンドを使用して Intune サービスプリンシパルを無効にすることができます。
+**重要:** Intune サービス プリンシパルは、商取引の移行後に有効になります。これは、Azure AD Device Registration のアクティブ化を意味します。 移行前に Azure AD デバイス登録をブロックした場合は、PowerShell で Intune サービス プリンシパルを無効にして、Azure AD ポータルでの Azure AD デバイス登録を再度無効にする必要があります。 Azure Active Directory PowerShell for Graph モジュールで次のコマンドを使用して、Intune サービス プリンシパルを無効にできます。
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-### <a name="unjoin"></a>切断
+### <a name="unjoin"></a>Unjoin
 
-Windows 10 デバイスが以前 Azure AD に参加していたかどうかを確認するには、ユーザーまたは管理者がデバイス上で次のコマンドを実行します。
+Windows 10 デバイスが以前に Azure AD に参加したかどうかを確認するために、ユーザーまたは管理者はデバイスで次のコマンドを実行できます。
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -163,32 +163,32 @@ Windows 10 デバイスが以前 Azure AD に参加していたかどうかを�
               DomainJoined : NO
 ```
 
-出力が "AzureAdJoined: NO" の場合は、次のガイダンスは無視してください。
+出力が "AzureAdJoined : NO" の場合は、次のガイダンスは無視してください。
 
-ユーザー: デバイスが Azure AD に参加している場合、ユーザーはそのデバイスを設定から離すことができます。 Azure AD からデバイスを unjoining する前に、デバイスのローカル管理者アカウントが存在することを確認します。 ローカル管理者アカウントは、デバイスにサインインし直す必要があります。
+ユーザー: デバイスが Azure AD参加している場合、ユーザーは設定からデバイスの参加を解除できます。 Azure AD からデバイスに接続を解除する前に、デバイスにローカル管理者アカウントが存在AD。 ローカル管理者アカウントは、デバイスにサインインし戻す必要があります。
 
-管理者: 組織の管理者が Azure AD に参加しているユーザーのデバイスを離れる場合は、グループポリシーなどのメカニズムを使用して、各デバイスで次のコマンドを実行します。 管理者は、Azure AD からデバイスを unjoining する前に、デバイスにローカル管理者アカウントがあることを確認する必要があります。 ローカル管理者アカウントは、デバイスにサインインし直すために必要です。
+管理者: 組織の管理者が、Azure AD に参加しているユーザーのデバイスの参加を解除する場合は、グループ ポリシーなどのメカニズムを使用して、各デバイスで次のコマンドを実行します。 管理者は、Azure アカウントからデバイスに接続を解除する前に、デバイスにローカル管理者アカウントが存在AD。 ローカル管理者アカウントは、デバイスにサインインし戻す必要があります。
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-上記のコマンドは、Windows デバイスの管理コンテキストで1回だけ実行する必要があります。 
+上のコマンドは、Windows デバイスの管理コンテキストで 1 回だけ実行する必要があります。 
 
-### <a name="azure-ad-joinre-registration"></a>Azure AD 参加/再登録
+### <a name="azure-ad-joinre-registration"></a>Azure ADの参加/再登録
 
-ユーザーは、Windows の設定から Azure AD にデバイスを参加させることができます。 **設定 > アカウント > Access の職場または学校 > Connect**。
+ユーザーは、Windows の設定からデバイスを Azure AD に参加>アカウント **>、> Connect** にアクセスします。
  
 
-## <a name="windows-azure-ad-registered-company-owned"></a>登録されている Windows Azure AD (会社の所有)
+## <a name="windows-azure-ad-registered-company-owned"></a>Windows Azure AD 登録済み (会社所有)
 
-Windows 10 デバイスが Azure AD に登録されているかどうかを確認するには、デバイスで次のコマンドを実行します。
+Windows 10 デバイスが Azure AD登録されているかどうかを確認するには、デバイスで次のコマンドを実行します。
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-デバイスが Azure AD に登録されている場合は、次の出力が表示されます。
+デバイスが Azure AD Registered である場合、次の出力が表示されます。
 
 ```console
 +----------------------------------------------------------------------+
@@ -199,93 +199,93 @@ Windows 10 デバイスが Azure AD に登録されているかどうかを確�
           WamDefaultAuthority : organizations
 ```
 
-デバイス上の既存の Azure AD 登録アカウントを削除するには、次のようにします。
+デバイス上の既存の Azure AD登録済みアカウントを削除するには、次の方法を実行します。
 
-- デバイス上の Azure AD に登録されているアカウントを削除するには、次の場所からダウンロードできる CleanupWPJ を使用します。 [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip)。
+- デバイスで Azure AD登録済みアカウントを削除するには、CleanupWPJ を使用します。このツールは、次の場所からダウンロード[CleanupWPJ.zip。 ](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip)
 
-- ZIP ファイルを展開して、 **Wpjcleanup コマンド** を実行します。 このツールは、デバイス上の Windows のバージョンに基づいて、適切な実行可能ファイルを起動します。
+- ZIP ファイルを抽出し **、WPJCleanup.cmd を実行します**。 このツールは、デバイス上の Windows のバージョンに基づいて適切な実行可能ファイルを起動します。
 
-- グループポリシーなどのメカニズムを使用すると、管理者はデバイス上でサインインしているユーザーのコンテキストで、デバイス上でコマンドを実行できます。
+- 管理者は、グループ ポリシーのようなメカニズムを使用して、デバイスにサインインしているすべてのユーザーのコンテキストで、デバイスでコマンドを実行できます。
 
-Azure AD にデバイスを登録するために Web アカウントマネージャーの音声ガイダンスを無効にするには、次のレジストリ値を追加します。 
+Azure AD にデバイスを登録するように求める Web アカウント マネージャーのプロンプトを無効にするには、次のレジストリ値を追加します。 
 
 - 場所: HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin
 - 型: DWORD (32 ビット)
 - 名前: BlockAADWorkplaceJoin
-- 値のデータ: 1
+- 値データ: 1
 
-このレジストリ値が存在すると、workplace join がブロックされ、ユーザーがデバイスに参加するように求めるメッセージを表示できなくなります。
+このレジストリ値が存在する場合は、職場への参加をブロックし、ユーザーにデバイスへの参加を求めるメッセージが表示されるのを防ぐ必要があります。
 
 ## <a name="android"></a>Android
 
-Android の場合、ユーザーはデバイスの登録を解除して、再登録する必要があります。 これは、Microsoft Authenticator アプリまたはポータルサイトアプリを使用して行うことができます。 
+Android の場合、ユーザーはデバイスの登録を解除して再登録する必要があります。 これは、Microsoft Authenticator アプリまたはポータル サイト アプリから実行できます。 
 
-- Microsoft Authenticator アプリから、ユーザーは [ **設定 > デバイス登録**] に移動できます。 この場合、ユーザーは自分のデバイスの登録を解除して再登録することができます。
+- Microsoft Authenticator アプリから、[デバイス登録] の [設定 **] >移動できます**。 そこから、ユーザーはデバイスの登録を解除して再登録できます。
  
-- ポータルサイトから、ユーザーは [ **デバイス** ] タブに移動してデバイスを削除できます。 その後、会社のポータルを使用してデバイスを再登録します。
+- ポータル サイトから、[デバイス] タブに移動 **し、デバイス** を削除できます。 その後、ポータル サイトを使用してデバイスを再登録します。
  
-- ユーザーは、[アカウント設定] ページからアカウントを削除してから、もう一度作業アカウントを追加することによって、登録を解除して再登録することもできます。
+- ユーザーは、アカウント設定ページからアカウントを削除してから、仕事用アカウントを再追加することで、登録を解除して再登録することもできます。
 
-Microsoft Authenticator アプリを使用して Android でデバイスの登録を解除して再登録するには、次のようにします。
+Microsoft Authenticator アプリを使用して Android のデバイスの登録を解除して再登録するには、次の方法を使用します。
 
-1.  Microsoft Authenticator アプリを開いて [ **設定**] に移動します。
-2.  [ **デバイス登録**] を選択します。
-3.  [ **登録解除**] を選択してデバイスの登録を解除します。
-4.  [ **デバイスの登録**] で、電子メールアドレスを入力してデバイスを再登録し、[ **登録**] を選択します。
+1.  Microsoft Authenticator アプリを開き、[設定] に移動 **します**。
+2.  [デバイス **の登録] を選択します**。
+3.  [登録解除] を選択して、デバイスの登録を **解除します**。
+4.  [ **デバイスの登録**] で、電子メール アドレスを入力してデバイスを再登録し、[登録] を選択 **します**。
 
-Android の設定ページを使用して Android デバイスの登録を解除して再登録するには、次のようにします。
+Android デバイスの登録を解除し、Android デバイスを [設定] ページに再登録するには::
 
-1.  [ **デバイスの設定** ] を開いて、[ **アカウント**] に移動します。
-2.  再登録するワークアカウントを選択し、[ **アカウントの削除**] を選択します。
-3.  アカウントが削除されたら、[ **アカウント** ] ページで、[ **アカウントの追加 > 作業アカウント**] を選択します。
-4.  **Workplace Join** の場合は、電子メールアドレスを入力し、[**参加**] を選択してデバイスの登録を完了します。
+1.  デバイス設定 **を開き、[** アカウント] に **移動します**。
+2.  再登録する仕事用アカウントを選択し、[アカウントの削除] **を選択します**。
+3.  アカウントを削除した後、[アカウント]ページで[アカウントの追加] を選択し、[>**アカウント] を選択します**。
+4.  Workplace **Join の場合は**、メール アドレスを入力し、[参加] **を選択して** デバイスの登録を完了します。
 
-ポータルサイトから Android でデバイスの登録を解除して再登録するには、次のようにします。
+ポータル サイトから Android のデバイスの登録を解除して再登録するには、次の方法を実行します。
 
-1.  ポータルサイトを起動して、[ **デバイス** ] タブに移動します。
+1.  ポータル サイトを起動し、[デバイス] タブ **に移動** します。
 2.  デバイスを選択して、デバイスの詳細を表示します。
-3.  省略記号 (3 つのドット) メニューから、[ **デバイスの削除**] を選択し、ダイアログで確認して削除を完了します。
-4.  これで、ポータルサイトアプリからログアウトできるようになります。 [ **サインイン** ] を選択して、デバイスを再登録します。
+3.  省略記号 (3 つのドット)メニューから [デバイスの削除] を選択し、ダイアログで確認して削除を完了します。
+4.  ポータル サイト アプリからログアウトする必要があります。 [ **サインイン] を** 選択してデバイスを再登録します。
 
-このワークロードの移行フェーズ中に必要なすべての操作、または管理または使用に対する影響の詳細については、 [Microsoft Cloud Deut上陸陸からの移行に関するその他の一般的な情報](ms-cloud-germany-transition-add-general.md#azure-active-directory)について、Azure Active Directory に関する情報を参照してください。
+このワークロードの移行フェーズ中に必要なアクション、または管理や使用状況への影響の詳細については [、Microsoft Cloud Deutschland](ms-cloud-germany-transition-azure-ad.md)からの移行に関する Azure AD の追加情報の Azure Active Directory (Azure AD) に関する情報を確認してください。
 
 ## <a name="ios"></a>iOS
 
-IOS デバイスでは、ユーザーはキャッシュされたアカウントを Microsoft Authenticator から手動で削除し、デバイスの登録を解除して、デバイス上の任意のネイティブアプリからサインアウトする必要があります。
+iOS デバイスでは、ユーザーはキャッシュされたアカウントを Microsoft Authenticator から手動で削除し、デバイスの登録を解除し、デバイス上のネイティブ アプリからサインアウトする必要があります。
 
-### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>手順 1: 存在する場合は、Microsoft Authenticator アプリからアカウントを削除します。
+### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>手順 1: 存在する場合は、Microsoft Authenticator アプリからアカウントを削除する
 
 1. Microsoft Authenticator アプリでアカウントをタップします。
-2. 右上隅の [ **設定** ] アイコンをタップします。 [ **設定** ] アイコンが表示されない場合は、最新バージョンの Microsoft Authenticator を使用していない可能性があります。
-3. [ **アカウントの削除** ] ボタンをタップします。
-4. **このデバイス上のすべてのアプリを** タップします。
+2. 右上隅にある **[** 設定] アイコンをタップします。 [設定] アイコンが表示されない場合は、Microsoft Authenticator の最新バージョンを使用していない可能性があります。
+3. [アカウントの **削除] ボタンをタップ** します。
+4. この **デバイスのすべてのアプリをタップします**。
  
 ### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>手順 2: Microsoft Authenticator アプリからデバイスの登録を解除する
 
-1. 右上隅にあるメニューアイコンをタップします。
-2. [ **設定** ]、[ **デバイス登録**] の順にタップします。
-4. アカウントが表示されている場合は、[ **デバイスの登録を解除** して **続行** する] をタップします。 その後、アカウントは何も表示されません。
+1. 右上隅にあるメニュー アイコンをタップします。
+2. [設定 **] をタップ** し、[デバイス **の登録] をタップします**。
+4. アカウントが表示されている場合は、[デバイスの登録解除] **を** タップし、ダイアログ **で** [続行] をタップします。 その後、アカウントは表示されません。
  
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>手順 3: 必要に応じて個々のアプリからサインアウトする
 
-ユーザーは、Outlook、Teams、OneDrive などの個別のアプリに移動したり、それらのアプリからアカウントを削除したりできます。
+ユーザーは、Outlook、Teams、OneDrive など、個々のアプリに移動し、それらのアプリからアカウントを削除できます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 
-- [新しいドイツ語のデータセンターリージョンの Microsoft Cloud Deutランドから Office 365 サービスへの移行](ms-cloud-germany-transition.md)
+- [Microsoft Cloud Deutschland から新しいドイツのデータセンター リージョンOffice 365 サービスへの移行](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland 移行アシスタント](https://aka.ms/germanymigrateassist)
 - [移行のオプトイン方法](ms-cloud-germany-migration-opt-in.md)
-- [移行中の顧客の利便性](ms-cloud-germany-transition-experience.md)
+- [移行中のカスタマー エクスペリエンス](ms-cloud-germany-transition-experience.md)
 
-遷移を移動します。
+移行を進む:
 
 - [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
-- [その他の準備作業](ms-cloud-germany-transition-add-pre-work.md)
-- [サービス](ms-cloud-germany-transition-add-general.md)、[デバイス](ms-cloud-germany-transition-add-devices.md)、[エクスペリエンス](ms-cloud-germany-transition-add-experience.md)、 [AD FS](ms-cloud-germany-transition-add-adfs.md)の追加情報。
+- [追加の作業前作業](ms-cloud-germany-transition-add-pre-work.md)
+- Azure [AD、](ms-cloud-germany-transition-add-devices.md)[デバイス](ms-cloud-germany-transition-azure-ad.md)、[エクスペリエンス、および](ms-cloud-germany-transition-add-experience.md)AD FS[に関する追加情報](ms-cloud-germany-transition-add-adfs.md)。
 
-クラウドアプリ:
+クラウド アプリ:
 
 - [Dynamics 365 移行プログラム情報](https://aka.ms/d365ceoptin)
 - [Power BI 移行プログラム情報](https://aka.ms/pbioptin)

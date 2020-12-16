@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 の制限されたユーザー ポータルからユーザーを削除する方法についての管理者向けの説明です。 アカウントを侵害していると見なされたユーザーは通常、スパム送信者として、制限されたユーザー ポータルに追加されます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572443"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683057"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Office 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -86,7 +86,7 @@ ms.locfileid: "49572443"
 
 3. 表示されるポップアップで、次の設定を確認または構成します。
 
-   - **状態**: ![[オンに切り替え]](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) で、アラートがオンになっていることを確認します。
+   - **状態**: ![[オンに切り替え]](../../media/scc-toggle-on.png) で、アラートがオンになっていることを確認します。
 
    - **メール受信者**: **[編集]** をクリックし、表示される **[受信者の編集]** ポップアップで、次の設定を確認または構成します。
 

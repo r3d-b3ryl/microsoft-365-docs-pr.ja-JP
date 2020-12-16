@@ -1,5 +1,5 @@
 ---
-title: 共有メールボックスからの検疫済みメッセージの表示と解放
+title: 共有メールボックスから検疫済みメッセージを表示および解放する
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,60 +15,50 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
-description: ユーザーがアクセス許可を持っている共有メールボックスに送信された検疫済みメッセージを表示し、操作する方法について説明します。
-ms.openlocfilehash: 0c165395edc3a3032ece603cb8d9aac875443d7d
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示および処理する方法を学習できます。
+ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49570963"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688031"
 ---
-# <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスからの検疫済みメッセージの表示と解放
+# <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
 
 > [!NOTE]
-> この記事で説明されている機能は現在プレビュー段階であり、すべてのユーザーが利用できるわけではありません。変更される可能性があります。
+> この記事で説明する機能は現在プレビュー中であり、すべてのユーザーが利用できる機能ではありません。また、変更される可能性があります。
 
-[EOP のユーザーとして検疫済みメッセージを検索して解放](find-and-release-quarantined-messages-as-a-user.md)する方法について説明されているように、ユーザーは検疫済みメッセージを管理できます。 しかし、 [Exchange Online の共有メール](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)ボックスに記載されているように、ユーザーがメールボックスへのフルアクセス権を持っている共有メールボックスについてはどうでしょうか。
+ユーザーは、「EOP でユーザーとして検疫済みメッセージを検索して解放する」の説明に従って、受信者の 1 人である検疫済みメッセージ [を管理できます](find-and-release-quarantined-messages-as-a-user.md)。 しかし [、「Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)の共有メールボックス」の説明に従って、ユーザーがメールボックスに対するフル アクセスおよび [差出人を指定して送信] または [代理送信] のアクセス許可を持つ共有メールボックスについてはどうでしょうか。
 
-以前は、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理する機能により、管理者が共有メールボックスに自動マッピングを有効にしておく必要がありました (管理者が別のメールボックスにユーザーアクセスを許可した場合、既定で有効になっています)。 ただし、ユーザーがアクセスできるメールボックスのサイズと数によっては、ユーザーがアクセスできる *すべて* のメールボックスを開こうとすると、パフォーマンスが低下する可能性があります。 このため、多くの管理者は、 [共有メールボックスの自動マッピングを削除](https://docs.microsoft.com/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)することを選択します。
+以前は、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理する機能を使用するには、管理者が共有メールボックスに対して自動マッピングを有効のままにする必要がありました (管理者が別のメールボックスへのアクセスをユーザーに許可すると、既定で有効になっています)。 ただし、ユーザーがアクセスできるメールボックスのサイズと数によっては、Outlook がユーザーがアクセスできるすべてのメールボックスを開けようとすると、パフォーマンスが低下する可能性があります。 このため、多くの管理者は共有メールボックス [の自動マッピングを削除します](https://docs.microsoft.com/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 
-これで、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するために自動マッピングが不要になりました。 機能するだけです。 共有メールボックスに送信された検疫済みメッセージにアクセスするには、次の2つの方法があります。
+現在では、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するために、自動マッピングが必要なくなりました。 正常に動作します。 共有メールボックスに送信された検疫済みメッセージにアクセスするには、次の 2 つの方法があります。
 
-- 管理者がスパム対策ポリシーで [エンドユーザーのスパム通知を有効](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies) にしている場合、共有メールボックス内のエンドユーザーのスパム通知にアクセスできるユーザーは、通知の [ **確認** ] ボタンをクリックして、セキュリティ & コンプライアンスセンターの [検疫] に移動できます。 この方法では、ユーザーが共有メールボックスに送信された検疫済みメッセージのみを管理できることに注意してください。 ユーザーがこのコンテキストで自分の検疫メッセージを管理することはできません。
+- 管理者がスパム対策[](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies)ポリシーでエンド ユーザーのスパム通知を有効にしている場合、共有メールボックス内のエンド ユーザーのスパム通知にアクセスできるユーザーは、通知の[確認] ボタンをクリックして、セキュリティ & コンプライアンス センターで検疫に移動できます。 この方法では、ユーザーが共有メールボックスに送信された検疫済みメッセージのみを管理できます。 ユーザーは、このコンテキストで自分の検疫メッセージを管理できません。
 
-- ユーザーは、 [セキュリティ & コンプライアンスセンターで検疫に移動](find-and-release-quarantined-messages-as-a-user.md)できます。 既定では、ユーザーに送信されたメッセージのみが表示されます。 ただし、ユーザーは **並べ替えの結果** (既定では、[ **メッセージ ID] ボタン** ) を [ **受信者の電子メールアドレス**] に変更し、共有メールボックスの電子メールアドレスを入力してから、[ **更新** ] をクリックして、共有メールボックスに送信された検疫済みメッセージを表示することができます。
+- ユーザーは、 [セキュリティ/コンプライアンス センターで検疫&移動できます](find-and-release-quarantined-messages-as-a-user.md)。 既定では、ユーザーに送信されたメッセージだけが表示されます。 ただし、ユーザーは並べ替えの結果 **(既定** では [メッセージ **ID]** ボタン) を受信者の電子メール アドレスに変更し、共有メールボックスの電子メール アドレスを入力し、[最新の情報に更新] をクリックして、共有メールボックスに送信された検疫済みメッセージを表示できます。
 
-  ![受信者の電子メールアドレスでの検疫済みメッセージの並べ替え。](../../media/quarantine-sort-results-by-recipient-email-address.png)
+  ![受信者の電子メール アドレスによる検疫済みメッセージの並べ替え。](../../media/quarantine-sort-results-by-recipient-email-address.png)
 
-方法に関係なく、ユーザーは検疫済みメッセージの [ **受信者** ] 列を含めることによって混乱を避けることができます。 表示する列の最大数は7です。ユーザーは、[ **列の変更**] をクリックし、既存の列を削除 (たとえば、[ **ポリシーの種類**])、[ **受信者**] を選択して、[ **保存** ] または [ **既定値として保存**] をクリックする必要があります。
+方法に関係なく、ユーザーは検疫済みメッセージの **[受信者** ] 列を含めて混乱を避ける可能性があります。 表示する列の最大数は 7 なので、ユーザーは列の変更、既存の列の削除 (ポリシーの種類など)、受信者の選択、既定で [保存] または [保存] の順にクリックする必要 **があります。**  
 
-  ![[ポリシーの種類] 列を削除し、[受信者] 列を [検疫] に追加します。](../../media/quarantine-add-recipient-column.png)
+  ![[ポリシーの種類] 列を削除し、[受信者] 列を検疫に追加します。](../../media/quarantine-add-recipient-column.png)
 
 ## <a name="things-to-keep-in-mind"></a>留意すべき点
 
-- 最初に検疫されたメッセージを操作するユーザーは、共有メールボックスを使用するすべてのユーザーに対してメッセージの運命を決定します。 たとえば、共有メールボックスに10人のユーザーがアクセスしていて、ユーザーが検疫メッセージを削除することを決定した場合、そのメッセージは10人のユーザー全員に対して削除されます。 同様に、ユーザーがメッセージを解放することを決定した場合は、共有メールボックスに解放され、共有メールボックスの他のすべてのユーザーがアクセスできるようになります。
+- 検疫済みメッセージに対して最初に処理を行うユーザーは、共有メールボックスを使用しているすべてのユーザーのメッセージの形式を決定します。 たとえば、10 人のユーザーが共有メールボックスにアクセスし、ユーザーが検疫メッセージを削除する場合、メッセージは 10 人すべてのユーザーに対して削除されます。 同様に、ユーザーがメッセージを解放すると、そのメッセージは共有メールボックスに解放され、共有メールボックスの他のすべてのユーザーがアクセスできます。
 
-- 現時点では、共有メールボックスに送信された複数の検疫済みメッセージをユーザーが選択すると、ユーザーが [**メッセージの解放**] をクリックするか、**バルクアクション** ポップアップで **メッセージを削除** すると、次のような誤ったエラーが返されます。
+- 現在、[送信者 **のブロック]** ボタンは、共有メールボックスに送信された検疫済みメッセージの [詳細] フライアウトでは使用できません。
 
-  > 選択したすべての検疫済みメッセージを解放する権限がありません。
-  >
-  > 選択したすべての検疫済みメッセージを削除する権限がありません。
-
-  エラーに関係なく、アクションはメッセージに対して実行され、エラーは無視できます。
-
-  ![共有メールボックスに送信された検疫済みメッセージを一括で解放または削除すると、エラーが発生します。](../../media/quarantine-bulk-action-error.png)
-
-- 現時点では、共有メールボックスに送信された検疫済みメッセージの **詳細** ポップアップで [**送信者をブロック** する] ボタンを使用することはできません。
-
-- [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)で共有メールボックスの検疫済みメッセージを管理するには、エンドユーザーは、メッセージを識別するために、_受信者アドレス_ パラメーターの値として [get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)コマンドレットを使用して、共有メールボックスの電子メールアドレスを指定する必要があります。 例:
+- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーは _、RecipientAddress_ パラメーターの値に共有メールボックスの電子メール アドレスを指定して [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)コマンドレットを使用して、メッセージを識別する必要があります。 以下に例を示します。
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com
   ```
 
-  その後、エンドユーザーは、リストから検疫済みメッセージを選択して、操作を表示または実行することができます。
+  その後、エンド ユーザーはリストから検疫済みメッセージを選択して、表示またはアクションを実行できます。
 
-  この例では、共有メールボックスに送信されたすべての検疫済みメッセージを示してから、リスト内の最初のメッセージを検疫から解放します (リスト内の最初のメッセージは0、2番目は1のようになります)。
+  この例では、共有メールボックスに送信された検疫済みメッセージすべてが表示され、リスト内の最初のメッセージが検疫から解放されます (リスト内の最初のメッセージは 0、2 番目は 1 など)。
 
   ```powershell
   $SharedMessages = Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
@@ -79,6 +69,6 @@ ms.locfileid: "49570963"
   構文およびパラメーターの詳細については、以下のトピックを参照してください。
 
   - [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)
-  - [QuarantineMessageHeader](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessageheader)
-  - [プレビュー-Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage)
+  - [Get-QuarantineMessageHeader](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessageheader)
+  - [Preview-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage)
   - [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)

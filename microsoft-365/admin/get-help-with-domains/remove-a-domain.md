@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Microsoft 365 から古いドメインを削除し、ユーザーとグループを別のドメインに移動する方法について説明します。
-ms.openlocfilehash: cddbb0ef9cf48147e33b93a4a8def15576edfab5
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 02ec704e400af76c25c0eb54de10291e2ef3caa2
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655532"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688263"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
 
@@ -52,7 +52,7 @@ ms.locfileid: "49655532"
 
 2. [アクティブ **なユーザー** > **] を選択します**。
 
-3. 移動するユーザーすべての名前の横にあるボックスを選択します。
+3. 移動するユーザーの名前の横にあるボックスを選択します。
 
 4. ページ **の上部にある** [その他のオプション (**...]**) を選択し、[ドメインの変更] **を選択します**。
 
@@ -68,7 +68,7 @@ ms.locfileid: "49655532"
 
 2. [アクティブ **なユーザー** > **] を選択します**。
 
-3. 移動するユーザーすべての名前の横にあるボックスを選択します。
+3. 移動するユーザーの名前の横にあるボックスを選択します。
 
 4. At the top of the page, choose **More** > **Edit domains**.
 
@@ -104,7 +104,7 @@ ms.locfileid: "49655532"
 
 3. [アカウント **] タブで** 、[ユーザー名の **管理] を選択** し、別のドメインを選択します。
   
-4. 上部で、アカウント名を選択し、[サインアウト] **を選択します**。
+4. 上部でアカウント名を選択し、[サインアウト] **を選択します**。
 
 5. 新しいドメインと同じパスワードでサインインします。
 
@@ -114,13 +114,13 @@ ms.locfileid: "49655532"
 
 ::: moniker range="o365-germany"
 
-1. [アクティブな **ユーザー** \> **] に移動し**、一覧で自分の名前を選択します。
+1. [アクティブ **なユーザー** \> **] に移動し**、一覧で自分の名前を選択します。
 
-2. [ユーザー名/ メール] **セクションで** 、[編集] **を選択し**、別のドメインを選択します。
+2. [ユーザー名/ メール] **セクションで** 、[編集] **を** 選択し、別のドメインを選択します。
 
 3. Select **Set as primary** > **Save** > **Close**.
   
-4. 上部で、アカウント名を選択し、[サインアウト] **を選択します**。
+4. 上部でアカウント名を選択し、[サインアウト] **を選択します**。
 
 5. 新しいドメインと同じパスワードでサインインします。
 
@@ -219,9 +219,9 @@ ms.locfileid: "49655532"
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> アカウントから [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) ドメインを削除することはできません。
+> アカウントから [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) ドメインを削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".onmicrosoft.com" アドレスに戻されます。
   
-それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../contact-support-for-business-products.md)、お手伝いいたします。
+それでも機能しない場合 ドメインを手動で削除する必要がある場合があります。 [お電話ください](../contact-support-for-business-products.md) 。お手伝いします。
   
 ::: moniker-end
 
