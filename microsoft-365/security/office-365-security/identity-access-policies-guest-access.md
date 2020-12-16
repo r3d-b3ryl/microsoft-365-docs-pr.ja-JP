@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 376845d8e3657b91b9efe0357e94f4bec3a84078
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683237"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688287"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>ゲストと外部の B2B アクセスを許可するポリシー
 
@@ -42,9 +42,9 @@ Azure AD B2B アカウントを使用してゲストおよび外部アクセス�
 
 次の表に、作成および更新する必要があるポリシーを示します。 共通ポリシーは、共通 ID とデバイス アクセス ポリシーに関する記事に関連する構成手順 [にリンク](identity-access-policies.md) しています。
 
-|保護レベル|Policies|詳細|
+|保護レベル|Policies|詳細情報|
 |---|---|---|
-|**Baseline**|[ゲストユーザーと外部ユーザーに対して常に MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|この新しいポリシーを作成し、次の構成を行います。 <ul><li> [ **Assignments > Users and groups > Include**] で、[ **ユーザー** とグループの選択] を選択し、[ All guest and external users ] (すべてのゲスト ユーザーと外部ユーザー **) を選択します**。 </li><li> **[Assignments > Conditions > サインイン**] では、すべてのオプションをオフのままにして、常に多要素認証 (MFA) を適用します。</li>|
+|**Baseline**|[ゲストユーザーと外部ユーザーに対して常に MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|この新しいポリシーを作成し、次の構成を行います。 <ul><li>[ **Assignments > Users and groups > Include**] で、[ **ユーザー** とグループの選択] を選択し、[ All guest and external users ] (すべてのゲスト ユーザーと外部ユーザー **) を選択します**。</li><li>**[Assignments > Conditions > サインイン**] では、すべてのオプションをオフのままにして、常に多要素認証 (MFA) を適用します。</li></ul>|
 ||[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ゲスト ユーザーと外部ユーザーを除外するには、このポリシーを変更します。|
 ||[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|ゲスト ユーザーと外部ユーザーを除外するには、このポリシーを変更します。|
 
@@ -52,7 +52,7 @@ Azure AD B2B アカウントを使用してゲストおよび外部アクセス�
 
 ![ゲストユーザーと外部ユーザーを除外するコントロールの画面キャプチャ](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 ### <a name="guest-and-external-access-with-microsoft-teams"></a>Microsoft Teams を使用したゲストおよび外部アクセス
 
