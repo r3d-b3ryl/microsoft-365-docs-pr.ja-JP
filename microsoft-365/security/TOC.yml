@@ -119,7 +119,7 @@
                   href: mtp/mtp-autoir.md
                 - name: 自動調査および対応機能の構成
                   href: mtp/mtp-configure-auto-investigation-response.md
-                - name: 自動調査後の修復アクション
+                - name: 修復アクション
                   href: mtp/mtp-remediation-actions.md
                 - name: アクション センターにアクセスする
                   href: mtp/mtp-action-center.md
