@@ -274,20 +274,20 @@
               href: ms-cloud-germany-transition.md
             - name: 移行のオプトイン
               href: ms-cloud-germany-migration-opt-in.md
-            - name: カスタマー エクスペリエンス
+            - name: 変更点
               href: ms-cloud-germany-transition-experience.md
-            - name: 移行フェーズのアクションと影響
+            - name: 事前作業
+              href: ms-cloud-germany-transition-add-pre-work.md
+            - name: 移行フェーズのアクションと影響 (一般)
               href: ms-cloud-germany-transition-phases.md
+            - name: 移行フェーズのアクションと影響 (上級)
+              href: ms-cloud-germany-transition-add-experience.md
             - name: 追加情報
               items:
-                - name: 全般
-                  href: ms-cloud-germany-transition-add-general.md
+                - name: Azure AD
+                  href: ms-cloud-germany-transition-azure-ad.md
                 - name: デバイス
                   href: ms-cloud-germany-transition-add-devices.md
-                - name: 事前作業
-                  href: ms-cloud-germany-transition-add-pre-work.md
-                - name: エクスペリエンス
-                  href: ms-cloud-germany-transition-add-experience.md
                 - name: AD FS の移行手順
                   href: ms-cloud-germany-transition-add-adfs.md
 - name: ID

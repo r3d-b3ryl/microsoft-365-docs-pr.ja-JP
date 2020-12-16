@@ -366,7 +366,7 @@
           items:
             - name: Exchange Online Protection
               items:
-                - name: EOP で既定のフィッシング詐欺対策ポリシーを構成する
+                - name: EOP でのスパム対策ポリシーの構成
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: 迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
