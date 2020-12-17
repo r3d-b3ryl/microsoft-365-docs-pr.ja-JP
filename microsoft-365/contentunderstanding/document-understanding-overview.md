@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でのドキュメント理解の概要を説明します。
-ms.openlocfilehash: b26ed9a9ed9b8d1f332ccf14377660e634349b3d
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5dd44a119dff6f5d194861c381fa28f76a6f0da7
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087369"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701109"
 ---
 # <a name="document-understanding-overview"></a>ドキュメント理解の概要
 
@@ -33,6 +33,9 @@ ms.locfileid: "49087369"
 
 ドキュメント理解モデルは、*コンテンツ センター* と呼ばれる一種の SharePoint サイトで作成および管理されます。 SharePoint ドキュメント ライブラリに適用した場合、モデルはコンテンツタイプに関連付けられ、抽出される情報を格納するための列が含まれます。 作成したコンテンツタイプは、SharePoint コンテンツタイプ ギャラリーに保存されます。 既存のコンテンツ タイプを使用してスキーマを使用することもできます。
 
+> [!NOTE]
+> 読み取り専用、もしくはシールされた型は更新できません。よってモデルに使用することはできません。
+
 *分類子* と *抽出子* をドキュメント理解モデルに追加して、以下を実行します。 
 
 - 分類子は、ドキュメント ライブラリにアップロードされたドキュメントを識別および分類するために使用されます。 たとえば、分類子を "トレーニング" して、ライブラリにアップロードされているすべての契約 *更新ドキュメント* を識別させることができます。 契約更新コンテンツ タイプは、分類子を作成するときにユーザーが定義します。
@@ -41,9 +44,10 @@ ms.locfileid: "49087369"
 
 サンプルファイルを使用して、モデル内の分類子と抽出子をトレーニングおよびテストできます。 サンプルファイルは、ファイルからデータを識別して抽出しようとするときに何を探すべきかについてのモデル例を提供します。 たとえば、会社が使用している契約更新ドキュメントの例を使用して、契約更新の分類子と抽出子をトレーニングします。 サンプルファイルを使用して、モデルの有効性をテストすることもできます。
 
+> [!NOTE]
+> 文字自動認識 (OCR) 機能を使い、文章をスキャンすると、構文には モデルの学習に15 ページの制限があります。
+
 モデルを公開したら、コンテンツセンターを使用して、アクセスできる SharePoint ドキュメントライブラリにモデルを適用します。  
-
-
 
 ## <a name="see-also"></a>関連項目
 [分類子を作成する](create-a-classifier.md)
