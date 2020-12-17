@@ -1,12 +1,11 @@
-### YamlMime:Hub
+### YamlMime:Landing
 title: Microsoft 365 ソリューションおよびアーキテクチャ センター
-summary: 組織に適したソリューションとアーキテクチャを設計する方法を理解します。
-brand: m365
+summary: このソリューションとアーキテクチャ センターでは、エンタープライズ リソース計画、セキュリティ保護され法令に準拠した先進の共同作業のために、統合された Microsoft 365 ソリューションを理解、計画、実装するために必要な技術ガイダンスがまとめられています。
 metadata:
   title: Microsoft 365 ソリューションおよびアーキテクチャ センター
   description: このヘルプ センターでは、IT トレーニングと、組織に適したソリューションとアーキテクチャを設計する方法について説明します。
   ms.service: o365-solutions
-  ms.topic: hub-page
+  ms.topic: landing-page
   ms.collection:
   - m365-security-compliance
   author: samanro
@@ -15,66 +14,96 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ROBOTS: NOINDEX
-  ms.openlocfilehash: 57180d6807ebbc129d68f91d178e9c31724a98a4
-  ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+  ms.openlocfilehash: e77bf6ee7d28e8da4df471487f531b68cc27f5e0
+  ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/10/2020
-  ms.locfileid: "48990519"
-highlightedContent:
-  items:
-  - title: Microsoft 365 でリモート ワーカーを支援する
-    itemType: whats-new
-    url: empower-people-to-work-remotely.md
-  - title: Microsoft 365 とセキュリティで保護された共同作業を設定する
-    itemType: get-started
-    url: setup-secure-collaboration-with-teams.md
-  - title: Microsoft 365 での脅威の保護
-    itemType: get-started
-    url: deploy-threat-protection.md
-productDirectory:
-  items:
-  - title: Microsoft 365 基幹ソリューション
-    imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
-    summary: 計画から実装、導入まで、特定のビジネスの問題やニーズに対する最適なガイダンスを見つけます。
-    url: foundation-solutions-overview.md
-  - title: ワーク ロードのソリューションとシナリオのガイダンス
-    imageSrc: https://docs.microsoft.com/office/media/icons/objects-blue.svg
-    summary: これらのシナリオを基幹ソリューションに追加して、環境に機能を追加します。
-    url: workload-solutions-scenarios-overview.md
-  - title: ソリューションとアーキテクチャの図
-    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
-    summary: これらの図を表示またはダウンロードして、Microsoft 365 のサービスの機能とアーキテクチャを理解します。
-    url: productivity-illustrations.md
-  - title: 業界固有のガイダンス
-    imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-blue.svg
-    summary: 業界に特化したガイダンスを参照する。
-    url: industry-specific-guidance-overview.md
-  - title: Enterprise の設計原則
-    imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-blue.svg
-    summary: ネットワーク、アイデンティティ、セキュリティ、および多国籍アーキテクチャについて理解するために必要な重要な原則を理解します。
-    url: design-principles.md
-  - title: 展開のロードマップとリソース
-    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: セキュリティと情報保護を含む共同作業をセットアップするためのリソース。
-    url: https://docs.microsoft.com/microsoft-365/?view=o365-worldwide
-additionalContent:
-  sections:
-  - title: Microsoft 365 向けの他のリソース
-    items:
-    - title: 管理者と IT 担当者向けの Microsoft 365 ヘルプ センター
-      summary: IT 担当者向けのリソースについては、Microsoft 365 のページをご覧ください。
-      url: https://docs.microsoft.com/microsoft-365
-    - title: 管理者と IT 担当者向けのトレーニング
-      summary: Microsoft 365 を管理するためのトレーニング リソースを参照する
-      url: https://docs.microsoft.com/learn/m365/
-    - title: エンド ユーザー向けのトレーニング
-      summary: エンドユーザーが Microsoft 365 の使用方法を理解するのを助ける
-      url: https://support.office.com/modernworkplace
-    - title: Microsoft 365 技術コミュニティ
-      summary: 以下の技術コミュニティに参加できます。
-      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-    - title: 開発者向けのリソース
-      summary: Microsoft 365 用の開発方法について学ぶ
-      url: https://developer.microsoft.com/microsoft-365
+  ms.lasthandoff: 12/16/2020
+  ms.locfileid: "49688537"
+landingContent:
+- title: 基本的ソリューションガイド
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Microsoft 365 でリモート ワーカーを支援する
+      url: empower-people-to-work-remotely.md
+    - text: Microsoft 365 とセキュリティで保護された共同作業を設定する
+      url: setup-secure-collaboration-with-teams.md
+    - text: Microsoft 365 での脅威の保護
+      url: deploy-threat-protection.md
+    - text: データ プライバシー規制用の情報保護を展開する
+      url: information-protection-deploy.md
+- title: アーキテクチャ図と設計原則
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Microsoft クラウド アーキテクチャ モデル
+      url: cloud-architecture-models.md
+    - text: Microsoft 365 の生産性図
+      url: productivity-illustrations.md
+    - text: Teams アーキテクチャのポスター
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/teams-architecture-solutions-posters?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: デザインの原則
+      url: design-principles.md
+- title: ワークロード リソース
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Contoso の事例
+      url: contoso-case-study-solutions.md
+  - linkListType: tutorial
+    links:
+    - text: テスト ラボ ガイド
+      url: test-lab-guides-overview-solutions.md
+- title: チームワークとコラボレーションソリューションガイド
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Teams 音声ソリューションを計画し展開する
+      url: deploy-voice.md
+  - linkListType: overview
+    links:
+    - text: 共同作業のガバナンス
+      url: collaboration-governance-overview.md
+    - text: ファイルの共同作業
+      url: https://docs.microsoft.com/en-us/sharepoint/deploy-file-collaboration?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: インテリジェント イントラネット
+      url: https://docs.microsoft.com/en-us/sharepoint/intranet-overview?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: エンタープライズ向けの OneDrive ガイド
+      url: https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+- title: セキュリティとコンプライアンス ソリューション ガイド
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 自宅での作業をサポートするセキュリティ チームの主なタスク
+      url: https://docs.microsoft.com/en-us/microsoft-365/security/top-security-tasks-for-remote-work?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide.md
+    - text: Microsoft 365 security for Business 意思決定者 (BDMs)
+      url: https://docs.microsoft.com/en-us/microsoft-365/security/microsoft-365-security-for-bdm?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Microsoft Defender Advanced Threat Protection を展開する
+      url: https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+  - linkListType: reference
+    links:
+    - text: ISO - 推奨アクション プラン
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/iso-action-plan?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: NIST - 推奨アクション プラン
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/nist-action-plan?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: CCPA- 推奨するアクション プラン
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/ccpa-faq?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: GDPR  - 推奨するアクション プラン
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+- title: 業界固有のガイダンス
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 金融サービスのセキュリティとコンプライアンス
+      url: financial-services-secure-collaboration.md
+    - text: エネルギーおよび公益サービスのセキュリティとコンプライアンス
+      url: energy-secure-collaboration.md
+    - text: 医療関係用Teams
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: 教育機関用 Teams
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: 政府機関用 Teams
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Teams を使用して政府機関のリモート ワーカーをサポートする
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
