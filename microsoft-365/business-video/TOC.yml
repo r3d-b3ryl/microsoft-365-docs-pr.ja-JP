@@ -1,0 +1,159 @@
+- name: Microsoft 365 Small Business トレーニング
+  href: index.yml
+  items:
+    - name: 作業の開始
+      items:
+        - name: Microsoft 365 とは
+          href: what-is-microsoft-365.md
+        - name: セットアップの概要
+          href: setup-overview.md
+        - name: サブスクリプションを選択する
+          href: Choose-subscription.md
+    - name: クラウドのセットアップ
+      items:
+        - name: サブスクリプションにサインアップする
+          href: sign-up.md
+        - name: サービスをセットアップする
+          href: set-up.md
+        - name: Windows 10 PC のセキュリティ保護
+          href: secure-win10-pcs.md
+        - name: GoDaddy Web サイトを作成する
+          href: create-web-site.md
+    - name: デバイスのセットアップ
+      items:
+        - name: Windows 10 Pro へのアップグレード
+          href: upgrade.md
+        - name: PC を Microsoft 365 に接続する
+          href: connect.md
+        - name: アプリMicrosoft Officeインストールする
+          href: install-office.md
+        - name: Outlook をメール用にセットアップする
+          href: setup-outlook.md
+        - name: メールのインポートとリダイレクト
+          href: import-email.md
+        - name: ファイルを OneDrive に移動する
+          href: files-to-onedrive.md
+        - name: 会社のファイルを SharePoint に移動する
+          href: files-to-sharepoint.md
+    - name: モバイル
+      items:
+        - name: どこからでも作業
+          href: work-from-anywhere.md
+        - name: Android Officeアプリをインストールする
+          href: install-apps-android.md
+        - name: iOS Officeアプリをインストールする
+          href: install-apps-ios.md
+        - name: 管理モバイル アプリを取得する
+          href: admin-mobile.md
+    - name: 共同作業
+      items:
+        - name: Outlook と Teams を使用する
+          href: collab-outlook-teams.md
+        - name: グループのメール アドレスを作成する
+          href: group-email.md
+        - name: 共有の予定表を作成する
+          href: shared-calendar.md
+        - name: 組織全体のチームを作成する
+          href: org-wide-team.md
+        - name: ゲストとチームを作成する
+          href: team-with-guests.md
+        - name: ゲストとしてチームに参加
+          href: join-team-guest.md
+        - name: 従業員や顧客とチャットする
+          href: start-and-pin-chats.md
+        - name: オンライン会議の概要
+          href: overview-online-meetings.md
+        - name: ゲストとの会議をスケジュールする
+          href: schedule-guest-meeting.md
+        - name: ゲストと会議に参加する
+          href: join-guest-meeting.md
+    - name: クラウド ストレージ
+      items:
+        - name: 共有の概要
+          href: overview-file-sharing.md
+        - name: ファイルの保存場所
+          href: store-files.md
+        - name: ファイルを安全に外部で共有する
+          href: securely-share-files-externally.md
+        - name: ファイルを外部で簡単に共有する
+          href: share-files-externally.md
+    - name: Business Voice
+      items:
+        - name: Business Voice の概要
+          href: business-voice.md
+        - name: Business Voice アドオンを購入する
+          href: buy-business-voice.md
+    - name: 生産性アプリ
+      items:
+        - name: Bookings の概要
+          href: overview-bookings.md
+        - name: イベントを計画する
+          href: plan-event.md
+    - name: サービスの管理
+      items:
+        - name: 管理者とは
+          href: what-is-admin.md
+        - name: 管理センターの概要
+          href: admin-center-overview.md
+        - name: 請求書の表示、ダウンロード、印刷
+          href: view-bill.md
+        - name: 支払い方法を更新する
+          href: update-payment.md
+        - name: ユーザーのパスワードをリセットする
+          href: reset-user-passwords.md
+        - name: セルフサービスによるパスワードのリセットを設定する
+          href: set-up-self-serve-password-reset.md
+        - name: ユーザーの追加
+          href: add-user.md
+        - name: ユーザーを削除する
+          href: delete-user.md
+        - name: 別の管理者を追加する
+          href: add-admin.md
+        - name: ユーザー名またはメールを変更する
+          href: change-user-name-email.md
+        - name: ユーザーを別のサブスクリプションに移動する
+          href: change-subscription.md
+        - name: 会社全体の署名を作成する
+          href: company-wide-signature.md
+        - name: 利用状況レポートに基付く
+          href: act-on-report.md
+        - name: 別のドメインを追加する
+          href: add-domain.md
+    - name: デバイスを管理する
+      items:
+        - name: Windows 10 Pro デバイスのセキュリティ保護
+          href: secure-win-10-pro-devices.md
+        - name: iOS Officeアプリのセキュリティ保護
+          href: secure-office-on-ios.md
+    - name: セキュリティ&コンプライアンス
+      items:
+        - name: Microsoft 365 Business Premium セキュリティの概要
+          href: overview-m365-security.md
+        - name: MFA を使用して従業員アカウントを保護する
+          href: turn-on-mfa.md
+        - name: 電話で 2 要素サインインを設定する
+          href: set-up-mfa.md
+        - name: マルウェア検出を有効にする
+          href: anti-malware.md
+        - name: ランサムウェアの電子メール ルールを作成する
+          href: prevent-ransom-in-email.md
+        - name: 自動転送メールを停止する
+          href: stop-email-auto-forward.md
+        - name: フィッシング詐欺対策を設定する
+          href: setup-anti-phishing.md
+        - name: 安全な添付ファイルを管理する
+          href: safe-attachments.md
+        - name: 安全なリンクを管理する
+          href: safe-links.md
+        - name: データの損失を防止する
+          href: set-up-dlp.md
+        - name: 秘密度ラベルを作成する
+          href: create-sensitivity-labels.md
+    - name: サポート
+      items:
+        - name: 回答とヘルプを見つける
+          href: find-help-answers.md
+        - name: ヘルプまたはサポートを受ける
+          href: get-help-support.md
+        - name: 従業員のクイック セットアップ
+          href: employee-quick-setup.md

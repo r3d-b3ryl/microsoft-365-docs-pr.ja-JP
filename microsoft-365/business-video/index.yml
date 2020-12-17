@@ -1,0 +1,84 @@
+### YamlMime:Hub
+title: Microsoft 365 Small Business トレーニング
+summary: ビジネス向け Microsoft 365 をセットアップして管理する方法について説明します。
+brand: m365
+metadata:
+  title: Microsoft 365 Small Business トレーニング
+  description: Microsoft 365 管理センターで Microsoft 365 をセットアップおよび管理します。
+  ms.service: O365-administration
+  ms.prod: microsoft-365-business
+  ms.topic: hub-page
+  author: Sirkkuw
+  ms.author: sirkkuw
+  ms.date: 12/16/2020
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: d66e3a5c56fbc6676a21ec9729d44fac64e3abe3
+  ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "49702491"
+productDirectory:
+  items:
+  - title: 作業の開始
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: ビジネス向け Microsoft 365 への移行を計画します。
+    url: what-is-microsoft-365.md
+  - title: 一般法人向け Microsoft 365 をセットアップする
+    imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
+    summary: ドメインの追加、ユーザーの追加、セキュリティ ポリシーの設定を行います。
+    url: sign-up.md
+  - title: コンピューターをセットアップする
+    imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
+    summary: ファイルOffice、電子メールのセットアップ、ファイルの移行を行います。
+    url: upgrade.md
+  - title: モバイル デバイスをセットアップする
+    imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
+    summary: モバイル Officeアプリをインストールします。
+    url: work-from-anywhere.md
+  - title: 他のユーザーと共同作業を行う
+    imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
+    summary: Teams で従業員や顧客と一緒に作業します。
+    url: collab-outlook-teams.md
+  - title: ファイルの保存と共有
+    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
+    summary: ファイルを安全に保存し、どこからでもアクセスできます。
+    url: overview-file-sharing.md
+  - title: Business Voice のセットアップ
+    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+    summary: 電話サービスと会議をセットアップします。
+    url: business-voice.md
+  - title: ビジネス アプリをセットアップする
+    imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
+    summary: Bookings、Lists、Tasks... をセットアップして学習します。
+    url: overview-bookings.md
+  - title: サブスクリプションを管理する
+    imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
+    summary: ユーザーの管理、パスワードのリセット、請求書の表示など。
+    url: what-is-admin.md
+  - title: デバイスを管理する
+    imageSrc: https://docs.microsoft.com/office/media/icons/devices-2-blue.svg
+    summary: 個人用デバイスと仕事用デバイスのポリシーを設定します。
+    url: secure-win-10-pro-devices.md
+  - title: ビジネスをセキュリティで保護する
+    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+    summary: セキュリティとコンプライアンスの機能を設定します。
+    url: overview-m365-security.md
+  - title: サポートを受ける
+    imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
+    summary: Microsoft 365 for business に関するヘルプを表示します。
+    url: find-help-answers.md
+additionalContent:
+  sections:
+  - title: 詳細情報
+    items:
+    - title: 詳細については、Office
+      summary: Word、Excel、PowerPoint、その他のアプリを使用するOfficeします。
+      url: https://support.microsoft.com/training
+    - title: Google Workspace から切り替える
+      summary: ビジネス向け Microsoft 365 に切り替える方法について説明します。
+      url: https://support.microsoft.com/office/cff9f9fb-956e-4cb9-8b64-d7ebc1911123
+    - title: その他の管理リソースを検索する
+      summary: Microsoft 365 管理センターのヘルプ サイトに移動します。
+      url: ../admin/index.yml
