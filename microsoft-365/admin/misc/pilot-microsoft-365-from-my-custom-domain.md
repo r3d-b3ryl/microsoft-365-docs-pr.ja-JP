@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 2つのテストアカウントのみを使用して、カスタムドメインから Microsoft 365 メールボックスに電子メール機能をパイロットする方法について説明します。
-ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295036"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688219"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタムドメインから Microsoft 365 をパイロットする
 
@@ -39,6 +39,8 @@ ms.locfileid: "48295036"
 - 管理者が 1 つの場所からすべてのユーザーアカウントを管理することはできません。
 
 - ユーザーが Microsoft 365 スパムフィルターを使用できない場合があります。
+
+- これは、ユーザー数が非常に少ない場合にお勧めです。パイロット用にメールを使用する場合にのみ適用されます。
 
 ## <a name="set-up-a-microsoft-365-pilot"></a>Microsoft 365 パイロットをセットアップする
 
@@ -83,7 +85,7 @@ Microsoft 365 では、スパム保護に Exchange Online Protection（EOP） �
 
 1. Exchange 管理センターのナビゲーションウィンドウで、[**保護**]を選択し、[**接続フィルタ**]を選択します。
 
-2. [**IP許可リスト**]で**+** を選択し、現在の電子メールプロバイダのメールサーバー IP アドレスを追加します。 
+2. [**IP許可リスト**]で **+** を選択し、現在の電子メールプロバイダのメールサーバー IP アドレスを追加します。 
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>手順 5: ユーザー アカウントを作成して主要な (返信先) アドレスを設定する
 
@@ -91,7 +93,7 @@ Microsoft 365 では、スパム保護に Exchange Online Protection（EOP） �
 
 2. 2 つの既存のユーザーを追加して、2 つのテストアカウントを作成します。
 
-    アカウントごとに、[** +ユーザーを追加**]を選択し、テストするパスワードの方法など、必要な情報を入力します。
+    アカウントごとに、[**+ユーザーを追加**]を選択し、テストするパスワードの方法など、必要な情報を入力します。
 
     ユーザーの電子メールアドレスが同じであることを確認するには、[**ユーザー名**]フィールドがユーザーの現在の電子メールアドレスと一致していなければなりません。
 
@@ -189,4 +191,3 @@ DNS ホスティングプロバイダーの Web サイトにサインインし�
 
 それらが Microsoft 365 メールボックスの適切な場所にインポートされると、アイテムはどこのどのデバイスからでもアクセスできるようになります。
 
-より多くのメールボックスが関係する場合、または従業員が Outlook を使用していない場合は、Exchange 管理センターで利用可能な移行ツールを使用できます。 開始するには、Exchange 管理センターに移動し、「[IMAP サーバーから Exchange Online メールボックスへのメールの移行](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)」の指示に従います。
