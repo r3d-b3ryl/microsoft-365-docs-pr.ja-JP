@@ -11,16 +11,16 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 でトピック エクスペリエンスをセットアップする方法について説明します。
-ms.openlocfilehash: cc157463c8c85f25ba232c344294ef3e0fabba23
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667969"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698557"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Microsoft 365 でのトピック エクスペリエンスのセットアップ
 
-Microsoft 365 管理センターを使用して、トピックエクスペリエンスを設定および [構成できます](knowledge-management-overview.md)。 
+Microsoft 365 管理センターを使用して、トピックエクスペリエンスを設定および [構成できます](topic-experiences-overview.md)。 
 
 環境内でトピックをセットアップおよび構成する最善の方法を計画することが重要です。 この記事の手順を開始 [する前に、「](plan-topic-experiences.md) トピックエクスペリエンスを計画する」を必ずお読みください。
 
@@ -31,17 +31,17 @@ Microsoft 365 管理センターにアクセスしてトピックエクスペリ
 Microsoft 365 でトピック エクスペリエンスを設定するには
 
 1. Microsoft [365 管理センターで、[](https://admin.microsoft.com)セットアップ] **を選択し**、[ファイルとコンテンツ] **セクションを表示** します。
-2. [ファイルと **コンテンツ] セクションで** 、[ユーザーをナレッジに **接続する] をクリックします**。
+2. [ファイルと **コンテンツ] セクションで** 、[ユーザーをナレッジ **に接続する] をクリックします**。
 
     ![ユーザーを知識に接続する](../media/admin-org-knowledge-options.png) 
 
 3. [知識 **へのユーザーの** 接続] ページで、[開始 **]** をクリックしてセットアップ プロセスの手順を説明します。
 
-    ![開始する](../media/k-get-started.png) 
+    ![作業の開始](../media/k-get-started.png) 
 
 4. [ナレッジ **ネットワークでトピックを検索する方法** の選択] ページで、トピックの検出を構成します。 **[SharePoint トピック ソース** の選択] セクションで、検出時にトピックのソースとしてクロールする SharePoint サイトを選択します。 次から選択します。
     - **すべてのサイト**: 組織内のすべての SharePoint サイト。 これには、現在および将来のサイトが含まれます。
-    - **すべて (選択したサイトを** 除く): 除外するサイトの名前を入力します。  検出からオプトアウトするサイトの一覧をアップロードできます。 今後作成されるサイトは、トピック検出のソースとして含まれる予定です。 
+    - **選択したサイトを除く** すべてのサイト: 除外するサイトの名前を入力します。  検出からオプトアウトするサイトの一覧をアップロードできます。 将来作成されるサイトは、トピック検出のソースとして含まれます。 
     - **選択したサイト** のみ: 含めるサイトの名前を入力します。 サイトの一覧をアップロードできます。 将来作成されるサイトは、トピック検出のソースとして含まれません。
     - **サイトなし**: SharePoint サイトを含めない。
 
@@ -65,7 +65,7 @@ Microsoft 365 でトピック エクスペリエンスを設定するには
 
     - **[名前**]: 除外するトピックの名前を入力します。 これを行うには 2 つの方法があります。
         - 完全一致: 正確な名前または頭字語 *(Contoso* や ATL など) *を含めできます*。
-        - 部分一致: 特定の単語を含むすべてのトピックを除外できます。  たとえば、円弧 *には*、円弧、円弧の円弧、トレーニング用の円弧など、その中に円弧を含むすべてのトピック *が除外されます*。 Architecture など、単語の一部としてテキストが含まれるトピックは除外されない点に注意 *してください*。
+        - 部分一致: 特定の単語を含むすべてのトピックを除外できます。  たとえば、円弧 *には*、円弧、円弧の円弧、トレーニング用の円弧など、その中に円弧を含むすべてのトピック *が除外されます*。 ただし、Architecture など、単語の一部としてテキストが含まれるトピックは除外されない点に *注意してください*。
     - **略語 (省略可能)**: 頭字語を除外する場合は、略語の略語を入力します。
     - **MatchType-Exact/Partial**: 入力した名前が完全一致型か部分一致型 *かを入力します*。
 
@@ -135,7 +135,7 @@ Microsoft 365 でトピック エクスペリエンスを設定するには
 
 ## <a name="manage-topic-experiences"></a>トピック エクスペリエンスを管理する
 
-トピックエクスペリエンスを設定したら [、Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)管理センターでセットアップ時に選択した設定を変更できます。 次のリファレンスを参照してください。
+トピックエクスペリエンスを設定したら [、Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)管理センターでセットアップ中に選択した設定を変更できます。 次のリファレンスを参照してください。
 
 - [Microsoft 365 でのトピック検出の管理](topic-experiences-discovery.md)
 - [Microsoft 365 でトピックの表示を管理する](topic-experiences-knowledge-rules.md)
@@ -144,4 +144,4 @@ Microsoft 365 でトピック エクスペリエンスを設定するには
 
 ## <a name="see-also"></a>関連項目
 
-[ナレッジ マネジメントの概要](knowledge-management-overview.md)
+[トピック エクスペリエンスの概要](topic-experiences-overview.md)
