@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: SharePoint ドキュメントライブラリに発行されたモデルを適用する方法について説明します。
-ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 9c99ede49633b5ae70cbb67c30d83c111084df95
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087489"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701143"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexのドキュメント理解モデルを適用する
 
@@ -77,6 +77,9 @@ ms.locfileid: "49087489"
 3. 選択したファイルが処理されるキューに追加されます。
 
       ![分類と抽出](../media/content-understanding/extract-classify.png)</br> 
+
+> [!NOTE]
+> 個々のファイルをライブラリにコピーしてモデルに適用することはできますが、フォルダーに適用することはできません。
 
 ## <a name="see-also"></a>関連項目
 [分類子を作成する](create-a-classifier.md)

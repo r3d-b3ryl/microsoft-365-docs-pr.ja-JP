@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でエクストラクターを作成する方法について説明します。
-ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b957d905f3807f6007ebeb742d9b56d81ea38ac2
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087465"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701131"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でエクストラクターを作成する
 
@@ -37,7 +37,9 @@ ms.locfileid: "49087465"
 
 1. [モデルのホーム] ページで、[ **エクストラクターの作成とトレーニング**] タイルの [**トレーニングを行う**] をクリックします。
 2. [**新しいエンティティエクストラクター** ] 画面で、[ **新しいエクストラクター 名**] フィールドにエクストラクターの名前を入力します。 たとえば、契約更新の各ドキュメントからサービス開始日を抽出する場合は、「**サービスの開始日** と名前を入力します。 以前に作成した列 (例えば[管理されたメタデータ] 列など) を再使用することもできます。
-3. **[作成]** をクリックします。
+> [!NOTE]
+> 新しいエクストラクタを作成し、**[新しい列タイプ]** を選択して **[1 行テキスト]** を選択すると、最大文字数制限は 255 になります。 制限を超えて入力した文字はすべて切り捨てられます。 
+3. 完了したら、[**作成**] をクリックします。
 
 ## <a name="add-a-label"></a>ラベルを追加する
 
