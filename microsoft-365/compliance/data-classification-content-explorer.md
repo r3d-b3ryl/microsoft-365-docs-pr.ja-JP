@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 7977d30881a4229f99f4c5976d4c41377573a6ca
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379214"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701154"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -33,18 +33,21 @@ ms.locfileid: "48379214"
 
 ## <a name="prerequisites"></a>前提条件
 
-データ分類にアクセスし、データ分類を使用するすべてのアカウントには、以下のサブスクリプションのいずれかからライセンスが割り当てられている必要があります。
+データ分類にアクセスして使用するすべてのアカウントには、これらのいずれかのサブスクリプションのライセンスが割り当てられている必要があります。
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - 高度なコンプライアンス (E5) アドオン
 - 高度な脅威インテリジェンス (E5) アドオン
+- Microsoft 365 E5/A5 情報保護およびガバナンス
+- Microsoft 365 E5/A5 コンプライアンス
+
 
 ### <a name="permissions"></a>アクセス許可
 
 [コンテンツ エクスプローラー] タブにアクセスするには、アカウントはこれらの役割または役割グループに割り当てられたメンバーシップであることが必要です。 
 
-[DLP ポリシー](data-loss-prevention-policies.md)は、**機密情報の種類**として定義されている機密情報を保護するのに役立ちます。 Microsoft 365 には、さまざまな地域にわたる[多くの一般的な機密情報の種類に対する定義](sensitive-information-type-entity-definitions.md)が含まれていて、すぐに使用できる状態になっています。 たとえば、クレジットカード番号、銀行口座番号、国民識別番号、Windows Live ID サービス番号などです。
+[DLP ポリシー](data-loss-prevention-policies.md)は、**機密情報の種類** として定義されている機密情報を保護するのに役立ちます。 Microsoft 365 には、さまざまな地域にわたる[多くの一般的な機密情報の種類に対する定義](sensitive-information-type-entity-definitions.md)が含まれていて、すぐに使用できる状態になっています。 たとえば、クレジットカード番号、銀行口座番号、国民識別番号、Windows Live ID サービス番号などです。
 
 **Microsoft 365 の役割グループ**
 
@@ -81,7 +84,7 @@ ms.locfileid: "48379214"
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
-[DLP ポリシー](data-loss-prevention-policies.md)は、**機密情報の種類**として定義されている機密情報を保護するのに役立ちます。 Microsoft 365 には、さまざまな地域にわたる[多くの一般的な機密情報の種類に対する定義](sensitive-information-type-entity-definitions.md)が含まれていて、すぐに使用できる状態になっています。 たとえば、クレジットカード番号、銀行口座番号、国民識別番号、Windows Live ID サービス番号などです。
+[DLP ポリシー](data-loss-prevention-policies.md)は、**機密情報の種類** として定義されている機密情報を保護するのに役立ちます。 Microsoft 365 には、さまざまな地域にわたる[多くの一般的な機密情報の種類に対する定義](sensitive-information-type-entity-definitions.md)が含まれていて、すぐに使用できる状態になっています。 たとえば、クレジットカード番号、銀行口座番号、国民識別番号、Windows Live ID サービス番号などです。
 
 > [!NOTE]
 > 現在、コンテンツ エクスプローラーは、Exchange Online の機密情報の種類をスキャンしません。
@@ -112,7 +115,7 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 
 ### <a name="search"></a>検索
 
-Exchange フォルダー、SharePoint、OneDrive サイトなどの場所をドリルダウンするとき、**検索**ツールが表示されます。
+Exchange フォルダー、SharePoint、OneDrive サイトなどの場所をドリルダウンするとき、**検索** ツールが表示されます。
 
 ![コンテンツ エクスプローラー検索ツール](../media/data_classification_search_tool.png)
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Office 365 では、利用可能な最も強力な暗号化、プロトコル、テクノロジを使用して、保存中および転送中にコンテンツが暗号化されます。 Office 365 での暗号化の概要について説明します。
-ms.openlocfilehash: 0cd440549cd038ec9b5f69233e7faa18d9bcee1e
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 1aee9d401891e807f572c1eed2bc22a54f39e534
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663012"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709570"
 ---
 # <a name="encryption"></a>暗号化
 
@@ -33,7 +33,7 @@ ms.locfileid: "49663012"
   
 - TLS などの証明書とテクノロジの詳細については、Office 365 での暗号化に関するテクニカル [リファレンスの詳細を](technical-reference-details-about-encryption.md)参照してください。
 
-- 組織の暗号化を構成または設定する方法については、「set up [encryption in Office 365 Enterprise](set-up-encryption.md)」を参照してください。
+- 組織の暗号化を構成または設定する方法については、「Office [365 Enterprise](set-up-encryption.md)での暗号化の設定」を参照してください。
 
 ## <a name="what-is-encryption-and-how-does-it-work-in-office-365"></a>暗号化とは何ですか。また、Office 365 でどのように機能しますか。
 
@@ -41,7 +41,7 @@ ms.locfileid: "49663012"
   
 それ自体による暗号化によって、コンテンツが傍受されるのを防ぐ必要はありません。 暗号化は、組織のより大きな情報保護戦略の一部です。 暗号化を使用すると、承認された関係者のみが暗号化されたデータを使用できます。
   
-暗号化の複数のレイヤーを同時に設定できます。 たとえば、電子メール メッセージと、電子メールが流れる通信チャネルを暗号化できます。 Office 365 では、データは、いくつかの強力な暗号化プロトコル、およびトランスポート層セキュリティ/Secure Sockets Layer (TLS/SSL)、インターネット プロトコル セキュリティ (IPSec)、および Advanced Encryption Standard (AES) を含むテクノロジを使用して、保存中および転送中に暗号化されます。
+暗号化の複数のレイヤーを同時に設定できます。 たとえば、電子メール メッセージと、電子メールが流れる通信チャネルを暗号化できます。 Office 365 では、データは保存中および転送中に、いくつかの強力な暗号化プロトコル、およびトランスポート層セキュリティ/Secure Sockets Layer (TLS/SSL)、インターネット プロトコル セキュリティ (IPSec)、および Advanced Encryption Standard (AES) を含むテクノロジを使用して暗号化されます。
   
 ## <a name="encryption-for-data-at-rest-and-data-in-transit"></a>保存中のデータと転送中のデータの暗号化
 
@@ -58,9 +58,9 @@ ms.locfileid: "49663012"
 |受信者間で転送中のメール。 この電子メールには、Exchange Online によってホストされる電子メールが含まれます。  <br/> |Officeメールの Azure Rights Management、S/MIME、TLS による 365 Message Encryption の使用  <br/> |[Office 365 Message Encryption (OME)](ome.md) <br/> [Office 365 での電子メールの暗号化](email-encryption.md) <br/> [Exchange Online が TLS を使って Office 365 のメール接続をセキュリティで保護する方法](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 |Microsoft Teams を使用して受信者間で転送中のチャット、メッセージ、およびファイル。 <br/> |Teams では、インスタント メッセージの暗号化に TLS と MTLS を使用します。 メディア トラフィックは Secure RTP (SRTP) を使用して暗号化されます。 Teams は、暗号化キー交換に FIPS (Federal Information Processing Standard) 準拠アルゴリズムを使用します。 <br/> |[Teams の暗号化](https://docs.microsoft.com/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
-## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>セキュリティとコンプライアンスの要件を満たすために暗号化を詳細に制御する必要がある場合は、どうなるでしょうか。
+## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>セキュリティとコンプライアンスの要件を満たすために暗号化を詳細に制御する必要がある場合は、
 
-Microsoft 365 は、Microsoft が管理するボリューム暗号化、ファイルの暗号化、およびメールボックスの暗号化に関するソリューションを、Office 365 で提供しています。 さらに、Microsoft は、管理と制御が可能な暗号化ソリューションを提供しています。 これらの暗号化ソリューションは Azure 上に構築されています。
+Microsoft 365 は、Microsoft が管理するボリューム暗号化、ファイルの暗号化、およびメールボックスの暗号化に関するソリューションを、Office 365 で提供しています。 さらに、Microsoft では、管理および制御できる暗号化ソリューションを提供しています。 これらの暗号化ソリューションは Azure 上に構築されています。
   
 詳細については、次のリソースを参照してください。
   
@@ -81,14 +81,14 @@ Microsoft 365 は、Microsoft が管理するボリューム暗号化、ファ�
 |組織の暗号化を設定する  <br/> |[Office 365 Enterprise で暗号化を設定する](set-up-encryption.md) <br/> |
 |証明書、テクノロジ、TLS 暗号スイートの詳細を表示する <br/> |[暗号化に関する技術的な詳細](technical-reference-details-about-encryption.md) <br/> |
 |モバイル デバイスで暗号化されたメッセージを処理する  <br/> |[暗号化されたメッセージを Android デバイスで表示する](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [iPhone または iPad で暗号化されたメッセージを表示する](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|パスワード保護を使用してドキュメントを暗号化する  <br/><br/>  パスワード保護はブラウザーではサポートされていません。 パスワード保護には、デスクトップ バージョンの Word、Excel、PowerPoint を使用します。 |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choose an **Add protection section,** and then see **Encrypt with Password**.  |
-|ドキュメントから暗号化を削除する  <br/> |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choose a **Remove protection section,** and then see **Remove password encryption**.  |
+|パスワード保護を使用してドキュメントを暗号化する  <br/><br/>  パスワード保護は、ブラウザーではサポートされていません。 パスワード保護には、デスクトップ バージョンの Word、Excel、PowerPoint を使用します。 |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choose an **Add protection section,** and then see **Encrypt with Password**.  |
+|ドキュメントから暗号化を削除する  <br/> |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choose a **Remove protection** section, and then see Remove **password encryption**.  |
 
 
 ## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 のセキュリティおよび情報保護機能を計画する](plan-for-security-and-compliance.md)
 
-[ビジネス 向け Microsoft 365 プランをセキュリティで保護する上位 10 の方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[ビジネス 向け Microsoft 365 プランをセキュリティで保護する上位 10 の方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)
 
 [Microsoft Stream ビデオ レベルの暗号化と再生フロー](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)

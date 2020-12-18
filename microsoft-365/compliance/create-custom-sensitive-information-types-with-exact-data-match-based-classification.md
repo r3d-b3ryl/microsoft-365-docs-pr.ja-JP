@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5fa261f1e0db5c8ed66dfdebdca764976fe3130
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 68546f7ad9f4b97f43611d49054200db4fdd4bbd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658674"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698398"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -107,6 +107,11 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 3. 機密データ フィールドの形式に注意してください。 特に、コンテンツにカンマが含まれている可能性のあるフィールド (たとえば、"シアトル, WA" の値を含むストリート アドレス) は、EDM ツールによって解析されるときに、2 つの別のフィールドとして解析されます。 この問題を回避するには、機密データ テーブル内の該当するフィールドが一重引用符または二重引用符で確実に囲まれているようにすることが必要です。 カンマを含むフィールドにスペースが含まれている可能性がある場合は、カスタムの機密情報の種類を作成する必要があります。それは、対応する書式 (コンマとスペースを含む複数の単語を含む文字列) と一致しており、ドキュメントがスキャンされたときに文字列が正しく合致したことを確認します。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>機密情報のデータベースのスキーマを定義する
+
+ビジネス上または技術的な理由で、PowerShell またはコマンド ラインを使用してスキーマと EDM の機密情報の種類のパターン (ルール パッケージ) を作成しない場合は、 [完全一致スキーマと機密情報の種類ウィザード](sit-edm-wizard.md) を使って作成します。 スキーマおよび EDM の機密情報の種類パターンの作成が完了したら、EDM ベースの機密情報の種類を使用できるようにするために必要なすべての手順を完了します。
+
+> [!NOTE]
+> 完全一致スキーマと機密情報の種類ウィザードは、World Wide クラウドと GCC クラウドでのみ使用できます。
 
 1. 機密情報のデータベースのスキーマを XML 形式で定義します (次の例と同様)。 このスキーマ ファイルの名前を **edm.xml** にして、データベースの各列に対して構文を使用する行があるように構成します。 
 
@@ -253,7 +258,7 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
       </RulePackage>
       ```
 
-1. 次の PowerShell コマンドレットを 1 つずつ実行して、ルール パッケージをアップロードします。
+2. 次の PowerShell コマンドレットを 1 つずつ実行して、ルール パッケージをアップロードします。
 
       ```powershell
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
@@ -361,7 +366,10 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 1 台のコンピューターでハッシュ化とアップロードを行う場合は、ご利用の Microsoft 365 テナントに直接接続可能なコンピューターから行う必要があります。 そのためには、ハッシュ化のためにクリア テキストの機密データ ファイルがそのコンピューター上にある必要があります。
 
-クリア テキストの機密データ ファイルを公開したくない場合は、安全な場所にあるコンピューターでハッシュ化し、ハッシュ ファイルとソルト ファイルをご利用の Microsoft 365 テナントに直接接続可能なコンピューターにコピーしてアップロードすることができます。 このシナリオでは、両方のコンピューターに EDMUploadAgent が必要です。 
+クリア テキストの機密データ ファイルを公開したくない場合は、安全な場所にあるコンピューターでハッシュ化し、ハッシュ ファイルとソルト ファイルをご利用の Microsoft 365 テナントに直接接続可能なコンピューターにコピーしてアップロードすることができます。 このシナリオでは、両方のコンピューターに EDMUploadAgent が必要です。
+
+> [!IMPORTANT]
+> 完全一致スキーマと機密情報の種類ウィザードを使用してスキーマ ファイルおよびパターン ファイルの作成する場合、この手順のスキーマをダウンロードする *_必要があります_*。
 
 #### <a name="prerequisites"></a>前提条件
 
@@ -372,10 +380,11 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
     - このサンプルでは、csv 形式の **PatientRecords.csv** の機密アイテム ファイル
     -  出力ハッシュ ファイルとソルト ファイル
     - **edm.xml** ファイルのデータストア名 (このサンプルでは `PatientRecords`)
+- [完全一致スキーマと機密情報の種類ウィザード](sit-edm-wizard.md) を使用している場合は、ダウンロードする *_必要が あります_*。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>セキュリティ グループとユーザー アカウントをセットアップする
 
-1. 全体管理者として、[サブスクリプションの適切なリンク](#portal-links-for-your-subscription) を使用して管理センターにアクセスし、**EDM\_DataUploaders** という [セキュリティ グループを作成します](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
+1. 全体管理者として、[サブスクリプションの適切なリンク](#portal-links-for-your-subscription) を使用して管理センターにアクセスし、EDM\_DataUploaders という [セキュリティ グループを作成します](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
 
 2. **EDM\_DataUploaders** セキュリティ グループに、1 人以上のユーザーを追加します。 (これらのユーザーは機密情報のデータベースを管理します)。
 
@@ -420,6 +429,10 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 3. EDM_DataUploaders セキュリティ グループに追加された、Microsoft 365 の職場または学校のアカウントでサインインします。 ユーザー アカウントからご利用のテナント情報を抽出し、接続を行います。
 
+オプション: 完全一致スキーマと機密情報の種類ウィザードを使ってスキーマ ファイルおよびパターン ファイルを作成した場合は、コマンド プロンプト ウィンドウで次のコマンドを実行します。
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+
 4. 機密データをハッシュ化してアップロートするには、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
 `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
@@ -439,6 +452,10 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 #### <a name="separate-hash-and-upload"></a>ハッシュ化とアップロードを分離する
 
 安全な環境にあるコンピューター上でハッシュ化を実行します。
+
+オプション: 完全一致スキーマと機密情報の種類ウィザードを使ってスキーマ ファイルおよびパターン ファイルを作成した場合は、コマンド プロンプト ウィンドウで次のコマンドを実行します。
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 1. コマンド プロンプト ウィンドウで、次のコマンドを実行します。
 

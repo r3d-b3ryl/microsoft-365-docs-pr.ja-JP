@@ -15,58 +15,58 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: この記事では、Microsoft 365 の顧客キーを使用したサービスの暗号化のしくみについて説明します。
-ms.openlocfilehash: fd00b910a9a33fb792c41c7f64f9721e2b5bd20f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+description: この記事では、Microsoft 365 の顧客キーでサービスの暗号化がどのように機能するのかについて説明します。
+ms.openlocfilehash: 0008d145db81d5d6c4eb9ab89ca194b7e426d2e4
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408985"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709529"
 ---
 # <a name="service-encryption-with-customer-key"></a>カスタマー キーによるサービスの暗号化
 
-Microsoft 365 では、BitLocker および Distributed Key Manager (DKM) によって有効になる、ベースライン、ボリュームレベルの暗号化が提供されています。 Microsoft 365 は、コンテンツのためにアプリケーションレベルで暗号化の層を追加しています。 このコンテンツには、Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、Teams の各ファイルからのデータが含まれています。 この追加の暗号化層は、サービス暗号化と呼ばれます。
+Microsoft 365 は、BitLocker と Distributed Key Manager (DKM) を通じて有効にされたベースラインのボリューム レベルの暗号化を提供します。 Microsoft 365 は、コンテンツのアプリケーション レイヤーで暗号化のレイヤーを追加します。 このコンテンツには、Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、Teams ファイルのデータが含まれます。 この暗号化の追加レイヤーをサービス暗号化と呼ぶ。
 
-## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>サービス暗号化、BitLocker、および顧客キーがどのように連携するか
+## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>サービスの暗号化、BitLocker、および顧客キーの機能
 
-サービス暗号化によって、rest のコンテンツはアプリケーションレイヤーで暗号化されます。 **データは常に、BitLocker および DKM を使用して、Microsoft 365 サービスで常に暗号化され**ます。 詳細については、「セキュリティ、プライバシー、コンプライアンスに関する情報」、および「 [Exchange Online で電子メールの機密を保護する方法](exchange-online-secures-email-secrets.md)」を参照してください。 顧客キーは、承認されていないシステムまたは個人によるデータの表示に対する追加の保護を提供し、Microsoft データセンターの BitLocker ディスク暗号化を補完します。 サービス暗号化は、Microsoft の担当者が顧客データにアクセスできないようにすることを意図したものではありません。 主な目的は、お客様がルートキーを制御するための規制または法令遵守義務をサポートすることです。 お客様は、暗号化キーを使用して、電子情報開示、マルウェア対策、スパム対策、検索インデックス作成などの付加価値のあるクラウドサービスを提供するために、O365 サービスを明示的に承認します。
+サービスの暗号化により、保存中のコンテンツがサービス層で暗号化されます。 **データは常に BitLocker** と DKM を使用して Microsoft 365 サービスで暗号化されます。 詳細については、「セキュリティ、プライバシー、およびコンプライアンス情報」を参照してください。また、Exchange Online が電子メール シークレットをセキュリティで保護する [方法を参照してください](exchange-online-secures-email-secrets.md)。 顧客キーは、承認されていないシステムまたは担当者によるデータの表示に対する追加の保護を提供し、Microsoft データセンターでの BitLocker ディスク暗号化を補完します。 サービスの暗号化は、Microsoft の担当者が顧客データにアクセスすることを防ぐための機能ではありません。 主な目的は、ルート キーの制御に関する規制やコンプライアンスの義務を満たすお客様を支援する目的です。 お客様は、電子情報開示、マルウェア対策、スパム対策、検索インデックス作成など、価値の高いクラウド サービスを提供するために暗号化キーを使用する O365 サービスを明示的に承認します。
 
-顧客キーはサービス暗号化に基づいて構築されており、暗号化キーを提供および制御できます。 Microsoft 365 は、これらのキーを使用して、 [オンラインサービス用語 (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx)で説明されているように、保存したデータを暗号化します。 顧客キーは、Microsoft 365 がデータを暗号化および復号化する際に使用する暗号化キーを制御するため、コンプライアンスの義務を満たすのに役立つ。
+顧客キーは、サービスの暗号化を基に構築され、暗号化キーを提供および制御できます。 Microsoft 365 は、オンライン サービスの使用条件 (OST) に記載されているとおり、これらのキーを使用して保存データ [を暗号化します](https://www.microsoft.com/licensing/product-licensing/products.aspx)。 顧客キーは、Microsoft 365 がデータの暗号化と暗号化解除に使用する暗号化キーを制御するために、コンプライアンスの義務を果たすのに役立ちます。
   
-顧客キーは、クラウドサービスプロバイダーとの主要な手配を指定するコンプライアンス要件を満たすための組織の能力を向上させます。 Customer キーを使用すると、Microsoft 365 データ保存用のルート暗号化キーをアプリケーションレベルで提供および制御できます。 そのため、組織のキーを制御します。 サービスを終了することを決定した場合は、組織のルートキーへのアクセスを取り消します。 Microsoft 365 のすべてのサービスについて、キーへのアクセスを取り消すことが、データ削除へのパスの最初の手順です。 キーへのアクセスを取り消すことにより、データはサービスから読み取ることができなくなります。
+顧客キーは、クラウド サービス プロバイダーとの重要な取り決めを指定するコンプライアンス要件の要求を満たす組織の能力を強化します。 顧客キーを使用すると、Microsoft 365 データのルート暗号化キーをアプリケーション レベルで提供および制御できます。 その結果、組織のキーを制御できます。 サービスを終了する場合は、組織のルート キーへのアクセスを取り消します。 すべての Microsoft 365 サービスで、キーへのアクセスを取り消すのが、データ削除へのパスの最初の手順です。 キーへのアクセスを取り直すにより、データはサービスで読み取り不能になります。
 
-## <a name="customer-key-encrypts-data-at-rest-in-office-365"></a>顧客キーが Office 365 で保存されるデータを暗号化する
+## <a name="customer-key-encrypts-data-at-rest-in-office-365"></a>顧客キーは、365 年 1 月 365 日に保存Office暗号化します。
 
-指定したキーを使用すると、顧客キーが暗号化を行います。
+顧客キーは、入力したキーを使用して次の暗号化を行います。
 
 - SharePoint Online、OneDrive for Business、および Teams ファイル。
-- OneDrive for business にアップロードされたファイル。
-- 電子メールの本文のコンテンツ、予定表のエントリ、電子メールの添付ファイル内のコンテンツなどの Exchange Online メールボックスのコンテンツ。
+- OneDrive for Business にアップロードされたファイル。
+- 電子メール本文の内容、予定表のエントリ、電子メールの添付ファイル内のコンテンツを含む Exchange Online メールボックスのコンテンツ。
 - Skype for Business からのテキスト会話。
 
-現時点では、Skype 会議ブロードキャストと Skype 会議コンテンツのアップロードの暗号化キーのカスタマーコントロールは提供していません。 代わりに、このコンテンツは Office 365 の他のすべてのコンテンツと共に暗号化されます。
+現在、Skype 会議ブロードキャストと Skype 会議コンテンツのアップロードに関する暗号化キーの顧客制御は提供しません。 代わりに、このコンテンツは 365 年 1 月 365 日に他のすべてのコンテンツOfficeされます。
 
 ### <a name="customer-key-with-hybrid-deployments"></a>ハイブリッド展開での顧客キー
 
-顧客キーは、クラウドで保存されているデータのみを暗号化します。 顧客キーは、社内のメールボックスやファイルを保護するためには機能しません。 他の方法 (BitLocker など) を使用してオンプレミスのデータを暗号化することができます。
+顧客キーは、クラウド内の保存データのみを暗号化します。 顧客キーは、オンプレミスのメールボックスとファイルの保護には機能しません。 BitLocker などの別の方法を使用して、オンプレミスのデータを暗号化できます。
 
-## <a name="about-the-data-encryption-policy-dep"></a>データ暗号化ポリシーについて (DEP)
+## <a name="about-the-data-encryption-policy-dep"></a>データ暗号化ポリシー (DEP) について
 
-データ暗号化ポリシーは、提供するキーと、Microsoft によって保護された可用性キーを使用して、データを暗号化するための暗号化階層を定義します。 サービスごとに異なる PowerShell コマンドレットを使用して DEPs を作成し、アプリケーションデータを暗号化するように DEPs を割り当てます。 例:
+データ暗号化ポリシーは、ユーザーが指定した各キーと Microsoft によって保護されている可用性キーを使用してデータを暗号化する暗号化階層を定義します。 サービスごとに異なる PowerShell コマンドレットを使用して DEP を作成し、それらの DEP を割り当て、アプリケーション データを暗号化します。 例:
 
-**Exchange Online と Skype For business** テナントごとに最大 50 DEPs を作成できます。 Azure Key Vault で DEPs を顧客キーに関連付け、DEPs を個々のメールボックスに割り当てます。 メールボックスに DEP を割り当てると、次のようになります。
+**Exchange Online と Skype for Business** テナントごとに最大 50 の DEP を作成できます。 DEP を Azure Key Vault の顧客キーに関連付け、DEP を個々のメールボックスに割り当てる。 メールボックスに DEP を割り当てる場合:
 
-- メールボックスは、メールボックスの移動のためにマークされます。 Microsoft 365 の優先度に基づいて [、「microsoft 365 サービスでの移動要求](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service)」を参照してください。
+- メールボックスの移動のマークが付いている。 ここで説明する Microsoft 365 の優先事項に基づいて [、Microsoft 365](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service)サービスで要求を移動します。
 
-- 暗号化は、メールボックスが移動されている間に行われます。 メールボックスが新しい DEP で暗号化されるように72時間を許可します。 DEP を割り当てた時点から72時間が経過した後にメールボックスが暗号化されていない場合は、Microsoft にお問い合わせください。
+- 暗号化は、メールボックスの移動中に行います。 メールボックスが新しい DEP で暗号化されるのに 72 時間かかります。 DEP を割り当てた時間から 72 時間待った後にメールボックスが暗号化されない場合は、Microsoft にお問い合わせください。
 
-後で、DEP を最新の情報に更新するか、「 [Office 用の顧客キーの管理 365](customer-key-manage.md)」で説明されているように、別の dep をメールボックスに割り当てます。 各メールボックスは、DEP を割り当てるために適切なライセンスを持っている必要があります。 ライセンスの詳細については、「 [顧客キーを設定する前に](customer-key-set-up.md#before-you-set-up-customer-key)」を参照してください。
+後で、DEP を更新するか、「Office [365](customer-key-manage.md)の顧客キーの管理」の説明に従ってメールボックスに別の DEP を割り当てできます。 DEP を割り当てるには、各メールボックスに適切なライセンスが必要です。 ライセンスの詳細については、「顧客キーを設定 [する前に」を参照してください](customer-key-set-up.md#before-you-set-up-customer-key)。
 
-**SharePoint Online、OneDrive For business、Teams ファイル** 複数地域機能を使用している場合は、組織の各 geo に対して最大1つの DEP を作成できます。 地域ごとに異なる顧客キーを使用できます。 複数地域機能を使用していない場合は、テナントごとに1つの DEP のみを作成できます。 DEP を割り当てた場合、暗号化は自動的に開始されますが、完了するまでしばらく時間がかかる場合があります。 「 [Set Up Customer Key](customer-key-set-up.md)」の詳細を参照してください。
+**SharePoint Online、OneDrive for Business、Teams ファイル** 複数地域機能を使用している場合は、組織の geo ごとに最大 1 つの DEP を作成できます。 geo ごとに異なるカスタマー キーを使用できます。 複数地域機能を使用していない場合は、テナントごとに 1 つの DEP のみを作成できます。 DEP を割り当てると、暗号化は自動的に開始されますが、完了まで時間がかかる場合があります。 「顧客キーのセットアップ [」の詳細を参照してください](customer-key-set-up.md)。
 
-## <a name="leaving-the-service"></a>サービスからの脱退
+## <a name="leaving-the-service"></a>サービスを離れる
 
-顧客キーは、Microsoft 365 サービスを終了する際にキーを失効させることで、コンプライアンスの義務を満たすために役立ちます。 サービスを終了する際にキーを無効にすると、可用性キーが削除され、データの暗号化削除が発生します。 暗号化の削除は、セキュリティとコンプライアンスの両方の義務を満たすことが重要なデータ再構築のリスクを軽減します。 データ削除プロセスとキーの失効の詳細については、「 [キーを失効化し、データ削除パスの処理を開始する](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)」を参照してください。
+カスタマー キーは、Microsoft 365 サービスを離れる際にキーを取り消せという方法でコンプライアンスの義務を果たします。 サービスを離れる際にキーを取り消すと、可用性キーが削除され、データが暗号化によって削除されます。 暗号化削除は、セキュリティとコンプライアンスの両方の義務を果たす上で重要なデータの再管理のリスクを軽減します。 データの削除プロセスとキーの取り消しの詳細については、「キーの取り消し」を参照し、データ消去パス [プロセスを開始します](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)。
 
 ### <a name="encryption-ciphers-used-by-customer-key"></a>顧客キーで使用される暗号化暗号
 
@@ -74,22 +74,22 @@ Microsoft 365 では、BitLocker および Distributed Key Manager (DKM) によ�
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Exchange Online と Skype for Business のキーを暗号化するために使用される暗号化暗号
 
-![Exchange Online の顧客キーの暗号化暗号](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Exchange Online 顧客キーの暗号化暗号](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
-#### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>SharePoint Online、OneDrive for Business、Teams ファイルのキーを暗号化するために使用される暗号化暗号
+#### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>SharePoint Online、OneDrive for Business、および Teams ファイルのキーを暗号化するために使用される暗号化暗号
 
-![SharePoint Online の顧客キーの暗号化暗号](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![SharePoint Online 顧客キーの暗号化暗号](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>関連記事
 
-- [顧客キーを設定する](customer-key-set-up.md)
+- [顧客キーの設定](customer-key-set-up.md)
 
-- [顧客キーを管理する](customer-key-manage.md)
+- [顧客キーの管理](customer-key-manage.md)
 
 - [カスタマー キーまたは可用性キーをローリングまたはローテーションする](customer-key-availability-key-roll.md)
 
-- [可用性キーについて](customer-key-availability-key-understand.md)
+- [可用性キーの詳細](customer-key-availability-key-understand.md)
 
 - [カスタマー ロックボックス](customer-lockbox-requests.md)
 
-- [サービス暗号化](office-365-service-encryption.md)
+- [サービスの暗号化](office-365-service-encryption.md)
