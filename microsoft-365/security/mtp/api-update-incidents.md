@@ -1,7 +1,7 @@
 ---
 title: インシデント API の更新
 description: Microsoft 365 Defender API を使用してインシデントを更新する方法について説明します。
-keywords: update、api、incident
+keywords: 更新, api, インシデント
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,90 +19,87 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3f77980863b0c232166d736a6b557444df98c8ac
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6fc1ff730994f03aa500ad9a4559b66970e32d87
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844838"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719406"
 ---
-# <a name="update-incidents-api"></a>インシデント API の更新
+# <a name="update-incidents-api"></a>インシデント更新 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **適用対象:**
+
 - Microsoft 365 Defender
 
->[!IMPORTANT] 
->一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
+> [!IMPORTANT]
+> 一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## <a name="api-description"></a>API の説明
-既存のインシデントのプロパティを更新します。
-<br>更新可能なプロパティは、、、 ```status``` ```determination``` ```classification``` 、 ```assignedTo``` ```tags``` です。
 
+既存のインシデントのプロパティを更新します。 更新可能なプロパティは、次 ```status``` ```determination``` ```classification``` ```assignedTo``` のとおりです ```tags``` 。
 
-## <a name="limitations"></a>制限事項
-1. この API の速度制限は、1分あたり50通話、1時間あたり1500通話です。
-2. ```determination```分類が TruePositive に設定されている場合にのみ、を設定できます。
+### <a name="quotas-resource-allocation-and-other-constraints"></a>クォータ、リソース割り当て、その他の制約
 
+1. 調整しきい値に達する前に、1 分あたり最大 50 回、または 1 時間あたり 1500 回の通話を行います。
+2. このプロパティは `determination` `classification` 、TruePositive に設定されている場合にのみ設定できます。
+
+要求が調整されている場合は、応答コードを `429` 返します。 応答本文には、新しい呼び出しを開始できる時刻が示されます。
 
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法を含む詳細については、「 [Microsoft 365 Defender Api へのアクセス](api-access.md)」を参照してください。
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
-:---|:---|:---
-アプリケーション |   インシデント。すべて |    ' すべてのインシデントの読み取りと書き込み '
-委任 (職場または学校のアカウント) | 障害/書き込み | ' 読み取りおよび書き込みのインシデント '
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Microsoft 365 Defender API](api-access.md)へのアクセス」を参照してください。
 
->[!NOTE]
-> ユーザー資格情報を使用してトークンを取得する場合:
->- ユーザーはポータルでインシデントを更新する権限を持っている必要があります。
+アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+-|-|-
+アプリケーション | Incident.ReadWrite.All | すべてのインシデントの読み取りおよび書き込み
+委任 (職場または学校のアカウント) | Incident.ReadWrite | インシデントの読み取りおよび書き込み
 
+> [!NOTE]
+> ユーザー資格情報を使用してトークンを取得する場合、ユーザーはポータルでインシデントを更新するアクセス許可を持っている必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 
-```
+```HTTP
 PATCH /api/incidents/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
 名前 | 型 | 説明
-:---|:---|:---
-Authorization | String | ベアラー {token}。 **必須** 。
-Content-Type | 文字列 | application/json. **必須** 。
-
+-|-|-
+Authorization | String | ベアラー {トークン}。 **必須**。
+Content-Type | 文字列 | application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する必要のある関連フィールドの値を指定します。
-<br>要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 
-<br>最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+
+要求本文で、更新するフィールドの値を指定します。 要求本文に含まれていない既存のプロパティは、関連する値の変更のために再計算する必要がない限り、値を保持します。 最適なパフォーマンスを得る場合は、変更していない既存の値を省略する必要があります。
 
 プロパティ | 型 | 説明
-:---|:---|:---
-status | 列挙 | 通知の現在の状態を指定します。 可能な値は ```Active``` 、、、 ```Resolved``` ```Redirected``` です。
+-|-|-
+status | 列挙 | 通知の現在の状態を指定します。 使用できる値は ```Active``` 、次 ```Resolved``` のとおりです ```Redirected``` 。
 assignedTo | string | インシデントの所有者。
-classification | 列挙 | 通知の仕様。 可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。
-決定 | 列挙 | 通知の決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
-tags | 文字列リスト | インシデントタグのリスト。
-
-
+classification | 列挙 | アラートの仕様。 可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。
+判断 | 列挙 | 通知の判定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
+tags | string List | インシデント タグのリスト。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは 200 OK と、応答本文で、更新されたプロパティを持つ incident エンティティを返します。 指定した id の incident が見つからない場合は、404が見つかりません。
 
+成功した場合、このメソッドは返します `200 OK` 。 応答本文には、更新されたプロパティを持つインシデント エンティティが含まれる。 指定された ID のインシデントが見つからなかった場合、メソッドは返します `404 Not Found` 。
 
 ## <a name="example"></a>例
 
 **要求**
 
-以下は、要求の例です。
+要求の例を次に示します。
 
-```
+```HTTP
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
+
+**応答**
 
 ```json
 {
@@ -114,7 +111,11 @@ tags | 文字列リスト | インシデントタグのリスト。
 }
 ```
 
+## <a name="related-articles"></a>関連記事
 
-## <a name="related-topic"></a>関連トピック
+- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [API の制限とライセンスについて](api-terms.md)
+- [エラー コードを理解する](api-error-codes.md)
 - [インシデント API](api-incident.md)
 - [インシデントを一覧表示する](api-list-incidents.md)
+- [インシデントの概要](incidents-overview.md)

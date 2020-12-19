@@ -1,7 +1,7 @@
 ---
-title: 高度な検索 Api
-description: Microsoft 365 Defender API を使用して高度な検索クエリを実行する方法について説明します。
-keywords: 高度な検索、Api、api、MTP
+title: Microsoft 365 Defender 高度なハンティング API
+description: Microsoft 365 Defender の高度な検索 API を使用して高度な検索クエリを実行する方法について説明します。
+keywords: 高度な検索、API、api、MTP、M365 Defender、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,78 +19,89 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e7cd9192ec25e01ed06b77cb2b39357cb9df79bd
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844034"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719382"
 ---
-# <a name="advanced-hunting-apis"></a>高度な検索 Api
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender 高度なハンティング API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **適用対象:**
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft Threat Protection
 
-## <a name="limitations"></a>制限事項
-1. クエリは、過去30日間のデータに対してのみ実行できます。
-2. 結果には最大10万行が含まれます。
-3. 実行回数は、テナントによって制限されます。1分あたり最大10件の通話、1時間ごとに10分の時間、実行時間は1日に4時間。
-4. 1回の要求の最大実行時間は10分です。
-5. 429応答は、要求数または CPU によってクォータ制限値に達したことを表します。 また、429応答本文は、クォータが更新されるまでの時間も示します。 
+> [!IMPORTANT]
+> 一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+[高度な検索](advanced-hunting-overview.md)は、特別に構築されたクエリ[](advanced-hunting-query-language.md)を使用して、Microsoft 365 Defender の過去 30 日間のイベント データを調べる脅威検索ツールです。 高度な検索クエリを使用すると、異常なアクティビティの検査、脅威の検出、攻撃への対応を行います。 高度なハンティング API を使用すると、プログラムでイベント データをクエリできます。
+
+## <a name="quotas-and-resource-allocation"></a>クォータとリソース割り当て
+
+次の条件は、すべてのクエリに関連します。
+
+1. クエリは、過去 30 日間のデータを探索して返します。
+2. 結果は最大 100,000 行を返します。
+3. テナントごとに 1 分あたり最大 10 回の呼び出しを行える。
+4. テナントごとに 1 時間あたり 10 分の実行時間があります。
+5. テナントごとに 1 日の合計 4 時間の実行時間があります。
+6. 1 つの要求が 10 分を超える間実行される場合、その要求はタイム アウトし、エラーを返します。
+7. HTTP 応答コードは、送信された要求の数または割り当てられた実行時間によってクォータに達 `429` したかどうかを示します。 応答本文には、到達したクォータがリセットされるまでの時間が含まれます。
 
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法を含む詳細については、「 [Microsoft 365 Defender Api へのアクセス](api-access.md)」を参照してください。
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
-:---|:---|:---
-アプリケーション |   AdvancedHunting |  [高度なクエリを実行する]
-委任 (職場または学校のアカウント) | AdvancedHunting | [高度なクエリを実行する]
+高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Microsoft 365 Defender Protection API](api-access.md)へのアクセス」を参照してください。
+
+アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+-|-|-
+アプリケーション | AdvancedHunting.Read.All | 高度なクエリを実行する
+委任 (職場または学校のアカウント) | AdvancedHunting.Read | 高度なクエリを実行する
 
 >[!Note]
 > ユーザー資格情報を使用してトークンを取得する場合:
->- ユーザーは ' View Data ' AD の役割を持っている必要があります。
->- ユーザーはデバイスグループの設定に基づいて、デバイスへのアクセス権を持っている必要があります。
+>
+>- ユーザーは"データの表示" 役割を持ADがあります。
+>- ユーザーは、デバイス グループの設定に基づいて、デバイスにアクセスできる必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```HTTP
 POST https://api.security.microsoft.com/api/advancedhunting/run
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-ヘッダー | 値 
-:---|:---
-Authorization | ベアラー {token}。 **必須** 。
-Content-Type    | application/json
+ヘッダー | 値
+-|-
+Authorization | Bearer {token} **注: 必須**
+Content-Type | application/json
 
 ## <a name="request-body"></a>要求本文
-要求本文で、次のパラメーターを使用して JSON オブジェクトを指定します。
 
-パラメーター | 型    | 説明
-:---|:---|:---
-クエリ | テキスト |  実行するクエリを示します。 **必須** 。
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
+
+パラメーター | 型 | 説明
+-|-|-
+クエリ | テキスト | 実行するクエリ。 **注: 必須**
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは 200 OK を返し、応答本文で _Queryresponse_ オブジェクトを返します。 <br><br>
 
-Response オブジェクトは3つの部分 (プロパティ) に分かれています。<br>
-1) ```Stats``` -クエリパフォーマンス統計。<br>
-2) ```Schema``` -応答のスキーマ。各列の Name-Type のペアのリスト。 <br>
-3) ```Results``` -高度な検索イベントのリスト。
+成功した場合、このメソッドは応答本文で `200 OK` _QueryResponse_ オブジェクトを返します。
+
+応答オブジェクトには、次の 3 つのトップ レベル プロパティが含まれる。
+
+1. 統計 : クエリ パフォーマンス統計のディクショナリです。
+2. スキーマ : 応答のスキーマ、各列のName-Typeのリスト。
+3. 結果 - 高度な検索イベントの一覧。
 
 ## <a name="example"></a>例
 
-要求
+次の例では、ユーザーが以下のクエリを送信し、, を含む API 応答 `Stats` オブジェクト `Schema` を受け取ります `Results` 。
 
-以下は、要求の例です。
-
+### <a name="query"></a>クエリ
 
 ```json
 {
@@ -99,10 +110,7 @@ Response オブジェクトは3つの部分 (プロパティ) に分かれてい
 
 ```
 
-応答
-
-以下は、応答の例です。
-
+### <a name="response-object"></a>Response オブジェクト
 
 ```json
 {
@@ -164,8 +172,11 @@ Response オブジェクトは3つの部分 (プロパティ) に分かれてい
         }
     ]
 }
-
 ```
 
-## <a name="related-topic"></a>関連トピック
-- [Microsoft 365 Defender Api にアクセスする](api-access.md)
+## <a name="related-articles"></a>関連記事
+
+- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [API の制限とライセンスについて](api-terms.md)
+- [エラー コードを理解する](api-error-codes.md)
+- [高度な検出の概要](advanced-hunting-overview.md)

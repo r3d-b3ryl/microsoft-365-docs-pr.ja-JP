@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender API のインシデントリソースの種類
-description: Microsoft 365 Defender の Incident リソースタイプのメソッドとプロパティについて説明します。
-keywords: インシデント、インシデント、api
+title: Microsoft 365 Defender インシデント API とインシデント リソースの種類
+description: Microsoft 365 Defender の Incident リソースタイプのメソッドとプロパティについて説明します
+keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,45 +19,67 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 68bee647cdd5687dbaad08ce3cd01b427dabf030
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 372c939f5eed29832725e6b048735040ca7391d6
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844022"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719336"
 ---
-# <a name="incident-resource-type"></a>インシデントリソースの種類
+# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 Defender インシデント API とインシデント リソースの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **適用対象:**
+
 - Microsoft 365 Defender
 
->[!IMPORTANT] 
->一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> [!IMPORTANT]
+> 一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+インシデント [は](incidents-overview.md) 、攻撃の説明に役立つ関連するアラートのコレクションです。 組織内の異なるエンティティからのイベントは、Microsoft 365 Defender によって自動的に集計されます。 インシデント API を使用して、組織のインシデントと関連するアラートにプログラムでアクセスできます。
+
+## <a name="quotas-and-resource-allocation"></a>クォータとリソース割り当て
+
+1 分あたり最大 50 件、または 1 時間あたり 1500 件の通話を要求できます。 また、各メソッドには独自のクォータがあります。 メソッド固有のクォータの詳細については、使用する方法に関するそれぞれの記事を参照してください。
+
+HTTP 応答コードは、送信された要求の数または割り当てられた実行時間によってクォータに達 `429` したかどうかを示します。 応答本文には、到達したクォータがリセットされるまでの時間が含まれます。
+
+## <a name="permissions"></a>アクセス許可
+
+インシデント API では、そのメソッドごとに異なる種類のアクセス許可が必要です。 必要なアクセス許可の詳細については、それぞれのメソッドの記事を参照してください。
 
 ## <a name="methods"></a>メソッド
 
-メソッド |戻り値の型 |説明
-:---|:---|:---
-[インシデントを一覧表示する](api-list-incidents.md) | [インシデント](api-incident.md) リスト | インシデントの一覧を取得します。
-[インシデントを更新する](api-update-incidents.md) | [事例](api-incident.md) | 特定のインシデントを更新します。
+メソッド | 戻り値の型 | 説明
+-|-|-
+[インシデントを一覧表示する](api-list-incidents.md) | [インシデント リスト](api-incident.md) | インシデントの一覧を取得します。
+[インシデントを更新する](api-update-incidents.md) | [Incident](api-incident.md) | 特定のインシデントを更新します。
 
+## <a name="request-body-response-and-examples"></a>要求の本文、応答、および例
 
-## <a name="properties"></a>プロパティ
+要求を作成する方法や応答を解析する方法の詳細、および実際の例については、それぞれのメソッドの記事を参照してください。
 
-プロパティ |    型    |    説明
-:---|:---|:---
-インシデント識別子 d | long | インシデントの一意の ID。
-Redirectインシデント識別子 d | null 許容長 | 現在のインシデントが結合されたインシデント ID。
+## <a name="common-properties"></a>共通プロパティ
+
+プロパティ | 型 | 説明
+-|-|-
+incidentId | long | インシデントの一意の ID。
+redirectIncidentId | nullable long | 現在のインシデントがマージされたインシデント ID。
 incidentName | string | インシデントの名前。
-createdTime | DateTimeOffset | インシデントが作成された日付と時刻 (UTC)。
-lastUpdateTime | DateTimeOffset | インシデントが最後に更新された日付と時刻 (UTC)。
+createdTime | DateTimeOffset | インシデントが作成された日時 (UTC)。
+lastUpdateTime | DateTimeOffset | インシデントが最後に更新された日時 (UTC)。
 assignedTo | string | インシデントの所有者。
-severity | 列挙 | インシデントの重大度。 可能な値は ```UnSpecified``` 、、、 ```Informational``` ```Low``` 、 ```Medium``` ```High``` です。
-status | 列挙 | インシデントの現在の状態を指定します。 可能な値は ```Active``` 、、、 ```Resolved``` ```Redirected``` です。
+severity | 列挙 | インシデントの重大度。 使用できる値は ```UnSpecified``` 、 ```Informational``` 次 ```Low``` ```Medium``` のとおりです ```High``` 。
+status | 列挙 | インシデントの現在の状態を指定します。 使用できる値は ```Active``` 、次 ```Resolved``` のとおりです ```Redirected``` 。
 classification | 列挙 | インシデントの仕様。 可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。
-決定 | 列挙 | インシデントの決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
-tags | 文字列リスト | インシデントタグのリスト。
-アラート | 通知リスト | 関連する通知のリスト。 「 [List インシデント](api-list-incidents.md) API ドキュメント」の例を参照してください。
+判断 | 列挙 | インシデントの決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
+tags | string List | インシデント タグのリスト。
+アラート | アラート リスト | 関連するアラートのリスト。 インシデント一覧 API ドキュメント [の例を](api-list-incidents.md) 参照してください。
+
+## <a name="related-articles"></a>関連記事
+
+- [Microsoft 365 Defender API の概要](api-overview.md)
+- [インシデントの概要](incidents-overview.md)
+- [インシデント API を一覧表示する](api-list-incidents.md)
+- [インシデント API を更新する](api-update-incidents.md)

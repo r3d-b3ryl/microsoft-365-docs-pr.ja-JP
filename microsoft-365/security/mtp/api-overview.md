@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender Api の概要
-description: Microsoft 365 Defender で利用可能な Api について説明します。
-keywords: api、api、概要、インシデント、インシデント、脅威を探す
+title: Microsoft 365 Defender API の概要
+description: Microsoft 365 Defender で利用可能な API について説明します。
+keywords: api, apis, 概要, インシデント, インシデント, 脅威の検出, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,35 +19,46 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 75a5853e7128667420819c84fbc3c50b07d669b4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1a75a561e60c05208e8ea302505f9644ac0bc044
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845014"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719192"
 ---
-# <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender Api の概要
+# <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender API の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **適用対象:**
+
 - Microsoft 365 Defender
 
+> [!IMPORTANT]
+> 一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
->[!IMPORTANT] 
->一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+Microsoft 365 Defender は、統合対応プラットフォームの上に構築されています。
 
-Microsoft 365 Defender ソリューションは、統合対応のプラットフォームの上に構築されています。 
+Microsoft 365 Defender API を使用して、共有インシデントと高度なハンティング テーブルに基づいてワークフローを自動化します。
 
-Lop レベルの Microsoft 365 Defender Api を使用すると、共有インシデントと高度な検索テーブルに基づいてワークフローを自動化することができます。
+- **[複合インシデント キュー](api-incident.md)** - インシデント API の下で、完全な攻撃範囲と影響を受けたすべての資産をグループ化することで、重要な機能に重点を置きます。
 
-- **インシデントキューの組み合わせ** -セキュリティ担当者にとって重要なことが重視されます。 完全な攻撃の範囲と影響を受けるアセットがグループ化され、インシデント API の下で適時に表面化されるようにするために役に立ちます。
+- **[製品間](api-advanced-hunting.md)** の脅威の検出 - セキュリティ チームの組織の知識を活用して、侵害の兆候を探します。独自のカスタム クエリを作成して、複数の保護製品にわたって収集された生データをふるい分けします。
 
-- **クロス積脅威** 検索-セキュリティチームは、さまざまな保護製品によって収集された未加工のデータを使用して独自のカスタムクエリを作成することによって、侵害の兆候を探すことができます。 
+これらの Microsoft 365 Defender 固有の API と共に、他[](api-articles.md)の各セキュリティ製品は、独自の機能を活用するのに役立つ追加の API を公開します。
 
-これらの Api セットに加えて、さまざまな保護製品は、各製品の機能に基づいて改革するために役立つ追加の Api を公開しています。
+## <a name="learn-more"></a>詳細情報
 
-## <a name="related-topics"></a>関連項目
-- [Microsoft の脅威保護 Api にアクセスする](api-access.md)
-- [その他の API リソース](api-articles.md)
+| **API にアクセスする方法を理解する** |
+|-|
+| [API クォータとライセンスについて](api-terms.md) |
+| [Microsoft 365 Defender API へのアクセス](api-access.md) |
+| **アプリのビルド** |
+| ["Hello world" アプリを作成する](api-hello-world.md) |
+| [ユーザーの代わりに Microsoft 365 Defender API にアクセスするアプリを作成する](api-create-app-user-context.md) |
+| [ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する](api-create-app-web.md) |
+| [マルチテナント パートナーが Microsoft 365 Defender API にアクセスできるアプリを作成する](api-partner-access.md) |
+| **アプリのトラブルシューティングと保守** |
+| [API のエラー コードについて](api-error-codes.md) |
+| [Azure Key Vault を使用してアプリのシークレットを管理する](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [ユーザー サインイン用の OAuth 2.0 承認を実装する](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

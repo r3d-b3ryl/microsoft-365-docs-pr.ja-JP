@@ -1,7 +1,7 @@
 ---
-title: 一般的な Microsoft 365 Defender REST API のエラーコード
-description: 一般的な Microsoft 365 Defender REST API のエラーコードについて
-keywords: api、error、コード、一般的なエラー、mtp、api のエラーコード
+title: Microsoft 365 Defender REST API の一般的なエラー コード
+description: Microsoft 365 Defender REST API の一般的なエラー コードについて説明します。
+keywords: api, エラー, コード, 一般的なエラー, mtp, api エラー コード
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,65 +19,49 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0df741efb7555d587a6033acc23716e93f542d5e
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846010"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719216"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>一般的な Microsoft 365 Defender REST API のエラーコード
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Microsoft 365 Defender REST API の一般的なエラー コード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **適用対象:**
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft Threat Protection
 
-次の表に示すエラーコードは、Microsoft 365 Defender Api のいずれかの操作によって返される場合があります。
+> [!IMPORTANT]
+> 一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-エラー応答ごとにエラーメッセージが含まれています。これは、この問題を解決するのに役立ちます。
+エラー コードは、Microsoft 365 Defender API の操作によって返される場合があります。 すべてのエラー応答にはエラー メッセージが含まれるので、問題の解決に役立ちます。 表セクションのエラー メッセージ列には、いくつかのサンプル メッセージが示されています。 実際のメッセージの内容は、応答をトリガーした要因によって異なります。 可変コンテンツは、テーブル内で角かっこで示されています。
 
-このメッセージは、変更できる無料のテキストです。
+## <a name="error-codes"></a>エラー コード
 
-ページの下部に、応答の例が記載されています。
-
-エラー コード |HTTP ステータス コード |メッセージ 
-:---|:---|:---
-BadRequest | BadRequest (400) | 通常の正しくない要求エラーメッセージ。
-/エラー | BadRequest (400) | OData URI クエリが正しくありません (具体的なエラーが指定されています)。
-InvalidInput | BadRequest (400) | 無効な入力です {無効な入力} です。
+エラー コード | HTTP ステータス コード | メッセージ
+-|-|-
+BadRequest | BadRequest (400) | General Bad Request エラー メッセージ。
+ODataError | BadRequest (400) | 無効な OData URI クエリ \<the specific error is specified\> です。
+InvalidInput | BadRequest (400) | 無効な入力 \<the invalid input\> です。
 InvalidRequestBody | BadRequest (400) | 要求本文が無効です。
-InvalidHashValue | BadRequest (400) | ハッシュ値 {無効なハッシュ} が無効です。
-InvalidDomainName | BadRequest (400) | ドメイン名 {無効なドメイン} が無効です。
-InvalidIpAddress | BadRequest (400) | IP アドレス {無効な IP} が無効です。
-InvalidUrl | BadRequest (400) | URL {無効な URL} が無効です。
-MaximumBatchSizeExceeded | BadRequest (400) | 最大バッチサイズを超えています。 Received: {batch size received in received}、allowed: {batch size allowed}。
-MissingRequiredParameter | BadRequest (400) | パラメーター {不足しているパラメーター} がありません。
-OsPlatformNotSupported | BadRequest (400) | OS プラットフォーム {クライアント OS プラットフォーム} は、このアクションではサポートされていません。
-ClientVersionNotSupported | BadRequest (400) | {要求されたアクション} はクライアントバージョン {サポートされているクライアントバージョン} 以降でサポートされています。
-権限がありません (Unauthorized) | 未承認 (401) | 承認されていない (通常は無効または期限切れの承認ヘッダー)。
-禁止されています | 禁止 (403) | 禁止 (有効なトークンですが、アクションに対して十分な権限がありません)。
-DisabledFeature | 禁止 (403) | テナント機能が有効になっていません。
-DisallowedOperation | 禁止 (403) | {許可されていない操作と理由}。
-NotFound | 見つかりません (404) | 一般的なエラーメッセージが表示されません。
-ResourceNotFound | 見つかりません (404) | リソース {要求されたリソース} が見つかりませんでした。
-InternalServerError | 内部サーバーエラー (500) | (エラーメッセージが表示されない場合は、操作を再試行するか、お問い合わせください。解決しない場合)
-
-## <a name="body-parameters-are-case-sensitive"></a>本文のパラメーターでは大文字と小文字が区別される
-
-送信される本文パラメーターは、現在、大文字と小文字が区別されます。
-<br>**Invalidrequestbody** または **MissingRequiredParameter** のエラーが発生した場合は、パラメーターの大文字または小文字が正しくないことが原因である可能性があります。
-<br>API ドキュメントページを参照して、送信されたパラメーターが関連する例と一致していることを確認することをお勧めします。
-
-## <a name="correlation-request-id"></a>関連付け要求 ID
-
-各エラー応答には、追跡用の一意の ID パラメーターが含まれています。
-<br>このパラメーターのプロパティ名は "target" です。
-<br>エラーについてお問い合わせの際には、この ID を添付することで問題の根本的な原因を見つけることができます。
+InvalidHashValue | BadRequest (400) | ハッシュ値 \<the invalid hash\> が無効です。
+InvalidDomainName | BadRequest (400) | ドメイン名 \<the invalid domain\> が無効です。
+InvalidIpAddress | BadRequest (400) | IP アドレス \<the invalid IP\> が無効です。
+InvalidUrl | BadRequest (400) | URL \<the invalid URL\> が無効です。
+MaximumBatchSizeExceeded | BadRequest (400) | 最大バッチ サイズを超えました。 Received: \<batch size received\> , allowed: {batch size allowed}.
+MissingRequiredParameter | BadRequest (400) | パラメーター \<the missing parameter\> がありません。
+OsPlatformNotSupported | BadRequest (400) | このアクション \<the client OS Platform\> では、OS プラットフォームはサポートされていません。
+ClientVersionNotSupported | BadRequest (400) | \<The requested action\> はクライアント バージョン以上 \<supported client version\> でサポートされています。
+権限がありません (Unauthorized) | Unauthorized (401) | 権限がありません (Unauthorized) <br /><br />*注: 通常、無効または期限切れの承認ヘッダーが原因です。*
+禁止されています | Forbidden (403) | 禁止されています <br /><br />*注: 有効なトークンですが、アクションのアクセス許可が不十分です*。
+DisabledFeature | Forbidden (403) | テナント機能が有効になっていません。
+DisallowedOperation | Forbidden (403) | \<the disallowed operation and the reason\>.
+NotFound | Not Found (404) | General Not Found エラー メッセージ。
+ResourceNotFound | Not Found (404) | リソース \<the requested resource\> が見つかりませんでした。
+InternalServerError | 内部サーバー エラー (500) | *注: エラー メッセージが表示されない場合は、操作を再試行するか、解決されない場合は Microsoft にお問い合わせください。*
 
 ## <a name="examples"></a>例
 
@@ -91,7 +75,6 @@ InternalServerError | 内部サーバーエラー (500) | (エラーメッセー
 }
 ```
 
-
 ```json
 {
     "error": {
@@ -102,3 +85,20 @@ InternalServerError | 内部サーバーエラー (500) | (エラーメッセー
 }
 ```
 
+## <a name="body-parameters"></a>本文パラメーター
+
+> [!IMPORTANT]
+> 本文パラメーターでは大文字と小文字が区別されます。
+
+*InvalidRequestBody エラー* または *MissingRequiredParameter* エラーが発生した場合は、入力ミスが原因である可能性があります。 API ドキュメントを確認し、送信されたパラメーターが関連する例と一致する必要があります。
+
+## <a name="tracking-id"></a>追跡 ID
+
+各エラー応答には、追跡用の一意の ID パラメーターが含まれる。 このパラメーターのプロパティ名は target *です*。 エラーについてお問い合わせの場合、この ID を添付すると、問題の根本原因を見つけるのに役立ちます。
+
+## <a name="related-articles"></a>関連記事
+
+- [Microsoft 365 Defender API の概要](api-overview.md)
+- [サポートされている Microsoft 365 Defender API](api-supported.md)
+- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [API の制限とライセンスについて](api-terms.md)

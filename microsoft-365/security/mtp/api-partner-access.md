@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender Api を介したパートナーアクセス
-description: ユーザーに代わって Microsoft 365 Defender へのプログラムによるアクセスを取得するための AAD アプリケーションを作成する方法について説明します。
-keywords: パートナー、アクセス、api、マルチテナント、同意、アクセストークン、アプリ
+title: Microsoft 365 Defender API を介したパートナー アクセス
+description: ユーザーに代わって Microsoft 365 Defender にプログラムでアクセスするアプリを作成する方法について説明します。
+keywords: パートナー, アクセス, api, マルチ テナント, 同意, アクセス トークン, アプリ
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,235 +19,278 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: eb40d5d2d82f57be225515ad0aa566038397bbbd
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5de113c8f8419b3af2a287bd7ba7e41dc06b4121
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844986"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719442"
 ---
-# <a name="partner-access-through-microsoft-365-defender-apis"></a>Microsoft 365 Defender Api を介したパートナーアクセス
+# <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>パートナーが Microsoft 365 Defender API にアクセスできるアプリを作成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **適用対象:**
+
 - Microsoft 365 Defender
 
->[!IMPORTANT] 
->一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> [!IMPORTANT]
+> 一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+このページでは、複数のテナントのユーザーに代わって、Microsoft 365 Defender にプログラムでアクセスできる Azure Active Directory アプリを作成する方法について説明します。 マルチテナント アプリは、大規模なユーザー グループにサービスを提供する場合に便利です。
 
-このページでは、ユーザーの代わりに Microsoft 365 Defender へのプログラムによるアクセスを得るための AAD アプリケーションを作成する方法について説明します。
+1 人のユーザーの代わりに Microsoft 365 Defender にプログラムでアクセスする必要がある場合は、「ユーザーの代わりに [Microsoft 365 Defender API](api-create-app-user-context.md)にアクセスするアプリを作成する」を参照してください。 ユーザーが明示的に定義されていないアクセスが必要な場合 (たとえば、バックグラウンド アプリやデーモンを作成している場合)、「ユーザーなしで [Microsoft 365 Defender](api-create-app-web.md)にアクセスするアプリを作成する」を参照してください。 必要なアクセスの種類が不明な場合は、「開始する」を [参照してください](api-access.md)。
 
-Microsoft 365 Defender は、一連のプログラム Api を使用して、そのデータおよびアクションの多くを公開します。 これらの Api は、Microsoft 365 Defender の機能に基づいて作業フローとイノベーションを自動化するのに役立ちます。 API へのアクセスには、OAuth 2.0 認証が必要です。 詳細については、「 [OAuth 2.0 認証コードフロー](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)」を参照してください。
+Microsoft 365 Defender は、一連のプログラム API を通じてデータとアクションの多くを公開します。 これらの API は、ワークフローを自動化し、Microsoft 365 Defender の機能を利用するのに役立ちます。 この API アクセスには OAuth2.0 認証が必要です。 詳細については [、「OAuth 2.0 認証コード フロー」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
-一般に、Api を使用するには、次の手順を実行する必要があります。
-- **マルチテナント** AAD アプリケーションを作成します。
-- お客様のアプリケーションが必要とする Microsoft 365 Defender のリソースにアクセスするためにお客様の管理者による承認 (同意) を取得します。
-- このアプリケーションを使用してアクセストークンを取得します。
-- トークンを使用して、Microsoft 365 Defender API にアクセスします。
+一般に、これらの API を使用するには、次の手順を実行する必要があります。
 
-AAD アプリケーションを作成する方法、Microsoft 365 Defender へのアクセストークンを取得する方法、トークンを検証する方法については、以下の手順に従ってください。
+- Azure Active Directory (Azure AD) アプリケーションを作成します。
+- このアプリケーションを使用してアクセス トークンを取得します。
+- トークンを使用して Microsoft 365 Defender API にアクセスします。
 
-## <a name="create-the-multi-tenant-app"></a>マルチテナントアプリを作成する
+このアプリはマルチテナントです。ユーザーの代わりに、各[](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant)テナントからの管理者の同意も必要になります。
 
-1. **グローバル管理者** の役割を持つユーザーを使用して [Azure テナント](https://portal.azure.com)にログオンします。
+この記事では、次の方法について説明します。
 
-2. **Azure Active Directory**  >  **アプリ登録**  >  の **新しい登録** に移動します。 
+- マルチテナント **の** Azure AD アプリケーションを作成する
+- アプリケーションが必要とする Microsoft 365 Defender にアクセスするために、ユーザー管理者から承認された同意を得る。
+- Microsoft 365 Defender へのアクセス トークンを取得する
+- トークンを検証する
 
-   ![Microsoft Azure のイメージとアプリケーション登録へのナビゲーション](../../media/atp-azure-new-app2.png)
+Microsoft 365 Defender は、一連のプログラム API を通じてデータとアクションの多くを公開します。 これらの API は、作業フローを自動化し、Microsoft 365 Defender の機能に基づいて革新を行うのに役立ちます。 API アクセスには OAuth2.0 認証が必要です。 詳細については [、「OAuth 2.0 認証コード フロー」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
-3. 登録形式:
+一般に、API を使用するには、次の手順を実行する必要があります。
 
-    - アプリケーションの名前を選択します。
+- マルチテナント **の** Azure AD作成します。
+- アプリケーションが必要とする Microsoft 365 Defender リソースにアクセスするために、ユーザー管理者によって承認 (同意) されます。
+- このアプリケーションを使用してアクセス トークンを取得します。
+- トークンを使用して Microsoft 365 Defender API にアクセスします。
 
-    - サポートされているアカウントの種類-任意の組織ディレクトリ内のアカウント。
+次の手順では、マルチテナント Azure AD アプリケーションを作成し、Microsoft 365 Defender へのアクセス トークンを取得し、トークンを検証する方法について説明します。
 
-    - リダイレクト URI-種類: Web、URI: https://portal.azure.com
+## <a name="create-the-multi-tenant-app"></a>マルチテナント アプリを作成する
 
-    ![Microsoft Azure パートナーアプリケーション登録の画像](../../media/atp-api-new-app-partner.png)
+1. グローバル管理者ロール [を持](https://portal.azure.com) つユーザーとして Azure **にサインイン** します。
 
+2. Azure **Active Directory アプリの**  >  **登録新規登録**  >  **に移動します**。
 
-4. アプリケーションが Microsoft 365 Defender にアクセスできるようにして、統合を完了するために必要な最低限のアクセス許可セットを割り当てます。
+   ![Microsoft Azure の画像とアプリケーション登録へのナビゲーション](../../media/atp-azure-new-app2.png)
 
-   - アプリケーションページで、[ **API Permissions** ] [組織が使用する  >  **アクセス許可**  >  **api** の追加 > **microsoft 365 defender** ] と入力し、[ **microsoft 365 defender** ] をクリックします。
+3. 登録フォームで、次の情報を入力します。
 
-   >[!NOTE]
-   >Microsoft 365 Defender は、元のリストには表示されません。 テキストボックスに名前を記述して、表示されることを確認する必要があります。
+   - アプリケーションの名前を選択します。
+   - [ **サポートされているアカウントの種類] で**、任意の組織のディレクトリ **(任意の Azure AD ディレクトリ) の [マルチテナント] を選択します**。
+   - [リダイレクト **URI] セクションに入力** します。 **[Web] と入力し**、リダイレクト URI を次のように指定します **https://portal.azure.com** 。
 
-   ![API アクセスと API 選択の画像](../../media/apis-in-my-org-tab.PNG)
-   
-   ### <a name="request-api-permissions"></a>API アクセス許可の要求
+   フォームへの入力が完了したら、[登録] を選択 **します**。
 
-   必要なアクセス許可を確認するには、呼び出したい API の [ **Permissions** ] セクションを参照してください。 
+   ![[アプリケーションの登録] フォームの画像](../..//media/atp-api-new-app-partner.png)
 
-   次の例では、 **「すべてのインシデントを読み取る」** アクセス許可を使用します。
+4. アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択し、組織で > を使用し  >    >  **、「Microsoft Threat Protection」と** 入力して **、Microsoft Threat Protection を選択します**。 これで、アプリは Microsoft 365 Defender にアクセスできます。
 
-   [ **アプリケーションのアクセス許可** のインシデント] を選択します。  >  **すべて** > [ **アクセス許可の追加** ] をクリックします。
+   > [!TIP]
+   > *Microsoft Threat Protection* は Microsoft 365 Defender の元の名前であり、元のリストには表示されません。 表示するには、テキスト ボックスに名前を書き込む必要があります。
 
-   ![API アクセスと API 選択の画像](../../media/request-api-permissions.PNG)
+   ![API アクセス許可の選択の画像](../../media/apis-in-my-org-tab.PNG)
 
+5. アプリケーションの **アクセス許可を選択します**。 シナリオに関連するアクセス許可 **(Incident.Read.All** など) を選択し、[アクセス許可の追加 **] を選択します**。
 
-5. [ **同意を許可** する] をクリックする
+   ![API アクセスと API の選択の画像](../../media/request-api-permissions.PNG)
 
-    >[!NOTE]
-    >アクセス許可を追加するたびに、新しいアクセス許可を有効にするには、[ **同意** を得る] をクリックする必要があります。
+    > [!NOTE]
+    > シナリオに関連するアクセス許可を選択する必要があります。 *すべてのインシデントの読み取り* は単なる例です。 必要なアクセス許可を確認するには、呼び出す API の **[** アクセス許可] セクションを参照してください。
+    >
+    > たとえば、高度な [クエリを実行するには、[](api-advanced-hunting.md)高度なクエリの実行] 権限を選択します。デバイス [を分離するには、[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)コンピューターの分離] アクセス許可を選択します。
 
-    ![許可権限の画像](../../media/grant-consent.PNG)
+6. [管理者 **の同意を付与する] を選択します**。 アクセス許可を追加する度に、そのアクセス許可を有効にするための **管理者** の同意を付与するを選択する必要があります。
 
-6. アプリケーションにシークレットを追加します。
+    ![アクセス許可の付与の画像](../../media/grant-consent.PNG)
 
-    - [ **証明書 & シークレット** ] をクリックし、シークレットに説明を追加して、[ **追加** ] をクリックします。
+7. アプリケーションにシークレットを追加するには、[証明書とシークレット&し、シークレットに説明を追加して、[追加] を選択 **します**。
 
-    >[!IMPORTANT]
-    > [ **追加** ] を選択した後、 **生成されたシークレット値をコピー** します。 退出後に取得することはできません。
+    > [!TIP]
+    > [追加] を **選択した後**、生成 **されたシークレットの値をコピーします**。 退出後にシークレット値を取得できない。
 
-    ![アプリキーを作成する画像](../../media/webapp-create-key2.png)
+    ![アプリ キーの作成の画像](../../media/webapp-create-key2.png)
 
-7. アプリケーション ID を書き留めておきます。
+8. アプリケーション ID とテナント ID を安全な場所に記録します。 アプリケーション ページの [概要] **に一** 覧表示されます。
 
-   - アプリケーションページで、[ **概要** ] に移動し、次の内容をコピーします。
+   ![作成されたアプリ ID の画像](../../media/app-and-tenant-ids.png)
 
-   ![作成されたアプリ id の画像](../../media/app-id.png)
+9. ユーザーのテナントにアプリケーションを追加します。
 
-8. お客様のテナントにアプリケーションを追加します。
+   アプリケーションはユーザーの代わりに Microsoft 365 Defender とやり取りを行うので、そのアプリケーションを使用する予定のすべてのテナントに対して承認が必要です。
 
-    アプリケーションは、使用する予定の各顧客テナントで承認される必要があります。 これは、アプリケーションがお客様の代わりに Microsoft 365 Defender アプリケーションと対話するためです。
+   ユーザー **のテナント** のグローバル管理者は、同意リンクを表示してアプリケーションを承認する必要があります。
 
-    お客様のテナントの **グローバル管理者** を持つユーザーは、同意リンクをクリックして、アプリケーションを承認する必要があります。
+   同意リンクの形式は次の形式です。
 
-    同意リンクの形式は次のとおりです。
+   ```HTTP
+   https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
+   ```
 
-    ```
-    https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
-    ```
+   数字は `00000000-0000-0000-0000-000000000000` アプリケーション ID に置き換える必要があります。
 
-    00000000-0000-0000-0000-000000000000 は、アプリケーション ID に置き換える必要があります。
+   同意リンクをクリックした後、ユーザーのテナントのグローバル管理者でサインインし、アプリケーションに同意します。
 
-    同意リンクをクリックした後、お客様のテナントの全体管理者にログインして、アプリケーションに同意します。
+   ![同意の画像](../../media/app-consent-partner.png)
 
-    ![同意の画像](../../media/app-consent-partner.png)
+   また、テナント ID をユーザーに確認する必要があります。 テナント ID は、アクセス トークンを取得するために使用される識別子の 1 つです。
 
-    また、お客様にテナント ID を要求して、トークンを取得するときに使用するために保存する必要があります。
-
-- **完成です！** アプリケーションが正常に登録されました。 
+- **完成です！** アプリケーションが正常に登録されました。
 - トークンの取得と検証については、以下の例を参照してください。
 
-## <a name="get-an-access-token-examples"></a>アクセストークンの例を取得します。
+## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
->[!NOTE]
-> お客様の代わりにアクセストークンを取得するには、次のトークンの取得でお客様のテナント ID を使用します。
+Azure AD トークンの詳細については [、Azure](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)ADしてください。
 
-<br>AAD トークンの詳細については、「 [aad チュートリアル](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)」を参照してください。
+> [!IMPORTANT]
+> このセクションの例では、テスト目的でシークレット値を貼り付ける方法を推奨しますが、実稼働環境で実行されているアプリケーションにシークレットをハードコードし込む必要があります。 サード パーティは、シークレットを使用してリソースにアクセスできます。 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates)を使用して、アプリのシークレットをセキュリティで保護することができます。 アプリを保護する方法の実用的な例については [、「Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)を使用してサーバー アプリのシークレットを管理する」を参照してください。
 
-### <a name="using-powershell"></a>PowerShell の使用
+> [!TIP]
+> 次の例では、ユーザーのテナント ID を使用して、スクリプトが機能しているのをテストします。
 
-```
-# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
-# Paste below your Tenant ID, App ID and App Secret (App key).
+### <a name="get-an-access-token-using-powershell"></a>PowerShell を使用してアクセス トークンを取得する
 
-$tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your Application ID here
-$appSecret = '' ### Paste your Application key here
+```PowerShell
+# This code gets the application context token and saves it to a file named "Latest-token.txt" under the current directory.
+
+$tenantId = '' # Paste your directory (tenant) ID here
+$clientId = '' # Paste your application (client) ID here
+$appSecret = '' # Paste your own app secret here to test, then store it in a safe place!
 
 $resourceAppIdUri = 'https://api.security.microsoft.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+
 $authBody = [Ordered] @{
-    resource = "$resourceAppIdUri"
-    client_id = "$appId"
-    client_secret = "$appSecret"
+    resource = $resourceAppIdUri
+    client_id = $clientId
+    client_secret = $appSecret
     grant_type = 'client_credentials'
 }
+
 $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
 $token = $authResponse.access_token
+
 Out-File -FilePath "./Latest-token.txt" -InputObject $token
+
 return $token
 ```
 
-### <a name="using-c"></a>C# を使用する場合:
+### <a name="get-an-access-token-using-c"></a>C を使用してアクセス トークンを取得する\#
 
->次のコードは、Nuget の Microsoft という id を使用してテストされています。 ActiveDirectory
+> [!NOTE]
+> 次のコードは、Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8 でテストされました。
 
-- 新しいコンソールアプリケーションを作成する
-- Nuget[クライアント](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)をインストールします。
-- を使用して以下を追加します
+1. 新しいコンソール アプリケーションを作成します。
+1. NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory をインストールします](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)。
+1. 次の行を追加します。
 
-    ```
+    ```C#
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- 以下のコードをアプリケーションにコピーまたは貼り付けます (3 つの変数を更新してください ```tenantId, appId, appSecret``` )。
+1. 次のコードをコピーしてアプリに貼り付けます (3 つの変数 ( , , ) を更新することを `tenantId` 忘 `clientId` れないでください `appSecret` 。
 
-    ```
-    string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
-    string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    ```C#
+    string tenantId = ""; // Paste your directory (tenant) ID here
+    string clientId = ""; // Paste your application (client) ID here
+    string appSecret = ""; // Paste your own app secret here to test, then store it in a safe place, such as the Azure Key Vault!
 
     const string authority = "https://login.windows.net";
-    const string mtpResourceId = "https://api.security.microsoft.com";
+    const string wdatpResourceId = "https://api.security.microsoft.com";
 
     AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(mtpResourceId, clientCredential).GetAwaiter().GetResult();
+    ClientCredential clientCredential = new ClientCredential(clientId, appSecret);
+    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
     ```
 
+### <a name="get-an-access-token-using-python"></a>Python を使用してアクセス トークンを取得する
 
+```Python
+import json
+import urllib.request
+import urllib.parse
 
-### <a name="using-curl"></a>Curl の使用
+tenantId = '' # Paste your directory (tenant) ID here
+clientId = '' # Paste your application (client) ID here
+appSecret = '' # Paste your own app secret here to test, then store it in a safe place, such as the Azure Key Vault!
+
+url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
+
+resourceAppIdUri = 'https://api.securitycenter.windows.com'
+
+body = {
+    'resource' : resourceAppIdUri,
+    'client_id' : clientId,
+    'client_secret' : appSecret,
+    'grant_type' : 'client_credentials'
+}
+
+data = urllib.parse.urlencode(body).encode("utf-8")
+
+req = urllib.request.Request(url, data)
+response = urllib.request.urlopen(req)
+jsonResponse = json.loads(response.read())
+aadToken = jsonResponse["access_token"]
+```
+
+### <a name="get-an-access-token-using-curl"></a>レジストリを使用してアクセス トークンを取得する
 
 > [!NOTE]
-> 次の手順では、Windows の Curl がコンピューターに既にインストールされています。
+> Windows 10 バージョン 1803 以降には、Windows 10 がプレインストールされています。 他のバージョンの Windows では、公式 Web サイトから直接ツールをダウンロード [してインストールします](https://curl.haxx.se/windows/)。
 
-- コマンドウィンドウを開く
-- Azure アプリケーション ID に CLIENT_ID を設定する
-- Azure アプリケーションシークレットに CLIENT_SECRET を設定する
-- アプリケーションを使用して Microsoft 365 Defender アプリケーションにアクセスする必要があるお客様の Azure テナント ID に TENANT_ID を設定します。
-- 次のコマンドを実行します。
+1. コマンド プロンプトを開き、Azure CLIENT_ID ID に設定します。
+1. Azure CLIENT_SECRETシークレットに設定します。
+1. アプリTENANT_ID使用して Microsoft 365 Defender にアクセスするユーザーの Azure テナント ID に設定します。
+1. 次のコマンドを実行します。
 
+```bash
+curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://api.security.microsoft.com.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
-```
 
-次の形式の応答が得られます。
+正常な応答は次のように表示されます。
 
-```
+```bash
 {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
 ```
 
 ## <a name="validate-the-token"></a>トークンを検証する
 
-正しいトークンを取得していることを確認するために、正当性チェックを行います。
+1. トークンをコピーして JSON Web トークン検証 Web サイト [(JWT)](https://jwt.ms) に貼り付け、デコードします。
+1. デコードされたトークン内 *のロール* クレームに必要なアクセス許可が含まれている必要があります。
 
-- 前の手順で取得したトークンにコピー/貼り [付けして](https://jwt.ms) 、デコードします。
-- 必要なアクセス許可を持つ ' roles ' クレームを取得することを確認する
-- 次のスクリーンショットでは、Microsoft 365 Defender に対して複数のアクセス許可を持つアプリケーションから取得したデコードされたトークンを確認できます。
-- "Tid" クレームは、トークンが属するテナント ID です。
+次の図では、アプリから取得したデコードされたトークンと、アクセス許可 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` を ```AdvancedHunting.Read.All``` 確認できます。
 
-![トークン検証のイメージ](../../media/webapp-decoded-token.png)
+![トークン検証の画像](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-microsoft-365-defender-api"></a>トークンを使用して Microsoft 365 Defender API にアクセスする
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>トークンを使用して Microsoft 365 Defender API にアクセスする
 
-- 使用する API を選択します。詳細については、「[サポートされる Microsoft 365 Defender api](api-supported.md) 」を参照してください。
-- "ベアラー {token}" に送信する Http 要求で承認ヘッダーを設定する (ベアラーが認証スキームである)
-- トークンの有効期限は1時間です (同じトークンを使用して、さらに1つの要求を送信できます)。
+1. 使用する API (インシデントまたは高度な検索) を選択します。 詳細については、「サポートされている [Microsoft 365 Defender API」を参照してください](api-supported.md)。
+2. 送信する http 要求で、承認ヘッダーを 、承認スキームである `"Bearer" <token>` *Bearer、* 検証済みトークンであるトークンに設定します。
+3. トークンは 1 時間以内に期限切れになります。 この間、同じトークンを使用して複数の要求を送信できます。
 
-- **C# を使用して** 、インシデントのリストを取得するための要求を送信する例 
-    ```
-    var httpClient = new HttpClient();
+次の例は、C# を使用してインシデントの一覧を取得する要求を送信 **する方法を示しています**。
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
+```C#
+   var httpClient = new HttpClient();
+   var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
 
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+   request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+   var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+```
 
-    // Do something useful with the response
-    ```
+## <a name="related-articles"></a>関連記事
 
-## <a name="related-topics"></a>関連項目 
-
-- [Microsoft 365 Defender Api にアクセスする](api-access.md)
-- [アプリケーションコンテキストを使用して Microsoft 365 Defender にアクセスする](api-create-app-web.md)
-- [ユーザーコンテキストを使用して Microsoft 365 Defender にアクセスする](api-create-app-user-context.md)
+- [Microsoft 365 Defender API の概要](api-overview.md)
+- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- ["Hello world" アプリケーションを作成する](api-hello-world.md)
+- [ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する](api-create-app-web.md)
+- [ユーザーの代わりに Microsoft 365 Defender API にアクセスするアプリを作成する](api-create-app-user-context.md)
+- [API の制限とライセンスについて](api-terms.md)
+- [エラー コードを理解する](api-error-codes.md)
+- [Azure Key Vault を使用してサーバー アプリのシークレットを管理する](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [ユーザー サインインと API アクセスの OAuth 2.0 承認](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
