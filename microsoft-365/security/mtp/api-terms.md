@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender Api のライセンスと使用条件
-description: Microsoft 365 Defender のライセンスと Api の使用条件の説明
-keywords: api、api、ライセンス、使用条件、api、法律、通知、倫理規定
+title: Microsoft 365 Defender API のライセンスと使用条件
+description: Microsoft 365 Defender の API のライセンスと使用条件の説明
+keywords: api, apis, ライセンス, 条項, api, 法律, 通知, 実施基準
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,40 +19,60 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e88b59ea28f9e71c677c25d95edc2f91cc2e56d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: d9b3c48e4b9e89ef7648086b05c9fdd9f078f51e
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844898"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719300"
 ---
-#  <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a><span data-ttu-id="9776e-104">Microsoft 365 Defender Api のライセンスと使用条件</span><span class="sxs-lookup"><span data-stu-id="9776e-104">Microsoft 365 Defender APIs license and terms of use</span></span>
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a><span data-ttu-id="a6e3c-104">Microsoft 365 Defender API のライセンスと使用条件</span><span class="sxs-lookup"><span data-stu-id="a6e3c-104">Microsoft 365 Defender APIs license and terms of use</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="9776e-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="9776e-105">**Applies to:**</span></span>
-- <span data-ttu-id="9776e-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9776e-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="a6e3c-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="a6e3c-105">**Applies to:**</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="9776e-107">一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="9776e-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="9776e-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="9776e-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+- <span data-ttu-id="a6e3c-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a6e3c-106">Microsoft 365 Defender</span></span>
 
+> [!IMPORTANT]
+> <span data-ttu-id="a6e3c-107">一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="a6e3c-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="a6e3c-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
-## <a name="apis"></a><span data-ttu-id="9776e-109">API</span><span class="sxs-lookup"><span data-stu-id="9776e-109">APIs</span></span>
+## <a name="official-terms"></a><span data-ttu-id="a6e3c-109">公式の用語</span><span class="sxs-lookup"><span data-stu-id="a6e3c-109">Official terms</span></span>
 
- <span data-ttu-id="9776e-110">Microsoft 365 Defender Api は、 [MICROSOFT API のライセンスと使用条件](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)によって制御されます。</span><span class="sxs-lookup"><span data-stu-id="9776e-110">Microsoft 365 Defender APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).</span></span>
+<span data-ttu-id="a6e3c-110">Microsoft 365 Defender API は、Microsoft API のライセンスと使用条件 [によって管理されます](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-110">Microsoft 365 Defender APIs are governed by the [Microsoft APIs license and terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).</span></span>
 
-### <a name="throttling-limits"></a><span data-ttu-id="9776e-111">制限の調整</span><span class="sxs-lookup"><span data-stu-id="9776e-111">Throttling limits</span></span>
+## <a name="legal-notices"></a><span data-ttu-id="a6e3c-111">法的通知</span><span class="sxs-lookup"><span data-stu-id="a6e3c-111">Legal Notices</span></span>
 
-<span data-ttu-id="9776e-112">各 API には、独自の調整制限があります。</span><span class="sxs-lookup"><span data-stu-id="9776e-112">Each API has its own throttling limits.</span></span><br>
-<span data-ttu-id="9776e-113">時間単位および分単位の調整制限があります。</span><span class="sxs-lookup"><span data-stu-id="9776e-113">There are throttling limits by hour and by minute.</span></span><br>
-<span data-ttu-id="9776e-114">たとえば、インシデント API の調整制限は、1分あたり50通話、1時間あたり1500です。</span><span class="sxs-lookup"><span data-stu-id="9776e-114">For instance, the throttling limits of the Incidents API are: 50 calls per minute and 1500 per hour.</span></span><br>
-<span data-ttu-id="9776e-115">調整の場合、HTTP 応答状態コードは429になります。</span><span class="sxs-lookup"><span data-stu-id="9776e-115">The HTTP response status code in case of throttling will be 429.</span></span>
+<span data-ttu-id="a6e3c-112">Microsoft およびすべての投稿者は、クリエイティブ Commons Attribution 4.0 International Public License の下にある Microsoft ドキュメントおよびこのリポジトリ内のその他のコンテンツに対するライセンスを付与します。 [](https://github.com/MicrosoftDocs/microsoft-365-docs)</span><span class="sxs-lookup"><span data-stu-id="a6e3c-112">Microsoft and any contributors grant you a license to the Microsoft documentation and other content in [this repository](https://github.com/MicrosoftDocs/microsoft-365-docs), under the Creative Commons Attribution 4.0 International Public License.</span></span> <span data-ttu-id="a6e3c-113">詳細については [、LICENSE](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE) ファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-113">For more information, see the [LICENSE](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE) file.</span></span>
 
+<span data-ttu-id="a6e3c-114">ドキュメントで参照されている Microsoft、Windows、Microsoft Azure、およびその他の Microsoft 製品およびサービスは、米国およびその他の国における Microsoft の商標または登録商標である場合があります。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-114">Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.</span></span>
 
-## <a name="legal-notices"></a><span data-ttu-id="9776e-116">法的通知</span><span class="sxs-lookup"><span data-stu-id="9776e-116">Legal Notices</span></span>
+<span data-ttu-id="a6e3c-115">このプロジェクトのライセンスは、Microsoft の名前、ロゴ、または商標を使用する権利を付与しません。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-115">The licenses for this project don't grant you rights to use any Microsoft names, logos, or trademarks.</span></span> <span data-ttu-id="a6e3c-116">Microsoft の一般的な商標ガイドラインは [、Microsoft 商標に記載されています](https://go.microsoft.com/fwlink/?LinkID=254653)。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-116">Microsoft's general trademark guidelines can be found at [Microsoft Trademarks](https://go.microsoft.com/fwlink/?LinkID=254653).</span></span>
 
-<span data-ttu-id="9776e-117">Microsoft およびその他の投稿者は、Creative Commons 属性4.0 国際パブリックライセンスの下にある、このリポジトリ内の Microsoft ドキュメントおよびその他のコンテンツに対するライセンスを付与します。ライセンスファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="9776e-117">Microsoft and any contributors grant you a license to the Microsoft documentation and other content in this repository under the Creative Commons Attribution 4.0 International Public License, see the LICENSE file.</span></span>
+<span data-ttu-id="a6e3c-117">プライバシーに関する情報については [、Microsoft のプライバシーに関するサイトをご覧ください](https://privacy.microsoft.com)。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-117">Privacy information can be found at [Privacy at Microsoft](https://privacy.microsoft.com).</span></span>
 
-<span data-ttu-id="9776e-118">このドキュメントで参照されている microsoft、Windows、Microsoft Azure およびその他の Microsoft 製品およびサービスには、米国およびその他の国における登録商標または Microsoft の登録商標のいずれかが含まれている場合があります。</span><span class="sxs-lookup"><span data-stu-id="9776e-118">Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.</span></span> <span data-ttu-id="9776e-119">このプロジェクトのライセンスでは、Microsoft の名前、ロゴ、商標を使用する権限が付与されることはありません。</span><span class="sxs-lookup"><span data-stu-id="9776e-119">The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.</span></span> <span data-ttu-id="9776e-120">Microsoft の商標に関する一般的なガイドラインは、にあり https://go.microsoft.com/fwlink/?LinkID=254653 ます。</span><span class="sxs-lookup"><span data-stu-id="9776e-120">Microsoft's general trademark guidelines can be found at https://go.microsoft.com/fwlink/?LinkID=254653.</span></span>
+<span data-ttu-id="a6e3c-118">Microsoft および投稿者は、その他すべての権利を、意味、ストップスペル、その他の方法で、それぞれの著作権、特許、または商標の下で、すべて予約します。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-118">Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents, or trademarks, whether by implication, estoppel or otherwise.</span></span>
 
-<span data-ttu-id="9776e-121">プライバシー情報については、Microsoft とその他のすべての投稿者が、それぞれの著作権、特許、または商標、禁反言、またはその他のいずれかに https://privacy.microsoft.com/en-us/ よって、その他すべての権利を留保します。</span><span class="sxs-lookup"><span data-stu-id="9776e-121">Privacy information can be found at https://privacy.microsoft.com/en-us/ Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents, or trademarks, whether by implication, estoppel or otherwise.</span></span>
+## <a name="other-restrictions"></a><span data-ttu-id="a6e3c-119">その他の制限</span><span class="sxs-lookup"><span data-stu-id="a6e3c-119">Other restrictions</span></span>
+
+<span data-ttu-id="a6e3c-120">高度な検索 API[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations)には、返される結果の数と照会できるデータにいくつかの制限があります。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-120">The advanced hunting API has some [limitations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations) on the number of results returned, and the data that can be queried.</span></span>
+
+1. <span data-ttu-id="a6e3c-121">過去 30 日間のデータのみをクエリできます。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-121">You can only query data from the past 30 days.</span></span>
+1. <span data-ttu-id="a6e3c-122">結果には、最大 100,000 行が含まれます。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-122">The results will include a maximum of 100,000 rows.</span></span>
+
+### <a name="quotas-and-resource-allocation"></a><span data-ttu-id="a6e3c-123">クォータとリソース割り当て</span><span class="sxs-lookup"><span data-stu-id="a6e3c-123">Quotas and resource allocation</span></span>
+
+<span data-ttu-id="a6e3c-124">Microsoft 365 Defender API には調整しきい値があります。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-124">The Microsoft 365 Defender APIs have throttling thresholds.</span></span>
+
+- <span data-ttu-id="a6e3c-125">**インシデント API**: 1 分あたり最大 50 回の呼び出し、または 1 時間あたり 1500 回の呼び出し。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-125">**Incidents API**: Up to 50 calls per minute or 1500 calls per hour.</span></span>
+- <span data-ttu-id="a6e3c-126">**高度な検索 API**: 1 分あたり最大 15 回の呼び出し、1 時間あたり 10 分の実行時間、1 日あたり 4 時間の実行時間。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-126">**Advanced Hunting API**: Up to 15 calls per minute, 10 minutes of running time per hour, and 4 hours of running time per day.</span></span>
+
+<span data-ttu-id="a6e3c-127">調整が次であることを示す HTTP 応答状態コード `429` 。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-127">The HTTP response status code indicating throttling is `429`.</span></span>
+
+<span data-ttu-id="a6e3c-128">要求が調整されている場合、応答本文には、要求を再び開始できる時間が示されます。</span><span class="sxs-lookup"><span data-stu-id="a6e3c-128">If your request has been throttled, the response body will indicate the time when you can start making requests again.</span></span>
+
+## <a name="related-articles"></a><span data-ttu-id="a6e3c-129">関連記事</span><span class="sxs-lookup"><span data-stu-id="a6e3c-129">Related articles</span></span>
+
+- [<span data-ttu-id="a6e3c-130">Microsoft 365 Defender API の概要</span><span class="sxs-lookup"><span data-stu-id="a6e3c-130">Microsoft 365 Defender APIs overview</span></span>](api-overview.md)
+- [<span data-ttu-id="a6e3c-131">サポートされている Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="a6e3c-131">Supported Microsoft 365 Defender APIs</span></span>](api-supported.md)
+- [<span data-ttu-id="a6e3c-132">Microsoft 365 Defender API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="a6e3c-132">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)

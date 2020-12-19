@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender REST API の Hello World
-description: アプリを作成し、トークンを使用して Microsoft 365 Defender Api にアクセスする方法について説明します。
-keywords: アプリ、トークン、アクセス、aad、アプリ、アプリケーションの登録、powershell、スクリプト、グローバル管理者、アクセス許可
+description: アプリを作成し、トークンを使用して Microsoft 365 Defender API にアクセスする方法について説明します。
+keywords: アプリ, トークン, アクセス, aad, アプリ, アプリケーションの登録, powershell, スクリプト, グローバル管理者, アクセス許可, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,175 +19,162 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bd4f7e5485d67cf74477900ae2cc5c77f1a6ee41
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b36a6acca5880a455a66b03b5355cdf1fb85b29b
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844046"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719312"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a><span data-ttu-id="69a25-104">Microsoft 365 Defender REST API の Hello World</span><span class="sxs-lookup"><span data-stu-id="69a25-104">Hello World for Microsoft 365 Defender REST API</span></span> 
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a><span data-ttu-id="cf45d-104">Microsoft 365 Defender REST API の Hello World</span><span class="sxs-lookup"><span data-stu-id="cf45d-104">Hello World for Microsoft 365 Defender REST API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+<span data-ttu-id="cf45d-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="cf45d-105">**Applies to:**</span></span>
 
-<span data-ttu-id="69a25-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="69a25-105">**Applies to:**</span></span>
-- <span data-ttu-id="69a25-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="69a25-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="cf45d-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="cf45d-106">Microsoft 365 Defender</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="69a25-107">一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="69a25-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="69a25-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="69a25-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="cf45d-107">一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="cf45d-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="cf45d-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="cf45d-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
+## <a name="get-incidents-using-a-simple-powershell-script"></a><span data-ttu-id="cf45d-109">単純な PowerShell スクリプトを使用してインシデントを取得する</span><span class="sxs-lookup"><span data-stu-id="cf45d-109">Get incidents using a simple PowerShell script</span></span>
 
-## <a name="get-incidents-using-a-simple-powershell-script"></a><span data-ttu-id="69a25-109">簡単な PowerShell スクリプトを使用してインシデントを取得する</span><span class="sxs-lookup"><span data-stu-id="69a25-109">Get incidents using a simple PowerShell script</span></span>
+<span data-ttu-id="cf45d-110">このプロジェクトを完了するには、5 ~ 10 分かかります。</span><span class="sxs-lookup"><span data-stu-id="cf45d-110">It should take 5 to 10 minutes to complete this project.</span></span> <span data-ttu-id="cf45d-111">この時間の見積もりには、アプリケーションの登録と、PowerShell サンプル スクリプトからのコードの適用が含まれます。</span><span class="sxs-lookup"><span data-stu-id="cf45d-111">This time estimate includes registering the application, and applying the code from the PowerShell sample script.</span></span>
 
-### <a name="how-long-it-takes-to-go-through-this-example"></a><span data-ttu-id="69a25-110">この例では、どのくらいの時間がかかりますか?</span><span class="sxs-lookup"><span data-stu-id="69a25-110">How long it takes to go through this example?</span></span>
-<span data-ttu-id="69a25-111">次の2つの手順では、5分で完了します。</span><span class="sxs-lookup"><span data-stu-id="69a25-111">It only takes 5 minutes done in two steps:</span></span>
-- <span data-ttu-id="69a25-112">アプリケーションの登録</span><span class="sxs-lookup"><span data-stu-id="69a25-112">Application registration</span></span>
-- <span data-ttu-id="69a25-113">使用例: 短い PowerShell スクリプトのコピー/貼り付けのみが必要です</span><span class="sxs-lookup"><span data-stu-id="69a25-113">Use examples: only requires copy/paste of a short PowerShell script</span></span>
+### <a name="register-an-app-in-azure-active-directory"></a><span data-ttu-id="cf45d-112">Azure Active Directory にアプリを登録する</span><span class="sxs-lookup"><span data-stu-id="cf45d-112">Register an app in Azure Active Directory</span></span>
 
-### <a name="do-i-need-a-permission-to-connect"></a><span data-ttu-id="69a25-114">接続するためのアクセス許可が必要ですか。</span><span class="sxs-lookup"><span data-stu-id="69a25-114">Do I need a permission to connect?</span></span>
-<span data-ttu-id="69a25-115">アプリケーション登録ステージでは、Azure Active Directory (Azure AD) テナントに **グローバル管理者** ロールが必要です。</span><span class="sxs-lookup"><span data-stu-id="69a25-115">For the Application registration stage, you must have a **Global administrator** role in your Azure Active Directory (Azure AD) tenant.</span></span>
+1. <span data-ttu-id="cf45d-113">グローバル管理者ロール [を持](https://portal.azure.com) つユーザーとして Azure **にサインイン** します。</span><span class="sxs-lookup"><span data-stu-id="cf45d-113">Sign in to [Azure](https://portal.azure.com) as a user with the **Global administrator** role.</span></span>
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a><span data-ttu-id="69a25-116">手順 1-Azure Active Directory でアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="69a25-116">Step 1 - Create an App in Azure Active Directory</span></span>
+2. <span data-ttu-id="cf45d-114">Azure **Active Directory アプリの**  >  **登録の新規登録**  >  **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="cf45d-114">Navigate to **Azure Active Directory** > **App registrations** > **New registration**.</span></span>
 
-1. <span data-ttu-id="69a25-117">**グローバル管理者** ユーザーと共に [Azure](https://portal.azure.com)にログオンします。</span><span class="sxs-lookup"><span data-stu-id="69a25-117">Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.</span></span>
+   ![Microsoft Azure の画像とアプリケーション登録へのナビゲーション](../../media/atp-azure-new-app2.png)
 
-2. <span data-ttu-id="69a25-118">**Azure Active Directory**  >  **アプリ登録**  >  の **新しい登録** に移動します。</span><span class="sxs-lookup"><span data-stu-id="69a25-118">Navigate to **Azure Active Directory** > **App registrations** > **New registration**.</span></span> 
+3. <span data-ttu-id="cf45d-116">登録フォームで、アプリケーションの名前を選択し、[登録] を選択 **します**。</span><span class="sxs-lookup"><span data-stu-id="cf45d-116">In the registration form, choose a name for your application, then select **Register**.</span></span> <span data-ttu-id="cf45d-117">リダイレクト URI の選択はオプションです。</span><span class="sxs-lookup"><span data-stu-id="cf45d-117">Selecting a redirect URI is optional.</span></span> <span data-ttu-id="cf45d-118">この例を完了するために必要な手順は不要です。</span><span class="sxs-lookup"><span data-stu-id="cf45d-118">You won't need one to complete this example.</span></span>
 
-   ![Microsoft Azure のイメージとアプリケーション登録へのナビゲーション](../../media/atp-azure-new-app2.png)
+4. <span data-ttu-id="cf45d-119">アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択し、組織で > を使用し  >    >  **、「Microsoft Threat Protection」と** 入力して **、Microsoft Threat Protection を選択します**。</span><span class="sxs-lookup"><span data-stu-id="cf45d-119">On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**.</span></span> <span data-ttu-id="cf45d-120">これで、アプリは Microsoft 365 Defender にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="cf45d-120">Your app can now access Microsoft 365 Defender.</span></span>
 
-3. <span data-ttu-id="69a25-120">登録フォームで、アプリケーションの名前を選択し、[ **登録** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="69a25-120">In the registration form, choose a name for your application and then select **Register**.</span></span>
+   > [!TIP]
+   > <span data-ttu-id="cf45d-121">*Microsoft Threat Protection* は Microsoft 365 Defender の元の名前であり、元のリストには表示されません。</span><span class="sxs-lookup"><span data-stu-id="cf45d-121">*Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list.</span></span> <span data-ttu-id="cf45d-122">テキスト ボックスが表示されるのを確認するには、テキスト ボックスに名前の書き込みを開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf45d-122">You need to start writing its name in the text box to see it appear.</span></span>
+   <span data-ttu-id="cf45d-123">![API アクセス許可の選択の画像](../../media/apis-in-my-org-tab.PNG)</span><span class="sxs-lookup"><span data-stu-id="cf45d-123">![Image of API permission selection](../../media/apis-in-my-org-tab.PNG)</span></span>
 
-4. <span data-ttu-id="69a25-121">アプリケーションがエンドポイントの Microsoft Defender にアクセスして、それを **すべてのインシデントの読み取り** アクセス許可に割り当てることを許可します。</span><span class="sxs-lookup"><span data-stu-id="69a25-121">Allow your Application to access Microsoft Defender for Endpoint and assign it **Read all incidents** permission:</span></span>
+   - <span data-ttu-id="cf45d-124">アプリケーションの **アクセス許可**  >  **Incident.Read.All を** 選択し、[アクセス許可 **の追加] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="cf45d-124">Choose **Application permissions** > **Incident.Read.All** and select **Add permissions**.</span></span>
 
-   - <span data-ttu-id="69a25-122">アプリケーションページで、[ **API Permissions** ] [組織が使用する  >  **アクセス許可**  >  **api** の追加 > **microsoft 365 defender** ] と入力し、[ **microsoft 365 defender** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="69a25-122">On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft 365 Defender** and select on **Microsoft 365 Defender**.</span></span>
+   ![API アクセスと API の選択の画像](../../media/request-api-permissions.PNG)
 
-   >[!NOTE]
-   ><span data-ttu-id="69a25-123">Microsoft 365 Defender は、元のリストには表示されません。</span><span class="sxs-lookup"><span data-stu-id="69a25-123">Microsoft 365 Defender does not appear in the original list.</span></span> <span data-ttu-id="69a25-124">テキストボックスに名前を記述して、表示されることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="69a25-124">You need to start writing its name in the text box to see it appear.</span></span>
+5. <span data-ttu-id="cf45d-126">[管理者 **の同意を付与する] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="cf45d-126">Select **Grant admin consent**.</span></span> <span data-ttu-id="cf45d-127">アクセス許可を追加する度に、そのアクセス許可を有効にするための **管理者** の同意を付与するを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf45d-127">Every time you add a permission, you must select **Grant admin consent** for it to take effect.</span></span>
 
-   ![API アクセスと API 選択の画像](../../media/apis-in-my-org-tab.PNG)
+    ![アクセス許可の付与の画像](../../media/grant-consent.PNG)
 
-   - <span data-ttu-id="69a25-126">[ **アプリケーションのアクセス許可** のインシデント] を選択します。  >  **すべて** > [ **アクセス許可の追加** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="69a25-126">Choose **Application permissions** > **Incident.Read.All** > Select on **Add permissions**</span></span>
+6. <span data-ttu-id="cf45d-129">アプリケーションにシークレットを追加します。</span><span class="sxs-lookup"><span data-stu-id="cf45d-129">Add a secret to the application.</span></span> <span data-ttu-id="cf45d-130">Select **Certificates & secrets,** add a description to the secret, then select **Add**.</span><span class="sxs-lookup"><span data-stu-id="cf45d-130">Select **Certificates & secrets**, add a description to the secret, then select **Add**.</span></span>
 
-   ![API アクセスと API 選択の画像](../../media/request-api-permissions.PNG)
+    > [!TIP]
+    > <span data-ttu-id="cf45d-131">[追加] を **選択した後**、生成 **されたシークレットの値をコピーします**。</span><span class="sxs-lookup"><span data-stu-id="cf45d-131">After you select **Add**, select **copy the generated secret value**.</span></span> <span data-ttu-id="cf45d-132">退出後にシークレット値を取得できない。</span><span class="sxs-lookup"><span data-stu-id="cf45d-132">You won't be able to retrieve the secret value after you leave.</span></span>
 
-   >[!IMPORTANT]
-   ><span data-ttu-id="69a25-128">関連するアクセス許可を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="69a25-128">You need to select the relevant permissions.</span></span> 
+    ![アプリ キーの作成の画像](../../media/webapp-create-key2.png)
 
-     <span data-ttu-id="69a25-129">例えば</span><span class="sxs-lookup"><span data-stu-id="69a25-129">For instance,</span></span>
+7. <span data-ttu-id="cf45d-134">アプリケーション ID とテナント ID を安全な場所に記録します。</span><span class="sxs-lookup"><span data-stu-id="cf45d-134">Record your application ID and your tenant ID somewhere safe.</span></span> <span data-ttu-id="cf45d-135">アプリケーション ページの [概要] **に** 一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="cf45d-135">They're listed under **Overview** on your application page.</span></span>
 
-     - <span data-ttu-id="69a25-130">必要なアクセス許可を確認するには、呼び出したい API の [ **Permissions** ] セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="69a25-130">To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.</span></span>
+   ![作成されたアプリ ID の画像](../../media/app-and-tenant-ids.png)
 
-5. <span data-ttu-id="69a25-131">[ **管理者の同意を付与** する] を選択する</span><span class="sxs-lookup"><span data-stu-id="69a25-131">Select **Grant admin consent**</span></span>
+### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a><span data-ttu-id="cf45d-137">アプリを使用してトークンを取得し、そのトークンを使用して API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="cf45d-137">Get a token using the app and use the token to access the API</span></span>
 
-    - >[!NOTE]
-      > <span data-ttu-id="69a25-132">アクセス許可を追加するたびに、新しいアクセス許可を有効にするには、[ **Grant 同意** ] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="69a25-132">Every time you add permission you must select on **Grant consent** for the new permission to take effect.</span></span>
+<span data-ttu-id="cf45d-138">Azure Active Directory トークンについて詳しくは、Azure Active Directory のチュートリアル [AD覧ください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。</span><span class="sxs-lookup"><span data-stu-id="cf45d-138">For more information on Azure Active Directory tokens, see the [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).</span></span>
 
-    ![許可権限の画像](../../media/grant-consent.PNG)
+> [!IMPORTANT]
+> <span data-ttu-id="cf45d-139">このデモ アプリの例では、テストの目的で秘密の値を貼り付ける必要があります。ただし、実稼働環境で実行されているアプリケーションにシークレットをハードコードし込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf45d-139">Although the example in this demo app encourage you to paste in your secret value for testing purposes, you should **never hardcode secrets** into an application running in production.</span></span> <span data-ttu-id="cf45d-140">サード パーティは、シークレットを使用してリソースにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="cf45d-140">A third party could use your secret to access resources.</span></span> <span data-ttu-id="cf45d-141">[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates)を使用して、アプリのシークレットをセキュリティで保護することができます。</span><span class="sxs-lookup"><span data-stu-id="cf45d-141">You can help keep your app's secrets secure by using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates).</span></span> <span data-ttu-id="cf45d-142">アプリを保護する方法の実用的な例については、「Azure Key Vault を使用してサーバー アプリのシークレットを管理する」 [を参照してください](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)。</span><span class="sxs-lookup"><span data-stu-id="cf45d-142">For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).</span></span>
 
-6. <span data-ttu-id="69a25-134">アプリケーションにシークレットを追加します。</span><span class="sxs-lookup"><span data-stu-id="69a25-134">Add a secret to the application.</span></span>
+1. <span data-ttu-id="cf45d-143">以下のスクリプトをコピーし、お気に入りのテキスト エディターに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="cf45d-143">Copy the script below and paste it into your favorite text editor.</span></span> <span data-ttu-id="cf45d-144">名前を付 **けてGet-Token.ps1。**</span><span class="sxs-lookup"><span data-stu-id="cf45d-144">Save as **Get-Token.ps1**.</span></span> <span data-ttu-id="cf45d-145">PowerShell ISE でコードを一緒に実行することもできますが、保存する必要があります。これは、次のセクションでインシデント フェッチ スクリプトを使用するときに再度実行する必要があるためです。</span><span class="sxs-lookup"><span data-stu-id="cf45d-145">You can also run the code as-is in PowerShell ISE, but you should save it, because we'll need to run it again when we use the incident-fetching script in the next section.</span></span>
 
-    - <span data-ttu-id="69a25-135">[ **証明書 & シークレット** ] を選択し、シークレットに説明を追加して、[ **追加** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="69a25-135">Select **Certificates & secrets** , add description to the secret and select **Add**.</span></span>
+    <span data-ttu-id="cf45d-146">このスクリプトはトークンを生成し、そのトークンを作業フォルダーの名前の下に保存 *Latest-token.txt。*</span><span class="sxs-lookup"><span data-stu-id="cf45d-146">This script will generate a token and save it in the working folder under the name, *Latest-token.txt*.</span></span>
 
-    >[!IMPORTANT]
-    > <span data-ttu-id="69a25-136">[ **追加** ] を選択した後、 **生成されたシークレット値をコピー** します。</span><span class="sxs-lookup"><span data-stu-id="69a25-136">After selecting **Add** , **copy the generated secret value**.</span></span> <span data-ttu-id="69a25-137">退出後に取得することはできません。</span><span class="sxs-lookup"><span data-stu-id="69a25-137">You won't be able to retrieve after you leave!</span></span>
+    ```PowerShell
+    # This script gets the app context token and saves it to a file named "Latest-token.txt" under the current directory.
+    # Paste in your tenant ID, client ID and app secret (App key).
 
-    ![アプリキーを作成する画像](../../media/webapp-create-key2.png)
+    $tenantId = '' # Paste your directory (tenant) ID here
+    $clientId = '' # Paste your application (client) ID here
+    $appSecret = '' # # Paste your own app secret here to test, then store it in a safe place!
 
-7. <span data-ttu-id="69a25-139">アプリケーション ID とテナント ID を書き留めておきます。</span><span class="sxs-lookup"><span data-stu-id="69a25-139">Write down your application ID and your tenant ID:</span></span>
+    $resourceAppIdUri = 'https://api.security.microsoft.com'
+    $oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+    $authBody = [Ordered] @{
+      resource = $resourceAppIdUri
+      client_id = $clientId
+      client_secret = $appSecret
+      grant_type = 'client_credentials'
+    }
+    $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
+    $token = $authResponse.access_token
+    Out-File -FilePath "./Latest-token.txt" -InputObject $token
+    return $token
+    ```
 
-   - <span data-ttu-id="69a25-140">アプリケーションページで、[ **概要** ] に移動し、次の内容をコピーします。</span><span class="sxs-lookup"><span data-stu-id="69a25-140">On your application page, go to **Overview** and copy the following:</span></span>
+#### <a name="validate-the-token"></a><span data-ttu-id="cf45d-147">トークンを検証する</span><span class="sxs-lookup"><span data-stu-id="cf45d-147">Validate the token</span></span>
 
-   ![作成されたアプリ id の画像](../../media/app-and-tenant-ids.png)
+1. <span data-ttu-id="cf45d-148">受け取ったトークンをコピーして JWT に貼 [り付](https://jwt.ms) け、デコードします。</span><span class="sxs-lookup"><span data-stu-id="cf45d-148">Copy and paste the token you received into [JWT](https://jwt.ms) to decode it.</span></span>
+1. <span data-ttu-id="cf45d-149">*JWT は* *JSON Web トークンを表します*。</span><span class="sxs-lookup"><span data-stu-id="cf45d-149">*JWT* stands for *JSON Web Token*.</span></span> <span data-ttu-id="cf45d-150">デコードされたトークンには、JSON 形式のアイテムまたはクレームが多数含まれます。</span><span class="sxs-lookup"><span data-stu-id="cf45d-150">The decoded token will contain a number of JSON-formatted items or claims.</span></span> <span data-ttu-id="cf45d-151">デコードされたトークン内 *のロール* クレームに必要なアクセス許可が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf45d-151">Make sure that the *roles* claim within the decoded token contains the desired permissions.</span></span>
 
+    <span data-ttu-id="cf45d-152">次の図では、アプリから取得したデコードされたトークンと、アクセス許可 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` を ```AdvancedHunting.Read.All``` 確認できます。</span><span class="sxs-lookup"><span data-stu-id="cf45d-152">In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:</span></span>
 
-<span data-ttu-id="69a25-142">完成です！</span><span class="sxs-lookup"><span data-stu-id="69a25-142">Done!</span></span> <span data-ttu-id="69a25-143">アプリケーションが正常に登録されました。</span><span class="sxs-lookup"><span data-stu-id="69a25-143">You have successfully registered an application.</span></span>
+    ![画像jwt.ms](../../media/api-jwt-ms.png)
 
-### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a><span data-ttu-id="69a25-144">手順 2-アプリを使用してトークンを取得し、このトークンを使用して API にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="69a25-144">Step 2 - Get a token using the App and use this token to access the API.</span></span>
+### <a name="get-a-list-of-recent-incidents"></a><span data-ttu-id="cf45d-154">最近のインシデントの一覧を取得する</span><span class="sxs-lookup"><span data-stu-id="cf45d-154">Get a list of recent incidents</span></span>
 
--   <span data-ttu-id="69a25-145">次のスクリプトを PowerShell ISE またはテキストエディターにコピーし、" **Get-Token.ps1** " として保存します。</span><span class="sxs-lookup"><span data-stu-id="69a25-145">Copy the script below to PowerShell ISE or to a text editor, and save it as " **Get-Token.ps1** "</span></span>
--   <span data-ttu-id="69a25-146">このスクリプトを実行すると、トークンが生成され、" **Latest-token.txt** " という名前の作業フォルダーに保存されます。</span><span class="sxs-lookup"><span data-stu-id="69a25-146">Running this script will generate a token and will save it in the working folder under the name " **Latest-token.txt** ".</span></span>
+<span data-ttu-id="cf45d-155">以下のスクリプトでは、API **へのアクセスGet-Token.ps1** を使用します。</span><span class="sxs-lookup"><span data-stu-id="cf45d-155">The script below will use **Get-Token.ps1** to access the API.</span></span> <span data-ttu-id="cf45d-156">次に、過去 48 時間以内に最後に更新されたインシデントの一覧を取得し、そのリストを JSON ファイルとして保存します。</span><span class="sxs-lookup"><span data-stu-id="cf45d-156">It then retrieves a list of incidents that were last updated within the past 48 hours, and saves the list as a JSON file.</span></span>
 
-```
-# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
-# Paste below your Tenant ID, App ID and App Secret (App key).
+> [!IMPORTANT]
+> <span data-ttu-id="cf45d-157">このスクリプトを保存したフォルダーと同じフォルダーに保存 **Get-Token.ps1。**</span><span class="sxs-lookup"><span data-stu-id="cf45d-157">Save this script in the same folder you saved **Get-Token.ps1**.</span></span>
 
-$tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your Application ID here
-$appSecret = '' ### Paste your Application secret here
+```PowerShell
+# This script returns incidents last updated within the past 48 hours.
 
-$resourceAppIdUri = 'https://api.security.microsoft.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
-$authBody = [Ordered] @{
-    resource = "$resourceAppIdUri"
-    client_id = "$appId"
-    client_secret = "$appSecret"
-    grant_type = 'client_credentials'
-}
-$authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
-$token = $authResponse.access_token
-Out-File -FilePath "./Latest-token.txt" -InputObject $token
-return $token
-```
+$token = ./Get-Token.ps1
 
--   <span data-ttu-id="69a25-147">正当性チェック:</span><span class="sxs-lookup"><span data-stu-id="69a25-147">Sanity Check:</span></span><br>
-<span data-ttu-id="69a25-148">スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="69a25-148">Run the script.</span></span><br>
-<span data-ttu-id="69a25-149">ブラウザーで、次のように移動します。 https://jwt.ms/</span><span class="sxs-lookup"><span data-stu-id="69a25-149">In your browser go to: https://jwt.ms/</span></span> <br>
-<span data-ttu-id="69a25-150">トークン (Latest-token.txt ファイルの内容) をコピーします。</span><span class="sxs-lookup"><span data-stu-id="69a25-150">Copy the token (the content of the Latest-token.txt file).</span></span><br>
-<span data-ttu-id="69a25-151">一番上のボックスに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="69a25-151">Paste in the top box.</span></span><br>
-<span data-ttu-id="69a25-152">「役割」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="69a25-152">Look for the "roles" section.</span></span> <span data-ttu-id="69a25-153">役割を検索 ```Incidents.Read.All``` します。</span><span class="sxs-lookup"><span data-stu-id="69a25-153">Find the ```Incidents.Read.All``` role.</span></span><br>
-<span data-ttu-id="69a25-154">次の例は ```Incidents.Read.All``` 、 ```Incidents.ReadWrite.All``` およびアクセス許可を持つアプリからのものです ```AdvancedHunting.Read.All``` 。</span><span class="sxs-lookup"><span data-stu-id="69a25-154">The below example is from an app that has ```Incidents.Read.All```, ```Incidents.ReadWrite.All``` and ```AdvancedHunting.Read.All``` permissions.</span></span>
-
-![Image jwt.ms](../../media/api-jwt-ms.png)
-
-### <a name="lets-get-the-incidents"></a><span data-ttu-id="69a25-156">インシデントを入手できます。</span><span class="sxs-lookup"><span data-stu-id="69a25-156">Lets get the Incidents!</span></span>
-
--   <span data-ttu-id="69a25-157">次のスクリプトでは **Get-Token.ps1** を使用して API にアクセスし、過去48時間以内に最終更新されたインシデントを取得します。</span><span class="sxs-lookup"><span data-stu-id="69a25-157">The script below will use **Get-Token.ps1** to access the API and will get the incidents last updated in past 48 hours.</span></span>
--   <span data-ttu-id="69a25-158">このスクリプトは、前のスクリプト **Get-Token.ps1** を保存したときと同じフォルダーに保存します。</span><span class="sxs-lookup"><span data-stu-id="69a25-158">Save this script in the same folder you saved the previous script **Get-Token.ps1**.</span></span> 
--   <span data-ttu-id="69a25-159">スクリプトと同じフォルダー内のデータを含む json ファイル。</span><span class="sxs-lookup"><span data-stu-id="69a25-159">The script a json file with the data in the same folder as the scripts.</span></span>
-
-```
-# Returns Incidents last updated in the past 48 hours.
-
-$token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
-
-# Get Incidents from the last 48 hours. Make sure you have incidents in that time frame.
+# Get incidents from the past 48 hours.
+# The script may appear to fail if you don't have any incidents in that time frame.
 $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
-# The URL contains the type of query and the time filter we created above
+# This URL contains the type of query and the time filter we created above.
+# Note that `$filter` does not refer to a local variable in our script --
+# it's actually an OData operator and part of the API's syntax.
 $url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime"
 
-# Set the WebRequest headers
-$headers = @{ 
+# Set the webrequest headers
+$headers = @{
     'Content-Type' = 'application/json'
     'Accept' = 'application/json'
     'Authorization' = "Bearer $token"
 }
 
-# Send the webrequest and get the results. 
+# Send the request and get the results.
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
-# Extract the incidents from the results. 
+# Extract the incidents from the results.
 $incidents =  ($response | ConvertFrom-Json).value | ConvertTo-Json -Depth 99
 
-# Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
-$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+# Get a string containing the execution time. We concatenate that string to the name 
+# of the output file to avoid overwriting the file on consecutive runs of the script.
+$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}
 
 # Save the result as json
-$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"     
+$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 
-Out-File -FilePath $outputJsonPath -InputObject $incidents 
+Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-<span data-ttu-id="69a25-160">すべて完了しました。</span><span class="sxs-lookup"><span data-stu-id="69a25-160">You're all done!</span></span> <span data-ttu-id="69a25-161">正常に完了したのは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="69a25-161">You have just successfully:</span></span>
--   <span data-ttu-id="69a25-162">作成および登録され、アプリケーション</span><span class="sxs-lookup"><span data-stu-id="69a25-162">Created and registered and application</span></span>
--   <span data-ttu-id="69a25-163">そのアプリケーションに対して通知を読み取るためのアクセス許可が付与されます。</span><span class="sxs-lookup"><span data-stu-id="69a25-163">Granted permission for that application to read alerts</span></span>
--   <span data-ttu-id="69a25-164">API の接続</span><span class="sxs-lookup"><span data-stu-id="69a25-164">Connected the API</span></span>
--   <span data-ttu-id="69a25-165">PowerShell スクリプトを使用して過去48時間以内に作成されたインシデントを返す</span><span class="sxs-lookup"><span data-stu-id="69a25-165">Used a PowerShell script to return incidents created in the past 48 hours</span></span>
+<span data-ttu-id="cf45d-158">完了です。</span><span class="sxs-lookup"><span data-stu-id="cf45d-158">You're all done!</span></span> <span data-ttu-id="cf45d-159">正常に完了しました。</span><span class="sxs-lookup"><span data-stu-id="cf45d-159">You've successfully:</span></span>
 
+- <span data-ttu-id="cf45d-160">アプリケーションを作成して登録します。</span><span class="sxs-lookup"><span data-stu-id="cf45d-160">Created and registered an application.</span></span>
+- <span data-ttu-id="cf45d-161">そのアプリケーションに通知を読み取るアクセス許可が付与されます。</span><span class="sxs-lookup"><span data-stu-id="cf45d-161">Granted permission for that application to read alerts.</span></span>
+- <span data-ttu-id="cf45d-162">API に接続されています。</span><span class="sxs-lookup"><span data-stu-id="cf45d-162">Connected to the API.</span></span>
+- <span data-ttu-id="cf45d-163">PowerShell スクリプトを使用して、過去 48 時間以内に更新されたインシデントを返しました。</span><span class="sxs-lookup"><span data-stu-id="cf45d-163">Used a PowerShell script to return incidents updated in the past 48 hours.</span></span>
 
+## <a name="related-articles"></a><span data-ttu-id="cf45d-164">関連記事</span><span class="sxs-lookup"><span data-stu-id="cf45d-164">Related articles</span></span>
 
-## <a name="related-topic"></a><span data-ttu-id="69a25-166">関連トピック</span><span class="sxs-lookup"><span data-stu-id="69a25-166">Related topic</span></span>
-- [<span data-ttu-id="69a25-167">Microsoft 365 Defender Api にアクセスする</span><span class="sxs-lookup"><span data-stu-id="69a25-167">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
-- [<span data-ttu-id="69a25-168">アプリケーションコンテキストを使用して Microsoft 365 Defender にアクセスする</span><span class="sxs-lookup"><span data-stu-id="69a25-168">Access  Microsoft 365 Defender with application context</span></span>](api-create-app-web.md)
-- [<span data-ttu-id="69a25-169">ユーザーコンテキストを使用して Microsoft 365 Defender にアクセスする</span><span class="sxs-lookup"><span data-stu-id="69a25-169">Access  Microsoft 365 Defender with user context</span></span>](api-create-app-user-context.md)
+- [<span data-ttu-id="cf45d-165">Microsoft 365 Defender API の概要</span><span class="sxs-lookup"><span data-stu-id="cf45d-165">Microsoft 365 Defender APIs overview</span></span>](api-overview.md)
+- [<span data-ttu-id="cf45d-166">Microsoft 365 Defender API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="cf45d-166">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
+- [<span data-ttu-id="cf45d-167">ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="cf45d-167">Create an app to access Microsoft 365 Defender without a user</span></span>](api-create-app-web.md)
+- [<span data-ttu-id="cf45d-168">ユーザーの代わりに Microsoft 365 Defender API にアクセスするアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="cf45d-168">Create an app to access Microsoft 365 Defender APIs on behalf of a user</span></span>](api-create-app-user-context.md)
+- [<span data-ttu-id="cf45d-169">マルチテナント パートナーが Microsoft 365 Defender API にアクセスできるアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="cf45d-169">Create an app with multi-tenant partner access to Microsoft 365 Defender APIs</span></span>](api-partner-access.md)
+- [<span data-ttu-id="cf45d-170">Azure Key Vault を使用してサーバー アプリのシークレットを管理する</span><span class="sxs-lookup"><span data-stu-id="cf45d-170">Manage secrets in your server apps with Azure Key Vault</span></span>](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [<span data-ttu-id="cf45d-171">ユーザー サインインと API アクセスの OAuth 2.0 承認</span><span class="sxs-lookup"><span data-stu-id="cf45d-171">OAuth 2.0 Authorization for user sign in and API access</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

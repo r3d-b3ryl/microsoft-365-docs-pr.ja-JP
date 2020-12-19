@@ -1,7 +1,7 @@
 ---
-title: サポートされている Microsoft 365 Defender Api
-description: サポートされている Microsoft 365 Defender Api
-keywords: MTP、Api、api
+title: サポートされている Microsoft 365 Defender API
+description: サポートされている Microsoft 365 Defender API
+keywords: MTP、API、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,41 +19,45 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b7c0accf2d649d4ad6177260294922ee17783f2c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: dbb7613dae3755b0fb794a3d68b5b424d765cc62
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844962"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719324"
 ---
-# <a name="supported-microsoft-365-defender-apis"></a><span data-ttu-id="77b28-104">サポートされている Microsoft 365 Defender Api</span><span class="sxs-lookup"><span data-stu-id="77b28-104">Supported Microsoft 365 Defender APIs</span></span> 
+# <a name="supported-microsoft-365-defender-apis"></a><span data-ttu-id="4b1f3-104">サポートされている Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="4b1f3-104">Supported Microsoft 365 Defender APIs</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="77b28-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="77b28-105">**Applies to:**</span></span>
-- <span data-ttu-id="77b28-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="77b28-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="4b1f3-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="4b1f3-105">**Applies to:**</span></span>
+- <span data-ttu-id="4b1f3-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="4b1f3-106">Microsoft 365 Defender</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="77b28-107">一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="77b28-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="77b28-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="77b28-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="4b1f3-107">一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="4b1f3-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="4b1f3-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="4b1f3-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
+## <a name="list-of-available-apis"></a><span data-ttu-id="4b1f3-109">使用可能な API の一覧</span><span class="sxs-lookup"><span data-stu-id="4b1f3-109">List of available APIs</span></span>
 
-### <a name="end-point-uris"></a><span data-ttu-id="77b28-109">エンドポイント Uri:</span><span class="sxs-lookup"><span data-stu-id="77b28-109">End Point URIs:</span></span>
+<span data-ttu-id="4b1f3-110">記事</span><span class="sxs-lookup"><span data-stu-id="4b1f3-110">Article</span></span> | <span data-ttu-id="4b1f3-111">説明</span><span class="sxs-lookup"><span data-stu-id="4b1f3-111">Description</span></span>
+-|-
+[<span data-ttu-id="4b1f3-112">高度な追及 API</span><span class="sxs-lookup"><span data-stu-id="4b1f3-112">Advanced Hunting API</span></span>](api-advanced-hunting.md) | <span data-ttu-id="4b1f3-113">高度な検索クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="4b1f3-113">Run Advanced Hunting queries.</span></span>
+[<span data-ttu-id="4b1f3-114">インシデント API</span><span class="sxs-lookup"><span data-stu-id="4b1f3-114">Incident APIs</span></span>](api-incident.md) | <span data-ttu-id="4b1f3-115">インシデントのリストと更新、および他の実用的なタスク。</span><span class="sxs-lookup"><span data-stu-id="4b1f3-115">List and update incidents, along with other practical tasks.</span></span>
 
-- <span data-ttu-id="77b28-110">サービスベース URI は次のとおりです。 https://api.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="77b28-110">The service base URI is: https://api.security.microsoft.com</span></span> <br>
+### <a name="endpoint-uris"></a><span data-ttu-id="4b1f3-116">エンドポイント URI</span><span class="sxs-lookup"><span data-stu-id="4b1f3-116">Endpoint URIs</span></span>
 
->[!NOTE]
-><span data-ttu-id="77b28-111">パフォーマンスを向上させるには、次のようにサーバーを地域の場所に近づけることができます。</span><span class="sxs-lookup"><span data-stu-id="77b28-111">For better performance, you can use server closer to your Geo location:</span></span>
-> - <span data-ttu-id="77b28-112">api-us.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="77b28-112">api-us.security.microsoft.com</span></span>
-> - <span data-ttu-id="77b28-113">api-eu.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="77b28-113">api-eu.security.microsoft.com</span></span>
-> - <span data-ttu-id="77b28-114">api-uk.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="77b28-114">api-uk.security.microsoft.com</span></span>
+<span data-ttu-id="4b1f3-117">両方のメイン API のベース URI は次の値です https://api.security.microsoft.com 。</span><span class="sxs-lookup"><span data-stu-id="4b1f3-117">The base URI for both of the main APIs is: https://api.security.microsoft.com.</span></span> <span data-ttu-id="4b1f3-118">パフォーマンスを向上するには、位置情報に近いサーバーを使用します。</span><span class="sxs-lookup"><span data-stu-id="4b1f3-118">For better performance, use a server closer to your geolocation:</span></span>
 
- - <span data-ttu-id="77b28-115">トークンを取得するためのリソースは次のようになります。 https://api.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="77b28-115">The resource for token acquisition should be: https://api.security.microsoft.com</span></span>
+- <span data-ttu-id="4b1f3-119">米国: api-us.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="4b1f3-119">The United States: api-us.security.microsoft.com</span></span>
+- <span data-ttu-id="4b1f3-120">ヨーロッパ: api-eu.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="4b1f3-120">Europe: api-eu.security.microsoft.com</span></span>
+- <span data-ttu-id="4b1f3-121">英国: api-uk.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="4b1f3-121">The United Kingdom: api-uk.security.microsoft.com</span></span>
 
- - <span data-ttu-id="77b28-116">Path の下にあるすべての Api ```/api``` は OData api です。</span><span class="sxs-lookup"><span data-stu-id="77b28-116">All the APIs under ```/api``` path are OData APIs.</span></span> <span data-ttu-id="77b28-117">(. ```https://api.security.microsoft.com/api/incidents```</span><span class="sxs-lookup"><span data-stu-id="77b28-117">e.g. ```https://api.security.microsoft.com/api/incidents```</span></span>
+<span data-ttu-id="4b1f3-122">トークンは、アクセスすることで取得できます https://api.security.microsoft.com 。</span><span class="sxs-lookup"><span data-stu-id="4b1f3-122">Tokens can be acquired by accessing https://api.security.microsoft.com.</span></span>
 
-## <a name="list-of-available-apis"></a><span data-ttu-id="77b28-118">利用可能な Api のリスト:</span><span class="sxs-lookup"><span data-stu-id="77b28-118">List of available APIs:</span></span>
+<span data-ttu-id="4b1f3-123">パス上のすべての API `/api` は [、OData](https://docs.microsoft.com/odata/overview) プロトコルを使用します。たとえば https://api.security.microsoft.com/api/incidents 、 .</span><span class="sxs-lookup"><span data-stu-id="4b1f3-123">All APIs along the `/api` path use the [OData](https://docs.microsoft.com/odata/overview) Protocol; for example, https://api.security.microsoft.com/api/incidents.</span></span>
 
-<span data-ttu-id="77b28-119">トピック</span><span class="sxs-lookup"><span data-stu-id="77b28-119">Topic</span></span> | <span data-ttu-id="77b28-120">説明</span><span class="sxs-lookup"><span data-stu-id="77b28-120">Description</span></span>
-:---|:---
-[<span data-ttu-id="77b28-121">高度な追及 API</span><span class="sxs-lookup"><span data-stu-id="77b28-121">Advanced Hunting API</span></span>](api-advanced-hunting.md) | <span data-ttu-id="77b28-122">API から高度な検索クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="77b28-122">Run Advanced Hunting queries from API.</span></span>
-[<span data-ttu-id="77b28-123">インシデント API</span><span class="sxs-lookup"><span data-stu-id="77b28-123">Incident APIs</span></span>](api-incident.md) | <span data-ttu-id="77b28-124">インシデント関連の API 呼び出しを実行します。インシデントの一覧表示、インシデントの更新など。</span><span class="sxs-lookup"><span data-stu-id="77b28-124">Run incident related API calls such as: list incidents, update incident and more.</span></span>
+## <a name="related-articles"></a><span data-ttu-id="4b1f3-124">関連記事</span><span class="sxs-lookup"><span data-stu-id="4b1f3-124">Related articles</span></span>
+
+- [<span data-ttu-id="4b1f3-125">Microsoft 365 Defender API の概要</span><span class="sxs-lookup"><span data-stu-id="4b1f3-125">Microsoft 365 Defender APIs overview</span></span>](api-overview.md)
+- [<span data-ttu-id="4b1f3-126">Microsoft Threat Protection API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="4b1f3-126">Access the Microsoft Threat Protection APIs</span></span>](api-access.md)
+- [<span data-ttu-id="4b1f3-127">API の制限とライセンスについて</span><span class="sxs-lookup"><span data-stu-id="4b1f3-127">Learn about API limits and licensing</span></span>](api-terms.md)
+- [<span data-ttu-id="4b1f3-128">エラー コードを理解する</span><span class="sxs-lookup"><span data-stu-id="4b1f3-128">Understand error codes</span></span>](api-error-codes.md)

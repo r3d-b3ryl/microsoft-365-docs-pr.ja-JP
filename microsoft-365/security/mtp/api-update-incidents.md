@@ -1,7 +1,7 @@
 ---
 title: インシデント API の更新
 description: Microsoft 365 Defender API を使用してインシデントを更新する方法について説明します。
-keywords: update、api、incident
+keywords: 更新, api, インシデント
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,90 +19,87 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3f77980863b0c232166d736a6b557444df98c8ac
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6fc1ff730994f03aa500ad9a4559b66970e32d87
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844838"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719406"
 ---
-# <a name="update-incidents-api"></a><span data-ttu-id="de2f6-104">インシデント API の更新</span><span class="sxs-lookup"><span data-stu-id="de2f6-104">Update incidents API</span></span>
+# <a name="update-incidents-api"></a><span data-ttu-id="3940e-104">インシデント更新 API</span><span class="sxs-lookup"><span data-stu-id="3940e-104">Update incidents API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+<span data-ttu-id="3940e-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="3940e-105">**Applies to:**</span></span>
 
-<span data-ttu-id="de2f6-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="de2f6-105">**Applies to:**</span></span>
-- <span data-ttu-id="de2f6-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="de2f6-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="3940e-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3940e-106">Microsoft 365 Defender</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="de2f6-107">一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="de2f6-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="de2f6-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="de2f6-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="3940e-107">一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="3940e-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="3940e-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="3940e-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
+## <a name="api-description"></a><span data-ttu-id="3940e-109">API の説明</span><span class="sxs-lookup"><span data-stu-id="3940e-109">API description</span></span>
 
-## <a name="api-description"></a><span data-ttu-id="de2f6-109">API の説明</span><span class="sxs-lookup"><span data-stu-id="de2f6-109">API description</span></span>
-<span data-ttu-id="de2f6-110">既存のインシデントのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="de2f6-110">Updates properties of existing incident.</span></span>
-<br><span data-ttu-id="de2f6-111">更新可能なプロパティは、、、 ```status``` ```determination``` ```classification``` 、 ```assignedTo``` ```tags``` です。</span><span class="sxs-lookup"><span data-stu-id="de2f6-111">Updatable properties are: ```status```, ```determination```, ```classification```, ```assignedTo``` and ```tags```.</span></span>
+<span data-ttu-id="3940e-110">既存のインシデントのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="3940e-110">Updates properties of existing incident.</span></span> <span data-ttu-id="3940e-111">更新可能なプロパティは、次 ```status``` ```determination``` ```classification``` ```assignedTo``` のとおりです ```tags``` 。</span><span class="sxs-lookup"><span data-stu-id="3940e-111">Updatable properties are: ```status```, ```determination```, ```classification```, ```assignedTo```, and ```tags```.</span></span>
 
+### <a name="quotas-resource-allocation-and-other-constraints"></a><span data-ttu-id="3940e-112">クォータ、リソース割り当て、その他の制約</span><span class="sxs-lookup"><span data-stu-id="3940e-112">Quotas, resource allocation, and other constraints</span></span>
 
-## <a name="limitations"></a><span data-ttu-id="de2f6-112">制限事項</span><span class="sxs-lookup"><span data-stu-id="de2f6-112">Limitations</span></span>
-1. <span data-ttu-id="de2f6-113">この API の速度制限は、1分あたり50通話、1時間あたり1500通話です。</span><span class="sxs-lookup"><span data-stu-id="de2f6-113">Rate limitations for this API are 50 calls per minute and 1500 calls per hour.</span></span>
-2. <span data-ttu-id="de2f6-114">```determination```分類が TruePositive に設定されている場合にのみ、を設定できます。</span><span class="sxs-lookup"><span data-stu-id="de2f6-114">You can set the ```determination``` only if the classification is set to TruePositive.</span></span>
+1. <span data-ttu-id="3940e-113">調整しきい値に達する前に、1 分あたり最大 50 回、または 1 時間あたり 1500 回の通話を行います。</span><span class="sxs-lookup"><span data-stu-id="3940e-113">You can make up to 50 calls per minute or 1500 calls per hour before you hit the throttling threshold.</span></span>
+2. <span data-ttu-id="3940e-114">このプロパティは `determination` `classification` 、TruePositive に設定されている場合にのみ設定できます。</span><span class="sxs-lookup"><span data-stu-id="3940e-114">You can set the `determination` property only if `classification` is set to TruePositive.</span></span>
 
+<span data-ttu-id="3940e-115">要求が調整されている場合は、応答コードを `429` 返します。</span><span class="sxs-lookup"><span data-stu-id="3940e-115">If your request is throttled, it will return a `429` response code.</span></span> <span data-ttu-id="3940e-116">応答本文には、新しい呼び出しを開始できる時刻が示されます。</span><span class="sxs-lookup"><span data-stu-id="3940e-116">The response body will indicate the time when you can begin making new calls.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="de2f6-115">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="de2f6-115">Permissions</span></span>
-<span data-ttu-id="de2f6-116">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="de2f6-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="de2f6-117">アクセス許可の選択方法を含む詳細については、「 [Microsoft 365 Defender Api へのアクセス](api-access.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="de2f6-117">To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender APIs](api-access.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3940e-117">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3940e-117">Permissions</span></span>
 
-<span data-ttu-id="de2f6-118">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="de2f6-118">Permission type</span></span> |   <span data-ttu-id="de2f6-119">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="de2f6-119">Permission</span></span>  |   <span data-ttu-id="de2f6-120">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="de2f6-120">Permission display name</span></span>
-:---|:---|:---
-<span data-ttu-id="de2f6-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="de2f6-121">Application</span></span> |   <span data-ttu-id="de2f6-122">インシデント。すべて</span><span class="sxs-lookup"><span data-stu-id="de2f6-122">Incident.ReadWrite.All</span></span> |    <span data-ttu-id="de2f6-123">' すべてのインシデントの読み取りと書き込み '</span><span class="sxs-lookup"><span data-stu-id="de2f6-123">'Read and write all incidents'</span></span>
-<span data-ttu-id="de2f6-124">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="de2f6-124">Delegated (work or school account)</span></span> | <span data-ttu-id="de2f6-125">障害/書き込み</span><span class="sxs-lookup"><span data-stu-id="de2f6-125">Incident.ReadWrite</span></span> | <span data-ttu-id="de2f6-126">' 読み取りおよび書き込みのインシデント '</span><span class="sxs-lookup"><span data-stu-id="de2f6-126">'Read and write incidents'</span></span>
+<span data-ttu-id="3940e-118">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="3940e-118">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="3940e-119">アクセス許可の選択方法など、詳細については [、「Microsoft 365 Defender API](api-access.md)へのアクセス」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3940e-119">To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender APIs](api-access.md).</span></span>
 
->[!NOTE]
-> <span data-ttu-id="de2f6-127">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="de2f6-127">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="de2f6-128">ユーザーはポータルでインシデントを更新する権限を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="de2f6-128">The user needs to have permission to update the incident in the portal.</span></span>
+<span data-ttu-id="3940e-120">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3940e-120">Permission type</span></span> | <span data-ttu-id="3940e-121">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3940e-121">Permission</span></span> | <span data-ttu-id="3940e-122">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="3940e-122">Permission display name</span></span>
+-|-|-
+<span data-ttu-id="3940e-123">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3940e-123">Application</span></span> | <span data-ttu-id="3940e-124">Incident.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3940e-124">Incident.ReadWrite.All</span></span> | <span data-ttu-id="3940e-125">すべてのインシデントの読み取りおよび書き込み</span><span class="sxs-lookup"><span data-stu-id="3940e-125">Read and write all incidents</span></span>
+<span data-ttu-id="3940e-126">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3940e-126">Delegated (work or school account)</span></span> | <span data-ttu-id="3940e-127">Incident.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3940e-127">Incident.ReadWrite</span></span> | <span data-ttu-id="3940e-128">インシデントの読み取りおよび書き込み</span><span class="sxs-lookup"><span data-stu-id="3940e-128">Read and write incidents</span></span>
 
+> [!NOTE]
+> <span data-ttu-id="3940e-129">ユーザー資格情報を使用してトークンを取得する場合、ユーザーはポータルでインシデントを更新するアクセス許可を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3940e-129">When obtaining a token using user credentials, the user needs to have permission to update the incident in the portal.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="de2f6-129">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="de2f6-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3940e-130">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3940e-130">HTTP request</span></span>
 
-```
+```HTTP
 PATCH /api/incidents/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="de2f6-130">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="de2f6-130">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3940e-131">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3940e-131">Request headers</span></span>
 
-<span data-ttu-id="de2f6-131">名前</span><span class="sxs-lookup"><span data-stu-id="de2f6-131">Name</span></span> | <span data-ttu-id="de2f6-132">型</span><span class="sxs-lookup"><span data-stu-id="de2f6-132">Type</span></span> | <span data-ttu-id="de2f6-133">説明</span><span class="sxs-lookup"><span data-stu-id="de2f6-133">Description</span></span>
-:---|:---|:---
-<span data-ttu-id="de2f6-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="de2f6-134">Authorization</span></span> | <span data-ttu-id="de2f6-135">String</span><span class="sxs-lookup"><span data-stu-id="de2f6-135">String</span></span> | <span data-ttu-id="de2f6-136">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="de2f6-136">Bearer {token}.</span></span> <span data-ttu-id="de2f6-137">**必須** 。</span><span class="sxs-lookup"><span data-stu-id="de2f6-137">**Required**.</span></span>
-<span data-ttu-id="de2f6-138">Content-Type</span><span class="sxs-lookup"><span data-stu-id="de2f6-138">Content-Type</span></span> | <span data-ttu-id="de2f6-139">文字列</span><span class="sxs-lookup"><span data-stu-id="de2f6-139">String</span></span> | <span data-ttu-id="de2f6-140">application/json.</span><span class="sxs-lookup"><span data-stu-id="de2f6-140">application/json.</span></span> <span data-ttu-id="de2f6-141">**必須** 。</span><span class="sxs-lookup"><span data-stu-id="de2f6-141">**Required**.</span></span>
+<span data-ttu-id="3940e-132">名前</span><span class="sxs-lookup"><span data-stu-id="3940e-132">Name</span></span> | <span data-ttu-id="3940e-133">型</span><span class="sxs-lookup"><span data-stu-id="3940e-133">Type</span></span> | <span data-ttu-id="3940e-134">説明</span><span class="sxs-lookup"><span data-stu-id="3940e-134">Description</span></span>
+-|-|-
+<span data-ttu-id="3940e-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="3940e-135">Authorization</span></span> | <span data-ttu-id="3940e-136">String</span><span class="sxs-lookup"><span data-stu-id="3940e-136">String</span></span> | <span data-ttu-id="3940e-137">ベアラー {トークン}。</span><span class="sxs-lookup"><span data-stu-id="3940e-137">Bearer {token}.</span></span> <span data-ttu-id="3940e-138">**必須**。</span><span class="sxs-lookup"><span data-stu-id="3940e-138">**Required**.</span></span>
+<span data-ttu-id="3940e-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3940e-139">Content-Type</span></span> | <span data-ttu-id="3940e-140">文字列</span><span class="sxs-lookup"><span data-stu-id="3940e-140">String</span></span> | <span data-ttu-id="3940e-141">application/json.</span><span class="sxs-lookup"><span data-stu-id="3940e-141">application/json.</span></span> <span data-ttu-id="3940e-142">**必須**。</span><span class="sxs-lookup"><span data-stu-id="3940e-142">**Required**.</span></span>
 
+## <a name="request-body"></a><span data-ttu-id="3940e-143">要求本文</span><span class="sxs-lookup"><span data-stu-id="3940e-143">Request body</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="de2f6-142">要求本文</span><span class="sxs-lookup"><span data-stu-id="de2f6-142">Request body</span></span>
-<span data-ttu-id="de2f6-143">要求本文で、更新する必要のある関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="de2f6-143">In the request body, supply the values for the relevant fields that should be updated.</span></span>
-<br><span data-ttu-id="de2f6-144">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="de2f6-144">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> 
-<br><span data-ttu-id="de2f6-145">最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="de2f6-145">For best performance you shouldn't include existing values that haven't change.</span></span>
+<span data-ttu-id="3940e-144">要求本文で、更新するフィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="3940e-144">In the request body, supply the values for the fields that should be updated.</span></span> <span data-ttu-id="3940e-145">要求本文に含まれていない既存のプロパティは、関連する値の変更のために再計算する必要がない限り、値を保持します。</span><span class="sxs-lookup"><span data-stu-id="3940e-145">Existing properties that aren't included in the request body will maintain their values, unless they have to be recalculated due to changes to related values.</span></span> <span data-ttu-id="3940e-146">最適なパフォーマンスを得る場合は、変更していない既存の値を省略する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3940e-146">For best performance, you should omit existing values that haven't changed.</span></span>
 
-<span data-ttu-id="de2f6-146">プロパティ</span><span class="sxs-lookup"><span data-stu-id="de2f6-146">Property</span></span> | <span data-ttu-id="de2f6-147">型</span><span class="sxs-lookup"><span data-stu-id="de2f6-147">Type</span></span> | <span data-ttu-id="de2f6-148">説明</span><span class="sxs-lookup"><span data-stu-id="de2f6-148">Description</span></span>
-:---|:---|:---
-<span data-ttu-id="de2f6-149">status</span><span class="sxs-lookup"><span data-stu-id="de2f6-149">status</span></span> | <span data-ttu-id="de2f6-150">列挙</span><span class="sxs-lookup"><span data-stu-id="de2f6-150">Enum</span></span> | <span data-ttu-id="de2f6-151">通知の現在の状態を指定します。</span><span class="sxs-lookup"><span data-stu-id="de2f6-151">Specifies the current status of the alert.</span></span> <span data-ttu-id="de2f6-152">可能な値は ```Active``` 、、、 ```Resolved``` ```Redirected``` です。</span><span class="sxs-lookup"><span data-stu-id="de2f6-152">Possible values are: ```Active```, ```Resolved``` and ```Redirected```.</span></span>
-<span data-ttu-id="de2f6-153">assignedTo</span><span class="sxs-lookup"><span data-stu-id="de2f6-153">assignedTo</span></span> | <span data-ttu-id="de2f6-154">string</span><span class="sxs-lookup"><span data-stu-id="de2f6-154">string</span></span> | <span data-ttu-id="de2f6-155">インシデントの所有者。</span><span class="sxs-lookup"><span data-stu-id="de2f6-155">Owner of the incident.</span></span>
-<span data-ttu-id="de2f6-156">classification</span><span class="sxs-lookup"><span data-stu-id="de2f6-156">classification</span></span> | <span data-ttu-id="de2f6-157">列挙</span><span class="sxs-lookup"><span data-stu-id="de2f6-157">Enum</span></span> | <span data-ttu-id="de2f6-158">通知の仕様。</span><span class="sxs-lookup"><span data-stu-id="de2f6-158">Specification of the alert.</span></span> <span data-ttu-id="de2f6-159">可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。</span><span class="sxs-lookup"><span data-stu-id="de2f6-159">Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.</span></span>
-<span data-ttu-id="de2f6-160">決定</span><span class="sxs-lookup"><span data-stu-id="de2f6-160">determination</span></span> | <span data-ttu-id="de2f6-161">列挙</span><span class="sxs-lookup"><span data-stu-id="de2f6-161">Enum</span></span> | <span data-ttu-id="de2f6-162">通知の決定を指定します。</span><span class="sxs-lookup"><span data-stu-id="de2f6-162">Specifies the determination of the alert.</span></span> <span data-ttu-id="de2f6-163">可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。</span><span class="sxs-lookup"><span data-stu-id="de2f6-163">Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.</span></span>
-<span data-ttu-id="de2f6-164">tags</span><span class="sxs-lookup"><span data-stu-id="de2f6-164">tags</span></span> | <span data-ttu-id="de2f6-165">文字列リスト</span><span class="sxs-lookup"><span data-stu-id="de2f6-165">string List</span></span> | <span data-ttu-id="de2f6-166">インシデントタグのリスト。</span><span class="sxs-lookup"><span data-stu-id="de2f6-166">List of Incident tags.</span></span>
+<span data-ttu-id="3940e-147">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3940e-147">Property</span></span> | <span data-ttu-id="3940e-148">型</span><span class="sxs-lookup"><span data-stu-id="3940e-148">Type</span></span> | <span data-ttu-id="3940e-149">説明</span><span class="sxs-lookup"><span data-stu-id="3940e-149">Description</span></span>
+-|-|-
+<span data-ttu-id="3940e-150">status</span><span class="sxs-lookup"><span data-stu-id="3940e-150">status</span></span> | <span data-ttu-id="3940e-151">列挙</span><span class="sxs-lookup"><span data-stu-id="3940e-151">Enum</span></span> | <span data-ttu-id="3940e-152">通知の現在の状態を指定します。</span><span class="sxs-lookup"><span data-stu-id="3940e-152">Specifies the current status of the alert.</span></span> <span data-ttu-id="3940e-153">使用できる値は ```Active``` 、次 ```Resolved``` のとおりです ```Redirected``` 。</span><span class="sxs-lookup"><span data-stu-id="3940e-153">Possible values are: ```Active```, ```Resolved```, and ```Redirected```.</span></span>
+<span data-ttu-id="3940e-154">assignedTo</span><span class="sxs-lookup"><span data-stu-id="3940e-154">assignedTo</span></span> | <span data-ttu-id="3940e-155">string</span><span class="sxs-lookup"><span data-stu-id="3940e-155">string</span></span> | <span data-ttu-id="3940e-156">インシデントの所有者。</span><span class="sxs-lookup"><span data-stu-id="3940e-156">Owner of the incident.</span></span>
+<span data-ttu-id="3940e-157">classification</span><span class="sxs-lookup"><span data-stu-id="3940e-157">classification</span></span> | <span data-ttu-id="3940e-158">列挙</span><span class="sxs-lookup"><span data-stu-id="3940e-158">Enum</span></span> | <span data-ttu-id="3940e-159">アラートの仕様。</span><span class="sxs-lookup"><span data-stu-id="3940e-159">Specification of the alert.</span></span> <span data-ttu-id="3940e-160">可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。</span><span class="sxs-lookup"><span data-stu-id="3940e-160">Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.</span></span>
+<span data-ttu-id="3940e-161">判断</span><span class="sxs-lookup"><span data-stu-id="3940e-161">determination</span></span> | <span data-ttu-id="3940e-162">列挙</span><span class="sxs-lookup"><span data-stu-id="3940e-162">Enum</span></span> | <span data-ttu-id="3940e-163">通知の判定を指定します。</span><span class="sxs-lookup"><span data-stu-id="3940e-163">Specifies the determination of the alert.</span></span> <span data-ttu-id="3940e-164">可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。</span><span class="sxs-lookup"><span data-stu-id="3940e-164">Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.</span></span>
+<span data-ttu-id="3940e-165">tags</span><span class="sxs-lookup"><span data-stu-id="3940e-165">tags</span></span> | <span data-ttu-id="3940e-166">string List</span><span class="sxs-lookup"><span data-stu-id="3940e-166">string List</span></span> | <span data-ttu-id="3940e-167">インシデント タグのリスト。</span><span class="sxs-lookup"><span data-stu-id="3940e-167">List of Incident tags.</span></span>
 
+## <a name="response"></a><span data-ttu-id="3940e-168">応答</span><span class="sxs-lookup"><span data-stu-id="3940e-168">Response</span></span>
 
+<span data-ttu-id="3940e-169">成功した場合、このメソッドは返します `200 OK` 。</span><span class="sxs-lookup"><span data-stu-id="3940e-169">If successful, this method returns `200 OK`.</span></span> <span data-ttu-id="3940e-170">応答本文には、更新されたプロパティを持つインシデント エンティティが含まれる。</span><span class="sxs-lookup"><span data-stu-id="3940e-170">The response body will contain the incident entity with updated properties.</span></span> <span data-ttu-id="3940e-171">指定された ID のインシデントが見つからなかった場合、メソッドは返します `404 Not Found` 。</span><span class="sxs-lookup"><span data-stu-id="3940e-171">If an incident with the specified ID wasn't found, the method returns `404 Not Found`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="de2f6-167">応答</span><span class="sxs-lookup"><span data-stu-id="de2f6-167">Response</span></span>
-<span data-ttu-id="de2f6-168">成功した場合、このメソッドは 200 OK と、応答本文で、更新されたプロパティを持つ incident エンティティを返します。</span><span class="sxs-lookup"><span data-stu-id="de2f6-168">If successful, this method returns 200 OK, and the incident entity in the response body with the updated properties.</span></span> <span data-ttu-id="de2f6-169">指定した id の incident が見つからない場合は、404が見つかりません。</span><span class="sxs-lookup"><span data-stu-id="de2f6-169">If incident with the specified id was not found - 404 Not Found.</span></span>
+## <a name="example"></a><span data-ttu-id="3940e-172">例</span><span class="sxs-lookup"><span data-stu-id="3940e-172">Example</span></span>
 
+<span data-ttu-id="3940e-173">**要求**</span><span class="sxs-lookup"><span data-stu-id="3940e-173">**Request**</span></span>
 
-## <a name="example"></a><span data-ttu-id="de2f6-170">例</span><span class="sxs-lookup"><span data-stu-id="de2f6-170">Example</span></span>
+<span data-ttu-id="3940e-174">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3940e-174">Here's an example of the request.</span></span>
 
-<span data-ttu-id="de2f6-171">**要求**</span><span class="sxs-lookup"><span data-stu-id="de2f6-171">**Request**</span></span>
-
-<span data-ttu-id="de2f6-172">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="de2f6-172">Here is an example of the request.</span></span>
-
-```
+```HTTP
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
+
+<span data-ttu-id="3940e-175">**応答**</span><span class="sxs-lookup"><span data-stu-id="3940e-175">**Response**</span></span>
 
 ```json
 {
@@ -114,7 +111,11 @@ PATCH /api/incidents/{id}
 }
 ```
 
+## <a name="related-articles"></a><span data-ttu-id="3940e-176">関連記事</span><span class="sxs-lookup"><span data-stu-id="3940e-176">Related articles</span></span>
 
-## <a name="related-topic"></a><span data-ttu-id="de2f6-173">関連トピック</span><span class="sxs-lookup"><span data-stu-id="de2f6-173">Related topic</span></span>
-- [<span data-ttu-id="de2f6-174">インシデント API</span><span class="sxs-lookup"><span data-stu-id="de2f6-174">Incident APIs</span></span>](api-incident.md)
-- [<span data-ttu-id="de2f6-175">インシデントを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="de2f6-175">List incidents</span></span>](api-list-incidents.md)
+- [<span data-ttu-id="3940e-177">Microsoft 365 Defender API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="3940e-177">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
+- [<span data-ttu-id="3940e-178">API の制限とライセンスについて</span><span class="sxs-lookup"><span data-stu-id="3940e-178">Learn about API limits and licensing</span></span>](api-terms.md)
+- [<span data-ttu-id="3940e-179">エラー コードを理解する</span><span class="sxs-lookup"><span data-stu-id="3940e-179">Understand error codes</span></span>](api-error-codes.md)
+- [<span data-ttu-id="3940e-180">インシデント API</span><span class="sxs-lookup"><span data-stu-id="3940e-180">Incident APIs</span></span>](api-incident.md)
+- [<span data-ttu-id="3940e-181">インシデントを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="3940e-181">List incidents</span></span>](api-list-incidents.md)
+- [<span data-ttu-id="3940e-182">インシデントの概要</span><span class="sxs-lookup"><span data-stu-id="3940e-182">Incidents overview</span></span>](incidents-overview.md)

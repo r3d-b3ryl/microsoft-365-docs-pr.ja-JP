@@ -1,7 +1,7 @@
 ---
-title: 高度な検索 Api
-description: Microsoft 365 Defender API を使用して高度な検索クエリを実行する方法について説明します。
-keywords: 高度な検索、Api、api、MTP
+title: Microsoft 365 Defender 高度なハンティング API
+description: Microsoft 365 Defender の高度な検索 API を使用して高度な検索クエリを実行する方法について説明します。
+keywords: 高度な検索、API、api、MTP、M365 Defender、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,78 +19,89 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e7cd9192ec25e01ed06b77cb2b39357cb9df79bd
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844034"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719382"
 ---
-# <a name="advanced-hunting-apis"></a><span data-ttu-id="ff589-104">高度な検索 Api</span><span class="sxs-lookup"><span data-stu-id="ff589-104">Advanced hunting APIs</span></span>
+# <a name="microsoft-365-defender-advanced-hunting-api"></a><span data-ttu-id="908bc-104">Microsoft 365 Defender 高度なハンティング API</span><span class="sxs-lookup"><span data-stu-id="908bc-104">Microsoft 365 Defender Advanced hunting API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+<span data-ttu-id="908bc-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="908bc-105">**Applies to:**</span></span>
 
-<span data-ttu-id="ff589-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="ff589-105">**Applies to:**</span></span>
-- <span data-ttu-id="ff589-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="ff589-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="908bc-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="908bc-106">Microsoft Threat Protection</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="ff589-107">一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="ff589-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="ff589-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="ff589-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="908bc-107">一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="908bc-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="908bc-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="908bc-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
-## <a name="limitations"></a><span data-ttu-id="ff589-109">制限事項</span><span class="sxs-lookup"><span data-stu-id="ff589-109">Limitations</span></span>
-1. <span data-ttu-id="ff589-110">クエリは、過去30日間のデータに対してのみ実行できます。</span><span class="sxs-lookup"><span data-stu-id="ff589-110">You can only run a query on data from the last 30 days.</span></span>
-2. <span data-ttu-id="ff589-111">結果には最大10万行が含まれます。</span><span class="sxs-lookup"><span data-stu-id="ff589-111">The results will include a maximum of 100,000 rows.</span></span>
-3. <span data-ttu-id="ff589-112">実行回数は、テナントによって制限されます。1分あたり最大10件の通話、1時間ごとに10分の時間、実行時間は1日に4時間。</span><span class="sxs-lookup"><span data-stu-id="ff589-112">The number of executions is limited per tenant: up to 10 calls per minute, 10 minutes of running time every hour and 4 hours of running time a day.</span></span>
-4. <span data-ttu-id="ff589-113">1回の要求の最大実行時間は10分です。</span><span class="sxs-lookup"><span data-stu-id="ff589-113">The maximal execution time of a single request is 10 minutes.</span></span>
-5. <span data-ttu-id="ff589-114">429応答は、要求数または CPU によってクォータ制限値に達したことを表します。</span><span class="sxs-lookup"><span data-stu-id="ff589-114">429 response will represent reaching quota limit either by number of requests or by CPU.</span></span> <span data-ttu-id="ff589-115">また、429応答本文は、クォータが更新されるまでの時間も示します。</span><span class="sxs-lookup"><span data-stu-id="ff589-115">The 429 response body will also indicate the time until the quota is renewed.</span></span> 
+<span data-ttu-id="908bc-109">[高度な検索](advanced-hunting-overview.md)は、特別に構築されたクエリ[](advanced-hunting-query-language.md)を使用して、Microsoft 365 Defender の過去 30 日間のイベント データを調べる脅威検索ツールです。</span><span class="sxs-lookup"><span data-stu-id="908bc-109">[Advanced hunting](advanced-hunting-overview.md) is a threat-hunting tool that uses [specially constructed queries](advanced-hunting-query-language.md) to examine the past 30 days of event data in Microsoft 365 Defender.</span></span> <span data-ttu-id="908bc-110">高度な検索クエリを使用すると、異常なアクティビティの検査、脅威の検出、攻撃への対応を行います。</span><span class="sxs-lookup"><span data-stu-id="908bc-110">You can use advanced hunting queries to inspect unusual activity, detect possible threats, and even respond to attacks.</span></span> <span data-ttu-id="908bc-111">高度なハンティング API を使用すると、プログラムでイベント データをクエリできます。</span><span class="sxs-lookup"><span data-stu-id="908bc-111">The advanced hunting API allows you to programatically query event data.</span></span>
 
+## <a name="quotas-and-resource-allocation"></a><span data-ttu-id="908bc-112">クォータとリソース割り当て</span><span class="sxs-lookup"><span data-stu-id="908bc-112">Quotas and resource allocation</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ff589-116">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ff589-116">Permissions</span></span>
-<span data-ttu-id="ff589-117">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="ff589-117">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="ff589-118">アクセス許可の選択方法を含む詳細については、「 [Microsoft 365 Defender Api へのアクセス](api-access.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff589-118">To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender APIs](api-access.md)</span></span>
+<span data-ttu-id="908bc-113">次の条件は、すべてのクエリに関連します。</span><span class="sxs-lookup"><span data-stu-id="908bc-113">The following conditions relate to all queries.</span></span>
 
-<span data-ttu-id="ff589-119">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ff589-119">Permission type</span></span> |   <span data-ttu-id="ff589-120">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ff589-120">Permission</span></span>  |   <span data-ttu-id="ff589-121">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="ff589-121">Permission display name</span></span>
-:---|:---|:---
-<span data-ttu-id="ff589-122">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ff589-122">Application</span></span> |   <span data-ttu-id="ff589-123">AdvancedHunting</span><span class="sxs-lookup"><span data-stu-id="ff589-123">AdvancedHunting.Read.All</span></span> |  <span data-ttu-id="ff589-124">[高度なクエリを実行する]</span><span class="sxs-lookup"><span data-stu-id="ff589-124">'Run advanced queries'</span></span>
-<span data-ttu-id="ff589-125">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ff589-125">Delegated (work or school account)</span></span> | <span data-ttu-id="ff589-126">AdvancedHunting</span><span class="sxs-lookup"><span data-stu-id="ff589-126">AdvancedHunting.Read</span></span> | <span data-ttu-id="ff589-127">[高度なクエリを実行する]</span><span class="sxs-lookup"><span data-stu-id="ff589-127">'Run advanced queries'</span></span>
+1. <span data-ttu-id="908bc-114">クエリは、過去 30 日間のデータを探索して返します。</span><span class="sxs-lookup"><span data-stu-id="908bc-114">Queries explore and return data from the past 30 days.</span></span>
+2. <span data-ttu-id="908bc-115">結果は最大 100,000 行を返します。</span><span class="sxs-lookup"><span data-stu-id="908bc-115">Results can return up to 100,000 rows.</span></span>
+3. <span data-ttu-id="908bc-116">テナントごとに 1 分あたり最大 10 回の呼び出しを行える。</span><span class="sxs-lookup"><span data-stu-id="908bc-116">You can make up to 10 calls per minute per tenant.</span></span>
+4. <span data-ttu-id="908bc-117">テナントごとに 1 時間あたり 10 分の実行時間があります。</span><span class="sxs-lookup"><span data-stu-id="908bc-117">You have 10 minutes of running time per hour per tenant.</span></span>
+5. <span data-ttu-id="908bc-118">テナントごとに 1 日の合計 4 時間の実行時間があります。</span><span class="sxs-lookup"><span data-stu-id="908bc-118">You have four total hours of running time day per tenant.</span></span>
+6. <span data-ttu-id="908bc-119">1 つの要求が 10 分を超える間実行される場合、その要求はタイム アウトし、エラーを返します。</span><span class="sxs-lookup"><span data-stu-id="908bc-119">If a single request runs for more than 10 minutes, it will time out and return an error.</span></span>
+7. <span data-ttu-id="908bc-120">HTTP 応答コードは、送信された要求の数または割り当てられた実行時間によってクォータに達 `429` したかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="908bc-120">A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time.</span></span> <span data-ttu-id="908bc-121">応答本文には、到達したクォータがリセットされるまでの時間が含まれます。</span><span class="sxs-lookup"><span data-stu-id="908bc-121">The response body will include the time until the quota you reached will be reset.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="908bc-122">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="908bc-122">Permissions</span></span>
+
+<span data-ttu-id="908bc-123">高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="908bc-123">One of the following permissions is required to call the advanced hunting API.</span></span> <span data-ttu-id="908bc-124">アクセス許可の選択方法など、詳細については[、「Microsoft 365 Defender Protection API](api-access.md)へのアクセス」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="908bc-124">To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender Protection APIs](api-access.md)</span></span>
+
+<span data-ttu-id="908bc-125">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="908bc-125">Permission type</span></span> | <span data-ttu-id="908bc-126">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="908bc-126">Permission</span></span> | <span data-ttu-id="908bc-127">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="908bc-127">Permission display name</span></span>
+-|-|-
+<span data-ttu-id="908bc-128">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="908bc-128">Application</span></span> | <span data-ttu-id="908bc-129">AdvancedHunting.Read.All</span><span class="sxs-lookup"><span data-stu-id="908bc-129">AdvancedHunting.Read.All</span></span> | <span data-ttu-id="908bc-130">高度なクエリを実行する</span><span class="sxs-lookup"><span data-stu-id="908bc-130">Run advanced queries</span></span>
+<span data-ttu-id="908bc-131">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="908bc-131">Delegated (work or school account)</span></span> | <span data-ttu-id="908bc-132">AdvancedHunting.Read</span><span class="sxs-lookup"><span data-stu-id="908bc-132">AdvancedHunting.Read</span></span> | <span data-ttu-id="908bc-133">高度なクエリを実行する</span><span class="sxs-lookup"><span data-stu-id="908bc-133">Run advanced queries</span></span>
 
 >[!Note]
-> <span data-ttu-id="ff589-128">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="ff589-128">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="ff589-129">ユーザーは ' View Data ' AD の役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ff589-129">The user needs to have 'View Data' AD role</span></span>
->- <span data-ttu-id="ff589-130">ユーザーはデバイスグループの設定に基づいて、デバイスへのアクセス権を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ff589-130">The user needs to have access to the device, based on device group settings.</span></span>
+> <span data-ttu-id="908bc-134">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="908bc-134">When obtaining a token using user credentials:</span></span>
+>
+>- <span data-ttu-id="908bc-135">ユーザーは"データの表示" 役割を持ADがあります。</span><span class="sxs-lookup"><span data-stu-id="908bc-135">The user needs to have the 'View Data' AD role</span></span>
+>- <span data-ttu-id="908bc-136">ユーザーは、デバイス グループの設定に基づいて、デバイスにアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="908bc-136">The user needs to have access to the device, based on device group settings.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ff589-131">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ff589-131">HTTP request</span></span>
-```
+## <a name="http-request"></a><span data-ttu-id="908bc-137">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="908bc-137">HTTP request</span></span>
+
+```HTTP
 POST https://api.security.microsoft.com/api/advancedhunting/run
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ff589-132">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ff589-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="908bc-138">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="908bc-138">Request headers</span></span>
 
-<span data-ttu-id="ff589-133">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ff589-133">Header</span></span> | <span data-ttu-id="ff589-134">値</span><span class="sxs-lookup"><span data-stu-id="ff589-134">Value</span></span> 
-:---|:---
-<span data-ttu-id="ff589-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="ff589-135">Authorization</span></span> | <span data-ttu-id="ff589-136">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="ff589-136">Bearer {token}.</span></span> <span data-ttu-id="ff589-137">**必須** 。</span><span class="sxs-lookup"><span data-stu-id="ff589-137">**Required**.</span></span>
-<span data-ttu-id="ff589-138">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ff589-138">Content-Type</span></span>    | <span data-ttu-id="ff589-139">application/json</span><span class="sxs-lookup"><span data-stu-id="ff589-139">application/json</span></span>
+<span data-ttu-id="908bc-139">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="908bc-139">Header</span></span> | <span data-ttu-id="908bc-140">値</span><span class="sxs-lookup"><span data-stu-id="908bc-140">Value</span></span>
+-|-
+<span data-ttu-id="908bc-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="908bc-141">Authorization</span></span> | <span data-ttu-id="908bc-142">Bearer {token} **注: 必須**</span><span class="sxs-lookup"><span data-stu-id="908bc-142">Bearer {token} **Note: required**</span></span>
+<span data-ttu-id="908bc-143">Content-Type</span><span class="sxs-lookup"><span data-stu-id="908bc-143">Content-Type</span></span> | <span data-ttu-id="908bc-144">application/json</span><span class="sxs-lookup"><span data-stu-id="908bc-144">application/json</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="ff589-140">要求本文</span><span class="sxs-lookup"><span data-stu-id="ff589-140">Request body</span></span>
-<span data-ttu-id="ff589-141">要求本文で、次のパラメーターを使用して JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="ff589-141">In the request body, supply a JSON object with the following parameters:</span></span>
+## <a name="request-body"></a><span data-ttu-id="908bc-145">要求本文</span><span class="sxs-lookup"><span data-stu-id="908bc-145">Request body</span></span>
 
-<span data-ttu-id="ff589-142">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff589-142">Parameter</span></span> | <span data-ttu-id="ff589-143">型</span><span class="sxs-lookup"><span data-stu-id="ff589-143">Type</span></span>    | <span data-ttu-id="ff589-144">説明</span><span class="sxs-lookup"><span data-stu-id="ff589-144">Description</span></span>
-:---|:---|:---
-<span data-ttu-id="ff589-145">クエリ</span><span class="sxs-lookup"><span data-stu-id="ff589-145">Query</span></span> | <span data-ttu-id="ff589-146">テキスト</span><span class="sxs-lookup"><span data-stu-id="ff589-146">Text</span></span> |  <span data-ttu-id="ff589-147">実行するクエリを示します。</span><span class="sxs-lookup"><span data-stu-id="ff589-147">The query to run.</span></span> <span data-ttu-id="ff589-148">**必須** 。</span><span class="sxs-lookup"><span data-stu-id="ff589-148">**Required**.</span></span>
+<span data-ttu-id="908bc-146">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="908bc-146">In the request body, supply a JSON object with the following parameters:</span></span>
 
-## <a name="response"></a><span data-ttu-id="ff589-149">応答</span><span class="sxs-lookup"><span data-stu-id="ff589-149">Response</span></span>
-<span data-ttu-id="ff589-150">成功した場合、このメソッドは 200 OK を返し、応答本文で _Queryresponse_ オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ff589-150">If successful, this method returns 200 OK, and _QueryResponse_ object in the response body.</span></span> <br><br>
+<span data-ttu-id="908bc-147">パラメーター</span><span class="sxs-lookup"><span data-stu-id="908bc-147">Parameter</span></span> | <span data-ttu-id="908bc-148">型</span><span class="sxs-lookup"><span data-stu-id="908bc-148">Type</span></span> | <span data-ttu-id="908bc-149">説明</span><span class="sxs-lookup"><span data-stu-id="908bc-149">Description</span></span>
+-|-|-
+<span data-ttu-id="908bc-150">クエリ</span><span class="sxs-lookup"><span data-stu-id="908bc-150">Query</span></span> | <span data-ttu-id="908bc-151">テキスト</span><span class="sxs-lookup"><span data-stu-id="908bc-151">Text</span></span> | <span data-ttu-id="908bc-152">実行するクエリ。</span><span class="sxs-lookup"><span data-stu-id="908bc-152">The query to run.</span></span> <span data-ttu-id="908bc-153">**注: 必須**</span><span class="sxs-lookup"><span data-stu-id="908bc-153">**Note: required**</span></span>
 
-<span data-ttu-id="ff589-151">Response オブジェクトは3つの部分 (プロパティ) に分かれています。</span><span class="sxs-lookup"><span data-stu-id="ff589-151">The response object is divided to 3 parts (properties):</span></span><br>
-1) <span data-ttu-id="ff589-152">```Stats``` -クエリパフォーマンス統計。</span><span class="sxs-lookup"><span data-stu-id="ff589-152">```Stats``` - Query performance statistics.</span></span><br>
-2) <span data-ttu-id="ff589-153">```Schema``` -応答のスキーマ。各列の Name-Type のペアのリスト。</span><span class="sxs-lookup"><span data-stu-id="ff589-153">```Schema``` - The schema of the response, a list of Name-Type pairs for each column.</span></span> <br>
-3) <span data-ttu-id="ff589-154">```Results``` -高度な検索イベントのリスト。</span><span class="sxs-lookup"><span data-stu-id="ff589-154">```Results``` - A list of Advanced Hunting events.</span></span>
+## <a name="response"></a><span data-ttu-id="908bc-154">応答</span><span class="sxs-lookup"><span data-stu-id="908bc-154">Response</span></span>
 
-## <a name="example"></a><span data-ttu-id="ff589-155">例</span><span class="sxs-lookup"><span data-stu-id="ff589-155">Example</span></span>
+<span data-ttu-id="908bc-155">成功した場合、このメソッドは応答本文で `200 OK` _QueryResponse_ オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="908bc-155">If successful, this method will return `200 OK`, and a _QueryResponse_ object in the response body.</span></span>
 
-<span data-ttu-id="ff589-156">要求</span><span class="sxs-lookup"><span data-stu-id="ff589-156">Request</span></span>
+<span data-ttu-id="908bc-156">応答オブジェクトには、次の 3 つのトップ レベル プロパティが含まれる。</span><span class="sxs-lookup"><span data-stu-id="908bc-156">The response object contains three top-level properties:</span></span>
 
-<span data-ttu-id="ff589-157">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ff589-157">Here is an example of the request.</span></span>
+1. <span data-ttu-id="908bc-157">統計 : クエリ パフォーマンス統計のディクショナリです。</span><span class="sxs-lookup"><span data-stu-id="908bc-157">Stats - A dictionary of query performance statistics.</span></span>
+2. <span data-ttu-id="908bc-158">スキーマ : 応答のスキーマ、各列のName-Typeのリスト。</span><span class="sxs-lookup"><span data-stu-id="908bc-158">Schema - The schema of the response, a list of Name-Type pairs for each column.</span></span>
+3. <span data-ttu-id="908bc-159">結果 - 高度な検索イベントの一覧。</span><span class="sxs-lookup"><span data-stu-id="908bc-159">Results - A list of advanced hunting events.</span></span>
 
+## <a name="example"></a><span data-ttu-id="908bc-160">例</span><span class="sxs-lookup"><span data-stu-id="908bc-160">Example</span></span>
+
+<span data-ttu-id="908bc-161">次の例では、ユーザーが以下のクエリを送信し、, を含む API 応答 `Stats` オブジェクト `Schema` を受け取ります `Results` 。</span><span class="sxs-lookup"><span data-stu-id="908bc-161">In the following example, a user sends the query below and receives an API response object containing `Stats`, `Schema`, and `Results`.</span></span>
+
+### <a name="query"></a><span data-ttu-id="908bc-162">クエリ</span><span class="sxs-lookup"><span data-stu-id="908bc-162">Query</span></span>
 
 ```json
 {
@@ -99,10 +110,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 ```
 
-<span data-ttu-id="ff589-158">応答</span><span class="sxs-lookup"><span data-stu-id="ff589-158">Response</span></span>
-
-<span data-ttu-id="ff589-159">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="ff589-159">Here is an example of the response.</span></span>
-
+### <a name="response-object"></a><span data-ttu-id="908bc-163">Response オブジェクト</span><span class="sxs-lookup"><span data-stu-id="908bc-163">Response object</span></span>
 
 ```json
 {
@@ -164,8 +172,11 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
         }
     ]
 }
-
 ```
 
-## <a name="related-topic"></a><span data-ttu-id="ff589-160">関連トピック</span><span class="sxs-lookup"><span data-stu-id="ff589-160">Related topic</span></span>
-- [<span data-ttu-id="ff589-161">Microsoft 365 Defender Api にアクセスする</span><span class="sxs-lookup"><span data-stu-id="ff589-161">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
+## <a name="related-articles"></a><span data-ttu-id="908bc-164">関連記事</span><span class="sxs-lookup"><span data-stu-id="908bc-164">Related articles</span></span>
+
+- [<span data-ttu-id="908bc-165">Microsoft 365 Defender API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="908bc-165">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
+- [<span data-ttu-id="908bc-166">API の制限とライセンスについて</span><span class="sxs-lookup"><span data-stu-id="908bc-166">Learn about API limits and licensing</span></span>](api-terms.md)
+- [<span data-ttu-id="908bc-167">エラー コードを理解する</span><span class="sxs-lookup"><span data-stu-id="908bc-167">Understand error codes</span></span>](api-error-codes.md)
+- [<span data-ttu-id="908bc-168">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="908bc-168">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
