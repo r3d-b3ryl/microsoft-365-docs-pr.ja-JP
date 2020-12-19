@@ -1,4 +1,4 @@
-- name: Microsoft SharePoint の同期 Tex について
+- name: Microsoft SharePoint Syntex でのフォーム処理について学ぶ
   items:
     - name: SharePoint Syntex の概要
       href: index.md
@@ -8,17 +8,17 @@
       href: form-processing-overview.md
     - name: ドキュメント理解とフォーム処理モデルの違い
       href: difference-between-document-understanding-and-form-processing-model.md
-- name: モデルの使用を開始する
+- name: モデルから始める
   items:
-    - name: サンプルモデルを使用したモデルについて
+    - name: サンプルモデルを使用して、モデルについて学ぶ
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: コンテンツ センターを作成する
       href: create-a-content-center.md
     - name: 分類子を作成する
       href: create-a-classifier.md
-    - name: エクストラクターを作成する
+    - name: 抽出子を作成する
       href: create-an-extractor.md
-    - name: 説明のタイプ
+    - name: 説明の種類
       href: explanation-types-overview.md
     - name: モデルを適用する
       href: apply-a-model.md
@@ -32,19 +32,19 @@
       href: leverage-term-store-taxonomy.md
 - name: 導入
   items:
-    - name: 導入を始める
+    - name: 導入を開始する
       href: adoption-getstarted.md
-- name: セットアップと管理
+- name: 設定と管理
   items:
     - name: コンテンツの理解をセットアップする
       href: set-up-content-understanding.md
-- name: コンテンツ サービス
+- name: コンテンツサービス
   items:
-    - name: SKOS を使用したインポート
+    - name: SKOS を使用してインポートする
       href: import-term-set-skos.md
-    - name: SKOS 書式設定のリファレンス
+    - name: SKOS フォーマット リファレンス
       href: skos-format-reference.md
-    - name: コンテンツタイプをハブにプッシュ
+    - name: コンテンツタイプをハブにプッシュする
       href: push-content-type-to-hub.md
     - name: 用語ストア レポート
       href: term-store-analytics.md
