@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Office 365 Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Microsoft 365 暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
-ms.openlocfilehash: 25568d4e39c2fe7ca2dea214276be5d7f6986518
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: e1f222595479ce525b38ab97971c998f77c78581
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663022"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709581"
 ---
 # <a name="email-encryption"></a>メールの暗号化
 
-この記事では、Office Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Microsoft 365 での暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
+この記事では、Office 365 Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Microsoft 365 での暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
   
 Microsoft 365 では、電子メールのセキュリティのビジネス ニーズを満たすために複数の暗号化オプションが提供されています。 この記事では、Office 365 でメールを暗号化する 3 つの方法を紹介します。 Office 365 のすべてのセキュリティ機能については、[Office 365 トラスト センター](https://go.microsoft.com/fwlink/p/?LinkID=282470)にアクセスしてください。 この記事では、Microsoft 365 管理者が Office 365 で電子メールを保護する上で役立つ次の 3 つの種類の暗号化を紹介します。
   
@@ -38,7 +38,7 @@ Microsoft 365 では、電子メールのセキュリティのビジネス ニ�
 
 - Information Rights Management (IRM)。
 
-## <a name="what-is-email-encryption-and-how-does-microsoft-365-use-it"></a>電子メールの暗号化とはどのようなもので、Microsoft 365 ではどのように使用しますか?
+## <a name="how-microsoft-365-uses-email-encryption"></a>Microsoft 365 のメール暗号化の 使用方法
 
 暗号化とは、認証された受信者だけが特定の情報をデコードおよび利用できるようにその情報をエンコードするプロセスのことです。 Microsoft 365 では、サービスでの使用とカスタマー コントロールとしての使用の 2 つの方法で暗号化を使用します。 サービスでは、暗号化は Microsoft 365 で既定で使用されるため、ユーザーによる設定は特に必要ありません。 たとえば、Microsoft 365 はトランスポート層セキュリティ (TLS) を使用して、2 つのサーバー間の接続またはセッションを暗号化します。 
   
@@ -60,7 +60,7 @@ Microsoft 365 内の組織間、または Microsoft 365 と Microsoft 365 外部
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>Office 365 で使用可能な電子メール暗号化オプションの比較
 
-||![OME を説明する概念アートワーク](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![IRM を説明する概念アートワーク](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![SMIME を説明する概念アートワーク](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
+|メール暗号化技術|![OME を説明する概念アートワーク](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![IRM を説明する概念アートワーク](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![SMIME を説明する概念アートワーク](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
 |:-----|:-----|:-----|:-----|
 |暗号化オプションの説明|Office 365 Message Encryption (OME) は、Azure Rights Management (Azure RMS) で構築され、宛先のメール アドレス (Gmail、Yahoo! Mail、Outlook.com など) に関係なく、暗号化された電子メールを組織内外の宛先に送信できるようにするサービスです。 <br/> 管理者は、暗号化の条件を定義するトランスポート ルールを設定できます。ユーザーがルールに一致するメッセージを送信する場合、自動的に暗号化が適用されます。 <br/> 暗号化メッセージを表示するために、受信者は 1 回限りのパスコードを取得するか、Microsoft アカウントでサインインするか、Office 365 に関連付けられている職場または学校のアカウントでサインインできます。 受信者は暗号化された返事を送信することもできます。 暗号化されたメッセージを表示したり、暗号化された返信を送信するのに、受信者は Microsoft 365 サブスクリプションを必要としません。|IRM は、電子メール メッセージに使用制限の適用も行える暗号化ソリューションです。機密情報が権限のないユーザーによって印刷、転送、またはコピーされるのを防止します。 <br/> Microsoft 365 の IRM 機能には Azure Rights Management (Azure RMS) が使用されます。|S/MIME は証明書基盤の暗号化ソリューションであり、メッセージを暗号化し、デジタル署名できます。 メッセージを暗号化することで、本来の受信者だけがメッセージを開き、閲覧できます。 デジタル署名は、受信者が送信者の身元を確認するのに役立ちます。 <br/> デジタル署名と暗号化メッセージのいずれも、独自のデジタル証明書の利用により可能となります。この証明書には、デジタル署名を検証し、メッセージを暗号化し、復号化するための鍵が含まれています。 <br/> S/MIME を使用するには、受信者ごとにファイルに公開鍵を付ける必要があります。 受信者は独自の秘密キーを維持し、保護する必要があります。 受信者の秘密キーが危険にさらされた場合、受信者は新しい秘密キーを取得し、すべての潜在的な送信者に公開キーを再配布する必要があります。|
 |この機能について|OME: <br/> 内部または外部の受信者に送信されたメッセージを暗号化します。 <br/>  ユーザーは Outlook.com、Yahoo! Mail、および Gmail を含むすべての電子メール アドレスに暗号化されたメッセージを送信できます。 <br/>  管理者であれば、組織のブランドを反映するように電子メール表示ポータルをカスタマイズできます。 <br/> Microsoft がキーを安全に管理および格納するため、ユーザーがそうする必要はありません。 <br/> 暗号化されたメッセージ (HTML 添付ファイルとして送信済み) をブラウザーで開くことができる場合は、クライアント側の特別なソフトウェアは必要ありません。|IRM: <br/> 暗号化と使用制限を利用し、電子メールのメッセージと添付ファイルをオンラインとオフラインで保護します。 <br/> 管理者には、自動的に IRM を適用してメッセージを選択するためのトランスポート ルールまたは Outlook 保護ルールを設定する権限が付与されます。 <br/> ユーザーは Outlook または Outlook on the web (旧称: Outlook Web App) で手動でテンプレートを適用できます。|S/MIME は、デジタル署名による送信者の認証および暗号化によるメッセージの機密性を処理します。|
