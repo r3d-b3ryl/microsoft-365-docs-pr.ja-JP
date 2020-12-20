@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: b05901ad8d42f481020178479df5d422fa68eb1a
+ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988669"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718500"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -32,7 +32,7 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 > [!NOTE]
 > 高度な監査は、Office 365 E5/G5 または Microsoft 365 Enterprise E5/G5のサブスクリプションを持つ組織で利用できます。 さらに、Microsoft 365 E5 コンプライアンス アドオン ライセンスや Microsoft 365 E5 eDiscovery and Audit アドオン ライセンスは、監査ログの長期保持や調査のための重要なイベントへのアクセスと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。 ライセンスの詳細については、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)」を参照してください。
 
-この記事では、高度な監査機能の概要について説明します。
+この記事では、高度な監査機能の概要を説明し、高度な監査用にユーザーを設定する方法を示します。
 
 ## <a name="long-term-retention-of-audit-logs"></a>監査ログの長期保持
 
@@ -140,6 +140,26 @@ Office 365 管理アクティビティ API を使用して監査ログにアク�
 すべての組織には、最初に 1 分あたり 2,000 件の要求のベースラインが割り当てられます。 この制限は、組織のシート数とライセンス サブスクリプションに応じて動的に増加します。 E5 組織は、E5 以外の組織の約 2 倍の帯域幅を利用できます。 また、サービスの正常性を保護するために、最大帯域幅の上限も設定されます。
 
 詳細については、「[Office 365 管理アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)」の「API 調整」のセクションを参照してください。
+
+## <a name="set-up-advanced-audit-for-users"></a>ユーザーの高度な監査のセットアップを行う
+
+MailItemsAccessed や Send などの重要なイベントをログに記録する機能などの高度な監査機能を使用するには、ユーザーに適切な E5 ライセンスが割り当てられている必要があります。 さらに、それらのユーザーに対して高度な監査アプリ/サービス プランを有効にする必要があります。 高度な監査アプリがユーザーに割り当てられていることを確認するには、ユーザーごとに次の手順を実行します。
+
+1. [Microsoft 365 管理センター](https://admin.microsoft.com/Adminportal)で、**[ユーザー]** > **[アクティブなユーザー]** の順に移動し、ユーザーを選択します。
+
+2. ユーザー プロパティのポップアップ ページで、**[ライセンスとアプリ]** をクリックします。
+
+3. **[ライセンス]** セクションで、ユーザーに E5 ライセンスが割り当てられていることを確認します。
+
+4. **[アプリ]** セクションを展開して、**[Microsoft 365 高度な監査]** チェック ボックスが選択されていることを確認します。
+
+5. そのチェック ボックスが選択されていない場合は、選択して **[変更の保存]** をクリックします。
+
+   ユーザーの MailItemsAccessed、Send、およびその他の重要なイベントの監査レコードのログ記録は、24 時間以内に開始されます。
+
+グループ ベースのライセンスを使用してユーザーのグループにライセンスを割り当てている組織では、グループに対する Microsoft 365 Advanced Auditing のライセンス割り当てをオフにする必要があります。 変更を保存したら、Microsoft 365 Advanced Auditing がグループに対してオフになっていることを確認します。 その後、グループに対するライセンス割り当てをもう一度オンにします。 グループ ベースのライセンスの手順については、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
+
+ユーザー メールボックスまたは共有メールボックスについてログに記録されるメールボックス操作をカスタマイズしている場合、MailItemsAccessed などの新しい既定のメールボックス操作は、これらのメールボックスでは自動的に監査されません。 ログオンの種類ごとに監査されるメールボックス操作の変更については、 「[メールボックスの監査を管理する](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)」の「既定でログに記録されるメールボックスの操作を変更または復元する」セクションを参照してください。
 
 ## <a name="faqs-for-advanced-audit"></a>高度な監査についてよく寄せられる質問
 
