@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 概要
+    - name: 作業の開始
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -223,10 +223,10 @@
               href: productivity/mobility.md
             - name: チームワーク
               href: productivity/teamwork.md
+            - name: 会議
+              href: productivity/meetings.md
             - name: Microsoft 365 Apps の正常性
               href: productivity/apps-health.md
-            - name: 任意の DNS ホストで DNS レコードを作成する
-              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
         - name: 組織の連絡先情報を変更する
           href: manage/change-address-contact-and-more.md
         - name: 管理者の連絡先情報を更新する
