@@ -106,6 +106,8 @@
           href: custom-sensitive-info-types.md
         - name: Exact Data Match によりカスタムの機密情報の種類を作成する
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: 完全一致スキーマと機密情報の種類ウィザードを使用する
+          href: sit-edm-wizard.md
         - name: 構成可能な一致を使用するために完全一致スキーマを変更する
           href: sit-modify-edm-schema-configurable-match.md
         - name: カスタムの機密情報の種類を作成する -セキュリティ/コンプライアンス センター
@@ -170,6 +172,8 @@
           href: office-365-service-encryption.md
         - name: 顧客キー
           items:
+            - name: 'テナント レベルの Microsoft 365 の [カスタマー]キー (パブリック プレビュー)'
+              href: customer-key-tenant-level.md
             - name: Office 365 のカスタマー キーによるサービスの暗号化
               href: customer-key-overview.md
             - name: Office 365 のカスタマー キーを設定する
