@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、およびドキュメント コラボレーション プラットフォームから Microsoft 365 メールボックスにサード パーティデータをインポートする方法について説明します。
-ms.openlocfilehash: 42835d103e027bd63687151554f811dc0945d46f
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 18fb9c757652cbebb456da18285444272766167f
+ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682618"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49722860"
 ---
 # <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 
@@ -61,9 +61,12 @@ Microsoft 365 を使用すると、管理者はデータ コネクタを使用�
 |[O2 ネットワーク <sup>1</sup>](archive-o2-network-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[物理的な問題](import-physical-badging-data.md) ||||||![チェック マーク](../media/checkmark.png)|
 |[Pivot <sup>2</sup>](archive-pivot-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Redtail Speak <sup>2</sup>](archive-redtailspeak-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Reuters Dealing <sup>2</sup>](archive-reutersdealing-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Reuters <sup>E、2</sup>](archive-reuterseikon-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
+|[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Slack 電子情報開示 <sup>2</sup>](archive-slack-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[2 <sup></sup>](archive-symphony-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[TELUS Network <sup>1</sup>](archive-telus-network-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -76,21 +79,22 @@ Microsoft 365 を使用すると、管理者はデータ コネクタを使用�
 |[Facebook <sup>2</sup>の Workplace](archive-workplacefromfacebook-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[XIP <sup>2</sup>](archive-xip-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[XSLT/XML <sup>2</sup>](archive-xslt-xml-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
+|[Yieldbroker <sup>2</sup>](archive-yieldbroker-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[会議<sup>2</sup>のズーム](archive-zoommeetings-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 ||||||||
 
 > [!NOTE]
-> <sup>TeleMessage</sup> によって提供される 1 つのデータ コネクタ。 Microsoft 365 でデータをアーカイブするには、TeleMessage を使用して組織のアーカイブ サービスをセットアップする必要があります。 詳細については、このデータ型の詳細な手順の前提条件のセクションを参照してください。<br/><br/><sup>2</sup> データ コネクタは Globanet によって提供されます。 Microsoft 365 でデータをアーカイブする前に、Globanet と一緒に組織のアーカイブ サービスをセットアップする必要があります。 詳細については、このデータ型の詳細な手順の前提条件のセクションを参照してください。
+> <sup>TeleMessage</sup> によって提供される 1 つのデータ コネクタ。 Microsoft 365 でデータをアーカイブするには、TeleMessage を使用して組織のアーカイブ サービスを設定する必要があります。 詳細については、このデータ型の詳細な手順の前提条件のセクションを参照してください。<br/><br/><sup>2</sup> データ コネクタは Globanet によって提供されます。 Microsoft 365 でデータをアーカイブする前に、Globanet と一緒に組織のアーカイブ サービスをセットアップする必要があります。 詳細については、このデータ型の詳細な手順の前提条件のセクションを参照してください。
 
 前の表に記載されているサードパーティのデータ (人事データと物理的な不良データを除く) は、ユーザー メールボックスにインポートされます。 サード パーティのデータをサポートする対応するコンプライアンス ソリューションは、データが保存されているユーザー メールボックスに適用されます。
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>サード パーティのデータをサポートするコンプライアンス ソリューションの概要
 
-次のセクションでは、Microsoft 365 コンプライアンス ソリューションが前の表に示したサード パーティデータの管理に役立ついくつかの点について説明します。
+次のセクションでは、Microsoft 365 コンプライアンス ソリューションが前の表に示したサード パーティのデータを管理するために役立ついくつかの点について説明します。
 
 ### <a name="litigation-hold"></a>訴訟ホールド
 
-サードパーティのデータ [を保持するには](create-a-litigation-hold.md) 、ユーザー メールボックスに訴訟ホールドを適用します。 保留リストを作成する場合は、保持期間 (時間ベースの保留とも呼 *ばれる)* を指定して、削除および変更されたサード パーティのデータを指定の期間保持し、メールボックスから完全に削除することができます。 または、コンテンツを無期限に保持する (無限保持と呼 *ばれる)* か、訴訟ホールドが削除されるまで保持できます。
+サードパーティのデータ [を保持するには](create-a-litigation-hold.md) 、ユーザー メールボックスに訴訟ホールドを適用します。 保留リストを作成する場合は、保持期間 (時間ベースの保留とも呼 *ばれる)* を指定して、削除および変更されたサード パーティのデータを指定の期間保持し、メールボックスから完全に削除することができます。 または、コンテンツを無期限に保持する (無限保留と呼 *ばれる)* か、訴訟ホールドが削除されるまで保持することができます。
 
 ### <a name="ediscovery"></a>電子情報開示
 
@@ -100,17 +104,17 @@ Microsoft 365 の 3 つの主要な電子情報開示ツールは、コンテン
 
 - **[コア電子情報開示](get-started-core-ediscovery.md)。** このツールは基本的な検索およびエクスポート機能に基づいて構築され、ケース データにアクセスできるユーザーを制御したり、検索条件に一致するユーザー メールボックスまたはメールボックスのコンテンツを保留にしたりできるケースを作成できます。 つまり、ユーザーのメールボックスにインポートされたサード パーティのデータを電子情報開示の保留にできます。
 
-- **[Advanced eDiscovery](overview-ediscovery-20.md).** この強力なツールを使用すると、ケースにカストディアンを追加し、保管担当者のデータを保留にし、カストディアンのサード パーティデータをレビューに読み込み、テーマや重複検出などの詳細な分析を行って、コア電子情報開示のケース機能を拡張できます。 サード パーティのデータをレビュー セットに読み込むと、クエリを実行して絞り込み結果セットにフィルター処理できます。
+- **[Advanced eDiscovery](overview-ediscovery-20.md).** この強力なツールを使用すると、ケースにカストディアンを追加し、保管担当者のデータを保留にし、カストディアンのサードパーティ データをレビューに読み込み、テーマや重複検出などの詳細な分析を行って、Core 電子情報開示のケース機能を拡張できます。 サード パーティのデータをレビュー セットに読み込むと、クエリを実行して絞り込み結果セットにフィルター処理できます。
 
    Core 電子情報開示と Advanced eDiscovery の両方を使用すると、組織の法的または内部的な調査に関連する可能性のあるサード パーティのデータを管理できます。
 
 ### <a name="retention-settings"></a>保持設定
 
-ユーザーメールボックス [にアイテム保持](retention.md) ポリシーを適用して、保持期間の経過後にサード パーティデータ (および他のメールボックスコンテンツ) を保持してから削除できます。 また、アイテム保持ポリシーを使用して、特定の年齢のサード パーティ データ[](disposition.md)を削除したり、保持ラベルを使用して、サード パーティデータの保持期間が経過した場合に廃棄レビューをトリガーすることもできます。
+ユーザーメールボックス [にアイテム保持](retention.md) ポリシーを適用して、保持期間の経過後にサード パーティのデータ (および他のメールボックスコンテンツ) を保持してから削除できます。 また、アイテム保持ポリシーを使用して、特定の年齢のサード パーティ データ[](disposition.md)を削除したり、保持ラベルを使用して、サード パーティデータの保持期間が経過した場合に廃棄レビューをトリガーすることもできます。
 
 ### <a name="records-management"></a>レコード管理
 
-Microsoft [](records-management.md) 365 のレコード管理機能を使用すると、サードパーティのデータをレコードとして宣言できます。 これは、メールボックス内のサードパーティ データをレコードとしてマークする保持ラベルを適用するユーザーが手動で行うことができます。 また、サードパーティデータ内の機密情報、キーワード、またはコンテンツ タイプを識別することで、保持ラベルを自動適用することもできます。
+Microsoft [](records-management.md) 365 のレコード管理機能を使用すると、サードパーティのデータをレコードとして宣言できます。 これは、メールボックス内のサードパーティ データをレコードとしてマークする保持ラベルを適用するユーザーが手動で行うことができます。 または、サードパーティデータ内の機密情報、キーワード、またはコンテンツ タイプを識別して保持ラベルを自動適用することもできます。
 
 ### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
 
@@ -118,7 +122,7 @@ Microsoft [](records-management.md) 365 のレコード管理機能を使用す�
 
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理
 
-インサイダー リスク管理ソリューションでは、選択的な人事データなどのサード パーティデータ[](insider-risk-management.md)からのシグナルを使用して、組織内のリスクの高いアクティビティを検出、調査、および処理することで内部リスクを最小限に抑えるために使用できます。 たとえば、人事データ コネクタによってインポートされたデータは、従業員データの盗難を検出するのに役立つリスク インジケーターとして使用されます。
+インサイダー リスク管理ソリューションでは、選択人事データなどのサード パーティデータからの[](insider-risk-management.md)シグナルを使用して内部リスクを最小限に抑え、組織内の危険な活動を検出、調査、および処理することができます。 たとえば、人事データ コネクタによってインポートされたデータは、従業員データの盗難を検出するのに役立つリスク インジケーターとして使用されます。
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと提携してサード パーティのデータをアーカイブする
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 の新機能
 description: Microsoft Defender for Office 365 の最新リリースで利用可能な新機能について説明します。
-keywords: Office 365 の新機能 atp、ga、一般提供、機能、利用可能、新規
+keywords: Office 365 atp の新機能, ga, 一般提供, 機能, 利用可能, 新規
 search.appverid: met150
 ms.service: O365-seccomp
 ms.sitesec: library
@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
+ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615554"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49724404"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -36,78 +36,78 @@ ms.locfileid: "49615554"
 
 - [Microsoft Defender for Office 365](office-365-atp.md)
 
-この記事では、Microsoft Defender for Office 365 の最新リリースの新機能の一覧を示します。 現在プレビューされている機能は、 **(プレビュー)** で示されています。
+この記事では、Microsoft Defender for Office 365 の最新リリースの新機能の一覧を示します。 現在プレビュー中の機能は、(プレビュー) **で示されています**。
 
 > [!TIP]
-> Microsoft Defender for Office 365 はまだお持ちではありませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。
+> Microsoft Defender for Office 365 をまだお持ちではないですか? [試用版を開始するために営業に問い合わせ。](https://go.microsoft.com/fwlink/p/?LinkId=518644)
 
-## <a name="november-2020"></a>2020年11月
+## <a name="november-2020"></a>2020 年 11 月
 
-- 「レビュー > アクションセンターでのメール送信およびアクションログからの修復 > の更新のエクスポートの制限 (Office 365 プラン2の Defender の場合)」を参照してください。
+- Review > Action Center > Remediation from Mail Submission and Action Log (Defender for Office 365 Plan 2) のエクスポート制限を更新しました
 
-## <a name="septemberoctober-2020"></a>2020年9月/10 月
+## <a name="septemberoctober-2020"></a>2020 年 9 月/10 月
 
-- [構成アナライザーを使用してポリシーを確認する](configuration-analyzer-for-security-policies.md)
-- [テナントの許可/ブロックリストを使用してフィルター verdicts を手動で上書きする](tenant-allow-block-list.md)
-- [上位の対象ユーザー、トランスポートルール、およびコネクタ](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) 365 ( [脅威エクスプローラ](threat-explorer.md) ではメールが許可/ブロックされています (電子メールはテナント/ユーザーポリシーによって禁止またはブロックされています) を含む、脅威エクスプローラーの拡張機能 (office 365 プラン2のための defender)
-- [脅威エクスプローラ](threat-explorer.md#threats-in-urls)で URL の脅威を提示する (マルウェア、フィッシング、スパム、または none) (Office 365 プラン2の Defender の場合)
-- 脅威、追加の操作、配信場所、更新されたタイムラインビュー (Office 365 プラン 2) に関連する更新プログラムを使用した、探しているアプリ[エクスプローラーの機能強化](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming)
+- [Configuration Analyzer を使用してポリシーを確認する](configuration-analyzer-for-security-policies.md)
+- [テナントの許可/ブロックリストを使用してフィルターの判断を手動で上書きする](tenant-allow-block-list.md)
+- 対象となる上位ユーザー、トランスポート ルール、コネクタを含む脅威エクスプローラーの拡張機能[(Defender](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) for Office 365 の情報[(テナント](threat-explorer.md)/ユーザー ポリシーによってメールが許可/ブロックされました) (Defender for Office 365 プラン 2)
+- 脅威エクスプローラーで URL の脅威 [(マルウェア](threat-explorer.md#threats-in-urls) 、フィッシング、スパム、またはなし) を表示する (Defender for Office 365 プラン 2)
+- [脅威、追加アクション](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) 、配信場所、更新されたタイムライン ビューに関する更新を含む、ハンティング エクスペリエンス脅威エクスプローラーの機能強化 (Defender for Office 365 プラン 2)
 
-## <a name="julyaugust-2020"></a>2020年7月/8 月
+## <a name="julyaugust-2020"></a>2020 年 7 月/8 月
 
-- お[探しの環境が改善されました](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)(Microsoft Defender for Office 365 プラン1またはプラン 2)
-- [事前設定されたセキュリティポリシーを使用して推奨設定を簡単に適用する](preset-security-policies.md)
+- [ハンティング エクスペリエンスの](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) エクスペリエンスの向上 (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
+- [事前設定されたセキュリティ ポリシーを使用して推奨設定を簡単に適用する](preset-security-policies.md)
 
-## <a name="marchapril-2020"></a>2020年3月/4 月
+## <a name="marchapril-2020"></a>2020 年 3 月/4 月
 
-- [自動調査と応答を使用](address-compromised-users-quickly.md)して、侵害されたユーザーアカウントに対処する機能が一般に提供されるようになりました。 (Microsoft Defender for Office 365 プラン 2)
+- 侵害されたユーザー アカウントに自動調査と対応で対処 [する機能](address-compromised-users-quickly.md) が一般に利用可能になります。 (Microsoft Defender for Office 365 プラン 2)
 
-## <a name="januaryfebruary-2020"></a>2020年1月/年2月
+## <a name="januaryfebruary-2020"></a>2020 年 1 月/2 月
 
-- [Microsoft defender For office 365 のキャンペーンビューの一般的な利用可能性](campaigns.md) (microsoft Defender for Office 365 プラン 2)
-- セキュリティ運用チームが[電子メールの調査](investigate-malicious-email-that-was-delivered.md)時に複数のフィールドを検索およびフィルター処理できるようにするための[脅威エクスプローラー](threat-explorer.md)の機能強化: (Microsoft Defender for Office 365 プラン 2)
+- [Office 365](campaigns.md) 向け Microsoft Defender のキャンペーン ビューの一般提供 (Office 365 プラン 2 用 Microsoft Defender)
+- 脅威エクスプローラーの[](threat-explorer.md)機能強化により、セキュリティ運用チームは電子メールの調査中に複数のフィールドを検索およびフィルター処理できます[(Microsoft](investigate-malicious-email-that-was-delivered.md)Defender for Office 365 プラン 2)
   - 配信場所と特別なアクション
-  - 方向性 (受信、送信、または組織内)
-  - 高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。
-  - 詳細な時間フィルター (日、時間、半時間)
+  - 方向 (受信、送信、または組織内)
+  - 高度な NOT フィルター (含まれている、含めない、などを含む高度なフィルター オプション)
+  - 細分化された時間フィルター (日、時間、30 分)
 
-- **インシデント** ウィジェットは、**アクションセンター** ウィジェットとなりました。 (セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[ **脅威の管理** \> ] に移動します。 **レビュー**)(Microsoft Defender for Office 365 プラン 2)
+- インシデント **ウィジェットは** 、アクション センター **ウィジェット** です。 (セキュリティ ウィジェットを表示するには、セキュリティ & コンプライアンス センターで、[脅威の管理]**に移動します。** \>**Review**.)(Microsoft Defender for Office 365 プラン 2)
 
 - [Microsoft 365 の安全なドキュメント](safe-docs.md) **(プレビュー)**
 
 ## <a name="december-2019"></a>2019 年 12 月
 
-- [エクスポート URL [オフライン分析用のデータ] をクリックし](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) ます (Microsoft Defender for Office 365 プラン1またはプラン 2)
+- [オフライン分析用に URL クリック データ](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) をエクスポートする (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
 
-- [Microsoft defender For office 365 (**プレビュー**) でのキャンペーンビューの使用](campaigns.md) (microsoft Defender for office 365 プラン 2)
+- [Office 365 (プレビュー)](campaigns.md)に Microsoft Defender のキャンペーン ビューを使用する (Office 365 プラン 2 の Microsoft Defender)
 
 ## <a name="november-2019"></a>2019 年 11 月
 
-- 侵害された [ユーザーの検出と応答の機能](address-compromised-users-quickly.md)(**プレビュー**) を確認する (Microsoft Defender for Office 365 プラン 2)
+- [侵害された新しいユーザー検出](address-compromised-users-quickly.md) と対応機能 (**プレビュー**) を確認する (Microsoft Defender for Office 365 プラン 2)
 
 ## <a name="september-2019"></a>2019 年 9 月
 
-- 自動化された[調査および応答機能](automated-investigation-response-office.md)の使用 (Microsoft Defender for Office 365 プラン 2)
+- [自動調査および対応機能を使用](automated-investigation-response-office.md) する (Microsoft Defender for Office 365 プラン 2)
 
-- Office [365 の Microsoft Defender との統合 office 365 Management ACTIVITY API を使用した自動調査と応答イベント](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(Defender for Office 365 プラン 2)
+- [Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) マネージメント アクティビティ API (Defender for Office 365 プラン 2) を使用して、microsoft Defender for Office 365 の自動調査および対応イベントと統合する
 
-- [電子メールのヘッダーを表示し、電子メール本文をダウンロードする](investigate-malicious-email-that-was-delivered.md) (Microsoft Defender for Office 365 プラン1またはプラン 2)
+- [メール ヘッダーを表示し、メール本文](investigate-malicious-email-that-was-delivered.md) をダウンロードする (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
 
 ## <a name="august-2019"></a>2019 年 8 月
 
-- [メールのタイムラインを表示する](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Microsoft Defender for Office 365 プラン1またはプラン 2)
+- [メールのタイムラインを表示](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) する (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
 
 ## <a name="july-2019"></a>2019 年 7 月
 
-- [配信アクションと電子メールメッセージの場所を確認する](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Microsoft Defender for Office 365 プラン1または 2)
+- [メール メッセージの配信アクションと場所を](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) 確認する (Microsoft Defender for Office 365 プラン 1 または 2)
 
 ## <a name="june-2019"></a>2019 年 6 月
 
-- [フィッシング url に関するデータを表示し、[verdict] をクリックし](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) ます (Microsoft Defender for Office 365 プラン1またはプラン 2)
+- [フィッシング URL を表示し、確認データを](threat-explorer.md#view-phishing-url-and-click-verdict-data) クリックする (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 プラン1およびプラン2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 プラン 1 およびプラン 2
 
-Microsoft Defender for Office 365 は2つのプランで利用できることをご存知ですか? [各プランに含まれる内容について説明](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)します。
+Microsoft Defender for Office 365 は 2 つのプランで利用できます。 [各プランに含まれる内容について詳しくは、以下をご覧ください](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
 ## <a name="see-also"></a>関連項目
 

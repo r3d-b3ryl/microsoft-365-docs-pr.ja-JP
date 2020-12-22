@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Office 365 の自動調査に続く修復アクション
-keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護
+title: Microsoft Defender for Office 365 での自動調査に続く修復アクション
+keywords: AIR, autoIR, ATP, 自動化, 調査, 対応, 修復, 脅威, 高度, 脅威, 保護
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,25 +16,25 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Office 365 の Microsoft Defender で自動調査を行った後の修復アクションについて説明します。
+description: Microsoft Defender for Office 365 での自動調査に続く修復アクションについて説明します。
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 75550352170841b1e6a26512c9e857a7c9e3acd3
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 74fe6f66d0970fe2725caba7b51bd8a95a34159e
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616142"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725167"
 ---
-# <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の自動調査に続く修復アクション
+# <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 での自動調査に続く修復アクション
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 ## <a name="remediation-actions"></a>修復アクション
 
-[Microsoft Defender For Office 365 の](office-365-atp.md)[自動調査および応答機能](office-365-air.md)(AIR) には、特定の修復アクションが含まれています。 自動化された調査の実行中または完了後には、通常、セキュリティ運用チームの承認を必要とする1つ以上の修復処理が表示されます。 このような修復アクションには、次のようなものがあります。
+Microsoft Defender [for Office](office-365-air.md) [365](office-365-atp.md)の自動調査および対応機能 (AIR) には、特定の修復アクションが含まれます。 自動化された調査の実行中または完了後には、通常、セキュリティ運用チームの承認を必要とする1つ以上の修復処理が表示されます。 このような修復アクションには、次のものが含まれます。
 
 - メール メッセージまたはクラスターの論理的な削除
 - URL のブロック (クリック時)
@@ -42,39 +42,39 @@ ms.locfileid: "49616142"
 - 委任を無効にする
 
 > [!NOTE]
-> Microsoft Defender for Office 365 では、自動調査は自動的に実行される修復処理にはなりません。 修復処理は、組織のセキュリティ運用チームによる承認時にのみ行われます。
+> Microsoft Defender for Office 365 では、自動調査によって自動的に実行される修復アクションは実行されません。 修復アクションは、組織のセキュリティ運用チームの承認を得た場合にのみ実行されます。
 
 ## <a name="threats-and-remediation-actions"></a>脅威と修復アクション
 
-次の表は、Microsoft Defender for Office 365 の脅威と適切な修復処置の概要を示しています。 場合によっては、自動調査によって特定の修復アクションが発生しないことがあります。 次の表に示すように、セキュリティ運用チームはさらに調査して適切なアクションを実行できます。
+次の表は、Microsoft Defender for Office 365 の脅威と適切な修復アクションの概要を示しています。 場合によっては、自動調査によって特定の修復アクションが実行されない場合があります。 セキュリティ運用チームは、次の表に示すとおり、さらに調査し、適切なアクションを実行できます。
 
 ****
 
 |カテゴリ|脅威/リスク|修復アクション|
 |---|---|---|
-|メール|マルウェア|ソフト削除電子メール/クラスター <br> クラスター内のメールメッセージの数が多く、マルウェアが含まれている場合、クラスターは悪意のあるものと見なされます。|
-|メール|悪意のある URL <br> ( [Microsoft Defender For Office 365 で](atp-safe-links.md)は、安全なリンクによって悪意のある URL が検出されました)。|ソフト削除電子メール/クラスター <p> 悪意のある URL を含む電子メールは、悪意のあるものと見なされます。|
-|メール|フィッシング|ソフト削除電子メール/クラスター <br> 1つのクラスター内に多数の電子メールメッセージが含まれていると、そのクラスターはフィッシングと見なされます。|
-|メール|Zapped フィッシング <br> (電子メールメッセージが配信され、 [zapped](zero-hour-auto-purge.md)。)|ソフト削除電子メール/クラスター <p> Zapped メッセージを表示するためにレポートを使用できます。 [ZAP がメッセージと faq を移動したかどうかを確認](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)します。|
-|メール|ユーザーによって [報告](enable-the-report-message-add-in.md) された不在フィッシング電子メール|[ユーザーのレポートによってトリガーされる自動化された調査](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
-|メール|ボリューム異常 <br> (一致する条件の場合、最近の電子メールの数量は過去7-10 日を超えています。)|自動調査を実行しても、特定の保留中のアクションは発生しません。 <p> ボリューム異常は明確な脅威ではありませんが、過去7-10 日を超えた最近の電子メールボリュームを示すだけではありません。 このことは潜在的な問題を示していますが、悪意のある verdicts か、電子メールメッセージ/クラスターの手動による確認のために確認が必要です。 「 [配信された不審な電子メールの検索」を](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)参照してください。|
-|メール|脅威なし <br> (電子メールクラスター verdicts のファイル、url、または分析に基づく脅威は検出されませんでした)。|自動調査を実行しても、特定の保留中のアクションは発生しません。 <p> 調査の完了後に発見および [zapped](zero-hour-auto-purge.md) される脅威は、調査の数値の結果には反映されませんが、そのような脅威は [脅威エクスプローラー](threat-explorer.md)で表示できます。|
-|ユーザー|ユーザーが悪意のある URL をクリックした <br> (後で悪意があると検出されたページにユーザーがアクセスしたか、悪意のあるページに移動するためにユーザーが [安全なリンクの警告ページ](atp-safe-links.md#warning-pages-from-safe-links) をバイパスした場合)。|自動調査を実行しても、特定の保留中のアクションは発生しません。 <p> 脅威エクスプローラーを使用し [て、url に関するデータを表示し、[verdicts] をクリック](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)します。 <p> [エンドポイントに Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)を使用している組織では、[ユーザーの](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user)アカウントが侵害されているかどうかを調査することを検討してください。|
-|ユーザー|ユーザーがマルウェア/フィッシングを送信している|自動調査を実行しても、特定の保留中のアクションは発生しません。 <p> ユーザーがマルウェア/フィッシングを報告しているか、攻撃の一環として [ユーザーがユーザーをスプーフィング](anti-spoofing-protection.md) している可能性があります。 [脅威エクスプローラー](threat-explorer.md)を使用して、[マルウェア](threat-explorer-views.md#email--malware)または[フィッシング](threat-explorer-views.md#email--phish)を含む電子メールを表示し、処理します。|
-|ユーザー|メールの転送 <br> (メールボックス転送ルールが構成されているため、データ exfiltration フィルターに使用できます)。|転送ルールの削除 <p> 転送されたメールに関する詳細情報を表示するには、[自動転送](mfi-auto-forwarded-messages-report.md)されたメッセージレポートを含む[メールフローインサイト](mail-flow-insights-v2.md)を使用します。|
-|ユーザー|電子メール委任ルール <br> (ユーザーのアカウントには委任が設定されています。)|委任ルールの削除 <p> 組織が [エンドポイントに Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)を使用している場合は、委任のアクセス許可を取得している [ユーザーの調査](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) を検討してください。|
-|ユーザー|データ流出 <br> (ユーザーが電子メールまたはファイル共有 [DLP ポリシー](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)に違反しました)。|自動調査を実行しても、特定の保留中のアクションは発生しません。 <p> [DLP レポートを表示し、アクションを実行](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)します。|
-|ユーザー|異常メール送信 <br> (ユーザーが以前の7-10 日より多くの電子メールを送信しました)。|自動調査を実行しても、特定の保留中のアクションは発生しません。 <p> 多くの電子メールを送信することは、それ自体では悪意がありません。ユーザーは、1つのイベントについて大量の受信者グループに電子メールを送信しただけの場合があります。 調査するには、[メールフローのマップレポート](mfi-mail-flow-map-report.md)を含む[メールフローインサイト](mail-flow-insights-v2.md)を使用して、何が起こっているのかを特定し、処理を行います。|
+|メール|マルウェア|メール/クラスターの削除 (回復) <br> クラスター内の電子メール メッセージの数が少なからずマルウェアが含まれている場合、そのクラスターは悪意のあるメッセージであると見なされます。|
+|メール|悪意のある URL <br> (悪意のある URL は、Microsoft Defender の安全なリンクによって Office [365 用に検出されました](atp-safe-links.md))。|メール/クラスターの削除 (回復) <p> 悪意のある URL を含む電子メールは、悪意のあるメールと見なされます。|
+|メール|フィッシング|メール/クラスターの削除 (回復) <br> クラスター内のメール メッセージの数が少なからずフィッシング詐欺の試みを含む場合、そのクラスターはフィッシングと見なされます。|
+|メール|Zapped フィッシング <br> (電子メール メッセージが配信され [、zapped](zero-hour-auto-purge.md)されました。)|メール/クラスターの削除 (回復) <p> レポートを使用して、zapped メッセージを表示できます。 [ZAP がメッセージと FAQ を移動したどうか確認します](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)。|
+|メール|ユーザーによって報告 [された、見つからない](enable-the-report-message-add-in.md) フィッシング メール|[ユーザーのレポートによってトリガーされる自動調査](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
+|メール|ボリューム異常 <br> (最近のメールの量が、一致条件の前の 7 ~ 10 日間を超えている。|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> ボリューム異常は明確な脅威ではなく、過去 7 ~ 10 日間と比較した最近のメール量の増加を示しているに過言ではありません。 これは潜在的な問題を示している可能性があります。ただし、悪意のある評価または電子メール メッセージ/クラスターの手動レビューのどちらかの観点から確認が必要です。 「配信 [された疑わしいメールを検索する」を参照してください](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)。|
+|メール|脅威は検出されませんでした <br> (システムは、ファイル、URL、または電子メール クラスターの評価の分析に基づいて脅威を検出しました。)|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> 調査 [が完了した](zero-hour-auto-purge.md) 後に見つかった脅威とザップされた脅威は、調査の数値の結果には反映されませんが、そのような脅威は脅威エクスプローラーで [表示できます](threat-explorer.md)。|
+|User|ユーザーが悪意のある URL をクリックした <br> (ユーザーが、後で悪意のあると判明したページに移動するか、ユーザーが安全なリンクの[](atp-safe-links.md#warning-pages-from-safe-links)警告ページをバイパスして悪意のあるページにアクセスしました)。)|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> 脅威エクスプローラーを使用して URL [に関するデータを表示し、[Verdicts] をクリックします](threat-explorer.md#view-phishing-url-and-click-verdict-data)。 <p> 組織で Microsoft [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user)を使用している場合は、ユーザーを調査して、アカウントが侵害されたかどうかを判断してください。|
+|User|ユーザーがマルウェア/フィッシングを送信している|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> ユーザーがマルウェア/フィッシングを報告していたり、攻撃の一[](anti-spoofing-protection.md)部としてユーザーをスプーフィングしている可能性があります。 脅威 [エクスプローラーを使用](threat-explorer.md) して、マルウェアやフィッシングを含むメール [を表示および](threat-explorer-views.md#email--malware) 処理 [します](threat-explorer-views.md#email--phish)。|
+|User|メールの転送 <br> (メールボックス転送ルールが構成され、データの取り出しに使用できます)。|転送ルールを削除する <p> 自動[転送されたメッセージ レポートを](mail-flow-insights-v2.md)含[](mfi-auto-forwarded-messages-report.md)むメール フローの分析情報を使用して、転送されたメールに関するより具体的な詳細を表示します。|
+|User|電子メール委任ルール <br> (ユーザーのアカウントに委任が設定されています。)|委任ルールを削除する <p> 組織で Microsoft [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user)を使用している場合は、委任のアクセス許可を取得しているユーザーを調査してください。|
+|User|データ流出 <br> (ユーザーが電子メールまたはファイル共有 DLP ポリシーに [違反しました](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)。)|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> [DLP レポートを表示し、アクションを実行します](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)。|
+|User|異常なメール送信 <br> (ユーザーが最近、過去 7 ~ 10 日間よりも多くのメールを送信しました。)|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> 多くのメールを送信すること自体は悪意のあるものではありません。ユーザーがイベントの受信者の大きなグループにメールを送信しただけである可能性があります。 調査するには、メール フロー[マップ レポート](mail-flow-insights-v2.md)を[](mfi-mail-flow-map-report.md)含むメール フローの分析情報を使用して、何が起こっているのかを判断し、アクションを実行します。|
 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-- [Microsoft Defender for Office 365 の自動調査の詳細と結果を表示する](air-view-investigation-results.md)
+- [Microsoft Defender for Office 365 での自動調査の詳細と結果を表示する](air-view-investigation-results.md)
 
-- [Microsoft Defender for Office 365 の自動調査の後に、保留中または完了した修復アクションを表示する](air-review-approve-pending-completed-actions.md)
+- [Microsoft Defender for Office 365 での自動調査の後、保留中または完了した修復アクションを表示する](air-review-approve-pending-completed-actions.md)
 
 ## <a name="related-articles"></a>関連記事
 
-- [エンドポイントの Microsoft Defender での自動調査について説明します。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Microsoft Defender for Endpoint での自動調査について説明します](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Microsoft 365 Defender のその他の機能について説明します。](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Microsoft 365 Defender の追加機能について](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
