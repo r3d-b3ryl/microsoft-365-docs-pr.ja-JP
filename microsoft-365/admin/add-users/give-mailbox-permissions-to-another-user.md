@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'ユーザーに別のユーザーのメールボックスにアクセスする権利を与える方法について説明します。 これにより、ユーザーは他のユーザーのメールボックスからメールを読み取り、メールを送信する権利を与えられます。 '
-ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: af12cfe3acad9e12ca3983c9fa13f52b72f0a467
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560377"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725155"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
 
@@ -122,6 +122,10 @@ ms.locfileid: "46560377"
 
 6. [**保存**] を選択します。
 
+
+> [!NOTE]
+> [**読み取り**] および [**管理**] の権限は、Exchange 管理センターで付与された場合、[**フル アクセス**] 権限と呼ばれます。 [フル アクセス] 権限では、**[メールボックス所有者として送信する]** または **[代理人として送信する]** の権限は付与されません。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -159,7 +163,7 @@ ms.locfileid: "46560377"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。  
 
-2. (**代理送信**許可を与える予定の) ユーザーの名前を選択して、[プロパティ] ウィンドウを開きます。
+2. (**代理送信** 許可を与える予定の) ユーザーの名前を選択して、[プロパティ] ウィンドウを開きます。
     
 3. [**メール**] タブで、[**メールボックスへのアクセス許可の管理**] を選択します。
     
