@@ -12,17 +12,24 @@ ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: トピック エクスペリエンスのリソースを検索する方法について説明します。
-ms.openlocfilehash: bc38e0a7310dd9c1d3787dbe6cabe646009d2bff
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 9141f6b445932234ebfa5a3d77833f64110ceeb4
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698957"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731345"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>トピック エクスペリエンスの概要 (プレビュー)
 
 > [!Note] 
 > この記事の内容は、Project の Private Preview 用です。 [Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
+
 
 トピック エクスペリエンスは、組織Office情報を知識に変換するのに役立つ 365 の 365 サービスです。
 
@@ -30,7 +37,7 @@ ms.locfileid: "49698957"
 
 ## <a name="get-started"></a>作業の開始
 
-このセクションのリソースは、トピックのエクスペリエンスとそれが役立つ方法について詳しい情報を得るのに役立ちます。
+このセクションのリソースは、トピックのエクスペリエンスとそれが役立つ方法の詳細を確認するのに役立ちます。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
@@ -56,17 +63,17 @@ ms.locfileid: "49698957"
 |トピック エクスペリエンスを設定および構成する方法について説明します。|[トピック エクスペリエンスをセットアップする](set-up-topic-experiences.md)|
 |ユーザーのアクセス許可を構成する方法について|[トピックのアクセス許可を管理する](topic-experiences-user-permissions.md)|
 |トピックを表示できるユーザーを管理する方法について説明します。|[トピックの可視性を管理する](topic-experiences-knowledge-rules.md)|
-|トピック検出の設定を管理する方法について説明します。|[トピック検出を管理する](topic-experiences-discovery.md)|
+|トピック検出の設定を管理する方法について説明します。|[トピックの検出を管理する](topic-experiences-discovery.md)|
 
-## <a name="work-with-topics"></a>トピックを使用する
+## <a name="work-with-topics"></a>トピックを操作する
 
-このセクションのリソースは、トピックの使い方と管理方法をユーザーが学習するのに役立ちます。
+このセクションのリソースは、ユーザーがトピックを使用および管理する方法を学習するのに役立ちます。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|トピックを使用する方法について説明します。|[トピック センターの概要](topic-center-overview.md)<br><br>[トピックを管理する](manage-topics.md)<br><br>[新しいトピックを作成する](create-a-topic.md)<br><br>[既存のトピックを編集する](edit-a-topic.md)<br><br>|
+|トピックを使用する方法について説明します。|[トピック センターの概要](topic-center-overview.md)<br><br>[トピックを管理する](manage-topics.md)<br><br>[新規トピックを作成する](create-a-topic.md)<br><br>[既存のトピックを編集する](edit-a-topic.md)<br><br>|
 |ユーザー ロールについて|[トピック エクスペリエンスの役割](topic-experiences-roles.md)|
-|トピックが異なるユーザーに異なる理由を理解する|[トピック エクスペリエンスのセキュリティ トリミング](topic-experiences-security-trimming.md)|
+|トピックが異なるユーザーに異なる理由を理解する|[Topic Experiences security trimming](topic-experiences-security-trimming.md)|
 |特定のトピックが特定されて表示されるのを防ぐ方法について説明します。|[トピックへのアクセスを制限する](restrict-access-to-topics.md)|
 
 

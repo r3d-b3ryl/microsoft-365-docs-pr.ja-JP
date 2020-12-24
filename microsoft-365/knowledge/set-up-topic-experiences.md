@@ -11,14 +11,20 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 でトピック エクスペリエンスをセットアップする方法について説明します。
-ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: df4dccead4b627a215ec7ebd11932aa0f2b6ac08
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698557"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731369"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Microsoft 365 でのトピック エクスペリエンスのセットアップ
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+
+</br>
 
 Microsoft 365 管理センターを使用して、トピックエクスペリエンスを設定および [構成できます](topic-experiences-overview.md)。 
 
@@ -26,7 +32,7 @@ Microsoft 365 管理センターを使用して、トピックエクスペリエ
 
 Microsoft 365 管理センターにアクセスしてトピックエクスペリエンスを設定するには、全体管理者または SharePoint 管理者である必要があります。
 
-## <a name="set-up-topic-experiences"></a>トピック エクスペリエンスをセットアップする
+## <a name="set-up-topic-experiences"></a>トピック エクスペリエンスを設定する
 
 Microsoft 365 でトピック エクスペリエンスを設定するには
 
@@ -65,15 +71,15 @@ Microsoft 365 でトピック エクスペリエンスを設定するには
 
     - **[名前**]: 除外するトピックの名前を入力します。 これを行うには 2 つの方法があります。
         - 完全一致: 正確な名前または頭字語 *(Contoso* や ATL など) *を含めできます*。
-        - 部分一致: 特定の単語を含むすべてのトピックを除外できます。  たとえば、円弧 *には*、円弧、円弧の円弧、トレーニング用の円弧など、その中に円弧を含むすべてのトピック *が除外されます*。 ただし、Architecture など、単語の一部としてテキストが含まれるトピックは除外されない点に *注意してください*。
-    - **略語 (省略可能)**: 頭字語を除外する場合は、略語の略語を入力します。
+        - 部分一致: 特定の単語を含むすべてのトピックを除外できます。  たとえば、円弧 *には*、円弧の円、円弧の円弧、トレーニング用の円弧など、単語の円弧を含むすべてのトピック *が除外されます*。 ただし、Architecture など、単語の一部としてテキストが含まれるトピックは除外されない点に *注意してください*。
+    - **略式 (省略可能)**: 頭字語を除外する場合は、略語の略語を入力します。
     - **MatchType-Exact/Partial**: 入力した名前が完全一致型か部分一致型 *かを入力します*。
 
-    .csv ファイルを完成して保存したら、[参照] を **選択して** 見つけて選択します。
+    .csv ファイルを完成して保存したら、[参照] を **選択して** 検索し、選択します。
     
     [**次へ**] を選択します。
 
-6. [トピック **を表示できるユーザーと** トピックを表示できる場所] ページで、トピックの可視性を構成します。 [ナレッジ **ネットワーク** の設定でトピックを表示できるユーザー] で、強調表示されているトピック、トピック カード、検索内のトピック回答、トピック ページなど、トピックの詳細にアクセスできるユーザーを選択します。 次のものが選択できます。
+6. [トピック **を表示できるユーザーと** トピックを表示できる場所] ページで、トピックの可視性を構成します。 [ナレッジ **ネットワーク** の設定でトピックを表示できるユーザー] で、強調表示されているトピック、トピック カード、検索でのトピック回答、トピック ページなど、トピックの詳細にアクセスできるユーザーを選択します。 次のものが選択できます。
     - **組織内のすべてのユーザー**
     - **選択したユーザーまたはセキュリティ グループのみ**
     - **だれも**
@@ -137,7 +143,7 @@ Microsoft 365 でトピック エクスペリエンスを設定するには
 
 トピックエクスペリエンスを設定したら [、Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)管理センターでセットアップ中に選択した設定を変更できます。 次のリファレンスを参照してください。
 
-- [Microsoft 365 でのトピック検出の管理](topic-experiences-discovery.md)
+- [Microsoft 365 でトピックの検出を管理する](topic-experiences-discovery.md)
 - [Microsoft 365 でトピックの表示を管理する](topic-experiences-knowledge-rules.md)
 - [Microsoft 365 でトピックのアクセス許可を管理する](topic-experiences-user-permissions.md)
 - [Microsoft 365 のトピック センターの名前を変更する](topic-experiences-administration.md)

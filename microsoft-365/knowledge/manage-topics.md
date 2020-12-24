@@ -1,5 +1,5 @@
 ---
-title: 'トピック エクスペリエンスのトピック センターでトピックを管理する (プレビュー) '
+title: 'トピック エクスペリエンス (プレビュー) のトピック センターでトピックを管理する '
 description: トピック センターでトピックを管理する方法。
 author: efrene
 ms.author: efrene
@@ -11,17 +11,24 @@ search.appverid: ''
 ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 832067d157ed9ffcba1ed9ad514c375cbbdd752b
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 92cf9c860ddbf199c70a7c2d89a7daba3dfe0fe7
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698912"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731329"
 ---
 # <a name="manage-topics-in-the-topic-center-preview"></a>トピック センターでトピックを管理する (プレビュー)
 
 > [!Note] 
 > この記事の内容は、Project の Private Preview 用です。 [Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LxDx]  
+
+</br>
+
 
 トピック センターでは、ナレッジ マネージャーは [トピックの管理] ページを表示して、ナレッジ管理者が指定した SharePoint ソースの場所で識別されたトピックを確認できます。  
 
@@ -33,7 +40,7 @@ ms.locfileid: "49698912"
 
 - 推奨: トピックは AI によって識別され、トピックのしきい値を満たすのに十分なサポート リソース、接続、およびプロパティがあります。
 - 確認済み: AI によって提案されたトピックが検証されます。 検証は、ナレッジ管理者からの確認によって行われます。また、少なくとも 2 人のユーザーがトピックの有効なフィードバックを通じて肯定的なフィードバックを寄せた場合は、トピックを確認できます。
-- 削除: トピックはナレッジ管理者によって拒否され、閲覧者には表示されなくなりました。 トピックは、削除された状態 (推奨または確認済み) の任意の状態にできます。 
+- 削除: トピックはナレッジ管理者によって拒否され、閲覧者には表示されなくなりました。 トピックは、削除された場合 (推奨または確認済み) に任意の状態にできます。 
 - 公開: 手動で更新された確認済みトピック。
 
    ![トピック ライフサイクル のグラフ](../media/knowledge-management/topic-lifecycle.png) </br> 
@@ -42,11 +49,11 @@ ms.locfileid: "49698912"
 
 トピック センターでトピックを管理するには、次の必要があります。
 - トピック エクスペリエンス のライセンスを持っている。
-- トピックを管理できる [**ユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、サポート技術情報のトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
+- トピックを管理できる [**ユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、ナレッジ ネットワークのトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
 
 トピックを管理できるユーザー権限がない限り、トピック センターの [トピックの管理] **ページを表示** することはできません。
 
-トピック センターでは、ナレッジ マネージャーは、指定した SharePoint ソースの場所で特定されたトピックを確認し、確認または拒否できます。 ナレッジ マネージャーは、トピックの検出で見つからなかった場合は新しいトピック ページを作成して発行したり、更新が必要な場合は既存のトピック ページを編集したりすることもできます。
+トピック センターでは、ナレッジ マネージャーは、指定した SharePoint ソースの場所で特定されたトピックを確認し、確認または拒否できます。 ナレッジ マネージャーは、新しいトピック ページがトピックの検出で見つからない場合は作成して発行したり、更新が必要な場合は既存のトピック ページを編集したりすることもできます。
 
 
 ## <a name="review-suggested-topics"></a>推奨されるトピックを確認する
@@ -84,7 +91,7 @@ ms.locfileid: "49698912"
 確認済みトピックを拒否することを選択できます。  これを行うには、確認済みリストで選択したトピックに移動し、トピックを拒否する場合は **x** を選択します。
 
 ## <a name="published-topics"></a>公開されたトピック
-公開されたトピックは編集され、ページにアクセスしたユーザーに特定の情報が常に表示されます。 手動で作成したトピックの一覧を以下に示します。
+発行されたトピックは編集され、ページにアクセスしたユーザーに特定の情報が常に表示されます。 手動で作成したトピックの一覧を以下に示します。
 
 
 

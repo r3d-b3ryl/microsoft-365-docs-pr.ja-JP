@@ -11,17 +11,23 @@ ms.collection: enabler-strategic
 ms.service: ''
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9bce380e9e1380f2b2560762d2df37352251bf2b
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 809d3936ed27275873f63526e7dfc8f91a15a0cc
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698894"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731357"
 ---
 # <a name="edit-an-existing-topic-preview"></a>既存のトピックを編集する (プレビュー)
 
 > [!Note] 
 > この記事の内容は、Project の Private Preview 用です。 [Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LA4n]  
+
+</br>
 
 トピック エクスペリエンスでは、既存のトピックを編集できます。 既存のトピック ページを修正または追加する場合は、この操作が必要な場合があります。 
 
@@ -36,7 +42,7 @@ ms.locfileid: "49698894"
 
 ## <a name="edit-a-topic-page"></a>トピック ページを編集する
 
-トピック ページを編集する権限がある場合は、トピックを開いてから、ページの右側に **[** 編集] が表示されます。
+トピック ページを編集する権限がある場合は、トピックを開いてから、ページの上部にある **[** 編集] を表示できます。
 
    ![コントロールを編集する](../media/knowledge-management/topic-page-edit.png) </br> 
 
@@ -50,7 +56,7 @@ ms.locfileid: "49698894"
     -  ファイルとページ
     -  サイト
 
-    キャンバス アイコンを選択して、静的な項目 (テキスト、画像、リンクなど) をページに追加することもできます。
+    キャンバス アイコンを選択して、ページに静的な項目 (テキスト、画像、リンクなど) を追加することもできます。
 
 3. [ **再発行] を選択** して変更を保存します。
 

@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: トピック エクスペリエンスの概要。
-ms.openlocfilehash: 9321f349056c1c4df36b6bd725214f3c6758cf6a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 8b06dd016295c8b0712a7c18c2296a318cd826ba
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698928"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731326"
 ---
 # <a name="topic-experiences-overview-preview"></a>トピック エクスペリエンスの概要 (プレビュー)
 
@@ -26,7 +26,11 @@ ms.locfileid: "49698928"
 
 トピック エクスペリエンスでは、Microsoft AI テクノロジ、Microsoft 365、Delve、Microsoft Graph、Search、その他のコンポーネントとサービスを使用して、Microsoft 365 環境でナレッジ ネットワークを構築します。 
 
-   ![ナレッジ 管理フロー](../media/knowledge-management/knowledge-management-flowchart.png) </br> 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
 
 その目的は、情報を知識に変換し、SharePoint のモダン ページや Microsoft Search など、日常的に使用するアプリでユーザーに提供します。
 
@@ -57,7 +61,7 @@ ms.locfileid: "49698928"
 
 ナレッジ管理者は、テナント内のすべての SharePoint サイトをクロールしてトピックを検索するか、特定の SharePoint サイトを選択するかの選択を選択できます。
 
-## <a name="roles"></a>ロール
+## <a name="roles"></a>Roles
 
 Microsoft 365 環境でトピック エクスペリエンスを使用する場合、ユーザーには次の役割があります。
 
@@ -99,9 +103,9 @@ Microsoft 365 管理センターの管理コントロールを使用すると、
 
 管理[コントロールの詳細については、「ユーザーアクセス許可の割](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)り[](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery)当て、トピックの表示の管理、トピックの検出の管理」を参照してください。 [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)
 
-## <a name="topic-curation--feedback"></a>トピックの作成&フィードバック
+## <a name="topic-curation--feedback"></a>トピックのキュレーション&フィードバック
 
-AI は、環境内で変更が発生した場合にトピックを改善するための提案を提供するために継続的に取り組む必要があります。 
+AI は、環境内で変更が発生した場合にトピックを改善するための提案を継続的に提供します。 
 
 日常の作業でトピックの表示を許可するユーザーは、トピックが役に立ったか尋ねらえる可能性があります。 AI は、これらの応答を見て、トピックの概要とトピックの詳細に表示される内容を判断するのに役立ちます。
 
