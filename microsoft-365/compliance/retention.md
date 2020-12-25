@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 9745a93139f591185e7457f5ba5c0b9b2fd56348
-ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
+ms.openlocfilehash: 8d50e03827026100689d9b380570fa59c93e6d08
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "49725178"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730178"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -465,7 +465,7 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
 - [Microsoft Teams の制限事項と仕様](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース](retention-regulatory-requirements.md)
 
-## <a name="next-steps"></a>次の手順
+## <a name="configuration-guidance"></a>構成ガイダンス
 
 アイテム保持ポリシーを作成する準備ができている場合は、「[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)」を参照してください。
 

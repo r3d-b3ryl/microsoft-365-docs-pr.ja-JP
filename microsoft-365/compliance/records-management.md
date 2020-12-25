@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830528"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730168"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
 
@@ -109,7 +109,7 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 > 
 > これらは不可逆的なアクションであるため、保持ラベル用にこのオプションを選択する前に、本当に規制レコードを使用する必要があるかどうかをご確認ください。 誤った構成を防止するために、このオプションは既定では使用できなくなっていますが、PowerShell を使用して最初に有効にする必要があります。 手順は、「[保持ラベルを使用してレコードを宣言する](declare-records.md)」に含まれています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="configuration-guidance"></a>構成ガイダンス
 
 詳細については、「[レコード管理の概要](get-started-with-records-management.md)」を参照してください。
 
