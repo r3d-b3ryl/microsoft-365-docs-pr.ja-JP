@@ -11,18 +11,18 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 でトピック エクスペリエンスをセットアップする方法について説明します。
-ms.openlocfilehash: df4dccead4b627a215ec7ebd11932aa0f2b6ac08
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 3ff822d863e99f7e52089d3efde3d597df9957c7
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731369"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735812"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Microsoft 365 でのトピック エクスペリエンスのセットアップ
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 </br>
 
@@ -43,7 +43,7 @@ Microsoft 365 でトピック エクスペリエンスを設定するには
 
 3. [知識 **へのユーザーの** 接続] ページで、[開始 **]** をクリックしてセットアップ プロセスの手順を説明します。
 
-    ![作業の開始](../media/k-get-started.png) 
+    ![開始する](../media/k-get-started.png) 
 
 4. [ナレッジ **ネットワークでトピックを検索する方法** の選択] ページで、トピックの検出を構成します。 **[SharePoint トピック ソース** の選択] セクションで、検出時にトピックのソースとしてクロールする SharePoint サイトを選択します。 次から選択します。
     - **すべてのサイト**: 組織内のすべての SharePoint サイト。 これには、現在および将来のサイトが含まれます。
