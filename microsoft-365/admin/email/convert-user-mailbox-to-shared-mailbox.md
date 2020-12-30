@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '個人用メールボックスを、複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: fa8e37b5e924f1b38755a953f40d8b70011213d0
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: f716bbd16be9f67189b19358ddf16a289f57f8e7
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698281"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737967"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
@@ -57,7 +57,7 @@ ms.locfileid: "49698281"
 共有メールボックスに関して知っておく必要のあるその他の情報については、「[共有メールボックスの詳細](about-shared-mailboxes.md)」および「[共有メールボックスを作成する](create-a-shared-mailbox.md)」を参照してください。
 
 > [!NOTE]
-> 共有メールボックスには、別途ライセンスが必要ではありません。 ただし、In-Place アーカイブを有効にするか、共有メールボックスに In-Place ホールドまたは訴訟ホールドを設定する場合は、Exchange Online プラン 1 と Exchange Online Archiving または Exchange Online プラン 2 のライセンスをメールボックスに割り当てる必要があります。
+> 共有メールボックスには、別途ライセンスが必要ではありません。 ただし、In-Place アーカイブを有効にするか、共有メールボックスに In-Place ホールドまたは訴訟ホールドを設定する場合は、exchange Online プラン 1 と Exchange Online Archiving または Exchange Online プラン 2 のライセンスをメールボックスに割り当てる必要があります。
 
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>削除済みユーザーのメールボックスを変換する
@@ -93,24 +93,15 @@ ms.locfileid: "49698281"
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>ハイブリッド環境でユーザーのメールボックスを変換する
 
-> [!NOTE] 
-> 2018 年 10 月 11 日から、Exchange ハイブリッド展開は、オンプレミスの Exchange Server 環境で、Exchange Server 2013 の累積的な更新プログラム 21 および Exchange Server 2016 の累積的な更新プログラム 10 から始まるリモート共有メールボックスの作成をサポートしています。 新しい -shared パラメーターを使用して、リモート共有メールボックスを直接 _作成または変更_ できます。 詳細については、「コマンドレット」を参照して、オンプレミスの Exchange 環境でリモート共有メールボックス [を作成または変更します](https://support.microsoft.com/help/4133605/cmdlets-to-create-modify-remote-shared-mailbox-in-on-premises-exchange)。
+Exchange ハイブリッド環境でユーザー メールボックスを共有メールボックスに変換する方法の詳細については、以下を参照してください。
 
-この共有メールボックスがハイブリッド環境内にいて、上記のシナリオに当てはかからない場合は、ユーザー メールボックスをオンプレミスに戻し、ユーザー メールボックスを共有メールボックスに変換してから、共有メールボックスをクラウドに移動 **することを強く** 推奨します (ほとんど必要です)。 
-
-その理由は次のとおりです。クラウド内のメールボックスを変換すると、変換はされますが、まだオンプレミスではメールボックスがユーザーのメールボックスであると認識されます。これは、新しい現実がオンプレミスに同期されないためです。
-
-通常、これは問題にはなりませんが、オンプレミスの属性 (メールボックスがユーザーのメールボックスであると考えられる) がそれらの属性の新しいクラウドバージョンを上書きし、その結果としてメールボックスが変換される可能性がある場合があります。 これは問題です。ユーザーのメールボックスにはライセンスが必要であるか、**30 日後に削除される** ためです。
-
-既に、これが発生する原因のほとんどに対処してありますが、ごく希に、まだ発生することがあります。 安全で、メールボックスをオンプレミスに戻し、変換してから、共有メールボックスをクラウドに戻すのが最善です。 オンプレミスのユーザー メールボックスの存在は一時的なだけなので、この推奨ソリューションはハイブリッド環境のライセンス契約に違反しません。 ユーザー メールボックスまたは共有メールボックスをオンプレミス組織で維持し、クラウドに戻していない場合は、ライセンスに違反します。
-
+ - [オンプレミスの Exchange 環境でリモート共有メールボックスを作成または変更するコマンドレット](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [Exchange ハイブリッド展開でディレクトリ同期を実行した後、共有メールボックスが予期せずユーザー メールボックスに変換される](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ 
 
 > [!NOTE]
-> 組織の管理役割グループまたは受信者の管理役割グループのメンバーである場合は、Exchange 管理シェルを使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、`Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared` などです。
+> 組織の管理役割グループまたは受信者の管理役割グループのメンバーである場合は、Exchange 管理シェル を使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared` などです。
 
-> [!TIP]
-> 共有メールボックスが予期せずユーザーのメールボックスに変換された場合のインスタンスについては、このサポート ソリューションの回避策 [を参照してください](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di)。
-  
 ## <a name="related-articles"></a>関連記事
 
 [共有メールボックスについて](about-shared-mailboxes.md)

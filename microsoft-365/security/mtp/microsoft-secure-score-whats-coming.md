@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d668aa8f0588ecc5ca24086d060cda32cdf1dbc6
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 0693e70cdd5636ce655a400a48aac65197327291
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688043"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737955"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft セキュア スコアの提供予定
 
@@ -32,9 +32,11 @@ Microsoft セキュア スコアは https://security.microsoft.com/securescore [
 
 ## <a name="proposed-changes"></a>Proposed changes
 
-近い将来 [、Microsoft](microsoft-secure-score.md) セキュア スコアをセキュリティの立ち上がりをより良くし、使いやすさを向上させるために、いくつかの変更を行っています。 スコアと考えられる最大スコアが変更される場合があります。
+近い将来 [、Microsoft](microsoft-secure-score.md) セキュア スコアをセキュリティの立ち上がりをより良くし、操作性を向上させるために、いくつかの変更を行っています。 スコアと考えられる最大スコアは変更される可能性があります。
 
 ### <a name="no-planned-changes"></a>計画された変更なし
+
+現時点では、予定されている変更はありません。
 
 ## <a name="related-resources"></a>関連リソース
 
