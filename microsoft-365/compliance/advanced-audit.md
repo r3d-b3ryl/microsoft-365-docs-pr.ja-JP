@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: b05901ad8d42f481020178479df5d422fa68eb1a
-ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
+ms.openlocfilehash: 83ff462ada02c9b262cfcaadb6bd48e47376cc0f
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49718500"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740364"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -155,7 +155,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 
 5. そのチェック ボックスが選択されていない場合は、選択して **[変更の保存]** をクリックします。
 
-   ユーザーの MailItemsAccessed、Send、およびその他の重要なイベントの監査レコードのログ記録は、24 時間以内に開始されます。
+   ユーザーの MailItemsAccessed、送信、およびその他の重要なイベントの監査レコードのログ記録は、24  時間以内に開始されます。
 
 グループ ベースのライセンスを使用してユーザーのグループにライセンスを割り当てている組織では、グループに対する Microsoft 365 Advanced Auditing のライセンス割り当てをオフにする必要があります。 変更を保存したら、Microsoft 365 Advanced Auditing がグループに対してオフになっていることを確認します。 その後、グループに対するライセンス割り当てをもう一度オンにします。 グループ ベースのライセンスの手順については、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
 
