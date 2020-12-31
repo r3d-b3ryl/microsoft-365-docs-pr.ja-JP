@@ -589,7 +589,7 @@
           items:
             - name: カストディアンをケースに追加する
               href: add-custodians-to-case.md
-            - name: カストディアンをケースに一括追加する
+            - name: 1 つのケースに複数のカストディアンをインポートする
               href: bulk-add-custodians.md
             - name: カストディアンを管理する
               href: manage-new-custodians.md

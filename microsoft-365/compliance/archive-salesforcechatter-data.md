@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Globanet から Microsoft 365 に Salesforce Chatter データをインポートしてアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: 60d86cd01ef8da3a02839d4a3f815be02dc1ee01
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+description: 管理者は、Globanet から Microsoft 365 に Salesforce Chatter データをインポートおよびアーカイブするコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
+ms.openlocfilehash: 518eb38756d86812a8b3d41e4bc2cd46d5a23386
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49723027"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740314"
 ---
-# <a name="set-up-a-connector-to-archive-salesforce-chatter-data-preview"></a>Salesforce Chatter データをアーカイブするコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Salesforce Chatter データをアーカイブするコネクタを設定する
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Salesforce Chatter プラットフォームから Microsoft 365 組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet は [、サードパーティ](http://globanet.com/chatter/) のデータ ソースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートする Salesforce Chatter コネクタを提供します。 コネクタは、Salesforce Chater からのチャット、添付ファイル、投稿などのコンテンツを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Salesforce Chatter プラットフォームから Microsoft 365 組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet は [、サードパーティ](http://globanet.com/chatter/) のデータ ソースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートする Salesforce Chatter コネクタを提供します。 コネクタは、チャット、添付ファイル、投稿などのコンテンツを Salesforce Chater から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
 Salesforce Chatter データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベルなどの Microsoft 365 コンプライアンス機能を適用できます。 Salesforce Chatter コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠し続けるのに役立ちます。
 
@@ -53,7 +53,7 @@ Salesforce Chatter データがユーザー メールボックスに保存され
 
 1. [データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com/) Salesforce   >  **Chatter] に移動してクリックします**。
 
-2. Salesforce **Chatter 製品の説明** ページで、[コネクタの追加] **をクリックします**。
+2. Salesforce **Chatter 製品の説明ページ** で、[コネクタの追加] **をクリックします**。
 
 3. [サービス条件 **] ページで、[** 承諾] を **クリックします**。
 
@@ -71,7 +71,7 @@ Salesforce Chatter データがユーザー メールボックスに保存され
 
 ユーザーをマップし、Microsoft 365 コンプライアンス センターでコネクタのセットアップを完了するには、次の手順を実行します。
 
-1. [Salesforce **Chatter ユーザーを Microsoft 365** ユーザーにマップする] ページで、自動ユーザー マッピングを有効にします。 Salesforce Chatter アイテムには、組織内のユーザーの電子メール アドレスを含む Email というプロパティが含まれます。 コネクタでこのアドレスを Microsoft 365 ユーザーに関連付けできる場合、アイテムはユーザーのメールボックスにインポートされます。
+1. [Salesforce **Chatter ユーザーを Microsoft 365** ユーザーにマップする] ページで、ユーザーの自動マッピングを有効にします。 Salesforce Chatter アイテムには、組織内のユーザーの電子メール アドレスを含む Email というプロパティが含まれます。 コネクタでこのアドレスを Microsoft 365 ユーザーに関連付けできる場合、アイテムはユーザーのメールボックスにインポートされます。
 
 2. [**次へ**] をクリックして設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
