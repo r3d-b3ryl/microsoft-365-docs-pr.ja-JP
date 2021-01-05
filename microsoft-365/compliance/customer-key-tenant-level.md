@@ -1,5 +1,5 @@
 ---
-title: テナント レベルでの Microsoft 365 のカスタマー キー (パブリック プレビュー)
+title: テナント レベルの Microsoft 365 の [カスタマー]キー (パブリック プレビュー)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Microsoft 365 テナント内のすべてのデータに対して顧客キーを設定する方法について説明します。
-ms.openlocfilehash: eedf0e8c9d56131016bc798af8ae471df3005bdc
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: f14bbc0cb6dd29883efa4c8d294d8d65cae98641
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712529"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751270"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>テナント レベルでの Microsoft 365 のカスタマー キーの概要 (パブリック プレビュー)
 
@@ -46,7 +46,7 @@ Exchange Online と Sharepoint Online のカスタマー キーが既に設定�
 
 例:
 
-Microsoft Teams ファイルと、OneDrive for Business および SharePoint に保存されている一部の Teams 通話と会議のレコーディングは、SharePoint Online DEP によって暗号化されます。 1 つの SharePoint Online DEP が単一の geo 内のコンテンツを暗号化します。 テナント レベルの DEP は、暗号化されたデータを新しいポリシーで再び暗号化します。
+Microsoft Teams ファイルと、OneDrive for Business および SharePoint に保存されている一部の Teams 通話および会議のレコーディングは、SharePoint Online DEP によって暗号化されます。 1 つの SharePoint Online DEP が単一の geo 内のコンテンツを暗号化します。 テナント レベルの DEP は、暗号化されたデータを新しいポリシーで再び暗号化します。
 
 Exchange Online では、顧客キーを使用して 1 つ以上のユーザー メールボックスを暗号化する DEP を作成できます。 テナント レベルのポリシーを作成する場合、そのポリシーは暗号化されたメールボックスを暗号化しなされません。 ただし、テナント レベルのキーは、DEP の影響を受けしていないメールボックスを暗号化します。
 
@@ -54,12 +54,12 @@ Exchange Online では、顧客キーを使用して 1 つ以上のユーザー 
 
 これらの手順は、アプリケーション レベルで顧客キーを設定する手順と似ていますが、同じではありません。 このパブリック プレビューは、テスト テナントのテスト データでのみ使用してください。 このリリースは、実稼働データと一緒に使用したり、実稼働環境で使用したりすることはできません。 顧客キーの実稼働展開が既にある場合は、次の手順を使用して、テスト環境のテナント レベルで顧客キーを設定します。
 
-これらのタスクの大部分は、Azure PowerShell にリモートで接続することで完了します。 最善の結果を得る場合は、Azure PowerShell のバージョン 4.4.0 以降を使用してください。
+これらのタスクの大部分は、Azure PowerShell にリモートで接続することで完了します。 最適な結果を得る場合は、Azure PowerShell のバージョン 4.4.0 以降を使用してください。
 
 開始する前に、次の情報を確認してください。
 
 - テナント レベルで顧客キーを設定するには、コンプライアンス管理者の役割を持つ、仕事または学校のアカウントを使用する必要があります。
-- 組織に適したライセンスを持っている必要があります。 サブスクリプションまたはクラウド サービス プロバイダーを使用して、有料マイクロソフトエンタープライズ契約 Azure サブスクリプションを使用します。 [お支払い方法] プランまたはクレジット カードを使用して購入した Azure サブスクリプションは、顧客キーではサポートされていません。 2020 年 4 月 1 日から、Office 365 のカスタマー キーは、Office 365 E5、M365 E5、M365 E5 コンプライアンス、M365 E5 情報保護 & ガバナンス SKU で提供されます。 Office 365 Advanced Compliance SKU は、新しいライセンスの調達には使用できなくなりました。 既存の Office 365 Advanced Compliance ライセンスは引き続きサポートされます。 適切なライセンスを持つテナントの下で少なくとも 1 つのライセンスでサービスを有効にできる一方で、サービスの恩恵を受けるすべてのユーザーが適切なライセンスを持つことを確認する必要があります。 次のいずれかのライセンスが必要です。
+- 組織に適したライセンスを持っている必要があります。 サブスクリプションまたはクラウド サービス プロバイダーを使用して、有料マイクロソフトエンタープライズ契約 Azure サブスクリプションを使用します。 [お支払い方法] プランまたはクレジット カードを使用して購入した Azure サブスクリプションは、カスタマー キーではサポートされていません。 Office 365 のカスタマー キーは、2020 年 4 月 1 日から Office 365 E5、M365 E5、M365 E5 コンプライアンス、M365 E5 情報保護 & ガバナンス SKU で提供されます。 Office 365 Advanced Compliance SKU は、新しいライセンスの調達には使用できなくなりました。 既存の Office 365 Advanced Compliance ライセンスは引き続きサポートされます。 適切なライセンスを持つテナントの下で少なくとも 1 つのライセンスでサービスを有効にできる一方で、サービスの恩恵を受けるすべてのユーザーが適切なライセンスを持つことを確認する必要があります。
 
 ### <a name="create-two-new-azure-subscriptions"></a>2 つの新しい Azure サブスクリプションを作成する
 
@@ -89,7 +89,7 @@ Microsoft 365 チームに連絡する前に、顧客キーで使用する Azure
    **Body**: 必須の保持期間を確定するサブスクリプションの ID です。
    各サブスクリプションのGet-AzProviderFeature出力。
 
-   このプロセスを完了するサービス レベル 契約 (SLA) は、サブスクリプションを登録して必須の保持期間を使用したと Microsoft に通知 (および検証) が完了した 5 営業日後です。
+   このプロセスを完了するサービス レベル 契約 (SLA) は、サブスクリプションを登録して必須の保持期間を使用したという通知 (および確認) が Microsoft に送信された 5 営業日後です。
 
 4. 登録が完了したという通知を Microsoft から受け取った後、次のように Get-AzProviderFeature コマンドを実行して、登録の状態を確認します。 確認された場合、Get-AzProviderFeatureコマンドは Registration State プロパティの **Registered** の値 **を返** します。 サブスクリプションごとにこのアクションを実行します。
 
@@ -116,7 +116,7 @@ Microsoft 365 チームに連絡する前に、顧客キーで使用する Azure
 
 キー コンテナーに共通のプレフィックスを使用し、キー コンテナーとキーの使用とスコープの省略形を含める。 たとえば、コンテナーが北米に位置する Contoso サービスの場合、名前のペアとして Contoso-O365-NA-VaultA1 と Contoso-O365-NA-VaultA2 を指定できます。 コンテナー名は Azure 内でグローバルに一意の文字列なので、目的の名前が他の Azure ユーザーによって既に要求されている場合に、目的の名前のバリエーションを試す必要がある場合があります。 構成したコンテナー名は変更できないので、ベスト プラクティスは、セットアップの計画を作成し、2 番目のユーザーを使用して計画が正しく実行されていることを確認する方法です。
 
-可能であれば、ペアでない地域にコンテナーを作成します。 ペアの Azure リージョンは、サービス 障害ドメイン間で高可用性を提供します。 したがって、地域のペアは互いにバックアップ地域と考え合う可能性があります。 つまり、1 つの地域に配置された Azure リソースは、ペアリングされた地域を通じて自動的にフォールト トレランスを取得します。 このため、地域がペアのデータ暗号化ポリシーで使用される 2 つのコンテナーに対して地域を選択すると、合計で 2 つの可用性の地域だけが使用されます。 ほとんどの地域には 2 つの地域しか存在しないので、ペアリングされていない地域をまだ選択できません。 可能であれば、データ暗号化ポリシーで使用する 2 つのコンテナーに対して、ペアではない 2 つの地域を選択します。 これにより、合計で 4 つの可用性の領域を利用できます。 詳細については、「ビジネス継続性と障害復旧 [(BCDR): 地域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) ペアの現在の一覧については、Azure のペアリングされた地域」を参照してください。
+可能であれば、ペアでない地域にコンテナーを作成します。 ペアの Azure リージョンは、サービス 障害ドメイン間で高可用性を提供します。 したがって、地域のペアは互いにバックアップ地域と考え合う可能性があります。 つまり、1 つの地域に配置された Azure リソースは、ペアリングされた地域を通じて自動的にフォールト トレランスを取得します。 このため、地域がペアのデータ暗号化ポリシーで使用される 2 つのコンテナーに対して地域を選択すると、合計で 2 つの可用性の地域だけが使用されます。 ほとんどの地域には 2 つの地域しか存在しないので、ペアリングされていない地域をまだ選択できません。 可能であれば、データ暗号化ポリシーで使用する 2 つのコンテナーに対して、ペアではない 2 つの地域を選択します。 これは、合計で 4 つの可用性の領域から恩恵を受ける場合に便利です。 詳細については、「ビジネス継続性と障害復旧 [(BCDR): 地域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) ペアの現在の一覧については、Azure のペアリングされた地域」を参照してください。
 
 ### <a name="assign-permissions-to-each-key-vault"></a>各キー コンテナーにアクセス許可を割り当てる
 
@@ -141,7 +141,7 @@ Microsoft 365 チームに連絡する前に、顧客キーで使用する Azure
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- Azure **Key Vault 自体** のアクセス許可を変更できる主要なコンテナーの投稿者。 従業員がチームを離れる、またはチームに参加する場合、またはキー コンテナー管理者がキーを削除または復元するためのアクセス許可を正当に必要とするまれな状況では、これらのアクセス許可を変更する必要があります。 この一連の主要なコンテナー投稿者には、キー コンテナーの共同作成者ロールが付与されている必要があります。 このロールは、Azure リソース マネージャーを使用して割り当てできます。 詳細な手順については、「Role-Based [Access Control](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) を使用して Azure サブスクリプション リソースへのアクセスを管理する」を参照してください。 サブスクリプションを作成する管理者は、既定でこのアクセス権を持ち、他の管理者を投稿者の役割に割り当てる機能を持っています。
+- Azure **Key Vault 自体** のアクセス許可を変更できる主要なコンテナーの投稿者。 従業員がチームを離れる、またはチームに参加する場合、またはキー コンテナー管理者がキーを削除または復元するためのアクセス許可を正当に必要とするまれな状況では、これらのアクセス許可を変更する必要があります。 この一連の主要なコンテナー投稿者には、キー コンテナーに対する共同作成者の役割を付与する必要があります。 このロールは、Azure リソース マネージャーを使用して割り当てできます。 詳細な手順については、「Role-Based [Access Control](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) を使用して Azure サブスクリプション リソースへのアクセスを管理する」を参照してください。 サブスクリプションを作成する管理者は、既定でこのアクセス権を持ち、他の管理者を投稿者の役割に割り当てる機能を持っています。
 
 - テナント レベルで顧客キーの処理を行う、保存中の **Microsoft 365** データ暗号化サービス。 Microsoft 365 へのアクセス許可を付与するには、次の構文を使用して **Set-AzKeyVaultAccessPolicy** コマンドレットを実行します。
 
@@ -199,7 +199,7 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
 - *キー名* は、新しいキーを指定する名前です。
 
   > [!TIP]
-  > キー コンテナーの場合は、上記と同様の名前付け規則を使用してキーに名前を付ける。 これにより、キー名のみを表示するツールでは、文字列は自己記述型になります。
+  > キー コンテナーの場合は、上記と同様の名前付け規則を使用してキーに名前を付ける。 これにより、キー名のみを表示するツールでは、文字列は自己記述型です。
   
 キーを必ず _DESTINATION_ パラメーターの値として指定し、**それ** 以外の場合は **Software** を指定します。
 
@@ -219,7 +219,7 @@ Microsoft 365 では、Azure Key Vault サブスクリプションが [キャン
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-回復レベルのプロパティが **Recoverable+ProtectedSubscription** の値以外の値を返す場合は、この記事を確認し、サブスクリプションを取り消し不可リストに入れるすべての手順を実行し、各キー コンテナーで "回復可能な削除" を有効にした必要があります。 次に、電子メールの出力のスクリーンショット `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` を送信して、m365ck@microsoft.com。
+回復レベルのプロパティが **Recoverable+ProtectedSubscription** の値以外の値を返す場合は、この記事を確認し、サブスクリプションを取り消さなかった一覧にサブスクリプションを入れるすべての手順を実行し、各キー コンテナーで "回復可能な削除" を有効にした必要があります。 次に、電子メールの出力のスクリーンショット `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` を送信して、m365ck@microsoft.com。
 
 ### <a name="back-up-azure-key-vault"></a>Azure Key Vault をバックアップする
 
@@ -244,7 +244,7 @@ Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-N
 
 ### <a name="validate-azure-key-vault-configuration-settings"></a>Azure Key Vault の構成設定を検証する
 
-DEP でキーを使用する前に検証を実行する方法はオプションですが、強くお勧めします。 特に、このトピックで説明する手順以外の手順でキーとコンテナーをセットアップする場合は、顧客キーを構成する前に Azure Key Vault リソースの正常性を検証する必要があります。
+DEP でキーを使用する前に検証を実行する方法はオプションですが、強くお勧めします。 特に、このトピックで説明する手順以外のキーとコンテナーをセットアップする手順を使用する場合は、顧客キーを構成する前に Azure Key Vault リソースの正常性を検証する必要があります。
   
 キーで get、wrapKey、および unwrapKey 操作が有効になっているか確認するには、次の手順を実行します。
   
@@ -274,7 +274,7 @@ Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,un
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-期限切れのキーを顧客キーで使用することはできません。また、期限切れのキーを使用して試行された操作は失敗し、サービスが停止する可能性があります。 顧客キーで使用するキーには有効期限日を設定することを強く推奨します。 有効期限を設定すると削除できませんが、別の日付に変更できます。 有効期限が設定されているキーを使用する必要がある場合は、有効期限の値を 9999 年 12 月 31 日に変更します。 有効期限が 12/31/9999 以外の日付に設定されているキーは、Microsoft 365 検証に合格しません。
+期限切れのキーを顧客キーで使用することはできません。また、期限切れのキーを使用して試行された操作は失敗し、サービスが停止する可能性があります。 顧客キーで使用するキーには有効期限日を設定することを強く推奨します。 有効期限を設定すると削除できませんが、別の日付に変更できます。 有効期限が設定されているキーを使用する必要がある場合は、有効期限の値を 9999 年 12 月 31 日に変更します。 有効期限が 9999 年 12 月 31 日以外の日付に設定されているキーは、Microsoft 365 検証に合格しません。
   
 12/31/9999 以外の値に設定されている有効期限を変更するには [、Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) コマンドレットを次のように実行します。
   
@@ -302,7 +302,7 @@ Azure PowerShell の場合:
    New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
 ```
 
-説明: コンプライアンス管理者が 2 つの AROOT ルート キーを使用して新しいデータ暗号化ポリシー (DEP) を作成できます。 作成されたポリシーは、このコマンドレットを使用Set-M365DataAtRestEncryptionPolicyできます。 キーを最初に割り当て、またはキーを回転した後に、新しいキーが有効にな最大 24 時間かかる場合があります。 新しい DEP が有効にするのに 24 時間以上かかる場合は、Microsoft にお問い合わせください。
+説明 : コンプライアンス管理者が 2 つの AROOT ルート キーを使用して新しいデータ暗号化ポリシー (DEP) を作成できます。 作成されたポリシーは、このコマンドレットを使用Set-M365DataAtRestEncryptionPolicyできます。 キーを最初に割り当て、またはキーを回転した後に、新しいキーが有効にな最大 24 時間かかる場合があります。 新しい DEP が有効にするのに 24 時間以上かかる場合は、Microsoft にお問い合わせください。
 
 例:
 
@@ -312,9 +312,9 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 
 パラメータ :
 
-| Name | 説明 | 省略可能 (Y/N) |
+| 名前 | 説明 | 省略可能 (Y/N) |
 |--|--|--|
-|Name|データ暗号化ポリシーの表示名|×|
+|名前|データ暗号化ポリシーの表示名|×|
 |AzureKeyIDs|データ暗号化ポリシーに関連付ける Azure Key Vault キーの 2 つの URI 値をコンマで区切って指定します。|×|
 |説明|データ暗号化ポリシーの説明|×|
 
@@ -333,7 +333,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
 ```
 
 パラメータ :
-| Name | 説明 | 省略可能 (Y/N) |
+| 名前 | 説明 | 省略可能 (Y/N) |
 |--|--|--|
 -Policy|割り当てる必要があるデータ暗号化ポリシーを指定します。ポリシー名またはポリシー ID を指定します。|×|
 
@@ -360,7 +360,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 ```
 
 パラメータ :
-| Name | 説明 | 省略可能 (Y/N) |
+| 名前 | 説明 | 省略可能 (Y/N) |
 |--|--|--|
 |-Identity|変更するデータ暗号化ポリシーを指定します。|×|
 |-Refresh|Azure Key Vault で関連付けられたキーを回転した後、Refresh スイッチを使用してデータ暗号化ポリシーを更新します。 このスイッチで値を指定する必要はありません。|Y|
@@ -374,7 +374,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 Get-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
 ```
 
-説明 : このコマンドレットは、テナント用に作成された M365DataAtRest 暗号化ポリシーの一覧、または特定のポリシーに関する詳細を一覧表示します。
+説明 : このコマンドレットは、テナント用に作成された M365DataAtRest 暗号化ポリシーの一覧、または特定のポリシーの詳細を一覧表示します。
 
 例:
 
@@ -392,7 +392,7 @@ Get-M365DataAtRestEncryptionPolicy -Identity "NAM Policy"
 
 パラメータ :
 
-| Name | 説明 | 省略可能 (Y/N) |
+| 名前 | 説明 | 省略可能 (Y/N) |
 |--|--|--|
 |-Identity|詳細を一覧表示するデータ暗号化ポリシーを指定します。|Y|
 

@@ -15,21 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 高度な電子情報開示ケースに保管担当者が追加されると、部分的にインデックスと見なされたコンテンツはすべて再利用され、完全に検索可能になります。
-ms.openlocfilehash: 95e087884b65628565e596dc8ae9f33aadc4cd9f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: 保管担当者が Advanced eDiscovery ケースに追加された場合、部分的にインデックスが作成されたと見なされたコンテンツは再処理され、完全に検索可能になります。
+ms.openlocfilehash: 908d01cacc103639e1f9efe965240c33a5296ba9
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527557"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750758"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>カストディアン データの詳細なインデックス処理
 
-高度な電子情報開示ケースに保管担当者が追加されると、部分的にインデックスと見なされたコンテンツはすべて再利用され、完全に検索可能になります。  このプロセスは、*高度なインデックス*と呼ばれます。 画像の存在、サポートされていないファイルの種類、インデックスファイルサイズの制限が発生したなど、さまざまな理由でコンテンツを部分的にインデックス処理することができます。
+保管担当者が Advanced eDiscovery ケースに追加された場合、部分的にインデックスが作成されたと見なされたコンテンツは再処理され、完全に検索可能になります。  このプロセスは、高度な *インデックス作成と呼ばれる処理です*。 画像の存在、サポートされていないファイルの種類、ファイル サイズの制限のインデックスを作成する場合など、多くの理由から、コンテンツに部分的にインデックスを作成できます。
 
-処理のサポートおよび部分的なインデックスが作成されたアイテムの詳細については、以下を参照してください。
+サポートと部分的にインデックスが作成されたアイテムの処理の詳細については、以下を参照してください。
 
-- [高度な電子情報開示でサポートされているファイルの種類](supported-filetypes-ediscovery20.md)
+- [Advanced eDiscovery でサポートされるファイルの種類](supported-filetypes-ediscovery20.md)
 
 - [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)
 
@@ -37,19 +37,19 @@ ms.locfileid: "46527557"
 
 - [SharePoint Server での既定のクロール対象ファイル名拡張子および解析対象ファイルの種類](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
-## <a name="viewing-advanced-indexing-results"></a>高度なインデックス作成の結果を表示する
+## <a name="viewing-advanced-indexing-results"></a>高度なインデックス作成結果の表示
 
-高度なインデックス処理が完了すると、再処理の有効性について理解することができます。  ケースに対して [**処理**] タブの [詳細なインデックス作成の結果] ビューに、*ハイブリッドインデックス*に追加されたアイテムの数がグラフに表示されます。  ハイブリッドインデックスは、高度な電子情報開示が再処理されたコンテンツを格納する場所です。
+高度なインデックス作成プロセスが完了すると、再処理の有効性を理解できます。  ケースの [処理] タブの[詳細なインデックス作成の結果] ビューに、ハイブリッド インデックスに追加されたアイテムの数が *グラフに表示されます*。  ハイブリッド インデックスは、Advanced eDiscovery が再処理されたコンテンツを格納する場所です。
 
-このビューには、修復を必要とするアイテムの数と、ファイルの種類別のエラーのグラフも含まれています。 詳細については、以下をご参照ください。
+このビューには、修復が必要なアイテムの数と、ファイルの種類別のエラーの別のグラフも含まれます。 詳細については、以下を参照してください。
 
-- [データ処理中のエラー修復](error-remediation.md)
+- [データ処理中のエラー修復](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [単一アイテムのエラーの修復](single-item-error-remediation.md)
 
-## <a name="updating-the-advanced-index-for-custodians"></a>保管担当者の高度なインデックスを更新する
+## <a name="updating-the-advanced-index-for-custodians"></a>カストディアンの高度なインデックスの更新
 
-高度な電子情報開示ケースに保管担当者が追加されると、部分的にインデックスが作成されたすべてのアイテムが再処理されます。 ただし、時間が経過すると、インデックスが作成されたアイテムの数が多くなると、ユーザーのメールボックスまたは OneDrive アカウントに追加されることがあります。  必要に応じて、特定の保管担当者のインデックスを更新できます。 詳細については、「 [Manage 保管担当者 in a Advanced eDiscovery case](manage-new-custodians.md#re-index-custodian-data)」を参照してください。 [**処理**] タブの [**更新インデックス**] をクリックして、すべての保管担当者のインデックスを更新することもできます。
+保管担当者が Advanced eDiscovery ケースに追加された場合、部分的にインデックスが作成されたアイテムはすべて再処理されます。 ただし、時間が経過すると、部分的にインデックスが作成されたアイテムがユーザーのメールボックスまたは OneDrive アカウントに追加される可能性があります。  必要に応じて、特定のカストディアンのインデックスを更新できます。 詳細については [、「Advanced eDiscovery ケースで保管担当者を管理する」を参照してください](manage-new-custodians.md#re-index-custodian-data)。 ケース内のすべての保管担当者のインデックスを更新するには、[処理] タブの [更新 **] インデックス** を **クリック** します。
 
 > [!NOTE]
-> 保管担当者インデックスの更新は、長時間実行されるプロセスです。 ケースでは、インデックスを1日に複数回更新しないことをお勧めします。
+> カストディアン インデックスの更新は、長時間実行されるプロセスです。 1 日に 2 回以上インデックスを更新しないでお勧めします。

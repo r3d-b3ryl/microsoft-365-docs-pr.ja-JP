@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: セキュリティ コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーですぐに使用できる 80 種類の機密情報が &amp; 含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: cb45d613da95c977f56b82e64ad3332434e08cd8
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 10f45403703130c191f4cbb26d1c0cba168b05ae
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698510"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751284"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -328,7 +328,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - オーストラリアの会社なし
 - オーストラリアの会社なし#
 - オーストラリアの会社番号
-- オーストラリアの会社いいえ
+- オーストラリアの会社なし
 - オーストラリアの会社なし#
 - オーストラリアの会社番号
 
@@ -495,7 +495,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1 桁目が 2 ~ 6 の範囲
 - 9 桁目はチェック ディジット
 - 10 桁目が問題の数字
-- 1 桁目の数字 (省略可能) は個々の数字です。
+- 1 番目の数字 (省略可能) は個々の数字です。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -552,7 +552,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 Regex_australia_passport_number がパターンに一致するコンテンツを検出した。
-- 特定のユーザーまたはKeyword_passportキーワードKeyword_australia_passport_number検出された。
+- 検索または検索Keyword_passportキーワードKeyword_australia_passport_number検出されました。
 
 ```xml
 <!-- Australia Passport Number -->
@@ -580,7 +580,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passportnumber
 - パスポート
 - パスポート番号
-- 万の表示
+- 万の数
 - パスポート ＃ 
 - Numéro de passeport
 - Passeport n °
@@ -796,7 +796,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -843,7 +843,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+対象外
   
 ### <a name="definition"></a>定義
 
@@ -871,7 +871,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - personalausweis repubwei ösichich
 
 ## <a name="austria-passport-number"></a>オーストリアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -891,26 +890,42 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_austria_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_austria_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_austria_eu_passport_number` 検出した。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Passport Number -->
+      <Entity id="1c96ae4e-303b-447d-86c7-77113ac266bf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_austria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -933,8 +948,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Passnummer
 - reisep sse
 
-## <a name="austria-social-security-number-or-equivalent-identification"></a>オーストリアの社会保障番号または同等の識別情報
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
+
+## <a name="austria-social-security-number"></a>オーストリアの社会保障番号
 
 ### <a name="format"></a>フォーマット
 
@@ -955,45 +970,58 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 'Func_austria_eu_
-- _or_equivalentパターンに一致するコンテンツを検索します。 
-- キーワードが  `Keywords_austria_eu_ssn_or_equivalent` 見つかりました。 
+- この関数は  `Func_austria_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
+- キーワードを  `Keywords_austria_eu_ssn_or_equivalent` 検出した。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - この関数は  `Func_austria_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Social Security Number -->
+      <Entity id="6896a906-86c9-4d19-a2da-6e43ccd19b7b" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_austria_eu_ssn_or_equivalent" />
         </Pattern>
-<Pattern confidenceLevel="75">
-            <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
-          </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_austria_eu_telephone_number" />
+            <Match idRef="Keywords_austria_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- 社会保障なし
+- の ssn
+- ehic number
+- ehic no
+- insurance code
+- insurancecode#
+- insurance number
+- insurance no
+- 1000,000,000,000
+- cherungnkenversicherung
+- socialsecurityno
+- socialsecurityno#
+- social security no
 - social security number
 - social security code
-- insurance number
-- の ssn
+- sozialversicherungsnummer
+- sozialversicherungsnummer#
+- socherle sicherheit n
+- soichlesicherheitkein#
 - ssn#
 - ssn
-- insurance code
-- insurance code#
-- socialsecurityno#
-- sozialversicherungsnummer
-- socherle sicherheit n
+- versicherungscode
 - versicherungsnummer
+- zdravstveno zavarovanje
 
-## <a name="austria-tax-identification-number"></a>オーストリアの税金の識別番号
+## <a name="austria-tax-identification-number"></a>オーストリアの税識別番号
 
 ### <a name="format"></a>フォーマット
 
@@ -1080,11 +1108,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - T または t
 - 省略可能なスペース
 - U または u
-- 省略可能なスペース
+- オプションのスペース
 - 2 桁または 3 桁の数字
-- 省略可能なスペース
+- オプションのスペース
 - 4 桁の数字
-- 省略可能なスペース
+- オプションのスペース
 - 1 桁または 2 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -1189,7 +1217,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>フォーマット
 
-文字列 "Server"、"server"、または "data source" の後に、文字列 "cloudapp.azure" を含む、以下のパターンで概説されている文字と文字列が続きます。<!--no-hyperlink-->com" または "cloudapp.azure" です。<!--no-hyperlink-->net" または "database.windows.<!--no-hyperlink-->net"、および文字列 "Password" または "password" または "pwd" です。
+文字列 "Server"、"server"、または "data source" の後に、文字列 "cloudapp.azure" を含む、以下のパターンで概説されている文字と文字列が続きます。<!--no-hyperlink-->com" または "cloudapp.azure.<!--no-hyperlink-->net" または "database.windows.<!--no-hyperlink-->net"、および文字列 "Password" または "password" または "pwd" です。
 
 ### <a name="pattern"></a>パターン
 
@@ -1258,7 +1286,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 等号 (=)
 - 0 から 2 文字の空白文字
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
-- 文字列 "azure-devices"<!--no-hyperlink-->net"
+- 文字列 "azure-devices"。<!--no-hyperlink-->net"
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
 - 文字列 "SharedAccessKey"
 - 0 から 2 文字の空白文字
@@ -1555,7 +1583,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 (技術的には、この機密情報の種類はキーワード リストではなく正規表現を使用してこれらのキーワードを識別します)。
 
-- Eby8vdM02xNOcqFlqUwLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
+- Eby8vdM02xNOcqFlqUwLLmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1575,12 +1603,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>フォーマット
 
-86 文字の小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ。前または後に、次のパターンでアウトラインで示される文字。
+86 文字の小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ。前または後に、以下のパターンでアウトラインで示される文字が続きます。
 
 ### <a name="pattern"></a>パターン
 
 - 0 から大きい記号 (>)、アポストロフィ (')、等号 (=)、引用符 (")、または数値記号 (#)
-- 小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) である 86 文字の任意の組み合わせ
+- 小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の 86 文字の任意の組み合わせ
 - 2 つの等号 (=)
 
 ### <a name="checksum"></a>チェックサム
@@ -1741,7 +1769,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -1877,7 +1905,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - tin#
 
 ## <a name="belgium-passport-number"></a>ベルギーのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -1893,26 +1920,44 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+ DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_belgium_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` された、または検出された。 
+- 正規表現は、DD MM YY という形式の日付を検索するか、検索 `Regex_eu_passport_date2` されたキーワードを `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` 検索します。
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_belgium_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_belgium_eu_passport_number` 検出した。
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` された、または検出された。 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Passport Number -->
+      <Entity id="d7b1315b-21ca-4774-a32a-596010ff78fd" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+            <Match idRef="Keywords_belgium_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_belgium_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -1937,66 +1982,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Pass-Nr
 - Passnummer
 - reisepasspass
-
-## <a name="belgium-social-security-number-or-equivalent-identification"></a>ベルギーの社会保障番号または同等の識別情報
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-11 桁の数字 (スペースまたは区切り記号なし)
-  
-### <a name="pattern"></a>パターン
-
-11 桁の数字
-  
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
-- この関数は  `Func_belgium_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_belgium_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_belgium_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_belgium_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_belgium_eu_ssn_or_equivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
-
-- national number
-- national number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- 個人用 ID 番号
-- personalidnumber#
-- numéro national
-- numéro de sécurité
-- numéro d'assuré
-- identifiant national
-- identifiantnational#
-- numéronational#
 
 
 ## <a name="belgium-value-added-tax-number"></a>ベルギーの付加価値税番号
@@ -2409,7 +2394,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -2509,7 +2494,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ssn#
 - ssn
 - uniform の市民 ID
-- uniform civil no
+- 均一な市民なし
 - 均一な市民番号
 - uniformcivilno#
 - uniformcivilno
@@ -2534,7 +2519,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="bulgaria-passport-number"></a>ブルガリアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -2550,25 +2534,41 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_bulgaria_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_bulgaria_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_bulgaria_eu_passport_number` `Keywords_eu_passport_number_common` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` された、または検出された。 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Bulgaria Passport Number -->
+      <Entity id="f7172b82-c588-4216-845e-4e54e397f29a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_bulgaria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -2586,6 +2586,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - номер на паспорта
 - номер на паспорт
 - паспортいいえ
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
 
 ## <a name="canada-bank-account-number"></a>カナダの銀行口座番号
 
@@ -2934,7 +2939,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="pattern"></a>パターン
 
-2 桁の大文字と 6 桁の数字
+2 桁の大文字、その後に 6 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -2983,7 +2988,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passportnumber
 - パスポート
 - パスポート番号
-- 万の表示
+- 万の数
 - パスポート#
 - Numéro de passeport
 - Passeport n °
@@ -3055,7 +3060,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - On、on
 - British Columbia
 - アルバサ
-- ササカチワン島
+- サカtchewan
 - マニートバ島
 - ナズン語
 - Newfoundland and Labrador
@@ -3223,11 +3228,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - チリの ID 番号
 - チリの ID#
 - 固有の Tax Registry
-- Unique Tributary Role
+- 一意のトリビュート ロール
 - Unique Tax Role
 - 一意のトリビュート番号
 - 一意の国番号
-- 固有の国民的役割
+- 固有の国の役割
 - 国固有の役割
 - チリの ID いいえ。
 - チリの ID 番号
@@ -3500,7 +3505,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - karte
 - karteninhaber
 - karteninhabers
-- kredit kredit krteninhaber
+- kreditkrteninhaber
 - kredit kredit krteninstitut
 - kredit kredit krtentyp
 - eigentigmername
@@ -3731,7 +3736,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -3820,7 +3825,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="croatia-passport-number"></a>クロアチアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -3836,21 +3840,37 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_croatia_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_croatia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_croatia_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Passport Number -->
+      <Entity id="7d7a729d-32d8-4204-8d01-d5e6a6c25581" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_croatia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>キーワード
 
@@ -3946,68 +3966,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - tin no
 - tin#
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>クロアチアの社会保障番号または同等の識別情報
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>フォーマット
-
-スペースと区切り記号を含めずに 11 桁の数字
-  
-### <a name="pattern"></a>パターン
-
-11 桁の数字:
-  
-- 10 桁の数字
-- 1 桁のチェック ディジット
-    
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
-- この関数は  `Func_croatia_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_croatia_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
-- この関数は  `Func_croatia_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
-
-- 個人識別番号
-- マスターの市民番号
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- 個人用 ID 番号
-- personalidnumber#
-- oib
-- osobni identifikacijski broj
-
-   
 ## <a name="cyprus-drivers-license-number"></a>キプロスの運転免許証番号
 
 ### <a name="format"></a>フォーマット
@@ -4148,7 +4107,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -4220,7 +4179,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="cyprus-passport-number"></a>キプロスのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -4236,21 +4194,37 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_cyprus_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_cyprus_eu_passport_date` DD/MM/YYYY の形式で日付を検出するか、キーワードが `Keywords_cyprus_eu_passport_date` 見つかった
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現は、  `Regex_cyprus_eu_passport_number` パターンに一致するコンテンツを検索します。
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_cyprus_eu_passport_number` された、または検出された。 
+- 正規表現は、  `Regex_cyprus_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` された、または検出された。  
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Passport Number -->
+      <Entity id="9193e2e8-7f8c-43c1-a274-ac40d651936f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_cyprus_eu_passport_date" />
+            <Match idRef="Keywords_cyprus_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_cyprus_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -4281,6 +4255,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - pasaport numaras の数
 - Pasaport no.
 - Αρ. Διαβατηρίου
+
+#### <a name="keywords_cyprus_eu_passport_date"></a>Keywords_cyprus_eu_passport_date
+
+- expires on
+- 発行日
+
 
 ## <a name="cyprus-tax-identification-number"></a>キプロスの税金の識別番号
 この機密情報の種類は、次の場合にのみ使用できます。
@@ -4359,7 +4339,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - φορολογικού κωδικού
 
 
-## <a name="czech-drivers-license-number"></a>チェコの運転免許証番号
+## <a name="czech-drivers-license-number"></a>チェコ語の運転免許証番号
 
 ### <a name="format"></a>フォーマット
 
@@ -4504,7 +4484,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -4529,7 +4509,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="czech-passport-number"></a>チェコのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -4545,21 +4524,37 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_czech_republic_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_czech_republic_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_czech_republic_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Czech Republic Passport Number -->
+      <Entity id="7bcd8ce8-5e92-4bbe-bc92-fa669f0369fa" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_czech_republic_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -4585,12 +4580,17 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passeport no
 - čísla pasu
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="czech-personal-identity-number"></a>チェコの個人識別番号
 
 ### <a name="format"></a>フォーマット
 
-オプションのスラッシュ (古い形式) を使用する 9 桁の数字とオプションのスラッシュ (新しい形式) を使用する 10 桁の数字
+オプションのスラッシュ (古い形式) を使用する 9 桁の数字とオプションのスラッシュ (新しい形式) を含む 10 桁の数字
 
 ### <a name="pattern"></a>パターン
 
@@ -4602,7 +4602,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 10 桁の数字 (新しい形式):
 - 生年月日を表す 6 桁の数字
 - オプションのスラッシュ 
-- 最後の数字がチェック ディジットである 4 桁の数字
+- 4 桁の数字(最後の数字はチェック ディジット)
 
 ### <a name="checksum"></a>チェックサム
 
@@ -4645,7 +4645,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - czechidno#
 - daéové číslo
 - identifikační číslo
-- ID no
+- ID なし
 - ID 番号
 - identityno#
 - identityno
@@ -4684,68 +4684,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - tin no
 - tin#
 - 一意の ID 番号
-
-
-## <a name="czech-social-security-number-or-equivalent-identification"></a>チェコの社会保障番号または同等の識別情報
-
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-指定したパターンの 10 桁の数字と円記号
-  
-### <a name="pattern"></a>パターン
-
-10 桁の数字と円記号:
-  
-- 生年月日 (YYMMDD) に対応する 6 桁の数字: 
-- 円記号
-- 同じ日付に生まれた人物を分け合うシリアル番号に対応する 3 桁の数字
-- 1 桁のチェック ディジット
-    
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_czech_republic_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_czech_republic_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_czech_republic_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
-
-- 生年月日
-- national identification number
-- 個人識別番号
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- 個人用 ID 番号
-- personalidnumber#
-- rč
-- rodné číslo
-- rodne cislo
 
 
 ## <a name="denmark-drivers-license-number"></a>デンマークの運転免許証番号
@@ -4888,7 +4826,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -4911,7 +4849,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="denmark-passport-number"></a>デンマークのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -4927,21 +4864,38 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_denmark_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` された、または検出された。 
+- DD MM YY またはキーワードの形式で日付が検出 `Regex_eu_passport_date2` された正規表現 `Keywords_eu_passport_date` が見つかった
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_denmark_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_denmark_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Passport Number -->
+      <Entity id="25e8c47e-e6fe-4884-a211-74898f8c0196" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_denmark_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -4964,6 +4918,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - pasnummer
 - Passeport n°
 - pasnumre
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
 
 
 ## <a name="denmark-personal-identification-number"></a>デンマークの個人識別番号
@@ -5041,7 +5000,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - の id
 - kode
 - nummer
-- (1)、1000,00
+- はい
 - social security number
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
@@ -5083,64 +5042,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - sygesikringsnummer
 
 
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>デンマークの社会保障番号または同等の識別情報
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類のみを使用できます。
-
-### <a name="format"></a>フォーマット
-
-指定されたパターンの 10 桁の数字とハイフン
-  
-### <a name="pattern"></a>パターン
-
-10 桁の数字とハイフン:
-  
-- 生年月日に対応する 6 桁の数字 (DDMMYY) 
-- ハイフン
-- シーケンス番号に対応する 4 桁の数字
-
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_denmark_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_denmark_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_denmark_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
-
-- 個人識別番号
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- 個人用 ID 番号
-- personalidnumber#
-- cpr-nummer
-- personnummer
-
-
 ## <a name="drug-enforcement-agency-dea-number"></a>ドラッグ執行機関 (DEA) 番号
 
 ### <a name="format"></a>フォーマット
@@ -5150,7 +5051,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="pattern"></a>パターン
 
 パターンには、以下のすべてが含まれる必要があります。
-- 考えられる一連の文字から 1 文字 (大文字小文字を区別しない): abcdefghjklmnprstux(レジストリ コード) 
+- 考えられる一連の文字から 1 文字 (大文字小文字を区別しない): abcdefghjklmnprstux(登録コード) 
 - 1 文字 (大文字と小文字は区別されません)。これは、登録者の名の最初の文字または数字 '9' です。
 - 7 桁の数字、最後の数字はチェック ディジット
 
@@ -5342,7 +5243,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -5382,7 +5283,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 11 桁の数字:
   
-- 性と生年月日に対応する 1 桁の数字 (奇数の男性、偶数の女性、1 から 2: 19th century、3 から 4: 20th century、5 から 6: 21st century)
+- 性と生年月日に対応する 1 桁の数字 (奇数の男性、偶数の女性、1 ~ 2: 19th century、3 ~ 4: 20th century、5 ~ 6: 21st century)
 - 生年月日 (YYMMDD) に対応する 6 桁の数字
 - 同じ日付に生まれた人を区切るシリアル番号に対応する 3 桁の数字
 - 1 桁のチェック ディジット
@@ -5454,7 +5355,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="estonia-passport-number"></a>エストニアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -5470,21 +5370,37 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_estonia_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_estonia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_estonia_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Passport Number -->
+      <Entity id="61f7073a-509e-425b-a754-bc01bb5d5b8c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_estonia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -5505,6 +5421,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
 eesti ko、passi number passinumbrid document number document no dokumendi nr
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="eu-debit-card-number"></a>EU のデビット カード番号
 
@@ -5658,7 +5580,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - kartennummer 
 - kredit kreditte 
 - kreditkrten-nummer 
-- kredit kredit krteninhaber 
+- kreditkrteninhaber 
 - kredit kredit krteninstitut 
 - kreditkrtennummer 
 - kredit kredit krtentyp 
@@ -5959,21 +5881,21 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>EU 社会保障番号または同等の識別情報
 
-これらは、EU 社会保障番号または同等の識別機密情報の種類に含んでいるエンティティです。
+これらは、EU 社会保障番号または同等の識別機密情報の種類のエンティティです。
 
-- [Austria](#austria-social-security-number-or-equivalent-identification)
-- [Belgium](#belgium-social-security-number-or-equivalent-identification)
-- [Croatia](#croatia-social-security-number-or-equivalent-identification)
-- [チェコ語](#czech-social-security-number-or-equivalent-identification)
-- [デンマーク](#denmark-social-security-number-or-equivalent-identification)
-- [フィンランド](#finland-social-security-number-or-equivalent-identification)
+- [Austria](#austria-social-security-number)
+- [Belgium](#belgium-national-number)
+- [Croatia](#croatia-personal-identification-oib-number)
+- [チェコ語](#czech-personal-identity-number)
+- [デンマーク](#denmark-personal-identification-number)
+- [フィンランド](#finland-national-id)
 - [France](#france-social-security-number-insee-or-equivalent-identification)
 - [Germany](#germany-identity-card-number)
 - [ギリシャ](#greece-national-id-card)
-- [ハンガリー](#hungary-social-security-number-or-equivalent-identification)
+- [ハンガリー](#hungary-social-security-number-taj)
 - [Portugal](#portugal-citizen-card-number)
 - [スペイン](#spain-social-security-number-ssn)
-- [スウェーデン](#sweden-social-security-number-or-equivalent-identification)
+- [スウェーデン](#sweden-national-id)
 
 
 ## <a name="eu-tax-identification-number"></a>EU の税識別番号
@@ -6155,7 +6077,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -6302,7 +6224,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ID 番号
 - idnumber
 - nen henkilötunnus
-- llisen henkilökortin
+- sen henkilkortin
 - national id card
 - national id no.
 - 個人用 ID
@@ -6339,7 +6261,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="finland-passport-number"></a>フィンランドのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類で利用できます。スタンドアロンの機密情報の種類のエンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 9 桁の文字と数字の組み合わせ
@@ -6395,78 +6316,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passin numero.
 - passi#
 - passi number
-
-
-## <a name="finland-social-security-number-or-equivalent-identification"></a>フィンランドの社会保障番号または同等の識別情報
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-指定された形式の 11 文字の組み合わせ
-  
-### <a name="pattern"></a>パターン
-
-指定された形式の 11 文字の組み合わせ:
-  
-- 6 桁の数字 
-- 次のいずれかのインスタンス:
-  - プラス記号
-  - マイナス記号
-  - 文字 "A" (大文字と小文字を区別しない)
-- 3 桁の数字
-- 1 文字または 1 桁の数字
-    
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_finland_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_finland_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_finland_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_finland_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_finland_eu_ssn_or_equivalent"></a>Keywords_finland_eu_ssn_or_equivalent
-
-- identification number
-- 個人用 ID
-- ID 番号
-- フィンランドの国民 ID 番号
-- personalidnumber#
-- national identification number
-- id number
-- national id no.
-- national id number
-- id no
-- tunnistenumero
-- henkilötunnus
-- yksilöeronen henkilökohtainen tunnistenumero
-- ainutlaatuinen henkilökohtainen tunnus
-- identiteetti numero
-- suomennen henkilötunnus
-- henkilötunnusnumero#
-- erosen tunnistenumero
-- tunnusnumero
-- numeronen tunnus numero
-- hetu
 
 
 ## <a name="france-drivers-license-number"></a>フランスの運転免許証番号
@@ -6606,7 +6455,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -6774,7 +6623,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passportnumber
 - パスポート
 - パスポート番号
-- 万の表示
+- 万の数
 - パスポート ＃ 
 - Numéro de passeport
 - Passeport n °
@@ -6956,11 +6805,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 文字 - FR (大文字と小文字を区別しない)
 - オプションのスペースまたはハイフン
 - 2 桁の文字または数字
-- 省略可能なスペース、ドット、ハイフン、またはコンマ
+- オプションのスペース、ドット、ハイフン、またはコンマ
 - 3 桁の数字
 - オプションのスペース、ドット、ハイフン、またはコンマ
 - 3 桁の数字
-- 省略可能なスペース、ドット、ハイフン、またはコンマ
+- オプションのスペース、ドット、ハイフン、またはコンマ
 - 3 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -6997,7 +6846,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - vat#
 - 付加価値税
 - siren identification no numéro d'identification taxe sur sur surur ajoutée
-- taxe taxur ajoutée
+- taxe taxeur ajoutée
 - taxe sur la surjoutée
 - n° tva
 - numéro de tva
@@ -7177,7 +7026,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -7216,7 +7065,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
-- パターンに一Regex_germany_id_cardコンテンツを検索する正規表現。
+- 正規表現はRegex_germany_id_cardパターンに一致するコンテンツを検索します。
 - 検索されたKeyword_germany_id_card検索されます。
 
 ```xml
@@ -7249,7 +7098,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="germany-passport-number"></a>ドイツのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類のエンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -7271,12 +7119,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_german_passport がパターンに一致するコンテンツを検出した。
-- キーワードを `Keyword_german_passport` 検出した。
+- キーワードが検出 `Keyword_german_passport` `Keywords_eu_passport_number_common` された、または検出された。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_german_passport_data がパターンに一致するコンテンツを検出した。
-- キーワードを `Keyword_german_passport` 検出した。
+- キーワードが検出 `Keyword_german_passport` `Keywords_eu_passport_number_common` された、または検出された。
 - チェックサムが渡される。
 
 ```xml
@@ -7284,11 +7132,17 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
     </Entity>
 ```
@@ -7306,6 +7160,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - reisep sse
 - passeport no.
 - passeport no
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passport#
+- passport#
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- パスポート番号
+
 
 ## <a name="germany-tax-identification-number"></a>ドイツの税金の識別番号
 
@@ -7584,7 +7452,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -7659,7 +7527,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - ギリシャ語 ID
 - ギリシャの国民 ID
-- ギリシャの個人用 ID カード
+- ギリシャ語の個人用 ID カード
 - ギリシャ語の警察 ID
 - Identity card
 - tautotita
@@ -7668,8 +7536,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="greece-passport-number"></a>ギリシャのパスポート番号
-
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -7685,27 +7551,42 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_greece_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_greece_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_greece_eu_passport_date` DD MMM YY の形式で日付を検出した (例 - 8 月 19 日の 28 日) またはキーワードが `Keywords_greece_eu_passport_date` 見つかった
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_greece_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Passport Number -->
+      <Entity id="7e65eb47-cdf9-4f52-8f90-2a27d5ee67e3" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_greece_eu_passport_date" />
+            <Match idRef="Keywords_greece_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_greece_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -7723,6 +7604,65 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - αριθμός διαβατηρίου
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
+
+
+## <a name="greece-social-security-number-amka"></a>ギリシャの社会保障番号 (AMKA)
+この機密情報の種類は、次の場合にのみ使用できます。
+- データ損失防止ポリシー
+- 通信コンプライアンス ポリシー
+- 情報ガバナンス
+- レコード管理
+- Microsoft クラウド アプリのセキュリティ
+
+### <a name="format"></a>フォーマット
+
+スペースと区切り記号のない 11 桁の数字
+  
+### <a name="pattern"></a>パターン
+
+- YYMMDD の生年月日として 6 桁の数字
+- 4 桁の数字
+- チェック ディジット
+  
+### <a name="checksum"></a>チェックサム
+
+はい
+  
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- この関数は  `Func_greece_eu_ssn` 、パターンに一致するコンテンツを検索します。 
+- キーワードを  `Keywords_greece_eu_ssn_or_equivalent` 検出した。 
+    
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- この関数は  `Func_greece_eu_ssn` 、パターンに一致するコンテンツを検索します。 
+
+```xml
+      <!-- Greece Social Security Number (AMKA) -->
+      <Entity id="e39b03f4-50ea-41ae-af7a-a4b9539596ad" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+          <Match idRef="Keywords_greece_eu_ssn_or_equivalent" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
+
+- ssn
+- ssn#
+- social security no
+- socialsecurityno#
+- social security number
+- amka
+- a.m.k.a.
+- Αριθμού Μητρώου Κοινωνικής Ασφάλισης
+
 
 ## <a name="greece-tax-identification-number"></a>ギリシャの税金の識別番号
 この機密情報の種類は、次の場合にのみ使用できます。
@@ -7742,7 +7682,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+対象外
   
 ### <a name="definition"></a>定義
 
@@ -8020,7 +7960,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -8106,13 +8046,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - sz ig
 - sz. ig.
 - sz.ig.
-- személyazonosító zonzolvzony
+- személyazonosító ózolvzony
 - személyi zolvlvy
 
 
 ## <a name="hungary-passport-number"></a>ハンガリーのパスポート番号
-
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -8128,26 +8066,41 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_hungary_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_hungary_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` された、または検出された。 
+- 正規表現が DD `Regex_hungary_eu_passport_date` MMM/MMM YY の形式で日付を検出した (例 - 01 Mの間違い/MAR 12) またはキーワードが `Keywords_eu_passport_date` 見つかった
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_hungary_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungary Passport Number -->
+      <Entity id="5b483910-9aa7-4c99-9917-f4001464bda7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_hungary_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_hungary_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -8166,9 +8119,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Útlevelek száma
 - útlevél szám
 
-## <a name="hungary-social-security-number-or-equivalent-identification"></a>ハンガリーの社会保障番号または同等の識別情報
 
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
+## <a name="hungary-social-security-number-taj"></a>ハンガリーの社会保障番号 (タジ)
 
 ### <a name="format"></a>フォーマット
 
@@ -8194,16 +8146,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - この関数は  `Func_hungary_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungarian Social Security Number (TAJ) -->
+      <Entity id="0de78315-9537-47f5-95ab-b3e77eba3993" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_hungary_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
+        </Pattern>
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -8220,9 +8172,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - taj#
 - ssn
 - ssn#
-- 社会保障なし
+- social security no
 - áfa
-- 、
+- 、、 、zösségi adószám
 - általtaltalos forgalmi adó szám
 - hozzáadottérték adó
 - áfa szám
@@ -8324,10 +8276,10 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="pattern"></a>パターン
 
-10 文字の英数字のパターン:
+10 文字の英数字パターン:
 
 - 2 文字 - HU または hu
-- 省略可能なスペース
+- オプションのスペース
 - 8 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -8369,7 +8321,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - hungarianvatno#
 - tax no.
 - 付加価値税 áfa
-- 、
+- 、、 、zösségi adószám
 - általtaltalos forgalmi adó szám
 - hozzáadottérték adó
 - áfa szám
@@ -8543,7 +8495,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 国ごとに形式が少し異なります。 IBAN の機密情報の種類は、次の 60 か国を対象とします。
 
-ad、ae、al、at、az、ba、be、bg、bh、ch、 cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、gi、gl、gr、hr、hu、ie、il、is、it、kw、kz、lb、li、lt、lu、lv、mc、md、me、mk、mr、mt、mu、nl、no、pl、pt、ro、rs、sa、se、si、sk、sm、tn、tr、vg
+ad、ae、al、at、az、ba、be、bg、bh、ch、 cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、gi、gl、gr、hr、hu、ie、il、is、it、kw、kz、lb、li、lt、lu、lv、mc、md、me、mk、mr、mt、mu、nl、no、pl、pt、ro、rs、sa、se、sk、sm、tn、tr、vg
 
 ### <a name="checksum"></a>チェックサム
 
@@ -8607,9 +8559,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-Dictionary_icd_10_updated キーワード ディクショナリの任意の用語。これは、国際化の分類、10 番目のリビジョン、変更 [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づいて作成されます。 この型は、保険コードではなく、用語のみを検索します。
+Dictionary_icd_10_updated キーワード ディクショナリの任意の用語。これは、国際言語の分類、10 番目のリビジョン、変更 [履歴 (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づいて作成されます。 この型は、保険コードではなく、用語のみを検索します。
 
-Dictionary_icd_10_codes キーワード ディクショナリの任意の用語。これは、国際言語の分類、10 番目のリビジョン、変更 [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づいて作成されます。 この型は、説明ではなく、保険コードのみを検索します。
+Dictionary_icd_10_codes キーワード ディクショナリの任意の用語。これは、国際言語の分類、10 番目のリビジョン、変更の変更 [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づいて作成されます。 この型は、説明ではなく、保険コードのみを検索します。
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>病気の国際分類 (ICD-9-CM)
 
@@ -8648,7 +8600,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-Dictionary_icd_9_updated キーワード ディクショナリの任意の用語。これは、国際化の分類、9 番目のリビジョン、変更 [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605)に基づくもの。 この型は、保険コードではなく、用語のみを検索します。
+Dictionary_icd_9_updated キーワード ディクショナリからの任意の用語。これは、国際化の分類、9 番目のリビジョン、変更 [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605)に基づく。 この型は、保険コードではなく、用語のみを検索します。
 
 Dictionary_icd_9_codes キーワード ディクショナリからの任意の用語。これは、国際化の分類、9 番目のリビジョン、変更の修正 [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605)に基づくもの。 この型は、説明ではなく、保険コードのみを検索します。
 
@@ -8860,7 +8812,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -8884,8 +8836,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="ireland-passport-number"></a>アイルランドのパスポート番号
 
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
-
 ### <a name="format"></a>フォーマット
 
 2 桁の文字または数字の後に 7 桁の数字 (スペースまたは区切り記号なし)
@@ -8903,22 +8853,37 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_ireland_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_ireland_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_ireland_eu_passport_date` DD MMM/MMM YYYY の形式で日付を検出した (例 - 01 BEA/MAY 1988) またはキーワードが `Keywords_eu_passport_date` 見つかった
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_ireland_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` された、または検出された。
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Passport Number -->
+      <Entity id="a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_ireland_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_ireland_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -8946,6 +8911,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - uimhir chirta
 - uimhir chhirta
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
+
 ## <a name="ireland-personal-public-service-pps-number"></a>アイルランドの個人公共サービス (PPS) 番号
 
 ### <a name="format"></a>フォーマット
@@ -8965,7 +8936,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 新しい形式 (2013 年 1 月 1 日以降):
 - 7 桁の数字 
 - アルファベットのチェック ディジットである文字 (大文字小文字を区別しない) 
-- A ~ I の範囲の省略可能な文字、または "W"
+- A ~ I の範囲のオプションの文字、または "W"
 
 ### <a name="checksum"></a>チェックサム
 
@@ -9004,7 +8975,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 個人用 ID 番号
 - 個人の公共サービス番号
 - 個人用サービスなし
-- phearsantarbrbhíse poiblí
+- phearsantarbhíse poiblí
 - pps no
 - pps number
 - pps num
@@ -9139,7 +9110,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 -   عدد هوية فريدة من نوعها
 -   idnumber#
 -   id number
--   ID no        
+-   ID なし        
 -   identitynumber#
 -   ID 番号
 -   identitynumber       
@@ -9281,7 +9252,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="italy-passport-number"></a>イタリアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -9289,7 +9259,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字または数字、その後に 7 桁の数字:
+2 桁の文字または数字の後に 7 桁の数字を入力します。
   
 - 2 桁の数字または文字 (大文字小文字を区別しない)
 - 7 桁の数字
@@ -9300,21 +9270,37 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_italy_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_italy_eu_passport_date` DD MMM/MMM YYYY の形式で日付を検出した (例 - 01 GEN/JAN 1988) またはキーワードが `Keywords_eu_passport_date` 見つかった
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_italy_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_italy_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Italy Passport Number -->
+      <Entity id="39811019-4750-445f-b26d-4c0e6c431544" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_italy_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_italy_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -9341,6 +9327,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - numero di passaporto
 - numeri del passaporto
 - passeport italien
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="italy-value-added-tax-number"></a>イタリアの付加価値税番号
 この機密情報の種類は、次の場合にのみ使用できます。
@@ -10048,7 +10040,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -10203,7 +10195,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 投票者の番号
 
 ## <a name="latvia-passport-number"></a>ラトビアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -10211,7 +10202,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字または数字、その後に 7 桁の数字:
+2 桁の文字または数字の後に 7 桁の数字を入力します。
   
 - 2 桁の数字または文字 (大文字小文字を区別しない)
 - 7 桁の数字
@@ -10222,21 +10213,37 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_latvia_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_latvia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_latvia_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Passport Number -->
+      <Entity id="23ae25ec-cc28-421b-b77a-3054eadf1ede" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_latvia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -10262,6 +10269,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - pases nr
 - passeport no
 - n° du Passeport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="lithuania-drivers-license-number"></a>リトアニアの運転免許証番号
 
@@ -10403,7 +10416,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -10422,7 +10435,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver's_license_number
 
-- vair、tojo pa、ym、および
+- vair、tojo pa、m、および
 - vaireritojo paのymjimo numeris
 - vair、tojo pa、ym、jimo numeriai
 
@@ -10440,7 +10453,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="pattern"></a>パターン
 
-スペースと区切り記号のない 11 桁の数字:
+スペースと区切り記号を含めずに 11 桁の数字:
   
 - 性別と出生時の年齢に対応する 1 桁の数字 (1 ~ 6)
 - 生年月日に対応する 6 桁の数字 (YYMMDD) 
@@ -10486,7 +10499,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - citizen service number
 - mokesčič id
 - mokesčiの identifikavimas numeris
-- mokesčiの identifikavimo numeris
+- mokesčič identifikavimo numeris
 - mokesči numeris
 - national identification number
 - 個人用コード
@@ -10515,7 +10528,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - uniqueidentityno#
 
 ## <a name="lithuania-passport-number"></a>リトアニアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -10531,26 +10543,42 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_lithuania_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` された、または検出された。 
+- 正規表現で DD MM YYYY という形式の日付が検出された場合、またはキーワード `Regex_eu_passport_date3` が `Keywords_eu_passport_date` 検出された場合
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_lithuania_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_lithuania_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Passport Number -->
+      <Entity id="1b79900f-047b-4c3f-846f-7d73b5534bce" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_lithuania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -10568,6 +10596,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - paso numeris
 - paso numeriai
 - paso nr
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="luxemburg-drivers-license-number"></a>ジェムバーガーの運転免許証番号
 
@@ -10709,7 +10743,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -10729,7 +10763,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver's_license_number
 
 - fahrerlaubnis
-- Führerschschのin
+- Fの時間
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>ウレンザフの国民識別番号 (自然人)
 この機密情報の種類は、次の場合にのみ使用できます。
@@ -10792,7 +10826,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - idpersonnelle#
 - idpersonnelle
 - 個々のコード
-- individual id
+- 個別の ID
 - 個別の識別
 - 個別の ID
 - numéro d'identification personnel
@@ -10807,7 +10841,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - uniqueidkey#
 
 ## <a name="luxemburg-passport-number"></a>ジェムザフのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -10823,28 +10856,76 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_luxemburg_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` された、または検出された。 
+- 正規表現で DD MM YYYY という形式の日付が検出された場合、またはキーワード `Regex_eu_passport_date3` が `Keywords_eu_passport_date` 検出された場合
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現は、  `Regex_nation_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_nation_eu_passport_number` 検出した。 
+- 正規表現は、  `Regex_luxemburg_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_nation_eu_passport_number" />
-          <Match idRef="Keywords_nation_eu_passport_number" />
+      <!-- Luxemburg Passport Number -->
+      <Entity id="81d5c027-bed9-4421-91a0-3b2e55b3eb85" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_nation_eu_passport_number"></a>Keywords_nation_eu_passport_number
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport number
-- ラトビアのパスポート番号
+- passport#
+- passport#
+- passportid
+- passports
+- passportno
 - passport no
+- passportnumber
+- passport number
+- passportnumbers
+- パスポート番号
+
+#### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
+- ausweisnummer
+- ルクセンブルク パス
+- ルクセンブルク パスポート
+- ルクセンブルク パスポート
+- de passeport なし
+- no-reisepass
+- nr-reisepass
+- numéro de passeport
+- pass net
+- pass nr
 - passnummer
+- passeport nombre
+- reisep sse
+- reisepass-nr
+- reisepassnummer
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a>ウレンザフの国民識別番号 (非自然人)
 
@@ -10909,7 +10990,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - numéro d'identification fiscale
 - social security
 - so最も近い
-- sounglversécherung
+- solvlversécherung
 - sozialversicherungsausweis
 - steier id
 - steier identifikatiounsnummer
@@ -11150,7 +11231,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -11194,7 +11275,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+対象外
   
 ### <a name="definition"></a>定義
 
@@ -11239,7 +11320,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="malta-passport-number"></a>マルタのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -11255,26 +11335,39 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_malta_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` された、または検出された。 
+- キーワード `Keywords_eu_passport_date` の検索
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_malta_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_malta_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Passport Number -->
+      <Entity id="b2b21198-48f9-4d13-b2a5-03969bff0fb8" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
+          <Match idRef="Keywords_eu_passport_date" />
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_malta_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -11292,6 +11385,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - numru tal-passaport
 - numri tal-passaport
 - Nru tal-passaport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="malta-tax-identification-number"></a>マルタの税識別番号
 
@@ -11316,7 +11415,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+対象外
   
 ### <a name="definition"></a>定義
 
@@ -11386,7 +11485,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>フォーマット
 
-省略可能なスペースを含む 89 桁の数字
+省略可能なスペースを含む 8 桁の数字
 
 ### <a name="pattern"></a>パターン
 
@@ -11584,7 +11683,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -11612,7 +11711,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="netherlands-passport-number"></a>オランダのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -11628,31 +11726,57 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_netherlands_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYY の形式で日付を検索する (例 - 26 THE/MAR 2012)
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_netherlands_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_netherlands_eu_passport_number` 検出した。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Passport Number -->
+      <Entity id="61786727-bafd-45f6-94d9-888d815e228e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_netherlands_eu_passport_number" />
+          <Match idRef="Regex_netherlands_eu_passport_date" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_passport_number" />
-          <Match idRef="Keywords_netherlands_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
+
+- passport#
+- passport#
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- パスポート番号
+
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
-- オランダのパスポート番号
-- passport number
-- オランダのパスポート番号
-- nederlanden paspoort nummer
-- paspoort
-- nederlanden paspoortnummer
+- paspoort nummer
+- paspoortnummers
 - paspoortnummer
+- paspoort nr
 
 ## <a name="netherlands-tax-identification-number"></a>オランダの税識別番号
 この機密情報の種類は、次の場合にのみ使用できます。
@@ -12044,7 +12168,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="pattern"></a>パターン
 
-- 3 文字 (大文字小文字を区別しない) ('I' と 'O' を除く)
+- 3 文字 (大文字小文字を区別しない) ('I' および 'O' を除く)
 - スペース (省略可能) 
 - 4 桁の数字
 
@@ -12084,7 +12208,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - New Zealand
 - 正常性
 - 処理
-- National Health Index Number
+- 国民健康インデックス番号
 - nhi number
 - nhi no.
 - NHI#
@@ -12228,7 +12352,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - パターンに一Regex_philippines_unified_idコンテンツを検索する正規表現。
-- 検索されたKeyword_philippines_id検索されます。
+- 検索されたKeyword_philippines_idが見つかりました。
 
 ```xml
 <!-- Philippines Unified Multi-Purpose ID number -->
@@ -12395,7 +12519,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -12754,7 +12878,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="pattern"></a>パターン
 
-パターン 1: 2 文字、その後に特殊文字を含む 5/6。
+パターン 1: 2 文字の後に特殊文字を含む 5/6。
 - 2 文字 (大文字と小文字を区別しない)
 - ハイフン 1 つ 
 - 5 桁または 6 桁の数字
@@ -12899,7 +13023,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -12930,7 +13054,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - carta de condução
 
 ## <a name="portugal-passport-number"></a>ポルトガルのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -12949,26 +13072,42 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_portugal_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_portugal_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_portugal_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` された、または検出された。
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Passport Number -->
+      <Entity id="080a52fd-a7bc-431e-b54d-51f08f59db11" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_portugal_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -12993,6 +13132,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ポルトガルのパスポート
 - número passaporte
 - números passaporte
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="portugal-tax-identification-number"></a>ポルトガルの税識別番号
 
@@ -13204,7 +13349,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -13224,7 +13369,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver's_license_number
 
 - permis de
-- permismisi de
+- permismisi deere
 - permismisihere
 - permisele de
 - permisele
@@ -13329,7 +13474,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - uniqueidentityno
 
 ## <a name="romania-passport-number"></a>ルーマニアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -13345,26 +13489,42 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_romania_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_romania_eu_passport_date` DD MMM/MMM YY の形式で日付を検出した (例- 01 FEB/FEB 10) またはキーワードが `Keywords_eu_passport_date` 見つかった
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_romania_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_romania_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Passport Number -->
+      <Entity id="5d31b90c-7fe2-4a76-a14b-767b8fd19d6c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_romania_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_romania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -13380,6 +13540,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
 numărul paărul paăaportăi nuăl pasaportăi numerele paăaportăi Paăaport nr
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="russia-passport-number-domestic"></a>ロシアのパスポート番号 (国内)
 この機密情報の種類は、次の場合にのみ使用できます。
@@ -13443,7 +13609,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - номерпаспорта#
 
 
-## <a name="russia-passport-number-international"></a>ロシアのパスポート番号国際番号
+## <a name="russia-passport-number-international"></a>ロシアのパスポート番号国際
 この機密情報の種類は、次の場合にのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
@@ -13742,7 +13908,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -13818,7 +13984,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - azonosító szám
 - 生年月日
-- číslo nのodnej identifikačnej karty
+- číslo nodnej identifikačnej karty
 - číslo občianského preu、
 - daéové číslo
 - id number
@@ -13862,7 +14028,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - tin#
 
 ## <a name="slovakia-passport-number"></a>スロバキアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -13878,26 +14043,42 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_slovakia_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_slovakia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_slovakia_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Passport Number -->
+      <Entity id="238e1f08-d80e-4793-af33-9b57918335b7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovakia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -13917,6 +14098,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - pas č.
 - Passeport n°
 - n° Passeport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="slovenia-drivers-license-number"></a>スロベニアの運転免許証番号
 
@@ -14058,7 +14245,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -14081,7 +14268,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - voznizka tevilka licence
 - voznizkih dovoljejeje
 - tevilka voznizkega dovoljenja
-- tevilke voznijekih dovolje数
+- tevilke voznijekih dovoljeje
 
 ## <a name="slovenia-unique-master-citizen-number"></a>スロベニア固有のマスター市民番号
 この機密情報の種類は、次の場合にのみ使用できます。
@@ -14136,7 +14323,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - edinstvena tevilkalavnega dr avljana
 - em最も近い
-- enotna maticna のtevilka obcana
+- enotna maticna tevilka obcana
 - id card
 - identification number
 - identifikacijka tevilka
@@ -14161,7 +14348,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - uniqueidentityno#
 
 ## <a name="slovenia-passport-number"></a>スロベニアのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -14181,26 +14367,42 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_slovenia_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_slovenia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_slovenia_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` された、または検出された。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Passport Number -->
+      <Entity id="235b7976-7bbe-4df5-bb40-08678e749d1a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovenia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -14221,6 +14423,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - datum rojstva
 - potni list
 - tevilke potnih listov
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
+
 
 ## <a name="slovenia-tax-identification-number"></a>スロベニアの税金の識別番号
 この機密情報の種類は、次の場合にのみ使用できます。
@@ -14550,7 +14758,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -14663,7 +14871,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - uniqueid#
 
 ## <a name="spain-passport-number"></a>スペインのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -14679,30 +14886,46 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+対象外
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現は、  `Regex_spain_eu_passport_number` パターンに一致するコンテンツを検索します。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` された、または検出された。 
+- 正規表現が `Regex_spain_eu_passport_date` DD-MM-YYYY の形式で日付を検出するか、キーワードが `Keywords_eu_passport_date` 見つかった
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_spain_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number_common` `Keywords_spain_eu_passport_number` された、または検出された。 
+- キーワードが検出  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` された、または検出された。
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Spain Passport Number -->
+      <Entity id="d17a57de-9fa5-4e9f-85d3-85c26d89686e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_spain_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_spain_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -14728,11 +14951,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - n° Passeport
 - pasaporte no.
 - pasaporte n°
-- スペインの passport
+- spain passport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 発行日
+- 有効期限日
 
 
 ## <a name="spain-social-security-number-ssn"></a>スペインの社会保障番号 (SSN)
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類に含まれており、スタンドアロンの機密情報の種類のエンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -14890,7 +15117,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - 文字列 "User Id"、"User ID"、"uid"、または "UserId"
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
-- 文字列 "Password" または "pwd" ("pwd" の前に小文字が付いない)
+- 文字列 "Password" または "pwd" ("pwd" の前には小文字の文字が付いない)
 - 等号 (=)
 - ドル記号 ($)、パーセント記号 (%)、記号 (> より大きい)、記号 (@)、引用符 (")、セミコロン (;)、左中かっこ([)、または左角かっこ ({) 以外の任意の文字
 - セミコロン (;)、スラッシュ (/)、または引用符 (") ではない 7 ~ 128 文字の任意の組み合わせ
@@ -14905,7 +15132,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - パターンに一CEP_Regex_SQLServerConnectionStringコンテンツを検索する正規表現。
 - 指定されたCEP_GlobalFilter **が見** つかりません。
-- パターンに一CEP_PasswordPlaceHolderコンテンツ **が** 見つからない正規表現。
+- パターンに一 **CEP_PasswordPlaceHolderコンテンツが** 見つからない正規表現。
 - パターンに一CEP_CommonExampleKeywordsコンテンツ **が** 見つからない正規表現。
 
 ```sql
@@ -14939,7 +15166,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - パスワードまたは pwd の後に次の情報が続きます。
     - 等号 (=)
     - 記号より小さい (<)
-    - 大文字または小文字、数字、アスタリスク (*)、ハイフン (-)、下線 (_)、または空白文字の 1 ~ 200 文字の任意の組み合わせ
+    - 大文字、小文字、数字、アスタリスク (*)、ハイフン (-)、下線 (_)、または空白文字の 1 ~ 200 文字の任意の組み合わせ
     - 記号より大きい (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
@@ -15100,7 +15327,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driv lic
 - driv licen
 - license
-- licenses
+- driv ライセンス
 - licencev
 - licencev licences
 - driver licen
@@ -15122,7 +15349,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ajokortti
 - permis de
 - ajokortin numero
-- kuljjat lic.
+- kulj、jat lic.
 - drivere lic.
 - körkort
 - numărul permisăi de numere
@@ -15142,7 +15369,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 10 桁または 12 桁の数字とオプションの区切り文字:
 - 2 桁の数字 (省略可能) 
 - YYMMDD という日付形式の 6 桁の数字 
-- "-" または "+" の区切り記号 (省略可能)
+- "-" または "+" の区切り文字 (省略可能)
 - 4 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -15187,7 +15414,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - identifikationsnumret
 - identitetshandling
 - ID ドキュメント
-- ID no
+- ID なし
 - ID 番号
 - id-nummer
 - 個人用 ID
@@ -15213,9 +15440,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現を使用Regex_sweden_passport_numberパターンに一致するコンテンツを検索します。
+- パターンに一Regex_sweden_passport_numberコンテンツを検索する正規表現。
 - 次のいずれかの条件が満たされます。
-    - 検索されたKeyword_passport検索されます。
+    - 検索されたKeyword_passportが見つかりました。
     - 検索されたKeyword_sweden_passport。
 
 ```xml
@@ -15256,7 +15483,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passportnumber 
 - パスポート 
 - パスポート番号 
-- 万の表示 
+- 万の数 
 - パスポート# 
 - Numéro de passeport 
 - Passeport n ° 
@@ -15266,66 +15493,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - PasseportNon 
 - Passeportn ° 
 
-## <a name="sweden-social-security-number-or-equivalent-identification"></a>スウェーデンの社会保障番号または同等の識別情報
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-スペースと区切り記号のない 12 桁の数字
-  
-### <a name="pattern"></a>パターン
-
-12 桁の数字:
-  
-- 生年月日に対応する 8 桁の数字 (YYYYMMDD) 
-- シリアル番号に対応する次の 3 桁の数字 
-  - シリアル番号の最後の数字は、男性の奇数と女性の偶数の割り当てによって性別を示します。
-  - 1990 年までのシリアル番号の割り当ては、番号のベアラーが生まれた郡に対応し、1947 年 1 月 1 日に税記録に従い、特別なコード (通常は 7 桁目は 9 番目の数字) を持つ番号が住んでいる (1947 年以前に生まれた場合) 
-- 1 桁のチェック ディジット
-    
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_sweden_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_sweden_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_sweden_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
-
-- 個人用 ID 番号
-- identification number
-- 個人用 ID いいえ
-- ID no
-- id no
-- 個人識別なし
-- personnummer id
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer#
-- identifikationsnumret#
 
 ## <a name="sweden-tax-identification-number"></a>スウェーデンの税金の識別番号
 この機密情報の種類は、次の場合にのみ使用できます。
@@ -15638,7 +15805,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- パターンに一Regex_taiwan_passportコンテンツを検索する正規表現。
+- 正規表現はRegex_taiwan_passportパターンに一致するコンテンツを検索します。
 - 検索されたKeyword_taiwan_passport検出された。
 
 ```xml
@@ -15802,8 +15969,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
 - TC Kim tc No
-- TC Kimaras numaras Tc
-- Vatandavatl の numaras の数
+- TC Kimara numaras Tc
+- Vatandavatl Numaras Numaras の数
 - Vatandavatl のいいえ
 
 ## <a name="uk-drivers-license-number"></a>英国 driver's license number
@@ -15853,7 +16020,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - motor cars 
 - 125cc 
 - sidecar 
-- tricycles 
+- 三環 
 - (1) 
 - photocard licence 
 - learner drivers 
@@ -16181,7 +16348,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 州 (ニューヨークなど) によって異なります。
 - ddd のように書式設定された 9 桁の数字が一致します。
-- ddddd のような 9 桁の数字は一致しません。
+- dddd のような 9 桁の数字は一致しません。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16472,7 +16639,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - social security number
 - 社会保障#
 - 社会保障#
-- 社会保障なし
+- social security no
 - Social Security#
 - Soc Sec
 - SSN
@@ -16524,7 +16691,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passportnumber 
 - パスポート 
 - パスポート番号 
-- 万の表示 
+- 万の数 
 - パスポート# 
 - Numéro de passeport 
 - Passeport n ° 
@@ -16596,7 +16763,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="pattern"></a>パターン
 
-8 文字の英数字パターン:
+8 文字の英数字のパターン:
 - 2 桁の文字または数字
 - 6 桁の数字
 
