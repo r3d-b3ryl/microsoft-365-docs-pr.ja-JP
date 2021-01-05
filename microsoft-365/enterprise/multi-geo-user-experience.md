@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Microsoft 365の複数地域環境での SharePoint、OneDrive、および Exchange のユーザー エクスペリエンスについて説明します。
-ms.openlocfilehash: c94fc5569a5444ca6361712f57460cf0c977b18e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 558e5a1f7ff2f6f5485a9f32d6e2b43b552b7f17
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691781"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749577"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 
@@ -44,7 +44,7 @@ Office アプリケーション (Word、Excel、PowerPoint など) は、ユー�
 
 ## <a name="onedrive-for-business-sync-client"></a>OneDrive for Business 同期クライアント
 
-OneDrive for Business 同期クライアント (バージョン 17.3.6943.0625 以降) は、ユーザーにとって適切な OneDrive for Business の地域の場所を自動的に検出します。 同期クライアントのサポートには、地理的な場所に関係なくグループベースのサイトを同期する機能が含まれています。 Groove 同期クライアントは複数地域ではサポートされていません。 
+OneDrive for Business 同期クライアント (バージョン 17.3.6943.0625 以降) は、ユーザーにとって適切な OneDrive for Business の地域の場所を自動的に検出します。 同期クライアントのサポートには、地域の場所に関係なくグループベースのサイトを同期する機能が含まれています。 Groove 同期クライアントは複数地域ではサポートされていません。 
 
 ## <a name="onedrive-for-business-location"></a>OneDrive for Business の場所
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 管理センターのゲストユーザー
+title: Microsoft 365 管理センターのゲスト ユーザー
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,48 +20,46 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ゲストユーザーリストが Microsoft 365 管理センターでどのように設定されるかについて説明します。
-ms.openlocfilehash: c698332351d525c12659849826d9e822351a347d
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+description: ゲスト ユーザーの一覧が Microsoft 365 管理センターに設定される方法について説明します。
+ms.openlocfilehash: 338b86d7f32eb2a2ecbacc3d7d1e00124c3804e4
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48463980"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751438"
 ---
-# <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 管理センターのゲストユーザー
+# <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 管理センターのゲスト ユーザー
 
-Microsoft Teams または SharePoint にゲストを追加すると、そのユーザーは管理センターのゲストユーザーリストに追加されます。 また、組織のユーザーと共同作業を行えるように、Azure Active Directory にゲストユーザーを追加することもできます。 ゲストユーザーは会議に参加したり、招待されたチームでドキュメントやチャットを表示したりすることができます。
-ゲストユーザーリストにユーザーを追加すると、そのユーザーにアクセス権を削除することができます。
+Microsoft Teams、SharePoint、または Azure Active Directory に追加したゲストは、Microsoft管理センターのゲスト ユーザーの一覧にも追加されます。 ゲストは、会議に出席し、招待された Teams でドキュメントやチャットを表示できます。
+ゲスト ユーザーの一覧にユーザー **が表示された** 後は、そのユーザーのアクセス権を削除できます。
 
-ゲストユーザーを表示するには、Microsoft 365 管理センターの左側のナビゲーションで、[ **ユーザー**] を展開して、[ **ゲストユーザー**] を選択します。
+ゲスト ユーザーを表示するには、Microsoft 365 管理センターの左側のナビゲーションで [ **ユーザー**] を展開し、[ゲスト ユーザー] **を選択します**。
 
-## <a name="add-guest-users-to-teams"></a>ゲストユーザーを Teams に追加する
+## <a name="add-guests-to-teams"></a>Teams にゲストを追加する
 
-ゲストを Teams に追加する方法については、次のビデオを参照してください。 <br><br>
+Teams にゲストを追加する方法については、次のビデオをご覧ください。 <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
 ## <a name="join-a-team-as-a-guest"></a>ゲストとしてチームに参加
 
-ゲストとしてチームに参加するには、次のビデオを参照してください。<br><br>
+チームにゲストとして参加するには、次のビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
 
-## <a name="add-guest-users-in-azure-active-directory"></a>Azure Active Directory でゲストユーザーを追加する
+## <a name="add-guests-in-azure-active-directory"></a>Azure Active Directory でゲストを追加する
 
-Azure Active Directory にゲストユーザーを追加するには、「 [ゲストユーザーを追加](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)する」を参照してください。
+Azure Active Directory にゲストを追加するには、「ゲスト ユーザーの追加 [」を参照してください](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
 
-ユーザーを追加するときに、それらのユーザーをグループに割り当てたり、組織内のアプリにアクセス権を与えたりすることもできます。 Azure AD ポータルにユーザーを追加すると、そのユーザーは Microsoft 365 管理センターのゲストユーザーページにも表示されます。
-ゲストユーザーリストにユーザーを追加した後、それらのユーザーを Microsoft 365 管理センターの [グループに追加](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) することができます。
+ユーザーを追加した後、ユーザーをグループに割り当てるか、組織内のアプリへのアクセスを許可することもできます。 Azure AD ポータルでユーザーを追加すると、そのユーザーは Microsoft 365 管理センターの[ゲスト ユーザー] ページにも表示されます。
+ゲスト ユーザーの一覧に追加されたユーザーは、Microsoft 365 管理センターのグループに追加できます。 [](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center)
 
-組織と共同作業を行うために複数のゲストを招待するには、「 [ゲストユーザーを一括で追加](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) する」を参照してください。
+「ゲスト [を一括で追加](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) する」を参照して、組織と共同作業するために複数のゲストを招待します。
 
 
-## <a name="remove-a-guest-user"></a>ゲストユーザーを削除する
+## <a name="remove-a-guest"></a>ゲストを削除する
 
-ゲストユーザーを削除するには、次のようにします。
+1. Microsoft 365 管理センターで、[ユーザー] を展開し、[ゲスト ユーザー]**を選択します**。
+1. [ **ゲスト ユーザー]** ページで、削除するユーザーを選択し、[ユーザーの削除 **] を選択します**。 
 
-1. Microsoft 365 管理センターで、[ **ユーザー** ] を展開し、[ **ゲストユーザー**] を選択します。
-1. [ **ゲストユーザー** ] ページで、削除するユーザーを選択し、[ **ユーザーの削除**] を選択します。 
-
-Azure AD ポータルでユーザーを削除するには、「 [remove a guest user and resources](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)」を参照してください。
+Azure AD ポータルでユーザーを削除するには、「ゲスト [ユーザーとリソースを削除する」を参照してください](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。

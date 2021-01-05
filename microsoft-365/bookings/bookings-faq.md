@@ -1,5 +1,5 @@
 ---
-title: Microsoft 予約のよく寄せられる質問
+title: Microsoft Bookings についてよく寄せられる質問
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,373 +7,377 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 localization_priority: Normal
-description: Microsoft の予約についてよく寄せられる質問。
-ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+description: Microsoft Bookings についてよく寄せられる質問です。
+ms.openlocfilehash: 35e1b71fb7d87d40aa9a3a60d2e3cf108f36c2bf
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561557"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751383"
 ---
-# <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 予約のよく寄せられる質問
+# <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft Bookings についてよく寄せられる質問
 
 ## <a name="general"></a>全般
 
-### <a name="what-is-microsoft-bookings"></a>Microsoft 予約とは
+### <a name="what-is-microsoft-bookings"></a>Microsoft Bookings とは
 
-Microsoft の予約は、予定のスケジュール設定と管理を簡単に行う Microsoft 365 アプリです。 予約には、Web ベースの予約予定表が含まれており、従業員の予定表を最適化するために Outlook と統合し、お客様にとって最適な時間を提供できるようにお客様に柔軟性を持たせることができます。 自動化された通知メールは、何も表示しないようにするため、組織は時間を節約し、繰り返しスケジュールタスクを減らすことができます。 予約は、Skype または Microsoft Teams を使用して仮想の予定を簡単に実行できるようにするもので、Teams で予約アプリを使用して日常のスケジュール管理に役立てることができます。 組み込みのカスタマイズ機能により、予約は組織の複数のパーツのニーズを満たすように設計されています。
+Microsoft Bookings は、予約のスケジュールと管理を容易にする Microsoft 365 アプリです。 予約には Web ベースの予約カレンダーが含まれています。また、Outlook と統合してスタッフの予定表を最適化し、お客様が最適な時間を柔軟に予約できます。 自動通知電子メールは表示を減らし、組織は繰り返しスケジュールタスクを削減して時間を節約します。 Bookings は、Skype または Microsoft Teams を介して仮想の予定を簡単に実施するのに役立ち、Teams の Bookings アプリを介して毎日のスケジュール設定を管理するのに役立ちます。 カスタマイズが組み込み可能な Bookings は、任意の組織の複数の部分のニーズを満たするように設計されています。
 
-### <a name="how-do-i-use-microsoft-bookings"></a>Microsoft の予約を使用するにはどうすればよいですか?
+### <a name="how-do-i-use-microsoft-bookings"></a>Microsoft Bookings の使い方
 
-予約はオンラインサービスであるため、何もダウンロードする必要はありません。 Microsoft 365 Web experience でアプリの選択ウィンドウに移動します。 また、管理者は、予約コンパニオンアプリを使用して、顧客とその予定に関する最新情報を最新の状態に保つことができます。
+予約はオンライン サービスなので、何もダウンロードする必要はありません。 Microsoft 365 Web エクスペリエンス内のアプリの選択に移動します。 管理者は、Bookings コンパニオン アプリを使用して、顧客とその予定に関する最新情報を最新の状態にすることもできます。
 
-### <a name="who-has-access-to-microsoft-bookings"></a>Microsoft の予約にアクセスできるユーザー
+### <a name="who-has-access-to-microsoft-bookings"></a>Microsoft Bookings にアクセスできるユーザー
 
-予約は既定で利用可能であり、microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、および世界中の E5 のお客様に対して有効になっています。 予約は、21Vianet が運用している Office 365 でも使用できます。
+Bookings is available and active by default for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, and E5 customers worldwide. Bookings は、21Vianet Office 365 で利用できます。
 
-### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>お客様に個人またはビジネスの予定表が表示されますか。
+### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>ユーザーに個人用予定表またはビジネス カレンダーが表示されますか?
 
-お客様には、登録を選択したサービス、時間、スタッフに対してオンラインで公開した予約カレンダーのみが表示されます。
+顧客には、登録するサービス、時間、スタッフに対してオンラインで公開されている予約予定表だけが表示されます。
 
-### <a name="how-do-end-users-access-the-bookings-app"></a>エンドユーザーが予約アプリにアクセスする方法
+### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>[スタッフの管理] で予約可能な属性を変更する方法
 
-Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5 のいずれかのライセンスを所有しているすべてのユーザーは、Microsoft 365 Web 環境内のアプリ選択ウィンドウで予約にアクセスできます。 IOS および Android 用のコンパニオンアプリも用意されています。
+スタッフ メンバーが追加された場合、要求を承諾または拒否する電子メールを受信したと見なされます。 同じメールを開き、[拒否] を選択して予約不可にできます。 現在、アプリ内からこれを切り替える方法は提供されていない。
 
-### <a name="can-i-use-bookings-in-my-own-web-site"></a>自分の Web サイトで予約を使用できますか。
+### <a name="how-do-end-users-access-the-bookings-app"></a>エンド ユーザーが Bookings アプリにアクセスする方法
 
-はい。 IFrame を使用してサイトに予約予定表を埋め込む方法が提供されています。 リンクの埋め込みコードは、予約アプリの [ **予約ページ** ] タブにあります。
+Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5 のライセンスを取得しているユーザー、または管理者ロールまたはビューアー ロールのスタッフ メンバーとして追加されたユーザーは、Microsoft 365 Web エクスペリエンス内のアプリ選択で予約にアクセスできます。 iOS と Android で利用できるコンパニオン アプリもあります。
 
-### <a name="can-i-use-bookings-even-if-i-dont-have-a-web-page-for-my-business"></a>ビジネス用の Web ページがない場合でも予約を使用できますか。
+### <a name="can-i-use-bookings-in-my-own-web-site"></a>自分の Web サイトで Bookings を使用できますか?
 
-はい。 Web アプリの [ **予約ページ** ] タブ内に予約ページへのリンクを提供します。 お客様またはクライアントに対してそのリンクを提供するだけで、ビジネスのための最新の空き時間情報を表示することができます。 または、ソーシャルメディアで予約ページを共有したり、埋め込み機能を使用して iFrame でそれをホストしたりすることもできます。 また、ダイレクト検索エンジンのインデックス作成を無効にして、組織内のアクセスを制限することで、ページにアクセスできるユーザーを制御することもできます。
+はい。 iFrame を使用して予約カレンダーをサイトに埋め込む方法を提供します。 リンク埋め込みコードは、Bookings アプリの **[Bookings]** ページ タブにあります。
 
-### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>IT 部門はエンドユーザーが予約にアクセスできるかどうかを制御できますか。
+### <a name="can-i-use-bookings-even-if-i-dont-have-a-web-page-for-my-business"></a>ビジネス向け Web ページを持っていなくても予約を使用できますか?
 
-予約は、microsoft 365 Business Premium、Microsoft 365 Business Standard、M365 A3/A5、および E3/E5 テナントでは既定で利用できますが、管理者はこのオプションを選択すると、Microsoft 365 管理センターで無効にすることができます。 そのためには、次の [手順に従い](turn-bookings-on-or-off.md)ます。
+はい。 Web アプリの [予約ページ] タブ内に **予約ページ** へのリンクが表示されます。 そのリンクを顧客またはクライアントに提供する必要があるだけで、ビジネスの最新の可用性情報が表示されます。 または、ソーシャル メディアで予約ページを共有したり、埋め込み機能を使用して iFrame でホストすることもできます。 また、直接検索エンジンのインデックスを無効にし、組織内のユーザーにのみアクセスを制限することで、ページにアクセスできるユーザーを制御することもできます。
 
-お客様がテナント内の特定の適格なライセンスに対するアクセスを無効にする必要がある場合は、グループポリシーを使用してライセンスを制限するか、新しい予約予定表を作成できるユーザーを制限する OWA メールボックスポリシーを実装することができます。
+### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>IT 部門は、エンド ユーザーが予約にアクセスできるかどうかを制御できますか?
 
-OWA メールボックスポリシーを使用して予約へのアクセスを無効にした場合、すべてのユーザーに予約ライセンスが付与されますが、アプリにアクセスしようとする場合は、ポリシーの一部である場合や、既存の予約カレンダーにスタッフとして追加されている場合にのみ成功します。 詳細については、「選択したユーザーのみに予約予定表を作成できる [ようにする](turn-bookings-on-or-off.md) 」を参照してください。
+予約は、Microsoft 365 Business Premium、Microsoft 365 Business Standard、M365 A3/A5、E3/E5 テナントで既定で利用できますが、管理者は必要に応じて Microsoft 365 管理センターでオフにできます。 これを行うには、次 [の手順に従います](turn-bookings-on-or-off.md)。
+
+顧客がテナント内の特定の対象ライセンスの予約へのアクセスを無効にする場合は、グループ ポリシーを使用してライセンスを制限するか、新しい予約予定表を作成できるユーザーを制限する OWA メールボックス ポリシーを実装できます。
+
+OWA メールボックス ポリシーを使用して Bookings へのアクセスを無効にした場合、すべてのユーザーは Bookings ライセンスを持っていますが、ユーザーがアプリにアクセスしようとすると、ポリシーの一部である場合、または既存の予約予定表にスタッフとして追加されている場合にのみ成功します。 詳細 [については、「](turn-bookings-on-or-off.md) 選択したユーザーにのみ予約予定表の作成を許可する」セクションを参照してください。
 
 ### <a name="is-bookings-customizable"></a>予約はカスタマイズできますか?
 
-はい。予約はカスタマイズ可能で、さまざまなシナリオで使用できます。 予約カレンダーを設定する場合、Web ベースのスケジューリングページの多くの側面、ビジネス情報、スタッフの詳細、サービスの種類、およびスケジュールポリシーをカスタマイズできます。
+予約はカスタマイズ可能で、さまざまなシナリオで使用できます。 予約カレンダーを設定する場合、Web ベースのスケジュール ページの多くの側面、ビジネス情報、スタッフの詳細、サービスの種類、およびスケジュール ポリシーをカスタマイズできます。
 
-### <a name="is-all-the-functionality-of-the-original-bookings-web-app-available-in-microsoft-teams"></a>Microsoft Teams では、元の予約 Web アプリのすべての機能を利用できますか?
+### <a name="is-all-the-functionality-of-the-original-bookings-web-app-available-in-microsoft-teams"></a>元の Bookings Web アプリのすべての機能は Microsoft Teams で利用できますか?
 
-簡易版の予約は、Teams のアプリとして利用できるようになりました。 最初のアナウンスは [こちら](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)からご確認ください。 Web アプリには、詳細なリンク機能があるので、セットアップ後には、Teams を離れることなく、予約の毎日の使用を行うことができます。 プラットフォーム間での情報フロー。
+軽量バージョンの予約が、Teams のアプリとして利用できます。 最初のお知らせについては、こちらをご [覧ください](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)。 Web アプリにはディープ リンク機能が備わっています。セットアップ後は、Teams から離れることなく、Bookings を毎日使用できます。 プラットフォーム間の情報フロー。
 
-### <a name="is-bookings-a-small-business-offering-or-an-enterprise-offering-or-both"></a>小規模な企業やエンタープライズオファーリング、またはその両方を予約していますか?
+### <a name="is-bookings-a-small-business-offering-or-an-enterprise-offering-or-both"></a>予約は小規模企業向け製品かエンタープライズ 製品か、あるいはその両方ですか?
 
-予約は、企業および小規模企業の両方のお客様にとって、さまざまな業界で最適なソリューションです。 ユースケースは次のとおりです。
+予約は、さまざまな業界で、エンタープライズおよび中小企業のお客様の両方に最適なソリューションです。 次のような使用例があります。
 
 - 金融サービス
-    - consultations
-    - 銀行および保険サービス
-    - 税務申告
+    - (1)
+    - 銀行サービスと保険サービス
+    - 税ファイリング
 
 - 人事 (HR)
-    - 面接候補
-    - 契約
-    - 利点
-    - トレーニングとセミナー
+    - 候補の面接
+    - オンボーディング
+    - benefits assistance
+    - トレーニングとトレーニング
 
 - 医療
-    - 患者訪問
-    - プロバイダー間のコラボレーション
-    - 保険
+    - patient visits
+    - プロバイダー間コラボレーション
+    - insurance consults
 
-- 行政機関 & 公的機関
-    - 法廷 hearings およびトライアル
-    - パブリックサービス
+- 政府機関&公的機関
+    - 法事の聴覚と試行
+    - パブリック サービス
     - 部署の予定
 
-- 教育機関向け--K-12
-    - 親-教師の会議
+- 教育 -- K-12
+    - 親教師会議
     - 学校の町のホール
-    - 生徒-counselor ビジット
+    - student-visits
 
-- 教育機関 (高等)
-    - オフィス時間
-    - tutoring
+- Education -- 上位 Ed
+    - 営業時間
+    - ing
     - 学生サービス
-    - テストサインアップ
+    - 試験サインアップ
 
 - 小売
-    - 補助ショッピング
-    - 請負業者のスケジュール設定
-    - 設計サービス
+    - アシスト ショッピング
+    - 契約者のスケジュール
+    - デザイン サービス
 
-- 一般的な企業および小規模ビジネスのニーズ
-    - 顧客およびクライアントの会議
-    - テクニカルサポート
+- 一般的なエンタープライズおよび小規模ビジネスのニーズ
+    - 顧客会議とクライアント会議
+    - テクニカル サポート
     - 法的レビュー
-    - dtrace
+    - facilities
 
 ## <a name="pricing-and-licensing"></a>価格とライセンス
 
-### <a name="how-do-i-get-microsoft-bookings"></a>Microsoft の予約を取得するにはどうすればよいですか?
+### <a name="how-do-i-get-microsoft-bookings"></a>Microsoft Bookings の取得方法
 
-予約は、microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、および E5 ライセンスと、iOS および Android コンパニオンアプリと共に、Microsoft 365 で利用できます。 予約はスタンドアロンアプリとして使用できません。 Outlook Web App または outlook on the Web では、Outlook 内でデータを保存するため、予約を使用できるようにする必要があります。
+Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5 のライセンスを使用しているお客様は、Microsoft 365 で iOS および Android コンパニオン アプリを利用できます。 予約はスタンドアロン アプリとして利用できません。 Outlook Web Appまたは Web 上の Outlook は、Outlook 内にデータを格納する Bookings を使用するために有効にする必要があります。
 
-予約ライセンスは、予定表の作成および管理を含む、製品へのすべての機能を提供します。 また、ユーザーが管理者または閲覧者の役割でスタッフとして追加されたときに、ユーザーが既存の予定表を表示および編集できるようにします。
+Bookings ライセンスは、予定表の作成と管理など、製品に対して完全な機能を提供します。 また、管理者またはビューアーの役割でユーザーがスタッフとして追加された場合に、ユーザーが既存の予定表を表示および編集することもできます。
 
-### <a name="do-i-need-to-migrate-my-email-account-from-my-current-provider-to-microsoft-365"></a>現在のプロバイダーから Microsoft 365 に電子メールアカウントを移行する必要がありますか。
+### <a name="do-i-need-to-migrate-my-email-account-from-my-current-provider-to-microsoft-365"></a>現在のプロバイダーから Microsoft 365 にメール アカウントを移行する必要がありますか。
 
-現在のプロバイダーは保持できますが、予約は、Microsoft 365 アカウントで使用されている電子メールにすべての通知を送信します。
+現在のプロバイダーを維持できますが、予約では Microsoft 365 アカウントで使用されているメールに対してすべての通知が送信されます。
 
-### <a name="can-my-employees-use-bookings-without-a-microsoft-365-account"></a>従業員は、Microsoft 365 アカウントなしで予約を使用できますか?
+### <a name="can-my-employees-use-bookings-without-a-microsoft-365-account"></a>従業員は Microsoft 365 アカウントなしで Bookings を使用できますか?
 
-はい。 任意の電子メールを使用してスタッフを追加しても、他のユーザーが予定を持っているときに、電子メールの確認と予定表の出席依頼を受け取ることができます。
+はい。 任意のメールでスタッフを追加できます。他のユーザーが予定を予約すると、そのスタッフにはメールの確認と予定表の招待が表示されます。
 
-### <a name="can-i-create-more-than-one-bookings-calendar-under-the-same-microsoft-365-account-and-switch-between-them"></a>同じ Microsoft 365 アカウントで複数の予約予定表を作成し、それらを切り替えることはできますか。
+### <a name="can-i-create-more-than-one-bookings-calendar-under-the-same-microsoft-365-account-and-switch-between-them"></a>同じ Microsoft 365 アカウントで複数の予約予定表を作成し、それらを切り替えできますか。
 
-はい。 1つのアカウントで複数の予約予定表を作成して管理することができます。 予約 Web アプリの会社名の横にあるキャレットを使用して、それらを切り替えることができます。
+はい。 1 つのアカウントで複数の予約予定表を作成および管理できます。 Bookings Web アプリのビジネス名の横にあるキャレットを使用して、それらを切り替えます。
 
-### <a name="what-if-my-organization-has-mixed-licenses-with-f1f3-e1-and-e3e5"></a>組織で、F1/F3、E1、および E3/E5 とのライセンスが混在している場合はどうなりますか。
+### <a name="what-if-my-organization-has-mixed-licenses-with-f1f3-e1-and-e3e5"></a>組織で F1/F3、E1、E3/E5 のライセンスが混在している場合は、
 
-多くの組織では、Microsoft 365 ライセンスが混在していることがわかっています。 たとえば、お客様が本社の従業員に対して M365 E3 ライセンスを所有している場合がありますが、ストアの従業員には M365 E1 (または F1 または F3) ライセンスが必要です。
+Microsoft では、多くの組織に Microsoft 365 ライセンスが組み合されている点が認識されています。 たとえば、顧客は本社の従業員用に M365 E3 ライセンスを持っているが、M365 E1 (または F1 または F3) のライセンスをストアの従業員に持っている場合があります。
 
-この例では、M365 E3 ライセンスを持つ本社の従業員が予約への完全なアクセス権を持っています。つまり、新しい予定表の作成、設定の編集、スタッフの追加、予約ページの発行、予定表内の予定の作成と管理、およびレポートの取得を行うことができます。
+この例では、M365 E3 ライセンスを持つ本社の従業員は予約にフル アクセスできます。つまり、新しい予定表の作成、設定の編集、スタッフの追加、予約ページの発行、予定表内の予定の作成と管理、レポートのプルを行います。
 
-E1/F1/F3 ライセンスを持つ従業員、またはライセンスを持たない従業員は、ゲストの役割の予定表にスタッフとして追加して予定に予約することができます。予約された場合は、確認の電子メールを受信します。 [スタッフ] タブに一覧表示されている時間帯に、利用可能/予定時間中に予約することができます。予約予定表の空き時間は、設定された時間とサービス時間によって、能の時間を制限します。
+E1/F1/F3 ライセンスを持つ従業員やライセンスがない従業員は、ゲストの役割の予定表にスタッフとして追加し、予定を予約できます。予約すると、確認メールが届きます。 スタッフ タブに表示されている利用可能時間またはスケジュールされた時間内に予約できます。予約予定表の空き時間情報は、予約可能な時間を設定した時間とサービス時間によって制限されます。
 
-予約 Web アプリを使用して予定が既に予約されている場合は、ストアの従業員も予約の利用不可として表示されます。 予約によって予約された予定は、予約内のスタッフメンバーの予定表の中でビジーとして反映されます。 予約が有効になっていないライセンスを持つスタッフは、同じテナント内にいる限り、自分の予定表が自分の空き時間に影響することがあります。
+予約 Web アプリを通じてその時点で予定が既にスケジュールされている場合、ストアの従業員は予約で利用できないと表示されます。 予約によって予約された予定は、予約内のスタッフ メンバーの予定表にビジーとして反映されます。 Bookings 以外のライセンスを持つスタッフは、同じテナント内に存在する場合でも、個人用予定表が Bookings の空き時間情報に影響を与える可能性があります。
 
-ゲストの役割を持つユーザーは、最初の予定作成時にお客様が入力した情報を表示できます。 たとえば、予定に予約されているストアの担当者が、予定の前に顧客を呼び出す必要がある場合、スケジュールプロセス中に顧客が提供する情報にアクセスできます。 予約されているスタッフメンバーは、確認の電子メールに表示されるすべての情報に加えて、ics カレンダーイベント (入力されていた場合は顧客電話番号など) にアクセスできます。
+ゲスト ロールのユーザーは、最初の予定の作成内で顧客が提供した情報を表示できます。 たとえば、予定を予約したストア担当者が予定の前に顧客に電話する必要がある場合、顧客はスケジュール プロセス中に顧客が提供する情報にアクセスできます。 予約されたスタッフ メンバーは、確認メールに表示される情報と .ics 予定表イベント (入力されている場合は顧客の電話番号など) にアクセスできます。
 
-ゲストの役割を持つユーザーは、予約 Web アプリにアクセスして設定を変更したり、予定を表示および管理したり (追加、キャンセル、および再スケジュール) したりすることはできません。 ただし、顧客が予定を作成するのと同じ方法で、セルフサービスページを使用して、顧客に代わって予定を作成することができます。
+ゲスト ロールのユーザーは、Bookings Web アプリにアクセスして設定を変更したり、予定を表示および管理 (追加、キャンセル、再スケジュール) したりする機能を持つ必要があります。 ただし、顧客が予約を行うのと同じ方法で、[セルフサービス] ページを使用して、顧客の代わりに予定を作成できます。
 
-ページと予定を設定および管理するには、予約対象ライセンスを使用して、各ストアのビジネスマネージャーまたは管理者にライセンスを付与することをお勧めします。 残りのスタッフは、予約を再スケジュールまたはキャンセルするために、予約のライセンスを使用して作業を行います。
+ページと予定を設定および管理するには、Bookings の対象となるライセンスを使用して各ストアのビジネス マネージャーまたは管理者にライセンスを提供することをお勧めします。 その後、残りのスタッフは Bookings のライセンスを取得した従業員と一緒に作業し、予約のスケジュールを変更またはキャンセルします。
 
-## <a name="product-features"></a>製品機能
+## <a name="product-features"></a>製品の機能
 
-### <a name="where-do-bookings-calendars-show-up-in-my-microsoft-365-tenant"></a>予約予定表は、Microsoft 365 テナントでどのように表示されますか? * *
+### <a name="where-do-bookings-calendars-show-up-in-my-microsoft-365-tenant"></a>Microsoft 365 テナントで予約の予定表はどこに表示されますか? **
 
-新しい予約予定表ごとに、対応する Exchange のメールボックス、および Azure Active Directory (AAD) 内の関連エントリが作成されます。このエントリは、ライセンスのないユーザーとしてリストされます。
+新しい Bookings カレンダーごとに、Exchange に対応するメールボックスと、関連するエントリが Azure Active Directory (AAD) に作成されます。このエントリは、ライセンスのないユーザーとして一覧表示されます。
 
-### <a name="can-i-delete-a-previously-created-bookings-calendar"></a>以前に作成した予約予定表を削除できますか。
+### <a name="can-i-delete-a-previously-created-bookings-calendar"></a>以前に作成した予約予定表を削除できますか?
 
-予約予定表を削除するには、Exchange で関連付けられたメールボックスを削除する必要があります。
+Bookings 予定表を削除するには、Exchange で関連付けられているメールボックスを削除する必要があります。
 
-### <a name="if-i-create-a-calendar-and-someone-else-has-access-to-bookings-would-they-be-able-to-see-my-calendar"></a>予定表を作成した場合、他のユーザーが予約にアクセスできるようになると、自分の予定表を表示できるようになりますか?
+### <a name="if-i-create-a-calendar-and-someone-else-has-access-to-bookings-would-they-be-able-to-see-my-calendar"></a>予定表を作成し、他のユーザーが Bookings にアクセスできる場合、ユーザーは自分の予定表を表示できますか?
 
-(Web アプリを介して) 作成した予約予定表へのアクセス権を持つユーザーは、管理者または閲覧者の役割のいずれかでスタッフとして追加されたすべてのユーザーです。 テナント管理者は、Exchange と AAD のすべての予約メールボックスの一覧を表示することができます。
+(Web アプリを使用して) 作成した予約予定表にアクセスできるユーザーは、管理者ロールまたはビューアー ロールでスタッフとして追加されたユーザーのみです。 テナント管理者は、Exchange と AAD のすべての Bookings メールボックスの一覧を表示できます。
 
-### <a name="are-video-conferencing-meetings-integrated-into-the-bookings-app"></a>予約アプリに統合されているビデオ会議会議ですか。
+### <a name="are-video-conferencing-meetings-integrated-into-the-bookings-app"></a>ビデオ会議会議は予約アプリに統合されていますか?
 
-Skype または Microsoft Teams クライアントを使用している場合、オンライン会議は予約の範囲内で使用できます。 オンライン会議はサービスレベルで有効にすることができ、選択した会議クライアント (Skype または Teams) は、予約済みのスタッフメンバー用に既定で設定されたものになります。 オンライン会議に参加するには、各新しい予定に固有の会議リンクが割り当てられます。さらに、簡単な参加オプションがイベントと確認の電子メールに含まれています。
+オンライン会議は、Skype または Microsoft Teams クライアントを使用する場合に予約内で利用できます。 オンライン会議はサービス レベルで有効にできます。選択した会議クライアント (Skype または Teams) は、予約されたスタッフ メンバーに対して既定で設定される会議クライアントになります。 オンライン会議に参加するには、新しい各予定に一意の会議リンクが添付され、イベントと確認メールに簡単参加オプションが含まれます。
 
-### <a name="how-does-scheduling-policy-work"></a>スケジュールポリシーのしくみ
+### <a name="how-does-scheduling-policy-work"></a>スケジュール ポリシーの動作
 
-[ **最大リードタイム** ] という設定によって、予約を行うことができる最も遠い (日数) を決定します。 少なくとも24時間 (最小リードタイム、時間単位、予約とキャンセル)、および最大リードタイムの **間である** 必要があります。 最小リードタイムが0時間に設定されている場合は、最大リードタイムを1日に設定できます。この場合は、顧客が開始時刻まで予約を取り消すことができます。また、予定が翌日にある場合にのみ予約を予約することができます。
+[最大リード タイム **] と呼** ばれる設定では、予約が可能な最も前もって (日数単位で) 決定されます。 最小リード タイム **(予約** と取り消しの場合は、最小リード タイム (時間内の最小リード タイム) と最大リード タイムの間に少なくとも 24 時間が必要です。 リード タイムの最小値が 0 時間に設定されている場合、最大リード タイムを 1 日に設定できます。この場合、顧客は予約を開始するまでキャンセルできます。顧客は、予定が翌日の場合にのみ予約をスケジュールできます。
 
-:::image type="content" source="media/bookings-faq-scheduling.png" alt-text="予約のスケジューリング":::
+:::image type="content" source="media/bookings-faq-scheduling.png" alt-text="Bookings でのスケジュール設定":::
 
-### <a name="how-does-bookings-work-across-time-zones"></a>タイムゾーン間での予約のしくみ
+### <a name="how-does-bookings-work-across-time-zones"></a>予約はタイム ゾーン間でどのように機能しますか?
 
-すべての時刻は、既定では、勤務時間領域 (ローカルタイムゾーン) にあります。 これは、勤務時間などの予約カレンダーに対して構成したすべての設定がこのタイムゾーンに表示されることを意味します。 セルフサービスページには、すべての予定時間をエンドユーザーのタイムゾーンで表示する機能があり、必要に応じてオフにすることができます。 [予約ページ] タブの [ **常に勤務時間帯にタイムスロットを表示する** ] チェックがオフになっている場合、ページを訪れたユーザーには、自分のローカルタイムゾーンのタイムスロットが表示されます。
+既定では、すべての時刻がビジネス タイム ゾーン (ローカル タイム ゾーン) 内にあります。 つまり、予約予定表に対して構成した設定 (勤務時間など) は、このタイム ゾーンに表示されます。 セルフサービス ページには、エンド ユーザーのタイム ゾーンのすべての予定時刻を表示する機能があります。必要に応じてオフにできます。 [ **予約]** ページ タブで [ビジネス タイム ゾーンの時間帯を常に表示する] チェック ボックスがオフのままになっている場合、ページにアクセスしたユーザーには、自分のローカル タイム ゾーンの時間帯が表示されます。
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="予約地域とタイムゾーンの設定":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="予約地域とタイム ゾーンの設定":::
 
-予約にスタッフのタイムゾーンを設定するためのプロビジョニングはありません。 スタッフのタイムゾーン、つまり営業時間帯は、ビジネスタイムゾーンになります。
+予約のスタッフのタイム ゾーンを設定する準備はありません。 スタッフのタイム ゾーン 、つまり営業時間は、ビジネス タイム ゾーンになります。
 
-### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>電子メール通知はテナントのドメイン名として送信できますか?
+### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>テナント ドメイン名として電子メール通知を送信できますか?
 
-電子メールアドレスは、Microsoft 365 設定レベルで制御および管理され、そこにあるドメイン構成設定に依存します。 詳細については、 [こちら](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)を参照してください。
+電子メール アドレスは、Microsoft 365 設定レベルで制御および管理され、そこでのドメイン構成設定によって異なります。 詳細については、こちらを参照 [してください](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)。
 
-### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>異なるサービスまたは特定の構成に依存する SMS メッセージを送信する機能はありますか。
+### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>SMS メッセージを送信する機能は、別のサービスまたは特定の構成に依存していますか?
 
-現在、SMS メッセージは北米で利用でき、Skype または Twilio アカウントは SMS の配信に使用されます。
+現在、SMS メッセージは北米で利用できます。SKYPE または Twilio アカウントは SMS 配信に使用されます。
 
-### <a name="how-can-bookings-appointments-show-up-on-a-persons-calendar"></a>ユーザーの予定表に予定の予約を表示するにはどうすればよいですか?
+### <a name="how-can-bookings-appointments-show-up-on-a-persons-calendar"></a>予約の予定をユーザーの予定表に表示する方法
 
-予約の確認は、サービスプロバイダーとお客様の受信トレイの両方に送信されます。 確認メールには、* ics ファイル添付ファイルが含まれています。これにより、関連するすべての予定の詳細をユーザーの予定表に追加することができます。
+予約の確認は、サービス プロバイダーと顧客の受信トレイの両方に送信されます。 確認メールには *.ics ファイルの添付ファイルが含まれているので、関連するすべての予定の詳細と一緒にユーザーの予定表に追加できます。
 
-### <a name="what-triggers-service-provider-or-staff-and-customer-emails"></a>サービスプロバイダーまたはスタッフおよびお客様の電子メールのトリガー
+### <a name="what-triggers-service-provider-or-staff-and-customer-emails"></a>サービス プロバイダーやスタッフ、顧客のメールをトリガーする理由は何ですか?
 
-メールは、予約 Web アプリの [サービス] タブの設定に基づいてトリガーされます。 セルフサービスページまたは予約 Web アプリの [予定表] タブで、顧客によって行われた予約は、確認メッセージや通知メールをトリガーします。 確認メールまたは Web アプリ内で予約を **管理** するボタンを使って予約を変更した場合にも、同じことが起こります。 予約 Web アプリの [サービス] タブで説明するように、予定の前に指定された期間にアラームの電子メールが送信されます。
+電子メールは、Bookings Web アプリの [サービス] タブの設定に基づいてトリガーされます。 セルフサービス ページまたは Bookings Web アプリの [予定表] タブで顧客が行った予約によって、確認メールや事前通知メールがトリガーされます。 確認メールまたは Web アプリ内の [予約の管理]ボタンを使用して予約に変更を行った場合も、同じことが発生します。 アラーム電子メールは、予約 Web アプリの [サービス] タブで詳細に説明されている、予定の前の指定の期間に送信されます。
 
-### <a name="can-i-book-classroom-style-appointments-that-are-1many-instead-of-11"></a>教室のスタイルの予定は、1:1 の代わりに、多くの場合、次のように予約できますか。
+### <a name="can-i-book-classroom-style-appointments-that-are-1many-instead-of-11"></a>1 対 1 ではなく 1 対多の教室スタイルの予定を予約できますか。
 
-はい。複数のユーザーが同じ予定を同時に予約できるようにするグループ予約機能が用意されています (フィットネスクラスの場合など)。 この機能の詳細については、 [ここ](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)を参照してください。
+はい、複数のユーザーが同じ予定を同時に予約できるグループ予約機能があります (フィットネス クラスなど)。 この機能については、ここで詳しく説明 [します](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)。
 
-### <a name="can-calendars-remain-unpublished-not-public-facing-but-still-accessible-to-designated-users"></a>予定表を非公開にすることはできますが (公開はできません)、指定されたユーザーが引き続きアクセスできますか。
+### <a name="can-calendars-remain-unpublished-not-public-facing-but-still-accessible-to-designated-users"></a>予定表は公開されていない (公開されていない) ままで、指定されたユーザーは引き続きアクセスできますか。
 
-はい。 Web アプリの [予約ページ] タブにあるチェックボックス: **Microsoft 365 または Office 365 アカウントを組織から予約する必要** があります。 このチェックボックスをオンにすると、セルフサービスページアクセスがテナント内のユーザーにのみ制限されます。 Web アプリの作成と管理に含まれる予約予定表は、管理者または閲覧者の役割を持つページにスタッフとして追加された個人のみがアクセスできます。
+はい。 Web アプリの [予約ページ] タブには、組織から **Microsoft 365 または Office 365** アカウントを予約する必要があります。 このチェック ボックスをオンにすると、セルフサービス ページへのアクセスがテナント内のアクセスにのみ制限されます。 作成と管理のために Web アプリ内に位置する予約予定表には、管理者またはビューアーの役割を持つページにスタッフとして追加されたユーザーだけがアクセスできます。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のページのアクセス制御":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings での予約ページのアクセス制御":::
 
-### <a name="how-frequently-does-the-home-page-update"></a>ホームページの更新頻度
+### <a name="how-frequently-does-the-home-page-update"></a>ホーム ページはどのくらいの頻度で更新されますか?
 
-Web アプリが読み込まれるたびに、ホームページにリンクされている最新のデータが取得されます。 予約によって追跡される情報の種類の詳細については、この [サポート記事](metrics-and-activity-tracking.md)を参照してください。
+Web アプリが読み込まれるたびに、ホーム ページにリンクされた最新のデータが取得されます。 Bookings で追跡される情報の種類の詳細については、このサポート記事を [参照してください](metrics-and-activity-tracking.md)。
 
-### <a name="can-i-turn-off-the-email-notifications-for-time-off"></a>休暇のメール通知をオフにすることはできますか。
+### <a name="can-i-turn-off-the-email-notifications-for-time-off"></a>オフのメール通知をオフにできますか?
 
-予約 Web アプリ内で [レコーディング時間をオフにすると、常にスタッフメンバーへの通知電子メールをトリガーします。 スタッフメンバーが通知に関して混乱を受けている場合は、管理者側で発生していることについてスタッフにより詳細な情報を提供することをお勧めします。
+Bookings Web アプリ内でタイム オフを記録すると、常にスタッフ メンバーへの通知メールがトリガーされます。 通知についてスタッフ メンバーが混乱している場合は、タイム オフ通知のメモまたはタイトルに詳細を追加して、管理者側で何が起きているかをスタッフにさらに知らせすることをお勧めします。
 
-### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>予定表を複製または複製することができます。また、簡単に拡張できるように templatized できますか?
+### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>Bookings カレンダーは複製または複製できます。また、簡単にスケーリングできるようテンプレート化できますか。
 
-このプロセスでは、Graph API を使用してメールボックスの詳細を取得し、その詳細を使用して新しいメールボックスを作成します。 API ドキュメントは [こちら](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)です。
+このプロセスでは、Graph API を使用してメールボックスの詳細を取得し、その詳細を使用して新しいメールボックスを作成します。 API ドキュメントはここ [です](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 
-### <a name="what-reporting-is-available-in-bookings"></a>予約ではどのようなレポートを利用できますか?
+### <a name="what-reporting-is-available-in-bookings"></a>Bookings で利用できるレポート
 
-管理者の役割に割り当てられたすべての予約スタッフは、タブで区切られた値 (をダウンロードできます。TSV) ファイルを過去120日以内に行われたすべての予約と共に使用します。 予約レポートは、にダウンロードできます。[予約] ページの [ホーム] タブの [TSV] フォーム 予約 API は、このデータを収集して、カスタマイズされた特定の目的に使用することもできます。
+管理者の役割に割り当てられているすべての予約スタッフは、タブ区切りの値 (.過去 120 日以内に行われたすべての予約を含む TSV) ファイル。 Bookings レポートは、次の場所にダウンロードできます。[予約] ページの [ホーム] タブにある TSV フォーム。 Bookings API は、よりカスタマイズされた特定の目的のためにこのデータを収集するためにも使用できます。
 
-### <a name="is-it-possible-to-share-only-one-service-on-the-self-service-page-at-a-time"></a>セルフサービスページで一度に共有できるサービスは1つだけですか。
+### <a name="is-it-possible-to-share-only-one-service-on-the-self-service-page-at-a-time"></a>セルフサービス ページで一度に共有できるサービスは 1 つのみですか?
 
-はい。サービスごとに個別の予約の予定表を作成するか、[サービス] タブに移動してサービスを編集することができます。また、ページの上部には、その特定のサービスに対してのみ URL を共有するオプションが表示されます。
+はい。サービスごとに個別の予約予定表を作成するか、[サービス] タブに移動してサービスを編集し、ページの上部に特定のサービスの URL のみを共有するオプションが表示されます。
 
-### <a name="what-options-are-available-for-embedding-a-consent-form-or-disclosure-for-those-booking-an-appointment"></a>予定を予約するための同意フォームまたは公開のために、どのようなオプションを使用できますか。
+### <a name="what-options-are-available-for-embedding-a-consent-form-or-disclosure-for-those-booking-an-appointment"></a>予定を予約する場合、同意フォームを埋め込むか開示する場合、どのようなオプションを使用できますか。
 
-予約ページで **顧客データ使用の同意** を有効にし、言葉をカスタマイズして組織の開示または同意の要件を適切に伝達することをお勧めします。 もう1つの方法として、同意フォームへのリンクを含むカスタムフィールドをサービスに追加し、ユーザーが予定の作成を続行する前に、フォームを完了したことを確認するようにお客様に要求することができます。 確認と事前通知の電子メールに追加のメモとして同意フォームの URL を追加することもできますが、これによってユーザーは予定を予約できなくなります。
+予約ページで [顧客 **データ** の使用に関する同意] チェック ボックスを有効にし、組織の開示または同意の要件を適切に伝える表現をカスタマイズすることをお勧めします。 もう 1 つのオプションは、同意フォームへのリンクを含むユーザー設定フィールドをサービスに追加し、ユーザーが予定を作成する前にフォームを完了したという確認をユーザーに要求する方法です。 確認メールと事前通知メールに追加のメモとして同意フォームの URL を追加することもできますが、これにより、ユーザーが予定を予約することは防止されます。
 
-### <a name="what-changes-can-be-made-to-the-staff-selection-capability-on-the-self-service-booking-page"></a>セルフサービス予約ページのスタッフ選択機能にはどのような変更を加えることができますか。
+### <a name="what-changes-can-be-made-to-the-staff-selection-capability-on-the-self-service-booking-page"></a>セルフサービスの予約ページでスタッフの選択機能にどのような変更を加えできますか?
 
-ユーザーが予約ページまたはサービスセクションから予約オプション **に対して特定のユーザーを選択できるよう** にすることにより、お客様が特定のスタッフメンバーを完全に選択することができます。 予約は、スタッフの空き時間に基づいて、利用可能なスタッフメンバーをランダムに予約に自動的に割り当てます。
+予約時に特定のスタッフ メンバーを選択する機能を完全に削除するには、[予約] ページまたは [サービス] セクションから [予約に対して特定のユーザーを選択する] オプションをオフにします。 予約では、スタッフの空き時間状況に基づいて、利用可能なスタッフ メンバーが自動的にランダムに予約に割り当てられます。
 
-### <a name="can-bookings-support-many-concurrent-booking-requests-and-self-service-page-visits"></a>多数の同時予約要求およびセルフサービスページ訪問のサポートを予約できますか。
+### <a name="can-bookings-support-many-concurrent-booking-requests-and-self-service-page-visits"></a>Bookings では、多数の同時予約要求とセルフサービス ページへのアクセスをサポートできますか?
 
-予約は、一度に大量の訪問者と予約をサポートできます。 ページに大量のトラフィックが表示される場合、ユーザーは "サーバー使用中" エラーを受信します。 予定の利用可能時間は、ページが読み込まれたとき、および予約が行われたときに更新されます。 複数のユーザーが同じ予定を一度に予約しようとしている場合、予約は1人のユーザーに対してその時間を予約し、他の潜在的な顧客に通知メッセージを提供し、別の時間を検索するように求めるメッセージを表示します。
+予約では、一度に大量の訪問者と予約をサポートできます。 ページに大量のトラフィックが発生した場合、ユーザーは "サーバービジー" エラーを受け取ります。 予定の空き時間情報は、ページが読み込まれるとき、および予約が行われたときに更新されます。 複数のユーザーが同じ予定を一度に予約しようとしている場合、Bookings ではその時間を 1 人のユーザーだけが予約し、他の潜在的な顧客に通知メッセージを送信し、別の時間を見つけするように促します。
 
 ## <a name="privacy"></a>プライバシー
 
-### <a name="where-is-bookings-data-stored"></a>予約データはどこに保存されますか?
+### <a name="where-is-bookings-data-stored"></a>Bookings データはどこに保存されますか?
 
-予約は Microsoft 365 アプリで、すべてのデータは Microsoft 365 プラットフォームと Exchange の間に格納されます。 予約は、Microsoft によって設定されたすべてのデータストレージポリシーに従います。これは、すべての Office アプリに続く同じポリシーです。 予約では、Exchange の共有メールボックスを使用して、顧客、スタッフ、サービス、および予定の詳細を保存します。 Exchange の共有メールボックスのコンプライアンスポリシーは、予約メールボックスにも適用されます。 すべての顧客データ (予約時にお客様によって提供される情報を含む) は、予約で取得され、アプリ内に格納されるため、Exchange に格納されます。 Microsoft の予約では、Microsoft 365 で使用されているものと同じポリシーを使用して[います。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)これはこちらで入手できます。
+Bookings は Microsoft 365 アプリです。つまり、すべてのデータは Microsoft 365 プラットフォームと Exchange に保存されます。 予約は、Microsoft によって設定されたデータ ストレージ ポリシーすべてに従います。これは、同じポリシーの後に、すべてのアプリOfficeされます。 Bookings は、Exchange の共有メールボックスを使用して、顧客、スタッフ、サービス、および予定の詳細を格納します。 Exchange の共有メールボックスのコンプライアンス ポリシーは、Bookings メールボックスにも適用されます。 すべての顧客データ (予約時に顧客から提供された情報を含む) は Bookings にキャプチャされ、アプリ内に格納されます。そのため、Exchange 内に保存されます。 Microsoft Bookings では、Microsoft 365 で使用されているポリシーと同じポリシーが使用されます。このポリシーについては、こちらをご覧 [ください。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
 
-### <a name="is-there-a-way-to-centrally-manage-bookings-calendars-for-all-users"></a>すべてのユーザーの予約予定表を一元管理する方法はありますか。
+### <a name="is-there-a-way-to-centrally-manage-bookings-calendars-for-all-users"></a>すべてのユーザーの予約予定表を一中央に管理する方法はありますか?
 
-各予約予定表は個別に管理されます。 ホームページのキャレットをクリックした後、検索ドロップダウン以外の統合ビューはありません。
+各予約カレンダーは個別に管理されます。 ホーム ページのキャレットをクリックした後の検索ドロップダウン以外に、統合ビューはありません。
 
-### <a name="how-are-users-authenticated"></a>ユーザーはどのように認証されますか。
+### <a name="how-are-users-authenticated"></a>ユーザーの認証方法
 
-予約 Web アプリへのアクセスには、通常の Azure Active Directory (AAD) 認証による認証が伴います。 セルフサービス予約ページは、[Web ページ] リンクを使用してすべてのユーザーが利用できるようにすることができます。 ただし、 **[microsoft 365 または Office 365 アカウントを組織に必要** とする] 設定が選択されている場合、ページは microsoft 365 テナント内でのみ使用することができます (AAD 認証を使用)。
+Bookings Web アプリへのアクセスには、通常の Azure Active Directory (AAD) 認証による認証が含まれます。 セルフサービスの予約ページは、Web ページリンクを使用してすべてのユーザーが利用できます。 ただし、[組織から書籍に **Microsoft 365 または Office 365** アカウントを要求する] 設定が選択されている場合、ページは Microsoft 365 テナント内でのみ使用が制限されます (AAD 認証を使用)。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のページのアクセス制御":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings での予約ページのアクセス制御":::
 
-### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>お客様のデータは何らかの理由で運用システムから出ますか?
+### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>顧客データは何らかの理由で実稼働システムから離れるのですか?
 
-はい。予約は Exchange の一部であるため、Graph Api と Exchange Web サービス (EWS) Api をお客様がアクセス可能なデータをダウンロードすることを許可します。
+はい。Bookings は Exchange の一部です。Graph API と Exchange Web サービス (EWS) API は、お客様がアクセスできる独自のデータをダウンロードできます。
 
-### <a name="is-there-the-ability-to-customize-email-addresses-for-customer-replies"></a>顧客からの返信の電子メールアドレスをカスタマイズすることはできますか?
+### <a name="is-there-the-ability-to-customize-email-addresses-for-customer-replies"></a>顧客の返信用にメール アドレスをカスタマイズする機能はありますか?
 
-お客様が返信を送信する電子メールアドレスを定義することができます。 この設定は、[ **勤務先情報** ] タブにあります。予約メールボックス名自体は、Exchange の通常の名前変更プロセスによって、Exchange 内で変更することもできます。
+顧客が返信を送信する電子メール アドレスを定義する機能があります。 この設定は 、[ビジネス情報 **] タブ** にあります。Bookings メールボックス名自体は、通常の Exchange メールボックスの名前変更プロセスを通じて、Exchange 内で変更できます。
 
-### <a name="we-would-like-for-the-customer-to-accept-our-terms-and-conditions-during-the-booking-process-is-that-possible"></a>お客様は、予約プロセスの間にお客様にご契約書を受諾したいと考えています。 これは可能ですか?
+### <a name="we-would-like-for-the-customer-to-accept-our-terms-and-conditions-during-the-booking-process-is-that-possible"></a>予約プロセス中に、お客様が使用条件に同意する必要があります。 可能な場合
 
-この機能は、GDPR 準拠のために既に存在します。 予約ページには、カスタム同意のためのフィールドがあります。 [公開の詳細] セクションの下にあります。 このボックスをオンにして、独自のカスタム同意メッセージを記述するだけで、セルフサービスページに必須フィールドとして表示されます。 お客様が同意を付与した日時が記録されます。
+この機能は、GDPR コンプライアンスのために既に存在します。 [予約] ページには、公開の詳細セクションの下にあるカスタム同意用のフィールドがあります。 チェック ボックスをオンにして、独自のカスタム同意メッセージを記述すると、セルフサービス ページに必須フィールドとして表示されます。 お客様が同意した日時が記録されます。
 
-このセクションではリッチテキストはサポートされていませんが、[勤務先情報] セクションの下にリンクを追加して、同意のチェックボックスのすぐ下に表示することができます。
+このセクションはリッチ テキストをサポートしませんが、ビジネス情報セクションの下にリンクを追加できると考えて、同意チェック ボックスの下に表示されます。
 
-### <a name="how-can-bookings-associated-mailboxes-in-exchange-be-identified"></a>Exchange で予約関連のメールボックスを識別する方法を教えてください。
+### <a name="how-can-bookings-associated-mailboxes-in-exchange-be-identified"></a>Exchange の Bookings 関連メールボックスを識別する方法
 
-次のコマンドを使用すると、すべての予約メールボックスおよびそれらにアクセスできるユーザーの情報を取得できます。
+次のコマンドを使用して、すべての予約メールボックスと、そのメールボックスにアクセスできるユーザーの情報を取得できます。
 
 `Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($\_.user -like '\*@\*')}`
 
 ## <a name="technical-questions"></a>技術的な質問
 
-### <a name="if-a-user-schedules-an-appointment-for-a-service-consisting-of-an-online-meeting-how-do-they-receive-the-microsoft-teams-link-to-the-meeting-if-they-leave-the-optional-email-address-field-empty"></a>ユーザーがオンライン会議で構成されるサービスの予定をスケジュールする場合、オプションの [電子メールアドレス] フィールドを空白のままにした場合、どのようにして会議への Microsoft Teams リンクを受信することができますか。
+### <a name="if-a-user-schedules-an-appointment-for-a-service-consisting-of-an-online-meeting-how-do-they-receive-the-microsoft-teams-link-to-the-meeting-if-they-leave-the-optional-email-address-field-empty"></a>ユーザーがオンライン会議で構成されるサービスの予定をスケジュールする場合、オプションの電子メール アドレス フィールドを空のままにした場合、会議への Microsoft Teams のリンクを受け取る方法は何ですか。
 
-お客様の電子メール情報がシステムにない場合は、お客様に確認メールを配信する方法はありません。そのため、Teams リンクは受け取りません。 解決策として、メールアドレスを必須フィールドとして設定します。これは、予約の [サービス] タブで実行できます。 新しいサービスを予約で作成すると、既定では [顧客の電子メール] フィールドが必須フィールドに設定されることに注意してください。
+システムに顧客の電子メール情報がない場合、確認メールを顧客に配信する方法は存在しなのに、Teams のリンクを受け取る方法はありません。 解決策として、電子メール アドレスを必須フィールドとして設定します。このフィールドは、Bookings の [サービス] タブで行えます。 Bookings で新しいサービスを作成するたびに、顧客の電子メール フィールドは既定で必須フィールドとして設定されます。
 
-### <a name="how-are-staff-assigned-to-appointments-when-anyone-is-selected-or-when-customers-do-not-have-the-ability-to-choose-a-staff-member-for-the-appointment"></a>[すべてのユーザー] が選択されている場合、または顧客が予定のスタッフメンバーを選択できない場合に、どのようにスタッフが予定に割り当てられるか。
+### <a name="how-are-staff-assigned-to-appointments-when-anyone-is-selected-or-when-customers-do-not-have-the-ability-to-choose-a-staff-member-for-the-appointment"></a>"すべてのユーザー" が選択されている場合、または顧客が予定のスタッフ メンバーを選択できない場合、スタッフはどのようにして予定に割り当てられますか。
 
-これらのシナリオでは、予定が予約されているときに使用可能なすべてのスタッフメンバーを対象として、スタッフがランダムに割り当てられます。 現時点では、スタッフのすべてのメンバーに対してランダムに割り当てられた予定を均等に分配すること、または割り当てられた予定の数を各スタッフメンバーに cap に配置することはできません。 ランダムな割り当ての数を超えたためにスタッフ間で負荷分散を行う必要がある場合は、[予約] ページ内の [予定表] タブで手動で行うことができます。
+これらのシナリオでは、予約時に利用できるすべてのスタッフ メンバーから、スタッフがランダムに割り当てられます。 現在、ランダムに割り当てられた予定をスタッフのすべてのメンバーに均等に配分したり、各スタッフ メンバーに割り当てられた予定の数を上限にしたりする方法はありません。 多数のランダムな割り当ての後にスタッフ全体で行う必要がある負荷分散がある場合は、[予約] ページの [予定表] タブで手動で行うことができます。
 
-### <a name="how-can-users-opt-out-of-receiving-sms-messages-if-they-have-already-opted-in-previously"></a>以前に既に選択されている場合に、ユーザーが SMS メッセージを受信しないようにするにはどうすればよいですか。
+### <a name="how-can-users-opt-out-of-receiving-sms-messages-if-they-have-already-opted-in-previously"></a>ユーザーが既に SMS メッセージをオプトインしている場合、ユーザーが SMS メッセージの受信をオプトアウトするにはどうすれば良いでしょうか。
 
-SMS テキストメッセージが有効になっている予定を予約する場合、ユーザーは、予約するたびに [オプトイン] ボックスを確認するように求められます。 お客様は、メッセージが停止することを希望していることを示す SMS メッセージ (SMS プロバイダー) に直接返信することもできます。その後、その電話番号にはその他のテキストは送信されません。 お客様が課金からではなく、プロバイダーからのテキストメッセージの受信を除外した場合、予約ページから除外された場合でも、今後 SMS メッセージを受信しなくなります。
+SMS テキスト メッセージを有効にして予定を予約すると、予約の度にオプトイン ボックスをオンにするように求めるメッセージが表示されます。 ユーザーは、メッセージを停止するかどうかを示す SMS メッセージ (SMS プロバイダー) に直接返信し、それ以上その電話番号にテキストが送信されません。 顧客が Bookings 自体からではなく、プロバイダーからのテキスト メッセージの受信をオプトアウトした場合、Bookings ページからオプトインしても、今後 SMS メッセージを受信しなくなる可能性があります。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-### <a name="this-staff-members-calendar-cant-be-synced"></a>このスタッフメンバーの予定表を同期することはできません
+### <a name="this-staff-members-calendar-cant-be-synced"></a>このスタッフ メンバーの予定表を同期できない
 
-エラーが発生した場合は、「このスタッフメンバーの予定表を同期できません」というエラーが表示されます。このセクションには、エラーを解決するためのいくつかのトラブルシューティング手順が含まれています。
+"このスタッフ メンバーの予定表を同期できない" というエラーが表示された場合、このセクションにはエラーの解決に役立つトラブルシューティング手順がいくつか含まれている必要があります。
 
 > [!NOTE]
-> 予約は、Microsoft 365 Business Standard、Microsoft 365 A3、または Microsoft 365 A5 サブスクリプションを使用しているお客様に対して、既定でオンになっています。 予約は、Office 365 Enterprise E3 および Office 365 Enterprise E5 を持つお客様も利用できますが、既定ではオフになっています。 開始するには、「 [Microsoft 予約へのアクセスを取得](get-access.md)する」を参照してください。 予約をオンまたはオフにするには、「 [組織の予約を有効または無効](turn-bookings-on-or-off.md)にする」を参照してください。
+> 予約は、Microsoft 365 Business Standard、Microsoft 365 A3、または Microsoft 365 A5 サブスクリプションをお持ちのお客様に対して既定で有効になっています。 Bookings は、Office 365 Enterprise E3 および Office 365 Enterprise E5 を使用しているお客様も利用できますが、既定ではオフになっています。 To get started, see [Get access to Microsoft Bookings](get-access.md). 予約を有効またはオフにする方法については、「 [組織の予約を有効またはオフにする」を参照してください](turn-bookings-on-or-off.md)。
 
-スタッフの予定表の同期に関する情報をお探しの場合は、「 [予約にスタッフを追加する](add-staff.md)」を参照してください。 [ **スタッフの詳細** ] ページで、 **[予定表にあるイベントに影響** する] チェックボックスがオンになっていることを確認します。
+スタッフの予定表の同期に関する情報を探している場合は、「予約にスタッフを追加する」を [参照してください](add-staff.md)。 [スタッフの詳細] **ページで、[予定表の** イベント] が [ **空き時間情報に影響する] チェック ボックスが** オンになっています。
 
-### <a name="the-staff-member-needs-to-change-their-calendar-permissions"></a>スタッフメンバーは予定表のアクセス許可を変更する必要がある
+### <a name="the-staff-member-needs-to-change-their-calendar-permissions"></a>スタッフ メンバーは予定表のアクセス許可を変更する必要があります。
 
-予約がスタッフメンバーの予定表と正しく同期するためには、各スタッフメンバーが各自の予定表を共有する必要があります。 各スタッフメンバーは、自分の予定表を共有するために、これらの手順に従う必要があります。
+予約をスタッフ メンバーの予定表と適切に同期するには、各スタッフ メンバーが予定表を共有する必要があります。 各スタッフ メンバーが自分の予定表を共有するには、次の手順に従う必要があります。
 
-1. Microsoft 365 にサインインし、アプリ起動ツールから [ **Outlook** ] を選択します。
+1. Microsoft 365 にサインインし、アプリ起動ツール **から Outlook** を選択します。
 
    > [!div class="mx-imgBorder"]
    > ![アプリ起動ツールの Outlook の画像](../media/bookings-applauncher-outlook.png)
 
-1. ページの上部で、[ **Share** \> **予定表** の共有] を選択します。
+1. ページの上部で、[予定表の共有] **を** \> **選択します**。
 
-   ![予定表共有メニューの画像](../media/bookings-share-calendar.png)
+   ![予定表の共有メニューの画像](../media/bookings-share-calendar.png)
 
-1. [ **組織内のユーザー** ] セクションで、 **[自分の所属組織**] の横のドロップダウンボックスを選択し、[ **ビジー状態のときに表示する**] を選択します。
+1. In the **People inside your organization** section, select the drop-down box next to My **Organization,** and then select **Can view when I'm busy**.
 
    > [!NOTE]
-   > この設定では、空き時間情報を、組織内の他のユーザーとの予約および予約と共有します。 これには、スケジュールされている予定の種類、予定を予約したユーザー、または場所など、その他の情報は含まれません。
+   > この設定は、空き時間情報を予約や組織内の他のユーザーと共有します。 スケジュールした予定の種類、予定のスケジュールを設定したユーザー、場所など、その他の情報は含まれます。
 
    > [!div class="mx-imgBorder"]
-   > ![[予定表の共有] 画面の画像で、使用中の状態を確認できます。](../media/bookings-view-busy.png)
+   > ![[取り込み中] が有効になっているときに表示できる予定表の共有画面の画像](../media/bookings-view-busy.png)
 
 1. [**完了**] を選択します。
 
-### <a name="we-cant-find-a-staff-member-in-our-organization"></a>組織内のスタッフメンバーを見つけることができません
+### <a name="we-cant-find-a-staff-member-in-our-organization"></a>組織のスタッフ メンバーが見当たらない
 
-従業員が会社を離れており、Microsoft 365 または Office 365 組織からその従業員を削除した場合は、そのユーザーを予約から削除して、予定表に表示されないようにし、顧客が予定を予約できないようにする必要があります。
+従業員が会社を離れ、Microsoft 365 または Office 365 組織から削除した場合でも、そのユーザーを予約から削除する必要があります。そうすると、そのユーザーは予定表に表示されません。また、顧客が一緒に予定を予約できないのを防ぐ必要があります。
 
-1. Microsoft 365 にサインインして、[**予約** スタッフ] に移動し \> **Staff** ます。
+1. Microsoft 365 にサインインし、[予約スタッフ] **に移動** \> **します**。
 
-1. マウスカーソルをスタッフメンバーの名前の上に置きます。 [**編集**] アイコンと [**削除**] アイコンが [**電話**] 列の右側に表示されます。
+1. スタッフ メンバーの名前の上にマウス カーソルを移動します。 **[電話****] 列** の右側にアイコンの編集と **削除が表示** されます。
 
-1. [ **削除** ] アイコンを選択します。
+1. [削除] **アイコンを選択** します。
 
-1. 確認ボックスで、[ **OK]** を選択します。
+1. 確認ボックスで **、[OK] を選択します**。
 
 > [!NOTE]
-> 予約されている予定表が複数ある場合は、それらすべてからユーザーを削除する必要があります。
+> 複数の予約予定表がある場合は、すべての予約予定表からユーザーを削除する必要があります。
 
-複数の予定表があるかどうかを確認するには、左側のメニューで会社名の横にあるドロップダウン矢印を選択し、[ **開く**] を選択します。 カレンダーが1つだけの場合は、予約予定表を追加するオプションのみが表示されます。 この例は、"Contoso CO" という名前の2番目の予定表があることを示しています。
+予定表が複数あるか確認するには、左側のメニューで会社名の横にあるドロップダウン矢印を選択し、[開く] を選択 **します**。 予定表が 1 つのみである場合は、予約予定表を追加するオプションだけが表示されます。 この例では、"Contoso CO" という名前の 2 番目のカレンダーが表示されます。
 
-![2番目の予定表が表示されている予定表画面を選択する画像](../media/bookings-choose-calendar.png)
+![2 番目の予定表が表示されている [予定表の選択] 画面の画像](../media/bookings-choose-calendar.png)
 
-### <a name="theres-a-syncing-error-we-cant-identify"></a>識別できない同期エラーが発生しています
+### <a name="theres-a-syncing-error-we-cant-identify"></a>特定できない同期エラーがある
 
-これは一時的なエラーであり、通常、インターネット接続が不安定なために発生します。 これらの問題は、通常、数分後に解決します。
+これは一時的なエラーであり、通常はインターネット接続が不安定な場合に発生します。 これらの問題は、通常、数分後に解決されます。
 
-長期間にこのエラーが表示される場合や、頻繁に表示される場合は、サポートにお問い合わせください。
+If you still see this error after an extended period of time or you are often, please contact support.
 
 ## <a name="additional-resources"></a>その他のリソース
 
 
-  - [Microsoft の予約は、企業のブログで可用性を拡張します。](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)
+  - [Microsoft Bookings は、エンタープライズ ブログで可用性を拡張します。](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)
 
-  - [Microsoft の予約の機能に関するビデオ](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)
+  - [Microsoft Bookings のしくみビデオ](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)
 
-  - [Microsoft 予約の使用を開始する](get-access.md)
+  - [Microsoft Bookings の使用を開始する](get-access.md)
 
-  - [Microsoft の予約をオンまたはオフにする](turn-bookings-on-or-off.md)
+  - [Microsoft Bookings を有効または無効にする](turn-bookings-on-or-off.md)
 
-  - [ユーザーを個別にまたは一括して追加する](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
+  - [ユーザーを個別に、または一括で追加する](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
 
-  - [スタッフを予約に追加する](add-staff.md)
+  - [Bookings にスタッフを追加する](add-staff.md)
 
-  - [テンプレートが定義された後に自動化する API コンポーネント](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
+  - [テンプレートの定義後に自動化する API コンポーネント](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
 
-  - [予定表が表示されるように予約する URL](https://outlook.office.com/bookings/calendar)
+  - [表示する予約予定表の URL](https://outlook.office.com/bookings/calendar)
 
-  - [コンプライアンスポリシーの予約](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
+  - [Bookings コンプライアンス ポリシー](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
 
-  - [予約ページのカスタマイズと公開](customize-booking-page.md)
+  - [予約ページをカスタマイズして公開する](customize-booking-page.md)
 
-  - [テナントメールボックスの構成](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
+  - [テナント メールボックスの構成](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [グループ予約](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 
-  - [予約指標とアクティビティの追跡](metrics-and-activity-tracking.md)
+  - [予約の測定基準とアクティビティ追跡](metrics-and-activity-tracking.md)
 
-  - [M365 パブリックロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)
+  - [M365 パブリック ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)
 
-  - [UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)からフィードバックを送信する
+  - [UserVoice 経由でフィードバックを送信する](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)
