@@ -122,13 +122,13 @@
           href: what-the-dlp-functions-look-for.md
     - name: トレーニング可能な分類子
       items:
-        - name: トレーニング可能な分類子の詳細 (プレビュー)
+        - name: トレーニング可能な分類子の詳細
           href: classifier-learn-about.md
-        - name: トレーニング可能な分類子の使用を開始する (プレビュー)
+        - name: トレーニング可能な分類子の使用を開始する
           href: classifier-get-started-with.md
-        - name: 通信コンプライアンスで分類子を再トレーニングする方法 (プレビュー)
+        - name: 通信コンプライアンスで分類子を再トレーニングする方法
           href: classifier-how-to-retrain-comms-compliance.md
-        - name: コンテンツ エクスプローラーで分類子を再トレーニングする方法 (プレビュー)
+        - name: コンテンツ エクスプローラーで分類子を再トレーニングする方法
           href: classifier-how-to-retrain-content-explorer.md
     - name: データの分類
       items:
@@ -629,7 +629,7 @@
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
             - name: 検索の統計
-              href: search-statistics.md
+              href: search-statistics-in-advanced-ediscovery.md
             - name: 検索結果をレビュー セットに追加する
               href: add-data-to-review-set.md
         - name: レビュー セットを管理する
@@ -792,83 +792,6 @@
               href: run-reports-in-advanced-ediscovery.md
     - name: 従来の電子情報開示ツールの廃止
       href: legacy-ediscovery-retirement.md
-- name: データ調査を管理する
-  items:
-    - name: データ調査の概要
-      href: overview-data-investigations.md
-    - name: データ流出インシデントを管理する
-      href: manage-data-spillage-incidents.md
-    - name: データ調査のアクセス許可を割り当てる
-      href: data-investigations-permissions.md
-    - name: 新しい調査を作成する
-      href: create-new-investigation.md
-    - name: 調査でデータ検索する
-      href: search-for-data.md
-      items:
-        - name: 検索クエリのビルド
-          href: build-search-queries.md
-        - name: 検索の統計
-          href: search-statistics.md
-    - name: エビデンスのデータを確認します
-      href: review-data-in-evidence.md
-      items:
-        - name: データをクエリする
-          href: evidence-query.md
-        - name: ドキュメントにタグ付けする
-          href: tag-documents.md
-        - name: ドキュメントに注釈づけや墨消しをする
-          href: annotate-and-redact-documents.md
-        - name: Office 365 以外のデータを読み込む
-          href: load-non-office365-data.md
-        - name: データ処理中のエラー修復
-          href: error-remediation.md
-        - name: アイテムを元の場所から削除する
-          href: delete-items-from-original-locations.md
-    - name: アナリティクスを使用して、より速い調査を実行する
-      href: run-analytics-to-investigate-faster.md
-      items:
-        - name: 電子メールスレッド
-          href: email-threading.md
-        - name: 準重複の検出
-          href: near-duplicates.md
-        - name: テーマ
-          href: themes.md
-        - name: 関連モジュールを実行する
-          href: use-relevance-module.md
-    - name: 調査に関心のあるユーザーを管理する
-      href: manage-people-of-interest.md
-      items:
-        - name: 調査でユーザーのデータに索引を付ける
-          href: index-data-people-of-interest.md
-        - name: 調査中のユーザーの監査活動を表示する
-          href: view-people-of-interest-activity.md
-    - name: 調査データをエクスポートする
-      href: export-data.md
-      items:
-        - name: エビデンスから文書をエクスポートする
-          href: export-documents-from-incident.md
-        - name: エクスポート ジョブのダウンロード
-          href: download-export-jobs-from-a-data-investigation.md
-    - name: 調査の設定を構成する
-      items:
-        - name: 調査のメンバーを追加または削除する
-          href: add-remove-members.md
-        - name: 検索と分析の設定を構成する
-          href: configure-search-analytics-settings.md
-        - name: 調査を完了するか調査を削除する
-          href: close-or-delete-investigation.md
-    - name: データ調査の参考資料
-      items:
-        - name: リリース ノート
-          href: data-investigations-release-notes.md
-        - name: データ調査のリミット
-          href: limits-datainvestigations.md
-        - name: サポートされているファイルの種類
-          href: supported-filetypes-datainvestigations.md
-        - name: ドキュメントのメタデータ フィールド
-          href: document-metadata-fields.md
-        - name: ジョブを管理する
-          href: manage-jobs.md
 - name: 保留リストを管理する
   items:
     - name: メールボックスに適用されている保留の種類を特定する方法
