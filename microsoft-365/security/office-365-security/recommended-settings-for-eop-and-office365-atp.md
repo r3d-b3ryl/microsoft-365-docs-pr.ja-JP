@@ -18,18 +18,18 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) および Defender for Office 365 セキュリティ設定のベスト プラクティスは何ですか? 標準的な保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか。 また、Defender を 365 用に使用する場合、どのようなOfficeがありますか?
-ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: c9a9774e0866b009965eeb574384095c26fa780e
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698689"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760232"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP と Microsoft Defender の 365 セキュリティOffice推奨設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Exchange Online Protection (EOP)** は、Microsoft 365 サブスクリプションのセキュリティの中核であり、悪意のあるメールが従業員の受信トレイに届かされるのを防きます。 しかし、より高度な新しい攻撃が毎日出現する中、多くの場合、強化された保護が必要になります。 **Microsoft Defender for Office 365** プラン 1 またはプラン 2 には、管理者にセキュリティ、制御、調査のレイヤーを追加する追加機能が含まれている。
+**Exchange Online Protection (EOP)** は、Microsoft 365 サブスクリプションのセキュリティの中核であり、悪意のあるメールが従業員の受信トレイに届かされるのを防きます。 しかし、より高度な新しい攻撃が毎日出現する中、多くの場合、強化された保護が必要になります。 **Microsoft Defender for Office 365** プラン 1 またはプラン 2 には、管理者にセキュリティ、制御、調査のレイヤーを強化する追加機能が含まれている。
 
 セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、推奨される Office 365 の EOP と Microsoft Defender には **、Standard** と **Strict** の 2 つのセキュリティ レベルがあります。 お客様の環境とニーズは異なりますが、これらのレベルのフィルタリングは、ほとんどの状況で不要なメールが従業員の受信トレイに届くのを防ぐのに役立ちます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "49698689"
 > [!TIP]
 > PowerShell Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) モジュールを使用すると、(管理者) これらの設定の現在の値を見つけるのに役立ちます。 具体的には **、Get-ORCAReport** コマンドレットは、スパム対策、フィッシング対策、その他のメッセージ検疫設定の評価を生成します。 ORCA モジュールは、以下からダウンロードできます <https://www.powershellgallery.com/packages/ORCA/> 。
 
-## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>EOP でのスパム対策、マルウェア対策、フィッシング対策保護
+## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>EOP でのスパム対策、マルウェア対策、フィッシング対策の保護
 
 スパム対策、マルウェア対策、フィッシング詐欺対策は、管理者が構成できる EOP 機能です。 次の Standard または Strict 構成をお勧めします。
 
@@ -60,7 +60,7 @@ ms.locfileid: "49698689"
 |**フィッシング メール検出** アクション <p> _PhishSpamAction_|**メッセージを [迷惑メール] フォルダーに移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
 |**信頼度の高いフィッシングメール** 検出アクション <p> _HighConfidencePhishAction_|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
 |**バルク メール検出** アクション <p> _BulkSpamAction_|**メッセージを [迷惑メール] フォルダーに移動する** <p> `MoveToJmf`|**メッセージを [迷惑メール] フォルダーに移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`||
-|バルク メールのしきい値 <p> _BulkThreshold_|7 |6 |4 |詳細については、第 [365 条の「バルク苦情レベル (BCL)」Office覧ください](bulk-complaint-level-values.md)。|
+|バルク メールのしきい値 <p> _BulkThreshold_|7 |6 |4 |詳細については、第 365 条の「バルク苦情 [レベル (BCL)」Office覧ください](bulk-complaint-level-values.md)。|
 |検疫の保存期間 <p> _QuarantineRetentionPeriod_|15 日|30 日間|30 日間||
 |**安全性のヒント** <p> _InlineSafetyTipsEnabled_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |許可された送信者 <p> _AllowedSenders_|なし|なし|なし||
@@ -76,7 +76,7 @@ ms.locfileid: "49698689"
 
 他にも、非推奨にされているスパム対策ポリシーには、高度なスパム フィルター (ASF) の設定がいくつかあります。 これらの機能の減価償却費のタイムラインに関する詳細については、この記事の外部で伝達されます。
 
-これらの ASF 設定は、Standard レベルと Strict **レベルの両方** でオフ **に** することをお **勧** めします。 ASF の設定の詳細については、Office 365 の「高度なスパム フィルター [(ASF) の](advanced-spam-filtering-asf-options.md)設定」を参照してください。
+これらの ASF 設定は、Standardレベルと Strict レベルの両方でオフ **に** することをお **勧** めします。 ASF 設定の詳細については、Office 365 の「高度なスパム フィルター [(ASF) 設定](advanced-spam-filtering-asf-options.md)」を参照してください。
 
 ****
 
@@ -138,7 +138,7 @@ ms.locfileid: "49698689"
 
 |セキュリティ機能名|既定値|標準|Strict|コメント|
 |---|:---:|:---:|:---:|---|
-|**スプーフィング対策保護を有効にする** <p> _EnableAntispoofEnforcement_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
+|**スプーフィング対策保護を有効にする** <p> _EnableSpoofIntelligence_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |**認証されていない送信者を有効にする** <p> _EnableUnauthenticatedSender_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|不明なスプーフィングされた送信者の Outlook の送信者の写真に疑問符 (?) を追加します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md)。|
 |**ドメインのスプーフィングが許可されていないユーザーからメールが送信された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンスのブロックされた送信者 [に適用されます](learn-about-spoof-intelligence.md)。|
 |
@@ -171,28 +171,28 @@ EOP のお客様は、前述のように基本的なフィッシング詐欺対�
 |---|:---:|:---:|:---:|---|
 |保護されたユーザー: 保護 **するユーザーを追加する** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|オフ <p> `$false` <p> なし|オン <p> `$true` <p> \<list of users\>|オン <p> `$true` <p> \<list of users\>|組織によっては、主要な役割にユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、その他の上級リーダーである可能性があります。 外部では、保護された送信者には、会議メンバーまたはお客様の役員が含まれる場合があります。|
 |保護されたドメイン: **所有しているドメインを自動的に含める** <p> _EnableOrganizationDomainsProtection_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
-|保護されたドメイン: **カスタム ドメインを含める** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|オフ <p> `$false` <p> なし|オン <p> `$true` <p> \<list of domains\>|オン <p> `$true` <p> \<list of domains\>|組織によっては、所有しているのではなく、頻繁にやり取りするドメイン (送信者ドメイン) を追加することをお勧めします。|
+|保護されたドメイン: **カスタム ドメインを含める** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|オフ <p> `$false` <p> なし|オン <p> `$true` <p> \<list of domains\>|オン <p> `$true` <p> \<list of domains\>|組織によっては、所有しているが、頻繁にやり取りするドメイン (送信者ドメイン) を追加することをお勧めします。|
 |保護されたユーザー: **偽装されたユーザーによって電子メールが送信される場合** <p> _TargetedUserProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
 |保護されたドメイン: **偽装されたドメインによって電子メールが送信される場合** <p> _TargetedDomainProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
 |**偽装ユーザーのヒントを表示する** <p> _EnableSimilarUsersSafetyTips_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
-|**偽装されたドメインのヒントを表示する** <p> _EnableSimilarDomainsSafetyTips_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
-|**通常とは異なっている文字のヒントを表示する** <p> _EnableUnusualCharactersSafetyTips_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
+|**偽装ドメインのヒントを表示する** <p> _EnableSimilarDomainsSafetyTips_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
+|**通常と異なっている文字のヒントを表示する** <p> _EnableUnusualCharactersSafetyTips_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**メールボックス インテリジェンスを有効にする** <p> _EnableMailboxIntelligence_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |**メールボックス インテリジェンス ベースの偽装保護を有効にする** <p> _EnableMailboxIntelligenceProtection_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**メールボックス インテリジェンスによって保護された偽装ユーザーによって電子メールが送信される場合** <p> _MailboxIntelligenceProtectionAction_|**アクションを適用しない** <p> `NoAction`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`||
 |**信頼された差出人** <p> _ExcludedSenders_|なし|なし|なし|組織によっては、偽装のみのためフィッシングとして誤ってマークされるユーザーを追加することをお勧めします。他のフィルターは追加しません。|
-|**信頼されたドメイン** <p> _ExcludedDomains_|なし|なし|なし|組織によっては、偽装のみのためフィッシングとして誤ってマークされるドメインを追加することをお勧めします。他のフィルターは追加しません。|
+|**信頼済みドメイン** <p> _ExcludedDomains_|なし|なし|なし|組織によっては、偽装のみのためフィッシングとして誤ってマークされるドメインを追加することをお勧めします。他のフィルターは追加しません。|
 |
 
 #### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のフィッシング対策ポリシーのスプーフィング設定
 
-これらは、EOP のスパム対策ポリシー設定 [で使用できる設定と同じ設定です](#eop-anti-spam-policy-settings)。
+これらは、EOP のスパム対策ポリシー設定 [で使用可能な設定と同じ設定です](#eop-anti-spam-policy-settings)。
 
 ****
 
 |セキュリティ機能名|既定値|標準|Strict|コメント|
 |---|---|---|---|---|
-|**スプーフィング対策保護を有効にする** <p> _EnableAntispoofEnforcement_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
+|**スプーフィング対策保護を有効にする** <p> _EnableSpoofIntelligence_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |**認証されていない送信者を有効にする** <p> _EnableUnauthenticatedSender_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|不明なスプーフィングされた送信者の Outlook の送信者の写真に疑問符 (?) を追加します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md)。|
 |**ドメインのスプーフィングが許可されていないユーザーからメールが送信された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンスのブロックされた送信者 [に適用されます](learn-about-spoof-intelligence.md)。|
 |
@@ -223,7 +223,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](https://docs.mi
 |セキュリティ機能名|既定値|標準|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**安全なリンクの使用: Office 365 アプリケーション** <p> _EnableSafeLinksForO365Clients_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|サポートされている 365 デスクトップOffice (iOS および Android) アプリで安全なリンクを使用します。 詳細については、「365 アプリの安全なリンク [設定Office参照してください](atp-safe-links.md#safe-links-settings-for-office-365-apps)。|
-|**ユーザーが [安全なリンク] をクリックしても追跡しない** <p> _TrackClicks_|オン <p> `$false`|オフ <p> `$true`|オフ <p> `$true`|この設定をオフにすると _(TrackClicks_ を設定)、サポートされている 365 アプリでユーザー Office `$true` 追跡します。|
+|**ユーザーが [安全なリンク] をクリックしても追跡しない** <p> _TrackClicks_|オン <p> `$false`|オフ <p> `$true`|オフ <p> `$true`|この設定をオフにする _(TrackClicks_ を設定する) と、サポートされている `$true` 365 アプリOfficeを追跡します。|
 |**ユーザーが元の URL への安全なリンクをクリックさせない** <p> _AllowClickThrough_|オン <p> `$false`|オン <p> `$false`|オン <p> `$false`|この設定 _(AllowClickThrough を AllowClickThrough_ に設定) をオンにすると、サポートされている 365 アプリの元の `$false` URL Officeクリックスルーされません。|
 |
 
@@ -246,7 +246,7 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](https://docs.mic
 |**メッセージを配信する前に URL のスキャンが完了するのを待つ** <p> _DeliverMessageAfterScan_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**組織内で送信される電子メール メッセージに安全なリンクを適用する** <p> _EnableForInternalSenders_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**ユーザーのクリックを追跡しない** <p> _DoNotTrackUserClicks_|オフ <p> `$false`|オフ <p> `$false`|オフ <p> `$false`|この設定 _(DoNotTrackUserClicks_ を設定) をオフにすると、ユーザーの `$false` クリックが追跡されます。|
-|**ユーザーがクリックして元の URL にアクセスできない** <p> _DoNotAllowClickThrough_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`|この設定 _(DoNotAllowClickThrough_ を設定) をオンにすると、元の URL へのクリック `$true` スルーが禁止されます。|
+|**ユーザーがクリックスルーして元の URL にアクセスできない** <p> _DoNotAllowClickThrough_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`|この設定 _(DoNotAllowClickThrough_ を設定) をオンにすると、元の URL へのクリック `$true` スルーが禁止されます。|
 |
 
 ### <a name="safe-attachments-settings"></a>安全な添付ファイルの設定
@@ -268,7 +268,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](https://docs.mi
 |**安全なドキュメントでファイルが悪意のあるものとして識別された場合でも、ユーザーが保護ビューをクリックできる** <p> _AllowSafeDocsOpen_|オフ <p> `$false`|オフ <p> `$false`|この設定は、安全なドキュメントに関連しています。|
 |
 
-#### <a name="safe-attachments-policy-settings"></a>安全な添付ファイル ポリシー設定
+#### <a name="safe-attachments-policy-settings"></a>安全な添付ファイルポリシーの設定
 
 これらの設定を構成するには、「Defender で安全な添付ファイル ポリシーをセットアップする(Office [365)」を参照](set-up-atp-safe-attachments-policies.md)してください。
 
@@ -283,15 +283,15 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](https://doc
 |---|:---:|:---:|:---:|---|
 |**「安全な添付ファイル」の不明なマルウェアの応答** <p> _操作_|ブロック <p> `Block`|ブロック <p> `Block`|ブロック <p> `Block`||
 |**検出時に添付ファイルをリダイレクト** する: **リダイレクトを有効にする** <p> _リダイレクト_ <p> _RedirectAddress_|オフ。電子メール アドレスは指定されていません。 <p> `$true` <p> なし|オンにし、メール アドレスを指定します。 <p> `$true` <p> メール アドレス|オンにし、メール アドレスを指定します。 <p> `$true` <p> メール アドレス|確認のためにメッセージをセキュリティ管理者にリダイレクトします。|
-|**添付ファイルのマルウェア スキャンがタイム アウトまたはエラーが発生した場合は、上記の選択を適用します。** <p> _ActionOnError_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
+|**添付ファイルのマルウェア スキャンがタイム アウトした場合やエラーが発生した場合は、上記の選択を適用します。** <p> _ActionOnError_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |
 
 ## <a name="related-articles"></a>関連記事
 
-- Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) のベスト **プラクティスをお探しですか**? [Exchange Online でメール フロー ルールを構成するためのベスト プラクティスを参照してください](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
+- Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) のベスト **プラクティスをお探しの** 場合 [Exchange Online でメール フロー ルールを構成するためのベスト プラクティスを参照してください](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
 
 - 管理者とユーザーは、分析のために誤検知 (良いメールが悪いとマークされている) と偽陰性 (許可された悪いメール) を Microsoft に送信できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-- EOP サービスをセットアップする方法、および[365](set-up-your-eop-service.md)用に Microsoft Defender を構成する方法については[、Officeしてください](office-365-atp.md)。 [「365 年 365](protect-against-threats.md)日の脅威から保護する」の役立つOffice忘れないでください。
+- [EOP](set-up-your-eop-service.md)サービスのセットアップ方法、および[365 年 365](office-365-atp.md)日に Microsoft Defender を構成する方法については、次Officeしてください。 [「365 年 365](protect-against-threats.md)日の脅威から保護する」の役立つOffice忘れないでください。
 
-- **Windows** のセキュリティ基本計画は、次の場所にあります。セキュリティベースラインはどこで取得できますか [?GPO/](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) オンプレミス オプションの場合、セキュリティベースラインを使用して Intune で Intune ベースのセキュリティ用 [に Windows 10](https://docs.microsoft.com/intune/protect/security-baselines) デバイスを構成します。 最後に、Microsoft Defender for Endpoint と Microsoft Intune のセキュリティ基本計画の比較については [、「Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)と Windows Intune のセキュリティベースラインを比較する」を参照してください。
+- **Windows** のセキュリティベースラインは、次の場所にあります。セキュリティベースラインはどこで取得できますか [?GPO/](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) オンプレミス オプションの場合、セキュリティベースラインを使用して Intune で Intune ベースのセキュリティ用に [Windows 10](https://docs.microsoft.com/intune/protect/security-baselines) デバイスを構成します。 最後に、Microsoft Defender for Endpoint と Microsoft Intune のセキュリティベースラインの比較については [、「Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)と Windows Intune のセキュリティベースラインを比較する」を参照してください。

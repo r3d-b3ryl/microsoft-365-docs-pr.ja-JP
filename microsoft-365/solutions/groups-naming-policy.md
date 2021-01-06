@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Microsoft 365 グループの名前付けポリシーを作成する方法について説明します。
-ms.openlocfilehash: 9bc0a4c7e1ae6ad532c97b442a2bc50880a942fc
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: acf660375508760bd2e9874a07454709849929b0
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698677"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759826"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 グループの名前付けポリシー
 
 グループの名前付けポリシーを使用して、組織内のユーザーによって作成されたグループに対して一貫した名前付け戦略を適用できます。 名前付けポリシーにより、お客様とユーザーがグループの機能、メンバーシップ、地域、グループの作成者を特定できるようになります。 名前付けポリシーは、アドレス帳のグループの分類にも役立ちます。 ポリシーを使用して、特定の単語をグループの名前やエイリアスで使われないようにブロックすることができます。
 
-名前付けポリシーは、すべてのグループワークロード (Outlook、Microsoft Teams、SharePoint、Planner、Yammerなど) 全体で作成されるグループに適用されます。 グループ名とグループのエイリアスの両方に適用されます。 名前付けポリシーは、ユーザーによるグループの作成時、または既存のグループのグループ名やエイリアスの編集時に適用されます。
+名前付けポリシーは、すべてのグループワークロード (Outlook、Microsoft Teams、SharePoint、Planner、Yammerなど) 全体で作成されたグループに適用されます。 グループ名とグループのエイリアスの両方に適用されます。 また、ユーザーがグループを作成し、既存のグループのグループ名、エイリアス、説明、またはアバターを編集するときにも適用されます。
 
 > [!TIP]
 > Microsoft 365 グループの名前付けポリシーは、Microsoft 365 グループにのみ適用されます。 Exchange Online で作成された配布グループには適用されません。 配布グループの名前付けポリシーを作成するには、「配布グループの名前付け [ポリシーを作成する」を参照してください](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
@@ -51,7 +51,7 @@ Microsoft 365 グループの Azure AD 名前付けポリシーを使用する�
 
 ### <a name="fixed-strings"></a>固定文字列
 
-GAL 内のグループを区別し、グループ ワークロードの左側のナビゲーションに役立つ短い文字列を使用できます。 一般的なプレフィックスサフィックスの一部は、'Grp \_ Name' 、 ' \# Name'、 ' \_ Name' のようなキーワードです。
+短い文字列を使用すると、グループ ワークロードの GAL および左側のナビゲーションでグループを区別するのに役立ちます。 一般的なプレフィックスサフィックスの一部は、'Grp \_ Name' 、 ' \# Name'、 ' \_ Name' のようなキーワードです。
 
 ### <a name="attributes"></a>属性
 
@@ -63,7 +63,7 @@ GAL 内のグループを区別し、グループ ワークロードの左側の
 - User's department = Engineering
 - Created group name = "GRP My Group Engineering"
 
-サポートされている Azure Active Directory (Azure AD) の属性は、[Department]、[Company]、[Office]、[StateOrProvince]、[CountryOrRegion]、および [Title] です。
+サポートされている Azure Active Directory (Azure AD) 属性は、[Department]、[Company]、[Office]、[StateOrProvince]、[CountryOrRegion]、および [Title] です。
 
 - サポートされていないユーザー属性は固定文字列と見なされます (例: [postalCode])。
 
@@ -102,7 +102,7 @@ GAL 内のグループを区別し、グループ ワークロードの左側の
 
 - ブロックする単語で使用する文字に制限はありません。
 
-- ブロックする単語として設定できる単語は 5,000 語に制限されています。
+- ブロックする単語として設定できる単語は 5000 語に制限されています。
 
 ## <a name="admin-override"></a>管理者による上書き
 
@@ -120,7 +120,7 @@ GAL 内のグループを区別し、グループ ワークロードの左側の
 
 名前付けポリシーを設定するには:
 
-1. [Azure Active Directory の [管理] で](https://aad.portal.azure.com)、[**グループ**] を **クリックします**。
+1. [Azure Active Directory の [管理]](https://aad.portal.azure.com)で、[**グループ**] を **クリックします**。
 2. [設定 **] で**、[名前付けポリシー] **をクリックします**。
 3. [グループの **名前付けポリシー] タブを選択** します。
 4. [ **現在のポリシー**] で、プレフィックスまたはサフィックスの両方を必要とするか選択し、適切なチェック ボックスをオンにします。

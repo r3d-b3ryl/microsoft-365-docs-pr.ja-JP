@@ -1,6 +1,6 @@
 ---
-title: 電子メール保護の順序と優先順位
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
+title: メール保護の順序と優先順位
+keywords: セキュリティ, マルウェア, Microsoft 365, M365, セキュリティ センター, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,64 +15,64 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) での保護の順序、および保護ポリシーの優先度の値によってどのようなポリシーが適用されるかを調べることができます。
-ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+description: 管理者は、Exchange Online Protection (EOP) の保護のアプリケーションの順序、および保護ポリシーの優先度の値によって適用されるポリシーがどのように決定されるのかについて説明します。
+ms.openlocfilehash: a18234344e1100f3b6a03c10e970c8195e53e7df
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349270"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760568"
 ---
-# <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
+# <a name="order-and-precedence-of-email-protection"></a>メール保護の順序と優先順位
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Exchange online またはスタンドアロンの exchange Online Protection (EOP) 組織にメールボックスがあり、Exchange online メールボックスを使用していない場合、受信電子メールに複数の形式の保護によるフラグが設定されることがあります。365 たとえば、EOP の組み込みのフィッシング対策ポリシーは、すべての Microsoft 365 ユーザーが利用でき、Microsoft Defender for Office 365 のお客様が利用できる、より堅牢なフィッシング対策ポリシーです。 メッセージも、マルウェア、スパム、フィッシングなどの複数の検出スキャンを通過します。このアクティビティがすべて与えられた場合、どのポリシーが適用されるかについて混乱が生じることがあります。
+Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、受信電子メールに複数の形式の保護のフラグが設定される場合があります。 たとえば、すべての Microsoft 365 ユーザーが利用できる EOP の組み込みのフィッシング対策ポリシーや、Office 365 のお客様が Microsoft Defender で利用できるより堅牢なフィッシング対策ポリシーなどです。 メッセージは、マルウェア、スパム、フィッシングなどの複数の検出スキャンも通過します。このすべてのアクティビティを考えると、どのポリシーが適用されるのかについて、混乱が生じる可能性があります。
 
-一般に、メッセージに適用されるポリシーは、 **CAT (Category)** プロパティの **スパム対策** ヘッダー内で識別されます。 詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
+一般に、メッセージに適用されるポリシーは **、CAT (Category)** プロパティの **X-Forefront-Antispam-Report** ヘッダーで識別されます。 詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
 
-メッセージに適用されるポリシーを決定する主な要因は2つあります。
+メッセージに適用されるポリシーを決定する主な要因は 2 種類です。
 
-- **電子メール保護の種類の優先度**: この順序は構成できず、次の表に記載されています。
+- **電子メール保護の種類の優先度**: この順序は構成できません。次の表で説明します。
 
   ****
 
-  |Priority|電子メール保護|カテゴリ|管理対象|
+  |Priority|電子メール保護|カテゴリ|管理する場所|
   |---|---|---|---|
-  |1-d|マルウェア|CAT: 男性 W|[EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
-  |pbm-2|フィッシング|CAT: PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |1/3|高確度スパム|CAT: HSPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |4 |スプーフィング|CAT: スプーフィング|[EOP でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|ユーザー偽装 (保護されたユーザー)|UIMP|[Office 365 の Microsoft Defender でフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
-  |シックス<sup>\*</sup>|ドメイン偽装 (保護されたドメイン)|DIMP|[Office 365 の Microsoft Defender でフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
-  |7 |スパム|CAT: SPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |8 |バルク|CAT: BULK|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |1 |マルウェア|CAT:MALW|[EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
+  |2 |フィッシング|CAT:PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |3 |高確度スパム|CAT:HSPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |4 |スプーフィング|CAT:SPOOF|[EOP でスプーフィング インテリジェンスを構成する](learn-about-spoof-intelligence.md)|
+  |5<sup>\*</sup>|ユーザー偽装 (保護されたユーザー)|UIMP|[Microsoft Defender でフィッシング対策ポリシーを構成する (Office 365)](configure-atp-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|ドメイン偽装 (保護されたドメイン)|DIMP|[Microsoft Defender でフィッシング対策ポリシーを構成する (Office 365)](configure-atp-anti-phishing-policies.md)|
+  |7 |スパム|CAT:SPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |8 |バルク|CAT:BULK|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> これらの機能は、Microsoft Defender for Office 365 のフィッシング対策ポリシーでのみ利用可能です。
+  <sup>\*</sup> これらの機能は、Microsoft Defender for Office 365 のフィッシング対策ポリシーでのみ使用できます。
 
-- **ポリシーの優先度**: 各保護の種類 (スパム対策、マルウェア対策、フィッシング詐欺対策など) について、すべてのユーザーに適用される既定のポリシーがありますが、特定のユーザーに適用するカスタムポリシーを作成することもできます。 各カスタムポリシーには、ポリシーが適用される順序を決定する優先順位の値があります。 既定のポリシーは常に最後に適用されます。
+- ポリシーの **優先度:** 保護の種類 (スパム対策、マルウェア対策、フィッシング対策など) ごとに、すべてのユーザーに適用される既定のポリシーがありますが、特定のユーザーに適用されるカスタム ポリシーを作成できます。 各カスタム ポリシーには、ポリシーの適用順序を決定する優先順位の値があります。 既定のポリシーは常に最後に適用されます。
 
-  ユーザーが同じ種類の複数のポリシーで定義されている場合、優先度の高いポリシーのみが適用されます。 その種類の残りのポリシーは、ユーザーに対して評価されません (既定のポリシーを含む)。
+  ユーザーが同じ種類の複数のポリシーで定義されている場合は、優先度が最も高いポリシーだけがポリシーに適用されます。 その種類の残りのポリシーは、ユーザーに対して評価されません (既定のポリシーを含む)。
 
-たとえば、 **同じユーザーに適用される** Microsoft Defender for Office 365 の次のフィッシング対策ポリシーと、ユーザーの偽装とスプーフィングの両方として識別されるメッセージを考えてみます。
+たとえば、同じユーザーに適用される Office 365 用の Microsoft Defender の次のフィッシング対策ポリシーと、ユーザー偽装とスプーフィングの両方として識別されるメッセージについて考えてみることができます。
 
   ****
 
   |[ポリシー名]|Priority|ユーザー偽装|スプーフィング対策|
   |---|---|---|---|
-  |ポリシー A|1-d|オン|オフ|
-  |ポリシー B|pbm-2|オフ|オン|
+  |ポリシー A|1 |オン|オフ|
+  |ポリシー B|2 |オフ|オン|
   |
 
-1. スプーフィングは、ユーザー偽装 (8) よりも優先度が高いため、メッセージはスプーフィングとしてマークされ、スプーフィングとして扱われます。
-2. ポリシー A は、ポリシー B よりも優先度が高いため、ユーザーに適用されます。
-3. ポリシーでスプーフィング対策がオフになっているため、ポリシー A の設定に基づいて、メッセージに対してアクションは何も実行されません。
-4. ポリシーの処理は停止するため、ポリシー B がユーザーに適用されることはありません。
+1. スプーフィングはユーザー偽装 (5) よりも優先度 (4) が高いので、メッセージはスプーフィングとしてマークされ、処理されます。
+2. ポリシー A はポリシー B よりも優先度が高いので、ユーザーに適用されます。
+3. ポリシー A の設定に基づいて、スプーフィング対策がポリシーでオフになっているため、メッセージに対してアクションは実行されません。
+4. ポリシー処理が停止し、ポリシー B がユーザーに適用されません。
 
-同じユーザーが同じ種類の複数のカスタムポリシーに故意または誤って含まれている可能性があるので、次のようなカスタムポリシーの設計ガイドラインを使用します。
+同じユーザーが同じ種類の複数のカスタム ポリシーに意図的または意図せず含まれている可能性があります。カスタム ポリシーの設計ガイドラインは次のとおりです。
 
-- 少数のユーザーに適用されるポリシーにより高い優先度を割り当て、多数のユーザーに適用されるポリシーに対する優先順位を低くします。 既定のポリシーは常に最後に適用されることに注意してください。
-- より優先度の高いポリシーを構成して、優先度の低いポリシーよりも厳密に特殊化された設定にします。
-- より少ないカスタムポリシーを使用することを検討してください (厳密な設定を必要とするユーザーにはカスタムポリシーのみを使用します)。
+- 少ない数のユーザーに適用するポリシーに高い優先度を割り当て、多数のユーザーに適用するポリシーに低い優先度を割り当てる。 既定のポリシーは常に最後に適用されます。
+- 優先度の高いポリシーを、優先度の低いポリシーよりも厳密な設定またはより特殊な設定に構成します。
+- 使用するカスタム ポリシーの数を少なくする (より厳密な設定またはより特殊な設定を必要とするユーザーに対してだけカスタム ポリシーを使用する) の使用を検討します。

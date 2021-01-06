@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender サービスに関する問題のトラブルシューティング
-description: 既知の Microsoft 365 Defender に関する問題の解決策と回避策を見つける
-keywords: Microsoft の脅威保護、トラブルシューティング、Azure ATP、問題、アドオン、設定ページのトラブルシューティング
+title: Microsoft 365 Defender サービスの問題のトラブルシューティング
+description: 既知の Microsoft 365 Defender の問題に対する解決策と回避方法を見つける
+keywords: Microsoft Threat Protection のトラブルシューティング, トラブルシューティング, Azure ATP, 問題, アドオン, 設定ページ
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 16cb1116f400c8d0a83ccc4cac23da06cd1be2a4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b7b6ea55d084c114b79dfee0e061b09c8ede8632
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844670"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760460"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender サービスに関する問題のトラブルシューティング
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender サービスの問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,20 +34,20 @@ ms.locfileid: "48844670"
 **適用対象:**
 - Microsoft 365 Defender
 
-このセクションでは、Microsoft 365 Defender サービスの使用時に発生する可能性のある問題について取り上げます。
+このセクションでは、Microsoft 365 Defender サービスを使用する際に発生する可能性のある問題について説明します。
 
+## <a name="i-dont-see-microsoft-365-defender-content"></a>Microsoft 365 Defender コンテンツが表示できない
 
-## <a name="i-dont-see-microsoft-365-defender-content"></a>Microsoft 365 Defender コンテンツが表示されない
-ポータルでインシデント、アクションセンター、探している機能など、ナビゲーションウィンドウに機能が表示されない場合は、テナントに適切なライセンスがあることを確認する必要があります。 
+ポータルのインシデント、アクション センター、検索などの機能がナビゲーション ウィンドウに表示されていない場合は、テナントに適切なライセンスが割り当てらたっている必要があります。
 
 詳細については、「[前提条件](prerequisites.md)」をご覧ください。
 
-## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender の Id 通知は Microsoft 365 Defender インシデントに表示されません。
-お客様の環境に展開されている Id に対して Microsoft Defender を使用しているが、Microsoft 365 Defender インシデントの一部として Id 通知の Defender が表示されていない場合は、Microsoft Cloud App Security と Identity 統合の Defender が有効になっていることを確認する必要があります。 
+## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft 365 Defender のインシデントで、Id 用 Microsoft Defender のアラートが表示されない
 
-詳細については、「 [id 統合のための Microsoft Defender](https://docs.microsoft.com/cloud-app-security/aatp-integration)」を参照してください。
+環境に Microsoft Defender for Identity が展開されているが、Microsoft 365 Defender インシデントの一部として Id 用 Defender のアラートが表示されない場合は、Microsoft Cloud App Security と Defender for Identity の統合が有効になっている必要があります。
 
-## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>サービスをオンにするための設定ページはどこにありますか。
-Microsoft 365 Defender を有効にするには、Microsoft 365 セキュリティセンターのナビゲーションウィンドウの **設定** にアクセスします。 このナビゲーション項目は、 [必要なアクセス許可とライセンス](mtp-enable.md#check-license-eligibility-and-required-permissions)がある場合にのみ表示されます。
- 
+詳しくは [、Id 統合のための Microsoft Defender に関するページをご覧ください](https://docs.microsoft.com/cloud-app-security/mdi-integration)。
 
+## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>サービスを有効にする設定ページの場所
+
+Microsoft 365 Defender を有効にする場合は、Microsoft 365 セキュリティ センターのナビゲーション ウィンドウから [設定] にアクセスします。 このナビゲーション アイテムは、必要なアクセス許可とライセンスを持 [っている場合にのみ表示されます](mtp-enable.md#check-license-eligibility-and-required-permissions)。

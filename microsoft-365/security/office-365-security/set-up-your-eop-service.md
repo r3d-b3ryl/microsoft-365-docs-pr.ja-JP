@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) をセットアップして、オンプレミスの電子メール環境を保護する方法について説明します。
-ms.openlocfilehash: 2d63057e77e6965616e19452de824a94ba0ccda8
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: ca95f7dce30e8e751e293bf4e5de9caf0c845d29
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659419"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760496"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>スタンドアロン EOP サービスをセットアップする
 
@@ -37,11 +37,11 @@ ms.locfileid: "49659419"
 
 - このタスクの予想所要時間:1 時間
 
-- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理 **(グローバル** 管理者) 役割グループとメール フロー管理者役割グループに割り当てられる"Remote **and Accepted Domains/** リモートドメインと承認されたドメイン" 役割が必要です。  詳細については、「スタンドアロン [EOP のアクセス許可](feature-permissions-in-eop.md) 」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理 **(グローバル** 管理者) 役割グループとメール フロー管理者役割グループに割り当てられる"Remote **and Accepted Domains/** リモートドメインと承認されたドメイン" 役割が必要です。  詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - EOP に登録にしていない場合は、「[Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)」にアクセスして、サービスを購入するか、試用してみてください。
 
-- この記事の手順に適用されるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
+- この記事の手順に適用できるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
 
 > [!TIP]
 > 問題が発生する場合 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) フォーラムでサポートをご依頼ください。
@@ -100,4 +100,4 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 > [!TIP]
 > セットアップが完了したら、EOP がスパムやマルウェアを削除するために追加の手順を実行する必要がなくなります。 EOP はスパムやマルウェアを自動的に削除します。 ただし、ビジネス要件に基づいて設定を微調整できます。 詳細については、「Office [365](anti-spam-and-anti-malware-protection.md) でのスパム対策とマルウェア対策の保護」および「スプーフィング インテリジェンス [の構成」を参照してください](learn-about-spoof-intelligence.md)。
 >
-> サービスが実行されたので、EOP を構成するためのベスト プラクティスを読んでお勧めします [。EOP](best-practices-for-configuring-eop.md)をセットアップした後の推奨設定と考慮事項について説明します。
+> サービスが実行されたので、EOP を構成するためのベスト プラクティスを読んでお勧めします [。EOP](best-practices-for-configuring-eop.md)をセットアップした後の推奨設定と考慮事項について説明しています。
