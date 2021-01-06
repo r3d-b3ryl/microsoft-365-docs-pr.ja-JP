@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 96e9159f3228fb6b7725f2f0d6eb515b108bc32e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787524"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751503"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -56,14 +56,14 @@ ms.locfileid: "48787524"
 > [!IMPORTANT]
 > [グローバル管理者](../add-users/about-admin-roles.md)のみ次の手順を実行できます。
   
-1. 管理センターで、[ **設定** ] \> [ **組織の設定** ] の順に移動します。
+1. 管理センターで、[**設定**] \> [**組織の設定**] の順に移動します。
 
 2. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">セキュリティとプライバシー</a>] ページに移動します。
  グローバル管理者でない場合は、[セキュリティとプライバシー] オプションは表示されません。
   
-3. [ **パスワードの有効期限ポリシー** ] を選択します。
+3. [**パスワードの有効期限ポリシー**] を選択します。
   
-4. ユーザーがパスワードを変更する必要がないようにするには、[ **数日後にユーザーのパスワードが期限切れになるように設定する** ] の横のチェックボックスを選択します。
+4. ユーザーがパスワードを変更する必要がないようにするには、[**数日後にユーザーのパスワードが期限切れになるように設定する**] の横にあるチェックボックスをオフにします。
   
 5. パスワードの有効期限が切れる頻度を入力します。 14 〜 730 の日数を選択します。
   

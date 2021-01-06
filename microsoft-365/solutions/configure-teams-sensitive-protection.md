@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 16c4ceedcafee02ca5d168cc70fc61bb8d01fc72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612954"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750789"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -58,17 +58,21 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)を開きます。
 2. **[ソリューション]** で、**[情報保護]** をクリックします。
 3. **[ラベルの作成]** をクリックします。
-4. ラベルに名前を付けます。 **sensitive** をお勧めしますが、既に使用されている別の名前を選択することもできます。
-5. ツール ヒントを追加し、**[次へ]** をクリックします。
-6. **[暗号化]** ページで、**[次へ]** をクリックします。
-7. このラベルで分類されているファイルにヘッダー、フッター、またはウォーターマークを自動的に追加するには、**[コンテンツのマーキング]** ページで、[コンテンツのマーキング] を有効にします。
-8. **[サイトとグループの設定]** ページで、**[サイトとグループの設定]** を **[オン]** に設定します。
-9. **[Office 365 グループに接続されているチーム サイトのプライバシー]** ドロップダウンで、**[非公開 - メンバーのみがサイトにアクセス可能]** を選びます。
-10. ゲスト アクセスを許可する場合は、**[Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする**] チェック ボックスを選択します。 
-11. **[非管理対象デバイス]** で、**[制限付きの、Web のみのアクセスを許可する]** を選びます。
+4. ラベルに名前を付けます。 **Sensitive** をお勧めしますが、既に使用されている別の名前を選択することもできます。
+5. 表示名と説明を追加し、**[次へ]** をクリックします。
+6. **Define the scope for this label** (このラベルの範囲の定義) ページで、**[Files & emails]** (ファイルとメール) と **[Groups & sites]** (グループとサイト) を選択し、**[次へ]** をクリックします。
+7. **[Choose protection settings for files and emails]** (ファイルやメールの保護の設定の選択) ページで、**[次へ]** をクリックします。
+8. *[ファイルやメールの自動ラベル付け]* ページで、**[次へ]** をクリックします。
+9. **[Define protection settings for groups and sites]** (グループやサイトの保護の設定の定義) ページで、**[プライバシーと外部ユーザー アクセス設定]** と **[デバイス アクセスと外部共有設定]** を選択し、**[次へ]** をクリックします。
+10. **[Define privacy and external user access settings]** (プライバシーと外部ユーザー アクセス設定の定義) ページの **[プライバシー]** で、**[プライベート]** オプションを選択します。
+11. ゲスト アクセスを許可する場合は、**[外部ユーザーのアクセス]** で、**[Let Microsoft 365 Group owners add people outside your organization to the group as guests]** (Microsoft 365 グループ所有者が組織外のユーザーをグループに追加できるようにする) を選択します。
 12. **[次へ]** をクリックします。
-13. **[Office アプリの自動ラベル付け]** ページで、**[次へ]** をクリックします。
-14. **[送信]** をクリックしてから、**[完了]** をクリックします。
+13. **[Define external sharing and device access settings]** (外部共有とデバイス アクセス設定の定義) ページで、**[Control external sharing from labeled SharePoint sites]** (ラベル付き SharePoint サイトからの外部共有の制御) を選択します。
+14. **[Content can be shared with]** (コンテンツの共有先) で、ゲスト アクセスを許可する場合には **[新規および既存のゲスト]** を選択し、許可しない場合には **[組織内のユーザーのみ]** を選択します。
+15. **[非管理対象デバイスからのアクセス]** で、**[制限付きの、Web のみのアクセスを許可する]** を選びます。
+16. **[次へ]** をクリックします。
+17. **[Auto-labeling for database columns]** (データベースの列の自動ラベル付け) ページで、**[次へ]** をクリックします。
+18. **[ラベルの作成]** をクリックし、**[完了]** をクリックします。
 
 ラベルを作成したら、それを使用するユーザーに発行する必要があります。 機密保護のために、すべてのユーザーがラベルを使用できるようにします。 **[情報保護]** ページの [**ラベルポリシー**] タブで、ラベルを Microsoft 365 コンプライアンス センターに発行します。 すべてのユーザーに適用する既存のポリシーがある場合は、そのポリシーにこのラベルを追加します。 新しいポリシーを作成する必要がある場合は、「[ラベル ポリシーを作成して秘密度ラベルを発行する](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)」をご覧ください。
 
