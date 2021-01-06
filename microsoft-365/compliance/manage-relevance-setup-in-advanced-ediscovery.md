@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
+ROBOTS: NOINDEX, NOFOLLOW
 description: ファイルをそれぞれの関連度でスコアリングして分析結果を生成するには、Advanced eDiscovery で関連度トレーニングを設定するための推奨事項を参照してください。
-ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 8ba09babc91f233514cd0195c3e1da08b07ccb3c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662872"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760211"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Advanced eDiscovery (クラシック) で関連度の設定を管理する
 
@@ -69,15 +70,4 @@ ms.locfileid: "49662872"
 
 - 慎重に問題を定義して編成してください。関連度トレーニングの結果に影響を及ぼす可能性があるからです。
 
-パラメーターの設定後、レビュー担当者/エキスパートは **[関連度]** タブでファイルのトレーニングを開始できます。 
-  
-## <a name="see-also"></a>関連項目
-
-[Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
-  
-[問題の定義とユーザーの割り当て](define-issues-and-assign-users.md)
-  
-[インポートしたファイルを追加するためのロードの設定](set-up-loads-to-add-imported-files.md)
-  
-[強調表示されたキーワードと詳細オプションの定義](define-highlighted-keywords-and-advanced-options.md)
-
+パラメーターの設定後、レビュー担当者/エキスパートは **[関連度]** タブでファイルのトレーニングを開始できます。
