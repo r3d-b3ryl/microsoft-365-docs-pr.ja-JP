@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
-ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: bcf1c0b3dc0a1a8dd8a679af815fbdc2173cabb7
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615338"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759858"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -35,7 +35,7 @@ Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https:/
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>SPF と DMARC が連携して Microsoft 365 の電子メールを保護するしくみ
 
- 電子メール メッセージには、発信者、送信者、またはアドレスが含まれていることがあります。 これらのアドレスは、さまざまな目的に使用できます。 たとえば、次のアドレスについて考えてみましょう。
+ メール メッセージには、複数の発信者や送信者のアドレスが含まれている場合があります。 これらのアドレスは、さまざまな目的に使用できます。 たとえば、次のアドレスについて考えてみましょう。
 
 - **「Mail From」アドレス**: 送信者を識別し、メッセージの配信に問題が発生した場合に、配信不能通知などの通知の返送先を指定します。 これは電子メール メッセージのエンベロープ部分に表示されます。通常、ユーザーの電子メール アプリケーションには表示されません。 これは、5321.MailFrom アドレスまたはリバース パス アドレスとも呼ばれます。
 
@@ -194,13 +194,13 @@ DMARC は、メール フローの他の部分に影響を与えないように�
 
 4. サブドメイン用に DMARC を設定する方法
 
-DMARC は、ポリシーを DNS の TXT レコードとして公開することで実装され、階層的です (たとえば、contoso.com に公開されたポリシーは、サブドメインに別のポリシーが明示的に定義されていない限り、sub.domain.contonos.com に適用されます)。 これは、より広い範囲をカバーするために、より少ない数の高レベル DMARC レコードを指定できる場合があるため、便利です。 サブドメインがトップ レベル ドメインの DMARC レコードを継承しないようにするには、明示的なサブドメイン DMARC レコードを構成するように注意する必要があります。
+   DMARC は、ポリシーを DNS の TXT レコードとして公開することで実装され、階層的です (たとえば、contoso.com に公開されたポリシーは、サブドメインに別のポリシーが明示的に定義されていない限り、sub.domain.contonos.com に適用されます)。 これは、より広い範囲をカバーするために、より少ない数の高レベル DMARC レコードを指定できる場合があるため、便利です。 サブドメインがトップ レベル ドメインの DMARC レコードを継承しないようにするには、明示的なサブドメイン DMARC レコードを構成するように注意する必要があります。
 
-また、`sp=reject` 値を追加することにより、サブドメインがメールを送信してはならないときに DMARC にワイルドカード タイプのポリシーを追加できます。 例:
+   また、`sp=reject` 値を追加することにより、サブドメインがメールを送信してはならないときに DMARC にワイルドカード タイプのポリシーを追加できます。 例:
 
-```console
-_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
-```
+   ```text
+   _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+   ```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Microsoft 365 が DMARC に失敗した送信メールを処理する方法
 
