@@ -18,22 +18,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
-description: コンテンツ検索のアクセス許可フィルターを使用して、電子情報開示マネージャーが組織内のメールボックスとサイトのサブセットのみを検索できるようにします。
+description: 電子情報開示マネージャーが組織内のメールボックスとサイトのサブセットのみを検索するには、コンテンツ検索のアクセス許可フィルターを使用します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28afbf65678e74e087365518bd07ceaae0e40e8a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 5abf50988f40a3de833583543beb3b1c49e4e520
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358549"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777090"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>コンテンツ検索用にアクセス許可フィルターを設定する
 
-検索アクセス許可フィルターを使用して、電子情報開示マネージャーが組織内のメールボックスとサイトのサブセットのみを検索できるようにすることができます。 また、アクセス許可のフィルター処理を使用して、同じ電子情報開示管理者に特定の検索条件を満たすメールボックスやサイトのコンテンツのみを検索させることができます。 たとえば、電子情報開示管理者に特定の場所または部門のユーザーのメールボックスのみを検索させるようにすることができます。 これを行うには、サポートされている受信者フィルターを使用して、特定のユーザーまたはユーザーグループが検索できるメールボックスを制限するフィルターを作成します。 また、ユーザーが検索できるメールボックスの内容を指定するフィルターを作成することもできます。 これは、検索可能なメッセージ プロパティを使用するフィルターを作成することで行います。 同様に、電子情報開示マネージャーが組織内の特定の SharePoint サイトのみを検索できるようにすることもできます。 これは、検索可能なサイトを限定するフィルターを作成することで行います。 検索可能なサイトのコンテンツを指定するフィルターを作成することもできます。 これは、検索可能なサイト プロパティを使用するフィルターを作成することで行います。
+検索アクセス許可フィルターを使用すると、電子情報開示マネージャーが組織内のメールボックスとサイトのサブセットのみを検索できます。 また、アクセス許可のフィルター処理を使用して、同じ電子情報開示管理者に特定の検索条件を満たすメールボックスやサイトのコンテンツのみを検索させることができます。 たとえば、電子情報開示管理者に特定の場所または部門のユーザーのメールボックスのみを検索させるようにすることができます。 これを行うには、サポートされている受信者フィルターを使用して、特定のユーザーまたはユーザー グループが検索できるメールボックスを制限するフィルターを作成します。 また、ユーザーが検索できるメールボックスコンテンツを指定するフィルターを作成できます。 これは、検索可能なメッセージ プロパティを使用するフィルターを作成することで行います。 同様に、電子情報開示マネージャーが組織内の特定の SharePoint サイトのみを検索できます。 これは、検索可能なサイトを限定するフィルターを作成することで行います。 検索可能なサイトのコンテンツを指定するフィルターを作成することもできます。 これは、検索可能なサイト プロパティを使用するフィルターを作成することで行います。
 
-また、検索アクセス許可フィルターを使用して、特定の電子情報開示マネージャーが検索できるユーザーコンテンツの場所 (メールボックス、SharePoint サイト、OneDrive アカウントなど) を制御する、組織内の論理的な境界 ( *コンプライアンス境界*と呼ばれる) を作成することもできます。 詳細については、「[Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する](tagging-and-assessment-in-advanced-ediscovery.md)」を参照してください。
+検索アクセス許可フィルターを使用して、特定の電子情報開示管理者が検索できるユーザー コンテンツの場所 (メールボックス、SharePoint サイト、OneDrive アカウント *など)* を制御する組織内に論理境界 (コンプライアンス境界と呼ばれる) を作成することもできます。 詳細については、「[Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する](tagging-and-assessment-in-advanced-ediscovery.md)」を参照してください。
   
-検索アクセス許可フィルターは、セキュリティ/コンプライアンス センターのコンテンツ検索機能によりサポートされています。 次の4つのコマンドレットを使用すると、検索アクセス許可のフィルターを構成および管理できます。
+検索アクセス許可フィルターは、セキュリティ/コンプライアンス センターのコンテンツ検索機能によりサポートされています。 次の 4 つのコマンドレットを使用すると、検索アクセス許可フィルターを構成および管理できます。
   
 [New-ComplianceSecurityFilter](#new-compliancesecurityfilter)
 
@@ -43,92 +43,82 @@ ms.locfileid: "47358549"
 
 [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
-## <a name="requirements-to-configure-permissions-filtering"></a>アクセス許可のフィルターを構成するための要件
+## <a name="requirements-to-configure-permissions-filtering"></a>アクセス許可フィルターを構成するための要件
 
 - コンプライアンス セキュリティ フィルターのコマンドレットを実行するには、セキュリティ/コンプライアンス センターの組織管理の役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)」を参照してください。
-    
-- コンプライアンス セキュリティ フィルターのコマンドレットを使用するには、Windows PowerShell をセキュリティ/コンプライアンス センターとお客様の Exchange Online 組織の両方に接続する必要があります。 これらのコマンドレットはメールボックスのプロパティへのアクセスを必要とするため、Exchange Online に接続する必要があります。 手順については、次のセクションを参照してください。 
-    
-- アクセス許可の検索フィルターの詳細については、「[More information](#more-information)」セクションを参照してください。 
-    
-- 検索アクセス許可のフィルター処理は、非アクティブなメールボックスに適用されます。つまり、メールボックスとメールボックス コンテンツのフィルター処理を使用して、非アクティブなメールボックスを検索できるユーザーを制限することができます。 アクセス許可のフィルター処理と非アクティブなメールボックスの詳細については、「[詳細情報](#more-information)」のセクションを参照してください。 
-    
--  検索アクセス許可のフィルター処理は、Exchange のパブリック フォルダーを検索できるユーザーを制限するのに使用することができません。 
-    
-- 組織で作成できる検索アクセス許可フィルターの数に制限はありません。 しかし、100を超える検索アクセス許可のフィルターがある場合は、検索のパフォーマンスが影響を受けます。 検索の検索アクセス許可フィルターの数を出来るだけ少なくするために、可能な限り、Exchange、SharePoint、および OneDrive のルールを 1 つのフィルターに統合するフィルターを作成するようにします。
-    
-## <a name="connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>1 つのリモート PowerShell セッションで、セキュリティ/コンプライアンス センターと Exchange Online に接続する
 
-1. ファイル名サフィックス **. ps1**を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。 たとえば、 **ConnectEXO-CC.ps1**という名前のファイルに保存することができます。
-    
+- コンプライアンス セキュリティ フィルター コマンドレットを使用するには、Exchange Online とセキュリティ & コンプライアンス センター PowerShell の両方に接続する必要があります。 これらのコマンドレットにはメールボックスのプロパティへのアクセスが必要なので、Exchange Online PowerShell に接続する必要があります。 手順については、次のセクションを参照してください。
+
+- アクセス許可の検索フィルターの詳細については、「[More information](#more-information)」セクションを参照してください。
+
+- 検索アクセス許可のフィルター処理は、非アクティブなメールボックスに適用されます。つまり、メールボックスとメールボックス コンテンツのフィルター処理を使用して、非アクティブなメールボックスを検索できるユーザーを制限することができます。 アクセス許可のフィルター処理と非アクティブなメールボックスの詳細については、「[詳細情報](#more-information)」のセクションを参照してください。
+
+- 検索アクセス許可のフィルター処理は、Exchange のパブリック フォルダーを検索できるユーザーを制限するのに使用することができません。
+
+- 組織で作成できる検索アクセス許可フィルターの数に制限はありません。 ただし、検索アクセス許可フィルターが 100 を超える場合は、検索のパフォーマンスに影響します。 検索の検索アクセス許可フィルターの数を出来るだけ少なくするために、可能な限り、Exchange、SharePoint、および OneDrive のルールを 1 つのフィルターに統合するフィルターを作成するようにします。
+
+## <a name="connect-to-exchange-online-and-security--compliance-center-powershell-in-a-single-session"></a>1 つのセッションで Exchange Online & コンプライアンス センター PowerShell に接続する
+
+このセクションのスクリプトを正常に実行するには、Exchange Online PowerShell V2 モジュールをダウンロードしてインストールする必要があります。 詳細については [、「Exchange Online PowerShell V2 モジュールについて」を参照してください](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
+
+1. ファイル名サフィックス .ps1 を使用してWindows PowerShellスクリプト ファイルに次の **テキストを保存します**。 たとえば、このファイルをConnectEXO-SCC.ps1という名前 **のファイルに保存ConnectEXO-SCC.ps1。**
+
     ```powershell
+    Import-Module ExchangeOnlineManagement
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -AllowClobber -DisableNameChecking
+    Connect-ExchangeOnline -Credential $UserCredential
+    Connect-IPPSSession -Credential $UserCredential
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```
 
 2. ローカル コンピューター上で、Windows PowerShell を開き、前の手順で作成したスクリプトが配置されているフォルダーに移動し、スクリプトを実行します。例:
-    
-    ```powershell
-    .\ConnectEXO-CC.ps1
-    ```
-
-これが機能したかどうかを知る方法 スクリプトの実行後に、セキュリティ/コンプライアンス センターと Exchange Online からのコマンドレットは、ローカルの Windows PowerShell セッションにインポートされます。 何もエラーが表示されなければ、正常に接続されています。 クイックテストでは、セキュリティ & コンプライアンスセンターのコマンドレットと Exchange Online コマンドレットを実行します。 たとえば、 **UnifiedCompliancePrerequisite** を実行して、 **メールボックスを取得**することができます。 
-  
-エラーが表示された場合は、次の要件を確認します。
-  
-- よく起きる問題がパスワードの入力ミスです。もう一度 2 つのステップを実行します。特に、ステップ 1 ではユーザー名とパスワードを慎重に入力します。
-    
-- 使用するアカウントに、セキュリティ/コンプライアンス センターにアクセスする権限があることを確認してください。 詳細については、｢[セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
-    
-- サービス拒否 (DoS) 攻撃を防止するため、セキュリティ/コンプライアンス センターに対して開かれるリモート PowerShell 接続は 3 つまでに制限されます。
-    
-- スクリプトを実行するには、Windows PowerShell が構成されている必要があります。 これは、接続するたびにではなく、一度だけ実行する必要があります。 Windows PowerShell で署名されたスクリプトの実行を有効にするには、管理者特権の Windows PowerShell ウィンドウ ( **[管理者として実行]** を選択すると開く Windows PowerShell ウィンドウ) で次のコマンドを実行します。
 
     ```powershell
-    Set-ExecutionPolicy RemoteSigned
+    .\ConnectEXO-SCC.ps1
     ```
 
-- ローカル コンピューターと Office 365 の間に TCP ポート 80 のトラフィックを開く必要があります。 このポートは多くの場合開いているはずですが、組織で厳格なインターネット アクセス ポリシーが使用されている場合は、念のために確認する必要があります。
+これが機能したかどうかを知る方法 スクリプトを実行すると、Exchange Online と Security & Compliance PowerShell のコマンドレットがローカルのユーザー セッションWindows PowerShellされます。 何もエラーが表示されなければ、正常に接続されています。 簡単なテストとして、Exchange Online とセキュリティ センターのコンプライアンス センター&実行します。 たとえば、Get-Mailbox と **Get-ComplianceSearch** **を実行できます**。
 
-  
+PowerShell 接続エラーのトラブルシューティングについては、以下を参照してください。
+
+- [Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
+
+- [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 
-**New-compliancesecurityfilter**を使用して、検索アクセス許可フィルターを作成します。 次の表では、このコマンドレットのパラメーターについて説明します。 コンプライアンス セキュリティ フィルターを作成するには、すべてのパラメーターが必要です。 
+**New-ComplianceSecurityFilter を** 使用して、検索アクセス許可フィルターを作成します。 次の表では、このコマンドレットのパラメーターについて説明します。 コンプライアンス セキュリティ フィルターを作成するには、すべてのパラメーターが必要です。
   
 |**パラメーター**|**説明**|
 |:-----|:-----|
-| _Action_ <br/> | _Action_ パラメーターは、フィルターに適用する検索操作の種類を指定します。 可能なコンテンツ検索操作は次のとおりです。  <br/><br/> **エクスポート:** フィルターは、検索結果をエクスポートするときに適用されます。  <br/> **プレビュー:** フィルターは、検索結果をプレビューするときに適用されます。  <br/> **削除:** フィルターは、検索結果を削除するときに適用されます。  <br/> **検索:** フィルターは、検索を実行するときに適用されます。  <br/> **すべて:** フィルターは、すべての検索操作に適用されます。  <br/> |
-| _FilterName_ <br/> |_FilterName_ パラメーターは、アクセス許可フィルターの名前を指定します。 この名前は、**Get ComplianceSecurityFilter**、**Set-ComplianceSecurityFilter**、および**Remove-ComplianceSecurityFilter** コマンドレットを使用する際に、フィルターを特定するために使用されます。  <br/> |
-| _Filters_ <br/> | _Filters_ パラメーターはコンプライアンス セキュリティ フィルターの検索条件を指定します。 次の 3 つの異なる種類のフィルターを作成できます。  <br/><br/> **メールボックスフィルター処理:** この種類のフィルターでは、(  _users_ パラメーターで指定された) 割り当てられたユーザーが検索できるメールボックスを指定します。 この種類のフィルターの構文は、**Mailbox_** _MailboxPropertyName_ です。_MailboxPropertyName_ は、検索できるメールボックスの範囲を指定するために使用されるメールボックス プロパティを指定します。 たとえば、メールボックスフィルターでは、  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` このフィルターを割り当てられたユーザーが、CustomAttribute10 プロパティに "OttawaUsers" という値を持つメールボックスのみを検索できるようにします。  <br/>  _MailboxPropertyName_ プロパティには、サポートされているフィルター可能な受信者プロパティであればどれでも使用できます。 サポートされているプロパティの一覧については、「[-RecipientFilter パラメーターのフィルター可能なプロパティ](https://go.microsoft.com/fwlink/p/?LinkId=784903)」を参照してください。  <br/><br/> **メールボックスコンテンツフィルター:** この種類のフィルターは、検索可能なコンテンツに適用されます。 これは、割り当てられたユーザーが検索できるメールボックス コンテンツを指定します。 この種類のフィルターの構文は **MailboxContent_** _searchablepropertyname: value_です。ここで、  _Searchablepropertyname_ は、コンテンツ検索で指定できるキーワードクエリ言語 (kql) プロパティを指定します。 たとえば、メールボックスのコンテンツ フィルター `MailboxContent_recipients:contoso.com` は、このフィルターが割り当てられたユーザーに、contoso.com ドメイン内の受信者に送信されたメッセージのみを検索することを許可します。  <br/>  検索可能なメッセージ プロパティの一覧は、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。 <br/> <br/> **重要:**  1つの検索フィルターに、メールボックスフィルターとメールボックスコンテンツフィルターを含めることはできません。 これらを1つのフィルターで結合するには、 [フィルタリスト](#using-a-filters-list-to-combine-filter-types)を使用する必要があります。  ただし、フィルターには同じ種類のより複雑なクエリを含めることができます。 例: `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`  <br/><br/> **サイトおよびサイトコンテンツのフィルター処理:** 割り当てられたユーザーが検索できるサイトまたはサイトコンテンツを指定するには、次の2つの SharePoint および OneDrive for Business のサイト関連フィルターを使用できます。  <br/><br/> - **Site_** _SearchableSiteProperty_ <br/> - **SiteContent_** _SearchableSiteProperty_ <br/><br/>  これらの2つのフィルターは、互いに交換可能です。 たとえば、  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` と  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` 同じ結果が返されます。 しかし、フィルターの役割を理解するため、`Site_` を使用してサイト関連のプロパティ (サイト URL など) を指定し、`SiteContent_` を使用してコンテンツ関連のプロパティ (ドキュメントの種類など) を指定できます。 たとえば、フィルター `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` は、このフィルターが割り当てられたユーザーが、https://contoso.sharepoint.com/sites/doctors サイト コレクション内のコンテンツのみを検索することを許可します。 フィルター `"SiteContent_FileExtension -eq 'docx'"` は、このフィルターが割り当てられたユーザーに、Word 文書 (Word 2007 以降) のみを検索することを許可します。  <br/><br/>  検索可能なサイト プロパティの一覧については、「[ロールされたプロパティと管理プロパティの概要](https://go.microsoft.com/fwlink/p/?LinkId=331599)」を参照してください。 [**クエリ可能**] 列で [**はい**] とマークされているプロパティを使用して、サイトまたはサイトのコンテンツ フィルターを作成できます。  <br/><br/> **重要:** ユーザーが特定のサービスでコンテンツの場所を検索するのを明示的に禁止するには、検索アクセス許可フィルターを作成する必要があります (ユーザーが Exchange メールボックスまたは任意の SharePoint サイトを検索することを禁止するなど)。 つまり、組織内のすべての SharePoint サイトをユーザーが検索できるようにする検索権限フィルターを作成しても、そのユーザーはメールボックスを検索できてしまいます。 たとえば、sharepoint 管理者のみが SharePoint サイトを検索できるようにするには、メールボックスの検索を禁止するフィルターを作成する必要があります。 同様に、Exchange 管理者がメールボックスのみを検索できるようにするには、サイトの検索を禁止するフィルターを作成する必要があります。           |
+| _Action_ <br/> | _Action_ パラメーターは、フィルターに適用する検索操作の種類を指定します。 可能なコンテンツ検索操作は次のとおりです。  <br/><br/> **エクスポート:** フィルターは、検索結果をエクスポートするときに適用されます。  <br/> **プレビュー:** フィルターは、検索結果をプレビューするときに適用されます。  <br/> **Purge:** このフィルターは、検索結果を削除するときに適用されます。  <br/> **検索:** フィルターは検索の実行中に適用されます。  <br/> **すべて:** フィルターは、すべての検索アクションに適用されます。  <br/> |
+| _FilterName_ <br/> |_FilterName_ パラメーターは、アクセス許可フィルターの名前を指定します。 この名前は、**Get ComplianceSecurityFilter**、**Set-ComplianceSecurityFilter**、および **Remove-ComplianceSecurityFilter** コマンドレットを使用する際に、フィルターを特定するために使用されます。  <br/> |
+| _Filters_ <br/> | _Filters_ パラメーターはコンプライアンス セキュリティ フィルターの検索条件を指定します。 次の 3 つの異なる種類のフィルターを作成できます。  <br/><br/> **メールボックス のフィルター処理:** この種類のフィルターは、割り当てられたユーザー  _(Users_ パラメーターで指定) が検索できるメールボックスを指定します。 この種類のフィルターの構文は、**Mailbox_** _MailboxPropertyName_ です。_MailboxPropertyName_ は、検索できるメールボックスの範囲を指定するために使用されるメールボックス プロパティを指定します。 たとえば、メールボックス フィルターを使用すると、このフィルターを割り当てられたユーザーは  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 、CustomAttribute10 プロパティに値 "OttawaUsers" が含まれるメールボックスのみを検索できます。  <br/>  _MailboxPropertyName_ プロパティには、サポートされているフィルター可能な受信者プロパティであればどれでも使用できます。 サポートされているプロパティの一覧については、「[-RecipientFilter パラメーターのフィルター可能なプロパティ](https://go.microsoft.com/fwlink/p/?LinkId=784903)」を参照してください。  <br/><br/> **メールボックス コンテンツ フィルター:** この種類のフィルターは、検索可能なコンテンツに適用されます。 これは、割り当てられたユーザーが検索できるメールボックス コンテンツを指定します。 この種類のフィルターの構文は **MailboxContent_** _SearchablePropertyName: value_ で  _、SearchablePropertyName_ はコンテンツ検索で指定できるキーワード クエリ言語 (KQL) プロパティを指定します。 たとえば、メールボックスのコンテンツ フィルター `MailboxContent_recipients:contoso.com` は、このフィルターが割り当てられたユーザーに、contoso.com ドメイン内の受信者に送信されたメッセージのみを検索することを許可します。  <br/>  検索可能なメッセージ プロパティの一覧は、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。 <br/> <br/> **重要:**  1 つの検索フィルターにメールボックス フィルターとメールボックス コンテンツ フィルターを含めすることはできません。 これらを 1 つのフィルターに組み合わせるには、フィルター リストを使用する [必要があります](#using-a-filters-list-to-combine-filter-types)。  ただし、フィルターには、同じ型のより複雑なクエリを含めできます。 例: `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`  <br/><br/> **サイトおよびサイト コンテンツのフィルター処理:** 割り当てられたユーザーが検索できるサイトまたはサイト コンテンツを指定するために使用できる SharePoint と OneDrive for Business のサイト関連フィルターは 2 種類です。  <br/><br/> - **Site_** _SearchableSiteProperty_ <br/> - **SiteContent_** _SearchableSiteProperty_ <br/><br/>  これら 2 つのフィルターは同じ意味を持つ。 たとえば、同  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` じ  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` 結果を返します。 しかし、フィルターの役割を理解するため、`Site_` を使用してサイト関連のプロパティ (サイト URL など) を指定し、`SiteContent_` を使用してコンテンツ関連のプロパティ (ドキュメントの種類など) を指定できます。 たとえば、フィルター `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` は、このフィルターが割り当てられたユーザーが、https://contoso.sharepoint.com/sites/doctors サイト コレクション内のコンテンツのみを検索することを許可します。 フィルター `"SiteContent_FileExtension -eq 'docx'"` は、このフィルターが割り当てられたユーザーに、Word 文書 (Word 2007 以降) のみを検索することを許可します。  <br/><br/>  検索可能なサイト プロパティの一覧については、「[ロールされたプロパティと管理プロパティの概要](https://go.microsoft.com/fwlink/p/?LinkId=331599)」を参照してください。 [**クエリ可能**] 列で [**はい**] とマークされているプロパティを使用して、サイトまたはサイトのコンテンツ フィルターを作成できます。  <br/><br/> **重要:** 検索アクセス許可フィルターを作成して、ユーザーが特定のサービス内のコンテンツの場所を明示的に検索する (ユーザーが Exchange メールボックスまたは SharePoint サイトを検索しないなど) のを防ぐ必要があります。 つまり、組織内のすべての SharePoint サイトをユーザーが検索できるようにする検索権限フィルターを作成しても、そのユーザーはメールボックスを検索できてしまいます。 たとえば、SharePoint 管理者が SharePoint サイトのみを検索するには、メールボックスの検索を防止するフィルターを作成する必要があります。 同様に、Exchange 管理者がメールボックスのみを検索するには、サイトの検索を防止するフィルターを作成する必要があります。           |
 | _Users_ <br/> |_Users_ パラメーターは、コンテンツ検索にこのフィルターを適用するユーザーを指定します。 ユーザーのエイリアスまたはプライマリ SMTP アドレスでユーザーを特定します。 カンマで区切って複数の値を指定することも、値 **All** を使用してすべてのユーザーにフィルターを割り当てることもできます。  <br/> _Users_ パラメーターを使用して、セキュリティ/コンプライアンス センターの役割グループを指定することもできます。 これにより、カスタムの役割グループを作成して、その役割グループに検索アクセス許可フィルターを割り当てることができます。 たとえば、多国籍企業の米国支社の電子情報開示管理者向けのカスタムの役割グループがあるとします。 _Users_ パラメーターを使用してこの役割グループを指定してから (役割グループの Name プロパティを使用)、_Filter_ パラメーターを使用して米国内のメールボックスのみを検索できるようにできます。  <br/> このパラメーターでは、配布グループを指定することはできません。  <br/> |
    
-### <a name="using-a-filters-list-to-combine-filter-types"></a>フィルターの種類を結合するためのフィルターリストの使用
+### <a name="using-a-filters-list-to-combine-filter-types"></a>フィルター リストを使用してフィルターの種類を組み合わせる
 
-*フィルターリスト*は、メールボックスフィルターと、コンマで区切られたサイトフィルターを含むフィルターです。 フィルターリストの使用は、さまざまな種類のフィルターを組み合わせるためにサポートされている唯一の方法です。 次の例では、コンマが **メールボックス** フィルターと **サイト** フィルターを分割している点に注意してください。
+フィルター *リストは* 、メールボックス フィルターと、コンマで区切られたサイト フィルターを含むフィルターです。 フィルター リストの使用は、さまざまな種類のフィルターを組み合わせる方法としてサポートされている唯一の方法です。 次の例では、メールボックス フィルターとサイト フィルターは **コンマで区切****られています。**
 
 ```powershell
 -Filters "Mailbox_CustomAttribute10 -eq 'OttawaUsers'", "Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"
 ```
 
-コンテンツ検索の実行中にフィルターリストを含むフィルターが処理されると、フィルターリストから、コンマで区切られた各フィルターに対して1つずつ、2つの検索アクセス許可フィルターが作成されます。 そのため、前の例では、1つのメールボックス検索アクセス許可フィルターと1つのサイト検索アクセス許可フィルターを作成します。 
+コンテンツ検索の実行中にフィルター リストを含むフィルターが処理されると、2 つの検索アクセス許可フィルターがフィルター リストから作成されます。1 つはコンマで区切られたフィルターごとに 1 つです。 したがって、前の例では、1 つのメールボックス検索アクセス許可フィルターと 1 つのサイト検索アクセス許可フィルターが作成されます。 
 
-フィルターリストを使用する代わりに、2つの個別の検索アクセス許可フィルターを作成することもできます。 そのため、前の例では、mailbox 属性に1つのフィルターを作成し、サイト属性に1つのフィルターを作成します。 どちらの場合でも、結果は同じです。 フィルターリストを使用するか、別の検索アクセス許可のフィルターを作成することは、優先度の高いものです。
+フィルター リストを使用する代わりに、2 つの個別の検索アクセス許可フィルターを作成することもできます。 そのため、前の例では、メールボックス属性用に 1 つのフィルターを作成し、サイト属性用に 1 つのフィルターを作成します。 どちらの場合も、結果は同じです。 フィルター リストを使用するか、個別の検索アクセス許可フィルターを作成することは、優先する必要があります。
 
-フィルターリストの使用については、次の点に注意してください。
+フィルター リストを使用する場合は、次の注意が必要です。
 
-- **メールボックス**フィルターと**MailboxContent**フィルターを含むフィルターを作成するには、フィルターリストを使用する必要があります。 
+- フィルター リストを使用して、メールボックス フィルターと MailboxContent フィルターを含むフィルター **を作成する必要** があります。  
 
-- 前述したように、1つの検索権限フィルターに **サイト** と **sitecontent** 内容フィルターを含めるために、フィルタリストを使用する必要はありません。 たとえば、 **-or**演算子を使用して**サイト**と**sitecontent**各フィルターを組み合わせることができます。
+- 前に提案した通り、1 つの検索アクセス許可フィルターにサイト フィルターと **SiteContent** フィルターを含めるには、フィルター リストを使用する必要がなされません。 たとえば、-or 演算子を **使用して、Site** フィルターと **SiteContent** フィルター **を組み合** わせできます。
 
    ```powershell
    -Filters "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"
    ```
 
-- フィルターリストの各コンポーネントには、複雑なフィルター構文を含めることができます。 たとえば、メールボックスフィルターとサイトフィルターに **は、-or** 演算子で区切られた複数のフィルターを含めることができます。
+- フィルター リストの各コンポーネントには、複雑なフィルター構文を含めできます。 たとえば、メールボックスフィルターとサイト フィルターには、-or 演算子で区切られた **複数のフィルターを含** めできます。
 
    ```powershell
    -Filters "Mailbox_Department -eq 'CohoWinery' -or Mailbox_CustomAttribute10 -eq 'CohoUsers'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'"
@@ -144,7 +134,7 @@ ms.locfileid: "47358549"
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
 ```
 
-この例では、ユーザーの donh および suzanf が、CustomAttribute1 mailbox プロパティの値が ' Marketing ' であるメールボックスのみを検索できるようにします。
+この例では、ユーザー donh および suzanf は、CustomAttribute1 メールボックス プロパティの値が 'Marketing' であるメールボックスのみを検索できます。
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
@@ -156,7 +146,7 @@ New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Fi
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All
 ```
 
-この例では、電子情報開示マネージャーの役割グループのメンバーが、Ottawa Users 配布グループのメンバーのメールボックスのみを検索できるようにします。 Exchange Online PowerShell の Ottawa コマンドレットは、ユーザーグループのメンバーを検索するために使用されます。
+この例では、電子情報開示マネージャー役割グループのメンバーが Ottawa Users 配布グループのメンバーのメールボックスのみを検索できます。 Exchange Online PowerShell Get-DistributionGroupコマンドレットを使用して、Ottawa Users グループのメンバーを検索します。
   
 ```powershell
 $DG = Get-DistributionGroup "Ottawa Users"
@@ -166,7 +156,7 @@ $DG = Get-DistributionGroup "Ottawa Users"
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'" -Action Search
 ```
 
-この例では、すべてのユーザーが Executive Team 配布グループのメンバーのメールボックスからコンテンツを削除することを禁止します。 Exchange Online の PowerShell コマンドレットは、Executive チームグループのメンバーを検索するために使用されます。
+この例では、すべてのユーザーが Executive Team 配布グループのメンバーのメールボックスからコンテンツを削除することを禁止します。 Exchange Online PowerShell Get-DistributionGroupコマンドレットを使用して、エグゼクティブ チーム グループのメンバーを検索します。
 
 ```powershell
 $DG = Get-DistributionGroup "Executive Team"
@@ -203,13 +193,13 @@ New-ComplianceSecurityFilter -FilterName DocumentDateRestrictionFilter -Users do
 New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Managers" -Filters "Mailbox_Alias -notlike '*'"  -Action All
 ```
 
-この例では、janets または sarad で送受信された電子メールメッセージを組織内のすべてのユーザーが検索できないようにします。
+この例では、組織内のすべてのユーザーが、janets または sarad によって送信または受信された電子メール メッセージを検索し込むのを防止します。
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName NoSaraJanet -Users All -Filters "MailboxContent_Participants -notlike 'janets@contoso.onmicrosoft.com' -and MailboxContent_Participants -notlike 'sarad@contoso.onmicrosoft.com'" -Action Search
 ```
 
-この例では、フィルターリストを使用して、メールボックスフィルターとサイトフィルターを結合します。
+この例では、フィルター リストを使用してメールボックスフィルターとサイト フィルターを組み合わせます。
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
@@ -225,10 +215,10 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 |**パラメーター**|**説明**|
 |:-----|:-----|
-| _Action_| _Action_ パラメーターは、フィルターに適用する検索操作の種類を指定します。 可能なコンテンツ検索操作は次のとおりです。 <br/><br/> **エクスポート:** フィルターは、検索結果をエクスポートするときに適用されます。  <br/> **プレビュー:** フィルターは、検索結果をプレビューするときに適用されます。  <br/> **削除:** フィルターは、検索結果を削除するときに適用されます。  <br/> **検索:** フィルターは、検索を実行するときに適用されます。  <br/> **すべて:** フィルターは、すべての検索操作に適用されます。  <br/> |
+| _Action_| _Action_ パラメーターは、フィルターに適用する検索操作の種類を指定します。 可能なコンテンツ検索操作は次のとおりです。 <br/><br/> **エクスポート:** フィルターは、検索結果をエクスポートするときに適用されます。  <br/> **プレビュー:** フィルターは、検索結果をプレビューするときに適用されます。  <br/> **Purge:** このフィルターは、検索結果を削除するときに適用されます。  <br/> **検索:** フィルターは検索の実行中に適用されます。  <br/> **すべて:** フィルターは、すべての検索アクションに適用されます。  <br/> |
 | _FilterName_|_FilterName_ パラメーターは、アクセス許可フィルターの名前を指定します。 |
-| _Filters_| _Filters_ パラメーターはコンプライアンス セキュリティ フィルターの検索条件を指定します。 2つの異なる種類のフィルターを作成できます。 <br/><br/>**メールボックスフィルター処理:** この種類のフィルターでは、(  _users_ パラメーターで指定された) 割り当てられたユーザーが検索できるメールボックスを指定します。 この種類のフィルターの構文は、**Mailbox_** _MailboxPropertyName_ です。_MailboxPropertyName_ は、検索できるメールボックスの範囲を指定するために使用されるメールボックス プロパティを指定します。 たとえば、メールボックスフィルターでは、  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` このフィルターを割り当てられたユーザーが、CustomAttribute10 プロパティに "OttawaUsers" という値を持つメールボックスのみを検索できるようにします。  _MailboxPropertyName_ プロパティには、サポートされているフィルター可能な受信者プロパティであればどれでも使用できます。 サポートされているプロパティの一覧については、「[-RecipientFilter パラメーターのフィルター可能なプロパティ](https://go.microsoft.com/fwlink/p/?LinkId=784903)」を参照してください。 <br/><br/>**メールボックスコンテンツフィルター:** この種類のフィルターは、検索可能なコンテンツに適用されます。 これは、割り当てられたユーザーが検索できるメールボックス コンテンツを指定します。 この種類のフィルターの構文は、**MailboxContent_** _SearchablePropertyName:value_ です。_SearchablePropertyName_ は、コンテンツ検索で指定できるキーワード クエリ言語 (KQL) のプロパティを指定します。 たとえば、メールボックスのコンテンツ フィルター `MailboxContent_recipients:contoso.com` は、このフィルターが割り当てられたユーザーに、contoso.com ドメイン内の受信者に送信されたメッセージのみを検索することを許可します。  検索可能なメッセージ プロパティの一覧は、「[コンテンツ検索のキーワード クエリ](keyword-queries-and-search-conditions.md)」を参照してください。 <br/><br/>**サイトおよびサイトコンテンツのフィルター処理:** 割り当てられたユーザーが検索できるサイトまたはサイトコンテンツを指定するには、次の2つの SharePoint および OneDrive for Business のサイト関連フィルターを使用できます。 <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent**_*SearchableSiteProperty*<br/><br/>これらの2つのフィルターは、互いに交換可能です。 たとえば、  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` と  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` 同じ結果が返されます。 しかし、フィルターの役割を理解するため、`Site_` を使用してサイト関連のプロパティ (サイト URL など) を指定し、`SiteContent_` を使用してコンテンツ関連のプロパティ (ドキュメントの種類など) を指定できます。 たとえば、フィルター `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` は、このフィルターが割り当てられたユーザーが、https://contoso.spoppe.com/sites/doctors サイト コレクション内のコンテンツのみを検索することを許可します。 フィルター `"SiteContent_FileExtension -eq 'docx'"` は、このフィルターが割り当てられたユーザーに、Word 文書 (Word 2007 以降) のみを検索することを許可します。  <br/><br/>検索可能なサイト プロパティの一覧については、「[ロールされたプロパティと管理プロパティの概要](https://go.microsoft.com/fwlink/p/?LinkId=331599)」を参照してください。 [**クエリ可能**] 列で [**はい**] とマークされているプロパティを使用して、サイトまたはサイトのコンテンツ フィルターを作成できます。 <br/><br/>          |
-| _Users_|_Users_ パラメーターは、コンテンツ検索にこのフィルターを適用するユーザーを指定します。 これは複数値のプロパティであるため、このパラメーターを使用してユーザーまたはユーザーのグループを指定すると、既存のユーザーのリストが上書きされます。 選択したユーザーを追加および削除する構文については、次の例を参照してください。 <br/><br/>_Users_ パラメーターを使用して、セキュリティ/コンプライアンス センターの役割グループを指定することもできます。 これにより、カスタムの役割グループを作成して、その役割グループに検索アクセス許可フィルターを割り当てることができます。 たとえば、多国籍企業の米国支社の電子情報開示管理者向けのカスタムの役割グループがあるとします。 _Users_ パラメーターを使用してこの役割グループを指定してから (役割グループの Name プロパティを使用)、_Filter_ パラメーターを使用して米国内のメールボックスのみを検索できるようにできます。 <br/><br/>このパラメーターでは、配布グループを指定することはできません。 |
+| _Filters_| _Filters_ パラメーターはコンプライアンス セキュリティ フィルターの検索条件を指定します。 次の 2 種類のフィルターを作成できます。 <br/><br/>**メールボックス のフィルター処理:** この種類のフィルターは、割り当てられたユーザー  _(Users_ パラメーターで指定) が検索できるメールボックスを指定します。 この種類のフィルターの構文は、**Mailbox_** _MailboxPropertyName_ です。_MailboxPropertyName_ は、検索できるメールボックスの範囲を指定するために使用されるメールボックス プロパティを指定します。 たとえば、メールボックス フィルターを使用すると、このフィルターを割り当てられたユーザーは  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 、CustomAttribute10 プロパティに値 "OttawaUsers" が含まれるメールボックスのみを検索できます。  _MailboxPropertyName_ プロパティには、サポートされているフィルター可能な受信者プロパティであればどれでも使用できます。 サポートされているプロパティの一覧については、「[-RecipientFilter パラメーターのフィルター可能なプロパティ](https://go.microsoft.com/fwlink/p/?LinkId=784903)」を参照してください。 <br/><br/>**メールボックス コンテンツ フィルター:** この種類のフィルターは、検索可能なコンテンツに適用されます。 これは、割り当てられたユーザーが検索できるメールボックス コンテンツを指定します。 この種類のフィルターの構文は、**MailboxContent_** _SearchablePropertyName:value_ です。_SearchablePropertyName_ は、コンテンツ検索で指定できるキーワード クエリ言語 (KQL) のプロパティを指定します。 たとえば、メールボックスのコンテンツ フィルター `MailboxContent_recipients:contoso.com` は、このフィルターが割り当てられたユーザーに、contoso.com ドメイン内の受信者に送信されたメッセージのみを検索することを許可します。  検索可能なメッセージ プロパティの一覧は、「[コンテンツ検索のキーワード クエリ](keyword-queries-and-search-conditions.md)」を参照してください。 <br/><br/>**サイトおよびサイト コンテンツのフィルター処理:** 割り当てられたユーザーが検索できるサイトまたはサイト コンテンツを指定するために使用できる SharePoint と OneDrive for Business のサイト関連フィルターは 2 種類です。 <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent** _ *SearchableSiteProperty*<br/><br/>これら 2 つのフィルターは同じ意味を持つ。 たとえば、同  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` じ  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` 結果を返します。 しかし、フィルターの役割を理解するため、`Site_` を使用してサイト関連のプロパティ (サイト URL など) を指定し、`SiteContent_` を使用してコンテンツ関連のプロパティ (ドキュメントの種類など) を指定できます。 たとえば、フィルター `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` は、このフィルターが割り当てられたユーザーが、https://contoso.spoppe.com/sites/doctors サイト コレクション内のコンテンツのみを検索することを許可します。 フィルター `"SiteContent_FileExtension -eq 'docx'"` は、このフィルターが割り当てられたユーザーに、Word 文書 (Word 2007 以降) のみを検索することを許可します。  <br/><br/>検索可能なサイト プロパティの一覧については、「[ロールされたプロパティと管理プロパティの概要](https://go.microsoft.com/fwlink/p/?LinkId=331599)」を参照してください。 [**クエリ可能**] 列で [**はい**] とマークされているプロパティを使用して、サイトまたはサイトのコンテンツ フィルターを作成できます。 <br/><br/>          |
+| _Users_|_Users_ パラメーターは、コンテンツ検索にこのフィルターを適用するユーザーを指定します。 これは複数値プロパティなので、このパラメーターを使用してユーザーまたはユーザーのグループを指定すると、既存のユーザーのリストが上書きされます。 選択したユーザーを追加および削除する構文については、次の例を参照してください。 <br/><br/>_Users_ パラメーターを使用して、セキュリティ/コンプライアンス センターの役割グループを指定することもできます。 これにより、カスタムの役割グループを作成して、その役割グループに検索アクセス許可フィルターを割り当てることができます。 たとえば、多国籍企業の米国支社の電子情報開示管理者向けのカスタムの役割グループがあるとします。 _Users_ パラメーターを使用してこの役割グループを指定してから (役割グループの Name プロパティを使用)、_Filter_ パラメーターを使用して米国内のメールボックスのみを検索できるようにできます。 <br/><br/>このパラメーターでは、配布グループを指定することはできません。 |
 
 ## <a name="examples-of-changing-search-permissions-filters"></a>検索アクセス許可フィルターの変更例
 
@@ -268,12 +258,12 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
   
 ## <a name="more-information"></a>詳細情報
 
-- **検索アクセス許可のフィルター処理のしくみ。** アクセス許可のフィルターは、コンテンツ検索が実行されると、検索クエリに追加されます。 アクセス許可フィルターは、 **and** ブール演算子によって検索クエリに結合されます。 たとえば、アクセス許可フィルターを使用して、Bob がワーカー配布グループのメンバーのメールボックスに対してすべての検索操作を実行できるようにします。 Bob は、検索クエリ `sender:jerry@adatum.com` を使用して、組織内のすべてのメールボックスでコンテンツ検索を実行したとします。 アクセス許可フィルターと検索クエリは論理的に **and** 演算子で組み合わされているため、この検索では、jerry@adatum.com によって送信されたすべてのメッセージが、ワーカー配布グループのメンバーに返されます。 
+- **検索アクセス許可のフィルター処理のしくみ。** アクセス許可のフィルターは、コンテンツ検索が実行されると、検索クエリに追加されます。 アクセス許可フィルターは **、AND** Boolean 演算子によって検索クエリに結合されます。 たとえば、Bob が Workers 配布グループのメンバーのメールボックスに対してすべての検索操作を実行できるアクセス許可フィルターがあります。 Bob は、検索クエリ `sender:jerry@adatum.com` を使用して、組織内のすべてのメールボックスでコンテンツ検索を実行したとします。 アクセス許可フィルターと検索クエリは **AND** 演算子によって論理的に組み合わされるので、検索は jerry@adatum.com によって Workers 配布グループのメンバーに送信されたメッセージを返します。 
     
-- **複数の検索アクセス許可フィルターがある場合。** コンテンツ検索クエリでは、複数のアクセス許可フィルターは **OR** ブール演算子によって結合されます。 したがって、フィルターのいずれかに該当する場合に結果が返されます。 コンテンツ検索では、(**OR** 演算子によって結合された) すべてのフィルターが、**AND** 演算子によって検索クエリと結合されます。 この例では、検索フィルターを使用して、仕事仲間配布グループのメンバーのメールボックスのみを検索することができるようになります。 次に、Bob が Phil のメールボックスを検索することを防止する別のフィルターを作成します ("Mailbox_Alias -ne 'Phil'")。 また、Phil が Workers グループのメンバーであると仮定してみましょう。 Bob が組織内のすべてのメールボックスでコンテンツ検索 (前の例の) を実行すると、フィルターを適用して、Bob が Phil のメールボックスを検索できないようにした場合でも、Phil のメールボックスに対して検索結果が返されます。 これは、Bob に Workers グループを検索することを許可する最初のフィルターに該当しているからです。 また、Phil が Workers グループのメンバーであるため、Bob は Phil のメールボックスを検索できます。 
+- **複数の検索アクセス許可フィルターがある場合。** コンテンツ検索クエリでは、複数のアクセス許可フィルターは **OR** ブール演算子によって結合されます。 したがって、フィルターのいずれかに該当する場合に結果が返されます。 コンテンツ検索では、(**OR** 演算子によって結合された) すべてのフィルターが、**AND** 演算子によって検索クエリと結合されます。 前の例では、検索フィルターを使用して Bob が Workers 配布グループのメンバーのメールボックスのみを検索できます。 次に、Bob が Phil のメールボックスを検索することを防止する別のフィルターを作成します ("Mailbox_Alias -ne 'Phil'")。 また、Phil が Workers グループのメンバーであると仮定してみましょう。 Bob が組織内のすべてのメールボックスで (前の例の) コンテンツ検索を実行すると、Bob が Phil のメールボックスを検索するフィルターを適用した場合でも、Phil のメールボックスの検索結果が返されます。 これは、Bob に Workers グループを検索することを許可する最初のフィルターに該当しているからです。 また、Phil が Workers グループのメンバーであるため、Bob は Phil のメールボックスを検索できます。 
     
 - **非アクティブなメールボックスで検索アクセス許可のフィルター処理は動作しますか。** はい、メールボックスとメールボックス コンテンツのフィルター処理を使用して、組織の非アクティブなメールボックスを検索できるユーザーを制限することができます。 通常のメールボックスのように、非アクティブなメールボックスは、アクセス許可のフィルターを作成するのに使用される受信者プロパティで設定する必要があります。 必要に応じて、**Get-Mailbox -InactiveMailboxOnly** コマンドを使用して非アクティブなメールボックスのプロパティを表示することができます。 詳細については、「[Office 365 の非アクティブなメールボックスの作成と管理](create-and-manage-inactive-mailboxes.md)」を参照してください。
     
 - **パブリック フォルダーで検索アクセス許可のフィルター処理は動作しますか。** いいえ。 上で説明したように、検索アクセス許可のフィルター処理は、Exchange のパブリック フォルダーを検索できるユーザーを制限する目的には使用できません。 たとえば、パブリック フォルダーの場所にあるアイテムは、アクセス許可のフィルターによって、検索結果から除外することができません。 
     
-- **特定のサービスのすべてのコンテンツの場所をユーザーが検索できるようにした場合、ユーザーは他のサービスのコンテンツの場所を検索できないようになりますか。** いいえ。 前述したように、検索アクセス許可フィルターを作成して、ユーザーが特定のサービスでコンテンツの場所を検索できないようにする (たとえば、ユーザーが Exchange メールボックスまたは任意の SharePoint サイトを検索するのを防ぐ) 必要があります。 つまり、組織内のすべての SharePoint サイトをユーザーが検索できるようにする検索権限フィルターを作成しても、そのユーザーはメールボックスを検索できてしまいます。 たとえば、sharepoint 管理者のみが SharePoint サイトを検索できるようにするには、メールボックスの検索を禁止するフィルターを作成する必要があります。 同様に、Exchange 管理者がメールボックスのみを検索できるようにするには、サイトの検索を禁止するフィルターを作成する必要があります。
+- **特定のサービスのすべてのコンテンツの場所をユーザーが検索できるようにした場合、ユーザーは他のサービスのコンテンツの場所を検索できないようになりますか。** いいえ。 前に説明したように、検索アクセス許可フィルターを作成して、ユーザーが特定のサービス内のコンテンツの場所を明示的に検索する (ユーザーが Exchange メールボックスまたは SharePoint サイトを検索しないなど) のを防ぐ必要があります。 つまり、組織内のすべての SharePoint サイトをユーザーが検索できるようにする検索権限フィルターを作成しても、そのユーザーはメールボックスを検索できてしまいます。 たとえば、SharePoint 管理者が SharePoint サイトのみを検索するには、メールボックスの検索を防止するフィルターを作成する必要があります。 同様に、Exchange 管理者がメールボックスのみを検索するには、サイトの検索を防止するフィルターを作成する必要があります。

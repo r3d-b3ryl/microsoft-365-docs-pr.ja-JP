@@ -17,20 +17,22 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ設定を昇格し、Microsoft 365 組織の優先度アカウントに関するレポート、アラート、調査を使用する方法について説明します。
-ms.openlocfilehash: aee238d2fb58d2772881d8d77f98959906943290
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 9788131ea881a1cb3c36a60dfaac01ed5daf0901
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668224"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769247"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 の優先度アカウントのセキュリティに関する推奨事項
 
-組織の役員から、何かの操作を求める緊急のメッセージを受け取った場合は、どうしますか。 実行しますか? ほとんどのユーザーは要求に準拠します。
+組織の役員から、何かの操作を求める緊急のメッセージを受け取った場合、どうしますか。 実行しますか? ほとんどのユーザーは要求に準拠します。
 
-攻撃者の場合、ランダムなネットをキャストしてランダムまたは不明なユーザーの資格情報を取得する通常のフィッシング攻撃は効率的ではありません。 一方、権限または権限 _の_ 位置にあるユーザーを対象とするスピア フィッシング攻撃やむち打ち攻撃は、攻撃者に対する報酬がはるかに高い。 これらの優先度アカウントが侵害された場合、攻撃者は組織内の管理者、財務、製品、または物理的なアクセス機能を持つアカウントにアクセスする可能性があります。
+攻撃者の場合、ランダムなネットをキャストしてランダムまたは不明なユーザーの資格情報を取得する通常のフィッシング攻撃は非効率的です。 一方、権限または権限 _の_ 位置にあるユーザーを対象とするスピア フィッシング攻撃やむち打ち攻撃は、攻撃者に対する報酬がはるかに高い。 これらの優先度アカウントが侵害された場合、攻撃者は組織内の管理者、財務、製品、または物理的なアクセス機能を持つアカウントにアクセスする可能性があります。
 
 Microsoft 365 と microsoft Defender for Office 365 には、優先度アカウントに追加のセキュリティ レイヤーを提供するのに役立つさまざまな機能が含まれている。 利用可能な機能とそれらを使用する方法については、この記事で説明します。
+
+![アイコン フォームのセキュリティに関する推奨事項の概要](../../media/security-recommendations-for-priority-users.png)
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>優先度アカウントのサインイン セキュリティを強化する
 
@@ -48,7 +50,7 @@ Microsoft 365 と microsoft Defender for Office 365 には、優先度アカウ�
   - [ユーザーの POP3 または IMAP4 アクセスを有効または無効にする](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [認証済みクライアント SMTP 送信 (SMTP AUTH) を有効または無効にする](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
-## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>優先度アカウントに厳密な事前設定セキュリティ ポリシーを使用する
+## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>優先度アカウントに厳密に設定されたセキュリティ ポリシーを使用する
 
 優先度ユーザーには、Exchange Online Protection (EOP) と Defender for Office 365 で利用できるさまざまな保護に対して、より厳しいアクションが必要です。
 
@@ -60,7 +62,7 @@ Microsoft 365 と microsoft Defender for Office 365 には、優先度アカウ�
 
 Strict ポリシー設定と既定のポリシー設定および標準ポリシー設定との違いの詳細については、「EOP および Microsoft Defender for [Office 365](recommended-settings-for-eop-and-office365-atp.md)セキュリティの推奨設定」を参照してください。
 
-## <a name="user-tags"></a>ユーザー タグ
+## <a name="apply-user-tags-to-priority-accounts"></a>ユーザー タグを優先度アカウントに適用する
 
 Office 365 プラン 2 (Microsoft 365 E5 またはアドオン サブスクリプションの一部として) 用の Microsoft Defender のユーザー タグは、レポートやインシデント調査で特定のユーザーまたはユーザー グループをすばやく識別して分類する方法です。
 
@@ -68,7 +70,11 @@ Office 365 プラン 2 (Microsoft 365 E5 またはアドオン サブスクリ�
 
 カスタム タグを作成して、優先度アカウントをさらに識別して分類することもできます。 詳細については、「ユーザー タグ [」を参照してください](user-tags.md)。 優先度アカウント (システム タグ) は **、** カスタム ユーザー タグと同じインターフェイスで管理できます。
 
-## <a name="priority-accounts-in-reports-and-investigations-in-microsoft-365"></a>Microsoft 365 のレポートと調査の優先度アカウント
+## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>アラート、レポート、検出の優先度アカウントを監視する
+
+優先度ユーザーをセキュリティで保護してタグ付けした後、EOP と Defender for Office 365 で利用可能なレポート、アラート、調査を使用して、優先度アカウントに関連するインシデントや検出をすばやく特定できます。 次の表で、ユーザー タグをサポートする機能について説明します。
+
+<br>
 
 ****
 
@@ -78,7 +84,7 @@ Office 365 プラン 2 (Microsoft 365 E5 またはアドオン サブスクリ�
 |脅威エクスプローラー <p> リアルタイムの検出|脅威 **エクスプローラー** (Microsoft Defender for Office 365 プラン 2) またはリアルタイム検出 **(Microsoft** Defender for Office 365 プラン 1) では、ユーザー タグがメール グリッド ビューと [メールの詳細] フライアウトに表示されます。 ユーザー タグは、フィルター可能なプロパティとして使用することもできます。 詳細については、「脅威エクスプローラーの  [タグ」を参照してください](threat-explorer.md#tags-in-threat-explorer)。|
 |キャンペーン ビュー|ユーザー タグは、Microsoft Defender 365 プラン 2 のキャンペーン ビューでフィルター処理Officeプロパティの 1 つになります。 詳細については、「キャンペーン ビュー [」を参照してください](campaigns.md)。|
 |脅威保護の状態レポート|脅威保護状態レポートの事実上すべてのビューと詳細テーブルでは、優先度アカウントで結果を **フィルター処理できます**。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。|
-|優先度アカウントレポートのメールの問題|Exchange **管理センター** (EAC) の優先度アカウント レポートの電子メールの問題には、優先度アカウントの配信不能メッセージと遅延メッセージに関する情報が **含まれます**。 詳細については、「優先度アカウントの [メールの問題」レポートを参照してください](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
+|優先度アカウント レポートのメールの問題|Exchange **管理センター** (EAC) の優先度アカウント レポートの電子メールの問題には、優先度アカウントの配信不能メッセージと遅延メッセージに関する情報が **含まれます**。 詳細については、「優先度アカウントの [メールの問題」レポートを参照してください](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
 |
 
 ## <a name="see-also"></a>関連項目

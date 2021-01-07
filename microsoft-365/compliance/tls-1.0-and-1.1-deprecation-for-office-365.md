@@ -1,6 +1,6 @@
 ---
 title: Office 365 の TLS 1.0 および1.1の 廃止
-description: Office 365 の TLS 1.0 および1.1 が廃止されたことについて説明します。
+description: Office 365 での TLS 1.0 および 1.1 の廃止について説明します。
 author: workshay
 manager: laurawi
 localization_priority: Normal
@@ -17,43 +17,43 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: ab3685883ac08522ab9ea1ee0cf194ba263d9166
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 622d783011defcf9c84061087b7d05f2a117172e
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681691"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777059"
 ---
 # <a name="tls-10-and-11-deprecation-for-office-365"></a>Office 365 の TLS 1.0 および1.1の 廃止
 > [!IMPORTANT]
-> 民間のお客様のために TLS 1.0 および1.1 の非推奨の強制を一時的に停止していますが、サプライチェーンが調整され、特定の国が開かれると、10月 2020 15 日に開始するように TLS の強制をリセットしています。 
+> 商用のお客様に対する TLS 1.0 および 1.1 の廃止の強制は、COVID-19 により一時的に停止されましたが、サプライ チェーンが調整され、一部の国が開いているので、2020 年 10 月 15 日に開始するために TLS の適用がリセットされ、ロールアウトは数週間から数か月続きます。 
 
-2018年10月31日の時点で、Office 365 サービスのトランスポート層セキュリティ (TLS) 1.0 および1.1 プロトコルは使用されなくなりました。 エンドユーザーへの影響は最小限に抑える必要があります。 この変更は、2年以上にわたって公表されており、最初のパブリックアナウンスは2017年12月に行われています。 この記事は、office 365 のローカルクライアントを Office 365 サービスに関連するものだけを対象としていますが、Office および Office Online Server/Office Web Apps のオンプレミスの TLS の問題にも適用できます。
+2018 年 10 月 31 日の現在、トランスポート層セキュリティ (TLS) 1.0 および 1.1 プロトコルは Office 365 サービスで廃止されました。 エンドユーザーに対する影響は最小限に抑えられます。 この変更は、2017 年 12 月に最初の公開発表が行われたので、2 年以上前から公開されています。 この記事は、Office 365 サービスに関連する Office 365 ローカル クライアントのみを対象としますが、Office および Office Online Server/Office Web Apps のオンプレミス TLS の問題にも適用できます。
 
-## <a name="office-and-tls-overview"></a>Office と TLS の概要
+## <a name="office-and-tls-overview"></a>Office TLS の概要
 
-Office クライアントは、Windows web サービス (WINHTTP) に依存して、TLS プロトコル経由のトラフィックの送受信を行います。 ローカルコンピューターの web サービスが TLS 1.2 を使用できる場合、Office クライアントは TLS 1.2 を使用できます。 Tls および SSL プロトコルはオペレーティングシステムの一部であり、Office クライアントに固有ではないため、すべての Office クライアントで TLS プロトコルを使用できます。
+クライアントOfficeは、WINDOWS Web サービス (WINHTTP) を使用して TLS プロトコルを通してトラフィックを送受信します。 ローカル Office Web サービスが TLS 1.2 を使用できる場合、クライアントは TLS 1.2 を使用できます。 TLS Office SSL プロトコルはオペレーティング システムの一部であり、クライアントに固有ではなOfficeです。
 
-### <a name="on-windows-8-and-later-versions"></a>Windows 8 以降のバージョン
+### <a name="on-windows-8-and-later-versions"></a>バージョンWindows 8以降のバージョン
 
-既定では、TLS 1.2 トラフィックを拒否するようにネットワークデバイスが構成されていない場合、TLS 1.2 および1.1 プロトコルが使用できます。
+既定では、TLS 1.2 および 1.1 のプロトコルは、TLS 1.2 トラフィックを拒否するように構成されているネットワーク デバイスがない場合に使用できます。
 
-### <a name="on-windows-7"></a>Windows 7
+### <a name="on-windows-7"></a>Windows 7 の場合
 
-TLS 1.1 および1.2 プロトコルは、 [KB 3140245](https://support.microsoft.com/help/3140245) の更新プログラムがないと使用できません。 この更新プログラムはこの問題に対処し、次のレジストリサブキーを追加します。
+TLS 1.1 および 1.2 プロトコルは [、KB 3140245](https://support.microsoft.com/help/3140245) の更新なしでは使用できません。 この更新プログラムは、この問題に取り組み、次のレジストリ サブ キーを追加します。
 
 ```console
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp
 ```
 
 > [!NOTE]
-> この更新プログラムをインストールしていない Windows 7 ユーザーは、2018年10月31日の時点で影響を受けます。 [KB 3140245](https://support.microsoft.com/help/3140245) は、WINHTTP 設定を変更して TLS プロトコルを有効にする方法についての詳細を示しています。
+> この更新プログラムを適用していない Windows 7 ユーザーは、2018 年 10 月 31 日の時点で影響を受ける。 [KB 3140245](https://support.microsoft.com/help/3140245) には、TLS プロトコルを有効にするため WINHTTP 設定を変更する方法に関する詳細があります。
 
-#### <a name="more-information"></a>詳細
+#### <a name="more-information"></a>詳細情報
 
-KB の記事に記載されている **Defaultsecureprotocols** レジストリキーの値は、どのネットワークプロトコルを使用できるかを決定します。
+使用できるネットワーク プロトコルは、サポート技術情報の記事で説明されている **DefaultSecureProtocols** レジストリ キーの値によって決されます。
 
-|DefaultSecureProtocols の値|プロトコルの有効化|
+|DefaultSecureProtocols 値|プロトコルの有効化|
 |-|-|
 |0x00000008|既定で SSL 2.0 を有効にします|
 |0x00000020|既定で SSL 3.0 を有効にします|
@@ -61,13 +61,13 @@ KB の記事に記載されている **Defaultsecureprotocols** レジストリ�
 |0x00000200|既定で TLS 1.1 を有効にします|
 |0x00000800|既定で TLS 1.2 を有効にします|
 
-## <a name="office-clients-and-tls-registry-keys"></a>Office クライアントと TLS レジストリキー
+## <a name="office-clients-and-tls-registry-keys"></a>Officeクライアントと TLS レジストリ キー
 
-[Office 365 で TLS 1.2 を必須で使用するための準備として、KB 4057306](https://support.microsoft.com/help/4057306)を参照することができます。 これは IT 管理者向けの一般的な記事であり、TLS 1.2 の変更に関する公式ドキュメントです。
+KB [4057306 OFFICE 365 での TLS 1.2](https://support.microsoft.com/help/4057306)の必須使用の準備に関するページを参照してください。 これは IT 管理者向け一般的な記事であり、TLS 1.2 の変更に関する公式ドキュメントです。
 
-次の表に、2018年10月31日以降の Office 365 クライアントの適切なレジストリキー値を示します。
+次の表に、2018 年 10 月 31 日Office 365 クライアントの適切なレジストリ キー値を示します。
 
-|2018年10月31日以降の Office 365 サービスの有効化プロトコル|16進値|
+|2018 年 10 Office 365 サービスで有効になっているプロトコル|16 進数の値|
 |-|-|
 |TLS 1.0 + 1.1 + 1.2|0x00000A80|
 |TLS 1.1 + 1.2|0x00000A00|
@@ -75,8 +75,8 @@ KB の記事に記載されている **Defaultsecureprotocols** レジストリ�
 |TLS 1.2|0x00000800|
 
 > [!IMPORTANT]
-> SSL 2.0 および3.0 プロトコルを使用することはお勧めしません。これは、 **Defaultsecureprotocols** キーを使用して設定することもできます。 SSL 2.0 および3.0 は、非推奨プロトコルと見なされます。 最善の方法は、SSL 2.0 および SSL 3.0 の使用を終了することですが、これを最終的に決定することは、製品のニーズに最も適した内容によって決まります。 SSL 3.0 の脆弱性の詳細については、「 [KB 3009008](https://support.microsoft.com/help/3009008)」を参照してください。
+> SSL 2.0 および 3.0 プロトコルを使用することをお勧めしません。 **これは DefaultSecureProtocols** キーを使用して設定できます。 SSL 2.0 および 3.0 は非推奨プロトコルと見なされます。 ベスト プラクティスは SSL 2.0 と SSL 3.0 の使用を終了する方法ですが、これを行う決定は最終的には、製品のニーズに最も合う内容によって異なります。 SSL 3.0 の脆弱性の詳細については [、KB 3009008 を参照](https://support.microsoft.com/help/3009008)してください。
 
-既定の Windows 電卓をプログラマモードで使用して、同じ参照レジストリキーの値を設定することができます。 詳細については、「 [KB 3140245 更新プログラム」を参照して、Windows の WinHTTP で既定のセキュリティ保護されたプロトコルとして tls 1.1 と tls 1.2 を有効](https://support.microsoft.com/help/3140245)にします。
+プログラマ モードの既定の Windows 電卓を使用して、同じ参照レジストリ キー値を設定できます。 詳細については、Windows の WinHTTP で TLS 1.1 および TLS 1.2 を既定のセキュリティで保護されたプロトコルとして有効にする [KB 3140245 Update](https://support.microsoft.com/help/3140245)を参照してください。
 
-Windows 7 更新プログラム ([KB 3140245](https://support.microsoft.com/help/3140245)) がインストールされているかどうかにかかわらず、DefaultSecureProtocols のレジストリサブキーは存在しないため、手動で追加するか、グループポリシーオブジェクト (GPO) を使用して追加する必要があります。 つまり、有効または制限のあるセキュリティで保護されたプロトコルをカスタマイズする必要がない場合は、このキーは必要ありません。 Windows 7 SP1 ([KB 3140245](https://support.microsoft.com/help/3140245)) の更新プログラムのみが必要です。
+Windows 7 更新プログラム ([KB 3140245)](https://support.microsoft.com/help/3140245)がインストールされている場合でもインストールされていない場合でも、DefaultSecureProtocols レジストリ サブキーは存在しなく、手動で追加するか、グループ ポリシー オブジェクト (GPO) を使用して追加する必要があります。 つまり、有効または制限されているセキュリティで保護されたプロトコルをカスタマイズする必要がない限り、このキーは必要ありません。 必要なのは、Windows 7 SP1 ([KB 3140245)](https://support.microsoft.com/help/3140245)更新プログラムのみです。
