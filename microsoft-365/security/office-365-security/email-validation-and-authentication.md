@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
-ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 6a0bf6fd7958f44a9cfbe7ae0600aeb064170437
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131075"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760520"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
@@ -145,7 +145,7 @@ Microsoft 365 は、認証されていないメールを組織に送信してい
 
 - 正当な送信者を判断するために、ドメインに [DMARC レコードを設定することを検討します](use-dmarc-to-validate-email.md)。
 
-Microsoft は、SPF、DKIM、および DMARC レコードの詳細な実装ガイドラインを提供しません。 ただし、オンラインで利用できる大量の情報があります。 また、組織がメール認証レコードを設定する際の支援を専門としているサード パーティ企業もあります。
+Microsoft は、SPF、DKIM、および DMARC レコードの詳細な実装ガイドラインを提供しません。 ただし、オンラインで利用できる大量の情報があります。 また、組織がメール認証レコードを設定する際の支援を専門とするサード パーティ企業もあります。
 
 #### <a name="you-dont-know-all-sources-for-your-email"></a>メールのすべての送信元がわからない
 
