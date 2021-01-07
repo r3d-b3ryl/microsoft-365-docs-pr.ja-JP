@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 ワークロードソリューションとシナリオ
-description: 説明
+title: Microsoft 365 ワークロード ソリューションとシナリオ
+description: 特定の Microsoft 365 ワークロードに関するこれらのソリューション ガイドを使用して、ビジネス目標を達成します。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,13 +13,13 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 ROBOTS: NOINDEX
-ms.openlocfilehash: d7243c68ca52ac2c84d96e3db0fa60b9592cbac3
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 55eab63636fd20dc33062498f6bbae9295d7277f
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613550"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771825"
 ---
-# <a name="microsoft-365-workload-solutions-and-scenarios"></a><span data-ttu-id="a665e-103">Microsoft 365 ワークロードソリューションとシナリオ</span><span class="sxs-lookup"><span data-stu-id="a665e-103">Microsoft 365 workload solutions and scenarios</span></span>
+# <a name="microsoft-365-workload-solutions-and-scenarios"></a><span data-ttu-id="11aa9-103">Microsoft 365 ワークロード ソリューションとシナリオ</span><span class="sxs-lookup"><span data-stu-id="11aa9-103">Microsoft 365 workload solutions and scenarios</span></span>
 
-<span data-ttu-id="a665e-104">![オブジェクトの ](https://docs.microsoft.com/office/media/icons/objects-blue.png) **ワークロードのシナリオとソリューション**  次のシナリオとソリューションは、特定のビジネス目標を達成するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="a665e-104">![objects](https://docs.microsoft.com/office/media/icons/objects-blue.png) **Workload scenarios and solutions**  These scenarios and solutions help you accomplish a specific business objective.</span></span> <span data-ttu-id="a665e-105">これらを基本ソリューションに追加して、環境に機能を追加することができます。</span><span class="sxs-lookup"><span data-stu-id="a665e-105">You can add them onto the foundational solutions to add capabilities to your environment.</span></span>
+<span data-ttu-id="11aa9-104">![オブジェクト ](https://docs.microsoft.com/office/media/icons/objects-blue.png) **ワークロードのシナリオとソリューション**  これらのシナリオとソリューションは、特定のビジネス目標を達成するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="11aa9-104">![objects](https://docs.microsoft.com/office/media/icons/objects-blue.png) **Workload scenarios and solutions**  These scenarios and solutions help you accomplish a specific business objective.</span></span> <span data-ttu-id="11aa9-105">基盤ソリューションに追加して、環境に機能を追加できます。</span><span class="sxs-lookup"><span data-stu-id="11aa9-105">You can add them onto the foundational solutions to add capabilities to your environment.</span></span>
