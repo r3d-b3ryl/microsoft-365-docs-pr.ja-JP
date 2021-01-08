@@ -1,9 +1,9 @@
 ---
-title: Azure ゲートウェイサブネットのアドレス空間計算機
+title: Azure ゲートウェイ サブネットのアドレス空間計算ツール
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/01/2020
+ms.date: 01/07/2021
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,28 +15,28 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - seo-marvel-apr2020
-description: '概要: C3、Python、または PowerShell を使用して、Azure ゲートウェイサブネットのアドレス空間を計算します。'
-ms.openlocfilehash: 5e119f1ddefb5877886042b835ffdd093a34f0f8
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+description: '概要: C3、Python、または PowerShell を使用して、Azure ゲートウェイ サブネットのアドレス空間を計算します。'
+ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332794"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780570"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a><span data-ttu-id="5a81b-103">Azure ゲートウェイサブネットのアドレス空間計算機</span><span class="sxs-lookup"><span data-stu-id="5a81b-103">Address space calculator for Azure gateway subnets</span></span>
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a><span data-ttu-id="2a4c4-103">Azure ゲートウェイ サブネットのアドレス空間計算ツール</span><span class="sxs-lookup"><span data-stu-id="2a4c4-103">Address space calculator for Azure gateway subnets</span></span>
 
-<span data-ttu-id="5a81b-104">他のネットワークに接続されている Azure インフラストラクチャサービスの仮想ネットワーク (VNet) には、ゲートウェイサブネットが必要です。</span><span class="sxs-lookup"><span data-stu-id="5a81b-104">A virtual network (VNet) in Azure infrastructure services that is connected to other networks must have a gateway subnet.</span></span> <span data-ttu-id="5a81b-105">このサブネットを定義するためのベストプラクティスは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="5a81b-105">The best practices for defining this subnet are the following:</span></span>
+<span data-ttu-id="2a4c4-104">他のネットワークに接続されている Azure インフラストラクチャ サービスの仮想ネットワーク (VNet) には、ゲートウェイ サブネットが必要です。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-104">A virtual network (VNet) in Azure infrastructure services that is connected to other networks must have a gateway subnet.</span></span> <span data-ttu-id="2a4c4-105">ゲートウェイ サブネットを定義するためのベスト プラクティスは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-105">The best practices for defining the gateway subnet are:</span></span>
 
-- <span data-ttu-id="5a81b-106">ゲートウェイサブネットのプレフィックスの長さは、最大のプレフィックス長 (10.119.255.248/29 など) を持つことができますが、現在の推奨事項は、プレフィックスの長さが 27 (たとえば、10.119.255.224/27) を使用することです。</span><span class="sxs-lookup"><span data-stu-id="5a81b-106">The prefix length of the gateway subnet can have a maximum prefix length of 29 (for example, 10.119.255.248/29), but the current recommendation is that you use a prefix length of 27 (for example, 10.119.255.224/27).</span></span>
-- <span data-ttu-id="5a81b-107">ゲートウェイサブネットのアドレス空間を定義するときは、VNet アドレス空間の最後の部分を使用します。</span><span class="sxs-lookup"><span data-stu-id="5a81b-107">When defining the address space of the gateway subnet, use the very last part of the VNet address space.</span></span>
+- <span data-ttu-id="2a4c4-106">ゲートウェイ サブネットのプレフィックス長には、最大プレフィックス長 29 (10.119.255.248/29 など) を指定できますが、現在の推奨事項は、プレフィックスの長さが 27 (10.119.255.224/27 など) を使用する点です。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-106">The prefix length of the gateway subnet can have a maximum prefix length of 29 (for example, 10.119.255.248/29), but the current recommendation is that you use a prefix length of 27 (for example, 10.119.255.224/27).</span></span>
+- <span data-ttu-id="2a4c4-107">ゲートウェイ サブネットのアドレス空間を定義する場合は、VNet アドレス 空間の最後の部分を使用します。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-107">When defining the address space of the gateway subnet, use the last part of the VNet address space.</span></span>
 
-<span data-ttu-id="5a81b-108">2番目の推奨事項については、ゲートウェイサブネットに使用するビットを0に設定し、VNet アドレス空間内の残りの可変ビットを1に設定することによって、ゲートウェイサブネットのアドレス空間を決定することができます。</span><span class="sxs-lookup"><span data-stu-id="5a81b-108">For the second recommendation, you can determine the address space of the gateway subnet by setting the bits used for the gateway subnet to 0 and the remaining variable bits in the VNet address space to 1.</span></span> <span data-ttu-id="5a81b-109">Binary に変換せずに10進数に戻すことなく、ゲートウェイサブネットのアドレス空間をすばやく計算するには、C# または Python または PowerShell コマンドブロックで記述されたコンソールアプリケーションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="5a81b-109">To quickly calculate the gateway subnet address space without having to convert to binary and back to decimal, you can use a console application written in C# or Python or with a PowerShell command block.</span></span>
+<span data-ttu-id="2a4c4-108">2 つ目の推奨事項では、ゲートウェイ サブネットに使用するビットを 0 に設定し、VNet アドレス 空間内の残りのビットを 1 に設定することで、ゲートウェイ サブネットのアドレス空間を決定できます。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-108">For the second recommendation, you can determine the address space of the gateway subnet by setting the bits used for the gateway subnet to 0 and the remaining bits in the VNet address space to 1.</span></span> <span data-ttu-id="2a4c4-109">バイナリに変換して 10 進数に戻さずにゲートウェイ サブネットのアドレス空間をすばやく計算するには、C# または Python または PowerShell コマンド ブロックで記述されたコンソール アプリケーションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-109">To quickly calculate the gateway subnet address space without having to convert to binary and back to decimal, you can use a console application written in C# or Python or with a PowerShell command block.</span></span>
 
-<span data-ttu-id="5a81b-110">この記事には、C#、Python、および PowerShell のコードブロックが含まれています。これらの値は、VNet アドレスプレフィックスとゲートウェイサブネットプレフィックス長の5つの整数を収集し、ゲートウェイサブネットのアドレス空間を計算します。</span><span class="sxs-lookup"><span data-stu-id="5a81b-110">This article contains C#, Python and PowerShell code blocks that collect five integers—the values of w.x.y.z/n for the VNet address prefix and the gateway subnet prefix length—and calculates the gateway subnet address space.</span></span>
+<span data-ttu-id="2a4c4-110">この記事には、VNet アドレス プレフィックスの w.x.y.z/n の値とゲートウェイ サブネットプレフィックスの長さに基づいてゲートウェイ サブネットのアドレス空間を計算する C#、Python、および PowerShell のコード ブロックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-110">This article contains C#, Python, and PowerShell code blocks that calculate the gateway subnet address space based on the values of w.x.y.z/n for the VNet address prefix and the gateway subnet prefix length.</span></span>
 
-## <a name="c-code-block"></a><span data-ttu-id="5a81b-111">C# コードブロック</span><span class="sxs-lookup"><span data-stu-id="5a81b-111">C# code block</span></span>
+## <a name="c-code-block"></a><span data-ttu-id="2a4c4-111">C# コード ブロック</span><span class="sxs-lookup"><span data-stu-id="2a4c4-111">C# code block</span></span>
 
-<span data-ttu-id="5a81b-112">このコードブロックを使用して、C# でコンソールアプリを作成します。</span><span class="sxs-lookup"><span data-stu-id="5a81b-112">Use this code block to create a console app in C#.</span></span>
+<span data-ttu-id="2a4c4-112">C# でコンソール アプリを作成するには、このコード ブロックを使用します。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-112">Use this code block to create a console app in C#.</span></span>
 
 ```c#
 using System; 
@@ -62,8 +62,8 @@ namespace ConsoleApplication1
  
             // Get the five values needed from the keyboard. 
             Console.WriteLine("**************************************************************************"); 
-            Console.WriteLine("*** Gateway subnet address space calculator for Azure virtual networks ***");             
-            Console.WriteLine("**************************************************************************");  
+            Console.WriteLine("**_ Gateway subnet address space calculator for Azure virtual networks _*_");             
+            Console.WriteLine("_*************************************************************************");  
             Console.WriteLine(); 
             Console.WriteLine("Please supply your virtual network address space in the form of w.x.y.z/n."); 
             Console.WriteLine(); 
@@ -108,16 +108,16 @@ namespace ConsoleApplication1
 } 
 ```
 
-## <a name="python-code-block"></a><span data-ttu-id="5a81b-113">Python コードブロック</span><span class="sxs-lookup"><span data-stu-id="5a81b-113">Python code block</span></span>
+## <a name="python-code-block"></a><span data-ttu-id="2a4c4-113">Python コード ブロック</span><span class="sxs-lookup"><span data-stu-id="2a4c4-113">Python code block</span></span>
 
-<span data-ttu-id="5a81b-114">このコードブロックを使用して、Python でコンソールアプリを作成します。</span><span class="sxs-lookup"><span data-stu-id="5a81b-114">Use this code block to create a console app in Python.</span></span>
+<span data-ttu-id="2a4c4-114">このコード ブロックを使用して、Python でコンソール アプリを作成します。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-114">Use this code block to create a console app in Python.</span></span>
 
 ```python
 import math 
 # Collect the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet 
 print("**************************************************************************")  
-print("*** Gateway subnet address space calculator for Azure virtual networks ***")  
-print("**************************************************************************\n")   
+print("**_ Gateway subnet address space calculator for Azure virtual networks _*_")  
+print("_*************************************************************************\n")   
 print("Please supply your virtual network address space in the form of w.x.y.z/n.");  
 w=int(input("w = ")) 
 x=int(input("x = ")) 
@@ -147,9 +147,9 @@ print(gwAddrPref)
 ```
 
 
-## <a name="powershell-command-block"></a><span data-ttu-id="5a81b-115">PowerShell コマンドブロック</span><span class="sxs-lookup"><span data-stu-id="5a81b-115">PowerShell command block</span></span>
+## <a name="powershell-command-block"></a><span data-ttu-id="2a4c4-115">PowerShell コマンド ブロック</span><span class="sxs-lookup"><span data-stu-id="2a4c4-115">PowerShell command block</span></span>
 
-<span data-ttu-id="5a81b-116">値を入力し、PowerShell ウィンドウまたは PowerShell ISE で結果のコマンドブロックを実行します。</span><span class="sxs-lookup"><span data-stu-id="5a81b-116">Fill in the values and run the resulting command block in a PowerShell window or in the PowerShell ISE.</span></span>
+<span data-ttu-id="2a4c4-116">値を入力し、PowerShell ウィンドウまたは PowerShell 統合スクリプト環境 (ISE) で結果のコマンド ブロックを実行します。</span><span class="sxs-lookup"><span data-stu-id="2a4c4-116">Fill in the values and run the resulting command block in a PowerShell window or in the PowerShell Integrated Script Environment (ISE).</span></span>
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 
@@ -177,7 +177,6 @@ $dx= [string]$w2 + "." + [string]$x2 + "." + [string]$y2 + "." + [string]$z2 + "
 Write-Host "Your gateway address prefix is: " $dx
 ```
     
-## <a name="related-topics"></a><span data-ttu-id="5a81b-117">関連項目</span><span class="sxs-lookup"><span data-stu-id="5a81b-117">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="2a4c4-117">関連項目</span><span class="sxs-lookup"><span data-stu-id="2a4c4-117">Related topics</span></span>
 
-[<span data-ttu-id="5a81b-118">PowerShell で Microsoft 365を管理する</span><span class="sxs-lookup"><span data-stu-id="5a81b-118">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
-
+[<span data-ttu-id="2a4c4-118">PowerShell で Microsoft 365を管理する</span><span class="sxs-lookup"><span data-stu-id="2a4c4-118">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
