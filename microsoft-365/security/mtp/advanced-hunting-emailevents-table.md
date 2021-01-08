@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667639"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780274"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -39,7 +39,7 @@ ms.locfileid: "49667639"
 高度 `EmailEvents` な検索スキーマの [表](advanced-hunting-overview.md) には、Microsoft Defender for Office 365 での電子メールの処理に関連するイベントに関する情報が記載されています。 このテーブルの情報を返すクエリを作成するには、この参照を使用できます。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 ( 値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ `ActionType` リファレンスを使用してください。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> テーブルでサポートされているイベントの種類 ( 値) の詳細については、セキュリティ センターで使用可能な組み込みのスキーマ `ActionType` 参照を使用してください。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -65,9 +65,9 @@ ms.locfileid: "49667639"
 | `PhishDetectionMethod` | string | 電子メールをフィッシングとして検出するために使用される方法: 悪意のある URL 評価、安全なリンク URL の分析、高度なフィッシング フィルター、一般的なフィッシング フィルター、スプーフィング対策: 組織内、スプーフィング対策: 外部ドメイン、ドメイン偽装、ユーザー偽装、ブランド偽装 |
 | `MalwareFilterVerdict` | string | メールにマルウェアが含まれているかどうかに関する、メールのフィルター処理スタックの判定 (マルウェア、マルウェア以外) |
 | `MalwareDetectionMethod` | string | 電子メール内のマルウェアを検出するために使用する方法: マルウェア対策エンジン、ファイル評価、安全な添付ファイル |
-| `FinalEmailAction` | string | フィルターの判定、ポリシー、ユーザー アクションに基づいてメールに対して実行される最終的なアクション: メッセージを迷惑メール フォルダーに移動、X-ヘッダーの追加、件名の変更、メッセージのリダイレクト、メッセージの削除、検疫フォルダーへの配信、アクションなし、Bcc メッセージ |
-| `FinalEmailActionPolicy` | string | 適用されたアクション ポリシー: 高信頼度のスパム対策、スパム対策、バルク メール スパム対策、フィッシング スパム対策、ドメイン偽装フィッシング対策、ユーザー偽装フィッシング対策、スプーフィング フィッシング対策、グラフ偽装フィッシング対策、マルウェア対策、安全な添付ファイル、Enterprise Transport Rules (ETR) |
-| `FinalEmailActionPolicyGuid` | string | メールに対する最終アクションを決定したポリシーの一意の識別子 |
+| `EmailAction` | string | フィルターの判定、ポリシー、ユーザー アクションに基づいてメールに対して実行される最終的なアクション: メッセージを迷惑メール フォルダーに移動、X-ヘッダーの追加、件名の変更、メッセージのリダイレクト、メッセージの削除、検疫フォルダーへの配信、アクションなし、Bcc メッセージ |
+| `EmailActionPolicy` | string | 適用されたアクション ポリシー: 高信頼度のスパム対策、スパム対策、バルク メール スパム対策、フィッシング スパム対策、ドメイン偽装フィッシング対策、ユーザー偽装フィッシング対策、スプーフィング フィッシング対策、グラフ偽装フィッシング対策、マルウェア対策、安全な添付ファイル、Enterprise Transport Rules (ETR) |
+| `EmailActionPolicyGuid` | string | メールに対する最終アクションを決定したポリシーの一意の識別子 |
 | `AttachmentCount` | int | メール内の添付ファイル数 |
 | `UrlCount` | int | メールに埋め込まれている URL の数 |
 | `EmailLanguage` | string | 検出されたメールのコンテンツの言語 |

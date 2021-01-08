@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター リージョンの Office 365 サービスに移行する場合のサービスに関するその他のデバイス情報。'
-ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688656"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780298"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行に関するその他のデバイス情報
 
@@ -61,7 +61,7 @@ Microsoft は、デバイスの状態を正常に復元する方法に関する�
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="windows-hybrid-azure-ad-join"></a>Windows ハイブリッド Azure AD参加
+## <a name="hybrid-azure-ad-join"></a>Hybrid Azure AD 参加
 
 ### <a name="windows-down-level"></a>Windows のダウンレベル
 
@@ -135,7 +135,7 @@ Windows 10 デバイスが以前に Azure AD に参加したかどうかを確�
 デバイスは、グローバル Azure AD エンドポイントへのネットワーク接続がある限り、ユーザーまたは管理者の介入なしに自動的に Azure AD に参加します。 
 
 
-## <a name="windows-azure-ad-join"></a>Windows Azure AD Join
+## <a name="azure-ad-join"></a>Azure AD Join
 
 **重要:** Intune サービス プリンシパルは、商取引の移行後に有効になります。これは、Azure AD Device Registration のアクティブ化を意味します。 移行前に Azure AD デバイス登録をブロックした場合は、PowerShell で Intune サービス プリンシパルを無効にして、Azure AD ポータルでの Azure AD デバイス登録を再度無効にする必要があります。 Azure Active Directory PowerShell for Graph モジュールで次のコマンドを使用して、Intune サービス プリンシパルを無効にできます。
 
@@ -180,7 +180,7 @@ Windows 10 デバイスが以前に Azure AD に参加したかどうかを確�
 ユーザーは、Windows の設定からデバイスを Azure AD に参加>アカウント **>、> Connect** にアクセスします。
  
 
-## <a name="windows-azure-ad-registered-company-owned"></a>Windows Azure AD 登録済み (会社所有)
+## <a name="azure-ad-registered-company-owned"></a>Azure AD登録済み (会社所有)
 
 Windows 10 デバイスが Azure AD登録されているかどうかを確認するには、デバイスで次のコマンドを実行します。
 
@@ -222,7 +222,7 @@ Android の場合、ユーザーはデバイスの登録を解除して再登録
 
 - Microsoft Authenticator アプリから、[デバイス登録] の [設定 **] >移動できます**。 そこから、ユーザーはデバイスの登録を解除して再登録できます。
  
-- ポータル サイトから、[デバイス] タブに移動 **し、デバイス** を削除できます。 その後、ポータル サイトを使用してデバイスを再登録します。
+- ポータル サイトから、[デバイス] タブに移動し、デバイスを削除できます。 その後、ポータル サイトを使用してデバイスを再登録します。
  
 - ユーザーは、アカウント設定ページからアカウントを削除してから、仕事用アカウントを再追加することで、登録を解除して再登録することもできます。
 
@@ -230,10 +230,10 @@ Microsoft Authenticator アプリを使用して Android のデバイスの登�
 
 1.  Microsoft Authenticator アプリを開き、[設定] に移動 **します**。
 2.  [デバイス **の登録] を選択します**。
-3.  [登録解除] を選択して、デバイスの登録を **解除します**。
-4.  [ **デバイスの登録**] で、電子メール アドレスを入力してデバイスを再登録し、[登録] を選択 **します**。
+3.  [登録解除] を選択してデバイスの登録を **解除します**。
+4.  デバイス **登録の場合** は、電子メール アドレスを入力してデバイスを再登録し、[登録] を選択 **します**。
 
-Android デバイスの登録を解除し、Android デバイスを [設定] ページに再登録するには::
+Android デバイスの登録を解除し、Android デバイスを [設定] ページに再登録するには、次の方法を使用します。
 
 1.  デバイス設定 **を開き、[** アカウント] に **移動します**。
 2.  再登録する仕事用アカウントを選択し、[アカウントの削除] **を選択します**。
@@ -270,7 +270,7 @@ iOS デバイスでは、ユーザーはキャッシュされたアカウント�
 
 ユーザーは、Outlook、Teams、OneDrive など、個々のアプリに移動し、それらのアプリからアカウントを削除できます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 
@@ -283,7 +283,7 @@ iOS デバイスでは、ユーザーはキャッシュされたアカウント�
 
 - [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
 - [追加の作業前作業](ms-cloud-germany-transition-add-pre-work.md)
-- Azure [AD、](ms-cloud-germany-transition-add-devices.md)[デバイス](ms-cloud-germany-transition-azure-ad.md)、[エクスペリエンス、および](ms-cloud-germany-transition-add-experience.md)AD FS[に関する追加情報](ms-cloud-germany-transition-add-adfs.md)。
+- [Azure](ms-cloud-germany-transition-azure-ad.md)AD、[デバイス、エクスペリエンス](ms-cloud-germany-transition-add-devices.md)、[および](ms-cloud-germany-transition-add-experience.md)AD FS[に関する追加情報](ms-cloud-germany-transition-add-adfs.md)。
 
 クラウド アプリ:
 

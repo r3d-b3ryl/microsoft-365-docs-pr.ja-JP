@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 新しいビジネス向け Microsoft 365 ライセンスを購入する方法について説明します。
-ms.openlocfilehash: 2f881881bc55659d5ba4cd7280111a15bf0f9ff3
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771964"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784243"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Microsoft 365 ライセンスを購入する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-新しいユーザーを追加する場合は、それらのユーザーのライセンスを追加購入する必要があります。
+新しいユーザーを追加する場合は、それらのユーザーの Microsoft 365 ライセンスを追加購入する必要があります。
 
 ## <a name="try-it"></a>演習
 
@@ -46,5 +46,5 @@ ms.locfileid: "49771964"
 1. 新しいライセンスを割り当てるには、[ライセンスの割り当て **] を選択します**。
 1. ライセンスを再 **び割り当** てる。
 1. ライセンスを割り当てるユーザーの名前を入力し、名前を選択します。
-1. ユーザーに設定するアプリまたはサービスを決定し、[割り当て] を選択 **します**。
+1. ユーザーに提供するアプリまたはサービスを決定し、[割り当て] を選択 **します**。
 1. これで、ライセンスがユーザーに割り当てられます。

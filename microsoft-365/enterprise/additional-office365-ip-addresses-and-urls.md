@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイントの Web サービスでは、特定のシナリオ用の一部のエンドポイントは含まれません。'
 hideEdit: true
-ms.openlocfilehash: 8e1d464a4bb24594ae783a8e1e272050b6c038bb
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5c97fa2399392b03e00644f270e8726570aefb5
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682855"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780582"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント
 
@@ -80,6 +80,12 @@ DNS に関するものを除き、記載された特定のシナリオを必要�
   
 [コンテンツ配信ネットワーク](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
   
-[Microsoft Azure データ センターの IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653)
+[Azure IP 範囲とサービス タグ - パブリック クラウド](https://www.microsoft.com/download/details.aspx?id=56519)
+
+[Azure IP 範囲とサービス タグ - 米国政府機関クラウド](https://www.microsoft.com/download/details.aspx?id=57063)
+
+[Azure IP 範囲とサービス タグ - ドイツ クラウド](https://www.microsoft.com/download/details.aspx?id=57064)
+
+[Azure IP 範囲とサービス タグ - 中国クラウド](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft パブリック IP スペース](https://www.microsoft.com/download/details.aspx?id=53602)

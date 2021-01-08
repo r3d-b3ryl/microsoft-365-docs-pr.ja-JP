@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 995f657778d3326a4d58d46f760539639f1fe7fe
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951110"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777070"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -49,7 +49,9 @@ SharePoint または OneDrive サイトに保存されているすべてのフ�
 > [!TIP]
 > [保持ラベル用の自動適用ポリシーを使用したクエリ](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties) を使用する場合、次のエントリを使用して特定のドキュメント ライブラリを除外することができます。`NOT(DocumentLink:"<URL to document library>")`
 
-保持設定は、ライブラリ、リスト、およびフォルダーを含む組織構造には適用されません。 または、システム リスト内のアイテムについては、SharePoint によってシステムの管理やマスター ページ カタログ、ソリューション カタログ、データ ソースの追加に使用される非表示リストです。
+リスト アイテムはアイテム保持ポリシーではサポートされていませんが、システム リストの項目を除き、保持ラベルではサポートされています。 これらは、SharePoint によってシステムの管理やマスター ページ カタログ、ソリューション カタログ、データ ソースの追加に使用される非表示リストです。
+
+アイテム保持ポリシーと保持ラベルの両方のアイテム保持設定は、ライブラリ、リスト、およびフォルダーを含む組織構造には適用されません。
 
 アイテム保持ポリシーと自動適用のラベル ポリシーの場合: 保持設定を適用するには、SharePoint サイトにインデックスを作成する必要があります。 ただし、SharePoint ドキュメント ライブラリ内のアイテムが検索結果に表示されないように構成されている場合、この構成ではファイルは保持設定から除外されません。
 

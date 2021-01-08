@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 安全な添付ファイル ポリシーを定義して、電子メール内の悪意のあるファイルから組織を保護する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9105e7ed9e9bc376b3d86cd846d8c1d6eae8deea
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 8dfdcc0779fb8b8438ee7a63d2f0e180cbb12ac9
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682915"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780510"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender で安全な添付ファイル ポリシーを Office 365 用にセットアップする
 
@@ -45,13 +45,13 @@ ms.locfileid: "49682915"
 セキュリティ/コンプライアンス センターで安全な添付ファイル ポリシーを管理する場合、これら 2 つの要素の違い&明らかではありません。
 
 - 安全な添付ファイル ポリシーを作成する場合、実際には両方に同じ名前を使用して、安全な添付ファイル ルールと関連付けられた安全な添付ファイル ポリシーを同時に作成します。
-- 安全な添付ファイル ポリシーを変更すると、名前、優先度、有効または無効、および受信者フィルターに関連する設定によって、安全な添付ファイル ルールが変更されます。 その他のすべての設定では、関連付けられている安全な添付ファイル ポリシーが変更されます。
+- 安全な添付ファイル ポリシーを変更すると、名前、優先度、有効または無効、受信者フィルターに関連する設定によって、安全な添付ファイル ルールが変更されます。 その他のすべての設定では、関連付けられている安全な添付ファイル ポリシーが変更されます。
 - 安全な添付ファイル ポリシーを削除すると、安全な添付ファイル ルールと関連付けられている安全な添付ファイル ポリシーが削除されます。
 
 Exchange Online PowerShell またはスタンドアロン EOP PowerShell では、ポリシーとルールを個別に管理します。 詳細については、後の [「Exchange Online PowerShell またはスタンドアロンの EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) を使用して安全な添付ファイル ポリシーを構成する」を参照してください。
 
 > [!NOTE]
-> 安全な添付ファイルの設定のグローバル設定領域では、安全な添付ファイル ポリシーに依存しない機能を構成します。 手順については [、「SharePoint、OneDrive、Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) の ATP と [Microsoft 365 E5](safe-docs.md)の安全なドキュメントを有効にする」を参照してください。
+> [安全な添付ファイル] 設定のグローバル設定領域では、安全な添付ファイル ポリシーに依存しない機能を構成します。 手順については [、「SharePoint、OneDrive、Microsoft Teams の ATP](turn-on-atp-for-spo-odb-and-teams.md) と [Microsoft 365 E5](safe-docs.md)の安全なドキュメントを有効にする」を参照してください。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -59,16 +59,16 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります。
-  - 安全な添付ファイル ポリシーを作成、変更、および削除するには、組織の管理役割グループまたはセキュリティ管理者役割グループのメンバー **である** 必要があります。
-  - 安全な添付ファイル ポリシーに読み取り専用でアクセスするには、グローバル閲覧者またはセキュリティ閲覧者の役割グループのメンバー **である** 必要があります。
+- この記事の手順を実行する前に、アクセス許可を割り当てる必要があります。
+  - 安全なリンク ポリシーを作成、変更、および削除するには、セキュリティ & コンプライアンス センターの Organization **Management** または **Security Administrator** 役割グループのメンバーであり、Exchange Online の **Organization Management** 役割グループのメンバーである必要があります。
+  - 安全なリンク ポリシーに読み取り専用でアクセスするには、セキュリティ/コンプライアンスセンターのグローバル閲覧者またはセキュリティ閲覧者の役割グループの&必要があります。
 
-  詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+  詳細については、「Exchange Online の [セキュリティ/コンプライアンス センター&](permissions-in-the-security-and-compliance-center.md) アクセス許可」 [を参照してください](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 安全な添付ファイル ポリシーの推奨設定については、「安全な添付ファイルの [設定」を参照してください](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
 
@@ -120,7 +120,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
    - **受信者が次のメンバーである**: 組織内の 1 つ以上のグループを指定します。
    - **[受信者のドメインが次の値である]**: 組織内で構成済みの 1 つ以上の承認済みドメイン内の受信者を指定します。
 
-   条件を選択すると、対応するドロップダウンが [任意] ボックス **と一緒に表示** されます。
+   条件を選択すると、対応するドロップダウンが [Any **of these] ボックスと一緒に表示** されます。
 
    - ボックス内をクリックし、値の一覧をスクロールして選択します。
    - ボックス内をクリックし、入力を開始してリストをフィルター処理し、値を選択します。
@@ -128,9 +128,9 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
    - 個々のエントリを削除するには、値の **[削除]** ![ ](../../media/scc-remove-icon.png) アイコンをクリックします。
    - 条件全体を削除するには、条件の **[削除**] ![ ](../../media/scc-remove-icon.png) アイコンをクリックします。
 
-   追加の条件を追加するには、[条件の追加] **をクリック** し、[適用する条件] の下の残りの値 **を選択します**。
+   追加の条件を追加するには、[条件の追加] **をクリックし** 、[適用する条件] の下の残りの値 **を選択します**。
 
-   例外を追加するには、[条件の追加] をクリックし、[条件以外] で例外 **を選択します**。 設定と動作は、条件とまったく同じです。
+   例外を追加するには、[条件の追加] をクリックし、[次の場合を除く] で例外 **を選択します**。 設定と動作は、条件とまったく同じです。
 
    完了したら、**[次へ]** をクリックします。
 
@@ -176,7 +176,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 安全な添付ファイル ポリシーは、処理順に表示されます (最初のポリシーの **優先度** の値は 0 です)。
 
-**注**: セキュリティ/コンプライアンス センター&、安全な添付ファイル ポリシーの優先度は、作成後にのみ変更できます。 PowerShell では、安全な添付ファイル ルールを作成するときに既定の優先度を上書きできます (既存のルールの優先度に影響を与える可能性があります)。
+**注**: セキュリティ & コンプライアンス センターでは、安全な添付ファイル ポリシーの優先度は、作成後にのみ変更できます。 PowerShell では、安全な添付ファイル ルールを作成するときに既定の優先度を上書きできます (既存のルールの優先度に影響を与える可能性があります)。
 
 ポリシーの優先度を変更するには、リスト内で上下に移動させます (セキュリティ/コンプライアンス センター内で直接、**優先順位** 番号を変更することはできません)。
 
@@ -192,7 +192,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
    - 3 つ以上の安全な添付ファイル ポリシーがある場合は、優先度の高い値と最も低い値の間のポリシーの [優先度の引き上げ] ボタンと [優先度の下げ] ボタンの **両方を使用** できます。
 
-4. [優先度 **の引き上げ** ] または **[優先度の下げ** ] をクリックして、[優先度] の **値を変更** します。
+4. [優先度 **の引き上げ****] または [優先度の下げ**] をクリックして、[優先度] の **値を変更** します。
 
 5. 完了したら、**[閉じる]** をクリックします。
 
@@ -328,7 +328,7 @@ Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-safe-attachment-policies"></a>PowerShell を使用して安全な添付ファイル ポリシーを変更する
 
-PowerShell で安全な添付ファイル ポリシーの名前を変更することはできません **(Set-SafeAttachmentPolicy** コマンドレットには _Name_ パラメーターはありません)。 セキュリティ & コンプライアンス センターで安全な添付ファイル ポリシーの名前を変更する場合は、安全な添付ファイル ルールの名前のみを変更 _します_。
+PowerShell で安全な添付ファイル ポリシーの名前を変更することはできません **(Set-SafeAttachmentPolicy** コマンドレットには _Name_ パラメーターはありません)。 セキュリティ & コンプライアンス センターで安全な添付ファイル ポリシーの名前を変更する場合は、安全な添付ファイル ルールの名前を変更 _する必要があります_。
 
 それ以外の場合は、「手順 [1: PowerShell](#step-1-use-powershell-to-create-a-safe-attachment-policy) を使用して安全な添付ファイル ポリシーを作成する」セクションで説明したように、安全な添付ファイル ポリシーを作成する場合と同じ設定を使用できます。
 
@@ -344,7 +344,7 @@ Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
 
 PowerShell で安全な添付ファイル ルールを変更する場合に使用できない唯一の設定は、無効にされたルールを作成できる _Enabled_ パラメーターです。 既存の安全な添付ファイル ルールを有効または無効にするには、次のセクションを参照してください。
 
-それ以外の場合は、「手順 [2: PowerShell](#step-2-use-powershell-to-create-a-safe-attachment-rule) を使用して安全な添付ファイル ルールを作成する」セクションで説明したルールを作成する場合と同じ設定を使用できます。
+それ以外の場合は、「手順 [2: PowerShell](#step-2-use-powershell-to-create-a-safe-attachment-rule) を使用して安全な添付ファイル ルールを作成する」セクションで説明したように、ルールを作成する場合と同じ設定を使用できます。
 
 安全な添付ファイル ルールを変更するには、次の構文を使用します。
 
@@ -438,7 +438,7 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
 
 安全な添付ファイル ポリシーが正常に作成、変更、または削除されたことを確認するには、次の手順を実行します。
 
-- セキュリティ/コンプライアンス センター&、脅威 **管理** ポリシー ATP の安全な添付 \>  \> **ファイルに移動します**。 ポリシーの一覧、その状態の値、 **および優先度** の値を **確認** します。 詳細を表示するには、一覧からポリシーを選択し、詳細をフライアウトで表示します。
+- セキュリティ/コンプライアンス センター&、脅威 **管理** ポリシー ATP の安全な添付 \>  \> **ファイルに移動します**。 ポリシーの一覧、状態の値、 **および優先度** の値を **確認** します。 詳細を表示するには、一覧からポリシーを選択し、詳細をフライアウトで表示します。
 
 - Exchange Online PowerShell または Exchange Online Protection PowerShell で、ポリシーまたはルールの名前に置き換え、次のコマンドを実行して、設定 \<Name\> を確認します。
 
@@ -450,4 +450,4 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-安全な添付ファイルがメッセージをスキャンしているのを確認するには、365 レポートの利用可能な Defender Office確認します。 詳細については、「Defender [for Office 365](view-reports-for-atp.md) のレポートを表示する」および「セキュリティ/コンプライアンス センターでエクスプローラー [&参照してください](threat-explorer.md)。
+安全な添付ファイルがメッセージをスキャンしているのを確認するには、365 レポートの利用可能な Defender Office確認します。 詳細については、「Defender for [Office 365](view-reports-for-atp.md) のレポートを表示する」と「セキュリティ/コンプライアンス センターでエクスプローラー [&参照してください](threat-explorer.md)。
