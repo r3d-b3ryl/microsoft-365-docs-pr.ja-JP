@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730168"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790203"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
 
@@ -103,11 +103,13 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 >[!IMPORTANT] 
 > 規制レコードの最も重要な違いは、コンテンツに適用された後は誰もラベルを削除できず、グローバル管理者でさえもそれを削除できないということです。 
 >
-> また、規制レコード用に構成された保持ラベルには、次の管理車制限があります。
+> 規制レコード用に構成された保持ラベルには、次の管理者制限もあります。
 > - ラベルを保存した後に保持期間を短くすることはできず、延長のみが可能です。
 > - これらのラベルは自動ラベル付けポリシーではサポートされておらず、[保持ラベル ポリシー](create-apply-retention-labels.md)を使用して適用する必要があります。 
+>
+> また、SharePoint でチェックアウトされたドキュメントに規制ラベルを適用することはできません。
 > 
-> これらは不可逆的なアクションであるため、保持ラベル用にこのオプションを選択する前に、本当に規制レコードを使用する必要があるかどうかをご確認ください。 誤った構成を防止するために、このオプションは既定では使用できなくなっていますが、PowerShell を使用して最初に有効にする必要があります。 手順は、「[保持ラベルを使用してレコードを宣言する](declare-records.md)」に含まれています。
+> これらの制限があり不可逆的なアクションであるため、保持ラベル用にこのオプションを選択する前に、本当に規制レコードを使用する必要があるかどうかをご確認ください。 誤った構成を防止するために、このオプションは既定では使用できなくなっていますが、PowerShell を使用して最初に有効にする必要があります。 手順は、「[保持ラベルを使用してレコードを宣言する](declare-records.md)」に含まれています。
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 

@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 作業の開始
+    - name: 概要
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -66,6 +66,8 @@
           href: whats-new-in-preview.md
         - name: 変更内容の最新情報を把握する
           href: manage/stay-on-top-of-updates.md
+        - name: 複数のテナントの管理
+          href: multi-tenant/manage.md
     - name: 21Vianet が運用している Office 365
       items:
         - name: 21Vianet が運用している Office 365 について
