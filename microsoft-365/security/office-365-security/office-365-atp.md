@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: 86e738fa9390cc40b06c10a27f3198715bb991fd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34011780241ae3a669fe32aa5fad00f9836d5570
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614812"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780310"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -44,6 +44,11 @@ Microsoft Defender for Office 365 は、電子メール メッセージ、リン
 - **[脅威の調査および反応機能](#use-threat-investigation-and-response-capabilities)**: 最先端のツールを使用して、脅威の調査、把握、シミュレーション、および回避を行います。
 
 - **[自動調査および対応機能](office-365-air.md)**: 脅威の調査および軽減にかかる時間と労力を節約します。
+
+## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の対話型のガイド
+この対話型のガイドでは、Microsoft Defender for Office 365 を使用して組織を保護する方法について説明します。 Defender for Office 365 が、保護ポリシーの定義、組織への脅威の分析、攻撃への対応にどのように役立つかをご覧いただけます。
+
+> [!VIDEO https://aka.ms/MSDO-IG]
 
 ## <a name="getting-started"></a>はじめに
 
