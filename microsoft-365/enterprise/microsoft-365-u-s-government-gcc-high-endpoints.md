@@ -1,7 +1,7 @@
 ---
 title: Office 365 U.S. Government GCC High エンドポイント
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 01/04/2021
 audience: ITPro
@@ -18,14 +18,14 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
-description: この記事では、365 U.S. Government GCC High プランを使用しているお客様Officeに到達可能なエンドポイントについて説明します。
+description: この記事では、365 U.S. Government GCC High プランをOfficeのお客様が到達可能なエンドポイントを確認できます。
 hideEdit: true
-ms.openlocfilehash: d8d23bf3382d2441df8abdb99bff03393e8bf882
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 7a9cc33f93ac1a887ecce24689858b283f992cde
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751609"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787789"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 U.S. Government GCC High エンドポイント
 
@@ -37,9 +37,9 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
   
 |||
 |:-----|:-----|
-|**Last updated:** 01/04/2021 - ![ RSS Change Log ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [subscription](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** JSON 形式の完全な [リスト](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**最終更新日:** 2021 年 1 月 4 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** JSON 形式の完全な [リスト](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
- まず [、Office 365](managing-office-365-endpoints.md) エンドポイントの管理から始め、このデータを使用してネットワーク接続を管理するための推奨事項を理解します。 エンドポイント データは、毎月の初めに更新され、アクティブにされる 30 日前に新しい IP アドレスと URL が公開されます。 これにより、新しい接続が必要になる前に、自動化された更新プログラムをまだお持ちではないお客様がプロセスを完了できます。 サポートのエスカレーション、セキュリティ インシデント、その他の即時運用要件に対応する必要がある場合は、エンドポイントが月中に更新される場合もあります。 以下のページに示すデータはすべて、REST ベースの Web サービスから生成されます。 スクリプトまたはネットワーク デバイスを使用してこのデータにアクセスする場合は、Web サービスに直接 [アクセスする必要](microsoft-365-ip-web-service.md) があります。
+ まず [、Office 365](managing-office-365-endpoints.md) エンドポイントの管理から始め、このデータを使用してネットワーク接続を管理するための推奨事項を理解します。 エンドポイント データは、毎月の初めに更新され、アクティブにされる 30 日前に新しい IP アドレスと URL が公開されます。 これにより、新しい接続が必要になる前に、自動化された更新プログラムをまだお持ちではないお客様がプロセスを完了できます。 サポートのエスカレーション、セキュリティ インシデント、その他の即時運用要件に対応する必要がある場合は、エンドポイントが月中に更新される場合もあります。 以下のこのページに表示されるデータはすべて、REST ベースの Web サービスから生成されます。 スクリプトまたはネットワーク デバイスを使用してこのデータにアクセスする場合は、Web サービスに直接 [移動する必要](microsoft-365-ip-web-service.md) があります。
 
 次のエンドポイント データは、ユーザーのコンピューターを Office 365 に接続するための要件の一覧です。Microsoft からお客様のネットワークへの接続 (“ハイブリッド ネットワーク接続” や ”受信ネットワーク接続” と呼ばれる場合があります) は含まれません。
 
@@ -61,7 +61,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 この表に関するメモ :
 
-- セキュリティ/コンプライアンス センター (SCC) は、Azure ExpressRoute for Office 365 をサポートします。 レポート、監査、Advanced eDiscovery、統合 DLP、データ ガバナンスなど、SCC を通じて公開される多くの機能にも同じことが当てはまる。 現在、PST インポートと電子情報開示のエクスポートという 2 つの特定の機能では、Azure Blob Storage への依存関係が原因で Office 365 ルート フィルターのみを使用する Azure ExpressRoute はサポートされていません。 これらの機能を利用するには、インターネット接続や Azure パブリック ルート フィルターを使用した Azure ExpressRoute など、サポート可能な Azure 接続オプションを使用して、Azure Blob Storage に個別に接続する必要があります。 これらの両方の機能について、このような接続の確立を評価する必要があります。 Office 365 Information Protection チームは、この制限を認識し、両方の機能に対して Office 365 ルート フィルターに制限された Office 365 向け Azure ExpressRoute のサポートを積極的に提供するために取り組み中です。
+- セキュリティ/コンプライアンス センター (SCC) は、Azure ExpressRoute for Office 365 をサポートします。 レポート、監査、Advanced eDiscovery、統合 DLP、データ ガバナンスなど、SCC を通じて公開される多くの機能にも同じことが当てはまる。 現在、PST インポートと電子情報開示のエクスポートという 2 つの特定の機能では、Azure Blob Storage への依存関係が原因で Office 365 ルート フィルターのみを使用する Azure ExpressRoute はサポートされていません。 これらの機能を使用するには、インターネット接続や Azure パブリック ルート フィルターを使用した Azure ExpressRoute など、サポート可能な Azure 接続オプションを使用して、Azure Blob Storage に個別に接続する必要があります。 これらの両方の機能について、このような接続の確立を評価する必要があります。 Office 365 Information Protection チームは、この制限を認識し、両方の機能に対して Office 365 ルート フィルターに制限された Office 365 向け Azure ExpressRoute のサポートを積極的に提供するために取り組み中です。
 
 - 一覧に記載されていない Microsoft 365 Apps for enterprise の追加のオプション エンドポイントがあります。ユーザーが Microsoft 365 Apps for enterprise アプリケーションを起動してドキュメントを編集する必要はありません。 オプションのエンドポイントは、Microsoft データセンターでホストされ、顧客データの処理、送信、または保存は行われます。 これらのエンドポイントへのユーザー接続は、既定のインターネット出口境界に転送することをお勧めします。
 

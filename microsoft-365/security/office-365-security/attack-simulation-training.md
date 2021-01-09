@@ -11,20 +11,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: 管理者は、Microsoft Defender for Office 365 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、ユーザーをフィッシング防止に関するトレーニングを行う方法を学習できます。
-ms.openlocfilehash: 3707041067fd76ee9535d0dccf5cdfcb9d74fbd7
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 41a5a503fbc8aa5e41760c1cf420d5e3c6047d86
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667583"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788053"
 ---
 # <a name="simulate-a-phishing-attack"></a>フィッシング攻撃をシミュレートする
 
-Office 365 向け Microsoft Defender の攻撃シミュレーター トレーニングでは、組織でサイバー攻撃シミュレーションを実行してセキュリティ ポリシーとプラクティスをテストし、従業員の意識を高め、攻撃の影響を受けやすくするよう従業員をトレーニングできます。 この記事では、攻撃シミュレーターのトレーニングを使用してシミュレートされたフィッシング攻撃を作成する方法について手順を示します。
+Office 365 向け Microsoft Defender の攻撃シミュレーション トレーニングを使用すると、組織でサイバー攻撃シミュレーションを実行してセキュリティ ポリシーとプラクティスをテストできます。また、従業員の意識を高め、攻撃の影響を受けやすくするよう従業員をトレーニングすることができます。 この記事では、攻撃シミュレーション トレーニングを使用してシミュレートされたフィッシング攻撃を作成する方法について説明します。
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-シミュレートされたフィッシング攻撃を起動するには [、Microsoft 365](https://security.microsoft.com/)セキュリティ センターを開き、[メール **&** コラボレーション攻撃シミュレーター] に移動し、[シミュレーション] タブに切り替 \> えます。 [](https://security.microsoft.com/attacksimulator?viewid=simulations)
+シミュレートされたフィッシング攻撃を起動するには [、Microsoft 365](https://security.microsoft.com/)セキュリティ センターを開き、[メール **& コラボレーション** 攻撃シミュレーション トレーニング] に移動し、[シミュレーション] タブに切り替 \> えます [](https://security.microsoft.com/attacksimulator?viewid=simulations)。
 
 [ **シミュレーション] で、[+** シミュレーション **の起動] を選択します**。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 変更管理に役立つメッセージ センター メッセージを管理する方法について説明します。
-ms.openlocfilehash: 9f64be8396900db3377505fea3e144fffbb3b096
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 42dc00a1347f5455f2d607da9f2677c58ace34e9
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688280"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787765"
 ---
 # <a name="manage-messages-in-message-center"></a>メッセージ センターでメッセージを管理する
 
@@ -209,7 +209,7 @@ ms.locfileid: "49688280"
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Planner でメッセージ センターのタスクを追跡する
 
-Microsoft 365 サービスの変更に関する実践的な情報の多くは、Microsoft 365 メッセージ センターに届きます。 タスクを実行する必要がある変更、いつ、誰が行う必要があるのか、および各タスクを完了まで追跡することは困難な場合があります。 また、何かをメモして、後で確認するためにタグを付けておきたいと思うかも知れません。 Microsoft 365 管理センターから Microsoft Planner にメッセージを同期すると、これ以上の操作を実行できます。 詳細については、「Planner でメッセージ [センターのタスクを追跡する」を参照してください](https://docs.microsoft.comoffice365/planner/track-message-center-tasks-planner)。
+Microsoft 365 サービスの変更に関する実践的な情報の多くは、Microsoft 365 メッセージ センターに届きます。 タスクを実行する必要がある変更、いつ、誰が行う必要があるのか、および各タスクを完了まで追跡することは困難な場合があります。 また、何かをメモして、後で確認するためにタグを付けておきたいと思うかも知れません。 Microsoft 365 管理センターから Microsoft Planner にメッセージを同期すると、これ以上の操作を実行できます。 詳細については、「Planner でメッセージ [センターのタスクを追跡する」を参照してください](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner)。
 
 
 メッセージ センターの概要については [、Microsoft 365 のメッセージ センターを参照してください](message-center.md)。 または、メッセージ センターの投稿に対して機械翻訳を有効にするために言語の基本設定を設定する方法については、「メッセージ センターの投稿の言語翻訳」 [を参照してください](language-translation-for-message-center-posts.md)。 リアルタイムのサービス正常性情報とメッセージ センター通信を取得する別の方法をプログラムする場合は [、Microsoft 365 サービス](https://go.microsoft.com/fwlink/p/?linkid=848507)通信 API の概要を参照してください。
