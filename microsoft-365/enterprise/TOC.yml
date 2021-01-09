@@ -24,7 +24,7 @@
       items:
         - name: ドメインの追加
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
-        - name: M365E エンドポイントのホワイトリストを構成する
+        - name: エンドポイントを構成してバイパスする
           items:
             - name: Office 365 IP アドレスと URL の Web サービス
               href: microsoft-365-ip-web-service.md
