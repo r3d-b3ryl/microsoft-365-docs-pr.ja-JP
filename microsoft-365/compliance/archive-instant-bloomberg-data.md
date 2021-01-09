@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がデータ コネクタをセットアップして使用して、Instant Bloomberg チャット ツールから Microsoft 365 にデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: c2a56feb80f6772462fae47eb2a020e951f246e6
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: b7cd35e0613d9c278e8f36efc194de9dc9b5a5f2
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688492"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790095"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
@@ -42,7 +42,7 @@ Instant Bloomberg データがユーザー メールボックスに保存され�
 
 4. コネクタは、チャット メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 InstantBloomberg という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは *、CorporateEmailAddress* プロパティの値を使用してこれを行います。 すべてのチャット メッセージには、このプロパティが含まれるので、チャット メッセージのすべての参加者の電子メール アドレスが設定されます。 *CorporateEmailAddress* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義できます。 このマッピング ファイルには、Bloomberg UUID と、各ユーザーの対応する Microsoft 365 メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを提供する場合、すべてのチャット アイテムについて、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはチャット アイテムの *CorporateEmailAddress* プロパティを使用します。 コネクタが、カスタム マッピング ファイルまたはチャット アイテムの *CorporateEmailAddress* プロパティに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Instant Bloomberg データをアーカイブするために必要な実装手順の一部は Microsoft 365 の外部にあるので、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 
@@ -66,7 +66,7 @@ Instant Bloomberg データをアーカイブするために必要な実装手�
 
   - Bloomberg SFTP サイトのポート番号
 
-- Instant Bloomberg コネクタは、1 日に合計 200,000 アイテムをインポートできます。 1 日に 200,000 を超えるアイテムが SFTP サイトに存在する場合、それらのアイテムはいずれも Microsoft 365 にインポートされません。
+- Instant Bloomberg コネクタは、1 日に合計 200,000 アイテムをインポートできます。 SFTP サイトに 200,000 を超えるアイテムがある場合、それらのアイテムは Microsoft 365 にインポートされません。
 
 - 手順 3 で Instant Bloomberg コネクタを作成するユーザー (および手順 1 で公開キーと IP アドレスをダウンロードするユーザー) には、Exchange Online の Mailbox Import Export 役割が割り当てられている必要があります。 これは、Microsoft 365コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 

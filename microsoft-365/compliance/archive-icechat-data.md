@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ICE チャット ツールから Microsoft 365 にデータをインポートおよびアーカイブするコネクタを設定できます。 これにより、Microsoft 365 のサード パーティデータ ソースのデータをアーカイブして、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 590f9b3b119ee261ec2ff6c4b5196bd9fea42697
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 79a18017ce7aa3c646fa6c7230bde4b001ddc4c8
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620404"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790171"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>ICE Chat データをアーカイブするコネクタを設定する
 
-MICROSOFT 365 コンプライアンス センターのネイティブ コネクタを使用して、ICE Chat コラボレーション ツールから金融サービス のチャット データをインポートしてアーカイブします。 コネクタをセットアップして構成した後、組織の ICE Chat セキュア FTP (SFTP) サイトに毎日 1 回接続し、チャット メッセージのコンテンツを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
+MICROSOFT 365 コンプライアンス センターのネイティブ コネクタを使用して、ICE Chat コラボレーション ツールから金融サービス のチャット データをインポートおよびアーカイブします。 コネクタをセットアップして構成した後、組織の ICE Chat セキュア FTP (SFTP) サイトに毎日 1 回接続し、チャット メッセージのコンテンツを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
 
-ICE チャット データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、アーカイブ、監査、通信コンプライアンス、Microsoft 365 アイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を ICE チャット データに適用できます。 たとえば、コンテンツ検索を使用して ICE チャット メッセージを検索したり、ICE チャット データを含むメールボックスを Advanced eDiscovery ケースの保管担当者に関連付けできます。 ICE チャット コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠しつながっているのに役立ちます。
+ICE チャット データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、アーカイブ、監査、通信コンプライアンス、Microsoft 365 アイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を ICE Chat データに適用できます。 たとえば、コンテンツ検索を使用して ICE Chat メッセージを検索したり、ICE チャット データを含むメールボックスを Advanced eDiscovery ケースの保管担当者に関連付けできます。 ICE チャット コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠しつながっているのに役立ちます。
 
 ## <a name="overview-of-archiving-ice-chat-data"></a>ICE Chat データのアーカイブの概要
 
@@ -31,23 +31,25 @@ ICE チャット データがユーザー メールボックスに保存され�
 
 ![ICE Chat archiving workflow](../media/ICEChatConnectorWorkflow.png)
 
-1. 組織は ICE チャットと共同で ICE Chat SFTP サイトをセットアップします。 ICE チャットを使用して ICE Chat を構成し、チャット メッセージを ICE Chat SFTP サイトにコピーします。
+1. 組織は ICE チャットと共同で ICE Chat SFTP サイトをセットアップします。 また、ICE Chat を使用して ICE Chat を構成し、チャット メッセージを ICE Chat SFTP サイトにコピーします。
 
 2. 24 時間ごとに、ICE Chat からのチャット メッセージが ICE Chat SFTP サイトにコピーされます。
 
-3. Microsoft 365 コンプライアンス センターで作成する ICE チャット コネクタは、毎日 ICE Chat SFTP サイトに接続し、過去 24 時間のチャット メッセージを Microsoft Cloud 内のセキュリティで保護された Azure Storage の場所に転送します。 コネクタは、チャットチャットの内容を電子メール メッセージ形式に変換します。
+3. Microsoft 365 コンプライアンス センターで作成する ICE Chat コネクタは、毎日 ICE Chat SFTP サイトに接続し、過去 24 時間のチャット メッセージを Microsoft Cloud のセキュリティで保護された Azure Storage の場所に転送します。 コネクタは、チャットチャットの内容を電子メール メッセージ形式に変換します。
 
 4. コネクタは、チャット メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 ICE Chat という名前 **の新しい** フォルダーがユーザー メールボックスに作成され、チャット メッセージ アイテムがフォルダーにインポートされます。 コネクタは *、SenderEmail* プロパティと RecipientEmail プロパティの *値を使用して行* います。 すべてのチャット メッセージには、これらのプロパティが含まれるので、送信者の電子メール アドレスとチャット メッセージのすべての受信者/参加者が設定されます。
 
-   *SenderEmail* プロパティと *RecipientEmail* プロパティの値を使用する自動ユーザー マッピング (つまり、コネクタが送信者のメールボックスとすべての受信者のメールボックスにチャット メッセージをインポートする) に加えて、CSV マッピング ファイルをアップロードしてカスタム ユーザー マッピングを定義することもできます。 このマッピング ファイルには、ICE Chat *ImId* と、組織内のすべてのユーザーの対応する Microsoft 365 メールボックス アドレスが含まれている。 自動ユーザー マッピングを有効にしてカスタム マッピング ファイルを提供する場合、すべてのチャット アイテムについて、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの ICE Chat ImId に対応する有効な Microsoft 365 ユーザー アカウントが見つからない場合、コネクタはチャット アイテムの *SenderEmail* プロパティと *RecipientEmail* プロパティを使用して、チャット参加者のメールボックスにアイテムをインポートします。 コネクタがカスタム マッピング ファイルまたは *SenderEmail* プロパティと *RecipientEmail* プロパティのどちらかに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
+   *SenderEmail* プロパティと *RecipientEmail* プロパティの値を使用する自動ユーザー マッピング (つまり、コネクタが送信者のメールボックスとすべての受信者のメールボックスにチャット メッセージをインポートする) に加えて、CSV マッピング ファイルをアップロードしてカスタム ユーザー マッピングを定義することもできます。 このマッピング ファイルには、ICE Chat *ImId* と、組織内のすべてのユーザーの対応する Microsoft 365 メールボックス アドレスが含まれている。 自動ユーザー マッピングを有効にしてカスタム マッピング ファイルを提供する場合、すべてのチャット アイテムについて、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの ICE Chat ImId に対応する有効な Microsoft 365 ユーザー アカウントが見つからなかった場合、コネクタはチャット アイテムの *SenderEmail* プロパティと *RecipientEmail* プロパティを使用して、チャット参加者のメールボックスにアイテムをインポートします。 コネクタがカスタム マッピング ファイルまたは *SenderEmail* プロパティと *RecipientEmail* プロパティのどちらかに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
 
 ## <a name="before-you-begin"></a>はじめに
 
 ICE Chat データをアーカイブするために必要な実装手順の一部は Microsoft 365 の外部にあるので、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 
-- ICE チャットは、顧客に対して外部コンプライアンスの手数料を請求します。 組織は ICE Chat 営業グループに問い合わせ、ここで入手できる ICE Chat データ サービス契約に署名する必要があります [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf) 。 この契約は ICE Chat と組織の間で締結され、Microsoft は関与しないものとします。 手順 2 で ICE Chat SFTP サイトをセットアップすると、ICE Chat は FTP 資格情報を直接組織に提供します。 次に、手順 3 でコネクタを設定するときに、これらの資格情報を Microsoft に提供します。
+- ICE チャットは、顧客に対して外部コンプライアンスの手数料を請求します。 組織は ICE Chat 営業グループに連絡して話し合い、ICE Chat データ サービス契約に署名する [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf) 必要があります。 この契約は ICE Chat と組織の間で締結され、Microsoft は関与しないものとします。 手順 2 で ICE Chat SFTP サイトをセットアップすると、ICE Chat は FTP 資格情報を直接組織に提供します。 次に、手順 3 でコネクタを設定するときに、これらの資格情報を Microsoft に提供するユーザー。
 
 - 手順 3 でコネクタを作成する前に、ICE Chat SFTP サイトをセットアップする必要があります。 ICE チャットを使用して SFTP サイトをセットアップした後、ICE チャットからのデータは毎日 SFTP サイトにアップロードされます。 手順 3 で作成したコネクタは、この SFTP サイトに接続し、チャット データを Microsoft 365 メールボックスに転送します。 SFTP は、転送プロセス中にメールボックスに送信される ICE チャット データも暗号化します。
+
+- ICE Chat コネクタは、1 日に合計 200,000 アイテムをインポートできます。 SFTP サイトに 200,000 を超えるアイテムがある場合、それらのアイテムは Microsoft 365 にインポートされません。
 
 - 手順 3 で ICE Chat コネクタを作成する管理者 (および手順 1 で公開キーと IP アドレスをダウンロードする管理者) には、Exchange Online の Mailbox Import Export 役割が割り当てられている必要があります。 この役割は、Microsoft 365コンプライアンス センターの [データ コネクタ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、Exchange Online の "Organization Management/組織の管理" 役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export 役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
@@ -91,7 +93,7 @@ ICE Chat データをアーカイブするために必要な実装手順の一�
 
 5. **[ICE Chat SFTP** サイトの資格情報の追加] ページの手順 3 で、次のボックスに必要な情報を入力し、[接続の検証] を **クリックします**。
 
-   - **会社コード:** 組織の ID。ICE Chat SFTP サイトのユーザー名として使用されます。
+   - **会社コード:** ICE Chat SFTP サイトのユーザー名として使用される組織の ID。
 
    - **パスワード:** ICE Chat SFTP サイトのパスワード。
 
