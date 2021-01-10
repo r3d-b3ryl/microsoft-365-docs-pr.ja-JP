@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 12338c1679a8e0c5921ec3f4f05df85989413ccd
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.openlocfilehash: 8cd67c9c188c97256ddddcdd57479f519bd33929
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784312"
+ms.locfileid: "49787964"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -46,9 +46,9 @@ Teams で使用するメールとファイルは、Teams のアイテム保持�
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Microsoft Teams での保持のしくみ
 
-アイテム保持ポリシーを使用して、Teams 内のチャットとチャネル メッセージを保持できます。 Teams のチャットは、チャットに含まれる各ユーザーのメールボックス内の隠しフォルダーに保存されます。また、Teams のチャネル メッセージは、チーム用のグループ メールボックス内の同様の隠しフォルダーに保存されます。
+アイテム保持ポリシーを使用して、Teams 内のチャットとチャネル メッセージからデータを保持できます。 Teams のチャットからのデータは、チャットに含まれる各ユーザーのメールボックス内の隠しフォルダーに保存されます。また、Teams のチャネル メッセージからのデータは、チーム用のグループ メールボックス内の同様の隠しフォルダーに保存されます。
 
-Azure を利用したチャット サービスでもこのデータが保存されますが、Teams でもこのサービスを使用していることを理解することが重要です。既定では、このサービスはデータを無期限に保存します。 このため、この Teams データを保持および削除する場合は、Teams の場所を使用する保持ポリシーを作成することをお勧めします。 この保持ポリシーでは、Exchange メールボックスとその基になる Azure を利用したチャット サービスの両方から完全にデータが削除される可能性があります。 詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](https://go.microsoft.com/fwlink/?linkid=871258)」、特に「[情報保護アーキテクチャ](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
+Azure を利用したチャット サービスでもこのデータが保存されますが、Teams でもこのサービスを使用していることを理解することが重要です。既定では、このサービスはデータを無期限に保存します。 このため、この Teams データを保持および削除する場合は、Teams の場所を使用する保持ポリシーを作成することをお勧めします。 この保持ポリシーでは、Exchange メールボックスとその基になる Azure を利用したチャット サービスの両方から完全にこのデータが削除される可能性があります。 詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](https://go.microsoft.com/fwlink/?linkid=871258)」、特に「[情報保護アーキテクチャ](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
 
 Teams のチャットとチャネル メッセージは、ユーザーまたはグループのメールボックスに対して構成されているアイテム保持ポリシーの影響を受けません。 Teams のチャットとチャネル メッセージは Exchange に保存されますが、この Teams のデータは、**Teams のチャネル メッセージ** と **Teams のチャット** の場所に対して構成されているアイテム保持ポリシーによってのみ含まれます。
 
