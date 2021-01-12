@@ -16,15 +16,15 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: 管理者は、Microsoft 365 の脅威保護について学習し、組織で使用する方法を構成できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3eec37f01bb39dda9f767ad32be96bbff43a2ee0
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 2951d5725237d572d357ac3fc6cff0ac4df7e8f0
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683249"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794438"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -43,7 +43,7 @@ ms.locfileid: "49683249"
 脅威保護機能は、すべての Microsoft *または* Office 365 サブスクリプションに含まれています。ただし、一部のサブスクリプションには高度な機能があります。 次の表に、この記事に含まれる保護機能と、最小サブスクリプション要件を示します。
 
 > [!TIP]
-> 監査を有効にする指示以外にも、Office 365 Exchange Online Protection **(EOP)** の一部としてマークされているマルウェア対策、フィッシング対策、スパム対策が開始されます。  これは、Defender for Office 365 の記事では **、(Office 365** 用 Defender) に EOP が含まれているか、EOP に組み込まれているか、または上に構築されるまで、奇数に思える可能性があります。
+> 監査を有効にする指示以外にも、Office 365 Exchange Online Protection **(EOP)** の一部としてマークされているマルウェア対策、フィッシング対策、スパム対策が開始されます。  これは、Defender for Office 365 の記事では **、(Office 365** 用 Defender) に EOP が含まれていると、EOP に基が構築されるまで、奇数に思える場合があります。
 
 ****
 
@@ -105,7 +105,7 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
 
 2. [既定 **のポリシー] をクリックします**。
 
-3. [偽装 **] セクションで** 、[編集] **をクリック** し、次の設定を指定します。
+3. [偽装 **] セクションで、[** 編集] **をクリック** し、次の設定を指定します。
 
    - [保護する **ユーザーの追加] タブで** 、[保護を有効にする] *をオン* にします。 次に、組織の役員、CEO、CFO、その他の上級リーダーなどのユーザーを追加します。 (個々のメール アドレスを入力するか、クリックしてリストを表示できます)。
 
@@ -115,7 +115,7 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
 
    - [メールボックス **インテリジェンス] タブ** で、メールボックス インテリジェンスが有効になっていることを確認し、メールボックス インテリジェンス ベースの偽装保護を有効にします。 In the **If email is sent by an impersonated user** list, choose Quarantine the **message**.
 
-   - [信頼 **できる送信者とドメイン** の追加] タブで、追加する信頼できる送信者またはドメインを指定します。
+   - [信頼 **できる送信者と** ドメインの追加] タブで、追加する信頼できる送信者またはドメインを指定します。
 
    - **設定** を **確認した後、[** 設定の確認] タブに保存します。
 
@@ -151,7 +151,7 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>パート 4 - 悪意のある URL とファイルからの保護 (Defender の安全なリンクと安全な添付ファイル Office 365)
 
-悪意のある URL やファイルからのクリック時の保護は、Microsoft Defender for Office [365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を含むサブスクリプションで利用できます。 安全な添付ファイルと[安全なリンクのポリシー](atp-safe-attachments.md)[によって](atp-safe-links.md)設定されます。
+悪意のある URL やファイルからのクリック時の保護は、Microsoft [Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を含むサブスクリプションで利用できます。 これは、安全な添付ファイル[と安全なリンクの](atp-safe-attachments.md)[ポリシーを使用して](atp-safe-links.md)設定されます。
 
 ### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全な添付ファイル ポリシー
 
@@ -167,7 +167,7 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
      - [安全な **添付ファイル] の [不明なマルウェアの応答** ] セクションで、[ブロック] を **選択します**。
      - [添付ファイル **のリダイレクト] セクション** で、[リダイレクトを有効にする] **オプションを選択します**。 検出されたファイルを確認する組織のセキュリティ管理者またはオペレーターの電子メール アドレスを指定します。
 
-     **[次へ]** をクリックします。
+     [**次へ**] をクリックします。
 
 3. On the **Applied to** page, click **a condition,** choose **Applied if: The recipient domain is,** click **Add,** select your domains, click **Add,** click **Done,** and then click **Next**.
 
@@ -197,7 +197,7 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
      - **組織内で送信される電子メール メッセージに安全なリンクを適用する**
      - **メッセージを配信する前に URL のスキャンが完了するのを待つ**
      - **組織内で送信される電子メール メッセージに安全なリンクを適用する**
-     - **ユーザーがクリックスルーして元の URL にアクセスできない**
+     - **ユーザーがクリックして元の URL にアクセスできない**
 
      [ **次へ**] をクリックします。
 
@@ -244,13 +244,13 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 5. [この通知 **をいつ送信する...] セクションで** 、次の値を設定します。
 
-   a. [アクティビティ **] ボックスの** 一覧で、[ **ファイル内の検出されたマルウェア] を選択します**。
+   a.  [アクティビティ **] ボックスの** 一覧で、[ **ファイル内の検出されたマルウェア] を選択します**。
 
    b. [ユーザー **] フィールドは** 空のままにします。
 
 6. [この警告の送信場所 **...]** セクションで、悪意のあるファイルが検出された場合に通知を受け取る必要がある 1 人または複数のグローバル管理者、セキュリティ管理者、またはセキュリティ 閲覧者を選択します。
 
-7. **Save**.
+7. **保存します**。
 
 アラートの詳細については、「セキュリティ/コンプライアンス センターでのアクティビティアラート& [参照してください](../../compliance/create-activity-alerts.md)。
 
@@ -264,7 +264,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 ## <a name="part-6---additional-settings-to-configure"></a>パート 6 - 構成する追加設定
 
-マルウェア、悪意のある URL とファイル、フィッシング、スパムからの保護を構成すると共に、ゼロアワー自動消去を構成することをお勧めします。
+マルウェア、悪意のある URL とファイル、フィッシング、スパムからの保護を構成するとともに、ゼロアワー自動消去を構成することをお勧めします。
 
 ### <a name="zero-hour-auto-purge-for-email-in-eop"></a>EOP での電子メールのゼロアワー自動消去
 

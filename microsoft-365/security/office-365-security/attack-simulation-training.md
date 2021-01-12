@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、ユーザーをフィッシング防止に関するトレーニングを行う方法を学習できます。
-ms.openlocfilehash: 41a5a503fbc8aa5e41760c1cf420d5e3c6047d86
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: e7582b1f74266d988ecdf8f6dac49019699e2bc1
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788053"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794258"
 ---
 # <a name="simulate-a-phishing-attack"></a>フィッシング攻撃をシミュレートする
 
@@ -35,7 +35,7 @@ Office 365 向け Microsoft Defender の攻撃シミュレーション トレー
 
 ## <a name="selecting-a-social-engineering-technique"></a>ソーシャル エンジニアリング手法の選択
 
-MITRE ATT と CK から選&[4](https://attack.mitre.org/techniques/enterprise/)つの®します。 さまざまな手法で使用できるペイロードは異なります。
+MITRE ATT と CK から選&[4](https://attack.mitre.org/techniques/enterprise/)つの®します。 さまざまな方法で使用できるペイロードは異なります。
 
 - **資格情報の取得** は、ユーザー名とパスワードを送信するための入力ボックスを持つよく知られた外観の Web サイトにユーザーを連れて行き、資格情報を収集します。
 - **マルウェアの添付** ファイルは、悪意のある添付ファイルをメッセージに追加します。 ユーザーが添付ファイルを開くと、攻撃者がターゲットのデバイスを侵害するのに役立つ任意のコードが実行されます。
@@ -47,7 +47,7 @@ MITRE ATT と CK から選&[4](https://attack.mitre.org/techniques/enterprise/)�
 >
 > ![Microsoft 365 セキュリティ センターでの攻撃シミュレーション トレーニング内での資格情報取得のシミュレーション手順](../../media/attack-sim-preview-sim-steps.png)
 
-手法を選択し、[次へ] をクリックした後、シミュレーションに名前と必要に応じて説明を指定します。
+この手法を選択し、[次へ] をクリックした後、シミュレーションに名前と必要に応じて説明を指定します。
 
 ## <a name="selecting-a-payload"></a>ペイロードの選択
 
@@ -98,4 +98,4 @@ MITRE ATT と CK から選&[4](https://attack.mitre.org/techniques/enterprise/)�
 
 **地域対応のタイムゾーン配信を有効** にして、シミュレートされた攻撃メッセージを、その地域に基づいて勤務時間内に従業員に配信します。
 
-完了したら、[次へ] **をクリック** し、シミュレーションの詳細を確認します。 任意の **パーツで [** 編集] をクリックして戻り、変更が必要な詳細を変更します。 完了したら、[送信] を **クリックします**。
+完了したら、[次へ] **をクリック** し、シミュレーションの詳細を確認します。 任意の **パーツの [** 編集] をクリックして戻り、変更が必要な詳細を変更します。 完了したら、[送信] を **クリックします**。

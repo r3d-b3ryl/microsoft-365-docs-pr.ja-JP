@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: 管理者は、Office 365 向け Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法について説明します。
-ms.openlocfilehash: c48e6001e6d51c5621d54b3d4149d90b71724fad
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: fbab4825625c33d027ceaa9aa9272c06e286ed61
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780250"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794222"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
 
-Microsoft は、さまざまなソーシャル エンジニアリング手法に対応した堅牢なペイロード カタログを提供し、攻撃シミュレーション トレーニングと組み合わせ可能です。 ただし、組織に対してより良く機能するカスタム ペイロードを作成する必要がある場合があります。 この記事では、Microsoft Defender で 365 用の攻撃シミュレーション トレーニングでペイロードOffice説明します。
+Microsoft は、さまざまなソーシャル エンジニアリング技術に対応した堅牢なペイロード カタログを提供し、攻撃シミュレーション トレーニングと組み合わせ可能です。 ただし、組織に対してより良く機能するカスタム ペイロードを作成する必要がある場合があります。 この記事では、Microsoft Defender for Office 365 の攻撃シミュレーション トレーニングでペイロードを作成する方法について説明します。
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -63,4 +63,4 @@ Microsoft は、さまざまなソーシャル エンジニアリング手法に
 ペイロードの作成は完了です。 次に、詳細を確認し、ペイロードのプレビューを表示します。 プレビューには、作成したインジケーターすべてが含まれます。 この手順では、ペイロードの各部分を編集できます。 問題がなければ、 **ペイロードを** 送信します。
 
 > [!IMPORTANT]
-> 作成したペイロードには、 **テナントがソース** として含まれます。 ペイロードを選択する場合は、テナントをフィルターで削除しなけれと **します**。
+> 作成したペイロードには、テナント **が** ソースとして含まれます。 ペイロードを選択する場合は、テナントをフィルターで削除しなけれと **します**。

@@ -1,6 +1,6 @@
 ---
 title: 365 セキュリティ設定に関する EOP Office Defender に関する Microsoft の推奨事項
-keywords: Office 365 のセキュリティ推奨事項、Sender Policy Framework、ドメイン ベースのメッセージ報告と準拠、DomainKeys Identified Mail、手順、動作方法、セキュリティベースライン、EOP のベースライン、Office 365 用 Defender のベースライン、Office 365 用 Defender のセットアップ、EOP のセットアップ、Office 365 用の Defender の構成、EOP、セキュリティ構成の構成
+keywords: Office 365 のセキュリティ推奨事項、Sender Policy Framework、ドメイン ベースのメッセージ報告と適合性、DomainKeys Identified Mail、手順、動作方法、セキュリティベースライン、EOP のベースライン、Office 365 用 Defender のベースライン、Office 365 用 Defender のセットアップ、EOP のセットアップ、Office 365 用の Defender の構成、EOP、セキュリティ構成の構成
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Exchange Online Protection (EOP) および Defender for Office 365 セキュリティ設定のベスト プラクティスは何ですか? 標準的な保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか。 また、Defender を 365 用に使用する場合、どのようなOfficeがありますか?
-ms.openlocfilehash: c9a9774e0866b009965eeb574384095c26fa780e
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: c93475f1215477281604abe72d70a60a75c41b3f
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760232"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794462"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP と Microsoft Defender の 365 セキュリティOffice推奨設定
 
@@ -31,9 +31,9 @@ ms.locfileid: "49760232"
 
 **Exchange Online Protection (EOP)** は、Microsoft 365 サブスクリプションのセキュリティの中核であり、悪意のあるメールが従業員の受信トレイに届かされるのを防きます。 しかし、より高度な新しい攻撃が毎日出現する中、多くの場合、強化された保護が必要になります。 **Microsoft Defender for Office 365** プラン 1 またはプラン 2 には、管理者にセキュリティ、制御、調査のレイヤーを強化する追加機能が含まれている。
 
-セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、推奨される Office 365 の EOP と Microsoft Defender には **、Standard** と **Strict** の 2 つのセキュリティ レベルがあります。 お客様の環境とニーズは異なりますが、これらのレベルのフィルタリングは、ほとんどの状況で不要なメールが従業員の受信トレイに届くのを防ぐのに役立ちます。
+セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、推奨する Office 365 の EOP と Microsoft Defender には **、Standard** と **Strict** の 2 つのセキュリティ レベルがあります。 お客様の環境とニーズは異なりますが、これらのレベルのフィルタリングは、ほとんどの状況で不要なメールが従業員の受信トレイに届かされるのを防ぐのに役立ちます。
 
-標準または厳密な設定をユーザーに自動的に適用するには、EOP および Microsoft Defender for [Office 365](preset-security-policies.md)の事前設定のセキュリティ ポリシーを参照してください。
+標準または厳密な設定をユーザーに自動的に適用するには [、「EOP と Microsoft Defender for Office 365](preset-security-policies.md)」を参照してください。
 
 > [!NOTE]
 > フィルター処理が正しく機能するには、メールボックスで迷惑メール ルールを有効にする必要があります。 既定では有効になっていますが、フィルター処理が機能していないと思われる場合はチェックする必要があります。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
@@ -43,7 +43,7 @@ ms.locfileid: "49760232"
 > [!TIP]
 > PowerShell Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) モジュールを使用すると、(管理者) これらの設定の現在の値を見つけるのに役立ちます。 具体的には **、Get-ORCAReport** コマンドレットは、スパム対策、フィッシング対策、その他のメッセージ検疫設定の評価を生成します。 ORCA モジュールは、以下からダウンロードできます <https://www.powershellgallery.com/packages/ORCA/> 。
 
-## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>EOP でのスパム対策、マルウェア対策、フィッシング対策の保護
+## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>EOP でのスパム対策、マルウェア対策、フィッシング対策保護
 
 スパム対策、マルウェア対策、フィッシング詐欺対策は、管理者が構成できる EOP 機能です。 次の Standard または Strict 構成をお勧めします。
 
@@ -76,7 +76,7 @@ ms.locfileid: "49760232"
 
 他にも、非推奨にされているスパム対策ポリシーには、高度なスパム フィルター (ASF) の設定がいくつかあります。 これらの機能の減価償却費のタイムラインに関する詳細については、この記事の外部で伝達されます。
 
-これらの ASF 設定は、Standardレベルと Strict レベルの両方でオフ **に** することをお **勧** めします。 ASF 設定の詳細については、Office 365 の「高度なスパム フィルター [(ASF) 設定](advanced-spam-filtering-asf-options.md)」を参照してください。
+これらの ASF 設定は、Standardレベルと Strict レベルの両方でオフ **に** することをお **勧** めします。 ASF の設定の詳細については、Office 365 の「高度なスパム フィルター [(ASF) の](advanced-spam-filtering-asf-options.md)設定」を参照してください。
 
 ****
 
@@ -153,7 +153,7 @@ ms.locfileid: "49760232"
 >
 > - 組織内のすべての受信者を自動的に保護する既定の安全なリンク ポリシーや安全な添付ファイル ポリシーはありません。 保護を取得するには、少なくとも 1 つの安全なリンク ポリシーと安全な添付ファイル ポリシーを作成する必要があります。
 >
-> - [SharePoint、OneDrive、および Microsoft Teams](atp-for-spo-odb-and-teams.md) の保護と [安全](safe-docs.md) なドキュメント保護用の ATP は、安全なリンク ポリシーに依存します。
+> - [SharePoint、OneDrive、および Microsoft Teams](atp-for-spo-odb-and-teams.md) の保護と [安全](safe-docs.md) なドキュメント保護用の ATP は、安全なリンク ポリシーに依存できません。
 
 サブスクリプションに Office 365 用の Microsoft Defender が含まれる場合、または Office 365 の Defender をアドオンとして購入した場合は、次の Standard または Strict 構成を設定します。
 
@@ -163,7 +163,7 @@ EOP のお客様は、前述のように基本的なフィッシング詐欺対�
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のフィッシング対策ポリシーの偽装設定
 
-これらの設定について詳しくは、「Microsoft Defender for Office 365 のフィッシング対策ポリシーの [偽装設定」をご覧](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)ください。 これらの設定を構成するには、「Defender でフィッシング詐欺対策ポリシーを構成する(Office [365)」を参照](configure-atp-anti-phishing-policies.md)してください。
+これらの設定について詳しくは、「Microsoft Defender for Office 365 のフィッシング対策ポリシーの [偽装設定」をご](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)覧ください。 これらの設定を構成するには、「Defender でフィッシング詐欺対策ポリシーを構成する(Office [365)」を参照](configure-atp-anti-phishing-policies.md)してください。
 
 ****
 
@@ -186,7 +186,7 @@ EOP のお客様は、前述のように基本的なフィッシング詐欺対�
 
 #### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のフィッシング対策ポリシーのスプーフィング設定
 
-これらは、EOP のスパム対策ポリシー設定 [で使用可能な設定と同じ設定です](#eop-anti-spam-policy-settings)。
+これらは、EOP のスパム対策ポリシー設定 [で使用できる設定と同じ設定です](#eop-anti-spam-policy-settings)。
 
 ****
 
@@ -214,7 +214,7 @@ defender for Office 365 の安全なリンクには、アクティブな安全�
 
 #### <a name="global-settings-for-safe-links"></a>安全なリンクのグローバル設定
 
-これらの設定を構成するには、「Defender で安全なリンクのグローバル設定を構成する(Office [365)」を参照](configure-global-settings-for-safe-links.md)してください。
+これらの設定を構成するには、「Defender for [Office 365](configure-global-settings-for-safe-links.md)」を参照してください。
 
 PowerShell では、これらの設定に [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) コマンドレットを使用します。
 
@@ -242,7 +242,7 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](https://docs.mic
 |---|:---:|:---:|:---:|---|
 |**メッセージ内の悪意のある可能性のある不明な URL のアクションを選択する** <p> _IsEnabled_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**Microsoft Teams 内の不明な URL または悪意のある可能性のある URL のアクションを選択する** <p> _EnableSafeLinksForTeams_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
-|**ファイルを指す疑わしいリンクやリンクのリアルタイム URL スキャンを適用する** <p> _ScanUrls_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
+|**ファイルを指す疑わしいリンクやリンクに対してリアルタイム URL スキャンを適用する** <p> _ScanUrls_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**メッセージを配信する前に URL のスキャンが完了するのを待つ** <p> _DeliverMessageAfterScan_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**組織内で送信される電子メール メッセージに安全なリンクを適用する** <p> _EnableForInternalSenders_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**ユーザーのクリックを追跡しない** <p> _DoNotTrackUserClicks_|オフ <p> `$false`|オフ <p> `$false`|オフ <p> `$false`|この設定 _(DoNotTrackUserClicks_ を設定) をオフにすると、ユーザーの `$false` クリックが追跡されます。|
@@ -268,7 +268,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](https://docs.mi
 |**安全なドキュメントでファイルが悪意のあるものとして識別された場合でも、ユーザーが保護ビューをクリックできる** <p> _AllowSafeDocsOpen_|オフ <p> `$false`|オフ <p> `$false`|この設定は、安全なドキュメントに関連しています。|
 |
 
-#### <a name="safe-attachments-policy-settings"></a>安全な添付ファイルポリシーの設定
+#### <a name="safe-attachments-policy-settings"></a>安全な添付ファイル ポリシー設定
 
 これらの設定を構成するには、「Defender で安全な添付ファイル ポリシーをセットアップする(Office [365)」を参照](set-up-atp-safe-attachments-policies.md)してください。
 
@@ -283,15 +283,15 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](https://doc
 |---|:---:|:---:|:---:|---|
 |**「安全な添付ファイル」の不明なマルウェアの応答** <p> _操作_|ブロック <p> `Block`|ブロック <p> `Block`|ブロック <p> `Block`||
 |**検出時に添付ファイルをリダイレクト** する: **リダイレクトを有効にする** <p> _リダイレクト_ <p> _RedirectAddress_|オフ。電子メール アドレスは指定されていません。 <p> `$true` <p> なし|オンにし、メール アドレスを指定します。 <p> `$true` <p> メール アドレス|オンにし、メール アドレスを指定します。 <p> `$true` <p> メール アドレス|確認のためにメッセージをセキュリティ管理者にリダイレクトします。|
-|**添付ファイルのマルウェア スキャンがタイム アウトした場合やエラーが発生した場合は、上記の選択を適用します。** <p> _ActionOnError_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
+|**添付ファイルのマルウェア スキャンがタイム アウトまたはエラーが発生した場合は、上記の選択を適用します。** <p> _ActionOnError_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |
 
 ## <a name="related-articles"></a>関連記事
 
-- Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) のベスト **プラクティスをお探しの** 場合 [Exchange Online でメール フロー ルールを構成するためのベスト プラクティスを参照してください](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
+- Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) のベスト **プラクティスをお探しですか**? [Exchange Online でメール フロー ルールを構成するためのベスト プラクティスを参照してください](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
 
 - 管理者とユーザーは、分析のために誤検知 (良いメールが悪いとマークされている) と偽陰性 (許可された悪いメール) を Microsoft に送信できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-- [EOP](set-up-your-eop-service.md)サービスのセットアップ方法、および[365 年 365](office-365-atp.md)日に Microsoft Defender を構成する方法については、次Officeしてください。 [「365 年 365](protect-against-threats.md)日の脅威から保護する」の役立つOffice忘れないでください。
+- [EOP](set-up-your-eop-service.md)サービスのセットアップ方法、および[365 年 365](office-365-atp.md)日に Microsoft Defender を構成する方法については、次Officeしてください。 'Protect against Threats in Office[365](protect-against-threats.md)' の役に立つ指示を忘れないでください。
 
 - **Windows** のセキュリティベースラインは、次の場所にあります。セキュリティベースラインはどこで取得できますか [?GPO/](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) オンプレミス オプションの場合、セキュリティベースラインを使用して Intune で Intune ベースのセキュリティ用に [Windows 10](https://docs.microsoft.com/intune/protect/security-baselines) デバイスを構成します。 最後に、Microsoft Defender for Endpoint と Microsoft Intune のセキュリティベースラインの比較については [、「Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)と Windows Intune のセキュリティベースラインを比較する」を参照してください。
