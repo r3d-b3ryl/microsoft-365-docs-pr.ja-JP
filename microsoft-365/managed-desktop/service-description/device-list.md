@@ -1,6 +1,6 @@
 ---
 title: Microsoft マネージド デスクトップ デバイス
-description: このトピックでは、Microsoft マネージド デスクトップで承認されたデバイスの仕様を示します。
+description: この記事では、Microsoft マネージド デスクトップで承認されたデバイスの仕様を示します。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e858ae1fc564fdcacbe181930ae1489d131965e7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: fff44098e3da17c68e4347fb14690945154edfdb
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659680"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841189"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップ デバイス 
 
@@ -23,9 +23,9 @@ Microsoft マネージド デスクトップの詳細については [、Microso
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Microsoft マネージド デスクトップに登録するには、デバイスが次のモデルの 1 つであり、RAM、プロセッサ ファミリ、およびディスク領域に関する一覧の仕様を満たすか、超えている必要があります。 
+Microsoft マネージド デスクトップに登録するには、デバイスが次のいずれかのモデルであり、RAM、プロセッサ ファミリ、およびディスク領域に関する記載されている仕様を満たすか、超えている必要があります。 
 
-ここに示すデバイスへのリンクは、参考情報のみを提供しています。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業し、正しい構成を選択してください。 この表のアーカイブ日付 *は* 、これらのモデルが Microsoft マネージド デスクトップのサービスライフを短くする日付です。この日付以降にオンボードされたデバイスは、Microsoft マネージド デスクトップから 3 年間の完全なサポート期間を受け取る予定はありません。 アーカイブされたデバイスは、Microsoft マネージド デスクトップで [アーカイブされたデバイスにも表示されます](archived-device-list.md)。 *サポート終了日* は、このモデルが Microsoft マネージド デスクトップでサポートされなくなる日付です。 この日付に、このモデルに登録されているデバイスはすべて、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
+ここに示すデバイスへのリンクは、参考情報のみを提供しています。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業し、正しい構成を選択してください。 この表のアーカイブ日付 *は* 、これらのモデルが Microsoft マネージド デスクトップのサービスライフを短くする日付です。この日付以降にオンボードされたデバイスは、Microsoft マネージド デスクトップから 3 年間の完全なサポート期間を受け取る予定はありません。 アーカイブされたデバイスは、Microsoft マネージド デスクトップでアーカイブ [されたデバイスにも表示されます](archived-device-list.md)。 *サポート終了日* は、このモデルが Microsoft マネージド デスクトップでサポートされなくなる日付です。 この日付に、このモデルに登録されているデバイスはすべて、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
 
 >[!NOTE]
 >この表にはデバイスをいつでも追加できますが、アーカイブまたはサポート終了日に影響を与える変更については、90 日間の通知が提供されます。 最近追加されたデバイスは * _でマーク *\** されます。
@@ -74,14 +74,14 @@ Microsoft マネージド デスクトップに登録するには、デバイス
 
 さらに、デバイスは次の条件を満たす必要があります。     
 
-- 特定の SKU がデバイスの要件に一覧表示されている場合は、注文時に使用してください。 これにより、デバイスが Microsoft マネージド デスクトップのソフトウェア要件に準拠します。 
+- 特定の SKU がデバイスの要件に一覧表示されている場合は、注文時に使用してください。 これにより、デバイスは Microsoft マネージド デスクトップのソフトウェア要件に準拠します。 
 - Windows の初回実行エクスペリエンスが完了していない。
 - デバイス登録機能を使用して Microsoft マネージド デスクトップ [に登録](https://aka.ms/mmddrhelp) する
 
 >[!NOTE]
 >2.0 GHz 以上のプロセッサを搭載したデバイスは、次のアクティビティに関与するユーザーにより優れたエクスペリエンスを提供します。
 >- Teams でのビデオ会議の使用。 詳細 [については、Microsoft Teams のハードウェア要件](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) を参照してください。
->-  複数の異なるワークロードに 1 つのデバイスを使用する。
+>-  複数の異なるワークロードで 1 つのデバイスを使用する。
 >- 複数のモニターを使用する。
 
 **その他のヘルプ**

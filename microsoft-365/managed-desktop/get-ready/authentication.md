@@ -1,6 +1,6 @@
 ---
 title: Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する
-description: Azure AD が認証を提供するためにオンプレミスの AD と通信できることを確認するための重要な手順
+description: 認証を提供するために Azure ADオンプレミスの組織と通信AD確認するための重要な手順
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,71 +9,71 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7181e81a2db94ce26fb8601f8b9156c65084c439
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: c1732dc17188427f9a181d1c47abe71bb8f39584
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289581"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841413"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する
 
-Microsoft マネージドデスクトップでは、デバイスは自動的に Azure Active Directory (Azure AD) に参加します。 これは、オンプレミスの Active Directory を使用している場合に、Azure AD に参加しているデバイスがオンプレミスの Active Directory と通信できることを確認するために、いくつかのことを確認する必要があることを意味します。 
+Microsoft マネージド デスクトップでは、デバイスは自動的に Azure Active Directory (Azure AD) に参加します。 このため、オンプレミスの Active Directory を使用している場合は、Azure AD に参加しているデバイスがオンプレミスの Active Directory と通信できるよう、いくつかのことを確認する必要があります。 
 
 > [!NOTE]  
-> *ハイブリッド* Azure AD join は、Microsoft マネージドデスクトップではサポートされていません。
+> *ハイブリッド* Azure AD参加は、Microsoft マネージド デスクトップではサポートされていません。
 
-Azure Active Directory では、ユーザーはシングルサインオン (SSO) を利用できます。これは、通常、リソースを使用するたびに資格情報を提供する必要がないことを意味します。
+Azure Active Directory を使用すると、ユーザーはシングル Sign-On (SSO) を利用できます。つまり、通常、ユーザーはリソースを使用する度に資格情報を提供する必要がなされません。
 
-Azure Active Directory への参加の詳細については、「 [How to: Plan For AZURE AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)」を参照してください。 Azure AD に参加しているデバイスのシングルサインオン (SSO) に関する背景情報については、「Azure AD に参加している [デバイスでの sso とオンプレミスのリソースのしくみ](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)」を参照してください。
-
-
-このトピックでは、ローカルの Active Directory 接続に依存するアプリとその他のリソースが、Microsoft マネージドデスクトップで円滑に動作するようにするために確認する必要がある事柄について説明します。
+Azure Active Directory への参加の詳細については、「方法: Azure active Directory への参加の実装AD [参照してください](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)。 Azure AD に参加しているデバイスでのシングル Sign-On (SSO) の背景情報については [、「Azure](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)AD に参加しているデバイスでのオンプレミス リソースへの SSO の動作」を参照してください。
 
 
-## <a name="single-sign-on-for-on-premises-resources"></a>オンプレミスのリソースのシングルサインオン
+この記事では、ローカルの Active Directory 接続に依存するアプリや他のリソースが Microsoft マネージド デスクトップで円滑に動作するために確認する必要がある項目について説明します。
 
-UPN とパスワードを使用したシングルサインオン (SSO) は、Microsoft マネージドデスクトップデバイスでは既定で有効になっています。 ただし、ユーザーは Windows Hello for Business を使用することもできます。これには、いくつかのセットアップ手順が必要になります。 
 
-### <a name="single-sign-on-by-using-upn-and-password"></a>UPN とパスワードを使用したシングルサインオン
+## <a name="single-sign-on-for-on-premises-resources"></a>オンプレミス Sign-On単一のリソース
 
-ほとんどの組織では、ユーザーは SSO を使用して、Microsoft マネージドデスクトップデバイス上の UPN とパスワードによる認証を行うことができます。 ただし、これが正常に動作することを確認するには、次の点を再度確認する必要があります。
+MICROSOFT Sign-On デバイスでは、UPN とパスワードを使用したシングル クライアント (SSO) が既定で有効になっています。 ただし、ユーザーは Windows Hello for Business も使用できます。追加のセットアップ手順が必要です。 
 
-- Azure AD Connect がセットアップされており、Windows Server 2008 R2 以降を実行しているオンプレミスの Active Directory サーバーを使用していることを確認します。
-- Azure AD Connect でサポートされているバージョンが実行されており、次の3つの属性を Azure AD と同期するように設定されていることを確認します。 
-    - 社内の Active Directory の DNS ドメイン名 (ユーザーが配置されている場所)
-    - オンプレミスの Active Directory の NetBIOS (ユーザーが配置されている場所)
+### <a name="single-sign-on-by-using-upn-and-password"></a>UPN Sign-Onパスワードを使用した単一の構成
+
+ほとんどの組織では、ユーザーは MICROSOFT マネージド デスクトップ デバイスで SSO を使用して UPN とパスワードで認証できます。 ただし、この関数が動作するには、次のことを確認する必要があります。
+
+- Azure AD Connect がセットアップされ、その後で実行されているオンプレミスの Active Directory サーバー Windows Server 2008 R2確認します。
+- Azure AD Connect がサポートされているバージョンを実行し、これら 3 つの属性を Azure AD と同期するように設定AD。 
+    - DNS ドメイン Active Directory の名前 (ユーザーが存在する場所)
+    - オンプレミスの Active Directory の NetBIOS (ユーザーが存在する場所)
     - ユーザーの SAM アカウント名
 
 
-### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Windows Hello for Business を使用したシングルサインオン
+### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Windows Hello for Business Sign-On使用した単一の機能
 
-Microsoft マネージドデスクトップデバイスでは、Windows Hello for Business を使用することで、ユーザーにすばやくパスワードを提供することがなくなります。 ユーザーがそれぞれの UPN とパスワードを指定しなくても、Windows Hello for Business が動作するようにするには、「microsoft [hello For business を使用して、オンプレミスのシングルサインオン用に AZURE AD 参加済みデバイスを構成](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) する」を参照して、要件を確認し、そこに示されている手順に従います。
+また、Microsoft マネージド デスクトップ デバイスでは、Windows Hello for Business を使用して、ユーザーに高速でパスワードレスなエクスペリエンスを提供します。 ユーザーがそれぞれの UPN とパスワードを入力せずに Windows Hello for Business が動作するようにするには、「Azure AD に参加しているデバイスをオンプレミスの Single-Sign 用に構成する」にアクセスして [、Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) を使用して要件を確認し、そこで提供されている手順に従ってください。
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>認証を使用するアプリとリソース
 
-Azure Active Directory と連携するようにアプリをセットアップするための詳細なガイダンスについては、「Azure コンテンツセットの [アプリケーションとリソースに関する考慮事項](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) 」を参照してください。 概要:
+Azure Active Directory [で動作する](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) アプリの設定に関する完全なガイダンスについては、Azure コンテンツ セットのアプリケーションとリソースに関する考慮事項を理解するを参照してください。 まとめると、以下のようになります。
 
 
-- Azure AD app gallery に追加されたものなど、 **クラウドベースのアプリ**を使用している場合、多くの場合、Microsoft マネージドデスクトップを操作するための準備は必要ありません。 ただし、Web アカウントマネージャー (WAM) を使用していない Win32 アプリでも、ユーザーに対して認証を求めるメッセージが表示されることがあります。
+- Azure ADアプリ ギャラリーに追加されたアプリなど、クラウドベースのアプリを使用する場合、Microsoft マネージド デスクトップで動作するためにそれ以上の準備は必要ない場合があります。 ただし、Web アカウント マネージャー (WAM) を使用しない Win32 アプリでは、ユーザーに認証を求めるメッセージが表示される場合があります。
 
-- **オンプレミスでホスト**されているアプリの場合は、それらのアプリをブラウザーの信頼済みサイトの一覧に追加してください。 これにより、ユーザーが資格情報の入力を求められることなく、Windows 認証がシームレスに動作するようになります。 これを行うには、[構成可能な設定のリファレンス](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref)で、[[信頼済みサイト](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites)] を参照してください。
+- オンプレミスでホスト **されているアプリの** 場合は、ブラウザーの信頼済みサイト一覧にそれらのアプリを追加してください。 この手順を実行すると、ユーザーに資格情報の入力を求めることなく、Windows 認証をシームレスに動作できます。 アプリを追加するには、構成可能な設定 [のリファレンスの](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) 「信頼済み [サイト」を参照してください](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref)。
 
-- Active Directory フェデレーションサービスを使用している場合は、「AD FS を使用して [シングルサインオンを確認および管理](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100))する」の手順を使用して、SSO が有効になっていることを確認します。 
+- Active Directory フェデレーション サービスを使用している場合は、「AD FS を使用してシングル サインオンを確認および管理する」の手順に従って [SSO が有効ADします](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100))。 
 
-- **オンプレミス**のアプリで古いプロトコルを使用する場合、デバイスが認証のためにオンプレミスのドメインコントローラーにアクセスできる限り、特別なセットアップは不要です。 ただし、これらのアプリケーションにセキュリティで保護されたアクセスを提供するには、Azure AD アプリケーションプロキシを展開する必要があります。 詳細については、「 [Azure Active Directory のアプリケーションプロキシを使用したオンプレミスアプリケーションへのリモートアクセス](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)」を参照してください。
+- オンプレミス **で古い** プロトコルを使用するアプリの場合、デバイスが認証のためにオンプレミスのドメイン コントローラーにアクセスできる限り、追加のセットアップは必要ありません。 ただし、これらのアプリケーションに安全なアクセスを提供するには、Azure AD Application Proxy を展開する必要があります。 詳細については、Azure Active Directory のアプリケーション プロキシを介したオンプレミス アプリケーションへのリモート アクセス [に関するページを参照してください](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
 
-- オンプレミスで実行され、 **コンピューター認証に依存** するアプリはサポートされていないため、これらを新しいバージョンに置き換えることを検討する必要があります。
+- オンプレミスで **実行され** 、コンピューター認証に依存するアプリはサポートされていないので、新しいバージョンに置き換える必要があります。
 
 ### <a name="network-shares-that-use-authentication"></a>認証を使用するネットワーク共有
 
-デバイスが UNC パスを使用してオンプレミスのドメインコントローラーにアクセスできる限り、ユーザーがネットワーク共有にアクセスするための特別なセットアップは必要ありません。
+UNC パスを使用してデバイスがオンプレミスのドメイン コントローラーにアクセスできる限り、ユーザーがネットワーク共有にアクセスするために追加のセットアップは必要ありません。
 
 ### <a name="printers"></a>プリンター
 
-Microsoft マネージドデスクトップデバイスは、 [ハイブリッドクラウド印刷](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)を構成していない限り、オンプレミスの Active Directory に公開されているプリンターに接続することはできません。
+Microsoft マネージド デスクトップ デバイスは、ハイブリッド クラウド印刷を構成しない限り、オンプレミスの Active Directory に発行されたプリンター [に接続できません](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)。
 
-プリンターをクラウドのみの環境で自動的に検出することはできませんが、デバイスがオンプレミスのドメインコントローラーにアクセスできる限り、ユーザーはプリンターのパスまたはプリンターキューのパスを使用してオンプレミスのプリンターを使用できます。
+クラウド専用環境でプリンターを自動的に検出することはできませんが、ユーザーは、デバイスがオンプレミスのドメイン コントローラーにアクセスできる限り、プリンター パスまたはプリンター キュー パスを使用してオンプレミスのプリンターを使用できます。
 
 <!--add fuller material on printers when available-->

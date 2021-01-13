@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Apps for enterprise
-description: Microsoft 365 アプリの展開方法、更新方法、および設定の管理方法
+description: Microsoft 365 Apps の展開方法、更新方法、設定の管理方法
 keywords: 変更履歴
 ms.service: m365-md
 ms.sitesec: library
@@ -10,157 +10,157 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 767489ba9f9ac63bc1a2d8b4999b6634335b1aef
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 98995084fb7de9ecb434b70b5d38793a20675f19
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547748"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840351"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
 ## <a name="initial-deployment"></a>初期展開
 
-Microsoft マネージドデスクトップでは、Microsoft 365 Apps for enterprise (64 ビット) は、すべての [プログラムデバイス](../service-description/device-list.md)上のイメージの一部としてインストールされます。 次のすべてのアプリケーションが、配信時にデバイス上に存在する必要があります。
+Microsoft マネージド デスクトップを使用すると、Microsoft 365 Apps for enterprise (64 ビット) がすべてのプログラム デバイスにイメージの一部として [インストールされます](../service-description/device-list.md)。 次のアプリケーションはすべて、配信時にデバイスに存在する必要があります。
 
 - Word
 - Excel
 - PowerPoint
 - Outlook
-- Publisher
+- 発行者
 - Access
 - Skype for Business
 - OneNote
 
-この方法では、ネットワークへの影響を最小限に抑え、ユーザーがデバイスを受信するとすぐに生産性を向上させることができます。 その後、管理対象デバイスに追加のポリシーを展開して、使用するアプリケーションを設定します。
+この方法では、ネットワークへの影響を最小限に抑え、ユーザーがデバイスを受け取り次第、生産性を高めることができます。 その後、管理対象デバイスにさらに多くのポリシーを展開して、使用するアプリケーションをセットアップします。
 
 > [!NOTE]
-> Microsoft Teams は、Microsoft 365 enterprise 用アプリとは別に展開され、基本イメージには含まれていません。 
+> Microsoft Teams は、Microsoft 365 Apps for enterprise とは別に展開され、基本イメージには含まれません。 
 
-### <a name="available-deployment-to-users"></a>ユーザーに対して使用可能な展開
+### <a name="available-deployment-to-users"></a>ユーザーが利用可能な展開
 
-ユーザーが何らかの理由で、デバイス上に Microsoft 365 アプリを持っていない場合は、パッケージを使用してデバイスを予期した状態に戻すことができます。 **モダンワークプレース-Office Office365_Install**グループにユーザーを追加すると、会社のポータルでアプリを使用できるようになります。
+何らかの理由でユーザーのデバイスに Microsoft 365 アプリがインストールされていない場合は、パッケージを使ってデバイスを予期した状態に戻します。 モダン **Workplace-Office-Office365_Install** グループにユーザーを追加すると、ポータル サイトでアプリが利用できます。
 
-### <a name="microsoft-365-apps-for-enterprise-32-bit"></a>Microsoft 365 enterprise 用アプリ (32 ビット)
+### <a name="microsoft-365-apps-for-enterprise-32-bit"></a>Microsoft 365 Apps for enterprise (32 ビット)
 
-Microsoft マネージドデスクトップでは、32ビットバージョンの M365 Apps for enterprise を展開することはサポートされていません。
+Microsoft マネージド デスクトップでは、M365 Apps for enterprise の 32 ビット バージョンの展開はサポートされていません。
 
-## <a name="updates-to-microsoft-365-apps"></a>Microsoft 365 アプリの更新
+## <a name="updates-to-microsoft-365-apps"></a>Microsoft 365 アプリの更新プログラム
 
-Microsoft 365 アプリは [月次エンタープライズチャネル](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)で更新するように設定されています。 この方法では、ユーザーに毎月新しい Office の機能が提供されますが、予測可能なリリーススケジュールに従って1か月あたりの更新プログラムを1つだけ受け取ることができます。 更新プログラムは月の第2火曜日にリリースされます。これらの更新プログラムには、機能、セキュリティ、および品質の更新が含まれます。 これらの更新プログラムは自動的に実行され、その特定のチャネルの Office CDN から直接プルされます。
+Microsoft 365 Apps are set to update on the [Monthly Enterprise Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). この方法では、毎月新しい Office 機能をユーザーに提供しますが、予測可能なリリース スケジュールで毎月 1 回の更新プログラムを受信します。 更新プログラムは、毎月第 2 火曜日にリリースされます。これらの更新プログラムには、機能更新プログラム、セキュリティ更新プログラム、品質更新プログラムが含まれる場合があります。 これらの更新は自動的に行われるので、その特定のチャネルの Office CDN から直接取得されます。
 
-Microsoft マネージドデスクトップでは、各リリースが環境内の潜在的な問題を識別するために staggers れます。 Microsoft 365 App product グループからのリリース後、28日以内に公開を完了します。 Microsoft マネージドデスクトップでは、次のように、別のグループにリリースを更新して、検証とテストの時間を確保します。 
+Microsoft マネージド デスクトップは、各リリースをずらして、環境内の潜在的な問題を特定します。 Microsoft 365 アプリ製品グループからのリリースの 28 日後にロールアウトが完了します。 Microsoft マネージド デスクトップでは、更新プログラムのリリースをさまざまなグループにスケジュールして、次のように検証とテストに時間を割きます。 
 
-- テスト: 0 日
-- 最初: 0 日
-- Fast: 7 日間
-- 広範:21 日
+- テスト: ゼロ日
+- 最初: ゼロ日
+- 高速: 7 日
+- 広範: 21 日
 
-Microsoft マネージドデスクトップでは、デバイスの [更新期限](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) が7日間に設定されています。 更新プログラムが利用可能になったら、7日以内にインストールする必要があります。 ユーザーには、いくつかの場所で更新が必要であることが [通知](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) されます。これは、システムトレイの期限よりも12時間前に、その期限よりも前に警告を表示します。 更新を完了するには、すべての Microsoft 365 アプリを閉じる必要があります。
+Microsoft マネージド デスクトップは、デバイスの 7 日間 [の更新期限](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) を設定します。 更新プログラムが利用可能な場合は、7 日以内にインストールする必要があります。 ユーザーには[](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps)、期限の 12 時間前にシステム トレイにあるアプリケーションの複数の場所で更新が必要なという通知が表示され、期限の 15 分前に警告が表示されます。 更新を完了するには、すべての Microsoft 365 アプリを終了する必要があります。
 
 ### <a name="pausing-or-rolling-back-an-update"></a>更新プログラムの一時停止またはロールバック
 
-何らかの理由で Microsoft 365 アプリの更新を一時停止またはロールバックする必要がある場合は、Microsoft マネージドデスクトップポータルを使用して [管理者サポート要求](../working-with-managed-desktop/admin-support.md) をファイルします。
+何らかの理由で Microsoft 365 アプリの更新プログラムを一時停止またはロールバック[](../working-with-managed-desktop/admin-support.md)する必要がある場合は、Microsoft マネージド デスクトップ ポータルから管理者サポート要求を送信します。
 
-Microsoft マネージドデスクトップでは、リリース中にすべての Microsoft 365 アプリのエラー率が監視されます。 新しいリリースとその先行タスクの間で品質に著しい違いがある場合は、Microsoft Managed Desktop 管理ポータルにお問い合わせください。 重要度によっては、リリースを一時停止するかどうかを確認するか、問題を緩和するための処置が行われたことを知らせます。 
+リリース中、Microsoft マネージド デスクトップは、すべての Microsoft 365 アプリのエラー率を監視します。 新しいリリースと先行リリースの品質に大きな違いがある場合は、Microsoft マネージド デスクトップ管理ポータルを通じてお客様にお問い合わせください。 重大度に応じて、リリースを一時停止するか、問題を軽減するための処置を行ったか通知されます。 
 
 ### <a name="delivery-optimization"></a>配信の最適化
 
-配信の最適化は、Windows 10 で使用できるピアツーピアの配布テクノロジです。 これにより、デバイスがインターネット経由で Microsoft からダウンロードしたコンテンツ (更新プログラムなど) を共有できるようになります。 これにより、デバイスは、Microsoft から更新プログラムを完全にダウンロードするのではなく、ローカルネットワーク上の別のデバイスから更新プログラムの一部を取得できるので、ネットワーク帯域幅を減らすことができます。
+配信の最適化は、Windows 10 で利用できるピアツーピアの配布テクノロジです。 これにより、デバイスは、インターネットを通して Microsoft からダウンロードした更新プログラムなどのコンテンツを共有できます。 デバイスは、Microsoft から更新プログラムを完全にダウンロードする代わりに、ローカル ネットワーク上の別のデバイスから更新プログラムの一部を取得することができるため、ネットワーク帯域幅の削減に役立ちます。
 
-既定では、[配信の最適化](https://docs.microsoft.com/deployoffice/delivery-optimization)は、Windows 10 Enterprise または windows 10 のエデュケーションエディションを実行しているデバイスで有効になっています。 
+[配信の](https://docs.microsoft.com/deployoffice/delivery-optimization) 最適化は、Windows 10 Enterprise または Windows 10 Education エディションを実行しているデバイスで既定で有効になっています。 
 
-## <a name="settings-managed-by-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップによって管理される設定
+## <a name="settings-managed-by-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップで管理される設定
 
-Microsoft では、一部の設定をサービスの一部として管理しています。 Microsoft マネージドデスクトップは Office セキュリティベースラインを管理していませんが、自分で設定するには、[ [管理の設定](#settings-you-manage) ] セクションのガイダンスに従ってください。
+Microsoft は、サービスの一部としていくつかの設定を管理します。 Microsoft マネージド デスクトップは、Office セキュリティ基本計画を管理しますが、「管理する設定」セクションのガイダンスに従って自分で[設定できます。](#settings-you-manage)
 
 ### <a name="update-settings"></a>設定を更新する
 
-Microsoft マネージドデスクトップでは、管理対象デバイスのすべての [更新設定](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) が保持されており、これらの設定を変更する必要があります。
+Microsoft マネージド デスクトップでは、 [管理対象デバイスのすべての](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) 更新設定が維持されます。これらの設定を変更する必要があります。
 
 ### <a name="set-updates-to-occur-automatically"></a>更新が自動的に発生するように設定する
 
-**既定値**: 有効
+**既定値 :** 有効
 
-このポリシーは、クラウドからすべての Office デバイスを最新の状態に保つために構成されます。 
+このポリシーは、すべてのデバイスOfficeクラウドから最新の状態に保つ必要があります。 
 
-### <a name="set-a-deadline-when-updates-have-to-be-applied"></a>更新プログラムを適用する期限を設定する
+### <a name="set-a-deadline-when-updates-have-to-be-applied"></a>更新プログラムを適用する必要がある期限を設定する
 
-**既定値**は次のとおりです。7日
+**既定値 :** 7 日
 
-**Updatedeadline 期限**ポリシーは、更新がデバイスに適用されるまでのユーザーの猶予期間を構成するために使用されます。 この期限ポリシーでは、ユーザーに対して、デバイスで必要な変更について [通知](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) することもトリガーされます。  
+**UpdateDeadline ポリシーは**、更新プログラムがデバイスに適用される前にユーザーが持っている猶予期間を構成するために使用されます。 この期限ポリシーは、ユーザー [に通知](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) をトリガーして、デバイスに必要な変更をユーザーに通知します。  
 
-### <a name="defer-updates-on-a-device-for-a-period"></a>デバイス上の更新プログラムを一定期間保留する
+### <a name="defer-updates-on-a-device-for-a-period"></a>デバイスの更新プログラムを一期間延期する
 
-このポリシーは、更新管理デバイスグループごとに異なる方法で構成されており、更新の対象を満たすために Microsoft マネージドデスクトップに必要です。  
+このポリシーは、更新プログラム管理デバイス グループごとに異なる方法で構成され、Microsoft マネージド デスクトップが更新ターゲットを満たす必要があります。  
 
-- テスト: 0 日
-- 最初: 0 日
-- ファスト7日
-- 広範:21 日
+- テスト: ゼロ日
+- 最初: ゼロ日
+- ファスト 7 日間
+- 広範: 21 日
 
-### <a name="update-notifications-settings"></a>通知の設定を更新する
+### <a name="update-notifications-settings"></a>通知設定を更新する
 
-**既定値**: False
+**既定値 :** False
 
-Microsoft マネージドデスクトップデバイスで [更新通知を表示しない] 設定が **False** に設定されている場合は、更新が必要なときに [通知](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) することで、ユーザーに最高の更新プログラムを提供します。
+Microsoft マネージド デスクトップ デバイスでは、"更新通知を非表示にする" 設定が **False** に設定され、[](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps)更新が必要なときにユーザーに通知することで、ユーザーに最適な更新エクスペリエンスを提供できます。
 
 ### <a name="specify-a-location-to-look-for-updates"></a>更新プログラムを検索する場所を指定する
 
-**既定値**: 月次エンタープライズチャネル
+**既定値**: 月次エンタープライズ チャネル
 
-更新スケジュールを設定するには、必要に応じて、 **Updatepath** ポリシーと **UpdateChannel** ポリシーの組み合わせを使用します。 これらのポリシーは、すべての Office デバイスが毎月のエンタープライズチャネルの CDN から直接更新を受信するように設定されています。
+**UpdatePath** ポリシーと **UpdateChannel** ポリシーの組み合わせは、更新スケジュールを達成するために必要に応じて使用されます。 これらのポリシーは、すべての Office デバイスが月次エンタープライズ チャネルの更新プログラムを CDN から直接受信するための設定です。
 
-### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Microsoft 365 アプリのターゲットバージョンを指定する
+### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Microsoft 365 アプリのターゲット バージョンを指定する
 
-ターゲットバージョンポリシーは、特定のバージョンの Office をロールバックまたは pin するために Microsoft マネージドデスクトップによって使用される場合があります。 
+ターゲット バージョン ポリシーは、特定のバージョンのアプリをロールバックまたはピン留めするために、Microsoft マネージド デスクトップで使用される場合Office。 
 
 
-### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>Office 自動更新を有効または無効にするオプションを非表示にする
+### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>自動更新を有効または無効にするオプションOffice非表示にする
 
-**既定値**: 有効
+**既定値 :** 有効
 
-Microsoft マネージドデスクトップでは、Microsoft 365 アプリケーションの更新対象を満たすために、この設定が必要になります。 
+この設定は、Microsoft 365 アプリケーションの更新ターゲットを Microsoft マネージド デスクトップが満たすために必要です。 
 
-### <a name="first-run-settings"></a>最初の実行時の設定 
+### <a name="first-run-settings"></a>最初の実行の設定 
 
-Office の初回実行時の動作に影響を与える設定がいくつかあります。
+初回実行時の動作に影響を与える設定Officeがあります。
 
-### <a name="accept-the-license-terms-on-behalf-of-the-end-user"></a>エンドユーザーの代わりにライセンス条項に同意する
+### <a name="accept-the-license-terms-on-behalf-of-the-end-user"></a>エンド ユーザーの代わりにライセンス条項に同意する
 
-**既定値**: 無効
+**既定値 :** 無効
 
-ユーザーが Microsoft 365 アプリを初めて開いたときに、ライセンス条項に同意するように求めるメッセージが表示されます。 ユーザーの代わりにライセンス条項に同意する場合は、この設定を有効にするように Microsoft Managed Desktop Operations team にサービス要求をファイルします。 
+ユーザーが初めて Microsoft 365 アプリを開くと、ライセンス条項に同意するように求めるメッセージが表示されます。 ユーザーの代わりにライセンス条項に同意する場合は、Microsoft マネージド デスクトップ 操作チームにサービス要求を送信し、この設定を有効にしてください。 
 
-### <a name="suppress-outlook-mobile-check-box"></a>Outlook mobile の非表示のチェックボックス
+### <a name="suppress-outlook-mobile-check-box"></a>Outlook モバイルのチェック ボックスを非表示にします。
 
-**既定値**: 無効
+**既定値 :** 無効
 
-ユーザーが初めて Outlook を開いたときに、Outlook Mobile をインストールするように求めるメッセージが表示されます。 このチェックボックスが表示されないようにするには、Microsoft Managed Desktop Operations team に対してサービス要求を実行し、デバイスでこの設定を有効にするように求めます。 
+ユーザーが初めて Outlook を開くと、Outlook Mobile のインストールを求めるメッセージが表示されます。 ユーザーにこのチェック ボックスを表示したくない場合は、Microsoft マネージド デスクトップ操作チームにサービス要求を送信し、デバイスでこの設定を有効にしてください。 
 
 ## <a name="other-settings"></a>その他の設定
 
-Microsoft のマネージドデスクトップは、必要に応じて、お客様365の代わりに設定することもできます。 
+Microsoft マネージド デスクトップでは、必要に応じてユーザーに代わって構成できる他の Microsoft 365 アプリ設定があります。 
 
 ### <a name="disable-personal-onedrive"></a>個人用 OneDrive を無効にする
 
-**既定値**: 無効
+**既定値 :** 無効
 
-組織によっては、デバイス上の企業および個人の両方のファイルにアクセスするユーザーに懸念があります。 この設定を有効にするには、Microsoft Managed Desktop Operations teams を使用してサービス要求をファイルにすることができます。 
+一部の組織では、ユーザーがデバイス上の企業ファイルと個人用ファイルの両方にアクセスできると懸念しています。 Microsoft マネージド デスクトップ操作チームにサービス要求を送信して、この設定を有効にできます。 
 
 ## <a name="settings-you-manage"></a>管理する設定
 
-Microsoft Managed Desktop がまだサービスの一部として設定されていないその他のポリシーが多数あります。 これらは、 [Office Cloud Policy](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) service を使用する Microsoft Intune を使用して構成できます。 これを行うには、次の手順を実行します。
+Microsoft マネージド デスクトップがサービスの一部としてまだ設定していないポリシーは他にも多数存在します。 これらのポリシーは、Microsoft Intune を使用して構成できます。この Intune では、Office [クラウド ポリシー サービスを使用](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) します。 これらのポリシーを設定するには、次の手順を実行します。
 
-1.  Microsoft エンドポイントマネージャー管理センターにサインインします。
-2.  **Office アプリのアプリ > ポリシーの選択 > 作成**
-3.  [ポリシー構成の **作成** ] ページで、次の操作を行います。
+1.  Microsoft Endpoint Manager 管理センターにサインインします。
+2.  [ **作成] >アプリの [アプリOfficeポリシー>選択する**
+3.  [ポリシー **構成の作成]** ページで、次の操作を行います。
     - 名前を入力します。
     - 説明を入力します (省略可能)。
-    - [ **割り当て**] で、このポリシーを Microsoft 365 Apps のすべてのユーザーに適用するか、または web 用に Office を使用してドキュメントに匿名でアクセスするユーザーに対して行うかを選択します。
-    - ポリシー構成に割り当てられている AAD ベースのセキュリティグループを選択します。 各ポリシー構成は1つのグループにのみ割り当てることができ、各グループには1つのポリシー構成しか割り当てることができません。
-    - ポリシーの構成に含めるポリシー設定を構成します。 ポリシー設定名を検索して、構成するポリシー設定を見つけることができます。 また、ポリシーが推奨セキュリティベースラインであるかどうか、およびポリシーが構成されているかどうかについて、アプリケーションに対してフィルター処理することもできます。 [プラットフォーム] 列は、ポリシーが Microsoft 365 アプリ for enterprise for Windows のデバイス、web 用の Office、またはすべてに適用されているかどうかを示します。
-4.  選択を行った後、[ **作成**] を選択します。
+    - 割 **り** 当てで、このポリシーを Microsoft 365 Apps for enterprise のすべてのユーザーに適用するか、Office for the web を使用してドキュメントに匿名でアクセスするユーザーに適用するか選択します。
+    - ポリシー構成に割り当てられている AAD ベースのセキュリティ グループを選択します。 各ポリシー構成は 1 つのグループにのみ割り当て、各グループには 1 つのポリシー構成のみを割り当てることができます。
+    - ポリシー構成に含めるポリシー設定を構成します。 ポリシー設定名を検索して、構成するポリシー設定を検索できます。 また、ポリシーが推奨されるセキュリティベースラインかどうか、およびポリシーが構成されているかどうかを基に、アプリケーションをフィルター処理できます。 プラットフォーム列は、ポリシーが Microsoft 365 Apps for enterprise for Windows デバイス、Office for the web、またはすべてに適用されるかどうかを示します。
+4.  選択が行われたら、[作成] を選択 **します**。
 
 > [!NOTE]
-> Office 構成ポリシーは、ユーザーベースの展開のみをサポートします。
+> Officeポリシーは、ユーザー ベースの展開のみをサポートします。

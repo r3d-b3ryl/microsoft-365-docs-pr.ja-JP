@@ -1,83 +1,83 @@
 ---
 title: 既存のデバイスをj自分で登録する
-description: 再利用されたデバイスを登録します。これにより、Microsoft マネージドデスクトップで管理できるようになります。
+description: Microsoft マネージド デスクトップで管理できるよう、既に自分が持っている可能性がある再利用可能なデバイスを登録する
 ms.prod: w10
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1ad83dbf323e431e1694b408e09e581ff5b76348
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: c2ba687b38f1de4d2ed09b0bd690e02b43f15f8d
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279560"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840517"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
 >[!NOTE]
->このトピックでは、既に所有しているデバイスを再利用して、Microsoft マネージドデスクトップで登録する手順について説明します。 新しいデバイスを使用している場合は、代わりに「 [Microsoft Managed Desktop で新しいデバイスを登録](register-devices-self.md) する」の手順に従います。
+>このトピックでは、既に持っているデバイスを再利用し、Microsoft マネージド デスクトップに登録する手順について説明します。 新しいデバイスを使用している場合は [、「Microsoft マネージド](register-devices-self.md) デスクトップに新しいデバイスを自分で登録する」の手順に従ってください。
 
-パートナーのプロセスは、パートナーが [デバイスを登録する手順](register-devices-partner.md)に記載されています。
+パートナーのプロセスについては、「パートナーがデバイスを登録するための [手順」を参照してください](register-devices-partner.md)。
 
-Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Microsoft マネージドデスクトップにデバイスを登録するには、Microsoft エンドポイントマネージャーポータルを使用します。
+Microsoft マネージド デスクトップは、新しいデバイスで動作するか、既に持っているデバイスを再利用できます (デバイスのイメージを再作成する必要があります)。 Microsoft Endpoint Manager ポータルで、Microsoft マネージド デスクトップにデバイスを登録できます。
 
-## <a name="prepare-to-register-existing-devices"></a>既存のデバイスを登録するための準備
+## <a name="prepare-to-register-existing-devices"></a>既存のデバイスの登録を準備する
 
 
 既存のデバイスを登録するには、次の手順を実行します。
 
-1. [各デバイスのハードウェアハッシュを取得します。](#obtain-the-hardware-hash)
-2. [ハッシュデータを結合する](#merge-hash-data)
-3. [Microsoft マネージドデスクトップにデバイスを登録](#register-devices-by-using-the-admin-portal)します。
-4. [画像が正しいことをもう一度確認してください。](#check-the-image)
-5. [デバイスを配信する](#deliver-the-device)
+1. [各デバイスのハードウェア ハッシュを取得します。](#obtain-the-hardware-hash)
+2. [ハッシュ データをマージする](#merge-hash-data)
+3. [Microsoft マネージド デスクトップにデバイスを登録します](#register-devices-by-using-the-admin-portal)。
+4. [画像が正しいか、確認してください。](#check-the-image)
+5. [デバイスの配信](#deliver-the-device)
 
-### <a name="obtain-the-hardware-hash"></a>ハードウェアハッシュを取得する
+### <a name="obtain-the-hardware-hash"></a>ハードウェア ハッシュを取得する
 
-Microsoft マネージドデスクトップは、ハードウェアハッシュを参照して各デバイスを一意に識別します。 既に使用しているデバイスからこの情報を取得するには、次の4つのオプションがあります。
+Microsoft マネージド デスクトップでは、ハードウェア ハッシュを参照して各デバイスを一意に識別します。 既に使用しているデバイスからこの情報を取得するには、次の 4 つのオプションがあります。
 
-- ハードウェアハッシュを含む自動操縦登録ファイルについては、OEM サプライヤーにお問い合わせください。
-- [Microsoft エンドポイント構成マネージャー](#microsoft-endpoint-configuration-manager)で情報を収集します。
-- [Active Directory](#active-directory-powershell-script-method)を使用するか、または各デバイスで[手動](#manual-powershell-script-method)で Windows PowerShell スクリプトを実行して、ファイルに結果を収集します。
-- 各デバイスを開始しますが、Windows セットアップの動作を完了せず [に、リムーバブルフラッシュドライブでハッシュを収集](#flash-drive-method)します。
+- ハードウェア ハッシュを含む AutoPilot 登録ファイルを OEM 供給者に問い合わせ、
+- [Microsoft Endpoint Configuration Manager で情報を収集します](#microsoft-endpoint-configuration-manager)。
+- [Active](#active-directory-powershell-script-method) Directory Windows PowerShell手動でスクリプトを実行し、結果を[](#manual-powershell-script-method)ファイルに収集します。
+- 各デバイスを起動します。ただし、Windows セットアップ エクスペリエンスを完了する必要があります。また、リムーバブル フラッシュ ドライブでハッシュ [を収集します](#flash-drive-method)。
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-Microsoft エンドポイント構成マネージャーを使用して、Microsoft マネージドデスクトップに登録する既存のデバイスからハードウェアハッシュを収集できます。
+Microsoft Endpoint Configuration Manager を使用して、Microsoft マネージド デスクトップに登録する既存のデバイスからハードウェア ハッシュを収集できます。
 
 > [!IMPORTANT]
-> この情報を取得するデバイスには、Windows 10、バージョン1703以降が実行されている必要があります。 
+> この情報を取得するデバイスは、Windows 10 バージョン 1703 以降を実行している必要があります。 
 
-これらの前提条件をすべて満たしている場合は、次の手順を実行して情報を収集する準備ができています。
+これらすべての前提条件を満たした場合は、次の手順に従って情報を収集する準備が整います。
 
-1. 構成マネージャーコンソールで、[ **監視**] を選択します。 
-2. [監視] ワークスペースで、[ **レポート** ] ノードを展開し、[ **レポート**] を展開して、[ **ハードウェア-全般** ] ノードを選択します。 
-3. レポート、 **Windows 自動操縦デバイス情報**を実行し、結果を表示します。
-4. レポートビューアーで [ **エクスポート** ] アイコンを選択し、[ **CSV (コンマ区切り)** ] オプションを選択します。
-5. ファイルを保存した後で、Microsoft マネージドデスクトップに登録する予定のデバイスのみに結果をフィルター処理し、Microsoft マネージドデスクトップにデータをアップロードする必要があります。 Microsoft エンドポイントマネージャーを開き、[ **デバイス** ] メニューに移動して、[Microsoft Managed Desktop] セクションを探し、[ **デバイス**] を選択します。 [ **+ Register devices** ] を選択して、新しいデバイスを登録するためのフライインを開きます。
-
-
-詳細については [、「管理者ポータルを使用してデバイスを登録](#register-devices-by-using-the-admin-portal) する」を参照してください。
+1. Configuration Manager コンソールで、[監視] を **選択します**。 
+2. [監視] ワークスペースで、[レポート] ノード **を展開し** 、[ **レポート**] を展開して、[ハードウェア - 全般] **ノードを選択** します。 
+3. レポートの **Windows Autopilot Device Information を実行し**、結果を表示します。
+4. レポート ビューアーでエクスポート アイコンを選択し **、CSV (コンマ区切り) オプションを選択** します。
+5. ファイルを保存した後、Microsoft マネージド デスクトップに登録する予定のデバイスに対して結果をフィルター処理し、データを Microsoft マネージド デスクトップにアップロードする必要があります。 Microsoft Endpoint Manager を開き、[デバイス] メニューに移動し、[Microsoft マネージド デスクトップ] セクションを探し、[デバイス] を選択 **します**。 [+ **デバイスの登録]** を選択すると、新しいデバイスを登録するフライインが開きます。
 
 
-#### <a name="active-directory-powershell-script-method"></a>Active Directory PowerShell スクリプトメソッド
+詳細については [、「管理ポータルを使用してデバイスを登録する](#register-devices-by-using-the-admin-portal) 」を参照してください。
 
-Active Directory 環境では、PowerShell コマンドレットを使用して、 `Get-WindowsAutoPilotInfo` WinRM を使用して Active Directory グループ内のデバイスから情報をリモートで収集できます。 また、この `Get-AD Computer` コマンドレットを使用して、カタログに含まれている特定のハードウェアモデル名のフィルター結果を取得することもできます。 これを行うには、まずこれらの前提条件を確認してから、次の手順に進みます。
 
-- WinRM は有効になっています。
-- 登録するデバイスがネットワーク上でアクティブになっている (つまり、切断されていないかオフになっている)。
-- デバイス上でリモートで実行するためのアクセス許可を持つ domain credential パラメーターがあることを確認してください。
-- Windows ファイアウォールが WMI へのアクセスを許可していることを確認します。 そのためには、次の手順を実行します。
+#### <a name="active-directory-powershell-script-method"></a>Active Directory PowerShell スクリプト メソッド
 
-    1. **Windows Defender ファイアウォール**コントロールパネルを開き、[ **Windows defender ファイアウォール経由でアプリまたは機能を許可**する] を選択します。
+Active Directory 環境では、PowerShell コマンドレットを使用して、WinRM を使用して Active Directory グループ内のデバイスからリモートで情報 `Get-WindowsAutoPilotInfo` を収集できます。 このコマンドレットを使用して、カタログに含まれる特定のハードウェア モデル名に対してフィルター処理された結果 `Get-AD Computer` を取得することもできます。 続行する前に、まずこれらの前提条件を確認してから、次の手順に進みます。
+
+- WinRM が有効になっている。
+- 登録するデバイスはネットワーク上でアクティブです (つまり、切断またはオフにされません)。
+- デバイスでリモートで実行するアクセス許可を持つドメイン資格情報パラメーターを持っている必要があります。
+- Windows ファイアウォールで WMI へのアクセスが許可されている必要があります。 これを行うには、次の手順を実行します。
+
+    1. Windows Defender **ファイアウォール** のコントロール パネルを開き、ファイアウォールからアプリまたは機能 **を許可Windows Defenderします**。
     
-    2. 一覧で [ **Windows Management Instrumentation (WMI)** ] を見つけ、[ **プライベートとパブリック**] の両方で有効にして、[ **OK]** を選択します。
+    2. 一 **覧で Windows Management Instrumentation (WMI)** を見つけ **、Private** と Public の両方を有効にして **、[OK]** を選択します。
 
-1.  管理者権限を持つ PowerShell プロンプトを開きます。
+1.  管理者権限で PowerShell プロンプトを開きます。
 
-2.  次 *のいずれかのスクリプトを実行* します。
+2.  次 *のいずれかのスクリプト* を実行します。
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -90,51 +90,51 @@ Active Directory 環境では、PowerShell コマンドレットを使用して�
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. デバイスのエントリが存在する可能性があるディレクトリにアクセスします。 Windows Server Active Directory ドメインサービスと Azure Active Directory を含む、 *すべて* のディレクトリから各デバイスのエントリを削除します。 この削除は、完全に処理されるまで数時間かかる場合があることに注意してください。
+3. デバイスのエントリがある可能性があるディレクトリにアクセスします。 Windows Server Active Directoryドメイン サービスと Azure Active Directory を含むすべてのディレクトリから、各デバイスのエントリを削除します。 完全に処理するには、削除に数時間かかる可能性があります。
 
-4. デバイスのエントリが存在する可能性があるアクセス管理サービス。 Microsoft エンドポイント構成マネージャー、Microsoft Intune、Windows 自動操縦など、 *すべて* の管理サービスから各デバイスのエントリを削除します。 この削除は、完全に処理されるまで数時間かかる場合があることに注意してください。
+4. デバイスのエントリがある可能性があるアクセス管理サービス。 Microsoft Endpoint Configuration Manager、Microsoft Intune、Windows Autopilot など、すべての管理サービスから各デバイスのエントリを削除します。  完全に処理するには、削除に数時間かかる可能性があります。
 
-これで、デバイスの [登録](#register-devices-by-using-the-admin-portal)に進むことができます。
+これで、デバイスの登録に [進みます](#register-devices-by-using-the-admin-portal)。
 
-#### <a name="manual-powershell-script-method"></a>PowerShell スクリプトの手動メソッド
+#### <a name="manual-powershell-script-method"></a>手動 PowerShell スクリプトメソッド
 
-1.  管理者権限を持つ PowerShell プロンプトを開きます。
+1.  管理者権限で PowerShell プロンプトを開きます。
 2.  `Install-Script -Name Get-WindowsAutoPilotInfo` を実行します。
 3.  `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
-4. [ハッシュデータを結合します。](#merge-hash-data)
+4. [ハッシュ データをマージします。](#merge-hash-data)
 
-#### <a name="flash-drive-method"></a>Flash drive メソッド
+#### <a name="flash-drive-method"></a>フラッシュ ドライブ方式
 
-1. 登録している以外のデバイスに USB ドライブを挿入します。
-2. 管理者権限を持つ PowerShell プロンプトを開きます。
+1. 登録するデバイス以外のデバイスに USB ドライブを挿入します。
+2. 管理者権限で PowerShell プロンプトを開きます。
 3. `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>` を実行します。
-4. 登録するデバイスを有効にしますが、 *セットアップの操作は開始*しないでください。 セットアップの操作を誤って開始した場合は、デバイスをリセットまたは再イメージする必要があります。
-5. USB ドライブを挿入して、SHIFT + F10 キーを押します。
-6. 管理者権限で PowerShell プロンプトを開き、を実行し `cd <pathToUsb>` ます。
+4. 登録するデバイスをオンにしますが、セットアップ *エクスペリエンスは開始してください*。 誤ってセットアップ エクスペリエンスを開始した場合は、デバイスをリセットまたは再イメージ化する必要があります。
+5. USB ドライブを挿入し、Shift キーを押しながら F10 キーを押します。
+6. 管理者権限で PowerShell プロンプトを開き、次に実行します `cd <pathToUsb>` 。
 7. `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` を実行します。
 8. `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
-9. USB ドライブを取り外し、次のようにしてデバイスをシャットダウンします。 `shutdown -s -t 0`
-10. [ハッシュデータを結合します。](#merge-hash-data)
+9. USB ドライブを取り外し、次に実行してデバイスをシャットダウンします。 `shutdown -s -t 0`
+10. [ハッシュ データをマージします。](#merge-hash-data)
 
 >[!IMPORTANT]
->登録が完了するまでは、デバイスの電源を入れないでください。 
+>登録が完了するまで、登録するデバイスの電源を入れる必要はありません。 
 
 
 
-### <a name="merge-hash-data"></a>ハッシュデータを結合する
+### <a name="merge-hash-data"></a>ハッシュ データをマージする
 
-手動の PowerShell または flash drive メソッドによってハードウェアハッシュデータを収集した場合は、CSV ファイル内のデータを1つのファイルにまとめて登録を完了する必要があります。 これを簡単にするためのサンプル PowerShell スクリプトを次に示します。
+手動の PowerShell またはフラッシュ ドライブの方法でハードウェア ハッシュ データを収集した場合、登録を完了するには、CSV ファイル内のデータを 1 つのファイルに結合する必要があります。 簡単に実行できる PowerShell スクリプトのサンプルを次に示します。
 
 ```powershell
 Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv
 ```
 
-ハッシュデータを1つの CSV ファイルに結合すると、 [デバイスの登録](#register-devices-by-using-the-admin-portal)に進むことができるようになります。
+ハッシュ データを 1 つの CSV ファイルにマージすると、デバイスの登録 [に進むことができます](#register-devices-by-using-the-admin-portal)。
 
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>管理ポータルを使用してデバイスを登録する
 
-[Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[ **デバイス**] を選択します。 [Microsoft Managed Desktop Devices] ワークスペースで、[ **+ デバイスの登録** ] を選択して、新しいデバイスを登録するためのフライインを開きます。
+[Microsoft Endpoint Manager で、](https://endpoint.microsoft.com/)左側のナビゲーション ウィンドウで [デバイス] を選択します。  メニューの [Microsoft マネージド デスクトップ] セクションを探し、[デバイス] を選択 **します**。 Microsoft マネージド デスクトップ デバイス ワークスペースで、デバイスの選択 **と** 登録を行います。このワークスペースでは、新しいデバイスを登録するフライインが開きます。
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -144,43 +144,43 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 次の手順を実行します。
 
-1. [ **ファイルのアップロード**] で、以前に作成した CSV ファイルへのパスを指定します。
+1. [ **ファイルのアップロード**] で、前に作成した CSV ファイルへのパスを指定します。
 
-1. [ **デバイスの登録**] を選択します。 システムによってデバイス **ブレード**上のデバイスの一覧にデバイスが追加され、[ **登録保留中**] としてマークされます。 通常、登録にかかる時間は10分未満で、成功した場合、デバイスは **ユーザーのための** 準備完了として表示され、ユーザーが使用を開始するのを待っています。
+1. [デバイス **の登録] を選択します**。 システムによって、[デバイス] ブレードのデバイスの一覧にデバイスが追加されます。登録が保留中 **としてマークされます**。 通常、登録に要する時間は 10 分未満です。正常に終了すると、デバイスは "準備完了" と表示されます。つまり、デバイスは準備が整い、ユーザーが使い始めるのを待ちます。
 
 
-メインページでのデバイス登録の進行状況を監視できます。 報告される状態は次のとおりです。
+デバイス登録の進行状況は、メイン ページで監視できます。 報告される可能性がある状態は次のとおりです。
 
 | 状態 | 説明 |
 |---------------|-------------|
-| 登録保留中 | 登録はまだ行われていません。 後でもう一度確認してください。 |
-| 登録の失敗 | 登録を完了できませんでした。 詳細については、「 [device registration のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
-| ユーザーの準備完了 | 登録が成功し、デバイスをユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
-| Active | デバイスはユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
-| 未使用 | デバイスはユーザーに配信され、テナントに登録されています。 しかし、最近7日間ではデバイスを使用していません。  | 
+| Registration Pending | 登録はまだ完了していません。 後で確認してください。 |
+| 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング」](#troubleshooting-device-registration) を参照してください。 |
+| ユーザーの準備完了 | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft マネージド デスクトップでは、初回セットアップについて説明します。そのため、追加の準備を行う必要はありません。 |
+| Active | デバイスがユーザーに配信され、テナントに登録されている。 これは、デバイスを定期的に使用している場合も示します。 |
+| 非アクティブ | デバイスがユーザーに配信され、テナントに登録されている。 ただし、最近 (過去 7 日間で) デバイスを使用していない。  | 
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
 
 | エラー メッセージ | 詳細 |
 |---------------|-------------|
-| デバイスが見つかりません | 提供された製造元、モデル、またはシリアル番号に一致するものが見つからなかったため、このデバイスを登録できませんでした。 これらの値は、デバイスの提供元に確認してください。 |
-| ハードウェアハッシュが無効です | このデバイスに対して提供されたハードウェアハッシュが正しくフォーマットされていませんでした。 ハードウェアハッシュをもう一度確認してから再送信します。 |
-| デバイスは既に登録されています | このデバイスは既に組織に登録されています。 その他のアクションは必要ありません。 |
-| 別の組織によって要求されるデバイス | このデバイスは、既に別の組織によって要求されています。 デバイスサプライヤーに確認します。 |
-| 予期しないエラーです | 要求は自動的に処理されませんでした。 サポートに連絡して、要求 ID を提供します。 <requestId> |
+| デバイスが見つかりません | 提供された製造元、モデル、シリアル番号に一致するデバイスが見つからなかったため、このデバイスを登録できなかった。 デバイスの供給者にこれらの値を確認します。 |
+| ハードウェア ハッシュが無効です | このデバイスに指定したハードウェア ハッシュが正しくフォーマットされていません。 ハードウェア ハッシュを再確認し、再送信します。 |
+| デバイスが既に登録されている | このデバイスは既に組織に登録されています。 それ以上の操作は必要ありません。 |
+| 別の組織によって要求されたデバイス | このデバイスは、別の組織によって既に要求されています。 デバイスの供給者に確認します。 |
+| 予期しないエラーです | 要求を自動的に処理する必要がありました。 サポートに問い合わせ、要求 ID を入力します。 <requestId> |
 
 ### <a name="check-the-image"></a>画像を確認する
 
-デバイスが Microsoft マネージドデスクトップパートナーのサプライヤーからのものである場合は、イメージが正しいことを確認してください。
+デバイスが Microsoft マネージド デスクトップ パートナーの供給者から提供されている場合は、イメージが正しい必要があります。
 
-また、必要に応じて、自分で画像を適用することも歓迎しています。 開始するには、作業している Microsoft の担当者に連絡して、イメージを適用するための場所と手順を提供します。
+必要に応じて、画像を自分で適用することもできます。 To get started, contact the Microsoft representative you're working with and they will provide you the location and steps for applying the image.
 
-### <a name="deliver-the-device"></a>デバイスを配信する
+### <a name="deliver-the-device"></a>デバイスの配信
 
 > [!IMPORTANT]
-> ユーザーにデバイスを渡す前に、そのユーザーの [適切なライセンス](../get-ready/prerequisites.md) を取得して適用していることを確認してください。
+> デバイスをユーザーに渡す前に、そのユーザーに適切なライセンスを取得して [適用してください](../get-ready/prerequisites.md) 。
 
-すべてのライセンスが適用されている場合は、 [デバイスを使用する準備](get-started-devices.md)ができたら、ユーザーはデバイスを起動して、Windows セットアップ操作を続行することができます。
+すべてのライセンスが適用されている場合は、ユーザー[](get-started-devices.md)がデバイスを使用する準備を整え、ユーザーがデバイスを起動して Windows セットアップ エクスペリエンスを続行できます。
 
 
 

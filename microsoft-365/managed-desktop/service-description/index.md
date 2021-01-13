@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0e1189634857921d9c0e3df0683bd6e7758cd058
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289473"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840315"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft マネージド デスクトップ サービスの説明
 
@@ -29,13 +29,13 @@ Microsoft Managed Desktop は、セキュアで最先端の環境をユーザー
 - ユーザー向けの IT サポート
 - IT 担当者向けの運用サポート
 
-Microsoft マネージド デスクトップに含まれる特定のサービスの詳細については、このセクションのその他のトピックを参照してください。 Microsoft マネージド デスクトップを利用することに決めた場合は、[[Microsoft マネージド デスクトップの登録準備]](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) から、サービスに参加するための準備の手順を確認できます。
+Microsoft マネージド デスクトップに含まれる特定のサービスの詳細については、このセクションの「その他のトピック」 を参照してください。 Microsoft マネージド デスクトップを利用することに決めた場合は、[[Microsoft マネージド デスクトップの登録準備]](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)で、サービスに参加するための準備の手順を確認できます。
 
 - [[Microsoft マネージド デスクトップサポートでされている地域と言語]](regions-languages.md) では、サービスでサポートされている地域と言語について説明しています。
 - ユーザーが最高のエクスペリエンスを体感できるように、Microsoft マネージド デスクトップでは特定のデバイスのみがサポートされています。 [[プログラムデバイス]](device-list.md) は、デバイスがユーザーにより提供されるかあるいはパートナーと協力するかにかかわらず、サービスで使用できる正確なデバイス モデルと構成を指定します。
 - [[デバイスサービス]](device-services.md) は、Microsoft がサブスクライバーに提供するデバイス関連のサービスを指定します。
 - [[デバイス構成]](device-policies.md) は、サービスが登録されているデバイスに適用される既定およびセキュリティ関連のモバイル デバイス管理ポリシーを明確にします。
-- [[セキュリティ]](security.md) は、登録されているデバイスから収集したデータに加えて、デバイスのセキュリティ、ID とアクセス管理、ネットワークセキュリティ、情報セキュリティに関連する機能やポリシーを指定します。
+- [[セキュリティ]](security.md) は、登録されているデバイスから収集したデータおよび、デバイスのセキュリティ、ID とアクセス管理、ネットワーク セキュリティ、情報セキュリティに関連する機能やポリシーを指定します。
 - [[更新プログラム]](updates.md) では、Microsoft マネージド デスクトップで使用しているデバイスに更新プログラムを展開するために使用される、さまざまな更新プログラムのグループについて説明しています。
 - [[サポート]](support.md) は、組織とユーザーに対して Microsoft が提供するサポートを明確にしています。
 - [[運用とモニタリング]](operations-and-monitoring.md) は、展開の変更を要求および準備するための標準的な手順を含む、Microsoft マネージド デスクトップの変更管理のしくみについて説明しています。

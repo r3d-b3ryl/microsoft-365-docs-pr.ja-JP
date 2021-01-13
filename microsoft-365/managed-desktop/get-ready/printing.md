@@ -1,6 +1,6 @@
 ---
 title: Microsoft マネージド デスクトップ用に、印刷リソースを準備する
-description: 印刷がスムーズに機能するようにするための重要な手順
+description: 印刷がスムーズに機能するための重要な手順
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,31 +9,31 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5198691a38b179a5491a36de95531edb9f32d691
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: b6e809505fed8b1f84eb502dc08751ad1f0b587c
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322225"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841401"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、印刷リソースを準備する
 
-Microsoft マネージドデスクトップに登録する準備ができたら、印刷要件を評価し、環境に適したアプローチを決定する必要があります。 次の3つのオプションがあります。
+Microsoft マネージド デスクトップに登録する準備ができたら、印刷要件を評価し、環境に適切なアプローチを決定する必要があります。 次の 3 つのオプションがあります。
  
-- Microsoft ユニバーサル印刷ソリューションを展開して、Microsoft の管理されたデスクトップデバイスでプリンターを簡単に検出できるようにします。 詳細については、「 [Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)」を参照してください。
-- カスタム PowerShell スクリプトを使用して、プリンターを直接展開します。 この操作を行うには、[ [ローカルプリンターの設定](#set-up-local-printers) ] セクションの手順に従います。
-- Azure Active Directory ドメインに参加している Windows 10 デバイスと互換性のある Microsoft 以外のクラウド印刷ソリューションを使用します。 ソリューションは、Microsoft マネージドデスクトップのソフトウェア要件を満たしている必要があります。 詳細については、「 [Microsoft Managed Desktop app の要件](../service-description/mmd-app-requirements.md)」を参照してください。
+- Microsoft ユニバーサル印刷ソリューションを展開して、Microsoft マネージド デスクトップ デバイスでプリンターを簡単に検出できます。 詳細については、「ユニバーサル印刷 [とは」を参照してください](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)。
+- カスタム PowerShell スクリプトを使用してプリンターを直接展開します。 「ローカル プリンターのセットアップ [」セクションの手順に従](#set-up-local-printers) います。
+- Azure Active Directory ドメインに参加している Windows 10 デバイスと互換性のある Microsoft 以外のクラウド印刷ソリューションを使用します。 このソリューションは、Microsoft マネージド デスクトップのソフトウェア要件を満たしている必要があります。 詳しくは [、Microsoft マネージド デスクトップ アプリの要件に関するページをご覧ください](../service-description/mmd-app-requirements.md)。
  
-いずれの場合も、Microsoft Update または Microsoft ストアからプリンタードライバーを入手できない場合は、microsoft Intune を使用して Microsoft の管理されたデスクトップデバイスに展開するためにパッケージ化してパッケージ化する必要があります。 詳細については、「 [Intune スタンドアロン-Win32 app management](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management) 」を参照してください。
+すべての場合において、プリンター ドライバーが Microsoft Update または Microsoft Store から入手できない場合は、プリンター ドライバーを自分で入手し、Microsoft Intune を使用して Microsoft マネージド デスクトップ デバイスに展開するためにパッケージ化する必要があります。 詳しくは、「Intune スタンドアロン[- Win32 アプリ管理」をご覧ください](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)。
 
-## <a name="set-up-local-printers"></a>ローカルプリンターをセットアップする
+## <a name="set-up-local-printers"></a>ローカル プリンターをセットアップする
 
-カスタム PowerShell スクリプトを使用してプリンターを展開し、印刷リソースを準備している場合は、次の手順に従って共有プリンターを展開します。
+カスタム PowerShell スクリプトを使用してプリンターを展開し、印刷リソースを準備した場合は、次の手順に従って、共有プリンターを展開します。
 
-1.  Microsoft マネージドデスクトップポータルに移動します。
-2.  管理ポータルの [ **support > support requests** ] セクションで、[*プリンター展開*] というラベルの付いた要求を送信し、次の詳細情報を提供します。
-    - Microsoft マネージドデスクトップデバイス用に展開する必要がある共有プリンターの場所へのすべての UNC パス
-    - これらの共有プリンターにアクセスする必要があるユーザーグループ
-3.  管理ポータルを使用すると、要求が完了したことが通知されます。 最初は、テスト展開グループのデバイスにのみ構成を展開します。
-4.  構成が予想どおりに動作するかどうかをテストし、確認する必要があります。 [返信] サポート要求の [ **ディスカッション** ] タブを使用して、テストが完了したときに通知します。
+1.  Microsoft マネージド デスクトップ ポータルに移動します。
+2.  管理ポータルのサポート> サポート要求セクションで、プリンターの展開というラベルの付いた要求を送信し、次の詳細を提供します。
+    - Microsoft マネージド デスクトップ デバイス用に展開する必要がある、プリンターの共有の場所への UNC パスすべて
+    - これらの共有プリンターへのアクセスが必要なユーザー グループ
+3.  管理ポータルを使用して、要求が完了した時間をお知らせします。 最初は、テスト展開グループのデバイスにのみ構成を展開します。
+4.  構成が期待通り動作するかどうかをテストして確認する必要があります。 テストが完了したら **、** サポート要求の [ディスカッション] タブを使用して返信します。
 5.  その後、構成を他の展開グループに展開します。

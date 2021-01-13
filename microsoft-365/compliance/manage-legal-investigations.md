@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 で法的調査を管理する
+title: Microsoft 365 での法的調査の管理
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,62 +16,62 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Office 365 のセキュリティ & コンプライアンスセンターで電子情報開示ケースを使用して、組織の法的調査を管理します。
-ms.openlocfilehash: edc9835cdbefa611af4c0906be5d3e1d0404c635
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+description: 組織の法的 &調査を管理するには、Office 365 のセキュリティ/コンプライアンス センターの電子情報開示ケースを使用します。
+ms.openlocfilehash: 7a02bd47f93a85e643694efea4dcc140847916e0
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285653"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840706"
 ---
-# <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 での法的調査の管理
 
-組織には、組織内の特定の役員または他の従業員に関連する訴訟に対応する理由が多数あります。 これにより、電子メール、ドキュメント、インスタントメッセージの会話、ユーザーが毎日の作業タスクで使用したその他のコンテンツの場所について、調査に関する詳細情報をすばやく見つけて保持することができます。 セキュリティ/コンプライアンスセンターの電子情報開示ケースツールを使用すると、このような他の多くの操作を実行できます。
+組織には、組織内の特定の役員または他の従業員が関係する法的事例に対応する多くの理由があります。 これには、電子メール、ドキュメント、インスタント メッセージングの会話、およびユーザーが毎日の作業タスクで使用するその他のコンテンツの場所に関する調査固有の情報をすばやく見つけて保持する必要があります。 セキュリティ/コンプライアンス センターの電子情報開示ケース ツールを使用して、これらのアクティビティや他の多くの同様のアクティビティを実行できます。
   
-**Microsoft が電子情報開示の調査を管理する方法を知りたいですか。** 同じ検索および調査ツールを使用して内部電子情報開示ワークフローを管理する方法について説明する [テクニカルホワイトペーパー](https://go.microsoft.com/fwlink/?linkid=852161) をダウンロードすることができます。
-   
+**Microsoft が電子情報開示調査を管理する方法を知りたい場合** ここでは、同じ検索 [および](https://go.microsoft.com/fwlink/?linkid=852161) 調査ツールを使用して内部の電子情報開示ワークフローを管理する方法について説明した技術ホワイト ペーパーをダウンロードできます。
+
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>電子情報開示ケースを使用して法的調査を管理する
 
-電子情報開示ケースを使用すると、組織内で電子情報開示ケースを作成、アクセス、および管理できるユーザーを制御できます。 ケースを使用して、メンバーを追加したり、実行できるアクションの種類を制御したり、法的訴訟に関連するコンテンツの場所を保持したり、コンテンツ検索ツールを使用して、ケースに応答する可能性があるコンテンツを保持している場所を検索したりすることができます。 さらに、外部のレビューアーによる詳細な調査のために、それらの結果をエクスポートしてダウンロードすることもできます。
+電子情報開示ケースを使用すると、組織内で電子情報開示ケースを作成、アクセス、および管理できるユーザーを制御できます。 Use cases to add members and control what types of actions they can perform, place a hold on content locations relevant to a legal case, and use the Content Search tool to search the locations on hold for content that might be responsive to your case. その後、外部のレビュー担当者による詳細な調査のために、これらの結果をエクスポートしてダウンロードできます。
   
-- 組織が行う必要のあるすべての法的調査に対して電子情報開示のケースを作成して使用することによって[、電子情報開示ワークフローを管理](ediscovery-cases.md)する 
-    
-- [電子情報開示のアクセス許可を割り当て](assign-ediscovery-permissions.md) て、組織内で電子情報開示ケースを作成および管理できるユーザーを制御します。 
-    
-- [コンプライアンスの境界を設定](tagging-and-assessment-in-advanced-ediscovery.md) して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する 
-    
-- 組織内の[コンテンツを検索する](search-for-content.md) 
-    
+- [組織が実施する必要](ediscovery-cases.md) があるすべての法的調査に対して電子情報開示ケースを作成して使用して、電子情報開示ワークフローを管理します。
+
+- [電子情報開示のアクセス許可を割り](assign-ediscovery-permissions.md) 当て、組織内で電子情報開示ケースを作成および管理できるユーザーを制御します。
+
+- [コンプライアンスの境界を設定して](set-up-compliance-boundaries.md) 、電子情報開示管理者が検索できるユーザー コンテンツの場所を制御します。
+
+- [組織内のコンテンツ](search-for-content.md) を検索します。
+
 ### <a name="use-scripts-for-advanced-scenarios"></a>高度なシナリオでスクリプトを使用する
 
-コンテンツ検索シナリオのスクリプトが記載されている前のセクションと同様に、電子情報開示ケースの管理に役立つセキュリティ & コンプライアンスセンターの PowerShell スクリプトも作成しました。
+コンテンツ検索シナリオのスクリプトを一覧表示した前のセクションと同様に、電子情報開示ケースの管理に役立つセキュリティ & コンプライアンス センターの PowerShell スクリプトもいくつか作成しました。
   
-- 組織内の電子情報開示ケースに関連付けられたすべての保留リストに関する情報を含む[電子情報開示保持レポートを作成し](create-a-report-on-holds-in-ediscovery-cases.md)ます。 
-    
-- 電子情報開示ホールドにユーザーのリストの[メールボックスと OneDrive の場所を追加](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)する 
+- [組織内の電子情報開示ケースに](create-a-report-on-holds-in-ediscovery-cases.md) 関連付けられているすべての保留リストに関する情報を含む電子情報開示ホールド レポートを作成します。
+
+- [ユーザーの一覧のメールボックスと OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) の場所を電子情報開示の保留リストに追加します。
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示ソリューションを使用して法的調査を管理する
+## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 の Advanced eDiscovery ソリューションを使用して法的調査を管理する
 
-Microsoft 365 の高度な電子情報開示ソリューションは、Office 365 の既存の電子情報開示および分析機能に基づいて構築されています。 *Advanced eDiscovery*と呼ばれるこの新しいソリューションは、組織の内部および外部の調査に応答するコンテンツを保持、収集、確認、分析、およびエクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務部門は法的情報保留通知ワークフロー全体を管理して、ケースに関与する保管担当者と通信することもできます。
+Microsoft 365 の Advanced eDiscovery ソリューションは、Microsoft 365 の既存の電子情報開示および分析機能Officeされています。 *Advanced eDiscovery* と呼ばれるこの新しいソリューションは、組織の内部および外部の調査に対応するコンテンツを保持、収集、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務チームは、法的情報保留通知ワークフロー全体を管理して、ケースに関係する保管担当者と通信できます。
 
-高度な電子情報開示では、Microsoft 365 または Office 365 組織の E5 サブスクリプションが必要です。 ライセンスの詳細については、「 [Advanced eDiscovery の概要](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)」を参照してください。
+Advanced eDiscovery には、Microsoft 365 または Office 365 組織の E5 サブスクリプションが必要です。 ライセンスの詳細については [、「Advanced eDiscovery のセットアップ」を参照してください](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
 
-高度な電子情報開示における組み込みワークフローの概要を次に示します。 詳細については、「 [Advanced eDiscovery ワークフローを調査する](get-started-with-advanced-ediscovery.md#explore-the-advanced-ediscovery-workflow)」を参照してください。
+Advanced eDiscovery の組み込みワークフローの簡単な概要を次に示します。 詳細については [、「Advanced eDiscovery ワークフローの管理」を参照してください](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)。
 
-- [ケースを作成](create-new-ediscovery-case.md) して開始する
+- [開始するケースを](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) 作成します。
 
-- [保管担当者を管理](managing-custodians.md) するには、それらをケースに追加し、自分のメールボックス、OneDrive アカウント、およびそれらのメンバーである Microsoft Teams のコンテンツに法的情報を含めることによって行います。
+- [カストディアンを](managing-custodians.md) ケースに追加し、自分のメールボックス、OneDrive アカウント、およびメンバーである Microsoft Teams のコンテンツを法的情報保留にすることで管理します。
 
-- 法的情報保留通知プロセスを自動化して保管担当者との[通信を管理](managing-custodian-communications.md)する
+- [法的情報](managing-custodian-communications.md) 保留通知プロセスを自動化して、カストディアンとの通信を管理します。
 
-- [保管担当者データをインデックス](processing-data-for-case.md) 化し、インデックス作成エラーを修正して、調査のためにデータを効果的に収集できるようにする
+- [調査のために効果的にデータ](processing-data-for-case.md) を収集できるよう、カストディアン データにインデックスを付け、インデックス作成エラーを修正します。
 
-- ケースの[データを収集](collecting-data-for-ediscovery.md)して、さらに調査するために[レビューセットに追加する](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set)
+- [ケースの](collecting-data-for-ediscovery.md) データを収集し、さらに [調査するためにレビュー](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) セットに追加します。
 
-- 校閲セット内のドキュメント、[クエリ](review-set-search.md)データ、および[タグ](tagging-documents.md)アイテムを[表示](view-documents-in-review-set.md)する
+- [レビュー](view-documents-in-review-set.md)セット内の[ドキュメント、クエリ](review-set-search.md)[データ、タグ](tagging-documents.md)アイテムを表示します。
 
-- 高度な分析ツールを使用して[ケースデータを分析](analyzing-data-in-review-set.md)する
+- [高度な分析ツールを](analyzing-data-in-review-set.md) 使用してケース データを分析します。
 
-- 外部の弁護士によるレビューの[ケースデータのエクスポート](exporting-data-ediscover20.md)
+- [外部の弁護士によるレビュー](exporting-data-ediscover20.md) のためにケース データをエクスポートします。
 
-- 高度な電子情報開示で[長時間実行されているジョブを管理](managing-jobs-ediscovery20.md)する
+- Advanced eDiscovery[で長時間実行される](managing-jobs-ediscovery20.md)ジョブを管理します。

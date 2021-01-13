@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: ada6bb8ef66e3414a375a151b45d4871e306e825
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760126"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841073"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -95,7 +95,7 @@ Azure 組織の Intune デバイス コンプライアンス ポリシー AD Mic
 
 **使用不可能**
 
-すべてのユーザーを対象とするコンプライアンス ポリシーが少なくとも 1 つあります。 Microsoft マネージド デスクトップ ユーザーを含AD Azure ADグループを対象にするようにポリシーをリセットします。 手順については [、「Microsoft Intune でコンプライアンス ポリシーを作成する」を参照してください](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)。
+すべてのユーザーを対象とするコンプライアンス ポリシーが少なくとも 1 つあります。 Microsoft マネージド デスクトップ ユーザーを含AD特定の Azure AD グループをターゲットにするようにポリシーをリセットします。 手順については [、「Microsoft Intune でコンプライアンス ポリシーを作成する」を参照してください](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)。
 
 **アドバイザリ**
 
@@ -128,7 +128,7 @@ Microsoft マネージド デスクトップ デバイスは、Intune への登�
 
 ### <a name="enrollment-status-page"></a>[登録の状態] ページ
 
-現在、登録ステータス ページ (ESP) が有効になっています。 この機能のパブリック プレビューに参加している場合は、この項目を無視できます。 詳細については [、「Autopilot での最初の実行エクスペリエンスと [登録の状態] ページ」を参照してください](../get-started/esp-first-run.md)。
+現在、登録ステータス ページ (ESP) が有効になっています。 この機能のパブリック プレビューに参加している場合は、この項目を無視できます。 詳細については [、「Autopilot の初回実行エクスペリエンス](../get-started/esp-first-run.md)と [登録状態] ページ」を参照してください。
 
 **使用不可能**
 
@@ -200,7 +200,7 @@ Azure AD組織の地域は、Microsoft マネージド デスクトップでは�
 組織の Azure ADがある国の 1 つ以上は、Microsoft マネージド デスクトップではサポートされていません。 詳細については [、Microsoft マネージド デスクトップでサポートされている地域と言語を参照してください](../service-description/regions-languages.md)。
 
 
-### <a name="security-baselines"></a>セキュリティベースライン
+### <a name="security-baselines"></a>セキュリティ基本計画
 
 セキュリティ基本ポリシーは、Microsoft マネージド デスクトップ デバイスを対象としなにしろ。
 
@@ -219,7 +219,7 @@ Microsoft マネージド デスクトップ ユーザーに必要なアプリ�
 
 **アドバイザリ**
 
-Microsoft マネージド デスクトップ ユーザーが持つアプリのインベントリを準備する必要があります。 これらのアプリは Intune で展開する必要があるから、既存の Intune アプリの再使用を評価します。 ポータル サイトの使用を検討します (「デバイスへの [Intune ポータル](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) サイトのインストールと登録状態ページ (ESP)」を参照して、ユーザーにアプリを配布します。 詳細については [、「Microsoft マネージド](apps.md) デスクトップのアプリ」と [「Autopilot](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)での初回実行時エクスペリエンス」および「登録状態ページ」を参照してください。
+Microsoft マネージド デスクトップ ユーザーが持つアプリのインベントリを準備する必要があります。 これらのアプリは Intune で展開する必要があるから、既存の Intune アプリの再利用を評価します。 ポータル サイトの使用を検討します (「デバイスへの [Intune ポータル](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) サイトのインストールと登録状態ページ (ESP)」を参照して、ユーザーにアプリを配布します。 詳細については [、「Microsoft マネージド](apps.md) デスクトップのアプリ」と [「Autopilot](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)による初回実行時エクスペリエンス」および「登録状態ページ」を参照してください。
 
 Microsoft Endpoint Configuration Manager で Microsoft アカウント担当者にクエリを求め、Intune に移行する準備ができているアプリや調整が必要なアプリを特定できます。
 
@@ -260,7 +260,7 @@ Azure Portal で Azure Active Directory の設定に [アクセスできます](
 
 **アドバイザリ**
 
-**AllowAdHocSubscriptions** が **True** に設定されています。 それ以外の場合は、Enterprise State Roaming が機能しない可能性があります。 詳細については [、「Set-MsolCompanySettings」を参照してください](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
+**AllowAdHocSubscriptions** が **True** に設定されています。 それ以外の場合、Enterprise State Roaming が機能しない可能性があります。 詳細については [、「Set-MsolCompanySettings」を参照してください](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming
@@ -277,7 +277,7 @@ Microsoft マネージド デスクトップを使用するには、多数のラ
 
 **準備ができていない**
 
-Microsoft マネージド デスクトップを使用するために必要なライセンスの一部を持っている必要はありません。 詳細については [、Microsoft マネージド デスクトップテクノロジと](../intro/technologies.md) ライセンスの [詳細を参照してください](prerequisites.md#more-about-licenses)。
+Microsoft マネージド デスクトップを使用するために必要なライセンスの一部を持っている必要はありません。 詳細については [、Microsoft マネージド デスクトップテクノロジとライセンス](../intro/technologies.md) の [詳細を参照してください](prerequisites.md#more-about-licenses)。
 
 
 ### <a name="security-account-names"></a>セキュリティ アカウント名
@@ -291,7 +291,7 @@ Microsoft マネージド デスクトップで作成されたアカウント名
 
 ### <a name="security-administrator-roles"></a>セキュリティ管理者ロール
 
-特定のセキュリティ ロールを持つユーザーには、Microsoft Defender for Endpoint に割り当てられているユーザーが必要です。
+特定のセキュリティ ロールを持つユーザーには、それらの役割が Microsoft Defender for Endpoint に割り当てられている必要があります。
 
 **アドバイザリ**
 
@@ -300,7 +300,7 @@ Azure AD 組織でこれらの役割に割り当てられているユーザー�
 - セキュリティ オペレーター
 - グローバル閲覧者
 
-詳細については、「役割ベースのアクセス [制御の役割の作成と管理」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)。
+詳細については、「役割ベースのアクセス [制御の役割を作成および管理する」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)。
 
 
 ### <a name="security-default"></a>セキュリティの既定値
@@ -317,12 +317,12 @@ Azure Active Directory のセキュリティの既定値により、Microsoft �
 
 **アドバイザリ**
 
-SSPR の **選択した** 設定に Microsoft マネージド デスクトップ デバイスが含まれていますが、Microsoft マネージド デスクトップ サービス アカウントは除外します。 SSPR が有効な場合、Microsoft マネージド デスクトップ サービス アカウントは期待通り動作しません。  
+[SSPR の選択 **]** 設定に Microsoft マネージド デスクトップ デバイスが含まれていますが、Microsoft マネージド デスクトップ サービス アカウントは除外します。 SSPR が有効な場合、Microsoft マネージド デスクトップ サービス アカウントは期待通り動作しません。  
 
 
 ### <a name="standard-user-role"></a>標準ユーザー ロール
 
-グローバル管理者とデバイス管理者の Azure AD ロールが割り当てられているユーザー以外に、Microsoft マネージド デスクトップ ユーザーは、ローカル管理者特権のない標準ユーザーです。 他のすべてのユーザーには、Microsoft マネージド デスクトップ デバイスの起動時に標準のユーザー ロールが割り当てられます。
+グローバル管理者とデバイス管理者の Azure AD ロールが割り当てられているユーザー以外に、Microsoft マネージド デスクトップ ユーザーはローカル管理者特権のない標準ユーザーです。 他のすべてのユーザーには、Microsoft マネージド デスクトップ デバイスの起動時に標準のユーザー ロールが割り当てられます。
 
 **アドバイザリ**
 
@@ -336,5 +336,5 @@ Microsoft マネージド デスクトップ ユーザーは、登録後に Micr
 
 **アドバイザリ**
 
-特定のドメインに **参加している PC でのみ** 同期を許可する設定を使用している。 この設定は、Microsoft マネージド デスクトップでは機能しません。 この設定を無効にし、代わりに条件付きアクセス ポリシーを使用する OneDrive を設定します。 ヘルプ [については、「条件付きアクセスの展開を計画する](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 」を参照してください。
+特定のドメインに参加している PC でのみ同期を許可 **する設定を使用** している。 この設定は、Microsoft マネージド デスクトップでは機能しません。 この設定を無効にし、代わりに条件付きアクセス ポリシーを使用する OneDrive を設定します。 ヘルプ [については、「条件付きアクセスの展開を計画する](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 」を参照してください。
 

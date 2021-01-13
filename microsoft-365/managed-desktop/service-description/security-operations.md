@@ -1,6 +1,6 @@
 ---
-title: Microsoft マネージドデスクトップのセキュリティ操作
-description: ''
+title: Microsoft マネージド デスクトップでのセキュリティ操作
+description: セキュリティ オペレーション センターによって提供されるサービスとプロセス
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,36 +9,36 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4464c9c491af11831a3511dab60a472f1584d7f6
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847718"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840344"
 ---
-# <a name="security-operations-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティ操作
+# <a name="security-operations-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップでのセキュリティ操作
 
-Microsoft Managed デスクトップセキュリティ操作センター (SOC) は、デスクトップ環境のセキュリティを確保するための情報セキュリティ担当者と協力しています。 チームは、専門的な分析を使用して管理対象デバイス上のすべてのセキュリティ警告を受信して応答し、必要に応じて、セキュリティインシデント対応アクティビティを推進します。 SOC を使用した作業の詳細については、管理ポータルで運用に関するドキュメントを参照してください。
+Microsoft マネージド デスクトップ セキュリティ オペレーション センター (SOC) は、情報セキュリティ スタッフとパートナー関係を持ち、デスクトップ環境のセキュリティを維持します。 Our team receives and responds all security alerts on managed devices with expert analysis and,, when needed, we drive security incident response activities. SOC の操作の詳細については、管理ポータルで運用ドキュメントを確認してください。
 
-SOC は、マイクロソフトのフルタイムの従業員から、ソフトウェア、ネットワーク、またはヒューマン敵対者による一般的な攻撃方法を含む、現在の脅威に関する専門知識を持つ24/7/365 を提供します。
+SOC は、ソフトウェア、ネットワーク、または人間の敵対者を通じた一般的な攻撃方法を含む、現在および新たな脅威の状況に関する専門知識を持つ Microsoft のフルタイム従業員から 24/7/365 の範囲を提供しています。
 
 SOC は、次のサービスを提供します。
-- 検出されたイベントに対する迅速かつ正確な応答。データの分析による影響を特定し、デバイスまたは環境に対する全体的なリスクを評価します。
-- 既知または問題のある危険から環境を保護するためのデバイス管理および分離のアクションによって、蔓延を防止してリスクを軽減する
-- セキュリティインシデント対応プロセスを推進し、セキュリティチームとタイムリーかつ正確にコミュニケーションを確保する
-- 脅威と脆弱性のデータに基づいて分析と推奨事項を確認し、リスクを悪用する前に対処する
-- 既知の脅威と潜在的な脅威の両方の指標とエンティティを識別するための、管理対象デバイス間の高度な検索
+- 検出されたイベントに対する迅速かつ正確な対応。データを分析して影響を特定し、デバイスまたは環境に対する全体的なリスクを評価します
+- 既知または疑わしい侵害から環境を保護するデバイス管理と分離アクション。拡散を防止することでリスクを軽減する
+- セキュリティ インシデント対応プロセスを推進し、セキュリティ チームとの迅速かつ正確なコミュニケーションを確保する
+- 悪用される前にリスクを特定して対処するための脅威と脆弱性のデータに基づく分析と推奨事項
+- 既知の脅威と潜在的な脅威の両方に関するインジケーターとエンティティを特定するための、管理対象デバイス全体の高度な検索
 
-## <a name="processes"></a>工程
+## <a name="processes"></a>プロセス
 
-- Microsoft の管理されたデスクトップのセキュリティ操作は、microsoft の [サイバー防衛運用センター](https://www.microsoft.com/msrc/cdoc)と連携して、microsoft のフルタイムの従業員が担当します。 
-- この SOC では、内部と外部の両方の会社全体の集合信号を使用して、お客様のデバイスを保護します。ただし、Microsoft の管理されたデスクトップにまだ何も表示されていません。
-- Microsoft セキュリティソリューションは、多くの cybersecurity 保護標準に適合しています。 SOC 操作は、米国標準規格およびテクノロジコンピューターセキュリティインシデント対応ガイド (NIST 800-61 r2) に基づいています。
-- このプロセスでは、次のフェーズを通じて環境をより適切に保護する方法について、分析および文書化および復旧後の洞察のための適切な情報と証拠を収集できます。
-    - 準備、検出、および分析
+- Microsoft マネージド デスクトップ セキュリティ運用には、Microsoft のサイバー防御オペレーション センターと協力して、フルタイムの Microsoft 従業員 [がスタッフを管理しています](https://www.microsoft.com/msrc/cdoc)。 
+- SOC は、Microsoft マネージド デスクトップでまだ見ていないものからでも、社内外の両方から、会社全体からの集合的なシグナルを使用してデバイスを保護します。
+- Microsoft のセキュリティ ソリューションは、多くのサイバーセキュリティ保護基準に準拠しています。 SOC の運用は、National Institute of Standards and Technology Computer Security Incident Response Handling Guide (NIST 800-61 r2) に基づいて作成されています。
+- このプロセスを使用すると、分析とドキュメント、および復旧後の分析情報を適切に収集し、次のフェーズを通じて環境をより適切に防御できます。
+    - 準備、検出、分析
     - コンテインメント
     - 根絶
     - 回復
     - インシデント後のアクティビティ
-- Microsoft マネージドデスクトップのお客様は、Microsoft の脅威の専門家サービスに登録する資格があります。 SOC スポンサーは、このサービスを使用して、組織に影響を与える複雑な脅威 (アラートの照会、侵害される可能性のあるデバイス、疑わしいネットワーク接続の根本的な原因、および継続的な高度な脅威のキャンペーンに関する追加の脅威インテリジェンス) を理解します。 詳細については、「 [マイクロソフトの脅威の専門家](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)」を参照してください。
-- SOC の脅威と脆弱性管理プロセスは、Microsoft のいくつかのサービスを使用して、組織が脅威から保護するための推奨事項について通知します。 SOC は、エンドポイントセキュリティセンターと、Microsoft の内外にある関連する脆弱性データソースからのデータを使用して、脆弱性と誤りを発見し、操作可能なレポートを提供します。
+- Microsoft マネージド デスクトップのお客様は、Microsoft Threat Experts サービスに登録できます。 SOC は、このサービスと連携して、アラートの問い合わせ、デバイスの潜在的な侵害、疑わしいネットワーク接続の根本原因、および継続的な持続的脅威キャンペーンの進行中の脅威に関するその他の脅威インテリジェンスなど、組織に影響を与える複雑な脅威をよりよく理解します。 詳細については [、Microsoft Threat Experts を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)。
+- SOC の脅威と脆弱性の管理プロセスでは、Microsoft のサービスの一部を使用して、組織が脅威から保護するための推奨事項を通知します。 SOC は、Microsoft Defender for Endpoint Security Center および Microsoft の外部の関連する脆弱性データ ソースからのデータを使用して、脆弱性と構成の誤りを検出し、操作可能なレポートを提供します。

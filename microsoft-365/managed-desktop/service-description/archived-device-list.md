@@ -11,23 +11,23 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 57b49e49a20ee9e088301e90590c19cfabf89a2b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5d386000fab8894dd60790d3514ae93feaa03a22
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658943"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841281"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージド デスクトップでアーカイブされたデバイス
 
-最高のユーザー エクスペリエンスを保証するために、Microsoft マネージド デスクトップは特定の時点でデバイスのサポートを廃止します。 このトピックでは、"アーカイブ済み" と呼ばれる、今後数年でサポートがサポートされそうになったデバイスの一覧を示します。 既に持っているデバイスを使用して Microsoft マネージド デスクトップを使い始める場合は、この一覧を注意深く確認する必要があります。
+最高のユーザー エクスペリエンスを保証するために、Microsoft マネージド デスクトップは特定の時点でデバイスのサポートを廃止します。 この記事では、"アーカイブ済み" と呼ばれる、今後数年でサポートのサポートが近付くデバイスの一覧を示します。 既に持っているデバイスを使用して Microsoft マネージド デスクトップを使い始める場合は、この一覧をよく確認する必要があります。
 
 >[!IMPORTANT]
 >これらのデバイスは現在でも登録できますが、Microsoft マネージド デスクトップのサービスライフは短くなります。 新しいデバイスを購入する場合は、アクティブなデバイスの一覧から [モデルを使用する必要があります](./device-list.md)。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Microsoft マネージド デスクトップに登録するには、デバイスが次のモデルの 1 つであり、RAM、プロセッサ ファミリ、およびディスク領域に関する一覧の仕様を満たすか、超えている必要があります。 その他のカスタマイズはサポートされていません。
+Microsoft マネージド デスクトップに登録するには、デバイスが次のいずれかのモデルであり、RAM、プロセッサ ファミリ、およびディスク領域に関する記載されている仕様を満たすか、超えている必要があります。 その他のカスタマイズはサポートされていません。
 
 
 
@@ -70,10 +70,10 @@ Microsoft マネージド デスクトップに登録するには、デバイス
 - Windows の初回実行エクスペリエンスが完了していない。
 - デバイス登録機能を使用して Microsoft マネージド デスクトップ [に登録](https://aka.ms/mmddrhelp) する
 
-#### <a name="additional-help"></a>その他のヘルプ
+#### <a name="more-help"></a>その他のヘルプ
 
 これらのリソースは、特定のデバイスに関する質問に答えるのに役立ちます。
 
 - Dell デバイスに関するその他の質問については、[以下MMD_at_dell@dell.com。](mailto:MMD_at_dell@dell.com)
 
-- HP デバイスに関するその他の質問については、お問い合わせください: 南北アメリカ ([mmd-americas@hp.com](mailto:mmd-americas@hp.com));ヨーロッパ/中東/アフリカ ([mmd-emea@hp.com](mailto:mmd-emea@hp.com));アジア太平洋/日本 ([mmd-apj@hp.com](mailto:mmd-apj@hp.com));グローバル ([mmd@hp.com](mailto:mmd@hp.com))
+- HP デバイスに関するその他の質問については、お問い合わせください: 南北アメリカ ([mmd-americas@hp.com](mailto:mmd-americas@hp.com));ヨーロッパ/中東/アフリカ ([mmd-emea@hp.com](mailto:mmd-emea@hp.com));アジア太平洋/日本 ([mmd-apj@hp.com](mailto:mmd-apj@hp.com));Global ([mmd@hp.com](mailto:mmd@hp.com))

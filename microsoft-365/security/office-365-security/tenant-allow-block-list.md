@@ -1,5 +1,5 @@
 ---
-title: テナントの許可/ブロックリストで許可およびブロックする URL を管理する
+title: テナントの許可/ブロックリストで許可とブロックを管理する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,23 +14,23 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理者は、セキュリティ/コンプライアンス センターのテナントの許可/ブロックリストで URL エントリを&できます。
-ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+description: 管理者は、セキュリティ ポータルのテナントの許可/ブロックリストで許可とブロックを構成する方法について学習できます。
+ms.openlocfilehash: c789b09224d00f5bb41ae29d6d2a6efa64d23a8d
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683213"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799715"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL を管理する
+# <a name="managing-allows-and-blocks-in-the-tenant-allowblock-list"></a>テナントの許可/ブロックリストでの許可とブロックの管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 > [!NOTE]
-> この記事で説明する機能はプレビュー中であり、変更される可能性があります。また、一部の組織では使用できません。
+> この記事で説明する機能はプレビューであり、変更される可能性があります。また、すべての組織で利用できるではありません。
 
-Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、EOP フィルターの条件に同意しない可能性があります。 たとえば、良いメッセージが悪い (誤検知) とマークされている場合や、悪いメッセージが許可されている (検出検出が誤っている) 場合があります。
+Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、EOP フィルターの条件に同意しない可能性があります。 たとえば、良いメッセージが悪い (誤検知) とマークされている場合や、悪いメッセージが許可されている (検出誤検知) 場合があります。
 
 セキュリティ/コンプライアンス センターのテナントの許可/ブロックリスト&、Microsoft 365 フィルターの条件を手動で上書きする方法が提供されます。 テナントの許可/ブロックリストは、メール フロー中およびユーザーがクリックした時点で使用されます。 テナントの許可/ブロックリストで許可またはブロックする URL を指定できます。
 
@@ -38,11 +38,11 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [テナントの許可/ブロックリスト] ページに直接 **移動するには** 、次の値を使用します <https://protection.office.com/tenantAllowBlockList> 。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [テナントの許可/ブロック **リスト] ページに直接移動するには** 、次の値を使用します <https://protection.office.com/tenantAllowBlockList> 。
 
 - 使用可能な URL 値については、この記事で後述する「テナントの許可/ブロックリスト」セクションの [URL](#url-syntax-for-the-tenant-allowblock-list) 構文で説明します。
 
-- テナントの許可/ブロックリストでは、URL に対して最大 500 エントリを許可します。
+- テナントの許可/ブロックリストでは、URL に最大 500 エントリを許可します。
 
 - エントリは 15 分以内にアクティブになります。
 
@@ -61,7 +61,7 @@ Exchange Online または Exchange Online メールボックスのないスタ�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロックリストに URL エントリを作成する
 
@@ -73,9 +73,9 @@ URL エントリの構文の詳細については、後の「テナントの許�
 
 3. 表示される **[新しい URL の追加** ] フライアウトで、次の設定を構成します。
 
-   - **ワイルドカードを使用して URL を追加** します。1 行に 1 つの URL を入力し、最大 20 文字まで入力します。
+   - **ワイルドカードを使用して URL を追加** する : 1 行に 1 つの URL を入力し、最大 20 文字まで入力します。
 
-   - **ブロック/許可**: 指定した URL を許可 **または** ブロック **するかどうかを** 選択します。
+   - **ブロック/許可**: 指定した URLを許可またはブロック **するかどうかを** 選択します。
 
    - **有効期限が切れる** ことはありません: 次のいずれかの手順を実行します。
 
@@ -95,7 +95,7 @@ URL エントリの構文の詳細については、後の「テナントの許�
 
 2. **[URL] タブを選択** します。
 
-昇順または降順で並べ替えるには、次の列見出しをクリックします。
+次の列見出しをクリックして、昇順または降順で並べ替えます。
 
 - **値**
 - **Action**: **Block** or **Allow**.
@@ -115,13 +115,13 @@ URL エントリの構文の詳細については、後の「テナントの許�
 
 - **Last updated**: Select a start date (**From),** an end date (**To**) or both.
 
-- **有効期限 :** 開始日 **(開始日**)、終了日 (**終了日**) または両方を選択します。
+- **有効期限**: 開始日 **(開始日**)、終了日 (**終了日**) または両方を選択します。
 
 完了したら、[適用] をクリック **します**。
 
 既存のフィルターをクリアするには、[フィルター]**を** クリックし、表示される [フィルター] フライアウトで [フィルターのクリア]**をクリックします**。
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロックの一覧のエントリを変更する
+## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロックリストのエントリを変更する
 
 URL 値自体は変更できない。 代わりに、エントリを削除して再作成する必要があります。
 
@@ -143,7 +143,7 @@ URL 値自体は変更できない。 代わりに、エントリを削除して
 
      - トグルを右に移動して、有効期限が切れなさらないエントリを構成します。 ![オンに切り替え](../../media/scc-toggle-on.png).
 
-   - **省略可能なメモ**: エントリの説明テキストを入力します。
+   - **省略可能なメモ**: エントリの説明文を入力します。
 
 5. 完了したら、**[保存]** をクリックします。
 
@@ -239,7 +239,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - ピリオドの左側に少なくとも 1 つの文字があります。
   - ピリオドの右側に 2 文字以上あります。
 
-  たとえば、 `t.co` 許可されている、または許可 `.com` `contoso.` されていない。
+  たとえば、 `t.co` 許可されている、または `.com` `contoso.` 許可されていない。
 
 - サブパスは暗黙的ではありません。
 
@@ -251,9 +251,9 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
     たとえば、 `*.contoso.com` 許可されます。 `*contoso.com` 許可されません。
 
-  - パスを指定するには、右のワイルドカードでスラッシュ (/) を使用する必要があります。
+  - パスを指定するには、右のワイルドカードがスラッシュ (/) の後に続く必要があります。
 
-    たとえば、 `contoso.com/*` 許可されている、または許可 `contoso.com*` `contoso.com/ab*` されていない。
+    たとえば、 `contoso.com/*` 許可されている、または `contoso.com*` `contoso.com/ab*` 許可されていない。
 
   - すべてのサブパスは、適切なワイルドカードによって暗黙的に示されるものではありません。
 
@@ -269,9 +269,9 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
     次に例 `~contoso.com` を示 `contoso.com` します `*.contoso.com` 。
 
-- URL エントリは、すべてのプロトコルに適用されるので、プロトコルを含む URL エントリ (たとえば、,, または `http://` `https://` ) `ftp://` は失敗します。
+- URL エントリは、すべてのプロトコルに適用されるので、プロトコルを含む URL エントリ (たとえば、,, `http://` `https://` `ftp://` または) は失敗します。
 
-- ユーザー名またはパスワードはサポートされていないか、必須ではありません。
+- ユーザー名またはパスワードはサポートされていないか、必須です。
 
 - 引用符 (' または ") は無効な文字です。
 
@@ -313,7 +313,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `*.contoso.com`
 
-- **一致とブロック** の一致 **を許可する**:
+- **一致とブロック** の一 **致を許可する**:
 
   - www.contoso.com
   - xyz.abc.contoso.com
@@ -329,7 +329,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `contoso.com/a/*`
 
-- **一致とブロック** の一致 **を許可する**:
+- **一致とブロック** の一 **致を許可する**:
 
   - contoso.com/a/b
   - contoso.com/a/b/c
@@ -346,7 +346,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `~contoso.com`
 
-- **一致とブロック** の一致 **を許可する**:
+- **一致とブロック** の一 **致を許可する**:
 
   - contoso.com
   - www.contoso.com
@@ -362,7 +362,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `contoso.com/*`
 
-- **一致とブロック** の一致 **を許可する**:
+- **一致とブロック** の一 **致を許可する**:
 
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
@@ -378,7 +378,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `*.contoso.com/*`
 
-- **一致とブロック** の一致 **を許可する**:
+- **一致とブロック** の一 **致を許可する**:
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -388,11 +388,11 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 - **Allow not matched** and **Block not matched**: contoso.com/b
 
-#### <a name="scenario-left-and-right-tilde"></a>シナリオ: 左と右のチルダ
+#### <a name="scenario-left-and-right-tilde"></a>シナリオ: 左右のチルダ
 
 **エントリ**: `~contoso.com~`
 
-- **一致とブロック** の一致 **を許可する**:
+- **一致とブロック** の一 **致を許可する**:
 
   - contoso.com
   - contoso.com/a
@@ -420,7 +420,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `1.2.3.4/*`
 
-- **一致とブロック** の一致 **を許可する**:
+- **一致とブロック** の一 **致を許可する**:
 
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
@@ -450,7 +450,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - contoso.com:443
   - abc.contoso.com:25
 
-- **説明を示すワイルドカード以外:**
+- **説明的でないワイルドカード**:
 
   - \*
   - \*.\*
