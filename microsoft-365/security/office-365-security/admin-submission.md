@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンス センターの送信ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いがあるメール、スパム、その他の有害な可能性のあるメッセージ、URL、ファイルをスキャンのために Microsoft に送信する方法について説明します。
-ms.openlocfilehash: 7327768780e5db16e09e2b709c9c11344573c404
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 432a245530d7906ae8babbc54176480d36315351
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659827"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864950"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -32,7 +32,7 @@ ms.locfileid: "49659827"
 
 Exchange Online にメールボックスがある Microsoft 365 組織では、管理者はセキュリティ & コンプライアンス センターの送信ポータルを使用して、メール メッセージ、URL、および添付ファイルをスキャンのために Microsoft に送信できます。
 
-メールを送信すると、テナントへの受信メールを許可している可能性があるポリシーに関する情報と、メール内の URL と添付ファイルの検査に関する情報が表示されます。 メールを許可している可能性があるポリシーには、個々のユーザーの差出人セーフ リストと、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) などのテナント レベルのポリシーが含まれます。
+メールを送信すると、テナントへの受信メールを許可している可能性があるポリシーに関する情報と、メール内の URL と添付ファイルの検査に関する情報が表示されます。 メールを許可するポリシーには、個々のユーザーの差出人セーフ リストと、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) などのテナント レベルのポリシーが含まれます。
 
 電子メール メッセージ、URL、および添付ファイルを Microsoft に送信するその他の方法については、「メッセージとファイルを Microsoft に報告する」を [参照してください](report-junk-email-messages-to-microsoft.md)。
 
@@ -54,7 +54,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 1. セキュリティ & コンプライアンス センターで、[脅威の管理の提出] に移動し、[管理者の提出] タブに移動し、[新しい提出] をクリック \> **します**。 
 
-2. 次 **のセクションで** 説明するように、メッセージ、URL、または添付ファイルを送信するために表示される新しい申請のフライアウトを使用します。
+2. 次 **のセクションで** 説明するように、メッセージ、URL、または添付ファイルを送信するために表示される新しい送信のフライアウトを使用します。
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Microsoft に問題があるメールを送信する
 
@@ -135,7 +135,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューで列を追加または削除できます。
 
-- **Date**
+- **日付**
 - **提出 ID**: すべての申請に割り当てられる GUID 値。
 - **提出者**<sup>\*</sup>
 - **[件名]**<sup>\*</sup>
@@ -152,7 +152,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 管理者の提出で送信されたメッセージは再スキャンされ、詳細フライアウトに結果が表示されます。
 
 - 配信時に送信者の電子メール認証にエラーが発生した場合。
-- メッセージの Verdict に影響を与えた、または上書きした可能性があるポリシーヒットに関する情報。
+- メッセージの Verdict に影響を与えた、または上書きした可能性があるポリシー ヒットに関する情報。
 - 現在の分析結果では、メッセージに含まれる URL またはファイルが悪意のあるものか確認されません。
 - 成績者からのフィードバック。
 
@@ -164,7 +164,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューで列を追加または削除できます。
 
-- **Date**
+- **日付**
 - **提出 ID**
 - **提出者**<sup>\*</sup>
 - [**URL**<sup>\*</sup>]
@@ -179,7 +179,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューで列を追加または削除できます。
 
-- **Date**
+- **日付**
 - **提出 ID**
 - **提出者**<sup>\*</sup>
 - **ファイル名**<sup>\*</sup>
@@ -190,7 +190,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 ## <a name="view-user-submissions-to-microsoft"></a>Microsoft へのユーザー申請を表示する
 
-レポート メッセージ アドインを展開 [](enable-the-report-message-add-in.md)した場合、または Outlook [on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)の組み込みレポートを使用しているユーザーは、[ユーザーの送信] タブで報告しているユーザーを **確認できます。**
+レポート メッセージ アドイン、Report [](enable-the-report-message-add-in.md) [Phishing](enable-the-report-phish-add-in.md)アドイン、または[Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)で組み込みのレポートを使用しているユーザーを展開した場合は、[ユーザーの送信]タブでユーザーが報告している情報を確認できます。
 
 1. セキュリティ/コンプライアンス センター&、脅威管理の提出 **に** \> **移動します**。
 

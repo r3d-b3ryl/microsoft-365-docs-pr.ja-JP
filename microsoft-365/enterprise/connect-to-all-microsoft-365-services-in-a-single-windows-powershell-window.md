@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続します。'
-ms.openlocfilehash: 4128e360a3664d3a61559139bc4e6e346418fa61
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 4266b4f216b4c9df48f0c19d1d2123269eb32cae
+ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087029"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49849595"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 
@@ -34,7 +34,7 @@ PowerShell を使用して Microsoft 365 を管理する場合は、同時に複
 >[!Note]
 >この記事には現在、ワールドワイド (+ GCC) クラウドに接続するコマンドのみ含まれています。 メモでは、他の Microsoft 365 クラウドへの接続に関する記事へのリンクを提供しています。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 PowerShell の単一のインスタンスからすべての Microsoft 365 を管理する前に、次の前提条件を考慮してください。
   
@@ -243,7 +243,7 @@ Connect-AzureAD
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Exchange Online
 Import-Module ExchangeOnlineManagement
@@ -263,7 +263,7 @@ Connect-AzureAD
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Security & Compliance Center
 Import-Module ExchangeOnlineManagement
@@ -285,7 +285,7 @@ Connect-MsolService
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Exchange Online
 Import-Module ExchangeOnlineManagement
@@ -305,7 +305,7 @@ Connect-MsolService
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Security & Compliance Center
 Import-Module ExchangeOnlineManagement
