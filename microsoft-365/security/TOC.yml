@@ -521,6 +521,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: レポート メッセージ アドインを有効にする
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: レポート フィッシング アドインを有効にする
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: 迷惑メール報告アドインのインストールと使用
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: スタンドアロン EOP のメール フロー ルール (トランスポート ルール)

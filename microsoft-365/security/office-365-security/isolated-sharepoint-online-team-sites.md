@@ -18,58 +18,58 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 使用、要件、およびそれらで使用できる機能を含む、分離した SharePoint Online チーム サイトについて説明します。
-ms.openlocfilehash: e4e45c8adffcf86d56a71e5b9935e634f2de9254
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 55bdf2999610310babb60b6938afb97732e5a7a0
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616454"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845093"
 ---
-# <a name="isolated-sharepoint-online-team-sites"></a><span data-ttu-id="21c16-103">分離した SharePoint Online チーム サイト</span><span class="sxs-lookup"><span data-stu-id="21c16-103">Isolated SharePoint Online team sites</span></span>
+# <a name="isolated-sharepoint-online-team-sites"></a><span data-ttu-id="8841f-103">分離した SharePoint Online チーム サイト</span><span class="sxs-lookup"><span data-stu-id="8841f-103">Isolated SharePoint Online team sites</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
- <span data-ttu-id="21c16-104">**概要:** 分離した SharePoint Online チーム サイトの使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="21c16-104">**Summary:** Learn about the uses for isolated SharePoint Online team sites.</span></span>
+ <span data-ttu-id="8841f-104">**概要:** 分離した SharePoint Online チーム サイトの使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8841f-104">**Summary:** Learn about the uses for isolated SharePoint Online team sites.</span></span>
 
-<span data-ttu-id="21c16-p101">SharePoint Online チーム サイトは、Microsoft Office 365 のノート、ドキュメント、記事、予定表、およびその他のリソースのコラボレーション用のスペースをすばやく作成する簡単な方法です。SharePoint Online チーム サイトは、Microsoft 365 グループをベースとしており、グループ メンバーや組織全体の非公開セットを使用したオープンなコラボレーションを可能にする簡略化された管理モデルを備えています。既定の SharePoint Online チーム サイトでは、Microsoft 365 のグループのメンバーが他のユーザーを招待し、アクセス許可の設定を制御することが可能です。</span><span class="sxs-lookup"><span data-stu-id="21c16-p101">SharePoint Online team sites are an easy way to quickly create a space for collaboration of notes, documents, articles, a calendar, and other resources in Microsoft Office 365. SharePoint Online team sites are based on a Microsoft 365 group and have a simplified administration model to allow open collaboration with a private set of group members or the entire organization. A default SharePoint Online team site allows members of the Microsoft 365 group to invite other users and control permissions settings.</span></span>
+<span data-ttu-id="8841f-p101">SharePoint Online チーム サイトは、コラボレーション用のスペースをすばやく作成する簡単な方法です。ユーザーは、Microsoft Office 365 のノート、ドキュメント、記事、予定表、およびその他のリソースで共同作業できます。SharePoint Online チーム サイトは、Microsoft 365 グループをベースとしており、グループ メンバーや組織全体の非公開セットを使用したオープンなコラボレーションを可能にする簡略化された管理モデルを備えています。既定の SharePoint Online チーム サイトでは、Microsoft 365 のグループのメンバーが他のユーザーを招待し、アクセス許可の設定を制御することが可能です。</span><span class="sxs-lookup"><span data-stu-id="8841f-p101">SharePoint Online team sites are an easy way to quickly create a space for collaboration. Users can work together on notes, documents, articles, a calendar, and other resources in Microsoft Office 365. SharePoint Online team sites are based on a Microsoft 365 group and have a simplified administration model to allow open collaboration with a private set of group members or the entire organization. A default SharePoint Online team site allows members of the Microsoft 365 group to invite other users and control permissions settings.</span></span>
 
-<span data-ttu-id="21c16-p102">しかし、コラボレーション用の SharePoint Online チーム サイトを作成し、グループのメンバーシップや SharePoint Online のアクセス許可レベルという SharePoint 管理者しか管理できない手段を通して、サイトのアクセス許可をより厳しく制御する必要が生じる場合もあります。これは、分離したサイトと呼ばれ、コラボレーション、コンテンツの表示、またはサイトの管理を実行するユーザーのセットに分離されています。以下を対象として、分離したサイトが必要になることがあります。</span><span class="sxs-lookup"><span data-stu-id="21c16-p102">However, in some cases, you want to create a SharePoint Online team site for collaboration where the permissions of that site are more tightly controlled through group membership and SharePoint Online permission levels, which are only managed by SharePoint administrators. We call this an isolated site, which is isolated to the set of users that are either collaborating, viewing its contents, or administering the site. You might need an isolated site for the following:</span></span>
+<span data-ttu-id="8841f-109">ただし、グループ メンバーシップによって制御されるサイト アクセスと、SharePoint 管理者によって管理される SharePoint Online のアクセス許可レベルが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="8841f-109">However, you'll sometimes need site access to be controlled by group memberships, and SharePoint Online permission levels managed by SharePoint administrators.</span></span> <span data-ttu-id="8841f-110">これは、分離したサイトと呼ばれ、コラボレーション、コンテンツの表示、またはサイトの管理を実行するユーザーのセットに分離されています。</span><span class="sxs-lookup"><span data-stu-id="8841f-110">We call this an isolated site, which is isolated to the set of users that are either collaborating, viewing its contents, or administering the site.</span></span> <span data-ttu-id="8841f-111">以下を対象として、分離したサイトが必要になることがあります。</span><span class="sxs-lookup"><span data-stu-id="8841f-111">You might need an isolated site for the following:</span></span>
 
-- <span data-ttu-id="21c16-111">組織内での機密プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="21c16-111">A secret project within your organization.</span></span>
+- <span data-ttu-id="8841f-112">組織内での機密プロジェクト。</span><span class="sxs-lookup"><span data-stu-id="8841f-112">A secret project within your organization.</span></span>
 
-- <span data-ttu-id="21c16-112">組織にとって機密度が高い、または知的財産となる場所。</span><span class="sxs-lookup"><span data-stu-id="21c16-112">The location for highly-sensitive or valuable intellectual property for your organization.</span></span>
+- <span data-ttu-id="8841f-113">組織にとって機密度が高い、または知的財産となる場所。</span><span class="sxs-lookup"><span data-stu-id="8841f-113">The location for highly-sensitive or valuable intellectual property for your organization.</span></span>
 
-- <span data-ttu-id="21c16-113">組織によって実施された、または現在遵守されている法的措置のリソース。</span><span class="sxs-lookup"><span data-stu-id="21c16-113">The resources for a legal action taken by your organization or that to which it is being subjected.</span></span>
+- <span data-ttu-id="8841f-114">組織によって実施された、または現在遵守されている法的措置のリソース。</span><span class="sxs-lookup"><span data-stu-id="8841f-114">The resources for a legal action taken by your organization or that to which it is being subjected.</span></span>
 
-- <span data-ttu-id="21c16-114">一部が重複する複数の組織間で Microsoft 365 サブスクリプションを共有するものの、ほとんどの部分は個別のビジネス エンティティとして存在する場合。</span><span class="sxs-lookup"><span data-stu-id="21c16-114">To share a Microsoft 365 subscription between multiple organizations that have some overlap, but for the most part exist as separate business entities.</span></span>
+- <span data-ttu-id="8841f-115">一部が重複する複数の組織間で Microsoft 365 サブスクリプションを共有するものの、ほとんどの部分は個別のビジネス エンティティとして存在する場合。</span><span class="sxs-lookup"><span data-stu-id="8841f-115">To share a Microsoft 365 subscription between multiple organizations that have some overlap, but for the most part exist as separate business entities.</span></span>
 
-<span data-ttu-id="21c16-115">分離したサイトの要件を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="21c16-115">Here are the requirements of an isolated site:</span></span>
+<span data-ttu-id="8841f-116">分離したサイトの要件を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="8841f-116">Here are the requirements of an isolated site:</span></span>
 
-- <span data-ttu-id="21c16-116">SharePoint Online 管理者だけが、サイトの管理を実行できます。これには、サイトにアクセスし、カスタム アクセス許可を構成するためのグループ メンバーシップが含まれます。</span><span class="sxs-lookup"><span data-stu-id="21c16-116">Only SharePoint Online administrators can perform site administration, which includes group membership for access to the site and configuring custom permissions.</span></span>
+- <span data-ttu-id="8841f-117">SharePoint Online 管理者だけが、サイトの管理を実行できます。これには、サイトにアクセスし、カスタム アクセス許可を構成するためのグループ メンバーシップが含まれます。</span><span class="sxs-lookup"><span data-stu-id="8841f-117">Only SharePoint Online administrators can perform site administration, which includes group membership for access to the site and configuring custom permissions.</span></span>
 
-- <span data-ttu-id="21c16-117">サイトのメンバーは、他のメンバーをチーム サイトに招待することはできません。</span><span class="sxs-lookup"><span data-stu-id="21c16-117">Members of the site cannot invite other members to the team site.</span></span>
+- <span data-ttu-id="8841f-118">サイトのメンバーは、他のメンバーをチーム サイトに招待することはできません。</span><span class="sxs-lookup"><span data-stu-id="8841f-118">Members of the site cannot invite other members to the team site.</span></span>
 
-- <span data-ttu-id="21c16-p103">分離したサイトのメンバーではないユーザーは、サイトへのアクセスを要求できません。サイトに関連付けられているいずれかの URL にアクセスしようとすると、アクセスが拒否された Web ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="21c16-p103">Users who are not members of the isolated site cannot request access to the site. They will receive an access denied web page when they attempt to access any URL associated with the site.</span></span>
+- <span data-ttu-id="8841f-p103">分離したサイトのメンバーではないユーザーは、サイトへのアクセスを要求できません。サイトに関連付けられているいずれかの URL にアクセスしようとすると、アクセスが拒否された Web ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="8841f-p103">Users who are not members of the isolated site cannot request access to the site. They will receive an access denied web page when they attempt to access any URL associated with the site.</span></span>
 
-<span data-ttu-id="21c16-p104">一元的なアクセス制御を必要とすることと SharePoint Online 管理者によるカスタム アクセス許可とのトレードオフは、時間が経過してもサイトが分離されたままであるということです。たとえば、現在のメンバーは、意図的であれ偶然であれ、サイトのメンバーではない Microsoft 365 サブスクリプション内の他のユーザーを招待したり、他のユーザーのためにカスタムのアクセス許可を構成したりすることはできません。</span><span class="sxs-lookup"><span data-stu-id="21c16-p104">The tradeoff of requiring centralized access control and custom permissions by SharePoint Online administrators is that the site remains isolated over time. For example, current members cannot, either intentionally or accidentally, invite or configure custom permissions for other users within the Microsoft 365 subscription who should not be members of the site.</span></span>
+<span data-ttu-id="8841f-p104">一元的なアクセス制御を必要とすることと SharePoint Online 管理者によるカスタム アクセス許可とのトレードオフは、時間が経過してもサイトが分離されたままであるということです。たとえば、現在のメンバーは、意図的であれ偶然であれ、サイトのメンバーではない Microsoft 365 サブスクリプション内の他のユーザーを招待したり、他のユーザーのためにカスタムのアクセス許可を構成したりすることはできません。</span><span class="sxs-lookup"><span data-stu-id="8841f-p104">The tradeoff of requiring centralized access control and custom permissions by SharePoint Online administrators is that the site remains isolated over time. For example, current members cannot, either intentionally or accidentally, invite or configure custom permissions for other users within the Microsoft 365 subscription who should not be members of the site.</span></span>
 
-<span data-ttu-id="21c16-122">分離したサイトは次のようにその他の機能と一緒に使用できます。</span><span class="sxs-lookup"><span data-stu-id="21c16-122">An isolated site can be used with other features, such as:</span></span>
+<span data-ttu-id="8841f-123">分離したサイトは次のようにその他の機能と一緒に使用できます。</span><span class="sxs-lookup"><span data-stu-id="8841f-123">An isolated site can be used with other features, such as:</span></span>
 
-- <span data-ttu-id="21c16-123">Information Rights Management。ローカルにダウンロードしたり、組織全体で利用可能な別のサイトにアップロードしたりする場合でも、サイト上のリソースを暗号化されたままにします。</span><span class="sxs-lookup"><span data-stu-id="21c16-123">Information Rights Management to ensure that the resources on the site remain encrypted, even if they are downloaded locally and uploaded to another site that is available to the entire organization.</span></span>
+- <span data-ttu-id="8841f-124">Information Rights Management。ローカルにダウンロードしたり、組織全体で利用可能な別のサイトにアップロードしたりする場合でも、サイト上のリソースを暗号化されたままにします。</span><span class="sxs-lookup"><span data-stu-id="8841f-124">Information Rights Management to ensure that the resources on the site remain encrypted, even if they are downloaded locally and uploaded to another site that is available to the entire organization.</span></span>
 
-- <span data-ttu-id="21c16-124">データ損失防止。ユーザーがファイルなどのサイトのリソースを電子メールで送信できないようにします。</span><span class="sxs-lookup"><span data-stu-id="21c16-124">Data loss prevention to prevent users from sending the resources of the site, such as files, in email.</span></span>
+- <span data-ttu-id="8841f-125">データ損失防止。ユーザーがファイルなどのサイトのリソースを電子メールで送信できないようにします。</span><span class="sxs-lookup"><span data-stu-id="8841f-125">Data loss prevention to prevent users from sending the resources of the site, such as files, in email.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="21c16-125">次の手順</span><span class="sxs-lookup"><span data-stu-id="21c16-125">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="8841f-126">次の手順</span><span class="sxs-lookup"><span data-stu-id="8841f-126">Next steps</span></span>
 
-<span data-ttu-id="21c16-126">SharePoint Online チーム サイトを試用サブスクリプションで使用するには、「[Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-site-dev-test-environment.md)」にあるステップごとの指示を参照してください。</span><span class="sxs-lookup"><span data-stu-id="21c16-126">To try out an isolated SharePoint Online team site in a trial subscription, see the step-by-step instructions in [Isolated SharePoint Online team site dev/test environment](isolated-sharepoint-online-team-site-dev-test-environment.md).</span></span>
+<span data-ttu-id="8841f-127">SharePoint Online チーム サイトを試用サブスクリプションで使用するには、「[Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-site-dev-test-environment.md)」にあるステップごとの指示を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8841f-127">To try out an isolated SharePoint Online team site in a trial subscription, see the step-by-step instructions in [Isolated SharePoint Online team site dev/test environment](isolated-sharepoint-online-team-site-dev-test-environment.md).</span></span>
 
-<span data-ttu-id="21c16-127">分離した SharePoint Online チーム サイトを実稼働に展開する準備ができたら、「[分離した SharePoint Online チーム サイトの設計](design-an-isolated-sharepoint-online-team-site.md)」にある設計に関するステップバイステップの考慮事項を参照してください。</span><span class="sxs-lookup"><span data-stu-id="21c16-127">When you are ready to deploy an isolated SharePoint Online team site in production, see the step-by-step design considerations in [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md).</span></span>
+<span data-ttu-id="8841f-128">分離した SharePoint Online チーム サイトを実稼働に展開する準備ができたら、「[分離した SharePoint Online チーム サイトの設計](design-an-isolated-sharepoint-online-team-site.md)」にある設計に関するステップバイステップの考慮事項を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8841f-128">When you are ready to deploy an isolated SharePoint Online team site in production, see the step-by-step design considerations in [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="21c16-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="21c16-128">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8841f-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="8841f-129">Related topics</span></span>
 
-[<span data-ttu-id="21c16-129">分離した SharePoint Online チーム サイトの設計</span><span class="sxs-lookup"><span data-stu-id="21c16-129">Design an isolated SharePoint Online team site</span></span>](design-an-isolated-sharepoint-online-team-site.md)
+[<span data-ttu-id="8841f-130">分離した SharePoint Online チーム サイトの設計</span><span class="sxs-lookup"><span data-stu-id="8841f-130">Design an isolated SharePoint Online team site</span></span>](design-an-isolated-sharepoint-online-team-site.md)
 
-[<span data-ttu-id="21c16-130">分離した SharePoint Online チーム サイトの管理</span><span class="sxs-lookup"><span data-stu-id="21c16-130">Manage an isolated SharePoint Online team site</span></span>](manage-an-isolated-sharepoint-online-team-site.md)
+[<span data-ttu-id="8841f-131">分離した SharePoint Online チーム サイトの管理</span><span class="sxs-lookup"><span data-stu-id="8841f-131">Manage an isolated SharePoint Online team site</span></span>](manage-an-isolated-sharepoint-online-team-site.md)
 
-[<span data-ttu-id="21c16-131">分離した SharePoint Online チーム サイトの展開</span><span class="sxs-lookup"><span data-stu-id="21c16-131">Deploy an isolated SharePoint Online team site</span></span>](deploy-an-isolated-sharepoint-online-team-site.md)
+[<span data-ttu-id="8841f-132">分離した SharePoint Online チーム サイトの展開</span><span class="sxs-lookup"><span data-stu-id="8841f-132">Deploy an isolated SharePoint Online team site</span></span>](deploy-an-isolated-sharepoint-online-team-site.md)
