@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 使用、要件、およびそれらで使用できる機能を含む、分離した SharePoint Online チーム サイトについて説明します。
-ms.openlocfilehash: e4e45c8adffcf86d56a71e5b9935e634f2de9254
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 55bdf2999610310babb60b6938afb97732e5a7a0
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616454"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845093"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>分離した SharePoint Online チーム サイト
 
@@ -32,9 +32,9 @@ ms.locfileid: "49616454"
 
  **概要:** 分離した SharePoint Online チーム サイトの使用方法について説明します。
 
-SharePoint Online チーム サイトは、Microsoft Office 365 のノート、ドキュメント、記事、予定表、およびその他のリソースのコラボレーション用のスペースをすばやく作成する簡単な方法です。SharePoint Online チーム サイトは、Microsoft 365 グループをベースとしており、グループ メンバーや組織全体の非公開セットを使用したオープンなコラボレーションを可能にする簡略化された管理モデルを備えています。既定の SharePoint Online チーム サイトでは、Microsoft 365 のグループのメンバーが他のユーザーを招待し、アクセス許可の設定を制御することが可能です。
+SharePoint Online チーム サイトは、コラボレーション用のスペースをすばやく作成する簡単な方法です。ユーザーは、Microsoft Office 365 のノート、ドキュメント、記事、予定表、およびその他のリソースで共同作業できます。SharePoint Online チーム サイトは、Microsoft 365 グループをベースとしており、グループ メンバーや組織全体の非公開セットを使用したオープンなコラボレーションを可能にする簡略化された管理モデルを備えています。既定の SharePoint Online チーム サイトでは、Microsoft 365 のグループのメンバーが他のユーザーを招待し、アクセス許可の設定を制御することが可能です。
 
-しかし、コラボレーション用の SharePoint Online チーム サイトを作成し、グループのメンバーシップや SharePoint Online のアクセス許可レベルという SharePoint 管理者しか管理できない手段を通して、サイトのアクセス許可をより厳しく制御する必要が生じる場合もあります。これは、分離したサイトと呼ばれ、コラボレーション、コンテンツの表示、またはサイトの管理を実行するユーザーのセットに分離されています。以下を対象として、分離したサイトが必要になることがあります。
+ただし、グループ メンバーシップによって制御されるサイト アクセスと、SharePoint 管理者によって管理される SharePoint Online のアクセス許可レベルが必要になる場合があります。 これは、分離したサイトと呼ばれ、コラボレーション、コンテンツの表示、またはサイトの管理を実行するユーザーのセットに分離されています。 以下を対象として、分離したサイトが必要になることがあります。
 
 - 組織内での機密プロジェクト。
 
