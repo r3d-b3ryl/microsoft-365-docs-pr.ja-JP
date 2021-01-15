@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Microsoft 365 セキュリティ センターの攻撃シミュレーション トレーニングが従業員に与える影響を把握し、シミュレーションとトレーニングの結果から分析情報を得る方法を学習できます。
-ms.openlocfilehash: 54855a4ce8e64f4d58b9ff2697395ed684be2773
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: c283819550872691d8dd23d3921c22cb23637633
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794558"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870957"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 
@@ -32,7 +32,7 @@ We are continuously working on expanding the insights that are available to you.
 
 グラフには次の情報が表示されます。
 
-- **攻撃シミュレーション トレーニングを** 使用する他の Microsoft 365 テナントと同じ種類のペイロードを使用するシミュレーションの平均侵害率を反映する予測妥協率。
+- **攻撃シミュレーション トレーニングを** 使用する他の Microsoft 365 テナントと同じ種類のペイロードを使用したシミュレーションの平均侵害率を反映する予測妥協率。
 - **実際の侵害率** は、シミュレーションに落ちた従業員の割合を反映しています。
 
 さらに、攻撃によって侵害された実際の従業員数と予測される侵害率の違い `<number> less susceptible to phishing` を反映しています。 この数の従業員は、今後の同様の攻撃によって侵害される可能性は低く、予想される侵害率とは対照的に、従業員がどのように全体的に行ったか `<percent%> better than predicted rate` を示しています。
@@ -53,4 +53,8 @@ We are continuously working on expanding the insights that are available to you.
 
 ## <a name="related-links"></a>関連リンク
 
-**攻撃シミュレータ**[フィッシング攻撃シミュレーションを作成し](attack-simulation-training.md)、[ユーザーをトレーニングするペイロードを作成する](attack-simulation-training-payloads.md)
+[攻撃シミュレーション トレーニングの使用を開始する](attack-simulation-training-get-started.md)
+
+[フィッシング攻撃シミュレーションを作成する](attack-simulation-training.md)
+
+[ユーザーのトレーニング用のペイロードを作成する](attack-simulation-training-payloads.md)

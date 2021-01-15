@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender を 365 Office評価する
-description: 評価モードOffice 365 用の Defender は、マルウェアなどの評価を記録するがメッセージには作用しない Office 365 電子メール ポリシー用の Defender を作成します。
+description: 評価モードOffice 365 用の Defender は、マルウェアなどの評価を記録するが、メッセージには作用しない Office 365 電子メール ポリシー用の Defender を作成します。
 keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, ATP
 f1.keywords:
 - NOCSH
@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: abb33b85717e63cb78a2b1edfd86584fd165a71f
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: f8f105215b23ec49318c133714e758e2a2a9c1df
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701017"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870923"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender を 365 Office評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Microsoft Defender を評価して Office 365 は間もなくパブリック プレビューになります。 このプレビュー バージョンは、サービス レベルアグリーメントなしで提供されます。 一部の機能がサポートされていないか、機能が制限されている可能性があります。
+> Microsoft Defender for Office 365 評価版はパブリック プレビュー中です。 このプレビュー バージョンは、サービス レベルアグリーメントなしで提供されます。 一部の機能がサポートされていないか、機能が制限されている可能性があります。
 
 包括的なセキュリティ製品評価を実施すると、アップグレードと購入に関する情報に基づいた意思決定を行うのに役立ちます。 セキュリティ製品の機能を試して、セキュリティ運用チームが日常業務に役立つ方法を評価するのに役立ちます。
 
@@ -39,15 +39,15 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 
 ## <a name="how-the-evaluation-works"></a>評価のしくみ
 
-評価モードOffice 365 用の Defender は、マルウェアなどの評価を記録するがメッセージには作用しない Office 365 電子メール ポリシー用の Defender を作成します。 MX レコードの構成を変更する必要はありません。
+評価モードOffice 365 用の Defender は、マルウェアなどの評価を記録するが、メッセージには作用しない Office 365 電子メール ポリシー用の Defender を作成します。 MX レコード構成を変更する必要はありません。
 
 評価モードでは、 [安全な添付ファイル](atp-safe-attachments.md)、安全な [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) [リンク](atp-safe-links.md)、フィッシング詐欺対策の偽装ポリシーがユーザーに代わって設定されます。 365 Office用のすべての Defender は、バックグラウンドで非強制モードで作成され、表示されません。
 
 セットアップの一環として、評価モードではコネクタの [拡張フィルターも構成されます](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 IP アドレスと送信者情報を保持することでフィルターの精度が向上します。それ以外の場合、メールが Office 365 の Defender の前にある電子メール セキュリティ ゲートウェイ (DEFENDER) を通過すると失われます。 拡張フィルタリングは、Exchange Online Protection (EOP) のスパム対策およびフィッシング対策ポリシーのフィルタリング精度も向上します。
 
-一部のサポートされていないシナリオに対する潜在的な運用への影響を最小限に抑えるために、Spam Confidence Level (SCL) を -1 に設定するトランスポート ルールを作成することで、すべての EOP フィルタリングをバイパスできます。 詳細 [については、「EAC を使用してメッセージの SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)を設定するメール フロー ルールを作成する」   を参照してください。
+一部のサポートされていないシナリオに対する潜在的な運用への影響を最小限に抑えるために、Spam Confidence Level (SCL) を -1 に設定するトランスポート ルールを作成することで、すべての EOP フィルタリングをバイパスできます。 詳細 [については、「EAC を使用して、メッセージの SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)を設定するメール フロー ルールを作成する」   を参照してください。
 
-評価モードを設定すると、ポリシーが実装された場合にブロックされるメッセージを数値化する最大 90 日間のデータ (削除、迷惑メールへの送信、検疫など) で毎日レポートが更新されます。 レポートは、365 および EOP Office Defender すべてについて生成されます。 これらは検出テクノロジ (偽装など) ごとに集計され、時間範囲でフィルター処理できます。 さらに、カスタム ピボットを作成したり、脅威エクスプローラーを使用して詳細なメッセージを作成したりするために、メッセージ レポートをオンデマンドで作成できます。
+評価モードを設定すると、ポリシーが実装された場合にブロックされるメッセージを数値化する最大 90 日間のデータ (削除、迷惑メールへの送信、検疫など) で毎日レポートが更新されます。 レポートは、365 および EOP の検出Office Defender すべてについて生成されます。 これらは検出テクノロジ (偽装など) ごとに集計され、時間範囲でフィルター処理できます。 さらに、カスタム ピボットを作成したり、脅威エクスプローラーを使用して詳細なメッセージを作成したりするために、メッセージ レポートをオンデマンドで作成できます。
 
 簡素化されたセットアップ エクスペリエンスを使用すると、次の作業に集中できます。
 
@@ -56,7 +56,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 - アクションに関するレポートの分析
 - 評価結果の提示
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 ### <a name="licensing"></a>ライセンス
 
@@ -77,28 +77,28 @@ Office 365 用の Microsoft Defender の試用版ライセンスを取得する�
 
 高度な脅威を監視および報告する評価を含む 30 日間のウィンドウがあります。 また、365 の機能に対する完全な Defender を使用する場合は、有料サブスクリプションをOfficeすることもできます。
 
-### <a name="roles"></a>ロール
+### <a name="roles"></a>Roles
 
-Exchange Online の役割は、評価モードで 365 Office Defender をセットアップするために必要です。
+Exchange Online の役割は、評価モードで 365 Office Defender をセットアップする必要があります。
 
 - [Exchange Online のアクセス許可について](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
 - [管理者ロールの割り当てについて](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
 
 次の役割が必要です。
 
-|タスク|Role|
+|Task|Role|
 |---|---|
 |無料試用版を取得するか、Microsoft Defender を Office 365 用に購入する (プラン 2)|課金管理者ロールまたはグローバル管理者ロール|
-|評価ポリシーを作成する|"Remote and Accepted Domains/リモートドメインと承認されたドメイン" 役割セキュリティ管理者ロール|
-|評価ポリシーの編集|"Remote and Accepted Domains/リモートドメインと承認されたドメイン" 役割セキュリティ管理者ロール|
-|評価ポリシーを削除する|"Remote and Accepted Domains/リモートドメインと承認されたドメイン" 役割セキュリティ管理者ロール |
+|評価ポリシーを作成する|"Remote and Accepted Domains/リモートドメインと受け入れドメイン" 役割セキュリティ管理者ロール|
+|評価ポリシーの編集|"Remote and Accepted Domains/リモートドメインと受け入れドメイン" 役割セキュリティ管理者ロール|
+|評価ポリシーを削除する|"Remote and Accepted Domains/リモートドメインと受け入れドメイン" 役割セキュリティ管理者ロール |
 |評価レポートの表示|セキュリティ管理者ロールまたはセキュリティ閲覧者ロール|
 |
 
 
 ### <a name="enhanced-filtering"></a>拡張フィルタリング
 
-一括保護やスパム保護などの Exchange Online Protection ポリシーは変わりません。 メッセージ配信も同じままです。 ただし、この評価ではコネクタの拡張フィルタリングが有効にされ、バイパスされていない限り、メール フローと Exchange Online Protection ポリシーに影響します。
+一括保護やスパム保護などの Exchange Online Protection ポリシーは変わりません。 メッセージ配信も同じままです。 ただし、この評価ではコネクタの拡張フィルター処理が有効にされ、バイパスされていない限り、メール フローと Exchange Online Protection ポリシーに影響します。
 
 コネクタのフィルター処理が強化され、テナントはスプーフィング対策保護を使用できます。 コネクタの拡張フィルタリングを有効にせずに電子メール セキュリティ ゲートウェイ (RF) を使用している場合、スプーフィング対策はサポートされません。
 
@@ -110,12 +110,12 @@ URL はメール フロー中にデトニトされます。 特定の URL を分
 
 ### <a name="email-routing"></a>電子メールルーティング
 
-メールをルーティングする受信コネクタの名前など、メールの現在のルーティング方法を設定するために必要な対応する詳細を準備します。 Exchange Online Protection を使用しているだけの場合は、コネクタを使用する必要があります。 [メール フローと電子メール ルーティングについて](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+メールをルーティングする受信コネクタの名前など、メールの現在のルーティング方法を設定するために必要な対応する詳細を準備します。 Exchange Online Protection を使用しているだけの場合は、コネクタを使用する必要があります。 [メール フローと電子メール ルーティングの詳細](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 サポートされる電子メール ルーティング シナリオは次のとおりです。
 
 - **サード パーティ** のパートナーまたはオンプレミスのサービス プロバイダー: 評価する受信コネクタは、サード パーティプロバイダーを使用するか、オンプレミスの電子メール セキュリティのソリューションを使用しています。
-- **Microsoft Exchange Online保護** のみ: 評価するテナントは Office 365 を電子メールセキュリティに使用し、Mail Exchange (MX) レコードは Microsoft をポイントします。
+- **Microsoft Exchange Online保護** のみ: 評価するテナントは Office 365 を電子メール セキュリティに使用し、Mail Exchange (MX) レコードは Microsoft をポイントします。
 
 ### <a name="email-security-gateway"></a>電子メール セキュリティ ゲートウェイ
 
@@ -145,7 +145,7 @@ Office 365 セキュリティ & コンプライアンス センター (3 つの�
 
 ## <a name="setting-up-the-evaluation"></a>評価の設定
 
-評価のセットアップ フローを開始すると、2 つのルーティング オプションが提供されます。 組織のメール ルーティングのセットアップと評価のニーズに応じて、サード パーティまたはオンプレミスのサービス プロバイダーを使用しているか、または Microsoft Exchange Online のみを使用しているかを選択できます。
+評価のセットアップ フローを開始すると、2 つのルーティング オプションが提供されます。 組織のメール ルーティングのセットアップと評価のニーズに応じて、サードパーティまたはオンプレミスのサービス プロバイダーを使用しているか、または Microsoft Exchange Online のみを使用しているかを選択できます。
 
 - サードパーティのパートナーやオンプレミスのサービス プロバイダーを使用している場合は、ドロップダウン メニューからベンダーの名前を選択する必要があります。 その他のコネクタ関連の詳細を指定します。
 

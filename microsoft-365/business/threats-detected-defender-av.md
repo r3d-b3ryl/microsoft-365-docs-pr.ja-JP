@@ -15,75 +15,78 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Microsoft Defender ウイルス対策が、ウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威から Windows デバイスを保護する方法について説明します。
-ms.openlocfilehash: e3c8a1071625bba41af5f3cccd50f8484acac18d
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1653aef6967cdf76e6e19acda158fb29758280a8
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376711"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870901"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策によって検出された脅威
 
 Microsoft Defender ウイルス対策は、ウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威から Windows デバイスを保護します。
 
-- 通常、ウイルスは、デバイスまたはネットワーク上の他のファイルにコードを添付することによって広がり、感染したプログラムが正しく動作しなくなる可能性があります。
-- マルウェアには、悪意のあるファイル、アプリケーション、コードが含まれています。これにより、損傷が発生したり、デバイスの通常使用が中断されたりする また、マルウェアは、権限のないアクセスを許可したり、システムリソースを使用したり、パスワードやアカウント情報を盗んだり、コンピューターからロックしたり、ransom を求めたりすることができます。
-- スパイウェアが web 参照アクティビティなどのデータを収集し、リモートサーバーにデータを送信します。
+- ウイルスは通常、デバイスまたはネットワーク上の他のファイルにコードを添付して拡散し、感染したプログラムが正しく動作しない可能性があります。
+- マルウェアには、悪意のあるファイル、アプリケーション、コードが含まれています。このコードは、破損を引き起こしたり、デバイスの通常の使用を妨害する可能性があります。 また、マルウェアは承認されていないアクセスを許可したり、システム リソースを使用したり、パスワードとアカウント情報を盗んだり、コンピューターからロックアウトして身代金を求めるなどできます。
+- スパイウェアは、Web 閲覧アクティビティなどのデータを収集し、そのデータをリモート サーバーに送信します。
  
-脅威保護を提供するために、Microsoft Defender ウイルス対策はいくつかの方法を使用します。 これらの方法には、クラウドで提供される保護、リアルタイム保護、および専用の保護更新が含まれます。
+脅威からの保護を提供するために、Microsoft Defender ウイルス対策はいくつかの方法を使用します。 これらの方法には、クラウドによる保護、リアルタイム保護、および専用の保護更新が含まれます。
 
-- クラウド提供の保護によって、ほぼ瞬時の脅威の検出とブロックが行われます。
-- 常にスキャンは、ファイルとプロセス動作の監視と、その他の手法 ( *リアルタイム保護* とも呼ばれます) を使用します。
-- 専任の保護の更新は、機械学習、人的および自動化された大規模なデータ分析、および徹底的な脅威抵抗調査に基づいています。 
+- クラウドによる保護は、新しい脅威や新たな脅威をほぼ瞬時に検出してブロックするのに役立ちます。
+- 常時有効なスキャンでは、ファイルとプロセスの動作の監視、および他の手法 (リアルタイム保護とも呼ばれる) *を使用します*。
+- 専用の保護更新プログラムは、機械学習、人的および自動化されたビッグ データ分析、および詳細な脅威に対する抵抗に関する調査に基づいて行います。 
 
-マルウェアおよび Microsoft Defender ウイルス対策の詳細については、次の記事を参照してください。 
+マルウェアと Microsoft Defender ウイルス対策の詳細については、次の記事を参照してください。 
 
-- [マルウェア & 他の脅威について](/windows/security/threat-protection/intelligence/understanding-malware)
-- [Microsoft がマルウェアおよび望ましくない可能性のあるアプリケーションを特定する方法](/windows/security/threat-protection/intelligence/criteria)
-- [Windows 10 での次世代の保護](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+- [マルウェアと他の&について](/windows/security/threat-protection/intelligence/understanding-malware)
+- [Microsoft がマルウェアや望ましくない可能性のあるアプリケーションを特定する方法](/windows/security/threat-protection/intelligence/criteria)
+- [Windows 10 の次世代保護](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
-## <a name="what-happens-when-a-non-microsoft-antivirus-solution-is-used"></a>Microsoft 以外のウイルス対策ソリューションを使用した場合はどうなりますか? 
+## <a name="what-happens-when-a-non-microsoft-antivirus-solution-is-used"></a>Microsoft 以外のウイルス対策ソリューションを使用すると、何が起こりますか? 
 
-Microsoft Defender ウイルス対策は、オペレーティングシステムの一部であり、Windows 10 を実行しているデバイス上で有効になっています。 ただし、マイクロソフト以外のウイルス対策ソリューションを使用していて、 [エンドポイントに Microsoft defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)を使用していない場合、Microsoft Defender ウイルス対策は自動的に無効モードになります。  
+Microsoft Defender ウイルス対策はオペレーティング システムの一部であり、Windows 10 を実行しているデバイスで有効になります。 ただし、Microsoft 以外のウイルス対策ソリューションを使用しているが [、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)を使用していない場合、Microsoft Defender ウイルス対策は自動的に無効モードになります。  
 
-無効モードになっている場合でも、ユーザーおよびお客様は Microsoft Defender ウイルス対策を使用して、スケジュールされた、またはオンデマンドのスキャンを行い、脅威を識別できます。ただし、Microsoft Defender ウイルス対策には、次のようになります。
+無効モードの場合でも、ユーザーとユーザーは、スケジュールされたスキャンまたはオンデマンド スキャンで Microsoft Defender ウイルス対策を使用して脅威を特定できます。ただし、Microsoft Defender ウイルス対策は次の機能を使用しなくなりました。
 
-- 既定のウイルス対策アプリとして使用されます。
-- 脅威に対してファイルを積極的にスキャンします。
+- は、既定のウイルス対策アプリとして使用されます。
+- ファイルをアクティブにスキャンして脅威を検出します。
 - 脅威を修復または解決します。
 
-Microsoft 以外のウイルス対策ソリューションをアンインストールすると、Microsoft Defender ウイルス対策が自動的にアクティブモードになり、脅威から Windows デバイスが保護されます。
+Microsoft 以外のウイルス対策ソリューションをアンインストールすると、Microsoft Defender ウイルス対策は自動的にアクティブ モードに入り、Windows デバイスを脅威から保護します。
 
 > [!TIP]
-> - Microsoft 365 を使用している場合は、Microsoft Defender ウイルス対策をプライマリウイルス対策ソリューションとして使用することを検討してください。 統合は、より適切な保護を提供します。 詳細について [は、「Microsoft Defender ウイルス対策と Office 365」を](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus)参照してください。
-> - マイクロソフト以外のウイルス対策ソリューションを使用している場合でも、Microsoft Defender ウイルス対策を最新の状態に保つようにしてください。
+> - Microsoft 365 を使用している場合は、プライマリ ウイルス対策ソリューションとして Microsoft Defender ウイルス対策の使用を検討してください。 統合は、より優れた保護を提供します。 Microsoft [Defender ウイルス対策と Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus)を一緒に参照してください。
+> - Microsoft 以外のウイルス対策ソリューションを使用している場合でも、Microsoft Defender ウイルス対策を最新の状態に保つ必要があります。
 
-## <a name="what-to-expect-when-threats-are-detected"></a>脅威が検出されたときに予想されること
+## <a name="what-to-expect-when-threats-are-detected"></a>脅威が検出された場合の期待される機能
 
-Microsoft Defender ウイルス対策によって脅威が検出されると、次の処理が行われます。
+Microsoft Defender ウイルス対策によって脅威が検出されると、次のことが発生します。
 
-- ユーザーが [Windows で通知を](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e)受信します。 
-- 検出は、[**保護履歴**] ページの [ [Windows セキュリティアプリ](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)] に一覧表示されます。  
-- [Windows 10 デバイスをセキュリティで保護](secure-win-10-pcs.md)して [Intune に登録](/mem/intune/enrollment/windows-enrollment-methods)した場合は、[**アクティブな脅威**] ページにある <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">microsoft 365 管理センター</a>での脅威の検出と洞察が表示されます。これは、**ホーム** ページの **microsoft Defender ウイルス対策** カード (または、「 **Health** threat & Antivirus」を選択することにより、ナビゲーションウィンドウからアクセスでき  >  **Threats & antivirus** ます)。
+- ユーザーは Windows [で通知を受け取る](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e)。 
+- 検出は、Windows セキュリティ アプリの [保護 [の履歴]](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) **ページに一覧表示** されます。  
+- [Windows 10](secure-win-10-pcs.md)デバイスをセキュリティで保護し [、Intune](/mem/intune/enrollment/windows-enrollment-methods)に登録したデバイスが組織に 800 台以下の場合は <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">、Microsoft 365</a>管理センターの [脅威とウイルス対策] ページに脅威の検出と分析情報が表示されます。このページには、ホーム ページの **Microsoft Defender** ウイルス対策カード (または、[正常性の脅威]  >  **&** ウイルス対策を選択してナビゲーション ウィンドウから) からアクセスできます。
+
+    組織に Intune に登録されているデバイスが 800 を超える場合は、[脅威とウイルス対策] ページではなく[、Microsoft Endpoint Manager](/mem/endpoint-manager-overview)から脅威の検出と分析情報を表示するように求められます。
+ 
     > [!NOTE]
-    > **Microsoft Defender ウイルス対策** カードおよび **アクティブな脅威** ページはフェーズでロールアウトされるため、すぐにアクセスできない場合があります。
+    > Microsoft **Defender ウイルス** 対策カードと **脅威** とウイルス対策ページは段階的に展開されています。そのため、すぐにアクセスできない場合があります。
 
-ほとんどの場合、ユーザーは他の操作を行う必要はありません。 悪意のあるファイルまたはプログラムがデバイス上で検出されると、Microsoft Defender ウイルス対策によってブロックされ、実行が禁止されます。 さらに、新たに検出された脅威が、他のデバイスやユーザーも保護されるように、ウイルス対策およびマルウェア対策エンジンに追加されます。  
+ほとんどの場合、ユーザーはそれ以上のアクションを実行する必要はありません。 デバイスで悪意のあるファイルやプログラムが検出されるとすぐに、Microsoft Defender ウイルス対策によってブロックされ、実行が阻止されます。 さらに、新しく検出された脅威がウイルス対策およびマルウェア対策エンジンに追加され、他のデバイスやユーザーも保護されます。  
 
-悪意のあるファイルの削除の承認など、ユーザーが実行する必要のあるアクションがある場合は、受信した通知にそのことが表示されます。 ユーザーに代わって、またはユーザーが実行する必要があるアクションの詳細については、「 [保護履歴](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708)」を参照してください。 IT プロフェッショナル/管理者として脅威検出を管理する方法については、「 [検出された脅威をレビューし、アクションを実行](review-threats-take-action.md)する」を参照してください。
+悪意のあるファイルの削除の承認など、ユーザーが実行する必要があるアクションがある場合、ユーザーが受け取った通知にそれが表示されます。 Microsoft Defender ウイルス対策がユーザーに代わって実行するアクションや、ユーザーが実行する必要がある操作の詳細については、「保護の履歴」を [参照してください](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708)。 IT プロフェッショナル/管理者として脅威の検出を管理する方法については、「検出された脅威を確認してアクションを実行する」を [参照してください](review-threats-take-action.md)。
 
-さまざまな脅威の詳細については、 <a href="https://www.microsoft.com/wdsi/threats" target="_blank">Microsoft セキュリティインテリジェンスの脅威のサイト</a>にアクセスして、次の操作を実行できます。 
+さまざまな脅威について詳しくは <a href="https://www.microsoft.com/wdsi/threats" target="_blank">、Microsoft セキュリティ</a>インテリジェンスの脅威サイトをご覧ください。このサイトでは、次のアクションを実行できます。 
 
-- 主要な脅威に関する現在の情報を表示します。
+- トップの脅威に関する現在の情報を表示します。
 - 特定の地域の最新の脅威を表示します。
-- 特定の脅威の詳細については、「脅威の百科事典」を検索してください。
+- 特定の脅威に関する詳細については、脅威の脅威を検索します。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Windows 10 デバイスをセキュリティで保護](secure-windows-10-devices.md) する (記事) \
-[Microsoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (記事) を評価する
-[リアルタイムおよびクラウドで提供されるウイルス対策保護](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) (記事) を有効にする方法 \
-[Windows セキュリティアプリ (記事) から Microsoft Defender ウイルス対策をオンおよび使用する方法](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) \
-[グループポリシーを使用して Microsoft Defender ウイルス対策を有効にする方法](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (記事) \
-[ウイルス対策定義を更新する方法](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (記事) \
-[マルウェアおよびマルウェア以外のを分析のために Microsoft に提出する方法](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (記事)
+[セキュリティで保護された Windows 10 デバイス](secure-windows-10-devices.md) (記事)\
+[Microsoft Defender ウイルス対策を評価](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) する (記事)\
+[リアルタイムおよびクラウドによるウイルス対策保護を有効にする](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) 方法 (記事)\
+[Windows セキュリティ アプリで Microsoft Defender ウイルス](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) 対策を有効にし、使用する方法 (記事)\
+[グループ ポリシーを使って Microsoft Defender ウイルス対策を有効にする方法](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (記事)\
+[ウイルス対策定義を更新する方法](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (記事)\
+[分析のためにマルウェアとマルウェア以外のマルウェアを Microsoft に送信する](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) 方法 (記事)
