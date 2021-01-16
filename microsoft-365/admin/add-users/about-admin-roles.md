@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者は、管理センターでサポート チケットを開くことができます。
-ms.openlocfilehash: 774edf1a024bd7aab7f35d5635c84b355fc0ef5a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682659"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867984"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
@@ -88,9 +88,9 @@ Microsoft パートナーと連携している場合、パートナーに管理�
   
 パートナーは、次の役割を割り当てることができます。
   
-- **完全管理** パートナー センターを介した多要素認証の管理を除いた、グローバル管理者と同等の特権を持ちます。
+- **管理エージェント** パートナー センターを介した多要素認証の管理を除いた、グローバル管理者と同等の特権を持ちます。
 
-- **制限付き管理** ヘルプデスク管理者と同等の特権を持ちます。
+- **ヘルプデスク エージェント** ヘルプデスク管理者と同等の特権を持ちます。
 
 パートナーがこれらの役割をユーザーに割り当てる前に、パートナーを代理管理者としてアカウントに追加する必要があります。 このプロセスは認定パートナーによって開始されます。 パートナーは管理者に電子メールを送信し、代理管理者となる権限を割り当てるかどうか質問します。手順については、「[パートナー リレーションシップの承認または削除](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)」を参照してください。
   

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750811"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870853"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "49750811"
 
 機密層は、基本層の上に次のような追加保護機能を実現します。
 
-- ゲスト共有を有効または無効にし、管理されていないデバイスの SharePoint コンテンツへのアクセスを Web のみに制限するチームの秘密度ラベル。 このラベルは、ファイルを暗号化して分類するためにも使用できます。
+- ゲスト共有のオンとオフを切り替えたり、管理されていないデバイスの SharePoint コンテンツへのアクセスをブロックしたりできるチームの秘密度ラベル。 このラベルは、ファイルを暗号化して分類するためにも使用できます。
 - より制限の厳しい既定の共有リンクの種類
 - チーム所有者のみがプライベート チャネルを作成できます。
 - 関連付けられた SharePoint サイトへのアクセス要求はオフになっています。
@@ -63,7 +63,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)を開きます。
 2. **[ソリューション]** で、**[情報保護]** をクリックします。
 3. **[ラベルの作成]** をクリックします。
-4. ラベルに名前を付けます。 **Sensitive** をお勧めしますが、既に使用されている別の名前を選択することもできます。
+4. ラベルに名前を付けます。 [**高機密性**] をお勧めしますが、既に使用されている別の名前を選択することもできます。
 5. 表示名と説明を追加し、**[次へ]** をクリックします。
 6. **Define the scope for this label** (このラベルの範囲の定義) ページで、**[Files & emails]** (ファイルとメール) と **[Groups & sites]** (グループとサイト) を選択し、**[次へ]** をクリックします。
 7. **[ファイルとメールの保護設定の選択]** ページで、**[ファイルとメールの暗号化]** を選択し、**[次へ]** をクリックします。
