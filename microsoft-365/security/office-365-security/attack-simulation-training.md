@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、ユーザーをフィッシング防止に関するトレーニングを行う方法を学習できます。
-ms.openlocfilehash: dfdd3c93afb1b0fb30cc5b5affc040a369c29447
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 56ee8b7c11187ee6883bffc9b41961d2783e1ff4
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870969"
+ms.locfileid: "49877154"
 ---
 # <a name="simulate-a-phishing-attack"></a>フィッシング攻撃をシミュレートする
 
 Office 365 向け Microsoft Defender の攻撃シミュレーション トレーニングでは、組織でサイバー攻撃シミュレーションを実行してセキュリティ ポリシーとプラクティスをテストし、従業員の意識を高め、攻撃に対する影響を減らします。 この記事では、攻撃シミュレーション トレーニングを使用してシミュレートされたフィッシング攻撃を作成する方法について説明します。
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 攻撃シミュレーション トレーニングの概要については、「攻撃シミュレーション トレーニングの使用 [を開始する」を参照してください](attack-simulation-training-get-started.md)。
 

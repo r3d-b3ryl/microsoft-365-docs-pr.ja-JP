@@ -1,5 +1,5 @@
 ---
-title: 基本的なモビリティとセキュリティのプライバシーとセキュリティ
+title: Basic Mobility and Security のプライバシーとセキュリティ
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,16 +13,16 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: 基本的なモビリティとセキュリティをアクティブにした後、モバイルデバイス管理ポリシーを作成できます。
-ms.openlocfilehash: 31966f81833d6c90c48cdc4c40eee2f94d785fd8
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: Basic Mobility and Security をアクティブ化した後、モバイル デバイス管理ポリシーを作成できます。
+ms.openlocfilehash: a5e813219407b105f9196a4532914326a94f429a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430223"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876914"
 ---
-# <a name="privacy-and-security-in-basic-mobility-and-security"></a>基本的なモビリティとセキュリティのプライバシーとセキュリティ
+# <a name="privacy-and-security-in-basic-mobility-and-security"></a>Basic Mobility and Security のプライバシーとセキュリティ
 
-基本的なモビリティとセキュリティは、Microsoft Intune が提供するクラウドベースのサービスであり、組織内で使用されるモバイルデバイスの管理とセキュリティ保護に役立てることができます。 基本的なモビリティとセキュリティをアクティブにした後、モバイルデバイス管理ポリシーを作成できます。 これらのポリシーは、組織内のライセンスのある Microsoft 365 ユーザーによって登録されたモバイルデバイスに展開できます。
+Basic Mobility and Security は、組織内のモバイル デバイスの管理とセキュリティ保護に役立つ Microsoft Intune を利用したクラウドベースのサービスです。 Basic Mobility and Security をアクティブ化した後、モバイル デバイス管理ポリシーを作成できます。 これらのポリシーは、組織内のライセンスを取得した Microsoft 365 ユーザーによって登録されているモバイル デバイスに展開できます。
 
-Microsoft Intune は、各管理対象デバイスのコンプライアンス状態に関する情報を Microsoft 365 に送信し、設定されたポリシーに基づいて組織内の管理対象デバイスが準拠しているかどうかを示すレポートを生成できます。 Microsoft によるプライバシーとセキュリティへの取り組みの詳細については、 [Microsoft セキュリティセンター](https://www.microsoft.com/trust-center)を参照してください。
+Microsoft Intune は、各管理対象デバイスのコンプライアンス状態に関する情報を Microsoft 365 に送信し、設定されたポリシーに基づいて、組織内の管理対象デバイスが準拠するかどうかを示すレポートを生成できます。 プライバシーとセキュリティに対する Microsoft の取り組みについて詳しくは [、Microsoft セキュリティ センターをご覧ください](https://www.microsoft.com/trust-center)。

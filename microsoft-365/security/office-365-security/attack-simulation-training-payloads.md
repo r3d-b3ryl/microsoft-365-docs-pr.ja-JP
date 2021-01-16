@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Office 365 向け Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法について説明します。
-ms.openlocfilehash: e3285b99d5b64255b9fdbda8c76b6f133aa013b2
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 45311ad4c4eb09c8238d278475248680fbc66287
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870865"
+ms.locfileid: "49877130"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
 
 Microsoft は、さまざまなソーシャル エンジニアリング手法に対応した堅牢なペイロード カタログを提供し、攻撃シミュレーション トレーニングと組み合わせ可能です。 ただし、組織に対してより良く機能するカスタム ペイロードを作成する必要がある場合があります。 この記事では、Microsoft Defender で 365 用の攻撃シミュレーション トレーニングでペイロードOffice説明します。
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ペイロードを作成するには、専用の [Payloads] タブまたはシミュレーション作成ウィザードで [Create **a** [ **payload]**](https://security.microsoft.com/attacksimulator?viewid=payload) (ペイロードの作成) [をクリックします](attack-simulation-training.md#selecting-a-payload)。
 

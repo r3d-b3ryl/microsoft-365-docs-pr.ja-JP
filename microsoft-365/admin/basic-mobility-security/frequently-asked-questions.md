@@ -1,5 +1,5 @@
 ---
-title: 基本的なモビリティとセキュリティに関するよく寄せられる質問 (FAQ)
+title: モビリティとセキュリティに関する基本的なよく寄せられる質問 (FAQ)
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,77 +17,76 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 基本的なモビリティとセキュリティについてよく寄せられる質問。
-ms.openlocfilehash: e05815392510ad54bb530457d7f0f6490ece4a95
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: Basic Mobility and Security についてよく寄せられる質問です。
+ms.openlocfilehash: 5651b9f9742c45f1229e55b298cf78532c835c9a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430236"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876878"
 ---
-# <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>基本的なモビリティとセキュリティに関するよく寄せられる質問 (FAQ)
+# <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>モビリティとセキュリティに関する基本的なよく寄せられる質問 (FAQ)
 
-この記事には、Microsoft 365 でのモバイルデバイスの管理およびセキュリティ保護に役立つ機能である基本的なモビリティとセキュリティに関してよく寄せられる質問が含まれています。 質問に対する回答が見つからない場合は、この記事に質問を追加できるように、ページにコメントを残してお知らせください。
+この記事では、Microsoft 365 のモバイル デバイスの管理とセキュリティ保護に役立つ機能である Basic Mobility and Security についてよく寄せられる質問について説明します。 質問に対する回答が見当たらない場合は、この記事に質問を追加する方法を検討できるよう、ページにコメントを残してお知らせします。
 
-## <a name="how-can-i-get-basic-mobility-and-security-i-dont-see-it-in-the-microsoft-365-admin-center"></a>基本的なモビリティとセキュリティを利用するにはどうすればよいですか? Microsoft 365 管理センターに表示されない
+## <a name="how-can-i-get-basic-mobility-and-security-i-dont-see-it-in-the-microsoft-365-admin-center"></a>Basic Mobility and Security を取得する方法 Microsoft 365 管理センターに表示しない
 
-1.  [Office 365 セキュリティ & コンプライアンス](https://protection.office.com/)ページに移動して、基本的なモビリティとセキュリティを有効にします。   
+1.  [Basic Mobility and Security] をアクティブにするには、[Office [365 Security & Compliance] ページに移動](https://protection.office.com/) します。
 
-2.  [データ損失防止 > デバイス管理] に移動します。   
+2.  デバイス管理のデータ損失防止>に移動します。
 
-## <a name="how-can-i-get-started-with-device-management-in-basic-mobility-and-security"></a>基本的なモビリティとセキュリティでデバイスの管理を開始するには、どうすればよいですか。
+## <a name="how-can-i-get-started-with-device-management-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス管理を開始する方法
 
-基本的なモビリティとセキュリティの使用を開始するには、次の4つの手順を実行します。 
+Basic Mobility and Security の使用を開始するには、次の 4 つの手順があります。 
 
-1. [Office 365 セキュリティ & コンプライアンス](https://protection.office.com/)に移動して、基本的なモビリティとセキュリティを有効にします。
+1. Office 365 Security & Compliance に移動して、Basic [Mobility and Security をアクティブ化します](https://protection.office.com/)。
+
+2. [デバイスの管理] ポリシー>データ損失>に移動します。
     
-2. [データ損失防止 > デバイス管理 > デバイスポリシー] に移動します。
-    
-3. デバイス管理ポリシーを作成し、セキュリティグループに設定されているユーザーのグループに適用します。 最初に、小規模なテストグループにポリシーを展開することをお勧めします。 詳細については、「 [Create device security policies In Basic Mobility And security](create-device-security-policies.md)」を参照してください。      
+3. デバイス管理ポリシーを作成し、セキュリティ グループで設定されているユーザーのグループに適用します。 最初に、ポリシーを小規模なテスト グループに展開することをお勧めします。 詳しくは、「Basic Mobility and Security でのデバイス セキュリティ ポリシーの作成 [」をご覧ください](create-device-security-policies.md)。
 
-4. ポリシーが適用されているユーザーは、Microsoft 365 データにアクセスしようとすると、デバイスを登録するように求められます。 詳細については、「 [Basic Mobility And Security を使用してモバイルデバイスを登録する](enroll-your-mobile-device.md)」を参照してください。
+4. ポリシーが適用されているユーザーは、Microsoft 365 データにアクセスしようとするときにデバイスの登録を求めるメッセージが表示されます。 詳細については [、「Basic Mobility and Security を使用してモバイル デバイスを登録する」を参照してください](enroll-your-mobile-device.md)。
 
-詳細については、「 [基本モビリティとセキュリティを設定](set-up.md)する」を参照してください。
+詳細については [、「Basic Mobility and Security のセットアップ」を参照してください](set-up.md)。
 
-## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>基本的なモビリティとセキュリティを設定しようとしていますが、まだ動かないように見えます。 Microsoft 365 Service Health は、しばらくの間「プロビジョニング」を示しています。 解決方法
+## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Basic Mobility and Security をセットアップしていますが、行き詰まっているようです。 Microsoft 365 Service Health はしばらくの間、"プロビジョニング" を表示しています。 解決方法
 
-サービスの準備が整うまでしばらく時間がかかる場合があります。 プロビジョニングが完了すると、Microsoft 365 のモバイルデバイス管理ページが表示されます。 24時間待機していて、状態がまだプロビジョニングされている場合は、サポートにお問い合わせください。また、問題の内容について説明します。 サポートオプションについては、「[ヘルプが必要ですか?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp) 」を参照してください。 
+サービスの準備に時間がかかる場合があります。 プロビジョニングが完了すると、[Basic Mobility and Security] ページが表示されます。 24 時間待機し、状態がまだプロビジョニング中の場合は、サポートにお問い合わせください。問題の把握については、サポートにお問い合わせください。 サポート オプションについては、「サポート [が必要な場合」を参照してください](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp)。
 
-## <a name="what-can-i-do-if-device-enrollment-fails"></a>デバイスの登録が失敗した場合はどうすればよいですか。
+## <a name="what-can-i-do-if-device-enrollment-fails"></a>デバイスの登録が失敗した場合の処理
 
-登録済みデバイスの取得で問題が発生した場合は、まず次のことを確認してください。
+デバイスの登録で問題が発生した場合は、まず次のチェックを行います。
 
-- デバイスが Intune などの他のモバイルデバイス管理プロバイダーに登録されていないことを確認してください。
-    
+- デバイスが Intune などの別のモバイル デバイス管理プロバイダーに登録されていないか確認します。
+
 - デバイスが正しい日付と時刻に設定されていることを確認します。
-    
+
 - デバイス上の別の WIFI または携帯ネットワークに切り替えます。
+
+- Android または iOS デバイスの場合は、Intune ポータル サイト アプリをアンインストールし、デバイスに再インストールします。
     
-- Android または iOS デバイスの場合は、デバイス上の Intune ポータルサイトアプリをアンインストールしてから再インストールします。
-    
-登録がまだ機能していない場合は、「 [基本的なモビリティとセキュリティのトラブルシューティング](troubleshoot.md)」を参照してください。
+登録がまだ機能しない場合は、「Basic Mobility and Security のトラブルシューティング [」を参照してください](troubleshoot.md)。
 
-## <a name="whats-the-difference-between-intune-and-basic-mobility-and-security"></a>Intune と基本的なモビリティとセキュリティの違いは何ですか。
+## <a name="whats-the-difference-between-intune-and-basic-mobility-and-security"></a>Intune と Basic Mobility and Security の違いは何ですか?
 
-基本的なモビリティとセキュリティは、Intune サービスによってホストされます。 これは、Microsoft 365 に追加のメリットとして提供される Intune サービスのサブセットであり、組織内のデバイスを管理するための組み込みのクラウドベースのソリューションです。 2つのサービスを並べて比較して、Microsoft 365 の Intune または基本的なモビリティとセキュリティを使用することが最適であるかどうかを判断するには、「 [基本モビリティセキュリティと Intune の選択](choose-between-basic-mobility-and-security-and-intune.md)」を参照してください。
+Basic Mobility and Security は Intune サービスによってホストされます。 これは、Microsoft 365 の追加の利点として提供される Intune サービスのサブセットであり、組織内のデバイスを管理するための組み込みのクラウドベースのソリューションです。 Intune を使用するか、Microsoft 365 の Basic Mobility and Security を使用するかの判断に役立つ 2 つのサービスの比較が最適な場合は [、「Basic Mobility Security](choose-between-basic-mobility-and-security-and-intune.md)と Intune の選択」を参照してください。
 
-## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>基本的なモビリティとセキュリティのためのポリシーの仕組み どのように設定すればよいですか? 無効にしますか?
+## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>Basic Mobility and Security のポリシーの動作 セットアップ方法 無効にしますか?
 
-基本的なモビリティとセキュリティの初期セットアップを完了したら、セキュリティ & コンプライアンスセンターでポリシーを作成し、ユーザーのグループに適用します。 ポリシーのユーザーは、デバイスを使用して Microsoft 365 データにアクセスする前に、基本的なモビリティとセキュリティでデバイスを登録する必要があります。 設定したポリシーによって、モバイルデバイスの設定が決定されます。たとえば、パスワードをリセットする頻度や、データの暗号化が必要かどうかなどがあります。 詳細については、「 [Create device security policies In Basic Mobility And security](create-device-security-policies.md)   and [Microsoft 365 コンプライアンスセンター](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8)」を参照してください。
+Basic Mobility and Security の初期セットアップが完了したら、ポリシーを作成し、セキュリティ/コンプライアンス センターのユーザー グループ&適用します。 ポリシーでは、デバイスを使用して Microsoft 365 データにアクセスする前に、ポリシーのユーザーがデバイスを Basic Mobility and Security に登録する必要があります。 設定したポリシーによって、モバイル デバイスの設定が決められます。たとえば、パスワードをリセットする頻度や、データの暗号化が必要かどうかなどです。 詳細については[、「Basic Mobility and Security](create-device-security-policies.md)および Microsoft 365 コンプライアンス センターでのデバイス セキュリティ ポリシー   [の作成」を参照してください](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8)。
 
-デバイスポリシーを作成して展開するための詳細な手順については、「 [Create device security policies In Basic Mobility And security](create-device-security-policies.md)」を参照してください。
+デバイス ポリシーを作成および展開する詳しい手順については [、「Basic Mobility and Security」](create-device-security-policies.md)の「デバイス セキュリティ ポリシーの作成」を参照してください。
 
-特定のユーザーグループがポリシーの影響を受けないようにするには、除外グループにグループを追加します。
+特定のユーザー グループがポリシーの影響を受けから除外する場合は、除外グループにグループを追加できます。
 
-## <a name="can-i-switch-from-exchange-activesync-device-management-to-basic-mobility-and-security-for-microsoft-365"></a>Exchange ActiveSync デバイス管理から Microsoft 365 の基本的なモビリティとセキュリティに切り替えることはできますか?
+## <a name="can-i-switch-from-exchange-activesync-device-management-to-basic-mobility-and-security-for-microsoft-365"></a>デバイス管理から Microsoft 365 Exchange ActiveSync Basic Mobility and Security に切り替えできますか?
 
-モバイルデバイスを管理するために Exchange ActiveSync ポリシーをすでに使用している場合は、「基本的なモビリティとセキュリティを設定する」の手順に従って、基本的なモビリティとセキュリティの使用を開始できます。 詳細については、「 [ユーザーとデバイスのアクセスを保護](https://go.microsoft.com/fwlink/?LinkId=615145) する」と「 [基本的なモビリティとセキュリティを設定](set-up.md)する」を参照してください。
+モバイル デバイスの管理に Exchange ActiveSync ポリシーを既に使用している場合は、Basic Mobility and Security をセットアップする手順に従って Basic Mobility and Security の使用を開始できます。 詳細については、「ユーザーとデバイスの [アクセスを保護](https://go.microsoft.com/fwlink/?LinkId=615145) する」および [「Basic Mobility and Security をセットアップする」を参照してください](set-up.md)。
 
-基本的なモビリティとセキュリティで作成したポリシーをユーザーのグループに適用すると、これらのポリシーは exchange ActiveSync モバイルデバイスメールボックスポリシーと、それらのユーザーの Exchange 管理センターで以前に作成したデバイスアクセスルールよりも優先されます。
+Basic Mobility and Security で作成したポリシーをユーザー グループに適用すると、これらのポリシーは、それらのユーザーの Exchange 管理センターで以前に作成した Exchange ActiveSync モバイル デバイス メールボックス ポリシーとデバイス アクセス ルールより優先されます。
 
-基本的なモビリティとセキュリティにデバイスを登録した後、デバイスに適用された Exchange ActiveSync モバイルデバイスメールボックスポリシーまたはデバイスアクセスルールは無視されます。
+デバイスを Basic Mobility and Security に登録すると、そのデバイスに適用Exchange ActiveSyncモバイル デバイス メールボックス ポリシーまたはデバイス アクセス ルールは無視されます。
 
-## <a name="i--set-up-basic-mobility-and-security-but-now-i-want-to-remove-it-what-are-the-steps"></a>基本的なモビリティとセキュリティを設定しましたが、これを削除したいと思います。 手順について
+## <a name="i--set-up-basic-mobility-and-security-but-now-i-want-to-remove-it-what-are-the-steps"></a>Basic Mobility and Security をセットアップしましたが、削除します。 手順は何ですか?
 
-残念ながら、セットアップ後に基本的なモビリティとセキュリティを単に "準備解除" することはできません。 ただし、作成したデバイスポリシーからユーザーのセキュリティグループを削除することによって、ユーザーのグループのために削除することができます。 または、デバイスポリシーを削除してすべてのユーザーに対して無効にし、適用されないようにすることができます。 詳細については、「 [基本的なモビリティとセキュリティをオフにする](turn-off.md)」を参照してください。
-
+残念ながら、Basic Mobility and Security をセットアップした後は、単に"準備を解除" する必要があります。 ただし、作成したデバイス ポリシーからユーザー セキュリティ グループを削除することで、ユーザーのグループに対して削除できます。 または、デバイス ポリシーが適用されておらず、適用されないデバイス ポリシーを削除することで、すべてのユーザーに対して無効にすることもできます。 詳細については [、「Basic Mobility and Security をオフにする」を参照してください](turn-off.md)。

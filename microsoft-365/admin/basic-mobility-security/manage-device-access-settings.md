@@ -1,5 +1,5 @@
 ---
-title: 基本的なモビリティとセキュリティでデバイスアクセス設定を管理する
+title: Basic Mobility and Security でのデバイス アクセス設定の管理
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,33 +17,33 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 基本的なモビリティとセキュリティは、モバイルデバイスをセキュリティで保護し、管理するのに役立ちます。
-ms.openlocfilehash: e66465d312c4268aca82677fa4e517aaeb822ce3
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
+ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430224"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876950"
 ---
-# <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>基本的なモビリティとセキュリティでデバイスアクセス設定を管理する
+# <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Basic Mobility and Security でのデバイス アクセス設定の管理
 
-基本的なモビリティとセキュリティを使用している場合は、基本的なモビリティとセキュリティで管理できないデバイスが存在する可能性があります。 その場合は、基本的なモビリティとセキュリティでサポートされていないモバイルデバイスに対して、Exchange ActiveSync アプリの Microsoft 365 メールへのアクセスをブロックする必要があります。 これにより、組織の情報をより多くのデバイスで保護することができます。
+Basic Mobility and Security を使用している場合は、Basic Mobility and Security で管理できないデバイスがある可能性があります。 その場合は、Basic Mobility and Security Exchange ActiveSyncサポートされていないモバイル デバイスの Microsoft 365 メールへのアプリアクセスをブロックする必要があります。 これにより、より多くのデバイス間で組織の情報をセキュリティで保護できます。
 
 次の手順を使用します。
 
-1. グローバル管理者アカウントを使用して、Microsoft 365 にサインインします。
-    
-2. ブラウザーで、次のように入力  [https://protection.office.com](https://protection.office.com/) します。    
+1. グローバル管理者アカウントで Microsoft 365 にサインインします。
+
+2. ブラウザーで、次のコマンドを入力します  [https://protection.office.com](https://protection.office.com/) 。    
 
     >[!IMPORTANT]
-    >初めて MDM を Microsoft 365 Business Standard 用に使用している場合は、「activate the [Mobile Device Management](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)」を参照してください。 ライセンス認証を行った後、 [Office 365 セキュリティ & コンプライアンス](https://protection.office.com/)を使用してデバイスを管理します。
+    >Microsoft 365 Business Standard の Basic Mobility and Security を初めて使用する場合は、「基本セキュリティとモビリティをアクティブ化する」でライセンス認証 [します](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 ライセンスをアクティブ化した後、Office [365 Security & Compliance を使用してデバイスを管理します](https://protection.office.com/)。
 
-3. [データ損失防止 > **デバイス管理**   >  **デバイスポリシー**] に移動し、[ **組織全体のデバイスアクセス設定の管理**] を選択します。
-    
-4. [ **ブロック**] を選択します。
+3. [データ損失防止] > **デバイス管理デバイス** ポリシーに移動し、[組織全体のデバイス アクセス設定の管理]   >  **** **を選択します**。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本的なモビリティおよびセキュリティブロックアクセスのチェックボックス":::
+4. [ブロック **] を選択します**。
 
-5. [ **保存**] を選択します。 
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="[Basic Mobility and Security block access] チェック ボックス":::
 
-基本的なモビリティとセキュリティでサポートされるデバイスについては、「 [ベーシックモビリティとセキュリティの機能](capabilities.md)」を参照してください。
+5. [保存] **を選択します**。
+
+Basic Mobility and Security がサポートするデバイスについては [、「Basic Mobility and Security の機能」を参照してください](capabilities.md)。

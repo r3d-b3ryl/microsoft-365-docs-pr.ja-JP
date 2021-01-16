@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fff44098e3da17c68e4347fb14690945154edfdb
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 6e904eee5a132d271ec32ee99a19380463e53193
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841189"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881775"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップ デバイス 
 
@@ -23,12 +23,12 @@ Microsoft マネージド デスクトップの詳細については [、Microso
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Microsoft マネージド デスクトップに登録するには、デバイスが次のいずれかのモデルであり、RAM、プロセッサ ファミリ、およびディスク領域に関する記載されている仕様を満たすか、超えている必要があります。 
+Microsoft マネージド デスクトップに登録するには、デバイスが次のいずれかのモデルであり、RAM、プロセッサ ファミリ、およびディスク領域に関する一覧の仕様を満たすか、超えている必要があります。 
 
-ここに示すデバイスへのリンクは、参考情報のみを提供しています。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業し、正しい構成を選択してください。 この表のアーカイブ日付 *は* 、これらのモデルが Microsoft マネージド デスクトップのサービスライフを短くする日付です。この日付以降にオンボードされたデバイスは、Microsoft マネージド デスクトップから 3 年間の完全なサポート期間を受け取る予定はありません。 アーカイブされたデバイスは、Microsoft マネージド デスクトップでアーカイブ [されたデバイスにも表示されます](archived-device-list.md)。 *サポート終了日* は、このモデルが Microsoft マネージド デスクトップでサポートされなくなる日付です。 この日付に、このモデルに登録されているデバイスはすべて、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
+ここに示すデバイスへのリンクは、参考情報のみを提供しています。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業し、正しい構成を選択してください。 この表のアーカイブ日付 *は* 、これらのモデルが Microsoft マネージド デスクトップのサービスライフを短くする日付です。この日付以降にオンボードされたデバイスは、Microsoft マネージド デスクトップから 3 年間の完全なサポート期間を受け取る予定はありません。 アーカイブされたデバイスは、Microsoft マネージド デスクトップで [アーカイブされたデバイスにも表示されます](archived-device-list.md)。 *サポート終了日* は、このモデルが Microsoft マネージド デスクトップでサポートされなくなる日付です。 この日付に、このモデルに登録されているデバイスはすべて、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
 
 >[!NOTE]
->この表にはデバイスをいつでも追加できますが、アーカイブまたはサポート終了日に影響を与える変更については、90 日間の通知が提供されます。 最近追加されたデバイスは * _でマーク *\** されます。
+>デバイスは、いつでもこの表に追加できますが、アーカイブまたはサポート終了日に影響を与える変更については、90 日間の通知を提供します。 最近追加されたデバイスは * _でマーク *\** されます。
 
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップ デバイス
@@ -71,6 +71,7 @@ Microsoft マネージド デスクトップに登録するには、デバイス
 | [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | なし | 2022 年 10 月 12 日 | 2025 年 10 月 12 日 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | なし | 2021 年 10 月 22 日 | 2024 年 10 月 22 日 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | なし | 2021 年 10 月 22 日 | 2024 年 10 月 22 日 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | なし | 2022 年 1 月 15 日 | 2025 年 1 月 15 日 |
 
 さらに、デバイスは次の条件を満たす必要があります。     
 
@@ -90,7 +91,7 @@ Microsoft マネージド デスクトップに登録するには、デバイス
 
 - Dell デバイスに関するその他の質問については、<a href="mailto:MMD_at_dell@dell.com">以下MMD_at_dell@dell.com。</a>
 
-- HP デバイスとデバイスの順序付け手順に関するその他の質問については、次にお問い<a href="mailto:mmd-americas@hp.com">合わせください</a>。 アメリカ ( mmd-americas@hp.com );ヨーロッパ/中東/アフリカ (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>);アジア太平洋/日本 (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>);Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
+- HP デバイスとデバイスの順序付け手順に関するその他の質問については、次にお問い<a href="mailto:mmd-americas@hp.com">合わせください</a>。 アメリカ ( mmd-americas@hp.com );ヨーロッパ/中東/アフリカ (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>);アジア太平洋/日本 (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>);グローバル (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
 
 
 

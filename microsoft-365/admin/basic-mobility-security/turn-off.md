@@ -1,5 +1,5 @@
 ---
-title: 基本的なモビリティとセキュリティをオフにする
+title: Basic Mobility and Security をオフにする
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,47 +13,46 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: グループまたはポリシーを削除して、基本のモビリティとセキュリティをオフにします。
-ms.openlocfilehash: 54f78cc30e5259ad5244ce3a8fc6d0f46a395d7c
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: Basic Mobility and Security をオフにするグループまたはポリシーを削除します。
+ms.openlocfilehash: 0786ac8ebd190b9af3211c211cc6db2ea9e0ea48
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430222"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876842"
 ---
-# <a name="turn-off-basic-mobility-and-security"></a>基本的なモビリティとセキュリティをオフにする
+# <a name="turn-off-basic-mobility-and-security"></a>Basic Mobility and Security をオフにする
 
-基本的なモビリティとセキュリティを効果的に無効にするには、デバイス管理ポリシーからセキュリティグループによって定義されたユーザーのグループを削除するか、ポリシー自体を削除します。
+Basic Mobility and Security を効果的にオフにするには、セキュリティ グループによって定義されたユーザーのグループをデバイス管理ポリシーから削除するか、ポリシー自体を削除します。
 
-- 作成したデバイスポリシーからユーザーセキュリティグループを削除して、ユーザーのグループを削除します。
-    
-- すべての基本的なモビリティとセキュリティデバイスポリシーを削除することによって、すべてのユーザーの基本的なモビリティとセキュリティを無効にします。
-    
-これらのオプションは、組織内のデバイスの基本的なモビリティとセキュリティの適用を削除します。 残念ながら、セットアップ後に基本的なモビリティとセキュリティを単に "準備解除" することはできません。 
+- 作成したデバイス ポリシーからユーザー セキュリティ グループを削除して、ユーザーのグループを削除します。
+
+- すべての Basic Mobility and Security デバイス ポリシーを削除して、すべてのユーザーに対して Basic Mobility and Security を無効にします。
+
+これらのオプションを使用すると、組織内のデバイスに対する Basic Mobility and Security の適用が削除されます。 残念ながら、Basic Mobility and Security をセットアップした後は、単に"準備を解除" する必要があります。 
 
 >[!IMPORTANT]
->ユーザーのセキュリティグループをポリシーから削除したり、ポリシー自体を削除したりすると、ユーザーのデバイスに与える影響に注意してください。 たとえば、電子メールプロファイルやキャッシュされたメールは、デバイスによっては削除されることがあります。 詳細については、「  [ポリシーを削除するか、ポリシーからユーザーを削除するとどうなりますか?](https://support.microsoft.com/office/create-device-security-policies-in-basic-mobility-and-security-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6#bkmk_changeimpact) 」を参照してください。
+>ポリシーからユーザー セキュリティ グループを削除したり、ポリシー自体を削除したりすると、ユーザーのデバイスに与える影響に注意してください。 たとえば、デバイスによっては、メール プロファイルとキャッシュされたメールが削除される場合があります。 詳しくは、「ポリシーを削除した場合、またはポリシーからユーザーを削除した場合の問題  [」をご覧ください。](https://support.microsoft.com/office/create-device-security-policies-in-basic-mobility-and-security-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6#bkmk_changeimpact)
 
-## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>基本的なモビリティとセキュリティデバイスポリシーからユーザーセキュリティグループを削除する
+## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Basic Mobility and Security デバイス ポリシーからユーザー セキュリティ グループを削除する
 
-1. ブラウザーで、次のように入力  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) します。
+1. ブラウザーで次の種類を入力します  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。
 
-2. デバイスポリシーを選択し、[ **ポリシーの編集**] を選択します。 
+2. デバイス ポリシーを選択し、[ポリシーの編集 **] を選択します**。 
 
-3. [  **展開**   ] ページで、[ **削除**] を選択します。
+3. [展開]  **ページで**   、[削除] を **選択します**。
+
+4. [  **グループ] で**、セキュリティ グループを選択します。
+
+5. [削除  **] を選択** し、[保存] を **選択します**。
+
+## <a name="remove-basic-mobility-and-security-device-policies"></a>Basic Mobility and Security デバイス ポリシーを削除する
+
+1.  ブラウザーで次の種類を入力します  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。 
+
+2.  デバイス ポリシーを選択し、[ポリシーの削除]  **を選択します**。
     
-4. [  **グループ**] で、セキュリティグループを選択します。
+3.  [警告] ダイアログ ボックスで、[はい] を **選択します**。
 
-5. [  **削除**] を選択し、[ **保存**] を選択します。
-    
-
-## <a name="remove-basic-mobility-and-security-device-policies"></a>基本的なモビリティとセキュリティデバイスポリシーを削除する
-
-1.  ブラウザーで、次のように入力  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) します。 
-
-2.  デバイスポリシーを選択し、[  **ポリシーの削除**] を選択します。
-    
-3.  警告ダイアログボックスで、[ **はい]** を選択します。
-
->[!NOTE] 
->組織のデバイスがまだブロックされている状態である場合にデバイスのブロックを解除する手順の詳細については、ブログ投稿「 [Office 365 のモバイルデバイス管理からのアクセス制御の削除](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)」を参照してください。
+>[!NOTE]
+>組織のデバイスがまだブロック状態にある場合にデバイスのブロックを解除する手順については、Office [365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)のモバイル デバイス管理からのアクセス制御の削除に関するブログ投稿を参照してください。

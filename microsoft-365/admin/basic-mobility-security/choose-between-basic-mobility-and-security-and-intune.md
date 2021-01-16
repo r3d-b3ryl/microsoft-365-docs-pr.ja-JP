@@ -1,5 +1,5 @@
 ---
-title: 基本的なモビリティとセキュリティおよび Intune のどちらかを選択する
+title: Basic Mobility and Security と Intune の選択
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,89 +17,90 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 基本的なモビリティとセキュリティは、Microsoft 365 プランに含まれています。
-ms.openlocfilehash: 75fef5bd70d7b8926d31b80f16952aa996bc625c
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Basic Mobility and Security は、Microsoft 365 プランの一部です。
+ms.openlocfilehash: cfd1a68c313d1a1335490e2b8d6938de192fe3f3
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580663"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877094"
 ---
-# <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本的なモビリティとセキュリティまたは Intune のどちらかを選択する
+# <a name="choose-between-basic-mobility-and-security-or-intune"></a>Basic Mobility and Security または Intune の中から選択する
 
-Microsoft [Intune](https://docs.microsoft.com/mem/intune/)は、特定の microsoft 365 プランに含まれるスタンドアロン製品であり、基本的なモビリティとセキュリティは microsoft 365 プランの一部です。 
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/) は、特定の Microsoft 365 プランに含まれているスタンドアロン製品ですが、Basic Mobility and Security は Microsoft 365 プランの一部です。 
 
- ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>基本的なモビリティとセキュリティおよび Intune の可用性
+ ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Basic Mobility and Security と Intune の可用性
  
-基本的なモビリティとセキュリティと Intune は、次の表に示すさまざまなプランに含まれています。
+Basic Mobility と Security と Intune の両方が、次の表で説明するさまざまなプランに含まれています。
 
-| 計画 | 基本的なモビリティとセキュリティ | Microsoft Intune |
+| プラン | 基本的なモビリティとセキュリティ | Microsoft Intune |
 |:-----|:-----|:-----|
-|Microsoft 365 アプリ|必要|いいえ|
-|Microsoft 365 Business Basic|必要|いいえ|
-|Microsoft 365 Business Standard|必要|いいえ|
-|Office 365 E1 |必要|いいえ|
-|Office 365 E3 |必要|いいえ|
-|Office 365 E5 |必要|いいえ|
-|Microsoft 365 Business Premium |はい|必要|
-|Microsoft 365 Firstline 3 |はい|必要|
-|Microsoft 365 Enterprise E3 |はい|必要|
-|Microsoft 365 Enterprise E5 |はい|必要|
-|Microsoft 365 エデュケーション A1 |はい|必要|
-|Microsoft 365 Education A3 |はい|必要|
+|Microsoft 365 アプリ|はい|いいえ|
+|Microsoft 365 Business Basic|はい|いいえ|
+|Microsoft 365 Business Standard|はい|いいえ|
+|Office 365 E1 |はい|いいえ|
+|Office 365 E3 |はい|いいえ|
+|Office 365 E5 |はい|いいえ|
+|Microsoft 365 Business Premium |はい|はい|
+|Microsoft 365 Firstline 3 |はい|はい|
+|Microsoft 365 Enterprise E3 |はい|はい|
+|Microsoft 365 Enterprise E5 |はい|はい|
+|Microsoft 365 Education A1 |はい|はい|
+|Microsoft 365 Education A3 |はい|はい|
 |Microsoft 365 Education A5 |はい|はい|
 |Microsoft Intune |いいえ|はい|
 |Enterprise Mobility & Security E3 |いいえ|はい|
 |Enterprise Mobility & Security E5 |いいえ|はい|
 
 >[!NOTE]
->既に Microsoft Intune を使用している場合は、基本的なモビリティとセキュリティの使用を開始することはできません。
+>Microsoft Intune を既に使用している場合は、Basic Mobility and Security の使用を開始できません。
 
- 詳細については、「 [Microsoft 365 および Office 365 プラットフォームサービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)」を参照してください。 
+ 詳細については [、Microsoft 365 および Office 365 プラットフォーム](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)サービスの説明を参照してください。 
 
-## <a name="differences-in-capabilities"></a>機能の相違点
+## <a name="differences-in-capabilities"></a>機能の違い
 
-Microsoft Intune および組み込みの基本的なモビリティとセキュリティはどちらも、組織内のモバイルデバイスを管理する機能を備えていますが、次の表で説明する機能には大きな違いがあります。
+Microsoft Intune と組み込みの Basic Mobility と Security の両方で、組織内のモバイル デバイスを管理することができますが、次の表で説明する機能には主な違いがあります。
 
 >[!NOTE]
->*最初に基本的なモビリティとセキュリティを設定し、次に Microsoft Intune を追加することで*、同じ Microsoft 365 Business Standard 組織での Intune と基本的なモビリティおよびセキュリティの両方を使用して、ユーザーとモバイルデバイスを管理することができます。 これにより、基本的なモビリティとセキュリティ、または機能豊富な Intune ソリューションを選択することができます。 Intune の機能を有効にするために Intune ライセンスを割り当てます。
+>最初に Basic *Mobility と Security* を設定し、次に Microsoft Intune を追加することで、同じ Microsoft 365 Business Standard 組織で Intune と Basic Mobility and Security の両方を使用して、ユーザーとそのモバイル デバイスを管理できます。 これにより、Basic Mobility and Security またはより豊富な機能を持つ Intune ソリューションを選択できます。 Intune の機能を有効にする Intune ライセンスを割り当てる。
 
 | 機能領域 | 機能のハイライト | 基本的なモビリティとセキュリティ | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
-|デバイスの種類|さまざまな OS プラットフォームと主要な管理モードのバリエーションを管理します。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS、iPad OS|
-|デバイスのポリシー準拠|デバイスレベルの PIN ロックや jailbreak の検出などのセキュリティポリシーを設定および管理します。 |Android 9 以降のデバイスの制限。 [詳細](capabilities.md)を参照してください。 |必要|
-|デバイスコンプライアンスに基づく条件付きアクセス |準拠していないデバイスが、クラウドから会社の電子メールやデータにアクセスできないようにします。 |Windows 10 ではサポートされていません。<br/>Exchange Online、SharePoint Online、Outlook へのアクセスを制御することに制限されています。 |必要 |
-|デバイス構成  |デバイスの設定を構成する (たとえば、カメラを無効にする)|設定の制限されたセット。|必要|デバイスのポリシー準拠|デバイスレベルの PIN ロックや jailbreak の検出などのセキュリティポリシーを設定および管理します。 |Android 9 以降のデバイスの制限。 [詳細](capabilities.md)を参照してください。 |必要|
-|電子メール プロファイル  |デバイス上にネイティブの電子メールプロファイルをプロビジョニングします。 |はい|必要|
-|WiFi プロファイル |デバイス上にネイティブ Wi-fi プロファイルをプロビジョニングします。 |いいえ|はい|
-|VPN プロファイル |デバイス上にネイティブの VPN プロファイルをプロビジョニングします。 |いいえ|はい|
-|MDM アプリケーション管理 |内部の基幹業務アプリとアプリストアをユーザーに展開します。 |いいえ|はい|
-|MAM |ユーザーが Office mobile および基幹業務アプリを使用して企業情報に安全にアクセスできるようにします。これにより、コピー、切り取り、貼り付け、および名前を付けて保存のような操作を、企業データに対して承認されたアプリケーションにのみ制限することができます。 |いいえ|はい|
-|Managed browser  |エッジアプリを使用して、より安全な web ブラウジングを有効にします。 |いいえ|はい|
-|ゼロタッチ登録プログラム自動操縦) |企業が所有する多数のデバイスを登録し、ユーザーの設定を簡素化します。 |いいえ|はい|
+|デバイスの種類|さまざまな OS プラットフォームと主要な管理モードのバリエーションの管理。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS、iPad OS|
+|デバイスのポリシー準拠|デバイス レベルの PIN ロックや脱獄の検出など、セキュリティ ポリシーを設定および管理します。 |Android 9 以降のデバイスの制限事項。 詳細を [参照してください](capabilities.md)。 |はい|
+|デバイスのコンプライアンスに基づく条件付きアクセス |準拠しないデバイスがクラウドから企業の電子メールとデータにアクセスできない。 |Windows 10 ではサポートされていません。<br/>Exchange Online、SharePoint Online、および Outlook へのアクセスの制御に限定されます。 |はい |
+|デバイス構成  |デバイス設定を構成する (たとえば、カメラを無効にする)|制限付き設定のセット。|はい|
+|デバイスのポリシー準拠  |デバイス レベルの PIN ロックや脱獄の検出など、セキュリティ ポリシーを設定および管理します。 |Android 9 以降のデバイスの制限事項。 詳細を [参照してください](capabilities.md)。 |はい|
+|電子メール プロファイル  |デバイスでネイティブメール プロファイルをプロビジョニングします。 |はい|はい|
+|WiFi プロファイル |デバイスでネイティブの WiFi プロファイルをプロビジョニングします。 |いいえ|はい|
+|VPN プロファイル |デバイスでネイティブ VPN プロファイルをプロビジョニングします。 |いいえ|はい|
+|基本的なモビリティとセキュリティのアプリケーション管理  |内部の業務アプリとアプリ ストアからユーザーに展開します。 |いいえ|はい|
+|モバイル アプリケーション保護  |ユーザーが知っている Office モバイル アプリと業務アプリを使用して企業情報に安全にアクセスできる一方で、企業データに対して承認されたアプリにのみコピー、切り取り、貼り付け、保存などの操作を制限することで、データのセキュリティを確保できます。 デバイスが Basic Mobility and Security に登録されていない場合でも動作します。 「MAM ポリシーを使ったアプリ データの保護」をご覧ください。 |いいえ|はい|
+|管理対象ブラウザー  |Edge アプリを使用して、より安全な Web 閲覧を有効にする。 |いいえ|はい|
+|ゼロ タッチ登録プログラム Autopilot) |多数の企業所有のデバイスを登録し、ユーザーのセットアップを簡素化します。 |いいえ|はい|
 |||
 
-上記の表に記載されている機能に加えて、基本的な Mobility and Security and Intune には、インターネット経由でデバイスにコマンドを送信するリモート操作のセットが含まれています。 たとえば、個人データを保存しておくか (削除)、従業員のデバイスから Office アプリを削除するか、またはデバイスを出荷時の設定 (完全ワイプ) にリセットすると、従業員のデバイスから Office データを削除することができます。 
+上の表に示した機能に加えて、Basic Mobility and Security と Intune の両方に、インターネットを使用してデバイスにコマンドを送信する一連のリモート操作が含まれています。 たとえば、従業員のデバイスから Office データを削除し、個人データを定置 (廃止) しながら削除したり、従業員のデバイスから Office アプリを削除 (ワイプ) したり、デバイスを出荷時の設定 (フル ワイプ) にリセットすることができます。 
 
-基本的なモビリティおよびセキュリティのリモートアクションには、廃棄、ワイプ、フルワイプがあります。 基本的なモビリティおよびセキュリティアクションの詳細については、「 [Basic mobility And security の機能](capabilities.md)」を参照してください。
+基本的なモビリティとセキュリティのリモート操作には、リタイア、ワイプ、フル ワイプが含まれます。 Basic Mobility and Security アクションの詳細については、「Basic Mobility and [Security」の機能を参照してください](capabilities.md)。
 
 Intune では、次の一連の操作を実行できます。
 
--   自動操縦のリセット (Windows のみ
+-   Autopilot のリセット (Windows のみ)
 -  [Bitlocker キーの回転](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)  (Windows のみ)
--  [デバイスをワイプ、削除、または手動で登録を取り消します。](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
--  [ライセンス認証](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)   の無効化(iOS のみ)
--  [新しい開始](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)  (Windows のみ)
-- [フルスキャン](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)  (Windows 10 のみ)
-- [デバイス](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)   を探す(iOS のみ)
-- [失われたモード](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)  (iOS のみ)-[クイックスキャン](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 のみ)
-- [Android のリモートコントロール](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
+-  [デバイスのワイプ、リタイア、または手動での登録解除を使用する](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
+-  [アクティブ化のロックを無効にする](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)  (iOS のみ)
+-  [新しいスタート](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)  (Windows のみ)
+- [フル スキャン](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)  (Windows 10 のみ)
+- [デバイスの検索](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)  (iOS のみ)
+- [失われたモード](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)  (iOS のみ)-[クイック スキャン](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 のみ)
+- [Android 用のリモート コントロール](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
 - [リモート ロック](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
-- [デバイス名の変更](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
--  [パスコード](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset)の[再起動](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)をリセットする   (Windows のみ)
--  Windows Defender セキュリティインテリジェンスを更新する (Windows のみ)
--  Windows 10 PIN リセット (Windows のみ)
--  [カスタム通知](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   を送信する(Android、iOS、iPad OS)
+- [デバイスの名前を変更する](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
+-  [パスコードのリセット](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset)[の再起動](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)   (Windows のみ)
+-  セキュリティ Windows Defender更新プログラム (Windows のみ)
+-  Windows 10 PIN のリセット (Windows のみ)
+-  [カスタム通知を送信する](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)  (Android、iOS、iPad OS)
 -  [デバイスの同期](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)
 
-Intune アクションの詳細については、「 [Microsoft intune のドキュメント](https://docs.microsoft.com/mem/intune/)」を参照してください。
+Intune の操作について詳しくは [、Microsoft Intune のドキュメントをご覧ください](https://docs.microsoft.com/mem/intune/)。

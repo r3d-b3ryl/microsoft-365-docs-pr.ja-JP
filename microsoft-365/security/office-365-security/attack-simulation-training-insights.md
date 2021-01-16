@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Microsoft 365 セキュリティ センターの攻撃シミュレーション トレーニングが従業員に与える影響を把握し、シミュレーションとトレーニングの結果から分析情報を得る方法を学習できます。
-ms.openlocfilehash: c283819550872691d8dd23d3921c22cb23637633
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: baff6032f295b2b49b4f2ec9280fb465d47b8dc3
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870957"
+ms.locfileid: "49877142"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 
 攻撃シミュレーション トレーニングの中で、Microsoft は従業員が行ったシミュレーションとトレーニングの結果に基づく分析情報を提供します。 これらの分析情報は、従業員の脅威の準備状況に関する情報を把握するのに役立ちます。また、従業員と環境を攻撃に対してより良く準備するための次の手順をお勧めします。
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 We are continuously working on expanding the insights that are available to you. 現在、動作への影響と推奨されるアクションを利用できます。 まず、Microsoft 365 セキュリティ センターの攻撃 [シミュレーション トレーニングに向かいます](https://security.microsoft.com/attacksimulator?viewid=overview)。
 
