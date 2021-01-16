@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: セキュリティ コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーですぐに使用できる 80 種類の機密情報が &amp; 含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 10f45403703130c191f4cbb26d1c0cba168b05ae
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 584e2fe2353c1f80545a3742a44163cb26ee2c29
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751284"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881786"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -843,7 +843,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-対象外
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -7682,7 +7682,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-対象外
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -11275,7 +11275,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-対象外
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -11415,7 +11415,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-対象外
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -12216,7 +12216,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - National Health Index Id
 - 国民健康インデックス#
 
-## <a name="new-zealand-social-wlefare-number"></a>ニュージーランドのソーシャル wlefare 番号
+## <a name="new-zealand-social-welfare-number"></a>ニュージーランドのソーシャル ワーカー番号
+
 この機密情報の種類は、次の場合にのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
@@ -14886,7 +14887,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-対象外
+該当なし
   
 ### <a name="definition"></a>定義
 
