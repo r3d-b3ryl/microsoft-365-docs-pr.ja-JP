@@ -1,5 +1,5 @@
 ---
-title: 基本的なモビリティとセキュリティのプライバシーとセキュリティ
+title: Basic Mobility and Security のプライバシーとセキュリティ
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,16 +13,16 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: 基本的なモビリティとセキュリティをアクティブにした後、モバイルデバイス管理ポリシーを作成できます。
-ms.openlocfilehash: 31966f81833d6c90c48cdc4c40eee2f94d785fd8
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: Basic Mobility and Security をアクティブ化した後、モバイル デバイス管理ポリシーを作成できます。
+ms.openlocfilehash: a5e813219407b105f9196a4532914326a94f429a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430223"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876914"
 ---
-# <a name="privacy-and-security-in-basic-mobility-and-security"></a><span data-ttu-id="1b081-103">基本的なモビリティとセキュリティのプライバシーとセキュリティ</span><span class="sxs-lookup"><span data-stu-id="1b081-103">Privacy and security in Basic Mobility and Security</span></span>
+# <a name="privacy-and-security-in-basic-mobility-and-security"></a><span data-ttu-id="f9e2c-103">Basic Mobility and Security のプライバシーとセキュリティ</span><span class="sxs-lookup"><span data-stu-id="f9e2c-103">Privacy and security in Basic Mobility and Security</span></span>
 
-<span data-ttu-id="1b081-104">基本的なモビリティとセキュリティは、Microsoft Intune が提供するクラウドベースのサービスであり、組織内で使用されるモバイルデバイスの管理とセキュリティ保護に役立てることができます。</span><span class="sxs-lookup"><span data-stu-id="1b081-104">Basic Mobility and Security is a cloud-based service powered by Microsoft Intune that helps you manage and secure mobile devices used in your organization.</span></span> <span data-ttu-id="1b081-105">基本的なモビリティとセキュリティをアクティブにした後、モバイルデバイス管理ポリシーを作成できます。</span><span class="sxs-lookup"><span data-stu-id="1b081-105">After you activate Basic Mobility and Security, you can create mobile device management policies.</span></span> <span data-ttu-id="1b081-106">これらのポリシーは、組織内のライセンスのある Microsoft 365 ユーザーによって登録されたモバイルデバイスに展開できます。</span><span class="sxs-lookup"><span data-stu-id="1b081-106">These policies can then be deployed to mobile devices that have been enrolled by licensed Microsoft 365 users in your organization.</span></span>
+<span data-ttu-id="f9e2c-104">Basic Mobility and Security は、組織内のモバイル デバイスの管理とセキュリティ保護に役立つ Microsoft Intune を利用したクラウドベースのサービスです。</span><span class="sxs-lookup"><span data-stu-id="f9e2c-104">Basic Mobility and Security is a cloud-based service powered by Microsoft Intune that helps you manage and secure mobile devices in your organization.</span></span> <span data-ttu-id="f9e2c-105">Basic Mobility and Security をアクティブ化した後、モバイル デバイス管理ポリシーを作成できます。</span><span class="sxs-lookup"><span data-stu-id="f9e2c-105">After you activate Basic Mobility and Security, you can create mobile device management policies.</span></span> <span data-ttu-id="f9e2c-106">これらのポリシーは、組織内のライセンスを取得した Microsoft 365 ユーザーによって登録されているモバイル デバイスに展開できます。</span><span class="sxs-lookup"><span data-stu-id="f9e2c-106">These policies can then be deployed to mobile devices that have been enrolled by licensed Microsoft 365 users in your organization.</span></span>
 
-<span data-ttu-id="1b081-107">Microsoft Intune は、各管理対象デバイスのコンプライアンス状態に関する情報を Microsoft 365 に送信し、設定されたポリシーに基づいて組織内の管理対象デバイスが準拠しているかどうかを示すレポートを生成できます。</span><span class="sxs-lookup"><span data-stu-id="1b081-107">Microsoft Intune sends information to Microsoft 365 about the compliance status of each managed device, and then you can generate reports that show whether managed devices in your organization are compliant based upon the policies that were set.</span></span> <span data-ttu-id="1b081-108">Microsoft によるプライバシーとセキュリティへの取り組みの詳細については、 [Microsoft セキュリティセンター](https://www.microsoft.com/trust-center)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1b081-108">To learn more about Microsoft's commitment to the privacy and security, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center).</span></span>
+<span data-ttu-id="f9e2c-107">Microsoft Intune は、各管理対象デバイスのコンプライアンス状態に関する情報を Microsoft 365 に送信し、設定されたポリシーに基づいて、組織内の管理対象デバイスが準拠するかどうかを示すレポートを生成できます。</span><span class="sxs-lookup"><span data-stu-id="f9e2c-107">Microsoft Intune sends information to Microsoft 365 about the compliance status of each managed device, and then you can generate reports that show whether managed devices in your organization are compliant based upon the policies that were set.</span></span> <span data-ttu-id="f9e2c-108">プライバシーとセキュリティに対する Microsoft の取り組みについて詳しくは [、Microsoft セキュリティ センターをご覧ください](https://www.microsoft.com/trust-center)。</span><span class="sxs-lookup"><span data-stu-id="f9e2c-108">To learn more about Microsoft's commitment to the privacy and security, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center).</span></span>
