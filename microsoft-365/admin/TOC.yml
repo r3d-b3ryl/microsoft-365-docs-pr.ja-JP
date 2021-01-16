@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 概要
+    - name: 作業の開始
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -24,6 +24,8 @@
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Windows 10 コンピューターをセキュリティで保護する
           href: ../business/secure-win-10-pcs.md
+        - name: ソフトウェアとプロダクト キーをダウンロードする
+          href: setup/download-software-licenses-csp.md
         - name: Office アプリのインストール
           href: setup/install-applications.md
         - name: Windows デバイスをセットアップする
@@ -360,12 +362,32 @@
               href: basic-mobility-security/overview.md
             - name: 基本的なモビリティとセキュリティと Intune を比較する
               href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
-            - name: 基本的なモビリティとセキュリティに関する FAQ
-              href: basic-mobility-security/frequently-asked-questions.md
             - name: 基本的なモビリティとセキュリティの機能
               href: basic-mobility-security/capabilities.md
-            - name: 基本的なモビリティとセキュリティと Intune を比較する
-              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: 基本的なモビリティとセキュリティの設定
+              href: basic-mobility-security/set-up.md
+            - name: デバイス セキュリティ ポリシーを作成する
+              href: basic-mobility-security/create-device-security-policies.md
+            - name: iOS デバイスの APN 証明書を作成する
+              href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
+            - name: デバイス アクセスの設定を管理する
+              href: basic-mobility-security/manage-device-access-settings.md
+            - name: 管理対象デバイスに関する詳細情報を取得する
+              href: basic-mobility-security/get-details-about-managed-devices.md
+            - name: 登録済みデバイスを管理する
+              href: basic-mobility-security/manage-enrolled-devices.md
+            - name: モバイル デバイスを登録する
+              href: basic-mobility-security/enroll-your-mobile-device.md
+            - name: プライバシーとセキュリティ
+              href: basic-mobility-security/privacy-and-security.md
+            - name: よく寄せられる質問
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: モバイル デバイスをワイプする
+              href: basic-mobility-security/wipe-mobile-device.md
+            - name: 基本的なモビリティとセキュリティをオフにする
+              href: basic-mobility-security/turn-off.md
+            - name: トラブルシューティング
+              href: basic-mobility-security/troubleshoot.md
     - name: 顧客と連携する
       href: work-with-customers/index.yml
       items:
