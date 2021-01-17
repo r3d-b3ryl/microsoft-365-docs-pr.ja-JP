@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '概要: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。'
 hideEdit: true
-ms.openlocfilehash: 9b705c6cad0387efb16f3fc5494b1ba2fe337732
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 386c92d0856b3faa88fb8a05f8ddff58a81e3c4f
+ms.sourcegitcommit: a92b150da1e11d4a204c556ab98a4776727dbc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794402"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883338"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL および IP アドレス範囲
 
@@ -62,7 +62,7 @@ Office 365 には、インターネットへの接続が必要です。Office 36
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->Yammer IP アドレスと URL に関する推奨事項は、[このブログの投稿](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592)を参照してください。
+>Yammer の IP アドレスと URL に関する推奨事項については、Yammer ブログの「[Yammer でハードコードされた IP アドレスの使用が推奨される」を参照してください](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592)。
 >
 
 ## <a name="related-topics"></a>関連項目
@@ -71,7 +71,7 @@ Office 365 には、インターネットへの接続が必要です。Office 36
 
 [一般的な Microsoft Stream エンドポイント](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Microsoft 365 の接続を監視する](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[Microsoft 365 の接続を監視する](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
 
 [ルート CA とサードパーティ製のアプリケーション システム上の中間 CA バンドル](../compliance/encryption-office-365-certificate-chains.md)
   
@@ -88,3 +88,5 @@ Office 365 には、インターネットへの接続が必要です。Office 36
 [Microsoft Azure の IP 範囲とサービス タグ – 中国向けクラウド](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft パブリック IP スペース](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[サービス名およびトランスポート プロトコルのポート番号レジストリ](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)

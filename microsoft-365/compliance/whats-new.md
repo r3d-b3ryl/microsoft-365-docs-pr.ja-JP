@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターへの新しいソリューションの追加、フィードバックに基づく既存の機能の更新、最新および更新されたドキュメントの展開など、Microsoft 365 は変化し続けるコンプライアンス環境を常に改善するのに役立ちます。 今月の予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3688ee7390b7cadf701e8dbefd8b12c82cf6d89c
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 8723171820bb1c089d34b81f5adb6663ecc9b8af
+ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751594"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "49883716"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -46,7 +46,7 @@ ms.locfileid: "49751594"
 
 [エンドポイント DLP は](endpoint-dlp-learn-about.md) 、DLP のアクティビティ監視および保護機能を Windows 10 デバイス上の機密情報に拡張します。 デバイスが[](dlp-configure-endpoints.md)Microsoft 365 コンプライアンス センターにオンボードされた後、DLP ポリシーを設定して、それらのデバイスの機密情報を保護できます。
 
-### <a name="advanced-ediscovery"></a>高度な電子情報開示
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 電子情報開示ワークフローで暗号化されたコンテンツを簡単に管理するために、Microsoft 365 電子情報開示ツールには、[](ediscovery-decryption.md)電子メール メッセージに添付され、Exchange で送信される暗号化されたファイルの暗号化解除が組み込まれています。 さらに、SharePoint と OneDrive に保存されている暗号化されたドキュメントは、Advanced eDiscovery で復号化されます。
 
@@ -71,7 +71,7 @@ ms.locfileid: "49751594"
 
 ## <a name="october-2020"></a>2020 年 10 月
 
-### <a name="advanced-ediscovery"></a>高度な電子情報開示
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 [CJK 言語サポート](ediscovery-cjk-support.md)。 Advanced eDiscovery では、CJK 言語と総称される 2 バイト文字セット言語 (簡体字中国語、繁体字中国語、日本語、韓国語を含む) がサポートされます。 これらは、いくつかの高度なレビュー セット シナリオで使用できます。
 
@@ -100,7 +100,7 @@ ms.locfileid: "49751594"
 
 - [役割グループを更新しました](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。 通信コンプライアンス役割グループは、インサイダー リスク管理ソリューションで使用可能な役割グループ構造と一致する必要があります。
 - [レポート ダッシュボード](communication-compliance-feature-reference.md#reports-preview)。 すべての通信コンプライアンス レポートを表示する中心的な場所。 レポート ウィジェットは、通信コンプライアンス アクティビティの状態を全体的に評価するために最も一般的に必要な分析情報のクイック ビューを提供します。
-- [Power Automate フロー](communication-compliance-feature-reference.md#power-automate-flows-preview)。 フローを設定して、アラートとユーザーのタスクを自動化し、ユーザーがアラートをトリガーした場合にマネージャーに通知します。
+- [Power Automate フロー](communication-compliance-feature-reference.md#power-automate-flows)。 フローを設定して、アラートとユーザーのタスクを自動化し、ユーザーがアラートをトリガーした場合にマネージャーに通知します。
 - ['分類の改善' 修復アクション](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 トレーニング可能な分類子に一致するアイテムを含むアラートは、組織内で誤検知を最小限に抑えるためにフィードバックを利用できる場合があります。 分類 **の改善オプション** を使用すると、検出されたアイテムが関連する通信コンプライアンス ポリシーで構成されている分類子と一致するかどうかをフィードバックできます。 他の分類子を提案してアイテムに関連付け、今後のアラートの一致精度を向上させる場合があります。
 
 ### <a name="data-connectors"></a>データ コネクタ
@@ -170,7 +170,7 @@ ms.locfileid: "49751594"
 
 - アラート [でメッセージを](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)確認するときに、Microsoft Teams チャネル、1 対 1、およびグループ チャットで不適切なメッセージを削除できます。 削除されたメッセージとコンテンツは、機密性の高いコンテンツのために削除されたというポリシー ヒントに置き換えられる。
 - 新 [しい通信役割](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (これらは、9 月にリリースされる新しい通信コンプライアンス役割グループにも含まれます)。
-- プライバシーと通知テンプレートの設定 [を含む](communication-compliance-feature-reference.md#privacy-preview) 新しい通信コンプライアンス [設定エクスペリエンス](communication-compliance-feature-reference.md#notice-templates)。
+- プライバシーと通知テンプレートの設定 [を含む](communication-compliance-feature-reference.md#privacy) 新しい通信コンプライアンス [設定エクスペリエンス](communication-compliance-feature-reference.md#notice-templates)。
 - 成人 [向け、](communication-compliance-feature-reference.md#classifiers) 不器用、不作作な画像の検出に役立つ新しい分類子。
 - アラート内のメッセージを確認するときに表示される新しい[](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details)"パターン検出" 通知により、ユーザーが同じ動作のインスタンスを再発生した場合を確認できます。
 
@@ -191,7 +191,7 @@ ms.locfileid: "49751594"
 
 保持関連の管理者アクティビティが記録され、監査ログで確認できます。 完全なリストについては、「[アイテム保持ポリシーと保持ラベルのアクティビティ](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)」を参照してください。
 
-### <a name="advanced-ediscovery"></a>高度な電子情報開示
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - コレクション [をレビュー セットに](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review)追加するときに、モダン添付ファイル (「クラウド添付ファイル」とも呼ばれる) と SharePoint ドキュメント バージョンを含めできます。
 - 新 [しい直接ダウンロードエクスポート エクスペリエンス](export-documents-from-review-set.md)により、ケースコンテンツをダウンロードするために Azure Storage Explorer を使用する必要がなくなります。
