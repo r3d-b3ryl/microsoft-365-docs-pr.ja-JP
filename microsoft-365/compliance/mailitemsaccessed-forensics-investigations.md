@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
-ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546293"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868005"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>高度な監査を使用して、侵害されたアカウントを調査する
 
-侵害されたユーザー アカウント (*アカウントの乗っ取り*とも呼ばれます) は、攻撃者がユーザー アカウントへのアクセス権を取得し、ユーザーとして操作する場合の攻撃の種類です。 これらのタイプの攻撃は、攻撃者が意図していたよりも多くの損害を引き起こすことがあります。 侵害されたメール アカウントを調査する場合、攻撃者の実際の存在を追跡する中で示されるよりも多くのメール データが侵害されたと想定する必要があります。 メール メッセージのデータの種類によっては、機密情報が漏えいしていないことを証明できない限り、機密情報が侵害されたと見なすか、または規制当局の罰金に直面する必要があります。 たとえば、HIPAA の規制対象となる組織は、患者の健康情報 (PHI) が漏えいした証拠がある場合、多額の罰金に直面します。 これらの場合、攻撃者が PHI に関心を持つことはほとんどありませんが、組織は、別の方法で証明できない限りはデータ侵害を報告する必要があります。
+侵害されたユーザー アカウント (*アカウントの乗っ取り* とも呼ばれます) は、攻撃者がユーザー アカウントへのアクセス権を取得し、ユーザーとして操作する場合の攻撃の種類です。 これらのタイプの攻撃は、攻撃者が意図していたよりも多くの損害を引き起こすことがあります。 侵害されたメール アカウントを調査する場合、攻撃者の実際の存在を追跡する中で示されるよりも多くのメール データが侵害されたと想定する必要があります。 メール メッセージのデータの種類によっては、機密情報が漏えいしていないことを証明できない限り、機密情報が侵害されたと見なすか、または規制当局の罰金に直面する必要があります。 たとえば、HIPAA の規制対象となる組織は、患者の健康情報 (PHI) が漏えいした証拠がある場合、多額の罰金に直面します。 これらの場合、攻撃者が PHI に関心を持つことはほとんどありませんが、組織は、別の方法で証明できない限りはデータ侵害を報告する必要があります。
 
 侵害されたメール アカウントの調査を支援するために、*MailItemsAccessed* メールボックス監査アクションを使用して、メール プロトコルおよびクライアントによるメール データへのアクセスを監査しています。 この新しい監査済みアクションは、調査者がメール データ侵害をよりよく理解し、侵害された可能性のある特定のメール アイテムに対する侵害の範囲を特定するのに役立ちます。 この新しい監査アクションを使用する目標は、特定のメール データが危険にさらされていないことを主張するためのフォレンシック防御可能性です。 攻撃者が特定のメールへのアクセス権を取得した場合、メール アイテムが実際に読み取られたという兆候がなくても、Exchange Online はイベントを監査します。
 
@@ -37,7 +37,7 @@ MailItemsAccessed メールボックス監査アクションは、POP、IMAP、M
 
 ### <a name="auditing-sync-access"></a>同期アクセスの監査
 
-同期操作は、Windows または Mac 用のデスクトップ バージョンの Outlook クライアントがメールボックスにアクセスした場合にのみ記録されます。 同期操作中、これらのクライアントは通常、クラウドからローカル コンピューターに大量のメール アイテムをダウンロードします。 同期操作の監査ボリュームは膨大です。 したがって、同期されたメール アイテムごとに監査レコードを生成するのではなく、同期されたアイテムを含むメール フォルダーに対して監査イベントを生成するのです。 これは、同期されたフォルダー内の*すべて*のメール アイテムが侵害されていることを前提としています。 アクセスの種類は、監査レコードの OperationProperties フィールドに記録されます。 
+同期操作は、Windows または Mac 用のデスクトップ バージョンの Outlook クライアントがメールボックスにアクセスした場合にのみ記録されます。 同期操作中、これらのクライアントは通常、クラウドからローカル コンピューターに大量のメール アイテムをダウンロードします。 同期操作の監査ボリュームは膨大です。 したがって、同期されたメール アイテムごとに監査レコードを生成するのではなく、同期されたアイテムを含むメール フォルダーに対して監査イベントを生成するのです。 これは、同期されたフォルダー内の *すべて* のメール アイテムが侵害されていることを前提としています。 アクセスの種類は、監査レコードの OperationProperties フィールドに記録されます。 
 
 監査レコードに同期アクセスの種類を表示する例については、[フォレンシック調査に MailItemsAccessed 監査レコードを使用する](#use-mailitemsaccessed-audit-records-for-forensic-investigations)セクションの手順 2 を参照してください。
 
@@ -178,8 +178,8 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 |監査レコード 1  |監査レコード 2  |監査レコード 3|
 |---------|---------|---------|
-|ClientIPAddress**1**<br/>SessionId**2**|ClientIPAddress**2**<br/>SessionId**2**|ClientIPAddress**1**<br/>SessionId**3**|
-|InternetMessageId**A**<br/>InternetMessageId**D**<br/>InternetMessageId**E**<br/>InternetMessageId**F**<br/>|InternetMessageId**A**<br/>InternetMessageId**C**|InternetMessageId**B** |
+|ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B** |
 ||||
 
 [前のセクション](#filtering-of-duplicate-audit-records)の表に一覧表示されているプロパティのいずれかが異なる場合、新しいコンテキストを追跡するために個別の監査レコードが生成されます。 アクセスは、アクティビティが行われたコンテキストに応じて、個別の監査レコードへと分類されます。
@@ -187,3 +187,9 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 たとえば、次のスクリーンショットに示されている監査レコードでは、EWSEditor と OWA から同時にメールにアクセスしていますが、アクセス アクティビティは、アクセスが発生したコンテキストに応じて異なる監査レコードで照合されます。 この場合、コンテキストは ClientInfoString プロパティの異なる値によって定義されます。
 
 ![コンテキストに基づいた異なる監査レコード](../media/MailItemsAccessed4.png)
+
+前のスクリーンショットで示したコマンドの構文は、次の通りです。
+
+```powershell
+Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
+``` 
