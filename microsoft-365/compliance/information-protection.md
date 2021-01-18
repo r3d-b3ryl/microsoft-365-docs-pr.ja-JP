@@ -59,7 +59,7 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 
 |機能|解決される問題|作業の開始|
 |:------|:------------|---------------------|:----------------------------|
-|[秘密度ラベル](sensitivity-labels.md)| 組織の内外を移動するデータをラベル付けして保護する、アプリ、サービス、デバイスにまたがる単一のソリューション <br /><br />シナリオの例: [Power BI  でラベルの適用と表示をし、サービスの外部に保存されたデータを保護する](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md) |
+|[秘密度ラベル](sensitivity-labels.md)| 組織の内外を移動するデータをラベル付けして保護する、アプリ、サービス、デバイスにまたがる単一のソリューション <br /><br />サンプル シナリオ: [Power BI でラベルを適用して表示し、サービスの外部に保存されたデータを保護する](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Windows コンピューターの場合、秘密度ラベルが拡張され、すべてのファイルの種類に対するエクスプローラーや PowerShell からのラベル付けや保護を含む機能が追加されています<br /><br /> 追加機能の例: [Azure Information Protection 統合ラベル付けクライアントのカスタム構成](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection 統合ラベル付けクライアント管理者ガイド](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[二重キー暗号化](double-key-encryption.md)| どのような状況においても、保護されたコンテンツを復号化できるのは自分だけです。また規制要件においては、地理的な境界内に暗号化キーを保持する必要があります | [二重キー暗号化の展開](double-key-encryption.md#deploy-dke)|
 |[Office 365 Message Encryption (OME)](ome.md)| 任意のデバイス上の任意のユーザーに送信されるメール メッセージと添付ドキュメントを暗号化することで、承認された受信者のみがメールの情報を読むことができます  <br /><br />サンプル シナリオ: [Advanced Message Encryption を使用して暗号化されたメールを無効にする](revoke-ome-encrypted-mail.md) | [新しい Message Encryption 機能を設定する](set-up-new-message-encryption-capabilities.md)|
