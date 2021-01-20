@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Office 365 向け Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法について説明します。
-ms.openlocfilehash: 45311ad4c4eb09c8238d278475248680fbc66287
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 86a962dc3117708ac71195b9efc336fa30c573dd
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877130"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908343"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
 
@@ -58,7 +58,7 @@ Microsoft は、さまざまなソーシャル エンジニアリング手法に
 
 ## <a name="review-payload"></a>ペイロードを確認する
 
-ペイロードの作成は完了です。 次に、詳細を確認し、ペイロードのプレビューを表示します。 プレビューには、作成したインジケーターすべてが含まれます。 この手順では、ペイロードの各部分を編集できます。 問題がなければ、 **ペイロードを** 送信します。
+ペイロードの作成は完了です。 次に、詳細を確認し、ペイロードのプレビューを表示します。 プレビューには、作成したインジケーターすべてが含まれます。 この手順では、ペイロードの各部分を編集できます。 問題がなければ、ペイロード **を送信** できます。
 
 > [!IMPORTANT]
 > 作成したペイロードには、 **テナントがソース** として含まれます。 ペイロードを選択する場合は、テナントをフィルターで削除しなけれと **します**。
