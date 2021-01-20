@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790203"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905236"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
 
@@ -85,7 +85,7 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 |削除|許可 <sup>1</sup> |**ブロック済み** |**ブロック済み**| **ブロック済み**|
 |コピー|可 |可 | 可| 可|
 |コンテナー内の移動 <sup>2</sup>|可 |可 | 可| 可|
-|コンテナー間の移動 <sup>2</sup>|可 |ロック解除されていない場合は許可 | 可| **ブロック済み**|
+|コンテナー間の移動 <sup>2</sup>|可 |ロック解除されていない場合は許可 | **ブロック済み** | **ブロック済み**|
 |開く/読み取り|可 |可 | 可| 可|
 |ラベルを変更する|可 |許可-コンテナー管理のみ | 許可-コンテナー管理のみ| **ブロック済み**
 |ラベルを削除する|可 |許可-コンテナー管理のみ | 許可-コンテナー管理のみ| **ブロック済み**
