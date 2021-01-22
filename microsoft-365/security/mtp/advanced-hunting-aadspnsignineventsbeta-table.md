@@ -4,7 +4,7 @@ description: 高度な検索スキーマの Azure Active Directory サービス 
 keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 42acf24ce9b941fffb1ce0ed4b67216bd8c1de47
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.technology: m365d
+ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784301"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928620"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -34,7 +35,7 @@ ms.locfileid: "49784301"
 
 >[!IMPORTANT]
 > このテーブルは現在ベータ版であり `AADSpnSignInEventsBeta` 、Azure Active Directory (AAD) サービス プリンシパルとマネージ ID サインイン イベントをハントするために、短期的に提供されています。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。<br><br>
-> Azure Security Center の統合 Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできるが、Office 用 Microsoft Defender、Id 用 Microsoft Defender、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
+> Azure セキュリティ センターの統合 Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできるが、Office 用 Microsoft Defender、Id 用 Microsoft Defender、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
 
 
 
@@ -53,7 +54,7 @@ ms.locfileid: "49784301"
 | `Timestamp` | datetime      | レコードが作成された日付と時刻                                                                                                     |
 | `Application`          | 文字列        | 記録されたアクションを実行したアプリケーション                                                                                                   |
 | `ApplicationId`        | string        | アプリケーションの一意識別子                                                                                                           |
-| `IsManagedIdentity`    | ブール値       | サインインが管理 ID によって開始されたかどうかを示します                                                                               |
+| `IsManagedIdentity`    | ブール値       | サインインが管理 ID によって開始されたかどうかを示します。                                                                               |
 | `ErrorCode`            | int        | サインイン エラーが発生した場合のエラー コードを含む。 特定のエラー コードの説明を見つけるには、次のページを参照してください <https://aka.ms/AADsigninsErrorCodes> 。 |
 | `CorrelationId`        | string        | サインイン イベントの一意識別子                                                                                                          |
 | `ServicePrincipalName` | string        | サインインを開始したサービス プリンシパルの名前                                                                                        |
@@ -64,7 +65,7 @@ ms.locfileid: "49784301"
 | `IPAddress`            | string        | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス                                                              |
 | `CountryCode`          | string        | クライアント IP アドレスが地理的に位置する国を示す 2 文字のコード                                                                |
 | `State`                | string        | サインインが発生した状態 (使用可能な場合)                                                                                                  |
-| `City`                 | string        | アカウント ユーザーが位置する市区町町ラ                                                                                                          |
+| `City`                 | string        | アカウント ユーザーが位置する都市                                                                                                          |
 | `Latitude`             | string        | サインイン場所の北から南の座標                                                                                          |
 | `Longitude`            | string        | サインイン位置の東から西への座標                                                                                            |
 | `RequestId`            | string        | 要求の一意識別子                                                                                                                |

@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 がどこからでも作業するのに役立つ方法の概要。
-ms.openlocfilehash: 07e3625b90e17a516311241a2bd6365e46e24d86
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 55327fff51b67107aab7069c0036e8ded9b73cbb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702811"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927780"
 ---
 # <a name="work-from-anywhere---overview"></a>どこからでも作業 - 概要
 
@@ -42,7 +43,7 @@ ms.locfileid: "49702811"
 
 ## <a name="install-outlook-and-keep-in-touch"></a>Outlook をインストールして連絡を取り合う
 
-Outlook on your phone を使用すると、メールや予定を最新の情報に残することができます。 アプリをダウンロードし、起動、サインイン、アカウントのセットアップを行います。
+電話で Outlook を使用して、メールや予定を最新の情報に残することができます。 アプリをダウンロードし、起動、サインイン、アカウントのセットアップを行います。
 
 電話に Outlook をインストールする [方法の詳細を取得します](https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236)。
 
@@ -72,7 +73,7 @@ OneDrive に個人用ファイルを保存し、電話から同期すること�
 
 Android iOS アプリのインストールOffice[詳](https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236)しくは、  |  [以下を参照してください](https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343)。
 
-電話やタブレットで何ができるか分からないか。 アプリの使用について詳しくは、次Office覧ください。
+電話やタブレットで何ができるか分からないか。 アプリの使用について詳しくは、Office覧ください。
 
 | iPad または iPhone で作業する| Android スマートフォンまたはタブレットで作業する| 
 | :------------------- | :------------------- |
@@ -99,7 +100,7 @@ Android iOS アプリのインストールOffice[詳](https://support.microsoft.
 
 ノート PC から:
 
-- Microsoft Teams で **、アプリの** 左側にある [会議] ボタンをクリックすると、その週のすべての会議の一 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 覧が表示されます。 必要な会議を検索し、[参加] をクリックします。
+- Microsoft Teams で **、アプリの** 左側にある [会議] ボタンをクリックすると、その週のすべての会議の一 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 覧が表示されます。 必要な会議を見つけて、[参加] をクリックします。
 
 電話から:
 

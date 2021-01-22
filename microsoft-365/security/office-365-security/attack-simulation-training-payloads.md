@@ -5,24 +5,25 @@ author: danihalfin
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Office 365 向け Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法について説明します。
-ms.openlocfilehash: 86a962dc3117708ac71195b9efc336fa30c573dd
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.technology: mdo
+ms.openlocfilehash: 6cc5dd4a48ab89193133cfaf823d0a1b1868fa79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908343"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929192"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
 
-Microsoft は、さまざまなソーシャル エンジニアリング手法に対応した堅牢なペイロード カタログを提供し、攻撃シミュレーション トレーニングと組み合わせ可能です。 ただし、組織に対してより良く機能するカスタム ペイロードを作成する必要がある場合があります。 この記事では、Microsoft Defender で 365 用の攻撃シミュレーション トレーニングでペイロードOffice説明します。
+Microsoft は、さまざまなソーシャル エンジニアリング技術に対応した堅牢なペイロード カタログを提供し、攻撃シミュレーション トレーニングと組み合わせ可能です。 ただし、組織に合ったカスタム ペイロードを作成する必要がある場合があります。 この記事では、Microsoft Defender for Office 365 の攻撃シミュレーション トレーニングでペイロードを作成する方法について説明します。
 
-ペイロードを作成するには、専用の [Payloads] タブまたはシミュレーション作成ウィザードで [Create **a** [ **payload]**](https://security.microsoft.com/attacksimulator?viewid=payload) (ペイロードの作成) [をクリックします](attack-simulation-training.md#selecting-a-payload)。
+ペイロードを作成するには、[専用のペイロード]タブまたはシミュレーション作成ウィザードで [ペイロードの作成][をクリックします](attack-simulation-training.md#selecting-a-payload)。 [  ](https://security.microsoft.com/attacksimulator?viewid=payload)
 
 ウィザードの最初の手順では、ペイロードの種類を選択します。 **現時点では、電子メールのみを利用できます**。
 
@@ -32,12 +33,12 @@ Microsoft は、さまざまなソーシャル エンジニアリング手法に
 
 ## <a name="configure-payload"></a>ペイロードを構成する
 
-次に、ペイロードをビルドします。 [送信者の詳細] セクションに、送信者の名前、メール アドレス、メールの **件名を入力** します。 指定された一覧からフィッシング URL を選ぶ。 この URL は、後でメッセージの本文に埋め込まれる予定です。
+次に、ペイロードをビルドします。 [送信者の詳細] セクションに、送信者の名前、メール アドレス、メールの件名 **を入力** します。 指定された一覧からフィッシング URL を選ぶ。 この URL は、後でメッセージの本文に埋め込まれる予定です。
 
 > [!TIP]
 > ペイロードの送信者の内部電子メールを選択すると、ペイロードは会社の別の従業員から送信されたメールとして表示されます。 これによりペイロードの影響を受けやすくなり、内部の脅威のリスクについて従業員を教育するのに役立ちます。
 
-ペイロードを作成するには、リッチ テキスト エディターを使用できます。 事前に作成したメールをインポートできます。 メールの本文を作成する場合は、動的タグを利用して、ターゲットに合った電子メールをカスタマイズします。 [ **フィッシング] リンクを** クリックして、以前に選択したフィッシング URL をメッセージの本文に追加します。
+ペイロードを作成するには、リッチ テキスト エディターを使用できます。 事前に作成したメールをインポートできます。 メールの本文を作成する場合は、動的タグを利用して、ターゲットに合ったメールをカスタマイズします。 [ **フィッシング] リンクを** クリックして、以前に選択したフィッシング URL をメッセージの本文に追加します。
 
 ![Microsoft Defender for Office 365 のペイロード作成で強調表示されたフィッシング リンクと動的タグ](../../media/attack-sim-preview-payload-email-body.png)
 
@@ -58,10 +59,10 @@ Microsoft は、さまざまなソーシャル エンジニアリング手法に
 
 ## <a name="review-payload"></a>ペイロードを確認する
 
-ペイロードの作成は完了です。 次に、詳細を確認し、ペイロードのプレビューを表示します。 プレビューには、作成したインジケーターすべてが含まれます。 この手順では、ペイロードの各部分を編集できます。 問題がなければ、ペイロード **を送信** できます。
+ペイロードの作成は完了です。 次に、詳細を確認し、ペイロードのプレビューを表示します。 プレビューには、作成したインジケーターすべてが含まれます。 この手順では、ペイロードの各部分を編集できます。 問題がなければ、ペイロード **を** 送信できます。
 
 > [!IMPORTANT]
-> 作成したペイロードには、 **テナントがソース** として含まれます。 ペイロードを選択する場合は、テナントをフィルターで削除しなけれと **します**。
+> 作成したペイロードには、テナント **が** ソースとして含まれます。 ペイロードを選択する場合は、テナントをフィルターで削除しなけれと **します**。
 
 ## <a name="related-links"></a>関連リンク
 

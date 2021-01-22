@@ -1,5 +1,5 @@
 ---
-title: 管理モバイル アプリを取得する
+title: Admin モバイル アプリを入手する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 電話に Microsoft 365 Admin モバイル アプリをインストールする方法について説明します。
-ms.openlocfilehash: cb69dbe02e91ab4eb29b14ac5e71e91bed6cdb88
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 110e691858537a90a7bee03b4318a5f415b3e83f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702771"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927540"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>電話に Microsoft 365 Admin モバイル アプリをインストールする
 
@@ -48,7 +49,7 @@ Microsoft 365 Admin モバイル アプリを使用して、ユーザーの管�
 4. 確認を求めるメッセージが表示された場合は、[  **はい** ] を選択し  **、[OK] を選択します**。
 5. [パスワード  **の共有**  ] ウィンドウでは、必要に応じて、新しいパスワードを電子メールまたはテキスト メッセージでユーザーに送信できます。
 
-### <a name="add-a-user-to-a-group"></a>ユーザーをグループに追加する
+### <a name="add-a-user-to-a-group"></a>グループにユーザーを追加する
 
 1. [クイック  **リンク] で、[** グループ] を  **選択します**。
 2. [グループ **] ページ** で、ユーザーを追加するグループを選択し、[メンバーの編集] を選択し、[メンバーの追加]**を選択します**。

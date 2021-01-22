@@ -3,7 +3,7 @@ title: Microsoft 365 セキュリティ センターで Microsoft 365 Defender �
 description: Microsoft 365 Defender を有効にして、セキュリティ インシデントと対応の統合を開始する方法について説明します。
 keywords: 開始, MTP を有効にする, Microsoft Threat Protection, M365, セキュリティ, データの場所, 必要なアクセス許可, ライセンスの利用資格, 設定ページ
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b052f70c1b618adef12c4f70c2b3fe55741697d5
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: m365d
+ms.openlocfilehash: 19f035a271626077911b05082a4aba6d67355cdb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760508"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930224"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 
@@ -34,9 +35,9 @@ ms.locfileid: "49760508"
 **適用対象:**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-threat-protection.md) は、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity を統合することで、インシデント対応プロセスを統合します。 この統合されたエクスペリエンスにより、Microsoft 365 セキュリティ センターでアクセスできる強力な機能が追加されました。
+[Microsoft 365 Defender](microsoft-threat-protection.md) は、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Id 用 Microsoft Defender を統合することで、インシデント対応プロセスを統合します。 この統合されたエクスペリエンスにより、Microsoft 365 セキュリティ センターでアクセスできる強力な機能が追加されました。
 
-必要なアクセス許可を持つ対象ユーザーが Microsoft 365 セキュリティ センターにアクセスすると、Microsoft 365 Defender が自動的にオンになります。 この記事では、さまざまな前提条件と Microsoft 365 Defender のプロビジョニング方法について説明します。
+必要なアクセス許可を持つ対象ユーザーが Microsoft 365 セキュリティ センターにアクセスすると、Microsoft 365 Defender が自動的にオンになります。 この記事では、さまざまな前提条件と、Microsoft 365 Defender のプロビジョニング方法について説明します。
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>ライセンスの利用資格と必要なアクセス許可を確認する
 
@@ -70,12 +71,12 @@ Microsoft 365 Defender を有効にする場合は **、Microsoft 365 Defender**
 
 ### <a name="data-center-location"></a>データ センターの場所
 
-Microsoft 365 Defender は、Microsoft Defender for Endpoint と同じ場所に [データを保存して処理します](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。 Microsoft Defender for Endpoint をお持ちない場合は、アクティブな Microsoft 365 セキュリティ サービスの場所に基づいて、新しいデータ センターの場所が自動的に選択されます。 選択したデータ センターの場所が画面に表示されます。
+Microsoft 365 Defender は、エンドポイント用 Microsoft Defender と同じ場所に [データを保存して処理します](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。 Microsoft Defender for Endpoint をお持ちない場合は、アクティブな Microsoft 365 セキュリティ サービスの場所に基づいて、新しいデータ センターの場所が自動的に選択されます。 選択したデータ センターの場所が画面に表示されます。
 
 Microsoft  365 セキュリティ センターで[ヘルプが必要ですか?] を選び、Microsoft サポートに連絡して、別のデータ センターの場所で Microsoft 365 Defender をプロビジョニングします。
 
 > [!NOTE]
-> Microsoft Defender for Endpoint は、Azure Defender を通じて有効になっている場合、欧州連合 (EU) データ センターで自動的にプロビジョニングします。 Microsoft 365 Defender は、この方法でエンドポイント用 Defender をプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングします。
+> Microsoft Defender for Endpoint は、Azure Defender を通じて有効になっている場合、欧州連合 (EU) データ センターで自動的にプロビジョニングします。 Microsoft 365 Defender は、この方法でエンドポイント用に Defender をプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングします。
 
 ### <a name="confirm-that-the-service-is-on"></a>サービスが有効になっていることを確認する
 
@@ -96,7 +97,7 @@ Id データ用の Microsoft Defender を Microsoft 365 Defender と共有する
 
 Microsoft 365 Defender をオンに関してよく寄せられる質問に対する回答については [、FAQ をお読みください](mtp-enable-faq.md)。
 
-Microsoft サポート スタッフは、テナントのサービスと関連リソースのプロビジョニングまたはプロビジョニング解除を支援できます。 サポートが必要な場合 **は、Microsoft** 365 セキュリティ センターで [サポートが必要ですか? ] を選択します。 サポートに問い合わせがある場合は、Microsoft 365 Defender に言及してください。
+Microsoft サポート スタッフは、テナントのサービスと関連リソースのプロビジョニングまたはプロビジョニング解除を支援できます。 サポートが必要な場合 **は、Microsoft** 365 セキュリティ センターで [サポートが必要ですか? ] を選択します。 サポートに問い合わせる場合は、Microsoft 365 Defender に言及してください。
 
 ## <a name="related-topics"></a>関連項目
 

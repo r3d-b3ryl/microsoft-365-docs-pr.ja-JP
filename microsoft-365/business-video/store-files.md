@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ビジネス向け Microsoft 365 でファイルを保存できる場所について説明します。
-ms.openlocfilehash: d0a1b90b35b2d186c8278ead274cbf5f24e98ecd
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 4f9ce18ca86a59e615426b994ef440279a78990a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703117"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927804"
 ---
-# <a name="where-to-store-files"></a>ファイルの保存場所
+# <a name="where-to-store-files"></a>ファイルを保存する場所
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX?autoplay=false]
 
@@ -39,7 +40,7 @@ Microsoft 365 では、OneDrive for Business または SharePoint サイトに�
 ### <a name="store-or-share-files-with-onedrive"></a>OneDrive でファイルを保存または共有する
 
 1. コンピューター上で、エクスプローラーを使用して OneDrive を開きます。 または、Office [365 から](https://www.office.com/)、  **アプリ起動ツールから OneDrive**  を開きます。
-2. 個人用ファイルを表示してアップロードするか、[共有] をクリックして他のユーザーを招待してドキュメントを表示するか、リンクを送信して、ドキュメントまたはフォルダーを共有します。 [詳細については、こちらを参照してください](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#os_type=onedrive_-_business)。
+2. 個人用ファイルを表示してアップロードするか、[共有] をクリックして他のユーザーを招待してドキュメントを表示するか、リンクを送信して、ドキュメントまたはフォルダーを共有します。 [詳細情報を参照してください](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#os_type=onedrive_-_business)。
 
 ### <a name="collaborate-with-a-sharepoint-site"></a>SharePoint サイトとの共同作業
 

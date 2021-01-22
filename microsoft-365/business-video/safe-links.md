@@ -16,24 +16,25 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 安全なリンクを管理して悪意のあるサイトからビジネスを保護する方法について学習します。
-ms.openlocfilehash: eabb2c1f71b1183867ffcb005ba4f7e44ed6e4b7
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 1f5b3f61871e8d231029156631031dbb0ef4f2f5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702661"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928020"
 ---
 # <a name="manage-safe-links"></a>安全なリンクを管理する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
-Office アプリでリンクをクリックすると、Microsoft Defender for Office 365 (以前の Microsoft 365 ATP または Advanced Threat Protection) は、悪意のあるサイトからビジネスを保護するのに役立ちます。
+microsoft Defender for Office 365 (以前の Microsoft 365 ATP または Advanced Threat Protection) は、ユーザーが Office アプリのリンクをクリックすると、悪意のあるサイトからビジネスを保護するのに役立ちます。
 
 ## <a name="try-it"></a>演習
 

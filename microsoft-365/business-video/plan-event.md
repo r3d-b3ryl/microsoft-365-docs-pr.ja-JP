@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft Planner でイベントを計画する方法について説明します。
-ms.openlocfilehash: f5ee4e63579c2c5f6493e16d27b7102d3b99b6d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: d978232dffaede882e81a491b4d927183781aa0f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702680"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928099"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Microsoft Planner を使用してイベントを計画する
 
@@ -62,7 +63,7 @@ Microsoft Planner を使用して、製品の立ち上げの追跡など、イ�
 
 グラフ  **と**  ボード ビュー  **を使用**  して、各チーム メンバーとプロジェクト全体の進捗状況を監視したり、タスクの並べ替えと整理を行います。
 
-- [**グラフ]** を選択し、[グループ **化**]、最後に [期限] を選択して、次に期限のタスクを確認します。 
+- [**グラフ]** を選択し **、[グループ化**]、最後に [期限] の順に選択して、次に期限のタスクを確認します。 
 - [**ボード] を** 選択し、[**グループ化]、** 最後に [進行状況] を選択して、タスクを進行状況で並べ替える。
 
 **注:** タスクは[開始しない **]、[** 進行中]、および[完了] で構成されています。そのため、製品を起動する準備が整った時間が分かっています。 

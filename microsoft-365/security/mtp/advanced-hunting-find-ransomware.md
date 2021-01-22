@@ -1,10 +1,10 @@
 ---
-title: 高度な検索でランサムウェアを検索する
-description: 高度な検索を使用して、ランサムウェアによって影響を受ける可能性があるデバイスを探します。
-keywords: 高度な検索、ランサムウェア、脅威の探し、サイバーの脅威を探す、検索、クエリ、テレメトリ、Microsoft 365、Microsoft Threat Protection、Microsoft 365 Defender
+title: 高度な検索機能を使用してランサムウェアを検索する
+description: 高度な検索を使用して、ランサムウェアの影響を受ける可能性のあるデバイスを見つける。
+keywords: 高度な捜索、ランサムウェア、脅威の捜索、サイバー脅威の捜索、検索、クエリ、テレメトリ、Microsoft 365、Microsoft Threat Protection、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,44 +19,45 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: aaee2af4b3df849b57b8e1c18ab330603042fe96
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.technology: m365d
+ms.openlocfilehash: f44a649035ef7f5993015142fb65fa29aaf5099f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422906"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929513"
 ---
-# <a name="hunt-for-ransomware"></a>ランサムウェアを探します。
+# <a name="hunt-for-ransomware"></a>ランサムウェアを探す
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-ランサムウェアは、個々のコンピュータユーザーに影響を与えるシンプルな汎用マルウェアから、業界や政府機関の組織に大きな影響を与えるエンタープライズ脅威に急速に発展しています。 [Microsoft 365 Defender](microsoft-threat-protection.md)には、ランサムウェアと関連する侵入活動を検出してブロックする多くの機能が用意されていますが、侵害の兆候を事前にチェックしておくと、ネットワークの保護に役立ちます。
+ランサムウェアは、個々のコンピューター ユーザーに影響を与える単純な商品マルウェアから、業界や政府機関に重大な影響を与えるエンタープライズの脅威にまで急速に進化しています。 [Microsoft 365 Defender](microsoft-threat-protection.md)には、ランサムウェアや関連する侵入アクティビティを検出してブロックする多くの機能が備え付けられている一方で、侵害の兆候を予防的にチェックすると、ネットワークを保護することができます。
 
-> [人間が操作するランサムウェアについて確認する](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+> [人が操作するランサムウェアに関する読み取り](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-Microsoft 365 Defender での [高度な](advanced-hunting-overview.md) 検索では、ランサムウェアアクティビティに関連付けられた個々の成果物を検索するクエリを作成できます。 また、アクティビティの兆候を検索し、それらの署名を比較して、すぐに注意が必要なデバイスを見つけることができる高度なクエリを実行することもできます。
+Microsoft [](advanced-hunting-overview.md) 365 Defender の高度な検索を使用すると、ランサムウェア アクティビティに関連付けられている個々のアーティファクトを検索するクエリを作成できます。 また、より高度なクエリを実行して、アクティビティの兆候を探し、それらの兆候を量って、すぐに注意を払う必要があるデバイスを見つけられます。
 
-## <a name="signs-of-ransomware-activity"></a>ランサムウェアのアクティビティの兆候
-Microsoft のセキュリティ研究者は、高度な侵入者によって開始された多くのランサムウェア活動において、さまざまな共通の一般的な成果物を観察 これらの記号は、主にシステムツールを使用して、暗号化の準備、検出の防止、法的証拠のクリアを行います。
+## <a name="signs-of-ransomware-activity"></a>ランサムウェア アクティビティの兆候
+Microsoft のセキュリティリサーチ ャーは、高度な侵入者によって起動された多くのランサムウェア キャンペーンで、さまざまな一般的で微妙なアーティファクトを観察しています。 これらの兆候には、主に、暗号化の準備、検出の防止、および明らかな法証拠のためのシステム ツールの使用が含まれています。
 
-| ランサムウェアアクティビティ | 共通ツール | Intent |
+| ランサムウェア アクティビティ | 一般的なツール | Intent |
 |--|--|--|
-| プロセスを停止する | _taskkill.exe_、 _net stop_ | 暗号化の対象となるファイルが、さまざまなアプリケーションによってロックされないようにします。 |
-| サービスをオフにする | _sc.exe_ | -暗号化の対象となるファイルが、さまざまなアプリケーションによってロックされないようにします。<br>-セキュリティソフトウェアが暗号化やその他のランサムウェアの動作を中断させないようにします。<br>-バックアップソフトウェアによる回復可能なコピーの作成を停止します。  |
-| ログとファイルの削除 | _cipher.exe_、 _wevtutil_、 _fsutil.exe_ | 法的証拠を削除します。 |
-| シャドウコピーの削除  | _vsadmin.exe_、 _wmic.exe_ | 暗号化されたファイルの回復に使用できるドライブシャドウコピーを削除します。 |
-| バックアップの削除と停止 | _wbadmin.exe_ | 既存のバックアップを削除して、スケジュールされたバックアップタスクを停止し、暗号化後の回復を防ぎます。 |
-| ブート設定を変更する | _bcdedit.exe_ | 暗号化プロセスによって発生する可能性のある起動エラー後に、警告と自動修復を無効にします。 |
-| 回復ツールをオフにする | _schtasks.exe_、 _regedit.exe_、 | [システムの復元] およびその他のシステム回復オプションをオフにします。 |
+| プロセスを停止する | _taskkill.exe_, _net stop_ | 暗号化対象のファイルがさまざまなアプリケーションによってロックされていないか確認します。 |
+| サービスをオフにする | _sc.exe_ | - 暗号化対象のファイルがさまざまなアプリケーションによってロックされていないか確認します。<br>- セキュリティ ソフトウェアが暗号化や他のランサムウェアアクティビティを妨害されないようにします。<br>- バックアップ ソフトウェアが回復可能なコピーを作成するのを停止します。  |
+| ログとファイルを削除する | _cipher.exe_, _wevtutil_, _fsutil.exe_ | 証拠の証拠を削除します。 |
+| シャドウ コピーを削除する  | _vsadmin.exe_、 _wmic.exe_ | 暗号化されたファイルの回復に使用できるドライブ シャドウ コピーを削除します。 |
+| バックアップの削除と停止 | _wbadmin.exe_ | 既存のバックアップを削除し、スケジュールされたバックアップ タスクを停止して、暗号化後の回復を防止します。 |
+| ブート設定の変更 | _bcdedit.exe_ | 暗号化プロセスによって発生する可能性がある起動エラー後の警告と自動修復をオフにします。 |
+| 回復ツールをオフにする | _schtasks.exe_, _regedit.exe_, | システムの復元と他のシステム回復オプションをオフにします。 |
 
-## <a name="check-for-individual-signs-of-ransomware-activity"></a>ランサムウェアアクティビティの個々の兆候を確認する
-前のセクションで説明したアクティビティを含む、ランサムウェアの動作を構成する多くのアクティビティは、害がありません。 次のクエリを使用してランサムウェアを探すときには、複数のクエリを実行して、同じデバイスがランサムウェアの可能性があるアクティビティの兆候を示しているかどうかを確認します。
+## <a name="check-for-individual-signs-of-ransomware-activity"></a>ランサムウェア アクティビティの個々の兆候を確認する
+ランサムウェアの動作を構成する多くのアクティビティ (前のセクションで説明したアクティビティを含む) は、良性を持つ可能性があります。 次のクエリを使用してランサムウェアを見つける場合は、複数のクエリを実行して、同じデバイスがランサムウェア アクティビティの可能性についてさまざまな兆候を示しているかどうかを確認します。
 
-### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>_taskkill.exe_ を使用して複数のプロセスを停止する
-このクエリは、 _taskkill.exe_ ユーティリティを使用して、少なくとも10個の個別のプロセスを停止する試みをチェックします。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
+### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>複数のプロセスを使用して停止 _taskkill.exe_
+このクエリは、アプリケーション ユーティリティを使用して少なくとも 10 の個別のプロセスを停止 _taskkill.exeします。_ [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -67,8 +68,8 @@ DeviceProcessEvents
 | where taskKillCount > 10
 ```
   
-### <a name="stopping-processes-using-_net-stop_"></a>_Net stop_ を使用したプロセスの停止
-このクエリは、 _net stop_ コマンドを使用して、少なくとも10個の独立したプロセスを停止する試みをチェックします。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
+### <a name="stopping-processes-using-_net-stop_"></a>net stop を使用したプロセス _の停止_
+このクエリは、net stop コマンドを使用して少なくとも 10 の個別のプロセスを停止する _試行をチェック_ します。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using net stop
@@ -78,8 +79,8 @@ DeviceProcessEvents
 | summarize netStopCount = dcount(ProcessCommandLine), NetStopList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 2m)
 | where netStopCount > 10
 ```
-### <a name="deletion-of-data-on-multiple-drives-using-_cipherexe_"></a>_cipher.exe_ を使用した複数ドライブ上のデータの削除
-このクエリは _cipher.exe_ を使用して、複数のドライブのデータを削除しようとしているかどうかをチェックします。 通常、このアクティビティは、暗号化後のデータの回復を防止するためにランサムウェアによって実行されます。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
+### <a name="deletion-of-data-on-multiple-drives-using-_cipherexe_"></a>複数のドライブのデータを削除するには、 _次のcipher.exe_
+このクエリは、複数のドライブのデータを削除する試みを確認 _cipher.exe。_ 通常、このアクティビティは、暗号化後のデータの回復を防ぐためにランサムウェアによって行われます。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for cipher.exe deleting data from multiple drives
@@ -94,8 +95,8 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 | where CipherCount > 1
 ```
 
-### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>_Wevtutil_ を使用してイベントログから法廷での証拠を消去する
-このクエリは、 _wevtutil_ を使用して、イベントログから少なくとも10個のログエントリをクリアする試みをチェックします。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
+### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>wevtutil を使用したイベント ログからの _証拠のクリア_
+このクエリは _、wevtutil_ を使用してイベント ログから少なくとも 10 のログ エントリをクリアする試行をチェックします。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for use of wevtutil to clear multiple logs
@@ -106,8 +107,8 @@ DeviceProcessEvents
 | where LogClearCount > 10
 ```
 
-### <a name="turning-off-services-using-_scexe_"></a>_sc.exe_ を使用したサービスの無効化
-このクエリは _sc.exe_ を使用して、少なくとも10個の既存のサービスをオフにする試みをチェックします。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
+### <a name="turning-off-services-using-_scexe_"></a>サービスを使用してサービスを _sc.exe_
+このクエリは、このクエリを使用して少なくとも 10 の既存のサービスをオフに _sc.exe。_ [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for sc.exe disabling services
@@ -118,8 +119,8 @@ DeviceProcessEvents
 | where ScDisableCount > 10
 ```
 
-### <a name="turning-off-system-restore"></a>システムの復元の無効化
-このクエリは、システムの復元を停止する試みを識別し、ランサムウェアで暗号化されたデータを回復するために使用できる復元ポイントを作成することを禁止します。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
+### <a name="turning-off-system-restore"></a>システム復元をオフにする
+このクエリは、システム復元を停止する試みを識別し、システムが復元ポイントを作成し、ランサムウェアによって暗号化されたデータを回復するために使用できる復元ポイントを作成されないようにします。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -135,7 +136,7 @@ and ProcessCommandLine has 'disable'
 ```
 
 ### <a name="backup-deletion"></a>バックアップの削除
-このクエリは、暗号化の前にシャドウコピースナップショットを削除するために _wmic.exe_ を使用することを識別します。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
+このクエリは、暗号化の _前に_ wmic.exeコピー スナップショットを削除するデータの使用を識別します。 [クエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -145,13 +146,13 @@ DeviceProcessEvents
 ProcessCommandLine, InitiatingProcessIntegrityLevel, InitiatingProcessParentFileName
 ```
 
-## <a name="check-for-multiple-signs-of-ransomware-activity"></a>ランサムウェアのアクティビティの複数の兆候をチェックする
-複数のクエリを別々に実行するのではなく、包括的なクエリを使用して、ランサムウェアのアクティビティの複数の兆候をチェックして、影響を受けるデバイスを特定することもできます。 次の統合クエリがあります。
-- ランサムウェアのアクティビティの比較的コンクリートおよび微妙な兆候を探します。
-- これらの記号の存在を認識します。
-- ランサムウェアの対象となる可能性の高いデバイスを識別します。 
+## <a name="check-for-multiple-signs-of-ransomware-activity"></a>ランサムウェア アクティビティの複数の兆候を確認する
+複数のクエリを個別に実行する代わりに、ランサムウェア アクティビティの複数の兆候をチェックする包括的なクエリを使用して、影響を受けるデバイスを特定することもできます。 次の統合クエリ:
+- ランサムウェア アクティビティの比較的具体的な兆候と微妙な兆候の両方を探します
+- これらの記号の有無の重み付け
+- ランサムウェアのターゲットになる可能性が高いデバイスを識別します。 
 
-この統合クエリを実行すると、複数のアタックの兆候が発生しているデバイスの一覧が返されます。 ランサムウェアアクティビティの種類の数も表示されます。 この統合クエリを実行するには、 [高度な検索クエリエディター](https://security.microsoft.com/advanced-hunting)に直接コピーします。 
+この統合クエリを実行すると、複数の攻撃の兆候が発生したデバイスの一覧が返されます。 ランサムウェア アクティビティの各種類の数も表示されます。 この統合クエリを実行するには、高度な検索クエリ エディターに [直接コピーします](https://security.microsoft.com/advanced-hunting)。 
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -225,26 +226,26 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 | extend UniqueEvidenceCount = BcdEdit + NetStop10PlusCommands + Wevtutil10PlusLogsCleared + CipherMultipleDrives + Wbadmin + Fsutil + TaskKill10PlusCommand + VssAdminShadow + ScDisable + ShadowCopyDelete
 | where UniqueEvidenceCount > 2
 ```
-### <a name="understand-and-tweak-the-query-results"></a>クエリ結果を理解し、微調整する
+### <a name="understand-and-tweak-the-query-results"></a>クエリ結果を理解して調整する
 統合クエリは、次の結果を返します。
 
-- **DeviceId**—影響を受けるデバイスを識別します。 
-- **タイムスタンプ**: デバイスでランサムウェア処理のいずれかの兆候が発生したことを初めて確認したとき
-- **特定のアクティビティの兆候**— _BcdEdit_ または _FsUtil_ などの複数の列に表示される各記号の数
-- **TotalEvidenceCount**-観測サインの数
-- **UniqueEvidenceCount**—観測標識の種類の数
+- **DeviceId**— 影響を受けるデバイスを識別します 
+- **TimeStamp**- デバイスでランサムウェア アクティビティの兆候が初めて確認された場合
+- **アクティビティの特定の兆候**— _BcdEdit_ や _FsUtil_ など、複数の列に表示される各記号の数
+- **TotalEvidenceCount**— 観察された記号の数
+- **UniqueEvidenceCount**— 観察された記号の種類の数
 
-![ランサムウェアアクティビティのクエリ結果の画像](../../media/advanced-hunting-ransomware-query.png)
+![ランサムウェア アクティビティのクエリ結果の画像](../../media/advanced-hunting-ransomware-query.png)
 
-*影響を受けるデバイスと、ランサムウェアアクティビティのさまざまな兆候の数を示すクエリ結果*
+*影響を受けるデバイスとランサムウェア アクティビティのさまざまな兆候の数を示すクエリ結果*
 
-既定では、クエリ結果には、3つ以上の種類のランサムウェアアクティビティがあるデバイスのみが表示されます。 ランサムウェアのアクティビティのいずれかの符号を持つすべてのデバイスを表示するには、次の演算子を変更 `where` し、数値をゼロ (0) に設定します。 より少ない数のデバイスを表示するには、大きい番号を設定します。 
+既定では、クエリ結果には、2 つ以上の種類のランサムウェア アクティビティを持つデバイスだけが一覧表示されます。 ランサムウェア アクティビティの兆候を持つすべてのデバイスを表示するには、次の演算子を変更し、番号を `where` ゼロ (0) に設定します。 表示するデバイスを少なくするには、大きい数を設定します。 
 
 ```kusto
 | where UniqueEvidenceCount > 2
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

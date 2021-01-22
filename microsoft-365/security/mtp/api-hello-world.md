@@ -3,7 +3,7 @@ title: Microsoft 365 Defender REST API の Hello World
 description: アプリを作成し、トークンを使用して Microsoft 365 Defender API にアクセスする方法について説明します。
 keywords: アプリ, トークン, アクセス, aad, アプリ, アプリケーションの登録, powershell, スクリプト, グローバル管理者, アクセス許可, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b36a6acca5880a455a66b03b5355cdf1fb85b29b
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 66afa27d0fa7a092d3f9e9ed6c3b6abc6020cb8d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719312"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928380"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API の Hello World
 
@@ -45,13 +46,13 @@ ms.locfileid: "49719312"
 
 1. グローバル管理者ロール [を持](https://portal.azure.com) つユーザーとして Azure **にサインイン** します。
 
-2. Azure **Active Directory アプリの**  >  **登録の新規登録**  >  **に移動します**。
+2. Azure **Active Directory アプリの**  >  **登録新規登録**  >  **に移動します**。
 
    ![Microsoft Azure の画像とアプリケーション登録へのナビゲーション](../../media/atp-azure-new-app2.png)
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を選択 **します**。 リダイレクト URI の選択はオプションです。 この例を完了するために必要な手順は不要です。
 
-4. アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択し、組織で > を使用し  >    >  **、「Microsoft Threat Protection」と** 入力して **、Microsoft Threat Protection を選択します**。 これで、アプリは Microsoft 365 Defender にアクセスできます。
+4. アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択し、組織で > を使用して  >    >  **、「Microsoft Threat Protection」** と入力し **、[Microsoft Threat Protection] を選択します**。 これで、アプリは Microsoft 365 Defender にアクセスできます。
 
    > [!TIP]
    > *Microsoft Threat Protection* は Microsoft 365 Defender の元の名前であり、元のリストには表示されません。 テキスト ボックスが表示されるのを確認するには、テキスト ボックスに名前の書き込みを開始する必要があります。
@@ -83,7 +84,7 @@ Azure Active Directory トークンについて詳しくは、Azure Active Direc
 > [!IMPORTANT]
 > このデモ アプリの例では、テストの目的で秘密の値を貼り付ける必要があります。ただし、実稼働環境で実行されているアプリケーションにシークレットをハードコードし込む必要があります。 サード パーティは、シークレットを使用してリソースにアクセスできます。 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates)を使用して、アプリのシークレットをセキュリティで保護することができます。 アプリを保護する方法の実用的な例については、「Azure Key Vault を使用してサーバー アプリのシークレットを管理する」 [を参照してください](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)。
 
-1. 以下のスクリプトをコピーし、お気に入りのテキスト エディターに貼り付けます。 名前を付 **けてGet-Token.ps1。** PowerShell ISE でコードを一緒に実行することもできますが、保存する必要があります。これは、次のセクションでインシデント フェッチ スクリプトを使用するときに再度実行する必要があるためです。
+1. 以下のスクリプトをコピーし、お気に入りのテキスト エディターに貼り付けます。 名前を付 **けてGet-Token.ps1。** PowerShell ISE でコードを実行することもできますが、保存する必要があります。これは、次のセクションでインシデント フェッチ スクリプトを使用するときに再度実行する必要があるためです。
 
     このスクリプトはトークンを生成し、そのトークンを作業フォルダーの名前の下に保存 *Latest-token.txt。*
 
@@ -162,7 +163,7 @@ $outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-完了です。 正常に完了しました。
+完了です。 正常に実行されました。
 
 - アプリケーションを作成して登録します。
 - そのアプリケーションに通知を読み取るアクセス許可が付与されます。

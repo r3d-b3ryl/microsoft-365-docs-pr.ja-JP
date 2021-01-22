@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ユーザーの名前またはメール アドレスを変更する方法について説明します。
-ms.openlocfilehash: 43e267c31a62d4f91be6a872c99186a1418f94ec
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: c54665a774803c0386801b226b3f76f019b20321
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703057"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927408"
 ---
 # <a name="change-a-users-name-or-email-address"></a>ユーザーの名前またはメール アドレスを変更する
 
@@ -44,7 +45,7 @@ ms.locfileid: "49703057"
 1. [連絡先情報 **の管理] を選択します**。
 1. 表示名を変更し、[変更の保存] **を選択します**。
 
-    新しい名前が Outlook および他の Microsoft 365 アプリに表示されます。
+    新しい名前が Outlook や他の Microsoft 365 アプリに表示されます。
 
 ### <a name="add-an-email-alias"></a>電子メール エイリアスを追加する
 

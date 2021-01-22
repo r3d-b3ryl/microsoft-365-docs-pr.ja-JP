@@ -16,24 +16,25 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: サブスクリプションに別のドメインを追加する方法について学習します。
-ms.openlocfilehash: 16f6c4e416ede560d69014e320eb32c4453fd3f5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: a5df440f3b7e28c2bdbc69f9383a8399ef193ed0
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702790"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927612"
 ---
 # <a name="add-another-domain"></a>別のドメインを追加する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
-会社で異なる目的のために複数のドメイン名が必要になる場合があります。 たとえば、顧客が既に会社名を使用し、連絡に失敗した場合に、別のスペルを追加できます。
+会社の目的に応じて複数のドメイン名が必要になる場合があります。 たとえば、顧客が既に会社名を使用し、連絡に失敗した場合に、別のスペルを追加できます。
 
 ## <a name="try-it"></a>演習
 
@@ -49,7 +50,7 @@ ms.locfileid: "49702790"
 
 新しいドメインでメールを受信するには、ユーザーごとに新しいメール エイリアスを追加する必要があります。
 
-1. [ **ユーザー]**、[ **アクティブなユーザー**] の順に選択し、新しいエイリアスを割り当てるユーザーを選択します。
+1. [ **ユーザー]**、[ **アクティブなユーザー**] の順に選択し、新しいエイリアスが割り当てられるユーザーを選択します。
 1. Choose **Manage email aliases,** and then **Add an alias**.
 1. ユーザー名を入力し、ドロップダウン リストから新しいドメインを選択します。
 1. [変更 **の保存] を** 選択し、ウィンドウを閉じます。

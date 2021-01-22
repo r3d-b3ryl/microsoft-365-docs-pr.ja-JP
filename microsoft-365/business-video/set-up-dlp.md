@@ -16,20 +16,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: データ損失防止ポリシーの設定を管理する方法について説明します。
-ms.openlocfilehash: 93c06af0203a5eb590d22d86e597d7485d7af238
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: e963cf85fee887b6e91c6e54b00aaa9e5174e3b6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702912"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927960"
 ---
-# <a name="prevent-data-loss-with-dlp"></a>DLP を使用してデータ損失を防止する
+# <a name="prevent-data-loss-with-dlp"></a>DLP によるデータ損失の防止
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
 
@@ -39,7 +40,7 @@ ms.locfileid: "49702912"
 
 1. To get started, go to the [admin center,](https://admin.microsoft.com)and select **Setup**.
 1. 下にスクロールして **データ損失防止の** 設定を行い、[表示] を選択し、[管理] を **選択します**。
-1. ポリシーを編集するには、ポリシーを選択し、[ポリシーの編集] **を** 選択して、変更する内容を選択します。 たとえば、[場所] **を選択して** スキャンする項目を変更します。
+1. ポリシーを編集するには、ポリシーを選択し、[ポリシーの編集] **を選択** して、変更する内容を選択します。 たとえば、[場所] **を選択して** スキャンする項目を変更します。
 1. Microsoft Teams のコンテンツのスキャンを有効にするには、トグル スイッチを **オン** の位置に切り替え、[保存] を選択 **します**。
 1. ポリシー設定を編集するには、[編集] を **選択します**。
 1. 検出された機密性の高いコンテンツの量と量が多いコンテンツに適用される個別のルールを設定する必要があります。 ボリュームの少ないルールを展開します。 Choose **Edit rule**.

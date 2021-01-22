@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Google Workspace からビジネス向け Microsoft 365 にメール、連絡先、予定表を移行する方法について説明します。
-ms.openlocfilehash: ab70a43fb7c26c23ebc9024b1cd2803c164a0aa4
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: cb751b1d2f18b226021bb6f218b62f3ae426f6a4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794645"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928248"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google Workspace からビジネス メールとカレンダーを移行する
 
@@ -70,7 +71,7 @@ Google Workspace から Exchange Online への管理者が実行した移行を�
 1. Google Workspace 管理コンソールに戻ります。 
 1. [ **セキュリティ] を選択** し、下にスクロールして API コントロール **を開きます**。 
 1. 下にスクロールして、[ **ドメイン全体の委任の管理] を選択します**。
-1. [新規 **追加] を** 選択し、前にメモしたクライアント ID を入力します。
+1. [新規 **追加]** を選択し、前にメモしたクライアント ID を入力します。
 1. 次に、Google API の OAuth スコープを入力します。 これらは手順 5 の [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) で利用できます。
 
     `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`
@@ -90,7 +91,7 @@ Google Workspace から Exchange Online への管理者が実行した移行を�
             [Microsoft 365 管理センター](https://admin.microsoft.com)に戻ります。
 1. Microsoft **365** 管理センターの左側のナビゲーションで、[すべて表示] 、[**設定**] 、[ドメイン] の順に選択し、[ドメインの追加]**を選択します**。  
 1. 以前に作成したサブドメインを入力し、[このドメインを使用 **する] を選択します**。 
-1. ドメインに接続するには、[続行] を **選択します**。 
+1. ドメインを接続するには、[続行] を **選択します**。 
 1. 下にスクロールして、MX レコード、CNAME レコード、および TXT レコードをメモします。 
 1. Google 管理コンソール **に戻る**。
 1. Select **Domains,** select **Manage domains,** **Verify Details** and then, Manage **domain**. 
@@ -117,10 +118,10 @@ Google Workspace から Exchange Online への管理者が実行した移行を�
 
 ### <a name="start-the-migration-process"></a>移行プロセスを開始する
 
-完了したら、移行の準備が整います。 
+完了したら、移行の準備が整いました。 
 
 1. **Microsoft 365** 管理センターの左側のナビゲーションで、[管理センター ] まで下にスクロールし **、[Exchange]** を選択します。 
-1. [**受信者] で、[** 移行] **を** 選択し、[新規]、[Exchange Online に移行 **]、G** **Suite** の移行、[次へ] の順に **選択します**。 
+1. [**受信者] で、[****移行**]を選択し、[新規]、[Exchange Online に移行 **]、G** **Suite** の移行、[次へ] の順に **選択します**。 
 1. 移行するメールボックスの一覧を含む CSV ファイルを作成します。 ファイルが次の形式に従う必要があります。 
 
     ```CSV
@@ -141,7 +142,7 @@ Google Workspace から Exchange Online への管理者が実行した移行を�
     これで、移行の状態を表示できます。 
 
 1. 移行するユーザーの数に応じて、しばらく時間が経過した後、[最新の情報に更新] を選択 **します**。 
-1. 状態が [同期済み] に **変** わったら、[この移行バッチを完了する] を選択し **、[** はい] を **選択します**。 
+1. 状態が [同期済み] に変わったら、[この移行バッチを完了する] を選択し **、[** はい] を **選択します**。 
 1. プロセスが完了すると、状態が [完了] に **変わります**。 
 1. 必要に合う場合は、[詳細の表示 **] を** 選択して、移行の詳細を確認できます。 
 1. **[閉じる]** を選択します。 

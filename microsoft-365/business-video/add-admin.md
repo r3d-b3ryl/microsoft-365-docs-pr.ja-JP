@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 別の管理者を追加する方法について学習します。
-ms.openlocfilehash: 07a95b6328f82f59daef5bc443213834221089ae
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: edeaf39c83271d1ba5be1af175a48fba94e7e2af
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702791"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927648"
 ---
 # <a name="add-an-admin"></a>管理者を追加する
 

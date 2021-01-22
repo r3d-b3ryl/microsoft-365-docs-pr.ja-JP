@@ -1,11 +1,11 @@
 ---
-title: エンドポイント機能の Microsoft Defender を構成および管理する
+title: エンドポイント向け Microsoft Defender の機能を構成および管理する
 ms.reviewer: ''
-description: 攻撃対象領域の削減、次世代の保護などのエンドポイント機能のために Microsoft Defender を構成および管理する
-keywords: 構成、管理、機能、攻撃対象領域の削減、次世代保護、セキュリティ制御、エンドポイントの検出と応答、自動調査および修復、セキュリティ制御、制御
+description: 攻撃表面の縮小や次世代の保護など、エンドポイント向け Microsoft Defender の機能を構成および管理する
+keywords: 構成, 管理, 機能, 攻撃表面の縮小, 次世代の保護, セキュリティ 制御, エンドポイントの検出と対応, 自動調査と修復, セキュリティ コントロール, コントロール
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,14 +18,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: b202b30e218448794eac7588078ff3ac9cfe9ee3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: d04177ef38c1bd04b0b73e29de9d8ab6fc0893ce
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844814"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930128"
 ---
-# <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>エンドポイント機能の Microsoft Defender を構成および管理する
+# <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>エンドポイント向け Microsoft Defender の機能を構成および管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -33,18 +34,18 @@ ms.locfileid: "48844814"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-エンドポイント機能のすべての Microsoft Defender を構成および管理して、組織に最適なセキュリティ保護を実現します。 
+組織に最適なセキュリティ保護を実現するために、すべての Microsoft Defender for Endpoint 機能を構成および管理します。 
 
 
 ## <a name="in-this-section"></a>このセクションの内容 
 トピック | 説明 
 :---|:---
-[攻撃対象領域の削減機能を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction) |  構成設定が適切に設定され、攻略対策の手法が適用されることにより、これらの機能セットによって攻撃と悪用が緩和されます。 
-[次世代の保護を構成する](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) | 次世代の保護を構成して、新しい脅威の種類をすべてキャッチします。
-[Microsoft Threat の専門家の機能を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts) | Microsoft の脅威の専門家から cybersecurity の脅威インテリジェンスを取得する方法を構成および管理します。
-[Microsoft 365 Defender の統合を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration)| エンドポイントの Microsoft Defender と統合されるその他のソリューションを構成します。
-[管理と API のサポート](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis)| 通知を SIEM にプルするか、Api を使用してカスタム通知を作成します。 Power BI レポートを作成して構築します。 
-[Microsoft Defender セキュリティセンターの設定を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preferences-setup) |  [全般設定]、[高度な機能] などのポータル関連の設定を構成し、プレビュー環境やその他を有効にします。
+[攻撃表面の縮小機能を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction) |  構成設定が適切に設定され、悪用の軽減策の手法が適用されていることを確認することで、これらの一連の機能は攻撃や悪用に抵抗します。 
+[次世代の保護を構成する](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) | 次世代の保護を構成して、すべての種類の新たな脅威をキャッチします。
+[Microsoft Threat Experts の機能を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts) | Microsoft Threat Experts からサイバーセキュリティ脅威インテリジェンスを取得する方法を構成および管理します。
+[Microsoft 365 Defender 統合を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration)| Microsoft Defender for Endpoint と統合する他のソリューションを構成します。
+[管理と API のサポート](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis)| SIEM にアラートをプルするか、API を使用してカスタム アラートを作成します。 Power BI レポートを作成して構築します。 
+[Microsoft Defender セキュリティ センターの設定を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preferences-setup) |  全般設定、高度な機能などのポータル関連の設定を構成し、プレビュー エクスペリエンスを有効にします。
 
 
 

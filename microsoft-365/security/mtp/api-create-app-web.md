@@ -3,7 +3,7 @@ title: ユーザーなしで Microsoft 365 Defender にアクセスするアプ�
 description: ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する方法について説明します。
 keywords: アプリ, アクセス, api, 作成
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: de925fa52056a051592fe5024c0abd40b51ad57b
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: f438189b4ba9fb66124650782b3de2ee34dfee64
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719358"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928440"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する
 
@@ -59,13 +60,13 @@ Microsoft 365 Defender は、一連のプログラム API を通じてデータ�
 
 1. グローバル管理者ロール [を持](https://portal.azure.com) つユーザーとして Azure **にサインイン** します。
 
-2. Azure **Active Directory アプリの**  >  **登録の新規登録**  >  **に移動します**。
+2. Azure **Active Directory アプリの**  >  **登録新規登録**  >  **に移動します**。
 
    ![Microsoft Azure の画像とアプリケーション登録へのナビゲーション](../../media/atp-azure-new-app2.png)
 
 3. フォームで、アプリケーションの名前を選択し、[登録] を選択 **します**。
 
-4. アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択し、組織で > を使用し  >    >  **、「Microsoft Threat Protection」と** 入力して **、Microsoft Threat Protection を選択します**。 これで、アプリは Microsoft 365 Defender にアクセスできます。
+4. アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択し、組織で > を使用して  >    >  **、「Microsoft Threat Protection」** と入力し **、[Microsoft Threat Protection] を選択します**。 これで、アプリは Microsoft 365 Defender にアクセスできます。
 
    > [!TIP]
    > *Microsoft Threat Protection* は Microsoft 365 Defender の元の名前であり、元のリストには表示されません。 テキスト ボックスが表示されるのを確認するには、テキスト ボックスに名前の書き込みを開始する必要があります。
@@ -79,7 +80,7 @@ Microsoft 365 Defender は、一連のプログラム API を通じてデータ�
     > [!NOTE]
     > シナリオに関連するアクセス許可を選択する必要があります。 *すべてのインシデントの読み取り* は単なる例です。 必要なアクセス許可を確認するには、呼び出す API の **[** アクセス許可] セクションを参照してください。
     >
-    > たとえば、高度な [クエリを実行するには、[](api-advanced-hunting.md)高度なクエリの実行] 権限を選択します。デバイス [を分離するには、[コンピューターの](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)分離] アクセス許可を選択します。
+    > たとえば、高度な [クエリを実行するには、[](api-advanced-hunting.md)高度なクエリの実行] 権限を選択します。デバイス [を分離するには、[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)コンピューターの分離] アクセス許可を選択します。
 
 6. [管理者 **の同意を付与する] を選択します**。 アクセス許可を追加する度に、そのアクセス許可を有効にするための **管理者** の同意を付与するを選択する必要があります。
 
@@ -214,11 +215,11 @@ aadToken = jsonResponse["access_token"]
 ### <a name="get-an-access-token-using-curl"></a>レジストリを使用してアクセス トークンを取得する
 
 > [!NOTE]
-> Windows 10 バージョン 1803 以降には、あらかじめインストールされています。 他のバージョンの Windows では、公式 Web サイトから直接ツールをダウンロード [してインストールします](https://curl.haxx.se/windows/)。
+> Windows 10 バージョン 1803 以降には、Windows 10 がプレインストールされています。 他のバージョンの Windows では、公式 Web サイトから直接ツールをダウンロード [してインストールします](https://curl.haxx.se/windows/)。
 
 1. コマンド プロンプトを開き、Azure CLIENT_ID ID に設定します。
 
-1. Azure CLIENT_SECRET シークレットに設定します。
+1. Azure CLIENT_SECRETシークレットに設定します。
 
 1. アプリTENANT_ID使用して Microsoft 365 Defender にアクセスする顧客の Azure テナント ID に設定します。
 
@@ -250,7 +251,7 @@ aadToken = jsonResponse["access_token"]
 
 2. 送信する http 要求で、承認ヘッダーを 、承認スキームであるベアラー、検証済みトークンであるトークンに `"Bearer" <token>` 設定します。  
 
-3. トークンは 1 時間以内に期限切れになります。 この間は、同じトークンを使用して複数の要求を送信できます。
+3. トークンは 1 時間以内に期限切れになります。 この間、同じトークンを使用して複数の要求を送信できます。
 
 次の例は、C# を使用してインシデントの一覧を取得する要求を送信 **する方法を示しています**。
 
@@ -271,6 +272,6 @@ aadToken = jsonResponse["access_token"]
 - [ユーザーの代わりに Microsoft 365 Defender API にアクセスするアプリを作成する](api-create-app-user-context.md)
 - [マルチテナント パートナーが Microsoft 365 Defender API にアクセスできるアプリを作成する](api-partner-access.md)
 - [API の制限とライセンスについて](api-terms.md)
-- [エラー コードを理解する](api-error-codes.md)
+- [エラー コードについて](api-error-codes.md)
 - [Azure Key Vault を使用してサーバー アプリのシークレットを管理する](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
 - [ユーザー サインインと API アクセスの OAuth 2.0 承認](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

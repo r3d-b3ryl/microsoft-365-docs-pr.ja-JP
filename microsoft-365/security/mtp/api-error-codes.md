@@ -3,7 +3,7 @@ title: Microsoft 365 Defender REST API の一般的なエラー コード
 description: Microsoft 365 Defender REST API の一般的なエラー コードについて説明します。
 keywords: api, エラー, コード, 一般的なエラー, mtp, api エラー コード
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0df741efb7555d587a6033acc23716e93f542d5e
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 15eabc8ff28e7cc0313e2a1cb701403de0eab120
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719216"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928392"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Microsoft 365 Defender REST API の一般的なエラー コード
 
@@ -94,7 +95,7 @@ InternalServerError | 内部サーバー エラー (500) | *注: エラー メ�
 
 ## <a name="tracking-id"></a>追跡 ID
 
-各エラー応答には、追跡用の一意の ID パラメーターが含まれる。 このパラメーターのプロパティ名は target *です*。 エラーについてお問い合わせの場合、この ID を添付すると、問題の根本原因を見つけるのに役立ちます。
+各エラー応答には、追跡用の一意の ID パラメーターが含まれている。 このパラメーターのプロパティ名はターゲット *です*。 エラーについてお問い合わせの場合、この ID を添付すると、問題の根本原因を見つけるのに役立ちます。
 
 ## <a name="related-articles"></a>関連記事
 

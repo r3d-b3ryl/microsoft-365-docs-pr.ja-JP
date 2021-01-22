@@ -1,10 +1,10 @@
 ---
-title: 高度な検索スキーマの [イベント] テーブル
-description: 高度な検索スキーマのイベントテーブルの Active Directory によって記録された認証イベントについて説明します。
-keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、identity Logonevents、Azure AD、Active Directory、Azure ATP、id
+title: 高度な検索スキーマの IdentityLogonEvents テーブル
+description: 高度な検索スキーマの IdentityLogonEvents テーブルに Active Directory によって記録される認証イベントについて説明します。
+keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、IdentityLogonEvents、Azure AD、Active Directory、Azure ATP、ID
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 176f131ad020d001b72b97332d54be71feef5548
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 1df1295b3386b94e3737c53ac8226c719c8bfa08
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847418"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929924"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -34,47 +35,47 @@ ms.locfileid: "48847418"
 **適用対象:**
 - Microsoft 365 Defender
 
-`IdentityLogonEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、Microsoft の Cloud App Security で取得した microsoft online services に関連した id と認証アクティビティについて microsoft Defender がキャプチャした認証アクティビティに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度な検索スキーマの表には、Microsoft Defender によってキャプチャされたオンプレミスの Active Directory を通じて行われた認証アクティビティに関する情報と、Microsoft Cloud App Security によってキャプチャされた Microsoft オンライン サービスに関連する認証アクティビティが含まれます。 `IdentityLogonEvents` [](advanced-hunting-overview.md) このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
+> テーブルでサポートされているイベントの種類 ( 値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ `ActionType` リファレンスを使用してください。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 >[!NOTE]
->次の表は、クラウドアプリのセキュリティによって追跡された Azure Active Directory (AD) ログオンアクティビティ、具体的には、ActiveSync やその他の従来のプロトコルを使用した対話的なサインインと認証アクティビティについて説明しています。 この表に記載されていない非対話型のログオンは、Azure AD 監査ログに表示できます。 [クラウドアプリのセキュリティを Microsoft 365 に接続する方法について説明します。](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>次の表では、Cloud App Security によって追跡される Azure Active Directory (AD) ログオン アクティビティ、特に ActiveSync や他のレガシ プロトコルを使用した対話型サインインと認証アクティビティについて説明します。 この表では使用できない非対話型ログオンは、Azure 管理者監査ログADできます。 [Cloud App Security を Microsoft 365 に接続する方法の詳細](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
-| `LogonType` | string | ログオンセッションの種類。具体的には次のとおりです。<br><br> - **Interactive** -ユーザーがローカルのキーボードと画面を使用してコンピューターと物理的に対話する<br><br> - **リモート対話 (RDP) ログオン** -ユーザーがリモートデスクトップ、ターミナルサービス、リモートアシスタンス、またはその他の RDP クライアントを使用してリモートでコンピューターと対話する<br><br> - PsExec を使用してコンピューターにアクセスするとき、またはプリンターや共有フォルダーなどのコンピューター上の共有リソースにアクセスするときに、 **ネットワーク** セッションが開始されます。<br><br> - スケジュールされたタスクによって開始された **バッチ** セッション<br><br> - **サービス** -開始時にサービスによって開始されたセッション |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマ リファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `LogonType` | string | ログオン セッションの種類。具体的には次の種類があります。<br><br> - **対話型** - ユーザーがローカルのキーボードと画面を使ってコンピューターと物理的に対話する<br><br> - **リモート 対話型 (RDP)** ログオン - ユーザーはリモート デスクトップ、ターミナル サービス、リモート アシスタンス、その他の RDP クライアントを使用してリモートでコンピューターと対話します。<br><br> - **ネットワーク** - PsExec を使用してコンピューターにアクセスするか、プリンターや共有フォルダーなどのコンピューター上の共有リソースにアクセスするときに開始されるセッション<br><br> - **Batch** - スケジュールされたタスクによって開始されるセッション<br><br> - **サービス** - サービスの開始時に開始されるセッション |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `Protocol` | string | 使用されるネットワークプロトコル |
-| `FailureReason` | string | 記録された操作が失敗した理由を説明する情報 |
+| `Protocol` | string | 使用されるネットワーク プロトコル |
+| `FailureReason` | string | 記録されたアクションが失敗した理由を説明する情報 |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountDomain` | string | アカウントのドメイン |
-| `AccountUpn` | string | アカウントのユーザープリンシパル名 (UPN) |
+| `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | string | Azure AD でのアカウントの一意識別子 |
-| `AccountDisplayName` | string | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
+| `AccountObjectId` | string | Azure AD のアカウントの一意の識別子 |
+| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、特定の名前または名、ミドル ネームの開始、姓または姓の組み合わせ。 |
 | `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
 | `DeviceType` | string | デバイスの種類 |
 | `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
-| `IPAddress` | string | エンドポイントに割り当てられ、関連するネットワーク通信中に使用される IP アドレス |
-| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
-| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
+| `IPAddress` | string | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
+| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの名前 |
+| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの IP アドレス |
 | `TargetDeviceName` | string | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
-| `TargetAccountDisplayName` | string | 記録済みのアクションが適用されたアカウントの名前を表示します。 |
-| `Location` | string | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
-| `Isp` | string | エンドポイントの IP アドレスに関連付けられているインターネットサービスプロバイダー (ISP) |
+| `TargetAccountDisplayName` | string | 記録されたアクションが適用されたアカウントの表示名 |
+| `Location` | string | イベントに関連付けられている都市、国、その他の地理的な場所 |
+| `Isp` | string | エンドポイント IP アドレスに関連付けられたインターネット サービス プロバイダー (ISP) |
 | `ReportId` | long | イベントの一意識別子 |
-| `AdditionalFields` | string | エンティティまたはイベントに関するその他の情報 |
+| `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Windows 10 Home を Windows 10 Pro にアップグレードする方法について学習します。
-ms.openlocfilehash: 64393e1b5c3f6652835fe5f5cd5859a6f4cf4320
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3f775130728eb6f00b1adb008c697fb84254827b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703105"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927756"
 ---
 # <a name="upgrade-from-windows-10-home-to-windows-10-pro"></a>Windows 10 Home から Windows 10 Pro へのアップグレード
 
@@ -38,7 +39,7 @@ Microsoft 365 Business では、データをセキュリティで保護するた
 
 1. デスクトップからスタート メニューを **選択し****、Microsoft Store を検索** して選択します。
 2. Microsoft Store で検索バーをクリックし  **、「Windows 10 Pro」** と入力し  **、[Windows 10 Pro** へのアップグレード] を選択します。
-3. [Windows  **10 Pro へのアップグレード**] で、[詳細] を選択し、[購入] を選択 **します**。
+3. [Windows  **10 Pro へのアップグレード]** で、[詳細] を選択し、[購入] を選択 **します**。
 4. Windows セキュリティ  **ボックスで、PIN**  を入力して ID を確認します。
 5. 支払いページを確認し、セール条件を読み、必要に合って支払い方法を変更し、[購入] を選択  **します**。
 6. [Windows  **10 Pro へのアップグレード] で、[** インストール] を  **選択します**。

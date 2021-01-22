@@ -3,7 +3,7 @@ title: Microsoft 365 Defender のプレビュー機能
 description: Microsoft 365 セキュリティの新機能について学ぶ
 keywords: プレビュー、新規、m365 セキュリティ、セキュリティ、365、機能
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 15f599f425e20540f5f7889efa632f5a9f11a4e8
-ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
+ms.technology: m365d
+ms.openlocfilehash: ce0f1ae41b57db398c7ec84e078897a7345c1b9a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49741059"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930080"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender プレビュー機能
 
@@ -61,9 +62,9 @@ Microsoft 365 Defender プレビュー リリースの新機能について説�
 ## <a name="preview-features"></a>プレビュー機能
 現在、次の機能と拡張機能がプレビューで利用できます:
 
-- **[Microsoft 365 Defender API](api-overview.md)** - lop レベルの Microsoft 365 Defender API を使用すると、共有インシデントと高度な検索テーブルに基づいてワークフローを自動化できます。 
+- **[Microsoft 365 Defender API](api-overview.md)** - lop レベルの Microsoft 365 Defender API を使用すると、共有インシデントと高度なハンティング テーブルに基づいてワークフローを自動化できます。 
 - **[高度な検索でアクションを実行](advanced-hunting-take-action.md)** する — 高度な検索で見つけた脅威を迅速に含むか、侵害された資産 [に対処します](advanced-hunting-overview.md)。
 - **[ポータル内スキーマ リファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**— 高度な検索スキーマ テーブルに関する情報をセキュリティ センターで直接取得します。 このリファレンスには、テーブルと列の説明に加えて、サポートされているイベントの種類 ( `ActionType` 値) とサンプル クエリが含まれています。
-- **[DeviceFromIP() 関数](advanced-hunting-devicefromip-function.md)**— 特定の IP アドレスまたはアドレスが特定の時間範囲に割り当てられているデバイスに関する情報を取得します。
+- **[DeviceFromIP() 関数](advanced-hunting-devicefromip-function.md)**—特定の時間範囲で特定の IP アドレスが割り当てられているデバイスに関する情報を取得します。
 
 

@@ -7,7 +7,6 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 管理者は、検疫タグを使用して、ユーザーが検疫済みメッセージに対して実行できる操作を制御する方法について学習できます。
-ms.openlocfilehash: 167f147d7c74b78b1a1661b5444625fbf1cf3d41
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 6f18ad6ce1c8b12d38aef377ab663ca679a703e5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683069"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928904"
 ---
 # <a name="quarantine-tags"></a>検疫タグ
 
@@ -87,7 +88,7 @@ EOP は、従来、検疫内のメッセージとエンド ユーザーのスパ
        - **受信者が検疫から解放されるメッセージを要求する**
 
      - **検疫済みメッセージに対して** 受信者が実行できるその他のアクションを選択する: 次の値の一部、すべて、またはなしを選択します。
-       - **削除**
+       - **Delete**
        - **プレビュー**
        - **送信者を許可する**
        - **送信者をブロックする**
@@ -231,7 +232,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 |[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**信頼度の高い** スパム (_HighConfidenceSpamAction_)</li><li>**フィッシング メール** (_PhishSpamAction_)</li><li>**信頼度の高いフィッシングメール** (_HighConfidencePhishAction_)</li><li>**バルク メール** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultSpamTag (フル アクセス)</li><li>DefaultHighConfSpamTag (フル アクセス)</li><li>DefaultPhishTag (フル アクセス)</li><li>DefaultHighConfPhishTag (アクセスなし)</li><li>DefaultBulkTag (フル アクセス)</li></ul>
 |フィッシング対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装されたユーザーによって電子メールが送信される場合** (_TargetedUserProtectionAction_)</li><li>**偽装ドメイン**_(TargetedDomainProtectionAction) によって電子メールが送信される場合_</li><li>**メールボックス インテリジェンス** \>**偽装されたユーザーによって電子メールが送信** される場合 (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|いいえ|該当なし|
 |[マルウェア対策ポリシー](configure-anti-malware-policies.md): 検出されたメッセージはすべて常に検疫されます。|いいえ|該当なし|
-|[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)|いいえ|該当なし|
+|[SharePoint、OneDrive、Microsoft Teams の安全な添付ファイル](atp-for-spo-odb-and-teams.md)|いいえ|該当なし|
 |[アクションを含む](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) メール フロー ルール (トランスポート ルールとも呼ばれる): ホストされた検疫 (検疫) にメッセージ **を** 配信 _します_。|いいえ|該当なし|
 |
 
@@ -455,7 +456,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 - **エンド ユーザーのスパム通知**: 次のボタンを使用できます。
   - **送信者をブロックする**
-  - **Release**
+  - **リリース**
   - **確認**
 
   ![検疫タグがユーザーにフル アクセスのアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-full-access.png)
@@ -491,7 +492,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 受信拒否リストの詳細については、「他のユーザーからのメッセージ[](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667)をブロックする」および[「Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)を使用してメールボックスのセーフリスト コレクションを構成する」を参照してください。
 
-#### <a name="delete-permission"></a>アクセス許可を削除する
+#### <a name="delete-permission"></a>削除のアクセス許可
 
 削除 **アクセス** 許可 (_PermissionToDelete_) は、ユーザーが検疫からメッセージ (ユーザーが受信者であるメッセージ) を削除する機能を制御します。
 

@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ビジネス向け Microsoft 365 でユーザーを追加する方法について説明します。
-ms.openlocfilehash: e897714e2ff80b2980bd2eb7ca98366d953ed96c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: f9e00312883adcc1771fae809614b6fc88bc0269
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702780"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927576"
 ---
 # <a name="add-a-new-user"></a>新しいユーザーを追加する
 

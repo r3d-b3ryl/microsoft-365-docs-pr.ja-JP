@@ -3,7 +3,7 @@ title: インシデント API の更新
 description: Microsoft 365 Defender API を使用してインシデントを更新する方法について説明します。
 keywords: 更新, api, インシデント
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6fc1ff730994f03aa500ad9a4559b66970e32d87
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 18be4565c2611457d0f5fdc135f99a301bb39e2a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719406"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929072"
 ---
-# <a name="update-incidents-api"></a>インシデント更新 API
+# <a name="update-incidents-api"></a>インシデント API の更新
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -68,7 +69,7 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 -|-|-
 Authorization | String | ベアラー {トークン}。 **必須**。
 Content-Type | 文字列 | application/json. **必須**。
@@ -77,7 +78,7 @@ Content-Type | 文字列 | application/json. **必須**。
 
 要求本文で、更新するフィールドの値を指定します。 要求本文に含まれていない既存のプロパティは、関連する値の変更のために再計算する必要がない限り、値を保持します。 最適なパフォーマンスを得る場合は、変更していない既存の値を省略する必要があります。
 
-プロパティ | 型 | 説明
+プロパティ | 種類 | 説明
 -|-|-
 status | 列挙 | 通知の現在の状態を指定します。 使用できる値は ```Active``` 、次 ```Resolved``` のとおりです ```Redirected``` 。
 assignedTo | string | インシデントの所有者。
@@ -115,7 +116,7 @@ tags | string List | インシデント タグのリスト。
 
 - [Microsoft 365 Defender API へのアクセス](api-access.md)
 - [API の制限とライセンスについて](api-terms.md)
-- [エラー コードを理解する](api-error-codes.md)
+- [エラー コードについて](api-error-codes.md)
 - [インシデント API](api-incident.md)
 - [インシデントを一覧表示する](api-list-incidents.md)
 - [インシデントの概要](incidents-overview.md)

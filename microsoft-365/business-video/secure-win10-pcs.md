@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で Windows 10 保護ポリシーを設定する方法について説明します。
-ms.openlocfilehash: e2ef5c3c3d1dbc07e1c3705389eb757e720c9182
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: dadb24c5de46ef13ea64c4e164cf6edfd4592b35
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702631"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928008"
 ---
-# <a name="secure-windows-10-pcs"></a>Windows 10 PC のセキュリティ保護
+# <a name="secure-windows-10-pcs"></a>Windows 10 PC をセキュリティで保護する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
  
@@ -40,7 +41,7 @@ Microsoft 365 Business でデバイス保護を設定した後、次の手順に
 2. [Windows  **コンピューターのセキュリティ保護] で、[** 表示] を  **選択します**。
 3. ポリシーとポリシーがユーザーに与える影響を理解するために  **、[Windows 10**  コンピューターのセキュリティで保護] ページの情報を確認します。
 4. [開始  **] を選択します**。
-5. Windows  **10 の設定ウィンドウ**  で、オプションを確認し、必要に応じて調整します。 ヒントにカーソルを合わせると、ポリシーの詳細を確認できます。
+5. Windows  **10 の設定ウィンドウ**  で、オプションを確認し、必要に応じて調整します。 ヒントにカーソルを合わせると、ポリシーの詳細が表示されます。
 6. [  **ポリシーを適用するユーザー] の下** を選択し、選択内容を組織内のすべてのユーザーに適用するか、特定のセキュリティ グループに適用するか選択します。
 7. [変更の  **保存] を選択します**。
 

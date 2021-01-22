@@ -1,9 +1,9 @@
 ---
 title: ユーザーの代わりに Microsoft 365 Defender API にアクセスするアプリを作成する
 description: ユーザーの代わりに Microsoft 365 Defender API にアクセスする方法について説明します。
-keywords: access, onhalf of user, api, application, user, access token, token,
+keywords: access, on behalf of user, api, application, user, access token, token,
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f1c0caea9ff7810f79026c789241a4f250ec5303
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: d443334a00b5247525a2cdba98a11cfe0f515193
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719418"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928464"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>ユーザーの代わりに Microsoft 365 Defender API にアクセスするアプリを作成する
 
@@ -79,7 +80,7 @@ Microsoft 365 Defender は、一連のプログラム API を通じてデータ�
 4. アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択し、組織で > を使用して  >    >  **、「Microsoft Threat Protection」** と入力し **、[Microsoft Threat Protection] を選択します**。 これで、アプリは Microsoft 365 Defender にアクセスできます。
 
    > [!TIP]
-   > *Microsoft Threat Protection* は Microsoft 365 Defender の元の名前であり、元のリストには表示されません。 表示するには、テキスト ボックスに名前を書き込む必要があります。
+   > *Microsoft Threat Protection* は Microsoft 365 Defender の元の名前であり、元のリストには表示されません。 テキスト ボックスが表示されるのを確認するには、テキスト ボックスに名前の書き込みを開始する必要があります。
 
    ![API アクセス許可の選択の画像](../../media/apis-in-my-org-tab.PNG)
 
@@ -134,8 +135,8 @@ $response.AccessToken
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>トークンを使用して Microsoft 365 Defender API にアクセスする
 
 1. 使用する API (インシデントまたは高度な検索) を選択します。 詳細については、「サポートされている [Microsoft 365 Defender API」を参照してください](api-supported.md)。
-2. 送信する http 要求で、承認ヘッダーを 、承認スキームである `"Bearer" <token>` *Bearer、* 検証済みトークンであるトークンに設定します。
-3. トークンは 1 時間以内に期限切れになります。 この間は、同じトークンを使用して複数の要求を送信できます。
+2. 送信する http 要求で、承認ヘッダーを 、承認スキームであるベアラー、検証済みトークンであるトークンに `"Bearer" <token>` 設定します。  
+3. トークンは 1 時間以内に期限切れになります。 この間、同じトークンを使用して複数の要求を送信できます。
 
 次の例は、C# を使用してインシデントの一覧を取得する要求を送信 **する方法を示しています**。
 

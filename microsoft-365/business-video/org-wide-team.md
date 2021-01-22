@@ -1,5 +1,5 @@
 ---
-title: 組織全体のチームを作成する
+title: 組織全体にわたるチームを作成する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft Teams で組織全体のチームを作成する方法について説明します。
-ms.openlocfilehash: 900b5e39bd8d42c9c80b5307e224f9a59c67eb6a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 5df4ebce8e80babd8bd3e70004829c997a127a55
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702490"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928176"
 ---
-# <a name="create-an-org-wide-team"></a>組織全体のチームを作成する
+# <a name="create-an-org-wide-team"></a>組織全体にわたるチームを作成する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9?autoplay=false]
 
@@ -45,7 +46,7 @@ ms.locfileid: "49702490"
 
 1. チームに名前を付け、説明を追加して、[作成] を選択  **します**。
 
-チーム内はチャネルです。 [全般] チャネルが自動的に作成されます。 別の部署、イベント、またはプロジェクトに対して、チャネル、個別の会話、ファイルを追加できます。
+チーム内はチャネルです。 [全般] チャネルが自動的に作成されます。 部署、イベント、またはプロジェクトごとにチャネルを追加したり、会話を分離したり、ファイルを追加することができます。
 
 次のコマンドを試します。
 

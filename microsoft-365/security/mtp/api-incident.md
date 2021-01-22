@@ -1,9 +1,9 @@
 ---
 title: Microsoft 365 Defender インシデント API とインシデント リソースの種類
-description: Microsoft 365 Defender の Incident リソースタイプのメソッドとプロパティについて説明します
+description: Microsoft 365 Defender の Incident リソースタイプのメソッドとプロパティについて説明します。
 keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 372c939f5eed29832725e6b048735040ca7391d6
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 37413c3c7458527e90d4657ddfb3afb058e1dfaa
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719336"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928356"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 Defender インシデント API とインシデント リソースの種類
 
@@ -37,7 +38,7 @@ ms.locfileid: "49719336"
 > [!IMPORTANT]
 > 一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-インシデント [は](incidents-overview.md) 、攻撃の説明に役立つ関連するアラートのコレクションです。 組織内の異なるエンティティからのイベントは、Microsoft 365 Defender によって自動的に集計されます。 インシデント API を使用して、組織のインシデントと関連するアラートにプログラムでアクセスできます。
+インシデント [は](incidents-overview.md) 、攻撃の説明に役立つ関連するアラートのコレクションです。 組織内の異なるエンティティからのイベントは、Microsoft 365 Defender によって自動的に集計されます。 インシデント API を使用すると、組織のインシデントと関連するアラートにプログラムでアクセスできます。
 
 ## <a name="quotas-and-resource-allocation"></a>クォータとリソース割り当て
 
@@ -45,7 +46,7 @@ ms.locfileid: "49719336"
 
 HTTP 応答コードは、送信された要求の数または割り当てられた実行時間によってクォータに達 `429` したかどうかを示します。 応答本文には、到達したクォータがリセットされるまでの時間が含まれます。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 インシデント API では、そのメソッドごとに異なる種類のアクセス許可が必要です。 必要なアクセス許可の詳細については、それぞれのメソッドの記事を参照してください。
 
@@ -54,7 +55,7 @@ HTTP 応答コードは、送信された要求の数または割り当てられ
 メソッド | 戻り値の型 | 説明
 -|-|-
 [インシデントを一覧表示する](api-list-incidents.md) | [インシデント リスト](api-incident.md) | インシデントの一覧を取得します。
-[インシデントを更新する](api-update-incidents.md) | [Incident](api-incident.md) | 特定のインシデントを更新します。
+[インシデントを更新する](api-update-incidents.md) | [インシデント](api-incident.md) | 特定のインシデントを更新します。
 
 ## <a name="request-body-response-and-examples"></a>要求の本文、応答、および例
 
@@ -62,7 +63,7 @@ HTTP 応答コードは、送信された要求の数または割り当てられ
 
 ## <a name="common-properties"></a>共通プロパティ
 
-プロパティ | 型 | 説明
+プロパティ | 種類 | 説明
 -|-|-
 incidentId | long | インシデントの一意の ID。
 redirectIncidentId | nullable long | 現在のインシデントがマージされたインシデント ID。
@@ -75,7 +76,7 @@ status | 列挙 | インシデントの現在の状態を指定します。 使�
 classification | 列挙 | インシデントの仕様。 可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。
 判断 | 列挙 | インシデントの決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
 tags | string List | インシデント タグのリスト。
-アラート | アラート リスト | 関連するアラートのリスト。 インシデント一覧 API ドキュメント [の例を](api-list-incidents.md) 参照してください。
+アラート | アラート リスト | 関連するアラートのリスト。 インシデント一覧 API [ドキュメントの例を](api-list-incidents.md) 参照してください。
 
 ## <a name="related-articles"></a>関連記事
 

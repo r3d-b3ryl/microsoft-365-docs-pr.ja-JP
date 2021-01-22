@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ビジネス ファイルを共有する方法の概要。
-ms.openlocfilehash: 9b051fb0df324eff74a4b91ab780070bfdcf3a70
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 333954c92039d124c83cf03b6e1f6637183a4f25
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702470"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928152"
 ---
 # <a name="overview-of-sharing-business-files"></a>ビジネス ファイルの共有の概要
 

@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ユーザーを別のサブスクリプションに移動する方法について学習します。
-ms.openlocfilehash: 7da8db17e0cb29f50cd2320293d8b0f1c7f22d5a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: b3b82dcf029395dbbe49d0e0ea87f87f4494b4f0
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703068"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927420"
 ---
 # <a name="move-users-to-different-subscriptions"></a>ユーザーを別のサブスクリプションに移動する
 
@@ -49,7 +50,7 @@ ms.locfileid: "49703068"
 
 1. Microsoft 365 管理センターの左側のナビゲーション ウィンドウで、[ユーザー] を選択し、[アクティブなユーザー]**を選択します**。
 1. ユーザーの名前を選択し、[ライセンスとアプリ **] を選択** します。
-1. [ **ライセンス]** の下に、新しいサブスクリプションが表示されます。 新しいサブスクリプションの横にあるチェック ボックスをオンにし、古いサブスクリプションの横にあるチェック ボックスをオフにします。
+1. [ **ライセンス]** に、新しいサブスクリプションが表示されます。 新しいサブスクリプションの横にあるチェック ボックスをオンにし、古いサブスクリプションの横にあるチェック ボックスをオフにします。
 1. [**変更の保存**] を選択します。 これで、新しいサブスクリプションのライセンスがこのユーザーに割り当てられます。
 
 ### <a name="remove-an-unused-license"></a>未使用のライセンスを削除する

@@ -17,23 +17,24 @@ monikerRange: o365-worldwide
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Voice アドオンを購入する方法について説明します。
-ms.openlocfilehash: b90f974f5cf8b752b8a9e87fd25a39cb9ba55ebe
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: b52d10587ce00cc2a9cd3bdb5364a0ba54cd2dbf
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712511"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927480"
 ---
 # <a name="buy-business-voice"></a>Business Voice を購入する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Gryk?autoplay=false]
 
-Microsoft 365 Business Voice を使用すると、通話の送受信、電話会議の使用、通話メニュー システムのセットアップを行って、適切な部門に顧客をルーティングできます。 開始するには、Business Voice アドオンを購入する必要があります。
+Microsoft 365 Business Voice を使用すると、通話の送受信、電話会議の使用、および通話メニュー システムのセットアップを行って、適切な部門に顧客をルーティングできます。 開始するには、Business Voice アドオンを購入する必要があります。
 
 ## <a name="try-it"></a>演習
 

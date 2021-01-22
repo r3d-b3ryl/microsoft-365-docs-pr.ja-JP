@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 組織に最適な Microsoft 365 サブスクリプションについて説明します。
-ms.openlocfilehash: 34a7da132004cc73b66d9244f143dfc80a0e5f86
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 81ec93f5295fe9eb39538e74fc82b41b26641302
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703056"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927372"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションを選択する
 

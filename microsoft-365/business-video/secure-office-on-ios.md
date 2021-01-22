@@ -1,5 +1,5 @@
 ---
-title: iOS Officeアプリのセキュリティ保護
+title: iOS の Office アプリをセキュリティで保護する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,20 +16,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium Officeアプリをセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 1703faa7cd7731f0779bacc3d2fa3ad3e4556910
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: fd7fdd32500f9a2362ac29059abe9424d045c206
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702651"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928032"
 ---
-# <a name="secure-office-apps-on-ios"></a>iOS Officeアプリのセキュリティ保護
+# <a name="secure-office-apps-on-ios"></a>iOS の Office アプリをセキュリティで保護する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 
@@ -40,7 +41,7 @@ ms.locfileid: "49702651"
 1. Microsoft 365 管理センターにサインインします。
 1. [ **ポリシー] で、[** ポリシーの **追加] を選択します**。
 1. [ポリシー **の追加]** ウィンドウで、[ポリシー名] に名前を入力し、[ポリシーの種類] で必要なポリシーの種類 **を選択します**。
-1. ユーザーが **モバイル デバイス上のファイルにOfficeする** 方法を管理するをオンにし、次の 3 つの設定がオンになっていることを確認します。
+1. ユーザーが **モバイル デバイス上の Office ファイル** にアクセスする方法を管理するをオンにし、次の 3 つの設定がオンになっていることを確認します。
     - **Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある**
     - **デバイスの紛失時や盗難時に作業ファイルを保護する**
     - **仕事用ファイルを暗号化する**

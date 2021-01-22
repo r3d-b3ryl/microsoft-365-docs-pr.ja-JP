@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: フィッシング対策保護を設定する方法について学習します。
-ms.openlocfilehash: f3a1399c8a6a51c7b14af7ffea8fbaea39cd1541
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: bcb6b8bac316b4b74c505656cb9a93e7a87e0830
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702889"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927876"
 ---
 # <a name="set-up-anti-phishing"></a>フィッシング詐欺対策を設定する
 

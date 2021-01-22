@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 管理センターの詳細をご確認ください。
-ms.openlocfilehash: 9d3b8c83429eec924e23ae1a63e57d6ed36f76b3
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3070d6e9ce035786291fab4557648ab6bc520540
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703261"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927588"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 

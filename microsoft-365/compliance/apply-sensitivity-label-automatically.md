@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: aa6b3ce2da8166cc2b33ae2b6056b54d76a0c634
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 40cb270ee7084b50ed9ef58b9598f16e76dffa36
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759957"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929493"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -210,7 +210,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     - [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にしています](sensitivity-labels-sharepoint-onedrive-files.md)。
     - 自動ラベル付けポリシーの実行時に、別のプロセスまたはユーザーがファイルを開いておくことはできません。 編集用にチェックアウトされたファイルは、このカテゴリに分類されます。
 
-- 組み込みの機密度の種類ではなく、[カスタムの機密情報の種類](custom-sensitive-info-types.md)を使用する場合は、次の操作を行います。 
+- 組み込みの機密度の種類ではなく、[カスタムの機密情報の種類](sensitive-information-type-learn-about.md)を使用する場合は、次の操作を行います。 
     - カスタム機密情報の種類は、カスタム機密情報の種類が保存された後に SharePoint または OneDrive に追加されたコンテンツに対して評価されます。 
     - 新しいカスタムの機密情報の種類をテストするには、自動ラベル付けポリシーを作成する前に作成してから、テスト用のサンプル データを使用して新しいドキュメントを作成します。
 

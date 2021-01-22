@@ -1,10 +1,10 @@
 ---
 title: 高度な検索スキーマの EmailPostDeliveryEvents テーブル
-description: 高度な検索スキーマの EmailPostDeliveryEvents テーブルで Microsoft 365 メールに対して実行された配信後の処理について説明します。
-keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、EmailPostDeliveryEvents、network message id、sender、recipient、attachment id、添付ファイル名、マルウェア verdict、フィッシング verdict
+description: 高度な検索スキーマの EmailPostDeliveryEvents テーブルで Microsoft 365 メールに対して実行された配信後のアクションについて説明します。
+keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、EmailPostDeliveryEvents、ネットワーク メッセージ ID、送信者、受信者、添付ファイル ID、添付ファイル名、マルウェアの検証、フィッシングの検証、添付ファイル数、リンク数、URL カウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 59e5d0d51997812689c7382d6a27af6f66a27d25
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: d7920be05156320411f3907cbcdae88d315b5136
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842610"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929708"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -34,37 +35,37 @@ ms.locfileid: "48842610"
 **適用対象:**
 - Microsoft 365 Defender
 
-`EmailPostDeliveryEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、Microsoft 365 によって処理された電子メールメッセージに対して実行された配信後の処理に関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度 `EmailPostDeliveryEvents` な検索スキーマの [表](advanced-hunting-overview.md) には、Microsoft 365 によって処理される電子メール メッセージに対して実行された配信後アクションに関する情報が含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
+> テーブルでサポートされているイベントの種類 ( 値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ `ActionType` リファレンスを使用してください。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
-個々の電子メールメッセージに関する詳細情報を取得するには、、、およびの表を使用することもでき [`EmailEvents`](advanced-hunting-emailevents-table.md) [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) ます。 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
+個々の電子メール メッセージに関する詳細を取得するには、表 [`EmailEvents`](advanced-hunting-emailevents-table.md) を使用 [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) することもできます。 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `EventId` | string | イベントの一意識別子 |
-| `NetworkMessageId` | string | Microsoft 365 によって生成される電子メールの一意識別子。 |
+| `NetworkMessageId` | string | Microsoft 365 によって生成される電子メールの一意識別子 |
 | `InternetMessageId` | string | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `Action` | string | エンティティに対して実行されたアクション |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類: 手動による修復、フィッシング ZAP、マルウェアの ZAP |
-| `ActionTrigger` | string | アクションが管理者によってトリガーされたかどうか (手動または保留中の自動アクションの承認)、または ZAP または動的配信などの特別なメカニズムによって発生したかどうかを示します。 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類: 手動修復、フィッシング ZAP、マルウェア ZAP |
+| `ActionTrigger` | string | 管理者 (手動または保留中の自動アクションの承認によって) によって、または ZAP や動的配信などの特別なメカニズムによってアクションがトリガーされたかどうかを示します。 |
 | `ActionResult` | string | アクションの結果 |
 | `RecipientEmailAddress` | string | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
 | `DeliveryLocation` | string | メールの配信場所: 受信トレイ/フォルダー、オンプレミス/外部、迷惑メール、検疫、失敗、中断、削除済みアイテム |
 
-## <a name="supported-event-types"></a>サポートされるイベントの種類
-このテーブルは、次の値を持つイベントをキャプチャし `ActionType` ます。
+## <a name="supported-event-types"></a>サポートされているイベントの種類
+次の表は、次の値を持つイベントをキャプチャ `ActionType` します。
 
-- **手動による修復** –管理者は、ユーザーのメールボックスに配信された後に、電子メールメッセージに対して手動でアクションを実行していました。 これには、 [脅威エクスプローラー](../office-365-security/threat-explorer.md) を使用して手動で行う操作や、自動化された [調査と応答 (AIR) アクション](mtp-autoir-actions.md)の承認が含まれます。
-- **フィッシング ZAP** – [ゼロ時間自動削除 (ZAP)](../office-365-security/zero-hour-auto-purge.md) は、配信後にフィッシング電子メールに対してアクションを実行しました。
-- **マルウェア ZAP** –ゼロ時間自動削除 (ZAP) は、配信後にマルウェアを含む電子メールメッセージに対してアクションを実行しました。
+- **手動による修復** - 管理者は、ユーザーメールボックスに配信された後、電子メール メッセージに対して手動でアクションを実行しました。 これには、脅威エクスプローラー [を使用して](../office-365-security/threat-explorer.md) 手動で実行されたアクションや、自動調査および対応 [(AIR) アクションの承認が含まれます](mtp-autoir-actions.md)。
+- **フィッシング ZAP** – [ゼロアワー自動消去 (ZAP)](../office-365-security/zero-hour-auto-purge.md) が配信後にフィッシング メールに対してアクションを実行しました。
+- **マルウェア ZAP** – ゼロアワー自動消去 (ZAP) が、配信後にマルウェアを含む電子メール メッセージに対してアクションを実行しました。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

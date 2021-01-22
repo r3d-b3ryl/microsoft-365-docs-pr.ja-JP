@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Mover を使用して Google ファイルを Microsoft 365 for business に移行する方法について説明します。
-ms.openlocfilehash: a6f9dbf7803cb552c23b6c6abb13d13d6f3eda5d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 99040e4846aba084f40536e88f0aed70998f48be
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794637"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928200"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Google ファイルを Microsoft 365 for business に移行する 
 
@@ -45,7 +46,7 @@ ms.locfileid: "49794637"
 
 ### <a name="install-mover"></a>Mover をインストールする
 
-1. Google Workspace 管理コンソールにサインインします[(admin.google.com)。](https://admin.google.com)
+1. Google Workspace 管理コンソールにサインインするには、次の[admin.google.com。](https://admin.google.com)
 
 1. Choose **Apps,** **Google Workspace Marketplace apps,** Then Add app to Domain Install **list**.
 
@@ -67,7 +68,7 @@ ms.locfileid: "49794637"
     Mover には、検出されたチーム ドライブとユーザー ドライブの数が表示されます。 
 
 1. [ **宛先の選択] で**、[ **新しいコネクタ** の承認] を選択し **、[Office 365]** を見つけて、[承認] を **選択します**。
-1. Azure Active Directory で Mover アプリにアクセス許可を付与するには、次の操作[aka.ms/Office365MoverAuth。](https://aka.ms/Office365MoverAuth)
+1. Azure Active Directory の Mover アプリにアクセス許可を付与するには、次の操作[aka.ms/Office365MoverAuth。](https://aka.ms/Office365MoverAuth)
 1. Select **Office 365 Mover**, **Permissions**, **Grant admin consent for your company**.
 1. アカウントを選択し、アクセス許可を確認して、[承諾] を選択 **します**。
 1. [プロパティ **] を** 選択し、[ユーザーの割 **り当てが必要か]** がオンになっていることを確認します。

@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft Bookings について説明します。
-ms.openlocfilehash: a325dbb12d7442317ef5c3657ba4ab249d10ffe1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 67ed948793b4d43f92b376d7e299564f5d734550
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702701"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928128"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Microsoft Bookings の概要
 
@@ -51,4 +52,4 @@ Microsoft の予約 は、予定に基づいて顧客にサービスを提供す
 - [ **サービス]** ページでは、顧客が予定を予約するときに選択するサービスを追加または管理できます。
 - 最後に **、[Bookings]** ページには、スケジュール ポリシー、メール通知、タイム ゾーン設定など、多くの設定があります。
 
-予約カレンダーを保存して公開したら、会社の Web サイトまたは Facebook ページに埋め込む必要があります。
+予約カレンダーを保存して公開すると、会社の Web サイトまたは Facebook ページに埋め込む可能性があります。

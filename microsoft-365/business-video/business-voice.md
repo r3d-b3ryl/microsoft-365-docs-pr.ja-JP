@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Voice について説明します。
-ms.openlocfilehash: 18da2ce7b3e794a67e7352a6f601e18cb351de4d
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 270ca1f59b866274eb9d51c12c9934c59d8c1836
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703225"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927516"
 ---
 # <a name="overview-of-business-voice"></a>Business Voice の概要
 
@@ -49,10 +50,10 @@ Business Voice は Microsoft Teams の一部なので、あらゆる場所に展
 :::image type="content" source="../media/rework_M365_BusinessVoice_Setup1.png" alt-text="Business Voice セットアップの概要。":::
 
 1. 既存の Microsoft 365 サブスクリプションに Microsoft 365 Business Voice アドオンを購入します。
-1. 会社の電話番号を必要とする従業員が会社外の人と通話を送受信する場合は、必ずライセンスを取得してください。
+1. 会社の外の人と通話をする場合は、会社の電話番号が必要な従業員ごとにライセンスを取得してください。
 1. Business Voice をセットアップすると、会社と従業員の新しい電話番号が届く。 後で既存のビジネス番号をインポートする場合でも、これを行う必要があります。
 1. 無料電話番号または任意の番号に国際電話を発信する機能が必要な場合は、Business Voice に含まれる分数を超える通話時間を提供する、企業のコミュニケーション クレジットを購入します。
-1. レコーディングをアップロードするか、メッセージを入力して、ユーザーの案内応答を作成します。そのテキストを音声に変換します。
+1. レコーディングをアップロードするか、メッセージを入力して、ユーザーの案内応答を作成します。このテキストは音声に変換されます。
 1. 次に、主要な業務番号から通話ルーティング メニューを作成し、顧客を音声または電話のキーで適切な人物または部門に向かいます。 休日や営業時間外には、別の案内応答とメニューをスケジュールできます。
 1. 最後に、既存の電話番号を Microsoft Teams に転送します。
 1. Teams で利用可能になった番号は、従業員と主要な会社番号に割り当てる必要があります。 これで、任意のコンピューター、電話、またはタブレットで Teams アプリで新しいビジネス電話を使用する準備ができました。

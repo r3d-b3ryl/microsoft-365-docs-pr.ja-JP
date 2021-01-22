@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 セキュリティポータルのデバイスプロファイル
-description: 組織内のデバイスのリスクと露出レベルを表示します。 過去および現在の脅威を分析し、デバイスを最新の更新プログラムで保護します。
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、Microsoft Threat Protection、MTP、セキュリティセンター、Microsoft Defender ATP、Office 365 ATP、Azure ATP、デバイスページ、デバイスプロファイル、コンピューターページ、コンピュータープロファイル
-ms.prod: microsoft-365-enterprise
+title: Microsoft 365 セキュリティ ポータルのデバイス プロファイル
+description: 組織内のデバイスのリスクと露出のレベルを表示します。 過去および現在の脅威を分析し、最新の更新プログラムでデバイスを保護します。
+keywords: セキュリティ, マルウェア, Microsoft 365, M365, Microsoft Threat Protection, MTP, セキュリティ センター, Microsoft Defender ATP, Office 365 ATP, Azure ATP, デバイス ページ, デバイス プロファイル, コンピューター ページ, コンピューター プロファイル
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: v-maave
@@ -12,174 +12,175 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 3840a6beae3b586fc90420f7813ff6e9d3cc6c60
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 40897185ab885ee2b6880ecd5f25d95fbe3d771e
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843854"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929576"
 ---
-# <a name="device-profile-page"></a>デバイスプロファイルページ
+# <a name="device-profile-page"></a>デバイス プロファイル ページ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Microsoft 365 セキュリティポータルはデバイスプロファイルページを提供するので、ネットワーク上のデバイスの正常性と状態をすばやく評価できます。
+Microsoft 365 セキュリティ ポータルでは、デバイス プロファイル ページが提供され、ネットワーク上のデバイスの正常性と状態をすばやく評価できます。
 
 > [!IMPORTANT]
-> デバイスが、エンドポイントの Microsoft Defender に登録されているか、Id 用 Microsoft Defender であるか、またはその両方であるかによって、デバイスプロファイルページがわずかに異なる場合があります。
+> デバイス プロファイル ページは、デバイスが Microsoft Defender for Endpoint、Microsoft Defender for Identity、または両方に登録されているかどうかに応じて、少し異なって表示される場合があります。
 
-エンドポイントの Microsoft Defender にデバイスが登録されている場合は、[デバイスプロファイル] ページを使用していくつかの一般的なセキュリティタスクを実行することもできます。
+デバイスが Microsoft Defender for Endpoint に登録されている場合は、デバイス プロファイル ページを使用して一般的なセキュリティ タスクを実行することもできます。
 
-## <a name="navigating-the-device-profile-page"></a>デバイスプロファイルページのナビゲーション
+## <a name="navigating-the-device-profile-page"></a>デバイス プロファイル ページの移動
 
-プロファイルページは、さまざまなセクションに分かれています。
+プロファイル ページは、いくつかの広範なセクションに分割されます。
 
-![(1) タブ領域 (2) サイドバーと (3) アクションが赤で強調表示されているデバイスプロファイルページのイメージ](../../media/mtp-device-profile/hybrid-device-overall.png)
+![(1) タブ領域 (2) サイドバーと (3) アクションが赤で強調表示されているデバイス プロファイル ページの画像](../../media/mtp-device-profile/hybrid-device-overall.png)
 
-サイドバー (1) には、デバイスに関する基本的な詳細が表示されます。
+サイドバー (1) には、デバイスに関する基本的な詳細が一覧表示されます。
 
-メインコンテンツ領域 (2) には、デバイスに関するさまざまな種類の情報を表示するために切り替えることができるタブが含まれています。
+メイン コンテンツ領域 (2) には、デバイスに関するさまざまな種類の情報を表示するために切り替え可能なタブが含まれています。
 
-エンドポイントの Microsoft Defender にデバイスが登録されている場合は、応答アクションの一覧も表示されます (3)。 応答アクションを使用すると、セキュリティ関連の一般的なタスクを実行できます。
+デバイスが Microsoft Defender for Endpoint に登録されている場合は、対応アクションの一覧 (3) も表示されます。 対応アクションを使用すると、セキュリティ関連の一般的なタスクを実行できます。
 
 ## <a name="sidebar"></a>サイドバー
 
-[デバイスプロファイル] ページのメインコンテンツ領域の横に、サイドバーがあります。
+デバイス プロファイル ページのメイン コンテンツ領域の横にサイドバーがあります。
 
-![デバイスプロファイルの [サイドバー] タブのイメージ](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
+![デバイス プロファイルのサイドバー タブの画像](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
 
-サイドバーには、デバイスの完全な名前と露出レベルが一覧表示されます。 また、以下のように、次のようないくつかの重要な基本的な情報を、開いた場合と閉じて設定したサブセクションで提供することもできます。
+サイドバーには、デバイスの完全な名前と露出レベルが一覧表示されます。 また、次のような、開くまたは閉じた状態に切り替え可能な小さなサブセクションの重要な基本情報も提供します。
 
-* **タグ** -エンドポイントの microsoft Defender、Id の microsoft defender、またはデバイスに関連付けられているカスタムタグ。 Id の Microsoft Defender からのタグは編集できません。
-* **セキュリティ情報** -インシデントとアクティブなアラートを開きます。 エンドポイントの Microsoft Defender に登録されているデバイスには、露出レベルとリスクレベルも表示されます。
+* **タグ** - デバイスに関連付けられているエンドポイント用 Microsoft Defender、Id 用 Microsoft Defender、またはカスタム タグ。 Id 用 Microsoft Defender のタグは編集できません。
+* **セキュリティ情報** - インシデントとアクティブなアラートを開きます。 Microsoft Defender for Endpoint に登録されているデバイスには、露出レベルとリスク レベルも表示されます。
 
 > [!TIP]
-> 露出レベルは、デバイスがセキュリティ上の推奨事項とどの程度準拠しているかに関係していますが、リスクレベルは、アクティブな通知の種類や重要度など、さまざまな要因に基づいて計算されます。
+> 露出レベルは、デバイスがセキュリティの推奨事項にどの程度準拠しているのかに関係し、リスク レベルはアクティブなアラートの種類や重大度など、さまざまな要因に基づいて計算されます。
 
-* **デバイスの詳細** -デバイスが最初に表示されたときのドメイン、OS、タイムスタンプ、IP アドレス、リソース。 エンドポイントの Microsoft Defender に登録されているデバイスには、正常性の状態も表示されます。 Id に対して Microsoft Defender に登録されているデバイスには、そのデバイスが最初に作成されたときの SAM 名とタイムスタンプが表示されます。
-* **ネットワークアクティビティ** -最初の時点でのタイムスタンプ、およびデバイスがネットワーク上で最後に表示された時刻。
-* **ディレクトリデータ** ( *id に対して Microsoft Defender に登録されているデバイスの場合のみ* )- [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) のフラグ、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)、およびグループメンバーシップ。
+* **デバイスの** 詳細 - ドメイン、OS、デバイスが最初に表示された時刻のタイムスタンプ、IP アドレス、リソース。 Microsoft Defender for Endpoint に登録されているデバイスでも、正常性状態が表示されます。 Id 用 Microsoft Defender に登録されているデバイスには、デバイスが最初に作成された日時の SAM 名とタイムスタンプが表示されます。
+* **ネットワーク アクティビティ** - デバイスがネットワーク上で最初に確認された時刻と最後のタイムスタンプ。
+* **ディレクトリ データ***(Id* 用 Microsoft Defender に登録されているデバイスの場合のみ) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview)フラグ [、SPN、](https://docs.microsoft.com/windows/win32/ad/service-principal-names)およびグループ メンバーシップ。
 
 ## <a name="response-actions"></a>応答アクション
 
-応答アクションは、脅威を迅速に防御して分析する方法を提供します。
+対応アクションは、脅威から迅速に防御して分析する方法を提供します。
 
-![デバイスプロファイルのアクションバーの画像](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
+![デバイス プロファイルのアクション バーの画像](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * [応答アクション](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) は、エンドポイントの Microsoft Defender にデバイスが登録されている場合にのみ使用できます。
-> * エンドポイントの Microsoft Defender に登録されているデバイスでは、デバイスの OS とバージョン番号に基づいて異なる数の応答アクションが表示されることがあります。
+> * [応答アクション](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) は、デバイスが Microsoft Defender for Endpoint に登録されている場合にのみ使用できます。
+> * Microsoft Defender for Endpoint に登録されているデバイスでは、デバイスの OS とバージョン番号に基づいて、異なる数の応答アクションが表示される場合があります。
 
-[デバイスプロファイル] ページで使用可能なアクションは次のとおりです。
+デバイス プロファイル ページで使用可能なアクションは次のとおりです。
 
-* **タグの管理** -このデバイスに適用したカスタムタグを更新します。
-* **デバイスの分離** -エンドポイントの Microsoft Defender に接続された状態を維持したまま、組織のネットワークからデバイスを分離します。 通信目的で、デバイスが分離されている間、Outlook、Teams、および Skype for Business を実行することを選択できます。
-* **アクションセンター** -送信されたアクションの状態を表示します。 別のアクションが既に選択されている場合にのみ使用できます。
-* **アプリの実行を制限** する-Microsoft によって署名されていないアプリケーションが実行されないようにします。
-* **ウイルス対策スキャンを実行** する-Windows Defender ウイルス対策の定義を更新し、すぐにウイルス対策スキャンを実行します。 クイックスキャンまたはフルスキャンのどちらかを選択します。
-* **収集調査パッケージ** -デバイスに関する情報を収集します。 調査が完了したら、ダウンロードすることができます。
-* [ **Live Response Session を開始** する- [詳細なセキュリティ調査](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)のためにデバイス上のリモートシェルをロードします。
-* **自動化** された調査を開始します。脅威を自動的に調査 [し、remediates](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)します。 自動調査を手動でトリガーしてこのページから実行することもできますが、 [特定のアラートポリシーによっ](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) て自動的に調査がトリガーされます。
-* **アクションセンター** -現在実行されているすべての応答アクションに関する情報を表示します。
+* **タグの管理** - このデバイスに適用したカスタム タグを更新します。
+* **デバイスの** 分離 - デバイスを Microsoft Defender for Endpoint に接続した状態に保ちながら、組織のネットワークからデバイスを分離します。 通信の目的で、デバイスが分離されている間に Outlook、Teams、Skype for Business の実行を許可することができます。
+* **アクション センター** - 送信されたアクションの状態を表示します。 別のアクションが既に選択されている場合にのみ使用できます。
+* **アプリの実行を** 制限する - Microsoft によって署名されていないアプリケーションが実行されるのを防ぐ。
+* **ウイルス対策スキャンの** 実行 - ウイルスWindows Defender定義を更新し、ウイルス対策スキャンを直ちに実行します。 クイック スキャンまたはフル スキャンを選択します。
+* **調査パッケージの収集** - デバイスに関する情報を収集します。 調査が完了したら、ダウンロードできます。
+* **ライブ応答セッションの開始** - 詳細なセキュリティ調査のためにデバイスにリモート シェル [を読み込む](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)。
+* **自動調査の開始** - 脅威 [を自動的に調査して修復します](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 このページから自動調査を手動で実行することもできますが、特定のアラート[](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies)ポリシーによって自動的に調査がトリガーされます。
+* **アクション センター** - 現在実行中の応答アクションに関する情報を表示します。
 
 ## <a name="tabs-section"></a>[タブ] セクション
 
-[デバイスプロファイル] タブを使用すると、デバイスに関するセキュリティ詳細の概要と、通知のリストを含むテーブルを切り替えることができます。
+[デバイス プロファイル] タブでは、デバイスに関するセキュリティの詳細の概要と、アラートの一覧を含むテーブルを切り替えられます。
 
-エンドポイントの Microsoft Defender に登録されているデバイスにも、タイムラインを機能するタブ、セキュリティ推奨事項の一覧、ソフトウェアインベントリ、検出された脆弱性の一覧、および KBs (セキュリティ更新プログラム) が表示されます。
+Microsoft Defender for Endpoint に登録されているデバイスには、タイムライン、セキュリティに関する推奨事項の一覧、ソフトウェア インベントリ、検出された脆弱性の一覧、不足している KB (セキュリティ更新プログラム) を備えたタブも表示されます。
 
 ### <a name="overview-tab"></a>[概要] タブ
 
-既定のタブは **概要** です。 これにより、デバイスに関する最も重要なセキュリティの事実をすばやく確認できます。
+既定のタブは [概要] **です**。 デバイスに関する最も重要なセキュリティの事実を簡単に確認できます。
 
-![デバイスプロファイルの [概要] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
+![デバイス プロファイルの [概要] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
-ここでは、デバイスのアクティブな通知と、現在ログオンしているユーザーを簡単に確認できます。
+ここでは、デバイスのアクティブなアラートと、現在ログオンしているユーザーを簡単に確認できます。
 
-エンドポイントの Microsoft Defender にデバイスが登録されている場合は、デバイスのリスクレベルとセキュリティ評価に関する利用可能なデータも表示されます。 セキュリティ評価では、デバイスの公開レベルについて説明し、セキュリティに関する推奨事項を提示し、影響を受けるソフトウェアと検出された脆弱性を一覧表示します。
+デバイスが Microsoft Defender for Endpoint に登録されている場合は、デバイスのリスク レベルと、セキュリティ評価に関する利用可能なデータも表示されます。 セキュリティ評価では、デバイスの露出レベルについて説明し、セキュリティの推奨事項を示し、影響を受けるソフトウェアと検出された脆弱性の一覧を示します。
 
 ### <a name="alerts-tab"></a>[通知] タブ
 
-[ **通知** ] タブには、デバイス上で発生した通知の一覧が含まれています。これは、microsoft Defender と id の両方とエンドポイントの microsoft defender の両方からです。
+[ **アラート]** タブには、Microsoft Defender for Identity と Microsoft Defender for Endpoint の両方から、デバイスで発生したアラートの一覧が表示されます。
 
-![デバイスプロファイルの [通知] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
+![デバイス プロファイルの [アラート] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
-表示されるアイテムの数、およびアイテムごとに表示される列をカスタマイズできます。 既定の動作は、ページごとに30個のアイテムを一覧表示することです。
+表示されるアイテムの数、および各アイテムに対して表示される列をカスタマイズできます。 既定の動作では、1 ページあたり 30 アイテムを一覧表示します。
 
-このタブの列には、アラートをトリガーした脅威の重要度、状態、調査状態、およびアラートが割り当てられている人物に関する情報が含まれています。
+このタブの列には、アラートをトリガーした脅威の重大度、状態、調査状態、アラートが割り当てられているユーザーに関する情報が含まれます。
 
-[ *影響を受けるエンティティ* ] 列は、現在表示されているプロファイルを含むデバイス (エンティティ)、および影響を受けるネットワーク内の他のデバイスを参照します。
+影響 *を受けるエンティティ* 列は、現在表示しているプロファイルを持つデバイス (エンティティ) と、影響を受けるネットワーク内の他のデバイスを参照します。
 
-このリストからアイテムを選択すると、選択した通知に関する詳細情報が含まれているフライアウトが開きます。
+この一覧からアイテムを選択すると、選択したアラートに関するさらに多くの情報を含むフライアウトが開きます。
 
-このリストは、重要度、状態、または通知の割り当て先によってフィルター処理できます。
+この一覧は、重大度、状態、またはアラートが割り当てられているユーザーでフィルター処理できます。
 
 ### <a name="timeline-tab"></a>[タイムライン] タブ
 
-[ **タイムライン** ] タブには、デバイス上で発生したすべてのイベントを示す対話的な時系列のグラフが含まれています。 グラフの強調表示された領域を左または右に移動すると、さまざまな期間にわたるイベントを表示できます。 対話型のグラフとイベントの一覧の間にあるドロップダウンメニューから、ユーザー設定の日付の範囲を選択することもできます。
+[ **タイムライン]** タブには、デバイスで発生したイベントの対話型の時系列グラフが表示されます。 グラフの強調表示された領域を左または右に移動すると、さまざまな期間のイベントを表示できます。 また、対話型グラフとイベントの一覧の間にあるドロップダウン メニューから、日付のカスタム範囲を選択することもできます。
 
-グラフの下に、選択した日付範囲のイベントの一覧が表示されます。
+グラフの下には、選択した日付範囲のイベントの一覧が表示されます。
 
-![デバイスプロファイルの [タイムライン] タブのイメージ](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
+![デバイス プロファイルのタイムライン タブの画像](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
 
-表示されるアイテムの数とリストの列の両方をカスタマイズできます。 既定の列には、イベント時間、アクティブなユーザー、アクションの種類、エンティティ (プロセス)、およびイベントに関する追加情報が表示されます。
+表示されるアイテムの数とリストの列の両方をカスタマイズできます。 既定の列には、イベント時間、アクティブ ユーザー、アクションの種類、エンティティ (プロセス)、およびイベントに関する追加情報が一覧表示されます。
 
-このリストから項目を選択すると、イベントエンティティグラフが表示されたフライアウトが開き、イベントに含まれる親と子のプロセスが示されます。
+このリストからアイテムを選択すると、イベント エンティティのグラフを表示するフライアウトが開き、イベントに関係する親プロセスと子プロセスが表示されます。
 
-リストは特定の種類のイベントによってフィルター処理できます。たとえば、レジストリイベントや Smart Screen イベントなどがあります。
+リストは、特定の種類のイベントでフィルター処理できます。たとえば、レジストリ イベントやスマート スクリーン イベントなどです。
 
-また、リストを CSV ファイルにエクスポートして、ダウンロードすることもできます。 ファイルはイベント数によって制限されませんが、エクスポートできる最大時間は7日です。
+この一覧は、ダウンロード用に CSV ファイルにエクスポートできます。 ファイルはイベントの数によって制限されるのではなく、エクスポートできる最大時間の範囲は 7 日間です。
 
 ### <a name="security-recommendations-tab"></a>[セキュリティの推奨事項] タブ
 
-[ **セキュリティの推奨事項** ] タブには、デバイスを保護するために実行できるアクションが一覧表示されます。 このリストで項目を選択すると、推奨事項の適用方法を説明するポップアップが表示されます。
+[ **セキュリティの推奨事項]** タブには、デバイスを保護するために実行できるアクションが一覧表示されます。 この一覧で項目を選択すると、フライアウトが開き、推奨事項を適用する方法について説明します。
 
-![デバイスプロファイルの [セキュリティの推奨事項] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
+![デバイス プロファイルの [セキュリティの推奨事項] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
 
-前のタブと同様に、ページごとに表示されるアイテムの数と、表示されている列もカスタマイズできます。
+前のタブと同様に、ページごとに表示されるアイテムの数と表示される列をカスタマイズできます。
 
-既定のビューには、セキュリティの弱点の詳細、関連する脅威、脅威の影響を受ける関連コンポーネントまたはソフトウェアなどの列が含まれています。 アイテムは、推奨の状態によってフィルター処理できます。
+既定のビューには、対処するセキュリティ上の弱点、関連する脅威、脅威の影響を受ける関連コンポーネントまたはソフトウェアなどについて詳しく説明する列が含まれています。 アイテムは、推奨事項の状態によってフィルター処理できます。
 
 ### <a name="software-inventory"></a>ソフトウェア インベントリ
 
-[ **ソフトウェアインベントリ** ] タブには、デバイスにインストールされているソフトウェアが表示されます。
+[ **ソフトウェア インベントリ]** タブには、デバイスにインストールされているソフトウェアが一覧表示されます。
 
-![デバイスプロファイルの [ソフトウェアインベントリ] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
+![デバイス プロファイルの [ソフトウェア インベントリ] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
 
-既定の表示では、ソフトウェアベンダー、インストールされているバージョン番号、既知のソフトウェアの弱点の数、脅威の insights、製品コード、およびタグが表示されます。 表示されるアイテムの数と表示される列の両方をカスタマイズできます。
+既定のビューには、ソフトウェア ベンダー、インストールされているバージョン番号、既知のソフトウェアの弱点の数、脅威の分析情報、製品コード、タグが表示されます。 表示されるアイテムの数と表示される列の両方をカスタマイズできます。
 
-この一覧から項目を選択すると、選択したソフトウェアの詳細と、ソフトウェアが最後に検出されたときのパスとタイムスタンプを含むフライアウトが開きます。
+この一覧から項目を選択すると、選択したソフトウェアに関する詳細と、ソフトウェアが最後に見つかった時点のパスとタイムスタンプを含むフライアウトが開きます。
 
-このリストは、製品コードによってフィルター処理できます。
+この一覧は、製品コードでフィルター処理できます。
 
 ### <a name="discovered-vulnerabilities-tab"></a>[検出された脆弱性] タブ
 
-[ **検出** された脆弱性] タブには、デバイスに影響を与える可能性のある一般的な脆弱性と悪用 (cves) が一覧表示されます。
+[ **検出された脆弱性]** タブには、デバイスに影響を与える可能性のある一般的な脆弱性と悪用 (CVEs) が一覧表示されます。
 
-![デバイスプロファイルの [検出された脆弱性] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
+![デバイス プロファイルの [検出された脆弱性] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
-既定のビューには、CVE の重要度、共通の脆弱性スコア (CVS)、CVE に関連するソフトウェア、cve が発行されたとき、CVE が最後に更新された日時、および CVE に関連付けられている脅威が表示されます。
+既定のビューには、CVE の重要度、共通脆弱性スコア (CVS)、CVE に関連するソフトウェア、CVE の公開日、CVE が最後に更新された日、および CVE に関連する脅威が一覧表示されます。
 
-前のタブと同様に、表示されるアイテムの数と表示される列はカスタマイズできます。
+前のタブと同様に、表示されるアイテムの数と表示される列をカスタマイズできます。
 
-この一覧から項目を選択すると、CVE を説明するフライアウトが開きます。
+このリストから項目を選択すると、CVE を説明するフライアウトが開きます。
 
-### <a name="missing-kbs"></a>KBs がありません
+### <a name="missing-kbs"></a>不足している KB
 
-[ **Kb がありません** ] タブには、デバイスにまだ適用されていない Microsoft 更新プログラムが一覧表示されます。 質問の "KBs" は、これらの更新を説明する [サポート技術情報の記事](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) です。たとえば、 [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762)のようになります。
+[ **不足している KB]** タブには、デバイスにまだ適用されていない Microsoft 更新プログラムが一覧表示されます。 問題の "KBs" は、これらの [更新プログラムについて](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) 説明するサポート技術情報の記事です。たとえば [、KB4551762 です](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762)。
 
-![デバイスプロファイル用に [不足] タブのイメージ](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
+![デバイス プロファイルの [kbs] タブが見つからない画像](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
 
-既定の表示では、更新プログラム、OS バージョン、影響を受けた製品、CVEs アドレス、KB 番号、タグを含むセキュリティ情報が一覧表示されます。
+既定のビューには、更新プログラム、OS バージョン、影響を受ける製品、アドレス指定された CVEs、KB 番号、タグが含まれる情報が一覧表示されます。
 
-ページごとに表示されるアイテムの数と表示される列は、カスタマイズできます。
+ページごとに表示されるアイテムの数と表示される列をカスタマイズできます。
 
-アイテムを選択すると、更新プログラムにリンクするポップアップが開きます。
+アイテムを選択すると、更新プログラムにリンクするフライアウトが開きます。
 
 ## <a name="related-topics"></a>関連項目
 
 * [Microsoft 365 Defender の概要](microsoft-threat-protection.md)
-* [Microsoft 365 Defender をオンにする](mtp-enable.md)
-* [Live response を使用してデバイスのエンティティを調査する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
+* [Microsoft 365 Defender を有効にする](mtp-enable.md)
+* [ライブ応答を使用して、デバイス上のエンティティを調査する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Office 365 での自動調査および対応 (AIR)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
