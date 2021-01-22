@@ -18,33 +18,34 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
-ms.openlocfilehash: a6cd2a0cf60812bb874c1be63fb2d294cda6d6aa
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 536f727ee71db70490259179ff8e47009c547f89
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881719"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905225"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [前提条件<a name="UpdateSPFTXT"></a>](#updating-your-spf-txt-record-for-office-365-a-nameUpdateSPFTXT)
-- [Office 365 のための SPF TXT レコードの作成 /更新<a name="CreateUpdateSPFTXT"></a>](#to-create-or-update-your-spf-txt-record-a-namecreateupdatespftxta)
-    - [サブドメインの処理方法とは?<a name="SPFandSubdomains"></a>](#how-to-handle-subdomains-a-namespfandsubdomainsa)
-- [SPF のトラブルシューティングとベスト プラクティス <a name="TshootingSPF"></a>](#next-steps-after-you-set-up-spf-for-office-365-a-nametshootingspfa)
-- [Advanced SPF の例 <a name="AdvancedSPFexs"></a>](#more-information-about-spf-a-nameadvancedspfexsa)
+- [前提条件](#prerequisites)
+- [SPF TXT レコードを作成または更新する](#create-or-update-your-spf-txt-record)   
+  - [サブドメインの処理方法](#how-to-handle-subdomains)
+- [SPF メール認証で実際に行う操作](#what-does-spf-email-authentication-actually-do)   
+   - [SPF のトラブルシューティング](#troubleshooting-spf)
+- [SPF の詳細情報](#more-information-about-spf)
 
 この記事では、Office 365 で Sender Policy Framework (SPF) のメール認証をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
 
 SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。 推奨されているメール認証方法のDMARC と DKIM (Office 365 でサポートされている他の 2 つのメール認証方法) を設定する最初の手順です。
 
-## <a name="updating-your-spf-txt-record-for-office-365"></a>Office 365 の SPF TXT レコードを更新する<a name="UpdateSPFTXT"></a>
+## <a name="prerequisites"></a>前提条件
 
 > [!IMPORTANT]
 > **中小企業のビジネス** または IP アドレスまたは DNS の構成に慣れていない場合は、インターネット ドメイン レジストラーに電話してください (例: GoDaddy、Bluehost、web.com)。SPF の DNS 構成 (および他のメール認証方法) に関するヘルプを求めることができます。 *また*、ユーザー設定の URL (つまり、ユーザーと顧客が Office 365 にアクセスする URL が **onmicrosoft.com** で終了の場合) を購入していない場合、またはカスタム URL を使用していない場合は、Office 365 サービスで SPF が設定されています。 その場合は、それ以上の手順は必要ありません。 ご確認ありがとうございます。
 
-DNS で TXT レコードを更新する前に、レコード作成に必要な情報を収集する必要があります。 サポートされている SPF 構文の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
+外部 DNS で Office 365 の SPF TXT レコードを作成または更新する前に、レコード作成に必要な情報を収集する必要があります。 サポートされている SPF 構文の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
 
 次の情報を収集します。
 
@@ -59,7 +60,7 @@ DNS で TXT レコードを更新する前に、レコード作成に必要な�
 > [!IMPORTANT]
 > カスタム ドメインを使用するには、Office 365 では、Sender Policy Framework (SPF) TXT レコードを DNS レコードに追加してスプーフィングを防止する必要があります。
 
-## <a name="create-or-update-your-spf-txt-record"></a>SPF TXT レコードを作成または更新する<a name="CreateUpdateSPFTXT"></a>
+## <a name="create-or-update-your-spf-txt-record"></a>SPF TXT レコードを作成または更新する
 
 1. 以下の表の SFP 構文について、十分に理解しておいてください。
 
@@ -98,7 +99,7 @@ DNS で TXT レコードを更新する前に、レコード作成に必要な�
 
 4. SPF TXT レコードをテストします。
 
-## <a name="how-to-handle-subdomains"></a>サブドメインの処理方法とは? <a name="SPFandSubdomains"></a>
+## <a name="how-to-handle-subdomains"></a>サブドメインの処理方法とは?
 
 *サブドメインは、トップ レベル ドメインの SPF レコードを継承しないので、サブドメインごとに、別々のレコードを作成する必要がある* ことに注意してください。
 
@@ -108,7 +109,7 @@ DNS で TXT レコードを更新する前に、レコード作成に必要な�
 *.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
-## <a name="next-steps"></a>次の手順<a name="TshootingSPF"></a>
+## <a name="troubleshooting-spf"></a>SPF のトラブルシューティング
 
 SPF TXT レコードで問題が発生していますか? [「トラブルシューティング: Office 365 における SPF のベスト プラクティス」](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)をお読みください。
 
@@ -129,7 +130,7 @@ SPF は、ユーザーのためにメールを送信できるメール サーバ
 
 - DKIM と DMARC をセットアップする場合 (推奨)。
 
-## <a name="more-information-about-spf"></a>SPF の詳細情報<a name="AdvancedSPFexs"></a>
+## <a name="more-information-about-spf"></a>SPF の詳細情報
 
 サポートされている SPF 構文、スプーフィング、トラブルシューティング、Office 365 が SPF をサポートする方法の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
 

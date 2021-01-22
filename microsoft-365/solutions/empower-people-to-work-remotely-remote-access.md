@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
-ms.openlocfilehash: 1fbb1cb6ad9817f0e167ae95f9fc113ecdee4221
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: a9a8c972d58c7d2bac3f49ad602578358406c5a0
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681422"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908331"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2.  オンプレミスのアプリとサービスへのリモート アクセスを提供します。
 
@@ -55,7 +55,7 @@ Microsoft 365 トラフィックは、組織を経由して間接的にルーテ
 
 スプリッ トトンネリングを使用すると、VPN クライアントを構成して、特定の種類のトラフィックが VPN 接続を介して、組織ネットワークに送信されることを除外できます。
 
-Microsoft 365 クラウドリソースへのアクセスを最適化するには、VPN 接続を介して、**最適化**カテゴリの Microsoft 365 エンドポイントへのトラフィックを除外するようにスプリット トンネリング VPN クライアントを構成します。 詳細については、「[Office 365 エンドポイントのカテゴリ](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories)」をご覧ください。 最適化カテゴリのエンドポイントについては、[こちらのリスト](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)をご覧ください。
+Microsoft 365 クラウドリソースへのアクセスを最適化するには、VPN 接続を介して、**最適化** カテゴリの Microsoft 365 エンドポイントへのトラフィックを除外するようにスプリット トンネリング VPN クライアントを構成します。 詳細については、「[Office 365 エンドポイントのカテゴリ](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories)」をご覧ください。 最適化カテゴリのエンドポイントについては、[こちらのリスト](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)をご覧ください。
 
 Microsoft 365 クラウド アプリへのほとんどのトラフィックが VPN 接続をバイパスした結果としてのトラフィック フローは、以下のとおりです。
 
@@ -131,7 +131,7 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 | リモートワーカーがオンプレミスシステムへの RDS 接続を使用している | 境界ネットワークにリモートデスクトップサービスゲートウェイを展開しました。 |
 |||
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [![手順 3: Microsoft 365 のセキュリティとコンプライアンスのサービスを展開する](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
 
