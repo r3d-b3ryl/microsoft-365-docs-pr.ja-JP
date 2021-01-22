@@ -93,6 +93,22 @@
           href: information-protection-deploy-monitor-respond.md
 - name: 作業負荷のソリューションとシナリオ
   items:
+    - name: 概要
+      href: workload-solutions-scenarios-overview.md
+    - name: テナント管理
+      items:
+        - name: 概要
+          href: tenant-management-overview.md
+        - name: 手順 1. テナント
+          href: tenant-management-tenants.md
+        - name: 手順 2. 最適なネットワーク
+          href: tenant-management-networking.md
+        - name: 手順 3. ID
+          href: tenant-management-identity.md
+        - name: 手順 4. 移行
+          href: tenant-management-migration.md
+        - name: 手順 5.  デバイスおよびアプリの管理
+          href: tenant-management-device-management.md
     - name: チームワークと共同作業
       items:
         - name: Teams アーキテクチャのポスター
