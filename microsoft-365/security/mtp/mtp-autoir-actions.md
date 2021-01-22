@@ -3,7 +3,7 @@ title: 自動調査後に保留中のアクションを承認または拒否す�
 description: アクション センターを使用して、自動調査と応答に関連するアクションを管理する
 keywords: アクション、センター、autoair、自動、調査、応答、修復
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 12/09/2020
-ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: 3776dea4a5a24f4695a5c617325af14f1f03494f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683369"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930380"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>自動調査後に保留中のアクションを承認または拒否する
 
@@ -66,7 +67,31 @@ ms.locfileid: "49683369"
 
 2. リスト内のアイテムを選択し、[**Approve (承認)**] または [**Reject (拒否)**] を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="undo-completed-actions"></a>完了した操作を元に戻す
+
+デバイスまたはファイルが脅威ではないと判断した場合は、実行された修復アクションを、それらのアクションが自動的に実行されたのか手動で実行されたのかに関わり合って元に戻すことができます。 アクション センターの [履歴] **タブでは、** 次の操作を元に戻すことができます。  
+
+| アクション ソース | サポートされるアクション |
+|:---|:---|
+| - 自動調査 <br/>- Microsoft Defender ウイルス対策 <br/>- 手動対応アクション | - デバイスを分離する <br/>- コードの実行を制限する <br/>- ファイルを検疫する <br/>- レジストリ キーを削除する <br/>- サービスを停止する <br/>- ドライバーを無効にする <br/>- スケジュールされたタスクを削除する |
+
+### <a name="to-undo-a-remediation-action"></a>修復アクションを元に戻すには
+
+1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
+
+2. [履歴 **]** タブで、元に戻す操作を選択します。
+
+3. 画面の右側のウィンドウで、[元に戻す] を **選択します**。
+
+### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイスにわたる検疫からファイルを削除するには 
+
+1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
+
+2. [履歴 **] タブ** で、操作の種類が検疫ファイルであるファイルを **選択します**。
+
+3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を選択 **します**。
+
+## <a name="next-steps"></a>次の手順
 
 - [自動調査の詳細と結果を表示する](mtp-autoir-results.md)
 - [自動調査および対応機能で誤検知/陰性を処理する](mtp-autoir-report-false-positives-negatives.md)

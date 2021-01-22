@@ -2,7 +2,7 @@
 title: Microsoft セキュア スコアの提供予定
 description: Microsoft 365 セキュリティ センターの Microsoft セキュア スコアに加える新しい変更について説明します。
 keywords: Microsoft セキュア スコア, セキュア スコア, Office 365 セキュア スコア, Microsoft セキュリティ スコア, Microsoft 365 セキュリティ センター, 改善アクション
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,12 +17,13 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0693e70cdd5636ce655a400a48aac65197327291
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: f7a0dfa3e95321ddd85a56fc32f2d36e72c6b80b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737955"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930608"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft セキュア スコアの提供予定
 
@@ -32,7 +33,7 @@ Microsoft セキュア スコアは https://security.microsoft.com/securescore [
 
 ## <a name="proposed-changes"></a>Proposed changes
 
-近い将来 [、Microsoft](microsoft-secure-score.md) セキュア スコアをセキュリティの立ち上がりをより良くし、操作性を向上させるために、いくつかの変更を行っています。 スコアと考えられる最大スコアは変更される可能性があります。
+近い将来 [、Microsoft](microsoft-secure-score.md) セキュア スコアをセキュリティの立ち上がりをより良くし、使いやすさを向上させるために、いくつかの変更を行っています。 スコアと考えられる最大スコアが変更される場合があります。
 
 ### <a name="no-planned-changes"></a>計画された変更なし
 

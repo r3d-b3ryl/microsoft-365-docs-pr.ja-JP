@@ -3,7 +3,7 @@ title: 自動調査の詳細と結果
 description: 自動調査の結果と主な検出事項は、調査の実行中および実行後に表示できます。
 keywords: 自動化、調査、結果、分析、詳細、修復、autoair
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 39f6be70ad7a611f9919bb0529e8c8ed7f9dc339
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: c050683bb3ed052ae4752ffdee66fe51fb99b88b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683362"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930368"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 

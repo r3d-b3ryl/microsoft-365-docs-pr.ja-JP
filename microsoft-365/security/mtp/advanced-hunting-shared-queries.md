@@ -1,10 +1,10 @@
 ---
-title: Microsoft 365 Defender の詳細検索での共有クエリの使用
+title: Microsoft 365 Defender 高度な検索で共有クエリを使用する
 description: 定義済みおよび共有クエリを使用して、脅威の捜索をすぐに開始します。 クエリを公開または組織に共有します。
-keywords: 高度な検索、脅威の探し、サイバーの脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、カスタム検出、スキーマ、kusto、github リポジトリ、マイクエリ、共有クエリ
+keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、github リポジトリ、自分のクエリ、共有クエリ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 7dcf446b5e1014d411fc8af08dd15506a2b04e49
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844082"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932192"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>高度な捜索で共有クエリを使用する
 
@@ -45,27 +46,27 @@ ms.locfileid: "48844082"
 
 1. クエリを作成または変更します。 
 
-2. [ **クエリの保存** ] ドロップダウン ボタンをクリックし、[ **名前を付けて保存** ] を選択します。
+2. [**クエリの保存**] ドロップダウン ボタンをクリックし、[**名前を付けて保存**] を選択します。
     
 3. クエリの名前を入力します。 
 
    ![クエリの保存の画像](../../media/advanced-hunting-save-query.png)
 
 4. クエリを保存するフォルダーを選択します。
-    - [ **共有クエリ** ] — 組織のすべてのユーザーに共有する
-    - [ **マイ クエリ** ] — 自分のみアクセス可能
+    - [**共有クエリ**] — 組織のすべてのユーザーに共有する
+    - [**マイ クエリ**] — 自分のみアクセス可能
     
-5. [ **保存** ] を選択します。 
+5. [**保存**] を選択します。 
 
 ## <a name="delete-or-rename-a-query"></a>クエリを削除または名前を変更する
 1. 名前を変更または削除するクエリを右クリックします。
 
     ![削除するクエリの画像](../../media/advanced_hunting_delete_rename.png)
 
-2. [ **削除** ] を選択して、削除を確認します。 または、[ **名前の変更** ] を選択して、クエリに新しい名前を入力ます。
+2. [**削除**] を選択して、削除を確認します。 または、[**名前の変更**] を選択して、クエリに新しい名前を入力ます。
 
 ## <a name="create-a-direct-link-to-a-query"></a>クエリへの直接リンクを作成する
-高度な検索クエリエディターでクエリを直接開くリンクを生成するには、クエリを最終処理して、[ **共有リンク** ] を選択します。
+高度な検索クエリ エディターでクエリを直接開くリンクを生成するには、クエリを最終処理し、[共有] リンク **を選択します**。
 
 ## <a name="access-queries-in-the-github-repository"></a>GitHub リポジトリ内のクエリにアクセスする  
 Microsoft のセキュリティ調査員は、[GitHub の指定された公開リポジトリ](https://aka.ms/hunting-queries)で高度な捜索クエリを定期的に共有しています。 このリポジトリは投稿できます。 投稿するには、[GitHub に無料で参加](https://github.com/)してください。
@@ -77,6 +78,6 @@ Microsoft のセキュリティ調査員は、[GitHub の指定された公開�
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
-- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

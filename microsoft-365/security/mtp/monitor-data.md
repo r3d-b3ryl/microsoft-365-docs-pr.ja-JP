@@ -1,8 +1,8 @@
 ---
-title: データ監視 & レポート作成-セキュリティセンター
-description: Microsoft 365 セキュリティセンターで承認されていないデータが漏洩する可能性があるユーザーアクティビティを追跡する方法について説明します。
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、モニター、レポート、データ
-ms.prod: microsoft-365-enterprise
+title: データ監視&レポート - セキュリティ センター
+description: Microsoft 365 セキュリティ センターで未承認のデータ漏えいにつながる可能性があるユーザー アクティビティを追跡する方法について説明します。
+keywords: セキュリティ, マルウェア, Microsoft 365, M365, セキュリティ センター, 監視, レポート, データ
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,25 +17,26 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5763c3e3152586285d27bcbc8214e1ee36641c3
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.technology: m365d
+ms.openlocfilehash: a71f7a7284c2734c4cab2d4e9501a17f4e9ec6e7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429397"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930440"
 ---
-# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでのデータの監視とレポート
+# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターでのデータの監視とレポート
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**データ** カテゴリは、無許可のデータ開示につながる可能性のあるユーザー アクティビティを追跡するために役立ちます。 既存の DLP ポリシーレポートの再作業と、サードパーティの DLP ポリシー一致レポートを作成します。
+**データ** カテゴリは、無許可のデータ開示につながる可能性のあるユーザー アクティビティを追跡するために役立ちます。 これらは、既存の DLP ポリシー レポートとサードパーティの DLP ポリシー一致レポートの再作業です。
 
 次のことがわかります。
 
 - クラウド アプリから最も多くファイルを共有しているユーザー
-- 一致した DLP ポリシーの数
+- 発生した DLP ポリシーの一致の数
 - DLP ポリシーの上書きの数または報告された誤検出の数
-- Microsoft Cloud App Security を介してサードパーティ製のクラウドサービスで発生した DLP ポリシーの一致数
+- Microsoft Cloud App Security を介してサード パーティ製のクラウド サービスで発生した DLP ポリシーの一致の数
 
-![レポートページのデータカテゴリ](../../media/data.png)
+![レポート ページのデータ カテゴリ](../../media/data.png)

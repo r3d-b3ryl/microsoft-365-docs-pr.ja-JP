@@ -8,19 +8,20 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Microsoft Defender for Office 365 プラン 2 でユーザー タグを持つユーザーの特定のグループを識別する方法について説明します。 タグ フィルターは、Microsoft Defender での Office 365 のアラート、レポート、調査で、タグ付けされたユーザーをすばやく識別するために利用できます。
-ms.openlocfilehash: ad06bf90f1ecb93d671bfcad6fad0b4f2a952cb2
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+description: 管理者は、Microsoft Defender for Office 365 プラン 2 でユーザー タグを持つユーザーの特定のグループを識別する方法について説明します。 タグ フィルターは、Microsoft Defender for Office 365 でアラート、レポート、調査を通じて利用して、タグ付けされたユーザーをすばやく識別できます。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ed91492e652773b3a48373df49b20d97887df6ee
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663609"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931436"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のユーザー タグ
 
@@ -48,7 +49,7 @@ ms.locfileid: "49663609"
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 ユーザー タグ ページに直接 **移動するには** 、開きます <https://protection.office.com/userTags> 。
 
-- この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります。
+- この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります:
   - ユーザー タグを作成、変更、および削除するには、組織の管理役割グループまたはセキュリティ管理者役割グループのメンバー **である** 必要があります。
   - 既存のユーザー タグのメンバーを追加および削除するには、組織の管理、セキュリティ管理者、またはセキュリティオペレーターの役割グループ **のメンバーである** 必要があります。
   - ユーザー タグへの読み取り専用アクセスの場合、グローバル閲覧者またはセキュリティ閲覧者の役割グループのメンバー **である** 必要があります。
@@ -81,7 +82,7 @@ ms.locfileid: "49663609"
      - ボックスをクリックし、入力を開始してリストをフィルター処理し、ユーザーまたはグループを選択します。
      - 値を追加するには、ボックス内の空の領域をクリックします。
      - 個々のエントリをボックスから削除するには、ボックス内のユーザーまたはグループの [削除] ![ ](../../media/scc-remove-icon.png) アイコンをクリックします。
-     - ボックスの下の一覧から既存のエントリを削除するには、[削除] ![ アイコンを ](../../media/scc-remove-icon.png) クリックします。
+     - ボックスの下の一覧から既存のエントリを削除するには、[削除] アイコン ![ を ](../../media/scc-remove-icon.png) クリックします。
 
      完了したら、[追加] をクリック **します**。
 

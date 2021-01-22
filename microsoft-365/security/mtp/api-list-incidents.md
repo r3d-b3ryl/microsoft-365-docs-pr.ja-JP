@@ -3,7 +3,7 @@ title: Microsoft 365 Defender でインシデント API を一覧表示する
 description: Microsoft 365 Defender でインシデント API を一覧表示する方法について説明します
 keywords: リスト、インシデント、インシデント、API
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 13508d3ad9d61797517ccb55a27152883947843a
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 39a170a1845ab33f67d77b2de3d5f298f67fdc99
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719430"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932072"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデント API を一覧表示する
 
@@ -79,7 +80,7 @@ GET /api/incidents
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 -|-|-
 Authorization | String | ベアラー {トークン}。 **Required**
 
@@ -102,10 +103,10 @@ incidentId | インシデントを表す一意の識別子 | 924565
 redirectIncidentId | インシデント処理ロジックの一部として、インシデントが別のインシデントとグループ化されている場合にのみ入力されます。 | 924569
 incidentName | すべてのインシデントで使用可能な文字列値。 | ランサムウェア アクティビティ
 createdTime | インシデントが最初に作成された時刻。 | 2020-09-06T14:46:57.0733333Z
-lastUpdateTime | バックエンドでインシデントが最後に更新された時刻。<br /><br /> このフィールドは、インシデントが取得される時間の範囲に対して要求パラメーターを設定する場合に使用できます。 | 2020-09-06T14:46:57.29Z
+lastUpdateTime | バックエンドでインシデントが最後に更新された時刻。<br /><br /> このフィールドは、インシデントが取得される時間の範囲の要求パラメーターを設定するときに使用できます。 | 2020-09-06T14:46:57.29Z
 assignedTo | インシデントの所有者、または *所有者が割り* 当てられていない場合は null。 | secop2@contoso.com
 classification | インシデントの仕様。 プロパティの値は *、Unknown、FalsePositive、TruePositive**です。*  | 不明
-判断 | インシデントの決定を指定します。 プロパティの値は *、NotAvailable*、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware  *、Other です。*     | NotAvailable
+判断 | インシデントの決定を指定します。 プロパティの値は次のとおりです *。NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting*、 *UnwantedSoftware*、 *Other* | NotAvailable
 status | インシデント (アクティブまたは解決 *済* み) *を分類します*。 これは、インシデントへの対応を整理して管理するのに役立ちます。 | Active
 severity | 資産への影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高いアイテムでは、最も迅速な注意が必要です。<br /><br />次のいずれかの値:*情報、低**、** 中、および *高。* | 中
 tags | 共通の特性を持つインシデントのグループにフラグを設定する場合など、インシデントに関連付けられたカスタム タグの配列。 | \[\]
@@ -122,13 +123,13 @@ creationTime | アラートが最初に作成された時刻。 | 2020-09-06T14:
 lastUpdatedTime | バックエンドでアラートが最後に更新された時刻。 | 2020-09-06T14:46:57.2433333Z
 resolvedTime | アラートが解決された時刻。 | 2020-09-10T05:22:59Z
 firstActivity | バックエンドでアクティビティが更新されたとアラートが最初に報告された時刻。| 2020-09-04T05:22:59Z
-title | 各アラートで使用可能な文字列値を簡単に識別します。 | ランサムウェア アクティビティ
+タイトル | 各アラートで使用可能な文字列値を簡単に識別します。 | ランサムウェア アクティビティ
 説明 | 各アラートを説明する文字列値。 | ユーザー Test User2 (testUser2@contoso.com) は、一般的でない拡張子 *の herunterladen* で終わる複数の拡張子を持つ 99 のファイルを操作しました。 これは、異常な数のファイル操作であり、潜在的なランサムウェア攻撃を示しています。
 category | キル チェーンに沿った攻撃の進行状況を視覚的および数値で表示します。 [MITRE ATT&CK™配置されます](https://attack.mitre.org/)。 | 影響
-status | 通知を分類します ( *新規*、 *アクティブ*、 *または解決済み*)。 これは、アラートへの応答を整理して管理するのに役立ちます。 | 新規
+status | アラート (新規、アクティブ *、* または解決 *済み) を分類します*。 これは、アラートへの応答を整理して管理するのに役立ちます。 | 新規
 severity | 資産への影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高いアイテムでは、最も迅速な注意が必要です。<br>次のいずれかの値:*情報、低**、** 中、および *高。* | 中
 investigationId | このアラートによってトリガーされる自動調査 ID。 | 1234
-investigationState | 調査の現在の状態に関する情報。 Unknown 、 *Terminated*、 *SuccessfullyRemediated 、 SuccessfullyRemediated*、   *PartiallyRemediated*、 *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*.  | UnsupportedAlertType
+investigationState | 調査の現在の状態に関する情報。 Unknown 、 *Terminated*、 *SuccessfullyRemediated*、  *Failed*、 *PartiallyRemediated*、 *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*,  *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
 classification | インシデントの仕様。 プロパティの値は、Unknown、FalsePositive、TruePositive、*または null です。*    | 不明
 判断 | インシデントの決定を指定します。 プロパティの値は *、NotAvailable*、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other または null *です。*    | Apt
 assignedTo | インシデントの所有者、または *所有者が割り* 当てられていない場合は null。 | secop2@contoso.com
@@ -147,10 +148,10 @@ deviceDnsName | デバイスの完全修飾ドメイン名。 | user5cx.middleea
 osPlatform | デバイスが実行されている OS プラットフォーム。| WindowsServer2016
 osBuild | デバイスが実行されている OS のビルド バージョン。 | 14393
 rbacGroupName | デバイス [に関連付けられている役割ベースの](https://docs.microsoft.com/azure/role-based-access-control/overview) アクセス制御 (RBAC) グループ。 | WDATP-Ring0
-firstSeen | デバイスが最初に表示された時刻。 | 2020-02-06T14:16:01.9330135Z
+firstSeen | デバイスが初めて表示された時刻。 | 2020-02-06T14:16:01.9330135Z
 healthStatus | デバイスの正常性状態。 | Active
-riskScore | デバイスのリスク スコア。 | 高
-entities | 特定のアラートの一部として識別された、または関連付けされているすべてのエンティティ。 | \[\] (以下のエンティティ フィールドの詳細を参照してください)
+riskScore | デバイスのリスク スコア。 | 高い
+entities | 特定のアラートの一部として識別された、またはアラートに関連付けらたすべてのエンティティ。 | \[\] (以下のエンティティ フィールドの詳細を参照してください)
 
 ### <a name="entity-format"></a>エンティティの形式
 
@@ -715,7 +716,7 @@ GET https://api.security.microsoft.com/api/incidents
 
 - [Microsoft 365 Defender API へのアクセス](api-access.md)
 - [API の制限とライセンスについて](api-terms.md)
-- [エラー コードを理解する](api-error-codes.md)
+- [エラー コードについて](api-error-codes.md)
 - [インシデントの概要](incidents-overview.md)
 - [インシデント API](api-incident.md)
 - [インシデント API を更新する](api-update-incidents.md)

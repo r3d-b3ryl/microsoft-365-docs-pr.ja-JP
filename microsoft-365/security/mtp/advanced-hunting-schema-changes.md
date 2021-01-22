@@ -4,7 +4,7 @@ description: 高度な検索スキーマの名前付け変更テーブルと列�
 keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、データ、名前付けの変更、名前の変更、Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 0bef5f4abcaf0d57af9c160ff31f859c2536ccd2
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 483fedd1fb152e3df5311c981b305e621ec2aec3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780813"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932204"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前の変更
 

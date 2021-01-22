@@ -1,10 +1,10 @@
 ---
-title: 高度な検索機能を使用して、デバイス、メール、アプリ、id 間の脅威を探します。
-description: デバイス、メール、アプリ、および id をカバーする一般的な検索シナリオとサンプルクエリを調査します。
-keywords: 高度な検索、Office365 データ、Windows デバイス、Office365 メール正規化、電子メール、アプリ、id、脅威の検索、サイバー脅威の検索、検索、クエリ、テレメトリ、Microsoft 365、Microsoft の脅威保護
+title: 高度な検索を使用して、デバイス、メール、アプリ、ID 間で脅威を検出する
+description: デバイス、電子メール、アプリ、ID をカバーする一般的な検索シナリオとサンプル クエリを調査します。
+keywords: 高度な捜索、Office365 データ、Windows デバイス、Office365 メールの正規化、メール、アプリ、ID、脅威の捜索、サイバー脅威の捜索、検索、クエリ、テレメトリ、Microsoft 365、Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: b408f574ab4b89806be9154394f49c00a7fd1e99
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847346"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932252"
 ---
-# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、メール、アプリ、および id 間の脅威を探します。
+# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、メール、アプリ、ID 間で脅威を検出する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,22 +35,22 @@ ms.locfileid: "48847346"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender での[高度な](advanced-hunting-overview.md)検索では、次のような脅威を事前にハントできます。
-- エンドポイントの Microsoft Defender で管理されているデバイス
-- Microsoft 365 によって処理された電子メール
-- Microsoft Cloud App Security と Microsoft Defender Identity によって追跡される cloud app アクティビティ、認証イベント、およびドメインコントローラアクティビティ
+[](advanced-hunting-overview.md) Microsoft 365 Defender の高度な検索を使用すると、次の脅威を予防的に検索できます。
+- Microsoft Defender for Endpoint によって管理されるデバイス
+- Microsoft 365 によって処理されるメール
+- Microsoft Cloud App Security および Id 用 Microsoft Defender によって追跡されるクラウド アプリアクティビティ、認証イベント、ドメイン コントローラー アクティビティ
 
-この可視性レベルにより、電子メールや web で受信した高度な侵入を含む、ネットワークの一部を通過する脅威をすばやく確認できます。また、ローカルの権限を取得し、権限のあるドメインの資格情報を取得したり、デバイス間で laterally を移動したりすることができます。 
+このレベルの可視性により、電子メールや Web に届く高度な侵入、ローカル特権の昇格、特権ドメイン資格情報の取得、デバイス間での横方向への移動など、ネットワークのセクションをスキャンする脅威をすばやく探し出すできます。 
 
-ここでは、このような高度な脅威を探すときにクエリを作成する方法を調査するのに役立つ、さまざまな検索シナリオに基づく一般的な手法とサンプルクエリを示します。
+このような高度な脅威を探す際にクエリを作成する方法を探す際に役立つ、さまざまな検索シナリオに基づく一般的な手法とサンプル クエリを次に示します。
 
 ## <a name="get-entity-info"></a>エンティティ情報を取得する
-ユーザーアカウント、デバイス、およびファイルに関する情報をすばやく取得する方法については、以下のクエリを使用してください。 
+これらのクエリを使用して、ユーザー アカウント、デバイス、ファイルに関する情報をすばやく取得する方法について説明します。 
 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>メール アドレスからユーザー アカウントを取得する
-[デバイスとメールを対象とする複数のテーブル](advanced-hunting-schema-tables.md)全体に対してクエリを作成する場合、送信者または受信者のメール アドレスからユーザー アカウント名を取得する必要があります。 通常、この操作は、電子メールアドレスから *ローカルホスト* を使用して、受信者または送信者のアドレスに対して行うことができます。
+[デバイスとメールを対象とする複数のテーブル](advanced-hunting-schema-tables.md)全体に対してクエリを作成する場合、送信者または受信者のメール アドレスからユーザー アカウント名を取得する必要があります。 通常は、メール アドレスのローカル ホストを使用して、受信者または送信者 *のアドレスに* 対してこれを行います。
 
-次のスニペットでは、 [tostring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) kusto 関数を使用して、 `@` 列の from 受信者の電子メールアドレスの前にローカルホストを抽出し `RecipientEmailAddress` ます。
+次のスニペットでは [、tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto 関数を使用して、列内の受信者の電子メール アドレスの直前にローカル ホスト `@` を抽出します `RecipientEmailAddress` 。
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -63,9 +64,9 @@ EmailEvents
 | project RecipientEmailAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 ```
 
-### <a name="merge-the-identityinfo-table"></a>Id 情報テーブルをマージする
+### <a name="merge-the-identityinfo-table"></a>IdentityInfo テーブルをマージする
 
-ユーザー [情報テーブル](advanced-hunting-identityinfo-table.md)を結合または結合することによって、アカウント名やその他のアカウント情報を取得できます。 次のクエリは、 [Emailevents テーブル](advanced-hunting-emailevents-table.md) からフィッシングとマルウェアの検出の一覧を取得し、その情報をテーブルに結合して `IdentityInfo` 各受信者に関する詳細情報を取得します。 
+IdentityInfo テーブルを結合または結合すると、アカウント名と他のアカウント [情報を取得できます](advanced-hunting-identityinfo-table.md)。 次のクエリは [、EmailEvents](advanced-hunting-emailevents-table.md) テーブルからフィッシングとマルウェアの検出の一覧を取得し、その情報をテーブルに結合して、各受信者に関する詳細情報を取得します `IdentityInfo` 。 
 
 ```kusto
 EmailEvents
@@ -82,10 +83,10 @@ Department, City, Country
 ```
 
 ### <a name="get-device-information"></a>デバイス情報を取得する
-[高度な検索スキーマ](advanced-hunting-schema-tables.md)では、さまざまなテーブルに多様なデバイス情報が用意されています。 たとえば、 [DeviceInfo テーブル](advanced-hunting-deviceinfo-table.md) は、定期的に集計されたイベントデータに基づく包括的なデバイス情報を提供します。 このクエリは、テーブルを使用して、 `DeviceInfo` 侵害された可能性があるユーザー () がデバイスにログオンしているかどうかを確認し、 `<account-name>` それらのデバイスでトリガーされた通知を一覧表示します。
+高度 [な検索スキーマは、さまざまな](advanced-hunting-schema-tables.md) テーブルに広範なデバイス情報を提供します。 たとえば [、DeviceInfo テーブルは、定期的](advanced-hunting-deviceinfo-table.md) に集計されるイベント データに基づいて包括的なデバイス情報を提供します。 このクエリは、このテーブルを使用して、潜在的に侵害されたユーザー ( ) が任意のデバイスにログオンしたのか確認し、それらのデバイスでトリガーされたアラートを `DeviceInfo` `<account-name>` 一覧表示します。
 
 >[!Tip]
-> このクエリは、を使用し `kind=inner` て [内部結合](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)を指定します。これにより、の左側の値の重複を防ぐことができ `DeviceId` ます。
+> このクエリは、内部結合を指定するために使用します。これにより、左側の値の `kind=inner` 重複が回避されます[](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) `DeviceId` 。
 
 ```kusto
 DeviceInfo
@@ -102,8 +103,8 @@ DeviceInfo
 
 ## <a name="hunting-scenarios"></a>捜索のシナリオ
 
-### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Zapped できなかった電子メールを受信したユーザーのログオンアクティビティを一覧表示する
-[ゼロ時間自動削除 (ZAP)](../office-365-security/zero-hour-auto-purge.md) は、受信後の悪意のある電子メールアドレスを解決します。 ZAP が失敗すると、悪意のあるコードがデバイス上で実行され、アカウントが侵害されたままになる可能性があります。 このクエリは、電子メールの受信者によって行われたログオンアクティビティが、ZAP によって正常にアドレス指定されなかったことをチェックします。
+### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>正常に受信しなかったメールを受信したユーザーのログオン アクティビティを一覧表示する
+[ゼロアワー自動消去 (ZAP) は](../office-365-security/zero-hour-auto-purge.md) 、悪意のある電子メールを受信した後にアドレス指定します。 ZAP が失敗すると、悪意のあるコードが最終的にデバイス上で実行され、アカウントが侵害されたままになる可能性があります。 このクエリは、ZAP によって正常にアドレス指定されていない電子メールの受信者が行ったログオン アクティビティを確認します。
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -119,8 +120,8 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>資格情報の盗用を対象としたドメインアカウントによるログオン試行の取得
-このクエリは、まず、テーブル内のすべての資格情報アクセスアラートを識別 `AlertInfo` します。 次に、テーブルを結合または結合して、 `AlertEvidence` 対象となるアカウントの名前を解析し、ドメインに参加しているアカウントについてのみフィルター処理を行います。 最後に、テーブルをチェックして、 `IdentityLogonEvents` ドメインに参加している対象のアカウントによってすべてのログオンアクティビティを取得します。
+### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>資格情報の盗難の対象となるドメイン アカウントによるログオン試行を取得する
+このクエリは、最初にテーブル内のすべての資格情報アクセス通知を識別 `AlertInfo` します。 次に、テーブルを結合または結合します。テーブルは、対象となるアカウントの名前を解析し、ドメインに参加しているアカウントのみを `AlertEvidence` フィルター処理します。 最後に、テーブルをチェックして、ドメインに参加している対象アカウントによってすべてのログオン `IdentityLogonEvents` アクティビティを取得します。
 
 ```kusto
 AlertInfo
@@ -140,7 +141,7 @@ AlertInfo
 ```
 
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>既知の悪意のある送信者からのファイルがデバイスに存在するかどうかを確認する
-悪意のあるファイルを送信する電子メールアドレスを知っていることを前提とし `MaliciousSender@example.com` て、このクエリを実行して、この送信者からのファイルがデバイス上に存在するかどうかを判断できます。 たとえば、このクエリを使用して、マルウェア配布キャンペーンの影響を受けたデバイスを特定することができます。
+悪意のあるファイル ( ) を送信するメール アドレスがわかっている場合は、このクエリを実行して、この送信者のファイルがデバイスに `MaliciousSender@example.com` 存在するかどうかを判断できます。 たとえば、このクエリを使用して、マルウェア配布キャンペーンの影響を受けるデバイスを特定できます。
 
 ```kusto
 EmailAttachmentInfo
@@ -176,7 +177,7 @@ IdentityLogonEvents
 ```
 
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>既知の悪意のある送信者からのメール受信後の PowerShell アクティビティを確認する
-悪意のあるメールには多くの場合、PowerShell コマンドを実行して追加のペイロードを配信するドキュメントや特別に細工した添付ファイルが含まれます。 既知の悪意のある送信者 () からのメールを認識している場合は `MaliciousSender@example.com` 、このクエリを使用して、送信者から電子メールを受信してから30分以内に発生した PowerShell アクティビティをリストして確認することができます。  
+悪意のあるメールには多くの場合、PowerShell コマンドを実行して追加のペイロードを配信するドキュメントや特別に細工した添付ファイルが含まれます。 既知の悪意のある送信者 ( ) からのメールを認識している場合は、このクエリを使用して、送信者から電子メールを受信した後 30 分以内に発生した PowerShell アクティビティを一覧表示および確認できます。 `MaliciousSender@example.com`  
 
 ```kusto
 //Define new table for emails from specific sender

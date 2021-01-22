@@ -3,7 +3,7 @@ title: アクション センターに移動して、自動化された調査お
 description: アクション センターを使用して、自動化された調査の詳細を表示し、保留中のアクションを承認する
 keywords: アクション センター、脅威の防止、調査、アラート、保留、自動化、検出
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 12/09/2020
-ms.openlocfilehash: aa9f433bc60949aa625d9346421b025121347a2c
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: 45e02e4ce7d5d813cc8215a1f27ed9c415707cb1
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683321"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930428"
 ---
 # <a name="the-action-center"></a>アクション センター
 
@@ -118,7 +119,7 @@ ms.locfileid: "49683321"
 > [!NOTE]
 > Azure Active Directory でグローバル管理者の役割が割り当てられているユーザーは、アクション センターで保留中のアクションを承認または拒否できます。 ただし、ベスト プラクティスとして、グローバル管理者の役割が割り当てられているユーザーの数を制限する必要があります。 アクション センターのアクセス許可については、上記のセキュリティ管理者、有効な修復アクション、および検索と消去の役割を使用することをお勧めします。
 
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 
 - [自動調査後に保留中のアクションを承認または拒否する](mtp-autoir-actions.md)
 - [自動化された調査の結果を表示する](mtp-autoir-results.md)

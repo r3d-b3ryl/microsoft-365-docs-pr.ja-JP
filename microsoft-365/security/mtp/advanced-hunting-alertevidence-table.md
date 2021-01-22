@@ -1,10 +1,10 @@
 ---
 title: 高度な検索スキーマの AlertEvidence テーブル
-description: 高度な検索スキーマの AlertEvidence テーブルで通知に関連付けられている情報について説明します。
-keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AlertInfo、alert、entities、エビデンス、file、IP address、device、machine、user、account
+description: 高度な検索スキーマの AlertEvidence テーブルのアラートに関連する情報について説明します。
+keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 549eed005e06a7d52ce2f881820ae9fdeffdfea7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847682"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932306"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -34,7 +35,7 @@ ms.locfileid: "48847682"
 **適用対象:**
 - Microsoft 365 Defender
 
-`AlertEvidence`[高度な](advanced-hunting-overview.md)検索スキーマの表には、各種エンティティ (ファイル、IP アドレス、url、ユーザー、またはデバイス) に関する情報が含まれています。この情報には、エンドポイントの Microsoft Defender、Microsoft defender for Office 365、Microsoft Cloud App Security、および id の microsoft defender に関連付けられています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度な検索スキーマの表には `AlertEvidence` 、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity からのアラートに関連付けられたさまざまなエンティティ (ファイル、IP[](advanced-hunting-overview.md)アドレス、URL、ユーザー、デバイス) に関する情報が含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -42,16 +43,16 @@ ms.locfileid: "48847682"
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `AlertId` | string | アラートの一意識別子 |
-| `ServiceSource` | string | 通知情報を提供した製品またはサービス |
-| `EntityType` | string | オブジェクトの種類 (ファイル、プロセス、デバイス、ユーザーなど) |
-| `EvidenceRole` | string | エンティティが通知に関与する方法。そのエンティティが影響を受けているか、または単に関連しているかを示します。 |
-| `EvidenceDirection` | string | エンティティがネットワーク接続のソースまたは宛先であるかどうかを示します |
+| `ServiceSource` | string | アラート情報を提供した製品またはサービス |
+| `EntityType` | string | ファイル、プロセス、デバイス、ユーザーなどのオブジェクトの種類 |
+| `EvidenceRole` | string | エンティティがアラートに関与する方法(影響を受け取ったのか、単に関連しているだけなのかを示す) |
+| `EvidenceDirection` | string | エンティティがネットワーク接続の送信元か宛先かを示します。 |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
-| `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
+| `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダー |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドには通常、値が設定されていません。使用可能な場合は SHA1 列を使用します。 |
-| `FileSize` | int | ファイルのサイズ (バイト数) |
-| `ThreatFamily` | string | 疑わしいまたは悪意のあるファイルまたはプロセスが分類されたマルウェアファミリ |
+| `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは、通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `FileSize` | int | ファイルのサイズ (バイト単位) |
+| `ThreatFamily` | string | 疑わしいファイルまたは悪意のあるファイルまたはプロセスが分類されたマルウェア ファミリ |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `AccountName` | 文字列 | アカウントのユーザー名 |
@@ -60,18 +61,18 @@ ms.locfileid: "48847682"
 | `AccountObjectId` | string | Azure Active Directory のアカウントの一意識別子 |
 | `DeviceId` | string | サービス内のデバイスの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `LocalIP` | string | 通信時に使用されるローカルデバイスに割り当てられた IP アドレス |
+| `LocalIP` | string | 通信中に使用されるローカル デバイスに割り当てられた IP アドレス |
 | `NetworkMessageId` | string | Office 365 により生成されたメールの一意の識別子 |
 | `EmailSubject` | string | メールの件名 |
 | `ApplicationId` | string | アプリケーションの一意識別子 |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `ProcessCommandLine` | string | 新しいプロセスを作成するために使用されるコマンドライン |
+| `ProcessCommandLine` | string | 新しいプロセスの作成に使用するコマンド ライン |
 | `AdditionalFields` | string | JSON 配列形式でのイベントに関する追加情報 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

@@ -7,7 +7,6 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示および処理する方法を学習できます。
-ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3efccca375745b0850c91039165b72a7d6f0bcb3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688031"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931448"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
 
@@ -50,7 +51,7 @@ ms.locfileid: "49688031"
 
 - 現在、[送信者 **のブロック]** ボタンは、共有メールボックスに送信された検疫済みメッセージの [詳細] フライアウトでは使用できません。
 
-- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーは _、RecipientAddress_ パラメーターの値に共有メールボックスの電子メール アドレスを指定して [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)コマンドレットを使用して、メッセージを識別する必要があります。 以下に例を示します。
+- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーは _、RecipientAddress_ パラメーターの値に共有メールボックスの電子メール アドレスを指定して [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)コマンドレットを使用して、メッセージを識別する必要があります。 例:
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com

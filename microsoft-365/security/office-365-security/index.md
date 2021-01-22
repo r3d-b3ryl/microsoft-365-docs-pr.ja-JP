@@ -6,7 +6,6 @@ manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Office 365 のセキュリティ、EOP から Office 365 プラン 1 および 2 の Defender、標準と厳密なセキュリティ構成など。 持っているもの、およびプロパティをセキュリティで保護する方法について理解します。
-ms.openlocfilehash: a24f71286a524c4057fd1354804b067497479493
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f83eef6a19e26f4b8f47a049e2b2959b32a92550
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794522"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932552"
 ---
 # <a name="office-365-security-overview"></a>Office 365 セキュリティの概要
 
@@ -49,11 +50,11 @@ Office 365 セキュリティは、EOP が提供するコア保護に基って�
 |広範なボリューム ベースの既知の攻撃を防止します。|ゼロデイマルウェア、フィッシング、およびビジネス 電子メールの侵害から電子メールとコラボレーションを保護します。|侵害後の調査、捜ティング、対応、自動化、シミュレーション (トレーニング用) を追加します。|
 |
 
-ただし、アーキテクチャの観点から、各部分をセキュリティの累積的なレイヤーと考え、それぞれがセキュリティに重点を置いて考えてみなしましょう。 その他の例:
+ただし、アーキテクチャの観点から、各部分をセキュリティの累積的なレイヤーと考え、それぞれがセキュリティに重点を置いて考えてみなしましょう。 次のようにします。
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP と Microsoft Defender for Office 365 とサービスに重点を置いたお客様との関係 (電子メール認証のメモなど)。":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP と Microsoft Defender for Office 365 と、電子メール認証のメモなど、サービスに重点を置いてお客様との関係を示します。":::
 
 これらの各サービスは、保護、検出、調査、応答の中から目標を強調しますが **、*** すべての _ サービス _**_ は、保護、検出、調査、および対応の任意の目標を実行できます。
 
@@ -68,7 +69,7 @@ Office 365 E3 以下の場合は EOP を使用できますが、アップグレ�
 
 ## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>Office 365 用の EOP から Microsoft Defender への Office 365 セキュリティ
 
-![EOP と Microsoft Defender for Office 365 とそのセキュリティに重点を置いて、保護と検出から調査と対応に向かっている。 電子メール認証構成 (少なくとも DKIM と DMARC) は、EOP 用にセットアップしてセットアップする必要があります。](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
+![EOP と Microsoft Defender for Office 365 とそのセキュリティに重点を置いて、保護と検出から調査と対応に向かっている。 電子メール認証の構成 (少なくとも DKIM と DMARC) は、EOP 用にセットアップしてセットアップする必要があります。](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 > [!IMPORTANT]
 > これらのページの詳細については [、「Exchange Online Protection」と「Defender](exchange-online-protection-overview.md) [for Office 365」を参照してください](office-365-atp.md)。
@@ -100,7 +101,7 @@ Office **365 プラン 1** (現在まで) で Defender を利用できます。
 
 そのため、Microsoft Defender for Office 365 P1 は、家の **_prevention_* _ 側に展開され、追加の形式の検出が追加 _*_されます_*_。
 
-Microsoft Defender for Office 365 P1 では、調査のために _ *リアルタイム* 検出 * も追加されます。 この脅威の検索ツールの名前は太字で示されています。これは、365 P1 用の Defender を使用しているという明確なOfficeです。  Defender では、365 P2 Officeには表示されません。
+Microsoft Defender for Office 365 P1 では、調査のために _ *リアルタイム* 検出 * も追加されます。 この脅威の検索ツールの名前は太字で示されています。これは、Defender for  Office 365 P1 を使用しているという明確な手段です。 Defender では、365 P2 Officeには表示されません。
 
 Office **365 プラン 2** (現在まで) で Defender を利用できます。
 <p>
@@ -109,7 +110,7 @@ Office **365 プラン 2** (現在まで) で Defender を利用できます。
 |---|---|---|
 |テクノロジには、EOP と Microsoft Defender for Office 365 P1 のすべてが含まれます。<u1><li>同じ</li>|<li>**脅威エクスプローラー**</li><li>脅威トラッカー</li><li>キャンペーン ビュー</li>|<li>自動調査と対応 (AIR)</li><li>脅威エクスプローラーからの AIR</li><li>セキュリティが侵害されたユーザー向け AIR</li><li>SIEM 統合 API による自動調査</li>
 
-そのため、Microsoft Defender for Office 365 P2 は、家の **_調査_* と対応 _ 側を拡張し、新しい捜ティングの強度を追加します。 自動化。
+そのため、Microsoft Defender for Office 365 P2 は、家の **_調査_* と対応 _ 側を拡張し、新しい捜ティングの強さを追加します。 自動化。
 
 Microsoft Defender for Office 365 P2 では、プライマリ ハンティング ツールはリアルタイム検出ではなく *_Threat Explorer** と呼ばされています。 セキュリティ センターに移動すると脅威エクスプローラーが表示される場合は、Microsoft Defender Office 365 P2 を利用できます。
 
@@ -124,7 +125,7 @@ Microsoft Defender for Office 365 P1 および P2 について詳しくは、こ
 
 |Defender for Office 365 プラン 1|Defender for Office 365 プラン 2|
 |---|---|
-|構成、保護、および検出機能: <ul><li>[添付ファイル保護](atp-safe-attachments.md)</li><li>[リンク保護](atp-safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Defender for Office 365 プラン 1 の機能 <p> --- プラスのもの --- <p> 自動化、調査、修復、教育の機能: <ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレータ](attack-simulator.md)</li></ul>|
+|構成、保護、および検出機能: <ul><li>[添付ファイル保護](atp-safe-attachments.md)</li><li>[リンク保護](atp-safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams の安全な添付ファイル](atp-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 でのフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Defender for Office 365 プラン 1 の機能 <p> --- プラスのもの --- <p> 自動化、調査、修復、教育の機能: <ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレータ](attack-simulator.md)</li></ul>|
 |
 
 - Office 365 プラン 2 用の Microsoft Defender は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 に含まれています。
@@ -138,7 +139,7 @@ Microsoft Defender for Office 365 P1 および P2 について詳しくは、こ
 - 現在のサブスクリプションに Office 365 用の Microsoft Defender が含まず、必要[](https://go.microsoft.com/fwlink/p/?LinkId=518644)な場合は、販売に連絡して試用版を開始し、Microsoft Defender for Office 365 が組織でどのように機能するのか確認してください。
 
 > [!TIP]
-> ***Insider tip** _. EOP と microsoft Defender docs.microsoft.com 365 の詳細については、次の目次Officeしてください。 このページに戻り、Office [365](https://docs.microsoft.com/microsoft-365/security/office-365-security)セキュリティの概要を確認すると、目次の組織がサイド バーに表示されます。 展開 (移行を含む) から始まり、予防、検出、調査、対応に進む。 <p> この構造は、_Security *Administration** のトピックの後にセキュリティ操作のトピック **が続く構成に分** かれています。 いずれかのジョブ ロールの新しいメンバーである場合は、このヒントのリンクと目次に関する知識を使用して、スペースを学習してください。 フィードバックリンクを *使用し、記事**を評価* してください。 フィードバックは、お客様に提供する機能の改善に役立ちます。
+> ***Insider tip** _. EOP と Microsoft Defender docs.microsoft.com 365 の詳細については、次の目次Officeしてください。 このページに戻り、Office [365](https://docs.microsoft.com/microsoft-365/security/office-365-security)セキュリティの概要を確認すると、目次の組織がサイド バーに表示されます。 展開 (移行を含む) から始まり、予防、検出、調査、対応に進む。 <p> この構造は、_Security *Administration** のトピックの後にセキュリティ操作のトピック **が続く構成に分** かれています。 いずれかのジョブ ロールの新しいメンバーである場合は、このヒントのリンクと目次に関する知識を使用して、スペースを学習してください。 フィードバックリンクを *使用し、記事**を評価* してください。 フィードバックは、お客様に提供する機能の改善に役立ちます。
 
 ## <a name="where-to-go-next"></a>次の移動先
 

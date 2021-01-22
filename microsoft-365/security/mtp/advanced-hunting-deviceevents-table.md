@@ -1,10 +1,10 @@
 ---
 title: 高度な検索スキーマの DeviceEvents テーブル
-description: 高度な検索スキーマの [その他のデバイスイベント (DeviceEvents)] テーブルのウイルス対策、ファイアウォール、およびその他のイベントの種類について説明します。
-keywords: 高度な検索、脅威の探し、サイバーの脅威の検出、microsoft の脅威の防止、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、security events、antivirus、firewall、exploit guard、DeviceEvents
+description: 高度な検索スキーマのその他のデバイス イベント (DeviceEvents) テーブルのウイルス対策、ファイアウォール、その他のイベントの種類について説明します。
+keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、セキュリティ イベント、ウイルス対策、ファイアウォール、Exploit Guard、DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: d3f00e506d34b4c82137f368c8c8f24e52b0247a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 536d95f7226ba907d913df58a47508e44b50147a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843042"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931352"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -36,10 +37,10 @@ ms.locfileid: "48843042"
 
 
 
-高度な検索スキーマのその他のデバイスイベントまたはテーブルには `DeviceEvents` 、さまざまなイベントの種類に関する情報が含まれています。これには、Windows Defender ウイルス対策や exploit protection などのセキュリティコントロールによってトリガーされるイベントが含まれます。 [advanced hunting](advanced-hunting-overview.md) このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度な検索スキーマのその他のデバイス イベントまたはテーブルには、セキュリティ制御によってトリガーされるイベント (Windows Defender ウイルス対策、エクスプロイト保護など) など、さまざまな種類のイベントに関する情報が含まれています `DeviceEvents` 。 [](advanced-hunting-overview.md) このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
+> テーブルでサポートされているイベントの種類 ( 値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ `ActionType` リファレンスを使用してください。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -49,9 +50,9 @@ ms.locfileid: "48843042"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマ リファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
-| `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
+| `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダー |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `MD5` | 文字列型 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
@@ -59,44 +60,44 @@ ms.locfileid: "48843042"
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
-| `RemoteDeviceName` | 文字列 | 影響を受けるコンピューターでリモート操作を実行したコンピューターの名前。 報告されるイベントによっては、この名前は完全修飾ドメイン名 (FQDN)、NetBIOS 名、またはドメイン情報のないホスト名の場合があります。 |
+| `RemoteDeviceName` | 文字列 | 影響を受けるコンピューターでリモート操作を実行したコンピューターの名前。 報告されるイベントに応じて、この名前は完全修飾ドメイン名 (FQDN)、NetBIOS 名、またはドメイン情報のないホスト名である場合があります。 |
 | `ProcessId` | int | 新しく作成されたプロセスのプロセス ID (PID) |
-| `ProcessCommandLine` | string | 新しいプロセスを作成するために使用されるコマンドライン |
-| `ProcessCreationTime` | 日付型 | プロセスが作成された日付と時刻 |
-| `ProcessTokenElevation` | string | 新たに作成されたプロセスに適用されたユーザーアクセス制御 (UAC) 権限昇格が存在するかどうかを示すトークンの種類 |
-| `LogonId` | string | ログオンセッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
-| `RegistryKey` | string | 記録済みのアクションが適用されたレジストリキー |
+| `ProcessCommandLine` | string | 新しいプロセスの作成に使用するコマンド ライン |
+| `ProcessCreationTime` | 日付型 | プロセスが作成された日時 |
+| `ProcessTokenElevation` | string | 新しく作成したプロセスに適用されるユーザー アクセス制御 (UAC) 特権の昇格の有無を示すトークンの種類 |
+| `LogonId` | string | ログオン セッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
+| `RegistryKey` | string | 記録されたアクションが適用されたレジストリ キー |
 | `RegistryValueName` | string | 記録されたアクションが適用されたレジストリ値の名前 |
-| `RegistryValueData` | string | 記録された操作が適用されたレジストリ値のデータ |
+| `RegistryValueData` | string | 記録されたアクションが適用されたレジストリ値のデータ |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
-| `RemotePort` | int | 接続先のリモートデバイスの TCP ポート |
-| `LocalIP` | string | 通信時に使用されるローカルコンピューターに割り当てられた IP アドレス |
-| `LocalPort` | int | 通信時に使用されるローカルコンピューターの TCP ポート |
-| `FileOriginUrl` | string | ファイルのダウンロード元の URL |
-| `FileOriginIP` | string | ファイルのダウンロード元の IP アドレス |
+| `RemotePort` | int | 接続されているリモート デバイス上の TCP ポート |
+| `LocalIP` | string | 通信中に使用されるローカル コンピューターに割り当てられた IP アドレス |
+| `LocalPort` | int | 通信中に使用されるローカル コンピューター上の TCP ポート |
+| `FileOriginUrl` | string | ファイルのダウンロード先の URL |
+| `FileOriginIP` | string | ファイルのダウンロード先の IP アドレス |
 | `AdditionalFields` | string | JSON 配列形式でのイベントに関する追加情報 |
-| `InitiatingProcessSHA1` | string | イベントを開始したプロセス (画像ファイル) の SHA-1 |
-| `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージファイル) の256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `InitiatingProcessSHA1` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
+| `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `InitiatingProcessFileName` | 文字列型 | イベントを開始したプロセスの名前 |
-| `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
+| `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
-| `InitiatingProcessCommandLine` | string | イベントを開始したプロセスを実行するために使用されるコマンドライン |
-| `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日付と時刻 |
-| `InitiatingProcessParentId` | int | イベントを担当するプロセスを発生させる親プロセスのプロセス ID (PID) |
+| `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
+| `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
+| `InitiatingProcessParentId` | int | イベントを処理するプロセスを生成した親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentFileName` | string | イベントを処理するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
-| `InitiatingProcessMD5` | string | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
-| `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
-| `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
-| `InitiatingProcessAccountSid` | string | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
-| `InitiatingProcessLogonId` | string | イベントを開始したプロセスのログオンセッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
-| `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 |
-| `AppGuardContainerId` | string | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
+| `InitiatingProcessMD5` | string | イベントを開始したプロセス (イメージ ファイル) の MD5 ハッシュ |
+| `InitiatingProcessAccountDomain` | string | イベントを処理するプロセスを実行したアカウントのドメイン |
+| `InitiatingProcessAccountName` | string | イベントを処理するプロセスを実行したアカウントのユーザー名 |
+| `InitiatingProcessAccountSid` | string | イベントを処理するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
+| `InitiatingProcessLogonId` | string | イベントを開始したプロセスのログオン セッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
+| `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
+| `AppGuardContainerId` | string | ブラウザーの動作を分離するために Application Guard によって使用される仮想化コンテナーの識別子 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

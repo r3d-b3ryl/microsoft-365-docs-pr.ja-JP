@@ -3,7 +3,7 @@ title: Microsoft 365 Defender での自動調査と対応
 description: Microsoft 365 Defender で自動調査および対応機能 (自己修復とも呼ばれる) の概要を確認する
 keywords: 自動化, 調査, アラート, トリガー, アクション, 修復, 自己修復
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7c28b7f3ac797f7402cfdb1f604fcef1e142a31b
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: 905455e4cd70485e099f8005b5f8876b1a5d9caf
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683309"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930332"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender での自動調査と対応
 
@@ -82,7 +83,7 @@ Microsoft 365 Defender では、自動調査と自動修復機能による対応
 > すべてのアラートによって自動調査がトリガーされるのではなく、すべての調査結果が自動修復アクションで発生する場合ではありません。これはすべて、組織に対して自動調査と対応がどのように構成されているのかによって異なります。 [「Microsoft 365 Defender での自動調査および対応機能の構成」をご覧ください](mtp-configure-auto-investigation-response.md)。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Microsoft 365 Defender での自動調査と対応の前提条件を確認する](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [組織の自動調査と対応を構成する](mtp-configure-auto-investigation-response.md)

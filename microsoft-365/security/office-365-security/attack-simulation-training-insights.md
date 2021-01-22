@@ -5,18 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Microsoft 365 セキュリティ センターの攻撃シミュレーション トレーニングが従業員に与える影響を把握し、シミュレーションとトレーニングの結果から分析情報を得る方法を学習できます。
-ms.openlocfilehash: baff6032f295b2b49b4f2ec9280fb465d47b8dc3
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.technology: mdo
+ms.openlocfilehash: b7fd414cc355e768077198eb5215720c4d4a9444
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877142"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49933068"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 
@@ -28,12 +29,12 @@ We are continuously working on expanding the insights that are available to you.
 
 攻撃シミュレーション **トレーニング** の [概要] タブには、侵害率カードに **対する動作の影響が表示** されます。 このカードは、予想される侵害率とは対照的に、従業員が実行したシミュレーションに対する対処 **方法を示しています**。 これらの分析情報を使用して、同じ従業員グループに対して複数のシミュレーションを実行することで、従業員の脅威の準備状況の進行状況を追跡できます。
 
-グラフには次の情報が表示されます。
+グラフには、次の情報が表示されます。
 
-- **攻撃シミュレーション トレーニングを** 使用する他の Microsoft 365 テナントと同じ種類のペイロードを使用したシミュレーションの平均侵害率を反映する予測妥協率。
+- **攻撃シミュレーション トレーニングを** 使用する他の Microsoft 365 テナントと同じ種類のペイロードを使用するシミュレーションの平均侵害率を反映する予測妥協率。
 - **実際の侵害率** は、シミュレーションに落ちた従業員の割合を反映しています。
 
-さらに、攻撃によって侵害された実際の従業員数と予測される侵害率の違い `<number> less susceptible to phishing` を反映しています。 この数の従業員は、今後の同様の攻撃によって侵害される可能性は低く、予想される侵害率とは対照的に、従業員がどのように全体的に行ったか `<percent%> better than predicted rate` を示しています。
+さらに、攻撃によって侵害された実際の従業員数と予測される侵害率の違い `<number> less susceptible to phishing` を反映しています。 この数の従業員は、今後の同様の攻撃によって侵害される可能性は低く、予想される侵害率とは対照的に、従業員が全体的にどのように行ったか `<percent%> better than predicted rate` を示しています。
 
 > [!div class="mx-imgBorder"]
 > ![攻撃シミュレーション トレーニングに対する行動影響カードの概要](../../media/attack-sim-preview-behavior-impact-card.png)

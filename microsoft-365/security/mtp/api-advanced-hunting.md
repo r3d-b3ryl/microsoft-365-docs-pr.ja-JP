@@ -3,7 +3,7 @@ title: Microsoft 365 Defender 高度なハンティング API
 description: Microsoft 365 Defender の高度な検索 API を使用して高度な検索クエリを実行する方法について説明します。
 keywords: 高度な検索、API、api、MTP、M365 Defender、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e7cd9192ec25e01ed06b77cb2b39357cb9df79bd
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 4213773c3305c28f0913013d8f7634c083811f52
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719382"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932084"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender 高度なハンティング API
 
@@ -51,7 +52,7 @@ ms.locfileid: "49719382"
 6. 1 つの要求が 10 分を超える間実行される場合、その要求はタイム アウトし、エラーを返します。
 7. HTTP 応答コードは、送信された要求の数または割り当てられた実行時間によってクォータに達 `429` したかどうかを示します。 応答本文には、到達したクォータがリセットされるまでの時間が含まれます。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Microsoft 365 Defender Protection API](api-access.md)へのアクセス」を参照してください。
 
@@ -83,7 +84,7 @@ Content-Type | application/json
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-パラメーター | 型 | 説明
+パラメーター | 種類 | 説明
 -|-|-
 クエリ | テキスト | 実行するクエリ。 **注: 必須**
 
@@ -99,7 +100,7 @@ Content-Type | application/json
 
 ## <a name="example"></a>例
 
-次の例では、ユーザーが以下のクエリを送信し、, を含む API 応答 `Stats` オブジェクト `Schema` を受け取ります `Results` 。
+次の例では、ユーザーは以下のクエリを送信し、, を含む API 応答 `Stats` オブジェクト `Schema` を受け取ります `Results` 。
 
 ### <a name="query"></a>クエリ
 
@@ -178,5 +179,5 @@ Content-Type | application/json
 
 - [Microsoft 365 Defender API へのアクセス](api-access.md)
 - [API の制限とライセンスについて](api-terms.md)
-- [エラー コードを理解する](api-error-codes.md)
+- [エラー コードについて](api-error-codes.md)
 - [高度な検出の概要](advanced-hunting-overview.md)

@@ -3,7 +3,7 @@ title: Microsoft 365 Defender API の概要
 description: Microsoft 365 Defender で利用可能な API について説明します。
 keywords: api, apis, 概要, インシデント, インシデント, 脅威の検出, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1a75a561e60c05208e8ea302505f9644ac0bc044
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 8e06d4b4f7c895b532091c73e8269411fb38bf21
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719192"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931004"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender API の概要
 
@@ -41,7 +42,7 @@ Microsoft 365 Defender は、統合対応プラットフォームの上に構築
 
 Microsoft 365 Defender API を使用して、共有インシデントと高度なハンティング テーブルに基づいてワークフローを自動化します。
 
-- **[複合インシデント キュー](api-incident.md)** - インシデント API の下で、完全な攻撃範囲と影響を受けたすべての資産をグループ化することで、重要な機能に重点を置きます。
+- **[複合インシデント キュー](api-incident.md)** - インシデント API の下で、攻撃の全範囲と影響を受けたすべての資産をグループ化することで、重要な機能に重点を置きます。
 
 - **[製品間](api-advanced-hunting.md)** の脅威の検出 - セキュリティ チームの組織の知識を活用して、侵害の兆候を探します。独自のカスタム クエリを作成して、複数の保護製品にわたって収集された生データをふるい分けします。
 

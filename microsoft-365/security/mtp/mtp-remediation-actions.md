@@ -3,7 +3,7 @@ title: Microsoft 365 Defender での修復アクション
 description: Microsoft 365 Defender での自動調査に従った修復アクションの概要を取得する
 keywords: 自動化、調査、警告、トリガー、アクション、修復
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9e489e3b0100aa138b11d4bfb4ccc8048a2113f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: c6b0275335f32419b470c789d83b069be7839c36
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683297"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932852"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Microsoft 365 Defender での修復アクション
 
@@ -65,7 +66,7 @@ Microsoft 365 Defender での自動調査の最中および後に、悪意のあ
 | Malicious (悪意のある)    | デバイス (エンドポイント)    | 修復アクションが自動的に実行されます (組織の [](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)デバイス グループが [完全] に設定されている場合 **- 脅威を自動的に修復する**)|
 | Malicious (悪意のある)    | メールのコンテンツ (URL または添付ファイル) | 推奨される修復アクションが承認待ちになります|
 | Suspicious (不審)    | デバイスまたはメールのコンテンツ | 推奨される修復アクションが承認待ちになります|
-| 脅威なし    | デバイスまたはメールのコンテンツ    | 必要な修復アクションはありません|
+| 脅威は検出されませんでした    | デバイスまたはメールのコンテンツ    | 必要な修復アクションはありません|
 
 
 ## <a name="remediation-actions-that-are-taken-manually"></a>手動で実行される修復アクション
@@ -79,7 +80,7 @@ Microsoft 365 Defender での自動調査の最中および後に、悪意のあ
 - ファイル [の削除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) 、プロセスの停止、スケジュールされたタスクの削除など、手動のライブ応答アクション。
 - デバイスの分離、ウイルス対策スキャンの実行、ファイルに関する情報の取得など [、Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis)API を使用したライブ応答アクション。 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [アクション センターにアクセスする](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [保留中のアクションを承認または拒否する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)

@@ -2,7 +2,7 @@
 title: Microsoft セキュア スコアを使用してセキュリティの状態を評価する
 description: Microsoft 365 セキュリティ センターで Microsoft セキュア スコアを向上させるアクションを実行する方法について説明します。
 keywords: Microsoft セキュア スコア, セキュア スコア, Office 365 セキュア スコア, Microsoft セキュリティ スコア, Microsoft 365 セキュリティ センター, 改善アクション
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -20,12 +20,13 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: 8cf416e773abc6cbe1fd891fcec9f02a5011c413
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49738013"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930644"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft セキュア スコアを使用してセキュリティの状況を評価する
 
@@ -50,13 +51,13 @@ Microsoft セキュア スコアの概要ページで、これらのグループ
 
 To check on your current score, go to the Microsoft Secure Score overview page and look for the tile that says **Your secure score**. スコアは、達成可能な合計ポイント数と共にパーセンテージで表示されます。
 
-さらに、スコアの横にある [ **含** める] ボタンを選択した場合は、スコアの異なるビューを選択できます。 これらの異なるスコア ビューは、スコア タイルとポイントブレークダウン グラフのグラフに表示されます。
+さらに、スコアの横にある [ **含** める] ボタンを選択した場合は、スコアの異なるビューを選択できます。 これらのさまざまなスコア ビューは、スコア タイルとポイントブレークダウン グラフのグラフに表示されます。
 
 全体的なスコアのビューに追加できるスコアを次に示します。スコア全体の全体像を確認できます。
 
 - **計画されたスコア**: 計画されたアクションが完了すると、投影されたスコアを表示する
 - **現在のライセンス スコア**: 現在の Microsoft ライセンスで実現できるスコアを表示する
-- **達成可能なスコア**: Microsoft ライセンスと現在のリスク受け入れで達成できるスコアを表示します
+- **達成可能なスコア**: Microsoft ライセンスと現在のリスク受け入れで達成できるスコアを表示する
 
 考えられるすべてのスコア ビューを含めた場合、このビューは次のように表示されます。
 
@@ -64,11 +65,11 @@ To check on your current score, go to the Microsoft Secure Score overview page a
 
 ## <a name="take-action-to-improve-your-score"></a>スコアを上げるための対策
 
-[ **改善アクション]** タブには、攻撃の可能性に対処するセキュリティの推奨事項が一覧表示されます。 また、その状態 (対応、計画、受け入れられるリスク、サード パーティ経由での解決、代替軽減策による解決、完了) も含まれます。 すべての改善のための処置の検索、フィルター処理、グループ化を行うことができます。  
+[ **改善アクション]** タブには、攻撃の可能性に対処するセキュリティの推奨事項が一覧表示されます。 また、その状態 (対処、計画済み、リスク受け入れ、サード パーティ経由での解決、代替軽減策による解決、完了) も含まれます。 すべての改善のための処置の検索、フィルター処理、グループ化を行うことができます。  
 
 ### <a name="ranking"></a>ランク付け
 
-ランク付けは、達成するポイント数、実装の難易度、ユーザーへの影響、および複雑さに基づいて行います。 最高ランクの改善のための処置では、難易度、ユーザーへの影響度、複雑度は低く、高ポイントを取ることができます。
+ランク付けは、達成するポイント数、実装の難易度、ユーザーへの影響、複雑さに基づいて行います。 最高ランクの改善のための処置では、難易度、ユーザーへの影響度、複雑度は低く、高ポイントを取ることができます。
 
 ### <a name="view-improvement-action-details"></a>改善アクションの詳細を表示する
 
@@ -91,9 +92,9 @@ To check on your current score, go to the Microsoft Secure Score overview page a
 - **対処するには** 、 - 改善アクションが必要なと認識し、将来ある時点で対処する予定です。 この状態は、部分的に検出されたが、完全には完了していないアクションにも適用されます。
 - **計画済** み - 改善アクションを完了する具体的な計画が実施されています。
 - **受け入れられる** リスク - セキュリティは常に使いやすさとバランスを取る必要があります。すべての推奨事項が環境で機能するとは限しません。 その場合は、リスクまたは残りのリスクを受け入れ、改善アクションを実行しない選択をすることができます。 ポイントは与えらえませんが、改善アクションの一覧にアクションが表示されなくなりました。 このアクションは履歴で表示したり、いつでも元に戻したりできます。
-- **サード パーティを通** じて解決され、代替の軽減策によって **解決されました。** 改善アクションは、サード パーティ製のアプリケーションまたはソフトウェア、または内部ツールによって既に対処されています。 アクションの価値のあるポイントが得られるので、スコアは全体的なセキュリティの体勢をより良く反映します。 サードパーティまたは内部ツールがコントロールをカバーしなくなった場合は、別の状態を選択できます。 改善アクションがこれらの状態のいずれかとしてマークされている場合、Microsoft は実装の完全性を確認できません。
+- **サード パーティを通** じて解決され、別の軽減策によって **解決されました。** 改善アクションは、サードパーティのアプリケーションまたはソフトウェア、または内部ツールによって既に対処されています。 アクションの価値のあるポイントが得られるので、スコアは全体的なセキュリティの体勢をより良く反映します。 サードパーティまたは内部ツールがコントロールをカバーしなくなった場合は、別の状態を選択できます。 改善アクションがこれらの状態のいずれかとしてマークされている場合、Microsoft は実装の完全性を確認できません。
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>脅威&管理改善アクション
+#### <a name="threat--vulnerability-management-improvement-actions"></a>脅威&管理の改善アクション
 
 [デバイス] カテゴリの改善のためのアクションでは、状態を選択できません。 代わりに[、Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)セキュリティ センターの[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)関連する脅威と脆弱性管理のセキュリティに関する推奨事項にアクセスして対応します。 選択した例外と記述する正当な理由は、そのポータルに固有です。 Microsoft セキュア スコア ポータルには表示されません。
 
@@ -103,7 +104,7 @@ To check on your current score, go to the Microsoft Secure Score overview page a
 
 ### <a name="assess-information-and-review-user-impact"></a>情報を評価し、ユーザーへの影響を確認する
 
-「一目 **で」というセクション** には、カテゴリ、保護できる攻撃、製品が表示されます。
+「一目 **で」という** セクションには、カテゴリ、保護できる攻撃、製品が表示されます。
 
 **ユーザーへの** 影響は、改善アクションが実施された場合にユーザーが経験する操作であり、影響を受けるユーザーは影響を受けるユーザーです。
 
@@ -115,7 +116,7 @@ To check on your current score, go to the Microsoft Secure Score overview page a
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 
-問題がある場合は、セキュリティ/プライバシー/コンプライアンス コミュニティに投稿 [&知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) らせてください。 コミュニティを監視しているので、問題に対応します。
+問題がある場合は、セキュリティ/プライバシー/コンプライアンス コミュニティに投稿して [&知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) らせてください。 コミュニティを監視しているので、問題に対応します。
 
 ## <a name="related-resources"></a>関連リソース
 

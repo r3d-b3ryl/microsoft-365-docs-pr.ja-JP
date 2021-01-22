@@ -4,7 +4,7 @@ description: 高度な検索スキーマの Azure Active Directory サインイ�
 keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 1830eeec674c4948bd6492780ef8a0a8039111b8
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.technology: m365d
+ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784289"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931040"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -75,14 +76,14 @@ ms.locfileid: "49784289"
 | `AuthenticationProcessingDetails` | string        | 認証プロセッサの詳細                                                                                                                                          |
 | `AuthenticationRequirement`       | string        | サインインに必要な認証の種類。 可能な値: multiFactorAuthentication (MFA が必要でした) と singleFactorAuthentication (MFA は必要ありません)。                |
 | `TokenIssuerType`                 | int        | トークン発行者が Azure Active Directory (0) または Active Directory フェデレーション サービス (1) かどうかを示します。                                                                             |
-| `RiskLevelAggregated`                       | int        | サインイン中の集計されたリスク レベル。 指定できる値は、0 (集計リスク レベルが設定されていない)、1 (なし)、10 (低)、50 (中)、または 100 (高) です。                               |
+| `RiskLevelAggregated`                       | int        | サインイン中の集計されたリスク レベル。 指定できる値は、0 (集計されたリスク レベルが設定されていない)、1 (なし)、10 (低)、50 (中)、または 100 (高) です。                               |
 | `RiskDetails`                      | int        | サインインしたユーザーの危険な状態に関する詳細                                                                                                                            |
 | `RiskState`                       | int        | 危険なユーザー状態を示します。 指定可能な値は、0 (なし)、1 (安全確認済み)、2 (修復済み)、3 (却下)、4 (危険な場合)、5 (侵害が確認済み) です。                                |
 | `UserAgent`                       | string        | Web ブラウザーまたは他のクライアント アプリケーションからのユーザー エージェント情報                                                                                                             |
 | `ClientAppUsed`                   | string        | 使用されているクライアント アプリを示します。                                                                                                                                                       |
 | `Browser`                         | string        | サインインに使用されるブラウザーのバージョンに関する詳細                                                                                                                            |
 | `ConditionalAccessPolicies`       | string        | サインイン イベントに適用される条件付きアクセス ポリシーの詳細                                                                                                             |
-| `ConditionalAccessStatus`         | int        | サインインに適用される条件付きアクセス ポリシーの状態。 指定できる値は、0 (ポリシーが適用)、1 (ポリシーの適用が失敗)、または 2 (ポリシーが適用されない) です。      |
+| `ConditionalAccessStatus`         | int        | サインインに適用される条件付きアクセス ポリシーの状態。 指定できる値は、0 (ポリシーが適用されている)、1 (ポリシーの適用が失敗した場合)、または 2 (ポリシーが適用されない) です。      |
 | `IPAddress`                       | string        | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス                                                                                                  |
 | `CountryCode`                     | string        | クライアント IP アドレスが地理的に位置する国を示す 2 文字のコード                                                                                                    |
 | `State`                           | string        | サインインが発生した状態 (使用可能な場合)                                                                                                                                      |

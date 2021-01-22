@@ -3,7 +3,7 @@ title: Microsoft 365 Defender API のライセンスと使用条件
 description: Microsoft 365 Defender の API のライセンスと使用条件の説明
 keywords: api, apis, ライセンス, 条項, api, 法律, 通知, 実施基準
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d9b3c48e4b9e89ef7648086b05c9fdd9f078f51e
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 82f31c449ae2e102ac7464e0fef75277660844d1
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719300"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930956"
 ---
 # <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender API のライセンスと使用条件
 
@@ -47,7 +48,7 @@ Microsoft およびすべての投稿者は、クリエイティブ Commons Attr
 
 ドキュメントで参照されている Microsoft、Windows、Microsoft Azure、およびその他の Microsoft 製品およびサービスは、米国およびその他の国における Microsoft の商標または登録商標である場合があります。
 
-このプロジェクトのライセンスは、Microsoft の名前、ロゴ、または商標を使用する権利を付与しません。 Microsoft の一般的な商標ガイドラインは [、Microsoft 商標に記載されています](https://go.microsoft.com/fwlink/?LinkID=254653)。
+このプロジェクトのライセンスは、Microsoft の名前、ロゴ、または商標を使用する権利を付与しません。 Microsoft の一般的な商標に関するガイドラインは [、Microsoft 商標に記載されています](https://go.microsoft.com/fwlink/?LinkID=254653)。
 
 プライバシーに関する情報については [、Microsoft のプライバシーに関するサイトをご覧ください](https://privacy.microsoft.com)。
 
@@ -67,7 +68,7 @@ Microsoft 365 Defender API には調整しきい値があります。
 - **インシデント API**: 1 分あたり最大 50 回の呼び出し、または 1 時間あたり 1500 回の呼び出し。
 - **高度な検索 API**: 1 分あたり最大 15 回の呼び出し、1 時間あたり 10 分の実行時間、1 日あたり 4 時間の実行時間。
 
-調整が次であることを示す HTTP 応答状態コード `429` 。
+調整を示す HTTP 応答状態コード `429` 。
 
 要求が調整されている場合、応答本文には、要求を再び開始できる時間が示されます。
 
