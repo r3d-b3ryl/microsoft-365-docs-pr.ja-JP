@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68546f7ad9f4b97f43611d49054200db4fdd4bbd
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: f9b905e73fe471cc034eae42726a5a86d91a359a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698398"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928821"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
-[カスタムの機密情報の種類](custom-sensitive-info-types.md) は機密性の高いアイテムの識別に利用され、不注意による共有や不適切な共有の防止に役立ちます。 以下に基づいて、カスタムの機密情報の種類を定義します。
+[カスタムの機密情報の種類](sensitive-information-type-learn-about.md) は機密性の高いアイテムの識別に利用され、これにより、不注意による共有や不適切な共有を防止することができます。 以下に基づいて、カスタムの機密情報の種類を定義します。
 
 - パターン
 - *従業員*、*バッジ*、*ID* などのキーワード証拠
@@ -649,7 +649,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 ## <a name="related-articles"></a>関連記事
 
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
-- [カスタムの機密情報の種類](custom-sensitive-info-types.md)
+- [機密情報の種類に関する詳細情報](sensitive-information-type-learn-about.md)
 - [DLP ポリシーの概要](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
