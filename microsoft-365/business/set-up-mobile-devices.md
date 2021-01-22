@@ -1,5 +1,5 @@
 ---
-title: ビジネスユーザー向けの Microsoft 365 用のモバイルデバイスをセットアップする
+title: ビジネス ユーザー向け Microsoft 365 のモバイル デバイスをセットアップする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,92 +20,93 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: IPhone または Android 電話機に Office をインストールすると、Office アプリの仕事ファイルは Microsoft 365 for business で保護されます。
-ms.openlocfilehash: e847a794d34731c22f7a0fca87d246151a6f80a5
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+description: iPhone Office Android スマートフォンにアプリをインストールすると、Office アプリ内の作業ファイルは Microsoft 365 for business によって保護されます。
+ms.openlocfilehash: ef18fcce851b8fa1573fd5134bd25fb7d4a3d8f9
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785874"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928746"
 ---
-# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a><span data-ttu-id="cc3bf-103">ビジネスユーザー向けの Microsoft 365 用のモバイルデバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="cc3bf-103">Set up mobile devices for Microsoft 365 for business users</span></span>
+# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a><span data-ttu-id="1484b-103">ビジネス ユーザー向け Microsoft 365 のモバイル デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="1484b-103">Set up mobile devices for Microsoft 365 for business users</span></span>
 
-<span data-ttu-id="cc3bf-104">タブの指示に従って、Office を iPhone または Android スマートフォンにインストールします。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-104">Follow the instructions in the tabs to install Office on an iPhone or an Android phone.</span></span> <span data-ttu-id="cc3bf-105">これらの手順を実行すると、Office アプリで作成された作業ファイルは、Microsoft 365 for business で保護されます。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-105">After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.</span></span>
+<span data-ttu-id="1484b-104">タブの指示に従って、Office を iPhone または Android スマートフォンにインストールします。</span><span class="sxs-lookup"><span data-stu-id="1484b-104">Follow the instructions in the tabs to install Office on an iPhone or an Android phone.</span></span> <span data-ttu-id="1484b-105">これらの手順を実行すると、アプリで作成された作業Office Microsoft 365 for business によって保護されます。</span><span class="sxs-lookup"><span data-stu-id="1484b-105">After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.</span></span>
 
-<span data-ttu-id="cc3bf-106">この例は Outlook 用ですが、インストールするその他の Office アプリにも適用されます。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-106">The example is for Outlook, but applies for any other Office apps you want to install also.</span></span>
+<span data-ttu-id="1484b-106">この例は Outlook 用ですが、インストールするその他の Office アプリにも適用されます。</span><span class="sxs-lookup"><span data-stu-id="1484b-106">The example is for Outlook, but applies for any other Office apps you want to install also.</span></span>
   
-## <a name="set-up-mobile-devices"></a><span data-ttu-id="cc3bf-107">モバイル デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="cc3bf-107">Set up mobile devices</span></span>
+## <a name="set-up-mobile-devices"></a><span data-ttu-id="1484b-107">モバイル デバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="1484b-107">Set up mobile devices</span></span>
 
-## <a name="iphone"></a>[<span data-ttu-id="cc3bf-108">iPhone</span><span class="sxs-lookup"><span data-stu-id="cc3bf-108">iPhone</span></span>](#tab/iPhone)
+## <a name="iphone"></a>[<span data-ttu-id="1484b-108">iPhone</span><span class="sxs-lookup"><span data-stu-id="1484b-108">iPhone</span></span>](#tab/iPhone)
   
-<span data-ttu-id="cc3bf-109">Microsoft 365 for business を使用して iOS デバイスで Office アプリをセットアップする方法について、簡単なビデオを見ることができます。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-109">Watch a short video on how to set up Office apps on iOS devices with Microsoft 365 for business.</span></span><br><br>
+<span data-ttu-id="1484b-109">ビジネス向け Microsoft 365 を使用して iOS デバイスで Office アプリをセットアップする方法について、短いビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="1484b-109">Watch a short video on how to set up Office apps on iOS devices with Microsoft 365 for business.</span></span><br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-<span data-ttu-id="cc3bf-110">このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-110">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="1484b-110">このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="1484b-110">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
-<span data-ttu-id="cc3bf-111">**App Store** に移動し、検索フィールドに「 Microsoft Outlook」と入力します。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-111">Go to **App store**, and in the search field type in Microsoft Outlook.</span></span>
+<span data-ttu-id="1484b-111">**App Store** に移動し、検索フィールドに「 Microsoft Outlook」と入力します。</span><span class="sxs-lookup"><span data-stu-id="1484b-111">Go to **App store**, and in the search field type in Microsoft Outlook.</span></span>
   
 ![Go to the iPhone App Store](../media/886913de-76e5-4883-8ed0-4eb3ec06188f.png)
   
-<span data-ttu-id="cc3bf-113">クラウドのアイコンをタップして Outlook をインストールします。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-113">Tap the cloud icon to install Outlook.</span></span>
+<span data-ttu-id="1484b-113">クラウドのアイコンをタップして Outlook をインストールします。</span><span class="sxs-lookup"><span data-stu-id="1484b-113">Tap the cloud icon to install Outlook.</span></span>
   
 ![Tap the cloud icon to install Outlook](../media/665e1620-948a-4ab8-b914-dca49530142c.png)
   
-<span data-ttu-id="cc3bf-115">インストールが完了したら、[ **開く**] ボタンをタップして、Outlook を開き、[ **はじめに**] をタップします。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-115">When the installation is done, tap the **Open** button to open Outlook and then tap **Get Started**.</span></span>
+<span data-ttu-id="1484b-115">インストールが完了したら、[ **開く**] ボタンをタップして、Outlook を開き、[ **はじめに**] をタップします。</span><span class="sxs-lookup"><span data-stu-id="1484b-115">When the installation is done, tap the **Open** button to open Outlook and then tap **Get Started**.</span></span>
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-<span data-ttu-id="cc3bf-117">[**電子メールアカウントの追加**] 画面に仕事用のメールアドレスを入力し、[アカウントの追加] をクリックして、 \> **Add Account**Microsoft 365 for business の資格情報 \> **サインインに**入力します。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-117">Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 for business credentials \> **Sign in**.</span></span>
+<span data-ttu-id="1484b-117">[メール アカウントの追加]画面で仕事用メール アドレスを入力し \> 、Microsoft 365 for business 資格情報を \> **入力します**。</span><span class="sxs-lookup"><span data-stu-id="1484b-117">Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 for business credentials \> **Sign in**.</span></span>
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-<span data-ttu-id="cc3bf-119">組織がアプリ内のファイルを保護している場合は、アプリ内のデータが組織で保護されており、アプリを再起動して引き続き使用できることを示すダイアログが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-119">If your organization is protecting files in apps, you'll see a dialog stating that your organization is now protecting the data in the app and you need to restart the app to continue to use it.</span></span> <span data-ttu-id="cc3bf-120">[ **OK**] をタップして Outlook を終了します。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-120">Tap **OK** and close Outlook.</span></span> 
+<span data-ttu-id="1484b-119">組織がアプリ内のファイルを保護している場合は、組織がアプリ内のデータを保護し、引き続きアプリを使用するにはアプリを再起動する必要があるというダイアログが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1484b-119">If your organization is protecting files in apps, you'll see a dialog stating that your organization is now protecting the data in the app and you need to restart the app to continue to use it.</span></span> <span data-ttu-id="1484b-120">[ **OK**] をタップして Outlook を終了します。</span><span class="sxs-lookup"><span data-stu-id="1484b-120">Tap **OK** and close Outlook.</span></span> 
   
-![組織が Outlook アプリを保護していることを示すスクリーンショット](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![組織が Outlook アプリを保護中を示すスクリーンショット](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
-<span data-ttu-id="cc3bf-122">iPhone で Outlook を見つけて、再起動します。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-122">Locate Outlook on the iPhone, and restart it.</span></span> <span data-ttu-id="cc3bf-123">プロンプトが表示されたら、PIN を入力して確認します。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-123">When prompted, enter a PIN and verify it.</span></span> <span data-ttu-id="cc3bf-124">これで iPhone で Outlook を使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-124">Outlook on your iPhone is now ready to be used.</span></span>
+<span data-ttu-id="1484b-122">iPhone で Outlook を見つけて、再起動します。</span><span class="sxs-lookup"><span data-stu-id="1484b-122">Locate Outlook on the iPhone, and restart it.</span></span> <span data-ttu-id="1484b-123">メッセージが表示されたら、PIN を入力して確認します。</span><span class="sxs-lookup"><span data-stu-id="1484b-123">When prompted, enter a PIN and verify it.</span></span> <span data-ttu-id="1484b-124">これで iPhone で Outlook を使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="1484b-124">Outlook on your iPhone is now ready to be used.</span></span>
   
 ![Set a PIN to access your organization's data](../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
-## <a name="android"></a>[<span data-ttu-id="cc3bf-126">Android</span><span class="sxs-lookup"><span data-stu-id="cc3bf-126">Android</span></span>](#tab/Android)
+## <a name="android"></a>[<span data-ttu-id="1484b-126">Android</span><span class="sxs-lookup"><span data-stu-id="1484b-126">Android</span></span>](#tab/Android)
   
-<span data-ttu-id="cc3bf-127">Android デバイスへの Outlook と Office のインストールに関するビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-127">Watch a video about installing Outlook and Office on Android devices.</span></span><br><br>
+<span data-ttu-id="1484b-127">Android デバイスへの Outlook と Officeのインストールに関するビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="1484b-127">Watch a video about installing Outlook and Office on Android devices.</span></span><br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-<span data-ttu-id="cc3bf-128">このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-128">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="1484b-128">このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="1484b-128">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
-<span data-ttu-id="cc3bf-129">Android phone でのセットアップを開始するには、再生ストアに移動します。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-129">To begin setup on your Android phone, go to the Play Store.</span></span>
+<span data-ttu-id="1484b-129">Android スマートフォンでセットアップを開始するには、Play ストアに移動します。</span><span class="sxs-lookup"><span data-stu-id="1484b-129">To begin setup on your Android phone, go to the Play Store.</span></span>
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-<span data-ttu-id="cc3bf-131">[Google Play] 検索ボックスに「Microsoft Outlook」と入力し、[**インストール**] をタップします。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-131">Enter Microsoft Outlook in the Google Play search box and tap **Install**.</span></span> <span data-ttu-id="cc3bf-132">Outlook のインストールが完了したら、 **[開く**] をタップします。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-132">Once Outlook is done installing, tap **Open**.</span></span>
+<span data-ttu-id="1484b-131">Google Play 検索ボックスに Microsoft Outlook を入力し、[インストール] をタップ **します**。</span><span class="sxs-lookup"><span data-stu-id="1484b-131">Enter Microsoft Outlook in the Google Play search box and tap **Install**.</span></span> <span data-ttu-id="1484b-132">Outlook のインストールが完了したら、[開く] を **タップします**。</span><span class="sxs-lookup"><span data-stu-id="1484b-132">Once Outlook is done installing, tap **Open**.</span></span>
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-<span data-ttu-id="cc3bf-134">Outlook アプリで、[**スタート**] をタップしてから、Microsoft 365 for business の電子メールアカウントを追加し、 \> **Continue**組織の資格情報でサインインします。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-134">In the Outlook app, tap **Get Started**, then add your Microsoft 365 for business email account \> **Continue**, and sign in with your organization credentials.</span></span>
+<span data-ttu-id="1484b-134">Outlook アプリで、[開始] をタップし、ビジネス向け Microsoft 365 のメール アカウント [続行] を追加して、組織の資格情報で \> サインインします。</span><span class="sxs-lookup"><span data-stu-id="1484b-134">In the Outlook app, tap **Get Started**, then add your Microsoft 365 for business email account \> **Continue**, and sign in with your organization credentials.</span></span>
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
-<span data-ttu-id="cc3bf-136">Intune ポータル サイト アプリをインストールする必要があること示すダイアログで、[ **ストアに移動**] をタップします。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-136">In the dialog that states you must install the Intune Company Portal app, tap **Go to store**.</span></span>
+<span data-ttu-id="1484b-136">Intune ポータル サイト アプリをインストールする必要があること示すダイアログで、[ **ストアに移動**] をタップします。</span><span class="sxs-lookup"><span data-stu-id="1484b-136">In the dialog that states you must install the Intune Company Portal app, tap **Go to store**.</span></span>
   
 ![Tap on Go to store to get Intune Company Portal app](../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-<span data-ttu-id="cc3bf-138">[ストアの再生] で、Intune ポータルサイトをインストールします。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-138">In Play Store, install Intune Company Portal.</span></span>
+<span data-ttu-id="1484b-138">Play ストアで、Intune ポータル サイトをインストールします。</span><span class="sxs-lookup"><span data-stu-id="1484b-138">In Play Store, install Intune Company Portal.</span></span>
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
-<span data-ttu-id="cc3bf-p105">Outlook をもう一度開き、PIN を入力して確認します。これで Outlook アプリが使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="cc3bf-p105">Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready for use.</span></span>
+<span data-ttu-id="1484b-p105">Outlook をもう一度開き、PIN を入力して確認します。これで Outlook アプリが使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="1484b-p105">Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready for use.</span></span>
   
 ![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## <a name="see-also"></a><span data-ttu-id="cc3bf-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="cc3bf-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1484b-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="1484b-143">See also</span></span>
 
-[<span data-ttu-id="cc3bf-144">一般法人向け Microsoft 365 のトレーニング ビデオ</span><span class="sxs-lookup"><span data-stu-id="cc3bf-144">Microsoft 365 for business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[<span data-ttu-id="1484b-144">一般法人向け Microsoft 365 のトレーニング ビデオ</span><span class="sxs-lookup"><span data-stu-id="1484b-144">Microsoft 365 for business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---
