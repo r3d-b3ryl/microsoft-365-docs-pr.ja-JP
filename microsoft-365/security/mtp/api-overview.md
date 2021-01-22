@@ -3,7 +3,7 @@ title: Microsoft 365 Defender API の概要
 description: Microsoft 365 Defender で利用可能な API について説明します。
 keywords: api, apis, 概要, インシデント, インシデント, 脅威の検出, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,46 +19,47 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1a75a561e60c05208e8ea302505f9644ac0bc044
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 8e06d4b4f7c895b532091c73e8269411fb38bf21
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719192"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931004"
 ---
-# <a name="overview-of--microsoft-365-defender-apis"></a><span data-ttu-id="3cca7-104">Microsoft 365 Defender API の概要</span><span class="sxs-lookup"><span data-stu-id="3cca7-104">Overview of  Microsoft 365 Defender APIs</span></span>
+# <a name="overview-of--microsoft-365-defender-apis"></a><span data-ttu-id="4f87c-104">Microsoft 365 Defender API の概要</span><span class="sxs-lookup"><span data-stu-id="4f87c-104">Overview of  Microsoft 365 Defender APIs</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="3cca7-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="3cca7-105">**Applies to:**</span></span>
+<span data-ttu-id="4f87c-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="4f87c-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="3cca7-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3cca7-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="4f87c-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="4f87c-106">Microsoft 365 Defender</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="3cca7-107">一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="3cca7-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="3cca7-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="3cca7-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> <span data-ttu-id="4f87c-107">一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="4f87c-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="4f87c-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="4f87c-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
-<span data-ttu-id="3cca7-109">Microsoft 365 Defender は、統合対応プラットフォームの上に構築されています。</span><span class="sxs-lookup"><span data-stu-id="3cca7-109">Microsoft 365 Defender is built on top of an integration-ready platform.</span></span>
+<span data-ttu-id="4f87c-109">Microsoft 365 Defender は、統合対応プラットフォームの上に構築されています。</span><span class="sxs-lookup"><span data-stu-id="4f87c-109">Microsoft 365 Defender is built on top of an integration-ready platform.</span></span>
 
-<span data-ttu-id="3cca7-110">Microsoft 365 Defender API を使用して、共有インシデントと高度なハンティング テーブルに基づいてワークフローを自動化します。</span><span class="sxs-lookup"><span data-stu-id="3cca7-110">Use the Microsoft 365 Defender APIs to automate workflows based on the shared incident and advanced hunting tables.</span></span>
+<span data-ttu-id="4f87c-110">Microsoft 365 Defender API を使用して、共有インシデントと高度なハンティング テーブルに基づいてワークフローを自動化します。</span><span class="sxs-lookup"><span data-stu-id="4f87c-110">Use the Microsoft 365 Defender APIs to automate workflows based on the shared incident and advanced hunting tables.</span></span>
 
-- <span data-ttu-id="3cca7-111">**[複合インシデント キュー](api-incident.md)** - インシデント API の下で、完全な攻撃範囲と影響を受けたすべての資産をグループ化することで、重要な機能に重点を置きます。</span><span class="sxs-lookup"><span data-stu-id="3cca7-111">**[Combined incidents queue](api-incident.md)** - Focus on what's critical by grouping the full attack scope and all impacted assets together under the incident API.</span></span>
+- <span data-ttu-id="4f87c-111">**[複合インシデント キュー](api-incident.md)** - インシデント API の下で、攻撃の全範囲と影響を受けたすべての資産をグループ化することで、重要な機能に重点を置きます。</span><span class="sxs-lookup"><span data-stu-id="4f87c-111">**[Combined incidents queue](api-incident.md)** - Focus on what's critical by grouping the full attack scope and all impacted assets together under the incident API.</span></span>
 
-- <span data-ttu-id="3cca7-112">**[製品間](api-advanced-hunting.md)** の脅威の検出 - セキュリティ チームの組織の知識を活用して、侵害の兆候を探します。独自のカスタム クエリを作成して、複数の保護製品にわたって収集された生データをふるい分けします。</span><span class="sxs-lookup"><span data-stu-id="3cca7-112">**[Cross-product threat hunting](api-advanced-hunting.md)** - Leverage your security team's organizational knowledge to hunt for signs of compromise, by creating your own custom queries to sift over raw data collected across multiple protection products.</span></span>
+- <span data-ttu-id="4f87c-112">**[製品間](api-advanced-hunting.md)** の脅威の検出 - セキュリティ チームの組織の知識を活用して、侵害の兆候を探します。独自のカスタム クエリを作成して、複数の保護製品にわたって収集された生データをふるい分けします。</span><span class="sxs-lookup"><span data-stu-id="4f87c-112">**[Cross-product threat hunting](api-advanced-hunting.md)** - Leverage your security team's organizational knowledge to hunt for signs of compromise, by creating your own custom queries to sift over raw data collected across multiple protection products.</span></span>
 
-<span data-ttu-id="3cca7-113">これらの Microsoft 365 Defender 固有の API と共に、他[](api-articles.md)の各セキュリティ製品は、独自の機能を活用するのに役立つ追加の API を公開します。</span><span class="sxs-lookup"><span data-stu-id="3cca7-113">Along with these Microsoft 365 Defender-specific APIs, each of our other security products expose [additional APIs](api-articles.md) to help you take advantage of their unique capabilities.</span></span>
+<span data-ttu-id="4f87c-113">これらの Microsoft 365 Defender 固有の API と共に、他[](api-articles.md)の各セキュリティ製品は、独自の機能を活用するのに役立つ追加の API を公開します。</span><span class="sxs-lookup"><span data-stu-id="4f87c-113">Along with these Microsoft 365 Defender-specific APIs, each of our other security products expose [additional APIs](api-articles.md) to help you take advantage of their unique capabilities.</span></span>
 
-## <a name="learn-more"></a><span data-ttu-id="3cca7-114">詳細情報</span><span class="sxs-lookup"><span data-stu-id="3cca7-114">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="4f87c-114">詳細情報</span><span class="sxs-lookup"><span data-stu-id="4f87c-114">Learn more</span></span>
 
-| <span data-ttu-id="3cca7-115">**API にアクセスする方法を理解する**</span><span class="sxs-lookup"><span data-stu-id="3cca7-115">**Understand how to access the APIs**</span></span> |
+| <span data-ttu-id="4f87c-115">**API にアクセスする方法を理解する**</span><span class="sxs-lookup"><span data-stu-id="4f87c-115">**Understand how to access the APIs**</span></span> |
 |-|
-| [<span data-ttu-id="3cca7-116">API クォータとライセンスについて</span><span class="sxs-lookup"><span data-stu-id="3cca7-116">Learn about API quotas and licensing</span></span>](api-terms.md) |
-| [<span data-ttu-id="3cca7-117">Microsoft 365 Defender API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="3cca7-117">Access the Microsoft 365 Defender APIs</span></span>](api-access.md) |
-| <span data-ttu-id="3cca7-118">**アプリのビルド**</span><span class="sxs-lookup"><span data-stu-id="3cca7-118">**Build apps**</span></span> |
-| [<span data-ttu-id="3cca7-119">"Hello world" アプリを作成する</span><span class="sxs-lookup"><span data-stu-id="3cca7-119">Create a 'Hello world' app</span></span>](api-hello-world.md) |
-| [<span data-ttu-id="3cca7-120">ユーザーの代わりに Microsoft 365 Defender API にアクセスするアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="3cca7-120">Create an app to access Microsoft 365 Defender APIs on behalf of a user</span></span>](api-create-app-user-context.md) |
-| [<span data-ttu-id="3cca7-121">ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="3cca7-121">Create an app to access Microsoft 365 Defender without a user</span></span>](api-create-app-web.md) |
-| [<span data-ttu-id="3cca7-122">マルチテナント パートナーが Microsoft 365 Defender API にアクセスできるアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="3cca7-122">Create an app with multi-tenant partner access to Microsoft 365 Defender APIs</span></span>](api-partner-access.md) |
-| <span data-ttu-id="3cca7-123">**アプリのトラブルシューティングと保守**</span><span class="sxs-lookup"><span data-stu-id="3cca7-123">**Troubleshoot and maintain your apps**</span></span> |
-| [<span data-ttu-id="3cca7-124">API のエラー コードについて</span><span class="sxs-lookup"><span data-stu-id="3cca7-124">Understand API error codes</span></span>](api-error-codes.md) |
-| [<span data-ttu-id="3cca7-125">Azure Key Vault を使用してアプリのシークレットを管理する</span><span class="sxs-lookup"><span data-stu-id="3cca7-125">Manage secrets in your apps with Azure Key Vault</span></span>](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
-| [<span data-ttu-id="3cca7-126">ユーザー サインイン用の OAuth 2.0 承認を実装する</span><span class="sxs-lookup"><span data-stu-id="3cca7-126">Implement OAuth 2.0 authorization for user sign in</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
+| [<span data-ttu-id="4f87c-116">API クォータとライセンスについて</span><span class="sxs-lookup"><span data-stu-id="4f87c-116">Learn about API quotas and licensing</span></span>](api-terms.md) |
+| [<span data-ttu-id="4f87c-117">Microsoft 365 Defender API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="4f87c-117">Access the Microsoft 365 Defender APIs</span></span>](api-access.md) |
+| <span data-ttu-id="4f87c-118">**アプリのビルド**</span><span class="sxs-lookup"><span data-stu-id="4f87c-118">**Build apps**</span></span> |
+| [<span data-ttu-id="4f87c-119">"Hello world" アプリを作成する</span><span class="sxs-lookup"><span data-stu-id="4f87c-119">Create a 'Hello world' app</span></span>](api-hello-world.md) |
+| [<span data-ttu-id="4f87c-120">ユーザーの代わりに Microsoft 365 Defender API にアクセスするアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="4f87c-120">Create an app to access Microsoft 365 Defender APIs on behalf of a user</span></span>](api-create-app-user-context.md) |
+| [<span data-ttu-id="4f87c-121">ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="4f87c-121">Create an app to access Microsoft 365 Defender without a user</span></span>](api-create-app-web.md) |
+| [<span data-ttu-id="4f87c-122">マルチテナント パートナーが Microsoft 365 Defender API にアクセスできるアプリを作成する</span><span class="sxs-lookup"><span data-stu-id="4f87c-122">Create an app with multi-tenant partner access to Microsoft 365 Defender APIs</span></span>](api-partner-access.md) |
+| <span data-ttu-id="4f87c-123">**アプリのトラブルシューティングと保守**</span><span class="sxs-lookup"><span data-stu-id="4f87c-123">**Troubleshoot and maintain your apps**</span></span> |
+| [<span data-ttu-id="4f87c-124">API のエラー コードについて</span><span class="sxs-lookup"><span data-stu-id="4f87c-124">Understand API error codes</span></span>](api-error-codes.md) |
+| [<span data-ttu-id="4f87c-125">Azure Key Vault を使用してアプリのシークレットを管理する</span><span class="sxs-lookup"><span data-stu-id="4f87c-125">Manage secrets in your apps with Azure Key Vault</span></span>](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [<span data-ttu-id="4f87c-126">ユーザー サインイン用の OAuth 2.0 承認を実装する</span><span class="sxs-lookup"><span data-stu-id="4f87c-126">Implement OAuth 2.0 authorization for user sign in</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

@@ -3,7 +3,7 @@ title: Microsoft 365 Defender API へのアクセス
 description: Microsoft 365 Defender API にアクセスする方法について説明します。
 keywords: access, apis, アプリケーション コンテキスト, ユーザー コンテキスト, aad アプリケーション, アクセス トークン
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,75 +19,76 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5e01aaf2ee9255fd909b26278346fd4ccf54729a
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: ea787adfba0afb425da5f6ea0f6609f96e06b378
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719240"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932156"
 ---
-# <a name="access-the-microsoft-365-defender-apis"></a><span data-ttu-id="a388d-104">Microsoft 365 Defender API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="a388d-104">Access the Microsoft 365 Defender APIs</span></span>
+# <a name="access-the-microsoft-365-defender-apis"></a><span data-ttu-id="08a28-104">Microsoft 365 Defender API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="08a28-104">Access the Microsoft 365 Defender APIs</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="a388d-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="a388d-105">**Applies to:**</span></span>
+<span data-ttu-id="08a28-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="08a28-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="a388d-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a388d-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="08a28-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="08a28-106">Microsoft 365 Defender</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a388d-107">一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="a388d-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="a388d-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="a388d-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> <span data-ttu-id="08a28-107">一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。</span><span class="sxs-lookup"><span data-stu-id="08a28-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="08a28-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="08a28-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
-<span data-ttu-id="a388d-109">Microsoft 365 Defender は、一連のプログラム API を通じてデータとアクションの多くを公開します。</span><span class="sxs-lookup"><span data-stu-id="a388d-109">Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="a388d-110">これらの API は、ワークフローを自動化し、Microsoft 365 Defender の機能をフルに活用するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="a388d-110">These APIs help you automate workflows and make full use of Microsoft 365 Defender's capabilities.</span></span>
+<span data-ttu-id="08a28-109">Microsoft 365 Defender は、一連のプログラム API を通じてデータとアクションの多くを公開します。</span><span class="sxs-lookup"><span data-stu-id="08a28-109">Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="08a28-110">これらの API は、ワークフローを自動化し、Microsoft 365 Defender の機能をフルに活用するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="08a28-110">These APIs help you automate workflows and make full use of Microsoft 365 Defender's capabilities.</span></span>
 
-<span data-ttu-id="a388d-111">一般に、API を使用するには、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a388d-111">In general, you'll need to take the following steps to use the APIs:</span></span>
+<span data-ttu-id="08a28-111">一般に、API を使用するには、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="08a28-111">In general, you'll need to take the following steps to use the APIs:</span></span>
 
-- <span data-ttu-id="a388d-112">Azure Active Directory アプリケーションを作成する</span><span class="sxs-lookup"><span data-stu-id="a388d-112">Create an Azure Active Directory application</span></span>
-- <span data-ttu-id="a388d-113">このアプリケーションを使用してアクセス トークンを取得する</span><span class="sxs-lookup"><span data-stu-id="a388d-113">Get an access token using this application</span></span>
-- <span data-ttu-id="a388d-114">トークンを使用して Microsoft 365 Defender API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="a388d-114">Use the token to access the Microsoft 365 Defender API</span></span>
+- <span data-ttu-id="08a28-112">Azure Active Directory アプリケーションを作成する</span><span class="sxs-lookup"><span data-stu-id="08a28-112">Create an Azure Active Directory application</span></span>
+- <span data-ttu-id="08a28-113">このアプリケーションを使用してアクセス トークンを取得する</span><span class="sxs-lookup"><span data-stu-id="08a28-113">Get an access token using this application</span></span>
+- <span data-ttu-id="08a28-114">トークンを使用して Microsoft 365 Defender API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="08a28-114">Use the token to access the Microsoft 365 Defender API</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a388d-115">API アクセスには OAuth2.0 認証が必要です。</span><span class="sxs-lookup"><span data-stu-id="a388d-115">API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="a388d-116">詳細については [、「OAuth 2.0 認証コード フロー」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。</span><span class="sxs-lookup"><span data-stu-id="a388d-116">For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
+> <span data-ttu-id="08a28-115">API アクセスには OAuth2.0 認証が必要です。</span><span class="sxs-lookup"><span data-stu-id="08a28-115">API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="08a28-116">詳細については [、「OAuth 2.0 認証コード フロー」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。</span><span class="sxs-lookup"><span data-stu-id="08a28-116">For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
 
-<span data-ttu-id="a388d-117">これらの手順を完了すると、特定のコンテキストを使用して Microsoft 365 Defender API にアクセスする準備が整います。</span><span class="sxs-lookup"><span data-stu-id="a388d-117">Once you've accomplished these steps, you're ready to access the Microsoft 365 Defender API using a particular context.</span></span>
+<span data-ttu-id="08a28-117">これらの手順を完了すると、特定のコンテキストを使用して Microsoft 365 Defender API にアクセスする準備が整います。</span><span class="sxs-lookup"><span data-stu-id="08a28-117">Once you've accomplished these steps, you're ready to access the Microsoft 365 Defender API using a particular context.</span></span>
 
-## <a name="application-context-recommended"></a><span data-ttu-id="a388d-118">アプリケーション コンテキスト (推奨)</span><span class="sxs-lookup"><span data-stu-id="a388d-118">Application context (Recommended)</span></span>
+## <a name="application-context-recommended"></a><span data-ttu-id="08a28-118">アプリケーション コンテキスト (推奨)</span><span class="sxs-lookup"><span data-stu-id="08a28-118">Application context (Recommended)</span></span>
 
-<span data-ttu-id="a388d-119">バックグラウンド サービスやデーモンなど、サインインしているユーザーが存在しないアプリでは、このコンテキストを使用します。</span><span class="sxs-lookup"><span data-stu-id="a388d-119">Use this context for apps that run without a signed-in user present, such as background services or daemons.</span></span>
+<span data-ttu-id="08a28-119">バックグラウンド サービスやデーモンなど、サインインしているユーザーが存在しないアプリでは、このコンテキストを使用します。</span><span class="sxs-lookup"><span data-stu-id="08a28-119">Use this context for apps that run without a signed-in user present, such as background services or daemons.</span></span>
 
-1. <span data-ttu-id="a388d-120">Azure Active Directory Web アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="a388d-120">Create an Azure Active Directory web application.</span></span>
-2. <span data-ttu-id="a388d-121">必要なアクセス許可をアプリケーションに割り当てる。</span><span class="sxs-lookup"><span data-stu-id="a388d-121">Assign the desired permissions to the application.</span></span>
-3. <span data-ttu-id="a388d-122">アプリケーションのキーを作成します。</span><span class="sxs-lookup"><span data-stu-id="a388d-122">Create a key for the application.</span></span>
-4. <span data-ttu-id="a388d-123">アプリケーションとそのキーを使用してセキュリティ トークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="a388d-123">Get a security token using the application and its key.</span></span>
-5. <span data-ttu-id="a388d-124">トークンを使用して Microsoft 365 Defender API にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="a388d-124">Use the token to access  Microsoft 365 Defender API.</span></span>
+1. <span data-ttu-id="08a28-120">Azure Active Directory Web アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="08a28-120">Create an Azure Active Directory web application.</span></span>
+2. <span data-ttu-id="08a28-121">必要なアクセス許可をアプリケーションに割り当てる。</span><span class="sxs-lookup"><span data-stu-id="08a28-121">Assign the desired permissions to the application.</span></span>
+3. <span data-ttu-id="08a28-122">アプリケーションのキーを作成します。</span><span class="sxs-lookup"><span data-stu-id="08a28-122">Create a key for the application.</span></span>
+4. <span data-ttu-id="08a28-123">アプリケーションとそのキーを使用してセキュリティ トークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="08a28-123">Get a security token using the application and its key.</span></span>
+5. <span data-ttu-id="08a28-124">トークンを使用して Microsoft 365 Defender API にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="08a28-124">Use the token to access  Microsoft 365 Defender API.</span></span>
 
-<span data-ttu-id="a388d-125">詳しくは、「ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成 **[する」をご覧ください](api-create-app-web.md)**。</span><span class="sxs-lookup"><span data-stu-id="a388d-125">For more information, see **[Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)**.</span></span>
+<span data-ttu-id="08a28-125">詳しくは、「ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成 **[する」をご覧ください](api-create-app-web.md)**。</span><span class="sxs-lookup"><span data-stu-id="08a28-125">For more information, see **[Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)**.</span></span>
 
-## <a name="user-context"></a><span data-ttu-id="a388d-126">ユーザー コンテキスト</span><span class="sxs-lookup"><span data-stu-id="a388d-126">User context</span></span>
+## <a name="user-context"></a><span data-ttu-id="08a28-126">ユーザー コンテキスト</span><span class="sxs-lookup"><span data-stu-id="08a28-126">User context</span></span>
 
-<span data-ttu-id="a388d-127">このコンテキストを使用して、1 人のユーザーの代わりにアクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="a388d-127">Use this context to perform actions on behalf of a single user.</span></span>
+<span data-ttu-id="08a28-127">このコンテキストを使用して、1 人のユーザーに代わってアクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="08a28-127">Use this context to perform actions on behalf of a single user.</span></span>
 
-1. <span data-ttu-id="a388d-128">Azure Active Directory ネイティブ アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="a388d-128">Create an Azure Active Directory native application.</span></span>
-2. <span data-ttu-id="a388d-129">必要なアクセス許可をアプリケーションに割り当てる。</span><span class="sxs-lookup"><span data-stu-id="a388d-129">Assign the desired permission to the application.</span></span>
-3. <span data-ttu-id="a388d-130">アプリケーションのユーザー資格情報を使用してセキュリティ トークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="a388d-130">Get a security token using the user credentials for the application.</span></span>
-4. <span data-ttu-id="a388d-131">トークンを使用して Microsoft 365 Defender API にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="a388d-131">Use the token to access  Microsoft 365 Defender API.</span></span>
+1. <span data-ttu-id="08a28-128">Azure Active Directory ネイティブ アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="08a28-128">Create an Azure Active Directory native application.</span></span>
+2. <span data-ttu-id="08a28-129">必要なアクセス許可をアプリケーションに割り当てる。</span><span class="sxs-lookup"><span data-stu-id="08a28-129">Assign the desired permission to the application.</span></span>
+3. <span data-ttu-id="08a28-130">アプリケーションのユーザー資格情報を使用してセキュリティ トークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="08a28-130">Get a security token using the user credentials for the application.</span></span>
+4. <span data-ttu-id="08a28-131">トークンを使用して Microsoft 365 Defender API にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="08a28-131">Use the token to access  Microsoft 365 Defender API.</span></span>
 
-<span data-ttu-id="a388d-132">詳しくは、「ユーザーに代わって **[Microsoft 365 Defender API](api-create-app-user-context.md)** にアクセスするアプリの作成」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a388d-132">For more information, see **[Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md)**.</span></span>
+<span data-ttu-id="08a28-132">詳しくは、「ユーザーに代わって **[Microsoft 365 Defender API](api-create-app-user-context.md)** にアクセスするアプリの作成」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="08a28-132">For more information, see **[Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md)**.</span></span>
 
-## <a name="partner-context"></a><span data-ttu-id="a388d-133">パートナー コンテキスト</span><span class="sxs-lookup"><span data-stu-id="a388d-133">Partner context</span></span>
+## <a name="partner-context"></a><span data-ttu-id="08a28-133">パートナー コンテキスト</span><span class="sxs-lookup"><span data-stu-id="08a28-133">Partner context</span></span>
 
-<span data-ttu-id="a388d-134">複数のテナントにわたって多くのユーザーにアプリを提供する必要がある場合は、この [コンテキストを使用します](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)。</span><span class="sxs-lookup"><span data-stu-id="a388d-134">Use this context when you need to provide an app to many users across [multiple tenants](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).</span></span>
+<span data-ttu-id="08a28-134">複数のテナントにわたって多くのユーザーにアプリを提供する必要がある場合は、この [コンテキストを使用します](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)。</span><span class="sxs-lookup"><span data-stu-id="08a28-134">Use this context when you need to provide an app to many users across [multiple tenants](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).</span></span>
 
-1. <span data-ttu-id="a388d-135">Azure Active Directory マルチテナント アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="a388d-135">Create an Azure Active Directory multi-tenant application.</span></span>
-2. <span data-ttu-id="a388d-136">必要なアクセス許可をアプリケーションに割り当てる。</span><span class="sxs-lookup"><span data-stu-id="a388d-136">Assign the desired permission to the application.</span></span>
-3. <span data-ttu-id="a388d-137">各 [テナントからアプリ](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) の管理者の同意を得る。</span><span class="sxs-lookup"><span data-stu-id="a388d-137">Get [admin consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) for the app from each tenant.</span></span>
-4. <span data-ttu-id="a388d-138">顧客のテナント ID に基づいて、ユーザー資格情報を使用してセキュリティ トークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="a388d-138">Get a security token using user credentials based on a customer's tenant ID.</span></span>
-5. <span data-ttu-id="a388d-139">トークンを使用して Microsoft 365 Defender API にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="a388d-139">Use the token to access  Microsoft 365 Defender API.</span></span>
+1. <span data-ttu-id="08a28-135">Azure Active Directory マルチテナント アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="08a28-135">Create an Azure Active Directory multi-tenant application.</span></span>
+2. <span data-ttu-id="08a28-136">必要なアクセス許可をアプリケーションに割り当てる。</span><span class="sxs-lookup"><span data-stu-id="08a28-136">Assign the desired permission to the application.</span></span>
+3. <span data-ttu-id="08a28-137">各 [テナントからアプリ](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) の管理者の同意を得る。</span><span class="sxs-lookup"><span data-stu-id="08a28-137">Get [admin consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) for the app from each tenant.</span></span>
+4. <span data-ttu-id="08a28-138">顧客のテナント ID に基づいて、ユーザー資格情報を使用してセキュリティ トークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="08a28-138">Get a security token using user credentials based on a customer's tenant ID.</span></span>
+5. <span data-ttu-id="08a28-139">トークンを使用して Microsoft 365 Defender API にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="08a28-139">Use the token to access  Microsoft 365 Defender API.</span></span>
 
-<span data-ttu-id="a388d-140">詳しくは **[、「Microsoft 365 Defender API](api-partner-access.md)** へのパートナー アクセスを使ったアプリの作成」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a388d-140">For more information, see **[Create an app with partner access to Microsoft 365 Defender APIs](api-partner-access.md)**.</span></span>
+<span data-ttu-id="08a28-140">詳しくは **[、「Microsoft 365 Defender API](api-partner-access.md)** へのパートナー アクセスを使ったアプリの作成」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="08a28-140">For more information, see **[Create an app with partner access to Microsoft 365 Defender APIs](api-partner-access.md)**.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="a388d-141">関連記事</span><span class="sxs-lookup"><span data-stu-id="a388d-141">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="08a28-141">関連記事</span><span class="sxs-lookup"><span data-stu-id="08a28-141">Related articles</span></span>
 
-- [<span data-ttu-id="a388d-142">Microsoft 365 Defender API の概要</span><span class="sxs-lookup"><span data-stu-id="a388d-142">Microsoft 365 Defender APIs overview</span></span>](api-overview.md)
-- [<span data-ttu-id="a388d-143">ユーザー サインインと API アクセスの OAuth 2.0 承認</span><span class="sxs-lookup"><span data-stu-id="a388d-143">OAuth 2.0 authorization for user sign in and API access</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
-- [<span data-ttu-id="a388d-144">Azure Key Vault を使用してサーバー アプリのシークレットを管理する</span><span class="sxs-lookup"><span data-stu-id="a388d-144">Manage secrets in your server apps with Azure Key Vault</span></span>](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
-- [<span data-ttu-id="a388d-145">Microsoft 365 API にアクセスする "Hello world" アプリケーションを作成する</span><span class="sxs-lookup"><span data-stu-id="a388d-145">Create a 'Hello world' application that accesses the Microsoft 365 APIs</span></span>](api-hello-world.md)
+- [<span data-ttu-id="08a28-142">Microsoft 365 Defender API の概要</span><span class="sxs-lookup"><span data-stu-id="08a28-142">Microsoft 365 Defender APIs overview</span></span>](api-overview.md)
+- [<span data-ttu-id="08a28-143">ユーザー サインインと API アクセスの OAuth 2.0 承認</span><span class="sxs-lookup"><span data-stu-id="08a28-143">OAuth 2.0 authorization for user sign in and API access</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [<span data-ttu-id="08a28-144">Azure Key Vault を使用してサーバー アプリのシークレットを管理する</span><span class="sxs-lookup"><span data-stu-id="08a28-144">Manage secrets in your server apps with Azure Key Vault</span></span>](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [<span data-ttu-id="08a28-145">Microsoft 365 API にアクセスする "Hello world" アプリケーションを作成する</span><span class="sxs-lookup"><span data-stu-id="08a28-145">Create a 'Hello world' application that accesses the Microsoft 365 APIs</span></span>](api-hello-world.md)
