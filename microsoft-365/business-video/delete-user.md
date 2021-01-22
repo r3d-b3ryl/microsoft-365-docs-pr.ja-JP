@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ビジネス向け Microsoft 365 でユーザーを削除する方法について説明します。
-ms.openlocfilehash: d44b04f0a053fb8dc43188a048043d0a90c708ea
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 01c26431947950195c5fc711d8bd0d82c808beec
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702770"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927276"
 ---
 # <a name="delete-a-user"></a>ユーザーを削除する
 
@@ -37,13 +38,13 @@ ms.locfileid: "49702770"
 
 ## <a name="try-it"></a>演習
 
-1. 管理センターから [ユーザー] を選択し、[ **アクティブなユーザー**] **を選択します**。
+1. 管理センターから [ユーザー] を選択 **し**、[アクティブなユーザー] **を選択します**。
 1. 削除するユーザーを選択し、[ユーザーの削除] **を選択します**。
 1. ライセンスを削除するにはチェック ボックスをオンにし、メール エイリアスを削除するにはチェック ボックスをオンにします。
 1. ユーザーが代理人メールボックスのアクセス許可を持っていた場合は、ここで削除できます。
 1. 別のユーザーに元従業員の OneDrive へのアクセス権を与える場合は、このチェック ボックスをオンにし、そのユーザーを検索します。
 1. 名前を選択します。
-1. このユーザーは、ファイルを新しい場所に移動する期間が 30 日間になります。
+1. このユーザーは、新しい場所にファイルを移動する期間が 30 日間になります。
 1. 別のユーザーに元従業員のメールへのアクセス権を与える場合は、このチェック ボックスをオンにし、[ユーザーの選択] を選択してメール **オプションを設定します**。
 1. ユーザーを選択し、[次へ] を **選択します**。
 1. 必要な場合は、メールボックスが元従業員に属していたかどうかを示す新しい表示名を作成し、[次へ] を選択 **します**。

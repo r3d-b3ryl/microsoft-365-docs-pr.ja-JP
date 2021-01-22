@@ -1,5 +1,5 @@
 ---
-title: iOS Officeアプリをインストールする
+title: iOS に Office アプリをインストールする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: iOS デバイスにアプリをOfficeする方法について学習します。
-ms.openlocfilehash: 4b92b21d1002d63f00cec322495cdc7d122c2f7c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: e3b703f3bc0bfe6972ac73e9ad7de955d773a812
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702501"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927110"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>iOS デバイスに Outlook Officeアプリをインストールする
 
@@ -45,7 +46,7 @@ Microsoft 365 Business Premium&#39;したら、iPhone にOfficeアプリをイ�
 7. (オプション)、アカウントを追加するには [Let's Do] ** を選択するか、後で選択  **してこの手順**  をスキップします。
 8. **[OK]** を選択してアプリを再起動し、Microsoft 365 Business で Outlook データを保護します。
 9. Outlook を再度開き、確認メッセージが表示されます。 **[OK] を選択します**。
-10. Outlook および他のアプリ用の PIN Office作成し、確認します。 今後は、この PIN を使用して、すべてのアプリ データOffice保護します。
+10. Outlook および他のアプリ用の PIN Officeし、確認します。 今後は、この PIN を使用して、すべてのアプリ データOffice保護します。
 11. 電子メール  **通知を有効にするには、[**  オンにする] を選択します。
 12. プッシュ  **通知を有効** にするには、[許可] を選択します。
 

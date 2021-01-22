@@ -1,5 +1,5 @@
 ---
-title: 支払い方法を更新する
+title: 支払方法を更新する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 for business の支払い方法を更新する方法について説明します。
-ms.openlocfilehash: a7424b4d104b83921f46024a1493444c9de547d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: b29aea838e2682035ac56ef31291a5628854df79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702580"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925864"
 ---
 # <a name="update-yor-payment-method-for-your-subscription"></a>サブスクリプションの支払い方法を更新する
 
@@ -38,7 +39,7 @@ Microsoft 365 Business サブスクリプションの支払い方法は簡単に
 ## <a name="try-it"></a>演習
 
 1. [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
-1. [課金 **] を** 選択し、[支払 **い方法] を選択します**。 ファイルに登録されているクレジット カードが表示されます。
+1. [課金 **] を** 選択し、[お支払 **い方法] を選択します**。 ファイルに登録されているクレジット カードが表示されます。
 1. 既存のカードを編集するには:
     1. カードの横にある 3 つのドットを選択し、[支払い方法の編集 **] を選択します**。
     1. カードのセキュリティ コードを入力します。

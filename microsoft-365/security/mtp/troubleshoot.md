@@ -3,7 +3,7 @@ title: Microsoft 365 Defender サービスの問題のトラブルシューテ�
 description: 既知の Microsoft 365 Defender の問題に対する解決策と回避方法を見つける
 keywords: Microsoft Threat Protection のトラブルシューティング, トラブルシューティング, Azure ATP, 問題, アドオン, 設定ページ
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b7b6ea55d084c114b79dfee0e061b09c8ede8632
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: m365d
+ms.openlocfilehash: 414743fa5ba25b9d2714c1dd08dd38e34ec94372
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760460"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925720"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender サービスの問題のトラブルシューティング
 
@@ -38,7 +39,7 @@ ms.locfileid: "49760460"
 
 ## <a name="i-dont-see-microsoft-365-defender-content"></a>Microsoft 365 Defender コンテンツが表示できない
 
-ポータルのインシデント、アクション センター、検索などの機能がナビゲーション ウィンドウに表示されていない場合は、テナントに適切なライセンスが割り当てらたっている必要があります。
+ポータルの [インシデント]、アクション センター、検索などの機能がナビゲーション ウィンドウに表示されていない場合は、テナントに適切なライセンスが設定されている必要があります。
 
 詳細については、「[前提条件](prerequisites.md)」をご覧ください。
 

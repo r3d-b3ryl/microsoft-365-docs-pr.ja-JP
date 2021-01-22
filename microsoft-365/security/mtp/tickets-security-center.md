@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 セキュリティセンターで ServiceNow チケットを作成および追跡する
-description: Microsoft 365 セキュリティセンターから ServiceNow のチケットを作成および追跡する方法について説明します。
-keywords: security, Microsoft 365, M365, secure score, security center, ServiceNow, チケット, tasks
-ms.prod: w10
+title: Microsoft 365 セキュリティ センターで ServiceNow チケットを作成および追跡する
+description: Microsoft 365 セキュリティ センターから ServiceNow でチケットを作成および追跡する方法について説明します。
+keywords: セキュリティ, Microsoft 365, M365, セキュア スコア, セキュリティ センター, ServiceNow, チケット, タスク
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,22 +19,23 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: f0aadbf2dbf8cb8d9815b4ef8b1c8d3d892c8b31
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.technology: m365d
+ms.openlocfilehash: 3df24e01df0436f6b5824917c91dc4e7c4ee984c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588531"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925496"
 ---
-# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターで ServiceNow チケットを作成および追跡する
+# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターで ServiceNow チケットを作成および追跡する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
 >**ServiceNow コネクタのプレビュー期間が終了しました**<br>
->この機能は使用できなくなりました。 フィードバックをお寄せいただきありがとうございます。次の手順を決定しています。
+>この機能は使用できなくなりました。 次の手順を決定する間、フィードバックと継続的なサポートに感謝します。
 
-[Microsoft 365 セキュリティセンター](overview-security-center.md)は、ServiceNow のチケットをネイティブに作成および追跡する機能によって強化されました。 [ServiceNow の詳細情報](https://www.servicenow.com/)
+[Microsoft 365 セキュリティ](overview-security-center.md)センターは、ServiceNow でチケットをネイティブに作成および追跡する機能が強化されました。 [ServiceNow の詳細](https://www.servicenow.com/)
 
-セキュリティセンターでは、セキュリティ管理者が Microsoft のセキュリティ [で保護されたスコア](microsoft-secure-score.md) 向上アクションを ServiceNow に直接送信して、チケットを作成することができます。 インシデント管理チケットと変更管理チケットの両方を作成できます。 セキュリティセンターのホームページと ServiceNow のチケットを追跡します。
+セキュリティ センターでは、セキュリティ管理者は Microsoft [セキュア](microsoft-secure-score.md) スコア向上アクションを ServiceNow に直接送信し、チケットを作成できます。 インシデント管理チケットと変更管理チケットの両方を作成できます。 セキュリティ センターのホーム ページと ServiceNow でチケットを追跡します。
 

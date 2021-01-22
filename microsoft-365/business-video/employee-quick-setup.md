@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 従業員が Microsoft 365 Business Premium で利用できるOfficeをセットアップする方法について説明します。
-ms.openlocfilehash: 9a610b9de2ddb64aeaf7447721d8fa500dbdf0c9
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: 従業員が Microsoft 365 Business Premium で取得Officeアプリをセットアップする方法について説明します。
+ms.openlocfilehash: 1715562a648af42bff07ab9a3e62647e386125cb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702949"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927252"
 ---
 # <a name="employee-quick-setup"></a>従業員のクイック セットアップ
 

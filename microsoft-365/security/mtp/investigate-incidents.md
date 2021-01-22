@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 Defender でインシデントを調査する
+title: Microsoft 365 Defender でのインシデントの調査
 description: デバイス、ユーザー、メールボックスに関連するインシデントを分析します。
 keywords: インシデント、コンピューター、デバイス、ユーザー、ID、メール、電子メール、メールボックス、調査、グラフ、証拠
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,14 +21,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a6cdf55b33c91a33675bb4909c0cb08e8561d212
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 6a3bd6be81b4ea4ef11a366267d7a36d45e622b9
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846750"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926896"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデントを調査する
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの調査
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,17 +38,17 @@ ms.locfileid: "48846750"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender は、デバイス、ユーザー、およびメールボックス全体に関連するすべてのアラート、資産、調査、および証拠を集約して、広範な攻撃を包括的に把握できるようにします。
+Microsoft 365 Defender は、デバイス、ユーザー、メールボックス全体から関連するアラート、資産、調査、証拠を集約して、攻撃全体を総合的に調査します。
 
 効果的な修復計画を考案できるようにするために、ネットワークに影響するアラートを調査し、その意味を理解し、インシデントに関連する証拠を照合します。
 
 ## <a name="investigate-an-incident"></a>インシデントの調査
 
-1. インシデント キューからインシデントを選択します。 <BR> サイドパネルが開き、状態、重大度、カテゴリ、影響を受けるエンティティなどの重要な情報のプレビューが表示されます。
+1. インシデント キューからインシデントを選択します。 <BR> サイド パネルが開き、状態、重要度、カテゴリ、影響を受け取ったエンティティなどの重要な情報のプレビューが表示されます。
 
     ![インシデント サイドパネルの画像](../../media/incident-side-panel.png)
 
-2. [ **インシデント ページを開く** ] を選択します。 <BR> これにより、インシデントの詳細、コメント、およびアクション、タブ (概要、警告、デバイス、ユーザー、調査、証拠) の詳細が確認できます。
+2. [**インシデント ページを開く**] を選択します。 <BR> インシデント ページが開き、インシデントの詳細、コメント、アクション、タブ (概要、アラート、デバイス、ユーザー、調査、証拠) が表示されます。
 
 3. インシデントに関連するアラート、デバイス、ユーザー、その他のエンティティを確認します。
 
@@ -57,7 +58,7 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 
 ![インシデントの概要ページの画像](../../media/incidents-overview.png)
 
-攻撃カテゴリは、kill チェインに対して高度な攻撃が行われたことを視覚的および数値で確認できるようにします。 Microsoft の他のセキュリティ製品と同様に、Microsoft 365 Defender は[MITRE ATT&の &trade; の皿](https://attack.mitre.org/)フレームワークに沿っています。
+攻撃カテゴリを使用すると、キル チェーンに対する攻撃の進行状況を視覚的に数値で確認できます。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender は[MITRE ATT &trade; ](https://attack.mitre.org/)&CK フレームワークに対応しています。
 
 範囲セクションでは、このインシデントの一部である最も影響を受ける資産の一覧が表示されます。 この資産に関する特定の情報 (リスク レベル、調査の優先順位、資産のタグ付けなど) がある場合は、その情報もこのセクションに表示されます。
 
@@ -69,11 +70,11 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 
 ## <a name="alerts"></a>アラート
 
-インシデントに関連付けられているすべての警告と、重要度、警告に関係していたエンティティ、アラートのソース (Id の microsoft defender、エンドポイントの microsoft defender、microsoft defender for Office 365)、およびそれらが相互にリンクされた理由に関する情報を表示することができます。
+インシデントに関連するアラートと、重大度、アラートに関与したエンティティ、アラートのソース (Microsoft Defender for Identity、エンドポイント用 Microsoft Defender、Office 365 用 Microsoft Defender)、およびこれらのアラートがリンクされた理由など、インシデントに関連するアラートに関するその他の情報を表示できます。
 
 ![インシデント アラート ページの画像](../../media/incident-alerts.png)
 
-既定では、アラートは発生順に並べ替えられています。これにより、発生した攻撃を時系列で確認できます。 各アラートをクリックすると、該当するアラートページが表示され、その通知の詳細な調査を行うことができます。
+既定では、アラートは発生順に並べ替えられています。これにより、発生した攻撃を時系列で確認できます。 各アラートをクリックすると、関連するアラート ページが表示されます。このページでは、そのアラートの詳細な調査を実行できます。
 
 ## <a name="devices"></a>デバイス
 
@@ -95,21 +96,21 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 
 ## <a name="mailboxes"></a>メールボックス
 
-インシデントに関連すると識別されたメールボックスを調査します。 さらに調査作業を行うために、メール関連の警告を選択すると、Microsoft Defender for Office 365 が開き、修復処理を実行できます。
+インシデントに関連すると識別されたメールボックスを調査します。 さらに調査作業を行うには、メール関連のアラートを選択すると、microsoft Defender が Office 365 用に開き、修復アクションを実行できます。
 
 ![インシデントの [メールボックス] タブの画像](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>調査
 
-[ **調査** ] を選択すると、このインシデントで通知によってトリガーされたすべての自動調査が表示されます。 この調査では、エンドポイントのための自動調査の構成方法や、Office 365 の Defender 用の Defender での自動調査を実行するように、修復アクションが実行されるか、アナリストの承認が行われます。
+[ **調査] を** 選択して、このインシデントのアラートによってトリガーされた自動調査を表示します。 調査は、Microsoft Defender for Endpoint と Defender for Office 365 で自動調査を実行するように構成した方法に応じて、修復アクションを実行するか、アナリストによるアクションの承認を待ちます。
 
 ![インシデントの [調査] タブの画像](../../media/incident-investigations.png)
 
-調査を選択して [調査の詳細] ページに移動すると、調査と修復状況に関する詳細情報が表示されます。 調査の一環として承認待ちのアクションがある場合は、[保留中のアクション] タブに表示されます。インシデント修復の一環としてアクションを実行します。
+調査を選択して [調査の詳細] ページに移動すると、調査と修復状況に関する詳細情報が表示されます。 調査の一環として承認待ちアクションがある場合は、[保留中のアクション] タブに表示されます。インシデント修復の一環としてアクションを実行します。
 
 ## <a name="evidence"></a>証拠
 
-Microsoft 365 Defender は、通知内のすべてのインシデントのサポートされているイベントと疑わしいエンティティを自動的に調査して、autoresponse と重要なファイル、プロセス、サービス、メールなどに関する情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。
+Microsoft 365 Defender は、アラートでサポートされているインシデントのイベントと不審なエンティティを自動的に調査し、自動応答と重要なファイル、プロセス、サービス、メールなどの情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。
 
 ![インシデントの [証拠] タブの画像](../../media/incident-evidence.png)
 

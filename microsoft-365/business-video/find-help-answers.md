@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium の管理者向けヘルプを検索する方法について説明します。
-ms.openlocfilehash: 0fb3e3ae2521353b9185e5b7f27b681e1d9c743c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3eaf5d63d681076386643e28f0270ae5cd532971
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703212"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925136"
 ---
 # <a name="find-answers-and-help-for-admins"></a>管理者向け回答とヘルプを見つける
 
@@ -43,7 +44,7 @@ Microsoft 365 Business Premium に関して質問がある場合やサポート�
 1. 大規模 **またはより複雑なビジネスの** 場合は、エンタープライズ IT プロフェッショナルを選択します。
 1. 管理センターに戻り、カスタマイズされたセットアップガイダンスを選択して、特定のセットアップ タスクについて説明する多数のガイドを表示します。
 1. 管理センターのホーム ページに戻り、ユーザー向けトレーニングを選択して、特定のアプリに関するヘルプを取得し、毎日使用する機能を有効に利用する方法について説明します。
-1. 管理センターに戻り、[ヘルプが必要] **を選択** してサポート アシスタントを開きます。 質問またはヘルプを表示するトピックを入力し、[送信] を選択 **します**。 管理センターまたは質問に回答する記事へのリンクを選択します。
+1. 管理センターに戻り、[ヘルプ **が必要] を選択** してサポート アシスタントを開きます。 質問またはヘルプを表示するトピックを入力し、[送信] を選択 **します**。 管理センターまたは質問に回答する記事へのリンクを選択します。
 1. 質問に対する回答が見つからない場合は、いつでもサポートに問い合わせ、サポート担当者が間近で対応します。
 
 次のリソースを使用して、問題に関するヘルプを表示できます。

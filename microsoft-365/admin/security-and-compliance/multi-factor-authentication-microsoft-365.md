@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 の多要素認証について説明します。
-ms.openlocfilehash: cb425f3fd3d97dc0cd8815699bd22cb2540aed46
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: 7d62d88acb5137bd0674de7a42b44103bc9fc5f0
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001515"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926548"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 の多要素認証
 
@@ -37,7 +39,7 @@ ms.locfileid: "49001515"
 - 容易に複製できないユーザーの所有物 (スマート フォンなど)。
 - ユーザーに固有の生物学的特徴 (指紋、顔、または他の生体認証属性など)。
 
-追加の認証方法は、ユーザーのパスワードが確認されるまで使用されません。 MFA では、強力なユーザー パスワードが侵害された場合でも、攻撃者がスマート フォンや指紋を持っていないため、サインインを完了できません。
+追加の検証方法は、ユーザーのパスワードが確認されるまで使用されません。 MFA では、強力なユーザー パスワードが侵害された場合でも、攻撃者がスマート フォンや指紋を持っていないため、サインインを完了できません。
 
 ## <a name="mfa-support-in-microsoft-365"></a>Microsoft 365 の MFA サポート
 
@@ -47,7 +49,7 @@ ms.locfileid: "49001515"
 - 電話呼び出し。
 - Microsoft Authenticator スマート フォン アプリ。
 
-いずれの場合も、MFA サインインは、追加の確認のための "簡単には複製されていないものがあります" という方法を使用しています。 Microsoft 365 および Office 365 の MFA は、次の複数の方法で有効にできます。
+どちらの場合も、MFA サインインでは、追加の検証に "簡単に複製されないもの" メソッドを使用します。 Microsoft 365 および Office 365 の MFA は、次の複数の方法で有効にできます。
 
 - セキュリティの既定値を使用する
 - 条件付きアクセス ポリシーを使用する
@@ -57,7 +59,7 @@ ms.locfileid: "49001515"
 
 |計画|推奨事項|お客様の種類|
 |---|---|---|
-|すべての Microsoft 365 プラン|すべてのユーザー アカウントに対して MFA を要求する、セキュリティの既定値を使用します。 <p> 個々のユーザーアカウントでユーザーごとの MFA を構成することもできますが、この方法はお勧めできません。|小規模企業|
+|すべての Microsoft 365 プラン|すべてのユーザー アカウントに対して MFA を要求する、セキュリティの既定値を使用します。 <p> 個々のユーザー アカウントでユーザーごとの MFA を構成することもできますが、これはお勧めしません。|小規模企業|
 |Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1 ライセンス|条件付きアクセス ポリシーを使用して、グループ メンバーシップ、アプリ、その他の条件に基づいてユーザー アカウントに MFA を要求します。|小規模企業から大規模企業まで|
 |Microsoft 365 E5 <p> Azure AD Premium P2|Azure AD Identity Protection を使用して、サインイン リスクの条件に基づいて MFA を要求します。|大規模企業|
 ||||
@@ -75,7 +77,7 @@ ms.locfileid: "49001515"
 
 Azure ポータル内の Azure AD の **プロパティ** ウィンドウで、セキュリティの既定値を有効または無効にします。
 
-![ディレクトリのプロパティページの画像。](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+![[ディレクトリのプロパティ] ページの画像。](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 すべての Microsoft 365 プランで、セキュリティの既定値を使用できます。
 
@@ -93,7 +95,7 @@ Azure ポータル内の Azure AD の **プロパティ** ウィンドウで、�
 
 Azure ポータル内の Azure AD の **セキュリティ** ウィンドウで、条件付きアクセス ポリシーを構成します。
 
-![条件付きアクセスのメニューオプションの画像](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![条件付きアクセスのメニュー オプションの画像](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 条件付きアクセス ポリシーは、次のプランで使用できます。
 
@@ -134,13 +136,13 @@ Azure AD Identity Protection とリスク ベースの条件付きアクセス �
 
 詳細については、こちらの [Azure AD Identity Protection の概要](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)をご覧ください。
 
-### <a name="legacy-per-user-mfa-not-recommended"></a>従来のユーザーごとの MFA (推奨されません)
+### <a name="legacy-per-user-mfa-not-recommended"></a>ユーザーごとの従来の MFA (推奨されません)
 
 ユーザー アカウントのサインインに MFA を要求するには、セキュリティの既定値または条件付きアクセス ポリシーを使用する必要があります。これらのいずれも使用できない場合は、あらゆるサイズのサブスクリプションについて、管理者ロール、特にグローバル管理者ロールを持つユーザー アカウントに対する MFA を強く推奨します。
 
 Microsoft 365 管理センターの **アクティブなユーザー** ウィンドウで、各ユーザー アカウントに対して MFA を有効にします。
 
-![[アクティブなユーザー] ページでの多要素認証オプションの画像](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![[アクティブなユーザー] ページの [多要素認証] オプションの画像](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 有効にすると、ユーザーが次回サインインしたときに、MFA に登録し、追加の確認方法を選択してテストするように求められます。
 
@@ -150,9 +152,9 @@ Microsoft 365 管理センターの **アクティブなユーザー** ウィン
 
 ||Enabled|無効|第 2 の認証方法|
 |---|---|---|---|
-|**セキュリティの既定値**|条件付きアクセスポリシーを使用できません|条件付きアクセス ポリシーを使用できる|Microsoft Authenticator アプリ|
-|**条件付きアクセス ポリシー**|有効になっている場合、セキュリティの既定値を有効にすることはできません|すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます|MFA 登録中にユーザーが指定|
-|**従来のユーザーごとの MFA (推奨されません)**|毎回のサインインで MFA を要求して、セキュリティの既定値と条件付きアクセス ポリシーを上書きします|セキュリティの既定値と条件付きアクセス ポリシーによって上書きされます|MFA 登録中にユーザーが指定|
+|**セキュリティの既定値**|条件付きアクセス ポリシーを使用できない|条件付きアクセス ポリシーを使用できる|Microsoft Authenticator アプリ|
+|**条件付きアクセス ポリシー**|有効になっている場合は、セキュリティの既定値を有効にできません。|すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます|MFA 登録中にユーザーが指定|
+|**ユーザーごとの従来の MFA (推奨されません)**|毎回のサインインで MFA を要求して、セキュリティの既定値と条件付きアクセス ポリシーを上書きします|セキュリティの既定値と条件付きアクセス ポリシーによって上書きされます|MFA 登録中にユーザーが指定|
 ||||
 
 セキュリティの既定値が有効になっている場合、すべての新しいユーザーは、次回のサインイン時に MFA 登録と Microsoft Authenticator アプリの使用を求められます。

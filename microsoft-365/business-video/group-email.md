@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: グループメール アドレスを作成する方法について学習します。
-ms.openlocfilehash: 4a0716d4289fc937e90f660cabe4b34b1540600d
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 8ebbd311e77b509b1d4c2b00ed59012a2e08399d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702913"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927122"
 ---
 # <a name="create-a-group-email-address"></a>グループのメール アドレスを作成する
 
@@ -41,5 +42,5 @@ ms.locfileid: "49702913"
 3. プライバシー ドロップダウンを開き、[プライベート] を  **選択します**。
 4. [すべてのグループ  **のメールとイベントをメンバーの受信トレイに送信する]**  チェック ボックスをオンにします。
 5. [  **メンバーの追加]** で、メールを受信する従業員を選択し、[メンバーの追加]  **を選択します**。
-6. Outlook の  **[ホーム]**  タブで、[グループの設定]  **を選択し、[** グループの編集 **] を選択します**。
+6. Outlook の  **[ホーム]**  タブで、[グループの設定]  **を選択し、[** グループの編集] **を選択します**。
 7. [グループの **編集]** ボックスで、[組織外のユーザーにグループへのメールを送信する] チェック ボックスをオンにして **、[OK]** を選択します。

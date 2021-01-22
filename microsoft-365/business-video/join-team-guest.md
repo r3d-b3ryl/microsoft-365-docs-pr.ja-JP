@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft Teams でチームにゲストとして参加する方法について説明します。
-ms.openlocfilehash: 85ad752c3b54dcd64020771b097026c964e6fac5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 31d5acb1a0294a54bcb5b5c7c74d76dbba7124f7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702710"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925028"
 ---
 # <a name="join-a-team-as-a-guest"></a>ゲストとしてチームに参加
 

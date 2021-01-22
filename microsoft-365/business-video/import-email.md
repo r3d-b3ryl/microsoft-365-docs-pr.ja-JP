@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ビジネス向け Microsoft 365 にメールをインポートする方法について説明します。
-ms.openlocfilehash: ae72662c779d230addb3b15d0d486900328fa602
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: a53552ddead1ed69a7c9b77bb8021a6340690059
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702511"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927177"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>メールを Microsoft 365 for Business にインポートする 
 
@@ -50,7 +51,7 @@ Microsoft 365 にサインアップした後も、古いアカウントにメー
 
 ### <a name="step-2-import-your-old-email-into-your-new-email-account"></a>手順 2: 古いメールを新しいメール アカウントにインポートする
 
-1. Outlook で、[**ファイル**]、[**開く]、[****エクスポート]、および**[インポート **/エクスポート] の順に選択します**。
+1. Outlook で、[ファイル **]、[****開く]、[****エクスポート]、および**[インポート **/エクスポート] の順に選択します**。
 2. 別  **のプログラムまたはファイルから [インポート] を選択し、[** 次へ] を  **選択します**。
 3. **Outlook データ ファイルを選択し、[** 次へ] を **選択します**。
 4. [  **参照]** を選択し、エクスポートしたファイルに移動します。 それを選択し、[開く]  **を選択し**、[次へ] を **選択します**。

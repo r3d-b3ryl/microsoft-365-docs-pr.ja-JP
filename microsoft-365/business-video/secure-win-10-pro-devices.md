@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で Windows 10 Pro デバイス ポリシーを管理する方法について説明します。
-ms.openlocfilehash: 9052859f03035a76bf69b7c8c23c75ae00353846
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: f42c175543ae16ae645c17997b20ed67aa5d705c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703189"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926008"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>Windows 10 Pro デバイス ポリシーの管理
 

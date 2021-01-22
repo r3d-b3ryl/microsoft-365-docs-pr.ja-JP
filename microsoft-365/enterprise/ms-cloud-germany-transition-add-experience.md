@@ -18,20 +18,24 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター リージョンの Office 365 サービスに移行する際の追加のカスタマー エクスペリエンス情報。'
-ms.openlocfilehash: 3f22ca9c380b3271d0c186be1f50fae4a0ea5bb9
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 3f9bc40d7551dfcdb65abcf8b150f98b8242d7d2
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688195"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921692"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>移行フェーズのアクションと Microsoft Cloud Deutschland からの移行に対する影響 (高度) 
+
+Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのドイツリージョンへのテナント移行は、一連のフェーズと、ワークロードごとに構成されたアクションとして実行されます。 この図は、新しいドイツのデータセンターへの移行の 9 つのフェーズを示しています。
+
+![新しいドイツデータセンターへの移行の 9 つのフェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 以下のセクションでは、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター リージョンの Office 365 サービスに移行する際のカスタマー エクスペリエンスに関する追加情報を提供します。
 
 ## <a name="services"></a>サービス
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad-phase-2-of-9"></a>Azure AD (フェーズ 2/9)
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -40,7 +44,7 @@ ms.locfileid: "49688195"
 | Azure リソースの移行。 | Office 365 と Azure のリソース (ネットワーク、コンピューティング、ストレージなど) を使用しているお客様は、Office 365 サービス インスタンスへのリソースの移行を実行します。 この移行は、お客様の責任です。 メッセージ センターの投稿は、開始を示します。 Office 365 サービス環境で Azure AD組織の最終処理を行う前に、移行を完了する必要があります。 | Azure Customers | Azure の移行については、Azure 移行プレイブック、Azure Germany の移行 [ガイダンスの概要をご覧ください](https://docs.microsoft.com/azure/germany/germany-migration-main)。 |
 |||||
 
-### <a name="exchange-online"></a>Exchange Online
+### <a name="exchange-online-phase-5-of-9"></a>Exchange Online (フェーズ 5/9)
 
 **Set-UserPhoto を使用している場合**:
 
@@ -56,7 +60,7 @@ ms.locfileid: "49688195"
 |メールボックスのオンボードまたはオフボードの移動を停止または削除します。  | これにより、移動要求がエラーで失敗する心配がなされます。 | ハイブリッド (オンプレミス) 展開を使用している Exchange Online のお客様 | 必要なアクション。 サービスまたはソフトウェア クライアントの障害が発生する可能性があります。 |
 |||||
 
-### <a name="dynamics"></a>Dynamics
+### <a name="dynamics-phase-8-of-9"></a>Dynamics (フェーズ 8/9)
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -66,7 +70,7 @@ ms.locfileid: "49688195"
 \* (i) Microsoft Dynamics 365 をお持ちのお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。 
 
 
-### <a name="power-bi"></a>Power BI
+### <a name="power-bi-phase-8-of-9"></a>Power BI (フェーズ 8/9)
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -76,17 +80,24 @@ ms.locfileid: "49688195"
 \*\* (i) Microsoft Power BI を使用しているお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。 
 
 
-### <a name="office-apps"></a>Office アプリ
+### <a name="office-apps-phase-9-of-9"></a>Office アプリ (フェーズ 9/9)
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
-| クライアントはOffice切りOffice、Azure AD 365 サービスをポイントするようにテナント スコープをOfficeします。 | この構成の変更によりOffice 365 サービス エンドポイントを更新し、Officeポイントできます。 | すべてのOffice顧客 | - 顧客が所有する DNS から MSOID CName が存在する場合は削除します。 <br><br> - すべての Officeアプリを閉じてから再びサインイン (またはクライアントを再起動し、ユーザーにサインインを強制する) をユーザーに通知して、Office クライアントが変更を受け取るのを有効にします。 <br><br> - カットオーバーから 72時間以内に Office アプリを再アクティブ化するように求める Office バナーがユーザーに表示される可能性がある場合は、ユーザーとヘルプ デスクのスタッフに通知します。 <br><br> - 個人用Officeのすべてのアプリケーションを閉じ、ユーザーはサインアウトしてから再度サインインする必要があります。 黄色のアクティブ化バーでサインインし、365 サービスOffice再アクティブ化します。 <br><br> - 共有コンピューターでは、個人用のコンピューターに似た操作が必要であり、特別な手順は必要とされます。 <br><br> - モバイル デバイスでは、ユーザーはアプリからサインアウトし、アプリを閉じてから、もう一度サインインする必要があります。 |
+| クライアントはOffice切りOffice、Azure AD 365 サービスをポイントするようにテナント スコープをOfficeします。 | この構成の変更によりOffice 365 サービス エンドポイントを更新し、Officeポイントできます。 | すべてのOffice顧客 | - すべての Officeアプリを閉じてから再びサインイン (またはクライアントを再起動し、ユーザーにサインインを強制する) をユーザーに通知して、Office クライアントが変更を受け取るのを有効にします。 <br><br> - カットオーバーから 72時間以内に Office アプリを再アクティブ化するように求める Office バナーがユーザーに表示される可能性がある場合は、ユーザーとヘルプ デスクのスタッフに通知します。 <br><br> - 個人用Officeのすべてのアプリケーションを閉じ、ユーザーはサインアウトしてから再度サインインする必要があります。 黄色のアクティブ化バーでサインインし、365 サービスOffice再アクティブ化します。 <br><br> - 共有コンピューターでは、個人用のコンピューターに似た操作が必要であり、特別な手順は必要とされます。 <br><br> - モバイル デバイスでは、ユーザーはアプリからサインアウトし、アプリを閉じてから、もう一度サインインする必要があります。 |
 |||||
 
 ## <a name="during-migration"></a>移行中
 
+### <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (フェーズ 4/9)
 
-### <a name="exchange-online"></a>Exchange Online
+| 手順 | 説明 | 適用対象 | 影響 |
+|:-------|:-----|:-------|:-------|
+| SharePoint と OneDrive が移行されます。 | SharePoint と OneDrive は、このフェーズで Microsoft Cloud Deutschland Office 365 サービスに移行されます。 既存の Microsoft Cloud Deutschland URL は保持されます ( `contoso.sharepoint.de` )。 Microsoft Cloud Deutschland または Office 365 サービスによって発行されたトークンは、移行中に有効です。 | SharePoint のお客様 | Inflight SharePoint 2013 ワークフローは移行中に破損し、移行後に再発行する必要があります。 |
+|||||
+
+
+### <a name="exchange-online-phase-5-of-9"></a>Exchange Online (フェーズ 5/9)
 
 電子情報開示の場合:
 
@@ -96,14 +107,7 @@ ms.locfileid: "49688195"
 |||||
 
 
-### <a name="sharepoint-online"></a>SharePoint Online
-
-| 手順 | 説明 | 適用対象 | 影響 |
-|:-------|:-----|:-------|:-------|
-| SharePoint と OneDrive が移行されます。 | SharePoint と OneDrive は、このフェーズで Microsoft Cloud Deutschland Office 365 サービスに移行されます。 既存の Microsoft Cloud Deutschland URL は保持されます ( `contoso.sharepoint.de` )。 Microsoft Cloud Deutschland または Office 365 サービスによって発行されたトークンは、移行中に有効です。 | SharePoint のお客様 | Inflight SharePoint 2013 ワークフローは移行中に破損し、移行後に再発行する必要があります。 |
-|||||
-
-### <a name="skype-for-business-online"></a>Skype for Business Online
+### <a name="skype-for-business-online-phase-7-of-9"></a>Skype for Business Online (フェーズ 7/9)
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -113,7 +117,7 @@ ms.locfileid: "49688195"
 
 ## <a name="post-migration"></a>移行後
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad-phase-9-of-9"></a>Azure AD (フェーズ 9/9)
 
 ハイブリッドの場合:
 
@@ -150,7 +154,15 @@ DNS の場合:
 | 365 サービス エンドポイント用にパートナー Officeサービスを更新します。 | - Office 365 Germany をポイントするサード パーティのサービスとパートナーは、Office 365 サービス エンドポイントをポイントするために更新する必要があります。 例: ベンダーやパートナーに合わせ、ギャラリー アプリバージョンのアプリケーションを再登録します (可能な場合)。 <br><br> - Graph API を利用するカスタム アプリケーションの参照をポイント `graph.microsoft.de` します `graph.microsoft.com` 。 エンドポイントが変更された他の API も、利用する場合は更新する必要があります。 <br><br> - 世界規模のエンドポイントにリダイレクトするために、ファースト パーティ以外のすべてのエンタープライズ アプリケーションを変更します。  | すべてのOffice顧客 | 必要なアクション。 サービスまたはソフトウェア クライアントの障害が発生する可能性があります。 |
 |||||
 
-### <a name="exchange-online"></a>Exchange Online
+### <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (フェーズ 4/9)
+
+| 手順 | 説明 | 適用対象 | 影響 |
+|:-------|:-----|:-------|:-------|
+| SharePoint 2013 ワークフローを再発行します。 | 移行前作業では、SharePoint 2013 ワークフローの数を削減しました。 移行が完了したら、お客様はワークフローを再発行できます。 | すべてのOffice顧客 | これは必須のアクションです。 そうしない場合は、ユーザーが混乱し、ヘルプ デスクへの電話が必要な場合があります。 |
+| Outlook 経由でアイテムを共有する | Outlook を介したアイテムの共有は、テナントのカットオーバー後に機能しなくなりました。 | Sharepoint Online と OneDrive for Business | - SharePoint Online と OneDrive for Business では、Outlook 経由でアイテムを共有できます。 Outlook ボタンを押すと、共有可能なリンクが作成され、新しいメッセージにプッシュOutlook Web App。 <br><br> - テナントのカットオーバー後、この共有方法は機能しません。 これは既知の問題です。 ただし、この Outlook 機能は廃止の道のりにあるので、廃止が展開されるまで問題の修正は計画されていません。 |
+
+
+### <a name="exchange-online-phase-5-of-9"></a>Exchange Online (フェーズ 5/9)
 
 ハイブリッド Exchange 構成を使用している場合:
 
@@ -166,12 +178,7 @@ DNS の場合:
 | 移行前の手順で作成された組織全体のアイテム保持ポリシーを削除する | お客様は、移行前の作業中に作成された組織全体のアイテム保持ポリシーを削除できます。 | 移行前の手順の一部としてアイテム保持ポリシーを適用したユーザーすべて。 | なし。 |
 |||||
 
-### <a name="sharepoint-online"></a>SharePoint Online
 
-| 手順 | 説明 | 適用対象 | 影響 |
-|:-------|:-----|:-------|:-------|
-| SharePoint 2013 ワークフローを再発行します。 | 移行前作業では、SharePoint 2013 ワークフローの数を削減しました。 移行が完了したら、お客様はワークフローを再発行できます。 | すべてのOffice顧客 | これは必須のアクションです。 そうしない場合は、ユーザーが混乱し、ヘルプ デスクへの電話が必要な場合があります。 |
-| Outlook 経由でアイテムを共有する | Outlook を介したアイテムの共有は、テナントのカットオーバー後に機能しなくなりました。 | SharePoint Online と OneDrive for Business | - SharePoint Online と OneDrive for Business では、Outlook 経由でアイテムを共有できます。 Outlook ボタンを押すと、共有可能なリンクが作成され、新しいメッセージにプッシュOutlook Web App。 <br><br> - テナントのカットオーバー後、この共有方法は機能しません。 これは既知の問題です。 ただし、この Outlook 機能は廃止の道のりにあるので、廃止が展開されるまで問題の修正は計画されていません。 |
 
 ## <a name="next-step"></a>次の手順
 

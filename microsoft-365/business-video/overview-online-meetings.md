@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ビジネス向けオンライン会議をホストする方法について学習します。
-ms.openlocfilehash: b0a95ff30fbff4da46ebcf0d8c236ba1023deebb
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 178091c5233da5e96ed6c9f074b5418cc00c4155
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702510"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926128"
 ---
 # <a name="host-online-meetings-for-your-business"></a>ビジネス向けオンライン会議をホストする
 
@@ -34,7 +35,7 @@ ms.locfileid: "49702510"
 
 ビデオと画面共有を利用するには[](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)、無料版をダウンロードするか、ブラウザー[でオンラインで](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9)参加する必要があります。
 
-クライアント、顧客、またはパートナーとプロジェクトで頻繁に密接に共同作業を行う場合は、[](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)クライアント用のチームを作成して、会議に簡単に招待したり、会話したり、ファイルを共有したり、Microsoft Teams でプロジェクトを追跡したりすることもできます。
+クライアント、顧客、またはパートナーとプロジェクトで頻繁に共同作業を行う場合は、クライアント用[](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)のチームを作成して、会議に簡単に招待したり、会話したり、ファイルを共有したり、Microsoft Teams でプロジェクトを追跡したりすることもできます。
 
 インフォグラフィックをダウンロードして、Microsoft Teams でオンライン会議に参加またはホストする方法の概要を簡単に説明します。
 
@@ -64,7 +65,7 @@ Microsoft Teams を使用して、会社の従業員と社外のクライアン�
 1. Microsoft Teams の左側のナビゲーションで、[会議] を **選択します**。
 1. 参加する会議を開き、[Microsoft Teams 会議に参加 **する] を選択します**。
 1. 会議が開いたら、[今すぐ参加 **] を選択します**。
-1. 会議に招待されたクライアントは、予定表で会議を開き、会議リンクを選択し、Teams アプリをダウンロードするか、Web 上で開き、名前を入力して、[参加] を選択 **します**。
+1. 会議に招待されたクライアントは、予定表で会議を開き、会議リンクを選択し、Teams アプリをダウンロードするか、Web 上で開きます。名前を入力して、[参加] を選択 **します**。
 1. クライアントがロビーに表示されたら、[入力を認める] を選択します。
 1. 全員が参加するとすぐに会議を開始できます。
  

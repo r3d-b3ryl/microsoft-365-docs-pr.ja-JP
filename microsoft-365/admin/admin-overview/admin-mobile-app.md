@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Admin モバイルアプリについて
+title: Microsoft 365 Admin モバイル アプリについて
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,48 +17,49 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
-description: Microsoft 365 Admin アプリを入手して、携帯電話またはタブレットからオンライン組織を管理する方法について説明します。
-ms.openlocfilehash: 55aaf26d0da922c8d9bfb7c64f16278eb4a705a5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Microsoft 365 Admin アプリを取得し、電話またはタブレットからオンライン組織を管理する方法について説明します。
+ms.openlocfilehash: aa5d7f688e2304f703f14f3a581eec73e67111a4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646645"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925568"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 admin モバイルアプリについて
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 管理モバイル アプリについて
 
-通常、管理者ではありませんか。 その後、 [Microsoft 365 Admin アプリ](https://go.microsoft.com/fwlink/?LinkID=627216)をチェックアウトします。 アプリを使用して、携帯電話またはタブレットからオンライン組織を管理できます。 アプリは、Apple ストアおよび Google Play から入手できます。 <br> 
+通常は移動中の管理者ですか? 次に [、Microsoft 365 管理アプリを確認します](https://go.microsoft.com/fwlink/?LinkID=627216)。 このアプリを使って、電話やタブレットからオンライン組織を管理できます。 アプリは、Apple Store と Google Play から取得できます。 <br> 
 
-![管理用モバイルアプリのホームページの画面キャプチャ。検索、メッセージ、正常性、クイックリンクが表示されます。](../../media/admin-mobile-app-darkbg.png)
+![管理モバイル アプリのホーム ページの画面キャプチャ。検索、メッセージ、正常性、クイック リンクが表示されます。](../../media/admin-mobile-app-darkbg.png)
 
-管理アプリは、コンピューターにアクセスできない場合に組織を管理できるように、80以上の機能を持つ機能豊富なアプリです。 以下に、アプリから実行できるタスクのいくつかを一覧で示します。
+管理アプリは、80 を超える機能を備え、コンピューターにアクセスできない場合に組織を管理するのに役立つ機能が豊富なアプリです。 アプリから実行できるタスクの一部を次に示します。
 
-- サービスの正常性と変更通知を取得する
+- サービス正常性と変更通知を取得する
 - お問い合わせを作成する
 - ユーザーのパスワードを再設定します
 - ライセンスを割り当てる
-- グループメンバーシップを追加または削除する
+- グループ メンバーシップを追加または削除する
 - ユーザーの追加 
 
-また、複数のオンライン組織の責任者である場合は、複数の組織にサインインして、それらをすばやく切り替えることができます。 
+また、複数のオンライン組織の責任者である場合は、複数の組織にサインインし、迅速に切り替えます。 
   
 > [!IMPORTANT]
-> IOS または Android で管理者モバイルアプリを使用するときに問題が発生した場合は、 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) に電子メールでお知らせください。 
+> iOS または Android で管理モバイル アプリの使用に関する問題が発生した場合は、feedback365@microsoft.com [にメール](mailto:feedback365@microsoft.com) でお知らせください。 
   
 ## <a name="download-the-admin-mobile-app"></a>管理者のモバイル アプリをダウンロードする
 
-[Microsoft 365 Admin モバイルアプリ](https://go.microsoft.com/fwlink/?LinkID=627216)。
+[Microsoft 365 Admin モバイル アプリ](https://go.microsoft.com/fwlink/?LinkID=627216)。
   
-管理者モバイルアプリのインストールに関する短いビデオをご覧ください。<br><br>
+管理モバイル アプリのインストールに関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
  
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -67,19 +68,19 @@ ms.locfileid: "48646645"
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>アプリを使うには、何を行う必要がありますか?
 
-サインインしてアプリを使用するには、管理者権限を持つ有効な Microsoft 365 アプリまたは Microsoft 365 Business Premium サブスクリプションを所有している必要があります。 管理モバイルアプリは、電子メールクライアントではありません。 これは、外出中に組織をサポートするのに役立つ、80を超える機能を備えたリッチな管理アプリです。
+アプリにサインインして使用するには、管理者特権を持つ有効な Microsoft 365 Apps for business または Microsoft 365 Business Premium サブスクリプションが必要です。 管理モバイル アプリは電子メール クライアントではない。 It's a rich administrative app with over 80 features to help you support your org while your on the go.
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Microsoft 365 ファミリサブスクリプションでアプリを使用できますか?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Microsoft 365 ファミリ サブスクリプションでアプリを使用できますか?
 
 いいえ。アプリは、Microsoft 365 Apps for business および Microsoft 365 Business Premium サブスクリプションでのみ動作します。 
   
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>組織でディレクトリ同期が有効になっている場合、アプリは機能しますか?
 
-はい、ただし機能が制限されています。 サインインしてサービス情報を表示できますが、ほとんどのユーザー管理機能は、読み取り専用になります。 ユーザーを追加、編集、削除することはできません。 ただし、組織内のユーザーにライセンスを割り当てて、通知を取得することができます。
+はい。ただし、機能が制限されます。 サインインしてサービス情報を表示できますが、ほとんどのユーザー管理機能は、読み取り専用になります。 ユーザーを追加、編集、削除することはできません。 ただし、組織内のユーザーにライセンスを割り当て、通知を取得することができます。
   
 ### <a name="what-languages-are-supported-by-the-app"></a>このアプリではどの言語がサポートされますか?
 
-アプリは、web ベースの Microsoft 365 管理センターでサポートされているすべての39言語をサポートしています。 
+このアプリは、Web ベースの Microsoft 365 管理センターがサポートする 39 のすべての言語をサポートします。 言語を変更するには、上部バーのアプリ起動アイコンを選択し、[設定言語]**を選択**  >  **します**。
   
 ### <a name="why-does-the-messages-tile-on-the-home-screen-show-numbers-even-after-ive-read-the-new-messages"></a>新しいメッセージを読んだ後でもホーム画面のメッセージ タイルに数字が表示されるのはなぜですか?
 
@@ -87,11 +88,11 @@ ms.locfileid: "48646645"
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>組織の他のユーザーとサービス インシデントやメッセージを共有するにはどうすればよいですか?
 
-特定のサービスインシデントまたはメッセージを選択すると、右上隅に共有オプションが表示されます。 現在、メールの共有がサポートされています。
+特定のサービス インシデントまたはメッセージを選択すると、共有オプションが右上隅に表示されます。 現在、メールの共有がサポートされています。
   
-### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>このアプリを複数のアカウントまたはテナントで使用できますか?
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>このアプリを複数のアカウントまたはテナントで使用できますか。
 
-はい。複数のアカウントまたはテナントをセットアップすることができます。
+はい、複数のアカウントまたはテナントをセットアップできます。
   
 ### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>アプリが正常に動作しません。 アプリの不審な動作のトラブルシューティングを行うにはどうすればよいですか?
 
@@ -101,11 +102,11 @@ ms.locfileid: "48646645"
     
 2. アプリをアンインストールして、再インストールします。
 
-3. それでもうまくいかない場合は、 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) に電子メールを送信してご連絡ください。
+3. それでも問題が生じなかった場合は、メールでお知らせ [feedback365@microsoft.comメールでお](mailto:feedback365@microsoft.com) 知らせします。
     
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>質問の回答がない場合はどうすればよいですか?
 
-電子メール [feedback365@microsoft.com](mailto:feedback365@microsoft.com) を使用して、アプリに関する問題を報告します。 または、この記事の最後にフィードバックを提供することもできます。 
+メール [feedback365@microsoft.com、](mailto:feedback365@microsoft.com) アプリに関する問題を報告します。 または、この記事の下部でフィードバックを送信できます。 
   
 ## <a name="see-also"></a>関連項目
 

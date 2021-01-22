@@ -13,29 +13,31 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 使用可能なグループの種類について説明します。
-ms.openlocfilehash: ee8d14035ed9eb8296c54510b8fe1d374c9dc2b2
-ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
+ms.openlocfilehash: 4cbc7f15632026babec3640f021c09e901ad20b9
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46514769"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925532"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
 Microsoft 365 管理センターの [ **グループ**] セクションでは、次の種類のグループを作成および管理できます。 
 
 - **Microsoft 365 グループ** (旧称 Office 365 グループ) は、会社の内外のユーザー間での共同作業に使用されます。
-- **配布グループ**は、ユーザーのグループに通知を送信するのに使用されます。
-- **セキュリティ グループ**は、SharePoint サイトなどのリソースへのアクセスを許可するために使用されます。
-- **メールが有効なセキュリティ グループ**は、SharePoint などのリソースへのアクセスを許可し、それらのユーザーにメールで通知を送信するために使用されます。
-- **共有メールボックス**は、会社情報やサポート メール アドレスなど、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。
+- **配布グループ** は、ユーザーのグループに通知を送信するのに使用されます。
+- **セキュリティ グループ** は、SharePoint サイトなどのリソースへのアクセスを許可するために使用されます。
+- **メールが有効なセキュリティ グループ** は、SharePoint などのリソースへのアクセスを許可し、それらのユーザーにメールで通知を送信するために使用されます。
+- **共有メールボックス** は、会社情報やサポート メール アドレスなど、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 グループ
 

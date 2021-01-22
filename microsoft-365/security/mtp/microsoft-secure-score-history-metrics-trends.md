@@ -2,7 +2,7 @@
 title: Microsoft セキュア スコアの履歴を追跡し、目標を達成する
 description: Microsoft セキュア スコアに影響を与えたアクティビティに関する洞察を得る。 傾向を発見し、目標を設定します。
 keywords: Microsoft セキュア スコア, セキュア スコア, Office 365 セキュア スコア, Microsoft セキュリティ スコア, Microsoft 365 セキュリティ センター, 改善アクション
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -20,12 +20,13 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ed937c90bbc6875ee3d72f710d5ac11d4069cbb6
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: c9af6a3ae6f461acfd2968897223446641d5cf09
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49738045"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925674"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft セキュア スコアの履歴を追跡し、目標を達成する
 
@@ -49,7 +50,7 @@ ms.locfileid: "49738045"
 
 ## <a name="discover-trends-and-set-goals"></a>傾向を見付け、目標を設定する
 
-[指標 **と** &] タブには、傾向の可視性を向上し、目標を設定するグラフとグラフがあります。 視覚エフェクトのページ全体の日付範囲を設定できます。 視覚エフェクトは次のとおりです。
+[指標 **と** &] タブには、傾向の可視性を向上し、目標を設定するために、いくつかのグラフとグラフがあります。 視覚エフェクトのページ全体の日付範囲を設定できます。 視覚エフェクトには以下が含まれます。
 
 * **セキュア スコア ゾーン** - 組織の目標と、良好、良好、および悪いスコア範囲の定義に基づいてカスタマイズされます。
 * **回帰傾向** : 構成、ユーザー、またはデバイスの変更によって回帰したポイントのタイムラインです。  
@@ -59,7 +60,7 @@ ms.locfileid: "49738045"
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>スコアを自分のような組織と比較する
 
-自分に似た組織とスコアがどのように比較されるのかは、2 つの場所で確認できます。 どちらのグラフでも、[比較の管理] **を** 選択して組織の情報を表示および編集できます。 また、業界、組織の規模、ライセンス、地域に基づいてカスタム比較を作成することもできます。
+スコアと類似した組織との比較については、2 つの場所で確認できます。 どちらのグラフでも、[比較の管理] を選択 **して組織の** 情報を表示および編集できます。 業界、組織の規模、ライセンス、地域に基づいてカスタム比較を作成することもできます。
 
 #### <a name="comparison-bar-chart"></a>比較棒グラフ
 
@@ -82,17 +83,17 @@ ms.locfileid: "49738045"
     5. 使用されている Microsoft 製品が 80% 類似している
     6. テナントから 20% の範囲内の機会 (現在のライセンスで達成できる最大スコア)
 
-カスタム選択を行ったが、結果が比較できる他の 5 つ未満のテナントを持つ場合は、「データが限られているので利用できません」と表示されます。
+カスタム選択を行ったが、結果が比較できる他のテナントが 5 つ未満の場合は、「データが限られているので利用できません」と表示されます。
 
 #### <a name="comparison-trend"></a>比較傾向
 
-[指標 **と&]** タブで、組織のセキュア スコアと時間の流中の他のユーザーとの比較を確認します。
+[指標 **と&]** タブで、組織のセキュア スコアと時間の流中での他のユーザーとの比較を確認します。
 
 ![同じような組織の時間のスコアの線グラフ](../../media/secure-score/secure-score-comparison-trend.png)
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 
-問題がある場合は、セキュリティ/プライバシー/コンプライアンス コミュニティに投稿 [&知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) らせてください。 コミュニティを監視しているので、問題に対応します。
+問題がある場合は、セキュリティ/プライバシー/コンプライアンス コミュニティに投稿して [&知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) らせてください。 コミュニティを監視しているので、問題に対応します。
 
 ## <a name="related-resources"></a>関連リソース
 

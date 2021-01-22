@@ -1,5 +1,5 @@
 ---
-title: ヘルプまたはサポートを受ける
+title: ヘルプまたはサポートを利用する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,20 +16,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で管理者向けヘルプまたはサポートを受ける方法について説明します。
-ms.openlocfilehash: f33778c5c8b8ebfe71bd7acc6d203327a2fd7e94
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: bcfe140ec87b50048db570ad4efe4575135b3191
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702924"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927168"
 ---
-# <a name="get-help-or-support"></a>ヘルプまたはサポートを受ける
+# <a name="get-help-or-support"></a>ヘルプまたはサポートを利用する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -38,14 +39,14 @@ ms.locfileid: "49702924"
 管理者ではない場合: Home [および Business のエンド](https://go.microsoft.com/fwlink/?linkid=860695) ユーザー向け Microsoft サポートをお試しください。
 
 - **In the United States, call 1 800 865 9408**.
-- **オーストラリアで、1 800 197 503 に電話します**。
+- **オーストラリアでは、1 800 197 503 に電話します**。
 - **カナダに電話 1 800 865 9408**。
 - **英国に電話 0800 032 6417**.
 
 課金サポートは、月曜日から金曜日の午前 9 時から午後 5 時 (オーストラリアでは午前 9 時から午後 6 時) に英語で提供されます。
 テクニカル サポートは 24 時間年中無休で英語で提供されます。
 
-お客様の国または地域の Microsoft 365 または Microsoft 365 Business Premium のサポート電話番号については、ビジネス製品のサポートにお問い合[わせください。](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+お客様の国または地域の Microsoft 365 または Microsoft 365 Business Premium のサポート電話番号については、ビジネス製品のサポートにお問い合 [わせください](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。
 
 ## <a name="try-it"></a>演習
 
@@ -70,4 +71,4 @@ Microsoft 365 Business Premium には、ヘルプやサポートを受ける方�
 1. 場所、組織の規模、探しているサポートの種類を入力します。 [移動 **] を選択します**。
 1. [Microsoft **ソリューション プロバイダーの検索]** ページで、一覧から目的のソリューション プロバイダーを選択します。
 
-    選択したサービス プロバイダーが連絡します。
+    選択したサービス プロバイダーから連絡を受け取る。

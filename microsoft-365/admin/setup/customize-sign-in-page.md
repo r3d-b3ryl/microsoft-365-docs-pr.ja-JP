@@ -1,5 +1,5 @@
 ---
-title: サインインページに会社のブランドを追加する
+title: 会社のブランドをサインイン ページに追加する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -13,31 +13,33 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Azure Active Directory を使用して Microsoft 365 サインインページをカスタマイズします。 サインインページには、イラスト、ロゴ、およびテキストを追加することができます。
-ms.openlocfilehash: 2f6df71a46e7510413601fe7dc00143280b4e6aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Azure Active Directory を使用して Microsoft 365 サインイン ページをカスタマイズします。 サインイン ページには、図、ロゴ、テキストを追加できます。
+ms.openlocfilehash: 9a4e18aeb050fe128ded1ea83756256a386a0fb4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398944"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926908"
 ---
-# <a name="add-your-company-branding-to-the-sign-in-page"></a>サインインページに会社のブランドを追加する
+# <a name="add-your-company-branding-to-the-sign-in-page"></a>会社のブランドをサインイン ページに追加する
 
- Microsoft 365 サブスクリプションに含まれている Azure Active Directory (AD) サブスクリプションを使用して、ユーザーに表示されるサインインページをカスタマイズできるようになりました。 
+ これで、Microsoft 365 サブスクリプションに含まれている Azure Active Directory (AD) サブスクリプションを使用して、ユーザーに表示されるサインイン ページをカスタマイズできます。 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>会社のブランドをサインイン ページとアクセス パネル ページに追加する
 
-Microsoft 365 for business、Microsoft Dynamics CRM Online、Enterprise Mobility Suite、またはその他の Microsoft サービスへの有料サブスクリプションをお持ちの場合は、Azure Active Directory への無料のサブスクリプションをご利用ください。 Azure Active Directory を使用して、ユーザー アカウントおよびグループ アカウントを作成して管理し、会社のブランドをページに追加することができます。 このサブスクリプションを有効にして Microsoft Azure 管理ポータルにアクセスするには、1 回限りの登録プロセスを完了する必要があります。 完了すると、使用している Microsoft サービスから Azure Active Directory にアクセスできます。 Microsoft 365 サブスクリプションの登録方法については、「azure [Active Directory サブスクリプションを登録](https://go.microsoft.com/fwlink/p/?LinkID=527966)する」を参照してください。一般的な管理手順については、「 [Azure での microsoft 365 サブスクリプションのディレクトリの管理](https://go.microsoft.com/fwlink/p/?LinkId=620076)」を参照してください。 
+ビジネス向け Microsoft 365、Microsoft Dynamics CRM Online、Enterprise Mobility Suite、その他の Microsoft サービスの有料サブスクリプションをお持ちのお客様は、Azure Active Directory の無料サブスクリプションを持っています。 Azure Active Directory を使用して、ユーザー アカウントおよびグループ アカウントを作成して管理し、会社のブランドをページに追加することができます。 このサブスクリプションを有効にして Microsoft Azure 管理ポータルにアクセスするには、1 回限りの登録プロセスを完了する必要があります。 完了すると、使用している Microsoft サービスから Azure Active Directory にアクセスできます。 Microsoft 365 サブスクリプションを登録する方法については、「無料の [Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527966)サブスクリプションを登録する」を参照してください。一般的な管理手順については、「Azure で Microsoft [365](https://go.microsoft.com/fwlink/p/?LinkId=620076) サブスクリプションのディレクトリを管理する」を参照してください。 
   
 次の図は、Azure のどのサインイン ページを変更できるかを示しています。
   
-![カスタマイズ可能なサインインページの領域。](../../media/screenshotbranding.png)
+![カスタマイズできるサインイン ページの領域。](../../media/screenshotbranding.png)
   
 1. 大きな図やその背景色
     

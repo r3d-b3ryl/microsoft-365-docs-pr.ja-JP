@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ビジネス向け GoDaddy Web サイトを作成する方法について学習します。
-ms.openlocfilehash: db3a3133626577f9dc2665a61053cb587e9b7b3a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 44f1a82706ff2dc025fc9dcc6f74a71dc0a987e5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702570"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927336"
 ---
 # <a name="create-a-website"></a>Web サイトを作成する
 

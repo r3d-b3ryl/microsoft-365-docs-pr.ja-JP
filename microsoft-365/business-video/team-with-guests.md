@@ -1,5 +1,5 @@
 ---
-title: ゲストとチームを作成する
+title: チームを作成してゲストを追加する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft Teams でゲストとチームを作成する方法について説明します。
-ms.openlocfilehash: 83d474e057e3400e0fae4eac17c2eb6d501e519a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: ea195b64f3d4d048d78648b19f1820842570b2b0
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702865"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925876"
 ---
-# <a name="create-a-team-with-guests"></a>ゲストとチームを作成する
+# <a name="create-a-team-with-guests"></a>チームを作成してゲストを追加する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp?autoplay=false]
 

@@ -16,28 +16,29 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Outlook と Microsoft Teams を使用して共同作業を行う方法について説明します。
-ms.openlocfilehash: aac1782de441db7521f4f9b7da540b417cb25f14
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3d5ac6dd157b0469800a3dd6f841ec1a5c1d1ed9
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703033"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927348"
 ---
 # <a name="use-outlook-and-teams-together"></a>Outlook と Teams を同時に使用する
 
-中小企業の従業員、パートナー、クライアント、その他のユーザーと通信する場合は、Microsoft 365 の Outlook と Teams を使用します。 Outlook では、メール、予定表、連絡先、タスクを見つけ、Teams では会話、ファイル、会議、Microsoft やサード パーティ製アプリへのクイック アクセスを見つけるのに便利です。 ここでは、ビジネスで各機能を使用する方法の概要を示します。
+中小企業の従業員、パートナー、クライアント、その他のユーザーと通信する場合は、Microsoft 365 の Outlook と Teams を使用します。 Outlook では、メール、予定表、連絡先、タスクを見つけ、Teams では会話、ファイル、会議、Microsoft アプリやサード パーティ製アプリへのクイック アクセスを見つけるのに便利です。 ここでは、ビジネスで各機能を使用する方法の概要を示します。
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
 - ビジネスの新しいリードを含む、ビジネスの内部および外部からのメッセージを確認します。
 - 予定表を確認し、予定を追加し、会議をスケジュールします。
 - 連絡先として一緒に作業するユーザーの名前、番号、メールを追加します。
-- タスク、メモ、その他の方法を作成して、短期および長期のプロジェクトを管理します。
+- タスク、メモ、その他の方法を作成して、短期および長期のプロジェクトを最新の情報に残します。
 
 :::image type="content" source="../media/outlook-model.png" alt-text="Outlook ホーム ページの形式化された画像。":::
 

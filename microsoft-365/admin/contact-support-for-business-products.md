@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - MET150
 description: 国または地域別にリストされている電話番号を使用するか、サービス リクエストをオンラインで送信して、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 06f78d50901f279bf27f55f1b8f7ad867682d784
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307363"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925580"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる方法 - 管理者ヘルプ
 

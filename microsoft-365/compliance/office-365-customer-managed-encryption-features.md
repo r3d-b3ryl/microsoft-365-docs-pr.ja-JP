@@ -1,5 +1,5 @@
 ---
-title: お客様が管理する暗号化機能
+title: 顧客により管理される暗号化機能
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,56 +15,56 @@ ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: この記事では、Microsoft 365 で管理および構成できる暗号化テクノロジについて説明します。
-ms.openlocfilehash: a70f737d1af10622b093bddc682cc493396fff45
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: bb6f9fedf915fd261266a9ed5d0c561d1352ea09
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214223"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921557"
 ---
-# <a name="customer-managed-encryption-features"></a>お客様が管理する暗号化機能
+# <a name="customer-managed-encryption-features"></a>顧客により管理される暗号化機能
 
-Microsoft によって管理される Microsoft 365 の暗号化テクノロジとともに、Microsoft 365 は、次のような管理および構成が可能な追加の暗号化テクノロジにも対応しています。
+Microsoft によって管理される Microsoft 365 の暗号化テクノロジに加え、Microsoft 365 は、次のような管理および構成が可能な追加の暗号化テクノロジと共に動作します。
 
 - [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)
 
-- [セキュリティで保護されたマルチパーパスインターネットメール内線番号](https://blogs.technet.com/b/exchange/archive/2014/12/15/how-to-configure-s-mime-in-office-365.aspx)
+- [Secure Multipurpose Internet Mail Extension](https://blogs.technet.com/b/exchange/archive/2014/12/15/how-to-configure-s-mime-in-office-365.aspx)
 
 - [Office 365 Message Encryption](https://products.office.com/en-us/exchange/office-365-message-encryption)
 
-- [パートナー組織とのセキュリティで保護されたメールフロー](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
+- [パートナー組織とのセキュリティで保護されたメール フロー](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
 
-これらのテクノロジの詳細については、 [Microsoft 365 サービスの説明](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)を参照してください。
+これらのテクノロジの詳細については [、Microsoft 365 サービスの説明を参照してください](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)。
 
 ## <a name="azure-rights-management"></a>Azure Rights Management
 
-Azure [Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) (azure RMS) は、 [azure Information protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection)で使用される保護テクノロジです。 暗号化、id、および承認のポリシーを使用して、複数のプラットフォームとデバイス (電話、タブレット、Pc) 間でファイルと電子メールをセキュリティで保護することができます。 保護はデータと共に保持されるため、組織の内部と外部の両方で情報を保護することができます。 Azure RMS は、すべてのファイルの種類の永続的な保護を提供し、どこからでもファイルを保護し、ビジネス間のコラボレーション、および幅広い Windows デバイスと Windows 以外のデバイスをサポートします。 Azure RMS 保護は、[データ損失防止 (DLP) ポリシー](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)を強化することもできます。 Azure Information Protection から Azure Rights Management サービスを使用できるアプリケーションとサービスの詳細については、「[アプリケーションが Azure Rights management サービスをサポートする方法](https://docs.microsoft.com/information-protection/understand-explore/applications-support)」を参照してください。
+[Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) (Azure RMS) は [、Azure Information Protection で使用される保護テクノロジです](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection)。 暗号化、ID、および承認ポリシーを使用して、電話、タブレット、PC など、複数のプラットフォームとデバイス間でファイルと電子メールを保護します。 データに保護が残るために、組織内外の両方で情報を保護できます。 Azure RMS は、すべてのファイルの種類を永続的に保護し、ファイルを任意の場所で保護し、企業間のコラボレーション、およびさまざまな Windows デバイスと Windows 以外のデバイスをサポートします。 Azure RMS 保護は、データ損失 [防止 (DLP) ポリシーを拡張することもできます](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)。 Azure Information Protection から Azure Rights Management サービスを使用できるアプリケーションとサービスの詳細については、「アプリケーションが Azure Rights Management サービスをサポートする方法」を [参照してください](https://docs.microsoft.com/information-protection/understand-explore/applications-support)。
 
-Azure RMS は Microsoft 365 と統合されており、すべてのお客様が利用できます。 Azure RMS を使用するように Microsoft 365 を構成するには、「 [SharePoint 管理センターでの Azure Rights management を使用して Information Rights management (IRM) を設定するための IRM の構成](https://technet.microsoft.com/library/dn151475(v=exchg.150).aspx)」を参照してください。 オンプレミスの Active Directory (AD) RMS サーバーを運用している場合は、[オンプレミスの AD rms サーバーを使用する](https://docs.microsoft.com/office365/SecurityCompliance/configure-irm-to-use-an-on-premises-ad-rms-server)ように IRM を構成することもできますが、他の組織とのセキュリティで保護されたコラボレーションなどの新しい機能を使用するには、 [Azure RMS に移行](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)することを強くお勧めします。
+Azure RMS は Microsoft 365 と統合され、すべてのお客様が利用できます。 Azure RMS を使用するように Microsoft 365 を構成するには、「Azure Rights Management を使用するように IRM を構成する」および「SharePoint 管理センターで [Information Rights Management (IRM)](https://technet.microsoft.com/library/dn151475(v=exchg.150).aspx)をセットアップする」を参照してください。 オンプレミスの Active Directory (AD) RMS サーバーを運用している場合は、オンプレミスの AD RMS サーバーを使用するように [IRM](https://docs.microsoft.com/office365/SecurityCompliance/configure-irm-to-use-an-on-premises-ad-rms-server)を構成することもできますが [、Azure RMS](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms) に移行して、他の組織との安全な共同作業などの新機能を使用することを強く推奨します。
 
-Azure RMS を使用して顧客データを保護する場合、Azure RMS は整合性を確保するために、2048ビットの RSA 非対称キーと SHA-256 ハッシュアルゴリズムを使用してデータを暗号化します。 Office ドキュメントおよび電子メールの対称キーは、AES 128 ビット (CBC モードの PKCS # 7 padding) です。 Azure RMS によって保護されているドキュメントまたは電子メールごとに、1つの AES キー ("コンテンツキー") が作成され、そのキーはドキュメントに埋め込まれており、ドキュメントの各エディションで保持されます。 コンテンツキーは、組織の RSA キー ("Azure Information Protection テナントキー") によってドキュメント内のポリシーの一部として保護され、そのポリシーはドキュメントの作成者によっても署名されます。 このテナントキーは、組織で Azure RMS によって保護されているすべてのドキュメントと電子メールに共通であり、このキーは、組織が顧客管理のテナントキーを使用している場合にのみ、Azure Information Protection 管理者が変更できます。 Azure RMS で使用される暗号化コントロールの詳細については、「Azure RMS のしくみ」を参照してください[。[内部] に](https://docs.microsoft.com/information-protection/understand-explore/how-does-it-work)あります。
+Azure RMS を使用して顧客データを保護する場合、Azure RMS は、データを暗号化するための整合性のために、SHA-256 ハッシュ アルゴリズムを持つ 2048 ビット RSA 非対称キーを使用します。 ドキュメントとメールOffice対称キーは AES 128 ビットです。 Azure RMS によって保護されているドキュメントまたは電子メールごとに、Azure RMS は 1 つの AES キー ("コンテンツ キー") を作成し、そのキーはドキュメントに埋め込み、ドキュメントのエディションを通じて保持されます。 コンテンツ キーは、ドキュメント内のポリシーの一部として組織の RSA キー ("Azure Information Protection テナント キー") で保護され、ポリシーはドキュメントの作成者によって署名されます。 このテナント キーは、組織の Azure RMS で保護されているすべてのドキュメントと電子メールに共通であり、このキーは、組織が顧客管理のテナント キーを使用している場合にのみ、Azure Information Protection 管理者が変更できます。 Azure RMS で使用される暗号化コントロールの詳細については、「Azure RMS の動作方法」 [を参照してください。Under the hood](https://docs.microsoft.com/information-protection/understand-explore/how-does-it-work).
 
-既定の Azure RMS 実装では、Microsoft はテナントごとに一意のルートキーを生成して管理します。 お客様は、Microsoft の FIPS 140-2 レベル2で検証された Hsm に移行した後に、オンプレミスの Hsm (ハードウェアセキュリティモジュール) でキーを生成できるようにするキー管理方法[(BYOK)](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)を使用することにより、Azure Key Vault サービスを使用して azure RMS のルートキーのライフサイクルを管理できます。 キーをエクスポートしたり、Hsm から展開したりすることはできませんが、ユーザーにはルートキーへのアクセス権は付与されません。 さらに、ほぼリアルタイムログには、いつでもルートキーへのすべてのアクセス権が表示されます。 詳細については、「 [Azure Rights Management の使用状況のログと分析](https://docs.microsoft.com/azure/information-protection/log-analyze-usage)」を参照してください。
+既定の Azure RMS 実装では、Microsoft はテナントごとに一意のルート キーを生成して管理します。 顧客は、Azure Key Vault Services を使用して Azure RMS のルート キーのライフサイクルを管理できます。この管理方法は Bring [Your Own Key (BYOK)](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key) と呼ばれるキー管理方法を使用することで、オンプレミスの HSM (ハードウェア セキュリティ モジュール) でキーを生成し、Microsoft の FIPS 140-2 レベル 2 検証済み HSM への転送後もこのキーを制御し続けることができます。 ルート キーへのアクセスは、キーを保護する HSM からエクスポートまたは抽出できないので、どの担当者にも与えされません。 さらに、ルート キーへのすべてのアクセスを示すほぼリアルタイムのログにいつでもアクセスできます。 詳細については [、「Azure Rights Management の使用状況のログ記録と分析」を参照してください](https://docs.microsoft.com/azure/information-protection/log-analyze-usage)。
 
-Azure Rights Management を使用すると、ワイヤタップ、man-in-the-middle 攻撃、データ窃盗、組織の共有ポリシーの意図しない違反などの脅威を軽減できます。 同時に、適切なアクセス許可を持たない、承認されていないユーザーによる、送信中または保存中の顧客データの unwarranted アクセスは、そのデータを使用するポリシーによって禁止されているため、knowingly または気付かずに、データ損失防止機能が提供されます。 Azure Information Protection の一部として使用されている場合、Azure RMS はデータ分類とラベル付け機能、コンテンツマーキング、ドキュメントアクセス追跡、およびアクセス取り消し機能も提供します。 これらの機能の詳細に[ついては](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection)、「azure information protection」、「 [azure information protection 展開ロードマップ](https://docs.microsoft.com/information-protection/plan-design/deployment-roadmap)」、および「 [Quick Start チュートリアル for azure information protection](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial)」を参照してください。
+Azure Rights Management は、ワイヤータップ、man-in-the-middle 攻撃、データ盗難、組織共有ポリシーの意図しない違反などの脅威を軽減するのに役立ちます。 同時に、適切なアクセス許可を持たなかった未承認のユーザーによる、転送中または保存中の顧客データへの不正なアクセスは、そのデータに従うポリシーによって防止され、そのデータが知らないうちに不正な手に落ち、データ損失防止機能を提供するリスクを軽減します。 Azure Information Protection の一部として使用される場合、Azure RMS はデータ分類とラベル付け機能、コンテンツ マーキング、ドキュメント アクセス追跡、アクセス失効機能も提供します。 これらの機能の詳細については [、「Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection)とは」、Azure Information Protection 展開ロードマップ、および Azure [Information](https://docs.microsoft.com/information-protection/plan-design/deployment-roadmap)Protection のクイック スタート [チュートリアルを参照してください](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial)。
 
-## <a name="secure-multipurpose-internet-mail-extension"></a>セキュリティで保護されたマルチパーパスインターネットメール内線番号
+## <a name="secure-multipurpose-internet-mail-extension"></a>Secure Multipurpose Internet Mail Extension
 
-Secure/多目的インターネットメール内線 (S/MIME) は、公開キー暗号化と MIME データのデジタル署名の標準です。 S/MIME は、Rfc 3369、3370、3850、3851、その他で定義されています。 これにより、ユーザーは電子メールを暗号化し、電子メールにデジタル署名することができます。 S/MIME を使用して暗号化された電子メールは、秘密キーを使用して電子メールの受信者によってのみ復号化できます。これは、その受信者のみが利用できます。 そのため、電子メールの受信者以外は誰でも電子メールを復号化できません。
+Secure/Multipurpose Internet Mail Extensions (S/MIME) は、公開キーの暗号化と MIME データのデジタル署名の標準です。 S/MIME は RFC 3369、3370、3850、3851 などで定義されています。 これにより、ユーザーは電子メールを暗号化し、電子メールにデジタル署名できます。 S/MIME を使用して暗号化された電子メールは、電子メールの受信者だけが秘密キーを使用して復号化できます。これは、その受信者だけが使用できます。 そのため、メールの受信者以外のユーザーがメールを復号化することはできません。
 
-[Microsoft は S/MIME をサポート](https://blogs.technet.com/b/exchange/archive/2014/12/15/how-to-configure-s-mime-in-office-365.aspx)しています。 パブリック証明書は、ユーザーのオンプレミスの Active Directory に配布され、Microsoft 365 テナントにレプリケートできる属性に保存されます。 公開キーに対応する秘密キーはオンプレミスのままであり、Office 365 に送信されることはありません。 ユーザーは、Outlook、web 上の Outlook、および Exchange ActiveSync クライアントを使用して、組織内の2人のユーザー間で電子メールを作成、暗号化、暗号化解除、読み取り、およびデジタル署名することができます。 詳細については、「 [Office 365 での S/MIME 暗号化の現在](https://blogs.office.com/2014/02/26/smime-encryption-now-in-office-365/)の状態」を参照してください。
+[Microsoft は S/MIME をサポートしています](https://blogs.technet.com/b/exchange/archive/2014/12/15/how-to-configure-s-mime-in-office-365.aspx)。 パブリック証明書は、顧客のオンプレミスの Active Directory に配布され、Microsoft 365 テナントにレプリケートできる属性に格納されます。 公開キーに対応する公開キーはオンプレミスのままで、365 にOfficeされません。 ユーザーは、Outlook、Outlook on the web、および Exchange ActiveSync クライアントを使用して、組織内の 2 人のユーザー間で電子メールを作成、暗号化、暗号化解除、読み取り、デジタル署名できます。 詳細については [、365 で S/MIME 暗号化を参照Officeしてください](https://blogs.office.com/2014/02/26/smime-encryption-now-in-office-365/)。
 
 ## <a name="office-365-message-encryption"></a>Office 365 Message Encryption
 
-[Office 365 Message Encryption](https://products.office.com/exchange/office-365-message-encryption) (OME) は、 [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) の上に構築されており、暗号化され、権利で保護されたメールをだれにでも送信できます。 OME は、ワイヤタップや man-in-the-middle 攻撃などの脅威、および適切なアクセス許可を持たない、承認されていないユーザーによるデータの unwarranted アクセスなどの脅威を軽減します。 Azure Information Protection の上に構築された、よりシンプルで直感的な安全な電子メールの操作性を提供する投資が行われています。 Microsoft 365 から組織の内部または外部のすべてのユーザーに送信されるメッセージを保護することができます。 これらのメッセージは、Azure Active Directory、Microsoft アカウント、Google Id などの任意の id を使用して、さまざまなメールクライアントのセットで表示できます。 組織が暗号化されたメッセージを使用する方法の詳細については、「 [Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome)」を参照してください。
+[Office 365 Message Encryption](https://products.office.com/exchange/office-365-message-encryption) (OME) を [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) の上に構築すると、暗号化された権利で保護されたメールをすべてのユーザーに送信できます。 OME は、ワイヤータップや man-in-the-middle 攻撃などの脅威、および適切なアクセス許可を持たない承認されていないユーザーによるデータの不正なアクセスなど、その他の脅威を軽減します。 Azure Information Protection を基に構築された、よりシンプルで直感的で安全な電子メール エクスペリエンスを提供する投資を行いました。 Microsoft 365 から組織内外のユーザーに送信されるメッセージを保護できます。 これらのメッセージは、Azure Active Directory、Microsoft アカウント、Google ID など、任意の ID を使用して、さまざまなメール クライアントで表示できます。 組織で暗号化されたメッセージを使用する方法の詳細については、「Office [365 Message Encryption」を参照してください](https://docs.microsoft.com/microsoft-365/compliance/ome)。
 
 ## <a name="transport-layer-security"></a>トランスポート層セキュリティ   
 
-パートナーとの通信をセキュリティで保護する場合は、受信コネクタと送信コネクタを使用してセキュリティとメッセージの整合性を確保できます。 証明書を使用して、各コネクタで強制受信および送信 TLS を構成できます。 暗号化された SMTP チャネルを使用すると、man-in-the-middle 攻撃によってデータが盗まれるのを防ぐことができます。 詳細については、「 [Exchange Online が TLS を使用して電子メール接続をセキュリティで保護する方法](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)」を参照してください。
+パートナーとの安全な通信を確保する場合は、受信コネクタと送信コネクタを使用して、セキュリティとメッセージの整合性を提供できます。 証明書を使用して、各コネクタで強制的な受信および送信 TLS を構成できます。 暗号化された SMTP チャネルを使用すると、man-in-the-middle 攻撃によってデータが盗まれるのを防ぐ可能性があります。 詳細については、「Exchange Online が [TLS を使用して電子メール接続をセキュリティで保護する方法」を参照してください](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)。
 
-## <a name="domain-keys-identified-mail"></a>ドメインキーによって識別されたメール
+## <a name="domain-keys-identified-mail"></a>ドメイン キー識別メール
 
-Exchange Online Protection (EOP) および Exchange Online では、ドメインキー識別メール (DKIM) メッセージの受信検証をサポートしています。 DKIM は、メッセージがドメインから送信されたことを検証する方法です。これは、そのメッセージが送信者からのものであり、他のユーザーによってスプーフィングされていないことを示します。 電子メールメッセージを送信しようとしている組織に関連付け、電子メールの暗号化に関して大きなパラダイムの一部となります。 このパラダイムの3つの部分の詳細については、以下を参照してください。
+Exchange Online Protection (EOP) と Exchange Online は、ドメイン キー識別メール (DKIM) メッセージの受信検証をサポートします。 DKIM は、メッセージの送信元がドメインから送信され、他のユーザーによってスプーフィングされていないというメッセージを検証するためのメソッドです。 電子メール メッセージを送信する組織に結び付け、電子メールの暗号化というより大きなパラダイムの一部です。 このパラダイムの 3 つの部分の詳細については、以下を参照してください。
 
 - [SPF を設定して、スプーフィングを防止する](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
 

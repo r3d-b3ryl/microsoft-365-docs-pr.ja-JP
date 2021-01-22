@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Microsoft Office 2013 がインストールされているデバイスの最新の認証を有効にするレジストリ キーの設定方法を説明します。
-ms.openlocfilehash: 8edcedefc04d5018b8b61022c26cbe027f7c24a9
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 34078291fa237b63c391a7e90ba06ea0085c37cb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779967"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926560"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Windows デバイスの Office 2013 の先進認証を有効にする
 
@@ -43,7 +45,7 @@ Microsoft Office 2013 がインストールされている Windows を実行し�
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-レジストリキーを設定したら、Microsoft 365 で[多要素認証 (MFA)](set-up-multi-factor-authentication.md)を使用するように Office 2013 デバイスアプリを設定することができます。 
+レジストリ キーを設定したら、Microsoft 365 で多要素Office 2013 [(MFA)](set-up-multi-factor-authentication.md) を使うデバイス アプリを設定できます。 
   
 現在、クライアント アプリのいずれかを使ってサインインしている場合、変更を有効にするには、サインアウトしてサインインし直す必要があります。それ以外の場合は、ADAL ID が確立されるまで、MRU とローミングの設定が無効になります。
   

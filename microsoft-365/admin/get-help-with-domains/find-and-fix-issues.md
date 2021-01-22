@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタム ドメインのセットアップ中に発生した問題を追跡する方法について説明します。
-ms.openlocfilehash: d2935a7fcc134f7f6d2dd06a5b4e0e0a8761ad8a
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 786df75f3f8a514e9b3c2a7666d715c9abd082bd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658521"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926392"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 
@@ -36,7 +38,7 @@ ms.locfileid: "49658521"
 Microsoft 365 と一緒に動作するためにドメインをセットアップする作業は、難しい場合があります。 DNS システムは、操作するには細かい設定があり、ドメインに対する DNS のセットアップ内容は、メールなどの重要な業務活動にも影響を与えます。
 
 > [!NOTE]
-> ドメインの状態を確認することで、ドメインに関する問題を確認できます。 [セットアップ **ドメイン]**  >  **に移動し**、[状態] 列に通知 **を表示** します。 If you see an issue, select More actions (three dots), and then choose **Check health**. 開くウィンドウには、ドメインで発生した問題が表示されます。
+> ドメインの状態を確認することで、ドメインに関する問題を確認できます。 [セットアップ **ドメイン]**  >  **に移動し**、[状態] 列に通知 **を表示** します。 If you see an issue, select More actions (three dots), and then choose **Check health**. 開くウィンドウには、ドメインで発生している問題が表示されます。
   
 ## <a name="whats-going-on"></a>何が起こっているのでしょうか?
 
@@ -73,7 +75,7 @@ Microsoft 365 と一緒に動作するためにドメインをセットアップ
 
 ドメインを Microsoft 365 に追加すると、通常、ドメインの MX レコードが (お客様または Microsoft 365 によって) Microsoft 365 を指し示す更新され、そのドメインに送信されるメールはすべて Microsoft 365 に届きます。 MX レコードを変更する前に、ドメインにメールを持つすべてのユーザーのメールボックスが Microsoft 365 に作成されている必要があります。
   
-ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくない場合は、 You can take steps to [pilot Microsoft 365 with just a few email addresses instead](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
+ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくない場合は、 You can take steps to [pilot Microsoft 365 with just a few email addresses instead.](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>非営利団体または学校のアカウントの状態を確認できない場合
 <a name="BKMK_validateAcct"> </a>

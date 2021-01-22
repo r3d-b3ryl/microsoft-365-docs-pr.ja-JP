@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ドメインを Microsoft 365 に接続する方法について説明します。
-ms.openlocfilehash: c7827b93b56560579b31bd2abb5a852467565103
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 1bec66a43026321ddf1979c73902a533bee3a07b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794644"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925112"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>ドメインを Microsoft 365 for business に接続する
 
@@ -38,7 +39,7 @@ Microsoft 365 をセットアップし、Google Workspace からメール デー
 
 ## <a name="try-it"></a>演習
 
-1. Google Workspace 管理コンソールにサインインします[(admin.google.com)。](https://admin.google.com)
+1. Google Workspace 管理コンソールにサインインするには、次の[admin.google.com。](https://admin.google.com)
 1. Select **Domains,** **Manage domains**, **View details**, Manage **domain,** then **DNS** in the left nav.
 1. 下にスクロールして **代理レコードを表示し****、Google Workspace** を開き、[削除]**を選択** して、もう一 **度削除** します。
 1. カスタム リソース レコード **まで** 下にスクロールし、表示される既存の DNS レコード (以前に Microsoft 365 用に作成したレコードを含む) を削除します。
@@ -52,7 +53,7 @@ Microsoft 365 をセットアップし、Google Workspace からメール デー
 1. Google に戻り、[ **カスタム** リソース レコード] セクションで、レコードの種類のドロップダウンを開き **、[MX]** を選択します。
 1. [ **データ] フィールド** に、コピーしたレコードを貼り付けます。
 1. 次に **[追加]** を選択します。
-1. CNAME レコードと TXT レコードに対してこのプロセスを繰り返し、Google DNS 管理ページで値を追加します。
+1. CNAME レコードと TXT レコードに対してこのプロセスを繰り返し、Google DNS 管理ページに値を追加します。
 1. Microsoft 365 管理センターに戻り、[続行] を選択 **します**。
 
     ドメインのセットアップが完了しました。

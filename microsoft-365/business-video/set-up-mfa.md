@@ -16,31 +16,32 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 電話で多要素認証を設定する方法について学習します。
-ms.openlocfilehash: 0f86b93514f974d440ed2f58ee837ce9b497a53c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: b682ec58c73d90b0936c107ab8fef1de5aff867d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703152"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925936"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>電話で多要素認証をセットアップする
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 
-多要素認証は、ビジネスのセキュリティを強化します。 次の手順に従ってセットアップします。
+多要素認証により、ビジネスのセキュリティが強化されます。 次の手順に従ってセットアップします。
 
 ## <a name="try-it"></a>演習
 
 1. サインインすると、[詳細] [https://office.com](https://office.com) の必須プロンプト **が表示** されます。 **[次へ]** を選択します。
 1. [**手順 1] で**、[**認証電話]** ドロップダウン リストから [モバイル アプリ] を選択します。 
 1. [モバイル アプリの使い方] で、サインインに使用する方法を選択します。
-    - 検証 **の受信通知を選択して** 、指紋認証を含む可能性があるモバイル アプリから直接認証します。
+    - 確認 **のために [受信通知] を選択** して、指紋認証を含む可能性があるモバイル アプリから直接認証します。
     - 認証 **を行うごとに、[検証コードを** 使用する] を選択して新しい検証コードを入力します。
 1. **設定** を選択します。
 1. [モバイル アプリ **の構成] ウィンドウを** コンピューターで開いたままにします。

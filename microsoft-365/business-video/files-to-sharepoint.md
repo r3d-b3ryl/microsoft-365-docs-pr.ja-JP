@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 会社のファイルを SharePoint に移動する方法について説明します。
-ms.openlocfilehash: c086bea07cee7aa40585653dbcc93189d181dc0d
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 7e95e09dda5d2cd7131093e98d2965a55b42cd0a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702936"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927156"
 ---
 # <a name="move-files-to-sharepoint"></a>ファイルを SharePoint に移動する
 

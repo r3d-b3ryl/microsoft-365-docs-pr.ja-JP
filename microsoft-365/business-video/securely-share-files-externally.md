@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ビジネス ファイルを外部と安全に共有する方法について説明します。
-ms.openlocfilehash: 2ffb9067b73daad8591f6563640ca95ac4c8724b
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: c2e611d6a6fc6fb239302d2b9d4960471cd5f707
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703188"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925984"
 ---
-# <a name="securely-share-files-externally"></a>ファイルを安全に外部で共有する
+# <a name="securely-share-files-externally"></a>ファイルを外部と安全に共有する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 

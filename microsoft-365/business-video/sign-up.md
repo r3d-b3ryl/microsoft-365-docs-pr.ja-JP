@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium にサインアップする方法について説明します。
-ms.openlocfilehash: 8026213b630d444e3611808082cdce4b084136d5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: a2b632d0adfa0cfaf0ae2cebc20ec2642a3ceb48
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702600"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925900"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>Microsoft 365 Business Premium サブスクリプションにサインアップする
 
@@ -44,6 +45,6 @@ Microsoft 365 Business Premium (以前の Microsoft 365 Business) にサイン�
 6. If you already have a domain, choose  **Get a Microsoft domain for now,** and enter your company name. これは、一時的なメール アドレスになります。 また、永続的な SharePoint URL と OneDrive URL の一部にもなりました。 [空  **き時間情報の確認] を** 選択し、[次へ] を  **選択します**。
 7. ユーザー名とパスワードを入力し、パスワードを確認してから、[サインアップ]  **を選択して**  アカウントを作成します。
 8. ユーザー数を入力し、課金プランを選択して、[次へ] を選択  **します**。
-9.  Enter your company&#39;s address, and then  **Next**.
+9.  会社の住所を&#39;し、[次へ] を  **入力します**。
 10. クレジット カード情報を入力し、注文  **します**。 しばらくすると、アカウントが作成されます。
 11. この時点で、[アカウントのセットアップを続行する] を選択するか、Microsoft 365 管理センターにサインインして後でセットアップを完了できます。

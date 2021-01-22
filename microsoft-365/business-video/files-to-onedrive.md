@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: OneDrive にファイルを移動する方法について説明します。
-ms.openlocfilehash: 8fa6439472389ad851dca3961a515ebfb967f402
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 5a708ba797dbb735c71f181fc287fb831004112b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702751"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927216"
 ---
 # <a name="move-files-to-onedrive"></a>OneDrive にファイルを移動する
 
@@ -37,7 +38,7 @@ Microsoft 365 Business Premium にサインアップした後&#39;の作業フ�
 ## <a name="try-it"></a>演習
 
 1. Windows で、[スタート] ボタン  **を選択** します。
-2. OneDrive を検索し、選択します。
+2. OneDrive を検索して選択します。
 3. 仕事用のメール アドレスを入力します。
 4. [  **サインイン] を選択し** 、[次へ] を  **選択します**。
 5. 短いチュートリアルを進み、[OneDrive フォルダーを開  **く] を選択します**。 OneDrive の個人用バージョンも使用している場合は、&#39;表示されます。

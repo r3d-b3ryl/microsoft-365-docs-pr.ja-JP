@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ゲストとの Teams 会議をスケジュールする方法について学習します。
-ms.openlocfilehash: 3efe87e93bc70adba4c99be3f2791e464cbfbc83
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 2da05fdd4bc10bb1cc0dea5cd769c4630787820c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702441"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926092"
 ---
 # <a name="schedule-a-teams-meeting-with-guests"></a>ゲストとの Teams 会議のスケジュールを設定する
 
@@ -42,8 +43,8 @@ Microsoft Teams を使用すると、新しいプロジェクトを開始した�
 2. チームの名前と説明を入力し、[作成] を選択  **します**。
 3. [メンバー  **の追加**  ] ページで、内部メンバーを検索して選択して追加し、ゲスト メンバーの電子メール アドレスを入力して追加し、[追加] を選択  **します**。
 
-    一致する  **ユーザーが見つから** なかった場合は、ゲスト共有を有効にする必要があります。 Microsoft 365 管理センターに移動し、Teams 管理センターを選択し、組織全体の設定、[ゲスト アクセス] の選択を行い、[Teams でのゲスト アクセスを許可する] を **オンにします**。 この変更には最大 24 時間かかる場合があります。
+    一致する  **一致が見つ** からなかった場合は、ゲスト共有を有効にする必要があります。 Microsoft 365 管理センターに移動し、Teams 管理センターを選択し、組織全体の設定、[ゲスト アクセス] の選択を行い、[Teams でのゲスト アクセスを許可する] を **オンにします**。 この変更には最大 24 時間かかる場合があります。
 
-1. [閉じる  **] を選択します**。 ゲストとメンバーはチームへの招待を受け取る。
+1. [閉じる  **] を選択します**。 ゲストとメンバーは、チームへの招待を受け取る。
 2. [全般] チャネルで、すべてのユーザーの案内応答を入力し、[送信] を選択  **します**。
 3. [  **ファイル]** タブで、一緒に作業するドキュメントを追加します。 ここで作成するか、コンピューターからファイルをドラッグ アンド ドロップできます。

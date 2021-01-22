@@ -1,5 +1,5 @@
 ---
-title: アプリMicrosoft Officeインストールする
+title: Microsoft Office アプリをインストールする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: アプリをインストールする方法Microsoft Officeします。
-ms.openlocfilehash: 7b50a639f5f2945c524d268502636d7a809f3866
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: abbeb8fdaa36956014ef955f853616cdb7d4e83c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702711"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925016"
 ---
 # <a name="install-office-apps"></a>Office アプリのインストール 
 
