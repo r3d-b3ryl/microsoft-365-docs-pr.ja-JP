@@ -18,12 +18,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 831b205d0839f6347ac887db0d3c3f0b1d9a4f3d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b47ec915bc9f5f51df8ed425e7bfd76966bb989e
+ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932828"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49942780"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
 
@@ -44,12 +44,20 @@ Microsoft 365 セキュリティ センターにアクセスしてください [
 > [!NOTE]
 > Microsoft 365 セキュリティ センターにアクセスするには、グローバル管理者、セキュリティ管理者、セキュリティオペレーター、Azure Active Directory のセキュリティ 閲覧者などの適切なロールが割り当てられている必要があります。
 
-
-## <a name="lets-take-a-closer-look"></a>詳しく見てみる
+## <a name="at-a-glance-view-of-your-microsoft-365-environment"></a>Microsoft 365 環境の概要
 
 ホーム **ページには** 、セキュリティ チームが必要とする一般的なカードの多くが表示されます。 カードとデータの構成は、ユーザー ロールによって異なります。 Microsoft 365 セキュリティ センターでは役割ベースのアクセス制御が使用されるので、さまざまな役割で、毎日のジョブにとってより有意義なカードが表示されます。  
 
 この一目でわかる情報は、組織内の最新のアクティビティを把握するのに役立ちます。 Microsoft 365 セキュリティ センターは、さまざまなソースからのシグナルをまとめ、Microsoft 365 環境の全体像を表示します。
+
+大別すると、カードは次のカテゴリに分類されます。
+
+- **ID -** 組織内の ID を監視し、疑わしい動作や危険な動作を追跡します。 [ID 保護の詳細](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **データ** - 許可されていないデータの漏えいにつながる可能性があるユーザーアクティビティを追跡するのに役立ちます。
+- **デバイス** - デバイス上のアラート、違反アクティビティ、その他の脅威に関する最新の情報を取得します。
+- **アプリ** - クラウド アプリが組織でどのように使用されているのかについての洞察を得る。 [Cloud App Security で検出されたアプリについて詳しくは、次のリンクを参照してください。](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+
+## <a name="explore-what-the-security-center-has-to-offer"></a>セキュリティ センターで提供する必要がある機能を確認する
 
 Microsoft 365 セキュリティ センターには以下のものが含まれます。
 

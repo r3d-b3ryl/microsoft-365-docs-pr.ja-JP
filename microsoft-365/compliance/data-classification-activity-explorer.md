@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
-ms.openlocfilehash: 0175f41ca3fbcfc685acf933cc0cd97af6aa61ad
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 6825c00373617011db28fa484f272086f887ea40
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379201"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921635"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
@@ -51,6 +51,8 @@ ms.locfileid: "48379201"
 - Office 365 (E5)
 - 高度なコンプライアンス (E5) アドオン
 - 高度な脅威インテリジェンス (E5) アドオン
+- Microsoft 365 E5/A5 情報保護およびガバナンス
+- Microsoft 365 E5/A5 コンプライアンス
 
 ### <a name="permissions"></a>アクセス許可
 

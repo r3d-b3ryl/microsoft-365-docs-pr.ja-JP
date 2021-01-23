@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Cloudflare for Microsoft でドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Cloudflare for Microsoft でドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
+ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657962"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939274"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Cloudflare で Microsoft 用の DNS レコードを作成する
 
@@ -62,7 +62,7 @@ Cloudflare にサインアップしたときに、Cloudflare の [ **Setup**] �
     |2 番目のネーム サーバー  <br/> |Cloudflare によって提供されるネーム サーバーの値を使用します。  <br/> |
    
     > [!TIP]
-    > You should use at least two name server records. 他のネーム サーバーが一覧に表示されている場合は、それらを削除する必要があります。 
+    > You should use at least two name server records. 一覧に他のネーム サーバーがある場合は、それらを削除する必要があります。 
   
 3. 変更内容を保存します。
     
@@ -86,12 +86,12 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 4. [DNS 管理 **] ページ** で、[ **レコードの追加**] をクリックし、次の表から値を選択します。 
     
-    |**Type**|**Name**|**Automatic TTL**|**Content**|
+    | 種類 | 氏名 | Automatic TTL | コンテンツ |
     |:-----|:-----|:-----|:----|
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
   
   
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
@@ -130,13 +130,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 4. [DNS 管理 **] ページ** で、[ **レコードの追加**] をクリックし、次の表から値を選択します。 
     
-    |**Type**|**名前**|**メール サーバー**|**Priority**|**TTL**|
+    | 種類 | 氏名 | メール サーバー | Priority | TTL |
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft  *\<domain-key\>*  365 アカウントから取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/>|30 分  <br/> |
    
 
   
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
   
 9. [ **MX Records**] セクションに他の MX レコードが一覧表示されている場合は、[ **Delete (X)**] アイコンを選択してそれらを削除します。 
   
@@ -159,7 +159,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     [DNS 管理 **] ページ** で、[ **レコードの追加**] をクリックし、次の表から値を選択します。
     
     
-    |**Type**|**Name**|**Target**|**TTL**|
+    | 種類 | 氏名 | Target | TTL |
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minutes  <br/> |
@@ -169,9 +169,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
     
   
-5. **Cloudflare サーバーをバイパスするには、DNS** トラフィック アイコン (オレンジ色のクラウド) を選択します。
+5. **Cloudflare サーバーをバイパスするには、DNS** トラフィック アイコン (オレンジ色のクラウドを灰色に変更) を選択します。
   
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
   
 7. 他の 5 つの CNAME レコードをそれぞれ追加します。
 
@@ -192,12 +192,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 4. [DNS 管理 **] ページ** で、[ **レコードの追加**] をクリックし、次の表から値を選択します。  
     
-    |**Type**|**Name**|**TTL**|**Content**|
+    | 種類 | 氏名 | TTL | コンテンツ |
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。   |
 
  
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
     
 
   
@@ -217,13 +217,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     [DNS 管理 **]** ページで、[レコードの追加] をクリックし、次の表の最初の行から値を選択します。
         
-    |**Type**|**Service**|**Protocol**|**Name**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
+    | 種類 | サービス | プロトコル | 名前 | TTL | Priority | 太さ | ポート | Target |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |お使 *domain_name*;たとえば、contoso.com  |30 分 | 100|1  |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|お使 *domain_name*;たとえば、contoso.com   |30 分 |100 |1  |5061 | sipfed.online.lync.com |
 
   
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 
   
 6. テーブルの 2 行目の値を選択して、他の SRV レコードを追加します。 
