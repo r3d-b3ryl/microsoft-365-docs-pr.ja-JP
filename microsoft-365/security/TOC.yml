@@ -338,7 +338,7 @@
               href: ./office-365-security/office-365-evaluation.md
             - name: Defender for Office 365 の新機能
               href: office-365-security/whats-new-in-office-365-atp.md
-            - name: SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365
+            - name: SPO、OneDrive、Teams 用の安全な添付ファイル機能
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: 新しい Microsoft 365 セキュリティ センター
               href: ./mtp/overview-security-center.md
@@ -400,7 +400,7 @@
               href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: 既定のセキュリティ保護
               href: ./office-365-security/secure-by-default.md
-            - name: ATP フィッシング対策ポリシーを構成する
+            - name: 詳細については、「Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーを構成する」を参照してください。
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: マルウェア対策ポリシーを構成する
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -436,7 +436,7 @@
               href: ./office-365-security/user-submission.md
             - name: Defender for Office 365 のユーザー タグ
               href: ./office-365-security/user-tags.md
-            - name: SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする
+            - name: SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: DKIM を使用して、送信メールを検証する
               href: ./office-365-security/use-dkim-to-validate-outbound-email.md
