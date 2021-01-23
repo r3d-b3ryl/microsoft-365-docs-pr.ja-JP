@@ -241,18 +241,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: 検出ルールの作成と管理
                       href: mtp/custom-detection-rules.md
-            - name: レポート
-              items:
-                - name: レポートを監視し、表示する
-                  href: mtp/monitoring-and-reporting.md
-                - name: IDの監視とレポート
-                  href: mtp/monitor-and-report-identities.md
-                - name: データの監視とレポート
-                  href: mtp/monitor-data.md
-                - name: デバイスの監視とレポート
-                  href: mtp/monitor-devices.md
-                - name: アプリの監視とレポート
-                  href: mtp/monitor-apps.md
         - name: 参照
           items:
             - name: アクセス許可と設定
