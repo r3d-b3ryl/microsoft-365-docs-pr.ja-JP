@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870853"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921136"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -153,7 +153,7 @@ SharePoint サイトがチーム メンバーではないユーザーと共有�
 2. チームのツール バーで、**[ファイル]** をクリックします。
 3. 省略記号をクリックし、**[SharePoint で開く]** をクリックします。
 4. 基となる SharePoint サイトのツール バーで、設定アイコンをクリックしてから、**[サイトの権限]** をクリックします。
-5. [サイトの権限] ウィンドウで、**[共有設定]** の **[共有設定の変更]** をクリックします。
+5. **[サイトの権限]** ウィンドウで、**[サイトの共有]** の **[メンバーが共有する方法を変更]** をクリックします。
 6. [**共有アクセス許可**] で、[**ファイル、フォルダー、およびサイトを共有できるのはサイトの所有者だけです**] を選択します。
 7. [**アクセス要求の許可**] を [**オフ**] に設定し、[**保存**] をクリックします。
 

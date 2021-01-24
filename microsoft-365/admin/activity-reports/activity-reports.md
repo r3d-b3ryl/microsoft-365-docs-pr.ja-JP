@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611351"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921172"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -86,7 +86,9 @@ ms.locfileid: "49611351"
 
 サブスクリプションに応じて、以下のレポートを利用できます。
   
-- [メール アクティビティ](email-activity.md)
+- [メール アクティビティ](email-activity-ww.md)
+
+- [米国政府のメールのアクティビティ](email-activity.md)
     
 - [メールボックス使用状況](mailbox-usage.md)
     
@@ -98,7 +100,9 @@ ms.locfileid: "49611351"
 
 - [米国政府機関のアクティブなユーザー](active-users.md)
   
-- [メール アプリの利用状況](email-apps-usage.md)
+- [メール アプリの利用状況](email-apps-usage-ww.md)
+
+- [米国政府のメール アプリの利用状況](email-apps-usage.md)
 
 - [フォームのアクティビティ](forms-activity-ww.md)
 

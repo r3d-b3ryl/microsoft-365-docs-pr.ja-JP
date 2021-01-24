@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613444"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921872"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -87,7 +87,7 @@ Office 365 グループや SharePoint では既定でゲスト共有がオンに
 1. チームのツール バーで、[**ファイル**] をクリックします。
 2. [**SharePoint で開く**] をクリックします。
 3. SharePoint サイトのツール バーで、設定アイコンをクリックしてから、[**サイトの権限**] をクリックします。
-4. [**サイトの権限**] ウィンドウで、[**共有設定**] の [**共有設定の変更**] をクリックします。
+4. **[サイトの権限]** ウィンドウで、**[サイトの共有]** の **[メンバーが共有する方法を変更]** をクリックします。
 5. [**共有アクセス許可**] で、[**サイトの所有者とメンバー、および編集権限を持つユーザーはファイルとフォルダを共有できますが、サイトを共有できるのはサイト所有者だけです**] を選択し、[**保存**] をクリックします。
 
 ## <a name="additional-protections"></a>追加の保護

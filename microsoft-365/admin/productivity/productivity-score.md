@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: e052d1189379bb00a05b574e6568e9e718285d50
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688333"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921244"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -87,6 +87,9 @@ ms.locfileid: "49688333"
 - Teams 管理者 
 - グローバル閲覧者 
 - レポート閲覧者 
+
+> [!NOTE]
+> 生産性スコアにサインアップまたはテナントを選択できるのは、グローバル管理者の役割を持つ IT プロフェッショナルのみです。
 
 この情報は Microsoft 365 を使用してデジタル革新を促進するためにのみ使用することが想定されているため、共有は慎重に行う必要があることに注意してください。 
 
