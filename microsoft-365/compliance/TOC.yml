@@ -96,16 +96,17 @@
       href: information-protection.md
     - name: 機密情報の種類
       items:
+        - name: 機密情報の種類に関する詳細情報
+          href: sensitive-information-type-learn-about.md
         - name: 機密情報の種類のエンティティ定義
           href: sensitive-information-type-entity-definitions.md
         - name: DLP 関数の検索対象
           href: what-the-dlp-functions-look-for.md
         - name: 組み込みの機密情報の種類をカスタマイズする
           href: customize-a-built-in-sensitive-information-type.md
-        - name: カスタムの機密情報の種類
-          href: custom-sensitive-info-types.md
         - name: Exact Data Match によりカスタムの機密情報の種類を作成する
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: カスタムの機密情報の種類の使用を開始する
         - name: 完全一致スキーマと機密情報の種類ウィザードを使用する
           href: sit-edm-wizard.md
         - name: 構成可能な一致を使用するために完全一致スキーマを変更する
