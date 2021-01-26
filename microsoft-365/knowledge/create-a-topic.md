@@ -7,30 +7,32 @@ manager: pamgreen
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b17bca88df4bc0db9569800df2c89e6246c88bf8
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 982cb4b0f750db9aecbaab6696f57be3f2390d1d
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698972"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976353"
 ---
 # <a name="create-a-new-topic-preview"></a>新しいトピックを作成する (プレビュー)
 
 > [!Note] 
 > この記事の内容は、Project の Private Preview 用です。 [Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)
 
-トピック エクスペリエンスでは、インデックス作成を通じて検出されていないトピックや、AI テクノロジがトピックとして確立するのに十分な証拠を見つけなかった場合に、新しいトピックを作成できます。
+トピック エクスペリエンスでは、インデックス作成によって検出されていない場合や、AI テクノロジがトピックとして確立するのに十分な証拠を見つけなかった場合に、新しいトピックを作成できます。
 
 ## <a name="requirements"></a>要件
 
 新しいトピックを作成するには、次の必要があります。
 - トピック エクスペリエンス のライセンスを持っている。
-- トピックを作成または編集 [**できるユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、ナレッジ ネットワークのトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
+- トピックを作成または編集 [**できるユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、サポート技術情報のトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
 
 > [!Note] 
 > トピック センター (ナレッジ マネージャー) でトピックを管理する権限を持つユーザーには、トピックを作成および編集する権限が既に付与されています。
@@ -47,7 +49,7 @@ ms.locfileid: "49698972"
     
     - [代替 **名] セクション** で、トピックの参照にも使用される名前または頭字語を入力します。
     
-    - [簡単 **な説明]** セクションで、トピックの 1 文または 2 文の説明を入力します。 このテキストは、関連付けられたトピック カードに使用されます。
+    - [簡単 **な説明] セクション** で、トピックの 1 文または 2 文の説明を入力します。 このテキストは、関連付けられたトピック カードに使用されます。
     
     - [人 **] セクション** で、トピックの対象分野の専門家の名前を入力します。 トピックに手動で追加したユーザーは、トピック ページにピン留めされたユーザー **として表示されます**。
     
@@ -65,7 +67,7 @@ ms.locfileid: "49698972"
 
 記事を発行すると、トピック名、代替名、説明、ピン留めされたユーザーが、記事を表示するライセンスを持つすべてのユーザーに表示されます。 ファイル、ページ、およびサイトは、閲覧者がアイテムに対する 365 Officeを持つ場合にのみ、トピック ページに表示されます。 
 
-新しいトピック ページは、ナレッジ ネットワーク対応の Web パーツ *で構成されています*。 つまり、AI がトピックに関するより多くの情報を収集すると、これらの Web パーツ内の情報が更新され、ユーザーにとってより便利なページが作成されます。
+新しいトピック ページは、ナレッジ ネットワーク対応の Web パーツ *で構成されています*。 つまり、AI がトピックに関するより多くの情報を収集すると、これらの Web パーツ内の情報が更新され、ユーザーにとってページの使い分けをより便利にできます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -7,16 +7,18 @@ manager: pamgreen
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ms.service: ''
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 809d3936ed27275873f63526e7dfc8f91a15a0cc
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 79321ce7fc661fd95090c280eae0bcecd332221a
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731357"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976295"
 ---
 # <a name="edit-an-existing-topic-preview"></a>既存のトピックを編集する (プレビュー)
 
@@ -35,7 +37,7 @@ ms.locfileid: "49731357"
 
 既存のトピックを編集するには、次の必要があります。
 - トピック エクスペリエンス のライセンスを持っている。
-- トピックを作成または編集 [**できるユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、ナレッジ ネットワークのトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
+- トピックを作成または編集 [**できるユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、サポート技術情報のトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
 
 > [!Note] 
 > トピック センター (ナレッジ マネージャー) でトピックを管理する権限を持つユーザーには、トピックを作成および編集する権限が既に付与されています。
@@ -56,7 +58,7 @@ ms.locfileid: "49731357"
     -  ファイルとページ
     -  サイト
 
-    キャンバス アイコンを選択して、ページに静的な項目 (テキスト、画像、リンクなど) を追加することもできます。
+    キャンバス アイコンを選択して、静的な項目 (テキスト、画像、リンクなど) をページに追加することもできます。
 
 3. [ **再発行] を選択** して変更を保存します。
 

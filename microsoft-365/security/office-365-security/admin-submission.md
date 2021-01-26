@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンス センターの送信ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いがあるメール、スパム、その他の有害な可能性のあるメッセージ、URL、ファイルをスキャンのために Microsoft に送信する方法について説明します。
-ms.openlocfilehash: 432a245530d7906ae8babbc54176480d36315351
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864950"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976605"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -32,7 +33,15 @@ ms.locfileid: "49864950"
 
 Exchange Online にメールボックスがある Microsoft 365 組織では、管理者はセキュリティ & コンプライアンス センターの送信ポータルを使用して、メール メッセージ、URL、および添付ファイルをスキャンのために Microsoft に送信できます。
 
-メールを送信すると、テナントへの受信メールを許可している可能性があるポリシーに関する情報と、メール内の URL と添付ファイルの検査に関する情報が表示されます。 メールを許可するポリシーには、個々のユーザーの差出人セーフ リストと、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) などのテナント レベルのポリシーが含まれます。
+電子メール メッセージを送信すると、次の情報が表示されます。
+
+1. **電子メール認証チェック**: メール認証が配信された際に、電子メール認証が通過または失敗したかどうかに関する詳細。
+2. **ポリシー ヒット**: テナントへの受信メールを許可またはブロックした可能性があるポリシーに関する情報で、サービス フィルターの条件を上書きします。
+3. **ペイロード評価/デトレーション**: メッセージ内の URL と添付ファイルの検査。
+4. **成績分析**: メッセージが悪意のあるものかどうかを確認するために、人間の成績を確認します。
+
+> [!IMPORTANT]
+> ペイロード評価/デトレーションとグレードの分析は、すべてのテナントで行われるというではありません。 データがコンプライアンスの目的でテナントの境界を離れるはずではない場合、情報が組織外に出るのをブロックされます。
 
 電子メール メッセージ、URL、および添付ファイルを Microsoft に送信するその他の方法については、「メッセージとファイルを Microsoft に報告する」を [参照してください](report-junk-email-messages-to-microsoft.md)。
 
@@ -77,7 +86,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 4. 完了したら、[送信] ボタンを **クリック** します。
 
-![URL 送信の例](../../media/submission-flyout-email.PNG)
+   ![URL 送信の例](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>疑わしい URL を Microsoft に送信する
 
@@ -91,7 +100,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 3. 完了したら、[送信] ボタンを **クリック** します。
 
-![メール送信の例](../../media/submission-url-flyout.png)
+   ![メール送信の例](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>疑わしいファイルを Microsoft に提出する
 
@@ -107,11 +116,11 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 4. 完了したら、[送信] ボタンを **クリック** します。
 
-![添付ファイルの送信の例](../../media/submission-file-flyout.PNG)
+   ![添付ファイルの送信の例](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-admin-submissions"></a>管理者の提出を表示する
 
-セキュリティ & コンプライアンス センターで、[脅威の管理の提出] に移動し、[管理者の提出] タブに移動し、[新しい提出] をクリック \> **します**。 
+セキュリティ & コンプライアンス センターで、[脅威の管理の提出] に移動し、[管理者の提出] タブに移動し、[新しい提出] をクリックします \> 。  
 
 ページの上部には、開始日、終了日を入力できます。また、既定では、ボックスに値を入力して [更新] ボタンをクリックすることで、提出 **ID** (すべての申請に割り当てられている GUID 値) でフィルター処理できます ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
@@ -125,7 +134,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 ![管理者の申請のフィルター オプション](../../media/admin-submission-email-filter-options.png)
 
-結果をエクスポートするには、ページの **上部にある** [エクスポート] をクリックし、[グラフ データ] または [テーブル **]** を選択 **します**。 表示されるダイアログで、.csv ファイルを保存します。
+結果をエクスポートするには、ページ上部の **[** エクスポート] をクリックし、[グラフ データ] **または** [テーブル] を選択 **します**。 表示されるダイアログで、.csv ファイルを保存します。
 
 グラフの下には、メール (既定)、URL、添付ファイルの 3 つのタブ **があります**。
 
@@ -133,7 +142,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 [電子メール **] タブをクリック** します。
 
-ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューで列を追加または削除できます。
+ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューに列を追加または削除できます。
 
 - **日付**
 - **提出 ID**: すべての申請に割り当てられる GUID 値。
@@ -162,7 +171,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 **[URL] タブをクリック** します。
 
-ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューで列を追加または削除できます。
+ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューに列を追加または削除できます。
 
 - **日付**
 - **提出 ID**
@@ -177,7 +186,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 [添付ファイル **] タブをクリック** します。
 
-ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューで列を追加または削除できます。
+ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューに列を追加または削除できます。
 
 - **日付**
 - **提出 ID**
@@ -190,13 +199,13 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 ## <a name="view-user-submissions-to-microsoft"></a>Microsoft へのユーザー申請を表示する
 
-レポート メッセージ アドイン、Report [](enable-the-report-message-add-in.md) [Phishing](enable-the-report-phish-add-in.md)アドイン、または[Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)で組み込みのレポートを使用しているユーザーを展開した場合は、[ユーザーの送信]タブでユーザーが報告している情報を確認できます。
+レポート メッセージ アドイン、Report [](enable-the-report-message-add-in.md) [Phishing](enable-the-report-phish-add-in.md)アドイン、または[Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)の組み込みレポートを使用しているユーザーを展開した場合は、[ユーザーの送信]タブでユーザーが報告している情報を確認できます。
 
 1. セキュリティ/コンプライアンス センター&、脅威管理の提出 **に** \> **移動します**。
 
 2. [ユーザーの **提出] タブを選択** し、[新しい提出] **をクリックします**。
 
-ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューで列を追加または削除できます。
+ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューに列を追加または削除できます。
 
 - **送信日**
 - **提出者**<sup>\*</sup>
@@ -240,7 +249,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 ページの上部に開始日と終了日を入力し、ボックスに値を入力して [最新の情報に更新] ボタンをクリックすることで Submitted でフィルター ![ 処理できます ](../../media/scc-quarantine-refresh.png) 。 Update
 
-結果をエクスポートするには、ページの **上部にある** [エクスポート] をクリックし、[グラフ データ] または [テーブル **]** を選択 **します**。 表示されるダイアログで、.csv ファイルを保存します。
+結果をエクスポートするには、ページ上部の **[** エクスポート] をクリックし、[グラフ データ] **または** [テーブル] を選択 **します**。 表示されるダイアログで、.csv ファイルを保存します。
 
 ## <a name="undo-user-submissions"></a>ユーザーの提出を元に戻す
 

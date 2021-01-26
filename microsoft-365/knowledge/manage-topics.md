@@ -8,15 +8,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 92cf9c860ddbf199c70a7c2d89a7daba3dfe0fe7
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 371ccc16e787b331f42026dec48e5e3113b2b172
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731329"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976193"
 ---
 # <a name="manage-topics-in-the-topic-center-preview"></a>トピック センターでトピックを管理する (プレビュー)
 
@@ -49,7 +51,7 @@ ms.locfileid: "49731329"
 
 トピック センターでトピックを管理するには、次の必要があります。
 - トピック エクスペリエンス のライセンスを持っている。
-- トピックを管理できる [**ユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、ナレッジ ネットワークのトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
+- トピックを管理できる [**ユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、サポート技術情報のトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
 
 トピックを管理できるユーザー権限がない限り、トピック センターの [トピックの管理] **ページを表示** することはできません。
 
@@ -91,7 +93,7 @@ ms.locfileid: "49731329"
 確認済みトピックを拒否することを選択できます。  これを行うには、確認済みリストで選択したトピックに移動し、トピックを拒否する場合は **x** を選択します。
 
 ## <a name="published-topics"></a>公開されたトピック
-発行されたトピックは編集され、ページにアクセスしたユーザーに特定の情報が常に表示されます。 手動で作成したトピックの一覧を以下に示します。
+公開されたトピックは編集され、ページにアクセスしたユーザーに特定の情報が常に表示されます。 手動で作成したトピックの一覧を以下に示します。
 
 
 

@@ -8,16 +8,18 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 441f28e36ced25b2e5af3f71235995c8b021f779
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: 7a0bd04121d7400cced22e43a539bd21c45a7fc3
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771873"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976576"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex の導入: 概要
 
@@ -60,7 +62,7 @@ SharePoint Syntex は、次のような Microsoft 365 コンプライアンス�
 組織で SharePoint Syntex を使用する準備をするには、まず、それが役立つシナリオを理解する必要があります。 この理由は、必要なモデルを決定し、モデルを適用する場所に基づいて組織を構造化する方法を決定するのに役立ちます。 ドキュメントの理解が組織に役立ついくつかのシナリオを以下に示します。
 
 - コンテンツ処理: 契約、作業明細書、その他のフォームのようなドキュメントを処理します。 フォームを入力し、フィールドを理解してマップし、フォームを実行して自動的にデータを収集するモデルをトレーニングします。 詳細については、「フォーム処理の [概要」を参照してください](form-processing-overview.md)。
-- 請求書の分析: 関連する詳細を請求書から取り出し、ポリシーに準拠している、または適切に処理されている必要があります。
+- 請求書の分析: 請求書から関連する詳細を引き出し、ポリシーに準拠している、または適切に処理されている必要があります。
 
 SharePoint Syntex が組織を支援する方法について考えます。
 
@@ -101,7 +103,7 @@ SharePoint Syntex が組織を支援する方法について考えます。
 
 このシナリオを自動化すると、次の操作を実行できます。
 
-- 手動で行う代わりに、契約からデータを自動的に抽出することで、時間と支払いを節約できます。
+- 手動で行う代わりに、契約から自動的にデータを抽出することで、時間と支払いを節約できます。
 - 保持ラベルを使用して契約が適切に保持され、コンプライアンスが向上します。
 
 ### <a name="tips-for-identifying-scenarios"></a>シナリオを特定するためのヒント
@@ -133,7 +135,7 @@ SharePoint Syntex が組織を支援する方法について考えます。
 - フォーム処理: フォーム処理アクションを取得するサイトを決定します。
 - ドキュメントの理解: ビジネス領域ごとに複数のコンテンツ センターを作成できます。
 
-## <a name="strategic-positioning"></a>戦略的な位置付け
+## <a name="strategic-positioning"></a>戦略的位置付け
 
 関係者と協力して、SharePoint Syntex を使用する戦略に沿っている必要があります。 この位置付けに役立つ次のリソースを調査して提供します。
 
@@ -167,10 +169,10 @@ SharePoint Syntex が組織を支援する方法について考えます。
 
 SharePoint Syntex を実装する準備をするには、次の必要があります。
 
-![コンテンツ理解の準備](../media/content-understanding/cu-adoption-readinesschecklist.png)
+![コンテンツを理解する準備](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. 終了状態を計画する
-    - ドキュメント理解モデルは、終わりではなく手段です。
+    - ドキュメント理解モデルは、最後の手段ではなく、手段です。
     - 抽出されたメタデータの値を次の方法で活用する計画を立てします。
       - 検索
       - フィルター処理とビューの書式設定
@@ -178,15 +180,15 @@ SharePoint Syntex を実装する準備をするには、次の必要があり�
       - オートメーション
 2. 識別
     - 既存の情報アーキテクチャとコンテンツ管理機能の使用について理解します。
-    - 既存のコンテンツ タイプはモデルに対して良い候補はありますか?
+    - 既存のコンテンツ タイプはモデルの候補として優れたものはありますか?
     - メタデータによって改善される既存のプロセス
 3. デザイン
     - 情報アーキテクチャ、管理されたメタデータ、およびコンテンツ タイプに対するアプローチを設計する
     - 定義、作成、管理のプロセスを設計します。
 
-## <a name="engage-your-organization"></a>組織を引き付け合う
+## <a name="engage-your-organization"></a>組織を関与する
 
-1. 利害関係の所有者を特定し、シナリオを確認し、プロジェクト計画を作成します。
+1. 利害関係の所有者を特定し、シナリオを確認し、プロジェクト計画を策定します。
 1. 設定を構成し、ライセンスを適用します。
 1. 認識とトレーニングを開始する – チャンピオンを募集します。
 1. 段階に分け展開します。  

@@ -1,217 +1,215 @@
 ---
 title: 情報バリアのトラブルシューティング
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: この記事は、情報障壁のトラブルシューティングのガイドとして使用します。
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: この記事は、情報の障壁をトラブルシューティングするためのガイドとして使用してください。
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e19c7d22e2b34d3f8083bcf5b8fb7297dbf86229
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 39ac5c2f12b8947bce26d426cac83e57cd4c87ae
+ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545671"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980040"
 ---
 # <a name="troubleshooting-information-barriers"></a>情報バリアのトラブルシューティング
 
-[情報バリア](information-barriers.md) は、組織が法的な要件や業界の規制に準拠していることを支援します。 たとえば、情報バリアを使用すると、特定のユーザーグループ間の通信を制限して、利息やその他の問題の競合を回避できます。 (情報障壁の設定方法の詳細については、「 [Define policies for information バリア](information-barriers-policies.md)」を参照してください)。
+[情報バリアは、](information-barriers.md) 組織が法的要件や業界の規制に準拠し続けるのに役立ちます。 たとえば、情報バリアを使用すると、特定のユーザー グループ間の通信を制限して、利益の競合や他の問題を回避できます。 (情報バリアを設定する方法の詳細については、「情報バリアのポリシーの定義」 [を参照](information-barriers-policies.md)してください)。
 
-情報の障壁が設定された後に予期しない問題が発生した場合は、それらの問題を解決するために実行できるいくつかの手順があります。 この記事をガイドとして使用します。
+情報バリアが設定された後に予期しない問題が発生した場合は、それらの問題を解決するためにいくつかの手順を実行できます。 この記事をガイドとして使用します。
 
 > [!IMPORTANT]
-> この記事で説明されているタスクを実行するには、次のいずれかのような適切な役割が割り当てられている必要があります。<br/>-Microsoft 365 エンタープライズグローバル管理者<br/>-全体管理者<br/>-コンプライアンス管理者<br/>-IB コンプライアンス管理 (新しい役割)<p>情報障壁の前提条件の詳細については、「 [必須コンポーネント (情報バリアポリシー)](information-barriers-policies.md#prerequisites)」を参照してください。<p>[セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)していることを確認してください。
+> この記事で説明するタスクを実行するには、次のいずれかの適切な役割が割り当てられている必要があります。<br/>- Microsoft 365 Enterprise グローバル管理者<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>-IB コンプライアンス管理 (これは新しい役割です)<p>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの [場合)」](information-barriers-policies.md#prerequisites)を参照してください。<p>セキュリティ センター [コンプライアンス センターの PowerShell &接続してください](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
-## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題: ユーザーが予期せず Microsoft Teams の他のユーザーとの通信をブロックされている 
+## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題: Microsoft Teams の他のユーザーとの通信が予期せずブロックされる 
 
-この場合、ユーザーは、Microsoft Teams の他のユーザーとの間で予期しない問題を報告しています。 例:
-- ユーザーがを検索しましたが、Microsoft Teams の別のユーザーを検索できません。
-- ユーザーは、Microsoft Teams の別のユーザーを検索できますが、選択できません。
-- ユーザーは別のユーザーを表示できますが、Microsoft Teams 内の他のユーザーにメッセージを送信することはできません。
+この場合、Microsoft Teams で他のユーザーと通信する際に予期しない問題が報告されています。 次に例を示します。
+
+- ユーザーが Microsoft Teams で別のユーザーを検索しますが、見つからない場合。
+- ユーザーは Microsoft Teams で別のユーザーを検索できますが、選択することはできません。
+- ユーザーは別のユーザーを表示できますが、Microsoft Teams で他のユーザーにメッセージを送信することはできません。
 
 ### <a name="what-to-do"></a>操作
 
-ユーザーが情報バリアポリシーの影響を受けているかどうかを判断します。 ポリシーの構成方法によっては、情報の障壁が期待どおりに機能している可能性があります。 または、組織のポリシーを調整する必要がある場合があります。
+ユーザーが情報バリア ポリシーの影響を受けるかどうかを判断します。 ポリシーの構成方法によっては、情報バリアが期待通り動作している可能性があります。 または、組織のポリシーを調整する必要がある場合があります。
 
-1. Identity パラメーターを指定して **InformationBarrierRecipientStatus** コマンドレットを使用します。 
+1. Identity パラメーター **を指定して Get-InformationBarrierRecipientStatus** コマンドレットを使用します。 
 
-    |構文  |例  |
-    |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>名前、エイリアス、識別名 (DN)、標準 DN、電子メールアドレス、GUID など、各受信者を一意に識別する任意の id 値を使用できます。     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>この例では、Identity パラメーターに alias (*meガント b*) を使用しています。 このコマンドレットは、ユーザーが情報バリアポリシーの影響を受けているかどうかを示す情報を返します。 (* ExoPolicyId を検索 \<GUID> します。)         |
+    |**構文**|**例**|
+    |:---------|:----------|
+    | `Get-InformationBarrierRecipientStatus -Identity` <p> 名前、エイリアス、識別名 (DN)、正規 DN、電子メール アドレス、GUID など、各受信者を一意に識別する任意の ID 値を使用できます。 |`Get-InformationBarrierRecipientStatus -Identity meganb` <p> この例では、Identity パラメーターにエイリアス (*meganb)* を使用しています。 このコマンドレットは、ユーザーが情報バリア ポリシーの影響を受けるかどうかを示す情報を返します。 (*ExoPolicyId: を探します \<GUID> 。 |
 
-    **ユーザーが情報バリアポリシーに含まれていない場合は、サポートにお問い合わせください**。 それ以外の場合は、次の手順に進んでください。
+    **ユーザーが情報バリア ポリシーに含まれていない場合は、サポートにお問い合わせください**。 それ以外の場合は、次の手順に進んでください。
 
-2. 情報バリアポリシーに含まれるセグメントを確認します。 これを行うには、 `Get-InformationBarrierPolicy` Identity パラメーターを指定したコマンドレットを使用します。 
+2. 情報バリア ポリシーに含まれるセグメントを確認します。 これを行うには `Get-InformationBarrierPolicy` 、Identity パラメーターを指定してコマンドレットを使用します。 
 
-    |構文  |例  |
-    |---------|---------|
-    |`Get-InformationBarrierPolicy` <p>前の手順で受信したポリシー GUID (ExoPolicyId) などの詳細を identity 値として使用します。     | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p>この例では、ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f*を持つ情報バリアポリシーに関する詳細情報を取得しています。         |
+    |**構文**|**例**|
+    |:---------|:----------|
+    | `Get-InformationBarrierPolicy` <p> 前の手順で受信したポリシー GUID (ExoPolicyId) などの詳細を ID 値として使用します。 | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p> この例では、ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f* を持つ情報バリア ポリシーに関する詳細情報を取得しています。 |
 
-    コマンドレットを実行した後、結果で **AssignedSegment**、 **SegmentsAllowed**、および **SegmentsBlocked** の値を検索します。
+    コマンドレットを実行した後、結果で AssignedSegment、SegmentsAllowed、**および SegmentsBlocked** の値を探します。  
 
-    たとえば、コマンドレットを実行した後、 `Get-InformationBarrierPolicy` 結果の一覧で次のように表示されています。
+    たとえば、コマンドレットの実行後、結果の一覧に `Get-InformationBarrierPolicy` 次の結果が表示されます。
 
     ```powershell
-        AssignedSegment      : Sales
-        SegmentsAllowed      : {}
-        SegmentsBlocked      : {Research}
+    AssignedSegment : Sales
+    SegmentsAllowed : {}
+    SegmentsBlocked : {Research}
     ```
-    この場合、情報バリアポリシーが [営業] および [リサーチ] セグメントにあるユーザーに影響を与えることがわかります。 この場合、営業担当者は研究中の人々とコミュニケーションすることができません。 
-    
-    これが正しいように思われる場合は、情報バリアが期待どおりに機能しています。 そうでない場合は、次の手順に進みます。
 
-4. セグメントが正しく定義されていることを確認してください。 これを行うには、 `Get-OrganizationSegment` コマンドレットを使用して、結果の一覧を確認します。 
+    この場合、情報バリア ポリシーが Sales および Research セグメントに含まれるユーザーに影響を与えるのを確認できます。 この場合、Sales のユーザーは Research のユーザーと通信できます。
 
-    |構文  |例  |
-    |---------|---------|
-    |`Get-OrganizationSegment`<p>このコマンドレットを Identity パラメーターと共に使用します。     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>この例では、GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*を持つセグメントについての情報を取得しています。         |
+    これが正しいと思われる場合は、情報バリアが期待通り動作しています。 そうでない場合は、次の手順に進みます。
 
-    セグメントの詳細を確認します。 必要に応じて、 [セグメントを編集](information-barriers-edit-segments-policies.md#edit-a-segment)してから、コマンドレットを再度使用し `Start-InformationBarrierPoliciesApplication` ます。
+3. セグメントが正しく定義されていることを確認します。 これを行うには、コマンドレットを `Get-OrganizationSegment` 使用し、結果の一覧を確認します。
 
-    **情報バリアポリシーに問題がある場合は、サポートにお問い合わせください**。
+    |**構文**|**例**|
+    |:---------|:----------|
+    | `Get-OrganizationSegment`<p> このコマンドレットは Identity パラメーターと一緒に使用します。 | `Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p> この例では、GUID *が c96e0837-c232-4a8a-841e-ef45787d8fcd* であるセグメントに関する情報を取得しています。 |
 
-## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>問題: Microsoft Teams でブロックする必要があるユーザー間で通信が許可されている
+    セグメントの詳細を確認します。 必要に応 [じてセグメントを編集](information-barriers-edit-segments-policies.md#edit-a-segment)し、コマンドレットを再使用 `Start-InformationBarrierPoliciesApplication` します。
 
-この場合、情報バリアは定義、アクティブ、および適用されますが、相互に通信できないようにする必要があるユーザーは、Microsoft Teams で互いにチャットして通話することができます。
+    **If you are still having issues with your information barrier policy, contact support**.
+
+## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>問題: Microsoft Teams でブロックする必要があるユーザー間の通信が許可されている
+
+この場合、情報バリアが定義され、アクティブで、適用されている場合でも、互いに通信を妨げる必要があるユーザーは、Microsoft Teams で何らかの方法でチャットや通話を行える状態になります。
 
 ### <a name="what-to-do"></a>操作
 
-該当するユーザーが情報バリアポリシーに含まれていることを確認します。 
+問題のユーザーが情報バリア ポリシーに含まれているか確認します。 
 
-1. Identity パラメーターを使用して **InformationBarrierRecipientStatus** コマンドレットを使用します。
+1. Identity パラメーター **を指定して Get-InformationBarrierRecipientStatus** コマンドレットを使用します。
 
-    |構文  |例  |
-    |---------|---------|
-    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。     |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>この例では、Office 365 の2つのユーザーアカウント ( *Megan*の場合は*Meガント b* 、 *Alex*の場合は*alexw* ) を参照しています。          |
+    |**構文** _|_ *の例**|
+    |:----------|:----------|
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 名前、エイリアス、識別名、正規ドメイン名、電子メール アドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> この例では、365 年 365 日に Office 2 つのユーザー アカウント *(megan* の場合は *meganb、Alex* の場合は *alexw)* を参照 *します*。 |
 
-    
     > [!TIP]
-    > 1人のユーザーに対してこのコマンドレットを使用することもできます。 `Get-InformationBarrierRecipientStatus -Identity <value>`
-    
-2. 結果を確認します。 **InformationBarrierRecipientStatus**コマンドレットでは、属性値、適用されている情報バリアポリシーなど、ユーザーに関する情報を返します。 
+    > このコマンドレットは、1 人のユーザーに対して使用することもできます。 `Get-InformationBarrierRecipientStatus -Identity <value>`
 
-    結果を確認し、次の表に示すように、次の手順を実行します。
-    
-    |結果  |次の操作  |
-    |---------|---------|
-    |選択したユーザーのセグメントが表示されません     |以下のいずれかの手順を実行します。<br/>-Azure Active Directory でユーザープロファイルを編集して、ユーザーを既存のセグメントに割り当てます。 (「 [Office 365 PowerShell を使用してユーザーアカウントのプロパティを構成する」を](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)参照してください)。<br/>- [情報バリアに対してサポートされている属性](information-barriers-attributes.md)を使用してセグメントを定義します。 次に、 [新しいポリシーを定義](information-barriers-policies.md#part-2-define-information-barrier-policies) するか、 [既存のポリシーを編集](information-barriers-edit-segments-policies.md#edit-a-policy) してそのセグメントを含めます。  |
-    |セグメントは表示されますが、これらのセグメントに情報バリアポリシーが割り当てられていません     |以下のいずれかの手順を実行します。<br/>- 対象のセグメントごとに[新しい情報バリアポリシーを定義する](information-barriers-policies.md#part-2-define-information-barrier-policies)<br/>- [既存の情報バリアポリシーを編集](information-barriers-edit-segments-policies.md#edit-a-policy) して正しいセグメントに割り当てる         |
-    |セグメントがリストされ、それぞれが情報バリアポリシーに含まれています。     |-コマンドレットを実行して、 `Get-InformationBarrierPolicy` 情報バリアポリシーがアクティブであることを確認します。<br/>- `Get-InformationBarrierPoliciesApplicationStatus` コマンドレットを実行してポリシーが適用されていることを確認する<br/>-すべての `Start-InformationBarrierPoliciesApplication` アクティブ情報バリアポリシーを適用するには、コマンドレットを実行します。          |
-    
+2. 結果を確認します。 **Get-InformationBarrierRecipientStatus** コマンドレットは、属性値や適用されている情報バリア ポリシーなど、ユーザーに関する情報を返します。
 
-## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>問題: 情報バリアポリシーから1人のユーザーを削除する必要がある
+    結果を確認し、次の表に示す手順を実行します。
 
-この場合、情報バリアポリシーが有効になっており、1人以上のユーザーが予期せず Microsoft Teams 内の他のユーザーとの通信をブロックされています。 情報バリアポリシーを完全に削除するのではなく、1人または複数の個別のユーザーを情報バリアポリシーから削除することができます。 
+    |**結果**|**次の操作**|
+    |:----------|:------------------|
+    | 選択したユーザーのセグメントが一覧表示されません。 | 次のいずれかの操作を行います。<br/>- Azure Active Directory でユーザー プロファイルを編集して、既存のセグメントにユーザーを割り当てる。 [(「365 PowerShell を使用してユーザー Officeを構成する」を参照](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)してください)。<br/>- 情報バリアでサポートされている [属性を使用してセグメントを定義します](information-barriers-attributes.md)。 次に、新[しいポリシーを定義するか](information-barriers-policies.md#part-2-define-information-barrier-policies)[、既存のポリシーを編集して](information-barriers-edit-segments-policies.md#edit-a-policy)そのセグメントを含めるかのどちらかです。 |
+    | セグメントが一覧表示されますが、それらのセグメントに情報バリア ポリシーが割り当てられていない | 次のいずれかの操作を行います。<br/>- [問題のセグメントごとに新しい](information-barriers-policies.md#part-2-define-information-barrier-policies) 情報バリア ポリシーを定義する <br/>- [既存の情報バリア ポリシーを編集して適切](information-barriers-edit-segments-policies.md#edit-a-policy) なセグメントに割り当てる |
+    | セグメントが一覧表示され、それぞれが情報バリア ポリシーに含まれる | - コマンドレットを `Get-InformationBarrierPolicy` 実行して情報バリア ポリシーがアクティブな状態を確認する<br/>- コマンドレットを `Get-InformationBarrierPoliciesApplicationStatus` 実行してポリシーが適用されたのを確認する<br/>- コマンドレットを実行 `Start-InformationBarrierPoliciesApplication` してすべてのアクティブな情報バリア ポリシーを適用する |
 
-### <a name="what-to-do"></a>操作
+## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>問題: 情報バリア ポリシーから 1 人のユーザーを削除する必要がある
 
-情報バリアポリシーは、ユーザーのセグメントに割り当てられます。 セグメントは、 [ユーザーアカウントプロファイルの特定の属性](information-barriers-attributes.md)を使用して定義されます。 単一のユーザーからポリシーを削除する必要がある場合は、そのユーザーのプロファイルを Azure Active Directory で編集することを検討してください。これは、ユーザーが情報障壁の影響を受けるセグメントに含まれなくなったことです。
-
-1. Identity パラメーターを使用して **InformationBarrierRecipientStatus** コマンドレットを使用します。 このコマンドレットは、属性値、適用されている情報バリアポリシーなど、ユーザーに関する情報を返します。
-
-    |構文  |例  |
-    |---------|---------|
-    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>`<p>名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。     |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>この例では、Office 365 の2つのユーザーアカウント ( *Megan*の場合は*Meガント b* 、 *Alex*の場合は*alexw* ) を参照しています。          |
-    |`Get-InformationBarrierRecipientStatus -Identity <value>` <p>ユーザーを一意に識別する任意の値 (名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など) を使用できます。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p>この例では、Office 365: *jeanp*で1つのアカウントを参照します。 |
-
-2. 結果を確認して、情報バリアポリシーが割り当てられているかどうか、およびユーザーが属するセグメントがどれかを確認します。 
-
-3. 情報バリアの影響を受けるセグメントからユーザーを削除するには、 [Azure Active Directory でユーザーのプロファイル情報を更新](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)します。
-
-4. FwdSync が実行されるまで30分間待機します。 または、コマンドレットを実行して、 `Start-InformationBarrierPoliciesApplication` すべてのアクティブな情報バリアポリシーを適用します。
-
-## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>問題: 情報バリアアプリケーションプロセスで時間がかかりすぎています
-
-**InformationBarrierPoliciesApplication**コマンドレットを実行した後、プロセスが完了するまでに長い時間がかかります。
+この場合、情報バリア ポリシーが有効であり、1 人または複数のユーザーが Microsoft Teams の他のユーザーとの通信を予期せずブロックされます。 情報バリア ポリシーを完全に削除するのではなく、1 人または複数の個々のユーザーを情報バリア ポリシーから削除できます。
 
 ### <a name="what-to-do"></a>操作
 
-Policy application コマンドレットを実行すると、組織内のすべてのアカウントについて、情報バリアポリシーがユーザーごとに適用 (または削除) されることに注意してください。 ユーザー数が多い場合は、処理に時間がかかります。 (一般的なガイドラインとして、5000のユーザーアカウントを処理するのには1時間かかります)。
+情報バリア ポリシーは、ユーザーのセグメントに割り当てられます。 セグメントは、ユーザー アカウント プロファイルの特定 [の属性を使用して定義されます](information-barriers-attributes.md)。 1 人のユーザーからポリシーを削除する必要がある場合は、そのユーザーのプロファイルを Azure Active Directory で編集して、情報バリアの影響を受けるセグメントにユーザーが含めなくなるのを検討してください。
 
-1. 最新のポリシーアプリケーションの状態を確認するには、 **InformationBarrierPoliciesApplicationStatus** コマンドレットを使用します。
+1. Identity パラメーター **を指定して Get-InformationBarrierRecipientStatus** コマンドレットを使用します。 このコマンドレットは、属性値や適用されている情報バリア ポリシーなど、ユーザーに関する情報を返します。
 
-    |最新のポリシーアプリケーションを表示するには  |すべてのポリシーアプリケーションの状態を表示するには  |
-    |---------|---------|
-    |`Get-InformationBarrierPoliciesApplicationStatus`     |`Get-InformationBarrierPoliciesApplicationStatus -All $true`         |
+    |**構文**|**例**|
+    |:---------|:----------|
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 名前、エイリアス、識別名、正規ドメイン名、電子メール アドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> この例では、365 年 365 日に Office 2 つのユーザー アカウント *(megan* の場合は *meganb、Alex* の場合は *alexw)* を参照 *します*。          |
+    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> ユーザーを一意に識別する任意の値 (名前、エイリアス、識別名、正規ドメイン名、電子メール アドレス、GUID など) を使用できます。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> この例では、365 年に 1 つのOfficeを *参照します*。 |
 
+2. 結果を確認して、情報バリア ポリシーが割り当てられているか、ユーザーが属するセグメントを確認します。
 
-    これにより、ポリシーの適用が完了したか、失敗したか、または進行中であるかに関する情報が表示されます。
+3. 情報バリアの影響を受けるセグメントからユーザーを削除するには、Azure Active Directory でユーザーのプロファイル [情報を更新します](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+
+4. FwdSync が発生するまで約 30 分待ちます。 または、コマンドレットを実行 `Start-InformationBarrierPoliciesApplication` してすべてのアクティブな情報バリア ポリシーを適用します。
+
+## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>問題: 情報バリア アプリケーション プロセスに時間がかかっている
+
+**Start-InformationBarrierPoliciesApplication** コマンドレットを実行した後、プロセスが完了するには非常に長い時間が必要です。
+
+### <a name="what-to-do"></a>操作
+
+ポリシー アプリケーションコマンドレットを実行すると、組織内のすべてのアカウントに対して、ユーザー別に情報バリア ポリシーが適用 (または削除) されます。 ユーザーが多い場合は、処理に時間がかかる場合があります。 (一般的なガイドラインとして、5,000 のユーザー アカウントの処理には約 1 時間かかる)。
+
+1. **Get-InformationBarrierPoliciesApplicationStatus** コマンドレットを使用して、最新のポリシー アプリケーションの状態を確認します。
+
+    |**最新のポリシー アプリケーションを表示するには**|**すべてのポリシー アプリケーションの状態を表示するには**|
+    |:---------------------------------------------|:---------------------------------------------|
+    | `Get-InformationBarrierPoliciesApplicationStatus` | `Get-InformationBarrierPoliciesApplicationStatus -All $true` |
+
+    これにより、ポリシー アプリケーションが完了した、失敗した、または進行中かどうかに関する情報が表示されます。
 
 2. 前の手順の結果に応じて、次のいずれかの手順を実行します。
   
-    |状態  |次の手順  |
-    |---------|---------|
-    |**未開始**     |**InformationBarrierPoliciesApplication**コマンドレットが実行されてから45分以上経過している場合は、監査ログを調べて、ポリシー定義にエラーがないかどうか、またはアプリケーションが開始されていない理由を確認してください。 |
-    |**失敗**     |アプリケーションに障害が発生した場合は、監査ログを確認します。 また、セグメントとポリシーも確認してください。 複数のセグメントに割り当てられているユーザーはいますか? セグメントに複数の poliicy が割り当てられているかどうか。 必要に応じて、 [セグメントを編集](information-barriers-edit-segments-policies.md#edit-a-segment) するか、または [ポリシーを編集](information-barriers-edit-segments-policies.md#edit-a-policy)してから、 **InformationBarrierPoliciesApplication** コマンドレットを再度実行します。  |
-    |**処理中**     |アプリケーションがまだ進行中の場合は、完了するのに時間を確保します。 数日経過した場合は、監査ログを収集し、サポートに連絡してください。 |
+    |**状態**|**次の手順**|
+    |:---------|:------------|
+    | **開始されていない** | **Start-InformationBarrierPoliciesApplication** コマンドレットの実行から 45 分以上経っている場合は、監査ログを確認して、ポリシー定義にエラーが発生していないか、またはアプリケーションが起動していない理由を確認します。 |
+    | **Failed** | アプリケーションが失敗した場合は、監査ログを確認します。 また、セグメントとポリシーも確認します。 複数のセグメントに割り当てられているユーザーはいますか? 複数のポリシーが割り当てられているセグメントはありますか? 必要に応 [じて、セグメント](information-barriers-edit-segments-policies.md#edit-a-segment)の編集や [](information-barriers-edit-segments-policies.md#edit-a-policy)ポリシーの編集を行い **、Start-InformationBarrierPoliciesApplication** コマンドレットを再度実行します。 |
+    | **処理中** | アプリケーションがまだ進行中の場合は、完了までさらに時間を取る必要があります。 数日が過ごした場合は、監査ログを収集し、サポートにお問い合わせください。 |
 
-## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>問題: 情報バリアポリシーがまったく適用されていない
+## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>問題: 情報バリア ポリシーが適用されていない
 
-この例では、セグメントを定義し、情報のバリアポリシーを定義し、それらのポリシーを適用しようとしました。 ただし、コマンドレットを実行すると、 `Get-InformationBarrierPoliciesApplicationStatus` ポリシーアプリケーションが失敗したことを確認できます。
+この場合、セグメントを定義し、情報バリア ポリシーを定義し、それらのポリシーの適用を試みたとします。 ただし、コマンドレットを実行すると `Get-InformationBarrierPoliciesApplicationStatus` 、ポリシー アプリケーションが失敗しているのを確認できます。
 
 ### <a name="what-to-do"></a>操作
 
-組織に [Exchange アドレス帳ポリシー](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) が設定されていないことを確認します。 このようなポリシーにより、情報バリアポリシーが適用されなくなります。
+組織に Exchange アドレス帳ポリシー [が設定されていないことを](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 確認します。 このようなポリシーは、情報バリア ポリシーの適用を防止します。
 
-1. [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) に接続する 
+1. [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) に接続する
 
-2. [AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy)コマンドレットを実行し、結果を確認します。
+2. [Get-AddressBookPolicy コマンドレットを実行](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy)し、結果を確認します。
 
-    |結果  |次の手順  |
-    |---------|---------|
-    |Exchange アドレス帳ポリシーの一覧     |[アドレス帳ポリシーを削除する](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
-    |アドレス帳ポリシーが存在しません |ポリシーアプリケーションが失敗している理由を確認するには、監査ログを参照してください。 |
+    |**結果**|**次の手順**|
+    |:----------|:------------|
+    | Exchange アドレス帳ポリシーが一覧表示される | [アドレス帳ポリシーを削除する](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | アドレス帳ポリシーが存在しない |監査ログを確認して、ポリシー アプリケーションが失敗する理由を確認する |
 
-3. [ユーザーアカウント、セグメント、ポリシー、またはポリシーアプリケーションの状態を表示](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)します。
+3. [ユーザー アカウント、セグメント、ポリシー、またはポリシー アプリケーションの状態を表示します](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)。
 
-## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>問題: 情報バリアポリシーが指定したすべてのユーザーに適用されない
+## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>問題: 指定されたユーザーに適用されない情報バリア ポリシー
 
-セグメントを定義し、定義された情報バリアポリシーを適用した後、それらのポリシーを適用しようとすると、そのポリシーは一部の受信者に適用されますが、他の受信者には適用されない場合があります。
-コマンドレットを実行するときは `Get-InformationBarrierPoliciesApplicationStatus` 、次のようなテキストの出力を検索します。
+セグメントを定義し、情報バリア ポリシーを定義し、それらのポリシーを適用しようとすると、ポリシーが一部の受信者に適用されますが、他の受信者には適用されない場合があります。
+コマンドレットを実行すると `Get-InformationBarrierPoliciesApplicationStatus` 、出力で次のようなテキストが検索されます。
 
-> 独自性 `<application guid>`
+> ID: `<application guid>`
 >
-> 受信者の合計: 81527
+> Total Recipients: 81527
 >
 > 失敗した受信者: 2
 >
-> エラーのカテゴリ: なし
+> エラー カテゴリ: なし
 >
 > 状態: 完了
 
 ### <a name="what-to-do"></a>操作
 
-1. の監査ログで検索 `<application guid>` します。 この PowerShell コードをコピーして、変数に対して変更することができます。
+1. 監査ログで検索します `<application guid>` 。 この PowerShell コードをコピーし、変数を変更できます。
 
 ```powershell
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. およびフィールドの値について、監査ログからの詳細な出力を確認し `"UserId"` `"ErrorDetails"` ます。 これにより、エラーが発生した理由がわかります。 この PowerShell コードをコピーして、変数に対して変更することができます。
+2. 監査ログからの詳細な出力で、フィールドの値を `"UserId"` 確認 `"ErrorDetails"` します。 これにより、エラーの理由が示されます。 この PowerShell コードをコピーし、変数を変更できます。
 
 ```powershell
    $DetailedLogs[1] |fl
 ```
- 例:
+
+以下に例を示します。
 
 > "UserId": User1
-> 
->"ErrorDetails": "Status: IBPolicyConflict"。 エラー: IB segment "segment id1" および IB segment "segment id2" が競合しており、受信者に割り当てることができません。 
+>
+>"ErrorDetails":"Status:IBPolicyConflict. エラー: "segment id1" と"segment id2" の間に競合が発生し、受信者に割り当てできません。
 
-3. 通常、ユーザーが複数のセグメントに含まれていることがわかります。 これを修正するには、 `-UserGroupFilter` の値を更新し `OrganizationSegments` ます。
+3. 通常、ユーザーが複数のセグメントに含まれている場合があります。 You can fix this by updating the `-UserGroupFilter` value in `OrganizationSegments` .
 
-4. これらの手順 [情報障壁ポリシー](information-barriers-policies.md#part-3-apply-information-barrier-policies)を使用して、情報バリアポリシーを再適用します。
+4. これらの手順を使用して、情報バリア ポリシーを [再適用します](information-barriers-policies.md#part-3-apply-information-barrier-policies)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="resources"></a>リソース
 
-[Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
-
-[情報障壁](information-barriers.md)
+- [Microsoft Teams で情報障壁のポリシーを定義する](information-barriers-policies.md)
+- [情報障壁](information-barriers.md)

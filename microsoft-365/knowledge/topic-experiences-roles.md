@@ -8,16 +8,18 @@ ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: トピック エクスペリエンスのユーザー ロールについて説明します。
-ms.openlocfilehash: ed4d40aa7bb91a85e28aba7ace99edf580c427a5
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: b649ea81d8e5b036e9332e9c87b67a951b5905a7
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698904"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975695"
 ---
 # <a name="topic-experiences-roles-preview"></a>トピック エクスペリエンスの役割 (プレビュー)
 
@@ -36,7 +38,7 @@ Microsoft 365 環境でトピック エクスペリエンスを使用する場�
 トピック ビューアーは、SharePoint モダン サイトおよび SharePoint 検索で強調表示されたトピックを表示できる組織内のユーザーです。 強調表示されたトピックを選択して、トピック ページでトピックに関する詳細を表示できます。 
 
 トピックのハイライトとそのトピック ページをトピック ビューアーに表示するには、ユーザーは次の条件を実行する必要があります。
--   [トピック エクスペリエンス のライセンスは](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 、Microsoft 365 管理者によって割り当てられます。
+-   Microsoft 365 管理者[によってトピック](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)エクスペリエンス ライセンスが割り当てられている。
 -   トピックを表示できます。 これは、Microsoft 365 管理センターの [トピックエクスペリエンスの設定] ページのナレッジ管理者が行います。
 
 
@@ -50,8 +52,8 @@ Microsoft 365 環境でトピック エクスペリエンスを使用する場�
 
 トピックを作成および編集するには、ユーザーは次の条件を実行する必要があります。
 
--   [トピック エクスペリエンス のライセンスは](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 、Microsoft 365 管理者によって割り当てられます。
--   [トピックを作成および編集するためのアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)。 これは、Microsoft 365 管理センターの [トピックエクスペリエンスの設定] ページのナレッジ管理者が行います。
+-   Microsoft 365 管理者[によってトピック](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)エクスペリエンス ライセンスが割り当てられている。
+-   [トピックを作成および編集するためのアクセス許可が割り当てられている](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)。 これは、Microsoft 365 管理センターの [トピックエクスペリエンスの設定] ページのナレッジ管理者が行います。
 
 ## <a name="knowledge-managers"></a>ナレッジ マネージャー
 

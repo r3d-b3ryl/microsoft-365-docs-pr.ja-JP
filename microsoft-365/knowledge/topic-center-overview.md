@@ -8,22 +8,24 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 3e6a0e8e6917b62c1789ebcd689ba7dc1e64e9e0
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 03ecae794a0aee3297e305771452a6e5ce70015d
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731381"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975969"
 ---
 # <a name="topic-center-overview-preview"></a>トピック センターの概要 (プレビュー)
 
 > [!Note] 
 > この記事の内容は、Project の Private Preview 用です。 [Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)
 
-トピック センターは、組織の知識の中心として機能する最新の SharePoint サイトです。 Microsoft 365 管理センター [の](set-up-topic-experiences.md) トピック エクスペリエンスのセットアップ中に作成されます。
+トピック センターは、組織の知識の中心として機能する最新の SharePoint サイトです。 Microsoft 365 管理センター [のトピック](set-up-topic-experiences.md) エクスペリエンスのセットアップ中に作成されます。
 
 トピック センターには既定のホーム ページ (My topics) があります。このホーム ページでは、すべてのトピック エクスペリエンスユーザーが接続先のトピックを参照できます。 
 
@@ -69,7 +71,7 @@ ms.locfileid: "49731381"
 
 ## <a name="manage-topics-page"></a>トピックの管理ページ
 
-トピック センターの[トピックの管理] セクションで作業するには、ナレッジマネージャーの役割に必要な"トピックの管理" 権限が必要です。 管理者は、ナレッジ管理のセットアップ中にこれらの[](set-up-topic-experiences.md)アクセス許可をユーザーに割り当てる[](topic-experiences-knowledge-rules.md)か、管理者が後で Microsoft 365 管理センターを使用して新しいユーザーを追加できます。
+トピック センターの[トピックの管理] セクションで作業するには、ナレッジマネージャーの役割に必要な "トピックの管理" 権限が必要です。 管理者は、知識管理のセットアップ中にこれらの[](set-up-topic-experiences.md)アクセス許可をユーザーに割り当てる[](topic-experiences-knowledge-rules.md)か、管理者が後で Microsoft 365 管理センターを使用して新しいユーザーを追加できます。
 
 [トピックの管理] ページに、指定したソースの場所から識別されたトピックがトピック ダッシュボードに表示されます。 各トピックには、トピックが検出された日付と、そのトピックに関するフィードバックが提供された場合が表示されます。 トピックの管理権限が **割り** 当てられたユーザーは、未確認のトピックを確認して、次の項目を選択できます。
 - トピックを確認します。トピックにアクセスできるユーザーに対してトピックを強調表示し、関連するトピック カードとトピック ページを表示できます。
@@ -81,7 +83,7 @@ ms.locfileid: "49731381"
 
 ## <a name="create-or-edit-a-topic"></a>トピックを作成または編集する
 
-トピックの作成 **と編集のアクセス許可** がある場合は、次のアクセス許可を使用できます。
+トピックの作成 **と編集のアクセス許可** がある場合は、次の権限を持つ必要があります。
 
 - [既存のトピックを編集](edit-a-topic.md)する : 検出によって作成された既存のトピック ページを変更できます。
 - [新しいトピック](create-a-topic.md)を作成する : 検出によって見つからなかったトピックや、AI ツールでトピックを作成するのに十分な証拠が見つからなかった場合に、新しいトピックを作成できます。

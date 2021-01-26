@@ -1,5 +1,5 @@
 ---
-title: 'トピック エクスペリエンストピックの検出とキュレーション (プレビュー) '
+title: 'トピック エクスペリエンスのトピックの検出とキュレーション (プレビュー) '
 description: トピックの検出方法の概要。
 ms.author: efrene
 author: efrene
@@ -8,15 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 2d885d841b280e345d90742fe003bb443160c21f
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: ea0bbc1f7d34ff01fcf446bfa4bbd0b95f310c4c
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698947"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976169"
 ---
 # <a name="topic-experiences-discovery-and-curation-preview"></a>トピック エクスペリエンスの検出とキュレーション (プレビュー)
 
@@ -33,7 +35,7 @@ AI によって生成されたトピック情報は、次を含む **トピッ�
 - トピックの詳細を知っている可能性があるユーザー。
 - トピックに関連する可能性があるサイト、ファイル、およびページ。
 
-トピック エクスペリエンスでは、テナント内のすべての SharePoint モダン サイト ページでトピックのすべてのインスタンスが強調表示されます。 ユーザーがトピックの詳細を知りたがっている場合は、強調表示されているトピックを選択して、簡単な説明を提供する **トピック** の概要カードを表示できます。 さらに詳しく知りたい場合は、概要で [トピックの詳細] リンクを選択して、詳細なトピック ページを開きます。
+トピックエクスペリエンスでは、テナント内のすべての SharePoint モダン サイト ページでトピックのすべてのインスタンスが強調表示されます。 ユーザーがトピックの詳細を知りたがっている場合は、強調表示されているトピックを選択して、簡単な説明を提供する **トピック** の概要カードを表示できます。 さらに詳しく知りたい場合は、概要で [トピックの詳細] リンクを選択して、詳細なトピック ページを開きます。
 
 ![トピックのハイライト](../media/knowledge-management/saturn.png) </br>
 
