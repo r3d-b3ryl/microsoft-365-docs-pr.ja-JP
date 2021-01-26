@@ -106,7 +106,6 @@
           href: customize-a-built-in-sensitive-information-type.md
         - name: Exact Data Match によりカスタムの機密情報の種類を作成する
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: カスタムの機密情報の種類の使用を開始する
         - name: 完全一致スキーマと機密情報の種類ウィザードを使用する
           href: sit-edm-wizard.md
         - name: 構成可能な一致を使用するために完全一致スキーマを変更する
