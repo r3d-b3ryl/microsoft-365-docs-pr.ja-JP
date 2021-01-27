@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、ユーザーによって報告されるスパムおよびフィッシングメールを収集するメールボックスを構成する方法について説明します。
-ms.openlocfilehash: 8f9da620643d46bf21a18eccc2047ad4361832cc
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865066"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988130"
 ---
 # <a name="user-submissions-policy"></a>ユーザー申請ポリシー
 
@@ -39,23 +40,23 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
 - [iOS および Android 用の Outlook の組み込みレポート](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
 
   > [!NOTE]
-  > Outlook on [the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)でレポートが無効になっている場合は、ここでユーザーの送信を有効にすると、その設定が上書きされ、ユーザーは Outlook on the web でメッセージを再び報告できます。
+  > Outlook on [the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)でレポートが無効になっている場合、ここでユーザーの送信を有効にすると、その設定が上書きされ、ユーザーは Outlook on the web でメッセージを再び報告できます。
 
 指定したメールボックスにメッセージを転送するサード パーティ製のメッセージ報告ツールを構成することもできます。
 
-ユーザーが報告したメッセージを Microsoft に直接配信する代わりにカスタム メールボックスに配信すると、管理者は管理者の送信を使用してメッセージを選択的および手動で Microsoft に [報告できます](admin-submission.md)。
+ユーザーが報告したメッセージを Microsoft に直接ではなくカスタム メールボックスに配信すると、管理者は管理者の送信を使用してメッセージを選択的および手動で Microsoft に [報告できます](admin-submission.md)。
 
 ## <a name="custom-mailbox-prerequisites"></a>カスタム メールボックスの前提条件
 
 次の記事を使用して、ユーザーが報告したメッセージがカスタム メールボックスに移動するために必要な前提条件を構成します。
 
-- Spam Confidence Level を設定する Exchange メール フロー ルールを作成して、カスタム メールボックスのスパム フィルター処理をスキップします。 [「EAC を使用して、SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)を **-1** に設定するメッセージの SCL を設定するメール フロー ルールを作成する」を参照してください。
+- スパム信頼度を設定する Exchange メール フロー ルールを作成して、カスタム メールボックスのスパム フィルター処理をスキップします。 [「EAC を使用して、SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)を **-1** に設定するメッセージの SCL を設定するメール フロー ルールを作成する」を参照してください。
 
 - カスタム メールボックス内のマルウェアの添付ファイルのスキャンを無効にします。 [Office 365](set-up-atp-safe-attachments-policies.md)の Defender で安全な添付ファイルの設定ポリシーを使って、安全な添付ファイルのポリシーを作成し、[安全な添付ファイル] を [安全な添付ファイル] の不明なマルウェア応答に対してオフに **設定します**。
 
 - カスタム メールボックス内のメッセージの URL スキャンを無効にします。 [Office 365](set-up-atp-safe-links-policies.md)の Defender で安全なリンクポリシーの設定を使用して、メッセージ内の悪意のある可能性のある不明な URL に対するアクションをオフに設定して安全なリンク ポリシーを作成 **します**。
 
-- マルウェアゼロアワー自動消去を無効にするマルウェア対策ポリシーを作成します。 「 [セキュリティ/コンプライアンス センター&](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) 使用してマルウェア対策ポリシーを作成し、マルウェアゼロアワー **自動** 消去をオフに設定する」を **参照してください**。
+- マルウェア対策ポリシーを作成して、マルウェアゼロアワー自動消去を無効にします。 「 [セキュリティ/コンプライアンス センター&](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) 使用してマルウェア対策ポリシーを作成し、マルウェアゼロアワー **自動** 消去をオフに設定する」を **参照してください**。
 
 - スパム フィルター ポリシーを作成して、カスタム メールボックスでスパムとフィッシングのゼロアワー自動消去 (ZAP) を無効にします。 「Security [& Compliance Center](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)を使用してスパム対策ポリシーを作成し、スパム ZAP とフィッシング **ZAP** の **オン** チェック ボックスをオフにする」を参照してください。
 
@@ -67,14 +68,23 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 To go directly to the **User submissions** page, use <https://protection.office.com/userSubmissionsReportMessage> .
 
-- ユーザー提出の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
+- ユーザーの提出の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
 
   - **組織の管理** または [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の **セキュリティ管理者**。
   - Exchange Online **での**[組織の管理](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)。
 
+- Exchange Online PowerShell にアクセスする必要があります。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合、送信メールボックスを指定すると、次のようなエラーが表示されます。
+
+  > ドメイン内のメール アドレスを指定する
+
+  Exchange Online PowerShell へのアクセスを有効または無効にする方法の詳細については、次のトピックを参照してください。
+
+  - [Exchange Online PowerShell へのアクセスを有効または無効にする](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Exchange Online のクライアント アクセス規則](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>セキュリティ/コンプライアンス センター&使用して、ユーザーの送信メールボックスを構成する
 
-1. セキュリティ/コンプライアンス センター&、脅威 **管理ポリシー** のユーザー提出に \>  \> **移動します**。
+1. セキュリティ/コンプライアンス センター&、脅威 **管理ポリシーのユーザー提出に** \>  \> **移動します**。
 
 2. 表示される **[ユーザーの提出** ] ページで、次のいずれかのオプションを選択します。
 
@@ -96,7 +106,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
 
         - **Microsoft (推奨)**: ユーザー送信メールボックスは使用されません (報告されたメッセージはすべて Microsoft に送信されます)。
 
-        - **Microsoft とカスタム メールボックス**: 表示されるボックスに、既存の Exchange Online メールボックスの電子メール アドレスを入力します。 配布グループは許可されません。 ユーザーの送信は、分析のために Microsoft と、管理者またはセキュリティ運用チームが分析するカスタム メールボックスの両方に送信されます。
+        - **Microsoft とカスタム メールボックス**: 表示されるボックスに、既存の Exchange Online メールボックスの電子メール アドレスを入力します。 配布グループは許可されません。 ユーザーの送信は、分析のために Microsoft に送信され、管理者またはセキュリティ運用チームが分析するカスタム メールボックスに移動します。
 
         - **カスタム メールボックス**: 表示されるボックスに、既存の Exchange Online メールボックスの電子メール アドレスを入力します。 配布グループは許可されません。 このオプションは、最初に分析のために管理者またはセキュリティ運用チームにのみメッセージを送信する場合に使用します。 管理者が自分で転送しない限り、メッセージは Microsoft に送信されません。
 
@@ -106,7 +116,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
       完了したら、[確認] をクリック **します**。
 
       > [!CAUTION]
-      > Outlook on the web メールボックス ポリシーを使用して [Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) で迷惑メール報告を無効にしているが、メッセージを Microsoft に報告する前の設定のいずれかを構成した場合、ユーザーはレポート メッセージ アドインまたは Report Phishing アドインを使用して、Outlook on the web の Microsoft にメッセージを報告できます。
+      > Outlook on the web メールボックス ポリシーを使用して [Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) で迷惑メール報告を無効にしているが、Microsoft にメッセージを報告する前の設定のいずれかを構成した場合、ユーザーはレポート メッセージ アドインまたは Report Phishing アドインを使用して Outlook on the web の Microsoft にメッセージを報告できます。
 
    - **Outlook** の [メッセージの報告] 機能を無効にする: このオプションは、Outlook on the web のレポート メッセージ アドイン、フィッシング報告アドイン、または組み込みレポートの代わりにサード パーティ製のレポート ツールを使用する場合に選択し、次の設定を構成します。
 
@@ -136,4 +146,4 @@ SafetyAPIAction は、次のいずれかの整数値です。
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
-この形式に従ってないメッセージは、Submissions ポータルに正しく表示されません。
+この形式に従ってないメッセージは、提出ポータルに正しく表示されません。

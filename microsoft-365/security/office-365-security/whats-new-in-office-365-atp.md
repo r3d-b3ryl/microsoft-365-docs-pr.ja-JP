@@ -3,7 +3,6 @@ title: Microsoft Defender for Office 365 の新機能
 description: Microsoft Defender for Office 365 の最新リリースで利用可能な新機能について説明します。
 keywords: Office 365 atp の新機能, ga, 一般提供, 機能, 利用可能, 新規
 search.appverid: met150
-ms.service: O365-seccomp
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
@@ -17,15 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 01/12/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
-ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49724404"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988162"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -39,7 +40,11 @@ ms.locfileid: "49724404"
 この記事では、Microsoft Defender for Office 365 の最新リリースの新機能の一覧を示します。 現在プレビュー中の機能は、(プレビュー) **で示されています**。
 
 > [!TIP]
-> Microsoft Defender for Office 365 をまだお持ちではないですか? [試用版を開始するために営業に問い合わせ。](https://go.microsoft.com/fwlink/p/?LinkId=518644)
+> Microsoft Defender for Office 365 をまだお持ちではありませんか? [試用版を開始する場合は、営業に問い合わせください](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
+
+## <a name="december-2020"></a>2020年12月
+
+- [Office 365 でセキュリティ保護](secure-by-default.md)
 
 ## <a name="november-2020"></a>2020 年 11 月
 
@@ -48,8 +53,7 @@ ms.locfileid: "49724404"
 ## <a name="septemberoctober-2020"></a>2020 年 9 月/10 月
 
 - [Configuration Analyzer を使用してポリシーを確認する](configuration-analyzer-for-security-policies.md)
-- [テナントの許可/ブロックリストを使用してフィルターの判断を手動で上書きする](tenant-allow-block-list.md)
-- 対象となる上位ユーザー、トランスポート ルール、コネクタを含む脅威エクスプローラーの拡張機能[(Defender](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) for Office 365 の情報[(テナント](threat-explorer.md)/ユーザー ポリシーによってメールが許可/ブロックされました) (Defender for Office 365 プラン 2)
+- 対象ユーザー、トランスポート ルール、コネクタを含む脅威エクスプローラーの拡張機能[(Defender](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) for Office 365 の情報[(テナント](threat-explorer.md)/ユーザー ポリシーによってメールが許可/ブロックされました) (Defender for Office 365 プラン 2)
 - 脅威エクスプローラーで URL の脅威 [(マルウェア](threat-explorer.md#threats-in-urls) 、フィッシング、スパム、またはなし) を表示する (Defender for Office 365 プラン 2)
 - [脅威、追加アクション](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) 、配信場所、更新されたタイムライン ビューに関する更新を含む、ハンティング エクスペリエンス脅威エクスプローラーの機能強化 (Defender for Office 365 プラン 2)
 
@@ -79,7 +83,7 @@ ms.locfileid: "49724404"
 
 - [オフライン分析用に URL クリック データ](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) をエクスポートする (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
 
-- [Office 365 (プレビュー)](campaigns.md)に Microsoft Defender のキャンペーン ビューを使用する (Office 365 プラン 2 の Microsoft Defender)
+- [Office 365 (プレビュー)](campaigns.md)に Microsoft Defender のキャンペーン ビューを使用する (Office 365 プラン 2 の場合)
 
 ## <a name="november-2019"></a>2019 年 11 月
 

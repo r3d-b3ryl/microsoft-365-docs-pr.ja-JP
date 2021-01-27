@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Microsoft 365 のセットアップが行ったので、Mac、PC、またはモバイル デバイスに個々の Office アプリケーションをインストールし、Outlook でメールをセットアップする方法について説明します。
-ms.openlocfilehash: b05a61f9579ee98a8b0be9d01b6a507b06c29321
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: dc8a4c3670dacf4b3cc85637c3e18c51a8c8e350
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926848"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988034"
 ---
 # <a name="install-office-applications"></a>Office アプリケーションのインストール
 
@@ -36,6 +36,8 @@ Microsoft 365 をセットアップすると、Mac、PC、またはモバイル 
 方法については、次のリンクを参照してください。
   
 - アプリケーションOfficeインストールする: PC  [Office Mac にインストールする](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+
+- その他のアプリを[インストールする](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281): Project、Visio、Skype [for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb) [](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710)
 
 - モバイル デバイスのセットアップ: [Microsoft 365 モバイルセットアップ - ヘルプ](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 
