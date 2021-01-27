@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 localization_priority: Priority
-description: Microsoft SharePoint Syntex のドキュメント理解モデルで抽出子を作成するときに、用語ストアの分類法を活用します。
-ms.openlocfilehash: cf396d14a497981389cc336c5efd121f36392181
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+description: Microsoft SharePoint Syntex のドキュメント理解モデルで抽出子を作成するときに、用語ストアの分類法を使用します。
+ms.openlocfilehash: aff2df6a96fdfee7380651f68e647019e9485658
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709550"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975741"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>抽出子の作成時に用語ストアの分類を活用する
 
@@ -33,13 +35,13 @@ SharePoint Syntex を使用してドキュメント理解モデルで抽出子�
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>抽出子で管理されたメタデータ列を使用する
 
-用語セットは、SharePoint 管理センターの 管理されたメタデータ サービス (MMS) 用語ストアで構成されます。 以下の例では、*契約サービス* の [用語セット](https://docs.microsoft.com/sharepoint/managed-metadata#term-set)は、*Creative* などのいくつかの用語を含むように構成されています。  詳細は、この用語に 3 つの同義語 (*Design*、*Graphics*、*Topography*) があり、これらの同義語を *Creative* に翻訳する必要があることを示しています。 
+用語セットは、SharePoint 管理センターの 管理されたメタデータ サービス (MMS) 用語ストアで構成されます。 以下の例では、*契約サービス* の [用語セット](https://docs.microsoft.com/sharepoint/managed-metadata#term-set)は、*Creative* などを含む複数の用語を含むように構成されています。  詳細は、この用語に 3 つの同義語 (*Design*、*Graphics*、*Topography*) があり、これらの同義語を *Creative* に翻訳する必要があることを示しています。 
 
    ![用語セット](../media/content-understanding/term-store.png)</br>
 
-用語セットで同義語を使用する理由はいくつか考えられます。 たとえば、古い用語、名前が変更された用語、または名前付けに関する組織部門間のバリエーションがある可能性があります。
+用語セットで同義語を使用する理由は多く考えられます。 たとえば、古い用語、名前が変更された用語、または名前付けに関する組織部門間のバリエーションがある可能性があります。
 
-モデルで抽出子を作成するときに管理メタデータ フィールドを選択できるようにするには、それを[管理メタデータ サイト列として追加する](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f)必要があります。 サイト列を追加すると、モデルの抽出子を作成するときに選択できるようになります。
+モデルで抽出子を作成するときに管理メタデータ フィールドを選択できるようにするには、[それを管理メタデータ サイト列として追加する](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f)必要があります。 サイト列を追加すると、モデルの抽出子を作成するときに選択できるようになります。
 
    ![契約サービス](../media/content-understanding/contract-services.png)</br>
 

@@ -7,16 +7,18 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
 description: Project Cortex のコンテンツ理解をセットアップする
-ms.openlocfilehash: 1abcc71200642de3f74a92e83299e079ffffb038
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604270"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976388"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -24,15 +26,15 @@ ms.locfileid: "49604270"
 
 事前に、次のことを考慮します。
 
-- フォームの処理を有効にする SharePoint サイトはどれですか? これらのすべて、それともサイトのいくつかを選択しますか?
-- 既定のコンテンツセンターの名前を何にしますか?
+- どの SharePoint サイトでフォームの処理を有効にできますか? これらのすべて、それともサイトのいくつかを選択しますか?
+- 既定のコンテンツ センターの名前を何にしますか?
 
 Microsoft 365管理センターでの最初のセットアップの後でも設定を変更できます。
 
-設定する前に、使用している環境のコンテンツ解釈をセットアップして構成する最適な方法を計画してください。 たとえば、次の名前について考慮する必要があります。
+設定する前に、使用している環境のコンテンツ解釈をセットアップして構成する最適な方法を計画してください。 たとえば、以下について決定を行う必要があります。
 
 - フォームの処理を有効にする SharePoint サイト (すべてのサイト、一部、または選択したサイト)
-- コンテンツセンターと、プライマリサイト管理者の名前
+- 名前と管理者またはコンテンツ センター
 
 ## <a name="requirements"></a>要件 
 
@@ -55,8 +57,8 @@ Microsoft 365管理センターでの最初のセットアップの後でも設�
 4. [ **フォーム処理の構成**] ページで、特定の SharePoint ドキュメントライブラリにユーザーがフォーム処理モデルを作成できるようにするかどうかを選択できます。 ドキュメントライブラリのリボンには、メニューオプションが用意されています。これを有効にしている SharePoint ドキュメントライブラリで  **フォーム処理モデルを作成** します。
  
      **どの SharePoint ライブラリがフォーム処理モデルを作成するためのオプションを表示するようにするか** については、次を選択できます。</br>
-      - **すべての SharePoint ライブラリ** は、組織内のすべての SharePoint ライブラリで使用できるようにします。</br>
-      - **[選択したサイトのライブラリのみ]**、使用可能にするサイトを選択するか、最大50サイトのリストをアップロードします。</br>
+      - **すべての SharePoint サイトのライブラリ** は、組織内のすべての SharePoint ライブラリで使用できるようにします。</br>
+      - **選択した SharePoint サイトのライブラリ** は、使用可能にするサイトを選択するか、最大 50 件のサイトのリストをアップロードします。</br>
       - **SharePointライブラリはなし** どのサイトも使用できるようにしたくない場合(セットアップ後に変更できます)。
 
    > [!div class="mx-imgBorder"]
@@ -114,4 +116,3 @@ Ai builder の容量は、[ [AI ビルダー電卓](https://powerapps.microsoft.
 [フォーム処理モデルの概要](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
 [ステップバイステップ: ドキュメント理解モデルを作成する方法について理解する (ビデオ)](https://www.youtube.com/watch?v=DymSHObD-bg)
-
