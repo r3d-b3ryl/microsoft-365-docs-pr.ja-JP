@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4028d5ff59625d2008afb4a384bc290a5df1b2a3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 2e95c2f3627a6bb0c28b736437012a92107b3533
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682648"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976248"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -66,10 +66,12 @@ ms.locfileid: "49682648"
 
 監査ログの検索を開始する前に、次の項目を必ず確認してください。
 
-- 監査ログの検索を開始するには、自分 (または他の管理者) が監査ログを有効にしている必要があります。 有効にするには、セキュリティ/コンプライアンス センターの [**監査ログの検索**] ページで [**監査を有効にする**] をクリックします。 (このリンクが表示されない場合、組織の監査はすでに有効になっています)。有効にすると、監査ログの準備中で、準備が完了してから数時間で検索を実行できることを通知するメッセージが表示されます。 これを行う必要があるのは 1 回だけです。 詳細については、「[監査ログの検索を有効または無効にする](turn-audit-log-search-on-or-off.md)」をご覧ください。
+- Microsoft 365 および Office 365 Enterprise 組織では、監査ログ検索は規定でオンになっています。 これには、E3/G3 または E5/G5 サブスクリプションを持つ組織が含まれます。 監査ログ検索が有効になっていることを確認するには、Exchange Online PowerShell で次のコマンドを実行します。
 
-  > [!NOTE]
-  > 現在、既定で監査が有効になるように準備を進めています。 それまでは、前述のように監査を有効にすることができます。
+  ```powershell
+  Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+  ```
+  *UnifiedAuditLogIngestionEnabled* プロパティの値`True`は、監査ログ検索が有効になっていることを示します。 詳細については、「[監査ログの検索を有効または無効にする](turn-audit-log-search-on-or-off.md)」をご覧ください。
 
 - 監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は Exchange 管理センターの [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 Office 365 および Microsoft 365 のグローバル管理者は自動的に、組織管理役割グループのメンバーとして Exchange Online に追加されます。 最小限の特権レベルで監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「[Exchange Online で役割グループを管理する](https://go.microsoft.com/fwlink/p/?LinkID=730688)」を参照してください。
 
