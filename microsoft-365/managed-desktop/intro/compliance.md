@@ -1,6 +1,6 @@
 ---
-title: コンプライアンス
-description: この記事では、Microsoft マネージドデスクトップに関連するコンプライアンス基準を示します。
+title: 準拠
+description: この記事では、Microsoft マネージド デスクトップに関連するコンプライアンス標準の一覧を示します。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,43 +9,43 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d47757e8e9b36baf060c86436bd7840ded7c324d
-ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
+ms.openlocfilehash: f2fae1e41562d1ae743ecd964b42082b3d6486e8
+ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49586675"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50031353"
 ---
 # <a name="compliance"></a>コンプライアンス
 
-Microsoft マネージドデスクトップを使用している場合、Microsoft は、コンプライアンスに関する包括的な一連のサービスを提供しています。 この取り組みにより、組織はさまざまなコンプライアンス要件に準拠します。
+Microsoft マネージド デスクトップを使用する場合、Microsoft はコンプライアンスサービスの包括的なセットを提供します。 この取り組みにより、組織はさまざまなコンプライアンス要件に準拠できます。
 
-## <a name="compliance-coverage"></a>コンプライアンスの適用範囲
+## <a name="compliance-coverage"></a>コンプライアンス対応範囲
 
-Microsoft マネージドデスクトップでは、次の資格が得られました。
+Microsoft マネージド デスクトップは、次の認定を取得しています。
 
-- [ISO 27001 情報セキュリティ管理標準 (ISMS)](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001)
+- [ISO 27001 情報セキュリティ管理基準 (ISMS)](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001)
 - [ISO 27701 プライバシー情報管理システム (PIMS)](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701)
-- [ISO 27017 情報セキュリティ制御のプラクティスのコード](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017)
-- [ISO 27018 クラウド内の個人データを保護するためのプラクティスのコード](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
+- [情報セキュリティコントロールの ISO 27017 実施コード](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017)
+- [クラウドで個人データを保護するための ISO 27018 実施コード](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
 - [ISO 9001 品質管理システム標準](https://docs.microsoft.com/compliance/regulatory/offering-ISO-9001)
-- [ISO 20000-1 Information Ts Service Management](https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011)
-- [ISO 22301 ビジネス継続性管理標準](https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301)
+- [ISO 20000-1 情報技術サービス管理](https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011)
+- [ISO 22301 ビジネス継続性管理基準](https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301)
 - [クラウド セキュリティ アライアンス (CSA) STAR 証明](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
 - [Cloud Security Alliance (CSA) STAR Certification](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
-- [サービス組織の制御 (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [サービス組織コントロール (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
-- [健康保険の携行性と責任に関する法律 (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [オーストラリア自治体情報セキュリティ登録された査定者プログラム (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+- [医療保険の移植性と責任に関する法律 (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
+- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 
 
-## <a name="auditor-reports-and-compliance-certificates"></a>監査者レポートとコンプライアンス証明書
+## <a name="auditor-reports-and-compliance-certificates"></a>監査レポートとコンプライアンス証明書
 
-[Service Trust Portal (STP)](https://servicetrust.microsoft.com/)には、Microsoft クラウドサービスの提供に関する情報を提供する中心的なリポジトリであるコントロールと技術の要件を含む、関連情報を見つけることができます。 [監査レポート]、[コンプライアンス証明書] など、STP の [ [監査レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) ] セクションからダウンロードできます。
+コントロールや技術要件などの関連情報は、Microsoft クラウド サービスに関するそのような情報の中央リポジトリである [Service Trust Portal (STP)](https://servicetrust.microsoft.com/)で確認できます。 監査レポート、コンプライアンス証明書などについては、STP の [監査レポート] [セクションから](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) ダウンロードできます。
 
 > [!NOTE]
-> Microsoft マネージドデスクトップは Azure 上で実行されるため、関連するドキュメントには、通常、"Microsoft Azure, Dynamics 365 やその他のオンラインサービス" などのファイル名が含まれています。 これらのドキュメントでは、通常、"Microsoft Online Services" または "Monitoring + Management" というカテゴリの下に Microsoft Managed Desktop を検索できます。
+> Microsoft マネージド デスクトップは Azure で実行されます。そのため、関連するドキュメントには通常、"Microsoft Azure、Dynamics 365、その他のオンライン サービス" などのファイル名があります。 これらのドキュメントでは、通常、カテゴリ "Microsoft Online Services" または "監視と管理" の下に Microsoft マネージド デスクトップがあります。
 
-## <a name="shared-responsibility"></a>共有の責任
+## <a name="shared-responsibility"></a>責任の共有
 
-クラウドサービスのコンプライアンスは、クラウドサービスプロバイダーとお客様との間で共有される責任があります。 詳細については、「 [クラウドコンピューティングの共有責任](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility)」を参照してください。
+クラウド サービスのコンプライアンスは、クラウド サービス プロバイダーとその顧客間で共有される責任です。 詳細については、「クラウドでの [共有責任」を参照してください](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility)。
