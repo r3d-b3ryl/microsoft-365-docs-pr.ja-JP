@@ -1,72 +1,73 @@
 ---
-title: メールフローダッシュボードの承認されていないドメインレポート
+title: メール フロー ダッシュボードの非承諾ドメイン レポート
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで承認されていないドメインレポートを使用して、送信者のドメインが Microsoft 365 で構成されていないオンプレミスの組織からのメッセージを監視する方法を学習できます。
-ms.openlocfilehash: 06acacb79c826cb465b3fd28086a7df9d64eabdc
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで非承諾ドメイン レポートを使用して、送信者のドメインが Microsoft 365 で構成されていないオンプレミス組織からのメッセージを監視する方法について説明します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 401d566158ca3f730af94fab60c471484e244a16
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877719"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029848"
 ---
-# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a><span data-ttu-id="dcbee-103">セキュリティ & コンプライアンスセンターの承認されていないドメインレポート</span><span class="sxs-lookup"><span data-stu-id="dcbee-103">Non-accepted domain report in the Security & Compliance Center</span></span>
+# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a><span data-ttu-id="d7079-103">セキュリティ/コンプライアンス センターの非& レポート</span><span class="sxs-lookup"><span data-stu-id="d7079-103">Non-accepted domain report in the Security & Compliance Center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-<span data-ttu-id="dcbee-104">[セキュリティ & コンプライアンスセンター](https://protection.office.com)の [メールフローダッシュボード](mail-flow-insights-v2.md)の承認されてい **ないドメイン** レポートには、送信者のドメインが Microsoft 365 組織の承認済みドメインとして構成されていないオンプレミスの電子メール組織からのメッセージに関する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="dcbee-104">The **Non-accepted domain** report in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) displays information about messages from your on-premises email organization where the sender's domain isn't configured as an accepted domain in your Microsoft 365 organization.</span></span>
+<span data-ttu-id="d7079-104">[セキュリティ](https://protection.office.com)& コンプライアンス センターのメール[](mail-flow-insights-v2.md)フロー ダッシュボードの [非承諾ドメイン] レポートには、送信者のドメインが Microsoft 365 組織の承認されたドメインとして構成されていないオンプレミスの電子メール組織からのメッセージに関する情報が表示されます。 </span><span class="sxs-lookup"><span data-stu-id="d7079-104">The **Non-accepted domain** report in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) displays information about messages from your on-premises email organization where the sender's domain isn't configured as an accepted domain in your Microsoft 365 organization.</span></span>
 
-<span data-ttu-id="dcbee-105">これらのメッセージが悪意のあるものであることを証明するためのデータがある場合、Microsoft 365 はこれらのメッセージを調整する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="dcbee-105">Microsoft 365 might throttle these messages if we have data to prove that the intent of these messages is malicious.</span></span> <span data-ttu-id="dcbee-106">そのため、何が起こっているのかを理解し、問題を修正することが重要です。</span><span class="sxs-lookup"><span data-stu-id="dcbee-106">Therefore, it's important for you to understand what's happening and to fix the issue.</span></span>
+<span data-ttu-id="d7079-105">これらのメッセージの意図が悪意のあるものであることを証明するデータがある場合、Microsoft 365 はこれらのメッセージを調整する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d7079-105">Microsoft 365 might throttle these messages if we have data to prove that the intent of these messages is malicious.</span></span> <span data-ttu-id="d7079-106">そのため、何が起こっているかを理解し、問題を解決することが重要です。</span><span class="sxs-lookup"><span data-stu-id="d7079-106">Therefore, it's important for you to understand what's happening and to fix the issue.</span></span>
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの承認されていないドメインウィジェット](../../media/mfi-non-accepted-domain-report-widget.png)
+![セキュリティ/コンプライアンス センターのメール フロー ダッシュボードの&ドメイン ウィジェット](../../media/mfi-non-accepted-domain-report-widget.png)
 
-## <a name="report-view-for-the-non-accepted-domain-report"></a><span data-ttu-id="dcbee-108">承認されていないドメインレポートのレポートビュー</span><span class="sxs-lookup"><span data-stu-id="dcbee-108">Report view for the Non-accepted domain report</span></span>
+## <a name="report-view-for-the-non-accepted-domain-report"></a><span data-ttu-id="d7079-108">非承諾ドメイン レポートのレポート ビュー</span><span class="sxs-lookup"><span data-stu-id="d7079-108">Report view for the Non-accepted domain report</span></span>
 
-<span data-ttu-id="dcbee-109">承認されてい **ないドメイン** ウィジェットのグラフをクリックすると、承認されてい **ないドメイン** レポートに移動します。</span><span class="sxs-lookup"><span data-stu-id="dcbee-109">Clicking the chart on the **Non-accepted domain** widget will take you to the **Non-accepted domain** report.</span></span>
+<span data-ttu-id="d7079-109">非承諾ドメイン ウィジェットのグラフ **を** クリックすると、非承諾ドメイン **レポートが表示** されます。</span><span class="sxs-lookup"><span data-stu-id="d7079-109">Clicking the chart on the **Non-accepted domain** widget will take you to the **Non-accepted domain** report.</span></span>
 
-<span data-ttu-id="dcbee-110">既定では、影響を受けるすべてのコネクタのアクティビティが表示されます。</span><span class="sxs-lookup"><span data-stu-id="dcbee-110">By default, the activity for all affected connectors is shown.</span></span> <span data-ttu-id="dcbee-111">[ **データの表示** ] をクリックすると、ドロップダウンから特定のコネクタを選択できます。</span><span class="sxs-lookup"><span data-stu-id="dcbee-111">If you click **Show data for** , you can select a specific connector from the dropdown.</span></span>
+<span data-ttu-id="d7079-110">既定では、影響を受けるすべてのコネクタのアクティビティが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d7079-110">By default, the activity for all affected connectors is shown.</span></span> <span data-ttu-id="d7079-111">[データの **表示] をクリック** すると、ドロップダウンから特定のコネクタを選択できます。</span><span class="sxs-lookup"><span data-stu-id="d7079-111">If you click **Show data for**, you can select a specific connector from the dropdown.</span></span>
 
-<span data-ttu-id="dcbee-112">グラフのデータ要素 (日単位) の上にポインターを置くと、そのコネクタの合計メッセージ数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="dcbee-112">If you hover over a data point (day) in the chart, you'll see the total number of messages for the connector.</span></span>
+<span data-ttu-id="d7079-112">グラフ内のデータ ポイント (日) にマウス ポインターを合わせると、コネクタのメッセージの総数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d7079-112">If you hover over a data point (day) in the chart, you'll see the total number of messages for the connector.</span></span>
 
-![承認されていないドメインレポートのレポートビュー](../../media/mfi-non-accepted-domain-report-overview-view.png)
+![[非承諾ドメイン] レポートのレポート ビュー](../../media/mfi-non-accepted-domain-report-overview-view.png)
 
-## <a name="details-table-view-for-the-non-accepted-domain-report"></a><span data-ttu-id="dcbee-114">承認されていないドメインレポートの詳細テーブルビュー</span><span class="sxs-lookup"><span data-stu-id="dcbee-114">Details table view for the Non-accepted domain report</span></span>
+## <a name="details-table-view-for-the-non-accepted-domain-report"></a><span data-ttu-id="d7079-114">非承諾ドメイン レポートの詳細テーブル ビュー</span><span class="sxs-lookup"><span data-stu-id="d7079-114">Details table view for the Non-accepted domain report</span></span>
 
-<span data-ttu-id="dcbee-115">レポートビューで [ **詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="dcbee-115">If you click **View details table** in a report view, the following information is shown:</span></span>
+<span data-ttu-id="d7079-115">レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d7079-115">If you click **View details table** in a report view, the following information is shown:</span></span>
 
-- <span data-ttu-id="dcbee-116">**Date**</span><span class="sxs-lookup"><span data-stu-id="dcbee-116">**Date**</span></span>
-- <span data-ttu-id="dcbee-117">**受信コネクタ名**</span><span class="sxs-lookup"><span data-stu-id="dcbee-117">**Inbound connector name**</span></span>
-- <span data-ttu-id="dcbee-118">**送信元ドメイン**</span><span class="sxs-lookup"><span data-stu-id="dcbee-118">**Sender domain**</span></span>
-- <span data-ttu-id="dcbee-119">**メッセージ数**</span><span class="sxs-lookup"><span data-stu-id="dcbee-119">**Message count**</span></span>
-- <span data-ttu-id="dcbee-120">**サンプルメッセージ** : 影響を受けるメッセージのサンプルのメッセージ id。</span><span class="sxs-lookup"><span data-stu-id="dcbee-120">**Sample messages** : The message IDs of a sample of affected messages.</span></span>
+- <span data-ttu-id="d7079-116">**日付**</span><span class="sxs-lookup"><span data-stu-id="d7079-116">**Date**</span></span>
+- <span data-ttu-id="d7079-117">**受信コネクタ名**</span><span class="sxs-lookup"><span data-stu-id="d7079-117">**Inbound connector name**</span></span>
+- <span data-ttu-id="d7079-118">**送信元ドメイン**</span><span class="sxs-lookup"><span data-stu-id="d7079-118">**Sender domain**</span></span>
+- <span data-ttu-id="d7079-119">**メッセージ数**</span><span class="sxs-lookup"><span data-stu-id="d7079-119">**Message count**</span></span>
+- <span data-ttu-id="d7079-120">**サンプル メッセージ**: 影響を受けるメッセージのサンプルのメッセージの ID。</span><span class="sxs-lookup"><span data-stu-id="d7079-120">**Sample messages**: The message IDs of a sample of affected messages.</span></span>
 
-<span data-ttu-id="dcbee-121">詳細テーブルビューで [ **フィルター** ] をクリックすると、 **開始日** と **終了日** を含む日付範囲を指定できます。</span><span class="sxs-lookup"><span data-stu-id="dcbee-121">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+<span data-ttu-id="d7079-121">詳細テーブル ビューで **[フィルター** ] をクリックすると、開始日と終了日で日付 **範囲** を **指定できます**。</span><span class="sxs-lookup"><span data-stu-id="d7079-121">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
 
-<span data-ttu-id="dcbee-122">特定の日付範囲のレポートに対して1人以上の受信者を電子メールで送信するには、[ **ダウンロードの依頼** ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dcbee-122">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
+<span data-ttu-id="d7079-122">特定の日付範囲のレポートを 1 人または複数の受信者に電子メールで送信するには、[ダウンロードの要求] **をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="d7079-122">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
 
-<span data-ttu-id="dcbee-123">表の行を選択すると、次の情報を含むフライアウトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="dcbee-123">When you select a row in the table, a flyout appears with the following information:</span></span>
+<span data-ttu-id="d7079-123">テーブル内の行を選択すると、次の情報を含むフライアウトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d7079-123">When you select a row in the table, a flyout appears with the following information:</span></span>
 
-- <span data-ttu-id="dcbee-124">**Date**</span><span class="sxs-lookup"><span data-stu-id="dcbee-124">**Date**</span></span>
-- <span data-ttu-id="dcbee-125">**受信コネクタ名**</span><span class="sxs-lookup"><span data-stu-id="dcbee-125">**Inbound connector name**</span></span>
-- <span data-ttu-id="dcbee-126">**送信元ドメイン**</span><span class="sxs-lookup"><span data-stu-id="dcbee-126">**Sender domain**</span></span>
-- <span data-ttu-id="dcbee-127">**メッセージ数**</span><span class="sxs-lookup"><span data-stu-id="dcbee-127">**Message count**</span></span>
-- <span data-ttu-id="dcbee-128">**サンプルメッセージ** : [ **サンプルメッセージの表示** ] をクリックすると、影響を受けたメッセージのサンプルの [メッセージの追跡](message-trace-scc.md) 結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="dcbee-128">**Sample messages** : You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the affected messages.</span></span>
+- <span data-ttu-id="d7079-124">**日付**</span><span class="sxs-lookup"><span data-stu-id="d7079-124">**Date**</span></span>
+- <span data-ttu-id="d7079-125">**受信コネクタ名**</span><span class="sxs-lookup"><span data-stu-id="d7079-125">**Inbound connector name**</span></span>
+- <span data-ttu-id="d7079-126">**送信元ドメイン**</span><span class="sxs-lookup"><span data-stu-id="d7079-126">**Sender domain**</span></span>
+- <span data-ttu-id="d7079-127">**メッセージ数**</span><span class="sxs-lookup"><span data-stu-id="d7079-127">**Message count**</span></span>
+- <span data-ttu-id="d7079-128">**サンプル メッセージ**: [サンプル メッセージの表示 [](message-trace-scc.md)]**を** クリックすると、影響を受けるメッセージのサンプルのメッセージ追跡結果を表示できます。</span><span class="sxs-lookup"><span data-stu-id="d7079-128">**Sample messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the affected messages.</span></span>
 
-![承認されていないドメインレポートの [詳細] テーブルビューで行を選択した後の詳細ポップアップ](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+![[承認されていないドメイン] レポートの [詳細] テーブル ビューで行を選択した後の詳細フライアウト](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 
-<span data-ttu-id="dcbee-130">レポートビューに戻るには、[ **レポートの表示** ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dcbee-130">To go back to the reports view, click **View report**.</span></span>
+<span data-ttu-id="d7079-130">レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="d7079-130">To go back to the reports view, click **View report**.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="dcbee-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="dcbee-131">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="d7079-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="d7079-131">Related topics</span></span>
 
-<span data-ttu-id="dcbee-132">メールフローダッシュボードの他の洞察の詳細については、「 [セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dcbee-132">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="d7079-132">メール フロー ダッシュボードの他の分析情報については、セキュリティ/コンプライアンス センターの「メール [フロー&参照してください](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="d7079-132">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
