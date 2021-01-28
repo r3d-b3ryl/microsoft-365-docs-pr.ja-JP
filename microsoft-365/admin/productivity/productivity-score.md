@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921244"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988070"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -80,13 +80,14 @@ ms.locfileid: "49921244"
 
 生産性スコアは Microsoft 365 管理センターでのみ確認でき、次の役割のいずれかを持つ IT 担当者だけがアクセスできます:  
 
-- グローバル管理者 
+- グローバル管理者
 - Exchange 管理者
-- SharePoint 管理者 
-- Skype for Business 管理者 
-- Teams 管理者 
-- グローバル閲覧者 
-- レポート閲覧者 
+- SharePoint 管理者
+- Skype for Business 管理者
+- Teams 管理者
+- グローバル閲覧者
+- レポート閲覧者
+- 使用状況の概要レポート閲覧者
 
 > [!NOTE]
 > 生産性スコアにサインアップまたはテナントを選択できるのは、グローバル管理者の役割を持つ IT プロフェッショナルのみです。

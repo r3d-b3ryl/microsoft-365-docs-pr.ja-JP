@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 作業の開始
+    - name: 概要
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -84,7 +84,7 @@
           href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: Fapiao を申請する
           href: services-in-china/apply-for-a-fapiao.md
-        - name: Azure Information Protection パリティ
+        - name: Azure Information Protection
           href: services-in-china/parity-between-azure-information-protection.md
     - name: ユーザー、グループ、パスワードを管理する
       href: add-users/index.yml

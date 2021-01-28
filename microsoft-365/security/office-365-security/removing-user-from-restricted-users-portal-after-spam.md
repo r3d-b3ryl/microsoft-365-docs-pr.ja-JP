@@ -10,7 +10,6 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 の制限されたユーザー ポータルからユーザーを削除する方法についての管理者向けの説明です。 アカウントを侵害していると見なされたユーザーは通常、スパム送信者として、制限されたユーザー ポータルに追加されます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 779e769b76299edf9b6d205f64bed4738f2f2499
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683057"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988194"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Office 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -71,7 +72,7 @@ ms.locfileid: "49683057"
 5. **[はい]** をクリックして変更を確定します。
 
    > [!NOTE]
-   > 制限が解除されるまで 30 分以上かかる場合があります。
+   > ユーザーからすべての制限を削除するには、最大で 24 時間かかる可能性があります。
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>制限されたユーザーのアラート設定を確認する
 
