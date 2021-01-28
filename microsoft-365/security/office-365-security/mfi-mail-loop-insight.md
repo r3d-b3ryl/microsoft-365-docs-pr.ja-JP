@@ -3,50 +3,51 @@ title: メール ループの可能性の修正のインサイト
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある考えられるメールループの洞察を使用して、組織内のメールループを特定して修正する方法について説明します。
-ms.openlocfilehash: 1d49fd93b2ea068986e003b36077672215a2dd57
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで、メール ループの可能性がある修正の分析情報を使用して、組織内のメール ループを特定して修正する方法について説明します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f08c27c761cdfe4acbbd8cf80e8ab6da8012b55f
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920569"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029896"
 ---
-# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで使用可能なメールループの洞察を修正する
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで考えられるメール ループ&修正
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-次の理由により、メールループが正しくありません。
+メール ループは、次の理由から悪い場合があります。
 
-- システムリソースが浪費されます。
-- 組織のメールボリュームクォータを消費します。
-- 送信者は、元のメッセージの送信者に、わかりづらい配信不能レポート (Ndr またはバウンスメッセージとも呼ばれます) を送信します。
+- システム リソースを無駄に使います。
+- 組織のメール ボリューム クォータが消費されます。
+- 元のメッセージ送信者に、混乱を招く配信不可レポート (NDRs またはバウンス メッセージとも呼ばれる) を送信します。
 
-[セキュリティ & コンプライアンスセンター](https://protection.office.com)の [メールフローダッシュボード](mail-flow-insights-v2.md)の [お客様 **に推奨** されるメールループ] 領域で、組織内でメールループが検出されたときに通知する **メールループを修正** します。
+セキュリティ **&** コンプライアンス センターのメール フロー ダッシュボードの [推奨されるユーザー [](https://protection.office.com) ] 領域にあるメール ループの修正に関する分析情報は、組織内でメール ループが検出されると通知します。  [](mail-flow-insights-v2.md)
 
-この洞察は、条件が検出された後にのみ表示されます (メールループがない場合は、洞察は見られません)。
+この分析情報は、条件が検出された後にのみ表示されます (メール ループを使用しない場合、分析情報は表示されません)。
 
-![メールフローダッシュボードのお住まいの地域で推奨されるメールフロールールの詳細を修正する](../../media/mfi-fix-possible-mail-loop.png)
+![メール フロー ダッシュボードの [おすすめ] 領域で低速のメール フロー ルールの分析情報を修正する](../../media/mfi-fix-possible-mail-loop.png)
 
-ウィジェットの [ **詳細の表示** ] をクリックすると、詳細情報を含むフライアウトが表示されます。
+ウィジェットの [ **詳細の表示]** をクリックすると、詳細情報を含むフライアウトが表示されます。
 
 - **ドメイン**
-- **メッセージ数** : [ **サンプルメッセージの表示** ] をクリックすると、ループの影響を受けたメッセージのサンプルの [追跡](message-trace-scc.md) 結果が表示されます。
-- **ドメインの種類** 。たとえば、権限のある、または権限がない。
-- **Mx レコード** : ドメインの mx レコードのホスト ( **メールサーバー** ) と **優先度** の値。
-- **ループの理由** と **解決方法** : 最も一般的なメールループシナリオを特定し、そのループを解決するために推奨されるアクションを提供します。
+- **メッセージ数**: [サンプルメッセージの表示][](message-trace-scc.md)をクリックすると、ループの影響を受けたメッセージのサンプルのメッセージ追跡結果を確認できます。
+- **ドメインの種類**" たとえば、権限がある、または権限が不必要です。
+- **MX レコード**:**ドメインの** MXレコードのホスト ( メール サーバー) と優先度の値。
+- **ループの** 理由と **修正方法**: 最も一般的なメール ループ シナリオを特定し、ループを修正するための推奨アクションを提供します。
 
-![考えられるメールループの状況を修正する [詳細の表示] をクリックした後に表示される詳細ポップアップ](../../media/mfi-fix-possible-mail-loop-details.png)
+![[可能なメール ループの分析情報を修正する] の [詳細の表示] をクリックした後に表示される詳細フライアウト](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="see-also"></a>関連項目
 
-メールフローダッシュボードの他の洞察の詳細については、「 [セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。
+メール フロー ダッシュボードの他の分析情報については、セキュリティ/コンプライアンス センターの「メール [フロー&参照してください](mail-flow-insights-v2.md)。

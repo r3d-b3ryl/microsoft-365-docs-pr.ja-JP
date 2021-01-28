@@ -3,7 +3,7 @@ title: 管理者の申請
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターの送信ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いがあるメール、スパム、その他の有害な可能性のあるメッセージ、URL、ファイルをスキャンのために Microsoft に送信する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: ed417db93bc2f3efa6b85b0ef97c10b5941cd8eb
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976605"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029516"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -35,7 +35,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 電子メール メッセージを送信すると、次の情報が表示されます。
 
-1. **電子メール認証チェック**: メール認証が配信された際に、電子メール認証が通過または失敗したかどうかに関する詳細。
+1. **電子メール認証チェック**: メール認証が配信された際に、電子メール認証が合格または失敗したかどうかに関する詳細。
 2. **ポリシー ヒット**: テナントへの受信メールを許可またはブロックした可能性があるポリシーに関する情報で、サービス フィルターの条件を上書きします。
 3. **ペイロード評価/デトレーション**: メッセージ内の URL と添付ファイルの検査。
 4. **成績分析**: メッセージが悪意のあるものかどうかを確認するために、人間の成績を確認します。
@@ -47,7 +47,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [提出] ページに直接 **移動するには** 、次のコマンドを使用します <https://protection.office.com/reportsubmission> 。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [提出] ページに直接 **移動するには、** 次のコマンドを使用します <https://protection.office.com/reportsubmission> 。
 
 - メッセージとファイルを Microsoft に送信するには、次のいずれかの役割グループのメンバーである必要があります。
 
@@ -57,24 +57,24 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
     この役割グループのメンバーシップは、この記事で[](#view-user-submissions-to-the-custom-mailbox)後述するように、カスタム メールボックスへのユーザー送信を表示するために必要です。
 
-- ユーザーがメッセージとファイルを Microsoft に送信する方法の詳細については、「メッセージとファイルを Microsoft に報告する [」を参照してください](report-junk-email-messages-to-microsoft.md)。
+- ユーザーがメッセージやファイルを Microsoft に送信する方法の詳細については、「メッセージとファイルを Microsoft に報告する」を [参照してください](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="report-suspicious-content-to-microsoft"></a>疑わしいコンテンツを Microsoft に報告する
 
-1. セキュリティ & コンプライアンス センターで、[脅威の管理の提出] に移動し、[管理者の提出] タブに移動し、[新しい提出] をクリック \> **します**。 
+1. セキュリティ & コンプライアンス センターで、[脅威の管理の提出] に移動し、[管理者の提出] タブに移動し、[新しい提出] をクリックします \> 。  
 
-2. 次 **のセクションで** 説明するように、メッセージ、URL、または添付ファイルを送信するために表示される新しい送信のフライアウトを使用します。
+2. 次 **のセクションで** 説明するように、メッセージ、URL、または添付ファイルを送信するために表示される新しい申請のフライアウトを使用します。
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Microsoft に問題があるメールを送信する
 
-1. [オブジェクトの **種類] セクションで** 、[電子メール] を **選択します**。 [提出 **形式] セクション** で、次のいずれかのオプションを使用します。
+1. [オブジェクトの **種類] セクションで** 、[電子メール] を **選択します**。 [ **提出形式] セクション** で、次のいずれかのオプションを使用します。
 
    - **ネットワーク** メッセージ ID : これは、メッセージの **X-MS-Exchange-Organization-Network-Message-Id** ヘッダー、または検疫済みメッセージの **X-MS-Office365-Filtering-Correlation-Id** ヘッダーで使用できる GUID 値です。
 
    - **[ファイル**]: [ファイルの **選択] をクリックします**。 開いたダイアログで、.eml または .msg ファイルを見つけて選択し、[開く] をクリック **します**。
 
    > [!NOTE]
-   > Office 365 プラン 1 またはプラン 2 の Defender を使用する管理者は、30 日間の古いメッセージを送信できます。 その他の管理者は 7 日間のみ戻る可能性があります。
+   > Defender for Office 365 プラン 1 またはプラン 2 の管理者は、30 日間の古いメッセージを送信できます。 その他の管理者は 7 日間のみ戻る可能性があります。
 
 2. [ **受信者] セクション** で、ポリシー チェックを実行する 1 人または複数の受信者を指定します。 ポリシー チェックでは、ユーザーまたは組織のポリシーが原因でメールがスキャンをバイパスしたかどうかを判断します。
 
@@ -118,11 +118,11 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
    ![添付ファイルの送信の例](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>管理者の提出を表示する
+## <a name="view-admin-submissions"></a>管理者の提出の表示
 
 セキュリティ & コンプライアンス センターで、[脅威の管理の提出] に移動し、[管理者の提出] タブに移動し、[新しい提出] をクリックします \> 。  
 
-ページの上部には、開始日、終了日を入力できます。また、既定では、ボックスに値を入力して [更新] ボタンをクリックすることで、提出 **ID** (すべての申請に割り当てられている GUID 値) でフィルター処理できます ![ ](../../media/scc-quarantine-refresh.png) 。 Update
+ページの上部には、開始日、終了日を入力できます。また、(既定では) ボックスに値を入力して [更新] ボタンをクリックすることで、提出 **ID** (すべての申請に割り当てられている GUID 値) でフィルター処理できます ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 フィルター条件を変更するには **、[Submission ID]** ボタンをクリックし、次のいずれかの値を選択します。
 
@@ -156,12 +156,12 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
   <sup>\*</sup> この値をクリックすると、詳細情報がフライアウトに表示されます。
 
-#### <a name="admin-submission-rescan-details"></a>管理者の提出の再スキャンの詳細
+#### <a name="admin-submission-rescan-details"></a>管理者の申請の再スキャンの詳細
 
 管理者の提出で送信されたメッセージは再スキャンされ、詳細フライアウトに結果が表示されます。
 
 - 配信時に送信者の電子メール認証にエラーが発生した場合。
-- メッセージの Verdict に影響を与えた、または上書きした可能性があるポリシー ヒットに関する情報。
+- メッセージの Verdict に影響を与えた、または上書きした可能性があるポリシーヒットに関する情報。
 - 現在の分析結果では、メッセージに含まれる URL またはファイルが悪意のあるものか確認されません。
 - 成績者からのフィードバック。
 
@@ -228,7 +228,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 ![ユーザー提出のフィルター オプション](../../media/user-submissions-filter-options.png)
 
-結果をエクスポートするには、ページの **上部にある** [エクスポート] をクリックし、[グラフ データ] または [テーブル **]** を選択 **します**。 表示されるダイアログで、.csv ファイルを保存します。
+結果をエクスポートするには、ページ上部の **[** エクスポート] をクリックし、[グラフ データ] **または** [テーブル] を選択 **します**。 表示されるダイアログで、.csv ファイルを保存します。
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>カスタム メールボックスへのユーザーの送信を表示する
 
@@ -238,7 +238,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 
 2. [カスタム メールボックス **] タブを選択** します。
 
-ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューで列を追加または削除できます。
+ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューに列を追加または削除できます。
 
 - **送信日**
 - **提出者**<sup>\*</sup>
@@ -247,7 +247,7 @@ Exchange Online にメールボックスがある Microsoft 365 組織では、�
 - [**Sender IP (送信者の IP)**<sup>\*</sup>]
 - **申請の種類**
 
-ページの上部に開始日と終了日を入力し、ボックスに値を入力して [最新の情報に更新] ボタンをクリックすることで Submitted でフィルター ![ 処理できます ](../../media/scc-quarantine-refresh.png) 。 Update
+ページの上部に開始日と終了日を入力し、ボックスに値を入力して [最新の情報に更新] ボタンをクリックすることで **Submitted** でフィルター ![ 処理できます ](../../media/scc-quarantine-refresh.png) 。 Update
 
 結果をエクスポートするには、ページ上部の **[** エクスポート] をクリックし、[グラフ データ] **または** [テーブル] を選択 **します**。 表示されるダイアログで、.csv ファイルを保存します。
 

@@ -3,7 +3,7 @@ title: ユーザー申請ポリシー
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -14,15 +14,15 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理者は、ユーザーによって報告されるスパムおよびフィッシングメールを収集するメールボックスを構成する方法について説明します。
+description: 管理者は、ユーザーによって報告されたスパムおよびフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 28848908934057cc898eeca489cd2ee21f30692f
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988130"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029764"
 ---
 # <a name="user-submissions-policy"></a>ユーザー申請ポリシー
 
@@ -52,9 +52,9 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
 
 - スパム信頼度を設定する Exchange メール フロー ルールを作成して、カスタム メールボックスのスパム フィルター処理をスキップします。 [「EAC を使用して、SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)を **-1** に設定するメッセージの SCL を設定するメール フロー ルールを作成する」を参照してください。
 
-- カスタム メールボックス内のマルウェアの添付ファイルのスキャンを無効にします。 [Office 365](set-up-atp-safe-attachments-policies.md)の Defender で安全な添付ファイルの設定ポリシーを使って、安全な添付ファイルのポリシーを作成し、[安全な添付ファイル] を [安全な添付ファイル] の不明なマルウェア応答に対してオフに **設定します**。
+- カスタム メールボックス内のマルウェアの添付ファイルのスキャンを無効にします。 [Office 365](set-up-atp-safe-attachments-policies.md)の Defender で安全な添付ファイルポリシーの設定を使用して、安全な添付ファイルの設定が [オフ] に設定された安全な添付ファイル ポリシー **を作成します**。
 
-- カスタム メールボックス内のメッセージの URL スキャンを無効にします。 [Office 365](set-up-atp-safe-links-policies.md)の Defender で安全なリンクポリシーの設定を使用して、メッセージ内の悪意のある可能性のある不明な URL に対するアクションをオフに設定して安全なリンク ポリシーを作成 **します**。
+- カスタム メールボックス内のメッセージの URL スキャンを無効にします。 [Office 365](set-up-atp-safe-links-policies.md)の Defender で安全なリンク ポリシーの設定を使用して、メッセージ内の悪意のある可能性のある不明な URL に対するアクションをオフに設定した安全なリンク ポリシーを作成 **します**。
 
 - マルウェア対策ポリシーを作成して、マルウェアゼロアワー自動消去を無効にします。 「 [セキュリティ/コンプライアンス センター&](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) 使用してマルウェア対策ポリシーを作成し、マルウェアゼロアワー **自動** 消去をオフに設定する」を **参照してください**。
 
@@ -92,7 +92,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
 
       - **エンド ユーザーの確認メッセージをカスタマイズする**: このリンクをクリックします。 表示される **[確認メッセージの** カスタマイズ] フライアウトで、次の設定を構成します。
 
-      - **Before submission**: In the **Title** and Confirmation message boxes, enter the **descriptive** text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. 変数 %type% を使用して、提出の種類 (迷惑メール、迷惑メール、フィッシングなど) を含めできます。
+      - **Before submission**: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. 変数 %type% を使用して、提出の種類 (迷惑メール、迷惑メール、フィッシングなど) を含めできます。
 
         既に説明した通り、報告されたメッセージを Microsoft に送信するオプションを選択すると、次のテキストも通知に追加されます。
 
@@ -111,16 +111,16 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
         - **カスタム メールボックス**: 表示されるボックスに、既存の Exchange Online メールボックスの電子メール アドレスを入力します。 配布グループは許可されません。 このオプションは、最初に分析のために管理者またはセキュリティ運用チームにのみメッセージを送信する場合に使用します。 管理者が自分で転送しない限り、メッセージは Microsoft に送信されません。
 
         > [!NOTE]
-        > 米国政府機関 (GCC、GCC-H、DoD) は、カスタム メールボックスのみを **構成できます**。 他の 2 つのオプションは無効です。
+        > 米国政府機関 (GCC、GCC-H、DoD) は、カスタム メールボックスのみを **構成できます**。 その他の 2 つのオプションは無効です。
 
       完了したら、[確認] をクリック **します**。
 
       > [!CAUTION]
       > Outlook on the web メールボックス ポリシーを使用して [Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) で迷惑メール報告を無効にしているが、Microsoft にメッセージを報告する前の設定のいずれかを構成した場合、ユーザーはレポート メッセージ アドインまたは Report Phishing アドインを使用して Outlook on the web の Microsoft にメッセージを報告できます。
 
-   - **Outlook** の [メッセージの報告] 機能を無効にする: このオプションは、Outlook on the web のレポート メッセージ アドイン、フィッシング報告アドイン、または組み込みレポートの代わりにサード パーティ製のレポート ツールを使用する場合に選択し、次の設定を構成します。
+   - **Outlook** の [メッセージの報告] 機能を無効にする: Outlook on the web のレポート メッセージ アドイン、フィッシング報告アドイン、または組み込みのレポートの代わりにサード パーティ製のレポート ツールを使用する場合は、このオプションを選択し、次の設定を構成します。
 
-      [この **カスタム メールボックスを使用して、報告されたユーザーの提出を受信する] を選択します**。 表示されるボックスに、既存のメールボックスの電子メール アドレスを入力します。このメール アドレスは、既に Office 365 に存在します。 これは、電子メールを受信できる Exchange Online の既存のメールボックスである必要があります。
+      [この **カスタム メールボックスを使用して、報告されたユーザーの提出を受信する] を選択します**。 表示されるボックスに、既存のメールボックスが既に 365 に存在する電子メール Office入力します。 これは、電子メールを受信できる Exchange Online の既存のメールボックスである必要があります。
 
       完了したら、[確認] をクリック **します**。
 

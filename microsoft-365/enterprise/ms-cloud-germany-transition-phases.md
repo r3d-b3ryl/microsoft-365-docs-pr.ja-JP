@@ -3,7 +3,7 @@ title: 移行フェーズのアクションと、Microsoft Cloud Deutschland か
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/15/2020
+ms.date: 01/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: 移行フェーズのアクションと、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター リージョンの Office 365 サービスへの移行による影響について説明します。'
-ms.openlocfilehash: f0c81813522be1f9d759980df98995f1adb261c5
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 0d508607877b86d6f6df6a6465fada67e385fba0
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921624"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029200"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>移行フェーズのアクションと、Microsoft Cloud Deutschland からの移行に対する影響 (全般)
 
@@ -35,7 +35,7 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 
 以下のセクションでは、移行のさまざまなフェーズを進むワークロードに対するアクションと影響について説明します。 表を確認し、組織に適用可能なアクションまたは効果を決定します。 必要に応じて、それぞれのフェーズで手順を実行する準備ができているか確認します。 必要な手順を完了できないと、サービスが停止し、Office 365 サービスへの移行が遅れる可能性があります。
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online-phase-5-of-9"></a>Exchange Online (フェーズ 5/9)
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -58,7 +58,7 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 
 移行と Exchange Online リソースの移行後の組織の違いの詳細については、新しいドイツのデータセンター リージョンで [Office 365](ms-cloud-germany-transition-experience.md)サービスに移行する際のカスタマー エクスペリエンスの情報を確認してください。
 
-## <a name="exchange-online-protection"></a>Exchange Online Protection
+## <a name="exchange-online-protection-phase-6-of-9"></a>Exchange Online Protection (フェーズ 6/9)
 
 Exchange Online Protection (EOP) のバック エンド機能は、新しいドイツ地域にコピーされます。 
 
@@ -67,7 +67,7 @@ Exchange Online Protection (EOP) のバック エンド機能は、新しいド�
 | Exchange Online ルーティングの移行と履歴メッセージの詳細。 | Exchange Online を使用すると、外部ホストから 365 Officeルーティングできます。 外部 MX レコードは、EOP サービスへのルートに移行されます。 テナントの構成と履歴の詳細が移行されます。 | Exchange Online のお客様 | - Microsoft が管理する DNS エントリは、Office 365 Germany EOP から 365 サービスOffice更新されます。 <br><br> - お客様は、EOP 移行のために EOP デュアルライトの後、30 日間待機する必要があります。 それ以外の場合は、データ損失が発生する可能性があります。 |
 |||||
 
-## <a name="sharepoint-online"></a>SharePoint Online
+## <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (フェーズ 4/9)
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -87,7 +87,7 @@ Exchange Online Protection (EOP) のバック エンド機能は、新しいド�
 - SharePoint Online インスタンスが移行された Microsoft Cloud Deutschland のお客様は、SharePoint Online PowerShell モジュール/Microsoft.SharePointOnline.CSOM をバージョン 16.0.20717.12000 以上に更新する必要があります。 そうしないと、PowerShell またはクライアント側オブジェクト モデルを介した SharePoint Online への接続が失敗します。
 
 
-## <a name="skype-for-business-online"></a>Skype for Business Online
+## <a name="skype-for-business-online-phase-7-of-9"></a>Skype for Business Online (フェーズ 7/9)
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -110,7 +110,7 @@ Office で最近使用された (MRU) サービスは、移行ではなく、ド
 
 [追加の作業前作業を実行する](ms-cloud-germany-transition-add-pre-work.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

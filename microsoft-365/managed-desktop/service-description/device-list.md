@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e904eee5a132d271ec32ee99a19380463e53193
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: ee2e473f947f35d4f0d192005718a26e89590fab
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881775"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032659"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップ デバイス 
 
-Microsoft マネージド デスクトップは、サービスに含まれるデバイスを定期的に評価します。 この記事では、Microsoft マネージド デスクトップに登録するデバイスの要件の概要と、現在サポートされている特定のデバイスの一覧を示します。
+Microsoft マネージド デスクトップは、サービスに含まれるデバイスを定期的に評価します。 この記事では、現在サポートされている特定のデバイスの一覧を示します。 デバイス要件の一般的なステートメントについては、「デバイスの要件 [」を参照してください](device-requirements.md)。
 
 Microsoft マネージド デスクトップの詳細については [、Microsoft マネージド デスクトップのドキュメントとリソースを参照してください](https://docs.microsoft.com/microsoft-365/managed-desktop/)。 
 
@@ -25,10 +25,10 @@ Microsoft マネージド デスクトップの詳細については [、Microso
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 Microsoft マネージド デスクトップに登録するには、デバイスが次のいずれかのモデルであり、RAM、プロセッサ ファミリ、およびディスク領域に関する一覧の仕様を満たすか、超えている必要があります。 
 
-ここに示すデバイスへのリンクは、参考情報のみを提供しています。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業し、正しい構成を選択してください。 この表のアーカイブ日付 *は* 、これらのモデルが Microsoft マネージド デスクトップのサービスライフを短くする日付です。この日付以降にオンボードされたデバイスは、Microsoft マネージド デスクトップから 3 年間の完全なサポート期間を受け取る予定はありません。 アーカイブされたデバイスは、Microsoft マネージド デスクトップで [アーカイブされたデバイスにも表示されます](archived-device-list.md)。 *サポート終了日* は、このモデルが Microsoft マネージド デスクトップでサポートされなくなる日付です。 この日付に、このモデルに登録されているデバイスはすべて、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
+ここに示すデバイスへのリンクは、参考情報のみを提供しています。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業し、正しい構成を選択してください。 この表のアーカイブ日付 *は* 、これらのモデルが Microsoft マネージド デスクトップのサービスライフを短くする日付です。この日付以降にオンボードされたデバイスは、Microsoft マネージド デスクトップから 3 年間の完全なサポート期間を受け取る予定はありません。 アーカイブされたデバイスは、Microsoft マネージド デスクトップでアーカイブ [されたデバイスにも表示されます](archived-device-list.md)。 *サポート終了日* は、このモデルが Microsoft マネージド デスクトップでサポートされなくなる日付です。 この日付に、このモデルに登録されているデバイスはすべて、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
 
 >[!NOTE]
->デバイスは、いつでもこの表に追加できますが、アーカイブまたはサポート終了日に影響を与える変更については、90 日間の通知を提供します。 最近追加されたデバイスは * _でマーク *\** されます。
+>この表にはデバイスをいつでも追加できますが、アーカイブまたはサポート終了日に影響を与える変更については、90 日間の通知が提供されます。 最近追加されたデバイスは * _でマーク *\** されます。
 
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップ デバイス
@@ -55,7 +55,7 @@ Microsoft マネージド デスクトップに登録するには、デバイス
 | [HP EliteBook 830 / 840 / 850 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU と 9 SKU21AV | 2021 年 11 月 30 日 | 2024 年 11 月 30 日 |
 | [HP EliteBook x360 830 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 GB / Intel i5 / 8 GB RAM | SKU と 9 SKU21AV | 2021 年 11 月 30 日 | 2024 年 11 月 30 日 |
 | [HP Elite x2 G4 タブレット](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB / Intel i5 / 8 GB RAM | 5VS03AV を使用する SKU | 2021 年 7 月 31 日 | 2024 年 7 月 31 日 |
-| [HP EliteBook x360 1030 / 1040 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB / Intel i5 / 8 GB RAM | 8XW08AV を使用する SKU | 2021 年 8 月 31 日 | 2024 年 8 月 31 日 |
+| [HP EliteBook x360 1030 / 1040 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB / Intel i5 / 8 GB RAM | SKU と 8XW08AV | 2021 年 8 月 31 日 | 2024 年 8 月 31 日 |
 | [HP Elite EliteFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB / Intel i5 / 8 GB RAM | SKU と 9 SKU21AV | 2021 年 3 月 31 日 | 2024 年 3 月 31 日 |
 | **\*[HP EliteOne 800 G6 24/27 All-in-One PC](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 GB RAM | SKU と 9XM14AV | 2022 年 6 月 30 日 | 2025 年 6 月 30 日 |
 | **\*[HP EliteDesk 800 G6 デスクトップ ミニ PC](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256 / Intel i5 / 8 GB RAM | SKU と 9XM14AV | 2022 年 6 月 30 日 | 2025 年 6 月 30 日 |

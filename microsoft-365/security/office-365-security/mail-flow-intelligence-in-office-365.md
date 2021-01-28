@@ -3,29 +3,30 @@ title: メール フロー インテリジェンス
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、コネクタ (メール フロー インテリジェンスとも呼ばれる) を使用して、メッセージ配信に関連付けられているエラー コードについて学習できます。
-ms.openlocfilehash: 5339bf2117a87cd940c4b96b3d00b7b8ba78a1da
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c7d4277d1ce3baeabcb5b1795b5d57583fbc8245
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658859"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029258"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP でのメール フロー インテリジェンス
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、通常、コネクタを使用して EOP からオンプレミスの電子メール環境に電子メール メッセージをルーティングします。 コネクタを使用して、Microsoft 365 からパートナー組織にメッセージをルーティングすることもできます。 Microsoft 365 がコネクタを介してこれらのメッセージを配信できない場合、Microsoft 365 でキューに入れられます。 Microsoft 365 は、メッセージごとに引き続き配信を 24 時間再試行します。 24 時間後、キューに入っているメッセージの有効期限が切れ、配信前レポート (NDR またはバウンス メッセージとも呼ばれる) で元の送信者にメッセージが返されます。
+Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、通常、コネクタを使用して EOP からオンプレミスの電子メール環境に電子メール メッセージをルーティングします。 コネクタを使用して、Microsoft 365 からパートナー組織にメッセージをルーティングすることもできます。 Microsoft 365 がコネクタ経由でこれらのメッセージを配信できない場合、Microsoft 365 でキューに入れられます。 Microsoft 365 は、メッセージごとに引き続き配信を 24 時間再試行します。 24 時間後、キューに入っているメッセージの有効期限が切れ、配信前レポート (NDR またはバウンス メッセージとも呼ばれる) で元の送信者にメッセージが返されます。
 
 コネクタを使用してメッセージを配信できない場合、Microsoft 365 はエラーを生成します。 この記事では、最も一般的なエラーとその解決策について説明します。 コネクタ経由で送信される配信不能メッセージのキュー エラーと通知エラーは、総称してメール フロー _インテリジェンスと呼ばれる機能です_。
 
@@ -47,7 +48,7 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>エラー コード:450 4.4.315 接続がタイムアウトしました
 
-通常、これは、Microsoft 365 が宛先の電子メール サーバーに接続できないという意味です。 エラーの詳細に、この問題についての説明があります。 例:
+通常、これは Microsoft 365 が宛先の電子メール サーバーに接続できないという意味です。 エラーの詳細に、この問題についての説明があります。 例:
 
 - オンプレミスの電子メール サーバーがダウンしています。
 
@@ -55,7 +56,7 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 
 ### <a name="how-do-i-fix-error-code-450-44315"></a>エラー コード 450 4.4.315 を修正する方法
 
-- どのシナリオが自分の状況に当てはまるかを調べ、必要な修正を行います。 たとえば、メール フローが正しく動作し、コネクタの設定を変更していない場合は、オンプレミスの電子メール環境を確認して、サーバーがダウンしているか、ネットワーク インフラストラクチャに変更が加えらたか (たとえば、インターネット サービス プロバイダーを変更したので、IP アドレスが異なっているなど) 確認する必要があります。
+- どのシナリオが自分の状況に当てはまるかを調べ、必要な修正を行います。 たとえば、メール フローが正しく機能し、コネクタの設定を変更していない場合は、オンプレミスの電子メール環境を確認して、サーバーがダウンしているか、ネットワーク インフラストラクチャに変更が加えらたか (たとえば、インターネット サービス プロバイダーを変更したので、IP アドレスが異なっているなど) 確認する必要があります。
 
 - パートナー組織 (たとえば、サードパーティのクラウド サービス プロバイダー) からエラーが発生した場合は、パートナーに連絡して問題を解決してください。
 
@@ -67,9 +68,9 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 
 - オンプレミス環境にメールボックスがある場合は、TCP ポート 25 の Microsoft 365 IP アドレスからオンプレミスの電子メール サーバーへの接続を許可するためにファイアウォール設定を変更する必要があります。 Microsoft 365 の IP アドレスの一覧については [、Microsoft 365 の URL](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)と IP アドレスの範囲を参照してください。
 
-- それ以上オンプレミス環境にメッセージを配信しない場合は、アラートで[今すぐ修正] をクリックして、Microsoft 365 が無効な受信者を含むメッセージを直ちに拒否できます。 これにより、無効な受信者に対する組織のクォータを超えるリスクが軽減され、通常のメッセージ配信に影響する可能性があります。 または、次の手順を使用して手動で問題を修正できます。
+- それ以上オンプレミス環境にメッセージを配信しない場合は、アラートで[今すぐ修正] をクリックして、Microsoft 365 が無効な受信者を含むメッセージを直ちに拒否できます。 これにより、無効な受信者に対する組織のクォータを超えるリスクが軽減され、通常のメッセージ配信に影響する可能性があります。 または、次の手順を使用して手動で問題を解決することもできます。
 
-  - Exchange 管理 [センター (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center)で、Microsoft 365 からオンプレミスのメール環境に電子メールを配信するコネクタを無効または削除します。
+  - Exchange 管理 [センター (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center)で、Microsoft 365 からオンプレミスの電子メール環境に電子メールを配信するコネクタを無効または削除します。
 
     1. EAC で、メール フロー **コネクタに** \> **移動します**。
 
@@ -79,7 +80,7 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 
        - [編集] アイコンをクリックし、[ **有効** にする] をオフにしてコネクタ ![ ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **を無効にします**。
 
-  - 社内の電子メール環境に関連付けられている Microsoft 365 の受け入れドメインを内部 **の中継** から権限のあるドメインに **変更します**。 手順については [、「Exchange Online で承認されたドメインを管理する」を参照してください](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+  - オンプレミスの電子メール環境に関連付けられている Microsoft 365 の受け入れドメインを内部 **の中継** から権限のあるドメインに **変更します**。 手順については [、「Exchange Online で承認されたドメインを管理する」を参照してください](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
   **注**: 通常、これらの変更は有効に 30 分から 1 時間かかります。 1 時間後に、エラーが表示されなくなったのを確認します。
 

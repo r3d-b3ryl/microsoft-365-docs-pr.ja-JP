@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Exchange Online Protection (EOP) で検疫済みメッセージに関してよく寄せられる質問と回答を表示できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58ddb5847706aef3d2c3b8ea8cd9a96fd65a9b3d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794414"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032603"
 ---
 # <a name="quarantined-messages-faq"></a>検疫済みメッセージに関する FAQ
 
@@ -72,16 +73,39 @@ ms.locfileid: "49794414"
 
 セキュリティ/コンプライアンス センターでは、ワイルドカード&サポートされていません。 たとえば、送信者を検索する場合は、完全なメール アドレスを指定する必要があります。 ただし、Exchange Online PowerShell またはスタンドアロンの EOP PowerShell ではワイルドカードを使用できます。
 
-たとえば、次のコマンドを実行して、ドメイン 内のすべての送信者からのスパム検疫済みメッセージを検索contoso.com。
+たとえば、次の PowerShell コードを NotePad にコピーし、ファイルを .ps1 として、見つけやすい場所 (たとえば、C:\Data\QuarantineRelease.ps1) に保存します。
+
+次に [、Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) または [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)に接続した後、次のコマンドを実行してスクリプトを実行します。
 
 ```powershell
-$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
+& C:\Data\QuarantineRelease.ps1
 ```
 
-次に、次のコマンドを実行して、これらのメッセージを元のすべての受信者に解放します。
+スクリプトは、次の操作を実行します。
+
+- fabrikam ドメイン内のすべての送信者からスパムとして検疫された未発表のメッセージを検索します。 結果の最大数は 50,000 (1000 結果の 50 ページ) です。
+- 結果を CSV ファイルに保存します。
+- 一致する検疫済みメッセージを元のすべての受信者に解放します。
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+$Page = 1
+$List = $null
+
+Do
+{
+Write-Host "Getting Page " $Page
+
+$List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+Write-Host "                     " $List.count " rows in this page match"
+Write-Host "                                                             Exporting list to appended CSV for logging"
+$List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+Write-Host "Releasing page " $Page
+$List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+$Page = $Page + 1
+
+} Until ($Page -eq 50)
 ```
 
 メッセージを解放した後は、メッセージを解放し直す必要はありません。

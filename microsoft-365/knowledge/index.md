@@ -14,12 +14,12 @@ ms.collection:
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: トピック エクスペリエンスのリソースを検索する方法について説明します。
-ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976181"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029610"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>トピック エクスペリエンスの概要 (プレビュー)
 
@@ -37,14 +37,14 @@ ms.locfileid: "49976181"
 
 このページのリソースは、組織内のトピック エクスペリエンスの学習と使用を開始するために設計されています。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>開始する
 
-このセクションのリソースは、トピックのエクスペリエンスとそれが役立つ方法の詳細を確認するのに役立ちます。
+このセクションのリソースは、トピックのエクスペリエンスとそれが役立つ方法について詳しい情報を得るのに役立ちます。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|ドキュメントの理解についての詳細情報|[トピック エクスペリエンスの概要](topic-experiences-overview.md)|
-|AI によってトピックがどのように検出および作成されるのかについて説明します。|[トピック エクスペリエンスの検出](topic-experiences-discovery.md)|
+|トピックエクスペリエンスについて詳しくは、次のトピックを参照してください。|[トピック エクスペリエンスの概要](topic-experiences-overview.md)|
+|AI によるトピックの検出方法と提案方法について説明します。|[トピック エクスペリエンスの検出](topic-experiences-discovery.md)|
 |トピックのセキュリティの詳細|[トピック エクスペリエンスのセキュリティとプライバシー](topic-experiences-security-privacy.md)|
 
 
@@ -75,7 +75,7 @@ ms.locfileid: "49976181"
 |:-----|:-----|
 |トピックを使用する方法について説明します。|[トピック センターの概要](topic-center-overview.md)<br><br>[トピックを管理する](manage-topics.md)<br><br>[新規トピックを作成する](create-a-topic.md)<br><br>[既存のトピックを編集する](edit-a-topic.md)<br><br>|
 |ユーザー ロールについて|[トピック エクスペリエンスの役割](topic-experiences-roles.md)|
-|トピックが異なるユーザーに異なる理由を理解する|[Topic Experiences security trimming](topic-experiences-security-trimming.md)|
+|トピックが異なるユーザーに異なる理由を理解する|[トピック エクスペリエンスのセキュリティ トリミング](topic-experiences-security-trimming.md)|
 |特定のトピックが特定されて表示されるのを防ぐ方法について説明します。|[トピックへのアクセスを制限する](restrict-access-to-topics.md)|
 
 

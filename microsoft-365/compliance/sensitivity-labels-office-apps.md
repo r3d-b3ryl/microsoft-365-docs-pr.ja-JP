@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリでユーザーが機度ラベルを使用する方法と、どのアプリが機度ラベルをサポートしているのかについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d84735cc51b26df6b4c28ffc3bf8fb99f896f1ae
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c8eef9ad1732122edb92c6884db2a5737eefd484
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925697"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029411"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -65,7 +65,7 @@ Office iOS および Android Officeの場合: Office [アプリにOfficeされ�
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上          | 16.21+     | 2.21以上 | 16.0.11231以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | レビュー中   | レビュー中         | レビュー中                                                        |
 |[ラベル分析でラベルの使用状況を表示し、](label-analytics.md) 管理者向けデータを送信する                      | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)            | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)        | レビュー中   | レビュー中         | はい <sup>\*</sup>                                                        |
-|[ユーザーに電子メールとドキュメントへのラベルの適用を要求する](sensitivity-labels.md#what-label-policies-can-do)   | プレビュー: 現在のチャネル [への展開 (プレビュー)](https://office.com/insider)             | プレビュー: 現在のチャネル [への展開 (プレビュー)](https://office.com/insider)         | レビュー中   | プレビュー: [ベータ チャネル](https://office.com/insider)         | レビュー中                                            
+|[ユーザーに電子メールとドキュメントへのラベルの適用を要求する](#require-users-to-apply-a-label-to-their-email-and-documents)   | プレビュー: 現在のチャネル [への展開 (プレビュー)](https://office.com/insider)             | プレビュー: 現在のチャネル [への展開 (プレビュー)](https://office.com/insider)         | レビュー中   | プレビュー: [ベータ チャネル](https://office.com/insider)         | レビュー中                                            
 |[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009+                                  | ロール アウト: 16.44+ | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |ラベル [付きおよび](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 暗号化 [されたドキュメントの](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) 自動保存と共同編集をサポートする | レビュー中 | レビュー中 | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -145,7 +145,7 @@ Office 365 Message Encryption 用に定義した保護テンプレートなど�
 - ドキュメントの場合:**ファイル**  >  **情報保護**  >  **ドキュメント**  >  **制限アクセス**
 - 電子メールの場合: [オプション]**タブの**[暗号化>  
   
-ユーザーは、最初にドキュメントまたは電子メールにラベルを付け始め、ラベル構成設定を独自の暗号化設定でいつでも上書きできます。 例:
+ユーザーは、最初にドキュメントまたは電子メールにラベルを付け始め、ラベル構成設定を独自の暗号化設定でいつでも上書きできます。 次に、例を示します。
 
 - ユーザーがドキュメントに **[機密] # [すべての従業員** ] ラベルを適用し、このラベルは組織内のすべてのユーザーに暗号化設定を適用するように構成されます。 次に、このユーザーは IRM 設定を手動で構成して、組織外のユーザーへのアクセスを制限します。 最後の結果は、「Confidential \ All **Employees」** というラベルが付いて暗号化されたドキュメントですが、組織内のユーザーは期待通り開くことができません。
 
@@ -155,7 +155,7 @@ Office 365 Message Encryption 用に定義した保護テンプレートなど�
 
 ドキュメントまたは電子メールに既にラベルが付けされている場合、コンテンツが暗号化されていない場合、または使用権限がエクスポートまたはフル コントロールである場合、[](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)ユーザーはこれらの操作を実行できます。 
 
-わかりやすいレポートを作成してラベルエクスペリエンスの一貫性を高めるために、ユーザーがドキュメントを保護するためにラベルのみを適用するための適切なラベルとガイダンスを提供します。 例:
+わかりやすいレポートを作成してラベルエクスペリエンスの一貫性を高めるために、ユーザーがドキュメントを保護するためにラベルのみを適用するための適切なラベルとガイダンスを提供します。 次に、例を示します。
 
 - ユーザーが独自のアクセス許可を割り当てる必要がある例外の場合は、ユーザーが自分のアクセス許可を割り当て [可能なラベルを提供します](encryption-sensitivity-labels.md#let-users-assign-permissions)。 
 
@@ -334,6 +334,8 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 - ラベルのないドキュメントを開く際に、ユーザーに対してラベルの追加を求めるメッセージが表示された場合は、ラベルを追加するか、ドキュメントを読み取り専用モードで開くことを選択できます。
 
 - 必須のラベル付けが有効な場合、ユーザーはドキュメントから区別ラベルを削除できませんが、既存のラベルを変更できます。
+
+この設定を使用する場合のガイダンスについては、ポリシー設定に関する情報を [参照してください](sensitivity-labels.md#what-label-policies-can-do)。
 
 ## <a name="end-user-documentation"></a>エンド ユーザーのドキュメント
 

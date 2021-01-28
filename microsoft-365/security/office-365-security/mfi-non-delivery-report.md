@@ -1,66 +1,67 @@
 ---
-title: メールフローダッシュボードの配信不能レポート
+title: メール フロー ダッシュボードの配信不可レポート
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある配信不能レポート (Ndr またはバウンスメッセージとも呼ばれる) で、組織内の送信者に対して発生する可能性の高いエラーコードを監視する方法について説明します。
-ms.openlocfilehash: 4967b3b5c294566e46bbc715dd6702c23d618105
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで配信の詳細レポートを使用して、組織内の送信者からの配信前レポート (NDRs またはバウンス メッセージとも呼ばれる) で最も頻繁に発生するエラー コードを監視する方法について説明します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: dbd27fc818a46a983874a04f0e313c622e047ea5
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877683"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029836"
 ---
-# <a name="non-delivery-report-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターの配信不能レポート
+# <a name="non-delivery-report-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターの配信&レポート
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[セキュリティ & コンプライアンスセンター](https://protection.office.com)の [メールフローダッシュボード](mail-flow-insights-v2.md)の **配信不能レポート** は、組織内のユーザーの配信不能レポート (ndr またはバウンスメッセージとも呼ばれる) で最も発生したエラーコードを示しています。 このレポートには、メール配信の問題のトラブルシューティングに使用できる Ndr の詳細が表示されます。
+[セキュリティ](https://protection.office.com)& コンプライアンス センター[](mail-flow-insights-v2.md)のメール フロー ダッシュボードの配信不可レポートには、組織内のユーザーの配信レポート (NDRs またはバウンス メッセージとも呼ばれる) で最も発生したエラー コードが表示されます。  このレポートには、メール配信の問題をトラブルシューティングするための、NDRs の詳細が表示されます。
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの配信不能レポートウィジェット](../../media/mfi-non-delivery-report-widget.png)
+![セキュリティ/コンプライアンス センターのメール フロー ダッシュボードの配信&ウィジェット](../../media/mfi-non-delivery-report-widget.png)
 
-## <a name="report-view-for-the-non-delivery-report"></a>配信不能レポートのレポートビュー
+## <a name="report-view-for-the-non-delivery-report"></a>配信前レポートのレポート ビュー
 
-**配信不能レポート** ウィジェットをクリックすると、 **配信不能レポート** に移動します。
+配信レポートウィジェット **をクリック** すると、配信先以外の **レポートにアクセスできます**。
 
-既定では、すべてのエラーコードのアクティビティが表示されます。 [ **データの表示** ] をクリックすると、ドロップダウンから特定のエラーコードを選択できます。
+既定では、すべてのエラー コードのアクティビティが表示されます。 [データの **表示] をクリック** すると、ドロップダウンから特定のエラー コードを選択できます。
 
-グラフの特定の日の特定の色 (エラーコード) の上にカーソルを置くと、エラーが発生したメッセージの合計数が表示されます。
+グラフの特定の日に特定の色 (エラー コード) をポイントすると、エラーのメッセージの総数が表示されます。
 
-![承認されていないドメインレポートのレポートビュー](../../media/mfi-non-delivery-report-overview-view.png)
+![[非承諾ドメイン] レポートのレポート ビュー](../../media/mfi-non-delivery-report-overview-view.png)
 
-## <a name="details-table-view-for-the-non-delivery-report"></a>配信不能レポートの詳細表ビュー
+## <a name="details-table-view-for-the-non-delivery-report"></a>配信不可レポートの詳細テーブル ビュー
 
-レポートビューで [ **詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
+レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
-- **Date**
-- **配信不能レポートのコード**
+- **日付**
+- **配信不可レポート コード**
 - **Count**
-- **サンプルメッセージ** : 影響を受けるメッセージのサンプルのメッセージ id。
+- **サンプル メッセージ**: 影響を受けるメッセージのサンプルのメッセージ ID。
 
-詳細テーブルビューで [ **フィルター** ] をクリックすると、 **開始日** と **終了日** を含む日付範囲を指定できます。
+詳細テーブル ビューで **[フィルター** ] をクリックすると、開始日と終了日で日付 **範囲** を **指定できます**。
 
-特定の日付範囲のレポートに対して1人以上の受信者を電子メールで送信するには、[ **ダウンロードの依頼** ] をクリックします。
+特定の日付範囲のレポートを 1 人または複数の受信者に電子メールで送信するには、[ダウンロードの要求] **をクリックします**。
 
-表の行を選択すると、次の情報を含むフライアウトが表示されます。
+テーブル内の行を選択すると、次の情報を含むフライアウトが表示されます。
 
-- **Date**
-- **配信不能レポートコード** : 特定のエラーコードの原因と解決方法の詳細については、リンクをクリックして確認できます。
+- **日付**
+- **配信レポートのコード**: リンクをクリックすると、特定のエラー コードの原因と解決策の詳細を確認できます。
 - **Count**
-- **サンプルメッセージ** : [ **サンプルメッセージの表示** ] をクリックすると、影響を受けたメッセージのサンプルの [メッセージの追跡](message-trace-scc.md) 結果が表示されます。
+- **サンプル メッセージ**: [サンプル メッセージの表示 [](message-trace-scc.md)]**を** クリックすると、影響を受けるメッセージのサンプルのメッセージ追跡結果を表示できます。
 
-![配信不能レポートの [詳細] テーブルビューで行を選択した後の詳細ポップアップ](../../media/mfi-non-delivery-report-details-flyout.png)
+![配信不可レポートの [詳細] テーブル ビューで行を選択した後の詳細フライアウト](../../media/mfi-non-delivery-report-details-flyout.png)
 
 ## <a name="related-topics"></a>関連項目
 
-メールフローダッシュボードの他の洞察の詳細については、「 [セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。
+メール フロー ダッシュボードの他の分析情報については、セキュリティ/コンプライアンス センターの「メール [フロー&参照してください](mail-flow-insights-v2.md)。

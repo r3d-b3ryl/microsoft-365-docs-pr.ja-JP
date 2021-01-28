@@ -3,7 +3,7 @@ title: フィッシング報告アドインを有効にする
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -16,14 +16,14 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体に対して、Outlook および Outlook on the web の Report Phishing アドインを有効にする方法について説明します。
-ms.openlocfilehash: 2ea6a9bf9b00fc844aede6daeb9fc11f23c81e4a
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.openlocfilehash: 6d86fdc710539bc3c74eb94f8931ca48a0c992c1
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865272"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029140"
 ---
-# <a name="enable-the-report-phishing-add-in"></a>フィッシング報告アドインを有効にする
+# <a name="enable-the-report-phishing-add-in"></a>レポート フィッシング アドインを有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -41,7 +41,7 @@ Report Phishing アドインは、フィッシング メッセージのみを報
 
 個人ユーザーの場合は、自分で [Report Phishing アドインを有効にできます](#get-the-report-phishing-add-in-for-yourself)。
 
-グローバル管理者または Exchange Online 管理者で、Exchange が OAuth 認証を使用するように構成されている場合は、組織で Report [Phishing アドインを有効にできます](#get-and-enable-the-report-phishing-add-in-for-your-organization)。 The Report Phishing Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
+グローバル管理者または Exchange Online 管理者で、Exchange が OAuth 認証を使用するように構成されている場合は、組織の Report [Phishing アドインを有効にできます](#get-and-enable-the-report-phishing-add-in-for-your-organization)。 Report Phishing Add-Inは、一元展開 [で利用できます](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -85,23 +85,25 @@ Report Phishing アドインは、フィッシング メッセージのみを報
 ## <a name="get-and-enable-the-report-phishing-add-in-for-your-organization"></a>組織の Report Phishing アドインを取得して有効にする
 
 > [!NOTE]
-> アドインが組織に表示されるのに最大 12 時間かかる場合があります。
+> アドインが組織に表示されるには、最大で 12 時間かかる場合があります。
 
-1. Microsoft 365 管理センターで、[設定] ページの [統合アプリ **& アドイン** ] ページに移動し、[アドインの展開] をクリック <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **します**。
+1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリアドインの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
+
+2. ページ **の上部にある [アドインの** 展開] を選択し、[次へ] を選択 **します**。
 
    ![Microsoft 365 管理センターの [サービスとアドイン] ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. 表示される **新しいアドイン の展開** のフライアウトで、情報を確認し、[次へ] をクリック **します**。
+3. 表示される **新しいアドイン の展開** のフライアウトで、情報を確認し、[次へ] をクリック **します**。
 
-3. 次のページで、[ストアから **選択] をクリックします**。
+4. 次のページで、[ストアから **選択] をクリックします**。
 
    ![新しいアドイン ページを展開する](../../media/NewAddInScreen2.png)
 
-4. 表示される **[アドインの選択**] ページで、[検索]ボックスをクリックし、「Report **Phishing」** と入力して、[検索検索] アイコン **を** ![ クリックします ](../../media/search-icon.png) 。 結果の一覧で[Report **Phishing]** を探し、[追加] をクリック **します**。
+5. 表示される **[アドインの選択**] ページで、[検索]ボックスをクリックし、「Report **Phishing」** と入力して、[検索検索] アイコン **を** ![ クリックします ](../../media/search-icon.png) 。 結果の一覧で[レポートフィッシング] **を** 見つけ、[追加] をクリック **します**。
 
-5. 表示されるダイアログで、ライセンスとプライバシー情報を確認し、[続行] をクリック **します**。
+6. 表示されるダイアログで、ライセンスとプライバシー情報を確認し、[続行] をクリック **します**。
 
-6. 表示される **[アドインの構成]** ページで、次の設定を構成します。
+7. 表示される **[アドインの構成]** ページで、次の設定を構成します。
 
    - **割り当てられたユーザー**: 次のいずれかの値を選択します。
 
@@ -117,9 +119,9 @@ Report Phishing アドインは、フィッシング メッセージのみを報
 
    完了したら、[展開] をクリック **します**。
 
-7. 表示 **される [レポートフィッシング** の展開] ページに、進行状況レポートの後に、アドインが展開されたという確認が表示されます。 情報を読んだら、[次へ] を **クリックします**。
+8. 表示 **される [レポートフィッシング** の展開] ページに、進行状況レポートの後に、アドインが展開されたという確認が表示されます。 情報を読んだら、[次へ] を **クリックします**。
 
-8. 表示される **[アドインのアナウンス** ] ページで、情報を確認し、[閉じる] をクリック **します**。
+9. 表示された **[アドインのアナウンス** ] ページで情報を確認し、[閉じる] をクリック **します**。
 
 ## <a name="learn-how-to-use-the-report-phishing-add-in"></a>レポート フィッシング アドインの使い方について
 
@@ -135,16 +137,16 @@ Report Phishing アドインは、フィッシング メッセージのみを報
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>レポート フィッシング アドインの設定を確認または編集する
 
-1. Microsoft 365 管理センターで、次の [&サービス] ページ **に** 移動します <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> 。
+1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
 
 2. フィッシング報告アドイン **を見つけて** 選択します。
 
 3. 組織に **応じて表示** 、確認、および編集の設定を行う [レポートフィッシングの編集] フライアウトで。 完了したら、**[保存]** をクリックします。
 
-## <a name="view-and-review-reported-messages"></a>報告されたメッセージを表示および確認する
+## <a name="view-and-review-reported-messages"></a>報告されたメッセージの表示と確認
 
 ユーザーが Microsoft に報告するメッセージを確認するには、次のオプションがあります。
 
-- 管理サブミッション ポータルを使用します。 詳細については、「Microsoft へのユーザー [申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
+- 管理者提出ポータルを使用します。 詳細については、「Microsoft へのユーザー [申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
 
 - メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、報告されたメッセージのコピーを送信します。 手順については、「メール フロー ルール [を使用して、ユーザーが Microsoft に報告している情報を確認する」を参照してください](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。

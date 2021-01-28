@@ -3,20 +3,21 @@ title: メール フロー ダッシュボードでのキューの分析情報
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでキュー ウィジェットを使用して、送信コネクタを使用してオンプレミスまたはパートナー組織への失敗したメール フローを監視する方法について説明します。
-ms.openlocfilehash: a1563c61620ef9f1ae97739681f426fd0ea38bd8
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 73e97cbbd05e298013e9e686053a969d587ad5cf
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659282"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029152"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでの&の分析情報
 
@@ -38,7 +39,7 @@ Microsoft 365 は引き続き配信を 24 時間再試行します。 24 時間�
 
   ![セキュリティ/コンプライアンス センターのアラート ダッシュボード&最近のアラート](../../media/mfi-queued-messages-alert.png)
 
-- 管理者は、"メッセージ" という名前の既定のアラート ポリシーの構成に基づいて、電子 **メール通知を受信します**。 このアラートの通知設定を構成するには、次のセクションを参照してください。
+- 管理者は、"メッセージ" という名前の既定のアラート ポリシーの構成に基づいて、電子メール通知 **を受信します**。 このアラートの通知設定を構成するには、次のセクションを参照してください。
 
   アラート ポリシーの詳細については、セキュリティ/コンプライアンス センターの「アラート [&参照してください](../../compliance/alert-policies.md)。
 
@@ -69,11 +70,11 @@ Microsoft 365 は引き続き配信を 24 時間再試行します。 24 時間�
 
 ## <a name="queues-insight-in-the-mail-flow-dashboard"></a>メール フロー ダッシュボードでのキューの分析情報
 
-キューに入っているメッセージ ボリュームがしきい値を超えていてアラートを生成していなくても、メール フローダッシュボードでキューの分析[](mail-flow-insights-v2.md)情報を使用して、1 時間以上キューに入っているメッセージを確認し、キューに入っているメッセージの数が多くなりすぎる前にアクションを実行できます。
+キューに入っているメッセージ ボリュームがしきい値を超えていてアラートが生成されていない場合でも、メール フローダッシュボードでキューの分析[](mail-flow-insights-v2.md)情報を使用して、1 時間以上キューに入っているメッセージを確認し、キューに入っているメッセージの数が多くなりすぎる前にアクションを実行できます。
 
 ![セキュリティ/コンプライアンス センターのメール フロー ダッシュボード&ウィジェット](../../media/mfi-queues-widget.png)
 
-ウィジェット上のメッセージ数をクリックすると、キューに入ったメッセージ **のフライ** アウトが次の情報と一緒に表示されます。
+ウィジェット上のメッセージ数をクリックすると、キューに入った **メッセージ** のフライアウトが次の情報と一緒に表示されます。
 
 - **キューに入ったメッセージの数**
 - **コネクタ名**: コネクタ名をクリックして、Exchange 管理センター (EAC) でコネクタを管理します。
@@ -82,11 +83,11 @@ Microsoft 365 は引き続き配信を 24 時間再試行します。 24 時間�
 - **送信先サーバー**
 - **最後の IP アドレス**
 - **最後のエラー**
-- **解決方法**: 一般的な問題と解決策を利用できます。 If is a **Fix it now** link is available, click it to fix the problem. それ以外の場合は、エラーと考えられる解決策の詳細については、利用可能なリンクをクリックしてください。
+- **解決方法**: 一般的な問題と解決策を利用できます。 If is a **Fix it now** link is available, click it to fix the problem. それ以外の場合は、使用可能なリンクをクリックして、エラーと考えられる解決策の詳細を確認します。
 
 ![メール フロー ダッシュボードでキューの分析情報をクリックした後の詳細](../../media/mfi-queues-details.png)
 
-メッセージが遅延アラートの詳細で [キューの表示] をクリックすると、同 **じフライアウトが表示** されます。
+メッセージが遅延アラートの詳細で [キューの表示] をクリックすると、同じ **フライアウトが表示** されます。
 
 ![セキュリティ/コンプライアンス センターでメッセージの警告の&されています](../../media/mfi-queued-messages-alert-details.png)
 

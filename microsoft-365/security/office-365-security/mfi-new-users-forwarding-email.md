@@ -3,20 +3,21 @@ title: 新しいユーザーがメールを転送していますのインサイ�
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンス センターで新しいユーザーが電子メールの分析情報を転送して、組織内のユーザーが新しいドメインにメッセージを転送する状況を調査する方法について学習できます。
-ms.openlocfilehash: cf1852169279e19ac00e5e29dd1c26e155936039
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: af991cb0af20a0f48bc5283d4e4fb26ea75d6ba6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660019"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029872"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新しいユーザーがセキュリティ/コンプライアンス センターで電子&を転送する
 
@@ -35,9 +36,9 @@ ms.locfileid: "49660019"
 
 ![メールを転送する新しいユーザーの分析情報をクリックした後に表示される詳細フライアウト](../../media/mfi-new-users-forwarding-email-details.png)
 
-[上位の分析情報とおすすめ] 領域 **([** レポート ダッシュボード] または [ &]) で [すべて表示] をクリックした後に、分析情報を選択すると、**この詳細ページ** に移動 \> することもできます <https://protection.office.com/insightdashboard> 。
+[上位の分析情報とおすすめ] 領域 (レポート ダッシュボードまたは) で [すべて表示] をクリックした後で、&を選択すると、**この** 詳細ページ **に** \> **アクセス** することもできます <https://protection.office.com/insightdashboard> 。
 
-次のセクションで **説明するように、[インサイト** に関連付けられているレポートを表示] リンクをクリックすると、転送の変更レポートに移動できます。
+次のセクションで **説明するように、[インサイト** に関連付けられているレポートを表示] リンクをクリックすると、 **転送** の変更レポートに移動できます。
 
 ## <a name="forwarding-modifications-report"></a>変更レポートの転送
 
@@ -50,7 +51,7 @@ ms.locfileid: "49660019"
 
 レポートには、最大 90 日間のデータが含まれる。 既定では、レポートには過去 7 日間のデータが表示されます。
 
-このレポートは、メール フロー ダッシュボードまたは [レポート](mail-flow-insights-v2.md) ダッシュボードでは直接 [使用できません](view-mail-flow-reports.md)。 新しいユーザーが電子メールの分析 **情報** を転送する場合に、分析情報に関連付けられている [表示] リンクをクリックすると、次の方法でレポートにアクセスできます。
+このレポートは、メール フロー ダッシュボードまたは [レポート](mail-flow-insights-v2.md) ダッシュボードでは [直接使用できません](view-mail-flow-reports.md)。 新しいユーザーが電子メールの分析 **情報** を転送する場合に、分析情報に関連付けられている [表示] リンクをクリックすると、次の方法でレポートにアクセスできます。
 
 - 転送される電子 **メールの分析情報の** [新しいドメイン] の詳細にある [[転送通知] レポートのリンクをクリックします](mfi-new-domains-being-forwarded-email.md)。
 - 開く <https://protection.office.com/reportv2?id=MailFlowNewForwarding> 。
@@ -91,13 +92,13 @@ ms.locfileid: "49660019"
   - **Count**
   - **最初の転送日**
 
-詳細テーブル ビューで **[フィルター** ] をクリックすると、開始日と終了日で **日付範囲** を **指定できます**。
+詳細テーブル ビューで **[フィルター** ] をクリックすると、開始日と終了日で日付 **範囲** を **指定できます**。
 
-テーブルから行を選択すると、 **詳細のフライ** アウトが次の情報と一緒に表示されます。
+テーブルから行を選択すると、[ **詳細** ] フライアウトが次の情報と一緒に表示されます。
 
 - **名前**: これは、送信者のメール アドレス ([データの表示: 新しい転送ユーザー ビュー] から) または送信者のメール ドメイン ([データの表示先 **:** 新しい転送ドメイン] ビュー) のいずれかです。 
 - **転送の種類**
-- **[受信者]**
+- **Recipient**
 - **詳細**
 - **Count**
 - **開始日**

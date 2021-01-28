@@ -3,11 +3,10 @@ title: レポート メッセージ アドインを有効にする
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体に対して、Outlook および Outlook on the web のレポート メッセージ アドインを有効にする方法について説明します。
-ms.openlocfilehash: 13721317c33cf207f27cd8b98fb6d32864651847
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a1f8cffaa6346ec7f426da3c862014ed85a9a367
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864998"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029234"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -31,17 +32,17 @@ ms.locfileid: "49864998"
 > [!NOTE]
 > Exchange Online メールボックスを使用している Microsoft 365 組織の管理者である場合は、セキュリティ/コンプライアンス センターの提出ポータルを&勧めします。 詳細については、「管理者送信を使用して、疑わしいスパム、 [フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
-Outlook および Web 上の Outlook (旧 Outlook Web App) 用の Report Message アドインと Report Phishing アドインを使用すると、分析のために誤検知 (良いメールが悪いとマークされている) や検出検出 (不正なメールを許可) を Microsoft とその関連会社に簡単に報告できます。
+Outlook および Outlook on the web (旧称 Outlook Web App) の Report Message and Report Phishing アドインを使用すると、分析のために誤検知 (良いメールが悪いとマークされている) や検出検出 (不正なメールが許可されている) を Microsoft とその関連会社に簡単に報告できます。
 
-Microsoft は、これらの申請を使用して、電子メール保護テクノロジの有効性を向上します。 たとえば、迷惑メールとしてフラグが設定された多くのメッセージを迷惑メールとして報告する場合は、レポート メッセージ アドインを使用して組織のセキュリティ チームがスパム対策ポリシーを調整する必要[があります。](configure-your-spam-filter-policies.md)
+Microsoft は、これらの申請を使用して、電子メール保護テクノロジの有効性を向上します。 たとえば、レポート メッセージ アドインを使用して迷惑メールとしてフラグが設定された多くのメッセージを迷惑メールとして報告している場合、組織のセキュリティ チームはスパム対策ポリシーを調整する必要[があります。](configure-your-spam-filter-policies.md)
 
 レポート メッセージ アドインまたは Report Phishing アドインをインストールできます。 ユーザーにフィッシング メッセージのみを報告する場合は、組織内に Report Phishing アドインを展開します。 詳細については、「フィッシング報告 [アドインを有効にする」を参照してください](enable-the-report-phish-add-in.md)。
 
-レポート メッセージ アドインは、スパム メッセージとフィッシング メッセージの両方を報告するオプションを提供します。 管理者は組織のメッセージ報告アドインを有効にし、個々のユーザーが自分でインストールできます。
+レポート メッセージ アドインは、スパム メッセージとフィッシング メッセージの両方を報告するオプションを提供します。 管理者は組織のレポート メッセージ アドインを有効にし、個々のユーザーが自分でインストールできます。
 
 個人ユーザーの場合は、自分でメッセージ報告 [アドインを有効にできます](#get-the-report-message-add-in-for-yourself)。
 
-グローバル管理者または Exchange Online 管理者で、Exchange が OAuth 認証を使用するように構成されている場合は、組織のメッセージ報告アドイン [を有効にできます](#get-and-enable-the-report-message-add-in-for-your-organization)。 Report Message Add-Inは、一元展開 [で使用できます](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)。
+グローバル管理者または Exchange Online 管理者で、Exchange が OAuth 認証を使用するように構成されている場合は、組織のメッセージ報告アドイン [を有効にできます](#get-and-enable-the-report-message-add-in-for-your-organization)。 Report Message Add-Inは、一元展開 [で利用できます](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -56,7 +57,7 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
 - 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。
 
-- 既存の Web ブラウザーは、メッセージ報告アドインで動作する必要があります。 ただし、アドインが使用できないか、期待通り動作しない場合は、別のブラウザーを試してください。
+- 既存の Web ブラウザーは、レポート メッセージ アドインで動作する必要があります。 ただし、アドインが使用できないか、期待通り動作しない場合は、別のブラウザーを試してください。
 
 - 組織のインストールでは、OAuth 認証を使用するように組織を構成する必要があります。 詳細については、「アドインの一元展開が組織で機能するかどうかを判断する」 [を参照してください](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
@@ -64,7 +65,7 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>自分用のレポート メッセージ アドインを取得する
 
-1. Microsoft AppSource に移動し <https://appsource.microsoft.com/marketplace/apps> 、メッセージ報告アドインを検索します。 To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180> .
+1. Microsoft AppSource に移動し <https://appsource.microsoft.com/marketplace/apps> 、メッセージ報告アドインを検索します。 [メッセージの報告] アドインに直接移動するには、次のページに移動します <https://appsource.microsoft.com/product/office/wa104381180> 。
 
 2. [今 **すぐ取得] をクリックします**。
 
@@ -84,30 +85,32 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
   ![Outlook on the web レポート メッセージ アドイン アイコン](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-アドインの使い方については、「レポート メッセージ アドインを使用 [する」を参照してください](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+アドインの使い方については、「レポート メッセージ アドインを使用する」 [を参照してください](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
 
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>組織のメッセージ報告アドインを取得して有効にする
 
 > [!NOTE]
-> アドインが組織に表示されるのに最大 12 時間かかる場合があります。
+> アドインが組織に表示されるには、最大で 12 時間かかる場合があります。
 
-1. Microsoft 365 管理センターで、[設定] ページの [統合アプリ **& アドイン** ] ページに移動し、[アドインの展開] をクリック <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **します**。
+1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリアドインの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
+
+2. ページ **の上部にある [アドインの** 展開] を選択し、[次へ] を選択 **します**。
 
    ![Microsoft 365 管理センターの [サービスとアドイン] ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. 表示される **新しいアドイン の展開** のフライアウトで、情報を確認し、[次へ] をクリック **します**。
+3. 表示される **新しいアドイン の展開** のフライアウトで、情報を確認し、[次へ] をクリック **します**。
 
-3. 次のページで、[ストアから **選択] をクリックします**。
+4. 次のページで、[ストアから **選択] をクリックします**。
 
    ![新しいアドイン ページを展開する](../../media/NewAddInScreen2.png)
 
-4. 表示される **[アドインの選択**] ページで、[検索]ボックスをクリックし、「レポート メッセージ」と入力して、[検索検索] アイコン **を** ![ クリックします ](../../media/search-icon.png) 。 結果の一覧で[レポート メッセージ] を探 **し、[** 追加] を **クリックします**。
+5. 表示される **[アドインの選択**] ページで、[検索]ボックスをクリックし、「レポート メッセージ」と入力して、[検索検索] アイコン **を** ![ クリックします ](../../media/search-icon.png) 。 結果の一覧で[レポート メッセージ] を探 **し、[** 追加] を **クリックします**。
 
    ![アドインの検索結果を選択する](../../media/NewAddInScreen3.png)
 
-5. 表示されるダイアログで、ライセンスとプライバシー情報を確認し、[続行] をクリック **します**。
+6. 表示されるダイアログで、ライセンスとプライバシー情報を確認し、[続行] をクリック **します**。
 
-6. 表示される **[アドインの構成]** ページで、次の設定を構成します。
+7. 表示される **[アドインの構成]** ページで、次の設定を構成します。
 
    - **割り当てられたユーザー**: 次のいずれかの値を選択します。
 
@@ -125,11 +128,11 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
    完了したら、[展開] をクリック **します**。
 
-7. 表示される **[レポート メッセージ** の展開] ページに、進行状況レポートの後に、アドインが展開されたという確認が表示されます。 情報を読んだら、[次へ] を **クリックします**。
+8. 表示される **[レポート メッセージ** の展開] ページに、進行状況レポートの後に、アドインが展開されたという確認が表示されます。 情報を読んだら、[次へ] を **クリックします**。
 
    ![[レポート メッセージの展開] ページ](../../media/deploy-report-message-page.png)
 
-8. 表示される **[アドインのアナウンス** ] ページで、情報を確認し、[閉じる] をクリック **します**。
+9. 表示された **[アドインのアナウンス** ] ページで情報を確認し、[閉じる] をクリック **します**。
 
    ![[アドインのアナウンス] ページ](../../media/announce-add-in-page.png)
 
@@ -149,7 +152,7 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>レポート メッセージ アドインの設定を確認または編集する
 
-1. Microsoft 365 管理センターで、次の [&サービス] ページ **に** 移動します <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> 。
+1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリアドインの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
 
    ![新しい Microsoft 365 Add-Insの [サービスと管理] ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -159,10 +162,10 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
    ![レポート メッセージ アドインの設定](../../media/EditReportMessageAddIn.png)
 
-## <a name="view-and-review-reported-messages"></a>報告されたメッセージを表示および確認する
+## <a name="view-and-review-reported-messages"></a>報告されたメッセージの表示と確認
 
 ユーザーが Microsoft に報告するメッセージを確認するには、次のオプションがあります。
 
-- 管理サブミッション ポータルを使用します。 詳細については、「Microsoft へのユーザー [申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
+- 管理者提出ポータルを使用します。 詳細については、「Microsoft へのユーザー [申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
 
 - メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、報告されたメッセージのコピーを送信します。 手順については、「メール フロー ルール [を使用して、ユーザーが Microsoft に報告している情報を確認する」を参照してください](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。

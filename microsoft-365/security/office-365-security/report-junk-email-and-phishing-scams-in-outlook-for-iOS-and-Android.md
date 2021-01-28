@@ -1,74 +1,75 @@
 ---
-title: IOS および Android 用の Outlook で迷惑メールとフィッシング詐欺メールを報告する
+title: iOS および Android 用の Outlook で迷惑メールとフィッシングメールを報告する
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: 管理者は、iOS および Android 用の Outlook に組み込まれている迷惑メールと迷惑メールの報告オプションについて説明しています。
-ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: 管理者は、iOS および Android 用の Outlook の組み込みの迷惑メール、迷惑メール、フィッシングメール報告オプションについて学習できます。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d702ab1d97c07c3e38430a9a7beff5f14db7b60a
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877293"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029282"
 ---
-# <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Exchange Online で iOS および Android 用の Outlook で迷惑メールとフィッシング詐欺メールを報告する
+# <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Exchange Online で iOS および Android 用の Outlook で迷惑メールとフィッシングメールを報告する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[ハイブリッド先進認証](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview)を使用する Exchange online またはオンプレミスのメールボックスを含む Microsoft 365 組織では、IOS および Android 用の Outlook の組み込みのレポート作成オプションを使用して誤検知 (スパムとしてマークされた良好な電子メール)、誤検知 (無効な電子メールが許可されている)、および Exchange Online PROTECTION (EOP) へ
+ハイブリッドの最新認証を使用して Exchange Online またはオンプレミスのメールボックスにメールボックスを持[](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview)つ Microsoft 365 組織では、iOS および Android 用の Outlook の組み込みのレポート オプションを使用して、誤検知 (スパムとしてマークされた良いメール)、偽陰性 (悪い電子メールが許可されている)、フィッシング メッセージを Exchange Online Protection (EOP) に送信できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>開始する前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に知る必要がある情報
 
-- Exchange Online メールボックスを使用している組織内の管理者である場合は、セキュリティ & コンプライアンスセンターで送信ポータルを使用することをお勧めします。 詳細については、「 [管理者による送信を使用して疑わしいスパム、フィッシング、url、およびファイルを Microsoft に送信する](admin-submission.md)」を参照してください。
+- Exchange Online メールボックスを使用している組織の管理者である場合は、セキュリティ/コンプライアンス センターの提出ポータル&勧めします。 詳細については、「管理者送信を使用して、疑わしいスパム、 [フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
-- 指定したメールボックスに、レポートされたメッセージをコピーまたはリダイレクトするように構成できます。 詳細については、「 [ユーザーの送信ポリシー](user-submission.md)」を参照してください。
+- 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。
 
-- Microsoft へのメッセージの報告の詳細については、「 [microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+- Microsoft にメッセージを報告する方法の詳細については、「メッセージとファイルを Microsoft に報告する」 [を参照してください](report-junk-email-messages-to-microsoft.md)。
 
   > [!NOTE]
-  > 迷惑メール報告がユーザー送信ポリシーの Outlook に対して無効になっている場合、迷惑メールまたはフィッシングメッセージは迷惑メールフォルダーに移動され、管理者または Microsoft には報告されません。
+  > ユーザー送信ポリシーで Outlook で迷惑メール報告が無効になっている場合、迷惑メールまたはフィッシングメッセージは迷惑メール フォルダーに移動され、管理者や Microsoft には報告されません。
 
-## <a name="report-spam-and-phishing-messages-in-outlook-for-ios-and-android"></a>IOS および Android 用の Outlook でスパムメッセージとフィッシングメッセージを報告する
+## <a name="report-spam-and-phishing-messages-in-outlook-for-ios-and-android"></a>iOS および Android 用の Outlook でスパムメッセージとフィッシング メッセージを報告する
 
-受信トレイ内のメッセージ、または迷惑メール以外の他の電子メールフォルダーについては、次の手順を使用して、iOS および Android 用のスパムおよびフィッシングメッセージを報告します。
+受信トレイ内のメッセージ、または迷惑メール以外の他のメール フォルダーの場合は、次の手順を使用して、iOS および Android のスパム メッセージとフィッシング メッセージを報告します。
 
-1. 1つ以上のメッセージを選択します。
-2. 右上隅にある3つの垂直点をタップします。 [アクション] メニューが開きます。
+1. 1 つ以上のメッセージを選択します。
+2. 右上隅で、3 つの垂直ドットをタップします。 操作メニューが開きます。
 
-   ![[アクション] メニューから迷惑メールまたはフィッシング詐欺メールを報告する](../../media/Android-report-as-junk-dialog.png)
+   ![操作メニューから迷惑メールまたはフィッシングメールを報告する](../../media/Android-report-as-junk-dialog.png)
 
-3. [ **迷惑メールを報告** ] をタップしてから、[ **迷惑メール** または **フィッシング詐欺** ] を選択
+3. [ **迷惑メールの報告]** をタップし、[ **迷惑メール** ] または [フィッシング **] を選択します**。
 
-   ![迷惑メールまたはフィッシング詐欺メールを報告する](../../media/Android-report-junk-or-phishing.png)
+   ![迷惑メールまたはフィッシングメールを報告する](../../media/Android-report-junk-or-phishing.png)
 
-4. 表示されるダイアログで、[ **レポート** ] または [ **いいえ** ] を選択できます。 [ **いいえ** ] を選択した場合、[ **迷惑** メール] をタップすると、メッセージは [迷惑メール] フォルダーに移動します。 **フィッシング** をタップすると、メッセージは [削除済みアイテム] フォルダーに移動します。 [ **レポート** ] を選択して、メッセージのコピーも Microsoft に送信します。
+4. 表示されるダイアログで、[レポート] または [No Thanks]**を****選択できます**。 On selecting **No Thanks,** if you tapped **Junk** the message moves to the Junk Email folder, if you tapped **Phishing** the message moves to the Deleted Items folder. [ **レポート]** を選択すると、メッセージのコピーも Microsoft に送信されます。
 
-   ![迷惑メールまたはフィッシング詐欺メールレポートのオプションを報告する](../../media/Android-junk-email-reporting-options.png)
+   ![迷惑メールまたはフィッシングメールの報告オプションを報告する](../../media/Android-junk-email-reporting-options.png)
 
-気が変わった場合は、表示されるトースト通知で [ **元に戻す** ] を選択します。 メッセージは受信トレイフォルダーに残ります。
+考え変えた場合は、表示されるトースト **通知で** [元に戻す] を選択します。 メッセージは受信トレイ フォルダーに残ります。
 
-## <a name="report-non-spam-messages-from-the-junk-folder-in-outlook-for-ios-and-android"></a>Outlook for iOS および Android 用の迷惑メールフォルダーから非スパムメッセージを報告する
+## <a name="report-non-spam-messages-from-the-junk-folder-in-outlook-for-ios-and-android"></a>iOS および Android 用の Outlook の [迷惑メール] フォルダーからスパムではないメッセージを報告する
 
-[迷惑メール] フォルダーで、次の手順を使用してスパム誤検知を報告します。
+迷惑メール フォルダーで、次の手順を使用してスパムの誤検知を報告します。
 
-1. 1つ以上のメッセージを選択します。
-2. 右上隅にある3つの垂直点をタップします。 [アクション] メニューが開きます。
+1. 1 つ以上のメッセージを選択します。
+2. 右上隅で、3 つの垂直ドットをタップします。 操作メニューが開きます。
 
-   ![[アクション] メニューから迷惑メールではないことを報告する](../../media/Android-not-junk-email.png)
+   ![操作メニューから迷惑メールではないメールを報告する](../../media/Android-not-junk-email.png)
 
-3. **迷惑メールではない** をタップします。
+3. [迷惑 **メールではない] をタップします**。
 
-トースト通知は、電子メールが受信トレイに移動されたことを示します。 気が変わった場合は、トースト通知で [ **元に戻す** ] を選択します。 電子メールは、迷惑メールフォルダーに残ります。
+電子メールが受信トレイに移動したというトースト通知が表示されます。 考え方が変わる場合は、トースト **通知で [元に戻** す] を選択します。 メールは迷惑メール フォルダーに残ります。
