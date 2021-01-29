@@ -19,6 +19,8 @@
           href: service-description/regions-languages.md
         - name: 製品のライフサイクル
           href: service-description/device-lifecycle.md
+        - name: デバイスの要件
+          href: service-description/device-requirements.md
         - name: プログラム デバイス
           href: service-description/device-list.md
           items:

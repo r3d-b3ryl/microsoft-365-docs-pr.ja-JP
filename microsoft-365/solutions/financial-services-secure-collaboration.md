@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 金融サービス機関が、Microsoft 365 と Teams を使用して、財務的なセキュリテとコンプライアンスを維持し、効果的に共同作業を行う方法について説明します。
 f1.keywords: NOCSH
-ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558480"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029956"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 
@@ -319,7 +319,7 @@ Microsoft 365 では最近、Microsoft 365 サービス全体のシグナルを�
 
 たとえば、Microsoft 365 のインサイダー リスク管理では、USB ドライブへのファイルのコピーや個人メール アカウントでのメールのやり取りなど、ユーザーの Windows 10 デスクトップからのシグナルを、Office 365 メール、SharePoint Online、Microsoft Teams、OneDrive for Business などのオンライン サービスでのアクティビティと関連付け、データ流出のパターンを特定することができます。 また、こうしたアクティビティを、組織を去る従業員と関連付けることもできます。これは、よくあるデータ流出のパターンです。 インサイダー リスク管理では、長期にわたって複数のアクティビティや挙動を監視することができます。 共通するパターンが発見されると警告を発し、調査担当者が重要なアクティビティに注目して、ポリシー違反を確信をもって検証できるようにします。 インサイダー リスク管理では、調査担当者からのデータを疑似匿名化することでデータのプライバシー規制を準拠しながらも、効率的に調査を行えるようにするために重要なアクティビティを浮かび上がらせます。 修正のために事例を報告するための一般的なエスカレーション ワークフローに続いて、調査担当者は重要なアクティビティのデータをパッケージ化し、HR および法務部にセキュリティで保護された方法で送信できます。
 
-Microsoft 365 のインサイダー リスク管理は、インサイダー リスクを管理および調査する組織の能力を格段に高めつつ、より高いレベルでの事例への対応が必要になった場合に、組織がデータのプライバシー規制を準拠し、確立されたエスカレーションの方法を実行できるようにします。
+Microsoft 365 のインサイダー リスク管理は、インサイダー リスクを管理および調査する組織の能力を格段に高めつつ、より高いレベルでの事例への対応が必要になった場合に、組織がデータのプライバシー規制を準拠し、確立されたエスカレーションの方法を実行できるようにします。 Microsoft 365 のインサイダー リスク管理の詳細については、「[Microsoft 365 のインサイダー リスク管理における最新のリスクの問題点とワークフロー](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide)」を参照してください。
 
 ![パーティションで区切られたスペースで画面を見るコール センターの職員。](../media/clo17-call-center-006.jpg)
  

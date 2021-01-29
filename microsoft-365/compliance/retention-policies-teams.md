@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: e3cd36fe6a7f075516d7778094ff5dd29480bfd9
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: ec5085b2d0a828300cb90fb260cb293eda4b9433
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794129"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988183"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -38,7 +38,10 @@ ms.locfileid: "49794129"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
-次の Teams アイテムは、Teams のアイテム保持ポリシーを使用して保持および削除できます: 埋め込みの画像、テーブル、ハイパーテキスト リンク、および他の Teams メッセージやファイルへのリンクを含む、チャット メッセージとチャネル メッセージ。 チャット メッセージには、チャット内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
+次の Teams アイテムは、Teams のアイテム保持ポリシーを使用して保持および削除できます: 埋め込みの画像、テーブル、ハイパーテキスト リンク、および他の Teams メッセージ、ファイル、[カード コンテンツ](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)へのリンクを含む、チャット メッセージとチャネル メッセージ。 チャット メッセージには、チャット内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
+
+> [!NOTE]
+> カード コンテンツに関する機能は最近追加され、現在はテナントにロール アウトされています。 詳細については、「[Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available (Teams 内のアプリケーションを使用したアダプティブ カード コンテンツのコンプライアンスに関する Microsoft 365 の機能が利用可能になりました)](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)」を参照してください。
 
 プライベート チャネルの Teams メッセージは含まれません。また、他のユーザーからの絵文字での応答は含まれません。
 
