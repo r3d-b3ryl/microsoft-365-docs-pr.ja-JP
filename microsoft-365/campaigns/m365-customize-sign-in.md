@@ -1,5 +1,5 @@
 ---
-title: プライバシーと同意の通知を使用したサインインページのカスタマイズ
+title: プライバシーと同意に関する通知を使用してサインイン ページをカスタマイズする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,31 +21,29 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Microsoft 365 のキャンペーンに関するプライバシーおよび同意通知を使用して、サインインページをカスタマイズします。
-ms.openlocfilehash: 27d9ee496290c091c7bcdef4c59e0cc8df46b9b7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Microsoft 365 のプライバシーと同意に関する通知を使用して、サインイン ページをカスタマイズします。
+ms.openlocfilehash: 894686ac785e979b8491cd5943c9a071d3be9ee9
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526960"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044556"
 ---
-# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a><span data-ttu-id="eb0e8-103">プライバシーと同意の通知を使用してサインインページをカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="eb0e8-103">Customize your sign-in page with a privacy and consent notice</span></span>
+# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a><span data-ttu-id="cb730-103">プライバシーと同意に関する通知を使用してサインイン ページをカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="cb730-103">Customize your sign-in page with a privacy and consent notice</span></span>
 
-<span data-ttu-id="eb0e8-104">政治的なキャンペーンにより、プライバシーと同意の通知をサインインページに追加することによって、法律執行機関がオンライン犯罪者に対して簡単に法的費用をかけることができます。</span><span class="sxs-lookup"><span data-stu-id="eb0e8-104">Your political campaign can make it easier for law enforcement agencies to file legal charges against online criminals by adding a privacy and consent notice to your sign-in page.</span></span>
+<span data-ttu-id="cb730-104">ビジネスやキャンペーンを利用すると、サインイン ページにプライバシーと同意通知を追加することで、法執行機関がオンラインの犯罪に対する法的請求を簡単に行う可能性があります。</span><span class="sxs-lookup"><span data-stu-id="cb730-104">Your business or campaign can make it easier for law enforcement agencies to file legal charges against online criminals by adding a privacy and consent notice to your sign-in page.</span></span>
 
-<span data-ttu-id="eb0e8-105">ブランド化を使用してサインインページをカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="eb0e8-105">You can customize your sign-in page with your branding.</span></span> <span data-ttu-id="eb0e8-106">また、ユーザーがサインインするのに役立つテキストを追加したり、Microsoft 365 へのアクセス権を取得するための法律上の要件や制限を指定したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="eb0e8-106">You can also add text to help your users sign in, or to point out legal requirements or restrictions for getting access to Microsoft 365 for campaigns resources.</span></span>
+<span data-ttu-id="cb730-105">サインイン ページは、ブランド化に合わせてカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="cb730-105">You can customize your sign-in page with your branding.</span></span> <span data-ttu-id="cb730-106">また、ユーザーがサインインしたり、Microsoft 365 リソースにアクセスするための法的要件や制限を指摘したりするのに役立つテキストを追加できます。</span><span class="sxs-lookup"><span data-stu-id="cb730-106">You can also add text to help your users sign in, or to point out legal requirements or restrictions for getting access to Microsoft 365 resources.</span></span>
 
-## <a name="design-customization-the-text-on-your-sign-in-page"></a><span data-ttu-id="eb0e8-107">サインインページでのテキストのデザインのカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="eb0e8-107">Design customization the text on your sign-in page</span></span>
+## <a name="design-customization-the-text-on-your-sign-in-page"></a><span data-ttu-id="cb730-107">サインイン ページのテキストをカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="cb730-107">Design customization the text on your sign-in page</span></span>
 
-<span data-ttu-id="eb0e8-108">サインインページのカスタマイズ可能な要素を更新するには、グローバル管理者である必要があります。詳細については、「[会社ブランド](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)化の記事を追加する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb0e8-108">To update the customizable elements on the sign-in page, you have to be a global admin. For specific instructions, see [add company branding](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) article.</span></span>
+<span data-ttu-id="cb730-108">サインイン ページでカスタマイズ可能な要素を更新するには、グローバル管理者である必要があります。具体的な手順については、会社のブランド [化に関する記事の追加を参照](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) してください。</span><span class="sxs-lookup"><span data-stu-id="cb730-108">To update the customizable elements on the sign-in page, you have to be a global admin. For specific instructions, see [add company branding](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) article.</span></span>
 
-<span data-ttu-id="eb0e8-109">更新できる要素は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="eb0e8-109">The elements you can update are:</span></span>
+<span data-ttu-id="cb730-109">更新できる要素は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="cb730-109">The elements you can update are:</span></span>
 
-- <span data-ttu-id="eb0e8-110">**サインインページのテキスト**</span><span class="sxs-lookup"><span data-stu-id="eb0e8-110">**Sign-in page text**</span></span>
+- <span data-ttu-id="cb730-110">**サインイン ページのテキスト** プライバシーと同意に関する声明を簡単に追加できます。</span><span class="sxs-lookup"><span data-stu-id="cb730-110">**Sign-in page text** An easy place to add the privacy and consent statement.</span></span>
+- <span data-ttu-id="cb730-111">サインイン ページの背景画像</span><span class="sxs-lookup"><span data-stu-id="cb730-111">Sign-in page background image</span></span>
+- <span data-ttu-id="cb730-112">バナー ロゴ</span><span class="sxs-lookup"><span data-stu-id="cb730-112">Banner logo</span></span>
+- <span data-ttu-id="cb730-113">ユーザー名のヒント</span><span class="sxs-lookup"><span data-stu-id="cb730-113">Username hint</span></span>
 
-     <span data-ttu-id="eb0e8-111">プライバシーおよび同意ステートメントを簡単に追加できます。</span><span class="sxs-lookup"><span data-stu-id="eb0e8-111">An easy place to add the privacy and consent statement.</span></span>
-- <span data-ttu-id="eb0e8-112">サインインページの背景画像</span><span class="sxs-lookup"><span data-stu-id="eb0e8-112">Sign-in page background image</span></span>
-- <span data-ttu-id="eb0e8-113">バナーロゴ</span><span class="sxs-lookup"><span data-stu-id="eb0e8-113">Banner logo</span></span>
-- <span data-ttu-id="eb0e8-114">ユーザー名のヒント</span><span class="sxs-lookup"><span data-stu-id="eb0e8-114">Username hint</span></span>
-
-<span data-ttu-id="eb0e8-115">プライバシーおよび同意に関する通知の例については、「[コンピューターの検索と強制」および「犯罪調査での電子証拠の取得](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)」の「付録 a」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb0e8-115">For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).</span></span>
+<span data-ttu-id="cb730-114">プライバシーおよび同意に関する通知の例については、「コンピューターの検索と押収と犯罪調査での電子証拠の取得」の付録 A を [参照してください](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)。</span><span class="sxs-lookup"><span data-stu-id="cb730-114">For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).</span></span>
