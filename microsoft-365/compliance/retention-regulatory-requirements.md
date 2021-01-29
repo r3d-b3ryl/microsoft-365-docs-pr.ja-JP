@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース。
-ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941422"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032568"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>情報ガバナンスおよびレコード管理の規制要件
 
@@ -29,6 +29,18 @@ ms.locfileid: "48941422"
 このページのリソースは、Microsoft 365 の情報ガバナンスおよびレコード管理に関する特定の規制要件を満たすのに役立ちます。 このドキュメントの各セクションでは、1 つ以上の関連する規制に重点を置いています。また、各セクションには、概説した要件を満たすのに役立つ、Microsoft 365 を構成する方法に関する既存のガイダンスまたはサードパーティの評価が含まれています。
 
 これらのリソースは、Service Trust Portal の「[データ保護のリソース、FAQ、およびホワイトペーパー](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)」ページからダウンロードできます。
+
+## <a name="new-zealand-public-records-act"></a>ニュージーランド公記録法
+
+**ニュージーランド公記録法の Microsoft 365 への遵守義務のサポート** - [ダウンロード評価](https://aka.ms/NZPRA)
+
+適用可能なワークロード: SharePoint、OneDrive、Teams、Exchange、Skype for Business
+
+2021 年 1 月にリリースされたこのレポートは Microsoft ニュージーランドと共同で作成されたもので、Microsoft 365 サービスの機能が、以下で指定されている、電子記録を記録、保存、管理するための要件について評価されています。 
+
+- 2005 年ニュージーランド公記録法において、ニュージーランドにおける公文書及び地方自治体公文書の保存に関する指針を定めています。
+
+このレポートは、Microsoft 365 を使用した場合に、2005 年ニュージーランド公記録法 (PRA) のシステム面がどのように達成できるかを理解するのに役立ちます。
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f)、FINRA 4511(c)、CFTC 1.31(c)-(d)
 

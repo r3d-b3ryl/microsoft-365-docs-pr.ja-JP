@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Exchange ハイブリッド展開のオンプレミス　ユーザーの Teams チャットデータを検索してエクスポートするには、セキュリティ / コンプライアンス センターのコンテンツ検索ツールを使用します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976204"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029717"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>オンプレミス ユーザーの Teams チャット データを検索する
 
@@ -39,10 +39,8 @@ ms.locfileid: "49976204"
 
 - オンプレミス ユーザーに関連付けられた Teams チャット データのみがクラウドベースのストレージ領域に保存されます。 オンプレミス ユーザーは、このストレージ領域にアクセスすることはできません。
 
-- 組織がオンプレミス ユーザーに対して Teams チャット データを検索できるようにするには、Microsoft サポートに要求を送信する必要があります。 この記事の「[Microsoft サポートに要求を送信してこの機能有効にする](#filing-a-request-with-microsoft-support-to-enable-this-feature)」を参照してください。
-
 > [!NOTE]
-> Teams チャネルに含まれる会話は、チームに関連付けられているクラウドベースのメールボックスに常に保存されます。 つまり、コンテンツ検索を使用して、サポート要求を提出せずにチャネル会話を検索できます。 Teams チャネルの会話の検索の詳細については、「[Microsoft Teams と Microsoft 365 グループの検索」](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)を参照してください。
+> Teams チャネルに含まれる会話は、チームに関連付けられているクラウドベースのメールボックスに常に保存されます。つまり、チャネルの会話を検索できます。 Teams チャネルの会話の検索の詳細については、「[Microsoft Teams と Microsoft 365 グループの検索」](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)を参照してください。
   
 ## <a name="how-it-works"></a>メカニズム
 
@@ -54,20 +52,7 @@ Microsoft Teams 対応のユーザーがオンプレミスのメールボック�
   
 この新しい機能に加えて、コンテンツ検索を使用して、クラウドベースの SharePoint サイトの Teams コンテンツ、各 Microsoft Team に関連付けられた Exchange メールボックス、クラウドベースのユーザーの Exchange Online メールボックスの 1xN Teams チャット データを検索、プレビュー、エクスポートできます。
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Microsoft サポートに要求を送信してこの機能有効にする
 
-組織がセキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスを使用して、オンプレミス ユーザーの Teams チャット データを検索できるようにするには、Microsoft サポートに要求を提出する必要があります。 この機能は、セキュリティ/ コンプライアンス センターの PowerShell で使用できます。 PowerShell を使用してオンプレミス ユーザーの Teams チャット データを検索するために、サポート要求を送信する必要はありません。
-  
-Microsoft サポートに要求を送信するときには、次の情報を含めてください。
-  
-- 組織の既定のドメイン名。
-
-- 組織のテナント名とテナント ID。 これらは、Azure Active Directory ポータル (**管理** \> **プロパティ** の下) にあります。 「[Microsoft 365 テナント ID を見つける](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)」をご覧ください。
-
-- サポート要求の目的に関する次のタイトルまたは説明：「オンプレミス ユーザーのアプリケーション コンテンツ検索を有効にする」。 これにより、要求を実装する電子情報開示エンジニアリング チームが要求をルーティングできます。
-
-技術的な変更が行われた後、Microsoft サポートは、展開予定日を送信します。 通常、サポート要求の送信後、展開プロセスには 2 ~ 3 週間かかります。
-  
 ### <a name="what-happens-after-this-feature-is-enabled"></a>この機能を有効にするとどうなりますか?
 
 組織にこの機能が展開されると、コンテンツ検索およびセキュリティ/コンプライアンス センターの電子情報開示ケースに関連付けられた検索で次の変更が行われます。
