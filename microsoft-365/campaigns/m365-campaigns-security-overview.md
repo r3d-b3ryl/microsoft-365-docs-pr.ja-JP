@@ -1,5 +1,5 @@
 ---
-title: キャンペーンのセキュリティ保護を強化する
+title: キャンペーンやビジネスのセキュリティ保護を強化する
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,28 +23,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 でキャンペーンのセキュリティを強化して、キャンペーンを保護する方法について説明します。
-ms.openlocfilehash: 0be3a3ef766686c830ffffc8aaee451b67c0b81f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Microsoft 365 でセキュリティを強化してキャンペーンやビジネスを保護する方法について説明します。
+ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527092"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044374"
 ---
-# <a name="bump-up-security-protection-for-your-campaign"></a>キャンペーンのセキュリティ保護を強化する
+# <a name="bump-up-security-protection-for-your-campaign-or-business"></a>キャンペーンやビジネスのセキュリティ保護を強化する
 
 
 ## <a name="overview"></a>概要 
-このビデオを見て、どのようにキャンペーンを保護するかを確認してください。
+キャンペーンやビジネスを保護する方法については、次のビデオをご覧ください。
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
 
-その後、次の手順を実行します。
+その後、次の手順に従います。
+
 - [マルウェアやその他の脅威から保護する](m365-campaigns-increase-protection.md)
-- アカウントとアプリを保護して、[キャンペーンデータへのアクセスを保護する](m365-campaigns-conditional-access.md)
+- [アカウントとアプリを保護して](m365-campaigns-conditional-access.md) キャンペーン データへのアクセスを保護する
 - [管理者アカウントを保護する](m365-campaigns-protect-admin-accounts.md)
 - [モバイル デバイスのセットアップ](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
-- [ユーザーをトレーニングする](m365-campaigns-users.md) 
-
+- [ユーザーをトレーニングする](m365-campaigns-users.md)

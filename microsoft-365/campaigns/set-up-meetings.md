@@ -24,28 +24,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft Teams を使用してオンライン会議を設定します。
-ms.openlocfilehash: 3e1eaba887249db59ef28e36ffefb5b89f80c469
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Microsoft Teams とのオンライン会議をセットアップします。
+ms.openlocfilehash: a78a3a2ef66a2bc659a1c655dab338a1055ae3af
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132002"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044170"
 ---
 # <a name="set-up-meetings"></a>会議をセットアップする
 
-Microsoft Teams の会議には、音声、ビデオ、共有が含まれます。 オンラインになっているので、常にミーティングスペースを用意して、自分のキャンペーンのために会議室やプロジェクターが必要になることはありません。Microsoft Teams 会議は、組織の内部と外部の両方でスタッフと協力して参加するための最適な方法です。 組織のメンバーでなくても、会議に参加するためのアカウントも持っている必要はありません。 政治的なキャンペーンでは、Microsoft Teams を使用して、オンライン会議をスケジュールして実行できます。 組織外のスタッフ、ボランティア、ゲストを含めることができます。 会議中に、画面を共有したり、ファイルを共有したり、タスクを割り当てたりすることができます。
+Microsoft Teams の会議には、音声、ビデオ、共有が含まれます。 また、オンラインのため、スタッフが地理的に分散している場合やリモートで作業している場合でも、(会議室やプロジェクターを必要とせずに) 会議スペースが常に用意されます。 Microsoft Teams 会議は、組織の内部と外部の両方でスタッフと一緒に参加するための最適な方法です。 組織のメンバーである必要や、会議に参加するアカウントを持っている必要さえない。 Microsoft Teams を使用してオンライン会議をスケジュールおよび実行できます。 会議中は、画面の共有、ファイルの共有、タスクの割り当てなどできます。 選挙運動には、スタッフ、ボランティア、組織外のゲストを会議に含めできます。 小規模企業や中小企業は、スタッフと会う、または Microsoft Teams を使用してクライアントやパートナーと会えます。
 
-[![会議中の2人のユーザーの図](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![会議中の 2 人のユーザーの図](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
-Microsoft Teams を使用してオンライン会議に参加またはホストする方法の簡単な概要については、「 [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) または [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) でインフォグラフィック」をダウンロードしてご確認ください。
+インフォグラフィックを [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) または [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) でダウンロードして、Microsoft Teams でオンライン会議に参加またはホストする方法の概要を簡単に説明します。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
-オンライン会議には、次のベストプラクティスに従います。
-- Microsoft Teams でオンライン会議をスケジュールします。 チームとチャネルを選択できます。 Teams は、チームまたはチャネルの参加者を自動的に招待します。
-- 即時会議が必要な場合 1対1のチャットに参加している場合は、[ **Meet now** ] を選択して、チャットを行っている相手とのビデオまたは音声通話を開始します。 
+オンライン会議のベスト プラクティスに従ってください。
 
+- Microsoft Teams でオンライン会議をスケジュールします。 チームとチャネルを選択できます。Teams は、そのチームまたはチャネルの参加者を自動的に招待します。
+- 即入の会議が必要な場合 1 対 1 チャットの場合は、[今すぐ会議] を選択して、チャット相手とのビデオ通話または音声通話を開始します。
 
 ## <a name="schedule-a-meeting"></a>会議の予約
 
@@ -55,6 +55,6 @@ Microsoft Teams を使用してオンライン会議に参加またはホスト�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
 
-Microsoft Teams での会議の詳細については、以下を参照してください。
+Microsoft Teams での会議の詳細については、次のリンクを参照してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]

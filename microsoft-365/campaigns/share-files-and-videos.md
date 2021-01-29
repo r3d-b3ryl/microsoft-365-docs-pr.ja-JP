@@ -24,42 +24,41 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft Teams と SharePoint を使用して、キャンペーン内でファイルとビデオを共有できます。
-ms.openlocfilehash: d8f9df1befe720dbcd2affc56ff02f29c037216b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: キャンペーン内のファイルやビデオを Microsoft Teams および SharePoint と共有します。
+ms.openlocfilehash: d6d168c196a8571cab86a1be57f5b26782bc4d3f
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132014"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044182"
 ---
 # <a name="share-files-and-videos"></a>ファイルやビデオを共有する
 
-ファイルを表示できるユーザーと、ファイルを編集できるユーザーを制御する必要がある場合は、ファイルを安全な場所に保存して、アクセス許可を適切に適用できるようにする必要があります。 Microsoft teams を使用してファイルを保存し、Microsoft Teams を使用して、または SharePoint リンクを送信することによって、そのファイルをキャンペーンの内部または外部のどちらでも共有できます。 電子メールの添付ファイルではなくリンクを送信するということは、ファイルを表示および変更しているユーザーを知ることができます。また、アクセス許可がなくても、それらを表示または変更することはできません。 
+ファイルを表示できるユーザーと編集できるユーザーを制御する必要がある場合は、ファイルを安全な場所に保存して、アクセス許可が適切に適用される必要があります。 Microsoft Teams を使用してファイルを保存し、Microsoft Teams を使用するか、SharePoint リンクを送信して、会社、プラクティス、キャンペーンの内部または外部でファイルを共有できます。 電子メールの添付ファイルではなくリンクを送信すると、ファイルを表示および変更しているユーザーが分かっているので、アクセス許可なしで表示または変更することはできません。
 
-![[ファイル] タブを表示し、メニューの [リンクの取得] を表示する Microsoft Teams ウィンドウの図](../media/m365-democracy-teams-sharefiles.png)
+![メニューに [ファイル] タブと [Get] リンクが表示されている Microsoft Teams ウィンドウの図](../media/m365-democracy-teams-sharefiles.png)
 
-Microsoft Teams と SharePoint のファイルを使用して、ファイルに対して共同作業を行い、互いの変更を確認することもできます。 Microsoft Teams を使用して、政治キャンペーンの内部でファイルを共有します。 キャンペーン外のユーザーと外部で共有する必要がある場合は、それらをゲストとしてチームに追加したり、セキュリティで保護された SharePoint リンクを送信したりできます。
+Microsoft Teams と SharePoint のファイルを使用すると、ファイルをまとめて作業し、互いに変更を確認することもできます。 Microsoft Teams を使用して、会社、実践、キャンペーンの内部でファイルを共有します。 組織外のユーザーと外部共有する必要がある場合は、チームにゲストとして追加するか、セキュリティで保護された SharePoint リンクを送信できます。
 
-Microsoft Stream を使用して、キャンペーンのビデオを保存および共有することもできます。 これらのビデオは公開されていないため、内部のキャンペーンメッセージングには理想的です。
+Microsoft Stream を使用して、内部でビデオを保存および共有できます。 これらのビデオは一般のユーザーには表示できないので、内部のキャンペーン メッセージングに最適です。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
-次の方法を使用して、ファイルとビデオを安全に共有します。
+ファイルとビデオを安全に共有するには、次の方法を使用します。
 
-1. Microsoft Teams または SharePoint にファイルを保存し、それらのファイルへのアクセスを必要とするユーザーのみがファイルを所有していることを確認してください。 
-2. を共有する場合は、ファイルを電子メールに添付しないようにします。 代わりに、[Microsoft Teams または SharePoint から **リンクを取得** ] を選択して、電子メールでリンクを送信します。
-3. ファイルを外部で共有するには、ユーザーをゲストとしてチームに追加するか、SharePoint を使用してそのファイルのみを共有するためのセキュリティで保護されたリンクを取得します。
-4. Microsoft Stream を使用して、キャンペーンに表示するビデオをホストします。 
-5. Microsoft Teams または SharePoint を使用して、チームで共同作業または共有する必要があるビデオファイルを保存します。
+1. Microsoft Teams または SharePoint にファイルを保存し、それらのファイルにアクセスする必要があるユーザーだけがファイルを持っている必要があります。
+2. 共有する場合は、メールにファイルを添付しない。 代わりに、Microsoft Teams **または** SharePoint から [リンクを取得] を選択し、メールでリンクを送信します。
+3. ファイルを外部で共有するには、ユーザーをチームのゲストとして追加するか、SharePoint を使用してそのファイルを共有するための安全なリンクを取得します。
+4. Microsoft Stream を使って、キャンペーンに表示するビデオをホストします。
+5. Microsoft Teams または SharePoint を使用して、共同作業や共有のためにチームに必要なビデオ ファイルを保存します。
 
- 
 ## <a name="set-up"></a>セットアップ
 
-チームを作成し、広告主または融資パートナーなどのゲストを追加するには、次の手順を実行します。
+チームを作成し、広告主や調達パートナーなど、ゲストをチームに追加するには、次の手順に従います。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Microsoft Teams を使用せずに、保護されたリンクをゲストと共有するには、次の手順を実行します。
+Microsoft Teams を使用せずに、ゲストと安全なリンクを共有するには、次の手順を実行します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
 
@@ -67,6 +66,6 @@ Microsoft Teams を使用せずに、保護されたリンクをゲストと共�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-ファイルを共有する方法の簡単な概要については、「 [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) または [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) でインフォグラフィックをダウンロードする」をご覧ください。
+ファイルを共有する方法の概要を確認するには [、PDF](https://go.microsoft.com/fwlink/?linkid=2079435) または [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) でインフォグラフィックをダウンロードします。
 
-[![別のユーザーとファイルを共有する図](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![異なるユーザーとファイルを共有する図](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

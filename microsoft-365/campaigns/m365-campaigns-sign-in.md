@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 にサインインしてキャンペーンを申し込む
+title: Microsoft 365 にサインインする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,24 +22,26 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Microsoft 365 にサインインしてキャンペーンを行います。 Cybersecurity の脅威から、電子メール、データ、コミュニケーションにキャンペーンを保護します。
-ms.openlocfilehash: a11db9a16718d435842508504d7e7f0cba5df898
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Microsoft 365 にサインインします。 電子メール、データ、コミュニケーションに対するサイバーセキュリティの脅威からビジネス、プラクティス、キャンペーンを保護します。
+ms.openlocfilehash: d2bc0ddbfbc839f1b389b844544f33c444012fb4
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131990"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044206"
 ---
-# <a name="sign-in-to-microsoft-365-for-campaigns"></a>Microsoft 365 にサインインしてキャンペーンを申し込む
+# <a name="sign-in-to-microsoft-365"></a>Microsoft 365 にサインインする
 
-## <a name="for-campaign-admins"></a>キャンペーン管理者の場合
-Microsoft 365 にサインアップしたキャンペーンは、Microsoft 365 の管理者です。サインインする方法は次のとおりです。 
-1. 手順2で [サインアップ](m365-campaigns-sign-up.md#steps-to-sign-up)した電子メールアドレスに送信したユーザー名とパスワードを検索します。
-2. ブラウザーで、Microsoft 365 管理センター () に移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> します。 
+## <a name="for-business-or-campaign-admins"></a>ビジネス管理者またはキャンペーン管理者向け
+
+Microsoft 365 にサインアップした場合は、Microsoft 365 管理者です。サインインする方法を次に示します。
+
+1. サインアップする手順 2 で入力したメール アドレスに送信したユーザー名とパスワード [を検索します](m365-campaigns-sign-up.md#steps-to-sign-up)。
+2. ブラウザーで、Microsoft 365 管理センターに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 。
 3. ユーザー名とパスワードを入力します。 **[サインイン]** を選びます。
-4. ページの右上にある **[プレビュー** ] コントロールを探します。 「[キャンペーンのバンプアップ保護](m365-campaigns-security-overview.md)」で説明されているすべてのコントロールを使用できるように、[**プレビュー** ] を選択します。
+4. ページの右側で、コントロールの **プレビューを探** します。 [ **プレビューを有効にする** ] を選択すると、「キャンペーンの保護を強化する」で説明されている [コントロールを使用できます](m365-campaigns-security-overview.md)。
 
-## <a name="for-campaign-staff"></a>キャンペーンスタッフの場合
-「 [ユーザー](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) を追加する」の説明に従って、キャンペーンスタッフを設定します。 [ **ユーザーの追加** ] ページで、パスワードのリセットと再送信を行うこともできます。
-すべてのキャンペーンスタッフがでサインインでき <a href="https://office.com" target="_blank">https://Office.com</a> ます。
+## <a name="for-staff"></a>スタッフ向け
 
+「ユーザーの追加」の [](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)説明に従ってスタッフを設定します。[ユーザーの追加] ページでパスワードをリセット **して再送信** することもできます。
+すべてのスタッフがサインインできます <a href="https://office.com" target="_blank">https://Office.com</a> 。

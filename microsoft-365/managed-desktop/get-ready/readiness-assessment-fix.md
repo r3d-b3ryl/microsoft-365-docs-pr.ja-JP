@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f1af39a9b2a09908ecf5f5ff15b9fd6d764459d6
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 360cd50556b77f141d1585f42ac08ee5990b4851
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921860"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040522"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -26,7 +26,7 @@ ms.locfileid: "49921860"
 |準備完了     | 登録を完了する前に、何もする必要はありません。        |
 |アドバイザリ    | 登録とユーザーの最適なエクスペリエンスを得る場合は、ツールまたはこの記事の手順に従ってください。 登録 *は* 完了できますが、最初のデバイスを展開する前に、これらの問題を修正する必要があります。        |
 |使用不可能 | *これらの問題を解決しない場合、登録は失敗します。* ツールまたはこの記事の手順に従って解決します。        |
-|Error | 使用している Azure Active Director (AD) ロールに、このチェックを実行するための十分なアクセス許可がない。 |
+|Error | 使用している Azure Active Directory (AD) ロールに、このチェックを実行するための十分なアクセス許可が付与されません。 |
 
 > [!NOTE]
 > このツールによって報告される結果には、設定を実行した特定の時点での設定の状態だけが反映されます。 後で Microsoft Intune、Azure Active Directory、または Microsoft 365 のポリシーに変更を加えた場合、"準備完了" だったアイテムは "準備ができていない" 状態になる可能性があります。 Microsoft マネージド デスクトップの操作で問題が発生しないようにするには、ポリシーを変更する前に、この記事で説明されている特定の設定を確認してください。
@@ -68,15 +68,15 @@ Microsoft マネージド デスクトップに登録するデバイスで使用
 
 ### <a name="conditional-access-policies"></a>条件付きアクセス ポリシー
 
-Azure 組織の条件付きアクセス ポリシー AD Microsoft Manage Desktop Service アカウントをターゲットにすることはできません。
+条件付きアクセス ポリシーによって、Microsoft マネージド デスクトップが Intune と Azure AD で Azure AD 組織 (テナント) を管理AD。
 
 **使用不可能**
 
-すべてのユーザーを対象とする条件付きアクセス ポリシーが少なくとも 1 つあります。 登録時に作成される Microsoft マネージド デスクトップ サービス アカウントの Azure AD グループを含む特定の Azure AD グループを対象とするようにポリシーを変更します。 手順については、「条件付きアクセス [: ユーザーとグループ」を参照してください](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。
+すべてのユーザーを対象とする条件付きアクセス ポリシーが少なくとも 1 つあります。 登録時に、Microsoft マネージド デスクトップ サービス アカウントを関連する条件付きアクセス ポリシーから除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 登録後、Microsoft Endpoint Manager で Microsoft マネージド デスクトップの条件付きアクセス ポリシーを確認できます。 これらのサービス アカウントの詳細については、「標準の運用手順 [」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **アドバイザリ**
 
-条件付きアクセス ポリシーで、モダン **Workplace Service アカウント** Azure アカウントグループを除外ADしてください。 手順については、「条件付きアクセス [の調整」を参照してください](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access)。 モダン **Workplace Service アカウント** Azure ADグループは、登録時にサービス用に作成される動的なグループです。 登録後に、このグループを除外するために戻ってくる必要があります。 これらのサービス アカウントの詳細については、「標準の運用手順 [」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+条件付きアクセス ポリシーを使用すると、Microsoft マネージド デスクトップが Microsoft マネージド デスクトップ サービスを管理しなくる可能性があります。 登録時に、Microsoft マネージド デスクトップ サービス アカウントを関連する条件付きアクセス ポリシーから除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 これらのサービス アカウントの詳細については、「標準の運用手順 [」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **エラー**
 
@@ -113,7 +113,7 @@ Azure 組織の Intune デバイス構成プロファイルAD Microsoft Manage D
 
 **アドバイザリ**
 
-Microsoft マネージド デスクトップ デバイスまたはユーザーが含まれる構成ポリシーが含まれるので、ご確認ください。 手順については [、「Microsoft Intune でカスタム設定を使用してプロファイルを作成する」を参照してください](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
+Microsoft マネージド デスクトップ デバイスまたはユーザーが含まれる構成ポリシーを含めなかったか確認します。 手順については [、「Microsoft Intune でカスタム設定を使用してプロファイルを作成する」を参照してください](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
 
 
 
@@ -148,16 +148,16 @@ ESP の既定のプロファイルは、[アプリとプロファイルの構成
 
 ### <a name="multifactor-authentication"></a>多要素認証
 
-多要素認証を Microsoft マネージド デスクトップ サービス アカウントに適用することはできません。
+多要素認証では、Microsoft マネージド デスクトップが Intune と Azure AD で Azure AD 組織 (テナント) を管理AD。
 
 
 **使用不可能**
 
-すべてのユーザーに割り当てられている条件付きアクセスポリシーに対して、いくつかの多要素認証ポリシーを必要に応じて設定します。 Microsoft マネージド デスクトップ サービス アカウントを含む特定の Azure AD グループを対象とする割り当てを使用するようにポリシーを変更します。 詳細については、「条件付きアクセス ポリシー [と条件付きアクセス](#conditional-access-policies) : すべてのユーザーに MFA を要求する」 [を参照してください](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。
+すべてのユーザーに割り当てられている条件付きアクセスポリシーに対して、いくつかの多要素認証ポリシーを必要に応じて設定します。 登録時に、Microsoft マネージド デスクトップ サービス アカウントを関連する条件付きアクセス ポリシーから除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 これらのサービス アカウントの詳細については、「標準の運用手順 [」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **アドバイザリ**
 
-多要素認証を必要とする条件付きアクセス ポリシーでは **、Modern Workplace -All** Azure ADしてください。 詳細については、「条件付きアクセス ポリシー [と条件付きアクセス](#conditional-access-policies) : すべてのユーザーに MFA を要求する」 [を参照してください](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。 **Modern Workplace -All** Azure AD グループは、Microsoft マネージド デスクトップに登録するときに作成される動的なグループです。そのため、登録後にこのグループを除外するために戻ってくる必要があります。
+条件付きアクセス ポリシーに対して多要素認証が必要になります。条件付きアクセス ポリシーによって、Microsoft マネージド デスクトップで Microsoft マネージド デスクトップ サービスを管理する妨げる可能性があります。 登録時に、Microsoft マネージド デスクトップ サービス アカウントを関連する条件付きアクセス ポリシーから除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 これらのサービス アカウントの詳細については、「標準の運用手順 [」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **エラー**
 
@@ -176,7 +176,7 @@ Windows PowerShellは、Microsoft マネージド デスクトップ デバイ�
 
 **アドバイザリ**
 
-Azure Windows PowerShell内のスクリプトAD Microsoft Manage Desktop デバイスやユーザーを対象としなにされていないことを確認します。 PowerShell スクリプトを、すべてのユーザー、すべてのデバイス、または両方を対象に割り当てない。 Microsoft マネージド デスクトップ デバイスまたはユーザーを含AD Azure AD グループを対象とする Assignment を使用するようにポリシーを変更します。 詳細については、「Intune で [Windows 10 デバイスで PowerShell](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)スクリプトを使用する」を参照してください。
+Azure Windows PowerShellのスクリプトが、Microsoft ADデスクトップ デバイスやユーザーを対象としなにされていないことを確認します。 PowerShell スクリプトを、すべてのユーザー、すべてのデバイス、または両方を対象に割り当てない。 Microsoft マネージド デスクトップ デバイスまたはユーザーが含AD Azure AD グループを対象とする Assignment を使用するようにポリシーを変更します。 詳細については、「Intune で [Windows 10 デバイスで PowerShell](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)スクリプトを使用する」を参照してください。
 
 ### <a name="region"></a>Region
 
@@ -188,10 +188,10 @@ Azure AD組織の地域は、Microsoft マネージド デスクトップでは�
 
 **アドバイザリ**
 
-Azure 組織が位置する 1 つ以上の国AD Microsoft マネージド デスクトップではサポートされていません。 詳細については [、Microsoft マネージド デスクトップでサポートされている地域と言語を参照してください](../service-description/regions-languages.md)。
+組織の Azure ADがある国の 1 つ以上は、Microsoft マネージド デスクトップではサポートされていません。 詳細については [、Microsoft マネージド デスクトップでサポートされている地域と言語を参照してください](../service-description/regions-languages.md)。
 
 
-### <a name="security-baselines"></a>セキュリティベースライン
+### <a name="security-baselines"></a>セキュリティ基本計画
 
 セキュリティ基本ポリシーは、Microsoft マネージド デスクトップ デバイスを対象にしなけずにしてください。
 
@@ -210,7 +210,7 @@ Microsoft マネージド デスクトップ ユーザーに必要なアプリ�
 
 **アドバイザリ**
 
-Microsoft マネージド デスクトップ ユーザーが持つアプリのインベントリを準備する必要があります。 これらのアプリは Intune で展開する必要があるから、既存の Intune アプリの再利用を評価します。 ポータル サイトの使用を検討します (「デバイスに [Intune ポータル](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) サイトをインストールする」と「登録状態ページ (ESP)」を参照)、ユーザーにアプリを配布します。 詳細については [、「Microsoft マネージド](apps.md) デスクトップのアプリ」と [「Autopilot](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)での初回実行時エクスペリエンス」および「登録状態ページ」を参照してください。
+Microsoft マネージド デスクトップ ユーザーが持つアプリのインベントリを準備する必要があります。 これらのアプリは Intune で展開する必要があるから、既存の Intune アプリの再利用を評価します。 ポータル サイトの使用を検討します (「デバイスへの [Intune ポータル](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) サイトのインストールと登録状態ページ (ESP)」を参照して、ユーザーにアプリを配布します。 詳細については [、「Microsoft マネージド](apps.md) デスクトップのアプリ」と [「Autopilot](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)による初回実行時エクスペリエンス」および「登録状態ページ」を参照してください。
 
 Microsoft Endpoint Configuration Manager で Microsoft アカウントの担当者に、Intune に移行する準備ができているアプリや調整が必要なアプリを特定するクエリを求められます。
 
@@ -225,7 +225,7 @@ Windows Hello for Business は無効です。 「Windows Hello for Business ポ�
 
 **アドバイザリ**
 
-Windows Hello for Business がセットアップされていない。 「Windows Hello for Business ポリシーを作成する [」の手順に従って有効にしてください](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)。
+Windows Hello for Business がセットアップされていない。 「Windows Hello for Business ポリシーを作成する」の手順 [に従って有効にしてください](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)。
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10 の更新リング
@@ -238,7 +238,7 @@ Intune の "Windows 10 更新リング" ポリシーは、Microsoft マネージ
 
 **アドバイザリ**
 
-モダン Workplace **Devices -All** Azure AD グループから除外した更新リング ポリシーを確認します。 これらのポリシーに Azure AD ユーザー グループを割り当てた場合は、Microsoft マネージド デスクトップ ユーザー (または同等のグループ) に追加する **Modern Workplace -All** Azure AD グループも除外している更新リング ポリシーを確認します。 手順については、「Intune での [Windows 10 ソフトウェア更新プログラムの管理」を参照してください](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 Modern **Workplace Devices -All** グループと **Modern Workplace - すべての** Azure AD グループは、Microsoft マネージド デスクトップに登録するときに作成されるグループなので、登録後にこのグループを除外するために戻る必要があります。
+モダン Workplace **Devices -All** Azure AD グループから除外した更新リング ポリシーを確認します。 Azure AD ユーザー グループをこれらのポリシーに割り当てた場合は、Microsoft マネージド デスクトップ ユーザー (または同等のグループ) に追加する **Modern Workplace -All** Azure AD グループも除外している更新リング ポリシーを必ず除外してください。 手順については、「Intune での [Windows 10 ソフトウェア更新プログラムの管理」を参照してください](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 Modern **Workplace Devices -All** グループと **Modern Workplace - All** Azure AD グループは、Microsoft マネージド デスクトップに登録するときに作成するグループなので、登録後にこのグループを除外するために戻る必要があります。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory の設定
@@ -247,11 +247,11 @@ Azure Active Directory の設定には [、Azure Portal でアクセスできま
 
 ### <a name="intune-enrollment"></a>Intune 登録
 
-Azure 組織の Windows 10 デバイスAD Intune に自動的に登録できる必要があります。
+組織の Azure AD Windows 10 デバイスは、Intune に自動的に登録できる必要があります。
 
 **アドバイザリ**
 
-MDM ユーザー スコープ **が [なし] ではなく** [ **一部]** または [ **すべて]** に設定されている必要 **があります**。 [一部] を選択した場合は、登録後に戻って、グループの Modern Workplace  **-All** Azure AD グループ、またはすべての Microsoft マネージド デスクトップ ユーザーを対象とする同等のグループを選択します。  [「Microsoft Intune を使用して Windows デバイスの登録をセットアップする」を参照してください](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)。
+MDM ユーザー スコープ **が [なし] ではなく** [ **一部]** または [ **すべて]** に設定されている必要 **があります**。 [一部] を選択した場合は、登録後に戻って、グループの Modern Workplace  **-All** Azure AD グループ、またはすべての Microsoft マネージド デスクトップ ユーザーを対象とする同等のグループを選択します。  [「Microsoft Intune を使用して Windows デバイスの登録をセットアップする」をご覧ください](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)。
 
 
 ### <a name="ad-hoc-subscriptions"></a>アドホック サブスクリプション
@@ -277,7 +277,7 @@ Microsoft マネージド デスクトップを使用するには、多数のラ
 
 **準備ができていない**
 
-Microsoft マネージド デスクトップを使用するために必要なライセンスの一部を持っている必要はありません。 詳細については [、Microsoft マネージド デスクトップテクノロジと](../intro/technologies.md) ライセンスの [詳細を参照してください](prerequisites.md#more-about-licenses)。
+Microsoft マネージド デスクトップを使用するために必要なライセンスの一部を持っている必要はありません。 詳細については [、Microsoft マネージド デスクトップテクノロジとライセンス](../intro/technologies.md) の [詳細を参照してください](prerequisites.md#more-about-licenses)。
 
 
 ### <a name="security-account-names"></a>セキュリティ アカウント名
@@ -300,7 +300,7 @@ Azure AD 組織でこれらの役割に割り当てられているユーザー�
 - セキュリティ オペレーター
 - グローバル閲覧者
 
-詳細については、「役割ベースのアクセス [制御の役割を作成および管理する」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)。
+詳細については、「役割ベースのアクセス [制御の役割の作成と管理」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)。
 
 
 ### <a name="security-default"></a>セキュリティの既定値
@@ -317,12 +317,12 @@ Azure Active Directory のセキュリティの既定値により、Microsoft �
 
 **アドバイザリ**
 
-[SSPR の **選択]** 設定に Microsoft マネージド デスクトップ ユーザーが含まれていますが、Microsoft マネージド デスクトップ サービス アカウントは除外します。 SSPR が有効な場合、Microsoft マネージド デスクトップ サービス アカウントは期待通り動作しません。  
+SSPR の **選択した** 設定に Microsoft マネージド デスクトップ ユーザーが含まれていますが、Microsoft マネージド デスクトップ サービス アカウントは除外します。 SSPR が有効な場合、Microsoft マネージド デスクトップ サービス アカウントは期待通り動作しません。  
 
 
 ### <a name="standard-user-role"></a>標準ユーザー ロール
 
-グローバル管理者とデバイス管理者の Azure AD ロールが割り当てられているユーザー以外に、Microsoft マネージド デスクトップ ユーザーはローカル管理者特権のない標準ユーザーです。 他のすべてのユーザーには、Microsoft マネージド デスクトップ デバイスの起動時に標準のユーザー ロールが割り当てられます。
+グローバル管理者とデバイス管理者の Azure AD ロールが割り当てられているユーザー以外に、Microsoft マネージド デスクトップ ユーザーはローカル管理者特権のない標準ユーザーです。 その他のすべてのユーザーには、Microsoft マネージド デスクトップ デバイスの起動時に標準のユーザー ロールが割り当てられます。
 
 **アドバイザリ**
 
@@ -336,5 +336,4 @@ Microsoft マネージド デスクトップ ユーザーは、登録後に Micr
 
 **アドバイザリ**
 
-特定のドメインに参加している PC でのみ同期を許可 **する設定を使用** している。 この設定は、Microsoft マネージド デスクトップでは機能しません。 この設定を無効にし、代わりに条件付きアクセス ポリシーを使用する OneDrive を設定します。 ヘルプ [については、「条件付きアクセスの展開を計画する](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 」を参照してください。
-
+特定のドメインに **参加している PC でのみ** 同期を許可する設定を使用している。 この設定は、Microsoft マネージド デスクトップでは機能しません。 この設定を無効にし、代わりに条件付きアクセス ポリシーを使用する OneDrive を設定します。 ヘルプ [については、「条件付きアクセスの展開を計画する](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 」を参照してください。

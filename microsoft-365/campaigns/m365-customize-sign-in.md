@@ -1,5 +1,5 @@
 ---
-title: プライバシーと同意の通知を使用したサインインページのカスタマイズ
+title: プライバシーと同意に関する通知を使用してサインイン ページをカスタマイズする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,31 +21,29 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Microsoft 365 のキャンペーンに関するプライバシーおよび同意通知を使用して、サインインページをカスタマイズします。
-ms.openlocfilehash: 27d9ee496290c091c7bcdef4c59e0cc8df46b9b7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Microsoft 365 のプライバシーと同意に関する通知を使用して、サインイン ページをカスタマイズします。
+ms.openlocfilehash: 894686ac785e979b8491cd5943c9a071d3be9ee9
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526960"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044556"
 ---
-# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意の通知を使用してサインインページをカスタマイズする
+# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意に関する通知を使用してサインイン ページをカスタマイズする
 
-政治的なキャンペーンにより、プライバシーと同意の通知をサインインページに追加することによって、法律執行機関がオンライン犯罪者に対して簡単に法的費用をかけることができます。
+ビジネスやキャンペーンを利用すると、サインイン ページにプライバシーと同意通知を追加することで、法執行機関がオンラインの犯罪に対する法的請求を簡単に行う可能性があります。
 
-ブランド化を使用してサインインページをカスタマイズできます。 また、ユーザーがサインインするのに役立つテキストを追加したり、Microsoft 365 へのアクセス権を取得するための法律上の要件や制限を指定したりすることもできます。
+サインイン ページは、ブランド化に合わせてカスタマイズできます。 また、ユーザーがサインインしたり、Microsoft 365 リソースにアクセスするための法的要件や制限を指摘したりするのに役立つテキストを追加できます。
 
-## <a name="design-customization-the-text-on-your-sign-in-page"></a>サインインページでのテキストのデザインのカスタマイズ
+## <a name="design-customization-the-text-on-your-sign-in-page"></a>サインイン ページのテキストをカスタマイズする
 
-サインインページのカスタマイズ可能な要素を更新するには、グローバル管理者である必要があります。詳細については、「[会社ブランド](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)化の記事を追加する」を参照してください。
+サインイン ページでカスタマイズ可能な要素を更新するには、グローバル管理者である必要があります。具体的な手順については、会社のブランド [化に関する記事の追加を参照](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) してください。
 
 更新できる要素は次のとおりです。
 
-- **サインインページのテキスト**
-
-     プライバシーおよび同意ステートメントを簡単に追加できます。
-- サインインページの背景画像
-- バナーロゴ
+- **サインイン ページのテキスト** プライバシーと同意に関する声明を簡単に追加できます。
+- サインイン ページの背景画像
+- バナー ロゴ
 - ユーザー名のヒント
 
-プライバシーおよび同意に関する通知の例については、「[コンピューターの検索と強制」および「犯罪調査での電子証拠の取得](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)」の「付録 a」を参照してください。
+プライバシーおよび同意に関する通知の例については、「コンピューターの検索と押収と犯罪調査での電子証拠の取得」の付録 A を [参照してください](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)。

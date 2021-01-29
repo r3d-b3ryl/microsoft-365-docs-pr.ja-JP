@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: この記事では、サテライトの場所を追加する方法と、Microsoft 365 Multi-Geoのテナントを構成する方法について説明します。
-ms.openlocfilehash: 4276d8ff70fed99e74f2cbab29386c81da06d17b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691782"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040570"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo テナントの構成
 
@@ -28,11 +28,11 @@ Microsoft 365 Multi-Geo 用にテナントを構成する前に、必ず「[Micr
 
 ## <a name="add-the-multi-geo-capabilities-in-your-microsoft-365-plan-to-your-tenant"></a>Microsoft 365 プランの複数地域機能をテナントに追加する
 
-Microsoft 365 Multi-Geo を使用するには、_Microsoft 365 の複数地域機能_プランが必要です。 アカウント チームと連携して、このプランをテナントに追加してください。 アカウント チームが適切なライセンス スペシャリストと連絡を取り、テナントを構成します。
+Microsoft 365 Multi-Geo を使用するには、_Microsoft 365 の複数地域機能_ プランが必要です。 アカウント チームと連携して、このプランをテナントに追加してください。 アカウント チームが適切なライセンス スペシャリストと連絡を取り、テナントを構成します。
 
-_Microsoft 365 の複数地域機能_プランは、ユーザー レベルのサービス プランである点にご注意ください。サテライトの場所でホストするユーザーごとにライセンスが必要です。サテライトの場所にユーザーを追加するたびに、さらにライセンスを追加できます。
+_Microsoft 365 の複数地域機能_ プランは、ユーザー レベルのサービス プランである点にご注意ください。サテライトの場所でホストするユーザーごとにライセンスが必要です。サテライトの場所にユーザーを追加するたびに、さらにライセンスを追加できます。
 
-テナントが _Office 365 の複数地域機能_プランでプロビジョニングされると、OneDrive と SharePoint 管理センターで [**地理的位置**] タブが使用できるようになります。
+テナントが _Office 365 の複数地域機能_ プランでプロビジョニングされると、OneDrive と SharePoint 管理センターで [**地理的位置**] タブが使用できるようになります。
 
 ## <a name="add-satellite-locations-to-your-tenant"></a>サテライトの場所をテナントに追加する
 
@@ -110,7 +110,10 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive のプロビジョニングと PDL の効果
 
-テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーの OneDrive を移動するには、「[OneDrive for Business の地域移動](move-onedrive-between-geo-locations.md)」を参照し、地域間での OneDrive の移動手順に従ってください。 (ユーザーの PDL を設定すると、Exchange メールボックスは自動的に移動します。)
+テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーの OneDrive を移動するには [、「OneDrive for Business 地域移動」を参照してください](move-onedrive-between-geo-locations.md)。
+
+> [!NOTE]
+> PLD が変更され、MailboxRegion がメールボックス データベースの地域の場所コードと一致しなくなった場合、Exchange Online はユーザーのメールボックスを自動的に再配置します。 詳細については、「複数地域環境での Exchange Online メールボックスの管理 [」を参照してください](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)。
 
 テナント内に OneDrive サイトを持っていないユーザーの場合、ユーザーの PDL が会社のサテライトの場所のいずれかと一致すれば、ユーザーの OneDrive は PDL 値に基づいてプロビジョニングされます。
 
