@@ -18,22 +18,22 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security は、Microsoft 365 プランの一部です。
-ms.openlocfilehash: cfd1a68c313d1a1335490e2b8d6938de192fe3f3
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: ec3ffa8879bf14ab3116bbbbf5cf2a1a3fd7c6e6
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877094"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053803"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Basic Mobility and Security または Intune の中から選択する
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) は、特定の Microsoft 365 プランに含まれているスタンドアロン製品ですが、Basic Mobility and Security は Microsoft 365 プランの一部です。 
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/) は、特定の Microsoft 365 プランに含まれているスタンドアロン製品ですが、Basic Mobility and Security は Microsoft 365 プランの一部です。
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Basic Mobility and Security と Intune の可用性
- 
-Basic Mobility と Security と Intune の両方が、次の表で説明するさまざまなプランに含まれています。
 
-| プラン | 基本的なモビリティとセキュリティ | Microsoft Intune |
+Basic Mobility と Security と Intune の両方が、次の表に示すさまざまなプランに含まれています。
+
+| 計画 | 基本的なモビリティとセキュリティ | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 アプリ|はい|いいえ|
 |Microsoft 365 Business Basic|はい|いいえ|
@@ -59,7 +59,7 @@ Basic Mobility と Security と Intune の両方が、次の表で説明する�
 
 ## <a name="differences-in-capabilities"></a>機能の違い
 
-Microsoft Intune と組み込みの Basic Mobility と Security の両方で、組織内のモバイル デバイスを管理することができますが、次の表で説明する機能には主な違いがあります。
+Microsoft Intune と組み込みの Basic Mobility と Security の両方で、組織内のモバイル デバイスを管理することができますが、次の表に示す機能には主な違いがあります。
 
 >[!NOTE]
 >最初に Basic *Mobility と Security* を設定し、次に Microsoft Intune を追加することで、同じ Microsoft 365 Business Standard 組織で Intune と Basic Mobility and Security の両方を使用して、ユーザーとそのモバイル デバイスを管理できます。 これにより、Basic Mobility and Security またはより豊富な機能を持つ Intune ソリューションを選択できます。 Intune の機能を有効にする Intune ライセンスを割り当てる。
@@ -74,7 +74,7 @@ Microsoft Intune と組み込みの Basic Mobility と Security の両方で、�
 |電子メール プロファイル  |デバイスでネイティブメール プロファイルをプロビジョニングします。 |はい|はい|
 |WiFi プロファイル |デバイスでネイティブの WiFi プロファイルをプロビジョニングします。 |いいえ|はい|
 |VPN プロファイル |デバイスでネイティブ VPN プロファイルをプロビジョニングします。 |いいえ|はい|
-|基本的なモビリティとセキュリティのアプリケーション管理  |内部の業務アプリとアプリ ストアからユーザーに展開します。 |いいえ|はい|
+|モビリティとセキュリティの基本的なアプリケーション管理  |内部の業務アプリとアプリ ストアからユーザーに展開します。 |いいえ|はい|
 |モバイル アプリケーション保護  |ユーザーが知っている Office モバイル アプリと業務アプリを使用して企業情報に安全にアクセスできる一方で、企業データに対して承認されたアプリにのみコピー、切り取り、貼り付け、保存などの操作を制限することで、データのセキュリティを確保できます。 デバイスが Basic Mobility and Security に登録されていない場合でも動作します。 「MAM ポリシーを使ったアプリ データの保護」をご覧ください。 |いいえ|はい|
 |管理対象ブラウザー  |Edge アプリを使用して、より安全な Web 閲覧を有効にする。 |いいえ|はい|
 |ゼロ タッチ登録プログラム Autopilot) |多数の企業所有のデバイスを登録し、ユーザーのセットアップを簡素化します。 |いいえ|はい|

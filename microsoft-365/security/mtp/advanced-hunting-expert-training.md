@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7c2ccb12cb096359e558af9e1b4a962a9130be5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: aba0a6ab2c82c038eda8e66890c0c95303dea947
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929636"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053837"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>高度な検索に関する専門的なトレーニングを受け取る
 
@@ -35,15 +35,23 @@ ms.locfileid: "49929636"
 **適用対象:**
 - Microsoft 365 Defender
 
-新しいセキュリティ アナリストや経験豊富な脅威の脅威に関する Web キャスト シリーズである、敵対者を追跡して、高度な検索に関する知識を迅速に高める。 このシリーズでは、独自の高度なクエリを作成するための基本を説明します。 基礎に関する最初のビデオから始めるか、エクスペリエンスのレベルに合った高度なビデオにジャンプします。
+新しいセキュリティ アナリストや経験豊富な脅威の脅威に関する Web キャスト シリーズである Tracking _the adversary_ を使用して、高度な検索に関する知識を迅速に高める。 このシリーズでは、独自の高度なクエリを作成するための基本を説明します。 基礎に関する最初のビデオから始めるか、エクスペリエンスのレベルに合った高度なビデオにジャンプします。
 
 
 | タイトル | 説明 | ウォッチ | クエリ | 
 |--|--|--|--|
-| エピソード 1: KQL の基本 | このエピソードでは、Microsoft 365 Defender での高度な検索の基本について説明します。 利用可能な高度な検索データと基本的な KQL 構文と演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
-| エピソード 2: 参加 | 高度な検索のデータと、テーブルを結合する方法について学習し続ける。 Kusto の既定の参加のニュアンスを理解し、理解 `inner` `outer` `unique` `semi` `innerunique` します。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
+| エピソード 1: KQL の基本 | このエピソードでは、Microsoft 365 Defender での高度な検索の基本について説明します。 利用可能な高度なハンティング データと基本的な KQL 構文と演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| エピソード 2: 参加 | 高度な検索のデータとテーブルを結合する方法について学習し続ける。 Kusto の既定の参加のニュアンスを理解し、理解 `inner` `outer` `unique` `semi` `innerunique` します。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
 | エピソード 3: データの要約、ピボット、および視覚化 | データのフィルター処理、操作、結合を行う方法を学習しました。次に、概要、数値化、ピボット、視覚化を行います。 このエピソードでは、スキーマに追加のテーブルを導入しながら、演算子とさまざまな `summarize` 計算について説明します。 また、分析情報の抽出に役立つグラフにデータセットを変換する方法も学習します。 | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
-| エピソード 4: ハントしましょう。 KQL をインシデント追跡に適用する | このエピソードでは、攻撃者のアクティビティを追跡する方法について説明します。 Kusto の強化された理解と高度なハンティングを使用して、攻撃を追跡します。 サイバーセキュリティの ABC やインシデント対応に適用する方法など、この分野で使用される実際のコツについて学習します。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
+| エピソード 4: ハントしましょう。 KQL をインシデント追跡に適用する | このエピソードでは、攻撃者のアクティビティを追跡する方法について説明します。 Kusto の強化された理解と高度なハンティングを使用して、攻撃を追跡します。 サイバーセキュリティの ABC やインシデント対応に適用する方法など、フィールドで使用される実際のコツについて学習します。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) 
+
+
+*L33TSP3AK* を使ってより専門的なトレーニングを受け取る: Microsoft 365 Defender の高度な捜ティングは、Microsoft 365 Defender で高度な捜ティングを使用してセキュリティ調査を行う技術的な知識と実践的なスキルを拡張するアナリスト向け Web キャスト シリーズです。 
+
+| タイトル | 説明 | ウォッチ | クエリ | 
+|--|--|--|--|
+| エピソード 1  | このエピソードでは、高度な検索クエリを実行する場合のさまざまなベスト プラクティスについて説明します。 説明されているトピックの中には、クエリを最適化する方法、ランサムウェアの高度な検索を使用する方法、JSON を動的型として処理する方法、外部データ演算子を操作する方法があります。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [CSL ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
+
 
 ## <a name="how-to-use-the-csl-file"></a>CSL ファイルの使い方
 エピソードを開始する前に、GitHub 上の対応する [Kusto CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) ファイルにアクセスし、そのコンテンツを高度な検索クエリ エディターにコピーします。 エピソードを見ながら、コピーしたコンテンツを使用して、スピーカーをフォローし、クエリを実行できます。 

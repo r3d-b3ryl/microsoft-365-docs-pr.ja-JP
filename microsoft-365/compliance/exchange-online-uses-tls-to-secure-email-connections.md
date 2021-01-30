@@ -1,5 +1,5 @@
 ---
-title: Exchange Online が TLS を使用して電子メール接続をセキュリティで保護する方法
+title: メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,94 +17,96 @@ ms.assetid: 4cde0cda-3430-4dc0-b489-f2c0736c929f
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: Exchange Online と Microsoft 365 で、トランスポート層セキュリティ (TLS) とフォワード機密性 (FS) を使用して電子メール通信をセキュリティで保護する方法について説明します。 また、Microsoft によって発行された Exchange Online 用の証明書に関する情報も取得します。
-ms.openlocfilehash: 4136303e9c90e377788a7168351a5e126912a93c
-ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
+description: Exchange Online と Microsoft 365 がトランスポート層セキュリティ (TLS) と転送秘密 (FS) を使用して電子メール通信をセキュリティで保護する方法について説明します。 また、Microsoft for Exchange Online によって発行された証明書に関する情報も取得します。
+ms.openlocfilehash: 507a152130113868293d8d08441f298e5f5ae512
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44170966"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058460"
 ---
-# <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Exchange Online が TLS を使用して電子メール接続をセキュリティで保護する方法
+# <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
 
-Exchange Online と Microsoft 365 で、トランスポート層セキュリティ (TLS) とフォワード機密性 (FS) を使用して電子メール通信をセキュリティで保護する方法について説明します。 また、Microsoft によって発行された Exchange Online 用の証明書に関する情報も提供します。
+Exchange Online と Microsoft 365 がトランスポート層セキュリティ (TLS) と転送秘密 (FS) を使用して電子メール通信をセキュリティで保護する方法について説明します。 また、Microsoft for Exchange Online によって発行された証明書に関する情報も提供します。
   
-## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Microsoft 365 および Exchange Online の TLS の基礎
+## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Microsoft 365 および Exchange Online の TLS の基本
 
-トランスポート層セキュリティ (TLS) と、TLS に先立つ SSL は、セキュリティ証明書を使用してコンピューター間の接続を暗号化することによって、ネットワークを介した通信のセキュリティを確保する暗号化プロトコルです。 TLS は ssl (Secure Sockets Layer) に優先され、SSL 3.1 と呼ばれることがよくあります。 Exchange Online の場合、TLS を使用して、exchange サーバーと、社内 Exchange サーバーや受信者のメールサーバーなどの他のサーバーとの間の接続を暗号化します。 接続が暗号化されると、その接続を介して送信されるすべてのデータが暗号化チャネル経由で送信されます。 ただし、TLS で暗号化された接続を介して送信されたメッセージを転送する場合、そのメッセージは必ずしも暗号化されません。 これは、単純に言うと、TLS はメッセージを暗号化せず、接続だけであるからです。
+トランスポート層セキュリティ (TLS) と、TLS に先立つ SSL は、セキュリティ証明書を使用してコンピューター間の接続を暗号化することによって、ネットワークを介した通信のセキュリティを確保する暗号化プロトコルです。 TLS は SSL (Secure Sockets Layer)、SSL 3.1 と呼ばれることが多い。 Exchange Online では、TLS を使用して Exchange サーバー間の接続と、Exchange サーバーと、オンプレミスの Exchange サーバーや受信者のメール サーバーなどの他のサーバー間の接続を暗号化します。 接続が暗号化された後、その接続を介して送信されるデータはすべて、暗号化されたチャネル経由で送信されます。 ただし、TLS で暗号化された接続を介して送信されたメッセージを転送する場合、そのメッセージは必ずしも暗号化されません。 これは、簡単に言って、TLS はメッセージを暗号化しないので、接続だけだからです。
   
-メッセージを暗号化する場合は、メッセージの内容を暗号化する暗号化テクノロジを使用する必要があります (たとえば、Office メッセージの暗号化など)。 Office 365 のメッセージ暗号化オプションの詳細については、「 [office 365 の電子メールの暗号化](email-encryption.md)」および「 [Office 365 MESSAGE encryption (OME)](ome.md) 」を参照してください。 
+メッセージを暗号化する場合は、メッセージの内容を暗号化する暗号化テクノロジを使用する必要があります。たとえば、「message Encryption」Office使用します。 [Office 365](email-encryption.md)のメッセージ暗号化オプションの詳細については、「Office [365 および Office 365 Message Encryption (OME Office)](ome.md)での電子メールの暗号化」を参照してください。 
   
-Microsoft とオンプレミスの組織またはパートナーなどの他の組織との間で通信の安全なチャネルを設定する必要がある場合は、TLS を使用することをお勧めします。 Exchange Online は常に TLS を使用して電子メールをセキュリティで保護しようとしますが、相手が TLS セキュリティを提供していない場合は常にこれを実行することはできません。 *コネクタ*を使用して、オンプレミスのサーバーまたは重要なパートナーへのすべてのメールをセキュリティで保護する方法については、読み続けてください。 
-  
-## <a name="how-exchange-online-uses-tls-between-exchange-online-customers"></a>Exchange online のお客様と exchange online の間で TLS を使用する方法
+Microsoft とオンプレミス組織、またはパートナーなどの別の組織との間の通信のセキュリティで保護されたチャネルを設定する場合は、TLS を使用することをお勧めします。 Exchange Online は常に TLS を使用して電子メールをセキュリティ保護しますが、相手が TLS セキュリティを提供していない場合は常にこれを行う必要があります。 コネクタを使用して、オンプレミス サーバーまたは重要なパートナーへのすべてのメールをセキュリティで保護する方法については、次の記事を  *参照してください*。 
 
-Exchange Online サーバーは、常に、TLS 1.2 を使用してデータセンター内の他の Exchange Online サーバーへの接続を暗号化します。 組織内の受信者にメールを送信すると、その電子メールは、TLS を使用して暗号化された接続を介して自動的に送信されます。 また、他のお客様に送信するすべての電子メールは、TLS を使用して暗号化された接続を介して送信され、Forward 機密性を使用してセキュリティ保護されます。
+お客様にクラス最高の暗号化を提供するために、Microsoft は Office 365 および Office [365 GCC](tls-1-2-in-office-365-gcc.md)でトランスポート層セキュリティ (TLS) バージョン 1.0 および[1.1](tls-1.0-and-1.1-deprecation-for-office-365.md)を廃止しました。 ただし、TLS を使用せずに、暗号化されていない SMPT 接続を引き続き使用できます。 暗号化なしで電子メールを送信はお勧めしません。  
   
-## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Microsoft 365 が Microsoft の365と外部の信頼されたパートナーの間で TLS を使用する方法
+## <a name="how-exchange-online-uses-tls-between-exchange-online-customers"></a>Exchange Online のお客様間での Exchange Online の TLS の使用方法
 
-既定では、Exchange Online は常に便宜的な TLS を使用します。 そのため、Exchange Online は常に最も安全なバージョンの TLS を使用して接続を暗号化しようとし、両方の当事者が同意することが検出されるまで、TLS 暗号のリストを下に移動します。 その受信者宛てのメッセージがセキュリティで保護された接続を介してのみ送信されるように Exchange Online を構成していない限り、受信者の組織が TLS 暗号化をサポートしていない場合、既定ではメッセージは暗号化されずに送信されます。 多くの企業にとって、便宜的な TLS は十分です。 ただし、医療、バンキング、行政機関などのコンプライアンス要件があるビジネスでは、Exchange Online を構成して、TLS を要求するか強制することができます。 手順については、「 [Office 365 でコネクタを使用してメールフローを構成する](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)」を参照してください。
+Exchange Online サーバーは、データセンター内の他の Exchange Online サーバーへの接続を TLS 1.2 で常に暗号化します。 組織内の受信者にメールを送信すると、その電子メールは TLS を使用して暗号化された接続を使用して自動的に送信されます。 また、他のユーザーに送信する電子メールはすべて、TLS を使用して暗号化された接続を使用して送信され、Forward Secrecy を使用してセキュリティ保護されます。
   
-組織と信頼できるパートナー組織との間で TLS を構成する場合、Exchange Online は強制的な TLS を使用して信頼された通信チャネルを作成できます。 強制 TLS では、パートナー組織がメールを送信するために、セキュリティ証明書を使用して Exchange Online に対して認証を行う必要があります。 そのためには、パートナーが自分の証明書を管理する必要があります。 Exchange Online では、コネクタを使用して、受信者の電子メールプロバイダーに到着する前に、承認されていないアクセスから送信されたメッセージを保護します。 コネクタを使用してメールフローを構成する方法については、「 [configure mail flow using コネクタ Using Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)」を参照してください。
-  
-## <a name="tls-and-hybrid-exchange-server-deployments"></a>TLS およびハイブリッド Exchange Server の展開
+## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Microsoft 365 が Microsoft 365 と外部の信頼できるパートナーとの間で TLS を使用する方法
 
-ハイブリッド Exchange 展開を管理している場合、オンプレミスの Exchange サーバーは、Office 365 のみにあるメールボックスの受信者にメールを送信するために、セキュリティ証明書を使用して Microsoft 365 に認証する必要があります。 そのため、オンプレミスの Exchange サーバーの独自のセキュリティ証明書を管理する必要があります。 また、これらのサーバー証明書を安全に保存および維持する必要があります。 ハイブリッド展開での証明書の管理の詳細については、「[ハイブリッド展開の証明書要件](https://technet.microsoft.com/library/hh563848%28v=exchg.150%29.aspx)」を参照してください。
+既定では、Exchange Online は常に便利な TLS を使用します。 つまり、Exchange Online は常に最も安全なバージョンの TLS で接続を暗号化しようとしてから、両者が合意できる TLS 暗号を見つけるまで TLS 暗号の一覧を下に移動します。 Exchange Online を構成して、その受信者へのメッセージがセキュリティで保護された接続を通じてのみ送信される場合を限り、既定では、受信者組織が TLS 暗号化をサポートしない場合、メッセージは暗号化されません。 多くの企業では、見合い的な TLS で十分です。 ただし、医療組織、銀行組織、政府機関などのコンプライアンス要件を持つ企業の場合は、TLS を要求 (強制) する Exchange Online を構成できます。 手順については、「Office [365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)でコネクタを使用してメール フローを構成する」を参照してください。
   
-## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>Office 365 で Exchange Online の強制 TLS をセットアップする方法
+組織と信頼できるパートナー組織の間で TLS を構成する場合、Exchange Online は強制的な TLS を使用して、信頼できる通信チャネルを作成できます。 TLS を強制するには、パートナー組織がメールを送信するためにセキュリティ証明書を使用して Exchange Online に認証する必要があります。 これを行うには、パートナーが独自の証明書を管理する必要があります。 Exchange Online では、受信者の電子メール プロバイダーに到着する前に未承認のアクセスから送信したメッセージを保護するためにコネクタを使用します。 コネクタを使用してメール フローを構成する方法については、「Configure [mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)」を参照してください。
+  
+## <a name="tls-and-hybrid-exchange-server-deployments"></a>TLS およびハイブリッドExchange Server展開
 
-Exchange Online のお客様の場合、すべての送受信メールをセキュリティで保護するために強制的に TLS を使用するには、TLS を必要とする複数のコネクタを設定する必要があります。 ユーザーのメールボックスに送信される電子メール用のコネクタと、ユーザーのメールボックスから送信される電子メール用のコネクタが1つ必要になります。 Office 365 の Exchange 管理センターでこれらのコネクタを作成します。 手順については、「 [Office 365 でコネクタを使用してメールフローを構成する](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)」を参照してください。
+ハイブリッド Exchange 展開を管理している場合、メールボックスが Office 365 内のみにある受信者にメールを送信するには、オンプレミスの Exchange サーバーがセキュリティ証明書を使用して Microsoft 365 に対して認証する必要があります。 その結果、オンプレミスの Exchange サーバー用に独自のセキュリティ証明書を管理する必要があります。 また、これらのサーバー証明書を安全に保存して維持する必要があります。 ハイブリッド展開での証明書の管理の詳細については、「ハイブリッド展開の証明書要件」 [を参照してください](https://technet.microsoft.com/library/hh563848%28v=exchg.150%29.aspx)。
+  
+## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>Office 365 で Exchange Online の強制 TLS を設定する方法
+
+Exchange Online のお客様は、すべての送信および受信電子メールをセキュリティで保護するために TLS を強制的に動作するために、TLS を必要とする複数のコネクタを設定する必要があります。 ユーザー のメールボックスに送信される電子メールには 1 つのコネクタが必要です。もう 1 つのコネクタは、ユーザーのメールボックスから送信された電子メールに必要です。 これらのコネクタは、Office 365 の Exchange 管理センターで作成します。 手順については、「Office [365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)でコネクタを使用してメール フローを構成する」を参照してください。
   
 ## <a name="tls-certificate-information-for-exchange-online"></a>Exchange Online の TLS 証明書情報
 
-次の表では、Exchange Online で使用される証明書情報について説明します。 ビジネスパートナーが電子メールサーバーで強制的に TLS を設定している場合は、この情報をユーザーに提供する必要があります。 セキュリティ上の理由から、証明書は随時変更されることに注意してください。 データセンター内での証明書への更新をロールアウトしました。 新しい証明書は2018年9月3日から有効になっています。
+Exchange Online で使用される証明書情報を次の表に示します。 ビジネス パートナーが電子メール サーバーに強制 TLS を設定している場合は、この情報を提供する必要があります。 セキュリティ上の理由から、証明書は時に変わる点に注意してください。 データセンター内の証明書に対する更新プログラムを展開しました。 新しい証明書は、2018 年 9 月 3 日から有効です。
   
- **2018年9月3日から有効な現在の証明書情報**
+ **2018 年 9 月 3 日から有効な現在の証明書情報**
   
 |**Attribute**|**値**|
 |:-----|:-----|
 |証明機関のルート発行者  <br/> |GlobalSign ルート CA – R1 <br/> |
-|証明書の名前  <br/> |mail.protection.outlook.com  <br/> |
+|証明書名  <br/> |mail.protection.outlook.com  <br/> |
 |組織  <br/> |Microsoft Corporation  <br/> |
 |組織単位  <br/> |  <br/> |
 |証明書キーの強度  <br/> |2048  <br/> |
    
- **非推奨の証明書情報は、2018年9月3日まで有効です。**
+ **2018 年 9 月 3 日まで有効な非推奨の証明書情報**
   
-移行を円滑に行うために、しばらくの間、参照用の古い証明書情報を引き続き提供する予定です。ただし、現時点では現在の証明書情報を使用する必要があります。
+スムーズな移行を実現するために、引き続き参照用の古い証明書情報を提供しますが、今後は現在の証明書情報を使用する必要があります。
   
 ****
 
 |**Attribute**|**値**|
 |:-----|:-----|
 |証明機関のルート発行者  <br/> |Baltimore CyberTrust Root  <br/> |
-|証明書の名前  <br/> |mail.protection.outlook.com  <br/> |
+|証明書名  <br/> |mail.protection.outlook.com  <br/> |
 |組織  <br/> |Microsoft Corporation  <br/> |
 |組織単位  <br/> |Microsoft Corporation  <br/> |
 |証明書キーの強度  <br/> |2048  <br/> |
    
 ## <a name="prepare-for-the-new-exchange-online-certificate"></a>新しい Exchange Online 証明書の準備
 
-新しい証明書は、Exchange Online で使用される以前の証明書から、別の証明機関 (CA) によって発行されます。 そのため、新しい証明書を使用するためにいくつかの操作を実行する必要があります。
+新しい証明書は、Exchange Online で使用されている以前の証明書とは異なる証明機関 (CA) によって発行されます。 その結果、新しい証明書を使用するためにいくつかの操作を実行する必要がある場合があります。
 
-新しい証明書では、証明書の検証の一環として、新しい CA のエンドポイントに接続する必要があります。 これを怠ると、メールフローが悪影響を受けてしまう可能性があります。 メールサーバーに特定の宛先のみが接続できるようにするファイアウォールを使用してメールサーバーを保護する場合は、サーバーが新しい証明書を検証できるかどうかを確認する必要があります。 サーバーが新しい証明書を使用できることを確認するには、次の手順を実行します。
+新しい証明書では、証明書の検証の一環として、新しい CA のエンドポイントに接続する必要があります。 そうしない場合、メール フローに悪影響が及ぶ可能性があります。 メール サーバーが特定の宛先にのみ接続できるファイアウォールでメール サーバーを保護する場合は、サーバーが新しい証明書を検証できるのか確認する必要があります。 サーバーが新しい証明書を使用できると確認するには、次の手順を実行します。
 
-1. Windows PowerShell を使用してローカルの Exchange サーバーに接続し、次のコマンドを実行します。  
+1. 次のコマンドを使用Exchange Serverローカル Windows PowerShell接続し、次のコマンドを実行します。  
   `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
-2. 表示されるウィンドウで、[**取得**] を選択します。
-3. ユーティリティがチェックを完了すると、状態が返されます。 状態が **[OK]** と表示されている場合、メールサーバーは新しい証明書を正常に検証できます。 それ以外の場合は、接続が失敗する原因を特定する必要があります。 多くの場合、ファイアウォールの設定を更新する必要があります。 アクセスする必要があるエンドポイントの完全なリストは次のとおりです。
+2. 表示されるウィンドウで、[取得] を **選択します**。
+3. ユーティリティがチェックを完了すると、状態が返されます。 状態が **[OK]** と表示された場合、メール サーバーは新しい証明書を正常に検証できます。 失敗した場合は、接続が失敗する原因を特定する必要があります。 ほとんどの場合、ファイアウォールの設定を更新する必要があります。 アクセスする必要があるエンドポイントの完全な一覧は次のとおりです。
     - ocsp.globalsign.com
      - crl.globalsign.com
      - secure.globalsign.com   
 
-通常、Windows Update を使用してルート証明書の更新を自動的に受信します。 ただし、一部の展開では、これらの更新が自動的に実行されないようにするための追加のセキュリティがあります。 Windows Update でルート証明書を自動更新できない、ロックダウンされたこれらの展開では、次の手順を実行して、正しいルート CA 証明書がインストールされていることを確認する必要があります。
-1.  Windows PowerShell を使用してローカルの Exchange サーバーに接続し、次のコマンドを実行します。  
+通常、ルート証明書の更新プログラムは Windows Update を通じて自動的に受信します。 ただし、一部の展開では、これらの更新プログラムが自動的に実行されるのを防ぐ追加のセキュリティが設定されています。 Windows Update がルート証明書を自動的に更新できないロックダウンされた展開では、次の手順を実行して、正しいルート CA 証明書がインストールされていることを確認する必要があります。
+1.  次のコマンドを使用Exchange Serverローカル Windows PowerShell接続し、次のコマンドを実行します。  
   `certmgr.msc`
-2. [**信頼されたルート証明機関/証明書**] の下で、新しい証明書が表示されていることを確認します。
+2. [ **信頼されたルート証明機関/証明書**] で、新しい証明書が一覧に表示されます。
 
-## <a name="get-more-information-about-tls-and-microsoft-365"></a>TLS と Microsoft 365 の詳細情報を取得する
+## <a name="get-more-information-about-tls-and-microsoft-365"></a>TLS と Microsoft 365 の詳細を取得する
 
-サポートされている暗号スイートの一覧については、[暗号化に関する技術リファレンスの詳細](technical-reference-details-about-encryption.md)を参照してください。
+サポートされている暗号スイートの一覧については、暗号化に関する [テクニカル リファレンスの詳細を参照してください](technical-reference-details-about-encryption.md)。
   
 [パートナー組織とのセキュリティで保護されたメール フロー用のコネクタを設定する](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx)
   

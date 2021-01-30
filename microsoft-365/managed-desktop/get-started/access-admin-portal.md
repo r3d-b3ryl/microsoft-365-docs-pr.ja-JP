@@ -1,7 +1,7 @@
 ---
 title: 管理ポータルにアクセスする
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
-description: 管理ポータルへのアクセスの制御など、管理ポータルを検索して使用する方法。
+description: 管理ポータルを検索して使用する方法 (管理ポータルへのアクセスの制御を含む)。
 ms.service: m365-md
 ms.author: jaimeo
 author: jaimeo
@@ -10,19 +10,19 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 09427d163b8b5e47911b6df26e5acf0fcd1f3524
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c2a5b7f837d6c43369301820019732ca3aef83bf
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841353"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053849"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルにアクセスする
 
-Microsoft マネージド デスクトップ サービスへのゲートウェイは、Microsoft [Azure ポータルです](https://portal.azure.com)。 Azure Portal エクスペリエンス全般の使用とカスタマイズの詳細については、Azure ポータルのドキュメント [を参照してください](https://docs.microsoft.com/azure/azure-portal/)。 プレビューで利用できます。Microsoft Endpoint Manager で Microsoft マネージド デスクトップ [を見つける方法もあります](https://endpoint.microsoft.com/)。 このポータルのデバイス管理機能に詳しい場合は、Microsoft Endpoint Manager のドキュメント [を参照してください](https://docs.microsoft.com/mem/)。
+Microsoft マネージド デスクトップ サービスへのゲートウェイは [、Microsoft Endpoint Manager です](https://endpoint.microsoft.com/)。 このポータルのデバイス管理機能に詳しい場合は、Microsoft Endpoint Manager のドキュメント [を参照してください](https://docs.microsoft.com/mem/)。
 
 > [!NOTE]
-> ただし、Microsoft エンドポイント マネージャーまたは[Azure ポータル](https://portal.azure.com)で[Microsoft](https://endpoint.microsoft.com/)マネージド デスクトップにアクセスする場合は、次のブラウザーがサポートされています。
+> [Microsoft Endpoint Manager では、](https://endpoint.microsoft.com/)次のブラウザーがサポートされています。
 > - Microsoft Edge (最新バージョン)
 > - Microsoft Internet Explorer 11
 > - Safari (最新バージョン、Mac のみ)

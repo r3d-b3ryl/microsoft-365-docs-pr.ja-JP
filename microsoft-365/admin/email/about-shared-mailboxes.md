@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスは、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。 共有メールボックスを作成する前に知る必要がある情報について説明します。
-ms.openlocfilehash: 744c4fece24cf1fa5ee7259a0d722ff123ff2664
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c8d29ac2dfe8670181064e61a7fba145ae00fed1
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926512"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058449"
 ---
 # <a name="about-shared-mailboxes"></a>共有メールボックスについて
 
@@ -51,13 +51,17 @@ ms.locfileid: "49926512"
 
 - **管理者ロール:** グローバル管理者または Exchange 管理者の役割を持つユーザーは、共有メールボックスを作成できます。
 
-- **サブスクリプションの要件:** 共有メールボックスを作成するには、電子メールを含む Microsoft 365 for Business プラン (Exchange Online サービス) をサブスクライブする必要があります。 Microsoft 365 Apps for business サブスクリプションには電子メールは含まれます。 Microsoft 365 Business Standard には電子メールが含まれます。
+- **サブスクリプションの要件:** 共有メールボックスを作成するには、電子メール (Exchange Online サービス) を含む Microsoft 365 for Business プランをサブスクライブする必要があります。 Microsoft 365 Apps for business サブスクリプションには電子メールは含まれます。 Microsoft 365 Business Standard には電子メールが含まれます。
 
-- **サインイン:** 共有メールボックスは、関連付けられたユーザー アカウントによる直接サインインを目的としていない。 共有メールボックス アカウントのサインインは常にブロックし、ブロックする必要があります。
+- **サインイン:** 共有メールボックスは、関連付けられたユーザー アカウントによる直接サインインを意図したのではありません。 共有メールボックス アカウントのサインインは常にブロックし、ブロックする必要があります。
 
 - **ユーザーが多すぎます。** 共有メールボックスに同時にアクセスする指定ユーザーが多すぎる場合、このメールボックスへの接続が断続的に失敗する可能性があります。 この場合は、ユーザーの数を減らすか、Microsoft 365 グループやパブリック フォルダーなど、異なるワークロードを使用する方法を検討できます。
 
 - **メッセージの削除:** 残念ながら、ユーザーが共有メールボックス内のメッセージを削除することはできません。 これを回避する唯一の方法は、共有メールボックスの代わりに Microsoft 365 グループを作成する方法です。 Outlook のグループは、共有メールボックスに似たものがあります。 2 つの比較については、「グループの比較」 [を参照してください](../create-groups/compare-groups.md)。 グループの詳細については、「グループの詳細 [」を参照してください](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+
+
+> [!NOTE]
+> 共有メールボックスにアクセスするには、ユーザーは Exchange Online ライセンスを持っている必要がありますが、共有メールボックスには別のライセンスは必要とされません。 ライセンスがない場合は、共有メールボックスは 50 GB に制限されます。 サイズ制限を 100 GB に増やすには、Exchange Online プラン 2 のライセンス、または Exchange Online Archiving アドオンのライセンス付きの Exchange Online プラン 1 のライセンスを共有メールボックスに割り当てる必要があります。 これにより、無制限のアーカイブ記憶域を得るための自動拡張アーカイブを有効にできるようにもなります。 同様に、共有メールボックスに訴訟ホールドをかける場合は、Exchange Online プラン 2 のライセンス、または Exchange Online Archiving アドオン ライセンス付帯のExchange Online Plan 1 ライセンスが共有メールボックスで必要です。 microsoft Defender for Office 365、Advanced eDiscovery、自動アイテム保持ポリシーなどの高度な機能を適用する場合は、それらの機能に対して共有メールボックスのライセンスが必要です。
 
 ## <a name="related-articles"></a>関連記事
 
