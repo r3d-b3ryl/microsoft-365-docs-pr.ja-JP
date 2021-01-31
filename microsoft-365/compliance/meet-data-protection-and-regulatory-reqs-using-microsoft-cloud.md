@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: データ保護と規制の要件を満たすために、Microsoft Service Trust Portal のコンプライアンス マネージャーの使用方法をご説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac0cd758717161e3b5cf727dd478d1e06f0d6375
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: f527aae2d36e392ecd646d48263a01b20a0785e8
+ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682810"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50050401"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft コンプライアンス マネージャー (クラシック)
 
 > [!IMPORTANT]
-> **法令遵守管理は、 [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com/)で使用できるようになりました。コンプライアンス管理者 (クラシック) をまだ使用しているお客様には、高度な操作性や更新されたコントロールマッピングを活用できるように、新しいコンプライアンスマネージャーに移行することを強くお勧めします。詳細については、「 [コンプライアンス管理者向けのドキュメント](compliance-manager.md) を参照して、Microsoft 365 コンプライアンスの管理センターで新しいコンプライアンスマネージャーのセットアップをして、使用を開始してください。**
+> **コンプライアンス マネージャー (クラシック) は、Microsoft Service Trust Portal からまもなく削除されます。** [Microsoft 365 コンプライアンス センターの新しいコンプライアンス マネージャー](https://compliance.microsoft.com/)に切り替えることをお勧めします。これにより、ユーザー エクスペリエンスが向上し、コントロール マッピングが更新されます。 クラシック バージョンの評価をお持ちのお客様は、新しいコンプライアンス マネージャーで新しい評価を作成する必要があります。 評価、管理、およびその他のデータを含む既存のデータは、新しいコンプライアンス マネージャーに転送されません。 [切り替えに関する詳細情報](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal)
 
 *コンプライアンス マネージャーは、21Vianet が運用している Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High)、Office 365 Department of Defense では使用できません。*
 
