@@ -17,21 +17,24 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681410"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055495"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>手順 5.  リモートワーカー向けの生産性向上アプリとサービスを展開する
 
 生産性を高めるには、リモートワーカー間のコミュニケーションとコラボレーションが重要です。 会議、音声やテキストでのチャット、新しいコンテンツの作成と情報やファイルの共有、メールのやりとり、予定表やタスクの管理を行う必要があります。 Microsoft 365 は、次の主要な機能すべてをクラウドベースのサービスで実現します。
 
-- 離れて作業をしながら密接な連携を維持するには、Microsoft Teams を使用します。Microsoft Teams は、組織、部署、小規模なチームや個人のユーザーに対して、会議、チャット、ファイル ストレージに必要なコミュニケーションの共通のハブを提供します。 
-- メールのやりとりや、予定表、連絡先、タスクの管理には、Exchange Online と Outlook クライアントを使用します。
-- ファイルを保存し、共同で作業するには、SharePoint とOneDrive を使用します。 これらは Web ブラウザーや Teams 内で使用できます。
-- 新しいコンテンツの作成や、既存のコンテンツに対する共同作業を行うため、Microsoft 365 アプリは、ローカル コンピューターにインストールされているバージョンの Word、PowerPoint、Excel、Outlook で、機能とセキュリティに関する更新プログラムを継続的に受け取ります。
+| IT 関数 | Microsoft 365 コンポーネント | 説明 |
+|:-------|:-----|:-------|
+| メール サービス | Exchange Online | Outlook クライアントを使用した、メール交換、および予定表、連絡先、タスクの管理。 |
+| 組織のチャット、ボイス オーバー IP (VOIP)、およびチーム ベースのコラボレーション | Microsoft Teams | 組織、部門、および小規模なチームや個人向けの会議、チャット、ファイル ストレージの共通のコミュニケーション ハブを使用して、離れて作業をしながら密接な連携を維持します。 |
+| イントラネット サイト、ドキュメント コラボレーション | SharePoint および OneDrive | Web ブラウザ内または Teams 内のファイルを保存して共同作業します。 |
+| デスクトップおよびモバイル デバイスの Office アプリケーション | Microsoft 365 Apps | ローカル コンピューターにインストールされ、継続的な機能とセキュリティの更新を受け取るバージョンの Word、PowerPoint、Excel、および Outlook を使用して、新しいコンテンツの作成や、既存のコンテンツに対しての共同作業を行います。 |
+||||
 
 ![Teams、Outlook、SharePoint、OneDrive、Microsoft 365 アプリを使用して生産性を維持する](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
@@ -100,7 +103,7 @@ Microsoft 365 アプリは、従業員がいつでもどこからでもシーム
 - [Office と Microsoft 365 についてユーザーをトレーニングする](https://support.microsoft.com/office/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [Web 用 Office を使用](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [![手順 6: ユーザーを訓練し、その成功を監視する](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
 

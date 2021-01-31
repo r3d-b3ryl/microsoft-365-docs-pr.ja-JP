@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: リモート ワーカーの生産性を最大化して、サーバー、データ、およびクラウドへの安全なアクセスを維持するために、Microsoft 365 のすべての機能が有効になっていることを確認します。
-ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: aa72ba0c47acdd507bf86a082c9b4c2a87e3f1ef
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616358"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055521"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -37,11 +37,16 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 ![Microsoft 365 でリモート ワーカーを支援する](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-このビデオでは、展開プロセスの手順の概要について説明します。
+>[!Note]
+>Microsoft 365 を初めて使用する場合は、[こちらのリソース](https://www.microsoft.com/microsoft-365) を参照してください。
+>
+
+このビデオでは、展開プロセスの概要について説明します。
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-このソリューションは、次の主要な機能を提供します。
+オンサイトおよびクラウド ベースのインフラストラクチャを管理して従業員の生産性を向上させる IT プロフェッショナル向けに、このソリューションは次の主要な機能を提供します。
 
 - 接続しました
 

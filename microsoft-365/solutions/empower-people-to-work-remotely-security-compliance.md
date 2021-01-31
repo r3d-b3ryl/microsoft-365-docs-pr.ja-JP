@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティとコンプライアンスのサービスを使用して、リモート ワーカー向けにお客様のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8248fdbaa96a651ad9ff4548ce0867bd7c2988eb
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845230"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055494"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>手順 3: リモート ワーカーのためのセキュリティとコンプライアンスの展開
 
@@ -47,9 +47,9 @@ ms.locfileid: "48845230"
 
 Microsoft 365 のこれらのセキュリティ機能を使用して、アプリケーションやデータを保護します。
 
-| 機能 | 説明 | ライセンス |
+| 機能 | なぜそれが必要なのか | ライセンス |
 |:-------|:-----|:-------|
-| Microsoft Defender for Office 365 | メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 <br><br> Microsoft Defender for Office 365 はアプリからのシグナルを収集して分析し、セキュリティ リスクの検出、調査、修復を行い、メール メッセージ、リンク (URL)、共同作業のツールによってもたらされる悪意のある脅威から組織を保護します。 | Microsoft 365 E3 または E5 | 
+| Microsoft Defender for Office 365 | メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 <br><br> Microsoft Defender for Office 365 はアプリからのシグナルを収集して分析し、セキュリティ リスクの検出、調査、修復を行い、メール メッセージ、リンク (URL)、共同作業のツールによってもたらされる悪意のある脅威から組織を保護します。 また、標準および厳格なセキュリティ体制のための自動化されたテナント構成評価および構成ツールも提供します。 | Microsoft 365 E3 または E5 | 
 | マルウェア対策 | Microsoft Defender ウイルス対策と Device Guard は、デバイスベースのマルウェア対策を提供します。 <br><br> SharePoint Online では、既知のマルウェアのファイル アップロードを自動的にスキャンします。 ‎<br><br> Exchange Online Protection (EOP) は、クラウド メールボックスを保護します。 | Microsoft 365 E3 または E5 |
 | Microsoft Defender for Endpoint | サイバー攻撃の脅威やデータ侵害から組織のデバイスを保護し、高度な脅威を検出し、調査し、それらに対応します。 | Microsoft 365 E5 |
 | Cloud App Security | Microsoft 365 やその他の SaaS アプリなどのクラウドベースのサービスを攻撃から保護します。 | Microsoft 365 E5 または個別のクラウド アプリのセキュリティ ライセンス |
@@ -62,7 +62,7 @@ Microsoft 365 のこれらのセキュリティ機能を使用して、アプリ
 
 Microsoft 365 のこれらのコンプライアンス機能を使用して、内部ポリシーや規制要件に準拠します。
 
-| 機能 | 説明 | ライセンス |
+| 機能 | なぜそれが必要なのか | ライセンス |
 |:-------|:-----|:-------|
 | 秘密度ラベル | メール、ファイル、サイトに様々な保護レベルを持ったラベルを適用することで、ユーザーの生産性や共同作業機能を妨げることなく、組織のデータを分類して保護します。 | Microsoft 365 E3 または E5 |
 | データ損失防止 (DLP) | 内部や外部での個人情報を含むデータの共有などの危険な共有、偶発的な共有、不適切な共有を検出し、警告し、ブロックします。 | Microsoft 365 E3 または E5 | 
@@ -89,7 +89,7 @@ Microsoft 365 のこれらのコンプライアンス機能を使用して、内
   - 情報漏洩を防止するためのポリシー
   - 地域のデータ規制への準拠
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [![手順 4: デバイス、PC、その他のエンドポイントを管理する](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
