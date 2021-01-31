@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for campaigns
+title: Microsoft 365 for smaller businesses and campaigns
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -24,68 +24,78 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Microsoft 365 for campaigns
-ms.openlocfilehash: 57997af310eb07c61b5f2cdb03f24b5e443d6e2e
-ms.sourcegitcommit: 371249d3dde12092b820cd11ed3e02b31e88636a
+description: 小さな企業、独立開業、政治キャンペーンなどを含む中小企業向けの Microsoft 365 ガイダンス。
+ms.openlocfilehash: 0f7b441a4280ba9eaaf5f1f673d1ccf43a0a5350
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48897295"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044719"
 ---
-<a name="microsoft-365-for-campaigns"></a><span data-ttu-id="e5fff-103">Microsoft 365 for Campaigns</span><span class="sxs-lookup"><span data-stu-id="e5fff-103">Microsoft 365 for Campaigns</span></span>
+<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a><span data-ttu-id="d1d6e-103">Microsoft 365 for smaller businesses and campaigns</span><span class="sxs-lookup"><span data-stu-id="d1d6e-103">Microsoft 365 for smaller businesses and campaigns</span></span>
 ===========================
 
-<span data-ttu-id="e5fff-104">現代の社会において、データと通信を安全に保つことは、とりわけ政治キャンペーン、医療および法務、および他の多くのビジネスの分野において重要な事項です。</span><span class="sxs-lookup"><span data-stu-id="e5fff-104">In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses.</span></span> <span data-ttu-id="e5fff-105">Microsoft 365 for Campaigns には、お客様とお客様のデータを保護するための一連の推奨事項が付属しています。</span><span class="sxs-lookup"><span data-stu-id="e5fff-105">Microsoft 365 for Campaigns comes with a set of recommendations designed to help protect you and your data.</span></span> <span data-ttu-id="e5fff-106">このライブラリには、キャンペーンにかかわりなく、推奨される環境をセットアップして使用するためのヘルプが用意されています。</span><span class="sxs-lookup"><span data-stu-id="e5fff-106">This library includes help for setting up and using this recommended environment, even if you're not a campaign.</span></span>
+<span data-ttu-id="d1d6e-104">現代の社会において、データと通信を安全に保つことは、とりわけ医療および法務実務、政治キャンペーン、および他の多くの小規模ビジネスの分野において重要な事項です。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-104">In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses.</span></span> <span data-ttu-id="d1d6e-105">このソリューションでは、お客様とお客様のデータを保護するための一連の推奨事項を提供しています。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-105">This solution provides a set of recommendations designed to help protect you and your data.</span></span> <span data-ttu-id="d1d6e-106">このライブラリには、ビジネスの種類にかかわらず、推奨される環境をセットアップして使用するためのヘルプが用意されています。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-106">This library includes help for setting up and using this recommended environment, no matter your business type.</span></span>
+
+
+![Microsoft 365 Business Premium は、生産性ツール、共同作業ツール、ファイル ストレージ、メール、デバイス、ID を保護します](../media/M365-WhatIsIt-SecurityFocus.png)
+
+<span data-ttu-id="d1d6e-108">この構成には、ビジネスを保護するための生産性、共同作業、ファイル ストレージ、メール、デバイス、および ID に関する以下のガイダンスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-108">This configuration includes the following guidance for productivity, collaboration, file storage, email, devices, and identity to protect your business:</span></span>
+
+| <span data-ttu-id="d1d6e-109">保護の対象</span><span class="sxs-lookup"><span data-stu-id="d1d6e-109">Protection for</span></span> | <span data-ttu-id="d1d6e-110">説明</span><span class="sxs-lookup"><span data-stu-id="d1d6e-110">Description</span></span> | <span data-ttu-id="d1d6e-111">リンク</span><span class="sxs-lookup"><span data-stu-id="d1d6e-111">Links</span></span> |
+| ----- | ----- | ----- | ----- |
+|<span data-ttu-id="d1d6e-112">メール</span><span class="sxs-lookup"><span data-stu-id="d1d6e-112">Email</span></span> | <span data-ttu-id="d1d6e-113">多要素認証、ATP 高度なフィッシング保護、ATP の安全なリンク機能、安全な添付ファイルを使用し、機密情報には暗号化されたメールを使用します。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-113">Use multi-factor authentication, and ATP Advanced Phishing Protection, and ATP Safe Links and Safe Attachments, and use encrypted email for sensitive information.</span></span>| <span data-ttu-id="d1d6e-114">[多要素認証のセットアップ](m365-campaigns-multifactor-authenication.md)、[フィッシング攻撃からの保護](m365-campaigns-phishing-and-attacks.md)、[機密性の高いメールの暗号化またはラベル付け](send-encrypted-email.md)</span><span class="sxs-lookup"><span data-stu-id="d1d6e-114">[Set up multi-factor authentication](m365-campaigns-multifactor-authenication.md), [Protect against phishing attacks](m365-campaigns-phishing-and-attacks.md), [Encrypt or label your sensitive email](send-encrypted-email.md)</span></span> |
+|<span data-ttu-id="d1d6e-115">iOS および Android デバイス</span><span class="sxs-lookup"><span data-stu-id="d1d6e-115">iPhones and Android devices</span></span> |<span data-ttu-id="d1d6e-116">多要素認証を使用し、Microsoft のモバイル アプリをセットアップし、PIN を要求する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-116">Use multi-factor authentication, and set up Microsoft mobile apps, and require a PIN</span></span> | <span data-ttu-id="d1d6e-117">[多要素認証をセットアップする](m365-campaigns-multifactor-authenication.md)、[モバイル デバイスをセットアップする](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)</span><span class="sxs-lookup"><span data-stu-id="d1d6e-117">[Set up multi-factor authentication](m365-campaigns-multifactor-authenication.md), [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)</span></span>|
+|<span data-ttu-id="d1d6e-118">Bring-your-own-devices (BYOD) Mac および Windows 10 PC</span><span class="sxs-lookup"><span data-stu-id="d1d6e-118">Bring-your-own-devices (BYOD) Macs and Windows 10 PCs</span></span> |<span data-ttu-id="d1d6e-119">Office や OS を最新の状態に保ち、セキュリティ機能を有効にします。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-119">Keep Office up to date, keep operating systems updated, and enable security features.</span></span> | [<span data-ttu-id="d1d6e-120">非管理対象の Windows 10 PC と Mac を保護する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-120">Protect unmanaged Windows 10 PCs and Macs</span></span>](m365-campaigns-protect-pcs-macs.md) |
+|<span data-ttu-id="d1d6e-121">ファイルを安全に保存して共有する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-121">Storing and sharing files securely</span></span> | <span data-ttu-id="d1d6e-122">Microsoft Teams、OneDrive、SharePoint、Microsoft Stream からファイルやビデオを共有し、機密データを保護します。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-122">Share files and videos from Microsoft Teams, OneDrive, SharePoint, and Microsoft Stream, and protect sensitive data.</span></span>| [<span data-ttu-id="d1d6e-123">ファイルやビデオを共有する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-123">Share files and videos</span></span>](share-files-and-videos.md) |
+|<span data-ttu-id="d1d6e-124">管理された Windows 10 デバイス</span><span class="sxs-lookup"><span data-stu-id="d1d6e-124">Managed Windows 10 devices</span></span> |<span data-ttu-id="d1d6e-125">管理されたデバイスを主要なスタッフに提供し、これらのデバイスを保護します。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-125">Use managed devices for key staff and secure these devices.</span></span> | [<span data-ttu-id="d1d6e-126">管理されたデバイスをセットアップする</span><span class="sxs-lookup"><span data-stu-id="d1d6e-126">Set up managed devices</span></span>](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
+
+<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a><span data-ttu-id="d1d6e-127">Microsoft 365 Business Premium の推奨セキュリティ構成</span><span class="sxs-lookup"><span data-stu-id="d1d6e-127">A recommended security configuration for Microsoft 365 Business Premium</span></span>
+------------------------------------
+
+<span data-ttu-id="d1d6e-128">この Microsoft 365 Business Premium の推奨される安全な構成は、お客様に以下のサービスを提供します。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-128">This recommended secure configuration for Microsoft 365 Business Premium lets you:</span></span>
+
+- <span data-ttu-id="d1d6e-129">信頼できるビジネス生産性と共同作業ツール (Outlook、Word、Excel、その他の Office 製品など) に依存します。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-129">Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.</span></span>
+- <span data-ttu-id="d1d6e-130">iOS、Android、Windows 10 のすべてのデバイス上の作業ファイルを、管理が容易なエンタープライズ レベルのセキュリティで保護します。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-130">Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.</span></span>
+- <span data-ttu-id="d1d6e-131">ユーザー アカウントと ID に追加の保護を適用します。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-131">Apply extra protection for user accounts and identity.</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
-<a name="what-is-microsoft-365-for-campaigns"></a><span data-ttu-id="e5fff-107">Microsoft 365 for Campaigns とは?</span><span class="sxs-lookup"><span data-stu-id="e5fff-107">What is Microsoft 365 for Campaigns?</span></span>
-------------------------------------
+<span data-ttu-id="d1d6e-132">米国の連邦および一部の州での選挙キャンペーンは、Microsoft 365 Business Premium の Microsoft 365 for Campaigns サービスの[特別価格](get-microsoft-365-campaigns.md)の対象となりますが、Business Premium プランを採用している組織は、このガイダンスを利用して強化されたセキュリティを構成し、安全に共同作業を行う方法について学ぶことができます。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-132">While federal and some state election campaigns in the United States qualify for [special pricing](get-microsoft-365-campaigns.md) for the Microsoft 365 for Campaigns offering of Microsoft 365 Business Premium, any organization with the Business Premium plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.</span></span>
 
-<span data-ttu-id="e5fff-108">これは、推奨されている Microsoft 365 Business Premium を含む安全な構成です。次のようなことができるようになります。</span><span class="sxs-lookup"><span data-stu-id="e5fff-108">It's a recommended secure configuration that includes Microsoft 365 Business Premium so that you can:</span></span>
+<span data-ttu-id="d1d6e-133">このライブラリの内訳は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-133">This library includes the following:</span></span>
 
-- <span data-ttu-id="e5fff-109">信頼できるビジネス生産性と共同作業ツール (Outlook、Word、Excel、その他の Office 製品など) に依存します。</span><span class="sxs-lookup"><span data-stu-id="e5fff-109">Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.</span></span>
-- <span data-ttu-id="e5fff-110">iOS、Android、Windows 10 のすべてのデバイス上の作業ファイルを、管理が容易なエンタープライズ レベルのセキュリティで保護します。</span><span class="sxs-lookup"><span data-stu-id="e5fff-110">Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.</span></span>
-- <span data-ttu-id="e5fff-111">ユーザー アカウントと ID に追加の保護を適用します。</span><span class="sxs-lookup"><span data-stu-id="e5fff-111">Apply extra protection for user accounts and identity.</span></span>
+- <span data-ttu-id="d1d6e-134">セキュリティを強化する際に規範となるセットアップ ガイダンス。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-134">Prescriptive setup guidance for adding increased security.</span></span>
+- <span data-ttu-id="d1d6e-135">セキュリティで保護されたアクセスができるよう、デバイスをセットアップするためのヘルプ。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-135">Help for users to setup devices for secure access.</span></span>
+- <span data-ttu-id="d1d6e-136">セキュイティで保護された共同作業および共有を行う方法を示したガイダンス。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-136">Guidance on how to collaborate and share securely.</span></span>
 
-![Microsoft 365 Business Premium は、生産性ツール、共同作業ツール、ファイル ストレージ、メール、デバイス、ID を保護します。](../media/M365-WhatIsIt-SecurityFocus.png)
+<span data-ttu-id="d1d6e-137">含まれる機能の詳細については、[[Microsoft 365 Business Premium]](https://www.microsoft.com/microsoft-365/business)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-137">For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).</span></span>
 
-<span data-ttu-id="e5fff-113">米国の連邦選挙キャンペーンには、Microsoft 365 Business Premium の特別価格の対象となりますが、このプランを採用している組織は、このガイダンスを利用して、セキュリティの強化を構成し、安全に共同作業を行う方法について学ぶことができます。</span><span class="sxs-lookup"><span data-stu-id="e5fff-113">While federal election campaigns in the United States qualify for special pricing for Microsoft 365 Business Premium, any organization with this plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.</span></span>
-
-<span data-ttu-id="e5fff-114">このライブラリの内訳は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="e5fff-114">This library includes the following:</span></span>
-
-- <span data-ttu-id="e5fff-115">セキュリティを強化する際に規範となるセットアップ ガイダンス。</span><span class="sxs-lookup"><span data-stu-id="e5fff-115">Prescriptive setup guidance for adding increased security.</span></span>
-- <span data-ttu-id="e5fff-116">セキュリティで保護されたアクセスができるよう、デバイスをセットアップするためのヘルプ。</span><span class="sxs-lookup"><span data-stu-id="e5fff-116">Help for users to setup devices for secure access.</span></span>
-- <span data-ttu-id="e5fff-117">セキュイティで保護された共同作業および共有を行う方法を示したガイダンス。</span><span class="sxs-lookup"><span data-stu-id="e5fff-117">Guidance on how to collaborate and share securely.</span></span>
-
-<span data-ttu-id="e5fff-118">含まれる機能の詳細については、[[Microsoft 365 Business Premium]](https://www.microsoft.com/microsoft-365/business)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e5fff-118">For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).</span></span>
-
-<a name="get-started"></a><span data-ttu-id="e5fff-119">作業の開始</span><span class="sxs-lookup"><span data-stu-id="e5fff-119">Get started</span></span>
+<a name="get-started"></a><span data-ttu-id="d1d6e-138">作業の開始</span><span class="sxs-lookup"><span data-stu-id="d1d6e-138">Get started</span></span>
 --------------------------
 
-<span data-ttu-id="e5fff-120">以下の手順に従って開始しましょう。</span><span class="sxs-lookup"><span data-stu-id="e5fff-120">Follow these steps to get started:</span></span>
+<span data-ttu-id="d1d6e-139">以下の手順に従って開始しましょう。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-139">Follow these steps to get started:</span></span>
 
-- [<span data-ttu-id="e5fff-121">Microsoft 365 for campaigns を入手する</span><span class="sxs-lookup"><span data-stu-id="e5fff-121">Get Microsoft 365 campaigns</span></span>](get-microsoft-365-campaigns.md)
-- [<span data-ttu-id="e5fff-122">ユーザーが Microsoft 365 を使用する方法について説明</span><span class="sxs-lookup"><span data-stu-id="e5fff-122">Learn how your users will work with Microsoft 365</span></span>](m365-campaigns-users.md)
-- [<span data-ttu-id="e5fff-123">Microsoft 365 for Campaigns を設定する</span><span class="sxs-lookup"><span data-stu-id="e5fff-123">Set up Microsoft 365 campaigns</span></span>](microsoft-365-campaigns-setup-overview.md)
+- <span data-ttu-id="d1d6e-140">キャンペーンの場合:「[Microsoft 365 for Campaigns を入手する](get-microsoft-365-campaigns.md)」</span><span class="sxs-lookup"><span data-stu-id="d1d6e-140">For campaigns: [Get Microsoft 365 campaigns](get-microsoft-365-campaigns.md)</span></span>
+- <span data-ttu-id="d1d6e-141">各種ビジネスの場合:「[ユーザーが Microsoft 365 を使用する方法について説明](m365-campaigns-users.md)」</span><span class="sxs-lookup"><span data-stu-id="d1d6e-141">For any business: [Learn how your users will work with Microsoft 365](m365-campaigns-users.md)</span></span>
+- <span data-ttu-id="d1d6e-142">各種ビジネスの場合:「[Set up Microsoft 365 (Microsoft 365 のセットアップ)](microsoft-365-campaigns-setup-overview.md)」</span><span class="sxs-lookup"><span data-stu-id="d1d6e-142">For any business: [Set up Microsoft 365](microsoft-365-campaigns-setup-overview.md)</span></span>
 
-<a name="solutions-for-your-campaign-or-small-business"></a><span data-ttu-id="e5fff-124">お客様のキャンペーンまたは小規模ビジネス向けのソリューション</span><span class="sxs-lookup"><span data-stu-id="e5fff-124">Solutions for your campaign or small business</span></span>
+<a name="solutions-for-your-business"></a><span data-ttu-id="d1d6e-143">ビジネス向けのソリューション</span><span class="sxs-lookup"><span data-stu-id="d1d6e-143">Solutions for your business</span></span>
 --------------------------
 
-<span data-ttu-id="e5fff-125">セキュリティで保護された Microsoft 365 環境をセットアップした後は、次のソリューションを使用して作業できます。</span><span class="sxs-lookup"><span data-stu-id="e5fff-125">After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:</span></span>
+<span data-ttu-id="d1d6e-144">セキュリティで保護された Microsoft 365 環境をセットアップした後は、次のソリューションを使用して作業できます。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-144">After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:</span></span>
 
-| <span data-ttu-id="e5fff-126">共同作業のためのチームを作成する</span><span class="sxs-lookup"><span data-stu-id="e5fff-126">Create teams for collaboration</span></span> | <span data-ttu-id="e5fff-127">オンライン会議を設定する</span><span class="sxs-lookup"><span data-stu-id="e5fff-127">Set up online meetings</span></span> |
+| <span data-ttu-id="d1d6e-145">共同作業のためのチームを作成する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-145">Create teams for collaboration</span></span> | <span data-ttu-id="d1d6e-146">オンライン会議を設定する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-146">Set up online meetings</span></span> |
 | ------------- | ------------- |
 | ![SharePoint​​ コミュニケーション サイト](../media/sm-m365-democracy-teams-collab.png) | ![オンライン会議](../media/m365-democracy-teams-meetings.png) |
-| <span data-ttu-id="e5fff-130">主要なスタッフ、すべてのスタッフ、およびパートナーまたはベンダーのチームと協力します。</span><span class="sxs-lookup"><span data-stu-id="e5fff-130">Collaborate with teams for key staff, all staff, and partners or vendors.</span></span> [<span data-ttu-id="e5fff-131">チームを作成する</span><span class="sxs-lookup"><span data-stu-id="e5fff-131">Create your team</span></span>](create-teams-for-collaboration.md) | <span data-ttu-id="e5fff-132">Microsoft Teams でオーディオ、ビデオ、共有を使用して会議をスケジュールします。</span><span class="sxs-lookup"><span data-stu-id="e5fff-132">Schedule a meeting with audio, video, and sharing with Microsoft Teams.</span></span> [<span data-ttu-id="e5fff-133">会議を設定する</span><span class="sxs-lookup"><span data-stu-id="e5fff-133">Set up a meeting</span></span>](set-up-meetings.md) |
+| <span data-ttu-id="d1d6e-149">主要なスタッフ、すべてのスタッフ、およびパートナーまたはベンダーのチームと協力します。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-149">Collaborate with teams for key staff, all staff, and partners or vendors.</span></span><br>[<span data-ttu-id="d1d6e-150">チームを作成する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-150">Create your team</span></span>](create-teams-for-collaboration.md) | <span data-ttu-id="d1d6e-151">Microsoft Teams でオーディオ、ビデオ、共有を使用して会議をスケジュールします。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-151">Schedule a meeting with audio, video, and sharing with Microsoft Teams.</span></span><br>[<span data-ttu-id="d1d6e-152">会議を設定する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-152">Set up a meeting</span></span>](set-up-meetings.md) |
 
-| <span data-ttu-id="e5fff-134">機密情報を暗号化またはラベル付けする</span><span class="sxs-lookup"><span data-stu-id="e5fff-134">Encrypt or label your sensitive email</span></span> | <span data-ttu-id="e5fff-135">コミュニケーション サイトを作成する</span><span class="sxs-lookup"><span data-stu-id="e5fff-135">Create a communications site</span></span> |
+| <span data-ttu-id="d1d6e-153">機密情報を暗号化またはラベル付けする</span><span class="sxs-lookup"><span data-stu-id="d1d6e-153">Encrypt or label your sensitive email</span></span> | <span data-ttu-id="d1d6e-154">コミュニケーション サイトを作成する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-154">Create a communications site</span></span> |
 | ------------- | ------------- |
 | ![暗号化され、ラベル付けされたメール](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint​​ コミュニケーションサイト](../media/sm-m365-democracy-comms-site.png) |
-| <span data-ttu-id="e5fff-138">機密情報や機密情報を含むメールを保護するには、暗号化と機密ラベルを使用します。</span><span class="sxs-lookup"><span data-stu-id="e5fff-138">Use encryption and sensitivity labels to protect email that contains confidential or sensitive information.</span></span> [<span data-ttu-id="e5fff-139">暗号化された電子メールを送信する</span><span class="sxs-lookup"><span data-stu-id="e5fff-139">Send encrypted email</span></span>](send-encrypted-email.md) | <span data-ttu-id="e5fff-140">SharePoint で作成した内部のコミュニケーションサイトで、イベント、メッセージ、画像などをチームと共有できます。</span><span class="sxs-lookup"><span data-stu-id="e5fff-140">Share events, message, images, and more with your team in an internal communications site created with SharePoint.</span></span> [<span data-ttu-id="e5fff-141">サイトを作成する</span><span class="sxs-lookup"><span data-stu-id="e5fff-141">Create your site</span></span>](create-communications-site.md) |
+| <span data-ttu-id="d1d6e-157">機密情報や機密情報を含むメールを保護するには、暗号化と機密ラベルを使用します。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-157">Use encryption and sensitivity labels to protect email that contains confidential or sensitive information.</span></span><br>[<span data-ttu-id="d1d6e-158">暗号化された電子メールを送信する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-158">Send encrypted email</span></span>](send-encrypted-email.md) | <span data-ttu-id="d1d6e-159">SharePoint で作成した内部のコミュニケーションサイトで、イベント、メッセージ、画像などをチームと共有できます。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-159">Share events, message, images, and more with your team in an internal communications site created with SharePoint.</span></span><br>[<span data-ttu-id="d1d6e-160">サイトを作成する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-160">Create your site</span></span>](create-communications-site.md) |
 
-| <span data-ttu-id="e5fff-142">ファイルやビデオを共有する</span><span class="sxs-lookup"><span data-stu-id="e5fff-142">Share files and videos</span></span> |
+| <span data-ttu-id="d1d6e-161">ファイルやビデオを共有する</span><span class="sxs-lookup"><span data-stu-id="d1d6e-161">Share files and videos</span></span> |
 | ------------- |
 | ![Microsoft Teams のファイルを共有](../media/m365-democracy-teams-sharefiles.png) |
-| <span data-ttu-id="e5fff-144">ファイルとビデオをクラウドに保存して、適切なすべてのユーザーが</span><span class="sxs-lookup"><span data-stu-id="e5fff-144">Save your files and videos to the cloud so they're available to all</span></span> <br><br><span data-ttu-id="e5fff-145">利用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="e5fff-145">of the appropriate people.</span></span> [<span data-ttu-id="e5fff-146">共有の開始</span><span class="sxs-lookup"><span data-stu-id="e5fff-146">Start sharing</span></span>](share-files-and-videos.md) |
-
+| <span data-ttu-id="d1d6e-163">ファイルとビデオをクラウドに保存して、</span><span class="sxs-lookup"><span data-stu-id="d1d6e-163">Save your files and videos to the cloud so they're available</span></span> <br><span data-ttu-id="d1d6e-164">適切なすべてのユーザーが利用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="d1d6e-164">to all of the appropriate people.</span></span><br>[<span data-ttu-id="d1d6e-165">共有の開始</span><span class="sxs-lookup"><span data-stu-id="d1d6e-165">Start sharing</span></span>](share-files-and-videos.md) |
