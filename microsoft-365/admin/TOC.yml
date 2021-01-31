@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 概要
+    - name: 作業の開始
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -66,6 +66,8 @@
           href: admin-overview/admin-mobile-app.md
         - name: 新しい管理センターの新機能
           href: whats-new-in-preview.md
+        - name: Microsoft 365 管理センターで検索する
+          href: manage/search-in-the-mac.md
         - name: 変更内容の最新情報を把握する
           href: manage/stay-on-top-of-updates.md
         - name: 複数のテナントの管理
