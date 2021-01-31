@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2a4b66de9996ec0ea7047ca44ae3750a917c4cc2
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 2e334e57b84bea7985983527e600be731e4de20c
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921681"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058520"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -42,6 +42,11 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 ![Excel のリボンおよびステータス バーに示された秘密度ラベル](../media/Sensitivity-label-in-Excel.png)
 
 機密ラベルを適用するには、ユーザーは Microsoft 365の職場または学校のアカウントを使用して、サインインする必要があります。
+
+> [!NOTE]
+> 米国政府機関のテナント向けに、秘密度ラベルが新たにサポートされました (GCC および GCC-H)。 詳細については、Microsoft 365 Apps for enterprise のリリース ノート、[バージョン 2101: 1 月 26 日](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26)を参照してください。
+>
+> Azure Information Protection 統合ラベル付けクライアントおよびスキャナーについては、「[Azure Information Protection Premium の米国政府機関向けのサービスの説明](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)」を参照してください。
 
 機密ラベルは、次の目的に使用できます。
   
@@ -195,7 +200,7 @@ Microsoft 365 の秘密度ラベルを使用することにより、これらす
 
     ![リボンの [機密] ボタンに示された詳細な説明のリンク](../media/Sensitivity-label-learn-more.png)
 
-ユーザーとグループに新しい秘密度ラベルを割り当てるラベル ポリシーを作成した後、ユーザーは 30 分以内に Office アプリにラベルを確認します。 ただし、これらのラベルの変更には最大で 24 時間かかります。
+ユーザーとグループに新しい秘密度ラベルを割り当てるラベル ポリシーを作成した後、ユーザーは Office アプリでラベルの確認を開始します。 最新の変更内容が組織全体に複製されるまでに、最大で 24 時間かかります。
 
 作成および発行できる秘密度ラベルの数に制限はありませんが、1 つだけ例外があります。ラベルにより暗号化が適用される場合、作成できるラベルの最大数は 500 に制限されます。 ただし、管理者のオーバーヘッドを低減し、ユーザーのために複雑さを軽減するためのベスト プラクティスとして、ラベルの数は必要最小限に抑えるようにします。 実際の展開における経験から、ユーザーがメイン ラベルを 5 つ以上、または 1 つのメイン ラベルごとにサブラベルを 5 つ以上持っている場合、効果が大きく低下することが証明されています。
 
@@ -268,4 +273,4 @@ Cloud App Security をこれらのラベルで使用する手順については�
 
 ## <a name="deployment-guidance"></a>展開ガイダンス
 
-ライセンス情報、アクセス許可、展開戦略、およびサポートされているシナリオとエンド ユーザー ドキュメントのリソースのリストを含む展開計画とガイダンスについては、「[秘密度ラベルの開始](get-started-with-sensitivity-labels.md)」を参照してください。
+ライセンス情報、アクセス許可、展開戦略、およびサポートされているシナリオとエンドユーザー ドキュメントのリソースのリストを含む展開計画とガイダンスについては、「[秘密度ラベルの開始](get-started-with-sensitivity-labels.md)」を参照してください。
