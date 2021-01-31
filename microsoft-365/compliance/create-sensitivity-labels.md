@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のドキュメントやメールを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 10d677eb328ee002e187b098fa44b09372b59f72
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 816da1001593dc36d625a48d12a1e0ace86578bf
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568333"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058500"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -59,7 +59,8 @@ ms.locfileid: "49568333"
     
     ![秘密度ラベルを作成する](../media/create-sensitivity-label-full.png)
     
-    注: 既定では、テナントにはラベルはありません。作成する必要があります。 こちらに例示した図のラベルには、[Azure Information Protection から移行](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) された既定のラベルが表示されます。
+    > [!NOTE]
+    > 既定では、テナントにはラベルはありません。作成する必要があります。 こちらに例示した図のラベルには、[Azure Information Protection から移行](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) された既定のラベルが表示されます。
 
 3. **[このラベルのスコープを定義する]** ページで、選択したオプションによって、構成できる設定のラベルのスコープと、公開時に表示される場所が決まります。
     
@@ -88,7 +89,7 @@ ms.locfileid: "49568333"
 ユーザーへの影響がどの程度かわからない場合は、ラベルを削除しないでください。 詳細については、「[ラベルの解除と削除](#removing-and-deleting-labels)」 のセクションを参照してください。 
 
 > [!NOTE]
-> ラベル ポリシーを使用して既に発行されているラベルを編集する場合、ウィザードを終了するときに、追加の手順は必要ありません。 たとえば、同じユーザーに変更を反映させるために、ラベルを新しいラベル ポリシーに追加する必要はありません。 ただし、変更をユーザーとサービスにレプリケートするには、最大で 24 時間かかります。
+> ラベル ポリシーを使用して既に発行されているラベルを編集する場合、ウィザードを終了するときに、追加の手順は必要ありません。 たとえば、同じユーザーに変更を反映させるために、ラベルを新しいラベル ポリシーに追加する必要はありません。 ただし、変更をすべてのアプリとサービスにレプリケートするには、最大で 24 時間かかります。
 
 ラベルを発行するまで、アプリまたはサービスでラベルを選択することはできません。 ラベルを発行するには、ラベルを[ラベル ポリシーに追加](#publish-sensitivity-labels-by-creating-a-label-policy)する必要があります。
 
@@ -155,7 +156,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         
     ![ラベルを発行](../media/publish-sensitivity-labels-full.png)
     
-    注: 既定では、テナントにはラベルはありません。作成する必要があります。 
+    > [!NOTE]
+    > 既定では、テナントにはラベル ポリシーはありません。作成する必要があります。 
 
 3. ウィザードで、[**発行する秘密度ラベルの選択**] を選びます。 アプリとサービスで使用するラベルを選択し、[**追加**] を選択します。
     
@@ -184,7 +186,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 このボタンを選択すると、[**ポリシーの作成**] ウィザードが起動し、含めるラベルとラベルの設定を編集できます。 ウィザードを完了すると、選択したユーザーとサービスに変更が自動的にレプリケートされます。
 
-ユーザーは1時間以内にOfficeアプリに新しいラベルが確認できます。 ただし、既存のラベルの変更が、すべてのユーザーとサービスにレプリケートされるまで、最大で 24 時間かかります。
+Windows、macOS、iOS、Android 用の組み込みのラベル付けを使用すると、ユーザーは Office アプリでは 4 時間以内に、Office on the web では 1 時間以内に新しいラベルを確認することができます。 ただし、変更をすべてのアプリとサービスにレプリケートするには、最大で 24 時間かかります。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell を含むその他のラベル ポリシー設定
 
