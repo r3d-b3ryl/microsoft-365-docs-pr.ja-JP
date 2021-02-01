@@ -42,7 +42,7 @@ Microsoft 365 では、削除済みメールボックスのコンテンツを保
 
 - メールボックスを削除する前に訴訟ホールドまたはアイテム保持ポリシー (コンテンツを保持または保持してから削除するように構成されている) を適用しなかった場合は、メールボックスの内容が保持されず、検索もできません。 なお、削除されたメールボックスは、削除後 30 日以内であれば回復できますが、回復されない場合、メールボックスとその内容は 30 日後に完全に削除されます。
 
-- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). アイテム保持ポリシーに関する詳細情報は、「[アイテム保持ポリシーおよび保持ラベルの詳細](retention.md)」をご覧ください。
+- 訴訟ホールドの詳細については、「[インプレース保持と訴訟ホールド](https://go.microsoft.com/fwlink/p/?LinkId=846124)」を参照してください。 アイテム保持ポリシーに関する詳細情報は、「[アイテム保持ポリシーおよび保持ラベルの詳細](retention.md)」をご覧ください。
   
 ## <a name="create-an-inactive-mailbox"></a>非アクティブなメールボックスを作成する
 
@@ -106,7 +106,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>非アクティブなメールボックスのコンテンツを検索し、エクスポートする
 
-Office 365 セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、非アクティブなメールボックスのコンテンツにアクセスできます。 非アクティブなメールボックスを検索する場合、特定のアイテムに対するキーワード検索クエリを作成したり、非アクティブなメールボックスのすべての内容を返したりできます。 You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
+Office 365 セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、非アクティブなメールボックスのコンテンツにアクセスできます。 非アクティブなメールボックスを検索する場合、特定のアイテムに対するキーワード検索クエリを作成したり、非アクティブなメールボックスのすべての内容を返したりできます。 検索結果をプレビューで表示したり、検索結果を Outlook データ (PST) ファイルにエクスポートしたり、個別のメール メッセージとしてエクスポートできます。 メールボックスの検索と検索結果のエクスポートの詳しい手順については、次のトピックを参照してください。
   
 - [Office 365 のコンテンツ検索](content-search.md)
     
