@@ -16,32 +16,38 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a0200b894bcdbc734bb90e25eff8c52848d7b65
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 003347d46bed2529831a92681e73630d58a1f653
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50053814"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071272"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Microsoft 365 の情報障壁について
 
-Microsoft クラウド サービスには、強力な通信機能とコラボレーション機能が含まれます。 ただし、組織内で関心の競合が発生しないように、2 つのグループ間の通信とコラボレーションを制限するとします。 または、内部情報を保護するために、組織内の特定のユーザー間の通信とコラボレーションを制限したい場合があります。 Microsoft 365 を使用すると、グループや組織間でのコミュニケーションとコラボレーションが可能になります。そのため、必要に応じて、特定のユーザー グループ間の通信とコラボレーションを制限する方法はありますか? 情報バリアを使用すると、可能です。
+Microsoft クラウド サービスには、強力な通信機能とコラボレーション機能が含まれます。 ただし、組織内で関心の競合が発生しないように、2 つのグループ間の通信とコラボレーションを制限するとします。 または、内部情報を保護するために、組織内の特定のユーザー間の通信とコラボレーションを制限したい場合があります。 Microsoft 365 を使用すると、グループや組織間でのコミュニケーションとコラボレーションが可能になります。そのため、必要に応じて、特定のユーザー グループ間の通信とコラボレーションを制限する方法はありますか? 情報バリアを使用すると、次の方法を使用できます。
 
 Microsoft Teams、SharePoint Online、OneDrive for Business は情報障壁をサポートしています。 サブスクリプションに [情報](#required-licenses-and-permissions) バリアが含まれる場合、コンプライアンス管理者、または情報障壁管理者は、Microsoft Teams のユーザー グループ間の通信を許可または防止するポリシーを定義できます。 情報バリア ポリシーは、次のような状況で使用できます。
 
-- 一日の業者グループのユーザーは、マーケティング チームと通信したり、ファイルを共有したりしなけず
-- 企業の機密情報に取り組む財務担当者は、組織内の特定のグループとファイルを通信したり共有したりしなけ
+- その日の業者グループのユーザーは、マーケティング チームと通信したり、ファイルを共有したりしなけず
+- 会社の機密情報に取り組む財務担当者は、組織内の特定のグループとファイルを通信したり共有したりしなき
 - 営業秘密資料を持つ内部チームは、組織内の特定のグループのユーザーに電話したり、オンラインでチャットしたりしなき
 - 研究チームは、製品開発チームにオンラインでのみ電話またはチャットを行う必要があります。
-- day trader グループのサイトは、day trader グループ外のユーザーが共有またはアクセスしなけ
+- day trader グループのサイトは、day trader グループ外のユーザーが共有したり、アクセスしたりしてみることができます。
 
 > [!IMPORTANT]
 > 情報バリア * は **_ 2** つの方法の制限のみをサポートします。 マーケティングなどの 1 つの方法の制限は、日の業者と通信および共同作業できますが、日の業者はマーケティング _* と通信および共同作業を行う機能は _サポート_ されていません**。
 
-これらのすべてのシナリオ例 (およびそれ以上) では、Microsoft Teams、SharePoint Online、OneDrive での通信とコラボレーションを防止または許可する情報バリア ポリシーを定義できます。 このようなポリシーを使用すると、ユーザーが通話やチャットを行わないか、Microsoft Teams の特定のグループとのみ通信できます。 情報バリア ポリシーが有効な場合、これらのポリシーの対象となるユーザーが Microsoft Teams の他のユーザーとの通信と共同作業を試みるたびに、SharePoint Online または OneDrive のチェックは(情報バリア ポリシーで定義される) 通信とコラボレーションを防止 (または許可) するために行われます。 情報障壁のあるユーザー エクスペリエンスの詳細については [、Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams) の情報障壁と SharePoint Online の情報障壁 [を参照してください。](https://docs.microsoft.com/sharepoint/information-barriers)
+これらのすべてのシナリオ例 (およびそれ以上) では、Microsoft Teams、SharePoint Online、OneDrive での通信とコラボレーションを防止または許可する情報バリア ポリシーを定義できます。 このようなポリシーを使用すると、ユーザーが通話やチャットを行わないか、Microsoft Teams の特定のグループとのみ通信できます。 情報バリア ポリシーが有効な場合、これらのポリシーの対象となるユーザーが Microsoft Teams の他のユーザーとの通信と共同作業を試みるたびに、SharePoint Online または OneDrive のチェックは、(情報バリア ポリシーで定義されている) 通信とコラボレーションを防止 (または許可) するために行われます。
+
+情報バリアを備えるユーザー エクスペリエンスの詳細については、以下を参照してください。
+
+- [Microsoft Teams の情報障壁](/MicrosoftTeams/information-barriers-in-teams)
+- [SharePoint Online の情報障壁](/sharepoint/information-barriers)
+- [OneDrive の情報バリア](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> 現在、情報バリアは電子メール通信には適用されません。 さらに、情報バリアはコンプライアンスの境界 [から独立しています](set-up-compliance-boundaries.md)。<p> 情報バリア ポリシーを定義して適用する前に、組織に Exchange アドレス帳ポリシーが [有効で](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) なされていないことを確認してください。 (情報バリアはアドレス帳ポリシーに基づく)
+> 現在、情報バリアは電子メール通信には適用されません。 さらに、情報バリアはコンプライアンスの境界 [から独立しています](set-up-compliance-boundaries.md)。<p> 情報バリア ポリシーを定義して適用する前に、組織に Exchange アドレス帳ポリシーが有効でなされていないこと [を](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 確認してください。 (情報バリアはアドレス帳ポリシーに基づく)
 
 ## <a name="what-happens-with-information-barriers"></a>情報バリアの発生
 
@@ -57,20 +63,20 @@ Microsoft Teams、SharePoint Online、OneDrive for Business は情報障壁を�
 - 画面を共有する
 - 電話をかける
 - 別のユーザーとファイルを共有する
-- 共有リンクを使用したファイルへのアクセス
+- 共有リンクを使用してファイルにアクセスする
 
 関係するユーザーが、活動を防止する情報バリア ポリシーに含まれている場合、続行できません。 さらに、情報バリア ポリシーに含まれているすべてのユーザーは、Microsoft Teams で他のユーザーと通信できないようにすることができます。 情報バリア ポリシーの影響を受けるユーザーが同じチームまたはグループ チャットの一部である場合、それらのユーザーがチャット セッションから削除され、グループとのそれ以上の通信が許可されないことがあります。
 
-情報障壁のあるユーザー エクスペリエンスの詳細については [、Microsoft Teams の情報バリアを参照してください](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
+情報障壁のあるユーザー エクスペリエンスの詳細については [、Microsoft Teams の情報バリアを参照してください](/MicrosoftTeams/information-barriers-in-teams)。
 
 SharePoint Online と OneDrive では、情報バリア ポリシーによって、次の種類の未承認のコラボレーションが決定され、防止されます。
 
 - サイトへのメンバーの追加
 - ユーザーによるサイトまたはコンテンツへのアクセス
 - サイトまたはコンテンツを別のユーザーと共有する
-- サイトの検索 
+- サイトの検索
 
-情報障壁のあるユーザー エクスペリエンスの詳細については、SharePoint Online の情報バリア [を参照してください。](https://docs.microsoft.com/sharepoint/information-barriers)
+情報バリアを備えるユーザー エクスペリエンスの詳細については、SharePoint Online の情報バリア [を参照してください。](/sharepoint/information-barriers)
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
@@ -97,9 +103,9 @@ SharePoint Online と OneDrive では、情報バリア ポリシーによって
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Teams の情報障壁の詳細](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Microsoft Teams の情報障壁の詳細](/MicrosoftTeams/information-barriers-in-teams)
+- [SharePoint Online の情報バリアの詳細](/sharepoint/information-barriers)
+- [OneDrive の情報バリアの詳細](/onedrive/information-barriers)
 - [情報バリア ポリシーに使用できる属性を確認する](information-barriers-attributes.md)
 - [情報バリアのポリシーを定義する](information-barriers-policies.md)
 - [情報バリア ポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md)
-- [SharePoint Online の情報バリアの詳細](https://docs.microsoft.com/sharepoint/information-barriers)
-- [OneDrive for Business の情報バリアの詳細](https://docs.microsoft.com/onedrive/information-barriers)

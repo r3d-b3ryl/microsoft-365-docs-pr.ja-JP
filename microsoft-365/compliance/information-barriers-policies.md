@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80123674644b47c76becb92fa08c21f4668614b2
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 284036fecf53252bb29878482dbf6dec42eeeaeb
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980059"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071262"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -46,7 +46,7 @@ ms.locfileid: "49980059"
 
 |**フェーズ**|**内容**|
 |:--------|:------------------|
-| [前提条件が満たされていることを確認する](#prerequisites) | - 必要なライセンスと [アクセス許可を持っている](information-barriers.md#required-licenses-and-permissions)<br/>- セグメント化されたユーザーのデータがディレクトリに含まれるか確認する<br/>- Microsoft Teams のスコープ指定ディレクトリ検索を有効にする<br/>- 監査ログが有効になっていることを確認する<br/>- Exchange アドレス帳ポリシーが適用でいなかっているのを確認する<br/>- PowerShell を使用する (例を示します)<br/>- Microsoft Teams に管理者の同意を提供する (手順が含まれています) |
+| [前提条件が満たされていることを確認する](#prerequisites) | - 必要なライセンスと [アクセス許可を持っている](information-barriers.md#required-licenses-and-permissions)<br/>- ディレクトリにセグメント化されたユーザーのデータが含まれるか確認する<br/>- Microsoft Teams のスコープ指定ディレクトリ検索を有効にする<br/>- 監査ログが有効になっていることを確認する<br/>- Exchange アドレス帳ポリシーが適用でいなかっているのを確認する<br/>- PowerShell を使用する (例を示します)<br/>- Microsoft Teams に管理者の同意を提供する (手順が含まれています) |
 | [パート 1: 組織内のユーザーをセグメント化する](#part-1-segment-users) | - 必要なポリシーを決定する<br/>- 定義するセグメントの一覧を作成する<br/>- 使用する属性を特定する<br/>- ポリシー フィルターの観点からセグメントを定義する |
 | [パート 2: 情報バリア ポリシーを定義する](#part-2-define-information-barrier-policies) | - ポリシーを定義する (まだ適用しない)<br/>- 2 つの種類から選択する (ブロックまたは許可) |
 | [パート 3: 情報バリア ポリシーを適用する](#part-3-apply-information-barrier-policies) | - ポリシーをアクティブな状態に設定する<br/>- ポリシー アプリケーションを実行する<br/>- ポリシーの状態を表示する |
@@ -93,7 +93,7 @@ ms.locfileid: "49980059"
 すべての前提条件が満たされた場合は、次のセクションに進みます。
 
 > [!TIP]
-> 計画を準備するために、この記事にはシナリオの例が含まれています。 [Contoso 社の部署、セグメント、およびポリシーを参照してください](#example-contosos-departments-segments-and-policies)。<p>また、ダウンロード可能な Excel ブックを使用して、セグメントとポリシーの計画と定義 (および PowerShell コマンドレットの作成) を行うのに役立ちます。 [ブックを取得します](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)。
+> 計画の準備を支援するために、この記事にはシナリオの例が含まれています。 [Contoso 社の部署、セグメント、およびポリシーを参照してください](#example-contosos-departments-segments-and-policies)。<p>また、セグメントとポリシーの計画と定義 (および PowerShell コマンドレットの作成) に役立つダウンロード可能な Excel ブックも用意されています。 [ブックを取得します](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)。
 
 ## <a name="part-1-segment-users"></a>パート 1: ユーザーをセグメント化する
 
@@ -101,7 +101,7 @@ ms.locfileid: "49980059"
 
 ### <a name="determine-what-policies-are-needed"></a>必要なポリシーを決定する
 
-法律や業界の規制を考慮すると、組織内の情報障壁ポリシーを必要とするグループは誰ですか? リストを作成します。 他のグループとの通信を妨げる必要があるグループはありますか? 他の 1 つのグループまたは 2 つのグループとの通信のみを許可する必要があるグループはありますか? 次の 2 つのグループの 1 つに属しているポリシーについて考えてみください。
+法律や業界の規制を考慮すると、組織内の情報障壁ポリシーを必要とするグループは誰ですか? リストを作成します。 他のグループとの通信を妨げる必要があるグループはありますか? 他の 1 つのグループまたは 2 つのグループとの通信のみを許可する必要があるグループはありますか? 必要なポリシーを次の 2 つのグループの 1 つに属すると考えてみください。
 
 - "ブロック" ポリシーは、あるグループが別のグループと通信を行うのを防止します。
 - "許可" ポリシーでは、グループが他の特定の特定のグループとのみ通信できます。
@@ -135,7 +135,7 @@ ms.locfileid: "49980059"
 2. 定義するセグメントごとにこのプロセスを繰り返します。
 
     > [!IMPORTANT]
-    > **セグメントが重ならないようにしてください**。 情報バリアの影響を受ける各ユーザーは、1 つのセグメント (および 1 つのセグメントのみ) に属している必要があります。 ユーザーは 2 つ以上のセグメントに属しなけず、 (例 [: この記事で Contoso 社が定義したセグメント](#contosos-defined-segments) を参照してください)。
+    > **セグメントが重ならないようにしてください**。 情報バリアの影響を受ける各ユーザーは、1 つのセグメント (および 1 つのセグメントのみ) に属している必要があります。 2 つ以上のセグメントに属するユーザーはいけな。 (例 [: この記事で Contoso 社が定義したセグメント](#contosos-defined-segments) を参照してください)。
 
 セグメントを定義した後、情報バリア ポリシーの [定義に進みます](#part-2-define-information-barrier-policies)。
 
@@ -151,7 +151,7 @@ ms.locfileid: "49980059"
 
 |**構文**|**例**|
 |:---------|:----------|
-| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | この例では、営業ではないすべてのユーザーを含む *NotSales* というセグメントを定義 *しました*。 コマンドレット **の -ne** 部分は"等しくない" を参照します。 |
+| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | この例では *、Sales* に含めないすべてのユーザーを含む *NotSales* というセグメントを定義しました。 コマンドレット **の -ne** 部分は「等しくない」を参照します。 |
 
 "equals" または "not equals" を使用してセグメントを定義する以外に、"equals" パラメーターと "not equals" パラメーターの両方を使用してセグメントを定義できます。 論理 AND 演算子と OR 演算子を使用して、複雑な *グループ フィルター**を定義* することもできます。
 
@@ -163,7 +163,7 @@ ms.locfileid: "49980059"
 | `New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`| この例では *、Segment1and2* というセグメントを定義しました。このセグメントには、group1@contoso.com と group2@contoso.com のメンバーを含め、group3@contoso.com。 |
 
 > [!TIP]
-> 可能であれば、"-eq" または "-ne" を含むセグメント定義を使用します。 複雑なセグメント定義を定義しない。
+> 可能であれば、"-eq" または "-ne" を含むセグメント定義を使用します。 複雑なセグメント定義は定義しない。
 
 ## <a name="part-2-define-information-barrier-policies"></a>パート 2: 情報バリア ポリシーを定義する
 
@@ -272,7 +272,7 @@ PowerShell を使用すると、次の表に示すユーザー アカウント�
 
 ### <a name="contosos-departments-and-plan"></a>Contoso の部門とプラン
 
-Contoso には、人事、営業、マーケティング、リサーチ、製造の5つの部門があります。 業界の規制に準拠し続けするために、一部の部門のユーザーは、次の表に示す他の部署と通信する必要がなされません。
+Contoso には、人事、営業、マーケティング、リサーチ、製造の5つの部門があります。 業界の規制に準拠し続けするために、一部の部門のユーザーは、次の表に示す他の部署と通信する必要があります。
 
 |**セグメント**|**に連絡できます**|**に連絡できません**|
 |:----------|:--------------|:-----------------|
@@ -284,7 +284,7 @@ Contoso には、人事、営業、マーケティング、リサーチ、製造
 
 この構造に関して、Contoso 社の計画には次の 3 つの情報バリア ポリシーが含まれています。
 
-1. Sales が Research と通信し合うのを防ぐために設計されたポリシー (および Research が Sales と通信を妨げる別のポリシー)。
+1. Sales が Research と通信し合うのを防ぐために設計されたポリシー (および Research と Sales との通信を防止する別のポリシー)。
 2. 製造が人事およびマーケティング部門とのみ通信するように設計されたポリシー。
 
 このシナリオでは、人事またはマーケティングのポリシーを定義する必要はありません。
@@ -305,11 +305,11 @@ Contoso 社は、次のように、Azure Active Directory の Department 属性�
 
 ### <a name="contosos-information-barrier-policies"></a>Contoso の情報バリアポリシー
 
-Contoso 社では、次の表に示す 3 つのポリシーを定義しています。
+Contoso 社では、次の表に示す 3 つのポリシーを定義します。
 
 |**Policy**|**ポリシー定義**|
 |:---------|:--------------------|
-| **ポリシー 1: 営業部門がリサーチ部門と通信できないようにする** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> この例では、情報バリアポリシーは、*営業-リサーチ* と呼ばれています。 このポリシーが適応されると、営業セグメント内のユーザーがリサーチセグメント内のユーザーと通信できなくなります。 このポリシーは一方通行のポリシーです。Research が Sales と通信しても妨げない。 そのため、ポリシー2が必要です。 |
+| **ポリシー 1: 営業部門がリサーチ部門と通信できないようにする** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> この例では、情報バリアポリシーは、*営業-リサーチ* と呼ばれています。 このポリシーが適応されると、営業セグメント内のユーザーがリサーチセグメント内のユーザーと通信できなくなります。 このポリシーは一方通行のポリシーです。Research が Sales と通信できない可能性があります。 そのため、ポリシー2が必要です。 |
 | **ポリシー 2: リサーチ部門が営業部門と通信できないようにする** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> この例では、情報バリアポリシーは、*リサーチ-営業* と呼ばれています。 このポリシーが適応されると、リサーチセグメント内のユーザーが、営業セグメント内のユーザーと通信できなくなります。 |
 | **ポリシー 3: 製造が人事およびマーケティング部門とのみ通信を許可する** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> この場合、情報バリアポリシーは、*製造-人事マーケティング* と呼ばれています。 このポリシーが適応されると、製造部門は人事およびマーケティング部門とだけ通信を行えます。 HR とマーケティングは、他のセグメントとの通信を制限されません。 |
 
@@ -320,4 +320,6 @@ Contoso 社では、次の表に示す 3 つのポリシーを定義していま
 ## <a name="resources"></a>リソース
 
 - [情報バリアの概要を取得する](information-barriers.md)
-- [Microsoft Teams の情報障壁](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Microsoft Teams の情報障壁の詳細](/MicrosoftTeams/information-barriers-in-teams)
+- [SharePoint Online の情報バリアの詳細](/sharepoint/information-barriers)
+- [OneDrive の情報バリアの詳細](/onedrive/information-barriers)

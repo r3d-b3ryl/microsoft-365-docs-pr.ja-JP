@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 62e9910a1b94862ba23ecdc63c0fea1ec644043a
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980080"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071282"
 ---
 # <a name="manage-information-barrier-policies"></a>情報バリア ポリシーを管理する
 
@@ -108,7 +108,7 @@ ms.locfileid: "49980080"
 
     |**構文**|**例**|
     |:---------|:----------|
-    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p> この例では、GUID *が 43c37853-ea10-4b90-a23d-ab8c9377247* である情報バリア ポリシーを非アクティブな状態に設定します。 |
+    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p> この例では、GUID *が 43c37853-ea10-4b90-a23d-ab8c9377247* の情報バリア ポリシーを非アクティブな状態に設定します。 |
 
 3. 変更を適用するには **、Start-InformationBarrierPoliciesApplication コマンドレットを使用** します。
 
@@ -166,6 +166,8 @@ ms.locfileid: "49980080"
 
 - [情報バリアの概要を取得する](information-barriers.md)
 - [情報バリアのポリシーを定義する](information-barriers-policies.md)
-- [Microsoft Teams の情報障壁の詳細](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Microsoft Teams の情報障壁の詳細](/MicrosoftTeams/information-barriers-in-teams)
+- [SharePoint Online の情報バリアの詳細](/sharepoint/information-barriers)
+- [OneDrive の情報バリアの詳細](/onedrive/information-barriers)
 - [情報障壁ポリシーの属性](information-barriers-attributes.md)
 - [情報障壁のトラブルシューティング](information-barriers-troubleshooting.md)

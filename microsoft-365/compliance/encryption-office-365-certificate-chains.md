@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/16/2020
+ms.date: 2/1/2021
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Microsoft 365 のルート証明書と証明機関 (CA) の完全な一覧を表示します。
-ms.openlocfilehash: 96499cbf2eae554ecddc9bc7bcf622db2515f980
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: 3dd85ae9ec4e691c8b3dce03256e1afb1fcb6274
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905266"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068932"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 暗号化チェーン
 
@@ -31,7 +31,7 @@ Microsoft 365 では、さまざまな証明書プロバイダーを活用して
 Last updated: **10/16/2020**
 
 >[!NOTE]
->DOD および **GCC High** のお客様に適用される証明書の情報については [、Microsoft 365 暗号化チェーンである DOD と GCC High を参照してください](encryption-office-365-certificate-chains-itar.md)。
+>DOD および **GCC High** のお客様に適用される証明書の情報については [、Microsoft 365 暗号化チェーン (DOD と GCC High) を参照してください](encryption-office-365-certificate-chains-itar.md)。
 
 | **証明書の種類** | **P7b ダウンロード** | **CRL エンドポイント** | **OCSP エンドポイント** | **AIA エンドポイント** |
 | --- | --- | --- | --- | --- |
@@ -124,7 +124,7 @@ Last updated: **10/16/2020**
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
 | **署名アルゴリズム** | sha256RSA |
 | **以前の有効期間** | 2009 年 11 月 5 日 8:35:58 UTC |
-| **有効期間が後でない** | 11 月 5 日 08:35:58 2029 UTC |
+| **有効期間が後でない** | 2029 年 11 月 5 日 8:35:58 UTC |
 | **サブジェクト キー識別子** | fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84 |
 | **拇印 (SHA-1)** | 58E8ABB0361533FB80F79B1B6D29D3FF8D5F00F0 |
 | **拇印 (SHA-256)** | 49E7A442ACF0EA6287050054B52564B650E4F49E42E348D6AA38E039E957B1C1 |
@@ -160,9 +160,9 @@ Last updated: **10/16/2020**
 | **拇印 (SHA-256)** | 0687260331A72403D909F105E69BCF0D32E1BD2493FFC6D9206D11BCD6770739 |
 | **Pin (SHA-256)** | Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys= |
 
-### <a name="entrust-root-certification-authority---g2"></a>**Entrust Root Certification Authority - G2**
+### <a name="entrust-root-certification-authority---g2"></a>**Root Certification Authority (信頼されたルート証明機関) - G2**
 
-| **[件名]** | CN=Entrust Root Certification Authority - G2<br>OU= &quot; (c) 2009 Entrust, Inc. - 承認された使用のみ&quot;<br>OU=関連情報www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **[件名]** | CN=Entrust Root Certification Authority - G2<br>OU= &quot; (c) 2009 Entrust, Inc. - 承認された使用のみ&quot;<br>OU=次を参照www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **シリアル番号** | 4A:53:8C:28 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -206,7 +206,7 @@ Last updated: **10/16/2020**
 
 | **[件名]** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign ルート CA - R3 |
 | --- | --- |
-| **発行者** | CN=GlobalSign、O=GlobalSign、OU=GlobalSign ルート CA - R3 |
+| **発行者** | CN=GlobalSign、O=GlobalSign、OU=GlobalSign Root CA - R3 |
 | **シリアル番号** | 04:00:00:00:00:01:21:58:53:08:A2 |
 | **公開キーの長さ** | RSA 2048 ビット |
 | **署名アルゴリズム** | sha256RSA |
@@ -238,12 +238,12 @@ Last updated: **10/16/2020**
 | **シリアル番号** | 18:DA:D1:9E:26:7D:E8:BB:4A:21:58:CD:CC:6B:3B:4A |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
 | **署名アルゴリズム** | sha1RSA |
-| **以前の有効期間** | 2006 年 11 月 8 日 00:00:00 UTC |
+| **以前の有効期間** | 11 月 8 日 00:00:00 2006 UTC |
 | **有効期間が後でない** | 2036 年 7 月 16 日 23:59:59 UTC |
 | **サブジェクト キー識別子** | 7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
 | **拇印 (SHA-1)** | 4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5 |
 | **拇印 (SHA-256)** | 9ACFAB7E43C8D880D06B262A94DEEEE4B4659989C3D0CAF19BAF6405E41AB7DF |
-| **Pin (SHA-256)** | JbQbUG5 JBJ VolI6brnx0x3vZF6jilxsapbXG JbjhN8Fg= |
+| **Pin (SHA-256)** | JbQbUG5 JBJ JbI6brnx0x3vZF6jilxsapbXG JbjhN8Fg= |
 
 ## <a name="microsoft-365-intermediate-certificate-details"></a>**Microsoft 365 中間証明書の詳細**
 
@@ -321,6 +321,23 @@ Last updated: **10/16/2020**
 | **CRL URL** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
 | **OCSP URL** | http://ocsp.digicert.cn |
 
+### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
+
+| **[件名]** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
+| --- | --- |
+| **発行者** | CN=DigiCert グローバル ルート CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **シリアル番号** | 01:9E:C1:C6:BD:3F:59:7B:B2:0C:33:38:E5:51:D8:77 |
+| **公開キーの長さ** | RSA 2048 ビット |
+| **署名アルゴリズム** | sha256RSA |
+| **以前の有効期間** | 2015 年 8 月 4 日午前 12:00 |
+| **有効期間が次の場合** | 2030 年 8 月 4 日午前 12:00 |
+| **サブジェクト キー識別子** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **機関キー識別子** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **拇印 (SHA-1)** | 81B68D6CD2f221F8F534E677523BB236BBA1DC56 |
+| **拇印 (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
+| **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
+| **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URL** | http://ocsp.digicert.com |
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
 
@@ -330,17 +347,17 @@ Last updated: **10/16/2020**
 | **シリアル番号** | 0F:17:1A:48:C6:F2:23:80:92:18:CD:2E:D6:DD:C0:E8 |
 | **公開キーの長さ** | RSA 2048 ビット |
 | **署名アルゴリズム** | sha256RSA |
-| **以前の有効期間** | 2020 年 9 月 24 日木曜日 17:00 |
-| **有効期間が次の場合** | 2030 年 9 月 24 日火曜日 16:59 |
-| **サブジェクト キー識別子** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
-| **機関キー識別子** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **以前の有効期間** | 2020 年 9 月 25 日午前 00:00 |
+| **有効期間が後でない** | 2030 年 9 月 24 日午後 11:59 |
+| **サブジェクト キー識別子** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **機関キー識別子** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **拇印 (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
-| **拇印 (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
+| **拇印 (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 | -
 | **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
-| **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl <br> http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URL** | http://ocsp.digicert.com |
+| **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URL** | http://ocsp.digicert.com
 
-### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 拡張検証サーバー CA**
+### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 Extended Validation Server CA**
 
 | **[件名]** | CN=DigiCert SHA2 Extended Validation Server CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
@@ -370,7 +387,7 @@ Last updated: **10/16/2020**
 | **サブジェクト キー識別子** | 51:68:ff:90:af:02:07:75:3c:cc:d9:65:64:62:a2:12:b8:59:72:3b |
 | **機関キー識別子** | keyid:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
 | **拇印 (SHA-1)** | A031C46782E6E6C662C2C87C76DA9AA62CCABD8E |
-| **拇印 (SHA-256)** | 19400BE5B7A31FB73391700789D2F0A2471C0C0C9D506C0E504C06C16D7CB17C0 |
+| **拇印 (SHA-256)** | 19400BE5B7A31FB733917700789D2F0A2471C0C9D506C0E504C06C16D7CB17C0 |
 | **Pin (SHA-256)** | k2v657xBsOVe1PQRwOsHsw3bsGT2VzIgt5K+59sNQws= |
 | **CRL URL** | http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl |
 | **OCSP URL** | http://ocsp.digicert.com |
@@ -389,7 +406,7 @@ Last updated: **10/16/2020**
 | **機関キー識別子** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **拇印 (SHA-1)** | 1FB86B1168EC743154062E8C9CC5B171A4B7CCB4 |
 | **拇印 (SHA-256)** | 154C433C491929C5EF686E838E323664A00E6A0D822CCC958FB4DAB03E49A08F |
-| **Pin (SHA-256)** | 5kAuNEJr0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w= |
+| **Pin (SHA-256)** | 5kAuNEAu0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w= |
 | **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
 | **OCSP URL** | http://ocsp.digicert.com |
 
@@ -447,9 +464,9 @@ Last updated: **10/16/2020**
 
 ### <a name="entrust-certification-authority---l1k"></a>**Entrust Certification Authority - L1K**
 
-| **[件名]** | CN=Entrust Certification Authority - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. - 承認された使用のみ&quot;<br>OU=関連情報www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **[件名]** | CN=Entrust Certification Authority - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. - 承認された使用のみ&quot;<br>OU=次を参照www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **発行者** | CN=Entrust Root Certification Authority - G2<br>OU= &quot; (c) 2009 Entrust, Inc. - 承認された使用のみ&quot;<br>OU=関連情報www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **発行者** | CN=Entrust Root Certification Authority - G2<br>OU= &quot; (c) 2009 Entrust, Inc. - 承認された使用のみ&quot;<br>OU=次を参照www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **シリアル番号** | 0E:E9:4C:C3:00:00:00:00:00:51:D3:77:85 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
 | **署名アルゴリズム** | sha256RSA |
@@ -499,7 +516,7 @@ Last updated: **10/16/2020**
 | **CRL URL** | http://crl.globalsign.com/root-r3.crl |
 | **OCSP URL** | http://ocsp2.globalsign.com/rootr3 |
 
-### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 組織検証 CA - SHA256 - G2**
+### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign Organization Validation CA - SHA256 - G2**
 
 | **[件名]** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
@@ -517,7 +534,7 @@ Last updated: **10/16/2020**
 | **CRL URL** | http://crl.globalsign.net/root-r3.crl |
 | **OCSP URL** | http://ocsp2.globalsign.com/rootr3 |
 
-### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 組織検証 CA - SHA256 - G2**
+### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign Organization Validation CA - SHA256 - G2**
 
 | **[件名]** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
@@ -556,7 +573,7 @@ Last updated: **10/16/2020**
 
 | **[件名]** | CN=GlobalSign RSA OV SSL CA 2018<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **発行者** | CN=GlobalSign、O=GlobalSign、OU=GlobalSign ルート CA - R3 |
+| **発行者** | CN=GlobalSign、O=GlobalSign、OU=GlobalSign Root CA - R3 |
 | **シリアル番号** | 01:EE:5F:22:1D:FC:62:3B:D4:33:3A:85:57 |
 | **公開キーの長さ** | RSA 2048 ビット |
 | **署名アルゴリズム** | sha256RSA |
@@ -670,7 +687,7 @@ Last updated: **10/16/2020**
 | **機関キー識別子** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **拇印 (SHA-1)** | 417E225037FBFAA4F95761D5AE729E1AEA7E3A42 |
 | **拇印 (SHA-256)** | 4FF404F02E2CD00188F15D1C00F4B6D1E38B5A395CF85314EAEBA855B6A64B75 |
-| **Pin (SHA-256)** | xjXxxxOYlag7jCtR5DreAg9b61iaIhd+J3+b2LiybIw= |
+| **Pin (SHA-256)** | xjXxxxoYlag7jCtR5DreAg9b61iaIhd+J3+b2LiybIw= |
 | **CRL URL** | http://crl3.digicert.com/Omniroot2025.crl |
 | **OCSP URL** | http://ocsp.digicert.com |
 
@@ -800,7 +817,7 @@ Last updated: **10/16/2020**
 | **CRL URL** | http://s1.symcb.com/pca3-g5.crl |
 | **OCSP URL** | http://s2.symcb.com |
 
-### <a name="thawte-sha256-ssl-ca"></a>**thawte SHA256 SSL CA**
+### <a name="thawte-sha256-ssl-ca"></a>**SHA256 SSL CA の解凍**
 
 | **[件名]** | CN=thawte SHA256 SSL CA<br>O= &quot; thawte, Inc.&quot;<br>C=US |
 | --- | --- |

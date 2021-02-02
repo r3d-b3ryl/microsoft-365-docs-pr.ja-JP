@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 概要
+- name: 作業の開始
   items:
     - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
@@ -152,8 +152,6 @@
           href: encryption-sensitivity-labels.md
         - name: 機密ラベルをコンテンツに自動的に適用する
           href: apply-sensitivity-label-automatically.md
-        - name: ラベル分析によるラベル使用状況の表示
-          href: label-analytics.md
         - name: チーム、グループ、およびサイトで秘密度ラベルを使用する
           href: sensitivity-labels-teams-groups-sites.md
         - name: SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする

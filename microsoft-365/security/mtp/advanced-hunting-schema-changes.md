@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 483fedd1fb152e3df5311c981b305e621ec2aec3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3f03543b03dca5fe426700ffff4f5c6edb8fa3c7
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932204"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066871"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前の変更
 
@@ -47,10 +47,32 @@ ms.locfileid: "49932204"
 
 | テーブル名 | 元の列名 | 新しい列名 | 変更理由
 |--|--|--|--|
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailAction | EmailAction | お客様のフィードバック |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicy | EmailActionPolicy | お客様のフィードバック |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicyGuid | EmailActionPolicyGuid | お客様のフィードバック |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailAction` | `EmailAction` | お客様のフィードバック |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicy` | `EmailActionPolicy` | お客様のフィードバック |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicyGuid` | `EmailActionPolicyGuid` | お客様のフィードバック |
 
+## <a name="january-2021"></a>2021 年 1 月
+
+| 列名 | 元の値の名前 | 新しい値の名前 | 変更理由
+|--|--|--|--|
+| `DetectionSource` | MCAS |    Microsoft Cloud App Security | ブランドの再ブランド化 |
+| `DetectionSource` | WindowsDefenderAtp|   EDR| ブランドの再ブランド化 |
+| `DetectionSource` | WindowsDefenderAv | ウイルス対策 | ブランドの再ブランド化 |
+| `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | ブランドの再ブランド化 |
+| `DetectionSource` | CustomerTI |  カスタム TI | ブランドの再ブランド化 |
+| `DetectionSource` | OfficeATP | Microsoft Defender for Office 365 | ブランドの再ブランド化 |
+| `DetectionSource` | MTP   | Microsoft 365 Defender | ブランドの再ブランド化 |
+| `DetectionSource` | AzureATP |    Microsoft Defender for Identity | ブランドの再ブランド化 |
+| `DetectionSource` | CustomDetection   | カスタム検出 | ブランドの再ブランド化 |
+| `DetectionSource` | AutomatedInvestigation |自動調査 | ブランドの再ブランド化 |
+| `DetectionSource` | ThreatExperts | Microsoft 脅威エキスパート | ブランドの再ブランド化 |
+| `DetectionSource` | サードパーティ TI | サードパーティ製センサー | ブランドの再ブランド化 |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender for Endpoint | ブランドの再ブランド化 |
+|`ServiceSource` |Microsoft Threat Protection   | Microsoft 365 Defender | ブランドの再ブランド化 |
+| `ServiceSource` | Office 365 ATP  |Microsoft Defender for Office 365 | ブランドの再ブランド化 |
+| `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | ブランドの再ブランド化 |
+
+`DetectionSource` は [、AlertInfo テーブルで使用](advanced-hunting-alertinfo-table.md) できます。 `ServiceSource` は [、AlertEvidence テーブルと](advanced-hunting-alertevidence-table.md) [AlertInfo テーブルで使用](advanced-hunting-alertinfo-table.md) できます。 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
