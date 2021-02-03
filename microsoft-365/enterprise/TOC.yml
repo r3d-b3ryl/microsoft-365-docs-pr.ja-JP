@@ -478,16 +478,20 @@
   href: 'https://docs.microsoft.com/windows/deployment/'
 - name: Microsoft 365 Apps for enterprise
   href: 'https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps'
+- name: Surface デバイス
+  href: 'https://docs.microsoft.com/surface/deploy'
+- name: デバイスの管理
+  items:
+    - name: ロードマップ
+      href: device-management-roadmap-microsoft-365.md
+- name: Microsoft Edge
+  href: 'https://docs.microsoft.com/deployedge/deploy-edge-plan-deployment'
 - name: 展開および更新プログラム チャネルの構成例
   items:
     - name: 概要
       href: deploy-update-channels-examples.md
     - name: 最新リリースの幅広い展開
       href: deploy-update-channels-examples-rapid-deploy.md
-- name: デバイスの管理
-  items:
-    - name: ロードマップ
-      href: device-management-roadmap-microsoft-365.md
 - name: PowerShell で Microsoft 365を管理する
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items:

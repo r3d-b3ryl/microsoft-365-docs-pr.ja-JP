@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/15/2019
+ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846966"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068975"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -83,14 +83,14 @@ Microsoft 365 E3の ユーザーは、これらのアドオンを使用して、
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Windows 7 および Office 2010 のクライアントとサーバーのサポート終了
 
-[Windows 7](https://aka.ms/win7upgrade) は、 **2020 年 1 月 14 日** にサポートが終了しました。
+[Windows 7](https://aka.ms/win7upgrade) は、**2020 年 1 月 14 日** にサポートが終了しました。
 
-これらの製品は、 **2020 年 10 月 13 日** にサポートが終了しました:
+これらの製品は、**2020 年 10 月 13 日** にサポートが終了しました:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
-[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) は、 **2021 年 4 月 13 日** にサポートが終了します。
+[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) は、**2021 年 4 月 13 日** にサポートが終了します。
 
 これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](../downloads/Office2010Windows7EndOfSupport.pdf)をご覧ください。
 
@@ -131,6 +131,24 @@ Microsoft 365 for Enterprise の製品、機能、コンポーネントの展開
 - [Microsoft 365 政府機関向け](https://www.microsoft.com/microsoft-365/government)
 
   米国の公共部門の従業員が協力して安全に作業できるようにします。
+
+## <a name="best-together-with-surface-and-the-edge-browser"></a>Surface および Edge ブラウザーの Best together
+
+Microsoft 365 for Enterprise、Microsoft Surface デバイス、およびMicrosoft Edge ブラウザーの最適な組み合わせにより、ユーザーの統合された安全な生産性を最適化します。 この製品間の統合により、次のものが提供されます。
+
+- 共通の ID およびサインイン セキュリティ インフラストラクチャ。
+- 検索、コラボレーション、生産性、コンプライアンスのための統合されたローカル アプリとクラウド アプリ。
+- ハードウェア、ブラウザー、ローカル アプリ、クラウド アプリの包括的で統合されたセキュリティ。
+- インストールと更新の IT 管理のための共通インフラストラクチャ。
+
+これは、企業組織の例です。
+
+![Microsoft 365、Surface デバイス、および Edge ブラウザーを備えた企業組織](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+
+中小企業および教育機関の詳細情報と構成例については、[Best together ポスター](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)をダウンロードしてください。
+
+[![Surface および Edge ブラウザーの Best together ポスターの画像](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+
 
 ## <a name="microsoft-365-training"></a>Microsoft 365 のトレーニング
 

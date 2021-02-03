@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 307687a277ade03f3ba40852eff15378928465e6
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 751b88ea3dde0c4cf2a33dded26a032a1e320b5e
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788003"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071312"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -224,7 +224,7 @@ Microsoft 365 コンプライアンス センターから、**データ分類** 
 
 Office 365 セキュリティ/コンプライアンス センターには、**情報ガバナンス** > **ダッシュボード** の保持ラベルと同等の概要情報と、**情報ガバナンス** > **ラベル アクティビティ エクスプローラー** の詳細情報があります。 この古い管理センターから保持ラベルを監視する方法の詳細については、次のドキュメントを参照してください:
 - [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
-- [ラベル分析によるラベル使用状況を表示する](label-analytics.md)
+- [データ分類の使用を開始します](data-classification-overview.md)。
 - [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
 
 #### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>コンテンツ検索を使用した特定の保持ラベルを持つすべてのコンテンツの検索
