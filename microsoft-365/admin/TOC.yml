@@ -184,8 +184,6 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: 優先受信トレイをセットアップする
           href: setup/configure-focused-inbox.md
-        - name: メールによる共同作業について
-          href: email/email-collaboration.md
         - name: ユーザーまたは連絡先を配布グループに追加する
           href: email/add-user-or-contact-to-distribution-list.md
         - name: 組織での低優先メールを管理する

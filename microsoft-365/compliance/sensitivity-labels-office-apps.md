@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: デスクトップ、モバイル、および Web 用の Office アプリでユーザーが機度ラベルを使用する方法と、どのアプリが機度ラベルをサポートしているのかについて説明します。
+description: デスクトップ、モバイル、および Web 用の Office アプリでユーザーが機度ラベルを使用する方法、および機度ラベルをサポートするアプリについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 932fb602039a3f2437dfd9cc9db2c2e9438369e3
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 672d99ed4345ee27437cda66087de6e4e3f521bb
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071252"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084592"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -33,7 +33,7 @@ Microsoft 365 コンプライアンス センターまたは同等のラベル�
 
 ## <a name="labeling-client-for-desktop-apps"></a>デスクトップ アプリのラベル付けクライアント
 
-Windows および Mac 用のデスクトップ Officeに組み込みの区別ラベルを使用するには、サブスクリプション エディションの Office。 このラベル付けクライアントは、Office 2016 や Office 2019 などのスタンドアロン エディションOfficeサポートされていません。
+Windows および Mac 用のデスクトップ Officeに組み込む区別ラベルを使用するには、サブスクリプション エディションの Office。 このラベル付けクライアントは、Office 2016 や Office 2019 などのスタンドアロン エディションOfficeサポートされていません。
 
 Windows コンピューターでこれらのスタンドアロン エディションの Office と一緒に区別ラベルを使用するには [、Azure Information Protection 統合ラベル付けクライアントをインストールします](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)。
 
@@ -52,7 +52,7 @@ Office iOS および Android Officeの場合: Office [アプリにOfficeされ�
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Word、Excel、PowerPoint の感度ラベル機能
 
-一覧表示される番号は、各機能Office必要なアプリケーション の最小バージョンです。
+各機能に必要なOfficeの最小バージョンを示す数値を示します。
 
 |機能                                                                                                        |Windows |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
@@ -64,8 +64,8 @@ Office iOS および Android Officeの場合: Office [アプリにOfficeされ�
 |[変数を使用した動的なマーキング](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | レビュー中 |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上          | 16.21+     | 2.21以上 | 16.0.11231以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | レビュー中   | レビュー中         | レビュー中                                                        |
-|[データ分類の使用を開始し](data-classification-overview.md) 、管理者向けデータを送信する                      | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)            | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)        | レビュー中   | レビュー中         | はい <sup>\*</sup>                                                        |
-|[ユーザーに電子メールとドキュメントへのラベルの適用を要求する](#require-users-to-apply-a-label-to-their-email-and-documents)   | プレビュー: 現在のチャネル [への展開 (プレビュー)](https://office.com/insider)             | プレビュー: 現在のチャネル [への展開 (プレビュー)](https://office.com/insider)         | レビュー中   | プレビュー: [ベータ チャネル](https://office.com/insider)         | レビュー中                                            
+|[データ分類の使用を開始し](data-classification-overview.md) 、管理者向けデータを送信する                      | 2011+ | 16.43+ | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider) | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider) | はい <sup>\*</sup>                                                        |
+|[ユーザーに電子メールとドキュメントへのラベルの適用を要求する](#require-users-to-apply-a-label-to-their-email-and-documents)   | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)             | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)         | レビュー中   | ロール アウト: 16.0.13628+ | レビュー中                                            
 |[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009+                                  | ロール アウト: 16.44+ | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |ラベル [付きおよび](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 暗号化 [されたドキュメントの](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) 自動保存と共同編集をサポートする | レビュー中 | レビュー中 | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -76,21 +76,21 @@ Office iOS および Android Officeの場合: Office [アプリにOfficeされ�
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook の感度ラベル機能
 
-一覧表示される番号は、各機能Office必要なアプリケーション の最小バージョンです。
+各機能に必要なOfficeの最小バージョンを示す数値を示します。
 
 |機能                                                                                                        |Outlook for Windows |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[手動でラベルを適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | はい               |
-|[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | はい               |
-|[ラベルを変更する理由を要求する](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | はい               |
-|[カスタム ヘルプ ページへのヘルプ リンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | はい               |
-|[コンテンツをマークする](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | はい               |
+|[手動でラベルを適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 必要               |
+|[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 必要               |
+|[ラベルを変更する理由を要求する](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 必要               |
+|[カスタム ヘルプ ページへのヘルプ リンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 必要               |
+|[コンテンツをマークする](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 必要               |
 |[変数を使用した動的なマーキング](#dynamic-markings-with-variables)                                              | レビュー中                     | レビュー中                 | レビュー中         | レビュー中           | レビュー中               |
-|[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | はい               |
-|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | はい               |
-|[ユーザーに電子メールとドキュメントへのラベルの適用を要求する](#require-users-to-apply-a-label-to-their-email-and-documents)   | プレビュー:[現在のチャネル (プレビュー)](https://office.com/insider)                        | 16.43+                     | レビュー中            | レビュー中                | はい                |
-|[データ分類の使用を開始し](data-classification-overview.md) 、管理者向けデータを送信する                      | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)                       | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)                    | レビュー中           | レビュー中               | はい               |
-|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+                    | レビュー中           | レビュー中               | はい |
+|[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 必要               |
+|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 必要               |
+|[ユーザーに電子メールとドキュメントへのラベルの適用を要求する](#require-users-to-apply-a-label-to-their-email-and-documents)   | プレビュー:[現在のチャネル (プレビュー)](https://office.com/insider)                        | 16.43+                     | レビュー中            | レビュー中                | 必要                |
+|[データ分類の使用を開始し](data-classification-overview.md) 、管理者向けデータを送信する                      | 2011+ | レビュー中 | レビュー中           | レビュー中               | レビュー中 |
+|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+                    | レビュー中           | レビュー中               | 必要 |
 |
 
 
@@ -110,15 +110,15 @@ Office 組み込みのラベル付けクライアントを使用するには、�
 
 2. [Office で **[Sensitivity]** 機能を使用して、Officeラベルを **適用および表示するには 0 に設定します**。 
  
-この設定は、グループ ポリシーを使用するか、クラウド ポリシー Office [使用して展開します](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)。 この設定は、アプリを再起動Office有効になります。
+この設定は、グループ ポリシーを使用するか、クラウド ポリシー Office [使用して展開します](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)。 この設定は、アプリが再起動Office有効になります。
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Officeのラベル付けクライアントと Azure Information Protection クライアント
 
 Azure Information Protection[クライアントの](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) 1 つ (統合ラベル付けクライアントまたは従来の [クライアント)](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)が既定でインストールされている場合、組み込みのラベル付けクライアントは Office アプリでオフになります。 
 
-Office アプリの Azure Information Protection クライアントではなく組み込みのラベル付けを使用するには、前のセクションの手順を使用しますが、グループポリシー設定を設定します。Office の [感度] 機能を使用して、区別ラベルを適用および表示するには **1** に設定します。 
+Office アプリの Azure Information Protection クライアントではなく、組み込みのラベル付けを使用するには、前のセクションの手順を使用しますが、グループポリシー設定 Office の [感度] 機能を使用して、区別ラベルを適用および表示するには **1** に設定します。 
 
-または、Azure Information Protection Officeを無効または **削除します**。 この方法は、1 台のコンピューターとアドホック テストに適しています。 手順については、次のプログラムでアドインを表示、管理 [、インストールOfficeしてください](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
+または、Azure Information Protection Officeを無効または **削除します**。 この方法は、1 台のコンピューターとアドホック テストに適しています。 手順については、次のプログラムでアドインを表示、管理 [、インストールOffice覧ください](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
 
 このアドインを無効にするかOfficeすると、Azure Information Protection クライアントがインストールされたままなので、引き続きアプリの外部にあるファイルにラベルを付Officeできます。 たとえば、エクスプローラーまたは PowerShell を使用します。
 
@@ -136,7 +136,7 @@ Azure Information Protection 統合ラベル付けクライアントは、Open X
 
 Office 365 Message Encryption 用に定義した保護テンプレートなど、管理者が定義した保護テンプレートは、組み込みのラベル付けを使用している場合、Office アプリでは表示されません。 [](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) この簡素化されたエクスペリエンスは、暗号化が有効になっている区別ラベルに同じ設定が含まれているため、保護テンプレートを選択する必要がないことを反映しています。
 
-既存の保護テンプレートをラベルに変換する必要がある場合は、Azure portal と次の手順を使用します。テンプレートをラベルに [変換するには](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels)。
+既存の保護テンプレートをラベルに変換する必要がある場合は、Azure portal と次の手順を使用します。テンプレートをラベルに [変換するには](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels)、
 
 ## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>Information Rights Management (IRM) オプションと感度ラベル
 
@@ -145,17 +145,17 @@ Office 365 Message Encryption 用に定義した保護テンプレートなど�
 - ドキュメントの場合:**ファイル**  >  **情報保護**  >  **ドキュメント**  >  **制限アクセス**
 - 電子メールの場合: [オプション]**タブの**[暗号化>  
   
-ユーザーは、最初にドキュメントまたは電子メールにラベルを付け始め、ラベル構成設定を独自の暗号化設定でいつでも上書きできます。 次に例を示します。
+ユーザーは、最初にドキュメントまたは電子メールにラベルを付け始め、ラベルの構成設定を独自の暗号化設定でいつでも上書きできます。 例:
 
 - ユーザーがドキュメントに **[機密] # [すべての従業員** ] ラベルを適用し、このラベルは組織内のすべてのユーザーに暗号化設定を適用するように構成されています。 次に、このユーザーは IRM 設定を手動で構成して、組織外のユーザーへのアクセスを制限します。 最後の結果は、「Confidential \ All **Employees」** というラベルが付いて暗号化されたドキュメントですが、組織内のユーザーは期待通り開くことができません。
 
 - ユーザーが電子メールに **[機密] # [** 受信者のみ] ラベルを適用し、この電子メールは [転送しない] の暗号化設定 **を適用するように構成されています**。 次に、このユーザーは、電子メールが制限を受け付けなく IRM 設定を手動で構成します。 最後の結果として、"Confidential **\ Recipients Only"** ラベルがあるにもかかわらず、受信者がメールを転送できます。
 
-- ユーザーがドキュメントに [全般 **]** ラベルを適用し、このラベルは暗号化を適用するように構成されていません。 次に、このユーザーは IRM 設定を手動で構成して、ドキュメントへのアクセスを制限します。 最後の結果は、[全般] というラベルが付いたドキュメントですが、暗号化も適用され、一部のユーザーが期待した通り開くことができません。
+- ユーザーがドキュメントに [全般 **]** ラベルを適用し、このラベルは暗号化を適用するように構成されていません。 次に、このユーザーは、ドキュメントへのアクセスを制限する IRM 設定を手動で構成します。 最後の結果は、[全般] というラベルが付いたドキュメントですが、暗号化も適用され、一部のユーザーが期待した通り開くことができません。
 
 ドキュメントまたは電子メールに既にラベルが付けされている場合、コンテンツが暗号化されていない場合、または使用権限がエクスポートまたはフル コントロールである場合、[](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)ユーザーはこれらの操作を実行できます。 
 
-わかりやすいレポートを作成してラベルエクスペリエンスの一貫性を高めるために、ユーザーがドキュメントを保護するためにラベルのみを適用するための適切なラベルとガイダンスを提供します。 次に例を示します。
+わかりやすいレポートを作成してラベルエクスペリエンスの一貫性を高めるために、ユーザーがドキュメントを保護するためにラベルのみを適用するための適切なラベルとガイダンスを提供します。 例:
 
 - ユーザーが独自のアクセス許可を割り当てる必要がある例外の場合は、ユーザーが自分のアクセス許可を割り当て [可能なラベルを提供します](encryption-sensitivity-labels.md#let-users-assign-permissions)。 
 
@@ -164,7 +164,7 @@ Office 365 Message Encryption 用に定義した保護テンプレートなど�
     - **Confidential \ Anyone (暗号化なし)**
 
 > [!NOTE]
-> ユーザーが SharePoint または OneDrive に保存されているラベル付きドキュメントから暗号化を手動で削除し [、SharePoint](sensitivity-labels-sharepoint-onedrive-files.md)および OneDrive の Office ファイルの感度ラベルを有効にした場合、次回ドキュメントにアクセスまたはダウンロードすると、ラベルの暗号化が自動的に復元されます。 
+> ユーザーが SharePoint または OneDrive に保存されているラベル付きドキュメントから暗号化を手動で削除し [、SharePoint](sensitivity-labels-sharepoint-onedrive-files.md)と OneDrive の Office ファイルに対する感度ラベルを有効にした場合、次回ドキュメントにアクセスまたはダウンロードすると、ラベルの暗号化が自動的に復元されます。 
 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>ファイル、電子メール、および添付ファイルに対して感度ラベルを適用する
@@ -183,11 +183,11 @@ Office 365 Message Encryption 用に定義した保護テンプレートなど�
 
 ## <a name="sensitivity-label-compatibility"></a>ラベルの互換性
 
-**RMS** 対応アプリの場合: RMS 対応のアプリケーションで、ラベル付き暗号化されたドキュメント [](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)または電子メールを開き、そのアプリケーションが区別ラベルをサポートしない場合でも、アプリは暗号化と権利管理を適用します。
+**RMS** 対応アプリの場合: RMS 対応アプリケーションで、ラベル付き暗号化されたドキュメントまたは [](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)電子メールを開き、そのアプリケーションが区別ラベルをサポートしない場合でも、アプリは暗号化と権利管理を適用します。
 
-**Azure Information Protection** クライアントを使用すると、Azure Information Protection クライアントを使用して、Office 組み込みのラベル付けクライアントを使用して、ドキュメントやメールに適用する、その他の方法で、ドキュメントや電子メールに適用する区別ラベルを表示および変更できます。
+**Azure Information Protection** クライアントを使用すると、Azure Information Protection クライアントを使用して、Office の組み込みのラベル付けクライアントを使用して、ドキュメントやメールに適用する、その他の方法で、ドキュメントやメールに適用する区別ラベルを表示および変更できます。
 
-**他のバージョンの** Office : 承認されたユーザーは、ラベル付きドキュメントやメールを他のバージョンのドキュメントやメール で開Office。 ただし、ラベルの表示または変更は、サポートされているバージョンまたは Azure Information Protection Office使用する場合のみ可能です。 サポートされているOfficeバージョンについては、前のセクションで [説明します](#support-for-sensitivity-label-capabilities-in-apps)。
+**他のバージョンの** Office : 承認されたユーザーは、ラベル付きドキュメントやメールを他のバージョンのドキュメントや電子メールで開Office。 ただし、ラベルの表示または変更は、サポートされているバージョンまたは Azure Information Protection Office使用する場合のみ可能です。 サポートされているOfficeバージョンについては、前のセクションで [説明します](#support-for-sensitivity-label-capabilities-in-apps)。
 
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>SharePoint および OneDrive ファイルのサポートが、区別ラベルで保護されている
 
@@ -195,7 +195,7 @@ SharePoint または OneDrive のドキュメントに対して Office on the we
 
 ## <a name="support-for-external-users-and-labeled-content"></a>外部ユーザーとラベル付きコンテンツのサポート
 
-ドキュメントまたはメールにラベルを付けすると、ラベルはテナントとラベル GUID を含むメタデータとして保存されます。 ラベル付きドキュメントまたは電子メールが、Office アプリで開いて、そのユーザーが同じテナントに属している場合にのみ、このメタデータが読み取り専用になります。ラベルはアプリに表示されます。 たとえば、Word、PowerPoint、Excel の組み込みのラベル付けでは、ラベル名がステータス バーに表示されます。 
+ドキュメントまたは電子メールにラベルを付けすると、ラベルはテナントとラベル GUID を含むメタデータとして保存されます。 ラベル付きドキュメントまたは電子メールが、Office アプリで開いて、そのユーザーが同じテナントに属している場合にのみ、このメタデータが読み取り専用になります。ラベルはアプリに表示されます。 たとえば、Word、PowerPoint、Excel の組み込みのラベル付けでは、ラベル名がステータス バーに表示されます。 
 
 つまり、異なるラベル名を使用する別の組織とドキュメントを共有する場合、各組織はドキュメントに適用された独自のラベルを適用して表示できます。 ただし、適用されたラベルの次の要素は、組織外のユーザーに表示されます。
 
@@ -207,7 +207,7 @@ SharePoint または OneDrive のドキュメントに対して Office on the we
 
 自分の組織内のユーザーへのアクセスを制限する以外に、Azure Active Directory のアカウントを持つ他のユーザーにアクセスを拡張できます。 すべてのOfficeアプリケーションおよび他の [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 対応アプリケーションは、ユーザーが正常に認証された後、暗号化されたドキュメントを開く可能性があります。
 
-外部ユーザーが Azure Active Directory にアカウントを持たない場合は、テナントのゲスト アカウントを使用して認証できます。 これらのゲスト アカウントは、SharePoint と OneDrive の Office ファイルに対する感度ラベルを有効にした場合に [、SharePoint](sensitivity-labels-sharepoint-onedrive-files.md)または OneDrive の共有ドキュメントにアクセスするためにも使用できます。
+外部ユーザーが Azure Active Directory にアカウントを持たない場合は、テナントのゲスト アカウントを使用して認証できます。 これらのゲスト アカウントは、SharePoint と OneDrive で Office ファイルの感度ラベルを有効にした場合に [、SharePoint](sensitivity-labels-sharepoint-onedrive-files.md)または OneDrive の共有ドキュメントにアクセスするためにも使用できます。
 
 - 1 つのオプションは、これらのゲスト アカウントを自分で作成する方法です。 これらのユーザーが既に使用している任意の電子メール アドレスを指定できます。 たとえば、Gmail アドレスなどです。
     
@@ -215,16 +215,16 @@ SharePoint または OneDrive のドキュメントに対して Office on the we
 
 - もう 1 つのオプションは、SharePoint と OneDrive を [Azure AD B2B (プレビュー)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) と統合して、ユーザーがリンクを共有するときにゲスト アカウントが自動的に作成される方法です。
     
-    このオプションの利点は、アカウントが自動的に作成され、ラベルの構成が簡単になるため、管理オーバーヘッドが最小限に抑えられます。 このシナリオでは、電子メール アドレスを事前[](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users)に知らないため、暗号化オプション [認証されたユーザーを追加する] を選択する必要があります。 欠点は、この設定では、特定のユーザーに対するアクセス権と使用権を制限できない点です。
+    このオプションの利点は、アカウントが自動的に作成され、ラベルの構成が簡単になるため、管理オーバーヘッドが最小限に抑えられます。 このシナリオでは、電子メール アドレスを事前[](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users)に知らないため、暗号化オプション [認証されたユーザーを追加する] を選択する必要があります。 欠点は、この設定では、特定のユーザーに対するアクセス権と使用権を制限できないという点です。
 
-外部ユーザーは、Windows で Microsoft 365 アプリ (以前の Office[365](https://docs.microsoft.com/deployoffice/name-change)アプリ) を使用し、macOS (バージョン 16.42 以上)、Android (バージョン 16.0.13029+)、および iOS (バージョン 2.42 以上) で新しくサポートされている場合、暗号化されたドキュメントに Microsoft アカウントを使用することもできます。 たとえば、誰かが暗号化されたドキュメントを共有し、暗号化設定で Gmail のメール アドレスを指定します。 このユーザーは、Gmail のメール アドレスを使用する独自の Microsoft アカウントを作成できます。 次に、このアカウントでサインインした後、ユーザーが指定した使用制限に従ってドキュメントを開いて編集できます。 このシナリオのチュートリアルの例については、「保護されたドキュメントを開いて [編集する」を参照してください](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+外部ユーザーは、Windows で Microsoft 365 アプリ (以前の Office[365](https://docs.microsoft.com/deployoffice/name-change)アプリ) を使用し、macOS (バージョン 16.42 以上)、Android (バージョン 16.0.13029+)、および iOS (バージョン 2.42 以上) で新しくサポートされている場合、暗号化されたドキュメントに Microsoft アカウントを使用することもできます。 たとえば、誰かが暗号化されたドキュメントを共有し、暗号化設定で Gmail のメール アドレスを指定します。 このユーザーは、Gmail のメール アドレスを使用する独自の Microsoft アカウントを作成できます。 次に、このアカウントでサインインした後、そのユーザーに対して指定された使用制限に従って、ドキュメントを開いて編集できます。 このシナリオのチュートリアルの例については、「保護されたドキュメントを開いて [編集する」を参照してください](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
 
 > [!NOTE]
 > Microsoft アカウントのメール アドレスは、暗号化設定へのアクセスを制限するために指定されたメール アドレスと一致している必要があります。
 
 Microsoft アカウントを持つユーザーが暗号化されたドキュメントをこの方法で開くと、同じ名前のゲスト アカウントが存在しない場合、テナントのゲスト アカウントが自動的に作成されます。 ゲスト アカウントが存在する場合、Windows デスクトップ アプリから暗号化されたドキュメントを開くだけでなく、ブラウザー (Office on the web) を使用して SharePoint および OneDrive でドキュメントを開く際に使用できます。 
 
-ただし、レプリケーションの待機時間が理由で、このシナリオでは自動ゲスト アカウントが直ちに作成されるわけではありません。 ラベルの暗号化設定の一部として個人の電子メール アドレスを指定する場合は、Azure Active Directory で対応するゲスト アカウントを作成することをお勧めします。 次に、これらのユーザーに、組織から暗号化されたドキュメントを開くのにこのアカウントを使用する必要があるという情報を提供します。
+ただし、レプリケーションの遅延のため、このシナリオでは自動ゲスト アカウントは直ちに作成されません。 ラベルの暗号化設定の一部として個人の電子メール アドレスを指定する場合は、Azure Active Directory で対応するゲスト アカウントを作成することをお勧めします。 次に、これらのユーザーに、組織から暗号化されたドキュメントを開くのにこのアカウントを使用する必要があるという情報を知らせたとします。
 
 > [!TIP]
 > 外部ユーザーがサポートされている Office クライアント アプリを使用すると確信できないので、(特定のユーザーの) ゲスト アカウントを作成した後、または SharePoint と OneDrive を [Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) (認証済みユーザー用) と統合した後で SharePoint と OneDrive からのリンクを共有する方が、外部ユーザーとの安全な共同作業をサポートするための信頼性の高い方法です。
@@ -240,7 +240,7 @@ Officeでは、使用するアプリに応じて、コンテンツのマーキ�
 | Outlook on the web、iOS、および Android | Exchange Online が電子メールを送信した後 | Exchange Online が電子メールを送信した後 |
 |
 
-アプリの外部にあるファイルにOffice適用するソリューションでは、ファイルにラベル付けメタデータを適用します。 このシナリオでは、ラベルの構成からのコンテンツ マーキングはファイルに挿入されませんが、暗号化が適用されます。 
+アプリの外部にあるファイルにOfficeを適用するソリューションでは、ファイルにラベル付けメタデータを適用します。 このシナリオでは、ラベルの構成からのコンテンツ マーキングはファイルに挿入されませんが、暗号化が適用されます。 
 
 これらのファイルを Office デスクトップ アプリで開いた場合、コンテンツマーキングは Azure Information Protection 統合ラベル付けクライアントによって自動的に適用されます。 デスクトップ、モバイル、または Web アプリに組み込みのラベル付けを使用する場合、コンテンツ マーキングは自動的には適用されません。
 
@@ -259,7 +259,7 @@ Officeでは、使用するアプリに応じて、コンテンツのマーキ�
 ### <a name="dynamic-markings-with-variables"></a>変数を使用した動的なマーキング
 
 > [!IMPORTANT]
-> 現時点では、すべてのプラットフォーム上のすべてのアプリが、ヘッダー、フッター、透かしに指定できる動的コンテンツ マーキングをサポートしているのではありません。 この機能をサポートしないアプリの場合、マークは変数を解決するのではなく、ラベル構成で指定された元のテキストとして適用されます。
+> 現時点では、すべてのプラットフォーム上のすべてのアプリが、ヘッダー、フッター、透かしに対して指定できる動的コンテンツ マーキングをサポートしているのではありません。 この機能をサポートしないアプリの場合、マークは変数を解決するのではなく、ラベル構成で指定された元のテキストとして適用されます。
 > 
 > Azure Information Protection 統合ラベル付けクライアントは、動的マーキングをサポートします。 組み込みのラベル付けOffice、このページの「 [機能](#support-for-sensitivity-label-capabilities-in-apps) 」セクションの表を参照してください。
 
@@ -317,7 +317,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 > [!IMPORTANT]
 > 必須のラベル付けとも呼ばれるすべてのプラットフォーム上のすべてのアプリが、現在、ユーザーの電子メールとドキュメントにラベルを適用する必要があるというポリシー設定 **をサポートしているのではありません**。
 > 
-> [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)統合ラベル付けクライアントは、必須のラベル付けと、Office アプリに組み込まれるラベル付けを[](#support-for-sensitivity-label-capabilities-in-apps)サポートしています。このページの機能セクションの表をご覧ください。
+> [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)統合ラベル付けクライアントは、必須のラベル付けと、Office アプリに組み込まれるラベル付けを[](#support-for-sensitivity-label-capabilities-in-apps)サポートしています。このページの機能に関するセクションの表をご覧ください。
 
 このポリシー設定が選択されている場合、ポリシーが割り当てられているユーザーは、次のシナリオで、感度ラベルを選択して適用する必要があります。
 
@@ -326,7 +326,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
     - メール (Outlook): ユーザーがラベルのないメッセージを送信した時点。
 
 - アプリに組み込Officeの場合:
-    - ドキュメント ((Word、Excel、PowerPoint) の場合: ラベルのないドキュメントを開く、または保存する場合。
+    - ドキュメントの場合 ((Word、Excel、PowerPoint): ラベルのないドキュメントを開く、または保存する場合。
     - メール (Outlook): ユーザーがラベルのない電子メール メッセージを送信した時点。
 
 組み込みのラベル付けの追加情報:
