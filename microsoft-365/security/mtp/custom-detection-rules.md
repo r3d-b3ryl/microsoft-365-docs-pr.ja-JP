@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8c7e47e66f9e5543cc122c5b5154207cae836d2a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d58292f658446259bfab5b1b55c8b462d081421c
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932924"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080625"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -59,7 +59,7 @@ ms.locfileid: "49932924"
 Microsoft 365 セキュリティ センターで、[高度な検索] に移動 **し、既存** のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、考えられる結果を把握します。
 
 >[!IMPORTANT]
->サービスが返すアラートの数が多すぎるのを防ぐため、各ルールは、実行するたびに生成されるアラートが 100 件に制限されています。 ルールを作成する前に、通常の毎日のアクティビティに対する警告を回避するためにクエリを調整してください。
+>サービスが返すアラートの数が多すぎるのを防ぐため、各ルールは、実行されるたびに生成されるアラートを 100 件に制限しています。 ルールを作成する前に、通常の毎日のアクティビティに対する警告を回避するためにクエリを調整してください。
 
 
 #### <a name="required-columns-in-the-query-results"></a>クエリ結果に必要な列
@@ -85,11 +85,11 @@ Microsoft 365 セキュリティ センターで、[高度な検索] に移動 *
 >[!NOTE]
 >新しいテーブルが高度な検索スキーマに追加された場合、追加のエンティティ [のサポートが追加されます](advanced-hunting-schema-tables.md)。
 
-結果をカスタマイズまたは集計するために or 演算子を使用しないクエリなどの単純なクエリは、通常、これらの一般的な `project` `summarize` 列を返します。
+結果のカスタマイズや集計に演算子を使用しないクエリなどの単純なクエリは、通常、これらの一般的な列 `project` `summarize` を返します。
 
 より複雑なクエリがこれらの列を返すのを確実にするためのさまざまな方法があります。 たとえば、次のような列の下のエンティティで集計してカウントする場合でも、一意の各イベントが関係する最新のイベントから取得して取得 `DeviceId` `Timestamp` `ReportId` できます `DeviceId` 。
 
-次のサンプル クエリでは、ウイルス対策が検出された一意のデバイス ( ) の数をカウントし、このカウントを使用して、5 つを超える検出を持つデバイス `DeviceId` のみを検索します。 最新の関数と `Timestamp` 対応する関数を返す場合は `ReportId` 、 `summarize` 演算子を使用 `arg_max` します。
+次のサンプル クエリでは、ウイルス対策が検出された一意のデバイス ( ) の数をカウントし、このカウントを使用して、5 つを超える検出を持つデバイスのみを `DeviceId` 検索します。 最新の関数と `Timestamp` 対応する関数を返す場合は `ReportId` 、 `summarize` 演算子を使用 `arg_max` します。
 
 ```kusto
 DeviceEvents
@@ -138,17 +138,17 @@ DeviceEvents
 
 #### <a name="actions-on-devices"></a>デバイスでのアクション
 これらのアクションは、クエリ結果の列にある `DeviceId` デバイスに適用されます。
-- **デバイスの分離**— Microsoft Defender for Endpoint を使用して完全なネットワーク分離を適用し、デバイスがアプリケーションまたはサービスに接続しなくします。 [エンドポイント用 Microsoft Defender コンピューターの分離の詳細](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **デバイスの分離**— Microsoft Defender for Endpoint を使用して完全なネットワーク分離を適用し、デバイスがアプリケーションまたはサービスに接続しなくします。 [Microsoft Defender for Endpoint コンピューターの分離の詳細](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **調査パッケージの収集**- ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender for Endpoint 調査パッケージの詳細](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **ウイルス対策スキャンの** 実行 - デバイスでフル Windows Defenderウイルス対策スキャンを実行します
 - **調査の開始**- デバイスで [自動調査](mtp-autoir.md) を開始する
 - **アプリの実行を** 制限する - Microsoft が発行する証明書で署名されたファイルのみを実行できるデバイスの制限を設定します。 [Microsoft Defender for Endpoint でのアプリの制限について詳しくは、次をご覧ください。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>ファイルに対するアクション
-このオプションを選択すると、クエリ結果の[, ] 列にあるファイルに対して検疫ファイルアクション `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` を適用できます。 この操作により、ファイルが現在の場所から削除され、コピーが検疫されます。
+選択すると、クエリ結果の [,  , ] () 列にあるファイルに検疫ファイルアクション `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` を適用できます。 この操作により、ファイルが現在の場所から削除され、コピーが検疫されます。
 
 #### <a name="actions-on-users"></a>ユーザーに対するアクション
-このオプションを選択すると、クエリ **結果** の [, ] 列にあるユーザーに対して [侵害されたユーザーとしてマークする `AccountObjectId` ] `InitiatingProcessAccountObjectId` `RecipientObjectId` アクションが実行されます。 このアクションは、Azure Active Directory でユーザーのリスク レベルを "高" に設定し、対応する ID 保護 [ポリシーをトリガーします](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+このオプションを選択すると、クエリ **結果** の [, ] 列にあるユーザーに対して [侵害されたユーザーとしてマークする `AccountObjectId` ] `InitiatingProcessAccountObjectId` `RecipientObjectId` アクションが実行されます。 このアクションは、Azure Active Directory でユーザーのリスク レベルを "高" に設定し、対応する ID 保護ポリシー [をトリガーします](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
 > カスタム検出ルールの許可またはブロックのアクションは、Microsoft 365 Defender では現在サポートされていません。
@@ -187,8 +187,8 @@ DeviceEvents
 
 このページからルールに対して次のアクションを実行することもできます。
 
-- **実行**- ルールを直ちに実行します。 これにより、次の実行の間隔もリセットされます。
-- **編集**- クエリを変更せずにルールを変更する
+- **Run**-run the rule immediately. これにより、次の実行の間隔もリセットされます。
+- **Edit**- クエリを変更せずにルールを変更する
 - **クエリの変更**- 高度な検索でクエリを編集する
 - **オンにする**  / **無効にする**- ルールを有効にするか、ルールの実行を停止する
 - **削除**- ルールをオフにし、削除する
@@ -207,7 +207,8 @@ In the rule details screen (**Hunting**  >  **Custom detections**  >  **[Rule na
 >[!TIP]
 >テーブル内のアイテムに関する情報をすばやく表示してアクションを実行するには、表の左側にある選択列 [&#10003;] を使用します。
 
-## <a name="related-topic"></a>関連トピック
+## <a name="see-also"></a>関連項目
 - [カスタム検出の概要](custom-detections-overview.md)
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [高度な捜索のクエリ言語について学習する](advanced-hunting-query-language.md)
+- [Microsoft Defender for Endpoint から高度な検索クエリを移行する](advanced-hunting-migrate-from-mdatp.md)

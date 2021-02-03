@@ -23,20 +23,18 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Microsoft 365 管理センターで配布グループまたはリストを作成し、各受信者の名前を入力せずにグループにメールを送信する方法について説明します。
-ms.openlocfilehash: ffdafb7ef74e908f340a9ac80db0abffb1841442
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7c416612fa241d7fec11a2e24a29e149594951e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926308"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080471"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで配布グループを作成する
   
 個々の受信者の名前を入力せずにユーザーのグループに電子メールを送信する場合に使用されます。配布グループ (配布リスト) は、特定のディスカッションの件名 (「マーケティング」など) または頻繁に通信する必要がある共通の作業を共有するユーザーによって編成されます。 また、メールを複数のメール アドレスに自動的に転送する方法も提供されます。
 
 配布グループは、配布リストとも呼ばれる場合があります。
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/e8747233-4f1c-4bf4-81cf-2a4ea9ccd80d?autoplay=false]
   
 ## <a name="create-a-distribution-group-list"></a>配布グループ (リスト) を作成する
 

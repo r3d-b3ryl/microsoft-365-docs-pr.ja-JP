@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de9fb28f09b88cf1730f3bb3539234f6a03ec2e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928810"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080715"
 ---
 # <a name="custom-detections-overview"></a>カスタム検出の概要
 
@@ -41,6 +41,7 @@ ms.locfileid: "49928810"
 - 高度な検索クエリから構築されたルールベースの検出に関するアラート
 - 自動応答アクション
 
-## <a name="related-topic"></a>関連トピック
+## <a name="see-also"></a>関連項目
 - [カスタム検出ルールの作成と管理](custom-detection-rules.md)
 - [高度な検出の概要](advanced-hunting-overview.md)
+- [Microsoft Defender for Endpoint から高度な検索クエリを移行する](advanced-hunting-migrate-from-mdatp.md)

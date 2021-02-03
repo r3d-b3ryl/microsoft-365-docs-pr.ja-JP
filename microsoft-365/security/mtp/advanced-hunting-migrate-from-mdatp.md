@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 08bdd1e22040166bb3becac32580a185c74f34a0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 4e008488bdd733c9a7ce5b418fb838e0fe880d9d
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932312"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080744"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint から高度な検索クエリを移行する
 
@@ -48,7 +48,7 @@ ms.locfileid: "49932312"
 既存の Defender for Endpoint ワークフローに影響を与えることなく移行できます。 保存されたクエリはそのまま残り、カスタム検出ルールは引き続き実行され、アラートが生成されます。 ただし、Microsoft 365 Defender に表示されます。 
 
 ## <a name="schema-tables-in-microsoft-365-defender-only"></a>Microsoft 365 Defender のスキーマ テーブルのみ
-[Microsoft 365 Defender 高度な](advanced-hunting-schema-tables.md)検索スキーマには、さまざまな Microsoft 365 セキュリティ ソリューションのデータを含む追加のテーブルが含まれています。 次の表は、Microsoft 365 Defender でのみ使用できます。
+[Microsoft 365 Defender 高度](advanced-hunting-schema-tables.md)な検索スキーマには、さまざまな Microsoft 365 セキュリティ ソリューションのデータを含む追加のテーブルが含まれています。 次の表は、Microsoft 365 Defender でのみ使用できます。
 
 | テーブル名 | 説明 |
 |------------|-------------|
@@ -65,12 +65,12 @@ ms.locfileid: "49932312"
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | ユーザー、グループ、デバイス、ドメインなどの Active Directory オブジェクトのクエリ |
 
 ## <a name="map-devicealertevents-table"></a>DeviceAlertEvents テーブルのマップ
-The `AlertInfo` and tables replace the table in the Microsoft Defender for Endpoint `AlertEvidence` `DeviceAlertEvents` schema. デバイス通知に関するデータに加えて、これら 2 つの表には、ID、アプリ、メールのアラートに関するデータが含まれています。
+The `AlertInfo` and tables replace the table in the Microsoft Defender for Endpoint `AlertEvidence` `DeviceAlertEvents` schema. デバイスアラートに関するデータに加えて、これら 2 つの表には、ID、アプリ、メールのアラートに関するデータが含まれています。
 
 次の表を使用して、列とテーブルの列のマップ `DeviceAlertEvents` 方法を `AlertInfo` 確認 `AlertEvidence` します。
 
 >[!TIP]
->次の表の列に加えて、この表には、さまざまなソースからのアラートのより包括的な画像を提供する他の多くの列 `AlertEvidence` が含まれています。 [AlertEvidence のすべての列を表示する](advanced-hunting-alertevidence-table.md) 
+>次の表の列に加えて、この表には、さまざまなソースからのアラートのより包括的な画像を提供するその他の多くの列 `AlertEvidence` が含まれています。 [AlertEvidence のすべての列を表示する](advanced-hunting-alertevidence-table.md) 
 
 | DeviceAlertEvents 列 | Microsoft 365 Defender で同じデータを検索する場所 |
 |-------------|-----------|-------------|-------------|
@@ -92,7 +92,7 @@ The `AlertInfo` and tables replace the table in the Microsoft Defender for Endpo
 ## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>エンドポイント用の既存の Microsoft Defender クエリを調整する
 Microsoft Defender for Endpoint のクエリは、テーブルを参照しない限り、同じ方法で動作 `DeviceAlertEvents` します。 Microsoft 365 Defender でこれらのクエリを使用するには、次の変更を適用します。
 
-- 置換 `DeviceAlertEvents` 後 `AlertInfo` の文字列を指定します。
+- 置換 `DeviceAlertEvents` 後 `AlertInfo` の文字列
 - テーブルとテーブル `AlertInfo` を `AlertEvidence` 結合して `AlertId` 、同等のデータを取得します。
 
 ### <a name="original-query"></a>元のクエリ
@@ -114,7 +114,66 @@ AlertInfo
 | where FileName == "powershell.exe"
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="migrate-custom-detection-rules"></a>カスタム検出ルールを移行する
+
+Microsoft Defender for Endpoint ルールが Microsoft 365 Defender で編集された場合、結果のクエリでデバイス テーブルのみを検索する場合と同様に機能し続ける。 たとえば、デバイス テーブルのみを照会するカスタム検出ルールによって生成されたアラートは、Microsoft Defender for Endpoint での構成方法に応じて、SIEM に配信され、電子メール通知を生成します。 Defender for Endpoint の既存の抑制ルールも引き続き適用されます。
+
+Microsoft 365 Defender でのみ使用可能な ID と電子メール テーブルを照会する Defender for Endpoint ルールを編集すると、そのルールは自動的に Microsoft 365 Defender に移動されます。 
+
+移行されたルールによって生成されたアラート:
+
+- Defender for Endpoint ポータルに表示されなくなりました (Microsoft Defender セキュリティ センター)
+- SIEM への配信を停止するか、メール通知を生成します。 この変更を回避するには、Microsoft 365 Defender 経由で通知を構成してアラートを取得します。 [Microsoft 365 Defender API を使用](api-incident.md)して、顧客検出のアラートや関連するインシデントに関する通知を受信できます。
+- Microsoft Defender for Endpoint の抑制ルールでは抑制されません。 特定のユーザー、デバイス、またはメールボックスに対してアラートが生成されるのを防ぐには、対応するクエリを変更して、それらのエンティティを明示的に除外します。
+
+この方法でルールを編集すると、そのような変更が適用される前に確認を求めるメッセージが表示されます。
+
+Microsoft 365 Defender ポータルのカスタム検出ルールによって生成された新しいアラートは、次の情報を提供するアラート ページに表示されます。
+
+- アラートのタイトルと説明 
+- 影響を受け資産
+- アラートに対して実行されたアクション
+- アラートをトリガーしたクエリ結果 
+- カスタム検出ルールに関する情報 
+ 
+![新しいアラート ページの画像](../../media/newalertpage.png)
+
+## <a name="write-queries-without-devicealertevents"></a>DeviceAlertEvents を使用せずにクエリを書き込む
+
+Microsoft 365 Defender スキーマでは、さまざまなソースからのアラートに付随するさまざまな情報のセットに対応するために、表 `AlertInfo` `AlertEvidence` と表が提供されています。 
+
+Microsoft Defender for Endpoint スキーマの表から取得するために使用したのと同じアラート情報を取得するには、テーブルをフィルター処理し、各一意 `DeviceAlertEvents` `AlertInfo` の `ServiceSource` ID `AlertEvidence` をテーブルに結合します。テーブルは、詳細なイベントとエンティティ情報を提供します。 
+
+以下のサンプル クエリを参照してください。
+
+```kusto
+AlertInfo
+| where Timestamp > ago(7d)
+| where ServiceSource == "Microsoft Defender for Endpoint"
+| join AlertEvidence on AlertId
+```
+
+このクエリは、Microsoft Defender for Endpoint スキーマよりも `DeviceAlertEvents` 多くの列を生成します。 結果を管理可能な状態に保つには、関心 `project` のある列のみを取得するために使用します。 次の例では、調査で PowerShell アクティビティが検出された場合に関心のある列をプロジェクトします。
+
+```kusto
+AlertInfo
+| where Timestamp > ago(7d)
+| where ServiceSource == "Microsoft Defender for Endpoint"
+    and AttackTechniques has "powershell"
+| join AlertEvidence on AlertId
+| project Timestamp, Title, AlertId, DeviceName, FileName, ProcessCommandLine 
+```
+
+通知に関係する特定のエンティティをフィルター処理する場合は、フィルター処理するエンティティの種類と値を指定します `EntityType` 。 次の例では、特定の IP アドレスを検索します。
+
+```kusto
+AlertInfo
+| where Title == "Insert_your_alert_title"
+| join AlertEvidence on AlertId 
+| where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
+```
+
+## <a name="see-also"></a>関連項目
 - [Microsoft 365 Defender を有効にする](advanced-hunting-query-language.md)
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
