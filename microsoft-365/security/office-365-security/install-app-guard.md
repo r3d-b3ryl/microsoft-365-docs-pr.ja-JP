@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 最新のハードウェア ベースの分離を取得します。 悪用や悪意のあるリンクなど、現在および新たな攻撃が従業員の生産性や企業のセキュリティを妨害するのを防ぐ。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9a9c9270f61661982108da518d1bf24d2a717b6a
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: cf02f6776eb68537486b49c4fe45e8f88eeb38c6
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029728"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094881"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向Office Application Guard
 
@@ -40,7 +40,7 @@ Microsoft Defender Application Guard for Office (Office 用 Application Guard) �
 ### <a name="minimum-software-requirements"></a>最小ソフトウェア要件
 
 * **Windows 10**: Windows 10 Enterprise エディション、クライアント ビルド バージョン 2004 (20H1) ビルド 19041 以降
-* **Office**: Office Current Channel Build Version 2011 16.0.13530.10000 以降
+* **Office**: Office Current Channel Build Version 2011 16.0.13530.10000 以降。 32 ビットバージョンと 64 ビット バージョンの両方のOfficeサポートされています。
 * **更新プログラム パッケージ**: Windows 10 の累積的な月次セキュリティ更新 [プログラム KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 システム要件の詳細については、「Microsoft Defender Application Guard のシステム要件」 [を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 更新プログラム チャネルの詳細Office Microsoft [365](https://docs.microsoft.com/deployoffice/overview-update-channels)の更新プログラム チャネルの概要を参照してください。
@@ -71,7 +71,7 @@ Microsoft Defender Application Guard for Office (Office 用 Application Guard) �
 
    代わりに、対応する CSP ポリシーを設定できます。
 
-   > OMA-URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> データ型:**整数** 型 <br> 値: **2**
+   > OMA-URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> データ型: **整数** <br> 値: **2**
 
 4. システムを再起動します。
 
@@ -99,13 +99,13 @@ Application Guard for Office が有効になっているか確認する前に、
 
 Application Guard for Office有効になっているか確認するには、Word、Excel、または PowerPoint を起動し、信頼されていないドキュメントを開きます。 たとえば、インターネットからダウンロードされたドキュメントや、組織外のユーザーからのメールの添付ファイルを開く場合があります。
 
-信頼されていないファイルを初めて開いた場合、次のOfficeスプラッシュ画面が表示される場合があります。 Application Guard for Officeがアクティブ化され、ファイルが開いている間は、しばらくの間表示される場合があります。 信頼されていないファイルをそれ以降に開く方が速くなります。
+信頼されていないファイルを初めて開いた場合、次のOfficeスプラッシュ画面が表示される場合があります。 Application Guard for Officeがアクティブ化され、ファイルが開いている間、しばらくの間表示される場合があります。 信頼されていないファイルをそれ以降に開く方が速くなります。
 
 ![Officeスプラッシュ画面](../../media/ag08-confirm.png)
 
 ファイルを開いた後、ファイルが Application Guard 内でファイルを開いたという視覚的なインジケーターが表示Office。
 
-* リボンの吹き出し
+* リボン内の吹き出し
 
   ![小さな App Guard のメモを示すドキュメント ファイル](../../media/ag09-confirm.png)
 
@@ -122,14 +122,14 @@ Office次のポリシーをサポートし、アプリケーションの Applica
 
 |ポリシー|説明|
 |---|---|
-|アプリケーションに Application Guard を使用Office|このポリシーを有効にすると、Word、Excel、および PowerPoint は、Application Guard for Office の代わりに保護ビュー分離コンテナーを使用する必要があります。 このポリシーを使用すると、Microsoft Edge に対して Application Guard を有効Office問題がある場合に、アプリケーションの Application Guard を一時的に無効にできます。|
+|アプリケーションに Application Guard を使用Office|このポリシーを有効にすると、Word、Excel、および PowerPoint は、Application Guard for Office の代わりに保護ビュー分離コンテナーを使用する必要があります。 このポリシーを使用すると、Microsoft Edge で Application Guard を有効Office問題がある場合に、アプリケーションの Application Guard を一時的に無効にできます。|
 |コンテナーの事前作成Office Application Guard を構成する|このポリシーは、信頼されていないファイルを分離する Office コンテナー用の Application Guard が、実行時のパフォーマンスを向上するために事前に作成されたかどうかを決定します。 この設定を有効にした場合、コンテナーの事前作成を続行する日数を指定するか、Office 組み込みのヒューリスティックでコンテナーを事前に作成できます。
 |Application Guard で開いたドキュメントのコピー/貼りOfficeを許可Office|このポリシーを有効にすると、Application Guard for Office で開いたドキュメントから、外部で開いたドキュメントにコンテンツをコピーして貼り付けできません。|
 |Application Guard でハードウェア アクセラレータを無効にしてOffice|このポリシーは、Application Guard for Officeグラフィックスのレンダリングにハードウェア アクセラレータを使用するかどうかを制御します。 この設定を有効にした場合、Office 用 Application Guard はソフトウェア ベース (CPU) レンダリングを使用し、サード パーティ製のグラフィックス ドライバーを読み込み、接続されているグラフィックス ハードウェアを操作しません。
 |Application Guard でサポートされていないファイルの種類の保護を無効Office|このポリシーは、Application Guard for Office がサポートされていないファイルの種類を開くのをブロックするか、または保護されたビューへのリダイレクトを有効にするかどうかを制御します。
 |Application Guard で開いたドキュメントのカメラとマイクへのアクセスをオフOffice|このポリシーを有効にすると、Officeの Application Guard 内のカメラとマイクへのアクセスがOffice。|
 |Application Guard で開いているドキュメントからの印刷を制限Office|このポリシーを有効にすると、Application Guard で開いたファイルからユーザーが印刷できるプリンターがOffice。 たとえば、このポリシーを使用して、ユーザーが PDF にのみ印刷できるよう制限できます。|
-|ユーザーが Application Guard を削除してファイルを保護Office防ぐ|このポリシーを有効にすると、(Office アプリケーション エクスペリエンス内で) Office 保護の Application Guard を無効にしたり、Application Guard for Office の外部でファイルを開くオプションが削除されます。 <p> **注:** このポリシーは、ファイルから手動で削除するか、ドキュメントを信頼できる場所に移動することでバイパスできます。|
+|ユーザーが Application Guard を削除してファイルを保護Office防ぐ|このポリシーを有効にすると、(Office アプリケーション エクスペリエンス内で) Office 保護のために Application Guard を無効にしたり、Application Guard for Office の外部でファイルを開くオプションが削除されます。 <p> **注:** このポリシーは、ファイルから手動で削除するか、ドキュメントを信頼できる場所に移動することでバイパスできます。|
 |
 
 > [!NOTE]
@@ -198,7 +198,7 @@ Microsoft Defender for Endpoint は、エンタープライズ ネットワー�
 
 * Application Guard では、マクロやコントロールActiveXドキュメント内のアクティブなコンテンツが無効Office。 アクティブなコンテンツを有効にするには、Application Guard 保護を削除する必要があります。
 
-* ネットワーク共有からの信頼できないファイル、または別の組織の OneDrive、OneDrive for Business、または SharePoint Online から共有されたファイルは、Application Guard で読み取り専用として開きます。 ユーザーは、そのようなファイルのローカル コピーを保存してコンテナー内で作業を続行したり、保護を削除して元のファイルを直接操作することができます。
+* ネットワーク共有からの信頼できないファイル、または別の組織の OneDrive、OneDrive for Business、または SharePoint Online から共有されたファイルは、Application Guard で読み取り専用として開きます。 ユーザーは、そのようなファイルのローカル コピーを保存してコンテナー内で作業を続行したり、元のファイルを直接操作する保護を削除することができます。
 
 * Information Rights Management (IRM) によって保護されているファイルは、既定でブロックされます。 このようなファイルを保護ビューで開く場合、管理者は、組織でサポートされていないファイルの種類のポリシー設定を構成する必要があります。
 
@@ -212,7 +212,7 @@ Microsoft Defender for Endpoint は、エンタープライズ ネットワー�
 
 ## <a name="performance-optimizations-for-application-guard-for-office"></a>Application Guard for Office のパフォーマンスの最適化
 
-このセクションでは、Application Guard で使用されるパフォーマンスの最適化の概要をOffice。 この情報は、Application Guard が有効な場合に、管理者が Office またはシステム全体のパフォーマンスに関連するユーザーからのレポートを診断するのに役立ちます。
+このセクションでは、Application Guard for Office で使用されるパフォーマンスの最適化の概要について説明します。 この情報は、Application Guard が有効な場合に、管理者が Office またはシステム全体のパフォーマンスに関連するユーザーからのレポートを診断するのに役立ちます。
 
 Application Guard は、仮想化されたコンテナーを使用して、信頼されていないドキュメントをシステムから分離します。 コンテナーを作成し、application Guard コンテナーを設定して Office ドキュメントを開くプロセスでは、パフォーマンスのオーバーヘッドが発生し、ユーザーが信頼されていないドキュメントを開く際のユーザー エクスペリエンスに悪影響を及ぼす可能性があります。
 

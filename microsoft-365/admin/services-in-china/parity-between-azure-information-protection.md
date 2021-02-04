@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用している Office 365 の Azure Information Protection (AIP) と、中国のお客様向け構成方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: cee50384587ffc3e1e43eb9c6bb07d2e0ced7e13
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988046"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099680"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet が運用Office 365 に対する Azure Information Protection のサポート
 
@@ -35,7 +35,7 @@ ms.locfileid: "49988046"
 
 この目標は、21Vianet が運用している Office 365 用の AIP を使用して、中国のお客様にすべての商用機能を提供することで実現しますが、強調表示する機能が不足しています。
 
-次の一覧には、21Vianet が運用している Office 365 用の AIP と 2021 年 1 月の商用サービスの既存のギャップが含まれています。
+以下に、21Vianet が運用している Office 365 用の AIP と、2021 年 1 月の商用サービスの間の既存のギャップを示します。
 
 - Information Rights Management (IRM) は、Microsoft 365 Apps for enterprise (ビルド 11731.10000 以上) でのみサポートされます。 Office 2010、Office 2013、その他の Office 2016 バージョンはサポートされていません。
 
@@ -50,6 +50,8 @@ ms.locfileid: "49988046"
 - 現在、RMS 用モバイル AD拡張機能は使用できません。
 
 - モバイル [ビューアーは](/azure/information-protection/rms-client/mobile-app-faq) 、Azure China 21Vianet ではサポートされていません。
+
+- Azure ポータルの AIP 領域は、中国のお客様は利用できません。 オンプレミス スキャナーのインストールやコンテンツ スキャン ジョブの管理など、ポータルでアクションを実行する代わりに [PowerShell](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) コマンドを使用します。
 
 ## <a name="configure-aip-for-customers-in-china"></a>中国のお客様向け AIP の構成
 
@@ -101,7 +103,7 @@ ms.locfileid: "49988046"
     - Target = `[GUID].rms.aadrm.cn` (GUID は RMS ID)
     - Priority、Weight、Seconds、TTL = 既定値
 
-3. Azure portal でカスタム ドメインをテナントに [関連付ける](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)。 これにより、DNS のエントリが追加されます。DNS 設定に値を追加した後、検証に数分かかる場合があります。
+3. Azure portal でカスタム ドメインをテナントに [関連付ける](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)。 これにより、DNS にエントリが追加されます。DNS 設定に値を追加した後、検証に数分かかる場合があります。
 
 4. 対応するグローバル管理者の資格情報を使用して Microsoft 365 管理センターにログインし、ユーザー作成用のドメイン (たとえば `contoso.cn` ) を追加します。 検証プロセスでは、追加の DNS 変更が必要になる場合があります。 確認が完了すると、ユーザーを作成できます。
 
@@ -132,7 +134,7 @@ Microsoft ダウンロード センターから AIP 統合ラベル付け [ク�
 
 ### <a name="step-4-configure-aip-apps-on-windows"></a>手順 4: Windows で AIP アプリを構成する
 
-Windows 上の AIP アプリは、Azure China の正しい主権クラウドを指す次のレジストリ キーを必要とします。
+Windows 上の AIP アプリは、Azure China の正しい主権クラウドを指し示す次のレジストリ キーを必要とします。
 
 - レジストリ ノード = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
 - Name = `CloudEnvType`
@@ -140,7 +142,7 @@ Windows 上の AIP アプリは、Azure China の正しい主権クラウドを�
 - Type = `REG_DWORD`
 
 > [!IMPORTANT]
-> アンインストール後にレジストリ キーが削除されるのを確認してください。 キーが空、正しくない、または存在しない場合、機能は既定値 (商用クラウドの既定値 = 0) として動作します。 キーが空または正しくない場合は、印刷エラーもログに追加されます。
+> アンインストール後にレジストリ キーが削除されるのを確認してください。 キーが空、正しくない、または存在しない場合、機能は既定値として動作します (商用クラウドの既定値は 0 です)。 キーが空または正しくない場合は、印刷エラーもログに追加されます。
 
 ### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>手順 5: AIP オンプレミス スキャナーをインストールし、コンテンツ スキャン ジョブを管理する
 
@@ -158,4 +160,4 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
 | [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | コンテンツ スキャン ジョブの設定を定義します。 |
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | コンテンツ スキャン ジョブの既存のリポジトリの設定を定義します。 |
 
-詳細については [、「Azure Information Protection](/azure/information-protection/deploy-aip-scanner) 統合ラベル付けスキャナーとは」および [「PowerShell](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)のみを使用してコンテンツ スキャン ジョブを管理する」を参照してください。
+詳細については [、「Azure Information Protection](/azure/information-protection/deploy-aip-scanner) 統合ラベルスキャナーとは」および [「PowerShell](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)のみを使用してコンテンツ スキャン ジョブを管理する」を参照してください。

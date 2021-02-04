@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループについて説明します。
-ms.openlocfilehash: b3bc0c30f4ac292da7af46678fc742854984db12
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d5c15c13d46738ac9de701b5a39f47274b9f1e5
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925352"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094735"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -64,7 +64,7 @@ Microsoft 365 管理センターでグループを作成および管理できる
 
 Microsoft 365 グループのライフサイクルを管理するより自動化された方法が必要な場合は、有効期限ポリシーを使用して、特定の時間間隔でグループを期限切れにできます。 グループの所有者は、グループの有効期限の 30 日、15 日前にメールを受け取り、必要に応じてグループを更新できます。 参照: [Microsoft 365 グループの有効期限ポリシー](office-365-groups-expiration-policy.md)。
 
-グループは、Microsoft 365 管理センターから、または [PowerShell を使用](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel)して管理できます。
+グループは、Microsoft 365 管理センターから、または [PowerShell を使用](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)して管理できます。
 
 大企業や企業など、多数のユーザーが含む場合は、さまざまな目的でグループを作成するユーザーが多い場合があります。 ベスト プラクティスについては [、「Microsoft 365](plan-for-groups-governance.md) グループでのガバナンスの計画」を確認することを強くお勧めします。
 
@@ -94,12 +94,12 @@ Microsoft 365 グループには、次の制限が適用されます。
 - 外部ユーザーのアクセス
 - 管理されていないデバイスへのアクセス
 
-たとえば、高機密というラベルを作成し、このラベルで作成されたグループをプライベートにし、外部ユーザーを許可しないという指定を行います。 組織内のユーザーがグループの作成時にこのラベルを選択すると、グループはプライベートに設定され、グループメンバーはグループに外部ユーザーを追加できない。
+たとえば、高機密というラベルを作成し、このラベルで作成されたグループをプライベートにし、外部ユーザーを許可しないという指定を行います。 組織内のユーザーがグループの作成時にこのラベルを選択すると、グループはプライベートに設定され、グループ メンバーはグループに外部ユーザーを追加できない。
 
 > [!IMPORTANT]
 > 現在分類ラベルを使用している場合、そのラベルは、グループを作成するユーザーは、そのラベルを使用できなくなりました。 
 
-区別ラベルの作成、管理、および使用の詳細については、「Microsoft [Teams、Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)グループ、および SharePoint サイトのコンテンツを保護するために、感度ラベルを使用する」を参照してください。
+区別ラベルの作成、管理、および使用の詳細については [、「Microsoft Teams、Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)グループ、および SharePoint サイトのコンテンツを保護するために、感度ラベルを使用する」を参照してください。
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>グループが含まれる Microsoft 365 プランは何ですか?
 

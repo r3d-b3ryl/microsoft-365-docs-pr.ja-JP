@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: 31badcb2ab0102584e3addf3ed4d1549afe78525
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929423"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080682"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
 
@@ -192,7 +192,7 @@ ms.locfileid: "49929423"
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>キーワード [Keyword 要素、Group 要素、Term 要素、matchStyle 属性、caseSensitive 属性]
 
-従業員 ID などの機密情報を特定するときに、多くの場合、補強証拠としてキーワードが必要になります。たとえば、9 桁の数値と一致するだけでなく、"カード"、"バッジ"、"ID" などの単語を検索することがあります。このような場合に Keyword 要素を使用します。Keyword 要素には id 属性があり、複数のパターンまたはエンティティの複数の Match 要素から参照できます。
+従業員 ID などの機密情報を特定するときに、多くの場合、補強証拠としてキーワードが必要になります。たとえば、9 桁の数値と一致するだけでなく、"カード"、"バッジ"、"ID" などの単語を検索することがあります。このような場合に Keyword 要素を使用します。Keyword 要素には ID 属性があり、複数のパターンまたはエンティティの複数の Match 要素から参照できます。
   
 キーワードは、Group 要素の Term 要素の一覧として含まれます。Group 要素には、2 つの有効値を持つ matchStyle 属性があります。
   
@@ -428,6 +428,14 @@ Version 要素も重要です。ルール パッケージを初めてアップ�
 - グループに無制限のリピーター (「\*」や「+」など) を含めることはできません。
     
   たとえば、"(xx)\*" や "(xx)+" では検証に合格しません。
+  
+- キーワードの長さは最大 50 文字です。  グループ内にこれを超えるキーワードがある場合、推奨される解決策は、用語のグループを[キーワード ディクショナリ](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary)として作成し、ファイル内の Match または idMatch のエンティティの一部として XML 構造内のキーワード ディクショナリの GUID を参照することです。
+
+- 各カスタム機密情報タイプには、合計で最大 2048 個のキーワードを含めることができます。
+
+- PowerShell コマンドレットを使用する場合、逆シリアル化されたデータの最大戻りサイズは約 1 メガバイトです。   これは、XML ファイルのサイズに影響します。 処理時にエラーが発生しない一貫した結果を得るための推奨制限として、アップロードされたファイルを最大 512 メガバイトに制限してください。
+
+- XML 構造では、スペース、タブ、キャリッジ リターン/ラインフィード エントリなどの書式設定文字は必要ありません。  アップロードのスペースを最適化するときは、このことに注意してください。
     
 パフォーマンスに影響する可能性のある問題がカスタムの機密情報の種類に含まれている場合は、アップロードされず、次のいずれかのエラー メッセージが表示されることがあります。
   

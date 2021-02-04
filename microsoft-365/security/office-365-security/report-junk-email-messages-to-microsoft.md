@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、良いメッセージや悪いメッセージやファイルを分析のために Microsoft に報告するさまざまな方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 52133756ffab28975c1d384c7e455892ce6b0dfc
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 601d0c599a815529540281679bd2b0f907031058
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029176"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099692"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>メッセージとファイルを Microsoft に報告する
 
@@ -41,8 +41,10 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 |[Outlook on the web で迷惑メールとフィッシングメールを報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Exchange Online メールボックスを持つ組織 (スタンドアロン EOP では使用できません) には、Web 上の Outlook の組み込み機能を使用します。 <p> ユーザーが報告するメッセージは、管理者 [提出ポータルで利用できます](admin-submission.md)。 <p> 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。|
 |[iOS および Android 用の Outlook で迷惑メールとフィッシングメールを報告する](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Exchange Online メールボックスを使用している組織では、iOS および Android 用の Outlook の組み込み機能を使用します (スタンドアロンの EOP では使用できません)。 <p> ユーザーが報告するメッセージは、管理者 [提出ポータルで利用できます](admin-submission.md)。 <p> 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。|
 |[分析のためにメッセージを Microsoft に手動で送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|スパム、スパム、フィッシングではなく、特定の Microsoft 電子メール アドレスに添付メッセージを手動で送信します。|
-|[メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|ユーザーが分析のために Microsoft にメッセージを報告したときに通知するメール フロー ルール (トランスポート ルールとも呼ばれる) を作成する方法について説明します。
-|||
+|[メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|ユーザーが分析のために Microsoft にメッセージを報告したときに通知するメール フロー ルール (トランスポート ルールとも呼ばれる) を作成する方法について説明します。|
 |[マルウェアとマルウェア以外のマルウェアを分析のために Microsoft に送信する](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Microsoft セキュリティ インテリジェンス サイトを使用して、添付ファイルや他のファイルを送信します。|
 
 スパムまたはフィッシングメッセージが配信される代わりに検疫された場合、ユーザーはセキュリティ/コンプライアンス センターの検疫ポータルから Microsoft にメッセージ&できます。 詳細については [、「Microsoft 365 で検疫済みメッセージをユーザーとして検索して解放する」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
+
+> [!NOTE]
+> Microsoft への提出からのデータは、北米のデータ センターの Office 365 コンプライアンスの境界に存在します。 データは、フィルターの有効性を向上させるために、エンジニアリング チームのアナリストによってレビューされます。

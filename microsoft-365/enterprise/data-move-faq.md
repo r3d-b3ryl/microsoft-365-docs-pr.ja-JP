@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 description: コア データを新しい Office 365 データセンター geo に移行する方法についてよく寄せられる質問 (FAQ) に対する回答を示します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 49ddcbf3a1aa8d91bd8202894e114fe50624720a
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: a7e59622e35604ebd9befbbe17a8a125ed15e101
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780262"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094657"
 ---
 # <a name="data-move-general-faq"></a>データ移行についての一般的な FAQ
 
@@ -38,7 +38,7 @@ ms.locfileid: "49780262"
 
 ## <a name="what-is-in-scope-for-teams-migration"></a>Teams の移行の対象は何ですか?
 
-Exchange Online、SharePoint Online、OneDrive for Business に加えて、Microsoft は Teams データをローカル データセンターに移行します。 
+Exchange Online、SharePoint Online、OneDrive for Business に加えて、Microsoft は Teams のデータをローカル データセンターに移行します。 
 - Teams チャット メッセージ (プライベート メッセージやチャネル メッセージを含む)。 
 - チャットで使用される Teams の画像。 
 
@@ -50,7 +50,7 @@ Exchange Online と SharePoint Online/OneDrive for Business の間の共有依�
 
 ## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a>どのように確実に移行中の顧客データを保護し、ダウンタイムが発生しないようにするのですか?
   
-データの移動は、エンド ユーザーへの影響を最小限に抑えた、バック エンド サービス操作です。 影響を受け得る機能は、データの移行中 [と移行後に一覧表示されます](during-and-after-your-data-move.md)。 可用性については Microsoft Online Services サービス レベル アグリーメント [(SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) に準拠しています。そのため、お客様が移行中に準備または監視する必要は何もありません。 
+データの移動は、エンド ユーザーへの影響を最小限に抑えた、バック エンド サービス操作です。 影響を受け得る機能は、データの移行中 [と移行後に一覧表示されます](during-and-after-your-data-move.md)。 可用性については、Microsoft Online Services サービス レベル契約 [(SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) に準拠しています。そのため、移行中にユーザーが準備または監視する必要は何もありません。 
   
 すべての Microsoft 365 サービスはデータセンターで同じバージョンを実行します。そのため、一貫した機能を確実に利用できます。 このプロセス中、サービスは完全にサポートされます。
   
@@ -60,7 +60,7 @@ Exchange Online と SharePoint Online/OneDrive for Business の間の共有依�
 
  ## <a name="where-is-my-core-customer-data-located"></a>コア カスタマー データはどこに保存されていますか?
 
-顧客テナント管理者は、いつでも管理センターでデータの場所カードを表示して、各サービスの保存場所 (特にテナント用) の主要な顧客データを確認できます。  [また、Microsoft 365](https://office.com/datamaps)対話型データセンター マップ上のデータセンター geo、データセンター、および Office 365 顧客データの場所を、新しいテナントの保存場所にある現在の既定のコア 顧客データの参照として公開します。 保存されている顧客データの場所は、Microsoft 365 管理センターの [組織プロファイル] の [データの場所] セクションで確認できます。  
+顧客テナント管理者は、いつでも管理センターでデータの場所カードを表示して、各サービスの保存場所 (特にテナント用) のコア カスタマー データを確認できます。  [また、Microsoft 365](https://office.com/datamaps)対話型データセンター マップ上のデータセンター geo、データセンター、および Office 365 の顧客データの場所を、新しいテナントの保存場所にある現在の既定のコア 顧客データの参照として公開しています。 保存されている顧客データの場所は、Microsoft 365 管理センターの [組織プロファイル] の [データの場所] セクションで確認できます。  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>いつから移行をリクエストできますか?
   
@@ -76,7 +76,7 @@ Exchange Online と SharePoint Online/OneDrive for Business の間の共有依�
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>期限までに移行をリクエストしないと、どうなりますか?
   
-開いている登録期間後に移行の要求を受け付けできません。
+オープン登録期間後に移行の要求を受け付けできません。
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>ネットワークのパフォーマンスを向上するために、データを移動したらどうなりますか?
   
@@ -100,7 +100,7 @@ Microsoft が移行の具体的な日付や期間を共有することもでき�
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>移行が完了したことはどのようにわかりますか?
   
-各サービスのデータの移動が完了したという確認については、Microsoft 365 メッセージ センターをご覧ください。 各サービスのデータを移動すると、完了通知が投稿されます。そのため、Exchange Online、SharePoint Online、Skype for Business Online の 3 つの完了通知が表示されます。 Microsoft 365 管理センターの [組織プロファイル] の [データの場所] セクションで、保存されている顧客データの場所を確認することもできます。  
+各サービスのデータの移動が完了したという確認については、Microsoft 365 メッセージ センターをご覧ください。 各サービスのデータが移動すると、完了通知が投稿されます。そのため、Exchange Online、SharePoint Online、Skype for Business Online にそれぞれ 1 通の完了通知が表示されます。 Microsoft 365 管理センターの [組織プロファイル] の下にある [データの場所] セクションで、保存されている顧客データの場所を確認することもできます。  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>私は新しいデータセンター geo の 1 つで Microsoft 365 のお客様ですが、サインアップ時に別の国を選択しました。 新しいデータセンター geo に移行するにはどうすればよいですか?
 
@@ -108,7 +108,7 @@ Microsoft が移行の具体的な日付や期間を共有することもでき�
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>Exchange Online の移行中に Microsoft 365 へのメール データの移行が行っている場合は、どうなるでしょうか。
 
-これは非常に一般的なシナリオであり、完全にサポートされています。 データセンター geo 間のクラウド移行は、オンプレミスからクラウド メールボックスへの移行に干渉しません。
+これは非常に一般的なシナリオであり、完全にサポートされています。  データセンター geo 間のクラウド移行は、オンプレミスからクラウド メールボックスへの移行に干渉しません。
   
  ## <a name="can-i-pilot-some-users"></a>一部のユーザーを先に移行できますか?
   
@@ -122,11 +122,11 @@ Microsoft が移行の具体的な日付や期間を共有することもでき�
   
 ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>私の顧客データは新しいデータセンター geo に既に移行しました。 戻すことはできますか?
  
-いいえ、できません。 新しい geo のデータセンターに移行したお客様は、元の geo に戻ることはできません。 任意の geo の顧客として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。 [Microsoft 365 Multi Geo](https://aka.ms/multi-geo) は、アドオンとして一部のお客様が利用できます。また、1 つのテナントで複数のサテライト geo を作成し、データ常駐契約を持つこれらの地域にユーザー データを移動することができます。
+いいえ、できません。 新しい geo のデータセンターに移行したお客様は、元の geo に戻ることはできません。 任意の geo の顧客として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。 [Microsoft 365 Multi Geo](https://aka.ms/multi-geo) は、アドオンとして一部のお客様が利用できます。また、1 つのテナントで複数のサテライト geo を作成し、データ常駐契約を持つこれらの地域にユーザー データを移動できます。
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>新しいデータセンターでホストされている Microsoft 365 テナントは、国外のユーザーが利用できますか?
   
-はい。 Microsoft は、2,700 を超えるインターネット サービス プロバイダー (ISP) とのピアリング契約を締結し、世界中の 35 か国で 130 以上の場所にパブリック インターネット接続を持つ大規模なグローバル ネットワークを維持しています。 インターネット上のどの場所にいるユーザーでも、データセンターにアクセスできます。
+はい。 Microsoft は、2,700 を超えるインターネット サービス プロバイダー (ISP) とのピアリング契約を締結し、世界中の 35 か国の 130 以上の場所にパブリック インターネット接続を持つ大規模なグローバル ネットワークを維持しています。 インターネット上のどの場所にいるユーザーでも、データセンターにアクセスできます。
 
 ## <a name="my-tenant-has-configured-the-multi-geo-add-on-can-i-still-enroll-in-my-tenant-in-the-microsoft-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>テナントが複数地域アドオン [を構成しました](https://aka.ms/multi-geo)。 Microsoft 365 Move Program でテナントに登録して、既定の geo を変更し、サテライト地域に含めないユーザーを新しい既定の geo に移動できますか。
 

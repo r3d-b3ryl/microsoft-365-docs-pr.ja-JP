@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a479d1bf7fee95a7d8ba862674cd75bfd3c699c7
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: df09f72e8bb5aee78ca4b45ce2804774ee16cbf2
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932564"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097118"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>ID およびデバイス アクセス ポリシーを実装するための前提条件となる作業
 
@@ -46,7 +46,7 @@ ms.locfileid: "49932564"
 |[PHS を構成します](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  これは、漏洩した資格情報を検出し、リスクベースの条件付きアクセスに対応するために有効にする必要があります。 **注:** これは、組織がフェデレーション認証を使用するかどうかに関係なく必要です。|クラウド専用|
 |[シームレスなシングル サインオンを有効にして](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) 、組織のネットワークに接続されている組織のデバイスでユーザーを自動的にサインインします。|クラウド専用およびフェデレーション|
 |[名前付きネットワークを構成します](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal)。 Azure AD Identity Protection は使用できるすべてのセッション データを収集し、分析してリスク スコアを生成します。 Azure または名前付きネットワーク構成では、組織のネットワークのパブリック IP 範囲AD指定することをお勧めします。 これらの範囲からのトラフィックにはリスク スコアが低下し、組織環境外からのトラフィックには高いリスク スコアが与えられる。||
-|[セルフサービスによるパスワードリセット (SSPR)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)と多要素認証 (MFA) に対してすべてのユーザーを登録します。 Azure AD多要素認証のユーザーを登録することをお勧めします。 Azure AD Identity Protection は、Azure AD 多要素認証を使用して、追加のセキュリティ検証を実行します。 また、最適なサインイン エクスペリエンスを提供するために、ユーザーがデバイスに [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) アプリと Microsoft ポータル サイト アプリをインストールすることをお勧めします。 これらは、プラットフォームごとにアプリ ストアからインストールできます。||
+|[セルフサービスによるパスワードのリセット (SSPR)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)と多要素認証 (MFA) に対してすべてのユーザーを登録します。 Azure AD多要素認証のユーザーを登録することをお勧めします。 Azure AD Identity Protection は、Azure AD 多要素認証を使用して、追加のセキュリティ検証を実行します。 また、最適なサインイン エクスペリエンスを提供するために、ユーザーがデバイスに [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) アプリと Microsoft ポータル サイト アプリをインストールすることをお勧めします。 これらは、プラットフォームごとにアプリ ストアからインストールできます。||
 |[ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にします](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。 条件付きアクセスでは、アプリに接続しているデバイスがドメインに参加しているか、準拠しているかが確認されます。 Windows コンピューターでこの方法をサポートするには、デバイスを Azure AD に登録する必要があります。  この記事では、自動デバイス登録を構成する方法について説明します。|クラウド専用|
 |**サポート チームを用意します**。 MFA を完了できないユーザーのための計画を立てます。 これは、ポリシーの除外グループに追加するか、新しい MFA 情報を登録する可能性があります。 これらのセキュリティに依存する変更を行う前に、実際のユーザーが要求を行っている必要があります。 同意を支援するようにユーザーの上司に依頼する方法も効果的です。||
 |[オンプレミス AD へのパスワード ライトバックを構成します](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 パスワードの書き戻しによりADリスクの高いアカウント侵害が検出された場合に、ユーザーにオンプレミスのパスワードの変更を要求できます。 Azure AD Connect を使用してこの機能を有効にするには、Azure AD Connectセットアップ ウィザードのオプション機能画面でパスワードの書き戻しを有効にするか、Windows PowerShell を使用して有効にします。|クラウド専用|
@@ -63,7 +63,7 @@ ms.locfileid: "49932564"
 
 Windows 10 (バージョン 2004 以降) をお勧めします。Azure は、オンプレミスと Azure の両方で可能な限りスムーズな SSO エクスペリエンスを提供するように設計AD。 Azure AD に直接参加するように、または組織がオンプレミスの AD ドメイン参加を使用している場合は、それらのデバイスを Azure AD に自動的にサイレント 登録するように構成する必要 [があります](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。
 
-BYOD Windows デバイスの場合、ユーザーは [仕事用または学校用のアカウント **の追加] を使用できます**。 Windows 10 デバイスの Google Chrome ブラウザーのユーザー[](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog)は、Microsoft Edge ユーザーと同じスムーズなサインイン エクスペリエンスを実現するために拡張機能をインストールする必要があります。 また、組織にドメインに参加している Windows 8 または 8.1 デバイスがある場合は、Windows 10 以外のコンピューター用に Microsoft Workplace Join をインストールできます。 [パッケージをダウンロードして、](https://www.microsoft.com/download/details.aspx?id=53554) デバイスを Azure AD。
+BYOD Windows デバイスの場合、ユーザーは [仕事用または学校用アカウント **の追加] を使用できます**。 Windows 10 デバイスの Google Chrome ブラウザーのユーザー[](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog)は、Microsoft Edge ユーザーと同じスムーズなサインイン エクスペリエンスを実現するために拡張機能をインストールする必要があります。 また、組織にドメインに参加している Windows 8 または 8.1 デバイスがある場合は、Windows 10 以外のコンピューター用に Microsoft Workplace Join をインストールできます。 [パッケージをダウンロードして、](https://www.microsoft.com/download/details.aspx?id=53554) デバイスを Azure AD。
 
 ### <a name="ios-devices"></a>iOS デバイス
 
@@ -107,7 +107,7 @@ BYOD Windows デバイスの場合、ユーザーは [仕事用または学校�
 Microsoft 365 でのクライアント サポートの詳細については、次の記事を参照してください。
 
 - [Microsoft 365 クライアント アプリのサポート - 条件付きアクセス](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 クライアント アプリのサポート - 最新の認証](../../enterprise/microsoft-365-client-support-modern-authentication.md)
+- [Microsoft 365 クライアント アプリのサポート - 多要素認証](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>管理者アカウントの保護
 

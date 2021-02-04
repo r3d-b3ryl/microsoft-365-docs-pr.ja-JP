@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 クライアント アプリのサポート: 条件付きアクセス'
+title: 'Microsoft 365 クライアント アプリのサポート: 多要素認証'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -7,34 +7,36 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
+search.appverid:
+- MET150
 f1.keywords:
 - NOCSH
-description: この記事では、Microsoft 365 の条件付きアクセスをサポートするプラットフォーム、クライアント、および PowerShell モジュールについて説明します。
+description: この記事では、Microsoft 365 の多要素認証をサポートするプラットフォーム、クライアント、および PowerShell モジュールについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
+ms.openlocfilehash: fdec611fc595cdc15abb0fc1fb7a998f7a615ff7
 ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097248"
+ms.locfileid: "50097470"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 クライアント アプリのサポート: 条件付きアクセス
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 クライアント アプリのサポート: 多要素認証
 
-最新の職場では、ユーザーはどこからでもさまざまなデバイスやアプリを使用して組織のリソースにアクセスできます。 その結果、リソースにアクセスできるユーザーに焦点を当てるだけで十分ではありません。 組織は、アクセス制御インフラストラクチャでリソースにアクセスする方法と場所もサポートする必要があります。
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Azure Active Directory デバイス、場所、多要素認証ベースの条件付きアクセスを使用すると、この新しい要件を満たします。 条件付きアクセスは Azure Active Directory の機能で、環境内のアプリへのアクセスに対する制御を適用できます。すべてのコントロールは、特定の条件に基づいて、および中央の場所から管理されます。
+サインインの追加レベルのセキュリティを提供するために、クライアントは多要素認証 (MFA) を使用するように構成できます。MFA は、次に基づいてユーザー パスワードと追加のユーザー検証方法の両方を使用します。
 
-Azure Active Directory 条件付 [きアクセスについて詳しくは、次をご覧ください](/azure/active-directory/conditional-access/)。
+- スマートフォンなど、簡単に複製できない所有物。
+- 指紋、顔、その他の生体認証属性など、ユーザーが独自に持っているもの
+
+多要素認証 [について詳しくは、次のリンクを参照してください](/azure/active-directory/authentication/multi-factor-authentication)。
 
 ## <a name="supported-clients--platforms"></a>サポートされているクライアント&プラットフォーム
 
-次のクライアントとプラットフォームの最新バージョンでは、条件付きアクセスがサポートされています。 Microsoft 365 でのプラットフォーム サポートの詳細については [、「Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)のシステム要件」を参照してください。
-
+次のクライアントとプラットフォームの最新バージョンは、多要素認証をサポートしています。 Microsoft 365 でのプラットフォーム サポートの詳細については [、「Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)のシステム要件」を参照してください。
 <br>
 <br>
 
@@ -44,7 +46,7 @@ Azure Active Directory 条件付 [きアクセスについて詳しくは、次�
 | Access | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
 | Azure Admin | N/A | N/A | N/A | N/A | N/A |
 | ポータル サイト | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A |
-| Cortana | 計画済み | 計画済み | N/A | ![サポート](../media/check-mark.png) | N/A |
+| Cortana | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | ![サポート](../media/check-mark.png) | N/A |
 | Delve | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
 | Edge | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | ![サポート](../media/check-mark.png) |
 | Excel | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
@@ -59,13 +61,14 @@ Azure Active Directory 条件付 [きアクセスについて詳しくは、次�
 | OneNote | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
 | Outlook | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
 | Planner | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
-| Power アプリ | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | 計画済み | N/A |
+| Power アプリ | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | ![サポート](../media/check-mark.png) | N/A |
 | Power Automate | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
 | Power BI | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
 | PowerPoint | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
 | Project | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
 | Publisher | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
-| Skype for Business | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A ||
+| Skype for Business | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | ![サポート](../media/check-mark.png) |
+| Skype for Business 管理者 | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
 | SharePoint | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
 | SharePoint Online 管理者 | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
 | 付箋 | N/A | N/A | N/A | ![サポート](../media/check-mark.png) | N/A |
