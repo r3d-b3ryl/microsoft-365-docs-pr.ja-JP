@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でエクストラクターを作成する方法について説明します。
-ms.openlocfilehash: 7417805f51bb3a1c7b993ce2cd72137478abbc02
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: dd26b049f71688804cd5110a5a0bb7c87950be94
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976545"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080491"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でエクストラクターを作成する
 
@@ -57,6 +57,14 @@ ms.locfileid: "49976545"
 
  
 5個のファイルにラベルを付けたら、トレーニングに移動するように通知バナーが表示されます。 ドキュメントのラベルを追加するか、トレーニングに進めるか、選択することができます。 
+
+### <a name="use-find-to-search-your-file"></a>[検索] を使用してファイルを検索します。
+<b>検索</b>機能を使用して、ドキュメント内でラベルを付けるエンティティを検索できます。
+
+   ![ファイル内で検索する](../media/content-understanding/find-feature.png) 
+
+検索機能は、大きなドキュメントを検索する場合、またはドキュメント内にエンティティのインスタンスが複数ある場合に便利です。 複数のインスタンスが見つかった場合は、検索結果から必要なインスタンスを選択して、ビューアー内のその場所に移動してラベルを付けることができます。
+
 
 ## <a name="add-an-explanation"></a>説明を作成する
 
