@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701154"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080726"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -47,8 +47,6 @@ ms.locfileid: "49701154"
 
 [コンテンツ エクスプローラー] タブにアクセスするには、アカウントはこれらの役割または役割グループに割り当てられたメンバーシップであることが必要です。 
 
-[DLP ポリシー](data-loss-prevention-policies.md)は、**機密情報の種類** として定義されている機密情報を保護するのに役立ちます。 Microsoft 365 には、さまざまな地域にわたる[多くの一般的な機密情報の種類に対する定義](sensitive-information-type-entity-definitions.md)が含まれていて、すぐに使用できる状態になっています。 たとえば、クレジットカード番号、銀行口座番号、国民識別番号、Windows Live ID サービス番号などです。
-
 **Microsoft 365 の役割グループ**
 
 - 全体管理者
@@ -66,7 +64,7 @@ ms.locfileid: "49701154"
 > [!IMPORTANT]
 > これらのアクセス許可は、アイテムにローカルに割り当てられるアクセス許可の代わりに、コンテンツの表示を許可します。 
 
-コンテンツ エクスプローラーにアクセス権を付与する役割は 2 つあります。
+コンテンツ エクスプローラーへのアクセスを許可する 2 つの役割があり、[Microsoft セキュリティ/コンプライアンス センター](https://protection.office.com/permissions)を使用して許可されます。
 
 - **コンテンツ エクスプローラーのリスト ビューアー**: この役割のグループのメンバーシップにより、ユーザーは各アイテムおよびその場所をリスト ビューで確認することができます。 この役割グループには、`data classification list viewer` 役割が事前に割り当てられています。
 

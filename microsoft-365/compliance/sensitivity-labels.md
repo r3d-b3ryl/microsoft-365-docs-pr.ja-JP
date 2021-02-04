@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2e334e57b84bea7985983527e600be731e4de20c
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 1cb11573efcb23bbac7cf54e21ee457913b21f18
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058520"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084636"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -216,7 +216,7 @@ Microsoft 365 の秘密度ラベルを使用することにより、これらす
 
 ユーザーは複数のラベル ポリシーに含めることができ、その場合、複数のポリシーのすべての秘密度ラベルがユーザーに表示されます。 ただし、ユーザーに提供されるポリシー設定は、優先度が最も高いラベル ポリシーのもののみです。
 
-すでに 30 分以上経過しており、ユーザーまたはグループに表示されることが想定されるラベルまたはラベル ポリシーの設定が表示されない場合は、秘密度ラベル ポリシーの順序を確認します。 ラベル ポリシーを並べ替えるには、[秘密度ラベル ポリシー] を選択し、右側にある省略記号を選択して **[下へ移動]** または **[上へ移動]** を選択します。
+ユーザーまたはグループに表示されることが想定されるラベルまたはラベル ポリシーの設定が表示されない場合は、秘密度ラベル ポリシーの順序を確認します。 ラベル ポリシーを並べ替えるには、[秘密度ラベル ポリシー] を選択し、右側にある省略記号を選択して **[下へ移動]** または **[上へ移動]** を選択します。
 
 ![機密ラベル ポリシーのページ上の移動オプション](../media/sensitivity-label-policy-priority.png)
 
