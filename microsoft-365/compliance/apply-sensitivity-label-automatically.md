@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044747"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084678"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -227,9 +227,9 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
 1. 自動ラベル付けポリシーを作成して構成する。
 
-2. ポリシーをシミュレーション モードで実行し、24時間後、またはシミュレーションが完了するまで待機します。
+2. ポリシーをシミュレーション モードで実行します。完了までに 48 時間かかる場合があります。
 
-3. 結果を確認し、必要に応じてポリシーを調整します。 シミュレーション モードを再実行し、24時間後、またはシミュレーションが完了するまで待機します。
+3. 結果を確認し、必要に応じてポリシーを調整します。 シミュレーション モードを再実行し、再びシミュレーションが完了するまで待機します。
 
 4. 必要に応じて、手順 3 を繰り返します。
 

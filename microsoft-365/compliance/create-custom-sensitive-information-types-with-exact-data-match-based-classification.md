@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b905e73fe471cc034eae42726a5a86d91a359a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d3d94d585ca0a0e88fb442e658d57bf000ce49bb
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928821"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080518"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -54,8 +54,8 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 > - 中国語 (繁体字)
 > - 韓国語
 > - 日本語
-
->このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
+> 
+> このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
@@ -104,7 +104,7 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
 2. EDM ベースの分類に使用されるフィールドの名前が 1 行目に含まれるように、.csv ファイル内の機密データを構成します。 .csv ファイルには、"ssn"、"birthdate"、"firstname"、"lastname" のフィールド名がある可能性があります。 列見出しの名前にスペースやアンダースコアを含めることはできません。 たとえば、この記事で使用するサンプルの .csv ファイルは *PatientRecords.csv* と呼ばれており、その列には *PatientID*、*MRN*、*LastName*、*FirstName*、*SSN* などが含まれています。
 
-3. 機密データ フィールドの形式に注意してください。 特に、コンテンツにカンマが含まれている可能性のあるフィールド (たとえば、"シアトル, WA" の値を含むストリート アドレス) は、EDM ツールによって解析されるときに、2 つの別のフィールドとして解析されます。 この問題を回避するには、機密データ テーブル内の該当するフィールドが一重引用符または二重引用符で確実に囲まれているようにすることが必要です。 カンマを含むフィールドにスペースが含まれている可能性がある場合は、カスタムの機密情報の種類を作成する必要があります。それは、対応する書式 (コンマとスペースを含む複数の単語を含む文字列) と一致しており、ドキュメントがスキャンされたときに文字列が正しく合致したことを確認します。
+3. 機密データ フィールドの形式に注意してください。 特に、コンテンツにコンマが含まれている可能性のあるフィールド (たとえば、"Seattle,WA" の値を含むストリート アドレス) は、EDM ツールによって解析されるときに、2 つの別のフィールドとして解析されます。 この問題を回避するには、機密データ テーブル内の該当するフィールドが一重引用符または二重引用符で確実に囲まれているようにすることが必要です。 コンマを含むフィールドにスペースも含まれている可能性がある場合は、対応する形式 (たとえば、コンマとスペースを含む複数の単語の文字列) に一致するカスタムの機密情報の種類を作成する必要があります。それにより、ドキュメントがスキャンされたときに文字列が正しく一致するようになります。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>機密情報のデータベースのスキーマを定義する
 
@@ -146,7 +146,7 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
 スキーマ定義に `true` の値に設定された ***caseInsensitive** _ フィールドを含めると、EDM は `PatientID` フィールドの大文字と小文字の違いに基づいてアイテムを除外しません。 したがって、EDM は、`PatientID` _ *FOO-1234** と **fOo-1234** が同一であると見なします。
 
-サポートされている文字を含む **_ignoreDelimiters_*_ フィールドを含めると、EDM は`PatientID`  内のそれらの文字を無視します。 したがって、EDM は、`PatientID` _* FOO-1234** と `PatientID`**FOO＃1234** が同一であると見なします。 `ignoredDelimiters` フラグは英数字以外の文字をサポートします。次にいくつかの例を示します。
+サポートされている文字を含む ***ignoredDelimiters** _ フィールドを含めると、EDM は `PatientID` 内のそれらの文字を無視します。 したがって、EDM は、`PatientID` _ *FOO-1234** と `PatientID` **FOO#1234** が同一であると見なします。 `ignoredDelimiters` フラグは英数字以外の文字をサポートします。次にいくつかの例を示します。
 - \.
 - \-
 - \/
@@ -210,7 +210,7 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
       - **idMatch**: このフィールドは、EDM の主要素を示します。
         - 検索結果: ルックアップで使用するフィールドを指定します。 データストアの EDM スキーマで検索可能なフィールド名を指定します。
-        - 分類: このフィールドでは、EDM ルックアップをトリガーする、機密情報の種類を指定します。 既存の組み込みまたはカスタム分類の名前または GUID を指定できます。
+        - 分類: このフィールドでは、EDM ルックアップをトリガーする、機密情報の種類を指定します。 既存の組み込みまたはカスタムの機密情報の種類の名前または GUID を指定できます。 指定した機密情報の種類に一致する文字列はすべてハッシュされ、機密情報テーブルのすべてのエントリと比較されることに注意してください。 パフォーマンスの問題を回避するために、EDM の分類要素としてカスタムの機密情報の種類を使用する場合は、コンテンツの大部分に一致するもの ("任意の数字" や "任意の 5 文字の単語" など) を使用しないようにします。これには、補助キーワードを追加するか、カスタムの機密情報の種類の定義でのフォーマットを含めます。 
 
       - **Match:** このフィールドは、近接 idMatch で見つかった追加の証拠を示します。
         - Matches: データストアの EDM スキーマで検索可能なフィールド名を指定します。
@@ -369,7 +369,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 クリア テキストの機密データ ファイルを公開したくない場合は、安全な場所にあるコンピューターでハッシュ化し、ハッシュ ファイルとソルト ファイルをご利用の Microsoft 365 テナントに直接接続可能なコンピューターにコピーしてアップロードすることができます。 このシナリオでは、両方のコンピューターに EDMUploadAgent が必要です。
 
 > [!IMPORTANT]
-> 完全一致スキーマと機密情報の種類ウィザードを使用してスキーマ ファイルおよびパターン ファイルの作成する場合、この手順のスキーマをダウンロードする *_必要があります_*。
+> 完全一致スキーマと機密情報の種類ウィザードを使用してスキーマ ファイルおよびパターン ファイルの作成する場合、この手順のスキーマをダウンロードする **必要があります**。
 
 #### <a name="prerequisites"></a>前提条件
 
@@ -380,11 +380,11 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
     - このサンプルでは、csv 形式の **PatientRecords.csv** の機密アイテム ファイル
     -  出力ハッシュ ファイルとソルト ファイル
     - **edm.xml** ファイルのデータストア名 (このサンプルでは `PatientRecords`)
-- [完全一致スキーマと機密情報の種類ウィザード](sit-edm-wizard.md) を使用している場合は、ダウンロードする *_必要が あります_*。
+- [完全一致スキーマと機密情報の種類ウィザード](sit-edm-wizard.md)を使用している場合は、それをダウンロードする ***必要が あります***
 
 #### <a name="set-up-the-security-group-and-user-account"></a>セキュリティ グループとユーザー アカウントをセットアップする
 
-1. 全体管理者として、[サブスクリプションの適切なリンク](#portal-links-for-your-subscription) を使用して管理センターにアクセスし、EDM\_DataUploaders という [セキュリティ グループを作成します](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
+1. 全体管理者として、[サブスクリプションの適切なリンク](#portal-links-for-your-subscription) を使用して管理センターにアクセスし、**EDM\_DataUploaders** という [セキュリティ グループを作成します](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
 
 2. **EDM\_DataUploaders** セキュリティ グループに、1 人以上のユーザーを追加します。 (これらのユーザーは機密情報のデータベースを管理します)。
 
@@ -415,13 +415,13 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 2. 手順 1 で作成したディレクトリに、サブスクリプションに適した [EDM アップロードエージェント](#links-to-edm-upload-agent-by-subscription-type) をダウンロードしてインストールします。
 
-> [!NOTE]
-> 上記リンクにある EDMUploadAgent は、ハッシュ化されたデータに自動的にソルト値を追加するように更新されています。 または、独自のソルト値を提供することもできます。 このバージョンを使用すると、以前のバージョンの EDMUploadAgent は使用できなくなります。
->
-> EDMUploadAgent を使用して特定のデータ ストアにデータをアップロードできるのは、1 日に 2 回だけです。
+   > [!NOTE]
+   > 上記リンクにある EDMUploadAgent は、ハッシュ化されたデータに自動的にソルト値を追加するように更新されています。 または、独自のソルト値を提供することもできます。 このバージョンを使用すると、以前のバージョンの EDMUploadAgent は使用できなくなります。
+   >
+   > EDMUploadAgent を使用して特定のデータ ストアにデータをアップロードできるのは、1 日に 2 回だけです。
 
-> [!TIP]
-> サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
+   > [!TIP]
+   > サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
 
 2. EDM アップロード エージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き、**C:\EDM\Data** ディレクトリに切り替え、次のコマンドを実行します。
 
@@ -429,25 +429,25 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 3. EDM_DataUploaders セキュリティ グループに追加された、Microsoft 365 の職場または学校のアカウントでサインインします。 ユーザー アカウントからご利用のテナント情報を抽出し、接続を行います。
 
-オプション: 完全一致スキーマと機密情報の種類ウィザードを使ってスキーマ ファイルおよびパターン ファイルを作成した場合は、コマンド プロンプト ウィンドウで次のコマンドを実行します。
+   オプション: 完全一致スキーマと機密情報の種類ウィザードを使ってスキーマ ファイルおよびパターン ファイルを作成した場合は、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
-`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+   `EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 4. 機密データをハッシュ化してアップロートするには、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
-`EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
 
-例: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   例: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-これにより、ランダムに生成されたソルト値がハッシュに自動的に追加され、セキュリティが強化されます。 オプションで独自のソルト値を使用する場合は、コマンドに **/Salt<saltvalue>** を追加します。 この値は 64 文字の長さにする必要があり、a-z 文字と 0-9 文字のみを使用することができます。
+   これにより、ランダムに生成されたソルト値がハッシュに自動的に追加され、セキュリティが強化されます。 オプションで独自のソルト値を使用する場合は、コマンドに **/Salt<saltvalue>** を追加します。 この値は 64 文字の長さにする必要があり、a-z 文字と 0-9 文字のみを使用することができます。
 
 5. 次のコマンドを実行してアップロードの状態を確認します。
 
-`EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+   `EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
 
-例: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
+   例: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
 
-**ProcessingInProgress** にある状態を確認します。 状態が **完了** に変わるまで、数分ごとにご確認ください。 状態が完了になれば、EDM データはいつでも使用することができます。
+   **ProcessingInProgress** にある状態を確認します。 状態が **完了** に変わるまで、数分ごとにご確認ください。 状態が完了になれば、EDM データはいつでも使用することができます。
 
 #### <a name="separate-hash-and-upload"></a>ハッシュ化とアップロードを分離する
 
@@ -459,39 +459,38 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 1. コマンド プロンプト ウィンドウで、次のコマンドを実行します。
 
-`EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
+   `EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
 
-例:
+   例:
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-**/Salt<saltvalue>** オプションを指定しなかった場合、このコマンドは次の拡張子を持つハッシュ化されたファイルとソルト ファイルを出力します。
-- .EdmHash
-- .EdmSalt
+   **/Salt<saltvalue>** オプションを指定しなかった場合、このコマンドは次の拡張子を持つハッシュ化されたファイルとソルト ファイルを出力します。
+   - .EdmHash
+   - .EdmSalt
 
 2. これらのファイルを、機密アイテムの csv ファイル (PatientRecords) をテナントにアップロードするために使用するコンピューターへと安全な方法でコピーします。
 
-ハッシュされたデータをアップロードするには、Windows コマンド プロンプトで次のコマンドを実行します。
+   ハッシュされたデータをアップロードするには、Windows コマンド プロンプトで次のコマンドを実行します。
 
-`EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
+   `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-例:
+   例:
 
-> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
-
-
-機密データがアップロードされたことを確認するには、コマンド プロンプト ウィンドウで次のコマンドを実行します。
+   > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 
-`EdmUploadAgent.exe /GetDataStore`
+   機密データがアップロードされたことを確認するには、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
-データ ストアのリストと、それらが最後に更新された日時が表示されます。
+   `EdmUploadAgent.exe /GetDataStore`
 
-特定のストアへのデータのアップロードをすべて表示する場合は、Windows コマンドプロンプトで次のコマンドを実行します。
+   データ ストアのリストと、それらが最後に更新された日時が表示されます。
 
-`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+   特定のストアへのデータのアップロードをすべて表示する場合は、Windows コマンドプロンプトで次のコマンドを実行します。
 
-[機密情報データベースを更新する](#refreshing-your-sensitive-information-database) ためのプロセスとスケジュールのセットアップを進めます。
+   `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+
+   [機密情報データベースを更新する](#refreshing-your-sensitive-information-database) ためのプロセスとスケジュールのセットアップを進めます。
 
 この時点で、Microsoft クラウド サービスで EDM ベースの分類を使用する準備が整いました。 たとえば、[EDM ベースの分類を使用して DLP ポリシーを設定](#to-create-a-dlp-policy-with-edm)できます。
 
@@ -620,7 +619,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 5. **[場所の選択]** タブで **[特定の場所を選択]** を選択し、**[次へ]** を選択します。
 
-6. **[状態]** の列で、**Exchange メール、OneDrive アカウント、Teams チャット、チャネル メッセージ** を選択し、**[次へ]** を選択します。
+6. **[状態]** 列で、**Exchange メール、OneDrive アカウント、Teams チャット、チャネル メッセージ** を選択し、**[次へ]** を選択します。
 
 7. **[ポリシーの設定]** タブで **[詳細な設定を使用]** を選択し、**[次へ]** を選択します。
 
@@ -654,4 +653,3 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
 - [構成可能な一致を使用するために完全一致スキーマを変更する](sit-modify-edm-schema-configurable-match.md)
-

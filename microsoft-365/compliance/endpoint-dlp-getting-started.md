@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: c9b7b10328e80a70f14b8fb40a3bf91cb89dbc88
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: c337d5ccd05ee665b62c9ce5a68abbd8084da943
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867961"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080820"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -77,6 +77,9 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 - コンプライアンス管理者
 - セキュリティ管理者
 - コンプライアンスデータ管理者
+- グローバルリーダー
+- セキュリティ閲覧者
+- レポート閲覧者
 
 ### <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
@@ -86,11 +89,13 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 2. マルウェア対策クライアントのバージョンは 4.18.2009.7 以降です。 Windows セキュリティ アプリを開いて現在のバージョンを確認し、[設定] アイコンを選択して、[バージョン情報] を選択します。 バージョン番号は、マルウェア対策クライアントのバージョンの下に表示されます。 Windows Update KB4052623 をインストールして、最新のマルウェア対策クライアントのバージョンに更新します。 
 
-> [!NOTE]
-> 注: Windows セキュリティ コンポーネントはいずれもアクティブである必要はなく、Windows セキュリティの状態に関係なくエンドポイント DLP を実行できますが、[リアルタイム保護と動作の監視](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) を有効にする必要があります。
+   > [!NOTE]
+   > 注: Windows セキュリティ コンポーネントはいずれもアクティブである必要はなく、Windows セキュリティの状態に関係なくエンドポイント DLP を実行できますが、[リアルタイム保護と動作の監視](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) を有効にする必要があります。
  
-
-3. 次の Windows Update がインストールされています。 注: これらの更新プログラムは、デバイスをエンドポイント DLP にオンボードするための前提条件ではありませんが、重要な問題の修正が含まれているため、製品を使用する前にインストールする必要があります。
+3. 次の Windows Update がインストールされています。 
+ 
+   > [!NOTE]
+   > これらの更新プログラムは、デバイスをエンドポイント DLP にオンボードするための前提条件ではありませんが、重要な問題の修正が含まれているため、製品を使用する前にインストールする必要があります。
 
     - Windows 10 1809 の場合 - KB4559003、KB4577069、KB4580390
     - Windows 10 1903 または 1909 の場合 - KB4559004、KB4577062、KB4580386
@@ -198,7 +203,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 ## <a name="next-steps"></a>次の手順
 デバイスがオンボードされ、Activity Explorer でアクティビティデータを表示できるようになりました。次の手順に進み、機密アイテムを保護する DLP ポリシーを作成します。
 
-- [エンドポイントのデータ損失防止の使用 (プレビュー) ](endpoint-dlp-using.md)
+- [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>こちらもご覧ください
 
