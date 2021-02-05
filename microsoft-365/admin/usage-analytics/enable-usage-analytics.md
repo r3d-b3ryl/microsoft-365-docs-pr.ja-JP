@@ -19,87 +19,87 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: Power BI の Microsoft 365 Usage Analytics テンプレートアプリを使用して、テナントのデータの収集を開始する方法について説明します。
-ms.openlocfilehash: cda5931e81f7ea13208825afa658f1c672a2f326
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+description: Power BI で Microsoft 365 利用状況分析テンプレート アプリを使用して、テナントのデータ収集を開始する方法について説明します。
+ms.openlocfilehash: 98ae107b6777ac97d0be3b37847117c6e20be63d
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071457"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114239"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
-Microsoft 365 usage analytics は、Microsoft 365 US Government Community ではまだ利用できません。
+Microsoft 365 US Government Community では、Microsoft 365 利用状況分析はまだ利用できません。
   
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Microsoft 365 usage analytics を有効にする手順
+## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする手順
 
-Microsoft 365 usage analytics の使用を開始するには、まず、Microsoft 365 管理センターでデータを利用できるようにし、次に Power BI でテンプレートアプリを開始する必要があります。
+Microsoft 365 利用状況分析を開始するには、まず Microsoft 365 管理センターでデータを利用し、次に Power BI でテンプレート アプリを開始する必要があります。
   
 ### <a name="get-power-bi"></a>Power BI を取得する
 
-Power BI をまだ持っていない場合は、 [POWER Bi Pro にサインアップ](https://go.microsoft.com/fwlink/p/?linkid=845347)できます。 [ **無料** ] を選択して試用版にサインアップするか、 **今すぐ購入** して power BI Pro を入手します。
+Power BI をまだお持ちでない場合は [、Power BI Pro にサインアップできます](https://go.microsoft.com/fwlink/p/?linkid=845347)。 試用版 **に無料で** サインアップするか、[今すぐ購入]を選択して Power BI Pro を取得します。
   
   
-[ **製品** ] を展開して Power BI のバージョンを購入することもできます。 
+[ **製品**] を展開して Power BI のバージョンを購入することもできます。 
 
 > [!NOTE]
-> テンプレートアプリをインストール、カスタマイズ、および配布するには、Power BI Pro ライセンスが必要です。 詳細については、「 [前提条件](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)」を参照してください。
+> テンプレート アプリをインストール、カスタマイズ、配布するには、Power BI Pro ライセンスが必要です。 詳細については、「前提条件」を [参照してください](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)。
 
-データを共有するには、お客様とデータを共有しているユーザーの両方が Power BI Pro ライセンスを必要とするか、 [POWER bi プレミアムサービス](https://docs.microsoft.com/power-bi/service-premium-what-is)のワークスペースにコンテンツが存在する必要があります。 
+データを共有するには、自分とデータを共有するユーザー、Power BI Pro ライセンスが必要なユーザー、 [またはコンテンツ](https://docs.microsoft.com/power-bi/service-premium-what-is)が Power BI Premium サービスのワークスペースにある必要があります。 
   
-### <a name="enable-the-template-app"></a>テンプレートアプリを有効にする
+### <a name="enable-the-template-app"></a>テンプレート アプリを有効にする
 
-テンプレートアプリを有効にするには、 **全体管理者** である必要があります。
+テンプレート アプリを有効にするには、グローバル管理者である **必要があります**。
   
-詳細については、「 [管理者ロールについ](../add-users/about-admin-roles.md) て」を参照してください。 
+詳細 [については、管理者ロールに](../add-users/about-admin-roles.md) 関するページを参照してください。 
   
-1. 管理センターで、[ **レポート** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
+1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
     
-2. [ **使用法** ] ページで、 **Microsoft 365 Usage analytics** カードを見つけて、[ **開始** ] を選択します。
+2. [使用状況 **] ページで****、Microsoft 365 利用状況** 分析カードを見つけ、[開始]**を選択します**。
     
-3. 表示された [レポート] パネルで、Power BI to Save **On** the **Microsoft 365 usage analytics が [データを利用できるようにする** ] を設定し \> **Save** ます。 
+3. 表示された [レポート] パネルで、[Power BI の **Microsoft 365** 利用状況分析でデータを利用できる] を [保存時] **に設定** \> **します**。 
   
-テナントのサイズに応じて、データ収集プロセスは 2 ~ 48 時間で完了します。 データ収集が完了すると、 **[POWER BI に移動** ] ボタンが有効になります (灰色ではなくなります)。 
+データ収集プロセスは、テナントのサイズに応じて 2 ~ 48 時間で完了します。 データ **収集が完了すると、[Power BI** に移動] ボタンが有効になります (灰色ではなくなりました)。 
     
-### <a name="start-the-template-app"></a>テンプレートアプリを開始する
+### <a name="start-the-template-app"></a>テンプレート アプリを起動する
 
-テンプレートアプリを開始するには、 **全体管理者** 、 **レポート閲覧** 者、 **Exchange 管理者** 、 **Skype For business 管理** 者、または **SharePoint 管理者** である必要があります。 
+テンプレート アプリを起動するには、グローバル管理者、レポート閲覧者 **、Exchange 管理者****、Skype for Business** 管理者、または SharePoint 管理者である **必要があります**。 
   
-1. テナント ID をコピーして、[ **POWER BI に移動] を** 選択します。
+1. テナント ID をコピーし **、[Power BI に移動] を選択します**。
     
-2.  When you get to Power BI, sign in. 次 **Select Apps** -> に、[ナビゲーション] メニューから [アプリの **取得** ] を選択します。    
+2.  When you get to Power BI, sign in. 次 **に、ナビゲーション** -> **メニューから [アプリを取得** する] を選択します。    
   
-3. [ **アプリ** ] タブで、[検索] ボックスに「microsoft 365」と入力し、[ **microsoft 365 usage analytics** \> **Get now** ] を選択します。
+3. [アプリ **] タブで** 、検索ボックスに「Microsoft 365」と入力し **、[Microsoft 365** 利用状況分析を今すぐ取得] を \> **選択します**。
 
     [![[今すぐ取得] を選択する](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
-4.  アプリがインストールされると、 タイルを選択して開きます。
+4.  アプリがインストールされた後。 タイルを選択して開きます。
 
-5.  [ **アプリの検索** ] を選択して、サンプルデータを含むアプリを表示します。 [ **接続** ] を選択して、アプリを組織のデータに接続します。
+5.  [ **アプリの探索] を** 選択して、サンプル データを含むアプリを表示します。 [ **接続]** を選択して、アプリを組織のデータに接続します。
 
-6.  [ **Microsoft 365 usage analytics に接続** します] 画面で [ **接続** ] を選択し、手順 (1) でコピーしたテナント ID を (ダッシュなしで) 入力して、[ **次へ** ] を選択します。
+6.  Choose **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, then type in the tenant ID (without dashes) you copied in step (1), and select **Next**.
     
-7. 次の画面で、 **認証方法** にサインインして **OAuth2** を選択し \> **Sign in** ます。 他の認証方法を選択した場合は、テンプレートアプリへの接続が失敗します。
+7. 次の画面で、 **認証方法として [OAuth2]** **を** \> **選択** します。 他の認証方法を選択すると、テンプレート アプリへの接続は失敗します。
     
     ![認証方法として Microsoft アカウントを選択する](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
   
-8. テンプレートアプリがインスタンス化されると、Microsoft 365 usage analytics ダッシュボードが web 上の Power BI で利用できるようになります。 ダッシュボードの最初の読み込みには、2 ~ 30 分かかります。
+8. テンプレート アプリがインスタンス化されると、Microsoft 365 利用状況分析ダッシュボードが Power BI on the web で利用できます。 ダッシュボードの初期読み込みには 2 ~ 30 分かかります。
   
-テナントレベルの集計は、を選択した後、すべてのレポートで利用できるようになります。 **ユーザーレベルの詳細は、選択を有効にした後、次の5番目の月の5分の間のみ利用可能になり** ます。 これにより、ユーザーアクティビティの下にあるすべてのレポートが影響を受ける可能性があります (「 [Microsoft 365 usage analytics のレポート](navigate-and-utilize-reports.md) を表示および使用する方法に関するヒント」を参照してください)。
+テナント レベルの集計は、オプトイン後のすべてのレポートで利用できます。 ユーザー レベルの詳細は、オプトイン後、次のカレンダー月の **5 日の周りにのみ利用できます**。 これは、ユーザー アクティビティのすべてのレポートに影響します (これらのレポートを表示および使用する方法のヒントについては [、「Microsoft 365](navigate-and-utilize-reports.md) 利用状況分析のレポートを移動して利用する」を参照してください)。
     
 ## <a name="make-the-collected-data-anonymous"></a>収集されたデータを匿名にする
 
-すべてのレポート用に収集されるデータを匿名にするためには、グローバル管理者になる必要があります。 これにより、レポートおよびテンプレートアプリ内のユーザー、グループ、サイト名など、識別可能な情報が非表示になります。
+すべてのレポート用に収集されるデータを匿名にするためには、グローバル管理者になる必要があります。 これにより、レポートやテンプレート アプリ内のユーザー、グループ、サイト名などの特定可能な情報が非表示になります。
   
-1. 管理センターで、[設定] [ **Settings** \> **組織設定** ] に移動し、[ **サービス** ] タブの [ **レポート** ] を選択します。
+1. In the admin center, go to the **Settings** \> **Org Settings,** and under **Services** tab, choose **Reports**.
     
-2. [ **レポート** ] を選択し、 **匿名識別子を表示** するように選択します。 この設定は、利用状況レポートだけでなく、テンプレートアプリにも適用されます。
+2. [ **レポート] を** 選択し、[匿名識別子を **表示する] を選択します**。 この設定は、利用状況レポートとテンプレート アプリの両方に適用されます。
   
-3. [ **変更の保存** ] を選択します。
+3. [**変更の保存**] を選択します。

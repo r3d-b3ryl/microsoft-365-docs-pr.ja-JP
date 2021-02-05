@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 description: 一般法人向け Microsoft 365 または有料版サブスクリプションをキャンセルする方法について説明します。
 ms.date: ''
-ms.openlocfilehash: 9669551101243f1abe760bf336d3472b50182555
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
-ms.translationtype: HT
+ms.openlocfilehash: 4141de3f1a228f465559212098cf46e68f2844f6
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324281"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114731"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 

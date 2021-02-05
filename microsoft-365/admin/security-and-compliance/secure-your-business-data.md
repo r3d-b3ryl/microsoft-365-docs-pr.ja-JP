@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。 '
-ms.openlocfilehash: a329d2879309812a516191fdbd1858ad10e4beeb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3ae6d896d5ef060e2f077167f81e2029a3a143ac
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926332"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114407"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>ビジネス 向け Microsoft 365 プランをセキュリティで保護する上位 10 の方法
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
@@ -42,10 +42,10 @@ Microsoft のビジネス プランのいずれかを使用している小規模
 
 Microsoft では、サービス プランに適用される次の表に示すタスクを完了してください。
 
-||タスク|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
+||Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-|1 |[多要素認証をセットアップする](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[ユーザーをトレーニングする](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[多要素認証をセットアップする](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[ユーザーをトレーニングする](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[専用の管理者アカウントを使用する](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[メールのマルウェアに対する保護レベルを上げる](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[ランサムウェアから保護する](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -62,7 +62,7 @@ Microsoft では、サービス プランに適用される次の表に示すタ
 ## <a name="1-set-up-multi-factor-authentication"></a>1: 多要素認証を設定する
 <a name="setup"> </a>
 
-多要素認証の使用は、組織のセキュリティを強化するための最も簡単で最も効果的な方法の 1 つです。 思ったより簡単です。ログイン時に多要素認証を行うということは、Microsoft 365 にアクセスするために電話からコードを入力するということです。 これにより、ハッカーがパスワードを知っている場合に、ハッカーが引き継ぐのを防ぐ可能性があります。 多要素認証は、2 段階認証とも呼ばれる。 個人は、Google アカウントや Microsoft アカウントなど、ほとんどのアカウントに 2 段階認証を簡単に追加できます。 個人用 Microsoft アカウントに [2 段階認証を追加する方法を次に示します](https://go.microsoft.com/fwlink/p/?linkid=2016403)。
+多要素認証の使用は、組織のセキュリティを強化するための最も簡単で最も効果的な方法の 1 つです。 思ったより簡単です。ログイン時に多要素認証を行うということは、Microsoft 365 にアクセスするために電話からコードを入力するということです。 これにより、ハッカーがパスワードを知っている場合に、ハッカーが引き継ぐのを防ぐ可能性があります。 多要素認証は、2 段階認証とも呼ばれる。 個人は、Google アカウントや Microsoft アカウントなど、ほとんどのアカウントに 2 段階認証を簡単に追加できます。 個人用の Microsoft アカウントに [2 段階認証を追加する方法を次に示します](https://go.microsoft.com/fwlink/p/?linkid=2016403)。
 
 Microsoft 365 を使用している企業の場合は、ユーザーが多要素認証を使用してログインする必要がある設定を追加します。 この変更を行う場合、ユーザーは次回ログインするときに、2 要素認証用に電話をセットアップするように求めるメッセージが表示されます。
 MFA をセットアップする方法と、ユーザーがセットアップを完了する方法のトレーニング ビデオについては [、「MFA](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) とユーザーのセットアップのセットアップ」を [参照してください](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225)。
@@ -90,7 +90,7 @@ Azure ポータル内の Azure Active Directory (Azure AD) の **プロパティ
 
 H phish School [Cybersecurity キャンペーン](https://go.microsoft.com/fwlink/p/?linkid=2015598) ハンドブックは、フィッシング攻撃を識別するためのユーザーのトレーニングなど、組織内のセキュリティ認識の強力な文化を確立するための優れたガイダンスを提供します。
 
-このガイダンスに加えて、Microsoft では、「アカウントとデバイスをハッカーやマルウェアから保護する」で説明されているアクションをユーザーが実行 [するようにお勧めします](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)。 それらの操作を次に示します。
+このガイダンスに加えて、Microsoft では、ユーザーが「アカウントとデバイスをハッカーやマルウェアから保護する」で説明されているアクションを実行 [するようにお勧めします](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)。 それらの操作を次に示します。
 
 - 強力なパスワードの使用
 
@@ -100,7 +100,7 @@ H phish School [Cybersecurity キャンペーン](https://go.microsoft.com/fwlin
 
 また、次の記事で推奨されるアクションを実行して、ユーザーが個人の電子メール アカウントを保護することもできます。
 
-- [メール アカウントをOutlook.comする](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [電子メール アカウントOutlook.com保護する](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
 - [2 段階認証による Gmail アカウントの保護](https://go.microsoft.com/fwlink/p/?linkid=2015688&)
 
@@ -128,9 +128,9 @@ Microsoft 365 環境にはマルウェアに対する保護が含まれていま
 
 4. [**設定**] を選択します。
 
-5. [ **一般的な添付ファイルの種類フィルター] で、[** オン] を **選択します**。 ブロックされるファイルの種類は、このコントロールの直下のウィンドウに表示されます。 必要に応じて、後でファイルの種類を追加または削除できます。
+5. [ **一般的な添付ファイルの種類フィルター] で、[** オン] を **選択します**。 ブロックされるファイルの種類は、このコントロールの直下のウィンドウに一覧表示されます。 必要に応じて、後でファイルの種類を追加または削除できます。
 
-6. [保存] **を選択します。**
+6. [保存 **] を選択します。**
 
 詳細については [、「EOP でのマルウェア対策保護」を参照してください](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection)。
 
@@ -143,7 +143,7 @@ Microsoft 365 環境にはマルウェアに対する保護が含まれていま
 
 - マクロを含む添付ファイルOffice開く前にユーザーに警告します。 ランサムウェアはマクロ内に隠される可能性があります。そのため、知らないユーザーからこれらのファイルを開かされないようにユーザーに警告します。
 
-- ランサムウェアなどの悪意のあるコードを含む可能性のあるファイルの種類をブロックします。 最初に、実行可能ファイルの一般的な一覧を示します (以下の表に示します)。 組織でこれらの実行可能ファイルの種類を使用し、電子メールで送信すると予想される場合は、これらを前のルールに追加します (ユーザーに警告します)。
+- ランサムウェアなどの悪意のあるコードを含む可能性のあるファイルの種類をブロックします。 最初に、実行可能ファイルの一般的な一覧を示します (以下の表に示します)。 組織でこれらの実行可能ファイルの種類を使用し、電子メールで送信される場合は、これらを前のルールに追加します (ユーザーに警告します)。
 
 メール トランスポート ルールを作成するには、短いトレーニング [ビデオを表示](https://support.microsoft.com/office/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)するか、次の手順を実行します。
 
@@ -157,15 +157,15 @@ Microsoft 365 環境にはマルウェアに対する保護が含まれていま
 
 5. ルールごとに次の表の設定を適用します。 これらの設定を変更しない限り、残りの設定は既定のままにします。
 
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
-| 設定 | ファイルの添付ファイルを開く前にOfficeする | ランサムウェアなどの悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
+| Setting | ファイルの添付ファイルを開く前にOfficeする | ランサムウェアなどの悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
 |:-----|:-----|:-----|
 |名前  <br/> |ランサムウェア対策ルール: ユーザーに警告する  <br/> |ランサムウェア対策ルール: ファイルの種類をブロックする  <br/> |
 |次の場合にこのルールを適用します。 . .  <br/> |任意の添付ファイルです。 . . ファイル拡張子が一致します。 . .  <br/> |任意の添付ファイルです。 . . ファイル拡張子が一致します。 . .  <br/> |
-|単語または語句を指定する  <br/> |次のファイルの種類を追加します。  <br/> dotm、docm、xlsm、sltm、xla、xlam、xll、pptm、potm、ppam、ppsm、sldm  <br/> |次のファイルの種類を追加します。  <br/> ade、 adp、ani、bas、bat、chm、cmd、com、cpl、crt、hlp、hta、inf、ins、isp、job、js、jse、lnk、mda、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、scr、sct、shs、url、vb、vbe、vbs、wsc、wsf、wsh、exe、pif  <br/> |
-|次の操作を行います。 . .  <br/> |免責事項の先頭に追加する  <br/> |メッセージをブロックします。 . . メッセージを拒否し、説明を含める  <br/> |
-|メッセージ テキストを提供する  <br/> |これらの種類のファイルは、期待していた場合を限り開かれません。ファイルには悪意のあるコードが含まれている可能性があります。また、送信者が安全を保証するとは限らないためです。  <br/> ||
+|単語または語句を指定する  <br/> |次のファイルの種類を追加します。  <br/> dotm、docm、xlsm、sltm、xla、xlam、xll、pptm、potm、ppam、ppsm、sldm  <br/> |次のファイルの種類を追加します。  <br/> ade、 adp、ani、bas、bat、chm、cmd、cpl、crt、hlp、hta、inf、ins、isp、job、js、jse、lnk、mda、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、scr、sct、shs、url、vb、vbe、vbs、wsc、wsf、wsh、exe、pif  <br/> |
+|次の操作を行います。 . .  <br/> |免責事項の先頭に追加する  <br/> |メッセージをブロックします。 . . メッセージを拒否して説明を含める  <br/> |
+|メッセージ テキストを提供する  <br/> |これらの種類のファイルは、意図しない限り開かれません。ファイルには悪意のあるコードが含まれている可能性があります。また、送信者が安全を保証するものではありません。  <br/> ||
    
 > [!TIP]
 > ブロックするファイルを手順 4 でマルウェア対策リスト [に追加することもできます](#4-raise-the-level-of-protection-against-malware-in-mail)。
@@ -193,9 +193,9 @@ Microsoft 365 環境にはマルウェアに対する保護が含まれていま
 
 5. 次の表の設定を適用します。 これらの設定を変更しない限り、残りの設定は既定のままにします。
 
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
 
-|設定|外部ドメインへのメールの自動転送を拒否する|
+|Setting|外部ドメインへのメールの自動転送を拒否する|
 |---|---|
 |名前|外部ドメインへの電子メールの自動転送を防止する|
 |... の場合は、このルールを適用します。|送信者 。 . . は外部/内部です。 . . 組織内|
@@ -254,7 +254,7 @@ Office 365 用の Defender でフィッシング対策ポリシーを作成す�
 
 4. [フィッシング対策] ページで、[+ 作成] **を選択します**。 ウィザードが起動し、フィッシング対策ポリシーを定義する手順が示されます。
 
-5. 以下のグラフで、ポリシーの名前、説明、設定を推奨される方法で指定します。 詳しくは、Microsoft Defender のフィッシング対策ポリシーに関するページOffice [365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) オプションをご覧ください。
+5. ポリシーの名前、説明、設定を次のグラフで推奨される方法で指定します。 詳しくは、Microsoft Defender のフィッシング対策ポリシーに関するページOffice [365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) オプションをご覧ください。
 
 6. 設定を確認した後、必要に応じて [このポリシーの作成] または **[****保存**] を選択します。
 
@@ -331,7 +331,7 @@ Office 365 用の Defender でフィッシング対策ポリシーを作成す�
 
 3. [メール以外 **の** コンテンツに適用する設定] で **、[Office 365** アプリケーション] を選択し、[ユーザーが安全なリンクをクリックしても追跡しない]、ユーザーが元の **URL** への安全なリンクをクリックさせない。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ドメイン内のすべての受信者を対象とした新しいポリシーを作成するには、
 
@@ -339,7 +339,7 @@ Office 365 用の Defender でフィッシング対策ポリシーを作成す�
 
 2. 次の表に示す設定を適用します。
 
-3. [**保存**] を選択します。
+3. **[保存]** を選択します。
 
 |設定またはオプション|推奨される設定値|
 |---|---|

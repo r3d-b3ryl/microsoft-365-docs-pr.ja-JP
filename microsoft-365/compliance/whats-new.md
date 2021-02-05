@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: コンプライアンス センターへの新しいソリューションの追加、フィードバックに基づく既存の機能の更新、最新の更新されたドキュメントの展開など、Microsoft 365 は変化し続けるコンプライアンス状況を常に改善するのに役立ちます。 今月の予定を確認します。
+description: コンプライアンス センターへの新しいソリューションの追加、フィードバックに基づく既存の機能の更新、最新の更新されたドキュメントの展開など、Microsoft 365 は変化し続けるコンプライアンス環境を常に改善するのに役立ちます。 今月の予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4fcc0c9317ed0f302c03ba4bda0b536b57889660
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066820"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113976"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
-[Microsoft 365](microsoft-365-compliance-center.md)コンプライアンス センターへの新しいソリューションの追加、フィードバックに基づく既存の機能の更新、最新および更新されたドキュメントの展開など、Microsoft 365 は変化し続けるコンプライアンスの状況を常に改善するのに役立ちます。 Microsoft 365 コンプライアンスの新機能については、以下をご覧ください。
+[Microsoft 365](microsoft-365-compliance-center.md)コンプライアンス センターへの新しいソリューションの追加、フィードバックに基づく既存の機能の更新、最新のドキュメントの展開など、Microsoft 365 は変化し続けるコンプライアンス状況を常に改善するのに役立ちます。 Microsoft 365 コンプライアンスの新機能については、以下をご覧ください。
 
 > [!NOTE]
 > 一部のコンプライアンス機能は、お客様に対して異なる速度で展開されます。 If you aren't seeing a feature yet, try adding yourself to [targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
@@ -40,12 +40,12 @@ ms.locfileid: "50066820"
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>スポットライト: インサイダー リスク ソリューションの新しいコンテンツ
 
-Microsoft 365 コンプライアンス コンテンツ チームは、コンプライアンスの目標を達成するためにコンプライアンス機能を組み合わせて使用する方法を促進するために、"コンテンツ ソリューション" ドキュメントの作成に取り組み中です。
+Microsoft 365 コンプライアンス コンテンツ チームは、コンプライアンスの目標を達成するためにコンプライアンス機能を一緒に使用する方法を促進するために、"コンテンツ ソリューション" ドキュメントの作成に取り組み中です。
 
-まず、インサイダー リスク ソリューション (通信コンプライアンス、インサイダー リスク管理、情報障壁、特権アクセス管理) を結び付け合うコンテンツです。 次に、表示される情報を示します。
+まず、インサイダー リスク ソリューション (コミュニケーション コンプライアンス、インサイダー リスク管理、情報障壁、特権アクセス管理) を結び付け合うコンテンツです。 次に、表示される情報を示します。
 
 - [インサイダー リスク ソリューションの新しいランディング ページ](insider-risk-solution-overview.md)。 ソリューションが軽減するのに役立つリスク、ライセンス要件、展開シーケンス、アーキテクチャの図、トレーニング リソースなどについての詳細が含まれています。
-- 各インサイダー リスク ソリューションの新しい概要記事。 ガイダンスと、各ソリューションの学習、計画、展開、管理に役立つ記事へのリンクを示します。
+- 各インサイダー リスク ソリューションの新しい概要記事。 各ソリューションの学習、計画、展開、管理に役立つ記事へのガイダンスとリンクを示します。
   - [通信コンプライアンス](communication-compliance-solution-overview.md)
   - [インサイダー リスクの管理](insider-risk-management-solution-overview.md)
   - [情報障壁](information-barriers-solution-overview.md)
@@ -79,8 +79,8 @@ Advanced eDiscovery ケースに[保管](add-custodians-to-case.md)担当者と�
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-- [Azure Purview でデータに自動的にラベルを付け (プレビュー) します](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label)。 Azure Purview のアセット (Azure Blob Storage 内のファイルや、SQL Server 内のデータベース列など) に、区別ラベルを作成して自動的に適用SQL Server。
-- [ユーザーがアイテムにラベルを適用する必要があります](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 "必須のラベル付け" とも呼ばれるこの新しいオプションでは、ユーザーが特定のシナリオで区別ラベルを選択して適用する必要があります。
+- [Azure Purview でデータに自動的にラベルを付け (プレビュー) します](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。 Azure Purview のアセット (Azure Blob Storage 内のファイルや、SQL Server のデータベース列など) に、区別ラベルを作成して自動的に適用できます。
+- [ユーザーがアイテムにラベルを適用する必要があります](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 "必須のラベル付け" とも呼ばれるこの新しいオプションでは、特定のシナリオで、ユーザーが区別ラベルを選択して適用する必要があります。
 
 ## <a name="november-2020"></a>2020 年 11 月
 新しい機能や更新された機能をプレビュー状態でリリースして、その使い方を確認し、一般提供にリリースする前に改良を図る必要があります。 お客様からのフィードバックはプレビュー中 (およびそれ以降) に不可欠なので、コンプライアンス センターの右下にあるフィードバック カードを開いてご意見をお聞かせください。
@@ -99,7 +99,7 @@ Advanced eDiscovery ケースに[保管](add-custodians-to-case.md)担当者と�
 
 - [Microsoft 365 Government サブスクリプションのサポート](compliance-manager.md)。 コンプライアンス マネージャーは、米国政府機関向けコミュニティ (GCC) の中および高のお客様が利用できます。
 - [コンプライアンス マネージャー用の Microsoft Compliance Configuration Analyzer](compliance-manager-mcca.md)。 組織の現在の構成をスキャンし、Microsoft 365 の推奨ベスト プラクティスに対して検証することで、コンプライアンス マネージャーの使用を開始するのに役立つ新しい PowerShell ベースのツール。
-- [新しいテンプレート](compliance-manager-templates-list.md)。 56 の新しいテンプレートが追加され、コンプライアンス マネージャーテンプレートの合計は 230 を超えました。
+- [新しいテンプレート](compliance-manager-templates-list.md)。 56 の新しいテンプレートが追加され、コンプライアンス マネージャー テンプレートの合計は 230 を超えました。
 
 ### <a name="data-connectors"></a>データ コネクタ
 
@@ -131,7 +131,7 @@ Advanced eDiscovery ケースに[保管](add-custodians-to-case.md)担当者と�
 
 今年 Ignite で発表されたコンプライアンス スコアは、コンプライアンス マネージャーとして [再ブランドされています](compliance-manager.md)。 このリリースでは、Service Trust Portal のコンプライアンス マネージャーの以前のホームからの移行が完了し、Microsoft 365 コンプライアンス センターにエンドツーエンドのコンプライアンス管理ソリューションが導入されています。
 
-コンプライアンス マネージャーが組織でコンプライアンスを管理する方法を簡素化する方法については、以下のビデオをご覧ください。
+以下のビデオを見て、コンプライアンス マネージャーが組織でコンプライアンスを管理する方法を簡素化する方法について説明します。
 <br>
 <br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
@@ -139,29 +139,29 @@ Advanced eDiscovery ケースに[保管](add-custodians-to-case.md)担当者と�
 ### <a name="advanced-audit"></a>高度な監査
 
 - 監査ログの新しい 10 年間の保持は、長期の調査をサポートし、規制、法律、および内部の義務に対応するのに役立ちます。
-- [3 つの新しい重要なイベント](advanced-audit.md#access-to-crucial-events-for-investigations)。 次の新しいイベントは、侵害の可能性を調査し、侵害の範囲を決定するのに役立ちます:Send、SearchQueryInitiatedExchange、SearchQueryInitiatedSharePoint。
+- [3 つの新しい重要なイベント](advanced-audit.md#access-to-crucial-events-for-investigations)。 次の新しいイベントは、発生する可能性がある侵害を調査し、侵害の範囲 (Send、SearchQueryInitiatedExchange、SearchQueryInitiatedSharePoint) を特定するのに役立ちます。
 
 ### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
 
 - [役割グループを更新しました](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。 通信コンプライアンス役割グループは、インサイダー リスク管理ソリューションで使用可能な役割グループ構造と一致する必要があります。
 - [レポート ダッシュボード](communication-compliance-feature-reference.md#reports-preview)。 すべての通信コンプライアンス レポートを表示する中心的な場所。 レポート ウィジェットは、通信コンプライアンス アクティビティの状態を全体的に評価するために最も一般的に必要な分析情報のクイック ビューを提供します。
 - [Power Automate フロー](communication-compliance-feature-reference.md#power-automate-flows)。 フローを設定して、アラートとユーザーのタスクを自動化し、ユーザーがアラートをトリガーした場合にマネージャーに通知します。
-- ['分類の改善' 修復アクション](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 トレーニング可能な分類子に一致するアイテムを含むアラートは、組織内で誤検知を最小限に抑えるためにフィードバックを利用できる場合があります。 分類 **の改善オプション** を使用すると、検出されたアイテムが関連する通信コンプライアンス ポリシーで構成されている分類子と一致するかどうかをフィードバックできます。 他の分類子を提案してアイテムに関連付け、今後のアラートの一致精度を向上させる場合があります。
+- ['分類の改善' 修復アクション](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 トレーニング可能な分類子に一致するアイテムを含むアラートは、組織内の誤検知を最小限に抑えるためにフィードバックを利用できる場合があります。 分類 **の改善オプション** を使用すると、検出されたアイテムが関連する通信コンプライアンス ポリシーで構成されている分類子と一致するかどうかをフィードバックできます。 他の分類子を提案してアイテムに関連付け、今後のアラートの一致精度を向上させる場合があります。
 
 ### <a name="data-connectors"></a>データ コネクタ
 
 - [新しいサードパーティのデータ コネクタ](archiving-third-party-data.md#third-party-data-connectors)。 Globanet から 14 個、Telemessage から 8 個を含む 25 個の新しいデータ コネクタ。
-- [物理バグコネクタ](import-physical-badging-data.md)。 従業員の生の物理的なアクセス イベントや、組織の不良システムによって生成された物理的なアクセス アラームなど、物理的な不良データをインポートします。 たとえば、建物、サーバー ルーム、またはデータ センターへのエントリが含まれます。 インサイダー リスク管理ソリューションは、物理的な不正なデータを使用して、組織内の悪意のある活動やデータの盗難から組織を保護できます。
+- [物理バグコネクタ](import-physical-badging-data.md)。 従業員の生の物理的なアクセス イベントや、組織の不良システムによって生成された物理的なアクセス アラームなど、物理的な不良データをインポートします。 たとえば、建物、サーバー ルーム、またはデータ センターへのエントリが含まれます。 インサイダー リスク管理ソリューションは、物理的な不正なデータを使用して、組織内の悪意のあるアクティビティやデータの盗難から組織を保護できます。
 
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理
 
-- [Microsoft Teams の統合](insider-risk-management-settings.md#microsoft-teams-preview)。 インサイダー リスク設定で Teams の統合が有効になっている場合は、個々のケースに関連するデータの安全な共有と保存、アナリストや調査担当者からの対応活動の追跡と確認などのタスクについて、Teams の他の関係者と調整して共同作業できます。
+- [Microsoft Teams の統合](insider-risk-management-settings.md#microsoft-teams-preview)。 インサイダー リスク設定で Teams の統合が有効になっている場合は、個々のケースに関連するデータの安全な共有と保存、アナリストや調査担当者からの対応活動の追跡と確認などのタスクについて、Teams の他の関係者と調整して共同作業を行うことができます。
 - [Power Automate フロー](insider-risk-management-settings.md#power-automate-flows-preview)。 ユーザー、アラート、ケース情報の取得、関係者や他のアプリと共有するケース情報の取得、ケース ノートへの投稿などのアクションの自動化など、ケースとユーザーの重要なタスクを自動化するためのフローを設定します。
-- [アクティビティ エクスプローラー](insider-risk-management-alerts.md#activity-explorer-preview)。 アラートを確認するときに利用できるアクティビティ エクスプローラーは、調査担当者やアナリストに、各アラートを詳細に掘り下ろす包括的な分析ツールを提供します。 検出された危険なアクティビティのタイムラインをすばやく確認し、アラートに関連付けられているすべてのリスク アクティビティを特定してフィルター処理します。
+- [アクティビティ エクスプローラー](insider-risk-management-alerts.md#activity-explorer-preview)。 アラートを確認するときに利用できるアクティビティ エクスプローラーは、調査担当者とアナリストに、各アラートを詳細に掘り下ろす包括的な分析ツールを提供します。 検出された危険なアクティビティのタイムラインをすばやく確認し、アラートに関連付けられているすべてのリスク アクティビティを特定してフィルター処理します。
 
 ### <a name="retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベル
 
-- [サービスのYammer。](retention-policies-yammer.md) アイテム保持ポリシーを使用して、コミュニティ メッセージやプライベート メッセージYammer保持および削除できます。
+- [この機能のYammer。](retention-policies-yammer.md) アイテム保持ポリシーを使用して、コミュニティ メッセージやプライベート メッセージYammer保持および削除できます。
 - [Teams 会議のレコーディングにラベルを適用します](apply-retention-labels-automatically.md#microsoft-teams-meeting-recordings)。 自動ラベル付けポリシーを作成する場合は、キーワード クエリ エディターを使用して、ユーザーの OneDrive アカウントまたは SharePoint に保存されている Teams 会議のレコーディングを識別します。
 
 ### <a name="records-management"></a>レコード管理
@@ -174,7 +174,7 @@ Advanced eDiscovery ケースに[保管](add-custodians-to-case.md)担当者と�
 
 ### <a name="trainable-classifiers"></a>トレーニング可能な分類子
 
-新しい再トレーニング機能とフィードバック機能は、精度を向上し、すべてのカスタム分類子といくつかの事前トレーニング済みの分類子に対する誤検知の一致を最小限に抑えるのに役立ちます。 このフローを使用すると、アイテムが特定の分類子と一致するかどうかに関するフィードバックを提供し、他の分類子にアイテムに関連付け、分類子を再トレーニングして一致精度を調整および向上することができます。
+新しい再トレーニング機能とフィードバック機能は、精度を向上し、すべてのカスタム分類子といくつかの事前トレーニング済みの分類子に対する誤検知の一致を最小限に抑えるのに役立ちます。 このフローを使用すると、アイテムが特定の分類子と一致するかどうかに関するフィードバックを提供し、他の分類子がアイテムに関連付けるかどうかを提案し、分類子を再トレーニングして一致精度を調整および向上できます。
 
 この新機能は、次の機能に含まれています。
 
@@ -183,7 +183,7 @@ Advanced eDiscovery ケースに[保管](add-custodians-to-case.md)担当者と�
 
 - [トレーニング可能な分類子](classifier-learn-about.md#retraining-classifiers)。 発行された分類子の精度を向上させるために、検出されたアイテムが分類子と一致するかどうかに関するフィードバックを提供できます。
 - [通信コンプライアンス](classifier-how-to-retrain-comms-compliance.md)。 新しい **分類の改善** の修復アクションを使用すると、通信コンプライアンスアラートのアイテムが通信コンプライアンス ポリシーで構成された分類子と一致するかどうかをフィードバックできます。
-- [コンテンツ エクスプローラー](classifier-how-to-retrain-content-explorer.md)。 トレーニング可能な分類子に一致する電子メール メッセージにラベルを自動的に適用する保持自動ラベル付けポリシーを設定した場合は、コンテンツ エクスプローラーを使用してラベル付けされたアイテムを確認し、アイテムが分類子と一致するかどうかをフィードバックできます。
+- [コンテンツ エクスプローラー](classifier-how-to-retrain-content-explorer.md)。 保持の自動ラベル付けポリシーを設定して、トレーニング可能な分類子に一致するメール メッセージにラベルを自動的に適用する場合は、コンテンツ エクスプローラーを使用してラベル付けされたアイテムを確認し、アイテムが分類子と一致するかどうかをフィードバックできます。
 
 ## <a name="august-2020"></a>2020 年 8 月
 
@@ -239,7 +239,7 @@ Advanced eDiscovery ケースに[保管](add-custodians-to-case.md)担当者と�
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - コレクション [をレビュー セットに](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review)追加するときに、モダン添付ファイル (「クラウド添付ファイル」とも呼ばれる) と SharePoint ドキュメント バージョンを含めできます。
-- 新 [しい直接ダウンロードエクスポート エクスペリエンス](export-documents-from-review-set.md)により、ケースコンテンツをダウンロードするために Azure Storage Explorer を使用する必要がなくなります。
+- 新 [しい直接ダウンロードエクスポート エクスペリエンス](export-documents-from-review-set.md)により、ケースのコンテンツをダウンロードするために Azure Storage Explorer を使用する必要がなくなります。
 
 ## <a name="july-2020"></a>2020 年7 月
 
@@ -264,5 +264,5 @@ Advanced eDiscovery ケースに[保管](add-custodians-to-case.md)担当者と�
 
 ### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>Sensitivity labels: New feature and an improvement
 
-- (プレビュー中)ラベルの暗号化設定を構成する場合は、 [二](encryption-sensitivity-labels.md#double-key-encryption) 重キー暗号化を使用してラベル付けされたファイルと電子メールをさらに保護する新しいオプションを探します。
+- (プレビュー中)ラベルの暗号化設定を構成する場合は、 [二](encryption-sensitivity-labels.md#double-key-encryption) 重キー暗号化を使用してラベル付けされたファイルや電子メールをさらに保護する新しいオプションを探します。
 - ラベル ポリシーを作成または削除したり、ラベル ポリシーを作成、編集、または削除したりすると、変更は 1 時間以内にすべてのユーザー、アプリ、およびサービスに同期されます。

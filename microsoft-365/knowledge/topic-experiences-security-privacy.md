@@ -1,5 +1,5 @@
 ---
-title: トピックエクスペリエンスのセキュリティとプライバシー
+title: Microsoft のトピックのセキュリティとプライバシー
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,35 +9,34 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft 365 でトピック エクスペリエンスのセキュリティとプライバシーを計画する方法について説明します。
-ms.openlocfilehash: b3c33a49b8273c5f7830f08de17af9757a858413
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Microsoft 多くのトピックのセキュリティとプライバシーを計画する方法について説明します。
+ms.openlocfilehash: be5be01bce117a80bd95ee268c193889eccea67f
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698499"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107794"
 ---
-# <a name="topic-experiences-security-and-privacy"></a>トピックエクスペリエンスのセキュリティとプライバシー
+# <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft のトピックのセキュリティとプライバシー
 
-トピック エクスペリエンスでは、Microsoft 365 の既存のコンテンツ セキュリティ機能とナレッジ ネットワークコントロールを使用して、AI によって生成されたコンテンツが組織内のユーザーに表示される内容を制御します。 これは、Microsoft 365 のセキュリティ設定 (サイト、ファイル、フォルダーに対するアクセス許可) とトピック エクスペリエンスの管理設定の組み合わせで、特定のユーザーがトピックに表示できる内容を決定します。
+トピックでは、Microsoft 365 の既存のコンテンツ セキュリティ機能と管理コントロールを使用して、組織内のユーザーに表示される AI 生成コンテンツを制御します。 Microsoft 365 のセキュリティ設定 (サイト、ファイル、フォルダーに対するアクセス許可) と Topics 管理設定の組み合わせによって、特定のユーザーがトピックに表示できる内容を決定します。
 
-ナレッジ ネットワークをセットアップしても、組織内のコンテンツに対する既存のアクセス制御は変更されない。 ユーザーには、既にアクセス権を持っているものだけが表示されます。
+トピックを設定しても、組織内のコンテンツに対する既存のアクセス制御は変更されない。 ユーザーには、既にアクセス権を持っているものだけが表示されます。
 
-この記事では、セキュリティの観点からトピック エクスペリエンスがどのように機能し、ナレッジ管理者やナレッジ マネージャーがトピックの可視性を制御するために必要なオプションについて説明します。 トピックエクスペリエンスの計画の一環として、 [この記事をお読みください](plan-topic-experiences.md)。
+この記事では、セキュリティの観点からトピックがどのように機能し、ナレッジ管理者およびナレッジ マネージャーがトピックの可視性を制御するために必要なオプションについて説明します。 トピックの計画の一環として、この [記事をお読みください](plan-topic-experiences.md)。
 
-この記事を読む前に、トピック[](topic-center-overview.md)エクスペリエンス、トピック センター [](manage-topics.md) 、トピック センターのトピックの操作方法について理解している必要があります。 [](topic-experiences-overview.md)
+この記事を読む前に、[トピック](topic-experiences-overview.md)の[](topic-center-overview.md)内容、トピック センター、[](manage-topics.md)トピック センターのトピックの操作方法について理解している必要があります。
 
 ## <a name="what-users-can-see-in-topics"></a>トピックでユーザーに表示できる内容
 
 トピックを表示するには、ユーザーは次の条件を実行する必要があります。
 
-- トピック エクスペリエンス ライセンスを持つ
+- 多くのトピックのライセンスを持っている
 - トピック閲覧[者、投稿者](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization)[、またはナレッジ マネージャーになる](topic-experiences-user-permissions.md)
 
 これら 2 つの機能により、ユーザーはトピック センターにアクセスし、ハイライトとトピック カードを表示できます。
 
-また、トピックの投稿者はトピック [の作成](topic-experiences-user-permissions.md#change-who-has permissions-to-update-topic-details) と編集のアクセス許可を持ち、ナレッジ マネージャーはトピックを確認または削除できます。
+また、トピックの投稿者はトピック [の作成](topic-experiences-user-permissions.md) と編集のアクセス許可を持ち、ナレッジ マネージャーはトピックを確認または削除できます。
 
 トピックが初めて検出された場合、ナレッジ マネージャーはトピック センターでトピックを表示できます。 トピックの完成度と関連性によっては、トピック の閲覧者にトピック カードに示されているトピックが表示される場合と表示されない場合があります。
 
@@ -50,18 +49,18 @@ ms.locfileid: "49698499"
 
 次の表では、ユーザー (トピック閲覧者、投稿者、ナレッジ マネージャー) がアクセス許可に基づいて特定のトピックで表示できる内容を示します。
 
-|トピック アイテム|ユーザーに表示される情報|
+|トピック 項目|ユーザーに表示される情報|
 |:---------|:------------------|
 |トピック名|ユーザーは、トピック センターですべてのトピックのトピック名を確認できます。 一部のトピックは、ユーザーとの関連性が低い場合には表示されない場合があります。|
 |トピックの説明|AI によって生成された説明は、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。 手動で入力または編集した説明は、すべてのユーザーに表示されます。|
-|ユーザー|ピン留めされたユーザーは、すべてのユーザーに表示されます。 候補のユーザーは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
+|ユーザー|ピン留めされたユーザーは、すべてのユーザーに表示されます。 提案されたユーザーは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
 |Files|ファイルは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
 |ページ|ページは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
 |サイト|サイトは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
-トピック エクスペリエンスは、コンテンツに対する既存のアクセス許可に基づいて、ユーザーに情報を表示します。 Microsoft 365 には、機密性の高いコンテンツが適切なユーザーに制限されるさまざまな方法があります。 標準的なチームまたはサイトのアクセス許可を超えて、機密ラベルまたは[](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)データ損失防止を使用して、コンテンツおよび[](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)アクセス レビューへのアクセスを制限して、機密情報へのユーザー アクセスを定期的に確認できます。 [](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+トピックでは、コンテンツに対する既存のアクセス許可に基づいて、ユーザーに情報を提供します。 Microsoft 365 には、機密性の高いコンテンツが適切なユーザーに制限されるさまざまな方法があります。 標準的なチームまたはサイトのアクセス許可を超えて、機密ラベルまたは[](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)データ損失防止を使用して、コンテンツおよび[](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)アクセス レビューへのアクセスを制限して、機密情報へのユーザー アクセスを定期的に確認できます。 [](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
 
 これらのツールを使用して、コンテンツのアクセス許可が組織内で適切に設定されている必要があります。 トピック エクスペリエンスは、有用で適切な情報をユーザーに提供できます。
 
@@ -87,6 +86,6 @@ ms.locfileid: "49698499"
 
 [3 層の保護を使って Teams を構成する](../solutions/configure-teams-three-tiers-protection.md)
 
-[トピックエクスペリエンスを計画する](plan-topic-experiences.md)
+[トピック エクスペリエンスの計画](plan-topic-experiences.md)
 
-[トピック エクスペリエンスをセットアップする](set-up-topic-experiences.md)
+[トピック エクスペリエンスを設定する](set-up-topic-experiences.md)

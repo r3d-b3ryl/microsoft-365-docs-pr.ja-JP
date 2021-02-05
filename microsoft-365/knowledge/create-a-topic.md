@@ -1,9 +1,10 @@
 ---
-title: 'トピック エクスペリエンス (プレビュー) で新しいトピックを作成する '
-description: トピック エクスペリエンスで新しいトピックを作成する方法について説明します。
+title: Microsoft のトピックに新しいトピックを作成する
+description: Microsoft のトピックで新しいトピックを作成する方法について説明します。
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,61 +14,89 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 982cb4b0f750db9aecbaab6696f57be3f2390d1d
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976353"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107258"
 ---
-# <a name="create-a-new-topic-preview"></a>新しいトピックを作成する (プレビュー)
+# <a name="create-a-new-topic"></a>新規トピックを作成する 
+
+In Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
 
 > [!Note] 
-> この記事の内容は、Project の Private Preview 用です。 [Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)
+> AI によって収集されたトピック内の情報はセキュリティによって[](topic-experiences-security-trimming.md)トリミングされる一方で、手動で作成されたトピック内の情報は、そのトピックを表示する権限を持つすべてのユーザーに表示されます。 
 
-トピック エクスペリエンスでは、インデックス作成によって検出されていない場合や、AI テクノロジがトピックとして確立するのに十分な証拠を見つけなかった場合に、新しいトピックを作成できます。
 
 ## <a name="requirements"></a>要件
 
 新しいトピックを作成するには、次の必要があります。
-- トピック エクスペリエンス のライセンスを持っている。
-- トピックを作成または編集 [**できるユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、サポート技術情報のトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
+- 多くのトピックのライセンスを持っている。
+- トピックを作成または編集 [**できるユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、トピック「多くのトピック」のアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。 
 
 > [!Note] 
 > トピック センター (ナレッジ マネージャー) でトピックを管理する権限を持つユーザーには、トピックを作成および編集する権限が既に付与されています。
 
 ## <a name="to-create-a-new-topic"></a>新しいトピックを作成するには:
 
-1. [トピック センター] ページで、[新規] を選択 **し**、[トピック ページ] **を選択します**。 トピック センターで [新規]オプションを表示できない場合は、必要なアクセス許可が付与されていない可能性があります。
+1. [この **トピックの名前]** セクションで、新しいトピックの名前を入力します。
 
-    ![新しいトピック](../media/knowledge-management/k-new-topic.png)
+    ![このトピックに名前を付け](../media/knowledge-management/k-new-topic-page.png) </br> 
 
-2. 新しいトピック ページで、新しいトピック テンプレートの情報を入力できます。
 
-    - [この **トピックの名前]** セクションで、新しいトピックの名前を入力します。
+2. [代替 <b>名]</b> セクションで、トピックが参照される可能性があるその他の名前を入力します。 
+
+    ![代替名](../media/knowledge-management/alt-names.png) </br> 
+3. [説明 <b>] セクション</b> で、トピックについて説明する文を入力します。 
+
+    ![トピックの説明](../media/knowledge-management/description.png)</br>
+
+4. [ピン <b>留めされたユーザー</b> ] セクションでは、ユーザーを「ピン留め」して、トピックの対象の専門家として表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。 ユーザーをドラッグして、ユーザーの一覧に表示される順序を変更できます。
+ 
+    ![ピン留めされたユーザー](../media/knowledge-management/pinned-people.png)</br>
+
+
+5. [ピン <b>留めされたファイルとページ</b> ] セクションでは、トピックに関連付けられているファイルまたは SharePoint サイト ページを追加または "ピン留め" できます。
+
+   ![ピン留めされたファイルとページ](../media/knowledge-management/pinned-files-and-pages.png)</br>
+ 
+    新しいファイルを追加するには、[<b></b>追加] を選択し、頻繁に使用するサイトまたはフォローしているサイトから SharePoint サイトを選択して、サイトのドキュメント ライブラリからファイルを選択します。
+
+    [リンクから] <b>オプションを使用して、URL</b> を指定してファイルまたはページを追加することもできます。 
+
+
+6.  [ <b>関連サイト]</b> セクションには、トピックに関する情報を含むサイトが表示されます。 
+
+    ![[関連サイト] セクション](../media/knowledge-management/related-sites.png)</br>
+
+    関連サイトを追加するには、[追加]<b></b>を選択してからサイトを検索するか、頻繁に使用するサイトまたは最近使用したサイトの一覧からサイトを選択します。</br>
     
-    - [代替 **名] セクション** で、トピックの参照にも使用される名前または頭字語を入力します。
-    
-    - [簡単 **な説明] セクション** で、トピックの 1 文または 2 文の説明を入力します。 このテキストは、関連付けられたトピック カードに使用されます。
-    
-    - [人 **] セクション** で、トピックの対象分野の専門家の名前を入力します。 トピックに手動で追加したユーザーは、トピック ページにピン留めされたユーザー **として表示されます**。
-    
-    - [ファイル **とページ**] セクションで[追加] を選択し、次のページで関連付けられた OneDrive ファイルまたは SharePoint Online ページを選択できます。
-    
-    - [サイト] **セクションで** 、[追加] を **選択します**。 表示される  **[サイト** ] ウィンドウで、トピックに関連付けられているサイトを選択します。
+    ![サイトの選択](../media/knowledge-management/sites.png)</br>
 
-    ![新しいトピック ページ](../media/knowledge-management/k-new-topic-page.png)
-    
-3. テキスト、画像、Web パーツ、リンクなど、他のコンポーネントをページに追加する必要がある場合は、ページの中央にあるキャンバス アイコンを選択して見つけて追加します。
+7. 関連 <b>トピック セクションでは</b> 、トピック間に存在する接続を示します。 別のトピックへの接続を追加するには、[関連トピックに接続<b></b>] ボタンを選択し、関連するトピックの名前を入力して、検索結果からそのトピックを選択します。 
 
-    ![ページにアイテムを追加する](../media/knowledge-management/static-icon.png)
+   ![関連項目](../media/knowledge-management/related-topic.png)</br>  
 
-4. 完了したら、[発行] を **選択** してトピック ページを発行します。 発行されたトピック ページが [ページ] タブ **に表示** されます。
+    その後、トピックの関連方法を説明し、[更新] を選択 <b>します</b>。</br>
 
-記事を発行すると、トピック名、代替名、説明、ピン留めされたユーザーが、記事を表示するライセンスを持つすべてのユーザーに表示されます。 ファイル、ページ、およびサイトは、閲覧者がアイテムに対する 365 Officeを持つ場合にのみ、トピック ページに表示されます。 
+   ![関連トピックの説明](../media/knowledge-management/related-topics-update.png)</br> 
 
-新しいトピック ページは、ナレッジ ネットワーク対応の Web パーツ *で構成されています*。 つまり、AI がトピックに関するより多くの情報を収集すると、これらの Web パーツ内の情報が更新され、ユーザーにとってページの使い分けをより便利にできます。
+   追加した関連トピックは、接続されたトピックとして表示されます。
+
+   ![関連トピック](../media/knowledge-management/related-topics-final.png)</br> 
+
+
+8. キャンバス アイコンを選択して、静的な項目 (テキスト、画像、リンクなど) をページに追加することもできます。このアイコンは、簡単な説明の下に表示されます。 選択すると、ページに追加するアイテムを選択できる SharePoint ツールボックスが開きます。
+
+   ![キャンバス アイコン](../media/knowledge-management/webpart-library.png)</br> 
+
+
+9. [ **発行] を** 選択して変更を保存します。 
+
+ページを発行すると、トピック名、代替名、説明、ピン留めされたユーザーが、トピックを表示するライセンスを持つすべてのユーザーに表示されます。 特定のファイル、ページ、およびサイトは、閲覧者がアイテムに対して 365 Officeアクセス許可を持つ場合にのみ、トピック ページに表示されます。 
+
+
 
 ## <a name="see-also"></a>関連項目
 

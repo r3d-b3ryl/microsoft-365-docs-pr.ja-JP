@@ -22,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Microsoft 365 から古いドメインを削除し、ユーザーとグループを別のドメインに移動する方法について説明します。
-ms.openlocfilehash: 02ec704e400af76c25c0eb54de10291e2ef3caa2
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 39f8d97abb3a424251d6847da02f0dcc58baff31
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688263"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114011"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
   
@@ -84,7 +84,7 @@ ms.locfileid: "49688263"
 
 2. [アクティブ **なユーザー** > **] を選択します**。
 
-3. 移動するユーザーの名前の横にあるボックスを選択します。
+3. 移動するユーザーすべての名前の横にあるボックスを選択します。
 
 4. At the top of the page, choose **More** > **Edit domains**.
 
@@ -100,7 +100,7 @@ ms.locfileid: "49688263"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にアクセスします。
 
-2. [アクティブ **なユーザー** \> **] に移動し**、一覧からアカウントを選択します。
+2. [ユーザーの **アクティブな** \> **ユーザー] に** 移動し、一覧からアカウントを選択します。
 
 3. [アカウント **] タブで** 、[ユーザー名の **管理] を選択** し、別のドメインを選択します。
   
@@ -114,13 +114,13 @@ ms.locfileid: "49688263"
 
 ::: moniker range="o365-germany"
 
-1. [アクティブ **なユーザー** \> **] に移動し**、一覧で自分の名前を選択します。
+1. [アクティブな **ユーザー** \> **] に移動し**、一覧で自分の名前を選択します。
 
-2. [ユーザー名/ メール] **セクションで** 、[編集] **を** 選択し、別のドメインを選択します。
+2. [ユーザー名/ メール] **セクションで** 、[編集] **を選択し**、別のドメインを選択します。
 
 3. Select **Set as primary** > **Save** > **Close**.
   
-4. 上部でアカウント名を選択し、[サインアウト] **を選択します**。
+4. 上部で、アカウント名を選択し、[サインアウト] **を選択します**。
 
 5. 新しいドメインと同じパスワードでサインインします。
 
@@ -130,9 +130,9 @@ ms.locfileid: "49688263"
 
 ::: moniker range="o365-21vianet"
 
-1. [アクティブ **なユーザー** \> **] に移動し**、一覧で自分の名前を選択します。
+1. [アクティブな **ユーザー** \> **] に移動し**、一覧で自分の名前を選択します。
 
-2. [ユーザー名/ メール] **セクションで** 、[編集] **を** 選択し、別のドメインを選択します。
+2. [ユーザー名/ メール] **セクションで** 、[編集] **を選択し**、別のドメインを選択します。
 
 3. Select **Set as primary** > **Save** > **Close**.
   

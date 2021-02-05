@@ -10,16 +10,16 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5b7ba0db52f06f7b3f6fce596015b56c8e46c6c2
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: d22cef41fb1d6dc3fde39681ad84edc510440b11
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068955"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110009"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルにアクセスする
 
-Microsoft マネージド デスクトップ サービスへのゲートウェイは [、Microsoft Endpoint Manager です](https://endpoint.microsoft.com/)。 このポータルのデバイス管理の機能について詳しくは、Microsoft Endpoint Manager のドキュメント [をご覧ください](https://docs.microsoft.com/mem/)。
+Microsoft マネージド デスクトップ サービスへのゲートウェイは [、Microsoft Endpoint Manager です](https://endpoint.microsoft.com/)。 このポータルのデバイス管理機能に詳しい場合は、Microsoft Endpoint Manager のドキュメント [を参照してください](https://docs.microsoft.com/mem/)。
 
 > [!NOTE]
 > [Microsoft Endpoint Manager では、](https://endpoint.microsoft.com/)次のブラウザーがサポートされています。
@@ -29,7 +29,7 @@ Microsoft マネージド デスクトップ サービスへのゲートウェ�
 > - Chrome (最新バージョン)
 > - Firefox (最新バージョン)
 
-Microsoft Endpoint Manager の Microsoft マネージド デスクトップの管理機能にアクセスするには、管理者アカウントに特定のアクセス許可が必要です。 役割ベースのアクセス制御を使用して、組織内のこれらの機能への管理者アクセスを管理できます。 複数の Azure Active Directory (Azure AD) 管理者ロールと組み込みの Microsoft マネージド デスクトップの役割を使用して、Microsoft マネージド デスクトップ管理ポータル内のさまざまな機能を詳細に制御できます。 Azure Active Directory ロールの詳細については、「Azure Active Directory での管理者 [ロールのアクセス許可」を参照してください](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 さまざまな Microsoft 製品ADに適用される Azure AD 管理者ロールとは異なり、組み込みのロールは Microsoft マネージド デスクトップに固有であり、このサービスの管理者機能へのアクセスのみを保証します。 管理者は、組み込みのロールをユーザーに個別に割り当てるか、Azure AD 管理者ロールと組み合わせて割り当て、既存の管理者アカウントに Microsoft マネージド デスクトップのアクセス許可を追加できます。
+Microsoft Endpoint Manager の Microsoft マネージド デスクトップの管理機能にアクセスするには、管理者アカウントに特定のアクセス許可が必要です。 役割ベースのアクセス制御を使用して、組織内のこれらの機能への管理者アクセスを管理できます。 複数の Azure Active Directory (Azure AD) 管理者ロールと組み込みの Microsoft マネージド デスクトップの役割を使用して、Microsoft マネージド デスクトップ管理ポータル内のさまざまな機能を詳細に制御できます。 Azure Active Directory ロールの詳細については、「Azure Active Directory での管理者 [ロールのアクセス許可」を参照してください](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 さまざまな Microsoft 製品ADに適用される Azure AD 管理者ロールとは異なり、組み込みの役割は Microsoft マネージド デスクトップに固有の役割であり、このサービスの管理者機能へのアクセスのみを保証します。 管理者は、組み込みのロールをユーザーに個別に割り当てるか、Azure AD 管理者ロールと組み合わせて割り当て、既存の管理者アカウントに Microsoft マネージド デスクトップのアクセス許可を追加できます。
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Microsoft マネージド デスクトップ アクセスを使用した Azure Active Directory ロール
 
@@ -59,9 +59,9 @@ Azure Active Directory ロールの割り当てに関するヘルプが必要な
 > [!NOTE]
 > セキュリティ機能には、セキュリティ関連の通信、セキュリティ連絡先の管理、セキュリティ関連のサポート要求の管理、およびセキュリティ関連レポートへのアクセスが含まれます。 
 
-### <a name="assigning-built-in-roles-to-administrators"></a>組み込みの役割を管理者に割り当てる
+### <a name="assigning-built-in-roles-to-user"></a>組み込みの役割をユーザーに割り当てる
 
-組み込みの役割を管理するには、"Modern Workplace Roles - _Role Name"_ という名前のカスタム ロールごとにセキュリティ グループがあります (例: "Modern Workplace Roles – Security Manager")。 これらのセキュリティ グループの 1 つにユーザーを割り当てるには、次の手順を実行します。
+組み込みの役割を簡単に管理するには、"Modern Workplace Roles - _Role Name"_ という名前のカスタム 役割ごとにセキュリティ グループがあります (例: "Modern Workplace Roles – Security Manager")。 これらのセキュリティ グループの 1 つにユーザーを割り当てるには、次の手順を実行します。
 1.  Microsoft Endpoint Manager ポータルに移動します。
 2.  左側 **の [グループ** ] を選択します。
 3.  モダン Workplace **Roles を検索** し、割り当てる役割に関連付けられているグループを選択します。 
@@ -71,3 +71,16 @@ Azure Active Directory ロールの割り当てに関するヘルプが必要な
 
 > [!NOTE]
 > 役割割り当てのセキュリティ グループの入れ子は現在サポートされていません。 
+
+### <a name="assigning-built-in-roles-to-groups"></a>組み込みの役割をグループに割り当てる
+
+1 つ以上の組み込みの役割を既存のグループに割り当てる必要がある場合は、次の手順を実行します。
+1. Go to [portal.azure.com](https://portal.azure.com/).
+2. エンタープライズ アプリケーションを **検索して開きます**。
+3. アプリケーションの **種類のフィルターを** _Microsoft アプリケーションに変更し、[_ 適用] を選択 **します**。
+4. モダン Workplace Customer API _を検索して選択します_。
+5. 左側 **のウィンドウから [ユーザー** とグループ] を選択し、[+ ユーザー/グループの追加 **] を選択します**。
+6. ユーザーとグループから必要な **グループを検索します**。
+7. [役割の選択] から **該当する** 役割を検索し、選択します。
+8. [割り当 **て] を選択します**。
+ 

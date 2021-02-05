@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 でトピックのアクセス許可を管理する
+title: Microsoft のトピックのアクセス許可を管理するトピック
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,16 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft 365 でトピックのアクセス許可を管理する方法について説明します。
-ms.openlocfilehash: b42bcf25f7b7516fb2b8b6e6b052d94fa6c4ea94
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: トピックのアクセス許可を管理する方法については、「Microsoft のトピック」を参照してください。
+ms.openlocfilehash: 6592103526a86671a3ff42c698c1243f63be7fef
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668301"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107393"
 ---
-# <a name="manage-topic-permissions-in-microsoft-365"></a>Microsoft 365 でトピックのアクセス許可を管理する
+# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Microsoft のトピックのアクセス許可を管理するトピック
 
 トピックのアクセス許可の設定は [、Microsoft 365 管理センターで管理できます](https://admin.microsoft.com)。 これらのタスクを実行するには、全体管理者または SharePoint 管理者である必要があります。
 
@@ -30,7 +29,7 @@ ms.locfileid: "49668301"
 ## <a name="to-access-topics-management-settings"></a>トピックの管理設定にアクセスするには:
 
 1. Microsoft 365 管理センターで、[設定] をクリックし、[組織の設定]**をクリックします**。
-2. [サービス] **タブで** 、[ナレッジ ネットワーク] **をクリックします**。
+2. [サービス] **タブで** 、[トピックエクスペリエンス] **をクリックします**。
 
     ![ユーザーを知識に接続する](../media/admin-org-knowledge-options-completed.png) 
 
@@ -65,8 +64,8 @@ ms.locfileid: "49668301"
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 でのトピック検出の管理](topic-experiences-discovery.md)
+[Microsoft のトピックの検出を管理するトピック](topic-experiences-discovery.md)
 
-[Microsoft 365 でトピックの表示を管理する](topic-experiences-knowledge-rules.md)
+[Microsoft のトピックに関するトピックの表示を管理する](topic-experiences-knowledge-rules.md)
 
-[Microsoft 365 のトピック センターの名前を変更する](topic-experiences-administration.md)
+[Microsoft のトピック センターの名前を変更する](topic-experiences-administration.md)

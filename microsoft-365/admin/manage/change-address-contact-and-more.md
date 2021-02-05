@@ -21,23 +21,23 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 組織名、住所、電話、技術担当者、メールなど、組織プロファイルを変更する方法について説明します。
-ms.openlocfilehash: 334bd1bee0571ba173987b7767465e8d82d7efe9
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 3c3a936c8961373a94dc8b8978dbc274048af09c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058437"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114227"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
   
-組織のプロファイル (組織名、住所、電話、技術担当者など) を変更できます。 **この情報を更新するには、全体管理者でなければなりません。**
+組織名、住所、電話、技術担当者など、組織プロファイルを変更できます。 **この情報を更新するには、全体管理者でなければなりません。**
   
 課金内容またはサブスクリプションに関連付けられている住所を変更するには、「一般的な [Microsoft 365](../../commerce/billing-and-payments/change-your-billing-addresses.md)の請求先住所を変更する」を参照してください。
 
@@ -78,12 +78,12 @@ ms.locfileid: "50058437"
 
 3. 左側で、[セキュリティ情報] **を選択します**。
 
-4. [メール] セクションで、[変更] を **選択します。**
+4. [メール] セクションで、[変更] を選択 **します。**
 
 5. [連絡用メール] ボックスでアドレス **を編集し、[** 次へ] を選択 **します**。
 
 6. 代替メール アドレスに送信されるコードを入力し **、[OK]** を選択して変更を確認します。
-その他のプロファイル情報の変更については、「[](change-contact-preferences.md)連絡先の基本設定を変更する」または「表示言語を変更する[」を参照してください](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)。
+他のプロファイル情報の変更については、「連絡先[](change-contact-preferences.md)の基本設定を変更する」または「表示言語を変更する[」を参照してください](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)。
   
 ### <a name="email-signatures"></a>メールの署名
   

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のトピック センターの名前を変更する
+title: Microsoft のトピック センターの名前を変更する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,23 +9,22 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft 365 のトピック センターの名前を変更する方法について説明します。
-ms.openlocfilehash: 63ce6b75d26ad600d1241a70fcbd616ecc98a4d2
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: トピック センターの名前を変更する方法については、Microsoft の 「Microsoft のトピック」を参照してください。
+ms.openlocfilehash: 91f0693ba24e412812e1b8db19cfcf0febd2ec66
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668207"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107725"
 ---
-# <a name="change-the-name-of-the-topic-center-in-microsoft-365"></a>Microsoft 365 のトピック センターの名前を変更する
+# <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Microsoft のトピック センターの名前を変更する
 
 トピック センターの名前は [、Microsoft 365 管理センターで変更できます](https://admin.microsoft.com)。 これらのタスクを実行するには、全体管理者または SharePoint 管理者である必要があります。
 
 ## <a name="to-access-topics-management-settings"></a>トピックの管理設定にアクセスするには:
 
 1. Microsoft 365 管理センターで、[設定] をクリックし、[組織の設定]**をクリックします**。
-2. [サービス] **タブで** 、[ナレッジ ネットワーク] **をクリックします**。
+2. [サービス] **タブで** 、[トピックエクスペリエンス] **をクリックします**。
 
     ![ユーザーを知識に接続する](../media/admin-org-knowledge-options-completed.png) 
 
@@ -45,8 +44,8 @@ ms.locfileid: "49668207"
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 でのトピック検出の管理](topic-experiences-discovery.md)
+[Microsoft のトピックの検出を管理するトピック](topic-experiences-discovery.md)
 
-[Microsoft 365 でトピックの表示を管理する](topic-experiences-knowledge-rules.md)
+[Microsoft のトピックに関するトピックの表示を管理する](topic-experiences-knowledge-rules.md)
 
-[Microsoft 365 でトピックのアクセス許可を管理する](topic-experiences-user-permissions.md)
+[Microsoft のトピックのアクセス許可を管理するトピック](topic-experiences-user-permissions.md)

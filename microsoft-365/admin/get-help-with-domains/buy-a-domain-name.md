@@ -24,19 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Microsoft 365 でドメイン名を購入する方法について説明します。
-ms.openlocfilehash: d8c0bac5921b5cb3efacffdfee3ab948857b8a1f
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 40fc44dfa3bc3e608b590157b7db423302af748d
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658613"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113965"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ Microsoft 365 でドメインをセットアップするには、ドメインを
 ドメインを (ドメイン レジストラーで) 登録した後、管理者として Microsoft 365 にサインインし、メール アドレスや他のサービスで使用できるようドメインを設定します。
   
 > [!NOTE]
-> この記事の SharePoint Online パブリック Web サイトの情報は、組織が 2015 年 3 月 9 日より前に Microsoft 365 を購入した場合にのみ適用されます。 
+> この記事の SharePoint Online パブリック Web サイト情報は、組織が 2015 年 3 月 9 日より前に Microsoft 365 を購入した場合にのみ適用されます。 
 
 ## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Microsoft 365 に必要なすべての DNS レコードをサポートするドメイン レジストラー
 

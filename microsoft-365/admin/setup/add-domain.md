@@ -26,19 +26,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: DNS ホストで DNS レコードを追加して、Microsoft 365 管理センターの Microsoft 365 にドメインを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: 3e7463bd4cf6b7836a9770421e0b8ce597524a67
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5a3c86fb2b2f93e9da844c15a55555c5d0d7b5c1
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658053"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114263"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
@@ -136,7 +136,7 @@ ms.locfileid: "49658053"
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress.com](https://wordpress.com/)
-- [クシュク](https://www.plesk.com/)
+- [クシク語](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer または WildWestDomains (SecureServer DNS ホスティングを使用する GoDaddy リセラー)
     - 例:

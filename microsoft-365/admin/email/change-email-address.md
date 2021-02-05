@@ -25,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: '最初のメール アドレスを、メール アドレスのような使い方の良いメール アドレスにtom@fourthcoffee.com。 これを行うには、ドメイン名を購入し、Microsoft 365 に追加する必要があります。 '
-ms.openlocfilehash: d23c612eecae0a0b58d844fbbe25392ffa682fde
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 445b78f759cee79a794f9656afd5b26051534e26
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656833"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114023"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ Office 365 Germany の最初のメール アドレスには、次のような .o
 
 ::: moniker-end
 
-セットアップ中にドメインの MX レコードを更新して、ドメインの電子メールを Microsoft 365 に届く設定に変更すると、そのドメインに送信されたメールはすべて Microsoft 365 に届く開始されます。 MX レコードを変更する前に、ドメインにメールを持つすべてのユーザーのユーザーが追加され、Microsoft 365 にメールボックスが作成されている必要があります。 ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくない場合 You can take steps to [pilot Microsoft 365 with just a few email addresses instead.](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)
+セットアップ中にドメインの MX レコードを更新して、ドメインの電子メールを Microsoft 365 に届く設定に変更すると、そのドメインに送信されたメールはすべて Microsoft 365 に届く開始されます。 MX レコードを変更する前に、ドメインにメールを持つすべてのユーザーのユーザーが追加され、Microsoft 365 にメールボックスが作成されている必要があります。 ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくない場合 You can take steps to [pilot Microsoft 365 with just a few email addresses instead](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide).
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用してカスタム ドメインを使用するメール アドレスを変更する
 
@@ -94,7 +94,7 @@ Office 365 Germany の最初のメール アドレスには、次のような .o
 Microsoft 365 でドメインに合った設定を正しく行うガイドが表示されます。
 
 > [!NOTE]
-> Exchange ライセンスを使用していない場合は、ドメインを使用して Microsoft 365 テナントからメールを送受信することはできません。
+> Exchange ライセンスを使用していない場合は、ドメインを使用して Microsoft 365 テナントとの間で電子メールを送受信することはできません。
   
 ## <a name="related-articles"></a>関連記事
 

@@ -9,23 +9,23 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88b1ba657b4823d90a41b28b01362760676410ba
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: a6b5cbbcb2f48797130b080d9d1dd1e6427d4fb8
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032693"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110053"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 
 Microsoft マネージド デスクトップは、サービスに含めるデバイス要件を定期的に評価します。 この記事では、Microsoft マネージド デスクトップで動作するためにデバイスが満たす必要があるハードウェアおよびソフトウェアの要件について説明します。 これらの要件に基づいて、サービス[](device-list.md)での使用が既に承認されている特定のデバイスの一覧を確認できます。
 
 > [!NOTE]
-> これらの要件は、いつでも変更できますが、このような変更に関する通知は 90 日間提供されます。 最近変更された要件には、次のマークが付いている **\*** 必要があります。 
+> これらの要件は、いつでも変更できますが、ハードウェア要件の変更に関する 30 日間の通知が提供されます。 最近変更された要件には、次のマークが付いている **\*** 必要があります。 
 
-## <a name="check-hardware-requirements"></a>ハードウェア要件の確認
+## <a name="check-hardware-requirements"></a>ハードウェア要件を確認する
 
-デバイスの仕様の確認に加え、ダウンロード可能な準備状況の[](../get-ready/readiness-assessment-downloadable.md)評価チェックを使用して、特定のデバイスが必要な要件を満たしていることを確認することもできます。 また、このツールは、サービスが動作するために必要なネットワーク設定とエンドポイントもチェックします。
+デバイスの仕様の確認に加え、ダウンロード可能な準備状況評価[](../get-ready/readiness-assessment-downloadable.md)チェックを使用して、特定のデバイスが必要な要件を満たしていることを確認することもできます。 また、このツールは、サービスが動作するために必要なネットワーク設定とエンドポイントもチェックします。
 
 ## <a name="minimum-requirements"></a>最小要件
 
@@ -46,7 +46,7 @@ Microsoft マネージド デスクトップに登録するには、デバイス
 デバイスには、次のソフトウェアがプレインストールされている必要があります。
 
 - Windows 10 Enterprise、Pro、または Pro Workstation エディション
-- {64 ビットバージョンの Office実行 {I will double-check name w/ Office colleagues]}
+- 64 ビット バージョンの Microsoft Office実行 
 - 該当するデバイス ドライバーすべて
 
 

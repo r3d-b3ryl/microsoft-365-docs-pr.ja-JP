@@ -235,8 +235,6 @@
           href: manage/change-address-contact-and-more.md
         - name: 管理者の連絡先情報を更新する
           href: manage/update-phone-number-and-email-address.md
-        - name: パスワードの有効期限ポリシーを設定する
-          href: manage/set-password-expiration-policy.md
         - name: アプリ起動ツールをカスタマイズする
           href: manage/customize-the-app-launcher.md
         - name: ユーザーのアプリ起動ツールにアプリを固定する

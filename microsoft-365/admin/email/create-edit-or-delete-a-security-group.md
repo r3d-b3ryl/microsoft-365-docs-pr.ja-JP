@@ -20,28 +20,28 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: セキュリティ グループの作成、編集、削除について説明します。
-ms.openlocfilehash: c7c8d57037d972cd89dad45358dc5a7aa3fb86e8
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: df3d8fde0c487663237b3858aa0bf049ba4db045
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780243"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114047"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでセキュリティ グループを作成、編集、削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
-[Microsoft 365 **groups** ] ページでは、SharePoint ONLINE および CRM online の同じアクセス許可を割り当てるために使用できるユーザーアカウントのグループを作成できます。 たとえば、管理者は、特定のユーザー グループに対して SharePoint サイトへのアクセス権を付与するセキュリティ グループを作成できます。 セキュリティ グループを作成、編集、または削除できるのは、グローバル管理者とユーザー管理の管理者だけです。詳細については、「[管理者ロールの割り当て](../add-users/assign-admin-roles.md)」をご覧ください。 
+[Microsoft 365 グループ] ページでは、SharePoint Online と CRM Online で同じアクセス許可を割り当てるのに使用できるユーザー アカウントのグループを作成できます。 たとえば、管理者は、特定のユーザー グループに対して SharePoint サイトへのアクセス権を付与するセキュリティ グループを作成できます。 セキュリティ グループを作成、編集、または削除できるのは、グローバル管理者とユーザー管理の管理者だけです。詳細については、「[管理者ロールの割り当て](../add-users/assign-admin-roles.md)」をご覧ください。 
   
 他に、メールの送信やユーザー グループにアクセス許可を割り当てるために使用できる [Exchange Online グループと SharePoint Online グループ](#groups-in-exchange-online-and-sharepoint-online)と、ユーザーに権限を付与し、サイトとサイト コレクションへのアクセスを許可する [Exchange Online グループと SharePoint Online グループ](#groups-in-exchange-online-and-sharepoint-online)があります。 
   
 > [!IMPORTANT]
->  サイト メールボックスを使用しますか? 個別ではなくセキュリティ グループを使用して SharePoint に追加されたすべてのユーザーは、SharePoint からのみサイト メールボックスを使用できます。 これらのユーザーは、Outlook からサイト メールボックスにアクセスすることはできません。 詳細については、「[サイトメールボックスではなく Microsoft 365 グループを使用する](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)」を参照してください。 
+>  サイト メールボックスを使用しますか? 個別ではなくセキュリティ グループを使用して SharePoint に追加されたすべてのユーザーは、SharePoint からのみサイト メールボックスを使用できます。 これらのユーザーは、Outlook からサイト メールボックスにアクセスすることはできません。 詳細については、「サイト メールボックス [ではなく Microsoft 365 グループ](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)を使用する」を参照してください。 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>管理センターでセキュリティ グループを管理する
 
@@ -102,7 +102,7 @@ ms.locfileid: "44780243"
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** \> **グループ**] ページに移動します。  
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>グループ グループ] **ページ** \> **に移動** します。  
   
 2. [**グループ**] ページで、グループ名を選択します。 
     
@@ -114,7 +114,7 @@ ms.locfileid: "44780243"
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** \> **グループ**] ページに移動します。
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>グループ グループ] **ページ** \> **に移動** します。
   
 2. [**グループ**] ページで、グループ名を選択します。 
     
@@ -139,13 +139,13 @@ ms.locfileid: "44780243"
 
 ユーザー グループを作成して全員にメールを同時に送信できるようにする場合は、Exchange 管理センターで [**管理**] \> [**Exchange**] \> [**宛先**] \> [**グループ**] の順に移動します。 次に、[**新規**]、[![追加](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)] の順に選択し、作成するグループの種類を選択します。 
   
-- **配布グループ**: メッセージをユーザー グループに配布するために使用します。 *メールが有効な配布グループ*、または*配布リスト*とも呼ばれます。 詳細については、「[配布グループの管理](https://technet.microsoft.com/library/bb124513.aspx)」をご覧ください。
+- **配布グループ**: メッセージをユーザー グループに配布するために使用します。 これは、メールが有効な *配布グループ、または* 配布リストとも *呼ばれる。* 詳細については、「[配布グループの管理](https://technet.microsoft.com/library/bb124513.aspx)」をご覧ください。
     
-- **セキュリティ グループ**: メッセージをユーザー グループに配布する、またはリソースへのアクセス許可を付与するために使用します。 このグループは、*メールが有効なセキュリティ グループ*とも呼ばれます。 詳細については、「[メールが有効なセキュリティ グループの管理](https://technet.microsoft.com/library/bb123521.aspx)」をご覧ください。
+- **セキュリティ グループ**: メッセージをユーザー グループに配布する、またはリソースへのアクセス許可を付与するために使用します。 このグループは、*メールが有効なセキュリティ グループ* とも呼ばれます。 詳細については、「[メールが有効なセキュリティ グループの管理](https://technet.microsoft.com/library/bb123521.aspx)」をご覧ください。
     
 - **動的配布グループ**: メッセージの送信時に、定義されたフィルターと条件に基づいて宛先リストが毎回再確認されるタイプの配布グループ。 詳細については、「[動的配布グループの管理](https://technet.microsoft.com/library/bb123722.aspx)」をご覧ください。
     
-Exchange 管理センターで配布グループとメールが有効なセキュリティグループを作成すると、その名前とユーザーリストが [**セキュリティグループ**] ページに表示されます。 このグループは、どちらの場所でも削除できますが、編集は Exchange 管理センターでのみ実行できます。 動的配布グループが [**セキュリティグループ**] ページに表示されません。 
+Exchange 管理センターで配布グループとメールが有効なセキュリティ グループを作成すると、その名前とユーザー リストが [セキュリティ グループ] **ページに表示** されます。 このグループは、どちらの場所でも削除できますが、編集は Exchange 管理センターでのみ実行できます。 動的配布グループは、[セキュリティ グループ] ページ **に表示** されます。 
   
  SharePoint グループは、サイト コレクションの作成時に自動的に作成されます。 既定のグループは、SharePoint の既定のアクセス許可レベル (SharePoint ロールと呼ばれることもあります) を使用して、ユーザーに権限とアクセス権を付与します。 詳細については、「[SharePoint Online の既定の SharePoint グループ](https://docs.microsoft.com/sharepoint/default-sharepoint-groups)」をご覧ください。
   
@@ -159,5 +159,5 @@ Exchange 管理センターで配布グループとメールが有効なセキ�
   
 ## <a name="can-i-send-email-to-a-security-group"></a>セキュリティ グループにメールを送信できますか?
 
-はい。 ただし、電子メールとコラボレーションにグループを使用する場合は、代わりに[Microsoft 365 グループを作成](../create-groups/create-groups.md)することをお勧めします。 
+はい。 ただし、メールとコラボレーションにグループを使用する場合は、代わりに [Microsoft 365](../create-groups/create-groups.md) グループを作成することをお勧めします。 
   

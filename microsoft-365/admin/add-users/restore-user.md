@@ -22,20 +22,20 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: 削除されたユーザーアカウントとすべての関連データを復元する方法について説明します。
-ms.openlocfilehash: 7d7269ec338aafb9be317c2ee10a57d23c775c0a
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 削除されたユーザー アカウントとすべての関連データを復元する方法について学習します。
+ms.openlocfilehash: d14995c8ee2d62c1d722ef0bcc7577745a747082
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551846"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113999"
 ---
 # <a name="restore-a-user"></a>ユーザーを復元する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
    
@@ -43,41 +43,41 @@ ms.locfileid: "49551846"
   
 いくつかのヒントをご紹介します。
   
-- アカウントに割り当てるためのライセンスが利用可能であることを確認します。
+- アカウントに割り当て可能なライセンスを確認します。
     
 - Active Directory を使用している場合、ユーザー アカウントを復元する手順については、「[Office 365、Azure、Intune で削除済みのユーザー アカウントをトラブルシューティングする方法](https://support.microsoft.com/kb/2619308)」を参照してください。 
     
 ## <a name="restore-one-or-more-user-accounts"></a>1 つ以上のユーザー アカウントを復元する
 
-これらの手順を実行するには、Microsoft 365 のグローバル管理者またはユーザー管理の管理者である必要があります。 
+これらの手順を実行するには、Microsoft 365 のグローバル管理者またはユーザー管理管理者である必要があります。 
   
  
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[ **ユーザー** の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">削除済み</a> ユーザー] ページに移動します。
+1. 管理センターで、[削除されたユーザー]ページ \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">に移動</a>します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
+1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=848041)削除されたユーザー  ] \> **を選択します**。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
+1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=850627)削除されたユーザー  ] \> **を選択します**。
 
 ::: moniker-end
 
-2. [ **削除済みのユーザー** ] ページで、復元するユーザーの名前を選択し、[ **復元**] を選択します。
+2. [削除 **済みユーザー]** ページで、復元するユーザーの名前を選択し、[復元] を選択 **します**。
     
  
-3. 画面の指示に従ってパスワードを設定し、[ **復元**] を選択します。
+3. プロンプトに従ってパスワードを設定し、[復元] を **選択します**。
     
-4. ユーザーが正常に復元された場合は、[ **電子メールを送信して閉じる**] を選択します。 名前の競合またはプロキシ アドレスの競合が発生した場合は、これらのアカウントの復元方法については、以下の手順を参照してください。
+4. ユーザーが正常に復元された場合は、[メールを送信して閉じる **] を選択します**。 名前の競合またはプロキシ アドレスの競合が発生した場合は、これらのアカウントの復元方法については、以下の手順を参照してください。
     
-ユーザーを復元した後は、パスワードが変更されたことを確認してから、それに従って通知するようにしてください。
+ユーザーを復元した後、ユーザーのパスワードが変更されたと通知し、ユーザーをフォローアップします。
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>ユーザー名が競合するユーザーを復元する
 <a name="RestoreUserNameConflict"> </a>
@@ -89,35 +89,35 @@ ms.locfileid: "49551846"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[ **ユーザー** の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">削除済み</a> ユーザー] ページに移動します。
+1. 管理センターで、[削除されたユーザー]ページ \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">に移動</a>します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
+1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=848041)削除されたユーザー  ] \> **を選択します**。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
+1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=850627)削除されたユーザー  ] \> **を選択します**。
 
 ::: moniker-end
 
   
-2. [ **削除済みのユーザー** ] ページで、復元するユーザーの名前を選択し、[ **復元**] を選択します。
+2. [削除 **済みユーザー]** ページで、復元するユーザーの名前を選択し、[復元] を選択 **します**。
     
     > [!NOTE]
     > 2 人以上のユーザーの復元が失敗した場合、エラー メッセージで一部のユーザーの復元操作が失敗したことが示されます。ログを見て復元されなかったユーザーを確認し、失敗したアカウントを 1 つずつ復元します。 
   
-3. 画面の指示に従ってパスワードを設定し、[ **復元**] を選択します。
+3. プロンプトに従ってパスワードを設定し、[復元] を **選択します**。
     
 4. アカウントの復元に問題があったことを示すメッセージが表示されます。次のいずれかの操作を行います。
     
   - 復元をキャンセルし、現在のアクティブなユーザーの名前を変更します。もう一度復元を試みます。
     
-  - または、ユーザーの新しいプライマリ電子メールアドレスを入力して、[ **復元**] を選択します。
+  - または、ユーザーの新しいプライマリ メール アドレスを入力し、[復元] を **選択します**。
     
 5. 結果を確認し、[ **閉じる**] を選びます。
     
@@ -125,30 +125,30 @@ ms.locfileid: "49551846"
 
 プロキシ アドレスを含むユーザー アカウントを削除し、同じプロキシ アドレスを別のアカウントに割り当てた後、削除したアカウントを復元しようとすると、プロキシ アドレスの競合が発生します。この問題を解決するには、次の手順に従ってください。
   
-これを行うには、Microsoft 365 で [管理者アクセス許可](about-admin-roles.md) を持っている必要があります。 
+これを行うには [、Microsoft](about-admin-roles.md) 365 の管理者権限が必要です。 
   
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[ **ユーザー** の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">削除済み</a> ユーザー] ページに移動します。
+1. 管理センターで、[削除されたユーザー]ページ \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">に移動</a>します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-[管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
+管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=848041)削除されたユーザー  ] \> **を選択します**。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動し、[ユーザーが **Users** \> **削除されました**] を選択します。
+1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=850627)削除されたユーザー  ] \> **を選択します**。
 
 ::: moniker-end
 
 2. [ **削除済みのユーザー**] ページで、復元するユーザーを選択して、[ **復元**] を選択します。 
     
-3. [ **復元** ] ページで、指示に従ってパスワードを設定し、[ **復元**] を選択します。 競合しているプロキシ アドレスは、復元したユーザーから自動的に削除されます。
+3. [復元 **] ページで** 、指示に従ってパスワードを設定し、[復元] を **選択します**。 競合しているプロキシ アドレスは、復元したユーザーから自動的に削除されます。
     
 4. 結果を確認し、[ **閉じる**] を選びます。
 

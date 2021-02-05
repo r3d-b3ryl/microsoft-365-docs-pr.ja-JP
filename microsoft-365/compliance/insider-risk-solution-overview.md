@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 684b4d724915478d8198d53d9e95cc1e9b3f092e
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 71eb42c0912edc258b1a33698f1942140d91feb3
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794139"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105198"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 のインサイダー リスク ソリューション
 
-インサイダー リスクは、最新の職場におけるセキュリティとコンプライアンスの専門家の最も懸念事項の 1 つです。 業界調査では、インサイダー リスクは多くの場合、特定のユーザー イベントやアクティビティに関連付けられていることが示されています。 これらのリスクから組織を保護することは、識別が困難で軽減が困難な場合があります。 インサイダー リスクには、さまざまな分野の脆弱性が含まれます。また、知的財産の喪失から職場のハラスメントなど、組織にとって大きな問題を引き起こす可能性があります。 次の図は、一般的なインサイダー リスクの概要を示しています。
+インサイダー リスクは、最新の職場におけるセキュリティとコンプライアンスの専門家の最も懸念事項の 1 つです。 業界調査では、インサイダー リスクは多くの場合、特定のユーザー イベントやアクティビティに関連付けられていることが示されています。 これらのリスクから組織を保護することは、識別が困難で、軽減が困難な場合があります。 インサイダー リスクには、さまざまな分野の脆弱性が含まれます。また、知的財産の喪失から職場のハラスメントなど、組織にとって大きな問題を引き起こす可能性があります。 次の図は、一般的なインサイダー リスクの概要を示しています。
 
 ![インサイダー リスクの脅威](../media/ir-solution-threats.png)
 
@@ -40,7 +40,7 @@ Microsoft 365 のリスク防止機能は、インサイダー リスク製品�
 | ![ポリシー違反アイコン](../media/ir-risk-policy-violations.png)| ポリシー違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
 | ![Insider の取引/ハンドシェイク アイコン](../media/ir-risk-insider-trading.png)| インサイダー取引 | ![サポート](../media/check-mark.png) |  |  |  |
 | ![[競合] アイコン](../media/ir-risk-conflicts-of-interest.png)| 利害の競合 | ![サポート](../media/check-mark.png) |  | ![サポート](../media/check-mark.png) |  |
-| ![機密性の高いデータ漏洩/デバイス アイコン](../media/ir-risk-sensitive-data-leaks.png)| 機密性の高いデータの漏洩 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![機密性の高いデータの漏洩/デバイス アイコン](../media/ir-risk-sensitive-data-leaks.png)| 機密性の高いデータの漏洩 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
 | ![職場のワークプレース/人のアイコン](../media/ir-risk-workplace-harassment.png)| 職場のハラスメント | ![サポート](../media/check-mark.png) |  |  |  |
 | ![セキュリティ違反アイコン](../media/ir-risk-security-violations.png)| セキュリティ違反 |  | ![サポート](../media/check-mark.png) |  | ![サポート](../media/check-mark.png) |
 | ![規制コンプライアンス違反アイコン](../media/ir-risk-regulatory-compliance-violations.png)| 規制遵守違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
@@ -78,6 +78,9 @@ Microsoft 365 のリスク防止機能は、インサイダー リスク製品�
 - Microsoft 365 A5 サブスクリプション (有料版または試用版)
 - Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 コンプライアンス アドオン
 - Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 Insider Risk Management アドオン
+- Microsoft 365 G5 サブスクリプション (有料版または試用版)
+- Microsoft 365 G5 サブスクリプション + Microsoft 365 G5 コンプライアンス アドオン
+- Microsoft 365 G5 サブスクリプション + Microsoft 365 G5 Insider Risk Management アドオン
 
 ### <a name="information-barriers"></a>情報バリア
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 usage analytics でレポートをカスタマイズする
+title: Microsoft 365 利用状況分析のレポートをカスタマイズする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,24 +19,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: ブラウザーと Power BI デスクトップでレポートをカスタマイズする方法について説明します。
-ms.openlocfilehash: 8baeb1a9f48d8f1ccdb591a60fefe863502344b6
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: ブラウザーと Power BI Desktop でレポートをカスタマイズする方法について学習します。
+ms.openlocfilehash: 0375b61b6922c99acf927a4283571451deabaf14
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841425"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114299"
 ---
-# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 usage analytics でレポートをカスタマイズする
+# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析のレポートをカスタマイズする
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
-Microsoft 365 usage analytics は、ユーザーが Microsoft 365 を採用して使用する方法についての洞察を提供する Power BI のダッシュボードを提供します。 このダッシュボードは、利用状況データを利用するための開始点に過ぎません。 レポートをカスタマイズし、洞察機能を個人に合わせて調整できます。
+Microsoft 365 利用状況分析は、ユーザーが Microsoft 365 を導入して使用する方法に関する洞察を提供する Power BI のダッシュボードを提供します。 このダッシュボードは、利用状況データを利用するための開始点に過ぎません。 レポートをカスタマイズし、洞察機能を個人に合わせて調整できます。
   
 また、Power BI デスクトップを使用し、レポートをさらにカスタマイズできます。レポートを他のデータ ソースに接続することで事業に関してさらに深い洞察が得られます。
   
@@ -46,65 +46,65 @@ Microsoft 365 usage analytics は、ユーザーが Microsoft 365 を採用し�
   
 ### <a name="modify-an-existing-visual"></a>既存のビジュアルを変更する
 
-この例では、 **アクティブ化/ライセンス** レポート内の [ **アクティブ化** ] タブを変更する方法を示します。 
+この例では、ライセンス認証/ライセンス レポート **内** の [ライセンス認証] **タブを変更する方法を示** します。 
   
-1. **アクティブ化/ライセンス** レポートで、[ **アクティブ化** ] タブを選択します。
+1. [ライセンス **認証/ライセンス] レポートで** 、[ライセンス認証] タブ **を選択** します。
     
-2. **Edit** ![ Power BI ボタンの [その他のページ] ボタンを選択して、編集モードに入り ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) ます。 
+2. Power BI ボタンの [その他のページ] ボタンで上部の [編集] ボタンを選択して、編集 ![ モードに入 ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) ります。 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
-3. 右上にある [ **このページを複製** する] を選択します。
+3. On the top right, choose **Duplicate this page**.
     
     ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
-4. 右下で、Android、iOS、Mac などの OS に基づいてアクティブ化しているユーザーの数を示す棒グラフのいずれかを選択します。
+4. 右下で、Android、iOS、Mac などの OS に基づいて、アクティブ化するユーザーの数を示す任意の棒グラフを選択します。
     
-5. ビジュアルから **Mac 数** を削除するために、右側の [ **視覚エフェクト** ] 領域で、その横の **X** を選択します。
+5. 右側の **[視覚エフェクト** ] 領域で、ビジュアルから **Mac Count** を削除するには、その横にある **[X] を** 選択します。
 
-    ![Mac カウントの削除](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
+    ![Mac Count の削除](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
 ### <a name="create-a-new-visual"></a>新しいビジュアルを作成する
 
 次の例は、新しい Yammer ユーザーを月単位で追跡記録する新しいビジュアルの作成方法を示しています。
   
-1. 左側のナビゲーションを使用して **製品の使用状況** レポートに移動し、[ **Yammer** ] タブを選択します。
+1. 左側のナビゲーション **を使って製品** の使用状況レポートに移動し、次の **Yammerします。**
     
-2. ![POWER BI および edit で [その他のページ] ボタンを選択して編集モードに切り替え ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) ます。 **Edit** 
+2. Power BI の [その他のページ] ボタンを選択して ![ 編集モードに切り ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 替 **え、編集モードに切り替えます**。 
     
-3. ページの下部にある [ ![Power BI の [ページの追加] ボタン](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 新しいページを作成します。
+3. ページの下部にある ![Power BI の [ページの追加] ボタン](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) をクリックして新しいページを作成します。
   
-4. 右にある [ **視覚エフェクト** ] 領域で、[ **積み上げ横棒グラフ** ] (先頭行から最初に左) を選択します。
+4. 右側の **[視覚エフェクト]** 領域で、[積み上げ棒グラフ] **(左上** の行) を選択します。
 
     ![棒グラフの選択](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
-5. その視覚エフェクトの右下を選択し、ドラッグして拡大します。
+5. その視覚エフェクトの右下を選択し、ドラッグして大きくします。
 
-6. 右側の [ **フィールド** ] 領域で、 **予定** 表テーブルを展開します。
+6. 右側の **[フィールド]** 領域で、[カレンダー] テーブル **を展開** します。
 
-7. [ **MonthName** ] を [フィールド] 領域までドラッグします。[ **視覚エフェクト** ] 領域の [ **軸** ] 見出しのすぐ下にあります。
+7. [ **MonthName**] を [フィールド] 領域までドラッグします。[ **視覚エフェクト**] 領域の [ **軸**] 見出しのすぐ下にあります。
  
-    ![月名をドラッグします。](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![月名をドラッグする](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
-8. 右にある [ **フィールド** ] 領域の [ **TenantProductUsage** ] テーブルを展開します。
+8. 右にある [ **フィールド**] 領域の [ **TenantProductUsage**] テーブルを展開します。
 
-9. [ **FirstTimeUsers** ] を [フィールド] 領域までドラッグします。[ **値** ] 見出しのすぐ下にあります。
+9. [ **FirstTimeUsers**] を [フィールド] 領域までドラッグします。[ **値**] 見出しのすぐ下にあります。
 
-10. [ **Product** ] を [ **フィールド** ] 領域までドラッグします。[ **ビジュアル レベル フィルター** ] 見出しのすぐ下にあります。
+10. [ **Product**] を [ **フィールド**] 領域までドラッグします。[ **ビジュアル レベル フィルター**] 見出しのすぐ下にあります。
 
-11. [ **フィルターの種類** ] 領域が表示されたら、[ **Yammer** ] チェック ボックスを選択します。
+11. [ **フィルターの種類**] 領域が表示されたら、[ **Yammer**] チェック ボックスを選択します。
 
-    ![Yammer チェックボックスの選択](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Select Yammer checkbox](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 視覚エフェクトの一覧のすぐ下にある **Format** [ ![ Power BI visualizaions] の [format] アイコンの形式アイコンを選択し ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) ます。
+12. 視覚エフェクトの一覧の下で、Power  BI Visualizaions の [書式] アイコン ![ の [書式] アイコンを選択します ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
 
-13. [タイトル] を展開し、[ **タイトル テキスト** ] 値を [ **月別の新規 Yammer ユーザー** ] に変更します。
+13. [タイトル] を展開し、[ **タイトル テキスト**] 値を [ **月別の新規 Yammer ユーザー**] に変更します。
     
-14. [ **テキストのサイズ** ] 値を [ **12** ] に変更します。
+14. [ **テキストのサイズ**] 値を [ **12**] に変更します。
     
 15. 右下のページの名前を編集して、新しいページのタイトルを変更します。
 
-16.  [ **閲覧ビュー** ] の上部にある [ **保存** ] をクリックしてレポートを保存します。
+16.  上の読み取りビューを **クリックしてレポート** を保存し、[保存] を **クリックします**。
     
 ## <a name="customizing-the-reports-in-power-bi-desktop"></a>Power BI Desktop のレポートをカスタマイズする
 
@@ -112,33 +112,33 @@ Microsoft 365 usage analytics は、ユーザーが Microsoft 365 を採用し�
   
 ### <a name="use-the-reporting-apis"></a>レポート API を使用する
 
-開始するには、Microsoft 365 から ODATA レポート Api に直接接続して、これらのレポートを出力します。
+まず、これらのレポートを提供する Microsoft 365 の ODATA レポート API に直接接続します。
   
-1. Go to **get data** \> **Other** \> **ODATA Feed** \> **Connect** .
+1. Go to **get data** \> **Other** \> **ODATA Feed** \> **Connect**.
     
-2. [URL] ウィンドウで、「https:// <i></i> reports.office.com/pbi/v1.0/」と入力します。 \<tenantid\>
+2. URL ウィンドウに「https:// <i></i> \<tenantid\> reports.office.com/pbi/v1.0/」と入力します。
     
-    **注:** レポート Api はプレビュー段階にあり、運用に入るまで変更される可能性があります。 
+    **注:** レポート API はプレビュー中であり、実稼働に入るまで変更される可能性があります。 
   
     ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. プロンプトが表示されたら、microsoft 365 (組織または学校) 管理者の資格情報を入力して、Microsoft 365 に認証します。
+3. メッセージが表示されたら、Microsoft 365 (組織または学校) 管理者の資格情報を入力して、Microsoft 365 に対して認証を行います。
     
-    Microsoft 365 導入テンプレートアプリレポートへのアクセスが許可されるユーザーの詳細については、 [FAQ](usage-analytics.md#faq) を参照してください。 
+    Microsoft 365 [導入テンプレート](usage-analytics.md#faq) アプリ レポートにアクセスできるユーザーの詳細については、FAQ を参照してください。 
     
 4. 接続が承認されると、[ナビゲーター] ウィンドウが表示されます。このウィンドウに、接続先として利用できるデータセットが表示されます。
     
-    [すべて] を選択して、[ **読み込み** ] を選択します。
+    すべて選択し、[読み込み] **を選択します**。
     
     これで Power BI デスクトップにデータがダウンロードされます。 このファイルを保存すれば、必要なレポートの作成を開始できます。
     
     ![レポート API で使用可能な ODATA 値](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
-### <a name="use-the-microsoft-365-usage-analytics-template"></a>Microsoft 365 usage analytics テンプレートを使用する
+### <a name="use-the-microsoft-365-usage-analytics-template"></a>Microsoft 365 利用状況分析テンプレートを使用する
 
-データに接続する開始点として、Microsoft 365 usage analytics レポートに対応する Power BI テンプレートファイルを使用することもできます。 pbit ファイルを利用することの長所は、接続文字列が既に確立されていることです。 基本スキーマが返すデータに加え、作成されたあらゆるカスタム メジャーを活用し、基本スキーマの上にさらに構築することもできます。
+データに接続するための開始点として、Microsoft 365 利用状況分析レポートに対応する Power BI テンプレート ファイルを使用することもできます。 pbit ファイルを利用することの長所は、接続文字列が既に確立されていることです。 基本スキーマが返すデータに加え、作成されたあらゆるカスタム メジャーを活用し、基本スキーマの上にさらに構築することもできます。
   
-Power BI テンプレートファイルは、 [ダウンロードセンター](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)から Microsoft ダウンロードセンターからダウンロードできます。 Power BI テンプレート ファイルをダウンロードしたら、次の手順から開始します。
+Power BI テンプレート ファイルは、ダウンロード センターから Microsoft ダウンロード センターから [ダウンロードできます](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 Power BI テンプレート ファイルをダウンロードしたら、次の手順から開始します。
   
 1. pbit ファイルを開きます。
     
@@ -146,9 +146,9 @@ Power BI テンプレートファイルは、 [ダウンロードセンター](h
     
     ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
-3. メッセージが表示されたら、管理者の資格情報を入力して Microsoft 365 に認証します。
+3. メッセージが表示されたら、管理者の資格情報を入力して Microsoft 365 への認証を行います。
     
-     Microsoft 365 利用状況分析レポートへのアクセスが許可されるユーザーの詳細については、を参照してください。 
+     Microsoft 365 利用状況分析レポートへのアクセスが許可されているユーザーに関する詳細については、以下を参照してください。 
     
     承認された後に、Power BI ファイルのデータが更新されます。
     

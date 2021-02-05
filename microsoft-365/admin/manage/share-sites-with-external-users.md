@@ -21,19 +21,19 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '組織外のユーザーとサイトやファイルを共有する方法を説明します。 '
-ms.openlocfilehash: 79760f662ec68d2ac9089586fd9cbf38b0bd9897
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 3857cee3073950bbb9c130368abdd7df68d0da2a
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780051"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114467"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>サイトとファイルをゲスト ユーザーと共有する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ ms.locfileid: "44780051"
 |ドキュメントを共有するが、認証を要求しない。  <br/> |機密でも極秘でもないドキュメントへのリンクを組織外の人々と共有し、これを表示したり、フィードバックで更新したりできるようにする。 これらのユーザーは、サイト上のコンテンツへのアクセスを必要としない。  <br/> |
    
 > [!IMPORTANT]
-> 外部共有を無効にすると、現在アクセスできる組織外のユーザーはアクセスできなくなります。 後で外部共有を再び有効にすると、これらのユーザーがアクセスできるようになります。 ユーザーが共有コンテンツにアクセスできないようにするには、そのユーザーを[Microsoft 365 グループから削除](/office365/admin/create-groups/add-or-remove-members-from-groups)するか、サイトからアクセス許可を削除するか、または[ファイルまたはフォルダーの共有を停止](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)します。 
+> 外部共有を無効にすると、現在アクセスできる組織外のユーザーはアクセスできなくなります。 後で外部共有を再び有効にすると、これらのユーザーがアクセスできるようになります。 ユーザーが共有コンテンツにアクセスするのを防ぐには [、Microsoft 365](/office365/admin/create-groups/add-or-remove-members-from-groups)グループから共有コンテンツを削除するか、サイトからアクセス許可を削除するか、ファイルまたはフォルダーの共有を [停止します](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)。 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>組織レベルで外部共有を有効にする
 

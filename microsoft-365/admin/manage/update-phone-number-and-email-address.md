@@ -1,5 +1,5 @@
 ---
-title: 管理者の電話番号とメールアドレスを更新する
+title: 管理者の電話番号とメール アドレスを更新する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,38 +19,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: 管理センターで管理者の電話番号とメールアドレスを更新します。 自分の管理者パスワードをリセットする場合は、この情報が必要になります。
-ms.openlocfilehash: 06dc277fc408ab234dd51d9c8bec5f20226e3215
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+description: 管理センターで管理者の電話番号とメール アドレスを更新します。 自分の管理者パスワードをリセットする場合は、この情報が必要です。
+ms.openlocfilehash: 8ceb2fdc6543bf38089b40d3a66dfc2ab1d7dc64
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126613"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114431"
 ---
-# <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメールアドレスを更新する
+# <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメール アドレスを更新する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
-この記事では、管理者が Microsoft 365 の勤務先電話と電子メールアドレスを変更する方法について説明します。
+この記事では、管理者が Microsoft 365 で企業の電話番号とメール アドレスを変更する方法について説明します。
   
 会社名、住所、電話番号、技術的な連絡先情報などの会社のプロファイル情報を変更する方法を探している場合は、「[組織の住所およびその他のプロファイル情報を変更する](change-address-contact-and-more.md)」を参照してください。
   
-## <a name="to-update-your-phone-number-and-email-address"></a>電話番号とメールアドレスを更新するには
+## <a name="to-update-your-phone-number-and-email-address"></a>電話番号とメール アドレスを更新するには
 
-[ **セキュリティ情報** ] ページを使用して、携帯電話番号と連絡用メールアドレスを変更します。 代替電子メールアドレスは、管理者パスワード (コンピューターの管理者パスワードではない) のリセットなど、重要な通知に使用されます。 
+[セキュリティ **情報] ページを** 使用して、携帯電話番号と連絡用メール アドレスを変更します。 代替電子メール アドレスは、(コンピューター管理者パスワードではなく) 管理者パスワードのリセットなどの重要な通知に使用されます。 
   
 1. Microsoft 365 管理センターに移動します。
 
-2. ヘッダーで、プロファイルアイコン \> **[マイアカウント** の \> **セキュリティ情報**] を選択します。
+2. ヘッダーで、自分のプロファイル アイコン [マイ \> **アカウントのセキュリティ情報** \> **] を選択します**。
 
-3. [**セキュリティ情報**] タブで、[**メソッドの追加**] を選択して、 \> **Phone** \> **Alternate Phone** 詳細を追加します。 **Email** 携帯電話、電話、および連絡用メールアドレスの詳細を更新するには、[ **変更**] を選択します。 代替メールアドレスには、Microsoft の電子メールアドレス以外のものを使用してください。
+3. [セキュリティ **情報] タブで**、[メソッド電話代替電話または電子メール **の** 追加 \>  \> **] を** 選択 **して** 詳細を追加します。 携帯電話、電話、連絡用メール アドレスの詳細を更新するには、[変更] を選択 **します**。 代替メール アドレスには、Microsoft のメール アドレス以外のアドレスを使用してください。
 
     > [!IMPORTANT]
-    > 管理者パスワード (コンピューターの管理者パスワードではない) をリセットするには、連絡用メールアドレスと携帯電話番号が必要です。
+    > 代替メール アドレスと携帯電話番号は、(コンピューター管理者パスワードではなく) 管理者パスワードをリセットするために必要です。
 
 4. 設定が完了したら、[**保存**] を選択します。
   

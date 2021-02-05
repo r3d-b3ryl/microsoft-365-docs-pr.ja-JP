@@ -1,5 +1,5 @@
 ---
-title: 21Vianet が運用している Office 365 の請求書を表示するか、Fapiao を取得する
+title: 21Vianet が運用している Office 365 で請求書を表示したり、Fapiao を取得したりする
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,29 +19,29 @@ search.appverid:
 - MET150
 - GEA150
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
-description: 中国で21Vianet が運営する Office 365 に関する請求明細書または請求書を表示します。
+description: 中国の 21Vianet が運用している Office 365 に関する請求明細書または請求書を表示します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7a8380f74331822a25f846312aa3dd9bfb11d586
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 402634941180fbe7abf26637b8fa7096d8c8eb7c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644629"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114257"
 ---
-# <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365 の請求書を表示するか、Fapiao を取得する
+# <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365 で請求書を表示したり、Fapiao を取得したりする
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
-21Vianet サブスクリプション料金で運用されている Office 365 に関する情報について、請求明細書または請求書を表示することができます。 Fapiao (購入の最終証明書) を取得することもできます。 Fapiao 要求は、ご購入後3日間、 [fapiao 管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465) に提出できます。 
+21Vianet サブスクリプション料金が運用している 365 Officeに関する情報については、請求明細書または請求書を表示できます。 Fapiao (最終的な購入証明) を入手できます。 支払い後約 3 日後に [、Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) の依頼を Fapiao 管理システムに提出できます。 
   
-## <a name="find-your-billing-statement-or-request-a-fapiao"></a>請求明細書を検索するか、Fapiao を申請する
+## <a name="find-your-billing-statement-or-request-a-fapiao"></a>請求明細書を検索するか、Fapiao をリクエストする
 
-1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)で、[**課金請求書** \> **& の支払い**] ページに移動します。
+1. 管理センター [で、[](https://go.microsoft.com/fwlink/p/?linkid=850627)課金情報と支払い& \> **に移動** します。
 
-2. 目的の請求書を見つけ、[表示] を選択するか、PDF をダウンロードします。
+2. 目的の請求書を検索するか、表示するか、PDF のダウンロードを選択します。
 
-  - Fapiao を要求するには、[ **Get Fapiao**] を選択します。
+  - Fapiao を要求するには **、[Fapiaos の取得] を選択します**。
 
     > [!NOTE]
-    > [Fapiao in 管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465)にアクセスするには、登録されたアカウントが必要です。 まだアカウントをセットアップしていない場合は、「 [Apply a Fapiao For Office 365 (21vianet が運用して](apply-for-a-fapiao.md)いる)」を参照してください。
+    > fapiao 管理システムにアクセスするには、 [登録済みのアカウントが必要です](https://go.microsoft.com/fwlink/p/?linkid=837465)。 アカウントをまだ設定していない場合は [、「21Vianet](apply-for-a-fapiao.md)が運用している Office 365 の Fapiao を申請する」を参照してください。

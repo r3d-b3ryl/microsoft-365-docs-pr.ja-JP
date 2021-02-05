@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: ef7237f20780cb67bc84561ad8617dd8da6f8b82
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926356"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114503"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
 2. ページ **の上部にある [アドインの** 展開] を選択し、[次へ] を選択 **します**。
  
     > [!NOTE]
-    > 管理センターは、統合アプリの展開エクスペリエンスに更新されています。 上記の手順が表示されな場合は、[統合アプリの設定] に移動して、[一元展開]  >  **セクションに移動します**。 [統合アプリ] **ページの上部で** 、[アドイン] **を選択します**。
+    > 管理センターは、統合アプリの展開エクスペリエンスに更新されています。 If you don't see the above steps, go to Centralized Deployment section by going to **Settings**  >  **Integrated apps**. [統合アプリ] **ページの上部で** 、[アドイン] **を選択します**。
     
 3. オプションを選択し、指示に従います。
   
