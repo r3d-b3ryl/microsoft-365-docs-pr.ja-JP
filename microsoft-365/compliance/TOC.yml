@@ -232,57 +232,63 @@
     - name: データ損失防止 (DLP)
       items:
         - name: データ損失防止 (DLP) について
-          href: data-loss-prevention-policies.md
-        - name: DLP と Microsoft Teams
-          href: dlp-microsoft-teams.md
-        - name: エンドポイント データ損失防止について
-          href: endpoint-dlp-learn-about.md
-        - name: エンドポイント データ損失防止を開始する
-          href: endpoint-dlp-getting-started.md
-        - name: エンドポイント DLP のデバイス プロキシとインターネット接続の構成
-          href: endpoint-dlp-configure-proxy.md
-        - name: エンドポイント データ損失防止
-          href: endpoint-dlp-using.md
-        - name: Windows 10 デバイスのエンドポイント DLP オンボード ツールと各種方法
           items:
-            - name: Windows 10 デバイスのオンボード ツールと各種方法
-              href: dlp-configure-endpoints.md
-            - name: グループ ポリシーを使用した Windows 10 デバイスのオンボード
-              href: dlp-configure-endpoints-gp.md
-            - name: モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード
-              href: dlp-configure-endpoints-mdm.md
-            - name: Configuration Manager を使用した Windows 10 デバイスのオンボード
-              href: dlp-configure-endpoints-sccm.md
-            - name: ローカル スクリプトを使用した Windows 10 デバイスのオンボード
-              href: dlp-configure-endpoints-script.md
-            - name: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
-              href: dlp-configure-endpoints-vdi.md
-        - name: 既定の DLP ポリシーの使用を開始する
-          href: get-started-with-the-default-dlp-policy.md
-        - name: テンプレートから DLP ポリシーを作成する
-          href: create-a-dlp-policy-from-a-template.md
-        - name: DLP ポリシーの作成、テスト、調整
-          href: create-test-tune-dlp-policy.md
-        - name: DLP ポリシーで通知とポリシー ヒントを使用する
-          href: use-notifications-and-policy-tips.md
-        - name: DLP ポリシーの警告を構成および表示する (プレビュー)
-          href: dlp-configure-view-alerts-policies.md
-        - name: DLP ポリシー テンプレートに含まれるもの
-          href: what-the-dlp-policy-templates-include.md
-        - name: FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
-          href: protect-documents-that-have-fci-or-other-properties.md
-        - name: DLP レポートの表示
-          href: view-the-dlp-reports.md
-        - name: サイトに保存された機密データを検索するクエリの形成
-          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-        - name: セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作
-          href: how-dlp-works-between-admin-centers.md
-        - name: 'DLP ポリシー(プレビュー)で感度ラベルを条件として使用する '
-          href: dlp-sensitivity-label-as-condition.md
-        - name: Microsoft 以外のクラウド アプリにはデータ損失防止ポリシーを使用する
-          href: dlp-use-policies-non-microsoft-cloud-apps.md
-        - name: DLP ポリシーの条件と例外 (プレビュー)
-          href: dlp-conditions-and-exceptions.md
+            - name: データ損失防止 (DLP) について
+              href: data-loss-prevention-policies.md
+            - name: エンドポイント データ損失防止について
+              href: endpoint-dlp-learn-about.md
+        - name: DLP の使用を開始する
+          items:
+            - name: 既定の DLP ポリシーの使用を開始する
+              href: get-started-with-the-default-dlp-policy.md
+            - name: テンプレートから DLP ポリシーを作成する
+              href: create-a-dlp-policy-from-a-template.md
+            - name: DLP ポリシーの作成、テスト、調整
+              href: create-test-tune-dlp-policy.md
+            - name: エンドポイント データ損失防止を開始する
+              href: endpoint-dlp-getting-started.md
+            - name: エンドポイント DLP のデバイス プロキシとインターネット接続の構成
+              href: endpoint-dlp-configure-proxy.md
+            - name: Windows 10 デバイスのエンドポイント DLP オンボード ツールと各種方法
+              items:
+                - name: Windows 10 デバイスのオンボード ツールと各種方法
+                  href: dlp-configure-endpoints.md
+                - name: グループ ポリシーを使用した Windows 10 デバイスのオンボード
+                  href: dlp-configure-endpoints-gp.md
+                - name: モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード
+                  href: dlp-configure-endpoints-mdm.md
+                - name: Configuration Manager を使用した Windows 10 デバイスのオンボード
+                  href: dlp-configure-endpoints-sccm.md
+                - name: ローカル スクリプトを使用した Windows 10 デバイスのオンボード
+                  href: dlp-configure-endpoints-script.md
+                - name: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
+                  href: dlp-configure-endpoints-vdi.md
+        - name: DLP を使用する
+          items:
+            - name: DLP と Microsoft Teams
+              href: dlp-microsoft-teams.md
+            - name: エンドポイント データ損失防止の使用
+              href: endpoint-dlp-using.md
+            - name: DLP ポリシーで通知とポリシー ヒントを使用する
+              href: use-notifications-and-policy-tips.md
+            - name: DLP ポリシー テンプレートに含まれるもの
+              href: what-the-dlp-policy-templates-include.md
+            - name: FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: DLP レポートの表示
+              href: view-the-dlp-reports.md
+            - name: サイトに保存された機密データを検索するクエリの形成
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作
+              href: how-dlp-works-between-admin-centers.md
+            - name: DLP ポリシーの警告を構成および表示する (プレビュー)
+              href: dlp-configure-view-alerts-policies.md
+            - name: 'DLP ポリシー(プレビュー)で感度ラベルを条件として使用する '
+              href: dlp-sensitivity-label-as-condition.md
+            - name: Microsoft 以外のクラウド アプリにはデータ損失防止ポリシーを使用する
+              href: dlp-use-policies-non-microsoft-cloud-apps.md
+            - name: DLP ポリシーの条件と例外 (プレビュー)
+              href: dlp-conditions-and-exceptions.md
 - name: 情報ガバナンスの管理
   items:
     - name: データを統制する
@@ -729,6 +735,8 @@
       items:
         - name: 監査ログの検索
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: PowerShell スクリプトを使用して監査ログを検索する
+          href: audit-log-search-script.md
         - name: 監査ログ検索を有効または無効にする
           href: turn-audit-log-search-on-or-off.md
         - name: 監査ログの詳細なプロパティ
