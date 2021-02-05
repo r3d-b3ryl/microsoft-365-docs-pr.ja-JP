@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntexの説明のタイプの詳細については、こちらを参照してください。
-ms.openlocfilehash: 9a65c5de5321ee623a3d1a1e4260c0bcb2ad331e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975957"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080586"
 ---
 # <a name="introduction-to-explanation-types"></a>説明の種類の概要
 
@@ -123,6 +123,31 @@ Redmond, WA 98034<br>
 0から3までの範囲を設定するには、[類似性] 設定を構成します。
 
    ![類似性の例](../media/content-understanding/proximity-example.png)</br>
+
+
+## <a name="configure-where-phrases-occur-in-the-document"></a>ドキュメント内の語句の位置を構成する
+
+説明を作成すると、既定でドキュメント全体から抽出しようとしている語句が検索されます。 ただし、<b>[これらの語句が表示される場所]</b> の詳細設定を使用すると、語句が表示されるドキュメント内の特定の場所を特定するのに役立ちます。 これは、ドキュメント内の別の場所に語句の類似のインスタンスが表示される可能性があり、正しいインスタンスが選択されていることを確認する場合に役立ちます。 病院の紹介状の例を参照すると、**[委託医師]** は常にドキュメントの第 1 段落に記載されています。 この例では、<b>[これらの語句が表示される場所]</b> の設定を使用して、このラベルをドキュメントの先頭部分、またはラベルが表示される可能性のあるその他の場所だけで検索するように説明を構成できます。
+
+   ![[これらの語句が表示される場所] の設定](../media/content-understanding/phrase-location.png)</br>
+
+この設定では、次のオプションを選択できます。
+
+- ファイル内の任意の場所: ドキュメント全体で語句が検索されます。
+- ファイルの先頭: ドキュメントの先頭から語句の場所まで検索されます。</br> 
+   ![ファイルの先頭](../media/content-understanding/beginning-of-file.png)</br>
+ビューアでは、フェーズが表示される場所を含めるように選択ボックスを手動で調整できます。 <b>[終了位置]</b> の値が更新され、選択した領域に含まれるトークンの数が表示されます。 [終了位置] の値を更新して、選択した領域を調整することもできます。</br>
+   ![ファイルの先頭の位置ボックス](../media/content-understanding/beginning-box.png)</br>
+
+- ファイルの末尾: ドキュメントの末尾から語句の場所まで検索されます。</br> 
+   ![ファイルの末尾](../media/content-understanding/end-of-file.png)</br>
+ビューアでは、フェーズが表示される場所を含めるように選択ボックスを手動で調整できます。 <b>[開始位置]</b> の値が更新され、選択した領域に含まれるトークンの数が表示されます。 [開始位置] の値を更新して、選択した領域を調整することもできます。</br> 
+   ![ファイルの末尾の終了ボックス](../media/content-understanding/end-box.png)</br>
+- ユーザー設定の範囲: ドキュメント内の指定された範囲で、語句の場所が検索されます。</br> 
+   ![ユーザー設定の範囲](../media/content-understanding/custom-file.png)</br>
+ビューアでは、フェーズが表示される場所を含めるように選択ボックスを手動で調整できます。 この設定では、<b>[開始]</b> と <b>[終了]</b> の位置を選択する必要があります。 これらの値は、ドキュメントの先頭のトークンの数を表します。 これらの値は手動で入力できますが、ビューアーの選択ボックスを手動で調整する方が簡単です。</br> 
+   
+
 
 ## <a name="use-explanation-templates"></a>説明テンプレートを使用する
 
