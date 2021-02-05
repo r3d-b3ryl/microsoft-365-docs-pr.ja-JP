@@ -1,9 +1,10 @@
 ---
-title: 'トピック エクスペリエンス (プレビュー) で新しいトピックを作成する '
-description: トピック エクスペリエンスで新しいトピックを作成する方法について説明します。
+title: Microsoft のトピックに新しいトピックを作成する
+description: Microsoft のトピックで新しいトピックを作成する方法について説明します。
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,63 +14,91 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 982cb4b0f750db9aecbaab6696f57be3f2390d1d
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976353"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107258"
 ---
-# <a name="create-a-new-topic-preview"></a><span data-ttu-id="1dcf2-103">新しいトピックを作成する (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="1dcf2-103">Create a new topic (Preview)</span></span>
+# <a name="create-a-new-topic"></a><span data-ttu-id="4b605-103">新規トピックを作成する</span><span class="sxs-lookup"><span data-stu-id="4b605-103">Create a new topic</span></span> 
+
+<span data-ttu-id="4b605-104">In Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.</span><span class="sxs-lookup"><span data-stu-id="4b605-104">In Viva Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.</span></span>
 
 > [!Note] 
-> <span data-ttu-id="1dcf2-104">この記事の内容は、Project の Private Preview 用です。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="1dcf2-105">[Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)</span><span class="sxs-lookup"><span data-stu-id="1dcf2-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
+> <span data-ttu-id="4b605-105">AI によって収集されたトピック内の情報はセキュリティによって[](topic-experiences-security-trimming.md)トリミングされる一方で、手動で作成されたトピック内の情報は、そのトピックを表示する権限を持つすべてのユーザーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b605-105">While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that information in a manually created topic is visible to all users who have permissions to view the topic.</span></span> 
 
-<span data-ttu-id="1dcf2-106">トピック エクスペリエンスでは、インデックス作成によって検出されていない場合や、AI テクノロジがトピックとして確立するのに十分な証拠を見つけなかった場合に、新しいトピックを作成できます。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-106">In Topic Experiences, you can create a new topic if one was not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="1dcf2-107">要件</span><span class="sxs-lookup"><span data-stu-id="1dcf2-107">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="4b605-106">要件</span><span class="sxs-lookup"><span data-stu-id="4b605-106">Requirements</span></span>
 
-<span data-ttu-id="1dcf2-108">新しいトピックを作成するには、次の必要があります。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-108">To create a new topic, you need to:</span></span>
-- <span data-ttu-id="1dcf2-109">トピック エクスペリエンス のライセンスを持っている。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-109">Have a Topic Experiences license.</span></span>
-- <span data-ttu-id="1dcf2-110">トピックを作成または編集 [**できるユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-110">Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions).</span></span> <span data-ttu-id="1dcf2-111">ナレッジ管理者は、サポート技術情報のトピックのアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-111">Knowledge admins can give users this permission in the Knowledge Network topic permissions settings.</span></span> 
+<span data-ttu-id="4b605-107">新しいトピックを作成するには、次の必要があります。</span><span class="sxs-lookup"><span data-stu-id="4b605-107">To create a new topic, you need to:</span></span>
+- <span data-ttu-id="4b605-108">多くのトピックのライセンスを持っている。</span><span class="sxs-lookup"><span data-stu-id="4b605-108">Have a Viva Topics license.</span></span>
+- <span data-ttu-id="4b605-109">トピックを作成または編集 [**できるユーザーへのアクセス許可を持っている**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。</span><span class="sxs-lookup"><span data-stu-id="4b605-109">Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions).</span></span> <span data-ttu-id="4b605-110">ナレッジ管理者は、トピック「多くのトピック」のアクセス許可の設定で、ユーザーにこのアクセス許可を付与できます。</span><span class="sxs-lookup"><span data-stu-id="4b605-110">Knowledge admins can give users this permission in the Viva Topics topic permissions settings.</span></span> 
 
 > [!Note] 
-> <span data-ttu-id="1dcf2-112">トピック センター (ナレッジ マネージャー) でトピックを管理する権限を持つユーザーには、トピックを作成および編集する権限が既に付与されています。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-112">Users who have permission to manage topics in the Topic center (knowledge managers) already have permissions to create and edit topics.</span></span>
+> <span data-ttu-id="4b605-111">トピック センター (ナレッジ マネージャー) でトピックを管理する権限を持つユーザーには、トピックを作成および編集する権限が既に付与されています。</span><span class="sxs-lookup"><span data-stu-id="4b605-111">Users who have permission to manage topics in the topic center (knowledge managers) already have permissions to create and edit topics.</span></span>
 
-## <a name="to-create-a-new-topic"></a><span data-ttu-id="1dcf2-113">新しいトピックを作成するには:</span><span class="sxs-lookup"><span data-stu-id="1dcf2-113">To create a new topic:</span></span>
+## <a name="to-create-a-new-topic"></a><span data-ttu-id="4b605-112">新しいトピックを作成するには:</span><span class="sxs-lookup"><span data-stu-id="4b605-112">To create a new topic:</span></span>
 
-1. <span data-ttu-id="1dcf2-114">[トピック センター] ページで、[新規] を選択 **し**、[トピック ページ] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-114">On the Topic center page, select **New**, then select **Topic Page**.</span></span> <span data-ttu-id="1dcf2-115">トピック センターで [新規]オプションを表示できない場合は、必要なアクセス許可が付与されていない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-115">If you are not able to see the **New** option in the Topic Center, you may not have the required permissions.</span></span>
+1. <span data-ttu-id="4b605-113">[この **トピックの名前]** セクションで、新しいトピックの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="4b605-113">In the **Name this topic** section, type the name of the new topic.</span></span>
 
-    ![新しいトピック](../media/knowledge-management/k-new-topic.png)
+    ![このトピックに名前を付け](../media/knowledge-management/k-new-topic-page.png) </br> 
 
-2. <span data-ttu-id="1dcf2-117">新しいトピック ページで、新しいトピック テンプレートの情報を入力できます。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-117">On the new topic page, you can fill in the information on the new topic template:</span></span>
 
-    - <span data-ttu-id="1dcf2-118">[この **トピックの名前]** セクションで、新しいトピックの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-118">In the **Name this topic** section, type the name of the new topic.</span></span>
+2. <span data-ttu-id="4b605-115">[代替 <b>名]</b> セクションで、トピックが参照される可能性があるその他の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="4b605-115">In the <b>Alternate Names</b> section, type any other names that the topic might be referred to.</span></span> 
+
+    ![代替名](../media/knowledge-management/alt-names.png) </br> 
+3. <span data-ttu-id="4b605-117">[説明 <b>] セクション</b> で、トピックについて説明する文を入力します。</span><span class="sxs-lookup"><span data-stu-id="4b605-117">In the <b>Description</b> section, type a couple of sentences that describe the topic.</span></span> 
+
+    ![トピックの説明](../media/knowledge-management/description.png)</br>
+
+4. <span data-ttu-id="4b605-119">[ピン <b>留めされたユーザー</b> ] セクションでは、ユーザーを「ピン留め」して、トピックの対象の専門家として表示できます。</span><span class="sxs-lookup"><span data-stu-id="4b605-119">In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic.</span></span> <span data-ttu-id="4b605-120">まず、[新しいユーザーの追加] ボックス<b></b>に名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。</span><span class="sxs-lookup"><span data-stu-id="4b605-120">Begin by typing their name or email address in the <b>add a new user</b> box, and then select the user you want to add from the search results.</span></span> <span data-ttu-id="4b605-121">ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。</span><span class="sxs-lookup"><span data-stu-id="4b605-121">You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.</span></span> <span data-ttu-id="4b605-122">ユーザーをドラッグして、ユーザーの一覧に表示される順序を変更できます。</span><span class="sxs-lookup"><span data-stu-id="4b605-122">You can also drag the person to change the order that the list of people appear.</span></span>
+ 
+    ![ピン留めされたユーザー](../media/knowledge-management/pinned-people.png)</br>
+
+
+5. <span data-ttu-id="4b605-124">[ピン <b>留めされたファイルとページ</b> ] セクションでは、トピックに関連付けられているファイルまたは SharePoint サイト ページを追加または "ピン留め" できます。</span><span class="sxs-lookup"><span data-stu-id="4b605-124">In the <b>Pinned files and pages</b> section, you can add or "pin" a file or SharePoint site page that is associated to the topic.</span></span>
+
+   ![ピン留めされたファイルとページ](../media/knowledge-management/pinned-files-and-pages.png)</br>
+ 
+    <span data-ttu-id="4b605-126">新しいファイルを追加するには、[<b></b>追加] を選択し、頻繁に使用するサイトまたはフォローしているサイトから SharePoint サイトを選択して、サイトのドキュメント ライブラリからファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="4b605-126">To add a new file, select <b>Add</b>, select the SharePoint site from your Frequent or Followed sites, and then select the file from the site's document library.</span></span>
+
+    <span data-ttu-id="4b605-127">[リンクから] <b>オプションを使用して、URL</b> を指定してファイルまたはページを追加することもできます。</span><span class="sxs-lookup"><span data-stu-id="4b605-127">You can also use the <b>From a link</b> option to add a file or page by providing the URL.</span></span> 
+
+
+6.  <span data-ttu-id="4b605-128">[ <b>関連サイト]</b> セクションには、トピックに関する情報を含むサイトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b605-128">The <b>Related sites</b> section shows sites that have information about the topic.</span></span> 
+
+    ![[関連サイト] セクション](../media/knowledge-management/related-sites.png)</br>
+
+    <span data-ttu-id="4b605-130">関連サイトを追加するには、[追加]<b></b>を選択してからサイトを検索するか、頻繁に使用するサイトまたは最近使用したサイトの一覧からサイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="4b605-130">You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</span></span></br>
     
-    - <span data-ttu-id="1dcf2-119">[代替 **名] セクション** で、トピックの参照にも使用される名前または頭字語を入力します。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-119">In the **Alternate names** section, type names or acronyms that are also used to refer to the topic.</span></span>
-    
-    - <span data-ttu-id="1dcf2-120">[簡単 **な説明] セクション** で、トピックの 1 文または 2 文の説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-120">In the **Short description** section, type a one or two sentence description of the topic.</span></span> <span data-ttu-id="1dcf2-121">このテキストは、関連付けられたトピック カードに使用されます。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-121">This text will be used for the associated topic card.</span></span>
-    
-    - <span data-ttu-id="1dcf2-122">[人 **] セクション** で、トピックの対象分野の専門家の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-122">In the **People** section, type the names of subject matter experts for the topic.</span></span> <span data-ttu-id="1dcf2-123">トピックに手動で追加したユーザーは、トピック ページにピン留めされたユーザー **として表示されます**。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-123">People you manually add to the topic will display in the topic page as **Pinned people**.</span></span>
-    
-    - <span data-ttu-id="1dcf2-124">[ファイル **とページ**] セクションで[追加] を選択し、次のページで関連付けられた OneDrive ファイルまたは SharePoint Online ページを選択できます。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-124">In the **Files and pages** section, select **Add** and then on the next page you can select associated OneDrive files or SharePoint Online pages.</span></span>
-    
-    - <span data-ttu-id="1dcf2-125">[サイト] **セクションで** 、[追加] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-125">In the **Sites** section, select **Add**.</span></span> <span data-ttu-id="1dcf2-126">表示される  **[サイト** ] ウィンドウで、トピックに関連付けられているサイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-126">In the  **Sites** pane that displays, select the sites that are associated to the topic.</span></span>
+    ![サイトの選択](../media/knowledge-management/sites.png)</br>
 
-    ![新しいトピック ページ](../media/knowledge-management/k-new-topic-page.png)
-    
-3. <span data-ttu-id="1dcf2-128">テキスト、画像、Web パーツ、リンクなど、他のコンポーネントをページに追加する必要がある場合は、ページの中央にあるキャンバス アイコンを選択して見つけて追加します。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-128">If you need to add other components to the page, such as text, images, web parts, links, etc., select the canvas icon in the middle of the page to locate and add them.</span></span>
+7. <span data-ttu-id="4b605-132">関連 <b>トピック セクションでは</b> 、トピック間に存在する接続を示します。</span><span class="sxs-lookup"><span data-stu-id="4b605-132">The <b>Related topics</b> section shows connections that exist between topics.</span></span> <span data-ttu-id="4b605-133">別のトピックへの接続を追加するには、[関連トピックに接続<b></b>] ボタンを選択し、関連するトピックの名前を入力して、検索結果からそのトピックを選択します。</span><span class="sxs-lookup"><span data-stu-id="4b605-133">You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results.</span></span> 
 
-    ![ページにアイテムを追加する](../media/knowledge-management/static-icon.png)
+   ![関連項目](../media/knowledge-management/related-topic.png)</br>  
 
-4. <span data-ttu-id="1dcf2-130">完了したら、[発行] を **選択** してトピック ページを発行します。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-130">When you are done, select **Publish** to publish the topic page.</span></span> <span data-ttu-id="1dcf2-131">発行されたトピック ページが [ページ] タブ **に表示** されます。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-131">Published topic pages will display in the **Pages** tab.</span></span>
+    <span data-ttu-id="4b605-135">その後、トピックの関連方法を説明し、[更新] を選択 <b>します</b>。</span><span class="sxs-lookup"><span data-stu-id="4b605-135">You can then give a description of how the topics are related, and select <b>Update</b>.</span></span></br>
 
-<span data-ttu-id="1dcf2-132">記事を発行すると、トピック名、代替名、説明、ピン留めされたユーザーが、記事を表示するライセンスを持つすべてのユーザーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-132">After you publish the article, the topic name, alternate name, description, and pinned people will display to all licensed users who view the article.</span></span> <span data-ttu-id="1dcf2-133">ファイル、ページ、およびサイトは、閲覧者がアイテムに対する 365 Officeを持つ場合にのみ、トピック ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-133">Files, pages, and sites will only appear in the topic page if the viewer has Office 365 permissions to the item.</span></span> 
+   ![関連トピックの説明](../media/knowledge-management/related-topics-update.png)</br> 
 
-<span data-ttu-id="1dcf2-134">新しいトピック ページは、ナレッジ ネットワーク対応の Web パーツ *で構成されています*。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-134">The new topic page is made up of web parts that are *knowledge network aware*.</span></span> <span data-ttu-id="1dcf2-135">つまり、AI がトピックに関するより多くの情報を収集すると、これらの Web パーツ内の情報が更新され、ユーザーにとってページの使い分けをより便利にできます。</span><span class="sxs-lookup"><span data-stu-id="1dcf2-135">This means that as AI gathers more information on the topic, the information in these web parts will be updated with suggestions to make the page more useful to users.</span></span>
+   <span data-ttu-id="4b605-137">追加した関連トピックは、接続されたトピックとして表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b605-137">The related topic you added will display as a connected topic.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="1dcf2-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="1dcf2-136">See also</span></span>
+   ![関連トピック](../media/knowledge-management/related-topics-final.png)</br> 
+
+
+8. <span data-ttu-id="4b605-139">キャンバス アイコンを選択して、静的な項目 (テキスト、画像、リンクなど) をページに追加することもできます。このアイコンは、簡単な説明の下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b605-139">You can also add static items to the page (such as text, images, or links) by selecting the canvas icon, which you can find below the short description.</span></span> <span data-ttu-id="4b605-140">選択すると、ページに追加するアイテムを選択できる SharePoint ツールボックスが開きます。</span><span class="sxs-lookup"><span data-stu-id="4b605-140">Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.</span></span>
+
+   ![キャンバス アイコン](../media/knowledge-management/webpart-library.png)</br> 
+
+
+9. <span data-ttu-id="4b605-142">[ **発行] を** 選択して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="4b605-142">Select **Publish** to save your changes.</span></span> 
+
+<span data-ttu-id="4b605-143">ページを発行すると、トピック名、代替名、説明、ピン留めされたユーザーが、トピックを表示するライセンスを持つすべてのユーザーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b605-143">After you publish the page, the topic name, alternate name, description, and pinned people will display to all licensed users who view the topic.</span></span> <span data-ttu-id="4b605-144">特定のファイル、ページ、およびサイトは、閲覧者がアイテムに対して 365 Officeアクセス許可を持つ場合にのみ、トピック ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b605-144">Specific files, pages, and sites will only appear on the topic page if the viewer has Office 365 permissions to the item.</span></span> 
+
+
+
+## <a name="see-also"></a><span data-ttu-id="4b605-145">関連項目</span><span class="sxs-lookup"><span data-stu-id="4b605-145">See also</span></span>
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: サブスクリプションを支払う
+title: サブスクリプションの支払い
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,113 +12,85 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Microsoft 365 for business サブスクリプションの支払いに使用できる支払いオプションについて説明します。
+description: Microsoft 365 for business サブスクリプションの支払い方法について説明します。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: 778906219c03e8cc79ccebb368b84642639a8467
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+- commerce
+ms.openlocfilehash: 858b42dbb647e472bcb3e95ddcba850f03ab11f1
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638437"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114827"
 ---
-# <a name="pay-for-your-subscription"></a><span data-ttu-id="9768f-103">サブスクリプションを支払う</span><span class="sxs-lookup"><span data-stu-id="9768f-103">Pay for your subscription</span></span>
+# <a name="how-to-pay-for-your-subscription"></a><span data-ttu-id="be7a0-103">サブスクリプションの支払い方法</span><span class="sxs-lookup"><span data-stu-id="be7a0-103">How to pay for your subscription</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="9768f-104">管理センターは変更中です。</span><span class="sxs-lookup"><span data-stu-id="9768f-104">The admin center is changing.</span></span> <span data-ttu-id="9768f-105">エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="be7a0-104">管理センターは変更中です。</span><span class="sxs-lookup"><span data-stu-id="be7a0-104">The admin center is changing.</span></span> <span data-ttu-id="be7a0-105">エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="be7a0-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="9768f-106">サブスクリプションを設定するときに、クレジット カード支払い、銀行口座支払い、小切手または電子決済 (EFT) での請求書支払いを選ぶことができます。</span><span class="sxs-lookup"><span data-stu-id="9768f-106">When you set up your subscription, you can choose to pay by using credit card or bank account payments, or to pay by invoice using check or electronic funds transfer (EFT).</span></span> <span data-ttu-id="9768f-107">ここで選択した支払い方法は、[支払い方法を変更](change-payment-method.md)しない限り、以降の請求期間に対して支払い方法として使用されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-107">Whichever method you choose, that is the payment method we will continue to use for subsequent billing periods, unless you [change your payment method](change-payment-method.md).</span></span>
+<span data-ttu-id="be7a0-106">サブスクリプションの支払いには、クレジット カード、デビット カード、または銀行口座を使用できます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-106">You can use a credit or debit card, or bank account to pay for your subscription.</span></span> <span data-ttu-id="be7a0-107">場合によっては、チェックまたは電子決済 (EFT) を使用して請求書で支払う場合があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-107">In some cases, you can pay by invoice, using check or electronic funds transfer (EFT).</span></span> <span data-ttu-id="be7a0-108">請求プロファイルがある場合、オプションは少し異なります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-108">If you have a billing profile, your options are slightly different.</span></span> <span data-ttu-id="be7a0-109">アカウントに請求プロファイルが設定されているのが不明な場合は、「請求プロファイル  [について」を参照してください](manage-billing-profiles.md)。</span><span class="sxs-lookup"><span data-stu-id="be7a0-109">If you’re not sure if your account has a billing profile, see  [Understand billing profiles](manage-billing-profiles.md).</span></span>
+
+<span data-ttu-id="be7a0-110">**請求書の支払い先を確認したい場合**</span><span class="sxs-lookup"><span data-stu-id="be7a0-110">**Just want to find out where to send your invoice payment?**</span></span> <span data-ttu-id="be7a0-111">請求書をチェックインまたは電子決済 (EFT) で支払う場合は、「どこでチェックまたは EFT 支払いを [送信しますか?」を参照してください。](#where-do-i-send-my-check-or-eft-payment)</span><span class="sxs-lookup"><span data-stu-id="be7a0-111">If you pay your invoice by check or electronic funds transfer (EFT), see [Where do I send my check or EFT payment?](#where-do-i-send-my-check-or-eft-payment)</span></span>
+
+## <a name="before-you-begin"></a><span data-ttu-id="be7a0-112">はじめに</span><span class="sxs-lookup"><span data-stu-id="be7a0-112">Before you begin</span></span>
+
+- <span data-ttu-id="be7a0-113">この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-113">You must be a Global or Billing admin to do the steps described in this article.</span></span> <span data-ttu-id="be7a0-114">詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="be7a0-114">For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).</span></span>
+- <span data-ttu-id="be7a0-115">チェックアウト時に選択した支払い方法は、今後のすべての請求期間に使用される支払い方法です。</span><span class="sxs-lookup"><span data-stu-id="be7a0-115">The payment method that you choose during checkout is the payment method that we use for all future billing periods.</span></span> <span data-ttu-id="be7a0-116">いつでも変更できます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-116">You can change it at any time.</span></span>
+
+## <a name="paying-by-credit-or-debit-card-or-bank-account"></a><span data-ttu-id="be7a0-117">クレジット カード、デビット カード、または銀行口座による支払い</span><span class="sxs-lookup"><span data-stu-id="be7a0-117">Paying by credit or debit card, or bank account</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="be7a0-118">一部の国または地域では、銀行口座引き落としによる支払いを利用できません。</span><span class="sxs-lookup"><span data-stu-id="be7a0-118">Paying by bank account is not available in some countries or regions.</span></span>
+
+<span data-ttu-id="be7a0-119">サブスクリプションの支払いには、クレジット カード、デビット カード、または銀行口座を使用できます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-119">You can pay for your subscription with a credit or debit card, or a bank account.</span></span> <span data-ttu-id="be7a0-120">これらの支払い方法のいずれかを使って支払う場合、サブスクリプションの有効期限が切れるか、取り消されるまで、その支払い方法に対する請求が継続されます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-120">When you pay with one of these payment methods, we continue to charge that payment method until the subscription expires, or is canceled.</span></span> <span data-ttu-id="be7a0-121">いつでも必要なときに[支払い方法を管理する](manage-payment-methods.md)ことができます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-121">You can [manage payment methods](manage-payment-methods.md) whenever you need to.</span></span> <span data-ttu-id="be7a0-122">また、[請求明細書のコピーをメールで受け取る](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) こともできます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-122">You can also choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).</span></span>
+
+## <a name="paying-by-invoice"></a><span data-ttu-id="be7a0-123">請求書による支払い</span><span class="sxs-lookup"><span data-stu-id="be7a0-123">Paying by invoice</span></span>
+
+<span data-ttu-id="be7a0-124">場合によっては、請求書でチェックまたは EFT を使ってサブスクリプションの支払いを行う場合があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-124">In some cases, you can pay for your subscription by invoice with a check or EFT.</span></span> <span data-ttu-id="be7a0-125">請求書による支払いを受け取る資格を得るには、次の条件を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-125">To be eligible to pay by invoice, you must:</span></span>
+
+- <span data-ttu-id="be7a0-126">確立された顧客になる</span><span class="sxs-lookup"><span data-stu-id="be7a0-126">Be an established customer</span></span>
+- <span data-ttu-id="be7a0-127">サブスクリプションのコストが一定の金額を超えている (この金額はサービスの場所によって異なります)</span><span class="sxs-lookup"><span data-stu-id="be7a0-127">Have a subscription cost that exceeds a certain amount (this amount varies by service location)</span></span>
+- <span data-ttu-id="be7a0-128">与信チェックに合格する</span><span class="sxs-lookup"><span data-stu-id="be7a0-128">Pass a credit check</span></span>
+
+<span data-ttu-id="be7a0-129">与信確認が必要な場合は、サブスクリプションを購入すると通知されます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-129">If a credit check is required, you’re notified when you buy your subscription.</span></span> <span data-ttu-id="be7a0-130">連絡することに同意すると、与信承認の申請に関する詳細な情報が記載されたメールが届きます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-130">If you agree to be contacted, you get an email that includes more information about applying for credit approval.</span></span> <span data-ttu-id="be7a0-131">与信確認は通常、2 営業日以内に完了します。</span><span class="sxs-lookup"><span data-stu-id="be7a0-131">Credit checks are usually completed within two business days.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="9768f-108">一部の国または地域では、銀行口座引き落としによる支払いを利用できません。</span><span class="sxs-lookup"><span data-stu-id="9768f-108">Paying by bank account is not available in some countries or regions.</span></span>
+> <span data-ttu-id="be7a0-132">ブラジルにお住まいのお客様は、Boleto Bancario でサブスクリプションの支払いを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-132">Customers who live in Brazil can pay for a subscription with a Boleto Bancario.</span></span> <span data-ttu-id="be7a0-133">このオプションを選択すると、サブスクリプションの購入により、注文日から 10 日以内に支払いについての連絡が指定のメールに送信されます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-133">If you have selected this option, the billet for payment is sent to the email provided during subscription purchase within 10 working days after the order date.</span></span> <span data-ttu-id="be7a0-134">期限は、注文日から 30 日です。</span><span class="sxs-lookup"><span data-stu-id="be7a0-134">The due date is 30 days after the order date.</span></span> <span data-ttu-id="be7a0-135">Boleto のメールを受信しない場合は、迷惑メール フォルダーを確認するか、サポートにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="be7a0-135">If you don't receive your Boleto by email, check your spam folder or contact support.</span></span>
+>
+> <span data-ttu-id="be7a0-136">もしくは、口座間の電子決済により支払いを行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-136">If you prefer, you can pay by electronic transfer between accounts.</span></span> <span data-ttu-id="be7a0-137">銀行と口座番号は請求書の下部に記載されています。</span><span class="sxs-lookup"><span data-stu-id="be7a0-137">The Agency and account number are at the bottom of your invoice.</span></span> <span data-ttu-id="be7a0-138">振替 ID の欄に請求書番号を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-138">You must enter your invoice number in the Transfer identification field.</span></span>
 
-## <a name="pay-by-credit-card-or-bank-account"></a><span data-ttu-id="9768f-109">クレジット カードまたは銀行口座引き落としで支払う</span><span class="sxs-lookup"><span data-stu-id="9768f-109">Pay by credit card or bank account</span></span>
+<span data-ttu-id="be7a0-139">サブスクリプションの請求書で支払う場合は、請求明細書を表示する準備ができたときにメールが届きます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-139">If you pay by invoice for your subscription, you get an email when your billing statement is ready to view.</span></span> <span data-ttu-id="be7a0-140">このメールには、請求明細書のコピーが含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-140">This email doesn’t contain a copy of your billing statement.</span></span> <span data-ttu-id="be7a0-141">ただし、請求明細書の [コピーをメールで受け取る方法を選択できます](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。</span><span class="sxs-lookup"><span data-stu-id="be7a0-141">However, you can choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).</span></span> <span data-ttu-id="be7a0-142">請求明細書には、支払いを行うオプションと支払い方法に関する詳細が含まれています。</span><span class="sxs-lookup"><span data-stu-id="be7a0-142">Your billing statement includes details about your options for making a payment, and where to send it.</span></span> <span data-ttu-id="be7a0-143">サブスクリプションを購入するときに発注書番号 (PO) を入力した場合、請求明細書にその番号が表示されます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-143">If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement.</span></span> <span data-ttu-id="be7a0-144">請求明細書へのアクセスの詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="be7a0-144">For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).</span></span>
 
-<span data-ttu-id="9768f-110">クレジット カードまたは銀行口座引き落としで支払う場合、請求日の翌日からサブスクリプション有効期限の最終日まで、サブスクリプションの費用が自動請求されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-110">When you pay by credit card or bank account, you'll be automatically charged for your subscription the day after the invoice date, until the end of your subscription term.</span></span> <span data-ttu-id="9768f-111">いつでも必要なときに[支払い方法を管理する](manage-payment-methods.md)ことができます。</span><span class="sxs-lookup"><span data-stu-id="9768f-111">You can [manage payment methods](manage-payment-methods.md) whenever you need to.</span></span> <span data-ttu-id="9768f-112">また、[請求明細書のコピーをメールで受け取る](#receive-a-copy-of-your-billing-statement-in-email)選ぶこともできます。</span><span class="sxs-lookup"><span data-stu-id="9768f-112">You can also choose to [Receive a copy of your billing statement in email](#receive-a-copy-of-your-billing-statement-in-email).</span></span>
+## <a name="what-if-i-have-an-outstanding-balance"></a><span data-ttu-id="be7a0-145">未払額がある場合、どうなりますか。</span><span class="sxs-lookup"><span data-stu-id="be7a0-145">What if I have an outstanding balance?</span></span>
 
-### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a><span data-ttu-id="9768f-113">クレジット カードが拒否され、支払い期日を過ぎてしまった場合はどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="9768f-113">What if my credit card was declined and my payment is past due?</span></span>
+<span data-ttu-id="be7a0-146">支払い方法をファイルに請求できない場合は、問題が発生したと通知するメールが送信されます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-146">If we’re unable to charge the payment method on file, we send an email that lets you know there’s a problem.</span></span> <span data-ttu-id="be7a0-147">メールには問題の内容が簡潔に記載され、未払い残高を確認できるリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="be7a0-147">The email briefly states what the problem is and includes a link where you can check the outstanding balance.</span></span> <span data-ttu-id="be7a0-148">サブスクリプションが猶予期間に入っている間、30 日間、数日ごとにトランザクションを再試行し続ける。</span><span class="sxs-lookup"><span data-stu-id="be7a0-148">We continue to retry the transaction every few days for 30 days, during which time the subscription is in a grace period.</span></span> <span data-ttu-id="be7a0-149">トランザクションが失敗するたび、エラーに関する電子メール通知を受け取る。</span><span class="sxs-lookup"><span data-stu-id="be7a0-149">Every time a transaction fails, you receive an email alert about the failure.</span></span>
 
-<span data-ttu-id="9768f-114">クレジット カードでの支払いを選んだときに、クレジット カードが拒否された場合、支払いプロセスが完了できなかったことを通知するメールが送信されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-114">If you pay by credit card, and your credit card is declined, you'll receive an email letting you know that we were unable to process the payment.</span></span> <span data-ttu-id="9768f-115">これは、クレジット カードの有効期限が切れている場合など、いくつかの理由で発生します。</span><span class="sxs-lookup"><span data-stu-id="9768f-115">This can happen for several reasons, including if the credit card has expired.</span></span> <span data-ttu-id="9768f-116">トランザクションは、数日ごとに再試行されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-116">We'll continue to retry the transaction every few days.</span></span> <span data-ttu-id="9768f-117">再試行に失敗すると、引き続きそれらの失敗について警告のメールが送信されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-117">If those attempts fail, you'll continue to receive email alerts about those failures.</span></span> <span data-ttu-id="9768f-118">**残高の決済**機能を使用して、いつでもクレジット カード情報を変更し、支払いについてすぐに再送信できます。</span><span class="sxs-lookup"><span data-stu-id="9768f-118">You can use the **Settle balance** feature at any time to change your credit card information and immediately resubmit the payment.</span></span>
+<span data-ttu-id="be7a0-150">期限が過ぎた支払い方法を個人で追加した場合は、残高の決済を使用して支払いを行います。</span><span class="sxs-lookup"><span data-stu-id="be7a0-150">If you personally added the payment method that has a past due amount, you can use **Settle balance** to make a payment.</span></span> <span data-ttu-id="be7a0-151">期限が過ぎた金額の支払い方法は、拒否された支払い方法を使用したすべてのサブスクリプションの新しい支払い方法になります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-151">The payment method that you use to pay the overdue amount becomes the new payment method for all subscriptions that used the declined payment method.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="9768f-119">サブスクリプションの未払い残高を別のクレジット カードで支払うように切り替えると、そのサブスクリプションについての以降のすべての自動支払いはそのカードに課金されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-119">If you switch to a different credit card to pay the outstanding balance on your subscription, that card will be charged for all future automatic payments for that subscription.</span></span>
+1. <span data-ttu-id="be7a0-152">管理センターで、[支払いの請求&] ページに移動し、[支払い方法]  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">タブを選択</a>します。</span><span class="sxs-lookup"><span data-stu-id="be7a0-152">In the admin center, go to the **Billing** > **Bills & payments** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> tab.</span></span>
+1. <span data-ttu-id="be7a0-153">どの支払い方法が拒否されたのかという警告メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-153">A warning message says which payment method was declined.</span></span> <span data-ttu-id="be7a0-154">[残高 **の決済] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="be7a0-154">Select **Settle balance**.</span></span>
+1. <span data-ttu-id="be7a0-155">右側のウィンドウで、別の支払い方法を選択するか、[新しい支払い方法の追加 **] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="be7a0-155">In the right pane, choose a different payment method, or select **Add a new payment method**.</span></span>
+1. <span data-ttu-id="be7a0-156">支払い方法の情報を更新した後、[保存] を選択 **します**。</span><span class="sxs-lookup"><span data-stu-id="be7a0-156">After you've updated the payment method information, select **Save**.</span></span>
 
-::: moniker range="o365-worldwide"
+<span data-ttu-id="be7a0-157">サブスクリプションの支払い方法を追加しなかった場合は、支払い方法を以前に追加した支払い方法、または新しい支払い方法に置き換える必要があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-157">If you didn’t add the payment method used to pay for the subscription, you must replace the payment method with one you previously added, or with a new one.</span></span>
 
-1. <span data-ttu-id="9768f-120">管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="9768f-120">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+## <a name="where-do-i-send-my-check-or-eft-payment"></a><span data-ttu-id="be7a0-158">小切手または EFT の送信はどこでできますか?</span><span class="sxs-lookup"><span data-stu-id="be7a0-158">Where do I send my check or EFT payment?</span></span>
 
-2. <span data-ttu-id="9768f-121">未払い残高のあるサブスクリプションを見つけます。</span><span class="sxs-lookup"><span data-stu-id="9768f-121">Find the subscription with the outstanding balance.</span></span> <span data-ttu-id="9768f-122">**[課金]** セクションで、**[サブスクリプションの支払期限が過ぎています]** の横にある **[残高の決済]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9768f-122">In the **Billing** section, next to **Subscription has a past due payment**, select **Settle balance**.</span></span>
-
-3. <span data-ttu-id="9768f-123">クレジット カードの所有者の場合は、カードの有効期限の変更、別のカードの選択、または[新しいカードの追加](manage-payment-methods.md)を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="9768f-123">If you're the credit card owner, you can change the expiration date for the card, pick a different card, or [add a new card](manage-payment-methods.md).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="9768f-124">**[残高の決済]** 機能を使用すると、アカウントにおけるすべての未払額が課金されます。金額は他の場所に表示されている請求総額を超える場合があります。</span><span class="sxs-lookup"><span data-stu-id="9768f-124">When you use the **Settle balance** feature, you'll be charged for the entire outstanding balance on your account, which could be more than the amount due shown elsewhere.</span></span>
-
-4. <span data-ttu-id="9768f-125">クレジット カードの所有者でない場合は、別のクレジット カードを選択するか、[新しいカードを追加](manage-payment-methods.md)できます。</span><span class="sxs-lookup"><span data-stu-id="9768f-125">If you're not the credit card owner, you can choose a different credit card or [add a new card](manage-payment-methods.md).</span></span>
-
-5. <span data-ttu-id="9768f-126">クレジット カード情報を更新するか、サブスクリプションの支払いに使用するクレジット カードを変更した後、**[保存]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9768f-126">After you've updated the credit card information or changed the credit card that is used to pay for the subscription, select **Save**.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <span data-ttu-id="9768f-127">管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9768f-127">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
-
-2. <span data-ttu-id="9768f-128">変更するサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="9768f-128">Select the subscription that you want to change.</span></span> <span data-ttu-id="9768f-129">**[課金内容]** セクションで、**[今すぐ支払う]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9768f-129">In the **My bill** section, select **Pay now**.</span></span>
-
-3. <span data-ttu-id="9768f-130">クレジット カードの所有者の場合は、カードの有効期限の変更、別のカードの選択、または[新しいカードの追加](manage-payment-methods.md)を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="9768f-130">If you're the credit card owner, you can change the expiration date for the card, pick a different card, or [add a new card](manage-payment-methods.md).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="9768f-131">
-            \*\*今すぐ支払う\*\*機能を使用すると、アカウントにおけるすべての未払額が課金されます。金額は他の場所に表示されている請求総額を超える場合があります。</span><span class="sxs-lookup"><span data-stu-id="9768f-131">When you use the **Pay now** feature, you'll be charged for the entire outstanding balance on your account, which could be more than the amount due shown elsewhere.</span></span>
-
-4. <span data-ttu-id="9768f-132">クレジット カードの所有者でない場合は、別のクレジット カードを選択するか、[新しいカードを追加](manage-payment-methods.md)できます。</span><span class="sxs-lookup"><span data-stu-id="9768f-132">If you're not the credit card owner, you can choose a different credit card or [add a new card](manage-payment-methods.md).</span></span>
-
-5. <span data-ttu-id="9768f-133">クレジット カード情報を更新するか、サブスクリプションの支払いに使用するクレジット カードを変更した後、**[送信]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9768f-133">After you've updated the credit card information or changed the credit card that is used to pay for the subscription, select **Submit**.</span></span> <span data-ttu-id="9768f-134">「支払い方法が更新され、未払額はすべて処理されました。</span><span class="sxs-lookup"><span data-stu-id="9768f-134">You'll see a confirmation message that says "Your payment method has been updated and all outstanding charges are settled.</span></span> <span data-ttu-id="9768f-135">ありがとうございました。」という確認メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-135">Thank you."</span></span>
-
-::: moniker-end
-
-## <a name="pay-by-invoice-check-or-eft"></a><span data-ttu-id="9768f-136">請求書での支払い (小切手または EFT)</span><span class="sxs-lookup"><span data-stu-id="9768f-136">Pay by invoice (check or EFT)</span></span>
-
-<span data-ttu-id="9768f-p108">ご利用のサブスクリプション コストが一定金額を超える場合 (金額はサービスの提供場所によって異なります)、請求書でのお支払い方法が選べます。お支払いは、小切手または EFT になります。請求書によるお支払い金額が高額の場合、与信審査が必要になることがあります。与信審査が必要な場合、サブスクリプションを購入したときに通知を受け取ります。また、Microsoft から連絡することをご了承いただいた場合は、メールが届きます。メールには、クレジットの承認を申請するための詳細な情報が含まれます。与信審査は、通常 2 営業日内に完了します。</span><span class="sxs-lookup"><span data-stu-id="9768f-p108">If your subscription costs over a certain amount of money (this amount varies by service location), you'll have the option to pay by invoice by using a check or EFT. A credit check may be required for larger invoice payments. If a credit check is required, you'll be notified when you purchase your subscription. And, if you agree to be contacted, you'll get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.</span></span>
+<span data-ttu-id="be7a0-159">[請求書で支払い](view-your-bill-or-invoice.md) 方法を確認します。</span><span class="sxs-lookup"><span data-stu-id="be7a0-159">[Check your invoice](view-your-bill-or-invoice.md) for payment instructions.</span></span> <span data-ttu-id="be7a0-160">次のドロップダウンを使用して、お客様の国または地域の支払い方法を確認できます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-160">You can also use the drop-down below to find payment instructions for your country or region.</span></span> <span data-ttu-id="be7a0-161">支払い額が不明な場合は、[請求書と支払い] ページの [請求書]タブで、請求と請求履歴<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">&</a>確認できます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-161">If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="9768f-142">ブラジルにお住まいのお客様は、Boleto Bancario でサブスクリプションの支払いを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="9768f-142">Customers who live in Brazil can pay for a subscription with a Boleto Bancario.</span></span> <span data-ttu-id="9768f-143">このオプションを選択すると、サブスクリプションの購入により、注文日から 10 日以内に支払いについての連絡が指定のメールに送信されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-143">If you have selected this option, the billet for payment is sent to the email provided during subscription purchase within 10 working days after the order date.</span></span> <span data-ttu-id="9768f-144">期限は、注文日から 30 日です。</span><span class="sxs-lookup"><span data-stu-id="9768f-144">The due date is 30 days after the order date.</span></span> <span data-ttu-id="9768f-145">Boleto のメールを受信しない場合は、迷惑メール フォルダーを確認するか、サポートにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="9768f-145">If you don't receive your Boleto by email, check your spam folder or contact support.</span></span> <br><br><span data-ttu-id="9768f-146">もしくは、口座間の電子決済により支払いを行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="9768f-146">If you prefer, you can pay by electronic transfer between accounts.</span></span> <span data-ttu-id="9768f-147">銀行と口座番号は請求書の下部に記載されています。</span><span class="sxs-lookup"><span data-stu-id="9768f-147">The Agency and account number are at the bottom of your invoice.</span></span> <span data-ttu-id="9768f-148">振替 ID の欄に請求書番号を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9768f-148">You must enter your invoice number in the Transfer identification field.</span></span>
+> <span data-ttu-id="be7a0-162">チェックによる支払いは、少数の国でのみ利用可能です。</span><span class="sxs-lookup"><span data-stu-id="be7a0-162">Paying by check is only available in a few countries.</span></span>
 
-<span data-ttu-id="9768f-p111">サブスクリプションを請求書でお支払いになる場合、請求明細書が閲覧できるようになったことを通知する電子メールが届きます。このメールには、請求明細書のコピーは含まれません。しかし、[請求明細書のコピーをメールで受け取る](#receive-a-copy-of-your-billing-statement-in-email)ことを選択することもできます。請求明細書には、支払いに関するオプションの詳細が記載されています。サブスクリプションを購入するときに発注書番号 (PO) を入力した場合、請求明細書にその番号が表示されます。請求明細書にアクセスする詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-p111">If you pay by invoice for your subscription, you'll get an email that says your billing statement is ready to view. This email does not contain a copy of your billing statement. However, you can also choose to [Receive a copy of your billing statement in email](#receive-a-copy-of-your-billing-statement-in-email). Your billing statement includes details about your options for making a payment. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="9768f-155">既定では、組織の請求通知は、組織内のすべてのグローバルおよび課金管理者の Microsoft 電子メールアドレスおよび連絡用電子メールアドレスに送信されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-155">By default, your organization's billing notifications are sent to the Microsoft email address and the alternate email address of every global and billing admin in your organization.</span></span> <span data-ttu-id="9768f-156">連絡用メール アドレスを変更する方法については、「[請求先住所を変更する](change-your-billing-addresses.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-156">To change the alternate email address, see [Change your billing addresses](change-your-billing-addresses.md).</span></span>
-
-### <a name="can-i-pay-my-bill-online"></a><span data-ttu-id="9768f-157">オンラインで課金内容を支払うことができますか?</span><span class="sxs-lookup"><span data-stu-id="9768f-157">Can I pay my bill online?</span></span>
-
-<span data-ttu-id="9768f-p113">残念ながら、サブスクリプションが請求書で支払うように設定されている場合、Microsoft は直接オンライン決済を受け入れることはできません。ただし、[支払い方法をクレジットカードに変更することができます](change-payment-method.md)。請求額は各サービスの提供期間後、カードに自動請求されます。Azure の場合、「[Azure サブスクリプションの支払いに使用するクレジット カードを変更する方法](https://go.microsoft.com/fwlink/p/?LinkId=718057)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-p113">Unfortunately, if your subscription is set up to pay by invoice, we can't accept online payments directly. You can, however, [change your payment method to credit card or bank account](change-payment-method.md), and the amount due will be automatically charged to your card or account after each service period. For Azure, see [How to change the credit card used to pay for an Azure subscription](https://go.microsoft.com/fwlink/p/?LinkId=718057).</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="9768f-161">クレジット カードでの自動支払いに切り替える場合、最初に必ずすべての未払い残高をお支払いください。</span><span class="sxs-lookup"><span data-stu-id="9768f-161">If you're switching to pay by automatic credit card payments, be sure to first pay all outstanding balances.</span></span> <span data-ttu-id="9768f-162">請求明細書の支払いオプションと手順を確認してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-162">Check your billing statement for payment options and instructions.</span></span> <span data-ttu-id="9768f-163">詳細については、「請求 [書につい](understand-your-invoice2.md)て」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-163">For more information, see [Understand your bill or invoice](understand-your-invoice2.md).</span></span>
-
-### <a name="where-do-i-send-my-check-or-eft-payment"></a><span data-ttu-id="9768f-164">小切手または EFT の送信はどこでできますか?</span><span class="sxs-lookup"><span data-stu-id="9768f-164">Where do I send my check or EFT payment?</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="9768f-p115">小切手による支払いは数か国のみで利用可能です。お住まいの国の以下の支払い手順に従ってください。または[請求書を確認](understand-your-invoice2.md)してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-p115">Payment by check is only available in a few countries. You can follow the payment instructions below for your country, or [check your invoice](understand-your-invoice2.md).</span></span>
-
-<span data-ttu-id="9768f-p116">未払い金額がわからない場合は、[オンラインで課金内容と請求履歴を確認できます](view-your-bill-or-invoice.md)。Azure の場合、「[Azure の請求書と毎日の使用状況データをダウンロードまたは表示する](https://go.microsoft.com/fwlink/p/?LinkId=718058)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-p116">If you're not sure how much you owe, you can [check your bill and billing history online](view-your-bill-or-invoice.md). For Azure, see [How to download your Azure billing invoice and daily usage data](https://go.microsoft.com/fwlink/p/?LinkId=718058).</span></span>
-
- <span data-ttu-id="9768f-169">**下のドロップダウン メニューから、"請求書" の国または地域を選択します。**</span><span class="sxs-lookup"><span data-stu-id="9768f-169">**Choose your "bill-to" country or region from the drop-down menu below.**</span></span>
+ <span data-ttu-id="be7a0-163">**下のドロップダウン メニューから、"請求書" の国または地域を選択します。**</span><span class="sxs-lookup"><span data-stu-id="be7a0-163">**Choose your "bill-to" country or region from the drop-down menu below.**</span></span>
 
 > [!div class="op_single_selector"]
 > - **国または地域を選択します**
@@ -274,44 +246,20 @@ ms.locfileid: "48638437"
 > - [ザンビア](../pay/zambia.md)
 > - [ジンバブエ](../pay/zimbabwe.md)
 
-## <a name="receive-a-copy-of-your-billing-statement-in-email"></a><span data-ttu-id="9768f-322">請求明細書のコピーをメールで受け取る</span><span class="sxs-lookup"><span data-stu-id="9768f-322">Receive a copy of your billing statement in email</span></span>
+## <a name="can-i-pay-my-invoice-online"></a><span data-ttu-id="be7a0-316">請求書をオンラインで支払できますか?</span><span class="sxs-lookup"><span data-stu-id="be7a0-316">Can I pay my invoice online?</span></span>
 
-<span data-ttu-id="9768f-p117">請求明細書のコピーをメールの添付ファイルとして受け取ることができます。その場合は、次のことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-p117">You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:</span></span>
+<span data-ttu-id="be7a0-317">請求書はオンラインで支払う必要があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-317">You can’t pay your invoice online.</span></span> <span data-ttu-id="be7a0-318">支払いは、Check または EFT で送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-318">You must remit payment via either check or EFT.</span></span>
 
-- <span data-ttu-id="9768f-325">メールは、通知の受信者として記載されているすべてのユーザーのプライマリと代替の両方のメール アドレスに送信されます。</span><span class="sxs-lookup"><span data-stu-id="9768f-325">An email will be sent to both the primary and alternate email address for every person listed as a notification recipient.</span></span>
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a><span data-ttu-id="be7a0-319">現在の支払い方法から請求書での支払い方法に変更できますか?</span><span class="sxs-lookup"><span data-stu-id="be7a0-319">Can I change from my current payment method to paying by invoice?</span></span>
 
-- <span data-ttu-id="9768f-326">2 通の異なるメールを受け取ります。1 通目は請求の準備ができたことと、管理センターにログオンしてそれを確認するための手順を伝えるもので、2 通目には請求明細書が添付されています。</span><span class="sxs-lookup"><span data-stu-id="9768f-326">You will receive two separate emails: one that lets you know that your bill is ready, with instructions to log on to the admin center to view it, and a second email that contains the billing statement as an attachment.</span></span>
+<span data-ttu-id="be7a0-320">サブスクリプションのコストが一定金額を超える場合にのみ、請求書による支払いを変更できます。</span><span class="sxs-lookup"><span data-stu-id="be7a0-320">You can only change to paying by invoice if your subscription costs above a certain amount.</span></span> <span data-ttu-id="be7a0-321">請求書による支払いを変更する前に、まずクレジット カードまたはデビット カードまたは銀行口座に未払い残高を支払う必要があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-321">You must first pay any outstanding balance on the credit or debit card or bank account before you can change to paying by invoice.</span></span> <span data-ttu-id="be7a0-322">支払い方法を変更する方法については、「1 つのサブスクリプションの支払い方法を [変更する」を参照してください](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription)。</span><span class="sxs-lookup"><span data-stu-id="be7a0-322">To learn how to change payment methods, see [Change a payment method for a single subscription](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription).</span></span>
 
-### <a name="to-receive-your-billing-statement-in-email"></a><span data-ttu-id="9768f-327">請求明細書をメールで受け取るには</span><span class="sxs-lookup"><span data-stu-id="9768f-327">To receive your billing statement in email</span></span>
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a><span data-ttu-id="be7a0-323">請求書支払いから別の支払い方法への変更はできますか?</span><span class="sxs-lookup"><span data-stu-id="be7a0-323">Can I change from paying by invoice to using a different payment method?</span></span>
 
-::: moniker range="o365-worldwide"
+<span data-ttu-id="be7a0-324">請求書支払いから別の支払い方法での支払いには、自動的に変更を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="be7a0-324">You can’t automatically change from paying by invoice to paying with a different payment method.</span></span> <span data-ttu-id="be7a0-325">代わりに、クレジット[](../try-or-buy-microsoft-365.md#buy-a-different-subscription)カードまたはデビット カードまたは銀行口座で支払われる別のサブスクリプションを購入[](../subscriptions/move-users-different-subscription.md)し、すべてのユーザーを新しいサブスクリプションに移動して、古いサブスクリプションを[キャンセルする必要があります](../subscriptions/cancel-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="be7a0-325">Instead, you must [buy a different subscription](../try-or-buy-microsoft-365.md#buy-a-different-subscription) paid for with a credit or debit card or bank account, [move all users to the new subscription](../subscriptions/move-users-different-subscription.md), and then [cancel the old subscription](../subscriptions/cancel-your-subscription.md).</span></span>
 
-1. <span data-ttu-id="9768f-328">管理センターで、**[課金情報]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9768f-328">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.</span></span>
+## <a name="related-articles"></a><span data-ttu-id="be7a0-326">関連記事</span><span class="sxs-lookup"><span data-stu-id="be7a0-326">Related articles</span></span>
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <span data-ttu-id="9768f-329">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9768f-329">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <span data-ttu-id="9768f-330">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">[課金に関する通知]</a> ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9768f-330">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.</span></span>
-
-::: moniker-end
-
-2. <span data-ttu-id="9768f-331">**[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="9768f-331">Under **Receive billing statement as email attachment?**, switch the toggle to **On**.</span></span>
-
-    <span data-ttu-id="9768f-332">これを **[オフ]** に切り替えることで、請求明細書のメールでの受け取りをいつでも停止できます。</span><span class="sxs-lookup"><span data-stu-id="9768f-332">You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.</span></span>
-
-## <a name="need-to-switch-payment-methods"></a><span data-ttu-id="9768f-333">支払い方法を変更する場合</span><span class="sxs-lookup"><span data-stu-id="9768f-333">Need to switch payment methods?</span></span>
-
-<span data-ttu-id="9768f-334">サブスクリプションを調整して支払い金額が少なくなったために、請求書での支払いが不適切になった場合など、請求書、クレジット カード、または銀行口座を選んだ本来の理由が変わってきた場合は、支払い方法を変更できます。</span><span class="sxs-lookup"><span data-stu-id="9768f-334">If your original reasons for choosing invoice, credit card, or bank account have changed, for example, if you adjust your subscription so that the payment amount is lower so that you no longer qualify for invoice payments, you can change your payment method.</span></span> <span data-ttu-id="9768f-335">詳細については、「[支払い方法を変更する](change-payment-method.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9768f-335">For more information, see [Change your payment method](change-payment-method.md).</span></span>
-
-## <a name="related-articles"></a><span data-ttu-id="9768f-336">関連記事</span><span class="sxs-lookup"><span data-stu-id="9768f-336">Related articles</span></span>
-
-[<span data-ttu-id="9768f-337">支払方法を管理する</span><span class="sxs-lookup"><span data-stu-id="9768f-337">Manage payment methods</span></span>](manage-payment-methods.md)
-
-[<span data-ttu-id="9768f-338">課金内容または請求書の内容を理解する</span><span class="sxs-lookup"><span data-stu-id="9768f-338">Understand your bill or invoice</span></span>](understand-your-invoice2.md)
+<span data-ttu-id="be7a0-327">[支払い方法を管理する](manage-payment-methods.md) (記事)</span><span class="sxs-lookup"><span data-stu-id="be7a0-327">[Manage payment methods](manage-payment-methods.md) (article)</span></span>\
+<span data-ttu-id="be7a0-328">[請求書または請求書を表示](view-your-bill-or-invoice.md) する (記事)</span><span class="sxs-lookup"><span data-stu-id="be7a0-328">[View your bill or invoice](view-your-bill-or-invoice.md) (article)</span></span>\
+<span data-ttu-id="be7a0-329">[請求書または請求書を理解する](understand-your-invoice2.md) (記事)</span><span class="sxs-lookup"><span data-stu-id="be7a0-329">[Understand your bill or invoice](understand-your-invoice2.md) (article)</span></span>
