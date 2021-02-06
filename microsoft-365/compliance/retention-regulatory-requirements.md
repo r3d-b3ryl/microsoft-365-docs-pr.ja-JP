@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース。
-ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032568"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109936"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>情報ガバナンスおよびレコード管理の規制要件
 
@@ -34,7 +34,7 @@ ms.locfileid: "50032568"
 
 **ニュージーランド公記録法の Microsoft 365 への遵守義務のサポート** - [ダウンロード評価](https://aka.ms/NZPRA)
 
-適用可能なワークロード: SharePoint、OneDrive、Teams、Exchange、Skype for Business
+適用可能なワークロード: SharePoint、OneDrive、Teams、Exchange
 
 2021 年 1 月にリリースされたこのレポートは Microsoft ニュージーランドと共同で作成されたもので、Microsoft 365 サービスの機能が、以下で指定されている、電子記録を記録、保存、管理するための要件について評価されています。 
 
