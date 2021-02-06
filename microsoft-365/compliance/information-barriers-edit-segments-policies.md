@@ -12,16 +12,16 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 0d46459f61b29c6bdb457c7e0c82e9147e7709ba
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071282"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126142"
 ---
 # <a name="manage-information-barrier-policies"></a>情報バリア ポリシーを管理する
 
-情報バリア ポリシー[を](information-barriers-policies.md)定義した後、トラブルシューティングの一環として、または定期的なメンテナンスとして、これらのポリシーまたはユーザー セグメントに変更[](information-barriers-troubleshooting.md)を加える必要がある場合があります。 この記事をガイドとして使用します。
+情報バリア ポリシー[を](information-barriers-policies.md)定義した後、トラブルシューティングの一環として、または通常のメンテナンスとして、これらのポリシーまたはユーザー セグメントに変更[](information-barriers-troubleshooting.md)を加える必要がある場合があります。 この記事をガイドとして使用します。
 
 ## <a name="what-do-you-want-to-do"></a>目的に合ったトピックをクリックしてください
 
@@ -37,7 +37,7 @@ ms.locfileid: "50071282"
 | [情報バリアのトラブルシューティング](information-barriers-troubleshooting.md) | 情報バリアで予期しない問題が発生した場合は、この記事を参照してください。 |
 
 > [!IMPORTANT]
-> この記事で説明するタスクを実行するには、次のいずれかの適切な役割が割り当てられている必要があります。<br/>- Microsoft 365 Enterprise グローバル管理者<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>-IB コンプライアンス管理 (これは新しい役割です)<br><br>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの [場合)」](information-barriers-policies.md#prerequisites)を参照してください。<br><br> セキュリティ センター [コンプライアンス センターの PowerShell &接続してください](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+> この記事で説明するタスクを実行するには、次のいずれかの適切な役割が割り当てられている必要があります。<br/>- Microsoft 365 Enterprise グローバル管理者<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>-IB コンプライアンス管理 (これは新しい役割です)<br><br>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの [場合)」](information-barriers-policies.md#prerequisites)を参照してください。<br><br> セキュリティ センター [コンプライアンス センターの PowerShell &接続してください](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="edit-user-account-attributes"></a>ユーザー アカウントの属性を編集する
 
@@ -53,9 +53,9 @@ ms.locfileid: "50071282"
 
 3. 前の手順で選択した属性の値を含めるには、1 つ以上のユーザー アカウントを編集します。 このアクションを実行するには、次のいずれかの手順を使用します。
 
-    - 単一のアカウントを編集するには [、「Azure Active Directory を](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)使用してユーザーのプロファイル情報を追加または更新する」を参照してください。
+    - 単一のアカウントを編集するには [、「Azure Active Directory を](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)使用してユーザーのプロファイル情報を追加または更新する」を参照してください。
 
-    - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) には [、「365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)を使用してユーザー アカウントのプロパティOffice構成する」を参照してください。
+    - 複数のアカウントを編集する (または、PowerShell を使用して 1 つのアカウントを編集する) には、「Office [365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)でユーザー アカウントのプロパティを構成する」を参照してください。
 
 ## <a name="edit-a-segment"></a>セグメントを編集する
 
@@ -65,7 +65,7 @@ ms.locfileid: "50071282"
 
     構文: `Get-OrganizationSegment`
 
-    セグメントの種類、UserGroupFilter の値、作成または最後に変更したユーザー、GUID など、各セグメントと詳細の一覧が表示されます。
+    セグメントの種類、UserGroupFilter の値、セグメントを作成または最後に変更したユーザー、GUID など、各セグメントと詳細の一覧が表示されます。
 
     > [!TIP]
     > 後で参照するために、セグメントの一覧を印刷または保存します。 たとえば、セグメントを編集する場合は、その名前または識別値を知る必要があります (これは Identity パラメーターと一緒に使用されます)。
@@ -76,7 +76,7 @@ ms.locfileid: "50071282"
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p> この例では、GUID *が c96e0837-c232-4a8a-841e-ef45787d8fcd* であるセグメントについて、部署名を "HRDept" に更新しました。 |
 
-組織のセグメントの編集が完了したら、情報バリア ポリシーを[定義](#edit-a-policy)または編集できます。 [](information-barriers-policies.md#part-2-define-information-barrier-policies)
+組織のセグメントの編集が完了したら、情報バリア ポリシーを定義[](information-barriers-policies.md#part-2-define-information-barrier-policies)[または編集](#edit-a-policy)できます。
 
 ## <a name="edit-a-policy"></a>ポリシーを編集する
 
@@ -114,11 +114,11 @@ ms.locfileid: "50071282"
 
     構文: `Start-InformationBarrierPoliciesApplication`
 
-    変更は、ユーザー別に組織に適用されます。 組織が大規模な場合、このプロセスが完了するには 24 時間以上かかる場合があります。 (一般的なガイドラインとして、5,000 のユーザー アカウントの処理には約 1 時間かかる)。
+    変更は、ユーザー別に組織に適用されます。 組織が大規模な場合、このプロセスが完了するには 24 時間以上かかる場合があります。 (一般的なガイドラインとして、5,000 のユーザー アカウントを処理するのに約 1 時間かかる)。
 
 この時点で、1 つ以上の情報バリア ポリシーが非アクティブ状態に設定されます。 ここから、次の操作を実行できます。
 
-- この状態を維持する (ポリシーが非アクティブな状態に設定されている場合、ユーザーには影響しません)
+- この状態を維持する (ポリシーが非アクティブ状態に設定されている場合、ユーザーには影響しません)
 - [ポリシーを編集する](#edit-a-policy) 
 - [ポリシーを削除する](#remove-a-policy)
 

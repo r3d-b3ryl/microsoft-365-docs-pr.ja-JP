@@ -13,21 +13,21 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39ac5c2f12b8947bce26d426cac83e57cd4c87ae
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 3810dd977ef0d25642ba86a2b62a036c9a4ace06
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126564"
 ---
 # <a name="troubleshooting-information-barriers"></a>情報バリアのトラブルシューティング
 
-[情報バリアは、](information-barriers.md) 組織が法的要件や業界の規制に準拠し続けるのに役立ちます。 たとえば、情報バリアを使用すると、特定のユーザー グループ間の通信を制限して、利益の競合や他の問題を回避できます。 (情報バリアを設定する方法の詳細については、「情報バリアのポリシーの定義」 [を参照](information-barriers-policies.md)してください)。
+[情報障壁は、](information-barriers.md) 組織が法的要件や業界の規制に準拠し続けるのに役立ちます。 たとえば、情報バリアを使用すると、特定のユーザー グループ間の通信を制限して、利益の競合や他の問題を回避できます。 (情報バリアを設定する方法の詳細については、「情報バリアのポリシーの定義」 [を参照してください](information-barriers-policies.md))。
 
 情報バリアが設定された後に予期しない問題が発生した場合は、それらの問題を解決するためにいくつかの手順を実行できます。 この記事をガイドとして使用します。
 
 > [!IMPORTANT]
-> この記事で説明するタスクを実行するには、次のいずれかの適切な役割が割り当てられている必要があります。<br/>- Microsoft 365 Enterprise グローバル管理者<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>-IB コンプライアンス管理 (これは新しい役割です)<p>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの [場合)」](information-barriers-policies.md#prerequisites)を参照してください。<p>セキュリティ センター [コンプライアンス センターの PowerShell &接続してください](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+> この記事で説明するタスクを実行するには、次のいずれかの適切な役割が割り当てられている必要があります。<br/>- Microsoft 365 Enterprise グローバル管理者<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>-IB コンプライアンス管理 (これは新しい役割です)<p>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの [場合)」](information-barriers-policies.md#prerequisites)を参照してください。<p>セキュリティ センター [コンプライアンス センターの PowerShell &接続してください](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題: Microsoft Teams の他のユーザーとの通信が予期せずブロックされる 
 
@@ -55,9 +55,9 @@ ms.locfileid: "49980040"
     |:---------|:----------|
     | `Get-InformationBarrierPolicy` <p> 前の手順で受信したポリシー GUID (ExoPolicyId) などの詳細を ID 値として使用します。 | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p> この例では、ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f* を持つ情報バリア ポリシーに関する詳細情報を取得しています。 |
 
-    コマンドレットを実行した後、結果で AssignedSegment、SegmentsAllowed、**および SegmentsBlocked** の値を探します。  
+    コマンドレットを実行した後、結果で **AssignedSegment、SegmentsAllowed、****および SegmentsBlocked** の値を探します。 
 
-    たとえば、コマンドレットの実行後、結果の一覧に `Get-InformationBarrierPolicy` 次の結果が表示されます。
+    たとえば、コマンドレットの実行後 `Get-InformationBarrierPolicy` 、結果の一覧に次の結果が表示されます。
 
     ```powershell
     AssignedSegment : Sales
@@ -67,7 +67,7 @@ ms.locfileid: "49980040"
 
     この場合、情報バリア ポリシーが Sales および Research セグメントに含まれるユーザーに影響を与えるのを確認できます。 この場合、Sales のユーザーは Research のユーザーと通信できます。
 
-    これが正しいと思われる場合は、情報バリアが期待通り動作しています。 そうでない場合は、次の手順に進みます。
+    これが正しいと思われる場合、情報バリアは期待通り動作しています。 そうでない場合は、次の手順に進みます。
 
 3. セグメントが正しく定義されていることを確認します。 これを行うには、コマンドレットを `Get-OrganizationSegment` 使用し、結果の一覧を確認します。
 
@@ -81,11 +81,11 @@ ms.locfileid: "49980040"
 
 ## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>問題: Microsoft Teams でブロックする必要があるユーザー間の通信が許可されている
 
-この場合、情報バリアが定義され、アクティブで、適用されている場合でも、互いに通信を妨げる必要があるユーザーは、Microsoft Teams で何らかの方法でチャットや通話を行える状態になります。
+この場合、情報バリアが定義され、アクティブで、適用されている場合でも、互いに通信を妨げる必要があるユーザーは、Microsoft Teams でチャットし、互いに通話することができます。
 
 ### <a name="what-to-do"></a>操作
 
-問題のユーザーが情報バリア ポリシーに含まれているか確認します。 
+該当するユーザーが情報バリア ポリシーに含まれているか確認します。 
 
 1. Identity パラメーター **を指定して Get-InformationBarrierRecipientStatus** コマンドレットを使用します。
 
@@ -102,7 +102,7 @@ ms.locfileid: "49980040"
 
     |**結果**|**次の操作**|
     |:----------|:------------------|
-    | 選択したユーザーのセグメントが一覧表示されません。 | 次のいずれかの操作を行います。<br/>- Azure Active Directory でユーザー プロファイルを編集して、既存のセグメントにユーザーを割り当てる。 [(「365 PowerShell を使用してユーザー Officeを構成する」を参照](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)してください)。<br/>- 情報バリアでサポートされている [属性を使用してセグメントを定義します](information-barriers-attributes.md)。 次に、新[しいポリシーを定義するか](information-barriers-policies.md#part-2-define-information-barrier-policies)[、既存のポリシーを編集して](information-barriers-edit-segments-policies.md#edit-a-policy)そのセグメントを含めるかのどちらかです。 |
+    | 選択したユーザーのセグメントが一覧表示されません。 | 次のいずれかの操作を行います。<br/>- Azure Active Directory でユーザー プロファイルを編集して、既存のセグメントにユーザーを割り当てる。 [(「365 PowerShell を使用してユーザー Officeを構成する」を参照](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)してください)。<br/>- 情報バリアでサポートされている [属性を使用してセグメントを定義します](information-barriers-attributes.md)。 次に、新[しいポリシーを定義するか](information-barriers-policies.md#part-2-define-information-barrier-policies)[、既存のポリシーを編集して](information-barriers-edit-segments-policies.md#edit-a-policy)そのセグメントを含めるかのどちらかです。 |
     | セグメントが一覧表示されますが、それらのセグメントに情報バリア ポリシーが割り当てられていない | 次のいずれかの操作を行います。<br/>- [問題のセグメントごとに新しい](information-barriers-policies.md#part-2-define-information-barrier-policies) 情報バリア ポリシーを定義する <br/>- [既存の情報バリア ポリシーを編集して適切](information-barriers-edit-segments-policies.md#edit-a-policy) なセグメントに割り当てる |
     | セグメントが一覧表示され、それぞれが情報バリア ポリシーに含まれる | - コマンドレットを `Get-InformationBarrierPolicy` 実行して情報バリア ポリシーがアクティブな状態を確認する<br/>- コマンドレットを `Get-InformationBarrierPoliciesApplicationStatus` 実行してポリシーが適用されたのを確認する<br/>- コマンドレットを実行 `Start-InformationBarrierPoliciesApplication` してすべてのアクティブな情報バリア ポリシーを適用する |
 
@@ -119,11 +119,11 @@ ms.locfileid: "49980040"
     |**構文**|**例**|
     |:---------|:----------|
     | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 名前、エイリアス、識別名、正規ドメイン名、電子メール アドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> この例では、365 年 365 日に Office 2 つのユーザー アカウント *(megan* の場合は *meganb、Alex* の場合は *alexw)* を参照 *します*。          |
-    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> ユーザーを一意に識別する任意の値 (名前、エイリアス、識別名、正規ドメイン名、電子メール アドレス、GUID など) を使用できます。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> この例では、365 年に 1 つのOfficeを *参照します*。 |
+    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 名前、エイリアス、識別名、正規ドメイン名、電子メール アドレス、GUID など、ユーザーを一意に識別する任意の値を使用できます。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> この例では、365 年 1 月 365 Officeアカウントを *参照します*。 |
 
 2. 結果を確認して、情報バリア ポリシーが割り当てられているか、ユーザーが属するセグメントを確認します。
 
-3. 情報バリアの影響を受けるセグメントからユーザーを削除するには、Azure Active Directory でユーザーのプロファイル [情報を更新します](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+3. 情報バリアの影響を受けるセグメントからユーザーを削除するには、Azure Active Directory でユーザーのプロファイル [情報を更新します](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
 4. FwdSync が発生するまで約 30 分待ちます。 または、コマンドレットを実行 `Start-InformationBarrierPoliciesApplication` してすべてのアクティブな情報バリア ポリシーを適用します。
 
@@ -157,15 +157,15 @@ ms.locfileid: "49980040"
 
 ### <a name="what-to-do"></a>操作
 
-組織に Exchange アドレス帳ポリシー [が設定されていないことを](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 確認します。 このようなポリシーは、情報バリア ポリシーの適用を防止します。
+組織に Exchange アドレス帳ポリシー [が設定されていないことを](/exchange/address-books/address-book-policies/address-book-policies) 確認します。 このようなポリシーは、情報バリア ポリシーの適用を防止します。
 
-1. [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) に接続する
+1. [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) に接続する
 
-2. [Get-AddressBookPolicy コマンドレットを実行](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy)し、結果を確認します。
+2. [Get-AddressBookPolicy コマンドレットを実行](/powershell/module/exchange/get-addressbookpolicy)し、結果を確認します。
 
     |**結果**|**次の手順**|
     |:----------|:------------|
-    | Exchange アドレス帳ポリシーが一覧表示される | [アドレス帳ポリシーを削除する](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | Exchange アドレス帳ポリシーが一覧表示される | [アドレス帳ポリシーを削除する](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | アドレス帳ポリシーが存在しない |監査ログを確認して、ポリシー アプリケーションが失敗する理由を確認する |
 
 3. [ユーザー アカウント、セグメント、ポリシー、またはポリシー アプリケーションの状態を表示します](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)。
@@ -199,7 +199,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
    $DetailedLogs[1] |fl
 ```
 
-以下に例を示します。
+例:
 
 > "UserId": User1
 >
@@ -207,9 +207,9 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 
 3. 通常、ユーザーが複数のセグメントに含まれている場合があります。 You can fix this by updating the `-UserGroupFilter` value in `OrganizationSegments` .
 
-4. これらの手順を使用して、情報バリア ポリシーを [再適用します](information-barriers-policies.md#part-3-apply-information-barrier-policies)。
+4. これらの手順を使用して、情報バリア ポリシーを再 [適用します](information-barriers-policies.md#part-3-apply-information-barrier-policies)。
 
 ## <a name="resources"></a>リソース
 
-- [Microsoft Teams で情報障壁のポリシーを定義する](information-barriers-policies.md)
+- [Microsoft Teams での情報障壁のポリシーの定義](information-barriers-policies.md)
 - [情報障壁](information-barriers.md)

@@ -1,19 +1,36 @@
 ---
-title: "新機能Office表示される機能を管理する f1.keywords:
-- NOCSH ms.author: danbrown author:DHB-MSFT manager: scotv audience: Admin ms.topic: article ms.service: o365-administration localization_priority: Normal ms.collection:
+title: 新機能Office表示される機能を管理する
+f1.keywords:
+- NOCSH
+ms.author: danbrown
+author: DHB-MSFT
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC ms.custom: AdminSurgePortfolio search.appverid:
+- Adm_TOC
+ms.custom: AdminSurgePortfolio
+search.appverid:
 - BCS160
 - MET150
-- MOE150 の説明: "Microsoft 365 管理センターの Office の新機能" 機能を使用して、ユーザーが Windows 上の Office アプリのヘルプ > の新機能を選択した場合に表示または非表示にする Office 機能を決定します。
+- MOE150
+description: Microsoft 365 管理センターの [Office の新機能] 機能を使用して、ユーザーが Windows 上の Office アプリの [ヘルプ > の新機能] を選択した場合に表示または非表示にする Office 機能を決定します。 Office
+ms.openlocfilehash: d0b5bc3e643b306d9a38a707fed50ab546249c2b
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122350"
 ---
-
 # <a name="manage-which-office-features-appear-in-whats-new"></a>新機能Office表示される機能を管理する
 
 重要なOffice機能がリリースされると、Windows のアプリの [ヘルプの新機能] を選択すると、その機能に関するメッセージOffice  >  表示されます。
 
-Microsoft 365 管理センターの Office 機能の新機能を使用して、ユーザー **に表示されるこれらの機能メッセージ** を制御できます。 機能メッセージをユーザーに対して非表示にした場合は、いつでも後で表示することができます。
+Microsoft 365 管理センターの Office の新機能を使用して、ユーザー **に表示されるこれらの機能メッセージ** を制御できます。 機能メッセージをユーザーに対して非表示にした場合は、いつでも後で表示することができます。
 
 > [!NOTE]
 > - ユーザーから機能メッセージを非表示にしても、アプリの機能Officeされません。
@@ -21,7 +38,7 @@ Microsoft 365 管理センターの Office 機能の新機能を使用して、�
 
 ## <a name="show-or-hide-new-features"></a>新機能の表示と非表示を切り替える 
 
-1. Microsoft 365 管理センターの [設定] で **、[組織の** 設定] **を選択します**。
+1. Microsoft 365 管理センターの[設定] で、[組織の設定]**を選択します**。
 2. On the **Services** tab, choose **What's new in Office.**
 3. 機能名をクリックすると、次の情報を含むフライアウト パネルが表示されます。
      - 機能の簡単な説明。
@@ -33,8 +50,8 @@ Microsoft 365 管理センターの Office 機能の新機能を使用して、�
 [新しい機能] ページに表示Officeの管理で複数の機能を選択し、[非表示] または [表示]**を選択****することもできます**。
 
 > [!NOTE]
-> - 複数の Office アプリで機能を使用できる場合、その機能を[非表示] に設定すると、それらのすべてのアプリで機能Officeされます。
-> - 既定では、すべての機能メッセージがユーザーに表示されます。 これはすべての機能の既定の状態であり、機能メッセージの非表示または表示を選択した場合にのみ状態が変更されます。
+> - 複数の Office アプリで機能を利用できる場合、その機能を[非表示] に設定すると、それらのすべてのアプリで機能Officeされます。
+> - 既定では、すべての機能メッセージがユーザーに表示されます。 これは、すべての機能の既定の状態であり、機能メッセージの非表示または表示を選択した場合にのみ状態が変更されます。
 > - Microsoft 365 Apps 管理センター **()** Officeの新機能にアクセスすることもできます [https://config.office.com](https://config.office.com) 。 この機能は、カスタマイズ **の新機能**  >  **の管理の下に表示されます**。
 
 ## <a name="list-of-features"></a>機能の一覧

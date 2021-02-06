@@ -18,19 +18,18 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: Microsoft 365 Business Basic サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: b40b6a633c9c6c25daa4607c9e05178a1f418c51
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 43ae19b24058429c9276bd44dd4c3960c792ca0d
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126187"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Microsoft 365 Business Basic のセットアップ
 
@@ -66,10 +65,10 @@ Microsoft 365 Business Basic を購入するときに、所有するドメイン
 
 2. [**セットアップに移動**] を選択して、ウィザードを開始します。
     
-3. **ドメインの追加**ステップで、使用するドメイン名 (Contoso.com など) を入力します。
+3. **ドメインの追加** ステップで、使用するドメイン名 (Contoso.com など) を入力します。
 
     > [!IMPORTANT]
-    > サインアップ時にドメインを購入した場合、ここでは**ドメインの追加**ステップは表示されません。 代わりに [[ユーザーの追加](#add-users-and-assign-licenses)] に移動します。
+    > サインアップ時にドメインを購入した場合、ここでは **ドメインの追加** ステップは表示されません。 代わりに [[ユーザーの追加](#add-users-and-assign-licenses)] に移動します。
 
     
 4. ウィザードの手順に従って[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)し、ドメインの所有を確認します。 ドメイン ホストがわかっている場合は、「[ホスト特有の手順](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)」も参照してください。

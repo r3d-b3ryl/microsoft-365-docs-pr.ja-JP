@@ -16,7 +16,6 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -24,18 +23,18 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Microsoft 365 の DNS レコードを作成するために必要な値/情報を見つける方法について説明します。 '
-ms.openlocfilehash: db9aff1fdcd9fa52c90cc96b1a32cd3908c30edb
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 45994139b11a2fd5a03b2e979dd6af334bc1f00b
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658509"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126373"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードの作成に必要な情報を収集する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>手順 1: TXT レコードの値を見つけて確認する
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>手順 1: TXT レコードの値を検索して確認する
 
 ::: moniker range="o365-worldwide"
 
@@ -67,7 +66,7 @@ ms.locfileid: "49658509"
 
 7. ドメインが Microsoft 365 で確認された後、DNS ホストから TXT レコード (または MX レコード) を削除します。
     
-### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>手順 2: メールの MX レコードの値を検索する
+### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>手順 2: メールの MX レコード値を検索する
 
 ::: moniker range="o365-worldwide"
 

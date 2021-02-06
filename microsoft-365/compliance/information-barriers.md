@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 003347d46bed2529831a92681e73630d58a1f653
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071272"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126544"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Microsoft 365 の情報障壁について
 
@@ -31,12 +31,12 @@ Microsoft Teams、SharePoint Online、OneDrive for Business は情報障壁を�
 
 - その日の業者グループのユーザーは、マーケティング チームと通信したり、ファイルを共有したりしなけず
 - 会社の機密情報に取り組む財務担当者は、組織内の特定のグループとファイルを通信したり共有したりしなき
-- 営業秘密資料を持つ内部チームは、組織内の特定のグループのユーザーに電話したり、オンラインでチャットしたりしなき
-- 研究チームは、製品開発チームにオンラインでのみ電話またはチャットを行う必要があります。
+- 営業秘密資料を持つ内部チームは、組織内の特定のグループのユーザーに電話したり、オンラインでチャットしたりしなけ
+- 研究チームは、製品開発チームに電話するか、オンラインでチャットする必要があります。
 - day trader グループのサイトは、day trader グループ外のユーザーが共有したり、アクセスしたりしてみることができます。
 
 > [!IMPORTANT]
-> 情報バリア * は **_ 2** つの方法の制限のみをサポートします。 マーケティングなどの 1 つの方法の制限は、日の業者と通信および共同作業できますが、日の業者はマーケティング _* と通信および共同作業を行う機能は _サポート_ されていません**。
+> 情報バリア * は **_ 2** つの方法の制限のみをサポートします。 マーケティングなどの一方的な制限は、日の業者と通信および共同作業できますが、日の業者はマーケティング __*_ と通信および共同作業することはできません**。
 
 これらのすべてのシナリオ例 (およびそれ以上) では、Microsoft Teams、SharePoint Online、OneDrive での通信とコラボレーションを防止または許可する情報バリア ポリシーを定義できます。 このようなポリシーを使用すると、ユーザーが通話やチャットを行わないか、Microsoft Teams の特定のグループとのみ通信できます。 情報バリア ポリシーが有効な場合、これらのポリシーの対象となるユーザーが Microsoft Teams の他のユーザーとの通信と共同作業を試みるたびに、SharePoint Online または OneDrive のチェックは、(情報バリア ポリシーで定義されている) 通信とコラボレーションを防止 (または許可) するために行われます。
 
@@ -47,7 +47,7 @@ Microsoft Teams、SharePoint Online、OneDrive for Business は情報障壁を�
 - [OneDrive の情報バリア](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> 現在、情報バリアは電子メール通信には適用されません。 さらに、情報バリアはコンプライアンスの境界 [から独立しています](set-up-compliance-boundaries.md)。<p> 情報バリア ポリシーを定義して適用する前に、組織に Exchange アドレス帳ポリシーが有効でなされていないこと [を](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 確認してください。 (情報バリアはアドレス帳ポリシーに基づく)
+> 現在、情報バリアは電子メール通信には適用されません。 さらに、情報バリアはコンプライアンスの境界 [から独立しています](set-up-compliance-boundaries.md)。<p> 情報バリア ポリシーを定義して適用する前に、組織に Exchange アドレス帳ポリシーが有効でなされていないこと [を](/exchange/address-books/address-book-policies/address-book-policies) 確認してください。 (情報バリアはアドレス帳ポリシーに基づく)
 
 ## <a name="what-happens-with-information-barriers"></a>情報バリアの発生
 
@@ -63,7 +63,7 @@ Microsoft Teams、SharePoint Online、OneDrive for Business は情報障壁を�
 - 画面を共有する
 - 電話をかける
 - 別のユーザーとファイルを共有する
-- 共有リンクを使用してファイルにアクセスする
+- 共有リンクを使用したファイルへのアクセス
 
 関係するユーザーが、活動を防止する情報バリア ポリシーに含まれている場合、続行できません。 さらに、情報バリア ポリシーに含まれているすべてのユーザーは、Microsoft Teams で他のユーザーと通信できないようにすることができます。 情報バリア ポリシーの影響を受けるユーザーが同じチームまたはグループ チャットの一部である場合、それらのユーザーがチャット セッションから削除され、グループとのそれ以上の通信が許可されないことがあります。
 
@@ -76,7 +76,7 @@ SharePoint Online と OneDrive では、情報バリア ポリシーによって
 - サイトまたはコンテンツを別のユーザーと共有する
 - サイトの検索
 
-情報バリアを備えるユーザー エクスペリエンスの詳細については、SharePoint Online の情報バリア [を参照してください。](/sharepoint/information-barriers)
+情報障壁のあるユーザー エクスペリエンスの詳細については、SharePoint Online の情報バリア [を参照してください。](/sharepoint/information-barriers)
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
@@ -88,7 +88,7 @@ SharePoint Online と OneDrive では、情報バリア ポリシーによって
 - Microsoft 365 コンプライアンス E5/A5
 - Microsoft 365 Insider Risk Management
 
-詳細については、セキュリティとコンプライアンス [に関する Microsoft 365 ライセンス ガイダンス&してください](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
+詳細については、セキュリティとコンプライアンス [に関する Microsoft 365 ライセンス ガイダンス&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 情報 [バリア ポリシーを定義または編集するには、](information-barriers-policies.md)次のいずれかの役割が割り当てられている必要があります。
 

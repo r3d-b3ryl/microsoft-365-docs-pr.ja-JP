@@ -15,14 +15,13 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 767cd8dbb44da51f0d26844f761eee7d5862b753
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 48bb0f3d1a3a239025017fda261945094a3eda79
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432461"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126083"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターにおける Intune 管理者の役割
 

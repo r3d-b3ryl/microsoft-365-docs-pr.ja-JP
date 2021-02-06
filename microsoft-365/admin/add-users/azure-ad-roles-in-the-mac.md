@@ -15,14 +15,13 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 description: Microsoft 365 管理センターで Azure 管理者の役割を管理する。
-ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289095"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126107"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365管理センター のAzure Active Directory の役割について
 

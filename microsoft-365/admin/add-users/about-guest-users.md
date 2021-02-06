@@ -15,18 +15,17 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ゲスト ユーザーの一覧が Microsoft 365 管理センターに設定される方法について説明します。
-ms.openlocfilehash: 338b86d7f32eb2a2ecbacc3d7d1e00124c3804e4
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 7610e22be5cf229c9c0b71dd1282f8138452fe67
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751438"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126095"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 管理センターのゲスト ユーザー
 

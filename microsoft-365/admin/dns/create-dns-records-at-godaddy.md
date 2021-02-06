@@ -16,19 +16,18 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: ドメインを確認し、GoDaddy for Microsoft でメール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: fdd8688f848e676411e736a5be10a2d01dcce50b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126451"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>GoDaddy で Microsoft 用の DNS レコードを作成する
 
@@ -36,7 +35,7 @@ ms.locfileid: "49658478"
 
 使用している DNS ホスティング プロバイダーが GoDaddy の場合は、この記事に示す手順に従い、ドメインを確認して、メールや Skype for Business Online などの DNS レコードを設定します。
 
-GoDaddy でこれらのレコードを追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
+これらのレコードを GoDaddy で追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
 
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。

@@ -15,17 +15,16 @@ ms.collection:
 - commerce
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: 79702c369a097dbcbc8fe2319cd04663f9fe0441
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114779"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126575"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 

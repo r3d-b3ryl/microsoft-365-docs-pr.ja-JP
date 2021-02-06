@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 22b5a6353720f8fbee218c138a3c9d0dee444db9
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: ff2ef15f93cef5255e8c8113facf51b833eff77d
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114921"
+ms.locfileid: "50122362"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -113,7 +113,7 @@ Azure 組織の Intune デバイス構成プロファイルAD Microsoft Manage D
 
 **アドバイザリ**
 
-Microsoft マネージド デスクトップ デバイスまたはユーザーが含まれる構成ポリシーを含めなかったか確認します。 手順については [、「Microsoft Intune でカスタム設定を使用してプロファイルを作成する」を参照してください](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
+Microsoft マネージド デスクトップ デバイスまたはユーザーが含まれる構成ポリシーが含まれるので、ご確認ください。 手順については [、「Microsoft Intune でカスタム設定を使用してプロファイルを作成する」を参照してください](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
 
 
 
@@ -123,12 +123,12 @@ Microsoft マネージド デスクトップ デバイスは、Intune への登�
 
 **使用不可能**
 
-現在、Windows デバイスが Intune に登録されるのを防ぐために、少なくとも 1 つの登録制限ポリシーが構成されています。 「Microsoft マネージド デスクトップ ユーザー [を](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) 対象とする登録制限ポリシーごとに登録制限を設定する」の手順に従い **、Windows (MDM)** の設定を [許可] に変更 **します**。 ただし、個人所有の **Windows (MDM)** **デバイス** を [ブロック] に設定 **できます**。 
+現在、Windows デバイスが Intune に登録されるのを防ぐために、少なくとも 1 つの登録制限ポリシーが構成されています。 「Microsoft マネージド デスクトップ ユーザー [を](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) 対象とする登録制限ポリシーごとに登録制限を設定する」の手順に従い **、Windows (MDM)** 設定を [許可] に **変更します**。 ただし、個人所有の **Windows (MDM)** **デバイス** を [ブロック] に設定 **できます**。 
 
 
 ### <a name="enrollment-status-page"></a>[登録の状態] ページ
 
-現在、登録ステータス ページ (ESP) が有効になっています。 この機能の Microsoft マネージド デスクトップ パブリック プレビューに参加する場合は、この項目を無視できます。 詳細については [、「Autopilot での最初の実行エクスペリエンスと [登録の状態] ページ」を参照してください](../get-started/esp-first-run.md)。
+現在、登録ステータス ページ (ESP) が有効になっています。 この機能の Microsoft マネージド デスクトップ パブリック プレビューに参加する場合は、この項目を無視できます。 詳細については [、「Autopilot の初回実行エクスペリエンス](../get-started/esp-first-run.md)と [登録状態] ページ」を参照してください。
 
 **使用不可能**
 
@@ -157,7 +157,7 @@ ESP の既定のプロファイルは、[アプリとプロファイルの構成
 
 **アドバイザリ**
 
-条件付きアクセス ポリシーで多要素認証が必要になります。このポリシーにより、Microsoft マネージド デスクトップで Microsoft マネージド デスクトップ サービスが管理されるのを防ぐ可能性があります。 登録時に、Microsoft マネージド デスクトップ サービス アカウントを関連する条件付きアクセス ポリシーから除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 これらのサービス アカウントの詳細については、「標準の運用手順 [」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+条件付きアクセス ポリシーに対して多要素認証が必要になります。条件付きアクセス ポリシーによって、Microsoft マネージド デスクトップで Microsoft マネージド デスクトップ サービスを管理する妨げる可能性があります。 登録時に、Microsoft マネージド デスクトップ サービス アカウントを関連する条件付きアクセス ポリシーから除外し、新しい条件付きアクセス ポリシーを適用してこれらのアカウントへのアクセスを制限します。 これらのサービス アカウントの詳細については、「標準の運用手順 [」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **エラー**
 
@@ -176,7 +176,7 @@ Windows PowerShellは、Microsoft マネージド デスクトップ デバイ�
 
 **アドバイザリ**
 
-Azure Windows PowerShell内のスクリプトAD Microsoft Manage Desktop デバイスやユーザーを対象としなにされていないことを確認します。 PowerShell スクリプトを、すべてのユーザー、すべてのデバイス、または両方を対象に割り当てない。 Microsoft マネージド デスクトップ デバイスまたはユーザーを含AD Azure AD グループを対象とする Assignment を使用するようにポリシーを変更します。 詳細については、「Intune で [Windows 10 デバイスで PowerShell](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)スクリプトを使用する」を参照してください。
+Azure Windows PowerShellのスクリプトが、Microsoft ADデスクトップ デバイスやユーザーを対象としなにされていないことを確認します。 PowerShell スクリプトを、すべてのユーザー、すべてのデバイス、または両方を対象に割り当てない。 Microsoft マネージド デスクトップ デバイスまたはユーザーを含AD Azure AD グループを対象とする Assignment を使用するようにポリシーを変更します。 詳細については、「Intune で [Windows 10 デバイスで PowerShell](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)スクリプトを使用する」を参照してください。
 
 ### <a name="region"></a>Region
 
@@ -188,10 +188,10 @@ Azure AD組織の地域は、Microsoft マネージド デスクトップでは�
 
 **アドバイザリ**
 
-Azure 組織が位置する 1 つ以上の国AD Microsoft マネージド デスクトップではサポートされていません。 詳細については [、Microsoft マネージド デスクトップでサポートされている地域と言語を参照してください](../service-description/regions-languages.md)。
+組織の Azure ADがある国の 1 つ以上は、Microsoft マネージド デスクトップではサポートされていません。 詳細については [、Microsoft マネージド デスクトップでサポートされている地域と言語を参照してください](../service-description/regions-languages.md)。
 
 
-### <a name="security-baselines"></a>セキュリティベースライン
+### <a name="security-baselines"></a>セキュリティ基本計画
 
 セキュリティ基本ポリシーは、Microsoft マネージド デスクトップ デバイスを対象にしなけずにしてください。
 
@@ -212,7 +212,7 @@ Microsoft マネージド デスクトップ ユーザーに必要なアプリ�
 
 Microsoft マネージド デスクトップ ユーザーが持つアプリのインベントリを準備する必要があります。 これらのアプリは Intune で展開する必要があるから、既存の Intune アプリの再利用を評価します。 ポータル サイトの使用を検討します (「デバイスに [Intune ポータル](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) サイトをインストールする」と「登録状態ページ (ESP)」を参照)、ユーザーにアプリを配布します。 詳細については [、「Microsoft マネージド](apps.md) デスクトップのアプリ」と [「Autopilot](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)での初回実行時エクスペリエンス」および「登録状態ページ」を参照してください。
 
-Microsoft Endpoint Configuration Manager で Microsoft アカウントの担当者に、Intune に移行する準備ができているアプリや調整が必要なアプリを特定するクエリを求められます。
+Microsoft Endpoint Configuration Manager で Microsoft アカウント担当者にクエリを求め、Intune に移行する準備ができているアプリや調整が必要なアプリを特定できます。
 
 
 ### <a name="windows-hello-for-business"></a>Windows Hello for Business
@@ -238,7 +238,7 @@ Intune の "Windows 10 更新リング" ポリシーは、Microsoft マネージ
 
 **アドバイザリ**
 
-モダン Workplace **Devices -All** Azure AD グループから除外した更新リング ポリシーを確認します。 Azure AD ユーザー グループをこれらのポリシーに割り当てた場合は、Microsoft マネージド デスクトップ ユーザー (または同等のグループ) に追加する **Modern Workplace -All** Azure AD グループも除外している更新リング ポリシーを必ず除外してください。 手順については、「Intune での [Windows 10 ソフトウェア更新プログラムの管理」を参照してください](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 Modern **Workplace Devices -All** グループと **Modern Workplace - すべての** Azure AD グループは、Microsoft マネージド デスクトップに登録するときに作成されるグループなので、登録後にこのグループを除外するために戻る必要があります。
+モダン Workplace **Devices -All** Azure AD グループから除外した更新リング ポリシーを確認します。 これらのポリシーに Azure AD ユーザー グループを割り当てた場合は、Microsoft マネージド デスクトップ ユーザー (または同等のグループ) に追加する **Modern Workplace -All** Azure AD グループも除外している更新リング ポリシーを確認します。 手順については、「Intune での [Windows 10 ソフトウェア更新プログラムの管理」を参照してください](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 Modern **Workplace Devices -All** グループと **Modern Workplace - All** Azure AD グループは、Microsoft マネージド デスクトップに登録するときに作成するグループなので、登録後にこのグループを除外するために戻る必要があります。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory の設定
@@ -280,13 +280,13 @@ Microsoft マネージド デスクトップを使用するには、多数のラ
 Microsoft マネージド デスクトップを使用するために必要なライセンスの一部を持っている必要はありません。 詳細については [、Microsoft マネージド デスクトップテクノロジと](../intro/technologies.md) ライセンスの [詳細を参照してください](prerequisites.md#more-about-licenses)。
 
 
-### <a name="security-account-names"></a>セキュリティ アカウント名
+### <a name="microsoft-managed-desktop-service-accounts"></a>Microsoft マネージド デスクトップ サービス アカウント
 
-一部のセキュリティ アカウント名は、Microsoft マネージド デスクトップで作成された名前と競合する可能性があります。
+一部のアカウント名は、Microsoft マネージド デスクトップ サービスを管理するために Microsoft マネージド デスクトップによって作成されたアカウント名と競合する可能性があります。
 
 **使用不可能**
 
-Microsoft マネージド デスクトップで作成されたアカウント名と競合するアカウント名が少なくとも 1 つあります。 Microsoft アカウント担当者と一緒に、これらのアカウント名を除外します。
+Microsoft マネージド デスクトップで作成されたアカウント名と競合するアカウント名が少なくとも 1 つあります。 Microsoft アカウント担当者と一緒に、これらのアカウント名を除外します。 セキュリティ リスクを最小限に抑えるために、アカウント名は公開されません。 
 
 
 ### <a name="security-administrator-roles"></a>セキュリティ管理者ロール
@@ -317,12 +317,12 @@ Azure Active Directory のセキュリティの既定値により、Microsoft �
 
 **アドバイザリ**
 
-[SSPR の **選択]** 設定に Microsoft マネージド デスクトップ ユーザーが含まれていますが、Microsoft マネージド デスクトップ サービス アカウントは除外します。 SSPR が有効な場合、Microsoft マネージド デスクトップ サービス アカウントは期待通り動作しません。  
+SSPR の **選択した** 設定に Microsoft マネージド デスクトップ ユーザーが含まれていますが、Microsoft マネージド デスクトップ サービス アカウントは除外します。 SSPR が有効な場合、Microsoft マネージド デスクトップ サービス アカウントは期待通り動作しません。  
 
 
 ### <a name="standard-user-role"></a>標準ユーザー ロール
 
-グローバル管理者とデバイス管理者の Azure AD ロールが割り当てられているユーザー以外に、Microsoft マネージド デスクトップ ユーザーはローカル管理者特権のない標準ユーザーです。 その他のすべてのユーザーには、Microsoft マネージド デスクトップ デバイスの起動時に標準のユーザー ロールが割り当てられます。
+グローバル管理者とデバイス管理者の Azure AD ロールが割り当てられているユーザー以外に、Microsoft マネージド デスクトップ ユーザーは、ローカル管理者特権のない標準ユーザーです。 その他のすべてのユーザーには、Microsoft マネージド デスクトップ デバイスの起動時に標準のユーザー ロールが割り当てられます。
 
 **アドバイザリ**
 

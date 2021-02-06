@@ -16,7 +16,6 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Microsoft 365 でドメイン名を購入する方法について説明します。
-ms.openlocfilehash: 40fc44dfa3bc3e608b590157b7db423302af748d
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: d7215db61577968bb2b21f708bda9d42acd7e675
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126395"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
 
@@ -110,7 +109,7 @@ Microsoft 365 でドメインをセットアップするには、ドメインを
 ドメインを (ドメイン レジストラーで) 登録した後、管理者として Microsoft 365 にサインインし、メール アドレスや他のサービスで使用できるようドメインを設定します。
   
 > [!NOTE]
-> この記事の SharePoint Online パブリック Web サイト情報は、組織が 2015 年 3 月 9 日より前に Microsoft 365 を購入した場合にのみ適用されます。 
+> この記事の SharePoint Online パブリック Web サイトの情報は、組織が 2015 年 3 月 9 日より前に Microsoft 365 を購入した場合にのみ適用されます。 
 
 ## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Microsoft 365 に必要なすべての DNS レコードをサポートするドメイン レジストラー
 
