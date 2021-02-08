@@ -666,6 +666,8 @@
               href: themes-in-advanced-ediscovery.md
             - name: 関連モジュールを使用したデータ分析
               href: using-relevance.md
+            - name: 関連モジュールの廃止
+              href: relevance-module-retirement.md
         - name: ケース データをエクスポートする
           href: exporting-data-ediscover20.md
           items:
