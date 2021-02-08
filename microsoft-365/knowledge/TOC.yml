@@ -1,12 +1,12 @@
-- name: トピック エクスペリエンスを始める
+- name: Microsoft Viva の使用を開始する
   items:
-    - name: トピック エクスペリエンスの紹介
+    - name: Microsoft Viva について
       href: index.md
-    - name: トピック エクスペリエンスの概要
+    - name: Microsoft Viva の概要
       href: topic-experiences-overview.md
-    - name: トピック エクスペリエンスの発見とキュレーション
+    - name: Microsoft Viva の検出とキュレーション
       href: topic-experiences-discovery-curation.md
-    - name: トピック エクスペリエンスの役割
+    - name: Microsoft Viva のロール
       href: topic-experiences-roles.md
     - name: ユーザー環境の準備を行う
       href: topic-experiences-get-ready.md
@@ -14,9 +14,9 @@
   items:
     - name: トピックのセキュリティ
       href: topic-experiences-security-privacy.md
-    - name: トピック エクスペリエンスの計画
+    - name: トピックの計画
       href: plan-topic-experiences.md
-    - name: トピック エクスペリエンスを設定する
+    - name: トピックを設定する
       href: set-up-topic-experiences.md
     - name: トピックの検出を管理する
       href: topic-experiences-discovery.md
@@ -38,6 +38,8 @@
       href: edit-a-topic.md
     - name: セキュリティ トリミング
       href: topic-experiences-security-trimming.md
+    - name: トピックを検索する
+      href: search.md
 - name: 導入
   items:
     - name: 採用の推進を開始する
