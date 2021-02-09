@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3d4c72d78fc6a31ec3075d4e7a889e191e639829
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: b810d7b15ef47a33a0675086219d2193cea00f2e
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029376"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145021"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -46,19 +46,19 @@ ms.locfileid: "50029376"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `NetworkMessageId` | 文字列型 | Microsoft 365 によって生成される電子メールの一意識別子 |
 | `SenderFromAddress` | 文字列型 | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |
+| `SenderDisplayName` | 文字列型 | アドレス帳に表示される送信者の名前。通常は、名、ミドル ネームのイニシャル、姓または姓の組み合わせ |
+| `SenderObjectId` | 文字列型 | Azure AD の送信者のアカウントの一意の識別子 |
 | `RecipientEmailAddress` | 文字列型 | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
 | `RecipientObjectId` | 文字列型 | Azure AD の電子メール受信者の一意の識別子 |
 | `FileName` | 文字列型 | 記録されたアクションが適用されたファイルの名前 |
 | `FileType` | 文字列型 | ファイル拡張子の種類 |
 | `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `MalwareFilterVerdict` | 文字列型 | メールにマルウェアが含まれているかどうかに関する、メールのフィルター処理スタックの判定 (マルウェア、マルウェア以外) |
-| `MalwareDetectionMethod` | 文字列型 | 電子メール内のマルウェアを検出するために使用する方法: マルウェア対策エンジン、ファイル評価、安全な添付ファイル |
+| `MalwareDetectionMethod` | string | 電子メール内のマルウェアを検出するために使用する方法: マルウェア対策エンジン、ファイル評価、安全な添付ファイル |
+| `ThreatTypes` | string | 電子メールにマルウェア、フィッシング、その他の脅威が含まれているかどうかに関する、電子メール フィルター スタックからの判断 |
+| `ThreatNames` | string | マルウェアまたは他の脅威が検出された検出名 |
+| `DetectionMethods` | string | 電子メールで検出されたマルウェア、フィッシング、その他の脅威を検出するために使用される方法 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
-| `SenderDisplayName` | 文字列 | アドレス帳に表示される送信者の名前。通常は、名、ミドル ネームのイニシャル、姓または姓の組み合わせ |
-| `SenderObjectId` | 文字列 | Azure AD での送信者のアカウントの一意の識別子 |
-| `ThreatTypes` | 文字列 | 電子メールにマルウェア、フィッシング、その他の脅威が含まれているかどうかに関する、電子メール フィルター スタックからの判断 |
-| `ThreatNames` | 文字列 | マルウェアまたは他の脅威が検出された検出名 |
-| `DetectionMethods` | 文字列 | 電子メールで検出されたマルウェア、フィッシング、その他の脅威を検出するために使用される方法 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

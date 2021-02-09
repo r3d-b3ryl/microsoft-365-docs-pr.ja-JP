@@ -7,7 +7,6 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,21 +15,21 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: 自動インシデント対応, 調査, 修復, 脅威の保護
-ms.date: 11/05/2020
+ms.date: 01/29/2021
 description: Microsoft Defender for Office 365 での自動調査と対応の機能について説明します。
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 5ca9ea941d073c7b199678631a9063cfbeae8907
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 97cc2f6bcb066ff2d6f64254add3a57eb27b8828
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864902"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142551"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 での自動調査と対応のしくみ
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 セキュリティの警告がトリガーされると、セキュリティ運用チームがそれらのアラートを確認し、組織を保護するための手順を実行する必要があります。 場合によっては、セキュリティ運用チームが、トリガーされるアラートの量に圧倒される可能性があります。 Microsoft Defender for Office 365 の自動調査および対応 (AIR) 機能が役立ちます。
 
@@ -93,7 +92,4 @@ Office 365 向け Microsoft Defender の[](air-view-investigation-results.md)AIR
 ## <a name="next-steps"></a>次の手順
 
 - [AIR の使用を開始する](office-365-air.md)
-
-- [Microsoft 365 ロードマップにアクセスして、近日予定の予定とリリースを確認してください。](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
-- [Microsoft 365 Defender の自動調査および対応機能について説明します。](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [保留中または完了した修復アクションを表示する](air-review-approve-pending-completed-actions.md)

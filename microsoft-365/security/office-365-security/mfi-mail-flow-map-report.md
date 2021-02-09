@@ -11,20 +11,24 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでメール フロー マップを使用して、コネクタを使用したりコネクタを使用せずに組織とメールのフローを視覚化したり追跡したりする方法について学習できます。
+description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでメール フロー マップを使用して、コネクタを使用したりコネクタを使用せずに組織とメールがどのように流れるのかについて視覚化および追跡する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c07730f3abcec8905285cdfdf1579ffb71573ec1
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 87a5780bd2485ba6ad3b295c09a30a4d7fc34277
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029920"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150562"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター&フロー マップ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 セキュリティ **/コンプライアンス センター** の [](mail-flow-insights-v2.md)メール フロー ダッシュボード [](https://protection.office.com)のメール フロー マップ&、メールが組織を通過する方法に関する洞察が得られる。 この情報を使用して、パターンの学習、異常の特定、発生した問題の修正を行います。
 
@@ -46,18 +50,18 @@ ms.locfileid: "50029920"
 
   ![メール フロー マップ レポートの詳細ビュー](../../media/mfi-mail-flow-map-report-detail.png)
 
-レポート ビューで **[フィルター** ] をクリックすると、開始日と終了日で **日付範囲****を指定できます**。
+If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
 特定の日付範囲のレポートを 1 人または複数の受信者に電子メールで送信するには、[ダウンロードの要求] **をクリックします**。
 
-関連する分析情報が使用可能な場合は、メール フロー マップの下に表示されます (たとえば、可能なメール ループの分析 [情報を修正します](mfi-mail-loop-insight.md))。
+関連する分析情報が利用可能な場合は、メール フロー マップの下に表示されます (たとえば、可能なメール ループの分析 [情報を修正します](mfi-mail-loop-insight.md))。
 
 ## <a name="details-table-view-for-the-mail-flow-map"></a>メール フロー マップの詳細テーブル ビュー
 
 レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
 - **日付**
-- **カテゴリ**
+- **分類**
 - **コネクタ/サードパーティのサービス プロバイダー**
 - **送信者/受信者ドメイン**
 - **メッセージ数**
@@ -72,6 +76,6 @@ ms.locfileid: "50029920"
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 メール フロー ダッシュボードの他の分析情報については、セキュリティ/コンプライアンス センターの「メール [フロー&参照してください](mail-flow-insights-v2.md)。

@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: f7f6dcaa9c1e007f6b83f897539bdabe9faa0b96
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 459b0fd246455f46a1c1ff497379487de9fdb61d
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142267"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows および Office 展開ラボ キット
 
 Windows および Office 展開ラボ キットは、Windows 10 Enterprise と Microsoft 365 Apps for enterprise を実行しているデスクトップの展開と管理を計画、テスト、検証するのに役立ちます。 キットのラボでは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などによる説明が含まれています。
 
-このキットは、Windows 10 への Windows 8.1 アップグレードの準備をしている組織に強くお勧めします。 また、現在 Windows 10、Microsoft 365 Apps for enterprise (以前の Office 365 ProPlus)、または Office 2019 を使用している場合にも適用されます。 分離環境として、作成されるラボは、展開ツールの更新を探索し、展開関連の自動化をテストするのに最適です。
+このキットは、Windows 10 への Windows 8.1 アップグレードの準備をしている組織に強くお勧めします。 また、現在 Windows 10、Microsoft 365 Apps for enterprise (以前の Office 365 ProPlus)、または Office 2019 を使用している場合にも適用されます。 分離された環境として、結果のラボは、展開ツールの更新を探索し、展開関連の自動化をテストするのに最適です。
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
@@ -55,7 +55,7 @@ Windows および Office 展開ラボ キットは、Windows 10 Enterprise と M
 
 ### <a name="plan-and-prepare-infrastructure"></a>インフラストラクチャを計画および準備する 
 - Desktop Analytics 
-- クラウド管理ゲートウェイ & クラウド配布ポイント 
+- クラウド管理ゲートウェイ&クラウド配布ポイント 
 - テナントの接続、共同管理、およびワークロードの切り替え 
 - リモート アクセス (VPN) 
 
@@ -95,11 +95,11 @@ Windows および Office 展開ラボ キットは、Windows 10 Enterprise と M
 
 - 準備、展開、最適化
  
-## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>Windows and Office Deployment Lab Kit の場所
+## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>Windows と Office Deployment Lab Kit の場所
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-* インストール済みベースライン バージョン 2002 は、コンソール内更新プログラムを使用してバージョン 2010 に更新できます。 このコンテンツをダウンロードするには、広範な帯域幅のインターネット接続を使用し、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 キットの有効期限は 2021 年 2 月 7 日です。 新しいバージョンは、有効期限が切る前に公開されます。
+* インストール済みベースライン バージョン 2002 は、コンソール内更新プログラムを使用してバージョン 2010 に更新できます。 このコンテンツをダウンロードするには、広範な帯域幅のインターネット接続を使用し、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 キットの有効期限は 2021 年 2 月 11 日です。 新しいバージョンは、有効期限が切る前に公開されます。
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 

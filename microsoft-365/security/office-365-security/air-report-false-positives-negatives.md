@@ -1,9 +1,9 @@
 ---
-title: Microsoft Defender for Office 365 で自動調査を行った後の誤検知または誤否定を報告する方法
-description: Office 365 の Microsoft Defender で、何らかの問題があるか、空軍によって誤って検出されましたか? 分析のために誤検知または誤検知を Microsoft に送信する方法について説明します。
-keywords: 自動化、調査、警告、トリガー、アクション、修復、誤検知、false 負
+title: Microsoft Defender での 365 年の自動調査に続き、誤検知または検出Officeする方法
+description: Microsoft Defender for Office 365 で AIR によって検出された何かが見つからないか、誤って検出されましたか? 分析のために誤検知または検出検出を Microsoft に送信する方法について説明します。
+keywords: 自動化, 調査, アラート, トリガー, アクション, 修復, 誤検知, 検出検出
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,88 +11,77 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 09/29/2020
+ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom:
 - autoir
-ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.openlocfilehash: 4ccc023a72ca450b1f0a433410206ccce59cb5f1
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142983"
 ---
-# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能の誤検知/ネガを報告する方法
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
+# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および対応機能で誤検知/陰性を報告する方法
 
 **適用対象:**
 - Microsoft Defender for Office 365
 
-[Office 365 ミスの自動化された調査と応答 (AIR) 機能](automated-investigation-response-office.md)が、誤って検出されたのでしょうか。 この問題を解決するには、以下の手順を実行します。 以下のことを実行できます。
+[Office 365](automated-investigation-response-office.md)の自動調査および対応 (AIR) 機能で何かが見つからないか誤って検出された場合は、セキュリティ運用チームが問題を解決するために実行できる手順があります。 このようなアクションには、次のものが含まれます。
 
-- [False 正/負の値を Microsoft に報告し](#report-a-false-positivenegative-to-microsoft-for-analysis)ます。
-- [通知を調整し](#adjust-an-alert-to-prevent-false-positives-from-recurring) ます (必要な場合)。そして
-- [実行された修復操作を元に戻し](#undo-a-remediation-action)ます。
+- [Microsoft に誤検知/陰性を報告する](#report-a-false-positivenegative-to-microsoft-for-analysis)。
+- [アラートの調整](#adjust-an-alert-to-prevent-false-positives-from-recurring) (必要な場合)そして
+- [実行された修復アクションを元に戻す](#undo-a-remediation-action)。
 
 この記事をガイドとして使用します。
 
-## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>False 正/負の値を分析のために Microsoft に報告する
+## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>誤検知/陰性を分析のために Microsoft に報告する
 
-Microsoft Defender for Office 365 で、電子メールメッセージ、電子メールの添付ファイル、電子メールメッセージ内の URL、または Office ファイルの URL のいずれかが失われた場合は、 [フィッシング、url、およびファイルを microsoft For office 365 のスキャンに送信](admin-submission.md)できます。
+Office 365 用 Microsoft Defender の AIR が電子メール メッセージ、電子メール添付ファイル、電子メール メッセージ内の URL、または Office ファイル内の URL を見逃した場合は、スパム、フィッシング、URL、ファイルの疑いがあるファイルを [Office 365](admin-submission.md)スキャンのために Microsoft に送信できます。
 
-また [、マルウェア分析のために Microsoft にファイルを送信](https://www.microsoft.com/wdsi/filesubmission)することもできます。
+マルウェア分析のために [Microsoft にファイルを送信することができます](https://www.microsoft.com/wdsi/filesubmission)。
 
-## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>警告を調整して誤検知が繰り返されないようにする
+## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>誤検知が繰り返されるのを防ぐためにアラートを調整する
 
-正当な使用によって警告がトリガーされた場合、または警告が不正確な場合は、 [Cloud App Security ポータルで通知を管理](https://docs.microsoft.com/cloud-app-security/managing-alerts)できます。
+警告が正当な使用によってトリガーされた場合、またはアラートが不正確な場合は、Cloud App Security ポータルでアラート [を管理できます](https://docs.microsoft.com/cloud-app-security/managing-alerts)。
 
-Office 365 に加えて、 [エンドポイントに Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) を使用している組織で、ファイル、IP アドレス、URL、またはドメインがデバイスでマルウェアとして扱われている場合は、そのデバイス [の "許可" アクションを使用してカスタムインジケーターを作成](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)できます。
+組織で Office 365 に加えて [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) を使用している場合、安全なデバイスでもファイル、IP アドレス、URL、またはドメインがマルウェアとして扱われる場合は、デバイスに対して "許可 ["](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)アクションを使用してカスタム インジケーターを作成できます。
 
 ## <a name="undo-a-remediation-action"></a>修復アクションを元に戻す
 
-ほとんどの場合、ウイルス対策アクションが電子メールメッセージ、電子メールの添付ファイル、または URL に対して実行され、そのアイテムが実際には脅威ではない場合、セキュリティ操作チームは修復アクションを取り消すことができ、誤検知が定期的に行われないようにするための手順を実行することができます。 操作を取り消すには、 [脅威エクスプローラー](#undo-an-action-using-threat-explorer) または [ [操作] タブ](#undo-an-action-using-the-actions-tab-for-an-investigation) を使用して調査を行うことができます。
+ほとんどの場合、メール メッセージ、電子メールの添付ファイル、または URL に対して修復アクションが実行され、アイテムが実際には脅威ではない場合、セキュリティ運用チームは修復アクションを元に戻し、誤検知が繰り返し発生しなからなされるのを防ぐための手順を実行できます。 脅威エクスプローラーまたは [ [操作]](#undo-an-action-using-threat-explorer) タブを使用して調査を [行](#undo-an-action-in-the-action-center) い、操作を元に戻すことができます。
 
 > [!IMPORTANT]
-> 次のタスクを実行する前に、必要なアクセス許可があることを確認してください。
+> 次のタスクを実行する前に、必要なアクセス許可を持っている必要があります。
 
-### <a name="undo-an-action-using-threat-explorer"></a>脅威エクスプローラーを使用してアクションを元に戻す
+### <a name="undo-an-action-using-threat-explorer"></a>脅威エクスプローラーを使用して操作を元に戻す
 
-脅威エクスプローラーを使用すると、セキュリティ運用チームは、アクションによって影響を受ける電子メールを検索し、アクションを元に戻す可能性があります。
-
-****
+脅威エクスプローラーを使用すると、セキュリティ運用チームはアクションの影響を受ける電子メールを見つけ、操作を元に戻す可能性があります。
 
 |シナリオ|元に戻すオプション|詳細情報|
 |---|---|---|
-|電子メールメッセージがユーザーの迷惑メールフォルダーにルーティングされた|<ul><li>メッセージをユーザーの削除済みアイテムフォルダーに移動する</li><li>ユーザーの受信トレイにメッセージを移動する</li><li>メッセージを削除</li></ul>|[Office 365 で配信された悪意のある電子メールを検索して調査する](investigate-malicious-email-that-was-delivered.md)|
-|電子メールメッセージまたはファイルが検疫された|<ul><li>メールまたはファイルを解放する</li><li>メールまたはファイルを削除する</li></ul>|[管理者として検疫済みメッセージを管理する](manage-quarantined-messages-and-files.md)|
+|電子メール メッセージがユーザーの迷惑メール フォルダーにルーティングされた|- メッセージをユーザーの [削除済みアイテム] フォルダーに移動する<br/>- メッセージをユーザーの受信トレイに移動する<br/>- メッセージを削除する|[Office 365 で配信された悪意のあるメールを検索して調査する](investigate-malicious-email-that-was-delivered.md)|
+|メール メッセージまたはファイルが検疫された|- 電子メールまたはファイルを解放する<br/>- メールまたはファイルを削除する|[管理者として検疫済みメッセージを管理する](manage-quarantined-messages-and-files.md)|
 |
 
-### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>[操作] タブを使用して、調査を行うアクションを元に戻す
+### <a name="undo-an-action-in-the-action-center"></a>アクション センターで操作を元に戻す
 
-アクションセンターでは、実行された修復アクションを確認し、アクションを元に戻す可能性があります。
+アクション センターでは、実行された修復アクションを確認し、アクションを元に戻す可能性があります。
 
-1. <https://protection.office.com> に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
+1. Microsoft 365 セキュリティ センター ( ) に移動します [https://security.microsoft.com](https://security.microsoft.com) 。
+2. ナビゲーション ウィンドウで、アクション センターを **選択します**。 
+3. 完了したアクション **の** 一覧を表示するには、[履歴] タブを選択します。
+4. アイテムを選択します。 そのフライアウト ウィンドウが開きます。 
+5. フライアウト ウィンドウで、[元に戻す] を **選択します**。 (元に戻す操作のみを元に戻すボタンがあります。
 
-2. [ **脅威管理** \> の **調査**] に移動します。
+## <a name="see-also"></a>こちらもご覧ください
 
-3. 調査の一覧で、アイテムの ID の横にある [ **新しいウィンドウで開く** ] アイコンを選択します。
-
-4. [ **操作** ] タブを選択します。
-
-5. 状態が [**完了**] であるアイテムを選択し、[**判断**] 列で [**承認済み**] などのリンクを探します。 これにより、アクションの詳細を含むフライアウトが開きます。
-
-6. アクションを元に戻すには、[ **修復の削除**] を選択します。
-
-## <a name="related-articles"></a>関連記事
-
-[Microsoft Defender for Office 365](office-365-atp.md)
-
-[Microsoft Defender for Office 365 の空気](office-365-air.md)
+- [Microsoft Defender for Office 365](office-365-atp.md)
+- [Microsoft Defender for Office 365 での自動調査](office-365-air.md)

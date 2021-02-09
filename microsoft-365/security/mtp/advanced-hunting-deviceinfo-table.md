@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e445902ee83b734f84d02607905413a14c016b8f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6462096a6c1b44ee11299f652a54f261d0355523
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931280"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145369"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -51,10 +51,12 @@ ms.locfileid: "49931280"
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
 | `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 など、同じファミリ内のバリエーションを含む特定のオペレーティング システムを示します。 |
 | `OSBuild` | string | コンピューターで実行されているオペレーティング システムのビルド バージョン |
-| `IsAzureADJoined` | ブール値 | コンピューターが Azure Active Directory に参加しているかどうかを示すブールインジケーター |
+| `IsAzureADJoined` | boolean | コンピューターが Azure Active Directory に参加しているかどうかを示すブールインジケーター |
+| `DeviceObjectId` | string | Azure AD のデバイスの一意の識別子 |
 | `LoggedOnUsers` | string | イベントの時点でコンピューターにログオンしているすべてのユーザーの一覧 (JSON 配列形式) |
 | `RegistryDeviceTag` | string | レジストリを介して追加されたコンピューター タグ |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
+|`AdditionalFields` | string | JSON 配列形式でのイベントに関する追加情報 |
 | `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
 | `MachineGroup` | string | コンピューターのコンピューター グループ。 このグループは、役割ベースのアクセス制御によってコンピューターへのアクセスを決定するために使用されます。 |
 

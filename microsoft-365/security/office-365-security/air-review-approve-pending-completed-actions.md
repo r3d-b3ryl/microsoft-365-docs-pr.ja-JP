@@ -1,14 +1,13 @@
 ---
-title: 自動化された調査と応答で、保留中の修復アクションを確認および承認する
-keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護
+title: Microsoft Defender for Office 365 での修復アクションの確認と管理
+keywords: AIR, autoIR, ATP, 自動化, 調査, 対応, 修復, 脅威, 高度, 脅威, 保護
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
+ms.topic: how-to
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,45 +15,61 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender for Office 365 プラン2の自動調査および応答機能の修復アクションについて説明します。
-ms.openlocfilehash: 9a1fdb4bec5168dfcd816dbce7da01f930e38ae1
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Microsoft Defender for Office 365 プラン 2 の自動調査および対応機能の修復アクションについて説明します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.date: 01/29/2021
+ms.openlocfilehash: bcff8f12133ea16e3d91e293943be1593eaf9659
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142695"
 ---
-# <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 の自動調査の後に、保留中または完了した修復アクションを表示する
+# <a name="review-and-manage-remediation-actions-in-office-365"></a>Office 365 での修復アクションの確認と管理
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+メールやグループ作業のコンテンツ&調査を自動化すると、悪意のある、疑わしいなど、特定の修復アクションが作成されます。 Microsoft Defender for Office 365 では、修復アクションには次のものが含まれます。
+- URL のブロック (クリック時)
+- メール メッセージまたはクラスターのソフト削除
+- 電子メールまたはメールの添付ファイルを確認する
+- 外部メール転送を無効にする
 
+これらの修復アクションは、セキュリティ運用チームが承認しない限り、実行されるのではありません。 保留中のアクションをできるだけ早く確認して承認し、自動調査が時間内に完了することを推奨します。 場合によっては、修復アクションを元に戻すことができます。
 
+## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) する
 
-![AIR の調査処理 ページ](../../media/air-investigationactionspage.png)
+1. Microsoft 365 セキュリティ センターに移動し [https://security.microsoft.com](https://security.microsoft.com) 、サインインします。
+2. ナビゲーション ウィンドウで、アクション センターを **選択します**。
+3. [ **保留中] タブ** で、承認待ちアクションの一覧を確認します。
+4. リストからアイテムを選択します。 そのフライアウト ウィンドウが開きます。 
+5. フライアウト ウィンドウで情報を確認し、次のいずれかの手順を実行します。
+   - [ **調査を開く] ページを選択** して、調査の詳細を表示します。
+   - [ **承認] を** 選択して保留中のアクションを開始します。
+   - 保留中 **のアクション** が実行されるのを防ぐには、[拒否] を選択します。
 
-## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) します。
+## <a name="undo-one-remediation-action"></a>1 つの修復アクションを元に戻す
 
-[調査の詳細](air-view-investigation-results.md)を表示している間に、保留中の修復処理を承認または拒否することができます。 自動化された調査が完了するように、この手順をできるだけ早く実行することをお勧めします。
+1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
+2. [履歴 **] タブ** で、元に戻す操作を選択します。
+3. 画面の右側のウィンドウで、[元に戻す] を **選択します**。
 
-> [!IMPORTANT]
-> 修復アクションを承認または拒否するには、適切なアクセス許可が必要です。 [AIR 機能を使用するには、必要なアクセス許可を](office-365-air.md#required-permissions-to-use-air-capabilities)参照してください。
+## <a name="undo-multiple-remediation-actions"></a>複数の修復操作を元に戻す
 
-1. <https://protection.office.com> に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
+1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
+2. [履歴 **] タブ** で、元に戻す操作を選択します。 同じアクションの種類を持つアイテムを選択してください。 フライアウト ウィンドウが開きます。
+3. フライアウト ウィンドウで、[元に戻す] を選択します。
 
-2. [ **脅威管理** \> の **調査**] に移動します。
+## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイスにわたる検疫からファイルを削除するには
 
-3. 調査の一覧で、[ **ID** ] 列のアイテムを選択します。
-
-4. [ **操作** ] タブを選択します。
-
-5. リストからアイテムを選択します。 (これにより、[承認] ボタンと [拒否] ボタンが有効になります)。
-
-6. 選択したアイテムの利用可能な情報を確認し、その操作を承認または拒否します。
-   - **承認** は修復を開始することを許可します。
-   - **却下** にはその他のアクションはありません
+1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
+2. [履歴 **] タブ** で、操作の種類が検疫ファイルであるファイルを **選択します**。
+3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を選択 **します**。
 
 ## <a name="next-steps"></a>次の手順
 
-- [Office 365 の自動調査の詳細と結果](air-view-investigation-results.md)
+- [脅威エクスプローラーの使用](threat-explorer.md)
+- [自動調査および対応機能で誤検知/陰性を報告する方法](air-report-false-positives-negatives.md)
 
-- [脅威エクスプローラーを使用する](threat-explorer.md)
+## <a name="see-also"></a>こちらもご覧ください
+
+- [Office 365 で自動調査の詳細と結果を表示する](air-view-investigation-results.md)

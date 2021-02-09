@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7457084d49c5a9fef4ef79abc7702c6b473efcd2
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145303"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -35,7 +35,7 @@ ms.locfileid: "49932306"
 **適用対象:**
 - Microsoft 365 Defender
 
-高度な検索スキーマの表には `AlertEvidence` 、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity からのアラートに関連付けられたさまざまなエンティティ (ファイル、IP[](advanced-hunting-overview.md)アドレス、URL、ユーザー、デバイス) に関する情報が含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度な検索スキーマの表には `AlertEvidence` 、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity からのアラートに関連付けられたさまざまなエンティティ (ファイル、IP[](advanced-hunting-overview.md)アドレス、URL、ユーザー、またはデバイス) に関する情報が含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -59,6 +59,7 @@ ms.locfileid: "49932306"
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `AccountObjectId` | string | Azure Active Directory のアカウントの一意識別子 |
+| `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `DeviceId` | string | サービス内のデバイスの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `LocalIP` | string | 通信中に使用されるローカル デバイスに割り当てられた IP アドレス |
@@ -68,6 +69,9 @@ ms.locfileid: "49932306"
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
 | `ProcessCommandLine` | string | 新しいプロセスの作成に使用するコマンド ライン |
 | `AdditionalFields` | string | JSON 配列形式でのイベントに関する追加情報 |
+| `RegistryKey` |string | 記録されたアクションが適用されたレジストリ キー |
+| `RegistryValueName` |string | 記録されたアクションが適用されたレジストリ値の名前 |
+| `RegistryValueData` |string | 記録されたアクションが適用されたレジストリ値のデータ |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

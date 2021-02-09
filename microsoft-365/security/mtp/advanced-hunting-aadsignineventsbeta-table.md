@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 174db150920d2d95c043bb5d6e5a4593ea1ea39d
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145429"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -35,7 +35,7 @@ ms.locfileid: "49931040"
 
 >[!IMPORTANT]
 > この `AADSignInEventsBeta` テーブルは現在ベータ版であり、Azure Active Directory (AAD) サインイン イベントをハントするために短期で提供されています。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。<br><br>
-> Azure セキュリティ センターの統合 Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできるが、Office 用 Microsoft Defender、Id 用 Microsoft Defender、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
+> Azure Security Center の統合 Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできるが、Office 用 Microsoft Defender、Id 用 Microsoft Defender、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
 
  
 
@@ -61,35 +61,35 @@ ms.locfileid: "49931040"
 | `AccountObjectId`                 | string        | Azure AD のアカウントの一意の識別子                                                                                                                                       |
 | `AccountUpn`                      | string        | アカウントのユーザー プリンシパル名 (UPN)                                                                                                                                            |
 | `IsExternalUser`                  | int        | サインインしたユーザーが外部ユーザーかどうかを示します。 指定可能な値: -1 (設定しない)、0 (外部ではない)、1 (外部)。                                                                   |
-| `IsGuestUser`                     | ブール値       | サインインしたユーザーがテナントのゲストかどうかを示します                                                                                                                  |
+| `IsGuestUser`                     | boolean       | サインインしたユーザーがテナントのゲストかどうかを示します                                                                                                                  |
 | `AlternateSignInName`             | string        | Azure アカウントにサインインするユーザーのオンプレミスのユーザー プリンシパル名 (UPN) AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | 日付型        | 最後にサインインしたユーザーがパスワードを変更した日時                                                                                                              |
 | `ResourceDisplayName`             | string        | アクセスされたリソースの表示名                                                                                                                                               |
-| `ResourceId`                      | string        | アクセスされるリソースの一意の識別子                                                                                                                                          |
+| `ResourceId`                      | string        | アクセスされたリソースの一意の識別子                                                                                                                                          |
 | `ResourceTenantId`                | string        | アクセスされたリソースのテナントの一意の識別子                                                                                                                            |
 | `DeviceName`                      | string        | コンピューターの完全修飾ドメイン名 (FQDN)                                                                                                                                   |
 | `AadDeviceId`                     | string   |      Azure AD のデバイスの一意の識別子                                                                                                                                                                               |
 | `OSPlatform`                      | string        | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。  |
 | `DeviceTrustType`                 | string        | サインインしたデバイスの信頼の種類を示します。 管理対象デバイスのシナリオの場合のみ。 有効な値は、Workplace、AzureAd、ServerAd です。                                     |
 | `IsManaged`                       | int       | サインインを開始したデバイスが管理対象デバイス (1) か、管理対象デバイスではないかを示します (0)                                                                         |
-| `IsCompliant`                     | int       | サインインを開始したデバイスが準拠している (1) か非準拠 (0) かを示します。                                                                                       |
+| `IsCompliant`                     | int       | サインインを開始したデバイスが準拠 (1) か非準拠 (0) かを示します。                                                                                       |
 | `AuthenticationProcessingDetails` | string        | 認証プロセッサの詳細                                                                                                                                          |
 | `AuthenticationRequirement`       | string        | サインインに必要な認証の種類。 可能な値: multiFactorAuthentication (MFA が必要でした) と singleFactorAuthentication (MFA は必要ありません)。                |
 | `TokenIssuerType`                 | int        | トークン発行者が Azure Active Directory (0) または Active Directory フェデレーション サービス (1) かどうかを示します。                                                                             |
-| `RiskLevelAggregated`                       | int        | サインイン中の集計されたリスク レベル。 指定できる値は、0 (集計されたリスク レベルが設定されていない)、1 (なし)、10 (低)、50 (中)、または 100 (高) です。                               |
+| `RiskLevelAggregated`                       | int        | サインイン中の集計されたリスク レベル。 指定できる値は、0 (集計リスク レベルが設定されていない)、1 (なし)、10 (低)、50 (中)、または 100 (高) です。                               |
 | `RiskDetails`                      | int        | サインインしたユーザーの危険な状態に関する詳細                                                                                                                            |
-| `RiskState`                       | int        | 危険なユーザー状態を示します。 指定可能な値は、0 (なし)、1 (安全確認済み)、2 (修復済み)、3 (却下)、4 (危険な場合)、5 (侵害が確認済み) です。                                |
+| `RiskState`                       | int        | 危険なユーザー状態を示します。 指定可能な値は、0 (なし)、1 (安全確認済み)、2 (修復済み)、3 (却下)、4 (危険な場合)、または 5 (侵害が確認済み) です。                                |
 | `UserAgent`                       | string        | Web ブラウザーまたは他のクライアント アプリケーションからのユーザー エージェント情報                                                                                                             |
 | `ClientAppUsed`                   | string        | 使用されているクライアント アプリを示します。                                                                                                                                                       |
 | `Browser`                         | string        | サインインに使用されるブラウザーのバージョンに関する詳細                                                                                                                            |
 | `ConditionalAccessPolicies`       | string        | サインイン イベントに適用される条件付きアクセス ポリシーの詳細                                                                                                             |
-| `ConditionalAccessStatus`         | int        | サインインに適用される条件付きアクセス ポリシーの状態。 指定できる値は、0 (ポリシーが適用されている)、1 (ポリシーの適用が失敗した場合)、または 2 (ポリシーが適用されない) です。      |
+| `ConditionalAccessStatus`         | int        | サインインに適用される条件付きアクセス ポリシーの状態。 指定できる値は、0 (ポリシーが適用)、1 (ポリシーの適用が失敗)、または 2 (ポリシーが適用されない) です。      |
 | `IPAddress`                       | string        | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス                                                                                                  |
-| `CountryCode`                     | string        | クライアント IP アドレスが地理的に位置する国を示す 2 文字のコード                                                                                                    |
+| `Country`                     | string        | クライアント IP アドレスが地理的に位置する国を示す 2 文字のコード                                                                                                    |
 | `State`                           | string        | サインインが発生した状態 (使用可能な場合)                                                                                                                                      |
-| `City`                            | string        | アカウント ユーザーが位置する都市                                                                                                                                              |
-| `Latitude`                        | string        | サインイン場所の北から南の座標                                                                                                                              |
-| `Longitude`                       | string        | サインイン位置の東から西への座標                                                                                                                                |
+| `City`                            | string        | アカウント ユーザーが位置する市区町町ラ                                                                                                                                              |
+| `Latitude`                        | string        | サインイン位置の北から南の座標                                                                                                                              |
+| `Longitude`                       | string        | サインイン位置の東から西の座標                                                                                                                                |
 | `NetworkLocationDetails`          | string        | サインイン イベントの認証プロセッサのネットワークの場所の詳細                                                                                                       |
 | `RequestId`                       | string        |  要求の一意識別子                                                                                                                                                   |
 |`ReportId` | string | イベントの一意識別子 |

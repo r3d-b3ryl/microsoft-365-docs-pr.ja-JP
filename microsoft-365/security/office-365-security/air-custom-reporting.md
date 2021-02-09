@@ -1,6 +1,6 @@
 ---
-title: 自動化された調査と対応によるカスタムレポートソリューションの使用
-keywords: SIEM、API、AIR、自動赤外線、ATP、自動調査、統合、カスタムレポート
+title: 自動調査と対応を備えたカスタム レポート ソリューション
+keywords: SIEM, API, AIR, autoIR, ATP, 自動調査, 統合, カスタム レポート
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,6 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,38 +15,34 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 自動化された調査と応答を、カスタムまたはサードパーティのレポートソリューションと統合する方法について説明します。
-ms.date: 09/29/2020
+description: 自動調査と対応をカスタムまたはサード パーティ製のレポート ソリューションに統合する方法について説明します。
+ms.date: 01/29/2021
 ms.custom:
 - air
-ms.openlocfilehash: 7b0b0570624b2e0dd40d40b178951a747698afe2
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3d8363ada4de60d37cb0d247d8b1af74df4226d1
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142977"
 ---
-# <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>カスタムまたはサードパーティのレポートソリューションに管理アクティビティ API を使用する
+# <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 向けカスタム またはサード パーティ製のレポート ソリューション
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+Microsoft [Defender for Office 365](office-365-atp.md)では、自動調査に関する [詳細情報を取得できます](air-view-investigation-results.md)。 ただし、一部の組織では、カスタムまたはサード パーティ製のレポート ソリューションも使用します。 自動調査に関する情報をそのようなソリューション[](office-365-air.md)と統合する場合は、Office 365 マネージメント アクティビティ API を使用できます。
 
-
-[Office 365 の Microsoft Defender](office-365-atp.md)では、[自動調査に関する詳細情報](air-view-investigation-results.md)を入手できます。 ただし、組織によっては、カスタムまたはサードパーティのレポートソリューションを使用する場合もあります。 このようなソリューションで自動調査に関する情報を統合する必要がある組織では、Office 365 Management Activity API を使用できます。
-
-これを設定するには、次のリソースを使用します。
-
-****
+統合を構成するリソース
 
 |関連情報|説明|
-|---|---|
-|[Office 365 管理 API の概要](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)|Office 365 Management Activity API は、Microsoft 365 および Azure Active Directory のアクティビティログから、さまざまなユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を提供します。|
-|[Office 365 管理 API の使用を開始する](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)|Office 365 管理 API は、Azure AD を使用して、アプリケーションが Microsoft 365 データにアクセスするための認証サービスを提供します。 これを設定するには、この記事の手順に従います。|
-|[Office 365 管理アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)|Office 365 Management Activity API を使用して、Microsoft 365 および Azure AD のアクティビティログから、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を取得することができます。 この機能の詳細については、この記事を参照してください。|
-|[Office 365 管理アクティビティ API のスキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|Office 365 Management Activity API で利用可能な特定の種類のデータについて理解するために、 [共通スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) の概要と、 [office 365 および脅威の調査および応答スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) の概要を理解します。|
+|:---|:---|
+|[Office 365 管理 API の概要](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)|Office 365 管理アクティビティ API は、Microsoft 365 と Azure Active Directory のアクティビティ ログから、さまざまなユーザー、管理者、システム、およびポリシー アクションとイベントに関する情報を提供します。|
+|[Office 365 管理 API の使用を開始する](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)|Office 365 管理 API は、Azure AD を使用して、アプリケーションが Microsoft 365 データにアクセスする認証サービスを提供します。 この記事の手順に従って設定します。|
+|[Office 365 管理アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)|Office 365 管理アクティビティ API を使用して、Microsoft 365 および Azure AD アクティビティ ログから、ユーザー、管理者、システム、およびポリシー アクションとイベントに関する情報を取得できます。 この機能の詳細については、この記事を参照してください。|
+|[Office 365 管理アクティビティ API のスキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|Office 365 マネージメント アクティビティ API を通じて利用できる特定の種類のデータについて学習するには、共通スキーマと[Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)用 Defender と脅威の調査と対応スキーマの概要を説明します。 [](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)|
 |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Microsoft Defender for Office 365](office-365-atp.md)
-
-- [Microsoft 365 Defender での自動調査と応答](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft 365 Defender での自動調査と対応](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

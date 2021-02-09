@@ -8,29 +8,34 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender for Office 365 の保護機能に対して標準ポリシー設定と厳密ポリシー設定を適用する方法について説明します。
-ms.openlocfilehash: a77201835652fb36822fbc603f5211c1f7a9521b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f57b388716eca02741ba48b3e6b47b7cf9f28884
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659252"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150093"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender のセキュリティ ポリシーを Office 365 用に事前に設定する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-事前設定されたセキュリティ ポリシーは、推奨されるスパム、マルウェア、およびフィッシングポリシーを一度にユーザーに適用する一元的な場所を提供します。 ポリシー設定は構成できません。 代わりに、ユーザーは弊社が設定し、作業を中断することなく有害なコンテンツをユーザーから遠く離すバランスを取るデータセンターでの観察とエクスペリエンスに基づいておきます。
+事前設定されたセキュリティ ポリシーは、推奨されるスパム、マルウェア、およびフィッシング ポリシーを一度にユーザーに適用する一元的な場所を提供します。 ポリシー設定は構成できません。 代わりに、ユーザーは弊社が設定し、作業を中断することなく有害なコンテンツをユーザーから遠近に保つ間のバランスを取るデータセンターでの観察とエクスペリエンスに基づいて行われます。
 
 このトピックの残りの部分では、事前設定されたセキュリティ ポリシーと、その構成方法について説明します。
 
-## <a name="what-preset-security-policies-are-made-of"></a>事前設定されたセキュリティ ポリシーの種類
+## <a name="what-preset-security-policies-are-made-of"></a>事前設定されたセキュリティ ポリシーの構成
 
 事前設定されたセキュリティ ポリシーは、次の要素で構成されます。
 
@@ -45,7 +50,7 @@ ms.locfileid: "49659252"
 プロファイルは、保護のレベルを決定します。 次のプロファイルを使用できます。
 
 - **標準保護**: ほとんどのユーザーに適したベースライン保護プロファイルです。
-- **厳密な保護**: 選択したユーザー (高い値のターゲットまたは優先度のユーザー) に対して、より積極的な保護プロファイル。
+- **厳密な** 保護 : 選択したユーザー (高い値のターゲットまたは優先度のユーザー) に対して、より積極的な保護プロファイル。
 
 プロファイルが適用されるユーザーまたは適用されていないユーザーを決定する条件と例外でルールを使用します。
 
@@ -61,21 +66,21 @@ ms.locfileid: "49659252"
 
 事前設定されたセキュリティ ポリシーでは、EOP と Microsoft Defender for Office 365 のさまざまな保護機能の対応するポリシーが使用されます。 これらのポリシーは、Standard Protection _または_ **Strict Protection** の事前設定されたセキュリティ ポリシーをユーザーに割り当てる **と** 作成されます。 これらのポリシーは変更できない。
 
-- **Exchange Online Protection (EOP)** ポリシー : これには、Exchange Online メールボックスを持つ Microsoft 365 組織と、Exchange Online メールボックスのないスタンドアロンの EOP 組織が含まれます。
+- **Exchange Online Protection (EOP)** ポリシー : これには、Exchange Online メールボックスを持つ Microsoft 365 組織と、Exchange Online メールボックスのないスタンドアロン EOP 組織が含まれます。
 
-  - [Standard](configure-your-spam-filter-policies.md) Preset Security Policy and Strict **Preset Security Policy** という名前 **のスパム対策ポリシー**。
-  - [Standard](configure-anti-malware-policies.md) Preset Security Policy and Strict **Preset Security Policy** という名前 **のマルウェア対策ポリシー**。
+  - [Standard](configure-your-spam-filter-policies.md) Preset Security Policy および Strict **Preset Security Policy という** 名前 **のスパム対策ポリシー**。
+  - [Standard](configure-anti-malware-policies.md) Preset Security Policy and Strict Preset Security **Policy** という名前の **マルウェア対策ポリシー**。
   - Standard Preset Security Policy および Strict Preset **Security** **Policy** (spoof settings) という名前の [EOP](set-up-anti-phishing-policies.md#spoof-settings)フィッシング対策ポリシー。
 
 - **Microsoft Defender for Office 365** ポリシー: これには、Microsoft 365 E5 または Defender for Office 365 アドオン サブスクリプションを持つ組織が含まれます。
 
-  - Standard **Preset** Security Policy と Strict **Preset** Security Policy という名前の Office 365 用の Microsoft Defender のフィッシング対策ポリシー。次のものが含まれます。
+  - Microsoft Defender の Office 365 のフィッシング対策ポリシーには、Standard **Preset Security Policy** と Strict **Preset Security Policy** という名前が付けされています。次のものが含まれます。
 
     - EOP [フィッシング詐欺](set-up-anti-phishing-policies.md#spoof-settings) 対策ポリシーで使用可能なスプーフィング設定と同じ。
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高度なフィッシングのしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Standard Preset Security Policy and](set-up-atp-safe-links-policies.md) Strict Preset Security **Policy** という **名前の安全なリンク ポリシー**。
+  - [Standard Preset Security Policy および](set-up-atp-safe-links-policies.md)Strict Preset Security Policy **という****名前の安全なリンク ポリシー**。
 
   - [Standard Preset Security Policy and](set-up-atp-safe-attachments-policies.md) Strict Preset Security **Policy** という **名前の安全な添付ファイル ポリシー**。
 
@@ -83,7 +88,7 @@ EOP 保護は、Microsoft Defender とは異なるユーザーに適用して、
 
 ### <a name="policy-settings-in-preset-security-policies"></a>事前設定されたセキュリティ ポリシーのポリシー設定
 
-保護プロファイルのポリシー設定は変更できない。 Standard **および Strict** ポリシー **の設定値** については [、「365](recommended-settings-for-eop-and-office365-atp.md)セキュリティを強化する EOP および Microsoft Defender の推奨Office説明されています。
+保護プロファイルのポリシー設定は変更できない。 Standard **および Strict** ポリシー **設定** の値については [、「365](recommended-settings-for-eop-and-office365-atp.md)セキュリティのための EOP と Microsoft Defender の推奨Office説明されています。
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>事前設定されたセキュリティ ポリシーおよび他のポリシーの優先順位
 
@@ -104,9 +109,9 @@ EOP 保護は、Microsoft Defender とは異なるユーザーに適用して、
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります。
+- この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります:
   - 事前設定されたセキュリティ ポリシーを構成するには、組織の管理役割グループまたはセキュリティ管理者役割グループのメンバー **である** 必要があります。
-  - 事前に設定されたセキュリティ ポリシーへの読み取り専用アクセスでは、グローバル 閲覧者役割グループのメンバー **である** 必要があります。
+  - 事前に設定されたセキュリティ ポリシーへの読み取り専用アクセスの場合は、グローバル 閲覧者役割グループのメンバー **である** 必要があります。
 
   詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
@@ -114,7 +119,7 @@ EOP 保護は、Microsoft Defender とは異なるユーザーに適用して、
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>セキュリティ/コンプライアンス センター&使用して、ユーザーに事前設定されたセキュリティ ポリシーを割り当てる
 
-1. セキュリティ/コンプライアンス センター&、脅威 **管理ポリシーの** 事前設定のセキュリティ ポリシー \>  \> **に移動します**。
+1. セキュリティ & コンプライアンス センターで、[脅威の管理 **ポリシーの** 事前設定] セキュリティ ポリシー \>  \> **に移動します**。
 
 2. [**標準の保護] または [****厳密な保護] で、[** 編集] を **クリックします**。
 
@@ -126,11 +131,11 @@ EOP 保護は、Microsoft Defender とは異なるユーザーに適用して、
       - **受信者は次のメンバーです。**
       - **受信者のドメインは次のとおりです。**
 
-      条件は 1 回のみ使用できますが、条件に複数の値を指定できます。 同じ条件の複数の値は、OR ロジック (たとえば、or) を使用 _\<recipient1\>_ します _\<recipient2\>_ 。
+      条件は 1 回しか使用できますが、条件に複数の値を指定できます。 同じ条件の複数の値は、OR ロジック (または) を使用 _\<recipient1\>_ します _\<recipient2\>_ 。
 
-   2. 選択した条件は、影付きのセクションに表示されます。 このセクションで、[Any of **these] ボックスをクリック** します。 しばらく待つ場合は、値を選択できるようリストが表示されます。 または、値の入力を開始してリストをフィルター処理し、値を選択できます。 必要な回数だけこの手順を繰り返します。 個々の値を削除するには、値の **[削除]** ![ ](../../media/scc-remove-icon.png) アイコンをクリックします。 条件全体を削除するには、条件の **[削除**] ![ ](../../media/scc-remove-icon.png) アイコンをクリックします。
+   2. 選択した条件は、影付きのセクションに表示されます。 このセクションで、[Any of **these] ボックスをクリック** します。 しばらく待つ場合は、値を選択できるようリストが表示されます。 または、リストをフィルター処理して値を選択する値の入力を開始できます。 必要な回数だけこの手順を繰り返します。 個々の値を削除するには、値の **[削除]** ![ ](../../media/scc-remove-icon.png) アイコンをクリックします。 条件全体を削除するには、条件の **[削除**] ![ ](../../media/scc-remove-icon.png) アイコンをクリックします。
 
-   3. 別の条件を追加するには、[条件の追加 **] をクリック** し、残りの条件から選択します。 条件が異なる場合は、AND ロジック (例: _\<recipient1\>_ and) を使用します _\<member of group 1\>_ 。
+   3. 別の条件を追加するには、[条件の **追加] をクリック** し、残りの条件から選択します。 条件が異なると、AND ロジック (たとえば、and) が _\<recipient1\>_ 使用されます _\<member of group 1\>_ 。
 
       前の手順を繰り返して条件に値を追加し、必要な回数、または条件が足りないまでこの手順を繰り返します。
 
