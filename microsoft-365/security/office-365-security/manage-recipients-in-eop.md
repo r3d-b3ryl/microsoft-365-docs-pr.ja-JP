@@ -8,33 +8,36 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) のさまざまな種類の受信者オブジェクトについて学習できます。
-ms.openlocfilehash: c277365fb8a5c43108faa15a375af39ecc086eed
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) でさまざまな種類の受信者オブジェクトについて学習できます。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 20d1c3e77c916e2c04a9c35eceb410859eb85ba0
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201738"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150269"
 ---
-# <a name="manage-recipients-in-standalone-eop"></a><span data-ttu-id="3cb05-103">スタンドアロン EOP で受信者を管理する</span><span class="sxs-lookup"><span data-stu-id="3cb05-103">Manage recipients in standalone EOP</span></span>
+# <a name="manage-recipients-in-standalone-eop"></a><span data-ttu-id="1cd64-103">スタンドアロン EOP で受信者を管理する</span><span class="sxs-lookup"><span data-stu-id="1cd64-103">Manage recipients in standalone EOP</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+<span data-ttu-id="1cd64-104">**適用対象**</span><span class="sxs-lookup"><span data-stu-id="1cd64-104">**Applies to**</span></span>
+-  [<span data-ttu-id="1cd64-105">Exchange Online Protection スタンドアロン</span><span class="sxs-lookup"><span data-stu-id="1cd64-105">Exchange Online Protection standalone</span></span>](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-<span data-ttu-id="3cb05-104">スタンドアロン Exchange Online Protection (EOP) Exchange Online メールボックスを使用していない組織は、次の種類の受信者をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="3cb05-104">Standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support the following types of recipients:</span></span>
+<span data-ttu-id="1cd64-106">Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織は、次の種類の受信者をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="1cd64-106">Standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support the following types of recipients:</span></span>
 
-- <span data-ttu-id="3cb05-105">**メールユーザー**: メールユーザーは、スタンドアロン EOP 組織のユーザーアカウントの基本的な種類です。</span><span class="sxs-lookup"><span data-stu-id="3cb05-105">**Mail users**: Mail users are the fundamental type of user accounts in your standalone EOP organization.</span></span> <span data-ttu-id="3cb05-106">メールユーザーは、EOP 組織にログオン資格情報を持っていますが、外部の電子メールアドレス (自分のメールボックスは EOP 組織の外にあります) を持っています。</span><span class="sxs-lookup"><span data-stu-id="3cb05-106">Mail users have logon credentials in your EOP organization, but they have external email addresses (their mailboxes are located outside of your EOP organization).</span></span>
+- <span data-ttu-id="1cd64-107">**メール ユーザー**: メール ユーザーは、スタンドアロン EOP 組織の基本的な種類のユーザー アカウントです。</span><span class="sxs-lookup"><span data-stu-id="1cd64-107">**Mail users**: Mail users are the fundamental type of user accounts in your standalone EOP organization.</span></span> <span data-ttu-id="1cd64-108">メール ユーザーは EOP 組織内のログオン資格情報を持っていますが、外部の電子メール アドレスを持っています (メール ユーザーのメールボックスは EOP 組織の外部に保存されています)。</span><span class="sxs-lookup"><span data-stu-id="1cd64-108">Mail users have logon credentials in your EOP organization, but they have external email addresses (their mailboxes are located outside of your EOP organization).</span></span>
 
-  <span data-ttu-id="3cb05-107">EOP でのメール ユーザーの管理方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3cb05-107">For more information about managing mail users in EOP, see [Manage mail users in EOP](manage-mail-users-in-eop.md).</span></span>
+  <span data-ttu-id="1cd64-109">EOP でのメール ユーザーの管理方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1cd64-109">For more information about managing mail users in EOP, see [Manage mail users in EOP](manage-mail-users-in-eop.md).</span></span>
 
-- <span data-ttu-id="3cb05-108">**グループ**: 次の種類のグループを作成できます。</span><span class="sxs-lookup"><span data-stu-id="3cb05-108">**Groups**: You can create the following types of groups:</span></span>
+- <span data-ttu-id="1cd64-110">**グループ**: 次の種類のグループを作成できます。</span><span class="sxs-lookup"><span data-stu-id="1cd64-110">**Groups**: You can create the following types of groups:</span></span>
 
-  - <span data-ttu-id="3cb05-109">配布グループ</span><span class="sxs-lookup"><span data-stu-id="3cb05-109">Distribution groups</span></span>
-  - <span data-ttu-id="3cb05-110">メールが有効なセキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="3cb05-110">Mail-enabled security groups</span></span>
+  - <span data-ttu-id="1cd64-111">配布グループ</span><span class="sxs-lookup"><span data-stu-id="1cd64-111">Distribution groups</span></span>
+  - <span data-ttu-id="1cd64-112">メールが有効なセキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="1cd64-112">Mail-enabled security groups</span></span>
 
-  <span data-ttu-id="3cb05-111">EOP でのグループの管理方法については、「[EOP でグループを管理する](manage-groups-in-eop.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3cb05-111">For more information about managing groups in EOP, see [Manage groups in EOP](manage-groups-in-eop.md).</span></span>
+  <span data-ttu-id="1cd64-113">EOP でのグループの管理方法については、「[EOP でグループを管理する](manage-groups-in-eop.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1cd64-113">For more information about managing groups in EOP, see [Manage groups in EOP](manage-groups-in-eop.md).</span></span>
