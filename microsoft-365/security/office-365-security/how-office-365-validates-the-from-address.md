@@ -1,5 +1,5 @@
 ---
-title: EOP がフィッシング詐欺を防ぐために From アドレスを検証する方法
+title: EOP がフィッシングを防止するために From アドレスを検証する方法
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - OWC150
@@ -18,23 +17,29 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection (EOP) によって受け付けまたは拒否される電子メール アドレスの種類と、フィッシングOutlook.comに役立つ情報を確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25fbca8fa5d264a212ac25e2035bffde0819383d
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e7c2cbec49082fbded857dde13f73516fd3e0fd5
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659656"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167517"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP がフィッシングを防止するために From アドレスを検証する方法
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-フィッシング攻撃は、すべての電子メール組織にとって絶え間ない脅威です。 攻撃者は、スプーフィング [された (偽造された)](anti-spoofing-protection.md)送信者の電子メール アドレスを使用する以外に、インターネット標準に違反する差出人アドレスの値を使用する場合があります。 この種のフィッシングを防止するために、Exchange Online Protection (EOP) と Outlook.com では、この記事で説明するように、RFC 準拠の差出人アドレスを含める受信メッセージが必要になります。 この実施は、2017 年 11 月に有効になっています。
+フィッシング攻撃は、すべての電子メール組織に対する絶え間ない脅威です。 攻撃者は、スプーフィング [された (偽造された)](anti-spoofing-protection.md)送信者の電子メール アドレスを使用する以外に、インターネット標準に違反する差出人アドレスの値を使用する場合があります。 この種のフィッシングを防止するために、Exchange Online Protection (EOP) と Outlook.com では、この記事で説明するように、RFC 準拠の差出人アドレスを含める受信メッセージが必要になります。 この実施は 2017 年 11 月に有効になっています。
 
 **注**:
 
-- この記事で説明したように、From アドレスの形式が正しい組織からメールを定期的に受信する場合は、最新のセキュリティ標準に準拠するように電子メール サーバーを更新するよう組織に勧めします。
+- この記事の説明に従って From アドレスの形式が正しい組織からメールを定期的に受信する場合は、最新のセキュリティ標準に準拠するように電子メール サーバーを更新するようこれらの組織に勧めします。
 
 - 関連する Sender フィールド ([代理送信] および [郵送リスト] で使用) は、これらの要件の影響を受け取らない。 詳細については、次のブログ投稿を参照してください。メールの「送信者」を参照すると、どのような[意味がありますか?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)
 
@@ -65,7 +70,7 @@ From アドレスは、いくつかの RFC (RFC 5322 セクション 3.2.3、3.4
 
   - 1 つのメール アドレスのみ。
   - 角かっこはスペースで区切らはお勧めしません。
-  - メール アドレスの後にテキストを追加しない。
+  - メール アドレスの後に追加のテキストを含めない。
 
 ## <a name="examples-of-valid-and-invalid-from-addresses"></a>有効な From アドレスと無効な From アドレスの例
 
@@ -97,11 +102,11 @@ From アドレスは、いくつかの RFC (RFC 5322 セクション 3.2.3、3.4
 
 - `From: Sender, Example <sender.example@contoso.com>` (表示名にはコンマが含まれますが、二重引用符で囲む必要はありません)。
 
-- `From: "Microsoft 365 <sender@contoso.com>"` (値全体が誤って二重引用符で囲まれている。
+- `From: "Microsoft 365 <sender@contoso.com>"` (値全体が誤って二重引用符で囲まれます)。)
 
 - `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (表示名は表示されますが、電子メール アドレスは角かっこで囲む必要があります)。
 
-- `From: Microsoft 365<sender@contoso.com>` (表示名と左の角かっこの間にはスペースはありません。
+- `From: Microsoft 365<sender@contoso.com>` (表示名と左の角かっこの間にはスペースはありません)。
 
 - `From: "Microsoft 365"<sender@contoso.com>` (終了二重引用符と左の角かっこの間にはスペースはありません。
 
@@ -113,7 +118,7 @@ From アドレスは、いくつかの RFC (RFC 5322 セクション 3.2.3、3.4
 
 - このドメインの NULL MX レコードは、1 つのピリオドで構成されます。
 
-例:
+次に例を示します。
 
 ```text
 noreply.contoso.com IN MX .
@@ -129,6 +134,6 @@ NULL MX の公開の詳細については [、RFC 7505 を参照](https://tools.
 
 Microsoft 365 から送信する送信メールの From アドレス要件を上書きできない。 また、サポートOutlook.com、どのような種類のオーバーライドも許可されていません。
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Microsoft 365 でのサイバー犯罪を防止して保護するその他の方法
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Microsoft 365 のサイバー犯罪を防止して保護するその他の方法
 
 フィッシング、スパム、データ侵害、その他の脅威に対して組織を強化する方法の詳細については、「ビジネス プラン向け [Microsoft 365](../../admin/security-and-compliance/secure-your-business-data.md)をセキュリティで保護するトップ 10 の方法」を参照してください。

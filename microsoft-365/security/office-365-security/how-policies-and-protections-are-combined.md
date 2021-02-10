@@ -9,24 +9,29 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) の保護のアプリケーションの順序、および保護ポリシーの優先度の値によって適用されるポリシーがどのように決定されるのかについて説明します。
-ms.openlocfilehash: a18234344e1100f3b6a03c10e970c8195e53e7df
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7f3d4a607f702349d3a8e43c1eceba5ecbb697d7
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760568"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167481"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>メール保護の順序と優先順位
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、受信電子メールに複数の形式の保護のフラグが設定される場合があります。 たとえば、すべての Microsoft 365 ユーザーが利用できる EOP の組み込みのフィッシング対策ポリシーや、Office 365 のお客様が Microsoft Defender で利用できるより堅牢なフィッシング対策ポリシーなどです。 メッセージは、マルウェア、スパム、フィッシングなどの複数の検出スキャンも通過します。このすべてのアクティビティを考えると、どのポリシーが適用されるのかについて、混乱が生じる可能性があります。
 
@@ -75,4 +80,4 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 
 - 少ない数のユーザーに適用するポリシーに高い優先度を割り当て、多数のユーザーに適用するポリシーに低い優先度を割り当てる。 既定のポリシーは常に最後に適用されます。
 - 優先度の高いポリシーを、優先度の低いポリシーよりも厳密な設定またはより特殊な設定に構成します。
-- 使用するカスタム ポリシーの数を少なくする (より厳密な設定またはより特殊な設定を必要とするユーザーに対してだけカスタム ポリシーを使用する) の使用を検討します。
+- 使用するカスタム ポリシーを少なくする (より厳密な設定またはより特殊な設定を必要とするユーザーに対してだけカスタム ポリシーを使用する) の使用を検討します。

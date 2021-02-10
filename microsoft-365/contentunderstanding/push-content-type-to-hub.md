@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-ms.openlocfilehash: 89c03a70da364bd4b945debc64de02255dec15e1
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 22d146b1d376bab134e82ad7d1313cb7881ca45b
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50144973"
 ---
 # <a name="push-content-types-to-a-hub"></a>コンテンツ タイプをハブにプッシュする
 
@@ -28,7 +28,7 @@ ms.locfileid: "49975717"
 </br>
 
 
-重要なコンテンツ タイプを SharePoint ライブラリとリストでより一貫して利用できるようにするために、選択したハブにそれらをプッシュできます。 コンテンツ タイプをプッシュすることで、ハブに関連付けられたサイトで作成された新しいリストとライブラリ、およびハブに追加された新しいサイトにそれらが自動的に追加されます。
+重要なコンテンツ タイプを SharePoint ライブラリとリストでより一貫して利用できるようにするために、選択したハブにそれらをプッシュできます。 コンテンツ タイプをプッシュすることで、ハブに関連付けられたサイトで作成された新しいリストとライブラリ、およびハブに追加された新しいサイトにそれらが自動的に追加されます。 この機能には、[SharePoint Syntex](index.md) ライセンスが必要です。
 
 この機能を使用するには、プッシュされるコンテンツ タイプがすでに公開されている必要があります。
 

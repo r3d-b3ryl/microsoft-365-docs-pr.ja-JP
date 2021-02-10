@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,17 +17,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のスパム対策ポリシーで使用できる高度なスパム フィルター (ASF) 設定について説明します。
-ms.openlocfilehash: 92d5e58937b539bf2be8d6d2c541f985562b7007
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ec316c98befada7a793f525be909ba0b8fa5e3ae
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659620"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176053"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP の高度なスパム フィルター (ASF) 設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > スパム対策ポリシーで現在使用可能な ASF 設定は、廃止中です。 スパム対策ポリシーでは、これらの設定を使用することをお勧めします。 これらの ASF 設定の機能は、フィルタリング スタックの他の部分に組み込まれる中です。 詳細については [、「EOP スパム対策ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
@@ -70,7 +75,7 @@ ASF 設定ごとに、スパム対策ポリシーで次のオプションを使�
     - **NDR バックスカター**(*MarkAsSpamNdrBackscatter*)
     - **SPF レコード: hard fail** (*MarkAsSpamSpfRecordHardFail*)
 
-  - 同じテスト モードアクションが、Test に設定 *されている* ASF 設定すべてに適用 **されます**。 ASF 設定ごとに異なるテスト モードアクションを構成できません。
+  - 同じテスト モードアクションが、Test に設定 *されている* ASF のすべての設定に適用 **されます**。 ASF 設定ごとに異なるテスト モードアクションを構成できません。
 
 ## <a name="increase-spam-score-settings"></a>スパム スコアの設定を増やす
 
@@ -78,21 +83,21 @@ ASF 設定ごとに、スパム対策ポリシーで次のオプションを使�
 
 ****
 
-|スパム対策ポリシー設定|内容|追加された X ヘッダー|
+|スパム対策ポリシー設定|説明|追加された X ヘッダー|
 |---|---|---|
 |**リモート サイトへのイメージ リンク** <p> *IncreaseScoreWithImageLinks*|リモート サイトへの HTML タグ リンクを含むメッセージ `<Img>` (たとえば、http を使用) はスパムとしてマークされます。|`X-CustomSpam: Image links to remote sites`|
 |**別のポートに対する URL リダイレクト** <p> *IncreaseScoreWithRedirectToOtherPort*|80 (HTTP)、8080 (代替 HTTP)、または 443 (HTTPS) 以外の TCP ポートにリダイレクトするハイパーリンクを含むメッセージは、スパムとしてマークされます。|`X-CustomSpam: URL redirect to other port`|
 |**URL 内の数値 IP アドレス** <p> *IncreaseScoreWithNumericIps*|数値ベースの URL (通常は IP アドレス) を含むメッセージは、スパムとしてマークされます。|`X-CustomSpam: Numeric IP in URL`|
-|**.biz Web サイトまたは .info Web サイトへの URL** <p> *IncreaseScoreWithBizOrInfoUrls*|メッセージの本文 `.biz` に `.info` 含まれるメッセージまたはリンクがスパムとしてマークされます。|`X-CustomSpam: URL to .biz or .info websites`|
+|**.biz Web サイトまたは .info Web サイトへの URL** <p> *IncreaseScoreWithBizOrInfoUrls*|メッセージの本文 `.biz` に `.info` 含まれるメッセージまたはリンクは、スパムとしてマークされます。|`X-CustomSpam: URL to .biz or .info websites`|
 |
 
-## <a name="mark-as-spam-settings"></a>迷惑メールの設定としてマークする
+## <a name="mark-as-spam-settings"></a>迷惑メール設定としてマークする
 
 次の ASF 設定では、検出されたメッセージの SCL を 9に設定します。これは、信頼度の高いスパム フィルターの判断と、スパム対策ポリシーの対応するアクションに対応します。
 
 ****
 
-|スパム対策ポリシー設定|内容|追加された X ヘッダー|
+|スパム対策ポリシー設定|説明|追加された X ヘッダー|
 |---|---|---|
 |**空メッセージ** <p> *MarkAsSpamEmptyMessages*|件名がないメッセージ、メッセージ本文にコンテンツがないメッセージ、添付ファイルがないメッセージは、信頼度の高いスパムとしてマークされます。|`X-CustomSpam: Empty Message`|
 |**HTML 内の JavaScript または VBScript** <p> *MarkAsSpamJavaScriptInHtml*|HTML で JavaScript または Visual Basic Script Edition を使用するメッセージは、信頼度の高いスパムとしてマークされます。 <p> これらのスクリプト言語は、電子メール メッセージで使用され、特定のアクションが自動的に実行されます。|`X-CustomSpam: Javascript or VBscript tags in HTML`|
@@ -103,6 +108,6 @@ ASF 設定ごとに、スパム対策ポリシーで次のオプションを使�
 |**HTML 内の Web バグ** <p> *MarkAsSpamWebBugsInHtml*|Web バグ (Web ビーコンとも呼 *ばれる)* は、メッセージが受信者によって読み取られたかどうかを判断するために電子メール メッセージで使用されるグラフィック要素 (多くの場合、1 ピクセル分の小さい要素) です。 <p> Web バグを含むメッセージは、信頼度の高いスパムとしてマークされます。 <p> 正当なニュースレターでは Web バグが使用される可能性があります。ただし、多くの場合、これをプライバシーの侵害と見なしています。 |`X-CustomSpam: Web bug`|
 |**機密用語の適用** <p> *MarkAsSpamSensitiveWordList*|Microsoft は、不快なメッセージに関連付けられている単語の動的なリストを保持していますが、編集できません。 <p> 件名またはメッセージ本文に機密性の高い単語の一覧の単語が含まれるメッセージは、信頼度の高いスパムとしてマークされます。|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF レコード:Hard Fail** <p> *MarkAsSpamSpfRecordHardFail*|送信元電子メール ドメインの DNS の SPF Sender Policy Framework (SPF) レコードで指定されていない IP アドレスから送信されたメッセージは、信頼度の高いスパムとしてマークされます。 <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: SPF Record Fail`|
-|**条件付き Sender ID フィルター処理:Hard Fail** <p> *MarkAsSpamFromAddressAuthFail*|条件付き Sender ID チェックに失敗したメッセージは、スパムとしてマークされます。 <p> この設定では、SPF チェックと Sender ID チェックを組み合わせ、偽造された送信者を含むメッセージ ヘッダーから保護します。 <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: SPF From Record Fail`|
-|**NDR バックスキャター** <p> *MarkAsSpamNdrBackscatter*|*バックスカターは* 、メール メッセージ内の偽造された送信者によって引き起こされた、使い方の良い配信以外のレポート (NDRs またはバウンス メッセージとも呼ばれる) です。 詳細については、「 [バックスカター メッセージと EOP」を参照してください](backscatter-messages-and-eop.md)。 <p> 正当なNDRS が配信され、バックスカターがスパムとしてマークされるので、次の環境でこの設定を構成する必要があります。 <ul><li>Exchange Online メールボックスを持つ Microsoft 365 組織。</li><li>EOP を介して送信電子メール *をルーティングする* オンプレミスの電子メール組織。</li></ul> <p> オンプレミスのメールボックスへの受信電子メールを保護するスタンドアロン EOP 環境では、この設定をオンまたはオフにすると、次の結果になります。 <ul><li> **オン**: 正当なNDRs が配信され、バックスカターがスパムとしてマークされます。</li><li>**オフ**: 正当なNDRs とバックスカターは、通常のスパム フィルタリングを通過します。 ほとんどの正当なNDRs は、元のメッセージ送信者に配信されます。 すべてではないが、一部のバックスカターは信頼度の高いスパムとしてマークされます。 定義上、バックスカターはスプーフィングされた送信者にのみ配信され、元の送信者には配信されません。</li></ul> <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: Backscatter NDR`|
+|**条件付き Sender ID フィルター処理:Hard Fail** <p> *MarkAsSpamFromAddressAuthFail*|条件付き Sender ID チェックに失敗したメッセージは、スパムとしてマークされます。 <p> この設定は、SPF チェックと Sender ID チェックを組み合わせ、偽造された送信者を含むメッセージ ヘッダーから保護します。 <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: SPF From Record Fail`|
+|**NDR バックスキャター** <p> *MarkAsSpamNdrBackscatter*|*バックスカター* は、メール メッセージ内の偽造された送信者によって引き起こされた、使い方の良い配信以外のレポート (NDRs またはバウンス メッセージとも呼ばれる) です。 詳細については、「 [バックスカター メッセージと EOP」を参照してください](backscatter-messages-and-eop.md)。 <p> 正当なNDRS が配信され、バックスカターがスパムとしてマークされるので、次の環境でこの設定を構成する必要があります。 <ul><li>Exchange Online メールボックスを持つ Microsoft 365 組織。</li><li>EOP を介して送信電子メール *をルーティングする* オンプレミスの電子メール組織。</li></ul> <p> オンプレミスのメールボックスへの受信電子メールを保護するスタンドアロン EOP 環境では、この設定をオンまたはオフにすると、次の結果になります。 <ul><li> **オン**: 正当なNDRs が配信され、バックスカターがスパムとしてマークされます。</li><li>**オフ**: 正当なNDRs とバックスカターは、通常のスパム フィルタリングを通過します。 ほとんどの正当なNDRs は、元のメッセージ送信者に配信されます。 すべてではないが、一部のバックスカターは、信頼度の高いスパムとしてマークされます。 定義上、バックスカターはスプーフィングされた送信者にのみ配信され、元の送信者には配信されません。</li></ul> <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: Backscatter NDR`|
 |

@@ -19,16 +19,20 @@ description: Microsoft 365 の自動調査中および自動調査後に、結�
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ebfa8bb7060b633bdb48c77bc661477ad3e201b
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 36cce42d0986cc793753d247d97315616f86f986
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142515"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175603"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 での自動調査の詳細と結果
 
-Office [](office-365-air.md) [365](office-365-atp.md)の Microsoft Defender で自動調査が行われると、その調査に関する詳細は、自動調査プロセス中および自動調査後に確認できます。 必要なアクセス許可がある場合は、セキュリティ センターでこれらの詳細を表示できます。 調査の詳細では、最新の状態と、保留中のアクションを承認する機能が提供されます。
+**適用対象**
+- [Microsoft Defender for Office 365 プラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+Office [](office-365-air.md) [365](office-365-atp.md)の Microsoft Defender で自動調査が行われると、その調査に関する詳細は、自動調査プロセス中および自動調査後に確認できます。 必要なアクセス許可がある場合は、Microsoft 365 セキュリティ センターでこれらの詳細を表示できます。 調査の詳細では、最新の状態と、保留中のアクションを承認する機能が提供されます。
 
 > [!TIP]
 > Microsoft 365 セキュリティ センターの新しい統合調査ページをご覧ください。 詳細については、「([新規!)」を参照してください。統合された調査ページ。](../mtp/mtp-autoir-results.md#new-unified-investigation-page)

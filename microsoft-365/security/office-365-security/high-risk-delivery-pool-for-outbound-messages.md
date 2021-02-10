@@ -8,57 +8,62 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 データセンター内の電子メールサーバーの評価を保護するために、配信プールを使用する方法について説明します。
-ms.openlocfilehash: b3016be7c1887536fe3e742b5ab4ec598b6a5f89
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 配信プールを使用して、Microsoft 365 データセンター内の電子メール サーバーの評判を保護する方法について説明します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 5480916f55fc180a6f08d3c420cb92c730e4065b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201491"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167541"
 ---
 # <a name="outbound-delivery-pools"></a>送信方向の配信のプール
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft 365 データセンター内の電子メールサーバーは、一時的にスパムを送信している可能性があります。 たとえば、Microsoft 365 を介して送信メールを送信する社内電子メール組織、または Microsoft 365 アカウントを侵害したマルウェアまたは悪意のあるスパム攻撃。 また、攻撃者は Microsoft 365 転送を経由してメッセージを中継することで、検出を回避しています。
+Microsoft 365 データセンターの電子メール サーバーは、一時的にスパムを送信したとして有悪な場合があります。 たとえば、Microsoft 365 経由で送信メールを送信するオンプレミスの電子メール組織でのマルウェアや悪意のあるスパム攻撃や、Microsoft 365 アカウントの侵害などです。 攻撃者は、Microsoft 365 の転送を介してメッセージを中継して検出を回避することもできます。
 
-これらのシナリオでは、影響を受ける Microsoft 365 datacenter サーバーの IP アドレスが、サードパーティのブロックリストに表示されることがあります。 [宛先電子メール] これらのブロックリストを使用する組織は、それらのメッセージソースからの電子メールを拒否します。
+これらのシナリオでは、影響を受ける Microsoft 365 データセンター サーバーの IP アドレスがサード パーティ製のブロック リストに表示される可能性があります。 これらのブロック リストを使用する送信先の電子メール組織は、それらのメッセージ ソースからの電子メールを拒否します。
 
-## <a name="high-risk-delivery-pool"></a>高リスク配信プール
-これを防ぐために、スパムであると判断された、または、 [サービス](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) または [送信スパムポリシー](configure-the-outbound-spam-policy.md) の送信制限を超えている Microsoft 365 datacenter サーバーからのすべての送信メッセージは、 _高リスク配信プール_を経由して送信されます。
+## <a name="high-risk-delivery-pool"></a>危険度の高い配信プール
+これを防止するために、スパムと判断された、またはサービスまたは送信スパム ポリシーの送信制限を超えている Microsoft 365 データセンター サーバー [](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)からの送信メッセージ [](configure-the-outbound-spam-policy.md)はすべて、危険度の高い配信プールを介して送信 _されます。_
 
-高リスク配信プールは、"低品質" メッセージを送信するためにのみ使用される送信電子メールの個別の IP アドレスプールです (たとえば、スパムや [バックスキャター](backscatter-messages-and-eop.md))。 高リスク配信プールを使用すると、送信電子メールの通常の IP アドレスプールがスパムを送信するのを防ぐことができます。 送信電子メール用の通常の IP アドレスプールは、"高品質" メッセージを送信するという評価を維持します。これにより、IP アドレスが IP 禁止一覧に表示される可能性が低くなります。
+高リスク配信プールは、"低品質" メッセージ (スパムやバックスカターなど) の送信にのみ使用される送信電子メール用の個別の IP アドレス [プールです](backscatter-messages-and-eop.md)。 危険度の高い配信プールを使用すると、送信電子メールの通常の IP アドレス プールがスパムを送信するのを防ぐのに役立ちます。 送信電子メール用の通常の IP アドレス プールは、"高品質" メッセージを送信する評判を維持します。このため、これらの IP アドレスが IP ブロック リストに表示される可能性が低下します。
 
-高リスク配信プールの IP アドレスが IP 禁止一覧に配置される本当の可能性は残っていますが、これは仕様です。 多くの電子メール組織は高リスク配信プールからのメッセージを受け付けないため、目的の受信者への配信は保証されません。
+リスクの高い配信プール内の IP アドレスが IP ブロック リストに配置される可能性は非常に高いですが、これは設計上の問題です。 多くの電子メール組織は危険度の高い配信プールからのメッセージを受け入れないので、目的の受信者への配信は保証されません。
 
-詳細については、「 [送信スパムの制御](outbound-spam-controls.md)」を参照してください。
+詳細については、「送信スパム [を制御する」を参照してください](outbound-spam-controls.md)。
 
 > [!NOTE]
-> 送信元の電子メールドメインにレコードがなく、パブリック DNS で定義されている MX レコードが、スパムや送信制限の廃棄に関係なく、常に高リスク配信プールを経由してルーティングされるメッセージ。
+> 送信元の電子メール ドメインに A レコードが含ず、パブリック DNS で定義された MX レコードがないメッセージは、スパムや送信制限の廃棄に関係なく、常にリスクの高い配信プールを経由してルーティングされます。
 
-### <a name="bounce-messages"></a>メッセージをバウンスする
+### <a name="bounce-messages"></a>バウンス メッセージ
 
-送信高リスク配信プールは、配信不能レポート (Ndr、バウンスメッセージ、配信状態通知、または Dsn とも呼ばれます) の配信を管理します。
+送信の危険度の高い配信プールは、すべての配信レポート (NDRs、バウンス メッセージ、配信状態通知、または DSN とも呼ばれる) の配信を管理します。
 
-Ndr のサージには、次のような原因が考えられます。
+次のような、NDRs の急増の原因として考えられるものがあります。
 
-- サービスを使用しているお客様の1人に影響を与えるスプーフィングキャンペーン。
-- ディレクトリハーベスト攻撃。
+- サービスを使用しているお客様の 1 人に影響を与えるスプーフィング キャンペーン。
+- ディレクトリの収集攻撃。
 - スパム攻撃。
-- 不正な電子メールサーバー。
+- 不正な電子メール サーバー。
 
-これらのすべての問題により、サービスによって処理されている Ndr の数が急激に増加する可能性があります。 多くの場合、これらの ndr は他の電子メールサーバーおよびサービス ( _[バックスキャター](backscatter-messages-and-eop.md)_ とも呼ばれます) に対してスパムに見えます。
+これらの問題はすべて、サービスによって処理されるNDRs の数が突然増加する可能性があります。 多くの場合、これらの NDRs は、他の電子メール サーバーやサービス (バックスカターとも呼ばれる) に対するスパム _[のように見なされます](backscatter-messages-and-eop.md)_。
 
 ## <a name="relay-pool"></a>中継プール
 
-Microsoft 365 で転送または中継されたメッセージは、最終的な送信先では実際の送信者として Microsoft 365 を考慮しない必要があるため、特別な中継プールを使用して送信されます。 また、このトラフィックを分離することも重要です。これは、Microsoft 365 からの自動転送またはメールの中継に対して正当で無効なシナリオがあるためです。 危険度の高い配信プールと同様に、中継したメールには別の IP アドレスプールが使用されます。 このアドレスプールは、頻繁に変更されることがあるため、公開されていません。
+Microsoft 365 から転送または中継されるメッセージは、特別な中継プールを使用して送信されます。最終的な送信先では、Microsoft 365 を実際の送信者と見なす必要はなだからです。 また、Microsoft 365 からメールを自動送信または中継する正当で無効なシナリオが発生する場合、このトラフィックを分離することが重要です。 危険度の高い配信プールと同様に、中継されたメールには別の IP アドレス プールが使用されます。 このアドレス プールは頻繁に変更される可能性が高く、公開されません。
 
-Microsoft 365 では、転送されたメッセージを確実に配信できるように、元の送信者が正当であることを確認する必要があります。 そのためには、メッセージの受信時に電子メール認証 (SPF、DKIM および DMARC) が渡される必要があります。 送信者を認証できる場合は、送信者が信頼できる送信元から転送されたメッセージであることを受信者に知らせるために、送信者書き換えを使用します。 この機能のしくみと、送信ドメインが [送信者リライトスキーム (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)で認証を通過することを確認するために、どのように役立つかについて参照できます。
+Microsoft 365 では、転送されたメッセージを自信を持って配信できるよう、元の送信者が正当な送信者である必要があります。 これを行うには、電子メール認証 (SPF、DKIM、DMARC) がメッセージに届く際にパスする必要があります。 送信者を認証できる場合は、送信者書き換えを使用して、転送されたメッセージが信頼できる送信元からのメッセージであるのを受信者が把握するのに役立ちます。 このしくみと、送信者書き換えスキーム [(SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)で送信側ドメインが認証に合格した場合の確認方法について説明します。

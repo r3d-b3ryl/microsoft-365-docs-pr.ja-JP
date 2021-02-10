@@ -21,18 +21,22 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3d8363ada4de60d37cb0d247d8b1af74df4226d1
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: a66a89a13182570259bcb8be4134c21d13e22391
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142977"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175813"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 向けカスタム またはサード パーティ製のレポート ソリューション
 
 Microsoft [Defender for Office 365](office-365-atp.md)では、自動調査に関する [詳細情報を取得できます](air-view-investigation-results.md)。 ただし、一部の組織では、カスタムまたはサード パーティ製のレポート ソリューションも使用します。 自動調査に関する情報をそのようなソリューション[](office-365-air.md)と統合する場合は、Office 365 マネージメント アクティビティ API を使用できます。
 
-統合を構成するリソース
+**適用対象**
+- [Microsoft Defender for Office 365 プラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+Microsoft [Defender for Office 365](office-365-atp.md)では、自動調査に関する [詳細情報を取得できます](air-view-investigation-results.md)。 ただし、一部の組織では、カスタムまたはサード パーティ製のレポート ソリューションも使用します。 自動調査に関する情報をそのようなソリューションと統合する場合は、Office 365 マネージメント アクティビティ API を使用できます。
 
 |関連情報|説明|
 |:---|:---|

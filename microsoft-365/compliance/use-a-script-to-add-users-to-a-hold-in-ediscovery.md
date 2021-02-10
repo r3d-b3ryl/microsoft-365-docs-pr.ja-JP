@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Microsoft 365 コンプライアンス センターの電子情報開示ケースに&新しい保留リストに OneDrive for Business サイトのメールボックスを追加するスクリプトを実行する方法について説明します。
-ms.openlocfilehash: 72fd9b8e7b63b36399d055e2eb710e8b53967e44
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 278e8e051165eca906e9b454268068cbbe6aef05
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126440"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175576"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>スクリプトを使用してコア電子情報開示ケースの保留リストにユーザーを追加する
 
@@ -49,7 +49,7 @@ ms.locfileid: "50126440"
 
 - 手順 2 で作成したユーザーの一覧と手順 3 のスクリプトを必ず同じフォルダーに保存してください。 そうすると、スクリプトの実行が簡単になります。
 
-- スクリプトは、既存のケースに関連付けられている新しい保留リストにユーザーのリストを追加します。 スクリプトを実行する前に、保留を関連付けるケースが作成されている必要があります。
+- このスクリプトは、既存のケースに関連付けられている新しい保留リストにユーザーのリストを追加します。 スクリプトを実行する前に、保留を関連付けるケースが作成されている必要があります。
 
 - この記事のスクリプトは、セキュリティ センターの PowerShell および SharePoint Online 管理シェル&接続するときに、最新の認証をサポートします。 Microsoft 365 または Microsoft 365 GCC 組織の場合は、このスクリプトを使用できます。 Office 365 Germany 組織、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行を編集し `Connect-IPPSSession` *、ConnectionUri* パラメーターと *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、セキュリティ & コンプライアンス センター PowerShell に接続する必要があります。 詳細については、「セキュリティセンターとコンプライアンス センター [の PowerShell への接続」&を参照してください](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
 
@@ -81,9 +81,9 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 この手順でスクリプトを実行すると、次の情報を求めるメッセージが表示されます。 スクリプトを実行する前に、この情報を準備してください。
   
-- **ユーザー資格情報:** スクリプトは、資格情報を使用して、リモート PowerShell を使用してセキュリティ & コンプライアンス センターに接続します。 また、これらの資格情報を使用して SharePoint Online にアクセスし、ユーザーのリストの OneDrive for Business URL を取得します。
+- **ユーザー資格情報:** スクリプトは、資格情報を使用して、PowerShell を使用してセキュリティ & コンプライアンス センターに接続します。 また、これらの資格情報を使用して SharePoint Online にアクセスし、ユーザーのリストの OneDrive for Business URL を取得します。
 
-- **自分の My Site ドメインの名前:** My Site ドメインは、組織内のすべての OneDrive for Business サイトを含むドメインです。 たとえば、自分の My Site ドメインの URL が次の場合は、スクリプトで自分の My Site ドメインの名前を入力するように求めるメッセージ **https://contoso-my.sharepoint.com**  `contoso` を入力します。
+- **SharePoint ドメインの名前:** このスクリプトは、SharePoint 管理センターに接続できるよう、この名前を入力するように求めるメッセージを表示します。 また、組織内の OneDrive URL のドメイン名も使用します。 たとえば、管理センターの URL が OneDrive の場合、スクリプトからドメイン名の入力を求めるメッセージが表示される場合に `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com` `contoso` 入力します。
 
 - **ケースの名前:** 既存のケースの名前。 スクリプトは、このケースに関連付けられた新しい保留リストを作成します。
 
@@ -91,7 +91,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 - **クエリ ベースの保留の検索クエリ:** クエリ ベースの保留リストを作成して、指定した検索条件を満たすコンテンツのみを保留にできます。 すべてのコンテンツを保留するには、検索クエリの入力を求めるメッセージが表示されたら **Enter** キーを押します。
 
-- **ホールドをオンにするか、オンにしないか:** スクリプトの作成後に保留リストを有効にするか、有効にせずにスクリプトに保留リストを作成することができます。 スクリプトを保留にしない場合は、後でセキュリティ & コンプライアンス センターで有効にするか、次の PowerShell コマンドを実行します。
+- **ホールドをオンにするか、オンにしないか:** スクリプトの作成後に保留リストを有効にするか、スクリプトで有効にせずに保留リストを作成できます。 スクリプトを保留にしない場合は、後でセキュリティ & コンプライアンス センターで有効にするか、次の PowerShell コマンドを実行します。
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -103,7 +103,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 - **ユーザーのリストを含** むテキスト ファイルの名前 - 保留リストに追加するユーザーのリストを含む手順 2 のテキスト ファイルの名前。 このファイルがスクリプトと同じフォルダーにある場合は、ファイルの名前 (たとえば、HoldUsers.txt) を入力します。 テキスト ファイルが別のフォルダーにある場合は、ファイルの完全なパス名を入力します。
 
-スクリプトから要求される情報を収集した後、最後の手順として、スクリプトを実行して新しい保留リストを作成し、ユーザーを追加します。
+スクリプトの指示に従う情報を収集した後、最後の手順として、スクリプトを実行して新しい保留リストを作成し、ユーザーを追加します。
   
 1. ファイル名のサフィックスを使用してWindows PowerShellスクリプト ファイルに次のテキストを保存します `.ps1` 。 たとえば、`AddUsersToHold.ps1` などです。
 

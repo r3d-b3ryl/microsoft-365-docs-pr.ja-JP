@@ -17,17 +17,21 @@ ms.collection:
 description: 個々のユーザーまたは組織全体に対して、Outlook および Outlook on the web のレポート メッセージ アドインを有効にする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9b21472736cff2fd0eed7da5495ab6aae597032f
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: fe47bcb4db42514f3a5252a567421ad792967cd1
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094857"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167577"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > Exchange Online メールボックスを使用している Microsoft 365 組織の管理者である場合は、セキュリティ/コンプライアンス センターの提出ポータルを&勧めします。 詳細については、「管理者送信を使用して、疑わしいスパム、 [フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
@@ -38,7 +42,7 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
 レポート メッセージ アドインまたは Report Phishing アドインをインストールできます。 ユーザーにフィッシング メッセージのみを報告する場合は、組織内に Report Phishing アドインを展開します。 詳細については、「フィッシング報告 [アドインを有効にする」を参照してください](enable-the-report-phish-add-in.md)。
 
-レポート メッセージ アドインは、スパム メッセージとフィッシング メッセージの両方を報告するオプションを提供します。 管理者は組織のレポート メッセージ アドインを有効にし、個々のユーザーが自分でインストールできます。
+レポート メッセージ アドインは、スパム メッセージとフィッシング メッセージの両方を報告するオプションを提供します。 管理者は組織のメッセージ報告アドインを有効にし、個々のユーザーが自分でインストールできます。
 
 個人ユーザーの場合は、自分でメッセージ報告 [アドインを有効にできます](#get-the-report-message-add-in-for-yourself)。
 
@@ -58,7 +62,7 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
 - 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。
 
-- 既存の Web ブラウザーは、レポート メッセージ アドインで動作する必要があります。 ただし、アドインが使用できないか、期待通り動作しない場合は、別のブラウザーを試してください。
+- 既存の Web ブラウザーは、メッセージ報告アドインで動作する必要があります。 ただし、アドインが使用できないか、期待通り動作しない場合は、別のブラウザーを試してください。
 
 - 組織のインストールでは、OAuth 認証を使用するように組織を構成する必要があります。 詳細については、「アドインの一元展開が組織で機能するかどうかを判断する」 [を参照してください](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
@@ -66,7 +70,7 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>自分用のレポート メッセージ アドインを取得する
 
-1. Microsoft AppSource に移動し <https://appsource.microsoft.com/marketplace/apps> 、メッセージ報告アドインを検索します。 [メッセージの報告] アドインに直接移動するには、次のページに移動します <https://appsource.microsoft.com/product/office/wa104381180> 。
+1. Microsoft AppSource に移動し <https://appsource.microsoft.com/marketplace/apps> 、メッセージ報告アドインを検索します。 To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180> .
 
 2. [今 **すぐ取得] をクリックします**。
 
@@ -93,7 +97,7 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 > [!NOTE]
 > アドインが組織に表示されるのに最大 12 時間かかる場合があります。
 
-1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリアドインの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
+1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
 
 2. ページ **の上部にある [アドインの** 展開] を選択し、[次へ] を選択 **します**。
 
@@ -153,7 +157,7 @@ Microsoft は、これらの申請を使用して、電子メール保護テク�
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>レポート メッセージ アドインの設定を確認または編集する
 
-1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリアドインの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
+1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
 
    ![新しい Microsoft 365 Add-Insの [サービスと管理] ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 

@@ -12,16 +12,18 @@ ms.collection:
 - enabler-strategic
 - m365initiative-topics
 localization_priority: Priority
-ms.openlocfilehash: ad777fde5179b8425fad3ead4d4733a9a455e657
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 5ac0513b100c120366138b1f2a7b4a35f4435cfb
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145093"
 ---
 # <a name="term-store-reports"></a>用語ストア レポート
 
-SharePoint 管理センターで用語ストアのレポートにアクセスできます。 **レポート** を展開し、[**コンテンツサービス** をクリックします。
+SharePoint 管理センターで用語ストアのレポートにアクセスできます。 この機能には、[SharePoint Syntex](index.md) ライセンスが必要です。
+
+**レポート** を展開し、[**コンテンツサービス** をクリックします。
 
 次の利用状況レポートを使用できます。
 

@@ -19,12 +19,12 @@ description: Microsoft Defender for Office 365 プラン 2 の自動調査およ
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: bcff8f12133ea16e3d91e293943be1593eaf9659
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 3fb77fa41ff3e9af995cf80b9f4024aa92a51212
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142695"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176017"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Office 365 での修復アクションの確認と管理
 
@@ -35,6 +35,10 @@ ms.locfileid: "50142695"
 - 外部メール転送を無効にする
 
 これらの修復アクションは、セキュリティ運用チームが承認しない限り、実行されるのではありません。 保留中のアクションをできるだけ早く確認して承認し、自動調査が時間内に完了することを推奨します。 場合によっては、修復アクションを元に戻すことができます。
+
+**適用対象**
+- [Microsoft Defender for Office 365 プラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) する
 
