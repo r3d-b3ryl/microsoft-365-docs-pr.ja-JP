@@ -8,21 +8,26 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: メール フロー ルール (トランスポート ルール) を使用して、組織を通過するメッセージを特定してアクションを実行できます。
-ms.openlocfilehash: 6bbf50b1a99b6691e959f6dcd4cfce33686a0014
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3f873d4e46c9e3b7f085e03a9fbb19e5914317fa
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659206"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167037"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>スタンドアロン EOP のメール フロー ルール (トランスポート ルール)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Exchange Online メールボックスを持っていないスタンドアロンの Exchange Online Protection (EOP) 組織では、メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、組織を通過するメッセージを識別してアクションを実行できます。
 
@@ -48,7 +53,7 @@ Exchange Online メールボックスを持っていないスタンドアロン�
 
 - [Office 365 で電子メール メッセージを暗号化または暗号化解除するルールを定義する](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
-次のビデオでは、スタンドアロン EOP でのメール フロー ルールの設定のデモを示します。
+次のビデオは、スタンドアロン EOP でのメール フロー ルールの設定のデモンストレーションを提供します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
 
@@ -66,7 +71,7 @@ Exchange Online メールボックスを持っていないスタンドアロン�
 
 スタンドアロンの EOP で使用可能なメール フロー ルールアクションの詳細については、Exchange Online のメール フロー [ルールアクションを参照してください](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
-- **プロパティ**: 条件、例外、アクション以外の他のルール設定を指定します。 たとえば、いつルールを適用するか、ルールを強制するか、あるいはテストするかどうか、およびルールを有効化する期間などです。
+- **プロパティ**: 条件、例外、またはアクション以外の他のルール設定を指定します。 たとえば、いつルールを適用するか、ルールを強制するか、あるいはテストするかどうか、およびルールを有効化する期間などです。
 
   詳細については、この記事の「 [メール フロー ルールのプロパティ」](#mail-flow-rule-properties) セクションを参照してください。
 
@@ -90,7 +95,7 @@ Use a transport rule so messages can bypass Clutter
 
 ****
 
-|EAC におけるプロパティ名|PowerShell におけるパラメーター名|内容|
+|EAC におけるプロパティ名|PowerShell におけるパラメーター名|説明|
 |---|---|---|
 |**[優先度]**|_Priority_|メッセージにルールを適用する順番を示します。優先度の既定値はルールの作成時期に基づいています (古いルールのほうが新しいルールより優先度が高く、優先度の高いルールが優先度の低いルールよりも先に処理されます)。   <p> EAC 内でのルールの優先度は、ルール一覧内でそのルールを上下に移動させることで変更します。 PowerShell では、優先度番号を設定します (0 は最高の優先度です)。 <p> たとえば、クレジット カード番号が含まれるメッセージを拒否するルールと、承認を必要とする別のルールがある場合、拒否のルールを最初に適用して、他のルールの適用を停止する必要があります。  |
 |**[モード]**|_Mode_|ルールにすぐにメッセージの処理を開始させるか、あるいはメッセージの配信に影響を与えずにルールをテストするかどうかを指定することができます (データ紛失防止、DLP ポリシー ヒントの有無を問わず)。 <p> ポリシー ヒントは、メッセージを作成しているユーザーにそれがポリシー違反の可能性があることを通知する短いメモを、Outlook または Web 上の Outlook で提示します。詳細については、「 **Policy Tips** 」を参照してください。  <p> モードの詳細については、「 **Test a mail flow rule** 」を参照してください。|
@@ -128,7 +133,7 @@ Use a transport rule so messages can bypass Clutter
 
 ## <a name="what-else-should-i-know"></a>その他の注意事項
 
-- ルール **の Version** プロパティまたは **RuleVersion** プロパティの値は、Exchange Online Protection では重要ではありません。
+- ルール **の Version** プロパティまたは **RuleVersion** プロパティ値は、Exchange Online Protection では重要ではありません。
 
 - メール フロー ルールを作成または変更した後に、新規または更新されたルールがメッセージに適用されるまで、最大で 30 分かかります。
 

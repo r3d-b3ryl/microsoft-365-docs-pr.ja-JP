@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender の新機能
 description: Microsoft 365 Defender の新機能の一覧
-keywords: Microsoft Threat Protection の新機能, ga, 一般提供, 機能, 利用可能, 新規
+keywords: Microsoft Threat Protection の新機能, ga, 一般提供, 機能, 利用可能, 新しい
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8e66c734151e7476d7c54bd050891a1bffb17b3c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 4e065ff4da80b50ea11ff2069e8938c59f16f962
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932024"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165993"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -38,11 +38,12 @@ RSS フィード: 次の URL をコピーしてフィード リーダーに貼�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
-> Microsoft 365 Defender を体験したい場合 ラボ環境 [で評価したり、](https://aka.ms/mtp-trial-lab) 実稼働 [環境でパイロット プロジェクトを実行することができます。](https://aka.ms/m365d-pilotplaybook)
->
+
+## <a name="february-2021"></a>2021 年 2 月
+- (プレビュー)拡張[された Microsoft 365 https://security.microsoft.com) セキュリティ センター (](https://security.microsoft.com)パブリック プレビューで利用できる。 この新しいエクスペリエンスにより、Defender for Endpoint と Defender for Office 365 がセンターに表示されます。 [変更された情報について詳しくは、次のリンクを参照してください](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)。
 
 ## <a name="september-2020"></a>2020 年 9 月
-- [IdentityDirectoryEvents テーブル](advanced-hunting-identitydirectoryevents-table.md) <br> Active Directory を実行しているオンプレミスのドメイン コントローラーに関連するイベントを検索します (AD)。 この [高度な検索](advanced-hunting-overview.md) スキーマの表では、ドメイン コントローラー上の ID 関連のイベントとシステム イベントの範囲について説明します。
+- [IdentityDirectoryEvents テーブル](advanced-hunting-identitydirectoryevents-table.md) <br> Active Directory を実行しているオンプレミスのドメイン コントローラーに関連するイベントを検索します (AD)。 この [高度な検索](advanced-hunting-overview.md) スキーマ の表では、ドメイン コントローラー上の ID 関連のイベントとシステム イベントの範囲について説明します。
 - [AssignedIPAddresses() 関数](advanced-hunting-assignedipaddresses-function.md) <br> 高度な検索クエリでこの関数を使用して、デバイスに割り当てられた最新の IP アドレスまたは最新の IP アドレスを特定の時間から迅速に取得します。
 
 ## <a name="july-2020"></a>2020 年7 月
@@ -66,4 +67,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2019"></a>2019 年 3 月
 - 高度な検出 <br> 電子メールとデータ、デバイス、ID に影響を与える脅威を事前に検出できる、さまざまな検索機能へのランディング ページ。
 - [Microsoft セキュア スコア](microsoft-secure-score.md) <br> 組織のセキュリティ体制の測定。数値が大きいほど、改善の取り組みにより多くのことを示します。 セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 
-- [レポート](monitoring-and-reporting.md) <br>  セキュリティ アナリストや管理者が毎日の業務の一環として追跡するさまざまな領域をカバーするカードのホストを備えます。
+- [レポート](monitoring-and-reporting.md) <br>  セキュリティ アナリストや管理者が毎日の業務の一部として追跡するさまざまな分野をカバーするカードのホストを備えます。

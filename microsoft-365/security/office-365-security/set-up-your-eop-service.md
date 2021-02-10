@@ -8,23 +8,26 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) をセットアップして、オンプレミスの電子メール環境を保護する方法について説明します。
-ms.openlocfilehash: ca95f7dce30e8e751e293bf4e5de9caf0c845d29
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 42952259da4086c4e147fb1a69fc081659dcc7e2
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760496"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166209"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>スタンドアロン EOP サービスをセットアップする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+-  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 このトピックでは、スタンドアロンの Exchange Online Protection (EOP) をセットアップする方法について説明します。 Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。 コネクタの構成方法の詳細については、「[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)」をご覧ください。
 
@@ -37,7 +40,7 @@ ms.locfileid: "49760496"
 
 - このタスクの予想所要時間:1 時間
 
-- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理 **(グローバル** 管理者) 役割グループとメール フロー管理者役割グループに割り当てられる"Remote **and Accepted Domains/** リモートドメインと承認されたドメイン" 役割が必要です。  詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理 **(グローバル** 管理者) およびメール フロー管理者の役割グループに割り当てられるリモートドメインと承認されたドメインの役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス許可](feature-permissions-in-eop.md) 」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - EOP に登録にしていない場合は、「[Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)」にアクセスして、サービスを購入するか、試用してみてください。
 
@@ -61,7 +64,7 @@ EOP サービスとの間のメール フローを設定する前に、受信者
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>手順 3:EAC を使用してメール フローをセットアップする
 
-Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプレミスのメール サーバー間のメール フローを有効にします。 詳細な手順については [、「Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)と独自の電子メール サーバーの間でメールをルーティングするコネクタを設定する」を参照してください。
+Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプレミスのメール サーバー間のメール フローを有効にします。 詳細な手順については [、「Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)と独自の電子メール サーバー間でメールをルーティングするコネクタを設定する」を参照してください。
 
 ### <a name="how-do-you-know-this-task-worked"></a>このタスクの検証方法
 
@@ -100,4 +103,4 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 > [!TIP]
 > セットアップが完了したら、EOP がスパムやマルウェアを削除するために追加の手順を実行する必要がなくなります。 EOP はスパムやマルウェアを自動的に削除します。 ただし、ビジネス要件に基づいて設定を微調整できます。 詳細については、「Office [365](anti-spam-and-anti-malware-protection.md) でのスパム対策とマルウェア対策の保護」および「スプーフィング インテリジェンス [の構成」を参照してください](learn-about-spoof-intelligence.md)。
 >
-> サービスが実行されたので、EOP を構成するためのベスト プラクティスを読んでお勧めします [。EOP](best-practices-for-configuring-eop.md)をセットアップした後の推奨設定と考慮事項について説明しています。
+> サービスが実行されたので、EOP を構成するためのベスト プラクティスを読んでお勧めします [。EOP](best-practices-for-configuring-eop.md)をセットアップした後の推奨設定と考慮事項について説明します。

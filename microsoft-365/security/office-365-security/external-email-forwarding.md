@@ -8,24 +8,31 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f75504941e8481d35458ad2ae6b5e8a72c5e8c8c
-ms.sourcegitcommit: a49338bde6923b13132c7b9e4c6bb75c14163c72
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e578cadf6687e02c900299a75bdd00a9d6e5b2ee
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49728190"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166149"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Microsoft 365 で外部メールの自動転送を制御する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-管理者として、自動的に転送されるメッセージを外部の受信者 (組織外の受信者) に制限または制御する会社の要件がある場合があります。 電子メールの転送は便利な機能ですが、情報が開示される可能性のためにセキュリティ上のリスクが生じ得る場合があります。 攻撃者はこの情報を使用して、組織やパートナーを攻撃する可能性があります。
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+管理者として、自動的に転送されるメッセージを外部の受信者 (組織外の受信者) に制限または制御する会社の要件がある場合があります。 電子メールの転送は便利ですが、情報が開示される可能性のためにセキュリティ上のリスクが生じ得る場合があります。 攻撃者はこの情報を使用して、組織やパートナーを攻撃する可能性があります。
+
 
 Microsoft 365 では、次の種類の自動転送を利用できます。
 
@@ -51,13 +58,13 @@ Microsoft 365 では、次の種類の自動転送を利用できます。
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>送信スパム フィルター ポリシー設定と他の自動電子メール転送コントロールの動作方法
 
-管理者として、メールの自動転送を許可またはブロックする他のコントロールが既に構成されている可能性があります。 例:
+管理者として、メールの自動転送を許可またはブロックする他のコントロールが既に構成されている可能性があります。 次に例を示します。
 
 - [一部またはすべての](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) 外部ドメインへの電子メールの自動転送を許可またはブロックするリモート ドメイン。
 
 - Exchange メール フロー [ルール](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (トランスポート ルールとも呼ばれる) の条件とアクション。外部の受信者に自動的に転送されるメッセージを検出してブロックします。
 
-リモート ドメイン設定とメール フロー ルールは、送信スパム フィルター ポリシーの設定とは独立しています。 例:
+リモート ドメイン設定とメール フロー ルールは、送信スパム フィルター ポリシーの設定とは独立しています。 次に例を示します。
 
 - リモート ドメインの自動転送は許可しますが、送信スパム フィルター ポリシーでは自動転送をブロックします。 この例では、自動的に転送されるメッセージがブロックされます。
 

@@ -19,12 +19,12 @@ description: Microsoft Defender for Office 365 を Microsoft Defender for Endpoi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
-ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
+ms.openlocfilehash: 035834e1e4855c0e47defed06043a5fdbd0e63bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49939334"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166089"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint Office 365 と共に Microsoft Defender を使用する
 
@@ -35,20 +35,20 @@ ms.locfileid: "49939334"
 
 Office 365 用 Microsoft Defender と Microsoft Defender for Endpoint を統合すると、セキュリティ運用チームは、ユーザーのデバイスが危険にさらされている場合に迅速に監視し、アクションを実行するのに役立ちます。 たとえば、統合が有効になると、セキュリティ運用チームは、検出された電子メール メッセージの影響を受ける可能性のあるデバイスと、それらのデバイスに対して生成された最新のアラートの数をエンドポイント用 Microsoft Defender で確認できます。
 
-次の図は、[デバイス]タブで Microsoft Defender for Endpoint 統合が有効になっていることを示しています。
+次の画像は、Microsoft Defender for **Endpoint** 統合を有効にした場合の [デバイス] タブの外観を示しています。
 
 ![Microsoft Defender for Endpoint が有効になっていると、アラートが表示されたデバイスの一覧が表示されます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-この例では、検出された電子メール メッセージの受信者が 4 つのデバイスを持ち、1 つがアラートを持っているのを確認できます。 デバイスのリンクをクリックすると、Microsoft Defender セキュリティ センター () でページが開きます <https://securitycenter.windows.com> 。
+この例では、検出された電子メール メッセージの受信者が 4 つのデバイスを持ち、1 つが警告を持っているのを確認できます。 デバイスのリンクをクリックすると、Microsoft Defender セキュリティ センター () でページが開きます <https://securitycenter.windows.com> 。
 
 > [!TIP]
-> **[Microsoft Defender セキュリティ センター (Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** for Endpoint ポータルとも呼ばれます) の詳細をご確認ください。
+> **[Microsoft Defender セキュリティ センター (Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** for Endpoint ポータルとも呼ばれます) について詳しく知る
 
 ## <a name="requirements"></a>要件
 
 - 組織には、Microsoft Defender for Office 365 (または Office 365 E5) と Microsoft Defender for Endpoint が必要です。
 
-- セキュリティ センター コンプライアンス センターで割り当てられているセキュリティ管理者の役割 (セキュリティ管理者など) がグローバル管理者 [&必要があります](https://protection.office.com)。 (「[セキュリティ/コンプライアンス センターのアクセス&」を参照)](permissions-in-the-security-and-compliance-center.md)
+- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security & Compliance Center](https://protection.office.com). (「[セキュリティ/コンプライアンス センターのアクセス&」を参照)](permissions-in-the-security-and-compliance-center.md)
 
 - セキュリティ センター コンプライアンス センターと Microsoft Defender セキュリティ センターで、エクスプローラー (またはリアルタイムの検出 [)](threat-explorer.md) &両方にアクセスできる必要があります。
 
@@ -78,7 +78,7 @@ Office 365 用 Microsoft Defender と Microsoft Defender for Endpoint の統合�
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 の脅威の調査および対応機能](office-365-ti.md)
+[Office 365 の脅威の調査と対応の機能](office-365-ti.md)
 
 [Microsoft Defender for Office 365](office-365-atp.md)
 

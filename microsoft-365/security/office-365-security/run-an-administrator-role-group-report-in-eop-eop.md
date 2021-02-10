@@ -8,29 +8,32 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) で管理者の役割グループ レポートを実行する方法について説明します。 このレポートは、管理者が管理者役割グループにメンバーを追加または削除するとログに記録されます。
-ms.openlocfilehash: cd7ca13a3d863240a0f2608ed13321cbe3d50ad2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) で管理者の役割グループ レポートを実行する方法について説明します。 このレポートは、管理者が管理者役割グループにメンバーを追加または削除するときにログを記録します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 507fbe6fb6c99677cf91b6eb824bf110f1c826f3
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659289"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166629"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>スタンドアロン EOP で管理者の役割グループ レポートを実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+-  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、管理者が管理役割グループにメンバーを追加または削除すると、サービスは各発生をログに記録します。 スタンドアロン EOP の役割グループの詳細については、「 [スタンドアロン EOP のアクセス許可」を参照してください](feature-permissions-in-eop.md)。
 
-Exchange 管理センター (EAC) で管理者役割グループ レポートを実行すると、エントリが検索結果として表示され、影響を受ける役割グループ、役割グループのメンバーシップを変更したユーザー、いつ、どのようなメンバーシップの更新が行われたかが含まれます。 このレポートを使用して、組織内のユーザーに割り当てられた管理アクセス許可に対する変更を監視します。
+Exchange 管理センター (EAC) で管理者役割グループ レポートを実行すると、エントリが検索結果として表示され、影響を受ける役割グループ、役割グループのメンバーシップを変更したユーザー、いつ、どのようなメンバーシップの更新が行われたかが含まれます。 このレポートを使用して、組織内のユーザーに割り当てられた管理アクセス許可の変更を監視します。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - Exchange 管理センターを開く方法については、 [スタンドアロン EOP の Exchange 管理センターを参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 

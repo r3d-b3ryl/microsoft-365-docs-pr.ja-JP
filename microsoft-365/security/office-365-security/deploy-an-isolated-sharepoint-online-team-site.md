@@ -8,25 +8,29 @@ manager: laurawi
 ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: このステップごとの展開ガイドを使用して、Microsoft Office 365 で分離した SharePoint Online チームサイトを作成して構成します。
-ms.openlocfilehash: 5b37868759dd91fc49fb8354db893f52b8f534dd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+description: このステップ バイ ステップ展開ガイドを使用して、sharePoint Online の独立したチーム サイトを Microsoft Office 365 で作成および構成します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561741"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165501"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
  **概要:** ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。
 
@@ -43,19 +47,19 @@ ms.locfileid: "49561741"
 
 分離したチーム サイトの SharePoint Online 管理者に対応するユーザー アカウントのセットを決定します。
 
-Microsoft 365 を介してユーザーアカウントとグループを管理していて、Windows PowerShell を使用する場合は、ユーザープリンシパル名 (upn) の一覧を作成します (例: belindan@contoso.com)。
+Microsoft 365 を使用してユーザー アカウントとグループを管理し、Windows PowerShell を使用する場合は、ユーザー プリンシパル名 (UPN) の一覧 (UPN: belindan@contoso.com など) を作成します。
 
 ### <a name="step-2-list-the-members-for-the-site"></a>手順 2: サイトのメンバーを一覧表示する
 
 分離したチーム サイトのメンバーに対応するユーザー アカウントのセットを決定します。メンバーはサイト内に格納されているリソースで共同作業を行います。
 
-Microsoft 365 を通じてユーザーアカウントとグループを管理していて、PowerShell を使用する場合は、Upn の一覧を作成します。 サイト メンバーが数多く存在する場合は、UPN の一覧をテキスト ファイルに格納し、PowerShell コマンドを 1 回実行することですべて追加できます。
+Microsoft 365 を使用してユーザー アカウントとグループを管理し、PowerShell を使用する場合は、UPN の一覧を作成します。 サイト メンバーが数多く存在する場合は、UPN の一覧をテキスト ファイルに格納し、PowerShell コマンドを 1 回実行することですべて追加できます。
 
 ### <a name="step-3-list-the-viewers-for-the-site"></a>手順 3:サイトのビューアーを一覧表示する
 
 分離したチーム サイトのビューアーに対応するユーザー アカウントのセットを決定します。ビューアーは、サイトに格納されているリソースを表示できますが、リソースを変更したり、そのコンテンツで直接共同作業を行ったりすることはできません。
 
-Microsoft 365 を通じてユーザーアカウントとグループを管理していて、PowerShell を使用する場合は、Upn の一覧を作成します。 サイト メンバーが数多く存在する場合は、UPN の一覧をテキスト ファイルに格納し、PowerShell コマンドを 1 回実行することですべて追加できます。
+Microsoft 365 を使用してユーザー アカウントとグループを管理し、PowerShell を使用する場合は、UPN の一覧を作成します。 サイト メンバーが数多く存在する場合は、UPN の一覧をテキスト ファイルに格納し、PowerShell コマンドを 1 回実行することですべて追加できます。
 
 サイトのビューアーには、経営幹部、弁護士、または部門間の利害関係者などが含まれます。
 
@@ -73,7 +77,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
 
 3. **[グループ] - [すべてのグループ]** ブレードで、**[+ 新しいグループ]** をクリックします。
 
-4. [ **新しいグループ]** ブレードで、次のようにします。
+4. [新しい **グループ] ブレードで、次の設定を** 行います。
 
    - **[グループの種類]** で **[セキュリティ]** を選択します。
 
@@ -88,7 +92,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
 6. 追加グループについて手順 3 から 5 を繰り返します。
 
 > [!NOTE]
-> Office の機能を有効にできるグループを作成するには、Azure Portal を使用する必要があります。 SharePoint Online の分離されたサイトが、ファイルを暗号化して特定のグループにアクセス許可を割り当てるために、Azure Information Protection ラベルを使用して、非常に機密性の高いサイトとして後で構成されている場合は、許可されるグループが Office 機能を有効にして作成されている Azure AD グループが作成された後は、その Office の機能の設定は変更できません。
+> Office の機能を有効にできるグループを作成するには、Azure Portal を使用する必要があります。 SharePoint Online の分離サイトが後で Azure Information Protection ラベルを持つ高機密サイトとして構成され、ファイルを暗号化し、特定のグループにアクセス許可を割り当てる場合、許可されたグループは Office 機能を有効にした上で作成されている必要があります。 Azure AD グループが作成された後は、その Office の機能の設定は変更できません。
 
 これで 3 つのサイトのアクセス グループの構成が完了します。
 
@@ -98,17 +102,17 @@ Azure AD で次のアクセス グループを作成する必要があります�
 
 この手順では、次の操作を行います。
 
-1. 手順1のユーザーの一覧をサイト管理者のアクセスグループに追加します。
-2. 手順2のユーザーの一覧をサイトメンバーのアクセスグループに追加します。
-3. 手順3のユーザーの一覧をサイト閲覧者のアクセスグループに追加します。
+1. 手順 1 のユーザーの一覧をサイト管理者アクセス グループに追加します。
+2. 手順 2 のユーザーの一覧をサイト メンバーのアクセス グループに追加します。
+3. 手順 3 のユーザーの一覧をサイト閲覧者のアクセス グループに追加します。
 
-Active Directory ドメインサービス (AD DS) を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用してユーザーを適切なアクセスグループに追加し、Microsoft 365 サブスクリプションとの同期を待機します。
+Active Directory ドメイン サービス (AD DS) を使用してユーザー アカウントとグループを管理している場合は、通常の AD DS ユーザーおよびグループ管理手順を使用して適切なアクセス グループにユーザーを追加し、Microsoft 365 サブスクリプションとの同期を待ちます。
 
-Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。 いずれかのアクセスグループに重複したグループ名がある場合は、Microsoft 365 管理センターを使用する必要があります。
+Office 365 を使用してユーザー アカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。 任意のアクセス グループのグループ名が重複している場合は、Microsoft 365 管理センターを使用する必要があります。
 
-Microsoft 365 管理センターの場合は、ユーザーアカウント管理者または会社の管理者の役割が割り当てられているユーザーアカウントでサインインし、グループを使用して適切なユーザーアカウントとグループを適切なアクセスグループに追加します。
+Microsoft 365 管理センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なユーザー アカウントとグループを適切なアクセス グループに追加します。
 
-PowerShell の場合、まず、 [Azure Active Directory PowerShell For Graph モジュールに接続](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+PowerShell の場合は、 [最初に Graph 用 Azure Active Directory PowerShell モジュールを使用して接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 次に、以下のコマンド ブロックを使用して、個々のユーザー アカウントをアクセス グループに追加します。
 
@@ -141,7 +145,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
 - サイト メンバーの Azure AD グループには、サイト メンバーのユーザー アカウントまたはグループが含まれる
 - サイト ビューアーの Azure AD グループには、サイトのコンテンツを表示できるユーザー アカウントまたはグループのみが含まれる
 
-Microsoft 365 管理センターまたは次の PowerShell コマンドブロックを使用して、各アクセスグループのグループメンバーの一覧を検証します。
+Microsoft 365 管理センターまたは次の PowerShell コマンド ブロックを使用して、各アクセス グループのグループ メンバーの一覧を検証します。
 
 ```powershell
 $grpName="<display name of the access group>"
@@ -154,39 +158,39 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>フェーズ 2:分離したチーム サイトを作成し構成する
 
-このフェーズでは、分離した SharePoint Online サイトを作成し、新しい Azure AD ベースのアクセス グループを使用するために既定の SharePoint Online アクセス許可レベルのアクセス許可を構成します。 既定では、新しいチームサイトには Microsoft 365 グループとその他の関連リソースが含まれていますが、この場合は、Microsoft 365 グループを使用せずにチームサイトを作成します。 これにより、SharePoint を介してアクセス許可を完全に管理できます。
+このフェーズでは、分離した SharePoint Online サイトを作成し、新しい Azure AD ベースのアクセス グループを使用するために既定の SharePoint Online アクセス許可レベルのアクセス許可を構成します。 既定では、新しいチーム サイトには Microsoft 365 グループと他の関連リソースが含まれますが、この場合は、Microsoft 365 グループなしでチーム サイトを作成します。 これにより、SharePoint を通じてアクセス許可を完全に維持できます。
 
 最初に、次の手順で SharePoint Online チーム サイトを作成します。
 
-1. SharePoint Online チームサイト (SharePoint Online 管理者) を管理するために使用されるアカウントを使用して、Microsoft 365 管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して、Microsoft 365 管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
 
-2. Microsoft 365 管理センターの [ **管理センター**] で、[ **SharePoint**] をクリックします。
+2. Microsoft 365 管理センターの[管理センター] で **、[SharePoint] をクリックします**。
 
-3. SharePoint 管理センターで、[ **サイト** ] を展開し、[ **アクティブなサイト**] をクリックします。
+3. SharePoint 管理センターで、[サイト] **を展開し** 、[アクティブなサイト] **をクリックします**。
 
-4. [ **作成**] をクリックし、[ **その他のオプション**] を選択します。
+4. [作成 **] を** クリックし、[その他のオプション] **を選択します**。
 
-5. [ **テンプレートの選択** ] リストで、[ **チームサイト**] を選択します。
+5. [テンプレートの **選択] ボックスの一覧** で、[チーム サイト] **を選択します**。
 
 6. **[サイト名]** にチーム サイトの名前を入力します。
 
-7. [ **プライマリ管理者**] に、ログインに使用しているアカウントを入力します。
+7. プライマリ **管理者で**、ログインに使用するアカウントを入力します。
 
-8. [**完了**] をクリックします。
+8. **[完了]** をクリックします。
 
 次に、新しい SharePoint Online チーム サイトから、アクセス許可を構成します。
 
 1. ツールバーで、設定アイコンをクリックしてから、**[サイトの権限]** をクリックします。
 
-2. [ **サイト共有**] で、[ **メンバーが共有する方法を変更する**] をクリックします。
+2. [ **サイト共有] で**、[メンバーが **共有する方法の変更] をクリックします**。
 
-3. [ **サイト所有者のみがファイル、フォルダー、およびサイトを共有できる**] を選択します。
+3. Choose the **Only site owners can share files, folders, and the site**.
 
-4. **アクセス許可の要求** を **オフ** に設定します。
+4. [ **アクセス要求を許可する] を [オフ]** に **設定します**。
 
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
 
-6. [ **権限** ] ウィンドウで、[ **高度な権限の設定**] をクリックします。
+6. [アクセス許可 **] ウィンドウで、[** 高度なアクセス許可 **の設定] をクリックします**。
 
 7. On the **Permissions** tab of your browser, click **\<site name> Members** in the list.
 

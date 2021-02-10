@@ -1,5 +1,5 @@
 ---
-title: EOP の設定のサンプルスクリプト-複数のテナント
+title: EOP 設定のサンプル スクリプト - 複数のテナント
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,36 +8,39 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、PowerShell を使用して Microsoft Exchange Online Protection (EOP) のテナントに構成設定を適用する方法について説明します。
-ms.openlocfilehash: b18fc71171a93e2a2f415800bcf2b5abd5c5a526
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: この記事では、PowerShell を使用して、Microsoft Exchange Online Protection (EOP) のテナントに構成設定を適用する方法について説明します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b7d856a7cec3bddc32455ba3afadf0323ddce935
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615866"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166593"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>EOP 設定を複数のテナントに適用するスクリプトのサンプル
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+-  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-次のサンプルスクリプトを使用すると、複数のテナント (会社) を管理する Microsoft Exchange Online Protection (EOP) 管理者が Exchange Online PowerShell を使用して、構成設定を表示したり、テナントに適用したりできます。
+次のサンプル スクリプトを使用すると、複数のテナント (企業) を管理する Microsoft Exchange Online Protection (EOP) 管理者は、Exchange Online PowerShell を使用して、テナントの構成設定を表示または適用できます。
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>複数のテナントでスクリプトまたはコマンドレットを実行するには
 
-1. まだインストールしていない場合は、 [Exchange Online V2 モジュールをインストール](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)します。
+1. まだインストールしていない場合は [、Exchange Online V2 モジュールをインストールします](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
 
-2. スプレッドシートアプリ (たとえば、Excel) を使用して、次の詳細を含む .csv ファイルを作成します。
+2. スプレッドシート アプリ (Excel など) を使用して、次の詳細を含む .csv ファイルを作成します。
 
-   - UserName 列: 接続に使用するアカウント (例: `admin@contoso.onmicrosoft.com` )。
-   - コマンドレット列: 実行するコマンドレットまたはコマンド (例: `Get-AcceptedDomain` または `Get-AcceptedDomain | FT Name` )。
+   - [UserName] 列: 接続に使用するアカウント (例: `admin@contoso.onmicrosoft.com`
+   - コマンドレット列: 実行するコマンドレットまたはコマンド (たとえば、 `Get-AcceptedDomain` または `Get-AcceptedDomain | FT Name` )。
 
-   このファイルは次のようになります。
+   ファイルは次のように表示されます。
 
    ```text
    UserName,Cmdlet
@@ -45,9 +48,9 @@ ms.locfileid: "49615866"
    admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
    ```
 
-3. 見つけやすい場所に .csv ファイルを保存します (たとえば、c:\scripts\inputfile.csv)。
+3. .csv ファイルは、見つけやすい場所 (たとえば、c:\scripts\inputfile.csv) に保存します。
 
-4. [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1)スクリプトをメモ帳にコピーし、見つけやすい場所 (c:\scripts など) にファイルを保存します。
+4. このスクリプト [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) メモ帳にコピーし、ファイルを見つけやすい場所 (c:\scripts など) に保存します。
 
 5. 次の構文を使用して、スクリプトを実行します。
 
@@ -61,12 +64,12 @@ ms.locfileid: "49615866"
    & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. 各テナントはにログオンされ、スクリプトが実行されます。
+6. 各テナントがログオンし、スクリプトが実行されます。
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> 環境に合わせてスクリプトの行を変更する必要がある場合があり `Connect-IPPSSession` ます。 たとえば、Office 365 ドイツでは、スクリプト内の現在の値とは異なる _Connectionuri_ 値が必要です。 詳細については、「 [Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)への接続」を参照してください。
+> 環境に合わせてスクリプト `Connect-IPPSSession` 内の行を変更する必要がある場合があります。 たとえば、Office 365 Germany では、スクリプトの現在の値とは異なる _ConnectionUri_ 値が必要です。 詳細については [、「Exchange Online Powershell への接続」を参照してください](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

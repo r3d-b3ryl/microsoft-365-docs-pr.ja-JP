@@ -4,7 +4,6 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,17 +13,21 @@ search.appverid: MET150
 description: 脅威の修復
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 67b27102ff9319e334b5ff1e006fe49f14d3f1ed
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2f623957a79ccd76702482cd23b4d8ce219603f6
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620577"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166881"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Office 365 で配信された悪意のあるメールを修復する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+-    [Microsoft Defender for Office 365 プラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 修復とは、脅威に対して規定の措置を取るという意味です。 組織に送信された悪意のあるメールは、システム、ゼロアワー自動消去 (ZAP)、またはセキュリティ チームが受信トレイへの移動、迷惑メールへの移動、削除済みアイテムへの移動、削除済みアイテムへの移動、回復可能な削除、またはハード削除などの修復アクションを通じてクリーンアップ *できます。*  Microsoft Defender for Office 365 P2/E5 を使用すると、セキュリティ チームは手動および自動調査を通じて、電子メールとコラボレーション機能の脅威を修復できます。
 

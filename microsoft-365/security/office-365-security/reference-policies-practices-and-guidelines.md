@@ -8,41 +8,46 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft は、さまざまなポリシー、手順を開発し、業界のベストプラクティスをいくつか採用して、ユーザーを不適切な迷惑メールや悪意のあるメールから保護しています。
-ms.openlocfilehash: b971823201fb805c9e17da8402250065d274668d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Microsoft はさまざまなポリシー、手順を開発し、さまざまな業界のベスト プラクティスを採用して、ユーザーを不正な電子メール、不要な電子メール、または悪意のある電子メールから保護しています。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202377"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166857"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス: ポリシー、プラクティス、ガイドライン
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft は、Web 上におけるユーザー エクスペリエンスの信頼性を高めるための支援に取り組んでいます。 そのため、さまざまなポリシー、手順を作成し、業界のいくつものベスト プラクティスを採用して、ユーザーが不適切で望ましくない、または悪意のあるメールから保護されるよう取り組んできました。 送信者は、ユーザーに電子メールを送信しようとしていることを確認し、この記事のガイダンスに従って、配信の問題が発生しないようにする必要があります。
+Microsoft は、Web 上におけるユーザー エクスペリエンスの信頼性を高めるための支援に取り組んでいます。 そのため、さまざまなポリシー、手順を作成し、業界のいくつものベスト プラクティスを採用して、ユーザーが不適切で望ましくない、または悪意のあるメールから保護されるよう取り組んできました。 ユーザーに電子メールを送信しようとする送信者は、この取り組みを支援し、潜在的な配信の問題を回避するために、完全に理解し、この記事のガイダンスに従っている必要があります。
 
-これらのポリシーとガイドラインに準拠していない場合、Microsoft サポート チームの支援を受けられないことがあります。 この資料に記されているガイドライン、プラクティス、ポリシーを遵守しているものの、送信 IP アドレスに関して配信の問題が解決されない場合、以下の手順に従って除外要求を送信してください。 手順については、「 [リストから除外のポータルを使用して、受信拒否リストから自分自身を削除する](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)」を参照してください。
+これらのポリシーとガイドラインに準拠していない場合、Microsoft サポート チームの支援を受けられないことがあります。 この資料に記されているガイドライン、プラクティス、ポリシーを遵守しているものの、送信 IP アドレスに関して配信の問題が解決されない場合、以下の手順に従って除外要求を送信してください。 手順については、「リストから削除するポータルを使用して、受信拒否リストから自分自身を [削除する」を参照してください](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="general-microsoft-policies"></a>一般的な Microsoft ポリシー
 
-Microsoft 365 ユーザーに送信される電子メールは、電子メール転送および Microsoft 365 の使用を制御するすべての Microsoft ポリシーに準拠している必要があります。
+Microsoft 365 ユーザーに送信される電子メールは、電子メールの送信と Microsoft 365 の使用に関する Microsoft ポリシーに準拠している必要があります。
 
-- Microsoft 365 に適用されるサービスの条件具体的には、禁止は、サービスを使用してスパムまたはマルウェアを配布することについてのものではありません。
+- Microsoft 365 に適用されるサービスの使用条件特に、スパムやマルウェアの配布にサービスを使用しに対する禁止。
 
 - [Microsoft サービス規約](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>政府の規制
 
-Microsoft 365 ユーザーに電子メールを送信するには、該当する管轄区域で、電子メール通信を制御する該当するすべての法律および規制に従う必要があります。
+Microsoft 365 ユーザーに送信される電子メールは、該当する管轄区域での電子メール通信に関する適用される法律および規制に従う必要があります。
 
 - [CAN-SPAM 法:ビジネスのためのコンプライアンス ガイド](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -50,13 +55,13 @@ Microsoft 365 ユーザーに電子メールを送信するには、該当する
 
 ## <a name="technical-guidelines"></a>テクニカル ガイドライン
 
-Microsoft 365 に送信される電子メールは、以下のドキュメントに記載されている該当する推奨事項に準拠する必要があります (一部のリンクは英語のみが利用できます)。
+Microsoft 365 に送信される電子メールは、以下のドキュメントに記載されている該当する推奨事項に準拠している必要があります (一部のリンクは英語でのみ利用可能です)。
 
 - [RFC 2505:SMTP MTA のスパム対策の推奨事項](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920:コマンド パイプラインの SMTP サービス拡張機能](https://www.ietf.org/rfc/rfc2920.txt)
 
-また、Microsoft 365 に接続する電子メールサーバーは、次の要件を満たす必要があります。
+さらに、Microsoft 365 に接続する電子メール サーバーは、次の要件に従う必要があります。
 
 - 送信者は、インターネット協会のインターネット技術標準化委員会 (IETF) が発行しているインターネット電子メールの送信に関する技術的な標準 (RFC 5321、RFC 5322 など) すべてに準拠していなければなりません。
 
@@ -78,7 +83,7 @@ Microsoft 365 に送信される電子メールは、以下のドキュメント
 
 ## <a name="microsoft-365-limits"></a>Microsoft 365 の制限
 
-送信者は、「 [Exchange Online Protection の制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)」に記載されている Microsoft 365 の制限に従う必要があります。
+送信者は、Exchange Online Protection の制限に記載されている Microsoft 365 の制限 [に従う必要があります](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
 
 ## <a name="email-delivery-resources-and-organizations"></a>電子メール配信リソースと組織
 
@@ -86,13 +91,13 @@ Microsoft は、インターネットと電子メールのエコシステムを�
 
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
 
-- [オンラインの信頼アライアンス](https://www.otalliance.org/resources)
+- [Online Trust Alliance](https://www.otalliance.org/resources)
 
-- [電子メールの送信者 & プロバイダーの協力体制](https://www.espcoalition.org/)
+- [Email Sender & Provider Coalition](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>迷惑行為とスパムの報告
 
-不正な迷惑メール、迷惑メールを報告する方法については、「 [Microsoft へのレポートメッセージとファイル](report-junk-email-messages-to-microsoft.md)」を参照してください。 これらの種類の通信を送信することは、Microsoft ポリシーに違反するものであり、確認されたレポートに対して適切な処置が行われます。
+不正、不正、望ましくない、または悪意のある電子メールを報告するには、「メッセージとファイルを Microsoft に報告する」を参照 [してください](report-junk-email-messages-to-microsoft.md)。 これらの種類の通信の送信は Microsoft ポリシーに違反し、確認済みレポートに対して適切なアクションが実行されます。
 
 ## <a name="law-enforcement"></a>法的処置
 

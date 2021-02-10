@@ -6,7 +6,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.article: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,17 +13,23 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft 365 管理者は、ランサムウェア攻撃から回復する方法を学習できます。
-ms.openlocfilehash: 753171578dc7b76aefadf4b8587e84320d98b912
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b834adb3d9ba5f85984e09b4bb1e4b48673c32f2
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794450"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166905"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365 でランサムウェア攻撃から回復する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 組織を保護するためにあらゆる予防措置を講じた場合でも、ランサムウェア攻撃の被害を [受け取る可能性](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) があります。 ランサムウェアは大企業であり、攻撃は非常に高度です。
 
@@ -70,7 +75,7 @@ OneDrive 同期を一時停止すると、感染している可能性のある�
 
 ランサムウェアやマルウェアの削除にも役立つ代替手段として、悪意のあるソフトウェアの削除 [ツール (MSRT) があります](https://www.microsoft.com/download/details.aspx?id=9905)。
 
-これらのオプションが機能しない場合は、[オフライン] または [マルウェアの [Windows Defender](https://support.microsoft.com/help/17466) と削除に関する問題のトラブルシューティング] を [試してください](https://support.microsoft.com/help/4466982)。
+これらのオプションが機能しない場合は、[オフライン][](https://support.microsoft.com/help/17466)または [Windows Defender検出と削除に関する問題のトラブルシューティング] を[試してください](https://support.microsoft.com/help/4466982)。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>手順 4: クリーンアップされたコンピューターまたはデバイス上のファイルを復元する
 
@@ -78,7 +83,7 @@ OneDrive 同期を一時停止すると、感染している可能性のある�
 
 **注**:
 
-- 一部のランサムウェアはバックアップ バージョンも暗号化または削除します。そのため、ファイル履歴やシステム保護を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアまたは OneDrive の影響を受けない外部ドライブまたはデバイスでバックアップを使用する必要があります。
+- 一部のランサムウェアではバックアップ バージョンも暗号化または削除されます。そのため、ファイル履歴やシステム保護を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアまたは OneDrive の影響を受けない外部ドライブまたはデバイスでバックアップを使用する必要があります。
 
 - フォルダーが OneDrive と同期され、最新バージョンの Windows を使用していない場合は、ファイル履歴の使用にいくつかの制限が発生する可能性があります。
 
@@ -88,7 +93,7 @@ OneDrive for Business でのファイルの復元では、過去 30 日以内に
 
 ## <a name="step-6-recover-deleted-email"></a>手順 6: 削除されたメールを復元する
 
-ランサムウェアによってすべてのメールが削除されるというまれなケースでは、おそらく削除済みアイテムを回復できます。 詳しくは、以下を参照してください。
+ランサムウェアによってすべてのメールが削除されるというまれなケースでは、おそらく削除済みアイテムを回復できます。 詳細については、以下を参照してください。
 
 - [ユーザーのメールボックス内の削除済みメッセージを復元する](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -110,7 +115,7 @@ OneDrive for Business でのファイルの復元では、過去 30 日以内に
 
 ### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>お客様の国の詐欺報告 Web サイトにレポートを送信する
 
-詐欺報告 Web サイトは、詐欺を防止および回避する方法に関する情報を提供します。 また、詐欺の被害を受けした場合に報告するメカニズムも提供します。
+詐欺報告 Web サイトは、詐欺を防止および回避する方法に関する情報を提供します。 また、ユーザーが詐欺の被害に出た場合に報告するメカニズムも提供します。
 
 - オーストラリア: [SCAMwatch](http://www.scamwatch.gov.au/)
 
@@ -134,11 +139,11 @@ OneDrive for Business でのファイルの復元では、過去 30 日以内に
 
 ランサムウェアを含むフィッシング メッセージは、いくつかの方法のいずれかを使用して報告できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [ランサムウェア](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 
-- [ランサムウェアの応答 — 支払いを行うのか、それとも支払わないか。](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [ランサムウェアの応答 — 支払いを行う場合と支払わない場合](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 
 - [Norsk Respond は、透明性を持つランサムウェア攻撃に対応します](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
@@ -150,7 +155,7 @@ OneDrive for Business でのファイルの復元では、過去 30 日以内に
 
 - [EOP と Microsoft Defender の 365 セキュリティOffice推奨設定](recommended-settings-for-eop-and-office365-atp.md)
 
-- [価値あるアップグレード: Windows 10 の次世代セキュリティは、2017 年のランサムウェアの発生に対する回復力を証明します](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+- [価値のあるアップグレード: Windows 10 の次世代セキュリティは、2017 年のランサムウェアの発生に対する回復力を証明します](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
 - [No mas, Samas: What's in this ransomware's modus operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
 
@@ -160,4 +165,4 @@ OneDrive for Business でのファイルの復元では、過去 30 日以内に
 
 - [Cerberus に似た Cerber ランサムウェアの 3 人のヘッド](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
 
-- [(the) Da The 数人のコードの影響を受ける、ストルデシ ランサムウェア](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)
+- [(the) DaLdci コードの影響を受けるフルデシ ランサムウェア](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)

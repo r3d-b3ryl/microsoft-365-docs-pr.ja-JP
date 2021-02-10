@@ -1,6 +1,6 @@
 ---
-title: 廃止 TLS 1.0 および 1.1 in Office 365 GCC High および DoD
-description: Office 365 の GCC High および DoD 環境での TLS 1.1 および1.0 のサポートを中止するために、Microsoft が日付を移行する方法と、TLS 1.2 の使用を準備する方法について説明します。
+title: 365 GCC High および DoD で TLS 1.0 Office 1.1 を無効にする
+description: Microsoft が Microsoft 365 の GCC High および DoD 環境での TLS 1.1 および 1.0 のサポートを無効にする方法について説明します。
 author: workshay
 manager: laurawi
 localization_priority: Normal
@@ -14,53 +14,55 @@ ms.reviewer: krowley
 ms.author: shmehta
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 76e9b203e58ba7fa23942ea42810456e3bee377d
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 006f81ee5b17baca4f42a78c5a87a59e8e90648f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158882"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166442"
 ---
-# <a name="deprecating-tls-10-and-11-in-office-365-gcc-high-and-dod"></a>廃止 TLS 1.0 および 1.1 in Office 365 GCC High および DoD
+# <a name="disabling-tls-10-and-11-in-office-365-gcc-high-and-dod"></a>365 GCC High および DoD で TLS 1.0 Office 1.1 を無効にする
 
 ## <a name="summary"></a>概要
 
-連邦リスクおよび承認管理プログラム (FedRAMP) に関する最新のコンプライアンス標準に準拠するために、Microsoft Office 365 で廃止トランスポート層セキュリティ (TLS) バージョン1.1 および1.0 を使用して、GCC High および DoD 環境を対象としています。 この変更は [、Office 365 で TLS 1.2 の必須の使用を準備するために、](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)Microsoft サポートによって既に発表されています。
+Federal Risk and Authorization Management Program (FedRAMP) の最新のコンプライアンス基準に準拠するために、Microsoft 365 for GCC High および DoD 環境ではトランスポート層セキュリティ (TLS) バージョン 1.1 および 1.0 を無効にします。 この変更は、Microsoft サポートを通じて以前に発表されたのが、Office [365 での TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)の使用の準備です。
 
-データのセキュリティは重要であり、サービスの使用に影響を与える可能性がある変更については透過的にコミットされています。
+お客様のデータのセキュリティは重要であり、お客様によるサービスの使用に影響を与える可能性のある変更に関する透明性に取り組み、取り組み中です。
 
-[MICROSOFT TLS 1.0 の実装](https://support.microsoft.com/help/3117336)には既知のセキュリティ上の脆弱性はありませんが、FedRAMP 準拠の標準に対してコミットされたままになります。 そのため、1.1 年1月 2020 15 日から開始する GCC High および DoD 環境では、Office 365 の TLS および1.0 は廃止されます。 TLS 1.1 および1.0 の依存関係を削除する方法の詳細については、次のホワイトペーパーを参照してください。
+Microsoft [TLS 1.0 の](https://support.microsoft.com/help/3117336) 実装には既知のセキュリティの脆弱性はありませんが、FedRAMP コンプライアンス標準に引き続きコミットしています。 そのため、2020 年 1 月 15 日に、GCC High および DoD 環境の Office 365 で TLS 1.1 および 1.0 を無効にしました。 TLS 1.1 と 1.0 の依存関係を削除する方法については、次のホワイト ペーパーを参照してください。
 
-[TLS 1.0 の問題を解決する](https://www.microsoft.com/download/details.aspx?id=55266)
+[TLS 1.0 の問題の解決](https://www.microsoft.com/download/details.aspx?id=55266)
 
-TLS 1.1 および1.0 に対するこの変更の準備では、代わりに TLS バージョン1.2 を使用することをお勧めします。 詳細については、「 [Office 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)」を参照してください。
+代わりに TLS バージョン 1.2 を使用する必要があります。 詳細については、「Office [365 での TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)の必須の使用の準備」を参照してください。
+
+SharePoint と OneDrive の場合は、TLS 1.2 をサポートするために .NET を更新して構成する必要があります。 詳細については、「クライアントで [TLS 1.2 を有効にする方法」を参照してください](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
 
 ## <a name="more-information"></a>詳細情報
 
-2020年1月15日から、GCC High および DoD 環境の Office 365 は TLS 1.1 および1.0 を廃止します。
+2020 年 1 月 15 日から、GCC High および DoD 環境の Office 365 は TLS 1.1 および 1.0 を廃止する予定です。
 
-2020年1月15日までに、クライアントサーバーとブラウザーサーバーのすべての組み合わせで TLS バージョン 1.2 (またはそれ以降のバージョン) を使用して、すべての接続が Office 365 サービスに問題が発生しないようにする必要があります。 この場合、クライアントサーバーとブラウザーサーバーの特定の組み合わせに対する更新が必要になることがあります。
+2020 年 1 月 15 日までには、クライアント サーバーとブラウザー サーバーのすべての組み合わせで TLS バージョン 1.2 (以降のバージョン) を使用して、Office 365 サービスへの問題なくすべての接続を確立する必要があります。 これには、クライアント サーバーとブラウザー サーバーの特定の組み合わせに対する更新が必要な場合があります。
 
-2020年1月15日までに、TLS バージョン 1.2 (またはそれ以降のバージョン) に更新しない場合は、Office 365 に接続しようとすると問題が発生します。 また、解決策の一部として、TLS 1.2 (またはそれ以降のバージョン) に更新する必要があります。
+2020 年 1 月 15 日まで TLS バージョン 1.2 (以降のバージョン) に更新しない場合は、Office 365 に接続しようとするときに問題が発生します。 さらに、解決の一環として TLS 1.2 (以降のバージョン) に更新する必要があります。
 
-次のクライアントは、TLS 1.2 を使用できないことがわかります。
+次のクライアントでは TLS 1.2 を使用できないことがわかっています。
 
 - Android 4.3 およびそれ以前のバージョン
 - Firefox 5.0 およびそれ以前のバージョン
-- Windows 7 およびそれ以前のバージョンの Internet Explorer 8 ~ 10
-- Windows Phone 8.0 の Internet Explorer 10
+- windows 7 Internet Explorer 8以前のバージョンでの Internet Explorer 8-10
+- Internet Explorer 8.0 の Internet Explorer 10
 - Safari 6.0.4/OS X 10.8.4 以前のバージョン
 
-Office 365 GCC High および DoD への継続的なアクセスを維持するように、クライアントを更新することをお勧めします。
+クライアントを更新して、365 GCC High および DoD Office中断なくアクセスすることを確認することをお勧めします。
 
-Microsoft Online services への接続の現在の分析には、ほとんどのサービスとエンドポイントが TLS 1.1 および 1.0 1.0 1.1 の使用率が非常に低くなっていることが示されていますが、この変更に関する通知を提供して、影響を受けるクライアントまたはサーバーを必要に応じて更新できるようにします。 ハイブリッドシナリオまたは Active Directory フェデレーションサービス (AD FS) に対してオンプレミスのインフラストラクチャを使用している場合は、TLS 1.2 (またはそれ以降のバージョン) を使用する受信と送信の両方の接続をインフラストラクチャがサポートできることを確認してください。
+Microsoft Online サービスへの接続の現在の分析では、ほとんどのサービスとエンドポイントで TLS 1.1 と 1.0 の使用はほとんど見えながちですが、TLS 1.1 および 1.0 のサポートが終了する前に、影響を受けるクライアントまたはサーバーを必要に応じて更新できるよう、この変更に関する通知を提供しています。 ハイブリッド シナリオまたは Active Directory フェデレーション サービス (AD FS) にオンプレミスのインフラストラクチャを使用している場合は、そのインフラストラクチャが TLS 1.2 (または以降のバージョン) を使用する受信接続と送信接続の両方をサポートできる必要があります。
 
-TLS 1.2 を使用できないクライアントを使用した場合に発生する可能性のある停止に加えて、TLS 1.1 および1.0 を削除すると、次の Microsoft 製品を使用することができなくなります。
+TLS 1.2 を使用できない一覧のクライアントを使用した場合に発生する可能性がある停止に加えて、TLS 1.1 と 1.0 を削除すると、次の Microsoft 製品を使用できません。
 
-- Lync phone
+- Lync 電話
 
 ## <a name="references"></a>関連情報
 
-次のサポート記事には、クライアントが TLS 1.2 を使用していることを確認するためのガイダンスと参考情報が記載されています。
+次のサポート記事では、クライアントが TLS 1.2 を使用する場合に役立つガイダンスと参照情報について説明します。
 
-[Office 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)
+[OFFICE 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)

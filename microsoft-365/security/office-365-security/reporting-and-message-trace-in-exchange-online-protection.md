@@ -8,59 +8,64 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、Microsoft Exchange Online Protection (EOP) 管理者が利用できるレポートとトラブルシューティングツールについて説明します。
-ms.openlocfilehash: 856e99e55e6b67d1d22a30e2f55f60857eb4fe75
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+description: この記事では、EOP (Microsoft Exchange Online Protection) 管理者が利用できるレポートとトラブルシューティング ツールについて説明します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 86c9eb0ee050c4c1a40ef7f29ea3d01dc202be9a
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020893"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166677"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポート作成とメッセージ追跡
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Exchange online メールボックスを使用しない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、EOP によって、組織の全体的な状態と正常性を特定するのに役立つさまざまなレポートが提供されます。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。
+Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、EOP は組織の全体的な状態と正常性を判断するのに役立つさまざまなレポートを提供します。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。
 
 ## <a name="usage-reports"></a>利用状況レポート
 
-**Microsoft 365 groups activity** : 作成および使用されている microsoft 365 グループの数に関する情報を表示します。
+**Microsoft 365 グループ アクティビティ**: 作成および使用される Microsoft 365 グループの数に関する情報を表示します。
 
-**電子メールアクティビティ** : 組織全体で送受信されたメッセージの数と、特定のユーザーに関する情報を表示します。
+**電子メール アクティビティ**: 組織全体および特定のユーザーによって送信、受信、読み取られたメッセージの数に関する情報を表示します。
 
-**電子メールアプリの使用状況** : 使用されている電子メールアプリに関する情報を表示します。 これには、各アプリの合計接続数、および接続している Outlook のバージョンが含まれます。
+**メール アプリの使用状況**: 使用されているメール アプリに関する情報を表示します。 これには、各アプリの接続の総数と、接続している Outlook のバージョンが含まれます。
 
-**メールボックスの使用状況** : メールボックスの使用済み記憶域、クォータ消費、アイテム数、最後のアクティビティ (送信または読み取りアクティビティ) に関する情報を表示します。
+**メールボックスの使用状況**: メールボックスの使用ストレージ、クォータ消費量、アイテム数、および最後のアクティビティ (送信または読み取りアクティビティ) に関する情報を表示します。
 
 詳細については、以下のリソースを参照してください。
 
-- [管理センターの microsoft 365 レポート-Microsoft 365 グループ](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [管理センターでの Microsoft 365 レポート - Microsoft 365 グループ](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [管理センターの Microsoft 365 レポート-電子メールアクティビティ](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
+- [管理センターでの Microsoft 365 レポート - メール アクティビティ](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [管理センターの Microsoft 365 レポート-電子メールアプリの使用状況](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
+- [管理センターでの Microsoft 365 レポート - メール アプリの使用状況](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [管理センターでの Microsoft 365 レポート-メールボックスの使用状況](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
+- [管理センターでの Microsoft 365 レポート - メールボックスの使用状況](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターのセキュリティ & コンプライアンスレポート
+## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 &センターでのセキュリティとコンプライアンス レポート
 
 これらの拡張されたレポートは EOP 管理者向けの対話型レポート エクスペリエンスを提供します。これには概要情報、および詳細についてドリルダウンする機能が含まれます。
 
-**Office 用 Defender defender 365** : Microsoft Defender for office 365 の一部である安全なリンクと安全な添付ファイルに関する情報を表示します。
+**Defender for Office 365:** Microsoft Defender for Office 365 の一部である安全なリンクと安全な添付ファイルに関する情報を表示します。
 
-**EOP** : マルウェアの検出、スプーフィングされたメール、スパム検出、組織との間のメールフローに関する情報を表示します。
+**EOP**: マルウェアの検出、スプーフィングされたメール、スパム検出、組織のメール フローに関する情報を表示します。
 
-[Defender for Office 365 のレポートの表示](view-reports-for-atp.md)
+[Defender for Office 365 のレポートを表示する](view-reports-for-atp.md)
 
-## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用するカスタムレポート
+## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用したカスタム レポート
 
-Microsoft Graph を使用して、管理センターで利用可能なレポートをプログラムで作成します。 詳細については、「microsoft [graph の概要](https://docs.microsoft.com/graph/overview) 」および「 [Microsoft graph で Office 365 の使用状況レポート](https://docs.microsoft.com/graph/api/resources/report)を使用する」を参照してください。
+Microsoft Graph を使用して、管理センターで使用できるレポートをプログラムで作成します。 詳細については、「Microsoft Graph の概要」および [「Microsoft Graph](https://docs.microsoft.com/graph/overview) での Office [365 使用状況レポートの操作」を参照してください](https://docs.microsoft.com/graph/api/resources/report)。
 
 ## <a name="message-trace"></a>メッセージの追跡
 
@@ -68,11 +73,11 @@ EOP を通過する電子メール メッセージを追跡します。電子メ
 
 この情報を使用して、効率良くユーザーの質問に回答したり、メール フローの問題をトラブルシューティングしたり、ポリシーの変更を検証したり、テクニカル サポートに支援を求める必要性を減らしたりできます。
 
-[セキュリティ & コンプライアンスセンターのメッセージ追跡を](message-trace-scc.md)参照してください。
+セキュリティ [/コンプライアンス センターのメッセージ&参照してください](message-trace-scc.md)。
 
 ## <a name="audit-logging"></a>監査ログ
 
-組織の管理者によって行われた特定の変更を追跡します。 これらのレポートの構成に関する問題のトラブルシューティングを行うか、セキュリティやコンプライアンス関連の問題の原因を見つけることができます。 「 [EOP の監査レポート」を](auditing-reports-in-eop.md)参照してください。
+組織の管理者によって行われた特定の変更を追跡します。 これらのレポートの構成に関する問題のトラブルシューティングを行うか、セキュリティやコンプライアンス関連の問題の原因を見つけることができます。 [EOP の監査レポートを参照してください](auditing-reports-in-eop.md)。
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>レポート機能とメッセージ トレース データの使用可能性と遅延
 
@@ -88,4 +93,4 @@ EOP のレポート機能とメッセージ トレース データが使用可�
 |
 
 > [!NOTE]
-> データの可用性と待機時間は、管理センターとリモート PowerShell のどちらで要求されても同じです。
+> データの可用性と待機時間は、管理センターまたはリモート PowerShell を介して要求された場合と同じです。

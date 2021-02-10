@@ -25,6 +25,8 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: 推奨される SharePoint Online のアクセス ポリシー
           href: ./office-365-security/sharepoint-file-access-policies.md
+    - name: Microsoft 365 セキュリティ センター
+      href: mtp/overview-security-center.md
     - name: Microsoft セキュア スコア
       items:
         - name: セキュア スコアの概要
@@ -45,10 +47,14 @@
               href: mtp/microsoft-threat-protection.md
             - name: Microsoft 365 Defender の新機能
               href: mtp/whats-new.md
+            - name: Microsoft 365 セキュリティ センターの Defender for Endpoint
+              href: mtp/microsoft-365-security-center-mde.md
+            - name: Microsoft 365 セキュリティ センターの Defender for Office 365
+              href: mtp/microsoft-365-security-center-mdo.md
+            - name: Defender for Endpoint を Microsoft 365 セキュリティ センターにリダイレクトする
+              href: mtp/microsoft-365-security-mde-redirection.md
             - name: プレビュー機能
               href: mtp/preview.md
-            - name: Microsoft 365 セキュリティ センター
-              href: mtp/overview-security-center.md
             - name: 問題のトラブルシューティング
               href: ./mtp/troubleshoot.md
             - name: 業界のテスト
@@ -63,22 +69,18 @@
               href: mtp/portals.md
         - name: 機能を評価する
           items:
-            - name: 試用版ラボの概要
-              href: mtp/mtp-evaluation.md
-            - name: 準備
-              href: mtp/prepare-mtpeval.md
-            - name: セットアップ
-              href: mtp/setup-mtpeval.md
-            - name: 構成およびオンボード
-              href: mtp/config-mtpeval.md
-            - name: Microsoft 365 Defender サービスを開始する
-              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
-            - name: テスト アラートを生成する
-              href: mtp/generate-test-alert.md
-        - name: 展開
-          items:
-            - name: Microsoft Threat Protection を有効にする
-              href: mtp/mtp-enable.md
+            - name: 試用版ラボを作成する
+              items:
+                - name: 試用版ラボの概要
+                  href: mtp/mtp-evaluation.md
+                - name: 準備
+                  href: mtp/prepare-mtpeval.md
+                - name: セットアップ
+                  href: mtp/setup-mtpeval.md
+                - name: Microsoft 365 Defender の柱とオンボードを構成する
+                  href: mtp/config-mtpeval.md
+                - name: テストの警告を生成する
+                  href: mtp/generate-test-alert.md
             - name: 実稼働環境でパイロット プロジェクトを実行する
               items:
                 - name: パイロットの概要
@@ -91,8 +93,16 @@
                   href: mtp/mtp-pilot-simulate.md
                 - name: 閉じて要約する
                   href: mtp/mtp-pilot-close.md
+        - name: 概要
+          items:
+            - name: 概要
+              href: mtp/get-started.md
+            - name: Microsoft Threat Protection を有効にする
+              href: mtp/mtp-enable.md
             - name: サポートされているサービスを展開する
               href: mtp/deploy-supported-services.md
+            - name: Microsoft 365 Defender の FAQ を有効にする
+              href: mtp/mtp-enable-faq.md
         - name: 使い方ガイド
           items:
             - name: 試用版ラボまたはパイロット環境を作成する
@@ -101,6 +111,12 @@
               href: mtp/mtp-pilot.md
             - name: よくあるご質問 (FAQ) をオンにする
               href: mtp/mtp-enable-faq.md
+            - name: 脅威の分析
+              items:
+                - name: 脅威の分析の概要
+                  href: mtp/threat-analytics.md
+                - name: アナリスト レポートを読む
+                  href: mtp/threat-analytics-analyst-reports.md
             - name: インシデント
               items:
                 - name: 概要
@@ -113,6 +129,10 @@
                       href: mtp/investigate-incidents.md
                     - name: インシデントを管理する
                       href: mtp/manage-incidents.md
+                    - name: アラートを調査する
+                      href: mtp/investigate-alerts.md
+                    - name: Microsoft 365 セキュリティ センターのユーザーを調査する
+                      href: mtp/investigate-users.md
                 - name: メール通知を取得する
                   href: mtp/get-incident-notifications.md
             - name: 自動調査および対応
@@ -247,6 +267,8 @@
               items:
                 - name: アクセスを管理する
                   href: mtp/mtp-permissions.md
+                - name: ロールベースのアクセス制御のカスタムの役割
+                  href: mtp/custom-roles.md
                 - name: タイム ゾーンを設定する
                   href: mtp/mtp-time-zone.md
                 - name: デバイス プロファイルを表示する
@@ -302,6 +324,8 @@
           items:
             - name: セキュリティのロードマップ
               href: ./office-365-security/security-roadmap.md
+            - name: Microsoft 365 セキュリティ センターの Defender for Office 365
+              href: mtp/microsoft-365-security-center-mdo.md
             - name: Exchange Online Protection
               items:
                 - name: Exchange Online Protection の概要
@@ -328,7 +352,7 @@
               href: office-365-security/whats-new-in-office-365-atp.md
             - name: SPO、OneDrive、Teams 用の安全な添付ファイル機能
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
-            - name: 新しい Microsoft 365 セキュリティ センター
+            - name: Microsoft 365 セキュリティ センターの概要
               href: ./mtp/overview-security-center.md
             - name: 脅威エクスプローラー (およびリアルタイムの検出)
               href: ./office-365-security/threat-explorer.md

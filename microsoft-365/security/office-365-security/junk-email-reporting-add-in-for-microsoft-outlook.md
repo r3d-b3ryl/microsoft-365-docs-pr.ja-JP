@@ -15,22 +15,26 @@ ms.collection:
 description: Microsoft 迷惑メール報告アドインをインストールして使用して、スパム、非スパム、フィッシング メッセージを Microsoft に報告する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 896ef89149e5ef65ea96b2b21e1010c29fa7a7fc
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 171bdc43e565a0890cddcd1e48208b49774a5315
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029422"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167349"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > 迷惑メール報告アドインを現在使用していない場合は、代わりに迷惑メール報告アドインまたは Report [](enable-the-report-message-add-in.md) [Phishing](enable-the-report-phish-add-in.md)アドインをお勧めします。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユーザーは誤検知 (スパムとしてマークされた良いメール)、偽陰性 (不正なメールが許可されている)、フィッシング メッセージを Microsoft に送信できます。 組織が Exchange Online Protection (オンプレミスの Exchange や Exchange Online 以外のメール サービスなど) を使用していない場合、迷惑メール レポートの送信はスパム フィルター処理に影響を与える可能性があります。
+Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユーザーは誤検知 (スパムとしてマークされた良いメール)、偽陰性 (迷惑メールが許可された)、フィッシング メッセージを Microsoft に送信できます。 組織で Exchange Online Protection を使用していない場合 (たとえば、オンプレミスの Exchange または Exchange Online 以外のメール サービス)、迷惑メール レポートの送信はスパム フィルター処理に影響を与える可能性があります。
 
 このトピックでは、迷惑メール報告アドインをインストールして使用する方法について説明します。
 
@@ -43,21 +47,21 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユ�
   - Outlook 2013 以降
   - Microsoft 365 Apps for enterprise に含まれる Outlook
 
-- Microsoft にメッセージを報告する方法の詳細については、「メッセージとファイルを Microsoft に報告する」 [を参照してください](report-junk-email-messages-to-microsoft.md)。
+- メッセージを Microsoft に報告する方法の詳細については、「メッセージとファイルを Microsoft に報告する」 [を参照してください](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>迷惑メール報告アドインを使用してスパムメッセージとフィッシング メッセージを報告する
 
 1. 迷惑メール以外の受信トレイまたは他の電子メール フォルダー内のメッセージの場合は、次の方法を使用してスパムメッセージとフィッシング メッセージを報告します。
 
-   - メッセージを選択するか、メッセージを開きます。 リボンの **[ホーム]** タブまたは **[メッセージ**] タブで、[迷惑メール] をクリックし、[迷惑メールとして報告] または [フィッシングとして報告] を **選択します**。 
+   - メッセージを選択するか、メッセージを開きます。 リボンの **[ホーム]** タブまたは **[メッセージ**] タブで[迷惑メール] をクリックし、[迷惑メールとして報告] または [フィッシングとして報告] を **選択します**。 
 
      ![リボンから迷惑メールまたはフィッシングメールを報告する](../../media/junk-email-reporting-ribbon.png)
 
-   - メッセージを右クリックし、[迷惑メール]**を選択** し、[迷惑メールとして報告] または [フィッシングとして **報告] を選択します**。
+   - メッセージを右クリックし、[迷惑メール]**を選択** して、[迷惑メールとして報告] または [フィッシングとして報告]**を選択します**。
 
      ![右クリックから迷惑メールまたはフィッシングメールを報告する](../../media/junk-email-reporting-right-click.png)
 
-   - 複数のメッセージを選択し、右クリックして、[迷惑メールとして報告 **]** または [フィッシングとして報告 **] を選択します**。
+   - 複数のメッセージを選択し、右クリックして、[迷惑メールとして報告 **]** または [フィッシングとして **報告] を選択します**。
 
      ![右クリックから複数の迷惑メールまたはフィッシングメール メッセージを報告する](../../media/junk-email-reporting-right-click-multiple.png)
 
@@ -69,7 +73,7 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユ�
 
 3. 選択したメッセージは分析のために Microsoft に送信され、次の処理が行されます。
 
-   - 迷惑メールとして報告された場合は、[迷惑メール] フォルダーに移動しました。
+   - 迷惑メールとして報告された場合は、[迷惑メール] フォルダーに移動されました。
    - フィッシングとして報告された場合に削除されます。
 
    メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
@@ -78,15 +82,15 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユ�
 
 1. 迷惑メール フォルダーで、次の方法を使用して、スパムの誤検知またはフィッシング メッセージを報告します。
 
-   - メッセージを選択するか、メッセージを開きます。 リボンの **[ホーム]** タブまたは **[メッセージ**] タブで、[迷惑メールではないメール] をクリックし、[迷惑メールではないメールとして報告] または [フィッシングとして報告] を **選択します**。 
+   - メッセージを選択するか、メッセージを開きます。 リボンの **[ホーム]** タブまたは [**メッセージ**] タブで、[迷惑メールではないメール] をクリックし、[迷惑メールではないメールとして報告] または [フィッシングとして報告] を **選択します**。
 
      ![[迷惑メール] フォルダーのリボンから迷惑メールまたはフィッシングメールではないメールを報告する](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
    - メッセージを右クリックし、[迷惑メール]**をクリック** して、[迷惑メールではないメールとして報告] または [フィッシングとして報告]**を選択します**。
 
-     ![迷惑メール フォルダー内の右クリックからの迷惑メールやフィッシングメールではないメールを報告する](../../media/junk-email-reporting-junk-folder-right-click.png)
+     ![迷惑メール フォルダー内の右クリックからの迷惑メールまたはフィッシングメールではないメールを報告する](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-   - 複数のメッセージを選択し、右クリックして、[迷惑メールではないメールとして報告] または [フィッシング **として報告] を選択します**。
+   - 複数のメッセージを選択し、右クリックして、[迷惑メールではないメールとして報告] または [フィッシングとして報告]**を選択します**。
 
      ![迷惑メール フォルダー内で右クリックした複数の迷惑メール メッセージやフィッシングメール メッセージを報告する](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
@@ -98,7 +102,7 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユ�
 
 3. 選択したメッセージは分析のために Microsoft に送信され、次の処理が行されます。
 
-   - 迷惑メールとして報告された場合は、[迷惑メール] フォルダーに移動しました。
+   - 迷惑メールとして報告された場合は、[迷惑メール] フォルダーに移動されました。
    - フィッシングとして報告された場合に削除されます。
 
    メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
@@ -198,11 +202,11 @@ Microsoft にフィッシング詐欺メールを報告する場合は、 **[迷
 
   ![右クリックから複数の迷惑メールまたはフィッシングメール メッセージを報告する](../../media/junk-email-reporting-right-click-multiple.png)
 
-- [迷惑メール] フォルダーで以前の操作を行い、以前の迷惑メール報告オプションが [迷惑メールではない] に **なことを確認します**。
+- [迷惑メール] フォルダーで **以前の操作** を行い、以前の迷惑メール **報告オプションが** [迷惑メールではない] に **なことを確認します**。
 
   ![[迷惑メール] フォルダーのリボンから迷惑メールまたはフィッシングメールではないメールを報告する](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-  ![迷惑メール フォルダー内の右クリックからの迷惑メールやフィッシングメールではないメールを報告する](../../media/junk-email-reporting-junk-folder-right-click.png)
+  ![迷惑メール フォルダー内の右クリックからの迷惑メールまたはフィッシングメールではないメールを報告する](../../media/junk-email-reporting-junk-folder-right-click.png)
 
   ![迷惑メール フォルダー内で右クリックした複数の迷惑メール メッセージやフィッシングメール メッセージを報告する](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
@@ -301,7 +305,7 @@ Microsoft にメッセージを送信するために使用できる他のメソ�
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>問題: ユーザーがメッセージを報告するときに確認プロンプトを受信しない選択をしたが、プロンプトを戻す
 
-1. 値が `ConfirmReportJunk` "True" のレジストリ キーを作成します。
+1. 値 `ConfirmReportJunk` が "True" のレジストリ キーを作成します。
 
    ```text
    Windows Registry Editor Version 5.00

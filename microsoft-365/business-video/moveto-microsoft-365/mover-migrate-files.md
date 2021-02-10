@@ -15,40 +15,39 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Mover を使用して Google ファイルを Microsoft 365 for business に移行する方法について説明します。
-ms.openlocfilehash: 99040e4846aba084f40536e88f0aed70998f48be
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 72ea81ad86a20e01b4650915fef96a713b207c3b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928200"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166161"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Google ファイルを Microsoft 365 for business に移行する 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-ビジネス向け Microsoft 365 に移行する場合は、Google ドライブからファイルを移行する必要があります。 Mover アプリを使って、個人用ドライブと共有ドライブからファイルを移動できます。 詳細については [、「Mover クラウド移行」を参照してください。](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
+ビジネス向け Microsoft 365 に移行する場合は、Google ドライブからファイルを移行する必要があります。 Mover アプリを使って、個人用ドライブと共有ドライブからファイルを移動できます。 詳細については [、「Mover クラウド移行」を参照してください](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)。
 
 > [!NOTE]
 > Mover は、ファイルのコピーを作成し、コピーを Microsoft 365 for business に移動します。 元のファイルは Google ドライブにも保持されます。
 
 ## <a name="before-you-start"></a>始める前に
 
-すべてのユーザーが Microsoft 365 for business にサインインし、OneDrive for Business をセットアップしている必要があります。 これを行うには、[Office.com][](https://office.com)に移動し、ビジネス向け Microsft 365 の資格情報でサインインし、[OneDrive] を選択します。
+すべてのユーザーが Microsoft 365 for business にサインインし、OneDrive for Business をセットアップしている必要があります。 これを行うには、[Office.com][](https://office.com)に移動し、ビジネス向け Microsoft 365 の資格情報でサインインし、[OneDrive] を選択します。
 
 ## <a name="try-it"></a>演習
 
 ### <a name="install-mover"></a>Mover をインストールする
 
-1. Google Workspace 管理コンソールにサインインするには、次の[admin.google.com。](https://admin.google.com)
+1. Google Workspace 管理コンソールにサインインするには、 [次の](https://admin.google.com)admin.google.com。
 
-1. Choose **Apps,** **Google Workspace Marketplace apps,** Then Add app to Domain Install **list**.
+1. Choose **Apps**  >  **Google Workspace Marketplace apps** Add app to Domain Install  >  **list**.
 
 1. Mover を検索して選択します。
 
@@ -67,8 +66,8 @@ ms.locfileid: "49928200"
 
     Mover には、検出されたチーム ドライブとユーザー ドライブの数が表示されます。 
 
-1. [ **宛先の選択] で**、[ **新しいコネクタ** の承認] を選択し **、[Office 365]** を見つけて、[承認] を **選択します**。
-1. Azure Active Directory の Mover アプリにアクセス許可を付与するには、次の操作[aka.ms/Office365MoverAuth。](https://aka.ms/Office365MoverAuth)
+1. [ **宛先の選択] で**、[ **新しいコネクタ** の承認] を選択し、[Office **365]** を見つけて、[承認] を **選択します**。
+1. Azure Active Directory で Mover アプリにアクセス許可を付与するには、次の操作[aka.ms/Office365MoverAuth。](https://aka.ms/Office365MoverAuth)
 1. Select **Office 365 Mover**, **Permissions**, **Grant admin consent for your company**.
 1. アカウントを選択し、アクセス許可を確認して、[承諾] を選択 **します**。
 1. [プロパティ **] を** 選択し、[ユーザーの割 **り当てが必要か]** がオンになっていることを確認します。
@@ -86,7 +85,7 @@ ms.locfileid: "49928200"
 
     詳細については、以下を[aka.ms/movercsv。](https://docs.microsoft.com/sharepointmigration/mover-create-migration-csv)
 
-    宛先パス URL を追加する場合は、共有ドキュメントの後のすべてを削除します。たとえば、次の完全な URL は機能しません。 `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
+    宛先パスの URL を追加する場合は、共有ドキュメントの後にあるすべてを削除します。 たとえば、次の完全な URL はエラーを発生します。`https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
 
     次のように変更してください。`https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents`
 

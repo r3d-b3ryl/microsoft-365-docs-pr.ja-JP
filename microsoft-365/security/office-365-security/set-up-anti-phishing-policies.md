@@ -1,5 +1,5 @@
 ---
-title: フィッシング対策ポリシー
+title: フィッシング詐欺対策ポリシー
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,6 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
@@ -16,21 +15,27 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender for Office 365 で利用できるフィッシング対策ポリシーについて説明します。
-ms.openlocfilehash: f1ffebbca2d3a77d1a0c10d14205e52108614043
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a97d95ab4d7cf0146ea6d6d008230ee6aa678d80
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908355"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166383"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 フィッシング対策保護設定を構成するポリシーは、Exchange Online メールボックスを持つ Microsoft 365 組織、Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 組織用の Microsoft Defender で利用できます。
 
-Office 365 向け Microsoft Defender のフィッシング対策ポリシーは、Defender for Office 365 を使用している組織でのみ利用できます。 以下に例を示します。
+Office 365 向け Microsoft Defender のフィッシング対策ポリシーは、Defender for Office 365 を使用している組織でのみ利用できます。 次に例を示します。
 
 - Microsoft 365 Enterprise E5、Microsoft 365 Education A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -44,7 +49,7 @@ EOP のフィッシング対策ポリシーと microsoft Defender for Office 365
 |機能|EOP のフィッシング対策ポリシー|Microsoft Defender for Office 365 のフィッシング対策ポリシー|
 |---|:---:|:---:|
 |自動的に作成される既定のポリシー|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|カスタム ポリシーを作成する|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
+|カスタム ポリシーの作成|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
 |ポリシー設定<sup>\*</sup>|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
 |偽装設定||![チェック マーク](../../media/checkmark.png)|
 |スプーフィング設定|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|

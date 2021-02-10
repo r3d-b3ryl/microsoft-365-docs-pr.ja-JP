@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
 ms.prod: microsoft-365-enterprise
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
-description: テストラボガイドを使用して、開発/テスト環境で Microsoft 365 ソリューションとシナリオを構築します。
-ms.openlocfilehash: 7254596da5b2b8b32a01468d3ff1f34d4efd8db8
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+description: テスト ラボ ガイドを使用して、開発/テスト環境で Microsoft 365 のソリューションとシナリオを構築します。
+ms.openlocfilehash: 10ddfc9cb9f9135b352be50c555811342ae0bd2b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521303"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166185"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>ソリューションとシナリオのテスト ラボ ガイド
 
@@ -34,5 +34,6 @@ TLG はモジュラーとして機能するように設計されています。T
   
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-[このテストラボガイド](team-security-isolation-dev-test.md)を使用して、セキュリティ分離を備えたチームを設定します。
+セキュリティ [分離を使用してチームを](team-security-isolation-dev-test.md) セットアップするには、このテスト ラボ ガイドをお試しください。
 
+Microsoft 365 の機能と構成に関するその他のガイドについては [、Microsoft 365 エンタープライズ](../enterprise/m365-enterprise-test-lab-guides.md)テスト ラボ ガイドを参照してください。

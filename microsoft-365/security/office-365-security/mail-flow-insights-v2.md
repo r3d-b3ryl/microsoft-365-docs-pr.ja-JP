@@ -13,17 +13,21 @@ description: 管理者は、セキュリティ/コンプライアンス セン�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef9498d19e79cf670fbae52171b78b0c44c45910
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: b65e235e3446fa62bca1c9f8aef73f2387b1140b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029364"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167097"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのメール追跡の分析情報
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードを使用して、傾向、分析情報を検出し、組織内のメール フローに関連する問題を解決するためのアクションを実行できます。
 
@@ -68,7 +72,7 @@ ms.locfileid: "50029364"
 - **[Azure](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Active Directory の Exchange 管理者。
 
 - **セキュリティ/コンプライアンス** センター& MailFlow 管理者。 アカウントが組織の管理役割グループまたは Exchange 管理者役割グループのメンバーではない場合は、次の問題を考慮してください。
-  - ユーザーは、セキュリティ センターコンプライアンス センターに直接&する必要があります <https://protection.office.com> 。
+  - ユーザーは、セキュリティ/コンプライアンス センターに直接&する必要があります <https://protection.office.com> 。
   - ユーザーは、メール フロー ダッシュボードに対する読み取り専用アクセス許可のみを持つ必要があります。
   - ユーザーは Microsoft 365 管理センターにアクセスできない。
 
