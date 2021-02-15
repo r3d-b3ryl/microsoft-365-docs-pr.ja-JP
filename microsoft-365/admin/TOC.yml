@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 作業の開始
+    - name: 概要
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -291,6 +291,8 @@
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: 多要素認証をセットアップする
           href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: 優先アカウントを管理および監視する
+          href: setup/priority-accounts.md
         - name: Office 2013 の先進認証を有効にする
           href: security-and-compliance/enable-modern-authentication.md
         - name: Microsoft 365 Business Premium をセキュリティで保護する
