@@ -30,6 +30,8 @@
       href: model-usage-analytics.md
     - name: 抽出子の作成時に用語ストアの分類を活用する
       href: leverage-term-store-taxonomy.md
+    - name: SharePoint Syntex アクセシビリティ モード
+      href: accessibility-mode.md
 - name: 導入
   items:
     - name: 導入を開始する

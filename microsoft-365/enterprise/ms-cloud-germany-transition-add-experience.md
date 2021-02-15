@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター リージョンの Office 365 サービスに移行する際の追加のカスタマー エクスペリエンス情報。'
-ms.openlocfilehash: 3f9bc40d7551dfcdb65abcf8b150f98b8242d7d2
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 717978d69c9f87855967c474f29216f6db8d3ce9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921692"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242856"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>移行フェーズのアクションと Microsoft Cloud Deutschland からの移行に対する影響 (高度) 
 
@@ -80,12 +80,6 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 \*\* (i) Microsoft Power BI を使用しているお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。 
 
 
-### <a name="office-apps-phase-9-of-9"></a>Office アプリ (フェーズ 9/9)
-
-| 手順 | 説明 | 適用対象 | 影響 |
-|:-------|:-----|:-------|:-------|
-| クライアントはOffice切りOffice、Azure AD 365 サービスをポイントするようにテナント スコープをOfficeします。 | この構成の変更によりOffice 365 サービス エンドポイントを更新し、Officeポイントできます。 | すべてのOffice顧客 | - すべての Officeアプリを閉じてから再びサインイン (またはクライアントを再起動し、ユーザーにサインインを強制する) をユーザーに通知して、Office クライアントが変更を受け取るのを有効にします。 <br><br> - カットオーバーから 72時間以内に Office アプリを再アクティブ化するように求める Office バナーがユーザーに表示される可能性がある場合は、ユーザーとヘルプ デスクのスタッフに通知します。 <br><br> - 個人用Officeのすべてのアプリケーションを閉じ、ユーザーはサインアウトしてから再度サインインする必要があります。 黄色のアクティブ化バーでサインインし、365 サービスOffice再アクティブ化します。 <br><br> - 共有コンピューターでは、個人用のコンピューターに似た操作が必要であり、特別な手順は必要とされます。 <br><br> - モバイル デバイスでは、ユーザーはアプリからサインアウトし、アプリを閉じてから、もう一度サインインする必要があります。 |
-|||||
 
 ## <a name="during-migration"></a>移行中
 
@@ -159,7 +153,7 @@ DNS の場合:
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
 | SharePoint 2013 ワークフローを再発行します。 | 移行前作業では、SharePoint 2013 ワークフローの数を削減しました。 移行が完了したら、お客様はワークフローを再発行できます。 | すべてのOffice顧客 | これは必須のアクションです。 そうしない場合は、ユーザーが混乱し、ヘルプ デスクへの電話が必要な場合があります。 |
-| Outlook 経由でアイテムを共有する | Outlook を介したアイテムの共有は、テナントのカットオーバー後に機能しなくなりました。 | Sharepoint Online と OneDrive for Business | - SharePoint Online と OneDrive for Business では、Outlook 経由でアイテムを共有できます。 Outlook ボタンを押すと、共有可能なリンクが作成され、新しいメッセージにプッシュOutlook Web App。 <br><br> - テナントのカットオーバー後、この共有方法は機能しません。 これは既知の問題です。 ただし、この Outlook 機能は廃止の道のりにあるので、廃止が展開されるまで問題の修正は計画されていません。 |
+| Outlook 経由でアイテムを共有する | Outlook を介したアイテムの共有は、テナントのカットオーバー後に機能しなくなりました。 | SharePoint Online と OneDrive for Business | - SharePoint Online と OneDrive for Business では、Outlook 経由でアイテムを共有できます。 Outlook ボタンを押すと、共有可能なリンクが作成され、新しいメッセージにプッシュOutlook Web App。 <br><br> - テナントのカットオーバー後、この共有方法は機能しません。 これは既知の問題です。 ただし、この Outlook 機能は廃止の道のりにあるので、廃止が展開されるまで問題の修正は計画されていません。 |
 
 
 ### <a name="exchange-online-phase-5-of-9"></a>Exchange Online (フェーズ 5/9)
@@ -184,7 +178,7 @@ DNS の場合:
 
 [移行フェーズのアクションと影響について理解する](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

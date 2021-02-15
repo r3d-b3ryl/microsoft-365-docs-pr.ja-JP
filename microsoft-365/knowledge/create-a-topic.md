@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107258"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242892"
 ---
 # <a name="create-a-new-topic"></a>新規トピックを作成する 
 
@@ -38,7 +38,19 @@ In Topics, you can create a new topic if one is not discovered through indexing 
 > [!Note] 
 > トピック センター (ナレッジ マネージャー) でトピックを管理する権限を持つユーザーには、トピックを作成および編集する権限が既に付与されています。
 
-## <a name="to-create-a-new-topic"></a>新しいトピックを作成するには:
+## <a name="to-create-a-topic"></a>トピックを作成するには
+
+次の 2 つの場所から新しいトピックを作成できます。
+
+- トピック センターのホーム ページ: トピックを作成または編集できるユーザー (投稿者) の権限を持つライセンスを持つすべてのユーザーは、[新<b></b>しい] メニューを選択して [トピック] ページを選択することで、トピック センターから新しいトピックを作成<b>できます</b>。</br> 
+
+    ![トピック センターからの新しいトピック](../media/knowledge-management/new-topic.png) </br> 
+
+- [トピックの管理] ページ: トピックを管理できる権限を持つライセンスを持つユーザー (ナレッジ マネージャー) は、トピック センターの [トピックの管理] ページから [新しいトピック] ページを選択して、新しいトピックを<b>作成できます</b>。</br> 
+
+    ![トピックの管理に関する新しいトピック](../media/knowledge-management/new-topic-topic-center.png) </br> 
+
+### <a name="to-create-a-new-topic"></a>新しいトピックを作成するには:
 
 1. [この **トピックの名前]** セクションで、新しいトピックの名前を入力します。
 
@@ -52,7 +64,7 @@ In Topics, you can create a new topic if one is not discovered through indexing 
 
     ![トピックの説明](../media/knowledge-management/description.png)</br>
 
-4. [ピン <b>留めされたユーザー</b> ] セクションでは、ユーザーを「ピン留め」して、トピックの対象の専門家として表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。 ユーザーをドラッグして、ユーザーの一覧に表示される順序を変更できます。
+4. [ピン <b>留めされたユーザー</b> ] セクションでは、トピックの対象の専門家としてユーザーを "ピン留め" して表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。 ユーザーをドラッグして、ユーザーの一覧に表示される順序を変更できます。
  
     ![ピン留めされたユーザー](../media/knowledge-management/pinned-people.png)</br>
 
@@ -87,7 +99,7 @@ In Topics, you can create a new topic if one is not discovered through indexing 
    ![関連トピック](../media/knowledge-management/related-topics-final.png)</br> 
 
 
-8. キャンバス アイコンを選択して、静的な項目 (テキスト、画像、リンクなど) をページに追加することもできます。このアイコンは、簡単な説明の下に表示されます。 選択すると、ページに追加するアイテムを選択できる SharePoint ツールボックスが開きます。
+8. キャンバス アイコンを選択して静的な項目 (テキスト、画像、リンクなど) をページに追加することもできます。このアイコンは、簡単な説明の下に表示されます。 選択すると、ページに追加するアイテムを選択できる SharePoint ツールボックスが開きます。
 
    ![キャンバス アイコン](../media/knowledge-management/webpart-library.png)</br> 
 

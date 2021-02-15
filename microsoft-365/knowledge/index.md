@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 localization_priority: None
 description: Microsoft のトピックのリソースを検索する方法について説明します。
-ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107172"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242868"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft のトピックの概要
 
@@ -31,17 +31,20 @@ ms.locfileid: "50107172"
 
 「多くのトピック」は、Office情報を知識に変換するのに役立つ 365 の 365 サービスです。
 
-このページのリソースは、組織内の多くのトピックに関する学習と使用を開始するために設計されています。
+このページのリソースは、組織内の多くのトピックの学習と使用を開始するために設計されています。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>開始する
 
 このセクションのリソースは、多くの場合、多くの場合に役立つ、多くのトピックについて説明します。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|詳しくは、多くのトピックを参照してください。|[Microsoft のトピックの概要](topic-experiences-overview.md)|
+|多くのトピックの詳細|[Microsoft Microsoft のトピックの概要](topic-experiences-overview.md)|
 |AI によるトピックの検出方法と提案方法について説明します。|[Microsoft のトピックの検出](topic-experiences-discovery.md)|
-|トピックのセキュリティの詳細|[Microsoft マイクロソフトのセキュリティとプライバシー](topic-experiences-security-privacy.md)|
+|トピックのセキュリティの詳細|[Microsoft Microsoft のセキュリティとプライバシー](topic-experiences-security-privacy.md)|
+|多くのトピックを取得する方法について説明します。|[Microsoft のトピック製品ページ](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[Microsoft の技術コミュニティに関するトピック](https://resources.techcommunity.microsoft.com/viva-topics/)|
+
 
 
 ## <a name="adoption"></a>導入

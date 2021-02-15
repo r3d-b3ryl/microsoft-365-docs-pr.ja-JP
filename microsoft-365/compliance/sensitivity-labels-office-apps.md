@@ -1,5 +1,5 @@
 ---
-title: Office アプリで秘密度ラベルを使用する
+title: 新しいアプリでOfficeを管理する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,16 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: デスクトップ、モバイル、および Web 用の Office アプリでユーザーが機度ラベルを使用する方法と、どのアプリが機度ラベルをサポートしているのかについて説明します。
+description: デスクトップ、モバイル、および Web 用アプリで Officeラベルを管理するための IT 管理者向け情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95da9753d773e3bb9724a8d0ae2ab0e2f2618c27
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3f2be9310e6230bf0530670796dea56f775f365d
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233719"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242667"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
+# <a name="manage-sensitivity-labels-in-office-apps"></a>新しいアプリでOfficeを管理する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
@@ -145,7 +145,7 @@ Office 365 Message Encryption 用に定義した保護テンプレートなど�
 - ドキュメントの場合:**ファイル**  >  **情報保護**  >  **ドキュメント**  >  **制限アクセス**
 - 電子メールの場合: [オプション]**タブの**[暗号化>  
   
-ユーザーは、最初にドキュメントまたは電子メールにラベルを付け始め、ラベル構成設定を独自の暗号化設定でいつでも上書きできます。 以下に例を示します。
+ユーザーは、最初にドキュメントまたは電子メールにラベルを付け始め、ラベル構成設定を独自の暗号化設定でいつでも上書きできます。 例:
 
 - ユーザーがドキュメントに **[機密] # [すべての従業員** ] ラベルを適用し、このラベルは組織内のすべてのユーザーに暗号化設定を適用するように構成されます。 次に、このユーザーは IRM 設定を手動で構成して、組織外のユーザーへのアクセスを制限します。 最後の結果は、「Confidential \ All **Employees」** というラベルが付いて暗号化されたドキュメントですが、組織内のユーザーは期待通り開くことができません。
 
@@ -155,7 +155,7 @@ Office 365 Message Encryption 用に定義した保護テンプレートなど�
 
 ドキュメントまたは電子メールに既にラベルが付けされている場合、コンテンツが暗号化されていない場合、または使用権限がエクスポートまたはフル コントロールである場合、[](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)ユーザーはこれらの操作を実行できます。 
 
-わかりやすいレポートを作成してラベルエクスペリエンスの一貫性を高めるために、ユーザーがドキュメントを保護するためにラベルのみを適用するための適切なラベルとガイダンスを提供します。 以下に例を示します。
+わかりやすいレポートを作成してラベルエクスペリエンスの一貫性を高めるために、ユーザーがドキュメントを保護するためにラベルのみを適用するための適切なラベルとガイダンスを提供します。 例:
 
 - ユーザーが独自のアクセス許可を割り当てる必要がある例外の場合は、ユーザーが自分のアクセス許可を割り当て [可能なラベルを提供します](encryption-sensitivity-labels.md#let-users-assign-permissions)。 
 
@@ -205,7 +205,9 @@ SharePoint または OneDrive のドキュメントに対して Office on the we
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>暗号化されたドキュメントを外部ユーザーと共有する
 
-自分の組織内のユーザーへのアクセスを制限する以外に、Azure Active Directory のアカウントを持つ他のユーザーにアクセスを拡張できます。 すべてのOfficeアプリケーションおよび他の [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 対応アプリケーションは、ユーザーが正常に認証された後、暗号化されたドキュメントを開く可能性があります。
+自分の組織内のユーザーへのアクセスを制限する以外に、Azure Active Directory のアカウントを持つ他のユーザーにアクセスを拡張できます。 ただし、組織で条件付きアクセス ポリシーを使用している場合[](#conditional-access-policies)は、次のセクションで追加の考慮事項を参照してください。
+
+すべてのOfficeアプリケーションおよび他の [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 対応アプリケーションは、ユーザーが正常に認証された後、暗号化されたドキュメントを開く可能性があります。 
 
 外部ユーザーが Azure Active Directory にアカウントを持たない場合は、テナントのゲスト アカウントを使用して認証できます。 これらのゲスト アカウントは、SharePoint と OneDrive の Office ファイルに対する感度ラベルを有効にした場合に [、SharePoint](sensitivity-labels-sharepoint-onedrive-files.md)または OneDrive の共有ドキュメントにアクセスするためにも使用できます。
 
@@ -228,6 +230,16 @@ Microsoft アカウントを持つユーザーが暗号化されたドキュメ�
 
 > [!TIP]
 > 外部ユーザーがサポートされている Office クライアント アプリを使用すると確信できないので、(特定のユーザーの) ゲスト アカウントを作成した後、または SharePoint と OneDrive を [Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) (認証済みユーザー用) と統合した後で SharePoint と OneDrive からのリンクを共有する方が、外部ユーザーとの安全な共同作業をサポートするための信頼性の高い方法です。
+
+### <a name="conditional-access-policies"></a>条件付きアクセス ポリシー
+
+組織で Azure [Active Directory 条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)ポリシーを実装している場合は、それらのポリシーの構成を確認します。 ポリシーに Azure Information Protection が含まれる場合、そのポリシーが外部ユーザーにまで拡張されている場合、外部ユーザーが自分のテナントに Azure AD アカウントを持っている場合でも、それらの外部ユーザーはテナントにゲスト アカウントを持っている必要があります。
+
+このゲスト アカウントがない場合、暗号化されたドキュメントを開いてエラー メッセージを表示することはできません。 メッセージ テキストは、自分のアカウントをテナントの外部ユーザーとして追加する必要があるという通知を表示する場合があります。正しくない手順でサインアウトし、別の **Azure Active Directory** ユーザー アカウントでもう一度サインインします。
+
+ラベルで暗号化されたドキュメントを開く必要がある外部ユーザーのテナントでゲスト アカウントを作成して構成できない場合は、条件付きアクセス ポリシーから Azure Information Protection を削除するか、ポリシーから外部ユーザーを除外する必要があります。
+
+条件付きアクセスと Azure Information Protection (区別ラベルで使用される暗号化サービス) の詳細については、よく寄せられる質問を参照してください。条件付きアクセスで利用可能なクラウド アプリとして[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)が一覧表示されているのは、どのように機能しますか?
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>アプリOffice、コンテンツのマーキングと暗号化を適用する場合
 

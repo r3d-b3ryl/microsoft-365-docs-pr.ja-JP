@@ -93,7 +93,7 @@
                   href: mtp/mtp-pilot-simulate.md
                 - name: 閉じて要約する
                   href: mtp/mtp-pilot-close.md
-        - name: 作業の開始
+        - name: 概要
           items:
             - name: 概要
               href: mtp/get-started.md
@@ -275,6 +275,8 @@
                   href: mtp/device-profile.md
                 - name: フィードバックの提供
                   href: mtp/feedback.md
+                - name: 管理サービス プロバイダー (MSSP) へのアクセスを提供する
+                  href: mtp/mssp-access.md
                 - name: ServiceNow のチケットとタスクを作成する
                   items:
                     - name: ServiceNow 統合の概要

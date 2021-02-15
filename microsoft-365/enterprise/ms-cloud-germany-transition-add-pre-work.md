@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター リージョンの Office 365 サービスに移行する場合の作業前作業。'
-ms.openlocfilehash: cd32ce21e18b16660c4292c98ebcc0f7cb982173
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 8160756bdbf973741f5e75f45dc2a2044f63e39b
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921568"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242844"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の事前作業
 
@@ -45,8 +45,7 @@ ms.locfileid: "49921568"
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
-| 365 サービスの URL Office IP アドレスへの [ネットワーク接続を確認します](https://aka.ms/o365urls)。 | Office 365 サービスへのアクセスに使用される顧客がホストするクライアントとサービスはすべて、Office 365 サービス エンドポイントにアクセスできる必要があります。 | 移行中のすべてのお客様、およびネットワーク アクセスが Microsoft Cloud Deutschland に制限されているお客様。 | 必要なアクション。 不反応により、サービスまたはクライアント ソフトウェアの障害が発生する可能性があります。 |
-| 移行に関連する DNS の変更を確認し、準備します。 | お客様は、Exchange Online および Exchange Online Protection (MX レコードなど) の DNS エントリを準備します。 | Exchange Online のお客様 | これは推奨されるアクションです。 移行したお客様のメールは、Microsoft Cloud Deutschland サービスが無効になるまで、Microsoft Cloud Deutschland を経由してルーティングされる可能性があるというアクションはありません。 |
+| 365 サービスの URL Office IP アドレスへの [ネットワーク接続を確認します](https://aka.ms/o365urls)。 | Office 365 サービスへのアクセスに使用される顧客がホストするクライアントとサービスはすべて、Office 365 サービス エンドポイントにアクセスできる必要があります。 | 移行中のすべてのお客様、およびネットワーク アクセスが Microsoft Cloud Deutschland に制限されているお客様。 | 必要なアクション。 サービスまたはクライアント ソフトウェアの障害は、フェーズ 4/9 より前に実行されていない場合に発生する可能性があります。 |
 | 移行に関連する DNS の変更を確認し、準備します。 | Skype for Business Online の顧客が所有する DNS ゾーンの変更。 | Skype For Business Online のお客様 | - 顧客が所有するドメイン DNS レコードの TTL (Time-to-Live) を 5 分に更新して、DNS レコードの更新を迅速に実行することをお勧めします。 ただし、この DNS 変更に関連する Microsoft が管理するカットオーバーは、指定された 24 時間の変更ウィンドウ内でいつでも発生する可能性があります。 <br><br> - サービスの中断は、将来発生する可能性があります。 ユーザーは Skype for Business にログインできないので、Office 365 サービスで移行された Teams エクスペリエンスにリダイレクトされます。 |
 | エンド ユーザーと管理のトレーニングを準備し、Microsoft Teams に移行する準備をします。 | ユーザーのコミュニケーションと準備を計画することで、Skype から Teams への移行に成功します。 | Skype For Business Online のお客様 | - クライアントは、新しいサービスと、そのサービスが Office 365 サービスに移行された後の使用方法を認識する必要があります。 <br><br> - 顧客バニティ ドメインと初期ドメインの両方に対して DNS の変更が行われた後、ユーザーは Skype for Business にサインインして、Teams に移行されたのを確認します。 これにより、Teams のデスクトップ クライアントもバックグラウンドでダウンロードされます。 |
 | iOS および Android 用の Microsoft Outlook にアカウントを削除して再追加するユーザーに関するエンド ユーザーおよび管理トレーニングを準備します。 | Microsoft Cloud Deutschland のメールボックスで構成された iOS および Android 用の Microsoft Outlook アカウントは、新しい Office 365 サービス構成を適切に同期するために、削除して Outlook にもう一度追加する必要があります。 | iOS および Android 用 Microsoft Outlook のお客様 | 以前に Microsoft Cloud Deutschland 用に構成された Outlook メールボックスでは、新しい Office 365 サービス構成が取得されない場合があります。その場合、エラーが発生し、他のユーザー エクスペリエンスのパフォーマンスが低下する可能性があります。 IT 管理者は、移行後にメールのサインインまたは同期に問題が発生した場合に、ユーザーにアカウントを削除して iOS および Android 用の Microsoft Outlook に再追加するよう事前に指示するドキュメントを提供するようお勧めしています。 |
@@ -54,8 +53,8 @@ ms.locfileid: "49921568"
 | 試用版サブスクリプションをキャンセルします。 | 試用版サブスクリプションは移行されません。また、有料サブスクリプションの移行はブロックされます。 | すべてのお客様 | ユーザーが取り消し後にアクセスすると、試用版サービスの有効期限が切れ、機能しません。 |
 | ドイツの Skype for Business にアクセスするユーザー向け Teams デスクトップ クライアントを展開します。 | 移行では、共同作業、通話、チャットのためにユーザーを Teams に移動します。 Teams デスクトップ クライアントを展開するか、サポートされているブラウザーが使用可能なブラウザーを確認します。 | Skype for Business のお客様 | 不作為により、Teams のコラボレーション サービスが利用できなくなる可能性があります。 |
 | Microsoft Cloud Deutschland と Office 365 サービスのライセンス機能の違いを分析します。 | Office 365 サービスには、現在の Microsoft Cloud Deutschland では利用できない追加の機能とサービスが含まれます。 サブスクリプションの転送中に、新しい機能がユーザーに提供されます。 | すべてのお客様 | - Microsoft Cloud Deutschland と Office 365 サービスのライセンスによって提供されるさまざまな機能を分析します。 [Office 365 プラットフォームのサービスの説明から始める](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 <br><br> - Office 365 サービスの新機能を最初に無効にし、ユーザーまたはユーザー変更管理への影響を制限し、必要に応じてユーザー ライセンス割り当てを変更する必要があるかどうかを決定します。 <br><br> - 365 サービスによって提供される新しいサービスと機能に対して、ユーザーとヘルプ デスクOffice準備します。 |
-| 移行中にコンテンツ [が不](https://docs.microsoft.com/microsoft-365/compliance/retention) 注意で削除されるのを回避するために、組織全体のアイテム保持ポリシーを作成します。  | - 移行中にエンド ユーザーによってコンテンツが誤って削除されるのを回避するために、お客様は組織全体のアイテム保持ポリシーを有効にすることもできます。 <br><br> - 保持は必要ありませんが、移行中に保持がいつでも期待通り動作する必要があるから、アイテム保持ポリシーを持つことはバックアップの安全メカニズムです。 同時に、アイテム保持ポリシーは、すべてのお客様、特に保持の過ぎを懸念しているお客様が使用するとは限りない場合があります。 | Officeのお客様 | アイテム保持ポリシーと保持ラベルの [詳細の説明に従って、アイテム保持ポリシーを適用します](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 |
-| [障害復旧シナリオ用の Active Directory フェデレーション サービス (AD FS)](ms-cloud-germany-transition-add-adfs.md#backup) ファームのバックアップ。 | お客様は、グローバル & Germany エンドポイントへの証明書利用者信頼をドメインの発行者 URI に触れることなく復元できるよう、AD FS ファームを適切にバックアップする必要があります。 必要に応じて、ADのバックアップに FS の迅速な復元を使用し、それぞれの復元を行う方法をお勧めします。 | フェデレーション認証組織 | 必須アクション。 お客様の FS ファームの移行に失敗した場合、ADサービスへの影響が生じ、 |
+| 移行中にコンテンツ [が不](https://docs.microsoft.com/microsoft-365/compliance/retention) 注意で削除されるのを回避するために、組織全体のアイテム保持ポリシーを作成します。  | - 移行中にエンド ユーザーによってコンテンツが誤って削除されるのを回避するために、お客様は組織全体のアイテム保持ポリシーを有効にすることもできます。 <br><br> - 保持は必要ありませんが、移行中に保持がいつでも期待通り動作する必要があるから、アイテム保持ポリシーを持つことはバックアップの安全メカニズムです。 同時に、アイテム保持ポリシーは、すべてのお客様、特に保持の過ぎを懸念しているお客様が使用するとは限りない場合があります。 | Officeのお客様 | アイテム保持ポリシーと保持ラベルの [詳細の説明に従って、アイテム保持ポリシーを適用します](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 サービスまたはクライアント ソフトウェアの障害は、フェーズ 4/9 より前に実行されていない場合に発生する可能性があります。  |
+| [障害復旧シナリオ用の Active Directory フェデレーション サービス (AD FS)](ms-cloud-germany-transition-add-adfs.md#backup) ファームのバックアップ。 | お客様は、グローバル & Germany エンドポイントへの証明書利用者信頼をドメインの発行者 URI に触れることなく復元できるよう、AD FS ファームを適切にバックアップする必要があります。 必要に応じて、ADのバックアップに FS の迅速な復元を使用し、それぞれの復元を行う方法をお勧めします。 | フェデレーション認証組織 | 必須アクション。 お客様の FS ファームの移行に失敗した場合、ADサービスへの影響が生じ、 詳細については、「ADFS 移行手順」を参照してください (https://docs.microsoft.com/microsoft-365/enterprise/ms-cloud-germany-transition-add-adfs) |
 
 
 ## <a name="exchange-online"></a>Exchange Online
@@ -91,7 +90,7 @@ Reworked as text:
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
-| 以前のバージョンのハイブリッド構成ウィザード (HCW) をアンインストールし、最新バージョン 17.0.5378.0 をインストールして実行します [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 | HCW の最新バージョンには、Microsoft Cloud Deutschland から Office 365 サービスに移行しているお客様をサポートするために必要な更新プログラムが含まれています。 <br><br> 更新プログラムには、送信コネクタと受信コネクタのオンプレミス証明書設定の変更が含まれます。 | ハイブリッド展開を実行している Exchange Online のお客様 | 必要なアクション。 失敗すると、サービスまたはクライアントの障害が発生する可能性があります。 |
+| 以前のバージョンのハイブリッド構成ウィザード (HCW) をアンインストールし、最新バージョン 17.0.5378.0 をインストールして実行します [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 | HCW の最新バージョンには、Microsoft Cloud Deutschland から Office 365 サービスに移行しているお客様をサポートするために必要な更新プログラムが含まれています。 <br><br> 更新プログラムには、送信コネクタと受信コネクタのオンプレミス証明書設定の変更が含まれます。 | ハイブリッド展開を実行している Exchange Online のお客様 | 必要なアクション。 フェーズ 5/9 (Exchange) より前に失敗すると、サービスまたはクライアントの障害が発生する可能性があります。 |
 |||||
 
 <!--
@@ -186,11 +185,11 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 
 | 手順 | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
-| シングル サインオン (SSO) の識別子を既存の証明書利用者信頼に追加し、AD FS メタデータの自動更新を無効にします。 | 移行を開始する前に、FS 証明書利用者信頼AD ID を追加する必要があります。 証明書利用者識別子が誤って削除されないようにするには、メタデータ更新の自動更新を無効にします。 <br><br> FS サーバー上で次のコマンドAD実行します。 <br> `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de') -AutoUpdate $False` | フェデレーション認証組織 | 必須アクション。 不作為により、移行中にサービスに影響が生じします。  |
+| シングル サインオン (SSO) の識別子を既存の証明書利用者信頼に追加し、AD FS メタデータの自動更新を無効にします。 | 移行を開始する前に、FS 証明書利用者信頼AD ID を追加する必要があります。 証明書利用者識別子が誤って削除されないようにするには、メタデータ更新の自動更新を無効にします。 <br><br> FS サーバー上で次のコマンドAD実行します。 <br> `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de') -AutoUpdate $False` | フェデレーション認証組織 | 必須アクション。 フェーズ 4/9 (SharePoint) より前のアクションは、移行中にサービスに影響を与えます。  |
 | グローバル Azure クライアント エンドポイントの証明書利用者信頼AD生成します。 | お客様は、グローバル エンドポイントへの証明書利用者信頼 (RPT) を手動で [作成する](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) 必要があります。 これを行うのは、グローバル フェデレーション メタデータ URL を利用し [、Azure AD RPT](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) 要求規則 (AD FS ヘルプ) を使用して要求規則を生成し、RPT にインポートすることで、GUI を介して新しい RPT を追加します。 | フェデレーション認証組織 | 必須アクション。 不作為により、移行中にサービスに影響が生じします。 |
 |||||
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

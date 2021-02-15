@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: 02f3da4e03d13b0710590336e49292ac6df70560
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 21dc0e29e9322b4c009b0f1e63b7bfbc4b92da9a
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044758"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242702"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
@@ -45,8 +45,8 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Office 36
 |ドキュメントの理解についての詳細情報|[ドキュメントの理解の概要](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
 |フォーム処理についての詳細情報|[フォーム処理の概要](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
 |この 2 つの方法の違いについて|[ドキュメントの理解とフォーム処理モデルの違い](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
-|Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[SharePoint Syntex - Microsoft 365 のコンテンツ サービス](https://resources.techcommunity.microsoft.com/sharepoint-syntex/)|
-|Microsoft Tech Community Resource Center に関する SharePoint Syntex FAQ |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/project-cortex-microsoft-365/faq/)|
+|Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[SharePoint Syntex - Microsoft 365 のコンテンツ サービス](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
+|Microsoft Tech Community Resource Center に関する SharePoint Syntex FAQ |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |SharePoint Syntex の入手方法 |[SharePoint Syntex 製品ページ](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
 
 ## <a name="adoption"></a>導入
@@ -76,6 +76,7 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Office 36
 |モデルに保持ラベルを適用する|[保持ラベルをドキュメント理解モデルに適用する](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |エクストラクターの作成時に、 Managed Metadata Service の用語ストアの分類を使用する|[エクストラクターの作成時に用語ストアの分類を活用する](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |モデルに関するデータを表示する方法|[モデルの利用分析](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
+|モデルのトレーニング時にアクセシビリティ モードを使用する方法についての詳細|[SharePoint Syntex アクセシビリティ モード](https://docs.microsoft.com/microsoft-365/contentunderstanding/accessibility-mode)|
 
 ## <a name="premium-services"></a>プレミアム サービス
 
