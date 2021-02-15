@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 675a98656655521095096a535d4ee8352885e70c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166462"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242713"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -43,21 +43,22 @@ ms.locfileid: "50166462"
 > [!NOTE]
 > カード コンテンツに関する機能は最近追加され、現在はテナントにロール アウトされています。 詳細については、「[Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available (Teams 内のアプリケーションを使用したアダプティブ カード コンテンツのコンプライアンスに関する Microsoft 365 の機能が利用可能になりました)](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)」を参照してください。
 
-プライベート チャネルの Teams メッセージは含まれません。また、コード スニペット、他のユーザーからの絵文字での応答は含まれません。
+プライベート チャネルの Teams メッセージは、現在、保持ポリシーではサポートされていません。 Teams の保持ポリシーを使用する場合、コード スニペット、Teams モバイルク ライアントからの録音されたボイスメモ、および絵文字の形式での他のユーザーからの反応は含まれません。
 
 Teams で使用するメールとファイルは、Teams のアイテム保持ポリシーに含まれていません。 これらのアイテムには、独自のアイテム保持ポリシーがあります。
-
-RecipientTypeDetails による次のメールボックスは、Teams 保持ポリシーでサポートされています。
-
-- MailUser
-- UserMailbox
-- GroupMailbox
-- ArbitrationMailbox
-- SharedMailbox
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Microsoft Teams での保持のしくみ
 
 アイテム保持ポリシーを使用して、Teams 内のチャットとチャネル メッセージからデータを保持および削除できます。 バックグラウンドでは、Exchange メールボックスを使用してこれらのメッセージを保存します。 Teams チャットのデータは、チャットに含まれる各ユーザーのメールボックスの隠しフォルダーに保存され、グループ メールボックスの同様の隠しフォルダーが Teams チャネル メッセージに使用されます。
+
+これらのメールボックスは、RecipientTypeDetails 属性で一覧表示されます。
+
+- **UserMailbox**: これらのメールボックスには、Exchange Online メールボックスを持つ Teams ユーザーへのメッセージが格納されます。
+- **MailUser**: これらのメールボックスには、Exchange Online ではなくオンプレミスの Exchange サーバー用のメールボックスを持つ Teams ユーザーへのメッセージが格納されます。
+- **User**: これらのメールボックスには、Exchange Online またはオンプレミスの Exchange サーバー用のメールボックスがない Teams ユーザーへのメッセージが保存されます。
+- **GroupMailbox**: これらのメールボックスは Teams チャネルのメッセージを保存します。
+
+Teams 会議室に使用される RoomMailbox などの他のメールボックスの種類は、Teams 保持ポリシーではサポートされていません。
 
 Azure を利用したチャット サービスでもこのデータが保存されますが、Teams でもこのサービスを使用していることを理解することが重要です。既定では、このサービスはデータを無期限に保存します。 このため、コンプライアンス上の理由で Teams メッセージを削除する必要がある場合は、Exchange メールボックスと基盤となる Azure ベースのチャット サービスの両方からこのデータを完全に削除できる Teams の保持ポリシーを使用することをお勧めします。 基盤となるアーキテクチャの詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](https://go.microsoft.com/fwlink/?linkid=871258)」、特に「[情報保護アーキテクチャ](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
 

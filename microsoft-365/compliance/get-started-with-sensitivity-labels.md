@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 04ac373250f13ece1a4e976891044a6584989f6d
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 03408a2f9e57421ea613bdb38e253401526f8f71
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142040"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242367"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -81,7 +81,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 |必要な作業...|ドキュメント|
 |----------------|---------------|
-|Office アプリの秘密度ラベルを管理して、コンテンツの作成時にラベルを付けられるようにする (すべてのプラットフォームでの手動によるラベル付けのサポートを含む) |[Office アプリで秘密度ラベルを使用する](sensitivity-labels-office-apps.md)|
+|Office アプリの秘密度ラベルを管理して、コンテンツの作成時にラベルを付けられるようにする (すべてのプラットフォームでの手動によるラベル付けのサポートを含む) |[Office アプリの秘密度ラベルを管理する](sensitivity-labels-office-apps.md)|
 |ユーザーが Office アプリ、エクスプローラー、および PowerShell を使用して、Windows コンピューターからファイルにラベルを付けて保護できるようにする|[Windows 用のAzure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |秘密度ラベルを使用してドキュメントやメールを暗号化し、そのコンテンツにアクセスできるユーザーとその使用方法を制限する |[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)|
 |ドキュメントが暗号化されている場合でも、共同編集、電子情報開示、データ損失防止、検索をサポートし、Office on the web の秘密度ラベルを有効にする | [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)
