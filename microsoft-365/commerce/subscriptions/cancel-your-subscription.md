@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 一般法人向け Microsoft 365 または有料版サブスクリプションをキャンセルする方法について説明します。
 ms.date: ''
-ms.openlocfilehash: 4141de3f1a228f465559212098cf46e68f2844f6
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 5d96b541030646668f636ee09cc3ccc4b43ef75a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114731"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233342"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -35,7 +35,7 @@ ms.locfileid: "50114731"
 
 ::: moniker-end
 
-*対象*: ユーザーに割り当てたライセンスが 25 より少ない場合は、いつでも Microsoft 365 管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをオンラインでキャンセルできます。 ユーザーに割り当てられたライセンスが 25 よりも多い場合は、[サポートを連絡してサブスクリプションをキャンセルします](../../admin/contact-support-for-business-products.md)。
+*対象*: ユーザーに割り当てたライセンスが 25 より少ない場合は、いつでも Microsoft 365 管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをオンラインでキャンセルできます。 ユーザーに割り当てられているライセンスが 25 を超える場合は、25 未満に減らすか、サポートに連絡してサブスクリプション [をキャンセルします](../../admin/contact-support-for-business-products.md)。
 
 *返金*: 日割り計算された残高は、次の請求サイクルの間に返金されます。
 

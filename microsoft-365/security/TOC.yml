@@ -93,7 +93,7 @@
                   href: mtp/mtp-pilot-simulate.md
                 - name: 閉じて要約する
                   href: mtp/mtp-pilot-close.md
-        - name: 概要
+        - name: 作業の開始
           items:
             - name: 概要
               href: mtp/get-started.md
@@ -648,7 +648,7 @@
               href: ./office-365-security/set-up-anti-phishing-policies.md
             - name: EOP のバックスキャッター
               href: ./office-365-security/backscatter-messages-and-eop.md
-            - name: バルク苦情レベル (SCL)
+            - name: Bulk Complaint Level (BCL)
               href: ./office-365-security/bulk-complaint-level-values.md
             - name: エンドユーザーのスパム通知
               href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、業務アプリ、ファイル共有、プリンターなど、オンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: 22edf0c23d6318e1f70bcb21b2cd697ea0a75da4
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: fc02fd30f41f25f52e653e750a6bdfd1bd7f800e
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688235"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233842"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium で Azure ADに参加しているデバイスからオンプレミスのリソースにアクセスする
 
@@ -61,6 +61,6 @@ Azure-ADに参加した Windows デバイスが以前にドメインに参加し
 
 - デバイスがグループ ポリシー オブジェクト (GPO) を使用している場合、一部の GPO では Intune で同等の [構成](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) サービス プロバイダー (CSP) を使用できない場合があります。 [MMAT ツールを実行して、](https://www.microsoft.com/download/details.aspx?id=45520)既存の GPO に対応する CSP を検索します。
 
-- ユーザーは、Active Directory 認証に依存するアプリケーションに対して認証を行う必要があります。 レガシ アプリを評価し、可能であれば最新の認証を使用するアプリへの更新を検討します。
+- ユーザーは、Active Directory 認証に依存するアプリケーションに対して認証できない場合があります。 レガシ アプリを評価し、可能であれば最新の認証を使用するアプリへの更新を検討します。
 
 - Active Directory プリンターの検出が機能しません。 すべてのユーザーにプリンターの直接パスを指定するか、ユニバーサル印刷 [を使用できます](https://aka.ms/UPDocs)。

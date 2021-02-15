@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: PowerShell スクリプトを使用して、Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、大規模なセット (最大 50,000 件) の監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
-ms.openlocfilehash: d4fcf59297747d0499f6616438299ad8cbe96d7f
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+description: PowerShell スクリプトを使用して、Exchange Online で Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、大規模なセット (最大 50,000 件) の監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
+ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094788"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233331"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>PowerShell スクリプトを使用して監査ログを検索する
 
@@ -80,7 +80,7 @@ $intervalMinutes = 60
 
 Function Write-LogFile ([String]$Message)
 {
-    $final = [DateTime]::Now.ToString("s") + ":" + $Message
+    $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
     $final | Out-File $logFile -Append
 }
 
@@ -101,7 +101,7 @@ while ($true)
         break
     }
 
-    $sessionID = [DateTime]::Now.ToString("s")
+    $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
     Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     $currentCount = 0
@@ -137,14 +137,13 @@ while ($true)
 
 Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
 Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
-
 ```
 
 2. 次の表にリストされている変数を変更して、検索条件を構成します。 スクリプトにはこれらの変数のサンプル値が含まれていますが、ユーザーの特定の要件を満たすために (特に明記されていない限り) 変更する必要があります。
 
    |変数|サンプル値|説明|
    |---|---|---|
-   |`$logFile`|"d:\temp\AuditSearchLog.txt"|スクリプトによって実行された監査ログ検索の進行状況に関する情報を含むログ ファイルの名前と場所を指定します。|
+   |`$logFile`|"d:\temp\AuditSearchLog.txt"|スクリプトによって実行された監査ログ検索の進行状況に関する情報を含むログ ファイルの名前と場所を指定します。 スクリプトは UTC タイムスタンプをログ ファイルに書き込みます。|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|スクリプトによって返される監査レコードを含む CSV ファイルの名前と場所を指定します。|
    |`[DateTime]$start` と `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|監査ログ検索の日付範囲を指定します。 スクリプトは、指定された日付範囲内に発生した監査アクティビティのレコードを返します。 たとえば、2021 年 1 月に実行されたアクティビティを返すには、開始日を `"2021-01-01"`、終了日を `"2021-01-31"` と指定します (値は必ず二重引用符で囲んでください)。スクリプトのサンプル値は、24 時間前に実行されたアクティビティのレコードを返します。 値にタイムスタンプを含めない場合、既定のタイムスタンプは指定された日付の午前 0 時 (深夜) です。|
    |`$record`|"AzureActiveDirectory"|検索する監査アクティビティ (*操作* とも呼ばれます) のレコードの種類を指定します。 このプロパティは、アクティビティがトリガーされたサービスまたは機能を示します。 この変数に使用できるレコードの種類の一覧については、「[監査ログ レコードの種類](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)」を参照してください。 レコードの種類の名前または ENUM 値を使用できます。 <br/><br/>**ヒント:** すべてのレコードの種類の監査レコードを返すには、値 `$null` (二重引用符なし) を使用します。|

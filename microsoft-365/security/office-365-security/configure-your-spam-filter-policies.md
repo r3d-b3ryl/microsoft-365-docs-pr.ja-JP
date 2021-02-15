@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -16,17 +15,23 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
-ms.openlocfilehash: f5cc652bcc16cec28dd411ad30ce0896334733f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a31f65eb415fbe6ebd58eddf50456ca5e9bb1d27
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683381"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165789"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Exchange Online のメールボックスを使用している Microsoft 365 の組織、または Exchange Online のメールボックスを使用していないもののスタンドアロンの Exchange Online Protection (EOP) をお使いの組織の場合、受信メール メッセージは EOP によってスパムから自動的に保護されます。 EOP では、スパムに対する組織の全体的防御の一環として、スパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれます) を使用します。 詳細については、「[スパム対策保護](anti-spam-protection.md)」を参照してください。
 
@@ -227,7 +232,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
      - ボックス内をクリックし、言語の *名前* の入力を始めます。 フィルター処理の対象となる、サポートされている言語のリストが、対応する ISO 639-2 の言語コードと共に表示されます。 探している言語が見つかったら、それを選択します。 必要な回数だけこの手順を繰り返します。
 
-       選択した言語のリストがポップアップに表示されます。 言語を削除するには、 ![[削除] ボタンをクリックします](../../media/scc-remove-icon.png)。
+       選択した言語のリストがポップアップに表示されます。 言語を削除するには、 ![[削除] ボタンをクリックします](../../media/scc-remove-icon.png).
 
      完了したら、**[保存]** をクリックします。
 
@@ -237,7 +242,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
      - ボックス内をクリックし、国または地域の *名前* の入力を始めます。 フィルター処理の対象となる、サポートされている国のリストが、対応する ISO 3166-1 の 2 文字の国コードと共に表示されます。 探している国や地域が見つかったら、それを選択します。 必要な回数だけこの手順を繰り返します。
 
-       選択した国のリストがポップアップに表示されます。 国または地域を削除するには、 ![[削除] ボタンをクリックします](../../media/scc-remove-icon.png)。
+       選択した国のリストがポップアップに表示されます。 国または地域を削除するには、 ![[削除] ボタンをクリックします](../../media/scc-remove-icon.png).
 
      完了したら、**[保存]** をクリックします。
 

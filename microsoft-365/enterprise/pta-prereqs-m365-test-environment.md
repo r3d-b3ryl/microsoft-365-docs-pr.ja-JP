@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,31 +14,33 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: パススルー認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 7741b38a947e58d81192326c412760487d803e36
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 71ba116ee45f031b156934e0924a0c3d460110d5
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399183"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233764"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパススルー認証に必要な ID およびデバイス アクセスの前提条件
 
-*このテストラボガイドは、エンタープライズテスト環境の Microsoft 365 にのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境向け Microsoft 365 でのみ使用できます。*
 
-[Id およびデバイスアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md) とは、Azure Active Directory (azure AD) と統合された Microsoft 365 for enterprise のすべてのサービスへのアクセスを保護する一連の構成および条件付きアクセスポリシーです。
+[ID](../security/office-365-security/microsoft-365-policies-configurations.md) とデバイスのアクセス構成は、Azure Active Directory (Azure AD) と統合された Microsoft 365 enterprise のすべてのサービスへのアクセスを保護するための一連の構成と条件付きアクセス ポリシーです。
 
 この記事では、ID とデバイス アクセス用の[パススルー認証の前提条件構成](../security/office-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。
 
-このテスト環境は、次に示す 8 つのフェーズで設定します。
+このテスト環境を設定するには、10 のフェーズがあります。
 
-1.  パススルー認証を実装するシミュレーション エンタープライズ Microsoft 365 テスト環境を構築する
-2.  Azure AD シームレス シングル サインオンを構成する
-3.  名前付きの場所を構成する
-4.  パスワード ライトバックを構成する
-5.  セルフサービスのパスワードのリセットを構成する
-6.  多要素認証を構成する
-7.  Azure AD Identity Protection を有効化する
-8.  Exchange Online および Skype for Business Online に対して先進認証を有効化する
+1. パススルー認証を実装するシミュレーション エンタープライズ Microsoft 365 テスト環境を構築する
+2. Azure AD シームレス シングル サインオンを構成する
+3. 名前付きの場所を構成する
+4. パスワード ライトバックを構成する
+5. セルフサービスのパスワードのリセットを構成する
+6. 多要素認証を構成する
+7. ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする
+8. Azure ADパスワード保護を構成する 
+9. Azure AD Identity Protection を有効化する
+10. Exchange Online および Skype for Business Online に対して先進認証を有効化する
 
 ## <a name="phase-1-build-out-your-simulated-enterprise-with-pass-through-authentication-microsoft-365-test-environment"></a>フェーズ 1: パススルー認証を実装するシミュレーション エンタープライズ Microsoft 365 テスト環境を構築する
 
@@ -67,7 +68,7 @@ ms.locfileid: "48399183"
 
 次に、テスト ラボ ガイドの[「パスワードのリセット」のフェーズ 3](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset) に説明されている手順に従います。 
 
-特定の Azure AD グループに含まれるアカウントのパスワード リセットを有効にする場合は、それらのアカウントを**パスワードのリセット** グループに追加します。
+特定の Azure AD グループに含まれるアカウントのパスワード リセットを有効にする場合は、それらのアカウントを **パスワードのリセット** グループに追加します。
 
 - ユーザー 2
 - ユーザー 3
@@ -87,11 +88,19 @@ User 2 アカウントのパスワードのリセットのみテストします�
 
 User 2 アカウントの多要素認証のみテストします。
 
-## <a name="phase-7-enable-azure-ad-identity-protection"></a>フェーズ 7: Azure AD Identity Protection を有効化する
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>フェーズ 7: ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする 
+
+ドメイン [に参加している](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) Windows コンピューターのデバイスの自動登録を有効にするには、次の手順に従います。
+
+## <a name="phase-8-configure-azure-ad-password-protection"></a>フェーズ 8: Azure ADパスワード保護を構成する 
+
+既知 [の脆弱なパスワード](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) とそのバリアントをブロックするには、次の手順に従います。
+
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>フェーズ 9: Azure AD Identity Protection を有効にする
 
 [テスト ラボ ガイドの「Azure AD Identity Protection」のフェーズ 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) に説明されている手順に従います。 
 
-## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>フェーズ 8: Exchange Online および Skype for Business Online に対して先進認証を有効化する
+## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>フェーズ 10: Exchange Online と Skype for Business Online のモダン認証を有効にする
 
 Exchange Online については、[こちら](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)で説明されている手順に従います。 
 
@@ -121,11 +130,11 @@ Skype for Business Online については、
 
 [その他の ID のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md#identity)
 
-[Identity ロードマップ](identity-roadmap-microsoft-365.md)
+[ID ロードマップ](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[エンタープライズドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise のドキュメント](https://docs.microsoft.com/microsoft-365-enterprise/)
 
