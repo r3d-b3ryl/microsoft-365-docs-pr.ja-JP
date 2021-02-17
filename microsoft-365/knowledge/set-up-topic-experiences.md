@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Microsoft のトピックをセットアップする方法について説明します。
-ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150502"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261471"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Microsoft のトピックをセットアップする
 
@@ -24,6 +24,8 @@ Microsoft 365 管理センターを使用して、トピックを設定および
 環境内でトピックをセットアップおよび構成する最善の方法を計画することが重要です。 この記事の手順を [開始する前に、「Microsoft のトピック](plan-topic-experiences.md) を計画する」を参照してください。
 
 Microsoft 365 管理センターにアクセスしてトピックをセットアップするには、グローバル管理者または SharePoint 管理者である [必要](https://www.microsoft.com/microsoft-viva/topics) があります。
+
+管理対象デバイスを必要とするように[](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)SharePoint を構成している場合は、管理対象デバイスからトピックを設定してください。
 
 ## <a name="video-demonstration"></a>ビデオ デモンストレーション
 
@@ -40,13 +42,13 @@ Microsoft 365 管理センターにアクセスしてトピックをセットア
 トピックを設定するには
 
 1. Microsoft [365 管理センターで、[](https://admin.microsoft.com)セットアップ] **を選択し**、[ファイルとコンテンツ] **セクションを表示** します。
-2. [ファイルと **コンテンツ] セクションで** 、[ユーザーをナレッジ **に接続する] をクリックします**。
+2. [ファイルと **コンテンツ] セクションで** 、[ユーザーをナレッジに **接続する] をクリックします**。
 
     ![ユーザーを知識に接続する](../media/admin-org-knowledge-options.png) 
 
 3. [知識 **へのユーザーの** 接続] ページで、[開始 **]** をクリックしてセットアップ プロセスの手順を説明します。
 
-    ![開始する](../media/k-get-started.png) 
+    ![作業の開始](../media/k-get-started.png) 
 
 4. [ **トピックを検索する方法の** 選択] ページで、トピックの検出を構成します。 **[SharePoint トピック ソース** の選択] セクションで、検出時にトピックのソースとしてクロールする SharePoint サイトを選択します。 次から選択します。
     - **すべてのサイト**: 組織内のすべての SharePoint サイト。 これには、現在および将来のサイトが含まれます。
@@ -74,8 +76,8 @@ Microsoft 365 管理センターにアクセスしてトピックをセットア
 
     - **[名前**]: 除外するトピックの名前を入力します。 これを行うには 2 つの方法があります。
         - 完全一致: 正確な名前または頭字語 *(Contoso* や ATL など) *を含めできます*。
-        - 部分一致: 特定の単語を含むすべてのトピックを除外できます。  たとえば、円弧 *には*、円弧の円、円弧の円弧、トレーニング用の円弧など、単語の円弧を含むすべてのトピック *が除外されます*。 ただし、Architecture など、単語の一部としてテキストが含まれるトピックは除外されない点に *注意してください*。
-    - **略式 (省略可能)**: 頭字語を除外する場合は、略語の略語を入力します。
+        - 部分一致: 特定の単語を含むすべてのトピックを除外できます。  たとえば、円弧 *には*、円弧、円弧の円弧、トレーニング用の円弧など、その中に円弧を含むすべてのトピック *が除外されます*。 ただし、Architecture など、単語の一部としてテキストが含まれるトピックは除外されない点に *注意してください*。
+    - **略語 (省略可能)**: 頭字語を除外する場合は、略語の略語を入力します。
     - **MatchType-Exact/Partial**: 入力した名前が完全一致型か部分一致型 *かを入力します*。
 
     .csv ファイルを完成して保存したら、[参照] を **選択して** 検索し、選択します。
@@ -137,13 +139,13 @@ Microsoft 365 管理センターにアクセスしてトピックをセットア
 
 ## <a name="manage-topic-experiences"></a>トピック エクスペリエンスを管理する
 
-トピックの設定が完了したら [、Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)管理センターでセットアップ時に選択した設定を変更できます。 次のリファレンスを参照してください。
+トピックの設定が完了したら [、Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)管理センターでセットアップ時に選択した設定を変更できます。 次の参考資料を参照してください:
 
 - [Microsoft のトピックの検出を管理するトピック](topic-experiences-discovery.md)
 - [Microsoft のトピックに関するトピックの表示を管理する](topic-experiences-knowledge-rules.md)
 - [Microsoft のトピックのアクセス許可を管理するトピック](topic-experiences-user-permissions.md)
 - [Microsoft のトピック センターの名前を変更する](topic-experiences-administration.md)
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 [トピック エクスペリエンスの概要](topic-experiences-overview.md)
