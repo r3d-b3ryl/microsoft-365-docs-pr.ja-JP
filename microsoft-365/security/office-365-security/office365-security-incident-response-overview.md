@@ -19,23 +19,23 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8dd7a90255fdd3e083a5d7306cac2e9ca6411024
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: d37fb232b717485c40218fd8a3c3117ba9b8322b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150185"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287643"
 ---
 # <a name="security-incident-response"></a>セキュリティ インシデント対応
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
- **概要:** このソリューションでは、Office 365 で最も一般的なサイバーセキュリティ攻撃の指標、特定の攻撃を肯定的に確認する方法、およびそれに対応する方法を示します。
+ **概要:** このソリューションは、Office 365 で最も一般的なサイバーセキュリティ攻撃に対するインジケーターの内容、特定の攻撃を肯定的に確認する方法、および攻撃に対応する方法を示します。
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>サイバー攻撃に対応する方法を学ぶ
 
@@ -45,7 +45,7 @@ ms.locfileid: "50150185"
 
 - 攻撃とは何か、どのように機能するのか。
 
-- どのような兆候 (侵害インジケーター (IOC) と呼ばれる) を探し、どのように探す必要があります。
+- 侵害インジケーター (IOC) と呼ばれる、どのような兆候を探し、それらを探す方法を探す必要があります。
 
 - 攻撃を積極的に確認する方法。
 
@@ -67,7 +67,7 @@ ms.locfileid: "50150185"
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>サイバー セキュリティの専門家のように、Microsoft 365 のセキュリティを強化する
 
-Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。  Microsoft 365 セキュリティ ロードマップ - 最初の [30 日間、90](security-roadmap.md) 日間、およびそれ以降の最優先事項を使用して、Microsoft 365 組織をセキュリティ保護するための Microsoft 推奨ベスト プラクティスを実装します。
+Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。  Microsoft 365 セキュリティ ロードマップ - 最初の [30 日間、90](security-roadmap.md) 日間、およびそれ以降の最優先事項を使用して、Microsoft 365 組織をセキュリティ保護するための Microsoft が推奨するベスト プラクティスを実装します。
 
 - 最初の 30 日以内に実行するタスク。  これらはすぐに影響を受け、ユーザーへの影響は低い。
 

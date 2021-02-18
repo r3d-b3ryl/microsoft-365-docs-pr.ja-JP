@@ -21,20 +21,20 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 95c16ed9ad3db7c70202f3a054e3fa77ef24e00a
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: bef2fbd1e9e3d3525f9c274b5f9127acfb218396
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233590"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287127"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の修復アクション
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Microsoft Defender for Office 365 プラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 プラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="remediation-actions"></a>修復アクション
 
@@ -64,7 +64,7 @@ Microsoft Defender for Office 365 には、さまざまな脅威に対処する�
 |User|ユーザーがマルウェア/フィッシングを送信している|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> ユーザーがマルウェア/フィッシングを報告していたり、攻撃の一[](anti-spoofing-protection.md)部としてユーザーをスプーフィングしている可能性があります。 脅威 [エクスプローラーを使用](threat-explorer.md) して、マルウェアやフィッシングを含むメール [を表示および](threat-explorer-views.md#email--malware) 処理 [します](threat-explorer-views.md#email--phish)。|
 |User|メールの転送 <br> (メールボックス転送ルールが構成され、データの取り出しに使用できます)。|転送ルールを削除する <p> 自動[転送されたメッセージ レポートを](mail-flow-insights-v2.md)含[](mfi-auto-forwarded-messages-report.md)むメール フローの分析情報を使用して、転送されたメールに関するより具体的な詳細を表示します。|
 |User|電子メール委任ルール <br> (ユーザーのアカウントに委任が設定されています。)|委任ルールを削除する <p> 組織で Microsoft [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user)を使用している場合は、委任のアクセス許可を取得しているユーザーの調査を検討してください。|
-|User|データ流出 <br> (ユーザーが電子メールまたはファイル共有 DLP ポリシーに [違反しました](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)。)|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> [DLP レポートを表示し、アクションを実行します](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)。|
+|User|データ流出 <br> (ユーザーが電子メールまたはファイル共有 DLP ポリシーに [違反しました](../../compliance/data-loss-prevention-policies.md)。)|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> [DLP レポートを表示し、アクションを実行します](../../compliance/view-the-dlp-reports.md)。|
 |User|異常なメール送信 <br> (ユーザーが最近、過去 7 ~ 10 日間よりも多くのメールを送信しました。)|調査を自動化しても、特定の保留中のアクションは発生しない。 <p> 大量の電子メールを送信すること自体は悪意のあるものではありません。ユーザーがイベントの大規模な受信者グループにメールを送信しただけである可能性があります。 調査するには、メール フロー[マップ レポート](mail-flow-insights-v2.md)を[](mfi-mail-flow-map-report.md)含むメール フローの分析情報を使用して、何が起こっているのかを判断し、アクションを実行します。|
 
 ## <a name="next-steps"></a>次の手順
@@ -75,4 +75,4 @@ Microsoft Defender for Office 365 には、さまざまな脅威に対処する�
 ## <a name="related-articles"></a>関連記事
 
 - [Microsoft Defender for Endpoint での自動調査について説明します](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Microsoft 365 Defender の機能について](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Microsoft 365 Defender の機能について](../mtp/microsoft-threat-protection.md)

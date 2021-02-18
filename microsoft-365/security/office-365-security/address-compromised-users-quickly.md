@@ -15,24 +15,24 @@ ms.date: 02/25/2020
 description: microsoft Defender for Office 365 プラン 2 の自動調査および対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスを高速化する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2159ab7ad7e13c4cd4c2c428317ee7d99f78158c
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 1dda8c9b4aec30fd35efa153aaf032eee23b5e8a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176065"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288743"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>自動調査と対応により、侵害されたユーザー アカウントに対処する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
-[Microsoft Defender for Office 365 プラン 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) には、強力な自動調査および対応 [(AIR)](office-365-air.md) 機能が含まれています。 このような機能により、セキュリティ運用チームが脅威に対処する多くの時間と労力を節約できます。 Microsoft は引き続きセキュリティ機能を強化しています。 最近、セキュリティが侵害されたユーザー セキュリティ プレイブック (現在プレビュー中) が含まれる AIR 機能が強化されました。 侵害されたユーザー セキュリティ プレイブックの詳細については、この記事を参照してください。 さらに詳しくは、Microsoft Defender for [Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) でユーザーの侵害を検出して対応し、侵害の範囲を制限する時間の高速化に関するブログ投稿をご覧ください。
+[Microsoft Defender for Office 365 プラン 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) には、強力な自動調査および対応 [(AIR)](office-365-air.md) 機能が含まれています。 このような機能により、セキュリティ運用チームは脅威に対処するために多くの時間と労力を節約できます。 Microsoft は引き続きセキュリティ機能を強化しています。 最近、AIR の機能が強化され、セキュリティが侵害されたユーザー セキュリティ プレイブック (現在プレビュー中) が含まれます。 侵害されたユーザー セキュリティ プレイブックの詳細については、この記事を参照してください。 さらに詳細については、Microsoft Defender for [Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) でユーザーの侵害を検出して対応し、侵害の範囲を制限する時間の高速化に関するブログ投稿をご覧ください。
 
 ![侵害されたユーザーの自動調査](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -46,13 +46,13 @@ ms.locfileid: "50176065"
 
 ## <a name="compromised-user-alerts"></a>侵害されたユーザーアラート
 
-ユーザー アカウントが侵害された場合、異常または異常な動作が発生します。 たとえば、フィッシングおよびスパム メッセージは、信頼できるユーザー アカウントから内部的に送信される場合があります。 Defender for Office 365 は、365 内のメール パターンやコラボレーション アクティビティでこのような異常Officeできます。 この場合、アラートがトリガーされ、脅威軽減プロセスが開始されます。
+ユーザー アカウントが侵害された場合、異常または異常な動作が発生します。 たとえば、フィッシングメッセージやスパム メッセージは、信頼できるユーザー アカウントから内部的に送信される場合があります。 Defender for Office 365 は、365 内のメール パターンやコラボレーション アクティビティでこのような異常Officeできます。 この場合、アラートがトリガーされ、脅威軽減プロセスが開始されます。
 
 たとえば、不審な電子メール送信のためにトリガーされたアラートを次に示します。
 
 ![不審な電子メール送信のためにトリガーされたアラート](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
-次に、ユーザーの送信制限に達した場合にトリガーされたアラートの例を示します。
+次に、ユーザーの送信制限に達するとトリガーされたアラートの例を示します。
 
 ![送信制限に達した場合にトリガーされるアラート](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
@@ -62,14 +62,14 @@ ms.locfileid: "50176065"
 
 - [制限されたユーザーの表示と調査](#view-and-investigate-restricted-users)
 
-- [自動調査の詳細を表示する](#view-details-about-automated-investigations)
+- [自動調査に関する詳細を表示する](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
 > 次のタスクを実行するには、適切なアクセス許可が必要です。 AIR [機能を使用するために必要なアクセス許可を参照してください](office-365-air.md#required-permissions-to-use-air-capabilities)。
 
 ### <a name="view-and-investigate-restricted-users"></a>制限されたユーザーの表示と調査
 
-制限されたユーザーの一覧に移動するには、いくつかのオプションがあります。 たとえば、セキュリティ/コンプライアンス センター&、脅威管理のレビューの制限付きユーザー \> **に** \> **移動できます**。 次の手順では、アラート ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性があるさまざまな種類のアラートを表示するための優れた方法です。
+制限されたユーザーの一覧に移動するには、いくつかのオプションがあります。 たとえば、セキュリティ/コンプライアンス センター&、脅威管理の [制限されたユーザー  ] \> **のレビューに** \> **移動できます**。 次の手順では、アラート ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性があるさまざまな種類のアラートを確認するための優れた方法です。
 
 1. <https://protection.office.com> に移動し、サインインします。
 
@@ -81,23 +81,23 @@ ms.locfileid: "50176065"
 
    これにより、制限されたユーザーの一覧が開きます。
 
-   ![Office 365 の制限付きユーザー](/microsoft-365/media/office365atp-restrictedusers.jpg)
+   ![Office 365 での制限付きユーザー](/microsoft-365/media/office365atp-restrictedusers.jpg)
 
 4. 制限されたユーザーの解放など、詳細を表示してアクションを実行するには、一覧でユーザー [アカウントを選択します](removing-user-from-restricted-users-portal-after-spam.md)。
 
-### <a name="view-details-about-automated-investigations"></a>自動調査の詳細を表示する
+### <a name="view-details-about-automated-investigations"></a>自動調査に関する詳細を表示する
 
 自動調査が開始すると、セキュリティ/コンプライアンス センターで、その詳細と結果&確認できます。 [脅威 **管理の** \> **調査] に移動** し、調査を選択して詳細を表示します。
 
-詳細については、「調査の詳細 [を表示する」を参照してください](air-view-investigation-results.md)。
+詳細については、「調査の [詳細を表示する」を参照してください](air-view-investigation-results.md)。
 
 ## <a name="keep-the-following-points-in-mind"></a>次の点に気を付ける
 
-- **アラートを最新の情報に残します**。 ご存知のように、侵害が検出されなくなるほど、組織、顧客、パートナーに広範な影響とコストが発生する可能性が高くなります。 脅威を軽減するために、特にユーザーのアカウントが侵害された場合は、早期検出と適切な対応が重要です。
+- **アラートを最新の情報に残します**。 ご存知のように、侵害が検出されなくなるほど、組織、顧客、パートナーに広範な影響とコストが発生する可能性が大きくなります。 脅威を軽減するために、特にユーザーのアカウントが侵害された場合は、早期検出と適切な対応が重要です。
 
 - **自動化は、セキュリティ運用チームを支援しますが、置き換わるのではありません**。 調査と対応の自動化機能は、セキュリティが侵害されたユーザーを早期に検出できますが、セキュリティ運用チームは調査と修復を行う必要があります。 サポートが必要な場合 「アクション [の確認と承認」を参照してください](air-review-approve-pending-completed-actions.md)。
 
-- **不審なログインアラートを唯一のインジケーターとして使用していけな 。** ユーザー アカウントが侵害されると、疑わしいログインアラートがトリガーされる場合とトリガーされない場合があります。 アカウントが侵害された後に発生し、アラートをトリガーする一連のアクティビティである場合があります。 アラートについて詳しくは、次のリンクを参照してください。 アラート [ポリシーを参照してください](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。
+- **不審なログインアラートを唯一のインジケーターとして使用していけな 。** ユーザー アカウントが侵害されると、疑わしいログインアラートがトリガーされる場合とトリガーされない場合があります。 アカウントが侵害された後に発生し、アラートをトリガーする一連のアクティビティである場合があります。 アラートについて詳しくは、次のリンクを参照してください。 アラート [ポリシーを参照してください](../../compliance/alert-policies.md)。
 
 ## <a name="next-steps"></a>次の手順
 

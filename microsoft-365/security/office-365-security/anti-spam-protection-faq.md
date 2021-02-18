@@ -19,33 +19,33 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) のスパム対策保護に関してよく寄せられる質問と回答を表示できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8620ad3f99c45dae3442ec89d879124053c1a005
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 8abccdac73877c3f24114afaa78c13143e156868
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175981"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288971"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護に関する FAQ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-このトピックでは、Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織のマルウェア対策保護に関してよく寄せられる質問と回答を提供します。
+このトピックでは、Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織に対するマルウェア対策保護に関してよく寄せられる質問と回答を提供します。
 
 検疫に関する質問と回答については、「[検疫に関する FAQ](quarantine-faq.md)」を参照してください。
 
-マルウェア対策保護に関する質問と回答については、「マルウェア対策保護に関する [FAQ」を参照してください](anti-malware-protection-faq-eop.md)。
+マルウェア対策保護に関する質問と回答については、マルウェア対策保護に関する [FAQ を参照してください](anti-malware-protection-faq-eop.md)。
 
 スプーフィング対策保護に関する質問と回答については、スプーフィング対策保護に関する [FAQ を参照してください](anti-spoofing-protection-faq.md)。
 
 ## <a name="by-default-what-happens-to-a-spam-detected-message"></a>既定では、スパム検出メッセージはどのように処理されますか?
 
-**受信メッセージの場合:** スパムの大部分は、送信元の電子メール サーバーの IP アドレスに基づく接続フィルターによって削除されます。 スパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれる) は、スパム、バルク、またはフィッシングとしてメッセージを検査および分類します。 既定では、スパムまたはバルクとして分類されたメッセージは受信者の迷惑メール フォルダーに配信され、フィッシングとして分類されたメッセージは検疫されます。 既定のスパム対策ポリシー (すべての受信者に適用されるポリシー) を変更したり、特定のユーザー グループに対してより厳しい設定を使用してカスタムのスパム対策ポリシーを作成することができます (たとえば、役員に送信されるスパムを検疫できます)。 詳細については、「スパム対策ポリシー [を構成する」および「推奨](configure-your-spam-filter-policies.md) されるスパム対策 [ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
+**受信メッセージの場合:** スパムの大部分は、送信元の電子メール サーバーの IP アドレスに基づく接続フィルターによって削除されます。 スパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれる) は、スパム、バルク、またはフィッシングとしてメッセージを検査および分類します。 既定では、スパムまたはバルクとして分類されたメッセージは受信者の迷惑メール フォルダーに配信され、フィッシングとして分類されたメッセージは検疫されます。 既定のスパム対策ポリシー (すべての受信者に適用されます) を変更したり、特定のユーザー グループに対してより厳しい設定を使用してカスタムスパム対策ポリシーを作成することができます (たとえば、役員に送信されるスパムを検疫できます)。 詳細については、「スパム対策ポリシー [を構成する」および「推奨](configure-your-spam-filter-policies.md) されるスパム対策 [ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
 > [!IMPORTANT]
 > EOP がオンプレミスのメールボックスを保護するハイブリッド展開では、メッセージに追加される EOP スパム フィルター ヘッダーを検出するために、オンプレミスの Exchange 組織で 2 つの Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
@@ -54,7 +54,7 @@ ms.locfileid: "50175981"
 
 ## <a name="whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>ゼロデイ スパムのバリエーションとは何ですか。また、サービスによってどのように処理されますか?
 
-ゼロデイ スパムのバリエーションは、キャプチャまたは分析されたことがない第 1 世代の未知の種類のスパムです。そのため、スパム対策フィルターの検出に使用できる情報はまだありません。 ゼロデイ スパム サンプルがスパム アナリストによってキャプチャおよび分析されると、スパム分類の条件を満たす場合、スパム対策フィルターが更新され検出され、"ゼロデイ" とは見なされません。
+ゼロデイ スパムのバリエーションは、これまでキャプチャまたは分析されたことがない第 1 世代の未知の種類のスパムです。そのため、スパム対策フィルターの検出に使用できる情報はまだありません。 ゼロデイ スパム サンプルがスパム アナリストによってキャプチャおよび分析された後、スパム分類基準を満たしている場合、スパム対策フィルターが更新され検出され、"ゼロデイ" とは見なされません。
 
 **注:** ゼロデイ スパムのバリエーションである可能性があるメッセージを受け取った場合、サービスの改善に役立つメッセージを Microsoft に送信するには、「メッセージとファイルを Microsoft に報告する」で説明されている方法のいずれかを使用して [Microsoft](report-junk-email-messages-to-microsoft.md)に送信してください。
 
@@ -116,7 +116,7 @@ Exchange Online のお客様: Exchange Online での監視 [、レポート、�
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>マイクロソフトには、フィッシング詐欺から自分を守る方法に関するドキュメントはありますか。
 
-はい。 詳細については、「インターネット上の [プライバシーを保護する」を参照してください。](https://support.microsoft.com/help/4091455)
+はい。 詳細については、「インターネット上 [のプライバシーを保護する」を参照してください。](https://support.microsoft.com/help/4091455)
 
 ## <a name="are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>スパム メッセージおよびマルウェア メッセージの送信元に関する調査や、法執行機関への転送は行っていますか?
 
@@ -126,7 +126,7 @@ Exchange Online のお客様: Exchange Online での監視 [、レポート、�
 
 以下に示すガイドラインは、送信メール メッセージを送信するためのベスト プラクティスです。
 
-- **ソース 電子メール ドメインは DNS で解決する必要があります。**
+- **ソース メール ドメインは DNS で解決する必要があります。**
 
   たとえば、送信者がuser@fabrikam、fabrikam ドメインは IP アドレス 192.0.43.10 に解決されます。
 
@@ -146,7 +146,7 @@ Exchange Online のお客様: Exchange Online での監視 [、レポート、�
 
   [SPF を設定して、スプーフィングを防止する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [ドメイン FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [ドメイン FAQ](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
 
 - **DKIM で電子メールを署名する場合、relaxed 正規化で署名します。**
 

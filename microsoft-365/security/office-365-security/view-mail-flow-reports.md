@@ -19,17 +19,21 @@ description: 管理者は、セキュリティ/コンプライアンス セン�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e69085d1fad845ab519f2590b0527316463373a7
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: dbbec056203ad816d37f5451115d2c7d172eee92
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029800"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286719"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ/コンプライアンス センターの [レポート] ダッシュボードでメール フロー &表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 セキュリティ & コンプライアンス センターのメール フロー[](mail-flow-insights-v2.md)ダッシュボードで使用できるメール フロー レポートに加えて、Microsoft 365 組織の監視に役立つさまざまな追加のメール フロー レポートをレポート ダッシュボードで利用できます。
 
@@ -230,7 +234,7 @@ Mailflow **ステータス レポートは**、送信 [](#sent-and-received-emai
 
   - **良いメール**
   - **マルウェア**
-  - **スパム**
+  - **[スパム]**
   - **エッジ保護**
   - **ルール メッセージ**
   - **フィッシング詐欺メール**
@@ -264,7 +268,7 @@ Mailflow **ステータス レポートは**、送信 [](#sent-and-received-emai
 
 ![メールフロー状態レポートの種類ビュー ](../../media/mail-flow-status-report-type-view.png)
 
-### <a name="direction-view-for-the-mailflow-status-report"></a>Mailflow ステータス レポートの方向ビュー
+### <a name="direction-view-for-the-mailflow-status-report"></a>メールフロー状態レポートの方向ビュー
 
 [方向] タブ **をクリックすると** 、[種類] ビューの同じ **既定のフィルター** が使用されます。
 
@@ -280,13 +284,13 @@ Mailflow **ステータス レポートは**、送信 [](#sent-and-received-emai
 
 詳細ビューでは、1 日のデータのみをエクスポートできます。 したがって、データを 7 日間エクスポートする場合は、7 つの異なるエクスポート操作を実行する必要があります。
 
-エクスポートする .csv ファイルは、それぞれ 150,000 行に制限されています。 その日のデータに 150,000 行を超える行が含まれる場合は、複数の .csv ファイルが作成されます。
+エクスポートされる .csv ファイルは、それぞれ 150,000 行に制限されています。 その日のデータに 150,000 行を超える行が含まれる場合は、複数の .csv ファイルが作成されます。
 
 ![メールフローステータス レポートの方向ビュー ](../../media/mail-flow-status-report-direction-view.png)
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>メールフローステータス レポートのじょうごビュー
 
-じょう **ごビュー** には、Microsoft のメール脅威防止機能が組織内の受信メールと送信メールをフィルター処理する方法が表示されます。 この記事では、メールの総数と、エッジ保護、マルウェア対策、フィッシング対策、スパム対策、スプーフィング対策などの構成済みの脅威保護機能が、このカウントにどのような影響を与えるのかについて詳しく情報を提供します。
+じょう **ごビュー** には、Microsoft のメール脅威防止機能が組織内の受信メールと送信メールをフィルター処理する方法が表示されます。 この記事では、メールの総数と、エッジ保護、マルウェア対策、フィッシング対策、スパム対策、スプーフィング対策など、構成された脅威保護機能が、このカウントにどのような影響を与えるのかについて詳しく知っています。
 
 [ **じょう** ご] タブをクリックすると、既定では、このビューには次のフィルターで構成されたグラフとデータ テーブルが含まれます。
 
@@ -376,7 +380,7 @@ Tech **ビューは** じょうごビューに **似ています。** 構成済�
 
 - **Total email**
 - **エッジの許可** と **フィルター処理されたエッジ**
-- **マルウェアではない、****安全な添付ファイルの検出**、 <sup>\*</sup> **マルウェア対策エンジンの検出**、**およびルール メッセージ**
+- **マルウェアではない、****安全な添付ファイルの検出** <sup>\*</sup> 、**マルウェア対策エンジンの検出**、**およびルール メッセージ**
 - **Not phish**, **DMARC failure**, **Impersonation detection**, Spoof **detection**, and **Phish detection**
 - **URL デトレーションと URL デトレーション** 検出 **による検出なし**<sup>\*</sup>
 - **スパムおよびスパム****ではない**
@@ -400,7 +404,7 @@ Tech **ビューは** じょうごビューに **似ています。** 構成済�
 - **ZAP の削除**
 - **安全なリンクによる検出**
 
-データ テーブルで行を選択すると、メール数の詳細がフライアウトに表示されます。
+データ テーブル内の行を選択すると、メールカウントの詳細がフライアウトに表示されます。
 
 **Export**:
 
@@ -409,9 +413,9 @@ Tech **ビューは** じょうごビューに **似ています。** 構成済�
 - **概要 (最大 90 日間のデータを含む)**
 - **詳細 (最大 30 日間のデータ)**
 
-[ **日付] で** 範囲を選択し、[適用] を **クリックします**。 現在のフィルターのデータは、.csv ファイルにエクスポートされます。
+[ **日付] で** 範囲を選択し、[適用] を **クリックします**。 現在のフィルターのデータが .csv ファイルにエクスポートされます。
 
-エクスポートする .csv ファイルは、それぞれ 150,000 行に制限されています。 データに 150,000 行を超える行が含まれる場合は、複数の .csv ファイルが作成されます。
+エクスポートされる .csv ファイルは、それぞれ 150,000 行に制限されています。 データに 150,000 行を超える行が含まれる場合は、複数の .csv ファイルが作成されます。
 
  ![メールフローの状態レポートのテクニカル ビュー ](../../media/mail-flow-status-report-Tech-view.png)
 
@@ -423,7 +427,7 @@ Tech **ビューは** じょうごビューに **似ています。** 構成済�
 
 レポートを表示するには、[セキュリティ](https://protection.office.com)/コンプライアンス センターを&レポート ダッシュボードに移動し、[送信メールと受信メール \> **] を選択します**。 レポートに直接移動するには、開きます <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> 。
 
-![レポート ダッシュボードの送信メールウィジェットと受信メール ウィジェット](../../media/sent-and-received-email-report-widget.png)
+![レポート ダッシュボードで送信および受信した電子メール ウィジェット](../../media/sent-and-received-email-report-widget.png)
 
 ### <a name="report-view-for-the-sent-and-received-email-report"></a>送信および受信メール レポートのレポート ビュー
 
@@ -495,7 +499,7 @@ Tech **ビューは** じょうごビューに **似ています。** 構成済�
 
 円グラフの構成は、これらの選択内容に基づいて変化します。
 
-円グラフでくさびの上にカーソルを合わせると、送信または受信したメッセージの数が表示されます。
+円グラフでくさびをポイントすると、送信または受信したメッセージの数が表示されます。
 
 レポート ビューで **[フィルター** ] をクリックすると、開始日と終了日で **日付範囲****を指定できます**。
 
@@ -546,7 +550,7 @@ Tech **ビューは** じょうごビューに **似ています。** 構成済�
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 > [!NOTE]
-> Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
+> Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 

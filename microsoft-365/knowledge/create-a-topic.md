@@ -14,22 +14,22 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242892"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279400"
 ---
 # <a name="create-a-new-topic"></a>新規トピックを作成する 
 
 In Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
 
 > [!Note] 
-> AI によって収集されたトピック内の情報はセキュリティによって[](topic-experiences-security-trimming.md)トリミングされる一方で、手動で作成されたトピック内の情報は、そのトピックを表示する権限を持つすべてのユーザーに表示されます。 
+> AI によって収集されたトピック内の情報はセキュリティによって[](topic-experiences-security-trimming.md)トリミングされる一方で、手動で作成したトピックのトピックの説明と人の情報は、そのトピックを表示する権限を持つすべてのユーザーに表示されます。 
 
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 新しいトピックを作成するには、次の必要があります。
 - 多くのトピックのライセンスを持っている。
@@ -77,6 +77,9 @@ In Topics, you can create a new topic if one is not discovered through indexing 
 
     [リンクから] <b>オプションを使用して、URL</b> を指定してファイルまたはページを追加することもできます。 
 
+    > [!Note] 
+    > 追加するファイルとページは、同じ Microsoft 365 テナント内にある必要があります。 トピックの外部リソースへのリンクを追加する場合は、手順 8 のキャンバス アイコンを使用して追加できます。
+
 
 6.  [ <b>関連サイト]</b> セクションには、トピックに関する情報を含むサイトが表示されます。 
 
@@ -97,6 +100,16 @@ In Topics, you can create a new topic if one is not discovered through indexing 
    追加した関連トピックは、接続されたトピックとして表示されます。
 
    ![関連トピック](../media/knowledge-management/related-topics-final.png)</br> 
+
+   関連するトピックを削除するには、削除するトピックを選択し、[トピックの削除] <b>アイコンを選択</b> します。</br>
+ 
+   ![関連トピックを削除する](../media/knowledge-management/remove-related.png)</br>  
+
+   次に、[削除] を <b>選択します</b>。</br>
+
+   ![削除を確認する](../media/knowledge-management/remove-related-confirm.png)</br> 
+     
+ 
 
 
 8. キャンバス アイコンを選択して静的な項目 (テキスト、画像、リンクなど) をページに追加することもできます。このアイコンは、簡単な説明の下に表示されます。 選択すると、ページに追加するアイテムを選択できる SharePoint ツールボックスが開きます。

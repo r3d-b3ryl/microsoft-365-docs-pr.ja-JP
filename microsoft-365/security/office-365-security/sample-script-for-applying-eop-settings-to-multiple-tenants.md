@@ -15,19 +15,19 @@ ms.custom:
 description: この記事では、PowerShell を使用して、Microsoft Exchange Online Protection (EOP) のテナントに構成設定を適用する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b7d856a7cec3bddc32455ba3afadf0323ddce935
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4823ed09cd8a9d72aef21df3d51213cb4512b4f9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166593"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288539"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>EOP 設定を複数のテナントに適用するスクリプトのサンプル
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
 次のサンプル スクリプトを使用すると、複数のテナント (企業) を管理する Microsoft Exchange Online Protection (EOP) 管理者は、Exchange Online PowerShell を使用して、テナントの構成設定を表示または適用できます。
 
@@ -37,7 +37,7 @@ ms.locfileid: "50166593"
 
 2. スプレッドシート アプリ (Excel など) を使用して、次の詳細を含む .csv ファイルを作成します。
 
-   - [UserName] 列: 接続に使用するアカウント (例: `admin@contoso.onmicrosoft.com`
+   - [UserName] 列: 接続に使用するアカウント (例 `admin@contoso.onmicrosoft.com` :
    - コマンドレット列: 実行するコマンドレットまたはコマンド (たとえば、 `Get-AcceptedDomain` または `Get-AcceptedDomain | FT Name` )。
 
    ファイルは次のように表示されます。

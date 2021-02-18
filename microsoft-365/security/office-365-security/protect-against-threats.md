@@ -20,35 +20,35 @@ description: 管理者は、Microsoft 365 の脅威保護について学習し�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb2866fd3e60c021ae89ffabe7149f4b415d63bc
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: c9ca420609628476faba6262fe7ed412b8fa5746
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150714"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288803"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-365 用の Defender の構成をチャンクに分割するクイック Officeを次に示します。 Office 365 の脅威保護機能を初めから使用する場合は、どこから開始する必要があるのか分からず、最適な方法で学習する場合は、チェックリストと開始点としてこのガイダンスを使用してください。
+ここでは、365 用の Defender の構成をチャンクに分割するクイック スタート Office示します。 Office 365 の脅威保護機能を初めから使用する場合は、どこから開始する必要があるのか分からず、最適な方法で学習する場合は、チェックリストと開始点としてこのガイダンスを使用してください。
 
 > [!IMPORTANT]
 > **初期推奨設定はポリシー** の種類ごとに含まれていますが、多くのオプションを使用できます。また、組織の特定のニーズに合わせて設定を調整することもできます。 ポリシーまたは変更がデータセンターを経由して機能するには、約 30 分かかります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>サブスクリプション
 
 脅威保護機能は、すべての Microsoft *または* Office 365 サブスクリプションに含まれています。ただし、一部のサブスクリプションには高度な機能があります。 次の表に、この記事に含まれる保護機能と、最小サブスクリプション要件を示します。
 
 > [!TIP]
-> 監査を有効にする指示以外にも、Office 365 Exchange Online Protection **(EOP)** の一部としてマークされているマルウェア対策、フィッシング対策、スパム対策が開始されます。  これは、Defender for Office 365 の記事では **、(Office 365** 用 Defender) に EOP が含まれていると、EOP に基が構築されるまで、奇数に思える場合があります。
+> 監査を有効にする指示以外にも、Office 365 Exchange Online Protection **(EOP)** の一部としてマークされているマルウェア対策、フィッシング対策、スパム対策が開始されます。  これは、Defender for Office 365 の記事では **、(Office 365** 用 Defender) に EOP が含まれているか、EOP に組み込まれているか、または上に構築されるまで、奇数に思える可能性があります。
 
 ****
 
@@ -71,16 +71,16 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
 
 |役割または役割グループ|詳細については、次の場所を参照してください。|
 |---|---|
-|グローバル管理者|[Microsoft 365 管理者ロールについて](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|グローバル管理者|[Microsoft 365 管理者ロールについて](../../admin/add-users/about-admin-roles.md)|
 |セキュリティ管理者|[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online 組織の管理|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> および <p> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
 詳細については、セキュリティ/コンプライアンス [センターの「アクセス許可&参照してください](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>始める前に、レポートと調査の監査ログを有効にします。
+## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>始める前に、レポートと調査の監査ログを有効にする
 
-監査ログを早期に開始します。 次の特定の手順で監査を **有効** にしている必要があります。 監査ログは、Exchange Online を含むサブスクリプション [で使用できます](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)。 セキュリティ ダッシュボード、メール セキュリティ レポート、エクスプローラーなどの脅威 [](security-dashboard.md)保護レポートのデータを表示するには、[](threat-explorer.md)監査ログをオンにする必要 *があります*。 [](view-email-security-reports.md) 詳細については、「監査ログ検索 [を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
+監査ログを早期に開始します。 次の手順の **特定の場合** は、監査を有効にする必要があります。 監査ログは、Exchange Online を含むサブスクリプション [で使用できます](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)。 セキュリティ ダッシュボード、メール セキュリティ レポート、エクスプローラーなどの脅威 [](security-dashboard.md)保護レポートのデータを表示するには、[](threat-explorer.md)監査ログをオンにする必要 *があります*。 [](view-email-security-reports.md) 詳細については、「監査ログ [検索を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="part-1---anti-malware-protection"></a>パート 1 - マルウェア対策保護
 
@@ -110,7 +110,7 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
 
 2. [既定 **のポリシー] をクリックします**。
 
-3. [偽装 **] セクションで、[** 編集] **をクリック** し、次の設定を指定します。
+3. [偽装 **] セクションで** 、[編集] **をクリック** し、次の設定を指定します。
 
    - [保護する **ユーザーの追加] タブで** 、[保護を有効にする] *をオン* にします。 次に、組織の役員、CEO、CFO、その他の上級リーダーなどのユーザーを追加します。 (個々のメール アドレスを入力するか、クリックしてリストを表示できます)。
 
@@ -118,23 +118,23 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
 
    - [操作 **] タブで**、偽装したユーザーと偽装されたドメイン の両方のオプションのメッセージ **を検疫するを選択** します。 また、偽装安全性のヒントも有効にしてください。
 
-   - [メールボックス インテリジェンス **] タブ** で、メールボックス インテリジェンスが有効になっていることを確認し、メールボックス インテリジェンス ベースの偽装保護を有効にします。 In the **If email is sent by an impersonated user** list, choose Quarantine the **message**.
+   - [メールボックス **インテリジェンス] タブ** で、メールボックス インテリジェンスが有効になっていることを確認し、メールボックス インテリジェンス ベースの偽装保護を有効にします。 In the **If email is sent by an impersonated user** list, choose Quarantine the **message**.
 
-   - [信頼 **できる送信者と** ドメインの追加] タブで、追加する信頼できる送信者またはドメインを指定します。
+   - [信頼 **できる送信者とドメイン** の追加] タブで、追加する信頼できる送信者またはドメインを指定します。
 
    - **設定** を **確認した後、[** 設定の確認] タブに保存します。
 
-4. [ **スプーフィング]** セクションで [編集 **] をクリック** し、次の設定を指定します。
+4. [ **スプーフィング]** セクションで、[編集 **] をクリック** し、次の設定を指定します。
 
    - [ **スプーフィング フィルターの設定** ] タブで、スプーフィング対策保護が有効になっていることを確認します。
 
    - [操作 **] タブで** 、[メッセージの **検疫] を選択します**。
 
-   - **変更** を **確認した後、[** 設定の確認] タブに保存します。 (If you didn't make any changes, **Cancel**.)
+   - **変更** を **確認した後、[設定の** 確認] タブに保存します。 (If you didn't make any changes, **Cancel**.)
 
 5. 既定のポリシー設定ページを閉じます。
 
-フィッシング対策ポリシー オプションの詳細については [、「Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)でのフィッシング対策ポリシーの構成」を参照してください。
+フィッシング対策ポリシー オプションの詳細については、「Microsoft Defender for Office [365](configure-atp-anti-phishing-policies.md)でのフィッシング対策ポリシーの構成」を参照してください。
 
 ## <a name="part-3---anti-spam-protection"></a>パート 3 - スパム対策保護
 
@@ -154,17 +154,17 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
 
 スパム対策ポリシー オプションの詳細については [、「EOP](configure-your-spam-filter-policies.md)でスパム対策ポリシーを構成する」を参照してください。
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>パート 4 - 悪意のある URL とファイルからの保護 (Defender for Office 365 の安全なリンクと安全な添付ファイル)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>パート 4 - 悪意のある URL とファイルからの保護 (Defender の安全なリンクと安全な添付ファイル Office 365)
 
-悪意のある URL やファイルからのクリック時の保護は、Microsoft [Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を含むサブスクリプションで利用できます。 これは、安全な添付ファイル[と安全なリンクの](atp-safe-attachments.md)[ポリシーを使用して](atp-safe-links.md)設定されます。
+悪意のある URL やファイルからのクリック時の保護は、Microsoft Defender for Office [365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を含むサブスクリプションで利用できます。 安全な添付ファイルと[安全なリンクのポリシー](atp-safe-attachments.md)[によって](atp-safe-links.md)設定されます。
 
 ### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全な添付ファイル ポリシー
 
 安全な添付ファイル [を設定するには](atp-safe-attachments.md)、少なくとも 1 つの安全なリンク ポリシーを作成します。
 
-1. セキュリティ/[コンプライアンス センターで&](https://protection.office.com)管理ポリシー ATP の安全な添付ファイルを選択し、[作成] \>  \> をクリック **します**。
+1. セキュリティ & コンプライアンス センター [で、[](https://protection.office.com)脅威 **管理** ポリシー ATP の安全な添付ファイル] を選択し、[作成] \>  \> をクリック **します**。
 
-2. 表示される **安全な添付ファイルの新** しいポリシー ウィザードで、次の設定を構成します。
+2. 表示される **安全な添付ファイルの新しい** ポリシー ウィザードで、次の設定を構成します。
 
    - [名前 **] ボックスに** 「次へ」 `Block malware` と入力し、[次へ] を **クリックします**。
 
@@ -174,7 +174,7 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
 
      **[次へ]** をクリックします。
 
-3. On the **Applied to** page, click **A condition,** choose **Applied if: The recipient domain is,** click **Add,** select your domains, click **Add,** click **Done,** and then click **Next**.
+3. On the **Applied to** page, click **a condition,** choose **Applied if: The recipient domain is,** click **Add,** select your domains, click **Add,** click **Done,** and then click **Next**.
 
 4. 設定を確認し、[完了] を **クリックします**。
 
@@ -182,11 +182,11 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
 
 安全なリンク [を設定するには](atp-safe-links.md)、安全なリンクのグローバル設定を確認および編集し、少なくとも 1 つの安全なリンク ポリシーを作成します。
 
-1. セキュリティ &[コンプライアンス](https://protection.office.com)センターで、[脅威 **管理** ポリシー ATP の安全なリンク] を選択し、[グローバル設定] をクリックして、次の \>  \> 設定を構成します。 
+1. セキュリティ &[コンプライアンス](https://protection.office.com)センターで、[**脅威管理** ポリシー ATP の安全なリンク] を選択し、[グローバル設定] をクリックして、次の \>  \> 設定を構成します。 
 
    - Verify **Use Safe Links in: Office 365 applications** is turned on: Toggle on ![ ](../../media/scc-toggle-on.png) .
    - **Do not track when users click Safe Links**: Turn this setting off to track user clicks: Toggle off ![ ](../../media/scc-toggle-off.png) .
-   - **ユーザーが元の URL への安全な** リンクをクリックさせない: この設定がオンになっていることを確認します:オンに切り ![ 替え ](../../media/scc-toggle-on.png) 。
+   - **ユーザーが元の URL への安全な** リンクをクリックさせない: この設定がオンになっていることを確認します: ![ オンに切り替え ](../../media/scc-toggle-on.png) 。
 
    完了したら、**[保存]** をクリックします。
 
@@ -202,11 +202,11 @@ Office 365 ポリシー用に Defender を構成するには、セキュリテ�
      - **組織内で送信される電子メール メッセージに安全なリンクを適用する**
      - **メッセージを配信する前に URL のスキャンが完了するのを待つ**
      - **組織内で送信される電子メール メッセージに安全なリンクを適用する**
-     - **ユーザーがクリックして元の URL にアクセスできない**
+     - **ユーザーがクリックスルーして元の URL にアクセスできない**
 
      [ **次へ**] をクリックします。
 
-4. On the **Applied to** page, click **A condition,** choose **Applied if: The recipient domain is,** click **Add,** select your domains, click **Add,** click **Done,** and then click **Next**.
+4. On the **Applied to** page, click **a condition,** choose **Applied if: The recipient domain is,** click **Add,** select your domains, click **Add,** click **Done,** and then click **Next**.
 
 5. 設定を確認し、[完了] を **クリックします**。
 
@@ -219,7 +219,7 @@ SharePoint、OneDrive、Teams のようなワークロードは、コラボレ�
 > [!IMPORTANT]
 > **この手順を開始する前に、Microsoft 365** 環境で監査ログが既に有効になっていることを確認してください。 これは通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については、「監査ログ [検索を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-1. セキュリティ/[コンプライアンス センター&、](https://protection.office.com)脅威 **管理** ポリシー ATP の安全な添付ファイルを選択し、[グローバル設定] \>  \> を **クリックします**。
+1. セキュリティ/[コンプライアンス センターで&](https://protection.office.com)管理ポリシー ATP の安全な添付ファイルを選択し、[グローバル設定] \>  \> を **クリックします**。 
 
 2. **[SharePoint、OneDrive、Microsoft Teams の Office 365** の Defender を有効にする] トグルが右側に表示されるのを確認します。オンに切り替え、[保存] をクリック ![ ](../../media/scc-toggle-on.png) **します**。
 
@@ -231,7 +231,7 @@ SharePoint、OneDrive、Teams のようなワークロードは、コラボレ�
    - `$false` Delete および Download 以外のすべてのアクションをブロックします。 ユーザーはリスクを受け入れて、検出されたファイルをダウンロードできます。
 
    > [!TIP]
-   > Microsoft 365 で PowerShell を使用する方法の詳細については、「PowerShell を使用して [Microsoft 365 を管理](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)する」を参照してください。
+   > Microsoft 365 で PowerShell を使用する方法の詳細については、「PowerShell を使用して [Microsoft 365 を管理](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)する」を参照してください。
 
 5. 変更がすべての Microsoft 365 データセンターに分散するために最大 30 分かかります。
 
@@ -245,7 +245,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 3. 通知の名前を指定します。 たとえば、「ライブラリ」に「悪意のあるファイル」と入力します。
 
-4. アラートの説明を入力します。 たとえば、SharePoint Online、OneDrive、または Microsoft Teams で悪意のあるファイルが検出された場合に、管理者に通知を入力できます。
+4. アラートの説明を入力します。 たとえば、「SharePoint Online、OneDrive、または Microsoft Teams で悪意のあるファイルが検出された場合に管理者に通知する」と入力できます。
 
 5. [この通知 **をいつ送信する...] セクションで** 、次の値を設定します。
 
@@ -255,9 +255,9 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 6. [この警告の送信場所 **...]** セクションで、悪意のあるファイルが検出された場合に通知を受け取る必要がある 1 人または複数のグローバル管理者、セキュリティ管理者、またはセキュリティ 閲覧者を選択します。
 
-7. **保存します**。
+7. **Save**.
 
-アラートの詳細については、セキュリティ/コンプライアンス センターの「アクティビティアラート& [参照してください](../../compliance/create-activity-alerts.md)。
+アラートの詳細については、「セキュリティ/コンプライアンス センターでのアクティビティアラート& [参照してください](../../compliance/create-activity-alerts.md)。
 
 > [!NOTE]
 > 構成が完了したら、次のリンクを使用してワークロードの調査を開始します。
@@ -269,7 +269,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 ## <a name="part-6---additional-settings-to-configure"></a>パート 6 - 構成する追加設定
 
-マルウェア、悪意のある URL とファイル、フィッシング、スパムからの保護を構成するとともに、ゼロアワー自動消去を構成することをお勧めします。
+マルウェア、悪意のある URL とファイル、フィッシング、スパムからの保護を構成すると共に、ゼロアワー自動消去を構成することをお勧めします。
 
 ### <a name="zero-hour-auto-purge-for-email-in-eop"></a>EOP での電子メールのゼロアワー自動消去
 
@@ -291,5 +291,5 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 |---|---|
 |レポートを表示して、組織の脅威保護機能がどのように機能しているのか確認する|[セキュリティ ダッシュボード](security-dashboard.md) <p> [電子メール セキュリティ レポート](view-email-security-reports.md) <p> [Microsoft Defender for Office 365 のレポート](view-reports-for-atp.md) <p> [脅威エクスプローラー](threat-explorer.md)|
 |必要に応じて脅威保護ポリシーを定期的に確認および修正する|[セキュリティ スコア](../mtp/microsoft-secure-score.md) <p> [スマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 脅威の調査と対応の機能](keep-users-safe-with-office-365-ti.md)|
-|新機能とサービス更新プログラムを監視する|[標準と対象指定のリリース オプション](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [Message Center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|新機能とサービス更新プログラムを監視する|[標準リリースオプションと対象指定リリース オプション](../../admin/manage/release-options-in-office-365.md) <p> [Message Center](../../admin/manage/message-center.md) <p> [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |EOP および Defender for Office 365 の推奨される Standard および Strict セキュリティ構成の詳細について説明します。|[EOP と Microsoft Defender の 365 セキュリティOffice推奨設定](recommended-settings-for-eop-and-office365-atp.md)|

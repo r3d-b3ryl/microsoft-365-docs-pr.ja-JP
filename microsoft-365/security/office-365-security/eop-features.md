@@ -13,19 +13,19 @@ ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c66c1cd8715717bae92ac81fbefe050f5e485eb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 7dbdf30df0659565d775bfba2cf968ac56f6a4ac
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166173"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286851"
 ---
 # <a name="eop-features"></a>EOP の機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
 
@@ -37,7 +37,7 @@ ms.locfileid: "50166173"
 |機能|説明|
 |---|---|
 |**スパム対策保護**||
-|受信スパム検出|詳細については [、「Microsoft 365](anti-spam-protection.md)のスパム対策保護」を参照してください。 <p> EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「ハイブリッド環境で迷惑メール フォルダーにスパムを配信するためにスタンドアロン [EOP を構成する」を参照してください。](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
+|受信スパム検出|詳細については [、Microsoft 365 のスパム対策保護に関するページを参照してください](anti-spam-protection.md)。 <p> EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「ハイブリッド環境で迷惑メール フォルダーにスパムを配信するためにスタンドアロン [EOP を構成する」を参照してください。](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |送信スパム検出|送信メールの送信にサービスを使用する場合、送信スパム対策保護は常に有効になります。 詳細については、「送信スパム [保護」を参照してください](outbound-spam-controls.md)。|
 |バックスカター保護|詳細については、「 [バックスカターと EOP」を参照してください](backscatter-messages-and-eop.md)。|
 |一括メール フィルタリング|EOP はバルク苦情しきい値 (BCL) を使用して、バルク メール メッセージをスパムとしてマークします。 詳細については、次のトピックをご覧ください。 <p> [迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [EOP でのバルク苦情レベル (BCL)](bulk-complaint-level-values.md) <p> [スパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
@@ -45,8 +45,8 @@ ms.locfileid: "50166173"
 |フィッシング対策保護|EOP には既知のスパム発信者 750,000 名のドメインが含まれています。|
 |スプーフィング対策保護|詳細については、「スプーフィング対策 [保護」を参照してください](anti-spoofing-protection.md)。|
 |**スパム管理**||
-|差出人セーフ リストと受信拒否リストを構成する|詳細については、「安全な差出人[のリストを作成する」および「](create-safe-sender-lists-in-office-365.md)[受信拒否リストを作成する」を参照してください](create-block-sender-lists-in-office-365.md)。|
-|カスタムスパム対策ポリシーを作成する|より細かく制御するには、カスタムスパム対策ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用します。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
+|差出人セーフ リストと受信拒否リストを構成する|詳細については、「差出人セーフ リストを [作成する」および「](create-safe-sender-lists-in-office-365.md) 受信拒否リスト [を作成する」を参照してください](create-block-sender-lists-in-office-365.md)。|
+|カスタムスパム対策ポリシーを作成する|よりきめ細かく管理するには、カスタムスパム対策ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用します。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
 |スパム フィルター処理されたメッセージに対するアクションを構成する|たとえば、コンテンツによりフィルターされたメッセージを削除したり、[迷惑メール] フォルダーまたは検疫にそれらのメッセージを送信したりできます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
 |国際スパム フィルタリング|スパム対策フィルターを構成して、特定の言語で書かれたメッセージや、特定の国や地域から送信されたメッセージをフィルター処理できます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
 |Outlook または Outlook on the web (旧称: Outlook Web App) を介してスパムを管理する|管理者およびエンド ユーザーは、安全な送信者の一覧および受信拒否送信者の一覧を作成できます。 詳細については、「Outlook の迷惑 [メール設定について」を参照してください](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)。 <p> EOP を使用してオンプレミスのメールボックスを保護している場合は、ディレクトリ同期を使用して、これらの設定がサービスに確実に同期されます。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。|
@@ -65,17 +65,17 @@ ms.locfileid: "50166173"
 |カスタム マルウェア フィルター ポリシーを作成する|よりきめ細かく制御する場合は、カスタム マルウェア フィルター ポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することができます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。 詳細については、「マルウェア対策ポリシー [を構成する」を参照してください](configure-anti-malware-policies.md)。|
 |**メール ルーティングとコネクタ**||
 |条件付きメール ルーティング|詳細については、「[シナリオ: Exchange Online での条件付きメール ルーティング](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)」を参照してください。|
-|便宜的な TLS または強制 TLS|コネクタでは、見応えのある TLS または強制 TLS を使用できます。 便利な TLS は TLS 接続を試行しますが、TLS 接続が失敗した場合は SMTP 接続を使用します。 TLS を強制すると TLS 接続が強制されます。つまり、TLS 接続が失敗するとメッセージは拒否されます。 TLS、セキュリティ、およびコネクタの詳細については、「[Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)」をご覧ください。|
+|便宜的な TLS または強制 TLS|コネクタでは、見応えのある TLS または強制 TLS を使用できます。 便利な TLS は TLS 接続を試行しますが、TLS 接続が失敗した場合は SMTP 接続を使用します。 TLS を強制すると TLS 接続が強制されます。つまり、TLS 接続が失敗した場合、メッセージは拒否されます。 TLS、セキュリティ、およびコネクタの詳細については、「[Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)」をご覧ください。|
 |地域ルーティング (特定の地域へのメール フローの制限)|詳細については、「[Exchange Online Protection の概要](exchange-online-protection-overview.md)」の「EOP データセンター」セクションを参照してください。|
 |SMTP 接続チェック ツール|このツールを使用してメール フローをテストする方法の詳細については [、「Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)コネクタを検証してメール フローをテストする」を参照してください。|
 |一致サブドメイン|許可されたドメインのサブドメイン間のメール フローを有効にする方法の詳細については [、「EOP](mail-flow-in-eop.md)のメール フロー」を参照してください。|
 |**メール フロー ルール**||
 |ポリシー ベースのフィルタリングとアクション|カスタム ポリシーは、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) に基づいて作成されます。 ドメイン、キーワード、ファイル名、ファイル タイプ、件名行、メッセージ本文、送信者、受信者、ヘッダー、IP アドレスによるフィルターが可能です。 詳細については [、Exchange Online Protection のメール フロー ルール (トランスポート ルール) を参照してください](mail-flow-rules-transport-rules-0.md)。|
 |テキスト パターンによるフィルター|メール フロー ルールでは、テキストに一致する配列または正規表現を使用できます。 1 つの文字列または複数の文字列の配列を使用して、アドレス、件名、本文、または添付ファイル名など、多くのメッセージ プロパティと一致させることもできます。 詳細については [、Exchange Online Protection のメール フロー ルール (トランスポート ルール) を参照してください。](mail-flow-rules-transport-rules-0.md)|
-|ユーザー辞書|メール フロー ルールには、長いテキストとキーワードのリストを含め、ユーザー辞書と同じ機能を提供できます。|
-|ドメイン単位のポリシー ルール|メール フロー ルールのスコープは、送信者または受信者のドメイン名、IP アドレスの範囲、アドレス キーワードまたはパターン、グループ メンバーシップ、その他の条件に一致するためにカスタマイズできます。|
+|ユーザー辞書|メール フロー ルールには、ユーザー辞書と同じ機能を提供する、長いテキストとキーワードのリストを含めできます。|
+|ドメイン単位のポリシー ルール|メール フロー ルールのスコープは、送信者または受信者のドメイン名、IP アドレスの範囲、アドレスのキーワードまたはパターン、グループ メンバーシップ、その他の条件に一致するためにカスタマイズできます。|
 |添付ファイル スキャン|ルールを作成して、添付ファイルのファイル名、拡張子、および内容をスキャンできます。|
-|送信者へのポリシー ルール通知の送信|メッセージを拒否し、説明を含むメッセージを拒否するか、拡張状態コードアクションを使用してメッセージを拒否して、配信不可レポート (NDRまたはバウンス メッセージとも呼ばれる) を送信者に送信できます。 詳細については [、「Exchange Online でのメール フロー ルールのアクション」を参照してください](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
+|送信者へのポリシー ルール通知の送信|メッセージを拒否し、説明を含むメッセージを拒否するか、拡張状態コードアクションを使用してメッセージを拒否して配信不可レポート (NDR またはバウンス メッセージとも呼ばれる) を送信者に送信できます。 詳細については [、「Exchange Online でのメール フロー ルールのアクション」を参照してください](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |メッセージをリダイレクトまたはコピーする|メール フロー ルールでは、リダイレクト、Cc または BCC による受信者の追加、受信者の追加、その他のオプションの追加を行います。 詳細については [、「Exchange Online でのメール フロー ルールのアクション」を参照してください](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |複数のルール間でルールの優先度を調整する|Exchange 管理センターを使用して、ルールが処理される順序を変更します。|
 |メッセージをフィルター処理し、メッセージのルーティングまたは属性を変更する|さまざまな条件に基づいてメッセージをフィルターしてから、一連のアクションを各メッセージに適用できます。 詳細については [、Exchange Online Protection のメール フロー ルール (トランスポート ルール) を参照してください](mail-flow-rules-transport-rules-0.md)。|
@@ -84,10 +84,10 @@ ms.locfileid: "50166173"
 |**管理**||
 |Web ベースの管理|管理者は、60 の言語でサポートされている Exchange 管理センター (EAC) でサービスを管理できます。 詳細については、スタンドアロン [EOP の Exchange 管理センターを参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。|
 |ディレクトリ同期|ディレクトリ同期は、Azure Active Directory 同期ツール から利用できます。詳細については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」セクションを参照してください。  |
-|ディレクトリ ベースのエッジ ブロック (DBEB)|DBEB 機能では、サービス ネットワーク境界で無効な受信者宛てのメッセージを拒否することができます。 DBEB を使用すると、管理者はメールが有効な受信者を Microsoft 365 に追加し、Microsoft 365 に存在しないメール アドレスに送信されたメッセージをブロックできます。 DBEB の構成の詳細については、「ディレクトリ ベースのエッジ ブロックを使用して無効な受信者に送信されたメッセージを拒否する」を [参照してください](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。|
+|ディレクトリ ベースのエッジ ブロック (DBEB)|DBEB 機能では、サービス ネットワーク境界で無効な受信者宛てのメッセージを拒否することができます。 DBEB を使用すると、管理者はメールが有効な受信者を Microsoft 365 に追加し、Microsoft 365 に存在しない電子メール アドレスに送信されたメッセージをブロックできます。 DBEB の構成の詳細については、「ディレクトリ ベースのエッジ ブロックを使用して無効な受信者に送信されたメッセージを拒否する」を [参照してください](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。|
 |PowerShell|EOP の完全な機能は、スタンドアロンの EOP PowerShell で使用できます。 詳細については [、「Exchange Online Protection PowerShell」を参照してください](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)。|
 |**レポート作成とログ記録**||
-|メッセージ追跡|管理者は、サービスを通過する電子メール メッセージをフォローできます。 対象の電子メール メッセージがサービスによって受信、拒否、延期、または配信されたかどうかを判断できます。 したがって、効率良くユーザーの質問に回答したり、メール フローの問題をトラブルシューティングしたり、ポリシーの変更を検証したり、テクニカル サポートに支援を求める必要性を減らしたりできます。 詳細については、「[セキュリティ/コンプライアンス センターでのメッセージ追跡](message-trace-scc.md)」 を参照してください。|
+|メッセージ追跡|管理者は、サービスを通過する電子メール メッセージをフォローできます。 対象の電子メール メッセージがサービスによって受信、拒否、延期、または配信されたかどうかを確認できます。 したがって、効率良くユーザーの質問に回答したり、メール フローの問題をトラブルシューティングしたり、ポリシーの変更を検証したり、テクニカル サポートに支援を求める必要性を減らしたりできます。 詳細については、「[セキュリティ/コンプライアンス センターでのメッセージ追跡](message-trace-scc.md)」 を参照してください。|
 |Web ベースのレポート|セキュリティ/コンプライアンス センターのメール保護&は、メッセージング データを提供します。 たとえば、検出されたスパムとマルウェアの量や、メール フロー ルールが一致している頻度を監視できます。 これらの対話式レポートを使用すると、概要データに関する視覚的なレポートを素早く取得し、過去 90 日間の各メッセージの詳細を確認できます。 詳細については、「メール保護レポート [を使用してマルウェア、スパム](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)、ルールの検出に関するデータを表示する」を参照してください。|
 |監査ログ|管理者の役割グループ レポートおよび管理者監査ログは、EOP 管理者が利用できます。詳細については、「[EOP の監査レポート](auditing-reports-in-eop.md)」を参照してください。  |
 |**サービス レベル アグリーメント (SLA) とサポート**||

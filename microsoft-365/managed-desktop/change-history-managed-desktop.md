@@ -13,16 +13,28 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 8f6826865f38dad6040f65ac083be76450127299
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: d2ce8ecc12c73969a6ad9b939dc02c6b9cb360f4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877202"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288409"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 この記事では、Microsoft マネージド デスクトップのドキュメントに含まれる新 [しい記事と更新された記事の一覧を示します](index.yml)。 「更新」の記事には、重要な追加または修正が含めがありました。入力ミス、スタイル、書式設定の問題の修正などのマイナー修正は一覧表示されません。 GitHub のリポジトリにアクセスすると、特定のコミットの履歴 (変更の詳細を含む) をいつでも [表示できます](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
+
+## <a name="january-2021"></a>2021 年 1 月
+新しい記事または変更された記事 | 説明
+--- | ---
+[準備評価ツールで見つかった問題を修正する](get-ready/readiness-assessment-fix.md) | 更新された記事
+[登録後に設定を調整する](get-started/conditional-access.md) | 更新された記事
+[レポートを操作する](working-with-managed-desktop/reports.md) | 更新された記事
+[Intune ポータル サイトをデバイスにインストールする](get-started/company-portal.md) | 更新された記事
+[デバイスの要件](service-description/device-requirements.md) | 新しい記事
+[コンプライアンス](intro/compliance.md) | 更新された記事
+[Microsoft マネージド デスクトップでの更新プログラムの処理方法](service-description/updates.md) | 更新された記事
+[管理ポータルにアクセスする](get-started/access-admin-portal.md) | 更新された記事
 
 
 ## <a name="december-2020"></a>2020年12月
@@ -247,13 +259,13 @@ ms.locfileid: "49877202"
 [Microsoft マネージド デスクトップでアーカイブされたデバイス](service-description/archived-device-list.md) | 新しい記事
 [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](get-ready/mapped-drives.md) | 新しい記事
 [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](get-ready/certs-wifi-lan.md) | 新しい記事
-[Microsoft マネージド デスクトップ デバイスを注文する](get-started/devices.md) | 更新された記事
+[Microsoft マネージド デスクトップ デバイスの注文](get-started/devices.md) | 更新された記事
 [ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 新しい記事
 
 ## <a name="april-2019"></a>2019 年 4 月
 新しい記事または変更された記事 | 説明
 --- | ---
-[Intune ポータル サイトを Microsoft マネージド デスクトップ デバイスにインストールする](get-started/company-portal.md) | 新しい記事
+[Microsoft マネージド デスクトップ デバイスへの Intune ポータル サイトのインストール](get-started/company-portal.md) | 新しい記事
 [Microsoft Project と Microsoft Visio を Microsoft マネージド デスクトップ デバイスにインストールする](get-started/project-visio.md) | 新しい記事 
 [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](get-ready/authentication.md) | 新しい記事
 [Microsoft マネージド デスクトップにデバイスを登録する](get-started/register-devices-self.md) | 新しい記事
@@ -263,7 +275,7 @@ ms.locfileid: "49877202"
 ## <a name="march-2019"></a>2019 年 3 月
 新しい記事または変更された記事 | 説明
 --- | ---
-[Intune ポータル サイトを Microsoft マネージド デスクトップ デバイスにインストールする](get-started/company-portal.md) | 新しい記事
+[Microsoft マネージド デスクトップ デバイスへの Intune ポータル サイトのインストール](get-started/company-portal.md) | 新しい記事
 [Microsoft Project と Microsoft Visio を Microsoft マネージド デスクトップ デバイスにインストールする](get-started/project-visio.md) | 新しい記事
 
 ## <a name="february-2019"></a>2019 年 2 月

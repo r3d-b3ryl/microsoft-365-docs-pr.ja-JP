@@ -13,29 +13,29 @@ ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: スタンドアロンの Exchange Online Protection のタスクに必要なアクセス許可について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f1f364e684f2d1d76f26f573e66fbd50bf5138b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 9c24c6f57ea9a7c0e1b3332d2f4b518b232ec0c2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167397"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288301"
 ---
 # <a name="permissions-in-standalone-eop"></a>スタンドアロン EOP のアクセス許可
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
-Exchange Online メールボックスを使用しないスタンドアロン Exchange Online Protection (EOP) は、役割ベースのアクセス制御 (RBAC) アクセス許可モデルを使用して、管理者にアクセス許可を簡単に付与します。 スタンドアロン EOP のアクセス許可機能を使用すると、新しい組織を迅速に稼働できます。
+Exchange Online メールボックスを使用しないスタンドアロン Exchange Online Protection (EOP) では、役割ベースのアクセス制御 (RBAC) アクセス許可モデルを使用して、管理者に簡単にアクセス許可を付与します。 スタンドアロン EOP のアクセス許可機能を使用すると、新しい組織を迅速に稼働できます。
 
 ユーザーにアクセス許可を付与するには [、「EOP で管理役割グループを管理する」を参照してください](manage-admin-role-group-permissions-in-eop.md)。
 
-Microsoft 365 全体のアクセス許可の詳細については、「管理者ロールについて [」を参照してください](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+Microsoft 365 全体のアクセス許可の詳細については、「管理者ロールについて [」を参照してください](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="role-based-permissions"></a>役割に基づくアクセス許可
 
-ユーザーに付与する管理者のアクセス許可は、管理役割に基づいて行います。 管理役割は、特定のタスクのセットで使用できるコマンドレットを定義します。 Exchange 管理センター (EAC) とスタンドアロンの EOP PowerShell は両方ともコマンドレットを使用します。コマンドレットへのアクセスを許可すると、EAC またはスタンドアロンの EOP PowerShell で関連タスクを実行するアクセス許可がユーザーに付与されます。 たとえば、"Mail Recipients/メール受信者" 役割は、メール ユーザーの変更に必要なコマンドレットを定義します。
+ユーザーに付与する管理者のアクセス許可は、管理役割に基づいて行います。 管理役割は、特定のタスクのセットで使用できるコマンドレットを定義します。 Exchange 管理センター (EAC) とスタンドアロンの EOP PowerShell はどちらもコマンドレットを使用します。コマンドレットへのアクセスを許可すると、EAC またはスタンドアロンの EOP PowerShell で関連タスクを実行するアクセス許可がユーザーに付与されます。 たとえば、"Mail Recipients/メール受信者" 役割は、メール ユーザーの変更に必要なコマンドレットを定義します。
 
 スタンドアロン EOP では、使用可能な管理役割の種類は管理役割のみです (エンド ユーザーの役割や役割の割り当てポリシーはありません)。
 
@@ -47,7 +47,7 @@ Microsoft 365 全体のアクセス許可の詳細については、「管理者
 
 ![役割、役割グループ、およびメンバー関係](../../media/ITPro_Security_RBAC_EXO_SimplifiedRoleGroupRelationship.png)
 
-次の表では、スタンドアロン EOP で使用可能な役割グループについて説明します。
+次の表に、スタンドアロン EOP で使用可能な役割グループについて説明します。
 
 ****
 
@@ -59,13 +59,13 @@ Microsoft 365 全体のアクセス許可の詳細については、「管理者
 |HelpDesk|メール ユーザーを表示および管理します。|パスワードのリセット <p> ユーザー オプション <p> "View-Only Recipients/表示専用受信者"|
 |HygieneManagement|保護機能 (スパム対策、マルウェア対策など) を管理します。|トランスポートの状態管理 <p> "View-Only Configuration/表示専用構成" <p> "View-Only Recipients/表示専用受信者"|
 |MailFlowAdministrator|受け入れドメインとコネクタの表示と管理|リモート ドメインと受け入れドメイン <p> "View-Only Recipients/表示専用受信者"|
-|OrganizationManagement|組織全体への管理者アクセスと、ほぼすべてのタスクを実行する機能。 <p> Azure AD [の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) グローバル管理者ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。 <p> **重要**: OrganizationManagement 役割グループは強力な役割なので、組織レベルの管理タスクを実行するユーザーだけがこの役割グループのメンバーである必要があります。|マルウェア対策 <p> スパム対策 <p> 監査ログ <p> コンプライアンス管理者 <p> 動的配布グループ <p> Information Rights Management <p> "Mail Recipient Creation/メール受信者の作成" <p> Mail Recipients <p> "Message Tracking/メッセージ追跡" <p> "Migration/移行" <p> 組織のクライアント アクセス <p> 組織の構成 <p> 組織トランスポート設定 <p> 検疫する <p> "Recipient Policies/受信者ポリシー" <p> リモート ドメインと受け入れドメイン <p> パスワードのリセット <p> 保持管理 <p> 役割の管理 <p> セキュリティ管理者 <p> セキュリティ グループの作成とメンバーシップ <p> セキュリティ閲覧者 <p> Sensitivity Label Administrator <p> 監督 <p> トランスポートの状態管理 <p> トランスポート ルール <p> ユーザー オプション <p> View-Onlyマルウェア対策 <p> View-Onlyスパム対策 <p> 表示専用の監査ログ <p> "View-Only Configuration/表示専用構成" <p> View-Only検疫 <p> "View-Only Recipients/表示専用受信者" <p> View-Only脅威インテリジェンス|
+|OrganizationManagement|組織全体への管理者アクセスと、ほぼすべてのタスクを実行する機能。 <p> Azure AD [の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) グローバル管理者ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。 <p> **重要**: OrganizationManagement 役割グループは強力な役割なので、組織レベルの管理タスクを実行するユーザーだけがこの役割グループのメンバーである必要があります。|マルウェア対策 <p> スパム対策 <p> 監査ログ <p> コンプライアンス管理者 <p> 動的配布グループ <p> Information Rights Management <p> "Mail Recipient Creation/メール受信者の作成" <p> Mail Recipients <p> "Message Tracking/メッセージ追跡" <p> "Migration/移行" <p> 組織のクライアント アクセス <p> 組織の構成 <p> 組織トランスポートの設定 <p> 検疫する <p> "Recipient Policies/受信者ポリシー" <p> リモート ドメインと受け入れドメイン <p> パスワードのリセット <p> 保持管理 <p> 役割の管理 <p> セキュリティ管理者 <p> セキュリティ グループの作成とメンバーシップ <p> セキュリティ閲覧者 <p> Sensitivity Label Administrator <p> 監督 <p> トランスポートの状態管理 <p> トランスポート ルール <p> ユーザー オプション <p> View-Onlyマルウェア対策 <p> View-Onlyスパム対策 <p> 表示専用の監査ログ <p> "View-Only Configuration/表示専用構成" <p> View-Only検疫 <p> "View-Only Recipients/表示専用受信者" <p> View-Only脅威インテリジェンス|
 |QuarantineAdministrator|すべての受信者の検疫済みメッセージを管理します。|検疫する|
 |RecipientManagement|組織内の受信者オブジェクトを作成、管理、および削除します。|動的配布グループ <p> "Mail Recipient Creation/メール受信者の作成" <p> Mail Recipients <p> "Message Tracking/メッセージ追跡" <p> "Migration/移行" <p> "Recipient Policies/受信者ポリシー" <p> パスワードのリセット|
 |RecordsManagement|アイテム保持ポリシー タグ、メッセージ分類、メール フロー ルール (トランスポート ルールとも呼ばれる) などのコンプライアンス機能を構成します。|"Message Tracking/メッセージ追跡" <p> 保持管理 <p> トランスポート ルール|
 |SecurityAdministrator|組織内の保護のすべての側面 (スパム対策、マルウェア対策、スプーフィング対策、検疫など) を構成します。 <p> Azure AD [の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) セキュリティ管理者ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。|マルウェア対策 <p> スパム対策 <p> 監査ログ <p> 検疫する <p> セキュリティ管理者 <p> Sensitivity Label Administrator <p> View-Onlyマルウェア対策 <p> View-Onlyスパム対策 <p> 表示専用の監査ログ <p> View-Only検疫 <p> View-Only脅威インテリジェンス|
-|SecurityReader|組織内のすべての保護の側面 (スパム対策、マルウェア対策、スプーフィング対策、検疫など) に対する表示専用アクセス。 <p> Azure AD [の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) セキュリティ閲覧者ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。|セキュリティ閲覧者 <p> View-Onlyマルウェア対策 <p> View-Onlyスパム対策 <p> View-Only検疫 <p> View-Only脅威インテリジェンス|
-|TenantAdmins|この役割グループのメンバーシップは、サービス間で同期され、一般に管理されます。 既定では、この役割グループには役割は割り当てられていない。 ただし、組織の管理役割グループのメンバーであり、これらのアクセス許可を継承します。|なし|
+|SecurityReader|組織内の保護のすべての側面 (スパム対策、マルウェア対策、スプーフィング対策、検疫など) に対する表示専用アクセス。 <p> Azure AD [の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) セキュリティ閲覧者ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。|セキュリティ閲覧者 <p> View-Onlyマルウェア対策 <p> View-Onlyスパム対策 <p> View-Only検疫 <p> View-Only脅威インテリジェンス|
+|TenantAdmins|この役割グループのメンバーシップは、サービス間で同期され、集中管理されます。 既定では、この役割グループには役割は割り当てられていない。 ただし、組織の管理役割グループのメンバーであり、これらのアクセス許可を継承します。|なし|
 |ViewOnlyOrganizationManagement|組織内の受信者、保護、および構成オブジェクトとそのプロパティを表示します。|コンプライアンス管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者 <p> Sensitivity Label Administrator <p> "View-Only Configuration/表示専用構成" <p> "View-Only Recipients/表示専用受信者"|
 |
 
@@ -96,8 +96,8 @@ Exchange Online の組み込みの役割グループが管理者のジョブ機�
 |MyBaseOptions|ユーザーが自分の検疫済みメッセージを表示できます。 <p> この役割は自動的にユーザーに割り当てられるので、手動で割り当てすることはできません。|なし|
 |組織のクライアント アクセス<sup>\*</sup>||OrganizationManagement|
 |組織の構成|レポートの表示。|OrganizationManagement|
-|組織トランスポート設定<sup>\*</sup>||OrganizationManagement|
-|検疫する|すべての受信者のすべての種類の検疫済みメッセージを管理します。|OrganizationManagement <p> QuarantineAdministrator <p> SecurityAdministrator|
+|組織トランスポートの設定<sup>\*</sup>||OrganizationManagement|
+|検疫する|すべての受信者の検疫済みメッセージのすべての種類を管理します。|OrganizationManagement <p> QuarantineAdministrator <p> SecurityAdministrator|
 |受信者ポリシー<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
 |リモート ドメインと受け入れドメイン|リモート ドメイン、受け入れドメイン、およびコネクタを管理します。|MailFlowAdministrator <p> OrganizationManagement|
 |パスワードのリセット<sup>\*</sup>||HelpDesk <p> OrganizationManagement <p> RecipientManagement|
@@ -120,16 +120,16 @@ Exchange Online の組み込みの役割グループが管理者のジョブ機�
 |View-Only脅威インテリジェンス<sup>\*</sup>||OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
 |
 
-<sup>\*</sup> この役割は使用可能ですが、基本的にはスタンドアロン EOP では何も役に立っていません。
+<sup>\*</sup> この役割は使用可能ですが、基本的にスタンドアロン EOP では役に立つ機能は何もありません。
 
 ## <a name="microsoft-365-permissions-in-standalone-eop"></a>スタンドアロン EOP での Microsoft 365 アクセス許可
 
-Microsoft 365 管理センターでユーザーを作成する場合、グローバル管理者、サービス管理者、パスワード管理者など、さまざまな管理役割をユーザーに割り当てるかどうかを選択できます。 Microsoft 365 の役割の一部は、EOP でユーザーの管理者権限を付与しますが、すべてではありません。
+Microsoft 365 管理センターでユーザーを作成する場合、グローバル管理者、サービス管理者、パスワード管理者など、さまざまな管理役割をユーザーに割り当てるかどうかを選択できます。 Microsoft 365 の役割の一部は、EOP の管理者アクセス許可をユーザーに付与しますが、すべてではありません。
 
 > [!NOTE]
 > スタンドアロン EOP 組織の作成に使用したアカウントは、グローバル管理者の役割に自動的に割り当てられます。
 
-次の表に、Microsoft 365 の役割と、対応するスタンドアロンの EOP 役割グループを示します。 これらの役割の詳細については、「管理者ロールについて [」を参照してください](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+次の表に、Microsoft 365 の役割と、対応するスタンドアロンの EOP 役割グループを示します。 これらの役割の詳細については、「管理者ロールについて [」を参照してください](../../admin/add-users/about-admin-roles.md)。
 
 ****
 
@@ -138,12 +138,12 @@ Microsoft 365 管理センターでユーザーを作成する場合、グロー
 |Exchange 管理者|OrganizationManagement|
 |グローバル管理者|OrganizationManagement <p> **注**: グローバル管理者役割と OrganizationManagement 役割グループは、特別な "Company Administrator/会社の管理者" 役割グループを使用して関連付けされます。 "Company Administrator/会社の管理者" 役割グループは内部で管理され、直接変更することはできません。|
 |パスワード管理者|HelpDesk|
-|グローバルリーダー|ViewOnlyOrganizationManagement|
+|グローバル閲覧者|ViewOnlyOrganizationManagement|
 |セキュリティ管理者|SecurityAdministrator|
 |セキュリティ閲覧者|SecurityReader|
 |
 
-その他の Microsoft 365 の役割には、対応する EOP 役割グループが存在し、EOP の管理アクセス許可は付与されます。 ユーザーに Microsoft 365 ロールを割り当てる方法の詳細については、「管理者ロールの割り当て [」を参照してください](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。
+その他の Microsoft 365 の役割には、対応する EOP 役割グループが存在し、EOP の管理アクセス許可は付与されます。 Microsoft 365 ロールをユーザーに割り当てる方法の詳細については、「管理者ロールの割り当て [」を参照してください](../../admin/add-users/assign-admin-roles.md)。
 
 ユーザーは、Microsoft 365 の役割に追加することなく、EOP で管理者権限を付与できます。 これを行うには、ユーザーを EOP 役割グループのメンバーとして追加します。 ユーザーは EOP でアクセス許可を取得しますが、他の Microsoft 365 ワークロードではアクセス許可を取得することはできません。
 
@@ -151,7 +151,7 @@ Microsoft 365 管理センターでユーザーを作成する場合、グロー
 
 役割グループが正常にコピーされたことを確認するには、次のいずれかの手順を実行します。
 
-- EAC で、[アクセス許可の管理役割] に移動し、役割グループが一覧に表示 (または一覧に表示されていない \> ) を確認します。 役割グループを選択し、[詳細] ウィンドウで設定を確認するか、[編集] アイコンをクリックして設定 ![ ](../../media/ITPro-EAC-EditIcon.png) を確認します。
+- EAC で、[アクセス許可の管理役割] に移動し、役割グループが一覧 \> に表示 (または一覧に表示されていない) を確認します。 役割グループを選択し、[詳細] ウィンドウで設定を確認するか、[編集] アイコンをクリックして設定 ![ ](../../media/ITPro-EAC-EditIcon.png) を確認します。
 
 - Exchange Online PowerShell で、役割グループの名前に置き換え、次のコマンドを実行して役割グループが存在する (または存在しない) か確認し、設定を \<Role Group Name\> 確認します。
 

@@ -4,6 +4,7 @@ description: Microsoft のトピックの既存のトピックを編集する方
 author: efrene
 ms.author: efrene
 manager: pamgreen
+audience: admin
 ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 4194328804285f93f023092f1c7ac31d31a581da
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107462"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279412"
 ---
 # <a name="edit-an-existing-topic"></a>既存のトピックを編集する 
 
@@ -31,9 +32,9 @@ ms.locfileid: "50107462"
 In Topics, you can edit an existing topic. 既存のトピック ページを修正または追加する場合は、この操作が必要な場合があります。 
 
 > [!Note] 
-> AI によって収集されたトピック内の情報はセキュリティによって[](topic-experiences-security-trimming.md)トリミングされますが、既存のトピックを編集するときに手動で追加した情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
+> AI によって収集されたトピック内の情報はセキュリティによって[](topic-experiences-security-trimming.md)トリミングされる一方で、トピックの説明と、既存のトピックを編集するときに手動で追加した人の情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 既存のトピックを編集するには、次の必要があります。
 - 多くのトピックのライセンスを持っている。
@@ -66,11 +67,11 @@ In Topics, you can edit an existing topic. 既存のトピック ページを修
 
     ![[説明] セクション](../media/knowledge-management/description.png)</br>
 
-4. [ピン <b>留めされたユーザー</b> ] セクションでは、ユーザーを「ピン留め」して、トピックの対象の専門家として表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。
+4. [ピン <b>留めされたユーザー</b> ] セクションでは、トピックの対象の専門家としてユーザーを "ピン留め" して表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。
  
     ![ピン留めされたユーザーを追加する](../media/knowledge-management/pinned-people.png)</br>
 
-    [ <b>推奨されるユーザー]</b> セクションには、AI がトピックに関するリソースに関連するトピックの専門家と考える可能性があるというユーザーが表示されます。 ユーザー カードのピン留めアイコンを選択すると、ステータスを [候補] から [固定] に変更できます。
+    [ <b>推奨されるユーザー]</b> セクションには、AI がトピックに関するリソースに関連するトピックの専門家と考える可能性があるというユーザーが表示されます。 ユーザー カードのピン留めアイコンを選択して、ステータスを [候補] から [固定] に変更できます。
 
    ![推奨されるユーザーをピン留めする](../media/knowledge-management/suggested-people.png)</br>
 
@@ -82,11 +83,14 @@ In Topics, you can edit an existing topic. 既存のトピック ページを修
 
     [リンクから] <b>オプションを使用して、URL</b> を指定してファイルまたはページを追加することもできます。 
 
+   > [!Note] 
+   > 追加するファイルとページは、同じ Microsoft 365 テナント内にある必要があります。 トピックの外部リソースへのリンクを追加する場合は、手順 9 のキャンバス アイコンを使用して追加できます。
+
 6. 「 <b>推奨されるファイルとページ」セクション</b> には、AI がトピックに関連付けられていることを提案するファイルとページが表示されます。
 
    ![[推奨されるファイルとページ] セクション](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    ピン留めされたアイコンを選択すると、ピン留めされたファイルまたはページに推奨されるファイルまたはページを作成できます。
+    ピン留めされたアイコンを選択して、推奨されるファイルまたはページをピン留めされたファイルまたはページに変更できます。
 
 7.  [ <b>関連サイト]</b> セクションには、トピックに関する情報を含むサイトが表示されます。 
 
@@ -96,7 +100,7 @@ In Topics, you can edit an existing topic. 既存のトピック ページを修
     
     ![サイトの選択](../media/knowledge-management/sites.png)</br>
 
-8. 関連 <b>トピック セクションでは</b> 、トピック間に存在する接続を示します。 別のトピックへの接続を追加するには、[関連トピックに接続<b></b>] ボタンを選択し、関連トピックの名前を入力して、検索結果からそのトピックを選択します。 
+8. 関連 <b>トピック セクションでは</b> 、トピック間に存在する接続を示します。 別のトピックへの接続を追加するには、[関連トピックに接続<b></b>] ボタンを選択し、関連するトピックの名前を入力して、検索結果からそのトピックを選択します。 
 
    ![関連トピック セクション](../media/knowledge-management/related-topic.png)</br>  
 
@@ -107,6 +111,14 @@ In Topics, you can edit an existing topic. 既存のトピック ページを修
    追加した関連トピックは、接続されたトピックとして表示されます。
 
    ![関連トピック](../media/knowledge-management/related-topics-final.png)</br> 
+
+   関連するトピックを削除するには、削除するトピックを選択し、[トピックの削除] <b>アイコンを選択</b> します。</br>
+ 
+   ![関連トピックを削除する](../media/knowledge-management/remove-related.png)</br>  
+
+   次に、[削除] を <b>選択します</b>。</br>
+
+   ![削除を確認する](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
 9. テキスト、画像、リンクなど、静的な項目をページに追加するには、キャンバス アイコンを選択します。このアイコンは、簡単な説明の下に表示されます。 選択すると、ページに追加するアイテムを選択できる SharePoint ツールボックスが開きます。

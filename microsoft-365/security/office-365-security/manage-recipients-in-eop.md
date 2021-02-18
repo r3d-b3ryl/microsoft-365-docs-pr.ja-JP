@@ -15,23 +15,23 @@ ms.custom:
 description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) でさまざまな種類の受信者オブジェクトについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20d1c3e77c916e2c04a9c35eceb410859eb85ba0
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 045146b0c8676398482e813d6986fd64dda3aa6d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150269"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287763"
 ---
 # <a name="manage-recipients-in-standalone-eop"></a>スタンドアロン EOP で受信者を管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
-Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織は、次の種類の受信者をサポートしています。
+Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織は、次の種類の受信者をサポートします。
 
-- **メール ユーザー**: メール ユーザーは、スタンドアロン EOP 組織の基本的な種類のユーザー アカウントです。 メール ユーザーは EOP 組織内のログオン資格情報を持っていますが、外部の電子メール アドレスを持っています (メール ユーザーのメールボックスは EOP 組織の外部に保存されています)。
+- **メール ユーザー**: メール ユーザーは、スタンドアロン EOP 組織の基本的な種類のユーザー アカウントです。 メール ユーザーは EOP 組織内のログオン資格情報を持っていますが、外部の電子メール アドレスを持っています (メールボックスは EOP 組織の外部に保存されています)。
 
   EOP でのメール ユーザーの管理方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」を参照してください。
 

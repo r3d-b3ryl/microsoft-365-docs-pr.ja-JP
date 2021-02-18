@@ -15,23 +15,23 @@ ms.custom:
 description: スタンドアロンの Exchange Online Protection (EOP) 組織の管理者は、Exchange 管理センター (EAC) とスタンドアロンの Exchange Online Protection (EOP) PowerShell で配布グループとメールが有効なセキュリティ グループを作成、変更、削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fe5c6ab1555749d38f9c092b05aca9befb67fe
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d03b8a5129eb3b070f30de46b9b9c7bcc8e9898d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166965"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286803"
 ---
 # <a name="manage-groups-in-eop"></a>EOP でグループを管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
-Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、次の種類のグループを作成、変更、および削除できます。
+Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、次の種類のグループを作成、変更、削除できます。
 
-- **配布グループ**: メール ユーザーまたは他の配布グループのコレクション。 たとえば、関心のある共通領域でメールを受信または送信する必要があるチームや他の臨時グループなどです。 配布グループは電子メール メッセージの配布専用であり、セキュリティ プリンシパルではありません (アクセス許可を割り当てすることはできません)。
+- **配布グループ**: メール ユーザーまたは他の配布グループのコレクション。 たとえば、関心のある共通領域でメールを受信または送信する必要があるチームや他の臨時グループ。 配布グループは電子メール メッセージの配布専用であり、セキュリティ プリンシパルではありません (アクセス許可を割り当てすることはできません)。
 
 - **メールが有効なセキュリティ グループ**: 管理者ロールのアクセス許可を必要とするメール ユーザーおよび他のセキュリティ グループのコレクションです。 たとえば、特定のユーザー グループに管理者アクセス許可を付与して、スパム対策とマルウェア対策の設定を構成できます。
 
@@ -49,14 +49,14 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 - スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- スタンドアロンの EOP PowerShell でグループを管理すると、調整が発生する可能性があります。 この記事の PowerShell の手順では、コマンドの結果が表示される数分前に伝達遅延が発生するバッチ処理方法を使用します。
+- スタンドアロンの EOP PowerShell でグループを管理すると、調整が発生する可能性があります。 この記事の PowerShell の手順では、バッチ処理方法を使用します。この方法では、コマンドの結果が表示される数分前に伝達遅延が発生します。
 
-- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、"Organization **Management/** 組織の管理" 役割グループと **"Recipient Management/** 受信者の管理" 役割グループに既定で割り当てられる **"Distribution Groups/** 配布グループ" 役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス許可](feature-permissions-in-eop.md) 」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、"Organization **Management/** 組織の管理" 役割グループと **"Recipient Management/** 受信者の管理" 役割グループに既定で割り当てられる **"Distribution Groups/** 配布グループ" 役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- この記事の手順に適用できるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
+- この記事の手順に適用されるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
 
 > [!TIP]
-> 問題が発生する場合 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) フォーラムでサポートをご依頼ください。
+> 問題が発生する場合 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) フォーラムでサポートをご依頼ください。
 
 ## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Exchange 管理センターを使用して配布グループを管理する
 
@@ -70,17 +70,17 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
    - **メールが有効なセキュリティ グループ**
 
-3. 開く新しいグループ ページで、次の設定を構成します。 an が付いている設定 <sup>\*</sup> は必須です。
+3. 開く新しいグループ ページで、次の設定を構成します。 an のマークが付いた設定 <sup>\*</sup> は必須です。
 
    - <sup>\*</sup>**表示名**: この名前は、組織のアドレス帳、このグループに電子メールが送信される際の [To:] 行、および EAC の **[グループ** ] リストに表示されます。 表示名は必須であり、一意である必要があります。また、ユーザーが何を認識しているかはユーザーに分かっている必要があります。
 
-   - <sup>\*</sup>**[エイリアス**]: このボックスを使用して、グループのエイリアスの名前を入力します。 エイリアスは 64 文字以内で、一意である必要があります。 ユーザーが電子メール メッセージの [To] 行にエイリアスを入力すると、グループの表示名に解決されます。
+   - <sup>\*</sup>**[** エイリアス]: このボックスを使用して、グループのエイリアスの名前を入力します。 エイリアスは 64 文字以内で、一意である必要があります。 ユーザーが電子メール メッセージの [To] 行にエイリアスを入力すると、グループの表示名に解決されます。
 
    - <sup>\*</sup>**電子メール** アドレス : 電子メール アドレスは、at (@) 記号の左側のエイリアスと右側のドメインで構成されます。 既定では、エイリアス **の値は** エイリアス値に使用されますが、変更できます。 ドメイン値の場合は、ドロップダウンをクリックし、組織内のドメインを選択して承認します。
 
    - **説明**: この説明は、アドレス帳と EAC の [詳細] ウィンドウに表示されます。
 
-   - <sup>\*</sup>**所有者**: グループ所有者はグループ メンバーシップを管理できます。 既定では、グループを作成するユーザーがグループの所有者になります。 グループには、最低 1 人の所有者が必要です。
+   - <sup>\*</sup>**所有者**: グループの所有者はグループ メンバーシップを管理できます。 既定では、グループを作成するユーザーがグループの所有者になります。 グループには、最低 1 人の所有者が必要です。
 
      所有者を追加するには、[追加] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-AddIcon.png) 。 表示されるダイアログで、受信者またはグループを検索して選択し、[追加] **->。** 必要な回数だけこの手順を繰り返します。 完了したら、 **[OK]** をクリックします。
 
@@ -108,7 +108,7 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 このタブを使用して、グループに関する基本情報を表示または変更します。
 
-- **表示名**: この名前は、アドレス帳、このグループにメールが送信される際の [To] 行、および [グループ] リストに **表示されます**。 表示名は必須であり、ユーザーが内容を認識できるようにわかりやすい名前にする必要があります。 また、表示名は、ドメイン内で一意である必要があります。
+- **表示名**: この名前は、アドレス帳、このグループに電子メールが送信される際の [To] 行、および [グループ] リストに **表示されます**。 表示名は必須であり、ユーザーが内容を認識できるようにわかりやすい名前にする必要があります。 また、表示名は、ドメイン内で一意である必要があります。
 
   グループの名前付けポリシーを実装している場合、表示名は、ポリシーで定義されている名前付け形式に従う必要があります。
 
@@ -168,15 +168,15 @@ New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","User
 
 **注**:
 
-- _Name パラメーター_ は必須で、最大長は 64 文字で、一意である必要があります。 _DisplayName_ パラメーターを使用しない場合 _、Name_ パラメーターの値が表示名に使用されます。
+- Name _パラメーター_ は必須で、最大長は 64 文字で、一意である必要があります。 _DisplayName_ パラメーターを使用しない場合 _、Name_ パラメーターの値が表示名に使用されます。
 
-- Alias パラメーターを使用しない場合は、 _エイリアス_ 値に _Name_ パラメーターが使用されます。 スペースは削除されます。サポートされていない文字は疑問符 (?) に変換されます。
+- _Alias_ パラメーターを使用しない場合は、エイリアス値に _Name_ パラメーターが使用されます。 スペースは削除されます。サポートされていない文字は疑問符 (?) に変換されます。
 
 - _PrimarySmtpAddress_ パラメーターを使用しない場合は _、PrimarySmtpAddress_ パラメーターでエイリアス値が使用されます。
 
 - _Type_ パラメーターを使用しない場合、既定値は Distribution です。
 
-この例では、指定されたプロパティを持つ IT Administrators という名前の配布グループを作成します。
+この例では、指定したプロパティを持つ IT Administrators という名前の配布グループを作成します。
 
 ```PowerShell
 New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
@@ -232,7 +232,7 @@ Remove-EOPDistributionGroup -Identity "IT Administrators"
 
 配布グループまたはメールが有効なセキュリティ グループが正常に作成、変更、または削除されたことを確認するには、次の手順を実行します。
 
-- EAC で、 **[受信者]** \> **[グループ]** に移動します。 グループが一覧に表示されている (または一覧に表示されていない) か確認し、グループの種類の **値を確認** します。 グループを選択して詳細ウィンドウに情報を表示するか、[編集]アイコンをクリックして ![ ](../../media/ITPro-EAC-AddIcon.png) 設定を表示します。
+- EAC で、 **[受信者]** \> **[グループ]** に移動します。 グループが一覧に表示されている (または一覧に表示されていない) か確認し、グループの種類の **値を確認** します。 グループを選択し、[詳細] ウィンドウに情報を表示するか、[編集] アイコンをクリックして ![ ](../../media/ITPro-EAC-AddIcon.png) 設定を表示します。
 
 - スタンドアロンの EOP PowerShell で、次のコマンドを実行して、グループが一覧に表示されている (または一覧に表示されていない) か確認します。
 

@@ -8,28 +8,29 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理者は、Exchange Online で S/MIME (Secure/Multipurpose Internet Mail Extensions) を使用して電子メールを暗号化し、デジタル署名する方法について学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01de52bb1d8e946ead0d8b39e34b13e34741259e
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 35266b4ceefe161b907ddbc955fd234b716792a6
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760556"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288575"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online でのメッセージ署名と暗号化のための S/MIME
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-S/MIME (Secure/Multipurpose Internet Mail Extensions) は、デジタル署名および暗号化されたメッセージを送信するための広く受け入れられている方法 (より正確にはプロトコル) です。 S/MIME では電子メールを暗号化し、デジタル署名を行うことができます。 電子メール メッセージで S/MIME を使用すると、そのメッセージを受信する人は、受信トレイにあるものが送信者によって作成されたメッセージそのものであることがわかります。 また、メッセージを受信する人は、そのメッセージが確かに特定の送信者から送信されたものであり、その送信者になりすました別の誰かからのものでないこともわかります。 このために、S/MIME には認証、メッセージの整合性、発信元の否認防止 (デジタル署名を使用) などの暗号化セキュリティ サービスが用意されています。 また、これは電子メッセージングのプライバシーとデータ セキュリティ (暗号化を使用) の強化にも役立ちます。 電子メール関連での S/MIME の歴史とアーキテクチャに関する詳細な背景情報については、「[S/MIME について](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65))」を参照してください。
+S/MIME (Secure/Multipurpose Internet Mail Extensions) は、デジタル署名および暗号化されたメッセージを送信するための広く受け入れられている方法 (より正確には、プロトコル) です。 S/MIME では電子メールを暗号化し、デジタル署名を行うことができます。 電子メール メッセージで S/MIME を使用すると、そのメッセージを受信する人は、受信トレイにあるものが送信者によって作成されたメッセージそのものであることがわかります。 また、メッセージを受信する人は、そのメッセージが確かに特定の送信者から送信されたものであり、その送信者になりすました別の誰かからのものでないこともわかります。 このために、S/MIME には認証、メッセージの整合性、発信元の否認防止 (デジタル署名を使用) などの暗号化セキュリティ サービスが用意されています。 また、これは電子メッセージングのプライバシーとデータ セキュリティ (暗号化を使用) の強化にも役立ちます。 電子メール関連での S/MIME の歴史とアーキテクチャに関する詳細な背景情報については、「[S/MIME について](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65))」を参照してください。
 
-Exchange Online 管理者は、組織内のメールボックスに対して S/MIME ベースのセキュリティを有効にできます。 S/MIME をセットアップするには、Exchange Online PowerShell と共にここにリンクされているトピックのガイダンスを使用します。 サポートされている電子メール クライアントで S/MIME を使用するには、組織内のユーザーが署名と暗号化の目的で発行された証明書と、オンプレミスの Active Directory ドメイン サービス (AD DS) に発行されたデータを持っている必要があります。 ユーザー AD DS は、制御する物理的な場所にあるコンピューター上にあり、インターネット上のリモート機能やクラウドベースのサービスには置かれる必要はありません。 DS の詳細については、「Active Directory ドメイン AD [概要」を参照してください](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)。
+Exchange Online 管理者は、組織内のメールボックスに対して S/MIME ベースのセキュリティを有効にできます。 S/MIME をセットアップするには、Exchange Online PowerShell と共にここにリンクされているトピックのガイダンスを使用します。 サポートされている電子メール クライアントで S/MIME を使用するには、組織内のユーザーが署名と暗号化の目的で発行された証明書と、オンプレミスの Active Directory ドメイン サービス (AD DS) に発行されたデータを持っている必要があります。 ユーザー AD DS は、制御する物理的な場所のコンピューターに置く必要があります。また、インターネット上のリモート機能やクラウドベースのサービスには置かれる必要はありません。 DS の詳細については、「active Directory ドメイン AD [概要」を参照してください](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)。
 
 ## <a name="supported-scenarios-and-technical-considerations"></a>サポートされるシナリオと技術的な考慮事項
 
@@ -47,9 +48,9 @@ Exchange Online 管理者は、組織内のメールボックスに対して S/M
 
    - サードパーティ CA によって発行された証明書には、すべてのクライアントとデバイスによって自動的に信頼されるという利点があります。 内部のプライベート CA によって発行された証明書は、クライアントやデバイスによって自動的に信頼されるのではなく、すべてのデバイス (電話など) がプライベート証明書を信頼するように構成できるではありません。
 
-   - ルート証明書の代わりに中間証明書を使用して、ユーザーに証明書を発行する方法を検討します。 そうすることで、証明書を取り消して再発行する必要が生じても、ルート証明書はそのまま残ります。
+   - ルート証明書の代わりに中間証明書を使用して、ユーザーに証明書を発行する方法を検討してください。 そうすることで、証明書を取り消して再発行する必要が生じても、ルート証明書はそのまま残ります。
 
-2. **UserSMIMECertificate** 属性または **UserCertificate** 属性AD DS アカウントを使用して、オンプレミスの組織でユーザー証明書を発行します。
+2. **UserSMIMECertificate** 属性または **UserCertificate** AD DS アカウントを使用して、オンプレミスの組織でユーザー証明書を発行します。
 
 3. Exchange Online 組織では、適切なバージョンの Azure AD Connect を使用して、AD DS から Azure Active Directory にユーザー証明書を同期します。 次に、これらの証明書は Azure Active Directory から Exchange Online のディレクトリに同期され、受信者へのメッセージの暗号化に使用されます。
 
@@ -80,9 +81,9 @@ Outlook on the web で Exchange Online 用の S/MIME をセットアップする
 
 ### <a name="smime-compared-with-office-365-message-encryption"></a>S/MIME と Office 365 のメッセージ暗号化との比較
 
-S/MIME には B2B (企業間取引) および B2C (企業-消費者間取引) の状況でよく使用される証明書および公開のインフラストラクチャが必要です。 ユーザーは、S/MIME で暗号化キーを制御し、送信する各メッセージにキーを使用するかどうかを選択できます。 Outlook などの電子メール プログラムはデジタル署名と署名の検証を実行するために、信頼できるルート証明機関の場所を検索します。 Office 365 のメッセージの暗号化は、組織内外の任意の受信者に送信されるメールを暗号化するための、管理者が構成できる (個々のユーザーは構成できない) ポリシー ベースの暗号化サービスです。 これは、Azure Rights Management (RMS) 上に構築されたオンライン サービスであり、公開キー基盤に依存しないものです。 Office 365 Message Encryption には、組織のブランドでメールをカスタマイズする機能など、追加の機能も備えています。 365 Message Encryption のOfficeについては、「Office [365](https://docs.microsoft.com/microsoft-365/compliance/encryption)での暗号化」を参照してください。
+S/MIME には B2B (企業間取引) および B2C (企業-消費者間取引) の状況でよく使用される証明書および公開のインフラストラクチャが必要です。 ユーザーは、S/MIME で暗号化キーを制御し、送信する各メッセージにキーを使用するかどうかを選択できます。 Outlook などの電子メール プログラムはデジタル署名と署名の検証を実行するために、信頼できるルート証明機関の場所を検索します。 Office 365 のメッセージの暗号化は、組織内外の任意の受信者に送信されるメールを暗号化するための、管理者が構成できる (個々のユーザーは構成できない) ポリシー ベースの暗号化サービスです。 これは、Azure Rights Management (RMS) 上に構築されたオンライン サービスであり、公開キー基盤に依存しないものです。 Office 365 Message Encryption には、組織のブランドでメールをカスタマイズする機能など、追加の機能も備えています。 365 Message Encryption のOfficeについては、「Office [365](../../compliance/encryption.md)での暗号化」を参照してください。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 [Outlook on the web](https://docs.microsoft.com/exchange/exchange-admin-center)
 

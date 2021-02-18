@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f2fae1e41562d1ae743ecd964b42082b3d6486e8
-ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
+ms.openlocfilehash: 423a65e60ccd11ab7e9fd78ef3b7983ba0c609c2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50031353"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288719"
 ---
 # <a name="compliance"></a>コンプライアンス
 
@@ -34,9 +34,10 @@ Microsoft マネージド デスクトップは、次の認定を取得してい
 - [クラウド セキュリティ アライアンス (CSA) STAR 証明](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
 - [Cloud Security Alliance (CSA) STAR Certification](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [サービス組織コントロール (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 - [医療保険の移植性と責任に関する法律 (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+- [Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)](https://docs.microsoft.com/compliance/regulatory/offering-hitrust)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>監査レポートとコンプライアンス証明書

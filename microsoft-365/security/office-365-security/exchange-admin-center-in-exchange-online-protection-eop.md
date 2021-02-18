@@ -17,23 +17,23 @@ ms.collection:
 description: スタンドアロン Exchange Online Protection (EOP) の Web 管理インターフェイスについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166221"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286959"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>スタンドアロン EOP の Exchange 管理者センター
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
 Exchange 管理センター (EAC) は、スタンドアロン Exchange Online Protection (EOP) 用の Web ベースの管理コンソールです。
 
-このトピックの Exchange Online バージョンをお探しの場合は、 Exchange [Online の Exchange 管理センターを参照してください](https://docs.microsoft.com/exchange/exchange-admin-center)。
+このトピックの Exchange Online バージョンをお探しの場合は、 [Exchange Online の Exchange 管理センターを参照してください](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 ## <a name="open-the-eac-in-eop"></a>EOP で EAC を開く
 
@@ -41,7 +41,7 @@ Exchange 管理センター (EAC) は、スタンドアロン Exchange Online Pr
 
 - **Microsoft 365 管理センターから**:
 
-  1. [すべて表示 <https://admin.microsoft.com> ] に **移動してクリックします**。
+  1. [すべて表示 <https://admin.microsoft.com> ] に移動 **してクリックします**。
 
      ![Microsoft 365 管理センターで [すべて表示] をクリックする](../../media/m365-center-show-all.png)
 
@@ -49,7 +49,7 @@ Exchange 管理センター (EAC) は、スタンドアロン Exchange Online Pr
 
      ![Microsoft 365 管理センターで [すべての管理センター] をクリックします。](../../media/m365-center-select-all-admin-centers.png)
 
-  3. 表示された **[すべての管理センター** ] ページで **、[Exchange Online Protection] をクリックします**。
+  3. 表示された **[すべての管理センター]** ページで **、[Exchange Online Protection] をクリックします**。
 
 - に直接移動します `https://admin.protection.outlook.com/ecp/` 。
 
@@ -72,11 +72,11 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 - **保護**: マルウェア対策ポリシー、既定の接続フィルター ポリシー、および DKIM を管理できます。
 
   > [!NOTE]
-  > セキュリティ/コンプライアンス センターでマルウェア対策ポリシーと既定の接続フィルター ポリシー&する必要があります。 詳細については [、「EOP](configure-anti-malware-policies.md) でマルウェア対策ポリシーを構成する」および「EOP で接続フィルターを [構成する」を参照してください](configure-the-connection-filter-policy.md)。
+  > マルウェア対策ポリシーと既定の接続フィルター ポリシーは、セキュリティ/コンプライアンス センターで&する必要があります。 詳細については、「EOP でマルウェア対策ポリシーを構成する」および [「EOP](configure-anti-malware-policies.md) で接続フィルターを構成する」を [参照してください](configure-the-connection-filter-policy.md)。
 
 - **メール フロー**: ここでは、メール フロー ルール (トランスポート ルールとも呼ばれる)、承認されたドメイン、コネクタ、およびメッセージ追跡を実行できる場所を管理します。
 
-- **ハイブリッド**: ここでハイブリッド構成 [ウィザードを実行](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)し [、Exchange Online PowerShell モジュールをインストールできます](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)。
+- **ハイブリッド**: ハイブリッド構成ウィザードを実行 [](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)できる場所と [、Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)モジュールをインストールできる場所です。
 
 ### <a name="tabs"></a>タブ
 
@@ -88,7 +88,7 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 ****
 
-|Icon|名前|Action|
+|Icon|Name|Action|
 |---|---|---|
 |![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif)|追加、新規|このアイコンを使用して、新しいオブジェクトを作成します。これらの一部のアイコンには下方向キーが関連付けられており、これをクリックして、作成可能な追加のオブジェクトを表示できます。|
 |![編集アイコン](../../media/ITPro-EAC-EditIcon.gif)|編集|このアイコンを使用してオブジェクトを編集します。|
@@ -112,7 +112,7 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 **[自分]** タイルでは、EAC からのサインアウトおよび他のユーザーとしてサインインが行えます。 [ヘルプ **アイコン]** ドロップダウン メニュー ![ ](../../media/ITPro-EAC-HelpIcon.gif) から、次の操作を実行できます。
 
-- **ヘルプ**: [ヘルプ] ![ アイコンを ](../../media/ITPro-EAC-HelpIcon.gif) クリックして、オンライン ヘルプ コンテンツを表示します。
+- **Help**: Click ![ Help Icon to view the online help ](../../media/ITPro-EAC-HelpIcon.gif) content.
 - **フィードバック**: フィードバックを送信します。
 - **コミュニティ**: コミュニティ フォーラムで、検索の回答に関する質問を投稿します。
 - **ヘルプ バブルを無効** にする : ヘルプ バブルは、オブジェクトを作成または編集するときにフィールドのコンテキスト ヘルプを表示します。 ヘルプ バブルをオフにしたり、無効になっている場合はオンにすることができます。
@@ -120,7 +120,7 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 ## <a name="supported-browsers"></a>サポートされているブラウザー
 
-EAC を最大限に活用できるように、常に最新のブラウザー、Office クライアント、アプリを使用することをお勧めします。 また、ソフトウェア更新プログラムも、利用可能になり次第インストールすることをお勧めします。 サービスでサポートされているブラウザーとシステム要件の詳細については、「サービスのシステム要件」を[Office。](https://products.office.com/office-system-requirements)
+EAC を最大限に活用できるように、常に最新のブラウザー、Office クライアント、アプリを使用することをお勧めします。 また、ソフトウェア更新プログラムも、利用可能になり次第インストールすることをお勧めします。 サポートされているブラウザーとサービスのシステム要件の詳細については、「サービスのシステム要件」を[Office。](https://products.office.com/office-system-requirements)
 
 ## <a name="supported-languages"></a>サポートされている言語
 

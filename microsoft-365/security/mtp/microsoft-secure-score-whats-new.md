@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 039ec1c3f9b0ba233f950d11b9d58be341b28121
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 520a5627d2cd280f28c4e2c3db0e565640a1eace
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930596"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289163"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft セキュア スコアの新機能
 
@@ -35,6 +35,12 @@ ms.locfileid: "49930596"
 Microsoft セキュア スコアをセキュリティの立ち上がりをより良くするために、いくつかの変更が加えらたのです。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
 
 Microsoft セキュア スコアは https://security.microsoft.com/securescore [、Microsoft 365](overview-security-center.md)セキュリティ センターにあります。
+    
+## <a name="february-2021"></a>2021 年 2 月
+
+### <a name="compatibility-with-graph-api"></a>Graph API との互換性
+
+Graph API 経由で配信される Microsoft セキュア スコアの推奨事項は、Microsoft 365 セキュリティ センターで現在表示されている推奨事項と同じように表示され、重み付けされます。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
@@ -77,11 +83,11 @@ ServiceNow の共有にアクセスしてセキュア スコアを使用して S
 
 - レガシ認証をブロックするポリシーを有効にする
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>ID セキュア スコアおよび Graph API との互換性
+## <a name="incompatibility-with-identity-secure-score"></a>ID セキュア スコアとの互換性の問題
 
-Microsoft セキュア スコアの最近のリリースでは、スコアモデルが改善されました。 これらの変更により、セキュリティの状況をより柔軟かつ正確に把握できます。 ただし、これらの更新により、Microsoft セキュア スコアは一時的に Id セキュア スコアおよび Graph API と互換性がありません。
+Microsoft セキュア スコアの最近のリリースでは、スコアモデルが改善されました。 これらの変更により、セキュリティの状況をより柔軟かつ正確に把握できます。 ただし、これらの更新により、Microsoft セキュア スコアは一時的に ID セキュア スコアと互換性がありません。
 
-時間がたつ間に、Id セキュア スコアと Graph API は新しいスコアモデルを採用します。 それまでは、Microsoft セキュア スコア、ID セキュア スコア、および Graph API によって報告されるスコアの違いが表示されます。 ご不便をおかけして申し訳ございません。今後、これらのエクスペリエンスの互換性を確保するために取り組み中です。
+時間がたつ間に、ID セキュア スコアは新しいスコアモデルを採用します。 それまでは、Microsoft セキュア スコアと Id セキュア スコアによって報告されるスコアの違いが表示されます。 ご不便をおかけして申し訳ございません。今後、これらのエクスペリエンスの互換性を確保するために取り組み中です。
 
 ## <a name="updated-improvement-actions"></a>改善アクションの更新
 

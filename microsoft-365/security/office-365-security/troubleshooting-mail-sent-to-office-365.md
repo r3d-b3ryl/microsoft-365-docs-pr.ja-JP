@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,18 +16,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、Microsoft 365 & の受信トレイにメールを送信する際の Microsoft 365 ユーザーへのバルク メールのベスト プラクティスに関する問題に関するトラブルシューティング情報を提供します。
-ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: この記事では、Microsoft 365 & の受信トレイにメールを送信する際の Microsoft 365 ユーザーへのバルク メールのベスト プラクティスに関する問題のトラブルシューティング情報を提供します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1e4a91f70b59debc770a5811638bd64a1eef36dd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760484"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286383"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Microsoft 365 に送信されるメールのトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
 
 この記事では、Microsoft 365 の受信トレイにメールを送信しようとするときに問題が発生している送信者のトラブルシューティング情報と、顧客へのバルク メールのベスト プラクティスについて説明します。
 
@@ -68,7 +72,7 @@ DNS 逆引き参照を行えない送信者からの電子メールは受け付�
 
 ## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>受信者の [迷惑メール] フォルダーにメールが届く
 
-メッセージが EOP によって誤ってスパムとして識別された場合は、受信者と一緒にこの誤検知メッセージを Microsoft スパム分析チームに送信し、メッセージを評価および分析できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+メッセージが EOP によってスパムとして誤って識別された場合は、受信者と一緒にこの誤検知メッセージを Microsoft スパム分析チームに送信し、メッセージを評価および分析できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>自分の IP アドレスからのトラフィックが EOP によって調整される
 
@@ -80,7 +84,7 @@ IP アドレスが EOP によって調整されたことを示す NDR を EOP �
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Microsoft 365 で送信者からメールを受信できない
 
- Microsoft ユーザーからのメッセージを受信するには、ご使用のネットワークが Microsoft データセンター内で EOP が使用している IP アドレスからの接続を許可していることを確認してください。 詳細については [、「Exchange Online Protection IP アドレス」を参照してください](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
+ Microsoft ユーザーからのメッセージを受信するには、ご使用のネットワークが Microsoft データセンター内で EOP が使用している IP アドレスからの接続を許可していることを確認してください。 詳細については [、「Exchange Online Protection IP アドレス」を参照してください](../../enterprise/urls-and-ip-address-ranges.md)。
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Microsoft 365 ユーザーへのバルク メール送信のベスト プラクティス
 

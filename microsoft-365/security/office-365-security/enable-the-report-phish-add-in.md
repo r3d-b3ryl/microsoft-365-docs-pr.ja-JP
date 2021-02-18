@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: 個々のユーザーまたは組織全体に対して、Outlook および Outlook on the web の Report Phishing アドインを有効にする方法について説明します。
-ms.openlocfilehash: abac24e447d0afe9bc725dd8f9a976dce900b278
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+description: 個々のユーザーまたは組織全体に対して、Outlook および Web 上の Outlook の Report Phishing アドインを有効にする方法について説明します。
+ms.openlocfilehash: 8242f3fcac27f8c76f7bef5a84c70960a204e3bd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094679"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286659"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>レポート フィッシング アドインを有効にする
 
@@ -33,7 +33,7 @@ ms.locfileid: "50094679"
 
 Outlook および Outlook on the web (旧称 Outlook Web App) 用の Report Message and Report Phishing アドインを使用すると、分析のために誤検知 (良いメールが悪いとマークされている) や検出検出 (不正なメールを許可) を Microsoft とその関連会社に簡単に報告できます。
 
-Microsoft は、これらの申請を使用して、電子メール保護テクノロジの有効性を向上します。 たとえば、ユーザーが Report Phishing アドインを使用して多数のメッセージを報告するとします。 この情報は、セキュリティ ダッシュボード [および他のレポート](security-dashboard.md) に表示されます。 組織のセキュリティ チームは、この情報を、フィッシング対策ポリシーの更新が必要になる可能性があるという指標として使用できます。
+Microsoft は、これらの申請を使用して、電子メール保護テクノロジの有効性を向上します。 たとえば、ユーザーが Report Phishing アドインを使用して多数のメッセージを報告するとします。 この情報は、セキュリティ ダッシュボード [および他の](security-dashboard.md) レポートに表示されます。 組織のセキュリティ チームは、この情報を、フィッシング対策ポリシーの更新が必要になる可能性があるという指標として使用できます。
 
 レポート メッセージ アドインまたは Report Phishing アドインをインストールできます。 ユーザーがスパム メッセージとフィッシング メッセージの両方を報告する場合は、組織内にレポート メッセージ アドインを展開します。 詳細については、「メッセージ報告 [アドインを有効にする」を参照してください](enable-the-report-message-add-in.md)。
 
@@ -41,7 +41,7 @@ Report Phishing アドインは、フィッシング メッセージのみを報
 
 個人ユーザーの場合は、自分で [Report Phishing アドインを有効にできます](#get-the-report-phishing-add-in-for-yourself)。
 
-グローバル管理者または Exchange Online 管理者で、Exchange が OAuth 認証を使用するように構成されている場合は、組織で Report [Phishing アドインを有効にできます](#get-and-enable-the-report-phishing-add-in-for-your-organization)。 Report Phishing Add-Inは、一元展開 [で利用できます](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)。
+グローバル管理者または Exchange Online 管理者で、Exchange が OAuth 認証を使用するように構成されている場合は、組織の Report [Phishing アドインを有効にできます](#get-and-enable-the-report-phishing-add-in-for-your-organization)。 Report Phishing Add-Inは、一元展開 [で利用できます](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -86,9 +86,9 @@ Report Phishing アドインは、フィッシング メッセージのみを報
 ## <a name="get-and-enable-the-report-phishing-add-in-for-your-organization"></a>組織の Report Phishing アドインを取得して有効にする
 
 > [!NOTE]
-> アドインが組織に表示されるのに最大 12 時間かかる場合があります。
+> アドインが組織に表示されるには、最大で 12 時間かかる場合があります。
 
-1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
+1. Microsoft 365 管理センターで、[設定アドイン] ページに移動します。[アドイン] ページが表示されな場合は、[統合アプリ] ページの上部にある [統合アプリアドインの設定] リンクに移動します。 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  
 
 2. ページ **の上部にある [アドインの** 展開] を選択し、[次へ] を選択 **します**。
 
@@ -122,7 +122,7 @@ Report Phishing アドインは、フィッシング メッセージのみを報
 
 8. 表示 **される [レポートフィッシング** の展開] ページに、進行状況レポートの後に、アドインが展開されたという確認が表示されます。 情報を読んだら、[次へ] を **クリックします**。
 
-9. 表示される **[アドインのアナウンス** ] ページで、情報を確認し、[閉じる] をクリック **します**。
+9. 表示された **[アドインのアナウンス** ] ページで情報を確認し、[閉じる] をクリック **します**。
 
 ## <a name="learn-how-to-use-the-report-phishing-add-in"></a>レポート フィッシング アドインの使い方について
 
@@ -148,6 +148,6 @@ Report Phishing アドインは、フィッシング メッセージのみを報
 
 ユーザーが Microsoft に報告するメッセージを確認するには、次のオプションがあります。
 
-- 管理サブミッション ポータルを使用します。 詳細については、「Microsoft へのユーザー [申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
+- 管理者提出ポータルを使用します。 詳細については、「Microsoft へのユーザー [申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
 
 - メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、報告されたメッセージのコピーを送信します。 手順については、「メール フロー ルール [を使用して、ユーザーが Microsoft に報告している情報を確認する」を参照してください](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。

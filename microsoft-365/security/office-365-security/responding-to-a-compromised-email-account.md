@@ -20,21 +20,21 @@ search.appverid:
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a34780b260a6e4bbc2d8b3f53af6b67de04fbdcd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166665"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288611"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **概要** 侵害された Microsoft 365 電子メール アカウントを認識して対処する方法について説明します。
 
@@ -89,7 +89,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
 ### <a name="step-1-reset-the-users-password"></a>ステップ 1 ユーザーのパスワードをリセットする
 
-「[誰かのビジネス パスワードをリセットする](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password)」の手順に従います。
+「[誰かのビジネス パスワードをリセットする](../../admin/add-users/reset-passwords.md#reset-my-admin-password)」の手順に従います。
 
 > [!IMPORTANT]
 >
@@ -103,7 +103,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 >
 > - アプリのパスワードは必ず更新してください。 ユーザー アカウントのパスワードをリセットしても、アプリのパスワードは自動的に取り消されません。 ユーザーは既存のアプリ パスワードを削除し、新しいパスワードを作成する必要があります。 手順については、「[追加セキュリティの検証ページでアプリのパスワードを作成して削除する](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)」を参照してください。
 >
-> - 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。 MFAの詳細については、[[多要素認証をセットアップする](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)] を参照してください。
+> - 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。 MFAの詳細については、[[多要素認証をセットアップする](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)] を参照してください。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>ステップ 2 不審な電子メール転送アドレスを削除する
 

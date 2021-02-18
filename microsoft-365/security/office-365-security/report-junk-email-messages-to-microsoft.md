@@ -17,23 +17,23 @@ ms.collection:
 description: 管理者は、良いメッセージや悪いメッセージやファイルを分析のために Microsoft に報告するさまざまな方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b75b05f33ab6c6a5827101ad2f5b14c94b932135
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 21c733945256386ff9543b372badaa6f2302171b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166689"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288093"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>メッセージとファイルを Microsoft に報告する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、ユーザーと管理者の両方が電子メール メッセージとファイルを Microsoft に報告するさまざまな方法を使用できます。
+Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、ユーザーと管理者の両方が電子メール メッセージとファイルを Microsoft に報告するさまざまな方法を使用します。
 
 ****
 
@@ -43,8 +43,8 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 |[レポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)|Outlook および Outlook on the web (旧称: Outlook Web App) で動作します。 <p> サブスクリプションに応じて、ユーザーがアドインで報告したメッセージは、[管理者](admin-submission.md)提出ポータル、自動調査と応答[(AIR)](air-view-investigation-results.md)の結果、ユーザーから報告されたメッセージ[](view-email-security-reports.md#user-reported-messages-report)レポート、脅威エクスプローラーで利用[できます。](threat-explorer-views.md#email--submissions) <p> 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。
 |[レポート フィッシング アドインを有効にする](enable-the-report-phish-add-in.md)|Outlook および Outlook on the web (旧称: Outlook Web App) で動作します。 <p> サブスクリプションに応じて、ユーザーがアドインで報告したメッセージは、[管理者](admin-submission.md)提出ポータル、自動調査と応答[(AIR)](air-view-investigation-results.md)の結果、ユーザーから報告されたメッセージ[](view-email-security-reports.md#user-reported-messages-report)レポート、脅威エクスプローラーで利用[できます。](threat-explorer-views.md#email--submissions) <p> 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。|
 |[Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する](junk-email-reporting-add-in-for-microsoft-outlook.md)|Outlook でのみ動作します。|
-|[Outlook on the web で迷惑メールとフィッシングメールを報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Exchange Online メールボックスを持つ組織 (スタンドアロンの EOP では使用できません) には、Web 上の Outlook の組み込み機能を使用します。 <p> ユーザーが報告するメッセージは、管理者 [提出ポータルで利用できます](admin-submission.md)。 <p> 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。|
-|[iOS および Android 用の Outlook で迷惑メールとフィッシングメールを報告する](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Exchange Online メールボックスを使用している組織 (スタンドアロンの EOP では使用できません) には、iOS および Android 用の Outlook の組み込み機能を使用します。 <p> ユーザーが報告するメッセージは、管理者 [提出ポータルで利用できます](admin-submission.md)。 <p> 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。|
+|[Outlook on the web で迷惑メールとフィッシングメールを報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Exchange Online メールボックスを持つ組織 (スタンドアロン EOP では使用できません) には、Web 上の Outlook の組み込み機能を使用します。 <p> ユーザーが報告するメッセージは、管理者 [提出ポータルで利用できます](admin-submission.md)。 <p> 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。|
+|[iOS および Android 用の Outlook で迷惑メールとフィッシングメールを報告する](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Exchange Online メールボックスを使用している組織では、iOS および Android 用の Outlook の組み込み機能を使用します (スタンドアロンの EOP では使用できません)。 <p> ユーザーが報告するメッセージは、管理者 [提出ポータルで利用できます](admin-submission.md)。 <p> 指定したメールボックスにコピーまたはリダイレクトされる報告されたメッセージを構成できます。 詳細については、「ユーザー提出 [ポリシー」を参照してください](user-submission.md)。|
 |[分析のためにメッセージを Microsoft に手動で送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|スパム、スパム、フィッシングではなく、特定の Microsoft 電子メール アドレスに添付メッセージを手動で送信します。|
 |[メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|ユーザーが分析のために Microsoft にメッセージを報告したときに通知するメール フロー ルール (トランスポート ルールとも呼ばれる) を作成する方法について説明します。|
 |[マルウェアとマルウェア以外のマルウェアを分析のために Microsoft に送信する](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Microsoft セキュリティ インテリジェンス サイトを使用して、添付ファイルや他のファイルを送信します。|

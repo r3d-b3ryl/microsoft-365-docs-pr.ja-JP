@@ -19,19 +19,19 @@ description: セキュリティ コンプライアンス センターでエク�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5cbb8bd57a2e9bde8d19c960a71066d3ea5531c1
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: daa7b4014d1302743578d79c2e1e0e1d2d5ac61f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233644"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288899"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイムの検出
 
 
 **適用対象**
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 組織が Office [365](office-365-atp.md)用の Microsoft Defender を持ち [](#required-licenses-and-permissions)、必要なアクセス許可を持っている場合は、エクスプローラーまたはリアルタイムの検出 **(以前** のリアルタイム [](#new-features-in-threat-explorer-and-real-time-detections)レポート *-* 新機能を参照) があります。 セキュリティ & コンプライアンス センターで、[脅威の管理] に移動し、[**エクスプローラー**  ] または [リアルタイムの検出 **] を選択します**。
 
@@ -179,7 +179,7 @@ ms.locfileid: "50233644"
 
 - URL フライアウトの [クリック] セクションに、完全にクリックされた URL  (URL の一部であるクエリ パラメーターを含む) を表示します。 現時点では、URL ドメインとパスはタイトル バーに表示されます。 この情報を拡張して、完全な URL を表示します。
 
-- URL フィルター全体の修正 (*URL* と *URL* ドメイン、URL ドメイン、パス): 更新は、URL/クリックの可否を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 以下に例を示します。
+- URL フィルター全体の修正 (*URL* と *URL* ドメイン、URL ドメイン、パス): 更新は、URL/クリックの可否を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 例:
 
    -  URL、URL ドメイン、および URL ドメインおよびパス フィルター フィールドで、プレフィックスの付いていなくても `http://` 検索します。    検索は同じ結果を表示する必要があります。
 
@@ -462,7 +462,7 @@ URL クリックのレポートを Microsoft Excel にエクスポートして�
 - [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイルを表示する](malicious-files-detected-in-spo-odb-or-teams.md)
 - [脅威エクスプローラーのビューの概要 (およびリアルタイムの検出) を取得する](threat-explorer-views.md)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft Threat Protection での自動調査および対応](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft Threat Protection での自動調査および対応](../mtp/mtp-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
-ms.openlocfilehash: a6c28bad5b79bc7459a1a00fabb6713b1759201d
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 2b2b8a6215a653cee7ea67bafaadddc096abb911
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032694"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288159"
 ---
 # <a name="microsoft-report-message-and-report-phishing-add-in-license-terms"></a>Microsoft Report Message and Report Phishing Add-In license terms
 
@@ -42,11 +42,11 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
     1. **General.** You may install and use any number of copies of the software.
     1. **Third Party Software.** 本ソフトウェアには、本ライセンス契約に基付けられた第三者ではなく、マイクロソフトがユーザーにライセンスを与える第三者アプリケーションが含まれる場合があります。 サード パーティ製アプリケーションに関する通知は、お客様の情報に限定されます。
-    1. **Microsoft サービス規約。** ソフトウェアの一部の機能は、オンライン サービスにアクセスしたり、オンライン サービスに依存したりします。 これらのサービスの使用 (本ソフトウェアではない) は、マイクロソフト サービス規約の個別の使用条件およびプライバシー ポリシーに準拠しています [https://go.microsoft.com/fwlink/?linkid=398923](https://go.microsoft.com/fwlink/?linkid=398923) 。 以下のライセンス条項をお読みください。 サービスが一部の地域で利用できない場合があります。
+    1. **Microsoft サービス規約。** ソフトウェアの一部の機能は、オンライン サービスにアクセスしたり、オンライン サービスに依存したりします。 これらのサービスの使用 (本ソフトウェアではない) は、マイクロソフト サービス規約の個別の使用条件およびプライバシー ポリシーに準拠しています <https://www.microsoft.com/servicesagreement/> 。 以下のライセンス条項をお読みください。 サービスが一部の地域で利用できない場合があります。
 
-2. **DATA COLLECTION.** ソフトウェアは、お客様およびお客様のソフトウェアの使用に関する情報を収集し、Microsoft に送信する場合があります。 Microsoft は、この情報を使用してサービスを提供し、Microsoft の製品とサービスを改善する場合があります。 オプトアウトの権利がある場合は、製品ドキュメントに記載されています。 ソフトウェアの一部の機能により、ソフトウェアにアクセスまたは使用するアプリケーションのユーザーからデータを収集できる場合があります。 
+2. **DATA COLLECTION.** ソフトウェアは、お客様およびお客様のソフトウェアの使用に関する情報を収集し、Microsoft に送信する場合があります。 Microsoft は、この情報を使用してサービスを提供し、Microsoft の製品とサービスを改善する場合があります。 オプトアウトの権利がある場合は、製品ドキュメントに記載されています。 ソフトウェアの一部の機能により、ソフトウェアにアクセスまたは使用するアプリケーションのユーザーからデータを収集できる場合があります。
 
-    これらの機能を使用してアプリケーションのデータ収集を有効にする場合は、必要なユーザーの同意を得るなど、適用される法律に準拠し、データの使用、収集、共有についてユーザーに正確に通知する重要なプライバシー ポリシーを維持する必要があります。 Microsoft のデータ収集と使用の詳細については、製品のドキュメントと Microsoft のプライバシーに関する声明に関するページをご覧ください [https://go.microsoft.com/fwlink/?LinkId=512132](https://go.microsoft.com/fwlink/?LinkId=512132) 。 お客様は、Microsoft のプライバシーに関する声明のすべての該当する条項に準拠することに同意します。
+    これらの機能を使用してアプリケーションのデータ収集を有効にする場合は、必要なユーザーの同意を得るなど、適用される法律に準拠し、データの使用、収集、共有についてユーザーに正確に通知する重要なプライバシー ポリシーを維持する必要があります。 Microsoft のデータ収集と使用の詳細については、製品のドキュメントと Microsoft のプライバシーに関する声明に関するページをご覧ください <https://privacy.microsoft.com/privacystatement> 。 お客様は、Microsoft のプライバシーに関する声明のすべての該当する条項に準拠することに同意します。
 
 3. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
     1. work around any technical limitations in the software that only allow you to use it in certain ways;

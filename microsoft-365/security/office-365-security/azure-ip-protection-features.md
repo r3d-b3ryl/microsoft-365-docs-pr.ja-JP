@@ -19,20 +19,20 @@ ms.custom:
 description: この記事では、Azure Information Protection の保護機能に展開される変更について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: fe85a46e3f20cda62cd8a52bd5df92257f8fee57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261563"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286671"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure Information Protection の保護機能が既存のテナントに展開される
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Microsoft Defender for Office 365 プラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 プラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 情報を保護するための最初の手順を支援するために、2018 年 7 月からすべての Azure Information Protection の対象テナントで、Azure Information Protection の保護機能が既定で有効になります。 Azure Information Protection の保護機能は、以前は Office 365 で Rights Management または Azure RMS として知られています。 組織に Office E3 サービス プラン以上のサービス プランがある場合、これらの機能のロールアウト時に Azure Information Protection を通じて情報の保護を開始できます。
 

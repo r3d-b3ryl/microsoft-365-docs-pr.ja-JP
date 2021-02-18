@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -18,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 53d64d869b80c6fe5c6e0954a00af5b6f5359356
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: fa00427d9f950a996a52f88c1b12608707d7aa8d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233088"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288599"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>ID およびデバイス アクセス ポリシーを実装するための前提条件となる作業
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
 - Azure
 
 この記事では、管理者が推奨 ID とデバイス アクセス ポリシーを使用し、条件付きアクセスを使用するために満たす必要がある前提条件について説明します。 また、最適なシングル サインオン (SSO) エクスペリエンスを得るクライアント プラットフォームを構成するための推奨される既定値について説明します。
@@ -85,7 +86,7 @@ BYOD Windows デバイスの場合、ユーザーは [仕事用または学校�
 
 |プラットフォーム|クライアント|バージョン/注|
 |---|---|---|
-|**Windows**|Outlook|2019, 2016, 2013 <p> [モダン認証を有効にする](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication) <p> [必要な更新プログラム](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2019, 2016, 2013 <p> [モダン認証を有効にする](../../admin/security-and-compliance/enable-modern-authentication.md) <p> [必要な更新プログラム](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook for iOS|[最新](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[最新](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 および 2016|
@@ -123,7 +124,7 @@ Microsoft 365 E3 または E5 の場合、または別個の Azure AD Premium P1
 
 - [Azure AD Privileged Identity Management を使用](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)して、永続的な管理アカウントの数を減らします。
 - [特権アクセス管理を](../../compliance/privileged-access-management-overview.md) 使用して、機密データへの永続的なアクセスや重要な構成設定へのアクセス権を持つ既存の特権管理者アカウントを使用する可能性のある侵害から組織を保護します。
-- 管理専用の [Microsoft 365 管理者](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)ロールが割り当てられている個別の *アカウントを作成して使用します*。 管理者は、通常の非管理用に独自のユーザー アカウントを持ち、役割またはジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。
+- 管理専用の [Microsoft 365 管理者](../../admin/add-users/about-admin-roles.md)ロールが割り当てられている個別の *アカウントを作成して使用します*。 管理者は、通常の非管理用に独自のユーザー アカウントを持ち、役割またはジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。
 - Azure [AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) で特権アカウントをセキュリティ保護するためのベスト プラクティスに従AD。
 
 ## <a name="next-step"></a>次の手順

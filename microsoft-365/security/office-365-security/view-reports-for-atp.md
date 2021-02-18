@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,23 +18,28 @@ ms.collection:
 - m365initiative-defender-office365
 description: セキュリティ/コンプライアンス センターで microsoft Defender for Office 365 のレポート&使用します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82c003478538274be1dd1d2e04816de80d1eae6d
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e3e5d48f6ac8f6246b65761f5728405c37333d71
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659455"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286599"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター Officeレポート ダッシュボードで 365 & Defender を表示する
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター Officeレポート ダッシュボードで 365 レポートの Defender &表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Office 365 組織向け Microsoft Defender (たとえば、Microsoft 365 E5 サブスクリプション、Office 365 プラン 1 の Microsoft Defender、または Office 365 プラン 2 アドオン用の Microsoft Defender など) には、さまざまなセキュリティ関連レポートが含まれている。 必要な [アクセス許可がある](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)場合は、レポート ダッシュボードに移動して、セキュリティ/コンプライアンス センター&レポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、開きます <https://protection.office.com/insightdashboard> 。
+Office 365 組織向け Microsoft Defender (たとえば、Microsoft 365 E5 サブスクリプション、Office 365 プラン 1 の Microsoft Defender、または Office 365 プラン 2 アドオン用の Microsoft Defender など) には、さまざまなセキュリティ関連レポートが含まれている。 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)場合は、レポート ダッシュボードに移動して、セキュリティ/コンプライアンス センター&レポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、開きます <https://protection.office.com/insightdashboard> 。
 
 ![セキュリティ/コンプライアンス センター& ダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Defender for Office 365 ファイルの種類レポート
+## <a name="defender-for-office-365-file-types-report"></a>Defender for Office 365 のファイル型レポート
 
 Defender **for Office 365 ファイル** の種類レポートレポートには、安全な添付ファイルによって悪意のあるファイルとして検出されたファイルの種類 [が表示されます](atp-safe-attachments.md)。
 
@@ -92,7 +96,7 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 
 - **データの表示方法: ファイル**:
 
-  - **Date**
+  - **日付**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **メッセージ ID**: メッセージ ヘッダーの **Message-ID** ヘッダー フィールドで使用できます。一意である必要があります。 値の例を `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 次に示します (角かっこに注意してください)。
@@ -105,7 +109,7 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 
 - **View data by: Message**:
 
-  - **Date**
+  - **日付**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
@@ -119,11 +123,11 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Defender for Office 365 メッセージ廃棄レポート
+## <a name="defender-for-office-365-message-disposition-report"></a>Defender for Office 365 のメッセージ処理レポート
 
 **ATP Message Disposition レポートには**、悪意のあるコンテンツが含みと検出された電子メール メッセージに対して実行されたアクションが表示されます。
 
-レポートを表示するには、[セキュリティ](https://protection.office.com)/コンプライアンス センターを開&レポート ダッシュボードに移動し、Defender を選択して Office \>  **365 メッセージの廃棄を行います**。 レポートに直接移動するには、開きます <https://protection.office.com/reportv2?id=ATPMessageReport> 。
+レポートを表示するには、[セキュリティ](https://protection.office.com)/コンプライアンス センターを開き&**ダッシュボード** に移動し \> **、365** メッセージの廃棄に対して Defender Officeを選択します。 レポートに直接移動するには、開きます <https://protection.office.com/reportv2?id=ATPMessageReport> 。
 
 ![レポート ダッシュボードOffice 365 メッセージ廃棄ウィジェットの Defender](../../media/atp-message-disposition-report-widget.png)
 
@@ -174,7 +178,7 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 
 - **View data by: Message**:
 
-  - **Date**
+  - **日付**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
@@ -188,7 +192,7 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 
 - **データの表示方法: ファイル**:
 
-  - **Date**
+  - **日付**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
@@ -206,12 +210,12 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 [ **メールの待機時間]** レポートには、組織内で発生したメール配信と分析の待機時間の集計ビューが表示されます。 サービス内のメール配信時間は、多くの要因によって影響を受け、絶対配信時間 (秒) は成功や問題を示す良い指標ではない場合があります。 ある日の遅い配信時間は、別の日の平均配信時間、またはその逆と見なされる場合があります。 メール **待機時間レポートは、他** のメッセージの観察された配信時間に関する統計データに基づいて、メッセージ配信の条件を設定しようと試みられます。
 
 - **50 パーセント**: これは、メッセージの配信時間の中間です。 この値は、平均配信時間と見なされます。
-- **90 パーセント**: これは、メッセージ配信の待機時間が長い状態を示します。 配信にこの値を超える時間がかかったのは、メッセージの 10% のみです。
-- **99 パーセント**: これは、メッセージ配信の待機時間が最も長い状態を示します。
+- **90 パーセント**: これは、メッセージ配信の待機時間が長い状態を示します。 配信にこの値を超える時間がかかったのはメッセージの 10% のみです。
+- **99 パーセント**: これは、メッセージ配信の待機時間が最も長いかどうかを示します。
 
 クライアント側とネットワークの待機時間は含まれません。
 
-レポートを表示するには、[セキュリティ](https://protection.office.com)/コンプライアンス センターを&レポート ダッシュボードに移動し、[メールの待機時間] \> **レポートを選択します**。 レポートに直接移動するには、開きます <https://protection.office.com/mailLatencyReport?viewid=P50> 。
+レポートを表示するには、セキュリティ/[](https://protection.office.com)コンプライアンス センターを&レポート ダッシュボードに移動し、[メールの待機時間] \> **レポートを選択します**。 レポートに直接移動するには、開きます <https://protection.office.com/mailLatencyReport?viewid=P50> 。
 
 ![レポート ダッシュボードのメール待機時間レポート ウィジェット](../../media/mail-latency-report-widget.png)
 
@@ -225,7 +229,7 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 - **メッセージ ビュー**:
   - デトニートされたメッセージ
 
-このグラフは、次のカテゴリに分類されたメッセージを示しています。
+このグラフには、次のカテゴリに分類されたメッセージが表示されます。
 
 - **メール配信の待機時間**
 - **デトレーションの待機時間**
@@ -245,31 +249,31 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 
 詳細テーブル ビューには、次の情報が表示されます。
 
-- **Date**
+- **日付**
 - **Percentiles**
 - **メッセージ数**
 - **全体的な待機時間**
 
 ![メール待機時間レポートの詳細](../../media/mail-latency-report-details.png)
 
-上記の結果、11 月 14 日に配信され、デトトされたメッセージの平均待機時間は **108.033** 秒でした。
+上の例では、11 月 14 日に配信され、デトトされたメッセージの平均待機時間は **108.033** 秒でした。
 
 詳細テーブルには、各タブに同じ情報が含まれる。
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-脅威保護状態レポートは[、Exchange Online Protection](exchange-online-protection-overview.md) (EOP) と microsoft Defender for Office 365 によって検出およびブロックされた悪意のあるコンテンツと悪意のある電子メールに関する情報をまとめる単一ビューです。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。
+脅威 **保護** 状態レポートは [、Exchange Online Protection](exchange-online-protection-overview.md) (EOP) と microsoft Defender for Office 365 によって検出およびブロックされた悪意のあるコンテンツと悪意のある電子メールに関する情報をまとめる単一ビューです。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。
 
 ## <a name="url-threat-protection-report"></a>URL 脅威保護レポート
 
 **URL 脅威保護レポートは、** 検出された脅威と、安全なリンクの一部として URL クリックに対して実行されたアクションの概要と傾向ビュー [を提供します](atp-safe-links.md)。 このレポートには、安全なリンク ポリシーが適用されているユーザーからのクリック データが表示されません。[ユーザーのクリックを追跡しない] オプション **が** 選択されています。
 
-レポートを表示するには、Security [& Compliance Center](https://protection.office.com)を開き、**レポート** ダッシュボードに移動して URL 保護 \> **レポートを選択します**。 レポートに直接移動するには、開きます <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
+レポートを表示するには、セキュリティ/コンプライアンス センター&[開](https://protection.office.com)き、[レポート **ダッシュボード]** に移動し、[URL 保護 \> ]**レポートを選択します**。 レポートに直接移動するには、開きます <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
 
 ![レポート ダッシュボードの URL 保護レポート ウィジェット](../../media/url-protection-report-widget.png)
 
 > [!NOTE]
-> これは保護傾向 *レポートで、* データは大規模なデータセットの傾向を表します。 その結果、集計ビューのデータは、ここではリアルタイムでは使用できませんが、詳細テーブル ビューのデータなので、2 つのビューの間にわずかな不一致が表示される場合があります。
+> これは保護傾向 *レポートで、* データは大規模データセットの傾向を表します。 その結果、集計ビューのデータは、ここではリアルタイムでは使用できませんが、詳細テーブル ビューのデータなので、2 つのビューの間にわずかな不一致が表示される場合があります。
 
 ### <a name="report-view-for-the-url-threat-protection-report"></a>URL 脅威保護レポートのレポート ビュー
 
@@ -286,7 +290,7 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
   [フィルター] **をクリック** すると、次のフィルターを使用してレポートを変更できます。
 
   - **開始日と****終了日**
-  - 使用可能なクリック保護アクションに、値 **Allowed** (ユーザーは URL への移動を許可された) を加えたもの。
+  - 使用可能なクリック保護アクションに、許可 **された** 値 (ユーザーは URL への移動を許可された)。
 
   ![URL の脅威保護レポートの URL クリック保護アクション ビュー](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
@@ -318,6 +322,9 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 
 詳細テーブル ビューで **[** フィルター] をクリックすると、レポート ビューと同じ条件でフィルター処理したり、ドメインまたは受信者をコンマで区切ってフィルター処理することができます。
 
+> [!NOTE]
+> Domains **フィルターは** 、レポートの結果に記載されている URL ドメインを参照します。 
+
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 
 ## <a name="additional-reports-to-view"></a>表示するその他のレポート
@@ -332,7 +339,7 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 |**上位の送信者** と受信者のレポート、スプーフィング メール レポート、スパム検出レポートなどの電子メール セキュリティ レポート。|[セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)|
 |**転送レポート、** メールフローステータス レポート、上位送信者と受信者レポートなどのメール フロー レポート。|[セキュリティ/コンプライアンス センターでメール フロー レポート&表示する](view-mail-flow-reports.md)|
 |**安全なリンクの URL トレース** (PowerShell のみ)。 このコマンドレットの出力には、過去 7 日間の安全なリンクアクションの結果が表示されます。|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|EOP と Microsoft Defender のメール トラフィックの結果は、Office **365** 用です (PowerShell のみ)。 このコマンドレットの出力には、Domain、Date、Event Type、Direction、Action、および Message Count に関する情報が含まれる。|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
+|**EOP と Microsoft Defender のメール トラフィックの結果は、Office 365** 用です (PowerShell のみ)。 このコマンドレットの出力には、Domain、Date、Event Type、Direction、Action、および Message Count に関する情報が含まれる。|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**365 の検出に関する EOP** および Defender Office詳細レポート (PowerShell のみ)。 このコマンドレットの出力には、悪意のあるファイルまたは URL、フィッシング詐欺の試み、偽装、および電子メールまたはファイル内のその他の潜在的な脅威に関する詳細が含されます。|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
 
@@ -343,11 +350,11 @@ Defender **for Office 365 ファイル** の種類レポートレポートには
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ閲覧者**
-- **グローバル リーダー**
+- **グローバル閲覧者**
 
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンスセンターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
+**注**: Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンスセンターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合
 

@@ -14,23 +14,23 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: このステップ バイ ステップ展開ガイドを使用して、sharePoint Online の独立したチーム サイトを Microsoft Office 365 で作成および構成します。
+description: このステップ バイ ステップ展開ガイドを使用して、SharePoint Online の独立したチーム サイトを Microsoft Office 365 で作成および構成します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d226a545c3f8dc274f02e5d54d39739fe5d981ea
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165501"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288349"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **概要:** ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。
 
@@ -108,11 +108,11 @@ Azure AD で次のアクセス グループを作成する必要があります�
 
 Active Directory ドメイン サービス (AD DS) を使用してユーザー アカウントとグループを管理している場合は、通常の AD DS ユーザーおよびグループ管理手順を使用して適切なアクセス グループにユーザーを追加し、Microsoft 365 サブスクリプションとの同期を待ちます。
 
-Office 365 を使用してユーザー アカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。 任意のアクセス グループのグループ名が重複している場合は、Microsoft 365 管理センターを使用する必要があります。
+Office 365 を使用してユーザー アカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。 すべてのアクセス グループに重複するグループ名がある場合は、Microsoft 365 管理センターを使用する必要があります。
 
 Microsoft 365 管理センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なユーザー アカウントとグループを適切なアクセス グループに追加します。
 
-PowerShell の場合は、 [最初に Graph 用 Azure Active Directory PowerShell モジュールを使用して接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+PowerShell の場合は、 [最初に Graph 用 Azure Active Directory PowerShell モジュールを使用して接続します](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 次に、以下のコマンド ブロックを使用して、個々のユーザー アカウントをアクセス グループに追加します。
 
@@ -182,7 +182,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 1. ツールバーで、設定アイコンをクリックしてから、**[サイトの権限]** をクリックします。
 
-2. [ **サイト共有] で**、[メンバーが **共有する方法の変更] をクリックします**。
+2. [ **サイトの共有] で**、[メンバー **が共有する方法の変更] をクリックします**。
 
 3. Choose the **Only site owners can share files, folders, and the site**.
 

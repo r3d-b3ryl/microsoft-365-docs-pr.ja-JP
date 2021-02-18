@@ -19,20 +19,20 @@ ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 分離した SharePoint Online チーム サイトを設計します。アクセス許可レベルの決定、アクセス グループを持つユーザーへのアクセス許可の割り当て、入れ子になった Azure AD グループがあります。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0f92a925948dbf6c8c5c1beb6b9c709f508c4b3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0d53f3b45e3f406dfb0b38bcc910bd34876acb08
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165513"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288337"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの設計
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
  **概要:** 分離した SharePoint Online チーム サイトの設計プロセスをステップごとに示します。
@@ -76,17 +76,17 @@ SharePoint グループのメンバーがサイトで実行できる内容を決
 
 - Members SharePoint **\<site name> グループのメンバー** には、ユーザー アカウントとグループの両方を含め、編集アクセス許可 **レベルが割り** 当てられます。
 
-- ユーザー アカウントと **\<site name> グループの** 両方を含む、Visitors SharePoint グループのメンバーには、読み取りアクセス許可 **レベルが割り** 当てられます。
+- ユーザー アカウントと **\<site name> グループの** 両方を含め可能な Visitors SharePoint グループのメンバーには、読み取りアクセス許可 **レベルが割り** 当てられます。
 
 - 所有者 SharePoint **\<site name> グループのメンバー** には、ユーザー アカウントとグループの両方を含め、フル コントロールのアクセス許可 **レベルが割り** 当てられます。
 
  **ベスト プラクティス:** 個々のユーザー アカウントを使用してアクセス許可を管理することもできますが、代わりにアクセス グループと呼ばれる 1 つの Azure AD グループを使用することをお勧めします。この方法は、SharePoint グループごとにユーザー アカウントのリストを管理するのではなく、アクセス グループのメンバーシップでアクセス許可の管理を簡略化するものです。
 
-Microsoft 365 の Azure ADグループは、Microsoft 365 グループとは異なります。 Azure ADグループは、Microsoft 365 管理センターに表示され、その種類が **[** セキュリティ] に設定され、メール アドレスが設定されません。 以下で Azure AD グループを管理できます。
+Microsoft 365 AD Azure グループは、Microsoft 365 グループとは異なります。 Azure ADグループは、Microsoft 365 管理センターに表示され、その種類が **[** セキュリティ] に設定され、メール アドレスが設定されません。 以下で Azure AD グループを管理できます。
 
 - Active Directory Domain Services (AD DS)
 
-    これらのグループは、オンプレミスの AD DS インフラストラクチャで作成され、Microsoft 365 サブスクリプションに同期されたグループです。 Microsoft 365 管理センターでは、これらのグループの状態は Active Directory と同期 **済みです**。
+    これらは、オンプレミスの AD DS インフラストラクチャで作成され、Microsoft 365 サブスクリプションに同期されたグループです。 Microsoft 365 管理センターでは、これらのグループの状態は Active Directory と同期 **済みです**。
 
 - Office 365
 
@@ -115,11 +115,11 @@ Azure ベースのアクセス グループを使用するように構成され�
 
 - Admins アクセス グループには、チーム **\<site name>** サイトを管理している少数の SharePoint Online 管理者に対応するメンバーが少数存在する必要があります。
 
-- ほとんどのサイト メンバーは、メンバーまたは閲覧 **\<site name> 者****\<site name> のアクセス グループ** に参加しています。 Members アクセス グループのサイト **\<site name> メンバー** は、サイト内のリソースを削除または変更する機能を持つため、メンバーシップを慎重に検討してください。 疑問に思った場合は、サイト メンバーを Viewers アクセス **\<site name> グループに** 追加します。
+- ほとんどのサイト メンバーは、メンバーまたは閲覧 **\<site name> 者****\<site name> のアクセス グループ** に参加しています。 Members アクセス グループのサイト **\<site name> メンバー** は、サイト内のリソースを削除または変更する機能を持つため、メンバーシップについて慎重に検討してください。 疑問に思った場合は、サイト メンバーを Viewers アクセス **\<site name> グループに** 追加します。
 
 ProjectX という名前の分離されたサイトの SharePoint グループとアクセス グループの例を次に示します。
 
-![ProjectX という名前の SharePoint Online サイトにアクセス グループを使用する例。](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![ProjectX という名前の SharePoint Online サイトでアクセス グループを使用する例。](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
 
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>フェーズ 3: ネストされた Azure AD グループを使用する
 

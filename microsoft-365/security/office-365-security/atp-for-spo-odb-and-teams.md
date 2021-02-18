@@ -23,20 +23,20 @@ ms.custom:
 description: Microsoft Defender for Office 365 for files in SharePoint Online, OneDrive for Business, and Microsoft Teams について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 640867cb38dab650bca990fe36c0b7cea7f6a0d8
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: ce73e1fd5c8ecb63bee1db2e9e64aade305b37e9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175729"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287055"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SPO、OneDrive、Teams 用の安全な添付ファイル機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [Microsoft Defender for Office 365](office-365-atp.md)の SharePoint、OneDrive、Microsoft Teams の安全な添付ファイルは[、Microsoft 365](virus-detection-in-spo.md)の一般的なウイルス検出エンジンによってアップロード時に既にスキャンされたファイルに対する保護層を追加します。 SharePoint、OneDrive、Microsoft Teams の安全な添付ファイルは、チーム サイトやドキュメント ライブラリで悪意のあるファイルとして識別された既存のファイルを検出してブロックするのに役立ちます。
 
@@ -48,7 +48,7 @@ SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイル
 
 ![悪意のあるファイルとして検出された OneDrive for Business のファイル](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
-ブロックするファイルは引き続きドキュメント ライブラリと Web アプリケーション、モバイル アプリケーション、またはデスクトップ アプリケーションに表示されます。ただし、ユーザーはファイルを開く、コピーする、移動する、または共有できません。 ただし、ブロックするファイルは削除できます。
+ブロックされたファイルは引き続きドキュメント ライブラリと Web アプリケーション、モバイル アプリケーション、またはデスクトップ アプリケーションに表示されます。ただし、ユーザーはファイルを開く、コピーする、移動する、または共有できません。 ただし、ブロックするファイルは削除できます。
 
 モバイル デバイスでブロックされるファイルの例を次に示します。
 
@@ -62,11 +62,11 @@ SharePoint Online 管理者は、悪意のあるファイルをダウンロー�
 
 ファイルが悪意のあるファイルとして検出された場合のユーザー エクスペリエンスの詳細については [、「SharePoint Online、OneDrive、または Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)で悪意のあるファイルが見つかった場合の対応方法」を参照してください。
 
-## <a name="view-information-about-malicious-files-detected-by-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams の安全な添付ファイルで検出された悪意のあるファイルに関する情報を表示する
+## <a name="view-information-about-malicious-files-detected-by-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams の安全な添付ファイルによって検出された悪意のあるファイルに関する情報を表示する
 
 Office 365 の Microsoft Defender によって悪意のあるファイルとして識別されたファイルは [、microsoft Defender for Office 365](view-reports-for-atp.md) およびエクスプローラー (およびリアルタイムの検出 [)](threat-explorer.md)のレポートに表示されます。
 
-2018 年 5 月現在、ファイルが Office 365 の Microsoft Defender によって悪意のあるファイルとして識別された場合、そのファイルは検疫でも使用できます。 詳細については、「セキュリティ/コンプライアンス センター [を使用して&ファイルを管理する」を参照してください](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)。
+2018 年 5 月の現在、ファイルが Office 365 の Microsoft Defender によって悪意のあるファイルとして識別された場合、そのファイルは検疫でも使用できます。 詳細については、「セキュリティ/コンプライアンス センター [を使用して&ファイルを管理する」を参照してください](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)。
 
 ## <a name="keep-these-points-in-mind"></a>以下の点を念頭に置く
 
