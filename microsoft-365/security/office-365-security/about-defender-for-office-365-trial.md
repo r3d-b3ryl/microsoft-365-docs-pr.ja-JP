@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理者は、Microsoft Defender for Office 365 の試用版モードについて学習できます。
-ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 0f45379bec52b54059c743823e2c8eb366f9bd59
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233581"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289391"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365 試用版について
 
@@ -55,9 +55,9 @@ Defender for Office 365 試用版は 90 日間利用可能で、すべてのユ�
 
 試用版のセットアップの一環として、365 ライセンスOffice Defender が組織に自動的に適用されます。 ライセンスは最初の 90 日間無料です。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
-試用版を開始または終了するには、Azure Active Directory のグローバル管理者ロールまたは **セキュリティ** 管理者ロールのメンバーである必要があります。 詳細については、「管理者ロール [について」を参照してください](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+試用版を開始または終了するには、Azure Active Directory のグローバル管理者ロールまたは **セキュリティ** 管理者ロールのメンバーである必要があります。 詳細については、「管理者ロール [について」を参照してください](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="additional-information"></a>追加情報
 
@@ -98,7 +98,7 @@ Defender for Office 365 の詳細については、この対話型ガイド [を
 - [脅威エクスプローラーとリアルタイムの検出](threat-explorer.md)
 - [Defender での Office 365 のリアルタイム レポート](view-reports-for-atp.md)
 - [脅威トラッカー - 新機能とNoteworthy 機能 ](threat-trackers.md)
-- Microsoft [365 Defender との統合](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- Microsoft [365 Defender との統合](../mtp/microsoft-threat-protection.md)
 
 ### <a name="response-and-remediation"></a>応答と修復
 

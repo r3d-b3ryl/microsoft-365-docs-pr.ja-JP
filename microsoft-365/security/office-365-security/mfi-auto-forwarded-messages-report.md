@@ -12,35 +12,35 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、セキュリティ/コンプライアンス センターのメール フロー ダッシュボードで、自動転送&確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c95c403e0b342bf0466c45804ba3975c492b8e1b
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 8f5e7088a88307576a054a1f6833101789d68d01
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150602"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290635"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでの自動転送&の分析情報
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-セキュリティ **&** コンプライアンス センターのメール [](mail-flow-insights-v2.md)フロー ダッシュボードの [](https://protection.office.com)自動転送されたメッセージの分析情報には、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
+セキュリティ **&** コンプライアンス センターのメール [](mail-flow-insights-v2.md)フロー ダッシュボードの [](https://protection.office.com)自動転送メッセージの分析情報には、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
 
 ![セキュリティ/コンプライアンス センターの自動転送&ウィジェット](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>自動転送されたメッセージの詳細
 
-ウィジェット内のメッセージ数をクリックすると、自動転送されたメッセージに関する詳細を表示するフライアウト ウィンドウが表示されます。
+ウィジェット内のメッセージ数をクリックすると、自動転送されたメッセージに関する詳細を示すフライアウト ウィンドウが表示されます。
 
 - **転送方法による自動転送メッセージ**:
 
   - **メール フロー ルール別**
   - **受信トレイ ルール別**
-  - **SMTP 転送による** 転送 : この方法は、「メールボックスのメール転送を構成する」の説明に従って、管理者がメールボックスで構成できる自動転送 [を示します](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)。
+  - **SMTP 転送による** 転送 : この方法は、「メールボックスの電子メール転送を構成する」の説明に従って、管理者がメールボックスで構成できる自動転送 [を示します](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)。
   - 詳細については、 [転送レポート](view-mail-flow-reports.md#forwarding-report) へのリンク。
 
 - **ドメインおよびユーザーによって自動的に転送されるメッセージ**:
@@ -51,7 +51,7 @@ ms.locfileid: "50150602"
   - **新しいユーザー (先週)**
   - 詳細については、 [転送変更レポート](mfi-new-users-forwarding-email.md#forwarding-modifications-report) へのリンク。
 
-![セキュリティ/コンプライアンス センターの [自動転送されたメッセージ] &詳細フライアウト](../../media/mfi-auto-forwarded-messages-details.png)
+![セキュリティ/コンプライアンス センターの [自動転送されたメッセージ] レポート&詳細](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>分析情報
 
@@ -60,6 +60,6 @@ ms.locfileid: "50150602"
 - [新しいユーザーがメールを転送する](mfi-new-users-forwarding-email.md)
 - [メールを転送する新しいドメイン](mfi-new-domains-being-forwarded-email.md)
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 メール フロー ダッシュボードの他の分析情報については、セキュリティ/コンプライアンス センターの「メール [フロー&参照してください](mail-flow-insights-v2.md)。

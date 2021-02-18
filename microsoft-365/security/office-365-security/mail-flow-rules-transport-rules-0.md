@@ -13,21 +13,21 @@ ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: メール フロー ルール (トランスポート ルール) を使用して、組織を通過するメッセージを特定してアクションを実行できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f873d4e46c9e3b7f085e03a9fbb19e5914317fa
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d189a9f4b21828fa4e23f7d5a325b4e9c56259bc
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167037"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289939"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>スタンドアロン EOP のメール フロー ルール (トランスポート ルール)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Exchange Online メールボックスを持っていないスタンドアロンの Exchange Online Protection (EOP) 組織では、メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、組織を通過するメッセージを識別してアクションを実行できます。
 
@@ -35,7 +35,7 @@ Exchange Online メールボックスを持っていないスタンドアロン�
 
 メール フロー ルールを作成、コピー、および管理する手順については [、「Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)でのメール フロー ルールの管理」を参照してください。 ルールごとに、ルールを適用、ルールをテスト、ルールをテストして送信者に通知するという、いずれかのオプションを選択できます。 テスト オプションの詳細については、「Exchange Online のテスト メール フロー [ルール](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) と [ポリシー ヒント」を参照してください](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)。
 
-メール フロー ルールに一致したメッセージに関する概要レポートと詳細レポートについては、「メール保護レポートを使用してマルウェア、スパム、ルールの検出に関するデータを表示する」を参照 [してください](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。
+メール フロー ルールと一致したメッセージに関する概要レポートと詳細レポートについては、「メール保護レポートを使用してマルウェア、スパム、ルールの検出に関するデータを表示する」を [参照してください](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。
 
 メール フロー ルールを使用して特定のメッセージング ポリシーを実装するには、次のトピックを参照してください。
 
@@ -51,9 +51,9 @@ Exchange Online メールボックスを持っていないスタンドアロン�
 
 - [Exchange Online Protection でファイルの添付のブロックを通じてマルウェアの脅威を削減する](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [Office 365 で電子メール メッセージを暗号化または暗号化解除するルールを定義する](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+- [Office 365 で電子メール メッセージを暗号化または暗号化解除するルールを定義する](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
-次のビデオは、スタンドアロン EOP でのメール フロー ルールの設定のデモンストレーションを提供します。
+次のビデオでは、スタンドアロン EOP でのメール フロー ルールの設定のデモを示します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
 
@@ -67,11 +67,11 @@ Exchange Online メールボックスを持っていないスタンドアロン�
 
 - **例外**: 必要に応じて、アクションが適用されないメッセージを特定します。 条件で使用可能なメッセージ識別子と同じものが、例外でも使用可能です。 例外は条件より優先され、メッセージが構成されているすべての条件に一致していても、そのメッセージにルール アクションが適用されないようにします。
 
-- **Actions**: ルールの条件に一致し、どの例外にも一致しないメッセージに対して実行する処理を指定します。 例外は条件より優先され、メッセージが構成されているすべての条件に一致していても、そのメール メッセージにアクションが適用されないようにします。
+- **アクション**: ルールの条件に一致し、どの例外にも一致しないメッセージに対して実行する処理を指定します。 例外は条件より優先され、メッセージが構成されているすべての条件に一致していても、そのメール メッセージにアクションが適用されないようにします。
 
-スタンドアロンの EOP で使用可能なメール フロー ルールアクションの詳細については、Exchange Online のメール フロー [ルールアクションを参照してください](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+スタンドアロンの EOP で使用可能なメール フロー ルールアクションの詳細については、「Exchange Online のメール フロー [ルールアクション」を参照してください](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
-- **プロパティ**: 条件、例外、またはアクション以外の他のルール設定を指定します。 たとえば、いつルールを適用するか、ルールを強制するか、あるいはテストするかどうか、およびルールを有効化する期間などです。
+- **プロパティ**: 条件、例外、アクション以外の他のルール設定を指定します。 たとえば、いつルールを適用するか、ルールを強制するか、あるいはテストするかどうか、およびルールを有効化する期間などです。
 
   詳細については、この記事の「 [メール フロー ルールのプロパティ」](#mail-flow-rule-properties) セクションを参照してください。
 
@@ -122,18 +122,18 @@ Use a transport rule so messages can bypass Clutter
 |組織を通過するメッセージにはいくつかの種類があります。次の表に、トランスポート ルールで処理できるメッセージの種類を示します。|メッセージの種類|
 |---|---|
 |**通常の** メッセージ : 1 つのリッチ テキスト形式 (RTF)、HTML、またはテキスト形式のメッセージ本文、またはメッセージ本文のマルチパートまたは代替セットを含むメッセージ。|はい|
-|**Office 365 Message Encryption**: Office 365 で 365 Message Encryption によって暗号化Officeメッセージ。 詳細については、「[Office 365 での暗号化](https://docs.microsoft.com/microsoft-365/compliance/encryption)」をご覧ください。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <p> 暗号化されたメッセージの内容を検査または変更するルールの場合は、トランスポート復号化が有効 (必須またはオプション、既定値は省略可能) を確認する必要があります。 詳細については、「365 で電子メール [メッセージを暗号化または暗号化解除](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)するルールOffice参照してください。|
+|**Office 365 Message Encryption**: Office 365 で 365 Message Encryption によって暗号化Officeメッセージ。 詳細については、「[Office 365 での暗号化](../../compliance/encryption.md)」をご覧ください。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <p> 暗号化されたメッセージの内容をルールで検査または変更するには、トランスポート復号化が有効 (必須またはオプション、既定値は省略可能) を確認する必要があります。 詳細については、「365 で電子メール メッセージ [を暗号化または暗号化解除](../../compliance/define-mail-flow-rules-to-encrypt-email.md)するルールOffice参照してください。|
 |**S/MIME 暗号化されたメッセージ**|ルールは、エンベロープ ヘッダーにのみアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <p> メッセージ コンテンツの検査を必要とする条件を使用したルール、またはメッセージのコンテンツを変更するアクションを処理することはできません。|
 |**RMS で保護されたメッセージ**: Active Directory Rights Management サービス (AD RMS) または Azure Rights Management (RMS) ポリシーが適用されたメッセージ。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <p> RMS で保護されたメッセージの内容をルールで検査または変更するには、トランスポート復号化が有効 (必須またはオプション、既定値は省略可能) を確認する必要があります。|
 |**クリア署名されたメッセージ**: 署名されているが暗号化されていないメッセージ。|はい|
-|**UM メッセージ**: ユニファイド メッセージング サービスによって作成または処理されるメッセージ (ボイス メール、FAX、ミスした呼び出し通知など)、および Microsoft Outlook Voice Access を使用して作成または転送されたメッセージ。|はい|
+|**UM メッセージ**: ユニファイド メッセージング サービスによって作成または処理されるメッセージ (ボイス メール、FAX、ミスした呼び出し通知、Microsoft Outlook Voice Access を使用して作成または転送されたメッセージなど)。|はい|
 |**匿名メッセージ**: 匿名送信者によって送信されたメッセージ。|はい|
 |**レポートの読** み取り : 送信者による受信確認要求への応答として生成されるレポート。 レポートの読み取りには、次のメッセージ クラス `IPM.Note*.MdnRead` があります `IPM.Note*.MdnNotRead` 。|はい|
 |
 
 ## <a name="what-else-should-i-know"></a>その他の注意事項
 
-- ルール **の Version** プロパティまたは **RuleVersion** プロパティ値は、Exchange Online Protection では重要ではありません。
+- ルール **の Version** プロパティまたは **RuleVersion** プロパティの値は、Exchange Online Protection では重要ではありません。
 
 - メール フロー ルールを作成または変更した後に、新規または更新されたルールがメッセージに適用されるまで、最大で 30 分かかります。
 

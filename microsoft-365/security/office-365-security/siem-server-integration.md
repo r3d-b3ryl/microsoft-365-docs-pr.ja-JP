@@ -18,28 +18,28 @@ ms.custom:
 description: セキュリティ情報およびイベント管理 (SIEM) サーバーと Microsoft 365 クラウド サービスおよびアプリケーションの統合の概要を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f29da87aa6eab1852330092d93187a27b2d36eb2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b4490d52cbd403bf4ce2cc3f3fb3c5a91c5646b9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167145"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290383"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報およびイベント管理 (SIEM) サーバーと Microsoft 365 サービスおよびアプリケーションの統合
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>要約
 
-組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用していますか?または計画していますか? Microsoft 365 または Office 365 と統合する方法を疑問に思う可能性があります。 この記事では、SIEM サーバーを Microsoft 365 サービスおよびアプリケーションと統合するために使用できるリソースの一覧を示します。
+組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用するか、または取得を計画していますか。 Microsoft 365 または Office 365 と統合する方法を疑問に思う可能性があります。 この記事では、SIEM サーバーを Microsoft 365 サービスおよびアプリケーションと統合するために使用できるリソースの一覧を示します。
 
 > [!TIP]
-> まだ SIEM サーバーをお持ちで、オプションを検討している場合は **[、Microsoft Azure Sentinel を検討してください](https://docs.microsoft.com/azure/sentinel/overview)**。
+> SIEM サーバーをまだお持ちで、オプションを検討している場合は **[、Microsoft Azure Sentinel を検討してください](https://docs.microsoft.com/azure/sentinel/overview)**。
 
 ## <a name="do-i-need-a-siem-server"></a>SIEM サーバーは必要ですか?
 
@@ -63,7 +63,7 @@ SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプ
 |
 
 > [!TIP]
-> [Azure Sentinel を確認してください](https://docs.microsoft.com/azure/sentinel/overview)。 Azure Sentinel には、Microsoft ソリューションのコネクタが付属しています。 これらのコネクタは、"既定で" 使用可能で、リアルタイムの統合を実現します。 Azure Sentinel は、Microsoft 365 Defender ソリューションと Microsoft 365 サービス (Office 365、Azure AD、Id 用 Microsoft Defender、Microsoft Cloud App Security など) と一緒に使用できます。
+> [Azure Sentinel を確認してください](https://docs.microsoft.com/azure/sentinel/overview)。 Azure Sentinel には、Microsoft ソリューションのコネクタが付属しています。 これらのコネクタは、"既定で" 使用可能であり、リアルタイム統合を実現します。 Azure Sentinel は、Microsoft 365 Defender ソリューションと Microsoft 365 サービス (Office 365、Azure AD、Id 用 Microsoft Defender、Microsoft Cloud App Security など) と一緒に使用できます。
 
 ### <a name="audit-logging-must-be-turned-on"></a>監査ログを有効にする必要があります
 

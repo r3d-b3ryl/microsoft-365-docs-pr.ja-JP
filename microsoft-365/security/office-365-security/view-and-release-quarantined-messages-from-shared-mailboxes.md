@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示および処理する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3efccca375745b0850c91039165b72a7d6f0bcb3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 31fbf9c54c3f28e439f444dde872469918dc29d4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931448"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290143"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
 
@@ -35,7 +35,7 @@ ms.locfileid: "49931448"
 
 現在では、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するために、自動マッピングが必要なくなりました。 正常に動作します。 共有メールボックスに送信された検疫済みメッセージにアクセスするには、次の 2 つの方法があります。
 
-- 管理者がスパム対策[](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies)ポリシーでエンド ユーザーのスパム通知を有効にしている場合、共有メールボックス内のエンド ユーザーのスパム通知にアクセスできるユーザーは、通知の[確認] ボタンをクリックして、セキュリティ & コンプライアンス センターで検疫に移動できます。 この方法では、ユーザーが共有メールボックスに送信された検疫済みメッセージのみを管理できます。 ユーザーは、このコンテキストで自分の検疫メッセージを管理できません。
+- 管理者がスパム対策[](configure-your-spam-filter-policies.md)ポリシーでエンド ユーザーのスパム通知を有効にしている場合、共有メールボックス内のエンド ユーザーのスパム通知にアクセスできるユーザーは、通知の[確認] ボタンをクリックして、セキュリティ & コンプライアンス センターで検疫に移動できます。 この方法では、ユーザーが共有メールボックスに送信された検疫済みメッセージのみを管理できます。 ユーザーは、このコンテキストで自分の検疫メッセージを管理できません。
 
 - ユーザーは、 [セキュリティ/コンプライアンス センターで検疫&移動できます](find-and-release-quarantined-messages-as-a-user.md)。 既定では、ユーザーに送信されたメッセージだけが表示されます。 ただし、ユーザーは並べ替えの結果 **(既定** では [メッセージ **ID]** ボタン) を受信者の電子メール アドレスに変更し、共有メールボックスの電子メール アドレスを入力し、[最新の情報に更新] をクリックして、共有メールボックスに送信された検疫済みメッセージを表示できます。
 

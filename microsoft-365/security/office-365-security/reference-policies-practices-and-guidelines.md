@@ -14,24 +14,24 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft はさまざまなポリシー、手順を開発し、さまざまな業界のベスト プラクティスを採用して、ユーザーを不正な電子メール、不要な電子メール、または悪意のある電子メールから保護しています。
+description: Microsoft はさまざまなポリシー、手順を開発し、さまざまな業界のベスト プラクティスを採用して、不正、望ましくない、または悪意のある電子メールからユーザーを保護しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166857"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289211"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス: ポリシー、プラクティス、ガイドライン
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Microsoft は、Web 上におけるユーザー エクスペリエンスの信頼性を高めるための支援に取り組んでいます。 そのため、さまざまなポリシー、手順を作成し、業界のいくつものベスト プラクティスを採用して、ユーザーが不適切で望ましくない、または悪意のあるメールから保護されるよう取り組んできました。 ユーザーに電子メールを送信しようとする送信者は、この取り組みを支援し、潜在的な配信の問題を回避するために、完全に理解し、この記事のガイダンスに従っている必要があります。
 
@@ -41,7 +41,7 @@ Microsoft は、Web 上におけるユーザー エクスペリエンスの信�
 
 Microsoft 365 ユーザーに送信される電子メールは、電子メールの送信と Microsoft 365 の使用に関する Microsoft ポリシーに準拠している必要があります。
 
-- Microsoft 365 に適用されるサービスの使用条件特に、スパムやマルウェアの配布にサービスを使用しに対する禁止。
+- Microsoft 365 に適用されるサービスの使用条件特に、サービスを使用してスパムやマルウェアを配布したりしに対する禁止。
 
 - [Microsoft サービス規約](https://www.microsoft.com/servicesagreement/)
 

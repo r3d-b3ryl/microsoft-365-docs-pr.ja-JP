@@ -15,19 +15,19 @@ ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) をセットアップして、オンプレミスの電子メール環境を保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 42952259da4086c4e147fb1a69fc081659dcc7e2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: de3c40a15a69eb2430c9c9b0473a983ef7c5354f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166209"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290467"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>スタンドアロン EOP サービスをセットアップする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
 このトピックでは、スタンドアロンの Exchange Online Protection (EOP) をセットアップする方法について説明します。 Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。 コネクタの構成方法の詳細については、「[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)」をご覧ください。
 
@@ -40,23 +40,23 @@ ms.locfileid: "50166209"
 
 - このタスクの予想所要時間:1 時間
 
-- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理 **(グローバル** 管理者) およびメール フロー管理者の役割グループに割り当てられるリモートドメインと承認されたドメインの役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス許可](feature-permissions-in-eop.md) 」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理 **(グローバル** 管理者) 役割グループとメール フロー管理者役割グループに割り当てられる"Remote **and Accepted Domains/** リモートドメインと承認されたドメイン" 役割が必要です。  詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - EOP に登録にしていない場合は、「[Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)」にアクセスして、サービスを購入するか、試用してみてください。
 
-- この記事の手順に適用できるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
+- この記事の手順に適用されるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
 
 > [!TIP]
-> 問題が発生する場合 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) フォーラムでサポートをご依頼ください。
+> 問題が発生する場合 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) フォーラムでサポートをご依頼ください。
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>手順 1: Microsoft 365 管理センターを使用してドメインを追加して確認する
 
-1. Microsoft [365 管理](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)センターで、[セットアップ] に移動してドメインをサービスに追加します。
+1. Microsoft [365 管理](../../admin/admin-overview/about-the-admin-center.md)センターで、[セットアップ] に移動してドメインをサービスに追加します。
 
 2. ドメインの所有権を確認するため、以下の手順に従って、適用可能な DNS レコードを DNS ホスティング プロバイダーに追加します。
 
 > [!TIP]
-> [Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) にドメインを追加し [、Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) の任意の DNS ホスティング プロバイダーで DNS レコードを作成すると、ドメインをサービスに追加して DNS を構成する場合に参照に役立つリソースになります。
+> [Office 365](../../admin/setup/add-domain.md) にドメインを追加し [、Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) の任意の DNS ホスティング プロバイダーで DNS レコードを作成すると、ドメインをサービスに追加して DNS を構成する場合に参照に役立つリソースになります。
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>手順 2:受信者を追加し、オプションとして DBEB を有効化する
 
@@ -64,7 +64,7 @@ EOP サービスとの間のメール フローを設定する前に、受信者
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>手順 3:EAC を使用してメール フローをセットアップする
 
-Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプレミスのメール サーバー間のメール フローを有効にします。 詳細な手順については [、「Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)と独自の電子メール サーバー間でメールをルーティングするコネクタを設定する」を参照してください。
+Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプレミスのメール サーバー間のメール フローを有効にします。 詳細な手順については [、「Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)と独自の電子メール サーバーの間でメールをルーティングするコネクタを設定する」を参照してください。
 
 ### <a name="how-do-you-know-this-task-worked"></a>このタスクの検証方法
 
@@ -72,7 +72,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>手順 4: 受信ポート 25 SMTP アクセスを許可する
 
-コネクタを構成した後、72 時間待って DNS レコードの更新の伝達を許可します。 この後、ファイアウォールまたはメール サーバーで、EOP データセンターからの (具体的には [Exchange Online Protection の IP アドレス](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) に一覧表示されている IP アドレスからの) メールだけを受信するように、受信用ポート 25 の SMTP トラフィックを制限します。 これにより、受信可能な受信メッセージの範囲が制限され、社内環境が保護されます。 また、メール リレーへの接続が許可される IP アドレスを制御するようにメール サーバーを設定している場合は、その設定も更新します。
+コネクタを構成した後、72 時間待って DNS レコードの更新の伝達を許可します。 この後、ファイアウォールまたはメール サーバーで、EOP データセンターからの (具体的には [Exchange Online Protection の IP アドレス](../../enterprise/urls-and-ip-address-ranges.md) に一覧表示されている IP アドレスからの) メールだけを受信するように、受信用ポート 25 の SMTP トラフィックを制限します。 これにより、受信可能な受信メッセージの範囲が制限され、社内環境が保護されます。 また、メール リレーへの接続が許可される IP アドレスを制御するようにメール サーバーを設定している場合は、その設定も更新します。
 
 > [!TIP]
 > SMTP サーバーの設定を、60 秒で接続タイムアウトが発生するように構成します。 この設定はほとんどの状況で受け入れ可能です。たとえば、大きな添付ファイルを含むメッセージが送信された場合は、ある程度の遅延が発生します。
@@ -85,7 +85,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Microsoft 365 管理センターを使用して MX レコードを EOP にポイントする
 
-受信メールが EOP を経由して流れ込むので、ドメインの構成手順に従ってドメインの MX レコードを更新します。 サード パーティのフィルタリング サービスを通して電子メールを EOP に送るのではなく、MX レコードが直接 EOP をポイントするようにします。 詳細については、「[Office 365 の DNS レコードを作成する ](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」を参照してください。
+受信メールが EOP を経由して流れ込むので、ドメインの構成手順に従ってドメインの MX レコードを更新します。 サード パーティのフィルタリング サービスを通して電子メールを EOP に送るのではなく、MX レコードが直接 EOP をポイントするようにします。 詳細については、「[Office 365 の DNS レコードを作成する ](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)」を参照してください。
 
 > [!NOTE]
 > EOP の前に位置する別のサーバーまたはサービスを MX レコードの接続ポイントする必要がある場合は [、「Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)のコネクタの拡張フィルタリング」を参照してください。
@@ -103,4 +103,4 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 > [!TIP]
 > セットアップが完了したら、EOP がスパムやマルウェアを削除するために追加の手順を実行する必要がなくなります。 EOP はスパムやマルウェアを自動的に削除します。 ただし、ビジネス要件に基づいて設定を微調整できます。 詳細については、「Office [365](anti-spam-and-anti-malware-protection.md) でのスパム対策とマルウェア対策の保護」および「スプーフィング インテリジェンス [の構成」を参照してください](learn-about-spoof-intelligence.md)。
 >
-> サービスが実行されたので、EOP を構成するためのベスト プラクティスを読んでお勧めします [。EOP](best-practices-for-configuring-eop.md)をセットアップした後の推奨設定と考慮事項について説明します。
+> サービスが実行されたので、EOP を構成するためのベスト プラクティスを読んでお勧めします [。EOP](best-practices-for-configuring-eop.md)をセットアップした後の推奨設定と考慮事項について説明しています。

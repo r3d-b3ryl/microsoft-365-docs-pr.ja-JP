@@ -12,19 +12,19 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 成功を収め、一般的な構成エラーを回避するために、スタンドアロンの Exchange Online Protection (EOP) に関する以下のベスト プラクティスの推奨事項に従ってください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c64a9592d93ef046ad1c023a49bf378ccf6cf503
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165933"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290835"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>スタンドアロン EOP を構成するためのベスト プラクティス
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
 成功を収め、一般的な構成エラーを回避するために、スタンドアロンの Exchange Online Protection (EOP) に関する以下のベスト プラクティスの推奨事項に従ってください。 このトピックでは、セットアップ プロセスが既に完了したことを前提としています。 まだ EOP の設定が完了していない場合は、「[EOP サービスを設定する](set-up-your-eop-service.md)」を参照してください。
 
@@ -38,7 +38,7 @@ ms.locfileid: "50165933"
 
 ## <a name="recommended-settings"></a>推奨設定
 
-セキュリティ管理者は、組織のニーズに合わせてセキュリティ設定をカスタマイズできます。 ただし、一般的には、EOP と Office 365 用の Microsoft Defender には Standard と Strict の 2 つのセキュリティ レベルがあります。 これらの設定は、365 セキュリティを強化する EOP と [Microsoft Defender のOfficeに記載されています](recommended-settings-for-eop-and-office365-atp.md)。
+セキュリティ管理者は、組織のニーズに合わせてセキュリティ設定をカスタマイズできます。 ただし、一般に、EOP と Office 365 用の Microsoft Defender には Standard と Strict の 2 つのセキュリティ レベルがあります。 これらの設定は、EOP および Microsoft Defender の 365 セキュリティに関する推奨 [Office一覧に記載されています](recommended-settings-for-eop-and-office365-atp.md)。
 
 ### <a name="miscellaneousnon-policy-settings"></a>その他/ポリシー以外の設定
 
@@ -50,8 +50,8 @@ ms.locfileid: "50165933"
 |---|---|---|---|
 |[SPF を設定して、スプーフィングを防止する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|はい|はい||
 |[DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)|はい|はい||
-|[DMARC を使用して Office 365 で電子メールを検証する](use-dmarc-to-validate-email.md)|はい|はい|標準 `action=quarantine` と厳密に `action=reject` 使用します。|
-|レポート メッセージ [アドインまたは](enable-the-report-message-add-in.md) Report [Phishing](enable-the-report-phish-add-in.md) アドインを展開して、不審な電子メールに関するエンド ユーザーの報告を改善する|はい|はい||
+|[DMARC を使用して Office 365 で電子メールを検証する](use-dmarc-to-validate-email.md)|はい|はい|標準 `action=quarantine` 、および厳密に `action=reject` 使用します。|
+|不審な [電子メールに関する](enable-the-report-message-add-in.md) エンド ユーザーの報告を向上させるために、レポート メッセージ アドインまたは Report [Phishing](enable-the-report-phish-add-in.md) アドインを展開する|はい|はい||
 |マルウェアとスパムのレポートをスケジュールする|はい|はい||
 |外部ドメインへの自動転送を禁止または監視する必要がある|はい|はい||
 |統合監査を有効にする|はい|はい||
@@ -62,7 +62,7 @@ ms.locfileid: "50165933"
 |[PowerShell 接続](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|無効|無効|メールボックス ユーザーまたはメール ユーザー [(Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) コマンドレットによって返されるユーザー オブジェクト) で使用できます。|
 |ス [プーフィング インテリジェンスを](learn-about-spoof-intelligence.md) 使用して送信者を許可リストに追加する|はい|はい||
 |[ディレクトリ ベースのエッジ ブロック (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|有効|有効|Domain Type = Authoritative|
-|[すべての管理者アカウントに対して多要素認証を設定する](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|有効|有効||
+|[すべての管理者アカウントに対して多要素認証を設定する](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|有効|有効||
 |
 
 ## <a name="troubleshooting"></a>トラブルシューティング

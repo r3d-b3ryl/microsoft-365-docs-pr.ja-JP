@@ -16,25 +16,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: ユーザーは、Microsoft 365 セキュリティ/コンプライアンス センターでアクセス許可を割り当&、セキュリティまたはコンプライアンス機能を管理する必要があります。
+description: ユーザーは、Microsoft 365 セキュリティ/コンプライアンス センターでアクセス許可を割り当て&、セキュリティまたはコンプライアンス機能を管理する必要があります。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e19825ce0f8224b2aee8e1419ef5d1ad425aadb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e1a619b184c575e3750b2499adc661627b4d27d6
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165417"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289879"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ユーザーは、セキュリティまたはコンプライアンス機能を管理する前&セキュリティ/コンプライアンス センターでアクセス許可を割り当てる必要があります。 セキュリティ & コンプライアンス センターのグローバル管理者または OrganizationManagement 役割グループのメンバーは、これらのアクセス許可をユーザーに付与できます。 ユーザーが管理できるのは、アクセス権が付与されたセキュリティまたはコンプライアンスの機能のみです。
 
@@ -86,9 +86,9 @@ ms.locfileid: "50165417"
 
 セキュリティ センター コンプライアンス センターへのアクセスが正常に許可されたことを確認&、次のいずれかの手順を実行します。
 
-- セキュリティ/コンプライアンス センター&アクセス許可に移動し、役割グループを選択します。 開く詳細フライアウトで、役割グループのメンバーを確認します。
+- セキュリティ/コンプライアンス センター&アクセス **許可に移動** し、役割グループを選択します。 開く詳細フライアウトで、役割グループのメンバーを確認します。
 
-- セキュリティ センター & コンプライアンス センターの PowerShell で、役割グループの名前に置き換え、次 \<RoleGroupName\> のコマンドを実行します。
+- Security & Compliance Center PowerShell で、役割グループの名前に置き換え、次 \<RoleGroupName\> のコマンドを実行します。
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"

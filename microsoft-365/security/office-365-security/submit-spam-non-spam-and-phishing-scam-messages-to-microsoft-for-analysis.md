@@ -18,17 +18,21 @@ description: 管理者とエンド ユーザーは、分析のためにメッセ
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5d3b7a51c39b85af8a6fae84f525da6d806789c
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 98964d17c41222fa708bdf0059c0e67151582ef1
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029586"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290371"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のためにメッセージを Microsoft に手動で送信する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > Exchange Online メールボックスを使用している組織の管理者である場合は、セキュリティ/コンプライアンス センターの提出ポータル&勧めします。 詳細については、「管理者送信を使用して、疑わしいスパム、 [フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
@@ -43,7 +47,7 @@ ms.locfileid: "50029586"
 ## <a name="submit-false-negatives-to-microsoft"></a>偽陰性を Microsoft に提出する
 
 > [!TIP]
-> 次の手順を使用して検出検出を報告する代わりに、Outlook および Web 上の Outlook (旧 Outlook Web App) のユーザーは、レポート メッセージ アドインまたはレポート フィッシング 報告アドインを使用できます。 これらのツールをインストールして使用する方法については、「メッセージ報告[](enable-the-report-message-add-in.md)アドインを有効にする」および「フィッシング報告アドインを有効にする」を[参照してください](enable-the-report-phish-add-in.md)。
+> 次の手順を使用して検出検出を報告する代わりに、Outlook および Web 上の Outlook (以前の Outlook Web App) のユーザーは、レポート メッセージ アドインまたは Report Phishing アドインを使用できます。 これらのツールをインストールして使用する方法については、「メッセージ報告[](enable-the-report-message-add-in.md)アドインを有効にする」および「フィッシング報告アドインを有効にする」を[参照してください](enable-the-report-phish-add-in.md)。
 
 スパム フィルターを通過してスパムまたはフィッシングとして識別されるメッセージを受信した場合は、必要に応じて Microsoft スパム分析チームと Microsoft Phishing Analysis チームにメッセージを送信できます。 アナリストはメッセージを確認し、分類条件を満たす場合はサービス全体のフィルターに追加します。
 
@@ -82,7 +86,7 @@ ms.locfileid: "50029586"
 
    > [!NOTE]
    >
-   > - 新しいメッセージに複数のメッセージを添付できます。 すべてのメッセージが、フィッシング メッセージと迷惑メール メッセージの種類が同じことを確認します。
+   > - 新しいメッセージに複数のメッセージを添付できます。 すべてのメッセージがフィッシング メッセージと迷惑メール メッセージの種類が同じことを確認します。
    >
    > - 新しいメッセージの本文は空のままにします。
    >

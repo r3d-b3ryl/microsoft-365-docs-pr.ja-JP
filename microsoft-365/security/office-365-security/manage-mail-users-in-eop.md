@@ -14,21 +14,21 @@ description: ディレクトリ同期、EAC、PowerShell を使用してユー�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34edafea7567da04094ea386d469d3d27937eee5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6a0dc1c0c343be77c6d6f713ee6b68a08a4fe5be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166395"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289915"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>スタンドアロン EOP でメール ユーザーを管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
-Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、メール ユーザーは基本的な種類のユーザー アカウントです。 メール ユーザーは、スタンドアロン EOP 組織のアカウント資格情報を持ち、リソースにアクセスできます (アクセス許可が割り当てられている)。 メール ユーザーの電子メール アドレスは外部 (たとえば、オンプレミスのメール環境) です。
+Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、メール ユーザーは基本的な種類のユーザー アカウントです。 メール ユーザーはスタンドアロン EOP 組織のアカウント資格情報を持ち、リソースにアクセスできます (アクセス許可が割り当てられている)。 メール ユーザーの電子メール アドレスは外部 (たとえば、オンプレミスのメール環境) です。
 
 > [!NOTE]
 > メール ユーザーを作成すると、対応するユーザー アカウントが Microsoft 365 管理センターで利用できます。 Microsoft 365 管理センターでユーザー アカウントを作成する場合、そのアカウントを使用してメール ユーザーを作成することはできません。
@@ -43,14 +43,14 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 - スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- EOP PowerShell でメール ユーザーを作成すると、調整が発生する可能性があります。 また、EOP PowerShell コマンドレットはバッチ処理方式を使用します。この方法では、コマンドの結果が表示される数分前に伝達遅延が発生します。
+- EOP PowerShell でメール ユーザーを作成すると、調整が発生する可能性があります。 また、EOP PowerShell コマンドレットはバッチ処理方法を使用して、コマンドの結果が表示される数分前に伝達遅延が発生します。
 
-- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理 **(グローバル** 管理者) 役割グループと受信者管理役割グループに割り当てられる、メール受信者の作成 **(** 作成) 役割とメール受信者 **(変更**) 役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス許可](feature-permissions-in-eop.md) 」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- この記事の手順を実行する前に、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理 **(グローバル** 管理者) 役割グループと受信者管理役割グループに割り当てられる、メール受信者の作成 **(** 作成) 役割とメール受信者 **(変更**) 役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「EAC を使用して役割グループのメンバーの一覧 [を変更する」を参照してください](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- この記事の手順に適用できるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
+- この記事の手順に適用されるキーボード ショートカットの詳細については [、Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)の Exchange 管理センターのキーボード ショートカットを参照してください。
 
 > [!TIP]
-> 問題がある場合は、 Exchange のフォーラムで質問してください。 Exchange [Online Protection フォーラムにアクセス](https://go.microsoft.com/fwlink/p/?linkId=285351) します。
+> 問題がある場合は、 Exchange のフォーラムで質問してください。 Exchange [Online Protection フォーラムにアクセス](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) します。
 
 ## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Exchange 管理センターを使用してメール ユーザーを管理する
 
@@ -58,7 +58,7 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 1. EAC で、受信者の **連絡先に移動** \> **します。**
 
-2. [新 **しい新規]** ![ アイコンをクリックします ](../../media/ITPro-EAC-AddIcon.png) 。 開く **[新しいメール ユーザー** ] ページで、次の設定を構成します。 an が付いている設定 <sup>\*</sup> は必須です。
+2. [新 **しい新規]** ![ アイコンをクリックします ](../../media/ITPro-EAC-AddIcon.png) 。 開く **[新しいメール ユーザー** ] ページで、次の設定を構成します。 an のマークが付いた設定 <sup>\*</sup> は必須です。
 
    - **名**
 
@@ -90,7 +90,7 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 #### <a name="general"></a>全般
 
-[全般 **] タブを** 使用して、メール ユーザーに関する基本情報を表示または変更します。
+[全般 **] タブ** を使用して、メール ユーザーに関する基本情報を表示または変更します。
 
 - **名**
 
@@ -167,7 +167,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 
 **注**:
 
-- _Name パラメーター_ は必須で、最大長は 64 文字で、一意である必要があります。 _DisplayName_ パラメーターを使用しない場合 _、Name_ パラメーターの値が表示名に使用されます。
+- Name _パラメーター_ は必須で、最大長は 64 文字で、一意である必要があります。 _DisplayName_ パラメーターを使用しない場合 _、Name_ パラメーターの値が表示名に使用されます。
 - _Alias_ パラメーターを使用しない場合は _、MicrosoftOnlineServicesID_ パラメーターの左側がエイリアスに使用されます。
 - _ExternalEmailAddress_ パラメーターを使用しない場合は _、MicrosoftOnlineServicesID_ 値が外部電子メール アドレスに使用されます。
 

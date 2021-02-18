@@ -8,45 +8,59 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ ポータルのテナントの許可/ブロックリストで許可とブロックを構成する方法について学習できます。
-ms.openlocfilehash: c789b09224d00f5bb41ae29d6d2a6efa64d23a8d
-ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 250b6223ffe663e0cd950069a3c3c7827b4aa57b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799715"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290167"
 ---
-# <a name="managing-allows-and-blocks-in-the-tenant-allowblock-list"></a>テナントの許可/ブロックリストでの許可とブロックの管理
+# <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL を管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
-> この記事で説明する機能はプレビューであり、変更される可能性があります。また、すべての組織で利用できるではありません。
+>
+> この記事で説明する機能はプレビュー中であり、変更される可能性があります。また、一部の組織では使用できません。
+>
+> 現時点では、 **テナント** の許可/ブロックリストで許可アイテムを構成できません。
 
-Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、EOP フィルターの条件に同意しない可能性があります。 たとえば、良いメッセージが悪い (誤検知) とマークされている場合や、悪いメッセージが許可されている (検出誤検知) 場合があります。
+Exchange Online または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがある Microsoft 365 組織では、EOP フィルターの条件に同意しない可能性があります。 たとえば、良いメッセージが悪い (誤検知) とマークされている場合や、悪いメッセージが許可されている (検出検出が誤っている) 場合があります。
 
-セキュリティ/コンプライアンス センターのテナントの許可/ブロックリスト&、Microsoft 365 フィルターの条件を手動で上書きする方法が提供されます。 テナントの許可/ブロックリストは、メール フロー中およびユーザーがクリックした時点で使用されます。 テナントの許可/ブロックリストで許可またはブロックする URL を指定できます。
+セキュリティ/コンプライアンス センターのテナントの許可/ブロックリスト&、Microsoft 365 フィルターの条件を手動で上書きする方法が提供されます。 テナントの許可/ブロックリストは、メール フロー中およびユーザーがクリックした時点で使用されます。 常にブロックする URL またはファイルを指定できます。
 
-このトピックでは、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織向け Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) のテナント許可/ブロック一覧のエントリを構成する方法について説明します。
+この記事では、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織向け Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) のテナント許可/ブロック一覧のエントリを構成する方法について説明します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [テナントの許可/ブロック **リスト] ページに直接移動するには** 、次の値を使用します <https://protection.office.com/tenantAllowBlockList> 。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [テナントの許可/ブロックリスト] ページに直接 **移動するには** 、次の値を使用します <https://protection.office.com/tenantAllowBlockList> 。
+
+- ファイルを指定するには、ファイルの SHA256 ハッシュ値を使用します。 Windows でファイルの SHA256 ハッシュ値を検索するには、コマンド プロンプトで次のコマンドを実行します。
+
+  ```dos
+  certutil.exe -hashfile "<Path>\<Filename>" SHA256
+  ```
+
+  値の例は次のようになります `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` 。 perceptual hash (pHash) の値はサポートされていません。
 
 - 使用可能な URL 値については、この記事で後述する「テナントの許可/ブロックリスト」セクションの [URL](#url-syntax-for-the-tenant-allowblock-list) 構文で説明します。
 
-- テナントの許可/ブロックリストでは、URL に最大 500 エントリを許可します。
+- テナントの許可/ブロックリストでは、URL に最大 500 エントリ、ファイル ハッシュのエントリを 500 エントリまで使用できます。
 
 - エントリは 15 分以内にアクティブになります。
-
-- 許可エントリよりもブロック エントリが優先されます。
 
 - 既定では、テナントの許可/ブロックリストのエントリは 30 日後に期限切れになります。 日付を指定するか、有効期限が切れない日付に設定できます。
 
@@ -60,7 +74,7 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 
   **注**:
 
-  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロックリストに URL エントリを作成する
@@ -69,13 +83,11 @@ URL エントリの構文の詳細については、後の「テナントの許�
 
 1. セキュリティ/コンプライアンス センター&、脅威 **管理ポリシー** のテナントの許可 \>  \> **/ブロックリストに移動します**。
 
-2. [テナント **の許可/ブロックリスト** ] ページで **、[URL]** タブが選択されているのを確認し、[追加] をクリック **します。**
+2. [テナント **の許可/ブロックリスト**] ページで **、[URL]** タブが選択されているのを確認し、[ブロック] をクリック **します**。
 
-3. 表示される **[新しい URL の追加** ] フライアウトで、次の設定を構成します。
+3. 表示される **[URL のブロック** ] フライアウトで、次の設定を構成します。
 
-   - **ワイルドカードを使用して URL を追加** する : 1 行に 1 つの URL を入力し、最大 20 文字まで入力します。
-
-   - **ブロック/許可**: 指定した URLを許可またはブロック **するかどうかを** 選択します。
+   - **ブロックする URL を追加** する : 1 行に 1 つの URL を入力し、最大 20 文字まで入力します。
 
    - **有効期限が切れる** ことはありません: 次のいずれかの手順を実行します。
 
@@ -87,53 +99,68 @@ URL エントリの構文の詳細については、後の「テナントの許�
 
    - **省略可能な** メモ : エントリの説明テキストを入力します。
 
-4. 完了したら、[追加] をクリック **します**。
+4. 完了したら、**[追加]** をクリックします。
+
+## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロックリストにファイル エントリを作成する
+
+1. セキュリティ/コンプライアンス センター&、脅威 **管理ポリシー** のテナントの許可 \>  \> **/ブロックリストに移動します**。
+
+2. [テナントの **許可/ブロックリスト** ] ページで、[ファイル] **タブを** 選択し、[ブロック] をクリック **します**。
+
+3. 表示される **フライアウトをブロックする** ファイルの追加で、次の設定を構成します。
+
+   - **ファイル ハッシュを追加** する: 1 行に 1 つの SHA256 ハッシュ値を入力し、最大 20 のハッシュ値を入力します。
+
+   - **有効期限が切れる** ことはありません: 次のいずれかの手順を実行します。
+
+     - 設定がオフ (トグル オフ) になっていることを確認し、[有効期限] ボックスを使用してエントリの有効期限 ![ ](../../media/scc-toggle-off.png) を指定します。 
+
+     または
+
+     - 切り替えは右に移動して、有効期限が切れなさらないエントリを構成します。 ![オンに切り替え](../../media/scc-toggle-on.png).
+
+   - **省略可能な** メモ : エントリの説明テキストを入力します。
+
+4. 完了したら、**[追加]** をクリックします。
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロックの一覧のエントリを表示する
 
 1. セキュリティ/コンプライアンス センター&、脅威 **管理ポリシー** のテナントの許可 \>  \> **/ブロックリストに移動します**。
 
-2. **[URL] タブを選択** します。
+2. **[URL] タブまたは**[ファイル] タブ **を選択** します。
 
-次の列見出しをクリックして、昇順または降順で並べ替えます。
+昇順または降順で並べ替えるには、次の列見出しをクリックします。
 
-- **値**
-- **Action**: **Block** or **Allow**.
+- **値**: URL またはファイル ハッシュ。
 - **最終更新日**
 - **有効期限**
 - **注**
-
-[**グループ]** をクリックして、**操作 (** ブロックまたは **許可)** または [なし] で **エントリをグループ****化します**。
 
 [ **検索]** をクリックし、値のすべてまたは一部を入力し、Enter キーを押して特定の値を検索します。 完了したら、[検索のクリア] **アイコン** ![ をクリックします ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) 。
 
 [フィルター **] をクリックします**。 表示される **フィルター** フライアウトで、次の設定を構成します。
 
-- **操作**: [許可 **] または [ブロック****] または**[両方] を選択します。
-
 - **Never expire**: Select off: ![ Toggle off or ](../../media/scc-toggle-off.png) on: Toggle on ![ ](../../media/scc-toggle-on.png) .
 
 - **Last updated**: Select a start date (**From),** an end date (**To**) or both.
 
-- **有効期限**: 開始日 **(開始日**)、終了日 (**終了日**) または両方を選択します。
+- **有効期限 :** 開始日 **(開始日**)、終了日 (**終了日**) または両方を選択します。
 
 完了したら、[適用] をクリック **します**。
 
 既存のフィルターをクリアするには、[フィルター]**を** クリックし、表示される [フィルター] フライアウトで [フィルターのクリア]**をクリックします**。
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロックリストのエントリを変更する
+## <a name="use-the-security--compliance-center-to-modify-block-entries-in-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロック一覧のブロック エントリを変更する
 
-URL 値自体は変更できない。 代わりに、エントリを削除して再作成する必要があります。
+エントリ内の既存のブロック URL またはファイル値は変更できない。 これらの値を変更するには、エントリを削除して再作成する必要があります。
 
 1. セキュリティ/コンプライアンス センター&、脅威 **管理ポリシー** のテナントの許可 \>  \> **/ブロックリストに移動します**。
 
-2. **[URL] タブを選択** します。
+2. **[URL] タブまたは**[ファイル] タブ **を選択** します。
 
-3. 変更するエントリを選択し、[編集] アイコン **を** ![ クリックします ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 。
+3. 変更するブロック エントリを選択し、[編集] アイコン **を** ![ クリックします ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 。
 
 4. 表示されるフライアウトで、次の設定を構成します。
-
-   - **ブロック/許可**: 許可または **ブロックを** 選択 **します**。
 
    - **有効期限が切れる** ことはありません: 次のいずれかの手順を実行します。
 
@@ -143,34 +170,40 @@ URL 値自体は変更できない。 代わりに、エントリを削除して
 
      - トグルを右に移動して、有効期限が切れなさらないエントリを構成します。 ![オンに切り替え](../../media/scc-toggle-on.png).
 
-   - **省略可能なメモ**: エントリの説明文を入力します。
+   - **省略可能なメモ**: エントリの説明テキストを入力します。
 
 5. 完了したら、**[保存]** をクリックします。
 
-## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロックの一覧からエントリを削除する
+## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>セキュリティ/コンプライアンス センター&使用して、テナントの許可/ブロック一覧からブロック エントリを削除する
 
 1. セキュリティ/コンプライアンス センター&、脅威 **管理ポリシー** のテナントの許可 \>  \> **/ブロックリストに移動します**。
 
-2. **[URL] タブを選択** します。
+2. **[URL] タブまたは**[ファイル] タブ **を選択** します。
 
-3. 削除するエントリを選択し、[削除] アイコン **を** ![ クリックします ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
+3. 削除するブロック エントリを選択し、[削除] アイコン **を** ![ クリックします ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
 
 4. 警告ダイアログが表示されたら、[削除] を **クリックします**。
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Exchange Online PowerShell またはスタンドアロンの EOP PowerShell を使用してテナントの許可/ブロックリストを構成する
 
-### <a name="use-powershell-to-add-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用してテナントの許可/ブロックリストにエントリを追加する
+### <a name="use-powershell-to-add-block-entries-to-the-tenant-allowblock-list"></a>PowerShell を使用してテナントの許可/ブロックリストにブロック エントリを追加する
 
-テナントの許可/ブロックリストにエントリを追加するには、次の構文を使用します。
+テナントの許可/ブロックリストにブロック エントリを追加するには、次の構文を使用します。
 
 ```powershell
-New-TenantAllowBlockListItems -ListType Url -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-この例では、contoso.com およびすべてのサブドメイン (contoso.com、www.contoso.com、および xyz.abc.contoso.com) の URL ブロック エントリを追加します。 ExpirationDate パラメーターまたは NoExpiration パラメーターを使用しなかったため、エントリは 30 日後に期限切れになります。
+この例では、contoso.com およびすべてのサブドメイン (contoso.com、www.contoso.com、および xyz.abc.contoso.com) のブロック URL エントリを追加します。 ExpirationDate パラメーターまたは NoExpiration パラメーターを使用しなかったため、エントリは 30 日後に期限切れになります。
 
 ```powershell
-New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
+New-TenantAllowBlockListItem -ListType Url -Block -Entries ~contoso.com
+```
+
+次の使用例は、指定したファイルの有効期限が切れるファイルをブロックするエントリを追加します。
+
+```powershell
+New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 構文およびパラメーターの詳細については [、「New-TenantAllowBlockListItems」を参照してください](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)。
@@ -180,28 +213,34 @@ New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
 テナントの許可/ブロックリストのエントリを表示するには、次の構文を使用します。
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType Url [-Entry <URLValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
+Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Block] [-ExpirationDate <DateTime>] [-NoExpiration]
 ```
 
 この例では、すべてのブロックされた URL を返します。
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType Url -Action Block
+Get-TenantAllowBlockListItems -ListType Url -Block
+```
+
+この例では、指定したファイル ハッシュ値に関する情報を返します。
+
+```powershell
+Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
 ```
 
 構文およびパラメーターの詳細については [、「Get-TenantAllowBlockListItems」を参照してください](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用してテナントの許可/ブロックリストのエントリを変更する
+### <a name="use-powershell-to-modify-block-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用してテナントの許可/ブロックリストのブロック エントリを変更する
 
-URL 値自体は変更できない。 代わりに、エントリを削除して再作成する必要があります。
+ブロック エントリ内の既存の URL またはファイル値は変更できない。 これらの値を変更するには、エントリを削除して再作成する必要があります。
 
-テナントの許可/ブロックリストのエントリを変更するには、次の構文を使用します。
+テナントの許可/ブロックリストのブロック エントリを変更するには、次の構文を使用します。
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Block] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-次の使用例は、指定したエントリの有効期限を変更します。
+次の使用例は、指定したブロック エントリの有効期限を変更します。
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
@@ -209,15 +248,15 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 構文およびパラメーターの詳細については [、「Set-TenantAllowBlockListItems」を参照してください](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a>PowerShell を使用してテナントの許可/ブロックリストからエントリを削除する
+### <a name="use-powershell-to-remove-block-entries-from-the-tenant-allowblock-list"></a>PowerShell を使用してテナントの許可/ブロックリストからブロック エントリを削除する
 
-テナントの許可/ブロックリストからエントリを削除するには、次の構文を使用します。
+テナントの許可/ブロックリストからブロック エントリを削除するには、次の構文を使用します。
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
 ```
 
-この例では、指定した URL エントリをテナントの許可/ブロックリストから削除します。
+この例では、指定したブロック URL エントリをテナントの許可/ブロックリストから削除します。
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
@@ -234,12 +273,11 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 - Unicode はサポートされていませんが、Punycode はサポートされています。
 
 - ホスト名は、次のステートメントのすべてが当てはまる場合に使用できます。
-
   - ホスト名にはピリオドが含まれている。
   - ピリオドの左側に少なくとも 1 つの文字があります。
   - ピリオドの右側に 2 文字以上あります。
 
-  たとえば、 `t.co` 許可されている、または `.com` `contoso.` 許可されていない。
+  たとえば、 `t.co` 許可されている、または許可 `.com` `contoso.` されていない。
 
 - サブパスは暗黙的ではありません。
 
@@ -251,9 +289,9 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
     たとえば、 `*.contoso.com` 許可されます。 `*contoso.com` 許可されません。
 
-  - パスを指定するには、右のワイルドカードがスラッシュ (/) の後に続く必要があります。
+  - パスを指定するには、右のワイルドカードでスラッシュ (/) を使用する必要があります。
 
-    たとえば、 `contoso.com/*` 許可されている、または `contoso.com*` `contoso.com/ab*` 許可されていない。
+    たとえば、 `contoso.com/*` 許可されている、または許可 `contoso.com*` `contoso.com/ab*` されていない。
 
   - すべてのサブパスは、適切なワイルドカードによって暗黙的に示されるものではありません。
 
@@ -269,9 +307,9 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
     次に例 `~contoso.com` を示 `contoso.com` します `*.contoso.com` 。
 
-- URL エントリは、すべてのプロトコルに適用されるので、プロトコルを含む URL エントリ (たとえば、,, `http://` `https://` `ftp://` または) は失敗します。
+- URL エントリは、すべてのプロトコルに適用されるので、プロトコルを含む URL エントリ (たとえば、,, または `http://` `https://` ) `ftp://` は失敗します。
 
-- ユーザー名またはパスワードはサポートされていないか、必須です。
+- ユーザー名またはパスワードはサポートされていないか、必須ではありません。
 
 - 引用符 (' または ") は無効な文字です。
 
@@ -313,7 +351,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `*.contoso.com`
 
-- **一致とブロック** の一 **致を許可する**:
+- **一致とブロック** の一致 **を許可する**:
 
   - www.contoso.com
   - xyz.abc.contoso.com
@@ -329,7 +367,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `contoso.com/a/*`
 
-- **一致とブロック** の一 **致を許可する**:
+- **一致とブロック** の一致 **を許可する**:
 
   - contoso.com/a/b
   - contoso.com/a/b/c
@@ -346,7 +384,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `~contoso.com`
 
-- **一致とブロック** の一 **致を許可する**:
+- **一致とブロック** の一致 **を許可する**:
 
   - contoso.com
   - www.contoso.com
@@ -362,7 +400,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `contoso.com/*`
 
-- **一致とブロック** の一 **致を許可する**:
+- **一致とブロック** の一致 **を許可する**:
 
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
@@ -378,7 +416,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `*.contoso.com/*`
 
-- **一致とブロック** の一 **致を許可する**:
+- **一致とブロック** の一致 **を許可する**:
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -388,11 +426,11 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 - **Allow not matched** and **Block not matched**: contoso.com/b
 
-#### <a name="scenario-left-and-right-tilde"></a>シナリオ: 左右のチルダ
+#### <a name="scenario-left-and-right-tilde"></a>シナリオ: 左と右のチルダ
 
 **エントリ**: `~contoso.com~`
 
-- **一致とブロック** の一 **致を許可する**:
+- **一致とブロック** の一致 **を許可する**:
 
   - contoso.com
   - contoso.com/a
@@ -420,7 +458,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **エントリ**: `1.2.3.4/*`
 
-- **一致とブロック** の一 **致を許可する**:
+- **一致とブロック** の一致 **を許可する**:
 
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
@@ -450,7 +488,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - contoso.com:443
   - abc.contoso.com:25
 
-- **説明的でないワイルドカード**:
+- **説明を示すワイルドカード以外:**
 
   - \*
   - \*.\*

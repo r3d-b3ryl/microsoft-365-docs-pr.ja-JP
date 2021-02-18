@@ -19,27 +19,27 @@ description: 管理者は、Exchange Online Protection (EOP) で検疫済みメ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 019f1c103ef1aaf7641072cd1259d22e83f0de4c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 8496ae4f1702bb63328be0c494d8829c9ddd8cf2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166929"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289403"
 ---
 # <a name="quarantined-messages-faq"></a>検疫済みメッセージに関する FAQ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-このトピックでは、Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織の検疫済み電子メール メッセージに関してよく寄せられる質問と回答を提供します。
+このトピックでは、Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織の検疫済み電子メール メッセージについてよく寄せられる質問と回答を提供します。
 
 スパム対策保護に関する質問と回答については、スパム対策保護に関する [FAQ を参照してください](anti-spam-protection-faq.md)。
 
-マルウェア対策保護に関する質問と回答については、「マルウェア対策保護に関する [FAQ」を参照してください](anti-malware-protection-faq-eop.md)。
+マルウェア対策保護に関する質問と回答については、マルウェア対策保護に関する [FAQ を参照してください](anti-malware-protection-faq-eop.md)。
 
 スプーフィング対策保護に関する質問と回答については、スプーフィング対策保護に関する [FAQ を参照してください](anti-spoofing-protection-faq.md)。
 
@@ -49,17 +49,17 @@ ms.locfileid: "50166929"
 
 ## <a name="how-do-i-quarantine-spam"></a>スパムを検疫する方法
 
-既定では、スパム フィルターによってスパムまたはバルク メールとして分類されたメッセージは、ユーザーのメールボックスに配信され、[迷惑メール] フォルダーに移動されます。 ただし、スパム対策ポリシーを作成して構成し、代わりにスパムメッセージまたはバルク メール メッセージを検疫できます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+既定では、スパム フィルターによってスパムまたはバルク メールとして分類されたメッセージは、ユーザーのメールボックスに配信され、[迷惑メール] フォルダーに移動されます。 ただし、スパム対策ポリシーを作成して構成して、代わりにスパムメッセージまたはバルク メール メッセージを検疫できます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
-## <a name="how-do-i-give-users-access-to-the-quarantine"></a>ユーザーに検疫へのアクセスを許可する方法
+## <a name="how-do-i-give-users-access-to-the-quarantine"></a>ユーザーに検疫へのアクセス権を与える方法
 
-検疫で自分のメッセージにアクセスするには、ユーザーに有効なアカウントが必要です。 スタンドアロン EOP では、ユーザーは EOP でメール ユーザーとして表される必要があります (ディレクトリ同期を使用して手動で作成または作成)。 スタンドアロン EOP 環境でのユーザー管理の詳細については、「EOP でメール ユーザーを管理する」を [参照してください](manage-mail-users-in-eop.md)。
+検疫で自分のメッセージにアクセスするには、ユーザーに有効なアカウントが必要です。 スタンドアロン EOP では、ユーザーは EOP でメール ユーザーとして表される必要があります (ディレクトリ同期を使用して手動で作成または作成)。 スタンドアロン EOP 環境でのユーザー管理の詳細については、「EOP でのメール ユーザーの管理」を [参照してください](manage-mail-users-in-eop.md)。
 
 ## <a name="what-messages-can-end-users-access-in-quarantine"></a>エンド ユーザーが検疫でアクセスできるメッセージ
 
 ユーザーは、スパム、バルク メール、および受信者である (2020 年 4 月現在) フィッシング メッセージにアクセスできます。 エンド ユーザーは、メール フロー ルール (トランスポート ルールとも呼ばれる) のホストされた検疫アクションにメッセージを配信するために検疫されたマルウェア、信頼度の高いフィッシング、または検疫されたメッセージにアクセスできない。 検疫済みメッセージにアクセスするユーザーの詳細については、「ユーザーとして検疫済みメッセージを検索 [して解放する」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
 
-## <a name="how-long-are-messages-kept-in-the-quarantine"></a>メッセージが検疫に保持される期間はどのくらいですか?
+## <a name="how-long-are-messages-kept-in-the-quarantine"></a>検疫にメッセージを保持する期間はどのくらいですか?
 
 スパム対策ポリシーを使用して、スパム、フィッシング、バルク メール メッセージを検疫に保持する期間を構成します。 既定値は 30 日で、これは最大値です。 詳細については [、「EOP でスパム対策ポリシーを構成する」を参照してください。](configure-your-spam-filter-policies.md)
 
@@ -77,7 +77,7 @@ ms.locfileid: "50166929"
 
 セキュリティ/コンプライアンス センターでは、ワイルドカード&サポートされていません。 たとえば、送信者を検索する場合は、完全なメール アドレスを指定する必要があります。 ただし、Exchange Online PowerShell またはスタンドアロンの EOP PowerShell ではワイルドカードを使用できます。
 
-たとえば、次の PowerShell コードを NotePad にコピーし、見つけやすい場所 (たとえば、C:\Data\QuarantineRelease.ps1) にファイルを .ps1 として保存します。
+たとえば、次の PowerShell コードを NotePad にコピーし、ファイルを .ps1 として、見つけやすい場所 (たとえば、C:\Data\QuarantineRelease.ps1) に保存します。
 
 次に [、Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) または [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)に接続した後、次のコマンドを実行してスクリプトを実行します。
 

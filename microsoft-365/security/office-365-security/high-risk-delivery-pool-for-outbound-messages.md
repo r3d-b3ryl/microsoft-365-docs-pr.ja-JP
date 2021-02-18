@@ -17,37 +17,37 @@ ms.collection:
 description: 配信プールを使用して、Microsoft 365 データセンター内の電子メール サーバーの評判を保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5480916f55fc180a6f08d3c420cb92c730e4065b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 89aac1478d3e5840df4379b9f49832b79d0e133a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167541"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289807"
 ---
 # <a name="outbound-delivery-pools"></a>送信方向の配信のプール
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Microsoft 365 データセンターの電子メール サーバーは、一時的にスパムを送信したとして有悪な場合があります。 たとえば、Microsoft 365 経由で送信メールを送信するオンプレミスの電子メール組織でのマルウェアや悪意のあるスパム攻撃や、Microsoft 365 アカウントの侵害などです。 攻撃者は、Microsoft 365 の転送を介してメッセージを中継して検出を回避することもできます。
+Microsoft 365 データセンターの電子メール サーバーは、一時的にスパムを送信した場合に有悪な場合があります。 たとえば、Microsoft 365 経由で送信メールを送信するオンプレミスの電子メール組織でのマルウェアや悪意のあるスパム攻撃や、侵害された Microsoft 365 アカウントなどです。 攻撃者は、Microsoft 365 の転送を介してメッセージを中継して検出を回避することもできます。
 
 これらのシナリオでは、影響を受ける Microsoft 365 データセンター サーバーの IP アドレスがサード パーティ製のブロック リストに表示される可能性があります。 これらのブロック リストを使用する送信先の電子メール組織は、それらのメッセージ ソースからの電子メールを拒否します。
 
 ## <a name="high-risk-delivery-pool"></a>危険度の高い配信プール
-これを防止するために、スパムと判断された、またはサービスまたは送信スパム ポリシーの送信制限を超えている Microsoft 365 データセンター サーバー [](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)からの送信メッセージ [](configure-the-outbound-spam-policy.md)はすべて、危険度の高い配信プールを介して送信 _されます。_
+これを防止するために、スパムと判断された、またはサービスまたは送信スパム ポリシーの送信制限を超えている Microsoft 365 データセンター サーバー [](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)からのすべての送信 [](configure-the-outbound-spam-policy.md)メッセージは、リスクの高い配信プール経由で送信 _されます。_
 
-高リスク配信プールは、"低品質" メッセージ (スパムやバックスカターなど) の送信にのみ使用される送信電子メール用の個別の IP アドレス [プールです](backscatter-messages-and-eop.md)。 危険度の高い配信プールを使用すると、送信電子メールの通常の IP アドレス プールがスパムを送信するのを防ぐのに役立ちます。 送信電子メール用の通常の IP アドレス プールは、"高品質" メッセージを送信する評判を維持します。このため、これらの IP アドレスが IP ブロック リストに表示される可能性が低下します。
+高リスク配信プールは、"低品質" メッセージ (スパムやバックスカターなど) の送信にのみ使用される送信電子メール用の個別の IP アドレス [プールです](backscatter-messages-and-eop.md)。 危険度の高い配信プールを使用すると、送信電子メールの通常の IP アドレス プールがスパムを送信するのを防ぐのに役立ちます。 送信電子メールの通常の IP アドレス プールは、"高品質" メッセージを送信する評判を維持します。このため、これらの IP アドレスが IP ブロック リストに表示される可能性が低く抑わります。
 
-リスクの高い配信プール内の IP アドレスが IP ブロック リストに配置される可能性は非常に高いですが、これは設計上の問題です。 多くの電子メール組織は危険度の高い配信プールからのメッセージを受け入れないので、目的の受信者への配信は保証されません。
+リスクの高い配信プール内の IP アドレスが IP ブロック リストに配置される可能性は非常に高いですが、これは設計上の理由です。 多くの電子メール組織は危険度の高い配信プールからのメッセージを受け入れないので、目的の受信者への配信は保証されません。
 
 詳細については、「送信スパム [を制御する」を参照してください](outbound-spam-controls.md)。
 
 > [!NOTE]
-> 送信元の電子メール ドメインに A レコードが含ず、パブリック DNS で定義された MX レコードがないメッセージは、スパムや送信制限の廃棄に関係なく、常にリスクの高い配信プールを経由してルーティングされます。
+> 送信元の電子メール ドメインに A レコードがないメッセージとパブリック DNS で定義された MX レコードがないメッセージは、スパムや送信制限の廃棄に関係なく、常にリスクの高い配信プールを経由してルーティングされます。
 
 ### <a name="bounce-messages"></a>バウンス メッセージ
 
@@ -64,6 +64,6 @@ Microsoft 365 データセンターの電子メール サーバーは、一時�
 
 ## <a name="relay-pool"></a>中継プール
 
-Microsoft 365 から転送または中継されるメッセージは、特別な中継プールを使用して送信されます。最終的な送信先では、Microsoft 365 を実際の送信者と見なす必要はなだからです。 また、Microsoft 365 からメールを自動送信または中継する正当で無効なシナリオが発生する場合、このトラフィックを分離することが重要です。 危険度の高い配信プールと同様に、中継されたメールには別の IP アドレス プールが使用されます。 このアドレス プールは頻繁に変更される可能性が高く、公開されません。
+Microsoft 365 から転送または中継されるメッセージは、特別な中継プールを使用して送信されます。最終的な送信先では、Microsoft 365 を実際の送信者と見なす必要はなだからです。 また、Microsoft 365 からメールを自動送信または中継する正当で無効なシナリオが考えられます。このため、このトラフィックを分離することが重要です。 危険度の高い配信プールと同様に、中継されたメールには別の IP アドレス プールが使用されます。 このアドレス プールは頻繁に変更される可能性が高く、公開されません。
 
 Microsoft 365 では、転送されたメッセージを自信を持って配信できるよう、元の送信者が正当な送信者である必要があります。 これを行うには、電子メール認証 (SPF、DKIM、DMARC) がメッセージに届く際にパスする必要があります。 送信者を認証できる場合は、送信者書き換えを使用して、転送されたメッセージが信頼できる送信元からのメッセージであるのを受信者が把握するのに役立ちます。 このしくみと、送信者書き換えスキーム [(SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)で送信側ドメインが認証に合格した場合の確認方法について説明します。

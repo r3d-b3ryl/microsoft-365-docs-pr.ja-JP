@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 管理者は、検疫タグを使用して、ユーザーが検疫済みメッセージに対して実行できる操作を制御する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f18ad6ce1c8b12d38aef377ab663ca679a703e5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 207f22c9acaa183e195f5a2ee33be65cdf4991dd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928904"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289415"
 ---
 # <a name="quarantine-tags"></a>検疫タグ
 
@@ -227,12 +227,12 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 ****
 
-|機能|サポートされている検疫タグ|使用される既定の検疫タグ|
+|特徴|サポートされている検疫タグ|使用される既定の検疫タグ|
 |---|:---:|---|
 |[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**信頼度の高い** スパム (_HighConfidenceSpamAction_)</li><li>**フィッシング メール** (_PhishSpamAction_)</li><li>**信頼度の高いフィッシングメール** (_HighConfidencePhishAction_)</li><li>**バルク メール** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultSpamTag (フル アクセス)</li><li>DefaultHighConfSpamTag (フル アクセス)</li><li>DefaultPhishTag (フル アクセス)</li><li>DefaultHighConfPhishTag (アクセスなし)</li><li>DefaultBulkTag (フル アクセス)</li></ul>
 |フィッシング対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装されたユーザーによって電子メールが送信される場合** (_TargetedUserProtectionAction_)</li><li>**偽装ドメイン**_(TargetedDomainProtectionAction) によって電子メールが送信される場合_</li><li>**メールボックス インテリジェンス** \>**偽装されたユーザーによって電子メールが送信** される場合 (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|いいえ|該当なし|
 |[マルウェア対策ポリシー](configure-anti-malware-policies.md): 検出されたメッセージはすべて常に検疫されます。|いいえ|該当なし|
-|[SharePoint、OneDrive、Microsoft Teams の安全な添付ファイル](atp-for-spo-odb-and-teams.md)|いいえ|該当なし|
+|[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](atp-for-spo-odb-and-teams.md)|いいえ|該当なし|
 |[アクションを含む](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) メール フロー ルール (トランスポート ルールとも呼ばれる): ホストされた検疫 (検疫) にメッセージ **を** 配信 _します_。|いいえ|該当なし|
 |
 
@@ -311,7 +311,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 3. 開く **検疫通知設定** のフライアウトで、次の設定の一部またはすべてを構成します。
 
-   - **会社のロゴを使用** する : エンド ユーザーのスパム通知の上部で使用されている既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「組織の [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) テーマをカスタマイズする」の手順に従って、カスタム ロゴをアップロードする必要があります。
+   - **会社のロゴを使用** する : エンド ユーザーのスパム通知の上部で使用されている既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「組織の [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) テーマをカスタマイズする」の手順に従って、カスタム ロゴをアップロードする必要があります。
 
      次のスクリーンショットは、エンド ユーザーのスパム通知のカスタム ロゴを示しています。
 

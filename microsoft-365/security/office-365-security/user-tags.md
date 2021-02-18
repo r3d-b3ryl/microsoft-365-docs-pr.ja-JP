@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 でユーザー タグを持つユーザーの特定のグループを識別する方法について説明します。 タグ フィルターは、Microsoft Defender for Office 365 でアラート、レポート、調査を通じて利用して、タグ付けされたユーザーをすばやく識別できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ed91492e652773b3a48373df49b20d97887df6ee
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 62d858fe5962b94f536d4ccbd712e21bdd5caa57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931436"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290131"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のユーザー タグ
 
@@ -30,7 +30,7 @@ ms.locfileid: "49931436"
 
 ユーザー タグは、Microsoft [Defender 365](office-365-atp.md)の特定のユーザー グループOfficeです。 ユーザー タグには、次の 2 種類があります。
 
-- **システム タグ**: 現在、 [システム](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) タグの種類は Priority アカウントのみです。
+- **システム タグ**: 現在、 [システム](../../admin/setup/priority-accounts.md) タグの種類は Priority アカウントのみです。
 - **カスタム タグ**: これらのユーザー タグは自分で作成します。
 
 組織に Office 365 プラン 2 用の Defender がある場合 (サブスクリプションまたはアドオンに含まれている場合)、優先度アカウント タグを使用する以外に、カスタム ユーザー タグを作成できます。
@@ -58,10 +58,10 @@ ms.locfileid: "49931436"
 
   **注**:
 
-  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - ユーザー タグ管理は、タグリーダー 、タグ投稿者、**および** タグ マネージャー **の役割によって制御** されます。
 
-- Microsoft 365 管理センターで優先度アカウントを管理および監視することもできます。 手順については、「優先度アカウントの [管理と監視」を参照してください](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
+- Microsoft 365 管理センターで優先度アカウントを管理および監視することもできます。 手順については、「優先度アカウントの [管理と監視」を参照してください](../../admin/setup/priority-accounts.md)。
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>セキュリティ センターを使用してユーザー タグを作成する
 
@@ -84,7 +84,7 @@ ms.locfileid: "49931436"
      - 個々のエントリをボックスから削除するには、ボックス内のユーザーまたはグループの [削除] ![ ](../../media/scc-remove-icon.png) アイコンをクリックします。
      - ボックスの下の一覧から既存のエントリを削除するには、[削除] アイコン ![ を ](../../media/scc-remove-icon.png) クリックします。
 
-     完了したら、[追加] をクリック **します**。
+     完了したら、**[追加]** をクリックします。
 
    - [ **インポート]** をクリックして、ユーザーまたはグループの電子メール アドレスを含むテキスト ファイルを選択します。 テキスト ファイルに 1 行に 1 つのエントリが含まれている必要があります。
 

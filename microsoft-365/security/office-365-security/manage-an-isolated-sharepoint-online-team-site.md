@@ -8,25 +8,30 @@ manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
-description: 分離した SharePoint Online チームサイトを管理し、新しいユーザーとグループを追加し、ユーザーとグループを削除し、カスタムアクセス許可を持つドキュメントサブフォルダーを作成します。
-ms.openlocfilehash: 1e244738071b434efd09e8fd700462bbef7e116a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: 分離した SharePoint Online チーム サイトの管理、新しいユーザーとグループの追加、ユーザーとグループの削除、カスタム アクセス許可を持つドキュメント サブフォルダーの作成を行います。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 20e354de77b70ea69d69e201bd3b1d40ea32cc5b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616766"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289523"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1](office-365-atp.md)
+- SharePoint Online 
 
  **概要:** 以下の手順を使用して、分離した SharePoint Online チーム サイトを管理します。
 
@@ -42,13 +47,13 @@ ms.locfileid: "49616766"
 
 - 表示:サイト ビューアーのアクセス グループにユーザー アカウントを追加する
 
-Active Directory ドメインサービス (AD DS) を使用してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なアクセスグループに適切なユーザーを追加し、サブスクリプションとの同期を待機します。
+Active Directory ドメイン サービス (AD DS) を使用してユーザー アカウントとグループを管理している場合は、通常の AD DS ユーザーおよびグループ管理手順を使用して適切なユーザーを適切なアクセス グループに追加し、サブスクリプションとの同期を待ちます。
 
-Microsoft 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは Microsoft PowerShell を使用できます。
+Microsoft 365 を使用してユーザー アカウントとグループを管理している場合は、Microsoft 365 管理センターまたは Microsoft PowerShell を使用できます。
 
-- Microsoft 365 管理センターの場合は、ユーザーアカウント管理者または会社の管理者の役割が割り当てられているユーザーアカウントでサインインし、グループを使用して適切なアクセスグループに適切なユーザーを追加します。
+- Microsoft 365 管理センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なユーザーを適切なアクセス グループに追加します。
 
-- PowerShell の場合、まず、 [Azure Active Directory PowerShell For Graph モジュールに接続](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。 ユーザー プリンシパル名 (UPN) を使ってユーザー アカウントをアクセス グループに追加するには、次の PowerShell コマンド ブロックを使用します。
+- PowerShell の場合は、 [最初に Graph 用 Azure Active Directory PowerShell モジュールを使用して接続します](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。 ユーザー プリンシパル名 (UPN) を使ってユーザー アカウントをアクセス グループに追加するには、次の PowerShell コマンド ブロックを使用します。
 
 ```powershell
 $userUPN="<UPN of the user account>"
@@ -74,13 +79,13 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 - 表示:サイト ビューアーのアクセス グループにグループを追加する
 
-AD DS を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なグループに適切なグループを追加し、サブスクリプションとの同期を待機します。
+AD DS を使用してユーザー アカウントとグループを管理している場合は、通常の AD DS ユーザーおよびグループ管理手順を使用して適切なグループを適切なグループに追加し、サブスクリプションとの同期を待ちます。
 
-Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。
+Office 365 を使用してユーザー アカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。
 
-- Microsoft 365 管理センターの場合は、ユーザーアカウント管理者または会社の管理者の役割が割り当てられているユーザーアカウントでサインインし、グループを使用して適切なアクセスグループに適切なグループを追加します。
+- Microsoft 365 管理センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なグループを適切なアクセス グループに追加します。
 
-- PowerShell の場合、まず、 [Azure Active Directory PowerShell For Graph モジュールに接続](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+- PowerShell の場合は、 [最初に Graph 用 Azure Active Directory PowerShell モジュールを使用して接続します](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
  その後、次の PowerShell コマンドを使用します。
 
 ```powershell
@@ -99,13 +104,13 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
 
 - 表示:サイト ビューアーのアクセス グループからユーザー アカウントを削除する
 
-AD DS を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用して適切なアクセスグループから適切なユーザーを削除し、サブスクリプションとの同期を待機します。
+AD DS を使用してユーザー アカウントとグループを管理している場合は、通常の AD DS ユーザーおよびグループ管理手順を使用して適切なユーザーを適切なアクセス グループから削除し、サブスクリプションとの同期を待ちます。
 
-Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。
+Office 365 を使用してユーザー アカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。
 
-- Microsoft 365 管理センターの場合は、ユーザーアカウント管理者または会社の管理者の役割が割り当てられているユーザーアカウントでサインインし、グループを使用して適切なアクセスグループから適切なユーザーを削除します。
+- Microsoft 365 管理センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なユーザーを適切なアクセス グループから削除します。
 
-- PowerShell の場合、まず、 [Azure Active Directory PowerShell For Graph モジュールに接続](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+- PowerShell の場合は、 [最初に Graph 用 Azure Active Directory PowerShell モジュールを使用して接続します](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 UPN を使ってアクセス グループからユーザー アカウントを削除するには、次の PowerShell コマンド ブロックを使用します。
 
 ```powershell
@@ -132,13 +137,13 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 - 表示:サイト ビューアーのアクセス グループからグループを削除する
 
-Windows Server Active Directory を使用してユーザーアカウントとグループを管理している場合は、通常の AD DS ユーザーおよびグループ管理手順を使用して適切なアクセスグループから適切なグループを削除し、サブスクリプションとの同期を待機します。
+Windows Server Active Directory を使用してユーザー アカウントとグループを管理している場合は、通常の AD DS ユーザーおよびグループ管理手順を使用して適切なアクセス グループから適切なグループを削除し、サブスクリプションとの同期を待ちます。
 
-Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。
+Office 365 を使用してユーザー アカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。
 
-- Microsoft 365 管理センターの場合は、ユーザーアカウント管理者または会社の管理者の役割が割り当てられているユーザーアカウントでサインインし、グループを使用して適切なアクセスグループから適切なグループを削除します。
+- Microsoft 365 管理センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なアクセス グループから適切なグループを削除します。
 
-- PowerShell の場合、まず、 [Azure Active Directory PowerShell For Graph モジュールに接続](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+- PowerShell の場合は、 [最初に Graph 用 Azure Active Directory PowerShell モジュールを使用して接続します](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 表示名を使用してアクセス グループからグループを削除するには、次の PowerShell コマンド ブロックを使用します。
 
 ```powershell
@@ -153,7 +158,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 カスタムのアクセス許可を持つドキュメントのサブフォルダーを作成するには、以下のことを行います。
 
-1. サイトの管理者アクセスグループのメンバーであるアカウントにサインインします。 詳細については、「[一般法人向け Microsoft 365 にサインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. サイトの管理者アクセス グループのメンバーであるアカウントにサインインします。 詳細については、「[一般法人向け Microsoft 365 にサインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
 
 2. 分離したチーム サイトに移動し、 **[ドキュメント]** をクリックします。
 

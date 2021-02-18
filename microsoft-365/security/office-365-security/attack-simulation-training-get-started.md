@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,13 +17,15 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Microsoft 365 E5 または microsoft Defender for Office 365 プラン 2 の組織で、攻撃シミュレーション トレーニングを使用してシミュレートされたフィッシングとパスワード攻撃を実行する方法について説明します。
-ms.openlocfilehash: 2c00fb27748887c6b8e2fa1458b10f0c3405eef7
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1ec5b8175db6eb03e59a31a4dc21d9649c5e7616
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877166"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289898"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>攻撃シミュレーション トレーニングの使用を開始する
 
@@ -33,7 +34,7 @@ ms.locfileid: "49877166"
 組織に Microsoft 365 E5 または microsoft Defender for Office 365[](office-365-ti.md)プラン 2 (脅威の調査と対応の機能を含む) がある場合は、Microsoft セキュリティ センターの攻撃シミュレーション トレーニングを使用して、組織で現実的な攻撃シナリオを実行できます。 これらのシミュレートされた攻撃は、実際の攻撃が下線に影響を与える前に、脆弱なユーザーを特定して見つけるのに役立ちます。 詳細については、この記事を参照してください。
 
 > [!NOTE]
-> 攻撃シミュレーション トレーニングは、Microsoft Defender for Office [365](attack-simulator.md)の攻撃シミュレーターで説明されている、古い攻撃シミュレーター v1 エクスペリエンスに取って代わるものになります。
+> 攻撃シミュレーション トレーニングは、Microsoft Defender for Office [365](attack-simulator.md)の攻撃シミュレーターで説明されている古い攻撃シミュレーター v1 エクスペリエンスに取って代わるものになります。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -45,7 +46,7 @@ ms.locfileid: "49877166"
   - **攻撃シミュレータ管理者**: 攻撃シミュレーション キャンペーンのすべての側面を作成および管理します。
   - **攻撃シミュレータペイロード作成者**: 管理者が後で開始できる攻撃ペイロードを作成します。
 
-  詳細については、「セキュリティ/コンプライアンス センター [の](permissions-in-the-security-and-compliance-center.md) アクセス許可」または「& [について」を参照してください](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  詳細については、「セキュリティ/コンプライアンス センター [の](permissions-in-the-security-and-compliance-center.md) アクセス許可」または「& [について」を参照してください](../../admin/add-users/about-admin-roles.md)。
 
 - 攻撃シミュレーション トレーニング用の対応する PowerShell コマンドレットはありません。
 
@@ -61,7 +62,7 @@ ms.locfileid: "49877166"
 
 - **マルウェアの添付** ファイル : 攻撃者が、添付ファイルを含むメッセージを受信者に送信します。 受信者が添付ファイルを開くと、ユーザーのデバイスで任意のコード (マクロなど) が実行され、攻撃者が追加のコードをインストールしたり、それ自体をさらに進めることができます。
 
-- **添付ファイル内のリンク**: これは資格情報取得のハイブリッドです。 攻撃者は、添付ファイル内の URL を含むメッセージを受信者に送信します。 受信者が添付ファイルを開いて URL をクリックすると、通常はユーザー名とパスワードを求めるダイアログ ボックスが表示される Web サイトに移動します。 通常、宛先ページは、ユーザーの信頼を構築するために、既知の Web サイトを表すメッセージです。
+- **添付ファイル内のリンク**: これは資格情報取得のハイブリッドです。 攻撃者は、添付ファイル内の URL を含むメッセージを受信者に送信します。 受信者が添付ファイルを開き、URL をクリックすると、通常はユーザー名とパスワードを求めるダイアログ ボックスが表示される Web サイトに移動します。 通常、宛先ページは、ユーザーの信頼を構築するために、既知の Web サイトを表すメッセージです。
 
 - **マルウェアへのリンク**: 攻撃者は、既知のファイル共有サイト (SharePoint Online や Dropbox など) 上の添付ファイルへのリンクを含むメッセージを受信者に送信します。 受信者が URL をクリックすると、添付ファイルが開き、ユーザーのデバイス上で任意のコード (マクロなど) が実行され、攻撃者が追加のコードをインストールしたり、自分自身をさらに進めることができます。
 

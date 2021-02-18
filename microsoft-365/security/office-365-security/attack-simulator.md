@@ -20,18 +20,18 @@ ms.custom:
 description: 管理者は、Microsoft 365 E5 または microsoft Defender for Office 365 プラン 2 組織で、攻撃シミュレーターを使ってシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 1e877900698d033cb99154b31e32fa04ff7d1010
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233602"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289583"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の攻撃シミュレータ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Microsoft** Defender for [Office 365 プラン 2 に適用されます](https://go.microsoft.com/fwlink/?linkid=2148715)
+**Microsoft** Defender for [Office 365 プラン 2 に適用されます](office-365-atp.md)
 
 組織に Microsoft Defender for Office 365 プラン 2 [](office-365-ti.md)(脅威の調査と対応の機能を含む) がある場合は、セキュリティ & コンプライアンス センターの攻撃シミュレータを使用して、組織で現実的な攻撃シナリオを実行できます。 これらのシミュレートされた攻撃は、実際の攻撃が下線に影響を与える前に、脆弱なユーザーを特定して見つけるのに役立ちます。 詳細については、この記事を参照してください。
 
@@ -47,7 +47,7 @@ ms.locfileid: "50233602"
 
 - 組織の管理役割グループまたはセキュリティ管理者 **役割グループ** の **メンバーである** 必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
-- 攻撃シミュレータでキャンペーンを作成および管理するには、アカウントを多要素認証 (MFA) 用に構成する必要があります。 手順については、「多要素認証 [をセットアップする」を参照してください](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+- 攻撃シミュレータでキャンペーンを作成および管理するには、アカウントを多要素認証 (MFA) 用に構成する必要があります。 手順については、「多要素認証 [をセットアップする」を参照してください](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
 - フィッシング キャンペーンは、30 日間イベントを収集して処理します。 キャンペーンの履歴データは、キャンペーンの開始後最大 90 日間利用できます。
 

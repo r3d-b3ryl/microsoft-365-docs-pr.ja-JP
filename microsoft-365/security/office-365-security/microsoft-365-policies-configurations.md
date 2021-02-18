@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -18,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 0f6e3d7bef0f09dc922a7c1878e6ea7ce0aad3d7
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: e4b85091366927596a2c8f52c579c369fc9697c3
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233154"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290719"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
 **適用対象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
 
 組織の最新のセキュリティ境界は、ネットワークを超えて拡張されたので、さまざまなデバイスを使用して、任意の場所からクラウドベースのアプリにアクセスするユーザーが含まれます。 セキュリティ インフラストラクチャは、特定のアクセス要求を許可するかどうか、およびどのような条件で許可する必要かを判断する必要があります。
 
@@ -42,7 +43,7 @@ ID とデバイスのアクセス設定とポリシーは、ベースライン�
 これらの機能とその推奨事項:
 
 - Microsoft 365 E3 および Microsoft 365 E5 でサポートされています。
-- [Microsoft](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)セキュア スコアと[Azure AD](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)の ID スコアに合わせて調整され、組織のこれらのスコアが向上します。
+- [Microsoft](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)セキュア スコアと[Azure AD](../mtp/microsoft-secure-score.md)の ID スコアに合わせて調整され、組織のこれらのスコアが向上します。
 - ID インフラストラクチャをセキュリティで [保護するために、これら 5 つの手順を実装するのに役立ちます](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。
 
 組織に固有の環境要件や複雑さがある場合は、これらの推奨事項を開始点として使用します。 ただし、ほとんどの組織では、規定に従ってこれらの推奨事項を実装できます。
