@@ -3,7 +3,7 @@ title: テナント レベルの Microsoft 365 の [カスタマー]キー (パ�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/17/2020
+ms.date: 2/17/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Microsoft 365 テナント内のすべてのデータに対して顧客キーを設定する方法について説明します。
-ms.openlocfilehash: 682eed7eb2e80535af1acf68808c708e1a25d80f
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 60704f77e17222de790cb397653a2275144d770e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242377"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288148"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>テナント レベルでの Microsoft 365 のカスタマー キーの概要 (パブリック プレビュー)
 
@@ -313,7 +313,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 パラメータ :
 
 | 名前 | 説明 | 省略可能 (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |名前|データ暗号化ポリシーの表示名|×|
 |AzureKeyIDs|データ暗号化ポリシーに関連付ける Azure Key Vault キーの 2 つの URI 値をコンマで区切って指定します。|×|
 |説明|データ暗号化ポリシーの説明|×|
@@ -334,7 +334,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
 
 パラメータ :
 | 名前 | 説明 | 省略可能 (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 -Policy|割り当てる必要があるデータ暗号化ポリシーを指定します。ポリシー名またはポリシー ID を指定します。|×|
 
 ### <a name="modify-or-refresh-policy"></a>ポリシーを変更または更新する
@@ -361,7 +361,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 
 パラメータ :
 | 名前 | 説明 | 省略可能 (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|変更するデータ暗号化ポリシーを指定します。|×|
 |-Refresh|Azure Key Vault で関連付けられたキーを回転した後、Refresh スイッチを使用してデータ暗号化ポリシーを更新します。 このスイッチで値を指定する必要はありません。|Y|
 |-Enabled|Enabled パラメーターは、データ暗号化ポリシーを有効または無効にします。 ポリシーを無効にする前に、テナントからポリシーの割り当てを解除する必要があります。 有効な値は次のとおりです。</br > $true: ポリシーが有効になっている</br > $true: ポリシーを有効にします。これが既定値です。|Y|
@@ -393,7 +393,7 @@ Get-M365DataAtRestEncryptionPolicy -Identity "NAM Policy"
 パラメータ :
 
 | 名前 | 説明 | 省略可能 (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|詳細を一覧表示するデータ暗号化ポリシーを指定します。|Y|
 
 ### <a name="get-policy-assignment-info"></a>ポリシー割り当て情報を取得する
