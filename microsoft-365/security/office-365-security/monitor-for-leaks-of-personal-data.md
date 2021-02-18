@@ -19,12 +19,12 @@ search.appverid:
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1425015843b2f444c6a410df449eeeaf4045ee5
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261427"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290671"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -65,7 +65,7 @@ DLP レポートを使用すると、以下のことを行えます。
 
 DLP レポートは、セキュリティ/コンプライアンス センターにあります。 [レポート] \> [レポートの表示] に移動します。 [データ損失防止 (DLP)] の下で、[DLP ポリシーおよびルールの一致] または [DLP の誤検知と上書き] に移動します。
 
-詳細については、「[データ損失防止のレポートの表示](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)」を参照してください。
+詳細については、「[データ損失防止のレポートの表示](../../compliance/view-the-dlp-reports.md)」を参照してください。
 
 ![DLP ポリシーと一致することを示すレポート](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -87,17 +87,17 @@ Microsoft 管理アクティビティ API を使用して統一監査ログを�
 
 アラート ポリシーと監査ログの検索については、以下を参照してください。
 
-- [Microsoft 365 セキュリティ/コンプライアンス センターのアラート ポリシー](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Microsoft 365 セキュリティ/コンプライアンス センターのアラート ポリシー](../../compliance/alert-policies.md)
 
-- [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (概要)
+- [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](../../compliance/search-the-audit-log-in-security-and-compliance.md) (概要)
 
-- [監査ログ検索を有効または無効にする](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [監査ログ検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- [監査ログを検索する](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [監査ログを検索する](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (コマンドレット)
 
-- [監査ログの詳細なプロパティ](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [監査ログの詳細なプロパティ](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
