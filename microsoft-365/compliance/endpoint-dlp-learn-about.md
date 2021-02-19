@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 Microsoft 365 のコンプライアンスソリューションでファイルが表示されます '
-ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682628"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279311"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -34,8 +34,7 @@ Microsoft 365 のデータ損失防止 (DLP) を使用すると、機密があ�
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>監視と対処が必要なエンドポイントのアクティビティ
 
-Microsoft エンドポイント DLP を使用すると、Windows 10 を実行しているデバイスでユーザーが機密アイテムに行っている次のようなアクティビティを監査および管理できます。　　　
-
+Microsoft エンドポイント DLP を使用すると、Windows 10 を実行しているデバイスでユーザーが機密アイテムに行っている次のようなアクティビティを監査および管理できます。　　　 
 
 |アクティビティ |説明  | 監査可能/制限可能|
 |---------|---------|---------|
@@ -47,6 +46,28 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 |アイテムの作成|ユーザーがアイテムを作成した場合に検出します| 監査可能|
 |アイテムの名前の変更|ユーザーがアイテムの名前を変更した場合に検出します| 監査可能|
 
+ ## <a name="monitored-files"></a>監視対象ファイル
+
+エンドポイント DLP は、次のファイルの種類の監視をサポートしています。
+
+- Word ファイル
+- PowerPoint ファイル
+- Excel ファイル
+- PDF ファイル
+- .csv ファイル
+- .tsv ファイル
+- .txt ファイル
+- .rtf ファイル
+- .c ファイル
+- .class ファイル
+- .cpp ファイル
+- .cs ファイル
+- .h ファイル
+- .java ファイル
+ 
+既定では、エンドポイント DLP は、ポリシーの一致がない場合でも、これらのファイルの種類のアクティビティを監査します。 ポリシーの一致からのデータの監視のみが必要な場合は、エンドポイント DLP グローバル設定で **[デバイスのファイル アクティビティを常に監査する]** をオフにすることができます。 どのような場合でも、Word、PowerPoint、Excel、PDF、および .csv ファイルのアクティビティは常に監査されます。
+
+エンドポイント DLP は MIME の種類に基づいてアクティビティを監視するため、ファイルの拡張子が変更されてもアクティビティはキャプチャされます。 
 
 ## <a name="whats-different-in-endpoint-dlp"></a>エンドポイント DLP との違い
 
@@ -79,25 +100,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 
 ### <a name="viewing-endpoint-dlp-data"></a>エンドポイント DLP データの表示
 
- エンドポイント DLP は MIME タイプに基づいてアクティビティを監視するため、ファイルの拡張子が変更されてもアクティビティはキャプチャされます。 現時点では、次のファイル タイプがサポートされています。
 
-- Word ファイル
-- PowerPoint ファイル
-- Excel ファイル
-- PDF ファイル
-- .csv ファイル
-- .tsv ファイル
-- .txt ファイル
-- .rtf ファイル
-- .c ファイル
-- .class ファイル
-- .cpp ファイル
-- .cs ファイル
-- .h ファイル
-- .java ファイル
-
-> [!NOTE]
-> エンドポイント DLP は、上記すべての種類のファイルを DLP ポリシーに対して評価し、それに応じた保護アクションを適用します。 DLP ポリシーに一致するすべてのファイルは、たとえブロックされていなくても、サポートされているすべてのアクションについて監査されます。 さらに、Word、PowerPoint、Excel、PDF、.csv ファイルに対して実行されたファイル アクティビティについては、DLP ポリシーの存在やこれらのファイル対する一致に関係なく、既定で監査されます。
 
 [DLP 警告管理ダッシュボード](dlp-configure-view-alerts-policies.md)に移動すると、エンドポイント デバイスに適用されている DLP ポリシーに関連する警告を表示できます。
 

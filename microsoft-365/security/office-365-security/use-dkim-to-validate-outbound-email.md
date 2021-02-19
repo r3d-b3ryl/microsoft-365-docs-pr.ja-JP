@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 10/8/2019
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -19,17 +18,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
-ms.openlocfilehash: 0c77798f0bf4b5dedfa5023eaa0b4de4ab8c5b64
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 55a7bf612d121364ed64c159a450b6cf035d3837
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870999"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286431"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用対象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **概要:** この記事では、Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。
 
@@ -37,7 +42,7 @@ ms.locfileid: "49870999"
 
 基本的には、秘密キーを使用してドメインの送信メールのヘッダーを暗号化します。 受信側サーバーが署名のデコードに使用できるドメインの DNS レコードに、公開キーを発行します。 公開キーを使用することで、そのメッセージが送信者本人からのものであり、ドメインを *偽装* している他人からのものでないことを確認します。
 
-Microsoft 365 では、初期ドメインの 'onmicrosoft.com' に対応する DKIM が自動的にセットアップされます。 つまり、初期ドメイン名に対応する DKIM のセットアップに関して、ユーザーは何もする必要がないということです (例: litware.onmicrosoft.com)。 ドメインの詳細については、「[ドメインに関する FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)」を参照してください。
+Microsoft 365 では、初期ドメインの 'onmicrosoft.com' に対応する DKIM が自動的にセットアップされます。 つまり、初期ドメイン名に対応する DKIM のセットアップに関して、ユーザーは何もする必要がないということです (例: litware.onmicrosoft.com)。 ドメインの詳細については、「[ドメインに関する FAQ](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)」を参照してください。
 
 カスタム ドメインの DKIM に関しても、何も操作しなくて構いません。 カスタム ドメインに対応する DKIM をセットアップしていないと、Microsoft 365 が秘密キーと公開キーのペアを作成して、DKIM 署名を有効にし、カスタム ドメインに対応する Microsoft 365 の既定ポリシーを構成します。 ほとんどのユーザーの場合はこれで十分ですが、次の状況ではカスタム ドメインの DKIM を手動で構成する必要があります。
 
@@ -83,38 +88,34 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 ## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする
 <a name="1024to2048DKIM"> </a>
 
-DKIM キーでは 1024 ビットと 2048 ビットの両方がサポートされています。次の手順では、1024 ビット キーを 2048 ビットにアップグレードする方法について説明します。 次の手順は、2 つのユース ケースに向けたものです。目的の構成に最適なものを選択してください。
+DKIM キーでは 1024 ビットと 2048 ビットの両方がサポートされています。次の手順では、[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) で 1024 ビット キーを 2048 ビットにアップグレードする方法について説明します。 次の手順は、2 つの使用例を対象としています。目的の構成に最適なものを選択してください。
 
-1. **DKIM の構成が済んでいる** 場合は、次のようにしてビットを転換します。
+- **DKIM の構成が済んでいる** 場合は、次のコマンドを実行してビットネスを回転します。
 
-   1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです)。
-   1. 次のコマンドを実行します。
+  ```powershell
+  Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
+  ```
 
-      ```powershell
-      Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
-      ```
+  **または**
 
-1. **DKIM の新規実装** の場合は、次のようにします。
+- **DKIM の新規実装の場合** は、次のコマンドを実行します。
 
-   1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (これは、Exchange Online コマンドレットです)。
-   1. 次のコマンドを実行します。
+  ```powershell
+  New-DkimSigningConfig -DomainName <Domain for which config is to be created> -KeySize 2048 -Enabled $true
+  ```
 
-      ```powershell
-      New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True
-      ```
+次のコマンドを実行して、Exchange Online PowerShell に接続したまま、構成を *確認* します。
 
-Microsoft 365 への接続状態を維持して、構成を *検証* します。
-
-1. 次のコマンドを実行します。
-
-   ```powershell
-   Get-DkimSigningConfig -Identity {Domain for which the configuration was set} | Format-List
-   ```
+```powershell
+Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | Format-List
+```
 
 > [!TIP]
 > この新しい 2048 ビット キーは RotateOnDate の時点で有効になります。それまでの間は、1024 ビット キーの電子メールが送信されます。 4 日後に、2048 ビット キーで再度テストしてください (つまり、2 番目のセレクターへの転換が有効になってからテストします)。
 
 2 番目のセレクターに転換する場合は、a) Microsoft 365 にセレクターの転換を任せて、6 か月以内に 2048 ビットへのアップグレードを実行するか、b) 4 日後に 2048 ビットが使用されていることを確認して、前述の該当するコマンドレットを使用して 2 番目のセレクター キーを手動で転換します。
+
+構文とパラメーターの詳細については、次の記事を参照してください: 「[Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)」、「[New-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/new-dkimsigningconfig)」、および「[Get-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/get-dkimsigningconfig)」。
 
 ## <a name="steps-you-need-to-do-to-manually-set-up-dkim"></a>DKIM を手動でセットアップする手順
 <a name="SetUpDKIMO365"> </a>
@@ -131,9 +132,9 @@ DKIM を構成するには、次の手順を完了します。
 DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME レコードを発行する必要があります。
 
 > [!NOTE]
-> 記事全体を読んでいない場合は、この時間を節約する PowerShell 接続情報を見逃している可能性があります: [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです。)
+> 記事全体を読んでいない場合は、時間を節約する次の PowerShell 接続情報を見逃している可能性があります: 「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」。
 
-以下のコマンドを実行してセレクター レコードを作成します。
+Exchange Online PowerShell で次のコマンドを実行して、セレクター レコードを作成します。
 
 ```powershell
 New-DkimSigningConfig -DomainName <domain> -Enabled $false
@@ -165,7 +166,7 @@ TTL:                3600
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
-- _initialDomain_ は、Microsoft 365 へのサインアップ時に使用したドメインです。 初期ドメインの末尾は常に onmicrosoft.com です。 初期ドメインを決定する方法の詳細については、「 [ドメインに関する FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)」を参照してください。
+- _initialDomain_ は、Microsoft 365 へのサインアップ時に使用したドメインです。 初期ドメインの末尾は常に onmicrosoft.com です。 初期ドメインを決定する方法の詳細については、「 [ドメインに関する FAQ](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)」を参照してください。
 
 たとえば、初期ドメイン (cohovineyardandwinery.onmicrosoft.com) と 2 つのカスタム ドメイン (cohovineyard.com と cohowinery.com) がある場合は、追加のそれぞれのドメインに対して 2 つの CNAME レコードをセットアップして、合計で 4 つの CNAME レコードをセットアップする必要があります。
 
@@ -311,7 +312,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     b=<signed field>;
 ```
 
-この例のホスト名とドメインには、fabrikam.com の DKIM 署名がドメイン管理者によって有効にされた場合に CNAME が指し示す値が含まれています。 最終的には、Microsoft 365 から送信されるすべてのメッセージは DKIM 署名されたメッセージになります。 自分で DKIM を有効にしている場合、ドメインは From: アドレス内のドメインと同じになります (この場合は fabrikam.com)。 自分で DKIM を有効にしない場合は、ドメインは同じにならず、代わりに組織の初期ドメインが使用されます。 初期ドメインを決定する方法の詳細については、「 [ドメインに関する FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)」を参照してください。
+この例のホスト名とドメインには、fabrikam.com の DKIM 署名がドメイン管理者によって有効にされた場合に CNAME が指し示す値が含まれています。 最終的には、Microsoft 365 から送信されるすべてのメッセージは DKIM 署名されたメッセージになります。 自分で DKIM を有効にしている場合、ドメインは From: アドレス内のドメインと同じになります (この場合は fabrikam.com)。 自分で DKIM を有効にしない場合は、ドメインは同じにならず、代わりに組織の初期ドメインが使用されます。 初期ドメインを決定する方法の詳細については、「 [ドメインに関する FAQ](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)」を参照してください。
 
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>サードパーティのサービスがカスタム ドメインに代わって電子メールを送信つまり偽装できるように DKIM を設定する
 <a name="SetUp3rdPartyspoof"> </a>
