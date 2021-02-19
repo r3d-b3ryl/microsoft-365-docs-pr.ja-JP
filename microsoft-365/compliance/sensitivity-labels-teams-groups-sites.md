@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 9276288bc05abebe864a4465f69284372fa0baab
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 7eea07b91647af2b0b7121f9d9c1f018bc9fc630
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868025"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261460"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -271,6 +271,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
   - SharePoint 管理センター
   - Azure Active Directory ポータル
+  - Microsoft 365 管理センター
   - Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、セキュリティ/コンプライアンス センター
 
 - ユーザーのアプリとサービス:
@@ -280,13 +281,12 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
   - Outlook on the web、Outlook for Windows、MacOS、iOS、Android
   - フォーム
   - Stream
-  - Planner (ロールアウト) 
+  - Planner 
 
 次のアプリとサービスで、サイトとグループの設定用に構成した秘密度ラベルをサポートしています。
 
 - 管理センター:
 
-  - Microsoft 365 管理センター
   - Teams 管理センター
   - Exchange 管理センター
 
