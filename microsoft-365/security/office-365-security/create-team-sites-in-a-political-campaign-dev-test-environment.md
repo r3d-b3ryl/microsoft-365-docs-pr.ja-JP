@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: '概要: 選挙運動用の開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f3488b479b4d37b7e38e4ced0d612e8fb5ae8a0
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1c12970fb3ff6d5616201ff153085d411068d11c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165477"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288397"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>選挙運動用の開発/テスト環境でチーム サイトを作成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "50165477"
 
 **適用対象**
 
-- [Microsoft Defender for Office 365 プラン 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender for Office 365 プラン 2](office-365-atp.md)
 - 
  **概要:** 選挙運動用の開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。 
    
@@ -427,6 +427,6 @@ Azure Information Protection とこの新しいラベルでドキュメントを
 
 [選挙運動の開発/テスト環境用にグループとユーザーを構成する](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 
-[クラウド導入のテスト ラボ ガイド (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[クラウド導入のテスト ラボ ガイド (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Microsoft 365 ソリューションおよびアーキテクチャ センター](../../solutions/index.yml)
