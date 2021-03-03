@@ -1,8 +1,8 @@
 ---
-title: 英国の支払い情報
-author: cmcatee-MSFT
+title: 英国のお支払い情報
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,24 +13,34 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2e8dfc5d5ebc6e300fa50b0f51e4bd6344aa3aed
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 334743ba42561522879ea416faf7e8c2897600a7
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648157"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406794"
 ---
-# <a name="payment-information-for-united-kingdom"></a>英国の支払い情報
+# <a name="payment-information-for-united-kingdom"></a>英国のお支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-GBP のみで支払いを行い、請求書番号を参照してください。
+## <a name="electronic-funds-transfer"></a>電子決済
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+**お支払いは、お支払い送金時に GBP および参照請求書番号で行って下さい。**
 
-**Bank:** Citibank、London  
-**SWIFT コード:** CITIGB2L  
-**IBAN:** GB41CITI18500812207605  
-**並べ替えコード:** 185008  
-**アカウント番号:** 12207605  
-**アカウント名:** 製  
+Microsoft Ireland Operations **Limited** が請求する請求書がある場合は、次の銀行情報を使用します。
+
+Bank: Citibank, London\
+SWIFT コード: CITIGB2L\
+IBAN コード: GB41CITI18500812207605\
+SORT コード: 185008\
+アカウント番号: 12207605\
+アカウント名: MICROSOFT
+
+Microsoft Limited が 2021 年 3 月 1 日から注文と消費に対して請求する請求書がある場合は、次の銀行情報を使用します。 
+
+Bank: Citibank Europe plc\
+SWIFT コード: CITIIE2X\
+IBAN コード: IE65CITI99005170000121\
+アカウント番号: 70000121\
+アカウント名: MICROSOFT

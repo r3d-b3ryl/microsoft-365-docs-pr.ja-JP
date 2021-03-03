@@ -1,8 +1,8 @@
 ---
-title: ニュージーランドの支払い情報
-author: cmcatee-MSFT
+title: ニュージーランドのお支払い情報
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,26 +13,36 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 26cf6aa0302b2ff6d05750c5cea21cb1f04cda64
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bf43c61b37050fee3d3819f1ec44b1c39596811f
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649044"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406866"
 ---
-# <a name="payment-information-for-new-zealand"></a>ニュージーランドの支払い情報
+# <a name="payment-information-for-new-zealand"></a>ニュージーランドのお支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-NZD のみに支払い、請求書番号を参照してください。
+## <a name="electronic-funds-transfer"></a>電子決済
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+**NZD で支払いを行い、支払い送金の請求書番号を参照してください。**
 
-**Bank:** Citibank  
-**銀行コード:** 31  
-**ブランチコード:** 2840  
-**SWIFT コード:** CITINZ2X  
-**サフィックス (3 桁):** 004    
-**サフィックス (2 桁):** 04  
-**アカウント番号:** 0026181  
-**アカウント名:** MICROSOFT 地域販売企業  
+MICROSOFT REGIONAL **SALES PTE LTD** によって請求される請求書がある場合は、次の銀行情報を使用します。
+
+銀行: シティバンク\
+銀行コード: 31\
+ブランチ コード: 2840\
+SWIFT コード: CITINZ2X\
+サフィックス (3 桁): 004\
+サフィックス (2 桁): 04\
+アカウント番号: 0026181\
+アカウント名: MICROSOFT
+
+2021 年 3 月 1 日から注文と消費に対して **Microsoft New Zealand Limited** によって請求された請求書がある場合は、次の銀行情報を使用します。
+
+Bank: Citibank, N.A. ニュージーランド支店\
+SWIFT コード: CTINZ2X\
+BSB: 312825\
+アカウント番号: 0008655083\
+アカウント名: MICROSOFT

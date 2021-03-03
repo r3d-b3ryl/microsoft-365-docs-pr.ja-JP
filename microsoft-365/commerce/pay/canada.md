@@ -1,5 +1,5 @@
 ---
-title: カナダの支払い情報
+title: カナダのお支払い情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -13,32 +13,35 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a4a60c841ebb31163281cd8de3c27460e10b0811
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2eccedc234ee6bf9a3049671b4fa4142ba85bd69
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637513"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406994"
 ---
-# <a name="payment-information-for-canada"></a>カナダの支払い情報
+# <a name="payment-information-for-canada"></a>カナダのお支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-CAD のみを使用して支払いを行う場合は、請求書番号を参照してください。
+## <a name="electronic-funds-transfer"></a>電子決済
 
-## <a name="check"></a>小切手
+**CAD で支払いを行い、支払い送金の請求書番号を参照してください。**
 
-**受取人:** 製
+Microsoft **Corporation** から請求された請求書がある場合は、次の銀行情報を使用します。
 
-**郵送先住所:**  
-米国の銀行、ロックボックス910430、PO ボックス4090、STN A、トロント ON M5W 0E9、カナダ
+Bank: Bank of America, Toronto\
+SWIFT コード: BOFACATT\
+アカウント番号: 45571239\
+アカウント名: MICROSOFT\
+銀行 ID: 241\
+ブランチ: 56792\
+アカウント名: MICROSOFT
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+2021 年 3 月 1 日から注文と消費に対して **Microsoft Canada Inc.** から請求された請求書がある場合は、次の銀行情報を使用します。
 
-**Bank:** アメリカ Bank、トロント  
-**SWIFT コード:** BOFACATT  
-**アカウント番号:** 45571239  
-**アカウント名:** 製  
-**銀行 ID:** 241  
-**分岐:** 56792  
-**ルーティング/転送番号:** 024156792  
+Bank: Citibank N.A., Canadian Branch\
+ルーティング番号: 032820012\
+BIC/SWIFT コード: CITICATTBCH\
+アカウント番号: 3003600001\
+アカウント名: MICROSOFT

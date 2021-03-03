@@ -16,24 +16,24 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e125a6dfb35b7018b5f85100184c842da9231327
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166452"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407327"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
-組織の管理下にある機密性の高いアイテムの特定と分類は、情報保護の分野の最初 [のステップです](protect-information.md)。  Microsoft 365 には、分類可能なアイテムを識別する 3 つの方法が提供されています。
+組織の管理下にある機密性の高いアイテムを識別および分類する方法は、情報保護の分野の最初の [ステップです](protect-information.md)。  Microsoft 365 には、分類できるアイテムを識別する 3 つの方法があります。
 
-- ユーザーが手動で実行する
+- ユーザーが手動で行う
 - 機密情報の種類などの自動パターン認識
 - [機械学習](classifier-learn-about.md)
 
-機密情報の種類はパターン ベースの分類子です。 機密情報を識別するために、社会保障、クレジット カード、銀行口座番号などの機密情報を検出する場合は、「機密情報の種類」エンティティ定義 [を参照してください。](sensitive-information-type-entity-definitions.md)
+機密情報の種類は、パターン ベースの分類子です。 機密アイテムを識別するために、社会保障、クレジット カード、銀行口座番号などの機密情報を検出する場合は、「機密情報の種類エンティティ定義」 [を参照してください。](sensitive-information-type-entity-definitions.md)
 
-## <a name="sensitive-information-types-are-used-in"></a>機密情報の種類は次の中で使用されます。
+## <a name="sensitive-information-types-are-used-in"></a>機密情報の種類は、
 
 - [データ損失防止ポリシー](data-loss-prevention-policies.md) 
 - [機密ラベル](sensitivity-labels.md)
@@ -43,19 +43,19 @@ ms.locfileid: "50166452"
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>機密情報の種類の基本的な部分
 
-機密情報の種類のエンティティは、次のフィールドで定義されます。
+すべての機密情報の種類エンティティは、次のフィールドで定義されます。
 
 - name: 機密情報の種類の参照方法
-- description: 機密情報の種類が探している内容を説明します
-- パターン: パターンは、機密情報の種類が検出する機能を定義します。 次のコンポーネントで構成されます。
-    - プライマリ要素 – 機密情報の種類が検索する主な要素。 正規表現 **には、チェックサム** 検証、キーワード リスト、キーワード ディクショナリ、または関数を指定 **できます**。
-    - サポート要素 – マッチの信頼度を高める助けとして機能する要素。 たとえば、SSN 番号の近くにあるキーワード "SSN" です。 これは、チェックサム検証、キーワード リスト、キーワード ディクショナリを使用する場合と使用しない場合の正規表現です。
-    - 信頼度 - 信頼度 (高、中、低) は、主要素と共に検出された証拠の量を反映します。 アイテムに含まれる証拠が多いほど、一致するアイテムに必要な機密情報が含まれているという信頼度が高くなります。
-    - 近接性 – プライマリ要素とサポート要素の間の文字数
+- description: 機密情報の種類が何を探しているのかを説明します。
+- pattern: パターンは、機密情報の種類が検出する情報を定義します。 このコンポーネントは、次のコンポーネントで構成されます。
+    - Primary 要素 – 機密情報の種類が探している主な要素。 これは、チェックサム検証 **、** キーワード リスト、キーワード 辞書、または関数を含む正規表現と指定 **できます**。
+    - サポート要素 – 一致の信頼度を高めるのに役立つ証拠として機能する要素。 たとえば、SSN 番号の近接にあるキーワード "SSN" です。 これは、チェックサム検証、キーワード リスト、キーワード 辞書の付いた正規表現と指定できます。
+    - 信頼度レベル - 信頼度レベル (高、中、低) は、主要素と共に検出された証拠の量を反映します。 アイテムに含まれる証拠が多いほど、一致するアイテムに探している機密情報が含まれているという信頼性が高くなります。
+    - 近接 – プライマリ要素とサポート要素の間の文字数
 
 ![補強証拠と近接ウィンドウの図](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-信頼度の詳細については、このビデオを参照してください。
+このビデオの信頼度の詳細
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
@@ -63,7 +63,7 @@ ms.locfileid: "50166452"
 ### <a name="example-sensitive-information-type"></a>機密情報の種類の例
 
 
-## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民識別番号 (DNI)
+## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 ID (DNI) 番号
 
 ### <a name="format"></a>フォーマット
 
@@ -72,7 +72,7 @@ ms.locfileid: "50166452"
 ### <a name="pattern"></a>パターン
 
 8 桁の数字:
-- 2 桁の数字
+- 2 桁
 - ピリオド
 - 3 桁の数字
 - ピリオド
@@ -84,9 +84,9 @@ ms.locfileid: "50166452"
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという中程度の信頼度を持っています。
-- パターンに一Regex_argentina_national_idコンテンツを検索する正規表現。
-- 検索されたKeyword_argentina_national_id検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_argentina_national_id一致するコンテンツを検索します。
+- このページのKeyword_argentina_national_idが見つかりました。
 
 ```xml
 <!-- Argentina National Identity (DNI) Number -->
@@ -104,9 +104,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 - Argentina National Identity number 
 - ID 
-- Id の国民識別カード 
+- ID 国の ID カード 
 - DNI 
-- NIC National Registry of Persons 
+- NIC の国民登録 
 - Documento Nacional de Identidad 
 - Registro Nacional de las Personas 
 - Identidad 
@@ -114,15 +114,15 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="more-on-confidence-levels"></a>信頼度の詳細
 
-機密情報の種類のエンティティ定義では、信頼度は、プライマリ要素に加えて検出されるサポート証拠の量を反映します。 アイテムに含まれる証拠が多いほど、一致するアイテムに必要な機密情報が含まれているという信頼度が高くなります。 たとえば、信頼度の高い一致では、主要素の近くに多くのサポート証拠が含まれるのに対し、信頼度の低い一致では、近くにはほとんど、または何もサポート証拠が含めずに一致します。 
+機密情報の種類のエンティティ定義では、信頼度 **は** 、主要素に加えて検出される証拠の量を反映します。 アイテムに含まれる証拠が多いほど、一致するアイテムに探している機密情報が含まれているという信頼性が高くなります。 たとえば、信頼度が高い一致には、主要要素の近接性に関するより多くの証拠が含まれるのに対し、信頼度が低い一致には、近接する証拠はほとんど含めず、サポート証拠もほとんど含めずになります。 
 
-信頼度が高い場合は、最も少ない誤検知が返されますが、誤検知の数が多い場合があります。 低または中程度の信頼度は、より多くの誤検知を返しますが、検出検出率はわずかからゼロまでです。
+高信頼度は、最も少ない誤検知を返しますが、より多くの誤検知が発生する可能性があります。 低または中程度の信頼度は、より多くの誤検知を返しますが、偽陰性を返す値は少なから 0 です。
 
-- **低信頼** 度 : 値 65、一致したアイテムに含まれる検出検出は最も少なく、誤検知は最も少ない。  
-- **中程度の** 信頼度 : 値 75、一致したアイテムには、平均量の誤検知と検出検出が含まれます。  
-- **高信頼** 度 : 値 85、一致したアイテムには、最も少ない誤検知が含まれますが、最も検出された検出は最も少ない。  
+- **低信頼** 度 : 値が 65 の場合、一致するアイテムには最も少ない偽陰性が含まれますが、最も誤検知が発生します。 低信頼度は、すべての低、中、および高信頼度の一致を返します。
+- **中程度の** 信頼度 : 値が 75 の場合、一致するアイテムには平均的な量の誤検知と偽陰性が含まれます。 中程度の信頼度は、すべての中程度と高信頼度の一致を返します。  
+- **高信頼**: 値が 85 の場合、一致するアイテムには、最も少ない誤検知が含まれますが、最も誤った負の値が含まれます。 高信頼は、高信頼度の一致のみを返します。  
 
-高信頼度パターンは、低カウント (5 ~ 10) と高いカウントを持つ低信頼度パターン (20 以上) を使用する必要があります。
+高信頼度レベルのパターンは、5 ~ 10 と低い信頼度パターンと、20 以上の高信頼度パターンを使用する必要があります。
 
 ## <a name="creating-custom-sensitive-information-types"></a>カスタムの機密情報の種類を作成する
 
@@ -137,7 +137,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 
 > [!NOTE]
-> 信頼度の向上は、Microsoft 365 サービスのデータ損失防止、Microsoft 365 サービスの Microsoft Information Protection、通信コンプライアンス、情報ガバナンス、およびレコード管理ですぐに使用できます。
+> Microsoft 365 サービスのデータ損失防止、Microsoft 365 サービスの Microsoft Information Protection、コミュニケーション コンプライアンス、情報ガバナンス、およびレコード管理内で、信頼性レベルの向上がすぐに使用できます。
 
 > Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。
 > - 中国語 (簡体字)
@@ -147,9 +147,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 >このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
 
-## <a name="for-further-information"></a>詳細については、以下を参照してください。
+## <a name="for-further-information"></a>詳細については、次の情報を参照してください。
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
-- [PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [PowerShell でカスタム機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

@@ -1,8 +1,8 @@
 ---
-title: オーストラリアの支払い情報
-author: cmcatee-MSFT
+title: オーストラリアのお支払い情報
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,23 +13,33 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66aaf084da0cd86fd379f2b667e37cbac3192565
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0dc0d574e07868cd01e491f9e4d1ad28e42b9c8d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637969"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407028"
 ---
-# <a name="payment-information-for-australia"></a>オーストラリアの支払い情報
+# <a name="payment-information-for-australia"></a>オーストラリアのお支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-AUD のみに支払い、請求書の送金に請求書番号を参照してください。
+## <a name="electronic-funds-transfer"></a>電子決済
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+**AUD で支払いを行い、支払い送金の請求書番号を参照してください。**
 
-**Bank:** Citibank、シドニー  
-**SWIFT コード:** CITIAU2X  
-**Bsb コード:** 242000  
-**アカウント番号:** 205565043  
-**アカウント名:** MICROSOFT 地域販売企業  
+Microsoft Regional **Sales Pte Ltd** が請求する請求書がある場合は、次の銀行情報を使用します。
+
+Bank: Citibank, Sydney\
+SWIFT コード: CITIAU2X\
+BSB コード: 242000\
+アカウント番号: 205565043\
+アカウント名: MICROSOFT
+
+2021 年 3 月 1 日から注文と消費に対して **Microsoft Pty Ltd** から請求された請求書がある場合は、次の銀行情報を使用します。
+
+Bank: Citibank, N.A. シドニー\
+SWIFT コード: CITIAU2X\
+BSB コード: 248053\
+アカウント番号: 100001074\
+アカウント名: MICROSOFT

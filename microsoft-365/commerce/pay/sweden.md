@@ -1,8 +1,8 @@
 ---
-title: スウェーデンの支払い情報
-author: cmcatee-MSFT
+title: スウェーデンのお支払い情報
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,24 +13,33 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d654d3797340876d359bccc8279e2021a1f2a6be
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a448b11156770dac5cfe0d273fc75183a5aca8fd
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648433"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405751"
 ---
-# <a name="payment-information-for-sweden"></a>スウェーデンの支払い情報
+# <a name="payment-information-for-sweden"></a>スウェーデンのお支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-SEK のみで支払いを行い、請求書番号を参照してください。
+## <a name="electronic-funds-transfer"></a>電子決済
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+**SEK で支払いを行い、支払い送金の請求書番号を参照してください。**
 
-**Bank:** Citibank、London  
-**SWIFT コード/BIC:** CITIGB2L  
-**IBAN:** GB22CITI18500812207656  
-**並べ替えコード:** 185008  
-**アカウント番号:** 12207656  
-**アカウント名:** 製 
+Microsoft Ireland Operations **Limited** が請求する請求書がある場合は、次の銀行情報を使用します。
+
+Bank: Citibank, London\
+SWIFT コード: CITIGB2L\
+IBAN コード: GB22CITI18500812207656\
+アカウント番号: 12207656\
+アカウント名: MICROSOFT
+
+2021 年 3 月 1 日から注文と消費に対して **Microsoft AB** によって請求された請求書がある場合は、次の銀行情報を使用します。
+
+Bank: Citibank Europe plc\
+SWIFT コード: CITIIE2X\
+IBAN コード: IE86CITI99005170000131\
+アカウント番号: 70000131\
+アカウント名: MICROSOFT

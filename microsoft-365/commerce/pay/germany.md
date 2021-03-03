@@ -1,8 +1,8 @@
 ---
 title: ドイツの支払い情報
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,24 +13,34 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 921f0075fe2f6ce1f27c24ecde5397c9d12a1f58
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a5ef9ea32262f323adc76163af54411514820570
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647485"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405786"
 ---
 # <a name="payment-information-for-germany"></a>ドイツの支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-EUR のみに支払い、請求書番号を参照してください。
+## <a name="electronic-funds-transfer"></a>電子決済
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+**お支払いは、お支払い送金時に EUR で支払い、請求書番号を参照してください。**
 
-**Bank:** Citibank、London  
-**SWIFT コード/BIC:** CITIGB2L  
-**IBAN:** GB31CITI18500812207591  
-**並べ替えコード:** 185008  
-**アカウント番号:** 12207591  
-**アカウント名:** 製 
+Microsoft Ireland Operations **Limited** が請求する請求書がある場合は、次の銀行情報を使用します。
+
+Bank: Citibank, London\
+SWIFT コード: CITIGB2L\
+IBAN コード: GB31CITI18500812207591\
+SORT コード: 185008\
+アカウント番号: 12207591\
+アカウント名: MICROSOFT
+
+2021 年 3 月 1 日から注文と消費に対して **Microsoft Deutschland GmbH** によって請求される請求書がある場合は、次の銀行情報を使用します。
+
+Bank: Citibank Europe plc\
+SWIFT コード: CITIIE2X\
+IBAN コード: IE38CITI99005170000122\
+アカウント番号: 70000122\
+アカウント名: MICROSOFT

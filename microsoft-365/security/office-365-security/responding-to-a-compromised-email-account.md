@@ -20,12 +20,12 @@ search.appverid:
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288611"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406726"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
@@ -203,7 +203,7 @@ Microsoft 365 サブスクリプションには、データとユーザーを保
 
 - [Microsoft 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
 
-- [米国インターネット犯罪苦情センター](https://www.ic3.gov/preventiontips.aspx)
+- [米国インターネット犯罪苦情センター](https://www.ic3.gov/Home/Ransomware)
 
 - [米国証券取引委員会 - "フィッシング" 詐欺](https://www.sec.gov/investor/pubs/phishing.htm)
 
