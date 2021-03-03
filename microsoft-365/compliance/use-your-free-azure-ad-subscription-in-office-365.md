@@ -46,10 +46,10 @@ ms.locfileid: "46528153"
 
     **Azure Active Directory** 管理センターが表示されます。
 
-## <a name="more-information"></a>More information
+## <a name="more-information"></a>詳細情報
 
 - 無料の Azure Active Directory サブスクリプションには、サインイン アクティビティのレポートは含まれません。 (データ侵害の際に役立つ可能性がある) サインイン アクティビティを記録するには、Azure Active Directory Premium サブスクリプションが必要です。 詳細については、[Azure AD がデータを保存する期間](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)を参照してください。
 
-- Microsoft 365 管理センターから ** Azure Active Directory** 管理センターにアクセスすることもできます。 Microsoft 365 管理センターの左側のナビゲーションウィンドウで、[**管理センター**]、[\>** Azure Active Directory**] の順にクリックします。
+- Microsoft 365 管理センターから **Azure Active Directory** 管理センターにアクセスすることもできます。 Microsoft 365 管理センターの左側のナビゲーションウィンドウで、[**管理センター**]、\>[**Azure Active Directory**] の順にクリックします。
 
 - ユーザーとグループの管理や、その他のディレクトリ管理タスクの実行の詳細については、「[Azure AD Directory の管理](https://docs.microsoft.com/azure/active-directory/active-directory-administer)」を参照してください。
