@@ -1,12 +1,12 @@
-- name: Microsoft Viva の使用を開始する
+- name: Microsoft Viva トピック
+  href: index.md
+- name: Microsoft Viva トピックの使用を開始する
   items:
-    - name: Microsoft Viva について
-      href: index.md
-    - name: Microsoft Viva の概要
+    - name: Microsoft Viva トピックの概要
       href: topic-experiences-overview.md
-    - name: Microsoft Viva の検出とキュレーション
+    - name: Microsoft Viva トピックの発見とキュレーション
       href: topic-experiences-discovery-curation.md
-    - name: Microsoft Viva のロール
+    - name: Microsoft Viva トピックのロール
       href: topic-experiences-roles.md
     - name: ユーザー環境の準備を行う
       href: topic-experiences-get-ready.md
@@ -28,6 +28,8 @@
       href: topic-experiences-administration.md
 - name: トピックを操作する
   items:
+    - name: Viva トピックの使用を開始する
+      href: get-started-with-viva-topics.md
     - name: トピック センターの概要
       href: topic-center-overview.md
     - name: トピック センターでトピックを管理する
