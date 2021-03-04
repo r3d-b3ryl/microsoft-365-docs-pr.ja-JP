@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: 概要
   items:
     - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
@@ -237,6 +237,8 @@
               href: data-loss-prevention-policies.md
             - name: エンドポイント データ損失防止について
               href: endpoint-dlp-learn-about.md
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) についての詳細情報
+              href: dlp-on-premises-scanner-learn.md
         - name: DLP の使用を開始する
           items:
             - name: 既定の DLP ポリシーの使用を開始する
@@ -245,6 +247,8 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: DLP ポリシーの作成、テスト、調整
               href: create-test-tune-dlp-policy.md
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) の使用を開始する
+              href: dlp-on-premises-scanner-get-started.md
             - name: エンドポイント データ損失防止を開始する
               href: endpoint-dlp-getting-started.md
             - name: エンドポイント DLP のデバイス プロキシとインターネット接続の構成
@@ -269,6 +273,8 @@
               href: dlp-microsoft-teams.md
             - name: エンドポイント データ損失防止の使用
               href: endpoint-dlp-using.md
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) を使用する
+              href: dlp-on-premises-scanner-use.md
             - name: DLP ポリシーで通知とポリシー ヒントを使用する
               href: use-notifications-and-policy-tips.md
             - name: DLP ポリシー テンプレートに含まれるもの
