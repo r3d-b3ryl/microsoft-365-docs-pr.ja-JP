@@ -9,42 +9,40 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 会社のファイルを SharePoint に移動する方法について説明します。
-ms.openlocfilehash: 7e95e09dda5d2cd7131093e98d2965a55b42cd0a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ab19fed6f0ebe473cbe8493ceebc5f4ca7dc9a8f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927156"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422713"
 ---
-# <a name="move-files-to-sharepoint"></a><span data-ttu-id="0675c-103">ファイルを SharePoint に移動する</span><span class="sxs-lookup"><span data-stu-id="0675c-103">Move files to SharePoint</span></span>
+# <a name="move-files-to-sharepoint"></a><span data-ttu-id="81d41-103">ファイルを SharePoint に移動する</span><span class="sxs-lookup"><span data-stu-id="81d41-103">Move files to SharePoint</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/65ec460e-296c-458f-b004-906756dfb3d0?autoplay=false]
 
-<span data-ttu-id="0675c-104">Microsoft 365 Business Premium にサインアップすると、会社&#39;ファイルを SharePoint にコピーする必要があります。</span><span class="sxs-lookup"><span data-stu-id="0675c-104">After you sign up for Microsoft 365 Business Premium, you&#39;ll want to copy your company work files to SharePoint.</span></span> <span data-ttu-id="0675c-105">SharePoint は、すべてのユーザーがアクセスする必要がある会社の共有ファイルを保存する場合に便利な場所です。</span><span class="sxs-lookup"><span data-stu-id="0675c-105">SharePoint is a good place to store shared company files that everyone needs access to.</span></span> <span data-ttu-id="0675c-106">これは通常、ファイル共有またはネットワーク ドライブの使用に代わるものです。</span><span class="sxs-lookup"><span data-stu-id="0675c-106">This typically replaces the use of a file share or network drive.</span></span>
+<span data-ttu-id="81d41-104">Microsoft 365 Business Premium にサインアップした後、会社&#39;を SharePoint にコピーする必要があります。</span><span class="sxs-lookup"><span data-stu-id="81d41-104">After you sign up for Microsoft 365 Business Premium, you&#39;ll want to copy your company work files to SharePoint.</span></span> <span data-ttu-id="81d41-105">SharePoint は、すべてのユーザーがアクセスする必要がある共有会社のファイルを保存する場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="81d41-105">SharePoint is a good place to store shared company files that everyone needs access to.</span></span> <span data-ttu-id="81d41-106">これは通常、ファイル共有またはネットワーク ドライブの使用を置き換える。</span><span class="sxs-lookup"><span data-stu-id="81d41-106">This typically replaces the use of a file share or network drive.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="0675c-107">演習</span><span class="sxs-lookup"><span data-stu-id="0675c-107">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="81d41-107">演習</span><span class="sxs-lookup"><span data-stu-id="81d41-107">Try it!</span></span>
 
-1. <span data-ttu-id="0675c-108">Microsoft Teams を開き、ビジネスのすべてのユーザーがアクセスできるチームを開きます。</span><span class="sxs-lookup"><span data-stu-id="0675c-108">Open Microsoft Teams, and then open a team that everyone in your business has access to.</span></span>
-2. <span data-ttu-id="0675c-109">[  **ファイル] を** 選択し  **、[SharePoint で開く] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="0675c-109">Select  **Files** , and then select  **Open in SharePoint**.</span></span>
-3. <span data-ttu-id="0675c-110">[  **ドキュメント] を** 選択して、すべてがサイトに保存されている場所に移動します。</span><span class="sxs-lookup"><span data-stu-id="0675c-110">Select  **Documents** to go to the location where everything is stored on the site.</span></span>
-4. <span data-ttu-id="0675c-111">[同期  **] を** 選択し、[はい] を  **選択します**。</span><span class="sxs-lookup"><span data-stu-id="0675c-111">Select  **Sync** , and then select  **Yes**.</span></span> <span data-ttu-id="0675c-112">これにより、SharePoint サイトのファイルがコンピューターに同期されます。</span><span class="sxs-lookup"><span data-stu-id="0675c-112">This synchronizes the files of the SharePoint site to your computer.</span></span>
-5. <span data-ttu-id="0675c-113">エクスプローラーで、会社&#39;SharePoint サイトから同期されたドキュメント フォルダー&#39;表示されます。</span><span class="sxs-lookup"><span data-stu-id="0675c-113">In File Explorer, you&#39;ll now see the synced documents folder from your company&#39;s SharePoint site.</span></span> <span data-ttu-id="0675c-114">追加の SharePoint サイトを同期すると、そのサイトは、このサイトの上または下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="0675c-114">If you synchronize additional SharePoint sites, they will show up above or below this one.</span></span> <span data-ttu-id="0675c-115">同期されたドキュメント フォルダーを右クリックし、新しいウィンドウで開いて、移動する会社のファイルと並べて表示します。</span><span class="sxs-lookup"><span data-stu-id="0675c-115">Right-click the synced documents folder, and open it in a new window to see it side by side with the company files you want to move.</span></span>
-6. <span data-ttu-id="0675c-116">移動するファイルを選択し、同期した SharePoint フォルダーにドラッグします。</span><span class="sxs-lookup"><span data-stu-id="0675c-116">Select all the files you want to move, and then drag them to your synced SharePoint folder.</span></span> <span data-ttu-id="0675c-117">ファイルの横にある青い円形の矢印は、SharePoint&#39;同期が取り付けられていることを意味します。</span><span class="sxs-lookup"><span data-stu-id="0675c-117">Blue circular arrows beside your files mean that they&#39;re syncing to the SharePoint site.</span></span> <span data-ttu-id="0675c-118">同期が&#39;完了すると、緑色のチェック マークが表示されます。</span><span class="sxs-lookup"><span data-stu-id="0675c-118">When they&#39;re done syncing, green check marks are displayed.</span></span>
-7. <span data-ttu-id="0675c-119">SharePoint サイトに戻り、クラウドに同期されたファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="0675c-119">Return to your SharePoint site to see the files that have synced to the cloud.</span></span>
+1. <span data-ttu-id="81d41-108">Microsoft Teams を開き、ビジネスのすべてのユーザーがアクセスできるチームを開きます。</span><span class="sxs-lookup"><span data-stu-id="81d41-108">Open Microsoft Teams, and then open a team that everyone in your business has access to.</span></span>
+2. <span data-ttu-id="81d41-109">[ファイル  **] を** 選択し  **、[SharePoint で開く] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="81d41-109">Select  **Files** , and then select  **Open in SharePoint**.</span></span>
+3. <span data-ttu-id="81d41-110">[  **ドキュメント] を** 選択して、すべてがサイトに保存されている場所に移動します。</span><span class="sxs-lookup"><span data-stu-id="81d41-110">Select  **Documents** to go to the location where everything is stored on the site.</span></span>
+4. <span data-ttu-id="81d41-111">[同期  **] を** 選択し、[はい]  **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="81d41-111">Select  **Sync** , and then select  **Yes**.</span></span> <span data-ttu-id="81d41-112">これにより、SharePoint サイトのファイルがコンピューターに同期されます。</span><span class="sxs-lookup"><span data-stu-id="81d41-112">This synchronizes the files of the SharePoint site to your computer.</span></span>
+5. <span data-ttu-id="81d41-113">エクスプローラーで、会社&#39;SharePoint サイトから同期されたドキュメント フォルダー&#39;表示されます。</span><span class="sxs-lookup"><span data-stu-id="81d41-113">In File Explorer, you&#39;ll now see the synced documents folder from your company&#39;s SharePoint site.</span></span> <span data-ttu-id="81d41-114">追加の SharePoint サイトを同期すると、このサイトの上または下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="81d41-114">If you synchronize additional SharePoint sites, they will show up above or below this one.</span></span> <span data-ttu-id="81d41-115">同期されたドキュメント フォルダーを右クリックし、新しいウィンドウで開いて、移動する会社のファイルと並べて表示します。</span><span class="sxs-lookup"><span data-stu-id="81d41-115">Right-click the synced documents folder, and open it in a new window to see it side by side with the company files you want to move.</span></span>
+6. <span data-ttu-id="81d41-116">移動するファイルを選択し、同期した SharePoint フォルダーにドラッグします。</span><span class="sxs-lookup"><span data-stu-id="81d41-116">Select all the files you want to move, and then drag them to your synced SharePoint folder.</span></span> <span data-ttu-id="81d41-117">ファイルの横にある青い円形の矢印は、SharePoint サイト&#39;同期する必要があるという意味です。</span><span class="sxs-lookup"><span data-stu-id="81d41-117">Blue circular arrows beside your files mean that they&#39;re syncing to the SharePoint site.</span></span> <span data-ttu-id="81d41-118">同期が&#39;完了すると、緑色のチェック マークが表示されます。</span><span class="sxs-lookup"><span data-stu-id="81d41-118">When they&#39;re done syncing, green check marks are displayed.</span></span>
+7. <span data-ttu-id="81d41-119">SharePoint サイトに戻り、クラウドに同期されたファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="81d41-119">Return to your SharePoint site to see the files that have synced to the cloud.</span></span>
 
-<span data-ttu-id="0675c-120">ファイルをコンピューターから直接操作する以外に、任意のコンピューターの Web ブラウザーでファイルにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="0675c-120">In addition to working on your files directly from your computer, you can access them in a web browser on any computer.</span></span>
+<span data-ttu-id="81d41-120">コンピューターから直接ファイルを操作する以外に、任意のコンピューター上の Web ブラウザーでファイルにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="81d41-120">In addition to working on your files directly from your computer, you can access them in a web browser on any computer.</span></span>
 
-<span data-ttu-id="0675c-121">これで、SharePoint サイトまたは Teams からファイルにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="0675c-121">You can now access your files from your SharePoint site or Teams.</span></span>
+<span data-ttu-id="81d41-121">SharePoint サイトまたは Teams からファイルにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="81d41-121">You can now access your files from your SharePoint site or Teams.</span></span>
