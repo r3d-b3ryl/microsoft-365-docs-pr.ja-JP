@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Windows 10 Home を Windows 10 Pro にアップグレードする方法について学習します。
-ms.openlocfilehash: 3f775130728eb6f00b1adb008c697fb84254827b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3e4d1e5220399ff2cfa25102cada165b25bc53ba
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927756"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421753"
 ---
 # <a name="upgrade-from-windows-10-home-to-windows-10-pro"></a>Windows 10 Home から Windows 10 Pro へのアップグレード
 
@@ -35,12 +33,12 @@ ms.locfileid: "49927756"
 
 ## <a name="try-it"></a>演習
 
-Microsoft 365 Business では、データをセキュリティで保護するために Windows 10 Pro が必要です。 Windows 10 Home を実行しているコンピューターがある場合は、次の手順に従って Windows 10 Pro にアップグレードします。
+Microsoft 365 ビジネスでは、データのセキュリティ保護に役立つ Windows 10 Pro が必要です。 Windows 10 Home を実行しているコンピューターがある場合は、次の手順に従って Windows 10 Pro にアップグレードします。
 
-1. デスクトップからスタート メニューを **選択し****、Microsoft Store を検索** して選択します。
-2. Microsoft Store で検索バーをクリックし  **、「Windows 10 Pro」** と入力し  **、[Windows 10 Pro** へのアップグレード] を選択します。
-3. [Windows  **10 Pro へのアップグレード]** で、[詳細] を選択し、[購入] を選択 **します**。
-4. Windows セキュリティ  **ボックスで、PIN**  を入力して ID を確認します。
-5. 支払いページを確認し、セール条件を読み、必要に合って支払い方法を変更し、[購入] を選択  **します**。
-6. [Windows  **10 Pro へのアップグレード] で、[** インストール] を  **選択します**。
-7. 必要に応じてファイルを保存し、[はい] を選択&#39;Windows のインストールを開始します。
+1. デスクトップから [スタート] メニュー  **を選択**  し  **、Microsoft Store** を検索して選択します。
+2. Microsoft Store で、[検索] バーをクリックし  **、「Windows 10 Pro」** と入力し  **、[Windows 10** Pro にアップグレードする] を選択します。
+3. [Windows  **10 Pro への** アップグレード] で、[詳細] を選択  **し** 、[購入] を  **選択します**。
+4. [Windows セキュリティ  **] ボックスに**  PIN を入力して、ID を確認します。
+5. 支払いページを確認し、販売条件を読み、必要に従って支払い方法を変更し、[購入] を選択  **します**。
+6. [Windows  **10 Pro へのアップグレード] で、[インストール** ] を  **選択します**。
+7. 必要に応じてファイルを保存し、[はい] を選択し  **、[Windows の&#39;**  を開始します。
