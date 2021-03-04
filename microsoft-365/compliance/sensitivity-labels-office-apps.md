@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: IT 管理者がデスクトップ、モバイル、および web 用のOfficeラベルを管理するための情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1834e1071c56e03ef20ae0e87b63fc4c03a6921b
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b7d3c436030c0db3faa7834ed0153396048c0ec6
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407307"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423688"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -64,8 +64,8 @@ Office iOS および Android Officeの場合: 感度ラベルは、アプリに 
 |[変数を含む動的なマーキング](#dynamic-markings-with-variables)                                              | 2010+           | 16.42 以上     | 2.42+ | 16.0.13328+ | レビュー中 |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上          | 16.21+     | 2.21以上 | 16.0.11231以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35 以上   | レビュー中   | レビュー中         | レビュー中                                                        |
-|[データ分類の開始と](data-classification-overview.md) 管理者向けデータの送信                      | 2011+ | 16.43+ | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider) | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider) | はい <sup>\*</sup>                                                        |
-|[ユーザーにメールとドキュメントへのラベルの適用を要求する](#require-users-to-apply-a-label-to-their-email-and-documents)   | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)             | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider)         | レビュー中   | 展開: 16.0.13628 以上 | レビュー中                                            
+|[データ分類の開始と](data-classification-overview.md) 管理者向けデータの送信                      | 2011+ | 16.43+ | 展開: 2.46 以上 | 展開: 16.0.13628 以上 | はい <sup>\*</sup>                                                        |
+|[ユーザーにメールとドキュメントへのラベルの適用を要求する](#require-users-to-apply-a-label-to-their-email-and-documents)   | 展開: 2101+             | 展開: 16.45 以上         | プレビューでの展開: [ベータ チャネル](https://office.com/insider) | 展開: 16.0.13628 以上 | レビュー中                                            
 |[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 展開: 16.44 以上 | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ラベル付きドキュメントと暗号化されたドキュメントの共同](sensitivity-labels-coauthoring.md) 編集と自動保存をサポートする | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider) | プレビュー: [ベータ チャネル](https://office.com/insider) | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -88,7 +88,7 @@ Office iOS および Android Officeの場合: 感度ラベルは、アプリに 
 |[変数を含む動的なマーキング](#dynamic-markings-with-variables)                                              | レビュー中                     | レビュー中                 | レビュー中         | レビュー中           | レビュー中               |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | はい               |
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21+                 | 4.7.1+         | 4.0.39+           | はい               |
-|[ユーザーにメールとドキュメントへのラベルの適用を要求する](#require-users-to-apply-a-label-to-their-email-and-documents)   | プレビュー:[現在のチャネル (プレビュー)](https://office.com/insider)                        | 16.43+ <sup>\*</sup>                    | レビュー中            | レビュー中                | はい                |
+|[ユーザーにメールとドキュメントへのラベルの適用を要求する](#require-users-to-apply-a-label-to-their-email-and-documents)   | 展開: 2101+                        | 16.43+ <sup>\*</sup>                    | レビュー中            | レビュー中                | はい                |
 |[データ分類の開始と](data-classification-overview.md) 管理者向けデータの送信                      | 2011+ | レビュー中 | レビュー中           | レビュー中               | レビュー中 |
 |[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | レビュー中           | レビュー中               | はい |
 |

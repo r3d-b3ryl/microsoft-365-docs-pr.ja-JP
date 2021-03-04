@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
-description: 管理者が Exchange Online PowerShell と CSV ファイルを使用して外部連絡先をグローバルアドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: 4d0b1a826583a032fd27c216367e99a6b7f8b371
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理者が Exchange Online PowerShell と CSV ファイルを使用して外部連絡先をグローバル アドレス一覧に一括インポートする方法について説明します。
+ms.openlocfilehash: 475afc3b0622c404b50ebe5549bb5be85af80c5e
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636345"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423254"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先を Exchange Online に一括インポートする
 
-**この記事は、管理者を対象としています。連絡先を自分のメールボックスにインポートしようとしていますか?「 [Outlook に連絡先をインポートする」を](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)参照してください。**
+**この記事は管理者向けです。連絡先を自分のメールボックスにインポートしようとしていますか?「連絡先 [を Outlook にインポートする」を参照してください。](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
-会社は、Exchange Online の共有アドレス帳 (グローバルアドレス一覧とも呼ばれます) に含める必要のある、多数の既存のビジネス用連絡先を所有していますか。 外部の連絡先を、社内のユーザーと同様に、配布グループのメンバーとして追加しますか。 その場合は、Exchange Online の PowerShell と CSV (コンマ区切り値) ファイルを使用して、外部連絡先を Exchange Online に一括インポートすることができます。 次の3つの手順からなるプロセスがあります。
+Exchange Online の共有アドレス帳 (グローバル アドレス一覧とも呼ばれる) に含める既存のビジネス連絡先が多数存在しますか。 外部連絡先を、会社内のユーザーと同じ方法で配布グループのメンバーとして追加しますか? その場合は、Exchange Online PowerShell と CSV (コンマ区切り値) ファイルを使用して、外部連絡先を Exchange Online に一括インポートできます。 これは 3 段階のプロセスです。
   
 [手順 1: 外部連絡先に関する情報を含む CSV ファイルを作成する](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
@@ -34,20 +34,20 @@ ms.locfileid: "43636345"
 
 [手順 3: 外部連絡先のプロパティに情報を追加する](#step-3-add-information-to-the-properties-of-the-external-contacts)
 
-連絡先をインポートするための手順を完了したら、次の追加のタスクを実行できます。
+連絡先をインポートするには、次の手順を完了したら、次の追加タスクを実行できます。
   
-- [外部連絡先を追加する](#add-more-external-contacts)
+- [外部連絡先の追加](#add-more-external-contacts)
   
 - [共有アドレス帳から外部連絡先を非表示にする](#hide-external-contacts-from-the-shared-address-book)
   
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-external-contacts"></a>手順 1: 外部連絡先に関する情報を含む CSV ファイルを作成する
 
-最初の手順として、Exchange Online にインポートする各外部連絡先に関する情報を含む CSV ファイルを作成します。 
+最初の手順は、Exchange Online にインポートする各外部連絡先に関する情報を含む CSV ファイルを作成することです。 
   
-1. 次のテキストをメモ帳のテキストファイルにコピーして、ファイル名サフィックス .csv を使用して、それを CSV ファイルとしてデスクトップに保存します。たとえば、ExternalContacts。
+1. 次のテキストを NotePad のテキスト ファイルにコピーし、デスクトップに .csv というファイル名のサフィックスを使用して CSV ファイルとして保存します。たとえば、ExternalContacts.csv。
     
     > [!TIP]
-    > 言語に特殊文字 ( **å**、 **ä**、 **ö**など) が含まれている場合は、メモ帳でファイルを保存するときに、CSV ファイルを Utf-8 またはその他の Unicode エンコードで保存します。 
+    > 言語に特殊文字 (スウェーデン語の å、ä、öなど) が含まれている場合は、メモパッドにファイルを保存するときに、csv ファイルを UTF-8 または他の Unicode エンコードで保存します。   
   
     ```text
     ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
@@ -55,55 +55,55 @@ ms.locfileid: "43636345"
     pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park
     ```
 
-    CSV ファイルの最初の行、つまりヘッダー行には、Exchange Online にインポートするときに使用できる連絡先のプロパティが一覧表示されます。 各プロパティ名はコンマで区切ります。 ヘッダー行の下の各行は、1つの外部連絡先をインポートするためのプロパティ値を表します。 
+    CSV ファイルの最初の行 (ヘッダー行) には、Exchange Online にインポートするときに使用できる連絡先のプロパティが一覧表示されます。 各プロパティ名はコンマで区切られます。 ヘッダー行の下の各行は、1 つの外部連絡先をインポートするプロパティ値を表します。 
     
     > [!NOTE]
-    > このテキストには、サンプルデータが含まれています。これは削除できます。 ただし、最初の (ヘッダー) 行を削除または変更しないでください。 これには、外部連絡先のすべてのプロパティが含まれています。 
+    > このテキストには、削除できるサンプル データが含まれています。 ただし、最初の (ヘッダー) 行を削除または変更しない。 外部連絡先のすべてのプロパティが含まれる。 
   
-2. Csv ファイルを編集するには、Excel を使用する方が簡単なため、Microsoft Excel で CSV ファイルを開いて編集してください。
+2. Excel を使用して CSV ファイルを編集する方がずっと簡単なので、Excel で CSV ファイルを開き、CSV ファイルを編集します。
     
-3. Exchange Online にインポートする連絡先ごとに行を作成します。 可能な限り多くのセルにデータを設定します。 この情報は、連絡先ごとに共有アドレス帳に表示されます。 
+3. Exchange Online にインポートする連絡先ごとに行を作成します。 可能な限り多くのセルを設定します。 この情報は、連絡先ごとに共有アドレス帳に表示されます。 
     
     > [!IMPORTANT]
-    >  外部連絡先を作成するには、次のプロパティ (見出し行の最初の4つの項目) が必要です。 **ExternalEmailAddress**、 **Name**、 **FIRSTNAME**、 **LastName**という CSV ファイルに設定する必要があります。 手順2で実行した PowerShell コマンドは、これらのプロパティの値を使用して連絡先を作成します。 
+    >  外部連絡先を作成するには、次のプロパティ (ヘッダー行の最初の 4 つの項目) が必要であり、CSV ファイルに入力する必要があります。 **ExternalEmailAddress**、 **Name**、 **FirstName**、 **LastName**。 手順 2 で実行する PowerShell コマンドは、これらのプロパティの値を使用して連絡先を作成します。 
 
 ## <a name="step-2-create-the-external-contacts-with-powershell"></a>手順 2: PowerShell を使用して外部連絡先を作成する
 
-次の手順では、手順1および PowerShell で作成した CSV ファイルを使用して、CSV ファイルに記載されている外部連絡先を Exchange Online に一括インポートします。 
+次の手順では、手順 1 と PowerShell で作成した CSV ファイルを使用して、CSV ファイルに一覧表示されている外部連絡先を Exchange Online に一括インポートします。 
   
-1.  PowerShell を Exchange Online 組織に接続します。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。 Exchange Online の PowerShell に接続するときは、全体管理者アカウントのユーザー名とパスワードを必ず使用してください。 
+1.  PowerShell を Exchange Online 組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 Exchange Online PowerShell に接続する場合は、グローバル管理者アカウントのユーザー名とパスワードを必ず使用してください。 
     
-2. PowerShell を Exchange Online に接続したら、手順1で CSV ファイルを保存したデスクトップフォルダーに移動します。例`C:\Users\Administrator\desktop`を示します。
+2. PowerShell を Exchange Online に接続した後、手順 1 で CSV ファイルを保存したデスクトップ フォルダーに移動します。たとえば `C:\Users\Administrator\desktop` .
     
-3. 外部連絡先を作成するには、次のコマンドを実行します。
+3. 次のコマンドを実行して、外部連絡先を作成します。
 
     ```powershell
     Import-Csv .\ExternalContacts.csv|%{New-MailContact -Name $_.Name -DisplayName $_.Name -ExternalEmailAddress $_.ExternalEmailAddress -FirstName $_.FirstName -LastName $_.LastName}
     ```
 
-    インポートしているユーザーの数によっては、新しい連絡先を作成するのに時間がかかる場合があります。 コマンドの実行が終了すると、作成された新しい連絡先の一覧が PowerShell に表示されます。 
+    インポートする数によっては、新しい連絡先の作成に時間がかかる場合があります。 コマンドの実行が完了すると、作成された新しい連絡先の一覧が表示されます。 
     
-4. 新しい外部連絡先を表示するには、Exchange 管理センター (EAC) に移動し、[**受信者** \>の**連絡先**] をクリックします。 
+4. 新しい外部連絡先を表示するには、Exchange 管理センター (EAC) に移動し、[受信者の連絡先] **を** \> **クリックします**。 
     
     > [!TIP]
-    > EAC への接続手順については、「exchange [Online の exchange 管理センター](https://go.microsoft.com/fwlink/p/?LinkId=328197)」を参照してください。 
+    > EAC に接続する手順については [、「Exchange Online の Exchange 管理センター」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=328197)。 
   
-5. 必要に応じて、[**更新**] をクリックしてリストを更新し、インポートされた外部連絡先を表示します。 
+5. 必要に応じて、[ **更新]** をクリックしてリストを更新し、インポートされた外部連絡先を確認します。 
     
-    インポートされた連絡先は、Outlook および web 上の Outlook の共有アドレス帳に表示されます。
+    インポートされた連絡先は、Outlook と Outlook on the web の共有アドレス帳に表示されます。
     
     > [!NOTE]
-    > [**ユーザー** \>の**連絡先**] にアクセスして、Microsoft 365 管理センターで連絡先を表示することもできます。 
+    > [ユーザーの連絡先] に移動して、Microsoft 365 管理センターで連絡先 **を表示** \> **できます**。 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>手順 3: 外部連絡先のプロパティに情報を追加する
 
-手順2でコマンドを実行した後、外部連絡先は作成されますが、CSV ファイル内のほとんどのセルからの情報である連絡先または組織の情報は含まれません。 これは、新しい外部連絡先を作成したときに、必要なプロパティだけが設定されるためです。 CSV ファイルに情報が入力されていない場合は、心配しないでください。 含まれていない場合は追加されません。
+手順 2 でコマンドを実行すると、外部連絡先が作成されますが、連絡先または組織の情報 (CSV ファイル内のほとんどのセルからの情報) は含めされません。 これは、新しい外部連絡先を作成すると、必要なプロパティだけが設定されるためです。 CSV ファイルにすべての情報が入力されている必要が無い場合は、ご安心ください。 それがない場合は、追加されません。
   
-1.  PowerShell を Exchange Online 組織に接続します。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。
+1.  PowerShell を Exchange Online 組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
     
-2. 手順1で CSV ファイルを保存したデスクトップフォルダーに移動します。たとえば、 `C:\Users\Administrator\desktop`のようになります。
+2. 手順 1 で CSV ファイルを保存したデスクトップ フォルダーに移動します。たとえば、 `C:\Users\Administrator\desktop` .
     
-3. 次の2つのコマンドを実行して、CSV ファイルの他のプロパティを手順2で作成した外部連絡先に追加します。
+3. 次の 2 つのコマンドを実行して、CSV ファイルから手順 2 で作成した外部連絡先に他のプロパティを追加します。
     
     ```powershell
     $Contacts = Import-CSV .\ExternalContacts.csv
@@ -115,47 +115,47 @@ ms.locfileid: "43636345"
     ```
 
     > [!NOTE]
-    > _Manager_パラメーターに問題がある可能性があります。 CSV ファイル内のセルが空白の場合は、エラーが発生し、プロパティ情報が連絡先に追加されません。 マネージャーを指定する必要がない場合は、前の` -Manager $_.Manager ` PowerShell コマンドからのみ削除してください。 
+    > _Manager パラメーターが_ 問題になる可能性があります。 CSV ファイル内のセルが空白の場合、エラーが発生し、連絡先にプロパティ情報は追加されません。 マネージャーを指定する必要がない場合は、前の  ` -Manager $_.Manager ` PowerShell コマンドから削除してください。 
   
-    手順1でインポートした回数に応じて、連絡先を更新するのに時間がかかる場合があります。 
+    繰り返しますが、手順 1 でインポートした数に応じて、連絡先の更新に時間がかかる場合があります。 
     
-4. プロパティが連絡先に追加されたことを確認するには、次のようにします。 
+4. 連絡先にプロパティが追加されたと確認するには、次の手順を実行します。 
     
-1. EAC で、[**受信者** \>の**連絡先**] に移動します。
+1. EAC で、[受信者の連絡先 **] に** \> **移動します**。
     
-2. 連絡先をクリックし **、[編集** ![] 編集](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)アイコンをクリックして、連絡先のプロパティを表示します。 
+2. 連絡先をクリックし、[編集 **]** アイコン ![ をクリック ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) して連絡先のプロパティを表示します。 
     
-するだけです。 ユーザーは、アドレス帳 Outlook および Outlook on the web の連絡先とその他の情報を表示できます。
+手順は以上です。 ユーザーは、連絡先と追加情報をアドレス帳 Outlook と Outlook on the web で確認できます。
   
-## <a name="add-more-external-contacts"></a>外部連絡先を追加する
+## <a name="add-more-external-contacts"></a>外部連絡先の追加
 
-手順1から手順3を繰り返して、Exchange Online に新しい外部連絡先を追加することができます。 会社内のユーザーは、新しい連絡先の CSV ファイルに新しい行を追加するだけで済みます。 その後、手順2と手順3の PowerShell コマンドを実行して、新しい連絡先に情報を作成して追加することができます。
+手順 1 ~ 手順 3 を繰り返して、Exchange Online に新しい外部連絡先を追加できます。 会社のユーザーは、新しい連絡先の CSV ファイルに新しい行を追加できます。 次に、手順 2 と手順 3 の PowerShell コマンドを実行して、新しい連絡先に情報を作成して追加できます。
   
 > [!NOTE]
-> 新しい連絡先を作成するコマンドを実行すると、以前に作成した連絡先が既に存在するというエラーが表示されることがあります。 ただし、CSV ファイルに追加された新しい連絡先は作成されます。 
+> コマンドを実行して新しい連絡先を作成すると、以前に作成された連絡先が既に存在しているというエラーが表示される場合があります。 ただし、CSV ファイルに追加された新しい連絡先が作成されます。 
   
-## <a name="hide-external-contacts-from-the-shared-address-book"></a>共有アドレス帳から外部連絡先を非表示にする>
+## <a name="hide-external-contacts-from-the-shared-address-book"></a>共有アドレス帳から外部連絡先を非表示>
 
-一部の企業では、配布グループのメンバーとして追加できるように外部連絡先のみを使用する場合があります。 このシナリオでは、共有アドレス帳から外部連絡先を非表示にすることができます。 次の操作を実行してください。
+一部の企業では、外部連絡先のみを使用して、配布グループのメンバーとして追加できます。 このシナリオでは、共有アドレス帳から外部連絡先を非表示にできます。 次の操作を実行してください。
   
-1.  PowerShell を Exchange Online 組織に接続します。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。
+1.  PowerShell を Exchange Online 組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
     
-2. 単一の外部連絡先を非表示にするには、次のコマンドを実行します。
+2. 1 つの外部連絡先を非表示にするには、次のコマンドを実行します。
     
     ```powershell
     Set-MailContact <external contact> -HiddenFromAddressListsEnabled $true 
     ```
 
-    たとえば、共有アドレス帳から Pilar Pinilla を非表示にするには、次のコマンドを実行します。
+    たとえば、共有アドレス帳から Pilar Pinilla を非表示にする場合は、次のコマンドを実行します。
 
     ```powershell
     Set-MailContact "Pilar Pinilla" -HiddenFromAddressListsEnabled $true
     ```
 
-3. 共有アドレス帳からすべての外部連絡先を非表示にするには、次のコマンドを実行します。
+3. 共有アドレス帳からすべての外部連絡先を非表示にする場合は、次のコマンドを実行します。
 
     ```powershell
     Get-Contact -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailContact')} | Set-MailContact -HiddenFromAddressListsEnabled $true  
     ```
 
-非表示にした後も、外部の連絡先は共有アドレス帳に表示されませんが、配布グループのメンバーとして追加できます。
+非表示にした後、外部連絡先は共有アドレス帳に表示されませんが、配布グループのメンバーとして追加できます。
