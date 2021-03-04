@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: アプリをインストールする方法Microsoft Officeします。
-ms.openlocfilehash: abbeb8fdaa36956014ef955f853616cdb7d4e83c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: アプリをインストールするMicrosoft Officeします。
+ms.openlocfilehash: c4df808f366095c5e0d21d177bb40bcff56488cd
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925016"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422509"
 ---
 # <a name="install-office-apps"></a>Office アプリのインストール 
 
@@ -35,12 +33,12 @@ ms.locfileid: "49925016"
 
 ## <a name="try-it"></a>演習
 
-Microsoft Officeスタート メニューにアプリが  **表示** されます。 表示&#39;場合は、自分でインストールできます。
+Microsoft Officeスタート メニューに **アプリがあります。** 表示しない&#39;、自分でインストールできます。
 
-1. [次のoffice.com。 仕事用アカウントでサインインする必要がある場合があります。
-2. [Microsoft    >   **365 Office実行]** を選択し、[はい]   >   を選択 **します**。
-3. 次Officeアプリがインストールされます。 プロセスには数分かかる場合があります。 完了したら、[閉じる] を  **選択します**。
-4. Microsoft Teams をインストールするには、次のページoffice.com Teams を選択  **します**。
-5. Windows アプリを取得し、[実行] を選択  **します**。 インストールが完了すると、Teams にプロンプトが表示されます。
+1. [次へ] office.com。 作業用アカウントでサインインする必要がある場合があります。
+2. [Microsoft    >   **365 Office実行]** の順に選択し、[は   >   い] を **選択します**。
+3. アプリOfficeインストールされます。 プロセスには数分かかる場合があります。 完了したら、[閉じる] を  **選択します**。
+4. Microsoft Teams をインストールするには、[チーム] ページに移動office.com Teams を選択  **します**。
+5. Windows アプリを取得し、[実行] を  **選択します**。 インストールが完了すると、Teams にプロンプトが表示されます。
 
-インストールOfficeアプリがスタート メニューに  **表示** されます。
+インストールOfficeアプリが [スタート] メニューに  **表示** されます。

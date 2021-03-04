@@ -1,5 +1,5 @@
 ---
-title: 利用状況レポートを確認する
+title: 使用状況レポートの確認
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -9,40 +9,38 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 利用状況レポートの情報を使用する方法について学習します。
-ms.openlocfilehash: e69362a9190eda71cd7ab42fb404b6e715a5c48e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 使用状況レポートの情報を使用する方法について学習します。
+ms.openlocfilehash: 579d47515f57dfc3211a6e76a6d791999f6b5efc
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927684"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423191"
 ---
-# <a name="review-usage-reports-in-microsoft-365"></a>Microsoft 365 の利用状況レポートを確認する
+# <a name="review-usage-reports-in-microsoft-365"></a>Microsoft 365 での使用状況レポートの確認
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 
-従業員がメールや OneDrive などの Microsoft 365 サービスを使用している方法を確認し、アクションを実行します。
+従業員が電子メールや OneDrive などの Microsoft 365 サービスを使用している方法を確認し、アクションを実行します。
 
-管理センター [で、](https://admin.microsoft.com)利用可能なすべてのレポートを表示できます。
+管理センター [では、](https://admin.microsoft.com)利用可能なすべてのレポートを確認できます。
 
 ## <a name="try-it"></a>演習
 
-1. [レポート] **に移動し**、[使用状況] **をクリックします**。 レポートを選択して、レポートの詳細を検索します。 [アクティブ ユーザー] レポートには、企業内のユーザーが最も使用しているサービスが表示されます。
-1. 例として、先に進み、OneDrive レポートを見てみしましょう。 ここでは、アカウントを持つユーザーの数を確認できます。また、合計ファイル数とアクティブファイル数、および使用されているストレージを表示することもできます。 他のすべてのレポートを表示するには、ドロップダウン メニューに移動します。
-1. ここでは、メール アプリの使用状況レポートを確認し、従業員がメールへのアクセスに最も多く使用する方法を確認できます。 また、個人に固有の情報を表示できますが、詳細は既定で非表示になっています。 個々のユーザーの詳細を表示するには、[設定] に移動し、[サービス] &**アドインに移動します**。
-1. レポート パネルで、匿名識別子を有効にできます。 パネルを閉じて、[レポート]、[使用状況]、および[電子メール] アクティビティに **戻しましょう**。 ここでは、個人に固有の情報を確認できます。
+1. [レポート] **に移動し**、[利用状況] **に移動します**。 レポートを選択して、レポートの詳細を検索します。 [アクティブ ユーザー] レポートには、ビジネスのユーザーが最も使用しているサービスが表示されます。
+1. 例として、先に進んで OneDrive レポートを確認します。 ここでは、アカウントを持つユーザーの数を確認できます。合計ファイルとアクティブ ファイルの数、および使用されるストレージも表示できます。 他のすべてのレポートを表示するには、ドロップダウン メニューに移動します。
+1. ここでは、メール アプリの利用状況レポートを確認し、従業員がメールに最も多くアクセスする方法を確認できます。 また、個人に固有の情報を表示できますが、詳細は既定で非表示になっています。 個々のユーザーの詳細を表示するには、[設定] に移動し、[サービス] &**アドインに移動します**。
+1. レポート パネルで、匿名識別子を有効にできます。 次に、パネルを閉じて[レポート]、[使用状況]、および [電子メール]**アクティビティに****戻ってきます**。 ここでは、個人に固有の情報を確認できます。
 
-    行き詰まった場合は、いつでもヘルプに戻って、表示している特定のレポートに関する情報を提供できます。
+    立ち往生した場合は、いつでもヘルプに戻って、表示している特定のレポートに関する情報を提供できます。

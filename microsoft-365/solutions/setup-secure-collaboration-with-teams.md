@@ -15,119 +15,193 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Teams でセキュリティで保護されたコンテンツのコラボレーションを設定して、データをその感度に基づいて保護する方法について学習します。
-ms.openlocfilehash: c92dc6dbf62d3fa0cb00307447b3d5a793830394
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+description: Teams でセキュリティで保護されたコンテンツコラボレーションをセットアップして、その感度に基づいてデータを保護する方法について学習します。
+ms.openlocfilehash: c7881328da2ef78d043b12db29f50b961d79b2cb
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233858"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423995"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Microsoft 365 とセキュリティで保護された共同作業を設定する
 
-適切なユーザーと情報を簡単に共有できる一方で、過剰な共有を防ぐことが、組織の成功の鍵となります。 これには、機密データにアクセスする必要があるユーザーとのみ安全に共有できる機能が含まれます。 プロジェクトによっては、組織外のユーザーとの機密データの共有が含まれる場合があります。
+適切なユーザーと簡単に情報を共有できる一方で、過剰共有を防ぐことが、組織の成功の鍵となります。 これには、機密性の高いデータを、アクセス権を持つ必要があるユーザーと安全に共有できる機能が含まれます。 プロジェクトによっては、機密データを組織外のユーザーと共有する場合があります。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
-このコラボレーション ソリューション ガイダンスには、次の 2 つのコンポーネントが含まれています。
-- 各プロジェクトの適切な保護レベルで Microsoft Teams を展開する
+このコラボレーション ソリューション のガイダンスには、次の 2 つのコンポーネントが含まれています。
+- プロジェクトごとに適切なレベルの保護を備え、Microsoft Teams を展開する
 - プロジェクトごとに適切なセキュリティ設定を使用して外部共有を構成する
 
-![適切な保護を使用して Teams を展開し、適切なセキュリティ設定を使用して外部共有を構成する](..\media\solutions-architecture-center\secure-collaboration-overview.png)
+![適切な保護を使用して Teams を展開し、適切なセキュリティ設定で外部共有を構成する](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-用途が広く使いやすいコンテンツ コラボレーション ツールが利用できない場合、ユーザーはドキュメントを電子メールで送信して共同作業を行う場合がよくがあります。 これは、グループ化を行うのに時間がかからない、間違いを起こしやすい方法であり、情報の不適切な共有のリスクを高める可能性があります。 情報の共有が難しすぎると感じ取った場合は、IT が管理していないコンシューマー製品の使用に戻る可能性があります。 これにより、さらに大きなリスクが生じ得る。
+多目的で使いやすいコンテンツ コラボレーション ツールが利用できない場合、ユーザーはドキュメントに電子メールを送信して共同作業を行う場合が多い。 これは、時間の多いエラーが発生しやすい共同作業方法であり、情報の不適切な共有のリスクを高める可能性があります。 共有情報が難しすぎると、IT によって管理されていないコンシューマー製品の使用に戻る可能性があります。 これにより、さらに大きなリスクが生じ得る可能性があります。
 
-Microsoft 365 を使用すると、次に役立つさまざまな構成で Teams を展開できます。
+Microsoft 365 では、次に役立つさまざまな構成で Teams を展開できます。
 
 - 知的財産を保護する
-- 簡単な共同作業を可能にする
-- セキュリティと操作性のバランスを取り、ユーザー満足度を高め、シャドウ IT のリスクを軽減する
+- 簡単なコラボレーションを有効にする
+- ユーザーの満足度を高め、シャドウ IT のリスクを軽減するセキュリティと使いやすさのバランスを取る
 
-ほとんどの組織には、さまざまな情報があります。情報が不適切に共有されている場合は、さまざまなレベルの感度とビジネスへの影響度が異なります。 特定の情報の感度に応じて、次の情報との共有を許可できます。
+ほとんどの組織は、さまざまな情報を持ち、情報が不適切に共有されている場合は、さまざまな程度の感度とさまざまな程度のビジネス上の影響を与えます。 特定の情報の感度に応じて、次の情報との共有を許可できます。
 
-- だれでも (認証されていない)
+- 誰でも (認証されていない)
 - 組織内のユーザー
 - 組織内の特定のユーザー
 - 組織内外の特定のユーザー
 
-マーケティング部門などの情報は、組織外で広く共有することを目的とします。 このメニューなどの情報は、外部共有を意図した情報ではなく、外部で共有されている場合はビジネスに影響を与える可能性はありません。 これらの種類の情報は、ほとんどまたは全く保護する必要はありません。
+マーケティング パンフレットなどの情報は、組織外で広く共有することを目的とします。 カフェテリア メニューなどの情報は、外部共有を意味するのではなく、外部で共有されている場合はビジネスに影響を及ぼす可能性はありません。 これらの種類の情報は、保護をほとんどまたは全く必要とします。
 
-これらの同じマーケティング活動は、開発中ですが、組織内でのみ共有される場合があります。 この場合、Teams の既定の共有設定で十分な場合があります。
+開発中の同じマーケティング パンフレットは、組織内でのみ共有できます。 この場合、Teams の既定の共有設定で十分な場合があります。
 
-開発中の新しい製品に関する情報は、組織内でも機密性が高いと見なされる可能性があります。 この場合は、より高いレベルの保護が適切な場合があります。 たとえば、この情報へのアクセスを特定のチームのメンバーに制限できます。 プロジェクトによっては、ベンダーやパートナー組織など、組織外のユーザーとの共同作業が必要になる場合があります。
+開発中の新しい製品に関する情報は、組織内でも機密性が高いと見なされる場合があります。 この場合、保護の程度が高い方が適切な場合があります。 たとえば、この情報へのアクセスを特定のチームのメンバーに制限できます。 プロジェクトによっては、ベンダーやパートナー組織など、組織外のユーザーと共同作業する必要がある場合があります。
 
-組織の成功に不可欠な情報や、厳しいセキュリティ要件やコンプライアンス要件を持つ情報には、さらに高いレベルの保護が必要になる場合があります。
+組織の成功に不可欠な情報、または厳しいセキュリティ要件やコンプライアンス要件を持つ情報には、さらに高いレベルの保護が必要になる場合があります。
 
-![リスクスケールを低 (リリース済み) から高 (機密性の高いビジネス データ) に変更しました](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
+![リスクスケールを低 (リリース済みパンフレット) から高 (機密性の高いビジネス データ)](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
 
-上記のすべてのシナリオでは、Microsoft Teams のチームを使用して、情報の保存、共有、共同作業を行えます。 
+上記のすべてのシナリオでは、Microsoft Teams のチームを使用して、情報を保存、共有、および共同作業できます。 
 
-セキュリティで保護されたコラボレーションを構成するには、次の Microsoft 365 の機能を使用します。
+セキュリティで保護されたコラボレーションを構成するには、これらの Microsoft 365 の機能と機能を使用します。
 
 | 製品またはコンポーネント | 機能 | ライセンス |
 |:-------|:-----|:-------|
-| Microsoft Defender for Office 365 | SPO、OneDrive、Teams の安全な添付ファイル安全なドキュメントTeams の安全なリンク    | Microsoft 365 E1、E3、E5 |
-| SharePoint    | サイトとファイル共有ポリシー, サイト共有のアクセス許可, リンクの共有, アクセス要求, サイトのゲスト共有の設定 | Microsoft 365 E1、E3、E5 |
+| Microsoft Defender for Office 365 | SPO、OneDrive、Teams の安全な添付ファイル。安全なドキュメント。Teams の安全なリンク    | Microsoft 365 E1、E3、E5 |
+| SharePoint    | サイトとファイルの共有ポリシー、サイト共有のアクセス許可、リンクの共有、要求へのアクセス、サイトのゲスト共有設定 | Microsoft 365 E1、E3、E5 |
 | Microsoft Teams   | ゲスト アクセス、プライベート チーム、プライベート チャネル | Microsoft 365 E1、E3、E5 |
 | Microsoft 365 コンプライアンス  | 秘密度ラベル    | Microsoft 365 E3、E5 |
 
-### <a name="using-teams-for-all-kinds-of-data"></a>あらゆる種類のデータに Teams を使用する
+### <a name="collaboration-governance"></a>共同作業のガバナンス
 
-さまざまな機性を持つ情報へのアクセスを管理するために、Teams の 3 つの異なる [層の保護を開発しました](configure-teams-three-tiers-protection.md)。 これらの階層は、ニーズやビジネスに合わせてカスタマイズできます。 
+Microsoft 365 には、コラボレーション ソリューションを管理するための多くのオプションが提供されています。 この展開コンテンツをコラボレーション ガバナンス コンテンツと[](collaboration-governance-overview.md)共に使用して、組織に最適なコラボレーション ソリューションを作成することをお勧めします。
 
-![Teams の論理的なアーキテクチャ ポスターのサムネイル](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
+### <a name="using-teams-for-all-kinds-of-data"></a>Teams をあらゆる種類のデータに使用する
+
+異なる感度を持つ情報へのアクセスを管理するために、Teams の 3 つの異なる保護 [層を開発しました](configure-teams-three-tiers-protection.md)。 これらの層は、ニーズやビジネスに合わせてカスタマイズできます。 
+
+![Teams の 3 つのレベルの保護のグラフィック](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-ベースライン、機密、および機密性の高いこれらの層は、次の表に示すように、過剰な情報の漏えいや潜在的な情報漏洩を防ぐのに役立つ保護を徐々に強化します。 
+次の表に示すように、これらの層 *(ベースライン*、機密性の高い、機密性の高い) は、過剰な情報漏洩や潜在的な情報漏洩を防ぐのに役立つ保護を徐々に強化します。
 
-|-|**ベースライン層**|**機密階層**|**機密性の高い階層**|
+|-|**ベースライン層**|**機密性の高い層**|**機密性の高い層**|
 |:--|:-----------|:------------|:-------------------|
-|パブリック チームまたはプライベート チーム|[Either/リンク/埋め込み]|プライベート|プライベート|
+|パブリック チームまたはプライベート チーム|[Either/リンク/埋め込み]|Kirkland|Kirkland|
 |認証されていない共有|Blocked|Blocked|Blocked|
-|ファイル共有|可|可|共有できるのはチーム所有者のみです。|
+|ファイル共有|可|可|共有できるのはチームの所有者のみです。|
 |チーム メンバーシップ|誰でもパブリック チームに参加できます。<br>プライベート チームに参加するには、チーム所有者の承認が必要です。|参加するにはチーム所有者の承認が必要です。|参加するにはチーム所有者の承認が必要です。|
-|ドキュメントの暗号化|||[Sensitivity label] (区別ラベル付き) で使用可能|
+|ドキュメントの暗号化|||感度ラベルと一緒に使用できます|
 |ゲスト共有|可|許可またはブロック可能|許可またはブロック可能|
 |非管理対象デバイス|制限なし|Web 専用アクセス|Blocked|
 
 これらの層を構成するには、次の手順を実行します。
 
-- ゲスト アクセスとプライベート チャネル用に Teams の設定を構成する
-- 内部共有とゲスト共有、アクセス要求、および共有リンク用にチームに関連付けられた SharePoint サイトの設定を構成する
-- 機密性の *高* い *層と機密性* の高い層の場合、チームを分類し、管理されていないデバイスからのゲスト共有とアクセスを制御する機密ラベルを構成する
-- 機密性の *高い* 層の場合は、適用するドキュメントを暗号化する機密ラベルを構成する
+- Teams でゲスト アクセスとプライベート チャネルの設定を構成する
+- チームに関連付けられた SharePoint サイトの設定を構成して、内部およびゲストの共有、要求へのアクセス、およびリンクの共有を行う
+- 機密性の *高い* 機密性 *の高* い層の場合、チームを分類し、管理されていないデバイスからのゲスト共有とアクセスを制御する機密ラベルを構成する
+- 機密性の *高い層* の場合は、適用するドキュメントを暗号化する機密ラベルを構成する
 
-ベースライン層から始めて、必要に応じて機密性の高い、機密性の高い層を使用するチームを追加して、組織内の情報を保護します。 開始するには、次のリソースを参照してください。
+ベースライン層から開始し、必要に応じて機密性の高い機密性の高い層を使用して組織の情報を保護するチームを追加します。 開始するには、次のリソースを参照してください。
 
 - [ベースライン保護を使用してチームを構成する](configure-teams-baseline-protection.md)
 - [機密データに対する保護機能を使用してチームを構成する](configure-teams-sensitive-protection.md)
 - [機密データに対する保護機能を使用してチームを構成する](configure-teams-highly-sensitive-protection.md)
 
-組織内でも共有からの保護を強化する必要がある機密性の高いプロジェクトがある場合は、独自の機密ラベルを使用してファイルを暗号化するチームを構成して、チーム メンバーだけがファイルを読み取り可能にできます。 詳細 [については、「セキュリティ分離を使用してチームを構成する](secure-teams-security-isolation.md) 」を参照してください。
+組織内でも共有を保護する必要がある機密性の高いプロジェクトがある場合は、独自の機密ラベルを使用してファイルを暗号化するチームを構成して、チーム メンバーだけが読み取りを行うことができます。 詳細については [、「セキュリティ分離を使用してチームを構成する」](secure-teams-security-isolation.md) を参照してください。
 
 ### <a name="sharing-with-people-outside-your-organization"></a>組織外のユーザーとの共有
 
-組織外のユーザー [と任意の感度の情報を共有する必要がある場合があります](collaborate-with-people-outside-your-organization.md)。 これは、単一のドキュメントを 1 人のユーザーと共有したり、大規模なパートナー組織や世界中の人との主要なプロジェクトで共同作業を行う場合などです。 Microsoft 365 では、この範囲の外部共有は、機密情報の保護に役立つ適切な保護策を使用して、簡単に行うことができます。
+組織外のユーザー [と任意の感度の情報を共有する必要がある場合があります](collaborate-with-people-outside-your-organization.md)。 これは、単一のドキュメントを 1 人のユーザーと共有する場合から、大規模なパートナー組織や世界中のフリーランサーと主要なプロジェクトで共同作業を行う場合などです。 Microsoft 365 では、この範囲の外部共有を簡単に実行し、機密情報を保護するための適切な保護手段を使用できます。
 
-次のリソースは、組織外のユーザーと共同作業するための環境のセットアップを開始するのに役立ちます。
+これらのリソースは、組織外のユーザーと共同作業するための環境のセットアップを開始するのに役立ちます。
 
-- [ドキュメントで共同作業を行い](collaborate-on-documents.md) 、フォルダーの個々のファイルを共有します。
-- [SharePoint サイトでゲスト](collaborate-in-site.md) と共同作業を行うサイトで共同作業を行います。
+- [フォルダーの個々のファイルを](collaborate-on-documents.md) 共有するドキュメントで共同作業を行います。
+- [SharePoint サイトのゲスト](collaborate-in-site.md) と共同作業を行うサイトで共同作業を行います。
 - [チーム内のゲストと](collaborate-as-team.md) 共同作業を行うチームとして共同作業を行います。
 
-共有される情報の感度に応じて、過剰な共有を防ぐためのセーフガードを追加できます。 これらのリソースは、組織に必要な保護を設定するのに役立ちます。
+共有される情報の感度に応じて、セーフガードを追加して、過剰共有を防ぐのに役立ちます。 これらのリソースは、組織に必要な保護をセットアップするのに役立ちます。
 
 - [認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
 - [組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する](share-limit-accidental-exposure.md)
 - [セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
 
-パートナー組織に主要なプロジェクトがある場合は、Azure Entitlement Management を使用して、プロジェクトに設定したチーム内の組織のゲストを管理できます。 詳細 [については、「管理されたゲストと B2B エクストラネットを作成する」](b2b-extranet.md) を参照してください。
+パートナー組織を持つ主要なプロジェクトがある場合は、Azure Entitlement Management を使用して、プロジェクトに設定したチーム内のその組織のゲストを管理できます。 詳細 [については、「管理ゲストと B2B エクストラネットを作成する」を](b2b-extranet.md) 参照してください。
+
+
+
+## <a name="training-for-administrators"></a>管理者向けトレーニング
+
+Microsoft Learn のこれらのトレーニング モジュールは、Teams と SharePoint のコラボレーション、ガバナンス、ID 機能を学ぶのに役立ちます。
+
+#### <a name="teams"></a>Teams
+
+|トレーニング:|Microsoft Teams を使用してチームの共同作業を管理する|
+|:---|:---|
+|![Teams のコラボレーション トレーニング アイコン](../media/manage-team-collaboration-with-microsoft-teams.svg)|「Microsoft Teams を使用してチームの共同作業を管理する」では、Microsoft 365 でのチームの共同作業の中央のハブである Microsoft Teams の機能について説明します。 Teams を使用して、Office 365 アプリケーションの充実した機能を最大限に活用しながらオンプレミスとオフプレミスの両方で、デスクトップからタブレット、携帯電話までさまざまなデバイス上で組織内のチームワークとコミュニケーションを円滑に進める方法を習得できます。 Teams が、共同作業のための包括的で柔軟な環境をさまざまなアプリケーションやデバイスで提供する方法について説明します。 このラーニングパスはMicrosoft 365 認定: Teams 管理者 の認定の準備を行うことができます。<br><br>2 時間 17 分 - ラーニング パス - 5 モジュール|
+
+> [!div class="nextstepaction"]
+> [スタート>](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+
+#### <a name="sharepoint"></a>SharePoint
+
+|トレーニング:|Microsoft 365 で SharePoint を使用して共同作業する|
+|:---|:---|
+|![SharePoint トレーニング アイコン](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|「Microsoft SharePoint で共有コンテンツを管理する」では、SharePoint の特徴と機能および Microsoft 365 と連携する仕組みについて紹介します。 ハブ サイトなど、さまざまな種類の SharePoint サイトだけでなく、情報保護、レポート、監視についても説明します。 さらに、SharePoint のファイルとフォルダーの共有を使用してコラボレーションを最適化する方法、外部でファイルを共有する方法、SharePoint 管理センターで SharePoint サイトを管理する方法も説明します。 このラーニングパスはMicrosoft 365 認定: チームワーク管理者の関連付け の認定の準備を行うことができます。<br><br>1 時間 14 分 - ラーニング パス - 4 モジュール|
+
+> [!div class="nextstepaction"]
+> [スタート>](https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+
+#### <a name="information-protection"></a>情報保護
+
+|トレーニング:|Microsoft 365 で企業情報を保護する|
+|:---|:---|
+|![Teams 情報保護トレーニング アイコン](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 この学習パスは、Microsoft 365 Certified: Security Administrator Associate と Microsoft 365 Certified: Enterprise Administration Expert 認定の準備に役立ちます。<br><br>1 時間 - ラーニング パス - 5 モジュール|
+
+> [!div class="nextstepaction"]
+> [スタート>](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+
+#### <a name="identity-and-access"></a>ID とアクセス
+
+|トレーニング:|Azure Active Directory でのID とアクセスの保護|
+|:---|:---|
+|![ID とアクセスのトレーニング アイコン](../media/protect-identity-and-access-with-microsoft-365.svg)|ID とアクセスのラーニングパスは、最新の ID およびアクセステクノロジ、認証を強化するためのツール、組織内での ID 保護のガイダンスについて説明しています。 Microsoft ID およびアクセステクノロジを使用すると、組織のIDをオンプレミスでもクラウドでも保護し、ユーザーがどこからでも安全に作業できるようになります。 このラーニングパスはMicrosoft 365 認定: セキュリティ管理者 と Microsoft 365 認定: エンタープライズ管理エキスパート の認定のための準備を行うことが出来ます。<br><br>2 時間 52 分 - ラーニング パス - 6 モジュール|
+
+> [!div class="nextstepaction"]
+> [スタート>](https://docs.microsoft.com/learn/modules/m365-identity-overview/introduction/)
+
+## <a name="training-for-end-users"></a>エンド ユーザー向けのトレーニング
+
+これらのトレーニング モジュールは、ユーザーが Microsoft 365 での共同作業に Teams、グループ、および SharePoint を使用するのに役立ちます。
+
+|Teams|SharePoint|
+|:---|:---|
+|![チーム トレーニング アイコンの設定とカスタマイズ](../media/set-up-customize-team-training.png)<br>**[チームのセットアップとカスタマイズ](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint の共有と同期のトレーニング アイコン](../media/sharepoint-share-sync-training.png)<br>**[共有と同期](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
+|![Teams のアップロードとファイルの検索のトレーニング アイコン](../media/smc-teams-upload-find-files-training.png)<br>**[ファイルのアップロードと検索](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
+|![チームとチャネルの共同作業アイコン](../media/teams-collaborate-channels-training.png)<br>**[チームとチャネルでの共同作業](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+
+## <a name="illustrations"></a>図
+
+これらの図は、グループとチームが Microsoft 365 の他のサービスとどのようにやり取りし、組織でこれらのサービスを管理するのに役立つガバナンスおよびコンプライアンス機能を理解するのに役立ちます。
+
+### <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
+IT アーキテクトが Microsoft 365 のグループについて知っておくべきこと
+
+|**アイテム**|**説明**|
+|:-----|:-----|
+|[![グループ インフォグラフィックのサムネイル](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 更新日: 2019 年 6 月|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
+
+### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 の Microsoft Teams と関連生産性サービス
+Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
+
+|**アイテム**|**説明**|
+|:-----|:-----|
+|[![Teams の論理的なアーキテクチャ ポスターのサムネイル](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>更新日: 2019 年 4 月   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
 
 ## <a name="deploy-the-secure-collaboration-solution"></a>セキュリティで保護されたコラボレーション ソリューションを展開する
 
 このソリューションを展開する準備ができたら、次の手順に進みます。
 1. Teams の [3 つの異なる保護層を構成します](configure-teams-three-tiers-protection.md)。
-2. 組織外の [ユーザーと任意の感度情報を共有する設定を構成します](collaborate-with-people-outside-your-organization.md)。
+2. 組織外のユーザーと任意の感度の情報を [共有する設定を構成します](collaborate-with-people-outside-your-organization.md)。
 
 ## <a name="see-also"></a>関連項目
 
