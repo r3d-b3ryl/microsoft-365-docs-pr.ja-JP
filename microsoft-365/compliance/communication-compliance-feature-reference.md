@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4cd6e62fd236bf9fd3683425b1e98315fc26dd71
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e2d0f4f4abbe538d11d61869f52285f19c23a253
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421694"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461808"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信コンプライアンス機能リファレンス
 
@@ -132,16 +132,6 @@ Microsoft 365 の組織のコミュニケーション コンプライアンス �
 
     コネクタを通信コンプライアンス ポリシーに割り当てる前に、Microsoft 365 組織のサード パーティ製コネクタを構成する必要があります。 通信 **コンプライアンス ポリシー ウィザードの [** サード パーティのソース] セクションには、現在構成されているサード パーティ コネクタだけが表示されます。
 
-## <a name="transitioning-from-supervision-in-office-365"></a>365 の監督からのOffice
-
-Office 365 で監督ポリシーを使用し、Microsoft 365 の通信コンプライアンス ポリシーへの移行を計画している組織は、次の重要な点を理解する必要があります。
-
-- 両方のソリューションを組織内で並行して使用することができますが、各ソリューションで使用されるポリシーには、一意のポリシー名を付ける必要があります。 移行期間中は、グループとカスタム キーワード辞書をソリューション間で共有することができます。
-- 365 ポリシーの一致Office監視に保存されたメッセージは、Microsoft 365 の通信コンプライアンスに移動または共有できません。
-- Microsoft 365 Officeの監督ソリューションは、Microsoft 365 の通信コンプライアンス ソリューションに完全に置き換えられる。 新しい調査と修復の改善を使用するには、既存の監督ポリシーと同じ設定を持つ通信コンプライアンスで新しいポリシーを作成することをお勧めします。 Microsoft 365 のコミュニケーション コンプライアンスに移行する場合、コンプライアンス保持ポリシーに関する社内要件がある場合は、Office 365 の監督からレポート データをエクスポートすることを計画する必要があります。
-
-Office 365 の監督に関する退職情報については [、「Microsoft 365 ロードマップ」を](https://www.microsoft.com/microsoft-365/roadmap) 参照してください。
-
 ## <a name="policy-settings"></a>ポリシー設定
 
 ### <a name="users"></a>ユーザー
@@ -247,7 +237,7 @@ OCR が有効になっているポリシーの保留中のアラートを確認�
 コンマで入力して区切る各単語は個別に適用されます (メールまたは添付ファイルに適用するポリシー条件には、1 つの単語のみを適用する必要があります)。 たとえば、条件を使用します **。Message** には、"banker"、"confidential"、"insider trading" というキーワードがコンマ (銀行家、機密情報、"インサイダー取引") で区切られた、これらの単語が含まれるものとします。 ポリシーは、"banker"、"confidential"、または "insider trading" という語句を含むすべてのメッセージに適用されます。 このポリシー条件を適用するには、これらの単語または語句の 1 つのみを実行する必要があります。 メッセージまたは添付ファイル内の単語は、入力した単語と完全に一致している必要があります。
 
 >[!IMPORTANT]
->ユーザー辞書ファイルをインポートする場合、各単語または語句はキャリッジ リターンと個別の行で区切る必要があります。 <br> 次に例を示します。 <br><br>
+>ユーザー辞書ファイルをインポートする場合、各単語または語句はキャリッジ リターンと個別の行で区切る必要があります。 <br> 以下に例を示します。 <br><br>
 >*banker* <br>
 >*confidential* <br>
 >*インサイダー取引*
@@ -530,6 +520,16 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
+
+## <a name="transitioning-from-supervision-in-office-365"></a>365 の監督からのOffice
+
+Office 365 で監督ポリシーを使用している組織は、Microsoft 365 の通信コンプライアンス ポリシーへの移行を直ちに計画し、次の重要な点を理解する必要があります。
+
+- Microsoft 365 Officeの監督ソリューションは、Microsoft 365 の通信コンプライアンス ソリューションに完全に置き換えられた。 新しい調査と修復の改善を使用するには、既存の監督ポリシーと同じ設定を持つ通信コンプライアンスで新しいポリシーを作成することをお勧めします。 Microsoft 365 のコミュニケーション コンプライアンスに移行する場合、コンプライアンス保持ポリシーに関する社内要件がある場合は、Office 365 の監督からレポート データをエクスポートすることを計画する必要があります。
+- 365 ポリシーの一致Office監視に保存されたメッセージは、Microsoft 365 の通信コンプライアンスに移動または共有できません。
+- 移行プロセス中に両方のソリューションが並べて使用されている組織では、各ソリューションで使用されるポリシーに固有のポリシー名が必要です。 移行期間中は、グループとカスタム キーワード辞書をソリューション間で共有することができます。
+
+Office 365 の監督に関する退職情報については [、「Microsoft 365 ロードマップ」を](https://www.microsoft.com/microsoft-365/roadmap) 参照してください。
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 

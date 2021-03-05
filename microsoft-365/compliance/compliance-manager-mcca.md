@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: 41315dd072e089bd61767181b17dffd5fba88281
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 272477251efed7ebf13bd2e644869eaf2aad1bc2
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423428"
+ms.locfileid: "50454688"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -64,6 +64,7 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
     ```powershell
     Get-MCCAReport
     ```
+
    GCC High のお客様の場合は、レポートを実行するために追加の入力パラメーターを指定する必要があります。
 
     ```powershell
