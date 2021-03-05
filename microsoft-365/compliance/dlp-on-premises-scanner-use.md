@@ -1,0 +1,85 @@
+---
+title: Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) を使用する
+f1.keywords:
+- CSH
+ms.author: chrfox
+author: chrfox
+manager: laurawi
+ms.date: 07/21/2020
+audience: ITPro
+ms.topic: conceptual
+f1_keywords:
+- ms.o365.cc.DLPLandingPage
+ms.service: O365-seccomp
+localization_priority: Priority
+ms.collection:
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
+search.appverid:
+- MET150
+description: オンプレミスのスキャナーで Microsoft 365 データ損失防止を使用して、保存されているデータをスキャンし、オンプレミスのファイル共有とオンプレミスの SharePoint フォルダーとドキュメント ライブラリに保護アクションを実装する方法について説明します。
+ms.openlocfilehash: 34be93f5c9980a7f8ea8ad31b708af14a8725f73
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50417362"
+---
+# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) を使用する
+
+DLP オンプレミス機能、および DLP ポリシーで表示される方法を把握するために、いくつかのシナリオをまとめてましたので、確認してください。
+
+> [!IMPORTANT]
+> これらの DLP オンプレミス シナリオは、DLP ポリシーの作成と調整に関する公式な手順ではありません。 一般的な状況で DLP ポリシーを使用する必要がある場合は、次のトピックを参照してください。
+>- [データ損失防止の概要](data-loss-prevention-policies.md)
+>- [DLP の既定ポリシーの概要](get-started-with-the-default-dlp-policy.md)
+>- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
+>- [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
+
+### <a name="scenario-discover-files-matching-dlp-rules"></a>シナリオ: DLP ルールに一致するファイルを検出する
+
+DLP オンプレミス スキャナーのデータが複数の領域に表示される
+
+#### <a name="activity-explorer"></a>アクティビティ エクスプローラー
+
+ オンプレミス用の Microsoft DLP は、DLP ルールの一致を検出し、「[アクティビティ エクスプローラー](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer)」に報告します。 
+ 
+#### <a name="microsoft-365-audit-log"></a>Microsoft 365 監査ログ
+
+パブリック プレビュー中、DLP ルールの一致は監査ログ UI で利用できます。「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」か、「[Search-UnifiedAuditLogPowerShell](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps)」からアクセスできます。 
+
+#### <a name="aip"></a>AIP
+
+検出データは、以下の場所に保存されている csv 形式のローカル レポートで利用できます。 
+
+**%localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_%timestamp%.csv report**.
+
+ 次の列を調べてください。
+- DLP モード
+- DLP の状態
+- DLP コメント
+- DLP ルール名 DLP アクション
+- 所有者
+- 現在の NTFS アクセス許可 (SDDL)
+- 適用済みの NTFS アクセス許可 (SDDL)
+- NTFS アクセス許可の種類
+ 
+### <a name="scenario-enforce-dlp-rule"></a>シナリオ: DLP ルールを適用する 
+
+スキャンしたファイルに DLP ルールを適用する場合、AIP のコンテンツ スキャン ジョブと DLP のポリシー レベルの両方で、適用を有効にする必要があります。
+
+
+#### <a name="configure-dlp-to-enforce-policy-actions"></a>ポリシー アクションを適用するために DLP を構成する
+
+1. [[データ損失防止](https://compliance.microsoft.com/datalossprevention?viewid=policies)] ページを開き、AIP で構成したオンプレミスの場所リポジトリを対象とする DLP ポリシーを選択します。 
+2. ポリシーを編集します。
+3. 「**ポリシーをテストまたは有効にする**」のページで、**[はい] を選び、ポリシーを今すぐ有効にします**。 
+
+## <a name="see-also"></a>関連項目
+
+- [DLP オンプレミス スキャナーの前提条件 (プレビュー)](dlp-on-premises-scanner-learn.md)
+- [DLP オンプレミス スキャナーの使用を開始する (プレビュー)](dlp-on-premises-scanner-get-started.md)
+- [データ損失防止の概要](data-loss-prevention-policies.md)
+- [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
+- [Activity Explorer を使い始める](data-classification-activity-explorer.md)
