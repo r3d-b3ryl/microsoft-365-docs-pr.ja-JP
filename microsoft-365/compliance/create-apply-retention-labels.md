@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
-ms.openlocfilehash: dfe507283304f1b1a7ded1740df043174987a398
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 67285862756a262233fef934efb377b949fc9d65
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519858"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423498"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
@@ -33,9 +33,9 @@ ms.locfileid: "49519858"
 
 以下の情報を参考に [保持ラベル](retention.md) を作成して発行し、ドキュメントやメールに適用します。
 
-保持ラベルは、アイテム レベル (ドキュメントまたはメール) で必要なものを保持し、不要なものを削除するのに役立ちます。また、Microsoft 365 データの[レコード管理](records-management.md)ソリューションの一部として、アイテムをレコードとして宣言するためにも使用されます。
+保持ラベルは、アイテム レベル (ドキュメントまたはメール) で必要なものを保持し、不要なものを削除するのに役立ちます。 また、Microsoft 365 データの[レコード管理](records-management.md) ソリューションの一部として、アイテムをレコードとして宣言するためにも使用されます。
 
-組織内のユーザーが保持ラベルを使用できるようにして、コンテンツを分類できるようにするプロセスには、2 段階あります。 
+組織内のユーザーが保持ラベルを使用できるようにして、コンテンツを分類できるようにするプロセスは 2 段階です。 
 
 1. 保持ラベルを作成します。
 
@@ -45,17 +45,17 @@ ms.locfileid: "49519858"
 
 次の手順を 2 つの管理手順に使用します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-組織のグローバル管理者には、保持ラベルとアイテム保持ポリシーを作成および編集できる完全な権限があります。グローバル管理者としてサインインしていない場合は、「[アイテム保持ポリシーと保持ラベルを作成して管理するために必要なアクセス許可](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)」を参照してください。
+組織のグローバル管理者には、保持ラベルとそれらのポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[保持ポリシーおよび保持ラベルの作成と管理に必要なアクセス許可](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)」を参照してください。
 
 ## <a name="how-to-create-and-publish-retention-labels"></a>保持ラベルを作成して発行する方法
 
-まず、保持ラベルを作成します。次に、ラベル ポリシーを作成して、アプリにラベルを適用できるようにします。
+まず、保持ラベルを作成します。 それから、ラベルポリシーを作成して、アプリにラベルを適用できるようにします。
 
-保持ラベルを作成して構成する場所は、レコード管理を使用しているかどうかによって異なります。手順は両方のシナリオに提供されます。
+保持ラベルを作成して構成する場所は、レコード管理を使用しているかどうかによって異なります。 手順は両方のシナリオに提供されます。
 
-### <a name="step-1-create-retention-labels"></a>手順 1: 保持ラベルを作成する
+### <a name="step-1-create-retention-labels"></a>ステップ 1: 保持ラベルを作成する
 
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
@@ -65,13 +65,13 @@ ms.locfileid: "49519858"
     - レコード管理を使用していない場合:
        - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル**] タブ > + [**ラベルを作成**]
     
-    すぐにオプションが表示されませんか?まず、**[すべて表示]** を選択します。 
+    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
 
-2. ウィザードでプロンプトに従います。レコード管理を使用している場合:
+2. ウィザードでプロンプトに従います。 レコード管理を使用している場合:
     
     - ファイル計画記述子については、「[ファイル計画を使用して保持ラベルを管理する](file-plan-manager.md)」を参照してください。
     
-    - 保持ラベルを使用してレコードを宣言するには、**[アイテムをレコードとしてマーク]**、または **[アイテムを規制レコードとしてマーク]** を選択します。詳細については、「[保持ラベルを構成してレコードを宣言する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
+    - 保持ラベルを使用してレコードを宣言するには、**アイテムをレコードとしてマーク**、または **アイテムを規制レコードとしてマーク** を選択します。 詳細については、「 [レコードを宣言するために保持ラベルを構成する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
 
 3. ラベルを作成し、ラベルの公開、ラベルの自動適用、または単にラベルを保存するオプションが表示されたら、[**今すぐラベルを保存する**] を選択し、[**完了**] を選択します。
 
@@ -91,27 +91,27 @@ SharePoint や Outlook などのアプリでユーザーが適用できるよう
     - レコード管理を使用していない場合:
         - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル ポリシー**] タブ > [**ラベルの発行**]
     
-    すぐにオプションが表示されませんか? まず、**[すべて表示]** を選択します。 
+    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
 
 2. ウィザードでプロンプトに従います。
     
     保持ラベルでサポートされている場所については、「[保持ラベルと場所](retention.md#retention-label-policies-and-locations)」を参照してください。 
 
-既存の保持ラベル ポリシー (ポリシーの種類は **公開**) を編集するには、それを選択してから、[**編集**] オプションを選択して、[保持ポリシーの編集] を開始します。このウィザードでは、手順 2 のポリシーの説明と [有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
+既存の保持ラベル ポリシー (ポリシーの種類は [**公開**]) を編集するには、それを選択してから、[**編集**] オプションを選択して、[保持ポリシーの編集] を開始します。 このウィザードでは、手順 2 のポリシーの説明と[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>保持ラベルが適用できるようになったとき
 
-SharePoint または OneDrive に対して保持ラベルを発行する場合、これらのラベルは、通常 1 日以内にエンド ユーザーが選択できるように表示されます。ただし、最大 7 日かかります。 
+SharePoint または OneDrive に対して保持ラベルを発行する場合、これらのラベルは、通常  1 日以内にエンド ユーザーが選択できるように表示されます。 ただし、最大 7 日かかります。 
 
-Exchange にラベルを発行する場合、エンド ユーザーにこれら保持ラベルが表示されるまでに最大 7 日かかり、少なくとも 10 MB のデータをメールボックスで格納できる必要があります。
+Exchange にラベルを発行する場合、エンド ユーザーにこれら保持ラベルが表示されるまで最大 7 日かかり、少なくとも 10 MB のデータをメールボックスで格納できる必要があります。
 
 以下に例を示します。
   
 ![手動ラベルが有効になるタイミングの図](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-ラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。**オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、PowerShell コマンドの [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) を実行して、ポリシーの配布を再試行してください:
+ラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 
 1. [セキュリティ/コンプライアンス センター PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
@@ -123,7 +123,7 @@ Exchange にラベルを発行する場合、エンド ユーザーにこれら�
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Exchange に発行された保持ラベルの状態を確認する方法
 
-Exchange Online では、7 日ごとに実行されるプロセスによってエンド ユーザーが保持ラベルを利用できるようになります。PowerShell を使用することで、このプロセスが最後に実行された日時を確認できるため、次に実行される日時を特定できます。
+Exchange Online では、7 日ごとにプロセスが実行され、保持ラベルがエンド ユーザーに表示されます。 PowerShell を使用することで、このプロセスが最後に実行された日時を確認できるため、いつ実行されるかを特定できます。
   
 1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=799773)。
     
@@ -291,6 +291,14 @@ When you edit a retention label or retention label policy, and the retention lab
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
+
+### Deleting retention labels
+
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently rolling out in preview.
+
+For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+
+However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
 
 ## Locking the policy to prevent changes
 

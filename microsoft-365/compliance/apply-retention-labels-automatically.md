@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 69bada084aa3817b49b75d970a1a8d304f6853e6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 34b6fb53095a2c3f52598b84e82cae3083b98f21
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261348"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423306"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -282,6 +282,14 @@ ProgID:Media AND ProgID:Meeting
 ラベルやポリシーを作成して保存した後には変更できない設定があり、それらは以下のものを含みます。
 - 保持ラベル名とアイテム保持ポリシー名および保持期間を除く保持設定。 ただし、アイテムにラベルが付けられた時期に基づいて保持期間が設定されている場合、保持期間を変更することはできません。
 - アイテムをレコードとしてマークするオプション。
+
+### <a name="deleting-retention-labels"></a>保持ラベルの削除
+
+どの保持ラベル ポリシーにも現在含まれていない保持ラベルや、イベントベースの保持用に構成されていない保持ラベルを削除したり、アイテムを規制レコードとしてマークしたりできます。 アイテムをレコードとしてマークする保持ラベルを削除する機能は、現在プレビューで展開しています。
+
+削除可能な保持ラベルについては、アイテムに適用されている場合、削除に失敗し、ラベル付きアイテムを識別するためのコンテンツ エクスプローラーへのリンクが表示されます。
+
+ただし、コンテンツ エクスプローラーにラベルが付いているアイテムが表示されるまでに最大 2 日かかる場合があります。 このシナリオでは、コンテンツ エクスプローラーへのリンクを表示せずに保持ラベルが削除されることがあります。
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>変更を防止するためにポリシーをロックする
 
