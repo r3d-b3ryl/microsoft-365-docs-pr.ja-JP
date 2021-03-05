@@ -1,5 +1,5 @@
 ---
-title: 予約予定表を削除する
+title: 予約カレンダーを削除する
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,87 +8,86 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
-description: 予約予定表を削除するには、Microsoft 365 管理センターまたは Windows PowerShell を使用します。
-ms.openlocfilehash: 2fcb92cee18d709ef0e1fa3faa0246e622a9f9db
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+description: Microsoft 365 管理センターまたは管理者Windows PowerShellを使用して、予約カレンダーを削除します。
+ms.openlocfilehash: 1f8df15eafac7867f7ae852e344e1c5730362598
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126651"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454207"
 ---
-# <a name="delete-a-booking-calendar-in-bookings"></a>予約された予定表を削除する
+# <a name="delete-a-booking-calendar-in-bookings"></a>Bookings で予約カレンダーを削除する
 
-この記事では、不要な予約予定表を削除する方法について説明します。 Microsoft 365 管理センターで予約予定表を削除するか、PowerShell を使用することができます。 予約予定表は、Exchange Online のメールボックスで、予約予定表を削除するために対応するユーザーアカウントを削除します。
+この記事では、不要な予約カレンダーを削除する方法について説明します。 予約カレンダーは、Microsoft 365 管理センターで削除するか、PowerShell を使用できます。 予約カレンダーは Exchange Online のメールボックスなので、対応するユーザー アカウントを削除して予約予定表を削除します。
 
 > [!IMPORTANT]
-> 2017またはそれ以前に作成したすべての予約予定表は、このトピックの PowerShell の手順を使用して削除する必要があります。 2018またはそれ以降に作成されたすべての予約予定表は、Microsoft 365 管理センターで削除できます。
+> 2017 以前に作成した予約カレンダーはすべて、このトピックの PowerShell の手順を使用して削除する必要があります。 2018 以降で作成された予約カレンダーはすべて、Microsoft 365 管理センターで削除できます。
 
-予約予定表は、予約された予定表とデータに関するすべての関連情報を格納する場所です。
+予約カレンダーには、その予約カレンダーとデータに関するすべての関連情報が保存されます。以下を含む。
 
-- 予約予定表を作成したときに追加された勤務先情報、ロゴ、および稼働時間
-- 予約予定表の作成時に追加された関連スタッフとサービス
-- 予約された予定表に追加された予約および期間のすべての予定を予約します。
+- 予約カレンダーの作成時に追加されたビジネス情報、ロゴ、および勤務時間
+- 予約カレンダーの作成時に追加された関連するスタッフとサービス
+- 作成後に予約カレンダーに追加されたすべての予約と休み予定。
 
 > [!WARNING]
-> 予約予定表を削除すると、この追加情報も完全に削除され、回復できなくなります。
+> 予約カレンダーが削除された後、この追加情報も完全に削除され、回復できません。
 
-## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで予約予定表を削除する
+## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで予約カレンダーを削除する
 
 1. Microsoft 365 管理センターに移動します。
 
 1. 管理センターで、[ **ユーザー** ] を選択します。
 
-   ![Microsoft 365 管理センターのユーザー UI の画像](../media/bookings-admin-center-users.png)
+   ![Microsoft 365 管理センターのユーザー UI のイメージ](../media/bookings-admin-center-users.png)
 
 1. [ **アクティブ ユーザー**] ページで、削除するユーザー名を選択して、[ **ユーザーの削除**] を選択します。
 
-   ![Microsoft 365 管理センターでのユーザーの削除 UI の画像](../media/bookings-delete-user.png)
+   ![Microsoft 365 管理センターでのユーザー UI の削除のイメージ](../media/bookings-delete-user.png)
 
-## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Exchange Online の PowerShell を使用して予約予定表を削除する
+## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Exchange Online PowerShell を使用して予約カレンダーを削除する
 
-Exchange Online PowerShell への接続に関する前提条件とガイダンスについては、「 [Exchange Online powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 」を参照してください。
+Exchange Online [PowerShell に接続するための](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 前提条件とガイダンスについては、「Connect to Exchange Online PowerShell」を参照してください。
 
-これらの手順を実行するには、[管理者として実行] オプションを選択して実行したアクティブな Microsoft PowerShell コマンドウィンドウを使用する必要があります。
+これらの手順を実行するには、[管理者として実行] オプションを選択して実行したアクティブな Microsoft PowerShell コマンド ウィンドウを使用している必要があります。
 
-1. 次のコマンドを入力します。
+1. PowerShell ウィンドウで、次のコマンドを実行して EXO V2 モジュールを読み込みます。
 
-   ```PowerShell
-    $user = get-credential
+   ```powershell
+   Import-Module ExchangeOnlineManagement
    ```
 
-1. メッセージが表示されたら、完全に削除する予約予定表をホストする Microsoft 365 テナントに、テナント管理者の資格情報を使用してログオンします。
+   > [!NOTE]
+   > すでに、[EXO V2 モジュールをインストール](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)している場合は、前のコマンドは表示のとおり機能します。
+   
+2. 実行する必要があるコマンドでは、次の構文を使用します。
 
-1. PowerShell コマンドプロンプトで、次のコマンドを入力します。
-
-   ```PowerShell
-    $s = New-Pssession -ConnectionUri https://outlook.office365.com/powershell-liveid -Credential $user -Authentication basic -AllowRedirection -ConfigurationName Microsoft.Exchange
+   ```powershell
+   Connect-ExchangeOnline -UserPrincipalName <UPN> 
    ```
 
-1. 次のコマンドを入力します。
+   - _\<UPN\>_ は、ユーザー プリンシパル名の形式 (`john@contoso.com`など) のアカウントです。
 
-   ```PowerShell
-    Import-PSSession $s
+3. メッセージが表示されたら、完全に削除する予約予定表をホストする Microsoft 365 テナントにテナント管理者資格情報を使用してログオンします。
+
+4. このコマンドの処理が終わったら、次のコマンドを入力して、テナントの予約メールボックスの一覧を取得します。
+
+   ```powershell
+   Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
-1. このコマンドの処理が終わったら、次のコマンドを入力して、テナントの予約メールボックスの一覧を取得します。
+5. 次のコマンドを入力します。
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
-   ```
-
-1. 次のコマンドを入力します。
-
-   ```PowerShell
+   ```powershell
    remove-mailbox [BookingCalendarToDelete]
    ```
 
    > [!IMPORTANT]
-   > 完全に削除する予約メールボックスのエイリアスの正確な名前を入力するように注意してください。
+   > 完全に削除する予約メールボックス エイリアスの正確な名前を入力してください。
 
-1. 予定表が削除されたことを確認するには、次のコマンドを入力します。
+6. 予定表が削除されたと確認するには、次のコマンドを入力します。
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
+   ```powershell
+    Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
    削除された予定表は出力に表示されません。

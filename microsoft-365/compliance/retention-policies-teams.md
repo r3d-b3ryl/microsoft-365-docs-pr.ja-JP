@@ -17,16 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: b3b0451f2f1b0950f2b2ee723025a796f1814038
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 5c992a988dbffc12824b2b64c1ea9a8fb6d22d67
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261504"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406527"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> チャットとメッセージが保持ポリシーによって削除されたというメッセージが Teams に表示されているユーザーの場合は、[アイテム保持ポリシーに関する Teams メッセージ](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)を参照してください。
+> 
+> このページの情報は、これらのアイテム保持ポリシーを管理する IT 管理者向けです。
 
 この記事の情報は[保持の詳細](retention.md)に関する記事を補足するもので、Microsoft Teams メッセージに固有の情報が含まれています。
 
@@ -43,7 +48,7 @@ ms.locfileid: "50261504"
 > [!NOTE]
 > カード コンテンツに関する機能は最近追加され、現在はテナントにロール アウトされています。 詳細については、「[Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available (Teams 内のアプリケーションを使用したアダプティブ カード コンテンツのコンプライアンスに関する Microsoft 365 の機能が利用可能になりました)](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)」を参照してください。
 
-プライベート チャネルの Teams メッセージは、現在、保持ポリシーではサポートされていません。 Teams の保持ポリシーを使用する場合、コード スニペット、Teams モバイルク ライアントからの録音されたボイスメモ、および絵文字の形式での他のユーザーからの反応は含まれません。
+プライベート チャネルの Teams メッセージは、現在、保持ポリシーではサポートされていません。 Teams のアイテム保持ポリシーを使用する場合、コード スニペット、Teams モバイル クライアントからの録音されたボイスメモ、サムネイル、お知らせ画像、および絵文字の形式での他のユーザーからの反応は含まれません。
 
 Teams で使用するメールとファイルは、Teams のアイテム保持ポリシーに含まれていません。 これらのアイテムには、独自のアイテム保持ポリシーがあります。
 

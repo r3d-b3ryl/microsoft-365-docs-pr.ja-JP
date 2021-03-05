@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fd999c27598db6f17073cfe82e4c4f91ffb1667
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407206"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454491"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -46,6 +46,7 @@ ms.locfileid: "50407206"
 - 検索エクスペリエンスでのアラート ID の統合 (アラート ID とAlert-Explorerナビゲーションを使用[した検索](threat-explorer.md))
 - 狩猟エクスペリエンスでのレコードのエクスポートの制限を 9990 から 200,000 に [増やす](threat-explorer.md)
 - 試用版テナントのエクスプローラー (およびリアルタイム検出) データの保持と検索の制限を 7 (前の制限) から 30 日間のハンティング エクスペリエンス [に拡張する](threat-explorer.md)
+- 保護されたユーザーまたはドメインに対する偽装攻撃を検索するための、エクスプローラー内の偽装ドメインと偽装ユーザー (およびリアルタイムの検出) と呼ばれる新しい検索ピボット。 詳細については、「詳細」を [参照してください](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。 (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
 
 ## <a name="december-2020"></a>2020年12月
 

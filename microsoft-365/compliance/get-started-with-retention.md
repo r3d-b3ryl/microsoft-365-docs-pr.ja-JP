@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682532"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406517"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
@@ -82,9 +82,11 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 レコード管理用の保持ラベルを使用する場合、コンテンツをレコードとしてマークする保持ラベルに固有の追加のシナリオがあります。 「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。
 
-## <a name="end-user-documentation-for-retention-labels"></a>保持ラベルに関するエンド ユーザー向けのドキュメント
+## <a name="end-user-documentation-for-retention"></a>データ保持に関するエンド ユーザー向けのドキュメント
 
-アイテム保持ポリシーとは異なり、保持ラベルには Microsoft 365 アプリに UI があります。 保持ラベルを運用ネットワークに展開する前に、エンド ユーザーとヘルプ デスクに必ずガイダンスを提供してください。
+ほとんどのアイテム保持ポリシーは、ユーザーの操作なしでバック グラウンドで目立たないように機能するため、ユーザー向けのドキュメントをほとんど必要としません。 Teams のアイテム保持ポリシーは、メッセージが削除されたときに、[アイテム保持ポリシーに関する Teams メッセージ](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)へのリンクとともにユーザーに通知します。
+
+保持ラベルは Microsoft 365 アプリに UI が存在するため、これらのラベルを運用ネットワークに展開する前に、エンドユーザーとヘルプ デスクにガイダンスを提供するようにしてください。
 
 最も効果的なエンド ユーザー向けのドキュメントは、選択した保持ラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ユーザーのトレーニングと導入の促進に使用できるダウンロード パッケージについては、次のブログ記事を参照してください: [M365 の保持ラベルのエンド ユーザー トレーニング – 導入を加速する方法](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
 

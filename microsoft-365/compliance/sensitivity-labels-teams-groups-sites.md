@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 7eea07b91647af2b0b7121f9d9c1f018bc9fc630
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 3565b47e21d81b4b3d560d72a29f2deae9587709
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261460"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407317"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -32,7 +32,7 @@ ms.locfileid: "50261460"
 
 - チーム サイトおよび Microsoft 365 グループのプライバシー (パブリックまたはプライベート)
 - 外部ユーザーのアクセス
-- SharePoint サイトからの外部共有 (プレビュー)
+- SharePoint サイトからの外部共有
 - 非管理対象デバイスからのアクセス
 
 > [!IMPORTANT]
@@ -100,7 +100,7 @@ ms.locfileid: "50261460"
 
 4. **[デバイス アクセスと外部共有設定]** を選択した場合は、次の設定を構成します。
     
-    - **[ラベル付き SharePoint サイトからの外部共有を制御]**: 現在プレビュー中です。このオプションを選択して、すべてのユーザー、新規および既存のゲストを選択するか、組織内のユーザのみを選択します。 この構成と設定の詳細については、「SharePoint ドキュメント」で [サイトへのの外部共有を有効または無効にする](https://docs.microsoft.com/sharepoint/change-external-sharing-site) を参照します。
+    - **[ラベル付き SharePoint サイトからの外部共有を制御]**: このオプションを選択して、すべてのユーザー、新規および既存のゲストを選択するか、組織内のユーザのみを選択します。 この構成と設定の詳細については、「SharePoint ドキュメント」で [サイトへのの外部共有を有効または無効にする](https://docs.microsoft.com/sharepoint/change-external-sharing-site) を参照します。
     
     - **非管理対象デバイスからのアクセス**: このオプションでは、Azure ADの条件付きアクセスを使用して、管理されていないデバイスからの SharePoint および OneDrive コンテンツへのアクセスをブロックまたは制限する SharePoint 機能を使用します。 詳細については、SharePoint ドキュメントの「[非管理対象デバイスからのアクセスの制御](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。 このラベル設定を指定するオプションは、SharePoint の手順から「[特定の SharePoint サイトまたは OneDrive からのアクセスをブロックまたは制限する](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)」セクションの手順 3 - 5 で説明しているように、サイトの PowerShell コマンドを実行することと同じです。
         

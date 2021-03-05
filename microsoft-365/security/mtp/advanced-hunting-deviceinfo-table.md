@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceInfo テーブル
-description: 高度な検索スキーマの DeviceInfo テーブルにある OS、コンピューター名、その他のコンピューター情報について説明します。
-keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、machineinfo、DeviceInfo、デバイス、コンピューター、OS、プラットフォーム、ユーザー
+description: 高度な検索スキーマの DeviceInfo テーブルで、OS、コンピューター名、その他のコンピューター情報について説明します。
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、machineinfo、DeviceInfo、デバイス、コンピューター、OS、プラットフォーム、ユーザー
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6462096a6c1b44ee11299f652a54f261d0355523
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 53948f3d470fb85ddfda8dbcf5b64024755ca50e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145369"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461627"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -37,7 +37,7 @@ ms.locfileid: "50145369"
 
 
 
-高度 `DeviceInfo` な検索スキーマ [の表](advanced-hunting-overview.md) には、OS バージョン、アクティブ ユーザー、コンピューター名など、組織内のコンピューターに関する情報が含まれている。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度 `DeviceInfo` な検索スキーマの [表](advanced-hunting-overview.md) には、OS バージョン、アクティブ ユーザー、コンピューター名など、組織内のデバイスに関する情報が含まれている。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -47,18 +47,29 @@ ms.locfileid: "50145369"
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `ClientVersion` | string | コンピューターで実行されているエンドポイント エージェントまたはセンサーのバージョン |
-| `PublicIP` | string | オンボードしたコンピューターが Microsoft Defender for Endpoint サービスに接続するために使用するパブリック IP アドレス。 コンピューター自体の IP アドレス、NAT デバイス、プロキシなどです。 |
+| `PublicIP` | string | オンボード コンピューターが Microsoft Defender for Endpoint サービスに接続するために使用するパブリック IP アドレス。 これは、コンピューター自体の IP アドレス、NAT デバイス、またはプロキシである可能性があります。 |
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
 | `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 など、同じファミリ内のバリエーションを含む特定のオペレーティング システムを示します。 |
-| `OSBuild` | string | コンピューターで実行されているオペレーティング システムのビルド バージョン |
-| `IsAzureADJoined` | boolean | コンピューターが Azure Active Directory に参加しているかどうかを示すブールインジケーター |
-| `DeviceObjectId` | string | Azure AD のデバイスの一意の識別子 |
-| `LoggedOnUsers` | string | イベントの時点でコンピューターにログオンしているすべてのユーザーの一覧 (JSON 配列形式) |
+| `OSBuild` | string | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
+| `IsAzureADJoined` | boolean | コンピューターが Azure Active Directory に参加するかどうかを示すブール値インジケーター |
+| `AadObjectId` | string | Azure のデバイスの一意の識別子AD |
+| `LoggedOnUsers` | string | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
 | `RegistryDeviceTag` | string | レジストリを介して追加されたコンピューター タグ |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
-|`AdditionalFields` | string | JSON 配列形式でのイベントに関する追加情報 |
+|`AdditionalFields` | string | JSON 配列形式のイベントに関する追加情報 |
 | `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
 | `MachineGroup` | string | コンピューターのコンピューター グループ。 このグループは、役割ベースのアクセス制御によってコンピューターへのアクセスを決定するために使用されます。 |
+
+この表は、定期的なレポートまたはデバイスからの信号であるハートビートに基づくデバイス `DeviceInfo` 情報を提供します。 15 分ごとに、デバイスは頻繁に変更される属性を含む部分的なハートビートを送信します `LoggedOnUsers` 。 1 日に 1 回、デバイスの属性を含む完全なハートビートが送信されます。
+
+次のサンプル クエリを使用して、デバイスの最新の状態を取得できます。
+
+```kusto
+// Get latest information on user/device
+DeviceInfo
+| where DeviceName == "example" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

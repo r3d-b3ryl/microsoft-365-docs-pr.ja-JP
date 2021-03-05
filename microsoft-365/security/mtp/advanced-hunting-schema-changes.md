@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender 高度な検索スキーマでの名前の変更
+title: Microsoft 365 Defender Advanced Hunting スキーマの名前付け変更
 description: 高度な検索スキーマの名前付け変更テーブルと列を追跡および確認する
-keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、Microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、データ、名前付けの変更、名前の変更、Microsoft Threat Protection
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、データ、名前付けの変更、名前の変更、Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3f03543b03dca5fe426700ffff4f5c6edb8fa3c7
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066871"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461669"
 ---
-# <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前の変更
+# <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前付けの変更
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,15 +37,15 @@ ms.locfileid: "50066871"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-高度 [な検索スキーマは定期的](advanced-hunting-schema-tables.md) に更新され、新しいテーブルと列が追加されます。 場合によっては、既存の列名の名前が変更または置換され、ユーザー エクスペリエンスが向上します。 クエリに影響を与える可能性がある名前付けの変更を確認するには、この記事を参照してください。
+高度 [な検索スキーマは](advanced-hunting-schema-tables.md) 、新しいテーブルと列を追加するために定期的に更新されます。 ユーザー エクスペリエンスを向上させるために、既存の列名の名前が変更または置き換えられる場合があります。 クエリに影響を与える可能性がある名前の変更を確認するには、この記事を参照してください。
 
-名前付けの変更は、カスタム検出ルールで使用されるクエリを含め、セキュリティ センターに保存されるクエリに自動的に適用されます。 これらのクエリを手動で更新する必要はありません。 ただし、次のクエリを更新する必要があります。
+名前付けの変更は、カスタム検出ルールで使用されるクエリなど、セキュリティ センターに保存されるクエリに自動的に適用されます。 これらのクエリを手動で更新する必要はありません。 ただし、次のクエリを更新する必要があります。
 - API を使用して実行されるクエリ
-- セキュリティ センターの外部の別の場所に保存されるクエリ
+- セキュリティ センター外の別の場所に保存されるクエリ
 
 ## <a name="december-2020"></a>2020年12月
 
-| テーブル名 | 元の列名 | 新しい列名 | 変更理由
+| テーブル名 | 元の列名 | 新しい列名 | 変更の理由
 |--|--|--|--|
 | [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailAction` | `EmailAction` | お客様のフィードバック |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicy` | `EmailActionPolicy` | お客様のフィードバック |
@@ -53,26 +53,57 @@ ms.locfileid: "50066871"
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-| 列名 | 元の値の名前 | 新しい値の名前 | 変更理由
+| 列名 | 元の値の名前 | 新しい値の名前 | 変更の理由
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft Cloud App Security | ブランドの再ブランド化 |
-| `DetectionSource` | WindowsDefenderAtp|   EDR| ブランドの再ブランド化 |
-| `DetectionSource` | WindowsDefenderAv | ウイルス対策 | ブランドの再ブランド化 |
-| `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | ブランドの再ブランド化 |
-| `DetectionSource` | CustomerTI |  カスタム TI | ブランドの再ブランド化 |
-| `DetectionSource` | OfficeATP | Microsoft Defender for Office 365 | ブランドの再ブランド化 |
-| `DetectionSource` | MTP   | Microsoft 365 Defender | ブランドの再ブランド化 |
-| `DetectionSource` | AzureATP |    Microsoft Defender for Identity | ブランドの再ブランド化 |
-| `DetectionSource` | CustomDetection   | カスタム検出 | ブランドの再ブランド化 |
-| `DetectionSource` | AutomatedInvestigation |自動調査 | ブランドの再ブランド化 |
-| `DetectionSource` | ThreatExperts | Microsoft 脅威エキスパート | ブランドの再ブランド化 |
-| `DetectionSource` | サードパーティ TI | サードパーティ製センサー | ブランドの再ブランド化 |
-| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender for Endpoint | ブランドの再ブランド化 |
-|`ServiceSource` |Microsoft Threat Protection   | Microsoft 365 Defender | ブランドの再ブランド化 |
-| `ServiceSource` | Office 365 ATP  |Microsoft Defender for Office 365 | ブランドの再ブランド化 |
-| `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | ブランドの再ブランド化 |
+| `DetectionSource` | MCAS |    Microsoft Cloud App Security | リブランド |
+| `DetectionSource` | WindowsDefenderAtp|   EDR| リブランド |
+| `DetectionSource` | WindowsDefenderAv | ウイルス対策 | リブランド |
+| `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | リブランド |
+| `DetectionSource` | CustomerTI |  カスタム TI | リブランド |
+| `DetectionSource` | OfficeATP | Microsoft Defender for Office 365 | リブランド |
+| `DetectionSource` | MTP   | Microsoft 365 Defender | リブランド |
+| `DetectionSource` | AzureATP |    Microsoft Defender for Identity | リブランド |
+| `DetectionSource` | CustomDetection   | カスタム検出 | リブランド |
+| `DetectionSource` | AutomatedInvestigation |自動調査 | リブランド |
+| `DetectionSource` | ThreatExperts | Microsoft 脅威エキスパート | リブランド |
+| `DetectionSource` | サードパーティ TI | サードパーティ製センサー | リブランド |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender for Endpoint | リブランド |
+|`ServiceSource` |Microsoft Threat Protection   | Microsoft 365 Defender | リブランド |
+| `ServiceSource` | Office 365 ATP  |Microsoft Defender for Office 365 | リブランド |
+| `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | リブランド |
 
-`DetectionSource` は [、AlertInfo テーブルで使用](advanced-hunting-alertinfo-table.md) できます。 `ServiceSource` は [、AlertEvidence テーブルと](advanced-hunting-alertevidence-table.md) [AlertInfo テーブルで使用](advanced-hunting-alertinfo-table.md) できます。 
+`DetectionSource` は [AlertInfo テーブルで使用](advanced-hunting-alertinfo-table.md) できます。 `ServiceSource` は [、AlertEvidence テーブルと](advanced-hunting-alertevidence-table.md) [AlertInfo テーブルで使用](advanced-hunting-alertinfo-table.md) できます。 
+
+## <a name="february-2021"></a>2021 年 2 月
+
+1. [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)および[EmailEvents](advanced-hunting-emailevents-table.md)テーブルでは、列と列を非推奨にし、列 `MalwareFilterVerdict` `PhishFilterVerdict` に置き換 `ThreatTypes` えました。 また、列と列 `MalwareDetectionMethod` を `PhishDetectionMethod` 非推奨にし、列に置き換 `DetectionMethods` えました。 この合理化により、新しい列の下に詳細な情報を提供できます。 マッピングは以下に示します。
+
+| テーブル名 | 元の列名 | 新しい列名 | 変更の理由
+|--|--|--|--|
+| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | その他の検出方法を含める |
+| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 脅威の種類を追加する |
+| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | その他の検出方法を含める |
+| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 脅威の種類を追加する |
+
+
+2. 表と `EmailAttachmentInfo` 表 `EmailEvents` に、電子メールの脅威に関する詳細を示す `ThreatNames` 列を追加しました。 この列には、スパムやフィッシングのような値が含まれます。
+
+3. [DeviceInfo テーブルでは](advanced-hunting-deviceinfo-table.md)、顧客からのフィードバックに基づいて `DeviceObjectId` 列 `AadDeviceId` を置き換えました。
+
+4. [DeviceEvents テーブルでは](advanced-hunting-deviceevents-table.md)、アクションの説明を反映するようにいくつかの ActionType 名を更新しました。 詳細については、以下をご覧ください。
+
+| テーブル名 | 元の ActionType 名 | 新しい ActionType 名 | 変更の理由
+|--|--|--|--|
+| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | お客様のフィードバック |
+| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | お客様のフィードバック |
+| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | お客様のフィードバック |
+| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | お客様のフィードバック |
+| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | お客様のフィードバック |
+
+
+
+
+
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

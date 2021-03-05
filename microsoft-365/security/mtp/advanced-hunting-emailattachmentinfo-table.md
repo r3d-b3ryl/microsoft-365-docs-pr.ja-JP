@@ -1,7 +1,7 @@
 ---
 title: 高度な捜索スキーマの EmailAttachmentInfo テーブル
 description: 高度な捜索スキーマの EmailAttachmentInfo テーブルでのメール添付ファイルの情報について学習する
-keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、EmailAttachmentInfo、ネットワーク メッセージ ID、送信者、受信者、添付ファイル ID、添付ファイル名、マルウェアの検証
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、EmailAttachmentInfo、ネットワーク メッセージ ID、送信者、受信者、添付ファイル名、添付ファイル名、マルウェアの評決
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b810d7b15ef47a33a0675086219d2193cea00f2e
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: dd1af6e9ece8a3728db74eadc163ce277e6e84eb
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145021"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461625"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -37,27 +37,25 @@ ms.locfileid: "50145021"
 
 
 
-高度 `EmailAttachmentInfo` な検索スキーマの [表](advanced-hunting-overview.md) には、Microsoft Defender for Office 365 で処理された電子メールの添付ファイルに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度 `EmailAttachmentInfo` な検索スキーマの [表](advanced-hunting-overview.md) には、Microsoft Defender が 365 用に処理した電子メールの添付ファイルに関するOfficeされています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | 文字列型 | Microsoft 365 によって生成される電子メールの一意識別子 |
-| `SenderFromAddress` | 文字列型 | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |
-| `SenderDisplayName` | 文字列型 | アドレス帳に表示される送信者の名前。通常は、名、ミドル ネームのイニシャル、姓または姓の組み合わせ |
-| `SenderObjectId` | 文字列型 | Azure AD の送信者のアカウントの一意の識別子 |
-| `RecipientEmailAddress` | 文字列型 | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
-| `RecipientObjectId` | 文字列型 | Azure AD の電子メール受信者の一意の識別子 |
-| `FileName` | 文字列型 | 記録されたアクションが適用されたファイルの名前 |
+| `NetworkMessageId` | string | Microsoft 365 によって生成された電子メールの一意の識別子 |
+| `SenderFromAddress` | string | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |
+| `SenderDisplayName` | string | アドレス帳に表示される送信者の名前(通常は、特定の名前または名、ミドル イニシャル、姓または姓の組み合わせ) |
+| `SenderObjectId` | string | Azure アカウントの送信者のアカウントの一意AD |
+| `RecipientEmailAddress` | string | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
+| `RecipientObjectId` | string | Azure の電子メール受信者の一意AD |
+| `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FileType` | 文字列型 | ファイル拡張子の種類 |
 | `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
-| `MalwareFilterVerdict` | 文字列型 | メールにマルウェアが含まれているかどうかに関する、メールのフィルター処理スタックの判定 (マルウェア、マルウェア以外) |
-| `MalwareDetectionMethod` | string | 電子メール内のマルウェアを検出するために使用する方法: マルウェア対策エンジン、ファイル評価、安全な添付ファイル |
-| `ThreatTypes` | string | 電子メールにマルウェア、フィッシング、その他の脅威が含まれているかどうかに関する、電子メール フィルター スタックからの判断 |
-| `ThreatNames` | string | マルウェアまたは他の脅威が検出された検出名 |
-| `DetectionMethods` | string | 電子メールで検出されたマルウェア、フィッシング、その他の脅威を検出するために使用される方法 |
+| `ThreatTypes` | 文字列型 | 電子メールにマルウェア、フィッシング、その他の脅威が含まれているかどうかに関する電子メール フィルター スタックからの評決 |
+| `ThreatNames` | string | マルウェアまたは検出された他の脅威の検出名 |
+| `DetectionMethods` | string | 電子メールで見つかったマルウェア、フィッシング、その他の脅威を検出するために使用される方法 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
 
 ## <a name="related-topics"></a>関連項目

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 テナントからテナントへの移行
+title: Microsoft 365 テナント間の移行
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,30 +19,30 @@ f1.keywords:
 - NOCSH
 description: Microsoft 365 テナントを移行する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17aabbd945c6dec699384eb9f203029255ae62f6
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 09b2bc77333afaf1991064369846241328db85ff
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447152"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461645"
 ---
-# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 テナントからテナントへの移行
+# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 テナント間の移行
 
-既存の Microsoft 365 テナントを新しいテナントに移行することにつながる、合併、買収、divestitures、その他のシナリオには、いくつかのアーキテクチャ手法があります。 ほとんどのお客様は、Microsoft コンサルティングサービスまたは Microsoft パートナーと連携して、サードパーティ製のツールを使用してコンテンツを移行するなど、テナントを移行します。 
+合併、買収、売却、その他のシナリオでは、既存の Microsoft 365 テナントを新しいテナントに移行するためのアーキテクチャアプローチがいくつかあります。 ほとんどのお客様は、Microsoft Consulting Services または Microsoft パートナーと一緒に、コンテンツの移行にサードパーティ製のツールを使用するなどのテナントの移行を行います。 
 
-テナントからテナントへの [移行アーキテクチャモデル](../downloads/Microsoft-365-tenant-to-tenant-migration.pdf) を使用して、Microsoft 365 テナント間移行と移行の手順を計画する方法について理解します。
+テナント間 [移行アーキテクチャ](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) モデルを使用して、Microsoft 365 テナント間の移行を計画する方法と移行の手順を理解します。
 
-[![テナント間移行モデル](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](../downloads/Microsoft-365-tenant-to-tenant-migration.pdf) 
+[![テナント間移行モデル](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
-このモデルは、 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) または [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) 形式でダウンロードして、レター、リーガル、またはタブロイド (11 x 17) サイズの用紙に印刷することもできます。
+このモデルは PDF 形式で [ダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) し、レター、リーガル、またはタブロイド (11 x 17) サイズの用紙に印刷します。
 
-このモデルでは、次の項目を計画するためのガイダンスと出発点を示します。
+このモデルでは、次のセクションを計画するガイダンスと開始点を提供します。
 
-- ビジネスシナリオをアーキテクチャ手法にマッピングする
+- ビジネス シナリオとアーキテクチャアプローチのマッピング
 - 設計上の考慮事項
 
-このモデルには、次の詳細な例も含まれています。
+このモデルには、次の詳細な例も含まれている。
 
-- 単一イベント移行フロー
+- 単一のイベント移行フロー
 - 段階的な移行フロー
-- テナント移動または分岐フロー
+- テナントの移動または分割フロー

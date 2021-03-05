@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881707"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405704"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -44,6 +44,7 @@ ms.locfileid: "49881707"
 
 このビデオでは、展開プロセスの概要について説明します。
 <br>
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> このシナリオを 1 ページにまとめた、「[セキュリティの分離ポスター を使用した Microsoft Teams](../downloads/team-security-isolation-poster.pdf)」を参照してください。
@@ -51,6 +52,10 @@ ms.locfileid: "49881707"
 [![セキュリティの分離ポスター を使用した Microsoft Teams](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) または [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
+
+[これらの手順](team-security-isolation-dev-test.md)を使用して、独自のテスト ラボ環境でこの構成を試してください。
+
+[このケー ススタディ](contoso-team-for-top-secret-project.md)で、Contoso Corporation が独立したプロジェクトでどのように安全なチームを運用したかを確認してください。
 
 ## <a name="initial-protections"></a>初期保護
 
@@ -143,7 +148,7 @@ ms.locfileid: "49881707"
 6. [ユーザーとグループに発行] ページで、**[ユーザーとグループの選択]** をクリックします。
 7. **[追加]** をクリックし、作成したチームを選びます。
 8. **[追加]** をクリックし、**[完了]** をクリックします。
-9. [**次へ**] をクリックします。
+9. **[次へ]** をクリックします。
 10. [ポリシーの設定] ページで、**[ユーザーはラベルを削除するか、分類ラベルを下げるために正当な理由を提供する必要がある]** チェック ボックスをオンにし、**[次へ]** をクリックします。
 11. ポリシーの名前を入力し、**[次へ]** をクリックします。
 12. **[送信]** をクリックしてから、**[完了]** をクリックします。
