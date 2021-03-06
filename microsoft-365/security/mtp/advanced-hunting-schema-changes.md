@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461669"
+ms.locfileid: "50509304"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前付けの変更
 
@@ -76,7 +76,7 @@ ms.locfileid: "50461669"
 
 ## <a name="february-2021"></a>2021 年 2 月
 
-1. [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)および[EmailEvents](advanced-hunting-emailevents-table.md)テーブルでは、列と列を非推奨にし、列 `MalwareFilterVerdict` `PhishFilterVerdict` に置き換 `ThreatTypes` えました。 また、列と列 `MalwareDetectionMethod` を `PhishDetectionMethod` 非推奨にし、列に置き換 `DetectionMethods` えました。 この合理化により、新しい列の下に詳細な情報を提供できます。 マッピングは以下に示します。
+1. [EmailAttachmentInfo テーブル](advanced-hunting-emailattachmentinfo-table.md)と[EmailEvents](advanced-hunting-emailevents-table.md)テーブルでは、列と列が `MalwareFilterVerdict` `PhishFilterVerdict` 列に置き換 `ThreatTypes` えされています。 列 `MalwareDetectionMethod` と `PhishDetectionMethod` 列も列に置き換 `DetectionMethods` えました。 この合理化により、新しい列の下に詳細な情報を提供できます。 マッピングは以下に示します。
 
 | テーブル名 | 元の列名 | 新しい列名 | 変更の理由
 |--|--|--|--|
@@ -86,11 +86,11 @@ ms.locfileid: "50461669"
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 脅威の種類を追加する |
 
 
-2. 表と `EmailAttachmentInfo` 表 `EmailEvents` に、電子メールの脅威に関する詳細を示す `ThreatNames` 列を追加しました。 この列には、スパムやフィッシングのような値が含まれます。
+2. 列とテーブルに、電子メールの脅威に関する詳細を示す列 `EmailAttachmentInfo` `EmailEvents` `ThreatNames` が追加されました。 この列には、スパムやフィッシングのような値が含まれます。
 
-3. [DeviceInfo テーブルでは](advanced-hunting-deviceinfo-table.md)、顧客からのフィードバックに基づいて `DeviceObjectId` 列 `AadDeviceId` を置き換えました。
+3. [DeviceInfo テーブルの](advanced-hunting-deviceinfo-table.md)列は、顧客からのフィードバックに基 `DeviceObjectId` `AadDeviceId` づいて列に置き換えられます。
 
-4. [DeviceEvents テーブルでは](advanced-hunting-deviceevents-table.md)、アクションの説明を反映するようにいくつかの ActionType 名を更新しました。 詳細については、以下をご覧ください。
+4. [DeviceEvents テーブルでは](advanced-hunting-deviceevents-table.md)、アクションの説明を反映するようにいくつかの ActionType 名が変更されました。 変更の詳細については、以下を参照してください。
 
 | テーブル名 | 元の ActionType 名 | 新しい ActionType 名 | 変更の理由
 |--|--|--|--|

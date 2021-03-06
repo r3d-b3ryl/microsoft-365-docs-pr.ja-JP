@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する際のカスタマー エクスペリエンスに関するその他の情報。'
-ms.openlocfilehash: 26db69583bac68723d5d57b07abb856c8190d9b1
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 152e9e8d8f4550b9095a7b22e1bcd4cf30fa620f
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454469"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515198"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行への影響 (上級) 
 
@@ -62,27 +62,6 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 |メールボックスのオンボーディングまたはオフボードの移動を停止または削除します。  | これにより、エラーが発生して移動要求が失敗しなかっ | ハイブリッド (オンプレミス) 展開を使用する Exchange Online のお客様 | 必須のアクション。 サービスまたはソフトウェア クライアントの障害が発生する可能性があります。 |
 |||||
 
-### <a name="dynamics-phase-8-of-9"></a>Dynamics (フェーズ 8 / 9)
-
-| Step(s) | 説明 | 適用対象 | 影響 |
-|:-------|:-----|:-------|:-------|
-| Microsoft Dynamics リソース | Microsoft Dynamics をお持ちのお客様は、エンジニアリングまたは FastTrack が Dynamics を 365 サービス インスタンスOffice移行します。* | Microsoft Dynamics 365 のお客様 | - 移行後、管理者は組織を検証します。 <br><br> - 管理者は、必要に応じてワークフローを変更します。 <br><br> - 管理者は、必要に応じて AdminOnly モードをクリアします。 <br><br> - 管理者は、必要に応じて _サンドボックス_ から組織の種類を変更します。 <br><br> - インスタンス (org) にアクセスする新しい URL をエンド ユーザーに通知します。 <br><br> - 新しいエンドポイント URL への受信接続を更新します。 <br><br> - 移行中にユーザーが Dynamics サービスを利用できません。 <br><br> - ユーザーは、各組織の移行後に組織の正常性と機能を検証する必要があります。  |
-|||||
-
-\* (i) Microsoft Dynamics 365 をお持ちのお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。 
-
-
-### <a name="power-bi-phase-8-of-9"></a>Power BI (フェーズ 8 / 9)
-
-| Step(s) | 説明 | 適用対象 | 影響 |
-|:-------|:-----|:-------|:-------|
-| Power BI リソースの移行 | Microsoft Power BI をお持ちのお客様は、既存の PBI 移行ツールを手動でトリガーして Power BI を Office 365 サービス インスタンスに移行した後、エンジニアリングまたは FastTrack に参加します。\*\* | Microsoft Power BI のお客様 | - 次の Power  BI アイテムは移行されないので、再作成する必要があります。 <br><br> - リアルタイム データセット (ストリーミング データセットやプッシュ データセットなど)。 <br> - Power BI オンプレミス のデータ ゲートウェイ構成とデータ ソース。 <br> - リアルタイム データセットの上に構築されたレポートは、移行後に使用できないので、再作成する必要があります。 <br><br> - Power BI サービスは、移行中にユーザーが利用できません。 サービスが利用できない時間は 24 時間を超えてはならない。 <br><br> - ユーザーは、移行後に Power BI サービスを使用してデータ ソースとオンプレミス のデータ ゲートウェイを再構成する必要があります。  そうするまで、ユーザーは、これらのデータ ソースを使用して、スケジュールされた更新を実行したり、これらのデータ ソースに対して直接クエリを実行したりすることはできません。 <br><br> - 容量とプレミアム ワークスペースは移行できません。 移行前にすべての容量を削除し、移行後に再作成する必要があります。 ワークスペースを必要に応じて容量に戻します。  |
-|||||
-
-\*\* (i) Microsoft Power BI をお持ちのお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。 
-
-
-
 ## <a name="during-migration"></a>移行中
 
 ### <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (フェーズ 4 / 9)
@@ -115,14 +94,14 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 
 ### <a name="azure-ad-phase-9-of-9"></a>Azure AD (フェーズ 9 / 9)
 
-ハイブリッドの場合:
+ハイブリッド Azure のお客様の場合:
 
 | Step(s) | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
 | Azure AD接続を更新します。 | Azure AD への切り上げが完了すると、組織は Office 365 サービスを完全に使用し、Microsoft Cloud Deutschland に接続されなくなりました。 この時点で、お客様はデルタ同期プロセスが完了した後、レジストリ パスの文字列値を `AzureInstance` 3 (Microsoft Cloud Deutschland) から 0 に変更する必要があります `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` 。 | ハイブリッド Azure AD接続された組織 | レジストリ キーの `AzureInstance` 値を変更します。 そうしない場合、Microsoft Cloud Deutschland エンドポイントが使用できなくなった後、オブジェクトが同期されません。 |
 |||||
 
-フェデレーション認証の場合:
+フェデレーション認証を利用しているお客様の場合:
 
 | Step(s) | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -136,7 +115,7 @@ Azure の場合AD:
 | 移行前の過去 30 日間に Azure AD グループに参加する要求は、元の要求が承認されなかった場合は、再度要求する必要があります。 | 移行前の過去 30 日間にこれらの要求が承認されなかった場合、エンドユーザーのお客様は Access パネルを使用して Azure AD グループに再度参加する要求を送信する必要があります。 | 移行前の過去 30 日間に Azure AD承認要求が承認されなかったエンド ユーザー |  エンド ユーザーとして: <ol><li>[アクセス] [パネルに移動します](https://account.activedirectory.windowsazure.com/r#/joinGroups)。</li><li>移行の 30 日前にAD承認が保留された Azure グループを検索します。</li><li>Azure ADへの参加を要求します。</li></ol> 移行後に再要求しない限り、移行が承認される 30 日未満前にアクティブなグループに参加する要求。 |
 |||||
 
-DNS の場合:
+顧客管理 DNS ゾーンの場合:
 
 | Step(s) | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -155,7 +134,7 @@ DNS の場合:
 | Step(s) | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
 | SharePoint 2013 ワークフローを再発行します。 | 移行前の作業では、SharePoint 2013 ワークフローの数を減らしました。 移行が完了すると、顧客はワークフローを再発行できます。 | すべてのOffice顧客 | これは必須のアクションです。 そうしない場合は、ユーザーの混乱やヘルプ デスクの呼び出しが発生する可能性があります。 |
-| Outlook 経由でアイテムを共有する | テナントの切り替え後に Outlook 経由でアイテムを共有できなくなりました。 | SharePoint Online と OneDrive for Business | - SharePoint Online と OneDrive for Business では、Outlook 経由でアイテムを共有できます。 Outlook ボタンを押すと、共有可能なリンクが作成され、新しいメッセージにプッシュOutlook Web App。 <br><br> - テナントのカットオーバー後、この共有方法は機能しません。 これは既知の問題だと認識しています。 ただし、この Outlook 機能は廃止の道にあるので、廃止が展開されるまで問題の修正は計画されていません。 |
+| Outlook 経由でアイテムを共有する | テナントの切り替え後に Outlook 経由でアイテムを共有できなくなりました。 | Sharepoint Online と OneDrive for Business | - SharePoint Online と OneDrive for Business では、Outlook 経由でアイテムを共有できます。 Outlook ボタンを押すと、共有可能なリンクが作成され、新しいメッセージにプッシュOutlook Web App。 <br><br> - テナントのカットオーバー後、この共有方法は機能しません。 これは既知の問題だと認識しています。 ただし、この Outlook 機能は廃止の道にあるので、廃止が展開されるまで問題の修正は計画されていません。 |
 
 
 ### <a name="exchange-online-phase-5-of-9"></a>Exchange Online (フェーズ 5 / 9)
