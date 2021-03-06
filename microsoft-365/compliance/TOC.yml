@@ -36,10 +36,6 @@
           href: communication-compliance-feature-reference.md
         - name: ケース スタディ - Contoso は不快な言葉ポリシーをすばやく構成します
           href: communication-compliance-case-study.md
-        - name: Office 365 の監視ポリシー
-          href: supervision-policies.md
-        - name: Office 365 の監視ポリシーを構成する
-          href: configure-supervision-policies.md
     - name: インサイダー リスクの管理
       items:
         - name: 概要
