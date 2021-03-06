@@ -19,16 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 3d317a0a26d69eb46b8bb84253571b7d14f9836b
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: a716e3dd8138d5f7f9b5f8d8abbdb401211db9ae
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242491"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461872"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> アプリのアイテム保持ポリシーに関するメッセージが表示される場合は、IT 部門に連絡して、ポリシーがどのように構成されているかを確認します。 これらのメッセージが Teams チャットまたはチャネル メッセージ用である場合は、「[アイテム保持ポリシーに関する Teams メッセージ](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)」を参照してください。
+>
+> このページの情報は、コンプライアンス上の理由からアイテム保持ポリシーと保持ラベルを作成できる IT 管理者向けです。
 
 ほとんどの組織では、電子メール、ドキュメント、インスタント メッセージなどのデータの量と複雑さが日々増しています。次の必要性から、これらの情報を効果的に管理することが重要です。
   
@@ -243,7 +248,7 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> 必要 <br /> いいえ <br /> いいえ <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子| いいえ | はい |
 |保持の手動適用 | いいえ | はい |

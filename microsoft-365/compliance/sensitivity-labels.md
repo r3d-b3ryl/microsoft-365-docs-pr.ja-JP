@@ -22,16 +22,21 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2121c58b0105519d5dacda0c0bb39a102cf8d299
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 9232ccd9fd64676cea0826b05ccd7e68fcf054b9
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407263"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454606"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> Office アプリに表示される秘密度レベルに関する情報をお探しの場合は、「[Office のファイルとメールに秘密度レベルを適用する](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)」をご覧ください。
+>
+> このページの情報は、これらのラベルを作成および構成できる IT 管理者向けです。
 
 組織の従業員は、業務を行うために組織内外の関係者と共同作業を行います。このためコンテンツはファイアウォールの内側だけでなく、さまざまなデバイス、アプリ、サービスを越えて存在することになります。この場合、組織のビジネス ポリシーとコンプライアンス ポリシーを満たす安全な方法でコンテンツを保護することが必要です。
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: 857f8118bb2cc0f94065a8b8696c92bd3ae05cc4
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905236"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461852"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
 
@@ -98,7 +98,7 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 
 ![SharePoint の「アイテムが削除されませんでした」というメッセージ](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-<sup>2</sup> コンテナーには、SharePoint ドキュメント ライブラリと Exchange メールボックスが含まれます。
+<sup>2</sup> コンテナーには、SharePoint ドキュメント ライブラリ、OneDrive アカウントと Exchange メールボックスが含まれます。
 
 >[!IMPORTANT] 
 > 規制レコードの最も重要な違いは、コンテンツに適用された後は誰もラベルを削除できず、グローバル管理者でさえもそれを削除できないということです。 

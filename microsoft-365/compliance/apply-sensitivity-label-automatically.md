@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 4eeedca64d1b2244355bb3e0e233969bdd02810c
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084678"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461892"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -60,7 +60,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
     
     SharePoint と OneDrive の自動ラベル付けに固有:
     - Word、PowerPoint、Excel の Office ファイルがサポートされています。 Open XML 形式 (.docx や .xlsx など) はサポートされていますが、Microsoft Office 97-2003 形式 (.doc や .xls など) はサポートされていません。
-        - これらのファイルは、オープン セッションの一部ではなく、自動ラベル付けポリシーの作成後に作成、アップロード、または変更されたかどうか、または自動ラベル付けポリシーの作成後に変更されていない既存のファイルです。
+        - これらのファイルは、自動ラベル付けポリシーが作成される前または後に、保存時に自動ラベル付けできます。 開いているセッションの一部である (ファイルが開いている) 場合、ファイルに自動ラベル付けはできないことに注意してください。
     - テナント内で 1 日あたり最大 25,000 個の自動的にラベル付けされたファイル。
     - テナントあたり最大 10 個の自動ラベル付けポリシーが作成されます。各ポリシーは、最大 10 サイト (SharePoint サイトまたは OneDrive サイト) を対象としています。
     - シミュレーション モードの場合、およびラベルが適用される場合、自動ラベル付けポリシーの結果として、変更、変更者、変更日の既存の値は変更されません。
