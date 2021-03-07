@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。
+description: Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e95c2f3627a6bb0c28b736437012a92107b3533
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: a751ffea9fa184faf90bfe7c43b44c5d4e53bfbf
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976248"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461818"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -61,6 +61,8 @@ ms.locfileid: "49976248"
 - Microsoft Forms 内のユーザーおよび管理者のアクティビティ
 
 - SharePoint Online または Microsoft Teams を使用するサイトの機密ラベルのユーザーおよび管理アクティビティ
+
+- ブリーフィング メールと MyAnalytics での管理者アクティビティ
 
 ## <a name="requirements-to-search-the-audit-log"></a>監査ログを検索するための要件
 
@@ -178,7 +180,7 @@ ms.locfileid: "49976248"
 
       監査ログには、100 件以上のユーザーおよび管理者アクティビティが記録されます。 各種サービスの各アクティビティの説明を確認するには、本記事のこのトピックの「**監査されるアクティビティ**」タブをクリックしてください。
 
-   1. [**開始日**] と [**終了日**]: 既定で過去 7 日間が選択されています。 日付と時間の範囲を選択し、その期間内に発生したイベントを表示します。 日付と時間は、協定世界時 (UTC) 形式で指定します。 指定できる日付範囲は最大 90 日です。 選択した日付範囲が 90 日間よりも大きい場合は、エラーが表示されます。
+   1. [**開始日**] と [**終了日**]: 既定で過去 7 日間が選択されています。 日付と時間の範囲を選択し、その期間内に発生したイベントを表示します。 日付と時刻は、ローカル時刻で表示されます。 指定できる日付範囲は最大 90 日です。 選択した日付範囲が 90 日間よりも大きい場合は、エラーが表示されます。
 
       > [!TIP]
       > 最大の日付範囲である 90 日を使用する場合は、[**開始日**] で現在の時刻を選択してください。それ以外の時刻を選択すると、開始日が終了日より前であるというエラーが返されます。過去 90 日以内に監査を有効にした場合、最大の日付範囲の開始日を監査を有効にした日付より前にすることはできません。
@@ -221,7 +223,7 @@ ms.locfileid: "49976248"
 
 検索結果には、検索によって返された各イベントに関する次の情報が含まれます。
 
-- [**日付**]: イベントが発生した日付と時刻 (UTC 形式)。
+- [**日付**]: イベントが発生した日付と時刻 (ローカル時刻)。
 
 - [**IP アドレス**]: アクティビティがログに記録されたときに使用されたデバイスの IP アドレス。 IP アドレスは、IPv4 または IPv6 アドレスの形式で表示されます。
 
@@ -368,7 +370,7 @@ ms.locfileid: "49976248"
         [Power BI アクティビティ](#power-bi-activities)
     :::column-end:::
     :::column:::
-        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+        [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
         [Microsoft Teams アクティビティ](#microsoft-teams-activities)
@@ -417,6 +419,18 @@ ms.locfileid: "49976248"
     :::column-end:::
     :::column:::
         [アイテム保持ポリシーと保持ラベルのアクティビティ](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [ブリーフィング メール アクティビティ](#briefing-email-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [MyAnalytics アクティビティ](#myanalytics-activities)
+    :::column-end:::
+    :::column:::
+        [情報バリア アクティビティ](#information-barriers-activities)
     :::column-end:::
     :::column:::
         [Exchange 管理アクティビティ](#exchange-admin-audit-log)
@@ -790,7 +804,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 
 Power BI の監査ログは、既定では有効になっていません。 監査ログ内の Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。 手順については、[Power BI 管理ポータル](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)の「監査ログ」セクションをご覧ください。
 
-### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Workplace Analytics アクティビティ
+### <a name="workplace-analytics-activities"></a>Workplace Analytics アクティビティ
 
 Workplace Analytics は、グループが組織全体でどのように共同作業するかに関する分析情報を提供します。 次の表に、Workplace Analytics で管理者の役割またはアナリストの役割が割り当てられているユーザーが実行するアクティビティを示します。 アナリストの役割が割り当てられたユーザーは、すべてのサービス機能に完全なアクセス権を持ち、製品を使用して分析を行います。 管理者の役割を割り当てられたユーザーは、プライバシー設定とシステム既定を構成でき、Workplace Analytics で組織データを準備、アップロード、および検証できます。 詳細については、「[Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig)」を参照してください。
 
@@ -969,6 +983,42 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 | アイテム保持ポリシーの更新された設定 | SetRetentionComplianceRule | 管理者が既存のアイテム保持ポリシーの保持設定を変更しました。 保持設定には、アイテムを保持する期間、保持期間が終了した際のアイテムへの処理 （アイテムの削除、保持、またはアイテムの保持と削除など）が含まれます。 このアクティビティは、[Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) コマンドレットの実行にも対応しています。 |
 | 更新された保持ラベル |SetComplianceTag  | 管理者が既存の保持ラベルを更新しました。|
 | 更新アイテム保持ポリシー |SetRetentionCompliancePolicy |管理者が既存のアイテム保持ポリシーを更新しました。 このイベントをトリガーする更新には、アイテム保持ポリシーが適用されるコンテンツの場所の追加または除外が含まれます。|
+||||
+
+### <a name="briefing-email-activities"></a>ブリーフィング メール アクティビティ
+
+Office 365 監査ログに記録されるブリーフィング メールのアクティビティの一覧を次の表に記載します。 ブリーフィング メールの詳細については、下記を参照してください。
+
+- [ブリーフィングメールの概要](https://docs.microsoft.com/Briefing/be-overview)
+
+- [ブリーフィング メールの構成](https://docs.microsoft.com/Briefing/be-admin)
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|更新された組織のプライバシー設定|UpdatedOrganizationBriefingSettings|管理者が、ブリーフィング メールの組織のプライバシー設定を更新します。 |
+|更新されたユーザー プライバシーの設定|UpdatedUserBriefingSettings|管理者が、ブリーフィング メールのユーザー プライバシー設定を更新します。
+||||
+
+### <a name="myanalytics-activities"></a>MyAnalytics アクティビティ
+
+Office 365 監査ログに記録されるMyAnalytics のアクティビティの一覧を次の表に記載します。 MyAnalytics の詳細については、「[管理者向けの MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins)」を参照してください。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|更新された組織の MyAnalytics 設定|UpdatedOrganizationMyAnalyticsSettings|管理者は MyAnalytics の組織レベルの設定を更新します。 |
+|更新されたユーザーの MyAnalytics 設定|UpdatedUserMyAnalyticsSettings|管理者が MyAnalytics のユーザー設定を更新します。|
+||||
+
+### <a name="information-barriers-activities"></a>情報バリア アクティビティ
+
+Office 365 監査ログに記録される情報バリアのアクティビティの一覧を次の表に記載します。 情報バリアの詳細については、「[Microsoft 365 の情報の障壁について](information-barriers.md)」を参照してください。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:----------------|:------------|:--------------|
+| サイトに追加されたセグメント | SegmentsAdded | SharePoint、グローバル管理者、またはサイト所有者が、1 つ以上の情報バリア セグメントをサイトに追加しました。 |
+| サイトの変更されたセグメント | SegmentsChanged | SharePoint またはグローバル管理者が、サイトの 1 つ以上の情報バリア セグメントを変更しました。 |
+| サイトから削除されたセグメント | SegmentsRemoved | SharePoint またはグローバル管理者が、サイトから 1 つ以上の情報バリア セグメントを削除しました。 |
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理者監査ログ
 
