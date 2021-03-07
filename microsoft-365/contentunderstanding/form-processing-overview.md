@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でのフォーム処理について学ぶ
-ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 1dba8828a158a5163017ee5f37735f44e974274c
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242448"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515162"
 ---
 # <a name="form-processing-overview"></a>フォーム処理の概要
 
@@ -45,6 +45,13 @@ Office 365 管理者 は、ユーザーが SharePoint ドキュメント ライ�
 ### <a name="file-limitations"></a>ファイルの制限事項
 
 フォーム処理モデルを使用する場合は、[ファイルの使用に関する必要条件と制限事項](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)にご注意ください。
+
+### <a name="multi-geo-environments"></a>Multi-Geo 環境
+
+[Microsoft 365 Multi-Geo 環境](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)で SharePoint Syntex をセットアップする場合、中央の場所でフォーム処理を使用するように構成することしかできません。 サテライトの場所でフォーム処理を使用する場合は、Microsoft サポートに連絡してください。
+
+
+
 
 
 
