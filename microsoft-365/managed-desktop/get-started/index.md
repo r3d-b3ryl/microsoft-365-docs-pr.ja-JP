@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 02f12174ef3b8a55f9642bba41c845952b1c1c48
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950546"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509280"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの使用を開始する
 
@@ -21,7 +21,7 @@ ms.locfileid: "47950546"
 > この順番に従うことをお勧めしますが、必須ではありません。
 
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)
-2. [条件付きアクセスを調整する](conditional-access.md)
+2. [登録後に設定を調整する](conditional-access.md)
 3. [ライセンスを割り当てる](assign-licenses.md)
 4. [Intune 会社ポータルを展開する](company-portal.md)
 5. [Enterprise State Roaming を有効にする](enterprise-state-roaming.md)

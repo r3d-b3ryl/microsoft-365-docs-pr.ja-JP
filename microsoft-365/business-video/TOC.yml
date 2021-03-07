@@ -87,6 +87,8 @@
       items:
         - name: Bookings の概要
           href: overview-bookings.md
+        - name: Microsoft Lists でビジネス情報を追跡する
+          href: track-info-lists.md
         - name: イベントを計画する
           href: plan-event.md
     - name: サービスの管理

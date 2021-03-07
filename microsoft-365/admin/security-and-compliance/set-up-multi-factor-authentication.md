@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5ea367e64108e80ee7429ec700cf2ac0551aeab2
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105153"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514970"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
 
@@ -81,10 +81,11 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>組織の先進認証をオンにする
 
-ほとんどのサブスクリプションでは、先進認証が自動的にオンになりますが、サブスクリプションをずっと前に購入した場合は、オンにならない可能性があります。 Office アプリで MFA が適切に機能する前に、この機能をオンにする必要があります。
+ほとんどのサブスクリプションでは、先進認証が自動的にオンになりますが、2017 年 8 月より前にサブスクリプションを購入した場合、多要素認証などの機能を Outlook などの Windows クライアントで機能させるには、先進認証をオンにする必要があります。
+
 
 1. Microsoft 365 管理センターで、左側のナビゲーションの **[設定]** \> **[組織の設定]** の順に選択します。
-1. **[サービス]** タブで、**[先進認証]** を選択し、**[先進認証]** ウィンドウで、**[先進認証を有効にする]** が選択されていることを確認します。 **[変更の保存]** を選びます。
+2. **[サービス]** タブで、**[先進認証]** を選択し、**[先進認証]** ウィンドウで、**[先進認証を有効にする]** が選択されていることを確認します。 **[変更の保存]** を選びます。
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>従来のユーザーごとの MFA をオフにする
 

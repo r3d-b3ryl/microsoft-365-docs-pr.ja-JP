@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988070"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509088"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -129,6 +129,7 @@ Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** �
 - [モビリティ – ユーザー エクスペリエンス](mobility.md)
 - [チームワーク – ユーザー エクスペリエンス](teamwork.md)
 - [Microsoft 365 アプリの正常性 – テクノロジ エクスペリエンス](apps-health.md)
+- [エンドポイントの分析](https://docs.microsoft.com/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>ビジネス継続性特別レポート
 

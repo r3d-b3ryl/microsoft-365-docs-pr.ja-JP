@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921136"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509268"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -79,7 +79,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 17. **[次へ]** をクリックします。
 18. **[Define external sharing and device access settings]** (外部共有とデバイス アクセス設定の定義) ページで、**[Control external sharing from labeled SharePoint sites]** (ラベル付き SharePoint サイトからの外部共有の制御) を選択します。
 19. **[Content can be shared with]** (コンテンツの共有先) で、ゲスト アクセスを許可する場合には **[新規および既存のゲスト]** を選択し、許可しない場合には **[組織内のユーザーのみ]** を選択します。
-20. **[非管理対象デバイスからのアクセス]** で、**[アクセスをブロックする]** を選びます。
+20. **[非管理対象デバイスからのアクセス]** で、**[アクセスをブロックする]** を選びます。 (ゲストを許可し、管理されているデバイスを持たない場合は、**[制限された、Web のみのアクセスを許可する]** を選択できます。)
 21. **[次へ]** をクリックします。
 22. **[Auto-labeling for database columns]** (データベースの列の自動ラベル付け) ページで、**[次へ]** をクリックします。
 23. **[ラベルの作成]** をクリックし、**[完了]** をクリックします。
@@ -133,7 +133,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 4. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** をクリックします。
 5. 秘密度ラベルを作成したときにゲスト共有が許可されていた場合は、**[新規および既存のゲスト]** が選択されていることを確認します。 秘密度ラベルを作成したときにゲスト共有が許可されていなかった場合は、**[組織内のユーザーのみ]** を選びます。
 6. [既定の共有リンクの種類] で、**[組織レベルの設定と同じ]** チェック ボックスをオフにして、**[既存のアクセス権を持つユーザー]** を選びます。
-7. **[保存]** をクリックします。
+7. [**保存**] をクリックします。
 
 これをチーム作成プロセスの一部としてスクリプト化する場合は、次のパラメーターを指定して [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) を使用します。
 

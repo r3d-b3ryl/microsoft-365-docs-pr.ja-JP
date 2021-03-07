@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Project Cortex のコンテンツ理解をセットアップする
-ms.openlocfilehash: 58496041004218b48b864fa725084cba8edd518b
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: a275b2ec14403e16651acb293f8598b453fd3739
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145477"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515018"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -42,6 +42,16 @@ Microsoft 365管理センターでの最初のセットアップの後でも設�
 > Microsoft 365 管理センターにアクセスし、SharePoint Syntex をセットアップするには、グローバル管理者または SharePoint 管理者のアクセス許可が必要です。
 
 管理者は、セットアップ後に選択した設定を変更することができます。また、コンテンツ認識管理設定全体において、Microsoft 365 管理センターの管理設定を理解している必要があります。
+
+### <a name="licensing"></a>ライセンス
+
+SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブスクリプションが必要であり、各ユーザーに次のライセンスが割り当てられている必要があります。
+
+- SharePoint Syntex
+- SharePoint Syntex - SPO の種類
+- SharePoint Syntex の共通データ サービス
+
+将来 SharePoint Syntex サブスクリプションを解約すると (または試用期間が終了すると)、ユーザーはドキュメントの理解またはフォーム処理モデルを作成または実行できなくなり、コンテンツ センター テンプレートは使用できなくなります。 さらに、用語ストア レポート、SKOS 分類インポート、およびコンテンツの種類のプッシュは使用できなくなります。 コンテンツが削除されたり、サイトのアクセス許可が変更されたりすることはありません。
 
 ## <a name="to-set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
