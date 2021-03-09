@@ -9,30 +9,29 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e7619287e6bd98236f5b513ccbdb6e6b30777af6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 840cb16360a793f351507122566931e648e04866
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646885"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542778"
 ---
 # <a name="payment-information-for-russia"></a>ロシアの支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-実際には、お支払いの際に、実際にご請求ください。
+RUB でのみ支払いを行い、支払い送金の請求書番号を参照してください。
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+## <a name="electronic-funds-transfer"></a>電子決済
 
-**Bank:** ZAO KB Citibank モスクワ  
+**Bank:** ZAO KB Citibank in Moscow  
 **SWIFT コード:** CITIRUMX  
-**Bik:** 044525202  
-**おける:** 7731420476  
-/ **P:** 773101001  
-**アカウント番号:** 40702810000702700004  
-**対応するアカウント:** 30101810300000000202 IN Mou Moskの空 Gtu Bank of ロシア  
-**アカウント名:** Microsoft 支払いロシアのお支払い
+**BIK:** 044525202  
+**INN:** 7731420476  
+**KPP:** 773101001  
+**アカウント番号:** 407028100000702700004  
+**対応するアカウント:** OPERU Moskovsky GTU Bank of Russia の 301018103000000000202  
+**アカウント名:** Microsoft Payments Russia LLC

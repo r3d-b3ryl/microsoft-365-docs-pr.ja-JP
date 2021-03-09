@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9c19c0243abfb6f0823cce3306e29e47444032fe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4c14ef71c429a19f479456c6a0c2c8120b7ded0a
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638881"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543570"
 ---
-# <a name="contact-support-for-united-kingdom"></a>英国のサポートに問い合わせる
+# <a name="contact-support-for-united-kingdom"></a>英国のサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
@@ -30,7 +29,7 @@ ms.locfileid: "48638881"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: 午前9時 Mon-Fri 午後5時
+英語: Mon-Fri午前 9 時から午後 5 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 

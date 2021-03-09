@@ -1,5 +1,5 @@
 ---
-title: Micronesia のサポート情報
+title: ミクロネシアのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6ab5259b0bfe4d395a5b3376cb34f1f248e1d6c7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b79fcc2ec36c57a902b3dceaa365f4a28d2ff464
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641053"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545754"
 ---
-# <a name="contact-support-for-micronesia"></a>Micronesia のサポートに問い合わせる
+# <a name="contact-support-for-micronesia"></a>ミクロネシアのサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-+ 1 312 843 5148
++1 312 843 5148
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: Mon-Fri 11 AM-7 PM
+英語: Mon-Fri午前 11 時から午後 7 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
 英語: 24 時間年中無休
 
-国際通話料金の適用
+国際通話料が適用される

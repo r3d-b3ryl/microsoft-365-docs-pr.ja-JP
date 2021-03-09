@@ -9,30 +9,29 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e6c85c2b32e4c4db576005f728b3c79e58c5b89e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e126f8cdff6233522e94b4013703e5cda59b785
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639150"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543894"
 ---
-# <a name="contact-support-for-togo"></a>Togo のサポートに問い合わせる
+# <a name="contact-support-for-togo"></a>Togo のサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-フランス語: Mon-Fri 8 AM-4 AM
+フランス語: Mon-Fri午前 8 時から午前 4 時
 
-英語: Mon-Fri 8 AM-4 AM
+英語: Mon-Fri午前 8 時から午前 4 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
@@ -40,4 +39,4 @@ ms.locfileid: "48639150"
 
 英語: 24 時間年中無休
 
-国際通話料金の適用
+国際通話料が適用される

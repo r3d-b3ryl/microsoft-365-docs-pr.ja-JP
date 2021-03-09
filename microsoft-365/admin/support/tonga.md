@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 92c39e85ece5cf2da157a1e92b7bb86d164955d2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 478cb3e146884319b18a731cfceb9418c74871ce
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639133"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543834"
 ---
-# <a name="contact-support-for-tonga"></a>トンガのサポートに問い合わせる
+# <a name="contact-support-for-tonga"></a>Tonga のサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-+ 1 312 843 5148
++1 312 843 5148
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: Mon-Fri 2 PM-10 PM
+英語: Mon-Fri午後 2 時から午後 10 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
 英語: 24 時間年中無休
 
-国際通話料金の適用
+国際通話料が適用される
