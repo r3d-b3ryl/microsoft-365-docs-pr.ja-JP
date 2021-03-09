@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f6d73996ce538b457067a1cfabd2440eaf4a2891
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3c8521dc2096e32cd80b5cafec07060a8c80bf2f
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647665"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551346"
 ---
 # <a name="payment-information-for-faroe-islands"></a>フェロー諸島の支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-EUR のみに支払い、請求書番号を参照してください。
+お支払いは EUR でのみ行い、支払い送金の請求書番号を参照してください。
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+## <a name="electronic-funds-transfer"></a>電子決済
 
-**Bank:** Citibank、London  
+**Bank:** シティバンク(ロンドン)  
 **SWIFT コード/BIC:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**並べ替えコード:** 185008  
+**SORT コード:** 185008  
 **アカウント番号:** 12207591  
-**アカウント名:** 製  
+**アカウント名:** MICROSOFT  

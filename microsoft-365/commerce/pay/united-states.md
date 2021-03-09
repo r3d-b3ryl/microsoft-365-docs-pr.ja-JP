@@ -1,5 +1,5 @@
 ---
-title: 米国の支払い情報
+title: 米国のお支払い情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,34 +9,33 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7c41d9461adb70683b1f57878389e9e7d6c45991
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8cb102d06e3b732c4957c5a44222ffdf6201a3d7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648097"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549942"
 ---
-# <a name="payment-information-for-united-states"></a>米国の支払い情報
+# <a name="payment-information-for-united-states"></a>米国のお支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-米ドル単位で支払い、支払送金で請求書番号を参照してください。
+お支払いは USD のみであり、支払い送金の請求書番号を参照してください。
 
 ## <a name="check"></a>小切手
 
-**受取人:** 製  
+**受取人:** Microsoft  
 **郵送先住所:**   
-標準メール: PO ボックス842103、ダラス、TX 75284-2103  
-エクスプレスメール: ロックボックス842103、1950 Stemmons Frwy、ステップ。 5010、ダラス、TX 75207-2103
+標準メール: PO Box 842103, Dallas, TX 75284-2103  
+Express Mail: Lockbox 842103, 1950 N. Stemmons Frwy, Ste. 5010, Dallas, TX 75207-2103
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+## <a name="electronic-funds-transfer"></a>電子決済
 
-**Bank:** 米国の銀行  
+**Bank:** バンク オブ アメリカ  
 **SWIFT コード:** BOFAUS3N  
 **ABA/ルーティング番号:** 111 000 012  
 **アカウント番号:** 4426587954  
-**アカウント名:** 製  
+**アカウント名:** Microsoft  

@@ -1,5 +1,5 @@
 ---
-title: 韓国の支払い情報
+title: 韓国のお支払い情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a85331a7761241966988428e243c8c20bb2f73e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fbce897c3a9e0cb030de46b5e381cba056b800b1
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649567"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550590"
 ---
-# <a name="payment-information-for-korea"></a>韓国の支払い情報
+# <a name="payment-information-for-korea"></a>韓国のお支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-KRW のみで支払いを行い、請求書番号を参照してください。
+KRW でのみ支払いを行い、支払い送金の請求書番号を参照してください。
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+## <a name="electronic-funds-transfer"></a>電子決済
 
-**Bank:** Citibank  
-**ブランチ:** 89-29 Shinmunro-2Ka Chongro-gu ソウル、韓国110-062  
+**Bank:** シティバンク  
+**ブランチ:** 89-29 Shinmunro-2ka Chongro-gu Seoul, Korea 110-062  
 **SWIFT コード:** CITIKRSX  
 **アカウント番号:** 5001296088  
-**アカウント名:** MICROSOFT 韓国  
+**アカウント名:** MICROSOFT KOREA  
