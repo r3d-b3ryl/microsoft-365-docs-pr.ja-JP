@@ -1,5 +1,5 @@
 ---
-title: その他のサポート情報
+title: Kosovo のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a294fb38e0617dfc7ec5052d2a91359ec53d975
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3a07a0ad62b3553476ac682aac225b3c4a13d2a9
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641694"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546402"
 ---
-# <a name="contact-support-for-kosovo"></a>その他のサポートへのお問い合わせ
+# <a name="contact-support-for-kosovo"></a>Kosovo のサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-+ 1 312 843 5151
++1 312 843 5151
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: Mon-Fri 11 AM-7 PM
+英語: Mon-Fri午前 11 時から午後 7 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
 英語: 24 時間年中無休
 
-国際通話料金の適用
+国際通話料が適用される

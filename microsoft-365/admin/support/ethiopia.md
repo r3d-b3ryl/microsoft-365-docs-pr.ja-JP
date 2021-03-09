@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: afe0bd6cd83dbef1f5bb7858b95d5e86c09d5353
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 84a2e7dd1c412023d95ae7e2a3fe58c25ed8b3a6
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642745"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547566"
 ---
-# <a name="contact-support-for-ethiopia"></a>エチオピアのサポートに問い合わせる
+# <a name="contact-support-for-ethiopia"></a>エチオピアのサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-+ 27 21 427 3315
++27 21 427 3315
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: 午前6時から午後6時まで Mon-Fri
+英語: Mon-Fri午前 10 時から午後 6 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
 英語: 24 時間年中無休
 
-国際通話料金の適用
+国際通話料が適用される

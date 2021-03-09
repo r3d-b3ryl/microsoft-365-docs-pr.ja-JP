@@ -1,5 +1,5 @@
 ---
-title: 中国向けのサポート情報 (中国)
+title: 中国 (PRC) のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 26b8a044f2a8b537a95372c8733adbf2b05f506b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: af17314f94d7e6085f3d579870ded5f85058856e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643417"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548118"
 ---
-# <a name="contact-support-for-china-prc"></a>中国向けサポートへのお問い合わせ (中国)
+# <a name="contact-support-for-china-prc"></a>中国 (PRC) のサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
@@ -30,32 +29,32 @@ ms.locfileid: "48643417"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-中国語 (中国語): Mon-Fri 9 AM-6 PM
+中国語 (中国語): Mon-Fri午前 9 時から午後 6 時
 
-英語: 午前9時から午後6時 Mon-Fri
+英語: Mon-Fri午前 9 時から午後 6 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-中国語 (中国語): Mon-Fri 9 AM-6 PM
+中国語 (中国語): Mon-Fri午前 9 時から午後 6 時
 
 英語: 24 時間年中無休
 
-代替電話番号: 400 920 0365 (モバイル)
+代替電話番号: 400 920 0365 (Mobile)
 
 ## <a name="follow-us-on-wechat"></a>WeChat でフォローしてください
-![QR コードでの wprocess](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![WeChat QR コード](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
-## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>21Vianet によって運用される Office 365 のサポートへのお問い合わせ
+## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>21Vianet Office 365 のサポートに問い合わせ
 ## <a name="phone-number"></a>電話番号
-+ 86 4000 890 365
++86 4000 890 365
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-中国語と英語: Mon-Fri 9 AM-6 PM
+中国語と英語: Mon-Fri午前 9 時から午後 6 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-中国および英語の電話サポート: Mon-Fri 9 AM-9 PM
+中国語と英語の電話サポート: Mon-Fri午前 9 時から午後 9 時
 
-中国および英語のオンラインサポート (管理センター経由):24 時間、週7日
+中国語と英語のオンライン サポート (管理センター経由): 24 時間 365 日

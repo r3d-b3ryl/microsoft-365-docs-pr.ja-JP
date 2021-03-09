@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5ef2965da6ad3d404f865ac4a5e5bcd92e076366
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b66b5e8a0356c923537941ea5021cd69c19ef337
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641702"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546426"
 ---
-# <a name="contact-support-for-korea"></a>韓国のサポートへのお問い合わせ
+# <a name="contact-support-for-korea"></a>韓国のサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
@@ -30,16 +29,16 @@ ms.locfileid: "48641702"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-韓国語: 午前9時から午後6時 Mon-Fri
+韓国語: Mon-Fri午前 9 時から午後 6 時
 
-英語: 午前9時から午後6時 Mon-Fri
+英語: Mon-Fri午前 9 時から午後 6 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-韓国語: 午前9時から午後6時 Mon-Fri
+韓国語: Mon-Fri午前 9 時から午後 6 時
 
 英語: 24 時間年中無休
 
-代替電話番号:02 3483 1937
+代替電話番号: 02 3483 1937
 
 国内通話料金がかかります

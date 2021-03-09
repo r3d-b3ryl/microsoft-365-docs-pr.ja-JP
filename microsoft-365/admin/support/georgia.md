@@ -9,36 +9,35 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a6488eca054011707c1cf843cdf6f76fc6ae954e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e2cb2465575d2d65dbfe9d8580ed371fb985c92d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642493"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547254"
 ---
-# <a name="contact-support-for-georgia"></a>ジョージアのサポートへのお問い合わせ
+# <a name="contact-support-for-georgia"></a>ジョージア州のサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
 032 297 0124
 
-オプション2を選択します。
+オプション 2 を選択する
 
-オプション9を選択する
+オプション 9 を選択する
 
-コード7700を入力します。
+コード 7700 を入力する
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
 ロシア語: Mon-Fri 10 AM-7 PM モスクワ
 
-英語: Mon-Fri 9 AM-5 PM London
+英語: Mon-Fri午前 9 時から午後 5 時ロンドン
 
 ### <a name="technical-support"></a>テクニカル サポート:
 

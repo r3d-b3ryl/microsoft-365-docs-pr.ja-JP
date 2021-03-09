@@ -1,5 +1,5 @@
 ---
-title: Chad のサポート情報
+title: チャドのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,35 +9,34 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 19dafdc086d00f7a59a5270a4c24a3e8066b9907
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4b77cfaa32c5d5c7dc461956c89c39134a695118
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643381"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548142"
 ---
-# <a name="contact-support-for-chad"></a>Chad のサポートに問い合わせる
+# <a name="contact-support-for-chad"></a>チャドのサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-フランス語: 午前9時から午後5時 Mon-Fri
+フランス語: Mon-Fri 9 AM-5 PM
 
-英語: 午前9時 Mon-Fri 午後5時
+英語: Mon-Fri午前 9 時から午後 5 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-フランス語: 午前8時から午後9時 Mon-Fri
+フランス語: Mon-Fri午前 8 時から午後 9 時
 
 英語: 24 時間年中無休
 
-国際通話料金の適用
+国際通話料が適用される

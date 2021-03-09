@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e4458501be882a267ddfdb9a477d165d32731b14
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d3cd1baed308fc9c1005ae35232759f805786f52
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644221"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548994"
 ---
-# <a name="contact-support-for-argentina"></a>アルゼンチンのサポートに問い合わせる
+# <a name="contact-support-for-argentina"></a>アルゼンチンのサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
@@ -30,11 +29,11 @@ ms.locfileid: "48644221"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-スペイン語: 午前9時から午後5時 Mon-Fri
+スペイン語: Mon-Fri午前 9 時から午後 5 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-スペイン語: 1 日24時間、週7日
+スペイン語: 24 時間、週 7 日
 
 代替電話番号: 011 5354 2347
 

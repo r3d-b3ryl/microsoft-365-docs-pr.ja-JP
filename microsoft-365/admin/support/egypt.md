@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6b0f6574b0a424ec9fbcb6325d895b69d0d86ffc
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b1b2df955098387ceab8fb665fa89328120b7a0b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642901"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547650"
 ---
-# <a name="contact-support-for-egypt"></a>エジプトのサポートに問い合わせる
+# <a name="contact-support-for-egypt"></a>エジプトのサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
@@ -30,12 +29,12 @@ ms.locfileid: "48642901"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-アラビア語: 午前10時から午後6時まで Sun-Thu
+アラビア語: Sun-Thu 10 AM-6 PM
 
-英語: 午前6時から午後6時まで Mon-Fri
+英語: Mon-Fri午前 10 時から午後 6 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-アラビア語: 午前10時から午後6時まで Sun-Thu
+アラビア語: Sun-Thu 10 AM-6 PM
 
 英語: 24 時間年中無休

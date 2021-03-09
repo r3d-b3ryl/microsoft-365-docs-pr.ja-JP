@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0a331059a9b565b2c5de8b4104d6d578714adc92
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e9250b2829cb495a7aca341eeb772776afac5d25
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644173"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548898"
 ---
-# <a name="contact-support-for-aruba"></a>アルバのサポートへのお問い合わせ
+# <a name="contact-support-for-aruba"></a>アルバのサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-+ 1 312 843 5146
++1 312 843 5146
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-オランダ語: Mon-Fri 4 午前正午
+オランダ語: Mon-Fri午前 4 時
 
-英語: 正午 Mon-Fri 4 時
+英語: Mon-Fri午前 4 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
 英語: 24 時間年中無休
 
-国際通話料金の適用
+国際通話料が適用される
