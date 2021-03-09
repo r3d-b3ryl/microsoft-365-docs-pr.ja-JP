@@ -9,37 +9,36 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a448b11156770dac5cfe0d273fc75183a5aca8fd
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: de34ca4897f0fb1e9e2564bbe12282fdea6c8162
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405751"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542574"
 ---
-# <a name="payment-information-for-sweden"></a><span data-ttu-id="e1a37-103">スウェーデンのお支払い情報</span><span class="sxs-lookup"><span data-stu-id="e1a37-103">Payment information for Sweden</span></span>
+# <a name="payment-information-for-sweden"></a><span data-ttu-id="62f40-103">スウェーデンのお支払い情報</span><span class="sxs-lookup"><span data-stu-id="62f40-103">Payment information for Sweden</span></span>
 
-<span data-ttu-id="e1a37-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="e1a37-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="62f40-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="62f40-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="e1a37-105">電子決済</span><span class="sxs-lookup"><span data-stu-id="e1a37-105">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="62f40-105">電子決済</span><span class="sxs-lookup"><span data-stu-id="62f40-105">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="e1a37-106">**SEK で支払いを行い、支払い送金の請求書番号を参照してください。**</span><span class="sxs-lookup"><span data-stu-id="e1a37-106">**Please pay in SEK and reference invoice number(s) on your payment remittance.**</span></span>
+<span data-ttu-id="62f40-106">**SEK で支払いを行い、支払い送金の請求書番号を参照してください。**</span><span class="sxs-lookup"><span data-stu-id="62f40-106">**Please pay in SEK and reference invoice number(s) on your payment remittance.**</span></span>
 
-<span data-ttu-id="e1a37-107">Microsoft Ireland Operations **Limited** が請求する請求書がある場合は、次の銀行情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="e1a37-107">If you have an invoice billed by **Microsoft Ireland Operations Limited**, use this bank information:</span></span>
+<span data-ttu-id="62f40-107">Microsoft Ireland Operations **Limited** が請求する請求書がある場合は、次の銀行情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="62f40-107">If you have an invoice billed by **Microsoft Ireland Operations Limited**, use this bank information:</span></span>
 
-<span data-ttu-id="e1a37-108">Bank: Citibank, London</span><span class="sxs-lookup"><span data-stu-id="e1a37-108">Bank: Citibank, London</span></span>\
-<span data-ttu-id="e1a37-109">SWIFT コード: CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="e1a37-109">SWIFT Code: CITIGB2L</span></span>\
-<span data-ttu-id="e1a37-110">IBAN コード: GB22CITI18500812207656</span><span class="sxs-lookup"><span data-stu-id="e1a37-110">IBAN Code: GB22CITI18500812207656</span></span>\
-<span data-ttu-id="e1a37-111">アカウント番号: 12207656</span><span class="sxs-lookup"><span data-stu-id="e1a37-111">Account Number: 12207656</span></span>\
-<span data-ttu-id="e1a37-112">アカウント名: MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="e1a37-112">Account Name: MICROSOFT</span></span>
+<span data-ttu-id="62f40-108">Bank: Citibank, London</span><span class="sxs-lookup"><span data-stu-id="62f40-108">Bank: Citibank, London</span></span>\
+<span data-ttu-id="62f40-109">SWIFT コード: CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="62f40-109">SWIFT Code: CITIGB2L</span></span>\
+<span data-ttu-id="62f40-110">IBAN コード: GB22CITI18500812207656</span><span class="sxs-lookup"><span data-stu-id="62f40-110">IBAN Code: GB22CITI18500812207656</span></span>\
+<span data-ttu-id="62f40-111">アカウント番号: 12207656</span><span class="sxs-lookup"><span data-stu-id="62f40-111">Account Number: 12207656</span></span>\
+<span data-ttu-id="62f40-112">アカウント名: MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="62f40-112">Account Name: MICROSOFT</span></span>
 
-<span data-ttu-id="e1a37-113">2021 年 3 月 1 日から注文と消費に対して **Microsoft AB** によって請求された請求書がある場合は、次の銀行情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="e1a37-113">If you have an invoice billed by **Microsoft AB** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
+<span data-ttu-id="62f40-113">2021 年 3 月 1 日から注文と消費に対して **Microsoft AB** によって請求された請求書がある場合は、次の銀行情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="62f40-113">If you have an invoice billed by **Microsoft AB** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
 
-<span data-ttu-id="e1a37-114">Bank: Citibank Europe plc</span><span class="sxs-lookup"><span data-stu-id="e1a37-114">Bank: Citibank Europe plc</span></span>\
-<span data-ttu-id="e1a37-115">SWIFT コード: CITIIE2X</span><span class="sxs-lookup"><span data-stu-id="e1a37-115">SWIFT Code: CITIIE2X</span></span>\
-<span data-ttu-id="e1a37-116">IBAN コード: IE86CITI99005170000131</span><span class="sxs-lookup"><span data-stu-id="e1a37-116">IBAN Code: IE86CITI99005170000131</span></span>\
-<span data-ttu-id="e1a37-117">アカウント番号: 70000131</span><span class="sxs-lookup"><span data-stu-id="e1a37-117">Account Number: 70000131</span></span>\
-<span data-ttu-id="e1a37-118">アカウント名: MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="e1a37-118">Account Name: MICROSOFT</span></span>
+<span data-ttu-id="62f40-114">Bank: Citibank Europe plc</span><span class="sxs-lookup"><span data-stu-id="62f40-114">Bank: Citibank Europe plc</span></span>\
+<span data-ttu-id="62f40-115">SWIFT コード: CITIIE2X</span><span class="sxs-lookup"><span data-stu-id="62f40-115">SWIFT Code: CITIIE2X</span></span>\
+<span data-ttu-id="62f40-116">IBAN コード: IE86CITI99005170000131</span><span class="sxs-lookup"><span data-stu-id="62f40-116">IBAN Code: IE86CITI99005170000131</span></span>\
+<span data-ttu-id="62f40-117">アカウント番号: 70000131</span><span class="sxs-lookup"><span data-stu-id="62f40-117">Account Number: 70000131</span></span>\
+<span data-ttu-id="62f40-118">アカウント名: MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="62f40-118">Account Name: MICROSOFT</span></span>

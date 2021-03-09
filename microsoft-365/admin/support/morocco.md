@@ -9,43 +9,42 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8a815c4605094b10d210e35ab5eabb4b7f7fd9ca
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: aa3250f530fd37454f28e22457c731264e0bfdbb
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640861"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545670"
 ---
-# <a name="contact-support-for-morocco"></a><span data-ttu-id="addb0-103">モロッコのサポートへのお問い合わせ</span><span class="sxs-lookup"><span data-stu-id="addb0-103">Contact support for Morocco</span></span>
+# <a name="contact-support-for-morocco"></a><span data-ttu-id="1a084-103">モロッコのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="1a084-103">Contact support for Morocco</span></span>
 
-<span data-ttu-id="addb0-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="addb0-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="1a084-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="1a084-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="addb0-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="addb0-105">Phone number</span></span>
-<span data-ttu-id="addb0-106">0801 000 809</span><span class="sxs-lookup"><span data-stu-id="addb0-106">0801 000 809</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1a084-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="1a084-105">Phone number</span></span>
+<span data-ttu-id="1a084-106">0801 000 809</span><span class="sxs-lookup"><span data-stu-id="1a084-106">0801 000 809</span></span>
 
-<span data-ttu-id="addb0-107">オプション9を選択する</span><span class="sxs-lookup"><span data-stu-id="addb0-107">Select option 9</span></span>
+<span data-ttu-id="1a084-107">オプション 9 を選択する</span><span class="sxs-lookup"><span data-stu-id="1a084-107">Select option 9</span></span>
 
-<span data-ttu-id="addb0-108">コード7700を入力します。</span><span class="sxs-lookup"><span data-stu-id="addb0-108">Enter code 7700</span></span>
+<span data-ttu-id="1a084-108">コード 7700 を入力する</span><span class="sxs-lookup"><span data-stu-id="1a084-108">Enter code 7700</span></span>
 
-## <a name="hours"></a><span data-ttu-id="addb0-109">時間</span><span class="sxs-lookup"><span data-stu-id="addb0-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="addb0-110">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="addb0-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1a084-109">時間</span><span class="sxs-lookup"><span data-stu-id="1a084-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1a084-110">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="1a084-110">Billing Support:</span></span>
 
-<span data-ttu-id="addb0-111">アラビア語: 午前8時から午後4時 Sun-Thu</span><span class="sxs-lookup"><span data-stu-id="addb0-111">Arabic: Sun-Thu 8 AM-4 PM</span></span>
+<span data-ttu-id="1a084-111">アラビア語: Sun-Thu午前 8 時から午後 4 時</span><span class="sxs-lookup"><span data-stu-id="1a084-111">Arabic: Sun-Thu 8 AM-4 PM</span></span>
 
-<span data-ttu-id="addb0-112">フランス語: 午前8時から午後4時 Mon-Fri</span><span class="sxs-lookup"><span data-stu-id="addb0-112">French: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="1a084-112">フランス語: Mon-Fri午前 8 時から午後 4 時</span><span class="sxs-lookup"><span data-stu-id="1a084-112">French: Mon-Fri 8 AM-4 PM</span></span>
 
-<span data-ttu-id="addb0-113">英語: 午前8時から午後4時 Mon-Fri</span><span class="sxs-lookup"><span data-stu-id="addb0-113">English: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="1a084-113">英語: Mon-Fri午前 8 時から午後 4 時</span><span class="sxs-lookup"><span data-stu-id="1a084-113">English: Mon-Fri 8 AM-4 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="addb0-114">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="addb0-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1a084-114">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="1a084-114">Technical Support:</span></span>
 
-<span data-ttu-id="addb0-115">アラビア語: 午前8時から午後4時 Sun-Thu</span><span class="sxs-lookup"><span data-stu-id="addb0-115">Arabic: Sun-Thu 8 AM-4 PM</span></span>
+<span data-ttu-id="1a084-115">アラビア語: Sun-Thu午前 8 時から午後 4 時</span><span class="sxs-lookup"><span data-stu-id="1a084-115">Arabic: Sun-Thu 8 AM-4 PM</span></span>
 
-<span data-ttu-id="addb0-116">フランス語: Mon-Fri 7 AM-8 PM</span><span class="sxs-lookup"><span data-stu-id="addb0-116">French: Mon-Fri 7 AM-8 PM</span></span>
+<span data-ttu-id="1a084-116">フランス語: Mon-Fri 7 AM-8 PM</span><span class="sxs-lookup"><span data-stu-id="1a084-116">French: Mon-Fri 7 AM-8 PM</span></span>
 
-<span data-ttu-id="addb0-117">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="addb0-117">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1a084-117">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="1a084-117">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="addb0-118">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="addb0-118">Local call charges apply</span></span>
+<span data-ttu-id="1a084-118">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="1a084-118">Local call charges apply</span></span>
