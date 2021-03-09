@@ -1,5 +1,5 @@
 ---
-title: 新しいカレドニアのサポート情報
+title: ニューカレドニアのサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,23 +9,22 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 493e66aed2f3b572f198ff17c75c3587d76e8604
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d9bbb10f18125307de52b310069d3413d147cd67
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640777"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545466"
 ---
-# <a name="contact-support-for-new-caledonia"></a>新しいカレドニアのサポートに問い合わせる
+# <a name="contact-support-for-new-caledonia"></a>ニューカレドニアのサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
@@ -40,4 +39,4 @@ ms.locfileid: "48640777"
 
 英語: 24 時間年中無休
 
-国際通話料金の適用
+国際通話料が適用される

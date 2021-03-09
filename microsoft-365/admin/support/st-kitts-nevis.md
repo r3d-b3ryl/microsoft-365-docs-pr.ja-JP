@@ -1,5 +1,5 @@
 ---
-title: セントクリストファー & ネイビスのサポート情報
+title: St Kitts & Nevis のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f96b4aca45363af34088cd54b997cc3a9e8e2109
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8a3120b82621f73578e44f25535f3fab087506d8
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639409"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544218"
 ---
-# <a name="contact-support-for-st-kitts--nevis"></a>セントクリストファー & ネイビスのサポートへのお問い合わせ
+# <a name="contact-support-for-st-kitts--nevis"></a>St Kitts & Nevis のサポートにお問い合わせください
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
@@ -30,7 +29,7 @@ ms.locfileid: "48639409"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: 午前9時 Mon-Fri 午後5時
+英語: Mon-Fri午前 9 時から午後 5 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 

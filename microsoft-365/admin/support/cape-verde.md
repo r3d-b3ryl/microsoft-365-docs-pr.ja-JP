@@ -1,5 +1,5 @@
 ---
-title: カーボベルデのサポート情報 (カーボベルデ)
+title: カーボベルデ (カーボベルデ) のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3b05cb91ca1a7c4c2ab8b27be10120e8ef7b1c2e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2b9640619594dc5f8878e5d2be233da25f341093
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643465"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548226"
 ---
-# <a name="contact-support-for-cape-verde-cabo-verde"></a>カーボベルデのサポートへのお問い合わせ (カーボベルデ)
+# <a name="contact-support-for-cape-verde-cabo-verde"></a>カーボベルデ (カーボベルデ) の連絡先のサポート
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-+ 351 21 366 5030
++351 21 366 5030
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: 午前8時から午後4時 Mon-Fri
+英語: Mon-Fri午前 8 時から午後 4 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
@@ -38,4 +37,4 @@ ms.locfileid: "48643465"
 
 英語: 24 時間年中無休
 
-国際通話料金の適用
+国際通話料が適用される
