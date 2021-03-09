@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4eaf5a90e622d0aebe2321384bdddb25e7cc2c90
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0e4bbef3fa2548fc35a4b0869b232335bfecaa24
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643429"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548262"
 ---
-# <a name="contact-support-for-canada"></a><span data-ttu-id="f6c52-103">カナダのサポートへのお問い合わせ</span><span class="sxs-lookup"><span data-stu-id="f6c52-103">Contact support for Canada</span></span>
+# <a name="contact-support-for-canada"></a><span data-ttu-id="a31a2-103">カナダのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="a31a2-103">Contact support for Canada</span></span>
 
-<span data-ttu-id="f6c52-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="f6c52-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="a31a2-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="a31a2-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f6c52-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="f6c52-105">Phone number</span></span>
-<span data-ttu-id="f6c52-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="f6c52-106">1 800 865 9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="a31a2-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="a31a2-105">Phone number</span></span>
+<span data-ttu-id="a31a2-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="a31a2-106">1 800 865 9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f6c52-107">時間</span><span class="sxs-lookup"><span data-stu-id="f6c52-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f6c52-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="f6c52-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="a31a2-107">時間</span><span class="sxs-lookup"><span data-stu-id="a31a2-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="a31a2-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="a31a2-108">Billing Support:</span></span>
 
-<span data-ttu-id="f6c52-109">英語: 午前9時 (午後5時) のローカル Mon-Fri</span><span class="sxs-lookup"><span data-stu-id="f6c52-109">English: Mon-Fri 9 AM-5 PM Local</span></span>
+<span data-ttu-id="a31a2-109">英語: Mon-Fri午前 9 時から午後 5 時 (ローカル)</span><span class="sxs-lookup"><span data-stu-id="a31a2-109">English: Mon-Fri 9 AM-5 PM Local</span></span>
 
-<span data-ttu-id="f6c52-110">フランス語: 午前9時 00 ~ 午後 Mon-Fri</span><span class="sxs-lookup"><span data-stu-id="f6c52-110">French: Mon-Fri 9 AM-5 PM ET</span></span>
+<span data-ttu-id="a31a2-110">フランス語: Mon-Fri午前 9 時から午後 5 時 (ET)</span><span class="sxs-lookup"><span data-stu-id="a31a2-110">French: Mon-Fri 9 AM-5 PM ET</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f6c52-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="f6c52-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="a31a2-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="a31a2-111">Technical Support:</span></span>
 
-<span data-ttu-id="f6c52-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="f6c52-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="a31a2-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="a31a2-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="f6c52-113">フランス語: 午前9時 00 ~ 午後 Mon-Fri</span><span class="sxs-lookup"><span data-stu-id="f6c52-113">French: Mon-Fri 9 AM-5 PM ET</span></span>
+<span data-ttu-id="a31a2-113">フランス語: Mon-Fri午前 9 時から午後 5 時 (ET)</span><span class="sxs-lookup"><span data-stu-id="a31a2-113">French: Mon-Fri 9 AM-5 PM ET</span></span>
