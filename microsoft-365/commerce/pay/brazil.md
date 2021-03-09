@@ -1,5 +1,5 @@
 ---
-title: ブラジルの支払い情報
+title: ブラジルのお支払い情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,19 +9,18 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9cf6c9052147571c4892d34420a44b2583f3e3d3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ec3babde2e4175081712f957af1bcd33e0f6588d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637681"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551862"
 ---
-# <a name="payment-information-for-brazil"></a><span data-ttu-id="a92b1-103">ブラジルの支払い情報</span><span class="sxs-lookup"><span data-stu-id="a92b1-103">Payment information for Brazil</span></span>
+# <a name="payment-information-for-brazil"></a><span data-ttu-id="ba936-103">ブラジルのお支払い情報</span><span class="sxs-lookup"><span data-stu-id="ba936-103">Payment information for Brazil</span></span>
 
-<span data-ttu-id="a92b1-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="a92b1-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="ba936-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="ba936-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="a92b1-105">請求書に記載の支払い方法に従い、お支払い送金の際に請求書番号をご記入ください。</span><span class="sxs-lookup"><span data-stu-id="a92b1-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  
+<span data-ttu-id="ba936-105">請求書に記載の支払い方法に従い、お支払い送金の際に請求書番号をご記入ください。</span><span class="sxs-lookup"><span data-stu-id="ba936-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  

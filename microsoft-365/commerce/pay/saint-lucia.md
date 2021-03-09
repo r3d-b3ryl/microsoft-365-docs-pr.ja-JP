@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2e06e18739880282bf4c07f127082d5cbb8f87d5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a452ab4721c23eec8c1a06e82f8ceaa8df0b3620
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648757"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550362"
 ---
-# <a name="payment-information-for-saint-lucia"></a><span data-ttu-id="33c45-103">セントルシアの支払い情報</span><span class="sxs-lookup"><span data-stu-id="33c45-103">Payment information for Saint Lucia</span></span>
+# <a name="payment-information-for-saint-lucia"></a><span data-ttu-id="e4605-103">セントルシアの支払い情報</span><span class="sxs-lookup"><span data-stu-id="e4605-103">Payment information for Saint Lucia</span></span>
 
-<span data-ttu-id="33c45-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="33c45-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="e4605-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="e4605-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="33c45-105">米ドル単位で支払い、請求書の送金に請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="33c45-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="e4605-105">お支払いは USD のみであり、請求書の送金に関する請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e4605-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="33c45-106">電子資金移動</span><span class="sxs-lookup"><span data-stu-id="33c45-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="e4605-106">電子決済</span><span class="sxs-lookup"><span data-stu-id="e4605-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="33c45-107">**Bank:** 米国の銀行</span><span class="sxs-lookup"><span data-stu-id="33c45-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="33c45-108">**Branch** 営業</span><span class="sxs-lookup"><span data-stu-id="33c45-108">**Branch** Dallas</span></span>  
-<span data-ttu-id="33c45-109">**SWIFT コード:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="33c45-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="33c45-110">**アカウント番号:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="33c45-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="33c45-111">**アカウント名:** 製</span><span class="sxs-lookup"><span data-stu-id="33c45-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="e4605-107">**Bank:** バンク オブ アメリカ</span><span class="sxs-lookup"><span data-stu-id="e4605-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="e4605-108">**ブランチ** ダラス</span><span class="sxs-lookup"><span data-stu-id="e4605-108">**Branch** Dallas</span></span>  
+<span data-ttu-id="e4605-109">**SWIFT コード:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="e4605-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="e4605-110">**アカウント番号:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="e4605-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="e4605-111">**アカウント名:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="e4605-111">**Account Name:** Microsoft</span></span>  
