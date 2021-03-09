@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 61f551b802cf69a2227496a42ebb1f1864e6673e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e4a2883b562adf39bd3a4148e2cdd8e2345f77c0
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637717"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549354"
 ---
-# <a name="payment-information-for-bolivia"></a><span data-ttu-id="d16d9-103">ボリビアの支払い情報</span><span class="sxs-lookup"><span data-stu-id="d16d9-103">Payment information for Bolivia</span></span>
+# <a name="payment-information-for-bolivia"></a><span data-ttu-id="53bbc-103">ボリビアの支払い情報</span><span class="sxs-lookup"><span data-stu-id="53bbc-103">Payment information for Bolivia</span></span>
 
-<span data-ttu-id="d16d9-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="d16d9-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="53bbc-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="53bbc-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="d16d9-105">米ドル単位で支払い、請求書の送金に請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d16d9-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="53bbc-105">お支払いは USD のみであり、請求書の送金に関する請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="53bbc-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="d16d9-106">電子資金移動</span><span class="sxs-lookup"><span data-stu-id="d16d9-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="53bbc-106">電子決済</span><span class="sxs-lookup"><span data-stu-id="53bbc-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="d16d9-107">**Bank:** 米国の銀行</span><span class="sxs-lookup"><span data-stu-id="d16d9-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="d16d9-108">**分岐:** 営業</span><span class="sxs-lookup"><span data-stu-id="d16d9-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="d16d9-109">**SWIFT コード:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="d16d9-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="d16d9-110">**アカウント番号:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="d16d9-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="d16d9-111">**アカウント名:** 製</span><span class="sxs-lookup"><span data-stu-id="d16d9-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="53bbc-107">**Bank:** バンク オブ アメリカ</span><span class="sxs-lookup"><span data-stu-id="53bbc-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="53bbc-108">**ブランチ:** ダラス</span><span class="sxs-lookup"><span data-stu-id="53bbc-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="53bbc-109">**SWIFT コード:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="53bbc-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="53bbc-110">**アカウント番号:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="53bbc-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="53bbc-111">**アカウント名:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="53bbc-111">**Account Name:** Microsoft</span></span>  
