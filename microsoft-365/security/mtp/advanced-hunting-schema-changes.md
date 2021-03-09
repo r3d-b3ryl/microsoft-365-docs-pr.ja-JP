@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 948c8bb5c1e6b67f6de355bc532c6b14d5a83933
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509304"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551874"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前付けの変更
 
@@ -98,12 +98,12 @@ ms.locfileid: "50509304"
 | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | お客様のフィードバック |
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | お客様のフィードバック |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | お客様のフィードバック |
-| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | お客様のフィードバック |
 
 
 
 
 
-## <a name="related-topics"></a>関連項目
+
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

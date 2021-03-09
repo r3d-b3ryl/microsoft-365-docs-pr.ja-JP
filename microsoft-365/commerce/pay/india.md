@@ -1,5 +1,5 @@
 ---
-title: インドの支払い情報
+title: インドのお支払い情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,19 +9,18 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d6febd3db944bb59b2c024bf55f887dcbb550803
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 55b124817197b7b4f4c513661b6d253a9c59e05b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647197"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550854"
 ---
-# <a name="payment-information-for-india"></a>インドの支払い情報
+# <a name="payment-information-for-india"></a>インドのお支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-支払いに関する請求書と参照請求書番号についての支払い手順に従ってください。  
+請求書の支払い手順に従い、支払い送金の請求書番号を参照してください。  

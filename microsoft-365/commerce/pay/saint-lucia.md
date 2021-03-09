@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2e06e18739880282bf4c07f127082d5cbb8f87d5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a452ab4721c23eec8c1a06e82f8ceaa8df0b3620
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648757"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550362"
 ---
 # <a name="payment-information-for-saint-lucia"></a>セントルシアの支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-米ドル単位で支払い、請求書の送金に請求書番号を参照してください。
+お支払いは USD のみであり、請求書の送金に関する請求書番号を参照してください。
 
-## <a name="electronic-funds-transfer"></a>電子資金移動
+## <a name="electronic-funds-transfer"></a>電子決済
 
-**Bank:** 米国の銀行  
-**Branch** 営業  
+**Bank:** バンク オブ アメリカ  
+**ブランチ** ダラス  
 **SWIFT コード:** BOFAUS3N  
 **アカウント番号:** 4426587954  
-**アカウント名:** 製  
+**アカウント名:** Microsoft  
