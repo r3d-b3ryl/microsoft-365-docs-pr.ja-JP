@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1238595d1eca11004f5bb9b4eb19c9652d91a787
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 75faac2c946d93f7e0aed7ef6daca40f2b9982c5
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642949"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547638"
 ---
-# <a name="contact-support-for-el-salvador"></a>エルサルバドルのサポートに問い合わせる
+# <a name="contact-support-for-el-salvador"></a>エルサルバドルのサポートに問い合わせ
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
 800 6676
 
-オプション4を選択する
+オプション 4 を選択する
 
-コード7007を入力します。
+コード 7007 を入力する
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-スペイン語: 午前9時から午後5時 Mon-Fri
+スペイン語: Mon-Fri午前 9 時から午後 5 時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-スペイン語: 1 日24時間、週7日
+スペイン語: 24 時間、週 7 日
