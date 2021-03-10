@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c5c94ce3994424a6d4b6f4a4ac587f5cc5e33ca
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0c52b80ffe30da259672e5862d0fa73a8445aa59
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454699"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604044"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>365 で配信された悪意のあるOffice修復する
 
@@ -136,5 +136,7 @@ ms.locfileid: "50454699"
   アクション ログ内の任意のアイテムを選択して、修復の詳細を表示します。 詳細に「成功」または「メールボックスに見つかりません」と表示される場合、そのアイテムは既にメールボックスから削除されています。 修復中にシステム エラーが発生する場合があります。 そのような場合は、修復を再試行すると良い考えです。
 
   大規模なバッチを修復する場合は、メール送信とアクション ログを介して修復されたメッセージを介して修復のために送信されるメッセージをエクスポートすることもできます。 エクスポート制限は 100k レコードに増加します。
+
+セキュリティ チームは、最大 50 の同時手動修復を実行できます。ただし、自動調査および応答アクションに制限はありません。
 
   修復は、脅威を軽減し、疑わしいメールに対処するための強力なツールです。 組織を安全に保つのに役立ちます。

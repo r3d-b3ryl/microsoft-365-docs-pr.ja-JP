@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: IT 管理者がデスクトップ、モバイル、および web 用のOfficeラベルを管理するための情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e0fc96c1bb7b077df50f4f1c3c52ffa0dd49bef
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 1aa710939a805453a73db38eb93e4ceb90bc25d7
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461862"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597167"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -126,7 +126,7 @@ Office アプリの Azure Information Protection クライアントではなく�
 
 このアドインを無効またはOfficeすると、Azure Information Protection クライアントはインストールされたままなので、引き続きアプリ外のファイルにラベルを付Officeできます。 たとえば、エクスプローラーまたは PowerShell を使用します。
 
-Azure Information Protection クライアントと Office 組み込みのラベル付けクライアントでサポートされる機能の詳細については、「Azure Information Protection」のドキュメントの [「Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) コンピューターで使用するラベル付けクライアントを選択する」を参照してください。
+Azure Information Protection クライアントと Office 組み込みのラベル付けクライアントでサポートされる機能の詳細については、「Azure Information Protection のドキュメントから [Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) ラベリング ソリューションを選択する」を参照してください。
 
 ## <a name="office-file-types-supported"></a>Officeファイルの種類がサポートされています
 
@@ -149,7 +149,7 @@ Office 365 Message Encryption 用に定義した保護テンプレートなど�
 - ドキュメントの場合:**ファイル**  >  **情報保護**  >  **ドキュメント**  >  **制限アクセス**
 - 電子メールの場合: [オプション] **タブの** [暗号化> **します。** 
   
-ユーザーが最初にドキュメントまたは電子メールにラベルを付け始め、ユーザーは常に独自の暗号化設定を使用してラベル構成設定を上書きできます。 以下に例を示します。
+ユーザーが最初にドキュメントまたは電子メールにラベルを付け始め、ユーザーは常に独自の暗号化設定を使用してラベル構成設定を上書きできます。 例:
 
 - ユーザーがドキュメントに **[Confidential \ All Employees]** ラベルを適用し、このラベルは組織内のすべてのユーザーに暗号化設定を適用するように構成されます。 このユーザーは、組織外のユーザーへのアクセスを制限する IRM 設定を手動で構成します。 最後の結果は、機密 **\ すべての** 従業員と暗号化されたラベルが付いたドキュメントですが、組織内のユーザーは期待した通り開くことができません。
 
@@ -159,7 +159,7 @@ Office 365 Message Encryption 用に定義した保護テンプレートなど�
 
 ドキュメントまたは電子メールに既にラベルが付けされている場合は、コンテンツが暗号化されていない場合、または使用権が [エクスポート] または[](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)[フル コントロール] の場合、ユーザーはこれらの操作を実行できます。 
 
-わかりやすいレポートで一貫性のあるラベル エクスペリエンスを得るために、ユーザーがドキュメントを保護するためにラベルのみを適用するための適切なラベルとガイダンスを提供します。 以下に例を示します。
+わかりやすいレポートで一貫性のあるラベル エクスペリエンスを得るために、ユーザーがドキュメントを保護するためにラベルのみを適用するための適切なラベルとガイダンスを提供します。 例:
 
 - ユーザーが独自のアクセス許可を割り当てる必要がある例外の場合は、ユーザーが自分のアクセス許可を割り当て可能 [なラベルを指定します](encryption-sensitivity-labels.md#let-users-assign-permissions)。 
 

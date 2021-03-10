@@ -3,7 +3,7 @@ title: 21Vianet が運営する Office 365の URL と IP アドレス範囲
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 01/04/2021
+ms.date: 08/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,14 +19,14 @@ ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 ms.custom: seo-marvel-apr2020
 f1.keywords:
 - NOCSH
-description: この記事では、中国で 21Vianet が運用している場合の Office 365 の URL と IP アドレスの範囲を示します。
+description: この記事では、中国で 21Vianet がOffice 365 の URL と IP アドレス範囲を一覧表示します。
 hideEdit: true
-ms.openlocfilehash: 8a17cb9da5cf552615abf1ac20a67463e8430eb7
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: dae2b5feb4fbf7fc3e9bdd2419e2d114b5507ee8
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787811"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597072"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 
@@ -38,9 +38,9 @@ ms.locfileid: "49787811"
   
 |||
 |:-----|:-----|
-|**最終更新日:** 2021 年 1 月 4 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。  <br/> |
+|**最終更新日:** 08/28/2020 - ![ RSS Change Log ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [サブスクリプション](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。  <br/> |
 
-はじめに 「[Office 365 エンドポイントを管理する](managing-office-365-endpoints.md)」を読み、以下のデータを使用してネットワーク接続を管理するための推奨事項を確認します。エンドポイント データは毎月月初めに更新され、新しい IP アドレスと URL は、それらがアクティブになる 30 日前に公開されます。これにより、お客様がまだ自動更新の設定を行っていない場合でも、新しい接続が必要になる前にプロセスを完了していただけます。サポートのエスカレーション、セキュリティ インシデント、またはその他の即時の運用要件に対応するために、月の途中にエンドポイントが更新される場合があります。このページの下に表示されるデータは、すべて REST ベースの Web サービスから生成されたものです。スクリプトやネットワーク デバイスを使用してこのデータにアクセスする場合、[[Web サービス](microsoft-365-ip-web-service.md)] に直接移動する必要があります。
+[365 Officeの](managing-office-365-endpoints.md)管理から始め、このデータを使用してネットワーク接続を管理するための推奨事項を理解します。 エンドポイント データは、毎月の初めに必要に応じて更新され、アクティブの 30 日前に新しい IP アドレスと URL が公開されます。 これにより、新しい接続が必要になる前に、まだ自動更新を行っていないお客様がプロセスを完了できます。 サポートエスカレーション、セキュリティ インシデント、その他の即時運用要件に対応するために必要な場合は、月の間にエンドポイントが更新される場合もあります。 以下のこのページに示すデータはすべて、REST ベースの Web サービスから生成されます。 スクリプトまたはネットワーク デバイスを使用してこのデータにアクセスする場合は、Web サービスに直接 [アクセスする必要](microsoft-365-ip-web-service.md) があります。
 
 次のエンドポイント データは、ユーザーのコンピューターを Office 365 に接続するための要件の一覧です。Microsoft からお客様のネットワークへの接続 (“ハイブリッド ネットワーク接続” や ”受信ネットワーク接続” と呼ばれる場合があります) は含まれません。
 

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Microsoft 365 管理センターまたは管理者Windows PowerShellを使用して、予約カレンダーを削除します。
-ms.openlocfilehash: 1f8df15eafac7867f7ae852e344e1c5730362598
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454207"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604022"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Bookings で予約カレンダーを削除する
 
@@ -87,7 +87,7 @@ Exchange Online [PowerShell に接続するための](https://docs.microsoft.com
 6. 予定表が削除されたと確認するには、次のコマンドを入力します。
 
    ```powershell
-    Get-EXOMailbox -RecipientTypeDetails Scheduling
+    Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
    削除された予定表は出力に表示されません。

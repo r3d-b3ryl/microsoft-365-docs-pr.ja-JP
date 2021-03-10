@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 の検索ツールと電子情報開示ツールを使用して検索できる電子メールとファイルのプロパティについて説明します。
-ms.openlocfilehash: 9ad280678cac2d266b6e4c68ac66fb2e5afe0bf1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d5b558df15cde6be6f87663dcb999efc6ec66f7e
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423920"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604033"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>コンテンツ検索と電子情報開示のキーワード クエリと検索条件
 
@@ -171,7 +171,7 @@ Microsoft 365 コンプライアンス センターの電子情報開示検索�
 
   次に、search プロパティの ID を使用して、カスタム機密データ型を含むドキュメントを返します。たとえば `SensitiveType` 、 `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
   
-- 機密情報の種類と検索プロパティを使用して、Exchange Online メールボックスで保存中の機密データを `SensitiveType` 検索することはできません。 ただし、データ損失防止 (DLP) ポリシーを使用して、転送中の機密メール データを保護できます。 詳細については、「[データ損失防止ポリシーの概要](data-loss-prevention-policies.md)」と「[個人データの検索](search-for-and-find-personal-data.md)」を参照してください。
+- 機密情報の種類と検索プロパティを使用して、Exchange Online メールボックスで保存中の機密データを `SensitiveType` 検索することはできません。 これには、1:1 のチャット メッセージ、1:N グループ チャット メッセージ、および Microsoft チームでのチーム チャネルの会話が含まれます。このコンテンツはすべてメールボックスに格納されます。 ただし、データ損失防止 (DLP) ポリシーを使用して、転送中の機密メール データを保護できます。 詳細については、「[データ損失防止ポリシーの概要](data-loss-prevention-policies.md)」と「[個人データの検索](search-for-and-find-personal-data.md)」を参照してください。
   
 ## <a name="search-operators"></a>検索演算子
 
