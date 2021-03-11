@@ -48,12 +48,14 @@
       href: billing-and-payments/view-your-bill-or-invoice.md
     - name: 課金内容または請求書の内容を理解する
       href: billing-and-payments/understand-your-invoice.md
-    - name: 支払方法を管理する
-      href: billing-and-payments/manage-payment-methods.md
     - name: サブスクリプションを支払う
       href: billing-and-payments/pay-for-your-subscription.md
+    - name: 支払方法を管理する
+      href: billing-and-payments/manage-payment-methods.md
     - name: 請求頻度の変更
       href: billing-and-payments/change-payment-frequency.md
+    - name: 請求通知と請求書の添付ファイルを管理する
+      href: billing-and-payments/manage-billing-notifications.md
     - name: 課金プロファイルを理解する
       href: billing-and-payments/manage-billing-profiles.md
     - name: 請求先住所を変更する

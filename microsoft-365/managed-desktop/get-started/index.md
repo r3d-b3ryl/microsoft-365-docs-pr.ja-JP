@@ -6,19 +6,21 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 49cf658c7d146f75d54d1f74f0034db64c3cc5dc
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509280"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572554"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの使用を開始する
 
-サービスに登録したら、次の手順に従って、管理者の連絡先の確認、条件付きアクセス設定の調整、ユーザーへのライセンスの割り当て、Enterprise State Roaming の有効化、デバイスの取得とセットアップ、ユーザーの準備、デバイスへのアプリの展開の手順で行います。
+登録の準備ができたので、[Microsoft エンドポイント マネージャー](https://endpoint.microsoft.com/) を開き、**[テナント管理]** に移動します。 **[Microsoft マネージド デスクトップ]** サブセクションで **[テナントの登録]** を選択し、ウィザードに従ってテナントを Microsoft マネージド デスクトップ に登録します。
 
 > [!NOTE]
-> この順番に従うことをお勧めしますが、必須ではありません。
+> 登録を完了するには、グローバル管理者としてログインする必要があります。 詳細については、[[管理ポータルへのアクセス]](access-admin-portal.md) を参照してください。
+
+登録が完了したら、以下の手順に従ってサービスを構成します。 この順番に従うことをお勧めしますが、必須ではありません。 
 
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)
 2. [登録後に設定を調整する](conditional-access.md)

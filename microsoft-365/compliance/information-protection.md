@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Microsoft Information Protection (MIP) を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: bf464fd4ea0314a86a10696f8bda62e85a70ea49
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: b65f5ea2d4c24bc1c2ef2a34e25150446902d940
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099703"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572619"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 の Microsoft Information Protection
 
@@ -41,8 +41,7 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 > [!NOTE]
 > Azure Purview でのデータの分類およびラベル付けの詳細については、現在プレビューですが、「[Azure Purviewにあるコンテンツに自動的にラベルを付ける](https://docs.microsoft.com/azure/purview/create-sensitivity-label)」を参照し てください。
 > 
-> この最近のリリースの詳細については、ブログ投稿「[Microsoft Information Protection および Microsoft Azure Purview: Better Together](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481)」を参照してください。
-
+> Azure Purview のリリースの発表については、次のブログ投稿を参照してください。「[Microsoft Information Protection および Microsoft Azure Purview: 相乗効果](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481)」および「[Spring Ignite 2021 での Azure Purview](https://techcommunity.microsoft.com/t5/azure-purview/azure-purview-at-spring-ignite-2021/ba-p/2175919)」。
 
 
 データの状況を把握し、ハイブリッド環境全体にわたって重要なデータを識別するには、次の機能を使用します:

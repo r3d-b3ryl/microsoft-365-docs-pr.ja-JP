@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 9470a73926327777055a321eb3a592ea3ddcf41e
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 4a7b544b6eded6f0cd6441ad7f6b02de790e5e44
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515042"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603986"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "50515042"
 
 この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md)。
 
-これらの手順を実行するには、[グローバル管理者またはパスワード管理者](../add-users/about-admin-roles.md)としてログインしている必要があります。
+これらの手順を実行するには、[グローバル管理者](../add-users/about-admin-roles.md)である必要があります。
 
 ユーザーの場合は、自分のパスワードを期限なしに設定する権限はありません。 職場または学校のテクニカル サポートに、この記事の手順を実行するように依頼してください。
 
@@ -55,9 +55,7 @@ ms.locfileid: "50515042"
 > 既定では、パスワードの有効期限は 90 日に設定されています。 最近の研究では、強制的なパスワードの変更はメリットよりデメリットの方が大きいことが強く示唆されています。 ハッカーが簡単に推測できる方法で、より弱いパスワードの選択、パスワードの再利用、または古いパスワードの更新をユーザーに促します。 パスワードを無期限に設定する場合は、[多要素認証](../security-and-compliance/set-up-multi-factor-authentication.md)を有効にすることをお勧めします。
 
 特定の時間が経過するとユーザーのパスワードが期限切れになるように設定する場合は、以下の手順に従います。
-> [!IMPORTANT]
-> [グローバル管理者](../add-users/about-admin-roles.md)のみ次の手順を実行できます。
-  
+
 1. 管理センターで、[**設定**] \> [**組織の設定**] の順に移動します。
 
 2. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">セキュリティとプライバシー</a>] ページに移動します。
