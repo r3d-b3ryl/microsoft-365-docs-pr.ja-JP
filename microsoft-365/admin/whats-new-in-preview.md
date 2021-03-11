@@ -21,12 +21,12 @@ description: Microsoft 365 管理センター - 今月追加された機能に�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: e8e743c0f3de0d7ac2eb8ebb9995596783d2d31a
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461836"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717635"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -62,6 +62,12 @@ Microsoft Ignite へようこそ。 Microsoft [Ignite 2021](https://myignite.mic
 :::image type="content" source="../media/message-center.png" alt-text="スクリーンショット: 受信トレイとメッセージを示すメッセージ センターのホーム ページ":::
 
 新機能の詳細については、「メッセージ センターでメッセージを [管理する」を参照してください](manage/manage-messages.md)。
+
+### <a name="whats-new-features"></a>新機能
+
+アプリ内のユーザーの "新機能" 機能の表示方法が改善Officeしました。 これで、ユーザーが表示できる Whats の新しいウィンドウにリッチ コンテンツを表示できます。 また、機能についてユーザーに知らせる前に、この機能の詳細を確認できます。 For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="スクリーンショット: Office Power BI の改善点を示す新しいページをアプリに表示する":::
 
 ## <a name="ignite-2020-august--september"></a>Ignite 2020 (8 月 & 9 月)
 
@@ -167,7 +173,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 
 ![Microsoft 365 ソリューションドキュメントの新しいランディング ページには、「リモート ワーカーの権限を与える」のようなソリューションが含まれています。](../media/MAC-WN-M365Docspage.png)
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>Ignite 2020 の準備
 
@@ -379,7 +385,7 @@ Microsoft 365 管理センターを使用して、iOS 用 SharePoint モバイ�
 
 これは文字通りです!!!
 
-### <a name="groups"></a>グループ
+### <a name="groups"></a>Groups
 
 今月のグループ領域の変更点を次に示します。
 

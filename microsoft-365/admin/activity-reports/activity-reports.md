@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921172"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603854"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -85,6 +85,8 @@ ms.locfileid: "49921172"
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>管理センターで利用可能なアクティビティ レポート
 
 サブスクリプションに応じて、以下のレポートを利用できます。
+
+- [Microsoft ブラウザーの使用法](browser-usage-report.md) 
   
 - [メール アクティビティ](email-activity-ww.md)
 
@@ -125,8 +127,6 @@ ms.locfileid: "49921172"
 - [米国政府の OneDrive for Business の利用状況](onedrive-for-business-usage.md)
 
 - [Microsoft 365 Apps の利用状況](microsoft365-apps-usage-ww.md)
-
-- [米国政府機関向け Microsoft 365 アプリの利用状況](microsoft365-apps-usage.md)
   
 - [SharePoint サイトの利用状況](sharepoint-site-usage-ww.md)
 

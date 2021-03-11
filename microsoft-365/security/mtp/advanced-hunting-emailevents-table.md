@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a0892e03e0ac4c6fc6bcda1b7b159ce403a7ce2e
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 5e9fce199d253cf22f73ec8620c5441d8bf1305d
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461620"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712392"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "50461620"
 高度 `EmailEvents` なハンティング スキーマ [の表](advanced-hunting-overview.md) には、Microsoft Defender for Office 365 の電子メールの処理に関するイベントに関する情報が含まれている。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 

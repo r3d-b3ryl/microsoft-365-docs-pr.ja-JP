@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの AppFileEvents テーブル
-description: 高度な検索スキーマの AppFileEvents テーブルで、クラウド アプリとサービスに関連するファイル関連のイベントについて説明します。
-keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、AppFileEvents、Cloud App Security、MCAS
+description: 高度なハンティング スキーマの AppFileEvents テーブルで、クラウド アプリとサービスに関連付けられているファイル関連のイベントについて説明します。
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、AppFileEvents、Cloud App Security、MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8406d1f9e3d56555b1699d191933c6f9735c9574
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 9eb2f195959409ad25b9a401a44425cc4af7f97e
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145489"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712500"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -35,17 +35,18 @@ ms.locfileid: "50145489"
 **適用対象:**
 - Microsoft 365 Defender
 
-高度 `AppFileEvents` な検索スキーマの [表](advanced-hunting-overview.md) には、Microsoft Cloud App Security によって監視されるクラウド アプリとサービスでのファイル関連のアクティビティに関する情報が含されています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度 `AppFileEvents` な検索スキーマの [表](advanced-hunting-overview.md) には、Microsoft Cloud App Security によって監視されるクラウド アプリおよびサービスにおけるファイル関連のアクティビティに関する情報が含まれている。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
->[!TIP]
-> テーブルでサポートされているイベントの種類 ( 値) の詳細については、セキュリティ センターで使用可能な組み込みのスキーマ `ActionType` 参照を使用してください。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+>[!WARNING]
+>このテーブルは近日廃止されます。 2021 年 3 月 7 日現在、テーブル `AppFileEvents` はレコードをログに記録しなくなりました。 クラウド サービスのファイル関連のアクティビティを検索するユーザーは、その日付以降に、 [代わりに CloudAppEvents](advanced-hunting-cloudappevents-table.md) テーブルを使用する必要があります。 <br><br>テーブルを引き続き使用するクエリとカスタム検出ルールを検索し、テーブル `AppFileEvents` を使用するために編集 `CloudAppEvents` してください。 影響を受けるクエリの変換に関する詳細なガイダンスについては [、「Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)Advanced hunting を使用したクラウド アプリアクティビティ全体のハント」を参照してください。
+
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマ リファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダー |
@@ -56,8 +57,8 @@ ms.locfileid: "50145489"
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
-| `AccountObjectId` | string | Azure AD のアカウントの一意の識別子 |
-| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、名、ミドル ネーム、姓または姓の組み合わせ。 |
+| `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
+| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
 | `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
 | `DeviceType` | string | デバイスの種類 | 
 | `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
@@ -70,6 +71,10 @@ ms.locfileid: "50145489"
 | `Isp` | string | エンドポイント IP アドレスに関連付けられたインターネット サービス プロバイダー (ISP) |
 | `ReportId` | long | イベントの一意識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
+
+>[!TIP]
+> テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。
+
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

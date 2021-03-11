@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 47bbc722ad87d5bde4b1e0dfb732e08dad3938f2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ef89cadc09dea7c2186fbf4a0d76d2c690aa8acc
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423638"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597219"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50423638"
 
 [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) がある場合、ラベルを統合ラベル付けプラットフォームに移行する必要があるかどうか、および使用するラベル付けクライアントを決定します。
 - [自分のテナントが統合されたラベル付けプラットフォームにあるかどうかを判断するにはどうすればよいですか?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Windows コンピューターに使用するラベル付けクライアントを選択する](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
+- [Windows ラベル付けソリューションを選択する](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
 
 秘密度ラベルを使用して組織のデータを保護する準備ができたら、次の手順に従います。
 

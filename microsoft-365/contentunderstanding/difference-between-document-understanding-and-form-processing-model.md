@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: ドキュメント理解とフォーム処理モデルの主な違いについて説明します
-ms.openlocfilehash: f57d220eb77a783de5ac352f3cf684364252a163
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 555dfa7d76335a3b943e860e5f41ed64c9d3e874
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975879"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50596982"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>ドキュメント理解とフォーム処理モデルの違い 
 
@@ -66,7 +66,25 @@ Microsoft SharePoint Syntex のコンテンツを理解すると、SharePoint �
 
 現在、フォーム処理モデルは、モデルを作成した SharePoint ドキュメント ライブラリにのみ適用できます。 これにより、サイトにアクセスできるライセンス付与済みのユーザーは、フォーム処理モデルを作成できるようになります。 管理者は、SharePoint ドキュメントライブラリでフォーム処理を有効にして、ライセンス付与済みのユーザーが使用できるようにする必要があります。
 
- ## <a name="see-also"></a>関連項目
+## <a name="comparison-of-forms-processing-and-document-understanding"></a>フォーム処理とドキュメント理解の比較
+
+次の表を使用して、フォーム処理を使用するタイミングとドキュメント理解を使用するタイミングを理解してください。
+
+| 特徴 | フォーム処理 | ドキュメント理解 |
+| ------- | ------- | ------- |
+| モデルの種類 - それぞれをいつ使用するか | 半構造化ファイル形式に使用されます。たとえば、レイアウトに違いはあるものの、抽出される情報は類似している Office ドキュメントなどです。 | 非構造化ファイル形式に使用されます。たとえば、レイアウトとフォーマットが類似している請求書や発注書などのフォーム コンテンツの PDF などです。 |
+| モデルの作成 | SharePoint ドキュメント ライブラリからシームレスにアクセスできる AI Builder で作成されたモデル。| SharePoint コンテンツ センターに組み込まれたネイティブ インターフェイスで作成されたモデル。|
+| 分類の種類| マシン ティーチングを使用して、抽出するデータに関する手がかりをシステムに与える設定可能な分類子。| マシン ティーチングを使用して、抽出するデータのドキュメントの場所を割り当てる、オプションの抽出器を備えたトレーニング可能な分類子。|
+| 場所 | Power Platform を使用して CDS から取得する場合を除き、単一のドキュメント ライブラリに制限されます。| 複数のライブラリに適用できます。|
+| サポートされているファイルの種類| PDF、JPG、PNG 形式、合計 50 MB および 500 ページでトレーニングします。| 否定的な例を含め、5 - 10 個の PDF、Office、またはメール ファイルでトレーニングします。<br>Office ファイルは 64k 文字で切り捨てられます。 OCR でスキャンされるファイルは 20 ページに制限されています。|
+| 管理されたメタデータと統合する | いいえ | はい、モデルをトレーニングする前にドキュメント ライブラリの列を設定します。|
+| Microsoft Information Protection が有効になっている場合のコンプライアンス機能の統合 | 保持ラベルを設定します。<br>秘密度ラベルを設定します。 | 保持ラベルを設定します。<br>秘密度ラベルを設定します。 |
+| サポートされる地域| フォーム処理は Power Platform に依存しています。 Power Platform と AI Builder のグローバルな可用性については、「[Power Platform の可用性](https://dynamics.microsoft.com/geographic-availability/)」を参照してください。 | すべての地域で利用可能です。|
+| トランザクション コスト | AI Builder クレジットを使用します。<br>クレジットは 1 M のバッチで購入できます。<br>300 以上の SharePoint Syntex ライセンスを購入すると、1 M のクレジットが含まれています。<br>1 M のクレジットで 2000 ファイル ページの処理が可能になります。| 該当なし |
+| 容量 | 既定の共通データ サービス環境に対してプロビジョニングされます。| 容量制限はありません。|
+| サポートされている言語| 英語 <br>2021 年後半に公開: スペイン語、ドイツ語、フランス語、イタリア語| モデルはすべてのラテン アルファベット言語で機能します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
+
+## <a name="see-also"></a>関連項目
 [トレーニング: AI ビルダーを使用してビジネスの実績を高める](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 

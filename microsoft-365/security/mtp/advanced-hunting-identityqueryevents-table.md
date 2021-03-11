@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの IdentityQueryEvents テーブル
-description: 高度な検索スキーマの IdentityQueryEvents テーブルの Active Directory クエリ イベントについて説明します。
-keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、IdentityQueryEvents、Azure AD、Active Directory、Azure ATP、ID、LDAP クエリ
+description: 高度なハンティング スキーマの IdentityQueryEvents テーブルの Active Directory クエリ イベントについて説明します。
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、IdentityQueryEvents、Azure AD、Active Directory、Azure ATP、ID、LDAP クエリ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48a1520e9fc6239fd3105f01a32a03e5e58df174
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: eb1f408b61444771f5d450b46dbc9c2b4a009e4c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145297"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712332"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -35,28 +35,28 @@ ms.locfileid: "50145297"
 **適用対象:**
 - Microsoft 365 Defender
 
-高度 `IdentityQueryEvents` な検索スキーマの [表](advanced-hunting-overview.md) には、ユーザー、グループ、デバイス、ドメインなど、Active Directory オブジェクトに対して実行されたクエリに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度 `IdentityQueryEvents` な検索スキーマの [表](advanced-hunting-overview.md) には、ユーザー、グループ、デバイス、ドメインなどの Active Directory オブジェクトに対して実行されるクエリに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 ( 値) の詳細については、セキュリティ センターで使用可能な組み込みのスキーマ `ActionType` 参照を使用してください。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマ リファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `QueryType` | string | QueryGroup、QueryUser、EnumerateUsers などのクエリの種類 |
-| `QueryTarget` | string | クエリを実行しているユーザー、グループ、デバイス、ドメイン、その他のエンティティの種類の名前 |
-| `Query` | string | クエリの実行に使用する文字列 |
+| `QueryType` | string | QueryGroup、QueryUser、または EnumerateUsers などのクエリの種類 |
+| `QueryTarget` | string | クエリを実行するユーザー、グループ、デバイス、ドメイン、その他のエンティティ型の名前 |
+| `Query` | string | クエリの実行に使用される文字列 |
 | `Protocol` | string | 通信中に使用されるプロトコル |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | string | Azure AD のアカウントの一意の識別子 |
-| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、名、ミドル ネーム、姓または姓の組み合わせ。 |
+| `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
+| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
 | `DeviceName` | string | エンドポイントの完全修飾ドメイン名 (FQDN) |
 | `IPAddress` | string | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
 | `Port` | string | 通信中に使用される TCP ポート |

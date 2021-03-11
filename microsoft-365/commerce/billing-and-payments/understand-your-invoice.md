@@ -21,7 +21,7 @@ description: Microsoft ビジネス製品の課金内容または請求書の内
 keywords: 課金アカウント、組織情報、請求書
 ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
 ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/06/2021
 ms.locfileid: "50126575"

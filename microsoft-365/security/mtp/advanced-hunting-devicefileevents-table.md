@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceFileEvents テーブル
-description: 高度な検索スキーマの DeviceFileEvents テーブルのファイル関連イベントについて説明します。
-keywords: 高度な捜索、脅威の捜索、サイバー脅威の捜索、Microsoft Threat Protection、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ リファレンス、kusto、テーブル、列、データ型、説明、filecreationevents、DeviceFileEvents、ファイル、パス、ハッシュ、sha1、sha256、md5
+description: 高度なハンティング スキーマの DeviceFileEvents テーブルのファイル関連イベントについて説明します。
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、filecreationevents、DeviceFileEvents、ファイル、パス、ハッシュ、sha1、sha256、md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cccbd268c8f69d6623df1ef4c8208d20ead2e9f5
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: e54a6dce9765a8b87fcf2f63bbd1342beabdcf39
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145309"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712464"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -35,10 +35,10 @@ ms.locfileid: "50145309"
 **適用対象:**
 - Microsoft 365 Defender
 
-高度 `DeviceFileEvents` な検索スキーマ [の表には](advanced-hunting-overview.md) 、ファイルの作成、変更、その他のファイル システム イベントに関する情報が含まれている。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度 `DeviceFileEvents` な検索スキーマの [表](advanced-hunting-overview.md) には、ファイルの作成、変更、その他のファイル システム イベントに関する情報が含まれている。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 ( 値) の詳細については、セキュリティ センターで使用可能な組み込みのスキーマ `ActionType` 参照を使用してください。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -47,22 +47,22 @@ ms.locfileid: "50145309"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマ リファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダー |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `MD5` | 文字列型 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
-| `FileOriginUrl` | string | ファイルのダウンロード先の URL |
+| `FileOriginUrl` | string | ファイルがダウンロードされた URL |
 | `FileOriginReferrerUrl` | string | ダウンロードしたファイルにリンクする Web ページの URL |
-| `FileOriginIP` | string | ファイルのダウンロード先の IP アドレス |
+| `FileOriginIP` | string | ファイルがダウンロードされた IP アドレス |
 | `PreviousFolderPath` | string | 記録されたアクションが適用される前のファイルを含む元のフォルダー |
 | `PreviousFileName` | string | アクションの結果として名前が変更されたファイルの元の名前 |
 | `FileSize` | long | ファイルのサイズ (バイト単位) |
-| `InitiatingProcessAccountDomain` | string | イベントを処理するプロセスを実行したアカウントのドメイン |
-| `InitiatingProcessAccountName` | string | イベントを処理するプロセスを実行したアカウントのユーザー名 |
-| `InitiatingProcessAccountSid` | string | イベントを処理するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
-| `InitiatingProcessAccountUpn` | string | イベントを処理するプロセスを実行したアカウントのユーザー プリンシパル名 (UPN) |
+| `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
+| `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
+| `InitiatingProcessAccountSid` | string | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
+| `InitiatingProcessAccountUpn` | string | イベントを担当するプロセスを実行したアカウントのユーザー プリンシパル名 (UPN) |
 | `InitiatingProcessMD5` | string | イベントを開始したプロセス (イメージ ファイル) の MD5 ハッシュ |
 | `InitiatingProcessSHA1` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
 | `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
@@ -71,28 +71,28 @@ ms.locfileid: "50145309"
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
 | `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
-| `InitiatingProcessIntegrityLevel` | string | イベントを開始したプロセスの整合性レベル。 Windows は、インターネット ダウンロードから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる。 これらの整合性レベルは、リソースへのアクセス許可に影響します。 |
-| `InitiatingProcessTokenElevation` | string | イベントを開始したプロセスに適用されるユーザー アクセス制御 (UAC) 特権の昇格の有無を示すトークンの種類 |
-| `InitiatingProcessParentId` | int | イベントを処理するプロセスを生成した親プロセスのプロセス ID (PID) |
-| `InitiatingProcessParentFileName` | string | イベントを処理するプロセスを生成した親プロセスの名前 |
+| `InitiatingProcessIntegrityLevel` | string | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
+| `InitiatingProcessTokenElevation` | string | イベントを開始したプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
+| `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
+| `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
-| `RequestProtocol` | string | ネットワーク プロトコル (該当する場合) は、不明、ローカル、SMB、または NFS のアクティビティを開始するために使用されます。 |
+| `RequestProtocol` | string | ネットワーク プロトコル (該当する場合) を使用してアクティビティを開始します。不明、ローカル、SMB、または NFS |
 | `ShareName` | string | ファイルを含む共有フォルダーの名前 |
 | `RequestSourceIP` | string | アクティビティを開始したリモート デバイスの IPv4 または IPv6 アドレス |
-| `RequestSourcePort` | string | アクティビティを開始したリモート デバイス上の送信元ポート |
-| `RequestAccountName` | string | リモートでアクティビティを開始するために使用されるアカウントのユーザー名 |
-| `RequestAccountDomain` | string | リモートでアクティビティを開始するために使用されるアカウントのドメイン |
-| `RequestAccountSid` | string | リモートでアクティビティを開始するために使用されるアカウントのセキュリティ識別子 (SID) |
+| `RequestSourcePort` | string | アクティビティを開始したリモート デバイスの送信元ポート |
+| `RequestAccountName` | string | アクティビティをリモートで開始するために使用されるアカウントのユーザー名 |
+| `RequestAccountDomain` | string | アクティビティをリモートで開始するために使用されるアカウントのドメイン |
+| `RequestAccountSid` | string | アクティビティをリモートで開始するために使用されるアカウントのセキュリティ識別子 (SID) |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
-| `AppGuardContainerId` | string | ブラウザーの動作を分離するために Application Guard によって使用される仮想化コンテナーの識別子 |
+| `AppGuardContainerId` | string | ブラウザーのアクティビティを分離するために Application Guard が使用する仮想化コンテナーの識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
-| `InitiatingProcessFileSize` | long | イベントを処理するプロセスを実行したファイルのサイズ |
-| `SensitivityLabel` | string | 電子メール、ファイル、その他のコンテンツに適用されたラベルを情報保護用に分類する |
-| `SensitivitySubLabel` | string | 電子メール、ファイル、その他のコンテンツに適用されるサブラベル。情報保護のために分類されます。sensitivity サブラベルは、区別ラベルの下にグループ化されますが、個別に処理されます。 |
-| `IsAzureInfoProtectionApplied` | boolean | ファイルが Azure Information Protection によって暗号化されているかどうかを示します |
+| `InitiatingProcessFileSize` | long | イベントの処理を実行したファイルのサイズ |
+| `SensitivityLabel` | string | 電子メール、ファイル、または他のコンテンツに適用されるラベルを情報保護のために分類する |
+| `SensitivitySubLabel` | string | 電子メール、ファイル、または他のコンテンツに適用されるサブラベルを、情報保護のために分類します。感度サブラベルは、感度ラベルの下でグループ化されますが、個別に処理されます。 |
+| `IsAzureInfoProtectionApplied` | ブール値 | ファイルが Azure Information Protection によって暗号化されているかどうかを示します。 |
 
 >[!NOTE]
-> ファイル ハッシュ情報は、利用可能な場合は常に表示されます。 ただし、SHA1、SHA256、または MD5 を計算できない理由はいくつか考えられる。 たとえば、ファイルがリモート ストレージに置かれているか、別のプロセスによってロックされている、圧縮されている、または仮想としてマークされている可能性があります。 これらのシナリオでは、ファイル ハッシュ情報は空のように表示されます。
+> ファイル ハッシュ情報は、利用可能なときに常に表示されます。 ただし、SHA1、SHA256、または MD5 を計算できない理由はいくつか考えられる。 たとえば、ファイルがリモート ストレージに置かれているか、別のプロセスによってロックされている、圧縮されている、または仮想としてマークされている可能性があります。 これらのシナリオでは、ファイル ハッシュ情報は空に表示されます。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

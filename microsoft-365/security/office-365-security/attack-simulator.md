@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーターを使用して、Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85b376701ffa0c567fd66aa629371e9f69b354e9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7c88a5df6fae61e1ffe70214ad4a73deef4b380e
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407476"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717608"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender の攻撃シミュレーター for Office 365
 
@@ -36,8 +36,10 @@ ms.locfileid: "50407476"
 組織に脅威の調査と応答機能を含む microsoft Defender for Office 365 プラン 2 がある場合は、セキュリティ & コンプライアンス センターの攻撃シミュレーターを使用して、組織内で現実的な攻撃シナリオを実行できます。 [](office-365-ti.md) これらのシミュレートされた攻撃は、実際の攻撃が一番下の行に影響を与える前に、脆弱なユーザーを特定して見つけるのに役立ちます。 詳細については、この記事を参照してください。
 
 > [!NOTE]
-> 攻撃シミュレーター v1 エクスペリエンスは読み取り専用モードに切り替え、攻撃シミュレーション トレーニングの使用の開始に関する記事で説明されている攻撃シミュレーター トレーニング [に置き換わります](attack-simulation-training-get-started.md)。
-> このサイトから新しいシミュレーションを起動する機能が無効になっています。 ただし、2021 年 1 月 24 日から 90 日間実行されるシミュレーションのレポートには引き続きアクセスできます。
+>
+> この記事で説明する攻撃シミュレーターは読み取り専用で [、Microsoft 365](https://security.microsoft.com)セキュリティ センターの電子メール & コラボレーション ノードの攻撃 **シミュレーション** トレーニングに置き換えされました。  詳細については、「攻撃シミュレーション トレーニング [の使用を開始する」を参照してください](attack-simulation-training-get-started.md)。
+>
+> このバージョンの攻撃シミュレーターから新しいシミュレーションを起動する機能が無効になっています。 ただし、2021 年 1 月 24 日から最大 90 日間レポートにアクセスできます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 

@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Microsoft 365 Multi-Geo 複数地域、複数地域のしくみ、およびデータ ストレージに使用できる地理的な場所について説明します。
-ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: ce8b752cc6a335249f9d8e03289fd16b04756ce9
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877233"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712344"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo の計画
 
@@ -40,7 +40,7 @@ ms.locfileid: "48877233"
 
 複数地域の有効化に必要になる主な 4 つの手順は次のとおりです。
 
-1.  アカウント チームと協力して、 _Microsoft 365 の複数地域機能_ をサービス プランに追加します。
+1.  アカウント チームと協力して、_Microsoft 365 の複数地域機能_ をサービス プランに追加します。
 
 2.  サテライトの場所を選択して、その場所をテナントに追加します。
 
@@ -73,10 +73,14 @@ ms.locfileid: "48877233"
 
 複数地域テナントの管理は、複数地域ではないテナントの管理と異なることがあり、SharePoint および OneDrive の設定と機能の多くが複数地域に対応しています。構成を進める前に、「[複数地域環境の管理](administering-a-multi-geo-environment.md)」を確認することをお勧めします。
 
-複数地域環境でのエンドユーザーの作業の詳細については、「複数地域環境での [ユーザー環境](multi-geo-user-experience.md) の読み取り」を参照してください。
+複数 [地域環境でのエンド](multi-geo-user-experience.md) ユーザーのエクスペリエンスの詳細については、「複数地域環境でのユーザー エクスペリエンス」を参照してください。
 
 Microsoft 365 の複数地域テナントにおける Teams エクスペリエンスの詳細については、「[Microsoft 365 OneDrive および SharePoint Online Multi-Geo 対応テナントでの Teams のエクスペリエンス](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)」を参照してください。
 
 Microsoft 365 Multi-Geo 複数地域の構成を開始する場合は、「[Microsoft 365 Multi-Geo の構成](multi-geo-tenant-configuration.md)」を参照してください。
 
 構成の完了後は、ユーザーが優先するデータの場所から作業するために必要になる、[ユーザーの OneDrive ライブラリの移行](move-onedrive-between-geo-locations.md)を必ず実行してください。
+
+## <a name="related-topics"></a>関連項目
+
+[Microsoft 365 Multi-Geo 電子情報開示の構成](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)

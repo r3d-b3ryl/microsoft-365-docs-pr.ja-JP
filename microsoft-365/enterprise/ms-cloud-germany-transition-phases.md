@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 045e29cba293dd74d3a77beae80d78380eaa4147
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 98a547a9af772e880465f75d9a3b01b1795639e1
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604010"
+ms.locfileid: "50711954"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行への影響 (全般)
 
@@ -55,9 +55,10 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 グローバ�
 ## <a name="opt-in"></a>Opt-In
 
 **適用対象**: Microsoft Cloud Deutschland (MCD) でホストOffice 365 テナントを持つすべてのお客様
+
 | Step(s) | 説明 | 影響 |
 |:-------|:-----|:-------|
-| MCD でホストOffice 365 テナントを、同意なしに移行することはできません。 | Microsoft は 2 つの方法のいずれかを使用して移行する権利を取得します。これにより、Microsoft はデータとサービスの Office 365 Global services インスタンスへの移行を調整できます。 <ol><li>365 Office管理者は、Microsoft が駆動する移行にオプトインします。 </li><li> お客様は、2020 年 5 月 1 日Office MCD テナント 365 テナント内のすべてのサブスクリプションを更新します。 毎月、これらの顧客に移行の権利を通知し、30 日待って顧客にキャンセルの機会を与え、その後直接オプトインします。</li></ol> | <ul><li>テナントは移行に同意済みとしてマークされ、管理センターには確認が表示されます。 </li><li>受信確認は、Office 365 テナント メッセージ センターに投稿されます。 サービス構成は、Microsoft Cloud Deutschland エンドポイントから続行されます。 </li><li>テナント administatror は、Office 365 メッセージ センターで、igration フェーズの状態に関する更新プログラムを監視する必要があります。 </li></ul>|
+| MCD でホストOffice 365 テナントを、同意なしに移行することはできません。 | Microsoft は 2 つの方法のいずれかを使用して移行する権利を取得します。これにより、Microsoft はデータとサービスの Office 365 Global services インスタンスへの移行を調整できます。 <ol><li>365 Office管理者は、Microsoft が駆動する移行にオプトインします。 </li><li> お客様は、2020 年 5 月 1 日Office MCD テナント 365 テナント内のすべてのサブスクリプションを更新します。 毎月、これらの顧客に移行の権利を通知し、30 日待って顧客にキャンセルの機会を与え、その後直接オプトインします。</li></ol> | <ul><li>テナントは移行に同意済みとしてマークされ、管理センターには確認が表示されます。 </li><li>受信確認は、Office 365 テナント メッセージ センターに投稿されます。 サービス構成は、Microsoft Cloud Deutschland エンドポイントから続行されます。 </li><li>テナント管理者は、移行フェーズの状態Office 365 メッセージ センターで更新プログラムを監視する必要があります。 </li></ul>|
 
 ## <a name="subscription-phase-3"></a>サブスクリプション (フェーズ 3)
 
@@ -89,9 +90,9 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 グローバ�
 
 **適用対象:** Exchange Online を使用しているすべてのお客様
 
-Exchange Online ハイブリッドを使用している場合:Exchange Online ハイブリッド管理者は、この移行の一環としてハイブリッド構成ウィザード  **(HCW)** を複数回実行する必要があります。 Exchange の [事前作業の高度な移行手順を参照してください。](ms-cloud-germany-transition-add-experience.md#Exchange-Online-before-phase-5)
+Exchange Online ハイブリッドを使用している場合:Exchange Online ハイブリッド管理者は、この移行の一環としてハイブリッド構成ウィザード  **(HCW)** を複数回実行する必要があります。 Exchange の [事前作業の高度な移行手順を参照してください。](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
 
-移行の事前作業で [](ms-cloud-germany-transition-add-pre-work.md#exchange-online)説明したように、移行手順 **フェーズ 5** が開始する前に、Exchange Online ハイブリッドのお客様は、Office 365 グローバル サービスへの移行用のオンプレミス構成を準備するために、「Office 365 Germany」モードで最新バージョンの Exchange ハイブリッド構成ウィザード (HCW) を実行する必要があります。
+移行の事前作業で [](ms-cloud-germany-transition-add-pre-work.md#exchange-online)説明したように、移行手順 **5** が開始する前に、Exchange Online ハイブリッド顧客は、Office 365 グローバル サービスへの移行用のオンプレミス構成を準備するために、"Office 365 Germany" モードで最新バージョンの Exchange ハイブリッド構成ウィザード (HCW) を実行する必要があります。
 
 移行 **フェーズ 5** が完了すると (メッセージ センター通知が公開されている場合)、Office 365 Worldwide 設定を使用して HCW を再度実行して、オンプレミス システムを Office 365 Global サービスに接続する必要があります。 カスタム ドメインを使用する場合は、追加の DNS 更新プログラムが必要になる場合があります。
 
@@ -112,7 +113,7 @@ Exchange Online ハイブリッドを使用している場合:Exchange Online �
 
 - 既存の Microsoft Cloud Deutschland のお客様または移行中のユーザーの場合、共有メールボックスが File **> Info >** Add Account を使用して Outlook に追加された場合、予定表のアクセス許可の表示が失敗する場合があります (Outlook クライアントは Rest API を使用しようと試み `https://outlook.office.de/api/v2.0/Me/Calendars` .)予定表のアクセス許可を表示するアカウントを追加する場合は [、「Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) で予定表を共有するためのユーザー エクスペリエンスの変更」の説明に従ってレジストリ キーを追加して、このアクションが成功するようにすることができます。 このレジストリ キーは、グループ ポリシーを使用して組織全体に展開できます。
 
-- 移行フェーズ中に、PowerShell コマンドレット **New-migrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 次に例を示します。
+- 移行フェーズ中に、PowerShell コマンドレット **New-migrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 以下に例を示します。
 
 ```powershell
 New-PSSession 
@@ -177,7 +178,7 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 **適用対象:** デスクトップ アプリケーションをOfficeしているすべてのお客様 (Word、Excel、PowerPoint、Outlook、...)
 
-Office "ドイツ" に移行する 365 テナントでは、テナント移行がフェーズ 9 に達した後、すべてのユーザーが Office 365 からサインアウトし、Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントに戻る必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンを取得できます。
+Office "ドイツ" に移行する 365 テナントでは、テナント移行がフェーズ 9 に達した後、すべてのユーザーが Office 365 からサインアウトし、すべての Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントに戻る必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンを取得できます。
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
