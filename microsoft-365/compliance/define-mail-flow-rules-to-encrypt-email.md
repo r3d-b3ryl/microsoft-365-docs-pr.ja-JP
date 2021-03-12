@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理者は、メール フロー ルール (トランスポート ルール) を作成して、365 Message Encryption を使用してメッセージを暗号化および復号化Office学習できます。
-ms.openlocfilehash: 8060309f350b50c2aadc9a703e7a57a4caf8808c
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 58b5e592ee8da92a2dbfd10f533aad3240b7a484
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597229"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741556"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>メール メッセージを暗号化するメール フロー ルールを定義する
 
@@ -86,7 +86,7 @@ EAC を使用して、新しい OME 機能を使用してメッセージ暗号�
 
 6. 新しい OME 機能を使用して暗号化を有効にするには、[次の操作] から [メッセージ セキュリティの変更] を選択し **、[365** メッセージの暗号化と権限の保護を適用する] Officeを選択します。 一覧から RMS テンプレートを選択し、[保存] を **選択し****、[OK] を選択します**。
 
-   テンプレートの一覧には、すべての既定のテンプレートとオプション、および 365 で使用するために作成したカスタム Office含まれます。 リストが空の場合は、「Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ」の説明に従って、新しい機能を使用して [Office 365](set-up-new-message-encryption-capabilities.md)Message Encryption をセットアップしてください。 既定のテンプレートの詳細については、「Azure Information Protection 用テンプレートの構成と管理 [」を参照してください](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。 [転送しない] **オプションの詳細** については、「メールの [転送しないオプション」を参照してください](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 [暗号化のみ] オプション **の詳細については** 、「 [メールの暗号化のみオプション」を参照してください](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
+   テンプレートの一覧には、すべての既定のテンプレートとオプション、および 365 で使用するために作成したカスタム Office含まれます。 リストが空の場合は、「Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ」の説明に従って、新しい機能を使用して [Office 365](set-up-new-message-encryption-capabilities.md)Message Encryption をセットアップしてください。 既定のテンプレートの詳細については、「Azure Information Protection 用テンプレートの構成と管理 [」を参照してください](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。 [転送しない] オプションの詳細については、「メールの [転送しないオプション」を参照してください](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 暗号化専用オプションの詳細については、「メールの [暗号化のみオプション」を参照してください](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
    別のアクションを **指定する場合** は、[アクションの追加] を選択できます。
 
@@ -122,7 +122,7 @@ EAC を使用して、新しい OME 機能を使用してメッセージの削�
 
 組織を新しい OME 機能にまだ移動していない場合は、組織に妥当な場合は、すぐに新しい OME 機能に移行する計画を立てをお勧めします。 手順については、「Azure Information Protection の上にOffice [365](set-up-new-message-encryption-capabilities.md)メッセージ暗号化機能をセットアップする」を参照してください。 それ以外の場合は、「新しい OME 機能を使用しない Office [365 Message Encryption](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities)のメール フロー ルールの定義」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 での暗号化](encryption.md)
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1bb5e93b08b74f5691c76e9a59bf9fa970e08f36
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 09d9293cfb1b574b4c179a0b486d436dab99edf2
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597197"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741348"
 ---
 # <a name="message-encryption-faq"></a>メッセージの暗号化に関する FAQ
 
@@ -145,8 +145,7 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてい�
 
 ## <a name="what-email-clients-support-revocation-of-protected-emails"></a>保護されたメールの失効をサポートする電子メール クライアント
 
-Outlook on the web では、保護されたメールの失効がサポートされています。  詳細 [については、「送信した暗号化されたメッセージを取り消す方法」](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) を参照してください。
-
+Outlook on the web では、保護されたメールの失効がサポートされています。  詳細 [については、「送信した暗号化されたメッセージを取り消す方法」](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) を参照してください。
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>ポリシーを設定してメッセージを自動的に暗号化できますか?
 
@@ -218,8 +217,8 @@ Outlook on the web では、保護されたメールの失効がサポートさ�
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
-   
- ## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>Fullaccess を使用して、別のユーザーのメールボックスに送信される暗号化されたメッセージを開く方法はありますか?
+
+## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>Fullaccess を使用して、別のユーザーのメールボックスに送信される暗号化されたメッセージを開く方法はありますか?
 
 ユーザーは、直接アクセス権が与え、自動マッピングがオンになっている限り、暗号化されたメッセージを開くできます。 電子メールが有効なセキュリティ グループを介してアクセスが許可されている場合、アクセスは許可されません。
 

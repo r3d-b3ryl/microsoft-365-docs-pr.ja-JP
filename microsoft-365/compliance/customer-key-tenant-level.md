@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Microsoft 365 テナント内のすべてのデータに顧客キーを設定する方法について説明します。
-ms.openlocfilehash: 7bc5403f73e2d61f47e92ab5c94509f3fe9f3e33
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454648"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727480"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>テナント レベルでの Microsoft 365 のカスタマー キーの概要 (パブリック プレビュー)
 
@@ -33,6 +33,7 @@ ms.locfileid: "50454648"
 - Cortana による Teams チャットの提案
 - Teams の状態メッセージ
 - Exchange Online のユーザー情報とシグナル情報
+- アプリケーション レベルでまだ暗号化されていない Exchange Online メールボックス
 
 Microsoft Teams の場合、テナント レベルの顧客キーは、DEP がテナントに割り当てられた時点から新しいデータを暗号化します。 パブリック プレビューでは、過去のデータの暗号化はサポートされていません。 Exchange Online の場合、顧客キーは既存のデータと新しいデータを暗号化します。
 
@@ -42,13 +43,9 @@ Microsoft Teams の場合、テナント レベルの顧客キーは、DEP が�
 
 Exchange Online と Sharepoint Online 用に顧客キーが既に設定されている場合は、新しいテナント レベルのパブリック プレビューがどのように適合しているかについて説明します。
 
-作成するテナント レベルの暗号化ポリシーは、Microsoft 365 の Microsoft Teams ワークロードおよび Exchange Online ワークロードのすべてのデータを暗号化します。 このポリシーは、顧客キーで既に作成した微調整された DEP を妨げない。
+作成するテナント レベルの暗号化ポリシーは、Microsoft 365 の Microsoft Teams ワークロードおよび Exchange Online ワークロードのすべてのデータを暗号化します。 ただし、Exchange Online では、顧客キー DEP を個々のメールボックスに既に割り当て済みの場合、テナント レベルのポリシーはそれらの DEP を上書きされません。 テナント レベルのポリシーは、メールボックス レベルの Customer Key DEP が既に割り当てられていないメールボックスのみを暗号化します。
 
-例:
-
-Microsoft Teams ファイルと、OneDrive for Business および SharePoint に保存されている一部の Teams 通話および会議記録は、SharePoint Online DEP によって暗号化されます。 単一の SharePoint Online DEP は、1 つの geo 内のコンテンツを暗号化します。
-
-Exchange Online では、顧客キーを使用して 1 つ以上のユーザー メールボックスを暗号化する DEP を作成できます。 テナント レベルのポリシーを作成すると、暗号化されたメールボックスは暗号化されません。 ただし、テナント レベルのキーは、DEP の影響を受けないメールボックスを暗号化します。
+たとえば、Microsoft Teams ファイルと、OneDrive for Business および SharePoint に保存されている一部の Teams 呼び出しおよび会議記録は、SharePoint Online DEP によって暗号化されます。 単一の SharePoint Online DEP は、1 つの geo 内のコンテンツを暗号化します。
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>テナント レベルで顧客キーを設定する (パブリック プレビュー)
 
@@ -299,10 +296,10 @@ Azure PowerShell では、次の情報を使用します。
 ### <a name="create-policy"></a>ポリシーの作成
 
 ```powershell
-   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
+   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>]
 ```
 
-説明: コンプライアンス管理者を有効にして、2 つの AKV ルート キーを使用して新しいデータ暗号化ポリシー (DEP) を作成します。 作成したポリシーは、このコマンドレットを使用してSet-M365DataAtRestEncryptionPolicyできます。 キーを最初に割り当て、またはキーを回転した後、新しいキーを有効にするには最大 24 時間かかる場合があります。 新しい DEP の有効時間が 24 時間を超える場合は、Microsoft にお問い合わせください。
+説明: コンプライアンス管理者を有効にして、2 つの AKV ルート キーを使用して新しいデータ暗号化ポリシー (DEP) を作成します。 作成したポリシーは、このコマンドレットを使用してSet-M365DataAtRestEncryptionPolicyAssignmentできます。 キーを最初に割り当て、またはキーを回転した後、新しいキーを有効にするには最大 24 時間かかる場合があります。 新しい DEP の有効時間が 24 時間を超える場合は、Microsoft にお問い合わせください。
 
 例:
 
@@ -321,7 +318,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 ### <a name="assign-policy"></a>ポリシーの割り当て
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
 ```
 
 説明: このコマンドレットは、既定のデータ暗号化ポリシーの構成に使用されます。 このポリシーは、すべてのサポート ワークロードでデータを暗号化するために使用されます。 
@@ -329,18 +326,19 @@ Set-M365DataAtRestEncryptionPolicyAssignment -Policy “<Default_PolicyName or D
 例:
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
 ```
 
 パラメータ :
+
 | 名前 | 説明 | オプション (Y/N) |
 |----------|----------|---------|
--Policy|割り当てる必要があるデータ暗号化ポリシーを指定します。ポリシー名またはポリシー ID を指定します。|×|
+-DataEncryptionPolicy|割り当てる必要があるデータ暗号化ポリシーを指定します。ポリシー名またはポリシー ID を指定します。|×|
 
 ### <a name="modify-or-refresh-policy"></a>ポリシーの変更または更新
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
+Set-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
 ```
 
 説明: コマンドレットを使用して、既存のポリシーを変更または更新できます。 また、ポリシーを有効または無効にするためにも使用できます。 キーを最初に割り当て、またはキーを回転した後、新しいキーを有効にするには最大 24 時間かかる場合があります。 新しい DEP の有効時間が 24 時間を超える場合は、Microsoft にお問い合わせください。
@@ -360,18 +358,19 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 ```
 
 パラメータ :
+
 | 名前 | 説明 | オプション (Y/N) |
 |----------|----------|---------|
 |-Identity|変更するデータ暗号化ポリシーを指定します。|×|
 |-Refresh|Azure Key Vault で関連付けられたキーを回転した後、更新スイッチを使用してデータ暗号化ポリシーを更新します。 このスイッチで値を指定する必要はありません。|Y|
 |-Enabled|Enabled パラメーターは、データ暗号化ポリシーを有効または無効にします。 ポリシーを無効にする前に、テナントからの割り当てを解除する必要があります。 有効な値は次のとおりです。</br > $true: ポリシーが有効になっている</br > $true: ポリシーを有効にします。これが既定値です。|Y|
-|-Name|Name パラメーターは、データの暗号化ポリシーの一意の名前を指定します。|Y
+|-Name|Name パラメーターは、データの暗号化ポリシーの一意の名前を指定します。|Y|
 |-Description|Description パラメーターは、データの暗号化ポリシーの省略可能な説明を指定します。|Y|
 
 ### <a name="get-policy-details"></a>ポリシーの詳細を取得する
 
 ```powershell
-Get-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
+Get-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
 ```
 
 説明: このコマンドレットは、テナント用に作成された M365DataAtRest 暗号化ポリシーのすべて、または特定のポリシーに関する詳細を一覧表示します。

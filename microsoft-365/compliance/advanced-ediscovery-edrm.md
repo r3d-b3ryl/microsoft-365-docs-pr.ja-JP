@@ -1,5 +1,5 @@
 ---
-title: EDRM を使用した高度な電子情報開示の調整
+title: EDRM との高度な電子情報開示の配置
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,49 +11,47 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
-- M365-security-compliance
-- m365solution-aed
-- m365initiative-compliance
+- m365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 の Advanced eDiscovery の組み込みワークフローは、電子情報開示参照モデル (EDRM) で概説されている電子情報開示プロセスに沿っています。
+description: Microsoft 365 の Advanced eDiscovery の組み込みのワークフローは、電子情報開示参照モデル (EDRM) で概説されている電子情報開示プロセスに合わせて調整されます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ca94baf1fc57ac014a32a80ddc5705feeb2c842
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: f2e7886eb67a58b43e9fb638fafb358fd9ee832c
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841635"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727490"
 ---
-# <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>電子情報開示参照モデルを使用した Advanced eDiscovery の配置
+# <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>電子情報開示参照モデルとの高度な電子情報開示の配置
 
-Microsoft 365 の Advanced eDiscovery の組み込みワークフローは、電子情報開示参照モデル (EDRM) で概説されている電子情報開示プロセスに沿っています。
+Microsoft 365 の Advanced eDiscovery の組み込みのワークフローは、電子情報開示参照モデル (EDRM) で概説されている電子情報開示プロセスに合わせて調整されます。
 
 ![電子探索参照モデル (EDRM)](../media/EDRMv1.png)
 
-(画像ソース: edrm.net。 ソース 画像は、Creative Commons Attribution 3.0 Unported License (Creative Commons Attribution 3.0 Unported License) で利用できます)。
+(画像ソース提供:edrm.net。 ソース イメージは、クリエイティブ コモンズ アトリビューション 3.0 [報告されていないライセンス] で利用できます。
 
-大きなレベルでは、Advanced eDiscovery が EDRM ワークフローをサポートする方法を次に示します。
+高度な電子情報開示が EDRM ワークフローをサポートする方法は次の高レベルです。
 
-- **Id。** 調査に関心のある人物を特定した後、Advanced eDiscovery ケースにカストディアン (データ保管担当者とも呼ばれる)、調査に関連する情報を保持している可能性がある管理者として追加できます。 ユーザーがカストディアンとして追加された後は、保管担当者のドキュメントを簡単に保持、収集、および確認できます。
+- **ID。** 調査に関心のある潜在的な人物を特定した後、高度な電子情報開示ケースに保管担当者 (データ保管担当者とも呼ばれる)を追加できます。 ユーザーが保管担当者として追加された後、保管担当者のドキュメントを保存、収集、および確認するのは簡単です。
 
-- **保持。** 調査に関連するデータを保持および保護するために、Advanced eDiscovery を使用すると、ケース内の保管担当者に関連付けられているデータ ソースに法的情報保留を設定できます。 保管されていないデータを保留に設定できます。 Advanced eDiscovery には、法的情報保留通知を保管担当者に送信し、通知を追跡できる組み込みの通信ワークフローも用意されています。
+- **保持。** 調査に関連するデータを保持および保護するために、Advanced eDiscovery を使用すると、ケース内の保管担当者に関連付けられたデータ ソースに法的なホールドを設定できます。 保管以外のデータを保留に設定できます。 高度な電子情報開示には、通信ワークフローも組み込みなので、法的保持通知を保管担当者に送信し、確認応答を追跡できます。
 
-- **コレクションです。** 調査に関連するデータ ソースを特定 (および保持) した後、Advanced eDiscovery 検索の組み込みの検索ツールを使用して、ケースに関連する可能性のある保管データ ソース (および該当する場合は保管されていないデータ ソース) からライブ データを収集できます。
+- **コレクション。** 調査に関連するデータ ソースを特定 (および保存) した後、ケースに関連する可能性のある保管データ ソース (および該当する場合は保管されていないデータ ソース) のライブ データを高度な電子情報開示検索で組み込みの検索ツールを使用して収集できます。
 
-- **処理。** ケースに関連するすべてのデータを収集した後、次の手順でケースを処理し、さらにレビューと分析を行います。 Advanced eDiscovery では、コレクション フェーズで特定したインセット データが Azure Storage の場所 (レビュー セットと呼ばれる) にコピーされ、ケース データの静的ビューが提供されます。 
+- **処理。** ケースに関連するすべてのデータを収集した後、次の手順でケースを処理して、詳細なレビューと分析を行います。 Advanced eDiscovery では、コレクション フェーズで識別したインプレイス データが Azure Storage の場所 (レビュー セットと呼ばれる) にコピーされ、ケース データの静的ビューが提供されます。 
 
-- **確認します。** レビュー セットにデータが追加された後、特定のドキュメントを表示し、追加のクエリを実行して、データをケースに最も関連のあるものに減らします。 また、特定のドキュメントに注釈を付け、タグを付けできます。
+- **確認します。** データをレビュー セットに追加した後、特定のドキュメントを表示し、追加のクエリを実行して、データをケースに最も関連のあるものに減らします。 また、特定のドキュメントに注釈を付け、タグ付けできます。
 
-- **分析。** Advanced eDiscovery は、調査に関連していないと判断したレビュー セットからさらにデータを収集するのに役立つ統合分析ツールを提供します。 Advance eDiscovery は、関連するデータの量を減らすだけでなく、コンテンツを整理してレビュー プロセスをより簡単かつ効率的に行え、法的レビューコストを節約するのにも役立ちます。
+- **分析。** 高度な電子情報開示には、調査に関連していないと判断したレビュー セットからデータをさらに作成するのに役立つ統合分析ツールが提供されています。 関連するデータの量を減らすだけでなく、Advance eDiscovery を使用すると、コンテンツを整理してレビュー プロセスをより簡単かつ効率的に行って、法的レビューコストを節約できます。
 
-- **実稼働** および **プレゼンテーション。** 準備ができたら、法的レビュー用のレビュー セットからドキュメントをエクスポートできます。 ドキュメントは、ネイティブ形式または EDRM で指定された形式でエクスポートして、サード パーティ製のレビュー アプリケーションにインポートできます。
+- **実稼働** と **プレゼンテーション。** 準備ができたら、法的レビュー用のレビュー セットからドキュメントをエクスポートできます。 ドキュメントをネイティブ形式または EDRM で指定した形式でエクスポートして、サードパーティのレビュー アプリケーションにインポートできます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 Advanced eDiscovery の使用を開始するには、以下を参照してください。
 
-- [Advanced eDiscovery のセットアップ](get-started-with-advanced-ediscovery.md)
+- [Advanced eDiscovery を設定する](get-started-with-advanced-ediscovery.md)
 
-- [Advanced eDiscovery ケースの作成と管理](create-and-manage-advanced-ediscoveryv2-case.md)
+- [高度な電子情報開示ケースの作成と管理](create-and-manage-advanced-ediscoveryv2-case.md)
