@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e392d071b77226a23001d8628c3b9c711b06e228
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: bbb3814a973bec53a877bc70d0299ce7b2eb87b5
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454585"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727555"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop アーカイブ デバイス
 
@@ -48,16 +48,22 @@ Microsoft Managed Desktop に登録するには、デバイスが次のモデル
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB RAM | なし | **2025 年 5 月 1 日**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | 5VS01AV、IR カメラ、指紋センサーが必要な SKU  | **2023 年 2 月 15 日** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | 5VS01AV、IR カメラ、指紋センサーが必要な SKU  | **2023 年 11 月 30 日** |
+|HP EliteBook 830 / 840 / 850 G7| 128 GB / Intel i5 / 8 GB RAM | 9MZ21AV、IR カメラ、または指紋センサーが必要な SKU  | **2024 年 11 月 30 日** |
 |HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | 5VS03AV、IR カメラが必要な SKU |**2023 年 5 月 14 日** |
+|HP Elite x2 G4| 256 GB / Intel i5 / 8 GB RAM | 5VS03AV、IR カメラが必要な SKU |**2024 年 5 月 31 日** |
+|HP EliteBook x360 830 G7| 256 GB / Intel i5 / 8 GB RAM | 9MZ21AV の SKU、IR カメラが必要 |**2024 年 11 月 30 日** |
 |HP EliteBook x360 1030 G5| 256 GB / Intel i5 / 8 GB RAM | 5VS01AV の SKU、IR カメラが必要 |**2023 年 5 月 14 日** |
 |HP EliteBook x360 1030 G6| 256 GB / Intel i5 / 8 GB RAM | 5VS01AV の SKU、IR カメラが必要 |**2023 年 11 月 30 日** |
 |HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | 5VS01AV の SKU、IR カメラが必要 | **2023 年 10 月 23 日** |
 |HP EliteBook x360 1040 G6| 256 GB / Intel i5 / 8 GB RAM | 5VS01AV の SKU、IR カメラが必要 | **2023 年 11 月 30 日** |
+|HP EliteBook x360 1030 / 1040 G7| 256 GB / Intel i5 / 8 GB RAM | 8XW08AV の SKU、IR カメラが必要 | **2024 年 8 月 31 日** |
 |HP ProBook x360 440 G1| 128 GB / Intel i3 / 8 GB RAM | 5VS04AV、IR カメラ、指紋リーダーが必要な SKU | **2023 年 6 月 6 日** |
 |HP EliteDesk 800 G4 DM | 128 GB / Intel i3 / 8 GB RAM | 5VS04AV の SKU | **2023 年 7 月 18 日** |
 |HP EliteDesk 800 G4 SFF | 128 GB / Intel i3 / 8 GB RAM | 5VS04AV の SKU | **2023 年 7 月 18 日** |
 |HP EliteOne 800 G4 23.8in AIO |128 GB / Intel i3 / 8 GB RAM |5VS04AV の SKU| **2023 年 7 月 18 日** |
+|HP EliteOne 800 G6 24/27 AIO |256 GB / Intel i5 / 8 GB RAM |9XM14AV の SKU| **2025 年 6 月 30 日** |
 |HP ZBook 14u/15u G6 Mobile Workstation |256 GB / Intel i5 / 8 GB RAM |5VS04AV の SKU、IR カメラが必要| **2023 年 11 月 30 日** |
+|HP ZBook Firefly 14/15 G7 Mobile ワークステーション |256 GB / Intel i5 / 8 GB RAM |9MZ22AV の SKU、IR カメラが必要| **2024 年 11 月 30 日** |
 |Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | なし | **2022 年 11 月 16 日** |
 |Surface Go| 128 GB / Intel 4415Y / 8GB RAM | なし | **2023 年 8 月 2 日** |
 |Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | なし | **2022 年 5 月 20 日** |

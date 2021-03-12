@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、Teams、SharePoint、およびグループ内の関連機能を管理する方法についてYammer。
-ms.openlocfilehash: 8f1341b3b3bab1e9ae7219f01124983aefb022b1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50424048"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741599"
 ---
 # <a name="what-is-collaboration-governance"></a>共同作業のガバナンスとは?
 
@@ -41,7 +41,7 @@ Microsoft 365 グループ、Teams、Yammerなどのサービスは、共同作�
 
 組織内の安全なコラボレーションのために Microsoft 365 グループと Teams を展開するための多くのオプションがあります。 組織に最適なコラボレーション ソリューションを作成するには [、Microsoft 365](setup-secure-collaboration-with-teams.md) とその関連記事とのセキュリティで保護されたコラボレーションをセットアップするとともに、このガバナンス コンテンツを使用することをお勧めします。
 
-## <a name="what-are-microsoft-365-groups"></a>Microsoft 365 グループとは
+## <a name="why-microsoft-365-groups-are-important"></a>Microsoft 365 グループが重要な理由
 
 Microsoft 365 グループでは、共同作業を行うユーザーのセットを選択し、それらのユーザーが共有するリソースのコレクションを簡単に設定できます。 グループにメンバーを追加すると、グループによって提供されるすべてのアセットに必要なアクセス許可が自動的に付与されます。 Teams とユーザー Yammer、Microsoft 365 グループを使用してメンバーシップを管理します。
 

@@ -1,5 +1,5 @@
 ---
-title: メンバーがグループとして送信またはグループの代わりに送信を許可する
+title: グループの代理として送信または送信するメンバーを許可する
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,69 +16,71 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: メンバーが Microsoft 365 グループとしてメールを送信したり、Microsoft 365 グループの代わりにメールを送信したりする方法について説明します。
-ms.openlocfilehash: 6dff559eceec1b719f31d577d7fff8f604636a47
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+description: グループ メンバーが Microsoft 365 グループとして電子メールを送信したり、Microsoft 365 グループに代わって電子メールを送信したりする方法について説明します。
+ms.openlocfilehash: 44a0a7a690c8faa9fe00732e8154f36aa5a6fe6f
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663585"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727081"
 ---
-# <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>メンバーがグループとして送信またはグループの代わりに送信を許可する
+# <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>グループの代理として送信または送信するメンバーを許可する
 
-[送信者] または [代理送信] アクセス許可が付与されているMicrosoft 365 グループのメンバーは、グループとして、またはグループの代理として電子メールを送信できます。 この記事では、グローバル管理者または Exchange 管理者がこれらのアクセス許可を設定する方法について説明します。
+Send **as** または Send **onhalf** permissions が付与されている Microsoft 365 グループのメンバーは、グループとして、またはグループの代わりに電子メールを送信できます。 (グループ内のゲストにこれらのアクセス許可を付与することはできません)。
+
+この記事では、グローバル管理者または Exchange 管理者がこれらのアクセス許可を設定する方法について説明します。
   
-たとえば、Megan Bowen が **Training** Microsoft 365 グループの一部であり、グループに対する送信アクセス許可を持つ場合、そのユーザーがグループとしてメールを送信すると、そのメールを送信したトレーニング グループのようになります。 
+たとえば **、Megan** Bowen がトレーニング Microsoft 365 グループの一部であり、グループに対するアクセス許可として送信を持つ場合、グループとして電子メールを送信すると、トレーニング グループがメールを送信したのようになります。 
   
-[ **代理送信] アクセス** 許可を使用すると、ユーザーは Microsoft 365 グループの代わりにメールを送信できます。 たとえば、Alex Wilber が **Marketing** Microsoft 365 グループの一部であり、代理送信のアクセス許可を持ち、グループとしてメールを送信する場合、電子メールはマーケティングの代わりに **Alex Wilber** によって送信されたように見えます。
+[ **代理で送信] アクセス** 許可を使用すると、ユーザーは Microsoft 365 グループに代わって電子メールを送信できます。 たとえば **、Alex** Wilber がマーケティング Microsoft 365 グループの一部であり、代理で送信権限を持ち、グループとして電子メールを送信する場合、電子メールは、マーケティングに代わって **Alex Wilber** によって送信されたように見えます。
 
 > [!IMPORTANT]
-> 指定したユーザー **の [ユーザーとして送信]** または [ **代理** 送信] を構成できますが、両方を構成することはできません。 両方を構成する場合は、既定で [次のように **送信] が設定されます**。
+> 指定したユーザー **に代わって** [送信] **または** [代理送信] を構成できますが、両方は構成できません。 両方を構成すると、既定で [として送信] **になります**。
 
 > [!TIP]
-> Outlook と Outlook on the Web を使用してグループからメールを送信する方法については [、「Microsoft 365](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) グループからメールを送信する」または「Microsoft 365 グループの代理でメールを送信する」を参照してください。
+> Outlook と Outlook on the Web を使用してグループから電子メールを送信する方法については [、「Microsoft 365](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) グループからまたは Microsoft 365 グループに代わって電子メールを送信する」を参照してください。
     
-## <a name="allow-members-to-send-email-as-a-group"></a>メンバーがグループとしてメールを送信する
+## <a name="allow-members-to-send-email-as-a-group"></a>メンバーがグループとして電子メールを送信するを許可する
 
-このセクションでは、ユーザーが Exchange Online の [Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) 管理センター (EAC) でグループとしてメールを送信する方法について説明します。
+このセクションでは、ユーザーが Exchange Online の [Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) 管理センター (EAC) でグループとして電子メールを送信する方法について説明します。
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
-2. ユーザー **に送信** を許可するグループの [グループの編集] ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) アイコンを選択します。   
+2. ユーザー **に送信** を許可するグループの [グループの編集] アイコン ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) を選択します。   
     
 3. [ **グループ委任**] を選びます。
     
-4. [送信 **者] セクション** で、署名を選択して、グループとして送信 **+** するユーザーを追加します。 
+4. [Send **As] セクション** で、サインを選択して、送信 **+** するユーザーをグループとして追加します。 
     
-    ![[送信] ダイアログ ボックスのスクリーンショット](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![[送信のスクリーンショット] ダイアログ ボックス](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
-5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 **[OK] を選択** し、[保存 **] を選択します**。
+5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 **[OK] と [** 保存]**を選択します**。
     
-    ![一覧からユーザーを検索または選択する入力](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![リストからユーザーを検索または選択する入力](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
-## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>グループの代わりにメンバーが電子メールを送信できる
+## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>メンバーがグループに代わって電子メールを送信するを許可する
 
-このセクションでは、ユーザーが Exchange Online の Exchange 管理センター (EAC) でグループの代理として電子メールを送信する方法について説明します。
+このセクションでは、ユーザーが Exchange Online の Exchange 管理センター (EAC) 内のグループに代わって電子メールを送信する方法について説明します。
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
-2. ユーザー **に送信** を許可するグループの [グループの編集] ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) アイコンを選択します。 
+2. ユーザー **に送信** を許可するグループの [グループの編集] アイコン ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) を選択します。 
     
 3. [ **グループ委任**] を選びます。
     
-4. [代理送信] セクションで、署名を選択して、グループとして送信 **+** するユーザーを追加します。 
+4. [代理で送信] セクションで、署名を選択して、グループとして送信する **+** ユーザーを追加します。 
     
-    ![[代理送信] ダイアログのスクリーンショット](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![ダイアログの代わりに送信のスクリーンショット](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
-5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 **[OK] を選択** し、[保存 **] を選択します**。
+5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 **[OK] と [** 保存]**を選択します**。
     
-    ![一覧からユーザーを検索または選択する入力](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![リストからユーザーを検索または選択する入力](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>関連記事
 
-[グループコラボレーション ガバナンスの計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[コラボレーション ガバナンス計画を作成する](collaboration-governance-first.md)
+[コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 
 [Microsoft 365 グループの詳細](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
