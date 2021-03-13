@@ -8,23 +8,24 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 一般法人向け Microsoft 365 または有料版サブスクリプションをキャンセルする方法について説明します。
 ms.date: ''
-ms.openlocfilehash: 5d96b541030646668f636ee09cc3ccc4b43ef75a
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
-ms.translationtype: MT
+ms.openlocfilehash: 45e953fd415bb2d508554b47fb3226dcae74cb6b
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233342"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741403"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -35,7 +36,7 @@ ms.locfileid: "50233342"
 
 ::: moniker-end
 
-*対象*: ユーザーに割り当てたライセンスが 25 より少ない場合は、いつでも Microsoft 365 管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをオンラインでキャンセルできます。 ユーザーに割り当てられているライセンスが 25 を超える場合は、25 未満に減らすか、サポートに連絡してサブスクリプション [をキャンセルします](../../admin/contact-support-for-business-products.md)。
+*対象*: ユーザーに割り当てたライセンスが 25 より少ない場合は、いつでも Microsoft 365 管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをオンラインでキャンセルできます。 ユーザーに割り当てられたライセンスが 25 よりも多い場合は、ライセンスを 25 未満に減らすか、[サポートに連絡してサブスクリプションをキャンセルします](../../admin/contact-support-for-business-products.md)。
 
 *返金*: 日割り計算された残高は、次の請求サイクルの間に返金されます。
 

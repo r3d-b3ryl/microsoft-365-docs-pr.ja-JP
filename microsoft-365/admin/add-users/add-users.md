@@ -2,13 +2,13 @@
 title: ユーザーを追加してライセンスを割り当てる
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365_Setup
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: ユーザーを追加して、同時に Microsoft 365 にライセンスを割り当てる方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 412774c9786abc01e94c5a350871f9d34586cce4
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
-ms.translationtype: MT
+ms.openlocfilehash: 71695c47bbc34a94f0040c37dd0c0bb0ab72fbba
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114155"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741415"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して同時にライセンスを割り当てる
 
@@ -41,7 +41,7 @@ ms.locfileid: "50114155"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-ユーザーを追加してライセンスを割り当てるには、グローバル管理者、ライセンス管理者、またはユーザー管理者である必要があります。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+ユーザーを追加してライセンスを割り当てるには、グローバル管理者、ライセンス管理者、またはユーザー管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="watch-add-users-in-the-admin-center"></a>視聴: 管理センターでユーザーを追加する
 
@@ -62,7 +62,7 @@ ms.locfileid: "50114155"
     - [**パスワードの設定**] ユーザー用のパスワードとして、自動生成されたパスワードを使用するのか独自の強力なパスワードを作成するのかを選択します。
     - ユーザーは 90 日後にパスワードを変更する必要があります。 または、[**初回サインイン時にこのユーザーにパスワードの変更を要求する**] を選択することもできます。
     - ユーザーが追加されたときに、パスワードをメールで送信するかどうかを選択します。
-4. [**製品ライセンスの割り当て**] ウィンドウで、ユーザーの場所と適切なライセンスを選択します。 利用可能なライセンスがない場合でも、ユーザーを追加し、追加のライセンスを購入できます。 [**アプリ**] を展開し、アプリを選択または選択解除して、ユーザーにライセンスが付与されるアプリを制限します。 [**次へ**] を選択します。
+4. [**製品ライセンスの割り当て**] ウィンドウで、ユーザーの場所と適切なライセンスを選択します。 利用可能なライセンスがない場合でも、ユーザーを追加し、追加のライセンスを購入できます。 [**アプリ**] を展開し、アプリを選択または選択解除して、ユーザーにライセンスが付与されるアプリを制限します。 **[次へ]** を選択します。
 5. [**オプションの設定**] ウィンドウで、このユーザーを管理者にする場合は [**役割**] を展開します。ユーザーに関する追加情報を入力する場合は、[**プロファイル情報**] を展開します。
 6. [**次へ**] を選択し、新しいユーザーの設定を確認し、必要に応じて変更を行い、[**追加の完了**] を選択し、**[閉じる]** をクリックします。
 
