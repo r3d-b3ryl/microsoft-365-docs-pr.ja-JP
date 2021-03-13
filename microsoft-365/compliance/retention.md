@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: a716e3dd8138d5f7f9b5f8d8abbdb401211db9ae
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 67697124df7908dca2ace74dc5de921d18d817c6
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461872"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727326"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -362,13 +362,13 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
 
 ## <a name="releasing-a-policy-for-retention"></a>保持に関するポリシーを解放する
 
-保管ロックが適用されていない保持に関するポリシーの場合は、いつでもポリシーを削除できます。それにより、以前に適用された保持設定は事実上無効になります。 ポリシーを維持して、場所の状態をオフに変更することもできます。
+保管ロックが適用されていない保持に関するポリシーの場合は、いつでもポリシーを削除できます。それにより、以前に適用された保持設定は事実上無効になります。 ポリシーを保持することもできますが、SharePoint サイトまたは OneDrive のアカウントを削除するか、場所のステータスをオフに変更するか、ポリシーを無効にします。
  
-これらの操作のいずれかを実行しても、[アイテム保管ライブラリ] に保持されている SharePoint や OneDrive のコンテンツについては、直ちに完全に削除されることはありません。 代わりに、不注意によるデータの損失を防ぐために、30 日間の猶予期間があります。そのポリシーのコンテンツの有効期限は、[アイテム保管ライブラリ] には表示されず、必要に応じてコンテンツを復元できます。 また、猶予期間中はこのコンテンツを手動で削除することはできません。
+これらのアクションのいずれかを実行すると、ポリシーからの保持の対象となる SharePoint または OneDrive コンテンツは、不注意によるデータの損失を防ぐために 30 日間保持され続けます。 この 30 日間の猶予期間中、サイトを削除することはできません。削除されたファイルは引き続き保持されます (ファイルは引き続き保存保留ライブラリに追加されます) が、定期的に保存保留ライブラリをクリーンアップするタイマー ジョブはこれらのために中断されます。 必要に応じてファイルを復元できるようにします。
 
-猶予期間中に場所の状態をオンに戻すことができ、そのポリシーのコンテンツは削除されません。
+保存保持ライブラリの詳細については、「[SharePoint と OneDrive の保持のしくみ](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)」を参照してください。
 
-この SharePoint と OneDrive の 30 日の猶予期間は、Exchange の 30 日の保留期間に対応しています。 詳しくは、[メールボックスの管理についての詳細](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold) をご覧ください。。
+猶予期間中の動作のため、ポリシーを再度有効にするか、ロケーション ステータスを 30 日以内にオンに戻すと、この期間中に永続的なデータ損失なしにポリシーが再開されます。
 
 ## <a name="auditing-retention-configuration"></a>アイテム保持構成の監査
 
