@@ -285,8 +285,6 @@
                   items:
                     - name: ServiceNow 統合の概要
                       href: ./mtp/tickets.md
-                    - name: セキュリティ センターの ServiceNow チケット
-                      href: ./mtp/tickets-security-center.md
             - name: Microsoft 365 Defender API (プレビュー)
               items:
                 - name: Microsoft 365 Defender API の概要 (プレビュー)
