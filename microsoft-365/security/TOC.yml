@@ -53,6 +53,8 @@
               href: mtp/microsoft-365-security-center-mdo.md
             - name: Defender for Endpoint を Microsoft 365 セキュリティ センターにリダイレクトする
               href: mtp/microsoft-365-security-mde-redirection.md
+            - name: Defender for Office 365 を Microsoft 365 セキュリティ センターにリダイレクトする
+              href: mtp/microsoft-365-security-mdo-redirection.md
             - name: プレビュー機能
               href: mtp/preview.md
             - name: 問題のトラブルシューティング
