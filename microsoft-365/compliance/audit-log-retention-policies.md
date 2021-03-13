@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
-ms.openlocfilehash: eeddf4c963284acaa908e07ddfdae77ec0bb080c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114944"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712047"
 ---
 # <a name="manage-audit-log-retention-policies"></a>監査ログの保持ポリシーを管理する
 
@@ -47,7 +47,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 - 組織では、最大 50 個の監査ログの保持ポリシーを設定できます。
 
-- 監査ログを 90 日以上保持するには、監査ログを生成したユーザーに Office 365 E5 または Microsoft 365 E5 ライセンスを割り当てるか、または Microsoft 365 E5 Compliance または E5 eDiscovery および監査アドオン ライセンスが必要です。
+- 監査ログを 90 日以上 (最大 1 年) 保持するには、(監査されるアクティビティの実行により) 監査ログを生成したユーザーに Office 365 E5 または Microsoft 365 E5 ライセンスを割り当てるか、または Microsoft 365 E5 Compliance または E5 eDiscovery および監査アドオン ライセンスが必要です。 監査ログを 10 年間保持するには、監査ログを生成するユーザーに対して、E5 ライセンスに加えて、10 年間の監査ログ保持のアドオン ライセンスも割り当てられる必要があります。
 
 - 組織によって作成されるすべてのカスタム監査ログの保持ポリシーは、既定の保持ポリシーよりも優先されます。 たとえば、保持期間が 1 年未満の Exchange メールボックス アクティビティに対して監査ログの保持ポリシーを作成すると、Exchange メールボックス アクティビティの監査レコードは、カスタム ポリシーで指定されている短い期間保持されます。
 
