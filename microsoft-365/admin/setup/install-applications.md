@@ -21,36 +21,36 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Microsoft 365 のセットアップが行ったので、Mac、PC、またはモバイル デバイスに個々の Office アプリケーションをインストールし、Outlook でメールをセットアップする方法について説明します。
+description: Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールする方法と、Outlook でメールを設定する方法について説明します。
 ms.openlocfilehash: dc8a4c3670dacf4b3cc85637c3e18c51a8c8e350
 ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/26/2021
 ms.locfileid: "49988034"
 ---
-# <a name="install-office-applications"></a>Office アプリケーションのインストール
+# <a name="install-office-applications"></a>Office アプリケーションをインストールする
 
-Microsoft 365 をセットアップすると、Mac、PC、またはモバイル デバイスに個々の Office アプリケーションをインストールできます。
+Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールできます。
   
-方法については、次のリンクを参照してください。
+方法については、次のリンクに従ってください。
   
-- アプリケーションOfficeインストールする: PC  [Office Mac にインストールする](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Office アプリケーションのインストール: [Office を PC または Mac にインストールする](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
-- その他のアプリを[インストールする](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281): Project、Visio、Skype [for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb) [](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710)
+- その他のアプリのインストール: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281)、[Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710)、[Skype for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 
-- モバイル デバイスのセットアップ: [Microsoft 365 モバイルセットアップ - ヘルプ](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
+- モバイル デバイスのセットアップ: [Microsoft 365 モバイルのセットアップ - ヘルプ](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 
-- Outlook でのメールのセットアップ: [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) または [Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
+- Outlook でのメール設定: [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) または [Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
  
-- [最新のアプリへとユーザーをアップグレードする](upgrade-users-to-latest-office-client.md) 
+- [最新のアプリにユーザーをアップグレードする](upgrade-users-to-latest-office-client.md) 
 
 ::: moniker range="o365-21vianet"
 
-Azure Active Directory Premium (AADP) プラン 1 またはプラン 2 を購入した場合は、Microsoft Identity Manager (MIM) の対象となります。 MIM をダウンロードするには、ダウンロード センターに [移動します](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)。
+Azure Active Directory Premium (AADP) プラン 1 またはプラン 2 を購入した場合には、Microsoft Identity Manager (MIM) の利用対象となります。 MIM をダウンロードするには、[ダウンロード センター](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)に移動します。
 
 ::: moniker-end
 
-問題が発生した場合 次のトラブルシューティング リソースが役立ちます。
+問題が発生する場合 次のトラブルシューティング リソースが役立つ可能性があります。
   
-- [Office Microsoft 365 のインストールのトラブルシューティング](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)
+- [Office と Microsoft 365 を両方インストールする場合のトラブルシューティング](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)
