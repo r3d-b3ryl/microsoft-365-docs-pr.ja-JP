@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 使用可能なグループの種類について説明します。
-ms.openlocfilehash: 4cbc7f15632026babec3640f021c09e901ad20b9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925532"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727249"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
@@ -41,7 +41,7 @@ Microsoft 365 管理センターの [ **グループ**] セクションでは、
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 グループ
 
-Microsoft 365 グループは、社内外のユーザー間での共同作業に使用されます。 各 Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、Planner を利用できます。
+Microsoft 365 グループは、社内外のユーザー間での共同作業に使用されます。 各 Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、ストリーム、Planner を利用できます。
 
 [管理者によって有効にされている](manage-guest-access-in-groups.md)限り、組織の外部のユーザーをグループに追加できます。 外部の送信者がグループのメール アドレスにメールを送信できるようにすることもできます。
 

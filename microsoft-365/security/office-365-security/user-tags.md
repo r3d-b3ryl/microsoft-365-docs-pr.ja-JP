@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender で 365 プラン 2 のユーザー タグを持つ特定のOfficeを識別する方法について説明します。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別するために、Office 365 で使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e5ddffad6405f48a9af55b5123729eb256064a7
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 80bd360888be3aeea42da6f9b58a119a9752d382
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453647"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758894"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365)
 
@@ -45,6 +45,8 @@ ms.locfileid: "50453647"
 
 この記事では、セキュリティ コンプライアンス センターでユーザー タグを構成する&説明します。 ユーザー タグを管理するセキュリティ &コンプライアンス センターにはコマンドレットはありません。
 
+影響の大きなユーザー アカウントを保護するための戦略の一部であるユーザー タグの詳細については [、「Microsoft 365](security-recommendations-for-priority-accounts.md)の優先アカウントのセキュリティに関する推奨事項」を参照してください。
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [ユーザー タグ] ページに **直接移動するには** 、を開きます <https://protection.office.com/userTags> 。
@@ -63,9 +65,9 @@ ms.locfileid: "50453647"
 
 - また、Microsoft 365 管理センターで優先度アカウントを管理および監視することもできます。 手順については、「優先度アカウントの [管理と監視」を参照してください](../../admin/setup/priority-accounts.md)。
 
-## <a name="use-the-security-center-to-create-user-tags"></a>セキュリティ センターを使用してユーザー タグを作成する
+## <a name="use-the-security--compliance-center-to-create-user-tags"></a>セキュリティ コンプライアンス センターを&ユーザー タグを作成する
 
-1. セキュリティ センターで、[脅威管理] **[ユーザー タグ]** \> **に移動します**。
+1. セキュリティ コンプライアンス センター&、脅威管理 **のユーザー タグに** \> **移動します**。
 
 2. 開く **[ユーザー タグ] ページ** で、[タグの作成] **をクリックします**。
 
@@ -94,9 +96,9 @@ ms.locfileid: "50453647"
 
    完了したら、[送信] を **クリックします**。
 
-## <a name="use-the-security-center-to-view-user-tags"></a>セキュリティ センターを使用してユーザー タグを表示する
+## <a name="use-the-security--compliance-center-to-view-user-tags"></a>セキュリティ コンプライアンス センターを&ユーザー タグを表示する
 
-1. セキュリティ センターで、[脅威管理] **[ユーザー タグ]** \> **に移動します**。
+1. セキュリティ コンプライアンス センター&、脅威管理 **のユーザー タグに** \> **移動します**。
 
 2. 開いた **[ユーザー タグ]** ページで、表示するユーザー タグを選択します (チェック ボックスをオンにしない)。
 
@@ -104,9 +106,9 @@ ms.locfileid: "50453647"
 
    完了したら、**[閉じる]** をクリックします。
 
-## <a name="use-the-security-center-to-modify-user-tags"></a>セキュリティ センターを使用してユーザー タグを変更する
+## <a name="use-the-security--compliance-center-to-modify-user-tags"></a>コンプライアンス センターのセキュリティ &を使用してユーザー タグを変更する
 
-1. セキュリティ センターで、[脅威管理] **[ユーザー タグ]** \> **に移動します**。
+1. セキュリティ コンプライアンス センター&、脅威管理 **のユーザー タグに** \> **移動します**。
 
 2. 開く **[ユーザー タグ]** ページで、表示するユーザー タグを選択し、[タグの編集] **をクリックします**。
 
@@ -114,10 +116,10 @@ ms.locfileid: "50453647"
 
    完了したら、[送信] を **クリックします**。
 
-## <a name="use-the-security-center-to-remove-user-tags"></a>セキュリティ センターを使用してユーザー タグを削除する
+## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>コンプライアンス センターのセキュリティ &を使用してユーザー タグを削除する
 
 **注**: 組み込みの Priority アカウント タグ **は削除** できません。
 
-1. セキュリティ センターで、[脅威管理] **[ユーザー タグ]** \> **に移動します**。
+1. セキュリティ コンプライアンス センター&、脅威管理 **のユーザー タグに** \> **移動します**。
 
 2. 開く **[ユーザー タグ]** ページで、削除するユーザー タグを選択し、[タグの削除] をクリックし、表示される警告で **[はい、** 削除] を選択します。

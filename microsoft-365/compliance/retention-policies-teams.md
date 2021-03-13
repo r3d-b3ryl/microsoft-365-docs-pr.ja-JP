@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 137fcdad514e8272b99ab735a0cf1ed6f6e3e00e
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 4296924684e13e163f28e0f952b2cd380cdcc047
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461798"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712013"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -58,8 +58,8 @@ Teams で使用するメールとファイルは、Teams のアイテム保持�
 
 これらのメールボックスは、RecipientTypeDetails 属性で一覧表示されます。
 
-- **UserMailbox**: これらのメールボックスには、Exchange Online メールボックスを持つ Teams ユーザーへのメッセージが格納されます。
-- **MailUser**: これらのメールボックスには、Exchange Online ではなくオンプレミスの Exchange サーバー用のメールボックスを持つ Teams ユーザーへのメッセージが格納されます。
+- **MailUser**: これらのメールボックスには、クラウドベースの Teams ユーザーのメッセージが保存されます。
+- **UserMailbox**: これらのメールボックスには、[オンプレミスの Teams ユーザー](search-cloud-based-mailboxes-for-on-premises-users.md)のメッセージが保存されます。
 - **GroupMailbox**: これらのメールボックスは Teams チャネルのメッセージを保存します。
 
 Teams 会議室に使用される RoomMailbox などの他のメールボックスの種類は、Teams 保持ポリシーではサポートされていません。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 向け 123-reg.co.uk DNS レコードを作成する
+title: Microsoft 向け DNS レコード123-reg.co.uk作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: ドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードを microsoft 123-reg.co.ukセットアップする方法について説明します。
-ms.openlocfilehash: bde8003ad343680e8f499dd8ec1fb638f15080b1
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法については、Microsoft 123-reg.co.uk説明します。
+ms.openlocfilehash: 3c9af6909f37082a63170adac94ac3d92b717ad1
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658317"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758906"
 ---
-# <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>Microsoft 向け 123-reg.co.uk DNS レコードを作成する
+# <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>Microsoft 向け DNS レコード123-reg.co.uk作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。 
   
 使用している DNS ホスティング プロバイダーが 123-reg.co.uk の場合は、この記事に示す手順に従い、ドメインを確認して、メールや Skype for Business Online などの DNS レコードを設定します。
   
-これらのレコードを 123-reg.co.ukすると、ドメインは Microsoft サービスで動作する設定に設定されます。
+これらのレコードを追加すると、123-reg.co.uk Microsoft サービスを使用するためにドメインが設定されます。
   
   
 > [!NOTE]
@@ -54,7 +54,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [DNS **の管理] ページ** で、[Advanced **DNS] タブを選択** します。 
+4. [DNS **の管理] ページ** で、[高度な **DNS] タブを選択** します。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -69,7 +69,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
 7. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-ドメイン レジストラーのサイトでレコードを追加した後、Microsoft に戻り、レコードの検索を要求します。
+ドメイン レジストラーのサイトにレコードを追加したので、Microsoft に戻り、レコードの検索を要求します。
   
 Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
@@ -94,7 +94,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [DNS **の管理] ページ** で、[Advanced **DNS] タブを選択** します。 
+4. [DNS **の管理] ページ** で、[高度な **DNS] タブを選択** します。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -102,19 +102,19 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注: Microsoft アカウントから** 取得\<domain-key\> します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注: Microsoft アカウントから** 取得\<domain-key\> します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![テーブルから値をコピーして貼り付ける](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
 6. **[追加]** を選択します。
     
-    ![[追加] を選択する](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
+    ![[追加] ボタンが選択されているダイアログ ボックスのスクリーンショット](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
 7. その他の MX レコードがある場合は、そのレコードの **削除 (ごみ箱)** アイコンを選んでそれぞれ削除します。 
     
-    ![[削除] (ごみ箱アイコン) を選択する](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
+    ![[削除] を選択します (ごみ箱アイコン)](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な 6 つの CNAME レコードを追加する
+## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な 5 つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
 
 1. まず、[このリンク](https://www.123-reg.co.uk/secure/cpanel/domain/overview)を使って 123-reg.co.uk でドメイン ページにアクセスします。 最初にログインするように求められます。
@@ -123,9 +123,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [DNS **の管理] ページ** で、[Advanced **DNS] タブを選択** します。 
+4. [DNS **の管理] ページ** で、[高度な **DNS] タブを選択** します。 
     
-5. 6 つの CNAME レコードの最初のレコードを追加します。
+5. 5 つの CNAME レコードの最初のレコードを追加します。
     
     In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -139,23 +139,23 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
    
-    ![テーブルの値をコピーして貼り付ける](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+    ![コピーして貼り付ける宛先 CNAME のスクリーンショット](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
 6. **[追加]** を選択します。
     
-    ![[追加] を選択する](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
+    ![コピー先 CNAME を追加するスクリーンショット](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
-7. 他の 5 つの CNAME レコードを追加します。
+7. 残りの 4 つの CNAME レコードを追加します。
     
-    [Advanced **DNS] セクション** で、テーブルの次の行の値を使用してレコードを作成し、[追加] を再度選択してレコードを完成します。 
+    [**高度な DNS]** セクションで、テーブルの次の行の値を使用してレコードを作成し、もう一度 [追加] を選択してそのレコードを完了します。 
     
-    6 つの CNAME レコードの作成がすべて完了するまで、このプロセスを繰り返します。
+    5 つの CNAME レコードすべてが作成されるまで、このプロセスを繰り返します。
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインの SPF レコードが既にある場合は、Microsfot 用に新しい SPF レコードを作成しない。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)を参照してください。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 ドメインの SPF レコードが既にある場合は、Microsfot 用に新しい SPF レコードを作成しない。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)を参照してください。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
   
 1. まず、[このリンク](https://www.123-reg.co.uk/secure/cpanel/domain/overview)を使って 123-reg.co.uk でドメイン ページにアクセスします。 最初にログインするように求められます。
     
@@ -163,7 +163,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [DNS **の管理] ページ** で、[Advanced **DNS] タブを選択** します。 
+4. [DNS **の管理] ページ** で、[高度な **DNS] タブを選択** します。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -177,7 +177,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. **[追加]** を選択します。
     
-    ![[追加] を選択する](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
+    ![コピー先 TXT/SPF のスクリーンショット](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
@@ -188,7 +188,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [DNS **の管理] ページ** で、[Advanced **DNS] タブを選択** します。 
+4. [DNS **の管理] ページ** で、[高度な **DNS] タブを選択** します。 
     
 5. 2 つの SRV レコードの最初のレコードを追加します。
     
@@ -202,15 +202,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません**<br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
     |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません** <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
-    ![テーブルの値をコピーして貼り付ける](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
+    ![表の DNS 値を含むスクリーンショット](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
 6. **[追加]** を選択します。
     
-    ![[追加] を選択する](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
+    ![コピー先 SRV を追加するスクリーンショット](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   
 7. 他の SRV レコードを追加します。
     
-    [Advanced **DNS] セクション** で、テーブルの 2 行目の値を使用してレコードを作成し、もう一度 [追加] を選択してレコードを完成します。 
+    [**高度な DNS]** セクションで、テーブルの 2 行目の値を使用してレコードを作成し、もう一度 [追加] を選択してそのレコードを完了します。 
     
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 

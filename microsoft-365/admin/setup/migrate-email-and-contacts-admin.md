@@ -27,25 +27,25 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: Gmail または別の電子メールプロバイダーから連絡先、予定表、および電子メールをインポートし、それらを Microsoft 365 に移行する方法について説明します。
+description: Gmail や他のメール プロバイダーから連絡先、予定表、メールをインポートし、Microsoft 365 に移行する方法について説明します。
 ms.openlocfilehash: eb82711bc8fb431c6e29272b601b898566446f02
 ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "48906383"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
-Gmail または別の電子メールプロバイダーから Microsoft 365 にメールをインポートまたは移行します。
+Gmail やその他のメール プロバイダーから Microsoft 365 にメールをインポートまたは移行します。
   
- **ヘルプを表示するにはどうすればよいですか?**  [ビジネスサポートについては、Microsoft 365 にお問い合わせ](../contact-support-for-business-products.md) ください。 
+ **これに関するヘルプが必要な場合**  [一般法人向け Microsoft 365 のサポートにお問い合わせください](../contact-support-for-business-products.md)。 
   
-この作業には、デスクトップにインストールされるバージョンの Outlook を使用する必要があります。 Outlook は、ほとんどの Microsoft 365 [プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)に含まれています。
+この作業には、デスクトップにインストールされるバージョンの Outlook を使用する必要があります。 Outlook は、大部分の Microsoft 365 の[プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)に含まれています。
   
-### <a name="migrate-gmail-to-microsoft-365"></a>Gmail を Microsoft 365 に移行する
+### <a name="migrate-gmail-to-microsoft-365"></a>Gmail から Microsoft 365 への移行。
 
-次の手順に従って、Microsoft 365 を使用して Gmail からメール、連絡先、予定表を Outlook にインポートまたは移行します。
+Microsoft 365 でメール、連絡先、予定表を Gmail から Outlook にインポートまたは移行するには、次の手順を実行します。
   
 - [Gmail を Outlook にインポートする](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
@@ -57,7 +57,7 @@ Gmail または別の電子メールプロバイダーから Microsoft 365 に�
   
 ### <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>Outlook pst ファイルを Microsoft 365 (デスクトップ) にインポートする
 
-メール、連絡先、予定表を Outlook から .pst ファイルにエクスポートし、そのファイルを Microsoft 365 を使用して Outlook にインポートするには、次の手順を実行します。
+Microsoft 365 を使用してメール、連絡先、予定表を Outlook から .pst ファイルにエクスポートし、そのファイルを Outlook にインポートするには、次の手順を実行します。
   
 1. [メール、連絡先、予定表をエクスポートする](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
@@ -71,11 +71,11 @@ Gmail または別の電子メールプロバイダーから Microsoft 365 に�
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
-![Outlook 2016 の [ファイル] メニュー](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![&amp;Outlook 2016 で [エクスポート] コマンドを開く](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 の [インポート/エクスポート] ボタン](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![Outlook 2016 の [ファイル] メニュー](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Outlook 2016 の [開く、&amp;エクスポート] コマンド](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 の [インポート/エクスポート] ボタン](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Outlook で他のメール アカウントを表示する
 
-他のプロバイダー (Gmail、Yahoo、Live.com など) からのメールを Outlook に表示するだけですか。 インポートまたは移行する必要はありません。 Outlook または Outlook Web App をセットアップして、Microsoft 365 メールボックスと同じ場所から他のアカウントにアクセスし、それらのアカウントに送信された電子メールを送信、受信、開封することができます。
+Outlook で他のプロバイダー (Gmail、Yahoo、または Live.com など) のメールを単に表示したい場合は、 インポートや移行を行う必要はありません。 Outlook または Outlook Web App を設定して、Microsoft 365 メールボックスと同じ場所から他のアカウントにアクセスし、それらのアカウントに送信されたメールを送受信および閲覧することができます。
   
 ### <a name="outlook-desktop"></a>Outlook (デスクトップ)
 
@@ -87,6 +87,6 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
   
 [![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
-## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>複数のメールボックス: 管理者は、電子メール、連絡先、予定表を Microsoft 365 に一括インポートできます。
+## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>メールボックスが複数の場合: 管理者は Microsoft 365 にメール、連絡先、予定表を一括インポートすることが可能です
 
-インポート元のメール システムによっては、いくつかの一括移行処理方法を選択できます。 [複数の電子メールアカウントを Microsoft 365 に移行](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)して、どの方法が機能するかを決定する方法を確認します。
+ソースのメール システムによっては、いくつかの一括移行処理方法を選択できます。 どの方法が適切かを判断するには、「[複数のメール アカウントを Microsoft 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)」を参照してください。

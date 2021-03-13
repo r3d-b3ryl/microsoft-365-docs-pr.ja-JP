@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールする方法と、Outlook でメールを設定する方法について説明します。
-ms.openlocfilehash: dc8a4c3670dacf4b3cc85637c3e18c51a8c8e350
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
-ms.translationtype: HT
+ms.openlocfilehash: c1d88aa1e754424e7a4ef3e486efc8a9618d3e9b
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988034"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766357"
 ---
 # <a name="install-office-applications"></a>Office アプリケーションをインストールする
 
