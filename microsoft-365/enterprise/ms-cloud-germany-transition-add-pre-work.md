@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する場合の事前作業。'
-ms.openlocfilehash: e922cf3b5599e81905499db60000c5b5f34b69ad
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 5110c6bd86d5df35a7ceccb4abfedf059cb826d0
+ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712272"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "50826178"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の事前作業
 
@@ -49,6 +49,7 @@ ms.locfileid: "50712272"
 | 試用版サブスクリプションをキャンセルします。 | 試用版サブスクリプションは移行されません。有料サブスクリプションの移行はブロックされます。 | キャンセル後にユーザーがアクセスした場合、試用版サービスは期限切れであり、機能しません。 |
 | Microsoft Cloud Deutschland と 365 Services のライセンス機能Office分析します。 | Office 365 サービスには、現在の Microsoft Cloud Deutschland では利用できない追加の機能とサービスが含まれます。 サブスクリプションの転送中に、新しい機能をユーザーが利用できます。 | <ul><li> Microsoft Cloud Deutschland および 365 Services のライセンスによって提供されるさまざまなOffice分析します。 最初に [、Office 365 プラットフォームのサービスの説明を参照してください](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> Office 365 サービスの新機能を最初に無効にし、ユーザーまたはユーザーの変更管理への影響を制限し、必要に応じてユーザー ライセンスの割り当てを変更する必要があるかどうかを判断します。 </li><li>365 サービスによって提供される新しいサービスと機能について、ユーザーとヘルプ デスク スタッフOffice準備します。 |
 | 移行中にコンテンツ [が](https://docs.microsoft.com/microsoft-365/compliance/retention) 不注意で削除されるのを回避するために、組織全体の保持ポリシーを作成します。  |<ul><li>移行中にエンド ユーザーによってコンテンツが誤って削除されるのを回避するために、組織全体の保持ポリシーを有効にすることもできます。 </li><li>保持は必要ありませんが、移行中はいつでも保持が期待通り動作する必要があります。保持ポリシーを持つことはバックアップの安全メカニズムです。 同時に、保持ポリシーは、すべての顧客、特に保存過多を懸念しているユーザーが使用する場合があります。</li></ul>| 「アイテム保持ポリシーと保持ラベルについて」の [説明に従ってアイテム保持ポリシーを適用します](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 / 9 より前に行われない場合に発生する可能性があります。 </li></ul>|
+| ライセンスの過大使用を修正する | 特定の状況では、お客様は購入されたサービスよりも多くのサービスを利用できる場合があります。 この条件は、ライセンスの過剰使用と呼ばれる。 Microsoft は、ライセンス過剰使用条件の顧客を Microsoft Cloud Deutschland からドイツのデータセンター地域に移行することはできません。 サービスとデータに継続的にアクセスするには、割り当てられたすべてのユーザーにライセンスが必要です。 | すべてのお客様 | お客様は、追加のライセンスの購入またはユーザーからのライセンスの割り当てを解除して、ライセンスの過剰使用条件を評価および解決する必要があります。 |
 |||||
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory フェデレーション サービス (AD FS)

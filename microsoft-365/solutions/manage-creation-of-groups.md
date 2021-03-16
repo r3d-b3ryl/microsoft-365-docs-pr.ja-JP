@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Microsoft 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: 3fa430e44c272e5ababbfb0e4befba707c72c1ba
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: f2d1a2062d43af750a84984aab66329ed6a4db22
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122386"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819704"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
-既定では、すべてのユーザーが Microsoft 365 グループを作成できます。 IT の支援を必要とせずにユーザーが共同作業を開始できる場合、この方法をお勧めします。
+既定では、すべてのユーザーが Microsoft 365 グループを作成できます。 IT の支援を必要とせずにユーザーが共同作業を開始できるので、この方法をお勧めします。
 
-ビジネスでグループを作成できるユーザーを制限する必要がある場合は、この記事の手順に従います。 グループを作成できるユーザーを制限すると、アクセスにグループに依存する次のようなすべてのサービスに影響します。
+ビジネスでグループを作成できるユーザーを制限する必要がある場合は、この記事の手順に従います。 グループを作成できるユーザーを制限すると、グループに依存してアクセスを行うすべてのサービスに影響します。
 
 - Outlook
 - SharePoint
@@ -37,7 +37,7 @@ ms.locfileid: "50122386"
 - Microsoft Stream
 - Planner
 - Power BI (クラシック)
-- Project for the web / Roadmap
+- Web 向けプロジェクト / ロードマップ
 
 Microsoft 365 グループの作成は、特定の Microsoft 365 グループまたはセキュリティ グループのメンバーに制限できます。 制限するには、Windows PowerShell を使用します。 この記事では、必要な手順について説明します。
 
@@ -49,9 +49,9 @@ Microsoft 365 グループの作成は、特定の Microsoft 365 グループま
 - ディレクトリ製作者: Azure AD
 - SharePoint 管理者: SharePoint 管理センター、Azure AD
 - Teams サービス管理者: Teams 管理センター、Azure AD
-- ユーザー管理の管理者: Microsoft 365 管理センター、Yammer、Azure AD
+- ユーザー管理者: Microsoft 365 管理センター、Azure AD
 
-これらの役割のメンバーである場合は、制限付きユーザー用に Microsoft 365 グループを作成し、そのユーザーをグループの所有者として割り当てることができます。
+これらの役割の 1 つのメンバーである場合は、制限付きユーザー用に Microsoft 365 グループを作成し、そのユーザーをグループの所有者として割り当てることができます。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
@@ -61,7 +61,7 @@ Microsoft 365 グループの作成は、特定の Microsoft 365 グループま
 - グループの作成が許可されているグループのメンバー
 
 > [!NOTE]
-> [Azure ライセンスを割り当てる方法](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)の詳細については、「Azure Active Directory ポータルでライセンスを割り当てるまたは削除する」を参照してください。
+> [Azure ライセンスの割り当て方法の詳細については、「Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)ポータルでライセンスを割り当てるまたは削除する」を参照してください。
 
 以下のユーザーは Azure AD Premium ライセンスまたは Azure AD Basic EDU のライセンスが割り当てられている必要はありません。
 
@@ -69,7 +69,7 @@ Microsoft 365 グループの作成は、特定の Microsoft 365 グループま
 
 ## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>手順 1: Microsoft 365 グループを作成する必要があるユーザーのグループを作成する
 
-グループを作成できるユーザーを制御するために使用できるのは、組織内の 1 つのグループのみです。 ただし、他のグループをこのグループのメンバーとして入れ子にできます。
+グループを作成できるユーザーを制御するには、組織内の 1 つのグループのみを使用できます。 ただし、他のグループをこのグループのメンバーとして入れ子にすることもできます。
 
 上記の役割の管理者は、このグループのメンバーである必要はなく、グループを作成することができます。
 
@@ -143,7 +143,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 ![完了すると、設定は次のように表示されます。](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
-今後、使用するグループを変更する場合は、新しいグループの名前を使用してスクリプトを再実行できます。
+今後、使用するグループを変更する場合は、新しいグループの名前でスクリプトを再実行できます。
 
 グループ作成の制限をオフにして、もう一度すべてのユーザーがグループを作成できるようにするには、$GroupName を "" に、$AllowGroupCreation を "True" に設定して、スクリプトを再実行します。
 
@@ -151,7 +151,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 変更を有効にするには、30 分以上かかる場合があります。 新しい設定を確認するには、次の手順を実行します。
 
-1. グループを作成できないユーザーのユーザー アカウントで Microsoft 365 にサインインします。 つまり、作成したグループのメンバーまたは管理者ではありません。
+1. グループを作成できないユーザーのユーザー アカウントを使用して Microsoft 365 にサインインします。 つまり、作成したグループまたは管理者のメンバーではありません。
 
 2. [**Planner**] タイルを選択します。
 
@@ -159,16 +159,16 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 4. プランとグループの作成が無効になっていることを示すメッセージが表示されます。
 
-グループのメンバーと同じ手順を再度実行してください。
+グループのメンバーと同じ手順を再度実行します。
 
 > [!NOTE]
 > グループのメンバーがグループを作成できない場合は、OWA メールボックス ポリシーによってブロックされていない [か確認します](https://go.microsoft.com/fwlink/?linkid=852135)。
 
 ## <a name="related-topics"></a>関連項目
 
-[グループコラボレーション ガバナンスの計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[コラボレーション ガバナンス計画を作成する](collaboration-governance-first.md)
+[コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 
 [Office 365 PowerShell の概要](https://go.microsoft.com/fwlink/p/?LinkId=808033)
 

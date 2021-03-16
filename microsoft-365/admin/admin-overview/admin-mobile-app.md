@@ -2,8 +2,8 @@
 title: Microsoft 365 Admin モバイル アプリについて
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -22,91 +22,99 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
-description: Microsoft 365 Admin アプリを取得し、電話またはタブレットからオンライン組織を管理する方法について説明します。
-ms.openlocfilehash: aa5d7f688e2304f703f14f3a581eec73e67111a4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Microsoft 365 管理アプリを取得し、携帯電話またはタブレットからオンライン組織を管理する方法について説明します。
+ms.openlocfilehash: eba3783e3673efe84bdb823da2a14e06c06c5fbe
+ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925568"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "50826120"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 管理モバイル アプリについて
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 管理者モバイル アプリについて
 
-通常は移動中の管理者ですか? 次に [、Microsoft 365 管理アプリを確認します](https://go.microsoft.com/fwlink/?LinkID=627216)。 このアプリを使って、電話やタブレットからオンライン組織を管理できます。 アプリは、Apple Store と Google Play から取得できます。 <br> 
+通常は移動中の管理者ですか? そうでなくても、携帯電話やタブレットから Microsoft 365 を管理する必要がある場合があります。 無料の [Microsoft 365 管理](https://go.microsoft.com/fwlink/?LinkID=627216)アプリ 、Web ベースの Microsoft 365 管理センターに最適なコンパニオンを確認してください。 アプリは [、Apple App Store から、Google Play ストア](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)から [ダウンロードできます](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
 
-![管理モバイル アプリのホーム ページの画面キャプチャ。検索、メッセージ、正常性、クイック リンクが表示されます。](../../media/admin-mobile-app-darkbg.png)
+:::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="スクリーンショット: モバイル アプリのホーム ページの管理、検索、メッセージ センター、正常性、クイック リンクの表示":::
 
-管理アプリは、80 を超える機能を備え、コンピューターにアクセスできない場合に組織を管理するのに役立つ機能が豊富なアプリです。 アプリから実行できるタスクの一部を次に示します。
+管理アプリには多くの機能が備え付けられているので、コンピューターにアクセスできない場合に、モバイル またはタブレット デバイスから Microsoft 365 を管理できます。 アプリから実行できるいくつかのタスクの一覧を次に示します。
 
-- サービス正常性と変更通知を取得する
-- お問い合わせを作成する
-- ユーザーのパスワードを再設定します
-- ライセンスを割り当てる
-- グループ メンバーシップを追加または削除する
-- ユーザーの追加 
+- **ユーザーとデバイスの管理** ユーザーの追加または編集、ユーザーのパスワードのリセット、役割の割り当て、ユーザーのブロック、ユーザーの削除、エイリアスの管理、ライセンスの割り当て、デバイス データのワイプなど。
+- **グループの管理** グループを追加し、グループからユーザーを追加または削除します。
+- **ライセンスの管理と請求** 購入済みおよび割り当てられたライセンスの一覧を表示し、ユーザーにライセンスを割り当て、ライセンスを購入または削除し、請求書を表示およびダウンロードします。
+- **サポート** 新しいサービス要求を作成し、移動中にサービス要求に関連する更新プログラムを追跡します。
+- **メッセージ センター** Microsoft 365 に関連する今後のすべての変更、計画されたメンテナンス、その他の重要なアナウンスを確認する
+- **サービス正常性** サービスの現在の状態とサービスの中断と停止に関する詳細を表示して、すべてのサービスの正常性を監視します。
+- **通知** プッシュ通知を通じて、メッセージ センターの投稿、サービスの正常性、請求に関連する重要な情報と更新情報を確認します。 通知を受け取る情報をカスタマイズできます。
 
-また、複数のオンライン組織の責任者である場合は、複数の組織にサインインし、迅速に切り替えます。 
+管理者であり、複数の Microsoft 365 組織を担当している場合は、複数の組織にサインインして、その組織をすばやく切り替えます。 アプリは暗いテーマをサポートし、39 の言語で利用できます。
   
 > [!IMPORTANT]
-> iOS または Android で管理モバイル アプリの使用に関する問題が発生した場合は、feedback365@microsoft.com [にメール](mailto:feedback365@microsoft.com) でお知らせください。 
+> iOS または Android の管理モバイル アプリを使用して問題が発生した場合は、feedback365@microsoft.com にお問 [い合](mailto:feedback365@microsoft.com) わせください。
   
 ## <a name="download-the-admin-mobile-app"></a>管理者のモバイル アプリをダウンロードする
 
-[Microsoft 365 Admin モバイル アプリ](https://go.microsoft.com/fwlink/?LinkID=627216)。
+[Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
+
+[Google Play ストア](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
   
-管理モバイル アプリのインストールに関する短いビデオをご覧ください。<br><br>
+## <a name="watch-install-the-admin-mobile-app"></a>ウォッチ: 管理者モバイル アプリをインストールする
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
-
- 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-以下は、アプリについてよく寄せられる質問の一部に対する回答です。
+以下は、よく寄せられる質問に対する回答です。
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>アプリを使うには、何を行う必要がありますか?
 
-アプリにサインインして使用するには、管理者特権を持つ有効な Microsoft 365 Apps for business または Microsoft 365 Business Premium サブスクリプションが必要です。 管理モバイル アプリは電子メール クライアントではない。 It's a rich administrative app with over 80 features to help you support your org while your on the go.
+アプリを使用するには、次のいずれかの Microsoft 365 サブスクリプションに対する管理者権限と有効なサブスクリプションが必要です。
+
+- Microsoft 365 Apps for Enterprise
+- Microsoft 365 Apps for Business
+- Microsoft 365 Business Premium
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Basic
+- Microsoft 365 E3/E5
+- Office 365: E1、E3/E5
+- Exchange Online プラン
+- OneDrive for business plan
   
 ### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Microsoft 365 ファミリ サブスクリプションでアプリを使用できますか?
 
-いいえ。アプリは、Microsoft 365 Apps for business および Microsoft 365 Business Premium サブスクリプションでのみ動作します。 
-  
+いいえ、アプリは Microsoft 365 ファミリまたは Microsoft 365 個人用サブスクリプションでは動作しません。
+
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>組織でディレクトリ同期が有効になっている場合、アプリは機能しますか?
 
-はい。ただし、機能が制限されます。 サインインしてサービス情報を表示できますが、ほとんどのユーザー管理機能は、読み取り専用になります。 ユーザーを追加、編集、削除することはできません。 ただし、組織内のユーザーにライセンスを割り当て、通知を取得することができます。
+はい、ただし機能が低下しています。 サインインしてサービス情報を表示できますが、ほとんどのユーザー管理機能は、読み取り専用になります。 ユーザーを追加、編集、削除することはできません。 ただし、組織内のユーザーにライセンスを割り当て、通知を取得できます。
   
 ### <a name="what-languages-are-supported-by-the-app"></a>このアプリではどの言語がサポートされますか?
 
-このアプリは、Web ベースの Microsoft 365 管理センターがサポートする 39 のすべての言語をサポートします。 言語を変更するには、上部バーのアプリ起動アイコンを選択し、[設定言語]**を選択**  >  **します**。
-  
-### <a name="why-does-the-messages-tile-on-the-home-screen-show-numbers-even-after-ive-read-the-new-messages"></a>新しいメッセージを読んだ後でもホーム画面のメッセージ タイルに数字が表示されるのはなぜですか?
-
-この数字は、未読メッセージではなく先週からのメッセージの合計数です。
+このアプリは、Web ベースの Microsoft 365 管理センターがサポートしている 39 の言語すべてをサポートしています。 言語を変更するには、管理センターの左側のナビゲーション メニューから [設定言語] に移動するか、管理モバイル アプリのホーム ページの [クイック リンク] セクションの [言語] アイコン  >  を選択します。  
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>組織の他のユーザーとサービス インシデントやメッセージを共有するにはどうすればよいですか?
 
-特定のサービス インシデントまたはメッセージを選択すると、共有オプションが右上隅に表示されます。 現在、メールの共有がサポートされています。
+特定のサービス インシデントまたはメッセージを選択すると、共有オプションが右上隅に表示されます。
   
-### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>このアプリを複数のアカウントまたはテナントで使用できますか。
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>複数のアカウントまたはテナントでこのアプリを使用できますか?
 
-はい、複数のアカウントまたはテナントをセットアップできます。
-  
-### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>アプリが正常に動作しません。 アプリの不審な動作のトラブルシューティングを行うにはどうすればよいですか?
+はい、複数のアカウントまたは組織をセットアップできます。
+
+### <a name="im-unable-to-login-or-my-app-is-acting-funny-what-can-i-do-to-troubleshoot-or-fix-the-issue"></a>ログインできないか、アプリが面白い動きをしています。 問題のトラブルシューティングや修正を行うには、何ができますか?
 
 以下のようないくつかの一般的なモバイル アプリのトラブルシューティングを使うことができます。
-  
-1. アプリを閉じて、再度開きます。
-    
-2. アプリをアンインストールして、再インストールします。
 
-3. それでも問題が生じなかった場合は、メールでお知らせ [feedback365@microsoft.comメールでお](mailto:feedback365@microsoft.com) 知らせします。
-    
+1. アプリを閉じて、再度開きます。
+1. アプリをアンインストールして、再インストールします。 アプリの最新バージョンを使用している必要があります。
+1. デバイスに Microsoft Authenticator アプリまたはポータル サイト アプリがインストールされている場合は、デバイスを再インストールするか、最新バージョンに更新してみてください。
+1. それでも問題が生じなかった場合は、メールでメール feedback365@microsoft.com 連絡してください。
+
+### <a name="how-do-i-manage-notifications-in-the-app"></a>アプリで通知を管理する方法
+
+左側のナビゲーション メニューから、[設定の通知]**に**  >  **移動します**。 サービス正常性、メッセージ センター、請求通知は、ここで管理できます。
+
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>質問の回答がない場合はどうすればよいですか?
 
-メール [feedback365@microsoft.com、](mailto:feedback365@microsoft.com) アプリに関する問題を報告します。 または、この記事の下部でフィードバックを送信できます。 
+メール [feedback365@microsoft.com](mailto:feedback365@microsoft.com) アプリに関する問題を報告します。 または、この記事の下部でフィードバックを提供できます。
   
 ## <a name="see-also"></a>関連項目
 

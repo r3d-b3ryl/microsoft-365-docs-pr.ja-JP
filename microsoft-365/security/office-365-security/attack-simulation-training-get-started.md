@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a33c212f7d0fd6b0617a8059b03ac90de03fba16
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 38e16ecd8185b9e8542f58613790585b5aab73ee
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407479"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820236"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>攻撃シミュレーション トレーニングの使用を開始する
 
@@ -109,3 +109,6 @@ ms.locfileid: "50407479"
 ### <a name="gaining-insights"></a>分析情報の取得
 
 レポートで分析情報を得る方法の手順については、「攻撃シミュレーション トレーニングを通じてインサイトを得る [」を参照してください](attack-simulation-training-insights.md)。
+
+> [!NOTE]
+> 攻撃シミュレーターは、Office 365 の Defender のセーフ リンクを使用して、フィッシング キャンペーンのターゲット受信者に送信されるペイロード メッセージ内の URL のクリック データを安全に追跡します。セーフ リンク ポリシーの [ユーザーのクリックを追跡しない] 設定がオンになっている場合でもです。
