@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 858b4a05dd65b0a32d672882e6ec18188c0cce81
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: c40c30c44e5b8010112adc11d7faee49563761bf
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423942"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838272"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 のインサイダー リスク ソリューション
 
@@ -33,18 +33,18 @@ Microsoft 365 のリスク防止機能は、インサイダー リスク製品�
 
 | リスク アイコン | リスク | コミュニケーション コンプライアンス | インサイダー リスクの管理 | 情報バリア | 特権アクセス管理 |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
-| ![データ流出アイコン](../media/ir-risk-data-spillage.png)| データの流出 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |  |
-| ![秘密保持違反アイコン](../media/ir-risk-confidentiality-violations.png)| 機密違反 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |
-| ![IP 盗難アイコン](../media/ir-risk-ip-theft.png)| IP 盗難 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |
-| ![職場の暴力アイコン](../media/ir-risk-workplace-violence.png)| 職場での暴力 | ![サポート済み](../media/check-mark.png) |  |  |  |
-| ![詐欺/泥棒アイコン](../media/ir-risk-fraud.png)| 詐欺 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |  |
-| ![ポリシー違反アイコン](../media/ir-risk-policy-violations.png)| ポリシー違反 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |
-| ![Insider の取引/ハンドシェイク アイコン](../media/ir-risk-insider-trading.png)| インサイダー取引 | ![サポート済み](../media/check-mark.png) |  |  |  |
-| ![[利益相反] アイコン](../media/ir-risk-conflicts-of-interest.png)| 利益相反 | ![サポート済み](../media/check-mark.png) |  | ![サポート済み](../media/check-mark.png) |  |
-| ![機密性の高いデータ リーク/デバイス アイコン](../media/ir-risk-sensitive-data-leaks.png)| 機密性の高いデータ リーク | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |  |
-| ![職場のハラスメント/人のアイコン](../media/ir-risk-workplace-harassment.png)| 職場での嫌がらせ | ![サポート済み](../media/check-mark.png) |  |  |  |
-| ![セキュリティ違反アイコン](../media/ir-risk-security-violations.png)| セキュリティ違反 |  | ![サポート済み](../media/check-mark.png) |  | ![サポート済み](../media/check-mark.png) |
-| ![規制コンプライアンス違反アイコン](../media/ir-risk-regulatory-compliance-violations.png)| 規制遵守違反 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |
+| ![データ流出アイコン](../media/ir-risk-data-spillage.png)| データの流出 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![秘密保持違反アイコン](../media/ir-risk-confidentiality-violations.png)| 機密違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
+| ![IP 盗難アイコン](../media/ir-risk-ip-theft.png)| IP 盗難 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
+| ![職場の暴力アイコン](../media/ir-risk-workplace-violence.png)| 職場での暴力 | ![サポート](../media/check-mark.png) |  |  |  |
+| ![詐欺/泥棒アイコン](../media/ir-risk-fraud.png)| 詐欺 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![ポリシー違反アイコン](../media/ir-risk-policy-violations.png)| ポリシー違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
+| ![Insider の取引/ハンドシェイク アイコン](../media/ir-risk-insider-trading.png)| インサイダー取引 | ![サポート](../media/check-mark.png) |  |  |  |
+| ![[利益相反] アイコン](../media/ir-risk-conflicts-of-interest.png)| 利益相反 | ![サポート](../media/check-mark.png) |  | ![サポート](../media/check-mark.png) |  |
+| ![機密性の高いデータ リーク/デバイス アイコン](../media/ir-risk-sensitive-data-leaks.png)| 機密性の高いデータ リーク | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![職場のハラスメント/人のアイコン](../media/ir-risk-workplace-harassment.png)| 職場での嫌がらせ | ![サポート](../media/check-mark.png) |  |  |  |
+| ![セキュリティ違反アイコン](../media/ir-risk-security-violations.png)| セキュリティ違反 |  | ![サポート](../media/check-mark.png) |  | ![サポート](../media/check-mark.png) |
+| ![規制コンプライアンス違反アイコン](../media/ir-risk-regulatory-compliance-violations.png)| 規制遵守違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
 
 ## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 インサイダー リスク ソリューション
 
@@ -54,15 +54,15 @@ Microsoft 365 のリスク防止機能は、インサイダー リスク製品�
 
 コミュニケーションコンプライアンスは、組織内の不適切なメッセージを検出、キャプチャ、および処理することで、通信リスクを最小限に抑えるのに役立ちます。 通信コンプライアンスは、次のサブスクリプションで利用できます。
 
-- Microsoft 365 E5 サブスクリプション (有料版または試用版)
-- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンス アドオン
-- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider Risk Management アドオン
+- Microsoft 365 E5 サブスクリプション (有料または試用版)
+- Microsoft 365 E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション。
+- Microsoft 365 E5 インサイダー リスク管理アドオンが含まれている Microsoft 365 E3 サブスクリプション。
 - Microsoft 365 A5 サブスクリプション (有料または試用版)
-- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 コンプライアンス アドオン
-- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 Insider Risk Management アドオン
+- Microsoft 365 A5 コンプライアンス アドオンが含まれている Microsoft 365 A3 サブスクリプション。
+- Microsoft 365 A5 インサイダー リスク管理アドオンが含まれている Microsoft 365 A3 サブスクリプション。
 - Microsoft 365 G5 サブスクリプション (有料または試用版)
-- Microsoft 365 G5 サブスクリプション + Microsoft 365 G5 コンプライアンス アドオン
-- Microsoft 365 G5 サブスクリプション + Microsoft 365 G5 Insider Risk Management アドオン
+- Microsoft 365 G5 コンプライアンス アドオンが含まれている Microsoft 365 G5 サブスクリプション。
+- Microsoft 365 G5 インサイダー リスク管理アドオンが含まれている Microsoft 365 G5 サブスクリプション。
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
 - Office 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced Compliance アドオン (新しいサブスクリプションでは使用できなくなりました)
@@ -73,12 +73,12 @@ Insider リスク管理は、組織内の悪意のある不注意なアクティ
 
 Insider リスク管理は、次のサブスクリプションで利用できます。
 
-- Microsoft 365 E5 サブスクリプション (有料版または試用版)
-- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンス アドオン
-- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider Risk Management アドオン
+- Microsoft 365 E5 サブスクリプション (有料または試用版)
+- Microsoft 365 E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション。
+- Microsoft 365 E5 インサイダー リスク管理アドオンが含まれている Microsoft 365 E3 サブスクリプション。
 - Microsoft 365 A5 サブスクリプション (有料または試用版)
-- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 コンプライアンス アドオン
-- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 Insider Risk Management アドオン
+- Microsoft 365 A5 コンプライアンス アドオンが含まれている Microsoft 365 A3 サブスクリプション。
+- Microsoft 365 A5 インサイダー リスク管理アドオンが含まれている Microsoft 365 A3 サブスクリプション。
 - Microsoft 365 G5 サブスクリプション (有料または試用版)
 - Microsoft 365 G3 サブスクリプション + Microsoft 365 G5 コンプライアンス アドオン
 - Microsoft 365 G3 サブスクリプション + Microsoft 365 G5 Insider Risk Management アドオン
@@ -90,15 +90,15 @@ Insider リスク管理は、次のサブスクリプションで利用できま
 
 情報バリアは、次のサブスクリプションで利用できます。
 
-- Microsoft 365 E5 サブスクリプション (有料版または試用版)
+- Microsoft 365 E5 サブスクリプション (有料または試用版)
 - Microsoft 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
 - Office 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Advanced Compliance アドオン (新しいサブスクリプションでは使用できなくなりました)
-- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンス アドオン
-- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Insider Risk Management アドオン
-- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 コンプライアンス アドオン
-- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 Insider Risk Management アドオン
+- Microsoft 365 E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション。
+- Microsoft 365 E5 インサイダー リスク管理アドオンが含まれている Microsoft 365 E3 サブスクリプション。
+- Microsoft 365 A5 コンプライアンス アドオンが含まれている Microsoft 365 A3 サブスクリプション。
+- Microsoft 365 A5 インサイダー リスク管理アドオンが含まれている Microsoft 365 A3 サブスクリプション。
 
 ### <a name="privileged-access-management"></a>特権アクセス管理
 
@@ -106,13 +106,13 @@ Insider リスク管理は、次のサブスクリプションで利用できま
 
 特権アクセス管理は、次のサブスクリプションで使用できます。
 
-- Microsoft 365 E5 サブスクリプション (有料版または試用版)
+- Microsoft 365 E5 サブスクリプション (有料または試用版)
 - Microsoft 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
 - Office 365 A5 サブスクリプション (有料または試用版)
-- Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 コンプライアンス アドオン
+- Microsoft 365 E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション。
 - Microsoft 365 E3 サブスクリプション + Microsoft 365 E5 Information Protection and Governance アドオン
-- Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 コンプライアンス アドオン
+- Microsoft 365 A5 コンプライアンス アドオンが含まれている Microsoft 365 A3 サブスクリプション。
 - Microsoft 365 A3 サブスクリプション + Microsoft 365 A5 Information Protection and Governance アドオン
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>Microsoft 365 インサイダー リスク ソリューションの展開
@@ -140,7 +140,7 @@ Microsoft 365 インサイダー リスク機能を実装するための統合�
 
 Microsoft 365 には、組織内のこれらのユーザーに通知してトレーニングするための次のリソースが提供されています。
 
-| ソリューション/エリア | リソース |
+| ソリューション/エリア | 関連情報 |
 |:------------------|:--------------|
 | Microsoft 365 で insider リスクを管理する |[完全な学習パス](/learn/paths/m365-compliance-insider) <br> この学習パスには、コミュニケーションコンプライアンス、インサイダーリスク管理、情報障壁、特権アクセス管理のための個々のソリューション モジュールが含まれます。 すべてのモジュールを完了するには、この学習パスを選択します。 |
 | コミュニケーション コンプライアンス | [学習モジュール: Microsoft 365 で通信コンプライアンスを準備する](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> このモジュールは、通信コンプライアンスを使用して行動規範ポリシー違反を特定して修復する方法、通信コンプライアンス ポリシーを作成する前に必要な前提条件をカバーする方法、および通信コンプライアンスにおける組み込みの定義済みポリシー テンプレートの種類について説明します。 |

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a9bf9461e8cf6d62e4283c9112b801371242f2e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453707"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838533"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender を 365 のOfficeする
 
@@ -34,7 +34,7 @@ ms.locfileid: "50453707"
 
 包括的なセキュリティ製品評価を実施すると、アップグレードと購入に関する情報に基づいた意思決定を行う際に役立ちます。 セキュリティ製品の機能を試して、セキュリティ運用チームの日常業務に役立つ方法を評価するのに役立ちます。
 
-[Microsoft Defender for Office 365](office-365-atp.md)評価エクスペリエンスは、セキュリティ ソリューションの機能の評価に集中できるよう、デバイスと環境構成の複雑さを排除するように設計されています。 これは、メール保護にのみ適用され、SharePoint、Word、Teams Officeクライアントに適用されません。
+[Microsoft Defender for Office 365](office-365-atp.md)評価エクスペリエンスは、デバイスと環境構成の複雑さを排除し、Microsoft Defender for Office 365 の機能の評価に集中できるよう設計されています。 評価モードでは、Exchange Online メールボックスに送信されるメッセージはすべて、MX レコードを Microsoft にポイントすることなく評価できます。 この機能はメール保護にのみ適用され、Word、SharePoint、Teams Officeクライアントには適用されません。
 
 microsoft Defender for Office 365 をサポートするライセンスをまだ持ってない場合は、無料[の 30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)日間の評価を開始し、Office 365 セキュリティ & コンプライアンス センター () で機能をテストできます。 https://protection.office.com/homepage) クイック セットアップを楽しめ、必要に応じて簡単にオフにできます。
 
@@ -78,7 +78,7 @@ Microsoft Defender for Office 365 の試用版ライセンスを取得するに�
 
 高度な脅威を監視および報告する評価を含む 30 日間のウィンドウがあります。 また、365 の機能に対する完全な Defender が必要な場合は、有料サブスクリプションOfficeがあります。
 
-### <a name="roles"></a>Roles
+### <a name="roles"></a>ロール
 
 Exchange Online の役割は、評価モードで 365 Office Defender をセットアップするために必要です。
 
@@ -87,7 +87,7 @@ Exchange Online の役割は、評価モードで 365 Office Defender をセッ�
 
 次の役割が必要です。
 
-|Task|役割|
+|タスク|Role|
 |---|---|
 |無料試用版を取得するか、Microsoft Defender for Office 365 (プラン 2)|課金管理者ロールまたはグローバル管理者ロール|
 |評価ポリシーの作成|リモートドメインと受け入れドメインの役割。セキュリティ管理者の役割|

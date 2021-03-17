@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、Teams、SharePoint、およびグループ内の関連機能を管理する方法についてYammer。
-ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741599"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838469"
 ---
 # <a name="what-is-collaboration-governance"></a>共同作業のガバナンスとは?
 
@@ -40,6 +40,10 @@ Microsoft 365 グループ、Teams、Yammerなどのサービスは、共同作�
 ### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>Microsoft 365 との安全なコラボレーションのセットアップ
 
 組織内の安全なコラボレーションのために Microsoft 365 グループと Teams を展開するための多くのオプションがあります。 組織に最適なコラボレーション ソリューションを作成するには [、Microsoft 365](setup-secure-collaboration-with-teams.md) とその関連記事とのセキュリティで保護されたコラボレーションをセットアップするとともに、このガバナンス コンテンツを使用することをお勧めします。
+
+### <a name="data-residency"></a>データの保存場所
+
+組織が複数国間で、地域ごとにデータ常駐要件がある場合は、コラボレーション ガバナンス 計画の一部として [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) を含める必要があります。
 
 ## <a name="why-microsoft-365-groups-are-important"></a>Microsoft 365 グループが重要な理由
 
@@ -109,6 +113,8 @@ Microsoft 365 でコラボレーション機能を使用する方法を決定す
 - **ビジネスの優先順位に合** わせて調整する - ビジネス目標は、ガバナンスに投資する必要がある時間とエネルギーを定義するのに役立ちます。
 
 - **作成するソリューションに** ガバナンスの決定を直接埋め込む - Microsoft 365 の機能をオンまたはオフにすることで、多くのガバナンス決定を実装できます。
+
+- **段階的なアプローチを使用する** - 最初に小さなグループのユーザーにコラボレーション機能をロールアウトします。 より大きなグループに進む前に、フィードバックを受け取り、ヘルプ デスク のチケットを監視し、必要な設定やプロセスを更新します。
 
 - **トレーニングの強化** - Microsoft [365](https://docs.microsoft.com/office365/customlearning) ラーニング パスなどのソリューションを調整して、組織固有の期待を Microsoft 提供のトレーニングで強化します。
 
@@ -240,7 +246,7 @@ Microsoft 365 グループ、SharePoint、Teams、およびグループがどの
 
 - [365 グループ、SharePoint、Teams、Officeグループとの共同作業のスイート スポットを見Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 [Microsoft 365 のセキュリティに関するドキュメント](https://docs.microsoft.com/microsoft-365/security)
 

@@ -17,18 +17,22 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Microsoft 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: f2d1a2062d43af750a84984aab66329ed6a4db22
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 04c2b6e738ed41f8d4a2bf96716fb74b1d260497
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819704"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838641"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
 既定では、すべてのユーザーが Microsoft 365 グループを作成できます。 IT の支援を必要とせずにユーザーが共同作業を開始できるので、この方法をお勧めします。
 
-ビジネスでグループを作成できるユーザーを制限する必要がある場合は、この記事の手順に従います。 グループを作成できるユーザーを制限すると、グループに依存してアクセスを行うすべてのサービスに影響します。
+ビジネスでグループを作成できるユーザーを制限する必要がある場合は、Microsoft 365 グループの作成を特定の Microsoft 365 グループまたはセキュリティ グループのメンバーに制限できます。
+
+ビジネス標準に準拠しないチームまたはグループを作成するユーザーが気になる場合は、ユーザーにトレーニング コースを完了し、許可されたユーザーのグループに追加する必要があります。
+
+グループを作成できるユーザーを制限すると、グループに依存してアクセスを行うすべてのサービスに影響します。
 
 - Outlook
 - SharePoint
@@ -38,8 +42,6 @@ ms.locfileid: "50819704"
 - Planner
 - Power BI (クラシック)
 - Web 向けプロジェクト / ロードマップ
-
-Microsoft 365 グループの作成は、特定の Microsoft 365 グループまたはセキュリティ グループのメンバーに制限できます。 制限するには、Windows PowerShell を使用します。 この記事では、必要な手順について説明します。
 
 この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365 のグローバル管理者は、Microsoft 365 管理センター、Planner、Teams、Exchange、SharePoint Online などの方法でグループを作成できます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
 
@@ -141,7 +143,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 スクリプトの最後の行に、更新された設定が表示されます。
 
-![完了すると、設定は次のように表示されます。](../media/952cd982-5139-4080-9add-24bafca0830c.png)
+![PowerShell スクリプト出力のスクリーンショット。](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
 今後、使用するグループを変更する場合は、新しいグループの名前でスクリプトを再実行できます。
 

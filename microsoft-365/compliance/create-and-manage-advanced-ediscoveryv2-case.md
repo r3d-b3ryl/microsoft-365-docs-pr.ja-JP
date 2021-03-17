@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、高度な電子情報開示ケースを作成および管理する方法について説明します。 最初の手順は、ケースを作成し、高度な電子情報開示機能の使用を開始します。
-ms.openlocfilehash: 80cfe31a86060cb3603a101b314273cc67750bd8
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727544"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838256"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースの作成と管理
 
@@ -82,15 +82,15 @@ ms.locfileid: "50727544"
 
    - Advanced eDiscovery [の通信ワークフロー](managing-custodian-communications.md) を使用して、保管担当者に法的ホールド通知を送信できます。
 
-2. **[ケースに関連するデータのデータ ソースを検索します](collecting-data-for-ediscovery.md)**。 カストディアンと非保管データ ソースをケースに追加した後、組み込みの検索ツールを使用して、これらのデータ ソースでケースに関連する可能性のあるデータを検索します。 キーワード、プロパティ、および条件を使用して、[](building-search-queries.md)ケースに最も関連性の高いデータを含む検索結果を返す検索クエリを作成します。 以下のことも実行できます。
+2. **[データ ソースから関連するデータを収集します](create-draft-collection.md)**。 保管担当者と保管されていないデータ ソースをケースに追加した後、組み込みのコレクション ツールを使用して、ケースに関連する可能性のあるコンテンツについてこれらのデータ ソースを検索します。 キーワード、プロパティ、および条件を使用して、[](building-search-queries.md)ケースに最も関連性の高いデータを含む検索結果を返す検索クエリを作成します。 以下のことも実行できます。
 
-   - 検索 [クエリを絞](search-statistics-in-advanced-ediscovery.md) り込み、結果を絞り込むのに役立つ検索統計を表示します。
+   - コレクション [を絞り](collection-statistics-reports.md) 込み、結果を絞り込むのに役立つコレクションの統計情報を表示します。
 
-   - 検索結果をプレビューして、関連するデータが見つかったかどうかを迅速に確認します。
+   - コレクションのサンプルをプレビューして、関連するデータが見つかったかどうかを迅速に確認します。
 
-   - クエリを修正し、検索を再実行します。
+   - クエリを修正し、コレクションを再実行します。
 
-3. **[レビュー セットにデータを追加します](add-data-to-review-set.md)**。 検索で目的のデータが返されていることを構成して確認したら、次に、検索結果をレビュー セットに追加します。 レビュー セットにデータを追加すると、アイテムは元の場所から安全な Azure Storage の場所にコピーされます。 レビュー セット内のアイテムを確認および分析する際に、データのインデックスを再作成して、徹底的かつ迅速な検索を最適化します。 さらに、レビュー セットに [365 以外Office 365 データを追加できます](load-non-office-365-data-into-a-review-set.md)。
+3. **[コレクションをレビュー セットにコミットします](commit-draft-collection.md)**。 検索で目的のデータが返されていることを構成して確認したら、次に、検索結果をレビュー セットに追加します。 レビュー セットにデータを追加すると、アイテムは元の場所から安全な Azure Storage の場所にコピーされます。 レビュー セット内のアイテムを確認および分析する際に、データのインデックスを再作成して、徹底的かつ迅速な検索を最適化します。 さらに、レビュー セットに [365 以外Office 365 データを追加できます](load-non-office-365-data-into-a-review-set.md)。
 
    また、会話レビュー セットと呼ばれる、データを追加できる特別な *種類のレビュー セットがあります*。 これらの種類のレビュー セットは、Microsoft Teams のようなスレッド会話を再構築、レビュー、エクスポートする会話再構成機能を提供します。 詳細については、「Advanced [eDiscovery での会話の確認」を参照してください](conversation-review-sets.md)。
 

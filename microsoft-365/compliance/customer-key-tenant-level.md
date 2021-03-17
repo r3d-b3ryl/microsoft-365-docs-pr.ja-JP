@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Microsoft 365 テナント内のすべてのデータに顧客キーを設定する方法について説明します。
-ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727480"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838242"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>テナント レベルでの Microsoft 365 のカスタマー キーの概要 (パブリック プレビュー)
 
@@ -49,7 +49,7 @@ Exchange Online と Sharepoint Online 用に顧客キーが既に設定されて
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>テナント レベルで顧客キーを設定する (パブリック プレビュー)
 
-これらの手順は類似していますが、アプリケーション レベルで顧客キーを設定する手順と同じではありません。 このパブリック プレビューは、テスト テナントのテスト データでのみ使用してください。 このリリースは、実稼働データや実稼働環境では使用しない。 顧客キーの実稼働展開が既にある場合は、次の手順を使用して、テスト環境のテナント レベルで顧客キーを設定します。
+これらの手順は類似していますが、アプリケーション レベルで顧客キーを設定する手順と同じではありません。 このパブリック プレビューは、テスト テナントのテスト データでのみ使用してください。 このリリースは、実稼働データや実稼働環境では使用しない。 顧客キーの実稼働展開が既にある場合は、次の手順を使用して、テスト環境のテナント レベルで顧客キーを設定します。 テナント レベルの DEP をテナントに割り当てたら、検証プロセスを開始し、質問や懸念事項を m365ck@microsoft.com に問い合わせできます。 ドキュメントの検証手順については [、「Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation)のデータ保存時暗号化の検証手順」のパブリック プレビューで確認できます。
 
 これらのほとんどのタスクは、Azure PowerShell にリモートで接続して完了します。 最適な結果を得る場合は、バージョン 4.4.0 以降の Azure PowerShell を使用します。
 
@@ -132,7 +132,7 @@ Microsoft 365 チームに連絡する前に、カスタマー キーで使用�
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   以下に例を示します。
+   たとえば次のようにします。
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
@@ -216,7 +216,7 @@ Microsoft 365 では、Azure Key Vault サブスクリプションが [キャン
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Recovery _Level_ プロパティが **Recoverable+ProtectedSubscription** の値以外の値を返す場合は、この記事を確認し、サブスクリプションをキャンセルしないリストに入れる手順のすべてと、各キー コンテナーで "soft delete" を有効にしたことを確認する必要があります。 次に、電子メールの出力のスクリーンショット `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` を電子メールに送信m365ck@microsoft.com。
+Recovery _Level_ プロパティが **Recoverable+ProtectedSubscription** の値以外の値を返す場合は、この記事を確認し、サブスクリプションをキャンセルしないリストに入れる手順のすべてと、各キー コンテナーで "soft delete" を有効にしたことを確認する必要があります。 次に、電子メールの出力のスクリーンショット `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` を電子メールに送信 m365ck@microsoft.com。
 
 ### <a name="back-up-azure-key-vault"></a>Azure Key Vault のバックアップ
 
@@ -233,7 +233,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
   
 このコマンドレットから生成された出力ファイルは暗号化され、Azure Key Vault の外部では使用できません。 バックアップは、バックアップの取得元の Azure サブスクリプションにのみ復元できます。
   
-以下に例を示します。
+たとえば次のようにします。
   
 ```powershell
 Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -OutputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -309,16 +309,16 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 
 パラメータ :
 
-| 名前 | 説明 | オプション (Y/N) |
+| Name | 説明 | オプション (Y/N) |
 |----------|----------|---------|
-|名前|データ暗号化ポリシーの表示名|×|
+|Name|データ暗号化ポリシーの表示名|×|
 |AzureKeyIDs|データ暗号化ポリシーに関連付ける Azure Key Vault キーの 2 つの URI 値をコンマで区切って指定します。|×|
 |説明|データ暗号化ポリシーの説明|×|
 
 ### <a name="assign-policy"></a>ポリシーの割り当て
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
 説明: このコマンドレットは、既定のデータ暗号化ポリシーの構成に使用されます。 このポリシーは、すべてのサポート ワークロードでデータを暗号化するために使用されます。 
@@ -326,12 +326,12 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_P
 例:
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Default_PolicyName"
 ```
 
 パラメータ :
 
-| 名前 | 説明 | オプション (Y/N) |
+| Name | 説明 | オプション (Y/N) |
 |----------|----------|---------|
 -DataEncryptionPolicy|割り当てる必要があるデータ暗号化ポリシーを指定します。ポリシー名またはポリシー ID を指定します。|×|
 
@@ -354,12 +354,12 @@ Set-M365DataAtRestEncryptionPolicy -Identity "NAM Policy" -Enabled $false
 データ暗号化ポリシーを更新します。
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
+Set-M365DataAtRestEncryptionPolicy -Identity "EUR Policy" -Refresh
 ```
 
 パラメータ :
 
-| 名前 | 説明 | オプション (Y/N) |
+| Name | 説明 | オプション (Y/N) |
 |----------|----------|---------|
 |-Identity|変更するデータ暗号化ポリシーを指定します。|×|
 |-Refresh|Azure Key Vault で関連付けられたキーを回転した後、更新スイッチを使用してデータ暗号化ポリシーを更新します。 このスイッチで値を指定する必要はありません。|Y|
@@ -391,7 +391,7 @@ Get-M365DataAtRestEncryptionPolicy -Identity "NAM Policy"
 
 パラメータ :
 
-| 名前 | 説明 | オプション (Y/N) |
+| Name | 説明 | オプション (Y/N) |
 |----------|----------|---------|
 |-Identity|詳細を一覧表示するデータ暗号化ポリシーを指定します。|Y|
 

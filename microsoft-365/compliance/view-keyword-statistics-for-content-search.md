@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: 検索統計機能を使用して、セキュリティ/コンプライアンス センターで複数のコンテンツ検索の統計情報を表示&します。
+description: 検索統計機能を使用して、セキュリティ コンプライアンス センターで複数のコンテンツ検索の統計を表示および比較する&します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7faf956aaec5619655818036b969086e0af0c6a
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: f12c51c47045996e450772c081bd26ef4a520b5f
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49987835"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838700"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>コンテンツ検索結果のキーワード統計の表示
 
@@ -34,11 +34,11 @@ ms.locfileid: "49987835"
   
 ## <a name="get-statistics-for-content-searches"></a>コンテンツ検索の統計情報を取得する
 
-コンテンツ検索の統計情報を表示するには:
+コンテンツ検索の統計情報を表示するには、次の方法を使用します。
   
 1. Microsoft 365 コンプライアンス センターで、[すべてのコンテンツ検索を **表示する]**  >  **に移動します**。
 
-2. 検索の一覧で 2 つ以上の検索を選択し、[一括操作] フライアウト ページで [検索の統計 **]** をクリックします。
+2. 検索の一覧で、2 つ以上の検索を選択し、[一括操作] フライアウト ページの [統計情報の検索 **]** をクリックします。
     
     ![複数の検索を選択してから [検索の統計] をクリックする](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
@@ -109,7 +109,7 @@ ms.locfileid: "49987835"
   
 1. Microsoft 365 コンプライアンス センターで、[すべてのコンテンツ検索を **表示する]**  >  **に移動します**。
     
-2. コンテンツ検索の一覧で、クリックして検索し、[編集] アイコン **を** ![ クリックします ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
+2. コンテンツ検索の一覧で、検索をクリックし、[編集] アイコン **を** ![ クリックします ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
 3. **[クエリ]** をクリックして、次のようにします。 
     
