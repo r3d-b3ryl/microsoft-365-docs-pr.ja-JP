@@ -2,8 +2,8 @@
 title: Microsoft 生産性スコア
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509088"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838427"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -40,7 +40,7 @@ ms.locfileid: "50509088"
 
 - **ユーザー エクスペリエンス**: コンテンツの共同作業、モビリティ、コミュニケーション、会議、チームワークなどの Microsoft 365 のカテゴリを組織が仕事でどのように使用しているかを定量化します。  
 
-    これらのカテゴリそれぞれについて公的研究を参照して、ベスト プラクティスとそれに関連する組織の効率性における利点を特定します。 たとえば、[Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) のリサーチによると、ユーザーが共同作業をして (メール添付ではなく) クラウド上でコンテンツを共有するとき、1 週間あたり最大 100 分を削減できます。 さらに、Microsoft では組織内のこれらのベスト プラクティスの使用を定量化して、デジタル変革の行程のどの段階にあるかを知ることができるようサポートしています。 
+    これらの各カテゴリについて公的研究を参照し、組織の効率性におけるベスト プラクティスと関連する特徴を特定します。 たとえば、[Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) のリサーチによると、ユーザーが共同作業をして (メール添付ではなく) クラウド上でコンテンツを共有するとき、1 週間あたり最大 100 分を削減できます。 さらに、Microsoft では組織内のこれらのベスト プラクティスの使用を定量化して、デジタル変革の行程のどの段階にあるかを知ることができるようサポートしています。 
 
 - **テクノロジ エクスペリエンス**: 組織は、信頼性が高くパフォーマンスの高いテクノロジと、Microsoft 365 の効率的な使用に大きく左右されます。 [エンドポイント分析](https://aka.ms/endpointanalytics): ハードウェアとソフトウェアのパフォーマンスと正常性の問題が組織にどのように影響するかを理解するのに役立ちます。 Microsoft 365 アプリの正常性は、組織内のデバイスが推奨されているチャネルで Microsoft 365 アプリを実行しているかどうかを知るのに役立ちます。
 
@@ -72,9 +72,9 @@ ms.locfileid: "50509088"
 組織のスコアは毎日更新され、過去 28 日 (当日を含む) に完了したユーザーの操作を反映します。
 
 
-## <a name="pre-requisites"></a>前提条件 
+## <a name="prerequisites"></a>前提条件 
 
-ユーザーがデータを体験するには、Microsoft 365 for Business または Office 365 for enterprise サブスクリプションが必要です。 テナントのエンドポイント分析データについては、サブスクリプションに Microsoft Intune を追加する必要があります。 Intune は、デバイスとアプリを管理することで、組織のデータを保護するのに役立ちます。 Intune を入手したら、Intune エクスペリエンス内でエンドポイント分析を有効にできます。 [Microsoft Intune](https://docs.microsoft.com/mem/intune/) の詳細をご覧ください。 
+ユーザーがデータを体験するには、Microsoft 365 for Business または Office 365 for enterprise サブスクリプションが必要です。 テナントのエンドポイント分析データについては、サブスクリプションに Microsoft Intune を追加する必要があります。 Intune を使用してデバイスとアプリを管理することで、組織のデータを保護できます。 Intune を入手したら、Intune エクスペリエンス内でエンドポイント分析を有効にできます。 [Microsoft Intune](https://docs.microsoft.com/mem/intune/) の詳細をご覧ください。 
 > [!NOTE]
 > 生産性スコア機能を取得するために、Workplace Analytics のライセンスは必要ありません。
 
@@ -92,9 +92,9 @@ ms.locfileid: "50509088"
 > [!NOTE]
 > 生産性スコアにサインアップまたはテナントを選択できるのは、グローバル管理者の役割を持つ IT プロフェッショナルのみです。
 
-この情報は Microsoft 365 を使用してデジタル革新を促進するためにのみ使用することが想定されているため、共有は慎重に行う必要があることに注意してください。 
+生産性スコアのロールベースのアクセス制御のモデルは、組織内の IT 担当に柔軟な役割の割り当てを提供することで、組織の Microsoft 365 を使用したさらなるデジタル変革の道のりをサポートします。
 
-Microsoft は、個々のユーザーのプライバシー保護に真剣に取り組んでいます。 この[プライバシーに関するドキュメント](privacy.md)では、Microsoft に寄せていただいている信頼を損なうことなく、組織の IT 管理者に実践的な情報を確実に提供するために Microsoft が提供する管理策について説明しています。
+Microsoft は個々のユーザーのプライバシーを保護します。 この[プライバシー ドキュメント](privacy.md)では、Microsoft に寄せていただいている信頼を損なうことなく、組織の IT 管理者に実践的な情報を確実に提供するために Microsoft が提供する管理策について説明しています。
 
 Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** からエクスペリエンスにアクセスできます。
 
