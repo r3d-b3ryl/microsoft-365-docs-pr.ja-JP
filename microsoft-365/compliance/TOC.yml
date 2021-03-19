@@ -44,16 +44,18 @@
           href: insider-risk-management.md
         - name: インサイダー リスク管理のための計画
           href: insider-risk-management-plan.md
-        - name: インサイダー リスク設定の概要
-          href: insider-risk-management-settings.md
         - name: インサイダー リスクの管理の概要
           href: insider-risk-management-configure.md
+        - name: インサイダー リスク設定の概要
+          href: insider-risk-management-settings.md
         - name: インサイダー リスク ポリシーを作成して管理する
           href: insider-risk-management-policies.md
         - name: インサイダー リスクのアラートを調査する
           href: insider-risk-management-alerts.md
         - name: インサイダー リスクのケースに対処する
           href: insider-risk-management-cases.md
+        - name: インサイダーリスク監査ログを使用してアクティビティを確認する
+          href: insider-risk-management-audit-log.md
         - name: インサイダー リスク コンテンツ エクスプローラーを使用してデータを確認する
           href: insider-risk-management-content-explorer.md
         - name: ユーザー ダッシュボードを使用してワークフローを管理する
@@ -237,8 +239,12 @@
               href: data-loss-prevention-policies.md
             - name: エンドポイント データ損失防止について
               href: endpoint-dlp-learn-about.md
-            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) についての詳細情報
+            - name: Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)
+              href: dlp-teams-default-policy.md
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報 (プレビュー)
               href: dlp-on-premises-scanner-learn.md
+            - name: Microsoft Compliance Extension (プレビュー) の詳細情報
+              href: dlp-chrome-learn-about.md
         - name: DLP の使用を開始する
           items:
             - name: 既定の DLP ポリシーの使用を開始する
@@ -253,6 +259,8 @@
               href: endpoint-dlp-getting-started.md
             - name: エンドポイント DLP のデバイス プロキシとインターネット接続の構成
               href: endpoint-dlp-configure-proxy.md
+            - name: Microsoft Compliance Extension (プレビュー) を開始する
+              href: dlp-chrome-get-started.md
             - name: Windows 10 デバイスのエンドポイント DLP オンボード ツールと各種方法
               items:
                 - name: Windows 10 デバイスのオンボード ツールと各種方法
@@ -532,6 +540,8 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: 検索の推定結果と実際の結果の違い
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
+              href: what-is-stored-in-exo-mailbox.md
             - name: eDiscovery ツールでの復号化
               href: ediscovery-decryption.md
         - name: PowerShell スクリプトでコンテンツ検索を実行する
@@ -562,6 +572,8 @@
               href: assign-ediscovery-permissions.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
+            - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
+              href: what-is-stored-in-exo-mailbox.md
             - name: 検索アクセス許可のフィルター処理を構成する
               href: permissions-filtering-for-content-search.md
             - name: コンプライアンスの境界を設定する
@@ -627,14 +639,27 @@
         - name: 処理中のエラーを管理する
           href: processing-data-for-case.md
           items:
-            - name: カストディアン データの詳細なインデックス処理
+            - name: カストディアン コンテンツの詳細なインデックス処理
               href: indexing-custodian-data.md
-            - name: データ処理中のエラー修復
+            - name: コンテンツ処理時のエラー修復
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: 単一アイテムのエラーの修復
               href: single-item-error-remediation.md
+        - name: ケースのコンテンツを収集する (プレビュー)
+          items:
+            - name: コレクションについて学ぶ (プレビュー)
+              href: collections-overview.md
+            - name: ドラフト コレクションを作成する (プレビュー)
+              href: create-draft-collection.md
+            - name: ドラフト コレクションをレビュー セットにコミットする (プレビュー)
+              href: commit-draft-collection.md
+            - name: コレクションの統計とレポート (プレビュー)
+              href: collection-statistics-reports.md
+            - name: コレクションの検索クエリを作成する
+              href: building-search-queries.md
+            - name: キーワード クエリと検索条件
+              href: keyword-queries-and-search-conditions.md
         - name: ケースのデータの収集
-          href: collecting-data-for-ediscovery.md
           items:
             - name: 検索を作成する
               href: create-search-to-collect-data.md
@@ -653,7 +678,7 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: データを別のレビュー セットに追加する
               href: add-data-to-review-set-from-another-review-set.md
-        - name: ケース データを確認する
+        - name: ケース コンテンツのレビュー
           items:
             - name: レビュー セット ダッシュボードを使用する
               href: advanced-ediscovery-dashboard.md
@@ -663,7 +688,7 @@
               href: review-set-search.md
             - name: レビュー セット内のドキュメントをタグ付けする
               href: tagging-documents.md
-        - name: ケース データを分析する
+        - name: ケース コンテンツを分析する
           href: analyzing-data-in-review-set.md
           items:
             - name: 準重複の検出
@@ -676,7 +701,7 @@
               href: using-relevance.md
             - name: 関連モジュールの廃止
               href: relevance-module-retirement.md
-        - name: ケース データをエクスポートする
+        - name: ケースのコンテンツをエクスポートする
           href: exporting-data-ediscover20.md
           items:
             - name: レビュー セットからドキュメントをダウンロードする
@@ -717,6 +742,8 @@
               href: permissions-filtering-for-content-search.md
             - name: コンプライアンスの境界を設定する
               href: set-up-compliance-boundaries.md
+            - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
+              href: what-is-stored-in-exo-mailbox.md
             - name: 電子情報開示ツールでの復号化
               href: ediscovery-decryption.md
             - name: 電子情報開示の診断情報を収集する

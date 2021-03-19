@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7dcd0ce9b439d78b79d95b3eca39d80ca440726c
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 782c4fdda7e515d921063937f59b199510beaf08
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826189"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838616"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -352,6 +352,11 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 - 必須のラベル付けが有効になっている場合、ユーザーはドキュメントから秘密度ラベルを削除することはできませんが、既存のラベルを変更することはできます。
 
 この設定をいつ使用するかについては、[ポリシー設定](sensitivity-labels.md#what-label-policies-can-do)に関する情報を参照してください。
+
+> [!NOTE]
+> 必須のラベル付けに加えて、ドキュメントやメールに既定のラベル ポリシー設定を使用する場合: 
+>
+> 既定のラベルは、必須のラベル付けよりも常に優先されます。 ただし、ドキュメントの場合、Azure Information Protection 統合ラベル付けクライアントでは、既定のラベルがすべてのラベルなしドキュメントに適用されます。一方、組み込みのラベル付けでは、既定のラベルは新しいドキュメントには適用されますが、ラベルのない既存のドキュメントには適用されません。 この動作の違いにより、ユーザーが既定のラベル設定で必須のラベル付けを使用する場合、Azure Information Protection 統合ラベル付けクライアント使用時よりも、組み込みのラベル付け使用時のほうが、秘密度ラベルの適用を求めるメッセージがより頻繁に表示されることになります。
 
 ## <a name="end-user-documentation"></a>エンド ユーザー向けのドキュメント
 

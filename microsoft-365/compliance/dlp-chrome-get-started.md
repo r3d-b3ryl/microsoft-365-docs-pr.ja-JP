@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: d71c04433ec369856a510e9fb6382709ecb092f9
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826262"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838350"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>Microsoft Compliance Extension (プレビュー) を開始する
 
@@ -74,10 +74,6 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 - セキュリティ閲覧者
 - レポート閲覧者
 
-### <a name="chrome-dependency"></a>Chrome の依存関係
-
-Microsoft Compliance Extension は、現在の Chrome のバージョンと過去 3 つのバージョンに対応しています。
-
 ### <a name="overall-installation-workflow"></a>インストールの全体的なワークフロー
 
 Microsoft Compliance Extension の導入は、複数の手順を踏まえて行われます。 一度に 1 台のマシンにインストールするか、Microsoft エンドポイント マネージャーやグループ ポリシーを使用して組織全体に展開するかを選択できます。
@@ -92,7 +88,7 @@ Microsoft Compliance Extension の導入は、複数の手順を踏まえて行�
 
 ### <a name="prepare-infrastructure"></a>インフラストラクチャの準備
 
-監視しているすべての Windows 10 デバイスに Microsoft Compliance Extension を展開している場合は、許可されていないアプリのリストから Google Chrome を削除する必要があります。 詳細については、「[許可されていないブラウザー](endpoint-dlp-using.md#unallowed-browsers)」を参照してください。 少数のデバイスにしか展開しない場合は、Chrome を許可しないブラウザーのリストに残しておくことができます。 Microsoft Compliance Extension がインストールされているコンピューターでは、許可されていないアプリの表示制限が回避されます。  
+監視しているすべての Windows 10 デバイスに Microsoft Compliance Extension をロールアウトしている場合は、許可されていないアプリのリストおよび許可されていないブラウザーのリストから Google Chrome を削除する必要があります。 詳細については、「[許可されていないブラウザー](endpoint-dlp-using.md#unallowed-browsers)」を参照してください。 少数のデバイスにしかロールアウトしない場合は、Chrome を許可されていないブラウザーまたは許可されていないアプリのリストに残しておくことができます。 Microsoft Compliance Extension がインストールされているコンピューターでは、両方のリストの表示制限が回避されます。  
 
 ### <a name="prepare-your-devices"></a>デバイスを準備する
 
@@ -105,32 +101,40 @@ Microsoft Compliance Extension の導入は、複数の手順を踏まえて行�
 
 これは推奨される方法です。 
 
-1. Microsoft Compliance Extension をインストールする Windows 10 コンピューターにサインオンし、管理者としてこの PowerShell スクリプトを実行します。 
+1. Microsoft Compliance Extension をインストールする Windows 10 コンピューターにサインインし、管理者としてこの PowerShell スクリプトを実行します。 
 
-```powershell
-Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-``` 
+   ```powershell
+   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+   ``` 
 
 2.  [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco) に移動します。
+
 3.  Chrome Web ストアのページに記載されている手順で、拡張機能をインストールします。
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用して展開する
 
-この設定方法は、組織全体の展開に使用します。 
+この設定方法は、組織全体の展開に使用します。
+
 
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーで必要なレジストリ キーを有効にする
 
 1.  次のコンテンツを使用して PowerShell スクリプトを作成します。
-```powershell
-Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-```
+
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
+
 2.  [Microsoft エンドポイント マネージャー管理センター](https://endpoint.microsoft.com)にサインインします。
+
 3.  **[デバイス]** > >  **[スクリプト]** の順に移動し、**[追加]** を選択します。
+
 4.  プロンプトが表示されたら、作成したスクリプトの場所を参照してください。
+
 5.  次の設定を選択します。
     1. ログオンした資格情報を使用して、このスクリプトを実行する: はい
     1. スクリプトの署名チェックを強制する: いいえ
     1. 64 ビットの PowerShell ホストでスクリプトを実行する: はい
+
 6.  適切なデバイス グループを選択し、ポリシーを適用します。
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft エンドポイント マネージャーの強制インストール手順
@@ -139,15 +143,25 @@ Microsoft Compliance Extension を強制インストールされた拡張機能�
 
  ADMX を取り込んだ後、以下の手順でこの拡張機能の構成プロファイルを作成します。
 
-1.  Microsoft エンドポイント マネージャー管理センター (https://endpoint.microsoft.com)) にサインインします
+1.  Microsoft エンドポイント マネージャー管理センター (https://endpoint.microsoft.com)) にサインインします。
+
 2.  構成プロファイルに移動します。
+
 3.  **[プロファイルの作成]** を選択します。
+
 4.  **Windows 10** をプラットフォームとして選択します。
+
 5.  プロファイルの種類として **[カスタム]** を選択します。
+
 6.  **[設定]** タブを選択します。
+
 7.  **[追加]** を選択します。
+
 8.  次のポリシー情報を入力します。
-OMA-URI: ./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist Data type: String Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx″/>
+    
+    OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
+    データ型: `String`<br/>
+    値: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
 9.  [作成] をクリックします。
 
@@ -156,34 +170,53 @@ OMA-URI: ./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extension
 Microsoft エンドポイント マネージャーを使用しない場合は、グループ ポリシーを使用して Microsoft Compliance Extension を組織全体に展開することができます。
 
 1. デバイスはグループ ポリシーで管理できる必要があり、すべての Chrome ADMX をグループ ポリシー セントラル ストアにインポートする必要があります。 詳細については、「[Windows でグループ ポリシー管理テンプレート用に中央ストアを作成および管理する方法](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store)」を参照してください。
-2.  以下を使用して、PowerShell スクリプトを作成します。
 
-```powershell
-et-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-```
+2.  以下の PowerShell コマンドを使用して、PowerShell スクリプトを作成します。
+
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
 
 3.  **グループ ポリシー管理コンソール** を開き、自分の組織単位 (OU) に移動します。
+
 4.  右クリックして、**[このドメインに GPO を作成し、このコンテナーにリンクする]** を選択します。 プロンプトが表示されたら、このグループ ポリシー オブジェクト (GPO) にわかりやすい名前を割り当て、作成を終了します。
+
 5.  GPO を右クリックし、**[編集]** を選択します。
+
 6.  **[コンピュータの構成]** > >  **[環境設定]** > >  **[コントロールパネルの設定]** > >  **[スケジュールされたタスク]** の順に移動します。
+
 7.  右クリックして **[新規作成]** > >  **[即時タスク (Windows 7 以降)** を選択して新しい即時タスクを作成します。
+
 8.  タスクに名前と説明をつけます。
+
 9.  即時タスクを実行するための対応するアカウントを選択します (NT Authority など)。
+
 10. **[最上位の特権で実行する]** を選択します。
+
 11. Windows 10 用のポリシーを構成します。
+
 12. **[アクション]** タブで、アクション **[プログラムの開始]** を選択します。
+
 13. 手順 1 で作成した Program/Script のパスを入力します。
+
 14. **[適用]** を選択します。
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Chrome 拡張機能を ForceInstall リストに追加する
 
 1.  グループ ポリシー管理エディターで、OU に移動します。
+
 2.  以下のパスを展開します。**[コンピューター/ユーザーの構成]** > >  **[ポリシー]** > >  **[管理用テンプレート]** > >  **[クラシック管理用テンプレート]** > >  **[Google]** > >  **[Google Chrome]** > >  **[拡張機能]** このパスは、お使いの構成によって異なる場合があります。
+
 3.  **[強制インストールした拡張機能リストの構成]** を選択します。
+
 4.  右クリックして、**[編集]** を選択します。
+
 5.  **[有効]** を選択します。
+
 6.  **[表示]** を選択します。
+
 7.  **[値]** の下で、以下のエントリを追加します。`echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+
 8.  **[OK]**、**[適用]** の順に選択します。
 
 ### <a name="test-the-extension"></a>拡張機能をテストする
@@ -225,6 +258,12 @@ et-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configura
 
    > [!div class="mx-imgBorder"]
    > ![エンドポイント デバイスのアクティビティ エクスプローラー フィルター](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+
+### <a name="known-issues-and-limitations"></a>既知の問題と制限事項
+
+1. フォルダーのアップロードに対するドラッグ アンド ドロップの適用はサポートされていません。
+2. クラウド エグレスに対する上書きのブロックの適用はサポートされていません。
+3. シークレット モードはサポートされていないため、無効にする必要があります。
 
 ## <a name="next-steps"></a>次の手順
 デバイスがオンボードされ、Activity Explorer でアクティビティデータを表示できるようになりました。次の手順に進み、機密アイテムを保護する DLP ポリシーを作成します。
