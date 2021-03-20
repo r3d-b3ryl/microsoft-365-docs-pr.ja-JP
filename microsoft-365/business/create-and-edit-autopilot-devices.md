@@ -25,41 +25,40 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Microsoft 365 Business Premium で自動操縦を使用してデバイスをアップロードする方法について説明します。 プロファイルは、デバイスまたはデバイスのグループに割り当てることができます。
-ms.openlocfilehash: 8c3d029d682ae30444bdc7d30a4790a8f982e0e0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Microsoft 365 Business Premium で AutoPilot を使用してデバイスをアップロードする方法について説明します。 プロファイルは、デバイスまたはデバイスのグループに割り当てできます。
+ms.openlocfilehash: 910abb98b94b749177b04cd12c766f82d348e379
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400996"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913400"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>AutoPilot デバイスを作成し編集する
 
 ## <a name="upload-a-list-of-devices"></a>デバイスの一覧をアップロードする
 
-[ステップバイステップガイド](add-autopilot-devices-and-profile.md)を使用してデバイスをアップロードできますが、[**デバイス**] タブでデバイスをアップロードすることもできます。 
+デバイスをアップロード [するには、ステップ バイ](add-autopilot-devices-and-profile.md) ステップ ガイドを使用できますが、[デバイス] タブでデバイスを **アップロード** することもできます。 
   
-デバイスは次の要件を満たす必要があります。
+デバイスは、次の要件を満たす必要があります。
   
-- Windows 10、バージョン1703以降
+- Windows 10 バージョン 1703 以降
     
-- Windows の標準外の機能を使用していない新しいデバイス
+- Windows のアウトオブボックス エクスペリエンスを使用していない新しいデバイス
 
-1. Microsoft 365 管理センターで、[**デバイス** \> **自動操縦**] を選択します。
+1. Microsoft 365 管理センターで、[デバイスの **自動パイロット]** \> **を選択します**。
   
-2. [**自動操縦**] ページで、[**デバイス**] タブの [デバイスの追加] を選択し \> **Add devices**ます。
+2. [自動 **パイロット] ページで** 、[デバイス] **タブ** [デバイスの追加] \> **を選択します**。
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. [**デバイスの追加**] パネルで、準備した[デバイスリストの CSV ファイル](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)を参照して、Close を \> **保存**し \> **Close**ます。
+3. [デバイスの **追加] パネル** で、Save Close を準備した [デバイス](../admin/misc/device-list.md) リスト CSV ファイル \> **を参照** \> **します**。
     
-    この情報は、ハードウェアベンダーから入手することも、 [G-et-windowsautopilotinfo PowerShell スクリプト](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)を使用して CSV ファイルを生成することもできます。 
+    この情報は、ハードウェア ベンダーから取得するか [、Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) スクリプトを使用して CSV ファイルを生成できます。 
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>プロファイルをデバイスまたはデバイスのグループに割り当てる
 
-1. [ **Windows の準備**] ページで、[**デバイス**] タブを選択し、1つ以上のデバイスの横にあるチェックボックスをオンにします。 
+1. [Windows の **準備] ページ** で、[デバイス] タブ **を** 選択し、1 つ以上のデバイスの横にあるチェック ボックスをオンにします。 
     
 2. [ **デバイス**] パネルで、[ **割り当てられたプロファイル**] ドロップダウンからプロファイルを選択します。 
     
     まだプロファイルがない場合は、「[AutoPilot プロファイルの作成と編集](create-and-edit-autopilot-profiles.md)」の手順をご覧ください。 
-    

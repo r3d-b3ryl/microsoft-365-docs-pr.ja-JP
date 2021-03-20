@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: 5bf257847ec880855841035792c7714fd24d9b68
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 395c9773d4bc67ed466d7b3f8d568cecedddfd36
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928534"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911648"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -80,4 +80,4 @@ ms.locfileid: "49928534"
 
 [請求書、クレジット カード、または銀行口座引き落としによる支払い方法](pay-for-your-subscription.md) (記事) \
 [支払方法を管理する](manage-payment-methods.md) (記事) \
-[Minecraft: Education Edition の支払いオプション](https://go.microsoft.com/fwlink/p/?linkid=838761) (記事) \
+[Minecraft: Education Edition の支払いオプション](/education/windows/school-get-minecraft) (記事) \

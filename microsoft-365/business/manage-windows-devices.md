@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 がローカルの Active-Directory に参加している Windows 10 デバイスをわずか数ステップで保護する方法について説明します。
-ms.openlocfilehash: 0b597110447272be128bfe1866234ac25a8e67e6
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 82d4ac3f1d6aba9489f9ea153de3a3d2083b47ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407080"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913196"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>ドメインに参加している Windows 10 デバイスを Microsoft 365 Business Premium によって管理可能にする
 
@@ -78,7 +78,7 @@ ms.locfileid: "50407080"
 
 ## <a name="4-create-the-required-resources"></a>4. 必要なリソースを作成する 
 
-ハイブリッド[Azure AD](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)参加を構成するために必要なタスクを実行すると[、SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell モジュールにある[Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md)コマンドレットを使用して簡略化されました。 このコマンドレットを呼び出すと、必要なサービス接続ポイントとグループ ポリシーが作成および構成されます。
+ハイブリッド[Azure AD](/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)参加を構成するために必要なタスクを実行すると[、SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell モジュールにある[Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md)コマンドレットを使用して簡略化されました。 このコマンドレットを呼び出すと、必要なサービス接続ポイントとグループ ポリシーが作成および構成されます。
 
 このモジュールは、PowerShell のインスタンスから次のコマンドを呼び出してインストールできます。
 

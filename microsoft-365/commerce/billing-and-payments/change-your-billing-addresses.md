@@ -24,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: ビジネス向け Microsoft 365 の請求先住所を更新する方法について説明します。請求通知の受信に使用するメール アドレスを更新することもできます。
-ms.openlocfilehash: a6019a72bff1e5f4a3d0e6fdc6bb8cf7b8344d26
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: ビジネス向け Microsoft 365 の請求先住所を更新する方法について説明します。 請求通知の受信に使用するメール アドレスを更新することもできます。
+ms.openlocfilehash: 816198f8ff79c7136add6ec33c84a7812daf2daa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114873"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911904"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -49,17 +49,17 @@ ms.locfileid: "50114873"
 
 - **サービスの利用先住所** サービスが使用される住所です。通常、これは **販売先** 住所と同じです。組織にリモート ユーザーまたは複数のオフィスが存在する場合は、ユーザーの大多数が存在する住所を使用します。
 
-ほとんどの場合、これらの住所は同じです。 必要があれば、これらの住所のうち 1 つ以上を変更することができます。 また、請求通知を受信する連絡用メール アドレスを指定し、他の管理者の連絡用メール アドレスを変更することもできます。
+ほとんどの場合、これらの住所は同じです。 必要があれば、これらの住所のうち 1 つ以上を変更することができます。 また、請求通知を受信し、他の管理者の代替メール アドレスを変更する代替メール アドレスを指定することもできます。
   
 ::: moniker range="o365-worldwide"
 
-請求書または請求書の詳細については、「請求書または請求書[](view-your-bill-or-invoice.md)を表示する」および「請求書または請求書について[」を参照してください](understand-your-invoice2.md)。
+請求書または請求書の詳細については、「請求書または請求書[](view-your-bill-or-invoice.md)を表示する」および「請求書または請求書について」[を参照してください](understand-your-invoice2.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-請求書または請求書の詳細については、「請求書または請求書[](view-your-bill-or-invoice.md)を表示する」および「請求書または請求書について[」を参照してください](understand-your-invoice2.md)。
+請求書または請求書の詳細については、「請求書または請求書[](view-your-bill-or-invoice.md)を表示する」および「請求書または請求書について」[を参照してください](understand-your-invoice2.md)。
 
 ::: moniker-end
 
@@ -121,7 +121,7 @@ ms.locfileid: "50114873"
   
 3. [**支払いの詳細の変更**] ページで請求先住所を更新し、[**送信**] を選択します。
 
-    21Vianet が運用している Office 365 の支払い方法は、Alipay または China UnionPay を使用して請求書からオンライン支払いに変更するか、またはその逆を使用して変更できます。
+    21Vianet が運営する 365 Office支払い方法は、Alipay または China UnionPay を使用して請求書からオンライン支払いへ、またはその逆を使用して変更できます。
 
 ::: moniker-end
 
@@ -131,8 +131,8 @@ ms.locfileid: "50114873"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 2. **[製品]** タブで、変更するサブスクリプションを選択します。
-3. サブスクリプションの詳細ページの [サービスの利用先アドレス **]** セクションで、[サービスの利用先住所の編集 **] を選択します**。
-4. [サービスの **利用先住所の編集** ] ウィンドウで、アドレスを更新し、[保存] を選択 **します**。
+3. [サブスクリプションの詳細] ページの [サービス利用状況アドレス **] セクションで** 、[サービス使用状況アドレスの **編集] を選択します**。
+4. [サービス利用状況 **アドレスの編集] ウィンドウで** 、アドレスを更新し、[保存] を **選択します**。
 
 ::: moniker-end
 
@@ -162,9 +162,9 @@ ms.locfileid: "50114873"
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>請求通知の送り先である連絡用電子メール アドレスを変更する
 
-既定では、組織の請求通知は、組織内のすべてのグローバル管理者および課金管理者の Microsoft 電子メール アドレスと連絡用メール アドレスに送信されます。 各管理者は、自身のプロファイル情報を更新することによって、連絡用メール アドレスを変更できます。
+既定では、組織の請求通知は Microsoft の電子メール アドレスと、組織内のすべてのグローバル管理者および請求管理者の代替メール アドレスに送信されます。 各管理者は、自身のプロファイル情報を更新することによって、連絡用メール アドレスを変更できます。
   
-1. グローバル管理者として、自分の仕事用または学校アカウントで Microsoft 365 にサインインします。サインインする [方法について説明します](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 仕事または学校のアカウントをグローバル管理者として Microsoft 365 にサインインします。 [サインインする方法について説明します](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. [**ユーザー アイコン**] を選択し、[**マイ アカウント**] を選択します。
   
@@ -192,7 +192,7 @@ ms.locfileid: "50114873"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[課金情報の通知] \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">ページに移動</a>します。
+1. 管理センターで、[請求通知] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">に移動</a> します。
 
 ::: moniker-end
 

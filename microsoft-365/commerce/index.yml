@@ -13,12 +13,12 @@ metadata:
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: 4f5634b720079f57a37f9b7079a8bece6cf150cd
-  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+  ms.openlocfilehash: a2998495e5cf6309005e9bd8a65290081f565678
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "44402144"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50911604"
 landingContent:
 - title: 請求と支払いを管理する
   linkLists:
@@ -45,7 +45,7 @@ landingContent:
     - text: サブスクリプションのライセンスを購入する
       url: licenses/buy-licenses.md
     - text: サブスクリプションからライセンスを削除する
-      url: licenses/remove-licenses-from-subscription.md
+      url: ./licenses/buy-licenses.md
 - title: アップグレード、更新、またはキャンセル
   linkLists:
   - linkListType: how-to-guide
@@ -67,7 +67,7 @@ landingContent:
     - text: Microsoft 365 の試用または購入
       url: try-or-buy-microsoft-365.md
     - text: 無料試用版からサブスクリプションを購入する
-      url: buy-a-subscription-from-your-free-trial.md
+      url: ./try-or-buy-microsoft-365.md
     - text: 試用期間を延長する
       url: extend-your-trial.md
     - text: ドメイン名を購入する

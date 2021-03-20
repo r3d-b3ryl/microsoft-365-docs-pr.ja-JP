@@ -25,48 +25,46 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Microsoft 365 for business アプリの保護設定がユーザーの Windows 10 デバイスで有効になっていることを確認する方法について説明します。
-ms.openlocfilehash: 39aee3bc811cb0090d58f9a282de7a8162c097b3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Microsoft 365 for Business アプリ保護設定がユーザーの Windows 10 デバイスに適用されたことを確認する方法について説明します。
+ms.openlocfilehash: ff99b3a4fce49aebdb5c72f51e46678a7821e186
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403592"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912416"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Windows 10 PC でデバイス保護設定を検証する
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Windows 10 デバイス ポリシーが設定されていることを確認する
 
-[デバイス ポリシーを設定](protection-settings-for-windows-10-pcs.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは Windows 10 デバイスで windows Update および Windows Defender ウイルス対策の設定を変更できないため、多くのオプションが灰色表示されます。
+[デバイス ポリシーを設定](protection-settings-for-windows-10-pcs.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは Windows Update を変更したり、Windows 10 デバイスWindows Defenderウイルス対策の設定を変更したりできないので、多くのオプションがグレー表示されます。
   
-1. [**設定**の \> **更新 &amp; セキュリティ** \> **Windows update**の \> **再起動オプション]** に移動し、すべての設定が淡色表示になっていることを確認します。 
+1. [設定更新 \> **プログラムの &amp; セキュリティ]** \> **[Windows Update** \> **Restart] オプションに移動** し、すべての設定が灰色で表示されているのを確認します。 
     
-    ![すべての再起動オプションが淡色表示されます。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![[再起動] オプションはすべて灰色で表示されます。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. [**設定** \> ] [ ** &amp; セキュリティ** \> **Windows update**セキュリティ \> **] [詳細オプション]** の順に移動し、すべての設定が淡色表示になっていることを確認します。 
+2. [設定の \> **更新] &amp; セキュリティ** \> **の [Windows Update** \> **Advanced] オプションに移動** し、すべての設定がグレー表示に設定されているのを確認します。 
     
-    ![Windows Advanced updates のオプションはすべて淡色表示になっています。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Windows Advanced 更新プログラムのオプションはすべて灰色で表示されます。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
-    一部の設定が非表示になっているか、組織によって管理されており、すべてのオプションが灰色表示されていることを確認してください (赤)。
+    一部の設定が非表示または組織によって管理され、すべてのオプションが灰色で表示されるというメッセージが赤で表示されるのを確認します。
     
     ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
 4. To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**. 
     
-5. すべてのオプションが淡色表示になっていることを確認します。 
+5. すべてのオプションが灰色で表示されるのを確認します。 
     
-    ![ウイルスおよび脅威の保護の設定は灰色表示されています。](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+    ![ウイルスと脅威の保護の設定は灰色で表示されます。](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 for business のドキュメントとリソース](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business のドキュメントとリソース](./index.yml)
   
 [Microsoft 365 for business の使用を開始する](microsoft-365-business-overview.md)
   
-[Microsoft 365 for business の管理](manage.md)
+[ビジネス向け Microsoft 365 の管理](manage.md)
   
 [Windows 10 の PC のデバイス構成を設定する](protection-settings-for-windows-10-pcs.md)
-  
-

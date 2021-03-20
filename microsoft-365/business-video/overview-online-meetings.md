@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けオンライン会議を開催する方法について学習します。
-ms.openlocfilehash: 18a142700e8b83545219ddabf17be7d562037140
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 85163990d65126cc3d9d6c11627e63aa975b2924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422317"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913612"
 ---
 # <a name="host-online-meetings-for-your-business"></a>ビジネス向けオンライン会議を開催する
 
@@ -75,7 +75,7 @@ Microsoft Teams のチャットを会議に簡単に変換できます。 [ビ�
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft Teams での会議](https://docs.microsoft.com/microsoftteams/tutorial-meetings-in-teams)
+[Microsoft Teams での会議](/microsoftteams/tutorial-meetings-in-teams)
 
 [仮想会議をより効率的にする 6 つの方法](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 

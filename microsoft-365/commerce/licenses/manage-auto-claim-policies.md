@@ -18,12 +18,12 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: c1715d2420315c6e645303c959512a45d47fddfe
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759212"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911473"
 ---
 # <a name="manage-auto-claim-policies"></a>自動クレーム ポリシーの管理
 
@@ -41,9 +41,9 @@ ms.locfileid: "50759212"
 > [!IMPORTANT]
 > 自動クレーム ポリシーは現在、Microsoft Teams でのみ使用できます。 今後、より多くの製品を使用できる予定です。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-自動クレーム ポリシーを作成および管理するには、グローバル、課金、またはユーザー管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../../admin/add-users/about-admin-roles.md)」を参照してください。
+自動クレーム ポリシーを作成および管理するには、グローバル管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>自動クレーム ポリシー機能を有効または無効にする
 

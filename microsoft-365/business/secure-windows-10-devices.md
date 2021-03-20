@@ -26,29 +26,29 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: Windows 10 デバイスが職場または学校のアカウントにサインインしたときに受信する既定のデバイスポリシーの設定を構成する方法について説明します。
-ms.openlocfilehash: 85448507835b6310ca4136849be6a40caf6bb919
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+description: 仕事または学校のアカウントにサインインすると、Windows 10 デバイスが受け取る既定のデバイス ポリシーの設定を構成する方法について説明します。
+ms.openlocfilehash: 85383b1e1d2f2af3fd49d4a0c56c5d99586d607d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289079"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912612"
 ---
 # <a name="secure-windows-10-devices"></a>Windows 10 デバイスをセキュリティで保護する
 
 この記事は、Microsoft 365 Business Premium に適用されます。
 
-ここで構成する設定は、Windows 10 の既定のデバイス ポリシーの一部です。 Windows 10 デバイス (モバイルデバイスや Pc を含む) に接続するすべてのユーザーは、職場アカウントを使用してサインインすることで、これらの設定を自動的に受け取ります。 セットアップ時は既定のポリシーを受け入れて、ユーザーの特定のグループを対象にするポリシーは後で追加することをお勧めします。
+ここで構成する設定は、Windows 10 の既定のデバイス ポリシーの一部です。 モバイル デバイスや PC を含む Windows 10 デバイスを自分の仕事用アカウントでサインインして接続するユーザーはすべて、これらの設定を自動的に受信します。 セットアップ時は既定のポリシーを受け入れて、ユーザーの特定のグループを対象にするポリシーは後で追加することをお勧めします。
   
 ## <a name="settings-to-secure-windows-10-devices"></a>Windows 10 デバイスをセキュリティで保護する設定
 
-既定では、すべての設定が **オン**になっています。次の設定を使用できます。
+既定では、すべての設定が **オン** になっています。次の設定を使用できます。
   
 |||
 |:-----|:-----|
 |Setting  <br/> |説明  <br/> |
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |
-|不正なアクセスから PC のファイルとフォルダーを保護するために BitLocker を使用する  <br/> |BitLocker は、コンピューターのハード ドライブを暗号化することによってデータを保護し、コンピューターの紛失や盗難時にデータの漏えいを防ぎます。 詳細については、「Bitlocker に関する [FAQ](https://go.microsoft.com/fwlink/?linkid=871000)」を参照してください。  <br/> |
+|不正なアクセスから PC のファイルとフォルダーを保護するために BitLocker を使用する  <br/> |BitLocker は、コンピューターのハード ドライブを暗号化することによってデータを保護し、コンピューターの紛失や盗難時にデータの漏えいを防ぎます。 詳細については [、「Bitlocker FAQ」を参照してください](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)。  <br/> |
 |この時間アイドル状態になったときにデバイスの画面をオフにする  <br/> |ユーザーがアイドル状態になった場合に、会社のデータが保護されるようにします。ユーザーは、喫茶店などの公共の場所で作業を行っていて、その場から離れたり、一瞬気を取られたりして、デバイスが無作為な視線に対して無防備な状態になってしまう可能性があります。この設定では、画面の電源をオフにする前にユーザーがアイドル状態になる可能性のある時間を管理できます。  <br/> |
 |

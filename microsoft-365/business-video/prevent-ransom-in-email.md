@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ランサムウェアを防止するために電子メール ルールを作成する方法について学習します。
-ms.openlocfilehash: 0d8b4a9de881f47752ac0bfbf778453d6ee73046
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 34590945b13408cf3521f000d703bd37e04ba73f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422257"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913552"
 ---
 # <a name="create-email-rules-to-prevent-ransomware"></a>ランサムウェアを防止する電子メール ルールを作成する
 
@@ -43,7 +43,7 @@ Microsoft 365 は、JavaScript、バッチ、実行可能ファイルなどの�
 1. [ **このルールを適用する場合]** で、[任意の添付 **ファイル] を** 選択し、[ファイル拡張子 **にこれらの単語が含まれる] を選択します**。
 1. [単語または語句の **指定**] ボックスに、ルールを適用するファイル拡張子 (マクロを含むファイル拡張子など) を入力します。 プラス記号 (+) を使用して、一度に 1 つ追加します。
 
-    ファイルの種類の詳細については、「ランサムウェアから保護 [する」を参照してください](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)。
+    ファイルの種類の詳細については、「ランサムウェアから保護 [する」を参照してください](../admin/security-and-compliance/secure-your-business-data.md#ransomware)。
 
 1. 下にスクロールしてリストを確認し **、[OK] を選択します**。
 1. 新しい **ルール ページで、[** 条件の追加] **を** 選択し、[次の操作] で条件 **を選択します**。

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 請求通知メールと請求書添付ファイルを受け取るユーザーを管理する方法について学習します。
-ms.openlocfilehash: f0811c5d027d042b5114c9e05c698dab1e08763b
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515229"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911856"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>請求通知と請求書の添付ファイルを管理する
 
@@ -32,7 +32,7 @@ ms.locfileid: "50515229"
 
 ## <a name="before-you-begin"></a>はじめに
 
-この記事で説明する手順を実行するには、グローバル管理者である必要があります。 課金管理者は、以下のセクションで説明されている通り、これらの変更の一部を行えます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事で説明する手順を実行するには、グローバル管理者である必要があります。 課金管理者は、以下のセクションで説明されている通り、これらの変更の一部を行えます。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="change-the-language-you-receive-email-in"></a>メールを受信する言語を変更する
 
@@ -109,7 +109,7 @@ ms.locfileid: "50515229"
 - 課金プロファイル投稿者
 - 請求書マネージャー
 
-課金プロファイルの役割と管理方法の詳細については、「Azure での Microsoft Customer Agreement の管理 [役割について」を参照してください](https://docs.microsoft.com/azure/cost-management-billing/manage/understand-mca-roles)。
+課金プロファイルの役割と管理方法の詳細については、「Azure での Microsoft Customer Agreement の管理 [役割について」を参照してください](/azure/cost-management-billing/manage/understand-mca-roles)。
 
 組織の請求通知を受け取るユーザーを変更するには、次の手順を使用して、ユーザーに割り当てられた役割を変更します。
 
@@ -127,6 +127,6 @@ ms.locfileid: "50515229"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[請求書または請求書を表示](view-your-bill-or-invoice.md) する (記事)\
+[課金内容または請求書を表示する](view-your-bill-or-invoice.md) (article)\
 [Microsoft 365 for business の請求書](understand-your-invoice2.md) または請求書について (記事)\
 [ユーザーを追加し、同時にライセンスを割り当てる](../../admin/add-users/add-users.md) (記事)

@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: メールボックスを非アクティブなメールボックスに変換して、元の従業員のメールボックスコンテンツを保持する方法について説明します。
-ms.openlocfilehash: 7a10b3327dda148c3328f53826a81464b86a7a0a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6aeb10f1557a991523b60b8e8e85a99fc61f4b87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423618"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911253"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>非アクティブなメールボックスの概要
 
@@ -71,7 +71,7 @@ ms.locfileid: "50423618"
 
 セキュリティ & コンプライアンス センターの電子情報開示ケースに関連付けられている保留リストがメールボックスに配置され、メールボックスまたはユーザーのアカウントが削除された場合、メールボックスは非アクティブなメールボックスになります。 However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. また、時間ベースの電子情報開示ホールドを作成できない。 つまり、非アクティブなメールボックス内のコンテンツは、保持が削除され、非アクティブなメールボックスが削除されるまで、永遠に保持されます。 したがって、非アクティブなメールボックスには訴訟ホールドまたはアイテム保持ポリシーを使用することをお勧めします。
 
-電子情報開示ケースとホールドの詳細については、「電子情報開示ケース [」を参照してください](ediscovery-cases.md)。
+電子情報開示ケースとホールドの詳細については、「電子情報開示ケース [」を参照してください](./get-started-core-ediscovery.md)。
 
 ## <a name="inactive-mailboxes-and-labels"></a>非アクティブなメールボックスとラベル
 

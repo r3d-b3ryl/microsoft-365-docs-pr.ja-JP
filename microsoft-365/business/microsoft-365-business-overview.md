@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Office の生産性向上アプリと、サイバーの脅威に対応をするビジネスの高度な保護を含むサブスクリプション サービスの、Microsoft 365 Business Premium について説明します。
-ms.openlocfilehash: e67ae036bf3ce7811f19c8745838bb51dde073ea
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: aa6e313f0f3db1c3401836c3e1737c219fcf6c3a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842182"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913004"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の概要
 
@@ -48,9 +48,9 @@ Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、従業員�
   
 このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。 
 
-Microsoft 365 Business Premium は、最大300ライセンスを対象としています。 ライセンスの追加が必要な場合は、[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) のドキュメントで詳細を参照してください。
+Microsoft 365 Business Premium は、最大300ライセンスを対象としています。 ライセンスの追加が必要な場合は、[Microsoft 365 Enterprise](../enterprise/index.yml) のドキュメントで詳細を参照してください。
 
-全機能のリストについては、[「Microsoft 365 Business Premium サービスの説明」](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) を参照してください。
+全機能のリストについては、[「Microsoft 365 Business Premium サービスの説明」](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) を参照してください。
   
 ## <a name="small-business-security-needs"></a>小規模ビジネスのセキュリティのニーズ
 
@@ -71,27 +71,27 @@ Microsoft 365 Business Premium は、これらの各インスタンスでデー�
 
 Microsoft 365 Business Premium を使用すると、次のような **脅威から保護** に役立ちます。
 
-- 安全でない web サイト (安全なリンク) をブロックするために、電子メールとドキュメントのリンクをリアルタイムでスキャンします。
+- メールやドキュメント内のリンクをリアルタイムでスキャンして、安全でない Web サイト (セーフ リンク) をブロックします。
 
-- サンドボックス環境での電子メール添付ファイルの高度な分析を実行して、新たに開発されたマルウェア (安全な添付ファイル) を検出します。 
+- サンドボックス環境で電子メール添付ファイルの高度な分析を実行して、新しく開発されたマルウェア (安全な添付ファイル) を検出します。 
 
-- Machine learning モデルと偽装検出を使用して高度な攻撃に対する保護を提供するフィッシング対策ポリシーを有効にする (Office 365 インテリジェンスの Defender でのフィッシング対策)。 
+- 機械学習モデルと偽装検出を使用して高度な攻撃に対する保護を提供するフィッシング対策ポリシーを有効にする (365 インテリジェンス用 Defender のフィッシングOffice)。 
 
 - 信頼されていない場所からのアクセスを無効にする高度なポリシーを設定する、またはOffice ネットワークなどの信頼できる場所 から多要素認証をバイパスを設定します。(信頼できる IP を含むAzure MFA、条件付きアクセス)  
 
 - すべての組織の Windows 10 デバイスでマルウェア保護を適用し、重要なシステムフォルダー内のファイルをランサムウェアによる変更から保護します (Windows Defender)
 
-次の方法で **ビジネスデータは保護されています** 。 
+次の方法で **ビジネスデータは保護されています**。 
 
 - 自動検出を使用して、社会保障番号やクレジットカードなどの機密情報が社内外に漏洩するのを防止します。 (データ損失防止) 
 
 - 機密情報を暗号化して、組織外の顧客や他のユーザーと安全に通信できます。 メッセージを暗号化することで、本来の受信者だけがメッセージを開き、閲覧できます。(Office 365 Message Encryption)
 
-- メールやドキュメントに **コピー禁止** や、 **転送禁止** などの規制を適用して、企業情報へのアクセス権をもつユーザーを制御します。(Azure Information Protection、プラン 1)
+- メールやドキュメントに **コピー禁止** や、**転送禁止** などの規制を適用して、企業情報へのアクセス権をもつユーザーを制御します。(Azure Information Protection、プラン 1)
 
 - 無制限のクラウドアーカイブを有効にすると、元従業員のメールボックスを含むすべての組織のメールを保持することができます。 (Exchange Online のアーカイブ)
 
-次のように **デバイスは保護されます** 。 
+次のように **デバイスは保護されます**。 
 
 - ユーザーが自宅のコンピューターからサインインすることや未承認アプリの使用をブロックするオプション、または業務時間外にアクセスできないようにするオプションを使用して、Microsoft データにアクセスできるデバイスとユーザーを制御します。(条件付きアクセス)
 
@@ -103,7 +103,7 @@ Microsoft 365 Business Premium を使用すると、次のような **脅威か�
 
 - 簡素化されたコントロールを使用して、お客様の会社のすべての Windows 10 PC　のポリシーを管理し、BitLocker 暗号化を適用して、重要な Windows 更新プログラムを自動的にインストールします。 (Windows update ポリシーを適用)
 
-セキュリティ機能の完全な一覧については、[「Microsoft 365 Business Premium のセキュリティ機能」](security-features.md)を参照してください。 [Microsoft 365 Business Premiumをセットアップ](set-up.md)した後、[「驚異の保護を強化する」](increase-threat-protection.md)と[「コンプライアンス機能を設定」](set-up-compliance.md)を参照して、ガイド付きセットアップの一部として含まれていないセキュリティ機能の使用を開始します。 サイバー犯罪およびハッカーに対する保護を設定する方法の概要については、[Office 365 と Microsoft 365 Business Premium プランを保護するトップ 10 の方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)もお読みください。
+セキュリティ機能の完全な一覧については、[「Microsoft 365 Business Premium のセキュリティ機能」](security-features.md)を参照してください。 [Microsoft 365 Business Premiumをセットアップ](set-up.md)した後、[「驚異の保護を強化する」](increase-threat-protection.md)と[「コンプライアンス機能を設定」](set-up-compliance.md)を参照して、ガイド付きセットアップの一部として含まれていないセキュリティ機能の使用を開始します。 サイバー犯罪およびハッカーに対する保護を設定する方法の概要については、[Office 365 と Microsoft 365 Business Premium プランを保護するトップ 10 の方法](/office365/admin/security-and-compliance/secure-your-business-data)もお読みください。
 
 ## <a name="get-microsoft-365-business-premium"></a>Microsoft 365 Business Premiumを取得する
 

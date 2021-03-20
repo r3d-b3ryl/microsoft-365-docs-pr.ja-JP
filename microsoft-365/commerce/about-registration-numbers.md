@@ -18,13 +18,13 @@ description: Microsoft 製品またはサービスを購入する際の登録番
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: 342813fa103cb260c036de5dd2cdfd13bea12d33
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+- commerce
+ms.openlocfilehash: a9625b391260d27610bb304b0ae3788b541b7709
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717724"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912010"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>登録番号とレビュー中の通知について
 
@@ -36,13 +36,15 @@ ms.locfileid: "50717724"
 
 登録番号が必須の国の場合、テキスト ボックスの上のラベルは、必要な番号の種類を示します。
 
-<!-- For example, in the following screenshot, the label indicates that a CNPJ registration number is needed.
- add screenshot-->
+たとえば、次のスクリーンショットでは、ラベルは CNPJ 登録番号が必要な状態を示しています。
+
+:::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="C N P J 番号の登録番号フィールドのスクリーンショット。":::
 
 登録番号がオプションの国の場合は、会社の法的登録番号を指定できます。 このフィールドに個人 ID を入力しない。
 
-<!-- The following screenshot shows an example of when the registration number is optional.
-add screenshot -->
+次のスクリーンショットは、登録番号が省略可能な場合の例を示しています。
+
+:::image type="content" source="../media/macregnum-reg-screenshot_400.png" alt-text="オプションの登録番号フィールドのスクリーンショット。":::
 
 有効な登録番号をお持ちでない場合は、「国[](#registration-numbers-by-country)別登録番号」を参照してください。
 
@@ -52,13 +54,15 @@ add screenshot -->
 
 通常、レビュー プロセスの完了には約 1 日かかりますが、時間がかかる場合があります。
 
-<!-- The following screenshot shows the review notification displayed during checkout.
-add screenshot -->
+次のスクリーンショットは、チェックアウト時に表示されるレビュー通知を示しています。
+
+:::image type="content" source="../media/macregnum_statuscheckout_screenshot_400.png" alt-text="チェックアウト ページのアカウント レビュー通知のスクリーンショット。":::
 
 メール通知は、アカウントのすべてのグローバル管理者および課金管理者にも送信されます。 場合によっては、アカウントの [課金アカウント所有者] または [課金アカウント共同作成者] ロールを持つユーザーに通知が送信されます。 通知には、レビューが現在プロセス中であるというメッセージが表示されます。 確認メール通知は、レビュー プロセスが完了した後に送信されます。
 
-<!-- The following screenshot shows the notification displayed on the billing account details page.
-add screenshot -->
+次のスクリーンショットは、請求先アカウントの詳細ページに表示される通知を示しています。
+
+:::image type="content" source="../media/macregnum-statusbillacct-screenshot_700.png" alt-text="請求アカウント ページのレビュー中通知のスクリーンショット。":::
 
 ## <a name="registration-numbers-by-country"></a>国別登録番号
 

@@ -14,46 +14,46 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
-description: デバイスで使用するためにライセンスをグループに割り当てる方法について説明します。
+description: デバイスで使用するグループにライセンスを割り当てる方法について学習します。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-ms.openlocfilehash: 29bd56ccff01d8c21cc67d1188fa21e338fb4b7e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a316810e3e6ddb1373697dc56b2fccb5a32cf0b1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638185"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911484"
 ---
 # <a name="manage-licenses-for-devices"></a>デバイスのライセンスを管理する
 
-Microsoft 365 for enterprise (デバイス) または Microsoft 365 Apps for エデュケーション (デバイス) を使用している場合は、Azure AD グループを使用して、デバイスにライセンスを割り当てることができます。 デバイスにライセンスがある場合、そのデバイスを使用するすべてのユーザーは、エンタープライズ向けの Microsoft 365 Apps (以前の Office 365 ProPlus) を使用できます。 たとえば、組織内のユーザーによって使用される20個のラップトップおよびタブレットがあるとします。 各デバイスにライセンスを割り当てると、いずれかのデバイスにログインする各ユーザーは、独自のライセンスを必要とせずにエンタープライズ向けの Microsoft 365 アプリを使用します。
+Microsoft 365 Apps for enterprise (device) または Microsoft 365 Apps for Education (device) をお持ちのお客様は、Azure AD グループを使用してデバイスにライセンスを割り当てできます。 デバイスにライセンスがある場合、そのデバイスを使用するユーザーは、Microsoft 365 Apps for enterprise (以前は 365 ProPlus という名前Office使用できます。 たとえば、組織内のユーザーが使用する 20 台のノート PC とタブレットがあるとします。 各デバイスにライセンスを割り当てると、1 つのデバイスにログインする各ユーザーは、独自のライセンスを必要とせずに Microsoft 365 Apps for enterprise を使用します。
 
 > [!IMPORTANT]
-> Microsoft 365 用アプリのデバイスベースライセンスは、市販のお客様や教育機関のお客様のためのアドオンライセンスとしてのみ利用できます。 商用のお客様の場合、ライセンスは *Microsoft 365 enterprise 用アプリ (デバイス)* で、エンタープライズアグリーメント/エンタープライズアグリーメントのサブスクリプションを通じてのみ利用可能です。 教育機関のお客様の場合、ライセンスは *Microsoft 365 の教育機関向けアプリ (デバイス)* で、教育機関向けの登録 (EES) によってのみ利用できます。 詳細については、「教育の [利用可能性](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/)」のブログ投稿を参照してください。 市販の可用性については、Microsoft アカウント担当者にお問い合わせください。
+> Microsoft 365 Apps for enterprise のデバイス ベースのライセンスは、一部の商用ユーザーおよび一部の教育ユーザー向けアドオン ライセンスとしてのみ利用できます。 商用ユーザーの場合、ライセンスは *Microsoft 365 Apps for enterprise (device)* であり、サブスクリプションのマイクロソフトエンタープライズ契約/マイクロソフトエンタープライズ契約利用できます。 教育のお客様の場合、ライセンスは *Microsoft 365 Apps for Education (デバイス)* であり、Education ソリューション (EES) の登録でのみ利用できます。 詳細については、教育の可用性に関するブログ投稿 [を参照してください](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/)。 商用利用の場合は、Microsoft アカウント担当者にお問い合わせください。
 
-最初に、Azure Active Directory 管理センターでグループを作成し、そのグループにデバイスを割り当てます。 デバイスライセンスの詳細については、デバイスの要件、使用できるグループの種類、およびデバイスライセンスを使用するように Microsoft 365 Apps for enterprise を構成する方法について説明します。「 [microsoft 365 アプリ用のデバイスベースライセンス](https://go.microsoft.com/fwlink/p/?linkid=2094216)」を参照してください。
+まず、Azure Active Directory 管理センターでグループを作成し、そのグループにデバイスを割り当てる必要があります。 デバイスの要件、使用できるグループの種類、およびデバイス ライセンスを使用する Microsoft 365 Apps for enterprise を構成する方法など、デバイス ライセンスの詳細については [、「Microsoft 365 Apps for](/deployoffice/device-based-licensing)enterprise 用デバイス ベースのライセンス」を参照してください。
 
 > [!IMPORTANT]
 > この記事のタスクを完了するには、グローバル管理者である必要があります。
 
 ## <a name="assign-licenses-to-devices"></a>デバイスへのライセンスの割り当て
 
-グループにライセンスを割り当てるときは、グループ内のすべてのデバイスにライセンスを割り当てます。 1つのグループに割り当てることができるサブスクリプションは1つだけです。
+グループにライセンスを割り当てると、グループ内のすべてのデバイスにライセンスが割り当てされます。 割り当て可能なサブスクリプションは、1 つのグループに 1 つのみです。
 
-1. Microsoft 365 管理センターで、[**課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
-2. [ **ライセンス** ] ページで、[ **microsoft 365 apps for エデュケーション (デバイス)** ] または [ **microsoft 365 apps for enterprise (デバイス)**] を選択します。
-3. 次のページでサブスクリプションを選択し、[ **ライセンスの割り当て**] を選択します。
-4. [ **グループへのライセンスの割り当て** ] ウィンドウで、グループ名の入力を開始し、結果からそれを選択して一覧に追加します。
-5. [ **割り当て**] を選択し、[ **閉じる**] を選択します。
+1. Microsoft 365 管理センターで、[課金ライセンス]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">に移動</a>します。
+2. [ライセンス **] ページで****、[Microsoft 365 Apps for Education (デバイス)]** または **[Microsoft 365 Apps for enterprise (device) ] を選択します**。
+3. 次のページで、サブスクリプションを選択し、[ライセンスの割り当て **] を選択します**。
+4. [グループに **ライセンスを割り当** てる] ウィンドウで、グループ名の入力を開始し、結果から選択してリストに追加します。
+5. [割り **当て] を** 選択し、[閉じる] **を選択します**。
 
-## <a name="unassign-licenses-from-devices"></a>デバイスからライセンスを割り当て解除する
+## <a name="unassign-licenses-from-devices"></a>デバイスからのライセンスの割り当てを解除する
 
-グループからライセンスを割り当てを解除するときは、グループ内のすべてのデバイスからライセンスを削除します。 すべてのアプリとそれに関連付けられたデータは、読み取り専用になります。
+グループからライセンスの割り当てを解除すると、グループ内のすべてのデバイスからライセンスを削除します。 その後、すべてのアプリとその関連データが読み取り専用です。
 
-1. 管理センターで、[**課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
-2. [ **ライセンス** ] ページで、[ **microsoft 365 apps for エデュケーション (デバイス)** ] または [ **microsoft 365 apps for enterprise (デバイス)**] を選択します。
-3. 次のページで、サブスクリプションを選択し、[ **その他のアクション**] を選択して、[ **ライセンスの割り当て解除**] を選択します。
-4. [ **ライセンスの割り当ての解除** ] ダイアログボックスで、[ **割り当て**の解除] を選択します。
+1. 管理センターで、[課金ライセンス]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">に移動</a>します。
+2. [ライセンス **] ページで****、[Microsoft 365 Apps for Education (デバイス)]** または **[Microsoft 365 Apps for enterprise (device) ] を選択します**。
+3. 次のページで、サブスクリプションを選択し、[その他のアクション] **を選択し**、[ライセンスの割り当 **て解除] を選択します**。
+4. [ライセンスの **割り当て解除] ダイアログ** ボックスで、[割り当 **て解除] を選択します**。

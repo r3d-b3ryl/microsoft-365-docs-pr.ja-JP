@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: Microsoft 365 サブスクリプションのファイル ストレージを追加および削減する方法について説明します。 追加のファイル ストレージを使用すると、SharePoint Online と OneDrive にさらに多くのコンテンツを格納できます。
 ms.date: ''
-ms.openlocfilehash: 626cc81faea43ebdcf618a4f26c33069bae6a206
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b170924f40d517cb6bbdf8635ad3e163eadc8643
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405890"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911928"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>サブスクリプションの記憶域を追加する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -46,22 +46,22 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 ## <a name="before-you-begin"></a>はじめに
 
-この記事のタスクを実行するには、グローバル管理者または SharePoint 管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事のタスクを実行するには、グローバル管理者または SharePoint 管理者である必要があります。 詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="view-available-storage"></a>使用可能なストレージの表示
 
-1. SharePoint 管理センターで、[アクティブ な<a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank"></a>サイト] ページに移動し、組織の管理者権限を持つ[アカウントでサインイン](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)します。
+1. SharePoint 管理センターで、[アクティブ な<a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank"></a>サイト] ページに移動し、組織の管理者権限を持つ[アカウントでサインイン](/sharepoint/sharepoint-admin-role)します。
 
 2. ページの右上に、すべてのサイトで使用されている記憶域の容量とサブスクリプションの記憶域の合計が表示されます。 組織が 365 で複数地域を構成しているOfficeバーには、すべての地域の場所で使用される記憶域の量も表示されます。
 
-   ![[アクティブなサイト] ページの記憶域バー](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+   ![[アクティブなサイト] ページの記憶域バー](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > 記憶域の使用量には、過去 24 から 48 時間以内に行われた変更は含まれません。
 
 使用している記憶域の量を決定した後、サブスクリプションの記憶域を追加または削除できます。 記憶域の追加に必要なコストを確認するには、この記事の手順に従い、購入前に価格情報を確認してください。
   
-サイト コレクションの記憶域制限の設定の詳細については [、「Manage site collection storage limits」を参照してください](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits)。
+サイト コレクションの記憶域制限の設定の詳細については [、「Manage site collection storage limits」を参照してください](/sharepoint/manage-site-collection-storage-limits)。
   
 ## <a name="add-storage-to-your-subscription"></a>サブスクリプションにストレージを追加する
 
@@ -112,4 +112,4 @@ Office 365 Extra File Storage は、次のサブスクリプションでご利�
 ## <a name="related-content"></a>関連コンテンツ
 
 [サイトストレージの制限を管理](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) する (記事)\
-[OneDrive ユーザーの既定の記憶域を設定する](https://docs.microsoft.com/onedrive/set-default-storage-space)(記事)
+[OneDrive ユーザーの既定の記憶域を設定する](/onedrive/set-default-storage-space)(記事)

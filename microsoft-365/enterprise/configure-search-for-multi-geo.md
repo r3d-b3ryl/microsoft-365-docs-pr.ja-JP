@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 複数地域環境で検索を構成する方法について説明します。 複数地域環境では、OneDrive for Business などの一部のクライアントのみが結果を返すことができます。
-ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: 複数地域環境で検索を構成する方法について学習します。 OneDrive for Business などの一部のクライアントだけが、複数地域環境で結果を返す可能性があります。
+ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547154"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911164"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Office 365 Multi-Geo ために検索を構成する
 
@@ -84,12 +84,12 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Multi-Geo 検索では、数値の絞り込み条件の動的バケットはサポートされません。</td>
-<td align="left">数値の絞り込み条件には <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a> を使用します。</td>
+<td align="left">数値絞 <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">り込み条件には"Discretize"</a> パラメーターを使用します。</td>
 </tr>
 <tr class="even">
 <td align="left">ドキュメント ID</td>
 <td align="left">ドキュメント ID に依存する検索型アプリケーションを開発する場合、Multi-Geo 環境のドキュメント ID は地域の場所ごとに一意ですが、複数の地域の場所にわたって一意でない点に注意してください。</td>
-<td align="left">地域の場所を示す列が追加されました。 この列を使用して、一意性を確保してください。 この列には、"GeoLocationSource" という名前が付けられます。</td>
+<td align="left">地域の場所を示す列が追加されました。 この列を使用して、一意性を確保してください。 この列の名前は "GeoLocationSource" です。</td>
 </tr>
 <tr class="odd">
 <td align="left">結果の数</td>
@@ -98,7 +98,7 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 </tr>
 <tr class="even">
 <td align="left">ハイブリッド検索</td>
-<td align="left"><a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">クラウド ハイブリッド検索</a>を使用するハイブリッド SharePoint 環境では、オンプレミス コンテンツが中央の場所の Office 365 インデックスに追加されます。</td>
+<td align="left"><a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">クラウド ハイブリッド検索</a>を使用するハイブリッド SharePoint 環境では、オンプレミス コンテンツが中央の場所の Office 365 インデックスに追加されます。</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -131,7 +131,7 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 
 すべての検索クライアントは、既存の SharePoint 検索 REST API を使用して検索インデックスとやり取りします。
 
-![SharePoint 検索 REST Api が検索インデックスとどのように連携するかを示す図](../media/configure-search-for-multi-geo-image1-1.png)
+![SharePoint Search REST API が検索インデックスとやり取りする方法を示す図](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. 検索クライアントは、クエリ プロパティ EnableMultiGeoSearch = true を設定して、検索 REST エンドポイントを呼び出します。
 2. クエリは、テナント内のすべての地域の場所に送信されます。
@@ -168,11 +168,11 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>カスタムの検索アプリケーションにすべてまたは一部の地域の場所からの結果を表示する
 
-カスタムの検索アプリケーションは、SharePoint 検索 REST API への要求にクエリ パラメーターを指定することで、すべてまたは一部の地域の場所からの結果を取得するようになります。このクエリ パラメーターに応じて、すべてまたは一部の地域の場所にクエリがファンアウトされます。たとえば、一部の地域の場所に対して関連情報を取得するクエリを実行する必要がある場合は、対象の地域にのみファンアウトするように制御できます。この要求が成功すると、SharePoint 検索 REST API は応答データを返します。
+カスタム検索アプリケーションは、SharePoint Search REST API への要求でクエリ パラメーターを指定することで、すべての場所または一部の地域の場所から結果を取得します。 クエリ パラメーターに応じて、クエリは、すべての地域の場所、または一部の地域の場所に対してファンアウトされます。 たとえば、関連する情報を見つけるために地域の場所のサブセットのみを照会する必要がある場合は、ファンをこれらの場所にのみ制御できます。 要求が成功すると、SharePoint Search REST API は応答データを返します。
 
 ### <a name="requirement"></a>要件
 
-地域的位置ごとに、組織内のすべてのユーザーにルート Web サイトの**読み取り**アクセス許可レベルが付与されていることを確認する必要があります (たとえば、contoso**APAC**.sharepoint.com/ および contoso**EU**.sharepoint.com/)。[アクセス許可について](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
+地域的位置ごとに、組織内のすべてのユーザーにルート Web サイトの **読み取り** アクセス許可レベルが付与されていることを確認する必要があります (たとえば、contoso **APAC**.sharepoint.com/ および contoso **EU**.sharepoint.com/)。[アクセス許可について](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
 
 ### <a name="query-parameters"></a>クエリ パラメーター
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - **EnableMultiGeoSearch** が **true** に設定さ
 </tbody>
 </table>
 
-DataLocation または EndPoint を省略した場合や DataLocation が重複している場合、要求は失敗します。[テナントの地域の場所のエンドポイントに関する情報は、Microsoft Graph を使用することで取得できます](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery)。
+DataLocation または EndPoint を省略した場合や DataLocation が重複している場合、要求は失敗します。[テナントの地域の場所のエンドポイントに関する情報は、Microsoft Graph を使用することで取得できます](/sharepoint/dev/solution-guidance/multigeo-discovery)。
 
 ### <a name="response-data"></a>応答データ
 
@@ -251,18 +251,18 @@ GET 要求の場合は、URL でクエリ パラメーターを指定します�
 </tbody>
 </table>
 
-#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>**すべて**の地域の場所にファンアウトされる GET 要求の例
+#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>**すべて** の地域の場所にファンアウトされる GET 要求の例
 
-https:// \<tenant\> / \_ api/search/query? querytext = ' sharepoint ' &Properties = ' EnableMultiGeoSearch: true ' &ClientType = ' my \_ client \_ id '
+https:// \<tenant\> / \_ api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my client \_ \_ id'
 
-#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>**一部**の地域の場所にファンアウトする GET 要求の例
+#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>**一部** の地域の場所にファンアウトする GET 要求の例
 
-https:// \<tenant\> / \_ api/search/query? querytext = ' site ' &ClientType = ' my_client_id ' &Properties = ' EnableMultiGeoSearch: true, multigeosearchconfiguration: [{DataLocation \\ : "名" \\ , Endpoint: "https:": "contosoNAM.sharepoint.com" \\ \\ \\ \\ } \\ , {B81EAB55-3140-4312-B0F4-9459D1B4FFEE \\ : "CAN" \\ , エンドポイント \\ : "https: \\ /DataLocation"}] '
+https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType=''my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM" \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com" \\ ,SourceId \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ \\ ,{DataLocation :"CAN" ,Endpoint :"https \\ \\ \\ ://contosoCAN.sharepoint-df.com"}'
 
 > [!NOTE]
 > MultiGeoSearchConfiguration プロパティの地域の場所の一覧内のコンマとコロンの前に **バックスラッシュ** 記号が先行します。 これは、GET 要求では複数のプロパティの区切りにはコロンが、複数のプロパティの引数の区切りにはコンマが使用されるためです。 エスケープ文字としてバックスラッシュ記号を使わない場合、MultiGeoSearchConfiguration プロパティは正確に解釈されません。
 
-#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>**すべて**の地域の場所にファンアウトされる POST 要求の例
+#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>**すべて** の地域の場所にファンアウトされる POST 要求の例
 
 ```text
     {
@@ -287,7 +287,7 @@ https:// \<tenant\> / \_ api/search/query? querytext = ' site ' &ClientType = ' 
     }
 ```
 
-#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>**一部**の地域の場所にファンアウトされる POST 要求の例
+#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>**一部** の地域の場所にファンアウトされる POST 要求の例
 
 ```text
     {
@@ -318,7 +318,7 @@ https:// \<tenant\> / \_ api/search/query? querytext = ' site ' &ClientType = ' 
 
 ### <a name="query-using-csom"></a>CSOM を使用したクエリ
 
-次に、**すべて**の地域の場所にファアウトされる CSOM クエリの例を示します。
+次に、**すべて** の地域の場所にファアウトされる CSOM クエリの例を示します。
 
 ```text
 var keywordQuery = new KeywordQuery(ctx);

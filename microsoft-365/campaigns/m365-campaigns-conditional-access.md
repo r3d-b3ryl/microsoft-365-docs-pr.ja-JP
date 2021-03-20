@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: MFA を要求し、ビジネス向け Microsoft 365 の条件付きアクセス ポリシーを設定する方法について説明します。
-ms.openlocfilehash: e16b7f4ff7d215ee749435806be214a807cc60a4
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453671"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912188"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>多要素認証を要求し、条件付きアクセス ポリシーを設定する
 
@@ -48,7 +48,7 @@ ms.locfileid: "50453671"
 
 これらのベースライン ポリシーはすべて有効にすることをお勧めします。 これらのポリシーが有効になると、管理者とユーザーは、Azure 認証および多要素認証への登録を求ADされます。
 
-これらのポリシーの詳細については、「ベースライン [ポリシーとは」を参照してください](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)。
+これらのポリシーの詳細については、「ベースライン [ポリシーとは」を参照してください](/azure/active-directory/conditional-access/concept-baseline-protection)。
 
 ## <a name="require-mfa"></a>MFA を要求
 
@@ -73,12 +73,12 @@ ms.locfileid: "50453671"
 1. Azure portal に [移動し、[Azure](https://portal.azure.com) **Active Directory セキュリティ** 条件付きアクセス] に移動して \>  \> 新しいポリシー **を作成します**。
 
 各ポリシーについては、次の具体的な手順を参照してください。 <br>
-    - [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [ユーザーに MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [従来の認証をブロックする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [サービス管理に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    - [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [ユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
+    - [サービス管理に MFA を要求する](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 > [!NOTE]
 > プレビュー ポリシーは存在しなくなったので、ユーザーは独自のポリシーを作成する必要があります。
 
-承認されたクライアント アプリの要求など、追加のポリシーを設定できます。 詳細については、「条件付きアクセス」 [のドキュメントを参照してください](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
+承認されたクライアント アプリの要求など、追加のポリシーを設定できます。 詳細については、「条件付きアクセス」 [のドキュメントを参照してください](/azure/active-directory/conditional-access/)。

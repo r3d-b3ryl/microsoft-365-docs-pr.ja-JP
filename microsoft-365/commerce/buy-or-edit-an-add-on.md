@@ -19,19 +19,19 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - Commerce
-ms.openlocfilehash: 22868021fec978f8f55c47adca82438f1ae51029
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: ea9cdb6edf3aaac1575b1d2b14790bd28876ee26
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405866"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911647"
 ---
 # <a name="buy-or-manage-add-ons"></a>アドオンを購入するか、管理します
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -44,20 +44,20 @@ ms.locfileid: "50405866"
 
 ## <a name="before-you-begin"></a>はじめに
 
-この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。 詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="buy-an-add-on"></a>アドオンを購入する
 
 次の手順を使用して、アドオンを検索して購入します。 リストには、使用可能なアドオンだけが含まれます。 このリストは、現在アクティブなサブスクリプションと、既に持っているその他の既存のアドオンに基づいて作成されます。 一覧にアドオンが含されていない場合は、購入できません。
 
-Skype for Business アドオンの詳細については、「[Skype for Business と Microsoft Teams のアドオン ライセンス](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)」を参照してください。
+Skype for Business アドオンの詳細については、「[Skype for Business と Microsoft Teams のアドオン ライセンス](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)」を参照してください。
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスを購入する</a>] ページに移動します。
 2. [サービスの購入]**ページ** の下部にある[アドオン] セクションで、購入するアドオンを見つけて、[詳細] を選択 **します**。
 3. [製品の詳細] ページで、[次へ] を **選択します**。
-4. 必要に応じて、その他の注文情報を入力します。 この情報には、アドオンのサブスクリプションの選択が含まれる場合があります。 完了したら、[今すぐチェックアウト] **を選択します**。
-5. 必要に応じて、注文と価格情報を確認し、[次へ] を **選択します**。
-6. 支払い方法を選択するか、新しい支払い方法を追加してから、[**管理** ホームに移動する]  >  **を選択します**。
+4. 必要に応じて、その他の注文情報を入力します。 この情報には、アドオンのサブスクリプションの選択が含まれる場合があります。 完了したら、**[今すぐ確認する]** を選択します。
+5. 必要に応じて、注文と価格の情報を確認し、**[次へ]** を選択します。
+6. 支払い方法を選択するか、新しい支払い方法を追加し、**[注文]**  >  **[管理ホームに移動する]** を選択します。
 
 ## <a name="manage-an-add-on"></a>アドオンの管理
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でのドキュメント理解の概要を説明します。
-ms.openlocfilehash: d2bf581468eeee008d09a242876bed5ad07ae01f
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: e3b239260953837f70663bb6f7e2dba1676c49eb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242412"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911200"
 ---
 # <a name="document-understanding-overview"></a>ドキュメント理解の概要
 
@@ -31,7 +31,7 @@ ms.locfileid: "50242412"
 ドキュメント理解では、人工知能 (AI) モデルを使用して、ファイルの分類と情報の抽出を自動化します。 手紙や契約書などの非構造化ドキュメントで最適に機能します。 これらのドキュメントには、フレーズやパターンに基づいて識別できるテキストが含まれている必要があります。 識別されたテキストは、ファイルのタイプ (分類) および抽出するもの (抽出プログラム) の両方を指定します。
 
 > [!NOTE]
-> ドキュメント理解シナリオの例の詳細については、「[SharePoint Syntex の導入: 概要](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#document-understanding-scenario-example)」を参照してください。
+> ドキュメント理解シナリオの例の詳細については、「[SharePoint Syntex の導入: 概要](./adoption-getstarted.md#document-understanding-scenario-example)」を参照してください。
 
 ドキュメント理解モデルは、*コンテンツ センター* と呼ばれる一種の SharePoint サイトで作成および管理されます。 SharePoint ドキュメント ライブラリに適用した場合、モデルはコンテンツタイプに関連付けられ、抽出される情報を格納するための列が含まれます。 作成したコンテンツタイプは、SharePoint コンテンツタイプ ギャラリーに保存されます。 既存のコンテンツ タイプを使用してスキーマを使用することもできます。
 

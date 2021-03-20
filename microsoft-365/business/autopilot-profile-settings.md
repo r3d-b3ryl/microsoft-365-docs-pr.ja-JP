@@ -29,27 +29,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: 自動操縦プロファイルは、ユーザーデバイスへの Windows のインストール方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなどの、既定の設定とオプションの設定が含まれています。
-ms.openlocfilehash: 100de5e9548f901008d3ae154ac5a237ef265ffb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: AutoPilot プロファイルは、Windows がユーザー デバイスにインストールされる方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなど、既定とオプションの設定が含まれる。
+ms.openlocfilehash: be10e0e1c8c96ce05aab8526d2010313662ed5f2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401036"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913380"
 ---
 # <a name="about-autopilot-profile-settings"></a>AutoPilot プロファイルの設定について
 
-## <a name="autopilot-profile-settings"></a>自動操縦プロファイルの設定
+## <a name="autopilot-profile-settings"></a>AutoPilot プロファイルの設定
 
-自動操縦プロファイルを使用して、ユーザーデバイスへの Windows のインストール方法を制御できます。 プロファイルには、次の設定が含まれています。
+AutoPilot プロファイルを使用して、ユーザー デバイスへの Windows のインストール方法を制御できます。 プロファイルには、次の設定が含まれています。
   
- **自動操縦既定の機能 (必須) は、自動的に設定されます。**
+ **自動で設定される AutoPilot の既定の機能 (必須)。**
   
 |**設定**|**説明**|
 |:-----|:-----|
-|Cortana、OneDrive、OEM 登録をスキップする  <br/> |Cortana や個人用 OneDrive のようなコンシューマーアプリのインストールをスキップします。 デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、これらを後でインストールすることができます。 デバイスは Microsoft 365 Business Premium で管理されるため、元の製造元の登録はスキップされます。  <br/> |
-|会社のブランドが表示されたサインイン画面  <br/> |会社で[Microsoft 365 サインインページに会社のブランドを追加](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page)すると、デバイスのユーザーはサインインしたときにそのような操作を受けることができます。  <br/> |
-|構成済み AAD アカウントを使用した MDM 自動登録  <br/> |ユーザー id は Azure Active Directory によって管理され、ユーザーは Microsoft 365 Business Premium 資格情報を使用して Windows と Microsoft 365 にサインインします。  <br/> |
+|Cortana、OneDrive、OEM 登録をスキップする  <br/> |Cortana や個人用 OneDrive のようなコンシューマー アプリのインストールをスキップします。 デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、後でこれらをインストールできます。 デバイスは Microsoft 365 Business Premium によって管理されるので、元の製造元の登録はスキップされます。  <br/> |
+|会社のブランドが表示されたサインイン画面  <br/> |会社に [会社のブランドを [Microsoft 365](../admin/setup/customize-sign-in-page.md)サインインに追加する] ページがある場合、デバイス ユーザーはサインイン時にそのエクスペリエンスを取得します。  <br/> |
+|構成済み AAD アカウントを使用した MDM 自動登録  <br/> |ユーザー ID は Azure Active Directory によって管理され、ユーザーは Microsoft 365 Business Premium 資格情報を使用して Windows と Microsoft 365 にサインインします。  <br/> |
    
  **オプションの設定:**
   
@@ -57,4 +57,3 @@ ms.locfileid: "44401036"
 |:-----|:-----|
 |プライバシーの設定のスキップ (既定ではオフ)  <br/> |このオプションが [ **オン**] に設定されている場合は、デバイス ユーザーが最初にサインインしたときに、デバイスと Windows の使用許諾契約書が表示されません。  <br/> |
 |ユーザーがローカル管理者になることを許可しない  <br/> |このオプションが [ **オン**] に設定されている場合、デバイス ユーザーは Cortana などの個人用アプリをインストールできません。<br/> |
-   

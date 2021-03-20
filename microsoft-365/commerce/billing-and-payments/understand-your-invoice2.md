@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Microsoft 365 for Business の課金内容または請求書の請求内容および課金情報についての詳細、および発注書番号を変更する方法について説明します。
-ms.openlocfilehash: 3d71bab82be3fd9e4c633885dccaf357ccabb551
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: HT
+ms.openlocfilehash: 99b52928d458e7883919ee46aaafaa7a66278447
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638401"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911688"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
@@ -141,4 +141,4 @@ ms.locfileid: "48638401"
 
 [Microsoft 365 for business サブスクリプションを支払う](pay-for-your-subscription.md)
 
-[Minecraft: Education Edition の支払いオプション](https://go.microsoft.com/fwlink/p/?linkid=838761)
+[Minecraft: Education Edition の支払いオプション](/education/windows/school-get-minecraft)

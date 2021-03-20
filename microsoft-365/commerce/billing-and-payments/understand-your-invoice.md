@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
-ms.translationtype: HT
+ms.openlocfilehash: 2b11cca810b17ae2dacc3ddab723725608ffceb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126575"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911700"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -60,13 +60,13 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 | --- | --- |
 | 料金|この請求期間中に購入された製品の総数、およびそれらに関連する料金と税金。 購入は、請求書の簡潔なビューを提供するために集約されます。 |
 | クレジット |返品から受け取ったクレジット |
-| 適用される Azure クレジット |Azure に自動的に適用される Azure クレジットは、請求期間ごとに課金されます。 Azure クレジットがない場合、このフィールドは非表示になります。 Azure クレジットの詳細については、「[Microsoft 顧客契約の Azure クレジット残高の追跡](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance)」を参照してください。 |
+| 適用される Azure クレジット |Azure に自動的に適用される Azure クレジットは、請求期間ごとに課金されます。 Azure クレジットがない場合、このフィールドは非表示になります。 Azure クレジットの詳細については、「[Microsoft 顧客契約の Azure クレジット残高の追跡](/azure/billing/billing-mca-check-azure-credits-balance)」を参照してください。 |
 | 小計 |税引前の金額 |
 | 税 |課金プロファイルの国に応じて、支払う税金の種類と金額。 税金を支払う必要がない場合、請求書には税金は表示されません。 |
 
 ### <a name="understand-your-charges"></a>料金を理解する
 
-料金ページには、製品ごとのコストの内訳が表示されます。 Azure のお客様の場合、料金は請求書セクションごとに整理される場合があります。 Azure 製品での請求書セクションの使用方法の詳細については、「[Microsoft 顧客契約の課金アカウントの使用を開始する](https://docs.microsoft.com/azure/billing/billing-mca-overview)」の「[請求書セクション](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)」を参照してください。 各製品の注文内で、コストはサービス ファミリごとに分類されます。
+料金ページには、製品ごとのコストの内訳が表示されます。 Azure のお客様の場合、料金は請求書セクションごとに整理される場合があります。 Azure 製品での請求書セクションの使用方法の詳細については、「[Microsoft 顧客契約の課金アカウントの使用を開始する](/azure/billing/billing-mca-overview)」の「[請求書セクション](/azure/billing/billing-mca-overview#invoice-sections)」を参照してください。 各製品の注文内で、コストはサービス ファミリごとに分類されます。
 
 | 用語 |説明 |
 | --- | --- |
@@ -86,7 +86,7 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 
 > 合計 = 料金/クレジット - Azure クレジット + 税
 
-請求書に詳細が必要な Azure の料金がある場合は、「[Microsoft 顧客契約の請求書を確認する](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)」を参照してください。
+請求書に詳細が必要な Azure の料金がある場合は、「[Microsoft 顧客契約の請求書を確認する](/azure/cost-management-billing/understand/review-customer-agreement-bill)」を参照してください。
 
 ## <a name="understand-the-last-invoice-page"></a>前回の請求書ページを理解する
 

@@ -1,5 +1,5 @@
 ---
-title: サービス単位の基本
+title: Allotment の基本
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,40 +13,40 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
-description: 新しい追加機能について説明します。
-ms.openlocfilehash: 2ab8efd637bb278faf6065559cab26cb7016975b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 新しいアロットメント機能について学習します。
+ms.openlocfilehash: 62df346def3fd2577568916d2d668ca50542bdbd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638233"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911616"
 ---
-# <a name="allotment-basics"></a>サービス単位の基本
+# <a name="allotment-basics"></a>Allotment の基本
 
-ライセンス認証を使用すると、ライセンスの制限を設定し、選択した製品とライセンスの制限のみにライセンスの割り当ての管理を委任できます。
+ライセンス割り当てでは、ライセンス制限を設定し、ライセンス割り当ての管理を選択した製品とライセンス制限にのみ委任できます。
 
-サービス単位グループベースのライセンスを使用して、ユーザーにライセンスを割り当てます。 ライセンス制限により、グループ内のユーザーに割り当てられているライセンスの数を制御することができます。 グループ内のユーザー数が増加しても、割り当てられたライセンスの制限を超えないようにすることができます。
+Allotments は、グループ ベースのライセンスを使用して、ユーザーにライセンスを割り当てします。 ライセンス制限により、グループ内のユーザーに割り当てられるライセンスの数を制御できます。 したがって、グループ内のユーザー数が増えても、割り当てに設定したライセンス制限内にとどまる必要があります。
 
-また、会社間の管理を委任することもできます。 委任されたサービス単位所有者は管理センターにアクセスできますが、自分が所有しているライセンス数でのみライセンスを表示および管理できます。 これにより、組織内でのライセンス管理をより細かく委任できます。
+また、アロットメントの管理を委任することもできます。 委任された割り当ての所有者は管理センターにアクセスできますが、所有する割り当て内のライセンスのみを表示および管理できます。 これにより、組織内のライセンス管理のより詳細な委任が提供されます。
 
 ## <a name="prerequisites"></a>前提条件
 
-[グループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)のライセンス要件を満たす必要があります。
+グループ ベースのライセンスのライセンス要件を満 [たす必要があります](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)。
 
-ユーザーが利用できる製品であれば、次のいずれかを使用できます。
+ユーザーが使用できる任意の製品で割り当てを使用できます。
 
-- Office スイートとスタンドアロン製品
-- エンタープライズおよび Mobility 製品
+- Officeスイートとスタンドアロン製品
+- エンタープライズおよびモビリティ製品
 - Dynamics 365 製品
 
-次の製品は、リソースの利用可能性として使用できません。
+次の製品は、アロットメントでは使用できません。
 
-- Microsoft ストアアプリ
-- ライセンスがない場合に、ユーザーに直接割り当てられている永続的なソフトウェア、またはソフトウェア。
+- Microsoft Store アプリ
+- 永続的なソフトウェア、またはライセンスがない場合にユーザーに直接割り当てられるソフトウェア。
 - Azure リソース
 
-サービス単位の使用を開始するには、グローバルまたはライセンス管理者である必要があります。
+割り当ての開始には、グローバル管理者またはライセンス管理者である必要があります。
 
 ## <a name="getting-started"></a>はじめに
 
-この機能は、個人用のプレビューでは少数のお客様のみが利用できます。 参加に興味がある場合は、次のフォームに記入 [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) してください。
+このアロットメント機能は、プライベート プレビューで使用できるユーザー数はわずかです。 参加する場合は、次のフォームに入力します [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) 。

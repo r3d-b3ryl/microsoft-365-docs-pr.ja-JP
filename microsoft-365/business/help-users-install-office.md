@@ -1,5 +1,5 @@
 ---
-title: ユーザーが Windows 10 デバイスに Office をインストールするのを支援する
+title: ユーザーが Windows 10 デバイスOfficeインストールするのに役立ちます
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -26,42 +26,42 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: ユーザーが Windows 10 デバイスに Office アプリをインストールして、Microsoft 365 管理センターから Windows 10 Pc に Office を簡単にインストールできるようにします。
-ms.openlocfilehash: 680c1c4e43a037c6afd109220090f387b207f8b1
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+description: ユーザーが Windows 10 デバイスOfficeアプリをインストールし、Microsoft 365 管理センターから Windows 10 PC に Office を簡単にインストールするのに役立ちます。
+ms.openlocfilehash: 5337c8ef008c1af79490eb6b6705d450055d24fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601985"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913348"
 ---
-# <a name="help-your-users-install-office-on-windows-10-devices"></a>ユーザーが Windows 10 デバイスに Office をインストールするのを支援する
+# <a name="help-your-users-install-office-on-windows-10-devices"></a>ユーザーが Windows 10 デバイスOfficeインストールするのに役立ちます
 
-[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
-Microsoft 365 管理センターから Windows 10 Pc に Office をすばやく簡単にインストールすることができます。
+Microsoft 365 管理センター Office Windows 10 PC にすばやく簡単にインストールできます。
   
 以前にインストールした Office アプリでこれがどのように機能するかを理解するには、開始する前に、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」をお読みください。
 
-Office アプリのインストールに関する短いビデオをご覧ください。<br><br>
+アプリのインストールに関する短いOffice見る。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="manage-office-deployments"></a>Office 展開を管理する
 
-1. の管理センターに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> し、グローバル管理者の資格情報でサインインします。 
+1. で管理センターに移動し <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 、グローバル管理者資格情報でサインインします。 
 
-2. 左側のナビゲーションウィンドウの [**セットアップ**] に移動し、[**セットアップ**] ページで [**アプリと更新**] までスクロールします。
+2. 左側のナビゲーション **ウィンドウで** [セットアップ] に移動し、[セットアップ] ページ **で** [アプリと更新プログラム] **までスクロールします**。
     > [!NOTE]
-    > すべてのユーザーが Office アプリをインストールしている場合は、このカードが表示されないことがあります。
+    > すべてのユーザーがアプリにインストールされている場合は、このカードOfficeがあります。
   
-3. **ヘルプユーザーが Office アプリ**カードをインストールするには、[**表示**] を選択してから、**作業を開始**します。
+3. [ユーザー **がアプリ カードをインストールOfficeヘルプ**] で、[表示] を選択し、[開始]**を選択します**。
     
-4. [**メールユーザーをダウンロードする] リンクをダウンロードするためのリンク**をクリックして、電子メールを送信するユーザーを選択してから、[**選択したユーザーにメールを送信**します。
+4. [メール **ユーザーに電子メールを** 送信する] Office] パネルで、電子メールを送信するユーザーを選択し、[選択したユーザーにメールを送信する] **を選択します**。
 
-   ![[Office ダウンロードを使用して電子メールを送信するユーザー] リンクを選択します。](../media/sendemailtousers.png)
+   ![ダウンロード リンクを使用してメールを送信Officeを選択します。](../media/sendemailtousers.png)
 
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の設定と使用の詳細については、「」を参照してください。
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップと使用の詳細
 
 [一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

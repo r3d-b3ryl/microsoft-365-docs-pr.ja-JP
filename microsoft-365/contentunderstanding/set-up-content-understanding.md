@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Project Cortex のコンテンツ理解をセットアップする
-ms.openlocfilehash: a275b2ec14403e16651acb293f8598b453fd3739
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: db6340e8bf4dc23163b67e749f60567f7841a943
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515018"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911188"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -123,6 +123,6 @@ Ai builder の容量は、[ [AI ビルダー電卓](https://powerapps.microsoft.
 
 ## <a name="see-also"></a>関連項目
 
-[フォーム処理モデルの概要](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
+[フォーム処理モデルの概要](/ai-builder/form-processing-model-overview)
 
 [ステップバイステップ: ドキュメント理解モデルを作成する方法について理解する (ビデオ)](https://www.youtube.com/watch?v=DymSHObD-bg)

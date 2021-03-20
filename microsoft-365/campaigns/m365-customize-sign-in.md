@@ -1,5 +1,5 @@
 ---
-title: プライバシーと同意に関する通知を使用してサインイン ページをカスタマイズする
+title: プライバシーと同意通知を使用してサインイン ページをカスタマイズする
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,23 +21,23 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Microsoft 365 のプライバシーと同意に関する通知を使用して、サインイン ページをカスタマイズします。
-ms.openlocfilehash: 894686ac785e979b8491cd5943c9a071d3be9ee9
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+description: Microsoft 365 のプライバシーと同意通知を使用してサインイン ページをカスタマイズします。
+ms.openlocfilehash: cb6e7f91c31e1a8bbacb9904a5aad7a76af8ffcb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044556"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912120"
 ---
-# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意に関する通知を使用してサインイン ページをカスタマイズする
+# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意通知を使用してサインイン ページをカスタマイズする
 
-ビジネスやキャンペーンを利用すると、サインイン ページにプライバシーと同意通知を追加することで、法執行機関がオンラインの犯罪に対する法的請求を簡単に行う可能性があります。
+ビジネスやキャンペーンを使用すると、サインイン ページにプライバシーと同意通知を追加することで、法執行機関がオンライン犯罪者に対して法的告発を容易にすることができます。
 
-サインイン ページは、ブランド化に合わせてカスタマイズできます。 また、ユーザーがサインインしたり、Microsoft 365 リソースにアクセスするための法的要件や制限を指摘したりするのに役立つテキストを追加できます。
+ブランド化を使用してサインイン ページをカスタマイズできます。 ユーザーがサインインするのに役立つテキストを追加したり、Microsoft 365 リソースにアクセスするための法的要件や制限を指摘したりできます。
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>サインイン ページのテキストをカスタマイズする
 
-サインイン ページでカスタマイズ可能な要素を更新するには、グローバル管理者である必要があります。具体的な手順については、会社のブランド [化に関する記事の追加を参照](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) してください。
+サインイン ページでカスタマイズ可能な要素を更新するには、グローバル管理者である必要があります。具体的な手順については、「Add [company branding article」を参照](/azure/active-directory/fundamentals/customize-branding) してください。
 
 更新できる要素は次のとおりです。
 
@@ -46,4 +46,4 @@ ms.locfileid: "50044556"
 - バナー ロゴ
 - ユーザー名のヒント
 
-プライバシーおよび同意に関する通知の例については、「コンピューターの検索と押収と犯罪調査での電子証拠の取得」の付録 A を [参照してください](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)。
+プライバシーと同意に関する通知の例については、「コンピューターの検索と押収」および「犯罪捜査における電子証拠の取得」の付録 A [を参照してください](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)。

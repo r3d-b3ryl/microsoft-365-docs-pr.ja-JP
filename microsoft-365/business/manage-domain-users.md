@@ -22,48 +22,48 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ドメインで制御されるユーザーを Microsoft 365 for business と同期します。
-ms.openlocfilehash: b40a995a1723808d2fd171c534e9131a891840ba
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: ドメイン制御ユーザーと Microsoft 365 for business を同期します。
+ms.openlocfilehash: 1c939dec7229f02991b15f08c48f184efecaddb0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841361"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913256"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>ドメイン ユーザーを Microsoft 365 に同期する
 
 ## <a name="1-prepare-for-directory-synchronization"></a>1. ディレクトリ同期の準備 
 
-ローカル Active Directory ドメインからユーザーとコンピューターを同期する前に、「 [Microsoft 365 へのディレクトリ同期の準備](https://docs.microsoft.com/microsoft-365/enterprise/prepare-for-directory-synchronization)」を参照してください。 特に次のようになります。
+ローカルの Active Directory ドメインからユーザーとコンピューターを同期する前に、「ディレクトリ同期の準備 [を Microsoft 365](../enterprise/prepare-for-directory-synchronization.md)に準備する」を参照してください。 特に、
 
-   - 次の属性について、ディレクトリに重複が存在しないことを確認してください。 **mail** 、 **ProxyAddresses** 、および **userPrincipalName** 。 これらの値は一意である必要があり、重複して削除する必要があります。
+   - **mail、proxyAddresses、userPrincipalName** という属性の重複がディレクトリに存在しなかから **なか確認してください**。 これらの値は一意である必要があります。重複は削除する必要があります。
    
-   - 各ローカルユーザーアカウントの **userPrincipalName** (UPN) 属性を、ライセンスされた Microsoft 365 ユーザーに対応するプライマリ電子メールアドレスと一致するように構成することをお勧めします。 例: mary.shelley@contoso.com ではなく *mary@contoso* 、 *mary.shelley@contoso.com*
+   - ライセンスを受け取った Microsoft 365 ユーザーに対応するプライマリ メール アドレスと一致するローカル ユーザー アカウントごとに **userPrincipalName** (UPN) 属性を構成することをお勧めします。 たとえば、mary.shelley@contoso.com.local ではなくmary@contoso *を指定します。* 
    
-   - Active Directory ドメインが、 *.com* または *.org* などのインターネットでルーティング可能なサフィックスの代わりに、 *ローカル* ユーザーアカウントの UPN サフィックスではなく、ルーティング可能 *ではない* サフィックスで終わっている場合は、「 [ディレクトリ同期のために非ルーティングドメインを準備する](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)」で説明されているように、まずローカルユーザーアカウントの UPN サフィックスを調整します。 
+   - Active Directory ドメインが *、.com* や *.org* などのインターネットで出力可能なサフィックスの代わりに *、.local* や *.lan* などの出力不可のサフィックスで終わる場合は、「ディレクトリ同期用にラウ [](../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md)ト可能でないドメインを準備する」の説明に従って、最初にローカル ユーザー アカウントの UPN サフィックスを調整します。 
 
-手順 4 (4) の **実行 IdFix** を使用して、オンプレミスの Active Directory がディレクトリ同期の準備が整っていることを確認することもできます。
+以下 **の手順** 4 (4) で IdFix を実行すると、オンプレミスの Active Directory がディレクトリ同期の準備ができていることを確認します。
 
-## <a name="2-install-and-configure-azure-ad-connect"></a>2. Azure AD Connect をインストールして構成します。
+## <a name="2-install-and-configure-azure-ad-connect"></a>2. Azure AD Connect のインストールと構成
 
-ユーザー、グループ、および連絡先をローカルの Active directory から Azure Active Directory に同期するには、Azure Active Directory Connect をインストールし、ディレクトリ同期をセットアップします。 
+ローカルの Active Directory から Azure Active Directory にユーザー、グループ、連絡先を同期するには、Azure Active Directory Connect をインストールし、ディレクトリ同期を設定します。 
 
- 1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)で、左側のナビゲーションの [ **設定** ] を選択します。
+ 1. 管理センター [で、左側](https://go.microsoft.com/fwlink/p/?linkid=2024339)の **ナビゲーションで [セットアップ** ] を選択します。
 
- 2. [ **サインインとセキュリティ** ] で、[ **組織のディレクトリからユーザーを同期する] の** 下にある [ **表示** ] を選択します。
+ 2. [ **サインインとセキュリティ] で、[** 組織 **のディレクトリ**  からユーザーを同期する] の下の [表示 **] を選択します**。
 
- 3. [ **組織のディレクトリからユーザーを同期** する] ページで、[ **開始** ] を選択します。
+ 3. [組織 **のディレクトリからユーザーを** 同期する] ページで、[開始] **を選択します**。
 
- 4. 最初のステップ実行 IdFix ツールで、ディレクトリ同期の準備をします。
+ 4. 最初の手順では、IdFix ツールを実行してディレクトリ同期を準備します。
 
- 5. ウィザードの手順に従って、Azure AD Connect をダウンロードし、それを使用して、ドメイン制御されたユーザーを Microsoft 365 に同期させます。
+ 5. ウィザードの手順に従って Azure AD Connect をダウンロードし、それを使用してドメイン制御ユーザーを Microsoft 365 に同期します。
 
 
-詳細については、「 [Microsoft 365 のディレクトリ同期をセットアップ](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) する」を参照してください。
+詳細 [については、「Microsoft 365](../enterprise/set-up-directory-synchronization.md) のディレクトリ同期をセットアップする」を参照してください。
 
-Azure AD Connect のオプションを構成する際には、 **パスワード同期** 、 **シームレスなシングルサインオン** 、 **パスワード書き戻し** 機能を有効にすることをお勧めします。これは、Microsoft 365 for business でもサポートされています。
+Azure AD Connect のオプションを構成する場合は、ビジネス向けMicrosoft 365 でもサポートされるパスワード同期、シームレス シングル サインオン、およびパスワード ライトバック機能を有効にすることをお勧めします。 
 
 > [!NOTE]
-> Azure AD Connect のチェックボックスを超えてパスワードを書き戻しするには、いくつかの追加の手順があります。 詳細については、「 [方法: パスワードの書き戻しを構成](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)する」を参照してください。 
+> Azure AD Connect のチェック ボックスを超えてパスワードの書き戻しを行うADがあります。 詳細については [、「How-to: configure password writeback」を参照してください](/azure/active-directory/authentication/howto-sspr-writeback)。 
 
-ドメインに参加している Windows 10 デバイスを管理する場合は、「 [ドメインに参加している windows 10 デバイスを Microsoft 365 Business Premium で管理されるよう](manage-windows-devices.md) にする」を参照して、ハイブリッド Azure AD Join を設定してください。 
+ドメインに参加している Windows 10 デバイスも管理する場合は、「ドメインに参加している Windows 10 デバイスを [Microsoft 365 Business Premium](manage-windows-devices.md) で管理してハイブリッド Azure AD Join をセットアップする」を参照してください。

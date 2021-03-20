@@ -26,72 +26,72 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Microsoft 365 Business Premium のセットアップ手順、サブスクライブ、ドメインおよびユーザーの追加、セキュリティポリシーの設定などについて説明します。
-ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Microsoft 365 Business Premium のセットアップ手順、サブスクライブからドメインとユーザーの追加、セキュリティ ポリシーの設定などについて説明します。
+ms.openlocfilehash: 9d92aefb3b5666bb7c2fd2e13c9a00f074f107a7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842132"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912492"
 ---
 # <a name="overview-of-setup"></a>セットアップの概要
 
-Microsoft 365 Business Premium セットアップに関する短いビデオをご覧ください。<br><br>
+Microsoft 365 Business Premium のセットアップに関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
-セットアップ手順のほとんどは、ガイド付きのセットアップで行うことができますが、その他のオプションも表示されます。
+ほとんどのセットアップ手順はガイド付きセットアップで実行できますが、他のオプションも一覧表示されます。
 
 ## <a name="step-1-add-your-domain-and-users"></a>手順 1: ドメインとユーザーを追加する
 
-   - **[ドメインを追加](set-up.md#add-your-domain-to-personalize-sign-in)** します ( [サインアップ](sign-up.md)中にドメインを購入した場合、この手順は既に完了しています)。
+   - **[ドメインを追加](set-up.md#add-your-domain-to-personalize-sign-in)** します (サインアップ中にドメインを購入した [場合、この](sign-up.md)手順は既に完了しています)。
 
-   - **ユーザーを追加** します。 次の3つの方法のいずれかでユーザーを追加できます。
-        - を [設定](set-up.md#add-users-in-the-wizard)します。
-        - オンプレミスの Active directory を使用している場合は、ディレクトリ同期を使用して、 [AZURE AD Connect を使用してユーザーを追加](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) します。
-        - 後で管理センターで [ユーザーを追加](add-users-m365b.md) することもできます。
-## <a name="step-2-set-up-security-policies-and-configure-devices"></a>手順 2: セキュリティポリシーを設定し、デバイスを構成する 
+   - **ユーザーを追加します**。 次の 3 つの方法でユーザーを追加できます。
+        - ガイド付 [きセットアップで](set-up.md#add-users-in-the-wizard).
+        - オンプレミスの Active ディレクトリがある場合は、 [ディレクトリ同期を使用して Azure AD Connect](../enterprise/set-up-directory-synchronization.md) を使用してユーザーを追加します。
+        - 後で [管理センターでユーザー](../admin/add-users/add-users.md) を追加することもできます。
+## <a name="step-2-set-up-security-policies-and-configure-devices"></a>手順 2: セキュリティ ポリシーを設定し、デバイスを構成する 
 
-  - [ガイド付きセットアップ](set-up.md#protect-your-organization)を使用して、デバイスポリシーを構成します。 
-  - また、後で [管理センター](view-policies-and-devices.md) および [Intune ポータル](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)で追加または編集することもできます。
-  - また、セットアップウィザードによって、基本的な脅威保護とデータ損失防止の設定も設定されます。
+  - ガイド付 [きセットアップを使用して](set-up.md#protect-your-organization) デバイス ポリシーを構成します。 
+  - 管理センターと Intune ポータルで、後で[](view-policies-and-devices.md)追加または編集[することもできます](/intune/tutorial-walkthrough-intune-portal)。
+  - セットアップ ウィザードでは、基本的な脅威保護とデータ損失防止の設定もセットアップされます。
   
-  セットアップウィザードのセキュリティ設定に加えて、次の設定を追加することによって、セキュリティを向上させることができます。
+  セットアップ ウィザードのセキュリティ設定に加えて、次の設定を追加することでセキュリティを強化できます。
 
-- **メールマルウェア対策**
-- **Office 365 の Defender でのフィッシング対策**
+- **電子メールマルウェア保護**
+- **Defender for Office 365 でのフィッシング対策**
 - **Exchange Online Archiving**
-- **Azure Information Protection (Plan1** )
+- **Azure Information Protection (Plan1)**
 
-開始するには、「 [脅威保護を強化](increase-threat-protection.md) する」と「 [コンプライアンス機能をセットアップ](set-up-compliance.md)する」を参照してください。
+開始するには、「脅威の保護 [を強化し、](increase-threat-protection.md) コンプライアンス [機能を設定する」を参照してください](set-up-compliance.md)。
 
-セキュリティに関するベストプラクティスのガイドについては、「 [Microsoft 365 Business Premium をセキュリティで保護する](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) 」を参照してください。
+ベスト セキュリティ プラクティスのロード マップについては [、「Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data) をセキュリティで保護する上位 10 の方法」も参照してください。
 
-## <a name="step-3-set-up-and-manage-windows-10-devices"></a>手順 3: Windows 10 デバイスをセットアップおよび管理する
+## <a name="step-3-set-up-and-manage-windows-10-devices"></a>手順 3: Windows 10 デバイスのセットアップと管理
 
-ガイド設定を完了したら、組織内のすべての Windows 10 コンピューターを保護する必要があります。
+ガイド付きセットアップが完了したら、組織内のすべての Windows 10 コンピューターを保護する必要があります。
   
-- Windows 10 Pro は Microsoft 365 Business Premium の [前提条件](pre-requisites-for-data-protection.md) ですが、Windows 7 Pro、Windows 8 pro、または Windows 8.1 Pro を使用している場合は、サブスクリプションによって [windows 10 pro へのアップグレード](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)ができます。
-- 「 [Windows 10 pc をセキュリティ保護](secure-win-10-pcs.md) する」の手順に従って、windows 10 デバイスのポリシーを設定します。
+- Windows 10 Pro[](pre-requisites-for-data-protection.md)は Microsoft 365 Business Premium の前提条件ですが、Windows 7 Pro、Windows 8 Pro、または Windows 8.1 Pro を使用している場合、サブスクリプションは[Windows 10 Pro](./upgrade-to-windows-pro-creators-update.md)へのアップグレードを受ける権利があります。
+- セキュリティで保護された [Windows 10 PC](secure-win-10-pcs.md) の手順に従って、Windows 10 デバイスのポリシーを設定します。
 
-Windows 10 デバイスを Azure AD に参加させると、Windows 10 コンピューターに設定したポリシーが適用されます。 詳細については、「 [Microsoft 365 ユーザーの Windows デバイスをセットアップする](set-up-windows-devices.md)」を参照してください。
+Windows 10 デバイスを Azure ADに参加すると、Windows 10 コンピューターに設定したポリシーが適用されます。 詳細については [、「Microsoft 365 ユーザー向け Windows デバイスのセットアップ」を参照してください](set-up-windows-devices.md)。
 
 ## <a name="step-4-install-microsoft-365-apps-for-business"></a>手順 4: Microsoft 365 Apps for business をインストールする
-- [セットアップウィザード](set-up.md#deploy-office-365-client-apps)を使用して、Windows デバイスに Office を自動的にインストールすることができます。
-- ユーザーが Windows およびデバイス用の [Office アプリをインストール](https://docs.microsoft.com/office365/admin/setup/install-applications) できるようにします。
+- セットアップ ウィザードを使用Office Windows デバイスに自動的にインストール [できます](set-up.md#deploy-office-365-client-apps)。
+- ユーザーが [Windows とデバイスOfficeアプリ](/office365/admin/setup/install-applications) をインストールできます。
      
-## <a name="advanced"></a>詳細設定
-- **自動操縦を使用して新しいデバイスをセットアップする**
+## <a name="advanced"></a>詳細情報
+- **Autopilot を使用して新しいデバイスをセットアップする**
             
-     [Windows 自動操縦](add-autopilot-devices-and-profile.md)を使用して、ユーザーに対して **新しい** windows 10 デバイスを自動的に事前構成することができますが、これを実行できる [パートナー](https://www.microsoft.com/solution-providers/search)を取得する方が簡単な場合があります。 [Microsoft ストア](https://go.microsoft.com/fwlink/?linkid=874598)に移動し、クラウドテクノロジエキスパートに依頼して、購入する新しいデバイスをセットアップすることもできます。
+     [Windows Autopilot](add-autopilot-devices-and-profile.md)を使用すると、ユーザー用 **に新しい** Windows 10 デバイスを自動的に事前構成できますが、[](https://www.microsoft.com/solution-providers/search)これを行えるパートナーを取得する方が簡単な場合があります。 また [、Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)にアクセスし、クラウド テクノロジの専門家に、購入した新しいデバイスのセットアップを求めすることもできます。
 
 - **オンプレミス リソースへのアクセス**
 
-     - 組織でオンプレミスの Windows Server Active Directory を使用している場合は、Microsoft 365 Business Premium をセットアップして Windows 10 デバイスを保護することができます。ただし、ローカル認証を必要とするオンプレミスのリソースへのアクセスは維持されます。 「 [ドメインに参加している Windows 10 デバイスを Microsoft 365 Business Premium で管理](manage-windows-devices.md) する」の手順に従って、これを設定します。 この方法をお勧めします。この状態のデバイスは、ハイブリッド Azure AD 参加デバイスと呼ばれます。
+     - 組織で Windows Server Active Directory をオンプレミスで使用している場合は、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持しながら、Windows 10 デバイスを保護するために Microsoft 365 Business Premium をセットアップできます。 「ドメインに参加している Windows 10 デバイスを [Microsoft 365 Business Premium](manage-windows-devices.md) で管理するを有効にする」の手順に従って、これを設定します。 これは推奨される方法であり、この状態のデバイスはハイブリッド Azure と呼ばADデバイスです。
 
-    - オンプレミスのリソース (ファイル共有やプリンターなど) を含むローカルな Active Directory が企業にある場合は、「 [Microsoft 365 Business Premium の AZURE ad 参加デバイスからオンプレミスのリソースにアクセスする」](access-resources.md)の手順に従って、azure ad に参加しているデバイスにこれらのリソースへのアクセス権を付与できます。
+    - ビジネスに、いくつかのオンプレミス リソース (ファイル共有やプリンターなど) が含まれるローカル Active Directory がある場合は [、Microsoft 365 Business Premium](access-resources.md)の Azure AD に参加しているデバイスからオンプレミスリソースにアクセスする手順に従って、Azure AD に参加しているデバイスにこれらのリソースへのアクセス権を与えることができます。
 
 ## <a name="see-also"></a>関連項目
 

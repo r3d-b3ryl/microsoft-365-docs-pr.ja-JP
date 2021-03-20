@@ -27,17 +27,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: 保護ポリシーを介して管理されるデバイスから会社のデータを削除する方法と、Windows 10 デバイスを出荷時の設定にリセットする方法について説明します。
-ms.openlocfilehash: 88311a2cf08ee0b1ceb4ef3eb599efe5ebccdb05
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+description: 保護ポリシーによって管理されるデバイスから会社のデータを削除し、Windows 10 デバイスを工場出荷時の設定にリセットする方法について説明します。
+ms.openlocfilehash: 8c5472eada4cded3a6869c031ab902928876095f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101623"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913216"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium で保護されたデバイスを管理する
 
-ユーザーが自分のデバイスを組織に接続した後、デバイス上のデバイスまたは Office アプリにサインインすることによって、設定したポリシーでデバイスを保護することができます。 [**デバイス**] ページに、接続されているデバイスが一覧表示されます。 デバイスが紛失または盗難にあった場合、このページから管理して、会社のデータを削除することができます。 また、Windows 10 デバイスを出荷時の設定にリセットして、カスタム設定を消去することもできます。 
+ユーザーが自分の仕事用アカウントでデバイスにサインインするか、デバイス上の Office アプリにサインインしてデバイスを組織に接続した後、セットアップしたポリシーでデバイスを保護できます。 接続されているデバイスは、[デバイス] ページ **に表示** されます。 デバイスが紛失または盗難に遭った場合は、このページからデバイスを管理して、会社のデータを削除できます。 また、Windows 10 デバイスを工場出荷時の設定にリセットして、カスタム設定を消去することもできます。 
 
 デバイスの管理に使用できるタスクの詳細については、次の記事を参照してください。 
   
@@ -45,6 +45,4 @@ ms.locfileid: "45101623"
   
 [Windows 10 デバイスを出荷時の設定にリセットする](reset-devices-to-factory-settings.md)
 
-[管理されたデバイスを追加する](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
-  
-
+[管理対象デバイスの追加](./app-protection-settings-for-android-and-ios.md)
