@@ -1,5 +1,5 @@
 ---
-title: Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する
+title: ExpressRoute での BGP コミュニティの 365 Office使用する
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -21,93 +21,93 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
-description: Azure ExpressRoute で BGP コミュニティを使用して、Office 365 シナリオの IP プレフィックスと必要な帯域幅の数を管理する方法について説明します。
-ms.openlocfilehash: 3a1de8725ae967352723649e602d944ca6948310
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Azure ExpressRoute で BGP コミュニティを使用して、365 のシナリオで必要な IP プレフィックスと必要な帯域幅の数を管理するOffice説明します。
+ms.openlocfilehash: 9cb6980c1d8cc120f99cac087602856aeacf1adf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692069"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905214"
 ---
-# <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する
+# <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>ExpressRoute での BGP コミュニティの 365 Office使用する
 
-Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークで受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分では IP プレフィックスと呼ばれ、BGP ネットワーク管理の用語と整合するために、次のようなお客様の目標を達成しています。
+Azure ExpressRoute Office 365 への接続は、365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP アドバタイズOffice基づいて行います。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、顧客は多くの場合、ネットワーク上で受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分を通して IP プレフィックスと呼ばれる、BGP ネットワーク管理の用語に合わせて、お客様に次のエンド ゴールを提供します。
   
-- 承認された**ip プレフィックスの数を管理**する-限られた数の ip プレフィックスのみをサポートする内部ネットワークインフラストラクチャまたはネットワークキャリアを備えているお客様と、制限付き番号の上にプレフィックスを受け付けるように料金を与えるネットワークキャリアを持つお客様は、365ネットワークに既にアドバタイズされているプレフィックスの合計数を評価して、
+- アドバタイズされた IP プレフィックスの受け入れ数を管理する - 限られた数の **IP** プレフィックスのみをサポートする内部ネットワーク インフラストラクチャまたはネットワーク キャリアをお持ちのお客様、および限られた数を超えるプレフィックスを受け入れるネットワーク キャリアをお持ちのお客様は、ネットワークに既にアドバタイズされているプレフィックスの総数を評価し、ExpressRoute に最適な Office 365 アプリケーションを選択します。
 
-- **Azure ExpressRoute 回線で必要な帯域幅の量を管理** する-お客様は、ExpressRoute のパスとインターネットパスを介して Office 365 サービスの帯域幅エンベロープを制御する必要がある場合があります。 これにより、お客様は Skype for Business などの特定のアプリケーションに対して ExpressRoute の帯域幅を予約し、残りの Office 365 アプリケーションをインターネットパスを介してルーティングすることができます。
+- Azure ExpressRoute 回線で必要な帯域幅の量を管理する - お客様は **、ExpressRoute** パスとインターネット パスを使用して Office 365 サービスの帯域幅エンベロープを制御できます。 これにより、お客様は、Skype for Business などの特定のアプリケーションに ExpressRoute 帯域幅を予約し、残りの Office 365 アプリケーションをインターネット パス経由でルーティングできます。
 
-このような目標をお客様に提供するために、次の例に示されているように、Office 365 のサービス固有の BGP community 値を使用してタグ付けされています。
+これらの目標を顧客に支援するためにOffice例に示すように、ExpressRoute でアドバタイズされる 365 IP プレフィックスには、サービス固有の BGP コミュニティ値がタグ付けされます。
   
 > [!NOTE]
-> 他のアプリケーションに関連付けられているネットワークトラフィックは、コミュニティの値に含まれていることが予想されます。 これは、共有サービスとデータセンターを使用したサービスとしてのグローバルソフトウェアに想定される動作です。 これは、上の2つの目的で、プレフィックスの数や帯域幅を考慮することで最小化されています。
+> 他のアプリケーションに関連付けられている一部のネットワーク トラフィックがコミュニティ値に含まれると予想する必要があります。 これは、共有サービスとデータセンターを備えたグローバル なソフトウェア as a Service オファリングに対して期待される動作です。 これは、上記の 2 つの目標で可能な限り最小限に抑え、プレフィックス数や帯域幅を管理します。
 
-|**サービス**|**BGP コミュニティの値**|**メモ**|
+|**サービス**|**BGP コミュニティ値**|**注**|
 |:-----|:-----|:-----|
-|Exchange Online\*  <br/> |12076:5010  <br/> |Exchange および EOP サービスが含まれています。\*  <br/> |
+|Exchange Online\*  <br/> |12076:5010  <br/> |Exchange サービスと EOP サービスを含む\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
 |Skype for Business\*  <br/> |12076:5030  <br/> |Skype for Business Online & Microsoft Teams サービス  <br/> |
-|その他の Office 365 サービス\*  <br/> |12076:5100  <br/> |Azure Active Directory (認証およびディレクトリ同期のシナリオ) と Office 365 ポータルサービスが含まれています。  <br/> |
-|\* ExpressRoute に含まれるサービスシナリオの範囲については、「 [Office 365 エンドポイント](https://aka.ms/o365endpoints) 」の記事に記載されています。  <br/> \*\*今後、追加サービスと BGP コミュニティの値を追加することができます。 [BGP コミュニティの現在の一覧を参照してください](https://azure.microsoft.com/documentation/articles/expressroute-routing/)。  <br/> |
+|その他Office 365 サービス\*  <br/> |12076:5100  <br/> |Azure Active Directory (認証とディレクトリ同期のシナリオ) と 365 ポータル サービスOffice含まれています  <br/> |
+|\* ExpressRoute に含まれるサービス シナリオの範囲については [、「365 エンドポイントのOffice」を参照](./urls-and-ip-address-ranges.md) してください。  <br/> \*\*今後、追加のサービスと BGP コミュニティの値が追加される可能性があります。 [BGP コミュニティの現在のリストを参照してください](/azure/expressroute/expressroute-routing)。  <br/> |
 
-## <a name="what-are-the-most-common-scenarios-for-using-bgp-communities"></a>BGP コミュニティを使用するための最も一般的なシナリオは何ですか。
+## <a name="what-are-the-most-common-scenarios-for-using-bgp-communities"></a>BGP コミュニティを使用する最も一般的なシナリオは何ですか?
 
-お客様は、BGP コミュニティを使用して、Azure ExpressRoute を介してネットワークに受け入れられる IP プレフィックスのグループを規制することができます。そのため、特定の Office 365 サービスの合計 IP プレフィックス数と予想帯域幅エンベロープに影響します。 すべての Office 365 で、Azure ExpressRoute または BGP コミュニティの使用に関係なく、インターネットにバインドされたトラフィックが必要になることを理解しておくことが重要です。 この機能は、次の3つのシナリオで最も一般的に使用されます。
+お客様は、BGP コミュニティを使用して、Azure ExpressRoute を通じてネットワークで受け入れられる IP プレフィックスのグループを規制できます。これにより、特定の Office 365 サービスの総 IP プレフィックス数と予想される帯域幅エンベロープに影響を与える可能性があります。 Azure ExpressRoute または BGP コミュニティの使用Officeに関係なく、365 のすべてのユーザーがインターネットにバインドされたトラフィックを必要としていることを理解することが重要です。 この機能の最も一般的な用途は、次の 3 つのシナリオです。
   
-### <a name="scenario-1-minimizing-the-number-of-office-365-ip-prefixes"></a>シナリオ 1: Office 365 IP プレフィックスの数を最小限に抑える
+### <a name="scenario-1-minimizing-the-number-of-office-365-ip-prefixes"></a>シナリオ 1: 365 IP プレフィックスのOfficeを最小限に抑える
 
-Contoso Corporation は、現在 Office 365 を使用して Exchange Online と SharePoint Online を使用している5万の個人企業です。 「ExpressRoute の要件を確認する」では、Contoso 社のネットワークデバイスでは、多くの地域の場所にあるルーティングテーブルのサイズを処理できません100追加のルートエントリ。 Contoso 社のレビュー ExpressRoute が Office 365 サービスの完全なセットに対して提供する IP プレフィックスの合計数です。これは100を超えたことを示しています。 100の追加ルートエントリの下に留まるため、Contoso 社は、Office 365 用の ExpressRoute の使用を、ExpressRoute Microsoft ピアリング経由で受信した SharePoint Online BGP community value (12076:5020) だけに範囲を置いています。
+Contoso Corporation は 50,000 人の会社で、現在 Exchange Online および SharePoint Online Office 365 を使用しています。 ExpressRoute 要件を確認する場合、Contoso 社は、多くの地域の場所にあるネットワーク デバイスが、100 を超える追加のルート エントリのルーティング テーブル サイズを処理できないと判断します。 Contoso 社は、ExpressRoute が Office 365 サービスの完全なセットにアドバタイズする IP プレフィックスの総数を確認し、100 を超えると結論付けしました。 100 の追加のルート エントリの下に滞在するために、Contoso は、ExpressRoute Microsoft ピアリングを通じて受信した sharePoint Online BGP コミュニティ値 12076:5020 に対して Office 365 の ExpressRoute の使用を範囲指定します。
 
-|**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
+|**使用される BGP コミュニティ タグ**|**Azure ExpressRoute でルーティング可能な機能**|**インターネット ルートが必要**|
 |:-----|:-----|:-----|
-|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; の OneDrive For business  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp; ブラウザーの office  <br/>  Exchange Online、Exchange Online Protection、および Skype for Business Online  <br/> |
+|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; OneDrive for Business  <br/> | DNS、CRL、CDN &amp; 要求  <br/>  Azure ExpressRoute でOfficeサポートされていない 365 サービスの他のすべてのサービス  <br/>  その他のすべての Microsoft クラウド サービス  <br/>  Office 365 ポータル、Office 365 認証、Office &amp; ブラウザー  <br/>  Exchange Online、Exchange Online Protection、Skype for Business Online  <br/> |
 
 > [!NOTE]
-> 各サービスに対してより低いプレフィックス数を実現するために、サービス間で最小限の重複が保持されます。 この動作は仕様です。
+> 各サービスのプレフィックス数を削減するために、サービス間の重複は最小限に抑えられます。 これは想定された動作です。
   
-### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>シナリオ 2: 特定の Office 365 サービスに対して ExpressRoute および内部帯域幅を使用する場合
+### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>シナリオ 2: ExpressRoute と内部帯域幅の使用を一部の 365 サービスにOfficeする
 
-分散異種ネットワークを使用する大規模な多国籍企業の Fabrikam Inc は、多くの Office 365 サービスのサブスクライバーです。これには以下が含まれます。Exchange Online、SharePoint Online、Skype for Business Online。 Fabrikam の内部ルーティングインフラストラクチャは、ルーティングテーブルで数千の IP プレフィックスを処理できます。ただし、Fabrikam は、ネットワークパフォーマンスに最も敏感で、その他すべての Office 365 アプリケーションで既存のインターネット帯域幅を使用する Office 365 アプリケーションに対して、ExpressRoute と内部帯域幅をプロビジョニングすることのみを希望しています。
+Fabrikam Inc, a large multi-national enterprise with a distributed heterogeneous network, is subscriber of many Office 365 サービス;Exchange Online、SharePoint Online、Skype for Business Online。 Fabrikam の内部ルーティング インフラストラクチャは、ルーティング テーブルで何千もの IP プレフィックスを処理できます。ただし、Fabrikam は、ネットワーク パフォーマンスに最も敏感な Office 365 アプリケーションにのみ ExpressRoute と内部帯域幅をプロビジョニングし、他のすべての Office 365 アプリケーションに対して既存のインターネット帯域幅を使用します。
   
-そのため、Fabrikam は Azure ExpressRoute 帯域幅を、ExpressRoute Microsoft ピアリング経由で受信した Skype for Business Online BGP Community 値12076:5030 にのみスコープします。 Office 365 に関連付けられている残りのネットワークトラフィックでは、引き続きインターネット出口ポイントが使用されます。
+このため、Fabrikam は Azure ExpressRoute 帯域幅を、ExpressRoute Microsoft ピアリングを介して受信した Skype for Business Online BGP コミュニティ値 12076:5030 に範囲を設定します。 365 に関連付Office残りのネットワーク トラフィックは、引き続きインターネット出力ポイントを使用します。
 
-|**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
+|**使用される BGP コミュニティ タグ**|**Azure ExpressRoute でルーティング可能な機能**|**インターネット ルートが必要**|
 |:-----|:-----|:-----|
-|Skype for Business  <br/> (12076:5030)  <br/> |Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp; ブラウザーの office  <br/>  Skype for Business テレメトリ、Skype クライアントのクイックヒント、パブリック IM 接続  <br/>  Exchange Online、Exchange Online Protection、および SharePoint Online  <br/> |
+|Skype for Business  <br/> (12076:5030)  <br/> |Skype SIP シグナリング、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> | DNS、CRL、CDN &amp; 要求  <br/>  Azure ExpressRoute でOfficeサポートされていない 365 サービスの他のすべてのサービス  <br/>  その他のすべての Microsoft クラウド サービス  <br/>  Office 365 ポータル、Office 365 認証、Office &amp; ブラウザー  <br/>  Skype for Business テレメトリ、Skype クライアントのクイック ヒント、パブリック IM 接続  <br/>  Exchange Online、Exchange Online Protection、および SharePoint Online  <br/> |
 
-### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>シナリオ 3: Office 365 サービス用にのみ Azure ExpressRoute のスコープを限定する
+### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>シナリオ 3: 365 サービスOffice Azure ExpressRoute のスコープ
 
-Woodgrove Bank は、Office 365 を含むいくつかの Microsoft クラウドサービスのお客様です。 ネットワーク容量と消費を評価した後、Woodgrove Bank は、サポートされている Office 365 サービスの優先パスとして Azure ExpressRoute を展開することを決定します。 ルーティングテーブルは、すべての Office 365 IP プレフィックスと、プロビジョニングされた Azure ExpressRoute のすべてのセットをサポートできます。すべての予測される帯域幅と待機時間のニーズがサポートされます。
+Woodgrove Bank は、365 を含むいくつかの Microsoft クラウド サービスOfficeです。 ネットワーク容量と使用量を評価した Woodgrove Bank は、サポートされている 365 サービスの優先パスとして Azure ExpressRoute を展開Office決定します。 ルーティング テーブルは、Office 365 IP プレフィックスの完全なセットをサポートし、プロビジョニングした Azure ExpressRoute 回線は、すべての投影帯域幅と待機時間のニーズをサポートします。
   
-Office 365 以外の Microsoft cloud services に関連付けられているネットワークトラフィックを確実にするために、Woodgrove Bank は office 365 の ExpressRoute を office 365 固有の BGP community 値、12076:5010、12076:5020、12076:5030、12076:5100 にタグ付けされたすべての IP プレフィックスに適用します。
+365 以外の Microsoft クラウド サービスに関連付けられているネットワーク トラフィックをOfficeするには、次の手順を実行します。 Woodgrove Bank は、Office 365 の ExpressRoute の使用を、Office 365 固有の BGP コミュニティ値 12076:5010、12076:5020、12076:5030、12076:5100 でタグ付けされた IP プレフィックスすべてに適用します。
 
-|**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
+|**使用される BGP コミュニティ タグ**|**Azure ExpressRoute でルーティング可能な機能**|**インターネット ルートが必要**|
 |:-----|:-----|:-----|
-|Exchange、Skype for Business & Microsoft Teams、SharePoint、 &amp; その他のサービス  <br/> (12076:5010、12076:5020、12076:5030、12076:5100)  <br/> |Exchange Online &amp; Exchange Online Protection  <br/> SharePoint Online &amp; の OneDrive For business  <br/> Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> Office 365 ポータル、Office 365 認証、 &amp; ブラウザーの office  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/> |
+|Exchange、Skype for Business & Microsoft Teams、SharePoint、その他 &amp; のサービス  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange Online Protection  <br/> SharePoint Online &amp; OneDrive for Business  <br/> Skype SIP シグナリング、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> Office 365 ポータル、Office 365 認証、Office &amp; ブラウザー  <br/> | DNS、CRL、CDN &amp; 要求  <br/>  Azure ExpressRoute でOfficeサポートされていない 365 サービスの他のすべてのサービス  <br/>  その他のすべての Microsoft クラウド サービス  <br/> |
 
-## <a name="key-planning-considerations-to-using-bgp-communities"></a>BGP コミュニティを使用するための主要な計画に関する考慮事項
+## <a name="key-planning-considerations-to-using-bgp-communities"></a>BGP コミュニティの使用に関する主な計画上の考慮事項
 
-お客様が BGP コミュニティを利用して、ExpressRoute を宣伝してお客様のネットワーク経由で伝達する方法に影響を与える場合は、以下の点を考慮してください。
+BGP コミュニティを利用して、ExpressRoute のアドバタイズ方法と顧客ネットワーク経由での伝達方法に影響を与える場合は、次の点を考慮する必要があります。
   
-- ネットワーク設計で BGP コミュニティを使用する場合は、ルート対称が引き続き維持されることが重要です。 場合によっては、BGP コミュニティの追加または削除によって、対称ルーティングが中断され、対称ルーティングを再確立するために、ルーティング構成を更新する必要があります。
+- ネットワーク設計で BGP コミュニティを使用する場合は、ルートの対称性を維持することが重要です。 場合によっては、BGP コミュニティを追加または削除すると、対称ルーティングが壊れ、対称ルーティングを再確立するためにルーティング構成を更新する必要がある場合があります。
 
-- BGP community の値で Azure ExpressRoute のスコープを指定することは、顧客のアクションです。 Microsoft は、顧客によって構成されたスコープに関係なく、ピアリング関係に関連付けられているすべての IP プレフィックスを通知します。
+- BGP コミュニティ値を使用して Azure ExpressRoute をスコープ化する方法は、お客様の操作です。 Microsoft は、お客様が構成したスコープに関係なく、ピアリング関係に関連付けられているすべての IP プレフィックスをアドバタイズします。
 
-- Azure ExpressRoute は、お客様が割り当てられた BGP コミュニティに基づく Microsoft のネットワーク上でのアクションをサポートしていません。
+- Azure ExpressRoute は、お客様に割り当てられた BGP コミュニティに基づく Microsoft のネットワーク上のアクションをサポートしています。
 
-- Office 365 で使用される IP プレフィックスは、サービス固有の BGP コミュニティ値でのみマークされています。場所固有の BGP コミュニティはサポートされていません。 Office 365 サービスはグローバルな性質を持っているため、テナントの場所または Office 365 クラウド内のデータに基づくフィルター処理プレフィックスはサポートされていません。 推奨される方法は、要求している Office 365 サービスの物理的な場所に関係なく、ユーザーのネットワーク上の場所から Microsoft グローバルネットワークへの最短または最も優先されるネットワークパスを調整するようにネットワークを構成することです。
+- 365 で使用Office IP プレフィックスは、サービス固有の BGP コミュニティ値でのみマークされ、場所固有の BGP コミュニティはサポートされません。 Office 365 サービスはグローバルな性質を持ち、テナントの場所や Office 365 クラウド内のデータに基づくプレフィックスのフィルター処理はサポートされていません。 推奨される方法は、要求している Office 365 サービスの IP アドレスの物理的な場所に関係なく、ユーザーのネットワークの場所から Microsoft グローバル ネットワークへの最短または最も優先されるネットワーク パスを調整するためにネットワークを構成します。
 
-- 各 BGP community 値に含まれる IP プレフィックスは、値に関連付けられた Office 365 アプリケーションの IP アドレスを含むサブネットを表します。 場合によっては、複数の Office 365 アプリケーションがサブネット内に複数の IP アドレスを持ち、その結果、IP プレフィックスが複数のコミュニティ値に存在することがあります。 これは、割り当ての断片化が原因であると想定されていますが、プレフィックス数や帯域幅管理の目標に影響を与えることはありません。 Office 365 の BGP コミュニティを活用して影響を最小限に抑えるには、「必要な機能を拒否する」を使用するのではなく、「必要な機能を許可する」というアプローチを使用することをお勧めします。
+- 各 BGP コミュニティ値に含まれる IP プレフィックスは、その値に関連付けられた Office 365 アプリケーションの IP アドレスを含むサブネットを表します。 場合によっては、複数の 365 アプリケーションOffice 365 アプリケーションに IP アドレスが含まれます。その結果、複数のコミュニティ値に IP プレフィックスが含まれます。 これは、割り当ての断片化による動作はめったにありませんが、プレフィックス数や帯域幅管理の目標には影響しません。 Office 365 の BGP コミュニティを利用して効果を最小限に抑える場合は、「不要な情報を拒否する」のではなく、「必要な操作を許可する」方法を使用してください。
 
-- BGP コミュニティを使用しても、基盤となるネットワーク接続の要件や、Office 365 を使用するために必要な構成は変更されません。 Office 365 にアクセスする必要があるお客様は、引き続きインターネットにアクセスできるようにする必要があります。
+- BGP コミュニティを使用しても、365 を使用するために必要な基になるネットワーク接続要件や構成Officeされません。 365 から 365 にOffice場合でも、インターネットにアクセスできる必要があります。
 
-- BGP コミュニティによる Azure ExpressRoute の範囲指定は、内部ネットワークが Microsoft ピアリング関係を介して参照できるルートにのみ影響します。 スコープルーティングと共に、PAC または WPAD 構成の使用など、追加のアプリケーションレベルの構成を行う必要がある場合があります。
+- AZURE ExpressRoute を BGP コミュニティでスコープ設定すると、内部ネットワークが Microsoft ピアリング関係を通して確認できるルートにのみ影響します。 スコープ付きルーティングと組み合わせて PAC または WPAD 構成の使用など、アプリケーション レベルの構成を追加する必要がある場合があります。
 
-- Microsoft によって割り当てられた BGP コミュニティを使用することに加えて、お客様は、内部ルーティングに影響を与えるために Azure ExpressRoute で学んだ Office 365 の IP プレフィックスに独自の BGP コミュニティを割り当てることもできます。 一般的なユースケースとしては、特定の ExpressRoute ピアの場所で学習したすべてのルートに、場所ベースの BGP コミュニティを割り当て、顧客ネットワークの下流の情報を使用して、Microsoft のネットワークで最短または最も優先されるネットワークパスを調整します。 Office 365 シナリオで ExpressRoute を使用して、顧客が割り当てられている BGP コミュニティを使用することは、Microsoft control または visibility の範囲外です。
+- Microsoft に割り当てられた BGP コミュニティの使用に加えて、Azure ExpressRoute で学習した Office 365 IP プレフィックスに独自の BGP コミュニティを割り当て、内部ルーティングに影響を与える場合があります。 一般的な使用例は、場所ベースの BGP コミュニティを、特定の ExpressRoute ピアリングの各場所で学習したすべてのルートに割り当て、その情報を顧客ネットワークの下流で使用して、Microsoft のネットワークへの最短または最も優先されるネットワーク パスを調整します。 365 のシナリオで ExpressRoute を使用して割り当Office BGP コミュニティを使用する方法は、Microsoft の制御または可視性の範囲を外しています。
 
-次の短いリンクを使用して、に戻ることができ [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365) ます。
+戻って来るのに使用できる短いリンクを次に示します [https://aka.ms/bgpexpressroute365]() 。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   
@@ -127,7 +127,7 @@ Office 365 以外の Microsoft cloud services に関連付けられているネ�
   
 [Office 365 向け ExpressRoute の実装](implementing-expressroute.md)
   
-[BGP コミュニティのサポート](https://azure.microsoft.com/documentation/articles/expressroute-routing/)
+[BGP コミュニティのサポート](/azure/expressroute/expressroute-routing)
   
 [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
   

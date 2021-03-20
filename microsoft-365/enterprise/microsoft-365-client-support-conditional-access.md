@@ -16,68 +16,28 @@ f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 の条件付きアクセスをサポートするプラットフォーム、クライアント、および PowerShell モジュールについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: c7b0b65ea25091aad01fd8741f9925f2b545e9c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097248"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904968"
 ---
 # <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 クライアント アプリのサポート: 条件付きアクセス
 
 最新の職場では、ユーザーはどこからでもさまざまなデバイスやアプリを使用して組織のリソースにアクセスできます。 その結果、リソースにアクセスできるユーザーに焦点を当てるだけで十分ではありません。 組織は、アクセス制御インフラストラクチャでリソースにアクセスする方法と場所もサポートする必要があります。
 
-Azure Active Directory デバイス、場所、多要素認証ベースの条件付きアクセスを使用すると、この新しい要件を満たします。 条件付きアクセスは Azure Active Directory の機能で、環境内のアプリへのアクセスに対する制御を適用できます。すべてのコントロールは、特定の条件に基づいて、および中央の場所から管理されます。
+Azure Active Directory デバイス、場所、および多要素認証ベースの条件付きアクセスを使用すると、この新しい要件を満たします。 条件付きアクセスは Azure Active Directory の機能であり、環境内のアプリへのアクセスに対する制御を適用できます。これは、すべて特定の条件に基づいて、中央の場所から管理されます。
 
-Azure Active Directory 条件付 [きアクセスについて詳しくは、次をご覧ください](/azure/active-directory/conditional-access/)。
+[Azure Active Directory 条件付きアクセスの詳細については、次を参照してください](/azure/active-directory/conditional-access/)。
 
 ## <a name="supported-clients--platforms"></a>サポートされているクライアント&プラットフォーム
 
-次のクライアントとプラットフォームの最新バージョンでは、条件付きアクセスがサポートされています。 Microsoft 365 でのプラットフォーム サポートの詳細については [、「Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)のシステム要件」を参照してください。
-
+次のクライアントとプラットフォームの最新バージョンでは、条件付きアクセスがサポートされています。 Microsoft 365 でのプラットフォームサポートの詳細については [、「Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)のシステム要件」を参照してください。
 <br>
 <br>
 
-| クライアント | Android | iOS | Mac| Windows 10 <br> 最新のアプリ| Windows 10 <br> Desktop |
-|:---|:---:|:---:|:---:|:---:|:---:|
-| Azure Active Directory 管理者 | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
-| Access | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
-| Azure Admin | N/A | N/A | N/A | N/A | N/A |
-| ポータル サイト | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A |
-| Cortana | 計画済み | 計画済み | N/A | ![サポート](../media/check-mark.png) | N/A |
-| Delve | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
-| Edge | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | ![サポート](../media/check-mark.png) |
-| Excel | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
-| Exchange Online 管理者 | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
-| Forms | N/A | N/A | N/A | N/A | N/A |
-| Office 365 管理 | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |  |
-| Kaizala | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
-| Office Lens| ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | ![サポート](../media/check-mark.png) | N/A |
-| Office モバイル | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
-| Office ポータル | N/A | N/A | N/A | ![サポート](../media/check-mark.png) | N/A |
-| OneDrive | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
-| OneNote | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
-| Outlook | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
-| Planner | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
-| Power アプリ | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | 計画済み | N/A |
-| Power Automate | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
-| Power BI | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
-| PowerPoint | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
-| Project | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
-| Publisher | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
-| Skype for Business | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A ||
-| SharePoint | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
-| SharePoint Online 管理者 | N/A | N/A | N/A | N/A | ![サポート](../media/check-mark.png) |
-| 付箋 | N/A | N/A | N/A | ![サポート](../media/check-mark.png) | N/A |
-| Stream | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | N/A | N/A |
-| Sway | N/A | N/A | N/A | ![サポート](../media/check-mark.png) | N/A |
-| Teams | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | ![サポート](../media/check-mark.png) |
-| To Do | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A |
-| Visio | N/A | ![サポート](../media/check-mark.png) | N/A | N/A | ![サポート](../media/check-mark.png) |
-| Whiteboard | 計画済み | ![サポート](../media/check-mark.png) | N/A | ![サポート](../media/check-mark.png) | N/A |
-| Word | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
-| 職場の分析 | N/A | N/A | N/A | N/A | N/A |
-| Yammer | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | N/A | ![サポート](../media/check-mark.png) |
+[!INCLUDE [Conditional access services support table](../includes/microsoft-365-client-support-conditional-access-include.md)]
 
 ## <a name="supported-powershell-modules"></a>サポートされている PowerShell モジュール
 

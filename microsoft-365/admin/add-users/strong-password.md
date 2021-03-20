@@ -1,5 +1,5 @@
 ---
-title: ユーザーの強力なパスワード要件を無効にする
+title: ユーザーの強力なパスワード要件をオフにする
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,29 +20,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Windows PowerShell を使用して、ユーザーに強力なパスワード要件を設定する方法について説明します。
-ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+description: ユーザーに対して強力なパスワード要件を設定する方法については、Windows PowerShell。
+ms.openlocfilehash: e2300e3c94de53cd04d0c1726538fdb8a86a1ccf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655737"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903538"
 ---
-# <a name="turn-off-strong-password-requirements-for-users"></a>ユーザーの強力なパスワード要件を無効にする
+# <a name="turn-off-strong-password-requirements-for-users"></a>ユーザーの強力なパスワード要件をオフにする
 
-この記事では、ユーザーの強力なパスワード要件を無効にする方法について説明します。 Microsoft 365 for business 組織では、強力なパスワード要件が既定で有効になっています。 組織に強力なパスワードを無効にするための要件がある場合があります。 強力なパスワード要件を無効にするには、次の手順を実行します。 これらの手順は、PowerShell を使用して完了する必要があります。
+この記事では、ユーザーの強力なパスワード要件をオフにする方法について説明します。 強力なパスワード要件は、ビジネス組織向け Microsoft 365 で既定で有効になっています。 組織には、強力なパスワードを無効にする必要がある場合があります。 強力なパスワード要件をオフにするには、以下の手順に従います。 PowerShell を使用してこれらの手順を実行する必要があります。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-この記事は、ビジネス、学校、または非営利団体のパスワードポリシーを管理するユーザーを対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md) これらの手順を実行するには、 [グローバル管理者またはパスワード管理者](about-admin-roles.md) である必要があります。
+この記事は、ビジネス、学校、または非営利団体のパスワード ポリシーを管理するユーザー向けです。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md) これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 
 また、PowerShell を使用して Microsoft 365 に接続する必要があります。
 
 ## <a name="set-strong-passwords"></a>強力なパスワードを設定する
 
-1. [PowerShell を使用して Microsoft 365 に接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+1. [PowerShell を使用して Microsoft 365 に接続します](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-2. PowerShell を使用すると、次のコマンドを使用して、すべてのユーザーの強力なパスワード要件を無効にすることができます。
+2. PowerShell を使用すると、次のコマンドを使用して、すべてのユーザーの強力なパスワード要件をオフにできます。
 
     ```powershell
     Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
@@ -54,12 +54,12 @@ ms.locfileid: "48655737"
     ```
 
 > [!NOTE]
-> UserPrincipalName は、ユーザー名の後にアットマーク記号 (@) とドメイン名が続く、インターネットスタイルのサインイン形式にする必要があります。 例: user@contoso.com。
+> userPrincipalName は、ユーザー名の後にアット 記号 (@) とドメイン名が続くインターネット スタイルのサインイン形式である必要があります。 たとえば、次の user@contoso.com。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[PowerShell で Microsoft 365 に接続する方法](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[PowerShell で Microsoft 365 に接続する方法](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-[PowerShell MsolUser コマンドの詳細情報](https://docs.microsoft.com/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
+[PowerShell MsolUser コマンドの詳細情報](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
 
-[パスワード ポリシーの詳細情報](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)
+[パスワード ポリシーの詳細情報](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)

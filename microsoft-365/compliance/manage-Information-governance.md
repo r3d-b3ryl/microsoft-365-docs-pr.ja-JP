@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンスや規制の要件を満たすようにデータを管理するには、Microsoft 情報ガバナンス機能を実装します。
-ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 8a104775cd9bfc75af5b5af9840274f5f84509f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087116"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903493"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 の Microsoft 情報ガバナンス
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 Microsoft 情報ガバナンス (MIG と略されることもあります) 機能を使用して、コンプライアンスや規制の要件を満たすようにデータを管理します。
 
@@ -49,4 +49,3 @@ Microsoft 情報ガバナンス (MIG と略されることもあります) 機�
 |機能|解決される問題|作業の開始|
 |:------|:------------|---------------------|:----------------------------|
 |[レコード管理](records-management.md)| レコード宣言、保持、処理により、コンテンツのライフサイクル全体をサポートする、保持スケジュールと要件をファイル計画に組み込んだメールとドキュメント用の単一ソリューション。 <br /><br />シナリオ例: [ レコードの処理](disposition.md#disposition-of-records)|[レコード管理の使用を開始する](get-started-with-records-management.md) |
-

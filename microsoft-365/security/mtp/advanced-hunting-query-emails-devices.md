@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a12b2dcf2de472f43e782e2064944ec774bdb9e1
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 1149d8fa614854bdbbd2c154f0e92f6a9c28ce00
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727261"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904069"
 ---
-# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、電子メール、アプリ、および ID 間の脅威を検出する
+# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、メール、アプリ、ID 全体の脅威を探す
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -50,7 +50,7 @@ ms.locfileid: "50727261"
 ### <a name="obtain-user-accounts-from-email-addresses"></a>メール アドレスからユーザー アカウントを取得する
 [デバイスとメールを対象とする複数のテーブル](advanced-hunting-schema-tables.md)全体に対してクエリを作成する場合、送信者または受信者のメール アドレスからユーザー アカウント名を取得する必要があります。 通常、この操作は、電子メール アドレスのローカル ホストを使用して受信者または送信者 *のアドレスに* 対して実行できます。
 
-以下のスニペットでは [、tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto 関数を使用して、列の受信者の電子メール アドレスの直前にローカル ホスト `@` を抽出します `RecipientEmailAddress` 。
+以下のスニペットでは [、tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto 関数を使用して、列の受信者の電子メール アドレスの直前にローカル ホスト `@` を抽出します `RecipientEmailAddress` 。
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -86,7 +86,7 @@ Department, City, Country
 高度 [な検索スキーマは、](advanced-hunting-schema-tables.md) さまざまなテーブルに広範なデバイス情報を提供します。 たとえば [、DeviceInfo テーブルは、](advanced-hunting-deviceinfo-table.md) 定期的に集計されるイベント データに基づいて、包括的なデバイス情報を提供します。 このクエリでは、このテーブルを使用して、潜在的に侵害されたユーザー ( ) が任意のデバイスにログオンしたのか確認し、それらのデバイスでトリガーされたアラート `DeviceInfo` `<account-name>` を一覧表示します。
 
 >[!Tip]
-> このクエリは `kind=inner` 、内部結合 [を指定するために](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)使用します。これにより、 の左側の値の重複排除が防止されます `DeviceId` 。
+> このクエリは `kind=inner` 、内部結合 [を指定するために](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)使用します。これにより、 の左側の値の重複排除が防止されます `DeviceId` 。
 
 ```kusto
 DeviceInfo

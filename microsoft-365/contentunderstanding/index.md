@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: 21dc0e29e9322b4c009b0f1e63b7bfbc4b92da9a
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 4282da5ca1027eaf041241e90011ead8f2942985
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242702"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905730"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
@@ -42,9 +42,9 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Office 36
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|ドキュメントの理解についての詳細情報|[ドキュメントの理解の概要](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
-|フォーム処理についての詳細情報|[フォーム処理の概要](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
-|この 2 つの方法の違いについて|[ドキュメントの理解とフォーム処理モデルの違い](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|ドキュメントの理解についての詳細情報|[ドキュメントの理解の概要](./document-understanding-overview.md)|
+|フォーム処理についての詳細情報|[フォーム処理の概要](./form-processing-overview.md)|
+|この 2 つの方法の違いについて|[ドキュメントの理解とフォーム処理モデルの違い](./difference-between-document-understanding-and-form-processing-model.md)|
 |Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[SharePoint Syntex - Microsoft 365 のコンテンツ サービス](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |Microsoft Tech Community Resource Center に関する SharePoint Syntex FAQ |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |SharePoint Syntex の入手方法 |[SharePoint Syntex 製品ページ](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
@@ -55,7 +55,7 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Office 36
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|SharePoint Syntex の使用計画を開始する方法について説明します。 |[SharePoint Syntex の導入: 使用の開始](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted)<br><br>|  
+|SharePoint Syntex の使用計画を開始する方法について説明します。 |[SharePoint Syntex の導入: 使用の開始](./adoption-getstarted.md)<br><br>|  
 
 ## <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -63,8 +63,8 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Office 36
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|SharePoint Syntex の設定と構成|[Microsoft SharePoint Syntex の設定](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding)|
-|画像のタグ付けとを無効にする方法|[SharePoint Syntex での画像のタグ付け](https://docs.microsoft.com/microsoft-365/contentunderstanding/image-tagging)|
+|SharePoint Syntex の設定と構成|[Microsoft SharePoint Syntex の設定](./set-up-content-understanding.md)|
+|画像のタグ付けとを無効にする方法|[SharePoint Syntex での画像のタグ付け](./image-tagging.md)|
 
 ## <a name="models"></a>モデル
 
@@ -72,11 +72,11 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Office 36
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|モデルの使用方法についての詳細情報|[コンテンツ センターを作成する](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[分類子を作成する](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[エクストラクターを作成する](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[フォーム処理モデルを作成する](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[説明の種類](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview)<br><br>[ドキュメント理解モデルの適用](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[サンプル モデルを使用したドキュメント理解モデルについての詳細情報](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
-|モデルに保持ラベルを適用する|[保持ラベルをドキュメント理解モデルに適用する](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
-|エクストラクターの作成時に、 Managed Metadata Service の用語ストアの分類を使用する|[エクストラクターの作成時に用語ストアの分類を活用する](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
-|モデルに関するデータを表示する方法|[モデルの利用分析](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
-|モデルのトレーニング時にアクセシビリティ モードを使用する方法についての詳細|[SharePoint Syntex アクセシビリティ モード](https://docs.microsoft.com/microsoft-365/contentunderstanding/accessibility-mode)|
+|モデルの使用方法についての詳細情報|[コンテンツ センターを作成する](./create-a-content-center.md)<br><br>[分類子を作成する](./create-a-classifier.md)<br><br>[エクストラクターを作成する](./create-an-extractor.md)<br><br>[フォーム処理モデルを作成する](./create-a-form-processing-model.md)<br><br>[説明の種類](./explanation-types-overview.md)<br><br>[ドキュメント理解モデルの適用](./apply-a-model.md)<br><br>[サンプル モデルを使用したドキュメント理解モデルについての詳細情報](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
+|モデルに保持ラベルを適用する|[保持ラベルをドキュメント理解モデルに適用する](./apply-a-retention-label-to-a-model.md)|
+|エクストラクターの作成時に、 Managed Metadata Service の用語ストアの分類を使用する|[エクストラクターの作成時に用語ストアの分類を活用する](./leverage-term-store-taxonomy.md)|
+|モデルに関するデータを表示する方法|[モデルの利用分析](./model-usage-analytics.md)|
+|モデルのトレーニング時にアクセシビリティ モードを使用する方法についての詳細|[SharePoint Syntex アクセシビリティ モード](./accessibility-mode.md)|
 
 ## <a name="premium-services"></a>プレミアム サービス
 
@@ -84,8 +84,8 @@ SharePoint Syntex ライセンスでは、ユーザーにプレミアム コン�
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|Simple Knowledge Organization System ベースの形式を使用して、データセットをインポートする方法について説明します。|[SKOS ベースの形式を使用して用語セットをインポートする](https://docs.microsoft.com/microsoft-365/contentunderstanding/import-term-set-skos)<br><br>[SharePoint 分類のための SKOS 形式の詳細](https://docs.microsoft.com/microsoft-365/contentunderstanding/skos-format-reference)<br><br>|
-|SharePoint のライブラリとリストでコンテンツタイプの一貫性をさらに向上させる方法について説明します。|[コンテンツタイプをハブにプッシュする](https://docs.microsoft.com/microsoft-365/contentunderstanding/push-content-type-to-hub)|
-|使用できる用語ストア レポートについての詳細情報|[用語ストア レポート](https://docs.microsoft.com/microsoft-365/contentunderstanding/term-store-analytics)|
+|Simple Knowledge Organization System ベースの形式を使用して、データセットをインポートする方法について説明します。|[SKOS ベースの形式を使用して用語セットをインポートする](./import-term-set-skos.md)<br><br>[SharePoint 分類のための SKOS 形式の詳細](./skos-format-reference.md)<br><br>|
+|SharePoint のライブラリとリストでコンテンツタイプの一貫性をさらに向上させる方法について説明します。|[コンテンツタイプをハブにプッシュする](./push-content-type-to-hub.md)|
+|使用できる用語ストア レポートについての詳細情報|[用語ストア レポート](./term-store-analytics.md)|
 
 ## <a name="see-also"></a>関連項目

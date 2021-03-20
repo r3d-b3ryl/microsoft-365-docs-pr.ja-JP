@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 継続請求をオフまたはオンにして Microsoft 365 を更新する方法について説明します。
-ms.openlocfilehash: 3bde3cc6d62e89e3339c268b9e3f9be5d657c467
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 8b38336ccb7a0a29b5782e55117389f6a19a0d80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114611"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903526"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -112,4 +112,4 @@ ms.locfileid: "50114611"
 
 [プロダクト キーを入力する](../enter-your-product-key.md)
   
-[Microsoft 365 for business の試用版を購入する](../buy-a-subscription-from-your-free-trial.md)
+[Microsoft 365 for business の試用版を購入する](../try-or-buy-microsoft-365.md)

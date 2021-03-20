@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7db9b9762830384370a4bedf220d7a52112ab1ea
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
-ms.translationtype: HT
+ms.openlocfilehash: 43e341111ad1cb9b64ac257903d0e79bf24df5bd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727213"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903888"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>統合された Microsoft 365 セキュリティ センターの概要
 
@@ -34,18 +34,18 @@ ms.locfileid: "50727213"
 
 **適用対象:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](./microsoft-threat-protection.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender for Office 365](../office-365-security/office-365-atp.md)
 
-> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](https://aka.ms/mtp-trial-lab)ことも、[実稼働環境でパイロット プロジェクトを実行する](https://aka.ms/m365d-pilotplaybook)こともできます。
+> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](./mtp-pilot.md?ocid=cx-evalpilot)こともできます。
 
 改善された **Microsoft 365 セキュリティ センター** ([https://security.microsoft.com](https://security.microsoft.com)) は、保護、検出、調査、および、*メール*、*コラボレーション*、*ID*、*デバイス* の脅威への対応を中央ポータルに統合します。
 
 Microsoft 365 セキュリティ センターは、Microsoft Defender セキュリティ センターや Office 365 セキュリティ/コンプライアンス センターなどの既存の Microsoft セキュリティ ポータルの機能を統合します。 セキュリティ センターは、情報への迅速なアクセス、よりシンプルなレイアウト、およびより簡単に使用できるように関連情報をまとめることを重視しています。 このセンターには次のものが含まれます。
 
-- **[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** Microsoft Defender for Office 365 は、メールと Office 365 リソースを保護するための一連の防止、検出、調査、およびハンティング機能を使用して、組織が企業を保護するのに役立ちます。
-- **[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** は、組織内のデバイスに対して、予防的な保護、侵害後の検出、自動調査、および対応を提供します。
+- **[Microsoft Defender for Office 365](../office-365-security/office-365-atp.md)** Microsoft Defender for Office 365 は、メールと Office 365 リソースを保護するための一連の防止、検出、調査、およびハンティング機能を使用して、組織が企業を保護するのに役立ちます。
+- **[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** は、組織内のデバイスに対して、予防的な保護、侵害後の検出、自動調査、および対応を提供します。
 - **[Microsoft 365 Defender](microsoft-threat-protection.md)** は、Microsoft の *Extended Detection and Response* (XDR) ソリューションの一部であり、Microsoft 365 セキュリティ ポートフォリオを活用して、ドメイン全体の脅威データを自動的に分析し、単一のダッシュボードで攻撃の全体像を構築します。
 
 Office 365 セキュリティ/コンプライアンス センターまたは Microsoft Defender セキュリティ センターからの変更点に関する情報が必要な場合は、以下を参照してください。
@@ -103,13 +103,13 @@ Microsoft 365 セキュリティ センターは、Microsoft Defender for Office
 
 ![エンドポイントの役割とグループ、役割、およびデバイス グループを表示する [アクセス許可と役割] ページ。](../../media/converged-roles-5.png)
 
- Microsoft 365 セキュリティ センターへのアクセスは、Azure Active Directory グローバル ロールを使用して、またはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft Defender セキュリティ センターへのユーザー アクセスの割り当て](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access)」をご覧ください。 Defender for Office 365 については、「[Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可](../office-365-security/permissions-microsoft-365-compliance-security.md)」をご覧ください。
+ Microsoft 365 セキュリティ センターへのアクセスは、Azure Active Directory グローバル ロールを使用して、またはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft Defender セキュリティ センターへのユーザー アクセスの割り当て](/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access)」をご覧ください。 Defender for Office 365 については、「[Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可](../office-365-security/permissions-microsoft-365-compliance-security.md)」をご覧ください。
 
 - [Microsoft 365 Defender へのアクセスを管理する](mtp-permissions.md)方法の詳細
 - Microsoft 365 セキュリティ センターで[カスタム ロールを作成する](custom-roles.md)方法の詳細
 
 > [!NOTE]
-> Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint は、[Microsoft Defender セキュリティ センターでアクセスが許可される](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)のと同じ方法で、[マネージド セキュリティ サービス プロバイダー (MSSP) へのアクセスの許可](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)をサポートします。
+> Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint は、[Microsoft Defender セキュリティ センターでアクセスが許可される](./mssp-access.md)のと同じ方法で、[マネージド セキュリティ サービス プロバイダー (MSSP) へのアクセスの許可](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)をサポートします。
 
 ### <a name="integrated-reports"></a>統合レポート
 
@@ -123,10 +123,10 @@ Microsoft 365 セキュリティ センターは、Microsoft Defender for Office
 
 カードは次のカテゴリに分類されます。
 
-- **ID** - 組織内の ID を監視し、疑わしいまたは危険な行動を追跡します。 [ID 保護の詳細をご覧ください](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+- **ID** - 組織内の ID を監視し、疑わしいまたは危険な行動を追跡します。 [ID 保護の詳細をご覧ください](/azure/active-directory/identity-protection/overview-identity-protection)。
 - **データ** - 無許可のデータ開示につながる可能性のあるユーザー アクティビティを追跡するのに役立ちます。
 - **デバイス** - デバイス上のアラート、違反アクティビティ、およびその他の脅威に関する最新情報を取得します。
-- **アプリ** - 組織でクラウド アプリがどのように使用されているかについての分析情報を得ます。 [Cloud App Security で検出されたアプリの詳細をご覧ください](https://docs.microsoft.com/cloud-app-security/discovered-apps)。
+- **アプリ** - 組織でクラウド アプリがどのように使用されているかについての分析情報を得ます。 [Cloud App Security で検出されたアプリの詳細をご覧ください](/cloud-app-security/discovered-apps)。
 
 ## <a name="threat-analytics-with-better-data-coverage"></a>より優れたデータ カバレッジを備えた脅威の分析
 次の Microsoft 365 Defender 脅威分析統合エクスペリエンスを使用して、新たな脅威を追跡し、対応します。
@@ -175,11 +175,11 @@ Microsoft 365 セキュリティ センターの特徴と機能を調べてく�
 
 - [インシデントとアラートを管理する](manage-incidents.md)
 - [脅威の分析を使用して、新たな脅威を追跡し対応する](threat-analytics.md)
-- [アクション センター](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-- [デバイス、メール、アプリ、ID 全体の脅威を探す](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
-- [カスタム検出ルール](https://docs.microsoft.com/microsoft-365/security/mtp/custom-detection-rules)
-- [メールとコラボレーションのアラート](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
-- [フィッシング攻撃のシミュレーションを作成し](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training)、[チームをトレーニングするためのペイロードを作成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [アクション センター](./mtp-action-center.md)
+- [デバイス、メール、アプリ、ID 全体の脅威を探す](./advanced-hunting-query-emails-devices.md)
+- [カスタム検出ルール](./custom-detection-rules.md)
+- [メールとコラボレーションのアラート](../../compliance/alert-policies.md#default-alert-policies)
+- [フィッシング攻撃のシミュレーションを作成し](../office-365-security/attack-simulation-training.md)、[チームをトレーニングするためのペイロードを作成する](../office-365-security/attack-simulation-training-payloads.md)
  
 ### <a name="related-information"></a>関連情報
 - [Microsoft 365 セキュリティ センター](overview-security-center.md)

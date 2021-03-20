@@ -1,5 +1,5 @@
 ---
-title: テストラボガイド (TLGs) を使用した Microsoft 365 のテスト
+title: テスト ラボ ガイド (TLG) を使用して Microsoft 365 をテストする
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,15 +19,15 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: '概要: これらのテストラボガイド (TLGs) を使用して、Microsoft 365 のデモ、概念実証、または開発/テスト環境を設定します。'
-ms.openlocfilehash: 9a8c13cfc89eff0852cc0589448e7745220e47b9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: '概要: これらのテスト ラボ ガイド (TLG) を使用して、Microsoft 365 のデモンストレーション、概念実証、開発/テスト環境をセットアップします。'
+ms.openlocfilehash: 6d6beccf450f3c03e4503bdcb18a189658a1af13
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691768"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905178"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>テストラボガイド (TLGs) を使用した Microsoft 365 のテスト
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>テスト ラボ ガイド (TLG) を使用して Microsoft 365 をテストする
 
 TLG では短時間で Microsoft 製品について学習できます。あるテクノロジや構成について、それが特定の状況に適しているかどうかを決定し、デザイン、プランニングを行いテクノロジをユーザーにロールアウトするさいに、事前に評価が必要な場合に最適です。この実地体験型ガイドにより、新しい製品やソリューションの展開要件を理解し、運用環境でホストする計画を立てやすくなります。
   
@@ -45,14 +45,14 @@ Microsoft 365 開発/テスト環境を構築するには、次の記事を使�
 
 - [シミュレートされたエンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)
     
-    Microsoft Azure インフラストラクチャサービスおよび Microsoft 365 Enterprise E5 試用版サブスクリプションで実行される簡略化されたイントラネットを作成します。 
+    Microsoft Azure インフラストラクチャ サービスと Microsoft 365 Enterprise E5 試用版サブスクリプションで実行されている簡略化されたイントラネットを作成します。 
 
     これはオプションであり、ハイブリッド ID のシミュレートされたエンタープライズ構成を構築する場合に必要です。
     
-Office 365 と Microsoft 365 の両方に適用される追加の TLGs については、「 [テストラボガイド](m365-enterprise-test-lab-guides.md)」を参照してください。  
+365 と Microsoft 365 の両方に適用Office TLG については、「テスト ラボ ガイド」 [を参照してください](m365-enterprise-test-lab-guides.md)。  
     
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/solution-architecture-center.md)
+[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)
   
 [ハイブリッド ソリューション](hybrid-solutions.md)

@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Teams のゲストとのタスク、会話、ドキュメントの共同作業を行うためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: 986f9c1f343c8ccc3d76557291938d170923c89b
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712320"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904662"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同作業する
 
@@ -38,7 +38,7 @@ ms.locfileid: "50712320"
 
 ## <a name="azure-external-collaboration-settings"></a>Azure 外部コラボレーションの設定
 
-Microsoft 365 での共有は、[Azure Active Directory における B2B 外部コラボレーションの設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) によって最高レベルで管理されます。 Azure AD でゲストの共有が無効になっているか、制限されている場合、この設定により、Microsoft 365 で構成した共有設定が上書きされます。
+Microsoft 365 での共有は、[Azure Active Directory における B2B 外部コラボレーションの設定](/azure/active-directory/external-identities/delegate-invitations) によって最高レベルで管理されます。 Azure AD でゲストの共有が無効になっているか、制限されている場合、この設定により、Microsoft 365 で構成した共有設定が上書きされます。
 
 B2B 外部コラボレーションの設定をチェックして、ゲストとの共有がブロックされていないことを確認します。
 
@@ -74,7 +74,7 @@ Teams ゲスト アクセスの設定を行うには
 5. [**Teams でのゲスト アクセスを許可する**] が [**オン**] に設定されていることを確認します。
 6. 追加のゲスト設定に必要な変更を加えて、[**保存**] をクリックします。
 
-Teams のゲスト アクセスがオンになっている場合、機密度ラベルを使用して、個別のチームやそのチームに関連する SharePoint サイトへのゲスト アクセスを制御することができます。 詳細については、「[機密ラベルを使用して、Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護する](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)」 をご覧ください。
+Teams のゲスト アクセスがオンになっている場合、機密度ラベルを使用して、個別のチームやそのチームに関連する SharePoint サイトへのゲスト アクセスを制御することができます。 詳細については、「[機密ラベルを使用して、Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)」 をご覧ください。
 
 > [!NOTE]
 > Teams のゲスト設定をオンにした後、有効になるまでには、最大で 24 時間かかる場合があります。
@@ -187,6 +187,6 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 
 [管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)
 
-[SharePoint および OneDrive の Azure AD B2B との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[共有オプションは、SharePoint または OneDrive から共有するときに淡色表示されます。](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[共有オプションは、SharePoint または OneDrive から共有するときに淡色表示されます。](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

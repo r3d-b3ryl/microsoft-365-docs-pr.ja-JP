@@ -1,5 +1,5 @@
 ---
-title: 管理者向けのサインアップヘルプ
+title: サインアップする方法 - 管理者ヘルプ
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,75 +26,75 @@ search.appverid:
 - GEA150
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: 'Office 365 のサインアッププロセスを開始する前に把握しておく必要のある情報について説明します。 '
-ms.openlocfilehash: 7cbbcecdf3520ce5f8bd266100c3934a9cd7a664
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+description: '365 のサインアップ プロセスを実行する前に知る必要Officeします。 '
+ms.openlocfilehash: 93d3f58db24e4233e8d7b2929fd2471707614097
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906277"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904374"
 ---
-# <a name="how-to-sign-up---admin-help"></a>管理者向けのサインアップヘルプ
+# <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
 ::: moniker range="o365-worldwide"
 
-Microsoft 365 for business にサインアップして、チームが Word、Excel、PowerPoint、その他の Office プログラムの最新バージョンを使い始めることができるようにします。
+Microsoft 365 for business にサインアップして、チームが Word、Excel、PowerPoint、その他の最新バージョンのプログラムの使用を開始Officeします。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Microsoft 365 for business にサインアップすると、チームは最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムを使い始めることができます。
+Microsoft 365 for business にサインアップして、チームが Word、Excel、PowerPoint、その他の最新バージョンのプログラムを使用Officeできます。
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-21Vianet が運用している Office 365 は、中国のセキュリティで保護された信頼性と拡張性の高いクラウドサービスのニーズを満たすように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft は、サービス自体を運用していません。 21Vianet は、サービスの配信を運営、提供、および管理します。 21Vianet は、中国の最大のキャリア中立インターネットデータセンターサービスプロバイダーで、ホスティング、管理されたネットワークサービス、およびクラウドコンピューティングインフラストラクチャサービスを提供します。 Microsoft テクノロジにライセンスを付与することにより、21Vianet がローカルの Microsoft データセンターを利用して、中国にデータを保持しながら Microsoft サービスを使用することができます。 21Vianet は、サブスクリプションと課金サービスに加えて、サポートも提供します。
+Office 21Vianet が運用する 365 は、中国のセキュリティで保護され、信頼性が高く、拡張性の高いクラウド サービスのニーズに対応するように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet は、サービスの配信を運用、提供、および管理します。 21Vianet は、ホスティング、管理されたネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データセンター サービス プロバイダーです。 Microsoft テクノロジをライセンスすることで、21Vianet はローカルの Microsoft データセンターを運用し、中国内のデータを保持しながら Microsoft サービスを使用できます。 21Vianet は、サブスクリプションサービスと課金サービス、およびサポートも提供します。
   
 > [!NOTE]
 > これらのサービスは中国の法律に従います。
   
-チームが最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムを使い始めることができるように、21Vianet が運用している Office 365 にサインアップします。
+21Vianet Office 365 にサインアップして、チームが Word、Excel、PowerPoint、その他の最新バージョンのプログラムの使用を開始Officeします。
   
-サインアップの準備ができましたか? [プランを選択](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)します。
+サインアップする準備はできましたか? [プランを選択します](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 ## <a name="choose-a-plan"></a>プランを選択する
 
-購入する前に、サインアップする計画についてご検討ください。 これにより、後で発生する問題を防ぐことができます。
+購入する前に、サインアップする計画にいくつかの考えをお入れください。 これにより、後で発生する問題を防ぐことができます。
 
 Microsoft 365 for business プランの選択に関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
-プランの選択についてサポートが必要な場合 セールスコンサルタントは、ご質問にお答えすることができます。 「 [すべての製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2) する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。
+プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [すべての製品 [を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## <a name="choose-a-plan"></a>プランを選択する
 
-購入する前に、サインアップする計画についてご検討ください。 これにより、後で発生する問題を防ぐことができます。
+購入する前に、サインアップする計画にいくつかの考えをお入れください。 これにより、後で発生する問題を防ぐことができます。
   
-プランの選択についてサポートが必要な場合 セールスコンサルタントは、ご質問にお答えすることができます。 「すべての [製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2) する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。 
+プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [すべての製品の [比較]](https://products.office.com/compare-all-microsoft-office-products?tab=2) に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。 
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>無料試用版にサインアップするか、サブスクリプションを購入する準備ができましたか?
 
-「 [すべての製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2) する」に移動して購入したいプランを選択し、サインアップウィザードを開始します。 
+[すべての [製品を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動して、購入するプランを選択し、サインアップ ウィザードを開始します。 
   
-無料試用版を使用して開始した場合は、 [後で購入](../../commerce/buy-a-subscription-from-your-free-trial.md)できます。 すべてのユーザーと試用版のデータは削除されません。
+無料試用版から始める場合は、後で [購入できます](../../commerce/try-or-buy-microsoft-365.md)。 すべてのユーザーと試用版のデータは削除されません。
   
-試用版をキャンセルする必要はありません。 試用版サブスクリプションを購入しない場合は、試用期間の終了時に自動的に期限切れになり、すべての情報が完全に削除されます。
+試用版をキャンセルする必要はない。 試用版サブスクリプションを購入しない場合は、試用期間の最後に自動的に有効期限が切れ、すべての情報が完全に削除されます。
 
-サインアッププロセスを示す短いビデオをご覧ください。<br><br>
+サインアップ プロセスを示す短いビデオを見る。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -103,37 +103,37 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 ::: moniker range="o365-germany"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>無料試用版にサインアップするか、サブスクリプションを購入する準備ができましたか?
 
-「 [すべての製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2) する」に移動して購入したいプランを選択し、サインアップウィザードを開始します。 
+[すべての [製品を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動して、購入するプランを選択し、サインアップ ウィザードを開始します。 
   
-無料試用版を使用して開始した場合は、 [後で購入](../../commerce/buy-a-subscription-from-your-free-trial.md)できます。 すべてのユーザーと試用版のデータは削除されません。
+無料試用版から始める場合は、後で [購入できます](../../commerce/try-or-buy-microsoft-365.md)。 すべてのユーザーと試用版のデータは削除されません。
   
-試用版をキャンセルする必要はありません。 試用版サブスクリプションを購入しない場合は、試用期間の終了時に自動的に期限切れになり、すべての情報が完全に削除されます。
+試用版をキャンセルする必要はない。 試用版サブスクリプションを購入しない場合は、試用期間の最後に自動的に有効期限が切れ、すべての情報が完全に削除されます。
   
 ::: moniker-end
 
-## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>サインアップ時に、次の情報を求めるメッセージが表示されます。
+## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>サインアップ時に次の情報を求めるメッセージが表示されます。
 
 - **サブスクリプションの住所と連絡先の情報:**
 
-  - サービスが使用される **国** 。 サインアップ処理中でも、後で国を変更することはでき **ません** 。サインアップウィザードを再起動する必要があります。
+  - **サービス** が使用される国。 サインアップ **プロセス中** でも、後で国を変更できない。サインアップ ウィザードを再起動する必要があります。
 
   - サブスクリプションに関する確認など、Microsoft から管理者に連絡する場合に使用する、 **メール アドレス** と **電話番号** 。管理者がパスワードを忘れた場合などに、この情報を使って仮のパスワードが送信されます。また、指定したメール アドレスに課金情報が送信されます。
 
     > [!NOTE]
-    > ここで入力する電子メールアドレスは、Microsoft 365 のメールアドレス (下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
+    > ここで入力する電子メール アドレスは、Microsoft 365 の電子メール アドレス (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
   
-- **サインイン名 (ユーザー ID):** このユーザー ID は、すぐに開始できるように、最初の Microsoft 365 メールアドレスになります。
+- **サインイン名 (ユーザー ID):** このユーザー ID は、すぐに開始するために、最初の Microsoft 365 メール アドレスになります。
 
-    このユーザー ID は、サインインに使用する電子メールアドレスです。 たとえば会社名が「Fourth Coffee」の場合には、ユーザー ID として rob@fourthcoffee.onmicrosoft.com を選ぶことができます。
+    このユーザー ID は、サインインに使用する電子メール アドレスです。 たとえば会社名が「Fourth Coffee」の場合には、ユーザー ID として rob@fourthcoffee.onmicrosoft.com を選ぶことができます。
 
-    ほとんどのユーザーは、サインアップした直後に独自のカスタムドメインを追加して、そのドメインにメールを取得することができます。 たとえば、fourthcoffee.com というカスタム ドメインがある場合に、メール アドレスを rob@fourthcoffee.com に設定することができます。
+    ほとんどのユーザーは、サインアップ直後に独自のカスタム ドメインを追加し、電子メールの取得を開始できます。 たとえば、fourthcoffee.com というカスタム ドメインがある場合に、メール アドレスを rob@fourthcoffee.com に設定することができます。
 
 - **支払情報**
 
-    サブスクリプションの支払いは、クレジットカードで行うことができます。 料金が一定の額に達した場合は、請求書でお支払いいただくというオプションもあります。
+    サブスクリプションの支払いはクレジット カードで行います。 料金が一定の額に達した場合は、請求書でお支払いいただくというオプションもあります。
 
     > [!IMPORTANT]
-    >  サインアップする際には、組織に最適な支払いオプションを選択してください。 支払いオプションを変更するには、課金サポートに連絡する必要があります。
+    >  サインアップする場合は、組織に最適な支払い方法を選択してください。 支払いオプションを変更するには、課金サポートに連絡する必要があります。
 
 ## <a name="see-also"></a>関連項目
 

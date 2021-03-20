@@ -22,20 +22,20 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: 削除されたユーザー アカウントとすべての関連データを復元する方法について学習します。
-ms.openlocfilehash: d14995c8ee2d62c1d722ef0bcc7577745a747082
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: 削除されたユーザー アカウントと関連付けられているすべてのデータを復元する方法について学習します。
+ms.openlocfilehash: f3986ed1ba007dcac87bdfb9322ba5c5bf081b35
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113999"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903714"
 ---
 # <a name="restore-a-user"></a>ユーザーを復元する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
    
@@ -54,30 +54,30 @@ ms.locfileid: "50113999"
  
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[削除されたユーザー]ページ \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">に移動</a>します。
+1. 管理センターで、[ユーザーの削除済 **み** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">ユーザー] ページに移動</a> します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=848041)削除されたユーザー  ] \> **を選択します**。
+1. 管理センターに移動 [し、[](https://go.microsoft.com/fwlink/p/?linkid=848041)ユーザーの削除済 **みユーザー]** \> **を選択します**。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=850627)削除されたユーザー  ] \> **を選択します**。
+1. 管理センターに移動 [し、[](https://go.microsoft.com/fwlink/p/?linkid=850627)ユーザーの削除済 **みユーザー]** \> **を選択します**。
 
 ::: moniker-end
 
-2. [削除 **済みユーザー]** ページで、復元するユーザーの名前を選択し、[復元] を選択 **します**。
+2. [削除 **されたユーザー] ページ** で、復元するユーザーの名前を選択し、[復元] を **選択します**。
     
  
 3. プロンプトに従ってパスワードを設定し、[復元] を **選択します**。
     
-4. ユーザーが正常に復元された場合は、[メールを送信して閉じる **] を選択します**。 名前の競合またはプロキシ アドレスの競合が発生した場合は、これらのアカウントの復元方法については、以下の手順を参照してください。
+4. ユーザーが正常に復元された場合は、[電子メールを送信して **閉じる] を選択します**。 名前の競合またはプロキシ アドレスの競合が発生した場合は、これらのアカウントの復元方法については、以下の手順を参照してください。
     
-ユーザーを復元した後、ユーザーのパスワードが変更されたと通知し、ユーザーをフォローアップします。
+ユーザーを復元した後で、パスワードが変更されたと通知し、そのユーザーをフォローアップしてください。
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>ユーザー名が競合するユーザーを復元する
 <a name="RestoreUserNameConflict"> </a>
@@ -89,24 +89,24 @@ ms.locfileid: "50113999"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[削除されたユーザー]ページ \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">に移動</a>します。
+1. 管理センターで、[ユーザーの削除済 **み** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">ユーザー] ページに移動</a> します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=848041)削除されたユーザー  ] \> **を選択します**。
+1. 管理センターに移動 [し、[](https://go.microsoft.com/fwlink/p/?linkid=848041)ユーザーの削除済 **みユーザー]** \> **を選択します**。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=850627)削除されたユーザー  ] \> **を選択します**。
+1. 管理センターに移動 [し、[](https://go.microsoft.com/fwlink/p/?linkid=850627)ユーザーの削除済 **みユーザー]** \> **を選択します**。
 
 ::: moniker-end
 
   
-2. [削除 **済みユーザー]** ページで、復元するユーザーの名前を選択し、[復元] を選択 **します**。
+2. [削除 **されたユーザー] ページ** で、復元するユーザーの名前を選択し、[復元] を **選択します**。
     
     > [!NOTE]
     > 2 人以上のユーザーの復元が失敗した場合、エラー メッセージで一部のユーザーの復元操作が失敗したことが示されます。ログを見て復元されなかったユーザーを確認し、失敗したアカウントを 1 つずつ復元します。 
@@ -130,29 +130,28 @@ ms.locfileid: "50113999"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[削除されたユーザー]ページ \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">に移動</a>します。
+1. 管理センターで、[ユーザーの削除済 **み** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">ユーザー] ページに移動</a> します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=848041)削除されたユーザー  ] \> **を選択します**。
+管理センターに移動 [し、[](https://go.microsoft.com/fwlink/p/?linkid=848041)ユーザーの削除済 **みユーザー]** \> **を選択します**。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターに [移動し、[](https://go.microsoft.com/fwlink/p/?linkid=850627)削除されたユーザー  ] \> **を選択します**。
+1. 管理センターに移動 [し、[](https://go.microsoft.com/fwlink/p/?linkid=850627)ユーザーの削除済 **みユーザー]** \> **を選択します**。
 
 ::: moniker-end
 
 2. [ **削除済みのユーザー**] ページで、復元するユーザーを選択して、[ **復元**] を選択します。 
     
-3. [復元 **] ページで** 、指示に従ってパスワードを設定し、[復元] を **選択します**。 競合しているプロキシ アドレスは、復元したユーザーから自動的に削除されます。
+3. [復元] **ページで** 、指示に従ってパスワードを設定し、[復元] を **選択します**。 競合しているプロキシ アドレスは、復元したユーザーから自動的に削除されます。
     
 4. 結果を確認し、[ **閉じる**] を選びます。
 
 ## <a name="related-articles"></a>関連記事
 
 [ユーザーの削除](delete-a-user.md)
-  

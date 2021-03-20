@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
-ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868005"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903483"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>高度な監査を使用して、侵害されたアカウントを調査する
 
@@ -31,7 +31,7 @@ ms.locfileid: "49868005"
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>MailItemsAccessed メールボックス監査アクション
 
-新しい MailItemsAccessed アクションは、新しい[高度な監査](advanced-audit.md)機能の一部です。 [Exchange メールボックス監査](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)の一部であり、Office 365 または Microsoft 365 E5 ライセンスが割り当てられているユーザー、または Microsoft 365 E5 コンプライアンス アドオンのサブスクリプションを持つ組織に対して既定で有効になっています。
+新しい MailItemsAccessed アクションは、新しい[高度な監査](advanced-audit.md)機能の一部です。 [Exchange メールボックス監査](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)の一部であり、Office 365 または Microsoft 365 E5 ライセンスが割り当てられているユーザー、または Microsoft 365 E5 コンプライアンス アドオンのサブスクリプションを持つ組織に対して既定で有効になっています。
 
 MailItemsAccessed メールボックス監査アクションは、POP、IMAP、MAPI、EWS、Exchange ActiveSync、および REST のすべてのメール プロトコルを対象としています。 また、*同期* と *バインド* の両方の種類のメールへのアクセスもカバーしています。
 
@@ -67,7 +67,7 @@ MailItemsAccessed メールボックス監査アクションは、POP、IMAP、M
 
 メールボックスの監査では、メール メッセージへのアクセスに関する監査レコードが生成されるため、メール メッセージが侵害されていないことを確信できます。 この理由から、一部のデータがアクセスされたかどうかが確かではない状況では、すべてのメール アクセス アクティビティを記録することで、それがなされたと想定します。
 
-通常、フォレンシック目的での MailItemsAccessed 監査レコードの使用は、データ侵害が解決され、攻撃者が立ち退いた後に実行されます。 調査を開始するには、侵害されたメールボックスのセットを特定し、攻撃者が組織内のメールボックスにアクセスした時間枠を特定する必要があります。 次に、[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) で **Search-UnifiedAuditLog** または **Search-MailboxAuditLog** コマンドレットを使用して、データ侵害に対応する監査レコードを検索できます。 
+通常、フォレンシック目的での MailItemsAccessed 監査レコードの使用は、データ侵害が解決され、攻撃者が立ち退いた後に実行されます。 調査を開始するには、侵害されたメールボックスのセットを特定し、攻撃者が組織内のメールボックスにアクセスした時間枠を特定する必要があります。 次に、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で **Search-UnifiedAuditLog** または **Search-MailboxAuditLog** コマンドレットを使用して、データ侵害に対応する監査レコードを検索できます。 
 
 次のいずれかのコマンドを実行して、MailItemsAccessed 監査レコードを検索できます。
 
@@ -192,4 +192,4 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 ```powershell
 Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
-``` 
+```

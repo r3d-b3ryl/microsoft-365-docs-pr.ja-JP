@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntexでフォーム処理モデルを作成します。
-ms.openlocfilehash: c025317a5eb88199b849f90b51fac9779e1c97a2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d71273e416bf7922627e44d9423eaa8903411689
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976011"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905848"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexでフォーム処理モデルを作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "49976011"
 
 </br>
 
-[AI ビルダー](https://docs.microsoft.com/ai-builder/overview)-Microsoft PowerApps の a 機能-SharePoint Syntex のユーザーは、SharePoint ドキュメントライブラリから直接 [フォームプ処理モデル](form-processing-overview.md)を作成できます。 
+[AI ビルダー](/ai-builder/overview)-Microsoft PowerApps の a 機能-SharePoint Syntex のユーザーは、SharePoint ドキュメントライブラリから直接 [フォームプ処理モデル](form-processing-overview.md)を作成できます。 
 
 フォーム処理モデルを作成するには、次の操作を行います。
  - 手順 1: コンテンツタイプを作成するために、フォーム処理モデルを作成する
@@ -68,7 +68,7 @@ ms.locfileid: "49976011"
 新しいフォーム処理モデルを作成すると、ブラウザーに新しい PowerApps AI ビルダーフォームプロセスモデルページが開きます。 このページでは、サンプルドキュメントを追加して分析できます。 </br>
 
 > [!NOTE]
-> 使用するサンプルファイルを探すには、「 [フォームプロセッシングモデルインプットの要件および最適化のヒント](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)」を参照してください。 
+> 使用するサンプルファイルを探すには、「 [フォームプロセッシングモデルインプットの要件および最適化のヒント](/ai-builder/form-processing-model-requirements)」を参照してください。 
 
    ![Power Apps AI ビルダー](../media/content-understanding/powerapps.png)</br> 
  
@@ -148,6 +148,6 @@ ms.locfileid: "49976011"
 
 ## <a name="see-also"></a>関連項目
   
-[Power 自動化 ドキュメント](https://docs.microsoft.com/power-automate/)
+[Power 自動化 ドキュメント](/power-automate/)
 
-[トレーニング: AI ビルダーを使用してビジネスの実績を高める](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[トレーニング: AI ビルダーを使用してビジネスの実績を高める](/learn/paths/improve-business-performance-ai-builder/?source=learn)

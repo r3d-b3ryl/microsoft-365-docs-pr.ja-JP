@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: コンテンツセンターを作成する方法を説明します。
-ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515138"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905826"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexでコンテンツセンターを作成する
 
@@ -35,12 +35,12 @@ ms.locfileid: "50515138"
 [セットアップ](set-up-content-understanding.md)中に既定のコンテンツ センターを作成します。 ただし、SharePoint 管理者は、必要に応じて追加のセンターを作成することもできます。 すべてのモデル アクティビティをロールアップする環境では単一のコンテンツ センターで十分な場合もありますが、組織内の複数の部門に追加のセンターを用意することもできます。これらの部門では、モデルのニーズと権限要件が異なる場合があります。
 
 > [!NOTE]
-> [Microsoft 365 Multi-Geo 環境](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)では、中央の場所に単一の既定のコンテンツ センターがある場合、その場所内からのみモデル アクティビティのロールアップを提供できます。 現在、Multi-Geo 環境のファーム境界を越えてモデル アクティビティのロールアップを取得することはできません。 
+> [Microsoft 365 Multi-Geo 環境](../enterprise/microsoft-365-multi-geo.md)では、中央の場所に単一の既定のコンテンツ センターがある場合、その場所内からのみモデル アクティビティのロールアップを提供できます。 現在、Multi-Geo 環境のファーム境界を越えてモデル アクティビティのロールアップを取得することはできません。 
 
 
 ## <a name="create-a-content-center"></a>コンテンツ センターを作成する
 
-SharePoint 管理者は、管理センター サイトプ ロビジョニング パネルを介して[他のSharePoint サイトを作成する](https://docs.microsoft.com/sharepoint/create-site-collection)のと同じように、コンテンツ センター サイトを作成できます。
+SharePoint 管理者は、管理センター サイトプ ロビジョニング パネルを介して[他のSharePoint サイトを作成する](/sharepoint/create-site-collection)のと同じように、コンテンツ センター サイトを作成できます。
 
 新しいコンテンツ センターを作成するには
 
@@ -63,7 +63,7 @@ SharePoint 管理者は、管理センター サイトプ ロビジョニング 
 
 ### <a name="give-access-to-additional-users"></a>追加のユーザーにアクセスを許可する
  
-サイトを作成した後、標準の [SharePoint サイト アクセス許可モデル](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions)を使用して、追加のユーザーにサイトへのアクセスを許可できます。
+サイトを作成した後、標準の [SharePoint サイト アクセス許可モデル](/sharepoint/modern-experience-sharing-permissions)を使用して、追加のユーザーにサイトへのアクセスを許可できます。
 
 ## <a name="see-also"></a>関連項目
 [分類子を作成する](create-a-classifier.md)
@@ -76,4 +76,4 @@ SharePoint 管理者は、管理センター サイトプ ロビジョニング 
 
 [フォーム処理モデルを作成する](create-a-form-processing-model.md)
 
-[モデルを適用する](apply-a-model.md)    
+[モデルを適用する](apply-a-model.md)

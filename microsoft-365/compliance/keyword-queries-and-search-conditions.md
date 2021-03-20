@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 の検索ツールとeDiscovery ツールを使用して検索できるメールとファイルのプロパティについて説明します。
-ms.openlocfilehash: d5b558df15cde6be6f87663dcb999efc6ec66f7e
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604033"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903585"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>コンテンツ検索と eDiscovery のキーワード クエリと検索条件
 
@@ -42,7 +42,7 @@ ms.locfileid: "50604033"
 コンテンツ検索を作成するための詳しい手順については、「[コンテンツ検索](content-search.md)」を参照してください。
 
 > [!NOTE]
-> Microsoft 365 コンプライアンス センターのコンテンツ検索およびそれに対応する **\*-セキュリティ/コンプライアンスセンター PowerShell のComplianceSearch** cmdlets は、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](https://go.microsoft.com/fwlink/?LinkId=269603)」を参照してください。 
+> Microsoft 365 コンプライアンス センターのコンテンツ検索およびそれに対応する **\*-セキュリティ/コンプライアンスセンター PowerShell のComplianceSearch** cmdlets は、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。 
   
 ## <a name="searchable-email-properties"></a>検索可能なメール プロパティ
 
@@ -91,7 +91,7 @@ ms.locfileid: "50604033"
 
 次の表には、セキュリティ/コンプライアンス センター のコンテンツ検索機能か、**New-ComplianceSearch** または **Set-ComplianceSearch** コマンドレットを使って検索できる、SharePoint および OneDrive for Business のプロパティの一部が一覧表示されています。 表には、各プロパティの  _property:value_ 構文の例、およびその例で返される検索結果の説明が含まれています。 
   
-検索可能な SharePoint プロパティの完全な一覧については、「[クロールされたプロパティと管理プロパティの概要](https://go.microsoft.com/fwlink/p/?LinkId=331599)」を参照してください。 [**クエリ可能**] 列で **[はい]** と示されているプロパティが検索可能です。 
+検索可能な SharePoint プロパティの完全な一覧については、「[クロールされたプロパティと管理プロパティの概要](/SharePoint/technical-reference/crawled-and-managed-properties-overview)」を参照してください。 [**クエリ可能**] 列で **[はい]** と示されているプロパティが検索可能です。 
   
 | プロパティ | プロパティの説明 | 例 | 例で返される検索結果 |
 |:-----|:-----|:-----|:-----|
@@ -171,7 +171,7 @@ Microsoft 365 コンプライアンス センターの eDiscovery 検索機能�
 
   次に、`SensitiveType` 検索プロパティで ID を使用して、カスタムの機密データ型を含むドキュメントを返します。例えば `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
   
-- 機密性のある情報の種類と `SensitiveType` 検索プロパティは、Exchange Online メールボックスに保管されている機密性の高いデータの検索には使用できません。 これには、1 対 1 のチャット メッセージ、1:N のグループ チャット メッセージ、Microsoft Teams のチーム チャネルの会話が含まれます。これらのコンテンツはすべてメールボックスに保存されているからです。 ただし、データ損失防止 (DLP) ポリシーを使用して、転送中の機密性の高いメール データを保護できます。 詳細については、「[データ損失防止ポリシーの概要](data-loss-prevention-policies.md)」と「[個人データの検索](search-for-and-find-personal-data.md)」を参照してください。
+- 機密性のある情報の種類と `SensitiveType` 検索プロパティは、Exchange Online メールボックスに保管されている機密性の高いデータの検索には使用できません。 これには、1 対 1 のチャット メッセージ、1:N のグループ チャット メッセージ、Microsoft Teams のチーム チャネルの会話が含まれます。これらのコンテンツはすべてメールボックスに保存されているからです。 ただし、データ損失防止 (DLP) ポリシーを使用して、転送中の機密性の高いメール データを保護できます。 詳細については、「[データ損失防止ポリシーの概要](data-loss-prevention-policies.md)」と「[個人データの検索](/compliance/regulatory/gdpr)」を参照してください。
   
 ## <a name="search-operators"></a>検索演算子
 
@@ -238,7 +238,7 @@ Microsoft 365 コンプライアンス センターの eDiscovery 検索機能�
 |:-----|:-----|
 |メッセージの種類| 検索するメッセージの種類。 これは、Kind メール プロパティと同じプロパティです。 可能な値:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |Participants|メール メッセージのすべての送受信者フィールド。 すなわち、[差出人]、[宛先]、[Cc]、[Bcc] の各フィールドです。|
-|Type|メール アイテムのメッセージ クラス プロパティ。 これは、ItemClass メール プロパティと同じプロパティです。 また、複数値の条件です。 複数のメッセージ クラスを選ぶには、**Ctrl** キーを押したまま、ドロップダウン リストで条件に追加する複数のメッセージ クラスをクリックします。 リストで選んだ各メッセージ クラスは、対応する検索クエリでは **OR** 演算子によって論理的に接続されます。  <br/> Exchange によって使われていて **メッセージ クラス** リストで選ぶことができるメッセージ クラス (およびそれに対応するメッセージ クラス ID) のリストについては、「[アイテムの種類とメッセージ クラス](https://go.microsoft.com/fwlink/?linkid=848143)」をご覧ください。|
+|Type|メール アイテムのメッセージ クラス プロパティ。 これは、ItemClass メール プロパティと同じプロパティです。 また、複数値の条件です。 複数のメッセージ クラスを選ぶには、**Ctrl** キーを押したまま、ドロップダウン リストで条件に追加する複数のメッセージ クラスをクリックします。 リストで選んだ各メッセージ クラスは、対応する検索クエリでは **OR** 演算子によって論理的に接続されます。  <br/> Exchange によって使われていて **メッセージ クラス** リストで選ぶことができるメッセージ クラス (およびそれに対応するメッセージ クラス ID) のリストについては、「[アイテムの種類とメッセージ クラス](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)」をご覧ください。|
 |受信済み|電子メール メッセージが受信者によって受信された日付。 これは、Received メール プロパティと同じプロパティです。|
 |Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。|
 |Sender|電子メール メッセージの差出人。|

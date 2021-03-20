@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で受信メッセージを許可するための利用可能なオプションと優先オプションについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 33f4e9ac33f7952612e8b469345e38507ece5f4b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 88c70eea4952eda9315687ae90e2f6834f1edaf8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453743"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903822"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で差出人セーフ リストを作成する
 
@@ -58,11 +58,11 @@ Exchange Online のメールボックスを持つ Microsoft 365 のお客様、�
 
 ## <a name="recommended-use-mail-flow-rules"></a>(推奨)メール フロー ルールの使用
 
-Exchange Online およびスタンドアロン EOP のメール フロー ルールでは、条件と例外を使用してメッセージを識別し、それらのメッセージに対して実行する処理を指定します。 詳細については、「[Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」を参照してください。
+Exchange Online およびスタンドアロン EOP のメール フロー ルールでは、条件と例外を使用してメッセージを識別し、それらのメッセージに対して実行する処理を指定します。 詳細については、「[Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」を参照してください。
 
-次の例では、スパム フィルターをスキップするために、contoso.comメールが必要だと仮定しています。 これを行うには、次の設定を構成します。
+次の例では、スパム フィルターをスキップするために、contoso.com メールが必要だと仮定しています。 これを行うには、次の設定を構成します。
 
-1. **条件**:**送信者ドメイン** \> **がcontoso.com。** \>
+1. **条件**: **送信者ドメイン** \> **が** \> contoso.com。
 
 2. 次のいずれかの設定を構成します。
 
@@ -148,16 +148,16 @@ Exchange Online およびスタンドアロン EOP のメール フロー ルー
 
 たとえば、Blue Yonder Airlines がメール広告を送信するために Margie's Travel を採用したとします。 受信トレイで受信するメッセージには、次のプロパティがあります。
 
-- アドレス `5321.MailFrom` はblueyonder.airlines@margiestravel.com。
+- アドレス `5321.MailFrom` は blueyonder.airlines@margiestravel.com。
 
-- アドレス `5322.From` はblueyonder@news.blueyonderairlines.com Outlook に表示されます。
+- アドレス `5322.From` は blueyonder@news.blueyonderairlines.com Outlook に表示されます。
 
 EOP のスパム対策ポリシーのセーフ 送信者リストとセーフ ドメイン リストは、アドレスのみを検査します。これは、アドレスを使用する Outlook セーフ 送信者と `5322.From` 似 `5322.From` ています。
 
 このメッセージがフィルター処理されるのを防ぐために、次の手順を実行できます。
 
-- Outlook blueyonder@news.blueyonderairlines.com差出 `5322.From` 人としてユーザー (アドレス) を追加します。
+- Outlook blueyonder@news.blueyonderairlines.com 差出 `5322.From` 人としてユーザー (アドレス) を追加します。
 
-- [メール フロー ルールを使用](#recommended-use-mail-flow-rules) して、メッセージ (アドレス、blueyonder@news.blueyonderairlines.com (the)、または両方) をblueyonder.airlines@margiestravel.com `5322.From` `5321.MailFrom` する条件を指定します。
+- [メール フロー ルールを使用](#recommended-use-mail-flow-rules) して、メッセージ (アドレス、blueyonder@news.blueyonderairlines.com (the)、または両方) を blueyonder.airlines@margiestravel.com `5322.From` `5321.MailFrom` する条件を指定します。
 
 詳細については、「EOP で差出人 [セーフ リストを作成する」を参照してください](create-safe-sender-lists-in-office-365.md)。

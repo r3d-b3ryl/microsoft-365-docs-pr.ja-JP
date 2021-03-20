@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454161"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904938"
 ---
 # <a name="create-a-new-topic"></a>新規トピックを作成する 
 
@@ -29,11 +29,11 @@ ms.locfileid: "50454161"
 > AI によって収集されるトピックの情報はセキュリティでトリミング[](topic-experiences-security-trimming.md)されますが、手動で作成したトピックのトピックの説明とユーザー情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
 
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 新しいトピックを作成するには、次の必要があります。
 - Viva Topics ライセンスを持っている。
-- トピックを作成または編集 [**できるユーザーに対するアクセス許可を持つ**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、ビバ トピックのアクセス許可設定でユーザーにこのアクセス許可を付与できます。 
+- トピックを作成または編集 [**できるユーザーに対するアクセス許可を持つ**](./topic-experiences-user-permissions.md)。 ナレッジ管理者は、ビバ トピックのアクセス許可設定でユーザーにこのアクセス許可を付与できます。 
 
 > [!Note] 
 > トピック センター (ナレッジ マネージャー) でトピックを管理する権限を持つユーザーには、トピックを作成および編集するためのアクセス許可が既に付与されています。
@@ -126,13 +126,6 @@ ms.locfileid: "50454161"
 
 
 ## <a name="see-also"></a>関連項目
-
-
-
-  
-
-
-
 
 
 

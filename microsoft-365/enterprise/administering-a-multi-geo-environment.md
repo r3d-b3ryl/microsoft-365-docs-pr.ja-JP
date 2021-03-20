@@ -14,13 +14,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 管理者は、複数地域環境で SharePoint および OneDrive サービスを管理する方法について学習できます。
-ms.openlocfilehash: 1b6d2cb1cb9511677f717f0e58553abc4473e1ad
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 管理者は、複数地域環境で SharePoint サービスと OneDrive サービスを管理する方法について説明します。
+ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691618"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905602"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -76,17 +76,17 @@ DLP ポリシーは、そのポリシーの適用性に基づいて各地域の�
 
 ## <a name="taxonomy"></a>分類
 
-マスターは会社の中心地にホストされているため、地域全体で会社の管理されたメタデータに統一された[分類](https://docs.microsoft.com/sharepoint/managed-metadata)をサポートしています。 中心地からグローバル分類を管理し、サテライト地域の分類に地域固有の用語を追加することをお勧めします。 グローバル分類の用語は、サテライト地域に同期されます。
+マスターは会社の中心地にホストされているため、地域全体で会社の管理されたメタデータに統一された[分類](/sharepoint/managed-metadata)をサポートしています。 中心地からグローバル分類を管理し、サテライト地域の分類に地域固有の用語を追加することをお勧めします。 グローバル分類の用語は、サテライト地域に同期されます。
 
-詳細と開発者向けガイダンスについては、[複数地域テナントにおけるメタデータの管理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-managedmetadata)を参照してください。
+詳細と開発者向けガイダンスについては、[複数地域テナントにおけるメタデータの管理](/sharepoint/dev/solution-guidance/multigeo-managedmetadata)を参照してください。
 
 ## <a name="user-profile-application"></a>ユーザー プロファイル アプリケーション
 
-各地域に[ユーザー プロフィール アプリケーション](https://docs.microsoft.com/sharepoint/manage-user-profiles)があります。 各ユーザーのプロフィール情報は、ユーザーの地域でホストされており、その地域の管理者が利用できます。
+各地域に[ユーザー プロフィール アプリケーション](/sharepoint/manage-user-profiles)があります。 各ユーザーのプロフィール情報は、ユーザーの地域でホストされており、その地域の管理者が利用できます。
 
-カスタムのプロフィール プロパティがある場合は、すべての地域で同じプロフィール スキーマを使用して、すべての地域の場所または必要な場所のどちらかにカスタムのプロフィール プロパティを設定します。 プログラムを使用したユーザー プロフィール データの設定方法に関するガイダンスは、[ユーザー プロフィールの一括更新 API](https://docs.microsoft.com/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)を参照してください。
+カスタムのプロフィール プロパティがある場合は、すべての地域で同じプロフィール スキーマを使用して、すべての地域の場所または必要な場所のどちらかにカスタムのプロフィール プロパティを設定します。 プログラムを使用したユーザー プロフィール データの設定方法に関するガイダンスは、[ユーザー プロフィールの一括更新 API](/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)を参照してください。
 
-詳細と開発者向けガイダンスについては、[複数地域テナントのユーザー プロフィールの操作](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-userprofileexperience)を参照してください。
+詳細と開発者向けガイダンスについては、[複数地域テナントのユーザー プロフィールの操作](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience)を参照してください。
 
 ## <a name="video-portal"></a>ビデオ ポータル
 
@@ -107,4 +107,4 @@ DLP ポリシーは、そのポリシーの適用性に基づいて各地域の�
 
 ## <a name="yammer"></a>Yammer
 
-Yammer は複数地域のワークロードではありません。 Yammer に格納されている yammer スレッドは、テナントの中央の場所に配置されます。 Yammer は、SharePoint 内で Yammer ファイルを保存するファイルストレージの変更をロールアウトしています。 SharePoint に格納されている yammer ファイルは、Yammer グループに関連付けられた SharePoint サイトに配置されます。 SharePoint グループサイトは、「 [Sharepoint サイトとグループ](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)」に説明されている PDL ロジックに基づいています。
+Yammerは、複数地域のワークロードではありません。 Yammerに格納されているYammerは、テナントの中央の場所に配置されます。 Yammer、SharePoint 内のファイルを格納するファイル ストレージYammer展開しています。 Yammerファイルは、SharePoint グループに関連付けられた SharePoint サイトYammerされます。 SharePoint グループ サイトは、「SharePoint サイトとグループ」で説明されている [PDL ロジックに基づいて作成されます](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)。

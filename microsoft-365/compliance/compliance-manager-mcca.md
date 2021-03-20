@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: 272477251efed7ebf13bd2e644869eaf2aad1bc2
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454688"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906039"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -101,9 +101,9 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
     ```
   | Input |  国または地域 | 
   | :------------- | :------------: |
-  | 1  | アジア太平洋 |
-  | 2  | オーストラリア |
-  | 3  | カナダ |
+  | 1 | アジア太平洋 |
+  | 2 | オーストラリア |
+  | 3 | カナダ |
   | 4  | ヨーロッパ (フランスを除く) / 中東 / アフリカ |
   | 5  | フランス |
   | 6  | インド |
@@ -167,4 +167,4 @@ DLP の場合、推奨される情報に基づいて事前に生成された Pow
 
 MCCA のインストール、セットアップ、および使用の詳細については、GitHub の README の手順 [(GitHub](https://github.com/OfficeDev/MCCA#overview) アカウントは必要ありません) を参照してください。
 
-詳細については、「PowerShell Windows PowerShell [の使い方」を参照してください](https://docs.microsoft.com/powershell/scripting/how-to-use-docs?view=powershell-7)。 [「Starting Windows PowerShell」も参照してください](https://docs.microsoft.com/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)。
+詳細については、「PowerShell Windows PowerShell [の使い方」を参照してください](/powershell/scripting/how-to-use-docs?view=powershell-7)。 [「Starting Windows PowerShell」も参照してください](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)。

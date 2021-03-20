@@ -14,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド専用の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 1e659304eee330960937b641c9a39b03920f52e7
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3e5a9ef1f610bf3dc6d23c9e584e179fb8ab9ca9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233132"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905142"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件
 
-*このテスト ラボ ガイドは、エンタープライズ テスト環境向け Microsoft 365 でのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
 
-[ID とデバイスのアクセス](../security/office-365-security/microsoft-365-policies-configurations.md) 構成は、Azure Active Directory (Azure AD) と統合されているすべてのサービスへのアクセスを保護するための、推奨される構成と条件付きアクセス ポリシーのセットです。
+[ID およびデバイス アクセス](../security/office-365-security/microsoft-365-policies-configurations.md) 構成は、Azure Active Directory (Azure Active Directory ) と統合されているすべてのサービスへのアクセスを保護するための一連の推奨構成と条件付きアクセス ポリシー AD。
 
 この記事では、ID とデバイス アクセス用の[クラウド専用の前提条件構成](../security/office-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。
 
@@ -51,9 +51,9 @@ ms.locfileid: "50233132"
 
 最初に、組織で使用されているパブリック IP アドレスまたはアドレス範囲を確認します。
 
-次に、「[Azure Active Directory で名前付きの場所を構成する](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)」の手順に従って、アドレスまたはアドレス範囲を名前付きの場所として追加します。 
+次に、「[Azure Active Directory で名前付きの場所を構成する](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)」の手順に従って、アドレスまたはアドレス範囲を名前付きの場所として追加します。 
 
-## <a name="phase-3-configure-self-service-password-reset"></a>フェーズ 3: セルフサービスによるパスワードのリセットを構成する
+## <a name="phase-3-configure-self-service-password-reset"></a>フェーズ 3: セルフサービス パスワードのリセットを構成する
 
 次に、テスト ラボ ガイドの[「パスワードのリセット」のフェーズ 3](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset) に説明されている手順に従います。 
 
@@ -79,11 +79,11 @@ User 2 アカウントの多要素認証のみテストします。
 
 ## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>フェーズ 5: ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする 
 
-ドメイン [に参加している](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) Windows コンピューターのデバイスの自動登録を有効にするには、次の手順に従います。
+ドメイン [に参加している Windows コンピューター](/azure/active-directory/devices/hybrid-azuread-join-plan) のデバイスの自動登録を有効にするには、次の手順に従います。
 
-## <a name="phase-6-configure-azure-ad-password-protection"></a>フェーズ 6: Azure ADパスワード保護を構成する 
+## <a name="phase-6-configure-azure-ad-password-protection"></a>フェーズ 6: Azure のパスワード保護AD構成する 
 
-既知 [の脆弱なパスワード](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) とそのバリアントをブロックするには、次の手順に従います。
+既知 [の脆弱なパスワードとその](/azure/active-directory/authentication/concept-password-ban-bad) バリアントをブロックするには、次の手順に従います。
 
 ## <a name="phase-7-enable-azure-ad-identity-protection"></a>フェーズ 7: Azure AD Identity Protection を有効化する
 
@@ -91,11 +91,11 @@ User 2 アカウントの多要素認証のみテストします。
 
 ## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>フェーズ 8: Exchange Online および Skype for Business Online に対して先進認証を有効化する
 
-Exchange Online については、[こちら](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)で説明されている手順に従います。 
+Exchange Online については、[こちら](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)で説明されている手順に従います。 
 
 Skype for Business Online については、
 
-1. [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) に接続します。
+1. [Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) に接続します。
 
 2. 次のコマンドを実行します。
 
@@ -109,11 +109,11 @@ Skype for Business Online については、
   Get-CsOAuthConfiguration
   ```
 
-その結果、ID とデバイス アクセスに関するクラウド専用[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)の前提条件構成の要件を満たすテスト環境が作成されます。 
+その結果、ID およびデバイス アクセスのクラウド専用前提条件構成[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)の要件を満たすテスト環境が得られます。 
 
 ## <a name="next-step"></a>次の手順
 
-[共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。
+[共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。
 
 ## <a name="see-also"></a>関連項目
 
@@ -125,4 +125,4 @@ Skype for Business Online については、
 
 [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise のドキュメント](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

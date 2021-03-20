@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'グローバル管理者によって行われる、ユーザーのメール アドレスと表示名の変更方法について説明します。 '
-ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: 6a5498f4e480802f8770f7b7adde55fe7c996dc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585296"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904482"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -221,7 +221,7 @@ ms.locfileid: "49585296"
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>「パラメーター名 'EmailAddresses' に一致するパラメーターが見つかりません」
 
-"**パラメーター名 'EmailAddresses' に一致するパラメーターが見つかりません**" というエラー メッセージが表示される場合、これは、最近追加したテナントまたはカスタム ドメインのセットアップに少し時間がかかっていることを意味します。セットアップ プロセスが完了するには、最大 4 時間かかります。しばらくすると、セットアップ プロセスが完了します。その後、やり直してください。問題が解決しない場合は、 [サポート](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) にご連絡いただき、完全な同期を行うよう依頼してください。
+"**パラメーター名 'EmailAddresses' に一致するパラメーターが見つかりません**" というエラー メッセージが表示される場合、これは、最近追加したテナントまたはカスタム ドメインのセットアップに少し時間がかかっていることを意味します。セットアップ プロセスが完了するには、最大 4 時間かかります。しばらくすると、セットアップ プロセスが完了します。その後、やり直してください。問題が解決しない場合は、 [サポート](../contact-support-for-business-products.md) にご連絡いただき、完全な同期を行うよう依頼してください。
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>「申し訳ございません。ユーザーを編集できませんでした。 ユーザー情報を確認して、もう一度やり直してください」
 
@@ -249,7 +249,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 > [!TIP]
 > これで、ユーザーの **userPrincipalName** 属性が変更され、ユーザーの Microsoft Online 電子メール ルーティング アドレス (MOERA) のメール アドレスにも影響を及ぼしません。ただし、最適な結果を得るには、ユーザーのログオン UPN をプライマリ SMTP アドレスと一致させてください。 
   
-Windows Server 2003 以前のバージョンで Active Directory を使用して他のユーザーのユーザー名を変更する方法については、[ユーザー アカウントの名前の変更](https://go.microsoft.com/fwlink/?LinkId=809091)に関するページを参照してください。
+Windows Server 2003 以前のバージョンで Active Directory を使用して他のユーザーのユーザー名を変更する方法については、[ユーザー アカウントの名前の変更](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10))に関するページを参照してください。
   
 ## <a name="related-articles"></a>関連記事
 

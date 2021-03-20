@@ -1,5 +1,5 @@
 ---
-title: Basic Mobility and Security 管理対象デバイスの詳細を取得する
+title: Basic Mobility および Security 管理対象デバイスの詳細を取得する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,39 +17,39 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: このWindows PowerShell使用して、組織内の Basic Mobility and Security デバイスに関する詳細を取得します。
-ms.openlocfilehash: 7c6a0365dfd573377c3675bbcee8ee8280e33816
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: 組織Windows PowerShellの Basic Mobility および Security デバイスの詳細を取得するには、次の情報を使用します。
+ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876890"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904254"
 ---
-# <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Basic Mobility and Security 管理対象デバイスの詳細を取得する
+# <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Basic Mobility および Security 管理対象デバイスの詳細を取得する
 
-この記事では、Windows PowerShell を使用して、Basic Mobility and Security に設定した組織内のデバイスに関する詳細を取得する方法について説明します。
+この記事では、基本モビリティとセキュリティWindows PowerShell設定した組織内のデバイスに関する詳細を取得する方法について説明します。
 
 利用可能なデバイスの詳細の内訳を次に示します。
 
 |**詳細**|**PowerShell で探す情報**|
 |:----------------|:------------------------------------------------------------------------------|
-|デバイスが Basic Mobility and Security に登録されている。 詳細については [、「Basic Mobility and Security を使用してモバイル デバイスを登録する」を参照してください。](enroll-your-mobile-device.md)| *isManaged* パラメーターの値   は次の値です。<br/>**True**= デバイスが登録されています。<br/>**False**= デバイスが登録されていない。 |
-|デバイスは、デバイスのセキュリティ ポリシーに準拠しています。 詳しくは、「デバイス セキュリティ [ポリシーの作成」をご覧ください。](create-device-security-policies.md)| *isCompliant パラメーターの値は*   次の値です。<br/>**True**  = デバイスはポリシーに準拠しています。<br/>**False**  = デバイスはポリシーに準拠していません。|
+|デバイスは Basic Mobility and Security に登録されています。 詳細については、「Basic [Mobility and Security を使用してモバイル デバイスを登録する」を参照してください。](enroll-your-mobile-device.md)| *isManaged* パラメーターの値   は次の値です。<br/>**True**= デバイスが登録されています。<br/>**False**= デバイスは登録されません。 |
+|デバイスは、デバイスのセキュリティ ポリシーに準拠しています。 詳細については、「デバイス セキュリティ [ポリシーの作成」を参照してください。](create-device-security-policies.md)| *isCompliant パラメーターの値は次*   の値です。<br/>**True**  = デバイスはポリシーに準拠しています。<br/>**False**  = デバイスがポリシーに準拠していません。|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="基本的なモビリティとセキュリティの PowerShell パラメーター":::
 
 >[!NOTE]
->この記事のコマンドとスクリプトは [、Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)で管理されているデバイスに関する詳細も返します。
+>この記事のコマンドとスクリプトは、Microsoft Intune によって管理されるデバイスに関する詳細 [も返します](https://www.microsoft.com/cloud-platform/microsoft-intune)。
 
 ## <a name="before-you-begin"></a>はじめに
 
-この記事で説明するコマンドとスクリプトを実行するには、いくつかの設定が必要です。
+この記事で説明するコマンドとスクリプトを実行するために設定する必要があるものがあります。
 
-### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>手順 1: Azure Active Directory モジュールをダウンロードしてインストールWindows PowerShell
+### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>手順 1: Azure Active Directory モジュールをダウンロードしてインストールします。Windows PowerShell
 
-これらの手順について詳しくは、「PowerShell を使用して [Microsoft 365 に接続する」をご覧ください](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。
+これらの手順の詳細については [、「Connect to Microsoft 365 with PowerShell」を参照してください](/office365/enterprise/powershell/connect-to-office-365-powershell)。
 
-1. IT プロフェッショナル [用 Microsoft Online Services Sign-In RTWl に移動し](https://www.microsoft.com/download/details.aspx?id=41950)、サインイン アシスタントの [ダウンロード    **Microsoft Online Services選択します**。   
+1. [IT 担当者 [向Microsoft Online Services Sign-In RTWl]](https://www.microsoft.com/download/details.aspx?id=41950)に移動し、[サインイン アシスタントのダウンロードMicrosoft Online Services    **を選択します**。
 
 2. 以下の手順に従って、Windows PowerShell の Microsoft Azure Active Directory モジュールをインストールします。
 
@@ -65,32 +65,32 @@ ms.locfileid: "49876890"
 
 ### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>手順 2: Microsoft 365 サブスクリプションに接続する
 
-1. Windows Azure Active Directory モジュールでWindows PowerShellコマンドを実行します。  
+1. Windows Azure Active Directory モジュールで、Windows PowerShellコマンドを実行します。  
 
     $UserCredential = Get-Credential
 
-2. [資格情報Windows PowerShell] ダイアログ ボックスで、Microsoft 365 グローバル管理者アカウントのユーザー名とパスワードを入力し **、[OK]** を選択します。
+2. [資格情報Windows PowerShell] ダイアログ ボックスで、Microsoft 365 グローバル管理者アカウントのユーザー名とパスワードを入力し **、[OK] を選択します**。
 
 3. 次のコマンドを実行します。
 
     Connect-MsolService -Credential $UserCredential
 
-### <a name="step-3-make-sure-youre-able-to-run-powershell-scripts"></a>手順 3: PowerShell スクリプトを実行できる点を確認する
+### <a name="step-3-make-sure-youre-able-to-run-powershell-scripts"></a>手順 3: PowerShell スクリプトを実行することを確認する
 
 >[!NOTE]
->PowerShell スクリプトを実行する設定が既にされている場合は、この手順を省略できます。
+>PowerShell スクリプトの実行を既に設定している場合は、この手順を省略できます。
 
-このスクリプトをGet-MsolUserDeviceComplianceStatus.ps1、PowerShell スクリプトの実行を有効にする必要があります。
+このスクリプトをGet-MsolUserDeviceComplianceStatus.ps1するには、PowerShell スクリプトの実行を有効にする必要があります。
 
-1. Windows デスクトップから [スタート] を **選択し**、次のコマンドをWindows PowerShell。 管理者として実行Windows PowerShellを右クリックし、[管理者として **実行] を選択します**。
+1. Windows デスクトップで 、[スタート] を **選択し**、[スタート] と入力Windows PowerShell。 [管理者] をWindows PowerShellし、[管理者として **実行] を選択します**。
 
 2. 次のコマンドを実行します。
 
     Set-ExecutionPolicy RemoteSigned
 
-3. メッセージが表示されたら、「Y」と入力し、Enter キーを押します。
+3. プロンプトが表示されたら、「Y」と入力し、Enter キーを押します。
 
-**Get-MsolDevice コマンドレットを実行して、組織内のすべてのデバイスの詳細を表示する**
+**組織のすべてのGet-MsolDeviceの詳細を表示するには、このコマンドレットを実行します。**
 
 1. Windows PowerShell 用 Microsoft Azure Active Directory モジュールを開きます。  
 
@@ -98,7 +98,7 @@ ms.locfileid: "49876890"
 
     Get-MsolDevice -All -ReturnRegisteredOwners |Where-Object {$_.RegisteredOwners.Count -gt 0}
 
-その他の例については  [、「Get-MsolDevice」を参照してください](https://go.microsoft.com/fwlink/?linkid=841721)。
+その他の例については  [、「Get-MsolDevice」を参照してください](https://go.microsoft.com/fwlink/?linkid=2157939)。
 
 ## <a name="run-a-script-to-get-device-details"></a>スクリプトを実行してデバイスの詳細を取得する
 
@@ -110,11 +110,11 @@ ms.locfileid: "49876890"
 
 3.  [PSObject[]]$users = @(),
 
-4.  [スイッチ]$export、
+4.  [Switch]$export,
 
 5.  [String]$exportFileName = "UserDeviceComplianceStatus_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",
 
-6.  [String]$exportPath = [Environment]::GetFolderPath("Desktop")
+6.  [String]$exportPath = [環境]::GetFolderPath("Desktop")
 
 7.  )
 
@@ -149,7 +149,7 @@ ms.locfileid: "49876890"
 23.  }
     
 
-25.  function createResultObject
+25.  関数 createResultObject
     
 
 26.  {
@@ -158,7 +158,7 @@ ms.locfileid: "49876890"
 28.  [PSObject]$resultObject = New-Object -TypeName PSObject -Property $script:schema
     
 
-30.  return $resultObject
+30.  戻り$resultObject
     
 
 31.  }
@@ -176,7 +176,7 @@ ms.locfileid: "49876890"
 36.  }
     
 
-38.  [PSObject[]]$result = foreach ($u in $users)
+38.  [PSObject[]] $result = foreach ($u $users)
     
 
 39.  {
@@ -185,7 +185,7 @@ ms.locfileid: "49876890"
 41.  [PSObject]$devices = get-msoldevice -RegisteredOwnerUpn $u.UserPrincipalName
     
 
-42.  foreach ($d in $devices)
+42.  foreach ($dの$devices)
     
 
 43.  {
@@ -263,9 +263,9 @@ ms.locfileid: "49876890"
 70.  }
     
 
-71.  ファイル拡張子 .ps1 をWindows PowerShellスクリプト ファイルとして保存します。たとえば、Get-MsolUserDeviceComplianceStatus.ps1。   
+71.  ファイル拡張子 .ps1 を使用Windows PowerShellスクリプト ファイルとして保存します。たとえば、Get-MsolUserDeviceComplianceStatus.ps1。   
 
-## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>スクリプトを実行して単一のユーザー アカウントのデバイス情報を取得する
+## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>スクリプトを実行して、1 つのユーザー アカウントのデバイス情報を取得する
 
 1. Windows PowerShell 用 Microsoft Azure Active Directory モジュールを開きます。
     
@@ -273,7 +273,7 @@ ms.locfileid: "49876890"
     
     cd C:\PS-Scripts
 
-3. 次のコマンドを実行して、デバイスの詳細を取得するユーザーを特定します。 この例では、データの詳細を取得bar@example.com。
+3. 次のコマンドを実行して、デバイスの詳細を取得するユーザーを特定します。 この例では、データの詳細を取得 bar@example.com。
     
     $u = Get-MsolUser -UserPrincipalName bar@example.com
 
@@ -281,9 +281,9 @@ ms.locfileid: "49876890"
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-この情報は、CSV ファイルとして Windows デスクトップにエクスポートされます。 CSV のファイル名とパスを指定するには、追加のパラメーターを使用できます。
+この情報は、CSV ファイルとして Windows デスクトップにエクスポートされます。 追加のパラメーターを使用して、CSV のファイル名とパスを指定できます。
 
-## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>スクリプトを実行してユーザーのグループのデバイス情報を取得する
+## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>スクリプトを実行して、ユーザーのグループのデバイス情報を取得する
 
 1. Windows PowerShell 用 Microsoft Azure Active Directory モジュールを開きます。
     
@@ -295,16 +295,16 @@ ms.locfileid: "49876890"
 
     $u = Get-MsolGroupMember -SearchString "FinanceStaff" |% { Get-MsolUser -ObjectId $_.ObjectId }
 
-4. スクリプトを開始するには、次のコマンドを実行します。   
+4. スクリプトを開始するには、次のコマンドを実行します。
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-この情報は、CSV ファイルとして Windows デスクトップにエクスポートされます。 CSV のファイル名とパスを指定するには、追加のパラメーターを使用できます。
+この情報は、CSV ファイルとして Windows デスクトップにエクスポートされます。 追加のパラメーターを使用して、CSV のファイル名とパスを指定できます。
 
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft Connect は廃止されました](https://docs.microsoft.com/collaborate/connect-redirect)
+[Microsoft Connect が廃止されました](/collaborate/connect-redirect)
 
 [基本的なモビリティとセキュリティの概要](overview.md)
 
-[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)
+[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)

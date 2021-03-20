@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Microsoft 365 管理センターで Azure 管理者の役割を管理する。
-ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126107"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904494"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365管理センター のAzure Active Directory の役割について
 
-Microsoft 365 管理センターでは、30 を超える Azure AD の役割を管理できます。 ただし、これらの役割は、Azure ポータルで使用可能な役割のサブセットです。 大企業の場合、Azure ポータルに組織のニーズを満たす役割があるかもしれません。 Azure AD の役割の詳細な説明をお探しですか ? 「[Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を確認してください。
+Microsoft 365 管理センターでは、30 を超える Azure AD の役割を管理できます。 ただし、これらの役割は、Azure ポータルで使用可能な役割のサブセットです。 大企業の場合、Azure ポータルに組織のニーズを満たす役割があるかもしれません。 Azure AD の役割の詳細な説明をお探しですか ? 「[Azure Active Directory での管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を確認してください。
 
 Microsoft 365 管理センターまたは Azure ポータルで役割を割り当てても、Windows PowerShell の Azure AD モジュールを使用してロールを割り当てても関係なく、管理者ロールを割り当てられたユーザーが、組織が登録されているクラウド サービスへの同じアクセス レベルを所有します。
 
@@ -37,7 +37,7 @@ Microsoft 365 管理センターで、[**役割**] に移動し、任意の役�
 
 ## <a name="all-azure-ad-roles"></a>すべての Azure AD の役割
 
-以下は、Microsoft 365 管理センターで利用可能なすべての管理者ロールの一覧です。 Microsoft 365 の管理者役割について詳しい説明をお探しですか ? [管理者ロールの詳細](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)をチェックアウトします。
+以下は、Microsoft 365 管理センターで利用可能なすべての管理者ロールの一覧です。 Microsoft 365 の管理者役割について詳しい説明をお探しですか ? [管理者ロールの詳細](./about-admin-roles.md?view=o365-worldwide)をチェックアウトします。
 
 |管理者ロール     |説明  |
 |---------|---------|
@@ -57,7 +57,7 @@ Microsoft 365 管理センターで、[**役割**] に移動し、任意の役�
 |Exchange 管理者     |  Exchange Online へのフル アクセス。グループの作成および管理、サービス リクエストの管理、およびサービス正常性の監視を行います。    |
 |外部 ID プロバイダー管理者    |     直接フェデレーションで使用する ID プロバイダーを構成します。    |
 |グローバル管理者     |    すべての管理センターのすべての管理機能およびほとんどのデータに無制限にアクセスできます。     |
-|グローバル閲覧者     |    すべての管理センターのすべての管理機能およびほとんどのデータへの読み取り専用アクセス権があります。 この役割のアクセス権および制限の詳細については、「[Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)」を参照してください。    |
+|グローバル閲覧者     |    すべての管理センターのすべての管理機能およびほとんどのデータへの読み取り専用アクセス権があります。 この役割のアクセス権および制限の詳細については、「[Azure Active Directory での管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)」を参照してください。    |
 |グループ管理者   |グループを作成し、管理センター全体のすべてのグループ設定を管理します。|
 |ゲスト招待者     |    Azure Active Directory B2B ゲスト ユーザーの招待を管理します。     |
 |ヘルプデスク管理者     | すべての非管理者および一部の管理者ロールのパスワードをリセットして再認証し、サービス リクエストを管理し、サービス正常性の監視を行います。      |
@@ -99,7 +99,7 @@ Microsoft パートナーと連携している場合、パートナーに管理�
 
 - ヘルプデスク管理者と同等の特権を持つ制限付き管理。
 
-パートナーがこれらの役割をユーザーに割り当てる前に、パートナーを代理管理者としてアカウントに追加する必要があります。 このプロセスは認定パートナーによって開始されます。 パートナーは管理者に電子メールを送信し、代理管理者となる権限を割り当てるかどうか質問します。手順については、「[パートナー リレーションシップの承認または削除](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)」を参照してください。
+パートナーがこれらの役割をユーザーに割り当てる前に、パートナーを代理管理者としてアカウントに追加する必要があります。 このプロセスは認定パートナーによって開始されます。 パートナーは管理者に電子メールを送信し、代理管理者となる権限を割り当てるかどうか質問します。手順については、「[パートナー リレーションシップの承認または削除](../misc/add-partner.md)」を参照してください。
   
 ## <a name="related-articles"></a>関連記事
 

@@ -21,38 +21,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Windows PowerShell を使用して、一部のユーザーパスワードを期限切れにしないように設定する方法について説明します。
-ms.openlocfilehash: 2d60a8312be070d3f56cfef7cfb93e6c5da32991
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: 一部の個々のユーザー パスワードを有効期限が切れなWindows PowerShell。
+ms.openlocfilehash: 564ea3338fcb11d699d385a40c9594f34964edf7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580639"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903642"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>個別のユーザーのパスワードを無期限に設定する
 
-この記事では、個々のユーザーのパスワードを期限切れにならないように設定する方法について説明します。 これらの手順は、PowerShell を使用して完了する必要があります。
+この記事では、個々のユーザーのパスワードを期限切れにしない設定方法について説明します。 PowerShell を使用してこれらの手順を実行する必要があります。
 
 ## <a name="before-you-begin"></a>開始する前に
 
 この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md)。 
 
-これらの手順を実行するには、 [グローバル管理者またはパスワード管理者](about-admin-roles.md) である必要があります。
+これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 
-Microsoft クラウドサービスのグローバル管理者は、 [Azure Active Directory PowerShell For Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) を使用して、特定のユーザーに対してパスワードを無期限に設定することができます。 また、 [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) コマンドレットを使用して、無期限の構成を削除したり、どのユーザーのパスワードが期限切れにならないかを確認したりすることもできます。
+Microsoft クラウド サービスのグローバル管理者は [、Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) を使用して、特定のユーザーに対して有効期限が切れないパスワードを設定できます。 AzureAD コマンドレット [を使用して](/powershell/module/Azuread) 、有効期限が切れない構成を削除したり、有効期限が切れないユーザー パスワードを確認することもできます。
 
-このガイドは、Intune や Microsoft 365 などの他のプロバイダーに適用されます。これは、id およびディレクトリサービスのために Azure AD にも依存しています。 ポリシーの変更可能な部分は、パスワードの有効期限のみです。
+このガイドは、Intune や Microsoft 365 などの他のプロバイダーにも適用されます。これは、Azure AD ID およびディレクトリ サービスにも依存します。 パスワードの有効期限は、変更できるポリシーの唯一の部分です。
 
 > [!NOTE]
-> ディレクトリ同期によって同期されていないユーザーアカウントのパスワードのみ、期限切れにならないように構成できます。 ディレクトリ同期の詳細については、「 [CONNECT ad With AZURE ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)」を参照してください。
+> ディレクトリ同期によって同期されないユーザー アカウントのパスワードのみ、有効期限が切れない状態に構成できます。 ディレクトリ同期の詳細については [、「Connect AD Azure AD」 を参照してください](/azure/active-directory/connect/active-directory-aadconnect)。
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>パスワードの有効期限ポリシーを確認する方法
 
-AzureAD モジュールの Get-AzureADUser コマンドの詳細については、「 [set-azureaduser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)」という参照記事を参照してください。
+AzureAD モジュールの Get-AzureADUser コマンドの詳細については、参照記事 [Get-AzureADUser を参照してください](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
 
 次のいずれかのコマンドを実行します：
 
-- 単一のユーザーのパスワードが期限切れにならないように設定されているかどうかを確認するには、UPN (たとえば、 *user@contoso.onmicrosoft.com*) またはチェックするユーザーのユーザー ID を使用して、次のコマンドレットを実行します。
+- 1 人のユーザーのパスワードが有効期限が切れないに設定されている場合は *、UPN (user@contoso.onmicrosoft.com* など) または確認するユーザーのユーザー ID を使用して、次のコマンドレットを実行します。
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -68,7 +68,7 @@ AzureAD モジュールの Get-AzureADUser コマンドの詳細については�
     }
     ```  
 
-- すべてのユーザーの **パスワードの有効期限** が設定されていないことを確認するには、次のコマンドレットを実行します。
+- すべてのユーザーに **対して [パスワードの有効期限が切** れることはありません] 設定を表示するには、次のコマンドレットを実行します。
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -76,7 +76,7 @@ AzureAD モジュールの Get-AzureADUser コマンドの詳細については�
      }
     ```
 
-- PasswordNeverExpires を使用しているすべてのユーザーのレポートを取得するには、現在のユーザーのデスクトップに名前 **ReportPasswordNeverExpires.html** を指定します。
+- 現在のユーザーのデスクトップで PasswordNeverExpires を Html で持つすべてのユーザーのレポートを取得するには、ReportPasswordNeverExpires.htm **l**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -84,7 +84,7 @@ AzureAD モジュールの Get-AzureADUser コマンドの詳細については�
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- PasswordNeverExpires を使用しているすべてのユーザーについて、現在のユーザーのデスクトップ上の名前を持つすべてのユーザーのレポートを取得するには **ReportPasswordNeverExpires.csv**
+- 現在のユーザーのデスクトップで PasswordNeverExpires を CSV で持つすべてのユーザーのレポートを取得 **するには**、名前を付ReportPasswordNeverExpires.csv
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -101,26 +101,26 @@ Run one of the following commands:
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
     ```
 
-- 組織内のすべてのユーザーのパスワードを期限切れにならないように設定するには、次のコマンドレットを実行します。
+- 組織内のすべてのユーザーのパスワードに有効期限を設定するには、次のコマンドレットを実行します。
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 > [!WARNING]
-> パラメーターで構成されたユーザーアカウント `-PasswordPolicies DisablePasswordExpiration` は、属性に基づいてエージングを続行し `pwdLastSet` ます。 属性に基づいて `pwdLastSet` 有効期限を変更する場合、 `-PasswordPolicies None` 90 日より前の pwdLastSet を持つすべてのパスワードについては、次にサインインするときにユーザーを変更する必要があります。 この変更によって、多数のユーザーに影響を与える可能性があります。
+> パラメーターを使用して構成された `-PasswordPolicies DisablePasswordExpiration` ユーザー アカウントは、属性に基づいて年齢を変更 `pwdLastSet` します。 属性に基づいて、有効期限をに変更した場合 `pwdLastSet` 、pwdLastSet が 90 日を超えるすべてのパスワードでは、次回サインイン時にパスワードを変更する必要があります `-PasswordPolicies None` 。 この変更は、多数のユーザーに影響を与える可能性があります。
 
 ### <a name="set-a-password-to-expire"></a>パスワードの有効期限を設定する
 
 次のいずれかのコマンドを実行します：
 
-- パスワードの有効期限が切れるように1人のユーザーのパスワードを設定するには、UPN またはユーザーのユーザー ID を使用して次のコマンドレットを実行します。
+- パスワードの有効期限が切れる 1 人のユーザーのパスワードを設定するには、UPN またはユーザーのユーザー ID を使用して次のコマンドレットを実行します。
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None
     ```
 
-- 組織内のすべてのユーザーのパスワードを期限切れになるように設定するには、次のコマンドレットを使用します。
+- 組織内のすべてのユーザーのパスワードを期限切れに設定するには、次のコマンドレットを使用します。
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None

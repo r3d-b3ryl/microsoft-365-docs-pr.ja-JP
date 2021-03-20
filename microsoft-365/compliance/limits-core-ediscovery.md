@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、Microsoft 365 のコア電子情報開示ケースの制限について説明します。
-ms.openlocfilehash: 2699e9b2511c742bb295f69611a976f6a3955980
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e18e1e6c1d9d7ecd78deaf267be72ccdc9d1ba5d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423448"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905889"
 ---
 # <a name="limits-in-core-ediscovery"></a>コア電子情報開示の制限
 
-次の表に、コアの電子情報開示ケースと、コア電子情報開示ケースに関連付けられているホールドの制限を示します。 Core eDiscovery の詳細については、「Overview [of Core eDiscovery」を参照してください](ediscovery-cases.md)。
+次の表に、コアの電子情報開示ケースと、コア電子情報開示ケースに関連付けられているホールドの制限を示します。 Core eDiscovery の詳細については、「Overview [of Core eDiscovery」を参照してください](./get-started-core-ediscovery.md)。
     
   | 制限の説明 | 制限 |
   |:-----|:-----|
@@ -40,9 +40,9 @@ ms.locfileid: "50423448"
    > [!NOTE]
    > <sup>1</sup> 1,000 を超えるケース、ホールド、検索、またはエクスポートのリストを表示するには、対応する Office 365 Security & Compliance PowerShell コマンドレットを使用できます。
    > 
-   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
-   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
-   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
-   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
 Core eDiscovery ケースに関連付けられたコンテンツ検索とエクスポートに関連する制限の詳細については、「Limits for Content [Search and Core eDiscovery」を参照してください](limits-for-content-search.md)。

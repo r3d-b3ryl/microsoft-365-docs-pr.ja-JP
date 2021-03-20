@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続します。'
-ms.openlocfilehash: cd030018dabff628af18d173cf542a3d375b27d0
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 18ff8e1789242b4dde3b4b31aaccf2462e4c5d74
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515114"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905130"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 
@@ -38,7 +38,7 @@ PowerShell を使用して Microsoft 365 を管理する場合は、同時に複
 
 PowerShell の単一のインスタンスからすべての Microsoft 365 を管理する前に、次の前提条件を考慮してください。
   
-- Microsoft 365 の職場または学校のアカウントは、Microsoft 365 管理者ロールのメンバーである必要があります。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。 これは Microsoft 365向け PowerShell の要件ではあるものの、他のすべての Microsoft 365 サービスについては必ずしも当てはまりません。
+- Microsoft 365 の職場または学校のアカウントは、Microsoft 365 管理者ロールのメンバーである必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。 これは Microsoft 365向け PowerShell の要件ではあるものの、他のすべての Microsoft 365 サービスについては必ずしも当てはまりません。
     
 - 次の Windows の 64 ビット バージョンを使用できます。
     
@@ -56,7 +56,7 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
     
   - Windows Server 2008 R2 SP1*
     
-    \*Microsoft .NET Framework 4.5 をインストールする必要があります。*x* と、Windows Management Framework 3.0 または4.0 です。 詳細については、 [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview) を参照してください。
+    \*Microsoft .NET Framework 4.5 をインストールする必要があります。*x* と、Windows Management Framework 3.0 または4.0 です。 詳細については、 [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview) を参照してください。
     
     Skype for Business Online モジュール、および Microsoft 365 モジュールの要件のため、64 ビット バージョンの Windows を使用する必要があります。
     
@@ -64,9 +64,9 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
     
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [Skype for Business Online、PowerShell モジュール](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
-  - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
-  - [Teams PowerShell の概要](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [Skype for Business Online、PowerShell モジュール](/microsoftteams/teams-powershell-overview)
+  - [Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Teams PowerShell の概要](/microsoftteams/teams-powershell-overview)
     
 -  Skype for Business Online やセキュリティ&amp;コンプライアンス センターに対して署名付きスクリプトを実行するよう PowerShell を構成する必要があります。 管理者特権の PowerShell セッション (**管理者として実行** する PowerShell セッション) で、次のコマンドを実行します。
     
@@ -128,7 +128,7 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
    ```
 
    > [!Note]
-   > 全世界以外の Exchange Online for Microsoft 365 クラウドに接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」をご覧ください。
+   > 全世界以外の Exchange Online for Microsoft 365 クラウドに接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」をご覧ください。
 
 7. 次のコマンドを実行して、セキュリティ &amp; コンプライアンス センター に接続します。
     
@@ -138,7 +138,7 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
    ```
 
    > [!Note]
-   > Microsoft 365 クラウド向けセキュリティ &amp; コンプライアンス センターに接続するには、[「セキュリティ/コンプライアンス センター PowerShell に接続する」](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) を参照してください。
+   > Microsoft 365 クラウド向けセキュリティ &amp; コンプライアンス センターに接続するには、[「セキュリティ/コンプライアンス センター PowerShell に接続する」](/powershell/exchange/connect-to-scc-powershell) を参照してください。
 
 8. 次のコマンドを実行して、Teams PowerShell に接続します。
     
@@ -149,7 +149,7 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
    ```
   
    > [!Note]
-   > *全世界* 以外の Microsoft Teams クラウドに接続する方法については、[「Connect-MicrosoftTeams」](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams)を参照してください。
+   > *全世界* 以外の Microsoft Teams クラウドに接続する方法については、[「Connect-MicrosoftTeams」](/powershell/module/teams/connect-microsoftteams)を参照してください。
   
 
 
