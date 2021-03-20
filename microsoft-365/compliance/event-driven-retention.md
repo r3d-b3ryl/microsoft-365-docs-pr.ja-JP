@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: cf8ce1dc2ca77e2ba028d0c35f58cd0ab419b32d
-ms.sourcegitcommit: 5ce64d510b15c6e2df32b78e6086f77156731e3c
+ms.openlocfilehash: 49fe330fa6844361a77caaebb0e6a411297ee643
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "49477626"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907017"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 コンテンツを保持する際、保持期間は多くの場合、コンテンツの経過日数に基づいています。たとえば、ドキュメントを作成してから 7 年間保持をし、それから削除することができます。ただし、[保持ラベル](retention.md#retention-labels) を構成することで、特定の種類のイベントの発生を保持期間の基準として設定することもできます。イベントによって保持期間の開始がトリガーされ、その種類のイベントに保持ラベルが適用されているすべてのコンテンツに、ラベルの保持アクションが適用されます。
   
@@ -89,7 +89,7 @@ ms.locfileid: "49477626"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>手順 1: 保持期間がイベントに基づくラベルを作成する
 
-保持ラベルを作成して構成するには、[[保持ラベルの作成と構成](create-retention-labels.md#create-and-configure-retention-labels)] の手順を使用します。 ただし、イベント ベースの保持に固有の [保持ラベルの作成] ウィザードの [**保持設定の定義**] ページで、**次の期間に基づいて保持期間を開始** した後、既定のイベントの種類の 1 つをドロップダウン リスト、または **新しいイベントの種類の作成** を選択して独自のリストを作成します。
+保持ラベルを作成して構成するには、[[保持ラベルの作成と構成](./create-apply-retention-labels.md#create-and-configure-retention-labels)] の手順を使用します。 ただし、イベント ベースの保持に固有の [保持ラベルの作成] ウィザードの [**保持設定の定義**] ページで、**次の期間に基づいて保持期間を開始** した後、既定のイベントの種類の 1 つをドロップダウン リスト、または **新しいイベントの種類の作成** を選択して独自のリストを作成します。
 
 ![保持ラベルの新しいイベントの種類を作成する](../media/SPRetention6.png)
 
@@ -145,7 +145,7 @@ ms.locfileid: "49477626"
 
 テナントごとに最大 100 万件のイベントがサポートされます。
 
-### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>手順 6: 手順 2 のラベルで使用したものと同じイベントの種類を選ぶ
+### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>手順 6: 手順 2 でのラベルを使用したイベントの種類と同じものを選択する
 
 イベントを作成するときは、手順 2 の保持ラベル設定で指定したものと同じイベントの種類を選択します。 たとえば、ラベル設定のイベントの種類として [**製品の有効期間**] を選択した場合、イベントを作成するときに [**製品の有効期間**] を選択します。 そのイベントの種類が選択されたイベントに適用されている保持ラベルの付いたコンテンツのみが、トリガーされる保持期間を持ちます。
 
@@ -185,24 +185,24 @@ Exchange アイテムの場合、キーワード を使用します。 AND、OR�
 
 PowerShell スクリプトを使用して、ビジネス アプリケーションからイベント ベースの保持を自動化することができます。 イベント ベースの保持で利用可能な PowerShell コマンドレットは、次のとおりです。
   
-- [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
+- [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype)
     
-- [New-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873004)
+- [New-ComplianceRetentionEventType](/powershell/module/exchange/new-complianceretentioneventtype)
     
-- [Remove-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873005)
+- [Remove-ComplianceRetentionEventType](/powershell/module/exchange/remove-complianceretentioneventtype)
     
-- [Set-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873006)
+- [Set-ComplianceRetentionEventType](/powershell/module/exchange/set-complianceretentioneventtype)
     
-- [Get-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873001)
+- [Get-ComplianceRetentionEvent](/powershell/module/exchange/get-complianceretentionevent)
     
-- [New-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873003)
+- [New-ComplianceRetentionEvent](/powershell/module/exchange/new-complianceretentionevent)
     
 
 ## <a name="automate-events-by-using-a-rest-api"></a>REST API を使用してイベントを自動化する
 
 REST API を使用して、保持期間の開始をトリガーするイベントを自動的に作成できます。
 
-REST API は一連の HTTP 操作 (HTTP メソッド) をサポートするサービス エンドポイントで、サービス リソースへのアクセス権の作成/取得/更新/削除をできるようにします。 詳細については、「[REST API 要求/応答のコンポーネント](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)」を参照してください。 Microsoft 365 REST API を使用することにより、POST および GET メソッドを使用してイベントを作成および取得できます。
+REST API は一連の HTTP 操作 (HTTP メソッド) をサポートするサービス エンドポイントで、サービス リソースへのアクセス権の作成/取得/更新/削除をできるようにします。 詳細については、「[REST API 要求/応答のコンポーネント](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)」を参照してください。 Microsoft 365 REST API を使用することにより、POST および GET メソッドを使用してイベントを作成および取得できます。
 
 REST API を使用するには、2 つのオプションがあります。
 
@@ -450,4 +450,3 @@ $event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "ap
 $event | fl *
 
 ```
-

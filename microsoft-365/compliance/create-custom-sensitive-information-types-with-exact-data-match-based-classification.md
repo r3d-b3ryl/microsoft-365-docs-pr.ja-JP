@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ce10483f2a2f6e3a461f0ab32eba0ed954cd484
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 583419f6808d5b3d54d1f48d380e5b4110898ded
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766412"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908351"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -46,7 +46,7 @@ ms.locfileid: "50766412"
 
 ![EDM ベースの分類](../media/EDMClassification.png)
 
-EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、EDM ベースの分類は、[データ損失防止ポリシー](data-loss-prevention-policies.md) (DLP) や [Microsoft Cloud App Security ファイル ポリシー](https://docs.microsoft.com/cloud-app-security/data-protection-policies) などのポリシーと共に使用できます。
+EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、EDM ベースの分類は、[データ損失防止ポリシー](data-loss-prevention-policies.md) (DLP) や [Microsoft Cloud App Security ファイル ポリシー](/cloud-app-security/data-protection-policies) などのポリシーと共に使用できます。
 
 > [!NOTE]
 > Microsoft 365 Information Protection は、次のような場合に 2 バイト文字セットの言語をプレビューでサポートします。
@@ -173,7 +173,7 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
 この例では、`caseInsensitive` と`ignoredDelimiters` の両方が使用されている場合、EDMは **FOO-1234** と **fOo#1234** を同一と見なし、アイテムを患者記録の機密情報タイプとして分類します。  
 
-4. [セキュリティ/コンプライアンス センター PowerShellに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
+4. [セキュリティ/コンプライアンス センター PowerShellに接続する](/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
 5. データベース スキーマをアップロードするには、次のコマンドレットを 1 つずつ実行します。
 
@@ -204,7 +204,7 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
       ルール パッケージをセットアップするときに、.csv ファイルと **edm .xml** ファイルを正しく参照してください。 この例は、コピー、変更、使用が可能です。 このサンプル xml では、EDM の機密情報の種類を作成するために、次のフィールドをカスタマイズする必要があります。
 
-      - **RulePack id & ExactMatch id**: [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) を使用して GUID を作成します。
+      - **RulePack id & ExactMatch id**: [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) を使用して GUID を作成します。
 
       - **Datastore**: このフィールドは、使用する EDM ルックアップデータストアを指定します。 設定済みの EDM スキーマのデータソース名を指定します。
 
@@ -308,7 +308,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 1. **edm.xml** ファイルを編集します (これは、この記事の「[スキーマを定義する](#define-the-schema-for-your-database-of-sensitive-information)」セクションで説明したファイルです)。
 
-2. [セキュリティ/コンプライアンス センター PowerShellに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
+2. [セキュリティ/コンプライアンス センター PowerShellに接続する](/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
 3. データベース スキーマを更新するには、次のコマンドレットを 1 つずつ実行します。
 
@@ -337,7 +337,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 (必要に応じて) EDM ベースの分類に使用しているスキーマを削除するには、次の手順に従います:
 
-1. [セキュリティ/コンプライアンス センター PowerShellに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
+1. [セキュリティ/コンプライアンス センター PowerShellに接続する](/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
 2. 次の PowerShell コマンドレットを実行して、"patient records" のデータ ストア名を削除するものに置き換えます。
 
@@ -384,7 +384,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 #### <a name="set-up-the-security-group-and-user-account"></a>セキュリティ グループとユーザー アカウントをセットアップする
 
-1. 全体管理者として、[サブスクリプションの適切なリンク](#portal-links-for-your-subscription) を使用して管理センターにアクセスし、**EDM\_DataUploaders** という [セキュリティ グループを作成します](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
+1. 全体管理者として、[サブスクリプションの適切なリンク](#portal-links-for-your-subscription) を使用して管理センターにアクセスし、**EDM\_DataUploaders** という [セキュリティ グループを作成します](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
 
 2. **EDM\_DataUploaders** セキュリティ グループに、1 人以上のユーザーを追加します。 (これらのユーザーは機密情報のデータベースを管理します)。
 
@@ -505,12 +505,12 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
       > [!NOTE]
       > .csv ファイルの構造 (フィールド名) に変更がない場合は、データを更新する際に、データベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。
 
-3. 「[機密データをハッシュしアップロードする](#part-2-hash-and-upload-the-sensitive-data)」の手順の、手順 2 と 3 を自動化するには、[タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) を使用します。 タスクのスケジュールを設定するにはいくつかの方法があります。
+3. 「[機密データをハッシュしアップロードする](#part-2-hash-and-upload-the-sensitive-data)」の手順の、手順 2 と 3 を自動化するには、[タスク スケジューラ](/windows/desktop/TaskSchd/task-scheduler-start-page) を使用します。 タスクのスケジュールを設定するにはいくつかの方法があります。
 
       | メソッド             | 操作 |
       | ---------------------- | ---------------- |
-      | Windows PowerShell     | [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) のドキュメントと、この記事の [PowerShell スクリプトの例](#example-powershell-script-for-task-scheduler)を参照してください。 |
-      | タスク スケジューラ API     | [Task Scheduler](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) のドキュメントを参照してください。                                                                                                                                                                                                                                                                                |
+      | Windows PowerShell     | [ScheduledTasks](/powershell/module/scheduledtasks/?view=win10-ps) のドキュメントと、この記事の [PowerShell スクリプトの例](#example-powershell-script-for-task-scheduler)を参照してください。 |
+      | タスク スケジューラ API     | [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) のドキュメントを参照してください。                                                                                                                                                                                                                                                                                |
       | Windows のユーザー インターフェイス | Windows の場合、**[スタート]** をクリックし、「タスク スケジューラ」と入力します。 次に、結果のリストで **[タスク スケジューラ]** を右クリックし、**[管理者として実行]** を選択します。                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>タスク スケジューラの PowerShell スクリプトの例
@@ -650,6 +650,6 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [機密情報の種類に関する詳細情報](sensitive-information-type-learn-about.md)
 - [DLP ポリシーの概要](data-loss-prevention-policies.md)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Microsoft Cloud App Security](/cloud-app-security)
+- [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [構成可能な一致を使用するために完全一致スキーマを変更する](sit-modify-edm-schema-configurable-match.md)

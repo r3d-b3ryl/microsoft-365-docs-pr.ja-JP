@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: この記事では、Microsoft 365 監査ログ レコードをエクスポート、構成、および表示する方法について説明します。
-ms.openlocfilehash: a7f731bb30ffdddfe7898ee4051060b8e22c093e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 4cea867b46d3bda7d3b3a8cd38f3d01938da8764
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454668"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906868"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 
@@ -104,7 +104,7 @@ ms.locfileid: "50454668"
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>PowerShell を使用して監査ログ レコードを検索およびエクスポートする
 
-セキュリティ & コンプライアンス センターの監査ログ検索ツールを使用する代わりに、Exchange Online PowerShell の [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) コマンドレットを使用して、監査ログ検索の結果を CSV ファイルにエクスポートできます。 次に、手順 2 で説明したのと同じ手順に従って、Power Query エディターを使用して監査ログを書式設定できます。 PowerShell コマンドレットを使用する利点の 1 つは *、RecordType* パラメーターを使用して特定のサービスからイベントを検索できるという利点です。 手順 2 で説明したように、PowerShell を使用して監査レコードを CSV ファイルにエクスポートして、Power Query エディターを使用して **AuditData** 列の JSON オブジェクトを変換する例を以下に示します。
+セキュリティ & コンプライアンス センターの監査ログ検索ツールを使用する代わりに、Exchange Online PowerShell の [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) コマンドレットを使用して、監査ログ検索の結果を CSV ファイルにエクスポートできます。 次に、手順 2 で説明したのと同じ手順に従って、Power Query エディターを使用して監査ログを書式設定できます。 PowerShell コマンドレットを使用する利点の 1 つは *、RecordType* パラメーターを使用して特定のサービスからイベントを検索できるという利点です。 手順 2 で説明したように、PowerShell を使用して監査レコードを CSV ファイルにエクスポートして、Power Query エディターを使用して **AuditData** 列の JSON オブジェクトを変換する例を以下に示します。
 
 この例では、次のコマンドを実行して、SharePoint 共有操作に関連するすべてのレコードを返します。
 
@@ -118,7 +118,7 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 検索結果は、CreationDate、UserIds、RecordType、AuditData の 4 つの列を含む *PowerShellAuditlog* という名前の CSV ファイルにエクスポートされます。
 
-レコードの種類の名前または列挙値を RecordType パラメーターの値 *として使用* することもできます。 レコードの種類名とそれに対応する列挙値の一覧については、365 管理アクティビティ API スキーマの *AuditLogRecordType* [Officeを参照してください](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)。
+レコードの種類の名前または列挙値を RecordType パラメーターの値 *として使用* することもできます。 レコードの種類名とそれに対応する列挙値の一覧については、365 管理アクティビティ API スキーマの *AuditLogRecordType* [Officeを参照してください](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)。
 
 RecordType パラメーターには、1 つの値 *のみを含* めできます。 他のレコードの種類の監査レコードを検索するには、前の 2 つのコマンドを再度実行して別のレコードの種類を指定し、それらの結果を元の CSV ファイルに追加する必要があります。 たとえば、次の 2 つのコマンドを実行して、SharePoint ファイルアクティビティを同じ日付範囲から同じ日付範囲のファイルに追加PowerShellAuditlog.csvします。
 

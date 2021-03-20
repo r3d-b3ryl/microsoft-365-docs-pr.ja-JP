@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 049c3c123053b4bd833ea95a2413b81366586870
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766368"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908491"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -45,9 +45,9 @@ ms.locfileid: "50766368"
     - [関数](what-the-dlp-functions-look-for.md)
     - [信頼度レベル](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- UI を使用してカスタムの機密情報の種類を作成、テスト、展開するには、グローバル管理者またはコンプライアンス管理者のアクセス許可が必要です。 Office 365 で「[管理者ロールについて](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)」を参照してください。
+- UI を使用してカスタムの機密情報の種類を作成、テスト、展開するには、グローバル管理者またはコンプライアンス管理者のアクセス許可が必要です。 Office 365 で「[管理者ロールについて](/office365/admin/add-users/about-admin-roles?view=o365-worldwide)」を参照してください。
 
-- 組織には、データ損失防止 (DLP) を含む Office 365 Enterprise などのサブスクリプションが必要です。 [メッセージング ポリシーとコンプライアンス サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)を参照してください。 
+- 組織には、データ損失防止 (DLP) を含む Office 365 Enterprise などのサブスクリプションが必要です。 [メッセージング ポリシーとコンプライアンス サービスの説明](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)を参照してください。 
 
 
 > [!IMPORTANT]
@@ -71,7 +71,7 @@ ms.locfileid: "50766368"
 12. 設定を確認し、**[送信]** を選択します。
 
 > [!IMPORTANT]
-> Microsoft 365 では、検索クローラーを使用して、SharePoint Online および OneDrive for Business のサイトの機密情報を特定して分類します。 既存のコンテンツで新しいカスタムの機密情報の種類を特定するには、そのコンテンツを再クロールする必要があります。 コンテンツは、スケジュールに基づいてクロールされますが、サイト コレクション、リスト、またはライブラリのコンテンツを手動で再クロールすることができます。 詳細については、「[サイト、ライブラリ、またはリストのクロールおよび再インデックスの手動要求](https://docs.microsoft.com/sharepoint/crawl-site-content)」を参照してください。
+> Microsoft 365 では、検索クローラーを使用して、SharePoint Online および OneDrive for Business のサイトの機密情報を特定して分類します。 既存のコンテンツで新しいカスタムの機密情報の種類を特定するには、そのコンテンツを再クロールする必要があります。 コンテンツは、スケジュールに基づいてクロールされますが、サイト コレクション、リスト、またはライブラリのコンテンツを手動で再クロールすることができます。 詳細については、「[サイト、ライブラリ、またはリストのクロールおよび再インデックスの手動要求](/sharepoint/crawl-site-content)」を参照してください。
 
 13. **[データの分類]** ページに、すべての機密情報の種類が一覧表示されます。 **[更新]** を選択し、閲覧または検索ツールを使用して、作成した機密情報の種類を検索します。
 

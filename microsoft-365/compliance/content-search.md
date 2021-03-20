@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft コンプライアンス センターのコンテンツ検索ツールを使用すると、さまざまな Microsoft 365 サービスのコンテンツを検索できます。
-ms.openlocfilehash: b497c584dce02279e0d2a0e68a8f5ada415164e5
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 2e9dcde65a4f2728782fd300f962dfb3e80ed3c9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988211"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908629"
 ---
 # <a name="content-search"></a>コンテンツ検索
 
@@ -228,9 +228,9 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
   
 ### <a name="searching-onedrive-accounts"></a>OneDrive アカウントの検索
 
-- 組織内の OneDrive サイトの URL のリストを収集するには、「[Create a list of all OneDrive locations in your organization (組織内のすべてのOneDriveロケーションのリストを作成する)](https://docs.microsoft.com/onedrive/list-onedrive-urls)」を参照してください。 この記事内のスクリプトは、すべての OneDrive サイトのリストを含むテキスト ファイルを作成します。 このスクリプトを実行するには、SharePoint Online 管理シェルをインストールして使用する必要があります。 検索する各 OneDrive サイトに組織の個人用サイト ドメインの URL を必ず追加してください。 これは、すべての OneDrive を含むドメインです。例: `https://contoso-my.sharepoint.com` ユーザーの OneDrive サイトの URL の例は次のとおりです。`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`
+- 組織内の OneDrive サイトの URL のリストを収集するには、「[Create a list of all OneDrive locations in your organization (組織内のすべてのOneDriveロケーションのリストを作成する)](/onedrive/list-onedrive-urls)」を参照してください。 この記事内のスクリプトは、すべての OneDrive サイトのリストを含むテキスト ファイルを作成します。 このスクリプトを実行するには、SharePoint Online 管理シェルをインストールして使用する必要があります。 検索する各 OneDrive サイトに組織の個人用サイト ドメインの URL を必ず追加してください。 これは、すべての OneDrive を含むドメインです。例: `https://contoso-my.sharepoint.com` ユーザーの OneDrive サイトの URL の例は次のとおりです。`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`
     
-    ユーザーのプリンシパル名 (UPN) が変更される稀なケースにおいては、OneDrive の場所のURLが変更され、新しい UPN が組み込まれます。 このような場合は、ユーザーの新しい OneDrive の URL を追加し古い OneDrive の URL を削除して、コンテンツ検索を変更する必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](https://docs.microsoft.com/onedrive/upn-changes)」をご覧ください。
+    ユーザーのプリンシパル名 (UPN) が変更される稀なケースにおいては、OneDrive の場所のURLが変更され、新しい UPN が組み込まれます。 このような場合は、ユーザーの新しい OneDrive の URL を追加し古い OneDrive の URL を削除して、コンテンツ検索を変更する必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](/onedrive/upn-changes)」をご覧ください。
   
 ### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Microsoft Teams と Microsoft 365 グループの検索
 
@@ -240,7 +240,7 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
   
 - Teams と Microsoft 365 グループにあるコンテンツを検索するには、チームまたはグループに関連付けられているメールボックスと SharePoint サイトを指定する必要があります。
 
-- プライベートチャネルのコンテンツは、チームのメールボックスではなく、ユーザーのメールボックスに保存されます。 プライベートチャネルのコンテンツを検索する方法については、「[プライベートチャネルの電子情報開示](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels)」を参照してください。
+- プライベートチャネルのコンテンツは、チームのメールボックスではなく、ユーザーのメールボックスに保存されます。 プライベートチャネルのコンテンツを検索する方法については、「[プライベートチャネルの電子情報開示](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels)」を参照してください。
     
 - チームまたは Microsoft 365 グループのプロパティを表示するには、Exchange Online で **Get-UnifiedGroup** コマンドレットを実行します。 これは、チームまたはグループに関連付けられているサイトの URL を取得するのに適した方法です。 たとえば、次のコマンドは、上級管理職チームという名前の Microsoft 365 グループの選択されたプロパティを表示します。 
     
@@ -298,7 +298,7 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
 
    詳細については、[Microsoft Teams が開始した通話と会議の電子情報開示](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947)を参照してください。
 
-- Teams チャネルのアプリ、1:1 チャット、1xN チャットで生成されたカード コンテンツは、メールボックスに保存され、検索することができます。 *カード* とは、短いコンテンツを対象とした UI コンテナです。 カードには複数のプロパティと添付ファイル、およびカード アクションをトリガーするボタンを含めることができます。 詳細については、「[カード](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)」を参照してください
+- Teams チャネルのアプリ、1:1 チャット、1xN チャットで生成されたカード コンテンツは、メールボックスに保存され、検索することができます。 *カード* とは、短いコンテンツを対象とした UI コンテナです。 カードには複数のプロパティと添付ファイル、およびカード アクションをトリガーするボタンを含めることができます。 詳細については、「[カード](/microsoftteams/platform/task-modules-and-cards/what-are-cards)」を参照してください
 
   他の Teams のコンテンツと同様に、カードのコンテンツが保存されている場所は、カードが使用された場所に基づいています。 Teams チャネルで使用したカードのコンテンツは、Teams グループのメールボックスに保存されます。 1:1 チャットおよび 1xN チャットのカード コンテンツは、チャット参加者のメールボックスに保存されます。
 
@@ -412,14 +412,14 @@ Exchange Online ライセンス (または Microsoft 365 ライセンス全体) 
 
 ### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>SharePoint Multi-Geo 環境のコンテンツを検索する
 
-電子情報開示マネージャーが、[SharePoint Multi-Geo 環境](https://go.microsoft.com/fwlink/?linkid=860840)内の複数の地域の SharePoint および OneDrive でコンテンツを検索する必要がある場合、これを実行できるようにするには次の操作を実行する必要があります。
+電子情報開示マネージャーが、[SharePoint Multi-Geo 環境](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)内の複数の地域の SharePoint および OneDrive でコンテンツを検索する必要がある場合、これを実行できるようにするには次の操作を実行する必要があります。
 
 1. 電子情報開示マネージャーが検索する必要があるサテライト地域の場所ごとに、個別のユーザー アカウントを作成します。 その地域の場所にあるサイトのコンテンツを検索するには、電子情報開示マネージャーは、その場所用に作成されたアカウントにサインインしてからコンテンツ検索を実行する必要があります。
 
 2. 電子情報開示マネージャーが検索する必要がある各サテライトの地理的位置 (および対応するユーザー アカウント) 用に、検索のアクセス許可フィルターを作成します。 それぞれの検索のアクセス許可フィルターにより、特定の場所と関連付けられているユーザー アカウントに電子情報開示マネージャーがサインインした際に、コンテンツ検索の対象がその地理的位置に限定されます。
 
 > [!TIP]
-> [Advanced eDiscovery](overview-ediscovery-20.md) の検索ツールを使用する場合はこの方法を使用する必要はありません。 これは、Advanced eDiscovery で SharePoint サイトと OneDrive アカウントを検索すると、すべてのデータセンターが検索されるためです。 地域限定のユーザー アカウントと検索のアクセス許可フィルターを使用するこの方法を使用する必要があるのは、コンテンツ検索ツールを使用して[電子情報開示のケース](ediscovery-cases.md)と関連付けられている検索を実行する場合のみです。
+> [Advanced eDiscovery](overview-ediscovery-20.md) の検索ツールを使用する場合はこの方法を使用する必要はありません。 これは、Advanced eDiscovery で SharePoint サイトと OneDrive アカウントを検索すると、すべてのデータセンターが検索されるためです。 地域限定のユーザー アカウントと検索のアクセス許可フィルターを使用するこの方法を使用する必要があるのは、コンテンツ検索ツールを使用して[電子情報開示のケース](./get-started-core-ediscovery.md)と関連付けられている検索を実行する場合のみです。
 
 たとえば、電子情報開示マネージャーが、北米、ヨーロッパ、アジア太平洋のサテライトの場所で SharePoint と OneDrive のコンテンツを検索する必要があるとします。 最初の手順では、1 つの場所で 1 つずつ、ユーザー アカウントを 3 つ作成します。 次の手順では、1 つの場所で 1 つずつ、*かつ* それぞれの場所のユーザー アカウント用に、検索のアクセス許可フィルターを 3 つ作成します。 このシナリオでの 3 つの検索のアクセス許可フィルターの例を示します。 それぞれの例では、**Region** によりその地域の SharePoint データセンターの場所が指定され、**Users** パラメーターにより対応するユーザー アカウントが指定されています。
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: 対象となるコレクションを実行するには、Microsoft 365 コンプライアンス センターのコンテンツ検索を使用します。これにより、アイテムが特定のメールボックスまたはサイト フォルダーに確実に格納されます。
-ms.openlocfilehash: 9c549b3ae418d13b6e1aafbf0cc171c52f89e621
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 376adfd1bec20d3b1ec11dac5e775eb386ea6317
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423458"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907699"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>コンテンツ検索を使用して対象コレクションを検索する
 
@@ -37,9 +37,9 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索機�
 
 - 手順 1 でスクリプトを実行するには、セキュリティ コンプライアンス センターの電子情報開示マネージャー役割グループ&メンバーである必要があります。 詳細については、「Assign [eDiscovery permissions 」を参照してください](assign-ediscovery-permissions.md)。
 
-    さらに、Exchange Online 組織でメール受信者の役割を割り当てる必要があります。 これは、スクリプトに含まれる **Get-MailboxFolderStatistics** コマンドレットを実行するために必要です。 既定では、メール受信者の役割は Exchange Online の [組織の管理] 役割グループと [受信者の管理] 役割グループに割り当てられます。 Exchange Online でのアクセス許可の割り当ての詳細については、「役割グループ [メンバーの管理」を参照してください](https://go.microsoft.com/fwlink/p/?linkid=692102)。 カスタム役割グループを作成し、その役割にメール受信者の役割を割り当て、手順 1 でスクリプトを実行する必要があるメンバーを追加することもできます。 詳細については、「役割グループの [管理」を参照してください](https://go.microsoft.com/fwlink/p/?linkid=730688)。
+    さらに、Exchange Online 組織でメール受信者の役割を割り当てる必要があります。 これは、スクリプトに含まれる **Get-MailboxFolderStatistics** コマンドレットを実行するために必要です。 既定では、メール受信者の役割は Exchange Online の [組織の管理] 役割グループと [受信者の管理] 役割グループに割り当てられます。 Exchange Online でのアクセス許可の割り当ての詳細については、「役割グループ [メンバーの管理」を参照してください](/exchange/manage-role-group-members-exchange-2013-help)。 カスタム役割グループを作成し、その役割にメール受信者の役割を割り当て、手順 1 でスクリプトを実行する必要があるメンバーを追加することもできます。 詳細については、「役割グループの [管理」を参照してください](/Exchange/permissions-exo/role-groups)。
 
-- この記事のスクリプトは、最新の認証をサポートしています。 Microsoft 365 または Microsoft 365 GCC 組織の場合は、このスクリプトを使用できます。 Office 365 ドイツの組織、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行を編集し `Connect-ExchangeOnline` *、ExchangeEnvironmentName* パラメーター (および組織の種類に適した値) を使用して Exchange Online PowerShell に接続する必要があります。  また、行を編集し `Connect-IPPSSession` *、ConnectionUri* パラメーターと *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、セキュリティ & コンプライアンス センター PowerShell に接続する必要があります。 詳細については [、「Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa) に接続する」および「コンプライアンス センター PowerShell に接続する」の [例&を参照してください](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
+- この記事のスクリプトは、最新の認証をサポートしています。 Microsoft 365 または Microsoft 365 GCC 組織の場合は、このスクリプトを使用できます。 Office 365 ドイツの組織、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行を編集し `Connect-ExchangeOnline` *、ExchangeEnvironmentName* パラメーター (および組織の種類に適した値) を使用して Exchange Online PowerShell に接続する必要があります。  また、行を編集し `Connect-IPPSSession` *、ConnectionUri* パラメーターと *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、セキュリティ & コンプライアンス センター PowerShell に接続する必要があります。 詳細については [、「Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) に接続する」および「コンプライアンス センター PowerShell に接続する」の [例&を参照してください](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
 
 - スクリプトを実行する度に、新しいリモート PowerShell セッションが作成されます。 つまり、利用可能なすべてのリモート PowerShell セッションを使いきりできます。 この問題を回避するには、次のコマンドを実行して、アクティブなリモート PowerShell セッションを切断します。
 
@@ -47,7 +47,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索機�
   Get-PSSession | Remove-PSSession
   ```
 
-    詳細については、「[Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+    詳細については、「[Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 - スクリプトには、最小限のエラー処理が含まれています。 スクリプトの主な目的は、対象となるコレクションを実行するためにコンテンツ検索の検索クエリ構文で使用できるメールボックス フォルダーの ID またはサイト パスの一覧をすばやく表示することです。
 
@@ -57,7 +57,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索機�
 
 この最初の手順で実行するスクリプトは、メールボックス フォルダーまたは SharePoint フォルダーと OneDrive for Business フォルダーの一覧、および各フォルダーの対応するフォルダー ID またはパスを返します。 このスクリプトを実行すると、次の情報を求めるメッセージが表示されます。
   
-- **電子メール アドレスまたはサイトの URL**: 保管担当者の電子メール アドレスを入力して、Exchange メールボックス フォルダーとフォルダーの ID の一覧を返します。 または、指定したサイトのパスの一覧を返す SharePoint サイトまたは OneDrive for Business サイトの URL を入力します。 次に、いくつかの例を示します:
+- **電子メール アドレスまたはサイトの URL**: 保管担当者の電子メール アドレスを入力して、Exchange メールボックス フォルダーとフォルダーの ID の一覧を返します。 または、指定したサイトのパスの一覧を返す SharePoint サイトまたは OneDrive for Business サイトの URL を入力します。 次に例を示します。
 
   - **Exchange**: stacig@contoso.onmicrosoft <spam> <spam> .com
 
@@ -268,7 +268,7 @@ SharePoint または OneDrive for Business サイトから **documentlink** プ�
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 この記事のスクリプトを使用して対象となるコレクションを実行する場合は、次のことを念頭に置いておきます。
   

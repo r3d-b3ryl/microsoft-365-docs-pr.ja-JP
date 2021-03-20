@@ -17,55 +17,55 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: Microsoft 365 管理センターで、グループにメンバーを追加する方法、グループからメンバーを削除する方法、およびグループ所有者の状態を管理する方法について説明します。
-ms.openlocfilehash: 34c026bced5563e07a1ae0d13f4c691cfaf3f624
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+description: Microsoft 365 管理センターで、グループにメンバーを追加し、グループからメンバーを削除し、グループ所有者の状態を管理する方法について説明します。
+ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663245"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907918"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して Microsoft 365 グループのメンバーを追加または削除する
 
-Microsoft 365 では、グループ メンバーは通常、独自のグループを作成したり、参加するグループに自分自身を追加したり、グループの所有者によって招待されます。 グループの所有権が変更された場合、または管理者としてメンバーを追加または削除する必要がある場合は、その変更を行う必要があります。 これらの変更を行えるのは、グローバル管理者、Exchange 管理者、グループ管理者、またはユーザー管理者のみです。 [Microsoft 365 グループとは](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+Microsoft 365 では、グループ メンバーは通常、独自のグループを作成したり、参加するグループに自分自身を追加したり、グループ所有者から招待されます。 グループの所有権が変更された場合、または管理者としてメンバーを追加または削除する必要がある場合は、その変更を行う必要があります。 これらの変更を行えるのは、グローバル管理者、Exchange 管理者、グループ管理者、またはユーザー管理者のみです。 [Microsoft 365 グループとは](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> 管理者ではない場合は、Outlook を使用してメンバーを追加 [または削除できます](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)。
+> 管理者ではない場合は、Outlook を使用して [メンバーを追加または削除できます](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)。
   
-## <a name="add-a-member-to-a-group-in-the-admin-center"></a>管理センターでグループにメンバーを追加する
+## <a name="add-a-member-to-a-group-in-the-admin-center"></a>管理センターのグループにメンバーを追加する
 
-1. 管理センターで、[アクティブなグループ] [**ページに移動**](https://admin.microsoft.com/Adminportal/Home?#/groups) します。  
+1. 管理センターで、[アクティブ なグループ] [**ページに移動**](https://admin.microsoft.com/Adminportal/Home?#/groups) します。  
 
 2. グループ名をクリックします。
 
-3. 詳細ウィンドウの [メンバー]タブで、[すべてのメンバーの表示と管理] を選択し、[メンバーの追加]**を選択します**。
+3. 詳細ウィンドウの [メンバー] タブ **で**、[すべて表示してメンバーを管理する] を選択し、[メンバーの追加]**を選択します**。
 
 4. 追加するメンバーの名前を検索するか選択します。
 
 5. **[保存]** を選択します。
 
-## <a name="add-a-group-to-a-member-in-the-admin-center"></a>管理センターでメンバーにグループを追加する
+## <a name="add-a-group-to-a-member-in-the-admin-center"></a>管理センターのメンバーにグループを追加する
 
 1. 管理センターで、[アクティブなユーザー] [**ページに移動**](https://admin.microsoft.com/Adminportal/Home?#/users) します。  
 
 2. ユーザーをクリックします。
 
-3. 詳細ウィンドウの [アカウント]タブで、[グループの管理]**を選択します**。
+3. 詳細ウィンドウの [アカウント] **タブで、[** グループの管理] **を選択します**。
 
 4. 追加するグループの名前を検索または選択します。
 
 5. **[保存]** を選択します。
 
-## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>管理センターでグループからメンバーを削除する
+## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>管理センターのグループからメンバーを削除する
 
 > [!NOTE]
 > プライベート グループからメンバーを削除すると、そのユーザーがグループからブロックされるのに 5 分かかります。
 
-1. 管理センターで、[アクティブなグループ] [**ページに移動**](https://admin.microsoft.com/Adminportal/Home?#/groups) します。  
+1. 管理センターで、[アクティブ なグループ] [**ページに移動**](https://admin.microsoft.com/Adminportal/Home?#/groups) します。  
 
 2. グループ名をクリックします。
 
-3. 詳細ウィンドウの [メンバー]タブで、[すべてのメンバーの表示と管理 **] を選択します**。
+3. 詳細ウィンドウの [メンバー] タブ **で、[すべて** 表示] を選択し、 **メンバーを管理します**。
 
 4. 削除するメンバーの横にある [X] を選択します。
 
@@ -77,11 +77,11 @@ Microsoft 365 では、グループ メンバーは通常、独自のグルー�
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>管理センターでメンバーを所有者の状態に昇格する
 
-1. 管理センターで、[アクティブなグループ] [**ページに移動**](https://admin.microsoft.com/Adminportal/Home?#/groups) します。  
+1. 管理センターで、[アクティブ なグループ] [**ページに移動**](https://admin.microsoft.com/Adminportal/Home?#/groups) します。  
 
 2. グループ名をクリックします。
 
-3. 詳細ウィンドウの [メンバー]タブで、[すべて表示] を選択し、所有者 **を管理します**。
+3. 詳細ウィンドウの [メンバー] タブ **で** 、[すべて表示して所有者を管理 **する] を選択します**。
 
 4. [所有者 **の追加] を選択します**。
 
@@ -91,11 +91,11 @@ Microsoft 365 では、グループ メンバーは通常、独自のグルー�
 
 ### <a name="remove-owner-status-in-the-admin-center"></a>管理センターで所有者の状態を削除する
 
-1. 管理センターで、[アクティブなグループ] [**ページに移動**](https://admin.microsoft.com/Adminportal/Home?#/groups) します。  
+1. 管理センターで、[アクティブ なグループ] [**ページに移動**](https://admin.microsoft.com/Adminportal/Home?#/groups) します。  
 
 2. グループ名をクリックします。
 
-3. 詳細ウィンドウの [メンバー]タブで、[すべての表示と所有者の管理 **] を選択します**。
+3. 詳細ウィンドウの [メンバー] タブ **で** 、[すべて表示して所有者を管理 **する] を選択します**。
 
 4. 所有者の名前の横にある [X] を選択します。
 
@@ -103,9 +103,9 @@ Microsoft 365 では、グループ メンバーは通常、独自のグルー�
 
 ## <a name="more-on-managing-membership"></a>メンバーシップの管理に関する詳細
 
-- [Azure Active Directory におけるグループの管理](https://go.microsoft.com/fwlink/?linkid=847632): 「グループのメンバーシップを動的に管理する方法」セクションを参照してください。
+- [Azure Active Directory におけるグループの管理](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): 「グループのメンバーシップを動的に管理する方法」セクションを参照してください。
 
-- グループに数百または数千のユーザーを追加するには [、Add-UnifiedGroupLinks を使用します](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks)。
+- グループに数百人または数千人のユーザーを追加するには [、Add-UnifiedGroupLinks を使用します](/powershell/module/exchange/add-unifiedgrouplinks)。
 
 - [孤立グループに新しい所有者を割り当てる](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
@@ -117,6 +117,6 @@ Microsoft 365 では、グループ メンバーは通常、独自のグルー�
 
 - [Microsoft 365 グループのゲスト アクセスを管理する](manage-guest-access-in-groups.md)
 
-- [PowerShell を使用して Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)グループを管理する : この記事では、主要なコマンドレットについて説明し、例を示します。
+- [PowerShell を使用して Microsoft 365](../../enterprise/manage-microsoft-365-groups-with-powershell.md)グループを管理する : この記事では、主要なコマンドレットについて説明し、例を示します。
 
-- [Microsoft 365 グループの名前付けポリシー](groups-naming-policy.md)
+- [Microsoft 365 グループの名前付けポリシー](../../solutions/groups-naming-policy.md)

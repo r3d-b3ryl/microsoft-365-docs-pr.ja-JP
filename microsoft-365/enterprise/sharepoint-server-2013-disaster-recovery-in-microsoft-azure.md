@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: この記事では、Azure を使用してオンプレミスの SharePoint ファームの障害復旧環境を作成する方法について説明します。
-ms.openlocfilehash: d1643f3fa0275ef9fbb01372869ca551b9fed495
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691747"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907434"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -66,7 +66,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 この記事のガイダンスでは、ウォーム スタンバイ環境の実装方法を取り上げます。この方法はコールド スタンバイ環境にも適用できます。ただし、この種類の環境をサポートするには追加手順が必要です。この記事では、ホット スタンバイ環境の実装方法については取り上げません。
   
-障害復旧ソリューションの詳細については、「[High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114)」および「[Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228)」をご覧ください。
+障害復旧ソリューションの詳細については、「[High availability and disaster recovery concepts in SharePoint 2013](/SharePoint/administration/high-availability-and-disaster-recovery-concepts)」および「[Choose a disaster recovery strategy for SharePoint 2013](/SharePoint/administration/plan-for-disaster-recovery)」をご覧ください。
   
 ## <a name="solution-description"></a>ソリューションの説明
 
@@ -196,17 +196,17 @@ Azure の環境は、運用ファームよりも小規模にできます。フ�
 
 この障害復旧ソリューションでは、多くのテクノロジが使用されています。こうしたテクノロジが期待どおりに相互に作用するためには、オンプレミス環境と Azure 環境にあるそれぞれのコンポーネントが、適切にインストールされて構成されている必要があります。以下の記事で説明されているテクノロジに関して十分な実務上の知識と実践スキルを持つ担当者またはチームが、このソリューションを設定することをお勧めします。
   
-- [DFS (Distributed File System) レプリケーション サービス](https://go.microsoft.com/fwlink/p/?LinkId=392698)
+- [DFS (Distributed File System) レプリケーション サービス](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- [Windows Server フェールオーバー クラスタリング (WSFC) と SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=392701)
+- [Windows Server フェールオーバー クラスタリング (WSFC) と SQL Server](/sql/sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server)
     
-- [AlwaysOn 可用性グループ (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392725)
+- [AlwaysOn 可用性グループ (SQL Server)](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)
     
-- [SQL Server データベースのバックアップと復元](https://go.microsoft.com/fwlink/p/?LinkId=392728)
+- [SQL Server データベースのバックアップと復元](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)
     
-- [SharePoint Server 2013 のインストールとファーム展開](https://go.microsoft.com/fwlink/p/?LinkId=393119)
+- [SharePoint Server 2013 のインストールとファーム展開](/SharePoint/install/installation-and-configuration-overview)
     
-- [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=392729)
+- [Microsoft Azure](/azure/)
     
 最後に、これらのテクノロジに関連するタスクを自動化できる、スクリプト作成のスキルをお勧めします。ユーザー インターフェイスを使用して、このソリューションで取り上げられているすべてのタスクを完了できます。ただし、手動で行うと時間がかかり、エラーが発生しやすく、一貫性のない結果が生じる恐れがあります。
   
@@ -232,14 +232,14 @@ Windows PowerShell の他にも、SQL Server、SharePoint Server、Azure 用の 
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>フェーズ 1: 障害復旧環境の設計
 
-「[SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)」に記されているガイダンスに従って、SharePoint 復旧ファームを含む、障害復旧環境を設計します。 Azure Visio ファイル [の SharePoint 障害復旧ソリューション](https://go.microsoft.com/fwlink/p/?LinkId=392554) のグラフィックスを使用して、設計プロセスを開始できます。 環境全体を設計してから、Azure 環境で作業を開始することをお勧めします。
+「[SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)」に記されているガイダンスに従って、SharePoint 復旧ファームを含む、障害復旧環境を設計します。 Azure Visio ファイルの [SharePoint 障害](https://go.microsoft.com/fwlink/p/?LinkId=392554) 復旧ソリューションのグラフィックスを使用して、設計プロセスを開始できます。 環境全体を設計してから、Azure 環境で作業を開始することをお勧めします。
   
 「[SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)」に記されている仮想ネットワーク、VPN 接続、Active Directory、および SharePoint ファームを設計するためのガイダンスに加え、Azure 環境にファイル共有ロールを追加してください。
   
 障害復旧ソリューションでのログ配布をサポートするため、ファイル共有仮想マシンが、データベース ロールが存在するサブネットに追加されます。またファイル共有は、SQL Server AlwaysOn 可用性グループのノード マジョリティの 3 番目のノードとしても機能します。これは、SQL Server AlwaysOn 可用性グループを使用する標準の SharePoint ファームにおいてお勧めされる構成です。 
   
 > [!NOTE]
-> SQL Server AlwaysOn 可用性グループに参加するデータベースの前提条件を確認することは重要です。詳しくは、「[AlwaysOn 可用性グループの前提条件、制限事項、および推奨事項](https://go.microsoft.com/fwlink/p/?LinkId=510870)」をご覧ください。 
+> SQL Server AlwaysOn 可用性グループに参加するデータベースの前提条件を確認することは重要です。詳しくは、「[AlwaysOn 可用性グループの前提条件、制限事項、および推奨事項](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability)」をご覧ください。 
   
 **図: 障害復旧ソリューションに使用するファイル サーバーの配置**
 
@@ -247,7 +247,7 @@ Windows PowerShell の他にも、SQL Server、SharePoint Server、Azure 用の 
   
 この図では、ファイル共有仮想マシンは、Azure においてデータベース サーバー ロールが含まれる同じサブネットに追加されています。ファイル共有仮想マシンは、SQL Server ロールなどの他のサーバー ロールが含まれる可用性セットには追加しないでください。
   
-ログの高可用性を確保する場合には、「[Azure BLOB ストレージ サービスを使用した SQL Server のバックアップと復元](https://go.microsoft.com/fwlink/p/?LinkId=393113)」を使用した別の方法をご考慮ください。これは Azure の新機能で、BLOB ストレージ URL にログを直接保存します。このソリューションには、この機能の使用についてのガイダンスは含まれていません。
+ログの高可用性を確保する場合には、「[Azure BLOB ストレージ サービスを使用した SQL Server のバックアップと復元](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service)」を使用した別の方法をご考慮ください。これは Azure の新機能で、BLOB ストレージ URL にログを直接保存します。このソリューションには、この機能の使用についてのガイダンスは含まれていません。
   
 復旧ファームを設計するときには、正常な障害復旧環境は、復元する運用ファームを正確に反映するという点に留意してください。復旧ファームの設計、展開、テストにおいては、復旧ファームのサイズは重要ではありません。ファームのサイズは、ビジネス要件に基づいて組織によって異なります。短期間の停止状態の間、またはパフォーマンスとキャパシティの要件によりファームのサイズを拡張する必要が生じるまでの間、ファームをスケールダウンすることもできます。
   
@@ -273,19 +273,19 @@ Windows PowerShell の他にも、SQL Server、SharePoint Server、Azure 用の 
   
 **図: Active Directory ドメインのハイブリッド構成**
 
-![Azure 仮想ネットワークに展開された2つの仮想マシンと、SharePoint ファームサブネットがレプリカドメインコントローラーおよび DNS サーバーである](../media/AZarch-HyADdomainConfig.png)
+![Azure 仮想ネットワークと SharePoint Farm サブネットに展開される 2 つの仮想マシンは、レプリカ ドメイン コントローラーと DNS サーバーです。](../media/AZarch-HyADdomainConfig.png)
   
 この図には、同じサブネットに対して 2 つの仮想マシンが展開されています。これらの仮想マシンは、Active Directory と DNS という 2 つのロールをそれぞれホストしています。
   
-Azure に Active Directory を展開する前に、「[Azure の仮想マシンでの Windows Server Active Directory のデプロイ ガイドライン](https://go.microsoft.com/fwlink/p/?linkid=392681)」をご覧ください。そこに記されているガイドラインは、ご使用のソリューションで別のアーキテクチャまたは構成設定が必要かどうかを判断するのに役立ちます。
+Azure に Active Directory を展開する前に、「[Azure の仮想マシンでの Windows Server Active Directory のデプロイ ガイドライン](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)」をご覧ください。そこに記されているガイドラインは、ご使用のソリューションで別のアーキテクチャまたは構成設定が必要かどうかを判断するのに役立ちます。
   
-Azure におけるドメイン コントローラーの設定に関する詳しいガイドラインは、「[Azure の仮想ネットワークでのレプリカ Active Directory ドメイン コントローラーのインストール](https://go.microsoft.com/fwlink/p/?LinkId=392687)」をご覧ください。
+Azure におけるドメイン コントローラーの設定に関する詳しいガイドラインは、「[Azure の仮想ネットワークでのレプリカ Active Directory ドメイン コントローラーのインストール](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)」をご覧ください。
   
 このフェーズの前には、仮想ネットワーク に仮想マシンは展開していません。Active Directory と DNS をホストする仮想マシンは、ソリューションで必要な最大の仮想マシンではない可能性が高いです。こうした仮想マシンを展開する前に、まず 仮想ネットワーク で使用する予定の最大の仮想マシンを作成します。これにより、ご使用のソリューションが、必要とする最大サイズを Azure において確実に確保できます。この仮想マシンをこの時点で構成する必要はありません。単に作成し、後で設定します。作成を行わないと、後で大きな仮想マシンを作成しようとするときに限界に達する可能性があります。これは、この記事の作成時点における問題です。 
   
 ## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>フェーズ 4: Azure における SharePoint 復旧ファームの展開
 
-設計計画に基づいて、SharePoint ファームを 仮想ネットワーク に展開します。Azure に SharePoint ロールを展開する前に、「[Azure インフラストラクチャ サービスでの SharePoint 2013 の計画](https://go.microsoft.com/fwlink/p/?LinkId=400984)」を確認すると役立ちます。
+設計計画に基づいて、SharePoint ファームを 仮想ネットワーク に展開します。Azure に SharePoint ロールを展開する前に、「[Azure インフラストラクチャ サービスでの SharePoint 2013 の計画](/previous-versions/azure/dn275958(v=azure.100))」を確認すると役立ちます。
   
 概念実証環境の構築を介して学んだ以下の点を考慮に入れてください。
   
@@ -327,18 +327,18 @@ DFSR によるファイル レプリケーションを設定するには、DNS �
 
 |**タイトル**|**説明**|
 |:-----|:-----|
-|[レプリケーション](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |レプリケーションに関するリンクが含まれる DFS 管理のための TechNet トピック  <br/> |
+|[レプリケーション](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770278(v=ws.11)) <br/> |レプリケーションに関するリンクが含まれる DFS 管理のための TechNet トピック  <br/> |
 |[DFS レプリケーション: サバイバル ガイド](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |DFS 情報へのリンクが含まれる Wiki  <br/> |
-|[DFS レプリケーション: よく寄せられる質問 (FAQ)](https://go.microsoft.com/fwlink/p/?LinkId=392738) <br/> |DFS レプリケーションに関する TechNet トピック  <br/> |
-|[Jose Barreto のブログ](https://go.microsoft.com/fwlink/p/?LinkId=392739) <br/> |Microsoft のファイル サーバー チームのプリンシパル プログラム マネージャーが書き込んだブログ  <br/> |
+|[DFS レプリケーション: よく寄せられる質問 (FAQ)](/previous-versions/windows/it-pro/windows-server-2003/cc773238(v=ws.10)) <br/> |DFS レプリケーションに関する TechNet トピック  <br/> |
+|[Jose Barreto のブログ](/archive/blogs/josebda/) <br/> |Microsoft のファイル サーバー チームのプリンシパル プログラム マネージャーが書き込んだブログ  <br/> |
 |[Microsoft のストレージ チーム - ファイル キャビネット ブログ](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |Windows Server のファイル サービスとストレージ機能に関するブログ  <br/> |
    
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>フェーズ 6: 復旧ファームに対するログ配布の設定
 
-ログ配布は、この環境で障害復旧を設定するための重要なコンポーネントです。ログ配布を使用すると、データベースのトランザクション ログ ファイルをプライマリ データベース サーバー インスタンスからセカンダリ データベース サーバー インスタンスに自動的に送信できます。ログ配布を設定するには、「[Configure log shipping in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping)」をご覧ください。 
+ログ配布は、この環境で障害復旧を設定するための重要なコンポーネントです。ログ配布を使用すると、データベースのトランザクション ログ ファイルをプライマリ データベース サーバー インスタンスからセカンダリ データベース サーバー インスタンスに自動的に送信できます。ログ配布を設定するには、「[Configure log shipping in SharePoint 2013](/sharepoint/administration/configure-log-shipping)」をご覧ください。 
   
 > [!IMPORTANT]
-> SharePoint Server におけるログ配布サポートは、特定のデータベースに限定されています。詳しくは、「[サポートされている SharePoint データベース用の高可用性と障害復旧のオプション (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)」をご覧ください。 
+> SharePoint Server におけるログ配布サポートは、特定のデータベースに限定されています。詳しくは、「[サポートされている SharePoint データベース用の高可用性と障害復旧のオプション (SharePoint 2013)](/SharePoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)」をご覧ください。 
   
 ## <a name="phase-7-validate-failover-and-recovery"></a>フェーズ 7: フェールオーバーと復旧の検証
 
@@ -403,7 +403,7 @@ restore database WSS_Content with recovery
 > [!IMPORTANT]
 > T-SQL を明示的に使用する場合、 **WITH NORECOVERY** または **WITH RECOVERY** のどちらかを、すべての RESTORE ステートメントで指定してあいまいさを排除してください。スクリプトを記述する場合にはこれは非常に重要です。完全バックアップと差分バックアップの復元後、トランザクション ログは SQL Server Management Studio で復元できます。また、ログ配布は既に停止しているため、コンテンツ データベースはスタンバイ状態なので、状態をフル アクセスに変更する必要があります。
   
-SQL Server Management Studio で、 **[WSS_Content]** データベースを右クリックし、 **[タスク]** > **[復元]** の順にポイントして、 **[トランザクション ログ]** をクリックします (完全バックアップを復元していない場合、使用できません)。詳しくは、「[トランザクション ログ バックアップの復元 (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778)」をご覧ください。
+SQL Server Management Studio で、 **[WSS_Content]** データベースを右クリックし、 **[タスク]** > **[復元]** の順にポイントして、 **[トランザクション ログ]** をクリックします (完全バックアップを復元していない場合、使用できません)。詳しくは、「[トランザクション ログ バックアップの復元 (SQL Server)](/sql/relational-databases/backup-restore/restore-a-transaction-log-backup-sql-server)」をご覧ください。
   
 ### <a name="crawl-the-content-source"></a>コンテンツ ソースのクロール
 
@@ -452,7 +452,7 @@ Search Service を復元するには、各コンテンツ ソースのフル ク
   
 通常、ネットワーク負荷分散を設定する場合、クラスターが単一の IP アドレスに割り当てられます。その後、そのクラスターを指すネットワーク用に、DNS プロバイダーで DNS ホスト レコードを作成します (このプロジェクトでは、オンプレミス データセンターで障害が発生した場合の回復性を確保するために Azure に DNS サーバーを配置しています)。たとえば、負荷分散クラスターの IP アドレスを指す  `https://sharepoint.contoso.com` という DNS レコードを、Active Directory の DNS マネージャーで作成できます。
   
-SharePoint ファームへの外部アクセスの場合は、 `https://sharepoint.contoso.com` ファイアウォールの外部 IP アドレスをポイントするイントラネット上でクライアントが使用するのと同じ URL を使用して、外部 DNS サーバー上にホストレコードを作成できます。 (この例を使用して、 `contoso.com` dns 要求を外部 dns サーバーにルーティングするのではなく、内部 dns サーバーが権限を持ち、要求を直接 SharePoint ファームクラスターにルーティングするように、分割 DNS を設定するのがベストプラクティスです。)その後、外部 IP アドレスをオンプレミスクラスターの内部 IP アドレスにマップして、クライアントが探しているリソースを見つけられるようにすることができます。
+SharePoint ファームへの外部アクセスの場合は、ファイアウォール内の外部 IP アドレスをポイントするクライアントがイントラネットで使用するのと同じ URL を持つホスト レコードを外部 DNS サーバーに作成 `https://sharepoint.contoso.com` できます。 (この例を使用するベスト プラクティスは、内部 DNS サーバーが権限を持ち、外部 DNS サーバーに DNS 要求をルーティングするのではなく、SharePoint ファーム クラスターに直接要求をルーティングするために分割 DNS を設定する方法 `contoso.com` です。その後、外部 IP アドレスをオンプレミス クラスターの内部 IP アドレスにマップして、クライアントが探しているリソースを見つけ出します。
   
 以下に、考えられるいくつかの異なる障害復旧シナリオを記します。
   
@@ -460,7 +460,7 @@ SharePoint ファームへの外部アクセスの場合は、 `https://sharepoi
   
  **シナリオ例: オンプレミス データセンターが完全に消失しました。** このシナリオは、火災や洪水などの自然災害によって生じる恐れがあります。その場合、企業であれば、別の地域にセカンダリ データセンターがあったり、独自のディレクトリ サービスと DNS を持つ Azure サブネットがあったりする可能性があります。前述の障害シナリオと同様、内部と外部の DNS レコードを、Azure SharePoint ファームを指すようにリダイレクトできます。この場合も、DNS レコードの伝達には若干時間がかかる可能性があります。
   
-ホスト名付き [サイトコレクションのアーキテクチャと展開 (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)で推奨されているように、ホスト名付きサイトコレクションを使用している場合は、sharepoint ファーム内の同じ web アプリケーションによってホストされている複数のサイトコレクションがあり、一意の DNS 名 (たとえば、など) があり `https://sales.contoso.com` `https://marketing.contoso.com` ます。 その場合、使用しているクラスター IP アドレスを指すサイト コレクションごとに、DNS レコードを作成できます。 SharePoint Web フロントエンド サーバーに要求が到着すると、適切なサイト コレクションにそれぞれの要求がルーティングされます。
+ホスト名付きサイト コレクションのアーキテクチャと展開[(SharePoint 2013)](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)で推奨されるホスト名付きサイト コレクションを使用している場合は、SharePoint ファーム内で同じ Web アプリケーションによってホストされる複数のサイト コレクションが、一意の DNS 名 (たとえば、など) を持つ場合があります。 `https://sales.contoso.com` `https://marketing.contoso.com` その場合、使用しているクラスター IP アドレスを指すサイト コレクションごとに、DNS レコードを作成できます。 SharePoint Web フロントエンド サーバーに要求が到着すると、適切なサイト コレクションにそれぞれの要求がルーティングされます。
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft の概念実証環境
 
@@ -528,7 +528,7 @@ SharePoint ファームは、必要な場合に環境の安定化とトラブル
 SQL Server がインストールされたデータベース サーバーを作成してから、SharePoint 2013 サーバーを作成しました。これは新しい展開であったため、SharePoint を展開する前に可用性グループを作成しました。MCS ベスト プラクティス ガイダンスに基づいて、3 つのグループを作成しました。 
   
 > [!NOTE]
-> プレースホルダー データベースを作成し、SharePoint をインストールする前に可用性グループを作成できるようにします。詳しくは、「[SQL Server 2012 の AlwaysOn 可用性グループを SharePoint 2013 用に構成する](https://go.microsoft.com/fwlink/p/?LinkId=517626)」をご覧ください。
+> プレースホルダー データベースを作成し、SharePoint をインストールする前に可用性グループを作成できるようにします。詳しくは、「[SQL Server 2012 の AlwaysOn 可用性グループを SharePoint 2013 用に構成する](/SharePoint/administration/configure-an-alwayson-availability-group)」をご覧ください。
   
 ファームと、関係する他のサーバーを次の順序で作成しました。
   
@@ -540,7 +540,7 @@ SQL Server がインストールされたデータベース サーバーを作�
     
 - 分散キャッシュをホストするための SP-WFE1 と SP-WFE2 を準備します。 
     
-コマンド ラインで _psconfig.exe_ を実行する際、 **skipRegisterAsDistributedCachehost** パラメーターを使用しました。 詳細については、「[SharePoint Server 2013 でフィードおよび Distributed Cache service を計画する](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service)」を参照してください。 
+コマンド ラインで _psconfig.exe_ を実行する際、 **skipRegisterAsDistributedCachehost** パラメーターを使用しました。 詳細については、「[SharePoint Server 2013 でフィードおよび Distributed Cache service を計画する](/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service)」を参照してください。 
   
 復旧環境で次のステップを繰り返しました。
   
@@ -630,7 +630,7 @@ SQL Server エージェントが、既定の資格情報ではなく、ネット
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Managed Metadata Service (または他の SharePoint サービス) がインストール後に自動的に開始されない
 
-サービスは、SharePoint Server のパフォーマンスとその時点における負荷によっては開始するまでに数分かかる場合があります。 **[開始]** をクリックしてサービスを手動で開始し、[サーバーのサービス] 画面をときどき更新して状態を監視しながら、サービスが開始されるまで適切な時間を取ります。 サービスが依然として停止状態の場合には、SharePoint 診断ログを有効にしてからサービスの開始をもう一度試みて、ログでエラーを確認します。 詳細については、「 [Configure diagnostic logging In SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging) 」を参照してください。
+サービスは、SharePoint Server のパフォーマンスとその時点における負荷によっては開始するまでに数分かかる場合があります。 **[開始]** をクリックしてサービスを手動で開始し、[サーバーのサービス] 画面をときどき更新して状態を監視しながら、サービスが開始されるまで適切な時間を取ります。 サービスが依然として停止状態の場合には、SharePoint 診断ログを有効にしてからサービスの開始をもう一度試みて、ログでエラーを確認します。 詳細については [、「Configure diagnostic logging in SharePoint 2013」を参照してください。](/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>DNS を Azure フェールオーバー環境に変更した後も、SharePoint サイトに関して従来の IP アドレスをクライアント ブラウザーが使用し続ける
 
@@ -642,13 +642,10 @@ Ipconfig /flushdns
 
 ## <a name="additional-resources"></a>その他の技術情報
 
-[サポートされている SharePoint データベース用の高可用性のオプションと障害復旧のオプション](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[サポートされている SharePoint データベース用の高可用性と障害回復のオプション](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
-[SQL Server 2012 の AlwaysOn 可用性グループを SharePoint 2013 用に構成する](https://go.microsoft.com/fwlink/p/?LinkId=393122)
+[SQL Server 2012 の AlwaysOn 可用性グループを SharePoint 2013 用に構成する](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/solution-architecture-center.md)
-
-
-
+[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)

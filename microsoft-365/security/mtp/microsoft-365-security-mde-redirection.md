@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint から Microsoft 365 セキュリティ センターへのアカウントのリダイレクト
+title: アカウントを Microsoft Defender for Endpoint から Microsoft 365 セキュリティ センターにリダイレクトする
 description: Defender for Endpoint から Microsoft 365 セキュリティ センターにアカウントとセッションをリダイレクトする方法。
 keywords: Microsoft 365 セキュリティ センター、Microsoft 365 セキュリティ センターの使用開始、セキュリティ センターのリダイレクト
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 626bc9950512438bfa43e6500adf72940ddcbfec
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: bdad55a98dba868d45ecea383ba379108ee5305a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727567"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906760"
 ---
-# <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>Microsoft Defender for Endpoint から Microsoft 365 セキュリティ センターへのアカウントのリダイレクト
+# <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>アカウントを Microsoft Defender for Endpoint から Microsoft 365 セキュリティ センターにリダイレクトする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -42,9 +42,9 @@ SIEM と拡張検出および応答 (XDR) による脅威保護に対する Micr
 このガイドでは、以前の Microsoft Defender for Endpoint ポータル (securitycenter.windows.com または securitycenter.microsoft.com) から Microsoft 365 セキュリティ センター ポータル (security.microsoft.com) への自動リダイレクトを有効にすることで、アカウントを Microsoft 365 セキュリティ センターにルーティングする方法について説明します。
 
 > [!NOTE]
-> Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint は[、Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)セキュリティ センターでアクセスを許可する方法と同じ方法で、マネージド セキュリティ サービス プロバイダー [(MSSP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)へのアクセスを許可します。
+> Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint は、[Microsoft Defender セキュリティ センターでアクセスが許可される](./mssp-access.md)のと同じ方法で、[マネージド セキュリティ サービス プロバイダー (MSSP) へのアクセスの許可](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)をサポートします。
 
-## <a name="what-to-expect"></a>何を期待する
+## <a name="what-to-expect"></a>想定される変化
 自動リダイレクトが有効になると、securitycenter.windows.com または securitycenter.microsoft.com の元の Microsoft Defender for Endpoint ポータルにアクセスするアカウントが、security.microsoft.com の Microsoft 365 セキュリティ センター ポータルに自動的にルーティングされます。
  
 変更点について詳しくは [、Microsoft 365](microsoft-365-security-center-mde.md)セキュリティ センターの Microsoft Defender for Endpoint をご覧ください。
@@ -112,7 +112,7 @@ Microsoft 365 セキュリティ センターへのアカウントのルーテ�
 
 ## <a name="related-information"></a>関連情報
 - [Microsoft 365 セキュリティ センターの概要](overview-security-center.md)
-- [Microsoft 365 セキュリティ センターのエンドポイント用 Microsoft Defender](microsoft-365-security-center-mde.md)
+- [Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint](microsoft-365-security-center-mde.md)
 - [Microsoft は、セキュリティ操作を最新化するために統合された SIEM と XDR を提供します。](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR と SIEM のインフォグラフィック](https://afrait.com/blog/xdr-versus-siem/) 
 - [新しい Defender](https://afrait.com/blog/the-new-defender/) 

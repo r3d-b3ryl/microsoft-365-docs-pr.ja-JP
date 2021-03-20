@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: PowerShell スクリプトを使用して、Exchange Online で Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、大規模なセット (最大 50,000 件) の監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
-ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 7ac3903abffc0bedb28363159c81b1f67a199f32
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233331"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907765"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>PowerShell スクリプトを使用して監査ログを検索する
 
 今日の世界では、セキュリティ、コンプライアンス、および監査は、IT 管理者にとって最優先事項になっています。 Microsoft 365 には、組織がセキュリティ、コンプライアンス、および監査を管理するのに役立ついくつかの組み込みの機能があります。 特に、統合監査ログは、セキュリティ インシデントとコンプライアンスの問題を調査するのに役立ちます。 次の方法を使用して、監査ログを取得できます。
 
-- [Office 365 マネージメント アクティビティ API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
+- [Office 365 マネージメント アクティビティ API](/office/office-365-management-api/office-365-management-activity-api-reference)
 
 - Microsoft 365 コンプライアンス センターの[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)
 
-- Exchange Online PowerShell の [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) コマンドレット
+- Exchange Online PowerShell の [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) コマンドレット
 
 監査ログを定期的に取得する必要がある場合は、Office 365 マネージメント アクティビティ API を使用するソリューションを検討する必要があります。これは、その API が大規模な組織に対して、継続的に数百万の監査レコードを取得するためのスケーラビリティとパフォーマンスを提供できるためです。 Microsoft 365 コンプライアンス センターの監査ログ検索ツールを使用すると、より短い時間範囲で発生する特定の操作の監査レコードをすばやく見つけることができます。 特に大規模な組織の場合、監査ログ検索ツールでより長い時間範囲を使用すると、返されるレコードが多すぎて簡単に管理またはエクスポートできない場合があります。
 
@@ -56,7 +56,7 @@ ms.locfileid: "50233331"
 
 ## <a name="step-1-connect-to-exchange-online-powershell"></a>手順 1: Exchange Online PowerShell に接続する
 
-最初の手順は、Exchange Online PowerShell へ接続することです。 最新の認証、多要素認証 (MFA) を使用して接続できます。 詳しい手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+最初の手順は、Exchange Online PowerShell へ接続することです。 最新の認証、多要素認証 (MFA) を使用して接続できます。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 ## <a name="step-2-modify-and-run-the-script-to-retrieve-audit-records"></a>手順 2: スクリプトを変更して実行し、監査レコードを取得する
 
@@ -146,12 +146,12 @@ Write-Host "Script complete! Finished retrieving audit records for the date rang
    |`$logFile`|"d:\temp\AuditSearchLog.txt"|スクリプトによって実行された監査ログ検索の進行状況に関する情報を含むログ ファイルの名前と場所を指定します。 スクリプトは UTC タイムスタンプをログ ファイルに書き込みます。|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|スクリプトによって返される監査レコードを含む CSV ファイルの名前と場所を指定します。|
    |`[DateTime]$start` と `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|監査ログ検索の日付範囲を指定します。 スクリプトは、指定された日付範囲内に発生した監査アクティビティのレコードを返します。 たとえば、2021 年 1 月に実行されたアクティビティを返すには、開始日を `"2021-01-01"`、終了日を `"2021-01-31"` と指定します (値は必ず二重引用符で囲んでください)。スクリプトのサンプル値は、24 時間前に実行されたアクティビティのレコードを返します。 値にタイムスタンプを含めない場合、既定のタイムスタンプは指定された日付の午前 0 時 (深夜) です。|
-   |`$record`|"AzureActiveDirectory"|検索する監査アクティビティ (*操作* とも呼ばれます) のレコードの種類を指定します。 このプロパティは、アクティビティがトリガーされたサービスまたは機能を示します。 この変数に使用できるレコードの種類の一覧については、「[監査ログ レコードの種類](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)」を参照してください。 レコードの種類の名前または ENUM 値を使用できます。 <br/><br/>**ヒント:** すべてのレコードの種類の監査レコードを返すには、値 `$null` (二重引用符なし) を使用します。|
+   |`$record`|"AzureActiveDirectory"|検索する監査アクティビティ (*操作* とも呼ばれます) のレコードの種類を指定します。 このプロパティは、アクティビティがトリガーされたサービスまたは機能を示します。 この変数に使用できるレコードの種類の一覧については、「[監査ログ レコードの種類](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)」を参照してください。 レコードの種類の名前または ENUM 値を使用できます。 <br/><br/>**ヒント:** すべてのレコードの種類の監査レコードを返すには、値 `$null` (二重引用符なし) を使用します。|
    |`$resultSize`|5000|**Search-UnifiedAuditLog** コマンドレットがスクリプトによって呼び出されるたびに返される結果の数を指定します (*結果セット* と呼ばれます)。 5,000 の値は、コマンドレットでサポートされている最大値です。 この値はそのままにしておきます。|
    |`$intervalMinutes`|60|返されるレコード数 5000 の制限を克服するために、この変数は指定されたデータ範囲を取得し、それをより小さな時間間隔に切り分けます。 これで、日付範囲全体ではなく各間隔が、コマンドの 5000 レコード出力制限の対象になります。 ほとんどの組織では、日付範囲内の 60 分間隔あたり 5000 レコードの既定値で十分です。 ただし、スクリプトが `maximum results limitation reached` (最大結果制限に達しました) というエラーを返した場合は、時間間隔を短くして (たとえば、30 分または 15 分にして) スクリプトを再実行します。|
    ||||
 
-   前の表にリストされている変数のほとんどは、**Search-UnifiedAuditLog** コマンドレットのパラメーターに対応しています。 これらのパラメーターの詳細については、「[Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)」を参照してください。
+   前の表にリストされている変数のほとんどは、**Search-UnifiedAuditLog** コマンドレットのパラメーターに対応しています。 これらのパラメーターの詳細については、「[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)」を参照してください。
 
 3. ローカル コンピューターで Windows PowerShell を開き、変更したスクリプトを保存したフォルダーに移動します。
 

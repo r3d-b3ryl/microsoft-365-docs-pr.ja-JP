@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 02d3fd17e4aac34546e545ec10621bc99b945b31
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 63670b157a66bad963f02355cbed2bdd95690081
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405715"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908291"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 アイテム保持ポリシーを使用して、コンテンツを保持するか、削除するか、あるいは保持した後に削除するかを事前に決定することにより、組織のデータを管理します。
 
@@ -72,7 +72,7 @@ ms.locfileid: "50405715"
 
 3. [**ポリシーを適用する場所の選択**] ページで、Teams の場所の 1 つまたは両方を選択します: [**Teams チャネル メッセージ**] と [**Teams チャット**]。
 
-   **Teams のチャネル メッセージ** の場合、標準チャネルからのメッセージが含まれますが、[プライベート チャネル](https://docs.microsoft.com/microsoftteams/private-channels)は含まれません。 現在、プライベートチャネルはアイテム保持ポリシーでサポートされていません。
+   **Teams のチャネル メッセージ** の場合、標準チャネルからのメッセージが含まれますが、[プライベート チャネル](/microsoftteams/private-channels)は含まれません。 現在、プライベートチャネルはアイテム保持ポリシーでサポートされていません。
 
    既定では、[すべてのチームとすべてのユーザーが選択されています](#a-policy-that-applies-to-entire-locations)が、[**[選択]** と **[除外]** オプション](#a-policy-with-specific-inclusions-or-exclusions)を選択することでこれを調整できます。
 
@@ -82,7 +82,7 @@ ms.locfileid: "50405715"
 
 5. ウィザードを完了して、設定を保存します。
 
-Teams のアイテム保持ポリシーの詳細については、「[Microsoft Teams のアイテム保持ポリシー](https://docs.microsoft.com/microsoftteams/retention-policies)」を参照してください。
+Teams のアイテム保持ポリシーの詳細については、「[Microsoft Teams のアイテム保持ポリシー](/microsoftteams/retention-policies)」を参照してください。
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Teams をサポートするのに必要な追加のアイテム保持ポリシー
 
@@ -104,7 +104,7 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 > [!NOTE]
 > Yammer の保持ポリシーがプレビューで展開されています。 まだ Yammer の新しい場所が表示されていない場合は、数週間後にもう一度お試しください。
 >
-> この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
+> この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
 
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、[**ポリシー**] > [**保持**] の順に選択します。
 
@@ -190,7 +190,7 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 
 たとえば、「rsimone」のユーザー名を持つ contoso テナント内のユーザーの場合: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-テナントの構文を確認し、ユーザーの URL を特定するには、「[組織内のすべてのユーザーの OneDrive URL のリストを取得する](https://docs.microsoft.com/onedrive/list-onedrive-urls)」を参照してください。
+テナントの構文を確認し、ユーザーの URL を特定するには、「[組織内のすべてのユーザーの OneDrive URL のリストを取得する](/onedrive/list-onedrive-urls)」を参照してください。
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 グループの構成情報
 

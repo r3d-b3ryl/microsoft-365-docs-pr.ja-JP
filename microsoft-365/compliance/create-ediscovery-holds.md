@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Core 電子情報開示ケースに関連付けられた保留リストを作成して、調査に関連する可能性のあるコンテンツを保持できます。
-ms.openlocfilehash: 377a9e7a31864f177f0ccbdc4cf2789fdc1cf373
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ca87b1b2ad35949de01622771b1ae78c5b3038e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423468"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908341"
 ---
 # <a name="create-an-ediscovery-hold"></a>電子情報開示保留リストを作成する
 
@@ -134,11 +134,11 @@ Microsoft Teams チャネルの一部である会話は、Microsoft チームに
 > [!IMPORTANT]
 > クラウドベースの組織では、Teams のチャット リストの一部である会話に参加するユーザーは、メールボックスが電子情報開示ホールドに置かれたときにチャットの会話を保持するために Exchange Online メールボックスを持っている必要があります。 これは、チャット リストの一部である会話が、チャット参加者のクラウドベースのメールボックスに格納されるためです。 チャット参加者に Exchange Online メールボックスが存在しない場合は、それらのチャットの会話を保持できません。 たとえば、Exchange ハイブリッド展開では、オンプレミスメールボックスを持つユーザーが Teams のチャット リストの一部である会話に参加できる場合があります。 ただし、この場合、これらのユーザーには保留にできるクラウドベースのメールボックスが存在しないので、これらの会話のコンテンツを保持できません。
 
-Teams コンテンツの保持の詳細については、「Microsoft Teams ユーザーまたはチームを法的保留に設定する」 [を参照してください](https://docs.microsoft.com/MicrosoftTeams/legal-hold)。
+Teams コンテンツの保持の詳細については、「Microsoft Teams ユーザーまたはチームを法的保留に設定する」 [を参照してください](/MicrosoftTeams/legal-hold)。
 
 ### <a name="preserve-card-content"></a>カードのコンテンツを保持する
 
-同様に、Teams チャネル、1:1 チャット、および 1:N グループ チャットのアプリによって生成されたカード コンテンツはメールボックスに保存され、メールボックスが電子情報開示ホールドに置かれると保持されます。 *カード* とは、短いコンテンツを対象とした UI コンテナです。 カードには複数のプロパティと添付ファイルを含め、カードアクションをトリガーするボタンを含めることができます。 詳細については、「Cards」を [参照してください](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 他の Teams のコンテンツと同様に、カードのコンテンツが保存されている場所は、カードが使用された場所に基づいています。 Teams チャネルで使用したカードのコンテンツは、Teams グループのメールボックスに保存されます。 1:1 チャットおよび 1xN チャットのカード コンテンツは、チャット参加者のメールボックスに保存されます。
+同様に、Teams チャネル、1:1 チャット、および 1:N グループ チャットのアプリによって生成されたカード コンテンツはメールボックスに保存され、メールボックスが電子情報開示ホールドに置かれると保持されます。 *カード* とは、短いコンテンツを対象とした UI コンテナです。 カードには複数のプロパティと添付ファイルを含め、カードアクションをトリガーするボタンを含めることができます。 詳細については、「Cards」を [参照してください](/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 他の Teams のコンテンツと同様に、カードのコンテンツが保存されている場所は、カードが使用された場所に基づいています。 Teams チャネルで使用したカードのコンテンツは、Teams グループのメールボックスに保存されます。 1:1 チャットおよび 1xN チャットのカード コンテンツは、チャット参加者のメールボックスに保存されます。
 
 ### <a name="preserve-meeting-and-call-information"></a>会議と通話の情報を保持する
 
@@ -163,7 +163,7 @@ Teams と 365 グループの両方を電子情報開示の保持Office、次の
 
 - 前に説明したように、Teams および Office 365 グループにあるコンテンツを保留に設定するには、グループまたはチームに関連付けられているメールボックスと SharePoint サイトを指定する必要があります。
 
-- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) **で Get-UnifiedGroup** コマンドレットを実行して、Teams および 365 グループのプロパティOffice表示します。 これは、チームまたは 365 グループに関連付けられているサイトの URL を取得Office方法です。 たとえば、次のコマンドは、上級管理職チームという名前の Office 365 グループの選択されたプロパティを表示します。
+- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) **で Get-UnifiedGroup** コマンドレットを実行して、Teams および 365 グループのプロパティOffice表示します。 これは、チームまたは 365 グループに関連付けられているサイトの URL を取得Office方法です。 たとえば、次のコマンドは、上級管理職チームという名前の Office 365 グループの選択されたプロパティを表示します。
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -190,10 +190,10 @@ Teams と 365 グループの両方を電子情報開示の保持Office、次の
 
 ## <a name="preserve-content-in-onedrive-accounts"></a>OneDrive アカウントのコンテンツを保持する
 
-組織内の OneDrive for Business サイトの URL の一覧を収集して、電子情報開示ケースに関連付けられた保留リストまたは検索に追加するには、「組織内のすべての [OneDrive](https://docs.microsoft.com/onedrive/list-onedrive-urls)の場所のリストを作成する」を参照してください。 この記事のスクリプトでは、組織内のすべての OneDrive サイトの一覧を含むテキスト ファイルを作成します。 このスクリプトを実行するには、SharePoint Online 管理シェルをインストールして使用する必要があります。 検索する各 OneDrive サイトに組織の個人用サイト ドメインの URL を必ず追加してください。 これは、すべての OneDrive を含むドメインです。例: `https://contoso-my.sharepoint.com` ユーザーの OneDrive サイトの URL の例は次のとおりです。`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`
+組織内の OneDrive for Business サイトの URL の一覧を収集して、電子情報開示ケースに関連付けられた保留リストまたは検索に追加するには、「組織内のすべての [OneDrive](/onedrive/list-onedrive-urls)の場所のリストを作成する」を参照してください。 この記事のスクリプトでは、組織内のすべての OneDrive サイトの一覧を含むテキスト ファイルを作成します。 このスクリプトを実行するには、SharePoint Online 管理シェルをインストールして使用する必要があります。 検索する各 OneDrive サイトに組織の個人用サイト ドメインの URL を必ず追加してください。 これは、すべての OneDrive を含むドメインです。例: `https://contoso-my.sharepoint.com` ユーザーの OneDrive サイトの URL の例は次のとおりです。`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`
 
 > [!IMPORTANT]
-> ユーザーの OneDrive アカウントの URL には、ユーザー プリンシパル名 (UPN) (たとえば) が含まれます `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` 。 まれに、ユーザーの UPN が変更された場合、OneDrive URL も新しい UPN を組み込むに変更されます。 ユーザーの OneDrive アカウントが電子情報開示ホールドの一部であり、古いユーザーの UPN が変更されている場合は、保留リストを更新し、保持を更新して、ユーザーの新しい OneDrive URL を追加し、古いアカウントを削除する必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](https://docs.microsoft.com/onedrive/upn-changes)」をご覧ください。
+> ユーザーの OneDrive アカウントの URL には、ユーザー プリンシパル名 (UPN) (たとえば) が含まれます `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` 。 まれに、ユーザーの UPN が変更された場合、OneDrive URL も新しい UPN を組み込むに変更されます。 ユーザーの OneDrive アカウントが電子情報開示ホールドの一部であり、古いユーザーの UPN が変更されている場合は、保留リストを更新し、保持を更新して、ユーザーの新しい OneDrive URL を追加し、古いアカウントを削除する必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](/onedrive/upn-changes)」をご覧ください。
 
 ## <a name="removing-content-locations-from-an-ediscovery-hold"></a>電子情報開示ホールドからコンテンツの場所を削除する
 
@@ -231,7 +231,7 @@ Teams と 365 グループの両方を電子情報開示の保持Office、次の
    > [!NOTE]
    > <sup>1</sup> 1,000 を超えるケース、ホールド、検索、またはエクスポートのリストを表示するには、対応する Office 365 Security & Compliance PowerShell コマンドレットを使用できます。
    >
-   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
-   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
-   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
-   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)

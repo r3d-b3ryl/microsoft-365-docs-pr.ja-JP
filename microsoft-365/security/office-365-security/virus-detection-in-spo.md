@@ -20,12 +20,12 @@ description: SharePoint Online が、ユーザーがアップロードするフ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ba3d19c6b04b93d9b1089540b7483d8b2e7246c
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: a651d198f441c26525cbfb5d7406ae350db8b79e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727501"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908084"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive、Microsoft Teams の組み込みのウイルス保護
 
@@ -62,7 +62,7 @@ Microsoft 365 ウイルス検出エンジンは、SharePoint Online 内で (フ�
 
 > [!NOTE]
 >
-> 管理者は、SharePoint Online PowerShell の [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)コマンドレットの *DisallowInfectedFileDownload* パラメーターを使用して、ウイルス対策の警告ウィンドウでも、ユーザーが感染したファイルをダウンロードすることはできません。 手順については、「Use SharePoint Online PowerShell を使用して、ユーザーが悪意のある [ファイルをダウンロードするのを防ぐ」を参照してください](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。
+> 管理者は、SharePoint Online PowerShell の [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)コマンドレットの *DisallowInfectedFileDownload* パラメーターを使用して、ウイルス対策の警告ウィンドウでも、ユーザーが感染したファイルをダウンロードすることはできません。 手順については、「Use SharePoint Online PowerShell を使用して、ユーザーが悪意のある [ファイルをダウンロードするのを防ぐ」を参照してください](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。
 >
 > *DisallowInfectedFileDownload* パラメーターを有効にしたとすぐに、検出またはブロックされたファイルへのアクセスは、ユーザーと管理者に対して完全にブロックされます。
 
@@ -76,6 +76,6 @@ Microsoft Defender for Office [365](office-365-atp.md) がサブスクリプシ�
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 のマルウェアとランサムウェアの保護](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)
+[Microsoft 365 のマルウェアとランサムウェアの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
 
 SharePoint Online、OneDrive、および Microsoft Teams のウイルス対策の詳細については[](protect-against-threats.md)、「脅威から保護する」および[「SharePoint、OneDrive、](turn-on-atp-for-spo-odb-and-teams.md)および Microsoft Teams の安全な添付ファイルを有効にする」を参照してください。

@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 お持ちのセキュリティ製品を理解し、組織のメールやファイルを保護する方法を学びます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1c6e768098cd59892c2572fb52497c873aef1a3
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
-ms.translationtype: HT
+ms.openlocfilehash: f8e929fde2908ba0d436c71c2caeb1be94b1338f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711942"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907182"
 ---
 # <a name="office-365-security-overview"></a>Office 365 セキュリティの概要
 
@@ -137,7 +137,7 @@ Microsoft Defender for Office 365 P1 および P2 の詳細については、**[
 
 - Microsoft Defender for Office 365 プラン 1 は、Microsoft 365 Business Premium に含まれています。
 
-- Microsoft Defender for Office 365 プラン 1 および Microsoft Defender for Office 365 プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして提供されています。 詳細については、「[Microsoft Defender for Office 365 プラン全体での機能の可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+- Microsoft Defender for Office 365 プラン 1 および Microsoft Defender for Office 365 プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして提供されています。 詳細については、「[Microsoft Defender for Office 365 プラン全体での機能の可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
 
 - [安全なドキュメント](safe-docs.md)機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティ ライセンス (Microsoft Defender for Office 365 プランには含まれません) を持つユーザーのみが利用できます。
 

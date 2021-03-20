@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: この記事では、ハイブリッドモダン認証と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件について説明します。
-ms.openlocfilehash: b9b48f591f74bd508b20a851ec48a0d7132d6a84
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097106"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907530"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要とオンプレミスの Skype for Business および Exchange サーバーで使用する前提条件
 
@@ -48,7 +48,7 @@ _先進認証_ は、より安全なユーザー認証と承認を提供する I
 
 Skype for Business は Exchange と緊密に連携しているため、Skype for Business クライアント ユーザーのログイン動作は、Exchange の先進認証状態によって影響を受けます。 これは、Skype for Business の _分割ドメイン_ ハイブリッド アーキテクチャがあり、Skype for Business Online と Skype for Business オンプレミスの両方が含まれていて、ユーザーが両方の場所に所属している場合にも適用されます。
 
-Office 365 での最新の認証の詳細については、「Office [365 Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md)」を参照してください。
+Office 365 でのモダン認証の詳細については、「Office [365 クライアント](microsoft-365-client-support-multi-factor-authentication.md)アプリのサポート - 多要素認証」を参照してください。
 
 > [!IMPORTANT]
 > 2017 年 8 月に、Skype for Business Online と Exchange Online を含むすべての新しい Office 365 テナントは、既定で先進認証が有効になります。 既存のテナントの既定の MA 状態は変更されませんが、すべての新しいテナントは、上記の一覧に表示されている ID 機能の拡張セットを自動的にサポートします。 MA 状態を確認するには、[「オンプレミス環境の先進認証状態を確認する」](hybrid-modern-auth-overview.md#BKMK_CheckStatus) セクションを参照してください。
@@ -67,7 +67,7 @@ evoSTS への変更により、オンプレミス サーバーはクライアン
 何が変更されないのでしょうか? 分割ドメイン ハイブリッドを使用している場合でも、Skype for Business および Exchange サーバーをオンプレミスで使用している場合でも、すべてのユーザーは最初に *オンプレミス* で認証する必要があります。 先進認証のハイブリッド実装では、_Lyncdiscovery_ と _Autodiscovery_ の両方がオンプレミス サーバーを指しています。
 
 > [!IMPORTANT]
-> MA でサポートされている Skype for Business の特定のトポロジについて理解する必要がある場合は、[ここに](https://technet.microsoft.com/library/mt803262.aspx) 記載されています。
+> MA でサポートされている Skype for Business の特定のトポロジについて理解する必要がある場合は、[ここに](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) 記載されています。
 
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>オンプレミス環境の先進認証状態を確認する
 <a name="BKMK_CheckStatus"> </a>
@@ -80,7 +80,7 @@ Get-OrganizationConfig | ft OAuth*
 
 _OAuth2ClientProfileEnabled_ プロパティの値が **False** の場合、先進認証は無効になります。
 
-Get-OrganizationConfig cmdlet の詳細については、[Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig) を参照してください。
+Get-OrganizationConfig cmdlet の詳細については、[Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig) を参照してください。
 
 次の PowerShell コマンドを実行して、Skype for Business サーバーを確認できます:
 
@@ -90,7 +90,7 @@ Get-CSOAuthConfiguration
 
 コマンドが空の _OAuthServers_ プロパティを返す場合、または _ClientADALAuthOverride_ プロパティの値が **許可されていない** 場合は、先進認証は無効になります。
 
-Get-CsOAuthConfiguration コマンドレットの詳細については、[Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration) を参照してください。
+Get-CsOAuthConfiguration コマンドレットの詳細については、[Get-CsOAuthConfiguration](/powershell/module/skype/get-csoauthconfiguration) を参照してください。
 
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>先進認証の前提条件を満たしていますか?
 
@@ -108,7 +108,7 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、[Get-Cs
   - 次に示す最大 2 つの異なるサーバー バージョンの展開:
     - Skype for Business Server 2015
     - Skype for Business Server 2019
-  - Skype for Business のすべてのサーバーには、最新の累積更新プログラムがインストールされている必要があります。[「Skype for Business Server の更新」](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) を参照して、利用可能なすべての更新プログラムを見つけて管理してください。
+  - Skype for Business のすべてのサーバーには、最新の累積更新プログラムがインストールされている必要があります。[「Skype for Business Server の更新」](/skypeforbusiness/sfb-server-updates) を参照して、利用可能なすべての更新プログラムを見つけて管理してください。
   - ハイブリッド環境に Lync Server 2010 または 2013 はありません。
 
 >[!NOTE]
@@ -136,38 +136,38 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、[Get-Cs
   - Exchange Server 2013 CU19 以降、Exchange Server 2016 CU8 以降、または Exchange Server 2019 CU1 以降のいずれかを使用しています。
   - 環境に Exchange Server 2010 はありません。
   - SSL オフローディングが構成されていません。 SSL の終了と再暗号化がサポートされています。
-  - 環境がプロキシ サーバー インフラストラクチャを利用してサーバーがインターネットに接続できるようにする場合は、すべてのExchange サーバーに [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) プロパティでプロキシ サーバーが定義されていることを確認してください。
+  - 環境がプロキシ サーバー インフラストラクチャを利用してサーバーがインターネットに接続できるようにする場合は、すべてのExchange サーバーに [InternetWebProxy](/powershell/module/exchange/set-exchangeserver) プロパティでプロキシ サーバーが定義されていることを確認してください。
 
 - **ハイブリッド Office 365 環境の Exchange Server オンプレミス**
 
   - Exchange Server 2013 を使用している場合は、少なくとも 1 つのサーバーに、メールボックスとクライアント アクセス サーバーの役割がインストールされている必要があります。 メールボックスの役割とクライアント アクセスの役割を別々のサーバーにインストールすることもできますが、信頼性を高め、パフォーマンスの向上を図るには、同じサーバーに両方の役割をインストールすることを強くお勧めします。
   - Exchange Server 2016 以降のバージョンを使用している場合は、少なくとも 1 つのサーバーに、メールボックス サーバーの役割がインストールされている必要があります。
   - ハイブリッド環境に Exchange Server 2007 または 2010 はありません。
-  - すべての Exchange サーバーには、最新の累積更新プログラムがインストールされている必要があります。[「最新の累積更新プログラムで Exchange をアップグレードする」](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates) を参照して、利用可能なすべての更新プログラムを見つけて管理してください。
+  - すべての Exchange サーバーには、最新の累積更新プログラムがインストールされている必要があります。[「最新の累積更新プログラムで Exchange をアップグレードする」](/exchange/plan-and-deploy/install-cumulative-updates) を参照して、利用可能なすべての更新プログラムを見つけて管理してください。
 
 - **Exchange クライアントとプロトコルの要件**
 
-    最新の認証の可用性は、クライアント、プロトコル、および構成の組み合わせによって決まります。 クライアント、プロトコル、または構成でモダン認証がサポートされていない場合、クライアントは引き続きレガシ認証を利用します。
+    最新の認証の可用性は、クライアント、プロトコル、および構成の組み合わせによって決まります。 最新の認証がクライアント、プロトコル、および/または構成でサポートされていない場合、クライアントは引き続きレガシ認証を活用します。
   
-    次のクライアントとプロトコルは、環境で最新の認証が有効になっている場合に、オンプレミスの Exchange での最新の認証をサポートします。
+    次のクライアントとプロトコルは、環境でモダン認証が有効になっている場合に、オンプレミスの Exchange での最新の認証をサポートします。
 
   |**クライアント**|**プライマリ プロトコル**|**メモ**|
   |:-----|:-----|:-----|
-  |Outlook 2013 以降  <br/> |MAPI over HTTP  <br/> |これらのクライアントで先進認証を利用にするには、Exchange 内で MAPI over HTTP を有効にする必要があります (通常、Exchange 2013 Service Pack 1 以降の新規インストールでは有効または True です)。詳細については、[「Office 2013 および Office 2016 クライアント アプリの先進認証のしくみ」](modern-auth-for-office-2013-and-2016.md) を参照してください。  <br/> Outlook の最小限必要なビルドを実行していることを確認します。[「Windows インストーラー (MSI) を使用する Outlook のバージョンの最新の更新プログラム」](https://docs.microsoft.com/officeupdates/outlook-updates-msi) を参照してください。  <br/> |
+  |Outlook 2013 以降  <br/> |MAPI over HTTP  <br/> |これらのクライアントで先進認証を利用にするには、Exchange 内で MAPI over HTTP を有効にする必要があります (通常、Exchange 2013 Service Pack 1 以降の新規インストールでは有効または True です)。詳細については、[「Office 2013 および Office 2016 クライアント アプリの先進認証のしくみ」](modern-auth-for-office-2013-and-2016.md) を参照してください。  <br/> Outlook の最小限必要なビルドを実行していることを確認します。[「Windows インストーラー (MSI) を使用する Outlook のバージョンの最新の更新プログラム」](/officeupdates/outlook-updates-msi) を参照してください。  <br/> |
   |Outlook 2016 for Mac 以降  <br/> |Exchange Web サービス  <br/> |  <br/> |
-  |iOS および Android 用の Outlook  <br/> | Microsoft 同期テクノロジ <br/> |詳細については、[「iOS および Android 用の Outlook でのハイブリッド先進認証の使用」](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) を参照してください。  <br/> |
+  |iOS および Android 用の Outlook  <br/> | Microsoft 同期テクノロジ <br/> |詳細については、[「iOS および Android 用の Outlook でのハイブリッド先進認証の使用」](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) を参照してください。  <br/> |
   |Exchange ActiveSync クライアント (例: iOS11 メール)  <br/> |Exchange ActiveSync  <br/> |先進認証をサポートしている Exchange ActiveSync クライアントの場合、基本認証から先進認証に切り替えるには、プロファイルを再作成する必要があります。  <br/> |
 
-    一覧に記載されていないクライアントやプロトコル (POP3 など) は、オンプレミスの Exchange での最新の認証をサポートしていないので、環境で最新の認証が有効にされた後でもレガシ認証メカニズムを引き続き利用します。
+    リストされていないクライアントやプロトコル (POP3 など) は、オンプレミスの Exchange による最新の認証をサポートし、環境で最新の認証が有効にされた後でも従来の認証メカニズムを引き続き活用します。
 
 - **一般的な前提条件**
-  - リソース フォレストのシナリオでは、ハイブリッドの最新の認証要求中に適切な SID 参照が実行されるのを確認するために、アカウント フォレストとの間の信頼関係が必要になります。 
+  - リソース フォレストのシナリオでは、ハイブリッドモダン認証要求中に適切な SID 参照が実行されるのを確認するために、アカウント フォレストとの間の信頼が必要になります。 
   - AD FS を使用している場合、フェデレーションには Windows 2012 R2 AD FS 3.0 以上が必要です。
   - ID の構成は、パスワード ハッシュ同期、パススルー認証、Office 365 でサポートされるオンプレミス STS など、Azure AD Connect でサポートされるタイプのいずれかです。
   - ユーザー レプリケーションと同期のために、Azure AD Connect が構成され機能しています。
   - オンプレミスと Office 365 環境との間で、Exchange の従来のハイブリッド トポロジ モードを使用してハイブリッドが構成されていることを確認します。 Exchange ハイブリッドの公式サポート声明によると、現在の CU または現在の CU - 1 のいずれかが必要です。
     > [!NOTE]
-    > ハイブリッド先進認証は、[ハイブリッド エージェント](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent) でサポートされていません。
+    > ハイブリッド先進認証は、[ハイブリッド エージェント](/exchange/hybrid-deployment/hybrid-agent) でサポートされていません。
 
   - オンプレミスのテスト ユーザー、および Office 365 に含まれているハイブリッド テスト ユーザーが、Skype for Business デスクトップ クライアント (Skype で先進認証を使用する場合) と Microsoft Outlook (Exchange で先進認証を使用する場合) にログインできることを確認します。
 
@@ -181,6 +181,6 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、[Get-Cs
 <a name="BKMK_URLListforMA"> </a>
 
 - [Exchange Server をオンプレミスで構成して、先進認証を使用する方法](configure-exchange-server-for-hybrid-modern-authentication.md)
-- [先進認証でサポートされている Skype for Business トポロジ](https://technet.microsoft.com/library/mt803262.aspx)
+- [先進認証でサポートされている Skype for Business トポロジ](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
 - [Skype for Business をオンプレミスで構成して、先進認証を使用する方法](configure-skype-for-business-for-hybrid-modern-authentication.md)
 - [Skype for Business および Exchange からのハイブリッド先進認証の削除または無効化](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)

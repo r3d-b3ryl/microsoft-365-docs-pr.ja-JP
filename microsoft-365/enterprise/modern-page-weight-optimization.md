@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: ページ診断ツールを使用して SharePoint Online モダンサイトページのページウェイトを最適化する方法について説明します。
-ms.openlocfilehash: 64fb3c90db78a23c7f1c3fcfe604c8ef58703be0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: ページ診断ツールを使用して SharePoint Online モダン サイト ページのページの重みを最適化する方法について説明します。
+ms.openlocfilehash: 780d8ca0debbc5efb834f8f3543b9a5a8d168108
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691671"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907446"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>SharePoint Online の最新のサイト ページでページのウエイトを最適化する
 
@@ -35,7 +35,7 @@ SharePoint Online の最新のサイト ページには、ページのコンテ�
 この記事では、最新のサイト ページでページのウエイトを減らす方法について説明します。
 
 >[!NOTE]
->Sharepoint Online の最新ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)」を参照してください。
+>Sharepoint Online の最新ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)」を参照してください。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>SharePoint 用ページ診断ツールを使用してページのウエイトを分析する
 
@@ -68,7 +68,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 ページのウエイトを制限に関する追加のガイダンスについては、次の記事を参照してください。
 
-- [SharePoint でページ パフォーマンスを最適化する](https://docs.microsoft.com/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
+- [SharePoint でページ パフォーマンスを最適化する](/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
 
 ページの変更を行ってパフォーマンスの問題を修復する前に、分析結果のページの読み込み時間をメモします。 修正後にツールをもう一度実行して新しい結果がベースライン基準内にあるかどうかを確認し、新しいページ読み込み時間をチェックして改善されたかどうかを確認します。
 
@@ -83,7 +83,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 [Office 365 のパフォーマンスをチューニングする](tune-microsoft-365-performance.md)
 
-[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
 

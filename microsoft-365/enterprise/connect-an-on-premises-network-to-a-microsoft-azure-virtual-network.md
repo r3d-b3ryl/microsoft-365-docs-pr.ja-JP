@@ -20,20 +20,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '概要: Office サーバーのワークロードのためにサイト間 VPN 接続を使用してクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。'
-ms.openlocfilehash: cddb9cfcff02f91ef76f989b87e9dda049cc1b08
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 00fd1c2246e9e9ac3eb55ca5ece9d84ecf49a1d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696186"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907710"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する
 
 クロスプレミス Azure Virtual Network をオンプレミス ネットワークに接続することで、Azure インフラストラクチャ サービスにホストされているサブネットや仮想マシンを追加してネットワークを拡張します。この接続により、オンプレミス ネットワークにあるコンピューターと Azure の仮想マシンが相互に直接アクセスできるようになります。 
 
-たとえば、Azure 仮想マシン上で実行されているディレクトリ同期サーバーは、アカウントの変更についてオンプレミスのドメインコントローラーに対してクエリを実行し、それらの変更を Microsoft 365 サブスクリプションと同期する必要があります。この記事では、Azure 仮想マシンをホストする準備ができているサイト間仮想プライベートネットワーク (VPN) 接続を使用して、クロスプレミスの Azure 仮想ネットワークをセットアップする方法について説明します。
+たとえば、Azure 仮想マシンで実行されているディレクトリ同期サーバーは、アカウントの変更をオンプレミスのドメイン コントローラーに照会し、それらの変更を Microsoft 365 サブスクリプションと同期する必要があります。 この記事では、Azure 仮想マシンをホストする準備ができているサイト間仮想プライベート ネットワーク (VPN) 接続を使用して、クロスプレインストール Azure 仮想ネットワークをセットアップする方法について説明します。
 
-## <a name="configure-a-cross-premises-azure-virtual-network"></a>クロスプレミスの Azure 仮想ネットワークを構成する
+## <a name="configure-a-cross-premises-azure-virtual-network"></a>クロスオンプレミス Azure 仮想ネットワークを構成する
 
 Azure の仮想マシンをオンプレミス環境から分離する必要はありません。Azure の仮想マシンをオンプレミスのネットワークリソースに接続するには、クロスプレミス Azure 仮想ネットワークを構成する必要があります。次の図は、Azure において仮想マシンが含まれるクロスプレミスの Azure 仮想ネットワークを展開するために必要なコンポーネントを示しています。
   
@@ -70,7 +70,7 @@ Azure Virtual Network とオンプレミス ネットワークの間の VPN 接�
     
 - 仮想ネットワークとサブネットに割り当て可能なプライベート IPv4 アドレス空間。現在、および将来の拡大で必要となる仮想マシン数に対応できる十分な空き領域が必要です。
     
-- IPsec の要件に対応するサイト間 VPN 接続を終端するための VPN デバイスがオンプレミス ネットワークで利用可能なこと。詳しくは、「[サイト間 VPN Gateway 接続の VPN デバイスについて](https://go.microsoft.com/fwlink/p/?LinkId=393093)」をご覧ください。
+- IPsec の要件に対応するサイト間 VPN 接続を終端するための VPN デバイスがオンプレミス ネットワークで利用可能なこと。詳しくは、「[サイト間 VPN Gateway 接続の VPN デバイスについて](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」をご覧ください。
     
 - ルーティング インフラストラクチャを変更し、Azure Virtual Network のアドレス空間にルーティングされるトラフィックが、サイト間 VPN 接続をホストする VPN デバイスに送られること。
     
@@ -129,10 +129,10 @@ Azure Virtual Network のプライベート IP アドレス空間は、仮想ネ
 |**必要な仮想マシンの数**|**必要なホスト ビット数**|**サブネットのサイズ**|
 |:-----|:-----|:-----|
 |1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|4-11  <br/> |4   <br/> |/28  <br/> |
+|12-27  <br/> |5   <br/> |/27  <br/> |
+|28-59  <br/> |6   <br/> |/26  <br/> |
+|60-123  <br/> |7   <br/> |/25  <br/> |
    
 ### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a>Azure Virtual Network を構成するための計画ワークシート
 <a name="worksheet"> </a>
@@ -153,7 +153,7 @@ Azure Virtual Network のプライベート IP アドレス空間は、仮想ネ
    
 このソリューションのサブネットに関しては表 S に記入してください。
   
-- 最初のサブネットについて、Azure ゲートウェイ サブネットの 28 ビットのアドレス空間 (プレフィックスの長さ /28) を決定します。このアドレス空間の計算方法については「[Azure 仮想ネットワークのゲートウェイ サブネット アドレス空間の計算](https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/)」を参照してください。
+- 最初のサブネットについて、Azure ゲートウェイ サブネットの 28 ビットのアドレス空間 (プレフィックスの長さ /28) を決定します。このアドレス空間の計算方法については「[Azure 仮想ネットワークのゲートウェイ サブネット アドレス空間の計算](/archive/blogs/solutions_advisory_board/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks)」を参照してください。
     
 - 2 番目のサブネットには、フレンドリ名、仮想ネットワークのアドレス スペースに基づく 1 つの IP アドレス スペース、わかりやすい目的を指定します。
     
@@ -210,7 +210,7 @@ Azure Virtual Network から組織のネットワークにサイト間 VPN 接�
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>フェーズ 2: Azure でのクロスプレミスの仮想ネットワークの作成
 <a name="Phase2"></a>
 
-最初に、Azure PowerShell プロンプトを開きます。Azure PowerShell をインストールしていない場合は、「[Azure PowerShell を使用する](https://docs.microsoft.com/powershell/azure/get-started-azureps)」を参照してください。
+最初に、Azure PowerShell プロンプトを開きます。Azure PowerShell をインストールしていない場合は、「[Azure PowerShell を使用する](/powershell/azure/get-started-azureps)」を参照してください。
 
  
 次に、このコマンドを使用して Azure アカウントにログインします。
@@ -306,7 +306,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 ![仮想ネットワークに、ゲートウェイがあるようになりました。](../media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
-次に、Azure VPN gatewayに接続するためのオンプレミス VPN デバイスを構成します。詳しくは、「[サイト間 VPN Gateway 接続の VPN デバイスについて](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」をご覧ください。
+次に、Azure VPN gatewayに接続するためのオンプレミス VPN デバイスを構成します。詳しくは、「[サイト間 VPN Gateway 接続の VPN デバイスについて](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」をご覧ください。
   
 VPN デバイスを構成するために必要なものを以下に記します。
   
@@ -336,4 +336,4 @@ Azure で必要な仮想マシンを作成します。詳細については、�
   
 ## <a name="next-step"></a>次の手順
   
-[Microsoft Azure での Microsoft 365 ディレクトリ同期の展開](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Microsoft Azure で Microsoft 365 ディレクトリ同期を展開する](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

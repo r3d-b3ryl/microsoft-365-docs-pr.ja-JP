@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0e2885f4db67f1508f4e7a3f354e11fb361265a3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454491"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907954"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -100,7 +100,7 @@ ms.locfileid: "50454491"
 
 - [自動調査と対応機能を採用](automated-investigation-response-office.md) する (Microsoft Defender for Office 365 プラン 2)
 
-- [Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) 管理アクティビティ API (defender for Office 365 プラン 2) を使用して、microsoft Defender と統合して、Office 365 の自動調査および応答イベントを実行します。
+- [Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) 管理アクティビティ API (defender for Office 365 プラン 2) を使用して、microsoft Defender と統合して、Office 365 の自動調査および応答イベントを実行します。
 
 - [電子メール ヘッダーを表示し、電子](investigate-malicious-email-that-was-delivered.md) メール本文をダウンロードする (Microsoft Defender for Office 365 プラン 1 またはプラン 2)
 
@@ -124,4 +124,4 @@ Microsoft Defender for Office 365 は 2 つのプランで利用できます。 
 
 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Microsoft Defender for Office 365 サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+[Microsoft Defender for Office 365 サービスの説明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

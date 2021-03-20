@@ -12,31 +12,31 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
-- m365initiative-scenario
+- m365solution-scenario
 search.appverid:
 - MOE150
 - MET150
 description: この記事では、高度な電子情報開示ケースを作成および管理する方法について説明します。 最初の手順は、ケースを作成し、高度な電子情報開示機能の使用を開始します。
-ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d0f63bca90945c3dfe13b08fa0f1d139da8a9189
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838256"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908367"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースの作成と管理
 
 高度な電子情報開示を設定し[](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)、ケースを管理する組織内の電子情報開示マネージャーにアクセス許可を割り当て、次の手順では、ケースの作成と管理を行います。
 
-この記事では、ケースを使用して法的調査のための高度な電子情報開示ワークフローを管理する概要も示します。
+この記事では、ケースを使用して、法的ケースや他の種類の調査の高度な電子情報開示ワークフローを管理する概要も示します。
 
 ## <a name="create-a-case"></a>ケースを作成する
 
-ケースを作成し、メンバーを追加するには、次の手順を実行します。 ケースを作成するユーザーは、メンバーとして自動的に追加されます。
+ケースを作成し、メンバーを追加するには、次の手順を実行します。 ケースを作成するユーザーは、メンバーとして自動的に追加されます。 ケースのメンバーは、Microsoft 365 コンプライアンス センターのケースにアクセスし、高度な電子情報開示タスクを実行できます。
 
-1. 電子情報開示 [https://compliance.microsoft.com](https://compliance.microsoft.com) のアクセス許可が割り当てられているユーザー アカウントの資格情報を使用して、アクセスしてサインインします。 組織の管理役割グループのメンバーは、高度な電子情報開示ケースを作成することもできます。
+1. 電子情報開示 <https://compliance.microsoft.com> のアクセス許可が割り当てられているユーザー アカウントの資格情報を使用して、アクセスしてサインインします。 組織の管理役割グループのメンバーは、高度な電子情報開示ケースを作成することもできます。
 
 2. Microsoft 365 コンプライアンス センターの左側のナビゲーション ウィンドウで、[**すべてを表示**] をクリックし、**[eDiscovery] > [Advanced]** をクリックします。
 
@@ -82,7 +82,7 @@ ms.locfileid: "50838256"
 
    - Advanced eDiscovery [の通信ワークフロー](managing-custodian-communications.md) を使用して、保管担当者に法的ホールド通知を送信できます。
 
-2. **[データ ソースから関連するデータを収集します](create-draft-collection.md)**。 保管担当者と保管されていないデータ ソースをケースに追加した後、組み込みのコレクション ツールを使用して、ケースに関連する可能性のあるコンテンツについてこれらのデータ ソースを検索します。 キーワード、プロパティ、および条件を使用して、[](building-search-queries.md)ケースに最も関連性の高いデータを含む検索結果を返す検索クエリを作成します。 以下のことも実行できます。
+2. **[データ ソースから関連するコンテンツを収集します](create-draft-collection.md)**。 保管担当者と保管されていないデータ ソースをケースに追加した後、組み込みのコレクション ツールを使用して、ケースに関連する可能性のあるコンテンツについてこれらのデータ ソースを検索します。 キーワード、プロパティ、および条件を使用して、[](building-search-queries.md)ケースに最も関連性の高いデータを含む検索結果を返す検索クエリを作成します。 以下のことも実行できます。
 
    - コレクション [を絞り](collection-statistics-reports.md) 込み、結果を絞り込むのに役立つコレクションの統計情報を表示します。
 
@@ -107,3 +107,15 @@ ms.locfileid: "50838256"
    - [ケース データを分析します](analyzing-data-in-review-set.md)。 Advanced eDiscovery の分析機能は強力です。 レビュー セット内のデータに対して分析を実行した後、ほぼ重複検出、電子メール スレッド、および確認する必要があるドキュメントの量を減らすのに役立つテーマなどの分析を実行します。 また、分析の実行結果を要約した分析レポートも生成します。 前に説明したように、分析を実行すると、 [弁護士クライアント特権検出モデルも実行されます](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
 
 5. **ケース データをエクスポートおよびダウンロードします**。 ケース データを収集、レビュー、分析した後の最後の手順は、外部レビュー用の Advanced eDiscovery からエクスポートするか、調査チーム外のユーザーによるレビューを行う方法です。 データのエクスポートは 2 段階のプロセスです。 最初の手順は、[](export-documents-from-review-set.md)レビュー セットからデータをエクスポートし、別の Azure Storage の場所 (Microsoft または組織が管理する Azure Storage の場所) にコピーすることです。 次に、Azure Storage Explorer を使用 [してデータ](download-export-jobs.md) をローカル コンピューターにダウンロードします。 エクスポートされたデータ ファイルに加えて、エクスポート パッケージの格納には、エクスポート レポート、概要レポート、およびエラー レポートも含まれます。
+
+## <a name="advanced-ediscovery-architecture"></a>高度な電子情報開示アーキテクチャ
+
+単一地域環境と複数地域環境での高度な電子情報開示のエンドツーエンドワークフローと、電子探索参照モデルに合わせて配置されたエンドツーエンドのデータ フローを示すアーキテクチャ図を [次に示](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)します。
+
+[![モデル ポスター: Microsoft 365 の高度な電子情報開示アーキテクチャ](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[PDF ファイルとしてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[Visio ファイルとしてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

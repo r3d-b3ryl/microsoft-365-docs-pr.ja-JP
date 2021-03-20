@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
-ms.openlocfilehash: 67285862756a262233fef934efb377b949fc9d65
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: c327081109fe9d7c4d85d4cf8f01a9e5466432d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423498"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908421"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > このシナリオは、 [法的レコード](records-management.md#records)を含むすべての保持ラベル構成に対してサポートされています。
@@ -111,9 +111,9 @@ Exchange にラベルを発行する場合、エンド ユーザーにこれら�
 ![手動ラベルが有効になるタイミングの図](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-ラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
+ラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 
-1. [セキュリティ/コンプライアンス センター PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
 
 2. 次のコマンドを実行します:
     
@@ -125,7 +125,7 @@ Exchange にラベルを発行する場合、エンド ユーザーにこれら�
 
 Exchange Online では、7 日ごとにプロセスが実行され、保持ラベルがエンド ユーザーに表示されます。 PowerShell を使用することで、このプロセスが最後に実行された日時を確認できるため、いつ実行されるかを特定できます。
   
-1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=799773)。
+1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
     
 2. これらのコマンドを実行します。
     
@@ -226,7 +226,7 @@ You can also apply a retention label to a folder or document set, and you can se
 After a retention label is applied to an item, you can view it in the details pane when that item's selected.
   
 ![Applied label shown in Details pane](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
-  
+
 For SharePoint, but not OneDrive, you can create a view of the library that contains the **Labels** column or **Item is a Record** column. This view lets you see at a glance the retention labels assigned to all items and which items are records. Note, however, that you can't filter the view by the **Item is a Record** column. For instructions how to add columns, see [Show or hide columns in a list or library](https://support.microsoft.com/en-us/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
 
 
@@ -309,5 +309,5 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
 
 - [Start retention when an event occurs](event-driven-retention.md)
-- [Automate event-based retention](automate-event-driven-retention.md)
+- [Automate event-based retention](./event-driven-retention.md#automate-events-by-using-a-rest-api)
 - [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)

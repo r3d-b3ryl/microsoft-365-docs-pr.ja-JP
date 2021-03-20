@@ -19,19 +19,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント DLP のデバイス プロキシとインターネット接続の構成方法について説明します。
-ms.openlocfilehash: 1e723adfbf16ba1180558e34b0fe4867e6337c57
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841627"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907007"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>エンドポイント DLP のデバイス プロキシとインターネット接続の構成
 
 Microsoft エンドポイント DLP は、Microsoft Windows HTTP (WinHTTP) を使用してデータを報告し、Microsoft エンドポイント クラウド サービスと通信します。 埋め込まれた エンドポイント DLP は、LocalSystem アカウントを使用してシステム コンテキストで実行されます。
 
 > [!TIP]
-> インターネットへのゲートウェイとして転送プロキシを使用する組織では、ネットワーク保護を使用してプロキシの背後を調査できます。 詳細については、「[転送プロキシの背後で発生する接続イベントの調査](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy)」を参照してください。
+> インターネットへのゲートウェイとして転送プロキシを使用する組織では、ネットワーク保護を使用してプロキシの背後を調査できます。 詳細については、「[転送プロキシの背後で発生する接続イベントの調査](/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy)」を参照してください。
 
 WinHTTP の構成設定は、Windows Internet （WinINet） のインターネット閲覧用プロキシの設定とは独立しており、以下の自動検出手法でのみプロキシ サーバーを検出することができます。
 
@@ -89,7 +89,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
      `netsh winhttp reset proxy`
 
-詳細については、「[Netsh コマンドの構文、コンテキスト、およびフォーマット](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts)」を参照してください。
+詳細については、「[Netsh コマンドの構文、コンテキスト、およびフォーマット](/windows-server/networking/technologies/netsh/netsh-contexts)」を参照してください。
 
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>プロキシ サーバーのエンドポイント DLP クラウド サービス URL へのアクセスを有効にします。
@@ -129,7 +129,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 少なくとも 1 つの接続オプションが (200) ステータスを返した場合、Defender for Endpoint クライアントはこの接続方法を使用してテスト済み URL と正しく通信できます。 
 
 ただし、接続を確認した結果が失敗を示している場合は、HTTP エラーが表示されます (「HTTP ステータス コード」を参照)。 次に、「[プロキシ サーバーでエンドポイント DLP クラウド サービス URL へのアクセスを有効にする](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server)」に示されている表の URL を使用できます。 使用する URL は、オンボーディング手順で選択した地域によって異なります。
-[!NOTE] 接続アナライザー ツールは、ASR ルールと互換性がありません [PSExec および WMI コマンドから発生するプロセスの作成をブロックします](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。
+[!NOTE] 接続アナライザー ツールは、ASR ルールと互換性がありません [PSExec および WMI コマンドから発生するプロセスの作成をブロックします](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。
 
 [!NOTE] TelemetryProxyServer がレジストリまたはグループ ポリシー経由で設定されている場合、定義されたプロキシにアクセスできないと、Defender for Endpoint はダイレクトにフォールバックします。
 関連トピック •   Windows 10 デバイスのオンボード •   Microsoft エンドポイント DLP のオンボード問題のトラブルシューティング
@@ -145,8 +145,8 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 - [データ損失防止の概要](data-loss-prevention-policies.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Windows 10 マシン用のオンボーディングツールとメソッド](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
+- [Windows 10 マシン用のオンボーディングツールとメソッド](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure AD に参加しているデバイス](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD に参加しているデバイス](/azure/active-directory/devices/concept-azure-ad-join)
 - [Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

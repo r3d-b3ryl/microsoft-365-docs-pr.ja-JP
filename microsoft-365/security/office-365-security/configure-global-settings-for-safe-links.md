@@ -18,12 +18,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender for Office 365 のセーフ リンクのグローバル設定 ([次の URL をブロックする] リストと Office 365 アプリの保護) を表示および構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38614d070f4ac9bfda978301eaeed6029b47e0ca
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: e3466f515458b05a5c00053a30fad8f5a84802fd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406116"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906566"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>365 用 Microsoft Defender のセーフ リンクのグローバルOffice構成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50406116"
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
-> この記事は、[Microsoft Defender for Office 365](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook で Safelinks に関する情報を探しているホーム ユーザーの場合は、「Advanced [Outlook.comセキュリティ」を参照してください](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> この記事は、[Microsoft Defender for Office 365](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook で Safelinks に関する情報を探しているホーム ユーザーの場合は、「Advanced [Outlook.com セキュリティ」を参照してください](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 セーフ リンクは [、Microsoft Defender for Office 365](office-365-atp.md) の機能で、メール フロー内の受信電子メール メッセージの URL スキャンと、電子メール メッセージ内の URL とリンクのクリック検証の時間を提供します。 詳細については [、「Safe Links in Microsoft Defender for microsoft Defender for Office 365」を参照してください](atp-safe-links.md)。
 
@@ -47,24 +47,24 @@ ms.locfileid: "50406116"
 
 グローバルセーフ リンクの設定は、セキュリティ & コンプライアンス センターまたは PowerShell で構成できます (Exchange Online のメールボックスを持つ対象となる Microsoft 365 組織の場合は Exchange Online PowerShell、Exchange Online メールボックスのない組織ではスタンドアロンの EOP PowerShell、Microsoft Defender for Office 365 アドオン サブスクリプション)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - セーフ リンクのグローバル設定によって提供される機能は、アクティブなセーフ リンク ポリシーに含まれるユーザーにのみ適用されます。 組み込みまたは既定のセーフ リンク ポリシーはないので、これらのグローバル設定をアクティブにするには、少なくとも 1 つのセーフ リンク ポリシーを作成する必要があります。 手順については [、「Set up Safe Links policies in Microsoft Defender for Office 365」を参照してください](set-up-atp-safe-links-policies.md)。
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [安全なリンク] ページに **直接移動するには** 、 を使用します <https://protection.office.com/safelinksv2> 。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- この記事の手順を実行するには **、Exchange Online** でアクセス許可を割り当てる必要があります。
+- この記事の手順を実行する際には、あらかじめ **Exchange Online** でアクセス許可を割り当てる必要があります。
   - セーフ リンクのグローバル設定を構成するには、組織の管理またはセキュリティ管理者の役割グループの **メンバーである** 必要があります。
   - セーフ リンクのグローバル設定への読み取り専用アクセスには、グローバル リーダーまたはセキュリティリーダーの役割グループのメンバー **である** 必要があります。
 
-  詳細については、「[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)」を参照してください。
+  詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
   **注**:
 
-  - Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - セーフ リンクのグローバル設定の推奨値については、「セーフ リンクの設定 [」を参照してください](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)。
 
@@ -98,8 +98,8 @@ ms.locfileid: "50406116"
 
   次の使用例は、次のエントリをリストに追加します。
 
-  - ドメイン、サブドメイン、およびパスをブロックfabrikam.com。
-  - サブドメインの調査をブロックしますが、親ドメインや他のサブドメインはブロックtailspintoys.com
+  - ドメイン、サブドメイン、およびパスをブロック fabrikam.com。
+  - サブドメインの調査をブロックしますが、親ドメインや他のサブドメインはブロック tailspintoys.com
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls "fabrikam.com","https://research.tailspintoys.com*"
@@ -111,7 +111,7 @@ ms.locfileid: "50406116"
   Set-AtpPolicyForO365 -BlockUrls @{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}
   ```
 
-  次の使用例は、adatum.comの新しいエントリを追加し、そのエントリをfabrikam.com。
+  次の使用例は、adatum.com の新しいエントリを追加し、そのエントリを fabrikam.com。
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
@@ -151,7 +151,7 @@ Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowCli
 Set-AtpPolicyForO365 -TrackClicks $true
 ```
 
-構文とパラメーターの詳細については [、「Set-AtpPolicyForO365」を参照してください](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)。
+構文とパラメーターの詳細については [、「Set-AtpPolicyForO365」を参照してください](/powershell/module/exchange/set-atppolicyforo365)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
@@ -165,4 +165,4 @@ Set-AtpPolicyForO365 -TrackClicks $true
   Get-AtpPolicyForO365 | Format-List BlockUrls,EnableSafeLinksForO365Clients,AllowClickThrough,TrackClicks
   ```
 
-  構文とパラメーターの詳細については [、「Get-AtpPolicyForO365」を参照してください](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365)。
+  構文とパラメーターの詳細については [、「Get-AtpPolicyForO365」を参照してください](/powershell/module/exchange/get-atppolicyforo365)。

@@ -22,12 +22,12 @@ ms.custom:
 description: 管理者は、ゼロ時間自動削除 (ZAP) が Exchange Online メールボックス内の配信済みメッセージを迷惑メール フォルダーまたは検疫にさかのぼって移動し、スパムやフィッシングと見なされる方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: be47d8dfda68bfb6819b6423542970c7768c6ffb
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b5744fdd4ce371f62fcb4b07a4cbcd003405c3db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820260"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907978"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Online でのゼロ時間自動削除 (ZAP)
 
@@ -121,4 +121,4 @@ ZAP は、メッセージが削除されていない限り、または同じ、�
 
 ZAP は、保留のメールボックスからメッセージを検疫しません。 ZAP は、スパム対策ポリシーでスパムまたはフィッシングの評決用に構成されたアクションに基づいて、メッセージを迷惑メール フォルダーに移動できます。
 
-Exchange Online でのホールドの詳細については、「インプレイスホールドと訴訟ホールド in [Exchange Online」を参照してください](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds)。
+Exchange Online でのホールドの詳細については、「インプレイスホールドと訴訟ホールド in [Exchange Online」を参照してください](/Exchange/security-and-compliance/in-place-and-litigation-holds)。

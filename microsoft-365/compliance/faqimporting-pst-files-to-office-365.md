@@ -16,27 +16,27 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
-description: この記事では、管理者が Office 365 インポート サービスを使用して PST ファイルを Microsoft 365 にインポートする方法についてよく寄せられる質問に対する回答を示します。
-ms.openlocfilehash: b6d00bf58225ca016f6debbeeac8468c558c3556
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+description: この記事では、Office 365 Import Service を使用して PST ファイルを Microsoft 365 にインポートする方法について管理者に対してよく寄せられる質問に対する回答について説明します。
+ms.openlocfilehash: adcc84df7aed25f0d51c8fb6a1899bfa56453854
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860702"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906791"
 ---
 # <a name="faq-about-importing-pst-files"></a>PST ファイルのインポートに関する FAQ
 
-**この記事は管理者向けです。自分のメールボックスに PST ファイルをインポートしますか。 [See Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**この記事は管理者向けです。PST ファイルを自分のメールボックスにインポートしますか?「Outlook [.pst ファイルからメール、連絡先、予定表をインポートする」を参照してください。](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
-ここでは、Office 365 インポート サービスを使用して PST ファイルを Microsoft 365 のメールボックスに一括インポートについてよく寄せられる質問をいくつか説明します。 For more information about how to import PST files, overview [of importing PST files to Office 365.](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)
+Microsoft 365 メールボックスに PST ファイルを一括インポートする Office 365 Import Service の使用に関してよく寄せられる質問を次に示します。 PST ファイルをインポートする方法の詳細については、「PST ファイルを [365 にインポートするOfficeを参照してください](./importing-pst-files-to-office-365.md)。
   
 ## <a name="using-network-upload-to-import-pst-files"></a>ネットワーク アップロードを使用して PST ファイルをインポートする
 
-詳細な手順については、「ネットワーク アップロードを使用して [PST ファイルをメールボックスの 365 へOfficeします](use-network-upload-to-import-pst-files.md)。
+詳細な手順については、「ネットワーク アップロードを使用して PST ファイルを [365](use-network-upload-to-import-pst-files.md)にインポートするOffice参照してください。
   
  **Office 365 インポート サービスでインポート ジョブを作成するにはどのようなアクセス許可が必要ですか?**
   
-PST ファイルを Microsoft 365 メールボックスにインポートするには、Exchange Online で Mailbox Import Export の役割が割り当てられている必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は "Organization Management/組織の管理" 役割グループに追加できます。 または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。 詳細については、「[Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688)」 (Exchange Online の役割グループの管理) の "Add a role to a role group" (役割グループに役割を追加する) または "Create a role group" (役割グループを作成する) を参照してください。
+PST ファイルを Microsoft 365 メールボックスにインポートするには、Exchange Online で Mailbox Import Export の役割が割り当てられている必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は "Organization Management/組織の管理" 役割グループに追加できます。 または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。 詳細については、「[Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups)」 (Exchange Online の役割グループの管理) の "Add a role to a role group" (役割グループに役割を追加する) または "Create a role group" (役割グループを作成する) を参照してください。
   
 さらに、セキュリティ/コンプライアンス センターでインポート ジョブを作成するには、次のいずれかを満たす必要があります。
   
@@ -51,7 +51,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
   
  **ネットワーク アップロードはどこで利用できますか?**
   
-現在、ネットワーク アップロードは米国の次の地域で利用できます。 カナダ、ブラジル、英国、フランス、ドイツ、スイス、ノルウェー、オーロピング、インド、イースト アジア、サイバーア、日本、韓国、オーストラリア、オーストラビア (UAE) Network upload will be available in more regions soon.
+現在のところ、ネットワーク アップロードは米国、カナダ、ブラジル、英国、フランス、ドイツ、スイス、ノルウェー、欧州、インド、東アジア、東南アジア、日本、韓国、オーストラリア、アラブ首長国連邦 (UAE) でご利用いただけます。ネットワーク アップロードはその他の地域でも間もなく利用可能になります。
   
  **ネットワーク アップロードを使用して PST ファイルをインポートすると、料金はいくらですか?**
   
@@ -61,7 +61,7 @@ Using network upload to import PST files is free.
   
  **Office 365 へのインポートがサポートされている PST ファイル形式のバージョンは何ですか?**
   
-PST ファイル形式には、ANSI と Unicode という 2 つのバージョンがあります。 Unicode PST ファイル形式を使用したファイルをインポートすることをお勧めします。 ただし、2 バイト文字セット (DBCS) を使用する言語のファイルのように、ANSI PST ファイル形式を使用したファイルも Office 365 にインポートできます。 For more information about importing ANSI PST files, see Step 4 in [Use network upload to import your organization's PST files to Office 365.](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)
+PST ファイル形式には、ANSI と Unicode という 2 つのバージョンがあります。 Unicode PST ファイル形式を使用したファイルをインポートすることをお勧めします。 ただし、2 バイト文字セット (DBCS) を使用する言語のファイルのように、ANSI PST ファイル形式を使用したファイルも Office 365 にインポートできます。 ANSI PST ファイルのインポートの詳細については、「ネットワーク アップロードを使用して組織の PST ファイルを [365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)にインポートする」の手順 4 を参照Officeしてください。
   
 また、Outlook 2007 以降のバージョンの PST ファイルを Office 365 にもインポートできます。
   
@@ -73,7 +73,7 @@ PST ファイル形式には、ANSI と Unicode という 2 つのバージョ�
   
  **メールボックスに PST ファイルをインポートするには、どれぐらい時間がかかりますか?**
   
-ネットワークの性能によって異なりますが、一般的には組織の Azure Storage 領域にアップロードするデータ 1 TB あたり数時間かかります。 PST ファイルが Azure Storage 領域にコピーされると、各 PST ファイルは 1 日あたり 24 GB 以上の速度で Microsoft 365 のメールボックスにインポートされます。 この速度ではニーズを満たさない場合、メール データを Office 365 に移行するための他の方法も検討できます。 詳細については、「[複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
+ネットワークの性能によって異なりますが、一般的には組織の Azure Storage 領域にアップロードするデータ 1 TB あたり数時間かかります。 PST ファイルが Azure Storage 領域にコピーされると、各 PST ファイルは 1 日あたり 24 GB 以上の速度で Microsoft 365 のメールボックスにインポートされます。 この速度ではニーズを満たさない場合、メール データを Office 365 に移行するための他の方法も検討できます。 詳細については、「[複数のメール アカウントを Office 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
   
 複数の PST ファイルを異なる複数のメールボックスにインポートする場合、インポート プロセスは並行して実行されます。つまり、対になるそれぞれの PST とメールボックスが同時にインポートされます。 同様に、複数の PST ファイルを同じメールボックスにインポートする場合も、同時にインポートされます。
   
@@ -107,11 +107,11 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
   
 ## <a name="using-drive-shipping-to-import-pst-files"></a>ドライブ送付を使用して PST ファイルをインポートする
 
-詳しい手順については、「ドライブ送付を使用して PST ファイルを [Outlook 365 上Officeインストールする」を参照してください](use-drive-shipping-to-import-pst-files-to-office-365.md)。
+詳しい手順については、「ドライブ配布を使用して PST ファイルをインポートして [365](use-drive-shipping-to-import-pst-files-to-office-365.md)にインポートするOffice参照してください。
   
  **Office 365 インポート サービスでインポート ジョブを作成するにはどのようなアクセス許可が必要ですか?**
   
-PST ファイルを Microsoft 365 メールボックス にインポートするには、Mailbox Import Export の役割を割り当てる必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は "Organization Management/組織の管理" 役割グループに追加できます。 または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。 詳細については、「[Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688)」 (Exchange Online の役割グループの管理) の "Add a role to a role group" (役割グループに役割を追加する) または "Create a role group" (役割グループを作成する) を参照してください。
+PST ファイルを Microsoft 365 メールボックス にインポートするには、Mailbox Import Export の役割を割り当てる必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は "Organization Management/組織の管理" 役割グループに追加できます。 または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。 詳細については、「[Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups)」 (Exchange Online の役割グループの管理) の "Add a role to a role group" (役割グループに役割を追加する) または "Create a role group" (役割グループを作成する) を参照してください。
   
 さらに、セキュリティ/コンプライアンス センターでインポート ジョブを作成するには、次のいずれかを満たす必要があります。
   
@@ -137,11 +137,11 @@ Microsoft 365 に PST ファイルをインポートするためのドライブ�
   
  **ドライブの発送を使用して PST ファイルを Microsoft 365 にインポートすると、料金はいくらですか?**
   
-ドライブの発送を使用して PST ファイルを Microsoft 365 メールボックスにインポートするコストは、1 GB のデータあたり 2 米ドルです。 たとえば、1,000 GB (1 TB) の PST ファイルを含むハード ディスク ドライブを発送する場合のコストは、2,000 米ドルです。 インポート手数料は、パートナーと分担して支払うことができます。 パートナーを探す方法については、「[Microsoft パートナーまたは販売店を探す](https://go.microsoft.com/fwlink/p/?LinkId=785197)」を参照してください。
+ドライブの発送を使用して PST ファイルを Microsoft 365 メールボックスにインポートするコストは、1 GB のデータあたり 2 米ドルです。 たとえば、1,000 GB (1 TB) の PST ファイルを含むハード ディスク ドライブを発送する場合のコストは、2,000 米ドルです。 インポート手数料は、パートナーと分担して支払うことができます。 パートナーを探す方法については、「[Microsoft パートナーまたは販売店を探す](../admin/manage/find-your-partner-or-reseller.md)」を参照してください。
   
  **ドライブ発送では、どのような種類のハード ドライブがサポートされていますか?**
   
-Office 365 インポート サービスでは、2.5 インチの sSD (sSD) または 2.5 インチまたは 3.5 インチの SATA II/III 内部ハード ドライブのみがサポートされています。 最大で 10 TB のハード ドライブを使用できます。 インポート ジョブでは、ハード ドライブの最初のデータ ボリュームのみが処理されます。 このデータ ボリュームは、NTFS でフォーマットする必要があります。 データをハード ドライブにコピーする場合、2.5 インチ SSD、2.5 インチまたは 3.5 インチ SATA II/III コネクタを使用して直接接続するか、外部 2.5 インチ SSD、2.5 インチまたは 3.5 インチ SATA II/III USB アダプターを使用して外部的に接続できます。
+Office 365 Import サービスで使用できるのは、2.5 インチのソリッド ステート ドライブ (SSD) または 2.5 インチまたは 3.5 インチの SATA II/III の内部ハード ドライブのみです。 最大で 10 TB のハード ドライブを使用できます。 インポート ジョブでは、ハード ドライブの最初のデータ ボリュームのみが処理されます。 このデータ ボリュームは、NTFS でフォーマットする必要があります。 データをハード ドライブにコピーする場合は、2.5 インチ SSD または 2.5 インチまたは 3.5 インチの SATA II/III コネクタを使用して直接接続するか、外部 2.5 インチ SSD または 2.5 インチまたは 3.5 インチの SATA II/III USB アダプターを使用して外部に接続できます。
   
 > [!IMPORTANT]
 > Office 365 インポート サービスでは、USB アダプターが内蔵されている外部ハード ドライブはサポートされていません。 また、外部ハード ドライブのケース内にあるディスクは使用できません 外部ハード ドライブは発送しないでください。 
@@ -156,11 +156,11 @@ Office 365 インポート サービスでは、2.5 インチの sSD (sSD) ま�
   
  **Microsoft のデータ センターにハード ドライブが到着してから PST ファイルが Azure にアップロードされるまで、どれくらいかかりますか?**
   
-Microsoft データ センターにハード ドライブが送付された後、PST ファイルが組織の Azure Storage 領域にアップロードされるまで、7 から 10 日かかります。 PST ファイルは、`ingestiondata` と呼ばれる Azure blob コンテナーにアップロードされます。 
+Microsoft データ センターでハード ドライブを受信した後、組織の Azure Storage 領域に PST ファイルをアップロードするには、7 ~ 10 営業日かかるでしょう。 PST ファイルは、`ingestiondata` と呼ばれる Azure blob コンテナーにアップロードされます。 
   
  **メールボックスに PST ファイルをインポートするには、どれぐらい時間がかかりますか?**
   
-PST ファイルが Azure Storage 領域にアップロードされると、Microsoft 365 が (セキュリティで保護された安全な方法で) PST ファイル内のデータを分析して、アイテムの経過時間と、PST ファイルに含まれるさまざまなメッセージの種類を識別します。 この分析が完了したら、PST ファイルのすべてのデータをインポートしたり、フィルターを設定してインポートするデータを制御したりできます。 インポート ジョブを開始した後、PST ファイルは 1 日に少なくとも 24 GB の速さで Microsoft 365 メールボックスにインポートされます。 このレートでは要件を満たさない場合は、メール データを Office 365 にインポートするための別の方法も検討できます。 詳細については、「[複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
+PST ファイルが Azure Storage 領域にアップロードされると、Microsoft 365 が (セキュリティで保護された安全な方法で) PST ファイル内のデータを分析して、アイテムの経過時間と、PST ファイルに含まれるさまざまなメッセージの種類を識別します。 この分析が完了したら、PST ファイルのすべてのデータをインポートしたり、フィルターを設定してインポートするデータを制御したりできます。 インポート ジョブを開始した後、PST ファイルは 1 日に少なくとも 24 GB の速さで Microsoft 365 メールボックスにインポートされます。 このレートでは要件を満たさない場合は、メール データを Office 365 にインポートするための別の方法も検討できます。 詳細については、「[複数のメール アカウントを Office 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
   
 複数の PST ファイルを異なる複数のメールボックスにインポートする場合、インポート プロセスは並行して実行されます。つまり、対になるそれぞれの PST とメールボックスが同時にインポートされます。 同様に、複数の PST ファイルを同じメールボックスにインポートする場合も、同時にインポートされます。
   
@@ -172,7 +172,7 @@ PST ファイルが Azure Storage 領域にアップロードされると、Micr
   
  **Microsoft 365 へのインポートがサポートされている PST ファイル形式のバージョンは何ですか?**
   
-PST ファイル形式には、ANSI と Unicode という 2 つのバージョンがあります。 Unicode PST ファイル形式を使用したファイルをインポートすることをお勧めします。 ただし、2 バイト文字セット (DBCS) を使用する言語のファイルのように、ANSI PST ファイル形式を使用したファイルも Microsoft 365 にインポートできます。 For more information about importing ANSI PST files, see Step 3 in [Use drive shipping to import PST files to Office 365.](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)
+PST ファイル形式には、ANSI と Unicode という 2 つのバージョンがあります。 Unicode PST ファイル形式を使用したファイルをインポートすることをお勧めします。 ただし、2 バイト文字セット (DBCS) を使用する言語のファイルのように、ANSI PST ファイル形式を使用したファイルも Microsoft 365 にインポートできます。 ANSI PST ファイルのインポートの詳細については、「ステップ 3 in Use drive shipping to import PST files to import PST files to Office [365」を参照](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)してください。
   
 また、Outlook 2007 以降のバージョンの PST ファイルを Office 365 にもインポートできます。
   
@@ -224,6 +224,6 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
   
 はい。
   
- **ハード ドライブを別の国に送付しなければならない場合、何か必要な手続きはありますか? **
+ **ハード ドライブを別の国に送付しなければならない場合、何か必要な手続きはありますか?**
   
 Microsoft 宛てに発送するハード ディスク ドライブは、国境を越える場合があります。この場合、ハード ディスク ドライブとドライブに含まれているデータが、輸出入に関して適用される法律に違反しないことを保証するのはお客様の責任になります。ハード ディスク ドライブを発送する前に、指定した Microsoft データ センターへのディスクとデータの送付について、法律違反事項がないことを助言者に確認してください。こうすることで、ドライブが Microsoft に適時に到着します。

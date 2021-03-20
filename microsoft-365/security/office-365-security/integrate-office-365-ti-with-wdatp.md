@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Office 365 と共に Microsoft Defender を使用する
+title: Microsoft Defender for Endpoint と共Office 365 の Microsoft Defender を使用する
 f1.keywords:
 - NOCSH
 keywords: 統合, Microsoft Defender, ATP
@@ -15,71 +15,71 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Microsoft Defender for Office 365 を Microsoft Defender for Endpoint と共に使用して、デバイスやメール コンテンツに対する脅威に関する詳細情報を取得します。
+description: Microsoft Defender for Office 365 と Microsoft Defender for Endpoint を組み合わせて使用して、デバイスや電子メール コンテンツに対する脅威に関する詳細情報を取得します。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 035834e1e4855c0e47defed06043a5fdbd0e63bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 05022b5728b147ea8459cdcb41b2930201e2c7e6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166089"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907098"
 ---
-# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint Office 365 と共に Microsoft Defender を使用する
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint と共Office 365 の Microsoft Defender を使用する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender for Office 365](office-365-atp.md) は、Microsoft Defender for Endpoint と一緒 [に動作するように構成できます](https://docs.microsoft.com/windows/security/threat-protection)。
+[Microsoft Defender for Office 365 は](office-365-atp.md) 、Microsoft Defender for Endpoint で動作 [するように構成できます](/windows/security/threat-protection)。
 
-Office 365 用 Microsoft Defender と Microsoft Defender for Endpoint を統合すると、セキュリティ運用チームは、ユーザーのデバイスが危険にさらされている場合に迅速に監視し、アクションを実行するのに役立ちます。 たとえば、統合が有効になると、セキュリティ運用チームは、検出された電子メール メッセージの影響を受ける可能性のあるデバイスと、それらのデバイスに対して生成された最新のアラートの数をエンドポイント用 Microsoft Defender で確認できます。
+Microsoft Defender for Office 365 と Microsoft Defender for Endpoint を統合すると、ユーザーのデバイスが危険にさらされている場合、セキュリティ運用チームが迅速に監視し、アクションを実行できます。 たとえば、統合が有効になると、セキュリティ運用チームは、検出された電子メール メッセージの影響を受ける可能性のあるデバイスと、Microsoft Defender for Endpoint のデバイスに対して生成された最近のアラートの数を確認できます。
 
-次の画像は、Microsoft Defender for **Endpoint** 統合を有効にした場合の [デバイス] タブの外観を示しています。
+次の図は、Microsoft Defender for **Endpoint** 統合を有効にした場合の [デバイス] タブの外観を示しています。
 
-![Microsoft Defender for Endpoint が有効になっていると、アラートが表示されたデバイスの一覧が表示されます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![Microsoft Defender for Endpoint が有効になっている場合は、通知を含むデバイスの一覧を表示できます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-この例では、検出された電子メール メッセージの受信者が 4 つのデバイスを持ち、1 つが警告を持っているのを確認できます。 デバイスのリンクをクリックすると、Microsoft Defender セキュリティ センター () でページが開きます <https://securitycenter.windows.com> 。
+この例では、検出された電子メール メッセージの受信者が 4 つのデバイスを持ち、1 つはアラートを持っているのを確認できます。 デバイスのリンクをクリックすると、Microsoft Defender セキュリティ センター () でページが開きます <https://securitycenter.windows.com> 。
 
 > [!TIP]
-> **[Microsoft Defender セキュリティ センター (Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** for Endpoint ポータルとも呼ばれます) について詳しく知る
+> **[Microsoft Defender セキュリティ センターの詳細 (Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/use)** for Endpoint ポータルとも呼ばれます)。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 - 組織には、Microsoft Defender for Office 365 (または Office 365 E5) と Microsoft Defender for Endpoint が必要です。
 
-- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security & Compliance Center](https://protection.office.com). (「[セキュリティ/コンプライアンス センターのアクセス&」を参照)](permissions-in-the-security-and-compliance-center.md)
+- グローバル管理者またはセキュリティ管理者の役割 (セキュリティ管理者など) がセキュリティ コンプライアンス センターに割り当てられている& [必要があります](https://protection.office.com)。 (「 [セキュリティ コンプライアンス センターのアクセス許可&」を参照してください](permissions-in-the-security-and-compliance-center.md))
 
-- セキュリティ センター コンプライアンス センターと Microsoft Defender セキュリティ センターで、エクスプローラー (またはリアルタイムの検出 [)](threat-explorer.md) &両方にアクセスできる必要があります。
+- セキュリティ コンプライアンス センターと Microsoft Defender セキュリティ センターの両方のエクスプローラー (またはリアルタイム検出 [)](threat-explorer.md) &アクセスできる必要があります。
 
-## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Office 365 を Microsoft Defender for Endpoint と統合するには
+## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Office 365 と Microsoft Defender for Endpoint を統合するには
 
-Office 365 用 Microsoft Defender と Microsoft Defender for Endpoint の統合は、セキュリティ & コンプライアンス センターと Microsoft Defender セキュリティ センターの両方を使用してセットアップされます。
+Microsoft Defender for Office 365 と Microsoft Defender for Endpoint の統合は、セキュリティ & コンプライアンス センターと Microsoft Defender セキュリティ センターの両方を使用してセットアップされます。
 
-1. グローバル管理者またはセキュリティ管理者として、移動して <https://protection.office.com> サインインします。 (これにより、コンプライアンス センターの Office 365 セキュリティ&表示されます)。
+1. グローバル管理者またはセキュリティ管理者として、アクセスして <https://protection.office.com> サインインします。 (これにより、コンプライアンス センター Office 365 &にアクセスできます)。
 
-2. ナビゲーション ウィンドウで、[脅威管理 **エクスプローラー] を** \> **選択します**。
+2. ナビゲーション ウィンドウで、[脅威管理エクスプローラー] **を** \> **選択します**。
 
-   ![脅威の管理メニューのエクスプローラー](../../media/ThreatMgmt-Explorer-nav.png)
+   ![[脅威の管理] メニューの [エクスプローラー]](../../media/ThreatMgmt-Explorer-nav.png)
 
-3. 画面の右上隅で **、[Defender for Endpoint Settings (MDE Settings] ) を選択します**。
+3. 画面の右上隅で、[Defender **for Endpoint Settings (MDE Settings) ] を選択します**。
 
-4. [Microsoft Defender for Endpoint 接続] ダイアログ ボックスで、[Microsoft Defender for Endpoint への接続 **] をオンにします**。
+4. [Microsoft Defender for Endpoint 接続] ダイアログ ボックスで、[エンドポイント用 **Microsoft Defender に接続する] をオンにします**。
 
-   ![Microsoft Defender for Endpoint 接続](../../media/Explorer-WDATPConnection-dialog.png)
+   ![エンドポイント接続用 Microsoft Defender](../../media/Explorer-WDATPConnection-dialog.png)
 
-5. Microsoft Defender セキュリティ センター () に移動します <https://securitycenter.windows.com> 。
+5. Microsoft Defender セキュリティ センター ( ) に移動します <https://securitycenter.windows.com> 。
 
-6. ナビゲーション バーで、[設定] を **選択します**。 次に、[全般] **で**[高度な機能 **] を選択します**。
+6. ナビゲーション バーで、[設定] を **選択します**。 次に、[全般] **で 、[** 高度な機能 **] を選択します**。
 
-7. **365** 脅威インテリジェンスOfficeまで下にスクロールし、接続を有効にしてください。
+7. **365 脅威インテリジェンスOfficeまで** 下にスクロールし、接続を有効にしてください。
 
    ![Office 365 脅威インテリジェンス接続](../../media/mdatp-oatptoggle.png)
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 の脅威の調査と対応の機能](office-365-ti.md)
+[365 の脅威の調査と対応Office](office-365-ti.md)
 
 [Microsoft Defender for Office 365](office-365-atp.md)
 
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender for Endpoint](/windows/security/threat-protection)

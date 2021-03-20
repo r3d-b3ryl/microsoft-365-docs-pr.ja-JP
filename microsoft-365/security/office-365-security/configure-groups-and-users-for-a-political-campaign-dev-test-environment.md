@@ -19,12 +19,12 @@ description: '要約: 選挙運動の開発/テスト環境向けのユーザー
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e600b3baf012d416a7b5de974b94111bb6cf90a2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 54d2543313c1a031974876d7fd09b453cc2ec24d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287451"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906542"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -214,4 +214,4 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 [クラウド導入のテスト ラボ ガイド (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[クラウド導入およびハイブリッド ソリューション](/office365/enterprise/cloud-adoption-and-hybrid-solutions)

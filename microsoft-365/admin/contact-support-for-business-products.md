@@ -22,12 +22,12 @@ search.appverid:
 description: 国または地域別にリストされている電話番号を使用するか、サービス リクエストをオンラインで送信して、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261337"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907040"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる方法 - 管理者ヘルプ
 
@@ -36,7 +36,7 @@ ms.locfileid: "50261337"
 > [!IMPORTANT]
 > これらのサポート方法を使用するには、一般法人向けサブスクリプションの管理者である必要があります。 ビジネス管理者でない場合は、[こちらのサポートページ](https://support.microsoft.com/contactus)をご利用ください。
 
-まず、[サービスの現在の正常性を確認します](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)。 現在および過去の問題に関する詳細情報は、「<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">サービス正常性ダッシュボード</a>」で確認できます。 一覧にない問題が発生している場合は、次のいずれかの方法でサポートを受けることができます。
+まず、[サービスの現在の正常性を確認します](../enterprise/view-service-health.md)。 現在および過去の問題に関する詳細情報は、「<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">サービス正常性ダッシュボード</a>」で確認できます。 一覧にない問題が発生している場合は、次のいずれかの方法でサポートを受けることができます。
 
 ## <a name="online-support"></a>オンライン サポート
 
@@ -214,7 +214,7 @@ Office 365 では、複数の異なる役割を持つ複数のタイプの管理
 
 ## <a name="feature-availability"></a>機能の可用性
 
-さまざまな Office 365 のプランで利用できる機能を確認するには、「[Office 365 サービスの説明](https://go.microsoft.com/fwlink/p/?linkid=846911)」を参照してください。
+さまざまな Office 365 のプランで利用できる機能を確認するには、「[Office 365 サービスの説明](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)」を参照してください。
 
 ## <a name="follow-us-on-wechat"></a>WeChat でフォローしてください
 

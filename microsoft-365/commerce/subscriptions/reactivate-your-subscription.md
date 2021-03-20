@@ -22,27 +22,27 @@ search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: サブスクリプションが期限切れになったり、無効になったり、キャンセルされた場合にサブスクリプションを再アクティブ化する方法について学習します。
-ms.openlocfilehash: 3e360e37a108c290e13ca3c1a147f8eb099648e6
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: d33b40d0cfb35f19d8894204173212d37dc40666
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766391"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907848"
 ---
 # <a name="reactivate-your-subscription"></a>サブスクリプションを再度有効にする
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
 サブスクリプションの有効期限が切れている場合、Microsoft が無効にした場合、またはサブスクリプション期間の途中でサブスクリプションをキャンセルした場合は、管理センターでサブスクリプションを再アクティブ化できます。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-サブスクリプションを再アクティブ化するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+サブスクリプションを再アクティブ化するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 **管理者ではない場合**: サブスクリプションを再アクティブ化するには、管理に問い合わせください。
 
@@ -103,5 +103,5 @@ ms.locfileid: "50766391"
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 for business サブスクリプション](../try-or-buy-microsoft-365.md) を試してみるか購入する (記事)\
-[ビジネス向け Microsoft 365 の更新](renew-your-subscription.md) (記事)\
+[一般法人向け Microsoft 365 を更新する](renew-your-subscription.md) (記事)\
 [サブスクリプションをキャンセルする](cancel-your-subscription.md) (記事)

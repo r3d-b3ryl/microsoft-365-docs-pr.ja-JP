@@ -16,12 +16,12 @@ description: メールボックスを訴訟ホールドの対象にし、調査�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 4bcb857095a63c06caa6e9762496ca74afeead04
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
-ms.translationtype: HT
+ms.openlocfilehash: 046ee6fdc7c42026b1a69805883175982e3100b7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546989"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908401"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
 
@@ -68,7 +68,7 @@ ms.locfileid: "47546989"
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>PowerShell を使用して訴訟ホールドを作成する
 
-[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) で次のコマンドを実行することで、訴訟ホールドを作成することもできます。
+[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で次のコマンドを実行することで、訴訟ホールドを作成することもできます。
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
@@ -80,7 +80,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-詳細については、「[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)」を参照してください。
+詳細については、「[Set-Mailbox](/powershell/module/exchange/set-mailbox)」を参照してください。
 
 ## <a name="how-does-litigation-hold-work"></a>訴訟ホールドはどのように機能しますか?
 
@@ -94,4 +94,3 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 
 > [!NOTE]
 > メールボックスが電子情報開示ケースに関連する保持の対象になっている場合、パージされたアイテムは Deletions サブフォルダーから DiscoveryHolds サブフォルダーに移動され、メールボックスが電子情報開示の保持から解放されるまで保持されます。
-  

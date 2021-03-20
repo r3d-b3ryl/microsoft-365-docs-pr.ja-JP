@@ -1,5 +1,5 @@
 ---
-title: Exchange Online が電子メールの機密情報をセキュリティで保護する方法
+title: Exchange Online がメールの機密情報をセキュリティで保護する方法
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,42 +15,40 @@ search.appverid:
 ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 のセキュリティ、プライバシー、コンプライアンス情報を提供する Office 365 セキュリティセンターに加えて、Microsoft がデータセンターに保存している機密情報を保護する方法についても知る必要があります。 Distributed Key Manager (DKM) というテクノロジを使用しています。
-ms.openlocfilehash: 17a7fbbd54a725edcd87681f011ddc6633a1f4aa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Microsoft 365 のセキュリティ、プライバシー、コンプライアンス情報を提供する Office 365 セキュリティ センターに加えて、Microsoft がデータセンターに保存するシークレットを保護する方法を知りたい場合があります。 分散キー マネージャー (DKM) というテクノロジを使用します。
+ms.openlocfilehash: 2f6e51b7fe9cd75cbd265c3135050a08130f34d8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906963"
 ---
-# <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online が電子メールの機密情報をセキュリティで保護する方法
+# <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online がメールの機密情報をセキュリティで保護する方法
 
-この記事では、Microsoft が電子メールの機密情報をデータセンターにセキュリティで保護する方法について説明します。
+この記事では、Microsoft がデータセンターで電子メール シークレットをセキュリティで保護する方法について説明します。
   
-## <a name="how-do-we-secure-secret-information-provided-by-you"></a>自分が提供する機密情報をセキュリティで保護するにはどうすればよいですか?
+## <a name="how-do-we-secure-secret-information-provided-by-you"></a>お客様が提供する秘密情報をセキュリティで保護する方法
 
-Office [365 のセキュリティ、プライバシー、コンプライアンス情報](https://go.microsoft.com/fwlink/?linkid=874644)を提供する office 365 セキュリティセンターに加えて、Microsoft がデータセンターで提供する機密情報を保護する方法について理解しておく必要があります。 Distributed Key Manager (DKM) というテクノロジを使用しています。
+Office 365 のセキュリティ、プライバシー、コンプライアンス情報を提供する [Office 365](./get-started-with-service-trust-portal.md)セキュリティ センターに加えて、Microsoft がデータセンターで提供するシークレットを保護する方法を知りたい場合があります。 分散キー マネージャー (DKM) というテクノロジを使用します。
   
-[Distributed Key Manager](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM) は、一連の秘密キーを使用して情報を暗号化および復号化するクライアント側の機能です。 Active Directory ドメインサービス内の特定のセキュリティグループのメンバーのみが、DKM によって暗号化されたデータを復号化するためにこれらのキーにアクセスできます。 Exchange Online では Exchange プロセスの実行に使用する特定のサービス アカウントだけが、そのセキュリティ グループに属します。 データセンター内の標準運用手順の一環として、このセキュリティ グループに属する資格情報は人間には付与されないため、人間はだれもこれらの機密情報を解読できるキーにアクセスできません。
+[分散キー マネージャー](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM) は、一連のシークレット キーを使用して情報を暗号化および復号化するクライアント側の機能です。 DKM で暗号化されたデータを復号化するには、Active Directory ドメイン サービスの特定のセキュリティ グループのメンバーだけがこれらのキーにアクセスできます。 Exchange Online では Exchange プロセスの実行に使用する特定のサービス アカウントだけが、そのセキュリティ グループに属します。 データセンター内の標準運用手順の一環として、このセキュリティ グループに属する資格情報は人間には付与されないため、人間はだれもこれらの機密情報を解読できるキーにアクセスできません。
   
-デバッグ、トラブルシューティング、または監査を目的として、データセンター管理者は、セキュリティグループの一部である一時的な資格情報を取得するために、昇格されたアクセスを要求する必要があります。 このプロセスでは、複数レベルの法的な承認が必要です。 アクセスが許可された場合、すべてのアクティビティがログに記録され、監査されます。 さらに、アクセスが自動的に期限切れになるように設定された時間間隔に対してのみアクセスが許可されます。
+デバッグ、トラブルシューティング、または監査の目的で、データセンター管理者は、セキュリティ グループの一部である一時的な資格情報を取得するために、管理者特権でのアクセスを要求する必要があります。 このプロセスでは、複数のレベルの法的承認が必要です。 アクセスが許可されている場合、すべてのアクティビティがログに記録され、監査されます。 さらに、アクセスは、自動的に期限切れになる一定の間隔でのみ付与されます。
   
-追加の保護では、DKM テクノロジにキーのロールオーバーとアーカイブが自動化されています。 これにより、同じキーを無期限に使用しなくても、古いコンテンツに継続してアクセスできるようになります。
+特別な保護のために、DKM テクノロジには自動キー ロールオーバーとアーカイブが含まれています。 これにより、同じキーに無期限に依存することなく、古いコンテンツに引き続きアクセスできます。
   
-## <a name="where-does-exchange-online-make-use-of-dkm"></a>Exchange Online は、DKM を利用しますか?
+## <a name="where-does-exchange-online-make-use-of-dkm"></a>Exchange Online は DKM をどこで利用しますか?
 
-Microsoft では、[分散キーマネージャー](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)を使用して Exchange Online データセンター内の機密情報を暗号化しています。 以下に例を示します。
+Microsoft では、 [分散キー マネージャーを](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) 使用して Exchange Online データセンター内のシークレットを暗号化します。 次に例を示します。
   
-- 接続されたアカウントの電子メールアカウントの資格情報。 接続されたアカウントは、Hotmail、Gmail、Yahoo! などのサードパーティのアカウントです。 メールアカウント。
+- 接続されたアカウントの電子メール アカウント資格情報。 接続されたアカウントは、アプリ、Gmail、Yahoo などのHotmailサード パーティのアカウントです。 メール アカウント。
 
-- 顧客キー。 [カスタマーキーでサービス暗号化](customer-key-overview.md)を使用している場合は、 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)を使用して機密情報を保護します。
+- 顧客キー。 顧客キーで [サービス暗号化を使用している場合](customer-key-overview.md)は [、Azure Key Vault](/azure/key-vault/key-vault-whatis) を使用してシークレットを保護します。
 
 ## <a name="related-topics"></a>関連項目
 
 [Office 365 での暗号化](encryption.md)
   
-[暗号化に関するテクニカルリファレンスの詳細](technical-reference-details-about-encryption.md)
+[暗号化についてのテクニカル リファレンスの詳細](technical-reference-details-about-encryption.md)
   
-[セキュリティ&amp; /コンプライアンスセンターのサービスアシュアランス](https://go.microsoft.com/fwlink/?linkid=874645)
-  
-
+[セキュリティ コンプライアンス センター &amp; のサービス アシュアランス](./service-assurance.md)

@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: ユーザーを追加して、同時に Microsoft 365 にライセンスを割り当てる方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 71695c47bbc34a94f0040c37dd0c0bb0ab72fbba
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 3c752bd12c0aeb3806ad7d5d90373aad13730944
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741415"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906302"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して同時にライセンスを割り当てる
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -100,10 +100,10 @@ ms.locfileid: "50741415"
 
 複数のユーザーを同時に追加するには、次のいずれかの方法を使用します。
 
-- **ユーザーをまとめて追加するには、スプレッドシートを使用します。** 「[同時に複数のユーザーを追加する](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time)」を参照してください。
-- **アカウントの追加とライセンスの割り当てを自動化します。** 「[Microsoft 365 の PowerShell を使用してユーザー アカウントを作成する](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell)」を参照してください。 この方法は、Windows PowerShell コマンドレットについて詳しい知識のある場合に選んでください。
-- **ActiveDirectory を使用する場合** [Microsoft 365 のディレクトリ同期をセットアップ](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)します。 Azure AD Connect ツールを使用し、Microsoft 365 で Active Directory ユーザー アカウント (およびその他の Active Directory オブジェクト) を複製します。 同期では、ユーザー アカウントのみが追加されます。 同期されているユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。
-- **Exchange Server から移行する場合** 「[複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)」を参照してください。 カットオーバー、段階的方法、またはハイブリッド Exchange による方法のいずれかを使って、複数のメールボックスを Microsoft 365 に移行するときは、移行の一部としてユーザーが自動的に追加されます。 移行では、ユーザー アカウントのみが追加されます。 ユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。 ユーザーにライセンスを割り当てない場合、30 日間の猶予期間が過ぎるとユーザーのメールボックスが無効になります。 Microsoft 365 管理センターで[ユーザーにライセンスを割り当てる](../manage/assign-licenses-to-users.md)方法を確認してください。
+- **ユーザーをまとめて追加するには、スプレッドシートを使用します。** 「[同時に複数のユーザーを追加する](../../enterprise/add-several-users-at-the-same-time.md)」を参照してください。
+- **アカウントの追加とライセンスの割り当てを自動化します。** 「[Microsoft 365 の PowerShell を使用してユーザー アカウントを作成する](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md)」を参照してください。 この方法は、Windows PowerShell コマンドレットについて詳しい知識のある場合に選んでください。
+- **ActiveDirectory を使用する場合** [Microsoft 365 のディレクトリ同期をセットアップ](../../enterprise/set-up-directory-synchronization.md)します。 Azure AD Connect ツールを使用し、Microsoft 365 で Active Directory ユーザー アカウント (およびその他の Active Directory オブジェクト) を複製します。 同期では、ユーザー アカウントのみが追加されます。 同期されているユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。
+- **Exchange Server から移行する場合** 「[複数のメール アカウントを Office 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。 カットオーバー、段階的方法、またはハイブリッド Exchange による方法のいずれかを使って、複数のメールボックスを Microsoft 365 に移行するときは、移行の一部としてユーザーが自動的に追加されます。 移行では、ユーザー アカウントのみが追加されます。 ユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。 ユーザーにライセンスを割り当てない場合、30 日間の猶予期間が過ぎるとユーザーのメールボックスが無効になります。 Microsoft 365 管理センターで[ユーザーにライセンスを割り当てる](../manage/assign-licenses-to-users.md)方法を確認してください。
 
 ## <a name="next-steps"></a>次の手順
 
@@ -112,7 +112,7 @@ ms.locfileid: "50741415"
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 に新しい従業員を追加する](add-new-employee.md) (記事)\
-[同時に複数のユーザーを Microsoft 365 に追加する](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (記事)\
+[同時に複数のユーザーを Microsoft 365 に追加する](../../enterprise/add-several-users-at-the-same-time.md) (記事)\
 [Microsoft 365 のユーザーを復元する](restore-user.md) (記事)\
 [ユーザーにライセンスを割り当てる](../manage/assign-licenses-to-users.md)(記事)\
 [組織からユーザーを削除する](delete-a-user.md) (記事)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者は、管理センターでサポート チケットを開くことができます。
-ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: cf628ffd05cb7f5d94c932d48bd4e8ae35a47db9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867984"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906374"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
@@ -37,9 +37,9 @@ Microsoft 365 管理センターでは、Azure AD の役割およびMicrosoft In
 
 ## <a name="before-you-begin"></a>はじめに
 
-Microsoft 365 管理センターで管理できる詳細な Azure AD 役割の説明の完全なリストをお探しですか? 「Azure Active Directory での管理者役割のアクセス許可」を確認してください。 [Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+Microsoft 365 管理センターで管理できる詳細な Azure AD 役割の説明の完全なリストをお探しですか? 「Azure Active Directory での管理者役割のアクセス許可」を確認してください。 [Azure Active Directory での管理者役割のアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
-Microsoft 365 管理センターで管理できる詳細な Intune 役割の説明の完全なリストをお探しですか?  「[Microsoft Intune の役割ベースのアクセス制御 (RBAC)](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)」を確認してください。
+Microsoft 365 管理センターで管理できる詳細な Intune 役割の説明の完全なリストをお探しですか?  「[Microsoft Intune の役割ベースのアクセス制御 (RBAC)](/mem/intune/fundamentals/role-based-access-control)」を確認してください。
 
 Microsoft 365 管理センターでの役割を割り当てる方法の詳細については、「[管理者ロールを割り当てる](assign-admin-roles.md)」を参照してください。
 
@@ -67,7 +67,7 @@ Microsoft 365 管理センターで、[**役割**] に移動し、任意の役�
 
 ::: moniker-end
 
-おそらく、組織内で次の役割を割り当てる必要があるだけです。 既定では、最初にほとんどの組織が使用する役割が表示されます。 役割が見つからない場合は、一覧の一番下に移動し、[**すべてをカテゴリ別に表示**] を選択します。 (役割に関連付けられたコマンドレットなどの詳細については、「[Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を参照してください。)
+おそらく、組織内で次の役割を割り当てる必要があるだけです。 既定では、最初にほとんどの組織が使用する役割が表示されます。 役割が見つからない場合は、一覧の一番下に移動し、[**すべてをカテゴリ別に表示**] を選択します。 (役割に関連付けられたコマンドレットなどの詳細については、「[Azure Active Directory での管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を参照してください。)
 
 |管理者ロール     |誰にこの役割を割り当てるか  |
 |---------|---------|
@@ -92,7 +92,7 @@ Microsoft パートナーと連携している場合、パートナーに管理�
 
 - **ヘルプデスク エージェント** ヘルプデスク管理者と同等の特権を持ちます。
 
-パートナーがこれらの役割をユーザーに割り当てる前に、パートナーを代理管理者としてアカウントに追加する必要があります。 このプロセスは認定パートナーによって開始されます。 パートナーは管理者に電子メールを送信し、代理管理者となる権限を割り当てるかどうか質問します。手順については、「[パートナー リレーションシップの承認または削除](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)」を参照してください。
+パートナーがこれらの役割をユーザーに割り当てる前に、パートナーを代理管理者としてアカウントに追加する必要があります。 このプロセスは認定パートナーによって開始されます。 パートナーは管理者に電子メールを送信し、代理管理者となる権限を割り当てるかどうか質問します。手順については、「[パートナー リレーションシップの承認または削除](../misc/add-partner.md)」を参照してください。
   
 ## <a name="related-articles"></a>関連記事
 

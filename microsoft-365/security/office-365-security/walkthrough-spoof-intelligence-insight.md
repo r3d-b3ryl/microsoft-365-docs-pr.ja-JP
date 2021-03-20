@@ -19,12 +19,12 @@ description: 管理者は、スプーフィング インテリジェンスの分
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ca40e2cde08e5ea213d4c19366f038f1da19fa7
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cc53d49401afe3a0d7871bf5f294126315aacfec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407218"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908096"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>ウォークスルー - Microsoft Defender for microsoft Defender for Office 365
 
@@ -43,7 +43,7 @@ Defender for Office 365 の Microsoft 365 組織では、スプーフィング �
 このチュートリアルは、コンプライアンス センターのセキュリティ &の 1 つです。 レポートと分析情報のナビゲーションについては、「関連トピック」セクションのチュートリアル [を参照](#related-topics) してください。
 
 > [!NOTE]
-> スプーフィング インテリジェンスの分析情報には、過去 7 日間のデータが表示されます。 Exchange Online PowerShell [の](learn-about-spoof-intelligence.md) スプーフィング インテリジェンス ポリシーと対応する [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy) コマンドレットには、過去 30 日間のデータが表示されます。 [Get-SpoofMailReport には](https://docs.microsoft.com/powershell/module/exchange/get-spoofmailreport)、最大 90 日間のデータが表示されます。
+> スプーフィング インテリジェンスの分析情報には、過去 7 日間のデータが表示されます。 Exchange Online PowerShell [の](learn-about-spoof-intelligence.md) スプーフィング インテリジェンス ポリシーと対応する [Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy) コマンドレットには、過去 30 日間のデータが表示されます。 [Get-SpoofMailReport には](/powershell/module/exchange/get-spoofmailreport)、最大 90 日間のデータが表示されます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -54,12 +54,12 @@ Defender for Office 365 の Microsoft 365 組織では、スプーフィング �
 - この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります:
   - **組織の管理**
   - **セキュリティ管理者**
-  - **セキュリティ閲覧者**
-  - **グローバル閲覧者**
+  - **セキュリティ リーダー**
+  - **グローバル リーダー**
 
   詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンスセンターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンスセンターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 - 365 の Microsoft Defender のフィッシング対策ポリシーでスプーフィング インテリジェンスを有効Officeします。 スプーフィング インテリジェンスは既定で有効になっています。 詳細については、「Configure anti-フィッシング ポリシー in [Microsoft Defender for Office 365」を参照してください](configure-atp-anti-phishing-policies.md)。
 
@@ -128,7 +128,7 @@ Defender for Office 365 の Microsoft 365 組織では、スプーフィング �
 - **ドメイン**: gmail.com
 - **インフラストラクチャ**: tms.mx.com
 
-スプーフィングが許可されるのは、そのドメイン/送信インフラストラクチャ ペアからのメールのみです。 スプーフィングを試みるgmail.com送信者は許可されません。 スプーフィング インテリジェンスによって、tms.mx.comドメイン内のメッセージがチェックされます。
+スプーフィングが許可されるのは、そのドメイン/送信インフラストラクチャ ペアからのメールのみです。 スプーフィングを試みる gmail.com 送信者は許可されません。 スプーフィング インテリジェンスによって、tms.mx.com ドメイン内のメッセージがチェックされます。
 
 ## <a name="related-topics"></a>関連項目
 

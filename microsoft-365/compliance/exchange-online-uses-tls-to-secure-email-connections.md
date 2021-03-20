@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Exchange Online と Microsoft 365 がトランスポート層セキュリティ (TLS) と転送秘密 (FS) を使用して電子メール通信をセキュリティで保護する方法について説明します。 また、Microsoft for Exchange Online によって発行された証明書に関する情報も取得します。
-ms.openlocfilehash: 6e23ebc6451b9d139f1b18838007411028a059f3
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727458"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906953"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
 
@@ -45,17 +45,17 @@ Exchange Online サーバーは、TLS 1.2 を使用してデータセンター�
   
 ## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Microsoft 365 が Microsoft 365 と外部の信頼できるパートナーとの間で TLS を使用する方法
 
-既定では、Exchange Online は常に日和見 TLS を使用します。 つまり、Exchange Online は常に最も安全なバージョンの TLS との接続を暗号化し、その後、両方の当事者が同意できる TLS 暗号を見つけるまで、TLS 暗号のリストを下に移動します。 Exchange Online を構成して、その受信者へのメッセージがセキュリティで保護された接続のみを介して送信される必要がない限り、既定では、受信者組織が TLS 暗号化をサポートしない場合、メッセージは暗号化されていない状態で送信されます。 ほとんどの企業では、日和見 TLS で十分です。 ただし、医療、銀行、政府機関などのコンプライアンス要件があるビジネスの場合は、TLS を要求または強制する Exchange Online を構成できます。 手順については [、「Configure mail flow using connectors in Office 365」を参照してください](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
+既定では、Exchange Online は常に日和見 TLS を使用します。 つまり、Exchange Online は常に最も安全なバージョンの TLS との接続を暗号化し、その後、両方の当事者が同意できる TLS 暗号を見つけるまで、TLS 暗号のリストを下に移動します。 Exchange Online を構成して、その受信者へのメッセージがセキュリティで保護された接続のみを介して送信される必要がない限り、既定では、受信者組織が TLS 暗号化をサポートしない場合、メッセージは暗号化されていない状態で送信されます。 ほとんどの企業では、日和見 TLS で十分です。 ただし、医療、銀行、政府機関などのコンプライアンス要件があるビジネスの場合は、TLS を要求または強制する Exchange Online を構成できます。 手順については [、「Configure mail flow using connectors in Office 365」を参照してください](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
   
-組織と信頼できるパートナー組織の間で TLS を構成する場合、Exchange Online は強制的な TLS を使用して信頼できる通信チャネルを作成できます。 強制 TLS では、パートナー組織がメールを送信するためにセキュリティ証明書を使用して Exchange Online に認証する必要があります。 これを行うには、パートナーが独自の証明書を管理する必要があります。 Exchange Online では、コネクタを使用して、受信者の電子メール プロバイダーに到着する前に、承認されていないアクセスから送信するメッセージを保護します。 コネクタを使用してメール フローを構成する方法については、「Configure mail flow using connectors in Office [365」を参照してください](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
+組織と信頼できるパートナー組織の間で TLS を構成する場合、Exchange Online は強制的な TLS を使用して信頼できる通信チャネルを作成できます。 強制 TLS では、パートナー組織がメールを送信するためにセキュリティ証明書を使用して Exchange Online に認証する必要があります。 これを行うには、パートナーが独自の証明書を管理する必要があります。 Exchange Online では、コネクタを使用して、受信者の電子メール プロバイダーに到着する前に、承認されていないアクセスから送信するメッセージを保護します。 コネクタを使用してメール フローを構成する方法については、「Configure mail flow using connectors in Office [365」を参照してください](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
   
 ## <a name="tls-and-hybrid-exchange-server-deployments"></a>TLS およびハイブリッド Exchange Server展開
 
-ハイブリッド Exchange 展開を管理する場合、メールボックスが Office 365 内にある受信者にメールを送信するには、セキュリティ証明書を使用して Microsoft 365 に対して認証する必要があります。 その結果、オンプレミスの Exchange サーバー用の独自のセキュリティ証明書を管理する必要があります。 また、これらのサーバー証明書を安全に保存および保守する必要があります。 ハイブリッド展開での証明書の管理の詳細については、「ハイブリッド展開の [証明書要件」を参照してください](https://technet.microsoft.com/library/hh563848%28v=exchg.150%29.aspx)。
+ハイブリッド Exchange 展開を管理する場合、メールボックスが Office 365 内にある受信者にメールを送信するには、セキュリティ証明書を使用して Microsoft 365 に対して認証する必要があります。 その結果、オンプレミスの Exchange サーバー用の独自のセキュリティ証明書を管理する必要があります。 また、これらのサーバー証明書を安全に保存および保守する必要があります。 ハイブリッド展開での証明書の管理の詳細については、「ハイブリッド展開の [証明書要件」を参照してください](/exchange/certificate-requirements)。
   
 ## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>Exchange Online の強制 TLS を 365 Officeする方法
 
-Exchange Online のお客様は、送信メールと受信メールのセキュリティを確保するために TLS を強制的に動作させ、TLS を必要とする複数のコネクタをセットアップする必要があります。 ユーザー メールボックスに送信される電子メールには 1 つのコネクタ、ユーザー メールボックスから送信される電子メールには別のコネクタが必要です。 これらのコネクタは、Exchange 管理センター (365) Office作成します。 手順については [、「Configure mail flow using connectors in Office 365」を参照してください](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
+Exchange Online のお客様は、送信メールと受信メールのセキュリティを確保するために TLS を強制的に動作させ、TLS を必要とする複数のコネクタをセットアップする必要があります。 ユーザー メールボックスに送信される電子メールには 1 つのコネクタ、ユーザー メールボックスから送信される電子メールには別のコネクタが必要です。 これらのコネクタは、Exchange 管理センター (365) Office作成します。 手順については [、「Configure mail flow using connectors in Office 365」を参照してください](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
   
 ## <a name="tls-certificate-information-for-exchange-online"></a>Exchange Online の TLS 証明書情報
 
@@ -111,10 +111,8 @@ Exchange Online で使用される証明書情報については、次の表で�
 
 サポートされている暗号スイートの一覧については、「暗号化に関する [テクニカル リファレンスの詳細」を参照してください](technical-reference-details-about-encryption.md)。
   
-[パートナー組織とのセキュリティで保護されたメール フロー用のコネクタを設定する](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx)
+[パートナー組織とのセキュリティで保護されたメール フロー用のコネクタを設定する](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
   
-[電子メール セキュリティを強化したコネクタ](https://technet.microsoft.com/library/261d92e4-7371-4555-b781-2062b5bb5278.aspx)
+[電子メール セキュリティを強化したコネクタ](/previous-versions/exchange-server/exchange-150/dn942516(v=exchg.150))
   
 [Microsoft 365 での暗号化](encryption.md)
-  
-

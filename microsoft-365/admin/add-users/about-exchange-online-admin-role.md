@@ -20,35 +20,35 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: 'Exchange online 管理者は、組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みのアイテムを復元します。 '
-ms.openlocfilehash: 8e332e886ca25221fefbbc5d1bb790bd4f513f00
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+description: 'Exchange Online 管理者は、組織の電子メールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。 '
+ms.openlocfilehash: 4db7b55f6bb5bb75149a3b91bd7855565ca1be46
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527515"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906350"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
-Microsoft 365 を管理するために、 [Exchange 管理センター](https://go.microsoft.com/fwlink/p/?LinkID=271807)から組織の電子メールとメールボックスを管理するためのアクセス許可をユーザーに[割り当てる](assign-admin-roles.md)ことができます。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
+Microsoft 365 の管理を支援するために[](assign-admin-roles.md)、Exchange 管理センターから組織のメールとメールボックスを管理するためのアクセス許可をユーザーに割[り当てできます](/exchange/exchange-admin-center)。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
   
- **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 これにより、Exchange Online サービスの正常性、変更通知、リリース通知など、Microsoft 365 管理センターでの重要な情報を確認できます。
+ **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 これにより、Exchange Online サービスの正常性、変更およびリリース通知など、Microsoft 365 管理センターで重要な情報を確認できます。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Exchange 管理者の役割を割り当てられた場合にユーザーが実行できる重要なタスクのいくつかを次に説明します。
   
-- [ユーザーのメールボックスで削除されたアイテムを復元する](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
+- [ユーザーのメールボックスで削除されたアイテムを復元する](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [組織内のメールボックスのアーカイブと削除のポリシーを設定](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes)します。
+- [組織内のメールボックスのアーカイブポリシーと削除ポリシーを設定します](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
 
 - メールボックスの機能をセットアップします。たとえば、メールボックス共有ポリシーを設定すると、ユーザーが予定表や連絡先の情報を組織外の人とどのように共有できるかを指定できます。
 
-- 他のユーザーのメールボックスの [送信者] および [代理人[として](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)[送信](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)する] 代理人を設定します。 たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。
+- "Send[as](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" と "[Send onhalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" delegates for someone's mailbox. たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。
 
-- ユーザーのグループが共通の電子メールアドレスからメールを監視して送信できるように、[共有メールボックスを作成](../email/create-a-shared-mailbox.md)します。
+- [共有メールボックスを作成して](../email/create-a-shared-mailbox.md) 、ユーザーのグループが共通のメール アドレスからメールを監視および送信できます。
 
-- 組織の[電子メールのスパム対策保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection)とマルウェアフィルター。
+- [組織のスパム対策と](../../security/office-365-security/anti-spam-protection.md) マルウェア フィルターを電子メールで送信します。
 
 - Microsoft 365 グループを管理する
 
@@ -56,14 +56,14 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
 
 大規模な組織では、Exchange 管理者がユーザーを Exchange の役割グループに割り当てることがあります。役割グループに追加されたユーザーは、そのグループのメンバーだけに許可されている、特定のビジネス機能を実行できるようになります。
   
- たとえば、証拠開示管理という役割グループに割り当てられたユーザーは、メールボックスの検索を実行して条件に一致するデータを得ることができます。詳細については、「 [Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)」と「[役割グループの管理](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help)」を参照してください。
+ たとえば、証拠開示管理という役割グループに割り当てられたユーザーは、メールボックスの検索を実行して条件に一致するデータを得ることができます。詳細については、「 [Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」と「[役割グループの管理](/exchange/manage-role-groups-exchange-2013-help)」を参照してください。
   
-## <a name="learn-about-other-admin-roles"></a>その他の管理者の役割について説明します。
+## <a name="learn-about-other-admin-roles"></a>他の管理者ロールの詳細
 
 - [Microsoft 365 管理者ロールについて](about-admin-roles.md)
 
-- [SharePoint Online 管理者の役割について](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+- [SharePoint Online 管理者の役割について](/sharepoint/sharepoint-admin-role)
 
-- [Skype for Business 管理者の役割について](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
+- [Skype for Business 管理者の役割について](/skypeforbusiness/skype-for-business-online)
 
-- [Microsoft Teams の管理者ロールを使用する](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles) 
+- [Microsoft Teams 管理者の役割を使用する](/MicrosoftTeams/using-admin-roles)
