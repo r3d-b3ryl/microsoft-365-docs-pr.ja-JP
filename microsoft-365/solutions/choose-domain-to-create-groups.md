@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 グループを作成するときに使用するドメインを選択する
+title: Microsoft 365 グループの作成時に使用するドメインを選択する
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,112 +16,112 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: PowerShell を使用して電子メールアドレスポリシーを構成することによって、Microsoft 365 グループを作成するときに使用するドメインを選択する方法について説明します。
-ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: PowerShell を使用して電子メール アドレス ポリシーを構成して、Microsoft 365 グループを作成するときに使用するドメインを選択する方法について説明します。
+ms.openlocfilehash: 4908d5bd58ca6d0fbb50151983ddb459f0732284
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612942"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904686"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a><span data-ttu-id="34ba5-103">Microsoft 365 グループを作成するときに使用するドメインを選択する</span><span class="sxs-lookup"><span data-stu-id="34ba5-103">Choose the domain to use when creating Microsoft 365 groups</span></span>
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a><span data-ttu-id="f64b2-103">Microsoft 365 グループの作成時に使用するドメインを選択する</span><span class="sxs-lookup"><span data-stu-id="f64b2-103">Choose the domain to use when creating Microsoft 365 groups</span></span>
 
-<span data-ttu-id="34ba5-104">一部の組織では、独立した複数のメール ドメインを使用して、ビジネスのさまざまな部分をセグメント化しています。</span><span class="sxs-lookup"><span data-stu-id="34ba5-104">Some organizations use separate email domains to segment different parts of their businesses.</span></span> <span data-ttu-id="34ba5-105">ユーザーが Microsoft 365 グループを作成するときに使用するドメインを指定できます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-105">You can specify which domain should be used when your users create Microsoft 365 groups.</span></span>
+<span data-ttu-id="f64b2-104">一部の組織では、独立した複数のメール ドメインを使用して、ビジネスのさまざまな部分をセグメント化しています。</span><span class="sxs-lookup"><span data-stu-id="f64b2-104">Some organizations use separate email domains to segment different parts of their businesses.</span></span> <span data-ttu-id="f64b2-105">ユーザーが Microsoft 365 グループを作成するときに使用するドメインを指定できます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-105">You can specify which domain should be used when your users create Microsoft 365 groups.</span></span>
   
-<span data-ttu-id="34ba5-106">ユーザーが会社の既定の承認済みドメイン以外のドメインにグループを作成する必要がある場合、PowerShell を使ってメール アドレス ポリシー (EAP) を構成することでこれを許可できます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-106">If your organization needs users to create their groups in domains other than the default accepted domain of your business, you can allow this by configuring email address policies (EAPs) using PowerShell.</span></span>
+<span data-ttu-id="f64b2-106">ユーザーが会社の既定の承認済みドメイン以外のドメインにグループを作成する必要がある場合、PowerShell を使ってメール アドレス ポリシー (EAP) を構成することでこれを許可できます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-106">If your organization needs users to create their groups in domains other than the default accepted domain of your business, you can allow this by configuring email address policies (EAPs) using PowerShell.</span></span>
 
-<span data-ttu-id="34ba5-107">PowerShell コマンドレットを実行する前に、組織に説明できるモジュールをダウンロードしてインストールしてください。</span><span class="sxs-lookup"><span data-stu-id="34ba5-107">Before you can run the PowerShell cmdlets, download and install a module that will let you talk to your organization.</span></span> <span data-ttu-id="34ba5-108">詳細については、「[リモート PowerShell による Exchange への接続](https://go.microsoft.com/fwlink/p/?LinkId=785881)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34ba5-108">Check out [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).</span></span>
+<span data-ttu-id="f64b2-107">PowerShell コマンドレットを実行する前に、組織に相談できるモジュールをダウンロードしてインストールします。</span><span class="sxs-lookup"><span data-stu-id="f64b2-107">Before you can run the PowerShell cmdlets, download and install a module that will let you talk to your organization.</span></span> <span data-ttu-id="f64b2-108">詳細については、「[リモート PowerShell による Exchange への接続](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f64b2-108">Check out [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
 
-## <a name="example-scenarios"></a><span data-ttu-id="34ba5-109">シナリオ例</span><span class="sxs-lookup"><span data-stu-id="34ba5-109">Example scenarios</span></span>
+## <a name="example-scenarios"></a><span data-ttu-id="f64b2-109">シナリオ例</span><span class="sxs-lookup"><span data-stu-id="f64b2-109">Example scenarios</span></span>
 
-<span data-ttu-id="34ba5-110">ビジネスのメインドメインが Contoso.com であるとします。</span><span class="sxs-lookup"><span data-stu-id="34ba5-110">Let's say your business's main domain is Contoso.com.</span></span> <span data-ttu-id="34ba5-111">しかし、組織の既定の承認済みドメインは service.contoso.com です。</span><span class="sxs-lookup"><span data-stu-id="34ba5-111">But your organization's default accepted domain is service.contoso.com.</span></span> <span data-ttu-id="34ba5-112">これは、グループが service.contoso.com に作成されることを意味します (たとえば、jimsteam@service.contoso.com)。</span><span class="sxs-lookup"><span data-stu-id="34ba5-112">This means groups will be created in service.contoso.com (for example, jimsteam@service.contoso.com).</span></span>
+<span data-ttu-id="f64b2-110">たとえば、ビジネスのメイン ドメインが Contoso.com。</span><span class="sxs-lookup"><span data-stu-id="f64b2-110">Let's say your business's main domain is Contoso.com.</span></span> <span data-ttu-id="f64b2-111">ただし、組織の既定で受け入れられるドメインは service.contoso.com。</span><span class="sxs-lookup"><span data-stu-id="f64b2-111">But your organization's default accepted domain is service.contoso.com.</span></span> <span data-ttu-id="f64b2-112">つまり、グループはグループ (たとえば、service.contoso.com) に作成 jimsteam@service.contoso.com。</span><span class="sxs-lookup"><span data-stu-id="f64b2-112">This means groups will be created in service.contoso.com (for example, jimsteam@service.contoso.com).</span></span>
   
-<span data-ttu-id="34ba5-113">組織にサブドメインが構成されているとします。</span><span class="sxs-lookup"><span data-stu-id="34ba5-113">Let's say you also have sub-domains configured in your organization.</span></span> <span data-ttu-id="34ba5-114">これらのドメインにグループを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="34ba5-114">You want groups to be created in these domains, too:</span></span>
+<span data-ttu-id="f64b2-113">たとえば、組織でサブドメインも構成済みだとします。</span><span class="sxs-lookup"><span data-stu-id="f64b2-113">Let's say you also have sub-domains configured in your organization.</span></span> <span data-ttu-id="f64b2-114">これらのドメインにグループを作成する場合も、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="f64b2-114">You want groups to be created in these domains, too:</span></span>
   
-- <span data-ttu-id="34ba5-115">学生用の students.contoso.com</span><span class="sxs-lookup"><span data-stu-id="34ba5-115">students.contoso.com for students</span></span>
+- <span data-ttu-id="f64b2-115">学生用の students.contoso.com</span><span class="sxs-lookup"><span data-stu-id="f64b2-115">students.contoso.com for students</span></span>
     
-- <span data-ttu-id="34ba5-116">教職員メンバー用の faculty.contoso.com</span><span class="sxs-lookup"><span data-stu-id="34ba5-116">faculty.contoso.com for faculty members</span></span>
+- <span data-ttu-id="f64b2-116">教職員メンバー用の faculty.contoso.com</span><span class="sxs-lookup"><span data-stu-id="f64b2-116">faculty.contoso.com for faculty members</span></span>
     
-<span data-ttu-id="34ba5-117">次の 2 つのシナリオで、その実行方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="34ba5-117">The following two scenarios explain how you would accomplish this.</span></span>
+<span data-ttu-id="f64b2-117">次の 2 つのシナリオで、その実行方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f64b2-117">The following two scenarios explain how you would accomplish this.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="34ba5-118">複数の EAPs がある場合は、優先度の順に評価されます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-118">When you have mulitple EAPs, they are evaluated in the order of priority.</span></span> <span data-ttu-id="34ba5-119">値が1の場合は、最も高い優先度を表します。</span><span class="sxs-lookup"><span data-stu-id="34ba5-119">A value of 1 means the highest priority.</span></span> <span data-ttu-id="34ba5-120">EAP が一致すると、それ以降の EAP は評価されず、グループにスタンプされたアドレスは一致した EAP によって取得されます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-120">Once an EAP matches, no further EAP is evaluated and addresses that gets stamped on the group are as per the matched EAP.</span></span> <span data-ttu-id="34ba5-121">> 指定された条件に一致する EAPs がない場合、グループは組織の既定の承認済みドメインでプロビジョニングされます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-121">> If no EAPs match the specified criteria, then the group gets provisioned in the organization's default accepted domain.</span></span> <span data-ttu-id="34ba5-122">承認済みドメインを追加する方法については、「 [Exchange Online で承認済みドメインを管理する」](https://go.microsoft.com/fwlink/p/?LinkId=785428) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34ba5-122">Check out [Manage accepted domains in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785428) for details on how to add an accepted domain.</span></span>
+> <span data-ttu-id="f64b2-118">複数の EAP がある場合、優先度の順に評価されます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-118">When you have mulitple EAPs, they are evaluated in the order of priority.</span></span> <span data-ttu-id="f64b2-119">値 1 は、優先度が最も高い値を意味します。</span><span class="sxs-lookup"><span data-stu-id="f64b2-119">A value of 1 means the highest priority.</span></span> <span data-ttu-id="f64b2-120">EAP が一致すると、それ以上の EAP は評価され、グループにスタンプされるアドレスは、一致した EAP に基いて行います。</span><span class="sxs-lookup"><span data-stu-id="f64b2-120">Once an EAP matches, no further EAP is evaluated and addresses that gets stamped on the group are as per the matched EAP.</span></span> <span data-ttu-id="f64b2-121">> 指定した条件に一致する EAP がない場合、グループは組織の既定の受け入れドメインにプロビジョニングされます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-121">> If no EAPs match the specified criteria, then the group gets provisioned in the organization's default accepted domain.</span></span> <span data-ttu-id="f64b2-122">承認された [ドメインを追加する](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) 方法の詳細については、「Exchange Online で受け入れドメインを管理する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f64b2-122">Check out [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) for details on how to add an accepted domain.</span></span>
   
-### <a name="scenario-1"></a><span data-ttu-id="34ba5-123">シナリオ 1</span><span class="sxs-lookup"><span data-stu-id="34ba5-123">Scenario 1</span></span>
+### <a name="scenario-1"></a><span data-ttu-id="f64b2-123">シナリオ 1</span><span class="sxs-lookup"><span data-stu-id="f64b2-123">Scenario 1</span></span>
 
-<span data-ttu-id="34ba5-124">次の例は、groups.contoso.com ドメイン内の組織内のすべての Microsoft 365 グループをプロビジョニングする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="34ba5-124">The following example shows you how to provision all Microsoft 365 groups in your organization in the groups.contoso.com domain.</span></span>
+<span data-ttu-id="f64b2-124">次の例は、組織のすべての Microsoft 365 グループをドメイン内でプロビジョニングする groups.contoso.com 示しています。</span><span class="sxs-lookup"><span data-stu-id="f64b2-124">The following example shows you how to provision all Microsoft 365 groups in your organization in the groups.contoso.com domain.</span></span>
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
 ```
 
-### <a name="scenario-2"></a><span data-ttu-id="34ba5-125">シナリオ 2</span><span class="sxs-lookup"><span data-stu-id="34ba5-125">Scenario 2</span></span>
+### <a name="scenario-2"></a><span data-ttu-id="f64b2-125">シナリオ 2</span><span class="sxs-lookup"><span data-stu-id="f64b2-125">Scenario 2</span></span>
 
-<span data-ttu-id="34ba5-126">どのサブドメインの Microsoft 365 グループを作成するかを制御する必要があるとします。</span><span class="sxs-lookup"><span data-stu-id="34ba5-126">Let's say you want to control what sub-domains Microsoft 365 groups are created in.</span></span> <span data-ttu-id="34ba5-127">あなたの希望です：</span><span class="sxs-lookup"><span data-stu-id="34ba5-127">You want:</span></span>
+<span data-ttu-id="f64b2-126">たとえば、Microsoft 365 グループが作成されるサブドメインを制御するとします。</span><span class="sxs-lookup"><span data-stu-id="f64b2-126">Let's say you want to control what sub-domains Microsoft 365 groups are created in.</span></span> <span data-ttu-id="f64b2-127">あなたの希望です：</span><span class="sxs-lookup"><span data-stu-id="f64b2-127">You want:</span></span>
   
-- <span data-ttu-id="34ba5-128">Students.groups.contoso.com ドメインで、学生 ( **Department** が **学生** に設定されているユーザー) によって作成されたグループ。</span><span class="sxs-lookup"><span data-stu-id="34ba5-128">Groups created by students (users which have **Department** set to **Students**) in the students.groups.contoso.com domain.</span></span> <span data-ttu-id="34ba5-129">次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="34ba5-129">Use this command:</span></span>
+- <span data-ttu-id="f64b2-128">学生 (部門が [学生] に設定されている **ユーザー)** によって作成されたグループは、students.groups.contoso.com されます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-128">Groups created by students (users which have **Department** set to **Students**) in the students.groups.contoso.com domain.</span></span> <span data-ttu-id="f64b2-129">次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="f64b2-129">Use this command:</span></span>
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- <span data-ttu-id="34ba5-130">教職員メンバーによって作成されたグループ ( **学科** に [ **教職員] または [電子メールアドレスが含まれ** ているユーザー]) が faculty.groups.contoso.com ドメインにある。</span><span class="sxs-lookup"><span data-stu-id="34ba5-130">Groups created by faculty members (users which have **Department** set to **Faculty or email address contains faculty.contoso.com)**) in the faculty.groups.contoso.com domain.</span></span> <span data-ttu-id="34ba5-131">次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="34ba5-131">Use this command:</span></span>
+- <span data-ttu-id="f64b2-130">教員が作成したグループ ([部署] が [教職員] または [電子メール アドレス] に設定されているユーザー **には、faculty.contoso.com)** が faculty.groups.contoso.com されます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-130">Groups created by faculty members (users which have **Department** set to **Faculty or email address contains faculty.contoso.com)**) in the faculty.groups.contoso.com domain.</span></span> <span data-ttu-id="f64b2-131">次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="f64b2-131">Use this command:</span></span>
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- <span data-ttu-id="34ba5-132">他のユーザーによって作成されたグループは、groups.contoso.com ドメイン内に作成されます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-132">Groups created by anyone else are created in the groups.contoso.com domain.</span></span> <span data-ttu-id="34ba5-133">次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="34ba5-133">Use this command:</span></span>
+- <span data-ttu-id="f64b2-132">他のユーザーが作成したグループは、ドメイン内 groups.contoso.com されます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-132">Groups created by anyone else are created in the groups.contoso.com domain.</span></span> <span data-ttu-id="f64b2-133">次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="f64b2-133">Use this command:</span></span>
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
 
-## <a name="change-email-address-policies"></a><span data-ttu-id="34ba5-134">メール アドレス ポリシーを変更する</span><span class="sxs-lookup"><span data-stu-id="34ba5-134">Change email address policies</span></span>
+## <a name="change-email-address-policies"></a><span data-ttu-id="f64b2-134">メール アドレス ポリシーを変更する</span><span class="sxs-lookup"><span data-stu-id="f64b2-134">Change email address policies</span></span>
 
-<span data-ttu-id="34ba5-135">既存の EAP の優先順位またはメール アドレス テンプレートを変更するには、Set-EmailAddressPolicy コマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="34ba5-135">To change the priority or email address templates for an existing EAP, use the Set-EmailAddressPolicy cmdlet.</span></span>
+<span data-ttu-id="f64b2-135">既存の EAP の優先順位またはメール アドレス テンプレートを変更するには、Set-EmailAddressPolicy コマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="f64b2-135">To change the priority or email address templates for an existing EAP, use the Set-EmailAddressPolicy cmdlet.</span></span>
   
 ```
 Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
 
 ```
 
-<span data-ttu-id="34ba5-136">EAP を変更しても、プロビジョニング済みのグループには影響ありません。</span><span class="sxs-lookup"><span data-stu-id="34ba5-136">Changing an EAP has no impact on the groups that have already been provisioned.</span></span>
+<span data-ttu-id="f64b2-136">EAP を変更しても、プロビジョニング済みのグループには影響ありません。</span><span class="sxs-lookup"><span data-stu-id="f64b2-136">Changing an EAP has no impact on the groups that have already been provisioned.</span></span>
   
-## <a name="delete-email-address-policies"></a><span data-ttu-id="34ba5-137">メール アドレス ポリシーを削除する</span><span class="sxs-lookup"><span data-stu-id="34ba5-137">Delete email address policies</span></span>
+## <a name="delete-email-address-policies"></a><span data-ttu-id="f64b2-137">メール アドレス ポリシーを削除する</span><span class="sxs-lookup"><span data-stu-id="f64b2-137">Delete email address policies</span></span>
 
-<span data-ttu-id="34ba5-138">EAP を削除するには、Remove-EmailAddressPolicy コマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="34ba5-138">To delete an EAP, use the Remove-EmailAddressPolicy cmdlet.</span></span>
+<span data-ttu-id="f64b2-138">EAP を削除するには、Remove-EmailAddressPolicy コマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="f64b2-138">To delete an EAP, use the Remove-EmailAddressPolicy cmdlet.</span></span>
   
 ```
 Remove-EmailAddressPolicy -Identity StudentsGroups
 ```
 
-<span data-ttu-id="34ba5-139">EAP を変更しても、プロビジョニング済みのグループには影響ありません。</span><span class="sxs-lookup"><span data-stu-id="34ba5-139">Changing an EAP has no impact on the groups that have already been provisioned.</span></span>
+<span data-ttu-id="f64b2-139">EAP を変更しても、プロビジョニング済みのグループには影響ありません。</span><span class="sxs-lookup"><span data-stu-id="f64b2-139">Changing an EAP has no impact on the groups that have already been provisioned.</span></span>
   
-## <a name="hybrid-requirements"></a><span data-ttu-id="34ba5-140">ハイブリッド要件</span><span class="sxs-lookup"><span data-stu-id="34ba5-140">Hybrid requirements</span></span>
+## <a name="hybrid-requirements"></a><span data-ttu-id="f64b2-140">ハイブリッド要件</span><span class="sxs-lookup"><span data-stu-id="f64b2-140">Hybrid requirements</span></span>
 
-<span data-ttu-id="34ba5-141">組織がハイブリッドシナリオで構成されている場合は、「 [microsoft 365 グループをオンプレミスの Exchange ハイブリッドで構成](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) する」を参照して、組織が microsoft 365 グループを作成するための要件を満たしていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="34ba5-141">If your organization is configured in a hybrid scenario, check out [Configure Microsoft 365 groups with on-premises Exchange hybrid](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) to make sure your organization meets the requirements for creating Microsoft 365 groups.</span></span> 
+<span data-ttu-id="f64b2-141">組織がハイブリッド シナリオで構成されている場合は [、「Microsoft 365](/exchange/hybrid-deployment/set-up-microsoft-365-groups) グループをオンプレミス Exchange ハイブリッドで構成する」を参照して、組織が Microsoft 365 グループを作成するための要件を満たしていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f64b2-141">If your organization is configured in a hybrid scenario, check out [Configure Microsoft 365 groups with on-premises Exchange hybrid](/exchange/hybrid-deployment/set-up-microsoft-365-groups) to make sure your organization meets the requirements for creating Microsoft 365 groups.</span></span> 
   
-## <a name="additional-info-about-using-email-address-policies-groups"></a><span data-ttu-id="34ba5-142">電子メールアドレスポリシーグループの使用に関するその他の情報:</span><span class="sxs-lookup"><span data-stu-id="34ba5-142">Additional info about using email address policies groups:</span></span>
+## <a name="additional-info-about-using-email-address-policies-groups"></a><span data-ttu-id="f64b2-142">電子メール アドレス ポリシー グループの使用に関する追加情報:</span><span class="sxs-lookup"><span data-stu-id="f64b2-142">Additional info about using email address policies groups:</span></span>
 
-<span data-ttu-id="34ba5-143">以下のいくつかの点を把握しておく必要あります。</span><span class="sxs-lookup"><span data-stu-id="34ba5-143">There are a few more things to know:</span></span>
+<span data-ttu-id="f64b2-143">以下のいくつかの点を把握しておく必要あります。</span><span class="sxs-lookup"><span data-stu-id="f64b2-143">There are a few more things to know:</span></span>
   
-- <span data-ttu-id="34ba5-144">グループ作成の速度は、組織に構成されている EAP の数によって異なります。</span><span class="sxs-lookup"><span data-stu-id="34ba5-144">How fast groups are created depends on the number of EAPs configured in your organization.</span></span>
+- <span data-ttu-id="f64b2-144">グループ作成の速度は、組織に構成されている EAP の数によって異なります。</span><span class="sxs-lookup"><span data-stu-id="f64b2-144">How fast groups are created depends on the number of EAPs configured in your organization.</span></span>
     
-- <span data-ttu-id="34ba5-145">管理者とユーザーは、グループを作成するときにドメインを変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-145">Admins and users can also modify domains when they create groups.</span></span>
+- <span data-ttu-id="f64b2-145">管理者とユーザーは、グループを作成するときにドメインを変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-145">Admins and users can also modify domains when they create groups.</span></span>
     
-- <span data-ttu-id="34ba5-146">ユーザーのグループは、既に用意されている標準クエリ (ユーザーのプロパティ) を使用して決定されます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-146">Group of users is determined using the standard queries (User properties) that are already available.</span></span> <span data-ttu-id="34ba5-147">サポートされているフィルター可能なプロパティについて [は、-受信者フィルターパラメーターのフィルター処理されたプロパティを](https://docs.microsoft.com/powershell/exchange/recipientfilter-properties) 確認してください。</span><span class="sxs-lookup"><span data-stu-id="34ba5-147">Check out [Filterable properties for the -RecipientFilter parameter](https://docs.microsoft.com/powershell/exchange/recipientfilter-properties) for supported filterable properties.</span></span> 
+- <span data-ttu-id="f64b2-146">ユーザーのグループは、既に用意されている標準クエリ (ユーザーのプロパティ) を使用して決定されます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-146">Group of users is determined using the standard queries (User properties) that are already available.</span></span> <span data-ttu-id="f64b2-147">サポートされている [フィルター可能なプロパティについては、-RecipientFilter パラメーターの Filterable](/powershell/exchange/recipientfilter-properties) プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f64b2-147">Check out [Filterable properties for the -RecipientFilter parameter](/powershell/exchange/recipientfilter-properties) for supported filterable properties.</span></span> 
     
-- <span data-ttu-id="34ba5-148">グループに EAP を構成しないと、グループの作成で既定の承認済みドメインが選択されます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-148">If you don't configure any EAPs for groups, then the default accepted domain is selected for group creation.</span></span>
+- <span data-ttu-id="f64b2-148">グループに EAP を構成しないと、グループの作成で既定の承認済みドメインが選択されます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-148">If you don't configure any EAPs for groups, then the default accepted domain is selected for group creation.</span></span>
     
-- <span data-ttu-id="34ba5-149">承認済みドメインを削除する場合は、最初に、EAP を更新する必要があります。そうしないと、グループのプロビジョニングが影響を受けます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-149">If you remove an accepted domain, you should update the EAPs first, otherwise, group provisioning will be impacted.</span></span>
+- <span data-ttu-id="f64b2-149">承認済みドメインを削除する場合は、最初に、EAP を更新する必要があります。そうしないと、グループのプロビジョニングが影響を受けます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-149">If you remove an accepted domain, you should update the EAPs first, otherwise, group provisioning will be impacted.</span></span>
     
-- <span data-ttu-id="34ba5-150">1 つの組織につき最大で 100 のメール アドレス ポリシーを構成できます。</span><span class="sxs-lookup"><span data-stu-id="34ba5-150">A maximum limit of 100 email address policies can be configured for an organization.</span></span>
+- <span data-ttu-id="f64b2-150">1 つの組織につき最大で 100 のメール アドレス ポリシーを構成できます。</span><span class="sxs-lookup"><span data-stu-id="f64b2-150">A maximum limit of 100 email address policies can be configured for an organization.</span></span>
     
-## <a name="related-articles"></a><span data-ttu-id="34ba5-151">関連記事</span><span class="sxs-lookup"><span data-stu-id="34ba5-151">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="f64b2-151">関連記事</span><span class="sxs-lookup"><span data-stu-id="f64b2-151">Related articles</span></span>
 
-[<span data-ttu-id="34ba5-152">コラボレーションガバナンスの計画のステップバイステップ</span><span class="sxs-lookup"><span data-stu-id="34ba5-152">Collaboration governance planning step-by-step</span></span>](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[<span data-ttu-id="f64b2-152">コラボレーション ガバナンス計画のステップ バイ ステップ</span><span class="sxs-lookup"><span data-stu-id="f64b2-152">Collaboration governance planning step-by-step</span></span>](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[<span data-ttu-id="34ba5-153">コラボレーションのガバナンス計画を作成する</span><span class="sxs-lookup"><span data-stu-id="34ba5-153">Create your collaboration governance plan</span></span>](collaboration-governance-first.md)
+[<span data-ttu-id="f64b2-153">コラボレーション ガバナンス 計画の作成</span><span class="sxs-lookup"><span data-stu-id="f64b2-153">Create your collaboration governance plan</span></span>](collaboration-governance-first.md)
 
-[<span data-ttu-id="34ba5-154">管理センターで Microsoft 365 グループを作成する</span><span class="sxs-lookup"><span data-stu-id="34ba5-154">Create an Microsoft 365 group in the admin center</span></span>](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)
+[<span data-ttu-id="f64b2-154">管理センターで Microsoft 365 グループを作成する</span><span class="sxs-lookup"><span data-stu-id="f64b2-154">Create an Microsoft 365 group in the admin center</span></span>](../admin/create-groups/create-groups.md)

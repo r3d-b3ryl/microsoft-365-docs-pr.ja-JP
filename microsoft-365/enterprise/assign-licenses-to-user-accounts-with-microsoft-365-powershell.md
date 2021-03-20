@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して Microsoft 365 ライセンスをユーザーアカウントに割り当てる
+title: PowerShell を使用して Microsoft 365 ライセンスをユーザー アカウントに割り当てる
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,51 +21,51 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: この記事では、PowerShell を使用して、ライセンスのないユーザーに Microsoft 365 ライセンスを割り当てる方法について説明します。
-ms.openlocfilehash: 8c3165b99477afa14e6d2b0da927b5f64c416ef1
-ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
+ms.openlocfilehash: 5fb5f9095d4f732b0bf23f26eebb22eff608b48c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48580942"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905466"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a><span data-ttu-id="f0bf2-103">PowerShell を使用して Microsoft 365 ライセンスをユーザーアカウントに割り当てる</span><span class="sxs-lookup"><span data-stu-id="f0bf2-103">Assign Microsoft 365 licenses to user accounts with PowerShell</span></span>
+# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a><span data-ttu-id="a0d1f-103">PowerShell を使用して Microsoft 365 ライセンスをユーザー アカウントに割り当てる</span><span class="sxs-lookup"><span data-stu-id="a0d1f-103">Assign Microsoft 365 licenses to user accounts with PowerShell</span></span>
 
-<span data-ttu-id="f0bf2-104">*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*</span><span class="sxs-lookup"><span data-stu-id="f0bf2-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="a0d1f-104">*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*</span><span class="sxs-lookup"><span data-stu-id="a0d1f-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="f0bf2-105">ユーザーがライセンスプランからライセンスを割り当てられるまで、Microsoft 365 サービスを使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-105">Users can't use any Microsoft 365 services until their account has been assigned a license from a licensing plan.</span></span> <span data-ttu-id="f0bf2-106">PowerShell を使用すると、ライセンスのないアカウントにライセンスをすばやく割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-106">You can use PowerShell to quickly assign licenses to unlicensed accounts.</span></span> 
+<span data-ttu-id="a0d1f-105">アカウントにライセンス プランからライセンスが割り当てられるまで、ユーザーは Microsoft 365 サービスを使用できません。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-105">Users can't use any Microsoft 365 services until their account has been assigned a license from a licensing plan.</span></span> <span data-ttu-id="a0d1f-106">PowerShell を使用すると、ライセンスのないアカウントにライセンスをすばやく割り当てできます。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-106">You can use PowerShell to quickly assign licenses to unlicensed accounts.</span></span> 
 
-<span data-ttu-id="f0bf2-107">ユーザーアカウントには、最初に場所を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-107">User accounts must first be assigned a location.</span></span> <span data-ttu-id="f0bf2-108">場所を指定することは、 [Microsoft 365 管理センター](../admin/add-users/add-users.md)で新しいユーザーアカウントを作成するために必要な部分です。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-108">Specifying a location is a required part of creating a new user account in the [Microsoft 365 admin center](../admin/add-users/add-users.md).</span></span> 
+<span data-ttu-id="a0d1f-107">ユーザー アカウントには、最初に場所を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-107">User accounts must first be assigned a location.</span></span> <span data-ttu-id="a0d1f-108">場所の指定は [、Microsoft 365](../admin/add-users/add-users.md)管理センターで新しいユーザー アカウントを作成する際に必要な部分です。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-108">Specifying a location is a required part of creating a new user account in the [Microsoft 365 admin center](../admin/add-users/add-users.md).</span></span> 
 
-<span data-ttu-id="f0bf2-109">オンプレミスの Active Directory ドメインサービスから同期されたアカウントには、既定では場所が指定されていません。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-109">Accounts synchronized from your on-premises Active Directory Domain Services do not by default have a location specified.</span></span> <span data-ttu-id="f0bf2-110">これらのアカウントの場所を構成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-110">You can configure a location for these accounts from:</span></span>
+<span data-ttu-id="a0d1f-109">オンプレミスの Active Directory ドメイン サービスから同期されたアカウントは、既定では場所が指定されていません。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-109">Accounts synchronized from your on-premises Active Directory Domain Services do not by default have a location specified.</span></span> <span data-ttu-id="a0d1f-110">これらのアカウントの場所は、次の場所から構成できます。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-110">You can configure a location for these accounts from:</span></span>
 
-- <span data-ttu-id="f0bf2-111">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="f0bf2-111">The Microsoft 365 admin center</span></span>
- - [<span data-ttu-id="f0bf2-112">PowerShell</span><span class="sxs-lookup"><span data-stu-id="f0bf2-112">PowerShell</span></span>](configure-user-account-properties-with-microsoft-365-powershell.md)
- - <span data-ttu-id="f0bf2-113">[Azure portal](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**  >  **ユーザー** > ユーザーアカウント >**プロファイル**  >  **連絡先情報**  >  **国または地域**)。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-113">The [Azure portal](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **Users**  > user account > **Profile** > **Contact info** > **Country or region**).</span></span>
+- <span data-ttu-id="a0d1f-111">Microsoft 365 管理センター</span><span class="sxs-lookup"><span data-stu-id="a0d1f-111">The Microsoft 365 admin center</span></span>
+ - [<span data-ttu-id="a0d1f-112">PowerShell</span><span class="sxs-lookup"><span data-stu-id="a0d1f-112">PowerShell</span></span>](configure-user-account-properties-with-microsoft-365-powershell.md)
+ - <span data-ttu-id="a0d1f-113">[Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) ( Active **Directory Users**  >  **>** プロファイル連絡先>**国**  >    >  または地域)</span><span class="sxs-lookup"><span data-stu-id="a0d1f-113">The [Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **Users**  > user account > **Profile** > **Contact info** > **Country or region**).</span></span>
 
 >[!Note]
-><span data-ttu-id="f0bf2-114">Microsoft 365 管理センターを使用して、[ユーザーアカウントにライセンスを割り当てる方法について説明](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-114">[Learn how to assign licenses to user accounts](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) with the Microsoft 365 admin center.</span></span> <span data-ttu-id="f0bf2-115">その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-115">For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).</span></span>
+><span data-ttu-id="a0d1f-114">Microsoft 365 管理[センターで](../admin/manage/assign-licenses-to-users.md)ユーザー アカウントにライセンスを割り当てる方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-114">[Learn how to assign licenses to user accounts](../admin/manage/assign-licenses-to-users.md) with the Microsoft 365 admin center.</span></span> <span data-ttu-id="a0d1f-115">その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-115">For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).</span></span>
 >
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="f0bf2-116">Graph 用 Azure Active Directory PowerShell モジュールを使用する</span><span class="sxs-lookup"><span data-stu-id="f0bf2-116">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="a0d1f-116">Graph 用 Azure Active Directory PowerShell モジュールを使用する</span><span class="sxs-lookup"><span data-stu-id="a0d1f-116">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="f0bf2-117">最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-117">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="a0d1f-117">まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-117">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
 
-<span data-ttu-id="f0bf2-118">次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-118">Next, list the license plans for your tenant with this command.</span></span>
+<span data-ttu-id="a0d1f-118">次に、このコマンドを使用してテナントのライセンス プランを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-118">Next, list the license plans for your tenant with this command.</span></span>
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-<span data-ttu-id="f0bf2-119">次に、ユーザープリンシパル名 (UPN) とも呼ばれるライセンスを追加するアカウントのサインイン名を取得します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-119">Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).</span></span>
+<span data-ttu-id="a0d1f-119">次に、ライセンスを追加するアカウントのサインイン名 (ユーザー プリンシパル名 (UPN) とも呼ばれる) を取得します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-119">Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).</span></span>
 
-<span data-ttu-id="f0bf2-120">次に、ユーザーアカウントに使用場所が割り当てられていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-120">Next, ensure that the user account has a usage location assigned.</span></span>
+<span data-ttu-id="a0d1f-120">次に、ユーザー アカウントに使用場所が割り当てられているか確認します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-120">Next, ensure that the user account has a usage location assigned.</span></span>
 
 ```powershell
 Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
 ```
 
-<span data-ttu-id="f0bf2-121">割り当てられている場所がない場合は、次のコマンドを使用して割り当てを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-121">If there is no usage location assigned, you can assign one with these commands:</span></span>
+<span data-ttu-id="a0d1f-121">使用場所が割り当てられていない場合は、次のコマンドを使用して割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-121">If there is no usage location assigned, you can assign one with these commands:</span></span>
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -73,7 +73,7 @@ $userLoc="<ISO 3166-1 alpha-2 country code>"
 Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
 ```
 
-<span data-ttu-id="f0bf2-122">最後に、ユーザーのサインイン名とライセンスプラン名を指定し、これらのコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-122">Finally, specify the user sign-in name and license plan name and run these commands.</span></span>
+<span data-ttu-id="a0d1f-122">最後に、ユーザー サインイン名とライセンス プラン名を指定し、これらのコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-122">Finally, specify the user sign-in name and license plan name and run these commands.</span></span>
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -85,93 +85,93 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="f0bf2-123">Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する</span><span class="sxs-lookup"><span data-stu-id="f0bf2-123">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="a0d1f-123">Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する</span><span class="sxs-lookup"><span data-stu-id="a0d1f-123">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="f0bf2-124">最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-124">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="a0d1f-124">まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-124">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="f0bf2-125">コマンドを実行して、 `Get-MsolAccountSku` 使用可能なライセンスプランと、組織内の各プランの使用可能なライセンスの数を表示します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-125">Run the `Get-MsolAccountSku` command to view the available licensing plans and the number of available licenses in each plan in your organization.</span></span> <span data-ttu-id="f0bf2-126">各プランで利用可能なライセンスの数は、 **ActiveUnits** - **WarningUnits** - **ConsumedUnits** です。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-126">The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**.</span></span> <span data-ttu-id="f0bf2-127">ライセンスプラン、ライセンス、およびサービスの詳細については、「 [PowerShell を使用してライセンスとサービスを表示](view-licenses-and-services-with-microsoft-365-powershell.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-127">For more information about licensing plans, licenses, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).</span></span>
+<span data-ttu-id="a0d1f-125">このコマンドを実行して、利用可能なライセンス プランと、組織内の各プランで使用可能な `Get-MsolAccountSku` ライセンスの数を表示します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-125">Run the `Get-MsolAccountSku` command to view the available licensing plans and the number of available licenses in each plan in your organization.</span></span> <span data-ttu-id="a0d1f-126">各プランで利用可能なライセンスの数は、 **ActiveUnits** - **WarningUnits** - **ConsumedUnits** です。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-126">The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**.</span></span> <span data-ttu-id="a0d1f-127">ライセンス プラン、ライセンス、およびサービスの詳細については、「PowerShell でライセンスとサービスを表示 [する」を参照してください](view-licenses-and-services-with-microsoft-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-127">For more information about licensing plans, licenses, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).</span></span>
 
 >[!Note]
-><span data-ttu-id="f0bf2-128">PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-128">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="f0bf2-129">これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-129">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="a0d1f-128">PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-128">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="a0d1f-129">これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-129">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="f0bf2-130">組織内のライセンスのないアカウントを検索するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-130">To find the unlicensed accounts in your organization, run this command.</span></span>
+<span data-ttu-id="a0d1f-130">組織内のライセンスのないアカウントを検索するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-130">To find the unlicensed accounts in your organization, run this command.</span></span>
 
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-<span data-ttu-id="f0bf2-131">ライセンスは、有効な ISO 3166-1 国コードに設定 **されて** いるユーザーアカウントにのみ割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-131">You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code.</span></span> <span data-ttu-id="f0bf2-132">たとえば、米国は US、フランスは FR です。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-132">For example, US for the United States, and FR for France.</span></span> <span data-ttu-id="f0bf2-133">一部の Microsoft 365 サービスは、特定の国では利用できません。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-133">Some Microsoft 365 services aren't available in certain countries.</span></span> <span data-ttu-id="f0bf2-134">詳細については、「 [ライセンス制限につい](https://go.microsoft.com/fwlink/p/?LinkId=691730)て」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-134">For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).</span></span>
+<span data-ttu-id="a0d1f-131">**UsageLocation** プロパティが有効な ISO 3166-1 α-2 の国コードに設定されているユーザー アカウントにのみライセンスを割り当てできます。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-131">You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code.</span></span> <span data-ttu-id="a0d1f-132">たとえば、米国は US、フランスは FR です。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-132">For example, US for the United States, and FR for France.</span></span> <span data-ttu-id="a0d1f-133">一部の Microsoft 365 サービスは、特定の国では利用できません。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-133">Some Microsoft 365 services aren't available in certain countries.</span></span> <span data-ttu-id="a0d1f-134">詳細については、「ライセンス制限 [について」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=691730)。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-134">For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).</span></span>
     
-<span data-ttu-id="f0bf2-135">利用 **場所** の値を持たないアカウントを検索するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-135">To find accounts that don't have a **UsageLocation** value, run this command.</span></span>
+<span data-ttu-id="a0d1f-135">**UsageLocation** 値を持つアカウントを検索するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-135">To find accounts that don't have a **UsageLocation** value, run this command.</span></span>
 
 ```powershell
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 ```
 
-<span data-ttu-id="f0bf2-136">アカウントに対し **て、使い方の値を** 設定するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-136">To set the **UsageLocation** value on an account, run this command.</span></span>
+<span data-ttu-id="a0d1f-136">アカウントの **UsageLocation 値を** 設定するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-136">To set the **UsageLocation** value on an account, run this command.</span></span>
 
 ```powershell
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-<span data-ttu-id="f0bf2-137">以下に例を示します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-137">For example:</span></span>
+<span data-ttu-id="a0d1f-137">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-137">For example:</span></span>
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 ```
     
-<span data-ttu-id="f0bf2-138">**-All** パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-138">If you use the **Get-MsolUser** cmdlet without using the **-All** parameter, only the first 500 accounts are returned.</span></span>
+<span data-ttu-id="a0d1f-138">**-All** パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-138">If you use the **Get-MsolUser** cmdlet without using the **-All** parameter, only the first 500 accounts are returned.</span></span>
 
-### <a name="assigning-licenses-to-user-accounts"></a><span data-ttu-id="f0bf2-139">ユーザーアカウントへのライセンスの割り当て</span><span class="sxs-lookup"><span data-stu-id="f0bf2-139">Assigning licenses to user accounts</span></span>
+### <a name="assigning-licenses-to-user-accounts"></a><span data-ttu-id="a0d1f-139">ユーザー アカウントへのライセンスの割り当て</span><span class="sxs-lookup"><span data-stu-id="a0d1f-139">Assigning licenses to user accounts</span></span>
     
-<span data-ttu-id="f0bf2-140">ユーザーにライセンスを割り当てるには、PowerShell で次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-140">To assign a license to a user, use the following command in PowerShell.</span></span>
+<span data-ttu-id="a0d1f-140">ユーザーにライセンスを割り当てるには、PowerShell で次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-140">To assign a license to a user, use the following command in PowerShell.</span></span>
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-<span data-ttu-id="f0bf2-141">この例では、ライセンスを **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンスプランから、ライセンスのないユーザー **ベルの \@ litwareinc.com**に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-141">This example assigns a license from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to the unlicensed user **belindan\@litwareinc.com**:</span></span>
+<span data-ttu-id="a0d1f-141">次の使用例は **、litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンス プランのライセンスを、ライセンスのないユーザーの belindan litwareinc.com に **\@ 割り当 litwareinc.com。**</span><span class="sxs-lookup"><span data-stu-id="a0d1f-141">This example assigns a license from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to the unlicensed user **belindan\@litwareinc.com**:</span></span>
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-<span data-ttu-id="f0bf2-142">ライセンスのないすべてのユーザーにライセンスを割り当てるには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-142">To assign a license to all unlicensed users, run this command.</span></span>
+<span data-ttu-id="a0d1f-142">ライセンスのないすべてのユーザーにライセンスを割り当てるには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-142">To assign a license to all unlicensed users, run this command.</span></span>
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLicense -AddLicenses "<AccountSkuId>"
 ```
   
 >[!Note]
-><span data-ttu-id="f0bf2-143">複数のライセンスを同じライセンス プランのユーザーに割り当てることはできません。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-143">You can't assign multiple licenses to a user from the same licensing plan.</span></span> <span data-ttu-id="f0bf2-144">十分な数の利用可能なライセンスをお持ちでない場合は、使用可能なライセンスがなくなるまで、ライセンスは **Get-MsolUser** コマンドレットによって返される順序でユーザーに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-144">If you don't have enough available licenses, the licenses are assigned to users in the order that they're returned by the **Get-MsolUser** cmdlet until the available licenses run out.</span></span>
+><span data-ttu-id="a0d1f-143">複数のライセンスを同じライセンス プランのユーザーに割り当てることはできません。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-143">You can't assign multiple licenses to a user from the same licensing plan.</span></span> <span data-ttu-id="a0d1f-144">十分な数の利用可能なライセンスをお持ちでない場合は、使用可能なライセンスがなくなるまで、ライセンスは **Get-MsolUser** コマンドレットによって返される順序でユーザーに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-144">If you don't have enough available licenses, the licenses are assigned to users in the order that they're returned by the **Get-MsolUser** cmdlet until the available licenses run out.</span></span>
 >
 
-<span data-ttu-id="f0bf2-145">この例では、ライセンスを **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンスプランからすべてのライセンスのないユーザーに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-145">This example assigns licenses from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to all unlicensed users:</span></span>
+<span data-ttu-id="a0d1f-145">次の使用例は **、litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) のライセンスプランからすべてのライセンスのないユーザーにライセンスを割り当てる。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-145">This example assigns licenses from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to all unlicensed users:</span></span>
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-<span data-ttu-id="f0bf2-146">この例では、米国内の販売部門のライセンスのないユーザーに同じライセンスを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-146">This example assigns those same licenses to unlicensed users in the Sales department in the United States:</span></span>
+<span data-ttu-id="a0d1f-146">次の使用例は、米国の Sales 部門のライセンスのないユーザーに同じライセンスを割り当てします。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-146">This example assigns those same licenses to unlicensed users in the Sales department in the United States:</span></span>
   
 ```powershell
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="f0bf2-147">Azure Active Directory PowerShell for Graph モジュールを使用して、ユーザーを別のサブスクリプション (ライセンスプラン) に移動する</span><span class="sxs-lookup"><span data-stu-id="f0bf2-147">Move a user to a different subscription (license plan) with the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="a0d1f-147">Azure Active Directory PowerShell for Graph モジュールを使用してユーザーを別のサブスクリプション (ライセンス プラン) に移動する</span><span class="sxs-lookup"><span data-stu-id="a0d1f-147">Move a user to a different subscription (license plan) with the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="f0bf2-148">最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-148">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="a0d1f-148">まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-148">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
-<span data-ttu-id="f0bf2-149">次に、ユーザープリンシパル名 (UPN) とも呼ばれる、サブスクリプションを切り替えたいユーザーアカウントのサインイン名を取得します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-149">Next, get the sign-in name of the user account for which you want switch subscriptions, also known as the user principal name (UPN).</span></span>
+<span data-ttu-id="a0d1f-149">次に、サブスクリプションの切り替えに使用するユーザー アカウントのサインイン名 (ユーザー プリンシパル名 (UPN) とも呼ばれる) を取得します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-149">Next, get the sign-in name of the user account for which you want switch subscriptions, also known as the user principal name (UPN).</span></span>
 
-<span data-ttu-id="f0bf2-150">次に、このコマンドを使用して、テナントのサブスクリプション (ライセンスプラン) を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-150">Next, list the subscriptions (license plans) for your tenant with this command.</span></span>
+<span data-ttu-id="a0d1f-150">次に、このコマンドを使用してテナントのサブスクリプション (ライセンス プラン) を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-150">Next, list the subscriptions (license plans) for your tenant with this command.</span></span>
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-<span data-ttu-id="f0bf2-151">次に、ユーザーアカウントがこれらのコマンドで現在持っているサブスクリプションを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-151">Next, list the subscriptions that the user account currently has with these commands.</span></span>
+<span data-ttu-id="a0d1f-151">次に、これらのコマンドでユーザー アカウントが現在持っているサブスクリプションを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-151">Next, list the subscriptions that the user account currently has with these commands.</span></span>
 
 ```powershell
 $userUPN="<user account UPN>"
@@ -180,9 +180,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-<span data-ttu-id="f0bf2-152">ユーザーが現在持っているサブスクリプション (FROM サブスクリプション) と、そのユーザーの移動先のサブスクリプション (TO サブスクリプション) を特定します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-152">Identify the subscription the user currently has (the FROM subscription) and the subscription to which the user is moving (the TO subscription).</span></span>
+<span data-ttu-id="a0d1f-152">ユーザーが現在持っているサブスクリプション (FROM サブスクリプション) と、ユーザーが移動するサブスクリプション (TO サブスクリプション) を識別します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-152">Identify the subscription the user currently has (the FROM subscription) and the subscription to which the user is moving (the TO subscription).</span></span>
 
-<span data-ttu-id="f0bf2-153">最後に、サブスクリプション名 (SKU パーツ番号) を指定し、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-153">Finally, specify the TO and FROM subscription names (SKU part numbers) and run these commands.</span></span>
+<span data-ttu-id="a0d1f-153">最後に、TO サブスクリプション名と FROM サブスクリプション名 (SKU パーツ番号) を指定し、これらのコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-153">Finally, specify the TO and FROM subscription names (SKU part numbers) and run these commands.</span></span>
 
 ```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"
@@ -203,7 +203,7 @@ $licenses.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 ```
 
-<span data-ttu-id="f0bf2-154">次のコマンドを使用して、ユーザーアカウントのサブスクリプションの変更を確認できます。</span><span class="sxs-lookup"><span data-stu-id="f0bf2-154">You can verify the change in subscription for the user account with these commands.</span></span>
+<span data-ttu-id="a0d1f-154">これらのコマンドを使用して、ユーザー アカウントのサブスクリプションの変更を確認できます。</span><span class="sxs-lookup"><span data-stu-id="a0d1f-154">You can verify the change in subscription for the user account with these commands.</span></span>
 
 ```powershell
 $licensePlanList = Get-AzureADSubscribedSku
@@ -211,10 +211,10 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f0bf2-155">関連項目</span><span class="sxs-lookup"><span data-stu-id="f0bf2-155">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a0d1f-155">関連項目</span><span class="sxs-lookup"><span data-stu-id="a0d1f-155">See also</span></span>
 
-[<span data-ttu-id="f0bf2-156">ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する</span><span class="sxs-lookup"><span data-stu-id="f0bf2-156">Manage user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[<span data-ttu-id="a0d1f-156">ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する</span><span class="sxs-lookup"><span data-stu-id="a0d1f-156">Manage user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="f0bf2-157">PowerShell で Microsoft 365を管理する</span><span class="sxs-lookup"><span data-stu-id="f0bf2-157">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="a0d1f-157">PowerShell で Microsoft 365を管理する</span><span class="sxs-lookup"><span data-stu-id="a0d1f-157">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="f0bf2-158">Microsoft 365 用 PowerShell の使用を開始する</span><span class="sxs-lookup"><span data-stu-id="f0bf2-158">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="a0d1f-158">Microsoft 365 用 PowerShell の使用を開始する</span><span class="sxs-lookup"><span data-stu-id="a0d1f-158">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
