@@ -13,14 +13,14 @@ ms.collection:
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: SharePoint サイトを複数地域環境内の別の地理的な場所に移動し、変更の予測をユーザーに伝達する方法について説明します。
+description: SharePoint サイトを複数地域環境内の別の地域の場所に移動し、ユーザーに変更の期待を伝える方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545638"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910932"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -74,13 +74,13 @@ SharePoint サイトの地域移動を後でスケジュール設定するには
 
 SharePoint サイトの地域移動は　サイトがあるジオ位置情報でSharePoint の管理 URLから接続し、実行する必要があります。
 
-たとえば、サイトの URL がである場合、 <https://contosohealthcare.sharepoint.com/sites/Turbines> SharePoint 管理 URL に接続し <https://contosohealthcare-admin.sharepoint.com> ます。
+たとえば、サイト URL が次の場合 <https://contosohealthcare.sharepoint.com/sites/Turbines> は、SharePoint 管理者 URL に接続します <https://contosohealthcare-admin.sharepoint.com> 。
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![Connect-sposervice コマンドが表示されている SharePoint Online 管理シェルウィンドウ](../media/move-onedrive-between-geo-locations-image1.png)
+![[SharePoint Online 管理シェル] ウィンドウに [Connect-SPOService]](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>環境の検証
 
@@ -100,7 +100,7 @@ Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -DestinationDataLocation <DestinationLocation>
 ```
 
-サイトが移動準備完了の場合、*正常に完了*　と返ってきます。ブロックされている状態がある場合は、*失敗*と返ってきます。
+サイトが移動準備完了の場合、*正常に完了*　と返ってきます。ブロックされている状態がある場合は、*失敗* と返ってきます。
 
 ### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Microsoft 365 グループと関連付けられていないサイトへ SharePoint サイトの地域の移動を開始する
 
@@ -145,8 +145,8 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 次のコマンドレットを使用して接続している地域外でのサイトの移動状況を確認することができます。
 
-- [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (グループ接続以外のサイト)
-- [SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (グループに接続されたサイト)
+- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (グループ接続以外のサイト)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (グループ接続サイト)
 
 `-SourceSiteUrl` パラメーターを使用して、移動状況を確認したいサイトを指定します。
 

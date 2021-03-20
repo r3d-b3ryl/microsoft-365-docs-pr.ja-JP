@@ -1,5 +1,5 @@
 ---
-title: 高可用性フェデレーション認証のフェーズ2ドメインコントローラーを構成する
+title: 高可用性フェデレーション認証 フェーズ 2 ドメイン コントローラーの構成
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,22 +13,22 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: '概要: Microsoft Azure の Microsoft 365 の高可用性フェデレーション認証用に、ドメインコントローラーおよびディレクトリ同期サーバーを構成します。'
-ms.openlocfilehash: 1c3fd686ee553a57d66dcfd51a6045167a12de8a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: '概要: Microsoft Azure の Microsoft 365 の高可用性フェデレーション認証用にドメイン コントローラーとディレクトリ同期サーバーを構成します。'
+ms.openlocfilehash: 751d332ce5f5606fe5f833182f002a1f4b6f29ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692009"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909812"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性フェデレーション認証のフェーズ 2: ドメイン コントローラーを構成する
 
-Azure インフラストラクチャサービスに Microsoft 365 フェデレーション認証の高可用性を展開するためのこのフェーズでは、Azure 仮想ネットワークに2つのドメインコントローラーとディレクトリ同期サーバーを構成します。 オンプレミス ネットワークへのサイト間 VPN 接続を経由して認証トラフィックを送信するのではなく、Azure 仮想ネットワーク内で認証に対するクライアント Web 要求を認証できます。
+Azure インフラストラクチャ サービスで Microsoft 365 フェデレーション認証の高可用性を展開するこのフェーズでは、2 つのドメイン コントローラーとディレクトリ同期サーバーを Azure 仮想ネットワークに構成します。 オンプレミス ネットワークへのサイト間 VPN 接続を経由して認証トラフィックを送信するのではなく、Azure 仮想ネットワーク内で認証に対するクライアント Web 要求を認証できます。
   
 > [!NOTE]
-> Active directory フェデレーションサービス (AD FS) は、Active Directory ドメインサービス (AD DS) ドメインコントローラーの代用として、Azure Active Directory (Azure AD) を使用できません。 
+> Active Directory フェデレーション サービス (AD FS) は、Active Directory ドメイン サービス (AD DS) ドメイン コントローラーの代わりに Azure Active Directory (Azure AD) を使用できません。 
   
-[「フェーズ 3: AD FS サーバーを構成](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)する」に進む前に、このフェーズを完了する必要があります。 すべてのフェーズについては、「 [Microsoft 365 の高可用性フェデレーション認証を Azure に展開](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) する」を参照してください。
+[フェーズ 3: FS サーバーの構成] に進む前に、この [ADする必要があります](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。 すべての [フェーズについては、「Azure での Microsoft 365](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) の高可用性フェデレーション認証の展開」を参照してください。
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Azure にドメイン コントローラー仮想マシンを作成する
 
@@ -38,17 +38,17 @@ Azure インフラストラクチャサービスに Microsoft 365 フェデレ�
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![線](../media/Common-Images/TableLine.png)  (最初のドメイン コントローラー。例: DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![線](../media/Common-Images/TableLine.png)  (2 番目のドメイン コントローラー。例: DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![線](../media/Common-Images/TableLine.png) (ディレクトリ同期サーバー、例 DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![線](../media/Common-Images/TableLine.png) (最初の AD FS サーバー、例 ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![線](../media/Common-Images/TableLine.png) (2 番目の AD FS サーバー、例 ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![線](../media/Common-Images/TableLine.png) (最初の web アプリケーションプロキシサーバー。例: WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![線](../media/Common-Images/TableLine.png) (2 番目の web アプリケーションプロキシサーバー。例: WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![線](../media/Common-Images/TableLine.png) (ディレクトリ同期サーバー、DS1 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![線](../media/Common-Images/TableLine.png) (最初AD FS サーバー、ADFS1 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![線](../media/Common-Images/TableLine.png) (2 番目AD FS サーバー、ADFS2 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![線](../media/Common-Images/TableLine.png) (最初の Web アプリケーション プロキシ サーバー、WEB1 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![線](../media/Common-Images/TableLine.png) (2 番目の Web アプリケーション プロキシ サーバー、WEB2 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **表 M-Azure での Microsoft 365 の高可用性フェデレーション認証用の仮想マシン**
+ **表 M - Azure での Microsoft 365 の高可用性フェデレーション認証の仮想マシン**
   
-仮想マシンのサイズの一覧については、「[Azure の仮想マシンのサイズ](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes)」を参照してください。
+仮想マシンのサイズの一覧については、「[Azure の仮想マシンのサイズ](/azure/virtual-machines/virtual-machines-windows-sizes)」を参照してください。
   
-次に示す Azure PowerShell コマンド ブロックは、2 つのドメイン コントローラー用の仮想マシンを作成します。 変数の値を指定して、その文字を削除し \< and > ます。 なお、この Azure PowerShell コマンド ブロックは、次の表の値を使用します。
+次に示す Azure PowerShell コマンド ブロックは、2 つのドメイン コントローラー用の仮想マシンを作成します。 変数の値を指定し、文字を削除 \< and > します。 なお、この Azure PowerShell コマンド ブロックは、次の表の値を使用します。
   
 - 表 M: 仮想マシン用
     
@@ -62,15 +62,15 @@ Azure インフラストラクチャサービスに Microsoft 365 フェデレ�
     
 - 表 A: 可用性セット用
     
-「 [フェーズ 1: Azure を構成](high-availability-federated-authentication-phase-1-configure-azure.md)する」の表 R、V、S、I、A を定義していることを思い出してください。
+フェーズ 1: Configure Azure でテーブル R、V、S、I、および A [を定義した点を思い出してください](high-availability-federated-authentication-phase-1-configure-azure.md)。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「 [Azure PowerShell の概要」を](https://docs.microsoft.com/powershell/azure/get-started-azureps)参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「Azure [PowerShell の使用を開始する」を参照してください](/powershell/azure/get-started-azureps)。 
   
 すべてに適切な値を指定したら、その結果のブロックを Azure PowerShell プロンプト、またはローカル コンピューターの PowerShell 統合スクリプト環境 (ISE) で実行します。
   
 > [!TIP]
-> カスタム設定に基づいて、すぐに実行できる PowerShell コマンドブロックを生成するには、この [Microsoft Excel 構成ブック](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)を使用します。 
+> カスタム設定に基づいてすぐに実行できる PowerShell コマンド ブロックを生成するには、この Microsoft Excel 構成ブック [を使用します](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 ```powershell
 # Set up variables common to both virtual machines
@@ -150,7 +150,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 任意のリモート デスクトップ クライアントを使用して、最初のドメイン コント ローラー仮想マシンへのリモート デスクトップ接続を作成します。イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
   
-次に、 **最初のドメインコントローラー仮想マシン**の Windows PowerShell コマンドプロンプトから、次のコマンドを使用して、最初のドメインコントローラーに追加のデータディスクを追加します。
+次に、最初のドメイン コントローラー仮想マシンの Windows PowerShell コマンド プロンプトからこのコマンドを使用して、追加のデータ ディスクを最初のドメイン コントローラー **に追加します**。
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -175,7 +175,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 任意のリモート デスクトップ クライアントを使用して、2 番目のドメイン コント ローラー仮想マシンへのリモート デスクトップ接続を作成します。イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
   
-次に、 **2 番目のドメインコントローラー仮想マシン**の Windows PowerShell コマンドプロンプトから、次のコマンドを使用して、2番目のドメインコントローラーに追加のデータディスクを追加する必要があります。
+次に、2 番目のドメイン コントローラー仮想マシンの Windows PowerShell コマンド プロンプトからこのコマンドを使用して、追加のデータ ディスクを 2 番目のドメイン コントローラーに **追加する必要があります**。
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -193,7 +193,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 ドメイン管理者アカウントの資格情報の入力を求めるダイアログが表示されます。コンピューターが再起動されます。
   
-次に、DNS サーバーとして使用する 2 つの新しいドメイン コントローラーの IP アドレスを Azure が仮想マシンに割り当てるように、仮想ネットワークの DNS サーバーを更新する必要があります。 変数にデータを入力し、ローカルコンピューターの Windows PowerShell コマンドプロンプトから次のコマンドを実行します。
+次に、DNS サーバーとして使用する 2 つの新しいドメイン コントローラーの IP アドレスを Azure が仮想マシンに割り当てるように、仮想ネットワークの DNS サーバーを更新する必要があります。 変数を入力し、ローカル コンピューターの Windows PowerShellコマンド プロンプトから次のコマンドを実行します。
   
 ```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -230,9 +230,9 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 ## <a name="configure-the-directory-synchronization-server"></a>ディレクトリ同期サーバーを構成する
 
-任意のリモートデスクトップクライアントを使用して、ディレクトリ同期サーバー仮想マシンへのリモートデスクトップ接続を作成します。 イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
+選択したリモート デスクトップ クライアントを使用し、ディレクトリ同期サーバー仮想マシンへのリモート デスクトップ接続を作成します。 イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
   
-次に、Windows PowerShell プロンプトでこれらのコマンドを使用して、適切な AD DS ドメインに参加させます。
+次に、プロンプトでこれらのコマンドAD DS ドメインに参加Windows PowerShellします。
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -243,20 +243,18 @@ Restart-Computer
 
 次に、このフェーズが正常に完了した結果の構成を示します。コンピューター名にはプレース ホルダーを使用しています。
   
-**フェーズ 2: Azure の高可用性フェデレーション認証インフラストラクチャ用のドメインコントローラーおよびディレクトリ同期サーバー**
+**フェーズ 2: Azure の高可用性フェデレーション認証インフラストラクチャのドメイン コントローラーとディレクトリ同期サーバー**
 
-![ドメインコントローラーを含む Azure における高可用性 Microsoft 365 フェデレーション認証インフラストラクチャのフェーズ2](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![ドメイン コントローラーを使用した Azure での高可用性 Microsoft 365 フェデレーション認証インフラストラクチャのフェーズ 2](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>次の手順
 
-[「フェーズ 3: AD FS サーバーを構成](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)する」を使用して、このワークロードの構成を続行します。
+[ [フェーズ 3: FS サーバー AD構成して](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) 、このワークロードの構成を続行します。
   
 ## <a name="see-also"></a>関連項目
 
 [Azure に Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Microsoft 365 開発/テスト環境のフェデレーション id](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Microsoft 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/solution-architecture-center.md)
-
-
+[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)

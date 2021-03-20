@@ -1,5 +1,5 @@
 ---
-title: Crazy Domains for Microsoft で DNS レコードを作成する
+title: Microsoft の Crazy Domains で DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
-description: ドメインを確認し、電子メール、Skype for Business Online、および Crazy Domains for Microsoft のその他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 4b39a51f96299879207b96d1e15d039905440b0a
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: ドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法については、「Crazy Domains for Microsoft」を参照してください。
+ms.openlocfilehash: 425ecfa6f8b6c4085bdffb3d2701008ecb895b84
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658497"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910464"
 ---
-# <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>Crazy Domains for Microsoft で DNS レコードを作成する
+# <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>Microsoft の Crazy Domains で DNS レコードを作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。 
   
 使用している DNS ホスティング プロバイダーが Crazy Domains の場合は、この記事に示す手順に従い、ドメインを確認して、メールや Skype for Business Online などの DNS レコードを設定します。
   
-これらのレコードを Crazy Domains で追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
+Crazy Domains でこれらのレコードを追加すると、Microsoft サービスを使用するためにドメインがセットアップされます。
   
 
   
@@ -57,11 +57,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. [ **ドメイン名]** ページの [ **ドメイン** ] セクションで、更新するドメインの名前を選択します。 
+3. [ドメイン **名] ページ** の [ドメイン] **セクション** で、更新するドメインの名前を選択します。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. [DNS **設定]** セクションで、ドロップダウン リスト アイコンを選択します。 
+4. [DNS 設定 **] セクション** で、ドロップダウン リスト アイコンを選択します。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -124,11 +124,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. [ **ドメイン名]** ページの [ **ドメイン** ] セクションで、更新するドメインの名前を選択します。 
+3. [ドメイン **名] ページ** の [ドメイン] **セクション** で、更新するドメインの名前を選択します。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. [DNS **設定]** セクションで、ドロップダウン リスト アイコンを選択します。 
+4. [DNS 設定 **] セクション** で、ドロップダウン リスト アイコンを選択します。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -146,11 +146,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 8. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    (ドロップダウン **リストから** [優先度] の値を選択します)。 
+    (ドロップダウン リスト **から [優先度** ] の値を選択します)。 
     
     |**メール送信先ゾーン**|**優先度**|**割り当て先サーバー**|
     |:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |(このフィールドは空のままにします。)  <br/> |1  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        
    ![CrazyDomains-BP-Configure-2-3](../../media/e27df6a6-19a6-4e58-9716-a74be1c3f8da.png)
   
@@ -158,7 +158,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-BP-Configure-2-4](../../media/ba25cdef-a436-48bf-b0e9-5dffd03234a4.png)
   
-10. [MX Record] セクションに他のMX レコードが表示されている場合は、それらのレコードの 1 つで **[Modify]** を選択します。 
+10. [MX レコード] セクションに他の **MX** レコードが一覧表示されている場合は、それらのレコードの 1 つについて **[変更** ] を選択します。 
     
     ![CrazyDomains-BP-Configure-2-5](../../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
   
@@ -183,11 +183,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. [ **ドメイン名]** ページの [ **ドメイン** ] セクションで、更新するドメインの名前を選択します。 
+3. [ドメイン **名] ページ** の [ドメイン] **セクション** で、更新するドメインの名前を選択します。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. [DNS **設定]** セクションで、ドロップダウン リスト アイコンを選択します。 
+4. [DNS 設定 **] セクション** で、ドロップダウン リスト アイコンを選択します。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -223,7 +223,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 10. 2 番目の CNAME レコードを追加します。
     
-    In the boxes for the new record, use the values from the next row in the table, and then again select **Add CNAME Record**.
+    新しいレコードのボックスで、テーブルの次の行の値を使用し、もう一度 [CNAME レコードの追加] **を選択します**。
     
     6 つの CNAME レコードの作成がすべて完了するまで、このプロセスを繰り返します。
     
@@ -235,7 +235,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。 
   
 1. まず、[このリンク](https://manage.crazydomains.com/members/domains/)を使って Crazy Domains でドメイン ページにアクセスします。最初にログインするように求められます。
     
@@ -245,11 +245,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. [ **ドメイン名]** ページの [ **ドメイン** ] セクションで、更新するドメインの名前を選択します。 
+3. [ドメイン **名] ページ** の [ドメイン] **セクション** で、更新するドメインの名前を選択します。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. [DNS **設定]** セクションで、ドロップダウン リスト アイコンを選択します。 
+4. [DNS 設定 **] セクション** で、ドロップダウン リスト アイコンを選択します。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -288,11 +288,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. [ **ドメイン名]** ページの [ **ドメイン** ] セクションで、更新するドメインの名前を選択します。 
+3. [ドメイン **名] ページ** の [ドメイン] **セクション** で、更新するドメインの名前を選択します。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. [DNS **設定]** セクションで、ドロップダウン リスト アイコンを選択します。 
+4. [DNS 設定 **] セクション** で、ドロップダウン リスト アイコンを選択します。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -314,8 +314,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**レコードの種類**|**サブドメイン**|**Priority**|**Weight**|**Port**|**対象**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV レコード  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV レコード  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV レコード  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV レコード  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![CrazyDomains-BP-Configure-5-3](../../media/cc0ea6eb-7358-434e-bd1a-2737725c6d41.png)
   
@@ -333,4 +333,3 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
-  

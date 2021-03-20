@@ -20,12 +20,12 @@ search.appverid:
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 774d96fb22bb13d4b4edcfab45f27ca9e52c5e88
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406726"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908832"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
@@ -101,7 +101,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 >
 > - オンプレミス ID が Microsoft 365 とフェデレーションされている場合は、パスワードをオンプレミスで変更してから、侵害を管理者に報告する必要があります。
 >
-> - アプリのパスワードは必ず更新してください。 ユーザー アカウントのパスワードをリセットしても、アプリのパスワードは自動的に取り消されません。 ユーザーは既存のアプリ パスワードを削除し、新しいパスワードを作成する必要があります。 手順については、「[追加セキュリティの検証ページでアプリのパスワードを作成して削除する](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)」を参照してください。
+> - アプリのパスワードは必ず更新してください。 ユーザー アカウントのパスワードをリセットしても、アプリのパスワードは自動的に取り消されません。 ユーザーは既存のアプリ パスワードを削除し、新しいパスワードを作成する必要があります。 手順については、「[追加セキュリティの検証ページでアプリのパスワードを作成して削除する](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)」を参照してください。
 >
 > - 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。 MFAの詳細については、[[多要素認証をセットアップする](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)] を参照してください。
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 向け name.com DNS レコードを作成する
+title: Microsoft 向け DNS レコード name.com 作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
-description: ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを microsoft name.comセットアップする方法について説明します。
-ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法については、Microsoft name.com 参照してください。
+ms.openlocfilehash: 97cc83fe060f8fbfe78decff584bded3102b09b5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657829"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910176"
 ---
-# <a name="create-dns-records-at-namecom-for-microsoft"></a>Microsoft 向け name.com DNS レコードを作成する
+# <a name="create-dns-records-at-namecom-for-microsoft"></a>Microsoft 向け DNS レコード name.com 作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。 
   
 使用している DNS ホスティング プロバイダーが name.com の場合は、この記事に記載された手順に従って、ドメインの確認とメールや Skype for Business Online などの DNS レコードのセットアップを行います。
   
-これらのレコードを name.comすると、ドメインは Microsoft サービスで動作する設定に設定されます。
+これらのレコードを追加すると、name.com Microsoft サービスを使用するためにドメインが設定されます。
 
   
 > [!NOTE]
@@ -52,7 +52,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [My **Domains] で**、変更するドメインの名前を選択します。
+2. [ **自分のドメイン]** で、変更するドメインの名前を選択します。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -105,7 +105,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [My **Domains] で**、変更するドメインの名前を選択します。
+2. [ **自分のドメイン]** で、変更するドメインの名前を選択します。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -119,7 +119,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Type**|**Host**|**応答**|**TTL**|**優先度**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |既定値 (300) を使用します。  <br/> |0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
+    |MX  <br/> |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |既定値 (300) を使用します。  <br/> |0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -129,11 +129,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. MX レコードがほかにも存在する場合は、次の 2 段階のステップを実行して 1 つずつ削除してください。
     
-    他の MX レコードごとに、[Actions] 列の **[Delete]** **を選択** します。 
+    他の MX レコードごとに、[アクション] **列の [削除** ] **を選択** します。 
     
     ![Name-BP-Configure-2-3](../../media/16734a98-31c4-4023-a2a5-10b7c95bc58e.png)
   
-    各削除を確認するには、[操作 **] 列で** [削除 **] を再び** 選択します。 
+    各削除を確認するには、もう一度 **[アクション] 列** で **[削除]** を選択します。 
     
     ![Name-BP-Configure-2-4](../../media/409c21c5-51f4-4244-bb84-5d32084224b2.png)
   
@@ -146,7 +146,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [My **Domains] で**、変更するドメインの名前を選択します。
+2. [ **自分のドメイン]** で、変更するドメインの名前を選択します。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -170,13 +170,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
    ![Name-BP-Configure-3-1](../../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
   
-5. [Add **Record] を選択** して最初のレコードを追加します。 
+5. [レコード **の追加] を** 選択して、最初のレコードを追加します。 
     
     ![Name-BP-Configure-3-2](../../media/1053c2a7-07c3-4c1b-b54a-1c02881fb0ec.png)
   
 6. 2 番目の CNAME レコードを追加します。
     
-    上の表の 2 行目の値を使用し、[Add **Record]** を選択して 2 番目のレコードを追加します。 
+    上の表の 2 行目の値を使用し、[レコードの追加] を選択して 2 番目のレコードを追加します。 
     
     同様に、表の 3 行目、4 行目、5 行目、6 行目の値を使用して、残りのレコードを追加します。
     
@@ -184,13 +184,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。 
   
 1. まず、[このリンク](https://www.name.com/account/domain)を使って name.com でドメイン ページにアクセスします。最初にログインするように求められます。
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [My **Domains] で**、変更するドメインの名前を選択します。
+2. [ **自分のドメイン]** で、変更するドメインの名前を選択します。
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -219,11 +219,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [My **Domains] で**、変更するドメインの名前を選択します。
+2. [ **自分のドメイン]** で、変更するドメインの名前を選択します。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. [詳細 **] 列で****、[DNS レコード+ ] を選択します**。 
+3. [詳細 **] 列で****、[DNS レコード+] を選択します**。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -235,8 +235,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Type**|**サービス**|**加重**|**TTL**|**優先度**|**プロトコル**|**ポート**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1 |既定値 (300) を使用します。|100|tls|443|sipdir.online.lync.com <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
-    |SRV|sipfederationtls|1 |既定値 (300) を使用します。|100|tcp|5061|sipfed.online.lync.com <br>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |SRV|sip|1|既定値 (300) を使用します。|100|tls|443|sipdir.online.lync.com <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |SRV|sipfederationtls|1|既定値 (300) を使用します。|100|tcp|5061|sipfed.online.lync.com <br>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   
@@ -246,7 +246,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. 2 番目の SRV レコードを追加します。
 
-上の表の次の行の値を使用し、[Add **Record]** を選択して 2 番目のレコードを追加します。
+上の表の次の行の値を使用し、[レコードの追加] を選択して 2 番目のレコードを追加します。
 
 >[!NOTE]
 >通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。

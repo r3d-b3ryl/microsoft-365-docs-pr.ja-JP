@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 向けのデモ、概念実証、または開発/テスト環境を設定します。
-ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: a006f549d0ac68562faee9c935df7f15161b2f12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487472"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909600"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
 
@@ -31,23 +31,23 @@ ms.locfileid: "48487472"
 
 テスト ラボ ガイド (TLG) を活用すれば、Microsoft 製品の概要をいち早く把握することができます。テスト ラボ ガイドは、簡単ではあるものの代表的なテスト環境を構成する方法を説明しています。これらの環境は、試用期間または有料サブスクリプションの期間内に、デモ、カスタマイズ、概念の複合的な証拠の作成に使用できます。
 
-TLGs はモジュール化するように設計されています。互いに連携して、学習またはテスト構成のニーズにより近い複数の構成を作成します。「自分で作成したものと it が正常に機能する」という実践的な体験により、運用環境へのホスティングをより適切に計画できるようになります。
+TLG はモジュール式に設計されています。 これらの構成は、学習またはテスト構成のニーズにより密接に一致する複数の構成を作成するために、互いに構築されます。 「自分で構築し、動作します」という実践的なエクスペリエンスは、新しい製品またはシナリオの展開要件を理解し、実稼働環境でのホスティングをよりよく計画するのに役立ちます。
 
-また、TLGs を使用して、開発/テストアプリケーション (開発/テスト環境とも呼ばれる) を開発およびテストするための典型的な環境を作成することもできます。
+また、TLG を使用して代表的な環境を作成して、開発/テスト環境とも呼ばれるアプリケーションを開発およびテストすることもできます。
   
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Microsoft 365 for enterprise のテストラボガイドスタックに含まれるすべての記事のビジュアルマップについては、次の図を展開するか、「 [microsoft 365 for enterprise のテストラボガイドスタック](../downloads/Microsoft365EnterpriseTLGStack.pdf)」にアクセスしてください。
+Microsoft 365 for enterprise Test Lab Guide スタックのすべての記事へのビジュアル マップについては、次の図を展開するか [、Microsoft 365 for enterprise](../downloads/Microsoft365EnterpriseTLGStack.pdf)Test Lab Guide Stack に移動します。
 
 [![The Microsoft 365 Enterprise のテスト ラボ ガイド スタック](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本構成
 
-最初に、 [Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)のテスト環境を作成します。2つの異なる種類の基本構成を作成できます。
+まず、Microsoft [365 for enterprise のテスト環境を作成します](/microsoft-365-enterprise/)。 次の 2 種類の基本構成を作成できます。
 
-- [軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md) -エンタープライズの機能に対して、オンプレミスのコンポーネントを含まないクラウドのみの環境で、Microsoft 365 を構成してデモを行う場合に使用します。
+- [軽量な](lightweight-base-configuration-microsoft-365-enterprise.md) 基本構成 - クラウド専用環境で Microsoft 365 のエンタープライズ機能と機能を構成およびデモンストレーションする場合に使用します。これには、オンプレミス コンポーネントは含まれます。
 
-- シミュレートされた[エンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)-エンタープライズ機能に対して Microsoft 365 を構成してデモンストレーションする場合は、Active Directory ドメインサービス (AD DS) ドメインなどのオンプレミスのコンポーネントを使用するハイブリッドクラウド環境で、これを使用します。
+- [シミュレート](simulated-ent-base-configuration-microsoft-365-enterprise.md) されたエンタープライズ ベース構成 - Active Directory ドメイン サービス (AD DS) ドメインなどのオンプレミス コンポーネントを使用するハイブリッド クラウド環境で Microsoft 365 のエンタープライズ機能を構成およびデモンストレーションする場合に使用します。
 
 試用版または運用テスト環境に Microsoft 365 E5 ライセンスを追加することなく、Office 365 E5 のテスト環境を作成することもできます。
     
@@ -69,7 +69,7 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [Azure AD シームレス シングル サインオン](single-sign-on-m365-ent-test-environment.md)
   
-   AD DS ドメインコントローラーを使用して Azure AD のシームレスなシングルサインオン (シームレスな SSO) を有効にしてテストします。
+   Azure ドメイン コントローラーを使用ADシームレス シングル サインオン (シームレス SSO) を有効ADテストします。
 
 - [多要素認証](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -85,7 +85,7 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [パスワードのリセット](password-reset-m365-ent-test-environment.md)
 
-   セルフサービスによるパスワードのリセットを使用して、パスワードをリセットします。
+   セルフサービスのパスワードリセットを使用してパスワードをリセットします。
 
 - [ライセンスとグループ メンバーシップの自動管理](automate-licenses-group-membership-microsoft-365-test-environment.md)
 

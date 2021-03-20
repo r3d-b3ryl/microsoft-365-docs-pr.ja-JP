@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、Outlook for iOS と Android の組み込みの迷惑メール、迷惑メール、フィッシングメールレポートのオプションについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6e63f534a9f9516c6e1a87ff82d5b0916d25778
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: eda0d8d43244834236a70374df6b7d6ccf0b69ab
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509328"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908820"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Exchange Online で Outlook for iOS と Android で迷惑メールとフィッシングメールを報告する
 
@@ -37,7 +37,7 @@ ms.locfileid: "50509328"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始する前に知る必要があるもの
 
-- 最適なユーザー申請エクスペリエンスを得る場合は、レポート メッセージとレポート フィッシング アドインを使用することをお勧めします。詳細 [については、「レポート メッセージ アドインを有効](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) にする」および「レポート フィッシング アドインを [有効にする」](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-phish-add-in) を参照してください。
+- 最適なユーザー申請エクスペリエンスを得る場合は、レポート メッセージとレポート フィッシング アドインを使用することをお勧めします。詳細 [については、「レポート メッセージ アドインを有効](./enable-the-report-message-add-in.md) にする」および「レポート フィッシング アドインを [有効にする」](./enable-the-report-phish-add-in.md) を参照してください。
 
 - Exchange Online メールボックスを使用している組織の管理者の場合は、セキュリティ コンプライアンス センターの申請ポータルを使用&勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 

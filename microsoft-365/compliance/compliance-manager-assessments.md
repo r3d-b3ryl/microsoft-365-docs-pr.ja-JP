@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager で評価を構築し、組織にとって重要な規制と認定の要件を満たすのに役立ちます。
-ms.openlocfilehash: 06b644293c014dafbe46c115b498c2ad2390e99d
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: ff2aa41b91f3cb019dbed542c422d61c79c4ecb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406759"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908597"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>コンプライアンス マネージャーでの評価の作成と管理
 
 **この記事では、次の情報を参照してください。** 評価を作成および管理して、組織のコンプライアンス マネージャーをカスタマイズする方法 **について学習します**。 この記事では、評価を作成する方法、それらをグループに整理する方法、コントロールの操作、更新プログラムの受け入れ、評価レポートのエクスポートの方法を示 **します**。
 
 > [!IMPORTANT]
-> 組織で利用できる評価は、ライセンス契約によって異なります。 [詳細を確認します](https://go.microsoft.com/fwlink/?linkid=2132371)。
+> 組織で利用できる評価は、ライセンス契約によって異なります。 [詳細を確認します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="introduction-to-assessments"></a>評価の概要
 

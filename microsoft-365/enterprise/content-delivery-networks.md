@@ -19,188 +19,188 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
-description: この情報を使用して、Office 365 がコンテンツ配信ネットワーク (CDNs) を使用してパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 1c2230b76f354bf6f3de524b2b8c75b7d8c380e7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: この情報を使用して、Office 365 がコンテンツ配信ネットワーク (CDN) を使用してパフォーマンスを向上させる方法について学習します。
+ms.openlocfilehash: 1a963d14df14e8644072a159e35c8590f953dae6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691804"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911098"
 ---
 # <a name="content-delivery-networks-cdns"></a>コンテンツ配信ネットワーク (CDNs)
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-CDNs は、エンドユーザーにとって Office 365 を高速かつ信頼性の高い状態に保つことができます。 Office 365 などのクラウドサービスでは、CDNs を使用して、ダウンロードを高速化し、エンドユーザーの潜在期間を短縮するために、静的なアセットをブラウザーの近くにキャッシュします。 このトピックの情報は、コンテンツ配信ネットワーク (CDNs) と、それらが Office 365 でどのように使用されるかについて理解するのに役立ちます。
+CDN は、エンド Office 365 を高速かつ信頼性の高い状態に保つのに役立ちます。 Office 365 のようなクラウド サービスでは、CDN を使用して、ダウンロードの高速化とエンド ユーザーの待ち時間の短縮を要求する静的アセットをブラウザーに近づけてキャッシュします。 このトピックの情報は、コンテンツ配信ネットワーク (CDN) と、コンテンツ 配信ネットワーク 365 でどのように使用Office役立ちます。
 
-## <a name="what-exactly-is-a-cdn"></a>完全に CDN とは何ですか。
+## <a name="what-exactly-is-a-cdn"></a>CDN とは正確に何ですか?
 
-CDN は、高速バックボーンネットワークによって接続されるデータセンター内のプロキシサーバーとファイルサーバーで構成される、地理的に分散したネットワークです。 CDNs は、web サイトまたはサービス内の指定した一連のファイルとオブジェクトの待機時間と読み込み時間を短縮するために使用されます。 CDN には、任意の場所からの着信要求を最適に処理するために、数千のエンドポイントが存在する場合があります。
+CDN は、高速バックボーン ネットワークによって接続されたデータセンター内のプロキシ サーバーとファイル サーバーで構成される地理的に分散されたネットワークです。 CDN は、Web サイトまたはサービス内の指定された一連のファイルとオブジェクトの待機時間と読み込み時間を短縮するために使用されます。 CDN には、任意の場所からの受信要求の最適なサービスを提供するために、何千ものエンドポイントが存在する場合があります。
 
-通常、CDNs は、javascript ファイル、アイコン、画像などの web サイトまたはサービスの一般的なコンテンツのダウンロードを高速化するために使用されます。また、SharePoint Online ドキュメントライブラリ、ストリーミングメディアファイル、カスタムコードなどのユーザーコンテンツへのプライベートアクセスを提供することもできます。
+一般的に、CDN は、Javascript ファイル、アイコン、イメージなどの Web サイトまたはサービスの汎用コンテンツのダウンロードを高速化するために使用され、SharePoint Online ドキュメント ライブラリ内のファイル、ストリーミング メディア ファイル、カスタム コードなどのユーザー コンテンツへのプライベート アクセスを提供することもできます。
 
-CDNs は、ほとんどのエンタープライズクラウドサービスで使用されます。 Office 365 のようなクラウドサービスには、多数のユーザーが所有するコンテンツ (メールなど) と汎用コンテンツ (アイコンなど) を同時にダウンロードします。 ユーザーのコンピューターにできるだけ近づけるように、すべてのユーザーがアイコンを使用して、画像を追加する方が効率的です。 すべてのクラウドサービスで、この汎用コンテンツをすべての大都市エリアに保存する CDN データセンターや、世界中の主要なインターネットハブのすべてにおいて使用することは現実的ではありません。一部の CDNs は共有されています。
+CDN は、ほとんどのエンタープライズ クラウド サービスで使用されます。 Office 365 などのクラウド サービスでは、何百万人ものユーザーが独自のコンテンツ (電子メールなど) と汎用コンテンツ (アイコンなど) を一度にダウンロードしています。 アイコンなど、誰もが使用する画像を、ユーザーのコンピューターに可能な限り近くに置く方が効率的です。 すべてのクラウド サービスが、この一般的なコンテンツをすべての大都市地域に格納する CDN データセンターを構築したり、世界中のすべての主要なインターネット ハブに構築したりするとは、実用的ではないので、これらの CDN の一部は共有されます。
 
-## <a name="how-do-cdns-make-services-work-faster"></a>CDNs を使用してサービスを高速化する方法
+## <a name="how-do-cdns-make-services-work-faster"></a>CDN を使用すると、サービスの動作が速くなりますか?
 
-サイトイメージやアイコンなどの一般的なオブジェクトをもう一度にダウンロードすると、電子メールやドキュメントなどの重要な個人コンテンツをダウンロードするために使用できるネットワーク帯域幅を占有することができます。 Office 365 は CDNs を含むアーキテクチャを使用しているため、アイコン、スクリプト、およびその他の汎用コンテンツをサーバーからクライアントコンピューターに近い場所にダウンロードして、ダウンロードを高速化することができます。 これは、Office 365 データセンターに安全に格納されている個人コンテンツへのアクセスが高速になることを意味します。
+サイト イメージやアイコンのような一般的なオブジェクトを何度も何度もダウンロードすると、ネットワーク帯域幅が消費され、電子メールやドキュメントなど、重要な個人コンテンツのダウンロードに使用できます。 Office 365 は、CDN を含むアーキテクチャを使用します。アイコン、スクリプト、その他の汎用コンテンツは、クライアント コンピューターに近いサーバーからダウンロードして、ダウンロードを高速化できます。 つまり、365 データセンターに安全に保存される個人コンテンツOffice速くなります。
 
-CDNs は、クラウドサービスのパフォーマンスを次のように改善するために役立ちます。
+CDN は、いくつかの方法でクラウド サービスのパフォーマンスを向上させるのに役立ちます。
 
-- CDNs は、ネットワークの一部を移行し、クラウドサービスからのファイルダウンロードの負荷を軽減し、ユーザーコンテンツやその他のサービスにサービスを提供するためにクラウドサービスリソースを解放します。これにより、静的アセットの要求を処理する必要性が減少します。
-- CDNs は、高パフォーマンスのネットワークとファイルサーバーを実装することにより遅延のないファイルアクセスを実現する目的で構築されており、 [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) などの更新されたネットワークプロトコルを使用して高効率の圧縮と要求多重化を行うことを目的としています。
-- CDN ネットワークは、グローバルに分散されたエンドポイントを多数使用して、コンテンツを可能な限り近くで利用できるようにします。
+- CDN は、ネットワークとファイルのダウンロードの負荷の一部をクラウド サービスから遠く離れ、静的資産の要求を処理する必要性を減らすことで、ユーザー コンテンツや他のサービスを提供するクラウド サービス リソースを解放します。
+- CDN は、高性能ネットワークとファイル サーバーを実装し [、HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) などの更新されたネットワーク プロトコルを効率的な圧縮と要求多重化で活用することで、低遅延のファイル アクセスを提供するために構築されています。
+- CDN ネットワークでは、多くのグローバルに分散されたエンドポイントを使用して、ユーザーがコンテンツを可能な限り近く利用できます。
 
-## <a name="the-office-365-cdn"></a>Office 365 CDN
+## <a name="the-office-365-cdn"></a>The Office 365 CDN
 
-組み込みの Office 365 のコンテンツ配信ネットワーク (CDN) を使用すると、Office 365 管理者は、それを要求するブラウザーに近い場所に静的アセットをキャッシュすることによって、組織の SharePoint Online ページのパフォーマンスを向上させることができます。これにより、ダウンロードが高速化され、待機時間が短縮されます。 Office 365 CDN は、強化された圧縮およびダウンロード速度を実現するために、 [HTTP/2 プロトコル](https://en.wikipedia.org/wiki/HTTP/2) を使用します。
+組み込みの Office 365 コンテンツ配信ネットワーク (CDN) を使用すると、Office 365 管理者は、静的アセットを要求するブラウザーに近いブラウザーにキャッシュすることで、組織の SharePoint Online ページのパフォーマンスを向上させることができます。 このOffice 365 CDN は [、HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) プロトコルを使用して圧縮速度とダウンロード速度を向上させます。
 
 > [!NOTE]
-> Office 365 CDN は、 **運用環境** (世界規模) のクラウドのテナントでのみ使用できます。 米国政府機関のテナント、中国およびドイツのクラウドでは、現在 Office 365 CDN をサポートしていません。
+> このOffice 365 CDN は、Production **(ワールド** ワイド) クラウドのテナントでのみ使用できます。 米国政府、中国、ドイツのクラウドのテナントは、現在、365 CDN Officeサポートされていません。
 
 Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホストできる複数の CDN で構成されているため、静的資産をグローバルな高速ネットワークから提供することができます。 Office 365 CDN でホストするコンテンツの種類に応じて、**公開**、**非公開**、またはその両方の元の場所を追加できます。
 
 ![Office 365 CDN の概念図](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN の概念図")
 
-Office 365 CDN 内で**公開されている**元の場所のコンテンツは匿名でのアクセスが可能で、ホストされた資産への URL があれば誰でもアクセスできます。 公開されている元の場所のコンテンツへのアクセスは匿名になるため、アクセスしたコンテンツは、機密データ以外の一般的なコンテンツ (JavaScript ファイル、スクリプト、アイコン、画像など) をキャッシュする場合にのみ使用するようにしてください。 Office 365 CDN は、Office 365 クライアント アプリケーションのような一般リソースを、公開されている元の場所からダウンロードする際に既定で使用します。
+Office 365 CDN 内で **公開されている** 元の場所のコンテンツは匿名でのアクセスが可能で、ホストされた資産への URL があれば誰でもアクセスできます。 公開されている元の場所のコンテンツへのアクセスは匿名になるため、アクセスしたコンテンツは、機密データ以外の一般的なコンテンツ (JavaScript ファイル、スクリプト、アイコン、画像など) をキャッシュする場合にのみ使用するようにしてください。 Office 365 CDN は、Office 365 クライアント アプリケーションのような一般リソースを、公開されている元の場所からダウンロードする際に既定で使用します。
 
-Office 365 CDN 内部の出所は、SharePoint Online のドキュメントライブラリ、サイト、独自の画像などのユーザーコンテンツへ**のプライベートアクセス**を提供します。 公開されている元のファイルのコンテンツへのアクセスは、動的に生成されたトークンで保護されているため、元のドキュメント ライブラリまたは保存場所へのアクセス許可を持つユーザーのみがアクセスできます。 Office 365 CDN で公開されている元の場所は SharePoint Online コンテンツに対してのみ使用することができ、SharePoint Online テナントからのリダイレクトによってのみ資産にアクセスすることができます。
+**Office** 365 CDN 内のプライベートオリジンは、SharePoint Online ドキュメント ライブラリ、サイト、および独自のイメージなどのユーザー コンテンツへのプライベート アクセスを提供します。 公開されている元のファイルのコンテンツへのアクセスは、動的に生成されたトークンで保護されているため、元のドキュメント ライブラリまたは保存場所へのアクセス許可を持つユーザーのみがアクセスできます。 Office 365 CDN で公開されている元の場所は SharePoint Online コンテンツに対してのみ使用することができ、SharePoint Online テナントからのリダイレクトによってのみ資産にアクセスすることができます。
 
 Office 365 CDN サービスは、SharePoint Online サブスクリプションの一部として含まれます。
 
-Office 365 CDN の使用方法の詳細については、「 [SharePoint Online で office 365 コンテンツ配信ネットワークを使用](use-microsoft-365-cdn-with-spo.md)する」を参照してください。
+365 CDN を使用する方法Officeについては、「SharePoint Online で Office [365](use-microsoft-365-cdn-with-spo.md)コンテンツ配信ネットワークを使用する」を参照してください。
 
-Office 365 CDN の使用方法についての概念および HOWTO 情報を提供する一連の短いビデオを視聴するには、 [SharePoint 開発者パターンとプラクティス YouTube チャネル](https://aka.ms/sppnp-videos)にアクセスしてください。
+Office 365 CDN の使用に関する概念的な情報と HOWTO 情報を提供する一連の短いビデオを見る場合は [、SharePoint Developer Patterns and Practices YouTube](https://aka.ms/sppnp-videos)チャンネルを参照してください。
 
-## <a name="other-microsoft-cdns"></a>その他の Microsoft CDNs
+## <a name="other-microsoft-cdns"></a>その他の Microsoft CDN
 
-Office 365 CDN の一部ではありませんが、これらの CDNs を Office 365 テナントで使用して、SharePoint 開発ライブラリ、カスタムコード、および Office 365 CDN の範囲外にあるその他の目的にアクセスすることができます。
+Office 365 CDN の一部ではないが、Office 365 テナントでこれらの CDN を使用して、sharePoint 開発ライブラリ、カスタム コード、および Office 365 CDN のスコープ外にあるその他の目的にアクセスできます。
 
 ### <a name="azure-cdn"></a>Azure CDN
 
 >[!NOTE]
->2020年第3四半期から、SharePoint Online は、向上したビデオの再生と信頼性をサポートするために Azure CDN のビデオのキャッシュを開始します。 一般的なビデオは、ユーザーに最も近い CDN エンドポイントからストリーミングされます。 このデータは、Microsoft 365 コンプライアンスの境界内に残ります。 これは、すべてのテナントにとって無料のサービスであり、お客様が構成するアクションを必要としません。
+>SharePoint Online は、2020 年第 3 四半期から、ビデオの再生と信頼性の向上をサポートするために Azure CDN でビデオのキャッシュを開始します。 人気のあるビデオは、ユーザーに最も近い CDN エンドポイントからストリーミングされます。 このデータは、Microsoft 365 コンプライアンスの境界内に残ります。 これは、すべてのテナントの無料サービスであり、構成に顧客の操作を必要とします。
 
-**AZURE CDN**を使用すると、カスタム web パーツ、ライブラリ、およびその他のリソースアセットをホストするための独自の cdn インスタンスを展開できます。これにより、アクセスキーを cdn ストレージに適用し、cdn 構成をより細かく制御することができます。 Azure CDN の使用は無料であり、Azure サブスクリプションが必要です。
+**Azure CDN** を使用して、カスタム Web パーツ、ライブラリ、その他のリソース資産をホストするために独自の CDN インスタンスを展開できます。これにより、CDN ストレージにアクセス キーを適用し、CDN 構成を制御できます。 Azure CDN の使用は無料ではなく、Azure サブスクリプションが必要です。
 
-Azure CDN インスタンスを構成する方法の詳細については、「 [クイックスタート: azure storage アカウントと AZURE cdn を統合](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn)する」を参照してください。
+Azure CDN インスタンスを構成する方法の詳細については、「クイック スタート: Azure ストレージ アカウントと Azure CDN を統合 [する」を参照してください](/azure/cdn/cdn-create-a-storage-account-with-cdn)。
 
-SharePoint web パーツをホストするために Azure CDN を使用する方法の例については、「 [sharepoint のクライアント側 web パーツを AZURE CDN に展開](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn)する」を参照してください。
+Azure CDN を使用して SharePoint Web パーツをホストする方法の例については、「SharePoint クライアント側 Web パーツを Azure CDN に展開する」 [を参照してください](/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn)。
 
-Azure CDN PowerShell モジュールの詳細については、「 [PowerShell を使用して AZURE cdn を管理](https://docs.microsoft.com/azure/cdn/cdn-manage-powershell)する」を参照してください。
+Azure CDN PowerShell モジュールの詳細については [、「PowerShell を使用して Azure CDN を管理する」を参照してください](/azure/cdn/cdn-manage-powershell)。
 
 ### <a name="microsoft-ajax-cdn"></a>Microsoft Ajax CDN
 
-Microsoft の **AJAX cdn** は読み取り専用の cdn で、jQuery (およびその他のすべてのライブラリを含む)、ASP.NET Ajax、ブートストラップ、Knockout.js など、よく使用される開発ライブラリを多数提供します。
+Microsoft の **Ajax CDN** は、jQuery (とその他のすべてのライブラリ)、ASP.NET Ajax、ブートストラップ、Knockout.js など、多くの一般的な開発ライブラリを提供する読み取り専用 CDN です。
   
-これらのスクリプトをプロジェクトに含めるには、プロジェクト自体に含めるのではなく、これらのパブリックなライブラリへの参照を CDN アドレスへの参照に置き換えます。 たとえば、次のコードを使用して jQuery にリンクします。
+これらのスクリプトをプロジェクトに含めるには、公開されているライブラリへの参照を、プロジェクト自体に含める代わりに CDN アドレスへの参照に置き換えます。 たとえば、jQuery にリンクするには、次のコードを使用します。
 
 ``` html
 <script src=https://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
 ```
 
-Microsoft Ajax CDN の使用方法の詳細については、「 [Microsoft AJAX cdn](https://docs.microsoft.com/aspnet/ajax/cdn/overview)」を参照してください。
+Microsoft Ajax CDN の使用方法の詳細については、「Microsoft Ajax [CDN」を参照してください](/aspnet/ajax/cdn/overview)。
 
-## <a name="how-does-office-365-use-content-from-a-cdn"></a>Office 365 で CDN からのコンテンツを使用する方法
+## <a name="how-does-office-365-use-content-from-a-cdn"></a>365 Office CDN のコンテンツの使用方法
 
-Office 365 テナントに対して構成する CDN に関係なく、基本的なデータ取得プロセスは同じです。
+365 テナントに対して構成Officeに関係なく、基本的なデータ取得プロセスは同じです。
 
-1. クライアント (ブラウザーまたは Office クライアントアプリケーション) は、Office 365 のデータを要求します。
+1. クライアント (ブラウザーまたはクライアント アプリケーションOffice) は、365 からデータOfficeします。
 
-2. Office 365 は、クライアントにデータを直接返すか、またはデータが CDN によってホストされるコンテンツセットの一部である場合、クライアントを CDN URL にリダイレクトします。
+2. Office 365 は、データをクライアントに直接返すか、データが CDN によってホストされる一連のコンテンツの一部である場合は、クライアントを CDN URL にリダイレクトします。
 
-    a. データが _パブリック_ の配信元で既にキャッシュされている場合、クライアントは、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
+    a. データが既にパブリック 配信元にキャッシュされている場合、クライアントはデータを最も近い CDN の場所からクライアントに直接ダウンロードします。
 
-    b. データが既に _プライベート_ の配信元でキャッシュされている場合、CDN サービスは、元の Office 365 ユーザーアカウントのアクセス許可を確認します。 アクセス許可がある場合、SharePoint Online は CDN および2つのアクセストークン内のアセットへのパスで構成されるカスタム URL を動的に生成し、クライアントにカスタム URL を返します。 その後、クライアントは、カスタム URL を使用して、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
+    b. データが既にプライベート配信元にキャッシュされている場合、CDN サービスは、配信元に対する Office 365 ユーザー アカウントのアクセス許可をチェックします。 アクセス許可がある場合、SharePoint Online は CDN 内のアセットへのパスと 2 つのアクセス トークンで構成されるカスタム URL を動的に生成し、カスタム URL をクライアントに返します。 その後、クライアントはカスタム URL を使用して、最も近い CDN の場所からクライアントに直接データをダウンロードします。
 
-3. CDN でデータがキャッシュされていない場合、CDN ノードは Office 365 のデータを要求し、クライアントがデータをダウンロードした後、しばらくの間データをキャッシュします。
+3. CDN でデータがキャッシュされていない場合、CDN ノードは Office 365 からデータを要求し、クライアントがデータをダウンロードした後、一期間データをキャッシュします。
 
-CDN は、ユーザーのブラウザーに最も近いデータセンターを特定し、リダイレクトを使用して、そこから要求されたデータをダウンロードします。 CDN リダイレクトは短時間で、ユーザーはダウンロード時間を大幅に短縮できます。
+CDN は、ユーザーのブラウザーに最も近いデータセンターを把握し、リダイレクトを使用して、要求されたデータをそこからダウンロードします。 CDN リダイレクトは迅速で、ユーザーのダウンロード時間を多く節約できます。
 
-## <a name="how-should-i-set-up-my-network-so-that-cdns-work-best-with-office-365"></a>Office 365 で CDNs が最適に機能するように、どのようにネットワークをセットアップする必要がありますか?
+## <a name="how-should-i-set-up-my-network-so-that-cdns-work-best-with-office-365"></a>CDN が 365 で最適に動作Office必要がありますか?
 
-ネットワーク上のクライアント間の遅延を最小限に抑え、CDN エンドポイントは、最適なパフォーマンスを確保するための重要な考慮事項です。 「 [Office 365 エンドポイントの管理](managing-office-365-endpoints.md) 」に記載されているベストプラクティスを使用して、ネットワーク構成がクライアントブラウザーが中央プロキシを介して cdn トラフィックをルーティングするのではなく、直接 cdn にアクセスできるようにすることで、不必要な遅延が発生しないようにすることができます。
+ネットワーク上のクライアントと CDN エンドポイント間の待機時間を最小限に抑えることは、最適なパフォーマンスを確保するための重要な考慮事項です。 [「Office 365](managing-office-365-endpoints.md)エンドポイントの管理」で説明されているベスト プラクティスを使用して、ネットワーク構成によって、不要な遅延を回避するために中央プロキシを介して CDN トラフィックをルーティングするのではなく、クライアント ブラウザーが CDN に直接アクセスできます。
 
-また、「office [365 のネットワーク接続の原則](https://aka.ms/o365networkingprinciples) 」を参照して、office 365 のネットワークパフォーマンスの最適化の背後にある概念を理解することもできます。
+また [、365 ネットワークOffice原則を読んで、365](./microsoft-365-network-connectivity-principles.md) ネットワークパフォーマンスの最適化の背後にある概念Office理解できます。
 
-## <a name="is-there-a-list-of-all-the-cdns-that-office-365-uses"></a>Office 365 で使用されるすべての CDNs の一覧はありますか。
+## <a name="is-there-a-list-of-all-the-cdns-that-office-365-uses"></a>365 で使用されるすべての CDn のOfficeはありますか?
 
-Office 365 で使用されている CDNs は常に変更される可能性があり、多くの場合、イベント1に構成されている複数の CDN パートナーが利用できなくなっています。 Office 365 で使用されるプライマリの CDNs は次のとおりです。
+Office 365 で使用されている CDN は常に変更される可能性があります。多くの場合、イベント 1 が使用できない場合に複数の CDN パートナーが構成されています。 365 で使用されるプライマリ Officeは次のとおりです。
 
-|CDN  |Company  |使用方法  |リンク  |
+|CDN  |Company  |用途  |リンク  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Akamai         |一般に公開される出所の汎用アセット、プライベートオリジンでの SharePoint ユーザーコンテンツ         |[SharePoint Online での Office 365 コンテンツ配信ネットワークの使用](use-microsoft-365-cdn-with-spo.md)         |
-|Azure CDN     |Microsoft         |カスタムコード、SharePoint Framework ソリューション         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
-|Microsoft Ajax CDN (読み取り専用)     |Microsoft         |Ajax、jQuery、ASP.NET、Bootstrap、Knockout.js などの共通ライブラリ。         |[Microsoft Ajax CDN](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
+|Office 365 CDN     |Akamai         |パブリック オリジンの汎用アセット、プライベート オリジンの SharePoint ユーザー コンテンツ         |[SharePoint Online での Office 365 コンテンツ配信ネットワークの使用](use-microsoft-365-cdn-with-spo.md)         |
+|Azure CDN     |Microsoft         |カスタム コード、SharePoint Framework ソリューション         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
+|Microsoft Ajax CDN (読み取り専用)     |Microsoft         |Ajax、jQuery、ASP.NET ブートストラップ、Knockout.jsなどの一般的なライブラリ。         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 
-## <a name="what-performance-gains-does-a-cdn-provide"></a>CDN によって得られるパフォーマンスの向上
+## <a name="what-performance-gains-does-a-cdn-provide"></a>CDN が提供するパフォーマンスの向上は何ですか?
 
-Office 365 から直接ダウンロードされたデータと、特定の CDN からダウンロードされたデータ (テナントへの相対位置、CDN によって提供されるページ上のアセットの数、ネットワークの待機時間と帯域幅の一時的な変化など) について、パフォーマンスの特定の違いを測定する要因は多数あります。 ただし、単純な A/B テストでは、特定のファイルのダウンロード時間の違いを表示するのに役立ちます。
+Office 365 から直接ダウンロードされたデータと、テナントを基準にした場所、最も近い CDN エンドポイントに対する場所、CDN によって提供されるページ上のアセットの数、ネットワーク遅延と帯域幅の一時的な変化など、特定の CDN からダウンロードされたデータのパフォーマンスの特定の違いを測定するには、多くの要因が関係します。 ただし、単純な A/B テストは、特定のファイルのダウンロード時間の違いを示すのに役立ちます。
 
-次のスクリーンショットは、Office 365 のネイティブファイルの場所と、 [Microsoft Ajax コンテンツ配信ネットワーク](https://docs.microsoft.com/aspnet/ajax/cdn/overview)上でホストされている同じファイルの間でのダウンロード速度の違いを示しています。 これらのスクリーンショットは、Internet Explorer 11 開発者ツールの [ **ネットワーク** ] タブにあります。 これらのスクリーンショットは、人気のあるライブラリ jQuery の待機時間を示しています。 この画面を表示するには、Internet Explorer で **F12** キーを押して、wi-fi アイコンで認識されている [ **ネットワーク** ] タブを選択します。
+次のスクリーン ショットは、Office 365 のネイティブ ファイルの場所と Microsoft Ajax コンテンツ配信ネットワークでホストされているファイルとの間のダウンロード速度の違いを [示しています](/aspnet/ajax/cdn/overview)。 これらのスクリーン ショットは、11 の開発者 **ツールの** [ネットワーク] Internet Explorerから表示されます。 これらのスクリーン ショットは、一般的なライブラリ jQuery の待機時間を示しています。 この画面を表示するには、Internet Explorer **F12** キーを押して、[ネットワーク]タブを選択し、アイコンでWi-Fiします。
   
 ![F12 ネットワークのスクリーンショット](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
-このスクリーンショットは、SharePoint Online サイト自体のマスターページギャラリーにアップロードされたライブラリを示しています。 ライブラリのアップロードにかかった時間は1.51 秒です。
+このスクリーン ショットは、SharePoint Online サイト自体のマスター ページ ギャラリーにアップロードされたライブラリを示しています。 ライブラリのアップロードにかかった時間は 1.51 秒です。
   
 ![読み込み時間 1.51 秒のスクリーン ショット](../media/64225c79-fa53-480f-81cd-0d351674320e.png)
   
-2番目のスクリーンショットは、Microsoft の CDN によって配信された同じファイルを示しています。 この時間が経過すると、遅延は約496ミリ秒になります。 これは大規模な改善で、1秒間にオブジェクトをダウンロードする合計時間が短縮されることを示しています。
+2 番目のスクリーン ショットは、Microsoft の CDN によって配信された同じファイルを示しています。 今回の待機時間は約 496 ミリ秒です。 これは大きな改善点であり、1 秒がオブジェクトをダウンロードする合計時間を削り取られたと示しています。
   
 ![読み込み時間 469 ミリ秒のスクリーンショット](../media/6a553cc3-25a0-42c1-aae7-4aebbc2eb4c3.png)
 
 ## <a name="is-my-data-safe"></a>データは安全ですか?
 
-当社では、ビジネスを実行するデータを保護するために十分な注意を払っています。 Office 365 CDN に格納されているデータは、移行中と保存時の両方で暗号化され、Office 365 のデータへのアクセスは office 365 のユーザー権限とトークン認証によって保護されます。 Office 365 SharePoint CDN のデータに対する要求は、Office 365 テナントから参照 (リダイレクト) する必要があります。または、認証トークンは生成されません。
+ビジネスを実行するデータを保護するために、弊社は大きな注意を必要とします。 Office 365 CDN に格納されたデータは、転送中と保存時の両方で暗号化され、Office 365 SharePoint CDN 内のデータへのアクセスは、Office 365 ユーザーのアクセス許可とトークン承認によって保護されます。 Office 365 SharePoint CDN のデータ要求は、Office 365 テナントから参照 (リダイレクト) する必要があります。または承認トークンは生成されません。
 
-データを安全な状態に保つために、ユーザーコンテンツやその他の機密データをパブリック CDN に保存しないことをお勧めします。 パブリック CDN のデータへのアクセスは匿名であるため、パブリック CDNs は、web スクリプトファイル、アイコン、画像、その他の機密でないアセットなどの汎用コンテンツをホストする場合にのみ使用してください。
+データが安全に維持される状態を維持するために、ユーザー コンテンツや他の機密データをパブリック CDN に保存し続けすることをお勧めします。 パブリック CDN 内のデータへのアクセスは匿名なので、パブリック CDN は、Web スクリプト ファイル、アイコン、画像、その他の機密性の高いアセットなどの汎用コンテンツをホストするためにのみ使用する必要があります。
 
 > [!NOTE]
-> サードパーティの CDN プロバイダーは、Office 365 セキュリティセンターによって規定されているコミットメントとは異なるプライバシーとコンプライアンス標準を備えている場合があります。 CDN サービスを使用してキャッシュされたデータは、Microsoft データ処理条件 (DPT) に準拠していない可能性があり、Office 365 セキュリティセンターのコンプライアンス境界の外にある場合があります。
+> サードパーティの CDN プロバイダーには、365 セキュリティ センターで概説されているコミットメントとは異なるプライバシーとコンプライアンスOfficeがあります。 CDN サービスを介してキャッシュされたデータは、Microsoft Data Processing Terms (DPT) に準拠していない可能性があります。また、Office 365 Trust Center コンプライアンスの境界外にある可能性があります。
 
-Office 365 CDN プロバイダーのプライバシーとデータ保護の詳細については、以下を参照してください。  
+365 CDN プロバイダーのプライバシーとデータ保護Office詳細については、以下を参照してください。  
 
-- Office 365 のプライバシーとデータ保護の詳細については、「 [Microsoft Trust Center」](https://www.microsoft.com/trustcenter)を参照してください。
-- Akamai のプライバシーとデータ保護の詳細については、「 [Akamai Privacy セキュリティセンター」](https://www.akamai.com/us/en/about/compliance/data-protection-at-akamai.jsp)を参照してください。
-- Azure のプライバシーとデータ保護の詳細については、「 [azure のセキュリティセンター」](https://azure.microsoft.com/overview/trusted-cloud/)を参照してください。
+- Microsoft Trust [Center](https://www.microsoft.com/trustcenter) Office 365 プライバシーとデータ保護の詳細
+- Akamai のプライバシーとデータ保護の詳細については [、「Akamai Privacy Trust Center」を参照してください。](https://www.akamai.com/us/en/about/compliance/data-protection-at-akamai.jsp)
+- Azure のプライバシーとデータ保護の詳細については [、「Azure Trust Center」を参照してください。](https://azure.microsoft.com/overview/trusted-cloud/)
 
-## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>これらのサードパーティ製サービスを使用してネットワークをセキュリティで保護するにはどうすればよいですか?
+## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>これらすべてのサードパーティ サービスでネットワークをセキュリティで保護するには、どうすれば良いですか?
 
-一連のパートナーサービスを活用することにより、Office 365 は、office 365 を使用しているときに、可用性の要件を拡大縮小し、ユーザーの利便性を向上させることができます。 サードパーティ製サービスの Office 365 では、両方の証明書失効リストが含まれています。crl.microsoft.com、sa.symcb.com、CDNs など。r3.res.outlook.com など。 Office 365 によって生成されるすべての CDN FQDN は、Office 365 のカスタム FQDN です。 Office 365 の要求で FQDN に送信した場合は、CDN プロバイダーが FQDN およびその場所の基になるコンテンツを制御することができます。
+パートナー サービスの広範なセットを活用することで、Office 365 は可用性要件を拡張して満たし、Office 365 を使用できます。 365 の 365 のOfficeには、両方の証明書失効リストが含まれます。例: crl.microsoft.com または sa.symcb.com CDN など。などの r3.res.outlook.com。 365 で生成Office CDN FQDN は、365 のカスタム FQDN Officeです。 Office 365 の要求で FQDN に送信される場合は、CDN プロバイダーが FQDN と、その場所の基になるコンテンツを制御します。
   
-サードパーティに対する要求から、Microsoft または Office 365 データセンター宛ての要求を分離する必要があるお客様のために、 [office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)に関するガイダンスを作成しました。
+Microsoft または Office 365 データセンター宛ての要求を第三者宛ての要求から分離する場合は、「Office [365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)エンドポイントの管理」に関するガイダンスについて説明しました。
 
-## <a name="is-there-a-list-of-all-the-fqdns-that-leverage-cdns"></a>CDNs を利用する Fqdn の一覧はありますか。
+## <a name="is-there-a-list-of-all-the-fqdns-that-leverage-cdns"></a>CDN を活用するすべての FQDN の一覧はありますか?
 
-Fqdn の一覧と、時間の経過による CDNs の変更の活用方法。 CDNs を利用する最新の Fqdn で最新の情報を得るには、「公開された [Office 365 の url と IP アドレスの範囲](https://go.microsoft.com/fwlink/p/?LinkID=293744) 」ページを参照してください。
+FQDN の一覧と、その CDN の活用方法は、時間の間に変化します。 CDN を活用 [するOffice最新の FQDN](./urls-and-ip-address-ranges.md) を取得するには、公開されている 365 URL と IP アドレス範囲のページを参照してください。
 
-[Office 365 の Ip アドレスと URL Web サービス](microsoft-365-ip-web-service.md)を使用して、現在の office 365 の URL と IP アドレス範囲を CSV または JSON として書式設定して要求することもできます。
+[また、Office 365 IP](microsoft-365-ip-web-service.md)アドレスと URL Web サービスを使用して、CSV または JSON 形式の現在の Office 365 URL と IP アドレス範囲を要求することもできます。
 
-## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>自分の CDN を使用して、ローカルネットワーク上でコンテンツをキャッシュすることはできますか。
+## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>自分の CDN とキャッシュ コンテンツをローカル ネットワークで使用できますか?
 
-お客様のニーズに対応するための新しい方法が絶えず模索されており、現在、キャッシュプロキシソリューションやその他のオンプレミスの CDN ソリューションの使用方法について調査しています。
+お客様のニーズをサポートする新しい方法を継続的に探し続け、現在、キャッシュ プロキシ ソリューションや他のオンプレミス CDN ソリューションの使用を模索しています。
 
-Office 365 CDN の一部ではありませんが、 **AZURE cdn** を使用してカスタム web パーツ、ライブラリ、およびその他のリソースアセットをホストすることができます。これにより、アクセスキーを cdn ストレージに適用して、cdn 構成をより細かく制御することができます。 Azure CDN の使用は無料であり、Azure サブスクリプションが必要です。 Azure CDN インスタンスを構成する方法の詳細については、「 [クイックスタート: azure storage アカウントと AZURE cdn を統合](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn)する」を参照してください。
+Office 365 CDN の一部ではありませんが、カスタム Web パーツ、ライブラリ、その他のリソース資産をホストするために **Azure CDN** を使用することもできます。これにより、CDN ストレージにアクセス キーを適用し、CDN 構成を制御できます。 Azure CDN の使用は無料ではなく、Azure サブスクリプションが必要です。 Azure CDN インスタンスを構成する方法の詳細については、「クイック スタート: Azure ストレージ アカウントと Azure CDN を統合 [する」を参照してください](/azure/cdn/cdn-create-a-storage-account-with-cdn)。
 
-## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>Office 365 用の Azure ExpressRoute を使用していますが、変更はありますか?
+## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>Azure ExpressRoute を 365 Office使用しているのですが、その変更点は変わりますか?
 
-[Office 365 用の Azure ExpressRoute](azure-expressroute.md) は、パブリックインターネットから分離された office 365 インフラストラクチャへの専用の接続を提供します。 この場合も、クライアントは、expressroute 以外の接続を介して接続して、ExpressRoute でサポートされているサービスの一覧に明示的に含まれていない他の Microsoft インフラストラクチャに接続する必要があります。 CDNs に対する要求など、特定のトラフィックをルーティングする方法の詳細については、「 [Office 365 ネットワークトラフィック管理](routing-with-expressroute.md)」を参照してください。
+[Azure ExpressRoute for Office 365](azure-expressroute.md) は、パブリック インターネットから分離Office 365 インフラストラクチャへの専用接続を提供します。 つまり、クライアントは ExpressRoute 以外の接続を使用して、ExpressRoute でサポートされるサービスの一覧に明示的に含まれていない CDN や他の Microsoft インフラストラクチャに接続する必要があります。 CDN 宛ての要求などの特定のトラフィックをルーティングする方法の詳細については、「Office [365](routing-with-expressroute.md)ネットワーク トラフィック管理」を参照してください。
 
-## <a name="can-i-use-cdns-with-sharepoint-server-on-premises"></a>オンプレミスの SharePoint Server で CDNs を使用できますか?
+## <a name="can-i-use-cdns-with-sharepoint-server-on-premises"></a>SharePoint Server オンプレミスで CDN を使用できますか?
 
-CDNs の使用は SharePoint Online のコンテキストでのみ有効であり、SharePoint Server で回避する必要があります。 これは、サーバーが社内に設置されている場合や、地理的に閉じている場合は、地理的な場所に関するすべての利点が true を保持しないためです。 また、ホストされているサーバーへのネットワーク接続がある場合は、インターネット接続を使用せずにサイトが使用される可能性があるため、CDN ファイルを取得することはできません。 それ以外の場合は、使用可能で、サイトに必要なライブラリおよびファイルに対して安定したものがある場合は、CDN を使用する必要があります。
+CDN の使用は SharePoint Online コンテキストでのみ意味を持ち、SharePoint Server では避ける必要があります。 これは、サーバーがオンプレミスまたは地理的に近い場所にある場合、地理的な場所に関する利点はすべて当てはかからないのでです。 さらに、ホストされているサーバーへのネットワーク接続がある場合、サイトはインターネットに接続せずに使用される可能性があります。したがって、CDN ファイルを取得することはできません。 それ以外の場合は、サイトに必要なライブラリとファイルに使用可能で安定した CDN がある場合は、CDN を使用する必要があります。
   
-ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
+ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/o365cdns]()
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 ネットワーク接続の原則](https://aka.ms/o365networkingprinciples)
+[Office 365 ネットワーク接続の原則](./microsoft-365-network-connectivity-principles.md)
 
 [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)
 
-[Office 365 の URL および IP アドレスの範囲](https://go.microsoft.com/fwlink/p/?LinkID=293744)
+[Office 365 の URL および IP アドレスの範囲](./urls-and-ip-address-ranges.md)
 
 [SharePoint Online での Office 365 コンテンツ配信ネットワークの使用](use-microsoft-365-cdn-with-spo.md)
 

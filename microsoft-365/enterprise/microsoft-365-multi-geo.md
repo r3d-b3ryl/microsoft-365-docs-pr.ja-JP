@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 Multi-Geo を使用して、複数の地域に Microsoft 365 のプレゼンスを展開する方法について説明します。
-ms.openlocfilehash: 6d16d222a97f309eafdd79a2b107978ce7b4f242
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: 2805470f1a35bb5978f3d25c30aa07523ad21afb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712499"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909552"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -50,7 +50,7 @@ Office 365 Multi-Geo の説明に使用される重要な用語を以下に示�
 
 ## <a name="licensing"></a>ライセンス
 
-Microsoft 365 Multi-Geo は、テナントに少なくとも 250 の Microsoft 365 シートを持ち、それらのシートの少なくとも 5% が複数地域を使用している マイクロソフトエンタープライズ契約 のお客様向け、次の Microsoft 365 サブスクリプション プランのアドオンとして利用できます。 ユーザー サブスクリプション ライセンスは、複数地域サービス ライセンスマイクロソフトエンタープライズ契約同じライセンスに含まれています。 詳細については、Microsoft アカウント チームにお問い合わせください。
+Microsoft 365 Multi-Geo は、テナント内に最低 250 の Microsoft 365 シートを持ち、複数地域を使用するシートの 5% 以上を持つ マイクロソフトエンタープライズ契約 のお客様に対して、次の Microsoft 365 サブスクリプション プランのアドオンとして利用できます。 ユーザー サブスクリプション ライセンスは、複数地域サービス マイクロソフトエンタープライズ契約と同じライセンス上にある必要があります。 詳細については、Microsoft アカウント チームにお問い合わせください。
 
 - Microsoft 365 F1、F3、E3、または E5
 - Office 365 F3、 E1、 E3、または E5
@@ -88,4 +88,4 @@ Microsoft 365 Multi-Geo は、テナントに少なくとも 250 の Microsoft 3
 
 [Exchange Online の複数地域機能](multi-geo-capabilities-in-exchange-online.md)
 
-[複数地域環境での Teams エクスペリエンス](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[複数地域環境での Teams エクスペリエンス](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 1151cddbad2f5b8633b0e0f19a24c470f85d7614
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838533"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908988"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender を 365 のOfficeする
 
@@ -44,7 +44,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 
 評価モードでは、 [安全な添付](atp-safe-attachments.md)ファイル [、安全な](atp-safe-links.md)リンク、メールボックス [インテリジェンス](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ベースの偽装ポリシーが代理で設定されます。 すべての Defender for Office 365 ポリシーはバックグラウンドで強制不可モードで作成され、表示されません。
 
-セットアップの一環として、評価モードではコネクタの [拡張フィルターも構成します](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 IP アドレスと送信者情報を保持することでフィルターの精度が向上します。それ以外の場合、メールが Defender 365 の Defender の前にあるメール セキュリティ ゲートウェイ (ESG) を通過すると失われますOffice。 また、コネクタのフィルター処理が強化され、既存の Exchange Online Protection (EOP) スパム対策ポリシーおよびフィッシング対策ポリシーのフィルタリング精度も向上します。
+セットアップの一環として、評価モードではコネクタの [拡張フィルターも構成します](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 IP アドレスと送信者情報を保持することでフィルターの精度が向上します。それ以外の場合、メールが Defender 365 の Defender の前にあるメール セキュリティ ゲートウェイ (ESG) を通過すると失われますOffice。 また、コネクタのフィルター処理が強化され、既存の Exchange Online Protection (EOP) スパム対策ポリシーおよびフィッシング対策ポリシーのフィルタリング精度も向上します。
 
 コネクタの拡張フィルター処理を有効にすると、フィルターの精度が向上しますが、Office 365 の Defender の前に ESG が設定され、現在 EOP フィルター処理をバイパスしていない場合は、特定のメッセージの配信可能性が変わる可能性があります。 影響は EOP ポリシーに制限されます。評価の一部としてセットアップされる MDO ポリシーは、強制以外のモードで作成されます。 潜在的な運用への影響を最小限に抑えるために、トランスポート ルールを作成してスパム信頼レベル (SCL) を -1 に設定することで、すべての EOP フィルターをバイパスできます。 詳細 [については、「EAC を使用してメッセージの SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)を設定するメール フロー ルールを作成する」   を参照してください。
 
@@ -72,7 +72,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 
 #### <a name="trial"></a>試用版
 
-Microsoft Defender for Office 365 の試用版ライセンスを取得するには、課金管理者の役割またはグローバル管理者の役割 **を持っている必要があります**。 グローバル管理者の役割を持つユーザーにアクセス許可を要求します。 [サブスクリプションとライセンスの詳細](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+Microsoft Defender for Office 365 の試用版ライセンスを取得するには、課金管理者の役割またはグローバル管理者の役割 **を持っている必要があります**。 グローバル管理者の役割を持つユーザーにアクセス許可を要求します。 [サブスクリプションとライセンスの詳細](../../commerce/licenses/subscriptions-and-licenses.md)
 
 適切な役割を果たしたら、Microsoft 365 管理センターの Microsoft Defender for Office 365 (プラン 2) の試用版ライセンスを請求 > 購入サービスに移動して入手してください。 試用版には、25 ライセンスの 30 日間の無料試用版が含まれています。 [Microsoft Defender for Office 365 (プラン 2) を取得します](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)。
 
@@ -80,14 +80,14 @@ Microsoft Defender for Office 365 の試用版ライセンスを取得するに�
 
 ### <a name="roles"></a>ロール
 
-Exchange Online の役割は、評価モードで 365 Office Defender をセットアップするために必要です。
+**Exchange Online の役割は、評価** モードで 365 Office Defender をセットアップするために必要です。 Microsoft 365 コンプライアンスまたはセキュリティ管理者の役割の割り当ては機能しません。
 
-- [Exchange Online のアクセス許可の詳細](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [Exchange Online のアクセス許可の詳細](/exchange/permissions-exo/permissions-exo)
 - [管理者ロールの割り当てについて](../../admin/add-users/assign-admin-roles.md)
 
 次の役割が必要です。
 
-|タスク|Role|
+|タスク|役割 (Exchange Online で)|
 |---|---|
 |無料試用版を取得するか、Microsoft Defender for Office 365 (プラン 2)|課金管理者ロールまたはグローバル管理者ロール|
 |評価ポリシーの作成|リモートドメインと受け入れドメインの役割。セキュリティ管理者の役割|
@@ -95,7 +95,6 @@ Exchange Online の役割は、評価モードで 365 Office Defender をセッ�
 |評価ポリシーの削除|リモートドメインと受け入れドメインの役割。セキュリティ管理者の役割 |
 |評価レポートの表示|セキュリティ管理者の役割またはセキュリティ 閲覧者の役割|
 |
-
 
 ### <a name="enhanced-filtering"></a>拡張フィルター
 
@@ -111,7 +110,7 @@ URL はメール フロー中にデトナ処理されます。 特定の URL を
 
 ### <a name="email-routing"></a>メールのルーティング
 
-メールをルーティングする受信コネクタの名前など、メールの現在のルーティング方法を設定する必要がある対応する詳細を準備します。 Exchange Online Protection を使用しているだけの場合は、コネクタを持つ必要があります。 [メール フローとメール ルーティングの詳細](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+メールをルーティングする受信コネクタの名前など、メールの現在のルーティング方法を設定する必要がある対応する詳細を準備します。 Exchange Online Protection を使用しているだけの場合は、コネクタを持つ必要があります。 [メール フローとメール ルーティングの詳細](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 サポートされる電子メール ルーティングシナリオは次のとおりです。
 

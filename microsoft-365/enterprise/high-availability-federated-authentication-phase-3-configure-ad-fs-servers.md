@@ -1,5 +1,5 @@
 ---
-title: 高可用性フェデレーション認証のフェーズ 3 AD FS サーバーを構成する
+title: 高可用性フェデレーション認証 フェーズ 3 FS サーバー AD構成する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,19 +15,19 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: Microsoft Azure で Microsoft 365 の高可用性フェデレーション認証用に AD FS サーバーを作成して構成する方法について説明します。
-ms.openlocfilehash: bf8b52f4cd0dead0c264b71363fd5248397ae88d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Microsoft Azure で Microsoft 365 の高可用性フェデレーション認証AD FS サーバーを作成および構成する方法について説明します。
+ms.openlocfilehash: 388a99aa496c4ecd9145759d4dfb1b9441b4fb2c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692236"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909800"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性フェデレーション認証のフェーズ 3: AD FS サーバーを構成する
 
-Azure インフラストラクチャサービスに Microsoft 365 フェデレーション認証の高可用性を展開するためのこのフェーズでは、内部ロードバランサーと2つの AD FS サーバーを作成します。
+Azure インフラストラクチャ サービスで Microsoft 365 フェデレーション認証の高可用性を展開するこのフェーズでは、内部ロード バランサーと 2 台の FS サーバーをADします。
   
-このフェーズは、「 [フェーズ 4: web アプリケーションプロキシを構成](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)する」に進む前に完了する必要があります。 すべてのフェーズについては、「 [Microsoft 365 の高可用性フェデレーション認証を Azure に展開](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) する」を参照してください。
+[フェーズ 4: Web アプリケーション プロキシの構成] に進む前に、この [フェーズを完了する必要があります](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 すべての [フェーズについては、「Azure での Microsoft 365](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) の高可用性フェデレーション認証の展開」を参照してください。
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Azure に AD FS サーバー仮想マシンを作成する
 
@@ -45,15 +45,15 @@ Azure インフラストラクチャサービスに Microsoft 365 フェデレ�
     
 - 表 A: 可用性セット用
     
-「フェーズ 2: configure [Azure](high-availability-federated-authentication-phase-1-configure-azure.md)」の「[フェーズ 2: ドメインコントローラー](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)と表 R、V、S、I、A を構成する」で表 M を定義していることを思い出してください。
+フェーズ 2 でテーブル M を定義した [場合:フェーズ 1:](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Configure Azure でドメイン コントローラーとテーブル R、V、S、I、および A を [構成します](high-availability-federated-authentication-phase-1-configure-azure.md)。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「 [Azure PowerShell の概要」を](https://docs.microsoft.com/powershell/azure/get-started-azureps)参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「Azure [PowerShell の使用を開始する」を参照してください](/powershell/azure/get-started-azureps)。 
   
-まず、2 つの AD FS サーバー用に Azure の内部ロード バランサーを作成します。 変数の値を指定して、その文字を削除し \< and > ます。 適切な値をすべて指定したら、その結果のブロックを Azure PowerShell コマンド プロンプトまたは PowerShell ISE で実行します。
+まず、2 つの AD FS サーバー用に Azure の内部ロード バランサーを作成します。 変数の値を指定し、文字を削除 \< and > します。 適切な値をすべて指定したら、その結果のブロックを Azure PowerShell コマンド プロンプトまたは PowerShell ISE で実行します。
   
 > [!TIP]
-> カスタム設定に基づいて、すぐに実行できる PowerShell コマンドブロックを生成するには、この [Microsoft Excel 構成ブック](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)を使用します。 
+> カスタム設定に基づいてすぐに実行できる PowerShell コマンド ブロックを生成するには、この Microsoft Excel 構成ブック [を使用します](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 ```powershell
 # Set up key variables
@@ -135,7 +135,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 仮想マシンごとに、お好みのリモート デスクトップ クライアントを使用して、リモート デスクトップ接続を作成します。イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
   
-仮想マシンごとに、Windows PowerShell プロンプトでこれらのコマンドを使用して、それらの仮想マシンを適切な Active Directory ドメインサービス (AD DS) ドメインに参加させます。
+仮想マシンごとに、これらのコマンドを使用して、適切な Active Directory ドメイン サービス (AD DS) ドメインに参加Windows PowerShellします。
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -148,16 +148,14 @@ Restart-Computer
   
 **フェーズ 3:Azure での高可用性フェデレーション認証インフラストラクチャ用の AD FS サーバーと内部ロード バランサー**
 
-![AD FS サーバーを使用した Azure における高可用性 Microsoft 365 フェデレーション認証インフラストラクチャのフェーズ3](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Azure の高可用性 Microsoft 365 フェデレーション認証インフラストラクチャのフェーズ 3 と FS サーバー ADフェーズ 3](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>次の手順
 
-[「フェーズ 4: web アプリケーションプロキシを構成](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)する」を使用して、このワークロードの構成を続行します。
+[ [フェーズ 4: Web アプリケーション プロキシの構成] を使用](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) して、このワークロードの構成を続行します。
   
 ## <a name="see-also"></a>関連項目
 
 [Azure に Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Microsoft 365 開発/テスト環境のフェデレーション id](federated-identity-for-your-microsoft-365-dev-test-environment.md)
-
-
+[Microsoft 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-microsoft-365-dev-test-environment.md)

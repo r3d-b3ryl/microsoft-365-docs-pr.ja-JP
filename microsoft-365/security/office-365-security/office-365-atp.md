@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1a2cb40184de170263a52e52b704b30b0731c868
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287667"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909036"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "50287667"
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
-> この記事は、[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) をご利用の法人のお客様を対象としています。 Outlook.com、Microsoft 365 Family、または Microsoft 365 Personal を使用していて、Outlook の安全なリンクまたは添付ファイルに関する情報を探している場合は、「[Microsoft 365 サブスクライバー用の Outlook.com の高度なセキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) をご利用の法人のお客様を対象としています。 Outlook.com、Microsoft 365 Family、または Microsoft 365 Personal を使用していて、Outlook の安全なリンクまたは添付ファイルに関する情報を探している場合は、「[Microsoft 365 サブスクライバー用の Outlook.com の高度なセキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL) や共同作業ツールによって生じる悪意のある脅威から組織を保護します。 Defender for Office 365 には次のものが含まれます。
 
@@ -88,7 +88,7 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 - Microsoft Defender for Office 365 プラン 1 は、Microsoft 365 Business Premium に含まれています。
 
-- Microsoft Defender for Office 365 プラン 1 および Microsoft Defender for Office 365 プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして利用できます。 詳細については、「[Microsoft Defender for Office 365 プラン全体での機能の可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+- Microsoft Defender for Office 365 プラン 1 および Microsoft Defender for Office 365 プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして利用できます。 詳細については、「[Microsoft Defender for Office 365 プラン全体での機能の可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
 
 - [安全なドキュメント](safe-docs.md)機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティ ライセンス (Microsoft Defender for Office 365 プランには含まれません) を持つユーザーのみが利用できます。
 
@@ -150,8 +150,8 @@ Microsoft Defender for Office 365 プラン 2 には、組織のセキュリテ�
 |役割または役割グループ|追加情報|
 |---|---|
 |グローバル管理者 (Azure Active Directory またはセキュリティ/コンプライアンス センターで割り当てることができます)|[Microsoft 365 管理者ロールについて](../../admin/add-users/about-admin-roles.md)|
-|セキュリティ管理者 (Azure Active Directory またはセキュリティ/コンプライアンス センターで割り当てることができます)|[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)|
-|Exchange Online 組織管理 (Exchange Online で割り当てることができます)|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|セキュリティ管理者 (Azure Active Directory またはセキュリティ/コンプライアンス センターで割り当てることができます)|[Azure Active Directory での管理者役割のアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)|
+|Exchange Online 組織管理 (Exchange Online で割り当てることができます)|[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)|
 |検索と消去 (セキュリティ/コンプライアンス センターでのみ割り当てることができます)|[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)|
 
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
@@ -160,9 +160,9 @@ Microsoft Defender for Office 365 プラン 2 には、組織のセキュリテ�
 
 Microsoft Defender for Office 365 は、Microsoft 365 E5、Office 365 E5、Office 365 A5、Microsoft 365 Business Premium などの特定のサブスクリプションに含まれています。 サブスクリプションに Defender for Office 365 が含まれていない場合は、特定のサブスクリプションへのアドオンとして Defender for Office 365 プラン 1 または Defender for Office 365 プラン 2 を購入できます。 詳細については、次のリソースを参照してください。
 
-- Defender for Office 365 プランを含むサブスクリプションのリストについては、「[Microsoft Defender for Office 365 の可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)」を参照してください。
+- Defender for Office 365 プランを含むサブスクリプションのリストについては、「[Microsoft Defender for Office 365 の可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)」を参照してください。
 
-- プラン 1 と 2 に含まれる機能のリストについては、「[Microsoft Defender for Office 365 プランで利用できる機能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」
+- プラン 1 と 2 に含まれる機能のリストについては、「[Microsoft Defender for Office 365 プランで利用できる機能](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」
 
 - [適切な Microsoft Defender for Office 365 を入手](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content)して、プランを比較し、Defender for Office 365 を購入してください。
 
@@ -174,7 +174,7 @@ Microsoft Defender for Office 365 には継続的に新機能が追加されて�
 
 - 「[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)」は、開発およびロール アウトの新機能の一覧を提供します。
 
-- [Microsoft Defender for Office 365 サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)は、Defender for Office 365 プラン全体の機能と可用性について説明しています。
+- [Microsoft Defender for Office 365 サービスの説明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)は、Defender for Office 365 プラン全体の機能と可用性について説明しています。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 向け Dyn.com DNS レコードを作成する
+title: Microsoft の DNS レコード Dyn.com 作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
-description: ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードをセットアップする方法については、microsoft Dyn.com覧ください。
-ms.openlocfilehash: d1b77d6b4f38dd3e0979f448a77b293564841f45
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法については、Microsoft Dyn.com 説明します。
+ms.openlocfilehash: 432dc630d49cc3494d17b3f007f813d66dc6b1c3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657938"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910332"
 ---
-# <a name="create-dns-records-at-dyncom-for-microsoft"></a>Microsoft 向け Dyn.com DNS レコードを作成する
+# <a name="create-dns-records-at-dyncom-for-microsoft"></a>Microsoft の DNS レコード Dyn.com 作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。 
   
@@ -46,11 +46,11 @@ ms.locfileid: "49657938"
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. [Zone **Level Services] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
+2. [ゾーン **レベル サービス] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
     
-3. ドメインの **DNS ページ** で、[基本設定] を **選択します**。
+3. ドメインの **DNS ページ** で、[基本設定] **を選択します**。
     
-4. [エキスパート **インターフェイスを有効にする] を選択します**。
+4. [エキスパート **インターフェイスの有効化] を選択します**。
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -97,11 +97,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. [Zone **Level Services] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
+2. [ゾーン **レベル サービス] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
     
-3. ドメインの DNS ページで、[基本設定] を **選択します**。
+3. ドメインの DNS ページで、[基本設定] **を選択します**。
     
-4. [エキスパート **インターフェイスを有効にする] を選択します**。
+4. [エキスパート **インターフェイスの有効化] を選択します**。
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -109,7 +109,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Host**|**TTL**|**Type**|**データ**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **10** は MX 優先度の値です。 MX 値の先頭に追加して、スペースで値の残りの部分から区切ってください。  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)      <br>    優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
+    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **10** は MX 優先度の値です。 MX 値の先頭に追加して、スペースで値の残りの部分から区切ってください。  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)      <br>    優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 <br/> |
    
     ![Dyn-BP-Configure-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
@@ -121,7 +121,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Dyn-BP-Configure-2-3](../../media/f24f02cc-c0b7-42cf-a2ff-4d0fc203e4de.png)
   
-8. [変更の **適用] を選択します**。
+8. **[Apply Changes]\(変更の適用\)** を選択します。
     
     ![Dyn-BP-Configure-2-4](../../media/0cc23c2b-b6f2-4f58-af20-4c6506de7b43.png)
   
@@ -132,11 +132,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. [Zone **Level Services] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
+2. [ゾーン **レベル サービス] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
     
-3. ドメインの **DNS ページ** で、[基本設定] を **選択します**。
+3. ドメインの **DNS ページ** で、[基本設定] **を選択します**。
     
-4. [エキスパート **インターフェイスを有効にする] を選択します**。
+4. [エキスパート **インターフェイスの有効化] を選択します**。
     
 5. 6 つの CNAME レコードの最初のレコードを追加します。
     
@@ -160,7 +160,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 7. 残りの 5 つの CNAME レコードを追加します。
     
-    [DNS **レコードの** 追加] セクションで、表の次の行の値を使用してレコードを作成し、[Create **Record]** を再度選択してレコードを完成します。 
+    [DNS **レコードの追加**] セクションで、テーブルの次の行の値を使用してレコードを作成し、もう一度 [レコードの作成] を選択してそのレコードを完了します。 
     
     6 つの CNAME レコードの作成がすべて完了するまで、このプロセスを繰り返します。
     
@@ -168,17 +168,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。
   
 1. まず、[このリンク](https://account.dyn.com/dns/)を使って Dyn.com でドメイン ページにアクセスします。最初にログインするように求められます。
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. [Zone **Level Services] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
+2. [ゾーン **レベル サービス] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
     
-3. ドメインの **DNS ページ** で、[基本設定] を **選択します**。
+3. ドメインの **DNS ページ** で、[基本設定] **を選択します**。
     
-4. [エキスパート **インターフェイスを有効にする] を選択します**。
+4. [エキスパート **インターフェイスの有効化] を選択します**。
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -197,15 +197,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
 
-1. まず、[このリンク](https://account.dyn.com/dns/)を使って Dyn.com でドメイン ページにアクセスします。 最初にログインするように求めるメッセージが表示されます。 
+1. まず、[このリンク](https://account.dyn.com/dns/)を使って Dyn.com でドメイン ページにアクセスします。 最初にログインするように求めるメッセージが表示されます 
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. [Zone **Level Services] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
+2. [ゾーン **レベル サービス] ページ** で、編集するドメインの **[Dyn Standard DNS Service]** を選択します。 
     
-3. ドメインの **DNS ページ** で、[基本設定] を **選択します**。
+3. ドメインの **DNS ページ** で、[基本設定] **を選択します**。
     
-4. [エキスパート **インターフェイスを有効にする] を選択します**。
+4. [エキスパート **インターフェイスの有効化] を選択します**。
     
 5. 2 つの SRV レコードの最初のレコードを追加します。
     
@@ -226,8 +226,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 7. 残りの SRV レコードを追加します。
     
-    [DNS **レコードの** 追加] セクションで、表の 2 行目の値を使用してレコードを作成し、[Create **Record]** を再度選択してレコードを完成します。 
+    [DNS **レコードの追加**] セクションで、テーブルの 2 行目の値を使用してレコードを作成し、もう一度 [レコードの作成] を選択して、そのレコードを完了します。 
     
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
-  

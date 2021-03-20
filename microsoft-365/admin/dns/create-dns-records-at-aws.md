@@ -1,5 +1,5 @@
 ---
-title: Amazon Web Services (AWS) で Microsoft 用の DNS レコードを作成する
+title: Microsoft の Amazon Web Services (AWS) で DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
-description: ドメインを確認し、Amazon Web Services (AWS) for Microsoft でメール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: bb687b8685aed79f5f768c12d652205bbbed0f59
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: ドメインを確認し、Microsoft の Amazon Web Services (AWS) で電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
+ms.openlocfilehash: 12f9341ab381324266cf2da1ca6b5423df9973dd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657974"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910416"
 ---
-# <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Amazon Web Services (AWS) で Microsoft 用の DNS レコードを作成する
+# <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Microsoft の Amazon Web Services (AWS) で DNS レコードを作成する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-使用している DNS ホスティング プロバイダーが AWS の場合は、この記事の手順に従ってドメインを確認し、メールや Skype Online for Business などのために DNS レコードを設定します。
+AWS が DNS ホスティング プロバイダーの場合は、この記事の手順に従ってドメインを確認し、メール、Skype Online for Business などのための DNS レコードを設定します。
   
-AWS でこれらのレコードを追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
+これらのレコードを AWS で追加すると、ドメインは Microsoft サービスで動作するために設定されます。
   
 
   
@@ -51,9 +51,9 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [リソース **] ページで** 、[ホストゾーン] **を選択します**。
+2. [リソース] **ページで** 、[ホストゾーン] **を選択します**。
     
-3. [ **ホストゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
+3. [ホスト **ゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
     
 4. [レコード **セットの作成] を選択します**。
     
@@ -66,14 +66,14 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |**名前** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
+    |**名前** <br/> |**型** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
     |(Leave this field empty.)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
    
 6. **[作成]** を選択します。
     
 7. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-ドメイン レジストラーのサイトでレコードを追加した後、Microsoft に戻り、レコードの検索を要求します。
+ドメイン レジストラーのサイトにレコードを追加したので、Microsoft に戻り、レコードの検索を要求します。
   
 Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
@@ -89,14 +89,14 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>MX レコードを追加して、ドメインのメールが Microsoft 365 に届く
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>ドメインのメールが Microsoft 365 に届く MX レコードを追加する
 <a name="BKMK_add_MX"> </a>
 
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [リソース **] ページで** 、[ホストゾーン] **を選択します**。
+2. [リソース] **ページで** 、[ホストゾーン] **を選択します**。
     
-3. [ **ホストゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
+3. [ホスト **ゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
     
 4. [レコード **セットの作成] を選択します**。
     
@@ -104,7 +104,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**名前**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**名前**|**型**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |(このフィールドは空のままにします。)  <br/> |MX - Mail Exchange  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 は、MX 優先度の値です。 この値を MX 値の先頭に追加して、スペースで他の値から分離します。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Microsoft \<*domain-key*\> 365 アカウントから取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
        
@@ -117,7 +117,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 7. 他の MX レコードがある場合は削除します。
     
     > [!IMPORTANT]
-    > AWS は、複数のレコードを含む可能性があるセットとして MX レコードを格納します。 **[Delete** **Record Set]**(レコード セットの削除) を選択すると、追加した MX レコードを含むすべての MX レコードが削除されます。 代わりに、次の手順を使用してください。 
+    > AWS は、複数のレコードを含む可能性があるセットとして MX レコードを格納します。 **[レコード** セット **の削除]** を選択しない場合は、追加した MX レコードを含むすべての MX レコードが削除されます。 代わりに、次の手順を使用します。 
   
     最初に、MX レコード セットを選択します。
     
@@ -136,9 +136,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [リソース **] ページで** 、[ホストゾーン] **を選択します**。
+2. [リソース] **ページで** 、[ホストゾーン] **を選択します**。
     
-3. [ **ホストゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
+3. [ホスト **ゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
     
 4. [レコード **セットの作成] を選択します**。
     
@@ -148,7 +148,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     [ **Type**] と [ **Routing Policy**] の値をドロップダウン リストから選びます。 
     
-    |**名前**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**名前**|**型**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
     |sip  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
@@ -164,7 +164,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 7. 残りの 4 つの CNAME レコードを追加します。
     
-    [**ホストゾーン**] ページで、[レコード セットの作成] を選択し、表の次の行の値を使用してレコードを作成し、[作成] を再び選択してレコードを完成します。 
+    [ホスト **ゾーン] ページ** で、[レコード セットの作成] を選択し、テーブルの次の行の値を使用してレコードを作成し、もう一度 [**作成**] を選択してそのレコードを完了します。 
     
     5 つの CNAME レコードすべてが作成されるまで、このプロセスを繰り返します。
     
@@ -172,13 +172,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)を参照してください。 SPF レコードを検証するには、次の[SPF 検証ツールのいずれかを使用できます](../setup/domains-faq.yml)。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](../../enterprise/external-domain-name-system-records.md)を参照してください。 SPF レコードを検証するには、次のいずれかの[SPF 検証ツールを使用できます](../setup/domains-faq.yml)。 
   
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [リソース **] ページで** 、[ホストゾーン] **を選択します**。
+2. [リソース] **ページで** 、[ホストゾーン] **を選択します**。
     
-3. [ **ホストゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
+3. [ホスト **ゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
     
 4. TXT レコード **セットを** 選択します。 
     
@@ -201,9 +201,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [リソース **] ページで** 、[ホストゾーン] **を選択します**。
+2. [リソース] **ページで** 、[ホストゾーン] **を選択します**。
     
-3. [ **ホストゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
+3. [ホスト **ゾーン] ページ** の [ **ドメイン** 名] 列で、編集するドメインの名前を選択します。 
     
 4. [レコード **セットの作成] を選択します**。
     
@@ -213,9 +213,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     [ **Type**] と [ **Routing Policy**] の値をドロップダウン リストから選びます。 
     
-    |**名前**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**名前**|**型**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls|SRV - サービス ロケータ|No|300|100 1 443 sipdir.online.lync.com. **この値はピリオド (.) で終わる必要があります。**><br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |Simple|
+    |_sip._tls|SRV - サービス ロケータ|No|300|100 1 443 sipdir.online.lync.com. **この値は、ピリオド (.) で終了する必要があります。**><br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |Simple|
     |_sipfederationtls._tcp|SRV - サービス ロケータ|No|300|100 1 5061 sipfed.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません**<br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |シンプル|
    
     ![AWS-BP-Configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
@@ -226,8 +226,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 7. 他の SRV レコードを追加します。
     
-    [**ホストゾーン**] ページで、[レコード セットの作成] を選択し、表の次の行の値を使用してレコードを作成し、[作成] を再び選択してレコードを完成します。 
+    [ホスト **ゾーン] ページ** で、[レコード セットの作成] を選択し、テーブルの次の行の値を使用してレコードを作成し、もう一度 [**作成**] を選択してそのレコードを完了します。 
     
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
-  

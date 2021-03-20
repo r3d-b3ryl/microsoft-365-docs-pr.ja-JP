@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループについて説明します。
-ms.openlocfilehash: 75bc743ed8f1965d0ed8a1967e6eac1bd6e0178b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 18cb37a4aae7a163d2e198194251abc727b48848
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453683"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910608"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -45,7 +45,7 @@ Microsoft 365 グループは、Microsoft 365 全体のすべてのチームワ�
 
 Microsoft 365 グループでは、これらの各リソースに手動でアクセス許可を割り当てる必要はありません。 グループにユーザーを追加すると、必要なアクセス許可が自動的に付与されます。
 
-グループの作成を特定のユーザー セットに制限しない限り、任意のユーザー [がグループを作成できます](manage-creation-of-groups.md)。 グループの作成を制限すると、グループを作成できないユーザーは SharePoint サイト、Planners、またはチームを作成できません。 これらのサービスでは、作成するユーザーがグループを作成できる必要があります。 ユーザーは、グループのメンバーである限り、Planner でのタスクの作成や Teams チャットの使用など、グループ アクティビティに参加できます。
+グループの作成を特定のユーザー セットに制限しない限り、任意のユーザー [がグループを作成できます](../../solutions/manage-creation-of-groups.md)。 グループの作成を制限すると、グループを作成できないユーザーは SharePoint サイト、Planners、またはチームを作成できません。 これらのサービスでは、作成するユーザーがグループを作成できる必要があります。 ユーザーは、グループのメンバーである限り、Planner でのタスクの作成や Teams チャットの使用など、グループ アクティビティに参加できます。
 
 グループの役割は次のとおりです。
 
@@ -57,17 +57,17 @@ Microsoft 365 管理センターでグループを作成および管理できる
 
 管理者は次のことが可能です。
 
-- [グループを作成できるユーザーの指定](manage-creation-of-groups.md)
-- [組織内のグループの名前付けポリシーの作成](groups-naming-policy.md)
-- [グループを作成するときに使用するドメインの選択](choose-domain-to-create-groups.md)
+- [グループを作成できるユーザーの指定](../../solutions/manage-creation-of-groups.md)
+- [組織内のグループの名前付けポリシーの作成](../../solutions/groups-naming-policy.md)
+- [グループを作成するときに使用するドメインの選択](../../solutions/choose-domain-to-create-groups.md)
 - [グループへのゲスト アクセスの管理](manage-guest-access-in-groups.md)
 - [削除したグループの復元](restore-deleted-group.md) (削除から 30 日以内)
 
-Microsoft 365 グループのライフサイクルを管理するためのより自動化された方法が必要な場合は、有効期限ポリシーを使用して、特定の時間間隔でグループを期限切れにできます。 グループの所有者は、グループの有効期限の 30、15、および 1 日前にメールを受け取り、必要に応じてグループを更新できます。 「Microsoft [365 グループの有効期限ポリシー」を参照してください](office-365-groups-expiration-policy.md)。
+Microsoft 365 グループのライフサイクルを管理するためのより自動化された方法が必要な場合は、有効期限ポリシーを使用して、特定の時間間隔でグループを期限切れにできます。 グループの所有者は、グループの有効期限の 30、15、および 1 日前にメールを受け取り、必要に応じてグループを更新できます。 「Microsoft [365 グループの有効期限ポリシー」を参照してください](../../solutions/microsoft-365-groups-expiration-policy.md)。
 
-グループは、Microsoft 365 管理センターから、または [PowerShell を使用](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)して管理できます。
+グループは、Microsoft 365 管理センターから、または [PowerShell を使用](../../enterprise/manage-microsoft-365-groups-with-powershell.md)して管理できます。
 
-大企業や企業など、多くのユーザーを持っている場合は、さまざまな目的でグループを作成するユーザーが多い場合があります。 ベスト プラクティスについては [、「Microsoft 365 グループのガバナンスの計画」を参照することを強](plan-for-groups-governance.md) くお勧めします。
+大企業や企業など、多くのユーザーを持っている場合は、さまざまな目的でグループを作成するユーザーが多い場合があります。 ベスト プラクティスについては [、「Microsoft 365 グループのガバナンスの計画」を参照することを強](../../solutions/collaboration-governance-overview.md) くお勧めします。
 
 ## <a name="group-limits"></a>グループの制限
 
@@ -100,14 +100,14 @@ Microsoft 365 グループには、次の制限が適用されます。
 > [!IMPORTANT]
 > 現在分類ラベルを使用している場合、感度ラベルが有効になると、グループを作成するユーザーは使用できなくなりました。 
 
-感度ラベルの作成、管理、および使用の詳細については、「感度ラベルを使用して [Microsoft Teams、Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)グループ、および SharePoint サイトのコンテンツを保護する」を参照してください。
+感度ラベルの作成、管理、および使用の詳細については、「感度ラベルを使用して [Microsoft Teams、Microsoft 365](../../compliance/sensitivity-labels-teams-groups-sites.md)グループ、および SharePoint サイトのコンテンツを保護する」を参照してください。
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>グループが含まれる Microsoft 365 プラン
 
 Exchange Online と SharePoint Online を持つ Microsoft 365 サブスクリプションは、グループをサポートします。 これには、Business Essentials および Business Premium プラン、および Enterprise E1、E3、および E5 プランが含まれます。 グループは、グループを作成するユーザー (グループの "開催者" とも呼ばれる) のライセンスを引き受けます。 開催者がグループに必要な機能に対して適切なライセンスを持っている限り、そのライセンスはグループに伝達されます。
 
 > [!NOTE]
-> Microsoft 365 サービス ファミリとプランの詳細については [、「Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)プラン オプション」を参照してください。
+> Microsoft 365 サービス ファミリとプランの詳細については [、「Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)プラン オプション」を参照してください。
 
 Exchange 専用プランがある場合でも、Outlook でグループの共有受信トレイと共有予定表機能を取得できますが、ドキュメント ライブラリ、Planner、その他の機能は取得できません。
 
@@ -123,8 +123,8 @@ Microsoft 365 グループは Azure Active Directory で動作します。 取�
 
 [配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 
-[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[PowerShell を使用して Microsoft 365 グループを管理する](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
-[SharePoint Online の制限](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint Online の制限](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[Microsoft Stream のグループとチャネルを整理する](https://docs.microsoft.com/stream/groups-channels-organization)
+[Microsoft Stream のグループとチャネルを整理する](/stream/groups-channels-organization)

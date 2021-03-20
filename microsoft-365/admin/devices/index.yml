@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: デバイスとアプリデータを保護および管理する
-summary: これらのリソースをチェックして、管理者がデバイスとアプリのデータ管理方法を選択できるようにします。
+title: デバイスとアプリ データの保護と管理
+summary: 管理者がデバイスとアプリのデータ管理方法を選ぶのに役立つリソースを確認してください。
 metadata:
-  title: デバイスとアプリデータを保護および管理する
-  description: デバイスとアプリデータを管理および保護する
+  title: デバイスとアプリ データの保護と管理
+  description: デバイスとアプリ データの管理と保護
   ms.service: O365-administration
   ms.topic: landing-page
   author: Sirkkuw
@@ -11,58 +11,58 @@ metadata:
   ms.date: 09/09/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: a70d8471d8344f7bf479e050c59d6c6b3d97f5fe
-  ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+  ms.openlocfilehash: 2b15d19025f42db0b4f79adb6f4156f7a115f227
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/06/2020
-  ms.locfileid: "48930275"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50910440"
 landingContent:
-- title: 異なる MDM および MAM メソッド
+- title: MDM メソッドと MAM メソッドの違い
   linkLists:
   - linkListType: overview
     links:
     - text: デバイスとアプリのデータ保護オプションを確認する
       url: choose-device-security.md
-- title: Microsoft Intune を使用してデバイスとアプリデータを管理する
+- title: Microsoft Intune でデバイスとアプリ データを管理する
   linkLists:
   - linkListType: overview
     links:
     - text: デバイス登録の概要
-      url: https://docs.microsoft.com/mem/intune/enrollment/device-enrollment
+      url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
-    - text: Windows 10 デバイスの自動登録をセットアップする
-      url: https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment
-    - text: Android の登録をセットアップする
-      url: https://docs.microsoft.com/mem/intune/enrollment/android-enroll
-    - text: IOS/iPadOS 登録をセットアップする
-      url: https://docs.microsoft.com/mem/intune/enrollment/ios-enroll
-- title: Microsoft 365 Business Premium を使用してデバイスとアプリデータを管理する
+    - text: Windows 10 デバイスの自動登録を設定する
+      url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
+    - text: Android 登録を設定する
+      url: /mem/intune/enrollment/android-enroll
+    - text: iOS/iPadOS 登録のセットアップ
+      url: /mem/intune/enrollment/ios-enroll
+- title: Microsoft 365 Business Premium を使用してデバイスとアプリ データを管理する
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: アプリとデバイスの managements ポリシーを表示および管理する
+    - text: アプリとデバイスの管理ポリシーの表示と管理
       url: ../../business/view-policies-and-devices.md
     - text: デバイスから会社のデータを削除する
       url: ../../business/remove-company-data.md
-    - text: Windows デバイスを出荷時の設定にリセットする
+    - text: Windows デバイスを工場出荷時の設定にリセットする
       url: ../../business/reset-devices-to-factory-settings.md
-- title: Microsoft 365 for enterprise を使用してデバイスとアプリデータを管理する
+- title: Microsoft 365 for enterprise でデバイスとアプリ データを管理する
   linkLists:
   - linkListType: overview
     links:
     - text: Microsoft 365 for enterprise の概要
       url: ../../enterprise/microsoft-365-overview.md
-    - text: デバイス管理のためのロードマップ-エンタープライズ向け Microsoft 365
+    - text: Microsoft 365 for enterprise のデバイス管理のロード マップ
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
-- title: 基本的なモビリティとセキュリティを使用してデバイスとアプリデータを管理する
+- title: 基本モビリティとセキュリティを使用してデバイスとアプリ データを管理する
   linkLists:
   - linkListType: overview
     links:
     - text: 基本的なモビリティとセキュリティの概要
       url: ../basic-mobility-security/overview.md
-    - text: 基本的なモビリティとセキュリティを設定する
+    - text: 基本モビリティとセキュリティのセットアップ
       url: ../basic-mobility-security/set-up.md
     - text: 基本的なモビリティとセキュリティの機能
       url: ../basic-mobility-security/capabilities.md

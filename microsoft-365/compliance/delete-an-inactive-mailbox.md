@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 非アクティブなメールボックスの内容を保持する必要がなくなった場合は、非アクティブなメールボックスを完全に削除できます。
-ms.openlocfilehash: d5acccbf37ee5b6958d282de14edafc0b9b00182
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 94a20bee1ca3d11a193a25efeb6d73f356e1d58d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717576"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909927"
 ---
 # <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 
@@ -36,7 +36,7 @@ ms.locfileid: "50717576"
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する前に
 
-- 非アクティブなメールボックスから訴訟ホールドを削除するには、Exchange Online PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。 詳しい手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+- 非アクティブなメールボックスから訴訟ホールドを削除するには、Exchange Online PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 - 非アクティブなメールボックスの内容は、ホールドを解除して、非アクティブなメールボックスを削除する前に別のメールボックスにコピーできます。 詳細については [、「365 で非アクティブなメールボックスを復元するOfficeを参照してください](restore-an-inactive-mailbox.md)。
 
@@ -116,7 +116,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>特定の場所保持ポリシーから非アクティブなメールボックスを削除する
 
-コンプライアンス センター [PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) のセキュリティ &コマンドを実行して、非アクティブなメールボックスを明示的な保持ポリシーから削除します。
+コンプライアンス センター [PowerShell](/powershell/exchange/connect-to-scc-powershell) のセキュリティ &コマンドを実行して、非アクティブなメールボックスを明示的な保持ポリシーから削除します。
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -AddExchangeLocationException <identity of inactive mailbox>
@@ -204,7 +204,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - **非アクティブなメールボックスは、回復可能な削除によって削除されたメールボックスの一種です。** Exchange Onlineで、回復可能な削除によって削除されたメールボックスは、メールボックスが削除されてはいるものの、特定の保持期間内であれば回復することができます。Exchange Online で回復可能な削除によって削除されたメールボックスの保存期間は 30 日です。つまり、回復可能な削除によって削除されてから 30 日以内なら、メールボックスを復元できます。30 日が経過すると、回復可能な削除によって削除されたメールボックスは完全削除のマークが付けられ、回復できなくなります。
 
@@ -212,7 +212,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
 
 - **ホールドを解除した直後に、非アクティブなメールボックスは完全に削除されますか。** 非アクティブなメールボックスが回復可能な削除によって削除された日付が 30 日より前であっても、ホールドを解除するとすぐにメールボックスが完全に削除されるということはありません。メールボックスに完全に削除するようマークが付けられ、次に処理されるときに削除されます。
 
-- **回復可能な削除によって削除されたメールボックスの保持期間は非アクティブなメールボックスにどのように影響しますか。** 非アクティブなメールボックスが回復可能な削除によって削除された日付が、ホールドが解除された日付からさかのぼって 30 日目よりも前である場合は、メールボックスに完全削除のマークが付けられます。 ただし、非アクティブなメールボックスの回復可能な削除によって削除された日から 30 日が経過しないうちにホールドを解除した場合は、回復可能な削除によって削除されたメールボックスの保持期間内であれば、メールボックスを回復することが可能です。 詳細については [、「Exchange Online でユーザー メールボックスを削除または復元する」を参照してください](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes)。 回復可能な削除済みメールボックスの保持期間が経過した後、非アクティブなメールボックスを回復する手順に従う必要があります。 詳細については、「365 で非アクティブなメールボックスを [回復するOfficeを参照してください](recover-an-inactive-mailbox.md)。
+- **回復可能な削除によって削除されたメールボックスの保持期間は非アクティブなメールボックスにどのように影響しますか。** 非アクティブなメールボックスが回復可能な削除によって削除された日付が、ホールドが解除された日付からさかのぼって 30 日目よりも前である場合は、メールボックスに完全削除のマークが付けられます。 ただし、非アクティブなメールボックスの回復可能な削除によって削除された日から 30 日が経過しないうちにホールドを解除した場合は、回復可能な削除によって削除されたメールボックスの保持期間内であれば、メールボックスを回復することが可能です。 詳細については [、「Exchange Online でユーザー メールボックスを削除または復元する」を参照してください](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes)。 回復可能な削除済みメールボックスの保持期間が経過した後、非アクティブなメールボックスを回復する手順に従う必要があります。 詳細については、「365 で非アクティブなメールボックスを [回復するOfficeを参照してください](recover-an-inactive-mailbox.md)。
 
 - **ホールドを解除した後、どうすれば非アクティブなメールボックスの情報を表示できますか。** 保留リストが削除され、非アクティブなメールボックスが削除されたメールボックスに戻された後 **、Get-Mailbox** コマンドレットで *InactiveMailboxOnly* パラメーターを使用しても、そのメールボックスは返されません。 ただし、 **Get-Mailbox -SoftDeletedMailbox** コマンドを使用して、メールボックスの情報を表示できます。 たとえば、次のように入力します。
 

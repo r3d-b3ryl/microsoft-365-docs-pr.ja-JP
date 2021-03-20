@@ -1,5 +1,5 @@
 ---
-title: Microsoft 向け Names.co.uk DNS レコードを作成する
+title: Microsoft の DNS レコード Names.co.uk 作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
-description: ドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードを microsoft Names.co.ukセットアップする方法について説明します。
-ms.openlocfilehash: 51dc9b3271468d42e82f98a1b85de5104416b015
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法については、Microsoft Names.co.uk 説明します。
+ms.openlocfilehash: ddd7286d983a0f180c9aefdbf5218eb9765c8669
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657817"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910044"
 ---
-# <a name="create-dns-records-at-namescouk-for-microsoft"></a>Microsoft 向け Names.co.uk DNS レコードを作成する
+# <a name="create-dns-records-at-namescouk-for-microsoft"></a>Microsoft の DNS レコード Names.co.uk 作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。 
   
 使用している DNS ホスティング プロバイダーが Names.co.uk の場合は、この記事に記載された手順に従って、ドメインの確認とメールや Skype for Business Online などの DNS レコードのセットアップを行います。
     
-これらのレコードを Names.co.ukすると、ドメインは Microsoft サービスで動作する設定に設定されます。
+これらのレコードを追加すると、Names.co.uk Microsoft サービスを使用するためにドメインが設定されます。
   
 
   
@@ -63,7 +63,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     (ドロップダウン リストから [**Type**] の値を選びます。) 
     
-    (行を追加する必要がある場合は **、[A/CNAME レコードの追加 (+)**] を選択します)。
+    (行を追加する必要がある場合は **、[A/CNAME RECORDS (+)** の追加] を選択します。
     
     (下へスクロールしなければならないことがあります。)
         
@@ -121,7 +121,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**ホスト名**|**Priority**|**Result**|
     |:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> Microsoft アカウント  *\<domain-key\>*  から取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |(このフィールドは空のままにします。)  <br/> |1  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> Microsoft アカウント  *\<domain-key\>*  から取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-Configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
@@ -158,7 +158,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (ドロップダウン リストから [**Type**] の値を選びます。) 
     
-    (行を追加する必要がある場合は **、[A/CNAME レコードの追加 (+)**] を選択します)。
+    (行を追加する必要がある場合は **、[A/CNAME RECORDS (+)** の追加] を選択します。
     
     (下へスクロールしなければならないことがあります。)
     
@@ -180,7 +180,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。
   
 1. まず、[このリンク](https://account.names.co.uk/dashboard#/)を使って Names.co.uk でドメイン ページにアクセスします。最初にログインするように求められます。
     
@@ -192,7 +192,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. [**アカウントの DNS ゾーン**] ページの [ドメイン名] 列で、更新するドメインの名前を選択します。 
+3. [アカウント **の DNS ゾーン]** ページの [ドメイン名] **列で、** 更新するドメインの名前を選択します。 
     
     ![NamesUK-BP-Configure-1-2-1](../../media/20254eec-6952-47ba-b12b-da32860ee7ef.png)
   
@@ -200,7 +200,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (ドロップダウン リストから [**Type**] の値を選びます。) 
     
-    (行を追加する必要がある場合は **、[A/CNAME レコードの追加 (+)**] を選択します)。
+    (行を追加する必要がある場合は **、[A/CNAME RECORDS (+)** の追加] を選択します。
     
     (下へスクロールしなければならないことがあります。)
     
@@ -235,8 +235,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Name**|**Priority**|**Weight**|**Port**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-Configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
@@ -248,4 +248,3 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
-  

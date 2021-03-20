@@ -1,5 +1,5 @@
 ---
-title: eNomCentral で Microsoft 用の DNS レコードを作成する
+title: Microsoft の eNomCentral で DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
-description: eNomCentral for Microsoft でドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: eNomCentral for Microsoft のドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
+ms.openlocfilehash: 528659667ee062c8cf767bed0989558020032924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658113"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910368"
 ---
-# <a name="create-dns-records-at-enomcentral-for-microsoft"></a>eNomCentral で Microsoft 用の DNS レコードを作成する
+# <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Microsoft の eNomCentral で DNS レコードを作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。
 
 使用している DNS ホスティング プロバイダーが eNomCentral の場合は、この記事に示す手順に従い、ドメインを確認して、メールや Skype for Business Online などの DNS レコードを設定します。
 
-これらのレコードを eNomCentral で追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
+eNomCentral でこれらのレコードを追加すると、ドメインが Microsoft サービスで動作するために設定されます。
 
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。
@@ -63,15 +63,15 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
 
-   ドロップダウン リスト **から [** レコードの種類] の値を選択します。
+   ドロップダウン リスト **から [レコード** の種類] の値を選択します。
 
-   |ホスト名|Record Type|アドレス|
+   |ホスト名|Record Type|Address|
    |---|---|---|
    |@|TXT|MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|
 
    ![eNom-BP-Verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
 
-5. [保存] **を選択します**。
+5. [保存 **] を選択します**。
 
    ![eNom-BP-Verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
 
@@ -115,13 +115,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 5. In the boxes for the new record, type or copy and paste the values from the following table.
 
-   |ホスト名|アドレス|Pref|
+   |ホスト名|Address|Pref|
    |---|---|---|
-   |@| *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|10   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。|
+   |@| *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|10    <br/> 優先度の詳細については、「[MX 優先度とは何か](../setup/domains-faq.yml)」を参照してください。|
 
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
-6. [保存] **を選択します**。
+6. [保存 **] を選択します**。
 
    ![eNom-BP-Configure-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
 
@@ -129,7 +129,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
    ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
 
-8. Select **delete checked**.
+8. [削除 **] チェック ボックスをオンにします**。
 
    ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
 
@@ -156,9 +156,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 5. 6 つの新規レコードのボックスに次の値を入力するか、コピーして貼り付けます。
 
-   ドロップダウン リスト **から [** レコードの種類] の値を選択します。
+   ドロップダウン リスト **から [レコード** の種類] の値を選択します。
 
-   |ホスト名|Record Type|アドレス|
+   |ホスト名|Record Type|Address|
    |---|---|---|
    |autodiscover|CNAME (Alias)|autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません**|
    |sip|CNAME (Alias)|sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません**|
@@ -168,7 +168,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
 
-6. [保存] **を選択します**。
+6. [保存 **] を選択します**。
 
    ![eNom-BP-Configure-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
 
@@ -176,7 +176,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。
 
 次の手順を実行するか、[ビデオ (5 分 12 秒から開始) を参照](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)してください。
 
@@ -194,15 +194,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
 
-   ドロップダウン リスト **から [** レコードの種類] の値を選択します。
+   ドロップダウン リスト **から [レコード** の種類] の値を選択します。
 
-   |ホスト名|Record Type|アドレス|
+   |ホスト名|Record Type|Address|
    |---|---|---|
    |@|TXT|v=spf1 include:spf.protection.outlook.com -all  <br/>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。|
 
    ![eNom-BP-Configure-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
 
-5. [保存] **を選択します**。
+5. [保存 **] を選択します**。
 
    ![eNom-BP-Configure-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
 
@@ -223,16 +223,16 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. 新しい行の右側 **で、[SRV** または **SPF レコードの追加] を選択します**。
+4. 新しい行の右側 **にある [SRV** または **SPF レコードの追加] を選択します**。
 
    ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
 
 5. 2 つの新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
 
-   |サービス|プロトコル|Priority|太さ|ポート|Target (Hostname)|
+   |サービス|プロトコル|Priority|太さ|ポート|ターゲット (ホスト名)|
    |---|---|---|---|---|---|
-   |_sip|_tls|100|1 |443|sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません**|
-   |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません**|
+   |_sip|_tls|100|1|443|sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません**|
+   |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません**|
 
    ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 

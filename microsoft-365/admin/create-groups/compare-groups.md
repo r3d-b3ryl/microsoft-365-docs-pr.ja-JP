@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 使用可能なグループの種類について説明します。
-ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 8565b567706a70bb014fab42b23e9c55fb0efc45
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727249"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908748"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
@@ -45,19 +45,19 @@ Microsoft 365 グループは、社内外のユーザー間での共同作業に
 
 [管理者によって有効にされている](manage-guest-access-in-groups.md)限り、組織の外部のユーザーをグループに追加できます。 外部の送信者がグループのメール アドレスにメールを送信できるようにすることもできます。
 
-Microsoft 365 グループは [Azure Active Directory の動的メンバーシップ用に構成でき](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)、部署、場所、役職などのユーザー属性に基づいてグループ メンバーを自動的に追加または削除できます。
+Microsoft 365 グループは [Azure Active Directory の動的メンバーシップ用に構成でき](/azure/active-directory/users-groups-roles/groups-change-type)、部署、場所、役職などのユーザー属性に基づいてグループ メンバーを自動的に追加または削除できます。
 
 Microsoft 365 グループには、Outlook for iOS や Outlook for Android などのモバイル アプリからアクセスできます。
 
-グループ メンバーは、[管理者によって有効にされている](allow-members-to-send-as-or-send-on-behalf-of-group.md)場合、グループのメール アドレスとして送信したり、グループのメール アドレスの代わりに送信したりできます。
+グループ メンバーは、[管理者によって有効にされている](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)場合、グループのメール アドレスとして送信したり、グループのメール アドレスの代わりに送信したりできます。
 
 ## <a name="distribution-groups"></a>配布グループ
 
-[配布グループ](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)は、ユーザーのグループに通知を送信するのに使用されます。 管理者によって有効にされている場合、外部メールを受信できます。
+[配布グループ](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)は、ユーザーのグループに通知を送信するのに使用されます。 管理者によって有効にされている場合、外部メールを受信できます。
 
 配布グループは、"建物 A のユーザー" や "Contoso の全員" など、一連のユーザーに情報をブロードキャストする必要がある状況に最適です。
 
-配布グループは、[Microsoft 365 グループ](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)にアップグレードできます。
+配布グループは、[Microsoft 365 グループ](../manage/upgrade-distribution-lists.md)にアップグレードできます。
 
 ## <a name="security-groups"></a>セキュリティ グループ
 
@@ -65,7 +65,7 @@ Microsoft 365 グループには、Outlook for iOS や Outlook for Android な�
 
 セキュリティ グループには、ユーザーまたはデバイスを含めることができます。 デバイス用のセキュリティ グループの作成は、Intune などのモバイル デバイス管理サービスで使用できます。
 
-セキュリティ グループは [Azure Active Directory の動的メンバーシップ用に構成でき](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)、部署、場所、役職などのユーザー属性、またはオペレーティング システムのバージョンなどのデバイス属性に基づいてグループ メンバーまたはデバイスを自動的に追加または削除できます。
+セキュリティ グループは [Azure Active Directory の動的メンバーシップ用に構成でき](/azure/active-directory/users-groups-roles/groups-change-type)、部署、場所、役職などのユーザー属性、またはオペレーティング システムのバージョンなどのデバイス属性に基づいてグループ メンバーまたはデバイスを自動的に追加または削除できます。
 
 ## <a name="mail-enabled-security-groups"></a>メールが有効なセキュリティ グループ
 

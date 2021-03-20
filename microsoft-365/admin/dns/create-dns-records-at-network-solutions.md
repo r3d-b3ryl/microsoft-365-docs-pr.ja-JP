@@ -1,5 +1,5 @@
 ---
-title: Microsoft ネットワーク ソリューションで DNS レコードを作成する
+title: Microsoft のネットワーク ソリューションで DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: Network Solutions for Microsoft でドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 9cb403bb8b469f2d7f4e6138ba5833120ea53585
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Microsoft のネットワーク ソリューションで、ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
+ms.openlocfilehash: f25e21037695c99489adc9038bf70629a103ec7a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657793"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910140"
 ---
-# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Microsoft ネットワーク ソリューションで DNS レコードを作成する
+# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Microsoft のネットワーク ソリューションで DNS レコードを作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。 
   
@@ -46,7 +46,7 @@ ms.locfileid: "49657793"
     
 - [Microsoft で必要な 2 つの SRV レコードを追加する](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-ネットワーク ソリューションでこれらのレコードを追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
+ネットワーク ソリューションでこれらのレコードを追加すると、Microsoft サービスを使用するためにドメインがセットアップされます。
   
 
   
@@ -66,7 +66,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
-    > [ログイン] ボタンを **選択する** 前に、[ログイン先] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
+    > [ログイン] ボタンを **選択する前** に、[ログイン先:] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
   
     ![[Manage My Domain Names] を選択して、Network Solutions にログインします](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -74,19 +74,19 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![自分のドメインのチェック ボックスを選択します](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Select **Edit DNS**.
+3. [DNS **の編集] を選択します**。
     
-    ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![[DNS の編集] を選択します。](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Select **Manage Advanced DNS Records**.
+4. [高度 **な DNS レコードの管理] を選択します**。
     
     (下へスクロールしなければならないことがあります。)
     
-    ![Select Manage Advanced DNS Records](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![[高度な DNS レコードの管理] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. テキスト **(TXT レコード) セクションまで** 下にスクロールし、[EDIT **TXT Records] を選択します**。
+5. [テキスト **(TXT レコード)] セクションまで** 下にスクロールし、[TXT レコードの編集 **] を選択します**。
     
-    ![Select Edit TXT Records](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![[TXT レコードの編集] を選択する](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
@@ -96,13 +96,13 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
        
     ![新しいレコードのボックスに値を入力または貼り付ける](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. [続行] **を選択します**。
+7. [続行 **] を選択します**。
     
-    ![[続行] を選択する](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
+    ![[続行] を選択します。](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
 8. [変更 **の保存] を選択します**。
     
-    ![[変更の保存] を選択する](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
+    ![[変更の保存] を選択します。](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -135,7 +135,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
-    > [ログイン] ボタンを **選択する** 前に、[ログイン先] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
+    > [ログイン] ボタンを **選択する前** に、[ログイン先:] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
   
     ![[Manage My Domain Names] を選択して、Network Solutions にログインします](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -143,17 +143,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![自分のドメインのチェック ボックスを選択します](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Select **Edit DNS**.
+3. [DNS **の編集] を選択します**。
     
-    ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![[DNS の編集] を選択します。](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Select **Manage Advanced DNS Records**.
+4. [高度 **な DNS レコードの管理] を選択します**。
     
     (下へスクロールしなければならないことがあります。)
     
-    ![Select Manage Advanced DNS Records](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![[高度な DNS レコードの管理] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. [メール サーバー **(MX レコード)** ] セクションまで下にスクロールし、[MX レコードの編集] **を選択します**。
+5. [メール サーバー **(MX レコード)] セクションまで** 下にスクロールし、[MX レコードの編集 **] を選択します**。
     
     ![[MX レコードの編集] を選択する](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
@@ -161,17 +161,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**[優先度]**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](../setup/domains-faq.yml)」を参照してください。 <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![新しいレコードのボックスに値を入力または貼り付ける](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
-7. [続行] **を選択します**。
+7. [続行 **] を選択します**。
     
-    ![[続行] を選択する](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
+    ![[続行] を選択します。](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
 8. [変更 **の保存] を選択します**。
     
-    ![[変更の保存] を選択する](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
+    ![[変更の保存] を選択します。](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
   
 9. 他の MX レコードがある場合は、レコードごとに [ **Delete**] を選んで他の MX レコードをすべて削除します。 
     
@@ -179,11 +179,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 10. すべて選択されている場合は、[続行] を **選択します**。
     
-    ![[続行] を選択する](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
+    ![[続行] を選択します。](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
   
 11. [変更 **の保存] を選択します**。
     
-    ![[変更の保存] を選択する](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
+    ![[変更の保存] を選択します。](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
@@ -193,7 +193,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
-    > [ログイン] ボタンを **選択する** 前に、[ログイン先] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
+    > [ログイン] ボタンを **選択する前** に、[ログイン先:] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
   
     ![[Manage My Domain Names] を選択して、Network Solutions にログインします](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -201,19 +201,19 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![自分のドメインのチェック ボックスを選択します](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Select **Edit DNS**.
+3. [DNS **の編集] を選択します**。
     
-    ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![[DNS の編集] を選択します。](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Select **Manage Advanced DNS Records**.
+4. [高度 **な DNS レコードの管理] を選択します**。
     
     (下へスクロールしなければならないことがあります。)
     
-    ![Select Manage Advanced DNS Records](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![[高度な DNS レコードの管理] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. [ホスト エイリアス **(CNAME レコード)** ] セクションまで下にスクロールし、[CNAME レコードの編集 **] を選択します**。
+5. [ホスト エイリアス **(CNAME レコード)] セクション** まで下にスクロールし、[CNAME レコードの編集] **を選択します**。
     
-    ![[ホスト エイリアス] で [CNAME レコードの編集] を選択する](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
+    ![[ホスト エイリアス] で [CNAME レコードの編集] を選択します。](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
 6. 4 つの新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
@@ -227,26 +227,26 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![新しいレコードの値を入力または貼り付ける](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. 必要なすべての CNAME レコードを追加した後、[続行] を選択 **します**。
+7. 必要なすべての CNAME レコードを追加した場合は、[続行] を **選択します**。
     
-    ![[続行] を選択する](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
+    ![[続行] を選択します。](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
 8. [変更 **の保存] を選択します**。
     
-    ![[変更の保存] を選択する](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
+    ![[変更の保存] を選択します。](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。 
   
 次の手順を実行するか、[ビデオ (5 分 35 秒から開始) を参照](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)してください。
   
 1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
-    > [ログイン] ボタンを **選択する** 前に、[ログイン先] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
+    > [ログイン] ボタンを **選択する前** に、[ログイン先:] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
   
     ![[Manage My Domain Names] を選択して、Network Solutions にログインします](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -254,19 +254,19 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![自分のドメインのチェック ボックスを選択します](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Select **Edit DNS**.
+3. [DNS **の編集] を選択します**。
     
-    ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![[DNS の編集] を選択します。](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Select **Manage Advanced DNS Records**.
+4. [高度 **な DNS レコードの管理] を選択します**。
     
     (下へスクロールしなければならないことがあります。)
     
-    ![Select Manage Advanced DNS Records](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![[高度な DNS レコードの管理] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. テキスト **(TXT レコード) セクションまで** 下にスクロールし、[EDIT **TXT Records] を選択します**。
+5. [テキスト **(TXT レコード)] セクションまで** 下にスクロールし、[TXT レコードの編集 **] を選択します**。
     
-    ![Select Edit TXT Records under Text](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
+    ![[テキスト] で [TXT レコードの編集] を選択します。](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
 6. 新規レコードのボックスに次の値を入力するか、コピーして貼り付けます。
     
@@ -276,13 +276,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
        
     ![新しいレコードの値を入力または貼り付ける](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
-7. [続行] **を選択します**。
+7. [続行 **] を選択します**。
     
-    ![[続行] を選択する](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
+    ![[続行] を選択します。](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
   
 8. [変更 **の保存] を選択します**。
     
-    ![[変更の保存] を選択する](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
+    ![[変更の保存] を選択します。](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
@@ -292,7 +292,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
-    > [ログイン] ボタンを **選択する** 前に、[ログイン先] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
+    > [ログイン] ボタンを **選択する前** に、[ログイン先:] ドロップダウン リストで [自分のドメイン名の管理 **]** を選択します。 
   
     ![[Manage My Domain Names] を選択して、Network Solutions にログインします](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -300,19 +300,19 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![自分のドメインのチェック ボックスを選択します](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Select **Edit DNS**.
+3. [DNS **の編集] を選択します**。
     
-    ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![[DNS の編集] を選択します。](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Select **Manage Advanced DNS Records**.
+4. [高度 **な DNS レコードの管理] を選択します**。
     
     (下へスクロールしなければならないことがあります。)
     
-    ![Select Manage Advanced DNS Records](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![[高度な DNS レコードの管理] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. [サービス **(SRV Records) ] セクションまで下にスクロールし、[SRV レコード** の編集 **] を選択します**。
+5. [サービス **(SRV レコード)] セクションまで下にスクロールし、[SRV** レコードの編集 **] を選択します**。
     
-    ![[サービス] で [SRV レコードの編集] を選択する](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
+    ![[サービス] で [SRV レコードの編集] を選択します。](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
 6. 2 つの新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
@@ -320,19 +320,18 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Service**|**Protocol**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
        
     ![新しいレコードの値を入力または貼り付ける](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
-7. [続行] **を選択します**。
+7. [続行 **] を選択します**。
     
-    ![[続行] を選択する](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
+    ![[続行] を選択します。](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
   
 8. [変更 **の保存] を選択します**。
     
-    ![[変更の保存] を選択する](../../media/6d323126-0ebe-45ab-8567-c234711d84c7.png)
+    ![[変更の保存] を選択します。](../../media/6d323126-0ebe-45ab-8567-c234711d84c7.png)
   
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
-  

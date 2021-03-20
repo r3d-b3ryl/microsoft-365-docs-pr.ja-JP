@@ -1,5 +1,5 @@
 ---
-title: Microsoft 向け Register.com DNS レコードを作成する
+title: Microsoft 向け DNS レコード Register.com 作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
-description: ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを microsoft Register.comセットアップする方法について説明します。
-ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: ドメインを確認し、電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法については、Microsoft Register.com 説明します。
+ms.openlocfilehash: 439b96ef7ad2fd70b94c3945519d4fa270e43fd2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657594"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910056"
 ---
-# <a name="create-dns-records-at-registercom-for-microsoft"></a>Microsoft 向け Register.com DNS レコードを作成する
+# <a name="create-dns-records-at-registercom-for-microsoft"></a>Microsoft 向け DNS レコード Register.com 作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。 
   
@@ -46,7 +46,7 @@ ms.locfileid: "49657594"
 
 - [Microsoft で必要な 2 つの SRV レコードを追加する](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-これらのレコードを Register.comすると、ドメインは Microsoft サービスで動作する設定に設定されます。
+これらのレコードを追加すると、Register.com Microsoft サービスを使用するためにドメインが設定されます。
   
 
   
@@ -67,11 +67,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
 2. [ **ドメイン**] を選択します。
     
-3. [管理] **を選択します**。
+3. [管理 **] を選択します**。
     
 4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [Advanced **Technical Settings] セクションまで下にスクロール** し **、[Edit TXT Records (SPF) ] を選択します**。
+5. [高度な技術設定 **] セクションまで下にスクロール** し、[TXT レコードの編集 **(SPF) ] を選択します**。
     
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -80,9 +80,9 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     |**Host Name** <br/> |**TXT Record** <br/> |
     |@  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. [続行] **を選択します**。
+7. [続行 **] を選択します**。
     
-8. 次のページで、もう一度 **[続行** ] を選択して変更を確認します。 
+8. 次のページで、[続行] を **再度選択** して変更を確認します。 
     
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -110,21 +110,21 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 2. [ **ドメイン**] を選択します。
     
-3. [管理] **を選択します**。
+3. [管理 **] を選択します**。
     
 4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [Advanced **Technical Settings] セクションまでスクロール** し **、[Edit Mail Exchanger Records] を選択します**。
+5. [高度な技術 **設定] セクションまでスクロール** し、[メール エクスチェンジャー レコードの **編集] を選択します**。
     
     ![[メール エクスチェンジャー レコードの編集] を選択する](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
 6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    (ドロップダウン **リストから** [優先度] の値を選択します)。 
+    (ドロップダウン リスト **から [優先度** ] の値を選択します)。 
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**注: Microsoft アカウントから** 取得\<*domain-key*\> します。 <br> [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**注: Microsoft アカウントから** 取得\<*domain-key*\> します。 <br> [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![テーブルから値をコピーして貼り付ける](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -132,13 +132,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Select each record to delete](../../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
   
-8. [続行] **を選択します**。
+8. [続行 **] を選択します**。
     
-    ![[続行] を選択する](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
+    ![[続行] を選択します。](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
   
-9. 次のページで、もう一度 **[続行] を** 選択して確認し、変更を保存します。 
+9. 次のページで、[続行] を **再度選択** して、変更を確認して保存します。 
     
-    ![[続行] を選択する](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
+    ![[続行] を選択します。](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
@@ -149,17 +149,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 2. [ **ドメイン**] を選択します。
     
-3. [管理] **を選択します**。
+3. [管理 **] を選択します**。
     
 4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [Advanced **Technical Settings] セクションまでスクロール** し **、[Edit Domain Aliases Records] を選択します**。
+5. [高度な技術 **設定] セクションまでスクロール** し、[ドメイン エイリアス レコードの編集] **を選択します**。
     
-    ![[ドメイン エイリアス レコードの編集] を選択する](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
+    ![[ドメイン エイリアス レコードの編集] を選択します。](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
 6. [ドメイン **エイリアスの追加] を選択します**。
     
-    ![[ドメイン エイリアスを追加する] を選択する](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
+    ![[追加のドメイン エイリアスを追加する] を選択します。](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
 7. 必要な CNAME レコードを追加します。
     
@@ -175,13 +175,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
      ![テーブルから DNS 値をコピーして貼り付ける](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
   
-8. 必要なすべての CNAME レコードを追加した後、[続行] を選択 **します**。
+8. 必要なすべての CNAME レコードを追加した場合は、[続行] を **選択します**。
     
-    ![[続行] を選択する](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
+    ![[続行] を選択します。](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
   
-9. 次のページで、もう一度 **[続行] を** 選択して確認し、変更を保存します。 
+9. 次のページで、[続行] を **再度選択** して、変更を確認して保存します。 
     
-    ![[続行] を選択する](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
+    ![[続行] を選択します。](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 <a name="BKMK_add_TXT"> </a>
@@ -195,13 +195,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 2. [ **ドメイン**] を選択します。
     
-3. [管理] **を選択します**。
+3. [管理 **] を選択します**。
     
 4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [Advanced **Technical Settings] セクションまでスクロール** し **、[Edit TXT Records (SPF) ] を選択します**。
+5. [高度な技術 **設定] セクションまでスクロール** し、[TXT レコードの編集 **(SPF) ] を選択します**。
     
-    ![Select Edit TXT Records (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
+    ![[TXT レコードの編集] (SPF) を選択します。](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   
 6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
@@ -209,15 +209,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。  |
    
-     ![テーブルの値をコピーして貼り付ける](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
+     ![テーブルから値をコピーして貼り付ける](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
   
-7. [続行] **を選択します**。
+7. [続行 **] を選択します**。
     
-    ![[続行] を選択する](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
+    ![[続行] を選択します。](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
   
-8. 次のページで、もう一度 **[続行] を** 選択して確認し、変更を保存します。 
+8. 次のページで、[続行] を **再度選択** して、変更を確認して保存します。 
     
-    ![[続行] を選択する](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
+    ![[続行] を選択します。](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
@@ -228,11 +228,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 2. [ **ドメイン**] を選択します。
     
-3. [管理] **を選択します**。
+3. [管理 **] を選択します**。
     
 4. 変更するドメインの名前を含む行を検索します。次に、その行で [管理] を **選択します**。
     
-5. [Advanced **Technical Settings] セクションまでスクロール** し **、[SRV レコードの編集] を選択します**。
+5. [高度な技術 **設定] セクションまでスクロール** し **、[SRV** レコードの編集] を選択します。
     
     ![[SRV レコードの編集] を選択する](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
@@ -240,31 +240,30 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。
     
-    (ドロップダウン **リストから** [優先度] の値を選択します)。 
+    (ドロップダウン リスト **から [優先度** ] の値を選択します)。 
     
     |****Service****|****Proto****|****Name****|****Priority****|****Weight****|****Port****|****Target****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
-    ![テーブルの値をコピーして貼り付ける](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
+    ![テーブルから値をコピーして貼り付ける](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
 7. **[SRV レコードの追加] を選択します**。
     
-    ![[SRV レコードの追加] を選択する](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
+    ![[SRV レコードの追加] を選択します。](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
   
 8. 2 番目の SRV レコードを追加します。
     
     上の表の 2 行目の値を 2 つ目のレコードのボックスに入力するか、コピーして貼り付けます。
     
-9. 両方の SRV レコードを追加した場合は、[続行] を選択 **します**。
+9. 両方の SRV レコードを追加した場合は、[続行] を **選択します**。
     
-    ![[続行] を選択する](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
+    ![[続行] を選択します。](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
   
-10. 次のページで、もう一度 **[続行] を** 選択して確認し、変更を保存します。 
+10. 次のページで、[続行] を **再度選択** して、変更を確認して保存します。 
     
-    ![[続行] を選択する](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
+    ![[続行] を選択します。](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
-  

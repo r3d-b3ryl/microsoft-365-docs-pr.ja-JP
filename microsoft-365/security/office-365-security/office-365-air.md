@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 250fba7bdf89425bce601112c7863eb9d1c952be
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3ba9dd3dac97456479b2191ee7f0eb7d97f79fed
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407446"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909048"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -108,10 +108,10 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 
 アクセス許可は、次の表に示す役割など、特定の役割を通じて付与されます。
 
-|Task|必要な役割|
+|タスク|必要な役割|
 |---|---|
-|AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は [、Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) またはセキュリティ コンプライアンス センター [&割り当てることができます](permissions-in-the-security-and-compliance-center.md)。|
-|自動調査を開始する <p> --- または --- <p> 推奨されるアクションを承認または拒否する|[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)またはセキュリティ コンプライアンス センターで割り当てられた次[&のいずれかを指定します](permissions-in-the-security-and-compliance-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、コンプライアンス センターのセキュリティ & [割り当てられます](permissions-in-the-security-and-compliance-center.md)。 そこに新しい役割グループを作成し、その新しい役割グループに Search and Purge 役割を追加する必要がある場合があります。</li></ul>|
+|AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は [、Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) またはセキュリティ コンプライアンス センター [&割り当てることができます](permissions-in-the-security-and-compliance-center.md)。|
+|自動調査を開始する <p> --- または --- <p> 推奨されるアクションを承認または拒否する|[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)またはセキュリティ コンプライアンス センターで割り当てられた次[&のいずれかを指定します](permissions-in-the-security-and-compliance-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、コンプライアンス センターのセキュリティ & [割り当てられます](permissions-in-the-security-and-compliance-center.md)。 そこに新しい役割グループを作成し、その新しい役割グループに Search and Purge 役割を追加する必要がある場合があります。</li></ul>|
 
 ## <a name="required-licenses"></a>必須のライセンス
 
@@ -128,7 +128,7 @@ microsoft Defender で Office 365 用の AIR 機能を既に使用している�
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター":::
 
-新しいセキュリティ センターと強化されたセキュリティ センターには、Microsoft Defender for Office [365](office-365-atp.md) と Microsoft Defender for Endpoint の AIR 機能が [統合されています](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 これらの更新と改善により、セキュリティ運用チームは、電子メール、コラボレーション コンテンツ、ユーザー アカウント、およびデバイス全体の自動調査と修復アクションに関する詳細を 1 か所で表示できます。
+新しいセキュリティ センターと強化されたセキュリティ センターには、Microsoft Defender for Office [365](office-365-atp.md) と Microsoft Defender for Endpoint の AIR 機能が [統合されています](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 これらの更新と改善により、セキュリティ運用チームは、電子メール、コラボレーション コンテンツ、ユーザー アカウント、およびデバイス全体の自動調査と修復アクションに関する詳細を 1 か所で表示できます。
 
 > [!TIP]
 > 新しい Microsoft 365 セキュリティ センター ( <https://security.microsoft.com> ) は、次のセンターに置き換まれます。
@@ -138,16 +138,16 @@ microsoft Defender で Office 365 用の AIR 機能を既に使用している�
 >
 > URL の変更に加えて、セキュリティ チームにより合理化されたエクスペリエンスを提供するように設計された新しい外観が提供され、1 か所で脅威検出が多く表示されます。
 
-### <a name="what-to-expect"></a>何を期待する
+### <a name="what-to-expect"></a>想定される変化
 
 次の表に、Microsoft Defender 365 の AIR に加わる変更とOffice示します。
 
 |アイテム|何が変わるのか?|
 |---|---|
-|**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
+|**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|
 |**[メール]** タブ|[ **メール]** タブが削除されました。[エンティティ] **タブにアクセス** して、電子メールおよび電子メール クラスターアイテムの一覧を表示します。|
-|**[エンティティ]** タブ|[ **エンティティ] タブ** には、すべての概要ビューを含むタブインタブ スタイルと、エンティティの種類別にフィルター処理する機能があります。 [ **エンティティ] タブには** 、[ **エクスプローラーで開** く] オプションに加えて、Go **ハンティング オプションが追加** されています。 脅威エクスプローラーまたは[高度な検索](threat-explorer.md)を使用[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)して、エンティティと脅威を検索し、結果をフィルター処理できます。|
+|**[エンティティ]** タブ|[ **エンティティ] タブ** には、すべての概要ビューを含むタブインタブ スタイルと、エンティティの種類別にフィルター処理する機能があります。 [ **エンティティ] タブには** 、[ **エクスプローラーで開** く] オプションに加えて、Go **ハンティング オプションが追加** されています。 脅威エクスプローラーまたは[高度な検索](threat-explorer.md)を使用[](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)して、エンティティと脅威を検索し、結果をフィルター処理できます。|
 |**[アクション]** タブ|更新された [ **アクション] タブ** には、[ **保留中** のアクション] タブと [アクションの履歴] **タブが追加** されました。保留中のアクションを選択すると表示されるサイド ウィンドウで、アクションを承認 (または拒否) できます。|
 |**[証拠]** タブ|新しい **[証拠]** タブには、アクションに関連する主要なエンティティの結果が表示されます。 各証拠に関連するアクションは、保留中のアクションを選択するときに開くサイド ウィンドウで承認 (または拒否) できます。|
 |**アクション センター**|更新されたアクション **センター** ( ) は、電子メール、デバイス、および ID 間で保留中のアクションと完了したアクション <https://security.microsoft.com/action-center> をまとめます。 詳細については、「アクション センター」を参照してください。 (詳細については、「アクション センター [」を参照](../mtp/mtp-action-center.md)してください。|

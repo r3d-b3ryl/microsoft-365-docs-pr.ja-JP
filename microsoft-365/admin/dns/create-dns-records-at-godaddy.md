@@ -1,5 +1,5 @@
 ---
-title: GoDaddy で Microsoft 用の DNS レコードを作成する
+title: GoDaddy for Microsoft で DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
-description: ドメインを確認し、GoDaddy for Microsoft でメール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+description: ドメインを確認し、メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法については、GoDaddy for Microsoft をご覧ください。
+ms.openlocfilehash: d0163447abdc7b9fe5afd4f471f24ee09de40d50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126451"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910248"
 ---
-# <a name="create-dns-records-at-godaddy-for-microsoft"></a>GoDaddy で Microsoft 用の DNS レコードを作成する
+# <a name="create-dns-records-at-godaddy-for-microsoft"></a>GoDaddy for Microsoft で DNS レコードを作成する
 
  **探している内容が見つからない場合は、[ドメインに関する FAQ を確認](../setup/domains-faq.yml)** してください。
 
 使用している DNS ホスティング プロバイダーが GoDaddy の場合は、この記事に示す手順に従い、ドメインを確認して、メールや Skype for Business Online などの DNS レコードを設定します。
 
-これらのレコードを GoDaddy で追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
+GoDaddy でこれらのレコードを追加すると、ドメインが Microsoft サービスで動作するために設定されます。
 
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。
@@ -54,7 +54,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. [ **ドメイン] で**、編集するドメインの下の DNS を選択します。
+2. [ **ドメイン] で**、編集するドメインの下にある [DNS] を選択します。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -66,7 +66,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
     |**Record type** |**Host**|**TXT Value**|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT (テキスト)|@|MS=ms *XXXXXXXX*<br>**注**: これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>(ドロップダウン リストから値を選択します。|
+    |TXT (テキスト)|@|MS=ms *XXXXXXXX*<br>**注**: これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>(ドロップダウン リストから値を選択します)。|
 
       ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
@@ -105,7 +105,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. [ **ドメイン] で**、編集するドメインの下の DNS を選択します。
+2. [ **ドメイン] で**、編集するドメインの下にある [DNS] を選択します。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -123,7 +123,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     |**Record type**|**Host**|**Points to**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |1 hour  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](../setup/domains-faq.yml)」を参照してください。 <br/> |1 hour  <br/> |
 
 6. **[保存]** を選択します。
 
@@ -136,7 +136,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. [ **ドメイン] で**、編集するドメインの下の DNS を選択します。
+2. [ **ドメイン] で**、編集するドメインの下にある [DNS] を選択します。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -165,13 +165,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 
 
-6. 6 つの CNAME レコードすべてが作成されるまで、この手順を繰り返して次の CNAME レコードを追加します。
+6. 6 つの CNAME レコードすべてが作成されるまで、次の CNAME レコードを追加するには、次の手順を繰り返します。
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。
 
 以下の手順に従います。
 
@@ -179,7 +179,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. [ **ドメイン] で**、編集するドメインの下の DNS を選択します。
+2. [ **ドメイン] で**、編集するドメインの下にある [DNS] を選択します。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -213,7 +213,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. [ **ドメイン] で**、編集するドメインの下の DNS を選択します。
+2. [ **ドメイン] で**、編集するドメインの下にある [DNS] を選択します。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -229,12 +229,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。
 
-    (Choose the **Record type** and **TTL** values from the drop-down lists.)
+    (ドロップダウン リスト **から [レコードの** 種類] と **[TTL** 値] を選択します)。
 
     |**Record type**|**Name**|**Target**|**Protocol**|**Service**|**Priority**|**Weight**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 hour  <br/> |
-    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 時間  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 時間  <br/> |
 
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 
