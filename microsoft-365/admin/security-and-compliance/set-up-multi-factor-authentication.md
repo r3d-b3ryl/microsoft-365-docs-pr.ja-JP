@@ -23,30 +23,30 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 54c862d8f7c25472d84557e177a9107d2c14d846
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514970"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914464"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
 
 [多要素認証 (MFA) を理解し、Microsoft 365 でサポートされていること](multi-factor-authentication-microsoft-365.md)を理解したら、それを設定し、組織にロールアウトします。
 
 > [!IMPORTANT]
-> 2019 年 10 月 21 日以降にサブスクリプションまたは試用版を購入した場合、サインインすると MFA を要求するメッセージが表示され、[セキュリティの既定](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)の設定は、サブスクリプションに対して自動的に有効になります。
+> 2019 年 10 月 21 日以降にサブスクリプションまたは試用版を購入した場合、サインインすると MFA を要求するメッセージが表示され、[セキュリティの既定](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)の設定は、サブスクリプションに対して自動的に有効になります。
 
 ## <a name="before-you-begin"></a>はじめに
 
 - MFA を管理するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../add-users/about-admin-roles.md)」を参照してください。
 - 従来のユーザーごとの MFA をオンにしている場合は、[従来のユーザーごとの MFA をオフにします](#turn-off-legacy-per-user-mfa)。
-- Windows デバイスで Office 2013 クライアントを使用している場合は、[Office 2013 クライアントの最新のライセンス認証をオンにします](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)。
-- 高度: Active Directory フェデレーション サービス (AD FS) を使用しているサードパーティのディレクトリ サービスがある場合は、Azure MFA Server をセットアップします。 詳細については、「[Azure AD 多要素認証およびサードパーティ製の VPN ソリューションでの高度なシナリオ](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」 を参照してください。
+- Windows デバイスで Office 2013 クライアントを使用している場合は、[Office 2013 クライアントの最新のライセンス認証をオンにします](./enable-modern-authentication.md)。
+- 高度: Active Directory フェデレーション サービス (AD FS) を使用しているサードパーティのディレクトリ サービスがある場合は、Azure MFA Server をセットアップします。 詳細については、「[Azure AD 多要素認証およびサードパーティ製の VPN ソリューションでの高度なシナリオ](/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」 を参照してください。
 
 ## <a name="turn-security-defaults-on-or-off"></a>セキュリティの既定値をオンまたはオフにする
 
-ほとんどの組織では、セキュリティの既定値により、適切なレベルのサインイン セキュリティが提供されます。 詳細については、[「セキュリティの既定値とは?」](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) を参照してください。
+ほとんどの組織では、セキュリティの既定値により、適切なレベルのサインイン セキュリティが提供されます。 詳細については、[「セキュリティの既定値とは?」](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) を参照してください。
 
 サブスクリプションが新しい場合は、セキュリティの既定値が自動的にオンになります。
 
@@ -58,7 +58,7 @@ Azure ポータル内の Azure Active Directory (Azure AD) の **プロパティ
 4. ページの下部で、**[セキュリティの既定値の管理]** を選択します。
 5. セキュリティの規定値を有効にするには **[はい]** を選び、セキュリティの規定値を無効にするには **[いいえ]** を選んで、**[保存]** を選択します。
 
-[条件付きアクセスのベースライン ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection) を使用している場合は、セキュリティの既定値の使用に移行する前に、オフにするように求めるメッセージが表示されます。
+[条件付きアクセスのベースライン ポリシー](/azure/active-directory/conditional-access/concept-baseline-protection) を使用している場合は、セキュリティの既定値の使用に移行する前に、オフにするように求めるメッセージが表示されます。
 
 1. [条件付きアクセス ポリシー ページ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) へ移動します。
 2. 各ベースライン ポリシーで [**オン**] を選択し、 [**ポリシーを有効にする**] を [**オフ**] に設定します。
@@ -73,9 +73,9 @@ Azure ポータル内の Azure Active Directory (Azure AD) の **プロパティ
 > [!IMPORTANT]
 > 条件付きアクセス ポリシーを有効にする前に、ユーザーごとの MFA とセキュリティの既定値をオフにします。
 
-条件付きアクセスを利用できるのは、Azure AD Premium P1 を購入したお客様、またはこの機能を含むライセンス (Microsoft 365 Business Premium、Microsoft 365 E3 など) を購入したお客様です。 詳細については、[「条件付きアクセス ポリシーを作成する」](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa) を参照してください。
+条件付きアクセスを利用できるのは、Azure AD Premium P1 を購入したお客様、またはこの機能を含むライセンス (Microsoft 365 Business Premium、Microsoft 365 E3 など) を購入したお客様です。 詳細については、[「条件付きアクセス ポリシーを作成する」](/azure/active-directory/authentication/tutorial-enable-azure-mfa) を参照してください。
 
-リスクベースの条件付きアクセスは、Azure AD Premium P2 ライセンスを通して、またはこの機能を含むライセンス (Microsoft 365 E5 など) を通じて利用できます。 詳細については、[「リスクベースの条件付きアクセス」](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) を参照してください。
+リスクベースの条件付きアクセスは、Azure AD Premium P2 ライセンスを通して、またはこの機能を含むライセンス (Microsoft 365 E5 など) を通じて利用できます。 詳細については、[「リスクベースの条件付きアクセス」](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) を参照してください。
 
 Azure AD P1 および P2 の詳細については、「[Azure Active Directory の料金](https://azure.microsoft.com/pricing/details/active-directory/)」をご覧ください。
 
@@ -104,6 +104,6 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 
 ## <a name="related-topics"></a>関連トピック
 
-[ビデオ: 多要素認証をオンにする](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+[ビデオ: 多要素認証をオンにする](../../business-video/turn-on-mfa.md)
 
-[ビデオ: スマートフォンの多要素認証をオンにする](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
+[ビデオ: スマートフォンの多要素認証をオンにする](../../business-video/set-up-mfa.md)

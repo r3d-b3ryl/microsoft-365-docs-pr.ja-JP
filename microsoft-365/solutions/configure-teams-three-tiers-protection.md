@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: セキュリティと共同作業の簡便さのバランスを取りながら、3 つの階層の保護を使用して、ファイル共有セキュリティを強化するために、Teams を構成する方法について説明します。
-ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509244"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916216"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>3 層の保護を使ってチームを構成する
 
@@ -42,7 +42,7 @@ ms.locfileid: "50509244"
 
 - 高機密の保護
 
-以上の層と各層に推奨される機能については、「[エンタープライズ アーキテクト向け Microsoft クラウドのイラスト](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)」をご覧ください
+以上の層と各層に推奨される機能については、「[エンタープライズ アーキテクト向け Microsoft クラウドのイラスト](./cloud-architecture-models.md)」をご覧ください
 
 
 ## <a name="three-tiers-at-a-glance"></a>3 層の概要
@@ -51,7 +51,7 @@ ms.locfileid: "50509244"
 
 |-|ベースライン (パブリック)|ベースライン (プライベート)|機密|高機密|
 |:-----|:-----|:-----|:-----|:-----|
-|プライベート チームまたはパブリック チーム|パブリック|Kirkland|Kirkland|Kirkland|
+|プライベート チームまたはパブリック チーム|パブリック|プライベート|プライベート|プライベート|
 |誰にアクセス権が与えられるか|B2B のユーザーを含む組織の全員。|チームのメンバーのみ。 他のユーザーが関連するサイトに対するアクセスを要求できる。|チームのメンバーのみ。|チームのメンバーのみ。|
 |プライベート チャネル|所有者とメンバーがプライベート チャネルを作成できる|所有者とメンバーがプライベート チャネルを作成できる|所有者のみがプライベート チャネルを作成できる|所有者のみがプライベート チャネルを作成できる|
 |サイトレベルのゲスト アクセス|**新規および既存のゲスト** (既定値)。|**新規および既存のゲスト** (既定値)。|チームのニーズに応じて、**新規および既存のゲスト** または **組織内のユーザーのみ**。|チームのニーズに応じて、**新規および既存のゲスト** または **組織内のユーザーのみ**。|
@@ -68,11 +68,11 @@ ms.locfileid: "50509244"
 
 ## <a name="sensitivity-labels"></a>秘密度ラベル
 
-機密層および高機密層は、秘密度ラベルを使用して、チームとそのファイルをセキュリティで保護します。 これらの層を実装するには、[Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護する秘密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)を有効にする必要があります。
+機密層および高機密層は、秘密度ラベルを使用して、チームとそのファイルをセキュリティで保護します。 これらの層を実装するには、[Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護する秘密度ラベル](../compliance/sensitivity-labels-teams-groups-sites.md)を有効にする必要があります。
 
 基準層では秘密度ラベルは必要ありませんが、「全般」 ラベルを作成して、すべてのチームにラベルを付けるように要求することを検討してください。 これにより、ユーザーがチームを作成するときに、秘密度について意識的に選択できるようになります。 機密層または高機密層の展開を計画する場合は、基準チームや機密ではないファイルに使用できる「全般」ラベルの作成をお勧めします。
 
-秘密度ラベルを初めて使用する場合は、最初に「[秘密度ラベルの使用を開始する](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)」をお読みください。 
+秘密度ラベルを初めて使用する場合は、最初に「[秘密度ラベルの使用を開始する](../compliance/get-started-with-sensitivity-labels.md)」をお読みください。 
 
 組織で既に秘密度レベルを展開している場合は、機密層や高機密層で使用するラベルがラベル戦略全体にどのように適合しているかを検討してください。 
 
@@ -95,7 +95,7 @@ ms.locfileid: "50509244"
 
 ## <a name="guest-sharing"></a>ゲスト共有
 
-組織外のユーザーと共同作業する必要がある場合は、共有と管理の最適な操作性を実現するために、[Azure AD B2B と SharePoint と OneDrive の統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)を構成することをお勧めします。
+組織外のユーザーと共同作業する必要がある場合は、共有と管理の最適な操作性を実現するために、[Azure AD B2B と SharePoint と OneDrive の統合](/sharepoint/sharepoint-azureb2b-integration-preview)を構成することをお勧めします。
 
 チームのゲスト共有は、既定では無効になっていますが、Office 365 グループ (チーム メンバーシップが保存されている) と SharePoint は有効です。 基準層でチーム共有を有効にすると、機密層および高機密層において、秘密度ラベルを使用して、チーム共有を必要に応じて無効にできます。
 
@@ -113,7 +113,7 @@ ms.locfileid: "50509244"
 
 ## <a name="access-from-unmanaged-devices"></a>非管理対象デバイスからのアクセス
 
-機密層および高機密層では、秘密度ラベルを使用して SharePoint コンテンツへのアクセスを制限します。 Azure AD の条件付きアクセスには、場所、リスク、デバイスのコンプライアンス、およびその他の要因に基づく制限を含む、ユーザーが Microsoft 365 にアクセスする方法を決定する多くのオプションが用意されています。 [条件付きアクセスとは?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) を読み、組織にとって、どのような追加ポリシーが適切であるかを検討することをお勧めします。
+機密層および高機密層では、秘密度ラベルを使用して SharePoint コンテンツへのアクセスを制限します。 Azure AD の条件付きアクセスには、場所、リスク、デバイスのコンプライアンス、およびその他の要因に基づく制限を含む、ユーザーが Microsoft 365 にアクセスする方法を決定する多くのオプションが用意されています。 [条件付きアクセスとは?](/azure/active-directory/conditional-access/overview) を読み、組織にとって、どのような追加ポリシーが適切であるかを検討することをお勧めします。
 
 多くの場合、ゲストは組織によって管理されているデバイスを持っていないことに注意してください。 いずれかの層でゲストを許可する場合は、チームやサイトへのアクセスに使用するデバイスの種類を考慮し、それに応じて管理されていないデバイスのポリシーを設定します。
 
@@ -123,6 +123,6 @@ ms.locfileid: "50509244"
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft Teams のセキュリティとコンプライアンス](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Microsoft Teams のセキュリティとコンプライアンス](/microsoftteams/security-compliance-overview)
 
-[セキュリティ/コンプライアンス センターのアラート ポリシー](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+[セキュリティ/コンプライアンス センターのアラート ポリシー](../compliance/alert-policies.md)

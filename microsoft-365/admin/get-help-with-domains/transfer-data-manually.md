@@ -1,5 +1,5 @@
 ---
-title: 2つのアカウント間でデータを手動で転送する
+title: 2 つのアカウント間でデータを手動で転送する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: プランまたは会社名を変更したとき、または複数のサブスクリプションを1つに結合したときに、2つの Microsoft 365 アカウント間でデータを手動で転送する方法について説明します。
-ms.openlocfilehash: b7b0bb9c9b95b31d98040ae90632ef87a7fb0e3b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: プランまたは会社名を変更した場合、または複数のサブスクリプションを 1 に結合した場合に、2 つの Microsoft 365 アカウント間でデータを手動で転送する方法について説明します。
+ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645145"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915508"
 ---
-# <a name="transfer-data-manually-between-two-accounts"></a>2つのアカウント間でデータを手動で転送する
+# <a name="transfer-data-manually-between-two-accounts"></a>2 つのアカウント間でデータを手動で転送する
 
-Sleeves をロールアップし、予定表の時間をブロックするように準備します。2つの Microsoft 365 アカウント間でデータを転送することは、手動で複雑で時間のかかるプロセスです。 これは、自動化またはサポートされているプロセスではありません。 開始します。
+2 つの Microsoft 365 アカウント間でデータを転送するには、手動で複雑で時間のかかるプロセスです。 これは、自動化またはサポートされているプロセスではありません。 開始します。
   
 > [!CAUTION]
-> 電子メール、Skype for Business、および Microsoft 365 でホストされているパブリック web サイトが機能しないプロセスの間に、ダウンタイムが発生します。 ユーザーには新しいユーザー名とパスワードが提供され、ユーザーは Outlook を再設定する必要があります。
+> メール、Skype for Business、Microsoft 365 でホストされているパブリック Web サイトが動作しないプロセスの間は、ダウンタイムが発生します。 ユーザーには新しいユーザー名とパスワードが提供され、ユーザーは Outlook を再設定する必要があります。
 
 **次のいずれかが当てはまる場合は、この記事の手順を使用して手動でデータを転送するしかありません。**
   
@@ -46,26 +46,26 @@ Sleeves をロールアップし、予定表の時間をブロックするよう
 
 |**タスク**|**手順**|
 |:-----|:-----|
-|新たに希望するプランを購入します。  <br/> |サインアップするときは、初期ドメイン名 ( *yourcompany*  .onmicrosoft.com、  *yourcompany*  -public.sharepoint.com、  *yourcompany*  .sharepoint.com) で使用する会社名を指定します。既存のサブスクリプションとは異なる  *yourcompany*  名を使用する必要があります。  <br/> > [!NOTE]>  通常、  *yourcompany*  を使用する初期ドメイン名をシステムから解放するには、サブスクリプションを取り消してから数か月以上かかります。 古い Microsoft 365 サブスクリプションからすべてのデータを保存することを計画している場合でも、そのサブスクリプションを取り消すと、古い  *会社*  の値を新しいサブスクリプションですぐに使用することはできません。           |
-|古い Microsoft 365 サブスクリプションからカスタムドメインを削除します。  <br/> | [ドメインを削除する前に必要な手順](remove-a-domain.md) に従って、ユーザーのメール アドレスからドメイン名を削除し、メールの DNS レコードとカスタム ドメインの Lync を削除します。 Microsoft 365 でパブリック web サイトをホストしている場合は、それを指す CNAME レコードも削除する必要があります。  <br/> > [!IMPORTANT]>  このカスタム ドメインにメールをルーティングする MX レコードを削除すると、新しいアカウントにドメインを追加し、新しい MX レコードをセットアップして、ユーザーを設定するまで、メールは機能しなくなります。Lync の DNS レコードを削除すると、Lync は動作を停止します。また、パブリック Web サイトを指し示している CNAME レコードを削除した後は、Web サイトは使用できなくなります。           [ドメインを削除します](remove-a-domain.md) 。  <br/> |
+|新たに希望するプランを購入します。  <br/> |サインアップするときは、初期ドメイン名 ( *yourcompany*  .onmicrosoft.com、  *yourcompany*  -public.sharepoint.com、  *yourcompany*  .sharepoint.com) で使用する会社名を指定します。既存のサブスクリプションとは異なる  *yourcompany*  名を使用する必要があります。  <br/> > [!NOTE]>  通常、  *yourcompany*  を使用する初期ドメイン名をシステムから解放するには、サブスクリプションを取り消してから数か月以上かかります。 古い Microsoft 365 サブスクリプションからすべてのデータを保存し、そのサブスクリプションをキャンセルする場合でも、古い会社の値は新しいサブスクリプションですぐに使用できません。           |
+|古い Microsoft 365 サブスクリプションからカスタム ドメインを削除します。  <br/> | [ドメインを削除する前に必要な手順](remove-a-domain.md) に従って、ユーザーのメール アドレスからドメイン名を削除し、メールの DNS レコードとカスタム ドメインの Lync を削除します。 Microsoft 365 でパブリック Web サイトをホストする場合は、それをポイントする CNAME レコードも削除する必要があります。  <br/> > [!IMPORTANT]>  このカスタム ドメインにメールをルーティングする MX レコードを削除すると、新しいアカウントにドメインを追加し、新しい MX レコードをセットアップして、ユーザーを設定するまで、メールは機能しなくなります。Lync の DNS レコードを削除すると、Lync は動作を停止します。また、パブリック Web サイトを指し示している CNAME レコードを削除した後は、Web サイトは使用できなくなります。           [ドメインを削除します](remove-a-domain.md) 。  <br/> |
 |新しいサブスクリプションのカスタム ドメインをセットアップして、ユーザーを設定します。  <br/> | カスタム ドメインに必要な DNS レコードの作成など、新しいサブスクリプションをセットアップします。  <br/>  カスタム ドメインでのメール アドレスを指定して、ユーザーを作成します。  <br/> |
-|古いサブスクリプションから新しいサブスクリプションにデータを転送します。  <br/> | 別のブラウザー ウィンドウで両方のアカウントにサインインします。  <br/>  ブラウザーのアイコンを右クリックして、2つのプライベートブラウザーウィンドウを開きます。 2 つのウィンドウで異なる資格情報を使用して、両方のアカウントにサインインできます。  <br/> [サブスクリプション間で管理の設定を転送する](#email) <br/> [チーム サイトの構造とデータを転送する](#transfer-team-site-structure-and-data) <br/> [サブスクリプション間でパブリック Web サイトを転送する](#transfer-a-public-website-between-subscriptions) <br/> [サブスクリプション間で管理の設定を転送する](#email) <br/> |
-|Microsoft 365 の Microsoft サポートに連絡して、実行しているプランのサブスクリプションをキャンセルします。  <br/> | 新しいサブスクリプションが動作していて、すべてのデータが転送されたことを確認します。  <br/>  [カスタマーサポートに連絡](../contact-support-for-business-products.md) して、古いサブスクリプションを解約してください。  <br/> |
+|古いサブスクリプションから新しいサブスクリプションにデータを転送します。  <br/> | 別のブラウザー ウィンドウで両方のアカウントにサインインします。  <br/>  ブラウザー アイコンを右クリックし、2 つのプライベート ブラウザー ウィンドウを開きます。 2 つのウィンドウで異なる資格情報を使用して、両方のアカウントにサインインできます。  <br/> [サブスクリプション間で管理の設定を転送する](#email) <br/> [チーム サイトの構造とデータを転送する](#transfer-team-site-structure-and-data) <br/> [サブスクリプション間でパブリック Web サイトを転送する](#transfer-a-public-website-between-subscriptions) <br/> [サブスクリプション間で管理の設定を転送する](#email) <br/> |
+|Microsoft サポート for Microsoft 365 を呼び出して、完了したプランのサブスクリプションをキャンセルします。  <br/> | 新しいサブスクリプションが動作していて、すべてのデータが転送されたことを確認します。  <br/>  [カスタマー サポートに問い合わせ](../contact-support-for-business-products.md) 、古いサブスクリプションをキャンセルします。  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>サブスクリプション間で管理の設定を転送する
 
 各アカウントで次のページに移動し、古いアカウントの設定に基づいて新しいアカウントを設定します。
   
-Microsoft 365 から Microsoft 365 中規模企業または Microsoft 365 Enterprise にデータを転送する場合、管理ページの構造は異なります。 [「Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/)」を参照し、次の場所に移動して、管理設定を確認してください。
+Microsoft 365 から Microsoft 365 Midsize Business または Microsoft 365 Enterprise にデータを転送する場合、管理ページの構造が異なります。 ビデオを [見る: Microsoft 365 Enterprise](../index.yml)を紹介し、次の場所に移動して管理設定を確認します。
   
-Microsoft 365 Enterprise および Microsoft 365 中規模企業の場合:
+Microsoft 365 Enterprise および Microsoft 365 Midsize Business の場合:
   
 |**場所**|**目的**|
 |:-----|:-----|
-|**管理者** \>**Microsoft 365** \>**サービス設定** <br/> |メール、サイト、Lync、ユーザーソフトウェア、パスワード、コミュニティ、rights management、およびモバイルの設定については、各タブを選択します。  <br/> |
+|**管理者** \>**Microsoft 365** \>**サービス設定** <br/> |メール、サイト、Lync、ユーザー ソフトウェア、パスワード、コミュニティ、権限管理、モバイルの設定の各タブを選択します。  <br/> |
 |[ **管理者**] \> [ **Exchange**] <br/> | Exchange Online の設定  <br/> |
 |[ **管理者**] \> [ **SharePoint**] <br/> | SharePoint Online の設定  <br/> |
-|**管理者** \>**Skype For business** <br/> |その他の Skype for Business の設定  <br/> |
+|**管理者** \>**Skype for Business** <br/> |Skype for Business のその他の設定  <br/> |
 
 Microsoft 365 Small Business の場合
   
@@ -75,12 +75,12 @@ Microsoft 365 Small Business の場合
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>サブスクリプション間でパブリック Web サイトを転送する
 
-Microsoft 365 でホストされているパブリック web サイトがある場合は、それを保存して、新しいサブスクリプションで再作成する必要があります。
+Microsoft 365 でホストされているパブリック Web サイトがある場合は、その Web サイトを保存し、新しいサブスクリプションに再作成する必要があります。
   
 > [!NOTE]
 > パブリック Web サイトが DNS ホスティング プロバイダーでホストされている場合は、変更する必要はありません。移行による影響はありません。
   
-ドキュメント ライブラリやリスト コンテンツを SharePoint Online 環境からファイル共有やローカル コンピューターに保存するには、「[SharePoint Online コンテンツの手動移行に関する情報](https://go.microsoft.com/fwlink/p/?LinkId=402910)」を参照してください。
+ドキュメント ライブラリやリスト コンテンツを SharePoint Online 環境からファイル共有やローカル コンピューターに保存するには、「[SharePoint Online コンテンツの手動移行に関する情報](/sharepoint/troubleshoot/migration-tool/content-manual-migration)」を参照してください。
   
 > [!NOTE]
 > パブリック サイト移行アプリでは、データを別のサブスクリプションに転送できません。
@@ -91,11 +91,11 @@ Microsoft 365 でホストされているパブリック web サイトがある�
   
 - 古いサイトをテンプレートとして保存し、新しいサイトにテンプレートをインポートできます。
 
-- ドキュメントを転送するには、最初に新しいサイトで階層を手動で再作成します。 その後は、両方の SharePoint チーム サイトを同時に開き、両方のドキュメント ライブラリをエクスプローラーで開いて、ドキュメントをコピーして貼り付けることができます。 「[ビデオ: [エクスプローラーで開く] を使用してライブラリ ファイルをコピーまたは移動する](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)」を参照してください。
+- ドキュメントを転送するには、まず新しいサイトで階層を手動で再作成します。 その後は、両方の SharePoint チーム サイトを同時に開き、両方のドキュメント ライブラリをエクスプローラーで開いて、ドキュメントをコピーして貼り付けることができます。 「[ビデオ: [エクスプローラーで開く] を使用してライブラリ ファイルをコピーまたは移動する](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)」を参照してください。
 
 - リスト データを転送するには、[リスト テンプレート](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)を保存し、保存したテンプレートを使用して新しいサイトにリストを再作成します。
 
-- SharePoint Online 環境 (OneDrive for Business またはチームサイト) からファイル共有またはローカルコンピューターにドキュメントライブラリまたはリストのコンテンツを保存するには、「 [Sharepoint online コンテンツの手動での移行に関する情報](https://support.microsoft.com/kb/2783484)」を参照してください。
+- ドキュメント ライブラリまたはリスト コンテンツを SharePoint Online 環境 (OneDrive for Business またはチーム サイト) からファイル共有またはローカル コンピューターに保存するには [、「SharePoint Online](https://support.microsoft.com/kb/2783484)コンテンツの手動移行に関する情報」を参照してください。
 
 ## <a name="transfer-users-data-between-subscriptions"></a>サブスクリプション間でユーザーのデータを転送する
 
@@ -105,8 +105,8 @@ Microsoft 365 でホストされているパブリック web サイトがある�
   
 ### <a name="onedrive-for-business-data"></a>OneDrive For Business データ:
 
-ユーザーに [OneDrive For business のコンテンツを自分のコンピューターに](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)コピー/同期させ、新しいサブスクリプションに追加してもらいます。
+ユーザーに、OneDrive [for Business](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)コンテンツを自分のコンピューターにコピー/同期し、新しいサブスクリプションに追加し戻す必要があります。
 
 ### <a name="onenote"></a>OneNote 
 
-ユーザーに [OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) をバックアップして、 [バックアップから](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) 新しいサブスクリプションにメモを復元するように依頼します。
+ユーザーに [OneNote のバックアップと、](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) バックアップ [から](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) 新しいサブスクリプションへのメモの復元を求める。

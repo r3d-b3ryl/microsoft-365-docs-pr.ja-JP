@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: Microsoft 365 for business の自動操縦の CSV ファイルを作成する方法について説明します。
-ms.openlocfilehash: 030fb96e9e60c792fb685af57d34eacd6670645a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Microsoft 365 for business で AutoPilot 用の CSV ファイルを作成する方法について説明します。
+ms.openlocfilehash: 78a9012bac054329bdb87b02757f49f30dd44f65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399364"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914740"
 ---
 # <a name="device-list-csv-file"></a>デバイスの一覧の CSV ファイル
 
@@ -50,9 +50,8 @@ Windows Autopilot を使用してデバイスを管理および展開するに�
   
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 for business のドキュメントとリソース](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business のドキュメントとリソース](../../business/index.yml)
   
-[Microsoft 365 for business の使用を開始する](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
+[Microsoft 365 for business の使用を開始する](../../business/microsoft-365-business-overview.md)
   
-[Microsoft 365 for business の管理](https://docs.microsoft.com/microsoft-365/business/manage)
-  
+[ビジネス向け Microsoft 365 の管理](../../business/manage.md)

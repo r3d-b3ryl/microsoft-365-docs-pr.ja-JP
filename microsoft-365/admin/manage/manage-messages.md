@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: メッセージ センターでメッセージを管理して、変更管理に役立てる方法を説明します。
-ms.openlocfilehash: 3f0a3c5fe20e76d0fff63cefe7e6eaa687696426
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
-ms.translationtype: HT
+ms.openlocfilehash: ee3df1b2f4855421dab4d6715add6503027b24bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405962"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915280"
 ---
 # <a name="manage-messages-in-message-center"></a>メッセージ センターでメッセージを管理する
 
@@ -171,6 +171,6 @@ ms.locfileid: "50405962"
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Planner でメッセージ センターのタスクを追跡する
 
-Microsoft 365 サービスの変更に関する実践的な情報の多くは、Microsoft 365 メッセージ センターに届きます。 各タスクのどの変更がいつ、誰によって実行されるかを、完了まで追跡するのは難しい場合があります。 また、何かをメモして、後で確認するためにタグを付けておきたいと思うかも知れません。 これらのすべては、Microsoft 365 管理センターから Microsoft Planner にメッセージを同期することで行えます。 詳細については、「[Planner でメッセージ センターのタスクを追跡する](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner)」をご覧ください。
+Microsoft 365 サービスの変更に関する実践的な情報の多くは、Microsoft 365 メッセージ センターに届きます。 各タスクのどの変更がいつ、誰によって実行されるかを、完了まで追跡するのは難しい場合があります。 また、何かをメモして、後で確認するためにタグを付けておきたいと思うかも知れません。 これらのすべては、Microsoft 365 管理センターから Microsoft Planner にメッセージを同期することで行えます。 詳細については、「[Planner でメッセージ センターのタスクを追跡する](/office365/planner/track-message-center-tasks-planner)」をご覧ください。
 
-メッセージ センターの概要については、「[Microsoft 365 のメッセージ センター](message-center.md)」を参照してください。 また、メッセージ センターの投稿の機械翻訳を有効にするために言語設定を設定する方法については、「[メッセージ センターの投稿の言語の翻訳を有効にする](language-translation-for-message-center-posts.md)」を参照してください。 別の方法をプログラミングして、サービス正常性の情報およびメッセージ センター通信をリアルタイムで取得する場合は、「[Microsoft 365 サービス通信 API の概要](https://go.microsoft.com/fwlink/p/?linkid=848507)」を参照してください。
+メッセージ センターの概要については、「[Microsoft 365 のメッセージ センター](message-center.md)」を参照してください。 また、メッセージ センターの投稿の機械翻訳を有効にするために言語設定を設定する方法については、「[メッセージ センターの投稿の言語の翻訳を有効にする](language-translation-for-message-center-posts.md)」を参照してください。 別の方法をプログラミングして、サービス正常性の情報およびメッセージ センター通信をリアルタイムで取得する場合は、「[Microsoft 365 サービス通信 API の概要](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15))」を参照してください。

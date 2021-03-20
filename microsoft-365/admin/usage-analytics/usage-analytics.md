@@ -18,194 +18,194 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
-description: 組織が Microsoft 365 サービスを採用して通信および共同作業を行う方法の概要について説明します。
-ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: 組織が Microsoft 365 サービスを採用してコミュニケーションと共同作業を行う方法の概要を確認します。
+ms.openlocfilehash: 5120e487604fbaf4421c1b2f814cd57e79d5f9dc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841389"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913816"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析の概要
 
-Power BI 内の Microsoft 365 usage analytics を使用して、組織が Microsoft 365 内でさまざまなサービスをどのように採用しているかについての洞察を得ます。 Microsoft 365 使用状況データを視覚化および分析し、カスタムレポートを作成して、組織内でその洞察を共有できます。 特定の地域または部門が Microsoft 365 をどのように使用しているかについての洞察を得ることもできます。
+Power BI 内の Microsoft 365 使用状況分析を使用して、組織が Microsoft 365 内のさまざまなサービスを採用している方法に関する洞察を得る。 Microsoft 365 使用状況データの視覚化と分析、カスタム レポートの作成、組織内の分析情報の共有が可能です。 また、特定の地域または部門が Microsoft 365 を使用している方法に関する分析情報を取得できます。
   
-Microsoft 365 usage analytics を使用すると、過去12か月間のクロス積ビューを提供し、多数の事前に作成されたレポートを含む、作成済みのダッシュボードにアクセスできます。 各レポートからは、特定の利用状況に関する洞察が得られます。 ユーザー固有の情報は、最後の全暦の月に対して使用できます。
+Microsoft 365 利用状況分析では、過去 12 か月間のクロスプロダクト ビューを提供し、多数の事前構築されたレポートを含む、事前に構築されたダッシュボードにアクセスできます。 各レポートからは、特定の利用状況に関する洞察が得られます。 ユーザー固有の情報は、最後の完全な予定表の月に使用できます。
   
-テンプレートアプリを構成する [データモデル](usage-analytics-data-model.md) には、Active Directory からのユーザー属性が含まれているため、特定のレポートでピボットすることができます。 Active Directory の次の属性が含まれています。場所、部門、および組織。 
+テンプレート [アプリに電力](usage-analytics-data-model.md) を供給するデータ モデルには、Active Directory からのユーザー属性が含まれており、特定のレポートでピボットする機能を有効にします。 場所、部署、組織の Active Directory 属性が含まれています。 
   
 データ収集を開始する方法については、[Microsoft 365 利用状況分析の有効化](enable-usage-analytics.md)に関するページを参照してください。 
   
-Microsoft 365 usage analytics には、以下のセクションで説明するいくつかのレポートが含まれています。 
+Microsoft 365 利用状況分析には、次のセクションで詳細なレポートが多数含まれます。 
 
-データテーブルを選択すると、各エリアの詳細なレポートにアクセスできます。 事前に作成されたすべてのレポートを表示するには、サイトの下部にあるタブを選択します。 詳細な手順については、「 [ナビゲーションに](navigate-and-utilize-reports.md) アクセスしてレポートを [カスタマイズ](customize-reports.md)する」を参照してください。
+データ テーブルを選択すると、各領域の詳細レポートにアクセスできます。 サイトの下部にあるタブを選択すると、すべての事前に作成されたレポートを表示できます。 詳細な手順については、「レポートのナビゲーション[](navigate-and-utilize-reports.md)と利用」と「レポートのカスタマイズ[」を参照してください](customize-reports.md)。
 
 ## <a name="executive-summary"></a>エグゼクティブの概要
 
-エグゼクティブサマリーは、Microsoft 365 のビジネス導入、使用状況、モビリティ、コミュニケーション、コラボレーション、およびストレージレポートの概要を示した概要であり、ビジネス意思決定者を対象としています。 これにより、有効になっているすべてのユーザーと、アクティブなユーザーに基づいて、いくつかの個別のサービスがどのように使用されているかを確認できます。 レポートに表示される月のすべての値は、最後の完全な月を表します。 
+エグゼクティブ サマリーは、Microsoft 365 for Business 導入、利用状況、モビリティ、コミュニケーション、コラボレーション、およびストレージ レポートの概要であり、ビジネス意思決定者向けです。 有効になっているすべてのユーザーとアクティブなユーザーに基づいて、一部の個々のサービスがどのように使用されるかを確認できます。 レポートに表示される月のすべての値は、最新の完全な月を参照します。 
 
-この要約により、Office の使用パターンと、従業員が共同作業する方法と場所をすばやく理解できます。
+この概要では、従業員が共同作業を行う方法と場所Officeの使用状況パターンをすばやく理解できます。
 
-![Microsoft 365 利用状況の概要の画像。](../../media/office365usage-exec-summary.png)
+![Microsoft 365 利用状況の概要のイメージ。](../../media/office365usage-exec-summary.png)
 
 ## <a name="overview"></a>概要
 
-Microsoft 365 の概要レポートには、次のレポートが含まれています。 [レポート] ページの上部にあるタブを選択すると、それらを表示できます。 レポートの上部セクションに表示されている月のすべての値は、最後の完全な月を表します。
+Microsoft 365 の概要レポートには、次のレポートが含まれます。 それらを表示するには、レポート ページの上部にあるタブを選択します。 レポートの上部セクションに表示される月のすべての値は、最新の完全な月を参照します。
 
-- **導入** &ndash; 導入傾向の概要を提供します。 このセクションのレポートを使用して、ユーザーが Microsoft 365 を採用した方法と、個々のサービスの全体的な使用状況が月ごとにどのように変更されたかについて説明します。 ユーザーがどのように有効になっているか、組織内で Microsoft 365 を使用しているユーザー数、ユーザーが初めて何を使用しているか、何人がその製品を初めて使用しているかを確認することができます。
+- **導入** &ndash; 導入傾向の概要を示します。 このセクションのレポートを使用して、ユーザーが Microsoft 365 を採用した方法と、個々のサービスの全体的な使用状況が月ごとにどのように変化したのかについて説明します。 ユーザーが有効になっている方法、組織内で Microsoft 365 を積極的に使用しているユーザーの数、返されるユーザーの数、および製品を初めて使用するユーザーの数を確認できます。
 
-- **使用法** &ndash; 過去12か月間に、アクティブなユーザーの数と各製品の主要なアクティビティについてのドリルダウンビューを提供します。 このセクションのレポートを使用して、組織内のユーザーが Microsoft 365 をどのように使用しているかについて説明します。
+- **使用法** &ndash; アクティブ ユーザーのボリュームと、過去 12 か月間の各製品の主要なアクティビティに関するドリルダウン ビューを提供します。 このセクションのレポートを使用して、組織内のユーザーが Microsoft 365 を使用している方法について説明します。
 
-- **コミュニケーション** &ndash; Teams、Yammer、電子メール、または Skype 呼び出しを使用して、組織内のユーザーがいつでもタッチできるかどうかがひとめでわかります。 従業員の間で通信ツールを使用すると、パターンに変化があるかどうかを観察できます。 
+- **コミュニケーション** &ndash; Teams、Yammer、または Skype 通話を使用して、組織内のユーザーが連絡を取り合うかどうかを一目で確認できます。 従業員間のコミュニケーション ツールの使用にパターンが変化している場合は、確認できます。 
 
-- **グループ作業** &ndash; 組織内のユーザーが OneDrive と SharePoint を使用してドキュメントを保存し、互いに共同作業する方法と、これらの傾向を月単位で進化させる方法について説明します。 また、内部または外部で共有されているドキュメント数、および現在使用されている SharePoint サイトまたは OneDrive アカウントの数を、所有者や他のコラボレーターによって分類することもできます。
+- **コラボレーション** &ndash; 組織内のユーザーが OneDrive と SharePoint を使用してドキュメントを保存し、互いに共同作業する方法、およびこれらの傾向が月ごとにどのように進化していくのかをご覧ください。 また、内部または外部で共有されるドキュメントの数、および所有者や他の共同作業者によって分け分け、現在使用されている SharePoint サイトまたは OneDrive アカウントの数を確認できます。
 
-- **ストレージ** &ndash; このレポートを使用して、メールボックス、OneDrive、および SharePoint サイトのクラウドストレージを追跡します。
+- **記憶域** &ndash; このレポートを使用して、メールボックス、OneDrive、および SharePoint サイトのクラウド ストレージを追跡します。
 
-- **モビリティ** &ndash; ユーザーがメール、Teams、Skype、Yammer への接続に使用するクライアントとデバイスを追跡します。
+- **モビリティ** &ndash; ユーザーがメール、Teams、Skype、またはユーザーに接続するために使用するクライアントとデバイスYammer。
 
 ## <a name="activation-and-licensing"></a>ライセンス認証とライセンス
 
-[アクティブ化とライセンス] ページでは、Microsoft 365 ライセンス認証に関するレポートが提供されます。つまり、Office アプリをダウンロードしてアクティブ化したユーザーの数と、組織によって割り当てられたライセンスの数を示します。 上方向の月の値は現在の月を参照し、指標には月の最初から現在の日付まで集計された値が反映されます。
+[ライセンス認証とライセンス] ページには、Microsoft 365 ライセンス認証に関するレポートが表示されます。つまり、アプリをダウンロードしてアクティブ化したユーザー Office、組織によって割り当てられているライセンスの数です。 上の方の月の値は現在の月を表し、指標は月の初めから現在の日付に集計された値を反映します。
 
-- **アクティブ化** &ndash; 「Track service plan (たとえば、Microsoft 365 Apps for enterprise, Project, and Visio)」を組織内でアクティブ化します。 Office のライセンスを持つ各ユーザーは、最大 5 つのデバイスに製品をインストールできます。 このセクションのレポートを使用して、ユーザーが Office アプリをインストールしたデバイスを確認することもできます。 プランをアクティブにするには、ユーザーがアプリをインストールし、アカウントを使用してサインインする必要があることに注意してください。
+- **ライセンス認証** &ndash; 組織のサービス 計画 (Microsoft 365 Apps for enterprise、Project、Visio など) のライセンス認証を追跡します。 Office のライセンスを持つ各ユーザーは、最大 5 つのデバイスに製品をインストールできます。 また、このセクションのレポートを使用して、ユーザーがアプリにインストールしたデバイスOfficeすることもできます。 プランをアクティブ化するには、ユーザーがアプリをインストールし、自分のアカウントでサインインする必要があります。
 
-- **ライセンス** &ndash; このレポートには、ライセンスの種類の概要、各ライセンスの種類が割り当てられたユーザーの数、各月のライセンス割り当ての配分が含まれています。 上方向の月の値は現在の月を参照し、指標には月の最初から現在の日付まで集計された値が反映されます。
+- **ライセンス** &ndash; このレポートには、ライセンスの種類の概要、各ライセンスの種類が割り当てられたユーザーの数、および各月のライセンス割り当ての配布が含されます。 上の方の月の値は現在の月を表し、指標は月の初めから現在の日付に集計された値を反映します。
 
 ## <a name="product-usage"></a>製品の使用状況
 
-このレポートには、Exchange、Microsoft 365 グループ、OneDrive、SharePoint、Skype、Teams、Yammer など、Microsoft 365 サービスごとに個別のレポートが含まれています。 各レポートには、アクティブなユーザーレポート数、メールボックス、サイト、グループ、アカウントなどのエンティティ数、および必要に応じたアクティビティの種類のレポートが含まれます。 レポートの上部セクションに表示されている月のすべての値は、最後の完全な月を表します。
+このレポートには、Exchange、Microsoft 365 グループ、OneDrive、SharePoint、Skype、Teams、および Yammer などの Microsoft 365 サービスごとに個別のレポートが含Yammer。 各レポートには、有効な合計レポートとアクティブ なユーザー レポートの合計、メールボックス、サイト、グループ、アカウントなどのエンティティの数、必要に応じてアクティビティの種類レポートが含まれる。 レポートの上部セクションに表示される月のすべての値は、最新の完全な月を参照します。
 
 ## <a name="user-activity"></a>ユーザー アクティビティ
 
-ユーザーアクティビティレポートは、特定の個別のサービスで使用できます。 これらのレポートは、Active Directory 属性で結合されたユーザーレベルの詳細な利用状況データを提供します。 また、部署導入レポートを使用すると、Active Directory の属性によってスライスすることができます。これにより、すべての個別のサービスにわたってアクティブなユーザーが表示されます。 すべての指標は、最新の完全な月を集計しています。
+ユーザー アクティビティ レポートは、特定の個々のサービスで使用できます。 これらのレポートは、Active Directory 属性と結合されたユーザー レベルの詳細使用状況データを提供します。 さらに、部門導入レポートを使用すると、Active Directory 属性でスライスして、すべての個々のサービスでアクティブなユーザーを確認できます。 すべての指標は、最新の完全な月に集計されます。
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
-### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>このテンプレートアプリは購入によって利用できるようになりますか。または無料ですか。
+### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>このテンプレート アプリは購入によって利用できるか、それとも無料になるか。
 
-無料ではないので、Power BI Pro ライセンスが必要になります。 詳細については、「テンプレートアプリをインストール、カスタマイズ、および配布するための [前提条件](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute#prerequisites) 」を参照してください。
+無料ではありません。Power BI Pro ライセンスが必要です。 詳細については、「 [テンプレート アプリの](/power-bi/service-template-apps-install-distribute#prerequisites) インストール、カスタマイズ、配布の前提条件」を参照してください。
 
-ダッシュボードを他のユーザーと共有するには、「 [共有ダッシュボードとレポート](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)」を参照してください。
+ダッシュボードを他のユーザーと共有するには、「Share ダッシュボードとレポート」 [を参照してください](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)。
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>誰が Microsoft 365 利用状況分析に接続できますか。
 
-テンプレートアプリへの接続を確立するには、 **グローバル管理者** 、 **Exchange 管理** 者、 **Skype for business 管理者** 、 **SharePoint 管理者** 、 **グローバルリーダー** 、または **レポートリーダー** のいずれかである必要があります。 詳細については、「 [管理者ロールについ](../add-users/about-admin-roles.md) て」を参照してください。
+テンプレート アプリへの接続を確立するには、グローバル管理者 **、Exchange** 管理者 **、Skype for** Business管理者 **、SharePoint** 管理者、グローバル リーダー、またはレポート リーダーのいずれかである必要があります。  詳細については [、「管理者ロールについて](../add-users/about-admin-roles.md) 」を参照してください。
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>利用状況分析レポートをカスタマイズできるユーザー
 
-Power BI web インターフェイスでレポートをカスタマイズするか、新しいレポートを作成することができるのは、テンプレートアプリに最初に接続したユーザーのみです。 手順について [は、「Microsoft 365 usage analytics でレポートをカスタマイズする](customize-reports.md) 」を参照してください。
+テンプレート アプリへの初期接続を行ったユーザーだけが、レポートをカスタマイズしたり、Power BI Web インターフェイスで新しいレポートを作成したりできます。 手順 [については、「Microsoft 365](customize-reports.md) 利用状況分析のレポートをカスタマイズする」を参照してください。
 
-### <a name="can-i-only-customize-the-reports-from-the-power-bi-web-interface"></a>Power BI web インターフェイスからのみレポートをカスタマイズできますか。
+### <a name="can-i-only-customize-the-reports-from-the-power-bi-web-interface"></a>Power BI Web インターフェイスからのみレポートをカスタマイズできますか?
 
-Power BI web インターフェイスからレポートをカスタマイズするだけでなく、Power BI Desktop を使用して直接 Microsoft 365 reporting service に接続し、独自のレポートを作成することもできます。
+Power BI Web インターフェイスからレポートをカスタマイズする以外に、ユーザーは Power BI Desktop を使用して Microsoft 365 レポート サービスに直接接続して独自のレポートを作成することもできます。
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>このダッシュボードに関連付けられている pbit ファイルはどのような方法で取得できますか。
 
-[Microsoft ダウンロードセンター](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)から pbit ファイルにアクセスできます。
+pbit ファイルには、Microsoft ダウンロード センター [からアクセスできます](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>ダッシュボードとレポートを表示できるユーザー
 
-テンプレートアプリに接続した場合は、 [共有機能](https://go.microsoft.com/fwlink/p/?linkid=845494)を使用して他のユーザーと共有できます。 Power BI のライセンスでは、ユーザーの共有とダッシュボードを共有しているユーザーの両方が Power BI Pro または Power BI Premium を持っている必要があります。
+テンプレート アプリに接続している場合は、共有機能を使用して、他のユーザーと [共有できます](/power-bi/collaborate-share/service-share-dashboards)。 Power BI ライセンスでは、ユーザー共有とダッシュボードを共有するユーザーの両方に Power BI Pro または Power BI Premium が必要です。
 
 ### <a name="can-anyone-share-the-dashboard-or-does-it-have-to-be-the-person-who-connected-to-the-dashboard"></a>ダッシュボードは誰でも共有できますか。または、ダッシュボードに接続したユーザーに限られますか。
 
-ダッシュボードを共有する場合は、ユーザーが他のユーザーとダッシュボードを共有できるようにすることができます。 このオプションは、共有時に設定できます。
+ダッシュボードを共有する場合は、ユーザーがダッシュボードを他のユーザーと再共有できるのか、共有しないかのどちらかです。 共有時にこのオプションを設定できます。
 
-### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>同じテンプレートアプリを共同作業し、ユーザーのグループとカスタマイズすることはできますか。
+### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>同じテンプレート アプリをユーザーグループで作業してカスタマイズできますか?
 
-はい。 管理者のグループが同じテンプレートアプリで共同作業できるようにするには、Power BI のアプリワークスペース機能を利用できます。詳細については、「[ダッシュボードとレポートをどのように連携して共有する必要がありますか?](https://go.microsoft.com/fwlink/p/?linkid=851070) 」を参照してください。 
+はい。 管理者グループが同じテンプレート アプリで共同作業を行う場合、Power BI のアプリ ワークスペース機能を活用して詳細については、「ダッシュボードとレポートを共同作業して共有する方法」を [参照してください。](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>データはどの時間枠で利用できますか。
 
-レポートの大部分は、過去12か月間のデータを表示します。 ただし、グラフの中には、さまざまな製品とレポートのデータ収集が異なる時間に開始されたために、履歴が少なくなる場合があるため、12か月分のデータを使用できない場合があります。 すべてのレポートは、最終的に12か月の履歴を作成します。 ユーザーレベルの詳細を表示するレポートには、過去の全月のデータが表示されます。
+大部分のレポートには、過去 12 か月間のデータが表示されます。 ただし、一部のグラフでは、異なる製品およびレポートのデータ収集が異なる時点で開始されたため、12 か月間のデータを使用できない場合があります。 すべてのレポートは、最終的に最大 12 か月の履歴を作成します。 ユーザー レベルの詳細を表示するレポートには、前の完全な月のデータが表示されます。
 
-### <a name="what-data-is-included-in-the-template-app"></a>テンプレートアプリにはどのようなデータが含まれていますか。
+### <a name="what-data-is-included-in-the-template-app"></a>テンプレート アプリに含まれるデータは何ですか?
 
-現在、テンプレートアプリのデータは、 [アクティビティレポート](../activity-reports/activity-reports.md)で使用できるものと同じアクティビティ指標のセットをカバーしています。 レポートがアクティビティレポートに追加されると、今後のリリースでテンプレートアプリに追加されます。
+現在、テンプレート アプリのデータは、アクティビティ レポートで使用できるアクティビティ 指標のセットと [同じです](../activity-reports/activity-reports.md)。 レポートがアクティビティ レポートに追加される場合、今後のリリースでテンプレート アプリに追加されます。
 
-### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>テンプレートアプリのデータと利用状況レポートのデータはどのような違いがありますか?
+### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>テンプレート アプリのデータと利用状況レポートのデータとの違い
 
-テンプレートアプリに表示される基になるデータは、Microsoft 365 管理センターのアクティビティレポートに表示されるデータと一致します。 主な違いは、管理センターのデータは過去7/30/90/180 日間で利用可能であるのに対して、テンプレートアプリは、最大12か月間、月単位でデータを表示していることです。
+テンプレート アプリに表示される基になるデータは、Microsoft 365 管理センターのアクティビティ レポートに表示されるデータと一致します。 主な違いは、管理センターのデータが過去 7/30/90/180 日間利用可能で、テンプレート アプリが月単位で最大 12 か月間データを表示する点です。
 
-さらに、テンプレートアプリのユーザーレベルの詳細は、製品ライセンスを割り当てられ、アクティビティを実行したユーザーの最後の完全な月に対してのみ使用できます。
+さらに、テンプレート アプリのユーザー レベルの詳細は、製品ライセンスを割り当て、アクティビティを実行したユーザーの最後の完全な月にのみ使用できます。
 
-### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>テンプレートアプリと利用状況レポートをいつ使用するか
+### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>テンプレート アプリを使用する必要が生じ、使用状況が報告される場合
 
-[アクティビティレポート](../activity-reports/activity-reports.md)は、Microsoft 365 の使用と導入を理解するための開始点として適しています。 テンプレートアプリは、Microsoft 365 使用状況データと組織の Active Directory 情報を組み合わせて、Power BI の visual analytics 機能を使用して、管理者がデータセットを分析できるようにします。 これにより、管理者は、Microsoft 365 利用状況データを視覚化および分析するだけでなく、部署や場所などの Active Directory プロパティによってスライスすることもできます。また、カスタムレポートを作成し、組織内でその分析情報を共有することもできます。 
+アクティビティ [レポートは](../activity-reports/activity-reports.md)  、Microsoft 365 の使用状況と導入を理解する良い開始点です。 テンプレート アプリは、Microsoft 365 利用状況データと組織の Active Directory 情報を組み合わせ、管理者が Power BI の視覚的分析機能を使用してデータ セットを分析できます。 これにより、管理者は Microsoft 365 利用状況データを視覚化して分析するだけでなく、部門、場所などの Active Directory プロパティによってデータをスライスできます。また、カスタム レポートを作成し、組織内で分析情報を共有することもできます。 
 
 ### <a name="how-often-is-the-data-refreshed"></a>データはどのくらいの頻度で更新されますか。 
 
-テンプレートアプリに初めて接続すると、過去12か月間のデータが自動的に設定されます。 その後、テンプレートアプリのデータは毎週更新されます。 このデータを使用すると、更新のリズムが異なる場合は、更新スケジュールの変更を選択できます。
+テンプレート アプリに初めて接続すると、過去 12 か月間のデータが自動的に入力されます。 その後、テンプレート アプリのデータは毎週更新されます。 このデータの使用に異なる更新リズムが必要な場合は、更新スケジュールを変更できます。
 
-バックエンドの Microsoft 365 サービスは、毎日データを更新し、現在の日付から5-8 日以内のデータを提供します。
+バック エンドの Microsoft 365 サービスは、毎日データを更新し、現在の日付から 5 ~ 8 日の間のデータを提供します。
 
-各データセットの [ **コンテンツ日付** ] 列は、テンプレートアプリのデータの鮮度の日付を表します。
+各 **データセットの** [コンテンツの日付] 列は、テンプレート アプリ内のデータの鮮度の日付を表します。
 
-### <a name="how-is-an-active-user-defined"></a>アクティブなユーザーがどのように定義されていますか?
+### <a name="how-is-an-active-user-defined"></a>アクティブなユーザーの定義方法
 
-アクティブユーザーの定義は、アクティビティレポートの [アクティブユーザー](../activity-reports/active-users.md) の定義と同じです。
+アクティブ ユーザーの定義は、アクティビティ レポートのアクティブ ユーザー [の定義と](../activity-reports/active-users.md) 同じです。
 
 ### <a name="what-sharepoint-site-collections-are-included-in-the-sharepoint-reports"></a>SharePoint レポートにはどのような SharePoint サイト コレクションが含まれていますか。
 
-テンプレートアプリの現在のバージョンには、SharePoint チームサイトおよび SharePoint グループサイトのファイルアクティビティが含まれています。
+テンプレート アプリの現在のバージョンには、SharePoint チーム サイトと SharePoint グループ サイトからのファイル アクティビティが含まれています。
 
-### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>Microsoft 365 グループの使用状況レポートに含まれるグループ
+### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>Microsoft 365 グループ使用状況レポートに含まれるグループ
 
-テンプレートアプリの現在のバージョンには、Outlook グループ、Yammer グループ、および SharePoint グループからの使用法が含まれています。 Microsoft Teams や Planner に関連するグループは含まれません。
+テンプレート アプリの現在のバージョンには、Outlook グループ、グループ、および SharePoint グループYammer使用が含まれます。 Microsoft Teams または Planner に関連するグループは含めではありません。
 
-### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>更新されたバージョンのテンプレートアプリが利用可能になるのはいつですか?
+### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>テンプレート アプリの更新バージョンがいつ利用可能になるか。
 
-テンプレートアプリに対する大きな変更は、新しいレポートまたは新しいデータを含む年に2回リリースされます。 レポートに対する小さな変更は、より頻繁にリリースされる場合があります。
+テンプレート アプリの大きな変更は年に 2 回リリースされます。新しいレポートや新しいデータが含まれる場合があります。 レポートに対する軽微な変更は、より頻繁にリリースされる可能性があります。
 
-### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>テンプレートアプリのデータを既存のソリューションに統合することはできますか? 
+### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>テンプレート アプリのデータを既存のソリューションに統合できますか? 
 
-テンプレートアプリのデータは、Microsoft 365 Api (プレビュー) を使用して取得できます。 これらの製品が運用環境に出荷されると、 [Microsoft Graph レポート api](https://go.microsoft.com/fwlink/p/?linkid=848843)内にマージされます。 
+テンプレート アプリ内のデータは、Microsoft 365 API (プレビュー) を使用して取得できます。 製品に出荷すると、Microsoft Graph レポート API 内 [で結合されます](https://go.microsoft.com/fwlink/p/?linkid=848843)。 
 
-### <a name="are-there-plans-to-expand-the-template-app-to-show-usage-data-from-other-microsoft-products"></a>他の Microsoft 製品の利用状況データを表示するために、テンプレートアプリを拡張する予定はありますか。
+### <a name="are-there-plans-to-expand-the-template-app-to-show-usage-data-from-other-microsoft-products"></a>他の Microsoft 製品の使用状況データを表示するためにテンプレート アプリを展開する計画はありますか?
 
-今後の改善のために考慮されます。 更新プログラムについては、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap) を確認してください。
+これは、将来の改善のために考慮されます。 更新プログラム [については、Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap) を確認してください。
 
 ### <a name="how-can-i-pivot-by-company-information-in-active-directory"></a>Active Directory で会社情報をピボットする方法はありますか。
 
-会社情報は、テンプレートアプリの Active Directory フィールドの1つを含んでおり、 **製品ユーザーアクティビティ** レポートで事前に作成されたフィルターとして表示できます。 これは、 **UserState** テーブルの列として使用できます。
+会社情報は、テンプレート アプリの Active Directory フィールドの 1 つが含まれており、製品ユーザー アクティビティ レポートで事前に作成されたフィルター **として表示** できます。 これは、UserState テーブルの **列として使用** できます。
 
 ### <a name="is-it-possible-to-bring-in-additional-fields-from-active-directory"></a>Active Directory からその他のフィールドを持ち込むことはできますか。
 
-[Microsoft Graph レポート api](https://go.microsoft.com/fwlink/p/?linkid=848843)に接続することにより、Azure Active Directory から追加のフィールドを取得し、データセットに結合することで、このデータに対する追加のカスタマイズを行うことができます。 
+このデータに関する追加のカスタマイズは [、Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=848843) レポート API に接続して Azure Active Directory から追加のフィールドを取得し、データセットに参加することで可能です。 
 
-### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>複数のサブスクリプション間でテンプレートアプリの情報を集約することはできますか。
+### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>テンプレート アプリ内の情報を複数のサブスクリプションに集約できますか?
 
-現時点では、テンプレートアプリは、最初に接続したときに使用された資格情報に関連付けられているので、1つのサブスクリプションに対して使用されます。
+現時点では、テンプレート アプリは、最初に接続するために使用された資格情報に関連付けられているので、単一のサブスクリプション用です。
 
-### <a name="is-it-possible-to-see-usage-by-plan-ie-e1-e3"></a>プランの使用状況を確認することはできますか (つまり、E1, E3)?
+### <a name="is-it-possible-to-see-usage-by-plan-ie-e1-e3"></a>プラン別の使用状況 (E1、E3) を確認できますか?
 
-テンプレートアプリでは、使用状況は製品レベルごとに表示されます。 ユーザーに割り当てられているさまざまなサブスクリプションに関するデータが提供されますが、ユーザーのアクティビティをユーザーに割り当てられたサブスクリプションに関連付けることはできません。
+テンプレート アプリでは、使用状況は製品レベルごとに表されます。 ユーザーに割り当てられているさまざまなサブスクリプションに関するデータが提供されます。ただし、ユーザーアクティビティをユーザーに割り当てられたサブスクリプションに関連付けはできません。
 
-### <a name="is-it-possible-to-integrate-other-data-sets-into-the-template-app"></a>他のデータセットをテンプレートアプリに統合することはできますか。
+### <a name="is-it-possible-to-integrate-other-data-sets-into-the-template-app"></a>他のデータ セットをテンプレート アプリに統合できますか?
 
-Power BI Desktop を使用して Microsoft 365 Api (プレビュー) に接続すると、追加のデータソースをテンプレートアプリのデータと組み合わせることができます。
+Power BI Desktop を使用して Microsoft 365 API に (プレビューで) 接続すると、追加のデータ ソースをテンプレート アプリ データと組み合わせて使用できます。
 
-詳細については、「 [カスタマイズドキュメント](customize-reports.md)」を参照してください。
+詳細については、「カスタマイズ」ドキュメント [を参照してください](customize-reports.md)。
 
-### <a name="is-it-possible-to-see-the-top-users-reports-for-a-specific-timeframe"></a>特定の期間について "上位ユーザー" レポートを表示することはできますか?
+### <a name="is-it-possible-to-see-the-top-users-reports-for-a-specific-timeframe"></a>特定の時間枠の "トップ ユーザー" レポートを表示できますか?
 
-すべてのユーザーレベルレポートには、前月の集計データが表示されます。
+すべてのユーザー レベル レポートには、前月の集計データが表示されます。
 
-### <a name="will-the-template-app-be-localized"></a>テンプレートアプリはローカライズされますか。 
+### <a name="will-the-template-app-be-localized"></a>テンプレート アプリはローカライズされますか? 
 
-これは現在、ロードマップに含まれていません。
+これは現在、ロードマップに含まれています。
 
-### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>自分の組織で表示されているデータについて特定の質問があります。 どこにアクセスできますか?
+### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>組織で見ているデータについて、具体的な質問があります。 誰に手を差し伸びできますか?
 
-[管理センターアクティビティの概要] ページの [フィードバック] ボタンを使用するか、 [サポートケース](../contact-support-for-business-products.md) を開いてテンプレートアプリのヘルプを表示することができます。 
+管理センターのアクティビティ概要ページのフィードバック ボタンを使用するか、サポート ケースを開[](../contact-support-for-business-products.md)き、テンプレート アプリのヘルプを表示できます。 
 
 ### <a name="how-can-partners-access-the-data"></a>パートナーはどのような方法でデータにアクセスできますか。
 
-パートナーが管理者権限を委任されている場合は、ユーザーの代わりにテンプレートアプリに接続することができます。
+パートナーが管理者権限を委任している場合は、顧客に代わってテンプレート アプリに接続できます。
 
 ### <a name="can-i-hide-identifiable-information-such-as-user-group-and-site-names-in-reports"></a>ユーザー、グループ、レポート内のサイト名など、身元を特定できる情報を非表示にできますか。
 
-はい。「 [収集したデータを匿名で作成する](enable-usage-analytics.md#make-the-collected-data-anonymous)」を参照してください。
+はい、収集 [したデータを匿名にするを参照してください](enable-usage-analytics.md#make-the-collected-data-anonymous)。

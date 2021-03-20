@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '個人用メールボックスを、複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: f716bbd16be9f67189b19358ddf16a289f57f8e7
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.openlocfilehash: d5b33731908d2d555a8dd12d5d7fbbd462bd83ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737967"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915868"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
@@ -35,7 +35,7 @@ ms.locfileid: "49737967"
 
 - 共有メールボックスに変換する前に、変換するユーザー メールボックスにライセンスを割り当てる必要があります。 そうでない場合、変換オプションがメールボックスに表示されません。 ライセンスを削除した場合、メールボックスを変換するために再度それを戻す必要があります。 ライセンスは、メールボックスを共有に変換した後に、ユーザー アカウントから削除できます。
 
-- 共有メールボックスには、ライセンスを割り当てずに最大 50 GB のデータを保持できます。それより多くのデータを保持するには、ライセンスが割り当てられている必要があります。ライセンスを削除するために、一連の大きなメール (添付ファイルを含むメールなど) を共有メールボックスから削除して縮小する必要がある場合があります。
+- 共有メールボックスには、ライセンスが割り当てられていない場合、最大 50 GB のデータを使用できます。 これ以上のデータを保持するには、ライセンスを割り当てる必要があります。 ライセンスを削除するには、(添付ファイルがあるものなど) 大きなメールを多数削除してサイズを小さくする必要があります。
 
 - 古いユーザー アカウントは削除しないでください。 それは共有メールボックスの固定に必要です。 ユーザー アカウントを既に削除している場合、「[削除済みユーザーのメールボックスを変換する](#convert-the-mailbox-of-a-deleted-user)」 (削除されたユーザーのメールボックスを変換する) を参照してください。
 
@@ -49,7 +49,7 @@ ms.locfileid: "49737967"
 
 3. ユーザー メールボックスを選択します。 **[共有メールボックスに変換]** で **[変換]** を選択します。
 
-4. メールボックスが 50 GB 未満の場合は、ユーザーから[](../manage/remove-licenses-from-users.md)ライセンスを削除し、支払いを停止できます。 ユーザーのアカウントを削除しない。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「Microsoft [365 から元従業員を削除する」を参照してください](../add-users/remove-former-employee.md)。
+4. メールボックスが 50 GB より小さい場合は、ユーザー[](../manage/remove-licenses-from-users.md)からライセンスを削除し、支払いを停止できます。 ユーザーのアカウントを削除しない。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「Microsoft [365 から元従業員を削除する」を参照してください](../add-users/remove-former-employee.md)。
     
 > [!NOTE]
 > メールボックスの変換中にユーザーのパスワードをリセットする必要はありません。 ただし、パスワードがリセットされない場合、メールボックスの変換が終了した後も **元のユーザー名とパスワードは引き続き機能します**。
@@ -57,7 +57,7 @@ ms.locfileid: "49737967"
 共有メールボックスに関して知っておく必要のあるその他の情報については、「[共有メールボックスの詳細](about-shared-mailboxes.md)」および「[共有メールボックスを作成する](create-a-shared-mailbox.md)」を参照してください。
 
 > [!NOTE]
-> 共有メールボックスには、別途ライセンスが必要ではありません。 ただし、In-Place アーカイブを有効にするか、共有メールボックスに In-Place ホールドまたは訴訟ホールドを設定する場合は、exchange Online プラン 1 と Exchange Online Archiving または Exchange Online プラン 2 のライセンスをメールボックスに割り当てる必要があります。
+> 共有メールボックスには、別途ライセンスが必要ではありません。 ただし、In-Place アーカイブを有効にするか、共有メールボックスに In-Place 保留または訴訟ホールドを設定する場合は、Exchange Online Archiving または Exchange Online プラン 2 ライセンスを持つ Exchange Online プラン 1 をメールボックスに割り当てる必要があります。
 
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>削除済みユーザーのメールボックスを変換する
@@ -66,7 +66,7 @@ ms.locfileid: "49737967"
 
 1. [ユーザーのアカウントを復元](../add-users/restore-user.md)します。
 
-2. Microsoft 365 ライセンスが割り当てられている必要があります。
+2. Microsoft 365 ライセンスが割り当てられているか確認します。
 
 3. ユーザーのパスワードをリセットします。
     
@@ -96,11 +96,11 @@ ms.locfileid: "49737967"
 Exchange ハイブリッド環境でユーザー メールボックスを共有メールボックスに変換する方法の詳細については、以下を参照してください。
 
  - [オンプレミスの Exchange 環境でリモート共有メールボックスを作成または変更するコマンドレット](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [Exchange ハイブリッド展開でディレクトリ同期を実行した後、共有メールボックスが予期せずユーザー メールボックスに変換される](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [Exchange ハイブリッド展開でディレクトリ同期が実行された後、共有メールボックスが予期せずユーザー メールボックスに変換される](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]
-> 組織の管理役割グループまたは受信者の管理役割グループのメンバーである場合は、Exchange 管理シェル を使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared` などです。
+> 組織の管理または受信者の管理役割グループのメンバーである場合は、Exchange 管理シェルを使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared` などです。
 
 ## <a name="related-articles"></a>関連記事
 

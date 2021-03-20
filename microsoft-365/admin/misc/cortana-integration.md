@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントでサインインすると、ユーザーは Office 365 のエンタープライズ レベルのプライバシー、セキュリティ、コンプライアンスの約束を満たす Microsoft 365 エクスペリエンスで Cortana を使用してクラウドベースのアシスタンス サービスを受けることができます。
-ms.openlocfilehash: 72d7eb2e4195e3941c382d96c7e7319b94202707
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 00702724a44cd75bc68e9f7adac7170d81c080fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454363"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914800"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 の Cortana
 
@@ -37,7 +37,7 @@ Cortana は、個人の生産性アシスタントとして、メール、ファ
 
 - 他の Office 365 サービスと一致する Cortana エンタープライズ サービスは、Online Services Terms [(OST)](https://www.microsoft.com/licensing/product-licensing/products)に反映されているのと同じエンタープライズ レベルのプライバシー、セキュリティ、およびコンプライアンスの約束を満たしています。
 
-- ブリーフィング メールや Play My Emails などの新しい Microsoft 365 エクスペリエンスは、Cortana エンタープライズ サービスを使用して有効にされ、それらの約束に完全に準拠します。 これらの機能は現在、世界中で利用できます (標準のマルチテナント)。 使用状況の場所の検索の詳細については、「アカウントの追加のプロパティ値を表示 [する」を参照してください](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts)。
+- ブリーフィング メールや Play My Emails などの新しい Microsoft 365 エクスペリエンスは、Cortana エンタープライズ サービスを使用して有効にされ、それらの約束に完全に準拠します。 これらの機能は現在、世界中で利用できます (標準のマルチテナント)。 使用状況の場所の検索の詳細については、「アカウントの追加のプロパティ値を表示 [する」を参照してください](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)。
 
 - ユーザーは、Windows 10 (バージョン 2004 以降) の Cortana を通じて、ここで説明する Cortana エンタープライズ サービスや、Outlook for iOS や Android などのクライアント アプリケーションに個別のライセンス条項が適用される場合があります。 
 
@@ -77,9 +77,9 @@ Windows 10 バージョン 2004 以降の Cortana は、Online Services Terms [(
 
 管理者は、Experience\AllowCortana MDM ポリシーを使用するか、グループ ポリシー:コンピューター構成\管理用テンプレート\Windows コンポーネント\Search\Allow Cortana を使用して、組織用に Windows 10 で Cortana を構成できます。
 
-Windows 10 バージョン 2004 から、Cortana は Windows にプレインストールされたユニバーサル Windows プラットフォーム (UWP) アプリであり、Microsoft Store を通じて定期的に更新されます。 Cortana の最新の更新プログラムを受信するには、Microsoft Store を通じて [更新プログラムを有効にする必要があります](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store)。
+Windows 10 バージョン 2004 から、Cortana は Windows にプレインストールされたユニバーサル Windows プラットフォーム (UWP) アプリであり、Microsoft Store を通じて定期的に更新されます。 Cortana の最新の更新プログラムを受信するには、Microsoft Store を通じて [更新プログラムを有効にする必要があります](/windows/configuration/stop-employees-from-using-microsoft-store)。
 
-[Windows 10 での Cortana の詳細](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+[Windows 10 での Cortana の詳細](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
 ### <a name="cortana-voice-assistance-in-teams"></a>Teams での Cortana 音声サポート
 
@@ -101,7 +101,7 @@ Cortana 音声アシスタンスは、テナントに対して既定で有効に
 
 4. デバイスで Cortana **音声アシ****スタンス** が必要かどうかに応じて、トグルを [オン] または [オフ] に移動します。
 
-[Teams での Cortana 音声サポートの詳細](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
+[Teams での Cortana 音声サポートの詳細](/microsoftteams/cortana-in-teams)
 
 ### <a name="conversational-ai-in-outlook-for-ios-with-cortana"></a>Cortana を使用した Outlook for iOS での会話型 AI
 
@@ -144,13 +144,13 @@ Cortana は、タスクとコミットメントを含む、カスタマイズさ
 
 ### <a name="how-to-opt-out-of-briefing-email"></a>ブリーフィングメールをオプトアウトする方法
 
-管理者は、Exchange Online で PowerShell を使用して [組織のブリー](https://docs.microsoft.com/briefing/be-admin) フィングを構成できます。 ユーザーは、メッセージのフッターで [登録解除] を選択して、Cortana の **ブリー** フィング メールをオプトアウトできます。
+管理者は、Exchange Online で PowerShell を使用して [組織のブリー](/briefing/be-admin) フィングを構成できます。 ユーザーは、メッセージのフッターで [登録解除] を選択して、Cortana の **ブリー** フィング メールをオプトアウトできます。
 
 [ブリーフィングメールの詳細](https://support.microsoft.com/help/4558259)
 
 引き続き、組織の生産性を高めるのに役立つ、上記のようなエクスペリエンスを引き続き紹介します。
 
-[Microsoft コンプライアンス サービスの詳細](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
+[Microsoft コンプライアンス サービスの詳細](/compliance/regulatory/offering-home)
 
 ## <a name="how-is-the-delivery-of-cortana-enterprise-services-different-from-the-delivery-of-other-cortana-features-i-may-have-previously-experienced"></a>Cortana エンタープライズ サービスの配信が、以前に経験した他の Cortana 機能の配信とどのように異なるか。
 

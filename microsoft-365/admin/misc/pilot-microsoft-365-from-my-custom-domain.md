@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 2つのテストアカウントのみを使用して、カスタムドメインから Microsoft 365 メールボックスに電子メール機能をパイロットする方法について説明します。
-ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 019f1786756a036132f95fd5e8ef8a1d42cd515b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688219"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914716"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタムドメインから Microsoft 365 をパイロットする
 
@@ -32,7 +32,7 @@ ms.locfileid: "49688219"
 
 - Microsoft 365 にこれらのレコードを管理させるのではなく、DNS ホスティングプロバイダーでMicrosoft 365 DNS レコードを管理する必要があります。
 
-    詳細については、「[DNSレコードを追加してドメインに接続する](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」をご覧ください。
+    詳細については、「[DNSレコードを追加してドメインに接続する](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)」をご覧ください。
 
 - 他の電子メールサーバーのユーザーの空き時間情報は利用できません。
 
@@ -115,22 +115,22 @@ Microsoft 365 では、スパム保護に Exchange Online Protection（EOP） �
 
 Microsoft 365 または Office365 で次の手順が完了したことを確認してください。
 
-1. コネクタを設定するには、開始する前にアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「[EOP の機能のアクセス許可](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop)」トピックの「Microsoft 365 および Office 365 コネクタ」の項目を参照してください。
+1. コネクタを設定するには、開始する前にアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「[EOP の機能のアクセス許可](../../security/office-365-security/feature-permissions-in-eop.md)」トピックの「Microsoft 365 および Office 365 コネクタ」の項目を参照してください。
 
 2. EOP か ExchangeOnline でメール サーバーからインターネットにメールを中継する場合は、次のいずれかの方法を実行します。
 
-   - Microsoft 365 または Office 365 の承認済みドメインと一致するサブジェクト名で構成されている証明書を使用します。 証明書の共通名、またはサブジェクトの別名を組織のプライマリ SMTP ドメインと一致させることをお勧めします。 詳細については、「[オンプレミスのメール環境の前提条件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)」を参照してください。
+   - Microsoft 365 または Office 365 の承認済みドメインと一致するサブジェクト名で構成されている証明書を使用します。 証明書の共通名、またはサブジェクトの別名を組織のプライマリ SMTP ドメインと一致させることをお勧めします。 詳細については、「[オンプレミスのメール環境の前提条件](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)」を参照してください。
 
    または
 
    - 組織の送信者のドメインとサブドメインがすべて Microsoft 365 または Office 365 の承認済みドメインとして構成されていることを確認します。
 
-   承認済みドメインの定義に関する詳細は、「[Exchange Online で承認済みドメインを管理する](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)」および「[Exchange Online でサブドメインのメール フローを有効にする](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)」をご覧ください。
+   承認済みドメインの定義に関する詳細は、「[Exchange Online で承認済みドメインを管理する](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)」および「[Exchange Online でサブドメインのメール フローを有効にする](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)」をご覧ください。
 
-3. Microsoft 365 または Office 365 からメール サーバーへとメールを配信するのに、メール フロー ルール (トランスポート ルールとも呼ばれます) を使用するか、ドメイン名を使用するかを決定します。 ほとんどの企業は、すべての承認済みドメインにメールを配信することを選択します。 詳細については、「[シナリオ: Exchange Online での条件付きメール ルーティング](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)」を参照してください。
+3. Microsoft 365 または Office 365 からメール サーバーへとメールを配信するのに、メール フロー ルール (トランスポート ルールとも呼ばれます) を使用するか、ドメイン名を使用するかを決定します。 ほとんどの企業は、すべての承認済みドメインにメールを配信することを選択します。 詳細については、「[シナリオ: Exchange Online での条件付きメール ルーティング](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)」を参照してください。
 
 > [!NOTE]
-> 「[Exchange Online でのメール フロー ルールの処理](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」の説明に従って、メール フロー ルールを設定できます。 たとえば、現在メールが配布リストを介して複数のサイトに送信されている場合は、コネクタ付きのメール フロー ルールを使用できます。
+> 「[Exchange Online でのメール フロー ルールの処理](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」の説明に従って、メール フロー ルールを設定できます。 たとえば、現在メールが配布リストを介して複数のサイトに送信されている場合は、コネクタ付きのメール フロー ルールを使用できます。
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Microsoft 365 または Office 365 からメール サーバーへのコネクタを設定します。
 
@@ -140,13 +140,13 @@ Microsoft 365 または Office 365 にコネクタを作成するには、**[管
 
 ウィザードを起動するには、プラス記号 **+** をクリックします。 最初の画面で、**From** Office 365 および **To** 組織のメール サーバーを選択します。
 
-**[次へ]** をクリックして、ウィザードの指示に従います。 詳細情報については、**[ヘルプ]** または **[詳細情報]** リンクをクリックします。 ウィザードに従って設定を行います。 最後に、コネクタが検証されたことを確認します。 コネクタが検証されない場合は、表示されているメッセージをダブルクリックして詳細を表示させ、問題の解決のために「[コネクタを検証する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)」を参照します。
+**[次へ]** をクリックして、ウィザードの指示に従います。 詳細情報については、**[ヘルプ]** または **[詳細情報]** リンクをクリックします。 ウィザードに従って設定を行います。 最後に、コネクタが検証されたことを確認します。 コネクタが検証されない場合は、表示されているメッセージをダブルクリックして詳細を表示させ、問題の解決のために「[コネクタを検証する](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)」を参照します。
 
 
 
 ### <a name="step-7-update-dns-records-at-your-dns-hosting-provider"></a>手順 7: DNS ホスティング プロバイダーで DNS レコードを更新する
 
-DNS ホスティングプロバイダーの Web サイトにサインインし、「[DNS レコードを追加してドメインに接続する](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」の手順に従います。
+DNS ホスティングプロバイダーの Web サイトにサインインし、「[DNS レコードを追加してドメインに接続する](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)」の手順に従います。
 
 **次の2つの例外を設けてください。**
 
@@ -190,4 +190,3 @@ DNS ホスティングプロバイダーの Web サイトにサインインし�
 2 名のテストユーザーのみを移動し、ユーザー A とユーザー B の両方が Outlook を使用しているため、新しいOutlookプロファイルで古い .PST ファイルを開き、メッセージ、カレンダーアイテム、連絡先などをコピーすることで、電子メールを移動できます。  詳細については、「[Outlook の .pst ファイルからメール、連絡先、カレンダーをインポートする](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac)」をご覧ください。
 
 それらが Microsoft 365 メールボックスの適切な場所にインポートされると、アイテムはどこのどのデバイスからでもアクセスできるようになります。
-

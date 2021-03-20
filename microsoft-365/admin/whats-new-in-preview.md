@@ -21,12 +21,12 @@ description: Microsoft 365 管理センター - 今月追加された機能に�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 833f782e071e06d837ca5eacfcb72e2d6e16c8fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717635"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913936"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -41,13 +41,13 @@ ms.locfileid: "50717635"
 
 他の Microsoft クラウド サービスの新機能を知りたい場合は、次の手順を実行します。
 
-- [Azure Active Directory の新機能](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
-- [Exchange 管理センターの新機能](https://docs.microsoft.com/Exchange/whats-new)
-- [Microsoft Intune の新機能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Microsoft 365 コンプライアンス センターの新機能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [Microsoft 365 Defender の新機能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
-- [SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office 更新プログラム](https://docs.microsoft.com/OfficeUpdates/)
+- [Azure Active Directory の新機能](/azure/active-directory/fundamentals/whats-new)
+- [Exchange 管理センターの新機能](/Exchange/whats-new)
+- [Microsoft Intune の新機能](/mem/intune/fundamentals/whats-new)
+- [Microsoft 365 コンプライアンス センターの新機能](/Office365/SecurityCompliance/whats-new)
+- [Microsoft 365 Defender の新機能](../security/mtp/whats-new.md)
+- [SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)
+- [Office 更新プログラム](/OfficeUpdates/)
 
 ## <a name="ignite-2021-march"></a>Ignite 2021 (3 月)
 
@@ -104,7 +104,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 - [ユーザー] **に移動** し、[その他の操作] メニューの [ **優先度アカウントの** 管理] を選択して、ユーザーをリストに追加します。
 - [セットアップ] **に移動し**、セットアップ タスクを見 **つけて、最** も重要なアカウントを監視し、[作業を開始する] **を選択します**。
 
-優先度アカウントの詳細については、「優先度アカウントの監視 [」を参照してください](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
+優先度アカウントの詳細については、「優先度アカウントの監視 [」を参照してください](./setup/priority-accounts.md)。
 
 ### <a name="search-faster-and-get-better-results-from-any-page"></a>検索を高速化し、任意のページからより良い結果を得る
 
@@ -155,7 +155,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 - DKIM セットアップに関する問題の解決方法
 - Intune ユーザー登録エラーの診断
 
-また、Microsoft 365 管理センターに既に表示されている新しいサポート エクスペリエンスと改善されたサポート エクスペリエンスを、他の管理センターの一部に展開しています。 Teams 管理センターとセキュリティおよびコンプライアンス管理センターには、既にこの新しいエクスペリエンスがあります。 すぐに **、Exchange 管理センター** **、SharePoint** 管理センター、および Office.com管理者向けこの新しいヘルプ エクスペリエンスと共に更新されます。
+また、Microsoft 365 管理センターに既に表示されている新しいサポート エクスペリエンスと改善されたサポート エクスペリエンスを、他の管理センターの一部に展開しています。 Teams 管理センターとセキュリティおよびコンプライアンス管理センターには、既にこの新しいエクスペリエンスがあります。 すぐに **、Exchange 管理センター** **、SharePoint** 管理センター、および Office.com 管理者向けこの新しいヘルプ エクスペリエンスと共に更新されます。
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Microsoft Planner を使用して変更を管理する
 
@@ -163,17 +163,17 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 
 ![[基本設定] ボタンの横にあるコマンド バーで [プランナーの同期] が強調表示されたメッセージ センター ページ。](../media/MAC-WN-MCPlannerSync.png)
 
-詳細については、この記事とビデオを参照して、その動作を確認してください。Planner でメッセージ センターの投稿 [を追跡する](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+詳細については、この記事とビデオを参照して、その動作を確認してください。Planner でメッセージ センターの投稿 [を追跡する](/Office365/Planner/track-message-center-tasks-planner)
 
 ### <a name="documentation-training-and-videos"></a>ドキュメント、トレーニング、およびビデオ
 
 - Microsoft Ignite-- The Virtual Hub に新しく、[ちょうど間に合います](https://adoption.microsoft.com/virtual-hub/)。 IT のプロと開発者向けのテクニカル トレーニングについて詳しい説明をします。 今年の Ignite 管理者トラックの名前である、#SIDETRACKED 20 件の新しいビデオをすばやく見つける。
 - [Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) ビデオ シリーズの新機能: 今月は、Whiteboard for Teams および web で利用できる新機能、Azure AD へのユーザー プロビジョニングを自動化する方法、Teams での新しい Power Automate トリガーとアクションなどについて説明します。 そして、来月に向け、Ignite で起こっているすべての素晴らしいことを要約します。
-- 最初にソリューションに焦点を当 [てた Microsoft 365](https://docs.microsoft.com/microsoft-365) ドキュメント ページの再設計を行いました。 このページで利用可能になった新しいソリューションを強調表示しますので、目を離す必要があります。
+- 最初にソリューションに焦点を当 [てた Microsoft 365](/microsoft-365) ドキュメント ページの再設計を行いました。 このページで利用可能になった新しいソリューションを強調表示しますので、目を離す必要があります。
 
 ![Microsoft 365 ソリューションドキュメントの新しいランディング ページには、「リモート ワーカーの権限を与える」のようなソリューションが含まれています。](../media/MAC-WN-M365Docspage.png)
 
-## <a name="july-2020"></a>2020 年 7 月
+## <a name="july-2020"></a>2020 年7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>Ignite 2020 の準備
 
@@ -221,7 +221,7 @@ Microsoft で Ignite シーズンに移行する中で、セッション中に�
 
 月次エンタープライズ チャネルのリリースと併せて、既存の更新プログラム チャネルの名前も変更しています。 たとえば、月次チャネルの名前が現在のチャネルに変更されています。 新しい名前は、2020 年 6 月 9 日に有効になります。
 
-詳細については [、「Microsoft 365 Apps の更新チャネルの変更点」を参照してください](https://docs.microsoft.com/DeployOffice/update-channels-changes)。
+詳細については、「[Microsoft 365 Apps の更新プログラム チャネルの変更](/DeployOffice/update-channels-changes)」を参照してください。
 
 ### <a name="new-admin-roles"></a>新しい管理者ロール
 
@@ -231,7 +231,7 @@ Microsoft 365 管理センターに新しい Azure Active Directory 管理者ロ
 - ネットワーク管理者の役割を使用すると、ユーザーはネットワークの場所を管理し、Microsoft 365 Software as a Service アプリのネットワークインサイトを確認できます。
 - プリンター管理者の役割は、プリンターとプリンター接続のすべての側面を管理するアクセス許可を付与します。
 - プリンター技術者は、ユーザーがプリンターを登録および登録解除し、プリンターの状態を更新できるプリンター管理者の役割のサブセットです。
-これらの役割の詳細については、「管理者ロールについて [」を参照してください](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+これらの役割の詳細については、「管理者ロールについて [」を参照してください](./add-users/about-admin-roles.md)。
 
 ### <a name="export-groups-list"></a>グループリストのエクスポート
 
@@ -239,7 +239,7 @@ Microsoft 365 管理センターに新しい Azure Active Directory 管理者ロ
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 ソリューションおよびアーキテクチャ センター
 
-ちょうど今月、Microsoft 365 ソリューションとアーキテクチャ センターという新しいサイトをリリースしました。これにより、安全で準拠したコラボレーションのための統合 [https://docs.microsoft.com](https://docs.microsoft.com) [された Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)ソリューションを理解し、計画し、実装するために必要な技術的なガイダンスをまとめました。 このセンターには、次の情報が表示されます。
+ちょうど今月、Microsoft 365 ソリューションとアーキテクチャ センターという新しいサイトをリリースしました。これにより、安全で準拠したコラボレーションのための統合 [https://docs.microsoft.com]() [された Microsoft 365](../solutions/index.yml)ソリューションを理解し、計画し、実装するために必要な技術的なガイダンスをまとめました。 このセンターには、次の情報が表示されます。
 
 - 基礎ソリューションのガイダンス
 - ワークロード ソリューションとシナリオ のガイダンス
@@ -250,7 +250,7 @@ Microsoft 365 管理センターに新しい Azure Active Directory 管理者ロ
 ### <a name="docs-training-and-videos-may"></a>ドキュメント、トレーニング、ビデオ (5 月)
 
 - **Microsoft 365** ビデオ シリーズの新機能: 今月は、Teams 管理者とセキュリティ/コンプライアンス センター、Planner とメッセージ センターとの統合、Microsoft Teams の新しい 3x3 ビデオ レイアウトの新しいサポート エクスペリエンスについて説明します。 
-- [Microsoft 365 管理センターの](https://docs.microsoft.com/microsoft-365/admin/)ヘルプ ハブ ページが更新され、必要な情報をすばやく見つけるのに役立ちます。 今すぐそのページを見に行く場合は、重要な更新と変更を通知するカードが追加されました。
+- [Microsoft 365 管理センターの](./index.yml)ヘルプ ハブ ページが更新され、必要な情報をすばやく見つけるのに役立ちます。 今すぐそのページを見に行く場合は、重要な更新と変更を通知するカードが追加されました。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -385,7 +385,7 @@ Microsoft 365 管理センターを使用して、iOS 用 SharePoint モバイ�
 
 これは文字通りです!!!
 
-### <a name="groups"></a>Groups
+### <a name="groups"></a>グループ
 
 今月のグループ領域の変更点を次に示します。
 

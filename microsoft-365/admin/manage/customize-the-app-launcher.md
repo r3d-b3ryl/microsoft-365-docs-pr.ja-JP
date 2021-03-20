@@ -23,23 +23,23 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'カスタム タイルをアプリ 起動ツールに追加して、メール、ドキュメント、アプリ、SharePoint サイト、外部サイト、その他のリソースへのクイック リンクを作成します。 '
-ms.openlocfilehash: 809788033d0e8ef414511af5ab89857974d8b175
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: cc4edbfadc5c9555e04d04de8f7368dd86aa9974
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766445"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915436"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
-Microsoft 365 では、アプリ 起動ツールを使用して、メール、予定表、ドキュメント、アプリをすばやく簡単に取得できます (詳細[を参照)。](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) これらは、Microsoft 365 で取得するアプリと[、SharePoint ストア](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43)または Azure サーバーから追加するカスタム アプリ[AD。](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)
+Microsoft 365 では、アプリ 起動ツールを使用して、メール、予定表、ドキュメント、アプリをすばやく簡単に取得できます (詳細[を参照)。](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) これらは、Microsoft 365 で取得するアプリと[、SharePoint ストア](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43)または Azure サーバーから追加するカスタム アプリ[AD。](/previous-versions/office/office-365-api/)
   
 SharePoint サイト、外部サイト、レガシー アプリなどをポイントするカスタム タイルをアプリ起動ツールに追加できます。カスタム タイルは、アプリ起動ツールの [ **すべて**] のアプリの下に表示されますが、[ **ホーム**] アプリにピン留めしたり、同じ操作を行うようにユーザーに指示したりできます。この操作により、関連サイト、アプリ、仕事に必要なリソースへのアクセスが容易になります。以下の例では、"Contoso Portal" と呼ばれるカスタム タイルを使って、組織の SharePoint イントラネット サイトにアクセスします。 
   
@@ -80,4 +80,3 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
 ## <a name="whats-next"></a>次の手順
 
 アプリ起動ツールにタイルを追加する以外に、ナビゲーション バーにアプリ 起動ツールタイルを追加できます (詳細[については、以下を参照してください](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985))。 組織のブランドに合わせて Microsoft 365 の外観をカスタマイズするには [、「Microsoft 365](../setup/customize-your-organization-theme.md)テーマのカスタマイズ」を参照してください。
-  

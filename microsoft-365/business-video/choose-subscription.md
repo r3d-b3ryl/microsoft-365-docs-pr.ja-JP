@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織に最適な Microsoft 365 サブスクリプションについて説明します。
-ms.openlocfilehash: 9bb72b01c7b1119f96120702e7b4f9c80aa4e729
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422821"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913756"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションの選択
 
@@ -74,4 +74,4 @@ ms.locfileid: "50422821"
 
 \*\*\* 自動拡張を有効にした場合の無制限のアーカイブ。
 
-Microsoft 365 Business Premium を他の Microsoft 365 プランを含む他の製品と比較するには、「中小規模企業向け [ライセンス Microsoft 365」を参照してください](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。
+Microsoft 365 Business Premium を他の Microsoft 365 プランを含む他の製品と比較するには、「中小規模企業向け [ライセンス Microsoft 365」を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。

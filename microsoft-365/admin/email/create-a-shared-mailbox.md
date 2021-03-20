@@ -23,17 +23,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
-ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287235"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915880"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
 > [!NOTE]
-> 組織でハイブリッド Exchange 環境を使用する場合は、オンプレミスの Exchange 管理センター (EAC) を使用して、共有メールボックスを作成および管理する必要があります。 「[Exchange 管理センターで共有メールボックスを作成する](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019&preserve-view=true.)」を参照してください。<br><br>
+> 組織でハイブリッド Exchange 環境を使用する場合は、オンプレミスの Exchange 管理センター (EAC) を使用して、共有メールボックスを作成および管理する必要があります。 「[Exchange 管理センターで共有メールボックスを作成する](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)」を参照してください。<br><br>
 > 共有メールボックスと Outlook 用 Microsoft 365 グループのどちらを作成すればよいかわからない場合は、「[グループを比較する](../create-groups/compare-groups.md)」のガイダンスを参照してください。 現在、共有メールボックスを Microsoft 365 グループに移行することはできません。 この機能をご希望の場合は、[こちらから投票](https://go.microsoft.com/fwlink/?linkid=871518)してお知らせください。
 
 共有メールボックスの作成は簡単なので、ユーザーのグループが共通のメール アドレス (info@contoso.com など) を監視して、そこからメールを送信することができます。共有メールボックスに送信されたメッセージにグループのユーザーが返信すると、そのメールは、個別のユーザーからではなく共有メールボックスから送信されたように表示されます。
@@ -153,13 +153,13 @@ ms.locfileid: "50287235"
 4. **[サインイン状態を編集する]** ポップアップで、[このユーザーのサインインをブロックする] が選択されていることを確認し、**[保存]**、**[閉じる]** の順に選択します。
 ::: moniker-end
 
-Azure AD PowerShell を使用してアカウントのサインインをブロックする方法 (同時に多数のアカウントをブロックする方法など) の詳細については、「[Office 365 PowerShell でユーザー アカウントをブロックする](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell)」を参照してください。
+Azure AD PowerShell を使用してアカウントのサインインをブロックする方法 (同時に多数のアカウントをブロックする方法など) の詳細については、「[Office 365 PowerShell でユーザー アカウントをブロックする](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md)」を参照してください。
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>共有メールボックスを Outlook に追加する
 
 お客様の職場で自動マッピングを有効にしている場合 (既定では、ほとんどのユーザーが有効にします)、共有メールボックスは、ユーザーが Outlook を閉じて再起動した後にユーザーの Outlook アプリに自動的に表示されます。 
 
-自動マッピングはユーザーのメールボックスに設定されますが、共有メールボックスには設定されません。   つまり、セキュリティ グループを使用して、共有メールボックスへのアクセス権を持つユーザーを管理する場合、自動マッピングは機能しません。 そのため、自動マッピングが必要な場合は、明示的にアクセス許可を割り当てる必要があります。 自動マッピングは既定でオンになっています。 この機能をオフにする方法については、「[Outlook for Office 365 で共有メールボックスの自動マッピングを削除する方法](https://docs.microsoft.com/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox)」を参照してください。
+自動マッピングはユーザーのメールボックスに設定されますが、共有メールボックスには設定されません。   つまり、セキュリティ グループを使用して、共有メールボックスへのアクセス権を持つユーザーを管理する場合、自動マッピングは機能しません。 そのため、自動マッピングが必要な場合は、明示的にアクセス許可を割り当てる必要があります。 自動マッピングは既定でオンになっています。 この機能をオフにする方法については、「[Outlook for Office 365 で共有メールボックスの自動マッピングを削除する方法](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox)」を参照してください。
 
 Outlook の共有メールボックスの詳細については、次を参照してください。
 
@@ -209,5 +209,3 @@ Outlook の共有メールボックスの詳細については、次を参照し
 [共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md)
 
 [共有メールボックスの問題を解決する](resolve-issues-with-shared-mailboxes.md)
-
-

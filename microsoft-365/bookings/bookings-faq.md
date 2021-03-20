@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft Bookings のよく寄せられる質問。
-ms.openlocfilehash: a293bf86225731917068712c2887ea79c2540039
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454291"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913828"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft Bookings に関するよく寄せられる質問
 
@@ -184,7 +184,7 @@ Bookings にスタッフのタイム ゾーンを設定する準備はありま�
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>テナント ドメイン名として電子メール通知を送信できますか?
 
-電子メール アドレスは、Microsoft 365 設定レベルで制御および管理され、ドメイン構成設定に依存します。 詳細については、こちらを参照 [してください](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)。
+電子メール アドレスは、Microsoft 365 設定レベルで制御および管理され、ドメイン構成設定に依存します。 詳細については、こちらを参照 [してください](/powershell/module/exchange/get-accepteddomain)。
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>SMS メッセージを送信する機能は、別のサービスまたは特定の構成に依存していますか?
 
@@ -218,7 +218,7 @@ Bookings Web アプリ内でタイム オフを記録すると、常にスタッ
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>Bookings カレンダーを複製または複製して、簡単にスケーリングできるようテンプレート化できますか?
 
-このプロセスでは、Graph API を使用してメールボックスの詳細を取得し、その詳細を使用して新しいメールボックスを作成します。 API のドキュメントは [ここです](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
+このプロセスでは、Graph API を使用してメールボックスの詳細を取得し、その詳細を使用して新しいメールボックスを作成します。 API のドキュメントは [ここです](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 
 ### <a name="what-reporting-is-available-in-bookings"></a>Bookings で利用できるレポート
 
@@ -360,19 +360,19 @@ Bookings がスタッフ メンバーの予定表と適切に同期するには�
 
   - [Microsoft Bookings を有効または無効にする](turn-bookings-on-or-off.md)
 
-  - [ユーザーを個別または一括で追加する](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
+  - [ユーザーを個別または一括で追加する](../admin/add-users/add-users.md?view=o365-worldwide.)
 
   - [Bookings にスタッフを追加する](add-staff.md)
 
-  - [テンプレートの定義後に自動化する API コンポーネント](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
+  - [テンプレートの定義後に自動化する API コンポーネント](/graph/api/bookingbusiness-post-bookingbusinesses)
 
   - [表示用の予約カレンダーへの URL](https://outlook.office.com/bookings/calendar)
 
-  - [Bookings コンプライアンス ポリシー](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
+  - [Bookings コンプライアンス ポリシー](/compliance/regulatory/gdpr-dsr-Office365?view=o365-worldwide#bookings)
 
   - [予約ページをカスタマイズして公開する](customize-booking-page.md)
 
-  - [テナント メールボックスの構成](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
+  - [テナント メールボックスの構成](/powershell/module/exchange/get-accepteddomain)
 
   - [グループ予約](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

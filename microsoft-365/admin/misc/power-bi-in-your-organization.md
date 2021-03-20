@@ -18,13 +18,13 @@ search.appverid:
 - PWB150
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
-description: Power BI と、組織内のユーザーがこのビジネス分析サービスをどのように使用できるかについて説明します。
-ms.openlocfilehash: e549ff25b7db41d6a582b4af0506d67787df7e0d
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+description: Power BI について、および組織内のユーザーがこのビジネス分析サービスを使用する方法について学習します。
+ms.openlocfilehash: c2f07c4e1e6da814eb31186ba0c132021479ad4a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906587"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914704"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -36,11 +36,11 @@ Microsoft Power BI は、直感的な新しい方法でデータの可視化、�
   
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Power BI は、国内、地域、および業界固有のコンプライアンス要件を満たしていますか?
 
-Power BI コンプライアンスの詳細については、「 [Microsoft Trust Center](https://go.microsoft.com/fwlink/?LinkId=785324)」を参照してください。
+Power BI コンプライアンスの詳細については [、「Microsoft Trust Center」を参照してください](https://go.microsoft.com/fwlink/?LinkId=785324)。
   
 ## <a name="how-do-users-sign-up-for-power-bi"></a>ユーザーが Power BI にサインアップする方法
 
-管理者であるユーザーは、[Power BI Web サイト](https://powerbi.microsoft.com/en-us/)を通じて Power BI にサインアップできます。 Microsoft 365 管理センターの [購入サービス] ページでサインアップすることもできます。 管理者が Power BI にサインアップすると、アクセス権が必要なユーザーにユーザー サブスクリプション ライセンスを割り当てることができます。
+管理者であるユーザーは、[Power BI Web サイト](https://powerbi.microsoft.com/en-us/)を通じて Power BI にサインアップできます。 Microsoft 365 管理センターの [購入サービス] ページからサインアップすることもできます。 管理者が Power BI にサインアップすると、アクセス権が必要なユーザーにユーザー サブスクリプション ライセンスを割り当てることができます。
   
 また、組織の個々のユーザーは、[Power BI Web サイト](https://powerbi.microsoft.com/en-us/)を通じて Power BI にサインアップできる場合もあります。 組織のユーザーが Power BI にサインアップする場合、そのユーザーには Power BI ライセンスが自動的に割り当てられます。
   
@@ -48,30 +48,30 @@ Power BI コンプライアンスの詳細については、「 [Microsoft Trust
 
 組織のユーザーには、以下のように 3 種類のシナリオが考えられます。
   
-### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>シナリオ 1: 組織に既存の Microsoft 365 環境が既に存在し、Power BI にサインアップするユーザーには既に Microsoft 365 アカウントがあります。
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>シナリオ 1: 組織には既に既存の Microsoft 365 環境が存在し、Power BI にサインアップするユーザーには既に Microsoft 365 アカウントがあります。
 
 このシナリオでは、テナント (たとえば、contoso.com) 内で、ユーザーには職場や学校のアカウントが既にあり、まだ Power BI を使っていない場合、マイクロソフトが単にそのアカウントのプランをライセンス認証することになります。ユーザーには、Power BI サービスの使い方が自動的に通知されます。
   
-### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>シナリオ 2: 組織に既存の Microsoft 365 環境があり、Power BI にサインアップするユーザーに Microsoft 365 アカウントがない。
+### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>シナリオ 2: 組織には既存の Microsoft 365 環境が存在し、Power BI にサインアップするユーザーには Microsoft 365 アカウントはありません。
 
-このシナリオでは、ユーザーは組織のドメイン (たとえば、contoso.com) に電子メールアドレスを持っていますが、まだ Microsoft 365 アカウントを持っていません。 この場合、ユーザーは Power BI にサインアップすることができ、自動的にアカウントが割り当てられます。 この手順で、ユーザーは Power BI サービスにアクセスできるようになります。 たとえば、ナンシーという名前の従業員が勤務先の電子メールアドレス (Nancy@contoso.com など) を使用してサインアップする場合、Microsoft は自動的にナンシーを Contoso Microsoft 365 環境のユーザーとして追加し、そのアカウントに対して Power BI をアクティブ化します。
+このシナリオでは、ユーザーは組織のドメイン (contoso.com など) に電子メール アドレスを持っていますが、まだ Microsoft 365 アカウントを持っていません。 この場合、ユーザーは Power BI にサインアップすることができ、自動的にアカウントが割り当てられます。 この手順で、ユーザーは Power BI サービスにアクセスできるようになります。 たとえば、Nancy という名前の従業員が自分の仕事用メール アドレス (Nancy@contoso.com など) を使用してサインアップした場合、Microsoft は自動的に Contoso Microsoft 365 環境で Nancy をユーザーとして追加し、そのアカウントの Power BI をアクティブにします。
   
-### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>シナリオ 3: お客様の組織では、Microsoft 365 環境が電子メールドメインに接続されていません。
+### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>シナリオ 3: 組織には、電子メール ドメインに接続されている Microsoft 365 環境はありません。
 
-組織が Power BI を利用するために必要な管理操作はありません。
+組織が Power BI を利用するために必要な管理アクションはありません。
   
 > [!IMPORTANT]
-> 組織にメール ドメインが複数あり、すべてのメール アドレスの拡張子を同じテナントに含める場合は、ユーザーがプライマリ テナントを作成する前に、そのテナントにすべてのメール アドレス ドメインを追加します。 テナントが作成された後で、ユーザーをテナント間で自動的に移動する方法は、サポートされていません。 このプロセスの詳細については、「 [複数のドメインが存在する場合、ユーザーが追加されるテナントを制御](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) する方法」を参照してください。この記事の後半で、「 [Office 365 online にドメインを追加](../setup/add-domain.md) する」を参照してください。
+> 組織にメール ドメインが複数あり、すべてのメール アドレスの拡張子を同じテナントに含める場合は、ユーザーがプライマリ テナントを作成する前に、そのテナントにすべてのメール アドレス ドメインを追加します。 テナントが作成された後で、ユーザーをテナント間で自動的に移動する方法は、サポートされていません。 このプロセスの詳細については、「複数のドメインがある場合、ユーザーが追加されるテナントを制御できますか [?」](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) および「Add a domain to [Office](../setup/add-domain.md) online」を参照してください。
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>組織側での現在のユーザー ID の管理方法は、どのように変わりますか?
 
-組織に既存の Microsoft 365 環境が既に存在し、組織内のすべてのユーザーに Microsoft 365 アカウントがある場合、id 管理は変更されません。
+組織に既に既存の Microsoft 365 環境が存在し、組織内のすべてのユーザーが Microsoft 365 アカウントを持っている場合、ID 管理は変更されません。
   
-組織に既存の Microsoft 365 環境が既に存在し、組織内のすべてのユーザーが Microsoft 365 アカウントを持っていない場合は、テナントでユーザーを作成し、ユーザーの職場または学校の電子メールアドレスに基づいてライセンスを割り当てます。 これは、特定の時間に管理するユーザー数は、組織内のユーザーが当該サービスにサインアップするに従って増えていくことを表しています。
+組織に既に既存の Microsoft 365 環境があるが、組織内のすべてのユーザーが Microsoft 365 アカウントを持っている場合は、テナントにユーザーを作成し、ユーザーの仕事または学校の電子メール アドレスに基づいてライセンスを割り当てる。 これは、特定の時間に管理するユーザー数は、組織内のユーザーが当該サービスにサインアップするに従って増えていくことを表しています。
   
 ディレクトリをオンプレミスで管理しており、Active Directory フェデレーション サービス (AD FS) を使っている場合、マイクロソフトはテナントにユーザーを追加しません。テナントに参加しようとするユーザーは、組織の管理者に連絡するように求めるメッセージを受信します。
   
-お客様の組織で Microsoft 365 環境が電子メールドメインに接続されていない場合は、id の管理方法に変更はありません。 ユーザーは、クラウドのみを使用する新しいユーザー ディレクトリに追加され、組織の管理者はテナントの管理者としての役割を引き継いで、ユーザーを管理できるようになります。
+組織に電子メール ドメインに接続されている Microsoft 365 環境がない場合、ID の管理方法に変更はありません。 ユーザーは、クラウドのみを使用する新しいユーザー ディレクトリに追加され、組織の管理者はテナントの管理者としての役割を引き継いで、ユーザーを管理できるようになります。
   
 ## <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>ユーザー用にマイクロソフトによって作成されたテナントを管理するためのプロセス
 
@@ -99,16 +99,16 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
 
 ::: moniker-end
 
-4. 左上にあるアプリ起動ツールのアイコンを選択して、 **[管理]** をクリックします。
+4. 左上にあるアプリ起動ツールのアイコンを選択して、**[管理]** をクリックします。
 
-    ![管理者アプリが強調表示されたアプリ起動ツール](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![管理アプリが強調表示されたアプリ起動ツール](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
-5. [ **管理者になる** ] ページの手順を読んで、[ **はい、管理者にする]** を選択します。
+5. [管理者になる] ページの **手順を** 読み、[はい] を選択 **します。管理者になる必要があります**。
 
     > [!NOTE]
-    >  このオプションが表示されない場合は、管理者が既に存在します。
+    >  このオプションが表示されない場合は、既に管理者が配置されています。
   
-## <a name="if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to"></a>複数のドメインがある場合、ユーザーが追加するテナントを制御できますか。
+## <a name="if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to"></a>複数のドメインがある場合、ユーザーが追加されるテナントを制御できますか?
 
 何の操作も行わない場合、テナントはユーザーのメール ドメインとサブドメインごとに作成されます。
   
@@ -117,31 +117,31 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
 - 目的のテナントをあらかじめ作成しておくか、または既存のテナントを使って、1 つにまとめたい既存のドメインとサブドメインを目的のテナントに追加します。この操作で、それらのドメインおよびサブドメインで終わるメール アドレスを持つすべてのユーザーは、サインアップ時に目的のテナントに自動的に参加するようになります。
 
 > [!IMPORTANT]
-> テナントが作成された後にユーザーをテナント間で自動的に移動する仕組みは、サポートされていません。 単一の Microsoft 365 テナントへのドメインの追加については、「 [Office 365 にドメインを追加](../setup/add-domain.md)する」を参照してください。
+> テナントが作成された後にユーザーをテナント間で自動的に移動する仕組みは、サポートされていません。 単一の Microsoft 365 テナントにドメインを追加する方法については、「Add [a domain to Office 365」を参照してください](../setup/add-domain.md)。
 
 > [!IMPORTANT]
-> テナントの管理に関する詳細とガイダンスについては、「 [POWER BI 管理](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization)について」を参照してください。
+> テナントの管理に関する詳細とガイダンスについては [、「Power BI 管理とは」を参照してください](/power-bi/service-admin-administering-power-bi-in-your-organization)。
   
-## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>ユーザーが既存のテナントに参加できないようにするにはどうすればよいですか?
+## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>ユーザーが既存のテナントに参加するのを防ぐ方法
 
-ユーザーが既存のテナントに参加できないようにするには、管理者としての手順を実行します。 ユーザーがテナントに参加することをブロックすると、ユーザーのサインイン試行が失敗し、組織の管理者に連絡するように指示されます。以前に自動ライセンス配布を無効にしている場合 (たとえば、学生、教職員、およびスタッフの Office 365 教育) は、このプロセスを繰り返す必要はありません。
+ユーザーが既存のテナントに参加するのを防ぐため、管理者として実行できる手順があります。 ユーザーがテナントに参加するのをブロックすると、ユーザーのサインイン試行は失敗し、組織の管理者に連絡する指示が表示されます。以前にライセンスの自動配布を既に無効にしている場合 (たとえば、Office 365 Education for Students,faculty, and Staff) の場合は、このプロセスを繰り返す必要があります。
   
-これらの手順では、Windows PowerShell を使う必要があります。 Windows PowerShell を使い始める場合は、「[PowerShell ファースト ステップ ガイド](https://go.microsoft.com/fwlink/p/?LinkID=286814)」を参照してください。
+これらの手順では、Windows PowerShell を使う必要があります。 Windows PowerShell を使い始める場合は、「[PowerShell ファースト ステップ ガイド](/powershell/scripting/overview)」を参照してください。
   
-次の手順を実行するには、最新の64ビットバージョンの [Azure Active Directory V2 PowerShell モジュール](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)をインストールする必要があります。
+次の手順を実行するには、Azure Active Directory V2 PowerShell モジュールの最新の 64 ビット バージョン [をインストールする必要があります](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)。
   
-リンクを選択した後、[ **実行** ] を選択してインストーラーパッケージを実行します。
+リンクを選択した後、[実行] **を選択して** インストーラー パッケージを実行します。
   
-**テナントの自動参加を無効にする** : 新規ユーザーが管理対象テナントに参加できないようにするには、次に示す Windows PowerShell コマンドを使います。
+**テナントの自動参加を無効にする**: 新規ユーザーが管理対象テナントに参加できないようにするには、次に示す Windows PowerShell コマンドを使います。
   
 新規ユーザーに対してテナントの自動参加を無効にする場合:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $false`
   
 新規ユーザーに対してテナントの自動参加を有効にする場合:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> このブロックの設定で、組織の新しいユーザーは Power BI にサインアップできなくなります。 組織内の新しいサインアップを無効にする前に Power BI にサインアップしていたユーザーは、それ以降もライセンスを与えられたままになります。 以前にサインアップしたことがあるユーザーの power bi へのアクセスを削除する方法については、「サインアップし [たユーザーの POWER bi を削除する方法](#how-do-i-remove-power-bi-for-users-that-already-signed-up) 」を参照してください。
+> このブロックの設定で、組織の新しいユーザーは Power BI にサインアップできなくなります。 組織内の新しいサインアップを無効にする前に Power BI にサインアップしていたユーザーは、それ以降もライセンスを与えられたままになります。 以前に [サービス](#how-do-i-remove-power-bi-for-users-that-already-signed-up) にサインアップしたユーザーの Power BI へのアクセスを削除する方法については、「既にサインアップしたユーザーの Power BI を削除する方法」を参照してください。
   
-## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>ユーザーが既存のテナントに参加できるようにするにはどうすればよいですか?
+## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>ユーザーに既存のテナントへの参加を許可する方法
 
 To allow users to join your tenant, run the opposite command as described in the question above:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
@@ -151,14 +151,14 @@ To allow users to join your tenant, run the opposite command as described in the
   
 ## <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>既存のユーザーが Power BI を使い始めることを防ぐ方法
 
-**ライセンスの自動配布を無効にする** : 既存ユーザーに対してライセンスの自動配布を無効にするには、次に示す Windows PowerShell スクリプトを使用します。 以前に自動ライセンス配布を無効にしている場合 (たとえば、学生、教職員、およびスタッフの Office 365 教育) は、このプロセスを繰り返す必要はありません。
+**ライセンスの自動配布を無効にする**: 既存ユーザーに対してライセンスの自動配布を無効にするには、次に示す Windows PowerShell スクリプトを使用します。 以前にライセンスの自動配布を既に無効にしている場合 (たとえば、Office 365 Education for Students,faculty, and Staff) の場合は、このプロセスを繰り返す必要があります。
   
 既存ユーザーに対してライセンスの自動配布を無効にする場合:  `Set-MsolCompanySettings -AllowAdHocSubscriptions $false`
   
 既存ユーザーに対してライセンスの自動配布を有効にする場合:  `Set-MsolCompanySettings -AllowAdHocSubscriptions $true`
   
 > [!NOTE]
-> *AllowAdHocSubscriptions* フラグは、組織内の複数のユーザー機能を制御するために使用されます。これには、ユーザーが Azure Rights Management サービスにサインアップする機能も含まれます。 このフラグを変更すると、これらのすべての機能に影響が及びます。
+> *AllowAdHocSubscriptions* フラグは、ユーザーが Azure Rights Management Service にサインアップする機能など、組織内のいくつかのユーザー機能を制御するために使用されます。 このフラグを変更すると、これらのすべての機能に影響が及びます。
   
 ## <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>既存のユーザーが Power BI にサインアップできるようにする方法
 
@@ -166,43 +166,43 @@ To allow your existing users to sign up for Power BI, run the opposite command a
   
 ## <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>既にサインアップしたユーザーの Power BI を削除する方法
 
-ユーザーが Power BI にサインアップしていても、Power bi にアクセスする必要がなくなった場合は、そのユーザーの Power BI ライセンスを削除できます。
+ユーザーが Power BI にサインアップしたが、Power BI にアクセスできなくなった場合は、そのユーザーの Power BI ライセンスを削除できます。
 
 ::: moniker range="o365-worldwide"
   
-1. 管理センターで、 **[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
 
-3. [ **ライセンスとアプリ** ] タブで、[ **Microsoft Power BI** ] チェックボックスをオフにします。
+3. [ライセンスと **アプリ] タブで****、[Microsoft Power BI]** チェック ボックスをオフにします。
 
-4. [ **変更の保存** ] を選択します。
+4. [**変更の保存**] を選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[ **ユーザー** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
 
-3. [ **製品ライセンス** ] の横にある [ **編集** ] を選択します。
+3. [製品ライセンス **] の横にある**[編集] **を選択します**。
 
-4. [ **Microsoft POWER BI** ] オプションをオフにします。
+4. **[Microsoft Power BI] オプションをオフ** にします。
 
-5. [ **保存** ] を選択します。
+5. [**保存**] を選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[ **ユーザー** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
 
-3. [ **製品ライセンス** ] の横にある [ **編集** ] を選択します。
+3. [製品ライセンス **] の横にある**[編集] **を選択します**。
 
-4. [ **Microsoft POWER BI** ] オプションをオフにします。
+4. **[Microsoft Power BI] オプションをオフ** にします。
 
 5. **[保存]** を選択します。
 
@@ -212,17 +212,17 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 
 このプログラムの一員として、あなたのテナントに参加したユーザーには、一意のライセンスが割り当てられます。このライセンスは、管理者ダッシュボードの [アクティブ ユーザー] ウィンドウでフィルタリングできます。
   
-この新しいビューを作成するには、管理センターで、「 [create a custom user view](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view)」の手順を実行します。 [ **割り当てられた製品ライセンス** ] で、[ **Microsoft Power BI** ] を選択します。 新しいビューが作成されると、このプログラムに登録したテナント内のすべてのユーザーを表示できるようになります。
+この新しいビューを作成するには、管理センターで、「カスタム ユーザー ビューを作成する [」の手順に従います](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view)。 [割 **り当てられた製品ライセンス] で****、[Microsoft Power BI] を選択します**。 新しいビューが作成されると、このプログラムに登録したテナント内のすべてのユーザーが表示されます。
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>事前に準備しておく必要のあるものが、他にもありますか?
 
 パスワード再設定の依頼が増えることがあります。 このプロセスの詳細については、「[ユーザーのパスワードを再設定する](../add-users/reset-passwords.md)」を参照してください。
   
-管理センターの標準プロセスを使用して、テナントからユーザーを削除することができます。 ただし、ユーザーが組織のアクティブなメール アドレスをまだ持っている場合、すべてのユーザーの参加がブロックされていない限り、そのユーザーは再び参加することができます。
+管理センターの標準プロセスを使用して、テナントからユーザーを削除できます。 ただし、ユーザーが組織のアクティブなメール アドレスをまだ持っている場合、すべてのユーザーの参加がブロックされていない限り、そのユーザーは再び参加することができます。
   
-## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-tenant"></a>Microsoft Power BI の100万ライセンスが自分のテナントに表示されたのはなぜですか?
+## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-tenant"></a>テナントに Microsoft Power BI のライセンスが 100 万件表示された理由
 
-組織内のユーザーは、正規の組織として、Microsoft Power BI サービスを使用する資格があり、これらのライセンスはテナント内の新しい Power BI ユーザーの空き容量を表します。 これらのライセンスには料金はありません。 ユーザーが Power BI にサインアップできるようにすることを選択した場合、サインアッププロセスが完了すると、これらの利用可能なライセンスのいずれかが割り当てられます。 管理センターを使用して自分でユーザーにライセンスを割り当てることもできます。
+対象となる組織では、組織内のユーザーが Microsoft Power BI サービスを使用する資格を持ち、これらのライセンスはテナント内の新しい Power BI ユーザーに使用可能な容量を表します。 これらのライセンスの料金は発生しません。 ユーザーが Power BI 自体へのサインアップを許可する場合は、サインアップ プロセスが完了すると、これらの利用可能な無料ライセンスの 1 つが割り当てられます。 これらのライセンスを管理センターからユーザー自身に割り当てすることもできます。
   
 ## <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>料金はかかりますか? ライセンス料は請求されますか?
 
@@ -230,7 +230,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
   
 ## <a name="why-1-million-licenses"></a>ライセンス数が 100 万件なのは、なぜですか?
 
-大部分の組織では、ユーザーに遅延を与えることなく、十分なライセンスを持っている必要がある数を選択しました。
+大多数の組織がユーザーにこの利点を提供するのに十分なライセンスを持つ十分な大きな数を選択しました。
   
 ## <a name="what-if-i-need-more-than-1-million-licenses"></a>100 万件を超えるライセンスが必要な場合は、どうしたらよいですか?
 

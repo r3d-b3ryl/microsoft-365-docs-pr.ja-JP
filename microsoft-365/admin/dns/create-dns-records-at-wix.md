@@ -1,5 +1,5 @@
 ---
-title: Microsoft 向け Wix で DNS レコードを作成する
+title: Microsoft 用 Wix で DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
-description: ドメインを確認し、メール、Skype for Business Online、および Wix for Microsoft のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 01317f7e2da87b532c93f12269fd65b7d4fe2dd6
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: ドメインを確認し、Wix for Microsoft で電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
+ms.openlocfilehash: 3ec2ea0dc24e1872ba22e591fae96b39a9a0deee
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656881"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916108"
 ---
-# <a name="create-dns-records-at-wix-for-microsoft"></a>Microsoft 向け Wix で DNS レコードを作成する
+# <a name="create-dns-records-at-wix-for-microsoft"></a>Microsoft 用 Wix で DNS レコードを作成する
 
 探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
@@ -38,7 +38,7 @@ ms.locfileid: "49656881"
   
 - [確認用に TXT レコードを追加する](#add-a-txt-record-for-verification)
     
-- [MX レコードを追加して、ドメインのメールが Microsoft に届きます](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)。
+- ドメインのメールが Microsoft に送信されるので[、MX レコードを追加します](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)。
     
 - [Microsoft に必要な 5 つの CNAME レコードを追加します](#add-the-five-cname-records-that-are-required-for-microsoft)。
     
@@ -46,7 +46,7 @@ ms.locfileid: "49656881"
     
 - [Microsoft に必要な 2 つの SRV レコードを追加します](#add-the-two-srv-records-that-are-required-for-microsoft)。
     
-Wix でこれらのレコードを追加すると、ドメインは Microsoft サービスで動作する設定に設定されます。
+Wix でこれらのレコードを追加すると、ドメインが Microsoft サービスで動作するために設定されます。
   
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
@@ -65,18 +65,18 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. まず、[このリンク](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)を使って Wix でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [自分 **のドメイン] ページ** の [詳細設定] 領域 **で** 、[DNS の編集] ボタン **を選択** します。 
+2. [自分の **ドメイン] ページの** [詳細設定] 領域 **で** 、[DNS の編集] **ボタンを選択** します。 
     
-3. SELECT **+ Add another** in the TXT **(Text)** row of the DNS editor. 
+3. DNS **エディターの TXT** **(テキスト) 行で [+ 追加]** を選択します。 
     
 4. In the boxes for the new record, type or copy and paste the values from the following table. 
     
    ||||
    |:-----|:-----|:-----|
    | ホスト名 <br/> | TXT Value <br/> | TTL <br/> |
-   |自動的に入力される  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
+   |自動的に設定される  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
    
-5. DNS エディターの上部にある **[SAVE DNS]** ボタンを選択します。 
+5. DNS エディター **の上部にある [DNS** の保存] ボタンを選択します。 
     
 6. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -101,9 +101,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)を使って Wix でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**マイ ドメイン] ページ** の[メールボックス] 領域で、[MX レコードの構成]**リンクを選択** します。 
+2. [マイ **ドメイン] ページの** [メールボックス] 領域 **で** 、[MX レコードの **構成] リンクを選択** します。 
     
-3. [ **メール** プロバイダー] ドロップダウン **リストから [** その他] を選択します。 
+3. [ **メール プロバイダー** ] ドロップダウン **リストから [その** 他] を選択します。 
     
 4. [+ **別の追加] を選択します**。
     
@@ -111,11 +111,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
    | ホスト名 | Points to  | Priority | TTL |
    |:-----|:-----|:-----|:-----|
-   |自動入力 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 | 1 Hour|
+   |自動的に設定される <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウント  *\<domain-key\>*  からユーザーを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 | 1 Hour|
    
-6. その他の MX レコードが一覧表示されている場合は、各レコードを削除します。 
+6. その他の MX レコードが一覧表示されている場合は、それぞれの MX レコードを削除します。 
     
-7. **[OK]** をクリックします。
+7. [**OK**] を選択します。
     
 8. 確認ダイアログ ボックスで **、[OK] を選択します**。
     
@@ -125,9 +125,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)を使って Wix でドメイン ページにアクセスします。最初にログインするように求められます。
     
-2. [自分 **のドメイン] ページ** の [詳細設定] 領域 **で** 、[DNS の編集] ボタン **を選択** します。 
+2. [自分の **ドメイン] ページの** [詳細設定] 領域 **で** 、[DNS の編集] **ボタンを選択** します。 
     
-3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor for each CNAME record. 
+3. 各 **CNAME レコードの** DNS エディター **の CNAME (Aliases)** 行で [+ 追加] を選択します。 
     
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
@@ -139,7 +139,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 Hour <br/> |
    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 Hour  <br/> |
    
-5. DNS エディターの上部にある **[SAVE DNS]** ボタンを選択します。 
+5. DNS エディター **の上部にある [DNS** の保存] ボタンを選択します。 
     
 6. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -148,13 +148,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft の値を現在のレコードに追加して、両方の値のセットを含む  *1*  つの SPF レコードを作成します。  
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、必要な Microsoft 値を現在のレコードに追加して、両方の値セットを含む  *1*  つの SPF レコードを作成します。  
   
 1. まず、[このリンク](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)を使って Wix でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [自分 **のドメイン] ページ** の [詳細設定] 領域 **で** 、[DNS の編集] ボタン **を選択** します。 
+2. [自分の **ドメイン] ページの** [詳細設定] 領域 **で** 、[DNS の編集] **ボタンを選択** します。 
     
-3. SELECT **+ Add another** in the TXT **(Text)** row of the DNS editor. 
+3. DNS **エディターの TXT** **(テキスト) 行で [+ 追加]** を選択します。 
     
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
@@ -162,7 +162,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    |:-----|:-----|:-----|
    |[空白のままにする]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。<br/> |TXT  <br/> | 1 Hour |
    
-5. DNS エディターの上部にある **[SAVE DNS]** ボタンを選択します。 
+5. DNS エディター **の上部にある [DNS** の保存] ボタンを選択します。 
     
 6. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -172,21 +172,20 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)を使って Wix でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [自分 **のドメイン] ページ** の [詳細設定] 領域 **で** 、[DNS の編集] ボタン **を選択** します。 
+2. [自分の **ドメイン] ページの** [詳細設定] 領域 **で** 、[DNS の編集] **ボタンを選択** します。 
     
-3. SELECT **+ Add another** in the **SRV** row of the DNS editor. 
+3. DNS **エディターの SRV** 行で **[+ 別の** 追加] を選択します。 
     
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
    | サービス | プロトコル | 名前 | 太さ | ポート | Target | Priority | TTL |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-   |sip  |tls  |自動的に入力される |1   |443   |sipdir.online.lync.com |100 |1 Hour |
-   |sipfed|tcp |自動的に入力される|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
+   |sip  |tls  |自動的に設定される |1  |443   |sipdir.online.lync.com |100 |1 Hour |
+   |sipfed|tcp |自動的に設定される|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
-5. DNS エディターの上部にある **[SAVE DNS]** ボタンを選択します。 
+5. DNS エディター **の上部にある [DNS** の保存] ボタンを選択します。 
     
 6. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
-  

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Microsoft Office 2013 がインストールされているデバイスの最新の認証を有効にするレジストリ キーの設定方法を説明します。
-ms.openlocfilehash: 2a4be82328d391db7808cb9197ce259275b567c6
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: f12511ad6d685647b3b38fd424f1d4611a3119b4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758930"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914536"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Windows デバイスの Office 2013 の先進認証を有効にする
 
@@ -60,6 +60,5 @@ Microsoft Office 2013 がインストールされている Windows を実行し�
 ## <a name="related-articles"></a>関連記事
 [第 2 検証方法を使用して Office 2013 にサインインする](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
-[Outlook はパスワードの入力を求め、モダン認証を使用してパスワード 365 にOfficeしない](https://docs.microsoft.com/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
+[Outlook はパスワードの入力を求め、モダン認証を使用してパスワード 365 にOfficeしない](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
 
-  

@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: ブラウザーと Power BI Desktop でレポートをカスタマイズする方法について学習します。
-ms.openlocfilehash: 3c662dfa91939c68f0aa0a85c19a1fab003064bf
-ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
+ms.openlocfilehash: 18b4352d3aaa2fd16b74f78e1f80da3ee98367a6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50572652"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914008"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析のレポートをカスタマイズする
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Microsoft 365 使用状況分析は、ユーザーが Microsoft 365 を採用し
   
 1. Go to **get data** \> **Other** \> **ODATA Feed** \> **Connect**.
     
-2. URL ウィンドウに「https://reports.office.com/pbi/v1.0/」 <i></i> と入力 \<tenantid\> します。
+2. URL ウィンドウに「https:// reports.office.com/pbi/v1.0/」 <i></i> と入力 \<tenantid\> します。
     
     **注:** レポート API はプレビュー中で、本番環境に入るまで変更される可能性があります。 
   
@@ -154,6 +154,4 @@ Power BI テンプレート ファイルは、Microsoft ダウンロード セ�
     
     データの読み込みには時間がかかることがあります。完了後、ファイルを .pbix ファイルとして保存し、レポートのカスタマイズを続けたり、このレポートにデータ ソースを追加したりできます。
     
-4. レポートを作成する方法、Power BI サービスにレポートを公開する方法、組織と共有する方法を理解するには、「[Getting started with Power BI](https://go.microsoft.com/fwlink/?linkid=849802)」 (Power BI を始める) ドキュメントをご覧ください。この方法でカスタマイズと共有を行う場合、追加の Power BI ライセンスが必要になることがあります。詳細については、Power BI の[ライセンスに関するページ](https://go.microsoft.com/fwlink/p/?linkid=849803)を参照してください。 
-    
-
+4. レポートを作成する方法、Power BI サービスにレポートを公開する方法、組織と共有する方法を理解するには、「[Getting started with Power BI](/power-bi/fundamentals/desktop-getting-started)」 (Power BI を始める) ドキュメントをご覧ください。この方法でカスタマイズと共有を行う場合、追加の Power BI ライセンスが必要になることがあります。詳細については、Power BI の[ライセンスに関するページ](https://go.microsoft.com/fwlink/p/?linkid=849803)を参照してください。 

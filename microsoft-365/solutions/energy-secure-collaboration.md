@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: エネルギー業界がデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 がお役に立ちます。
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 1e5acc09c72b47f583c2ee9330f78bf3e68aaa33
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558492"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916120"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>エネルギー業界のための、コンプライアンスとセキュリティの重要な検討事項
 ![クラウドを使用するさまざまな業界のグローバル ビューの描写](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ Microsoft クラウド サービスと NERC の詳細については、次のリ
 - Azure および Azure Government には、それぞれ最高レベルの FedRAMP 承認を表す FedRAMP High P-ATO (Provisional Authorization to Operate: 運用のための暫定承認) が付与されています。 
 
 Microsoft クラウド サービスと FedRAMP の詳細については、次のリソースを参照してください。
-- [Microsoft FedRAMP の概要](https://docs.microsoft.com/microsoft-365/compliance/offering-fedramp?view=o365-worldwide)
+- [Microsoft FedRAMP の概要](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
 - [Office 365 FedRAMP レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 

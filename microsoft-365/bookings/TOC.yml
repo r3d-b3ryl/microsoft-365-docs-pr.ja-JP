@@ -34,7 +34,7 @@
     - name: Bookings アプリを取得する
       href: get-bookings-app.md
     - name: Microsoft Teams での Bookings アプリと仮想訪問
-      href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+      href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
     - name: 比較表 - Web アプリと Teams アプリ
       href: comparison-chart.md
     - name: 予約カレンダーを削除する

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化する方法と、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にする理由について説明します。
-ms.openlocfilehash: 66a4048ac1add3a0d47f256dc29519a91ae6cb11
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926716"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914728"
 ---
 # <a name="password-policy-recommendations"></a>パスワード ポリシーの推奨事項
 
@@ -137,10 +137,10 @@ Microsoft 365 パスワードの詳細については、これらの[関連記�
 
 ## <a name="related-articles"></a>関連記事
 
-[パスワードをリセットする](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+[パスワードをリセットする](../add-users/reset-passwords.md)
 
-[個別のユーザーのパスワードを無期限に設定する](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+[個別のユーザーのパスワードを無期限に設定する](../add-users/set-password-to-never-expire.md)
 
-[ユーザーが自分でパスワードをリセットできるようにする](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md)
 
-[ユーザーのパスワードを再送信する - 管理者向けヘルプ](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)
+[ユーザーのパスワードを再送信する - 管理者向けヘルプ](../add-users/resend-user-password.md)

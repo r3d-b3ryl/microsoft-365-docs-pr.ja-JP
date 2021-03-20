@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Microsoft 365 管理センターまたは管理者Windows PowerShellを使用して、予約カレンダーを削除します。
-ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 7b79628327797d2e315d31e1b1a2671f0b24e447
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604022"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913780"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Bookings で予約カレンダーを削除する
 
@@ -46,7 +46,7 @@ ms.locfileid: "50604022"
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Exchange Online PowerShell を使用して予約カレンダーを削除する
 
-Exchange Online [PowerShell に接続するための](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 前提条件とガイダンスについては、「Connect to Exchange Online PowerShell」を参照してください。
+Exchange Online [PowerShell に接続するための](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 前提条件とガイダンスについては、「Connect to Exchange Online PowerShell」を参照してください。
 
 これらの手順を実行するには、[管理者として実行] オプションを選択して実行したアクティブな Microsoft PowerShell コマンド ウィンドウを使用している必要があります。
 
@@ -57,7 +57,7 @@ Exchange Online [PowerShell に接続するための](https://docs.microsoft.com
    ```
 
    > [!NOTE]
-   > すでに、[EXO V2 モジュールをインストール](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)している場合は、前のコマンドは表示のとおり機能します。
+   > すでに、[EXO V2 モジュールをインストール](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)している場合は、前のコマンドは表示のとおり機能します。
    
 2. 実行する必要があるコマンドでは、次の構文を使用します。
 

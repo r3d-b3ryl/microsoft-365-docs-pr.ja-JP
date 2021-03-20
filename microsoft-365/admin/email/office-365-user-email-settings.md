@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: ここでは、ユーザーに対する設定を管理する方法について説明します。
-ms.openlocfilehash: ca57d536794ffde4865ec86f34c8dc644ff3c1f1
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: db7a7f01fdd5a6bd657bb04f9aaf4491959e0558
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080005"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915724"
 ---
 # <a name="user-email-settings"></a>ユーザーのメール設定
 
@@ -40,7 +40,7 @@ Microsoft 365 のユーザーに対して変更できるさまざまなメール
 |グローバル アドレス一覧に表示する| [グローバル アドレス一覧に表示する] では、組織のアドレス一覧でユーザーのメールボックスの表示を有効または無効にすることができます。 |
 |メールの転送|[メールの転送] では、ユーザーに転送するメール アドレスを追加できます。 この操作は、ユーザーが複数のメール アドレスを持っていて、そのすべてのメール アドレスでメールを受信する場合に利用できます。 詳細については、「[Microsoft 365 でメールの転送を構成する](configure-email-forwarding.md)」を参照してください。|
 |自動応答|[自動応答] では、ユーザーのメール アドレスにメールが送信された場合の自動応答を設定できます。 この操作は、従業員が退職し、メールの送信者に知らせたい場合に利用できます。|
-|その他の操作| [**共有メールボックスに変換する**] では、ユーザーのメールボックスを共有メールボックスに変換することができます。 この操作は、ユーザーが組織を退職し、しばらくの間そのユーザーのメールボックス データを維持したい場合に利用できます。 「[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md)」および「[共有メールボックスを開いて使う](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)」を参照してください。</br>[**Exchange のプロパティの編集**] では、Exchange 管理センターを使用して追加の Exchange Online タスクを管理できます。 「[Exchange Online でのユーザー メールボックスの管理](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)」を参照してください。|
+|その他の操作| [**共有メールボックスに変換する**] では、ユーザーのメールボックスを共有メールボックスに変換することができます。 この操作は、ユーザーが組織を退職し、しばらくの間そのユーザーのメールボックス データを維持したい場合に利用できます。 「[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md)」および「[共有メールボックスを開いて使う](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)」を参照してください。</br>[**Exchange のプロパティの編集**] では、Exchange 管理センターを使用して追加の Exchange Online タスクを管理できます。 「[Exchange Online でのユーザー メールボックスの管理](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)」を参照してください。|
 
 > [!NOTE]
 >

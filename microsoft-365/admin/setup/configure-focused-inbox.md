@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: '組織のすべてのユーザーまたは特定のユーザー用に優先受信トレイを構成する方法について説明します。 '
-ms.openlocfilehash: e6c77bdff00e7cd98f5034267699e19d8582db27
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551903"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914284"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>組織内のすべてのユーザー用に優先受信トレイを構成する
 
@@ -41,9 +41,9 @@ ms.locfileid: "49551903"
   
 以下の PowerShell の例では、組織で優先受信トレイを **無効** にします。ただし、ユーザーが機能を使えなくなることはありません。必要な場合は、引き続き、各クライアントでもう一度優先受信トレイを有効にすることができます。 
   
-1. [リモート PowerShell で Exchange Online に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. [リモート PowerShell で Exchange Online に接続する](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. この手順を実行する前にアクセス許可が割り当てられている必要があります。必要なアクセス許可を確認するには、「[メッセージング ポリシーとコンプライアンスのアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=829796)」の項目「トランスポート ルール」を参照してください。
+2. この手順を実行する前にアクセス許可が割り当てられている必要があります。必要なアクセス許可を確認するには、「[メッセージング ポリシーとコンプライアンスのアクセス許可](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help)」の項目「トランスポート ルール」を参照してください。
 
 3. 
             **Get-OrganizationConfig** コマンドレットを実行します。 
@@ -88,7 +88,7 @@ Get-OrganizationConfig
 
 この例では、Contoso 組織内の Tim Matthews に対して優先受信トレイを **無効** にします。ただし、Tim が機能を使えなくなることはありません。必要な場合は、引き続き、各クライアントでもう一度優先受信トレイを有効にすることができます。 
   
-1. [リモート PowerShell で Exchange Online に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. [リモート PowerShell で Exchange Online に接続する](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. この手順を実行する前にアクセス許可が割り当てられている必要があります。必要なアクセス許可を確認するには、トピック「メッセージング ポリシーとコンプライアンスのアクセス許可」の項目「トランスポート ルール」を参照してください。
 
@@ -124,16 +124,16 @@ Get-OrganizationConfig
 
     次の図は、"Payroll Department"(給与課) からのすべてのメッセージを優先受信トレイに配信する例を示しています。
 
-    ![優先受信トレイ、給与支払名簿](../../media/focusedinbox-transport-rule.PNG)
+    ![優先受信トレイ、給与](../../media/focusedinbox-transport-rule.PNG)
 
 > [!NOTE]
 > この例のメッセージ ヘッダー値のテキストは、**X-MS-Exchange-Organization-BypassFocusedInbox** です。
   
-## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>PowerShell を使用して、すべてのユーザーの優先ビューにメール メッセージを直接表示するトランスポート ルールを作成します。
+## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>トランスポート ルールを作成する PowerShell を使用して、すべてのユーザーの優先ビューにメール メッセージを直接表示する
 
-1. [リモート PowerShell で Exchange Online に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. [リモート PowerShell で Exchange Online に接続する](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. この手順を実行する前にアクセス許可が割り当てられている必要があります。必要なアクセス許可を確認するには、「[メッセージング ポリシーとコンプライアンスのアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=829796)」の項目「トランスポート ルール」を参照してください。
+2. この手順を実行する前にアクセス許可が割り当てられている必要があります。必要なアクセス許可を確認するには、「[メッセージング ポリシーとコンプライアンスのアクセス許可](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help)」の項目「トランスポート ルール」を参照してください。
 
 3. たとえば、次のコマンドを実行すると、"Payroll Department"(給与課) からのすべてのメッセージを優先受信トレイに配信できます。
 
@@ -143,7 +143,7 @@ Get-OrganizationConfig
 
 > [!IMPORTANT]
 > この例の "X-MS-Exchange-Organization-BypassFocusedInbox" と "true" では、大文字と小文字が区別されます。
-> また、優先受信トレイは低優先メールをバイパスする X ヘッダーを優先します。したがって、この設定を低優先メールで使用すると、優先受信トレイで使用されます。 詳細な構文とパラメーターについては、「[New-TransportRule](https://go.microsoft.com/fwlink/p/?LinkId=830194)」を参照してください。
+> また、優先受信トレイは低優先メールをバイパスする X ヘッダーを優先します。したがって、この設定を低優先メールで使用すると、優先受信トレイで使用されます。 詳細な構文とパラメーターについては、「[New-TransportRule](/powershell/module/exchange/new-transportrule)」を参照してください。
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 

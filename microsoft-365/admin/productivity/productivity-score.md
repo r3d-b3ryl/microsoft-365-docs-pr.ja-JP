@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838427"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914584"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -44,7 +44,7 @@ ms.locfileid: "50838427"
 
 - **テクノロジ エクスペリエンス**: 組織は、信頼性が高くパフォーマンスの高いテクノロジと、Microsoft 365 の効率的な使用に大きく左右されます。 [エンドポイント分析](https://aka.ms/endpointanalytics): ハードウェアとソフトウェアのパフォーマンスと正常性の問題が組織にどのように影響するかを理解するのに役立ちます。 Microsoft 365 アプリの正常性は、組織内のデバイスが推奨されているチャネルで Microsoft 365 アプリを実行しているかどうかを知るのに役立ちます。
 
-概要と前提条件の詳細については、「[エンドポイント分析とは](https://docs.microsoft.com/mem/analytics/overview)」を参照してください。 Microsoft 365 ネットワーク接続のインサイトの詳細については、「[ネットワーク接続の概要](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)」をお読みください。
+概要と前提条件の詳細については、「[エンドポイント分析とは](/mem/analytics/overview)」を参照してください。 Microsoft 365 ネットワーク接続のインサイトの詳細については、「[ネットワーク接続の概要](../../enterprise/microsoft-365-networking-overview.md)」をお読みください。
   
 
 ## <a name="how-the-score-is-calculated"></a>スコアの計算方法
@@ -74,7 +74,8 @@ ms.locfileid: "50838427"
 
 ## <a name="prerequisites"></a>前提条件 
 
-ユーザーがデータを体験するには、Microsoft 365 for Business または Office 365 for enterprise サブスクリプションが必要です。 テナントのエンドポイント分析データについては、サブスクリプションに Microsoft Intune を追加する必要があります。 Intune を使用してデバイスとアプリを管理することで、組織のデータを保護できます。 Intune を入手したら、Intune エクスペリエンス内でエンドポイント分析を有効にできます。 [Microsoft Intune](https://docs.microsoft.com/mem/intune/) の詳細をご覧ください。 
+ユーザーがデータを体験するには、Microsoft 365 for Business または Office 365 for enterprise サブスクリプションが必要です。 テナントのエンドポイント分析データについては、サブスクリプションに Microsoft Intune を追加する必要があります。 Intune は、デバイスとアプリを管理することで、組織のデータを保護するのに役立ちます。 Intune を入手したら、Intune エクスペリエンス内でエンドポイント分析を有効にできます。 [Microsoft Intune](/mem/intune/) の詳細をご覧ください。 
+
 > [!NOTE]
 > 生産性スコア機能を取得するために、Workplace Analytics のライセンスは必要ありません。
 
@@ -129,7 +130,7 @@ Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** �
 - [モビリティ – ユーザー エクスペリエンス](mobility.md)
 - [チームワーク – ユーザー エクスペリエンス](teamwork.md)
 - [Microsoft 365 アプリの正常性 – テクノロジ エクスペリエンス](apps-health.md)
-- [エンドポイントの分析](https://docs.microsoft.com/mem/analytics/productivity-score)
+- [エンドポイントの分析](/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>ビジネス継続性特別レポート
 
@@ -143,12 +144,12 @@ Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** �
 
 - リモート会議が効果的な意思決定をサポートしているかどうか。
 
-[ビジネス継続性レポートの詳細情報](https://aka.ms/bcrps)
+[ビジネス継続性レポートの詳細情報](/Workplace-Analytics/tutorials/bcrps)
 
-[Microsoft Graph の詳細情報](https://docs.microsoft.com/graph/)
+[Microsoft Graph の詳細情報](/graph/)
 
 > [!NOTE]
-> また、ユーザーは、 [MyAnalytics ダッシュボード](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2)から生産性に関する分析情報を得ることもできます。
+> また、ユーザーは、 [MyAnalytics ダッシュボード](/workplace-analytics/myanalytics/use/dashboard-2)から生産性に関する分析情報を得ることもできます。
 
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。

@@ -24,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: '最初のメール アドレスを、メール アドレスのような使い方の良いメール アドレスにtom@fourthcoffee.com。 これを行うには、ドメイン名を購入し、Microsoft 365 に追加する必要があります。 '
-ms.openlocfilehash: 445b78f759cee79a794f9656afd5b26051534e26
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: '最初の電子メール アドレスを 、ユーザー設定のような使い tom@fourthcoffee.com。 これを行うには、ドメイン名を購入し、Microsoft 365 に追加する必要があります。 '
+ms.openlocfilehash: 10dff4e0523062ae763c08a972563dc8b5582038
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114023"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915928"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -45,23 +45,23 @@ ms.locfileid: "50114023"
   
 ::: moniker range="o365-worldwide"
 
-Microsoft 365 の最初のメール アドレスには、次のような .onmicrosoft.com が含tom@fourthcoffee.onmicrosoft.com。 これを tom@fourthcoffee.com のようなわかりやすいアドレスに変更できます。 このためには、自分のドメイン (例: fourthcoffee.com) を持っている必要があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
+Microsoft 365 の最初の電子メール アドレスには、次のような .onmicrosoft.com が含 tom@fourthcoffee.onmicrosoft.com。 これを tom@fourthcoffee.com のようなわかりやすいアドレスに変更できます。 このためには、自分のドメイン (例: fourthcoffee.com) を持っている必要があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Office 365 Germany の最初のメール アドレスには、次のような .onmicrosoft.de が含tom@fourthcoffee.onmicrosoft.de。 このアドレスは、次のような分tom@fourthcoffee.de。 最初に作成したドメイン名など、独自のfourthcoffee.deがあります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
+365 ドイツ 365 Officeの最初の電子メール アドレスには、次のような .onmicrosoft.de が tom@fourthcoffee.onmicrosoft.de。 このアドレスは、他のユーザーと同じフレンドリアドレス tom@fourthcoffee.de。 最初に使用するドメイン名など、独自の fourthcoffee.de があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-21Vianet が運用している Office 365 の初期メール アドレスには、次のようなpartner.onmschina.cnが含tom@fourthcoffee.partner.onmschina.cn。 このアドレスは、次のような分tom@fourthcoffee.cn。 最初に作成したドメイン名など、独自のドメインfourthcoffee.cnがあります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
+21Vianet がOffice 365 の初期メール アドレスには、partner.onmschina.cn のような tom@fourthcoffee.partner.onmschina.cn。 このアドレスは、他のユーザーと同じフレンドリなアドレス tom@fourthcoffee.cn。 最初に使用するドメイン名など、独自の fourthcoffee.cn があります。 既に持っている場合は、それをご利用いただけます。 持っていない場合は、「[ドメイン名の購入方法](../get-help-with-domains/buy-a-domain-name.md)」を参照してください。
 
 ::: moniker-end
 
-セットアップ中にドメインの MX レコードを更新して、ドメインの電子メールを Microsoft 365 に届く設定に変更すると、そのドメインに送信されたメールはすべて Microsoft 365 に届く開始されます。 MX レコードを変更する前に、ドメインにメールを持つすべてのユーザーのユーザーが追加され、Microsoft 365 にメールボックスが作成されている必要があります。 ドメイン上のすべてのユーザーのメールを Microsoft 365 に移動したくない場合 You can take steps to [pilot Microsoft 365 with just a few email addresses instead](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide).
+ドメインのメールを Microsoft 365 に変更すると、セットアップ中にドメインの MX レコードを更新すると、そのドメインに送信されるメールはすべて Microsoft 365 に送信されます。 MX レコードを変更する前に、ドメインにメールを送信しているすべてのユーザーにユーザーを追加し、Microsoft 365 でメールボックスを作成してください。 ドメインのすべてのユーザーのメールを Microsoft 365 に移動したくない場合 代わりに、少数の電子メール アドレスで [Microsoft 365 をパイロットするための手順を実行できます](../misc/pilot-microsoft-365-from-my-custom-domain.md?view=o365-worldwide)。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用してカスタム ドメインを使用するメール アドレスを変更する
 
@@ -81,7 +81,7 @@ Office 365 Germany の最初のメール アドレスには、次のような .o
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターに移動します<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>。 
+1. で管理センターに移動します<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>。 
 
 ::: moniker-end 
 
@@ -91,12 +91,11 @@ Office 365 Germany の最初のメール アドレスには、次のような .o
     
 4. 自分がドメインを所有していることを確認して、メール アドレスを変更する手順に従います。
     
-Microsoft 365 でドメインに合った設定を正しく行うガイドが表示されます。
+Microsoft 365 のドメインですべてが正しく設定されるようにガイドされます。
 
 > [!NOTE]
-> Exchange ライセンスを使用していない場合は、ドメインを使用して Microsoft 365 テナントとの間で電子メールを送受信することはできません。
+> Exchange ライセンスを使用していない場合は、ドメインを使用して Microsoft 365 テナントからの電子メールの送受信を行う必要があります。
   
 ## <a name="related-articles"></a>関連記事
 
 [Microsoft 365 を使用してカスタム ドメインを購入する](../get-help-with-domains/buy-a-domain-name.md)
- 

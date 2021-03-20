@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Outlook と Microsoft Teams を使用して共同作業を行う方法について説明します。
-ms.openlocfilehash: 14a3cdf28c4e0c855671c67af36fa25ac47c6568
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: dd1030833a10678b4630d9e86905c98d30ac15fe
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422833"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913660"
 ---
 # <a name="use-outlook-and-teams-together"></a>Outlook と Teams を同時に使用する
 
@@ -54,4 +54,4 @@ ms.locfileid: "50422833"
 
 [Outlook とは](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Teams の概要](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[Teams の概要](/MicrosoftTeams/Teams-overview)

@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 4a7b544b6eded6f0cd6441ad7f6b02de790e5e44
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: ffe3ca74ce901eef359e1bcb80c4044ce4bf9ad7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603986"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915076"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?view=o365-worldwide)」を参照してください。
 
 ::: moniker-end
 
@@ -75,25 +75,25 @@ ms.locfileid: "50603986"
 
 ## <a name="prevent-last-password-from-being-used-again"></a>最後に使用したパスワードの再使用を禁止する
 
-ユーザーが古いパスワードを再使用できないようにするには、オンプレミスの Active Directory (AD) でパスワードの履歴の記録を適用します。 詳細については、[「カスタムパスワードポリシーを作成する 」](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)を参照してください。
+ユーザーが古いパスワードを再使用できないようにするには、オンプレミスの Active Directory (AD) でパスワードの履歴の記録を適用します。 詳細については、[「カスタムパスワードポリシーを作成する 」](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)を参照してください。
 
-Azure AD では、ユーザーがパスワードを変更する場合、前回のパスワードは使用できません。 パスワード ポリシーは、Azure AD で直接作成および管理されるすべてのユーザーアカウントに適用されます。 このパスワード ポリシーは変更できません。 詳細については、「[Azure AD のパスワード ポリシー](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)」を参照してください。
+Azure AD では、ユーザーがパスワードを変更する場合、前回のパスワードは使用できません。 パスワード ポリシーは、Azure AD で直接作成および管理されるすべてのユーザーアカウントに適用されます。 このパスワード ポリシーは変更できません。 詳細については、「[Azure AD のパスワード ポリシー](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)」を参照してください。
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>オンプレミスの Active Directory から Azure AD (Microsoft 365) へユーザー パスワード ハッシュを同期する
 
 この記事は、クラウド専用ユーザー (Azure AD) の有効期限ポリシーを設定するユーザーを対象にしています。 パスワード ハッシュ同期、パススルー認証、ADFSなどのオンプレミス フェデレーションを使用するハイブリッド ID ユーザーには適用されません。
   
-ユーザー パスワード ハッシュをオンプレミスの AD から Azure AD に同期する方法については、「[Implement password hash synchronization with Azure AD Connect sync (Azure AD Connect 同期でパスワード ハッシュ同期を実装する)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)」を参照してください。
+ユーザー パスワード ハッシュをオンプレミスの AD から Azure AD に同期する方法については、「[Implement password hash synchronization with Azure AD Connect sync (Azure AD Connect 同期でパスワード ハッシュ同期を実装する)](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)」を参照してください。
 
 ## <a name="password-policies-and-account-restrictions-in-azure-active-directory"></a>Azure Active Directory のパスワード ポリシーとアカウントの制限
 
-Azure Active Directory には、その他のパスワード ポリシーと制限を設定できます。 詳細については、「[Azure Active Directory のパスワード ポリシーとアカウントの制限](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy)」を確認してください。
+Azure Active Directory には、その他のパスワード ポリシーと制限を設定できます。 詳細については、「[Azure Active Directory のパスワード ポリシーとアカウントの制限](/azure/active-directory/authentication/concept-sspr-policy)」を確認してください。
 
 ## <a name="update-password-policy"></a>パスワードポリシーの更新
 
 Set-MsolPasswordPolicy コマンドレットは、指定されたドメインまたはテナントのパスワードポリシーを更新します。 2つの設定が必要です。まず、パスワードを変更するまでの有効期間を指定します。2番目に、パスワードの有効期限が近づいているという最初の通知をユーザーが受け取るときにトリガーされる、パスワードの有効期限までの日数を示します。
 
-特定のドメインまたはテナントのパスワードポリシーを更新する方法については、[「Set-MsolPasswordPolicy」](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)を参照してください。
+特定のドメインまたはテナントのパスワードポリシーを更新する方法については、[「Set-MsolPasswordPolicy」](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

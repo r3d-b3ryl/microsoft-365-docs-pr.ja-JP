@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: ユーザーにライセンスを割り当てる方法を説明します。
 ms.date: 08/14/2020
-ms.openlocfilehash: b5179006da896dbadab10d43a43b094acedcb806
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 9f044f29cabf4976d5fbf17b22777da62e4414c5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113987"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915496"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -50,8 +50,8 @@ ms.locfileid: "50113987"
 ## <a name="before-you-begin"></a>はじめに
 
 - ライセンスを割り当てるには、グローバル、ライセンス、またはユーザー管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../add-users/about-admin-roles.md)」を参照してください。
-- [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](https://go.microsoft.com/fwlink/p/?linkid=850410)ことができます。
-- グループ ベースのライセンスを使用するには、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
+- [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)ことができます。
+- グループ ベースのライセンスを使用するには、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
 - Sway などの一部のサービスでは、ユーザーに自動的に割り当てられるため、個別に割り当てる必要はありません。
 
 ::: moniker range="o365-worldwide"
@@ -163,7 +163,7 @@ ms.locfileid: "50113987"
 
 ## <a name="assign-a-license-to-a-guest-user"></a>ゲスト ユーザーにライセンスを割り当てる
 
-ゲスト ユーザーを招待して、Azure Active Directory 管理センターで組織と共同作業できます。 ゲスト ユーザーの詳細については、「[Azure Active Directory B2B のゲスト ユーザー アクセスとは](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b)」を参照してください。 ゲスト ユーザーがいない場合は、「[クイック スタート: Azure Portal のディレクトリにゲスト ユーザーを追加する](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)」を参照してください。
+ゲスト ユーザーを招待して、Azure Active Directory 管理センターで組織と共同作業できます。 ゲスト ユーザーの詳細については、「[Azure Active Directory B2B のゲスト ユーザー アクセスとは](/azure/active-directory/external-identities/what-is-b2b)」を参照してください。 ゲスト ユーザーがいない場合は、「[クイック スタート: Azure Portal のディレクトリにゲスト ユーザーを追加する](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)」を参照してください。
 
 > [!IMPORTANT]
 > 次の手順を実行するには、全体管理者である必要があります。

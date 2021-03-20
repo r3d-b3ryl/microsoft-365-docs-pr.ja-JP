@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで集中展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: d4d21678be0d8e6a845c8909d2dc818f02f79b24
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 9ded0294912a3c3c99e62913bcdc349de7bae1b5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509112"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915388"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
 5. 次のページで、**[すべてのユーザー]**、**[特定のユーザー/グループ]**、**[自分だけ]** 選択して、アドインの展開先を指定します。 [検索] ボックスを使用して、特定のユーザーまたはグループを検索します。 <br/>
 
     > [!NOTE]
-    > アドインに適用されるその他の状態については、「アドインの状態 [」を参照してください](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md)。
+    > アドインに適用されるその他の状態については、「アドインの状態 [」を参照してください](./manage-addins-in-the-admin-center.md)。
   
 6. **[展開]** を選択します。
   
@@ -121,9 +121,9 @@ Office アドインに結合されている XML マニフェスト ファイル�
 
 - ユーザーのドキュメントのデータを読み書きして、そのユーザーに価値を提供する。
 
-Office アドインの種類と機能の詳細については、「[Office アドイン プラットフォームの概要](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)」をご覧ください (特に「Office アドインの構造」セクション)。
+Office アドインの種類と機能の詳細については、「[Office アドイン プラットフォームの概要](/office/dev/add-ins/overview/office-add-ins)」をご覧ください (特に「Office アドインの構造」セクション)。
   
-ユーザーのドキュメントを操作するため、アドインはマニフェストで必要なアクセス許可を宣言する必要があります。5 レベルの JavaScript API アクセス許可モデルが、タスク ウィンドウ アドインのユーザーにプライバシーとセキュリティの基礎を提供します。Office ストア 内のアドインの多くは ReadWriteDocument レベルで、ほとんどすべてのアドインは少なくとも ReadDocument レベルをサポートします。アクセス許可レベルの詳細については、「[コンテンツとタスク ウィンドウ アドインでの API 使用のアクセス許可の要求](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)」をご覧ください。
+ユーザーのドキュメントを操作するため、アドインはマニフェストで必要なアクセス許可を宣言する必要があります。5 レベルの JavaScript API アクセス許可モデルが、タスク ウィンドウ アドインのユーザーにプライバシーとセキュリティの基礎を提供します。Office ストア 内のアドインの多くは ReadWriteDocument レベルで、ほとんどすべてのアドインは少なくとも ReadDocument レベルをサポートします。アクセス許可レベルの詳細については、「[コンテンツとタスク ウィンドウ アドインでの API 使用のアクセス許可の要求](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)」をご覧ください。
   
 マニフェストを更新するとき、一般的に変更されるのはアドインのアイコンとテキストです。場合によっては、アドイン コマンドが変更されます。ただし、アドインのアクセス許可は変更されません。アドインのすべてのコードとロジックが実行される Web アプリケーションは、Web アプリケーションの性質上、いつでも変更される可能性があります。
   
@@ -140,10 +140,10 @@ Office アドインの種類と機能の詳細については、「[Office ア�
 
 [管理センターでアドインを管理する](manage-addins-in-the-admin-center.md)
 
-[最初の Word 作業ウィンドウ アドインをビルドします](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator)。
+[最初の Word 作業ウィンドウ アドインをビルドします](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator)。
 
 [未成年者とストアからアドインを取得する](minors-and-acquiring-addins-from-the-store.md)
   
-[集中展開 PowerShell コマンドレットを使用してアドインを管理する](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[集中展開 PowerShell コマンドレットを使用してアドインを管理する](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
   
-[トラブルシューティング: アドインが表示されないユーザー](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[トラブルシューティング: アドインが表示されないユーザー](/office365/troubleshoot/access-management/user-not-seeing-add-ins)

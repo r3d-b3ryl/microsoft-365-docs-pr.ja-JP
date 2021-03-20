@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: ドメインを確認し、Microsoft 365 で DNS レコードを作成する方法を学びます。
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: c5c33af8a5635d1092aec2f1bffdfc942f2e4851
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126337"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914596"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Microsoft 365 にドメインを接続する
 
@@ -72,10 +72,10 @@ CNAME レコードの情報は、管理センターのドメイン セットア�
 
 レコードを保存します。
 
-SPF レコードを検証するには、[SPF 検証ツール](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)のいずれかを使用します。
+SPF レコードを検証するには、[SPF 検証ツール](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)のいずれかを使用します。
 
 SPF はスプーフィングの防止に役立ちますが、SPF では保護できないスプーフィング方法があります。 これらから保護するために、SPF をセットアップした後、Microsoft 365 のために DKIM と DMARC も構成する必要があります。
 
-使用を開始する場合は、「[DKIM を使用して、Microsoft 365 のドメインから送信される送信電子メールを検証する](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)」、「[DMARC を使用して Microsoft 365 のメールを検証する](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)」を参照してください。
+使用を開始する場合は、「[DKIM を使用して、Microsoft 365 のドメインから送信される送信電子メールを検証する](../../security/office-365-security/use-dkim-to-validate-outbound-email.md)」、「[DMARC を使用して Microsoft 365 のメールを検証する](../../security/office-365-security/use-dmarc-to-validate-email.md)」を参照してください。
 
 最後に、管理センターのドメイン セットアップ ウィザードに戻って設定を完了します。

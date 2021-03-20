@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: 7b62191d08e5ff91e54bb16b06a0511e02f16b6d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055495"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916180"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>手順 5.  リモートワーカー向けの生産性向上アプリとサービスを展開する
 
@@ -42,7 +42,7 @@ ms.locfileid: "50055495"
 
 Teams を使うことで、チャット、会議、通話、共同作業をすべて 1 つの場所で行えます。 何百万人ものユーザーが毎日 Teams で仕事をこなしています。Teams には、リモート ワークに必要なすべてのものが、チームワーク用のハブにまとめられているのです。 
 
-詳細なガイドについては、「[Microsoft Teams を使用してリモート ワーカーをサポートする](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)」を参照してください。 
+詳細なガイドについては、「[Microsoft Teams を使用してリモート ワーカーをサポートする](/microsoftteams/support-remote-work-with-teams)」を参照してください。 
 
 Teams をリモート ワークに使用するためのガイダンスとデモについては、「[Microsoft Teams Web キャストによるハイブリッド作業の有効化](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)」をご覧ください。
 
@@ -76,10 +76,10 @@ Teams は、デスクトップ、Web、モバイル バージョンの Teams か
 
 以下から SharePoint か OneDrive へドキュメントを移行しなければならない場合もあります。
 
-- [SharePoint Server チームサイト](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
-- [個人用サイト](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
-- [ファイル共有](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
-- [ボックス](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+- [SharePoint Server チームサイト](/sharepointmigration/sp-teams-sites-migration-guide)
+- [個人用サイト](/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [ファイル共有](/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [ボックス](/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
 SharePoint Online と OneDrive を保護するには、推奨される ID とデバイス アクセス ポリシーに関する[こちらの記事](../security/office-365-security/sharepoint-file-access-policies.md)を参照してください。
 
@@ -87,15 +87,15 @@ SharePoint Online と OneDrive を保護するには、推奨される ID とデ
 
 Microsoft 365 アプリは、従業員がいつでもどこからでもシームレスに共同作業できる、エンタープライズ向けの生産的かつ安全な Office 環境です。 リモート ワーカーは、1 つのドキュメントに対して複数のユーザーと同時に共同作業したり、リアル タイムで編集や変更を確認したり、ノート PC、PC、モバイル デバイスで他のユーザーと共有編集したりできます。
 
-詳細については、「[Microsoft 365 Apps の展開ガイド](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
+詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>生産性向上アプリとサービスに関する管理技術リソース
 
-- [Microsoft Teams を使用してリモート ワーカーをサポートする](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [Microsoft Teams を使用してリモート ワーカーをサポートする](/microsoftteams/support-remote-work-with-teams)
 - [Microsoft Teams Web キャストによるハイブリッド作業の有効化](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams Customer Success Kit のダウンロード](https://www.microsoft.com/download/details.aspx?id=54244)
-- [導入を推進するためのツール](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
-- [Microsoft Teams の変更管理戦略を作成する](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
+- [導入を推進するためのツール](/microsoftteams/adopt-tools-and-downloads) 
+- [Microsoft Teams の変更管理戦略を作成する](/MicrosoftTeams/change-management-strategy)
 - [3 層の保護を使ってチームを構成する](configure-teams-three-tiers-protection.md)
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>生産性向上アプリとサービスに関するユーザー トレーニング リソース

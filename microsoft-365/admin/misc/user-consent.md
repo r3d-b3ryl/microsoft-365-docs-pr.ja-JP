@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 でのアプリへのユーザーの同意の管理
+title: Microsoft 365 のアプリに対するユーザーの同意の管理
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,34 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: アプリに対するユーザーの同意と、サードパーティ製アプリがユーザーの Microsoft 365 情報にアクセスできるようにする方法について説明します。
-ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+description: アプリに対するユーザーの同意、およびアプリを有効にし、サード パーティ製アプリがユーザーの Microsoft 365 情報にアクセスできる方法について説明します。
+ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999573"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914560"
 ---
-# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Microsoft 365 でのアプリへのユーザーの同意の管理
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Microsoft 365 のアプリに対するユーザーの同意の管理
 
-この設定では、サインインおよびデータアクセスの要求に対して、OpenID Connect と OAuth 2.0 を使用するアプリに対してユーザーが同意を得ることができるかどうかを制御します。 アプリは、自分の組織内から作成することも、別の Office 365 組織またはサードパーティから入手することもできます。
+この設定は、ユーザーがサインインおよびデータへのアクセス要求に OpenID Connect および OAuth 2.0 を使用するアプリに対してその同意を与えるかどうかを制御します。 アプリは、自分の組織内から作成するか、別の組織または 365 組織またはOfficeから作成できます。
 
-この設定をオンにすると、これらのアプリは組織のデータへのアクセス許可をユーザーに要求し、許可するかどうかをユーザーが選択できるようにします。 この設定をオフにすると、管理者は、ユーザーが使用できるようにする前に、これらのアプリに同意する必要があります。 この場合は、Azure ポータルで管理者の同意ワークフローを設定し、ブロックされたアプリを使用するためにユーザーが管理者の承認要求を送信できるようにすることを検討してください。
+この設定を有効にすると、これらのアプリはユーザーに組織のデータへのアクセス許可を求め、ユーザーは許可するかどうかを選択できます。 この設定をオフにした場合、管理者はユーザーがアプリを使用する前に、それらのアプリに同意する必要があります。 この場合は、ユーザーがブロックされたアプリを使用する管理者の承認要求を送信できるよう、Azure portal で管理者の同意ワークフローを設定する方法を検討してください。
 
 ユーザーは、Office 365 情報に対して自分自身が持っているアクセス権のみをアプリに与えることができます。 他のユーザーの情報に対して、アプリにアクセス権を与えることはできません。
 
-## <a name="turning-user-consent-on-or-off"></a>ユーザーの同意を有効または無効にする
+## <a name="turning-user-consent-on-or-off"></a>ユーザーの同意をオンまたはオフにする
 <a name="__toc379982114"> </a>
 
-アプリに対するユーザーの同意を有効または無効にする方法は次のとおりです。
+アプリに対するユーザーの同意を有効またはオフにする方法を次に示します。
 
-1. 管理センターで、[設定] [ **Settings** \> **組織設定**  >  [サービス](https://go.microsoft.com/fwlink/p/?linkid=2053743)] ページに移動し、[ **アプリへのユーザーの同意** ] を選択します。
+1. 管理センターで、[組織の設定サービスの設定] ページに移動し、[アプリに対するユーザーの同意 \>   >  [](https://go.microsoft.com/fwlink/p/?linkid=2053743)**] を選択します**。
 
-2. [ **アプリへのユーザーの同意** ] ページで、[ユーザーの同意を有効または無効にする] オプションを選択します。
+2. [アプリ **に対するユーザーの同意** ] ページで、ユーザーの同意を有効または無効にするオプションを選択します。
 
 ## <a name="more-info"></a>詳細情報
 <a name="__toc379982114"> </a>
 
-Azure active directory で同意設定を構成する方法については、「 [管理者の同意ワークフローを構成](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow)する」を参照してください。
+Azure active directory で同意設定を構成する方法については、「管理者の同意ワークフローを構成 [する」を参照してください](/azure/active-directory/manage-apps/configure-admin-consent-workflow)。
 
-ユーザーの同意をアプリに対して管理する方法については、「 [アプリケーションの同意を管理する」および「同意要求を評価](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)する」を参照してください。
+アプリに対するユーザーの同意を管理する方法については、「アプリケーションに対する同意の管理」と「同意要求 [の評価」を参照してください](/azure/active-directory/manage-apps/manage-consent-requests)。

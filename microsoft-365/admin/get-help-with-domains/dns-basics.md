@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: ドメイン管理に役立つドメインとそれに関連する DNS レコードについて説明します。
-ms.openlocfilehash: 093641a5c80c70264c1d64ee27cb7621e5f7b2cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926416"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915664"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
@@ -69,7 +69,7 @@ contoso.com のようなドメイン名は、ドメイン レジストラーの�
     
 第 3 レベル ドメインはなぜ必要なのでしょうか。 それは、マーケティングやブログで異なるドメイン名、 たとえば blog.contoso.com などを使いたい場合があるからです。 Microsoft で利用できるように contoso.com のような第 2 レベル ドメインを追加することは一般的ですが、第 3 レベル ドメインを利用することも可能です。
   
-それぞれのドメインの機能の詳細については、[Microsoft 365 および Office 365 プラットフォーム サービスの説明](https://go.microsoft.com/fwlink/?LinkId=402693)を参照してください。
+それぞれのドメインの機能の詳細については、[Microsoft 365 および Office 365 プラットフォーム サービスの説明](/office365/servicedescriptions/office-365-platform-service-description/domains)を参照してください。
   
 ## <a name="understand-dns-record-types"></a>DNS レコードの種類について
 
@@ -150,14 +150,14 @@ contoso.com の NS レコードに「hichina.com」と記載するとします�
 ## <a name="why-add-a-domain-in-microsoft-365"></a>Microsoft 365 でドメインを追加するのはなぜですか?
 
 
-Microsoft 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Microsoft 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Microsoft 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
+Microsoft 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Microsoft 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](../setup/domains-faq.yml)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Microsoft 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
   
 > [!NOTE]
 > Outlook や Word などの Microsoft アプリをダウンロードして使うだけであれば、ドメインを追加する必要はありません。その場合は、[PC または Mac に Office をインストールしてください](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。 
   
 Microsoft 365 では、ドメイン名をメール、一般向け Web サイト、インスタント メッセージング アドレスに使うことができます。
   
-- **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Microsoft 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
+- **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](../setup/domains-faq.yml)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Microsoft 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
     
 - **Web サイト:** Microsoft 365 サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
     
@@ -169,14 +169,14 @@ Microsoft 365 では、ドメイン名をメール、一般向け Web サイト�
 ## <a name="why-add-a-domain-in-microsoft-365"></a>Microsoft 365 でドメインを追加するのはなぜですか?
 
 
-Microsoft 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Microsoft 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Microsoft 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
+Microsoft 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Microsoft 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](../setup/domains-faq.yml)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Microsoft 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
   
 > [!NOTE]
 > Outlook や Word などの Microsoft 365 アプリをダウンロードして使うだけであれば、ドメインを追加する必要はありません。その場合は、[PC または Mac に Office をインストールしてください](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。 
   
 Microsoft 365 では、ドメイン名をメール、一般向け Web サイト、インスタント メッセージング アドレスに使うことができます。
   
-- **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Microsoft 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
+- **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](../setup/domains-faq.yml)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Microsoft 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
     
 - **Web サイト:** サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
     
@@ -190,7 +190,7 @@ Microsoft 365 では、ドメイン名をメール、一般向け Web サイト�
   
 ドメインをセットアップするには、Microsoft 365 管理センターの[値の一覧を参照](information-for-dns-records.md)してください。 
   
-また、展開を予定している場合は、Microsoft 365 に必要なすべての DNS レコードの一覧、それぞれのレコードの機能、値の例も確認してください。 「[Microsoft 365 の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)」を確認してください。
+また、展開を予定している場合は、Microsoft 365 に必要なすべての DNS レコードの一覧、それぞれのレコードの機能、値の例も確認してください。 「[Microsoft 365 の外部ドメイン ネーム システムのレコード](../../enterprise/external-domain-name-system-records.md)」を確認してください。
   
 ## <a name="how-can-i-learn-more"></a>さらに詳しく知るには
 

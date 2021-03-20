@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 集中型アドインを使用して組織内のユーザーとグループにアドインを展開する方法について学習します。
-ms.openlocfilehash: b888c0f329e3f1f36f5aa566df7efbab07cd1f5f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 0750b6c9b91bc5cbd67d227fadb304bfc6cf7537
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509136"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915400"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>管理センターでアドインを管理する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
 
 管理者が組織内のユーザーにアドインを展開した後、管理者はアドインをオフまたはオン、編集、削除、およびアドインへのアクセスを管理できます。
 
-管理センターからのアドインのインストールの詳細については、「管理センターでアドインを展開する」 [を参照してください](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)。
+管理センターからのアドインのインストールの詳細については、「管理センターでアドインを展開する」 [を参照してください](./manage-deployment-of-add-ins.md)。
   
 ## <a name="add-in-states"></a>アドインの状態
 
@@ -87,7 +87,7 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
 ## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>すべてのクライアントでアドイン ストアをオフにしてアドインOfficeを防止する (Outlook を除く)
 
 > [!NOTE]
-> Outlook アドインのインストールは、別のプロセスによって [管理されます](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx)。
+> Outlook アドインのインストールは、別のプロセスによって [管理されます](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)。
 
 組織として、新しいアドインを OfficeストアからダウンロードOfficeがあります。 これを集中展開と組み合わせて使用して、組織で承認されたアドインのみを組織内のユーザーに展開できます。
   
@@ -131,10 +131,10 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
     
 これにより、管理者が一元展開を使用してアドインを管理ストアから割り当Officeされません。
   
-ユーザーが Microsoft アカウントでサインインを防止するには、組織アカウントのみを使用するログオンを制限できます。 詳細については [、2016 年の ID、](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx)認証、および認証Office参照してください。  
+ユーザーが Microsoft アカウントでサインインを防止するには、組織アカウントのみを使用するログオンを制限できます。 詳細については [、2016 年の ID、](/DeployOffice/security/identity-authentication-and-authorization-in-office)認証、および認証Office参照してください。  
 
 > [!NOTE]
-> ユーザーが Office ストアにアクセスしなかOfficeアドインをサイドローディング [してテストを行うのも妨げる可能性があります](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。
+> ユーザーが Office ストアにアクセスしなかOfficeアドインをサイドローディング [してテストを行うのも妨げる可能性があります](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>アドインを使用したエンド ユーザー エクスペリエンスの詳細
 
@@ -162,12 +162,12 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
 
 ## <a name="learn-more"></a>詳細情報
 
-[管理センターでアドインを展開する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
+[管理センターでアドインを展開する](./manage-deployment-of-add-ins.md)
 
-[Office アドイン](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)の作成と構築の詳細情報を表示します。
+[Office アドイン](/office/dev/add-ins/overview/office-add-ins)の作成と構築の詳細情報を表示します。
   
-[アドインを管理するには、集中展開 PowerShell コマンドレットを使用します](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)。
+[アドインを管理するには、集中展開 PowerShell コマンドレットを使用します](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)。
   
-[トラブルシューティング: アドインが表示されないユーザー](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[トラブルシューティング: アドインが表示されないユーザー](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
 
-[未成年者と Microsoft Store からアドインを取得する](https://docs.microsoft.com/microsoft-365/admin/manage/minors-and-acquiring-addins-from-the-store)
+[未成年者と Microsoft Store からアドインを取得する](./minors-and-acquiring-addins-from-the-store.md)

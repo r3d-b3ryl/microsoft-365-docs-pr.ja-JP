@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスは、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。 共有メールボックスを作成する前に知っておくべきことを説明します。
-ms.openlocfilehash: f5d46af5abdd528ce3db817dbabce015ed5abade
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
-ms.translationtype: HT
+ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094723"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915988"
 ---
 # <a name="about-shared-mailboxes"></a>共有メールボックスについて
 
@@ -37,7 +37,7 @@ ms.locfileid: "50094723"
 
 [共有メールボックスを作成する](create-a-shared-mailbox.md)前に、知っておくべきことがいくつかあります。
 
-- **ライセンス:** 共有メールボックスには、ライセンスを割り当てなくても最大 50 GB のデータを保存できます。 その後に、より多くのデータを格納するには、メールボックスにライセンスを割り当てる必要があります。 共有メールボックス ライセンスの詳細については、「[Exchange Online の制限](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits)」を参照してください。 共有メールボックスが記憶域の上限に達した場合、しばらくはメールを受信できますが、新しいメールを送信できなくなります。 その後、メールも受信できなくなります。 そのメールボックスにメールを送信したユーザーには、配信不能エラーが送信されます。
+- **ライセンス:** 共有メールボックスには、ライセンスを割り当てなくても最大 50 GB のデータを保存できます。 その後に、より多くのデータを格納するには、メールボックスにライセンスを割り当てる必要があります。 共有メールボックス ライセンスの詳細については、「[Exchange Online の制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#StorageLimits)」を参照してください。 共有メールボックスが記憶域の上限に達した場合、しばらくはメールを受信できますが、新しいメールを送信できなくなります。 その後、メールも受信できなくなります。 そのメールボックスにメールを送信したユーザーには、配信不能エラーが送信されます。
 
 - **ユーザーのアクセス許可:** 共有メールボックスを使用するには、ユーザーにアクセス許可 (メンバーシップ) を付与する必要があります。 組織内のユーザーのみが共有メールボックスを使用できます。
 

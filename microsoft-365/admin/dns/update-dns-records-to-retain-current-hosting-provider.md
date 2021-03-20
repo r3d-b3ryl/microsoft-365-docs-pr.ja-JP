@@ -20,26 +20,26 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: カスタムドメインの DNS レコードを管理するように Microsoft を設定している場合は、Microsoft 外でホストされている既存のパブリック web サイトにトラフィックをルーティングする方法について説明します。
-ms.openlocfilehash: 5d2bf23d4052815fae210d0fdf6635288ff46b57
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: カスタム ドメインの DNS レコードを管理するために Microsoft を設定している場合は、Microsoft の外部でホストされている既存のパブリック Web サイトにトラフィックをルーティングする方法について説明します。
+ms.openlocfilehash: ceef82345e562e2aa4c291f416c454fb831ee45b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645565"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915976"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する
 
- **DNS ホスティングプロバイダーでドメインの Microsoft レコードを管理する場合**は、このトピックの手順について心配する必要はありません。 Web サイトは現在の状態のままで、引き続きサイトにアクセスできます。 
+ **DNS ホスティング プロバイダーで** ドメインの Microsoft レコードを管理する場合は、このトピックの手順について心配する必要はありません。 Web サイトは現在の状態のままで、引き続きサイトにアクセスできます。 
   
- Microsoft が**DNS レコードを管理している場合**、microsoft の外部でホストされている既存のパブリック web サイトにトラフィックをルーティングするには、ドメインを microsoft に追加した後、次の手順を実行します。 
+ **Microsoft が DNS レコードを管理** している場合は、ドメインを Microsoft に追加した後、Microsoft の外部でホストされている既存のパブリック Web サイトにトラフィックをルーティングするには、次の手順を実行します。 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで DNS レコードを更新する
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
-2. [ **ドメイン** ] ページで、ドメインを選択し、[ **DNS レコード**] を選択します。
+2. [ドメイン **] ページで** 、ドメインを選択し、[DNS レコード] **を選択します**。
 
-3. [ **DNS 設定**] で、[ **カスタムレコード**] を選択します。
+3. [DNS **設定] で、[** カスタム レコード **] を選択します**。
 
 4. [ **+ 新しいカスタム レコード** ] を選択し、次の項目を入力します。 
     
@@ -67,7 +67,6 @@ ms.locfileid: "48645565"
     
 最後に、次の操作を行います。
   
-Microsoft を参照するように[、ドメインの NS レコードを更新](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)します。 
+[Microsoft を指すドメインの NS](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) レコードを更新します。 
   
-NS レコードが Microsoft を指すように更新されている場合、ドメインはすべて設定されています。 メールは Microsoft にルーティングされ、web サイトのアドレスへのトラフィックは引き続き現在の web サイトのホストに送られます。
- 
+NS レコードが Microsoft をポイントするために更新された場合、ドメインはすべてセットアップされます。 メールは Microsoft にルーティングされ、Web サイトアドレスへのトラフィックは引き続き現在の Web サイトのホストに送信されます。

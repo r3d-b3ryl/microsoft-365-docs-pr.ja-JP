@@ -22,21 +22,21 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Microsoft 365 管理センターで配布グループまたはリストを作成し、各受信者の名前を入力せずにグループにメールを送信する方法について説明します。
-ms.openlocfilehash: 7c416612fa241d7fec11a2e24a29e149594951e3
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+description: Microsoft 365 管理センターで配布グループまたはリストを作成して、各受信者の名前を入力せずにグループに電子メールを送信する方法について説明します。
+ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080471"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914248"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで配布グループを作成する
   
-個々の受信者の名前を入力せずにユーザーのグループに電子メールを送信する場合に使用されます。配布グループ (配布リスト) は、特定のディスカッションの件名 (「マーケティング」など) または頻繁に通信する必要がある共通の作業を共有するユーザーによって編成されます。 また、メールを複数のメール アドレスに自動的に転送する方法も提供されます。
+個々の受信者の名前を入力せずにユーザーのグループに電子メールを送信する場合に使用され、配布グループ (配布リスト) は、特定のディスカッションテーマ ("マーケティング" など) または頻繁に通信する必要がある共通の作業を共有するユーザーによって構成されます。 また、複数の電子メール アドレスにメールを自動的に転送する方法も提供されます。
 
-配布グループは、配布リストとも呼ばれる場合があります。
+配布グループは、配布リストと呼ばれる場合があります。
   
-## <a name="create-a-distribution-group-list"></a>配布グループ (リスト) を作成する
+## <a name="create-a-distribution-group-list"></a>配布グループの作成 (リスト)
 
 ::: moniker range="o365-worldwide"
 
@@ -56,22 +56,20 @@ ms.locfileid: "50080471"
 
 ::: moniker-end
 
-1. アプリ起動ツールアイコンを選択し、[管理者] を **選択します**。
+1. アプリ起動ツール アイコンを選択し、[管理者] を **選択します**。
     
-    お探しのアプリが見つかりませんか? アプリ起動ツールから [すべてのアプリ] を **選択** すると、利用できるアプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
+    お探しのアプリが見つかりませんか? アプリ 起動ツールから [すべてのアプリ] **を** 選択すると、利用できるアプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
     
-2. 左側 **のナビゲーション** \> **ウィンドウで** [グループ] を選択し、[グループの追加 **] を選択します**。 
+2. 左側 **のナビゲーション** \> **ウィンドウで** [グループ グループ] を選択し、[グループの追加 **] を選択します**。 
       
-3. On the **Choose a group type field,** choose **Distribution,** and then choose **Next**.
+3. [グループの **種類の選択] フィールドで** 、[配布] を **選択し**、[次へ] を **選択します**。
   
 4. 新しいグループの名前、説明、メール エイリアスを入力し、組織外のユーザーがグループにメールを送信するかどうかを選択します。 
     
-5. Add **キーを押** してグループを作成し、グループを確認して [閉じる] を選択 **します**。 
+5. [ **追加] を** 押してグループを作成し、グループを確認し、[閉じる] を **選択します**。 
     
-6. 配布リストにユーザーを追加するには、「ユーザーまたは連絡先を配布グループに追加 [する」を参照してください](../email/add-user-or-contact-to-distribution-list.md)。
+6. 配布リストにユーザーを追加するには、「 [ユーザーまたは連絡先を配布グループに追加する」を参照してください](../email/add-user-or-contact-to-distribution-list.md)。
     
-Outlook 2016 および Web 上の Outlook でグループを使用する方法については、Outlook トピックの連絡先グループ (以前の配布リスト [) を参照](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) してください。 
+「Outlook 2016 でグループを使用する方法」および「Outlook の連絡先グループ (以前の配布リスト) を使用する」の「Outlook on the web」 [を参照](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) してください。 
   
-配布リスト [の問題に関する](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) ヘルプについては、配布グループの問題を確認してください。 
-  
-
+配布リスト [の問題に関するヘルプ](/office365/troubleshoot/groups/distribution-list-issues) については、「配布グループの問題」を参照してください。 

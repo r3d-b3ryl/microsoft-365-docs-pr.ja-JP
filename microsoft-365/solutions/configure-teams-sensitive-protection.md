@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 0f3f12867314fdd91dfb563f0377995807c0f63d
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921112"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916228"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -39,8 +39,8 @@ ms.locfileid: "49921112"
 
 ゲストと安全に共有する方法の詳細については、次のリソースをご覧ください。
 
-- [組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [セキュリティで保護されたゲスト共有環境を作成する](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する](./share-limit-accidental-exposure.md)
+- [セキュリティで保護されたゲスト共有環境を作成する](./create-secure-guest-sharing-environment.md)
 
 ゲスト共有を許可または禁止するには、関連付けられている SharePoint サイトのチーム レベルとサイト レベルの共有コントロールに対して、秘密度ラベルを組み合わせて使用します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "49921112"
 
 機密保護レベルについては、秘密度ラベルを使用してチームを分類します。 このラベルは、このチームまたは他のチームの個別のファイル、または SharePoint や OneDrive などのその他の場所にあるファイルを分類するために使用することもできます。 
 
-最初の手順では、Teams の秘密度ラベルを有効にする必要があります。 詳細は、「[秘密度ラベルを使用して、Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護する](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)」をご覧ください。
+最初の手順では、Teams の秘密度ラベルを有効にする必要があります。 詳細は、「[秘密度ラベルを使用して、Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)」をご覧ください。
 
 組織に既に秘密度ラベルを展開している場合は、ラベル戦略全体にこのラベルがどのように適合しているかを検討してください。 組織のニーズを満たす必要がある場合、名前または設定を変更できます。
 
@@ -74,7 +74,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 17. **[Auto-labeling for database columns]** (データベースの列の自動ラベル付け) ページで、**[次へ]** をクリックします。
 18. **[ラベルの作成]** をクリックし、**[完了]** をクリックします。
 
-ラベルを作成したら、それを使用するユーザーに発行する必要があります。 機密保護のために、すべてのユーザーがラベルを使用できるようにします。 **[情報保護]** ページの [**ラベルポリシー**] タブで、ラベルを Microsoft 365 コンプライアンス センターに発行します。 すべてのユーザーに適用する既存のポリシーがある場合は、そのポリシーにこのラベルを追加します。 新しいポリシーを作成する必要がある場合は、「[ラベル ポリシーを作成して秘密度ラベルを発行する](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)」をご覧ください。
+ラベルを作成したら、それを使用するユーザーに発行する必要があります。 機密保護のために、すべてのユーザーがラベルを使用できるようにします。 **[情報保護]** ページの [**ラベルポリシー**] タブで、ラベルを Microsoft 365 コンプライアンス センターに発行します。 すべてのユーザーに適用する既存のポリシーがある場合は、そのポリシーにこのラベルを追加します。 新しいポリシーを作成する必要がある場合は、「[ラベル ポリシーを作成して秘密度ラベルを発行する](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)」をご覧ください。
 
 ## <a name="create-a-team"></a>チームを作成する
 
@@ -98,7 +98,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 2. **[設定]** タブで、**[メンバーのアクセス許可]** を展開します。
 3. **[プライベート チャネルを作成する]** チェック ボックスをオフにします。
 
-[チーム ポリシー](https://docs.microsoft.com/MicrosoftTeams/teams-policies)を使用して、プライベート チャネルを作成できるユーザーを制御することもできます。
+[チーム ポリシー](/MicrosoftTeams/teams-policies)を使用して、プライベート チャネルを作成できるユーザーを制御することもできます。
 
 ## <a name="sharepoint-settings"></a>SharePoint の設定
 
@@ -125,7 +125,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 6. [既定の共有リンクの種類] で、**[組織レベルの設定と同じ]** チェック ボックスをオフにして、**[特定のユーザー (ユーザーが指定したユーザー人物のみ)]** を選びます。
 7. **[保存]** をクリックします。
 
-これをチーム作成プロセスの一部としてスクリプト化する場合は、次のパラメーターを指定して [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) を使用します。
+これをチーム作成プロセスの一部としてスクリプト化する場合は、次のパラメーターを指定して [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) を使用します。
 
 - `-SharingCapability Disabled` ゲスト共有を無効にするには (既定では有効です)
 - `-DefaultSharingLinkType Internal` 既定の共有リンクを *特定のユーザー* に変更するには
@@ -149,6 +149,4 @@ SharePoint サイトがチーム メンバーではないユーザーと共有�
 
 ## <a name="see-also"></a>関連項目
 
-[秘密度ラベルとそのポリシーを作成して構成する](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)
-
-
+[秘密度ラベルとそのポリシーを作成して構成する](../compliance/create-sensitivity-labels.md)

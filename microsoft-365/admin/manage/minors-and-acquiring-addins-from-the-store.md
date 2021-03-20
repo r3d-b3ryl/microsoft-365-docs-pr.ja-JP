@@ -1,5 +1,5 @@
 ---
-title: 未成年者とストアからのアドインの取得
+title: 未成年者とストアからアドインを取得する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,63 +19,62 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: 未成年者の個人データを管理する一般的なデータ保護規則 (GDPR) の規則について説明します。
-ms.openlocfilehash: a738e22a0ac0b995c8e44fcf4cc5a2eb47375be5
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+description: 未成年者の個人データを管理する一般データ保護規則 (GDPR) の規制について学ぶ。
+ms.openlocfilehash: c49ea719bc85166cc8082200eb833273b0ab5835
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306553"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915256"
 ---
-# <a name="minors-and-acquiring-add-ins-from-the-store"></a>未成年者とストアからのアドインの取得
+# <a name="minors-and-acquiring-add-ins-from-the-store"></a>未成年者とストアからアドインを取得する
 
-一般的なデータ保護規則 (GDPR) は、2018年5月25日に有効になる欧州連合規制です。 ユーザーがデータを保護するための権限が付与されます。 GDPR の1つの側面は、親またはガーディアンが許可されていない個人データを、未成年者が他者に送信することができないことです。 マイナーとして定義された特定の年齢は、個人が配置されている地域によって異なります。
+一般データ保護規則 (GDPR) は、2018 年 5 月 25 日に発効する欧州連合の規則です。 これにより、ユーザーはデータに対する権限と保護をユーザーに与えます。 GDPR の側面の 1 つは、未成年者が自分の個人データを親または保護者が承認しない当事者に送信できないことです。 未成年者として定義される特定の年齢は、個人が位置する地域によって異なります。
   
-保護者の同意に関する法的な規制がある地域には、米国、南韓国、英国、および欧州連合があります。 これらの地域では、マイナーがブロックされます (Azure Active Directory によって)。新しい Office アドインをストアから取得し、以前に取得したアドインを実行します。 法律上の規定がない国では、ダウンロードの制限はありません。
+親の同意に関する法的規制を持つ地域には、米国、韓国、英国、および欧州連合が含まれます。 これらの地域では、マイナーが (Azure Active Directory 経由で) ストアから新しい Office アドインを取得し、以前に取得したアドインを実行してブロックされます。 法的規制のない国では、ダウンロードの制限はありません。
   
-ユーザーは、Azure Active Directory で指定されているデータに基づいて、マイナーであると判断されます。 組織管理者は、法務年齢グループと、そのユーザーの上位下位の同意を宣言します。
+ユーザーは、Azure Active Directory で指定されたデータに基づいてマイナーと判断されます。 組織管理者は、法的年齢グループと、そのユーザーの親の同意を宣言する責任があります。
   
-親/ガーディアンが特定のアドインを使用して小規模に同意場合、組織管理者は一元展開を使用して、同意を得ているすべての未成年者にそのアドインを展開できます。
+親/保護者が特定のアドインを使用して未成年者に同意した場合、組織管理者は集中展開を使用して、同意を得たすべての未成年者にアドインを展開できます。
   
-GDPR を未成年者に準拠させるには、次のいずれかの Office ビルドが学校/組織に展開されていることを確認する必要があります。
+未成年者に対して GDPR に準拠するには、次の 1 つのビルドの Officeが学校/組織に展開されている必要があります。
  
- **Word、Excel、PowerPoint、Project の場合**: 
+ **Word、Excel、PowerPoint、および Project の場合**: 
 
 |**プラットフォーム** <br/> |**ビルド番号** <br/> |
 |:-----|:-----|
-|Microsoft 365 enterprise 用アプリ (現在のチャネル)  <br/> |9001.2138   <br/> |
-|Microsoft 365 enterprise 用アプリ (半期エンタープライズチャネル)  <br/> |8431.2159  <br/> |
+|Microsoft 365 Apps for enterprise (Current Channel)  <br/> |9001.2138   <br/> |
+|Microsoft 365 Apps for enterprise (半期エンタープライズ チャネル)  <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|Web 用 Office  <br/> |N/A  <br/> |
+|Web 用 Office  <br/> |該当なし  <br/> |
    
  **Outlook の場合**: 
   
 |**プラットフォーム** <br/> |**ビルド番号** <br/> |
 |:-----|:-----|
-|Outlook 2016 for Windows (MSI)  <br/> |ビルドの未定  <br/> |
-|Windows 版 Outlook 2016 (C2R)  <br/> |16.0.9323.1000  <br/> |
+|Outlook 2016 for Windows (MSI)  <br/> |ビルド TBD なし  <br/> |
+|Outlook 2016 for Windows (C2R)  <br/> |16.0.9323.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.0.9318.1000  <br/> |
-|IOS 用の Outlook mobile  <br/> |2.75.0  <br/> |
-|Outlook mobile for Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |N/A  <br/> |
+|Outlook mobile for iOS  <br/> |2.75.0  <br/> |
+|Android 用 Outlook モバイル  <br/> |2.2.145  <br/> |
+|Outlook.com  <br/> |該当なし  <br/> |
 
- **Office 2013 の要件**
+ **Office 2013要件**
   
-Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライブラリ (ADAL) が有効になっている場合と同じ未成年者チェックをサポートします。 次に説明するように、2つのコンプライアンスオプションがあります。
+Word、Excel、PowerPoint 2013 for Windows では、Active Directory 認証ライブラリ (ADAL) が有効になっている場合と同じマイナー チェックがサポートされます。 次に説明したように、コンプライアンスには 2 つのオプションがあります。
   
-- **ADAL を有効に**します。 この記事では、office [クライアントでの Microsoft 365 モダン認証](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)2013 の使用方法について説明します。<br/>「 [Windows デバイスで Office 2013 の先進認証を有効](../security-and-compliance/enable-modern-authentication.md)にする」で説明されているように、レジストリキーを設定して ADAL を有効にする必要もあります。<br/>さらに、Office 2013 用の次の4月の更新プログラムをインストールする必要があります。
+- **ADAL を有効にする**。 この記事では、ADAL for Office 2013: [Microsoft 365](../../enterprise/modern-auth-for-office-2013-and-2016.md)モダン認証をクライアントとOfficeします。<br/>また、「Windows デバイスで最新の認証を有効にする」の説明に基Office 2013 [する必要があります](../security-and-compliance/enable-modern-authentication.md)。<br/>さらに、次の 4 月の更新プログラムをインストールする必要Office 2013。
     
-  - [Office 2013 のセキュリティ更新プログラムの説明: 2018 年4月10日](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
+  - [2018 年 4 月 10 日Office 2013セキュリティ更新プログラムの説明](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
-  - [2018年4月3日 Office 2013 の更新プログラム (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
+  - [2018 年 4 月 3 日、Office 2013更新プログラム (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **ADAL を有効にしない**でください。 Office 2013 で ADAL を有効にできない場合は、グループポリシーを使用して Office クライアントのストアをオフにすることをお勧めします。 Office 用アプリの設定を無効にする方法については、 [ここ](https://technet.microsoft.com/library/cc178992.aspx)を参照してください。
+- **ADAL を有効にしない**。 ADAL を Office 2013 で有効にできない場合は、グループ ポリシーを使用してクライアントのストアを無効にOfficeします。 アプリの設定をオフにする方法については、Officeを参照 [してください](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15))。
 
 ## <a name="related-articles"></a>関連記事
 
-[管理センターでアドインを展開する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
+[管理センターでアドインを展開する](./manage-deployment-of-add-ins.md)
 
-[管理センターでアドインを管理する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center)
-    
+[管理センターでアドインを管理する](./manage-addins-in-the-admin-center.md)

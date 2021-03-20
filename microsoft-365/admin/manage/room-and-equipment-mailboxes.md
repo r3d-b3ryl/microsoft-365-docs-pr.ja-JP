@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '会議室メールボックスまたは備品用メールボックスを作成すると、組織の全ユーザーが Outlook を使用して会議やイベント用にそのメールボックスを予約できます。 '
-ms.openlocfilehash: ab48a0177acd212ff330a4a772ef84843406a3d5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399604"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915172"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックス
 
 全ユーザーが使用する必要のある会議室、社用車、備品がある場合、それらのリソースはすべてのユーザーが予約できるようにする必要があります。 このような場合、各リソースについて Microsoft 365 で会議室メールボックスまたは備品用メールボックスを作成することをお勧めします。 たとえば、1 階の会議室用、メディア機器用、移動台車用にメールボックスを作成することができます。
   
-会議室メールボックスまたは備品用メールボックスを作成すると、社内の全ユーザーが Outlook を使用して会議やイベント用にそのメールボックスを予約できます。 次の 2 つのタブで**使用方法**と**設定方法**について説明します。 会議室メールボックスと備品用メールボックスについてよく寄せられる質問について説明します。 
+会議室メールボックスまたは備品用メールボックスを作成すると、社内の全ユーザーが Outlook を使用して会議やイベント用にそのメールボックスを予約できます。 次の 2 つのタブで **使用方法** と **設定方法** について説明します。 会議室メールボックスと備品用メールボックスについてよく寄せられる質問について説明します。 
   
 ## <a name="use-room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックスを使用する
 
@@ -88,7 +88,7 @@ ms.locfileid: "44399604"
 6. 変更した場合は、[**保存**]、[**閉じる**] の順に選択します。
 
 > [!Note]
-> 会議室メールボックスと備品用メールボックスを保護するには、これらのメールボックスへのサインインをブロックします。 詳細については、「[共有メールボックス アカウントのサインインをブロックする](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account)」を参照してください。
+> 会議室メールボックスと備品用メールボックスを保護するには、これらのメールボックスへのサインインをブロックします。 詳細については、「[共有メールボックス アカウントのサインインをブロックする](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account)」を参照してください。
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックスについてよく寄せられる質問
 
@@ -110,4 +110,4 @@ Outlook でスケジュールした会議を開き、出席者の場合と同様
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>会議室や備品の予約を担当する所有者は必要ですか?
 
- いいえ。会議室メールボックスまたは備品用メールボックスの担当者は必要ありません。 
+ いいえ。会議室メールボックスまたは備品用メールボックスの担当者は必要ありません。

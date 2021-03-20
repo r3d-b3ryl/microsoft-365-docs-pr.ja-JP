@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '使用状況分析が API に接続する方法と、さまざまな Microsoft 365 サービスの使用状況の毎月の傾向を示す方法について説明します。  '
-ms.openlocfilehash: 7d1e797fc388934f66ddc45d2e7f51566e89ad23
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: 1975fc0bdba279b281fb45c8aec22255579ef414
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758942"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913852"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
@@ -35,7 +35,7 @@ ms.locfileid: "50758942"
 Microsoft 365 利用状況分析は、多次元データ モデルを公開する API に接続します。 Microsoft 365 利用状況分析がデータを生成するために使用する API は、一般に利用可能なさまざまな Graph API からの API です。 Microsoft 365 利用状況分析 API 自体の機能は、一般に使用できません。
   
 > [!NOTE]
-> 詳細については、「Microsoft Graph での [Microsoft 365 使用状況レポートの操作」を参照してください](https://go.microsoft.com/fwlink/p/?linkid=864336)。 
+> 詳細については、「Microsoft Graph での [Microsoft 365 使用状況レポートの操作」を参照してください](/graph/api/resources/report)。 
   
 この API は、さまざまな Microsoft 365 サービスの使用の月次傾向に関する情報を提供します。 API によって返される厳密なデータについては、次のセクションの表を参照してください。
   
@@ -295,5 +295,3 @@ Microsoft 365 利用状況分析は、多次元データ モデルを公開す�
 |WinRtCount  <br/> |Timeframe の終わりまでのライセンス認証数を Windows Mobile デバイスのサービス プランを対象に示したものです。  <br/> |
 |Timeframe  <br/> |この列は、日付の値を持っています。予定表テーブルに対する多対 1 のリレーションシップとして使用されます。  <br/> |
 |Content Date  <br/> |Timeframe が現在の月を示している場合、この値はデータが利用できる現在の月の最後の日付を表します。  <br/> Timeframe が前月を示している場合、この値は Timeframe の月の最後の日付を表します。  <br/> |
-   
-

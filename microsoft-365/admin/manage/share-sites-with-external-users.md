@@ -21,19 +21,19 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '組織外のユーザーとサイトやファイルを共有する方法を説明します。 '
-ms.openlocfilehash: 3857cee3073950bbb9c130368abdd7df68d0da2a
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 585034580fd18d9584b4df3d0bec7026cf207f50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114467"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915039"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>サイトとファイルをゲスト ユーザーと共有する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -81,6 +81,4 @@ ms.locfileid: "50114467"
   
 
   
-
-    
 

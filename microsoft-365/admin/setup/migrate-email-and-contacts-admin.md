@@ -28,12 +28,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Gmail や他のメール プロバイダーから連絡先、予定表、メールをインポートし、Microsoft 365 に移行する方法について説明します。
-ms.openlocfilehash: eb82711bc8fb431c6e29272b601b898566446f02
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
-ms.translationtype: HT
+ms.openlocfilehash: 91c8177322e8ebc1e1530675d92d60e96cc73adb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906383"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914104"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
@@ -89,4 +89,4 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>メールボックスが複数の場合: 管理者は Microsoft 365 にメール、連絡先、予定表を一括インポートすることが可能です
 
-ソースのメール システムによっては、いくつかの一括移行処理方法を選択できます。 どの方法が適切かを判断するには、「[複数のメール アカウントを Microsoft 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
+ソースのメール システムによっては、いくつかの一括移行処理方法を選択できます。 どの方法が適切かを判断するには、「[複数のメール アカウントを Microsoft 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。

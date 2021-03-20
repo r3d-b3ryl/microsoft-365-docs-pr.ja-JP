@@ -22,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Microsoft 365 から古いドメインを削除し、ユーザーとグループを別のドメインに移動する方法について説明します。
-ms.openlocfilehash: 39f8d97abb3a424251d6847da02f0dcc58baff31
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: f4281eb793e6a832e3bd7f31484a97ccd5065bf5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114011"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915616"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
   
@@ -44,17 +44,17 @@ ms.locfileid: "50114011"
   
 ### <a name="step-1-move-users-to-another-domain"></a>手順 1: ユーザーを別のドメインに移動する
 
-#### <a name="move-users"></a>ユーザーを移動する
+#### <a name="move-users"></a>ユーザーの移動
 
 ::: moniker range="o365-worldwide"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>にアクセスします。
 
-2. [アクティブ **なユーザー** > **] を選択します**。
+2. **[ユーザー]** > **[アクティブなユーザー]** を選択します。
 
-3. 移動するユーザーの名前の横にあるボックスを選択します。
+3. 移動するすべてのユーザーの名前の横にあるボックスを選択します。
 
-4. ページ **の上部にある** [その他のオプション (**...]**) を選択し、[ドメインの変更] **を選択します**。
+4. ページ **の上部にある** [その他のオプション (**...]**) を選択し、[ドメインの変更 **] を選択します**。
 
 5. [ドメイン **の変更] ウィンドウで** 、別のドメインを選択します。
 
@@ -66,11 +66,11 @@ ms.locfileid: "50114011"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>にアクセスします。  
 
-2. [アクティブ **なユーザー** > **] を選択します**。
+2. **[ユーザー]** > **[アクティブなユーザー]** を選択します。
 
-3. 移動するユーザーの名前の横にあるボックスを選択します。
+3. 移動するすべてのユーザーの名前の横にあるボックスを選択します。
 
-4. At the top of the page, choose **More** > **Edit domains**.
+4. ページの上部で、[その他の編集ドメイン > **] を選択します**。
 
 5. [ドメイン **の編集] ウィンドウで** 、別のドメインを選択します。
   
@@ -82,11 +82,11 @@ ms.locfileid: "50114011"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にアクセスします。  
 
-2. [アクティブ **なユーザー** > **] を選択します**。
+2. **[ユーザー]** > **[アクティブなユーザー]** を選択します。
 
-3. 移動するユーザーすべての名前の横にあるボックスを選択します。
+3. 移動するすべてのユーザーの名前の横にあるボックスを選択します。
 
-4. At the top of the page, choose **More** > **Edit domains**.
+4. ページの上部で、[その他の編集ドメイン > **] を選択します**。
 
 5. [ドメイン **の編集] ウィンドウで** 、別のドメインを選択します。
   
@@ -94,13 +94,13 @@ ms.locfileid: "50114011"
 
 ::: moniker-end
 
-#### <a name="move-yourself"></a>自分自身を移動する
+#### <a name="move-yourself"></a>自分を移動する
 
 ::: moniker range="o365-worldwide"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にアクセスします。
 
-2. [ユーザーの **アクティブな** \> **ユーザー] に** 移動し、一覧からアカウントを選択します。
+2. [ユーザーの **アクティブ** \> **なユーザー]** に移動し、一覧からアカウントを選択します。
 
 3. [アカウント **] タブで** 、[ユーザー名の **管理] を選択** し、別のドメインを選択します。
   
@@ -108,39 +108,39 @@ ms.locfileid: "50114011"
 
 5. 新しいドメインと同じパスワードでサインインします。
 
-また、PowerShell を使用してユーザーを別のドメインに移動することもできます。 詳細については、「[Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。 既定のドメインを設定するには、[Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
+また、PowerShell を使用してユーザーを別のドメインに移動することもできます。 詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。 既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. [アクティブな **ユーザー** \> **] に移動し**、一覧で自分の名前を選択します。
+1. [ユーザーの **アクティブ** \> **なユーザー]** に移動し、一覧で自分の名前を選択します。
 
-2. [ユーザー名/ メール] **セクションで** 、[編集] **を選択し**、別のドメインを選択します。
+2. [ユーザー名 **/ メール] セクションで** 、[編集] **を選択** し、別のドメインを選択します。
 
-3. Select **Set as primary** > **Save** > **Close**.
-  
-4. 上部で、アカウント名を選択し、[サインアウト] **を選択します**。
-
-5. 新しいドメインと同じパスワードでサインインします。
-
-また、PowerShell を使用してユーザーを別のドメインに移動することもできます。 詳細については、「[Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。 既定のドメインを設定するには、[Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. [アクティブな **ユーザー** \> **] に移動し**、一覧で自分の名前を選択します。
-
-2. [ユーザー名/ メール] **セクションで** 、[編集] **を選択し**、別のドメインを選択します。
-
-3. Select **Set as primary** > **Save** > **Close**.
+3. [保存 **閉じる] をプライマリ** > **として設定を** > **選択します**。
   
 4. 上部でアカウント名を選択し、[サインアウト] **を選択します**。
 
 5. 新しいドメインと同じパスワードでサインインします。
 
-また、PowerShell を使用してユーザーを別のドメインに移動することもできます。 詳細については、「[Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。 既定のドメインを設定するには、[Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
+また、PowerShell を使用してユーザーを別のドメインに移動することもできます。 詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。 既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. [ユーザーの **アクティブ** \> **なユーザー]** に移動し、一覧で自分の名前を選択します。
+
+2. [ユーザー名 **/ メール] セクションで** 、[編集] **を選択** し、別のドメインを選択します。
+
+3. [保存 **閉じる] をプライマリ** > **として設定を** > **選択します**。
+  
+4. 上部でアカウント名を選択し、[サインアウト] **を選択します**。
+
+5. 新しいドメインと同じパスワードでサインインします。
+
+また、PowerShell を使用してユーザーを別のドメインに移動することもできます。 詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。 既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
 
 ::: moniker-end
 
@@ -150,7 +150,7 @@ ms.locfileid: "50114011"
 
 1. 管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。
   
-2. グループ名を選択し、[メール アドレス] の[全般] タブの [プライマリ] で 、[編集] を **選択します**。
+2. グループ名を選択し、[メール アドレス] の [全般] タブの **[** プライマリ] で、[編集] を **選択します**。
 
 3. ドロップダウン リストを使用して別のドメインを選択します。
 
@@ -202,26 +202,26 @@ ms.locfileid: "50114011"
 
 ::: moniker-end
   
-2. [ **ドメイン] ページ** で、削除するドメインを選択します。
+2. [ドメイン **] ページ** で、削除するドメインを選択します。
 
 3. 右側のウィンドウで、[削除] を **選択します**。
 
-4. 追加のプロンプトに従って、[閉じる] を選択 **します**。
+4. 追加のプロンプトに従って、[閉じる] を **選択します**。
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>ドメインが削除されるまで、どれくらいかかりますか?
 
-セキュリティ グループ、配布リスト、ユーザー、Microsoft 365 グループなど、多くの場所でドメインが参照されていない場合、Microsoft 365 がドメインを削除するには、わずか 5 分かかる場合があります。 ドメインを使用する参照が多い場合、ドメインが削除されるまでに数時間 (1 日) 程度かかることもあります。
+セキュリティ グループ、配布リスト、ユーザー、Microsoft 365 グループなど、多くの場所で参照されていない場合、Microsoft 365 がドメインを削除するにはわずか 5 分かかります。 ドメインを使用する参照が多い場合、ドメインが削除されるまでに数時間 (1 日) 程度かかることもあります。
   
-数百から数千のユーザーがいる場合は、PowerShell を使用してすべてのユーザーに対するクエリを実行してから、別のドメインに移動してください。これを行わないと、一部のユーザーが UI に表示されない可能性があり、ドメインを削除しようとしてもなぜか失敗します。詳細については、「[Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
+数百から数千のユーザーがいる場合は、PowerShell を使用してすべてのユーザーに対するクエリを実行してから、別のドメインに移動してください。これを行わないと、一部のユーザーが UI に表示されない可能性があり、ドメインを削除しようとしてもなぜか失敗します。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
   
 ## <a name="still-need-help"></a>さらにヘルプが必要ですか?
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> アカウントから [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) ドメインを削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".onmicrosoft.com" アドレスに戻されます。
+> アカウントから [".onmicrosoft.com"](../setup/domains-faq.yml) ドメインを削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".onmicrosoft.com" アドレスに戻されます。
   
-それでも機能しない場合 ドメインを手動で削除する必要がある場合があります。 [お電話ください](../contact-support-for-business-products.md) 。お手伝いします。
+まだ動作していませんか? ドメインを手動で削除する必要がある場合があります。 [電話をして](../contact-support-for-business-products.md) 、お客様の面倒を見るお手伝いをします。
   
 ::: moniker-end
 

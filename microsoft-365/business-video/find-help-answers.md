@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium の管理者向けヘルプを見つける方法について説明します。
-ms.openlocfilehash: cf81ae934a35dadc895a1fc836ef1bd28f5000e0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422593"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913636"
 ---
 # <a name="find-answers-and-help-for-admins"></a>管理者向け回答とヘルプの検索
 
@@ -47,6 +47,6 @@ Microsoft 365 Business Premium に関する質問やサポートが必要な場�
 
 次のリソースを使用して、問題に関するヘルプを取得できます。
 
-- [aka.ms/learn365admin、](https://aka.ms/learn365admin)パスワードのリセットや Microsoft サブスクリプションの割り当てなど、管理者関連のすべてのタスクとヘルプを検索します。
+- [aka.ms/learn365admin、](../admin/index.yml)パスワードのリセットや Microsoft サブスクリプションの割り当てなど、管理者関連のすべてのタスクとヘルプを検索します。
 - [answers.microsoft.com、](https://answers.microsoft.com)回答の検索、ディスカッションの開始、および他のユーザーからの質問を行います。
 - [techcommunity.microsoft.com、](https://techcommunity.microsoft.com)専門家のコミュニティに参加し、ビジネス向け Microsoft 365 のベスト プラクティスを見つける。
