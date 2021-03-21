@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: ビバ トピックのユーザー ロールについて説明します。
-ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453945"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917358"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Microsoft Viva トピックのロール 
 
@@ -31,10 +31,10 @@ Microsoft 365 環境で Viva Topics を使用する場合、ユーザーは次�
 
 ## <a name="topic-viewer"></a>トピック ビューアー
 
-トピック ビューアーは組織内のユーザーで、SharePoint モダン サイト、Microsoft Search through SharePoint、およびトピック センターで強調表示されたトピックOffice.com表示できます。 トピックページでトピックの詳細を表示できます。 
+トピック ビューアーは組織内のユーザーで、SharePoint モダン サイト、Microsoft Search through SharePoint、およびトピック センターで強調表示されたトピック Office.com 表示できます。 トピックページでトピックの詳細を表示できます。 
 
 トピックの強調表示とそのトピック ページをトピック ビューアーに表示するには、次の項目を使用する必要があります。
--   Microsoft 365 管理者[がビ](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)バ トピックス ライセンスを割り当てる。
+-   Microsoft 365 管理者[がビ](./set-up-topic-experiences.md#assign-licenses)バ トピックス ライセンスを割り当てる。
 -   トピックを表示できます。 このタスクは、Microsoft 365 管理センターの [ビバ トピックの設定] ページのナレッジ管理者によって実行されます。
 
 
@@ -48,8 +48,8 @@ Microsoft 365 環境で Viva Topics を使用する場合、ユーザーは次�
 
 トピックを作成して編集するには、次の条件を実行する必要があります。
 
--   Microsoft 365 管理者[がビ](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)バ トピックス ライセンスを割り当てる。
--   [トピックを作成および編集するためのアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)。 このタスクは、Microsoft 365 管理センターの [ビバ トピックの設定] ページのナレッジ管理者によって実行されます。
+-   Microsoft 365 管理者[がビ](./set-up-topic-experiences.md#assign-licenses)バ トピックス ライセンスを割り当てる。
+-   [トピックを作成および編集するためのアクセス許可を割り当てる](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center)。 このタスクは、Microsoft 365 管理センターの [ビバ トピックの設定] ページのナレッジ管理者によって実行されます。
 
 ## <a name="knowledge-managers"></a>ナレッジ マネージャー
 
@@ -63,8 +63,8 @@ Microsoft 365 環境で Viva Topics を使用する場合、ユーザーは次�
 さらに、ナレッジ マネージャーは、既存のトピックを編集したり、新しいトピックを作成したりできます。
 
 トピックを管理するには、次の情報を使用する必要があります。
--   Microsoft 365 管理者[がビ](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)バ トピックス ライセンスを割り当てる。
--   [トピックを管理するためのアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center))。 このタスクは、Microsoft 365 管理センターの [ビバ トピックの設定] ページのナレッジ管理者によって実行されます。
+-   Microsoft 365 管理者[がビ](./set-up-topic-experiences.md#assign-licenses)バ トピックス ライセンスを割り当てる。
+-   [トピックを管理するためのアクセス許可を割り当てる](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center))。 このタスクは、Microsoft 365 管理センターの [ビバ トピックの設定] ページのナレッジ管理者によって実行されます。
 
 ビジネスに関する全体的な知識が豊富なユーザーは、ナレッジ マネージャーの役割に優れた候補者になる可能性があります。 そのような人は、トピックが有効かどうか知る知識を持っているだけでなく、それらのトピックに関連する企業内の人々も知っている可能性があります。
 
@@ -85,4 +85,3 @@ Microsoft 365 環境で Viva Topics を使用する場合、ユーザーは次�
 
 
 ## <a name="see-also"></a>関連項目
-

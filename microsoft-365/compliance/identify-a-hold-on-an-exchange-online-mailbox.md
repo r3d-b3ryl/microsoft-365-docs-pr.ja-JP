@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 の Exchange Online メールボックスに配置できるさまざまな種類の保留リストを識別する方法について説明します。
-ms.openlocfilehash: a5bea8cd279bb980ba2f8a57950c8a66857ba502
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0fdfbd4503a4ddffd2ce2dd97c6af42684aea293
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423628"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917537"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -34,7 +34,7 @@ Microsoft 365 では、組織がメールボックスコンテンツが完全に
 
 - **[電子情報開示の保持](create-ediscovery-holds.md):** セキュリティとコンプライアンス センターの Core 電子情報開示ケースに関連付けられている保持。 電子情報開示ホールドは、ユーザー メールボックスと、Microsoft 365 グループおよび Microsoft Teams の対応するメールボックスに適用できます。
 
-- **[インプレイス保持](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Exchange Online の Exchange 管理センターで電子情報開示In-Place保持&を使用してユーザー メールボックスに適用される保持。 
+- **[インプレイス保持](/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Exchange Online の Exchange 管理センターで電子情報開示In-Place保持&を使用してユーザー メールボックスに適用される保持。 
 
    > [!NOTE]
    > In-Place保留リストは廃止され、保留リストを作成したりIn-Placeメールボックスに適用したりすることはできません。 ただし、In-Place保持は組織内のメールボックスに引き続き適用される可能性があります。これがこの記事に含まれている理由です。 詳細については、「従来の電子 [情報開示ツールの削除」を参照してください](legacy-ediscovery-retirement.md#in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center)。
@@ -59,7 +59,7 @@ Exchange Online PowerShell で次の 2 つのコマンドレットを実行し�
 
 - **Get-OrganizationConfig:** このコマンドレットを使用して、組織全体の保持ポリシーの GUID を取得します。
 
-Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -129,7 +129,7 @@ InPlaceHolds プロパティ内のアイテムを Microsoft 365 アイテム保�
 
 セキュリティ センター PowerShell で次&コマンドを実行して、メールボックスに適用される電子情報開示ホールドを識別します。 手順 1 で識別した電子情報開示ホールドの GUID (UniH プレフィックスを含む) を使用します。 
 
-コンプライアンス センター PowerShell &に接続するには、「Connect  [to Security to Security & PowerShell」を参照してください](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+コンプライアンス センター PowerShell &に接続するには、「Connect  [to Security to Security & PowerShell」を参照してください](/powershell/exchange/connect-to-scc-powershell)。
 
 最初のコマンドは、保留に関する情報を含む変数を作成します。 この変数は、他のコマンドで使用されます。 2 番目のコマンドは、保留リストが関連付けられている電子情報開示ケースの名前を表示します。 3 番目のコマンドは、保留リストの名前と、保留が適用されるメールボックスの一覧を表示します。
 
@@ -227,7 +227,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 > [!TIP]
 > 前のコマンドで非アクティブなメールボックスを指定する最善の方法は、識別名または Exchange GUID 値を使用します。 これらの値のいずれかを使用すると、正しくないメールボックスを誤って指定することを避けられます。 
 
-遅延ホールドの管理にこれらのパラメーターを使用する方法の詳細については [、「Set-Mailbox」を参照してください](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)。
+遅延ホールドの管理にこれらのパラメーターを使用する方法の詳細については [、「Set-Mailbox」を参照してください](/powershell/module/exchange/set-mailbox)。
 
 遅延ホールド時にメールボックスを管理する場合は、次のことを念頭に置いておきます。
 
@@ -239,7 +239,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 
 メールボックスに適用される保留リストを特定した後、保留期間の変更、保留期間の一時的または完全な削除、Microsoft 365 アイテム保持ポリシーから非アクティブなメールボックスの除外などのタスクを実行できます。 保留リストに関連するタスクの実行の詳細については、次のいずれかのトピックを参照してください。
 
-- セキュリティ & コンプライアンス センター PowerShell で[Set-RetentionCompliancePolicy \<Policy Name> -Identity -AddExchangeLocationException \<user mailbox> ](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)コマンドを実行して、組織全体の Microsoft 365 アイテム保持ポリシーからメールボックスを除外します。 このコマンドは *、ExchangeLocation* プロパティの値が等しいアイテム保持ポリシーにのみ使用できます `All` 。
+- セキュリティ & コンプライアンス センター PowerShell で[Set-RetentionCompliancePolicy \<Policy Name> -Identity -AddExchangeLocationException \<user mailbox> ](/powershell/module/exchange/set-retentioncompliancepolicy)コマンドを実行して、組織全体の Microsoft 365 アイテム保持ポリシーからメールボックスを除外します。 このコマンドは *、ExchangeLocation* プロパティの値が等しいアイテム保持ポリシーにのみ使用できます `All` 。
 
 - [非アクティブなメールボックスの保持期間を変更する](change-the-hold-duration-for-an-inactive-mailbox.md)
 

@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: スタンドアロン Exchange Online Protection (EOP) の Web 管理インターフェイスについて説明します。
+description: スタンドアロンの Exchange Online Protection (EOP) の Web 管理インターフェイスについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ab834d14673370a39e148aefa568591ff4c50b8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286959"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916996"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>スタンドアロン EOP の Exchange 管理者センター
 
@@ -31,9 +31,9 @@ ms.locfileid: "50286959"
 **適用対象**
 -  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
 
-Exchange 管理センター (EAC) は、スタンドアロン Exchange Online Protection (EOP) 用の Web ベースの管理コンソールです。
+Exchange 管理センター (EAC) は、スタンドアロンの Exchange Online Protection (EOP) 用の Web ベースの管理コンソールです。
 
-このトピックの Exchange Online バージョンをお探しの場合は、 [Exchange Online の Exchange 管理センターを参照してください](https://docs.microsoft.com/exchange/exchange-admin-center)。
+このトピックの Exchange Online バージョンをお探しの場合 [「Exchange Online の Exchange 管理センター」を参照してください](/exchange/exchange-admin-center)。
 
 ## <a name="open-the-eac-in-eop"></a>EOP で EAC を開く
 
@@ -41,15 +41,15 @@ Exchange 管理センター (EAC) は、スタンドアロン Exchange Online Pr
 
 - **Microsoft 365 管理センターから**:
 
-  1. [すべて表示 <https://admin.microsoft.com> ] に移動 **してクリックします**。
+  1. [すべて表示 <https://admin.microsoft.com> ] に移動し **、[すべて表示] をクリックします**。
 
-     ![Microsoft 365 管理センターで [すべて表示] をクリックする](../../media/m365-center-show-all.png)
+     ![Microsoft 365 管理センターで [すべて表示] をクリックします。](../../media/m365-center-show-all.png)
 
-  2. 表示される **[管理センター]** セクションで、[すべての管理センター] **をクリックします**。
+  2. 表示される **[管理センター]** セクションで、[すべての管理 **センター] をクリックします**。
 
-     ![Microsoft 365 管理センターで [すべての管理センター] をクリックします。](../../media/m365-center-select-all-admin-centers.png)
+     ![[Microsoft 365 管理センターのすべての管理センター] をクリックします。](../../media/m365-center-select-all-admin-centers.png)
 
-  3. 表示された **[すべての管理センター]** ページで **、[Exchange Online Protection] をクリックします**。
+  3. 表示される **[すべての管理センター] ページ** で **、[Exchange Online Protection] をクリックします**。
 
 - に直接移動します `https://admin.protection.outlook.com/ecp/` 。
 
@@ -63,20 +63,20 @@ Exchange 管理センター (EAC) は、スタンドアロン Exchange Online Pr
 
 EAC で実行する多くのタスクで、これがナビゲーションの第 1 階層になります。[機能] ウィンドウは、機能領域ごとに整理されています。
 
-- **受信者**: グループと外部の連絡先を表示する場所です。
+- **受信者**: グループと外部連絡先を表示する場所です。
 
-- **アクセス許可**: 管理者ロールを管理する場所です。
+- **アクセス許可**: 管理者の役割を管理する場所です。
 
-- **コンプライアンス管理**: 管理者の役割グループ レポートと管理者監査ログ レポートが表示されます。
+- **コンプライアンス管理**: 管理者役割グループ レポートと管理者監査ログ レポートが表示されます。
 
-- **保護**: マルウェア対策ポリシー、既定の接続フィルター ポリシー、および DKIM を管理できます。
+- **保護**: マルウェア対策ポリシー、既定の接続フィルター ポリシー、および DKIM を管理できる場所です。
 
   > [!NOTE]
-  > マルウェア対策ポリシーと既定の接続フィルター ポリシーは、セキュリティ/コンプライアンス センターで&する必要があります。 詳細については、「EOP でマルウェア対策ポリシーを構成する」および [「EOP](configure-anti-malware-policies.md) で接続フィルターを構成する」を [参照してください](configure-the-connection-filter-policy.md)。
+  > マルウェア対策ポリシーと既定の接続フィルター ポリシーは、セキュリティ コンプライアンス センターで&する必要があります。 詳細については [、「EOP でマルウェア対策ポリシーを構成する」および「EOP](configure-anti-malware-policies.md) で接続フィルターを構成する」 [を参照してください](configure-the-connection-filter-policy.md)。
 
-- **メール フロー**: ここでは、メール フロー ルール (トランスポート ルールとも呼ばれる)、承認されたドメイン、コネクタ、およびメッセージ追跡を実行できる場所を管理します。
+- **メール フロー**: ここでは、メール フロー ルール (トランスポート ルールとも呼ばれる)、受け入れドメイン、コネクタを管理し、メッセージ 追跡を実行できる場所を管理します。
 
-- **ハイブリッド**: ハイブリッド構成ウィザードを実行 [](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)できる場所と [、Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)モジュールをインストールできる場所です。
+- **ハイブリッド**: ハイブリッド構成ウィザードを実行 [](/Exchange/hybrid-configuration-wizard)できる場所と [、Exchange Online PowerShell](/powershell/exchange/mfa-connect-to-exchange-online-powershell)モジュールをインストールできる場所です。
 
 ### <a name="tabs"></a>タブ
 
@@ -88,7 +88,7 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 ****
 
-|Icon|Name|Action|
+|Icon|名前|Action|
 |---|---|---|
 |![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif)|追加、新規|このアイコンを使用して、新しいオブジェクトを作成します。これらの一部のアイコンには下方向キーが関連付けられており、これをクリックして、作成可能な追加のオブジェクトを表示できます。|
 |![編集アイコン](../../media/ITPro-EAC-EditIcon.gif)|編集|このアイコンを使用してオブジェクトを編集します。|
@@ -110,17 +110,17 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 ### <a name="me-tile-and-help"></a>[自分] タイルとヘルプ
 
-**[自分]** タイルでは、EAC からのサインアウトおよび他のユーザーとしてサインインが行えます。 [ヘルプ **アイコン]** ドロップダウン メニュー ![ ](../../media/ITPro-EAC-HelpIcon.gif) から、次の操作を実行できます。
+**[自分]** タイルでは、EAC からのサインアウトおよび他のユーザーとしてサインインが行えます。 [ヘルプ **アイコン]** ![ ドロップダウン ](../../media/ITPro-EAC-HelpIcon.gif) メニューから、次の操作を実行できます。
 
-- **Help**: Click ![ Help Icon to view the online help ](../../media/ITPro-EAC-HelpIcon.gif) content.
-- **フィードバック**: フィードバックを送信します。
-- **コミュニティ**: コミュニティ フォーラムで、検索の回答に関する質問を投稿します。
-- **ヘルプ バブルを無効** にする : ヘルプ バブルは、オブジェクトを作成または編集するときにフィールドのコンテキスト ヘルプを表示します。 ヘルプ バブルをオフにしたり、無効になっている場合はオンにすることができます。
+- **ヘルプ**: [ヘルプ ![ アイコン] を ](../../media/ITPro-EAC-HelpIcon.gif) クリックして、オンライン ヘルプ コンテンツを表示します。
+- **フィードバック**: フィードバックを残します。
+- **コミュニティ**: コミュニティ フォーラムで回答を検索する質問を投稿します。
+- **ヘルプ バブルを無効** にする: ヘルプ バブルは、オブジェクトを作成または編集するときにフィールドのコンテキスト ヘルプを表示します。 ヘルプ バブルをオフにしたり、無効になっている場合はオンにすることができます。
 - **コマンド ログの表示**: EAC で構成した結果に基づいて、同等の PowerShell コマンドを表示する新しいウィンドウが開きます。
 
 ## <a name="supported-browsers"></a>サポートされているブラウザー
 
-EAC を最大限に活用できるように、常に最新のブラウザー、Office クライアント、アプリを使用することをお勧めします。 また、ソフトウェア更新プログラムも、利用可能になり次第インストールすることをお勧めします。 サポートされているブラウザーとサービスのシステム要件の詳細については、「サービスのシステム要件」を[Office。](https://products.office.com/office-system-requirements)
+EAC を最大限に活用できるように、常に最新のブラウザー、Office クライアント、アプリを使用することをお勧めします。 また、ソフトウェア更新プログラムも、利用可能になり次第インストールすることをお勧めします。 サービスでサポートされているブラウザーとシステム要件の詳細については、「サービスのシステム要件」 [を参照](https://products.office.com/office-system-requirements)Office。
 
 ## <a name="supported-languages"></a>サポートされている言語
 

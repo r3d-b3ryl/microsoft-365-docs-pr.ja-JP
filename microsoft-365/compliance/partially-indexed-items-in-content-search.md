@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Microsoft 365 コンプライアンス センターで実行する電子情報開示検索に含める、Exchange および SharePoint のインデックスのないアイテムについて説明します。
-ms.openlocfilehash: 308e0755f1966b8e4559cf6f08b3133a00ea1b5a
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 39f78c9a6e937fc7152b86a67e56cc95c132ad6a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711907"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916809"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>電子情報開示の部分的にインデックス付きアイテム
 
@@ -57,11 +57,11 @@ Microsoft 365 コンプライアンス センターから実行する電子情�
   
 サポートされているファイル形式と無効になっているファイル形式の一覧については、次のトピックを参照してください。
   
-- **Exchange**  - [Exchange Search によってインデックス付けされたファイル形式](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  - [Exchange Search によってインデックス付けされたファイル形式](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- **Exchange**  - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  - [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
-- **SharePoint**  - [SharePoint の既定のクロールされたファイル名の拡張子と解析されたファイルの種類](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint**  - [SharePoint の既定のクロールされたファイル名の拡張子と解析されたファイルの種類](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>部分的にインデックス付きファイルの種類を持つメッセージとドキュメントを検索結果に返す
 
@@ -110,7 +110,7 @@ Microsoft 365 コンプライアンス センターから実行する電子情�
 
 次の表に、Microsoft 365 の電子情報開示検索で部分的にインデックス付きアイテムとして電子メール メッセージが返される可能性があるインデックスの制限について説明します。
   
-SharePoint ドキュメントのインデックス作成制限の一覧については [、「Search limits for SharePoint Online」を参照してください](https://docs.microsoft.com/sharepoint/search-limits)。
+SharePoint ドキュメントのインデックス作成制限の一覧については [、「Search limits for SharePoint Online」を参照してください](/sharepoint/search-limits)。
   
 |**インデックス作成の制限**|**メモ**|**説明**|
 |:-----|:-----|:-----|

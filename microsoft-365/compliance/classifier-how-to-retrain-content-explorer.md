@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーでトレーニング可能な分類子にフィードバックを提供する方法について学習します。
-ms.openlocfilehash: fabfe8e4df377c25012b358960d7f7ff7ff994bc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423264"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918103"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>コンテンツ エクスプローラーで分類子を再トレーニングする方法
 
@@ -112,4 +112,4 @@ Microsoft 365 コンプライアンス センターの分類子にアクセス�
 ## <a name="see-also"></a>関連項目
 
 - [トレーニング可能な分類子の詳細](classifier-learn-about.md)
-- [SharePoint Server での既定のクロール対象ファイル名拡張子および解析対象ファイルの種類](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [SharePoint Server での既定のクロール対象ファイル名拡張子および解析対象ファイルの種類](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

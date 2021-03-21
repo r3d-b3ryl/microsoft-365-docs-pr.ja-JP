@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で接続フィルターを構成して、電子メール サーバーからの電子メールを許可またはブロックする方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bdc8033996c41238bb1defe831eb8e8c7650bb44
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 43f6c1b9f3867670810f2c4e2ada13544d39380f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406092"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917060"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターを構成する
 
@@ -53,18 +53,18 @@ Exchange Online のメールボックスを使用している Microsoft 365 の�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://protection.office.com/antispam> を使用します。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- この記事の手順を実行するには **、Exchange Online** でアクセス許可を割り当てる必要があります。
+- この記事の手順を実行する際には、あらかじめ **Exchange Online** でアクセス許可を割り当てる必要があります。
   - 既定の接続フィルター ポリシーを変更するには、組織の管理役割グループまたはセキュリティ管理者役割グループの **メンバーである** 必要があります。
   - 既定の接続フィルター ポリシーへの読み取り専用アクセスでは、グローバル リーダーまたはセキュリティリーダーの役割グループの **メンバーである** 必要があります。
 
-  詳細については、「[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)」を参照してください。
+  詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
   **注**:
 
-  - Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 許可またはブロックする電子メール サーバー (送信者) の送信元 IP アドレスを検索するには、メッセージ ヘッダーの接続 IP (**CIP**) ヘッダー フィールドを確認します。 さまざまな電子メール クライアントでメッセージ ヘッダーを表示するには [、「Outlook でインターネット メッセージ ヘッダーを表示する」を参照してください](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
@@ -144,7 +144,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList 192.168.1.10,192
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2.10","192.169.3.0/24","192.168.4.1-192.168.4.5";Remove="192.168.1.10"}
 ```
 
-構文とパラメーターの詳細については [、「Set-HostedConnectionFilterPolicy」を参照してください](https://docs.microsoft.com/powershell/module/exchange/set-hostedconnectionfilterpolicy)。
+構文とパラメーターの詳細については [、「Set-HostedConnectionFilterPolicy」を参照してください](/powershell/module/exchange/set-hostedconnectionfilterpolicy)。
 
 ## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
@@ -174,7 +174,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 - ルール アクション: **メッセージのプロパティを変更** \> **する スパム信頼レベル (SCL)** \> **バイパス スパム フィルターを設定します**。
 
-ルールの監査、ルールのテスト、特定の期間中のルールのアクティブ化、その他の選択を行います。 ルールを施行する前に一定期間ルールをテストすることをお勧めします。 詳細については [、「Exchange Online でメール フロー ルールを管理する」を参照してください](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
+ルールの監査、ルールのテスト、特定の期間中のルールのアクティブ化、その他の選択を行います。 ルールを施行する前に一定期間ルールをテストすることをお勧めします。 詳細については [、「Exchange Online でメール フロー ルールを管理する」を参照してください](/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
 
 ### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>同じソースからの選択的なメール ドメインのスパム フィルターをスキップする
 
@@ -190,7 +190,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
    - ルールアクション: **メッセージのプロパティを変更** \> **する スパム信頼レベル (SCL)** \> **0 を設定します**。
 
-   - ルール例外: **送信者ドメイン** \> **はfabrikam.com** (スパム フィルターをスキップするドメインまたはドメイン \> のみ) です。
+   - ルール例外:**送信者ドメイン** は fabrikam.com (スパム フィルターをスキップするドメインまたはドメイン \>  \> のみ) です。
 
 ### <a name="scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered"></a>IP 許可一覧のソースからのメッセージがまだフィルター処理されるシナリオ
 

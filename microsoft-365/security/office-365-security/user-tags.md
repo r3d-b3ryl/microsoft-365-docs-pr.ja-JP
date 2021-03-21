@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender で 365 プラン 2 のユーザー タグを持つ特定のOfficeを識別する方法について説明します。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別するために、Office 365 で使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80bd360888be3aeea42da6f9b58a119a9752d382
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: e9bb6a233f21268df860974549ecffbfd7154045
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758894"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916408"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365)
 
@@ -41,7 +41,7 @@ ms.locfileid: "50758894"
 - [脅威エクスプローラーとリアルタイム検出](threat-explorer.md)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
 - [キャンペーン ビュー](campaigns.md)
-- 優先度アカウントの場合は、Exchange[](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理センター (EAC) の [優先度アカウントの電子メールの問題] レポートを使用できます。
+- 優先度アカウントの場合は、Exchange[](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理センター (EAC) の [優先度アカウントの電子メールの問題] レポートを使用できます。
 
 この記事では、セキュリティ コンプライアンス センターでユーザー タグを構成する&説明します。 ユーザー タグを管理するセキュリティ &コンプライアンス センターにはコマンドレットはありません。
 

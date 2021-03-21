@@ -1,5 +1,5 @@
 ---
-title: Windows 10 デバイスのオンボードツールおよび方法 (プレビュー)
+title: Windows 10 デバイスのオンボード ツールと各種方法
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,33 +13,33 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Microsoft 365 コンプライアンスソリューションにセンサーデータを送信できるように、Windows 10 デバイスをオンボードにします。
-ms.openlocfilehash: 5f5a777d11dda900116b6095166ffffed6efa31b
-ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
+description: センサー データを Microsoft 365 コンプライアンス ソリューションに送信できるよう、Windows 10 デバイスをオンボードする
+ms.openlocfilehash: 7cbadc343c5cee1aa7704bcb9da8be2a152726ab
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769644"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917853"
 ---
-# <a name="onboarding-tools-and-methods-for-windows-10-devices-preview"></a>Windows 10 デバイスのオンボードツールおよび方法 (プレビュー)
+# <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Windows 10 デバイスのオンボード ツールと各種方法
 
 **適用対象:**
-- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Endpoint データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
 
-組織内のデバイスは、Microsoft 365 エンドポイントデータ損失防止サービスがそれらからセンサーデータを取得できるように構成する必要があります。 組織内のデバイスの構成に使用できるさまざまな方法と展開ツールがあります。
+Microsoft 365 Endpoint データ損失防止サービスがセンサー データを取得できるよう、組織内のデバイスを構成する必要があります。 組織内のデバイスを構成するために使用できるさまざまな方法と展開ツールがあります。
 
-次の展開ツールと方法がサポートされています。
+次の展開ツールとメソッドがサポートされています。
 
-- グループポリシー
+- グループ ポリシー
 - Microsoft Endpoint Configuration Manager
-- モバイルデバイス管理 (Microsoft Intune を含む)
-- ローカルスクリプト
+- モバイル デバイスの管理 (Microsoft Intune を含む)
+- ローカル スクリプト
 
 ## <a name="in-this-section"></a>このセクションの内容
 トピック | 説明
 :---|:---
-[グループポリシーを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-gp.md) | グループポリシーを使用して、構成パッケージをデバイスに展開します。
-[Microsoft エンドポイント構成マネージャーを使用した Windows デバイスのオンボード](dlp-configure-endpoints-sccm.md) | 構成パッケージをデバイスに展開するには、Microsoft エンドポイント構成マネージャー (current branch) バージョン1606または Microsoft エンドポイント構成マネージャー (current branch) version 1602 またはそれ以前のバージョンを使用できます。
-[モバイルデバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md) | モバイルデバイス管理ツールまたは Microsoft Intune を使用して、構成パッケージをデバイスに展開します。
-[ローカルスクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md) | ローカルスクリプトを使用して構成パッケージをエンドポイントに展開する方法について説明します。
-[オンボードの非永続仮想デスクトップインフラストラクチャ (VDI) デバイス](dlp-configure-endpoints-vdi.md) | 構成パッケージを使用して VDI デバイスを構成する方法について説明します。
+[グループ ポリシーを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-gp.md) | グループ ポリシーを使用して、構成パッケージをデバイスに展開します。
+[Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](dlp-configure-endpoints-sccm.md) | Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1606 または Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1602 以前を使用して、デバイスに構成パッケージを展開できます。
+[モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md) | デバイスに構成パッケージを展開するには、モバイル デバイス管理ツールまたは Microsoft Intune を使用します。
+[ローカル スクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md) | ローカル スクリプトを使用してエンドポイントに構成パッケージを展開する方法について説明します。
+[非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](dlp-configure-endpoints-vdi.md) | 構成パッケージを使用して VDI デバイスを構成する方法について説明します。

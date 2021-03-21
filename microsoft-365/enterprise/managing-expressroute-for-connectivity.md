@@ -18,91 +18,91 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: プレフィックスフィルター、セキュリティ、コンプライアンスなど、構成する共通領域を含む Office 365 の ExpressRoute を管理する方法について説明します。
-ms.openlocfilehash: 5b55150b91b68954cb7b701afb7cf46ab9b951dd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: プレフィックス フィルター、セキュリティ、コンプライアンスOffice構成する共通領域など、ExpressRoute for Office 365 の管理方法について学習します。
+ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692223"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916670"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 向け ExpressRoute の接続を管理する
 
-Office 365 用 ExpressRoute は、インターネットに送信されるすべてのトラフィックを必要とせずに、多くの Office 365 サービスにアクセスするための代替ルーティングパスを提供します。 Office 365 へのインターネット接続は依然として必要ですが、Microsoft が BGP を使用してネットワークにアドバタイズする際には、ネットワークに他の構成が存在しない限り、直接 ExpressRoute 回線を優先させる場合があります。 このルーティングを管理するために構成する共通領域には、プレフィックスのフィルター、セキュリティ、コンプライアンスがあります。
+ExpressRoute for Office 365 は、インターネットへのすべてのトラフィックを必要とせずに、多くの Office 365 サービスに到達する代替ルーティング パスを提供します。 Office 365 へのインターネット接続は必要ですが、ネットワークに BGP を介してアドバタイズする特定のルートは、ネットワークに他の構成がない限り、直接 ExpressRoute 回線を優先します。 このルーティングを管理するために構成する 3 つの共通領域には、プレフィックス フィルター、セキュリティ、コンプライアンスが含まれます。
   
 > [!NOTE]
-> Microsoft は、Azure ExpressRoute の Microsoft ピアリングルーティングドメインの確認方法を変更しました。 2017年7月31日以降、Azure ExpressRoute のすべてのお客様は、Azure 管理コンソールまたは PowerShell を使用して、Microsoft のピアリングを直接有効にすることができます。 Microsoft ピアリングを有効にした後は、すべてのお客様は、Dynamics 365 カスタマーエンゲージメントアプリケーション (旧称 CRM Online) の BGP route 広告を受信するルートフィルターを作成できます。 Office 365 用の Azure ExpressRoute を必要とするお客様は、Office 365 のルートフィルターを作成する前に、マイクロソフトからレビューを受ける必要があります。 Office 365 ExpressRoute を有効にするためのレビューを要求する方法については、Microsoft アカウントチームにお問い合わせください。 承認されていないサブスクリプション Office 365 のルートフィルターを作成しようとすると、[エラーメッセージ](https://support.microsoft.com/kb/3181709)が表示される
+> Microsoft は、Azure ExpressRoute の Microsoft ピアリング ルーティング ドメインのレビュー方法を変更しました。 2017 年 7 月 31 日から、すべての Azure ExpressRoute のお客様は、Azure 管理コンソールまたは PowerShell 経由で Microsoft Peering を直接有効にできます。 Microsoft Peering を有効にすると、すべてのお客様がルート フィルターを作成して、Dynamics 365 Customer Engagement アプリケーション (以前は CRM Online と呼ばれる) の BGP ルート アドバタイズを受信できます。 Azure ExpressRoute for Office 365 を必要とするお客様は、365 用のルート フィルターを作成する前に、Microsoft からOfficeがあります。 365 ExpressRoute を有効にするためのレビューを要求する方法については、Microsoft アカウント チームOfficeしてください。 365 のルート フィルターを作成しようとしているOfficeがエラー メッセージを [受け取ります](https://support.microsoft.com/kb/3181709)
   
-## <a name="prefix-filtering"></a>プレフィックスフィルター
+## <a name="prefix-filtering"></a>プレフィックス フィルター
 
-Microsoft では、すべての BGP ルートを Microsoft から提供されたとおりにお客様が受け入れることをお勧めします。提供されるルートには、追加された精査のメリットを排除するための厳密なレビューと検証プロセス ExpressRoute はネイティブに、お客様側で受信ルートフィルターを使用せずに、IP プレフィックスの所有権、整合性、スケールなどの推奨されるコントロールを提供します。
+Microsoft は、お客様が Microsoft からアドバタイズされたすべての BGP ルートを受け入れ、提供されるルートは厳格なレビューと検証プロセスを経て、追加の精査に対する利点を取り除くことをお勧めします。 ExpressRoute は、IP プレフィックスの所有権、整合性、スケールなどの推奨されるコントロールをネイティブに提供し、顧客側では受信ルート フィルターを使用しません。
   
-ExpressRoute のパブリックピア間でルートの所有権を追加で検証する必要がある場合は、アドバタイズされたルートを、 [Microsoft のパブリック ip 範囲](https://www.microsoft.com/download/details.aspx?id=53602)を表す IPv4 および IPv6 のすべての ip プレフィックスの一覧に対して確認できます。 これらの範囲は、完全な Microsoft アドレススペースをカバーしており、頻繁には変更されません。また、フィルター処理する範囲の信頼性の高いセットを提供することで、Microsoft が所有していないユーザーが環境にリークしていることを懸念している顧客にも追加の保護を提供します 変更がある場合は、その月の1日に実行され、ページの [ **詳細** ] セクションのバージョン番号は、ファイルが更新されるたびに変更されます。
+ExpressRoute パブリック ピアリング全体でルート所有権の追加検証が必要な場合は、Microsoft のパブリック [IP](https://www.microsoft.com/download/details.aspx?id=53602)範囲を表すすべての IPv4 および IPv6 IP プレフィックスのリストに対してアドバタイズされたルートを確認できます。 これらの範囲は、Microsoft のアドレス空間全体をカバーし、頻繁に変更を加え、環境に漏洩する Microsoft 以外の所有ルートを懸念しているお客様にも保護を提供します。 変更が行われた場合は、月の 1 日に行い、ファイルが更新されるごとにページの詳細セクションのバージョン番号が変更されます。
   
-プレフィックスフィルターリストを生成するために [Office 365 の url と IP アドレスの範囲](https://aka.ms/o365endpoints) を使用しないようにするには、いくつかの理由が考えられます。 次のものが含まれます。
+プレフィックス フィルター リストを生成するために [、365](./urls-and-ip-address-ranges.md) URL および IP アドレス範囲Office使用しないようにするには、いくつかの理由があります。 以下を含む:
   
-- Office 365 の IP プレフィックスは、頻繁に多くの変更を行います。
+- このOffice 365 IP プレフィックスは頻繁に多くの変更を受ける。
 
-- Office 365 の Url と IP アドレスの範囲は、ルーティングではなく、ファイアウォールの許可リストとプロキシインフラストラクチャを管理するために設計されています。
+- 365 Office IP アドレス範囲は、ルーティングではなく、ファイアウォール許可リストとプロキシ インフラストラクチャを管理するように設計されています。
 
-- Office 365 の Url と IP アドレスの範囲は、ExpressRoute 接続のスコープ内にある他の Microsoft サービスをカバーしていません。
+- 365 Office IP アドレス範囲は、ExpressRoute 接続のスコープ内にある可能性がある他の Microsoft サービスを対象としません。
 
-|**オプション**|**複雑さ**|**変更管理**|
+|**オプション**|**複雑さ**|**変更コントロール**|
 |:-----|:-----|:-----|
-|Microsoft のすべてのルートを受け入れる  <br/> |**低:** お客様は Microsoft コントロールに依存して、すべてのルートが適切に所有されていることを確認します。  <br/> |なし  <br/> |
-|Microsoft が所有するスーパーネットにフィルターを適用する  <br/> |**中:** 顧客は、Microsoft が所有するルートのみを許可するように、集約されたプレフィックスフィルターリストを実装します。  <br/> |お客様は、頻度の低い更新プログラムがルートフィルターに反映されるようにする必要があります。  <br/> |
-|Office 365 IP 範囲のフィルター処理  <br/> [!CAUTION] 推奨されない |**高:** 顧客は、定義された Office 365 IP プレフィックスに基づいてルートをフィルター処理します。  <br/> |お客様は毎月の更新プログラムに対して、堅牢な変更管理プロセスを実装する必要があります。  <br/> [!CAUTION] このソリューションでは、継続的な変更が必要になります。 時間内に実装されていない変更は、サービスの停止につながる可能性があります。   |
+|すべての Microsoft ルートを受け入れる  <br/> |**低:** お客様は、すべてのルートが適切に所有されていることを確認するために、Microsoft のコントロールに依存しています。  <br/> |なし  <br/> |
+|Microsoft 所有のスーパーネットをフィルター処理する  <br/> |**中:** お客様は、Microsoft が所有するルートのみを許可する要約プレフィックス フィルター リストを実装します。  <br/> |お客様は、まれな更新プログラムがルート フィルターに反映される必要があります。  <br/> |
+|フィルター Office 365 IP 範囲  <br/> [!CAUTION] Not-Recommended |**高:** 顧客は、定義された 365 IP プレフィックスOfficeに基づいてルーティングをフィルター処理します。  <br/> |お客様は、毎月の更新プログラムに対して堅牢な変更管理プロセスを実装する必要があります。  <br/> [!CAUTION] このソリューションには、重要な変更が必要です。 時間内に実装されていない変更は、サービスが停止する可能性があります。   |
 
-Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークにおいて受け入れる広告を管理する必要があります。 ご使用の環境にアドバタイズされているプレフィックスの数について懸念している場合は、 [BGP コミュニティ](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) 機能を使用して、特定の Office 365 サービスセットに対して広告をフィルター処理することができます。 これで、この機能はプレビューに表示されます。
+Azure ExpressRoute Office 365 への接続は、365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP アドバタイズOffice基づいて行います。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、顧客は多くの場合、ネットワーク上で受け入れる広告を管理する必要があります。 環境にアドバタイズされるプレフィックスの数が気になる場合は [、BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) コミュニティ機能を使用して、365 サービスの特定のセットにアドバタイズOfficeできます。 この機能はプレビュー中です。
   
-Microsoft からの BGP ルート広告を管理する方法に関係なく、インターネット回線だけ経由で Office 365 に接続するのと比較して、Office 365 サービスに特別な影響を与えることはありません。 Microsoft は、お客様が Office 365 への接続に使用する回線の種類に関係なく、同じセキュリティ、コンプライアンス、およびパフォーマンスレベルを維持します。
+Microsoft から提供される BGP ルート アドバタイズメントの管理方法に関係なく、インターネット回線だけで Office 365 に接続する場合と比較して、Office 365 サービスへの特別な露出を得る必要はありません。 Microsoft は、お客様が 365 に接続するために使用する回線の種類に関係なく、同じセキュリティ、コンプライアンス、およびパフォーマンス レベルOfficeしています。
   
 ### <a name="security"></a>セキュリティ
 
-Microsoft では、Office 365 サービスとの接続を含む、ExpressRoute パブリックおよび Microsoft ピアとの間で送受信される接続について、独自のネットワークおよびセキュリティ境界の制御を維持することをお勧めします。 ネットワークから microsoft のネットワークへの受信だけでなく、ネットワークから Microsoft のネットワークへの送信を転送するネットワーク要求には、セキュリティコントロールを設定する必要があります。
+Microsoft では、ExpressRoute パブリックと Microsoft ピアリングとの間の接続 (365 サービスとの間の接続を含む) に対して、独自のネットワークおよびセキュリティ境界制御を維持Office勧めします。 ネットワークから Microsoft のネットワークへの送信、および Microsoft のネットワークからネットワークへの受信を行うネットワーク要求に対して、セキュリティ制御を行う必要があります。
   
-#### <a name="outbound-from-customer-to-microsoft"></a>お客様から Microsoft への送信
+#### <a name="outbound-from-customer-to-microsoft"></a>顧客から Microsoft への送信
   
-コンピューターが Office 365 に接続する場合、接続がインターネットまたは ExpressRoute のどちらで行われているかにかかわらず、同じエンドポイントに接続されます。 使用されている回線に関係なく、Office 365 サービスは、一般的なインターネットの宛先よりも信頼度の高いものとして扱うことをお勧めします。 送信セキュリティ制御は、ポートとプロトコルに焦点を合わせて、公開を減らし、継続的な保守を最小限に抑えます。 必要なポート情報は、「 [Office 365 エンドポイント](https://aka.ms/o365endpoints) リファレンス」の記事で参照できます。
+コンピューターが Office 365 に接続すると、インターネット回線または ExpressRoute 回線を使用して接続が行われたかどうかに関係なく、同じエンドポイントセットに接続します。 使用されている回線に関係なく、Microsoft では、365 サービスを一般的なOfficeよりも信頼できるサービスとして扱う必要があります。 送信セキュリティ制御は、ポートとプロトコルに重点を置いて、露出を低減し、継続的なメンテナンスを最小限に抑える必要があります。 必要なポート情報は [、365 エンドポイントOffice記事で](./urls-and-ip-address-ranges.md) 参照できます。
   
-追加のコントロールについては、プロキシインフラストラクチャ内で FQDN レベルフィルターを使用して、インターネットまたは Office 365 宛ての一部またはすべてのネットワーク要求を制限または検査することができます。 機能がリリースされ、Office 365 オファーリングが進化するにつれて Fqdn のリストを維持するには、公開された [office 365 エンドポイント](https://aka.ms/o365endpoints)への変更をより強力に管理および追跡する必要があります。
+追加されたコントロールの場合は、プロキシ インフラストラクチャ内で FQDN レベル フィルターを使用して、インターネットまたは 365 を対象にした一部またはすべてのネットワーク要求を制限または検査Officeできます。 機能がリリースされ、Office 365 製品が進化するにつれて FQDN のリストを維持するには、公開された Office 365 エンドポイントに対するより堅牢な変更管理 [と変更の追跡が](./urls-and-ip-address-ranges.md)必要です。
   
 > [!CAUTION]
-> Microsoft では、Office 365 への送信セキュリティを管理するために IP プレフィックスだけに頼ることはお勧めしません。
+> Microsoft では、365 から 365 への送信セキュリティを管理するために IP プレフィックスのみに依存Office勧めします。
 
-|**オプション**|**複雑さ**|**変更管理**|
+|**オプション**|**複雑さ**|**変更コントロール**|
 |:-----|:-----|:-----|
-|制限なし  <br/> |**低:** お客様は、Microsoft への送信アクセスを無制限に許可します。  <br/> |なし  <br/> |
-|ポートの制限  <br/> |**低:** お客様は、必要なポートで Microsoft への送信アクセスを制限しています。  <br/> |ときどき.  <br/> |
-|FQDN の制限  <br/> |**高:** お客様は、公開された Fqdn に基づいて Office 365 への送信アクセスを制限します。  <br/> |月単位の変更。  <br/> |
+|制限なし  <br/> |**低:** お客様は、Microsoft への無制限の送信アクセスを許可します。  <br/> |なし  <br/> |
+|ポートの制限  <br/> |**低:** お客様は、予期されるポートによって Microsoft への送信アクセスを制限します。  <br/> |まれです。  <br/> |
+|FQDN の制限  <br/> |**高:** 顧客は、発行された FQDN に基Office 365 への送信アクセスを制限します。  <br/> |毎月の変更。  <br/> |
 
-#### <a name="inbound-from-microsoft-to-customer"></a>Microsoft からお客様への受信
+#### <a name="inbound-from-microsoft-to-customer"></a>Microsoft から顧客への受信
   
-Microsoft がネットワークへの接続を開始する必要がある、いくつかのオプションのシナリオがあります。
+Microsoft がネットワークへの接続を開始する必要があるいくつかのオプションのシナリオがあります。
   
-- サインインのパスワードの検証中に ADFS が有効になります。
+- サインインのパスワード検証中の ADFS。
 
-- [Exchange Server のハイブリッド展開](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)。
+- [Exchange Serverハイブリッド展開](/exchange/exchange-hybrid).
 
-- Exchange Online テナントから社内ホストへのメール。
+- Exchange Online テナントからオンプレミス ホストへのメール。
 
-- Sharepoint online からオンプレミスのホストへの SharePoint online メール送信。
+- SharePoint Online メールは、SharePoint Online からオンプレミスのホストに送信されます。
 
-- [SharePoint フェデレーションハイブリッド検索](https://technet.microsoft.com/library/dn197174.aspx)。
+- [SharePoint フェデレーション ハイブリッド検索](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online)。
 
-- [SharePoint ハイブリッド BCS](https://technet.microsoft.com/library/dn197239.aspx )。
+- [SharePoint ハイブリッド BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
-- [Skype](https://technet.microsoft.com/library/jj205403.aspx) for business ハイブリッドおよび/または skype for business [フェデレーション](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx)。
+- [Skype for Business ハイブリッド](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) または [Skype for Business フェデレーション](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features)。
 
-- [Skype For Business Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx )。
+- [Skype for Business Cloud Connector .](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition)
 
-このような接続は、ExpressRoute 回線ではなく、インターネット回線を介して使用して、複雑さを軽減することをお勧めします。 コンプライアンスまたはパフォーマンスによって、これらの受信接続が ExpressRoute 回線経由で受け入れられるようにするには、ファイアウォールまたはリバースプロキシを使用して、受け入れられた接続のスコープを設定することをお勧めします。 [Office 365 エンドポイント](https://aka.ms/o365endpoints)を使用して、右側の FQDN と IP プレフィックスを調べることができます。
+複雑さを軽減するために、ExpressRoute 回線の代わりにインターネット回線を通してこれらの接続を受け入れる必要があります。 コンプライアンスまたはパフォーマンスのニーズに応じて、これらの受信接続を ExpressRoute 回線で受け入れる必要がある場合は、ファイアウォールまたはリバース プロキシを使用して、受け入れられる接続の範囲を指定することを推奨します。 [365 エンドポイントOffice使用して](./urls-and-ip-address-ranges.md)、適切な FQDN と IP プレフィックスを把握できます。
   
 ### <a name="compliance"></a>コンプライアンス
 
-コンプライアンスコントロールに使用するルーティングパスに依存していません。 ExpressRoute またはインターネット回線経由で Office 365 サービスに接続するかどうかに関係なく、コンプライアンスコントロールは変更されません。 Office 365 のさまざまなコンプライアンスおよびセキュリティ証明レベルを確認して、組織のニーズを満たすための最適な選択を判断する必要があります。
+コンプライアンスコントロールに使用するルーティング パスには依存しない。 ExpressRoute またはインターネット回線をOffice 365 サービスに接続しても、コンプライアンス制御は変更されません。 組織のニーズを満たす最適な選択肢を把握するには、Office 365 のさまざまなコンプライアンスとセキュリティ認定レベルを確認する必要があります。
   
-ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/manageexpressroute365]()
   
 ## <a name="related-topics"></a>関連項目
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
-ms.openlocfilehash: 43000ce27fc24dbc6c2db3782b0ed40aa66b7fd2
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: ae86013ea1235c6dfd9929fd329cb0b2dba0fb93
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055533"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918352"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2.  オンプレミスのアプリとサービスへのリモート アクセスを提供します。
 
@@ -55,7 +55,7 @@ Microsoft 365 トラフィックは、組織を経由して間接的にルーテ
 
 スプリッ トトンネリングを使用すると、VPN クライアントを構成して、特定の種類のトラフィックが VPN 接続を介して、組織ネットワークに送信されることを除外できます。
 
-Microsoft 365 クラウドリソースへのアクセスを最適化するには、VPN 接続を介して、**最適化** カテゴリの Microsoft 365 エンドポイントへのトラフィックを除外するようにスプリット トンネリング VPN クライアントを構成します。 詳細については、「[Office 365 エンドポイントのカテゴリ](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories)」をご覧ください。 最適化カテゴリのエンドポイントについては、[こちらのリスト](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)をご覧ください。
+Microsoft 365 クラウドリソースへのアクセスを最適化するには、VPN 接続を介して、**最適化** カテゴリの Microsoft 365 エンドポイントへのトラフィックを除外するようにスプリット トンネリング VPN クライアントを構成します。 詳細については、「[Office 365 エンドポイントのカテゴリ](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)」をご覧ください。 最適化カテゴリのエンドポイントについては、[こちらのリスト](../enterprise/urls-and-ip-address-ranges.md)をご覧ください。
 
 Microsoft 365 クラウド アプリへのほとんどのトラフィックが VPN 接続をバイパスした結果としてのトラフィック フローは、以下のとおりです。
 
@@ -63,7 +63,7 @@ Microsoft 365 クラウド アプリへのほとんどのトラフィックが V
 
 これにより、VPN クライアントは、インターネット経由で、または Microsoft ネットワークへの最も近いエントリポイントに、重要な Microsoft 365 クラウド サービスのトラッフィックを送受信できます。
 
-詳細とガイダンスについては、「[VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel??)」をご覧ください。
+詳細とガイダンスについては、「[VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](../enterprise/microsoft-365-vpn-split-tunnel.md)」をご覧ください。
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>すべてのアプリが Web アプリであり、ハイブリッド ID がある場合にリモート アクセスを展開する
 
@@ -73,7 +73,7 @@ Microsoft 365 クラウド アプリへのほとんどのトラフィックが V
 
 ![Azure AD アプリケーション プロキシのコンポーネント](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-詳細については、この「[Azure AD アプリケーション プロキシの概要](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)」をご覧ください。
+詳細については、この「[Azure AD アプリケーション プロキシの概要](/azure/active-directory/manage-apps/application-proxy)」をご覧ください。
 
 >[!Note]
 >Azure AD アプリケーションプロキシは、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
@@ -87,7 +87,7 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 
 ![Azure P2S VPN のコンポーネント](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
-詳細については、この「[P2S VPN の概要](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about)」をご覧ください。
+詳細については、この「[P2S VPN の概要](/azure/vpn-gateway/point-to-site-about)」をご覧ください。
 
 >[!Note]
 >Azure P2S VPN は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
@@ -99,7 +99,7 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 
 ![Azure Windows Virtual Desktop のコンポーネント](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-詳細については、「[Windows Virtual Desktop の概要](https://docs.microsoft.com/azure/virtual-desktop/overview)」をご覧ください。 
+詳細については、「[Windows Virtual Desktop の概要](/azure/virtual-desktop/overview)」をご覧ください。 
 
 >[!Note]
 >Windows Virtual Desktop は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
@@ -116,7 +116,7 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 ## <a name="admin-technical-resources-for-remote-access"></a>リモート アクセスのための管理技術リソース
 
 - [リモート社員の Office 365 トラフィックをすぐに最適化し、インフラストラクチャの負担を軽減する方法](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571)
-- [VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)
+- [VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](../enterprise/microsoft-365-vpn-split-tunnel.md)
 
 ## <a name="results-of-step-2"></a>手順 2 の結果
 
@@ -136,4 +136,3 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 [![手順 3: Microsoft 365 のセキュリティとコンプライアンスのサービスを展開する](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
 
 Microsoft 365 のセキュリティとコンプライアンスのサービスを展開して、お客様のアプリケーション、データ、およびデバイスを保護するには [手順 3](empower-people-to-work-remotely-security-compliance.md) に進んでください。
-

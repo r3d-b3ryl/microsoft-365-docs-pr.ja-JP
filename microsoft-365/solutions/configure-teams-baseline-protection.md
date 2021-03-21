@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921872"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916336"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -37,9 +37,9 @@ ms.locfileid: "49921872"
 
 |オプション|情報|
 |:------|:-----------|
-|SPO、OneDrive、Teams 用の安全な添付ファイル機能|[添付ファイル保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender for Office 365 - SharePoint、OneDrive、Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|安全なドキュメント|[Microsoft Defender for Office 365 の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Teams 用の安全なリンク|[Teams での Office 365 の安全なリンク](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[リンク保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|SPO、OneDrive、Teams 用の安全な添付ファイル機能|[添付ファイル保護](../security/office-365-security/atp-safe-attachments.md)<br>[Defender for Office 365 - SharePoint、OneDrive、Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)|
+|安全なドキュメント|[Microsoft Defender for Office 365 の安全なドキュメント](../security/office-365-security/safe-docs.md)|
+|Teams 用の安全なリンク|[Teams での Office 365 の安全なリンク](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[リンク保護](../security/office-365-security/atp-safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Teams ゲスト共有
 
@@ -59,7 +59,7 @@ Teams ゲスト アクセスの設定を行うには
 > [!NOTE]
 > Teams のゲスト設定をオンにした後、有効になるまでには、最大で 24 時間かかる場合があります。
 
-Office 365 グループや SharePoint では既定でゲスト共有がオンになっていますが、組織のゲスト共有設定を以前変更したことがある場合には、Teams でゲスト共有が利用できるように「[チームでゲストと共同で作業する](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)」を確認することをお勧めします。
+Office 365 グループや SharePoint では既定でゲスト共有がオンになっていますが、組織のゲスト共有設定を以前変更したことがある場合には、Teams でゲスト共有が利用できるように「[チームでゲストと共同で作業する](./collaborate-as-team.md)」を確認することをお勧めします。
 
 ## <a name="site-and-file-sharing"></a>サイトとファイル共有
 
@@ -71,7 +71,7 @@ Office 365 グループや SharePoint では既定でゲスト共有がオンに
 3. [**ファイルとフォルダーのリンク**] で、[**自分の組織内のユーザーのみ**] を選択します。
 4. [**保存**] をクリックします。
 
-最高のゲスト共有エクスペリエンスのために、[SharePoint および OneDrive の Azure AD B2B との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)を有効にすることもお勧めします。
+最高のゲスト共有エクスペリエンスのために、[SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration-preview)を有効にすることもお勧めします。
 
 ## <a name="create-a-team"></a>チームを作成する
 
@@ -94,12 +94,12 @@ Office 365 グループや SharePoint では既定でゲスト共有がオンに
 
 Microsoft 365 は、コンテンツを保護するための追加の方法を提供しています。 次のオプションを使用して、組織のセキュリティを強化することを検討してください。
 
-- ゲストを[使用条件](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)に同意させる。
-- ゲストに[セッション タイムアウト ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を構成する。
-- [機密情報の種類](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)を作成し、[データ損失防止](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)を使用して、機密情報にアクセスするポリシーを設定する。
+- ゲストを[使用条件](/azure/active-directory/conditional-access/terms-of-use)に同意させる。
+- ゲストに[セッション タイムアウト ポリシー](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を構成する。
+- [機密情報の種類](../compliance/sensitive-information-type-learn-about.md)を作成し、[データ損失防止](../compliance/data-loss-prevention-policies.md)を使用して、機密情報にアクセスするポリシーを設定する。
 
 ## <a name="see-also"></a>関連項目
 
-[Teams での会議ポリシーを管理する](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
+[Teams での会議ポリシーを管理する](/microsoftteams/meeting-policies-in-teams)
 
-[インサイダー リスクの管理の概要](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
+[インサイダー リスクの管理の概要](../compliance/insider-risk-management-configure.md)

@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: PowerShell を使用して、Microsoft 365 コンプライアンス センターとは別に、コマンド ラインから保持ラベルを作成および発行する方法について説明します。
-ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426984"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918223"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>PowerShell を使用して保持ラベルを作成および発行する
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 Microsoft 365 のドキュメントやメールを保持または削除するために[保持ラベル](retention.md)を使用することを決定した後で、非常に多くの、時には数百個もの保持ラベルを作成して発行することが必要であることが判明する場合があります。 大量に保持ラベルを作成する場合、Microsoft 365 コンプライアンス センターから[ファイル プラン](file-plan-manager.md)を使用して保持ラベルを作成することをお勧めします。 ただし、[PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) も使用できます。
   
@@ -51,7 +51,7 @@ Microsoft 365 のドキュメントやメールを保持または削除するた
 
 2. **[データ]** タブ \> **[区切り位置]** \> **[区切り文字]** \> **[カンマ]** \> **[標準]** の順に選択して、テキストを列に変換します。
 
-2. 例を、実際に使用する保持ラベルと設定のエントリに置き換えます。 パラメーター値の詳細については、「[New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)」を参照してください。
+2. 例を、実際に使用する保持ラベルと設定のエントリに置き換えます。 パラメーター値の詳細については、「[New-ComplianceTag](/powershell/module/exchange/new-compliancetag)」を参照してください。
 
 3. 後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。 例: C:\>Scripts\Labels.csv
 
@@ -78,7 +78,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. **[データ]** タブ \> **[区切り位置]** \> **[区切り文字]** \> **[カンマ]** \> **[標準]** の順に選択して、テキストを列に変換します。
 
-2. 例を、実際に使用する保持ラベル ポリシーとそれらの設定のエントリに置き換えます。 このコマンドレットのパラメーター値の詳細については、「[New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)」を参照してください。
+2. 例を、実際に使用する保持ラベル ポリシーとそれらの設定のエントリに置き換えます。 このコマンドレットのパラメーター値の詳細については、「[New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)」を参照してください。
 
 3. 後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。 例: `<path>Policies.csv`
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>手順 4: PowerShell スクリプトを実行する
 
-まず、[セキュリティ/コンプライアンス センターの PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)します。
+まず、[セキュリティ/コンプライアンス センターの PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)します。
 
 次に、保持ラベルを作成および発行するスクリプトを実行します。
   
@@ -761,5 +761,3 @@ if ($ResultCSV)
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```
-
-

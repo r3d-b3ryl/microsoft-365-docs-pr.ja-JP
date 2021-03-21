@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 管理者が Exchange Online PowerShell と CSV ファイルを使用して外部連絡先をグローバル アドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: 475afc3b0622c404b50ebe5549bb5be85af80c5e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 178e3676f8dc5fb59cdad9cc46d7ecbd9dddb90e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423254"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918213"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先を Exchange Online に一括インポートする
 
@@ -71,7 +71,7 @@ Exchange Online の共有アドレス帳 (グローバル アドレス一覧と�
 
 次の手順では、手順 1 と PowerShell で作成した CSV ファイルを使用して、CSV ファイルに一覧表示されている外部連絡先を Exchange Online に一括インポートします。 
   
-1.  PowerShell を Exchange Online 組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 Exchange Online PowerShell に接続する場合は、グローバル管理者アカウントのユーザー名とパスワードを必ず使用してください。 
+1.  PowerShell を Exchange Online 組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 Exchange Online PowerShell に接続する場合は、グローバル管理者アカウントのユーザー名とパスワードを必ず使用してください。 
     
 2. PowerShell を Exchange Online に接続した後、手順 1 で CSV ファイルを保存したデスクトップ フォルダーに移動します。たとえば `C:\Users\Administrator\desktop` .
     
@@ -86,7 +86,7 @@ Exchange Online の共有アドレス帳 (グローバル アドレス一覧と�
 4. 新しい外部連絡先を表示するには、Exchange 管理センター (EAC) に移動し、[受信者の連絡先] **を** \> **クリックします**。 
     
     > [!TIP]
-    > EAC に接続する手順については [、「Exchange Online の Exchange 管理センター」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=328197)。 
+    > EAC に接続する手順については [、「Exchange Online の Exchange 管理センター」を参照してください](/exchange/exchange-admin-center)。 
   
 5. 必要に応じて、[ **更新]** をクリックしてリストを更新し、インポートされた外部連絡先を確認します。 
     
@@ -99,7 +99,7 @@ Exchange Online の共有アドレス帳 (グローバル アドレス一覧と�
 
 手順 2 でコマンドを実行すると、外部連絡先が作成されますが、連絡先または組織の情報 (CSV ファイル内のほとんどのセルからの情報) は含めされません。 これは、新しい外部連絡先を作成すると、必要なプロパティだけが設定されるためです。 CSV ファイルにすべての情報が入力されている必要が無い場合は、ご安心ください。 それがない場合は、追加されません。
   
-1.  PowerShell を Exchange Online 組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1.  PowerShell を Exchange Online 組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
     
 2. 手順 1 で CSV ファイルを保存したデスクトップ フォルダーに移動します。たとえば、 `C:\Users\Administrator\desktop` .
     
@@ -138,7 +138,7 @@ Exchange Online の共有アドレス帳 (グローバル アドレス一覧と�
 
 一部の企業では、外部連絡先のみを使用して、配布グループのメンバーとして追加できます。 このシナリオでは、共有アドレス帳から外部連絡先を非表示にできます。 次の操作を実行してください。
   
-1.  PowerShell を Exchange Online 組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1.  PowerShell を Exchange Online 組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
     
 2. 1 つの外部連絡先を非表示にするには、次のコマンドを実行します。
     

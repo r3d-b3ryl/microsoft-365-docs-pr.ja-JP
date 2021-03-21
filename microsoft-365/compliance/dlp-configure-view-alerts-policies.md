@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: DLP ポリシーのアラートを定義および管理する方法について説明します。
-ms.openlocfilehash: 7bc9d9b59c0424792f995be42591548b758c99ec
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766422"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917863"
 ---
 # <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>DLP ポリシーのアラートの構成と表示 (プレビュー)
 
@@ -44,19 +44,19 @@ ms.locfileid: "50766422"
     -   デバイス
 -   **高度なアラート構成オプション**: これらのオプションは、DLP ポリシー作成フローの一部です。 それらを使用して、リッチ アラート構成を作成します。 イベントの数または漏洩したデータのサイズに基づいて、単一イベントアラートまたは集約アラートを作成できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 開始する前に、必要な前提条件が満たされていることを確認してください。
 
 -   DLP アラート管理ダッシュボードのライセンス
 -   アラート構成オプションのライセンス
--   Roles
+-   ロール
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP アラート管理ダッシュボードのライセンス
 
-365 DLP Office対象テナントはすべて、新しい DLP アラート管理ダッシュボードにアクセスできます。 開始するには、Exchange Online、SharePoint Online、および OneDrive for Business Office 365 DLP の対象となる必要があります。 Office 365 DLP のライセンス要件の詳細については、「どのライセンスがユーザーにサービスの恩恵を受ける権限を提供するのか」 [を参照してください](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
+365 DLP Office対象テナントはすべて、新しい DLP アラート管理ダッシュボードにアクセスできます。 開始するには、Exchange Online、SharePoint Online、および OneDrive for Business Office 365 DLP の対象となる必要があります。 Office 365 DLP のライセンス要件の詳細については、「どのライセンスがユーザーにサービスの恩恵を受ける権限を提供するのか」 [を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
 
-[エンドポイント](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)DLP パブリック プレビューに参加しているお客様、または[Teams DLP](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)の対象となるお客様には、DLP アラート管理ダッシュボードにエンドポイント DLP ポリシーアラートと Teams DLP ポリシーアラートが表示されます。
+[エンドポイント](./endpoint-dlp-learn-about.md?view=o365-worldwide)DLP パブリック プレビューに参加しているお客様、または[Teams DLP](./dlp-microsoft-teams.md?view=o365-worldwide)の対象となるお客様には、DLP アラート管理ダッシュボードにエンドポイント DLP ポリシーアラートと Teams DLP ポリシーアラートが表示されます。
 
 ### <a name="licensing-for-alert-configuration-options"></a>アラート構成オプションのライセンス
 
@@ -68,7 +68,7 @@ ms.locfileid: "50766422"
         -   Microsoft 365 E5 Compliance 
         -   Microsoft 365 電子情報開示と監査アドオン ライセンス
 
-### <a name="roles"></a>Roles
+### <a name="roles"></a>ロール
 
 DLP アラート管理ダッシュボードを表示する場合、または DLP ポリシーでアラート構成オプションを編集する場合は、次のいずれかの役割グループのメンバーである必要があります。
 
@@ -115,7 +115,7 @@ DLP アラート管理ダッシュボードを操作するには、次の操作�
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
     |*イベントの詳細*||
     |      | ID                            | イベントに関連付けられた一意の ID                                        | すべてのイベント                               |
-    |                   | 場所                      | イベントが検出されたワークロード                                      | すべてのイベント                               |
+    |                   | Location                      | イベントが検出されたワークロード                                      | すべてのイベント                               |
     |                   | アクティビティの時間              | DLP 違反を引き起こしたユーザー アクティビティの時間                    | すべてのイベント                               |
     |*影響を受け取ったエンティティ*||
     |  | User                          | DLP 違反を引き起こしたユーザー                                          | すべてのイベント                               |

@@ -1,5 +1,5 @@
 ---
-title: MSCommerce PowerShell モジュールで AllowSelfServicePurchase を使用する
+title: MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -10,50 +10,53 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: AllowSelfServicePurchase PowerShell コマンドレットを使用して、セルフサービスの購入をオンまたはオフにする方法について説明します。
+description: AllowSelfServicePurchase PowerShell コマンドレットを使用してセルフサービス購入をオンまたはオフにする方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 9fb5593855f9523198a3d70548e444a831e82c80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653715"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918244"
 ---
-# <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールで AllowSelfServicePurchase を使用する
+# <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する
 
-[Powershell ギャラリー](https://aka.ms/allowselfservicepurchase-powershell-gallery)で**MSCommerce** powershell モジュールを使用できるようになりました。 このモジュールには、組織内のユーザーがセルフサービス購入を行うことができるかどうかを制御できる、 **Allowselfservicepurchase**の**policyid**パラメーターの値が含まれています。
+**MSCommerce** PowerShell モジュールが [PowerShell ギャラリーで利用できます](https://aka.ms/allowselfservicepurchase-powershell-gallery)。 このモジュールには **、組織内のユーザー** がセルフサービス購入を行えるかどうかを制御できる **AllowSelfServicePurchase** の PolicyID パラメーター値が含まれています。
 
-**MSCommerce** PowerShell モジュールを使用して、次のことを行うことができます。
+**MSCommerce PowerShell** モジュールを使用すると、次の目的で使用できます。
 
-- **Allowselfservicepurchase**パラメーター値の既定の状態を表示する (有効または無効)
-- 適用可能な製品の一覧、およびセルフサービス購入が有効か無効かを表示する
-- 特定の製品の現在の設定を表示または変更して、有効にするか無効にするかを指定します。
+- **AllowSelfServicePurchase** パラメーター値の既定の状態を表示する (有効または無効のかどうか)
+- 該当する製品の一覧とセルフサービス購入が有効か無効かを表示する
+- 特定の製品の現在の設定を表示または変更して、有効または無効にする
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
-**MSCommerce** PowerShell モジュールを使用するには、次のものが必要です。
+**MSCommerce PowerShell モジュール** を使用するには、次が必要です。
 
 - Windows 10 デバイス
-- デバイスに対する管理者のアクセス許可
+- デバイスの管理者のアクセス許可
 - テナントのグローバルまたは課金管理者の役割
 
-## <a name="install-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールをインストールする
+## <a name="install-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールのインストール
 
-**MSCommerce** powershell モジュールを Windows 10 デバイスに1回インストールしてから、開始する各 powershell セッションにインポートします。 [Powershell ギャラリー](https://aka.ms/allowselfservicepurchase-powershell-gallery)から**MSCommerce** powershell モジュールをダウンロードします。
+WINDOWS 10 デバイスに **MSCommerce** PowerShell モジュールを 1 回インストールし、開始する各 PowerShell セッションにインポートします。 **PowerShell ギャラリーから MSCommerce** [PowerShell モジュールをダウンロードします](https://aka.ms/allowselfservicepurchase-powershell-gallery)。
 
-**PowerShellGet**を使用して**MSCommerce** PowerShell モジュールをインストールするには、次のコマンドを実行します。
+**PowerShellGet を使用して MSCommerce** PowerShell モジュールをインストール **するには、** 次のコマンドを実行します。
 
 ```powershell
 Install-Module -Name MSCommerce
 ```
 
-## <a name="import-mscommerce-into-the-powershell-session"></a>PowerShell セッションに MSCommerce をインポートする
+## <a name="import-mscommerce-into-the-powershell-session"></a>MsCommerce を PowerShell セッションにインポートする
 
-Windows 10 デバイスにモジュールをインストールしたら、開始する各 PowerShell セッションにモジュールをインポートします。 PowerShell セッションにインポートするには、次のコマンドを実行します。
+Windows 10 デバイスにモジュールをインストールした後、開始する各 PowerShell セッションにモジュールをインポートします。 PowerShell セッションにインポートするには、次のコマンドを実行します。
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -67,11 +70,11 @@ Import-Module -Name MSCommerce
 Connect-MSCommerce
 ```
 
-このコマンドは、現在の PowerShell セッションを Azure Active Directory テナントに接続します。 このコマンドを実行すると、接続先のテナントのユーザー名とパスワードを入力するように求められます。 資格情報に対して多要素認証が有効になっている場合は、interactive オプションを使用してログインします。
+このコマンドは、現在の PowerShell セッションを Azure Active Directory テナントに接続します。 接続するテナントのユーザー名とパスワードを求めるメッセージが表示されます。 資格情報に対して多要素認証が有効になっている場合は、対話型オプションを使用してログインします。
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>AllowSelfServicePurchase の詳細を表示する
 
-組織に基づいて**Allowselfservicepurchase**パラメーター値と既定の状態の説明を表示するには、次のコマンドを実行します。
+組織に基づいて **AllowSelfServicePurchase** パラメーター値と既定の状態の説明を表示するには、次のコマンドを実行します。
 
 ```powershell
 Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
@@ -79,27 +82,29 @@ Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 
 ## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a>セルフサービス購入製品とその状態の一覧を表示する
 
-利用可能なすべてのセルフサービス購入製品と各の状態の一覧を表示するには、次のコマンドを実行します。
+利用可能なすべてのセルフサービス購入製品の一覧とそれぞれの状態を表示するには、次のコマンドを実行します。
 
 ```powershell
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-次の表に、使用可能な製品とその**ProductId**を示します。
+次の表に、使用可能な製品とその **ProductId を示します**。
 
-| 製品 | △ |
+| 製品 | ProductId |
 |-----------------------------|--------------|
-| ユーザーあたりの電源アプリ | CFQ7TTC0KP0P |
-| ユーザーごとの電源自動化 | CFQ7TTC0KP0N |
+| ユーザーごとの Power Apps | CFQ7TTC0KP0P |
+| ユーザーごとの Power Automate | CFQ7TTC0KP0N |
+| Power Automate RPA | CFQ7TTC0KXG6  |
+| Power BI Premium (スタンドアロン) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| プロジェクト計画1 | CFQ7TTC0KXND |
-| プロジェクト計画3 | CFQ7TTC0KXNC |
-| Visio プラン1 | CFQ7TTC0KXN9 |
-| Visio プラン2 | CFQ7TTC0KXN8 |
+| Project Plan 1 | CFQ7TTC0KXND |
+| Project Plan 3 | CFQ7TTC0KXNC |
+| Visio プラン 1 | CFQ7TTC0KXN9 |
+| Visio プラン 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>AllowSelfServicePurchase の状態を表示または設定する
 
-セルフサービス購入可能な製品の一覧を表示した後、特定の製品の設定を表示または変更できます。
+セルフサービス購入で使用できる製品の一覧を表示した後、特定の製品の設定を表示または変更できます。
 
 特定の製品のポリシー設定を取得するには、次のコマンドを実行します。
 
@@ -121,7 +126,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>AllowSelfServicePurchase を無効にするスクリプトの例
 
-次の例では、 **MSCommerce**モジュールをインポートする方法、自分のアカウントでサインインする方法、および製品の電源自動化のために**ProductId**を取得する方法、およびその製品の**allowselfservicepurchase**を無効にする方法について順を追って説明します。
+次の例では **、MSCommerce** モジュールをインポートし、アカウントでサインインし、Power Automate の **ProductId** を取得し、その製品の **AllowSelfServicePurchase** を無効にする方法について説明します。
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -134,15 +139,15 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ### <a name="problem"></a>問題
 
-次のエラーメッセージが表示されます。
+次のエラー メッセージが表示されます。
 
-> HandleError: ポリシー Id ' AllowSelfServicePurchase '、ErrorMessage-基になる接続が閉じられました。送信で予期しないエラーが発生しました。
+> HandleError : PolicyId 'AllowSelfServicePurchase', ErrorMessage - 基になる接続が閉じられました: 送信時に予期しないエラーが発生しました。
 
 これは、トランスポート層セキュリティ (TLS) の古いバージョンが原因である可能性があります。 このサービスを接続するには、TLS 1.2 以上を使用する必要があります。
 
 ### <a name="solution"></a>ソリューション
 
-TLS 1.2 にアップグレードします。[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+TLS 1.2 へのアップグレード: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

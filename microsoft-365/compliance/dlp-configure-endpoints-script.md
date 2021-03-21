@@ -1,5 +1,5 @@
 ---
-title: ローカルスクリプトを使用した Windows 10 デバイスのオンボード
+title: ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,102 +13,102 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: ローカルスクリプトを使用して、サービスに利用するように構成パッケージをデバイスに展開します。
-ms.openlocfilehash: 74152f9488623d39e32ee4e47a452bd1daea28c7
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
+ms.openlocfilehash: 69a8295b170f9186d14862a7247cac3fb4c4ef3d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769472"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917973"
 ---
-# <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカルスクリプトを使用した Windows 10 デバイスのオンボード
+# <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 
 **適用対象:**
 
-- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Endpoint データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
 
-個別のデバイスを手動で Microsoft 365 エンドポイントのデータ損失防止にオンボードすることもできます。 ネットワーク内のすべてのデバイスをオンボードにする前に、サービスをテストするときに最初にこの操作を実行することをお勧めします。
+また、個々のデバイスを Microsoft 365 Endpoint データ損失防止に手動でオンボードすることもできます。 ネットワーク内のすべてのデバイスのオンボーディングにコミットする前に、サービスをテストするときに最初にこれを行う必要があります。
 
 > [!IMPORTANT]
-> このスクリプトは最大10台のデバイスで使用するように最適化されています。
+> このスクリプトは、最大 10 台のデバイスで使用するために最適化されています。
 >
-> スケールで展開するには、 [他の展開オプション](dlp-configure-endpoints.md)を使用します。 たとえば、 [グループポリシーを使用して Windows 10 デバイス](dlp-configure-endpoints-gp.md)で使用可能なスクリプトを使用して、オンボードスクリプトを運用環境の10台以上のデバイスに展開することができます。
+> 大規模に展開するには、他の [展開オプションを使用します](dlp-configure-endpoints.md)。 たとえば、グループ ポリシーを使用してオンボード Windows 10 デバイスで使用可能なスクリプトを使用して、オンボーディング スクリプトを実稼働 [環境の 10](dlp-configure-endpoints-gp.md)台以上のデバイスに展開できます。
 
-## <a name="onboard-devices"></a>オンボードデバイス
+## <a name="onboard-devices"></a>オンボード デバイス
  
-1.  サービスオンボードウィザードからダウンロードした GP 構成パッケージ .zip ファイル ( *DeviceComplianceOnboardingPackage.zip* ) を開きます。 [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)からパッケージを取得することもできます。
+1.  サービス オンボーディング ウィザードからダウンロードした GP *構成パッケージ*.zip ファイル (DeviceComplianceOnboardingPackage.zip) を開きます。 また、Microsoft コンプライアンス センターからパッケージ [を取得できます。](https://compliance.microsoft.com)
 
-2. ナビゲーションウィンドウで、[ **設定** ] [  >  **デバイスのオンボード** ] を選択します。
+2. ナビゲーション ウィンドウで、[設定 **デバイスのオン** ボーディング  >  **] を選択します**。
 
-3. [ **展開方法** ] フィールドで、[ **ローカルスクリプト** ] を選択します。
+3. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
 
-4. [ **パッケージのダウンロード** ] をクリックし、.zip ファイルを保存します。
+4. [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。
   
-5. 構成パッケージの内容を、展開するデバイス上の場所 (たとえば、デスクトップ) に抽出します。 *Deviceonboardingscript* という名前のファイルが必要です。
+5. 構成パッケージの内容を、オンボードするデバイスの場所 (デスクトップなど) に展開します。 *DeviceOnboardingScript.cmd という名前のファイルが必要です*。
 
-6.  デバイス上で管理者特権のコマンドラインプロンプトを開き、次のスクリプトを実行します。
+6.  デバイスで管理者特権のコマンド ライン プロンプトを開き、スクリプトを実行します。
 
-7.  [ **スタート** ] に移動し、「 **cmd** 」と入力します。
+7.  **[スタート]** をクリックし、「**cmd**」と入力します。
 
-8.  [ **コマンドプロンプト** ] を右クリックし、[ **管理者として実行** ] を選択します。
+8.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-![[管理者として実行] をポイントする [スタート] メニュー](../media/dlp-run-as-admin.png)
+![[ウィンドウのスタート] メニューの [管理者として実行] をポイントする](../media/dlp-run-as-admin.png)
 
-9.  スクリプトファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は、次のように入力します。 *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+9.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd」と入力します。*
 
-10.  Enter キーを押すか、[ **OK]****を** クリックします。
+10.  Enter キーを **押** するか **、[OK] をクリックします**。
 
-デバイスが準拠しており、センサーデータを正しく報告するかどうかを手動で検証する方法については、 [Microsoft Defender Advanced Threat Protection のオンボード問題のトラブルシューティング](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)を行う方法を参照してください。
+デバイスが準拠し、センサー データが正しく報告されていることを手動で検証する方法については [、「Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)オンボーディングの問題のトラブルシューティング」を参照してください。
 
-## <a name="offboard-devices-using-a-local-script"></a>ローカルスクリプトを使用した offboard デバイス
-セキュリティ上の理由から、デバイスをオフにするために使用されるパッケージの有効期限は、ダウンロードされた日付から30日後になります。 有効期限切れのデバイスに送信されたオフボードパッケージは拒否されます。 オフボードパッケージをダウンロードすると、パッケージの有効期限日が通知され、パッケージ名にも含まれるようになります。
+## <a name="offboard-devices-using-a-local-script"></a>ローカル スクリプトを使用してデバイスをオフボードする
+セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。 デバイスに送信された期限切れのオフボード パッケージは拒否されます。 オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。
 
 > [!NOTE]
-> オンボードポリシーとオフボードポリシーを同じデバイスに同時に展開することはできません。そうしないと、予期しない競合が発生します。
+> オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-1. [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)からオフボードパッケージを取得する
+1. Microsoft コンプライアンス センターからオフボード パッケージ [を取得する](https://compliance.microsoft.com)
 
-2. ナビゲーションウィンドウで、[ **設定** とデバイスのオフボード] を選択し  >  **Device offboarding** ます。
+2. ナビゲーション ウィンドウで、[設定デバイスの **オフ**  >  **ボード] を選択します**。
 
-3. [ **展開方法** ] フィールドで、[ **ローカルスクリプト** ] を選択します。
+3. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
 
-4. [ **パッケージのダウンロード** ] をクリックし、.zip ファイルを保存します。
+4. [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。
 
-5. .Zip ファイルの内容を、デバイスからアクセスできる共有の読み取り専用の場所に抽出します。 *DeviceComplianceOffboardingScript_valid_until_YYYY* という名前のファイルが必要です。
+5. .zip ファイルの内容を、デバイスがアクセスできる共有の読み取り専用の場所に展開します。 *-MM-DD.cmd DeviceComplianceOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
 
-6.  デバイス上で管理者特権のコマンドラインプロンプトを開き、次のスクリプトを実行します。
+6.  デバイスで管理者特権のコマンド ライン プロンプトを開き、スクリプトを実行します。
 
-7.  [ **スタート** ] に移動し、「 **cmd** 」と入力します。
+7.  **[スタート]** をクリックし、「**cmd**」と入力します。
 
-8.  [ **コマンドプロンプト** ] を右クリックし、[ **管理者として実行** ] を選択します。
+8.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-![[管理者として実行] をポイントする [スタート] メニュー](../media/dlp-run-as-admin.png)
+![[ウィンドウのスタート] メニューの [管理者として実行] をポイントする](../media/dlp-run-as-admin.png)
 
-9.  スクリプトファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は、次のように入力します。 *%userprofile%\desktop\ WindowsDefenderATPOffboardingScript_valid_until_YYYY mmmm*
+9.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd」と入力します。*
 
-10.  Enter キーを押すか、[ **OK]****を** クリックします。
+10.  Enter キーを **押** するか **、[OK] をクリックします**。
 
 > [!IMPORTANT]
-> オフボードは、デバイスがポータルへのセンサーデータの送信を停止させます。
+> オフボードにより、デバイスはポータルへのセンサー データの送信を停止します。
 
 
 ## <a name="monitor-device-configuration"></a>デバイス構成の監視
-[トラブルシューティングの問題のトラブルシューティング] (( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) スクリプトが正常に完了し、エージェントが実行されていることを確認する) にある、さまざまな検証手順を実行できます。
+[オンボードの問題のトラブルシューティング]() の異なる検証手順に従って、スクリプトが正常に完了し、エージェントが https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) 実行されたことを確認できます。
 
-また、ポータル上で、またはさまざまな展開ツールを使用して、監視を直接実行することもできます。
+監視は、ポータルまたはさまざまな展開ツールを使用して直接実行することもできます。
 
 ### <a name="monitor-devices-using-the-portal"></a>ポータルを使用してデバイスを監視する
-1. [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com)に移動します。
+1. [Microsoft [365 コンプライアンス センター] に移動します](https://compliance.microsoft.com)。
 
-2. [ **設定**  >  **デバイスのオンボード** デバイス] を選択し  >  **Devices** ます。
+2. [デバイス **の**  >  **オンボーディング デバイスの設定]**  >  **を選択します**。
 
-3. デバイスが表示されていることを確認します。
+3. デバイスが表示されているのを確認します。
 
 
 ## <a name="related-topics"></a>関連項目
-- [グループポリシーを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-gp.md)
-- [Microsoft エンドポイント構成マネージャーを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-sccm.md)
-- [モバイルデバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)
-- [オンボードの非永続仮想デスクトップインフラストラクチャ (VDI) デバイス](dlp-configure-endpoints-vdi.md)
-- [新しく利用 Microsoft Defender ATP デバイスで検出テストを実行する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Microsoft Defender Advanced Threat Protection のオンボード問題のトラブルシューティング](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [グループ ポリシーを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-gp.md)
+- [Microsoft Endpoint Configuration Manager を使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-sccm.md)
+- [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)
+- [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](dlp-configure-endpoints-vdi.md)
+- [新しくオンボードされた Microsoft Defender ATP デバイスで検出テストを実行する](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Microsoft Defender Advanced Threat Protection オンボーディングの問題のトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

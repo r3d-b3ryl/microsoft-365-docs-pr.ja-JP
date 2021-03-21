@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: 365 Officeが非アクティブにされた後、非アクティブなメールボックスに割り当てられている保持ポリシーまたは Office 365 アイテム保持ポリシーの期間を変更します。
-ms.openlocfilehash: ec8a4cac7d2ee8e40bd791bd531556d1151c1ad1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 49d133c64763cee12cb26e27d372a16ba4ad7e94
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421636"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918203"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>非アクティブなメールボックスの保持期間を変更する
 
@@ -40,9 +40,9 @@ ms.locfileid: "50421636"
     
 - Exchange Online PowerShell または Security & コンプライアンス センター PowerShell に接続するには、次のいずれかのトピックを参照してください。
     
-  - [Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+  - [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)
     
-  - [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+  - [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
     
 - 電子情報開示ケースに関連付けられた保留は無限保持であり、変更できる保持期間はありません。 アイテムは、ホールドが削除されて非アクティブなメールボックスが削除されるまで無限に保持されます。
     

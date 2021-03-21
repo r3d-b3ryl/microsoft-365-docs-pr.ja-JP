@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: dlp ポリシーの条件と例外について学ぶ
-ms.openlocfilehash: 93311ec369f8dd240b1e76c9e29ef8cc0a144cc2
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 02880a89bf580d94bad4a5dbdce5027b0a194487
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741370"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918013"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>DLP ポリシーの条件、例外、およびアクション (プレビュー)
 
@@ -57,7 +57,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |送信者ドメインは、  |  condition: *SenderDomainIs* <br/> 例外: *ExceptIfSenderDomainIs*       |DomainName         |     送信者のメール アドレスのドメインが指定された値と一致するメッセージです。 指定したドメイン (ドメインのサブドメインなど) を含む送信者ドメインを検索する必要がある場合は、送信者アドレス一致 **(***FromAddressMatchesPatterns*) 条件を使用し、次の構文を使用してドメインを指定します。 \. \.    |
 |送信者スコープ    | condition: *FromScope* <br/> 例外: *ExceptIfFromScope*    | UserScopeFrom    |    内部または外部の送信者によって送信されるメッセージ。    |
 
-### <a name="recipients"></a>受信者
+### <a name="recipients"></a>Recipients
 
 |**DLP の条件または例外**| **Microsoft 365 PowerShell の条件/例外パラメーター** |    **プロパティの種類** | **説明**|
 |---------|---------|---------|---------|
@@ -105,7 +105,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |メッセージサイズオーバー|condition: *MessageSizeOver* <br/> 例外: *ExceptIfMessageSizeOver*| Size    |合計サイズ (メッセージ プラス添付ファイル) が指定値以上のメッセージです。 <br/>**注**:メールボックスのメッセージ サイズの制限は、メール フロー ルールの前に評価されます。この条件を含むルールがメッセージを処理する前に、メールボックスに対して大きすぎるメッセージが拒否されます。|
 | 重要度の高い    | condition: *WithImportance* <br/> 例外: *ExceptIfWithImportance*    | Importance    | 指定された重要度レベルでマークされたメッセージ。    |
 | コンテンツ文字セットに単語が含まれている    | condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | 指定した文字セット名のいずれかを含むメッセージです。    |
-| 送信者の上書きを持つ    | condition: *HasSenderOverride* <br/> 例外: *ExceptIfHasSenderOverride*    | 該当なし    | 送信者がデータ損失防止 (DLP) ポリシーを上書きすることを選択したメッセージです。 DLP ポリシーの詳細については、「データ損失防止 [」を参照してください](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)。   |
+| 送信者の上書きを持つ    | condition: *HasSenderOverride* <br/> 例外: *ExceptIfHasSenderOverride*    | 該当なし    | 送信者がデータ損失防止 (DLP) ポリシーを上書きすることを選択したメッセージです。 DLP ポリシーの詳細については、「データ損失防止 [」を参照してください](./data-loss-prevention-policies.md)。   |
 | メッセージの種類が一致する    | condition: *MessageTypeMatches* <br/> 例外: *ExceptIfMessageTypeMatches*    | MessageType    | 指定の種類のメッセージです。    |
 
 ## <a name="actions-for-dlp-policies"></a>DLP ポリシーのアクション
@@ -124,7 +124,3 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |送信者のマネージャーを受信者として追加する|AddRecipients | First プロパティ: *AddedManagerAction*</br>2 番目のプロパティ: *Field* | 送信者の上司を指定の受信者タイプ ( To 、 Cc 、 Bcc ) としてメッセージに追加したり、送信者や受信者に通知することなくメッセージを送信者の上司にリダイレクトします。 このアクションは、送信者の Manager 属性が Active Directory で定義されている場合のみ有効です。 このパラメーターは、@{AddManagerAsRecipientType = "<\| Cc \| Bcc>"} という構文を使用します。|    
 件名の先頭に付く    |PrependSubject    |String    |メッセージの Subject フィールドの冒頭に指定のテキストを追加します。 元の件名のテキストを区別するために、指定されたテキストの最後の文字としてスペースまたはコロン (:) を使用してください。</br>件名に既にテキストが含まれているメッセージ (返信など) に同じ文字列が追加されるのを防ぐには、"件名に単語が含まれている" (ExceptIfSubjectContainsWords) 例外をルールに追加します。    |
 HTML 免責事項の適用    |ApplyHtmlDisclaimer    |First プロパティ: *Text*</br>2 番目のプロパティ: *場所*</br>3 番目のプロパティ: *フォールバック アクション*    |指定した HTML 免責事項をメッセージの必要な場所に適用します。</br>このパラメーターでは、@{ Text = " という構文を使用します。Location = <Append \| Prepend>。FallbackAction = <Wrap \| Ignore \| Reject> }
-
-
-
-

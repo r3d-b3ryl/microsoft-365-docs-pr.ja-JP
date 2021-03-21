@@ -1,5 +1,5 @@
 ---
-title: Contoso 社向けの Microsoft 365 ソリューション
+title: Contoso Corporation 向けの Microsoft 365 ソリューション
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -15,14 +15,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空ではあるが代表的なグローバル組織が、Microsoft 365 ソリューションをどのように展開してきたか。
-ms.openlocfilehash: 1e06da623a9d580d71823ab030976b213a9e7022
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 0c11b849f75e5707c5f49762c0b279a5dbfb2fd1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620553"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918420"
 ---
-# <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso 社向けの Microsoft 365 ソリューション
+# <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 ソリューション
 
 架空の企業、Contoso Corporation は、フランスのパリに本社を置く代表的な世界規模の製造業の複合企業です。Contoso 社は Microsoft 365 Enterprise を展開して、ネットワーク、ID、Windows 10 Enterprise、Microsoft 365 Apps for enterprise、モバイル デバイス管理、情報の保護、セキュリティに関する主な設計上の決定と実装の詳細に対応しました。 
 
@@ -36,6 +36,6 @@ Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、ク�
 
 - [極秘プロジェクト向けの独立したチーム](contoso-team-for-top-secret-project.md)
 
-- [ユニファイド コミュニケーション、共同作業、音声機能のためオンプレミスのユーザーを Teams に以降](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [ユニファイド コミュニケーション、共同作業、音声機能のためオンプレミスのユーザーを Teams に以降](/MicrosoftTeams/voice-case-study-overview)
 
 - [Microsoft Teams、Exchange、Yammer のコミュニケーションに不快な言語ポリシーを構成する](../compliance/communication-compliance-case-study.md)

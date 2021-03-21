@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: PowerShell for Microsoft 365 を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
-ms.openlocfilehash: 1992edfb6d1c141c7ed4db22064960873b768865
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 4477dadf0ea38a81ac0ae282da3f74fc12f3406f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514958"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916682"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>PowerShell を使用して Skype for Business Online を管理する
 
@@ -32,7 +32,7 @@ Skype for Business Online 管理者は、ポリシーの管理を担当します
   > [!Note]
    > Skype for Business Online Connector は現在、最新の Teams PowerShell モジュールに含まれています。 最新の Teams PowerShell パブリック リリースをご利用の場合は、Skype for Business Online Connector をインストールする必要はありません。
    
-[Teams PowerShell モジュール](https://docs.microsoft.com/microsoftteams/teams-powershell-install)をインストールします。
+[Teams PowerShell モジュール](/microsoftteams/teams-powershell-install)をインストールします。
 
 
 ## <a name="connect-using-admin-credentials"></a>管理者の資格情報を使用して接続する
@@ -75,4 +75,4 @@ Skype for Business Online 管理者は、ポリシーの管理を担当します
   
 [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-microsoft-365-powershell.md)
 
-[Skype for Business PowerShell のコマンドレット リファレンス](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
+[Skype for Business PowerShell のコマンドレット リファレンス](/powershell/module/skype/?view=skype-ps)

@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 組織外のユーザーと共同作業をするために、Teams、OneDrive、SharePoint など、Microsoft 365 アプリを構成する方法について説明します。
-ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
-ms.translationtype: HT
+ms.openlocfilehash: 359e72c12c43ca1ea984f93d87ab4868e6d1eb66
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261515"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916396"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 
@@ -62,6 +62,6 @@ Microsoft 365 の共有機能の一部がガバナンス ポリシーと競合�
 
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 でのファイル共同作業の概要](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
+[Microsoft 365 でのファイル共同作業の概要](/sharepoint/intro-to-file-collaboration)
 
-[Microsoft 365 を使用して SharePoint のファイルの共同作業を計画する](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[Microsoft 365 を使用して SharePoint のファイルの共同作業を計画する](/sharepoint/deploy-file-collaboration)

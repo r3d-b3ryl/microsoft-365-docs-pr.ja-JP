@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: オンプレミスのスキャナーで Microsoft 365 データ損失防止を使用して、保存されているデータをスキャンし、オンプレミスのファイル共有とオンプレミスの SharePoint フォルダーとドキュメント ライブラリに保護アクションを実装する方法について説明します。
-ms.openlocfilehash: 34be93f5c9980a7f8ea8ad31b708af14a8725f73
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417362"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917823"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) を使用する
 
@@ -47,7 +47,7 @@ DLP オンプレミス スキャナーのデータが複数の領域に表示さ
  
 #### <a name="microsoft-365-audit-log"></a>Microsoft 365 監査ログ
 
-パブリック プレビュー中、DLP ルールの一致は監査ログ UI で利用できます。「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」か、「[Search-UnifiedAuditLogPowerShell](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps)」からアクセスできます。 
+パブリック プレビュー中、DLP ルールの一致は監査ログ UI で利用できます。「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」か、「[Search-UnifiedAuditLogPowerShell](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps)」からアクセスできます。 
 
 #### <a name="aip"></a>AIP
 

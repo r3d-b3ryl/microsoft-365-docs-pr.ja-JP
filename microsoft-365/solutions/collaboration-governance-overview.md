@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、Teams、SharePoint、およびグループ内の関連機能を管理する方法についてYammer。
-ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838469"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916444"
 ---
 # <a name="what-is-collaboration-governance"></a>共同作業のガバナンスとは?
 
@@ -59,7 +59,7 @@ Microsoft 365 グループには、ユーザーが通信と共同作業に使用
 |[[Inbox (受信トレイ)](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)]|グループ メンバー間の電子メールの会話の場合。 この受信トレイには電子メール アドレスが含まれるので、従来の配布リストと同様に、グループ外のユーザーや組織外のユーザーからのメッセージを受け入れる設定が可能です。|
 |[OneNote ノートブック](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|アイデア、研究、情報を収集する|
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|グループ メンバー間でプロジェクト タスクを割り当て、管理する場合|
-|[Power BI Workspace](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|ダッシュボードとレポートを使用したデータコラボレーションスペース|
+|[Power BI Workspace](/power-bi/collaborate-share/service-new-workspaces)|ダッシュボードとレポートを使用したデータコラボレーションスペース|
 |[プロジェクトとロードマップ](https://support.microsoft.com/project)|Web ベースのプロジェクト管理ツール|
 |[SharePoint チーム サイト](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|グループに関連する情報、リンク、およびコンテンツの中央リポジトリ|
 |[Stream](https://support.microsoft.com/microsoft-stream)|ビデオ ストリーミング サービス|
@@ -114,9 +114,10 @@ Microsoft 365 でコラボレーション機能を使用する方法を決定す
 
 - **作成するソリューションに** ガバナンスの決定を直接埋め込む - Microsoft 365 の機能をオンまたはオフにすることで、多くのガバナンス決定を実装できます。
 
+
 - **段階的なアプローチを使用する** - 最初に小さなグループのユーザーにコラボレーション機能をロールアウトします。 より大きなグループに進む前に、フィードバックを受け取り、ヘルプ デスク のチケットを監視し、必要な設定やプロセスを更新します。
 
-- **トレーニングの強化** - Microsoft [365](https://docs.microsoft.com/office365/customlearning) ラーニング パスなどのソリューションを調整して、組織固有の期待を Microsoft 提供のトレーニングで強化します。
+- **トレーニングの強化** - Microsoft [365](/office365/customlearning) ラーニング パスなどのソリューションを調整して、組織固有の期待を Microsoft 提供のトレーニングで強化します。
 
 - **組織でガバナンス ポリシー** とガイドラインを伝達するための戦略を策定する - ポリシーと手順を伝える SharePoint コミュニケーション サイトに Microsoft 365 導入センターを作成します。
 
@@ -175,7 +176,7 @@ Microsoft Learn のこれらのトレーニング モジュールは、Microsoft
 |![情報保護トレーニング アイコン](../media/information-protection-governance.svg)|今日、生成されるデータ量はかつてないほど急速に増加し、従業員はあらゆる場所で仕事をしたいと考えており、規制の状況は常に変化しています。 情報保護とガバナンスに関するMicrosoft のソリューションで、企業はデータの保護と従業員の生産性との適切なバランスの実現を保つことができます。 このラーニングパスはMicrosoft 365 認定: セキュリティ管理者  と Microsoft 365 認定: エンタープライズ管理エキスパート  の認定のための準備を行うことが出来ます。<br><br>5 時間 13 分 - ラーニング パス - 7 モジュール|
 
 > [!div class="nextstepaction"]
-> [スタート>](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
+> [スタート>](/learn/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -184,16 +185,16 @@ Microsoft Learn のこれらのトレーニング モジュールは、Microsoft
 |![Teams トレーニング アイコン](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 この学習パスは、Microsoft 365 Certified: Security Administrator Associate と Microsoft 365 Certified: Enterprise Administration Expert 認定の準備に役立ちます。<br><br>1 時間 - ラーニング パス - 5 モジュール|
 
 > [!div class="nextstepaction"]
-> [スタート>](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [スタート>](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>セキュリティとコンプライアンス
 
 |トレーニング:|Microsoft 365 のセキュリティおよびコンプライアンス機能の基本的な知識を示します|
 |:---|:---|
-|![セキュリティとコンプライアンスのトレーニング アイコン](../media/microsoft-365-security-and-compliance-capabilities.svg)|エンタープライズをセキュリティで保護し、規制要件に対応できるようにするために、365 Microsoft のセキュリティおよびコンプライアンス ソリューション エリアに関する情報を参照します。 基本的なクラウド コンピューティングの概念に慣れていない場合は、クラウド 概念 - クラウド コンピューティングの原則を [使用することをお勧めします](https://docs.microsoft.com/learn/modules/principles-cloud-computing/index)。<br><br>3 時間 11 分 - ラーニング パス - 8 モジュール|
+|![セキュリティとコンプライアンスのトレーニング アイコン](../media/microsoft-365-security-and-compliance-capabilities.svg)|エンタープライズをセキュリティで保護し、規制要件に対応できるようにするために、365 Microsoft のセキュリティおよびコンプライアンス ソリューション エリアに関する情報を参照します。 基本的なクラウド コンピューティングの概念に慣れていない場合は、クラウド 概念 - クラウド コンピューティングの原則を [使用することをお勧めします](/learn/modules/principles-cloud-computing/index)。<br><br>3 時間 11 分 - ラーニング パス - 8 モジュール|
 
 > [!div class="nextstepaction"]
-> [スタート>](https://docs.microsoft.com/learn/modules/what-is-m365/1-introduction/)
+> [スタート>](/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>図
 
@@ -246,8 +247,8 @@ Microsoft 365 グループ、SharePoint、Teams、およびグループがどの
 
 - [365 グループ、SharePoint、Teams、Officeグループとの共同作業のスイート スポットを見Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
-[Microsoft 365 のセキュリティに関するドキュメント](https://docs.microsoft.com/microsoft-365/security)
+[Microsoft 365 のセキュリティに関するドキュメント](../security/index.yml)
 
-[Microsoft 365 コンプライアンスのドキュメント](https://docs.microsoft.com/microsoft-365/compliance)
+[Microsoft 365 コンプライアンスのドキュメント](../compliance/index.yml)

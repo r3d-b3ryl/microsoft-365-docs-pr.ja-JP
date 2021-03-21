@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838684"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918468"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "50838684"
 - 機密情報の種類を含むドキュメントに、機密ラベルを自動的に割り当てる。
 - 機密ラベルの付いたファイルからゲストアクセスを自動的に削除します。
 
-この記事で説明するオプションの一部には、ゲストが Azure Active Directory のアカウントを持っている必要があります。 ファイルやフォルダーをゲストと共有する際、ゲストがそのディレクトリに含まれていることを確認するには、[SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)を使用します。
+この記事で説明するオプションの一部には、ゲストが Azure Active Directory のアカウントを持っている必要があります。 ファイルやフォルダーをゲストと共有する際、ゲストがそのディレクトリに含まれていることを確認するには、[SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](/sharepoint/sharepoint-azureb2b-integration-preview)を使用します。
 
 この記事ではゲスト共有設定を有効化する方法については扱いません。 さまざまなシナリオでゲスト共有を有効化する方法の詳細については、「[組織外のユーザーとの共同作業](collaborate-with-people-outside-your-organization.md)」を参照してください。
 
@@ -66,7 +66,7 @@ ms.locfileid: "50838684"
 
 ### <a name="more-information"></a>詳細情報
 
-[Azure AD 多要素認証 の展開を計画する](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Azure AD 多要素認証 の展開を計画する](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>ゲスト用の利用規約を設定する
 
@@ -108,11 +108,11 @@ Azure AD の利用規約を作成するには
 これで、ゲストがお客様の組織のコンテンツ、チームやサイトに初めてアクセスしようとしたときに、利用規約への同意を要求されるようになります。
 
 > [!NOTE]
-> 条件付きアクセスを使用するには、Azure AD Premium P1 ライセンスが必要です。 詳細については、[「条件付きアクセスとは」](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) を参照してください。
+> 条件付きアクセスを使用するには、Azure AD Premium P1 ライセンスが必要です。 詳細については、[「条件付きアクセスとは」](/azure/active-directory/conditional-access/overview) を参照してください。
 
 ### <a name="more-information"></a>詳細情報
 
-[Azure Active Directory の利用規約](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
+[Azure Active Directory の利用規約](/azure/active-directory/conditional-access/terms-of-use)
 
 ## <a name="set-up-guest-access-reviews"></a>ゲスト アクセス レビューを設定する
 
@@ -145,15 +145,15 @@ Azure AD のアクセス レビューを使用すると、さまざまなチー�
 
 ### <a name="more-information"></a>詳細情報
 
-[Azure AD のアクセス レビューでゲスト アクセスを管理する](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Azure AD のアクセス レビューでゲスト アクセスを管理する](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[グループまたはアプリケーションのアクセス レビューを Azure AD アクセス レビューで作成する](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[グループまたはアプリケーションのアクセス レビューを Azure AD アクセス レビューで作成する](/azure/active-directory/governance/create-access-review)
 
 ## <a name="set-up-web-only-access-for-guests"></a>ゲスト用の Web 専用アクセスを設定する
 
 ゲストが Web ブラウザーのみを使用してチーム、サイト、ファイルにアクセスするように要求することにより、攻撃面を減少させて、管理を容易にできます。
 
-Microsoft 365 グループとTeamsの場合は、Azure AD の条件付きアクセスポリシーで行います。 SharePointについては、SharePoint 管理センターで構成されます。 ( [機密ラベルを使用して、ゲストのアクセスを web のみに制限する](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)ことができます)
+Microsoft 365 グループとTeamsの場合は、Azure AD の条件付きアクセスポリシーで行います。 SharePointについては、SharePoint 管理センターで構成されます。 ( [機密ラベルを使用して、ゲストのアクセスを web のみに制限する](../compliance/sensitivity-labels-teams-groups-sites.md)ことができます)
 
 グループとチームに対して、ゲストのアクセスを 　Web のみに制限する方法
 
@@ -222,7 +222,7 @@ SharePoint 管理センターのこの設定では、Azure AD の条件付きア
 
 ### <a name="more-information"></a>詳細情報
 
-[カスタムの機密情報の種類](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[カスタムの機密情報の種類](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## <a name="create-an-auto-labeling-policy-to-assign-a-sensitivity-label-based-on-a-sensitive-information-type"></a>機密情報の種類に基づいて、機密情報ラベルを割り当てる自動ラベル付けポリシーを作成する
 
@@ -252,11 +252,11 @@ SharePoint 管理センターのこの設定では、Azure AD の条件付きア
 
 ### <a name="more-information"></a>詳細情報
 
-[機密情報ラベルをコンテンツに自動的に適用する](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[機密情報ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>高度な機密ファイルへのゲスト アクセスを削除するDLPポリシーを作成する
 
-[データ損失防止 (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) を使用して、機密コンテンツの不要なゲスト共有を防ぐことができます。 データ損失防止は、ファイルの機密情報ラベルに基づき、ゲストアクセスを削除することができます。
+[データ損失防止 (DLP)](../compliance/data-loss-prevention-policies.md) を使用して、機密コンテンツの不要なゲスト共有を防ぐことができます。 データ損失防止は、ファイルの機密情報ラベルに基づき、ゲストアクセスを削除することができます。
 
 DLP ルールを作成するには
 
@@ -287,9 +287,9 @@ DLP ルールを作成するには
 
 Microsoft 365 および Azure Active Directory には、ゲスト共有環境のセキュリティ保護に役立つ追加オプションがいくつかあります。
 
-- 許可または拒否された共有ドメインの一覧を作成して、ユーザーが共有できるユーザーを制限できます。 詳細については、「[Restrict sharing of SharePoint and OneDrive content by domain (ドメインによる SharePoint および OneDrive コンテンツの共有の制限)](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)」および「[B2B ユーザーに対する特定組織からの招待を許可またはブロックする](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)」を参照してください。
-- ユーザーが接続できる他の Azure Active Directory テナントを制限できます。 詳細については、「[テナント制限使用による SaaS クラウド アプリケーションへのアクセスの管理](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)」を参照してください。
-- パートナーがゲスト アカウントの管理を支援できる、管理された環境を作成できます。 詳細については、「[Create a B2B extranet with managed guests (管理されたゲストで B2B エクストラネットを作成する)](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet)」を参照してください。
+- 許可または拒否された共有ドメインの一覧を作成して、ユーザーが共有できるユーザーを制限できます。 詳細については、「[Restrict sharing of SharePoint and OneDrive content by domain (ドメインによる SharePoint および OneDrive コンテンツの共有の制限)](/sharepoint/restricted-domains-sharing)」および「[B2B ユーザーに対する特定組織からの招待を許可またはブロックする](/azure/active-directory/b2b/allow-deny-list)」を参照してください。
+- ユーザーが接続できる他の Azure Active Directory テナントを制限できます。 詳細については、「[テナント制限使用による SaaS クラウド アプリケーションへのアクセスの管理](/azure/active-directory/manage-apps/tenant-restrictions)」を参照してください。
+- パートナーがゲスト アカウントの管理を支援できる、管理された環境を作成できます。 詳細については、「[Create a B2B extranet with managed guests (管理されたゲストで B2B エクストラネットを作成する)](/Office365/Enterprise/b2b-extranet)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

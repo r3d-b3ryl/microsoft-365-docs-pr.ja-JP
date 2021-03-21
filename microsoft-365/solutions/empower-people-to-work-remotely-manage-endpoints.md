@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: bca3e8e79264a2218dd1036e50be1c9ab29d2b8a
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: db06c7d65da1939ffbb04db64ea901e211b074f6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749601"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918340"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 4. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 
 リモート ワーカーは、増え続ける個人用デバイスをサポートする必要があります。 エンドポイント管理は、デバイスでのリソースへのアクセスを許可する前に特定の基準に準拠する必要があるセキュリティに対するポリシーベースのアプローチです。 Microsoft エンドポイント マネージャーは、クラウドとオンプレミスでデータを安全に保つための最新の管理機能を提供します。 
 
-[Microsoft エンドポイント マネージャー](https://docs.microsoft.com/mem/endpoint-manager-overview)は、モバイル デバイス、デスクトップ コンピューター、仮想マシン、組み込みデバイス、およびサーバーを管理できるサービスおよびツールを提供します。これは、すでに使用している可能性のある次のサービスを組み合わせて使用します。
+[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、モバイル デバイス、デスクトップ コンピューター、仮想マシン、組み込みデバイス、およびサーバーを管理できるサービスおよびツールを提供します。これは、すでに使用している可能性のある次のサービスを組み合わせて使用します。
 
 ![Microsoft 365 のエンドポイント管理のコンポーネント](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
@@ -40,13 +40,13 @@ Microsoft Intune は、Microsoft 365 に付属しているモバイル デバイ
 
 - **MAM:** リモート ワーカーは個人のデバイス、いわゆる、「Bring-Your-Own Device (BYOD)」 にフル コントロールが必要でないかもしれません。 リモート ワーカーに選択肢を提示しながら、組織を保護することができます。 たとえば、リモート ワーカーが組織のリソースにフル アクセスすることを希望する場合、使用するデバイスを登録することができます。 または、これらのユーザーが電子メールや Microsoft Teams にのみアクセスできるようにする場合は、これらのアプリを使用できるように多要素認証 (MFA) を必要とするアプリ保護ポリシーを使用します。
 
-詳細については、「[Microsoft Intune の概要](https://docs.microsoft.com/intune/fundamentals/what-is-intune)」をご覧ください。
+詳細については、「[Microsoft Intune の概要](/intune/fundamentals/what-is-intune)」をご覧ください。
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
 Configuration Manager は、ネットワークまたはインターネットベースのデスクトップ、サーバー、ノート PC を管理できるオンプレミスの管理ソリューションです。 Configuration Manager を使用して、アプリ、ソフトウェアの更新、およびオペレーティング システムを展開します。 また、コンプライアンスの状況を監視し、リアルタイムでクライアントに対してクエリの実行と操作を行うことができます。 クラウド対応にして、Intune、Azure AD、Microsoft Defender for Endpoint、およびその他のクラウド サービスと統合できます。 
 
-詳細については、この「[Configuration Manager の概要](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)」をご覧ください。
+詳細については、この「[Configuration Manager の概要](/mem/configmgr/core/understand/introduction)」をご覧ください。
 
 ## <a name="co-management"></a>共同管理
 
@@ -54,7 +54,7 @@ Configuration Manager は、ネットワークまたはインターネットベ�
 
 共同管理では、条件付きアクセスやデバイス コンプライアンスの強化を含む、Intune ベースのクラウド機能を使用します。 一部のタスクはオンプレミスに保ち、他のタスクはクラウドで実行します。
 
-詳細については、「[共同管理の概要](https://docs.microsoft.com/mem/configmgr/comanage/overview)」をご覧ください。
+詳細については、「[共同管理の概要](/mem/configmgr/comanage/overview)」をご覧ください。
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
@@ -68,7 +68,7 @@ Desktop Analytics では、次のことができます。
 - 最小単位のデバイスでアプリケーションとドライバーの全体を表すパイロット グループを作成します。
 - Windows 10 をパイロットおよび運用管理デバイスに展開します。
 
-詳細については、「[Desktop Analytics の概要](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)」をご覧ください。
+詳細については、「[Desktop Analytics の概要](/mem/configmgr/desktop-analytics/overview)」をご覧ください。
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
@@ -79,13 +79,13 @@ Windows Autopilot で、IT 部門は管理するインフラストラクチャ�
 - ユーザーから見ると、デバイスを使用できるようにするための簡単な操作が数ステップあるだけです。 
 - IT の観点からすると、エンド ユーザーに必要な唯一の操作は、ネットワークに接続し、資格情報を確認することです。
 
-詳細については、「[Windows Autopilot の概要](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)」をご覧ください。
+詳細については、「[Windows Autopilot の概要](/windows/deployment/windows-autopilot/windows-autopilot)」をご覧ください。
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>エンドポイント管理のための管理技術リソース
 
 - [Microsoft 365 のデバイス管理ロードマップ](../enterprise/device-management-roadmap-microsoft-365.md)
-- [モバイル デバイス管理のためにさまざまな種類のデバイスを登録する方法](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
-- [Microsoft Intune についてエンド ユーザーを教育する方法](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
+- [モバイル デバイス管理のためにさまざまな種類のデバイスを登録する方法](/mem/intune/enrollment/device-enrollment)
+- [Microsoft Intune についてエンド ユーザーを教育する方法](/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-4"></a>手順 4 の結果
 

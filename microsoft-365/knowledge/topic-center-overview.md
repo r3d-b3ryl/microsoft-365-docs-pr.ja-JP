@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 54e513fc12a42d2779ee5f35628781676adc0f48
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 558d0fc9279c4b0d9e8c287fe4d99f5ac5884606
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453995"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917490"
 ---
 # <a name="topic-center-overview"></a>トピック センターの概要
 
@@ -32,7 +32,7 @@ Microsoft Viva Topics では、トピック センターは、組織の知識の
 
 ## <a name="where-is-my-topic-center"></a>トピック センターの場所
 
-トピック センターは、Viva Topics のセットアップ中に作成されます。 セットアップが完了すると、管理者は [トピック センターの管理] ページで URL [を検索できます](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)。
+トピック センターは、Viva Topics のセットアップ中に作成されます。 セットアップが完了すると、管理者は [トピック センターの管理] ページで URL [を検索できます](./topic-experiences-administration.md#to-access-topics-management-settings)。
 
 
 1. Microsoft 365 管理センターで、[設定] をクリック **し**、[組織の設定] **をクリックします**。
@@ -94,13 +94,6 @@ Microsoft Viva Topics では、トピック センターは、組織の知識の
 
 
 ## <a name="see-also"></a>関連項目
-
-
-
-  
-
-
-
 
 
 

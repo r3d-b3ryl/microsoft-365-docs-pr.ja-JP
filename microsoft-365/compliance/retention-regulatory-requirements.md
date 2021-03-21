@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース。
-ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: a2629dbd9df4b582b2aeb7726de87d81eb726a76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50109936"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917783"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>情報ガバナンスおよびレコード管理の規制要件
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 このページのリソースは、Microsoft 365 の情報ガバナンスおよびレコード管理に関する特定の規制要件を満たすのに役立ちます。 このドキュメントの各セクションでは、1 つ以上の関連する規制に重点を置いています。また、各セクションには、概説した要件を満たすのに役立つ、Microsoft 365 を構成する方法に関する既存のガイダンスまたはサードパーティの評価が含まれています。
 

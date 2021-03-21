@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を使用するか、構成に従ってコンテンツが自動的に削除されるかにかかわらず、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: d2c2e4e469efe16277f34a902f6720dc2b39e908
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461882"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918043"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 Microsoft 365 コンプライアンス センターの **レコード管理** の [**処理**] タブを使用して、処理確認を管理し、保持期間の終了時に自動的に削除された [レコード](records-management.md#records)を表示します。 
 
@@ -128,7 +128,7 @@ Microsoft365 コンプライアンス センターの [**処理**] タブに正�
 
 ![処理確認なしで処理されたアイテム](../media/records-disposed2.png)
 
-レコード ラベルの [**処理されたアイテム**] タブに表示されるアイテムは、アイテムが処理されてから最大 7 年間保持され、その期間のレコードあたりのアイテム数は 100 万に制限されます。 **カウント** の数がこの 100 万の制限に近づいていて、レコードの処理の証明が必要な場合は、[Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)に連絡し​​てください。
+レコード ラベルの [**処理されたアイテム**] タブに表示されるアイテムは、アイテムが処理されてから最大 7 年間保持され、その期間のレコードあたりのアイテム数は 100 万に制限されます。 **カウント** の数がこの 100 万の制限に近づいていて、レコードの処理の証明が必要な場合は、[Microsoft サポート](/office365/admin/contact-support-for-business-products)に連絡し​​てください。
 
 > [!NOTE]
 > この機能は、[統合監査ログ](search-the-audit-log-in-security-and-compliance.md)からの情報に基づいているため、対応するイベントがキャプチャされるように、監査を[有効にして検索可能](turn-audit-log-search-on-or-off.md)にする必要があります。
@@ -144,4 +144,3 @@ Microsoft365 コンプライアンス センターの [**処理**] タブに正�
 どちらの表示のアイテムに関する情報も .csv ファイルとしてエクスポートでき、Excel を使用して並べ替えて管理できます。
 
 ![処理のためのエクスポート オプション](../media/retention-export-option.png)
-

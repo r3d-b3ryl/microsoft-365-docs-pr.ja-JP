@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を高める方法について説明します。
-ms.openlocfilehash: a73acd7665cd23f13329bb5db4e890b0f3b0d861
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423296"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918181"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>トレーニング可能な分類子の使用を開始する
 
@@ -95,7 +95,7 @@ UI で分類子にアクセスするには、次の操作を行います。
 
 ## <a name="how-to-create-a-trainable-classifier"></a>トレーニング可能な分類子を作成する方法
 
-1. 50 ~ 500 のシード コンテンツ アイテムを収集します。 これらは、トレーニング可能な分類子が分類カテゴリにあると正に識別するコンテンツの種類を強く表すサンプルに限る必要があります。 サポートされている [ファイルの種類については、「SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) の既定のクロールされたファイル名の拡張子と解析されたファイルの種類」を参照してください。
+1. 50 ~ 500 のシード コンテンツ アイテムを収集します。 これらは、トレーニング可能な分類子が分類カテゴリにあると正に識別するコンテンツの種類を強く表すサンプルに限る必要があります。 サポートされている [ファイルの種類については、「SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) の既定のクロールされたファイル名の拡張子と解析されたファイルの種類」を参照してください。
 
    > [!IMPORTANT]
    > シードとテストのサンプル アイテムは暗号化し、英語である必要があります。
@@ -127,7 +127,7 @@ UI で分類子にアクセスするには、次の操作を行います。
     > [!div class="mx-imgBorder"]
     > ![テストの準備ができているトレーニング可能な分類子](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. 最適な結果を得る場合は、少なくとも 200 のテスト コンテンツ アイテム (最大 10,000) を収集します。 これらは、強い肯定的なアイテム、強い否定的なアイテム、およびそれらの性質で少し明白ではないアイテムの組み合わせである必要があります。 サポートされている [ファイルの種類については、「SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) の既定のクロールされたファイル名の拡張子と解析されたファイルの種類」を参照してください。
+11. 最適な結果を得る場合は、少なくとも 200 のテスト コンテンツ アイテム (最大 10,000) を収集します。 これらは、強い肯定的なアイテム、強い否定的なアイテム、およびそれらの性質で少し明白ではないアイテムの組み合わせである必要があります。 サポートされている [ファイルの種類については、「SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) の既定のクロールされたファイル名の拡張子と解析されたファイルの種類」を参照してください。
 
     > [!IMPORTANT]
     > サンプル アイテムは暗号化し、英語である必要があります。
