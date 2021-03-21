@@ -12,12 +12,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: ed25671989668d09f7ad3fcc233a6cf8e1e0f1fc
-  ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+  ms.openlocfilehash: 9364b8b46e413d675876a41bd775b063e0a2fafb
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/26/2021
-  ms.locfileid: "49988058"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50913272"
 productDirectory:
   title: Microsoft 365 Business Premium でリモート ワークのセキュリティ保護をする
   items:
@@ -31,8 +31,8 @@ productDirectory:
     url: https://aka.ms/SMBSecurityKit
   - title: 新機能
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 は、Microsoft 365 Business Premium に含まています
-    url: https://aka.ms/aadp1smbblog
+    summary: ウイルス対策管理とユニバーサル プリントが Microsoft 365 Business Premium で利用できるようになりました。
+    url: https://aka.ms/M365BPQ1Update
   - title: パートナー ウェビナー シリーズに参加
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: Microsoft 365 Business Premium を使用し、管理対象サービスを介してビジネスの成長を促進します。
@@ -47,10 +47,10 @@ conceptualContent:
     - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
       text: Microsoft 365 Business Premium トレーニング
-    - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
+    - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
       text: プランを比較
-    - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+    - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
       itemType: reference
       text: サービスの説明
     - url: support/microsoft-365-business-faqs.yml
@@ -64,7 +64,7 @@ conceptualContent:
     - url: secure-win-10-pcs.md
       itemType: how-to-guide
       text: 2. PC をセキュリティで保護する
-    - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
+    - url: /MicrosoftTeams/get-started-with-teams-quick-start
       itemType: video
       text: 3. Teams のセットアップ
     - url: https://support.microsoft.com/office/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
@@ -95,51 +95,51 @@ conceptualContent:
       text: 値計算機
   - title: ユーザーの管理
     links:
-    - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
+    - url: ../admin/add-users/add-users.md
       itemType: how-to-guide
       text: ユーザーの追加
-    - url: https://docs.microsoft.com/office365/admin/add-users/remove-former-employee
+    - url: /office365/admin/add-users/remove-former-employee
       itemType: how-to-guide
       text: ユーザーを削除する
-    - url: https://docs.microsoft.com/office365/admin/add-users/reset-passwords
+    - url: /office365/admin/add-users/reset-passwords
       itemType: how-to-guide
       text: ユーザーのパスワードをリセットする
     footerLink:
-      url: https://docs.microsoft.com/office365/admin/admin-home
+      url: /office365/admin/admin-home
       text: 詳細
   - title: 脅威を管理する
     links:
-    - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
+    - url: ../security/office-365-security/office-365-atp.md
       itemType: overview
       text: Advanced Threat Protection
-    - url: set-up-mfa.md
+    - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
       itemType: how-to-guide
       text: MFA をセットアップする
-    - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+    - url: ./increase-threat-protection.md#protect-against-ransomware
       itemType: how-to-guide
       text: ランサムウェアから保護する
-    - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
+    - url: /azure/active-directory/conditional-access/overview
       itemType: overview
       text: 条件付きアクセス
     footerLink:
-      url: https://docs.microsoft.com/office365/admin/admin-home
+      url: /office365/admin/admin-home
       text: 詳細
   - title: データ管理
     links:
-    - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
+    - url: ../compliance/data-loss-prevention-policies.md
       itemType: overview
       text: データ損失防止
     - url: https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
       itemType: how-to-guide
       text: 暗号化された電子メールを送信する
-    - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
+    - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
       itemType: how-to-guide
       text: メールの保持を設定する
     - url: https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
       itemType: video
       text: 機密ラベルを作成して使用
     footerLink:
-      url: https://docs.microsoft.com/microsoft-365/compliance/
+      url: ../compliance/index.yml
       text: 詳細
   - title: デバイスを管理する
     links:
@@ -152,7 +152,7 @@ conceptualContent:
     - url: reset-devices-to-factory-settings.md
       itemType: how-to-guide
       text: ワイプとリセット
-    - url: https://docs.microsoft.com/intune/index
+    - url: /intune/index
       itemType: overview
       text: Intune
     - url: manage-windows-devices.md
@@ -161,7 +161,7 @@ conceptualContent:
     - url: access-resources.md
       itemType: how-to-guide
       text: Azure AD join を設定する
-    - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
+    - url: /windows/deployment/windows-autopilot/windows-autopilot
       text: Windows Autopilot
       itemType: overview
     footerLink:
@@ -169,17 +169,17 @@ conceptualContent:
       text: 詳細
   - title: セキュリティを監視する
     links:
-    - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
+    - url: ../security/mtp/microsoft-secure-score.md
       itemType: how-to-guide
       text: セキュア スコア
-    - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
+    - url: /intune/apps/app-protection-policies-monitor
       itemType: overview
       text: Intune アプリ保護ポリシーレポート
-    - url: https://docs.microsoft.com/microsoft-365/enterprise/view-service-health
+    - url: ../enterprise/view-service-health.md
       itemType: how-to-guide
       text: 正常性の監視アラート
     footerLink:
-      url: https://docs.microsoft.com/microsoft-365/security/
+      url: ../security/index.yml
       text: 詳細
   - title: サポートとコミュニティ
     links:

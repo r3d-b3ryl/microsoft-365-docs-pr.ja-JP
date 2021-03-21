@@ -35,7 +35,7 @@
         - name: Microsoft 365 へのデータの移行
           href: setup/migrate-email-and-contacts-admin.md
         - name: Teams をロールアウトする
-          href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
+          href: /microsoftteams/how-to-roll-out-teams?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: すべてのユーザーを対象とするアプリのトレーニング
           href: 'https://support.microsoft.com/training'
         - name: 取得しているサブスクリプションが不明な場合
@@ -232,7 +232,7 @@
             - name: Microsoft 365 Apps の正常性
               href: productivity/apps-health.md
             - name: エンドポイントの分析
-              href: 'https://docs.microsoft.com/mem/analytics/productivity-score'
+              href: /mem/analytics/productivity-score
         - name: 組織の連絡先情報を変更する
           href: manage/change-address-contact-and-more.md
         - name: 管理者の連絡先情報を更新する
@@ -259,6 +259,8 @@
           href: manage/manage-office-scripts-settings.md
         - name: パートナーやリセラーを探す
           href: manage/find-your-partner-or-reseller.md
+        - name: Microsoft Rewards を管理する
+          href: manage/manage-microsoft-rewards.md
         - name: メッセージ センターのメッセージを管理する
           href: manage/manage-messages.md
         - name: リリース オプションをセットアップする
@@ -312,7 +314,7 @@
             - name: コンプライアンス機能をセットアップする
               href: ../business/set-up-compliance.md
         - name: セキュア スコア
-          href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
+          href: ../security/mtp/microsoft-secure-score.md
         - name: GDPR コンプライアンスのガイド
           href: security-and-compliance/gdpr-compliance.md
     - name: デバイスとアプリのデータを管理する
@@ -321,7 +323,7 @@
         - name: デバイスとアプリのデータの保護方法
           href: devices/choose-device-security.md
         - name: Microsoft Intune ドキュメント
-          href: 'https://docs.microsoft.com/mem/intune/'
+          href: /mem/intune/
         - name: Microsoft 365 Business Premium
           items:
             - name: ポリシーとデバイスを表示し編集する
@@ -404,6 +406,6 @@
         - name: ゲスト ユーザーとの Teams 会議に参加する
           href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
     - name: トラブルシューティング
-      href: 'https://docs.microsoft.com/office/troubleshoot/'
+      href: /office/troubleshoot/
     - name: サポートに連絡
       href: contact-support-for-business-products.md
