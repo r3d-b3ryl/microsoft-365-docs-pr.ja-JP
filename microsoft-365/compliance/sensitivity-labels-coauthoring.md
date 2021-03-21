@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 90c00eb448d6d8f02170a37062af05cb0c0db59d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454638"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919573"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > この機能は現在プレビュー段階であり、変更される可能性があります。 
@@ -58,7 +58,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 - ブログ投稿: [Upcoming Changes to Microsoft Information Protection Metadata Storage](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
 
-- オープン仕様: [2.6.3 LabelInfo とユーザー設定のドキュメントのプロパティ]](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
+- オープン仕様: [2.6.3 LabelInfo とユーザー設定のドキュメントのプロパティ]](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
 これらの変このため、ラベルのメタデータを使用しない場所へ読み書きするアプリ、サービス、スクリプト、またはツールが組織内にある場合は、この設定を有効にしないでください。 有効にした場合には、サンプルのような結果になることがあります。
 
@@ -68,7 +68,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 - ラベル付け、暗号化されたドキュメントの共同編集と自動保存は、別のユーザーが新しいラベル付きメタデータをサポートしない Office デスクトップ アプリでドキュメントを開いている場合は機能しません。
 
-- [Office 添付ファイルでカスタム プロパティとしてラベルを識別する](https://docs.microsoft.com/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) Exchange Online のメール フロー ルールでは、メールや添付ファイルを暗号化できなくなるか、間違って暗号化されます。
+- [Office 添付ファイルでカスタム プロパティとしてラベルを識別する](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) Exchange Online のメール フロー ルールでは、メールや添付ファイルを暗号化できなくなるか、間違って暗号化されます。
 
 この設定とラベルのメタデータの変更をサポートするアプリとサービスの一覧は、次のセクションを確認します。
 
@@ -83,8 +83,8 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 - テナントに対して、[SharePoint、OneDrive で Office ファイル](sensitivity-labels-sharepoint-onedrive-files.md) への秘密度レベルを有効にする必要があります。 この機能が有効になっていない場合、秘密度レベルがあるファイルへの共同編集を有効にする設定を選択すると、自動的に有効になります。
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: 最小ビルド 16.0.13801.20182 の[現在のチャネル (プレビュー)](https://office.com/insider) または最小ビルド 16.0.13819.20006 の[ベータ チャネル](https://office.com/insider)
-    - **macOS**: 最小ビルド 16.47.218.0 の[ベータ チャンネル](https://office.com/insider)
+    - **Windows**: 最小ビルド 16.0.13801.20182 の [現在のチャネル (プレビュー)](https://office.com/insider) または最小ビルド 16.0.13819.20006 の [ベータ チャネル](https://office.com/insider)
+    - **macOS**: 最小ビルド 16.47.218.0 の [ベータ チャンネル](https://office.com/insider)
     - **iOS**: まだサポートされていません
     - **Android**: まだサポートされていません
 
@@ -108,7 +108,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 - [自動ラベル作成ポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [秘密度レベルを条件として使用する DLP ポリシー](dlp-sensitivity-label-as-condition.md)
-- [秘密度レベルの適用が構成されている Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+- [秘密度レベルの適用が構成されている Microsoft Cloud App Security](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
 ## <a name="limitations"></a>制限事項
 
@@ -125,7 +125,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
     
     これらの暗号化構成のどれかを使用したラベルは Office アプリで表示されます。 ただし、ユーザーがこれらのラベルを選択し、他のユーザーがドキュメントを編集していない場合、共同編集と自動保存を使用できないという警告が表示されます。 他のユーザーがドキュメントを編集している場合は、ラベルを適用できないというメッセージが表示されます。
 
-- Azure Information Protection 統合ラベル付けクライアントを使用する場合: [その他の要件または制限](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview)については、このラベル付けクライアントのドキュメントを確認してください。
+- Azure Information Protection 統合ラベル付けクライアントを使用する場合: [その他の要件または制限](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview)については、このラベル付けクライアントのドキュメントを確認してください。
 
 ## <a name="known-issues-for-this-preview"></a>このプレビューでの既知の問題
 
@@ -171,7 +171,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 ![共同編集で機密度ラベルが有効になっていることを表示させるオプション](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-スクリーンショットからでもわかるように、この設定がオンになっている場合は [Microsoft サポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) に問い合わせてこの設定を無効にするようにリクエストできます。 このリクエストには数日かかる場合があり、テナントのグローバル管理者であることを証明する必要があります。 通常のサポート料金が適用されることをご了承ください。 
+スクリーンショットからでもわかるように、この設定がオンになっている場合は [Microsoft サポート](/office365/admin/contact-support-for-business-products) に問い合わせてこの設定を無効にするようにリクエストできます。 このリクエストには数日かかる場合があり、テナントのグローバル管理者であることを証明する必要があります。 通常のサポート料金が適用されることをご了承ください。 
 
 サポート エンジニアがテナントに対してこの設定を無効にした場合:
 

@@ -8,18 +8,18 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 729e9dc9ab512a7e93bc291a9a52222c15a42b79
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727423"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920506"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop デバイス 
 
 Microsoft Managed Desktop は、サービスに含まれるデバイスを定期的に評価します。 この記事では、現在サポートされている特定のデバイスの一覧を示します。 デバイス要件に関するより一般的なステートメントについては、「デバイス要件 [」を参照してください](device-requirements.md)。
 
-Microsoft Managed Desktop の詳細については [、「Microsoft Managed Desktop のドキュメントとリソース」を参照してください](https://docs.microsoft.com/microsoft-365/managed-desktop/)。 
+Microsoft Managed Desktop の詳細については [、「Microsoft Managed Desktop のドキュメントとリソース」を参照してください](../index.yml)。 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -78,11 +78,11 @@ Microsoft Managed Desktop に登録するには、デバイスが次のモデル
 
 - 特定の SKU がデバイス要件に一覧表示されている場合は、注文時に必ず使用してください。 これにより、デバイスが Microsoft Managed Desktop ソフトウェア要件に準拠します。 
 - Windows の初回実行エクスペリエンスが完了していない。
-- デバイス登録機能を使用して Microsoft Managed [Desktop に登録](https://aka.ms/mmddrhelp) する
+- デバイス登録機能を使用して Microsoft Managed [Desktop に登録](../get-started/register-devices-self.md) する
 
 >[!NOTE]
 >2.0 GHz 以上のプロセッサを搭載したデバイスは、次のアクティビティに関わるユーザーに優れたエクスペリエンスを提供します。
->- Teams でビデオ会議を使用する。 詳細については [、「Microsoft Teams のハードウェア要件」](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) を参照してください。
+>- Teams でビデオ会議を使用する。 詳細については [、「Microsoft Teams のハードウェア要件」](/microsoftteams/hardware-requirements-for-the-teams-app) を参照してください。
 >-  複数の異なるワークロードに 1 つのデバイスを使用する。
 >- 複数のモニターを使用する。
 
@@ -90,11 +90,6 @@ Microsoft Managed Desktop に登録するには、デバイスが次のモデル
 
 これらのリソースは、特定のデバイスに関する質問に答えるのに役立ちます。
 
-- Dell デバイスに関するその他の質問については<a href="mailto:MMD_at_dell@dell.com">、「MMD_at_dell@dell.com」 に問い合MMD_at_dell@dell.com。</a>
+- Dell デバイスに関するその他の質問については<a href="mailto:MMD_at_dell@dell.com">、「MMD_at_dell@dell.com」 に問い合 MMD_at_dell@dell.com。</a>
 
 - HP デバイスとデバイスの注文手順に関するその他の質問については、お問い<a href="mailto:mmd-americas@hp.com">合わせ</a>: Americas ( mmd-americas@hp.com );ヨーロッパ/中東/アフリカ<a href="mailto:mmd-emea@hp.com">(</a>mmd-emea@hp.com );アジア太平洋/日本 (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>);グローバル<a href="mailto:mmd@hp.com">(</a>mmd@hp.com )
-
-
-
-
-

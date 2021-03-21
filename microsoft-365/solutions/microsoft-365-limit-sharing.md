@@ -19,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 で共有を制限または無効にするオプションについて説明します。
-ms.openlocfilehash: 388d354886805f593b1c7815f16d1e0156e12fe0
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233532"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920206"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Microsoft 365 の共有を制限する
 
@@ -45,9 +45,9 @@ ms.locfileid: "50233532"
 
 ユーザーが共有コンテンツにアクセスする条件を制限することもできます。 詳細については、この記事で後述する [条件付きアクセス](#conditional-access) を参照してください。
 
-組織内の共有は、この記事で説明する管理者コントロールを使用して制限できますが、安全な共有環境を作成するために Microsoft 365 で使用可能なセキュリティとコンプライアンスの機能を使用することを検討するようお勧めします。 詳細については、「[Microsoft 365 による SharePoint のファイルの共同作業](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)」および「[セキュリティの分離を使用してチームを構成する](secure-teams-security-isolation.md)」を参照してください。
+組織内の共有は、この記事で説明する管理者コントロールを使用して制限できますが、安全な共有環境を作成するために Microsoft 365 で使用可能なセキュリティとコンプライアンスの機能を使用することを検討するようお勧めします。 詳細については、「[Microsoft 365 による SharePoint のファイルの共同作業](/sharepoint/deploy-file-collaboration)」および「[セキュリティの分離を使用してチームを構成する](secure-teams-security-isolation.md)」を参照してください。
 
-組織内で使用されている共有方法を理解するには、[ファイルとフォルダーの共有に関するレポートを実行](https://docs.microsoft.com/sharepoint/sharing-reports)してください。
+組織内で使用されている共有方法を理解するには、[ファイルとフォルダーの共有に関するレポートを実行](/sharepoint/sharing-reports)してください。
 
 ## <a name="microsoft-365-group-or-team"></a>Microsoft 365 グループまたはチーム
 
@@ -73,9 +73,9 @@ Microsoft 365 グループのゲスト共有をオフにするには
     ![Microsoft 365 管理センターの Microsoft 365 グループ共有設定のスクリーンショット](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> 特定のグループまたはチームのゲスト共有を禁止する場合には、[Microsoft PowerShell](per-group-guest-access.md) または [秘密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) を使用します。
+> 特定のグループまたはチームのゲスト共有を禁止する場合には、[Microsoft PowerShell](per-group-guest-access.md) または [秘密度ラベル](../compliance/sensitivity-labels-teams-groups-sites.md) を使用します。
 
-特定のドメインのユーザーに対するゲスト共有は、Azure Active Directory でドメインを許可またはブロックすることで制限できます。 [SharePoint および OneDrive の Azure AD B2B との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)を有効にしている場合、この制限は SharePoint のゲスト共有にも影響します。
+特定のドメインのユーザーに対するゲスト共有は、Azure Active Directory でドメインを許可またはブロックすることで制限できます。 [SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration-preview)を有効にしている場合、この制限は SharePoint のゲスト共有にも影響します。
 
 特定のドメインからの共有招待状のみを許可するには
 1. Azure Active Directory の [概要] ページで、**[組織の関係]** をクリックします。
@@ -118,11 +118,11 @@ SharePoint サイトの共有は、サイト所有者のみに制限できます
 
 ### <a name="block-access-to-a-site"></a>サイトへのアクセスの禁止
 
-サイトのロック状態を変更することで、サイトへのアクセスをブロックしたり、サイトを読み取り専用にすることができます。 詳細については、「[サイトのロックとロック解除](https://docs.microsoft.com/sharepoint/manage-lock-status)」を参照してください。
+サイトのロック状態を変更することで、サイトへのアクセスをブロックしたり、サイトを読み取り専用にすることができます。 詳細については、「[サイトのロックとロック解除](/sharepoint/manage-lock-status)」を参照してください。
 
 ### <a name="permissions-inheritance"></a>アクセス許可の継承
 
-推奨されていませんが、 [SharePoint アクセス許可の継承](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance) を使用して、サイトやサブサイトのアクセス レベルをカスタマイズすることができます。
+推奨されていませんが、 [SharePoint アクセス許可の継承](/sharepoint/what-is-permissions-inheritance) を使用して、サイトやサブサイトのアクセス レベルをカスタマイズすることができます。
 
 ## <a name="sharing-with-specific-people"></a>特定のユーザーとの共有
 
@@ -193,15 +193,15 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 既定では、ユーザーは新しいサイト、グループ、およびチームを作成して、そこからコンテンツを共有できるようにすることができます （共有設定によって異なります）。 サイト、グループ、およびチームを作成できるユーザーを制限できます。 次の参考資料を参照してください:
 
-- [SharePoint のサイト作成を管理する](https://docs.microsoft.com/sharepoint/manage-site-creation)
-- [Microsoft 365 グループを作成できるユーザーを管理する](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+- [SharePoint のサイト作成を管理する](/sharepoint/manage-site-creation)
+- [Microsoft 365 グループを作成できるユーザーを管理する](./manage-creation-of-groups.md)
 
 > [!NOTE]
 > グループの作成を制限すると、チームの作成が制限されます。
 
 ## <a name="email"></a>メール
 
-電子メールの不要な共有は、暗号化を使用することで防止できます。 これにより、電子メールの転送や許可されていないユーザーとの共有を防止できます。 電子メールの暗号化は、秘密度ラベルを使用することで有効にできます。 詳細については、「[機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)」を参照してください。
+電子メールの不要な共有は、暗号化を使用することで防止できます。 これにより、電子メールの転送や許可されていないユーザーとの共有を防止できます。 電子メールの暗号化は、秘密度ラベルを使用することで有効にできます。 詳細については、「[機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)」を参照してください。
 
 ## <a name="download-or-file-copy"></a>ダウンロードまたはファイルのコピー
 
@@ -209,12 +209,12 @@ Microsoft 365 のファイルとフォルダーにアクセスできるユーザ
 
 ## <a name="conditional-access"></a>条件付きアクセス
 
-Azure Active Directory の条件付きアクセスは、ネットワークの場所、デバイスの正常性、サインイン リスク、およびその他の要因に基づいて、ユーザーとの共有を制限または防止するオプションを提供します。 「[条件付きアクセスとは?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)」を参照してください。
+Azure Active Directory の条件付きアクセスは、ネットワークの場所、デバイスの正常性、サインイン リスク、およびその他の要因に基づいて、ユーザーとの共有を制限または防止するオプションを提供します。 「[条件付きアクセスとは?](/azure/active-directory/conditional-access/overview)」を参照してください。
 
 SharePoint は、非管理対象デバイスとネットワークの場所の両方に対して、Azure AD の条件付きアクセスとの直接統合を提供します。 詳細については、次の参考資料を参照してください:
 
-- [非管理対象デバイスからのアクセスを制御する](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
-- [ネットワークの場所に基づいて SharePoint と OneDrive のデータへのアクセスを制御する](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
+- [非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)
+- [ネットワークの場所に基づいて SharePoint と OneDrive のデータへのアクセスを制御する](/sharepoint/control-access-based-on-network-location)
 
 ## <a name="see-also"></a>関連項目
 

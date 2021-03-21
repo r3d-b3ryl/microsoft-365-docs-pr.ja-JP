@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 13dee9d5744639149960a16adcf36b7ebe5718f7
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766402"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919673"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
-組織の管理下にある機密性の高いアイテムを識別および分類する方法は、情報保護の分野の最初の [ステップです](protect-information.md)。  Microsoft 365 には、分類できるアイテムを識別する 3 つの方法があります。
+組織の管理下にある機密性の高いアイテムを識別および分類する方法は、情報保護の分野の最初の [ステップです](./information-protection.md)。  Microsoft 365 には、分類できるアイテムを識別する 3 つの方法があります。
 
 - ユーザーが手動で行う
 - 機密情報の種類などの自動パターン認識

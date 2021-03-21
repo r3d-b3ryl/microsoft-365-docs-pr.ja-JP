@@ -1,5 +1,5 @@
 ---
-title: 受信拒否リストから自分自身を削除する
+title: 受信拒否リストから自分を削除する
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、リストから削除ポータルを使用して、Microsoft 365 の受信拒否リストから自分自身を削除する方法について説明します。
+description: この記事では、リストから削除するポータルを使用して、Microsoft 365 ブロックされた送信者リストから自分自身を削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c11fced30ef52315ecb44dda51e6825d36b57c7e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: aef3a5946dee9df7d12232c179f23386db459e06
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287523"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921110"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>無効化ポータルを使って、受信拒否リストから自分自身を削除する
 
@@ -36,19 +36,19 @@ ms.locfileid: "50287523"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Microsoft 365 のメール アドレスを持つ受信者に電子メールを送信しようとするときにエラー メッセージが表示される場合 エラー メッセージを受け取る必要はないと思う場合は、リストから削除ポータルを使用して、受信拒否リストから自分自身を削除できます。
+Microsoft 365 の電子メール アドレスを持つ受信者に電子メールを送信しようとするときにエラー メッセージが表示されますか? エラー メッセージを受け取る必要はないと思う場合は、リストから削除するポータルを使用して、ブロックされた送信者の一覧から自分を削除できます。
 
-## <a name="what-is-the-blocked-senders-list"></a>受信拒否リストとは
+## <a name="what-is-the-blocked-senders-list"></a>ブロックされた送信者リストとは
 
-Microsoft は、受信拒否リストを使って、スパム、スプーフィング、フィッシング攻撃からお客様を保護しています。 メール サーバーの IP アドレス、つまり、メール サーバーがインターネット上で自身を識別するために使用するアドレスは、さまざまな理由から Microsoft 365 に対する潜在的な脅威としてタグ付けされています。 Microsoft 365 が IP アドレスをリストに追加すると、データセンターを通じて IP アドレスとすべてのお客様との間のすべての通信が防止されます。
+Microsoft は、受信拒否リストを使って、スパム、スプーフィング、フィッシング攻撃からお客様を保護しています。 メール サーバーの IP アドレス 、つまり、メール サーバーがインターネット上で自分自身を識別するために使用するアドレスは、さまざまな理由の 1 つで Microsoft 365 に対する潜在的な脅威としてタグ付けされました。 Microsoft 365 が IP アドレスを一覧に追加すると、データセンターを通じて IP アドレスと任意の顧客との間のすべての通信が防止されます。
 
 メール メッセージに対して、次のようなエラーが含まれた応答を受信する場合、お客様は受信拒否リストに追加されています。
 
-> 550 5.7.606-649 アクセスが拒否され、IP [ IP アドレス] の送信 _が禁止_ されました。この一覧からの削除を要求するには、指示に従 <https://sender.office.com/> ってアクセスしてください。 詳細については [、「Exchange Online のメール配信不可レポート」を参照してください](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)。
+> 550 5.7.606-649 アクセスが拒否され、IP [ IP アドレス ] の送信 _が禁止_ されています。このリストからの削除を要求するには、指示に従って <https://sender.office.com/> アクセスしてください。 詳細については [、「Exchange Online でのメール配信不可レポート」を参照してください](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)。
 
 ここで、 _IP address_ は、メール サーバーを稼働しているコンピューターの IP アドレスです。
 
-### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>リストから削除ポータルを使用して、受信拒否リストから自分自身を削除するには
+### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>ポータルのリストを削除して、ブロックされた送信者の一覧から自分を削除するには
 
 1. Web ブラウザーで、<https://sender.office.com> に移動します。
 
@@ -56,7 +56,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
 3. [ **保存**] をクリックします。
 
-    ポータルは、指定したメール アドレスにメールを送信します。 メールは次のようになります:リストから要求を送信すると受信したメールの ![ スクリーンショット](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    ポータルは、指定したメール アドレスにメールを送信します。 電子メールは次のようになります。削除ポータルから要求を送信するときに受信した電子メールの ![ スクリーンショット](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. リストから除外のポータルから受信したメールの中にある確認のリンクをクリックします。
 
@@ -64,9 +64,9 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
 5. リストから除外のポータルで **[IP をリストから除外]** をクリックします。
 
-    IP アドレスが受信拒否リストから削除されると、その IP アドレスからの電子メール メッセージは、Microsoft 365 を使用する受信者に配信されます。 そのため、その IP アドレスから送信された電子メールが不正または悪意のあるものにならないと確信してください。そうしないと、IP アドレスが再度ブロックされる可能性があります。
+    ブロックされた送信者リストから IP アドレスが削除されると、その IP アドレスからの電子メール メッセージが Microsoft 365 を使用する受信者に配信されます。 そのため、その IP アドレスから送信された電子メールが悪用や悪意を持たなかったりしないという確信を持ってください。それ以外の場合は、IP アドレスが再度ブロックされる可能性があります。
 
     > [!NOTE]
-    > 最大 24 時間かかる場合や、制限が解除される前に結果が大きく異なる場合があります。
+    > 制限が削除される前に、最大 24 時間かかる場合や、結果が大きく異なる場合があります。
 
-IP [がブロックされるのを防ぐには、「EOP](create-safe-sender-lists-in-office-365.md) で差出人セーフ リストを作成する」および [「EOP](outbound-spam-controls.md) での送信スパム保護」を参照してください。
+IP [がブロックされるのを防ぐには、「EOP](create-safe-sender-lists-in-office-365.md) で差出人セーフ リストを作成する」および [「EOP](outbound-spam-controls.md) の送信スパム保護」を参照してください。

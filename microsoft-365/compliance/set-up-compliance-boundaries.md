@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンス境界を使用して、電子情報開示マネージャーが Microsoft 365 で検索できるユーザー コンテンツの場所を制御する論理境界を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: df582d46472bc7ca6d6e99e823ab94c0884d60a0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 80f1c6705550d21ac54a0fb4dda2b605b497adbc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423898"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919503"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のコンプライアンス境界を設定する
 
@@ -68,7 +68,7 @@ ms.locfileid: "50423898"
 
 - ユーザー メールボックスのサイズは 10 MB 以上である必要があります。 ユーザーのメールボックスが 10 MB 未満の場合、代理店を定義するために使用される属性は、ユーザーの OneDrive アカウントに同期されません。
 
-- コンプライアンスの境界と検索アクセス許可フィルターの作成に使用される属性では、Azure Active Directory (Azure AD) 属性をユーザー のメールボックスに同期する必要があります。 使用する属性が同期された状態を確認するには、Exchange Online PowerShell で [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) コマンドレットを実行します。 このコマンドレットの出力には、Exchange Online に同期された Azure AD属性が表示されます。
+- コンプライアンスの境界と検索アクセス許可フィルターの作成に使用される属性では、Azure Active Directory (Azure AD) 属性をユーザー のメールボックスに同期する必要があります。 使用する属性が同期された状態を確認するには、Exchange Online PowerShell で [Get-User](/powershell/module/exchange/get-user) コマンドレットを実行します。 このコマンドレットの出力には、Exchange Online に同期された Azure AD属性が表示されます。
 
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>手順 1: 代理店を定義するユーザー属性を特定する
 
@@ -87,7 +87,7 @@ ms.locfileid: "50423898"
 - C (2 文字の国コード) <sup>*</sup>
 
   > [!NOTE]
-  > <sup>*</sup> この属性は、Exchange Online PowerShell で **Get-User** コマンドレットを実行して返される CountryOrRegion プロパティにマップされます。 このコマンドレットはローカライズされた国名を返します。これは 2 文字の国コードから翻訳されます。 詳細については [、Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user) コマンドレットリファレンス記事の CountryOrRegion パラメーターの説明を参照してください。
+  > <sup>*</sup> この属性は、Exchange Online PowerShell で **Get-User** コマンドレットを実行して返される CountryOrRegion プロパティにマップされます。 このコマンドレットはローカライズされた国名を返します。これは 2 文字の国コードから翻訳されます。 詳細については [、Set-User](/powershell/module/exchange/set-user) コマンドレットリファレンス記事の CountryOrRegion パラメーターの説明を参照してください。
 
 特に Exchange メールボックスでは、より多くのユーザー属性を使用することができますが、OneDrive で現在サポートされている属性は上記の属性のみです。
   
@@ -198,7 +198,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>複数地域環境でのコンテンツの検索とエクスポート
 
-また、検索アクセス許可フィルターを使用すると、コンテンツをエクスポート用にルーティングする場所と [、SharePoint](https://go.microsoft.com/fwlink/?linkid=860840)複数地域環境でコンテンツの場所を検索するときに検索できるデータセンターを制御することもできます。
+また、検索アクセス許可フィルターを使用すると、コンテンツをエクスポート用にルーティングする場所と [、SharePoint](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)複数地域環境でコンテンツの場所を検索するときに検索できるデータセンターを制御することもできます。
   
 - **検索結果のエクスポート:** 特定のデータセンターから、Exchange メールボックス、SharePoint サイト、および OneDrive アカウントから検索結果をエクスポートできます。 つまり、検索結果をエクスポートするデータセンターの場所を指定できます。
 
@@ -267,7 +267,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>SharePoint ハブ サイトのコンプライアンス境界の使用
 
-[SharePoint ハブ サイトは、](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) 多くの場合、電子情報開示のコンプライアンスの境界に従うのと同じ地理的または機関の境界と一致します。 つまり、ハブ サイトのサイト ID プロパティを使用してコンプライアンス境界を作成できます。 これを行うには、SharePoint Online PowerShell の [Get-SPOHubSite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite#examples) コマンドレットを使用してハブ サイトの SiteId を取得し、部門 ID プロパティにこの値を使用して検索アクセス許可フィルターを作成します。
+[SharePoint ハブ サイトは、](/sharepoint/dev/features/hub-site/hub-site-overview) 多くの場合、電子情報開示のコンプライアンスの境界に従うのと同じ地理的または機関の境界と一致します。 つまり、ハブ サイトのサイト ID プロパティを使用してコンプライアンス境界を作成できます。 これを行うには、SharePoint Online PowerShell の [Get-SPOHubSite](/powershell/module/sharepoint-online/get-spohubsite#examples) コマンドレットを使用してハブ サイトの SiteId を取得し、部門 ID プロパティにこの値を使用して検索アクセス許可フィルターを作成します。
 
 SharePoint ハブ サイトの検索アクセス許可フィルターを作成するには、次の構文を使用します。
 
@@ -293,7 +293,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 検索アクセス許可のフィルターは、Exchange のパブリックフォルダーには適用されません。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - メールボックスのライセンスが無効または削除された場合、Azure AD属性はメールボックスに同期されなくなりました。 メールボックスが削除された際に保持がメールボックスに配置された場合でも、メールボックスに保持されているコンテンツは、メールボックスが削除される前に Azure AD 属性が最後に同期された時刻に基づいて、コンプライアンス境界または検索アクセス許可フィルターの対象になります。 
 

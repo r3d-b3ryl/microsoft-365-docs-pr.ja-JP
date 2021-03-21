@@ -9,17 +9,17 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840937"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920622"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
 
-Microsoft マネージド デスクトップは、[Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) ([Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise と [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) を含む) を組み合わせたクラウドベースのサービスであり、次の機能を追加します。
+Microsoft マネージド デスクトップは、[Microsoft 365 Enterprise](../../enterprise/microsoft-365-overview.md) ([Windows 10](/windows/windows-10/) Enterprise と [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) を含む) を組み合わせたクラウドベースのサービスであり、次の機能を追加します。
 
 - ユーザー デバイスの展開
 - IT サービスの管理と運用
@@ -44,7 +44,7 @@ Microsoft のポリシーとセキュリティ ベースラインは、ユーザ
 - Microsoft マネージド デスクトップのデバイスのブート時間は、約 4 分の 1です。
 - バッテリ寿命は少なくとも 2 倍
 - デバイスのクラッシュは年間約 3 分の 1
-- [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview) を介したデバイス モビリティにより、ユーザーはサインインするデバイスに関係なく同じ操作性を得られます。
+- [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview) を介したデバイス モビリティにより、ユーザーはサインインするデバイスに関係なく同じ操作性を得られます。
 
 IT 管理者は、次の機能を利用できます。
 
@@ -58,7 +58,7 @@ Microsoft マネージド デスクトップは、登録済みのデバイスや
 
 - **ハードウェア:** IT 部門がデバイス (およびそのドライバー) を調査し、テストする代わりに、Microsoft マネージド デスクトップによって特定のデバイスが慎重にテストされ、エンタープライズ レベルのパフォーマンス要件を満たし、サービスで動作することが保証された [デバイスの一覧](../service-description/device-list.md)が作成されます。 承認済みの一覧に記載されている場合は、デバイスを自分で取得する (またはパートナーとの共同作業) か、所有しているデバイスを再利用することができます。 デバイスの登録は簡単でわかりやすく、さらに、展開する前にユーザー向けにデバイス操作の特定の側面を [カスタマイズ](../working-with-managed-desktop/config-setting-overview.md) することもできます。
 - **更新:** Microsoft マネージド デスクトップは、Windows 10 の品質更新プログラムおよび機能更新プログラム、ドライバー、ファームウェア、ウイルス対策定義、Microsoft 365 Apps for enterprise の [展開グループ](../service-description/updates.md)のすべての側面をセットアップおよび管理します。 これには、すべての更新プログラムの広範なテストと検証が含まれ、登録済みのデバイスが常に最新であることを保証し、中断を最小限に抑えて、IT 部門を継続的なタスクから解放します。
-- **アプリ:** Microsoft 365 Enterprise の一部として、Microsoft はいくつかの重要な Microsoft アプリを提供 (および管理) します。 ただし、その他のアプリもビジネスに必要となる可能性があります。 IT 部門がこれらのアプリケーションをテスト、パッケージ化、展開する代わりに、Microsoft がそれらの展開を支援し、必要に応じて [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)を通じてサポートします。 詳細については、「[Microsoft マネージド デスクトップのアプリ](../get-ready/apps.md)」をご覧ください。
+- **アプリ:** Microsoft 365 Enterprise の一部として、Microsoft はいくつかの重要な Microsoft アプリを提供 (および管理) します。 ただし、その他のアプリもビジネスに必要となる可能性があります。 IT 部門がこれらのアプリケーションをテスト、パッケージ化、展開する代わりに、Microsoft がそれらの展開を支援し、必要に応じて [Desktop App Assure](/fasttrack/win-10-desktop-app-assure)を通じてサポートします。 詳細については、「[Microsoft マネージド デスクトップのアプリ](../get-ready/apps.md)」をご覧ください。
 
 
 ## <a name="device-monitoring"></a>デバイスの監視
@@ -79,7 +79,7 @@ Microsoft マネージド デスクトップがお客様の組織に適してい
 - [Microsoft マネージド デスクトップのテクノロジ](technologies.md)
 - [Microsoft マネージド デスクトップと ITIL](../MMD-and-ITSM.md)
 - [コンプライアンス](compliance.md)
-- [Microsoft マネージド デスクトップのサービスの説明](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
+- [Microsoft マネージド デスクトップのサービスの説明](../service-description/index.md)
 
 **登録の準備** これらのトピックでは、環境が主要な前提条件を満たしていることの確認、ネットワークの構成、証明書の設定、アプリをサービスに含める準備を行うことなど、登録準備のために組織内で行う必要がある手順について説明します。
 
@@ -114,4 +114,3 @@ Microsoft マネージド デスクトップがお客様の組織に適してい
 <!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
- 

@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: ec4ca9a79ee3b5674e1837d14cea4ee504cb57d5
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 985131900a5e07188c0af641fb86f794d558f80b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838212"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919783"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > チャットまたはメッセージが保持ポリシーによって削除されたというメッセージが Teams に表示されている場合は、「[アイテム保持ポリシーに関する Teams メッセージ](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)」を参照してください。
@@ -43,7 +43,7 @@ ms.locfileid: "50838212"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
-次の Teams アイテムは、Teams のアイテム保持ポリシーを使用して保持および削除できます: 埋め込みの画像、テーブル、ハイパーテキスト リンク、および他の Teams メッセージ、ファイル、[カード コンテンツ](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)へのリンクを含む、チャット メッセージとチャネル メッセージ。 チャット メッセージには、チャット内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
+次の Teams アイテムは、Teams のアイテム保持ポリシーを使用して保持および削除できます: 埋め込みの画像、テーブル、ハイパーテキスト リンク、および他の Teams メッセージ、ファイル、[カード コンテンツ](/microsoftteams/platform/task-modules-and-cards/what-are-cards)へのリンクを含む、チャット メッセージとチャネル メッセージ。 チャット メッセージには、チャット内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
 
 > [!NOTE]
 > カード コンテンツに関する機能は最近追加され、現在はテナントに完全にロール アウトされています。 詳細については、「[Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available (Teams 内のアプリケーションを使用したアダプティブ カード コンテンツのコンプライアンスに関する Microsoft 365 の機能が利用可能になりました)](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)」を参照してください。
@@ -64,7 +64,7 @@ Teams で使用するメールとファイルは、Teams のアイテム保持�
 
 Teams 会議室に使用される RoomMailbox などの他のメールボックスの種類は、Teams 保持ポリシーではサポートされていません。
 
-Azure を利用したチャット サービスでもこのデータが保存されますが、Teams でもこのサービスを使用していることを理解することが重要です。既定では、このサービスはデータを無期限に保存します。 このため、コンプライアンス上の理由で Teams メッセージを削除する必要がある場合は、Exchange メールボックスと基盤となる Azure ベースのチャット サービスの両方からこのデータを完全に削除できる Teams の保持ポリシーを使用することをお勧めします。 基盤となるアーキテクチャの詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](https://go.microsoft.com/fwlink/?linkid=871258)」、特に「[情報保護アーキテクチャ](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
+Azure を利用したチャット サービスでもこのデータが保存されますが、Teams でもこのサービスを使用していることを理解することが重要です。既定では、このサービスはデータを無期限に保存します。 このため、コンプライアンス上の理由で Teams メッセージを削除する必要がある場合は、Exchange メールボックスと基盤となる Azure ベースのチャット サービスの両方からこのデータを完全に削除できる Teams の保持ポリシーを使用することをお勧めします。 基盤となるアーキテクチャの詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](/MicrosoftTeams/security-compliance-overview)」、特に「[情報保護アーキテクチャ](/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
 
 Teams のチャットとチャネル メッセージはメールボックスに保存されますが、この Teams のデータは、**Teams のチャネル メッセージ** と **Teams のチャット** の場所に対して構成されているアイテム保持ポリシーによってのみ含まれます。 Teams のチャットとチャネル メッセージは、Exchange ユーザーまたはグループのメールボックスに対して構成されているアイテム保持ポリシーの影響を受けません。
 

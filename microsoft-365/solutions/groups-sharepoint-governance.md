@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 グループと SharePoint の間の設定の相互作用
+title: Microsoft 365 グループと SharePoint の間の設定操作
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,45 +14,45 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Microsoft 365 グループと SharePoint の間の設定の相互作用について説明します。
-ms.openlocfilehash: a00e863fead8e74cf0f169471ebb36f9539ed103
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Microsoft 365 グループと SharePoint の間の設定の操作について説明します。
+ms.openlocfilehash: e1aeaca792fb551de503bd4c68256ccf14f45022
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613492"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921038"
 ---
-# <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Microsoft 365 グループと SharePoint の間の設定の相互作用
+# <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Microsoft 365 グループと SharePoint の間の設定操作
 
-Microsoft 365 グループおよび Microsoft 365 の SharePoint の一部の設定 (特に、共有とグループおよびチームサイトの作成に関連する) は、互いに重複しています。 この記事では、これらの相互作用と、これらの設定の使用方法に関するベストプラクティスについて説明します。
+Microsoft 365 の Microsoft 365 グループと SharePoint の設定の中には、特に共有とグループサイトとチーム サイトの作成に関連する設定が重複しています。 この記事では、これらの設定を操作する方法に関するこれらの操作とベスト プラクティスについて説明します。
 
 ![SharePoint、Yammer、およびグループの機能のベン図](../media/groups-sharepoint-venn.png)
 
-## <a name="the-effects-of-sharepoint-settings-on-microsoft-365-groups"></a>Microsoft 365 グループへの SharePoint 設定の影響
+## <a name="the-effects-of-sharepoint-settings-on-microsoft-365-groups"></a>Microsoft 365 グループに対する SharePoint 設定の影響
 
 |SharePoint の設定|説明|Microsoft 365 グループへの影響|推奨事項|
 |:-----------------|:----------|:-----------------------------|:-------------|
-|組織とサイトの外部共有|サイト、ファイル、およびフォルダーを組織外のユーザーと共有できるかどうかを決定します。|SharePoint とグループの設定が一致しない場合、グループのゲストはサイトへのアクセスをブロックされる可能性があります。また、外部アクセスはサイトでは使用できませんが、グループにはアクセスできない場合があります。|共有設定を変更するときは、グループの設定と、グループに接続されたチームサイトの SharePoint サイトの設定の両方を確認します。<br><br>「 [サイト内のゲストを使用して共同作業を](https://docs.microsoft.com/microsoft-365/solutions/collaborate-in-site)行う」を参照してください。|
-|ドメイン許可/ブロック|指定したドメインとのコンテンツの共有を許可または禁止します。|グループは、SharePoint の許可または禁止リストを認識しません。 SharePoint で許可されていないドメインのユーザーが、グループを介して SharePoint にアクセスできる可能性があります。|Azure AD と SharePoint のドメインの許可/ブロック一覧を管理します。 ドメインを許可およびブロックするための、組織全体のガバナンスプロセスを作成します。<br><br>「 [SharePoint ドメインの設定](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)」および「 [Azure AD ドメインの設定](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)」を参照してください。|
-|特定のセキュリティ グループ内のユーザーにのみ、外部との共有を許可します。|サイト、フォルダー、およびファイルを外部で共有できるセキュリティグループを指定します。|この設定は、グループを外部で共有するグループの所有者には影響しません。 グループゲストは、関連付けられた SharePoint サイトにアクセスできます。||
-|SharePoint サイトの共有設定|グループメンバーシップの外部にあるサイトを直接共有できるユーザーを決定します。 これは、グループまたはサイトの所有者によって構成されます。|この設定は、グループに直接影響を与えませんが、ユーザーをサイトに追加して、他のグループリソースにアクセス権を持たないようにすることができます。|この設定を使用してサイトの共有を直接制限し、グループを使用してサイトアクセスを管理することを検討してください。|
-|ユーザーが SharePoint のスタートページおよび OneDrive からサイトを作成できるようにする|ユーザーが新しい SharePoint サイトを作成できるかどうかを指定します。|この設定を無効にした場合でも、グループを作成することで、グループに接続されたチームサイトを作成することができます。||
+|組織とサイトの外部共有|サイト、ファイル、フォルダーを組織外のユーザーと共有できるかどうかを指定します。|SharePoint とグループの設定が一致しない場合は、グループ内のゲストがサイトへのアクセスをブロックされる場合や、サイトで外部アクセスを利用できますが、グループではアクセスできない場合があります。|共有設定を変更する場合は、グループに接続されたチーム サイトのグループ設定と SharePoint サイト設定の両方を確認します。<br><br>「サイト [内のゲストと共同作業する」を参照してください](./collaborate-in-site.md)。|
+|ドメインの許可/ブロック|指定したドメインとコンテンツが共有されるのを許可または防止します。|グループは SharePoint 許可リストまたはブロック リストを認識しない。 SharePoint で禁止されているドメインのユーザーは、グループを介して SharePoint にアクセスできます。|Azure ADおよび SharePoint のドメイン許可/ブロックリストを一緒に管理します。 ドメインを許可およびブロックする組織全体のガバナンス プロセスを作成します。<br><br>[「SharePoint ドメイン設定」および](/sharepoint/restricted-domains-sharing)[「Azure ドメイン設定AD」を参照してください。](/azure/active-directory/b2b/allow-deny-list)|
+|特定のセキュリティ グループ内のユーザーにのみ、外部との共有を許可します。|サイト、フォルダー、およびファイルを外部で共有できるセキュリティ グループを指定します。|この設定は、グループの所有者がグループを外部で共有する場合には影響を与えかねない。 グループ ゲストは、関連付けられた SharePoint サイトにアクセスできます。||
+|SharePoint サイト共有設定|グループ メンバーシップの外部でサイトを直接共有できるユーザーを指定します。 これは、グループまたはサイトの所有者によって構成されます。|この設定はグループに直接影響を与えるものではありませんが、ユーザーがサイトに追加され、他のグループ リソースにアクセスできない場合があります。|この設定を使用して、サイトの共有を直接制限し、グループを通じてサイト アクセスを管理する方法を検討してください。|
+|SharePoint スタート ページと OneDrive からサイトを作成する|ユーザーが新しい SharePoint サイトを作成できる場合に指定します。|この設定をオフにした場合でも、ユーザーはグループを作成することでグループに接続されたチーム サイトを作成できます。||
 
-## <a name="the-effects-of-microsoft-365-groups-setting-on-sharepoint"></a>SharePoint での Microsoft 365 groups の設定の効果
+## <a name="the-effects-of-microsoft-365-groups-setting-on-sharepoint"></a>SharePoint での Microsoft 365 グループ設定の影響
 
-|Microsoft 365 グループの設定|説明|SharePoint に対する影響|推奨事項|
+|Microsoft 365 グループの設定|説明|SharePoint への影響|推奨事項|
 |:---------------------------|:----------|:-------------------|:-------------|
-|名前付けポリシー|グループの名前のプレフィックスとサフィックス、およびグループの作成に対してブロックする単語を指定します。|グループに接続されたチームサイトを作成するユーザーにはポリシーが適用されますが、他のテンプレートを使用して通信サイトやサイトを作成することはありません。|必要に応じて、コミュニケーションサイト用の別の命名ガイドを作成します。|
-|グループのゲスト アクセス|組織外のユーザーをグループに追加できるかどうかを指定します。|SharePoint とグループの設定が一致しない場合、グループのゲストはサイトへのアクセスをブロックされる可能性があります。また、外部アクセスはサイトでは使用できませんが、グループにはアクセスできない場合があります。|共有設定を変更するときは、グループの設定と、グループに接続されたチームサイトの SharePoint サイトの設定の両方を確認します。<br><br>「[サイトでゲストと共同作業を](https://docs.microsoft.com/microsoft-365/solutions/collaborate-in-site)行う」を参照してください。|
-|セキュリティグループによるグループの作成|グループは、特定のセキュリティグループのメンバーのみが作成できます。|セキュリティグループのメンバーではないユーザーは、グループに接続されたチームサイトを作成できません。|グループを要求するプロセスに、サイトを要求するための手順が含まれていることを確認してください。|
-|グループの有効期限ポリシー|アクティブに使用されていないグループが自動的に削除されるまでの期間を指定します。|グループが削除されると、関連付けられている SharePoint サイトも削除されます。 アイテム保持ポリシーによって保護されたコンテンツは保持されます。|有効期限ポリシーを使用して、未使用のグループとサイトが無秩序に増大しないようにします。|
+|名前付けポリシー|グループ名のプレフィックスとサフィックス、およびグループ作成のブロックされた単語を指定します。|ポリシーは、グループに接続されたチーム サイトを作成するユーザーに適用されますが、他のテンプレートとの通信サイトやサイトには適用されません。|必要に応じて、通信サイトの個別の名前付けガイダンスを作成します。|
+|グループのゲスト アクセス|組織外のユーザーをグループに追加できる場合に指定します。|SharePoint とグループの設定が一致しない場合は、グループ内のゲストがサイトへのアクセスをブロックされる場合や、サイトで外部アクセスを利用できますが、グループではアクセスできない場合があります。|共有設定を変更する場合は、グループに接続されたチーム サイトのグループ設定と SharePoint サイト設定の両方を確認します。<br><br>「サイト [内のゲストと共同作業する」を参照してください。](./collaborate-in-site.md)|
+|セキュリティ グループによるグループ作成|グループを作成できるのは、特定のセキュリティ グループのメンバーのみです。|セキュリティ グループのメンバーではないユーザーは、グループに接続されたチーム サイトを作成できます。|グループを要求するプロセスに、サイトを要求する手順が含まれています。|
+|グループの有効期限ポリシー|アクティブに使用されていないグループが自動的に削除される期間を指定します。|グループを削除すると、関連付けられた SharePoint サイトも削除されます。 アイテム保持ポリシーによって保護されたコンテンツは保持されます。|有効期限ポリシーを使用して、未使用のグループとサイトの広がりを回避します。|
 
 ## <a name="related-topics"></a>関連項目
 
-[コラボレーションガバナンスの計画のステップバイステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[コラボレーションのガバナンス計画を作成する](collaboration-governance-first.md)
+[コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 
-[組織外のユーザーとの共同作業](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
+[組織外部のユーザーとの共有](./collaborate-with-people-outside-your-organization.md)
 
-[SharePoint のサイト作成を管理する](https://docs.microsoft.com/sharepoint/manage-site-creation)
+[SharePoint のサイト作成を管理する](/sharepoint/manage-site-creation)

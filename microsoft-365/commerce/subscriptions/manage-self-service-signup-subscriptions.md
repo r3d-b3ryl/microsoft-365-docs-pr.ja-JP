@@ -1,5 +1,5 @@
 ---
-title: セルフサービスのサインアップサブスクリプションを管理する
+title: セルフサービス サインアップ サブスクリプションの管理
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,44 +17,44 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 組織の無料セルフサービスサインアップサブスクリプションを管理する方法について説明します。
-ms.openlocfilehash: 589466908dcda1461011f046b99be21788c1a018
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+description: 組織の無料セルフサービス サインアップ サブスクリプションを管理する方法について学習します。
+ms.openlocfilehash: 5910ed5d65f93a4dab15c681610d4d59d0427fb0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376307"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920170"
 ---
-# <a name="manage-self-service-sign-up-subscriptions"></a>セルフサービスのサインアップサブスクリプションを管理する
+# <a name="manage-self-service-sign-up-subscriptions"></a>セルフサービス サインアップ サブスクリプションの管理
 
-## <a name="what-are-self-service-sign-up-subscriptions"></a>セルフサービスのサインアップサブスクリプションとは
+## <a name="what-are-self-service-sign-up-subscriptions"></a>セルフサービス サインアップ サブスクリプションとは
 
-組織内のユーザーがにサインアップするために使用できる無料のセルフサービスサインアップサブスクリプションの数には制限があります。 ユーザーは自分でサインアップし、セルフサービスのサインアップサブスクリプションを自分自身に対してのみ使用できます。 セルフサービスのサインアップサブスクリプションを管理するには、ユーザーのサインアップをブロックし、ユーザーがサインアップした無料のサブスクリプションを削除します。 セルフサービスのサインアップと利用可能なサブスクリプションの詳細については、「 [組織でのセルフサービスサインアップの使用](../../admin/misc/self-service-sign-up.md)」を参照してください。
+組織内のユーザーがサインアップできる無料のセルフサービス サインアップ サブスクリプションの数は限られています。 ユーザーがサインアップできるのは、自己サービスサインアップ サブスクリプションのみです。 セルフサービス サインアップ サブスクリプションを管理するには、ユーザーのサインアップをブロックし、ユーザーがサインアップした無料のサブスクリプションを削除します。 セルフサービス サインアップと利用可能なサブスクリプションの詳細については、「組織でのセルフサービス サインアップの使用 [」を参照してください](../../admin/misc/self-service-sign-up.md)。
 
-## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>セルフサービスのサインアップサブスクリプションの一覧を表示する
+## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>セルフサービス サインアップ サブスクリプションの一覧を表示する
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
-2. [ **製品** ] タブで、[フィルター] アイコンを選択し、[ **フリー**] を選択します。 すべてのセルフサービスサインアップサブスクリプションの一覧が表示されます。
+2. [製品 **] タブで** 、フィルター アイコンを選択し、[無料] を **選択します**。 すべてのセルフサービス サインアップ サブスクリプションの一覧が表示されます。
 
-## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>これらのサブスクリプションはセルフサービス購入サブスクリプションとどのような違いがありますか?
+## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>これらのサブスクリプションとセルフサービス購入サブスクリプションの違いは何ですか?
 
-セルフサービスサインアップサブスクリプションは無料であり、セルフサービス購入サブスクリプションよりも多くの製品リストで利用できます。 ユーザーがセルフサービス購入サブスクリプションにサインアップすると、ユーザーはそれに対して支払いを担当します。 セルフサービス購入サブスクリプションは、Power Platform 製品 (Power BI、電源アプリ、およびパワーオートメーション)、プロジェクト、Visio でのみ使用できます。 詳細については、「 [セルフサービス購入](self-service-purchase-faq.md)に関する FAQ」を参照してください。
+セルフサービス サインアップ サブスクリプションは無料で、セルフサービス購入サブスクリプションよりも大きな製品リストで利用できます。 ユーザーがセルフサービス購入サブスクリプションに登録すると、ユーザーは支払いを行う責任があります。 セルフサービス購入サブスクリプションは、Power Platform 製品 (Power BI、Power Apps、Power Automate)、Project、Visio でのみ利用できます。 詳細については、「セルフサービス購入 [に関するよく寄せられる質問」を参照してください](self-service-purchase-faq.md)。
 
 ## <a name="block-users-from-signing-up"></a>ユーザーのサインアップをブロックする
 
-[**Set-msolcompanysettings**](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0&preserve-view=true)コマンドレットを **AllowAdHocSubscriptions** パラメーターと共に使用して、ユーザーがセルフサービスサインアップサブスクリプションにサインアップできるかどうかを制御します。 詳細については、「[セルフサービス設定を制御する方法](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)」を参照してください。
+ユーザーがセルフサービス サインアップ サブスクリプションにサインアップできるかどうかを制御するには **、AllowAdHocSubscriptions** パラメーターを使用して [**Set-MsolCompanySettings**](/powershell/module/msonline/set-msolcompanysettings?preserve-view=true&view=azureadps-1.0)コマンドレットを使用します。 詳細については、「セルフサービス設定 [を制御する方法」を参照してください。](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
-## <a name="delete-a-self-service-sign-up-subscription"></a>セルフサービスのサインアップサブスクリプションを削除する
+## <a name="delete-a-self-service-sign-up-subscription"></a>セルフサービス サインアップ サブスクリプションを削除する
 
 > [!IMPORTANT]
-> セルフサービスのサインアップサブスクリプションを削除すると、すべてのユーザーが自分のデータや電子メールにアクセスしたり、すべてのデータとメールを削除したりするのをブロックします。
+> セルフサービス サインアップ サブスクリプションを削除すると、すべてのユーザーが自分のデータと電子メールにアクセスし、すべてのデータと電子メールを削除できます。
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
-2. [ **製品** ] タブで、[フィルター] アイコンを選択し、[ **フリー**] を選択します。
-3. 削除するセルフサービスのサインアップサブスクリプションを選択します。 
-4. [サブスクリプションの詳細] ページの [サブスクリプション **と支払いの設定** ] セクションで、[ **サブスクリプションの削除**] を選択します。
-5. [ **サブスクリプションの削除** ] ウィンドウで、チェックボックスをオンにして、[ **サブスクリプションの削除**] を選択します。
+2. [製品 **] タブで** 、フィルター アイコンを選択し、[無料] を **選択します**。
+3. 削除するセルフサービス サインアップ サブスクリプションを選択します。 
+4. [サブスクリプションの詳細] ページの [ **サブスクリプションと支払** いの設定] セクションで、[サブスクリプションの削除] **を選択します**。
+5. [サブスクリプション **の削除] ウィンドウで** 、チェック ボックスをオンにして、[サブスクリプションの削除] **を選択します**。
 
-## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>ディレクトリの削除をブロックするセルフサービスのサインアップサブスクリプションがあります
+## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>ディレクトリの削除をブロックするセルフサービス サインアップ サブスクリプションがある
 
-個々のユーザーがサインアップできるセルフサービスサインアップ製品は、Azure AD ディレクトリで認証のためのゲストユーザーを作成することもできます。 データ損失を回避するため、これらのセルフサービス製品はディレクトリから完全に削除されるまでディレクトリの削除をブロックします。 Azure AD 管理者のみが削除できます。詳細については、「 [Azure Active directory でディレクトリを削除する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-delete-howto)」を参照してください。
+個々のユーザーがサインアップできるセルフサービスサインアップ製品は、Azure AD ディレクトリに認証用のゲスト ユーザーを作成します。 データの損失を回避するために、これらのセルフサービス製品は、ディレクトリから完全に削除されるまで、ディレクトリの削除をブロックします。 削除できるのは、Azure 管理者ADのみです。詳細については [、「Azure Active Directory のディレクトリを削除する」を参照してください](/azure/active-directory/users-groups-roles/directory-delete-howto)。

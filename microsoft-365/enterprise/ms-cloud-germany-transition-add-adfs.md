@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Deutschland からの移行AD Active Directory フェデレーション サービス (FS) の移行手順について説明します。'
-ms.openlocfilehash: 852fc8f93158d7b6080f1add5a05e7367539f889
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838415"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918908"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>ADから移行するための FS 移行手順の詳細
 
@@ -51,9 +51,9 @@ FS バックアップを完了してテストしたらAD手順を実行して、
 
 4. 証明書 **利用者信頼** の追加 **ウィザードの [** ようこそ] ページで [スタート] を選択します。
 
-5. [データ **ソースの選択] ページ** で、[オンラインまたはローカル ネットワークで発行された証明書利用者に関するデータのインポート **] を選択します**。 フェデレーション **メタデータ アドレス (ホスト名または URL)** の値をに設定する必要があります `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 [**次へ**] をクリックします。
+5. [データ **ソースの選択] ページ** で、[オンラインまたはローカル ネットワークで発行された証明書利用者に関するデータのインポート **] を選択します**。 フェデレーション **メタデータ アドレス (ホスト名または URL)** の値をに設定する必要があります `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 **[次へ]** をクリックします。
 
-6. [表示 **名の指定] ページ** で、365 Identity Platform WorldWide などのMicrosoft Office **を入力します**。 [**次へ**] をクリックします。
+6. [表示 **名の指定] ページ** で、365 Identity Platform WorldWide などのMicrosoft Office **を入力します**。 **[次へ]** をクリックします。
 
 7. ADFS を Windows Server 2012 で使用している場合は、ウィザード ページの [多要素認証を今すぐ構成する **]** で、認証要件に応じて適切な選択肢を選択します。 既定に固執する場合は、[この証明書利用者信頼の多要素認証設定をこの時点で構成しない] **を選択します**。 必要に応じ、後でこの設定を変更できます。
 
@@ -89,7 +89,8 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
 
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>AD FS 障害復旧 (WID データベース)
 
-障害時にAD FS ファームを復元するにはAD [FS Rapid Restore Tool](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) を活用する必要があります。 したがって、ツールをダウンロードし、移行の開始前にバックアップを作成して安全に保存する必要があります。 この例では、WID データベースで実行されているファームをバックアップするために、次のコマンドを実行しています。
+
+障害時にAD FS ファームを復元するにはAD [FS Rapid Restore Tool](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) を活用する必要があります。 したがって、ツールをダウンロードし、移行の開始前にバックアップを作成して安全に保存する必要があります。 この例では、WID データベースで実行されているファームをバックアップするために、次のコマンドを実行しています。
 
 <h2 id="backup"></h2>
 
@@ -127,7 +128,7 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
 3. 新しい DNS レコードまたはロード バランサーを FS サーバーの新しいADポイントします。
 
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 
@@ -144,6 +145,6 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
 
 クラウド アプリ:
 
-- [Dynamics 365 移行プログラム情報](https://aka.ms/d365ceoptin)
-- [Power BI 移行プログラム情報](https://aka.ms/pbioptin)
-- [Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 移行プログラム情報](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移行プログラム情報](/power-bi/admin/service-admin-migrate-data-germany)
+- [Microsoft Teams へのアップグレードを開始する](/microsoftteams/upgrade-start-here)

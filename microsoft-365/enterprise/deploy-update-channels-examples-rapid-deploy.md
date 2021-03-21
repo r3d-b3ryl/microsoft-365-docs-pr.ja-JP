@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 最新リリースを導入している組織での、Windows 10 アプリ、 Microsoft 365 アプリのチャネルの使用方法。
-ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 29bda1651a83f0e043cf8a0d2a102c6c2e461bfd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686168"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919076"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新リリースの幅広い展開例
 
@@ -61,7 +61,7 @@ ms.locfileid: "46686168"
 
 全体的な目標は、代表的なユーザーとそのデバイスのグループによるリリースプレビューチャネルの変更の検証後に、最新の半期チャネルリリースの広範な展開を実行することです。
 
-Windows 10の展開方法と戦略の詳細については、[Windows 10 の展開](https://docs.microsoft.com/windows/deployment/)を参照してください。
+Windows 10の展開方法と戦略の詳細については、[Windows 10 の展開](/windows/deployment/)を参照してください。
 
 | ステージ | チャネル | 展開グループ |
 |:-------|:-------|:-----|
@@ -85,12 +85,12 @@ Windows 10の展開方法と戦略の詳細については、[Windows 10 の展�
 
 全体的な目標は、代表的なユーザーグループが現在のチャネル（プレビュー）の変更を検証した後に、最新の現在のチャネルリリースの広範な展開を実行することです。
 
-Microsoft 365 アプリの展開方法と戦略の詳細については、[Microsoft 365 アプリの 展開 ](https://docs.microsoft.com/deployoffice/plan-office-365-proplus)を参照してください。
+Microsoft 365 アプリの展開方法と戦略の詳細については、[Microsoft 365 アプリの 展開 ](/deployoffice/plan-office-365-proplus)を参照してください。
 
 | ステージ | チャネル | 展開グループ |
 |:-------|:-------|:-----|
 | パイロット |  **最新機能提供チャネル (プレビュー)** <ul><li> 目的: {代表的なユーザーのグループに、新しい Microsoft 365 アプリの新機能を簡単にご紹介します。}最新のチャネル (プレビュー) を使用しているユーザーがテストし、運用可能な状態になったらすぐに、機能の更新を展開します。　　　 </li><li> 状態: 完全に準拠し、サポートされています。</li><li> 頻度: 月に2-3 回更新します。 </li></ul> | **AppsCurrentChannelPreview** (名前の例) <br><br> メンバーは以下を含むグループになります： <ul><li> 部門や場所を越えた Office アプリ愛好家 </li><li> 検証が必要な構成を持つスタッフ </li><li> IT 管理者と IT 展開スタッフ </li><li> 導入変更マネージャー </li><li> 社内トレーニングスタッフ </li></ul>|
-| 生産 | **最新機能提供チャネル** <ul><li> 目的: 最新の機能更新を組織の他のユーザーに広く展開します。　　 </li><li> 状態: 完全に準拠し、サポートされています。 </li></ul> |  ** アプリ最新機能提供チャネルプレビュー** (名前の例) <br><br> メンバーは、Win10半期チャネル グループに含まれていないすべてのユーザーです。 |
+| 生産 | **最新機能提供チャネル** <ul><li> 目的: 最新の機能更新を組織の他のユーザーに広く展開します。　　 </li><li> 状態: 完全に準拠し、サポートされています。 </li></ul> |  **アプリ最新機能提供チャネルプレビュー** (名前の例) <br><br> メンバーは、Win10半期チャネル グループに含まれていないすべてのユーザーです。 |
 |||
 
 継続的な更新のプロセス:

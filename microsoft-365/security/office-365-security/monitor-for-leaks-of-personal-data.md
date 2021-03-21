@@ -19,12 +19,12 @@ search.appverid:
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290671"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921254"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -83,7 +83,7 @@ DLP レポートは、セキュリティ/コンプライアンス センター�
 
 情報セキュリティ チームは、監査ログを検索して疑いのあるデータ侵害を調査し、根本原因と違反の程度の両方を判断することもできます。この組み込みの機能は、GDPR の第 33 条および第 34 条の遵守を円滑にします。これらの条項では、データ違反について GDPR 監督当局およびデータ主体に、特定の期間内に通知することが求められています。監査ログ エントリは、サービス内で 90 日間のみ保持されます。多くの場合、これらのログをより長期間保持することが推奨され、多くの企業もそれを必要としています。
 
-Microsoft 管理アクティビティ API を使用して統一監査ログを購読し、必要に応じてログ エントリを保存し、高度なダッシュボードとアラートを提供することができるソリューションを活用できます。たとえば、[Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365) が例として挙げられます。
+Microsoft 管理アクティビティ API を使用して統一監査ログを購読し、必要に応じてログ エントリを保存し、高度なダッシュボードとアラートを提供することができるソリューションを活用できます。たとえば、[Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365) が例として挙げられます。
 
 アラート ポリシーと監査ログの検索については、以下を参照してください。
 
@@ -95,7 +95,7 @@ Microsoft 管理アクティビティ API を使用して統一監査ログを�
 
 - [監査ログを検索する](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
-- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (コマンドレット)
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (コマンドレット)
 
 - [監査ログの詳細なプロパティ](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
@@ -130,11 +130,11 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 詳しくは、以下の資料を参照してください。
 
-- [Cloud App Security を展開する](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Cloud App Security を展開する](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - [Microsoft Cloud App Security の詳細情報](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [Microsoft Cloud App Security プロキシを使用して機密情報のダウンロードをブロックする](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [Microsoft Cloud App Security プロキシを使用して機密情報のダウンロードをブロックする](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>個人データの共有を検出するためのファイル ポリシーとアクティビティ ポリシーの例
 

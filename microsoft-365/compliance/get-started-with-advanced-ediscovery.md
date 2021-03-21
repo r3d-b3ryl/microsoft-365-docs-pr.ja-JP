@@ -12,49 +12,33 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
+- m365solution-scenario
 search.appverid:
 - MOE150
 - MET150
 description: この記事では、ケースの作成と管理を開始するために高度な電子情報開示をセットアップする方法について説明します。 また、必要な Microsoft サブスクリプションとライセンスも説明します。 いくつかの簡単な手順を完了すると、高度な電子情報開示ツールを使用する準備が整いました。
-ms.openlocfilehash: 29a220f36a55a04d1c1a24add03b2e013a5c60ba
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727412"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919749"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>Microsoft 365 Advanced eDiscovery のセットアップ
 
-Microsoft 365 の高度な電子[](overview-ediscovery-20.md#advanced-ediscovery-workflow)情報開示は、組織の内部および外部調査に対応するデータを保存、収集、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 Advanced eDiscovery を展開するために必要なタスクは何もありませんが、組織が Advanced eDiscovery ケースの作成と使用を開始して調査を管理するには、IT 管理者と電子情報開示マネージャーが完了する必要があるいくつかの前提条件タスクがあります。
+Microsoft 365 の高度な電子情報開示は、組織の内部および外部調査に対応するデータを保存、収集、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 Advanced eDiscovery を展開するために必要なタスクは何もありませんが、組織が Advanced eDiscovery ケースの作成と使用を開始して調査を管理するには、IT 管理者と電子情報開示マネージャーが完了する必要があるいくつかの前提条件タスクがあります。
 
-この記事では、Advanced eDiscovery のセットアップに必要な手順について説明します。 これには、Advanced eDiscovery にアクセスし、ケースにカストディアンを追加するために必要な適切なライセンスを確保し、ケースにアクセスして管理するための権限を法務および調査チームに割り当てる必要があります。
+この記事では、Advanced eDiscovery のセットアップに必要な以下の手順について説明します。
+
+![高度な電子情報開示をセットアップする手順](../media/set-up-advanced-ediscovery.png)
+
+これには、Advanced eDiscovery にアクセスし、ケースにカストディアンを追加するために必要な適切なライセンスを確保し、ケースにアクセスして管理するための権限を法務および調査チームに割り当てる必要があります。
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>手順 1: 適切なライセンスを確認して割り当てる
 
-Advanced eDiscovery のライセンスには、適切な組織のサブスクリプションとユーザーごとのライセンスが必要です。
-
-- **組織のサブスクリプション:** Microsoft 365 コンプライアンス センターまたはセキュリティ & コンプライアンス センターで高度な電子情報開示にアクセスするには、組織で次のいずれかを使用する必要があります。
-
-  - Microsoft 365 E5 または Office 365 E5 サブスクリプション
-  
-  - E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション
-
-  - E5 電子情報開示と監査アドオンを使用した Microsoft 365 E3 サブスクリプション
-
-  既存の Microsoft 365 E5 プランをお持ちで、Advanced eDiscovery を試す場合は、既存のサブスクリプションに Microsoft 365 を追加するか、Microsoft [365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) E5 の試用版にサインアップできます。 [](https://www.microsoft.com/microsoft-365/enterprise)
-
-- **ユーザーごとのライセンス:** Advance 電子情報開示ケースでユーザーを保管担当者として追加するには、組織のサブスクリプションに応じて、そのユーザーに次のいずれかのライセンスを割り当てる必要があります。
-
-  - Microsoft 365: ユーザーには、Microsoft 365 E5 ライセンス、E5 コンプライアンス アドオン ライセンス、または E5 電子情報開示および監査アドオン ライセンスが割り当てられている必要があります。
-
-  - Office 365: ユーザーには、365 E5 ライセンスOffice割り当てる必要があります。
-
-   ライセンスを割り当てる方法については、「ユーザーにライセンスを割り当 [てる」を参照してください](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
-
-> [!NOTE]
-> ユーザーは、高度な電子情報開示ケースに保管担当者として追加する E5 ライセンス (または適切なアドオン ライセンス) のみを必要とします。 高度な電子情報開示を使用してケースを管理し、ケース データを確認する IT 管理者、電子情報開示管理者、弁護士、パラリーガル、または調査者は、E5 またはアドオン ライセンスを必要とします。
+Advanced eDiscovery のライセンスには、適切な組織のサブスクリプションとユーザーごとのライセンスが必要です。 Advanced eDiscovery のライセンス要件の一覧については、「サブスクリプションとライセンス」 [を参照してください](overview-ediscovery-20.md#subscriptions-and-licensing)。
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>手順 2: 電子情報開示のアクセス許可を割り当てる
 
@@ -62,7 +46,7 @@ Advanced eDiscovery のライセンスには、適切な組織のサブスクリ
 
 電子情報開示マネージャーの役割グループにユーザーを追加するには、次の手順を実行します。
 
-1. Microsoft 365 組織の管理者アカウントの資格情報を使用して、 [https://protection.office.com/permissions](https://protection.office.com/permissions) アクセスしてサインインします。
+1. Microsoft 365 組織の管理者アカウントの資格情報を使用して、 <https://protection.office.com/permissions> アクセスしてサインインします。
 
 2. [アクセス許可 **] ページで** 、電子情報開示マネージャー **の役割グループを** 選択します。
 
@@ -80,9 +64,9 @@ Advanced eDiscovery のライセンスには、適切な組織のサブスクリ
 
 電子情報開示マネージャーの役割グループには、2 つのサブグループがあります。 これらのサブグループの違いは、スコープに基づきます。
 
-- **電子情報開示マネージャー:** 作成した高度な電子情報開示ケースまたはメンバーである高度な電子情報開示ケースを表示および管理できます。 別の電子情報開示マネージャーがケースを作成しても、そのケースのメンバーとして 2 番目の電子情報開示マネージャーを追加しない場合、2 番目の電子情報開示マネージャーは、コンプライアンス センターの [高度な電子情報開示] ページでケースを表示または開くことができません。 一般に、組織内のほとんどのユーザーは、電子情報開示マネージャー サブグループに追加できます。
+- **電子情報開示マネージャー**: 作成またはメンバーである高度な電子情報開示ケースを表示および管理できます。 別の電子情報開示マネージャーがケースを作成しても、そのケースのメンバーとして 2 番目の電子情報開示マネージャーを追加しない場合、2 番目の電子情報開示マネージャーは、コンプライアンス センターの [高度な電子情報開示] ページでケースを表示または開くことができません。 一般に、組織内のほとんどのユーザーは、電子情報開示マネージャー サブグループに追加できます。
 
-- **電子情報開示管理者:** 電子情報開示マネージャーが実行できるすべてのケース管理タスクを実行できます。 さらに、電子情報開示管理者は、次のことができます。
+- **電子情報開示管理者**: 電子情報開示マネージャーが実行できるすべてのケース管理タスクを実行できます。 さらに、電子情報開示管理者は、次のことができます。
 
   - [Advanced eDiscovery] ページにリストされたすべてのケースを表示します。
   

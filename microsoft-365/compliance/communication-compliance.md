@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 774f03ebbf12a8bfbf4e2409735352b83e6963aa
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a5eab2aaecd3d0c339fdc2e58af17dcfd9feb199
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421544"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919883"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Microsoft 365 での通信コンプライアンスの詳細
 
@@ -38,6 +38,13 @@ Microsoft 365 の通信コンプライアンス ポリシーは、コンプラ�
 - 規制の施行と罰金のリスク
 
 さらに、IT 管理者とコンプライアンス管理チームの間で職務が分離される場合があります。 通信コンプライアンスは、ポリシーの構成とメッセージの調査とレビューの分離をサポートします。 たとえば、組織の IT グループは、コミュニケーション コンプライアンスの役割のアクセス許可、グループ、ポリシーを設定する責任を負い、調査者とレビュー担当者は、メッセージのトリアージ、レビュー、軽減の各アクションを担当する場合があります。
+
+通信コンプライアンスに関する最新の Ignite プレゼンテーションについては、次のビデオを参照してください。
+
+- [コミュニケーションコンプライアンスによる安全と包摂の文化を育む](https://www.youtube.com/watch?v=oLVzxcaef3w)
+- [組織内の通信リスクを軽減する方法について学習する](https://www.youtube.com/watch?v=vzARb1YaxGo)
+- [通信コンプライアンスで規制コンプライアンス要件を満たす](https://www.youtube.com/watch?v=gagOhtCBfgU)
+- [Microsoft Teams の優れた機能 - コミュニケーション コンプライアンスにおける最新のネイティブ Teams 統合機能の詳細](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 コミュニケーション コンプライアンスの概要については、「Microsoft Mechanics チャネルの [Microsoft 365](https://youtu.be/z33ji7a7Zho) ビデオで職場の嫌がらせを検出し、コミュニケーション コンプライアンスに対応する」 [を参照してください](https://www.youtube.com/user/OfficeGarageSeries)。
 

@@ -1,5 +1,5 @@
 ---
-title: 脅威分析による新たな脅威の追跡と対応
+title: 脅威の分析を使用して、新たな脅威を追跡し対応する
 ms.reviewer: ''
 description: 新たな脅威と攻撃の手法と、それらを停止する方法について説明します。 組織への影響を評価し、組織の回復力を評価します。
 keywords: 脅威分析、リスク評価、Microsoft 365 Defender、M365D、軽減状態、セキュリティで保護された構成、Microsoft Defender for Office 365、Microsoft Defender for Office 365 脅威分析、MDO 脅威分析、統合 MDE および MDO 脅威分析データ、脅威分析データ統合、統合 Microsoft 365 Defender 脅威分析
@@ -21,21 +21,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e27659517f8c7b5cbc7936b825ac867a2888e251
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 288be30aa9592ba7feed92b9ad49955406f59f10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727200"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918800"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>脅威分析による新たな脅威の追跡と対応 
+# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>脅威の分析を使用して、新たな脅威を追跡し対応する 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-> Microsoft 365 Defender を体験してみませんか? ラボ環境 [で評価したり、パイロット](https://aka.ms/mtp-trial-lab) プロジェクトを実 [稼働環境で実行することができます](https://aka.ms/m365d-pilotplaybook)。
+> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](./mtp-pilot.md?ocid=cx-evalpilot)こともできます。
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -155,7 +155,7 @@ _脅威分析レポートの [メールの試行の防止] セクション_
   - 望ましくない可能性のあるアプリケーション (PUA) 保護
   - リアルタイム保護
  
-このセクションの軽減情報には、脅威と[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)脆弱性管理のデータが組み込まれており、レポート内のさまざまなリンクからの詳細なドリルダウン情報も提供します。
+このセクションの軽減情報には、脅威と[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)脆弱性管理のデータが組み込まれており、レポート内のさまざまなリンクからの詳細なドリルダウン情報も提供します。
 
 ![セキュリティで保護された構成の詳細を示す脅威分析レポートの軽減セクションの画像 脆弱性の詳細を示す脅威分析レポートの軽減セクション ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ の画像](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -181,4 +181,4 @@ _脅威分析レポートの [軽減策] セクション_
 ## <a name="related-topics"></a>関連項目
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md) 
 - [[アナリスト レポート] セクションについて](threat-analytics-analyst-reports.md)
-- [セキュリティの弱点と露出を評価して解決する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [セキュリティの弱点と露出を評価して解決する](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

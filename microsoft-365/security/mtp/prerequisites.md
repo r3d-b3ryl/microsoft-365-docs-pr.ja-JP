@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: afa5cd42545eddafb1d0ec1a6d88eb0903e07820
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0184b2c05121e1ea3bf365263df880548f1b9232
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454553"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918872"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender の前提条件
 
@@ -52,13 +52,13 @@ ms.locfileid: "50454553"
 
 詳細については [、Microsoft 365 Enterprise サービス プランを参照してください](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
 
-> まだライセンスがありませんか? [Microsoft 365 サブスクリプションを試用する/購入する](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+> まだライセンスがありませんか? [Microsoft 365 サブスクリプションを試用する/購入する](../../commerce/try-or-buy-microsoft-365.md?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>既存のライセンスを確認する
 既存のライセンスを表示するには、Microsoft 365 管理センター[(admin.microsoft.com](https://admin.microsoft.com/)) に移動します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。
 
 >[!NOTE]
-> ライセンス情報を表示するには[、Azure](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)サーバーで課金管理者またはグローバル リーダー AD割り当てる必要があります。  アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
+> ライセンス情報を表示するには[、Azure](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)サーバーで課金管理者またはグローバル リーダー AD割り当てる必要があります。  アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 Microsoft 365 Defenderを有効 **にするには**、Azure Active Directory のグローバル管理者またはセキュリティ管理者である必要があります。 Microsoft 365 Defender の使用に必要な役割の一覧と、データへのアクセスが規制される方法に関する情報については [、「Microsoft 365 Defender](mtp-permissions.md)へのアクセスの管理」を参照してください。

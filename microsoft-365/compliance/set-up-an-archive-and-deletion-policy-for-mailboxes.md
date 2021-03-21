@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: ユーザーのアーカイブ メールボックスにアイテムを自動的に移動するアーカイブおよび削除ポリシーを Microsoft 365 で作成する方法について説明します。
-ms.openlocfilehash: cfe14b0821230831517e78ca6a56175a94d81eec
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597145"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919533"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 
@@ -54,7 +54,7 @@ Microsoft 365 では、管理者は、ユーザーのアーカイブ メール�
 
 - 新しいユーザー アカウントを作成し、ユーザーに Exchange Online ライセンスを割り当てると、ユーザーのメールボックスが自動的に作成されます。 メールボックスが作成されると、既定のアイテム保持ポリシー (Default MRM Policy) が自動的に割り当てられます。 この記事では、新しいアイテム保持ポリシーを作成し、ユーザー メールボックスに割り当て、既定の MRM ポリシーを置き換える。 メールボックスには、一度に 1 つのアイテム保持ポリシーのみを割り当てることができます。
 
-- Exchange Online の保持タグと保持ポリシーの詳細については、「保持タグと保持ポリシー [」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=404424)。
+- Exchange Online の保持タグと保持ポリシーの詳細については、「保持タグと保持ポリシー [」を参照してください](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)。
 
 ## <a name="step-1-enable-archive-mailboxes-for-users"></a>手順 1: ユーザーのアーカイブ メールボックスを有効にする
 
@@ -238,7 +238,7 @@ Microsoft 365 では、管理者は、ユーザーのアーカイブ メール�
   
 Exchange Online PowerShell に接続し、組織内のすべてのメールボックスで管理フォルダー アシスタントを実行する手順を次に示します。
 
-1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/p/?LinkId=517283)。
+1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
   
 2. 次の 2 つのコマンドを実行して、組織内のすべてのユーザー メールボックスの管理フォルダー アシスタントを開始します。
 
@@ -259,7 +259,7 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
 
 手順 4 では、新しい保持ポリシーを既存のメールボックスに割り当てる必要があります。 ただし、新しいアイテム保持ポリシーが将来作成される新しいメールボックスに割り当てできるよう、Exchange Online を構成できます。 これを行うには、Exchange Online PowerShell を使用して組織の既定のメールボックス プランを更新します。 メールボックス *プランは、* 新しいメールボックスのプロパティを自動的に構成するテンプレートです。  このオプションの手順では、メールボックス プランに割り当てられている現在のアイテム保持ポリシー (既定では、既定の MRM ポリシー) を、手順 3 で作成したアイテム保持ポリシーに置き換えてください。 メールボックス プランを更新すると、新しいアイテム保持ポリシーが新しいメールボックスに割り当てられます。
 
-1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/p/?LinkId=517283)。
+1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 次のコマンドを実行して、組織内のメールボックス プランに関する情報を表示します。
 
@@ -277,13 +277,13 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
 
 4. 手順 2 のコマンドを再実行して、既定のメールボックス プランに割り当てられているアイテム保持ポリシーが変更されたと確認できます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - 保持期間の計算方法 メールボックス アイテムの保持期間は、送信されていないがユーザーが作成する下書きメッセージなどのアイテムの配信日または作成日から計算されます。 管理フォルダー アシスタントがメールボックス内のアイテムを処理する際、 [削除して回復を許可する] または [完全に削除する] の保存期間用アクション付き保持タグの付いたすべてのアイテムに開始日と有効期限をスタンプします。 アーカイブ タグを持つアイテムには、移動日がスタンプされます。 
 
 - 次の表は、このトピックの手順に従って作成されたカスタム保持ポリシーに追加される各保持タグの詳細を示しています。
 
-    | 保持タグ | このタグの動作 | 組み込みかカスタムか。 | 型 |
+    | 保持タグ | このタグの動作 | 組み込みかカスタムか。 | 種類 |
     |:-----|:-----|:-----|:-----|
     |アルパイン ハウス 3 年アーカイブへの移行  <br/> |1095 日 (3 歳) のアイテムをアーカイブ メールボックスに移動します。  <br/> |カスタム (「手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを[作成する」を参照)](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)  <br/> |既定のポリシー タグ (アーカイブ)。このタグはメールボックス全体に自動的に適用されます。  <br/> |
     |アルパイン ハウス 7 年の完全削除  <br/> |プライマリ メールボックスまたはアーカイブ メールボックス内のアイテムが 7 歳のときに完全に削除されます。  <br/> |カスタム (「手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを[作成する」を参照)](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)  <br/> |既定のポリシー タグ (削除)。このタグはメールボックス全体に自動的に適用されます。  <br/> |
@@ -297,4 +297,4 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
 
     > <sup>\*</sup> ユーザーは、Outlook および Outlook on the web (以前は Outlook Web App) の [削除済みアイテムの回復] ツールを使用して、削除済みアイテムの保持期間中に削除済みアイテムを回復できます 。既定では Exchange Online では 14 日間です。 管理者は、Windows PowerShellを使用して、削除済みアイテムの保持期間を最大 30 日間に増やします。 詳細については[、「Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)で削除済みアイテムを回復する」および「Exchange Online でメールボックスの削除済みアイテム保持期間を変更する」[を参照してください](https://www.microsoft.com/?ref=go)。
   
-- [回復可能 **なアイテム] 14** 日間 [アーカイブに移動] 保持タグを使用すると、ユーザーのプライマリ メールボックスの [回復可能なアイテム] フォルダーの記憶域を解放できます。 これは、ユーザーのメールボックスを保留にした場合に便利です。つまり、ユーザーのメールボックスは完全に削除されません。 アイテムをアーカイブ メールボックスに移動せずに、プライマリ メールボックスの回復可能なアイテム フォルダーの記憶域クォータに達する可能性があります。 この方法と回避方法の詳細については、「保留メールボックスの回復可能なアイテムのクォータを増 [やす」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=786479)。
+- [回復可能 **なアイテム] 14** 日間 [アーカイブに移動] 保持タグを使用すると、ユーザーのプライマリ メールボックスの [回復可能なアイテム] フォルダーの記憶域を解放できます。 これは、ユーザーのメールボックスを保留にした場合に便利です。つまり、ユーザーのメールボックスは完全に削除されません。 アイテムをアーカイブ メールボックスに移動せずに、プライマリ メールボックスの回復可能なアイテム フォルダーの記憶域クォータに達する可能性があります。 この方法と回避方法の詳細については、「保留メールボックスの回復可能なアイテムのクォータを増 [やす」を参照してください](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)。

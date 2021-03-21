@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: パートナー組織がチャネルを使用してどのように展開および更新するか。
-ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a91ee948ca2051ceccb3883b2dd0198c1070bc03
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686156"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919064"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>展開および更新プログラム チャネルの構成例
 
@@ -41,9 +41,9 @@ Windows 10 および Microsoft 365 Apps で使用する更新チャネルの選�
 
 | 顧客/チャネルオファリング | Windows 10 | Microsoft 365 Apps for Enterprise（Windows 10） | 例 |
 |:-------|:-------|:-----|:-------|
-| 準備ができ次第、最新のリリースを希望するお客様を対象としています。 | 半期チャネル | [最新機能提供チャネル](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [最新リリース](deploy-update-channels-examples-rapid-deploy.md) |
-| 予測可能性を追加で備えた最新のリリースが必要な企業を対象としています。 | 半期チャネル | [月次エンタープライズ チャネル](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
-| 各アップデートの前に広範なITテストが必要な企業を対象としています。 | 半期チャネル | [半期エンタープライズ チャネル](https://docs.microsoft.com/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
+| 準備ができ次第、最新のリリースを希望するお客様を対象としています。 | 半期チャネル | [最新機能提供チャネル](/deployoffice/overview-update-channels#current-channel-overview) | [最新リリース](deploy-update-channels-examples-rapid-deploy.md) |
+| 予測可能性を追加で備えた最新のリリースが必要な企業を対象としています。 | 半期チャネル | [月次エンタープライズ チャネル](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
+| 各アップデートの前に広範なITテストが必要な企業を対象としています。 | 半期チャネル | [半期エンタープライズ チャネル](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
 |||||
 
 

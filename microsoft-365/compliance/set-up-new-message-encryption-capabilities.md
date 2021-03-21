@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の内外のユーザーと保護されたメールでのコミュニケーションを可能にする新しい Office 365 Message Encryption 機能についてご確認ください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4102611d3be43a5bedffc83fba5c83c0b648ca42
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547619"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919393"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>新しい Message Encryption 機能を設定する
 
@@ -33,14 +33,14 @@ ms.locfileid: "47547619"
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>Azure Rights Management が有効であることを確認する
 
-新しい OME 機能は、[Azure Rights Management Services (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) の保護機能を活用します。Azure RMS は、[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) が暗号化とアクセス制御を介して電子メールとドキュメントを保護するために使用するテクノロジーです。
+新しい OME 機能は、[Azure Rights Management Services (Azure RMS)](/azure/information-protection/what-is-information-protection) の保護機能を活用します。Azure RMS は、[Azure Information Protection](/azure/information-protection/what-is-azure-rms) が暗号化とアクセス制御を介して電子メールとドキュメントを保護するために使用するテクノロジーです。
 
-新しい OME 機能を使用するための唯一の前提条件は、組織のテナントで [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) を有効化する必要があることです。 その場合、Microsoft 365 は新しい OME 機能を自動的に有効化するため、何もする必要はありません。
+新しい OME 機能を使用するための唯一の前提条件は、組織のテナントで [Azure Rights Management](/azure/information-protection/what-is-azure-rms) を有効化する必要があることです。 その場合、Microsoft 365 は新しい OME 機能を自動的に有効化するため、何もする必要はありません。
 
-また、Azure RMS はほとんどの対象となるプランで自動的に有効化されるため、おそらく何もする必要はありません。 詳細については、「[Azure Rights Management を有効化する](https://docs.microsoft.com/azure/information-protection/activate-service)」を参照してください。
+また、Azure RMS はほとんどの対象となるプランで自動的に有効化されるため、おそらく何もする必要はありません。 詳細については、「[Azure Rights Management を有効化する](/azure/information-protection/activate-service)」を参照してください。
 
 >[!IMPORTANT]
->Exchange Online で Active Directory Rights Management サービス (AD RMS) を使用する場合、新しい OME 機能を使用する前に [Azure Information Protection に移行する](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)必要があります。 OME は、AD RMS と互換性がありません。  
+>Exchange Online で Active Directory Rights Management サービス (AD RMS) を使用する場合、新しい OME 機能を使用する前に [Azure Information Protection に移行する](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)必要があります。 OME は、AD RMS と互換性がありません。  
 
 詳しくは、次のトピックを参照してください。
 
@@ -51,20 +51,20 @@ ms.locfileid: "47547619"
 
 Azure RMS を無効にした場合、または何らかの理由で自動的に有効化されなかった場合は、次のように手動で有効化できます:
 
-- **Microsoft 365 管理センター**: 手順については、「[管理センターから Azure Rights Management を有効化する方法](https://docs.microsoft.com/azure/information-protection/activate-office365)」を参照してください。
-- **Azure Portal**: 手順については、「[Azure Portal から Azure Rights Management を有効化する方法](https://docs.microsoft.com/azure/information-protection/activate-azure)」を参照してください。
+- **Microsoft 365 管理センター**: 手順については、「[管理センターから Azure Rights Management を有効化する方法](/azure/information-protection/activate-office365)」を参照してください。
+- **Azure Portal**: 手順については、「[Azure Portal から Azure Rights Management を有効化する方法](/azure/information-protection/activate-azure)」を参照してください。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Azure Information Protection テナント キーの管理を構成する
 
 この手順は省略可能です。 Microsoft が Azure Information Protection のルート キーを管理できるようにすることが既定であり、ほとんどの組織に推奨されるベスト プラクティスです。 このような場合は、何もする必要はありません。
 
-コンプライアンス要件など、多くの理由により、独自のルート キー (Bring Your Own Key (BYOK) とも呼ばれる)の生成と管理が必要になる場合があります。 この場合、新しい OME 機能をセットアップする前に、必要な手順を完了することをお勧めします。 詳細については、「[Azure Information Protection テナント キーを計画して実装する](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。
+コンプライアンス要件など、多くの理由により、独自のルート キー (Bring Your Own Key (BYOK) とも呼ばれる)の生成と管理が必要になる場合があります。 この場合、新しい OME 機能をセットアップする前に、必要な手順を完了することをお勧めします。 詳細については、「[Azure Information Protection テナント キーを計画して実装する](/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Exchange Online PowerShell で新しい OME 構成を確認する
 
-[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) の新しい OME 機能を使用するように Microsoft 365 テナントが適切に構成されていることを確認できます。
+[Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) の新しい OME 機能を使用するように Microsoft 365 テナントが適切に構成されていることを確認できます。
   
-1. Microsoft 365 テナントのグローバル管理者権限を持つアカウントを使用して、[Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)します。
+1. Microsoft 365 テナントのグローバル管理者権限を持つアカウントを使用して、[Exchange Online PowerShell に接続](/powershell/exchange/connect-to-exchange-online-powershell)します。
 
 2. Get-IRMConfiguration コマンドレットを実行します。
 
@@ -102,7 +102,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
 
    - *Contoso* は組織名に置き換えられます。
 
-   - 既定のテンプレート名は、上に表示されているものとは異なる場合があります。 詳細については、「[Azure Information Protection のテンプレートを構成して管理する](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)」を参照してください。
+   - 既定のテンプレート名は、上に表示されているものとは異なる場合があります。 詳細については、「[Azure Information Protection のテンプレートを構成して管理する](/azure/information-protection/configure-policy-templates)」を参照してください。
 
 4. Rights Management サービスから切断するには、Remove-PSSession コマンドレットを実行します。
 

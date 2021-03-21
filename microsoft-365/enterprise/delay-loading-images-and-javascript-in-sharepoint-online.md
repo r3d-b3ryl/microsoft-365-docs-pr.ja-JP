@@ -20,33 +20,33 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: JavaScript を使用して、画像および重要でない JavaScript の読み込みを遅延させることで、SharePoint Online ページの読み込み時間を短縮する方法について説明します。
-ms.openlocfilehash: ee86ae0813c11fbfd836d7d38ea124c1e3f277d0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: JavaScript を使用してイメージの読み込みと非必須 JavaScript の読み込みを遅らせ、SharePoint Online ページの読み込み時間を削減する方法について説明します。
+ms.openlocfilehash: 86b93c4e1e102132bb0c1bfb9a413233529adecb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691991"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919166"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 
-この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
+この記事では、JavaScript を使用してイメージの読み込みを遅延し、ページの読み込み後まで重要でない JavaScript の読み込みを待機することで、SharePoint Online ページの読み込み時間を削減する方法について説明します。
   
-SharePoint Online では、画像がページの読み込み速度に悪影響を及ぼす可能性があります。 既定では、ほとんどのモダンインターネットブラウザーは、HTML ページの読み込み時に画像を事前に取得します。 このため、ユーザーが下にスクロールするまで画像が画面に表示されない場合は、ページが不必要に読み込まれることがあります。 画像は、ページの可視部分を読み込むことをブラウザーにブロックできます。 この問題を回避するには、まず、JavaScript を使用して画像の読み込みをスキップします。 また、必須ではない JavaScript を読み込むと、SharePoint ページでダウンロード時間が長くなる可能性があります。 このトピックでは、SharePoint Online の JavaScript を使用してページの読み込み時間を向上させる方法について説明します。
+イメージは、SharePoint Online のページ読み込み速度に悪影響を及ぼす可能性があります。 既定では、HTML ページの読み込み時に最新のほとんどのインターネット ブラウザーが画像をプリフェッチします。 これにより、ユーザーが下にスクロールするまで画像が画面に表示されない場合、ページの読み込み速度が不必要に遅くなる可能性があります。 画像は、ブラウザーがページの表示部分を読み込むのをブロックできます。 この問題を回避するには、JavaScript を使用して、最初にイメージの読み込みをスキップできます。 また、重要でない JavaScript を読み込むと、SharePoint ページのダウンロード時間も遅くなる可能性があります。 このトピックでは、SharePoint Online の JavaScript でページの読み込み時間を短縮するために使用できるいくつかの方法について説明します。
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript を使用して SharePoint Online ページで画像の読み込みを遅延することで、ページの読み込み時間を短縮する
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript を使用して SharePoint Online ページでのイメージの読み込みを遅らせ、ページの読み込み時間を短縮する
 
-JavaScript を使用して、web ブラウザーが画像を事前に取得できないようにすることができます。 これにより、ドキュメント全体のレンダリングが高速化されます。 これを行うには、タグから src 属性の値を削除し、次のよう \<img\> な data 属性のファイルへのパスに置き換えます。 以下に例を示します。
+JavaScript を使用すると、Web ブラウザーによる画像の事前フェッチを防止できます。 これにより、ドキュメントの全体的なレンダリングが高速化されます。 これを行うには、タグから src 属性の値を削除し、それを data-src などのデータ属性内のファイルへのパスに \<img\> 置き換える必要があります。 次に例を示します。
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
-この方法を使用すると、ブラウザーはすぐに画像をダウンロードしません。 イメージがビューポートに既に含まれている場合、JavaScript はブラウザーに、データ属性から URL を取得して src 属性の値として挿入するよう指示します。 画像は、ユーザーがスクロールして表示されるときにのみ読み込まれます。
+このメソッドを使用すると、ブラウザーはイメージをすぐにダウンロードされません。 イメージが既にビューポート内にある場合、JavaScript はブラウザーに対して、データ属性から URL を取得し、src 属性の値として挿入します。 画像は、ユーザーがスクロールして表示される場合にのみ読み込まれます。
   
-すべての操作を行うには、JavaScript を使用する必要があります。
+これをすべて実行するには、JavaScript を使用する必要があります。
   
-テキストファイルで、 **Iselementinviewport ()** 関数を定義し、要素がブラウザーのユーザーに表示される部分にあるかどうかを確認します。
+テキスト ファイルで **isElementInViewport()** 関数を定義して、ユーザーに表示されるブラウザーの一部に要素が含されているかどうかを確認します。
   
 ```javascript
 function isElementInViewport(el) {
@@ -62,7 +62,7 @@ function isElementInViewport(el) {
 }
 ```
 
-次に、 **loadItemsInView ()** 関数で**Iselementinviewport ()** を使用します。 **LoadItemsInView ()** 関数は、データソース属性の値がユーザーに表示されるブラウザーの部分にある場合、その値を持つすべての画像を読み込みます。 テキストファイルに次の関数を追加します。
+次に **、loadItemsInView()** 関数で **isElementInViewport() を使用** します。 **loadItemsInView()** 関数は、ユーザーに表示されるブラウザーの一部にある場合、data-src 属性の値を持つすべてのイメージを読み込むようになります。 テキスト ファイルに次の関数を追加します。
   
 ```javascript
 function loadItemsInView() {
@@ -78,7 +78,7 @@ function loadItemsInView() {
 }
 ```
 
-最後に、次の例に示されているように、 **loadItemsInView ()** をウィンドウから呼び出し**ます。** これにより、ユーザーが必要とするときに、ビューポートに含まれるすべてのイメージが読み込まれるようになります。 次の内容をテキストファイルに追加します。
+最後に、次の例に示すように **、window.onscroll()** 内から **loadItemsInView()** を呼び出します。 これにより、ユーザーが必要とするとビューポート内のすべてのイメージが読み込まれますが、以前は読み込まれません。 テキスト ファイルに次の項目を追加します。
   
 ```javascript
 //Example of calling loadItemsInView() from within window.onscroll()
@@ -88,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-SharePoint Online では、#s4 workspace タグの scroll イベントに次の関数を関連付ける必要があり \<div\> ます。 これは、リボンがページの上部に常に接続されていることを確認するために、ウィンドウイベントがオーバーライドされるためです。
+SharePoint Online では、次の関数をワークスペース タグのスクロール イベントに#s4する必要 \<div\> があります。 これは、リボンがページの上部に接続されたままに維持するために、ウィンドウ イベントが上書きされるためです。
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -97,34 +97,34 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-テキストファイルを拡張子 .js の JavaScript ファイルとして保存します (例: delayLoadImages.js)。
+テキスト ファイルを拡張子 .js を持つ JavaScript ファイルとして保存します (たとえば、delayLoadImages.js。
   
-delayLoadImages.js の記述が終了したら、ファイルの内容を SharePoint Online のマスターページに追加できます。 これを行うには、マスターページのヘッダーにスクリプトリンクを追加します。 マスターページでは、そのマスターページレイアウトを使用する SharePoint Online サイトのすべてのページに JavaScript が適用されます。 または、サイトの1つのページでのみこれを使用する場合は、スクリプトエディター Web パーツを使用して JavaScript をページに埋め込みます。 詳細については、以下のトピックを参照してください。
+ファイルの作成がdelayLoadImages.jsしたら、SharePoint Online のマスター ページにファイルの内容を追加できます。 これを行うには、マスター ページのヘッダーにスクリプト リンクを追加します。 マスター ページが作成されると、そのマスター ページ レイアウトを使用する SharePoint Online サイトのすべてのページに JavaScript が適用されます。 または、サイトの 1 ページでのみこれを使用する場合は、スクリプト エディター Web パーツを使用して JavaScript をページに埋め込む必要があります。 詳細については、次のトピックを参照してください。
   
-- [[方法]: SharePoint Server 2013 のサイトにマスター ページを適用する](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [[方法]: SharePoint Server 2013 のサイトにマスター ページを適用する](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
-- [[方法]: SharePoint 2013 でページ レイアウトを作成する方法](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+- [[方法]: SharePoint 2013 でページ レイアウトを作成する方法](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>例: SharePoint Online のマスターページから JavaScript delayLoadImages.js ファイルを参照する
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>例: SharePoint Online delayLoadImages.jsページから JavaScript ファイルを参照する
   
-これを動作させるには、マスターページで jQuery を参照する必要もあります。 次の例では、最初のページの読み込みで、読み込まれたイメージは1つだけですが、ページ上にはさらにいくつかのページがあることがわかります。
+これを機能するには、マスター ページで jQuery も参照する必要があります。 次の例では、最初のページの読み込みで、読み込まれるイメージは 1 つのみですが、ページにはさらに複数のイメージが読み込まれているのを確認できます。
   
 ![ページ上に読み込まれる 1 つのイメージが表示されたスクリーンショット](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-次のスクリーンショットは、スクロール後にダウンロードされた残りの画像を示しています。
+次のスクリーンショットは、スクロールして表示した後にダウンロードされる残りのイメージを示しています。
   
 ![ページ上に読み込まれる複数のイメージが表示されたスクリーンショット](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-JavaScript を使用して画像の読み込みを延期することは、パフォーマンスを向上させる効果的な手法になる可能性があります。ただし、この手法がパブリック web サイトに適用されている場合、検索エンジンは、通常の形式の画像をクロールするのと同じ方法で画像をクロールすることはできません。 これは、ページが読み込まれるまで画像自体のメタデータが実際には存在しないため、検索エンジンのランキングに影響する可能性があります。 検索エンジンのクローラーは HTML のみを読み取るため、画像はページ上のコンテンツとして表示されません。 画像は、検索結果内のページのランク付けに使用する要因の1つです。 これを回避する方法の1つは、画像の導入テキストを使用することです。
+JavaScript を使用してイメージの読み込みを遅延させるのは、パフォーマンスを向上させる効果的な手法です。ただし、この手法がパブリック Web サイトに適用されている場合、検索エンジンは、定期的に形成されたイメージをクロールするのと同じ方法でイメージをクロールできます。 これは、ページが読み込まれるまで画像自体のメタデータが実際にはそこにないので、検索エンジンのランク付けに影響を与える可能性があります。 検索エンジン のクローラは HTML のみを読み取り、ページに画像をコンテンツとして表示しない。 画像は、検索結果のページのランク付けに使用される要素の 1 つです。 これを回避する 1 つの方法は、画像に入門テキストを使用する方法です。
   
-## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub コードサンプル: JavaScript を挿入してパフォーマンスを向上させる
+## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub コード サンプル: JavaScript を挿入してパフォーマンスを向上させる
 
-GitHub で提供されている [JavaScript インジェクション](https://go.microsoft.com/fwlink/p/?LinkId=524759) に関する記事やコードサンプルを見逃さないようにしてください。
+GitHub で提供される [JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) インジェクションに関する記事とコード サンプルをお見逃しなく。
   
 ## <a name="see-also"></a>関連項目
 
-[Office 2013 でサポートされているブラウザーおよびエンタープライズ向け Microsoft 365 アプリ](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[エンタープライズ向け Office 2013 Microsoft 365 Apps でサポートされるブラウザー](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[[方法]: SharePoint Server 2013 のサイトにマスター ページを適用する](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[[方法]: SharePoint Server 2013 のサイトにマスター ページを適用する](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
   
-[[方法]: SharePoint 2013 でページ レイアウトを作成する方法](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+[[方法]: SharePoint 2013 でページ レイアウトを作成する方法](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)

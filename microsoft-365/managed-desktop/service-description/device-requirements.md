@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 90dee316ee5bdc99b6a2386260a3be38728e7282
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 18422f74d87bbadf014de24849235ce5c25bd614
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453719"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920470"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 
@@ -70,7 +70,7 @@ Microsoft Managed Desktop に登録するには、デバイスがこれらの要
 - ブート ドライブの容量は 128 GB 以上である必要があります。
 - 内部デバイス メモリ (RAM) は 8 GB 以上である必要があります。
 
-デバイスが 2020 年 7 月 1 日以降に作成された場合は [、Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)をサポートするために、IR カメラ、指紋リーダー、または両方が必要です。
+デバイスが 2020 年 7 月 1 日以降に作成された場合は [、Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)をサポートするために、IR カメラ、指紋リーダー、または両方が必要です。
 
 ## <a name="recommended-requirements"></a>推奨される要件
 

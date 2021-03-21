@@ -13,36 +13,36 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c45a2733c1fa7cf6d05cff747a9cfcdba1b124cc
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126164"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919733"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>情報バリア ポリシーの属性
 
-Azure Active Directory の特定の属性を使用して、ユーザーをセグメント化できます。 セグメントを定義すると、それらのセグメントを情報バリア ポリシーのフィルターとして使用できます。 たとえば、部門を使用して、組織内の部署別にユーザーのセグメントを定義できます (同時に 2 つの部署に 1 人の従業員が働かされていないと仮定します)。
+Azure Active Directory の特定の属性を使用して、ユーザーをセグメント化できます。 セグメントを定義すると、これらのセグメントを情報バリア ポリシーのフィルターとして使用できます。 たとえば、部門を使用して組織内の部署別にユーザーのセグメントを定義できます (2 つの部門で同時に 1 人の従業員が働かされていないと仮定します)。
 
-この記事では、情報バリアで属性を使用する方法について説明し、使用できる属性の一覧を示します。 情報バリアの詳細については、次のリソースを参照してください。
+この記事では、情報バリアで属性を使用する方法について説明し、使用できる属性の一覧を提供します。 情報バリアの詳細については、次のリソースを参照してください。
 
 - [情報障壁](information-barriers.md)
-- [Microsoft Teams での情報障壁のポリシーの定義](information-barriers-policies.md)
+- [Microsoft Teams で情報バリアのポリシーを定義する](information-barriers-policies.md)
 - [情報バリア ポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>情報バリア ポリシーで属性を使用する方法
 
-この記事に記載されている属性を使用して、ユーザーのセグメントを定義または編集できます。 定義されたセグメントは、情報バリア ポリシーのパラメーター *(UserGroupFilter* 値と呼ばれる) [として機能します](information-barriers-policies.md)。
+この記事に記載されている属性は、ユーザーのセグメントを定義または編集するために使用できます。 定義されたセグメントは、情報バリア ポリシーのパラメーター *(UserGroupFilter* 値と呼ばれる) [として機能します](information-barriers-policies.md)。
 
 1. セグメントの定義に使用する属性を決定します。 (この記事 [の「リファレンス](#reference) 」セクションを参照してください)。
 
 2. 手順 1 で選択した属性の値がユーザー アカウントに入力されている必要があります。 ユーザー アカウントの詳細を表示し、必要に応じてユーザー アカウントを編集して属性値を含めます。 
 
-    - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) には [、「365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)を使用してユーザー アカウントのプロパティOffice構成する」を参照してください。
+    - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) には、「Configure user account properties with [Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)」を参照してください。
 
-    - 単一のアカウントを編集するには [、「Azure Active Directory を](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)使用してユーザーのプロファイル情報を追加または更新する」を参照してください。
+    - 1 つのアカウントを編集するには、「Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する [」を参照してください](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
-3. [PowerShell を使用して、次の](information-barriers-policies.md#define-segments-using-powershell)例のようなセグメントを定義します。
+3. [次の例に似た PowerShell](information-barriers-policies.md#define-segments-using-powershell)を使用してセグメントを定義します。
 
     |**例**|**コマンドレット**|
     |:----------|:---------|
@@ -51,9 +51,9 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
     | ExtensionAttribute1 を使用して DayTraders というセグメントを定義します (この属性に "DayTrader" などのジョブ タイトルが含まれているとします)。 | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > セグメントを定義する場合は、すべてのセグメントに同じ属性を使用します。 たとえば、Department を使用していくつかのセグメントを定義する場合 *は、Department* を使用してすべてのセグメントを定義 *します*。 Department を使用して一部のセグメントを定義し *、MemberOf* を使用する他のセグメント *は定義しない*。 セグメントが重ならないようにします。各ユーザーは、1 つのセグメントに割り当てる必要があります。
+    > セグメントを定義する場合は、すべてのセグメントに同じ属性を使用します。 たとえば、Department を使用して一部のセグメントを定義する場合は *、Department* を使用してすべてのセグメントを *定義します*。 MemberOf を使用して、Department および *他のセグメントを使用* して一部のセグメント *を定義しない*。 セグメントが重ならないようにします。各ユーザーは、1 つのセグメントに割り当てる必要があります。
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>Reference
 
 次の表に、情報バリアで使用できる属性を示します。
 
@@ -96,6 +96,6 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 
 ## <a name="resources"></a>リソース
 
-- [Microsoft Teams で情報障壁のポリシーを定義する](information-barriers-policies.md)
+- [Microsoft Teams で情報バリアのポリシーを定義する](information-barriers-policies.md)
 - [情報バリアのトラブルシューティング](information-barriers-troubleshooting.md)
 - [情報障壁](information-barriers.md)

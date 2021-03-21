@@ -22,16 +22,16 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6cdf7a6b9e75b575abda2c93f7531c45d93a9a51
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838630"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919593"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > Office アプリに表示される秘密度レベルに関する情報をお探しの場合は、「[Office のファイルとメールに秘密度レベルを適用する](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)」をご覧ください。
@@ -49,9 +49,9 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 機密ラベルを適用するには、ユーザーは Microsoft 365の職場または学校のアカウントを使用して、サインインする必要があります。
 
 > [!NOTE]
-> 米国政府機関のテナント向けに、秘密度ラベルが新たにサポートされました (GCC および GCC-H)。 詳細については、Microsoft 365 Apps for enterprise のリリース ノート、[バージョン 2101: 1 月 26 日](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26)を参照してください。
+> 米国政府機関のテナント向けに、秘密度ラベルが新たにサポートされました (GCC および GCC-H)。 詳細については、Microsoft 365 Apps for enterprise のリリース ノート、[バージョン 2101: 1 月 26 日](/officeupdates/current-channel#version-2101-january-26)を参照してください。
 >
-> Azure Information Protection 統合ラベル付けクライアントおよびスキャナーについては、「[Azure Information Protection Premium の米国政府機関向けのサービスの説明](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)」を参照してください。
+> Azure Information Protection 統合ラベル付けクライアントおよびスキャナーについては、「[Azure Information Protection Premium の米国政府機関向けのサービスの説明](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)」を参照してください。
 
 機密ラベルは、次の目的に使用できます。
   
@@ -118,7 +118,7 @@ Microsoft 365 の秘密度ラベルを使用することにより、これらす
     
     ![必要なラベルを割り当てるかを確認するダイアログ](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    機密ラベルを作成または編集するときの **ファイルと電子メールの自動ラベル設定** の詳細については、「[Office アプリのコンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でデータに自動的にラベルを付ける](https://docs.microsoft.com/azure/purview/create-sensitivity-label)」を参照してください。
+    機密ラベルを作成または編集するときの **ファイルと電子メールの自動ラベル設定** の詳細については、「[Office アプリのコンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でデータに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
 
 ### <a name="label-scopes"></a>ラベル スコープ
 
@@ -134,7 +134,7 @@ Microsoft 365 の秘密度ラベルを使用することにより、これらす
 
 - **グループとサイト**: [コンテナーの秘密度ラベルを有効化してラベルを同期する](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Azure Purview assets (プレビュー)**: [Azure Purview のコンテンツに自動的にラベルを付ける](https://go.microsoft.com/fwlink/?linkid=2148989)
+- **Azure Purview assets (プレビュー)**: [Azure Purview のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)
 
 すべての範囲が選択されないように既定値を変更すると、選択していない範囲の構成設定の最初のページが表示されますが、設定を構成することはできません。 たとえば、ファイルとメールのスコープが選択されていない場合、次のページでオプションを選択することはできません。
 
@@ -178,7 +178,7 @@ Microsoft 365 の秘密度ラベルを使用することにより、これらす
 
 ラベル ポリシーを構成すると、次のことができます。
 
-- **ラベルを表示させるユーザーとグループを選択する。** Azure AD の特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([動的メンバーシップ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる) にラベルを発行することができます。
+- **ラベルを表示させるユーザーとグループを選択する。** Azure AD の特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる) にラベルを発行することができます。
 
 - ラベル ポリシーに含まれるユーザーとグループによって作成されたすべての新しいドキュメントとラベルのないメールに **既定のラベルを適用** し、コンテナーに同じまたは異なる既定のラベルを適用します ([Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルを有効にしている場合](sensitivity-labels-teams-groups-sites.md))。 この設定により、Azure Information Protection 統合ラベル付けクライアントでは、ラベルのない既存のドキュメントにも既定のラベルが適用されます。 既定のラベルがドキュメントまたはメールに適切でない場合、ユーザーはいつでも変更できます。
     
@@ -236,7 +236,7 @@ Microsoft 365 の秘密度ラベルを使用することにより、これらす
 > [!NOTE]
 > Azure ポータルでの Azure Information Protection ラベルのラベル管理は、**2021 年 3 月 31 日** に廃止されます。 詳細については、公式の「[廃止のお知らせ](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)」を参照してください。
 
-テナントがまだ[統合ラベル付けプラットフォーム](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上にないことが理由で Azure Information Protection ラベルを使用している場合は、統合ラベル付けを有効にするまでは秘密度ラベルを作成しないことをお勧めします。 このシナリオでは、Azure ポータルに表示されるラベルは、秘密度ラベルではなく、Azure Information Protection のラベルになります。 これらのラベルは、Windows コンピューター上の Azure Information Protection クライアント (クラシック) で使用できますが、macOS、iOS、または Android を実行しているデバイスでは使用できません。 この問題を解決するには、[これらのラベルを秘密度ラベルに移行](/azure/information-protection/configure-policy-migrate-labels)させます。 
+テナントがまだ[統合ラベル付けプラットフォーム](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上にないことが理由で Azure Information Protection ラベルを使用している場合は、統合ラベル付けを有効にするまでは秘密度ラベルを作成しないことをお勧めします。 このシナリオでは、Azure ポータルに表示されるラベルは、秘密度ラベルではなく、Azure Information Protection のラベルになります。 これらのラベルは、Windows コンピューター上の Azure Information Protection クライアント (クラシック) で使用できますが、macOS、iOS、または Android を実行しているデバイスでは使用できません。 この問題を解決するには、[これらのラベルを秘密度ラベルに移行](/azure/information-protection/configure-policy-migrate-labels)させます。 
 
 この 2 つのセットのラベルによって適用されるメタデータ同士には互換性があるため、移行完了後にドキュメントとメールにラベルを付け直す必要はありません。
 
@@ -256,7 +256,7 @@ Office アプリで組み込みのラベル付けを使用する場合でも、A
 
 - オンプレミスのファイル内の機密情報を検出し、これらのファイルからラベルおよび暗号化を適用または削除するための PowerShell モジュール。
 
-Azure Information Protection の初心者、またはラベルを最近移行した Azure Information Protection の既存のお客様である場合は、Azure Information Protection のドキュメントから「[Windows ラベリング ソリューションを選択する](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)」を参照してください。
+Azure Information Protection の初心者、またはラベルを最近移行した Azure Information Protection の既存のお客様である場合は、Azure Information Protection のドキュメントから「[Windows ラベリング ソリューションを選択する](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)」を参照してください。
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>秘密度ラベルと Microsoft Cloud App Security
 
@@ -268,11 +268,11 @@ Cloud App Security は、Azure Information Protection ラベルと秘密度ラ�
 
 - ラベル管理センターに秘密度ラベルが発行されていない場合: Azure Information Protection ラベルが使用されます。
 
-Cloud App Security をこれらのラベルで使用する手順については、「[Azure Information Protection の統合](https://docs.microsoft.com/cloud-app-security/azip-integration)」を参照してください。
+Cloud App Security をこれらのラベルで使用する手順については、「[Azure Information Protection の統合](/cloud-app-security/azip-integration)」を参照してください。
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>秘密度ラベルと Microsoft Information Protection SDK
 
-秘密度ラベルはドキュメントのメタデータにクリア テキストとして保存されるため、サードパーティ製のアプリおよびサービスはこのラベル付けメタデータを読み書きして、ラベル付けの展開を補完できます。 さらに、ソフトウェア開発者は [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) を使用して、複数のプラットフォームにわたってラベル付けおよび暗号化機能を完全にサポートできます。 詳細については、[Tech Community ブログでの一般提供のお知らせ](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144) を参照してください。 
+秘密度ラベルはドキュメントのメタデータにクリア テキストとして保存されるため、サードパーティ製のアプリおよびサービスはこのラベル付けメタデータを読み書きして、ラベル付けの展開を補完できます。 さらに、ソフトウェア開発者は [Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk) を使用して、複数のプラットフォームにわたってラベル付けおよび暗号化機能を完全にサポートできます。 詳細については、[Tech Community ブログでの一般提供のお知らせ](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144) を参照してください。 
 
 [Microsoft Information Protection に統合されているパートナー ソリューション](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)についての説明もご覧いただけます。
 

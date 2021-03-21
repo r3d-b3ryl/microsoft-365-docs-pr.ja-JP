@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの感度ラベルのサポートを有効にできます。
-ms.openlocfilehash: 91322ff3a1dbe2e6b5506e1e3d8a49156b005d7b
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b4c6a0e3bbe9bae60bc3ccc7fceea04c65382373
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407285"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919543"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 SharePoint および OneDrive Officeファイルの感度ラベルを有効にし、ユーザーが[](sensitivity-labels.md)Web 上でOfficeラベルを適用できます。 この機能を有効にすると、リボンに [感度] ボタンが表示され、ラベルを適用し、ステータス バーに適用されたラベル名が表示されます。
 
@@ -64,9 +64,9 @@ SharePoint および OneDrive ([オプトアウト)](#how-to-disable-sensitivity
 
 SharePoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの SharePoint Information [Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) と感度ラベルセクションを確認してください。 
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
-これらの新機能は、感度ラベル [でのみ機能](sensitivity-labels.md) します。 現在 Azure Information Protection ラベルがある場合は、アップロードする新しいファイルに対してこれらの機能を有効にできるよう、最初にラベルを感度ラベルに移行します。 手順については、「Azure Information Protection ラベルを統合された感度ラベルに移行する方法 [」を参照してください](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)。
+これらの新機能は、感度ラベル [でのみ機能](sensitivity-labels.md) します。 現在 Azure Information Protection ラベルがある場合は、アップロードする新しいファイルに対してこれらの機能を有効にできるよう、最初にラベルを感度ラベルに移行します。 手順については、「Azure Information Protection ラベルを統合された感度ラベルに移行する方法 [」を参照してください](/azure/information-protection/configure-policy-migrate-labels)。
 
 Windows では OneDrive 同期アプリ バージョン 19.002.0121.0008 以降、Mac ではバージョン 19.002.0107.0008 以降を使用します。 これらのバージョンはどちらも 2019 年 1 月 28 日にリリースされ、現在すべてのリングにリリースされています。 詳細については [、「OneDrive リリース ノート」を参照してください](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後、以前のバージョンの同期アプリを実行するユーザーに更新を求めるメッセージが表示されます。
 
@@ -77,14 +77,14 @@ Windows では OneDrive 同期アプリ バージョン 19.002.0121.0008 以降�
 
 - SharePoint と OneDrive は、Azure Information Protection ラベルを使用して既に暗号化されている既存のファイルに対して、感度ラベルを自動的に適用しない。 代わりに、SharePoint および OneDrive でファイルのOfficeラベルを有効にした後に機能を機能するには、次のタスクを実行します。
     
-    1. Azure Information [Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)ラベルを感度ラベルに移行し、Microsoft [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) 365 コンプライアンス センターまたは同等のラベル付け管理センターから発行済みである必要があります。
+    1. Azure Information [Protection](/azure/information-protection/configure-policy-migrate-labels)ラベルを感度ラベルに移行し、Microsoft [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) 365 コンプライアンス センターまたは同等のラベル付け管理センターから発行済みである必要があります。
     
     2. ファイルをダウンロードし、SharePoint にアップロードします。
 
 - 暗号化を適用したラベルに暗号化用の次の構成がある場合、SharePoint と OneDrive は暗号化されたファイルを [処理できない](encryption-sensitivity-labels.md#configure-encryption-settings)。
-    - **ユーザーがラベルを適用するときに** アクセス許可を割り当て **、Word、PowerPoint、および Excel** の各チェック ボックスをオンにすると、ユーザーにアクセス許可の指定を求めるメッセージが表示されます。 この設定は、"ユーザー定義のアクセス許可" と呼ばれる場合があります。
-    - **コンテンツへのユーザー アクセスの有効期限は** 、Never 以外の値に **設定されます**。
-    - **[二重キーの暗号化** ] が選択されています。
+    - **ラベルを適用する場合にユーザーがアクセス許可を割り当てられ**、**Word、PowerPoint、Excel でユーザーにアクセス許可を指定するように求める** のチェックボックスが選択されています。 この設定は、"ユーザー定義のアクセス許可" と呼ばれる場合があります。
+    - **コンテンツへのユーザー アクセスは有効期限が切れています** は、**[使用しない]** 以外の値が設定されています。
+    - **二重キー暗号化** が選択されています。
     
     これらの暗号化構成を持つラベルの場合、ラベルは Web 上のユーザー Office表示されません。 さらに、これらの暗号化設定が既にあるラベル付きドキュメントでは、新しい機能を使用できません。 たとえば、これらのドキュメントは、更新された場合でも検索結果に返されません。
 
@@ -139,7 +139,7 @@ Windows では OneDrive 同期アプリ バージョン 19.002.0121.0008 以降�
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>PowerShell を使用して、感度ラベルのサポートを有効にする
 
-コンプライアンス センターを使用する代わりに、SharePoint Online PowerShell の [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、感度ラベルのサポートを有効にできます。 
+コンプライアンス センターを使用する代わりに、SharePoint Online PowerShell の [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、感度ラベルのサポートを有効にできます。 
 
 Microsoft 365 Multi-Geo をお持ちの場合は、PowerShell を使用して、すべての地域の場所でこのサポートを有効にする必要があります。
 
@@ -165,11 +165,11 @@ PowerShell コマンドを実行して SharePoint および OneDrive の Office 
 
 #### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>PowerShell コマンドを実行して、感度ラベルのサポートを有効にする
 
-新しい機能を有効にするには [、EnableAIPIntegration パラメーターで Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) コマンドレット *を使用* します。
+新しい機能を有効にするには [、EnableAIPIntegration パラメーターで Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレット *を使用* します。
 
-1. Microsoft 365 でグローバル管理者または SharePoint 管理者特権を持つ仕事または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
+1. Microsoft 365 でグローバル管理者または SharePoint 管理者特権を持つ仕事または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
     
-    注: Microsoft 365 Multi-Geo を使用している場合は [、Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice)で -Url パラメーターを使用し、地域の場所の 1 つについて SharePoint Online 管理センター サイト URL を指定します。
+    注: Microsoft 365 Multi-Geo を使用している場合は [、Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice)で -Url パラメーターを使用し、地域の場所の 1 つについて SharePoint Online 管理センター サイト URL を指定します。
 
 2. 次のコマンドを実行し **、Y キーを押して** 確認します。
 
@@ -194,7 +194,7 @@ SharePoint と OneDrive で感度ラベルを使用する場合は、新しい�
 
 [SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) は、ファイルのダウンロード時に暗号化と制限を適用して、リストおよびライブラリ レベルのファイルを保護する古いテクノロジです。 この古い保護テクノロジは、承認されていないユーザーが SharePoint の外部にある間にファイルを開くのを防ぐために設計されています。
 
-それに対して、感度ラベルは、暗号化に加えて視覚的なマーキング (ヘッダー、フッター、透かし) の保護設定を提供します。 暗号化設定は、ユーザーがコンテンツに[](https://docs.microsoft.com/azure/information-protection/configure-usage-rights)対して実行できる操作を制限する使用権限の全範囲をサポートし、多くのシナリオで同じ感度ラベル[がサポートされています](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)。 ワークロードとアプリ間で一貫した設定で同じ保護方法を使用すると、一貫した保護戦略が実現します。
+それに対して、感度ラベルは、暗号化に加えて視覚的なマーキング (ヘッダー、フッター、透かし) の保護設定を提供します。 暗号化設定は、ユーザーがコンテンツに[](/azure/information-protection/configure-usage-rights)対して実行できる操作を制限する使用権限の全範囲をサポートし、多くのシナリオで同じ感度ラベル[がサポートされています](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)。 ワークロードとアプリ間で一貫した設定で同じ保護方法を使用すると、一貫した保護戦略が実現します。
 
 ただし、両方の保護ソリューションを一緒に使用できます。動作は次のとおりです。 
 
@@ -219,7 +219,7 @@ SharePoint と OneDrive で感度ラベルを使用する場合は、新しい�
 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`    
 
-感度ラベルの GUID を取得するには [、Get-Label コマンドレットを使用](https://docs.microsoft.com/powershell/module/exchange/get-label) します。  
+感度ラベルの GUID を取得するには [、Get-Label コマンドレットを使用](/powershell/module/exchange/get-label) します。    
 
 1. まず、[Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
    
@@ -231,13 +231,13 @@ SharePoint と OneDrive で感度ラベルを使用する場合は、新しい�
     Get-Label |ft Name, Guid    
     ``` 
 
-管理プロパティの使用の詳細については [、「SharePoint で検索スキーマを管理する」を参照してください](https://docs.microsoft.com/sharepoint/manage-search-schema)。
+管理プロパティの使用の詳細については [、「SharePoint で検索スキーマを管理する」を参照してください](/sharepoint/manage-search-schema)。
 
 ## <a name="remove-encryption-for-a-labeled-document"></a>ラベル付きドキュメントの暗号化を削除する
 
-SharePoint 管理者が SharePoint に保存されているドキュメントから暗号化を削除する必要がある場合は、まれな場合があります。 そのドキュメントに割り[](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)当てられているエクスポートまたはフル コントロールの権限管理の使用権を持つユーザーは、Azure Rights Management サービスによって Azure Information Protection から適用された暗号化を削除できます。 たとえば、これらの使用権限を持つユーザーは、暗号化を適用するラベルを暗号化なしのラベルに置き換える可能性があります。 または、スーパー ユーザー [がファイル](https://docs.microsoft.com/azure/information-protection/configure-super-users) をダウンロードし、暗号化なしでローカル コピーを保存できます。
+SharePoint 管理者が SharePoint に保存されているドキュメントから暗号化を削除する必要がある場合は、まれな場合があります。 そのドキュメントに割り[](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)当てられているエクスポートまたはフル コントロールの権限管理の使用権を持つユーザーは、Azure Rights Management サービスによって Azure Information Protection から適用された暗号化を削除できます。 たとえば、これらの使用権限を持つユーザーは、暗号化を適用するラベルを暗号化なしのラベルに置き換える可能性があります。 または、スーパー ユーザー [がファイル](/azure/information-protection/configure-super-users) をダウンロードし、暗号化なしでローカル コピーを保存できます。
 
-代わりに、グローバル管理者または [SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) 管理者は [Unlock-SPOSensitivityLabelEncryptedFile](https://docs.microsoft.com/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを実行して、感度ラベルと暗号化の両方を削除できます。 このコマンドレットは、管理者がサイトまたはファイルへのアクセス許可を持っていなくても、Azure Rights Management サービスが利用できない場合でも実行されます。 
+代わりに、グローバル管理者または [SharePoint](/sharepoint/sharepoint-admin-role) 管理者は [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを実行して、感度ラベルと暗号化の両方を削除できます。 このコマンドレットは、管理者がサイトまたはファイルへのアクセス許可を持っていなくても、Azure Rights Management サービスが利用できない場合でも実行されます。 
 
 次に例を示します。
 
@@ -251,13 +251,13 @@ Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Mark
 
 - 暗号化は、管理者が定義した暗号化設定 ([アクセス許可の割り当て] ラベル設定) を持つ感度ラベル [によって](encryption-sensitivity-labels.md#assign-permissions-now) 適用されています。 [このコマンドレットでは](encryption-sensitivity-labels.md#double-key-encryption) 、ダブル キー暗号化はサポートされていません。
 
-ファイルから削除された秘密度ラベルの監査[](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)イベントに位置合わせテキストが追加され、復号化アクションは Azure Information Protection の保護使用状況ログにも[記録されます](https://docs.microsoft.com/azure/information-protection/log-analyze-usage)。
+ファイルから削除された秘密度ラベルの監査[](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)イベントに位置合わせテキストが追加され、復号化アクションは Azure Information Protection の保護使用状況ログにも[記録されます](/azure/information-protection/log-analyze-usage)。
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>SharePoint と OneDrive の感度ラベルを無効にする方法 (オプトアウト)
 
 これらの新機能を無効にした場合、SharePoint と OneDrive の感度ラベルを有効にした後にアップロードしたファイルは、ラベル設定が引き続き適用されるので、ラベルによって引き続き保護されます。 これらの新機能を無効にした後で、新しいファイルに感度ラベルを適用すると、フルテキスト検索、電子情報開示、および共同編集は機能しなくなりました。
 
-これらの新機能を無効にするには、PowerShell を使用する必要があります。 SharePoint Online 管理シェルと [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant)コマンドレットを使用して [、「PowerShell](#use-powershell-to-enable-support-for-sensitivity-labels)を使用して感度ラベルのサポートを有効にする」セクションで説明されているのと同じ *EnableAIPIntegration* パラメーターを指定します。 ただし、今回はパラメーター値を false に設定し **、Y キーを** 押して確認します。
+これらの新機能を無効にするには、PowerShell を使用する必要があります。 SharePoint Online 管理シェルと [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant)コマンドレットを使用して [、「PowerShell](#use-powershell-to-enable-support-for-sensitivity-labels)を使用して感度ラベルのサポートを有効にする」セクションで説明されているのと同じ *EnableAIPIntegration* パラメーターを指定します。 ただし、今回はパラメーター値を false に設定し **、Y キーを** 押して確認します。
 
 ```PowerShell
 Set-SPOTenant -EnableAIPIntegration $false

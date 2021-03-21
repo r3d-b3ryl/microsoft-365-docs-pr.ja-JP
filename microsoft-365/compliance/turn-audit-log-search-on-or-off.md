@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: セキュリティ & コンプライアンス センターの監査ログ検索機能を有効または無効にして、管理者が監査ログを検索する機能を有効または無効にする方法。
-ms.openlocfilehash: 3f3e1b913dd163e74f9e5359de772dfcbf3bd786
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: aecd1d47592b9a5e2f134b1d9db9ff203b815b18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423678"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919283"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>監査ログ検索を有効または無効にする
 
@@ -41,7 +41,7 @@ Microsoft 365 および Office 365 Enterprise 組織では、監査ログは既�
     > [!NOTE]
     > 監査ログの検索を有効またはオフにするには、Exchange Online でユーザーにアクセス許可を割り当てる必要があります。 セキュリティ & コンプライアンス センターの [アクセス許可] ページでユーザーに監査ログの役割を割り当てると、監査ログの検索をオンまたはオフにすることはできません。 これは、基になるコマンドレットが Exchange Online PowerShell コマンドレットだからです。 
     
-- 監査ログの検索に関する詳細な手順については、「セキュリティ コンプライアンス センターで監査ログを検索する」 [を&してください](search-the-audit-log-in-security-and-compliance.md)。 Microsoft 365 管理アクティビティ API の詳細については [、「Microsoft 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)管理 API の概要」を参照してください。
+- 監査ログの検索に関する詳細な手順については、「セキュリティ コンプライアンス センターで監査ログを検索する」 [を&してください](search-the-audit-log-in-security-and-compliance.md)。 Microsoft 365 管理アクティビティ API の詳細については [、「Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis)管理 API の概要」を参照してください。
 
 - 監査ログ検索が有効になっていることを確認するには、Exchange Online PowerShell で次のコマンドを実行します。
 
@@ -71,7 +71,7 @@ Microsoft 365 および Office 365 Enterprise 組織では、監査ログは既�
 
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>PowerShell を使用して監査ログ検索を有効にする
 
-1. [Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 次の PowerShell コマンドを実行して、365 で監査ログOfficeします。
 
@@ -85,7 +85,7 @@ Microsoft 365 および Office 365 Enterprise 組織では、監査ログは既�
 
 Exchange Online PowerShell を使用して監査ログ検索をオフにする必要があります。
   
-1. [Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 次の PowerShell コマンドを実行して監査ログの検索をオフにします。
 

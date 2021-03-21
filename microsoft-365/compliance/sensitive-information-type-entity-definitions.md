@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: セキュリティ コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーですぐに使用できる 80 種類の機密情報が &amp; 含まれています。 この記事では、これらすべての機密情報の種類を一覧表示し、各種類を検出するときに DLP ポリシーが検索する機能を示します。
-ms.openlocfilehash: d23c6900e9aeb9ad9b550bb069b7a9592faa9b10
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+description: セキュリティ コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーで使用できる &amp; 80 種類の機密情報が含まれています。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。
+ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288138"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919713"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
-コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーで使用できる多くの機密情報の種類が含まれています。 この記事では、これらすべての機密情報の種類を一覧表示し、各種類を検出するときに DLP ポリシーが検索する機能を示します。 機密情報タイプはパターンで定義され、正規表現または関数で識別できます。 キーワードやチェックサムなどの裏付け証拠を使用して、機密情報の種類を特定できます。 また、評価プロセスでは信頼度や近接度も使用されます。
+コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーで使用できる多くの機密情報の種類が含まれています。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。 機密情報タイプはパターンで定義され、正規表現または関数で識別できます。 キーワードやチェックサムなどの詳細な証拠を使用して、機密情報の種類を特定できます。 また、評価プロセスでは信頼度や近接度も使用されます。
 
 機密情報の種類には、次のいずれかのサブスクリプションが必要です。
 - Microsoft 365 E3
@@ -45,18 +45,18 @@ ms.locfileid: "50288138"
 
 ### <a name="format"></a>フォーマット
 
-書式付きまたは書式設定されていないパターンで使用できる 9 桁の数字
+書式付きまたは書式設定されていないパターンに含め得る 9 桁の数字
 
 ### <a name="pattern"></a>パターン
 
 書式設定:
 - 0、1、2、3、6、7、または 8 で始まる 4 桁の数字
 - ハイフン
-- 4 桁の数字
+- 4 桁
 - ハイフン
-- 1 桁の数字
+- 数字
 
-書式設定されていない場合: 0、1、2、3、6、7、または 8 で始まる 9 桁の連続する数字 
+書式設定されていない: 0、1、2、3、6、7、または 8 で始まる 9 桁の連続する数字 
 
 ### <a name="checksum"></a>チェックサム
 
@@ -64,11 +64,11 @@ ms.locfileid: "50288138"
 
 ### <a name="definition"></a>定義
 
-ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという中程度の信頼度を持っています。
+ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_aba_routing がパターンに一致するコンテンツを検出した。
 - Keyword_ABA_Routing のキーワードを検出した。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
 - 関数 Func_aba_routing がパターンに一致するコンテンツを検出した。
 
 ```xml
@@ -98,27 +98,27 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - americanbankassociationroutingnumber
 - bankrouting#
 - bankroutingnumber
-- routing#
+- ルーティング#
 - ルーティングなし
 - ルーティング番号
 - routing transit number
-- routing#
+- ルーティング#
 - RTN
 
 
-## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民識別番号 (DNI)
+## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 ID (DNI) 番号
 
 ### <a name="format"></a>フォーマット
 
-ピリオド付きまたはピリオドなしの 8 桁の数字
+ピリオドの付きまたは指定のない 8 桁の数字
 
 ### <a name="pattern"></a>パターン
 
 8 桁の数字:
-- 2 桁の数字
-- 省略可能な期間
+- 2 桁
+- オプションの期間
 - 3 桁の数字
-- 省略可能な期間
+- オプションの期間
 - 3 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -127,9 +127,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- パターンに一Regex_argentina_national_idコンテンツを検索する正規表現。
-- 検索されたKeyword_argentina_national_id検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_argentina_national_id一致するコンテンツを検索します。
+- このページのKeyword_argentina_national_idが見つかりました。
 
 ```xml
 <!-- Argentina National Identity (DNI) Number -->
@@ -159,11 +159,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-銀行の州の分岐番号の付きまたはなし 6 ~ 10 桁の数字
+銀行の状態分岐番号の付きまたは指定なしの 6 ~ 10 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-アカウント番号は 6 ~ 10 桁の数字です。
+アカウント番号は 6 ~ 10 桁です。
 
 オーストラリアの銀行の州支店番号:
 - 3 桁の数字 
@@ -176,13 +176,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- パターンに一Regex_australia_bank_account_numberコンテンツを検索する正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、Regex_australia_bank_account_number一致するコンテンツを検索します。
 - Keyword_australia_bank_account_number のキーワードを検出した。
 - 正規表現 Regex_australia_bank_account_number_bsb がパターンに一致するコンテンツを検出した。
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- パターンに一Regex_australia_bank_account_numberコンテンツを検索する正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_australia_bank_account_number一致するコンテンツを検索します。
 
 - Keyword_australia_bank_account_number のキーワードを検出した。
 
@@ -220,7 +220,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - iaea
 
 ## <a name="australia-business-number"></a>オーストラリアのビジネス番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -230,18 +230,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>フォーマット
 
-11 桁の数字とオプションの区切り文字
+11 桁の数字 (オプションの区切り記号付き)
 
 ### <a name="pattern"></a>パターン
 
-11 桁の数字とオプションの区切り文字:
+11 桁の数字とオプションの区切り記号:
 
-- 2 桁の数字
-- 任意指定のハイフンまたはスペース
+- 2 桁
+- オプションのハイフンまたはスペース
 - 3 桁の数字
-- 任意指定のハイフンまたはスペース
+- オプションのハイフンまたはスペース
 - 3 桁の数字
-- 任意指定のハイフンまたはスペース
+- オプションのハイフンまたはスペース
 - 3 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -250,12 +250,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_australian_business_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_australian_business_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_australian_business_number一致するコンテンツを検索します。
+- このページのKeywords_australian_business_numberが見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_australian_business_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_australian_business_number一致するコンテンツを検索します。
 
 ```xml
       <!-- Australia Business Number -->
@@ -273,7 +273,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
-- australia business no
+- オーストラリア のビジネスなし
 - ビジネス番号
 - abn#
 - businessid#
@@ -282,7 +282,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - businessno#
 
 ## <a name="australia-company-number"></a>オーストラリアの会社番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -291,11 +291,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-区切り記号付き 9 桁の数字
+区切り記号付き 9 桁
 
 ### <a name="pattern"></a>パターン
 
-区切り記号付き 9 桁の数字:
+区切り記号が付く 9 桁の数字:
 
 - 3 桁の数字
 - スペース
@@ -310,12 +310,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_Australian_Company_Numberパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_Australian_Company_Number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_Australian_Company_Number一致するコンテンツを検索します。
+- このページのKeyword_Australian_Company_Numberが見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数はFunc_Australian_Company_Numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数はFunc_Australian_Company_Number一致するコンテンツを検索します。
 
 ```xml
       <!-- Australia Company Number -->
@@ -345,22 +345,22 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-9 桁の文字と数字
+9 文字と数字
 
 ### <a name="pattern"></a>パターン
 
-9 桁の文字と数字: 
+9 文字と数字: 
 
 - 2 桁の数字または文字 (大文字と小文字を区別しない) 
-- 2 桁の数字 
-- 5 桁の数字または文字 (大文字と小文字を区別しない)
+- 2 桁 
+- 5 桁または 1 文字 (大文字と小文字は区別されません)
 
-または
+OR
 
-- 1 ~ 2 文字のオプションの文字 (大文字と小文字を区別しない) 
-- 4 ~ 9 桁の数字
+- 1 ~ 2 文字の省略可能な文字 (大文字と小文字を区別しない) 
+- 4 ~ 9 桁
 
-または
+OR
 
 - 9 桁の数字または文字 (大文字と小文字を区別しない)
 
@@ -370,7 +370,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現 Regex_australia_drivers_license_number がパターンに一致するコンテンツを検出した。
 - Keyword_australia_drivers_license_number のキーワードを検出した。
 - Keyword_australia_drivers_license_number_exclusions のキーワードを検出しなかった。
@@ -409,8 +409,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Drivers Licences
 - Driver'Lic
 - Driver'Lics
-- Driver'Licence
-- Driver'Licences
+- 運転免許証
+- 運転免許証
 - Driver' Lic
 - Driver' Lics
 - Driver' Licence
@@ -441,8 +441,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Drivers Licences#
 - Driver'Lic#
 - Driver'Lics#
-- Driver'Licence#
-- Driver'Licences#
+- 運転免許証#
+- 運転免許証#
 - Driver' Lic#
 - Driver' Lics#
 - Driver' Licence#
@@ -468,7 +468,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Drivers License
 - Drivers Licenses
 - 運転免許証
-- Driver'Licenses
+- 運転免許証
 - Driver' License
 - Driver' Licenses
 - Driver'sLicense
@@ -484,7 +484,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Drivers License#
 - Drivers Licenses#
 - 運転免許証#
-- Driver'Licenses#
+- 運転免許証#
 - Driver' License#
 - Driver' Licenses#
 - Driver'sLicense#
@@ -492,7 +492,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Driver's License#
 - Driver's Licenses#
    
-## <a name="australia-medical-account-number"></a>オーストラリアの医療口座番号
+## <a name="australia-medical-account-number"></a>オーストラリアの医療アカウント番号
 
 ### <a name="format"></a>フォーマット
 
@@ -502,7 +502,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 10 ～ 11 桁の数字:
 - 最初の桁は 2 ～ 6 のいずれか
-- 9 桁のチェック ディジット
+- 9 桁はチェック桁
 - 10 桁目は発行桁
 - 11 桁目 (省略可能) は個人番号
 
@@ -512,7 +512,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_australian_medical_account_number がパターンに一致するコンテンツを検出した。
 - Keyword_Australia_Medical_Account_Number のキーワードを検出した。
 - チェックサムが渡される。
@@ -540,7 +540,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - credit card loan
 - department of human services
 - local service
-- care
+- medicare
 
    
 ## <a name="australia-passport-number"></a>オーストラリアのパスポート番号
@@ -551,7 +551,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="pattern"></a>パターン
 
-1 文字 (大文字と小文字を区別しない) の後に 7 桁の数字
+文字 (大文字と小文字を区別しない) の後に 7 桁の数字を付け
 
 ### <a name="checksum"></a>チェックサム
 
@@ -559,9 +559,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現 Regex_australia_passport_number がパターンに一致するコンテンツを検出した。
-- 特定のユーザーまたはKeyword_passportキーワードKeyword_australia_passport_number検出された。
+- ユーザーまたはユーザーのKeyword_passportキーワードKeyword_australia_passport_number見つかりました。
 
 ```xml
 <!-- Australia Passport Number -->
@@ -589,19 +589,19 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - passportnumber
 - パスポート
 - パスポート番号
-- 万の表示
+- [万]Num
 - パスポート ＃ 
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport#
+- パスポート#
 - PasseportNon
 - Passeportn °
 
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- passport
+- パスポート
 - passport details
 - immigration and citizenship
 - commonwealth of australia
@@ -618,16 +618,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-8 桁から 9 桁の数字
+8 桁から 9 桁
 
 ### <a name="pattern"></a>パターン
 
 通常、8 ~ 9 桁の数字には、次のようにスペースが表示されます。
 - 3 桁の数字 
-- 省略可能なスペース 
+- オプションのスペース 
 - 3 桁の数字 
-- 省略可能なスペース 
-- 2 ~ 3 桁の数字 (最後の数字がチェック ディジット)
+- オプションのスペース 
+- 最後の数字がチェック桁である 2 ~ 3 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -635,7 +635,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_australian_tax_file_number がパターンに一致するコンテンツを検出した。
 - Keyword_Australia_Tax_File_Number または Keyword_number_exclusions のキーワードを検出しなかった。
 - チェックサムが渡される。
@@ -672,7 +672,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="pattern"></a>パターン
 
-8 桁の数字
+8 桁
   
 ### <a name="checksum"></a>チェックサム
 
@@ -680,10 +680,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
   
 - 正規表現は、  `Regex_austria_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Austria Driver's License Number -->
@@ -708,48 +708,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -758,80 +758,80 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver's_license_number
 
 - fuhrerschein
-- fcheerschein
-- Fcheerscheine
-- Fcheerscheinnummer
-- Fchehrerscheinnummern
+- führerschein
+- Führerscheine
+- Führerscheinnummer
+- Führerscheinnummern
 
 ## <a name="austria-identity-card"></a>オーストリアの ID カード
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -840,15 +840,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-24 文字の文字、数字、特殊文字の組み合わせ
+文字、数字、特殊文字の 24 文字の組み合わせ
   
 ### <a name="pattern"></a>パターン
 
 24 文字:
   
--  22 文字 (大文字小文字を区別しない)、数字、円記号、スラッシュ、またはプラス記号 
+-  22 文字 (大文字と小文字を区別しない)、数字、円記号、スラッシュ、またはプラス記号 
     
-- 2 文字 (大文字小文字を区別しない)、数字、円記号、スラッシュ、プラス記号、または等号
+- 2 文字 (大文字と小文字を区別しない)、数字、円記号、スラッシュ、プラス記号、または等号
     
 ### <a name="checksum"></a>チェックサム
 
@@ -856,10 +856,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
   
 - 正規表現は、  `Regex_austria_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_austria_eu_national_id_card` 検出した。 
+- キーワードが  `Keywords_austria_eu_national_id_card` 見つかりました。 
    
 ```xml
       <!-- Austria Identity Card -->
@@ -877,21 +877,21 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 - ID 番号
 - national id
-- personalausweis repubwei ösichich
+- personalausweis republik österreich
 
 ## <a name="austria-passport-number"></a>オーストリアのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-1 文字の後にオプションのスペースと 7 桁の数字
+1 文字の後にオプションのスペースと 7 桁の数字が続きます。
   
 ### <a name="pattern"></a>パターン
 
-1 文字、7 桁の数字、および 1 つのスペースの組み合わせ:
+1 文字、7 桁、および 1 つのスペースの組み合わせ。
   
-- 1 文字 (大文字と小文字を区別しない)
-- 1 つのスペース (省略可能)
-- 7 桁の数字
+- 1 文字 (大文字と小文字は区別されません)
+- 1 つのスペース (オプション)
+- 7 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -899,14 +899,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_austria_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_austria_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Austria Passport Number -->
@@ -936,12 +936,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -955,25 +955,25 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
-- reisep sse
+- reisepässe
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 ## <a name="austria-social-security-number"></a>オーストリアの社会保障番号
 
 ### <a name="format"></a>フォーマット
 
-指定された形式の 10 桁の数字
+指定した形式の 10 桁
   
 ### <a name="pattern"></a>パターン
 
 10 桁の数字:
   
 - シリアル番号に対応する 3 桁の数字 
-- 1 桁のチェック ディジット
+- 1 つのチェックディジット
 - 生年月日に対応する 6 桁の数字 (DDMMYY)
     
 ### <a name="checksum"></a>チェックサム
@@ -982,12 +982,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_austria_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_austria_eu_ssn_or_equivalent` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_austria_eu_ssn_or_equivalent` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_austria_eu_ssn_or_equivalent` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_austria_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_austria_eu_ssn_or_equivalent` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Austria Social Security Number -->
@@ -1010,15 +1010,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- の ssn
-- ehic number
+- オーストリアの ssn
+- ehic 番号
 - ehic no
-- insurance code
+- 保険コード
 - insurancecode#
-- insurance number
-- insurance no
-- 1000,000,000,000
-- cherungnkenversicherung
+- 保険番号
+- 保険なし
+- krankenkassennummer
+- krankenversicherung
 - socialsecurityno
 - socialsecurityno#
 - 社会保障なし
@@ -1026,29 +1026,29 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - social security code
 - sozialversicherungsnummer
 - sozialversicherungsnummer#
-- socherle sicherheit n
-- soichlesicherheitkein#
+- soziale sicherheit kein
+- sozialesicherheitkein#
 - ssn#
 - ssn
 - versicherungscode
 - versicherungsnummer
 - zdravstveno zavarovanje
 
-## <a name="austria-tax-identification-number"></a>オーストリアの税識別番号
+## <a name="austria-tax-identification-number"></a>オーストリアの納税者番号
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字とオプションのハイフンとスラッシュ
+オプションのハイフンとスラッシュを含む 9 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-9 桁の数字とオプションのハイフンとスラッシュ:
+オプションのハイフンとスラッシュを含む 9 桁の数字:
   
-- 2 桁の数字
-- ハイフン (省略可能)
+- 2 桁
+- ハイフン (オプション)
 - 3 桁の数字
 - スラッシュ (省略可能)
-- 4 桁の数字
+- 4 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -1056,12 +1056,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_austria_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_austria_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_austria_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_austria_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数は  `Func_austria_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数  `Func_austria_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Austria Tax Identification Number -->
@@ -1080,29 +1080,29 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 #### <a name="keywords_austria_eu_tax_file_number"></a>Keywords_austria_eu_tax_file_number
 
-- ösichich
+- österreich
 - st.nr。
 - steuernummer
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
-- tax number
+- 税番号
  
 ## <a name="austria-value-added-tax"></a>オーストリアの付加価値税
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -1115,17 +1115,17 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="pattern"></a>パターン
 
-11 文字の英数字のパターン:
+11 文字の英数字パターン:
 
 - A または a
 - T または t
-- 省略可能なスペース
+- オプションの領域
 - U または u
-- 省略可能なスペース
+- オプションのスペース
 - 2 桁または 3 桁の数字
-- 省略可能なスペース
-- 4 桁の数字
-- 省略可能なスペース
+- オプションのスペース
+- 4 桁
+- オプションのスペース
 - 1 桁または 2 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -1134,12 +1134,12 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_Austria_Value_Added_Taxパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_Austria_Value_Added_Tax検出された。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_Austria_Value_Added_Tax一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_Austria_Value_Added_Tax見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_Austria_Value_Added_Taxパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_Austria_Value_Added_Tax一致するコンテンツを検索します。
 
 ```xml
       <!-- Austria Value Added Tax -->
@@ -1157,34 +1157,34 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
-- vat number
+- vat 番号
 - vat#
-- vat number
-- vat no.
+- オーストリアの vat 番号
+- vat No.
 - vatno#
 - 付加価値税番号
-- vat
-- wbst
+- オーストリアの vat
+- mwst
 - umsatzsteuernummer
-- wbstnummer
+- mwstnummer
 - ust.-identifikationsnummer
 - umsatzsteuer-identifikationsnummer
-- vat identification number
-- atu number
-- uid number
+- vat ID 番号
+- atu 番号
+- uid 番号
 
 
 ## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 認証キー
 
 ### <a name="format"></a>フォーマット
 
-文字列 "DocumentDb" の後に、次のパターンでアウトラインで示されている文字と文字列を指定します。
+文字列 "DocumentDb" の後に、次のパターンで概説されている文字と文字列が続きます。
 
 ### <a name="pattern"></a>パターン
 
 - 文字列 "DocumentDb"
 - 3 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
-- A greater than symbol (>), an equal sign (=), a quotation mark ("), or an apostrophe (')
+- 大きい記号 (>)、等号 (=)、二重引用符 (")、またはアポストロフィ (')
 - 86 文字の小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ
 - 2 つの等号 (=)
 
@@ -1194,9 +1194,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一CEP_Regex_AzureDocumentDBAuthKeyコンテンツを検索する正規表現。
-- パターンに一CEP_CommonExampleKeywordsコンテンツが見つからない正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_AzureDocumentDBAuthKey一致するコンテンツを検索します。
+- パターンに一CEP_CommonExampleKeywords一致するコンテンツが見当たらない正規表現。
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -1219,18 +1219,18 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - contoso
 - fabrikam
 - northwind
-- sandbox
+- サンドボックス
 - onebox
 - localhost
 - 127.0.0.1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS データベース接続文字列と Azure SQL接続文字列
 
 ### <a name="format"></a>フォーマット
 
-文字列 "Server"、"server"、または "data source" の後に、文字列 "cloudapp.azure" を含む、以下のパターンで概説されている文字と文字列が続きます。<!--no-hyperlink-->com" または "cloudapp.azure" です。<!--no-hyperlink-->net" または "database.windows.<!--no-hyperlink-->net"、および文字列 "Password" または "password" または "pwd" です。
+文字列 "Server"、"server"、または "data source" の後に、以下のパターンで概説されている文字列 ("cloudapp.azure" という文字列を含む) が続きます。<!--no-hyperlink-->com" または "cloudapp.azure" を指定します。<!--no-hyperlink-->net" または "database.windows" を指定します。<!--no-hyperlink-->net"、および文字列 "Password" または "password" または "pwd"
 
 ### <a name="pattern"></a>パターン
 
@@ -1239,13 +1239,13 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - 等号 (=)
 - 0 から 2 文字の空白文字
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
-- 文字列 "cloudapp.azure。<!--no-hyperlink-->com"、"cloudapp.azure。<!--no-hyperlink-->net"、または "database.windows.<!--no-hyperlink-->net"
-- 1 ~ 300 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
+- "cloudapp.azure" という文字列。<!--no-hyperlink-->com", "cloudapp.azure.<!--no-hyperlink-->net"、または "database.windows" を指定します。<!--no-hyperlink-->net"
+- 1 ~ 300 の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
 - 文字列 "Password"、"password"、または "pwd"
 - 0 から 2 文字の空白文字
 - 等号 (=)
 - 0 から 2 文字の空白文字
-- セミコロンではない 1 つ以上の文字 (;)、引用符 (")、またはアポストロフィ (')
+- セミコロンでない 1 つ以上の文字 (;)、引用符 (")、またはアポストロフィ (')
 - セミコロン (;)、引用符 (")、またはアポストロフィ (')
 
 ### <a name="checksum"></a>チェックサム
@@ -1254,9 +1254,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一CEP_Regex_AzureConnectionStringコンテンツを検索する正規表現。
-- パターンに一CEP_CommonExampleKeywordsコンテンツが見つからない正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_AzureConnectionString一致するコンテンツを検索します。
+- パターンに一CEP_CommonExampleKeywords一致するコンテンツが見当たらない正規表現。
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -1279,18 +1279,18 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - contoso
 - fabrikam
 - northwind
-- sandbox
+- サンドボックス
 - onebox
 - localhost
 - 127.0.0.1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-iot-connection-string"></a>Azure IoT 接続文字列
 
 ### <a name="format"></a>フォーマット
 
-文字列 "HostName" の後に、次のパターンでアウトラインで示されている文字と文字列 ("azure-devices" という文字列を含む)。<!--no-hyperlink-->net" および "SharedAccessKey"。
+文字列 "HostName" の後に、以下のパターンで概説されている文字列 ("azure-devices" という文字列を含む) が続きます。<!--no-hyperlink-->net」と「SharedAccessKey」。
 
 ### <a name="pattern"></a>パターン
 
@@ -1299,7 +1299,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - 等号 (=)
 - 0 から 2 文字の空白文字
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
-- 文字列 "azure-devices"<!--no-hyperlink-->net"
+- 文字列 "azure-devices.<!--no-hyperlink-->net"
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
 - 文字列 "SharedAccessKey"
 - 0 から 2 文字の空白文字
@@ -1314,9 +1314,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一CEP_Regex_AzureIoTConnectionStringコンテンツを検索する正規表現。
-- パターンに一CEP_CommonExampleKeywordsコンテンツが見つからない正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_AzureIoTConnectionString一致するコンテンツを検索します。
+- パターンに一CEP_CommonExampleKeywords一致するコンテンツが見当たらない正規表現。
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1339,23 +1339,23 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - contoso
 - fabrikam
 - northwind
-- sandbox
+- サンドボックス
 - onebox
 - localhost
 - 127.0.0.1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-publish-setting-password"></a>Azure 発行設定パスワード
 
 ### <a name="format"></a>フォーマット
 
-文字列 "userqpd=" の後に英数字の文字列を指定します。
+文字列 "userpwd=" の後に英数字の文字列が続きます。
 
 ### <a name="pattern"></a>パターン
 
-- 文字列 "userqpd="
-- 60 桁の小文字または数字の任意の組み合わせ
+- 文字列 "userpwd="
+- 60 文字の小文字または数字の任意の組み合わせ
 - 引用符 (")
 
 ### <a name="checksum"></a>チェックサム
@@ -1364,9 +1364,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一CEP_Regex_AzurePublishSettingPasswordsコンテンツを検索する正規表現。
-- パターンに一CEP_CommonExampleKeywordsコンテンツが見つからない正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_AzurePublishSettingPasswords一致するコンテンツを検索します。
+- パターンに一CEP_CommonExampleKeywords一致するコンテンツが見当たらない正規表現。
 
 
 ```xml
@@ -1390,22 +1390,22 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - contoso
 - fabrikam
 - northwind
-- sandbox
+- サンドボックス
 - onebox
 - localhost
 - 127.0.0.1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-redis-cache-connection-string"></a>Azure Redis キャッシュ接続文字列
 
 ### <a name="format"></a>フォーマット
 
-文字列 "redis.cache.windows。<!--no-hyperlink-->net" の後に、文字列 "password" または "pwd" を含む、以下のパターンでアウトラインで示されている文字と文字列が続きます。
+文字列 "redis.cache.windows。<!--no-hyperlink-->net" の後に、文字列 "password" または "pwd" を含む、以下のパターンで概説されている文字と文字列が続きます。
 
 ### <a name="pattern"></a>パターン
 
-- 文字列 "redis.cache.windows。<!--no-hyperlink-->net"
+- 文字列 "redis.cache.windows" を指定します。<!--no-hyperlink-->net"
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
 - 文字列 "password" または "pwd"
 - 0 から 2 文字の空白文字
@@ -1420,9 +1420,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- パターンに一CEP_Regex_AzureRedisCacheConnectionStringコンテンツを検索する正規表現。
-- パターンに一CEP_CommonExampleKeywordsコンテンツが見つからない正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_AzureRedisCacheConnectionString一致するコンテンツを検索します。
+- パターンに一CEP_CommonExampleKeywords一致するコンテンツが見当たらない正規表現。
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1445,18 +1445,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - contoso
 - fabrikam
 - northwind
-- sandbox
+- サンドボックス
 - onebox
 - localhost
 - 127.0.0.1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-sas"></a>Azure SAS
 
 ### <a name="format"></a>フォーマット
 
-文字列 "sig" の後に、次のパターンでアウトラインで示されている文字と文字列を指定します。
+文字列 "sig" の後に、以下のパターンで概説されている文字と文字列が続きます。
 
 ### <a name="pattern"></a>パターン
 
@@ -1464,9 +1464,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 0 から 2 文字の空白文字
 - 等号 (=)
 - 0 から 2 文字の空白文字
-- 43 ~ 53 文字の任意の組み合わせで、小文字または大文字、数字、またはパーセント記号 (%)
+- 小文字または大文字、数字、またはパーセント記号 (%) である 43 ~ 53 文字の任意の組み合わせ
 - 文字列 "%3d"
-- 小文字または大文字ではない文字、数字、またはパーセント記号 (%)
+- 小文字または大文字、数字、またはパーセント記号 (%) ではない文字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -1474,8 +1474,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一CEP_Regex_AzureSASコンテンツを検索する正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_AzureSAS一致するコンテンツを検索します。
 
 ```xml
 <!--Azure SAS-->
@@ -1486,11 +1486,11 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 </Entity>
 ```
 
-## <a name="azure-service-bus-connection-string"></a>Azure サービス バス接続文字列
+## <a name="azure-service-bus-connection-string"></a>Azure Service バス接続文字列
 
 ### <a name="format"></a>フォーマット
 
-文字列 "EndPoint" の後に、文字列 "servicebus.windows" を含む、以下のパターンでアウトラインで示されている文字と文字列が続きます。<!--no-hyperlink-->net" および "SharedAccesKey"。
+文字列 "EndPoint" の後に、文字列 "servicebus.windows" を含む、以下のパターンで概説されている文字と文字列が続きます。<!--no-hyperlink-->net」および「SharedAccesKey」を参照してください。
 
 ### <a name="pattern"></a>パターン
 
@@ -1499,7 +1499,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - 等号 (=)
 - 0 から 2 文字の空白文字
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
-- 文字列 "servicebus.windows。<!--no-hyperlink-->net"
+- 文字列 "servicebus.windows" を指定します。<!--no-hyperlink-->net"
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
 - 文字列 "SharedAccessKey"
 - 0 から 2 文字の空白文字
@@ -1514,9 +1514,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- パターンに一CEP_Regex_AzureServiceBusConnectionStringコンテンツを検索する正規表現。
-- パターンに一CEP_CommonExampleKeywordsコンテンツが見つからない正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_AzureServiceBusConnectionString一致するコンテンツを検索します。
+- パターンに一CEP_CommonExampleKeywords一致するコンテンツが見当たらない正規表現。
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -1539,18 +1539,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - contoso
 - fabrikam
 - northwind
-- sandbox
+- サンドボックス
 - onebox
 - localhost
 - 127.0.0.1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-storage-account-key"></a>Azure ストレージ アカウント キー
 
 ### <a name="format"></a>フォーマット
 
-文字列 "DefaultEndpointsProtocol" の後に、文字列 "AccountKey" を含む、以下のパターンでアウトラインで示されている文字と文字列が続きます。
+"DefaultEndpointsProtocol" という文字列の後に、"AccountKey" という文字列を含む、以下のパターンで概説されている文字と文字列が続きます。
 
 ### <a name="pattern"></a>パターン
 
@@ -1572,10 +1572,10 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一CEP_Regex_AzureStorageAccountKeyコンテンツを検索する正規表現。
-- パターンに一CEP_AzureEmulatorStorageAccountFilterコンテンツが見つからない正規表現。
-- パターンに一CEP_CommonExampleKeywordsコンテンツが見つからない正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_AzureStorageAccountKey一致するコンテンツを検索します。
+- パターンに一CEP_AzureEmulatorStorageAccountFilter一致するコンテンツが見当たらない正規表現。
+- パターンに一CEP_CommonExampleKeywords一致するコンテンツが見当たらない正規表現。
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1596,7 +1596,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 (技術的には、この機密情報の種類は、キーワード リストではなく正規表現を使用してこれらのキーワードを識別します)。
 
-- Eby8vdM02xNOcqFlqUwLLmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1605,23 +1605,23 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - contoso
 - fabrikam
 - northwind
-- sandbox
+- サンドボックス
 - onebox
 - localhost
 - 127.0.0.1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-storage-account-key-generic"></a>Azure Storage アカウント キー (汎用)
 
 ### <a name="format"></a>フォーマット
 
-86 文字の小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ。前または後に、以下のパターンでアウトラインで示される文字が続きます。
+86 文字の小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせで、次のパターンで説明されている文字が先行または続きます。
 
 ### <a name="pattern"></a>パターン
 
-- 0 から大きい記号 (>)、アポストロフィ (')、等号 (=)、引用符 (")、または数値記号 (#)
-- 小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の 86 文字の任意の組み合わせ
+- 0 から 1 の大きい記号 (>)、アポストロフィ (')、等号 (=)、二重引用符 (")、または番号記号 (#)
+- 小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) である 86 文字の任意の組み合わせ
 - 2 つの等号 (=)
 
 ### <a name="checksum"></a>チェックサム
@@ -1630,8 +1630,8 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一CEP_Regex_AzureStorageAccountKeyGenericコンテンツを検索する正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_AzureStorageAccountKeyGeneric一致するコンテンツを検索します。
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1657,9 +1657,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_belgium_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出 `Keywords_eu_driver's_license_number` `Keywords_belgium_eu_driver's_license_number` された、または検出された。
+- キーワードが見 `Keywords_eu_driver's_license_number` `Keywords_belgium_eu_driver's_license_number` つかったか、検索されます。
     
 ```xml
       <!-- Belgium Driver's License Number -->
@@ -1685,48 +1685,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -1735,76 +1735,76 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 #### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver's_license_number
 
 - rijbewijs
 - rijbewijsnummer
-- fcheerschein
-- fcheinnummer
-- fcheinnummer
+- führerschein
+- führerscheinnummer
+- füehrerscheinnummer
 - fuhrerschein
 - fuehrerschein
 - fuhrerscheinnummer
@@ -1813,20 +1813,20 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - numéro permis conduire
 
 
-## <a name="belgium-national-number"></a>ベルギーの国民番号
+## <a name="belgium-national-number"></a>ベルギーの国番号
 
 ### <a name="format"></a>フォーマット
 
-11 桁の数字とオプションの区切り文字
+11 桁の数字とオプションの区切り記号
 
 ### <a name="pattern"></a>パターン
 
 11 の数字と区切り文字:
-- YY 形式の 6 桁の数字と 2 つのオプションのピリオド。MM.DDの日付 
-- ドット、ダッシュ、スペースの区切り記号 (省略可能) 
-- 3 桁の連続する数字 (男性の場合は奇数、女性の場合も) 
-- ドット、ダッシュ、スペースの区切り記号 (省略可能) 
-- 2 桁のチェック ディジット
+- 6 桁の数字と 2 つのオプションのピリオドを YY 形式で指定します。MM.DD の生年月日 
+- ドット、ダッシュ、スペースからのオプションの区切り文字 
+- 3 桁の連続した数字 (男性の場合は奇数、女性の場合も) 
+- ドット、ダッシュ、スペースからのオプションの区切り文字 
+- 2 つのチェックの数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -1834,13 +1834,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_belgium_national_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_belgium_national_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_belgium_national_number一致するコンテンツを検索します。
+- このページのKeyword_belgium_national_number見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数はFunc_belgium_national_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数はFunc_belgium_national_number一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -1864,20 +1864,20 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - bnn#
 - bnn
 - carte d'identité
-- identifiant national
+- 国の特定者
 - identifiantnational#
 - identificatie
-- identification
+- ID
 - identifikation
 - identifikationsnummer
 - identifizierung
 - identité
 - identiteit
 - identiteitskaart
-- identity
+- ID
 - inscription
-- national number
-- national register
+- 国番号
+- 国の登録
 - nationalnumber#
 - nationalnumber
 - nif#
@@ -1893,7 +1893,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - personalausweis
 - personalidnumber#
 - registratie
-- registration
+- 登録
 - registrationsnumme
 - registrierung
 - social security number
@@ -1901,31 +1901,31 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - ssn
 - steuernummer
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 ## <a name="belgium-passport-number"></a>ベルギーのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字の後に 6 桁の数字 (スペースまたは区切り記号なし)
+2 文字の後に 6 桁の数字が続き、スペースまたは区切り記号は使用されません。
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字、その後に 6 桁の数字
+2 文字、その後に 6 桁の数字
   
 ### <a name="checksum"></a>チェックサム
 
@@ -1933,14 +1933,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
- DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_belgium_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` された、または検出された。 
-- 正規表現は、DD MM YY という形式の日付を検索するか、検索 `Regex_eu_passport_date2` されたキーワードを `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` 検索します。
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` つかったか、検索されます。 
+- 正規表現は、DD MM YY 形式の日付を検索するか、検索 `Regex_eu_passport_date2` されたキーワード `Keywords_eu_passport_date` を `Keywords_belgium_eu_passport_number` 検索します。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_belgium_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` つかったか、検索されます。 
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -1972,12 +1972,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -1985,24 +1985,24 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
 
-- numéro passeport
+- numéro パスポート
 - paspoort nr
 - paspoort-nr
 - paspoortnummer
 - paspoortnummers
-- Passeport carte
-- Passeport の数
+- パスポート のデカルト
+- パスポート livre
 - Pass-Nr
 - Passnummer
-- reisepasspass
+- reisepass kein
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 ## <a name="belgium-value-added-tax-number"></a>ベルギーの付加価値税番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -2015,16 +2015,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-12 文字の英数字のパターン:
+12 文字の英数字パターン:
 
 - 文字 B または b
 - E または e の文字
-- 0 桁の数字
+- 数字 0
 - 1 ~ 9 の数字
 - オプションのドットまたはハイフンまたはスペース
-- 4 桁の数字
+- 4 桁
 - オプションのドットまたはハイフンまたはスペース
-- 4 桁の数字
+- 4 桁
 
 
 ### <a name="checksum"></a>チェックサム
@@ -2034,12 +2034,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_belgium_value_added_tax_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_belgium_value_added_tax_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_belgium_value_added_tax_number一致するコンテンツを検索します。
+- ユーザーのキーワードKeywords_belgium_value_added_tax_number見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_belgium_value_added_tax_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_belgium_value_added_tax_number一致するコンテンツを検索します。
 
 ```xml
       <!-- Belgium Value Added Tax Number -->
@@ -2058,9 +2058,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
-- nTv tva
-- vat number
-- vat no
+- nº tva
+- vat 番号
+- vat いいえ
 - numéro t.v.a
 - umsatzsteuer-identifikationsnummer
 - umsatzsteuernummer
@@ -2084,9 +2084,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - ピリオド
 - 3 桁の数字
 - ハイフン
-- チェック ディジットの 2 桁の数字
+- チェックの数字である 2 桁の数字
 
-書式設定されていない場合:
+Unformatted:
 - 11 桁の数字 (最後の 2 桁はチェック ディジット)
 
 ### <a name="checksum"></a>チェックサム
@@ -2095,13 +2095,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_brazil_cpfパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_brazil_cpf検出された。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_brazil_cpf一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_brazil_cpf見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_brazil_cpfパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_brazil_cpf一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -2122,7 +2122,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
 - CPF
-- Id
+- ID
 - 登録
 - 収益
 - Cadastro de Pessoas Físicas 
@@ -2142,15 +2142,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 14 桁の数字と区切り文字:
 
-- 2 桁の数字 
+- 2 桁 
 - ピリオド 
 - 3 桁の数字 
 - ピリオド 
-- 3 桁の数字 (この最初の 8 桁は登録番号) 
+- 3 桁 (最初の 8 桁は登録番号です) 
 - スラッシュ 
 - 4 桁の分岐番号 
 - ハイフン 
-- チェック ディジットの 2 桁の数字
+- チェックの数字である 2 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -2158,13 +2158,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_brazil_cnpjパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_brazil_cnpj検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_brazil_cnpj一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_brazil_cnpj見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_brazil_cnpjパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_brazil_cnpj一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -2209,25 +2209,25 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-Registro Geral (旧形式): 9 桁の数字
+Registro Geral (旧形式): 9 桁
 
-Registro de Identidade (RIC) (新しい形式): 11 桁の数字
+Registro de Identidade (RIC) (新しい形式): 11 桁
 
 ### <a name="pattern"></a>パターン
 
 Registro Geral (従来の形式):
-- 2 桁の数字 
+- 2 桁 
 - ピリオド 
 - 3 桁の数字 
 - ピリオド 
 - 3 桁の数字 
 - ハイフン 
-- チェック ディジットである 1 桁の数字
+- チェックディジットである 1 桁の数字
 
 Registro de Identidade (RIC) (新しい形式):
 - 10 桁の数字 
 - ハイフン 
-- チェック ディジットである 1 桁の数字
+- チェックディジットである 1 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -2235,9 +2235,9 @@ Registro de Identidade (RIC) (新しい形式):
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_brazil_rgパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_brazil_rg検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_brazil_rg一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_brazil_rg見つかりました。
 - チェックサムが渡される。
 
 
@@ -2273,7 +2273,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="pattern"></a>パターン
 
-9 桁の数字
+9 桁
   
 ### <a name="checksum"></a>チェックサム
 
@@ -2281,9 +2281,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_bulgaria_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2308,48 +2308,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -2358,68 +2358,68 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver's_license_number
@@ -2430,8 +2430,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - шофьорска книжка
 - шофьорски книжки
 
-## <a name="bulgaria-uniform-civil-number"></a>ブルガリアの均一な市民番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="bulgaria-uniform-civil-number"></a>ブルガリアの一様な民事番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -2446,10 +2446,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 スペースと区切り記号のない 10 桁の数字
   
-- 生年月日 (YYMMDD) に対応する 6 桁の数字 
-- 出生順に対応する 2 桁の数字
-- 性別に対応する 1 桁の数字: 男性の偶数桁と女性の奇数桁
-- 1 桁のチェック ディジット
+- 生年月日に対応する 6 桁の数字 (YYMMDD) 
+- 出生順序に対応する 2 桁の数字
+- 性別に対応する 1 桁の数字: 男性の偶数桁、女性の奇数桁
+- 1 つのチェックディジット
 
 ### <a name="checksum"></a>チェックサム
 
@@ -2457,12 +2457,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_bulgaria_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_bulgaria_eu_national_id_card` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_bulgaria_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_bulgaria_eu_national_id_card` 見つかりました。 
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_bulgaria_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_bulgaria_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
@@ -2489,29 +2489,29 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - bnn
 - bucn#
 - bucn
-- nomer
+- edinen grazhdanski nomer
 - egn#
 - egn
 - identification number
 - national id
-- national number
+- 国番号
 - nationalnumber#
 - nationalnumber
 - 個人用 ID
-- personal no
+- 個人のいいえ
 - 個人番号
 - personalidnumber#
 - social security number
 - ssn#
 - ssn
-- uniform の市民 ID
-- 均一な市民なし
-- 均一な市民番号
+- uniform civil id
+- uniform civil no
+- 一様な民事番号
 - uniformcivilno#
 - uniformcivilno
 - uniformcivilnumber#
 - uniformcivilnumber
-- 一意の国籍番号
+- 一意の市民権番号
 - егн#
 - егн
 - единен граждански номер
@@ -2537,7 +2537,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-9 桁の数字 
+9 桁 
   
 ### <a name="checksum"></a>チェックサム
 
@@ -2545,14 +2545,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_bulgaria_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_bulgaria_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` つかったか、検索されます。 
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2581,12 +2581,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -2601,24 +2601,24 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 ## <a name="canada-bank-account-number"></a>カナダの銀行口座番号
 
 ### <a name="format"></a>フォーマット
 
-7 桁または 12 桁の数字
+7 桁または 12 桁
 
 ### <a name="pattern"></a>パターン
 
 カナダの銀行口座番号は 7 桁または 12 桁です。
 
 カナダの銀行口座転送番号は次のとおりです。
-- 5 桁の数字 
+- 5 桁 
 - ハイフン 
-- 3 桁の数字 OR
+- 3 桁の OR
 - ゼロ "0" 
-- 8 桁の数字
+- 8 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -2626,12 +2626,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現 Regex_canada_bank_account_number がパターンに一致するコンテンツを検出した。
 - Keyword_canada_bank_account_number のキーワードを検出した。
 - 正規表現 Regex_canada_bank_account_transit_number がパターンに一致するコンテンツを検出した。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現 Regex_canada_bank_account_number がパターンに一致するコンテンツを検出した。
 - Keyword_canada_bank_account_number のキーワードを検出した。
 
@@ -2693,7 +2693,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_[province_name]_drivers_license_number がパターンに一致するコンテンツを検出した。
 - Keyword_[province_name]_drivers_license_name のキーワードを検出した。
 - Keyword_canada_drivers_license のキーワードを検出した。
@@ -2794,9 +2794,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Driver'Lic
 - Driver'Lics
 - 運転免許証
-- Driver'Licenses
-- Driver'Licence
-- Driver'Licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
 - Driver' Lic
 - Driver' Lics
 - Driver' License
@@ -2831,7 +2831,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - identification #s
 - identification card
 - identification cards
-- identification 
+- ID 
 - DL#
 - DLS# 
 - CDL# 
@@ -2863,9 +2863,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Driver'Lic# 
 - Driver'Lics# 
 - 運転免許証# 
-- Driver'Licenses# 
-- Driver'Licence# 
-- Driver'Licences# 
+- 運転免許証# 
+- 運転免許証# 
+- 運転免許証# 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
@@ -2892,10 +2892,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - idcard# 
 - identification card# 
 - identification cards# 
-- identification# 
+- ID# 
 
    
-## <a name="canada-health-service-number"></a>カナダの医療サービス番号
+## <a name="canada-health-service-number"></a>カナダの正常性サービス番号
 
 ### <a name="format"></a>フォーマット
 
@@ -2911,7 +2911,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現 Regex_canada_health_service_number がパターンに一致するコンテンツを検出した。
 - Keyword_canada_health_service_number のキーワードを検出した。
 
@@ -2937,20 +2937,20 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - speciality services
 - automobile accident
 - patient hospital
-- ist
+- 精神科医
 - workers compensation
-- disability
+- 障がい
 
       
 ## <a name="canada-passport-number"></a>カナダのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-2 桁の大文字と 6 桁の数字
+2 つの大文字と 6 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-2 桁の大文字と 6 桁の数字
+2 つの大文字と 6 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -2958,9 +2958,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現 Regex_canada_passport_number がパターンに一致するコンテンツを検出した。
-- 検索または検索Keyword_canada_passport_numberキーワードKeyword_passport検出されました。
+- ユーザーまたはユーザーのKeyword_canada_passport_numberキーワードKeyword_passport見つかりました。
 
 ```xml 
 <!-- Canada Passport Number -->
@@ -2999,26 +2999,26 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - passportnumber
 - パスポート
 - パスポート番号
-- 万の表示
+- [万]Num
 - パスポート＃
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport#
+- パスポート#
 - PasseportNon
 - Passeportn °
 
    
-## <a name="canada-personal-health-identification-number-phin"></a>カナダの個人健康識別番号 (PHIN)
+## <a name="canada-personal-health-identification-number-phin"></a>カナダの個人の健康識別番号 (PHIN)
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字
+9 桁
 
 ### <a name="pattern"></a>パターン
 
-9 桁の数字
+9 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -3026,9 +3026,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現 Regex_canada_phin がパターンに一致するコンテンツを検出した。
-- 2 つ以上のキーワードがKeyword_canada_phinまたはKeyword_canada_provinces検出されました。
+- 2 つ以上のキーワードがKeyword_canada_phinまたはKeyword_canada_provinces見つかりました。
 
 ```xml
 <!-- Canada PHIN -->
@@ -3066,14 +3066,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- ベド
+- ケベック州
 - Northwest Territories
-- On、on
+- Ontario
 - British Columbia
-- アルバサ
-- サカtchewan
-- マニートバ島
-- ナズン語
+- アルバータ州
+- サスカチュワン州
+- マニトバ州
+- ユーコン語
 - Newfoundland and Labrador
 - New Brunswick
 - Nova Scotia
@@ -3085,7 +3085,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字とオプションのハイフンまたはスペース
+オプションのハイフンまたはスペースを含む 9 桁の数字
 
 ### <a name="pattern"></a>パターン
 
@@ -3096,7 +3096,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - ハイフンまたはスペース 
 - 3 桁の数字
 
-書式設定されていない場合: 9 桁の数字
+書式設定されていない: 9 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -3104,7 +3104,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_canadian_sin がパターンに一致するコンテンツを検出した。
 - 以下の 2 つ以上の条件に該当する:
     - Keyword_sin のキーワードを検出した。
@@ -3112,7 +3112,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
     - 関数 Func_eu_date が適切な日付形式の日付を検出した。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_unformatted_canadian_sin がパターンに一致するコンテンツを検出した。
 - Keyword_sin のキーワードを検出した。
 - チェックサムが渡される。
@@ -3142,7 +3142,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - sin 
 - social insurance 
 - numero d'assurance sociale 
-- はい 
+- 罪 
 - ssn 
 - ssns 
 - social security 
@@ -3169,18 +3169,18 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-7 桁から 8 桁の数字と、チェック ディジットまたは文字の区切り文字
+7 桁から 8 桁の数字と、チェック桁または文字の区切り記号
 
 ### <a name="pattern"></a>パターン
 
-7 ~ 8 桁の数字と区切り文字:
+7 ~ 8 桁の数字と区切り記号:
 - 1 桁から 2 桁の数字 
-- 省略可能な期間 
+- オプションの期間 
 - 3 桁の数字 
-- 省略可能な期間 
+- オプションの期間 
 - 3 桁の数字 
 - ダッシュ 
-- チェック ディジットである 1 桁の数字または文字 (大文字と小文字を区別しない)
+- 1 桁または 1 文字 (大文字と小文字を区別しない) (チェック桁)
 
 ### <a name="checksum"></a>チェックサム
 
@@ -3188,13 +3188,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_chile_id_cardパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_chile_id_card検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_chile_id_card一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_chile_id_card見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_chile_id_cardパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_chile_id_card一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -3220,13 +3220,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - national identification number
 - national id
 - número de identificación nacional
-- rol ico nacional
-- rol ico tribuico
+- rol único nacional
+- rol único tributario
 - RUN
 - RUT
 - tarjeta de identificación
 - Rol Unico Nacional
-- Rol Unico Tribuico
+- Rol Unico Tributario
 - RUN#
 - RUT#
 - nationaluniqueroleID#
@@ -3235,22 +3235,22 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - identidad número
 - numero identificacion
 - identidad numero
-- チリの ID いいえ
+- チリの ID いいえ。
 - チリの ID 番号
 - チリの ID#
-- 固有の Tax Registry
-- 一意のトリビュート ロール
-- Unique Tax Role
-- 一意のトリビュート番号
+- 一意の税レジストリ
+- 一意のトリビュートロール
+- 一意の税の役割
+- 一意の支流番号
 - 一意の国番号
 - 固有の国の役割
-- 国固有の役割
+- 国内固有の役割
 - チリの ID いいえ。
 - チリの ID 番号
 - チリの ID#
 
    
-## <a name="china-resident-identity-card-prc-number"></a>中国の住民識別カード (PRC) 番号
+## <a name="china-resident-identity-card-prc-number"></a>中国在住の ID カード (PRC) 番号
 
 ### <a name="format"></a>フォーマット
 
@@ -3260,9 +3260,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 18 桁の数字:
 - アドレス コードである 6 桁の数字 
-- YYYYMMDD という形式の 8 桁の数字 (生年月日) 
+- YYYYYMMDD という形式の 8 桁の数字 (生年月日) 
 - 注文コードである 3 桁の数字 
-- チェック ディジットである 1 桁の数字
+- チェックディジットである 1 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -3270,13 +3270,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_china_resident_idパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_china_resident_id検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_china_resident_id一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_china_resident_id見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_china_resident_idパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_china_resident_id一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -3312,11 +3312,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-14 ~ 16 桁の数字。書式設定または書式設定解除が可能で (dddddddddddd)、Luhn テストに合格する必要があります。
+14 ~ 16 桁の数字 (dddddddd
 
 ### <a name="pattern"></a>パターン
 
-Visa、MasterCard、Discover Card、JCB、American Express、gift cards、およびdiner card など、世界中の主要ブランドのカードを検出する複雑で堅牢なパターン。
+Visa、MasterCard、Discover Card、JCB、American Express、ギフト カード、ダイナー カードなど、世界中のすべての主要ブランドのカードを検出する複雑で堅牢なパターン。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -3324,15 +3324,15 @@ Visa、MasterCard、Discover Card、JCB、American Express、gift cards、およ
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_credit_card がパターンに一致するコンテンツを検出した。
 - 次のいずれかの条件に該当する:
     - Keyword_cc_verification のキーワードを検出した。
-    - 検索されたKeyword_cc_name見つかりました。
+    - このページのKeyword_cc_name見つかりました。
     - 関数 Func_expiration_date が適切な日付形式の日付を検出した。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
 - 関数 Func_credit_card がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
@@ -3372,29 +3372,29 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - cryptogramme
 - numéro de sécurité
 - numero de securite
-- kredit kredit kr krtenprのfnummer
-- kreditkrtenprufnummer
-- pr最も近い
+- kreditkartenprüfnummer
+- kreditkartenprufnummer
+- prüfziffer
 - prufziffer
 - sicherheits Kode
 - sicherheitscode
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- cod. sicurezza
+- cod。 sicurezza
 - cod sicurezza
 - n autorizzazione
-- códó
-- cod、cod、cod、
-- cod. seg
+- código
+- codigo
+- cod。 seg
 - cod seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
 - cód. segurança
-- cod. seguranca
-- cod. segurança
+- cod。 seguranca
+- cod。 segurança
 - cód. seguranca
 - cód segurança
 - cod seguranca
@@ -3404,10 +3404,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - numero de verificacao
 - ablauf
 - gültig bis
-- gのtigkeitsdatum
+- gültigkeitsdatum
 - gultig bis
 - gultigkeitsdatum
-- scadcadcad
+- scadenza
 - data scad
 - fecha de expiracion
 - fecha de venc
@@ -3421,8 +3421,8 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - validade
 - valor
 - vencimento
-- transaction
-- transaction number
+- トランザクション
+- トランザクション番号
 - 参照番号
 - セキュリティコード
 - セキュリティ コード
@@ -3453,7 +3453,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - BrandSmart
 - japanese card bureau
 - carte blanche
-- carte carte cartehe
+- carteblanche
 - credit card
 - cc#
 - cc#:
@@ -3470,22 +3470,22 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - cardnumber
 - cardnumbers
 - card numbers
-- creditcard
+- クレジット カード
 - credit cards
-- creditcards
+- クレジット カード
 - ccn
 - card holder
 - cardholder
 - card holders
-- cardholders
+- カード所有者
 - check card
 - checkcard
 - check cards
 - checkcards
 - debit card
-- debitcard
+- デビットカード
 - debit cards
-- debitcards
+- デビットカード
 - atm card
 - atmcard
 - atm cards
@@ -3496,14 +3496,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - Cardmember Acct
 - cardmember アカウント
 - Cardno
-- 会社のカード
-- 会社のカード
+- コーポレート カード
+- 企業カード
 - カードの種類
-- card account number
-- card member account
-- Cardmember Acct。
+- カード アカウント番号
+- カード メンバー アカウント
+- Cardmember Acct.
 - card no.
-- card no
+- カードなし
 - card number
 - carte bancaire
 - carte de crédit
@@ -3512,18 +3512,18 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - numero de carte
 - nº de la carte
 - nº de carte
-- kredit kreditte
+- kreditkarte
 - karte
 - karteninhaber
 - karteninhabers
-- kredit kredit krteninhaber
-- kredit kredit krteninstitut
-- kredit kredit krtentyp
-- eigentigmername
+- kreditkarteninhaber
+- kreditkarteninstitut
+- kreditkartentyp
+- eigentümername
 - kartennr
 - kartennummer
-- kreditkrtennummer
-- kreditkrten-nummer
+- kreditkartennummer
+- kreditkarten-nummer
 - carta di credito
 - carta credito
 - n. carta
@@ -3570,7 +3570,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - numero de cartao
 - nº do cartão
 - nº do cartao
-- nº. do cartão
+- nº。 do cartão
 - no do cartão
 - no do cartao
 - 違います。 do cartão
@@ -3614,7 +3614,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="pattern"></a>パターン
 
-8 桁の数字
+8 桁
   
 ### <a name="checksum"></a>チェックサム
 
@@ -3622,10 +3622,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
   
 - 正規表現は、  `Regex_croatia_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出 `Keywords_eu_driver's_license_number` `Keywords_croatia_eu_driver's_license_number` された、または検出された。 
+- キーワードが見 `Keywords_eu_driver's_license_number` `Keywords_croatia_eu_driver's_license_number` つかったか、検索されます。 
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -3650,48 +3650,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -3700,68 +3700,68 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver's_license_number
@@ -3771,11 +3771,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 
 ## <a name="croatia-identity-card-number"></a>クロアチアの ID カード番号
-この機密情報の種類のエンティティは、EU の国民識別番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU の国民識別番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字
+9 桁
 
 ### <a name="pattern"></a>パターン
 
@@ -3787,9 +3787,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_croatia_id_cardパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_croatia_id_card検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_croatia_id_card一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_croatia_id_card見つかりました。
 
 ```xml
 <!--Croatia Identity Card Number-->
@@ -3805,8 +3805,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- grastorski broj građana
-- マスターの市民番号
+- majstorski broj građana
+- マスター市民番号
 - nacionalni identifikacijski broj
 - national identification number
 - oib#
@@ -3815,23 +3815,23 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - osobni id
 - osobni identifikacijski broj
 - 個人識別番号
-- brozni broj
-- skizni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
@@ -3843,7 +3843,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-9 桁の数字 
+9 桁 
   
 ### <a name="checksum"></a>チェックサム
 
@@ -3851,14 +3851,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_croatia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_croatia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Croatia Passport Number -->
@@ -3887,12 +3887,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -3900,9 +3900,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
-- broj putovovov
-- br. Putovovov
-- br putovovov
+- broj putovnice
+- br。 Putovnice
+- br putovnice
    
 ## <a name="croatia-personal-identification-oib-number"></a>クロアチアの個人識別 (OIB) 番号
 
@@ -3914,7 +3914,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 11 桁の数字:
 - 10 桁の数字 
-- 最終桁はチェック ディジット
+- 最終桁はチェック桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -3922,13 +3922,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_croatia_oib_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_croatia_eu_tax_file_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_croatia_oib_number一致するコンテンツを検索します。
+- このページのKeywords_croatia_eu_tax_file_numberが見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_croatia_oib_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_croatia_oib_number一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -3948,8 +3948,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- grastorski broj građana
-- マスターの市民番号
+- majstorski broj građana
+- マスター市民番号
 - nacionalni identifikacijski broj
 - national identification number
 - oib#
@@ -3958,87 +3958,26 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - osobni id
 - osobni identifikacijski broj
 - 個人識別番号
-- brozni broj
-- skizni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>クロアチアの社会保障番号または同等の識別情報
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-スペースと区切り記号のない 11 桁の数字
-  
-### <a name="pattern"></a>パターン
-
-11 桁の数字:
-  
-- 10 桁の数字
-- 1 桁のチェック ディジット
-    
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
-- この関数は  `Func_croatia_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_croatia_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
-- この関数は  `Func_croatia_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
-
-- 個人識別番号
-- マスターの市民番号
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- 個人用 ID 番号
-- personalidnumber#
-- oib
-- osobni identifikacijski broj
-
-## <a name="cyprus-drivers-license-number"></a>キプロスの運転免許証番号
+## <a name="cyprus-drivers-license-number"></a>キプロスのドライバーのライセンス番号
 
 ### <a name="format"></a>フォーマット
 
@@ -4054,9 +3993,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_cyprus_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` された、または検出された。
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` つかったか、検索されます。
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4081,48 +4020,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -4131,68 +4070,68 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 #### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver's_license_number
 
@@ -4202,7 +4141,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 
 ## <a name="cyprus-identity-card"></a>キプロスの ID カード
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -4223,9 +4162,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_cyprus_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_cyprus_eu_national_id_card` 検出した。 
+- キーワードが  `Keywords_cyprus_eu_national_id_card` 見つかりました。 
     
 ```xml 
       <!-- Cyprus Identity Card -->
@@ -4241,9 +4180,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
-- id card number
 - ID カード番号
-- kim kim karti
+- ID カード番号
+- kimlik karti
 - national identification number
 - 個人用 ID 番号
 - ταυτοτητασ
@@ -4253,7 +4192,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-1 文字の後に 6 ~ 8 桁の数字 (スペースまたは区切り記号なし)
+1 文字の後に 6 ~ 8 桁の数字が続き、スペースや区切り記号はありません。
   
 ### <a name="pattern"></a>パターン
 
@@ -4265,14 +4204,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_cyprus_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_cyprus_eu_passport_date` DD/MM/YYYY の形式で日付を検出するか、キーワードが `Keywords_cyprus_eu_passport_date` 見つかった
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_cyprus_eu_passport_date` DD/MM/YYYYY 形式の日付を検索するか、キーワードが `Keywords_cyprus_eu_passport_date` 見つかった
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_cyprus_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` された、または検出された。  
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` つかったか、検索されます。  
     
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4302,12 +4241,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -4322,19 +4261,19 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - διαβατήριο#
 - διαβατήριο
 - αριθμός διαβατηρίου
-- Pasaport Kimli pasii
-- pasaport numaras Pasaport numaras Numaras の数
+- Pasaport Kimliği
+- pasaport numarası
 - Pasaport no.
 - Αρ. Διαβατηρίου
 
 #### <a name="keywords_cyprus_eu_passport_date"></a>Keywords_cyprus_eu_passport_date
 
-- expires on
+- 有効期限が切れる
 - 発行日
 
 
 ## <a name="cyprus-tax-identification-number"></a>キプロスの税金の識別番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -4343,15 +4282,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-指定されたパターンの 8 桁の数字と 1 文字
+指定したパターンの 8 桁の数字と 1 文字
   
 ### <a name="pattern"></a>パターン
 
 8 桁の数字と 1 文字:
   
 - "0" または "9"
-- 7 桁の数字
-- 1 文字 (大文字と小文字を区別しない)
+- 7 桁
+- 1 文字 (大文字と小文字は区別されません)
     
 ### <a name="checksum"></a>チェックサム
 
@@ -4359,12 +4298,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_cyprus_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_cyprus_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_cyprus_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_cyprus_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_cyprus_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_cyprus_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -4384,46 +4323,46 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - tax id
-- 税識別コード
-- tax identification no
-- 税識別番号
+- 税の識別コード
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tic#
 - tic
 - tin id
-- tin no
+- tin いいえ
 - tin#
-- vergi kimino kodu
-- vergi kim numaras Numaras の数
+- vergi kimlik kodu
+- vergi kimlik numarası
 - αριθμός φορολογικού μητρώου
 - κωδικός φορολογικού μητρώου
 - φορολογική ταυτότητα
 - φορολογικού κωδικού
 
 
-## <a name="czech-drivers-license-number"></a>チェコ語の運転免許証番号
+## <a name="czech-drivers-license-number"></a>チェコの運転免許証番号
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字の後に 6 桁の数字
+2 文字の後に 6 桁の数字が続く
   
 ### <a name="pattern"></a>パターン
 
-8 桁の文字と数字:
+8 文字と数字:
   
-- 文字 'E' (大文字と小文字を区別しない)
+- レター 'E' (大文字と小文字は区別されません)
 - レター
-- スペース (省略可能)
-- 6 桁の数字
+- スペース (オプション)
+- 6 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -4431,9 +4370,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_czech_republic_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` つかったか、検索されます。 
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4458,48 +4397,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -4508,86 +4447,86 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver's_license_number
 
-- idičsksksk prúkaz
-- idičské prékakaka
-- číslo idičského préidi
-- čísla idičskskskch príkazí
+- řidičský prúkaz
+- řidičské prčkazy
+- číslo řidičského prčkazu
+- čísla řidičských prčkazů
 
 
 ## <a name="czech-passport-number"></a>チェコのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-スペースまたは区切り記号を含めずに 8 桁の数字
+スペースまたは区切り記号のない 8 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-スペースまたは区切り記号を含めずに 8 桁の数字
+スペースまたは区切り記号のない 8 桁の数字
   
 ### <a name="checksum"></a>チェックサム
 
@@ -4595,14 +4534,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_czech_republic_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_czech_republic_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4632,12 +4571,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -4654,26 +4593,26 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="czech-personal-identity-number"></a>チェコの個人識別番号
+## <a name="czech-personal-identity-number"></a>チェコの個人 ID 番号
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字 (オプションのスラッシュ (古い形式) 10 桁の数字とオプションのスラッシュ (新しい形式)
+オプションのスラッシュ付き 9 桁 (古い形式) 10 桁 、オプションのスラッシュ (新しい形式)
 
 ### <a name="pattern"></a>パターン
 
-9 桁の数字 (古い形式):
+9 桁 (古い形式):
 - 生年月日を表す 6 桁の数字
 - オプションのスラッシュ
 - 3 桁の数字
 
-10 桁の数字 (新しい形式):
+10 桁 (新しい形式):
 - 生年月日を表す 6 桁の数字
 - オプションのスラッシュ 
-- 最後の数字がチェック ディジットである 4 桁の数字
+- 最後の数字がチェック桁である 4 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -4681,15 +4620,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 
-- この関数はFunc_czech_id_cardパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_czech_id_card検索されます。
+- この関数はFunc_czech_id_card一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_czech_id_card見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 
-- この関数はFunc_czech_id_card_new_formatパターンに一致するコンテンツを検索します。
+- この関数Func_czech_id_card_new_format一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -4711,19 +4650,19 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
 
-- 生年月日
+- 出生番号
 - チェコ共和国 ID
 - czechidno#
-- daéové číslo
+- daňové číslo
 - identifikační číslo
 - ID なし
 - ID 番号
 - identityno#
 - identityno
-- insurance number
+- 保険番号
 - national identification number
 - nationalnumber#
-- national number
+- 国番号
 - osobní číslo
 - personalidnumber#
 - 個人用 ID 番号
@@ -4731,7 +4670,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - 個人番号
 - pid#
 - pid
-- pojiítíní číslo
+- pojištění číslo
 - rč
 - rodne cislo
 - rodné číslo
@@ -4739,83 +4678,23 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - ssn#
 - social security number
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 - 一意の ID 番号
 
-## <a name="czech-social-security-number-or-equivalent-identification"></a>チェコの社会保障番号または同等の識別情報
-
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-指定したパターンの 10 桁の数字と円記号
-  
-### <a name="pattern"></a>パターン
-
-10 桁の数字とバックスラッシュ:
-  
-- 生年月日 (YYMMDD) に対応する 6 桁の数字: 
-- 円記号
-- 同じ日付に生まれた人物を分け合うシリアル番号に対応する 3 桁の数字
-- 1 桁のチェック ディジット
-    
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_czech_republic_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_czech_republic_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_czech_republic_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
-
-- 生年月日
-- national identification number
-- 個人識別番号
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- 個人用 ID 番号
-- personalidnumber#
-- rč
-- rodné číslo
-- rodne cislo
 
 ## <a name="denmark-drivers-license-number"></a>デンマークの運転免許証番号
 
@@ -4825,7 +4704,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="pattern"></a>パターン
 
-8 桁の数字
+8 桁
   
 ### <a name="checksum"></a>チェックサム
 
@@ -4833,9 +4712,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_denmark_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -4860,48 +4739,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -4910,73 +4789,73 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver's_license_number
 
-- k最も近い
-- krekortnummer
+- kørekort
+- kørekortnummer
 
 
 ## <a name="denmark-passport-number"></a>デンマークのパスポート番号
@@ -4987,7 +4866,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-9 桁の数字 
+9 桁 
   
 ### <a name="checksum"></a>チェックサム
 
@@ -4995,14 +4874,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_denmark_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` された、または検出された。 
-- DD MM YY またはキーワードの形式で日付が検出 `Regex_eu_passport_date2` された正規表現 `Keywords_eu_passport_date` が見つかった
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` つかったか、検索されます。 
+- 正規表現が DD MM YY 形式の日付を検索するか、キーワード `Regex_eu_passport_date2` が `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_denmark_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Denmark Passport Number -->
@@ -5033,12 +4912,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -5047,13 +4926,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
 - pasnummer
-- Passeport n°
+- パスポート n°
 - pasnumre
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
 ## <a name="denmark-personal-identification-number"></a>デンマークの個人識別番号
@@ -5065,9 +4944,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 10 桁の数字:
-- DDMMYY という形式の 6 桁の数字 (生年月日) 
+- DDMMYY 形式の 6 桁の数字 (生年月日) 
 - ハイフン 
-- 最後の桁がチェック ディジットである 4 桁の数字
+- 最後の数字がチェック桁である 4 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -5075,13 +4954,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- パターンに一Func_denmark_eu_tax_file_numberコンテンツを検索する正規表現。
-- 検索されたKeyword_denmark_id検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Func_denmark_eu_tax_file_number一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_denmark_id見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- パターンに一Func_denmark_eu_tax_file_numberコンテンツを検索する正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- 正規表現は、Func_denmark_eu_tax_file_number一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -5107,31 +4986,31 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - cpr
 - cpr#
 - gesundheitskarte nummer
-- gesundheitsversicherungcherte nummer
-- health card
-- 医療保険証番号
-- 医療保険番号
+- gesundheitsversicherungkarte nummer
+- 正常性カード
+- 健康保険証番号
+- 健康保険番号
 - identification number
 - identifikationsnummer
 - identifikationsnummer#
 - ID 番号
-- 1000,000,000,000
+- krankenkassennummer
 - nationalid#
 - nationalnumber#
-- national number
+- 国番号
 - personalidnumber#
 - personalidentityno#
 - 個人用 ID 番号
 - personnummer
 - personnummer#
-- reisekrankenversicherungschertenummer
+- reisekrankenversicherungskartenummer
 - rejsesygesikringskort
 - ssn
 - ssn#
-- の id
-- kode
-- nummer
-- (1)、1000,00
+- スケート ID
+- スケート kode
+- スケートのしびれ
+- skattenummer
 - social security number
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
@@ -5139,25 +5018,25 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - sundhedskortnummer
 - sygesikring
 - sygesikringkortnummer
-- tax code
-- 旅行保険証
+- 税コード
+- 旅行健康保険証
 - uniqueidentityno#
-- tax number
-- tax registration number
+- 税番号
+- 税登録番号
 - tax id
-- 税識別番号
-- はい#
+- 税の識別番号
+- タクシー#
 - taxnumber#
 - tax no
 - taxno#
 - taxnumber
-- tax identification no
+- 税の識別なし
 - tin#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- taxidno#
+- taxidnumber#
 - tax no#
 - tin id
-- tin no
+- tin いいえ
 - cpr.nr
 - cprnr
 - cprnummer
@@ -5172,75 +5051,19 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - sygesikringsnr
 - sygesikringsnummer
 
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>デンマークの社会保障番号または同等の識別情報
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類のみを使用できます。
+
+## <a name="drug-enforcement-agency-dea-number"></a>麻薬取締局 (DEA) 番号
 
 ### <a name="format"></a>フォーマット
 
-指定したパターンの 10 桁の数字とハイフン
-  
-### <a name="pattern"></a>パターン
-
-10 桁の数字とハイフン:
-  
-- 生年月日に対応する 6 桁の数字 (DDMMYY) 
-- ハイフン
-- シーケンス番号に対応する 4 桁の数字
-
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_denmark_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_denmark_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_denmark_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
-
-- 個人識別番号
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- 個人用 ID 番号
-- personalidnumber#
-- cpr-nummer
-- personnummer
-
-## <a name="drug-enforcement-agency-dea-number"></a>ドラッグ執行機関 (DEA) 番号
-
-### <a name="format"></a>フォーマット
-
-2 桁の文字の後に 7 桁の数字
+2 文字の後に 7 桁の数字を付け
 
 ### <a name="pattern"></a>パターン
 
 パターンには、以下のすべてが含まれる必要があります。
-- 考えられる文字セットの 1 文字 (大文字と小文字は区別されません): abcdefghjklmnprstux(登録コード) 
-- 1 文字 (大文字と小文字は区別されません)。これは、登録者の名の最初の文字または数字 '9' です。
-- 7 桁の数字、最後の数字はチェック ディジット
+- 可能な文字のこのセットからの 1 文字 (大文字と小文字は区別されません): abcdefghjklmnprstux (レジストリ コード) 
+- 1 文字 (大文字と小文字を区別しない) (登録者の名または数字 '9' の最初の文字)
+- 7 桁の数字で、最後の数字はチェック桁です。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -5248,12 +5071,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_dea_number がパターンに一致するコンテンツを検出した。
-- キーワード `Keyword_dea_number` の検索
+- キーワードが `Keyword_dea_number` 見つかりました
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_dea_number がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
@@ -5283,22 +5106,22 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 - dea
 - dea#
-- ドラッグの実施の管理
-- ドラッグ執行機関
+- 麻薬取締局
+- 麻薬取締局
 
 
 ## <a name="estonia-drivers-license-number"></a>エストニアの運転免許証番号
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字の後に 6 桁の数字
+2 文字の後に 6 桁の数字が続く
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字と 6 桁の数字:
+2 文字と 6 桁の数字:
   
-- 文字 "ET" (大文字と小文字を区別しない) 
-- 6 桁の数字
+- 文字 "ET" (大文字と小文字は区別されません) 
+- 6 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -5306,9 +5129,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_estonia_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5333,48 +5156,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -5383,79 +5206,79 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver's_license_number
 
 -- permis de conduire
 - juhilubade numbrid
-- juhiloa number
+- juhiloa 番号
 - juhiluba
 
 
 ## <a name="estonia-personal-identification-code"></a>エストニアの個人識別コード
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -5470,10 +5293,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 11 桁の数字:
   
-- 性と生年月日に対応する 1 桁の数字 (奇数の男性、偶数の女性、1 ~ 2: 19th century、3 ~ 4: 20th century、5 ~ 6: 21st century)
+- 性別と出生世紀に対応する 1 桁の数字 (奇数男性、偶数女性、1-2:19 世紀、3-4: 20 世紀、5~6:21 世紀)
 - 生年月日 (YYMMDD) に対応する 6 桁の数字
 - 同じ日付に生まれた人を区切るシリアル番号に対応する 3 桁の数字
-- 1 桁のチェック ディジット
+- 1 つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -5481,12 +5304,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_estonia_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_estonia_eu_national_id_card` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_estonia_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_estonia_eu_national_id_card` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_estonia_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_estonia_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Estonia Personal Identification Code -->
@@ -5511,33 +5334,33 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 - id-kaart
 - ik
-- iskokood#
-- iskokood
+- isikukood#
+- isikukood
 - maksu id
-- makshuhustuslase identifitseerimisnumber
+- maksukohustuslase identifitseerimisnumber
 - maksunumber
 - national identification number
-- national number
+- 国番号
 - 個人用コード
 - 個人用 ID 番号
 - 個人識別コード
 - 個人識別番号
 - personalidnumber#
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
@@ -5545,11 +5368,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-1 文字の後に 7 桁の数字 (スペースまたは区切り記号なし)
+1 文字の後にスペースまたは区切り記号を付けない 7 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-1 文字の後に 7 桁の数字
+1 文字の後に 7 桁の数字が続く
   
 ### <a name="checksum"></a>チェックサム
 
@@ -5557,14 +5380,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_estonia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_estonia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Estonia Passport Number -->
@@ -5594,12 +5417,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -5607,12 +5430,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-eesti ko数 passi number passinumbrid document no dokumendi nr
+eesti kodaniku passi number passinumbrid document number document no dokumendi nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
 ## <a name="eu-debit-card-number"></a>EU のデビット カード番号
@@ -5631,7 +5454,7 @@ eesti ko数 passi number passinumbrid document no dokumendi nr
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_eu_debit_card がパターンに一致するコンテンツを検出した。
 - 次の条件のうち 1 つ以上に該当する:
     - Keyword_eu_debit_card のキーワードを検出した。
@@ -5694,7 +5517,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - card type 
 - cardano numerico 
 - cardholder 
-- cardholders 
+- カード所有者 
 - cardnumber 
 - cardnumbers 
 - carta bianca 
@@ -5710,7 +5533,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - carte de credit 
 - carte de crédit 
 - carte di credito 
-- carte carte cartehe 
+- carteblanche 
 - cartão de credito 
 - cartão de crédito 
 - cartão de debito 
@@ -5723,19 +5546,19 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - checkcards 
 - chequekaart 
 - cirrus 
-- cirrus-edc-ciostro 
-- controlartart 
-- controlartarten 
+- cirrus-edc-maestro 
+- controlekaart 
+- controlekaarten 
 - credit card 
 - credit cards 
-- creditcard 
-- creditcards 
+- クレジット カード 
+- クレジット カード 
 - debetkaart 
 - debetkaarten 
 - debit card 
 - debit cards 
-- debitcard 
-- debitcards 
+- デビットカード 
+- デビットカード 
 - debito automatico 
 - diners club 
 - dinersclub 
@@ -5746,7 +5569,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - discovercards 
 - débito automático
 - edc 
-- eigentigmername 
+- eigentümername 
 - european debit card 
 - hoofdkaart 
 - hoofdkaarten 
@@ -5765,13 +5588,13 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - karteninhabers
 - kartennr 
 - kartennummer 
-- kredit kreditte 
-- kreditkrten-nummer 
-- kredit kredit krteninhaber 
-- kredit kredit krteninstitut 
-- kreditkrtennummer 
-- kredit kredit krtentyp 
-- (2013 年 1 月 
+- kreditkarte 
+- kreditkarten-nummer 
+- kreditkarteninhaber 
+- kreditkarteninstitut 
+- kreditkartennummer 
+- kreditkartentyp 
+- maestro 
 - master card 
 - master cards 
 - mastercard 
@@ -5806,7 +5629,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - nº de tarjeta 
 - nº do cartao 
 - nº do cartão 
-- nº. do cartão 
+- nº。 do cartão 
 - número de cartao 
 - número de cartão 
 - número de tarjeta 
@@ -5824,10 +5647,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - schede matrici 
 - scoprono la scheda 
 - scoprono le schede 
-- solo 
+- ソロ 
 - supporti di scheda 
 - supporto di scheda 
-- switch 
+- スイッチ 
 - tarjeta atm 
 - tarjeta credito 
 - tarjeta de atm 
@@ -5858,13 +5681,13 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- cod. seg 
-- cod. seguranca 
-- cod. segurança 
-- cod. sicurezza 
+- cod。 seg 
+- cod。 seguranca 
+- cod。 segurança 
+- cod。 sicurezza 
 - codice di sicurezza 
 - codice di verifica 
-- cod、cod、cod、 
+- codigo 
 - codigo de seguranca 
 - codigo de segurança 
 - crittogramma 
@@ -5880,7 +5703,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - cód segurança 
 - cód. seguranca 
 - cód. segurança 
-- códó 
+- código 
 - código de seguranca 
 - código de segurança 
 - de kaart controle 
@@ -5888,10 +5711,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - issue no 
 - issue number 
 - kaartidentificatienummer 
-- kreditkrtenprufnummer 
-- kredit kredit kr krtenprのfnummer 
+- kreditkartenprufnummer 
+- kreditkartenprüfnummer 
 - kwestieaantal 
-- 違います。 dell'dellzione 
+- 違います。 dell'edizione 
 - 違います。 di sicurezza 
 - numero de securite 
 - numero de verificacao 
@@ -5906,18 +5729,18 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - perno il blocco 
 - pin block 
 - prufziffer 
-- pr最も近い 
+- prüfziffer 
 - security code 
 - security no 
 - security number 
 - sicherheits kode 
 - sicherheitscode 
 - sicherheitsnummer 
-- speldb数 
+- speldblok 
 - veiligheid nr 
-- heiigheidsaantal 
-- heiigheidscode 
-- heiigheidsnummer 
+- veiligheidsaantal 
+- veiligheidscode 
+- veiligheidsnummer 
 - verfalldatum 
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
@@ -5939,18 +5762,18 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - espira 
 - exp date 
 - exp datum 
-- expiration 
-- expire 
-- expires 
-- expiry 
+- 有効期限 
+- 有効期限 
+- 有効期限 
+- 有効期限 
 - fecha de expiracion 
 - fecha de venc 
 - gultig bis 
 - gultigkeitsdatum 
 - gültig bis 
-- gのtigkeitsdatum 
+- gültigkeitsdatum 
 - la scadenza 
-- scadcadcad 
+- scadenza 
 - valable 
 - validade 
 - valido hasta 
@@ -5967,7 +5790,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ## <a name="eu-drivers-license-number"></a>EU の運転免許証番号
 
-これらのエンティティは EU の運転免許証番号に登録され、機密情報の種類です。
+これらのエンティティは EU の運転免許証番号に含み、機密情報の種類です。
 
 - [Austria](#austria-drivers-license-number) 
 - [Belgium](#belgium-drivers-license-number)
@@ -5986,7 +5809,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - [イタリア](#italy-drivers-license-number)
 - [ラトビア](#latvia-drivers-license-number)
 - [Lithuania](#lithuania-drivers-license-number)
-- [ンジェムバー](#luxemburg-drivers-license-number)
+- [ルクセンブルク](#luxemburg-drivers-license-number)
 - [マルタ](#malta-drivers-license-number)
 - [オランダ](#netherlands-drivers-license-number)
 - [ポーランド](#poland-drivers-license-number) 
@@ -6020,7 +5843,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - [イタリア](#italy-fiscal-code)
 - [ラトビア](#latvia-personal-code)
 - [Lithuania](#lithuania-personal-code)
-- [ンジェムバー](#luxemburg-national-identification-number-natural-persons)
+- [ルクセンブルク](#luxemburg-national-identification-number-natural-persons)
 - [マルタ](#malta-identity-card-number)
 - [オランダ](#netherlands-citizens-service-bsn-number)
 - [ポーランド](#poland-national-id-pesel)
@@ -6053,7 +5876,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - [イタリア](#italy-passport-number)
 - [ラトビア](#latvia-passport-number)
 - [Lithuania](#lithuania-passport-number)
-- [ンジェムバー](#luxemburg-passport-number)
+- [ルクセンブルク](#luxemburg-passport-number)
 - [マルタ](#malta-passport-number)
 - [オランダ](#netherlands-passport-number)
 - [ポーランド](#poland-passport-number)
@@ -6066,9 +5889,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - [英国](#us--uk-passport-number)
 
 
-## <a name="eu-social-security-number-or-equivalent-identification"></a>EU 社会保障番号または同等の識別情報
+## <a name="eu-social-security-number-or-equivalent-identification"></a>EU 社会保障番号または同等の ID
 
-EU 社会保障番号または同等の識別情報に含み、機密情報の種類であるこれらのエンティティ。
+EU 社会保障番号または同等の ID に含み、機密情報の種類であるこれらのエンティティ。
 
 - [Austria](#austria-social-security-number)
 - [Belgium](#belgium-national-number)
@@ -6076,7 +5899,7 @@ EU 社会保障番号または同等の識別情報に含み、機密情報の�
 - [チェコ語](#czech-personal-identity-number)
 - [デンマーク](#denmark-personal-identification-number)
 - [フィンランド](#finland-national-id)
-- [France](#france-social-security-number-insee-or-equivalent-identification)
+- [France](#france-social-security-number-insee)
 - [Germany](#germany-identity-card-number)
 - [ギリシャ](#greece-national-id-card)
 - [ハンガリー](#hungary-social-security-number-taj)
@@ -6085,9 +5908,9 @@ EU 社会保障番号または同等の識別情報に含み、機密情報の�
 - [スウェーデン](#sweden-national-id)
 
 
-## <a name="eu-tax-identification-number"></a>EU の税識別番号
+## <a name="eu-tax-identification-number"></a>EU 税の識別番号
 
-これらのエンティティは、EU の税金識別番号の機密情報の種類です。
+これらのエンティティは、EU 税の識別番号の機密情報の種類です。
 
 - [Austria](#austria-tax-identification-number)
 - [Belgium](#belgium-national-number)
@@ -6106,7 +5929,7 @@ EU 社会保障番号または同等の識別情報に含み、機密情報の�
 - [イタリア](#italy-fiscal-code)
 - [ラトビア](#latvia-personal-code)
 - [Lithuania](#lithuania-personal-code)
-- [ンジェムバー](#luxemburg-national-identification-number-non-natural-persons)
+- [ルクセンブルク](#luxemburg-national-identification-number-non-natural-persons)
 - [マルタ](#malta-tax-identification-number)
 - [オランダ](#netherlands-tax-identification-number)
 - [ポーランド](#poland-tax-identification-number)
@@ -6129,10 +5952,10 @@ EU 社会保障番号または同等の識別情報に含み、機密情報の�
 
 ハイフンを含む 10 桁の数字:
   
-- 6 桁の数字 
+- 6 桁 
 - ハイフン
 - 3 桁の数字 
-- 1 桁の数字または文字
+- 数字または文字
     
 ### <a name="checksum"></a>チェックサム
 
@@ -6140,9 +5963,9 @@ EU 社会保障番号または同等の識別情報に含み、機密情報の�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_finland_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6167,48 +5990,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -6217,68 +6040,68 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver's_license_number
@@ -6286,16 +6109,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - ajokortti
 - permis de conduire
 - ajokortin numero
-- kuljja lic.
+- kuljettaja lic.
 - körkort
 - körkortnummer
-- fの lic.
+- förare lic.
 - ajokortit
 - ajokortin numerot
 
 
-## <a name="finland-european-health-insurance-number"></a>フィンランドの欧州の医療保険番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="finland-european-health-insurance-number"></a>フィンランド のヨーロッパの健康保険番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -6304,14 +6127,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-20 桁の数字
+20 桁の番号
 
 ### <a name="pattern"></a>パターン
 
-20 桁の数字:
+20 桁の番号:
 
-- 10 桁の数字 - 8024680246
-- 省略可能なスペースまたはハイフン
+- 10 桁 - 8024680246
+- オプションのスペースまたはハイフン
 - 10 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -6320,9 +6143,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 正規表現はRegex_Finland_European_Health_Insurance_Numberパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_Finland_European_Health_Insurance_Number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現はRegex_Finland_European_Health_Insurance_Number一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_Finland_European_Health_Insurance_Number見つかりました。
 
 ```xml
       <!-- Finland European Health Insurance Number -->
@@ -6339,18 +6162,18 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 - ehic#
 - ehic
-- finlandehicnumber#
-- finska sjukfkfkfskringskort
-- health card
-- 医療保険証
-- 医療保険番号
-- hlsokort
+- フィンランド語#
+- finska sjukförsäkringskort
+- 正常性カード
+- 健康保険証
+- 健康保険番号
+- hälsokort
 - sairaanhoitokortin
-- sai、v、utuskortti
-- saierosveroutusnumero
-- sjukfkfskring nummer
-- sjukfkfskringskort
-- suomen sai、v、utuskortti
+- sairausvakuutuskortti
+- sairausvakuutusnumero
+- sjukförsäkring nummer
+- sjukförsäkringskort
+- suomen sairausvakuutuskortti
 - terveyskortti
 
 
@@ -6358,15 +6181,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-6 桁の数字と、100 年に 3 桁の数字とチェック ディジットを示す文字
+6 桁の数字と、1 世紀と 3 桁の数字とチェック桁を示す文字
 
 ### <a name="pattern"></a>パターン
 
 パターンには、以下のすべてが含まれる必要があります。
 - DDMMYY という形式の 6 桁の数字 (生年月日) 
-- century マーカー ('-'、'+'、または 'a') 
+- century マーカー ('-','+' または 'a') 
 - 3 桁の個人識別番号 
-- チェック ディジットである数字または文字 (大文字と小文字を区別しない)
+- チェック桁である数字または文字 (大文字と小文字を区別しない)
 
 ### <a name="checksum"></a>チェックサム
 
@@ -6374,14 +6197,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- 関数はFunc_finnish_national_idパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_finnish_national_id検出された
-- チェックサムが渡される
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- パターンにFunc_finnish_national_id一致するコンテンツを検索する関数
+- 見つかったKeyword_finnish_national_idキーワード
+- チェックサム パス
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 関数はFunc_finnish_national_idパターンに一致するコンテンツを検索します。
-- チェックサムが渡される
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- パターンにFunc_finnish_national_id一致するコンテンツを検索する関数
+- チェックサム パス
 
 ```xml
       <!-- Finnish National ID-->
@@ -6405,41 +6228,41 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - henkilötunnusnumero
 - hetu
 - id no
-- id number
+- id 番号
 - identification number
 - identiteetti numero
 - ID 番号
 - idnumber
-- nen henkilötunnus
-- sen henkilkortin
-- national id card
+- kansallinen henkilötunnus
+- kansallisen henkilökortin
+- 国の ID カード
 - national id no.
 - 個人用 ID
-- 個人用 ID コード
+- 個人 ID コード
 - personalidnumber#
 - personbeteckning
 - personnummer
 - social security number
 - sosiaaliturvatunnus
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 - tunnistenumero
 - tunnus numero
-- tunnusl取
+- tunnusluku
 - tunnusnumero
 - verokortti
 - veronumero
@@ -6449,15 +6272,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ## <a name="finland-passport-number"></a>フィンランドのパスポート番号
 
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類で利用できます。スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU Passport Number 機密情報の種類で使用できます。スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
-9 桁の文字と数字の組み合わせ
+9 つの文字と数字の組み合わせ
 
 ### <a name="pattern"></a>パターン
-9 桁の文字と数字の組み合わせ:
-- 2 文字 (大文字と小文字を区別しない) 
-- 7 桁の数字
+9 つの文字と数字の組み合わせ:
+- 2 文字 (大文字と小文字は区別されません) 
+- 7 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -6465,14 +6288,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、 `Regex_finland_passport_number` パターンに一致するコンテンツを検索します。
-- キーワードが検出 `Keywords_eu_passport_number` `Keyword_finland_passport_number` された、または検出された。
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見 `Keywords_eu_passport_number` `Keyword_finland_passport_number` つかったか、検索されます。
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、 `Regex_finland_passport_number` パターンに一致するコンテンツを検索します。
-- キーワードが検出 `Keywords_eu_passport_number` `Keyword_finland_passport_number` された、または検出された。
+- キーワードが見 `Keywords_eu_passport_number` `Keyword_finland_passport_number` つかったか、検索されます。
 
 ```xml
       <!-- Finland Passport Number -->
@@ -6501,12 +6324,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -6520,16 +6343,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - passin numero#
 - passin numero.
 - passi#
-- passi number
+- passi 番号
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 ## <a name="france-drivers-license-number"></a>フランスの運転免許証番号
 
-この機密情報の種類のエンティティは、EU の運転免許証番号の機密情報の種類で利用できます。スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類で使用できます。スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -6545,9 +6368,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 関数はFunc_french_drivers_licenseパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_french_drivers_license検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_french_drivers_license一致するコンテンツを検索します。
+- 検索されたKeyword_french_drivers_licenseが見つかりました。
 
 ```xml
     <!-- France Driver's License Number -->
@@ -6569,48 +6392,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -6619,78 +6442,78 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 - permis de conduire
 - licence number
 - license number
 - licence numbers
 - license numbers
-- numéros de licence
+- numéros de ライセンス
 
 
-## <a name="france-health-insurance-number"></a>フランスの医療保険番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="france-health-insurance-number"></a>フランスの健康保険番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -6699,17 +6522,17 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-21 桁の数字
+21 桁の番号
 
 ### <a name="pattern"></a>パターン
 
-21 桁の数字:
+21 桁の番号:
 
 - 10 桁の数字
-- 省略可能なスペース
+- オプションのスペース
 - 10 桁の数字
-- 省略可能なスペース
-- 1 桁の数字
+- オプションのスペース
+- 数字
 
 
 ### <a name="checksum"></a>チェックサム
@@ -6718,9 +6541,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- regex はRegex_France_Health_Insurance_Numberパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_France_Health_Insurance_Number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現はRegex_France_Health_Insurance_Number一致するコンテンツを検索します。
+- 検索されたKeyword_France_Health_Insurance_Numberが見つかりました。
 
 ```xml
       <!-- France Health Insurance Number -->
@@ -6735,9 +6558,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
-- insurance card
-- carte vitale
-- carte d'assuré social
+- 保険証
+- デカルトバイタル
+- デカルト d'assuré social
 
 
 ## <a name="france-national-id-card-cni"></a>フランスの国民 ID カード (CNI)
@@ -6756,9 +6579,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
 - 正規表現 Regex_france_cni がパターンに一致するコンテンツを検出した。
-- 検索されたKeywords_france_eu_national_id_card検索されます。
+- このページのKeywords_france_eu_national_id_cardが見つかりました。
 
 ```xml
     <!-- France CNI -->
@@ -6775,20 +6598,20 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - card number
-- carte nationale d'identité
-- carte nationale d'ide ide ideide no
+- デカルト nationale d'identité
+- デカルト nationale d'idenite no
 - cni#
 - cni
 - compte bancaire
 - national identification number
-- national identity
+- 国の ID
 - nationalidno#
 - numéro d'assurance maladie
 - numéro de carte vitale
 
    
 ## <a name="france-passport-number"></a>フランスのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類で使用できます。 スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU Passport Number 機密情報の種類で使用できます。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -6797,9 +6620,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 ### <a name="pattern"></a>パターン
 
 9 桁の数字と文字:
-- 2 桁の数字 
-- 2 文字 (大文字と小文字を区別しない) 
-- 5 桁の数字
+- 2 桁 
+- 2 文字 (大文字と小文字は区別されません) 
+- 5 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -6807,14 +6630,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は `Func_fr_passport` 、パターンに一致するコンテンツを検索します。
-- キーワードが検出 `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` された、または検出された。
-- 正規表現で DD MM YYYY という形式の日付が検出された場合、またはキーワード `Regex_eu_passport_date3` が `Keywords_eu_passport_date` 検出された場合
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数 `Func_fr_passport` は、パターンに一致するコンテンツを検索します。
+- キーワードが見 `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` つかったか、検索されます。
+- 正規表現が DD MM YYYY の形式で日付を検索するか、キーワード `Regex_eu_passport_date3` が `Keywords_eu_passport_date` 見つかった
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は `Func_fr_passport` 、パターンに一致するコンテンツを検索します。
-- キーワードが検出 `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` された、または検出された。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数 `Func_fr_passport` は、パターンに一致するコンテンツを検索します。
+- キーワードが見 `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` つかったか、検索されます。
 
 
 ```xml
@@ -6845,12 +6668,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -6866,20 +6689,20 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - passeportnon
 - passeportn °
 - passeport français
-- passeport 数
-- passeport carte
-- numéro passeport
+- passeport livre
+- パスポート のデカルト
+- numéro パスポート
 - passeport n°
 - n° du passeport
-- n° passeport
+- n° パスポート
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="france-social-security-number-insee-or-equivalent-identification"></a>フランスの社会保障番号 (INSEE) または同等の識別情報
+## <a name="france-social-security-number-insee"></a>フランスの社会保障番号 (INSEE)
 
 ### <a name="format"></a>フォーマット
 
@@ -6888,7 +6711,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 次のいずれかのパターンに一致する:
-- 13 桁の数字の後にスペース、その後に 2 桁の数字<br/>
+- 13 桁の後にスペースが続き、2 桁の数字が続きます。<br/>
 または
 - 15 桁の連続する数字
 
@@ -6898,13 +6721,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は `Func_french_insee` 、パターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数 `Func_french_insee` は、パターンに一致するコンテンツを検索します。
 - Keyword_fr_insee のキーワードを検出した。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_french_inseeまたはFunc_fr_inseeパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_french_inseeまたはFunc_fr_insee一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -6955,7 +6778,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - social insurance number
 
 
-## <a name="france-tax-identification-number"></a>フランスの税識別番号
+## <a name="france-tax-identification-number"></a>フランスの納税者番号
 
 ### <a name="format"></a>フォーマット
 
@@ -6974,7 +6797,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - スペース 1 つ (省略可能) 
 - 3 桁の数字 
 - スペース 1 つ (省略可能) 
-- 3 桁のチェック ディジット 
+- 3 つのチェックの数字 
 
   
 ### <a name="checksum"></a>チェックサム
@@ -6983,12 +6806,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_france_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_france_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_france_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_france_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_france_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_france_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -7012,27 +6835,27 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_france_eu_tax_file_number"></a>Keywords_france_eu_tax_file_number
 
-- numéro d'identification fiscale
+- numéro d'id fiscale
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
 ## <a name="france-value-added-tax-number"></a>フランスの付加価値税番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -7045,14 +6868,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-13 文字の英数字のパターン:
+13 文字の英数字パターン:
 
 - 2 文字 - FR (大文字と小文字を区別しない)
-- 省略可能なスペースまたはハイフン
-- 2 桁の文字または数字
-- 省略可能なスペース、ドット、ハイフン、またはコンマ
+- オプションのスペースまたはハイフン
+- 2 文字または数字
+- オプションのスペース、ドット、ハイフン、またはコンマ
 - 3 桁の数字
-- 省略可能なスペース、ドット、ハイフン、またはコンマ
+- オプションのスペース、ドット、ハイフン、またはコンマ
 - 3 桁の数字
 - オプションのスペース、ドット、ハイフン、またはコンマ
 - 3 桁の数字
@@ -7063,12 +6886,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_france_value_added_tax_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_france_value_added_tax_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_france_value_added_tax_number一致するコンテンツを検索します。
+- ユーザーからのキーワードKeywords_france_value_added_tax_number見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_france_value_added_tax_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_france_value_added_tax_number一致するコンテンツを検索します。
 
 ```xml
       <!-- France Value Added Tax Number -->
@@ -7086,21 +6909,21 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
-- vat number
-- vat no
+- vat 番号
+- vat いいえ
 - vat#
 - 付加価値税
-- siren identification no numéro d'identification taxe sur sur surur ajoutée
-- taxe taxur ajoutée
-- taxe sur la surjoutée
+- siren id no numéro d'id taxe sur valeur ajoutée
+- taxe valeur ajoutée
+- taxe sur la valeur ajoutée
 - n° tva
 - numéro de tva
-- numéro d'identification siren
+- numéro d'id siren
 
 
 ## <a name="germany-drivers-license-number"></a>ドイツの運転免許証番号
 
-この機密情報の種類のエンティティは、EU の運転免許証番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -7108,12 +6931,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-11 桁の数字と文字 (大文字と小文字を区別しない):
-- 1 桁の数字または文字 
-- 2 桁の数字 
+11 桁の数字と文字 (大文字と小文字は区別されません):
+- 数字または文字 
+- 2 桁 
 - 6 桁の数字または文字 
-- 1 桁の数字 
-- 1 桁の数字または文字
+- 数字 
+- 数字または文字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -7121,7 +6944,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_german_drivers_license がパターンに一致するコンテンツを検出した。
 - Keyword_german_drivers_license_number のキーワードを検出した。
 - チェックサムが渡される。
@@ -7145,28 +6968,28 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - ausstellende behöde
 - ausstellende behorde
 - ausstellende behoerde
-- fcheerschein
+- führerschein
 - fuhrerschein
 - fuehrerschein
-- fcheinnummer
+- führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- fchehrerschein- 
+- führerschein- 
 - fuhrerschein- 
 - fuehrerschein- 
-- fcheerscheinnummernr
+- führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
-- fcheerscheinnummercheasse
-- fuhrerscheinnummer fuasse
-- fuehrerscheinnummer fuasse
-- nr-fのhrerschein
+- führerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
+- nr-führerschein
 - nr-fuhrerschein
 - nr-fuehrerschein
-- no-fcheerschein
+- no-führerschein
 - no-fuhrerschein
 - no-fuehrerschein
-- n-fcheerschein
+- n-führerschein
 - n-fuhrerschein
 - n-fuehrerschein
 - permis de conduire
@@ -7176,48 +6999,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -7226,65 +7049,65 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dlno
 
 
@@ -7292,15 +7115,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-2010 年 11 月 1 日以降: 9 桁の文字と数字
+2010 年 11 月 1 日以降: 9 文字と数字
 
-1987 年 4 月 1 日から 2010 年 10 月 31 日まで: 10 桁の数字
+1987 年 4 月 1 日から 2010 年 10 月 31 日まで: 10 桁
 
 ### <a name="pattern"></a>パターン
 
 2010 年 11 月 1 日以降:
-- 1 文字 (大文字と小文字を区別しない) 
-- 8 桁の数字
+- 1 文字 (大文字と小文字は区別されません) 
+- 8 桁
 
 1987 年 4 月 1 日から 2010 年 10 月 31 日まで:
 - 10 桁の数字
@@ -7311,9 +7134,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- 正規表現はRegex_germany_id_cardパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_germany_id_card検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- 正規表現は、Regex_germany_id_card一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_germany_id_card見つかりました。
 
 ```xml
 <!-- Germany Identity Card Number -->
@@ -7331,7 +7154,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 - ausweis
 - gpid
-- identification
+- ID
 - identifikation
 - identifizierungsnummer
 - Identity card
@@ -7339,14 +7162,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - id-nummer
 - 個人用 ID
 - personalausweis
-- pers、liche id nummer
-- pers、liche identifikationsnummer
-- pers、liche-id-nummer
+- persönliche id nummer
+- persönliche identifikationsnummer
+- persönliche-id-nummer
 
 
 ## <a name="germany-passport-number"></a>ドイツのパスポート番号
 
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU Passport Number 機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -7355,10 +7178,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 ### <a name="pattern"></a>パターン
 
 パターンには、以下のすべてが含まれる必要があります。
-- 最初の文字は、このセットの数字または文字 (C、F、G、H、J、K) です。 
+- 最初の文字は、このセットの数字または文字です (C、F、G、H、J、K) 
 - 3 桁の数字 
-- このセットの 5 桁の数字または文字 (C、-H、J-N、P、R、T、V-Z) 
-- 1 桁の数字
+- このセットから 5 桁の数字または文字 (C、-H、J-N、P、R、T、V-Z) 
+- 数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -7366,14 +7189,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_german_passport がパターンに一致するコンテンツを検出した。
-- キーワードが検出 `Keyword_german_passport` `Keywords_eu_passport_number_common` された、または検出された。
+- キーワードが見 `Keyword_german_passport` `Keywords_eu_passport_number_common` つかったか、検索されます。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_german_passport_data がパターンに一致するコンテンツを検出した。
-- キーワードが検出 `Keyword_german_passport` `Keywords_eu_passport_number_common` された、または検出された。
+- キーワードが見 `Keyword_german_passport` `Keywords_eu_passport_number_common` つかったか、検索されます。
 - チェックサムが渡される。
 
 ```xml
@@ -7406,25 +7229,25 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
-- reisep sse
+- reisepässe
 - passeport no.
 - passeport no
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
 - パスポート番号
 
 
-## <a name="germany-tax-identification-number"></a>ドイツの税金の識別番号
+## <a name="germany-tax-identification-number"></a>ドイツの納税者番号
 
 ### <a name="format"></a>フォーマット
 
@@ -7441,7 +7264,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - 3 桁の数字 
 - 省略可能なスペース
 - 2 桁の数字
-- 1 桁のチェック ディジット
+- 1 つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -7449,12 +7272,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_germany_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_germany_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_germany_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_germany_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_germany_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_germany_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Germany Tax Identification Number -->
@@ -7478,28 +7301,28 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
-- z最も近い#
-- z最も近い
-- znummer
+- zinn#
+- zinn
+- zinnnummer
 
 
 ## <a name="germany-value-added-tax-number"></a>ドイツの付加価値税番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -7512,11 +7335,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-11 文字の英数字のパターン:
+11 文字の英数字パターン:
 
-- D または d の文字
+- 文字 D または d
 - E または e の文字
-- 省略可能なスペース
+- オプションのスペース
 - 3 桁の数字
 - 省略可能なスペースまたはコンマ
 - 3 桁の数字
@@ -7529,12 +7352,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_germany_value_added_tax_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_germany_value_added_tax_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数Func_germany_value_added_tax_number一致するコンテンツを検索します。
+- ユーザーのキーワードKeywords_germany_value_added_tax_number見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_germany_value_added_tax_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数Func_germany_value_added_tax_number一致するコンテンツを検索します。
 
 ```xml
       <!-- Germany Value Added Tax Number -->
@@ -7552,18 +7375,18 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
 
-- vat number
-- vat no
+- vat 番号
+- vat いいえ
 - vat#
 - vat# mehrwertsteuer
-- wbst
+- mwst
 - mehrwertsteuer identifikationsnummer
 - mehrwertsteuer nummer
 
 
 ## <a name="greece-drivers-license-number"></a>ギリシャの運転免許証番号
 
-この機密情報の種類のエンティティは、EU の運転免許証番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -7571,7 +7394,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-9 桁の数字 
+9 桁 
   
 ### <a name="checksum"></a>チェックサム
 
@@ -7579,9 +7402,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_greece_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Greece Driver's License Number -->
@@ -7606,48 +7429,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -7656,74 +7479,74 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver's_license_number
 
 - δεια οδήγησης
-- Adeia odigigigs
+- Adeia odigisis
 - Άδεια οδήγησης
 - Δίπλωμα οδήγησης
 
@@ -7752,12 +7575,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一Regex_greece_id_cardコンテンツを検索する正規表現。
-- 検索されたKeyword_greece_id_card検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、Regex_greece_id_card一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_greece_id_card見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- パターンに一Regex_greece_id_cardコンテンツを検索する正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- 正規表現は、Regex_greece_id_card一致するコンテンツを検索します。
 
 ```xml
       <!-- Greece National ID Card -->
@@ -7777,9 +7600,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
 - ギリシャ語 ID
-- ギリシャの国民 ID
+- ギリシャ語の国 ID
 - ギリシャの個人用 ID カード
-- ギリシャ語の警察 ID
+- ギリシャの警察 ID
 - Identity card
 - tautotita
 - ταυτότητα
@@ -7790,7 +7613,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字の後に 7 桁の数字 (スペースまたは区切り記号なし)
+2 文字の後に 7 桁の数字が続き、スペースまたは区切り記号は使用されません。
   
 ### <a name="pattern"></a>パターン
 
@@ -7802,14 +7625,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_greece_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_greece_eu_passport_date` DD MMM YY の形式で日付を検出した (例 - 8 月 19 日の 28 日) またはキーワードが `Keywords_greece_eu_passport_date` 見つかった
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` つかったか、検索されます。 
+- 正規表現は `Regex_greece_eu_passport_date` 、DD MMM YY (例 - 8 月 19 日) の形式で日付を検索するか、キーワードが `Keywords_greece_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_greece_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Greece Passport Number -->
@@ -7839,12 +7662,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -7858,7 +7681,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 
 ## <a name="greece-social-security-number-amka"></a>ギリシャの社会保障番号 (AMKA)
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -7871,9 +7694,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-- YYMMDD の生年月日として 6 桁の数字
-- 4 桁の数字
-- チェック ディジット
+- 生年月日 YYMMDD の 6 桁
+- 4 桁
+- チェックの数字
   
 ### <a name="checksum"></a>チェックサム
 
@@ -7881,12 +7704,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_greece_eu_ssn` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_greece_eu_ssn_or_equivalent` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_greece_eu_ssn` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_greece_eu_ssn_or_equivalent` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_greece_eu_ssn` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_greece_eu_ssn` は、パターンに一致するコンテンツを検索します。 
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -7915,8 +7738,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
 
-## <a name="greece-tax-identification-number"></a>ギリシャの税金の識別番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="greece-tax-identification-number"></a>ギリシャの納税者番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -7937,10 +7760,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
   
 - 正規表現は、  `Regex_greece_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_greece_eu_tax_file_number` 検出した。 
+- キーワードが  `Keywords_greece_eu_tax_file_number` 見つかりました。 
     
 ```xml
       <!-- Greek Tax Identification Number -->
@@ -7958,26 +7781,26 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 - afm#
 - afm
-- a α|a μ α α α α α≦
-- a μ
+- aφμ|aφμ αρρθμι
+- aφμ
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- tax registry no
-- tax registry number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- 税レジストリなし
+- 税のレジストリ番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - taxregistryno#
 - tin id
-- tin no
+- tin いいえ
 - tin#
 - αριθμός φορολογικού μητρώου
 - τον αριθμό φορολογικού μητρώου
@@ -7993,7 +7816,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 8 ～ 9 桁の文字の組み合わせ:
-- 1 ~ 2 文字 (大文字と小文字を区別しない) 
+- 1 ~ 2 文字 (大文字と小文字は区別されません) 
 - 6 桁の数字 
 - チェック ディジットとして機能する最後の文字 (任意の数字か文字 A) はかっこで囲むことも可能。
 
@@ -8003,13 +7826,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_hong_kong_id_cardパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_hong_kong_id_card検出された。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_hong_kong_id_card一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_hong_kong_id_card見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数はFunc_hong_kong_id_cardパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数はFunc_hong_kong_id_card一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -8034,7 +7857,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - HKIDC
 - id card
 - Identity card
-- hk identity card
+- hk ID カード
 - 香港 ID
 - 香港身份證
 - 香港永久性居民身份證
@@ -8072,13 +7895,13 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字の後に 6 桁の数字
+2 文字の後に 6 桁の数字が続く
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字と 6 桁の数字:
+2 文字と 6 桁の数字:
   
-- 2 文字 (大文字と小文字を区別しない) 
+- 2 文字 (大文字と小文字は区別されません) 
 - 6 桁の数字
     
 ### <a name="checksum"></a>チェックサム
@@ -8087,10 +7910,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
   
 - 正規表現は、  `Regex_hungary_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -8114,48 +7937,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -8164,79 +7987,79 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver's_license_number
 
 - vezetoi engedely
-- vezetéi engedély
-- vezetéi engedélyek
+- vezetői engedély
+- vezetői engedélyek
 
 
 ## <a name="hungary-personal-identification-number"></a>ハンガリーの個人識別番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -8251,10 +8074,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 11 桁の数字:
   
-- 性別に対応する 1 桁の数字 (1900 年以前に生まれた市民または二重国籍を持つ市民の場合は、1 人の男性、2 人の女性、その他の数字も可能) 
-- 生年月日 (YYMMDD) に対応する 6 桁の数字
+- 性別に対応する 1 桁の数字 (1-男性、2-女性、その他の数字は、1900 年以前に生まれた市民または二重国籍を持つ市民でも可能です) 
+- 生年月日に対応する 6 桁の数字 (YYMMDD)
 - シリアル番号に対応する 3 桁の数字
-- 1 つのチェック ディジット
+- 1 つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -8262,14 +8085,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
   
-- この関数は  `Func_hungary_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_hungary_eu_national_id_card` 検出した。 
+- この関数  `Func_hungary_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_hungary_eu_national_id_card` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
   
-- この関数は  `Func_hungary_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
+- この関数  `Func_hungary_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Hungary Personal Identification Number -->
@@ -8292,24 +8115,24 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
-- id number
+- id 番号
 - identification number
 - sz ig
-- sz. ig.
+- sz。 ig.
 - sz.ig.
-- személyazonosító zonzolvzony
-- személyi zolvlvy
+- személyazonosító igazolvány
+- személyi igazolvány
 
 
 ## <a name="hungary-passport-number"></a>ハンガリーのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字の後に 6 桁または 7 桁の数字 (スペースまたは区切り記号なし)
+2 つの文字の後に 6 桁または 7 桁の数字が続き、スペースまたは区切り記号はありません。
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字の後に 6 桁または 7 桁の数字
+2 文字の後に 6 桁または 7 桁の数字が続く
   
 ### <a name="checksum"></a>チェックサム
 
@@ -8317,14 +8140,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_hungary_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` された、または検出された。 
-- 正規表現が DD `Regex_hungary_eu_passport_date` MMM/MMM YY の形式で日付を検出した (例 - 01 Mの間違い/MAR 12) またはキーワードが `Keywords_eu_passport_date` 見つかった
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` つかったか、検索されます。 
+- 正規表現は `Regex_hungary_eu_passport_date` 、DD MMM/MMM YY (例 - 01 MÁR/MAR 12) 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_hungary_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Hungary Passport Number -->
@@ -8353,12 +8176,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -8373,7 +8196,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
 ## <a name="hungary-social-security-number-taj"></a>ハンガリーの社会保障番号 (TAJ)
@@ -8392,14 +8215,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
   
-- この関数は  `Func_hungary_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_hungary_eu_ssn_or_equivalent` 検出した。 
+- この関数  `Func_hungary_eu_ssn_or_equivalent` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_hungary_eu_ssn_or_equivalent` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
   
-- この関数は  `Func_hungary_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
+- この関数  `Func_hungary_eu_ssn_or_equivalent` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
@@ -8430,15 +8253,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - ssn#
 - 社会保障なし
 - áfa
-- 、、 、zösségi adószám
-- általtalos forgalmi adó szám
+- közösségi adószám
+- általános forgalmi adó szám
 - hozzáadottérték adó
 - áfa szám
 - magyar áfa szám
 
 
-## <a name="hungary-tax-identification-number"></a>ハンガリーの税金の識別番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="hungary-tax-identification-number"></a>ハンガリーの納税者番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -8447,15 +8270,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-10 桁の数字 (スペースまたは区切り記号なし)
+スペースまたは区切り記号がない 10 桁
   
 ### <a name="pattern"></a>パターン
 
 10 桁の数字:
   
-- "8" でなければならない 1 桁の数字 
+- "8" である必要があります 1 桁 
 - 8 桁の数字
-- 1 つのチェック ディジット
+- 1 つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -8463,14 +8286,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
   
-- この関数は  `Func_hungary_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_hungary_eu_tax_file_number` 検出した。 
+- この関数  `Func_hungary_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_hungary_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
   
-- この関数は  `Func_hungary_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+- この関数  `Func_hungary_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Hungary Tax Identification Number -->
@@ -8496,30 +8319,30 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - adóazonosító szám
 - adóhatóság szám
 - adószám
-- ハンガリースズ
+- ハンガリーのスズ
 - hungatiantin#
-- tax authority no
+- 税務当局 なし
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
-- vat number
+- vat 番号
 
 
 ## <a name="hungary-value-added-tax-number"></a>ハンガリーの付加価値税番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -8532,11 +8355,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-10 文字の英数字のパターン:
+10 文字の英数字パターン:
 
 - 2 文字 - HU または hu
-- 省略可能なスペース
-- 8 桁の数字
+- オプションのスペース
+- 8 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -8544,14 +8367,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 
-- この関数はFunc_hungarian_value_added_tax_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_hungarian_value_added_tax_number検索されます。
+- この関数はFunc_hungarian_value_added_tax_number一致するコンテンツを検索します。
+- ユーザーのキーワードKeywords_hungarian_value_added_tax_number見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 
-- この関数はFunc_hungarian_value_added_tax_numberパターンに一致するコンテンツを検索します。
+- この関数はFunc_hungarian_value_added_tax_number一致するコンテンツを検索します。
 
 ```xml
       <!-- Hungarian Value Added Tax Number -->
@@ -8577,8 +8400,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - hungarianvatno#
 - tax no.
 - 付加価値税 áfa
-- 、、 、zösségi adószám
-- általtalos forgalmi adó szám
+- közösségi adószám
+- általános forgalmi adó szám
 - hozzáadottérték adó
 - áfa szám
 
@@ -8592,11 +8415,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 10 桁の文字または数字:
-- 3 文字 (大文字と小文字を区別しない) 
-- C、P、H、F、A、T、B、L、J、G の文字 (大文字小文字を区別しない)
+- 3 文字 (大文字と小文字は区別されません) 
+- C、P、H、F、A、T、B、L、J、G の文字 (大文字と小文字は区別されません)
 - レター
 - 4 桁の数字 
-- アルファベットのチェック ディジットである文字
+- 英字チェックの数字である文字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -8604,12 +8427,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一Regex_india_permanent_account_numberコンテンツを検索する正規表現。
-- 検索されたKeyword_india_permanent_account_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、Regex_india_permanent_account_number一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_india_permanent_account_number見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- パターンに一Regex_india_permanent_account_numberコンテンツを検索する正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- 正規表現は、Regex_india_permanent_account_number一致するコンテンツを検索します。
 
 
 ```xml
@@ -8634,7 +8457,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - Permanent Account Number 
 - PAN 
    
-## <a name="india-unique-identification-aadhaar-number"></a>インド固有の識別番号 (Aadhaar)
+## <a name="india-unique-identification-aadhaar-number"></a>インドの一意の ID (Aadhaar) 番号
 
 ### <a name="format"></a>フォーマット
 
@@ -8648,7 +8471,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - スペースまたはハイフン 1 つ (省略可能)  
 - 4 桁の数字 
 - スペースまたはハイフン 1 つ (省略可能)  
-- 最後の桁 (チェック ディジット)
+- 最後の数字 (チェック桁)
 
 ### <a name="checksum"></a>チェックサム
 
@@ -8656,14 +8479,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_india_aadhaarパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_india_aadhar検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数Func_india_aadhaar一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_india_aadhar見つかりました。
 - チェックサムが渡される。
 - 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 
-- この関数はFunc_india_aadhaarパターンに一致するコンテンツを検索します。
+- この関数Func_india_aadhaar一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -8712,10 +8535,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 
-- パターンに一Regex_indonesia_id_cardコンテンツを検索する正規表現。
-- 検索されたKeyword_indonesia_id_card検索されます。
+- 正規表現は、Regex_indonesia_id_card一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_indonesia_id_card見つかりました。
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -8738,20 +8561,20 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-国コード (2 文字) とチェックディジット (2 桁の数字) と bban 番号 (最大 30 文字)
+国コード (2 文字) プラスチェックの数字 (2 桁) プラス bban 番号 (最大 30 文字)
 
 ### <a name="pattern"></a>パターン
 
 パターンには、以下のすべてが含まれる必要があります。
 
 - 2 文字の国コード
-- 2 桁のチェックディジット (オプションのスペースが続く) 
-- 4 桁の文字または数字で構成される 1 ~ 7 個のグループ (スペースで区切り可能)
+- 2 桁のチェック数字 (その後にオプションのスペース) 
+- 4 つの文字または数字の 1 ~ 7 グループ (スペースで区切って指定できます)
 - 1 ～ 3 個の文字または数字
 
-国ごとに形式が少し異なります。 IBAN の機密情報の種類は、次の 60 か国を対象とします。
+国ごとに形式が若干異なります。 IBAN の機密情報の種類は、次の 60 か国を対象とします。
 
-ad、ae、al、at、az、ba、be、bg、bh、ch、 cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、gi、gl、gr、hr、hu、ie、il、is、it、kw、kz、lb、li、lt、lu、lv、mc、md、me、mk、mr、mt、mu、nl、no、pl、pt、ro、rs、sa、se、si、sk、sm、tn、tr、vg
+ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, sk, sk, sm, tvg, trvg
 
 ### <a name="checksum"></a>チェックサム
 
@@ -8759,7 +8582,7 @@ ad、ae、al、at、az、ba、be、bg、bh、ch、 cr、cy、cz、de、dk、do�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 
 - 関数 Func_iban がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
@@ -8793,11 +8616,11 @@ Dictionary
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- 検索されたDictionary_icd_10_updated検索されます。
-- 検索されたDictionary_icd_10_codes検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- ユーザーからのキーワードDictionary_icd_10_updated見つかりました。
+- ユーザーのキーワードDictionary_icd_10_codes見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 更新されたDictionary_icd_10_キーワードが見つかりました。
 
 ```xml
@@ -8815,9 +8638,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="keywords"></a>キーワード
 
-Dictionary_icd_10_updated キーワード ディクショナリの任意の用語。これは、国際言語の分類、10 番目のリビジョン、変更 [履歴 (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づいて作成されます。 この型は、保険コードではなく、用語のみを検索します。
+病気の国際分類、第 10 リビジョン、臨床変更 [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づく、Dictionary_icd_10_updated キーワード 辞書の任意の用語。 この型は、保険コードではなく、用語のみを検索します。
 
-Dictionary_icd_10_codes キーワード ディクショナリの任意の用語。これは、国際言語の分類、10 番目のリビジョン、変更の変更 [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づいて作成されます。 この型は、説明ではなく、保険コードのみを検索します。
+病気の国際分類、第 10 リビジョン、臨床変更 [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)に基づく、Dictionary_icd_10_codes キーワード 辞書の任意の用語。 この型は、説明ではなく、保険コードのみを検索します。
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>病気の国際分類 (ICD-9-CM)
 
@@ -8835,12 +8658,12 @@ Dictionary
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- 検索されたDictionary_icd_9_updated検索されます。
-- 検索されたDictionary_icd_9_codes検出された。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- このページのDictionary_icd_9_updatedが見つかりました。
+- ユーザーのキーワードDictionary_icd_9_codes見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 検索されたDictionary_icd_9_updated検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- このページのDictionary_icd_9_updatedが見つかりました。
 
 ```xml
     <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -8856,19 +8679,19 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="keywords"></a>キーワード
 
-Dictionary_icd_9_updated キーワード ディクショナリの任意の用語。これは、国際化の分類、9 番目のリビジョン、変更 [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605)に基づくもの。 この型は、保険コードではなく、用語のみを検索します。
+病気の国際分類、第 9 改訂、臨床変更 [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605)に基づく、Dictionary_icd_9_updated キーワード 辞書からの任意の用語。 この型は、保険コードではなく、用語のみを検索します。
 
-Dictionary_icd_9_codes キーワード ディクショナリからの任意の用語。これは、国際化の分類、9 番目のリビジョン、変更の修正 [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605)に基づくもの。 この型は、説明ではなく、保険コードのみを検索します。
+病気の国際分類、第 9 改訂、臨床変更 [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605)に基づく、Dictionary_icd_9_codes キーワード 辞書からの任意の用語。 この型は、説明ではなく、保険コードのみを検索します。
 
 ## <a name="ip-address"></a>IP アドレス
 
 ### <a name="format"></a>フォーマット
 
 #### <a name="ipv4"></a>IPv4:
-IPv4 アドレスの書式付き (ピリオド) および書式設定されていない (ピリオドなし) バージョンを扱う複雑なパターン
+IPv4 アドレスの書式付き (ピリオド) バージョンと書式設定されていない (ピリオドなし) バージョンをアカウントする複雑なパターン
 
 #### <a name="ipv6"></a>IPv6:
-書式設定された IPv6 番号 (コロンを含む) を表す複雑なパターン
+書式設定された IPv6 番号を表す複雑なパターン (コロンを含む)
 
 ### <a name="pattern"></a>パターン
 
@@ -8878,15 +8701,15 @@ IPv4 アドレスの書式付き (ピリオド) および書式設定されて�
 
 ### <a name="definition"></a>定義
 
-IPv6 の場合、DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+IPv6 の場合、DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現 Regex_ipv6_address がパターンに一致するコンテンツを検出した。
 - Keyword_ipaddress のキーワードを検出しなかった。
 
-IPv4 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、95% の確証を持ってそれがこの種類の機密情報であると特定します。
+IPv4 の場合、DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現 Regex_ipv4_address がパターンに一致するコンテンツを検出した。
 - Keyword_ipaddress のキーワードを検出した。
 
-IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、95% の確証を持ってそれがこの種類の機密情報であると特定します。
+IPv6 の場合、DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現 Regex_ipv6_address がパターンに一致するコンテンツを検出した。
 - Keyword_ipaddress のキーワードを検出しなかった。
 
@@ -8932,10 +8755,10 @@ IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件
   
 ### <a name="pattern"></a>パターン
 
-6 桁の数字と 4 桁の文字:
+6 桁の数字と 4 文字:
   
 - 6 桁の数字
-- 4 文字 (大文字と小文字を区別しない)
+- 4 文字 (大文字と小文字は区別されません)
     
 ### <a name="checksum"></a>チェックサム
 
@@ -8943,10 +8766,10 @@ IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
   
 - 正規表現は、  `Regex_ireland_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -8971,48 +8794,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -9021,86 +8844,86 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver's_license_number
 
-- cead数as tiom tiom tiom tiom tia
-- cead tiais tiom tiom数a
+- ceadúnas tiomána
+- ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>アイルランドのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字または数字の後に 7 桁の数字 (スペースまたは区切り記号なし)
+2 つの文字または数字の後に、スペースまたは区切り記号がない 7 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字または数字、その後に 7 桁の数字:
+2 つの文字または数字の後に 7 桁の数字が続きます。
   
-- 2 桁の数字または文字 (大文字と小文字を区別しない)
+- 2 桁または 1 文字 (大文字と小文字は区別されません)
 - 7 桁の数字
     
 ### <a name="checksum"></a>チェックサム
@@ -9109,14 +8932,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_ireland_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_ireland_eu_passport_date` DD MMM/MMM YYYY の形式で日付を検出した (例 - 01 BEA/MAY 1988) またはキーワードが `Keywords_eu_passport_date` 見つかった
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` つかったか、検索されます。 
+- 正規表現は `Regex_ireland_eu_passport_date` 、DD MMM/MMM YYYY (例 - 01 BEA/MAY 1988) の形式で日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_ireland_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` された、または検出された。
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` つかったか、検索されます。
     
 ```xml
       <!-- Ireland Passport Number -->
@@ -9146,12 +8969,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -9160,25 +8983,25 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
 - passeport numero
-- uimhreacha pas pas数
+- uimhreacha pasanna
 - uimhir pas
-- uimhirphas
+- uimhir phas
 - uimhreacha pas
-- uimhir chirta
-- uimhir chhirta
+- uimhir cárta
+- uimhir chárta
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="ireland-personal-public-service-pps-number"></a>アイルランドの個人公共サービス (PPS) 番号
+## <a name="ireland-personal-public-service-pps-number"></a>アイルランドの個人公開サービス (PPS) 番号
 
 ### <a name="format"></a>フォーマット
 
 古い形式 (2012 年 12 月 31 日まで):
-- 7 桁の数字の後に 1 ~ 2 桁の文字 
+- 7 桁の数字の後に 1 ~ 2 文字 
 
 新しい形式 (2013 年 1 月 1 日以降):
 - 7 桁の数字の後に 2 文字
@@ -9186,13 +9009,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 古い形式 (2012 年 12 月 31 日まで):
-- 7 桁の数字 
-- 1 ~ 2 文字 (大文字と小文字を区別しない) 
+- 7 桁 
+- 1 ~ 2 文字 (大文字と小文字は区別されません) 
 
 新しい形式 (2013 年 1 月 1 日以降):
-- 7 桁の数字 
-- アルファベットのチェック ディジットである文字 (大文字小文字を区別しない) 
-- A ~ I の範囲のオプションの文字、または "W"
+- 7 桁 
+- 英字チェックの数字である文字 (大文字と小文字を区別しない) 
+- 範囲 A から I、または "W" のオプションの文字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -9200,13 +9023,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_ireland_ppsパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_ireland_eu_national_id_card検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_ireland_pps一致するコンテンツを検索します。
+- ユーザーからのキーワードKeywords_ireland_eu_national_id_card見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数はFunc_ireland_ppsパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数はFunc_ireland_pps一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -9229,13 +9052,13 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - クライアント ID サービス
 - identification number
 - 個人用 ID 番号
-- 個人の公共サービス番号
+- 個人のパブリック サービス番号
 - 個人用サービスなし
-- phearsantarbrbhíse poiblí
+- phearsanta seirbhíse poiblí
 - pps no
-- pps number
+- pps 番号
 - pps num
-- pps service no
+- pps サービスなし
 - ppsn
 - ppsno#
 - ppsno
@@ -9244,29 +9067,29 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - publicserviceno#
 - publicserviceno
 - 収益と社会保険番号
-- rsi no
-- rsi number
+- rsi いいえ
+- rsi 番号
 - rsin
-- rbhís aitheantais クライアント
+- seirbhís aitheantais クライアント
 - uimh
-- uimhir aitheantais chachach
+- uimhir aitheantais chánach
 - uimhir aitheantais phearsanta
-- uimhir phearsantarbhíse poiblí
+- uimhir phearsanta seirbhíse poiblí
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
@@ -9279,13 +9102,13 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 ### <a name="pattern"></a>パターン
 
 書式設定:
-- 2 桁の数字 
+- 2 桁 
 - ダッシュ 
 - 3 桁の数字 
 - ダッシュ 
-- 8 桁の数字
+- 8 桁
 
-書式設定されていない場合:
+Unformatted:
 - 	13 桁の連続する数字
 
 ### <a name="checksum"></a>チェックサム
@@ -9294,7 +9117,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現 Regex_israel_bank_account_number がパターンに一致するコンテンツを検出した。
 - Keyword_israel_bank_account_number のキーワードを検出した。
 
@@ -9323,7 +9146,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字
+9 桁
 
 ### <a name="pattern"></a>パターン
 
@@ -9335,7 +9158,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_israeli_national_id_number がパターンに一致するコンテンツを検出した。
 - Keyword_Israel_National_ID のキーワードを検出した。
 - チェックサムが渡される。
@@ -9365,30 +9188,30 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 -   رقم الهوية
 -   عدد هوية فريدة من نوعها
 -   idnumber#
--   id number
+-   id 番号
 -   ID なし        
 -   identitynumber#
 -   ID 番号
--   identitynumber       
+-   イスラエルの国番号       
 -   個人用 ID
 -   一意の ID  
 
    
 ## <a name="italy-drivers-license-number"></a>イタリアの運転免許証番号
 
-この機密情報の種類のエンティティは、EU の運転免許証番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
-10 桁の文字と数字の組み合わせ
+10 文字と数字の組み合わせ
 
 ### <a name="pattern"></a>パターン
 
-10 桁の文字と数字の組み合わせ:
-- 1 文字 (大文字と小文字を区別しない) 
-- 文字 "A" または "V" (大文字と小文字を区別しない) 
-- 7 桁の数字
-- 1 文字 (大文字と小文字を区別しない)
+10 文字と数字の組み合わせ:
+- 1 文字 (大文字と小文字は区別されません) 
+- 文字 "A" または "V" (大文字と小文字は区別されません) 
+- 7 桁
+- 1 文字 (大文字と小文字は区別されません)
 
 ### <a name="checksum"></a>チェックサム
 
@@ -9396,9 +9219,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、 `Regex_italy_drivers_license_number` パターンに一致するコンテンツを検索します。
-- キーワードが検出 `Keywords_eu_driver's_license_number` `Keyword_italy_drivers_license_number` された、または検出された。
+- キーワードが見 `Keywords_eu_driver's_license_number` `Keyword_italy_drivers_license_number` つかったか、検索されます。
 
 ```xml
     <!-- Italy Driver's license Number -->
@@ -9423,48 +9246,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -9473,68 +9296,68 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
@@ -9546,7 +9369,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 
 ## <a name="italy-fiscal-code"></a>イタリアの会計コード
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -9555,18 +9378,18 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-指定したパターンの 16 文字の文字と数字の組み合わせ
+指定したパターンの文字と数字の 16 文字の組み合わせ
   
 ### <a name="pattern"></a>パターン
 
 16 文字の文字と数字の組み合わせ:
-- ファミリ名の最初の 3 つの子に対応する 3 文字
-- 名の最初、3 番目、および 4 番目の子に対応する 3 文字
-- 生年月日の最後の数字に対応する 2 桁の数字
-- 1 文字が出生月のレターに対応します。アルファベット順で使用されますが、A から E、H、L、M、P、R から T の文字だけが使用されます (したがって、1 月は A、10 月は R です)。
-- 生年月日に対応する 2 桁の数字—性別を区別するために、40 が女性の生年月日に追加されます。
-- 人物が生まれた場所に固有の市外コードに対応する 4 桁の数字 (国外では国全体のコードが使用されます)
-- 1 つのパリティ ディジット
+- ファミリ名の最初の 3 つの子文字に対応する 3 文字
+- 最初の名前、3 番目、4 番目の子名に対応する 3 文字
+- 出生年の最後の数字に対応する 2 桁の数字
+- 出生月の文字に対応する 1 つの文字 - 文字はアルファベット順で使用されますが、A から E、H、L、M、P、R から T の文字だけが使用されます (したがって、1 月は A で、10 月は R です)
+- 性別を区別するために、出生日に対応する 2 桁の数字が、女性の出生日に 40 を追加します。
+- 人が生まれた市区町村に固有の市外コードに対応する 4 桁の数字 (国全体のコードは外国で使用されます)
+- 1 つのパリティディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -9574,12 +9397,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_italy_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_italy_eu_national_id_card` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_italy_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_italy_eu_national_id_card` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_italy_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_italy_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Italy Fiscal Code -->
@@ -9598,37 +9421,37 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
-- codice fiscal
+- codice の会計
 - codice fiscale
 - codice id personale
 - codice personale
 - 会計コード
 - numero certificato personale
-- numero di identific di identific di fiscale
+- numero di identificazione Fiscale
 - numero id personale
 - numero personale
-- 個人の証明書番号
+- 個人証明書番号
 - 個人用コード
 - 個人用 ID コード
 - 個人用 ID 番号
 - personalcodeno#
-- tax code
+- 税コード
 - tax id
-- tax identification no
-- 税識別番号
-- tax identity number
+- 税の識別なし
+- 税の識別番号
+- 税 ID 番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
@@ -9636,14 +9459,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字または数字の後に 7 桁の数字 (スペースまたは区切り記号なし)
+2 つの文字または数字の後にスペースまたは区切り記号を付けない 7 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字または数字、その後に 7 桁の数字:
+2 つの文字または数字の後に 7 桁の数字が続きます。
   
 - 2 桁の数字または文字 (大文字と小文字を区別しない)
-- 7 桁の数字
+- 7 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -9651,14 +9474,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_italy_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_italy_eu_passport_date` DD MMM/MMM YYYY の形式で日付を検出した (例 - 01 GEN/JAN 1988) またはキーワードが `Keywords_eu_passport_date` 見つかった
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` つかったか、検索されます。 
+- 正規表現は `Regex_italy_eu_passport_date` 、DD MMM/MMM YYYY (例 - 01 GEN/JAN 1988) 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_italy_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Italy Passport Number -->
@@ -9688,12 +9511,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -9704,7 +9527,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - italiana passaporto
 - passaporto italiana
 - passaporto numero
-- numéro passeport
+- numéro パスポート
 - numero di passaporto
 - numeri del passaporto
 - passeport italien
@@ -9712,11 +9535,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
 ## <a name="italy-value-added-tax-number"></a>イタリアの付加価値税番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -9725,11 +9548,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-13 文字の英数字パターンとオプションの区切り文字
+13 文字の英数字パターン (オプションの区切り記号付き)
 
 ### <a name="pattern"></a>パターン
 
-13 文字の英数字パターンとオプションの区切り文字:
+13 文字の英数字パターン (オプションの区切り記号付き):
 
 - I または i
 - T または t
@@ -9742,12 +9565,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_italy_value_added_tax_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_italy_value_added_tax_number見つかりました。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_italy_value_added_tax_number一致するコンテンツを検索します。
+- このページのKeywords_italy_value_added_tax_number見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_italy_value_added_tax_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_italy_value_added_tax_number一致するコンテンツを検索します。
 
 ```xml
       <!-- Italy Value Added Tax -->
@@ -9766,26 +9589,26 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
 
-- vat number
-- vat no
+- vat 番号
+- vat いいえ
 - vat#
-- 最も近い
-- 最も近い#
+- iva
+- iva#
 
 
 ## <a name="japan-bank-account-number"></a>日本の銀行口座番号
 
 ### <a name="format"></a>フォーマット
 
-7 桁または 8 桁の数字
+7 桁または 8 桁
 
 ### <a name="pattern"></a>パターン
 
 銀行口座番号:
-- 7 桁または 8 桁の数字
+- 7 桁または 8 桁
 - 銀行口座のブランチ コード:
-- 4 桁の数字 
-- スペースまたはダッシュ (省略可能) 
+- 4 桁 
+- スペースまたはダッシュ (オプション) 
 - 3 桁の数字
 
 チェックサム
@@ -9794,14 +9617,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_jp_bank_account がパターンに一致するコンテンツを検出した。
 - Keyword_jp_bank_account のキーワードを検出した。
 - 次のいずれかの条件に該当する:
 - 関数 Func_jp_bank_account_branch_code がパターンに一致するコンテンツを検出した。
 - Keyword_jp_bank_branch_code のキーワードを検出した。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_jp_bank_account がパターンに一致するコンテンツを検出した。
 - Keyword_jp_bank_account のキーワードを検出した。
 
@@ -9892,7 +9715,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_jp_drivers_license_number がパターンに一致するコンテンツを検出した。
 - Keyword_jp_drivers_license_number のキーワードを検出した。
 
@@ -9931,24 +9754,24 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - 運転免許証ナンバー
 - 運転免許ナンバー
 - 免許証ナンバー
-- "最も近い"
-- "最も近い"
-- データの変更
-- 最も近い
+- (2)
+- (1)(2)(2
+- 証証ノ
+- 予約の変更
 - 運転経歴証明書番号
 - 運転経歴証明書
-- [最も近い]
-- "最も近い"
-- ?証。??
-- 最も近い
+- 彼は、その他の方法を使用します。
+- (1)
+- [証証]
+- (1)(2)(2
 - 運転免許証#
 - 運転免許#
 - 免許証#
 - 免許#
 
 
-## <a name="japan-my-number---corporate"></a>日本のマイ ナンバー - 企業
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="japan-my-number---corporate"></a>日本のマイナンバー - 企業
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -9961,9 +9784,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-13 桁の数字:
+13 桁の番号:
 
-- 1 から 9 の 1 桁の数字
+- 1 から 9 の 1 桁
 - 12 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -9972,12 +9795,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_japanese_my_number_corporateパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_japanese_my_number_corporate検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_japanese_my_number_corporate一致するコンテンツを検索します。
+- ユーザーからのキーワードKeywords_japanese_my_number_corporate見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_japanese_my_number_corporateパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_japanese_my_number_corporate一致するコンテンツを検索します。
 
 ```xml
       <!-- Japanese My Number – Corporate -->
@@ -10008,8 +9831,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - 指定通知書
 
 
-## <a name="japan-my-number---personal"></a>日本のマイ ナンバー - 個人用
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="japan-my-number---personal"></a>日本のマイナンバー - 個人用
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -10018,17 +9841,17 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-12 桁の数字
+12 桁の番号
 
 ### <a name="pattern"></a>パターン
 
-12 桁の数字:
+12 桁の番号:
 
-- 4 桁の数字
+- 4 桁
 - オプションのスペース、ドット、またはハイフン
-- 4 桁の数字
+- 4 桁
 - オプションのスペース、ドット、またはハイフン
-- 4 桁の数字
+- 4 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -10036,12 +9859,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_japanese_my_number_personalパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_japanese_my_number_personal検出された。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_japanese_my_number_personal一致するコンテンツを検索します。
+- ユーザーのキーワードKeywords_japanese_my_number_personal見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数はFunc_japanese_my_number_personalパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数はFunc_japanese_my_number_personal一致するコンテンツを検索します。
 
 ```xml
       <!-- Japanese My Number – Personal -->
@@ -10076,11 +9899,11 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字の後に 7 桁の数字
+2 文字の後に 7 桁の数字を付け
 
 ### <a name="pattern"></a>パターン
 
-2 桁の文字 (大文字と小文字を区別しない) の後に 7 桁の数字
+2 文字 (大文字と小文字は区別されません) の後に 7 桁の数字が続く
 
 ### <a name="checksum"></a>チェックサム
 
@@ -10088,7 +9911,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_jp_passport がパターンに一致するコンテンツを検出した。
 - Keyword_jp_passport のキーワードを検出した。
 
@@ -10115,25 +9938,25 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - パスポートナンバー
 - パスポート＃
 - パスポート#
-- が表示されます。
+- 下に示すのは、1 つの
 - 旅券番号
 - 旅券番号＃
 - 旅券番号♯
 - 旅券ナンバー
 
 
-## <a name="japan-residence-card-number"></a>日本の名刺番号
+## <a name="japan-residence-card-number"></a>日本の在留カード番号
 
 ### <a name="format"></a>フォーマット
 
-12 桁の文字と数字
+12 文字と数字
 
 ### <a name="pattern"></a>パターン
 
-12 桁の文字と数字:
-- 2 文字 (大文字と小文字を区別しない)
-- 8 桁の数字 
-- 2 文字 (大文字と小文字を区別しない)
+12 文字と数字:
+- 2 文字 (大文字と小文字は区別されません)
+- 8 桁 
+- 2 文字 (大文字と小文字は区別されません)
 
 ### <a name="checksum"></a>チェックサム
 
@@ -10141,9 +9964,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- パターンに一Regex_jp_residence_card_numberコンテンツを検索する正規表現。
-- 検索されたKeyword_jp_residence_card_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_jp_residence_card_number一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_jp_residence_card_number見つかりました。
 
 ```xml
 <!--Japan Residence Card Number-->
@@ -10159,14 +9982,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
-- 名刺番号
-- 名刺なし
-- 名刺#
+- 在留カード番号
+- 在留カードなし
+- 在留カード#
 - 在留カード番号
 - 在留カード
 - 在留番号
 
-## <a name="japan-resident-registration-number"></a>日本の住民登録番号
+## <a name="japan-resident-registration-number"></a>日本居住者登録番号
 
 ### <a name="format"></a>フォーマット
 
@@ -10182,7 +10005,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_jp_resident_registration_number がパターンに一致するコンテンツを検出した。
 - Keyword_jp_resident_registration_number のキーワードを検出した。
 
@@ -10221,9 +10044,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 7 ～ 12 桁の数字:
-- 4 桁の数字 
-- ハイフン (省略可能) 
-- 6 桁の数字 OR
+- 4 桁 
+- ハイフン (オプション) 
+- 6 桁の OR
 - 7 ～ 12 桁の連続する数字
 
 ### <a name="checksum"></a>チェックサム
@@ -10232,11 +10055,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_jp_sin がパターンに一致するコンテンツを検出した。
 - Keyword_jp_sin のキーワードを検出した。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_jp_sin_pre_1997 がパターンに一致するコンテンツを検出した。
 - Keyword_jp_sin のキーワードを検出した。
 
@@ -10282,14 +10105,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-3 桁の文字の後に 6 桁の数字
+3 文字の後に 6 桁の数字が続く
   
 ### <a name="pattern"></a>パターン
 
-3 桁の文字と 6 桁の数字:
+3 文字と 6 桁の数字:
   
-- 3 文字 (大文字と小文字を区別しない) 
-- 6 桁の数字
+- 3 文字 (大文字と小文字は区別されません) 
+- 6 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -10297,9 +10120,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_latvia_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -10324,48 +10147,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -10374,77 +10197,77 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver's_license_number
 
-- autovadvatāja apliecvaba
-- autovadvatāja apliecvas
-- vadvatāja apliecva
+- autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
-## <a name="latvia-personal-code"></a>ラトビアの個人コード
+## <a name="latvia-personal-code"></a>ラトビアの個人用コード
 
 ### <a name="format"></a>フォーマット
 
@@ -10458,14 +10281,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 - 生年月日に対応する 6 桁の数字 (DDMMYY) 
 - ハイフン
-- 1 桁の数字 (19th century の場合は "0"、20th century の場合は "1"、21st century の場合は "2")
-- 4 桁の数字(ランダムに生成)
+- 生後世紀に対応する 1 桁の数字 (19 世紀は "0"、20 世紀は "1"、21 世紀は "2")
+- 4 桁の数字、ランダムに生成される
 
 新しい形式
 
 11 桁の数字
 
-- 2 桁の数字 "32"
+- 2 桁の "32"
 - 9 桁の数字
     
 ### <a name="checksum"></a>チェックサム
@@ -10474,12 +10297,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- 関数または  `Func_latvia_eu_national_id_card` 正規表現が `Regex_latvia_eu_national_id_card_new_format` パターンに一致するコンテンツを見つける。 
-- キーワードを  `Keywords_latvia_eu_national_id_card` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 関数または  `Func_latvia_eu_national_id_card` 正規表現は、 `Regex_latvia_eu_national_id_card_new_format` パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_latvia_eu_national_id_card` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 関数または  `Func_latvia_eu_national_id_card` 正規表現が `Regex_latvia_eu_national_id_card_new_format` パターンに一致するコンテンツを見つける。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 関数または  `Func_latvia_eu_national_id_card` 正規表現は、 `Regex_latvia_eu_national_id_card_new_format` パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Latvia Personal Code -->
@@ -10514,38 +10337,38 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
-- 管理用番号
-- a最も近い
-- 生年月日
-- citizen number
-- ユーザー番号
-- electronic census number
+- 管理番号
+- alvas nē
+- 出生番号
+- 市民番号
+- 民事番号
+- 電子国勢調査番号
 - 電子番号
 - 会計コード
 - 医療ユーザー番号
 - id#
 - id-code
 - identification number
-- identifikāc numurs
+- identifikācijas numurs
 - id-number
-- 個別の番号
-- latv、a、
+- 個々の番号
+- latvija alva
 - nacionālais id
 - national id
-- national identifying number
-- national identity number
+- 国の識別番号
+- 国の ID 番号
 - national insurance number
-- national register number
-- nodok a numurs
-- nodok の id
-- nodok、identifikāc、 numurs
-- 個人の証明書番号
+- 国内登録番号
+- nodokは numurs
+- nodok
+- nodokijau identifikācija numurs
+- 個人証明書番号
 - 個人用コード
 - 個人用 ID コード
 - 個人用 ID 番号
 - 個人識別コード
 - 個人識別子
-- 個人の ID 番号
+- 個人 ID 番号
 - 個人番号
 - 個人の数値コード
 - personalcodeno#
@@ -10559,19 +10382,19 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - 州税コード
 - tax file number
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 - 投票者の番号
 
@@ -10579,14 +10402,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字または数字の後に 7 桁の数字 (スペースまたは区切り記号なし)
+2 つの文字または数字の後にスペースまたは区切り記号を付けない 7 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字または数字、その後に 7 桁の数字:
+2 つの文字または数字の後に 7 桁の数字が続きます。
   
 - 2 桁の数字または文字 (大文字と小文字を区別しない)
-- 7 桁の数字
+- 7 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -10594,14 +10417,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_latvia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_latvia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Latvia Passport Number -->
@@ -10631,12 +10454,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -10654,7 +10477,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
 ## <a name="lithuania-drivers-license-number"></a>リトアニアの運転免許証番号
@@ -10665,7 +10488,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-8 桁の数字 
+8 桁 
   
 ### <a name="checksum"></a>チェックサム
 
@@ -10673,9 +10496,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_lithuania_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -10700,48 +10523,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -10750,78 +10573,78 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver's_license_number
 
-- vair、tojo pa、m、および
-- vaireritojo paのymjimo numeris
-- vair、tojo pa、ym、jimo numeriai
+- vairuotojo pažymėjimas
+- vairuotojo pažymėjimo numeris
+- vairuotojo pažymėjimo numeriai
 
-## <a name="lithuania-personal-code"></a>リトアニアの個人コード
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="lithuania-personal-code"></a>リトアニアの個人用コード
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -10836,10 +10659,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 スペースと区切り記号のない 11 桁の数字:
   
-- 性別と出生後の年齢に対応する 1 桁の数字 (1 ~ 6)
+- 人の性別と出生世紀に対応する 1 桁の数字 (1 ~ 6)
 - 生年月日に対応する 6 桁の数字 (YYMMDD) 
 - 生年月日のシリアル番号に対応する 3 桁の数字
-- 1 桁のチェック ディジット
+- 1 つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -10847,12 +10670,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_lithuania_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_lithuania_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_lithuania_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_lithuania_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_lithuania_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_lithuania_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Lithuania Personal Code -->
@@ -10877,33 +10700,33 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 - asmeninis skaitmeninis kodas
 - asmens kodas
-- citizen service number
-- mokesčič id
-- mokesčiの identifikavimas numeris
-- mokesčiの identifikavimo numeris
+- 市民サービス番号
+- mokesči id
+- mokesči identifikavimas numeris
+- mokesči identifikavimo numeris
 - mokesčič numeris
 - national identification number
 - 個人用コード
 - 個人の数値コード
 - piliečio paslaugos numeris
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
-- unlulus identifikavimo kodas
-- unerilus identifikavimo numeris
+- unikalus identifikavimo kodas
+- unikalus identifikavimo numeris
 - 一意の ID 番号
 - 一意の ID 番号
 - uniqueidentityno#
@@ -10912,11 +10735,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-スペースまたは区切り文字を含めない 8 桁の数字または文字
+スペースまたは区切り記号を含む 8 桁の数字または文字
   
 ### <a name="pattern"></a>パターン
 
-8 桁の数字または文字 (大文字と小文字を区別しない)
+8 桁の数字または文字 (大文字と小文字は区別されません)
   
 ### <a name="checksum"></a>チェックサム
 
@@ -10924,14 +10747,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_lithuania_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` された、または検出された。 
-- 正規表現で DD MM YYYY という形式の日付が検出された場合、またはキーワード `Regex_eu_passport_date3` が `Keywords_eu_passport_date` 検出された場合
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` つかったか、検索されます。 
+- 正規表現が DD MM YYYY の形式で日付を検索するか、キーワード `Regex_eu_passport_date3` が `Keywords_eu_passport_date` 見つかった
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_lithuania_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Lithuania Passport Number -->
@@ -10961,12 +10784,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -10981,10 +10804,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="luxemburg-drivers-license-number"></a>ジェムバーガーの運転免許証番号
+## <a name="luxemburg-drivers-license-number"></a>ルクセンブルクの運転免許証番号
 
 ### <a name="format"></a>フォーマット
 
@@ -10992,7 +10815,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-6 桁の数字 
+6 桁 
   
 ### <a name="checksum"></a>チェックサム
 
@@ -11000,9 +10823,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_luxemburg_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -11027,48 +10850,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -11077,77 +10900,77 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver's_license_number
 
 - fahrerlaubnis
-- Führerschschのin
+- Führerschäin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a>ウレンザフの国民識別番号 (自然人)
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="luxemburg-national-identification-number-natural-persons"></a>ルクセンブルクの国民識別番号 (自然人)
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -11156,14 +10979,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-13 桁の数字 (スペースまたは区切り記号なし)
+スペースまたは区切り記号がない 13 桁の数字
   
 ### <a name="pattern"></a>パターン
 
 13 桁の数字:
   
 - 11 桁の数字 
-- 2 桁のチェック ディジット
+- 2 つのチェックの数字
     
 ### <a name="checksum"></a>チェックサム
 
@@ -11171,12 +10994,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_luxemburg_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_luxemburg_eu_national_id_card` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_luxemburg_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_luxemburg_eu_national_id_card` 見つかりました。 
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_luxemburg_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_luxemburg_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
 
 
 ```xml
@@ -11207,29 +11030,29 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - idpersonnelle#
 - idpersonnelle
 - 個々のコード
-- 個別の ID
-- 個別の識別
-- 個別の ID
-- numéro d'identification personnel
+- 個々の ID
+- 個人識別
+- 個々の ID
+- numéro d'ID の担当者
 - 個人用 ID
 - 個人識別
-- 個人用 ID
+- 個人の ID
 - personalidno#
 - personalidnumber#
-- pers、liche identifikationsnummer
+- persönliche identifikationsnummer
 - 一意の ID
 - 一意の ID
 - uniqueidkey#
 
-## <a name="luxemburg-passport-number"></a>ジェムザフのパスポート番号
+## <a name="luxemburg-passport-number"></a>ルクセンブルクのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-スペースまたは区切り文字を含めない 8 桁の数字または文字
+スペースまたは区切り記号を含む 8 桁の数字または文字
   
 ### <a name="pattern"></a>パターン
 
-8 桁の数字または文字 (大文字と小文字を区別しない)
+8 桁の数字または文字 (大文字と小文字は区別されません)
   
 ### <a name="checksum"></a>チェックサム
 
@@ -11237,14 +11060,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_luxemburg_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` された、または検出された。 
-- 正規表現で DD MM YYYY という形式の日付が検出された場合、またはキーワード `Regex_eu_passport_date3` が `Keywords_eu_passport_date` 検出された場合
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` つかったか、検索されます。 
+- 正規表現が DD MM YYYY の形式で日付を検索するか、キーワード `Regex_eu_passport_date3` が `Keywords_eu_passport_date` 見つかった
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_luxemburg_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -11274,12 +11097,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -11289,7 +11112,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - ausweisnummer
 - ルクセンブルク パス
 - ルクセンブルク パスポート
-- ルクセンブルク パスポート
+- ルクセンブルクのパスポート
 - de passeport なし
 - no-reisepass
 - nr-reisepass
@@ -11298,17 +11121,17 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - pass nr
 - passnummer
 - passeport nombre
-- reisep sse
+- reisepässe
 - reisepass-nr
 - reisepassnummer
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>ウレンザフの国民識別番号 (非自然人)
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>ルクセンブルクの国民識別番号 (非自然人)
 
 ### <a name="format"></a>フォーマット
 
@@ -11318,14 +11141,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 11 桁の数字
   
-- 2 桁の数字
-- 省略可能なスペース 
+- 2 桁
+- オプションのスペース 
 - 3 桁の数字 
-- 省略可能なスペース
+- オプションのスペース
 - 3 桁の数字 
-- 省略可能なスペース
-- 2 桁の数字
-- 1 桁のチェック ディジット
+- オプションのスペース
+- 2 桁
+- 1 つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -11333,12 +11156,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_luxemburg_eu_tax_file_number_non_natural` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_luxemburg_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_luxemburg_eu_tax_file_number_non_natural` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_luxemburg_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_luxemburg_eu_tax_file_number_non_natural` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_luxemburg_eu_tax_file_number_non_natural` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -11364,14 +11187,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - carte de sécurité sociale
 - étain non
 - étain#
-- identifiant d'impôt
-- ルクセンブルクの税金 identifikatiounsnummer
+- 特定の d'impôt
+- ルクセンブルグの税の識別
 - numéro d'étain
-- numéro d'identification fiscal luxembourgeois
-- numéro d'identification fiscale
+- numéro d'id fiscal ルクセンブルク語
+- numéro d'id fiscale
 - social security
-- so最も近い
-- solvlversécherung
+- sozialunterstützung
+- sozialversécherung
 - sozialversicherungsausweis
 - steier id
 - steier identifikatiounsnummer
@@ -11380,27 +11203,27 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
-- z最も近い#
-- z最も近い
-- zzazahl
+- zinn#
+- zinn
+- zinnzahl
 
 
-## <a name="malaysia-identification-card-number"></a>マレーシアの識別カード番号
+## <a name="malaysia-identification-card-number"></a>マレーシアの ID カード番号
 
 ### <a name="format"></a>フォーマット
 
@@ -11410,10 +11233,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 12 桁の数字:
 - YYMMDD 形式の 6 桁の数字 (生年月日) 
-- ダッシュ (省略可能) 
-- 2 文字の出生時コード 
-- ダッシュ (省略可能) 
-- 3 桁のランダムな数字 
+- ダッシュ (オプション) 
+- 2 文字の出生場所コード 
+- ダッシュ (オプション) 
+- 3 つのランダムな数字 
 - 1 桁の性別コード
 
 ### <a name="checksum"></a>チェックサム
@@ -11422,9 +11245,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一Regex_malaysia_id_card_numberコンテンツを検索する正規表現。
-- 検索されたKeyword_malaysia_id_card_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、Regex_malaysia_id_card_number一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_malaysia_id_card_number見つかりました。
 
 ```xml
 <!-- Malaysia ID Card Number -->
@@ -11443,19 +11266,19 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 - デジタル アプリケーション カード
 - i/c
-- i/c no
+- i/c いいえ
 - ic
-- ic no
+- ic いいえ
 - id card
-- identification Card
+- ID カード
 - Identity card
 - k/p
-- k/p no
+- k/p いいえ
 - kad akuan diri
-- kad aplkasi digital
+- kad aplikasi デジタル
 - kad pengenalan マレーシア
 - kp
-- kp no
+- kp いいえ
 - mykad
 - mykas
 - mykid
@@ -11470,16 +11293,16 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-指定したパターンでの 2 文字と 6 桁の数字の組み合わせ
+指定したパターンの 2 文字と 6 桁の組み合わせ
   
 ### <a name="pattern"></a>パターン
 
-2 文字と 6 桁の数字の組み合わせ:
+2 文字と 6 桁の組み合わせ:
   
-- 2 文字 (数字または文字、大文字と小文字を区別しない)
-- スペース (省略可能)
+- 2 文字 (大文字と小文字を区別しない数字または文字)
+- スペース (オプション)
 - 3 桁の数字
-- スペース (省略可能)
+- スペース (オプション)
 - 3 桁の数字
     
 ### <a name="checksum"></a>チェックサム
@@ -11488,9 +11311,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_malta_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Malta Driver's License Number -->
@@ -11515,48 +11338,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -11565,78 +11388,78 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver's_license_number
 
-- liċenzja tas-liċenzja qan
-- liċenzji tas-liċenzji wieq
+- liċenzja tas-sewqan
+- liċenzji tas-sewwieq
 
 
 ## <a name="malta-identity-card-number"></a>マルタの ID カード番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -11649,10 +11472,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-7 桁の数字の後に 1 文字
+7 桁の数字の後に 1 文字が続きます。
   
-- 7 桁の数字 
-- "M, G, A, P, L, H, B, Z" の 1 文字 (大文字と小文字を区別しない)
+- 7 桁 
+- "M、G、A、P、L、H、B、Z" の 1 文字 (大文字と小文字を区別しない)
     
 ### <a name="checksum"></a>チェックサム
 
@@ -11660,11 +11483,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_malta_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_malta_eu_national_id_card` 検出した。 
+- キーワードが  `Keywords_malta_eu_national_id_card` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
 - 正規表現は、  `Regex_malta_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
@@ -11684,14 +11507,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
-- citizen service number
+- 市民サービス番号
 - id tat-taxxa
 - identifika numru tal-biljett
-- kodiċi numerali personali
+- kodiċi数字の個人用
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
-- numru ta 'identifikazzjoni un un"
-- numru ta' identità un un
+- numru ta 'identifikazzjoni uniku
+- numru ta' identità uniku
 - numru tas-servizz taċ-ċittadin
 - numru tat-taxxa
 - 個人の数値コード
@@ -11708,7 +11531,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="pattern"></a>パターン
 
-7 桁の数字 
+7 桁 
   
 ### <a name="checksum"></a>チェックサム
 
@@ -11716,14 +11539,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_malta_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` された、または検出された。 
-- キーワード `Keywords_eu_passport_date` の検索
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` つかったか、検索されます。 
+- キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_malta_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Malta Passport Number -->
@@ -11750,12 +11573,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -11770,29 +11593,29 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="malta-tax-identification-number"></a>マルタの税金の識別番号
+## <a name="malta-tax-identification-number"></a>マルタの納税者番号
 
 ### <a name="format"></a>フォーマット
 
-マルタの国民の場合:
-- 指定されたパターンの 7 桁の数字と 1 文字
+マルタ国民の場合:
+- 指定したパターンの 7 桁の数字と 1 文字
   
-マルタ以外の国民およびマルタのエンティティ:
-- 9 桁の数字
+マルタ以外の国民およびマルタ人のエンティティ:
+- 9 桁
   
 ### <a name="pattern"></a>パターン
 
-マルタの国民: 7 桁の数字と 1 文字
+マルタ国民: 7 桁の数字と 1 文字
   
-- 7 桁の数字 
-- 1 文字 (大文字と小文字を区別しない)
+- 7 桁 
+- 1 文字 (大文字と小文字は区別されません)
     
-マルタ以外の国民およびマルタのエンティティ: 9 桁の数字
+マルタ以外の国民およびマルタのエンティティ: 9 桁
   
-- 9 桁の数字 
+- 9 桁 
     
 ### <a name="checksum"></a>チェックサム
 
@@ -11800,12 +11623,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- regex  `Regex_malta_eu_tax_file_number`  または `Regex_malta_eu_tax_file_number_non_maltese_national` パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_malta_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現または  `Regex_malta_eu_tax_file_number`  パターン `Regex_malta_eu_tax_file_number_non_maltese_national` に一致するコンテンツを検索します。 
+- キーワードが  `Keywords_malta_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- regex  `Regex_malta_eu_tax_file_number` または `Regex_malta_eu_tax_file_number_non_maltese_national` パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- 正規表現または  `Regex_malta_eu_tax_file_number` パターン `Regex_malta_eu_tax_file_number_non_maltese_national` に一致するコンテンツを検索します。 
     
 ```xml
       <!-- Malta Tax ID Number -->
@@ -11831,32 +11654,32 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
-- citizen service number
+- 市民サービス番号
 - id tat-taxxa
 - identifika numru tal-biljett
-- kodiċi numerali personali
+- kodiċi数字の個人用
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
-- numru ta 'identifikazzjoni un un"
-- numru ta' identità un un
+- numru ta 'identifikazzjoni uniku
+- numru ta' identità uniku
 - numru tas-servizz taċ-ċittadin
 - numru tat-taxxa
 - 個人の数値コード
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 - 一意の ID 番号
 - 一意の ID 番号
@@ -11866,16 +11689,16 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-省略可能なスペースを含む 8 桁または 9 桁の数字
+オプションのスペースを含む 8 桁または 9 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-8 桁の数字:
+89 桁の数字:
 - 3 桁の数字 
-- スペース (省略可能) 
+- スペース (オプション) 
 - 3 桁の数字 
-- スペース (省略可能) 
-- 2 桁の 3 桁の数字
+- スペース (オプション) 
+- 2 桁の 3 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -11883,9 +11706,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_netherlands_bsnパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_netherlands_bsn検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_netherlands_bsn一致するコンテンツを検索します。
+- このページのKeyword_netherlands_bsnが見つかりました。
 - チェックサムが渡される。
 
 ```xml
@@ -11904,18 +11727,18 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 - bsn#
 - bsn
-- servicenummer
-- citizen service number
+- burgerservicenummer
+- 市民サービス番号
 - ユーザー番号
 - 個人番号
 - 個人の数値コード
-- 人物関連の番号
+- ユーザー関連の番号
 - persoonlijk nummer
-- persoonlijke numjkke コード
-- persoonsge最も近い
+- persoonlijke numerieke コード
+- persoonsgebonden
 - persoonsnummer
 - sociaal-fiscaal nummer
-- social-fiscal number
+- ソーシャル会計番号
 - sofi
 - sofinummer
 - uniek identificatienummer
@@ -11932,7 +11755,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="pattern"></a>パターン
 
-10 桁の数字
+10 桁
   
 ### <a name="checksum"></a>チェックサム
 
@@ -11940,9 +11763,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_netherlands_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -11967,48 +11790,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -12017,68 +11840,68 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver's_license_number
@@ -12086,7 +11909,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
-- rijbewzenzen
+- rijbewijzen
 - rijbewijs nummer
 - rijbewijsnummers
 
@@ -12095,11 +11918,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-スペースまたは区切り記号を含めない 9 桁の文字または数字
+スペースまたは区切り記号がない 9 文字または数字
   
 ### <a name="pattern"></a>パターン
 
-9 桁の文字または数字
+9 文字または数字
   
 ### <a name="checksum"></a>チェックサム
 
@@ -12107,14 +11930,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_netherlands_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYY の形式で日付を検索する (例 - 26 THE/MAR 2012)
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` つかったか、検索されます。 
+- 正規表現は `Regex_netherlands_eu_passport_date` 、DD MMM/MMM YYYYY 形式の日付を検索します (例 - 26 MAA/MAR 2012)
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_netherlands_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Netherlands Passport Number -->
@@ -12141,12 +11964,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -12159,8 +11982,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - paspoortnummer
 - paspoort nr
 
-## <a name="netherlands-tax-identification-number"></a>オランダの税金の識別番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="netherlands-tax-identification-number"></a>オランダの納税者番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -12173,7 +11996,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-9 桁の数字 
+9 桁 
   
 ### <a name="checksum"></a>チェックサム
 
@@ -12181,12 +12004,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_netherlands_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_netherlands_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_netherlands_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_netherlands_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数は  `Func_netherlands_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数  `Func_netherlands_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Netherlands Tax Identification Number -->
@@ -12206,12 +12029,12 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
 - btw nummer
-- hollânske の税金の識別
+- hollânske 税の識別
 - hulandes impuesto id number
-- hulandes impuesto identification
+- hulandes impuesto ID
 - identificatienummer belasting
 - identificatienummer van belasting
-- impuesto id number
+- impuesto ID 番号
 - impuesto number
 - nederlands belasting id nummer
 - nederlands belasting identificatie
@@ -12219,31 +12042,31 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - nederlands belastingnummer
 - nederlandse belasting identificatie
 - オランダの税金の識別
-- netherland の税金の識別
-- オランダの tin
+- netherland の税の識別
+- オランダのスズ
 - netherland's tin
 - tax id
-- tax identification no
-- 税識別番号
-- tax identification tal
+- 税の識別なし
+- 税の識別番号
+- 税の識別 tal
 - tax no#
 - tax no
-- tax number
-- tax registration number
+- 税番号
+- 税登録番号
 - tax tal
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
 ## <a name="netherlands-value-added-tax-number"></a>オランダの付加価値税番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -12256,15 +12079,15 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="pattern"></a>パターン
 
-14 文字の英数字のパターン:
+14 文字の英数字パターン:
 
 - N または n
 - L または l
 - オプションのスペース、ドット、またはハイフン
-- 9 桁の数字
+- 9 桁
 - オプションのスペース、ドット、またはハイフン
 - B または b
-- 2 桁の数字
+- 2 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -12272,12 +12095,12 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_netherlands_value_added_tax_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_netherlands_value_added_tax_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_netherlands_value_added_tax_number一致するコンテンツを検索します。
+- このページのKeywords_netherlands_value_added_tax_numberが見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_netherlands_value_added_tax_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_netherlands_value_added_tax_number一致するコンテンツを検索します。
 
 ```xml
       <!-- Netherlands Value Added Tax Number -->
@@ -12296,16 +12119,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
 
-- vat number
-- vat no
+- vat 番号
+- vat いいえ
 - vat#
 - wearde tafoege tax getal
-- btw ntwmer
+- btw nûmer
 - btw-nummer
 
 
 ## <a name="new-zealand-bank-account-number"></a>ニュージーランドの銀行口座番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -12314,18 +12137,18 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-14 桁から 16 桁のパターンとオプションの区切り文字
+14 桁から 16 桁のパターン (オプションの区切り文字付き)
 
 ### <a name="pattern"></a>パターン
 
-14 桁から 16 桁のパターンとオプションの区切り文字:
+14 桁から 16 桁のパターン (オプションの区切り記号付き):
 
-- 2 桁の数字
-- 任意指定のハイフンまたはスペース
-- 3 ~ 4 桁の数字
-- 任意指定のハイフンまたはスペース
-- 7 桁の数字
-- 任意指定のハイフンまたはスペース
+- 2 桁
+- オプションのハイフンまたはスペース
+- 3 ~ 4 桁
+- オプションのハイフンまたはスペース
+- 7 桁
+- オプションのハイフンまたはスペース
 - 2 ~ 3 桁の数字
 - オプションのハイフンまたはスペース
 
@@ -12335,12 +12158,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_new_zealand_bank_account_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_new_zealand_bank_account_number検出された。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_new_zealand_bank_account_number一致するコンテンツを検索します。
+- ユーザーのキーワードKeywords_new_zealand_bank_account_number見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_new_zealand_bank_account_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_new_zealand_bank_account_number一致するコンテンツを検索します。
 
 ```xml
       <!-- New Zealand Bank Account Number -->
@@ -12360,14 +12183,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
 - account number
-- bank account
+- 銀行口座
 - bank_acct_id
 - bank_acct_branch
 - bank_acct_nbr
 
 
 ## <a name="new-zealand-drivers-license-number"></a>ニュージーランドの運転免許証番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -12383,7 +12206,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 8 文字の英数字パターン
 
 - 2 文字 
-- 6 桁の数字
+- 6 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -12391,12 +12214,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_newzealand_driver_license_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_newzealand_driver_license_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数Func_newzealand_driver_license_number一致するコンテンツを検索します。
+- ユーザーのキーワードKeywords_newzealand_driver_license_number見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数はFunc_newzealand_driver_license_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数Func_newzealand_driver_license_number一致するコンテンツを検索します。
 
 ```xml
       <!-- New Zealand Driver License Number -->
@@ -12417,72 +12240,72 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 - driverlicence
 - driverlicences
-- driver lic
-- driver licence
-- driver licences
+- ドライバー lic
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslicence
 - driverslicences
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's licence
-- driver's licences
+- 運転免許証
 - driverlic#
 - driverlics#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver licence#
-- driver licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- 運転免許証#
 - international driving permit
 - international driving permits
-- nz 自動車の関連付け
-- ニュージーランド自動車関連付け
+- nz 自動車協会
+- ニュージーランド自動車協会
 
 
-## <a name="new-zealand-inland-revenue-number"></a>ニュージーランドの内陸部の収益番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="new-zealand-inland-revenue-number"></a>ニュージーランド内陸の収益番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -12491,16 +12314,16 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-8 桁または 9 桁の数字とオプションの区切り文字
+8 桁または 9 桁の数字 (オプションの区切り記号付き)
 
 ### <a name="pattern"></a>パターン
 
-8 桁または 9 桁の数字とオプションの区切り文字
+8 桁または 9 桁の数字 (オプションの区切り記号付き)
 
 - 2 桁または 3 桁の数字
-- 省略可能なスペースまたはハイフン
+- オプションのスペースまたはハイフン
 - 3 桁の数字
-- 省略可能なスペースまたはハイフン
+- オプションのスペースまたはハイフン
 - 3 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -12509,12 +12332,12 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_new_zealand_inland_revenue_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_new_zealand_inland_revenue_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_new_zealand_inland_revenue_number一致するコンテンツを検索します。
+- このページのKeywords_new_zealand_inland_revenue_numberが見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_new_zealand_inland_revenue_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_new_zealand_inland_revenue_number一致するコンテンツを検索します。
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->
@@ -12533,25 +12356,25 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
 
-- ird no.
-- ird no#
+- ird いいえ。
+- ird いいえ#
 - nz ird
 - ニュージーランド ird
-- ird number
-- 内陸部の収益数
+- ird 番号
+- 内陸の収益番号
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>ニュージーランド保健省
+## <a name="new-zealand-ministry-of-health-number"></a>ニュージーランド保健省番号
 
 ### <a name="format"></a>フォーマット
 
-3 桁の文字、スペース (オプション)、および 4 桁の数字
+3 文字、スペース (省略可能)、および 4 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-- 3 文字 (大文字小文字を区別しない) ('I' と 'O' を除く)
-- スペース (省略可能) 
-- 4 桁の数字
+- 'I' と 'O' 以外の 3 文字 (大文字と小文字は区別されません)
+- スペース (オプション) 
+- 4 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -12559,12 +12382,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_new_zealand_ministry_of_health_number がパターンに一致するコンテンツを検出した。
 - Keyword_nz_terms のキーワードを検出した。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_new_zealand_ministry_of_health_number がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
@@ -12588,18 +12411,18 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - NHI
 - New Zealand
 - 正常性
-- 処理
-- National Health Index Number
-- nhi number
+- 治療
+- 国民の健康インデックス番号
+- nhi 番号
 - nhi no.
 - NHI#
-- National Health Index No.
-- National Health Index Id
-- 国民健康インデックス#
+- 国民健康指数 No.
+- 国民の健康インデックス ID
+- 国民健康指数#
 
-## <a name="new-zealand-social-welfare-number"></a>ニュージーランドのソーシャル ワーカー番号
+## <a name="new-zealand-social-welfare-number"></a>ニュージーランドのソーシャル 福利厚生番号
 
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -12608,11 +12431,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字
+9 桁
 
 ### <a name="pattern"></a>パターン
 
-9 桁の数字
+9 桁
 
 - 3 桁の数字
 - オプションのハイフン
@@ -12626,12 +12449,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_newzealand_social_welfare_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_newzealand_social_welfare_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_newzealand_social_welfare_number一致するコンテンツを検索します。
+- ユーザーのキーワードKeywords_newzealand_social_welfare_number見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数はFunc_newzealand_social_welfare_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数はFunc_newzealand_social_welfare_number一致するコンテンツを検索します。
 
 ```xml
       <!-- Newzealand Social Welfare Number -->
@@ -12651,14 +12474,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- social social sociale#
-- social social sociale#
-- social sociale No.
-- social social sociale number
+- ソーシャル 福利厚生#
+- ソーシャル 福利厚生#
+- ソーシャル 福利厚生 No.
+- ソーシャル 福利厚生番号
 - swn#
 
    
-## <a name="norway-identification-number"></a>ノルウェーの識別番号
+## <a name="norway-identification-number"></a>ノルウェーの ID 番号
 
 ### <a name="format"></a>フォーマット
 
@@ -12667,9 +12490,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 ### <a name="pattern"></a>パターン
 
 11 桁の数字:
-- DDMMYY という形式で、生年月日を表す 6 桁の数字 
+- 生年月日である DDMMYY 形式の 6 桁の数字 
 - 3 桁の個人番号 
-- 2 桁のチェック ディジット
+- 2 つのチェックの数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -12677,13 +12500,13 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_norway_id_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_norway_id_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_norway_id_number一致するコンテンツを検索します。
+- このページのKeyword_norway_id_numberが見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_norway_id_numbeパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_norway_id_numbe一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -12706,12 +12529,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Personal identification number
 - Norwegian ID Number
 - ID Number
-- Id
+- ID
 - Personnummer
-- Fselsnummer
+- Fødselsnummer
 
    
-## <a name="philippines-unified-multi-purpose-identification-number"></a>フィリピンの統一された多目的識別番号
+## <a name="philippines-unified-multi-purpose-identification-number"></a>フィリピンの統合多目的識別番号
 
 ### <a name="format"></a>フォーマット
 
@@ -12720,11 +12543,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 12 桁の数字:
-- 4 桁の数字 
+- 4 桁 
 - ハイフン 
-- 7 桁の数字 
+- 7 桁 
 - ハイフン 
-- 1 桁の数字
+- 1 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -12732,9 +12555,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- パターンに一Regex_philippines_unified_idコンテンツを検索する正規表現。
-- 検索されたKeyword_philippines_id検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_philippines_unified_id一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_philippines_id見つかりました。
 
 ```xml
 <!-- Philippines Unified Multi-Purpose ID number -->
@@ -12759,17 +12582,17 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-2 つのスラッシュを含む 14 桁の数字
+2 つのスラッシュを含む 14 桁
   
 ### <a name="pattern"></a>パターン
 
 14 桁の数字と 2 つのスラッシュ:
   
-- 5 桁の数字 
+- 5 桁 
 - スラッシュ
-- 2 桁の数字
+- 2 桁
 - スラッシュ
-- 7 桁の数字
+- 7 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -12777,9 +12600,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_poland_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Poland Driver's License Number -->
@@ -12804,48 +12627,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -12854,68 +12677,68 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver's_license_number
@@ -12927,11 +12750,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-3 桁の文字と 6 桁の数字
+3 文字と 6 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-3 桁の文字 (大文字と小文字を区別しない) の後に 6 桁の数字
+3 文字 (大文字と小文字を区別しない) の後に 6 桁の数字が続く
 
 ### <a name="checksum"></a>チェックサム
 
@@ -12939,7 +12762,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_polish_national_id がパターンに一致するコンテンツを検出した。
 - Keyword_polish_national_id_passport_number のキーワードを検出した。
 - チェックサムが渡される。
@@ -12964,7 +12787,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - Nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 - Dowód Tożsamości
-- dow. os.
+- dow. os。
 
    
 ## <a name="poland-national-id-pesel"></a>ポーランドの国民 ID (PESEL)
@@ -12975,9 +12798,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-- YYMMDD の形式で生年月日を表す 6 桁の数字
-- 4 桁の数字
-- 1 桁のチェック ディジット
+- YYMMDD 形式の生年月日を表す 6 桁の数字
+- 4 桁
+- 1 つのチェックディジット
 
 ### <a name="checksum"></a>チェックサム
 
@@ -12985,12 +12808,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_pesel_identification_number がパターンに一致するコンテンツを検出した。
 - Keyword_pesel_identification_number のキーワードを検出した。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_pesel_identification_number がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
@@ -13013,25 +12836,25 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 - dowód osobisty
 - dowódosobisty
-- niepowtartartarny numer
-- niepowtartarnynumer
+- niepowtarzalny numer
+- niepowtarzalnynumer
 - nr.-pesel
 - nr-pesel
 - numer identyfikacyjny
 - pesel
-- to数
+- tożsamości narodowej
 
    
 ## <a name="poland-passport-number"></a>ポーランドのパスポート番号
-この機密情報の種類のエンティティは、EU パスポート番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU Passport Number 機密情報の種類に含まれています。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字と 7 桁の数字
+2 文字と 7 桁
 
 ### <a name="pattern"></a>パターン
 
-2 桁の文字 (大文字と小文字を区別しない) の後に 7 桁の数字
+2 文字 (大文字と小文字を区別しない) の後に 7 桁の数字が続く
 
 ### <a name="checksum"></a>チェックサム
 
@@ -13039,19 +12862,19 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は `Func_polish_passport_number_v2` 、パターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数 `Func_polish_passport_number_v2` は、パターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
-- キーワードが検出 `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` された、または検出された。
-- キーワードを `Keywords_eu_passport_date` 検出した。
+- キーワードが見 `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` つかったか、検索されます。
+- キーワードが `Keywords_eu_passport_date` 見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は `Func_polish_passport_number_v2` 、パターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数 `Func_polish_passport_number_v2` は、パターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
-- キーワードが検出 `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` された、または検出された。
+- キーワードが見 `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` つかったか、検索されます。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数は `Func_polish_passport_number_v2` 、パターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数 `Func_polish_passport_number_v2` は、パターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -13082,12 +12905,12 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -13096,22 +12919,22 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 #### <a name="keyword_polish_national_passport_number"></a>Keyword_polish_national_passport_number
 
 - numer paszportu
-- numery paszport数
+- numery paszportów
 - numery paszportowe
 - nr paszportu
 - nr. paszportu
-- nr paszportrb
-- n° passeport
+- nr paszportów
+- n° パスポート
 - passeport n°
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="poland-regon-number"></a>ポーランドの REGON 番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="poland-regon-number"></a>ポーランド REGON 番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -13120,16 +12943,16 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-9 桁または 14 桁の数字
+9 桁または 14 桁の番号
 
 ### <a name="pattern"></a>パターン
 
-9 桁または 14 桁の数字:
+9 桁または 14 桁の番号:
 
-- 9 桁の数字または 
-- 9 桁の数字
-- hyphen
-- 5 桁の数字
+- 9 桁または 
+- 9 桁
+- ハイフン
+- 5 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -13137,12 +12960,12 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_polish_regon_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_polish_regon_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_polish_regon_number一致するコンテンツを検索します。
+- このページのKeywords_polish_regon_numberが見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数はFunc_polish_regon_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数はFunc_polish_regon_number一致するコンテンツを検索します。
 
 ```xml
       <!-- Polish REGON Number  -->
@@ -13161,7 +12984,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 #### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
 
 - regon id
-- 統計数値
+- 統計番号
 - 統計 ID
 - 統計なし
 - regon number
@@ -13176,8 +12999,8 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - numeruregon#
 
 
-## <a name="poland-tax-identification-number"></a>ポーランドの税識別番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="poland-tax-identification-number"></a>ポーランドの納税者番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -13186,7 +13009,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-11 桁の数字 (スペースまたは区切り記号なし)
+スペースまたは区切り記号がない 11 桁の数字
   
 ### <a name="pattern"></a>パターン
 
@@ -13198,9 +13021,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_poland_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_poland_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_poland_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_poland_eu_tax_file_number` 見つかりました。 
     
   
 ```xml
@@ -13220,27 +13043,27 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - nip#
 - nip
 - numer identyfikacji podatkowej
-- numeridentyfikacjipodatkowej#
+- numeridentyficjipodatkowej#
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 - vat id#
 - vat id
-- vat no
-- vat number
+- vat いいえ
+- vat 番号
 - vatid#
 - vatid
 - vatno#
@@ -13250,11 +13073,11 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-8 桁の数字
+8 桁
 
 ### <a name="pattern"></a>パターン
 
-8 桁の数字
+8 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -13262,9 +13085,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一Regex_portugal_citizen_cardコンテンツを検索する正規表現。
-- 検索されたKeyword_portugal_citizen_card検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、Regex_portugal_citizen_card一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_portugal_citizen_card見つかりました。
 
 ```xml
 <!-- Portugal Citizen Card Number -->
@@ -13282,21 +13105,21 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 - bilhete de identidade
 - cartão de cidadão
-- citizen card
+- 市民カード
 - ドキュメント番号
 - documento de identificação
-- id number
-- id no
+- id 番号
+- ID なし
 - identification number
 - ID カードなし
 - ID カード番号
-- national id card
+- 国の ID カード
 - nic
-- número bi de portugal
-- número de identificação
-- número de identificação fiscal
+- número bi de ポルトガル
+- número de identificação civil
+- número de identificação Fiscal
 - número do documento
-- portugal bi number
+- ポルトガルのバイナンバー
 
 
 ## <a name="portugal-drivers-license-number"></a>ポルトガルの運転免許証番号
@@ -13307,15 +13130,15 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="pattern"></a>パターン
 
-パターン 1: 2 文字、その後に特殊文字を含む 5/6。
-- 2 文字 (大文字と小文字を区別しない)
+パターン 1: 2 文字の後に特殊文字を含む 5/6 が続きます。
+- 2 文字 (大文字と小文字は区別されません)
 - ハイフン 1 つ 
-- 5 桁または 6 桁の数字
+- 5 桁または 6 桁
 - スペース
 - 1 桁の数字
 
-パターン 2: 1 文字の後に特殊文字を含む 6/8 桁の数字:
-- 1 文字 (大文字と小文字を区別しない)
+パターン 2: 1 文字の後に特殊文字を含む 6/8 桁の数字が続きます。
+- 1 文字 (大文字と小文字は区別されません)
 - ハイフン 1 つ 
 - 6 桁または 8 桁の数字
 - スペース
@@ -13328,9 +13151,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_portugal_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -13355,48 +13178,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -13405,68 +13228,68 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver's_license_number
@@ -13479,21 +13302,21 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - número licença
 - permissão de condução
 - permissão condução
-- リセンチャ語 (ポルトガル)
+- Licença condução ポルトガル
 - carta de condução
 
 ## <a name="portugal-passport-number"></a>ポルトガルのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-1 文字の後に 6 桁の数字 (スペースまたは区切り記号なし)
+1 文字の後にスペースまたは区切り記号がない 6 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-1 文字の後に 6 桁の数字:
+1 文字の後に 6 桁の数字が続きます。
   
-- 1 文字 (大文字と小文字を区別しない)
-- 6 桁の数字
+- 1 文字 (大文字と小文字は区別されません)
+- 6 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -13501,14 +13324,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_portugal_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_portugal_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` された、または検出された。
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` つかったか、検索されます。
     
 ```xml
       <!-- Portugal Passport Number -->
@@ -13538,12 +13361,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -13565,21 +13388,21 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="portugal-tax-identification-number"></a>ポルトガルの税識別番号
+## <a name="portugal-tax-identification-number"></a>ポルトガルの納税者番号
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字と省略可能なスペース
+オプションのスペースを含む 9 桁の数字
   
 ### <a name="pattern"></a>パターン
 
 - 3 桁の数字
-- 省略可能なスペース
+- オプションのスペース
 - 3 桁の数字
-- 省略可能なスペース
+- オプションのスペース
 - 3 桁の数字
   
 ### <a name="checksum"></a>チェックサム
@@ -13588,12 +13411,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_portugal_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_portugal_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_portugal_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_portugal_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数は  `Func_portugal_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数  `Func_portugal_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Portugal Tax Identification Number -->
@@ -13619,20 +13442,20 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - número de identificação fisca
 - numero fiscal
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
@@ -13640,13 +13463,13 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-1 文字の後に 8 桁の数字
+1 文字の後に 8 桁の数字を付け
   
 ### <a name="pattern"></a>パターン
 
-1 文字の後に 8 桁の数字:
+1 文字の後に 8 桁の数字が続きます。
 - 1 文字 (大文字と小文字を区別しない) または数字 
-- 8 桁の数字
+- 8 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -13654,9 +13477,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_romania_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Romania Driver's License Number -->
@@ -13681,48 +13504,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -13731,81 +13554,81 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver's_license_number
 
 - permis de
-- permismisi deere
-- permismisihere
-- permisele de
+- permisului de conducere
+- permisului
+- permisele de conducere
 - permisele
 - permis
 
 ## <a name="romania-personal-numeric-code-cnp"></a>ルーマニアの個人数値コード (CNP)
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -13818,10 +13641,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-- 1 ~ 9 の 1 桁の数字
+- 1 ~ 9 の 1 桁
 - 生年月日 (YYMMDD) を表す 6 桁の数字
 - 2 桁の数字 (01 ~ 52 または 99)
-- 4 桁の数字
+- 4 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -13829,12 +13652,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_romania_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_romania_eu_national_id_card` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_romania_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_romania_eu_national_id_card` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_romania_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_romania_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
@@ -13856,46 +13679,46 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - cnp#
 - cnp
 - cod identificare personal
-- cod numeric personal
+- cod 数値個人用
 - cod unic identificare
 - codnumericpersonal#
 - codul fiscal nr.
-- identificarea fiscală nr#
+- identificarea Fiscală nr#
 - id-ul taxei
-- insurance number
+- 保険番号
 - insurancenumber#
-- national id#
+- 国 ID#
 - national id
 - national identification number
-- număr identificare personal
+- număr identificare Personal
 - număr identitate
-- număr personal unic
+- număr 個人用 unic
 - număridentitate#
 - număridentitate
-- numărpersonănic#
-- numărpersonănic
-- număru de identificare fiscală
-- numărul de identificare fiscală
+- numărpersonalunic#
+- numărpersonalunic
+- număru de identificare Fiscală
+- numărul de identificare Fiscală
 - 個人の数値コード
 - pin#
 - pin
 - tax file no
 - tax file number
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 - 一意の ID 番号
 - 一意の ID 番号
@@ -13910,7 +13733,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-8 桁または 9 桁の数字
+8 桁または 9 桁
   
 ### <a name="checksum"></a>チェックサム
 
@@ -13918,14 +13741,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_romania_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_romania_eu_passport_date` DD MMM/MMM YY の形式で日付を検出した (例- 01 FEB/FEB 10) またはキーワードが `Keywords_eu_passport_date` 見つかった
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` つかったか、検索されます。 
+- 正規表現は `Regex_romania_eu_passport_date` 、DD MMM/MMM YY (例- 01 FEB/FEB 10) 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_romania_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Romania Passport Number -->
@@ -13955,12 +13778,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -13968,16 +13791,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-numărul paărul paăaportăi nuăl pasaportăi numerele paăaportăi Paăaport nr
+numărul paărul paăaportului numarul pasaportului numerele pa ăaportului Paăaport nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
 ## <a name="russia-passport-number-domestic"></a>ロシアのパスポート番号 (国内)
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -13986,17 +13809,17 @@ numărul paărul paăaportăi nuăl pasaportăi numerele paăaportăi Paăaport 
 
 ### <a name="format"></a>フォーマット
 
-10 桁の数字
+10 桁の番号
 
 ### <a name="pattern"></a>パターン
 
-10 桁の数値:
+10 桁の番号:
 
-- 2 桁の数字
-- 省略可能なスペースまたはハイフン
-- 2 桁の数字
-- 省略可能なスペース
-- 6 桁の数字
+- 2 桁
+- オプションのスペースまたはハイフン
+- 2 桁
+- オプションのスペース
+- 6 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -14004,9 +13827,9 @@ numărul paărul paăaportăi nuăl pasaportăi numerele paăaportăi Paăaport 
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 正規表現はRegex_Russian_Passport_Number_Domesticパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_Russian_Passport_Number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現はRegex_Russian_Passport_Number_Domestic一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_Russian_Passport_Number見つかりました。
 
 ```xml
       <!-- Russian Passport Number Domestic -->
@@ -14023,9 +13846,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
 - passport number
-- passport no
-- passport#
-- passport id
+- パスポートなし
+- パスポート#
+- パスポート ID
 - passportno#
 - passportnumber#
 - паспорт нет
@@ -14038,8 +13861,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - номерпаспорта#
 
 
-## <a name="russia-passport-number-international"></a>ロシアのパスポート番号国際番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="russia-passport-number-international"></a>ロシアのパスポート番号国際
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -14052,11 +13875,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-9 桁の数字:
+9 桁の番号:
 
-- 2 桁の数字
-- 省略可能なスペースまたはハイフン
-- 7 桁の数字
+- 2 桁
+- オプションのスペースまたはハイフン
+- 7 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -14064,9 +13887,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 正規表現はRegex_Russian_Passport_Number_Internationalパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_Russian_Passport_Number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現はRegex_Russian_Passport_Number_International一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_Russian_Passport_Number見つかりました。
 
 ```xml
       <!-- Russian Passport Number International -->
@@ -14083,9 +13906,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
 - passport number
-- passport no
-- passport#
-- passport id
+- パスポートなし
+- パスポート#
+- パスポート ID
 - passportno#
 - passportnumber#
 - паспорт нет
@@ -14114,7 +13937,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現 Regex_saudi_arabia_national_id がパターンに一致するコンテンツを検出した。
 - Keyword_saudi_arabia_national_id のキーワードを検出した。
 
@@ -14144,14 +13967,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-9 桁の文字と数字
+9 文字と数字
 
 ### <a name="pattern"></a>パターン
 
-- 9 桁の文字と数字:
-- 文字 "F"、"G"、"S"、または "T" (大文字小文字を区別しない) 
-- 7 桁の数字 
-- アルファベットのチェック ディジット
+- 9 文字と数字:
+- 文字 "F"、"G"、"S"、または "T" (大文字と小文字を区別しない) 
+- 7 桁 
+- 英字チェックの数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -14159,13 +13982,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一Regex_singapore_nricコンテンツを検索する正規表現。
-- 検索されたKeyword_singapore_nric検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、Regex_singapore_nric一致するコンテンツを検索します。
+- このページのKeyword_singapore_nric見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- パターンに一Regex_singapore_nricコンテンツを検索する正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_singapore_nric一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -14198,14 +14021,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-1 文字の後に 7 桁の数字
+1 文字の後に 7 桁の数字を付け
   
 ### <a name="pattern"></a>パターン
 
-1 文字の後に 7 桁の数字
+1 文字の後に 7 桁の数字を付け
   
 - 1 文字 (大文字と小文字を区別しない) または数字
-- 7 桁の数字 
+- 7 桁 
     
 ### <a name="checksum"></a>チェックサム
 
@@ -14213,9 +14036,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_slovakia_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -14240,48 +14063,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -14290,79 +14113,79 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver's_license_number
 
-- vodičsksksk preskz
-- vodičské preskzy
-- vodičského preu、
-- vodičsksksk prezov
+- vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 ## <a name="slovakia-personal-number"></a>スロバキアの個人番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -14376,9 +14199,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 - 生年月日を表す 6 桁の数字
-- オプションのスラッシュ (/)
+- 省略可能なスラッシュ (/)
 - 3 桁の数字
-- オプションのチェック ディジット 1 つ
+- オプションのチェックディジット 1 つ
   
 ### <a name="checksum"></a>チェックサム
 
@@ -14386,12 +14209,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_slovakia_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_slovakia_eu_national_id_card` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_slovakia_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_slovakia_eu_national_id_card` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数は  `Func_slovakia_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数  `Func_slovakia_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Slovakia Personal Number -->
@@ -14412,21 +14235,21 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 - azonosító szám
-- 生年月日
-- číslo nodnej identifikačnej karty
-- číslo občianského preu、
-- daéové číslo
-- id number
-- id no
+- 出生番号
+- číslo národnej identifikačnej karty
+- číslo občianského preukazu
+- daňové číslo
+- id 番号
+- ID なし
 - identification number
 - identifikačná karta č
 - identifikačné číslo
 - ID カードなし
 - ID カード番号
-- nのodná identifikačná značka č
-- national number
+- národná identifikačná značka č
+- 国番号
 - nationalnumber#
-- nemzeti személyazonosító zonzolvzony
+- nemzeti személyazonosító igazolvány
 - personalidnumber#
 - rč
 - rodne cislo
@@ -14434,37 +14257,37 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - social security number
 - ssn#
 - ssn
-- személyi zolvlvy szám
-- személyi zolvlvy száma
-- személyzolvlvy szám
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
 - tax file no
 - tax file number
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 ## <a name="slovakia-passport-number"></a>スロバキアのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-1 桁の数字または文字の後に 7 桁の数字(スペースまたは区切り文字なし)
+1 桁または文字の後にスペースまたは区切り記号を付けない 7 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-1 桁または文字 (大文字小文字を区別しない) の後に 7 桁の数字
+1 桁または文字 (大文字と小文字を区別しない) の後に 7 桁の数字が続く
   
 ### <a name="checksum"></a>チェックサム
 
@@ -14472,14 +14295,14 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_slovakia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_slovakia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Slovakia Passport Number -->
@@ -14509,12 +14332,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -14525,13 +14348,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - číslo pasu
 - čísla pasov
 - pas č.
-- Passeport n°
-- n° Passeport
+- パスポート n°
+- n° パスポート
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
 ## <a name="slovenia-drivers-license-number"></a>スロベニアの運転免許証番号
@@ -14542,7 +14365,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-9 桁の数字
+9 桁
   
 ### <a name="checksum"></a>チェックサム
 
@@ -14550,9 +14373,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_slovenia_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -14577,48 +14400,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -14627,80 +14450,80 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver's_license_number
 
-- voznizko dovoljenje
-- voznizka tevilka licence
-- voznizkih dovoljejeje
-- tevilka voznizkega dovoljenja
-- tevilke voznijekih dovolje数
+- vozniško dovoljenje
+- vozniška številka ライセンス
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
-## <a name="slovenia-unique-master-citizen-number"></a>スロベニア固有のマスター市民番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="slovenia-unique-master-citizen-number"></a>スロベニアの一意のマスター市民番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -14709,16 +14532,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-13 桁の数字 (スペースまたは区切り記号なし)
+スペースまたは区切り記号のない 13 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-指定したパターンの 13 桁の数字:
+指定したパターンの 13 桁:
   
-- 生年月日 (DDMMLLL) に対応する 7 桁の数字。"LLL" は生年月日の最後の 3 桁の数字に対応します。 
-- 生年月日の領域 "50" に対応する 2 桁の数字
-- 同じ日に生まれた人の性別とシリアル番号の組み合わせに対応する 3 桁の数字 (男性の場合は 000 ~ 499、女性の場合は 500 ~ 999)
-- 1 桁のチェック ディジット
+- "LLL" が生年月日の最後の 3 桁に対応する生年月日 (DDMMLLL) に対応する 7 桁の数字 
+- 出生領域 "50" に対応する 2 桁の数字
+- 同じ日に生まれた人の性別とシリアル番号の組み合わせに対応する 3 桁の数字 (男性は 000 ~ 499、女性は 500 ~ 999)
+- 1 つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -14726,12 +14549,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_slovenia_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_slovenia_eu_national_id_card` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_slovenia_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_slovenia_eu_national_id_card` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_slovenia_eu_national_id_card` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_slovenia_eu_national_id_card` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
@@ -14750,28 +14573,28 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena tevilkalavnega dr avljana
-- em最も近い
-- enotna maticna tevilka obcana
+- edinstvena številka glavnega državljana
+- emšo
+- enotna maticna številka obcana
 - id card
 - identification number
-- identifikacijka tevilka
+- identifikacijska številka
 - Identity card
 - nacionalna id
 - nacionalni potni リスト
 - national id
-- osebna iczaznica
+- osebna izkaznica
 - osebni koda
 - osebni ne
-- osebni tevilka
+- osebni številka
 - 個人用コード
 - 個人番号
 - 個人の数値コード
-- tevilka dr avljana
+- številka državljana
 - 一意の市民番号
 - 一意の ID 番号
 - 一意の ID 番号
-- 一意のマスターの市民番号
+- 一意のマスター市民番号
 - 一意の登録番号
 - uniqueidentityno#
 - uniqueidentityno#
@@ -14780,15 +14603,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字の後に 7 桁の数字 (スペースまたは区切り記号なし)
+2 文字の後に 7 桁の数字が続き、スペースまたは区切り記号は使用されません。
   
 ### <a name="pattern"></a>パターン
 
-2 桁の文字の後に 7 桁の数字:
+2 文字の後に 7 桁の数字が続きます。
   
 - 文字 "P"
-- 1 文字の大文字
-- 7 桁の数字
+- 大文字 1 文字
+- 7 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -14796,14 +14619,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_slovenia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYY の形式で日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出した
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_eu_passport_date1` DD.MM.YYYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_slovenia_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` つかったか、検索されます。 
     
 ```xml
       <!-- Slovenia Passport Number -->
@@ -14833,12 +14656,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -14846,21 +14669,21 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
-- tevilka potnega lista
-- potek potjavnosti
-- potni list#
+- številka potnega lista
+- potek veljavnosti
+- potni リスト#
 - datum rojstva
-- potni list
-- tevilke potnih listov
+- potni リスト
+- številke potnih listov
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="slovenia-tax-identification-number"></a>スロベニアの税金の識別番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="slovenia-tax-identification-number"></a>スロベニアの納税者番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -14869,13 +14692,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-スペースまたは区切り記号を含めない 8 桁の数字
+スペースまたは区切り記号がない 8 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-- 1 ~ 9 の 1 桁の数字
-- 6 桁の数字
-- 1 桁のチェック ディジット
+- 1 ~ 9 の 1 桁
+- 6 桁
+- 1 つのチェックディジット
   
 ### <a name="checksum"></a>チェックサム
 
@@ -14883,12 +14706,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_slovenia_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_slovenia_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_slovenia_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_slovenia_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数は  `Func_slovenia_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数  `Func_slovenia_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -14907,30 +14730,30 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
-- davčna čtevilka
-- identifikacijka のtevilka davka
-- čtevilka davčne datoteke
+- davčna številka
+- identifikacijska številka davka
+- številka davčne datoteke
 - tax file no
 - tax file number
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
-## <a name="south-africa-identification-number"></a>南アフリカの識別番号
+## <a name="south-africa-identification-number"></a>南アフリカの ID 番号
 
 ### <a name="format"></a>フォーマット
 
@@ -14940,10 +14763,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 13 桁の数字:
 - YYMMDD 形式の 6 桁の数字 (生年月日) 
-- 4 桁の数字 
+- 4 桁 
 - 1 桁の市民権インジケーター 
 - 数字 "8" または "9" 
-- チェックサム ディジットである 1 桁の数字
+- 1 桁(チェックサム桁)
 
 ### <a name="checksum"></a>チェックサム
 
@@ -14951,9 +14774,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_south_africa_identification_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_south_africa_identification_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数Func_south_africa_identification_number一致するコンテンツを検索します。
+- このページのKeyword_south_africa_identification_numberが見つかりました。
 - チェックサムが渡される。
 
 ```xml
@@ -14972,9 +14795,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 - Identity card
 - ID
-- Id 
+- ID 
    
-## <a name="south-korea-resident-registration-number"></a>韓国の住民登録番号
+## <a name="south-korea-resident-registration-number"></a>韓国居住者登録番号
 
 ### <a name="format"></a>フォーマット
 
@@ -14985,10 +14808,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 13 桁の数字:
 - YYMMDD 形式の 6 桁の数字 (生年月日) 
 - ハイフン 
-- 1 桁の数字は、年齢と性別によって決まります。 
+- 世紀と性別によって決まる 1 桁の数字 
 - 4 桁の出生地域コード 
-- 前の数字が同一の人を区別するために使用される 1 桁の数字 
-- チェック ディジット。
+- 前の番号が同一のユーザーを区別するために使用される 1 桁の数字 
+- チェックの数字を指定します。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -14996,13 +14819,13 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_south_korea_resident_numberパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_south_korea_resident_number検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_south_korea_resident_number一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_south_korea_resident_number見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_south_korea_resident_numberパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_south_korea_resident_number一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -15036,10 +14859,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="pattern"></a>パターン
 
-8 桁の数字の後に 1 文字
+8 桁の数字の後に 1 文字が続きます。
   
-- 8 桁の数字 
-- 1 桁または 1 文字 (大文字と小文字を区別しない)
+- 8 桁 
+- 1 桁または 1 文字 (大文字と小文字は区別されません)
     
 ### <a name="checksum"></a>チェックサム
 
@@ -15047,11 +14870,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - パターンに  `Func_spain_eu_DL_and_NI_number_citizen` 一 `Func_spain_eu_DL_and_NI_number_foreigner` 致するコンテンツを関数または検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` つかったか、検索されます。 
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - パターンに  `Func_spain_eu_DL_and_NI_number_citizen` 一 `Func_spain_eu_DL_and_NI_number_foreigner` 致するコンテンツを関数または検索します。 
     
 ```xml
@@ -15090,48 +14913,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -15140,87 +14963,87 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver's_license_number
 
-- permiso deisoción
-- permisoisoción
-- lice、
-- lice、
+- permiso de conducción
 - permiso
-- permiso deir
+- licencia de
+- licencia
+- permiso
+- permiso de
 - permisos de
 - permisos
-- carnet のサービル
-- carnet deir
-- lice、de man、
-- lice、man、
+- carnet
+- carnet de
+- licencia de manejo
+- licencia manejo
 
 ## <a name="spain-dni"></a>スペイン DNI
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -15235,9 +15058,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 7 桁の数字の後に 1 文字
   
-- 8 桁の数字
-- 省略可能なスペースまたはハイフン
-- 1 つのチェック 文字 (大文字と小文字を区別しない)
+- 8 桁
+- オプションのスペースまたはハイフン
+- 1 つのチェック文字 (大文字と小文字は区別されません)
     
 ### <a name="checksum"></a>チェックサム
 
@@ -15245,11 +15068,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - パターンに  `Func_spain_eu_DL_and_NI_number_citizen` 一 `Func_spain_eu_DL_and_NI_number_foreigner` 致するコンテンツを関数または検索します。 
-- キーワードを  `Keywords_spain_eu_national_id_card"` 検出した。 
+- キーワードが  `Keywords_spain_eu_national_id_card"` 見つかりました。 
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - パターンに  `Func_spain_eu_DL_and_NI_number_citizen` 一 `Func_spain_eu_DL_and_NI_number_foreigner` 致するコンテンツを関数または検索します。 
 
     
@@ -15282,11 +15105,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - dni
 - dninúmero#
 - documento nacional de identidad
-- identidad ico
-- identidadicoico#
-- insurance number
+- identidad único
+- identidadúnico#
+- 保険番号
 - national identification number
-- national identity
+- 国の ID
 - nationalid#
 - nationalidno#
 - nie#
@@ -15295,7 +15118,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - número de identificación
 - número nacional identidad
 - 個人識別番号
-- 個人用 ID なし
+- 個人 ID なし
 - 一意の ID 番号
 - uniqueid#
 
@@ -15303,15 +15126,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-8 文字または 9 文字の文字と数字の組み合わせ (スペースまたは区切り記号なし)
+8 文字または 9 文字の文字と数字の組み合わせで、スペースや区切り記号はありません。
   
 ### <a name="pattern"></a>パターン
 
-文字と数字の 8 文字または 9 文字の組み合わせ:
+文字と数字の 8 文字または 9 文字の組み合わせ。
   
 - 2 桁の数字または文字 
-- 1 桁または 1 文字 (省略可能)
-- 6 桁の数字
+- 1 桁または 1 文字 (オプション)
+- 6 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -15319,14 +15142,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 正規表現は、  `Regex_spain_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` された、または検出された。 
-- 正規表現が `Regex_spain_eu_passport_date` DD-MM-YYYY の形式で日付を検出するか、キーワードが `Keywords_eu_passport_date` 見つかった
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` つかったか、検索されます。 
+- 正規表現が `Regex_spain_eu_passport_date` DD-MM-YYYY 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_spain_eu_passport_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` された、または検出された。
+- キーワードが見  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` つかったか、検索されます。
     
 ```xml
       <!-- Spain Passport Number -->
@@ -15356,12 +15179,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -15371,21 +15194,21 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 - libreta pasaporte
 - número pasaporte
-- espa pasaporte
+- españa pasaporte
 - números de pasaporte
 - número de pasaporte
 - números pasaporte
 - pasaporte no
-- Passeport n°
-- n° Passeport
-- pasaporte no.
+- パスポート n°
+- n° パスポート
+- pasaporte No.
 - pasaporte n°
-- spain passport
+- スペインのパスポート
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
 ## <a name="spain-social-security-number-ssn"></a>スペインの社会保障番号 (SSN)
@@ -15398,11 +15221,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 11 ~ 12 桁の数字:
-- 2 桁の数字 
+- 2 桁 
 - スラッシュ (省略可能) 
-- 7 桁から 8 桁の数字 
+- 7 桁から 8 桁 
 - スラッシュ (省略可能) 
-- 2 桁の数字
+- 2 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -15410,12 +15233,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_spanish_social_security_number がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
-- - キーワードを  `Keywords_spain_eu_ssn_or_equivalent` 検出した。 
+- - キーワードが  `Keywords_spain_eu_ssn_or_equivalent` 見つかりました。 
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_spanish_social_security_number がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
@@ -15443,8 +15266,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - social security number
 - número de la seguridad social
 
-## <a name="spain-tax-identification-number"></a>スペインの税識別番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="spain-tax-identification-number"></a>スペインの納税者番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -15453,37 +15276,37 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-指定されたパターンの 7 桁または 8 桁の数字と 1 文字または 2 文字
+指定したパターンの 7 桁または 8 桁の数字と 1 文字または 2 文字
   
 ### <a name="pattern"></a>パターン
 
-スペインの国民識別カードを持つスペインの自然人:
+スペインの国民 ID カードを持つスペインの自然人:
   
-- 8 桁の数字 
+- 8 桁 
 - 大文字 1 文字 (大文字と小文字を区別) 
     
-スペインの国民識別カードのない非居住者の Spaniards
+スペイン国民 ID カードのない非居住者のスペイン語
   
-- 1 文字の大文字 "L" (大文字と小文字を区別)
-- 7 桁の数字
+- 1 つの大文字 "L" (大文字と小文字を区別)
+- 7 桁
 - 大文字 1 文字 (大文字と小文字を区別) 
     
-スペインの国民識別カードがない 14 歳未満の住民スペイン人:
+スペイン国民 ID カードのない 14 歳未満のスペイン居住者:
   
-- 1 文字の大文字 "K" (大文字と小文字を区別)
-- 7 桁の数字 
+- 1 つの大文字 "K" (大文字と小文字を区別)
+- 7 桁 
 - 大文字 1 文字 (大文字と小文字を区別)
     
-部下の識別番号を持つ部下
+外国人の身分証明番号を持つ外国人
   
 - "X"、"Y"、または "Z" である 1 つの大文字 (大文字と小文字を区別) 
-- 7 桁の数字
+- 7 桁
 - 大文字 1 文字 (大文字と小文字を区別) 
     
-子の識別番号を持たなくても
+外国人の身分証明番号を持つ外国人
   
-- "M" である 1 つの大文字 (大文字と小文字を区別) 
-- 7 桁の数字
+- "M" の 1 つの大文字 (大文字と小文字を区別) 
+- 7 桁
 - 大文字 1 文字 (大文字と小文字を区別) 
     
 ### <a name="checksum"></a>チェックサム
@@ -15492,11 +15315,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - パターンに  `Func_spain_eu_tax_file_number` 一 `Func_spain_eu_DL_and_NI_number_citizen` 致するコンテンツを関数または検索します。 
-- キーワードを  `Keywords_spain_eu_tax_file_number` 検出した。 
+- キーワードが  `Keywords_spain_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - パターンに  `Func_spain_eu_tax_file_number` 一 `Func_spain_eu_DL_and_NI_number_citizen` 致するコンテンツを関数または検索します。 
     
 ```xml
@@ -15527,7 +15350,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - cifid#
 - cifnúmero#
 - número de contribuyente
-- número de identificación fiscal
+- número de identificación Fiscal
 - número de impuesto corporativo
 - spanishcifid#
 - spanishcifid
@@ -15536,20 +15359,20 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - tax file no
 - tax file number
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
@@ -15557,16 +15380,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-文字列 "User Id"、"User ID"、"uid"、または "UserId" の後に、以下のパターンでアウトラインで示されている文字と文字列が続きます。
+文字列 "User Id"、"User ID"、"uid"、または "UserId" の後に、以下のパターンで概説されている文字と文字列が続きます。
 
 ### <a name="pattern"></a>パターン
 
 - 文字列 "User Id"、"User ID"、"uid"、または "UserId"
 - 1 ~ 200 文字の小文字または大文字、数字、記号、特殊文字、またはスペースの任意の組み合わせ
-- 文字列 "Password" または "pwd" ("pwd" の前に小文字が付いない)
+- "pwd" の前に小文字が付かされていない文字列 "Password" または "pwd"
 - 等号 (=)
-- ドル記号 ($)、パーセント記号 (%)、記号 (>)、記号 (@)、引用符 (")、セミコロン (;)、左中かっこ([)、または左角かっこ ({) 以外の任意の文字
-- セミコロン (;)、スラッシュ (/)、または引用符 (") ではない 7 ~ 128 文字の任意の組み合わせ
+- ドル記号 ($)、パーセント記号 (%)、記号 (> より大きい)、記号 (@)、引用符 (")、セミコロン (;)、左中かっこ([)、または左かっこ ({) 以外の文字
+- セミコロンではない 7 ~ 128 文字の任意の組み合わせ (;)、スラッシュ (/)、または引用符 (")
 - セミコロン (;)または引用符 (")
 
 ### <a name="checksum"></a>チェックサム
@@ -15575,11 +15398,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一CEP_Regex_SQLServerConnectionStringコンテンツを検索する正規表現。
-- 指定されたCEP_GlobalFilterが見つかりません。
-- パターンにCEP_PasswordPlaceHolder一致するコンテンツが見つからない正規表現。
-- パターンに一CEP_CommonExampleKeywordsコンテンツが見つからない正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、CEP_Regex_SQLServerConnectionString一致するコンテンツを検索します。
+- ユーザーからのCEP_GlobalFilterが見つかりません。
+- パターンに一CEP_PasswordPlaceHolder一致するコンテンツが見当たらない正規表現。
+- パターンに一CEP_CommonExampleKeywords一致するコンテンツが見当たらない正規表現。
 
 ```sql
 <!---SQL Server Connection String>
@@ -15599,35 +15422,35 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 #### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
-- some-password
+- 一部のパスワード
 - somepassword
 - secretPassword
 - サンプル
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
-(技術的には、この機密情報の種類はキーワード リストではなく正規表現を使用してこれらのキーワードを識別します)。
+(技術的には、この機密情報の種類は、キーワード リストではなく正規表現を使用してこれらのキーワードを識別します。
 
-- パスワードまたは pwd の後に 0 ~ 2 スペース、等号 (=)、0 ~ 2 スペース、およびアスタリスク (*) -OR-
-- パスワードまたは pwd の後に次の情報が続きます。
+- パスワードまたは pwd の後に 0 ~ 2 スペース、等号 (=)、0 ~ 2 スペース、およびアスタリスク (*) -OR- が続きます。
+- パスワードまたは pwd の後に次の情報が表示されます。
     - 等号 (=)
-    - 記号より小さい (<)
-    - 大文字、小文字、数字、アスタリスク (*)、ハイフン (-)、下線 (_)、または空白文字の 1 ~ 200 文字の任意の組み合わせ
+    - シンボル未満 (<)
+    - 大文字または小文字、数字、アスタリスク (*)、ハイフン (-)、下線 (_)、または空白文字である 1 ~ 200 文字の任意の組み合わせ
     - 記号より大きい (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(技術的には、この機密情報の種類はキーワード リストではなく正規表現を使用してこれらのキーワードを識別します)。
+(技術的には、この機密情報の種類は、キーワード リストではなく正規表現を使用してこれらのキーワードを識別します。
 
 - contoso
 - fabrikam
 - northwind
-- sandbox
+- サンドボックス
 - onebox
 - localhost
 - 127.0.0.1
 - testacs。<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="sweden-drivers-license-number"></a>スウェーデンの運転免許証番号
 
@@ -15639,9 +15462,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ハイフンを含む 10 桁の数字:
   
-- 6 桁の数字 
+- 6 桁 
 - ハイフン
-- 4 桁の数字
+- 4 桁
     
 ### <a name="checksum"></a>チェックサム
 
@@ -15649,9 +15472,9 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現は、  `Regex_sweden_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- キーワードが検出  `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` された、または検出された。 
+- キーワードが見  `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` つかったか、検索されます。 
     
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -15676,48 +15499,48 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -15726,68 +15549,68 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
 
 #### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver's_license_number
@@ -15795,14 +15618,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - ajokortti
 - permis de
 - ajokortin numero
-- kulj、jat lic.
-- drivere lic.
+- kuljettajat lic.
+- drivere lic。
 - körkort
-- numărul permisăi de numere
+- numărul permisului de conducere
 -  שאָפער דערלויבעניש נומער
-- fの lic.
+- förare lic.
 -  דריווערס דערלויבעניש
-- の
+- körkortsnummer
 
 ## <a name="sweden-national-id"></a>スウェーデンの国民 ID
 
@@ -15813,10 +15636,10 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 10 桁または 12 桁の数字と省略可能な区切り記号:
-- 2 桁の数字 (省略可能) 
+- 2 桁 (オプション) 
 - YYMMDD という日付形式の 6 桁の数字 
-- "-" または "+" の区切り文字 (省略可能)
-- 4 桁の数字
+- "-" または "+" の区切り記号 (省略可能)
+- 4 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -15824,13 +15647,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は `Func_swedish_national_identifier` 、パターンに一致するコンテンツを検索します。
-- キーワード `Keywords_swedish_national_identifier` の検索
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数 `Func_swedish_national_identifier` は、パターンに一致するコンテンツを検索します。
+- キーワードが `Keywords_swedish_national_identifier` 見つかりました
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は `Func_swedish_national_identifier` 、パターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数 `Func_swedish_national_identifier` は、パターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 
@@ -15852,9 +15675,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
 
 - id no
-- id number
+- id 番号
 - id#
-- id no
+- ID なし
 - identification number
 - identifikationsnumret#
 - identifikationsnumret
@@ -15866,13 +15689,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - 個人用 ID
 - personnummer#
 - personnummer
-- (2013 年 12 月 1 日)
+- skatteidentifikationsnummer
    
 ## <a name="sweden-passport-number"></a>スウェーデンのパスポート番号
 
 ### <a name="format"></a>フォーマット
 
-8 桁の数字
+8 桁
 
 ### <a name="pattern"></a>パターン
 
@@ -15884,14 +15707,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- パターンに一Regex_sweden_passport_numberコンテンツを検索する正規表現。
-- キーワードを検索 `Keywords_eu_passport_number` `Keyword_sweden_passport` します。
-- 正規表現は `Regex_sweden_eu_passport_date` 、DD MMM/MMM YY (01 JAN/JAN 12) 形式の日付を検出するか、キーワードを `Keywords_eu_passport_date` 検出します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、Regex_sweden_passport_number一致するコンテンツを検索します。
+- キーワードが見 `Keywords_eu_passport_number` `Keyword_sweden_passport` つかったか、検索されます。
+- 正規表現は `Regex_sweden_eu_passport_date` 、DD MMM/MMM YY (01 JAN/JAN 12) 形式の日付を検索するか、キーワードが `Keywords_eu_passport_date` 見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- パターンに一Regex_sweden_passport_numberコンテンツを検索する正規表現。
-- キーワードが検出 `Keywords_eu_passport_number` `Keyword_sweden_passport` された場合。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_sweden_passport_number一致するコンテンツを検索します。
+- キーワードが見 `Keywords_eu_passport_number` `Keyword_sweden_passport` つかったか、検索されます。
 
 
 ```xml
@@ -15922,12 +15745,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
    
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -15935,8 +15758,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
-- の登録カード
-- g3 処理料金
+- エイリアン登録カード
+- g3 処理手数料
 - 複数のエントリ
 - Numéro de passeport
 - passeport n °
@@ -15947,83 +15770,22 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - passeportn °
 - passnummer
 - pass nr
-- s 纨
-- s方en visas
+- schengen visa
+- schengen visas
 - 単一エントリ
-- sverige pass
+- sverige パス
 - visa requirements
-- visa processing
-- visa type
+- visa 処理
+- visa の種類
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - 発行日
-- 有効期限日
+- 有効期限の日付
 
 
-## <a name="sweden-social-security-number-or-equivalent-identification"></a>スウェーデンの社会保障番号または同等の識別情報
-この機密情報の種類のエンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-スペースと区切り記号のない 12 桁の数字
-  
-### <a name="pattern"></a>パターン
-
-12 桁の数字:
-  
-- 生年月日に対応する 8 桁の数字 (YYYYMMDD) 
-- シリアル番号に対応する次の 3 桁の数字 
-  - シリアル番号の最後の数字は、男性の奇数と女性の偶数の割り当てによって性別を示します。
-  - 1990 年以前は、シリアル番号の割り当ては、番号のベアラーが生まれた郡に対応しました。 または、1947 年 1 月 1 日に、特別なコード (通常は 7 桁目) を持つ税記録に従って、彼らが住んでいる (1947 年以前に生まれた場合)。
-- 1 桁のチェック ディジット
-    
-### <a name="checksum"></a>チェックサム
-
-はい
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_sweden_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_sweden_eu_ssn_or_equivalent` 検出した。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- この関数は  `Func_sweden_eu_ssn_or_equivalent` 、パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
-
-- 個人用 ID 番号
-- identification number
-- 個人用 ID いいえ
-- ID なし
-- id no
-- 個人識別なし
-- personnummer id
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer#
-- identifikationsnumret#
-
-## <a name="sweden-tax-identification-number"></a>スウェーデンの税金の識別番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="sweden-tax-identification-number"></a>スウェーデンの納税者番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -16032,18 +15794,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>フォーマット
 
-指定されたパターンの 10 桁の数字と記号
+10 桁の数字と指定したパターンの記号
   
 ### <a name="pattern"></a>パターン
 
 10 桁の数字と記号:
   
-- 生年月日 (YYMMDD) に対応する 6 桁の数字 
-- プラス記号または負符号
-- ID 番号を一意にする 3 桁の数字。 
-  - 1990 年以前に発行された数値の場合、7 番目と 8 番目の数字は出生または外生の人々の郡を示します。
-  - 9 番目の位置の数字は、性別が男性の場合は奇数、女性の場合は偶数で示されます。
-- 1 桁のチェック ディジット
+- 生年月日に対応する 6 桁の数字 (YYMMDD) 
+- プラス記号またはマイナス記号
+- 識別番号を一意にする 3 桁の数字。 
+  - 1990 年以前に発行された番号の場合、7 桁目と 8 桁目は出生国または外国生まれの人々を識別します。
+  - 9 番目の位置の数字は、性別を男性または女性の場合は奇数で示します。
+- 1 つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -16051,12 +15813,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数は  `Func_sweden_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_sweden_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_sweden_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_sweden_eu_tax_file_number` 見つかりました。 
     
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_sweden_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_sweden_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
     
 ```xml
       <!-- Sweden Tax Identification Number -->
@@ -16081,26 +15843,26 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 - 個人用 ID 番号
 - personnummer
-- nummer
-- identifikation
-- alatebetalarens identifikationsnummer
+- skatt id nummer
+- スケートの識別
+- skattebetalarens identifikationsnummer
 - sverige tin
-- tax file
+- tax ファイル
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税番号
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 
@@ -16108,16 +15870,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-4 文字の後に 5 ~ 31 桁の文字または数字
+4 文字の後に 5 ~ 31 文字または数字
 
 ### <a name="pattern"></a>パターン
 
-4 文字の後に 5 ~ 31 桁の文字または数字:
-- 4 文字の銀行コード (大文字と小文字を区別しない) 
-- 省略可能なスペース 
+4 文字の後に 5 ~ 31 文字または数字が続きます。
+- 4 文字の銀行コード (大文字と小文字は区別されません) 
+- オプションのスペース 
 - 4 ～ 28 個の文字または数字 (基本的銀行口座番号 (BBAN)) 
-- 省略可能なスペース 
-- 1 ~ 3 桁の文字または数字 (BBAN の残りの部分)
+- オプションのスペース 
+- 1 ~ 3 文字または数字 (BBAN の残りの部分)
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16125,7 +15887,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現 Regex_swift がパターンに一致するコンテンツを検出した。
 - Keyword_swift のキーワードを検出した。
 
@@ -16166,19 +15928,19 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - # <a name="bic"></a>BIC
 - code identificateur de banque
 - SWIFT コード
-- SWIFT
-- BIC 数
+- SWIFT の数
+- BIC の数
 - BIC コード
 - SWIFT コード
 - SWIFT
-- BIC の数
+- BIC
 - BIC コード
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
 
-## <a name="switzerland-ssn-ahv-number"></a>スイスの SSN AHV 番号
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="switzerland-ssn-ahv-number"></a>スイス SSN AHV 番号
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -16191,15 +15953,15 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-13 桁の数字:
+13 桁の番号:
 
 - 3 桁の数字 - 756
 - オプションのドット
-- 4 桁の数字
+- 4 桁
 - オプションのドット
-- 4 桁の数字
+- 4 桁
 - オプションのドット
-- 2 桁の数字
+- 2 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16207,12 +15969,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_swiss_social_security_number_ahvパターンに一致するコンテンツを検索します。
-- 検索されたKeywords_swiss_social_security_number_ahv検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_swiss_social_security_number_ahv一致するコンテンツを検索します。
+- ユーザーのキーワードKeywords_swiss_social_security_number_ahv見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_swiss_social_security_number_ahvパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_swiss_social_security_number_ahv一致するコンテンツを検索します。
 
 ```xml
       <!-- Swiss SSN AHV Number -->
@@ -16234,20 +15996,20 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - ahv
 - ssn
 - pid
-- insurance number
+- 保険番号
 - personalidno#
 - social security number
 - 個人用 ID 番号
-- 個人識別なし
+- 個人識別番号。
 - insuranceno#
 - uniqueidno#
-- 一意の識別なし。
+- 一意の ID いいえ。
 - avs 番号
-- 個人用 ID なし versicherungsnummer
+- 個人 ID no versicherungsnummer
 - identifikationsnummer
-- einzigartige identitzit nicht
+- einzigartige identität nicht
 - sozialversicherungsnummer
-- identification personnelle id
+- ID 要員 ID
 - numéro de sécurité sociale
 
    
@@ -16255,14 +16017,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-1 文字 (英語) の後に 9 桁の数字
+1 文字 (英語) の後に 9 桁
 
 ### <a name="pattern"></a>パターン
 
-1 文字 (英語) の後に 9 桁の数字:
-- 1 文字 (英語、大文字と小文字を区別しない) 
+1 文字 (英語) の後に 9 桁の数字が続きます。
+- 1 文字 (英語、大文字と小文字は区別されません) 
 - 数字 "1" または "2" 
-- 8 桁の数字
+- 8 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16270,12 +16032,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_taiwanese_national_id がパターンに一致するコンテンツを検出した。
 - Keyword_taiwanese_national_id のキーワードを検出した。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_taiwanese_national_id がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
@@ -16315,16 +16077,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-- 生体認証パスポート番号: 9 桁の数字
-- 生体認証以外のパスポート番号: 9 桁の数字
+- 生体認証パスポート番号: 9 桁
+- 生体認証以外のパスポート番号: 9 桁
 
 ### <a name="pattern"></a>パターン
-生体認証のパスポート番号:
+生体認証パスポート番号:
 - 文字 "3" 
-- 8 桁の数字
+- 8 桁
 
 生体認証以外のパスポート番号:
-- 9 桁の数字
+- 9 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16332,9 +16094,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 正規表現はRegex_taiwan_passportパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_taiwan_passport検出された。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_taiwan_passport一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_taiwan_passport見つかりました。
 
 ```xml
 <!-- Taiwan Passport Number -->
@@ -16359,7 +16121,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
-## <a name="taiwan-resident-certificate-arctarc-number"></a>台湾の住民証明書 (ARC/TARC) 番号
+## <a name="taiwan-resident-certificate-arctarc-number"></a>台湾在住証明書 (ARC/TARC) 番号
 
 ### <a name="format"></a>フォーマット
 
@@ -16368,8 +16130,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 10 桁の文字と数字:
-- 2 文字 (大文字と小文字を区別しない) 
-- 8 桁の数字
+- 2 文字 (大文字と小文字は区別されません) 
+- 8 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16377,9 +16139,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- パターンに一Regex_taiwan_resident_certificateコンテンツを検索する正規表現。
-- 検索されたKeyword_taiwan_resident_certificate検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_taiwan_resident_certificate一致するコンテンツを検索します。
+- このページのKeyword_taiwan_resident_certificate見つかりました。
 
 ```xml
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
@@ -16407,7 +16169,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - 外僑居留證 
 - 台灣地區居留證 
 
-## <a name="thai-population-identification-code"></a>タイ語の母集団識別コード
+## <a name="thai-population-identification-code"></a>タイの人口識別コード
 
 ### <a name="format"></a>フォーマット
 
@@ -16425,12 +16187,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_Thai_Citizen_Idパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_Thai_Citizen_Idが見つかりました。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_Thai_Citizen_Id一致するコンテンツを検索します。
+- ユーザーのキーワードKeyword_Thai_Citizen_Id見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_Thai_Citizen_Idパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_Thai_Citizen_Id一致するコンテンツを検索します。
 
 ```xml
 <!-- Thai Citizen ID -->
@@ -16450,7 +16212,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 #### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
 - ID 番号
-- Id 番号
+- ID 番号
 - บัตรประชาชน
 - รหัสบัตรประชาชน
 - บัตรประชาชน
@@ -16472,12 +16234,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
-- この関数はFunc_Turkish_National_Idパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_Turkish_National_Id検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数はFunc_Turkish_National_Id一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_Turkish_National_Id見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_Turkish_National_Idパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_Turkish_National_Id一致するコンテンツを検索します。
 
 ```xml
 <!-- Turkish National Identity -->
@@ -16496,12 +16258,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
-- TC Kim tc No
-- TC Kimaras numaras Tc
-- Vatandavatl の numaras の数
-- Vatandavatl のいいえ
+- TC Kimlik No
+- TC Kimlik numarası
+- Vatandaşlık numarası
+- Vatandaşlık no
 
-## <a name="uk-drivers-license-number"></a>英国 driver's license number
+## <a name="uk-drivers-license-number"></a>英国 運転免許証番号
 
 ### <a name="format"></a>フォーマット
 
@@ -16510,11 +16272,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 ### <a name="pattern"></a>パターン
 
 18 個の文字と数字:
-- 5 文字 (大文字と小文字を区別しない) または文字の代用の数字 "9" です。 
-- 1 桁の数字
-- 生年月日の日付形式 MMDDY の 5 桁の数字。 ドライバーが女性の場合、7 番目の文字は 50 ずつ増加します。試験の場合は、01 ~ 12 ではなく 51 ~ 62 です。
-- 2 文字 (大文字と小文字を区別しない) または文字の代用の数字 "9" です。 
-- 5 桁の数字
+- 5 文字 (大文字と小文字は区別されません) または文字の代りとして数字 "9" を指定します。 
+- 1 桁の数字。
+- 生年月日の日付形式 MMDDY の 5 桁。 ドライバーが女性の場合、7 番目の文字は 50 ずつ増加します。exampe の場合は、01 ~ 12 ではなく 51 ~ 62 です。
+- 2 文字 (大文字と小文字は区別されません) または文字の代りとして"9" という数字を指定します。 
+- 5 桁の数字。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16522,13 +16284,13 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は `Func_uk_drivers_license` 、パターンに一致するコンテンツを検索します。
-- キーワードを `Keywords_eu_driver's_license_number` 検出した。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数 `Func_uk_drivers_license` は、パターンに一致するコンテンツを検索します。
+- キーワードが `Keywords_eu_driver's_license_number` 見つかりました。
 - チェックサムが渡される。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数は `Func_uk_drivers_license` 、パターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数 `Func_uk_drivers_license` は、パターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
@@ -16554,48 +16316,48 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - driverlicenses
 - driverlicence
 - driverlicences
-- driver lic
-- driver lics
+- ドライバー lic
+- ドライバー lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- ドライバー ライセンス
+- ドライバー ライセンス
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- ドライバー lic
+- ドライバー lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- ドライバー ライセンス
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- ドライバーの lic
+- ドライバーの lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- 運転免許証
 - dl#
 - dls#
 - driverlic#
@@ -16604,79 +16366,79 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- driver lic#
-- driver lics#
-- driver license#
+- ドライバー lic#
+- ドライバー lics#
 - ドライバー ライセンス#
-- driver licences#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
 - driver'lic#
 - driver'lics#
-- driver'license#
-- driver'licenses#
-- driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
 - driving licence 
 - driving license
 - dlno#
 - driv lic
 - driv licen
-- license
 - driv ライセンス
-- licencev
-- licencev licences
-- driver licen
-- drivers licen
-- driver's licen
-- driving lic
-- driving licen
-- driving licenses
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
 - driving licence
 - driving licences
-- driving permit
+- 運転許可
 - dl no
 - dlno
-- dl number
+- dl 番号
 
    
-## <a name="uk-electoral-roll-number"></a>英国 electoral roll number
+## <a name="uk-electoral-roll-number"></a>英国 選挙ロール番号
 
 ### <a name="format"></a>フォーマット
 
-2 桁の文字の後に 1 ~ 4 桁の数字
+2 文字の後に 1 ~ 4 桁の数字が続く
 
 ### <a name="pattern"></a>パターン
 
-2 文字 (大文字と小文字を区別しない) の後に 1 ~ 4 つの数字
+2 文字 (大文字と小文字を区別しない) の後に 1 ~ 4 の数字が続く
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16684,7 +16446,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 正規表現 Regex_uk_electoral がパターンに一致するコンテンツを検出した。
 - Keyword_uk_electoral のキーワードを検出した。
 
@@ -16710,7 +16472,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - electoral roll
 
    
-## <a name="uk-national-health-service-number"></a>英国 national health service number
+## <a name="uk-national-health-service-number"></a>英国 国民保健サービス番号
 
 ### <a name="format"></a>フォーマット
 
@@ -16723,7 +16485,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - スペース 
 - 3 桁の数字 
 - スペース 
-- 4 桁の数字
+- 4 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16731,7 +16493,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_uk_nhs_number がパターンに一致するコンテンツを検出した。
 - 次のいずれかの条件に該当する:
     - Keyword_uk_nhs_number のキーワードを検出した。
@@ -16778,7 +16540,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - Birth Date 
    
 ## <a name="uk-national-insurance-number-nino"></a>英国 国民保険番号 (NINO)
-この機密情報の種類のエンティティは、EU の国民識別番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類のエンティティとして使用できます。
+この機密情報の種類エンティティは、EU の国民識別番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -16788,21 +16550,21 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 次の 2 つのパターンを使用できます。
 
-- 2 文字 (有効な IOS は、このプレフィックスで特定の文字のみを使用します。このパターンでは検証され、大文字と小文字は区別されません)
-- 6 桁の数字
-- 'A'、'B'、'C'、または 'D' (プレフィックスと同様に、サフィックスでは特定の文字のみ許可され、大文字と小文字は区別されません)
+- 2 つの文字 (有効な NINOs は、このプレフィックスで特定の文字のみを使用します。このパターンは検証しますが、大文字と小文字は区別されません)
+- 6 桁
+- 'A'、'B'、'C'、または 'D' のどちらか (プレフィックスと同様に、サフィックスでは特定の文字のみを使用できます。大文字と小文字は区別されません)
 
-または
+OR
 
 - 2 文字
 - スペースまたはダッシュ
-- 2 桁の数字
+- 2 桁
 - スペースまたはダッシュ
-- 2 桁の数字
+- 2 桁
 - スペースまたはダッシュ
-- 2 桁の数字
+- 2 桁
 - スペースまたはダッシュ
-- 'A'、'B'、'C'、または 'D' のいずれか
+- 'A'、'B'、'C'、または 'D'
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16810,11 +16572,11 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_uk_nino がパターンに一致するコンテンツを検出した。
 - Keyword_uk_nino のキーワードを検出した。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_uk_nino がパターンに一致するコンテンツを検出した。
 
 ```xml
@@ -16837,7 +16599,7 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - national insurance number
 - national insurance contributions
 - protection act
-- insurance
+- 保険
 - social security number
 - insurance application
 - medical application
@@ -16849,14 +16611,14 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 - NI No.
 - NI#
 - NI#
-- insurance#
+- 保険#
 - insurancenumber
 - nationalinsurance#
 - nationalinsurancenumber
 
     
 ## <a name="uk-unique-taxpayer-reference-number"></a>英国 一意の納税者参照番号
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -16878,9 +16640,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数は  `Func_uk_eu_tax_file_number` 、パターンに一致するコンテンツを検索します。 
-- キーワードを  `Keywords_uk_eu_tax_file_number` 検出した。 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_uk_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keywords_uk_eu_tax_file_number` 見つかりました。 
     
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
@@ -16896,29 +16658,29 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
-- tax number
-- tax file
+- 税番号
+- tax ファイル
 - tax id
-- tax identification no
-- 税識別番号
+- 税の識別なし
+- 税の識別番号
 - tax no#
 - tax no
-- tax registration number
-- はい#
-- (2013 年 1 月#
-- (2013 年 3 月)#
+- 税登録番号
+- タクシー#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - tin id
-- tin no
+- tin いいえ
 - tin#
 
 ## <a name="us-bank-account-number"></a>米国の銀行口座番号
 
 ### <a name="format"></a>フォーマット
 
-6 ~ 17 桁の数字
+6 ~ 17 桁
 
 ### <a name="pattern"></a>パターン
 
@@ -16930,8 +16692,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- パターンに一Regex_usa_bank_account_numberコンテンツを検索する正規表現。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、Regex_usa_bank_account_number一致するコンテンツを検索します。
 - Keyword_usa_Bank_Account のキーワードを検出した。
 
 ```xml
@@ -16984,9 +16746,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-州によって異なります (ニューヨークなど):
+状態によって異なります 。たとえば、ニューヨーク:
 - ddd ddd ddd のように書式設定された 9 桁の数字が一致します。
-- dddddd のような 9 桁の数字は一致しません。
+- dddddddddd のような 9 桁の数字は一致しません。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16994,12 +16756,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_new_york_drivers_license_number がパターンに一致するコンテンツを検出した。
 - Keyword_[state_name]_drivers_license_name のキーワードを検出した。
-- 検索されたKeyword_us_drivers_license検索されます。
+- ユーザーのキーワードKeyword_us_drivers_license見つかりました。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
 - 関数 Func_new_york_drivers_license_number がパターンに一致するコンテンツを検出した。
 - Keyword_[state_name]_drivers_license_name のキーワードを検出した。
 - Keyword_us_drivers_license_abbreviations のキーワードを検出した。
@@ -17065,7 +16827,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - Driver'Lic 
 - Driver'Lics 
 - 運転免許証 
-- Driver'Licenses 
+- 運転免許証 
 - Driver' Lic 
 - Driver' Lics 
 - Driver' License 
@@ -17104,7 +16866,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - Driver'Lic# 
 - Driver'Lics# 
 - 運転免許証# 
-- Driver'Licenses# 
+- 運転免許証# 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
@@ -17125,31 +16887,31 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
-- 州の省略形 (例: "NY") 
-- 状態名 (例: "New York")
+- 状態の省略形 ("NY" など) 
+- 状態名 (たとえば、"New York")
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>米国の個人納税者識別番号 (ITIN)
+## <a name="us-individual-taxpayer-identification-number-itin"></a>米国の個人納税者 ID 番号 (ITIN)
 
 ### <a name="format"></a>フォーマット
 
-"9" で始まる 9 桁の数字で、4 番目の数字として "7" または "8" が含まれます。必要に応じて、スペースまたはダッシュで書式設定されます。
+"9" で始まる 9 桁の数字で、4 桁目として "7" または "8" を含み、必要に応じてスペースまたはダッシュで書式設定されます。
 
 ### <a name="pattern"></a>パターン
 
 書式設定:
 - 数字 "9" 
-- 2 桁の数字 
+- 2 桁 
 - スペースまたはダッシュ 
 - "7" または "8" 
-- 1 桁の数字 
-- スペースまたはダッシュ 
-- 4 桁の数字
+- 数字 
+- スペース、またはダッシュ 
+- 4 桁
 
 unformatted:
 - 数字 "9" 
-- 2 桁の数字 
+- 2 桁 
 - "7" または "8" 
-- 5 桁の数字
+- 5 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -17157,16 +16919,16 @@ unformatted:
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_formatted_itin がパターンに一致するコンテンツを検出した。
 - Keyword_itin のキーワードを検出した。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_unformatted_itin がパターンに一致するコンテンツを検出した。
 - Keyword_itin のキーワードを検出した。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
-- この関数はFunc_formatted_itinまたはFunc_unformatted_itinパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数はFunc_formatted_itin一Func_unformatted_itin一致するコンテンツを検索します。
 
 ```xml
     <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
@@ -17192,7 +16954,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- taxpayer 
+- 納税者 
 - tax id 
 - tax identification 
 - itin 
@@ -17202,7 +16964,7 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 - social security 
 - tax payer 
 - itins 
-- はい 
+- タクシー 
 - individual taxpayer 
 
 
@@ -17210,10 +16972,10 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字(書式設定されたパターンまたは書式設定されていないパターンの場合があります)
+9 桁の数字 (書式付きまたは書式設定されていないパターンの場合があります)
 
 > [!NOTE]
-> 2011 年半ばより前に発行された場合、SSN には強力な書式が設定されています。この書式では、数値の特定の部分が有効な範囲内に含む必要があります (チェックサムはありません)。
+> 2011 年半ばより前に発行された場合、SSN には強力な書式が設定されています。この場合、数値の特定の部分が有効な範囲内に入る必要があります (チェックサムはありません)。
 
 ### <a name="pattern"></a>パターン
 
@@ -17230,19 +16992,19 @@ DLP ポリシーは、約 300 文字以下の場合に、この種の機密情�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_ssn がパターンに一致するコンテンツを検出した。
 - Keyword_ssn のキーワードを検出した。
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- この関数はFunc_unformatted_ssnパターンに一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数はFunc_unformatted_ssn一致するコンテンツを検索します。
 - Keyword_ssn のキーワードを検出した。
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたという信頼性が低い。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
 - 関数 Func_randomized_formatted_ssn がパターンに一致するコンテンツを検出した。
 - Keyword_ssn のキーワードを検出した。
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に 55% の確証を持ってそれがこの種類の機密情報であると特定します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
 - 関数 Func_randomized_unformatted_ssn がパターンに一致するコンテンツを検出した。
 - Keyword_ssn のキーワードを検出した。
 
@@ -17290,7 +17052,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字
+9 桁
 
 ### <a name="pattern"></a>パターン
 
@@ -17302,14 +17064,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合に、この種の機密情報が検出されたと高い信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
 - 関数 Func_usa_uk_passport がパターンに一致するコンテンツを検出した。
-- キーワードが検出 `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` された、または検出された。
-- キーワード `Keywords_eu_passport_date` の検索
+- キーワードが見 `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` つかったか、検索されます。
+- キーワードが `Keywords_eu_passport_date` 見つかりました
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 - 関数 Func_usa_uk_passport がパターンに一致するコンテンツを検出した。
-- キーワードが検出 `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` された、または検出された。
+- キーワードが見 `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` つかったか、検索されます。
 
 ```xml
     <!-- U.S. / U.K. Passport Number -->
@@ -17336,12 +17098,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- パスポート#
+- パスポート#
 - passportid
-- passports
+- パスポート
 - passportno
-- passport no
+- パスポートなし
 - passportnumber
 - passport number
 - passportnumbers
@@ -17349,12 +17111,12 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number
 
-- british passport 
-- uk passport 
+- 英国のパスポート 
+- 英国のパスポート 
 
 
-## <a name="ukraine-passport-domestic"></a>ウクライナのパスポート(国内)
-この機密情報の種類は、次の場合にのみ使用できます。
+## <a name="ukraine-passport-domestic"></a>ウクライナのパスポート国内
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -17363,11 +17125,11 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="format"></a>フォーマット
 
-9 桁の数字
+9 桁
 
 ### <a name="pattern"></a>パターン
 
-9 桁の数字
+9 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -17375,9 +17137,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 正規表現はRegex_Ukraine_Passport_Domesticパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_Ukraine_Passport_Domestic検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現はRegex_Ukraine_Passport_Domestic一致するコンテンツを検索します。
+- このページのKeyword_Ukraine_Passport_Domesticが見つかりました。
 
 ```xml
       <!-- Ukraine Passport Domestic -->
@@ -17393,16 +17155,16 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
-- passport
+- ウクライナのパスポート
 - passport number
-- passport no
+- パスポートなし
 - паспорт України
 - номер паспорта
 - персональний
 
 
 ## <a name="ukraine-passport-international"></a>ウクライナのパスポート国際
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報の種類は、次の場所でのみ使用できます。
 - データ損失防止ポリシー
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
@@ -17415,9 +17177,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="pattern"></a>パターン
 
-8 文字の英数字のパターン:
-- 2 桁の文字または数字
-- 6 桁の数字
+8 文字の英数字パターン:
+- 2 文字または数字
+- 6 桁
 
 ### <a name="checksum"></a>チェックサム
 
@@ -17425,9 +17187,9 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報が検出されたという中程度の信頼度を持っています。
-- 正規表現はRegex_Ukraine_Passport_Internationalパターンに一致するコンテンツを検索します。
-- 検索されたKeyword_Ukraine_Passport_International検索されます。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現はRegex_Ukraine_Passport_International一致するコンテンツを検索します。
+- ユーザーからのキーワードKeyword_Ukraine_Passport_International見つかりました。
 
 ```xml
       <!-- Ukraine Passport International -->
@@ -17443,8 +17205,8 @@ DLP ポリシーは、約 300 文字以下の場合にこの種の機密情報�
 
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
-- passport
+- ウクライナのパスポート
 - passport number
-- passport no
+- パスポートなし
 - паспорт України
 - номер паспорта

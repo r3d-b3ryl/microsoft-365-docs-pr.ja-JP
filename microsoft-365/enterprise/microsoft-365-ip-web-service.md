@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 の IP アドレスと URL web サービスを使用して、Office 365 のネットワークトラフィックをより簡単に識別、差別化する方法について説明します。
-ms.openlocfilehash: 03e6eac86e66db6f9e94c3f98e6d7b565ffa0f14
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456461"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918956"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL の Web サービス
 
@@ -64,9 +64,9 @@ Office 365 IP アドレスと URL の Web サービスを利用することに�
 これらのパラメーターは、すべての Web サービス メソッドで共通です。
 
 - **format=<JSON | CSV>** — 既定では、返されるデータ形式は JSON です。 コンマ区切り値 (CSV) 形式でデータを返すには、このオプションのパラメーターを使用します。
-- **ClientRequestId=\<guid>**— クライアントの関連付けのためにユーザーが作成することが必要な GUID です。 Web サービスを呼び出すコンピューターごとに一意の GUID を生成します (このページに含まれるスクリプトでは、GUID が自動的に生成されます)。 次の例に示す GUID は、今後この Web サービスによってブロックされる可能性があるため使用しないでください。 GUID 形式は _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_で、x は 16 進数を表します。
+- **ClientRequestId=\<guid>**— クライアントの関連付けのためにユーザーが作成することが必要な GUID です。 Web サービスを呼び出すコンピューターごとに一意の GUID を生成します (このページに含まれるスクリプトでは、GUID が自動的に生成されます)。 次の例に示す GUID は、今後この Web サービスによってブロックされる可能性があるため使用しないでください。 GUID 形式は _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_ で、x は 16 進数を表します。
 
-  GUID を作成するには、[New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell コマンドを使用することも、[Online GUID Generator
+  GUID を作成するには、[New-Guid](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell コマンドを使用することも、[Online GUID Generator
 ](https://www.guidgenerator.com/) などのオンライン サービスを利用することもできます。
 
 ## <a name="version-web-method"></a>バージョン Web メソッド
@@ -181,7 +181,7 @@ Worldwide,2018063000
 
 エンドポイント Web メソッドのパラメーターは次のとおりです。
 
-- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** — サービス エリアのコンマ区切リストです。 有効な項目は、_Common_、_Exchange_、_SharePoint_、および_Skype_です。 _Common_ サービス エリア項目はその他のすべてのサービス エリアの前提条件であるため、Web サービスに常に含まれます。 このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
+- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** — サービス エリアのコンマ区切リストです。 有効な項目は、_Common_、_Exchange_、_SharePoint_、および _Skype_ です。 _Common_ サービス エリア項目はその他のすべてのサービス エリアの前提条件であるため、Web サービスに常に含まれます。 このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
 - **TenantName=<tenant_name>** — Office 365 のテナント名です。 この web サービスでは、指定した名前を テナント名を含む URL の一部に挿入します。 テナント名を指定しない場合、URL のそれらの部分にワイルドカード文字が使用されます (\*)。
 - **NoIPv6=<true | false>** — お使いのネットワークで IPv6 を使用しない場合は、値を _true_ に設定して出力から IPv6 アドレスを除外します。
 - **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** — このパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは、_Worldwide_、_China_、_Germany_、_USGovDoD_、_USGovGCCHigh_ です。
@@ -251,7 +251,7 @@ Worldwide,2018063000
 
 変更 Web メソッドのパラメーターは次のとおりです。
 
-- **Version=\<YYYYMMDDNN>**— 必要な URL ルート パラメーター。 この値は、現在実装しているバージョンです。 この web サービスはそのバージョン以降の変更を返します。 形式は _YYYYMMDDNN_ で、_NN_ は 1 日に発行する必要がある複数のバージョンがある場合に増加する自然数で、_00_ は特定日における最初の更新を表します。 Web サービスでは、この_バージョン_のパラメーターが正確に 10 桁であることが要求されます。
+- **Version=\<YYYYMMDDNN>**— 必要な URL ルート パラメーター。 この値は、現在実装しているバージョンです。 この web サービスはそのバージョン以降の変更を返します。 形式は _YYYYMMDDNN_ で、_NN_ は 1 日に発行する必要がある複数のバージョンがある場合に増加する自然数で、_00_ は特定日における最初の更新を表します。 Web サービスでは、この _バージョン_ のパラメーターが正確に 10 桁であることが要求されます。
 
 エンドポイント Web メソッドと同様に、変更 Web メソッドはレート制限されています。 429 HTTP の応答コードを受け取った場合、リクエストを再度行うまでに 1 時間待つか、リクエスト用に新しい GUID を生成します。
 
@@ -271,7 +271,7 @@ Worldwide,2018063000
   — OtherNonPriorityChanges – メモ フィールドなど、その他のすべてのオプションよりも重要度が低いものを変更しました。
 - version — 変更が導入された公開済みのエンドポイント セットのバージョンです。 バージョン番号の形式は _YYYYMMDDNN_ で、_NN_ は 1 日に発行する必要があるバージョンが複数ある場合に増加する自然数です。
 - previous — エンドポイント セットで変更された要素の以前の値を詳述するサブストラクチャです。 これは、新しく追加されたエンドポイント セットには含まれません。 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_、および _notes_ が含まれます。
-- current — エンドポイント セットで変更された要素の変更後の値を詳述するサブストラクチャです。 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_、および _notes_が含まれます。
+- current — エンドポイント セットで変更された要素の変更後の値を詳述するサブストラクチャです。 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_、および _notes_ が含まれます。
 - add — エンドポイント セット コレクションに追加する項目の詳細を示すサブストラクチャです。 追加がない場合は省略します。
   — effectiveDate — 追加がサービス内で有効になる時点を示すデータを定義します。
   — ips — _ips_ 配列に追加する項目です。
@@ -609,7 +609,7 @@ IP アドレスと URL の変更が Web サービスに発行された際にメ�
 
 - Microsoft Flow ソリューションを使用する方法については、「[Use Microsoft Flow to receive an email for changes to Office 365 IP Addresses and URLs (Microsoft Flow を使用して Office 365 IP アドレスと URL への変更の通知メールを受け取る)](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)」を参照してください。
 - ARM テンプレートを使用して Azure Logic App を展開する場合は、「[Office 365 Update Notification (v1.1) (Office 365 更新通知 (v 1.1))](https://aka.ms/ipurlws-updates-template)」を参照してください。
-- PowerShell を使用して独自の通知スクリプトを作成するには、「[Send-MailMessage](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage)」 を参照してください。
+- PowerShell を使用して独自の通知スクリプトを作成するには、「[Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage)」 を参照してください。
 
 ## <a name="exporting-a-proxy-pac-file"></a>プロキシ PAC ファイルのエクスポート
 

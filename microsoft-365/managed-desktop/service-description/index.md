@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c51ebdbcd2a8d6d13f5ba0009d470581e317a365
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840315"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920434"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft マネージド デスクトップ サービスの説明
 
@@ -23,13 +23,13 @@ Microsoft Managed Desktop は、セキュアで最先端の環境をユーザー
 - デバイスの構成
 - Microsoft のベスト プラクティスに従って、Windows Hello、BitLocker、セキュア ブート、仮想化ベースのセキュリティなどにより、ユーザーとデバイスをセキュリティで保護するための機能
 - デバイス セキュリティのモニタリング サービスと修復サービス
-- アプリの互換性は、[Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) から確認
+- アプリの互換性は、[Desktop App Assure](/fasttrack/win-10-desktop-app-assure) から確認
 - Windows 10 および Microsoft 365 Apps for enterprise apps の更新プログラムの管理
 - デバイスとアプリの使用状況に関する分析データ
 - ユーザー向けの IT サポート
 - IT 担当者向けの運用サポート
 
-Microsoft マネージド デスクトップに含まれる特定のサービスの詳細については、このセクションの「その他のトピック」 を参照してください。 Microsoft マネージド デスクトップを利用することに決めた場合は、[[Microsoft マネージド デスクトップの登録準備]](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)で、サービスに参加するための準備の手順を確認できます。
+Microsoft マネージド デスクトップに含まれる特定のサービスの詳細については、このセクションの「その他のトピック」 を参照してください。 Microsoft マネージド デスクトップを利用することに決めた場合は、[[Microsoft マネージド デスクトップの登録準備]](../get-ready/index.md)で、サービスに参加するための準備の手順を確認できます。
 
 - [[Microsoft マネージド デスクトップサポートでされている地域と言語]](regions-languages.md) では、サービスでサポートされている地域と言語について説明しています。
 - ユーザーが最高のエクスペリエンスを体感できるように、Microsoft マネージド デスクトップでは特定のデバイスのみがサポートされています。 [[プログラムデバイス]](device-list.md) は、デバイスがユーザーにより提供されるかあるいはパートナーと協力するかにかかわらず、サービスで使用できる正確なデバイス モデルと構成を指定します。

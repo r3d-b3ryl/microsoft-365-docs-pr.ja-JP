@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Microsoft 365 テナントに接続するには、Microsoft 365 用 PowerShell を使用して、コマンド ラインから管理センターのタスクを実行します。
-ms.openlocfilehash: 0691304a2d40f7ae4262e6761902f16b4f6d5ee2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 58af42958e9b50ee8e39cbd7bd5aab53812e444c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288115"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919178"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell を使用して Microsoft 365 に接続する
 
@@ -60,17 +60,17 @@ Microsoft 365 および管理者のユーザー アカウント、グループ�
 - Windows PowerShell 用 Microsoft Azure Active Directory モジュールでは、PowerShell バージョン 5.1 から PowerShell バージョン 6 までを使用する必要があります。 PowerShell バージョン 7 は使用できません。
        
 >[!Note]
->これらの手順は、Microsoft 365 の管理者の役割を持つユーザーを対象としています。 詳細については、[「管理者の役割について」](https://go.microsoft.com/fwlink/p/?LinkId=532367) を参照してください。
+>これらの手順は、Microsoft 365 の管理者の役割を持つユーザーを対象としています。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールに接続する
 
-Graph 用 Azure Active Directory PowerShell モジュールのコマンドには、コマンドレット名に *AzureAD* が含まれます。 [Graph 用 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) モジュールか [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps) をインストールできます。
+Graph 用 Azure Active Directory PowerShell モジュールのコマンドには、コマンドレット名に *AzureAD* が含まれます。 [Graph 用 Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2) モジュールか [Azure PowerShell](/powershell/azure/install-az-ps) をインストールできます。
 
 Graph 用 Azure Active Directory PowerShell モジュールにおいて新しいコマンドレットを必要とするプロシージャについては、以下の手順に従い、モジュールをインストールし、Microsoft 365 サブスクリプションに接続します。
 
 > [!Note]
-> Windows のさまざまなバージョンに対するサポート情報については、「[Graph 用 Azure Active Directory PowerShell モジュール](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)」を参照してください。
+> Windows のさまざまなバージョンに対するサポート情報については、「[Graph 用 Azure Active Directory PowerShell モジュール](/powershell/azure/active-directory/install-adv2)」を参照してください。
 
 ### <a name="step-1-install-the-required-software"></a>手順 1: 必要なソフトウェアをインストールする
 
@@ -102,7 +102,7 @@ Graph 用 Azure Active Directory PowerShell モジュールにおいて新しい
 
 多要素認証を使用している場合は、手順に従って確認コードなどの追加認証情報を入力します。
 
-接続後は、[Graph 用 Azure Active Directory PowerShell モジュール](https://docs.microsoft.com/powershell/module/azuread)のコマンドレットを使用できます。
+接続後は、[Graph 用 Azure Active Directory PowerShell モジュール](/powershell/module/azuread)のコマンドレットを使用できます。
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールとの接続
 
@@ -152,11 +152,11 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
     
 - **Windows PowerShell 用 Microsoft Azure Active Directory モジュールには、Microsoft .NET Framework 3.5 が必要です。お使いのコンピューターで* x* が有効になっています**。コンピューターにより新しいバージョンがインストールされている可能性があります (4 または 4.5.* x* など)。 ただし、以前の .NET Framework のバージョンとの下位互換性を有効または無効にすることができます。 詳細については、次の記事を参照してください。
     
-  - Windows Server 2012 または Windows Server 2012 R2 の場合は、「[役割と機能の追加ウィザードを使用して .NET Framework 3.5 を有効にする](https://go.microsoft.com/fwlink/p/?LinkId=532368)」を参照してください。
+  - Windows Server 2012 または Windows Server 2012 R2 の場合は、「[役割と機能の追加ウィザードを使用して .NET Framework 3.5 を有効にする](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10))」を参照してください。
     
-  - Windows 7 または Windows Server 2008 R2 の場合は、「[Windows PowerShell 用 Azure Active Directory モジュールを開くことができない](https://go.microsoft.com/fwlink/p/?LinkId=532370)」を参照してください。
+  - Windows 7 または Windows Server 2008 R2 の場合は、「[Windows PowerShell 用 Azure Active Directory モジュールを開くことができない](/troubleshoot/azure/active-directory/cant-open-aad-module-powershell)」を参照してください。
 
-  - Windows 10、Windows 8.1、および Windows 8 の場合は、「[Windows 8、Windows 8.1、および Windows 10 への .NET Framework 3.5 のインストール](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)」を参照してください。
+  - Windows 10、Windows 8.1、および Windows 8 の場合は、「[Windows 8、Windows 8.1、および Windows 10 への .NET Framework 3.5 のインストール](/dotnet/framework/install/dotnet-35-windows-10)」を参照してください。
 
   
 - **お使いの Windows PowerShell 用 Microsoft Azure Active Directory モジュールのバージョンは期限切れの可能性があります。** Microsoft 365用または PowerShell または Windows PowerShell 用 Microsoft Azure Active Directory モジュールで、次のコマンドを実行して確認します。
@@ -167,7 +167,7 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
 
     返されたバージョン番号が *1.0.8070.2* より小さい場合は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールをアンインストールして、上の [手順 1](#step-1-install-the-required-software) からインストールします。
 
-- **接続エラーが発生した場合** は、["Connect-MsolService: 例外がスローされました" というエラー](https://go.microsoft.com/fwlink/p/?LinkId=532377)に関するトピックをご覧ください。
+- **接続エラーが発生した場合** は、["Connect-MsolService: 例外がスローされました" というエラー](/office365/troubleshoot/active-directory/connect-msoservice-throw-exception)に関するトピックをご覧ください。
     
 - **「Get-Item: パスが見つかりません」エラーが表示された場合** は、次のコマンドを使用します。
 

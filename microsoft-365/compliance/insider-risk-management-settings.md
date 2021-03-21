@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: eea8454a02667a42020f9ac1d54402e7b8a06b9b
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 1e6642113ddba9c9110a65e9032ec59db435ac7f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820104"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919863"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>インサイダーリスク管理設定の使用を開始する
 
@@ -254,10 +254,10 @@ API を使用してインサイダー リスクアラート情報を確認する
 365 管理アクティビティ API 共通スキーマのインサイダー リスク管理 [Office次のフィールドと値がエクスポートされます](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)。
 
 - UserId
-- Id
+- ID
 - RecordType
 - CreationTime
-- Operation
+- 操作
 - OrganizationId
 - UserType
 - UserKey
@@ -483,7 +483,7 @@ Microsoft Teams でチームとチャネルを使用する方法の詳細につ�
 
 既存のケースがある場合に Microsoft Teams サポートでインサイダー リスク管理を有効にする場合は、必要に応じてケースごとにチームを手動で作成する必要があります。 インサイダー リスク管理設定で Microsoft Teams のサポートを有効にすると、新しいケースによって新しい Microsoft Teams チームが自動的に作成されます。
 
-ユーザーは、ケースから Microsoft Teams チームを作成するために、組織内に Microsoft 365 グループを作成するためのアクセス許可が必要です。 Microsoft 365 グループのアクセス許可の管理の詳細については、「Microsoft [365](/microsoft-365/solutions/manage-creation-of-groups)グループを作成できるユーザーを管理する」を参照してください。
+ユーザーは、ケースから Microsoft Teams チームを作成するために、組織内に Microsoft 365 グループを作成するためのアクセス許可が必要です。 Microsoft 365 グループのアクセス許可の管理の詳細については、「Microsoft [365](../solutions/manage-creation-of-groups.md)グループを作成できるユーザーを管理する」を参照してください。
 
 ケースのチームを作成するには、既存のケースで直接作業するときに、Microsoft チームの作成コントロールを使用します。 新しいチームを作成するには、次の手順を実行します。
 

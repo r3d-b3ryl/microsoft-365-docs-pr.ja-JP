@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: '概要: Microsoft Azure の Microsoft 365 サブスクリプションの高可用性フェデレーション認証を構成します。'
-ms.openlocfilehash: abe01445b8963dcdc5693b45a680e273f5084446
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: '概要: Microsoft Azure で Microsoft 365 サブスクリプションの高可用性フェデレーション認証を構成します。'
+ms.openlocfilehash: 3989ebb06b4ac5dfa1cded5e07c086c4778f94e7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691987"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919154"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Azure に Microsoft 365 の高可用性フェデレーション認証を展開する
 
-この記事では、次の仮想マシンを使用した Azure インフラストラクチャサービスに Microsoft Microsoft 365 の高可用性フェデレーション認証を展開するための詳細な手順へのリンクを示します。
+この記事では、次の仮想マシンを使用して Azure インフラストラクチャ サービスに Microsoft Microsoft 365 の高可用性フェデレーション認証を展開する手順について説明します。
   
 - 2 つの Web アプリケーション プロキシ サーバー
     
@@ -40,21 +40,21 @@ ms.locfileid: "46691987"
     
 各サーバーのプレース ホルダー名を使用した構成がこちらです。
   
-**Azure での Microsoft 365 インフラストラクチャの高可用性フェデレーション認証**
+**Azure の Microsoft 365 インフラストラクチャの高可用性フェデレーション認証**
 
-![Azure での高可用性 Microsoft 365 フェデレーション認証インフラストラクチャの最終構成](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure での高可用性 Microsoft 365 フェデレーション認証インフラストラクチャの最終的な構成](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 すべての仮想マシンが単一のクロスプレミス Azure 仮想ネットワーク (VNet) に入っています。 
   
 > [!NOTE]
-> 個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。ただし、クロスプレミス接続が使用できなくなると、オンプレミスの Active Directory Domain Services (AD DS) で加えられたユーザー アカウントとグループに対する更新が VNet 内のドメイン コントローラーで受信されなくなります。これを回避するために、クロスプレミス接続で高可用性を構成できます。詳細については、「[高可用性のクロスプレミス接続および VNet 間接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)」を参照してください。
+> 個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。ただし、クロスプレミス接続が使用できなくなると、オンプレミスの Active Directory Domain Services (AD DS) で加えられたユーザー アカウントとグループに対する更新が VNet 内のドメイン コントローラーで受信されなくなります。これを回避するために、クロスプレミス接続で高可用性を構成できます。詳細については、「[高可用性のクロスプレミス接続および VNet 間接続](/azure/vpn-gateway/vpn-gateway-highlyavailable)」を参照してください。
   
 特定の役割を持つ仮想マシンの各ペアが独自のサブネットと可用性セットに入っています。
   
 > [!NOTE]
-> この VNet はオンプレミスのネットワークに接続されているため、この構成に管理サブネット上の jumpbox や仮想マシンの監視は含まれません。詳細については、「[N 層のアーキテクチャで Windows VM を実行する](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)」を参照してください。 
+> この VNet はオンプレミスのネットワークに接続されているため、この構成に管理サブネット上の jumpbox や仮想マシンの監視は含まれません。詳細については、「[N 層のアーキテクチャで Windows VM を実行する](/azure/guidance/guidance-compute-n-tier-vm)」を参照してください。 
   
-この構成の結果として、microsoft 365 のすべてのユーザーに対してフェデレーション認証を受けることができます。これにより、自分の AD DS の資格情報を使用して、Microsoft 365 アカウントではなくサインインすることができます。 フェデレーション認証インフラストラクチャでは、オンプレミスの境界ネットワークよりも Azure インフラストラクチャ サービスでより簡単に展開できるサーバーの冗長セットが使用されます。
+この構成の結果、すべての Microsoft 365 ユーザーに対してフェデレーション認証が行え、AD DS 資格情報を使用して Microsoft 365 アカウントではなくサインインできます。 フェデレーション認証インフラストラクチャでは、オンプレミスの境界ネットワークよりも Azure インフラストラクチャ サービスでより簡単に展開できるサーバーの冗長セットが使用されます。
   
 ## <a name="bill-of-materials"></a>部品表
 
@@ -96,17 +96,16 @@ ms.locfileid: "46691987"
     
 - [フェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。2 つの Web アプリケーション プロキシ サーバーを作成して構成します。
     
-- [フェーズ 5: Microsoft 365 のフェデレーション認証を構成](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)します。 Microsoft 365 サブスクリプションのフェデレーション認証を構成します。
+- [フェーズ 5: Microsoft 365 のフェデレーション認証を構成します](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 Microsoft 365 サブスクリプションのフェデレーション認証を構成します。
     
-これらの記事では、Azure インフラストラクチャサービスで Microsoft 365 の機能的な高可用性フェデレーション認証を作成するための、事前定義されたアーキテクチャに関する規範的なフェーズごとのガイドを提供します。 以下の点にご注意ください。
+これらの記事では、Azure インフラストラクチャ サービスにおける Microsoft 365 の機能的で高可用性のフェデレーション認証を作成する、定義済みのアーキテクチャに関する、事前に説明された段階的なガイドを提供します。 以下の点にご注意ください。
   
 - 経験豊富な AD FS の実行者である場合、フェーズ 3 と 4 の手順を自由に適応させて、自分のニーズに最適なサーバーのセットを構築できます。
     
 - 既存のクロスプレミスの仮想ネットワークを使用した既存の Azure ハイブリッド クラウド展開がある場合は、フェーズ 1 と 2 の手順を自由に適応させるかスキップして、AD FS と Web アプリケーション プロキシ サーバーを適切なサブネットに配置できます。
     
-開発/テスト環境、またはこの構成の概念実証を構築するには、「 [Microsoft 365 開発/テスト環境のフェデレーション id](federated-identity-for-your-microsoft-365-dev-test-environment.md)」を参照してください。
+開発/テスト環境またはこの構成の概念実証を構築するには [、「Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)開発/テスト環境のフェデレーション ID」を参照してください。
   
 ## <a name="next-step"></a>次の手順
 
 このワークロードの構成を「[フェーズ 1: Azure を構成する](high-availability-federated-authentication-phase-1-configure-azure.md)」から開始します。  
-  

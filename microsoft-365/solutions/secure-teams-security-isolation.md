@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405704"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920930"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -40,7 +40,7 @@ ms.locfileid: "50405704"
     - ラベルを適用するドキュメントを暗号化する
 
 > [!IMPORTANT]
-> この記事の手順に進む前に、「[Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護するために秘密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)を有効にしていることを確認します。
+> この記事の手順に進む前に、「[Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護するために秘密度ラベル](../compliance/sensitivity-labels-teams-groups-sites.md)を有効にしていることを確認します。
 
 このビデオでは、展開プロセスの概要について説明します。
 <br>
@@ -70,8 +70,8 @@ ms.locfileid: "50405704"
 
 ゲストと安全に共有する方法の詳細については、次のリソースをご覧ください。
 
-- [組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [セキュリティで保護されたゲスト共有環境を作成する](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する](./share-limit-accidental-exposure.md)
+- [セキュリティで保護されたゲスト共有環境を作成する](./create-secure-guest-sharing-environment.md)
 
 ゲスト共有を許可または禁止するには、関連付けられている SharePoint サイトのチーム レベルとサイト レベルの共有コントロールに対して、秘密度ラベルを組み合わせて使用します。
 
@@ -98,7 +98,7 @@ ms.locfileid: "50405704"
 2. **[設定]** タブで、**[メンバーのアクセス許可]** を展開します。
 3. **[プライベート チャネルを作成する]** チェック ボックスをオフにします。
 
-[チーム ポリシー](https://docs.microsoft.com/MicrosoftTeams/teams-policies)を使用して、プライベート チャネルを作成できるユーザーを制御することもできます。
+[チーム ポリシー](/MicrosoftTeams/teams-policies)を使用して、プライベート チャネルを作成できるユーザーを制御することもできます。
 
 ## <a name="create-a-sensitivity-label"></a>秘密度ラベルを作成する
 
@@ -194,7 +194,7 @@ SharePoint では、次の 3 つの手順を実行します。
 
 #### <a name="private-channels"></a>プライベート チャネル
 
-チームにプライベート チャネルを追加する場合、各プライベート チャネルは、既定の共有設定を使用して新しい SharePoint サイトを作成します。 これらのサイトは SharePoint 管理センターでは表示されないので、次のパラメーターと共に [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) PowerShell コマンドレットを使用して、ゲスト共有設定を更新する必要があります。
+チームにプライベート チャネルを追加する場合、各プライベート チャネルは、既定の共有設定を使用して新しい SharePoint サイトを作成します。 これらのサイトは SharePoint 管理センターでは表示されないので、次のパラメーターと共に [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell コマンドレットを使用して、ゲスト共有設定を更新する必要があります。
 
 - `-SharingCapability Disabled` ゲスト共有を無効にするには (既定では有効です)
 - `-DefaultSharingLinkType Internal` 既定の共有リンクを *特定のユーザー* に変更するには
@@ -229,10 +229,10 @@ SharePoint サイトがチーム メンバーではないユーザーと共有�
 
 Microsoft 365 は、コンテンツを保護するための追加の方法を提供しています。 次のオプションを使用して、組織のセキュリティを強化することを検討してください。
 
-- ゲストを[使用条件](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)に同意させる。
-- ゲストに[セッション タイムアウト ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を構成する。
-- [機密情報の種類](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)を作成し、[データ損失防止](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)を使用して、機密情報にアクセスするポリシーを設定する。
-- [Azure Active Directory アクセス](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) レビューを使用して、チームのアクセス権とメンバーシップを定期的に確認する。
+- ゲストを[使用条件](/azure/active-directory/conditional-access/terms-of-use)に同意させる。
+- ゲストに[セッション タイムアウト ポリシー](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を構成する。
+- [機密情報の種類](../compliance/sensitive-information-type-learn-about.md)を作成し、[データ損失防止](../compliance/data-loss-prevention-policies.md)を使用して、機密情報にアクセスするポリシーを設定する。
+- [Azure Active Directory アクセス](/azure/active-directory/governance/access-reviews-overview) レビューを使用して、チームのアクセス権とメンバーシップを定期的に確認する。
 
 ## <a name="drive-user-adoption-for-team-members"></a>チーム メンバーのユーザーによる導入を促す
 
@@ -266,4 +266,4 @@ Microsoft 365 は、コンテンツを保護するための追加の方法を提
 
 ## <a name="see-also"></a>関連項目
 
-[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

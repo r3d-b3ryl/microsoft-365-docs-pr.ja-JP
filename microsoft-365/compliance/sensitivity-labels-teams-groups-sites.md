@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 3565b47e21d81b4b3d560d72a29f2deae9587709
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 501df9b167e917d79957d8b156597af67e6240af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407317"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919583"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 [秘密度ラベル](sensitivity-labels.md) を使用して、ドキュメントやメールを分類および保護するだけでなく、Microsoft Teams サイト、Microsoft 365 グループ ([以前は Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))、およびSharePoint サイトなどのコンテナーにあるコンテンツを保護するために、秘密度ラベルを使用することもできます。 コンテナー レベルの分類と保護を設定するには、次のラベル設定を使用します。
 
@@ -57,7 +57,7 @@ ms.locfileid: "50407317"
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>コンテナーの秘密度ラベルを有効化してラベルを同期する方法
 
-1. この機能は Azure AD 機能を使用するため、Azure AD のドキュメント [「Azure Active Directory で Microsoft 365 グループに秘密度ラベルを割り当てる」](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) の指示に従い、秘密度ラベルのサポートを有効にします。
+1. この機能は Azure AD 機能を使用するため、Azure AD のドキュメント [「Azure Active Directory で Microsoft 365 グループに秘密度ラベルを割り当てる」](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) の指示に従い、秘密度ラベルのサポートを有効にします。
 
 2. 秘密度ラベルを Azure AD に同期することが必要になります。 まず、[セキュリティ/コンプライアンス センターの PowerShell に接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
@@ -100,9 +100,9 @@ ms.locfileid: "50407317"
 
 4. **[デバイス アクセスと外部共有設定]** を選択した場合は、次の設定を構成します。
     
-    - **[ラベル付き SharePoint サイトからの外部共有を制御]**: このオプションを選択して、すべてのユーザー、新規および既存のゲストを選択するか、組織内のユーザのみを選択します。 この構成と設定の詳細については、「SharePoint ドキュメント」で [サイトへのの外部共有を有効または無効にする](https://docs.microsoft.com/sharepoint/change-external-sharing-site) を参照します。
+    - **[ラベル付き SharePoint サイトからの外部共有を制御]**: このオプションを選択して、すべてのユーザー、新規および既存のゲストを選択するか、組織内のユーザのみを選択します。 この構成と設定の詳細については、「SharePoint ドキュメント」で [サイトへのの外部共有を有効または無効にする](/sharepoint/change-external-sharing-site) を参照します。
     
-    - **非管理対象デバイスからのアクセス**: このオプションでは、Azure ADの条件付きアクセスを使用して、管理されていないデバイスからの SharePoint および OneDrive コンテンツへのアクセスをブロックまたは制限する SharePoint 機能を使用します。 詳細については、SharePoint ドキュメントの「[非管理対象デバイスからのアクセスの制御](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。 このラベル設定を指定するオプションは、SharePoint の手順から「[特定の SharePoint サイトまたは OneDrive からのアクセスをブロックまたは制限する](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)」セクションの手順 3 - 5 で説明しているように、サイトの PowerShell コマンドを実行することと同じです。
+    - **非管理対象デバイスからのアクセス**: このオプションでは、Azure ADの条件付きアクセスを使用して、管理されていないデバイスからの SharePoint および OneDrive コンテンツへのアクセスをブロックまたは制限する SharePoint 機能を使用します。 詳細については、SharePoint ドキュメントの「[非管理対象デバイスからのアクセスの制御](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。 このラベル設定を指定するオプションは、SharePoint の手順から「[特定の SharePoint サイトまたは OneDrive からのアクセスをブロックまたは制限する](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)」セクションの手順 3 - 5 で説明しているように、サイトの PowerShell コマンドを実行することと同じです。
         
         追加情報については、このセクションの最後にある「[非管理対象デバイス オプションの依存関係に関する詳細情報](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)」を参照してください。
 
@@ -113,7 +113,7 @@ ms.locfileid: "50407317"
 
 ##### <a name="more-information-about-the-dependencies-for-the-unmanaged-devices-option"></a>非管理対象デバイス オプションの依存関係に関する詳細情報
 
-「[アプリによる制限の使用](https://docs.microsoft.com/sharepoint/app-enforced-restrictions)」に記載されているように SharePoint の依存条件付きアクセス ポリシーを構成しない場合は、ここで指定したオプションに影響ありません。 また、テナントレベルで構成された設定よりも制限が少ない場合は影響はありません。 管理されていないデバイスの組織全体の設定を構成している場合は、同じかより制限の厳しいレベルのラベル設定を選択します
+「[アプリによる制限の使用](/sharepoint/app-enforced-restrictions)」に記載されているように SharePoint の依存条件付きアクセス ポリシーを構成しない場合は、ここで指定したオプションに影響ありません。 また、テナントレベルで構成された設定よりも制限が少ない場合は影響はありません。 管理されていないデバイスの組織全体の設定を構成している場合は、同じかより制限の厳しいレベルのラベル設定を選択します
 
 たとえば、テナントが [**制限されたWebのみのアクセスを許可する**] に構成されている場合、フルアクセスを許可するラベル設定は制限が少ないため、効果がありません。 このテナントレベルの設定では、アクセスをブロックするためのラベル設定 (より制限的) または制限付きアクセスのためのラベル設定 (テナント設定と同じ) を選択します。
 
@@ -175,17 +175,17 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 
 これで、1 つまたは複数の秘密度ラベルを Microsoft 365 グループに適用する準備ができました。 手順については、Azure AD のドキュメントに戻ります。
 
-- 「[Assign a label to a new group in Azure portal (Azure ポータルの新しいグループにラベルを割り当てる)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)」
+- 「[Assign a label to a new group in Azure portal (Azure ポータルの新しいグループにラベルを割り当てる)](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)」
 
-- [Assign a label to an existing group in Azure portal (Azure ポータルの既存のグループにラベルを割り当てる)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
+- [Assign a label to an existing group in Azure portal (Azure ポータルの既存のグループにラベルを割り当てる)](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
-- 「[Remove a label from an existing group in Azure portal (Azure ポータルの既存のグループからラベルを削除する)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).」
+- 「[Remove a label from an existing group in Azure portal (Azure ポータルの既存のグループからラベルを削除する)](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).」
 
 ### <a name="apply-a-sensitivity-label-to-a-new-team"></a>新しいチームに機密ラベルを適用する
 
 ユーザーは、Microsoft Teams で新しいチームを作成する際に機密ラベルを選択できます。 **[秘密度]** ドロップダウンからラベルを選択すると、プライバシー設定によってラベル構成が変更される場合があります。 ラベルに対し選択した外部ユーザーのアクセス設定に応じて、ユーザーは組織外のユーザーをチームに追加することができたり、できなかったりします。
 
-[Teams の機密ラベルの詳細について](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
+[Teams の機密ラベルの詳細について](/microsoftteams/sensitivity-labels)
 
 ![新しいチームを作成する際のプライバシー設定](../media/privacy-setting-new-team.png)
 
@@ -215,19 +215,19 @@ Outlook on the web では、新しいグループを作成するときに、公�
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>PowerShell を使用して、複数のサイトに秘密度ラベルを適用する
 
-[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) と [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、現在の [SharePoint Online 管理シェル](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)の *SensitivityLabel* パラメーターによって、多くのサイトに秘密度ラベルを適用できます。 サイトには、任意の SharePoint サイトコレクション、または OneDrive サイトを使用できます。
+[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) と [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、現在の [SharePoint Online 管理シェル](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)の *SensitivityLabel* パラメーターによって、多くのサイトに秘密度ラベルを適用できます。 サイトには、任意の SharePoint サイトコレクション、または OneDrive サイトを使用できます。
 
 SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があることを確認します。
 
 1. **[管理者として実行]** オプションを使用して PowerShell セッションを開きます。
 
-2. ラベルの GUID がわからない場合、[セキュリティ/コンプライアンス センターの PowerShellに接続し](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)、秘密度ラベルとそれらの GUID のリストを取得します。
+2. ラベルの GUID がわからない場合、[セキュリティ/コンプライアンス センターの PowerShellに接続し](/powershell/exchange/connect-to-scc-powershell)、秘密度ラベルとそれらの GUID のリストを取得します。
 
    ```powershell
    Get-Label |ft Name, Guid
    ```
 
-3. ここでは、[SharePoint Online PowerShellに接続して](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)、ラベルの GUID を変数として保存します。 例:
+3. ここでは、[SharePoint Online PowerShellに接続して](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)、ラベルの GUID を変数として保存します。 例:
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
@@ -301,7 +301,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 コンテナーの秘密度ラベルを有効にすると、Microsoft 365 は新しい Microsoft 365 のグループおよび SharePoint サイト向けに古い分類をサポートしなくなります。 ただし、秘密度ラベルをサポートしている既存のグループおよびサイトには、秘密度ラベルを使用するように変換しない限り、古い分類値が引き続き表示されます。
 
-SharePoint の古いグループ分類を使用した場合の例として、「[SharePoint の "モダン" サイトの分類」](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)を参照してください。
+SharePoint の古いグループ分類を使用した場合の例として、「[SharePoint の "モダン" サイトの分類」](/sharepoint/dev/solution-guidance/modern-experience-site-classification)を参照してください。
 
 これらの分類は、Azure AD PowerShell または PnP コア ライブラリを使用し、`ClassificationList` 設定に値を定義することによって構成されています。 テナントに分類値が定義されている場合は、[AzureADPreview PowerShell モジュール](https://www.powershellgallery.com/packages/AzureADPreview)から次のコマンドを実行すると、それらが表示されます。
 
@@ -331,7 +331,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
    たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
 
-2. [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label) コマンドレットを使用して、機密ラベルおよびその GUID のリストを取得します。
+2. [Get-Label](/powershell/module/exchange/get-label) コマンドレットを使用して、機密ラベルおよびその GUID のリストを取得します。
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -339,7 +339,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 3. Microsoft 365 グループに適用する秘密度ラベルの GUID をメモします。
 
-4. ここでは、別の Windows PowerShell ウィンドウで [Exchange Online PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+4. ここでは、別の Windows PowerShell ウィンドウで [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 5. 次のコマンドを例として使用して、現在 "一般" の分類を持つグループのリストを取得します。
 
@@ -377,13 +377,13 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>コンテナーの秘密度ラベルを無効にする方法
 
-「[PowerShell で秘密度ラベルのサポートを有効にする](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)」と同じ手順で、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルをオフにすることができます。 ただし、この機能を無効にするには、手順5で `$setting["EnableMIPLabels"] = "False"`を指定します。
+「[PowerShell で秘密度ラベルのサポートを有効にする](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)」と同じ手順で、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルをオフにすることができます。 ただし、この機能を無効にするには、手順5で `$setting["EnableMIPLabels"] = "False"`を指定します。
 
 秘密度ラベルを作成または編集するときに、グループおよびサイトですべての設定を使用できないようにすることに加えて、この操作では、コンテナーが構成に使用するプロパティは元に戻ります。 Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを有効にすると、**分類** ([Azure AD グループの分類](#classic-azure-ad-group-classification) に使用) に使用されているプロパティが **秘密度** に切り替わります。 コンテナーの秘密度ラベルを無効にすると、コンテナーは秘密度プロパティを無視して、もう一度分類プロパティを使用します。
 
 つまり、以前コンテナーに適用されたサイトとグループのラベル設定が適用されなくなり、コンテナーにはラベルが表示されなくなります。
 
-これらのコンテナーに Azure AD 分類値が適用されている場合、コンテナーは再び分類を使用します。 この機能を有効にした後に作成された新しいサイトやグループにはラベルが表示されず、分類もされないので注意してください。 これらのコンテナー、および新しいコンテナーの場合、分類値を適用できるようになりました。 詳細については、「[SharePoint の 「最新の」 サイト分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)」 および 「[組織の Office グループの分類を作成する](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)」 を参照してください。。
+これらのコンテナーに Azure AD 分類値が適用されている場合、コンテナーは再び分類を使用します。 この機能を有効にした後に作成された新しいサイトやグループにはラベルが表示されず、分類もされないので注意してください。 これらのコンテナー、および新しいコンテナーの場合、分類値を適用できるようになりました。 詳細については、「[SharePoint の 「最新の」 サイト分類](/sharepoint/dev/solution-guidance/modern-experience-site-classification)」 および 「[組織の Office グループの分類を作成する](../enterprise/manage-microsoft-365-groups-with-powershell.md)」 を参照してください。。
 
 ## <a name="additional-resources"></a>その他のリソース
 

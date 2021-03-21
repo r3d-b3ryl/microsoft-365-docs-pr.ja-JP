@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 構成可能な一致を使用するために、完全一致スキーマを変更する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2211e4d99d97fcce241a5f4c3ea7c9d8122ca9d7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: e00466e4648ebe93f0658383515d1543f858e1b0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656803"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919374"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>構成可能な一致を使用するために完全一致スキーマを変更する
 
@@ -101,7 +101,7 @@ EDM が構成可能な一致を使用するようにこのスキーマを更新�
 - \"
 - \,
 
-6. [セキュリティ/コンプライアンス センター PowerShellに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
+6. [セキュリティ/コンプライアンス センター PowerShellに接続する](/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
 7. 以下のコマンドレットを一度に 1 つずつ実行して、スキーマを更新します。
 
@@ -129,7 +129,7 @@ EDM が構成可能な一致を使用するようにこのスキーマを更新�
 
 - 詳細については、「[Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)」を参照してください。
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
-- [カスタムの機密情報の種類](custom-sensitive-info-types.md)
+- [カスタムの機密情報の種類](./sensitive-information-type-learn-about.md)
 - [DLP ポリシーの概要](data-loss-prevention-policies.md)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Microsoft Cloud App Security](/cloud-app-security)
+- [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

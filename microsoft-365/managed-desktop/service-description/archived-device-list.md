@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bbb3814a973bec53a877bc70d0299ce7b2eb87b5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727555"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920566"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop アーカイブ デバイス
 
@@ -75,12 +75,12 @@ Microsoft Managed Desktop に登録するには、デバイスが次のモデル
 
 - Microsoft Managed Desktop によって承認されたイメージを持っている。 デバイスを注文する場合は、Microsoft Managed Desktop で使用されているデバイスを指定してください。
 - Windows の初回実行エクスペリエンスが完了していない。
-- デバイス登録機能を使用して Microsoft Managed [Desktop に登録](https://aka.ms/mmddrhelp) する
+- デバイス登録機能を使用して Microsoft Managed [Desktop に登録](../get-started/register-devices-self.md) する
 
 #### <a name="more-help"></a>その他のヘルプ
 
 これらのリソースは、特定のデバイスに関する質問に答えるのに役立ちます。
 
-- Dell デバイスに関するその他の質問については[、「MMD_at_dell@dell.com」 に問い合MMD_at_dell@dell.com。](mailto:MMD_at_dell@dell.com)
+- Dell デバイスに関するその他の質問については[、「MMD_at_dell@dell.com」 に問い合 MMD_at_dell@dell.com。](mailto:MMD_at_dell@dell.com)
 
 - HP デバイスに関するその他の質問については、お問い[合わせ](mailto:mmd-americas@hp.com): Americas ( mmd-americas@hp.com );ヨーロッパ/中東/アフリカ[(](mailto:mmd-emea@hp.com)mmd-emea@hp.com );アジア太平洋/日本 ([mmd-apj@hp.com](mailto:mmd-apj@hp.com));グローバル[(](mailto:mmd@hp.com)mmd@hp.com )

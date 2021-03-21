@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: 997ce1375660f1a0e87d0babe647caada09e9e93
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: c87f1d0ea8a35d7685f91c1b20a709c58ec4d040
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663657"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920218"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -35,7 +35,7 @@ ms.locfileid: "49663657"
 Azure Active Directory は、Microsoft 365 により使用されるディレクトリ サービスです。 Azure Active Directory の組織の関係設定は、Teams、Microsoft 365 グループ、SharePoint、OneDrive での共有に直接影響します。
 
 > [!NOTE]
-> これらの設定は、[SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)が構成された場合にのみ、SharePoint に反映されます。 次の表では、この設定が構成されていることを前提としています。
+> これらの設定は、[SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](/sharepoint/sharepoint-azureb2b-integration-preview)が構成された場合にのみ、SharePoint に反映されます。 次の表では、この設定が構成されていることを前提としています。
 
 ### <a name="organizational-relationships-settings"></a>組織の関係の設定
 
@@ -49,7 +49,7 @@ Azure Active Directory は、Microsoft 365 により使用されるディレク�
 |管理者と、ゲストの招待元ロールのユーザーが招待できる|はい|**[はい]** に設定すると、管理者は、Azure AD と Teams や SharePoint などの Microsoft 365 共有エクスペリエンスを使用してゲストを招待できます。**[いいえ]** に設定するとゲストを招待できません。|
 |メンバーが招待できる|はい|**[はい]** に設定すると、Azure AD メンバーは Azure AD を使用してゲストを招待できます。**[いいえ]** に設定すると招待できません。 **[はい]** に設定すると、Microsoft 365 グループのメンバーは所有者の承認を受けているゲストを招待できます。**[いいえ]** に設定すると、Microsoft 365 グループのメンバーは所有者の承認を受けているゲストを招待できますが、所有者が承認するにはグローバル管理者でなければなりません。 <br><br>**[メンバーが招待できる]** は、(ゲストではなく) Azure AD のメンバーを参照し、Microsoft 365 のサイトまたはグループ メンバーを参照しない点に注意してください。 <br><br>これは、Microsoft 365 セキュリティとプライバシーの **[ユーザーが組織に新しいゲストを追加できるようにする]** 設定と同じです。|
 |ゲストが招待できる|はい|**[はい]** に設定すると、ディレクトリ内のゲストは他のゲストを招待して、Azure AD リソースおよび SharePoint と OneDrive のファイルとフォルダーで共同作業を行うことができます。**[いいえ]** に設定するとこれができません。 <br><br>SharePoint 管理センターでは、**[一致する電子メール アドレスを正確に入力して外部ユーザーによるディレクトリ内のユーザー アカウントの検索を許可する]** を有効にする必要があることに注意してください。|
-|ゲストの電子メール ワンタイム パスコードを有効にする (プレビュー)|いいえ|**[はい]** に設定すると、MSA、職場または学校のアカウントを持っていないゲストは、[ワンタイム パスコードを使用して Azure AD で認証](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode)できます。**[いいえ]** に設定すると、ユーザーは認証を行うために Microsoft アカウントを作成する必要があります。 [SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)を機能させるには、この設定を **[はい]** に設定する必要があります。|
+|ゲストの電子メール ワンタイム パスコードを有効にする (プレビュー)|いいえ|**[はい]** に設定すると、MSA、職場または学校のアカウントを持っていないゲストは、[ワンタイム パスコードを使用して Azure AD で認証](/azure/active-directory/b2b/one-time-passcode)できます。**[いいえ]** に設定すると、ユーザーは認証を行うために Microsoft アカウントを作成する必要があります。 [SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](/sharepoint/sharepoint-azureb2b-integration-preview)を機能させるには、この設定を **[はい]** に設定する必要があります。|
 |共同作業における制限事項|招待を任意のドメインに送信することを許可する|この設定では、共有するドメインの許可またはブロックのリストを指定できます。 許可されたドメインを指定すると、共有の招待をそのドメインにのみ送信できます。 拒否されたドメインを指定すると、共有の招待はそのドメインに送信できません。<br><br> この設定は、Teams や SharePoint などの Microsoft 365 共有エクスペリエンスに影響します。 SharePoint と Teams でドメインのフィルタリングを使用して、より詳細にドメインを許可したりブロックしたりできます。|
 
 これらの設定は、ユーザーがディレクトリに招待される方法に影響します。 ディレクトリにすでに存在しているゲストとの共有には影響しません。
@@ -81,7 +81,7 @@ Microsoft 365 管理センターには、共有および Microsoft 365 グルー
 |組織の外部のグループ メンバーがグループのコンテンツにアクセスできるようにする|オン|**[オン]** に設定すると、ゲストはグループのコンテンツにアクセスできます。**[オフ]** に設定するとアクセスできません。 この設定は、ゲストが Microsoft 365 グループまたは Teams と連携している場合に **[オン]** にしてください。|
 |グループ所有者が組織外のユーザーをグループに追加できるようにする|オン|**[オン]** の場合、Microsoft 365 グループ または Teams の所有者は新しいゲストをグループに招待できます。 **[オフ]** の場合、所有者はディレクトリ内にすでに存在しているゲストのみを招待できます。|
 
-これらを、組織レベルで設定できます。 PowerShell を使用し、グループ レベルでこれらの設定を変更する方法の詳細については、「[特定のグループに対する設定を作成する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)」を参照してください。
+これらを、組織レベルで設定できます。 PowerShell を使用し、グループ レベルでこれらの設定を変更する方法の詳細については、「[特定のグループに対する設定を作成する](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)」を参照してください。
 
 ## <a name="teams"></a>Teams
 
@@ -166,7 +166,7 @@ OneDrive はSharePoint のサイトの階層であるため、組織レベルの
 |**Setting**|**Default**|**説明**|
 |:-----|:-----|:-----|
 |ドメインごとに外部共有を制限する|オフ|この設定では、共有するドメインの許可またはブロックのリストを指定できます。 許可されたドメインを指定すると、共有の招待をそのドメインにのみ送信できます。 拒否されたドメインを指定すると、共有の招待はそのドメインに送信できません。<br><br> この設定は、組織内のすべての SharePoint サイトと OneDrive サイトに影響します。|
-|ゲストは共有への招待が送信されたアカウントと同じアカウントを使用してサインインする必要がある|オフ|招待の送信先とは別のメールアドレスを使用して、ゲストがサイト共有の招待を交換しないようにします。<br><br>[SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)では、招待の送信先のメールアドレスに基づいてすべてのゲストがディレクトリに追加されるため、この設定は使用されません。 代わりのメールアドレスは、サイトにアクセスする際に使用できません。|
+|ゲストは共有への招待が送信されたアカウントと同じアカウントを使用してサインインする必要がある|オフ|招待の送信先とは別のメールアドレスを使用して、ゲストがサイト共有の招待を交換しないようにします。<br><br>[SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](/sharepoint/sharepoint-azureb2b-integration-preview)では、招待の送信先のメールアドレスに基づいてすべてのゲストがディレクトリに追加されるため、この設定は使用されません。 代わりのメールアドレスは、サイトにアクセスする際に使用できません。|
 |ゲストに所有していないアイテムの共有を許可する|オン|**[オン]** の場合、ゲストは他のユーザーやゲストと自分が所有していないアイテムを共有できます。**[オフ]** の場合は共有できません。 ゲストは常にフル コントロールのあるアイテムを共有できます。|
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>SharePoint と OneDrive のファイルとフォルダーのリンク設定
@@ -209,7 +209,7 @@ SharePoint と OneDrive のゲストと共有できるユーザーを制限す�
 
 SharePoint の各サイトにゲストの共有のアクセス許可を設定できます。 この設定は、サイトの共有と、ファイルとフォルダーの共有の両方に適用されます (*[すべてのユーザー]* の共有はサイトの共有には利用できません)。 **[すべてのユーザー]** を選択した場合、ユーザーは *[すべてのユーザー]* のリンクを使用してファイルとフォルダーを、新規および既存のゲストとはサイト自体を共有できます)。
 
-サイトに機密ラベルが適用されている場合、そのラベルが外部共有設定を制御する場合があります。 詳細については、「[機密ラベルを使用して、Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護する](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)」 をご覧ください。
+サイトに機密ラベルが適用されている場合、そのラベルが外部共有設定を制御する場合があります。 詳細については、「[機密ラベルを使用して、Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)」 をご覧ください。
 
 **ナビゲーション:** SharePoint 管理センター > [アクティブなサイト] > サイトを選択 > [ポリシー] タブ > [外部共有の編集]
 
@@ -251,8 +251,8 @@ SharePoint の各サイトにゲストの共有のアクセス許可を設定で
 
 ## <a name="see-also"></a>関連項目
 
-[SharePoint と OneDrive の外部共有の概要](https://docs.microsoft.com/sharepoint/external-sharing-overview)
+[SharePoint と OneDrive の外部共有の概要](/sharepoint/external-sharing-overview)
 
-[Microsoft Teams でのゲスト アクセス](https://docs.microsoft.com/MicrosoftTeams/guest-access)
+[Microsoft Teams でのゲスト アクセス](/MicrosoftTeams/guest-access)
 
 [Microsoft 365 グループへのゲストの追加](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
