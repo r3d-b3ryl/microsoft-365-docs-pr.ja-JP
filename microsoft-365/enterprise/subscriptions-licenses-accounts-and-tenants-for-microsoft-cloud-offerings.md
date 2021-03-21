@@ -3,7 +3,6 @@ title: マイクロソフトのクラウド プランのサブスクリプショ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Microsoft のクラウドプランの組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解する。
-ms.openlocfilehash: c48e2ecc321f4b6e06ced13f029e344faf12650b
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446033"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909516"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント
 
@@ -66,7 +65,11 @@ Microsoft の SaaS クラウド商品の場合、1 つのライセンスで、1 
 **図 2:1 つの組織の SaaS ベースのサブスクリプションに含まれるライセンス**
 
 ![Microsoft の SaaS ベース クラウド プランのサブスクリプション内の複数ライセンスの例。](../media/Subscriptions/Subscriptions-Fig2.png)
-  
+
+>[!Note]
+>セキュリティのベスト プラクティスは、特定の管理機能の役割が割り当てられた個別のユーザー アカウントを使用することです。 これらの専用の管理者アカウントには、管理するクラウド サービスのライセンスを割り当てる必要はありません。 たとえば、SharePoint 管理者アカウントに Microsoft 365 ライセンスを割り当てる必要はありません。
+>
+
 Azure PaaS ベースのクラウド サービスの場合、サービス料金にソフトウェア ライセンスが組み込まれています。  
   
 Azure IaaS ベースの仮想マシン場合、仮想マシン イメージにインストールしたソフトウェアまたはアプリケーションを使用するために、追加ライセンスが必要になることがあります。一部の仮想マシン イメージにはライセンス付きバージョンのソフトウェアがインストールされていて、サーバーに対する分単位の料金が費用に含まれます。その例として、SQL Server 2014 および SQL Server 2016 の仮想マシン イメージが挙げられます。 
@@ -139,7 +142,7 @@ Microsoft SaaS ベース サービスの場合は、管理センターを使用�
   
 1. 全体管理者アカウントを使用して、Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
-2. **管理センター**のホームページ左側にあるナビゲーションで、**[課金]**、**[サービスを購入する]** の順にクリックします。
+2. **管理センター** のホームページ左側にあるナビゲーションで、**[課金]**、**[サービスを購入する]** の順にクリックします。
     
 3. **[サービスを購入する]** ページで、新しいサブスクリプションを購入します。
     
@@ -153,7 +156,7 @@ Microsoft 365 サブスクリプションと同じ組織および Azure AD テ�
     
 3. **[サブスクリプションの追加]** ページでプランを選択し、支払情報を記入して契約します。
     
-Azure と Microsoft 365 のサブスクリプションを個別に購入済みで、Azure サブスクリプションから Microsoft 365 の Azure AD テナントへのアクセスを希望する場合は、「[既存の Azure サブスクリプションを Azure Active Directory テナントに追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)」の説明を参照してください。
+Azure と Microsoft 365 のサブスクリプションを個別に購入済みで、Azure サブスクリプションから Microsoft 365 の Azure AD テナントへのアクセスを希望する場合は、「[既存の Azure サブスクリプションを Azure Active Directory テナントに追加する](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)」の説明を参照してください。
  
 ## <a name="see-also"></a>関連項目
 
@@ -166,4 +169,3 @@ Azure と Microsoft 365 のサブスクリプションを個別に購入済み�
 ## <a name="next-step"></a>次の手順
 
 [Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
-  
