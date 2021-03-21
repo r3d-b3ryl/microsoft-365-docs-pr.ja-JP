@@ -15,49 +15,49 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: '概要: microsoft 365 の PowerShell を使用して、Microsoft 365 管理センターでは作成できないレポートを作成します。'
-ms.openlocfilehash: 10000f62b1d6a747cf0373623c6038b080666e1a
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+description: '概要: PowerShell for Microsoft 365 を使用して、Microsoft 365 管理センターで作成できないレポートを作成します。'
+ms.openlocfilehash: 12cba74d114ea03804741335bd34ece403926033
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753980"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924698"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>PowerShell を使用して Microsoft 365 のレポートを作成する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 管理センターでは、さまざまなレポートを利用できます。 ただし、これらのレポートで提供される情報は非常に多く、場合によってはさらに必要になることがあります。 これは、Microsoft 365 に PowerShell が必要な場合です。
+Microsoft 365 管理センターでは、さまざまなレポートを利用できます。 しかし、これらのレポートは非常に多くの情報しか提供しないので、より多くの情報が必要な場合があります。 これは、Microsoft 365 用の PowerShell が必要な場合です。
   
-これらの記事では、microsoft 365 の PowerShell を使用して Microsoft 365 テナントから情報を取得する方法について説明します。
+次の記事では、Microsoft 365 の PowerShell を使用して Microsoft 365 テナントから情報を取得する方法について説明します。
   
-- Microsoft 365 の PowerShell を使用したレポート作成の概要:
+- PowerShell for Microsoft 365 を使用したレポート作成の開始:
     
-  - [Microsoft 365 で PowerShell を使用する理由](https://technet.microsoft.com/library/dn568034.aspx#reveal)
+  - [Microsoft 365 で PowerShell を使用する理由](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
     
     
 - ユーザー アカウントおよびライセンスのレポート:
     
-  - [PowerShell を使用して Microsoft 365 ライセンスとサービスを表示する](view-licenses-and-services-with-microsoft-365-powershell.md)
+  - [PowerShell で Microsoft 365 ライセンスとサービスを表示する](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-  - [PowerShell を使用して Microsoft 365 ライセンスおよびライセンスのないユーザーを表示する](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
+  - [PowerShell で Microsoft 365 のライセンスユーザーとライセンスのないユーザーを表示する](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
     
-  - [PowerShell を使用して Microsoft 365 アカウントのライセンスとサービスの詳細を表示する](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+  - [PowerShell で Microsoft 365 アカウント のライセンスとサービスの詳細を表示する](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-  - [PowerShell を使用して Microsoft 365 ユーザーアカウントを表示する](view-user-accounts-with-microsoft-365-powershell.md)
+  - [PowerShell で Microsoft 365 ユーザー アカウントを表示する](view-user-accounts-with-microsoft-365-powershell.md)
     
 - SharePoint Online のレポート:
     
-  - [SharePoint Online 管理シェルの使用を開始する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+  - [SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-  - [Remove-spositegroup-指定したサイトコレクションのすべてのグループを取得します。](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Get-SPOSiteGroup - 指定したサイト コレクション上のすべてのグループを取得します。](/powershell/module/sharepoint-online/get-spositegroup)
     
 - Exchange Online のレポート:
     
-  - [Exchange Online PowerShell を使用してメールボックスを表示する](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Exchange Online PowerShell を使用してメールボックスを表示する](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     
     
-## <a name="related-articlesl"></a>関連 articlesl
+## <a name="related-articlesl"></a>関連記事
 
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)
   
@@ -66,4 +66,3 @@ Microsoft 365 管理センターでは、さまざまなレポートを利用で
 [PowerShell を使用して SharePoint を管理する](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
 [Microsoft 365 ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-  

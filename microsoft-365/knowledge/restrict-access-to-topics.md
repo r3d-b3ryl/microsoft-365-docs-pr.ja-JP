@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: b8c49c96ace14ac1ba03411b5670d8e77268109a
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: dc344e0263bab287133ddb01ecab262440eb9e10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453910"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925954"
 ---
 # <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>Microsoft Viva Topics のトピックへのアクセスを制限する
 
@@ -33,28 +33,21 @@ Microsoft Viva では、組織内の関係者は、特定のトピックが検�
 
 ナレッジ管理者は、最初のインデックス作成で特定のトピックが見つからないのを防ぐことで、特定のトピックへのアクセスを制限できます。 このタスクを実行するには、Microsoft 365 管理センターのナレッジ ネットワーク管理者設定で 2 つの方法があります。
  
-- [[トピックの検出から除外する SharePoint](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#select-sharepoint-topic-sources)サイト] を選択します。この設定を使用すると、特定の SharePoint サイトがトピックに対してクロールされるのを防ぐことが可能です。
-- [名前でトピックを除外する](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#exclude-topics-by-name): 管理者は、この設定を使用して、特定のトピックが名前で検出されるのを防ぐ場合があります。 ナレッジ ネットワークの管理者設定では、管理者は CSV ファイルで除外するトピックの一覧をアップロードできます。 トピック名に完全一致または部分的に一致するトピックを除外できます。
+- [[トピックの検出から除外する SharePoint](./topic-experiences-discovery.md#select-sharepoint-topic-sources)サイト] を選択します。この設定を使用すると、特定の SharePoint サイトがトピックに対してクロールされるのを防ぐことが可能です。
+- [名前でトピックを除外する](./topic-experiences-discovery.md#exclude-topics-by-name): 管理者は、この設定を使用して、特定のトピックが名前で検出されるのを防ぐ場合があります。 ナレッジ ネットワークの管理者設定では、管理者は CSV ファイルで除外するトピックの一覧をアップロードできます。 トピック名に完全一致または部分的に一致するトピックを除外できます。
 
 ## <a name="prevent-topics-from-being-viewed-by-specific-users"></a>トピックが特定のユーザーによって表示されるのを防ぐ
 
-ナレッジ管理者は、組織内 [のトピックを表示できるユーザーを選択することもできます](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)。 この設定では、すべてのトピックを表示できるライセンスユーザーを選択できます。 たとえば、パイロット環境では、小さなグループのユーザーだけがトピックを表示できる場合があります。
+ナレッジ管理者は、組織内 [のトピックを表示できるユーザーを選択することもできます](./topic-experiences-knowledge-rules.md)。 この設定では、すべてのトピックを表示できるライセンスユーザーを選択できます。 たとえば、パイロット環境では、小さなグループのユーザーだけがトピックを表示できる場合があります。
 
 ## <a name="remove-topics-from-being-viewed"></a>トピックを表示から削除する
 
-ナレッジ マネージャーは、ユーザー [がトピックを表示](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics) できなくなった場合に、トピックを削除できます。 トピック センター **の [トピックの** 管理] ページで、ナレッジ マネージャーは特定のトピックを拒否して表示を防止できます。  トピックは、提案または確認済み状態の場合に関係なく削除できます。
+ナレッジ マネージャーは、ユーザー [がトピックを表示](./manage-topics.md) できなくなった場合に、トピックを削除できます。 トピック センター **の [トピックの** 管理] ページで、ナレッジ マネージャーは特定のトピックを拒否して表示を防止できます。  トピックは、提案または確認済み状態の場合に関係なく削除できます。
 
 削除されたトピックは、必要に応じて表示可能なトピックとして後で追加できます。 
 
 
 ## <a name="see-also"></a>関連項目
-
-
-
-  
-
-
-
 
 
 

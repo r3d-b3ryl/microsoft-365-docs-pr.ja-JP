@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '概要: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。'
 hideEdit: true
-ms.openlocfilehash: 826da75ea4f6991a3291e8b1e36d644fb19a7704
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 1c0a2a486bf6964edc9b94fd670c96ade161cacd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596958"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925270"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL および IP アドレス範囲
 
@@ -69,9 +69,9 @@ Office 365 には、インターネットへの接続が必要です。Office 36
 
 [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)
 
-[一般的な Microsoft Stream エンドポイント](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
+[一般的な Microsoft Stream エンドポイント](/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Microsoft 365 の接続を監視する](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
+[Microsoft 365 の接続を監視する](./monitor-connectivity.md)
 
 [ルート CA とサードパーティ製のアプリケーション システム上の中間 CA バンドル](../compliance/encryption-office-365-certificate-chains.md)
   

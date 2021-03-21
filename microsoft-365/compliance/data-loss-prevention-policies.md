@@ -22,18 +22,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 全体で組織の機密情報を識別、監視、および自動的に保護する方法について説明します。
-ms.openlocfilehash: 75c2f4d81b3378d031adc394a9c8f7615d51079c
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7d526d5eeb74f0d31f375974824e7a76344bcd76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682800"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925811"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> 最近、Office 365 Advanced Compliance のライセンスを取得しているユーザー向けに、データ損失防止機能が Microsoft Teams のチャットとチャネルのメッセージに追加されました。これはスタンドアロンのオプションとして提供されており、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
+> 最近、Office 365 Advanced Compliance のライセンスを取得しているユーザー向けに、データ損失防止機能が Microsoft Teams のチャットとチャネルのメッセージに追加されました。これはスタンドアロンのオプションとして提供されており、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
 
 ビジネスの標準や業界の規制に準拠するために、組織は機密情報を保護し、不注意による情報漏えいを防ぐ必要があります。 機密情報には、財務データや個人情報 (PII) (クレジット カード番号、社会保障番号、健康記録など) があります。 Office 365 セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
   
@@ -204,7 +204,7 @@ OneDrive for Business アカウントにおけるポリシー ヒントの表示
   
 ![インシデント レポートを構成するためのページ](../media/Alerts-and-incident-report.png)
 
-DLP は、SharePoint Online や OneDrive for Business のアイテムとは異なる方法でメールをスキャンします。 SharePoint Online や OneDrive for Business では、DLP は新しいアイテムだけでなく既存のアイテムもスキャンして、一致が検出される場合は常に警告とインシデント レポートを生成します。 Exchange Online では、DLP は新しいメール メッセージのみをスキャンして、ポリシーとの一致が検出されるとレポートを生成します。 DLP * は、メールボックスやアーカイブに保存されている既存のメール アイテムについては、スキャンや一致検出を *_実行しません_*。
+DLP は、SharePoint Online や OneDrive for Business のアイテムとは異なる方法でメールをスキャンします。 SharePoint Online や OneDrive for Business では、DLP は新しいアイテムだけでなく既存のアイテムもスキャンして、一致が検出される場合は常に警告とインシデント レポートを生成します。 Exchange Online では、DLP は新しいメール メッセージのみをスキャンして、ポリシーとの一致が検出されるとレポートを生成します。 DLP は、メールボックスやアーカイブに保存されている既存のメール アイテムについては、スキャンや一致検出を ***実行しません***。
   
 ## <a name="grouping-and-logical-operators"></a>グループ化と論理演算子
 
@@ -240,7 +240,7 @@ DLP は、SharePoint Online や OneDrive for Business のアイテムとは異�
 
 グループ間では、コンテンツがルールに一致するためにそのグループが満たす必要のある条件が、1 つのグループの条件のみなのか、すべてのグループの条件なのかを選択できます。
   
-たとえば、_ *米国 HIPAA** の組み込みポリシーには、次を含むコンテンツを特定するために、グループ間で **AND** 演算子を使用するルールがあります。 
+たとえば、**米国 HIPAA** の組み込みポリシーには、次を含むコンテンツを特定するために、グループ間で **AND** 演算子を使用するルールがあります。 
   
 - **PII 識別子** グループ (少なくとも 1 つの SSN 番号 **または** DEA 番号) 
     
@@ -354,20 +354,20 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 
 - DLP ポリシーでの条件として保持ラベルを使用するには、保持ラベルを事前に作成して発行しておく必要があります。
 - 発行済みの保持ラベルを同期するには、1 から 7 日かかる場合があります。アイテム保持ポリシーで発行される保持ラベルの詳細については、「[保持ラベルが適用できるようになったとき](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)」を参照してください。自動的に発行されたアイテム保持ラベルの詳細については、「[保持ラベルが有効になるまでの所要時間](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)」を参照してください。
-- ポリシーでの保持ラベルの使用は、**SharePoint および OneDrive のアイテムに対してのみサポートされています**。
+- ポリシーでの保持ラベルの使用** は、SharePoint および OneDrive のアイテムに対してのみサポートされています***。
 
   ![条件としてのラベル](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   保持と廃棄の対象になっているアイテムがあり、そのアイテムに他のコントロールを適用する場合は、DLP ポリシーで保持ラベルを使用できます。例: 
 
-  - _*課税年度 2018** という名前の保持ラベルを発行し、SharePoint に格納されている 2018 年の税務書類に適用すると、10 年間保持され、その後破棄されます。 また、DLP ポリシーを使用して、これらのアイテムが組織外に共有されないようにすることもできます。
+  - **課税年度 2018** という名前の保持ラベルを発行し、SharePoint に格納されている 2018 年の税務書類に適用すると、10 年間保持され、その後破棄されます。 また、DLP ポリシーを使用して、これらのアイテムが組織外に共有されないようにすることもできます。
 
   > [!IMPORTANT]
   > 保持ラベルを DLP ポリシーの条件として指定し、Exchange および/または Teams を場所として含めると、次のエラーが表示されます: 「**メールおよびチーム メッセージのラベル付きコンテンツの保護はサポートされていません。下のラベルを削除するか、Exchange と Teams の場所指定をオフにしてください。**」 これは、Exchange トランスポートがメッセージの送信や配信中にラベルのメタデータを評価しないためです。 
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーで秘密度ラベルを条件として使用する
 
-DLP ポリシーの条件としての秘密度ラベルは現在プレビュー中です。 [詳細情報を参照してください](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition)。
+DLP ポリシーの条件としての秘密度ラベルは現在プレビュー中です。 [詳細情報を参照してください](./dlp-sensitivity-label-as-condition.md)。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>この機能と他の機能の関係
 
@@ -497,10 +497,10 @@ DLP は、(単純なテキスト スキャンだけでなく) 詳細なコンテ
   
 <!-- conflict with a DLP policy is bad wording --> 最後に、ドキュメントが DLP ポリシーに矛盾し、その後 DLP ポリシーに準拠するようになることがあります。たとえば、ユーザーがドキュメントにクレジット カード番号を追加する場合、DLP ポリシーによってドキュメントへのアクセスが自動的にブロックされる可能性があります。しかしユーザーが後で機密情報を削除すると、次にドキュメントが対象ポリシーに対して再び評価されるときに、アクション (この例ではブロック) が自動的に取り消されます。
   
-DLP は、インデックスを作成できるすべてのコンテンツを評価します。 既定でクロールされるファイルの種類の詳細については、「[SharePoint Server での既定のクロール対象ファイルのファイル名拡張子および解析対象ファイルの種類](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)」を参照してください。
+DLP は、インデックスを作成できるすべてのコンテンツを評価します。 既定でクロールされるファイルの種類の詳細については、「[SharePoint Server での既定のクロール対象ファイルのファイル名拡張子および解析対象ファイルの種類](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)」を参照してください。
 
 > [!NOTE]
-> SharePoint の新しいファイルの外部共有は、少なくとも 1 つの DLP ポリシーが新しいアイテムをスキャンするまで、既定でブロックできます。 詳細については、「[新しいファイルを既定で機密としてマークする](https://docs.microsoft.com/sharepoint/sensitive-by-default)」をご覧ください。 
+> SharePoint の新しいファイルの外部共有は、少なくとも 1 つの DLP ポリシーが新しいアイテムをスキャンするまで、既定でブロックできます。 詳細については、「[新しいファイルを既定で機密としてマークする](/sharepoint/sensitive-by-default)」をご覧ください。 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、Outlook、Outlook on the web でのポリシーの評価
 
@@ -542,19 +542,19 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 セキュリティ &amp; コンプライアンス センターのほとんどのコマンドレットを使用するには、次のようにする必要があります。
   
-1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell)。
     
-2. これらの[ポリシーおよびコンプライアンスの dlp コマンドレット](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection)のいずれかを使用する。
+2. これらの[ポリシーおよびコンプライアンスの dlp コマンドレット](/powershell/module/exchange/export-dlppolicycollection)のいずれかを使用する。
     
 ただし、DLP レポートは、Exchange Online を含む Microsoft 365 全体からデータを取り込む必要があります。 このため、**DLP レポート用のコマンドレットは、セキュリティ &amp; コンプライアンス センター Powershell ではなく Exchange Online Powershell で使用できます**。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
   
-1. [リモート PowerShell で Exchange Online に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [リモート PowerShell で Exchange Online に接続する](/powershell/exchange/connect-to-exchange-online-powershell)。
     
 2. DLP レポート用のいずれかのコマンドレットを使用します。
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport)
+    - [Get-DlpDetectionsReport](/powershell/module/exchange/Get-DlpDetectionsReport)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport)
+    - [Get-DlpDetailReport](/powershell/module/exchange/Get-DlpDetailReport)
     
 ## <a name="more-information"></a>詳細情報
 

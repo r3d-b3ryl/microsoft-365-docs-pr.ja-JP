@@ -1,6 +1,6 @@
 ---
-title: 管理ポータルで管理者の連絡先を追加および確認する
-description: フォーカスされている領域ごとに、連絡先の情報をお伝えください。
+title: 管理ポータルで、管理者の連絡先を、追加および確認する
+description: フォーカス領域ごとに問い合わせ先を教えて下さい。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,67 +9,67 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8b287200b1c94ff350f7ba00cf0c4e6bc1b4a71f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 18823db8ca8d4bfa82b8ab6265ee8a0902a13e79
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289263"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925894"
 ---
-# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで管理者の連絡先を追加および確認する
+# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで、管理者の連絡先を、追加および確認する
 
-Microsoft Managed Desktop service がお客様と通信するには、いくつかの方法があります。 コミュニケーションを効率化し、適切な人物との関係を確認するには、一連の管理者の連絡先を提供する必要があります。 Microsoft マネージドデスクトップ IT 操作は、テナントの問題のトラブルシューティングについて、これらのユーザーに連絡します。
+Microsoft Managed Desktop サービスが顧客と通信する方法は複数あります。 コミュニケーションを合理化し、適切なユーザーと確認するには、一連の管理者連絡先を提供する必要があります。 Microsoft Managed Desktop IT Operations は、テナントのトラブルシューティングに関する問題についてこれらのユーザーに問い合わせています。
 
 > [!IMPORTANT]
-> これらの連絡先は、管理ポータルに既に追加されている場合があります。 その場合は、Microsoft 管理デスクトップが深刻なインシデントが発生した場合に、連絡先リストが正確 **であること** を、すぐに確認してください。
+> 管理ポータルにこれらの連絡先を既に追加している可能性があります。 その場合は、重大なインシデントが発生した場合に Microsoft Managed **Desktop** が連絡先リストにアクセスできる必要がありますので、連絡先リストが正確か確認してください。
 
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Microsoft Managed Desktop 管理ポータルの Azure Active Directory アクセス
+## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Microsoft Managed Desktop Admin ポータルの Azure Active Directory アクセス
 
-Microsoft Managed Desktop 管理ポータルでは、ポータルにアクセスするユーザーが次のいずれかの Azure Active Directory (AD) の役割を持っている必要があります。
+Microsoft Managed Desktop Admin ポータルでは、ポータルにアクセスするユーザーが次の Azure Active Directory (AD) の役割のいずれかを持っている必要があります。
 - グローバル管理者
 - Intune サービス管理者
 - グローバル閲覧者
-- サービスサポート管理者
+- サービス サポート管理者
 
-グローバル管理者は、組織を Microsoft マネージドデスクトップに登録するためのものである必要があります。 すべての5つの役割は、タスクを開始して表示するために、管理ポータル内で同じアクセス権を持ちます。 これらの役割を Azure AD に割り当てる方法の詳細については、「 [Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)」を参照してください。 
+組織を Microsoft Managed Desktop に登録するには、グローバル管理者が必要です。 5 つの役割はすべて、タスクを開始および表示するための管理ポータル内で同じアクセス権を持ちます。 Azure Active Directory でのこれらのロールの割り当てAD詳細については [、「Administrator role permissions in Azure Active Directory」を参照してください](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
 
-## <a name="admin-contact-areas-of-focus"></a>フォーカスのある管理者の連絡先領域
+## <a name="admin-contact-areas-of-focus"></a>管理者の連絡先のフォーカス領域
 
-管理者の連絡先は、質問に回答したり、フォーカスの異なる領域を決定するための最適なユーザーまたはグループである必要があります。 **Microsoft マネージドデスクトップの操作は、お客様が提出したサポート要求に関する質問について、これらの管理者の連絡先に連絡します。** これらの管理者の連絡先は、サポート要求の更新と新しいメッセージに関する通知を受け取ります。 次のような領域があります。
+管理者の連絡先は、質問に答え、さまざまな分野で決定を下す最適な人物またはグループである必要があります。 **Microsoft Managed Desktop Operations は、お客様から送信されたサポート要求に関する質問について、管理者の連絡先に問い合わせします。** これらの管理者の連絡先は、サポート要求の更新と新しいメッセージに関する通知を受け取る。 これらの領域には、次のものが含まれます。
 
-フォーカスの領域 | に関する質問
+フォーカス領域 | に関する質問
 --- | ---
 アプリのパッケージ化 | アプリのパッケージ化のトラブルシューティング
-デバイス | デバイスの正常性、Microsoft マネージドデスクトップデバイスのトラブルシューティング
-セキュリティ | Microsoft マネージドデスクトップデバイスに関するセキュリティ上の問題のトラブルシューティング
-IT ヘルプデスク | サポートスタッフが Microsoft マネージドデスクトップサポート領域外のユーザーチケットを渡す場合 
-その他 | 他の領域でカバーされない問題の場合
+デバイス | デバイスの正常性、Microsoft Managed Desktop デバイスでのトラブルシューティング
+セキュリティ | Microsoft Managed Desktop デバイスに関するセキュリティの問題のトラブルシューティング
+IT ヘルプ デスク | Microsoft Managed Desktop サポート領域外でサポート スタッフがユーザー チケットを引き渡す場合 
+その他 | 他の領域でカバーされていない問題の場合
 
-**これらの連絡先に対して選択するユーザーは、Microsoft マネージドデスクトップ環境を決定するための知識と権限を持っている必要があります。** Microsoft マネージドデスクトップ環境をオンにすると、ローカルのヘルプデスクおよびセキュリティのための連絡先を追加するように求められます。 
+**これらの連絡先を選択するユーザーは、Microsoft Managed Desktop 環境に関する意思決定を行う知識と権限を持っている必要があります。** Microsoft Managed Desktop 環境をオンボードすると、ローカルのヘルプデスクとセキュリティの連絡先を追加するように求めるメッセージが表示されます。 
 
-[サポートリクエストを送信](../service-description/support.md)する場合は、管理者の連絡先が必要です。 サポート要求のフォーカス領域に対する管理者の連絡先が必要です。 
+サポート要求を送信する場合は、 [管理者の連絡先が必要です](../service-description/support.md)。 サポート要求のフォーカス領域の管理者連絡先が必要です。 
 
-**管理者の連絡先を追加するには**
+**管理者連絡先を追加するには**
 
-1.  [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインします。 
+1.  [Microsoft Managed Desktop 管理ポータルにサインインします](https://aka.ms/mwaasportal)。 
 
-2.  [ **サポート**] で、[管理者の **連絡先**] を選択します。 
+2.  [サポート **] で**、[管理者連絡先] **を選択します**。 
 
-    ![選択されている上部付近のサポートメニュー、管理者の連絡先](../../media/admincontacts.png)
+    ![[サポート] メニューの [選択した上部の近くの管理者の連絡先]](../../media/admincontacts.png)
 
 3. **[追加]** を選択します。
 
-    ![管理ポータル、[追加] ボタン、[エクスポートと更新] の左側に](../../media/adminadd.png)
+    ![[エクスポートと更新] の左側にある管理ポータルの [追加] ボタン](../../media/adminadd.png)
 
-4.  **フォーカスの領域**を選択し、連絡先の情報を入力します。 
+4.  [フォーカスエリア **] を選択** し、連絡先の情報を入力します。 
 
-    ![他の、アプリ、セキュリティなど、フォーカスがある領域のリスト](../../media/areaoffocus.png)
+    ![その他、アプリ、セキュリティなどのフォーカス領域の一覧](../../media/areaoffocus.png)
 
-5. フォーカスの領域ごとに繰り返します。 
+5. フォーカス領域ごとに繰り返します。 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの使用を開始する手順
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
 
-1. 管理ポータルで管理者の連絡先を追加および確認する (このトピック)
+1. 管理ポータルで管理者連絡先を追加して確認する (このトピック)
 2. [条件付きアクセスを調整する](conditional-access.md)
 3. [ライセンスを割り当てる](assign-licenses.md)
 4. [Intune ポータル サイトをデバイスにインストールする](company-portal.md)

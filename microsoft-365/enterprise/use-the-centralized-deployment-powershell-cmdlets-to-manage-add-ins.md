@@ -1,5 +1,5 @@
 ---
-title: 一元展開 PowerShell コマンドレットを使用してアドインを管理する
+title: 集中展開 PowerShell コマンドレットを使用してアドインを管理する
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,39 +19,39 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: 一元展開 PowerShell コマンドレットを使用すると、Microsoft 365 組織の Office アドインを展開および管理するのに役立ちます。
-ms.openlocfilehash: 659f12d2533601c4b2165a95ddbf59ea521945b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 一元展開 PowerShell コマンドレットを使用して、Microsoft 365 組織Officeアドインを展開および管理できます。
+ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692109"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924674"
 ---
-# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>一元展開 PowerShell コマンドレットを使用してアドインを管理する
+# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>集中展開 PowerShell コマンドレットを使用してアドインを管理する
 
-Microsoft 365 グローバル管理者は、一元展開機能を使用して Office アドインをユーザーに展開できます (「 [管理センターで Office アドインを展開](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)する」を参照してください)。 Microsoft 365 管理センター経由で Office アドインを展開することに加えて、Microsoft PowerShell を使用することもできます。 [Windows PowerShell 用 O365 中央アドイン展開モジュール](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)をインストールします。 
+Microsoft 365 のグローバル管理者は、集中展開機能を使用して Office アドインをユーザーに展開できます (「管理センターで Office アドインを展開する」を [参照](../admin/manage/manage-deployment-of-add-ins.md)してください)。 Microsoft 365 管理センター Officeアドインを展開する以外にも、Microsoft PowerShell を使用できます。 [O365 の一元化されたAdd-In展開モジュールをインストールWindows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
 
-モジュールをダウンロードした後、通常の Windows PowerShell ウィンドウを開き、次のコマンドレットを実行します。
+モジュールをダウンロードした後、通常のウィンドウを開Windows PowerShell次のコマンドレットを実行します。
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a>管理者の資格情報を使用して接続する
+## <a name="connect-using-your-admin-credentials"></a>管理者資格情報を使用して接続する
 
-一元展開のコマンドレットを使用する前に、サインインする必要があります。
+集中展開コマンドレットを使用する前に、サインインする必要があります。
   
 1. PowerShell を起動します。
     
-2. 会社の管理者の資格情報を使用して PowerShell に接続します。 次のコマンドレットを実行します。
+2. 会社の管理者資格情報を使用して PowerShell に接続します。 次のコマンドレットを実行します。
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. [ **資格情報の入力** ] ページで、Microsoft 365 グローバル管理者の資格情報を入力します。 または、コマンドレットに直接資格情報を入力することもできます。 
+3. [資格情報 **の入力] ページ** で、Microsoft 365 グローバル管理者資格情報を入力します。 または、資格情報をコマンドレットに直接入力することもできます。 
     
-    会社の管理者の資格情報を PSCredential オブジェクトとして指定して、次のコマンドレットを実行します。
+    会社の管理者資格情報を PSCredential オブジェクトとして指定する次のコマンドレットを実行します。
     
   ```powershell
   $secpasswd = ConvertTo-SecureString "MyPassword" -AsPlainText -Force
@@ -60,94 +60,94 @@ Microsoft 365 グローバル管理者は、一元展開機能を使用して Of
   ```
 
 > [!NOTE]
-> PowerShell の使用の詳細については、「 [Connect To Microsoft 365 With powershell](https://go.microsoft.com/fwlink/p/?linkid=848585)」を参照してください。 
+> PowerShell の使用の詳細については、「Connect [to Microsoft 365 with PowerShell」を参照してください](./connect-to-microsoft-365-powershell.md)。 
   
-## <a name="upload-an-add-in-manifest"></a>アドインマニフェストをアップロードする
+## <a name="upload-an-add-in-manifest"></a>アドイン マニフェストのアップロード
 
-**新しい組織のアドイン**コマンドレットを実行して、アドインのマニフェストをパスからアップロードします。これは、ファイルの場所または URL のいずれかにすることができます。 次の例は、  _Manifestpath_ パラメーターの値のファイルの場所を示しています。 
+**New-OrganizationAdd-In** コマンドレットを実行して、ファイルの場所または URL のいずれかであるパスからアドイン マニフェストをアップロードします。 次の例は  _、ManifestPath_ パラメーターの値のファイルの場所を示しています。 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-次の例に示すように、 **新しい組織のアドイン** コマンドレットを実行して、アドインをアップロードして、ユーザーまたはグループに直接割り当てることもできます。この場合、  _Members_ パラメーターを使用します。 メンバーの電子メールアドレスはコンマで区切ります。 
+次の例に示すように **、New-OrganizationAdd-In** コマンドレットを実行してアドインをアップロードし  _、Members_ パラメーターを使用してユーザーまたはグループに直接割り当てすることもできます。 メンバーの電子メール アドレスをコンマで区切ります。 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Office ストアからアドインをアップロードする
+## <a name="upload-an-add-in-from-the-office-store"></a>アドインをストアからOfficeする
 
-**新しい-組織の addin**コマンドレットを実行して、Office ストアからマニフェストをアップロードします。
+**New-OrganizationAddIn コマンドレットを実行** して、新しい組織のストアからOfficeします。
   
-次の例では、 **新しい-組織の addin** コマンドレットは、米国の場所とコンテンツ市場のためにアドインの assetid を指定しています。
+次の例では **、New-OrganizationAddIn** コマンドレットは、米国の場所とコンテンツ 市場のアドインの AssetId を指定します。
   
 ```powershell
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-_Assetid_パラメーターの値を確認するには、アドインの Office ストア web ページの URL からコピーします。 AssetIds は常に "WA" で始まり、その後に数字が続きます。 たとえば、前の例では、WA104099688 の AssetId 値のソースは、アドインの Office ストアの web ページの URL [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) です。
+_AssetId_ パラメーターの値を確認するには、アドインの [ストア] web ページOffice URL からコピーできます。 AssetIds は常に "WA" で始まり、その後に数値が続きます。 たとえば、前の例では、WA104099688 の AssetId 値のソースは、アドインの Office ストア Web ページ URL です。 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688)
   
-_Locale_パラメーターと_contentmarket_パラメーターの値は一致しており、アドインをインストールしようとしている国/地域を示しています。 この形式は en-us (fr-fr) です。 など。 
+_Locale_ パラメーターと _ContentMarket_ パラメーターの値は同一であり、アドインのインストールを行う国/地域を示します。 形式は en-US、fr-FR です。 など。 
   
 > [!NOTE]
-> Office ストアからアップロードされたアドインは、Office ストアで入手可能な最新の更新プログラムから数日以内に自動的に更新されます。 
+> Office ストアからアップロードされたアドインは、最新の更新プログラムが Office ストアで利用できる数日以内に更新されます。 
   
 ## <a name="get-details-of-an-add-in"></a>アドインの詳細を取得する
 
-次に示すように、 **Get-help addin** コマンドレットを実行して、テナントにアップロードされたすべてのアドインの詳細を取得し、アドインの製品 ID を含めます。
+次に **示すように Get-OrganizationAddIn** コマンドレットを実行して、アドインの製品 ID を含むテナントにアップロードされたすべてのアドインの詳細を取得します。
   
 ```powershell
 Get-OrganizationAddIn
 ```
 
-_ProductId_パラメーターの値を指定して**取得**し、詳細を取得するアドインを指定するには、このコマンドレットを実行します。 
+_ProductId_ **パラメーターの値を指定して Get-OrganizationAddIn** コマンドレットを実行し、詳細を取得するアドインを指定します。 
   
 ```powershell
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-すべてのアドインおよび割り当てられたユーザーとグループの詳細を取得するには、次の例に示すように、コマンドレットの出力を Format **コマンドレットに** パイプ処理します。
+すべてのアドインと割り当てられたユーザーとグループの詳細を取得するには、次の例に示すように **、Get-OrganizationAddIn** コマンドレットの出力を Format-List コマンドレットにパイプ処理します。
   
 ```powershell
 foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
-## <a name="turn-on-or-turn-off-an-add-in"></a>アドインをオンまたはオフにする
+## <a name="turn-on-or-turn-off-an-add-in"></a>アドインを有効またはオフにする
 
-ユーザーおよびグループに割り当てられているグループがアクセスできなくなるようにアドインを無効にするには、次の例に示すように、 _ProductId_パラメーターと_Enabled_パラメーターをに設定して、このコマンドレットを**実行し** `$false` ます。
+アドインを無効にし、割り当てられているユーザーとグループにアクセスできなくなった場合は、次の例に示すように _、ProductId_ パラメーターと _Enabled_ パラメーターを設定して **Set-OrganizationAddIn** コマンドレットを実行します。 `$false`
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-アドインを再び有効にするには、  _有効な_ パラメーターをに設定して、同じコマンドレットを実行し  `$true` ます。
+アドインを有効に戻す場合は、Enabled パラメーターをに設定して同  _じコマンドレット_ を実行します  `$true` 。
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
 ```
 
-## <a name="add-or-remove-users-from-an-add-in"></a>アドインに対してユーザーを追加または削除する
+## <a name="add-or-remove-users-from-an-add-in"></a>アドインにユーザーを追加または削除する
 
-ユーザーおよびグループを特定のアドインに追加するには、 _ProductId_、 _Add_、および_Members_の各パラメーターを指定して、**リソースの設定**コマンドレットを実行します。 メンバーの電子メールアドレスはコンマで区切ります。 
+ユーザーとグループを特定のアドインに追加するには _、ProductId、Add、_ および Members パラメーターを使用して **Set-OrganizationAddInAssignments** _コマンドレットを__実行_ します。 メンバーの電子メール アドレスをコンマで区切ります。 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-ユーザーおよびグループを削除するには、  _remove_ パラメーターを使用して同じコマンドレットを実行します。 
+ユーザーとグループを削除するには、Remove パラメーターを使用して同じコマンドレット  _を実行_ します。 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-テナントのすべてのユーザーにアドインを割り当てるには、の値をに設定して、assign  _Toeveryone_ パラメーターを使用して同じコマンドレットを実行し  `$true` ます。
+テナント上のすべてのユーザーにアドインを割り当てるには、値をに設定した  _AssignToEveryone_ パラメーターを使用して同じコマンドレットを実行します  `$true` 。
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-すべてのユーザーにアドインを割り当てずに、以前に割り当てられたユーザーおよびグループに戻すには、同じコマンドレットを実行し、その値をに設定して、assign  _Toeveryone_ パラメーターをオフにし  `$false` ます。
+アドインをすべてのユーザーに割り当てず、以前に割り当てられたユーザーとグループに戻すには、同じコマンドレットを実行し、その値をに設定して  _AssignToEveryone_ パラメーターをオフにします  `$false` 。
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
@@ -155,18 +155,18 @@ Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 
 ## <a name="update-an-add-in"></a>アドインを更新する
 
-マニフェストからアドインを更新するには、次の例に示すように、 _ProductId_、 _manifestpath_、および_Locale_パラメーターを使用して、次のように**設定**して、このコマンドレットを実行します。 
+マニフェストからアドインを更新するには、次の例に示すように _、ProductId、ManifestPath、_ および _Locale_ パラメーターを使用して **Set-OrganizationAddIn** コマンドレットを実行します。  
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
 > [!NOTE]
-> Office ストアからアップロードされたアドインは、Office ストアで入手可能な最新の更新プログラムから数日以内に自動的に更新されます。 
+> Office ストアからアップロードされたアドインは、最新の更新プログラムが Office ストアで利用できる数日以内に更新されます。 
   
 ## <a name="delete-an-add-in"></a>アドインを削除する
 
-アドインを削除するには、次の例に示されているように、 _ProductId_パラメーターを指定して、[**削除**] コマンドレットを実行します。 
+アドインを削除するには、次の例に示すように _、ProductId_ パラメーターを使用して **Remove-OrganizationAddIn** コマンドレットを実行します。 
   
 ```powershell
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -272,10 +272,8 @@ If an add-in has been deployed, it has to be removed from the cache in each comp
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>各コマンドレットの詳細なヘルプを取得する
 
-各コマンドレットの詳細については、「get-help」を参照してください。 たとえば、次のコマンドレットは、このコマンドレットに関する詳細な情報を提供します。
+Get-help コマンドレットを使用して、各コマンドレットの詳細なヘルプを確認できます。 たとえば、次のコマンドレットは、このコマンドレットの詳細Remove-OrganizationAddInします。
   
 ```powershell
 Get-help Remove-OrganizationAddIn -Full
 ```
-
-

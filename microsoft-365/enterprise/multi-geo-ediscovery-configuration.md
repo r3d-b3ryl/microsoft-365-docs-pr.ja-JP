@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
-description: 地域パラメーターを使用して、Microsoft 365 複数地域でサテライトの場所で使用する電子情報開示を構成する方法について説明します。
-ms.openlocfilehash: d1d66a9e7953b540e318c8364bdcb8d72654b482
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Region パラメーターを使用して、Microsoft 365 Multi-Geo のサテライトの場所で使用する電子情報開示を構成する方法について説明します。
+ms.openlocfilehash: 4d3481fe8b72bb970893ce065293a7a2cc717331
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636807"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923722"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 Multi-Geo 電子情報開示の構成
 
-[高度な電子情報開示の機能](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) により、複数地域の電子情報開示管理者は、"地域" セキュリティフィルターを使用しなくてもすべての geo を検索できます。 データは、複数地域テナントの中央の場所の Azure インスタンスにエクスポートされます。 
+[高度な電子情報開示機能を使用](../compliance/overview-ediscovery-20.md) すると、複数地域の電子情報開示管理者が"Region" セキュリティ フィルターを使用せずにすべての地域を検索できます。 データは、複数地域テナントの中央の場所の Azure インスタンスにエクスポートされます。 
 
-高度な電子情報開示機能を使用しない場合、複数地域テナントの電子情報開示マネージャーまたは管理者は、そのテナントの中央の場所でのみ電子情報開示を実行できます。 サテライトの場所に対して電子情報開示を実行する機能をサポートするために、"Region" という名前の新しいコンプライアンスセキュリティフィルターパラメーターが PowerShell 経由で利用可能になります。 このパラメーターは、中央の場所が北アメリカ、ヨーロッパ、またはアジア太平洋地域にあるテナントで使用できます。 中央の場所が北米、ヨーロッパ、またはアジア太平洋地域にあり、衛星地域の場所を越えて電子情報開示を実行する必要があるテナントには、高度な電子情報開示をお勧めします。 
+高度な電子情報開示機能がない場合、複数地域テナントの電子情報開示マネージャーまたは管理者は、そのテナントの中央の場所でのみ電子情報開示を実行できます。 サテライトの場所に対して電子情報開示を実行する機能をサポートするために、PowerShell を介して"Region" という名前の新しいコンプライアンス セキュリティ フィルター パラメーターを使用できます。 このパラメーターは、中央の場所が北アメリカ、ヨーロッパ、またはアジア太平洋にあるテナントで使用できます。 高度な電子情報開示は、中央の場所が北アメリカ、ヨーロッパ、アジア太平洋ではなく、サテライトの地理的な場所で電子情報開示を実行する必要があるテナントに推奨されます。 
 
 Microsoft 365 全体管理者は、別のユーザーが電子情報開示を実行できるように電子情報開示マネージャーのアクセス許可を割り当てる必要があります。また、サテライトの場所として電子情報開示を実施する地域を指定するために該当するコンプライアンス セキュリティ フィルターで "Region" パラメーターを割り当てる必要があります。それ以外の場合は、サテライトの場所で電子情報開示は実施されません。
 
@@ -37,7 +37,7 @@ Microsoft 365 全体管理者は、別のユーザーが電子情報開示を実
 
 地域のコンプライアンス セキュリティ フィルターを設定するには:
 
-1. [Microsoft 365 セキュリティ/コンプライアンス センター PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Microsoft 365 セキュリティ/コンプライアンス センター PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)
 
 2. 次の構文を使用してください。
 
@@ -51,4 +51,4 @@ Microsoft 365 全体管理者は、別のユーザーが電子情報開示を実
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-追加のパラメーターと構文については、「[New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter)」の記事を参照してください。
+追加のパラメーターと構文については、「[New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter)」の記事を参照してください。

@@ -13,75 +13,75 @@ f1.keywords:
 - CSH
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
-description: '概要: PowerShell を使用して Microsoft 365 を管理する必要がある理由について説明します。場合によっては効率的で、その他の場合は必要になることがあります。'
-ms.openlocfilehash: d56a2cc47a06be911f1fd38aea3a557c631d2db0
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+description: '概要: PowerShell を使用して Microsoft 365 を管理する必要がある理由を理解します。場合によっては、より効率的に、必要に応じて他の場合も管理できます。'
+ms.openlocfilehash: a60220001a148b3a24a996bb6e0154f80214b019
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754108"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924590"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Microsoft 365 で PowerShell を使用する理由
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 管理センターを使用すると、Microsoft 365 のユーザーアカウントとライセンスを管理できます。 また、Exchange Online、Teams、SharePoint Online などの Microsoft 365 サービスを管理することもできます。 PowerShell を使用してこれらのサービスを管理する場合は、速度、自動化、およびその他の機能を実現するために、コマンドラインおよびスクリプト言語環境を利用できます。
+Microsoft 365 管理センターを使用すると、Microsoft 365 のユーザー アカウントとライセンスを管理できます。 また、Exchange Online、Teams、SharePoint Online などの Microsoft 365 サービスを管理できます。 代わりに PowerShell を使用してこれらのサービスを管理する場合は、コマンド ラインとスクリプト言語環境を利用して、速度、自動化、追加機能を利用できます。
   
-この記事では、PowerShell を使用して Microsoft 365 を管理する方法について説明します。
+この記事では、PowerShell を使用して Microsoft 365 を管理する方法を示します。
   
-- Microsoft 365 管理センターでは表示できない追加情報を確認する
+- Microsoft 365 管理センターで表示できない追加情報を表示する
     
-- PowerShell でのみ使用可能な機能と設定を構成する
+- PowerShell でのみ可能な機能と設定を構成する
     
 - 一括操作を実行する
     
 - データをフィルター処理する
     
-- データを印刷または保存する
+- データの印刷または保存
     
-- サービス間で管理する
+- 複数のサービスを管理する
     
-Microsoft 365 の PowerShell は、windows PowerShell 用のモジュールのセットであることに注意してください。これは、Windows ベースのサービスとプラットフォームのコマンドライン環境です。 この環境では、追加のモジュールで拡張できるコマンドシェル言語が作成されます。 これにより、単純なまたは複雑なコマンドまたはスクリプトを実行することができます。 たとえば、microsoft 365 モジュールの PowerShell をインストールし、Microsoft 365 サブスクリプションに接続した後、次のコマンドを実行して Microsoft Exchange Online のすべてのユーザーメールボックスを一覧表示できます。
+PowerShell for Microsoft 365 は、windows ベースのサービスとプラットフォームのコマンド ライン環境である Windows PowerShell のモジュールのセットです。 この環境では、追加のモジュールで拡張できるコマンド シェル言語を作成します。 単純なコマンドまたは複雑なコマンドまたはスクリプトを実行する方法を提供します。 たとえば、PowerShell for Microsoft 365 モジュールをインストールして Microsoft 365 サブスクリプションに接続した後、次のコマンドを実行して、次のコマンドを実行して、すべてのユーザー メールボックスを一覧表示Microsoft Exchange Online。
   
 ```powershell
 Get-Mailbox
 ```
 
-また、Microsoft 365 管理センターを使用してメールボックスの一覧を取得することもできますが、すべての web アプリケーションのすべてのサイトについて、すべてのリストのアイテムをカウントするのは簡単ではありません。
+また、Microsoft 365 管理センターを使用してメールボックスのリストを取得することもできますが、すべての Web アプリのすべてのサイトのすべてのリストのアイテムを数えるのは簡単ではありません。
   
-Microsoft 365 用の PowerShell は、microsoft 365 を管理することを支援するように設計されています。 microsoft 365 管理センターを置き換えることはできません。 Microsoft 365 コマンドの PowerShell でしか実行できない構成手順があるため、管理者は Microsoft 365 の PowerShell を使用できる必要があります。 このような場合は、次の方法を知っておく必要があります。
+Microsoft 365 用 PowerShell は、Microsoft 365 管理センターを置き換えるのではなく、Microsoft 365 の管理を支援するように設計されています。 Microsoft 365 の PowerShell コマンドでのみ実行できる構成手順がいくつかあるため、管理者は Microsoft 365 用の PowerShell を使用できる必要があります。 このような場合は、次の方法を知る必要があります。
   
-- Microsoft 365 モジュールの PowerShell をインストールします (管理者のコンピューターごとに1回のみ行われます)。
+- PowerShell for Microsoft 365 モジュールをインストールします (管理者コンピューターごとに 1 回だけ実行)。
     
-- Microsoft 365 サブスクリプション (PowerShell セッションごとに1回) に接続します。
+- Microsoft 365 サブスクリプションに接続します (PowerShell セッションごとに 1 回)。
     
 - Microsoft 365 コマンドに必要な PowerShell を実行するために必要な情報を収集します。
     
 - Microsoft 365 コマンドの PowerShell を実行します。
     
-これらの基本的なスキルを習得した後は、メールボックスユーザーを **取得** するために、メールボックスのコマンドを使用する必要はありません。 また、以前に説明したコマンドを使用して、すべての web アプリのすべてのサイトのすべてのリスト内のすべてのアイテムをカウントする方法について理解する必要はありません。 Microsoft と管理者コミュニティは、必要に応じてこれらのタスクを支援します。
+これらの基本的なスキルを習得した後は **、[Get-Mailbox]** コマンドを使用してメールボックス ユーザーを一覧表示する必要がなされません。 また、すべての Web アプリのすべてのサイトのすべてのリストのすべての項目をカウントするために、前に引用したコマンドのような新しいコマンドを作成する方法も理解する必要があります。 Microsoft と管理者のコミュニティは、必要に応じてこのようなタスクを支援できます。
   
-## <a name="powershell-for-microsoft-365-can-reveal-information-that-you-cant-see-with-the-microsoft-365-admin-center"></a>Microsoft 365 用の PowerShell は、Microsoft 365 管理センターでは表示できない情報を公開することができます
+## <a name="powershell-for-microsoft-365-can-reveal-information-that-you-cant-see-with-the-microsoft-365-admin-center"></a>Microsoft 365 用 PowerShell では、Microsoft 365 管理センターでは表示できない情報を表示できます
 
-Microsoft 365 管理センターには、さまざまな役に立つ情報が表示されます。 しかし、Microsoft 365 でユーザー、ライセンス、メールボックス、サイトに関して保存される可能性のある情報がすべて表示されるわけではありません。 Microsoft 365 管理センターの *ユーザーとグループ* の例を次に示します。
+Microsoft 365 管理センターには、多くの有用な情報が表示されます。 ただし、Microsoft 365 がユーザー、ライセンス、メールボックス、およびサイトに関して保存する可能性があるすべての情報は表示されません。 Microsoft 365 管理 *センターのユーザーと* グループの例を次に示します。
   
 ![Microsoft 365 管理センターでのユーザーとグループの表示例。](../media/o365-powershell-users-and-groups.png)
   
-このビューでは、多くの場合に必要な情報が提供されます。 しかし、もっと多くの情報が必要な場合もあります。 たとえば、Microsoft 365 ライセンス (およびユーザーが使用できる Microsoft 365 機能) は、ユーザーの地理的な場所によって異なります。 米国に住んでいるユーザーに拡張できるポリシーと機能は、インドまたはベルギーでユーザーに拡張できるものとは異なる場合があります。 Microsoft 365 管理センターで、次の手順を実行して、ユーザーの地理的な場所を決定します。
+このビューは、多くの場合必要な情報を提供します。 しかし、もっと多くの情報が必要な場合もあります。 たとえば、Microsoft 365 ライセンス (およびユーザーが利用できる Microsoft 365 の機能) は、ユーザーの地理的な場所によって一部異なります。 米国に住むユーザーに拡張できるポリシーと機能は、インドまたはベルギーのユーザーに拡張できるポリシーと機能と同じではない可能性があります。 Microsoft 365 管理センターの次の手順に従って、ユーザーの地理的な場所を確認します。
   
 1. ユーザーの **表示名** をダブルクリックします。
     
-2. ユーザープロパティの表示ウィンドウで、[ **詳細**] を選択します。
+2. ユーザー プロパティの表示ウィンドウで、[詳細] を **選択します**。
     
-3. 詳細表示で、[ **追加の詳細**] を選択します。
+3. 詳細表示で、追加の詳細 **を選択します**。
     
-4. 見出しの **国または地域**が見つかるまでスクロールします。
+4. [国] または [地域] という見出し **が表示されるまでスクロールします**。
     
-     ![Microsoft 365 管理センター内のユーザーの地域情報の例。](../media/o365-powershell-usage-location.png)
+     ![Microsoft 365 管理センターのユーザーの地域情報の例。](../media/o365-powershell-usage-location.png)
   
 5. ユーザーの表示名と場所を紙に書き留めるか、コピーしてメモ帳に貼り付けます。
     
-この手順をユーザーごとに繰り返す必要があります。 ユーザー数が多い場合、このプロセスは退屈になる可能性があります。 Microsoft 365 の PowerShell では、次のコマンドを使用して、すべてのユーザーについてこの情報を表示することができます。
+この手順をユーザーごとに繰り返す必要があります。 ユーザーが多い場合、このプロセスは時間のかかっている可能性があります。 PowerShell for Microsoft 365 では、次のコマンドを使用して、すべてのユーザーに対してこの情報を表示できます。
   
 ```powershell
 Get-AzureADUser | Select DisplayName, UsageLocation
@@ -89,7 +89,7 @@ Get-AzureADUser | Select DisplayName, UsageLocation
 
 
 >[!Note]
->PowerShell Core は、Windows PowerShell モジュールの Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 これらのコマンドレットは、Windows PowerShell から実行する必要があります。
+>PowerShell Core は、名前に *Msol* が含Windows PowerShellモジュールとコマンドレットの Microsoft Azure Active Directory モジュールをサポートしています。 これらのコマンドレットは、次の手順で実行Windows PowerShell。
 >
 
 結果の例を次に示します。
@@ -105,9 +105,9 @@ Alex Darrow                               US
 David Longmuir                            BR
 ```
 
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプション (**set-azureaduser**) 内のすべてのユーザーを取得しますが、各ユーザーの名前と場所のみを表示します (**DisplayName、使用場所の選択**)。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプション **(Get-AzureADUser)** のすべてのユーザーを取得しますが、各ユーザーの名前と場所のみを表示します **([DisplayName, UsageLocation** の選択] )。
   
-Microsoft 365 用の PowerShell はコマンドシェル言語をサポートしているため、 **set-azureaduser** コマンドで取得した情報をさらに操作することができます。 たとえば、これらのユーザーを場所によって並べ替えたり、すべてのブラジルユーザーを一緒にグループ化したり、すべての米国ユーザーを一緒にグループ化したりしたい場合があります。 コマンドは次のとおりです。
+PowerShell for Microsoft 365 はコマンド シェル言語をサポートしていますので **、Get-AzureADUser** コマンドで取得した情報をさらに操作できます。 たとえば、これらのユーザーを場所別に並べ替え、すべてのブラジル人ユーザーをグループ化し、すべての米国ユーザーをまとめてグループ化する場合などです。 コマンドを次に示します。
   
 ```powershell
 Get-AzureADUser | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
@@ -126,9 +126,9 @@ Anne Wallace                                US
 Brian Johnson (TAILSPIN)                    US
 ```
 
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプション内のすべてのユーザーを取得しますが、各ユーザーの名前と場所のみを表示し、それらの場所とその名前 (**並べ替えでは、DisplayName**) を並べ替えます。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプションのすべてのユーザーを取得しますが、各ユーザーの名前と場所のみを表示し、最初にユーザーの場所で並べ替え、次に名前 (Sort **UsageLocation, DisplayName)** を並べ替えます。
   
-追加のフィルター処理を使用することもできます。 たとえば、ブラジル在住のユーザーに関する情報のみを表示する場合には、次のコマンドを使用します。
+追加のフィルター処理を使用できます。 たとえば、ブラジル在住のユーザーに関する情報のみを表示する場合には、次のコマンドを使用します。
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq "BR"} | Select DisplayName, UsageLocation 
@@ -143,38 +143,38 @@ David Longmuir                                        BR
 Fabrice Canel                                         BR
 ```
 
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプションで、場所がブラジルであるすべてのユーザーを取得します (**Where {$ \_ .使用場所-eq "BR"}**) を選択して、各ユーザーの名前と場所を表示します。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプション内の場所がブラジルであるすべてのユーザーを取得する (**場所 {$ ) です \_ 。UsageLocation -eq "BR"}**) をクリックし、各ユーザーの名前と場所を表示します。
   
- **大規模なドメインに関する注意事項**
+ **大規模なドメインに関するメモ**
   
-多数のユーザーが含まれる大きなドメインがある場合、この記事に示されている例のいくつかを試してみると調整につながる可能性があります。 コンピューティングパワーや使用可能なネットワーク帯域幅などの要因に基づいて、一度に多くの操作を実行しようとしている可能性があります。 大規模な組織では、これらの PowerShell 操作の一部を2つのコマンドに分割する必要がある場合があります。
+数万人のユーザーを持つ大規模なドメインがある場合は、この記事で示す例の一部を試してみようとすると、調整が発生する可能性があります。 計算能力や利用可能なネットワーク帯域幅のような要因に基づいて、一度に実行しすぎようとしている可能性があります。 大規模な組織では、これらの PowerShell 操作の一部を 2 つのコマンドに分割する必要があります。
 
-たとえば、次のコマンドを実行すると、すべてのユーザーアカウントが返され、それぞれの名前と場所が表示されます。
+たとえば、次のコマンドは、すべてのユーザー アカウントを返し、それぞれの名前と場所を表示します。
   
 ```powershell
 Get-AzureADUser | Select DisplayName, UsageLocation
 ```
 
-このコマンドは、規模が小さいドメインには最適に機能します。 しかし、大規模な組織では、この操作を2つのコマンドに分割する必要があります。1つは、ユーザーアカウント情報を変数に格納し、もう1つのコマンドを使用して必要な情報を表示することです。 次に例を示します:
+このコマンドは、規模が小さいドメインには最適に機能します。 ただし、大規模な組織では、その操作を変数にユーザー アカウント情報を格納するコマンドと、必要な情報を表示する 2 つのコマンドに分割できます。 次に例を示します:
   
 ```powershell
 $x = Get-AzureADUser
 $x | Select DisplayName, UsageLocation
 ```
 
-この PowerShell コマンドのセットは次のように解釈されます。
-1. 現在の Microsoft 365 サブスクリプション内のすべてのユーザーを取得し、その情報を $x (**$x = set-azureaduser**) という名前の変数に格納します。
-1.  変数 *$x*の内容を表示します。ただし、各ユーザーの名前と場所のみが含まれます (**$x |DisplayName、[その他] の場所) を選択**します。
+この一連の PowerShell コマンドの解釈は次の場合です。
+1. 現在の Microsoft 365 サブスクリプションのすべてのユーザーを取得し、$x ( $x **= Get-AzureADUser)** という名前の変数に情報を格納します。
+1.  変数の内容を表示 *$x、各* ユーザーの名前と **場所のみを含$x |[DisplayName, UsageLocation] を選択します**。
   
-## <a name="microsoft-365-has-features-that-you-can-only-configure-with-powershell-for-microsoft-365"></a>Microsoft 365 には、Microsoft 365 の PowerShell でのみ構成できる機能があります。
+## <a name="microsoft-365-has-features-that-you-can-only-configure-with-powershell-for-microsoft-365"></a>Microsoft 365 には、PowerShell for Microsoft 365 でのみ構成できる機能があります。
 
-Microsoft 365 管理センターは、ほとんどの環境に適用される一般的で便利な管理タスクへのアクセスを提供することを目的としています。 つまり、Microsoft 365 管理センターは、一般的な管理者が最も一般的な管理タスクを実行できるように設計されています。 ただし、管理センターでは実行できないタスクがいくつかあります。
+Microsoft 365 管理センターは、ほとんどの環境に適用される一般的で有用な管理タスクへのアクセスを提供することを目的としています。 つまり、Microsoft 365 管理センターは、一般的な管理者が最も一般的な管理タスクを実行できるよう設計されています。 ただし、管理センターでは実行できないタスクもあります。
   
-たとえば、Skype for Business Online 管理センターには、カスタムの会議出席依頼を作成するためのオプションがいくつか用意されています。
+たとえば、Skype for Business Online 管理センターには、カスタム会議出席依頼を作成するためのいくつかのオプションがあります。
   
 ![Skype for Business Online 管理センターでカスタムの会議出席依頼を表示する例です。](../media/o365-powershell-meeting-invitation.png)
   
-これらの設定を使用すると、会議出席依頼にパーソナルでプロフェッショナルな風合いを加えることができます。 ただし、会議構成設定には、カスタムの会議出席依頼を作成するだけでなく、さらに多くのことがあります。 たとえば、既定では会議に関して以下の事柄が許可されています。
+これらの設定を使用すると、会議出席依頼にパーソナルでプロフェッショナルな風合いを加えることができます。 ただし、会議構成の設定には、単にカスタムの会議出席依頼を作成するよりも多くがあります。 たとえば、既定では会議に関して以下の事柄が許可されています。
   
 - 匿名ユーザーが、各会議に自動的に参加すること。
     
@@ -182,85 +182,85 @@ Microsoft 365 管理センターは、ほとんどの環境に適用される一
     
 - 組織のすべてのユーザーが、会議に参加するときに発表者として指定されること。
     
-これらの設定は、Skype for Business Online 管理センターからは使用できません。 Microsoft 365 の PowerShell を使用して制御できます。 次の3つの設定を無効にするコマンドを次に示します。
+これらの設定は、Skype for Business Online 管理センターでは使用できません。 PowerShell for Microsoft 365 から制御できます。 次の 3 つの設定を無効にするコマンドを示します。
   
 ```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConferenceRecording $False -DesignateAsPresenter "None"
 ```
 
 > [!NOTE]
-> このコマンドを実行するには、 [Skype For Business Online PowerShell モジュール ](https://www.microsoft.com/download/details.aspx?id=39366)をインストールする必要があります。
+> このコマンドを実行するには [、Skype for Business Online PowerShell モジュールをインストールする必要があります ](https://www.microsoft.com/download/details.aspx?id=39366)。
   
-この PowerShell コマンドの解釈は次のとおりです。
+この PowerShell コマンドの解釈は次の場合です。
  
-1. [新しい Skype for Business Online 会議の設定 (AdmitAnonymousUsersByDefault **)]** で、匿名ユーザーが会議への自動入り口を取得することを許可しないようにします (**-$False**)。
-2.  参加者が会議を記録する機能を無効にします (**-AllowConferenceRecording $False**)。
-3. 組織内のすべてのユーザーを発表者として指定しないでください (**-designateaspresenter "None"**)。
+1. 新しい Skype for Business Online 会議 **(Set-CsMeetingConfiguration)** の設定で、匿名ユーザーが会議への自動参加を許可することを無効にします **(-AdmitAnonymousUsersByDefault**$False)。
+2.  出席者が会議を記録する機能を無効にします **(-AllowConferenceRecording**$False)。
+3. 組織のすべてのユーザーを発表者として指定しない (**-DesignateAsPresenter "None"**)。
   
-これらの既定の設定 (オプションを有効にする) を復元するには、次のコマンドを実行します。
+これらの既定の設定を復元する (オプションを有効にする) には、次のコマンドを実行します。
   
 ```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceRecording $True -DesignateAsPresenter "Company"
 ```
 
-他にも同様のシナリオがあります。これは、管理者が Microsoft 365 コマンドで PowerShell を実行する方法について理解しておく必要があるためです。
+他にも同様のシナリオがあります。そのため、管理者は Microsoft 365 コマンド用に PowerShell を実行する方法を知っている必要があります。
   
-## <a name="powershell-for-microsoft-365-is-great-for-bulk-operations"></a>Microsoft 365 の PowerShell は一括操作に適しています。
+## <a name="powershell-for-microsoft-365-is-great-for-bulk-operations"></a>Microsoft 365 用 PowerShell は一括操作に最適です
 
-Microsoft 365 管理センターのようなビジュアルインターフェイスは、単一の操作を行う場合に最も役立ちます。 たとえば、1つのユーザーアカウントを無効にする必要がある場合は、管理センターを使用してチェックボックスをすばやく見つけてクリアすることができます。 これは、PowerShell で同様の操作を実行するよりも簡単になります。
+Microsoft 365 管理センターのようなビジュアル インターフェイスは、単一の操作を行う場合に最も重要です。 たとえば、1 つのユーザー アカウントを無効にする必要がある場合は、管理センターを使用して、チェック ボックスをすばやく見つけてクリアできます。 これは、PowerShell で同様の操作を実行するよりも簡単な場合があります。
   
-しかし、その他の多くの場合に、多数の項目や一部の選択項目を変更する必要がある場合は、Microsoft 365 管理センターが最適なツールではない可能性があります。 たとえば、数千人の電話番号のプレフィックスを変更したり、すべての SharePoint Online サイトから特定のユーザー *Ken Myer* を削除したりする必要があるとします。 Microsoft 365 管理センターでは、どのような方法を実行しますか?
+ただし、他の大きなセット内で多くの変更や選択した項目を変更する必要がある場合は、Microsoft 365 管理センターが最適なツールではない可能性があります。 たとえば、数千の電話番号のプレフィックスを変更するか、特定のユーザー *Ken Myer* をすべての SharePoint Online サイトから削除する必要があります。 Microsoft 365 管理センターでどのように行いますか?
   
-最後の例では、数百の SharePoint Online サイトがあり、Ken Meyer がメンバーであるかどうかがわからないとします。 Microsoft 365 管理センターから開始して、各サイトでこの手順を実行する必要があります。
+最後の例では、SharePoint Online サイトが数百あるとしますが、Ken Meyer がメンバーであるかどうかはわかりません。 Microsoft 365 管理センターから開始し、サイトごとに次の手順を実行する必要があります。
   
-1. サイトの **URL** を選択します。
+1. サイト **の URL** を選択します。
     
-2. [ **サイトコレクションのプロパティ** ] ボックスで、[ **Web サイトのアドレス** ] リンクを選択してサイトを開きます。
+2. [サイト コレクション **のプロパティ] ボックス** で **、[Web サイト** アドレス] リンクを選択してサイトを開きます。
     
-3. サイトで、[ **共有**] を選択します。
+3. サイトで、[共有] を **選択します**。
     
-4. [ **共有** ] ダイアログボックスで、サイトへのアクセス許可を持つすべてのユーザーを表示するリンクを選択します。
+4. [共有 **] ダイアログ** ボックスで、サイトへのアクセス許可を持つすべてのユーザーを表示するリンクを選択します。
     
      ![SharePoint Online 管理センターの SharePoint Online サイトのメンバーを表示する例です。](../media/o365-powershell-view-permissions.png)
   
-5. [ **共有相手** ] ダイアログボックスで、[ **詳細設定**] を選択します。
+5. [共有する **ユーザー] ダイアログ ボックス** で、[詳細設定] を **選択します**。
     
-6. ユーザーのリストを下にスクロールし、Ken Myer (サイトへのアクセス許可があることを前提としています) を見つけて選択し、[ **ユーザー権限の削除**] を選択します。
+6. ユーザーの一覧を下にスクロールし、Ken Myer (サイトへのアクセス許可がある場合) を見つけて選択し、[ユーザーのアクセス許可の削除] **を選択します**。
     
-これには、数百のサイトでは *長い* 時間がかかります。
+これは、数百 *のサイト* には長い時間がかかるでしょう。
   
-別の方法として、Microsoft 365 の PowerShell で次のコマンドを実行して、すべてのサイトから Ken Myer を削除することができます。
+代わりに、Microsoft 365 用 PowerShell で次のコマンドを実行して、すべてのサイトから Ken Myer を削除します。
   
 ```powershell
 Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwareinc.com"}
 ```
 
 > [!NOTE]
-> このコマンドを実行するには、 [SharePoint Online PowerShell モジュール](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)をインストールする必要があります。 
+> このコマンドでは [、SharePoint Online PowerShell モジュールをインストールする必要があります](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。 
   
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプション (**get-sposite**) 内のすべての SharePoint サイトを取得し、各サイトについてアクセスできるユーザーのリストから Ken Meyer を削除し**ます (ForEach {Remove-Spouser-site $ \_ 。Url-ログイン "kenmyer \@ litwareinc.com"}**)。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプション **(Get-SPOSite)** 内のすべての SharePoint サイトを取得し、各サイトでアクセスできるユーザーのリストから Ken Meyer を削除することです **(ForEach {Remove-SPOUser -Site $ . \_Url -LoginName "kenmyer \@ litwareinc.com"}**)。
   
-Microsoft 365 に、ユーザーがアクセス権を持っていないものも含めて、すべてのサイトから Ken Meyer を削除するよう伝えています。 そのため、ユーザーがアクセス権を持っていないサイトに関するエラーが表示されます。 このコマンドで追加の条件を使用して、彼がログインリストにあるサイトから Ken Meyer のみを削除することができます。 ただし、返されるエラーは、サイト自体に害を与えることはありません。 このコマンドは、Microsoft 365 管理センターで作業する時間ではなく、数百のサイトに対して実行されるまでに数分かかる場合があります。
+Microsoft 365 には、アクセス権を持たなかったものも含め、すべてのサイトから Ken Meyer を削除する必要があります。 そのため、アクセスできないサイトのエラーが結果に表示されます。 このコマンドで追加の条件を使用して、Ken Meyer をログイン リストに登録しているサイトからのみ削除できます。 しかし、返されるエラーは、サイト自体に害を及ぼしません。 このコマンドは、Microsoft 365 管理センターでの作業時間ではなく、数百のサイトに対して実行するために数分かかる場合があります。
   
-もう1つの一括操作の例を次に示します。 次のコマンドを使用して、組織内のすべてのサイトに *Bonnie Kearney*(新しい SharePoint 管理者) を追加します。
+別の一括操作の例を次に示します。 このコマンドを使用して *、新しい* SharePoint 管理者であるボニー カーニーを組織内のすべてのサイトに追加します。
   
 ```powershell
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプション内のすべての SharePoint サイトを取得します。また、サイトのメンバーグループにログイン名を追加して Bonnie Kearney access を許可することもできます (**ForEach {Add-SPOUser-site $ \_ 。Url-"bkearney \@ litwareinc.com"-グループ "Members"}**)。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプション内のすべての SharePoint サイトを取得し、各サイトで、サイトのメンバー グループにログイン名を追加することで、ボニー カーニー アクセスを許可します **(ForEach {Add-SPOUser -Site $ \_ .Url -LoginName "bkearney \@ litwareinc.com" -Group "Members"}**)。
   
-## <a name="powershell-for-microsoft-365-is-great-at-filtering-data"></a>Microsoft 365 の PowerShell は、データのフィルター処理に適しています。
+## <a name="powershell-for-microsoft-365-is-great-at-filtering-data"></a>Microsoft 365 用の PowerShell は、データのフィルター処理に最適です
 
-Microsoft 365 管理センターでは、データをフィルター処理して、対象となる情報のサブセットを簡単に見つけられるようにする方法がいくつか用意されています。 たとえば、Exchange では、ユーザー メールボックスのほとんどすべてのプロパティに対するフィルターを簡単に適用できます。 たとえば、ブルーミントン市に居住しているすべてのユーザーのメールボックスの一覧を次に示します。
+Microsoft 365 管理センターには、データをフィルター処理して、対象となる情報のサブセットを簡単に見つけ出す方法がいくつか提供されています。 たとえば、Exchange では、ユーザー メールボックスのほとんどすべてのプロパティに対するフィルターを簡単に適用できます。 たとえば、ブルーミントン市に住んでいるすべてのユーザーのメールボックスの一覧を次に示します。
   
-![ブルーミントンの市区町村に居住しているすべてのユーザーのメールボックスの一覧については、Microsoft 365 管理センターで高度な検索を実行する例を示します。](../media/o365-powershell-advanced-search.png)
+![ブルームトン市に住むすべてのユーザーのメールボックスの一覧を Microsoft 365 管理センターで高度な検索を行う例。](../media/o365-powershell-advanced-search.png)
   
-Exchange 管理センターでは、フィルター条件を組み合わせることもできます。 たとえば、ブルーミントンに居住していて、財務部門で勤務しているすべてのユーザーのメールボックスを見つけることができます。
+Exchange 管理センターでは、フィルター条件を組み合わせることもできます。 たとえば、ブルーミントンに住み、財務部門で働いているすべてのユーザーのメールボックスを見つけるとします。
   
-ただし、Exchange 管理センターでできることには制限があります。 たとえば、ブルーミントン *または* サンディエゴに居住しているユーザーのメールボックスや、ブルーミントンに居住していないすべてのユーザーのメールボックスを簡単に見つけることができませんでした。
+ただし、Exchange 管理センターで実行できる操作には制限があります。 たとえば、ブルーミントンやサン ディエゴに住むユーザーのメールボックスや、ブルーミントンに住んでいないすべてのユーザーのメールボックスを簡単に見つけられなかったとします。
   
-次の Microsoft 365 コマンドの PowerShell を使用して、ブルーミントンまたはサンディディエゴに居住しているすべてのユーザーのメールボックスの一覧を取得できます。
+次の PowerShell for Microsoft 365 コマンドを使用して、ブルーミントンまたはサン ディエゴに住むすべてのユーザーのメールボックスの一覧を取得できます。
   
 ```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
@@ -277,9 +277,9 @@ Julian Isla                              Bloomington
 Rob Young                                Bloomington
 ```
 
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプションで、メールボックスが San ディエゴまたはブルーミントン (Where {$) の市区町村にあるすべてのユーザーを取得し** \_ ます。[受信者] Typetypedetails-eq "UserMailbox"-and ($ \_ .City-eq "サンディエゴ"-または $ \_ 。City-eq "ブルーミントン")}**) をクリックし、それぞれの名前と市区町村を表示します (**DisplayName、City を選択**)。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプションで、サンディエゴまたはブルーミントン市にメールボックスを持つすべてのユーザーを取得します (**ここで {$ \_ .RecipientTypeDetails -eq "UserMailbox" -and ($ \_ .City -eq "San Diego" -or $ \_ .City -eq "Bloomington")}**) をクリックし、それぞれの名前と都市を表示します **([DisplayName, City] を選択します**)。
   
-ブルーミントン以外の場所にいるユーザーのすべてのメールボックスを一覧表示するコマンドは次のとおりです。
+次に、ブルームトン以外の場所に住むユーザーのすべてのメールボックスを一覧表示するコマンドを示します。
   
 ```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and $_.City -ne "Bloomington"} | Select DisplayName, City
@@ -304,13 +304,13 @@ Garth Fort                                Tulsa
 Janet Schorr                              Bellevue
 ```
 
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプションで、メールボックスがブルーミントンの city (Where {$) にないすべてのユーザーを取得し** \_ ます。[受信者] Typetypedetails-eq "UserMailbox"-and $ \_ 。City-ne "ブルーミントン"}**) を選択し、それぞれの名前と市区町村を表示します。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプションのすべてのユーザーを取得し、メールボックスがブルーミントン市にはない **(Where {$ \_ .RecipientTypeDetails -eq "UserMailbox" -and $ \_ .City -ne "Bloomington"} )** をクリックし、それぞれの名前と都市を表示します。
   
 ### <a name="use-wildcards"></a>ワイルドカードを使用する
 
-また、PowerShell フィルターでワイルドカード文字を使用して、名前の一部と一致させることもできます。 たとえば、ユーザーアカウントを探しているとします。 ユーザーの姓が *Anderson* か、 *Henderson* または *Jorgenson*であることを覚えておくことができます。
+PowerShell フィルターでワイルドカード文字を使用して、名前の一部と一致することもできます。 たとえば、ユーザー アカウントを探しているとします。 覚えているのは、ユーザーの名が *Anderson* または *Henderson* または *Jorgenson である場合です*。
   
-検索ツールを使用して、次の3つの異なる検索を実行することによって、Microsoft 365 管理センターでそのユーザーを追跡することができます。
+検索ツールを使用して 3 つの異なる検索を実行することで、Microsoft 365 管理センターのユーザーを追跡できます。
   
 - *Anderson*  用のもの 
     
@@ -318,23 +318,23 @@ Janet Schorr                              Bellevue
     
 - *Jorgenson*  用のもの 
     
-これらの3つの名前はすべて "son" で終わるので、名前が "son" で終わるすべてのユーザーを表示するように PowerShell に指示できます。 コマンドは次のとおりです。
+これらの 3 つの名前はすべて "son" で終わるので、名前が "son" で終わるすべてのユーザーを表示する PowerShell に伝えられます。 コマンドを次に示します。
   
 ```powershell
 Get-User -Filter '{LastName -like "*son"}'
 ```
 
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプションのすべてのユーザーを取得しますが、姓が "son" で終わるユーザーの一覧のみを含むフィルターを使用します (**-filter ' {LastName-like " \* son"} '**)。 は、 \* ユーザーの姓の文字である任意の文字セットを表します。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプションのすべてのユーザーを取得しますが、姓が "son" で終わるユーザーのみを一覧表示するフィルターを使用します **(-Filter '{LastName -like " \* son"})。** この \* 略は、ユーザーの名字の文字である任意の文字セットを表します。
   
-## <a name="powershell-for-microsoft-365-makes-it-easy-to-print-or-save-data"></a>Microsoft 365 の PowerShell を使用すると、データの印刷や保存が容易になります。
+## <a name="powershell-for-microsoft-365-makes-it-easy-to-print-or-save-data"></a>Microsoft 365 用 PowerShell を使用すると、データの印刷や保存が容易になります
 
-Microsoft 365 管理センターでは、データの一覧を表示できます。 Skype for business Online 管理センターの例では、Skype for business Online が有効になっているユーザーの一覧が表示されています。
+Microsoft 365 管理センターでは、データの一覧を表示できます。 Skype for Business Online が有効になっているユーザーの一覧を表示する Skype for Business Online 管理センターの例を次に示します。
   
 ![Skype for Business Online 管理センターで、Skype for Business Online に対して有効になっているユーザーの一覧を表示する例です。](../media/o365-powershell-lync-users.png)
   
-その情報をファイルに保存するには、その情報を文書または Microsoft Excel ワークシートに貼り付ける必要があります。 どちらの場合も、追加の書式設定が必要になることがあります。 また、Microsoft 365 管理センターでは、表示されている一覧を直接印刷する方法は使用できません。
+その情報をファイルに保存するには、ドキュメントまたは Microsoft Excel ワークシートに貼り付ける必要があります。 どちらの場合も、追加の書式設定が必要になる場合があります。 さらに、Microsoft 365 管理センターでは、表示されるリストを直接印刷する方法は提供されません。
   
-さいわい、PowerShell を使用してリストを表示するだけでなく、Excel に簡単にインポートできるファイルに保存することもできます。 次に、Skype for Business Online ユーザーデータをコンマ区切り値 (CSV) ファイルに保存するコマンドの例を示します。これは、Excel ワークシートのテーブルとして簡単にインポートできます。
+幸いなことに、PowerShell を使用すると、リストを表示するだけでなく、Excel に簡単にインポートできるファイルに保存できます。 次に、Skype for Business Online ユーザー データをコンマ区切り値 (CSV) ファイルに保存するコマンドの例を示します。次に、Excel ワークシートのテーブルとして簡単にインポートできます。
   
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
@@ -342,13 +342,13 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export
 
 結果の例を次に示します。
   
-![コンマ区切り値ファイルに保存された Skype for Business Online ユーザーデータの Excel ワークシートにインポートされるテーブルの例です。](../media/o365-powershell-data-in-excel.png)
+![コンマ区切り値ファイルに保存された Skype for Business Online ユーザー データの Excel ワークシートにインポートされたテーブルの例。](../media/o365-powershell-data-in-excel.png)
   
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプションのすべての Skype for Business Online ユーザーを取得します (**-Csonline ユーザー**)。ユーザー名、UPN、および場所のみを取得します (**DisplayName、UserPrincipalName、および利用場所を選択し**ます)。その情報を C: \\ logs \\SfBUsers.csv (**Export-csv-Path "c: \\ Logs \\SfBUsers.csv"-notypeinformation**) という名前の CSV ファイルに保存します。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプション **(Get-CsOnlineUser)** のすべての Skype for Business Online ユーザーを取得する方法です。ユーザー名、UPN、および場所のみを取得します **(DisplayName、UserPrincipalName、UsageLocation を選択)。** その情報を C: \\ LogsSfBUsers.csv ( \\ **Export-Csv -Path "C: Logs \\ \\SfBUsers.csv" -NoTypeInformation)** という名前の CSV ファイルに保存します。
   
-オプションを使用して、このリストを XML ファイルまたは HTML ページとして保存することもできます。 実際には、追加の PowerShell コマンドを使用して、必要なカスタム書式設定を使用して Excel ファイルとして直接保存することができます。
+オプションを使用して、このリストを XML ファイルまたは HTML ページとして保存することもできます。 実際、PowerShell コマンドを追加すると、必要なカスタム書式を使用して、Excel ファイルとして直接保存できます。
   
-また、Windows の既定のプリンターにリストを直接表示する PowerShell コマンドの出力を送信することもできます。 コマンドの例を次に示します。
+リストを表示する PowerShell コマンドの出力を Windows の既定のプリンターに直接送信することもできます。 コマンドの例を次に示します。
   
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Printer
@@ -356,33 +356,33 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 印刷されたドキュメントは次のようになります。
   
-![Windows の既定のプリンターに直接送信された PowerShell コマンドの出力であった印刷ドキュメントの例。](../media/o365-powershell-printed-data.png)
+![Windows の既定のプリンターに直接送信される PowerShell コマンドの出力である印刷されたドキュメントの例。](../media/o365-powershell-printed-data.png)
   
-この PowerShell コマンドの解釈は次のとおりです。現在の Microsoft 365 サブスクリプションのすべての Skype for Business Online ユーザーを取得します。ユーザー名、UPN、および場所のみを取得します。その情報を既定の Windows プリンター (**出力プリンター**) に送信します。
+この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプション内のすべての Skype for Business Online ユーザーを取得する方法です。ユーザー名、UPN、および場所のみを取得します。その情報を既定の Windows プリンター (出力プリンター)**に送信します**。
   
-印刷された文書の簡単な書式設定は、PowerShell コマンドウィンドウの表示と同じです。 ハードコピーを取得するには、| を追加するだけです。 **| Out-Printer**コマンドの最後に印刷します。
+印刷されたドキュメントの書式は、PowerShell コマンド ウィンドウの表示と同じ単純な書式です。 ハード コピーを取得するには、ファイルを追加 **|コマンドの最後** にプリンターを出力します。
   
-## <a name="powershell-for-microsoft-365-lets-you-manage-across-server-products"></a>Microsoft 365 の PowerShell を使用すると、複数のサーバー製品を管理できます。
+## <a name="powershell-for-microsoft-365-lets-you-manage-across-server-products"></a>PowerShell for Microsoft 365 を使用すると、サーバー製品全体を管理できます
 
-Microsoft 365 を構成するコンポーネントは、共同作業を行うように設計されています。 たとえば、Microsoft 365 に新しいユーザーを追加し、ユーザーの部署や電話番号などの情報を指定するとします。 この情報は、Microsoft 365 サービスのいずれか (Skype for Business Online、Exchange、または SharePoint) でユーザーの情報にアクセスすると利用できるようになります。
+Microsoft 365 を構成するコンポーネントは、一緒に動作するように設計されています。 たとえば、Microsoft 365 に新しいユーザーを追加し、ユーザーの部署や電話番号などの情報を指定するとします。 この情報は、Microsoft 365 サービス (Skype for Business Online、Exchange、または SharePoint) でユーザーの情報にアクセスした場合に利用できます。
   
-ただし、これは製品のスイートに共通する一般情報の場合です。 製品固有の情報 (ユーザーの Exchange メールボックスに関する情報など) は、通常、このスイートでは利用できません。 たとえば、ユーザーのメールボックスが有効になっているかどうかに関する情報は、Exchange 管理センターでのみ使用できます。
+ただし、これは製品のスイートに共通する一般情報の場合です。 製品固有の情報 (ユーザーの Exchange メールボックスに関する情報など) は、通常、スイート全体で利用できません。 たとえば、ユーザーのメールボックスが有効になっているかどうかに関する情報は、Exchange 管理センターでのみ使用できます。
   
 すべてのユーザーに関する次のような情報を示すレポートを作成するとします。
   
 - ユーザーの表示名
     
-- ユーザーが Microsoft 365 用にライセンスされているかどうか
+- ユーザーが Microsoft 365 のライセンスを取得するかどうか
     
 - ユーザーの Exchange メールボックスが有効になっているかどうか
     
 - ユーザーが Skype for Business Online に対して有効になっているかどうか
     
-Microsoft 365 管理センターでは、このようなレポートを簡単に作成することはできません。 代わりに、Excel ワークシートなどの情報を格納するために別のドキュメントを作成する必要があります。 次に、Microsoft 365 管理センターからすべてのユーザー名とライセンス情報を取得し、Exchange 管理センターからメールボックス情報を取得して、skype for business Online 管理センターから Skype for Business Online 情報を取得し、その情報を結合します。
+このようなレポートは、Microsoft 365 管理センターでは簡単に作成できない。 代わりに、Excel ワークシートなどの情報を格納するために別のドキュメントを作成する必要があります。 次に、Microsoft 365 管理センターからすべてのユーザー名とライセンス情報を取得し、Exchange 管理センターからメールボックス情報を取得し、Skype for Business Online 管理センターから Skype for Business Online 情報を取得し、その情報を組み合わせます。
   
-別の方法として、PowerShell スクリプトを使用してレポートをコンパイルできます。
+もう 1 つの方法は、PowerShell スクリプトを使用してレポートをコンパイルする方法です。
   
-次のスクリプト例は、この記事で説明したコマンドよりも複雑です。 しかし、これは、PowerShell を使用して、それ以外の方法で情報ビューを作成する可能性があることを示しています。 必要なリストをコンパイルして表示するためのスクリプトを次に示します。
+次のスクリプト例は、この記事でこれまでに見たコマンドよりも複雑です。 ただし、PowerShell を使用して、それ以外の場合は取得が困難な情報ビューを作成する可能性を示しています。 必要なリストをコンパイルして表示するスクリプトを次に示します。
   
 ```powershell
 $x = Get-AzureADUser
@@ -414,15 +414,15 @@ Katy Jordan             False        True               False
 Molly Dempsey           False        True               False
 ```
 
-この PowerShell スクリプトの解釈は次のとおりです。  
+この PowerShell スクリプトの解釈は次の場合です。  
 
-1. 現在の Microsoft 365 サブスクリプション内のすべてのユーザーを取得し、その情報を *$x* (**$x = set-azureaduser**) という名前の変数に格納します。
-1. 変数 $x 内のすべてのユーザーに対して実行されるループを開始します (**foreach ($x では $i)**)。  
-1. *$Y*という名前の変数を定義し、ユーザーのメールボックス情報をそこに格納します (**$y = Get-Mailbox-Identity $i UserPrincipalName**)。
-1. *IsMailBoxEnabled*という名前のユーザー情報に新しいプロパティを追加します。 ユーザーのメールボックスの IsMailBoxEnabled プロパティの値に設定します (**$i | Add-Member-MemberType 注プロパティ-Name IsMailBoxEnabled-value $Y IsMailBoxEnabled**)。
-1. *$Y*という名前の変数を定義し、ユーザーの Skype For business Online 情報をその変数に格納します (**$y = Get-CsOnlineUser-Identity $i UserPrincipalName**)。
-1. *Enabledforsfb*という名前のユーザー情報に新しいプロパティを追加します。 これを、ユーザーの Skype for Business Online 情報の Enabled プロパティの値 (**$i | Add-Member-MemberType 注プロパティ-Name EnabledForSfB-value $Y enabled**) の値に設定します。
-1. ユーザーの一覧を表示しますが、ユーザー名、ライセンスがあるかどうか、メールボックスが有効になっているかどうか、およびそれらのプロパティが Skype for Business Online に対して有効になっているかどうかを示す2つの新しいプロパティを含めます (**$x |DisplayName、IsLicensed、IsMailboxEnabled、EnabledforSfB) を選択**します。
+1. 現在の Microsoft 365 サブスクリプションのすべてのユーザーを取得し、$x *(* $x **= Get-AzureADUser)** という名前の変数に情報を格納します。
+1. 変数 $x **(foreach ($i)** 内のすべてのユーザーを$iループを$xします。  
+1. $y という *名前* の変数を定義し、その中にユーザーのメールボックス情報を格納します **($y = Get-Mailbox-Identity $i.UserPrincipalName)。**
+1. *IsMailBoxEnabled* という名前のユーザー情報に新しいプロパティを追加します。 ユーザーのメールボックスの IsMailBoxEnabled プロパティ **($i | Add-Member -MemberType NoteProperty -Name IsMailboxEnabled -Value $y.IsMailboxEnabled)** の値に設定します。
+1. *$y という* 名前の変数を定義し、ユーザーの Skype for Business Online 情報をその中に格納します **($y = Get-CsOnlineUser -Identity $i.UserPrincipalName)。**
+1. EnabledForSfB という名前のユーザー情報に新しい *プロパティを追加します*。 ユーザーの Skype for Business Online 情報 **($i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled)** の Enabled プロパティの値に設定します。
+1. ユーザーの一覧を表示しますが、名前、ライセンスを取得するかどうか、およびメールボックスが有効になっているかどうか、および Skype for Business Online ($x |) でメールボックスが有効になっているかどうかを示す 2 つの新しいプロパティ **のみを含$x |[DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB] を選択します**。
   
 ## <a name="see-also"></a>関連項目
 

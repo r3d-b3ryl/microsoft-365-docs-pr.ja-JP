@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: 機能制限、メールボックスの配置など、Exchange Online の複数地域機能について説明します。
-ms.openlocfilehash: ca7203c72f23fd03512bf23eaa5a4687e4bac1b5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 機能の制限やメールボックスの配置など、Exchange Online の複数地域機能について説明します。
+ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691938"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923734"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online の Multi-Geo 機能
 
@@ -35,17 +35,17 @@ Multi-Geo の環境では、Exchange Online メールボックスのコンテン
 
 Microsoft が事前に必要な複数地域の構成手順を完了すると、Exchange Online は Azure AD のユーザーオブジェクトで **PreferredDataLocation** 属性を受け入れます。
 
-Exchange online は、** PreferredDataLocation** プロパティを、Azure AD から Exchange online ディレクトリサービスの** MailboxRegion** プロパティに同期します。 **MailboxRegion**の値は、ユーザーのメールボックスと、関連付けられている アーカイブ メールボックス が配置されている地理的位置を決定します。 別の地理的位置に存在するユーザーの プライマリ メールボックス と アーカイブ メールボックス を構成することはできません。 ユーザーオブジェクトごとに構成できる地理的位置は1つだけです。
+Exchange online は、**PreferredDataLocation** プロパティを、Azure AD から Exchange online ディレクトリサービスの **MailboxRegion** プロパティに同期します。 **MailboxRegion** の値は、ユーザーのメールボックスと、関連付けられている アーカイブ メールボックス が配置されている地理的位置を決定します。 別の地理的位置に存在するユーザーの プライマリ メールボックス と アーカイブ メールボックス を構成することはできません。 ユーザーオブジェクトごとに構成できる地理的位置は1つだけです。
 
 - ユーザーの既存のメールボックスを使用して **PreferredDataLocation** を構成した場合、メールボックスは再配置キューに入れられ、指定された地理的位置に自動的に移動されます。
 
-- 既存のメールボックスを持たないユーザーに** PreferredDataLocation** を構成したてメールボックスをプロビジョンする場合、そのメールボックスは指定された地理的位置にプロビジョニングされます。
+- 既存のメールボックスを持たないユーザーに **PreferredDataLocation** を構成したてメールボックスをプロビジョンする場合、そのメールボックスは指定された地理的位置にプロビジョニングされます。
 
-- **PreferredDataLocation**がユーザーに指定されていない場合、メールボックスは中央の地理的位置にプロビジョニングされます。
+- **PreferredDataLocation** がユーザーに指定されていない場合、メールボックスは中央の地理的位置にプロビジョニングされます。
 
-- **PreferredDataLocation**コードが誤っている場合 (たとえば、NAMでなくNANと入力した場合)、メールボックスは中央の 地理的位置にプロビジョニングされます。
+- **PreferredDataLocation** コードが誤っている場合 (たとえば、NAMでなくNANと入力した場合)、メールボックスは中央の 地理的位置にプロビジョニングされます。
 
-**注**: 複数地域の機能と Skype for Business Online が地域的にホストする会議のいずれの場合も、ユーザーオブジェクトの **PreferredDataLocation** プロパティがサービスを見つけます。 地域でホストされる会議用のユーザー オブジェクトに** PreferredDataLocation** の値を構成すると、そのユーザーのメールボックスは、Microsoft 365 テナントで複数地域が有効になった後、指定した地理的位置に自動的に移動します。
+**注**: 複数地域の機能と Skype for Business Online が地域的にホストする会議のいずれの場合も、ユーザーオブジェクトの **PreferredDataLocation** プロパティがサービスを見つけます。 地域でホストされる会議用のユーザー オブジェクトに **PreferredDataLocation** の値を構成すると、そのユーザーのメールボックスは、Microsoft 365 テナントで複数地域が有効になった後、指定した地理的位置に自動的に移動します。
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Exchange Online における複数地域の機能に関する制限
 
@@ -53,10 +53,10 @@ Exchange online は、** PreferredDataLocation** プロパティを、Azure AD �
 
 - Outlook for Mac を使用している場合は、メールボックスを新しい地理的位置に移動する際、オンラインアーカイブ フォルダーに一時的にアクセスできなくなることがあります。 この状態は、ユーザーのプライマリメールボックスとアーカイブメールボックスが異なる地理的位置にある場合に発生します。これは、複数地域のメールボックスの移動が異なる時刻に完了する可能性があるためです。
 
-- ユーザーは、Outlook on the web (旧 Outlook web App または OWA) の地理的位置を跨いで*メールボックスフォルダー*を共有できません。 たとえば、欧州連合のユーザーが Outlook on the web を使用して、米国にあるメールボックス内の共有フォルダーを開くことはできません。 ただし、Outlook on the Web では、 「[Outlook Web App の別のブラウザー ウィンドウで他のユーザーのメールボックスを開く](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)」の説明に従って、別のブラウザー ウィンドウを使って異なる地理的位置にある*他のメールボックス*を開くことができます。
+- ユーザーは、Outlook on the web (旧 Outlook web App または OWA) の地理的位置を跨いで *メールボックスフォルダー* を共有できません。 たとえば、欧州連合のユーザーが Outlook on the web を使用して、米国にあるメールボックス内の共有フォルダーを開くことはできません。 ただし、Outlook on the Web では、 「[Outlook Web App の別のブラウザー ウィンドウで他のユーザーのメールボックスを開く](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)」の説明に従って、別のブラウザー ウィンドウを使って異なる地理的位置にある *他のメールボックス* を開くことができます。
 
   **注**: 地域間のメールボックスフォルダーの共有は、Outlook on the Windows でサポートされています。
 
 - 複数地域にある組織では、パブリックフォルダーがサポートされています。 ただし、パブリックフォルダーは中央の地理的位置に設定する必要があります。 パブリックフォルダーをサテライトの地理的位置に移動することはできません。
 
-- 複数地域環境では、複数地域のメールボックスの監査はサポートされていません。 たとえば、異なる地理的位置にある共有メールボックスにアクセスする権限がユーザーに割り当てられている場合、そのユーザーが実行したメールボックス操作は、共有メールボックスのメールボックス監査ログに記録されません。 詳細については、「[メールボックスの監査を管理する](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide)」を参照してください。
+- 複数地域環境では、複数地域のメールボックスの監査はサポートされていません。 たとえば、異なる地理的位置にある共有メールボックスにアクセスする権限がユーザーに割り当てられている場合、そのユーザーが実行したメールボックス操作は、共有メールボックスのメールボックス監査ログに記録されません。 詳細については、「[メールボックスの監査を管理する](../compliance/enable-mailbox-auditing.md?view=o365-worldwide)」を参照してください。

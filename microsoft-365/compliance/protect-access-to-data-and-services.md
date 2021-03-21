@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Microsoft 365 データおよびサービスへのユーザーおよびデバイスのアクセスを保護し、データ損失を防ぐ方法について説明します。
+description: Microsoft 365 データとサービスへのユーザーとデバイスのアクセスを保護し、データ損失から保護する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64baa2c9e49a9b24841ec50db3e5592ba3d7d55d
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: bd8bbb62bc87ff59594e2fb2a3e21311c2452d9f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399026"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925543"
 ---
 # <a name="protect-user-and-device-access"></a>ユーザーとデバイス アクセスの保護
 
-Microsoft 365 データおよびサービスへのアクセスを保護することは、cyberattacks を防御し、データ損失を防ぐために不可欠です。 同じ保護を、環境内の他の SaaS アプリケーション、および Azure Active Directory アプリケーションプロキシで公開されているオンプレミスアプリケーションにも適用できます。
+Microsoft 365 のデータとサービスへのアクセスを保護することは、サイバー攻撃から防御し、データ損失から保護するために重要です。 同じ保護は、環境内の他の SaaS アプリケーション、および Azure Active Directory アプリケーション プロキシで公開されたオンプレミス アプリケーションにも適用できます。
   
 ## <a name="step-1-review-recommendations"></a>手順 1: 推奨事項を確認する
 
@@ -34,38 +34,36 @@ Office 365、他の SaaS サービス、および Azure AD アプリケーショ
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>手順 2: 管理者アカウントとアクセスを保護する
-Microsoft 365 環境を管理するために使用する管理アカウントには、昇格された特権があります。 これらはハッカーおよび cyberattackers の重要な目標です。 
+Microsoft 365 環境の管理に使用する管理アカウントには、管理者特権が含まれます。 これらは、ハッカーやサイバー攻撃者にとって貴重なターゲットです。 
 
-管理者アカウントのみを使用して開始します。 管理者は、管理者ではない通常の使用に対して個別のユーザーアカウントを持っている必要があります。ジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ、管理アカウントを使用してください。
+まず、管理用に管理者アカウントのみを使用します。 管理者は、通常の非管理用に個別のユーザー アカウントを持ち、ジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。
 
-多要素認証および条件付きアクセスを使用して管理者アカウントを保護します。 詳細については、「 [管理者アカウントを保護](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts)する」を参照してください。 
+多要素認証と条件付きアクセスで管理者アカウントを保護します。 詳細については、「管理者アカウントの [保護」を参照してください](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts)。 
 
-次に、Office 365 で特権アクセス管理を構成します。 特権アクセスの管理では、Office 365 の特権的管理タスクを細かくアクセス制限できます。 機密データへの継続的なアクセス、または重要な構成設定へのアクセスを備えた既存の特権のある管理者アカウントを使用する可能性がある侵害から組織を保護するのに役立ちます。
+次に、365 で特権アクセス管理Officeします。 特権アクセスの管理では、Office 365 の特権的管理タスクを細かくアクセス制限できます。 これは、機密データへの永続的なアクセスまたは重要な構成設定へのアクセスを持つ既存の特権管理者アカウントを使用する可能性のある侵害から組織を保護するのに役立ちます。
 
 - [特権アクセス管理の概要](privileged-access-management-overview.md)
 - [特権アクセス管理を構成する](privileged-access-management-configuration.md)
 
-もう1つの主要な推奨事項は、管理作業用に構成されたワークステーションを使用することです。 これらは、管理タスクのみに使用される専用デバイスです。 「 [権限](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access)のあるアクセスの保護」を参照してください。
+もう 1 つの推奨事項は、管理作業用に特別に構成されたワークステーションを使用する方法です。 これらは、管理タスクにのみ使用される専用デバイスです。 「 [特権アクセスのセキュリティ保護」を参照してください](/windows-server/identity/securing-privileged-access/securing-privileged-access)。
 
-最後に、テナント内に2つ以上の緊急アクセスアカウントを作成することによって、不注意による管理アクセスが行われない影響を軽減できます。 「 [AZURE AD でエマージェンシーアクセスアカウントを管理](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)する」を参照してください。 
+最後に、テナントに 2 つ以上の緊急アクセス アカウントを作成することで、管理アクセスの不注意による影響を軽減できます。 「Azure AD で緊急 [アクセス アカウントを管理する」を参照してください](/azure/active-directory/users-groups-roles/directory-emergency-access)。 
 
-## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>手順 3: 推奨される id とデバイスアクセスポリシーを構成する
-多要素認証 (MFA) と条件付きアクセスポリシーは、侵害されたアカウントおよび権限のないアクセスを軽減するための強力なツールです。 一緒にテストされたポリシーのセットを実装することをお勧めします。 展開の手順を含む詳細については、「 [id とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。
+## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>手順 3: 推奨される ID とデバイス アクセス ポリシーを構成する
+多要素認証 (MFA) と条件付きアクセス ポリシーは、侵害されたアカウントや不正アクセスを軽減するための強力なツールです。 一緒にテストされた一連のポリシーを実装することをお勧めします。 展開手順を含む詳細については、「Identity and [device access configurations」を参照してください](../security/office-365-security/microsoft-365-policies-configurations.md)。
 
  これらのポリシーは、次の機能を実装します。
-- Mult 認証
+- Mult-factor 認証
 - 条件付きアクセス
-- Intune アプリの保護 (デバイス用のアプリとデータの保護)
+- Intune アプリ保護 (デバイスのアプリとデータ保護)
 - Intune デバイス コンプライアンス
 - Azure AD Identity Protection
 
-Intune デバイスコンプライアンスを実装するには、デバイスの登録が必要です。 デバイスを管理することにより、環境内のリソースへのアクセスを許可する前に、それらを正常かつ準拠していることを確認できます。 「 [Intune で管理用のデバイスを登録する](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)」を参照してください。
+Intune デバイスのコンプライアンスを実装するには、デバイスの登録が必要です。 デバイスを管理すると、環境内のリソースへのアクセスを許可する前に、デバイスが正常で準拠することを確認できます。 [「Intune での管理用デバイスの登録」を参照してください。](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>手順 4: SharePoint デバイスアクセスポリシーを構成する
+## <a name="step-4-configure-sharepoint-device-access-policies"></a>手順 4: SharePoint デバイス アクセス ポリシーを構成する
 
-Microsoft では、デバイスアクセス制御を使用して、機密および規制の厳しいコンテンツを持つ SharePoint サイトのコンテンツを保護することをお勧めします。 詳細については、「 [SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項](../security/office-365-security/sharepoint-file-access-policies.md)」を参照してください。
+Microsoft では、デバイス アクセス制御を使用して、機密性の高い規制の高いコンテンツを使用して SharePoint サイト内のコンテンツを保護することを推奨します。 詳細については [、「SharePoint サイトとファイルのセキュリティ保護に関するポリシーの推奨事項」を参照してください](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 
-
-    
 

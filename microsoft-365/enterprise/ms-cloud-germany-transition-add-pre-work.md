@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する場合の事前作業。'
-ms.openlocfilehash: 5110c6bd86d5df35a7ceccb4abfedf059cb826d0
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 37fde0119dfc84cbe9120cf922cbac469a0a50f1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826178"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923840"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の事前作業
 
@@ -45,10 +45,10 @@ ms.locfileid: "50826178"
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
 | 移行後にクライアントの再起動とサインインおよびクライアントへのサインインについてユーザーに通知する準備をします。 | Officeクライアント ライセンスは、移行時に Microsoft Cloud Deutschland から Office 365 サービスに移行します。 クライアントは、クライアントからサインインおよびサインインした後、新しい有効なライセンスOffice取得します。 | ユーザーの製品Office 365 サービスからライセンスを更新Office必要があります。 ライセンスが更新されない場合、ライセンスOffice検証エラーが発生する可能性があります。 |
-| 365 サービス URL Office IP アドレスへのネットワーク [接続を確認します](https://aka.ms/o365urls)。 | Office 365 サービスへのアクセスに使用される顧客がホストするクライアントとサービスはすべて、Office 365 グローバル サービス エンドポイントにアクセスできる必要があります。 <br>[この場合、Office 365](https://aka.ms/o365urls)サービス URL および IP アドレスに記載されている URL と IP アドレスへのアクセスを妨げるファイアウォール ルールが設定されている場合、Office 365 Global Service エンドポイントへのアクセスを許可するファイアウォール ルールを変更する必要があります。| サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 より前に実行されていない場合に発生する可能性があります。  |
+| 365 サービス URL Office IP アドレスへのネットワーク [接続を確認します](./urls-and-ip-address-ranges.md)。 | Office 365 サービスへのアクセスに使用される顧客がホストするクライアントとサービスはすべて、Office 365 グローバル サービス エンドポイントにアクセスできる必要があります。 <br>[この場合、Office 365](./urls-and-ip-address-ranges.md)サービス URL および IP アドレスに記載されている URL と IP アドレスへのアクセスを妨げるファイアウォール ルールが設定されている場合、Office 365 Global Service エンドポイントへのアクセスを許可するファイアウォール ルールを変更する必要があります。| サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 より前に実行されていない場合に発生する可能性があります。  |
 | 試用版サブスクリプションをキャンセルします。 | 試用版サブスクリプションは移行されません。有料サブスクリプションの移行はブロックされます。 | キャンセル後にユーザーがアクセスした場合、試用版サービスは期限切れであり、機能しません。 |
-| Microsoft Cloud Deutschland と 365 Services のライセンス機能Office分析します。 | Office 365 サービスには、現在の Microsoft Cloud Deutschland では利用できない追加の機能とサービスが含まれます。 サブスクリプションの転送中に、新しい機能をユーザーが利用できます。 | <ul><li> Microsoft Cloud Deutschland および 365 Services のライセンスによって提供されるさまざまなOffice分析します。 最初に [、Office 365 プラットフォームのサービスの説明を参照してください](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> Office 365 サービスの新機能を最初に無効にし、ユーザーまたはユーザーの変更管理への影響を制限し、必要に応じてユーザー ライセンスの割り当てを変更する必要があるかどうかを判断します。 </li><li>365 サービスによって提供される新しいサービスと機能について、ユーザーとヘルプ デスク スタッフOffice準備します。 |
-| 移行中にコンテンツ [が](https://docs.microsoft.com/microsoft-365/compliance/retention) 不注意で削除されるのを回避するために、組織全体の保持ポリシーを作成します。  |<ul><li>移行中にエンド ユーザーによってコンテンツが誤って削除されるのを回避するために、組織全体の保持ポリシーを有効にすることもできます。 </li><li>保持は必要ありませんが、移行中はいつでも保持が期待通り動作する必要があります。保持ポリシーを持つことはバックアップの安全メカニズムです。 同時に、保持ポリシーは、すべての顧客、特に保存過多を懸念しているユーザーが使用する場合があります。</li></ul>| 「アイテム保持ポリシーと保持ラベルについて」の [説明に従ってアイテム保持ポリシーを適用します](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 / 9 より前に行われない場合に発生する可能性があります。 </li></ul>|
+| Microsoft Cloud Deutschland と 365 Services のライセンス機能Office分析します。 | Office 365 サービスには、現在の Microsoft Cloud Deutschland では利用できない追加の機能とサービスが含まれます。 サブスクリプションの転送中に、新しい機能をユーザーが利用できます。 | <ul><li> Microsoft Cloud Deutschland および 365 Services のライセンスによって提供されるさまざまなOffice分析します。 最初に [、Office 365 プラットフォームのサービスの説明を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> Office 365 サービスの新機能を最初に無効にし、ユーザーまたはユーザーの変更管理への影響を制限し、必要に応じてユーザー ライセンスの割り当てを変更する必要があるかどうかを判断します。 </li><li>365 サービスによって提供される新しいサービスと機能について、ユーザーとヘルプ デスク スタッフOffice準備します。 |
+| 移行中にコンテンツ [が](../compliance/retention.md) 不注意で削除されるのを回避するために、組織全体の保持ポリシーを作成します。  |<ul><li>移行中にエンド ユーザーによってコンテンツが誤って削除されるのを回避するために、組織全体の保持ポリシーを有効にすることもできます。 </li><li>保持は必要ありませんが、移行中はいつでも保持が期待通り動作する必要があります。保持ポリシーを持つことはバックアップの安全メカニズムです。 同時に、保持ポリシーは、すべての顧客、特に保存過多を懸念しているユーザーが使用する場合があります。</li></ul>| 「アイテム保持ポリシーと保持ラベルについて」の [説明に従ってアイテム保持ポリシーを適用します](../compliance/retention.md)。 サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 / 9 より前に行われない場合に発生する可能性があります。 </li></ul>|
 | ライセンスの過大使用を修正する | 特定の状況では、お客様は購入されたサービスよりも多くのサービスを利用できる場合があります。 この条件は、ライセンスの過剰使用と呼ばれる。 Microsoft は、ライセンス過剰使用条件の顧客を Microsoft Cloud Deutschland からドイツのデータセンター地域に移行することはできません。 サービスとデータに継続的にアクセスするには、割り当てられたすべてのユーザーにライセンスが必要です。 | すべてのお客様 | お客様は、追加のライセンスの購入またはユーザーからのライセンスの割り当てを解除して、ライセンスの過剰使用条件を評価および解決する必要があります。 |
 |||||
 
@@ -58,7 +58,7 @@ ms.locfileid: "50826178"
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| [障害復旧シナリオ用の Active Directory](ms-cloud-germany-transition-add-adfs.md#backup) フェデレーション サービス (AD FS) ファームのバックアップ。 | AD FS ファームを適切にバックアップして、証明書利用者の信頼をグローバル & ドイツのエンドポイントに確実に復元するには、ドメインの発行者 URI に触れることなく復元する必要があります。 必要に応じて、ADのバックアップに FS Rapid Restore を使用し、それぞれの復元を使用してください。 | 必須アクション。 顧客の FS ファームに障害が発生した場合、移行中にサービスAD影響が発生します。 詳細については [、「ADFS 移行手順」を参照してください。](https://docs.microsoft.com/microsoft-365/enterprise/ms-cloud-germany-transition-add-adfs) |
+| [障害復旧シナリオ用の Active Directory](ms-cloud-germany-transition-add-adfs.md#backup) フェデレーション サービス (AD FS) ファームのバックアップ。 | AD FS ファームを適切にバックアップして、証明書利用者の信頼をグローバル & ドイツのエンドポイントに確実に復元するには、ドメインの発行者 URI に触れることなく復元する必要があります。 必要に応じて、ADのバックアップに FS Rapid Restore を使用し、それぞれの復元を使用してください。 | 必須アクション。 顧客の FS ファームに障害が発生した場合、移行中にサービスAD影響が発生します。 詳細については [、「ADFS 移行手順」を参照してください。](./ms-cloud-germany-transition-add-adfs.md) |
 ||||
 
 ## <a name="exchange-online"></a>Exchange Online
@@ -158,13 +158,13 @@ Office 365 テナントが移行フェーズ 3 に達する前に Microsoft Azur
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| パートナーと協力して、使用している Azure サービスを特定し、ドイツから Office 365 サービス テナントへの将来の移行に備えます。 Azure 移行プレイブックで説明されている [手順に従います](https://docs.microsoft.com/azure/germany/germany-migration-main)。 |<ul><li>Azure リソースの移行は顧客の責任であり、所定の手順に従って手動で作業する必要があります。 組織でどのサービスが使用されているのかを理解すると、Azure サービスの正常な移行の鍵になります。 </li><li> Office ID パーティション (組織) の下に Azure サブスクリプションを持つ 365 人のドイツのお客様は、サブスクリプションとサービスの移行を開始できる場合、Microsoft が定める順序に従う必要があります。</li></ul>|<ul><li>お客様は、インフラストラクチャ、サービス、およびプラットフォーム コンポーネントを含む複数の Azure サブスクリプション、各サブスクリプションを持つ場合があります。 </li><li> 管理者は、この移行イベントの一環として、迅速な移行と検証が可能なサブスクリプションと関係者を特定する必要があります。 </li><li>所定のタイムライン内でこれらのサブスクリプションと Azure コンポーネントの移行を正常に完了できないと、Office および Azure AD が Office 365 サービスに移行し、データが失われる可能性があります。 </li><li> メッセージ センター通知は、顧客主導の移行を開始できるポイントを通知します。 </li></ul>|
+| パートナーと協力して、使用している Azure サービスを特定し、ドイツから Office 365 サービス テナントへの将来の移行に備えます。 Azure 移行プレイブックで説明されている [手順に従います](/azure/germany/germany-migration-main)。 |<ul><li>Azure リソースの移行は顧客の責任であり、所定の手順に従って手動で作業する必要があります。 組織でどのサービスが使用されているのかを理解すると、Azure サービスの正常な移行の鍵になります。 </li><li> Office ID パーティション (組織) の下に Azure サブスクリプションを持つ 365 人のドイツのお客様は、サブスクリプションとサービスの移行を開始できる場合、Microsoft が定める順序に従う必要があります。</li></ul>|<ul><li>お客様は、インフラストラクチャ、サービス、およびプラットフォーム コンポーネントを含む複数の Azure サブスクリプション、各サブスクリプションを持つ場合があります。 </li><li> 管理者は、この移行イベントの一環として、迅速な移行と検証が可能なサブスクリプションと関係者を特定する必要があります。 </li><li>所定のタイムライン内でこれらのサブスクリプションと Azure コンポーネントの移行を正常に完了できないと、Office および Azure AD が Office 365 サービスに移行し、データが失われる可能性があります。 </li><li> メッセージ センター通知は、顧客主導の移行を開始できるポイントを通知します。 </li></ul>|
 ||||
 
 <!--
 Reworked as text:
 
-**Step:** Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 services tenant by working with your partners. Follow the steps described in the [Azure migration playbook](https://docs.microsoft.com/azure/germany/germany-migration-main).
+**Step:** Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 services tenant by working with your partners. Follow the steps described in the [Azure migration playbook](/azure/germany/germany-migration-main).
 
 **Description:** Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services. 
 
@@ -181,7 +181,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 
@@ -198,6 +198,6 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 
 クラウド アプリ:
 
-- [Dynamics 365 移行プログラム情報](https://aka.ms/d365ceoptin)
-- [Power BI 移行プログラム情報](https://aka.ms/pbioptin)
-- [Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 移行プログラム情報](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移行プログラム情報](/power-bi/admin/service-admin-migrate-data-germany)
+- [Microsoft Teams へのアップグレードを開始する](/microsoftteams/upgrade-start-here)

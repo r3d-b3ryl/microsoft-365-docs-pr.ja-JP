@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する際のカスタマー エクスペリエンスに関するその他の情報。'
-ms.openlocfilehash: 8dcb8b8ab2ec5c3dea105380858d26cfd5537d9c
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 84705eaf78da4d1e8d35f743599f6a4e9e46208f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712284"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924424"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行への影響 (上級) 
 
@@ -42,7 +42,7 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 | Step(s) | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
 | Azure AD Microsoft Cloud Deutschland のテナントを 365 Services Officeコピーしました。 | Azure ADは、テナントを 365 Officeにコピーします。 テナントとユーザー識別子は保持されます。 Azure ADサービス呼び出しは、Microsoft Cloud Deutschland から 365 サービスOfficeにリダイレクトされ、サービスに対して透過的です。 | すべてのOffice顧客 | - 一般的なデータ保護規則 (GDPR) データ主体要求 (DSR) は、将来の要求のために Azure Admin ポータルから実行されます。 Microsoft Cloud Deutschland に常駐している従来の診断データまたは顧客以外の診断データは、30 日以上経過した時点で削除されます。 <br><br> - Active Directory フェデレーション サービス (AD FS) でフェデレーション認証を使用しているお客様は、移行中にオンプレミスの Active Directory を使用するすべての認証に使用される発行者 URI を変更する必要があります。 発行者 URI を変更すると、ドメイン内のユーザーの認証エラーが発生します。 発行者 URI は、FS またはドメインAD管理からフェデレーションに変換される場合、またはその逆に直接変更できます。 移行された Azure ドメインテナントでフェデレーション ドメインを追加、削除、またはADすることをお勧めします。 発行者 URI は、移行が完全に完了した後で変更できます。 <br><br> - Microsoft Authenticator を使用する多要素認証 (MFA) 要求は、テナントが 365 サービスにコピーされている間にユーザー ObjectID (GUID) として表示Officeします。 MFA 要求は、この表示動作にもかかわらず期待通り実行されます。  365 サービス エンドポイントを使用してOfficeされた Microsoft Authenticator アカウントには、ユーザー プリンシパル名 (UPN) が表示されます。  Microsoft Cloud Deutschland エンドポイントを使用して追加されたアカウントは、ユーザー ObjectID を表示しますが、Microsoft Cloud Deutschland と Office 365 サービス エンドポイントの両方で動作します。  |
-| Azure リソースの移行。 | Office 365 および Azure リソース (ネットワーク、コンピューティング、ストレージなど) を使用しているお客様は、Office 365 サービス インスタンスへのリソースの移行を実行します。 この移行は、お客様の責任です。 メッセージ センターの投稿は開始を示します。 365 サービス環境で Azure AD組織をOfficeする必要があります。 | Azure のお客様 | Azure 移行については、「Azure 移行プレイブック」、「Azure Germany の移行 [ガイダンスの概要」を参照してください](https://docs.microsoft.com/azure/germany/germany-migration-main)。 |
+| Azure リソースの移行。 | Office 365 および Azure リソース (ネットワーク、コンピューティング、ストレージなど) を使用しているお客様は、Office 365 サービス インスタンスへのリソースの移行を実行します。 この移行は、お客様の責任です。 メッセージ センターの投稿は開始を示します。 365 サービス環境で Azure AD組織をOfficeする必要があります。 | Azure のお客様 | Azure 移行については、「Azure 移行プレイブック」、「Azure Germany の移行 [ガイダンスの概要」を参照してください](/azure/germany/germany-migration-main)。 |
 |||||
 
 ### <a name="exchange-online-before-phase-5"></a>Exchange Online before phase 5
@@ -84,7 +84,7 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| フェーズ 4 の初めからフェーズ 9 が完了するまで、電子情報開示検索は失敗するか、移行された SharePoint Online、OneDrive for Business、Exchange Online の場所に対して 0 の結果を返します。 | 移行中、お客様は、コンテンツ検索を含むセキュリティ & コンプライアンス センターでケース、保留、[検索、およびエクスポートを](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)[作成し続けます](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)。  ただし、移行された SharePoint Online、OneDrive for Business、Exchange Online の場所に対して検索すると、0 の結果が返されるか、エラーが発生します。 修復については、「Impact」列 _を参照_ してください。 | 移行中に検索で結果がゼロまたはエラーが返された場合は、SharePoint Online で次のアクションを実行してください。 <ul><li>「OneDrive または SharePoint からファイルとフォルダーをダウンロードする」の手順に従って [、SharePoint Online/OneDrive](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)for Business サイトからサイトを直接ダウンロードします。 このメソッドには、サイトに対する SharePoint Online 管理者のアクセス許可または読み取り専用のアクセス許可が必要です。</li><li>制限を超えた場合は [、「OneDrive](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)または SharePoint からファイルとフォルダーをダウンロードする」で説明したように、お客様は、SharePoint ファイルと [Teams](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)ファイルをコンピューターと同期するのガイダンスに従って OneDrive for Business 同期クライアントを使用できます。</li><li>詳細については  [、「In-Place eDiscovery in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| フェーズ 4 の初めからフェーズ 9 が完了するまで、電子情報開示検索は失敗するか、移行された SharePoint Online、OneDrive for Business、Exchange Online の場所に対して 0 の結果を返します。 | 移行中、お客様は、コンテンツ検索を含むセキュリティ & コンプライアンス センターでケース、保留、[検索、およびエクスポートを](../compliance/manage-legal-investigations.md)[作成し続けます](../compliance/search-for-content.md)。  ただし、移行された SharePoint Online、OneDrive for Business、Exchange Online の場所に対して検索すると、0 の結果が返されるか、エラーが発生します。 修復については、「Impact」列 _を参照_ してください。 | 移行中に検索で結果がゼロまたはエラーが返された場合は、SharePoint Online で次のアクションを実行してください。 <ul><li>「OneDrive または SharePoint からファイルとフォルダーをダウンロードする」の手順に従って [、SharePoint Online/OneDrive](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)for Business サイトからサイトを直接ダウンロードします。 このメソッドには、サイトに対する SharePoint Online 管理者のアクセス許可または読み取り専用のアクセス許可が必要です。</li><li>制限を超えた場合は [、「OneDrive](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)または SharePoint からファイルとフォルダーをダウンロードする」で説明したように、お客様は、SharePoint ファイルと [Teams](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)ファイルをコンピューターと同期するのガイダンスに従って OneDrive for Business 同期クライアントを使用できます。</li><li>詳細については  [、「In-Place eDiscovery in Exchange Server](/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 ||||
 
 ## <a name="post-migration"></a>移行後
@@ -102,7 +102,7 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| Microsoft Cloud Deutschland および FS から証明書利用者の信頼AD削除します。 | Azure AD への切り上げが完了すると、組織は Office 365 サービスを完全に使用し、Microsoft Cloud Deutschland に接続されなくなりました。 この時点で、顧客は Microsoft Cloud Deutschland エンドポイントに対する証明書利用者の信頼を削除する必要があります。 これは、Azure AD が ID プロバイダー (IdP) として活用されている場合にのみ、顧客のアプリケーションが Microsoft Cloud Deutschland エンドポイントを指し示さない場合にのみ実行できます。 | フェデレーション認証組織 | なし |
+| Microsoft Cloud Deutschland および FS から証明書利用者の信頼AD削除します。 | Azure AD への切り上げが完了すると、組織は Office 365 サービスを完全に使用し、Microsoft Cloud Deutschland に接続されなくなりました。 この時点で、顧客は Microsoft Cloud Deutschland エンドポイントに対する証明書利用者の信頼を削除する必要があります。 これは、Azure AD が ID プロバイダー (IdP) として活用されている場合にのみ、顧客のアプリケーションが Microsoft Cloud Deutschland エンドポイントを指し示さない場合にのみ実行できます。 | フェデレーション認証組織 | なし。 |
 |||||
 
 <!--
@@ -154,15 +154,15 @@ Azure の場合AD:
 
 | Step(s) | 説明 | 適用対象 | 影響 |
 |:-------|:-----|:-------|:-------|
-|  すべての SharePoint Online、OneDrive for Business、Exchange Online の場所は、セキュリティおよびコンプライアンス センター (SCC) と共に移行されています。 | すべての電子情報開示アクティビティは、世界中のテナントから実行する必要があります。 これで、検索は 100% 成功します。  エラーやエラーは、通常のサポート チャネルに従う必要があります。 | 電子情報開示を使用しているすべての顧客 | なし |
-| 移行前の手順で作成された組織全体の保持ポリシーを削除する | 顧客は、移行前の作業中に作成された組織全体の保持ポリシーを削除できます。 | 移行前の手順の一部としてアイテム保持ポリシーを適用したすべてのお客様。 | なし |
+|  すべての SharePoint Online、OneDrive for Business、Exchange Online の場所は、セキュリティおよびコンプライアンス センター (SCC) と共に移行されています。 | すべての電子情報開示アクティビティは、世界中のテナントから実行する必要があります。 これで、検索は 100% 成功します。  エラーやエラーは、通常のサポート チャネルに従う必要があります。 | 電子情報開示を使用しているすべての顧客 | なし。 |
+| 移行前の手順で作成された組織全体の保持ポリシーを削除する | 顧客は、移行前の作業中に作成された組織全体の保持ポリシーを削除できます。 | 移行前の手順の一部としてアイテム保持ポリシーを適用したすべてのお客様。 | なし。 |
 |||||
 
 ## <a name="next-step"></a>次の手順
 
 [移行フェーズのアクションと影響について理解する](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 
@@ -179,6 +179,6 @@ Azure の場合AD:
 
 クラウド アプリ:
 
-- [Dynamics 365 移行プログラム情報](https://aka.ms/d365ceoptin)
-- [Power BI 移行プログラム情報](https://aka.ms/pbioptin)
-- [Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 移行プログラム情報](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移行プログラム情報](/power-bi/admin/service-admin-migrate-data-germany)
+- [Microsoft Teams へのアップグレードを開始する](/microsoftteams/upgrade-start-here)

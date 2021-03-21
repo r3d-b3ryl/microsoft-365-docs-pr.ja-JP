@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 分類子を作成する方法を説明します
-ms.openlocfilehash: bff23807fce18bf4a585dbb1ec47c1502ab686f6
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 13ae099d051ac526dc5b13e4cb55a1dc10eec087
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242690"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925358"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexで分類子を作成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "50242690"
 
 ![契約更新ドキュメント](../media/content-understanding/contract-renewal.png)
 
-分類子を作成すると、モデルに関連付けられる新しい [SharePoint コンテンツの種類](https://docs.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)を作成できます。
+分類子を作成すると、モデルに関連付けられる新しい [SharePoint コンテンツの種類](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)を作成できます。
 
 分類子を作成するときに、モデルを定義するために *説明* を作成する必要があります。 これにより、このドキュメントの種類に一貫して見つける共通のデータがあることが分かります。 
 

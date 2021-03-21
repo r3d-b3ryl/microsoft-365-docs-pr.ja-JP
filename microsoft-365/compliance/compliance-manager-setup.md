@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ユーザーのアクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザー履歴を管理し、ダッシュボード ビューをフィルター処理します。
-ms.openlocfilehash: 3c8f3f30741d4b0fac5c940bc6ec3fb56ea4f79e
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: d8eb1d7d8245aa31cb5429452128cedc0adf4684
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405797"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925705"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -30,7 +30,7 @@ ms.locfileid: "50405797"
 
 ## <a name="who-can-access-compliance-manager"></a>コンプライアンス マネージャーにアクセスできるユーザー
 
-コンプライアンス マネージャーは、Office 365 ライセンスと Microsoft 365 ライセンスを持つ組織、および米国政府機関コミュニティ クラウド (GCC) モデレートおよび GCC High のお客様に利用できます。 評価の可用性と管理機能は、ライセンス契約によって異なっています。  [サービスの説明の詳細を表示します](https://go.microsoft.com/fwlink/?linkid=2132371)。
+コンプライアンス マネージャーは、Office 365 ライセンスと Microsoft 365 ライセンスを持つ組織、および米国政府機関コミュニティ クラウド (GCC) モデレートおよび GCC High のお客様に利用できます。 評価の可用性と管理機能は、ライセンス契約によって異なっています。  [サービスの説明の詳細を表示します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -72,19 +72,19 @@ ms.locfileid: "50405797"
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>the Office 365 Security & コンプライアンス センターについて
 
-コンプライアンス センターの [Office 365 セキュリティ &詳細を参照してください](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
+コンプライアンス センターの [Office 365 セキュリティ &詳細を参照してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 Office 365 セキュリティ/コンプライアンス センターにアクセスできない場合、または Microsoft Service Trust Portal で従来のバージョンのコンプライアンス マネージャーにアクセスする必要がある場合は、サービス信頼ポータルの管理者設定によって、役割を割り[](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)当てる別の方法 (指示の表示) が提供されます。 このような役割の機能が制限されている点に注意してください。
 
 ##### <a name="more-about-azure-ad"></a>More about Azure AD
 
-Azure Active Directory で役割を割り当て、アクセス許可ADを設定するには、「管理者ロールと管理者以外の役割を Azure Active Directory を使用するユーザーに割り当てる」 [を参照してください](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
+Azure Active Directory で役割を割り当て、アクセス許可ADを設定するには、「管理者ロールと管理者以外の役割を Azure Active Directory を使用するユーザーに割り当てる」 [を参照してください](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
 
 Office 365 または Microsoft 365 サブスクリプションを持つ Azure AD ID を持つユーザーは、Microsoft 365 コンプライアンス センターのコンプライアンス マネージャーにアクセスできない。 コンプライアンス マネージャーへのアクセスに関するサポートを求めるには、 [次の](mailto:cmresearch@microsoft.com)cmresearch@microsoft.com。
 
 ### <a name="role-types"></a>役割の種類
 
-次の表は、コンプライアンス マネージャーの各役割で許可される機能を示しています。 また、各 Azure の役割が [コンプライアンス マネージャーのADマップ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) する方法も示しています。 コンプライアンス マネージャーにアクセスするには、少なくともコンプライアンス マネージャー リーダー ロールまたは Azure ADグローバル リーダー ロールが必要です。
+次の表は、コンプライアンス マネージャーの各役割で許可される機能を示しています。 また、各 Azure の役割が [コンプライアンス マネージャーのADマップ](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) する方法も示しています。 コンプライアンス マネージャーにアクセスするには、少なくともコンプライアンス マネージャー リーダー ロールまたは Azure ADグローバル リーダー ロールが必要です。
 
 
 | ユーザーは次の機能を使用できます。 | コンプライアンス マネージャーの役割 | Azure ADロール | 
@@ -104,7 +104,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 ### <a name="set-up-automated-testing"></a>自動テストのセットアップ
 
-コンプライアンス マネージャーの一部の改善アクションも [Microsoft Secure Score によって監視されます](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)。 共同で監視されるアクションの自動テストを設定できます。つまり、セキュリティで保護されたスコアでアクションがテストおよび更新された場合、それらの結果はコンプライアンス マネージャーの同じアクションと同期し、コンプライアンス スコアにカウントされます。
+コンプライアンス マネージャーの一部の改善アクションも [Microsoft Secure Score によって監視されます](../security/mtp/microsoft-secure-score.md)。 共同で監視されるアクションの自動テストを設定できます。つまり、セキュリティで保護されたスコアでアクションがテストおよび更新された場合、それらの結果はコンプライアンス マネージャーの同じアクションと同期し、コンプライアンス スコアにカウントされます。
 
 コンプライアンス マネージャーが新しい組織では、既定で自動テストが有効になっています。 Microsoft 365 または Office 365 を初めて展開する場合、Secure Score がデータを完全に収集し、コンプライアンス スコアに組み込むには約 7 日かかる。  自動テストを有効にすると、アクションのテスト日は更新されませんが、テストの状態は更新されます。 新しい評価が作成されると、スコアには Microsoft コントロール スコアと Secure Score 統合が自動的に含まれます。
 
@@ -363,5 +363,5 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 **詳細については、「評価**[テンプレートを使用する方法」を参照してください](compliance-manager-templates.md)。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 評価を設定して [コンプライアンス マネージャーをカスタマイズします](compliance-manager-assessments.md)。

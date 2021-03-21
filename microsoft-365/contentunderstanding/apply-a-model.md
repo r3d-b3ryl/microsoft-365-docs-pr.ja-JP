@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: SharePoint ドキュメントライブラリに発行されたモデルを適用する方法について説明します。
-ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 42168537c8d449a075b5e29ef9905b6b98b8d714
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080786"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925402"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexのドキュメント理解モデルを適用する
 
@@ -94,7 +94,7 @@ SharePoint Syntex 文書理解モデルまたはフォーム処理モデルを�
 
    ![[分類日] 列](../media/content-understanding/class-date-column.png)</br> 
 
-[分類日] フィールドは、Syntex のコンテンツの解釈モデルがファイルの処理を完了し、[分類日] フィールドを更新したあとで、[<b>ファイルがコンテンツの解釈モデルで分類されたとき</b>トリガー](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) が Power Automate フローを実行するのに使用されます。
+[分類日] フィールドは、Syntex のコンテンツの解釈モデルがファイルの処理を完了し、[分類日] フィールドを更新したあとで、[<b>ファイルがコンテンツの解釈モデルで分類されたとき</b>トリガー](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) が Power Automate フローを実行するのに使用されます。
 
    ![フロー トリガー](../media/content-understanding/trigger.png)</br>
 
@@ -108,5 +108,3 @@ SharePoint Syntex 文書理解モデルまたはフォーム処理モデルを�
 [抽出子を作成する](create-an-extractor.md)
 
 [ドキュメント理解の概要](document-understanding-overview.md)
-
-

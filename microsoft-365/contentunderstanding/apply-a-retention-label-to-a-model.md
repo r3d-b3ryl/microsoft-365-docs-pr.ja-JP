@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: この記事では、保持ラベルを SharePoint Syntex のモデルに適用する方法について説明します
-ms.openlocfilehash: 48c0b983316cfe29019d09cb20546fa4b325b3b0
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 796130bfa967663b5696f49279154cfe9b16f703
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242773"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925370"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>SharePoint Syntex のモデルに保持ラベルを適用する
 
@@ -28,14 +28,14 @@ ms.locfileid: "50242773"
 </br>
 
 
-Microsoft SharePoint Syntex のモデルに[保持ラベル](https://docs.microsoft.com/microsoft-365/compliance/retention)を簡単に適用できます。 これは、ドキュメント理解モデルとフォーム処理モデルの両方で実行できます。
+Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/retention.md)を簡単に適用できます。 これは、ドキュメント理解モデルとフォーム処理モデルの両方で実行できます。
 
 保持ラベルを使用すると、モデルが識別するドキュメントに保持設定を適用できます。  たとえば、モデルで、ドキュメント ライブラリにアップロードされた *保険通知* ドキュメントを識別するだけでなく、*ビジネス* 保持タグを適用して、これらのドキュメントを指定された期間 ( たとえば、次の5か月) ドキュメント ライブラリから削除できないようにする必要があります。
 
 モデルのホーム ページのモデル設定を使用して、既存の保持ラベルをモデルに適用できます。 
 
 > [!Important]
-> 保持ラベルをドキュメント理解モデルに適用できるようにするには、保持ラベルを[作成して Microsoft 365 コンプライアンス センターで公開する](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels)必要があります。
+> 保持ラベルをドキュメント理解モデルに適用できるようにするには、保持ラベルを[作成して Microsoft 365 コンプライアンス センターで公開する](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels)必要があります。
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>保持ラベルをドキュメント理解モデルに追加する
 
@@ -73,13 +73,13 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](https://docs.micros
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>保持ラベルをフォーム処理モデルに追加するには
 
 > [!Important]
-> 保持ラベルをフォーム処理モデルに適用できるようにするには、保持ラベルを[作成して Microsoft 365 コンプライアンス センターで公開する](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels)必要があります。
+> 保持ラベルをフォーム処理モデルに適用できるようにするには、保持ラベルを[作成して Microsoft 365 コンプライアンス センターで公開する](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels)必要があります。
 
 モデルの作成時にフォーム処理モデルに保持ラベルを適用するか、既存のモデルに適用することができます。
 
 ### <a name="to-add-a-retention-label-when-you-create-a-form-processing-model"></a>フォーム処理モデルを作成するときに保持ラベルを追加するには
 
-1. [新しいフォーム処理モデルを作成する](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)場合は、<b>[詳細設定]</b> を選択します。
+1. [新しいフォーム処理モデルを作成する](./create-a-form-processing-model.md)場合は、<b>[詳細設定]</b> を選択します。
 2. <b>[詳細設定]</b> の <b>[保持ラベル]</b> セクションで、メニューを選択してから、モデルに適用する保持ラベルを選択します。</b>
 
  
@@ -132,5 +132,3 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](https://docs.micros
 [抽出子を作成する](create-an-extractor.md)
 
 [ドキュメント理解の概要](document-understanding-overview.md)
-
-

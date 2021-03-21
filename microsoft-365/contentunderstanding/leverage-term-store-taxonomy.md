@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex のドキュメント理解モデルで抽出子を作成するときに、用語ストアの分類法を使用します。
-ms.openlocfilehash: aff2df6a96fdfee7380651f68e647019e9485658
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: b8dfc028e0a18f3345fec466ec5e0079ed2d11ce
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975741"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925346"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>抽出子の作成時に用語ストアの分類を活用する
 
@@ -27,7 +27,7 @@ ms.locfileid: "49975741"
 
 </br>
 
-SharePoint Syntex を使用してドキュメント理解モデルで抽出子を作成する場合、[用語ストア](https://docs.microsoft.com/sharepoint/managed-metadata)のグローバル用語セットを利用して、抽出するデータの優先用語を表示できます。  
+SharePoint Syntex を使用してドキュメント理解モデルで抽出子を作成する場合、[用語ストア](/sharepoint/managed-metadata)のグローバル用語セットを利用して、抽出するデータの優先用語を表示できます。  
 
 例として、モデルは、ドキュメント ライブラリにアップロードされているすべての **契約** ドキュメントを識別して分類します。  さらに、モデルは各契約から **契約サービス** 値も抽出し、ライブラリ ビューの列に表示します。 契約内のさまざまな契約サービス値の中には、会社が使用しなくなって名前が変更された古い値がいくつかあります。 たとえば、契約サービスでの *Design*、*Graphics*、*Topography* という用語への参照はすべて、*Creative* と呼ばれる必要があります。 モデルが契約ドキュメントから過去の条件の 1 つを抽出するときは必ず、ライブラリ ビューに現在の条件 (Creative) を表示する必要があります。 以下の例では、モデルのトレーニング中に、1 つのサンプル ドキュメントに古い用語である *Design* が含まれていることがわかります。
 
@@ -35,7 +35,7 @@ SharePoint Syntex を使用してドキュメント理解モデルで抽出子�
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>抽出子で管理されたメタデータ列を使用する
 
-用語セットは、SharePoint 管理センターの 管理されたメタデータ サービス (MMS) 用語ストアで構成されます。 以下の例では、*契約サービス* の [用語セット](https://docs.microsoft.com/sharepoint/managed-metadata#term-set)は、*Creative* などを含む複数の用語を含むように構成されています。  詳細は、この用語に 3 つの同義語 (*Design*、*Graphics*、*Topography*) があり、これらの同義語を *Creative* に翻訳する必要があることを示しています。 
+用語セットは、SharePoint 管理センターの 管理されたメタデータ サービス (MMS) 用語ストアで構成されます。 以下の例では、*契約サービス* の [用語セット](/sharepoint/managed-metadata#term-set)は、*Creative* などを含む複数の用語を含むように構成されています。  詳細は、この用語に 3 つの同義語 (*Design*、*Graphics*、*Topography*) があり、これらの同義語を *Creative* に翻訳する必要があることを示しています。 
 
    ![用語セット](../media/content-understanding/term-store.png)</br>
 
@@ -52,13 +52,8 @@ SharePoint Syntex を使用してドキュメント理解モデルで抽出子�
 
 
 ## <a name="see-also"></a>関連項目
-[管理されたメタデータの概要](https://docs.microsoft.com/sharepoint/managed-metadata#terms)
+[管理されたメタデータの概要](/sharepoint/managed-metadata#terms)
 
 [抽出子を作成する](create-an-extractor.md)
 
 [管理メタデータ列を作成する](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)
-
-
-
-
-

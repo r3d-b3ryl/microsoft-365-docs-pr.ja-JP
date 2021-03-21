@@ -26,16 +26,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: アクティブ サービスが中断していないかどうかを確認するため、サポートに連絡する前に、Microsoft 365 サービスの正常性状態を表示します。
-ms.openlocfilehash: b1819e455732d142c563f598433c410b0ae60882
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
-ms.translationtype: HT
+ms.openlocfilehash: 3802ca01902d5b0d457d2a3d75b784d38f71bd42
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072761"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924686"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 サービス正常性を確認する方法
 
-[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
 [[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)] の [**サービス正常性**] ページで、Office on the web、Yammer、Microsoft Dynamics CRM、モバイル デバイス管理クラウド サービスなどの Microsoft サービスの正常性を表示できます。 クラウド サービスの問題が発生している場合は、サポートに連絡するかトラブルシューティングに時間を費やす前に、サービス正常性を確認することで、解決に向けて取り組み中の既知の問題であるかどうかを判別できます。
 
@@ -47,7 +47,7 @@ ms.locfileid: "49072761"
 1. [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) の Microsoft 365 管理センターに移動し、管理者アカウントでサインインします。
 
     > [!NOTE]
-    > 全体管理者またはサービス管理者の役割を割り当てられているユーザーは、サービス正常性を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center)」を参照してください。
+    > 全体管理者またはサービス管理者の役割を割り当てられているユーザーは、サービス正常性を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)」を参照してください。
   
 2. 新しい管理センターを使用していない場合は、[**ホーム**] ページで、右上隅にある [**新しい管理センターを試す**] トグルを選択します。
 
@@ -148,9 +148,9 @@ Microsoft 365 サービスで問題が発生し、それが [**サービス正�
   
 問題の詳細を表示するには、いずれかの行を展開します。
   
-稼働率への取り組みの詳細については、「[Microsoft 365 による透明性のある運用](https://go.microsoft.com/fwlink/?linkid=848695)」を参照してください。
+稼働率への取り組みの詳細については、「[Microsoft 365 による透明性のある運用](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理センターのアクティビティ レポート](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-[メッセージ センターのユーザー設定](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences11)
+[メッセージ センターのユーザー設定](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)

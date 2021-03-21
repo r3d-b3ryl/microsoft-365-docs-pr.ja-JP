@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: セキュリティ/コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: 52871fc85a4d5aec1754c1957f2087552b442daf
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b7bb1008120df8efefc983d526d90e8397b3a89e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423698"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924237"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
@@ -61,9 +61,9 @@ ms.locfileid: "50423698"
 
 - [コンテンツ検索のキーワード クエリ](keyword-queries-and-search-conditions.md)
 
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearch)
+- [New-ComplianceSearch](/powershell/module/exchange/New-ComplianceSearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
+- [Start-ComplianceSearch](/powershell/module/exchange/Start-ComplianceSearch)
 
 > [!NOTE]
 > この手順で作成するコンテンツ検索で検索されるコンテンツの場所に、SharePoint や OneDrive for Business のサイトを含めることはできません。 メール メッセージに使われるコンテンツ検索には、メールボックスとパブリック フォルダーのみを含めることができます。 コンテンツ検索にサイトが含まれる場合、**New-ComplianceSearchAction** コマンドレットを実行すると、手順 3 でエラーが発生します。
@@ -80,7 +80,7 @@ ms.locfileid: "50423698"
 
 - 検索結果をプレビューして、検索が、削除を希望するメッセージだけを返したことを確認します。
 
-- 検索見積もりの統計情報 (セキュリティ/コンプライアンス センターの検索の詳細ウィンドウや、[Get-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934) コマンドレットを使用して表示される情報) を使用して、結果の合計数のカウントを取得します。
+- 検索見積もりの統計情報 (セキュリティ/コンプライアンス センターの検索の詳細ウィンドウや、[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) コマンドレットを使用して表示される情報) を使用して、結果の合計数のカウントを取得します。
 
 不審な電子メール メッセージを検索するクエリの 2 つの例を次に示します。
 
@@ -105,7 +105,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>手順 2: セキュリティ/コンプライアンス センターの PowerShell に接続する
 
-次に、組織のセキュリティ/コンプライアンス センターの PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+次に、組織のセキュリティ/コンプライアンス センターの PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
 セキュリティ/コンプライアンス センターの PowerShell に接続したら、前の手順で準備した **New-ComplianceSearch** コマンドレットおよび **Start-ComplianceSearch** コマンドレットを実行します。
 
@@ -127,7 +127,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 前のコマンドを実行してメッセージを論理的または物理的に削除する場合、*SearchName* パラメーターで指定される検索は、手順 1 で作成したコンテンツ検索になります。
 
-詳細については、「[New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction)」を参照してください。
+詳細については、「[New-ComplianceSearchAction](/powershell/module/exchange/New-ComplianceSearchAction)」を参照してください。
 
 ## <a name="more-information"></a>詳細情報
 

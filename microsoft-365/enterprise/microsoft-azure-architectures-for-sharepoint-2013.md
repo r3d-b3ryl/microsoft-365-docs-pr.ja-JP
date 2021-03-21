@@ -15,17 +15,17 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: Microsoft Azure 仮想マシンでホストできる SharePoint 2013 ソリューションの種類と、それをホストするために Azure をセットアップする方法について説明します。
-ms.openlocfilehash: 37d7eb2a746e30ad560949a933783beb6b971a08
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Microsoft Azure 仮想マシンでホストできる SharePoint 2013 ソリューションの種類と、ホストする Azure をセットアップする方法について説明します。
+ms.openlocfilehash: eed74e2dcbe383f0f63e7f6ea2fc70fe7b51b1b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696257"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924178"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 用の Microsoft Azure アーキテクチャ
 
-Azure は SharePoint Server 2013 ソリューションをホストするための優れた環境です。 ほとんどの場合、Microsoft 365 をお勧めしますが、Azure でホストされている SharePoint Server ファームは特定のソリューションに適したオプションになります。 この記事では、SharePoint ソリューションが Azure プラットフォームに適合するように設計する方法について説明します。 次の 2 つのソリューションが例として使用されています。
+Azure は SharePoint Server 2013 ソリューションをホストするための優れた環境です。 ほとんどの場合、Microsoft 365 をお勧めしますが、Azure でホストされている SharePoint Server ファームは、特定のソリューションにとって良い選択肢になります。 この記事では、SharePoint ソリューションが Azure プラットフォームに適合するように設計する方法について説明します。 次の 2 つのソリューションが例として使用されています。
   
 - [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,14 +39,14 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
 |:-----|:-----|
 |開発環境とテスト環境  <br/> |これらの環境を簡単に作成して管理できます。  <br/> |
 |Azure に対するオンプレミス SharePoint ファームの障害復旧  <br/> |**ホストされているセカンダリ データセンター** 別の地域にあるセカンダリ データセンターに投資するのではなく、Azure を使用します。 <br/> **低コストの障害復旧環境** オンプレミスの障害復旧環境よりも維持するリソースが少なく、費用も低く抑えられます。リソースの数は、コールド スタンバイ、ウォーム スタンバイ、ホット スタンバイのどの障害復旧環境を選択するかに応じて異なります。<br/> **より柔軟なプラットフォーム** 障害時には、負荷要件を満たすためにご使用の復旧 SharePoint ファームを簡単にスケールアウトできます。それらのリソースが不要になった場合にはスケールインします。<br/> 「[Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)」をご覧ください。  <br/> |
-|Microsoft 365 で利用できない機能とスケールを使用する、インターネットに接続されたサイト  <br/> |**作業の重点** インフラストラクチャの構築ではなく、魅力的なサイトの構築のほうに集中できます。 <br/> **Azure でのサイズの柔軟性を活用** 必要に応じて新しいサーバーを追加してファームのサイズを変更し、必要なリソースに対してのみ支払いを行います。動的なマシンの割り当てはサポートされていません (自動スケール)。<br/> **Azure Active Directory (AD) の使用** ユーザー アカウントに関して Azure AD を活用します。 <br/> **Microsoft 365 で利用できない SharePoint 機能の追加** 詳細なレポートおよび web 分析を追加します。 <br/> 「[SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)」をご覧ください。  <br/> |
-|Microsoft 365 またはオンプレミス環境をサポートするためのアプリファーム  <br/> |**アプリのビルド、テスト、ホスト** Azure で、オンプレミス環境とクラウド環境の両方をサポートできます。 <br/> **このロールのホスト** オンプレミス環境用の新しいハードウェアを購入する代わりに、Azure で行います。 <br/> |
+|Microsoft 365 では利用できない機能とスケールを使用するインターネット向けサイト  <br/> |**作業の重点** インフラストラクチャの構築ではなく、魅力的なサイトの構築のほうに集中できます。 <br/> **Azure でのサイズの柔軟性を活用** 必要に応じて新しいサーバーを追加してファームのサイズを変更し、必要なリソースに対してのみ支払いを行います。動的なマシンの割り当てはサポートされていません (自動スケール)。<br/> **Azure Active Directory (AD) の使用** ユーザー アカウントに関して Azure AD を活用します。 <br/> **Microsoft 365 で使用できない SharePoint 機能の追加** 詳細なレポートと Web 分析を追加します。 <br/> 「[SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)」をご覧ください。  <br/> |
+|Microsoft 365 またはオンプレミス環境をサポートするアプリ ファーム  <br/> |**アプリのビルド、テスト、ホスト** Azure で、オンプレミス環境とクラウド環境の両方をサポートできます。 <br/> **このロールのホスト** オンプレミス環境用の新しいハードウェアを購入する代わりに、Azure で行います。 <br/> |
    
 イントラネットとコラボレーションのソリューション、およびワークロードに関しては、以下の選択肢を考慮してください。
   
-- Microsoft 365 がビジネス要件を満たしているかどうか、またはソリューションの一部であるかどうかを判断します。 Microsoft 365 には、常に最新の豊富な機能セットが用意されています。
+- Microsoft 365 がビジネス要件を満たしているのか、それともソリューションの一部になるか判断します。 Microsoft 365 には、常に最新の豊富な機能セットが提供されています。
     
-- Microsoft 365 がお客様のすべてのビジネス要件を満たしていない場合は、Microsoft コンサルティングサービス (MCS) からの SharePoint 2013 の標準実装を検討してください。 標準のアーキテクチャは、カスタマイズされたアーキテクチャよりもソリューションの実装が迅速かつ安価で、なおかつ簡単です。 
+- Microsoft 365 がすべてのビジネス要件を満たしていない場合は、Microsoft コンサルティング サービス (MCS) からオンプレミスの SharePoint 2013 の標準実装を検討してください。 標準のアーキテクチャは、カスタマイズされたアーキテクチャよりもソリューションの実装が迅速かつ安価で、なおかつ簡単です。 
     
 - 標準実装がビジネス要件を満たさない場合には、カスタマイズされたオンプレミスのソリューションを考慮します。
     
@@ -56,9 +56,9 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
 
 この記事では SharePoint トポロジの例が使用されていますが、こうした設計概念は任意の SharePoint ファーム トポロジで使用できます。Azure 環境を設計する前に、SharePoint ファームを設計するための次のトポロジ、アーキテクチャ、キャパシティ、およびパフォーマンスに関するガイダンスを使用してください。
   
-- [SharePoint 2013 の IT 担当者向けアーキテクチャ設計](https://technet.microsoft.com/sharepoint/fp123594.aspx)
+- [SharePoint 2013 の IT 担当者向けアーキテクチャ設計](/SharePoint/technical-reference/technical-diagrams)
     
-- [Plan for performance and capacity management in SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Plan for performance and capacity management in SharePoint Server 2013](/SharePoint/administration/performance-planning-in-sharepoint-server-2013)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Active Directory ドメインの種類の決定
 
@@ -107,7 +107,7 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
     
 クロスプレミス仮想ネットワークの計画と作成に関する詳細については、「[オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)」をご参照ください。
   
-## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Active Directory ドメインサービス (AD DS) と DNS を追加する
+## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Active Directory ドメイン サービス (DS) AD DNS の追加
 
 Azure における障害復旧の場合、Windows Server AD と DNS をハイブリッド シナリオで展開します。このとき、Windows Server AD は、オンプレミスと Azure 仮想マシンの両方に展開されます。
   
@@ -129,7 +129,7 @@ Azure における障害復旧の場合、Windows Server AD と DNS をハイブ
 |IP アドレス  <br/> |静的 IP アドレスを使用して仮想ネットワークを構成し、ドメイン コントローラーの構成後にこれらのアドレスを仮想ネットワーク内の仮想マシンに割り当てます。  <br/> |
    
 > [!IMPORTANT]
-> Active Directory を Azure で展開する前に、「[Azure の仮想マシンでの Windows Server Active Directory のデプロイ ガイドライン](https://go.microsoft.com/fwlink/p/?linkid=392681)」をご覧ください。ご使用のソリューションで別のアーキテクチャまたは構成設定が必要かどうかを判断するのに役立ちます。 
+> Active Directory を Azure で展開する前に、「[Azure の仮想マシンでの Windows Server Active Directory のデプロイ ガイドライン](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)」をご覧ください。ご使用のソリューションで別のアーキテクチャまたは構成設定が必要かどうかを判断するのに役立ちます。 
   
 ## <a name="add-the-sharepoint-farm"></a>SharePoint ファームの追加
 
@@ -219,10 +219,8 @@ SharePoint ファームの各層に可用性セットを追加すると、実装
   
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/solution-architecture-center.md)
+[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)
   
 [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
 [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
-
-

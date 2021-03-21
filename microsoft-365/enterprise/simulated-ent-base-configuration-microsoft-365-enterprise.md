@@ -17,57 +17,57 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: このテストラボガイドを使用して、エンタープライズ向けの Microsoft 365 用にシミュレートされたエンタープライズテスト環境を作成します。
-ms.openlocfilehash: e66ec8c48e309daeb15aad5fcc475edcb2b8bb35
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+description: このテスト ラボ ガイドを使用して、Microsoft 365 for enterprise 用のシミュレートされたエンタープライズ テスト環境を作成します。
+ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487662"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926046"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>シミュレートされたエンタープライズ基本構成
 
-*このテストラボガイドは、Microsoft 365 for enterprise および Office 365 エンタープライズテスト環境の両方で使用できます。*
+*このテスト ラボ ガイドは、Microsoft 365 for enterprise と 365 Enterprise テストOffice両方に使用できます。*
 
-この記事では、次のものを含む、Microsoft 365 for enterprise の簡略化された環境を作成する方法について説明します。
+この記事では、以下を含む Microsoft 365 for enterprise 用の簡略化された環境を作成する方法について説明します。
 
 - Microsoft 365 E5 の試用版または有料サブスクリプション。
-- インターネットに接続された、シンプルな組織イントラネット。 Azure 仮想ネットワーク上の3つの仮想マシン (DC1、CLIENT1、および CLIENT1) で構成されます。
+- Azure 仮想ネットワーク上の 3 つの仮想マシン (DC1、APP1、および CLIENT1) で構成される、インターネットに接続された簡略化された組織イントラネット。
  
 ![シミュレートされたエンタープライズ基本構成](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-簡単なテスト環境を作成するには、次の2つのフェーズが必要です。
+簡略化されたテスト環境の作成には、次の 2 つのフェーズがあります。
 - [フェーズ 1: シミュレートされたイントラネットを作成する](#phase-1-create-a-simulated-intranet)
 - [フェーズ 2: Microsoft 365 E5 サブスクリプションを作成する](#phase-2-create-your-microsoft-365-e5-subscription)
 
-結果として得られた環境を使用して、 [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise) の機能を、追加の [テストラボガイド](m365-enterprise-test-lab-guides.md) または独自にテストすることができます。
+結果の環境を使用して[、Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise)の機能をテストし[](m365-enterprise-test-lab-guides.md)、追加のテスト ラボ ガイドを使用するか、独自にテストできます。
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Microsoft 365 for enterprise のテストラボガイドスタックに含まれるすべての記事のビジュアルマップについては、「 [microsoft 365 for enterprise のテストラボガイドスタック](../downloads/Microsoft365EnterpriseTLGStack.pdf)」を参照してください。
+> Microsoft 365 for enterprise Test Lab Guide スタックのすべての記事へのビジュアル マップについては [、「Microsoft 365 for enterprise Test Lab Guide Stack」を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>フェーズ 1: シミュレートされたイントラネットを作成する
 
-このフェーズでは、Active Directory ドメインサービス (AD DS) ドメインコントローラー、アプリケーションサーバー、およびクライアントコンピューターを含む、Azure インフラストラクチャサービスでシミュレートされたイントラネットを構築します。
+このフェーズでは、Active Directory ドメイン サービス (AD DS) ドメイン コントローラー、アプリケーション サーバー、およびクライアント コンピューターを含むシミュレートされたイントラネットを Azure インフラストラクチャ サービスに構築します。
 
-ハイブリッド id およびその他の機能を構成してデモンストレーションするには、これらのコンピューターを追加 [の Microsoft 365 for enterprise のテストラボガイド](m365-enterprise-test-lab-guides.md) に使用します。
+これらのコンピューターは、 [追加の Microsoft 365 for](m365-enterprise-test-lab-guides.md) enterprise Test Lab Guides で使用して、ハイブリッド ID などの機能を構成およびデモンストレーションします。
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>方法 1: Azure Resource Manager テンプレートを使用して、シミュレートされたイントラネットを構築する
 
-この方法では、Azure Resource Manager テンプレートを使用して、シミュレートされたイントラネットを構築します。 Azure リソースマネージャーテンプレートには、Azure ネットワークインフラストラクチャ、仮想マシン、およびそれらの構成を作成するためのすべての手順が含まれています。
+このメソッドでは、Azure Resource Manager テンプレートを使用してシミュレートされたイントラネットを構築します。 Azure Resource Manager テンプレートには、Azure ネットワーク インフラストラクチャ、仮想マシン、およびそれらの構成を作成する手順すべてが含まれている。
 
-テンプレートを展開する前に、 [テンプレートの README ページ](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) に目を通し、次の情報を準備しておく必要があります。
+テンプレートを展開する前に、テンプレート [の README ページ](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) を読んで、次の情報を準備してください。
 
-- テスト環境のパブリック DNS ドメイン名 (testlab. \<*your public domain*> )。 この名前は、[**カスタム展開**] ページの [**ドメイン名**] フィールドに入力します。
+- テスト環境DNS ドメイン一般ユーザー名 (testlab. \<*your public domain*> )。 この名前は、[カスタム展開] ページ **の [ドメイン名** ] **フィールドに入力** します。
 - 仮想マシンのパブリック IP アドレスの URL の DNS ラベル プレフィックス。[**カスタム デプロイ**] ページの [**DNS ラベル プレフィックス**] フィールドにこのラベルを入力する必要があります。
 
-指示に従って読み終えたら、[テンプレートの README ページ](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems)にある [ **Azure に展開**する] を選択して開始します。
+手順を読んだら、テンプレートの [README](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems)ページで **[Azure** に展開する] を選択して開始します。
 
 >[!Note]
->Azure Resource Manager テンプレートによって作成されたシミュレートされたイントラネットには、Azure の有料サブスクリプションが必要です。
+>Azure Resource Manager テンプレートによって構築されたシミュレートされたイントラネットには、有料の Azure サブスクリプションが必要です。
 
-テンプレートが完成すると、構成は次のようになります。
+テンプレートが完了すると、構成は次のように表示されます。
 
 ![Azure インフラストラクチャ サービスでのシミュレートされたイントラネット](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
@@ -79,12 +79,12 @@ Azure インフラストラクチャの要素を作成する作業を、PowerShe
 
 #### <a name="step-1-create-dc1"></a>ステップ 1: DC1 を作成する
 
-この手順では、Azure 仮想ネットワークを作成し、DC1 (AD DS ドメインのドメインコントローラーである仮想マシン) を追加します。
+この手順では、Azure 仮想ネットワークを作成し、DS ドメインのドメイン コントローラーである DC1 をADします。
 
 最初に、ローカル コンピューターで Windows PowerShell コマンド プロンプトを起動します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure の PowerShell コマンドレットを使う](/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 次のコマンドを使用して Azure アカウントにログインします。
   
@@ -98,7 +98,7 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-Azure サブスクリプションを設定します。 二重引用符で囲まれたすべての要素 ("<" と ">") が正しい名前に置き換えられます。
+Azure サブスクリプションを設定します。 角かっこ ("<" と ">" を含む引用符内のすべてを正しい名前に置き換えてください。
   
 ```powershell
 $subscr="<subscription name>"
@@ -111,7 +111,7 @@ Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-これらのコマンドを使用して、新しいリソース グループを作成します。 二重引用符で囲まれたすべての要素を正しい名前で置き換えます。
+これらのコマンドを使用して、新しいリソース グループを作成します。 角かっこを含む引用符内のすべてを正しい名前に置き換える。
   
 ```powershell
 $rgName="<resource group name>"
@@ -119,7 +119,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-次に、シミュレートされたエンタープライズ環境の企業ネットワークサブネットをホストする TestLab 仮想ネットワークを作成し、ネットワークセキュリティグループで保護します。 リソースグループの名前を入力し、ローカルコンピューターの PowerShell コマンドプロンプトで次のコマンドを実行します。
+次に、シミュレートされたエンタープライズ環境の企業ネットワーク サブネットをホストする TestLab 仮想ネットワークを作成し、ネットワーク セキュリティ グループで保護します。 リソース グループの名前を入力し、ローカル コンピューターの PowerShell コマンド プロンプトでこれらのコマンドを実行します。
   
 ```powershell
 $rgName="<name of your new resource group>"
@@ -160,23 +160,23 @@ DC1 のローカル管理者アカウントのユーザー名とパスワード�
   
 次に、DC1 仮想マシンに接続します。
   
-1. [Azure portal](https://portal.azure.com)で、[**リソースグループ**] を選択し、***新しいリソースグループの名前*** > <**DC1**  >  **Connect**> > します。
+1. Azure portal [で、[リソース](https://portal.azure.com)グループ] を選択 > <新しいリソース グループ _  dc1 Connect> > _ **名を指定**  >  **します**。
     
-2. [開く] ウィンドウで、[ **RDP ファイルのダウンロード**] を選択します。 ダウンロードされた DC1 ファイルを開き、[ **接続**] を選択します。
+2. 開いているウィンドウで、[RDP ファイルのダウンロード **] を選択します**。 ダウンロードした DC1.rdp ファイルを開き、[接続] を **選択します**。
     
 3. DC1 のローカル管理者アカウント名を指定します。
     
    - Windows 7 の場合:
     
-     [ **Windows セキュリティ** ] ダイアログボックスで、[ **別のアカウントを使用する**] を選択します。 [**ユーザー名**] に、「 **DC1 \\ ** < *local administrator account name*>」と入力します。
+     [Windows セキュリティ **] ダイアログ ボックスで** 、[別のアカウントを **使用する] を選択します**。 [**ユーザー名] に****、「DC1 \\** ローカル管理者アカウント名」と < *入力>。*
     
    - Windows 8 または Windows 10 の場合:
     
-     [ **Windows セキュリティ** ] ダイアログボックスで、[ **その他のオプション**] を選択し、[ **別のアカウントを使用**する] を選択します。 [**ユーザー名**] に、「 **DC1 \\ ** < *local administrator account name*>」と入力します。
+     **[Windows** セキュリティ] ダイアログ ボックスで、[その **他の選択肢**] を選択し、[別のアカウントを使用 **する] を選択します**。 [**ユーザー名] に****、「DC1 \\** ローカル管理者アカウント名」と < *入力>。*
     
-4. [ **パスワード**] にローカル管理者アカウントのパスワードを入力し、[ **OK]** を選択します。
+4. [ **パスワード]** で、ローカル管理者アカウントのパスワードを入力し **、[OK] を選択します**。
     
-5. メッセージが表示されたら、[ **はい]** を選択します。
+5. プロンプトが表示されたら、[はい] **を選択します**。
     
 次に、DC1 の管理者レベルの Windows PowerShell コマンド プロンプトで次のコマンドを使用して、新しいボリュームとして別のデータ ディスク (ドライブ文字 F:) を追加します。
   
@@ -184,7 +184,7 @@ DC1 のローカル管理者アカウントのユーザー名とパスワード�
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-次に **testlab.**\<*your public domain*> ドメインのドメイン コントローラーおよび DNS サーバーとして DC1 を構成します。 パブリックドメイン名を指定し、山形かっこを削除してから、DC1 上の管理者レベルの Windows PowerShell コマンドプロンプトで次のコマンドを実行します。
+次に **testlab.**\<*your public domain*> ドメインのドメイン コントローラーおよび DNS サーバーとして DC1 を構成します。 パブリック ドメイン名を指定し、角かっこを削除してから、DC1 の管理者レベルのコマンド プロンプトWindows PowerShell実行します。
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -197,23 +197,23 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 の再起動後に、DC1 仮想マシンに再接続します。
   
-1. [Azure portal](https://portal.azure.com)で、リソース*グループ名* > <[**リソースグループ**] を選択し> > **DC1**Connect] をクリックし  >  **Connect**ます。
+1. Azure portal [で、[リソース](https://portal.azure.com)グループ]**を選択** > <**DC1** Connect の> > をクリック  >  **します**。
     
-2. ダウンロードされた DC1 ファイルを実行し、[ **接続**] を選択します。
+2. ダウンロードされた DC1.rdp ファイルを実行し、[接続] を **選択します**。
     
-3. [ **Windows セキュリティ**] で、[ **別のアカウントを使用する**] を選択します。 [**ユーザー名**] に、「 **testlab \\ ** < *ローカル管理者アカウント名*>」と入力します。
+3. **Windows セキュリティで、[別** のアカウントを **使用する] を選択します**。 [**ユーザー名] に****、「TESTLAB \\** ローカル管理者アカウント < *名」と入力>。*
     
-4. [ **パスワード** ] ボックスに、ローカル管理者アカウントのパスワードを入力し、[ **OK]** を選択します。
+4. [パスワード **] ボックス** に、ローカル管理者アカウントのパスワードを入力し **、[OK] を選択します**。
     
-5. メッセージが表示されたら、[ **はい]** を選択します。
+5. プロンプトが表示されたら、[はい] **を選択します**。
     
-次に、TESTLAB ドメインメンバーコンピューターにサインインするときに使用する Active Directory のユーザーアカウントを作成します。 管理者レベルの Windows PowerShell コマンド プロンプトで、次のコマンドを実行します。
+次に、TESTLAB ドメイン メンバー コンピューターにサインインするときに使用するユーザー アカウントを Active Directory に作成します。 管理者レベルの Windows PowerShell コマンド プロンプトで、次のコマンドを実行します。
   
 ```powershell
 New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password" -assecurestring) -name "User1" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
 
-このコマンドでは、User1 アカウントのパスワードを入力するよう求められることに注意してください。 このアカウントは、すべての TESTLAB ドメインメンバーコンピューターのリモートデスクトップ接続に使用されるので、強力なパスワードを選択します。 User1 アカウントのパスワードを記録し、セキュリティで保護された場所に保管します。
+このコマンドでは、User1 アカウントのパスワードを入力するよう求められることに注意してください。 このアカウントは、すべての TESTLAB ドメイン メンバー コンピューターのリモート デスクトップ接続に使用されます。そのため、強力なパスワードを選択します。 User1 アカウントのパスワードを記録し、セキュリティで保護された場所に保管します。
   
 次に、ドメイン、エンタープライズ、およびスキーマ管理者として新しい User1 のアカウントを構成します。管理者レベルの Windows PowerShell コマンド プロンプトで、次のコマンドを実行します。
   
@@ -234,7 +234,7 @@ DC1 とのリモート デスクトップ セッションを終了し、TESTLAB\
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ```
 
-現在の構成は次のようになります。
+現在の構成は次のように表示されます。
   
 ![シミュレートされたエンタープライズ基本構成のステップ 1](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
@@ -271,7 +271,7 @@ Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
-[ **コンピューターの追加** ] コマンドを実行した後、testlab \\ User1 のドメインアカウントの資格情報を指定する必要があることに注意してください。
+**Add-Computer** コマンドを実行した後で、TESTLAB User1 ドメイン アカウント資格情報 \\ を指定する必要があります。
   
 APP1 の再起動後に、TESTLAB\\User1 のアカウントを使用して接続し、管理者レベルの Windows PowerShell コマンド プロンプトを開きます。
   
@@ -289,7 +289,7 @@ Write-Output "This is a shared file." | out-file c:\files\example.txt
 New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 ```
 
-現在の構成は次のようになります。
+現在の構成は次のように表示されます。
   
 ![シミュレートされたエンタープライズ基本構成のステップ 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -300,7 +300,7 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 > [!NOTE]  
 > 次のコマンド セットでは、Windows Server 2016 Datacenter を実行する CLIENT1 を作成します。これは、すべての Azure サブスクリプションのタイプに対して実行できます。Visual Studio ベースの Azure サブスクリプションがある場合は、[Azure portal](https://portal.azure.com) で、Windows 10 を実行する CLIENT1 を作成できます。
   
-CLIENT1 用の Azure 仮想マシンを作成するには、リソースグループの名前を入力して、ローカルコンピューターのコマンドプロンプトで次のコマンドを実行します。
+CLIENT1 用の Azure Virtual Machine を作成するには、リソース グループの名前を入力し、ローカル コンピューターのコマンド プロンプトでこれらのコマンドを実行します。
   
 ```powershell
 $rgName="<resource group name>"
@@ -335,25 +335,25 @@ CLIENT1 の再起動後に、TESTLAB\\User1 のアカウント名とパスワー
   
 次に、CLIENT1 から APP1 の Web リソースおよびファイル共有リソースにアクセスできることを確認します。
   
-1. サーバーマネージャーのツリーウィンドウで、[ **ローカルサーバー**] を選択します。
+1. サーバー マネージャーのツリー ウィンドウで、[ローカル サーバー] **を選択します**。
     
-2. [ **CLIENT1 のプロパティ**] で、[ **IE セキュリティ強化の構成**] の横に**ある**[オン] を選択します。
+2. [ **クライアント 1 のプロパティ] で**、[IE **拡張** セキュリティ構成] の横にある **[オン] を選択します**。
     
-3. [ **Internet Explorer セキュリティ強化の構成**] で、[**管理者**と**ユーザー**の場合は**オフ**] を選択し、[ **OK]** を選択します。
+3. [**セキュリティInternet Explorer構成] で**、[管理者とユーザー]で[**オフ**] を選択し **、[OK] を選択します**。
     
-4. [スタート] 画面で、[ **Internet Explorer**] を選択し、[ **OK]** を選択します。
+4. [スタート] 画面で、[設定] **をInternet Explorer** し **、[OK] を選択します**。
     
-5. アドレスバーに「 **http<span>://</span>**:」と入力し、enter \<*your public domain name*> **/** キーを押します**Enter**。 APP1 の既定のインターネット インフォメーション サービスの Web ページが表示されます。
+5. アドレス バーに http **<span>://</span>app1.testab と入力** し \<*your public domain name*> **/** **、Enter** キーを押します。 APP1 の既定のインターネット インフォメーション サービスの Web ページが表示されます。
     
-6. デスクトップのタスクバーで、[エクスプローラー] アイコンを選択します。
+6. デスクトップ タスク バーで、[エクスプローラー] アイコンを選択します。
     
-7. アドレスバーに「 ** \\ \\ \\ ファイル**」**と入力し、enter キーを**押します。 フォルダー ウィンドウにファイルの共有フォルダーのコンテンツが表示されます。
+7. アドレス バーに **\\ \\ app1 \\ Files** と入力し **、Enter** キーを押します。 フォルダー ウィンドウにファイルの共有フォルダーのコンテンツが表示されます。
     
 8. **[ファイル]** の共有フォルダー ウィンドウで、**[Example.txt]** ファイルをダブルクリックします。Example.txt ファイルのコンテンツが表示されます。
     
 9. **[example.txt - メモ帳]** と **[ファイル]** の共有フォルダーのウィンドウを閉じます。
     
-現在の構成は次のようになります。
+現在の構成は次のように表示されます。
   
 ![シミュレートされたエンタープライズ基本構成のステップ 3](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
@@ -367,7 +367,7 @@ CLIENT1 の再起動後に、TESTLAB\\User1 のアカウント名とパスワー
 
 - ライセンス数の少ない Microsoft 365 E5 の個別の運用サブスクリプションを使用する。
 
-  これは追加の費用ですが、有効期限が切れない正常なテスト環境があることが保証されます。これで、機能、構成、およびシナリオを試すことができます。 概念実証、同僚と管理、およびアプリケーション開発とテストのために、長期間にわたって同じテスト環境を使用することができます。 この方法をお勧めします。
+  これは追加のコストですが、有効期限が切れない作業テスト環境が確保されます。その中で、機能、構成、シナリオを試してみてください。 概念実証、ピアと管理へのデモンストレーション、アプリケーションの開発とテストには、長期的に同じテスト環境を使用できます。 これは推奨される方法です。
 
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 試用版サブスクリプションにサインアップする
 
@@ -379,13 +379,13 @@ Azure portal から、CORP\User1 アカウントを使用して CLIENT1 に接�
 
 #### <a name="using-an-office-365-e5-test-environment"></a>Office 365 E5 のテスト環境を使用する
 
-Office 365 テスト環境のみが必要な場合は、この記事の残りの部分を読む必要はありません。
+365 テスト環境Office必要な場合は、この記事の残りの部分を読む必要があります。
 
-Microsoft 365 と Office 365 の両方に適用されるその他のテストラボガイドについては、「 [microsoft 365 for Enterprise Test Lab ガイド](m365-enterprise-test-lab-guides.md)」を参照してください。
+Microsoft 365 と Office 365 の両方に適用される追加のテスト ラボ ガイドについては [、「Microsoft 365 for enterprise Test Lab Guides」を参照してください](m365-enterprise-test-lab-guides.md)。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Microsoft 365 E5 の試用版サブスクリプションを追加する
 
-Microsoft 365 E5 試用版サブスクリプションを追加し、ライセンスを使用してユーザーアカウントを構成するには、「 [フェーズ 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) の軽量な基本構成テストラボガイド」の手順を実行します。
+Microsoft 365 E5 試用版サブスクリプションを追加し、ライセンスを使用してユーザー アカウントを構成するには、「軽量基本構成テスト ラボ ガイド」のフェーズ [3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) の手順を実行します。
 
   
 ## <a name="results"></a>結果
@@ -396,11 +396,11 @@ Microsoft 365 E5 試用版サブスクリプションを追加し、ライセン
 - すべての適切なユーザー アカウントが Microsoft 365 E5 を使用できるようになります。
 - シミュレートおよび簡略化されたイントラネット。
     
-最終的な構成は次のようになります。
+最終的な構成は次のように表示されます。
   
 ![シミュレートされたエンタープライズ基本構成のフェーズ 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-これで、 [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise)の追加機能を試す準備ができました。
+これで、エンタープライズ向け [Microsoft 365 の追加機能を試す準備ができました](https://www.microsoft.com/microsoft-365/enterprise)。
   
 ## <a name="next-steps"></a>次の手順
 
@@ -416,4 +416,4 @@ Microsoft 365 E5 試用版サブスクリプションを追加し、ライセン
 
 [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[エンタープライズドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 組織の有料サブスクリプションに含まれる、Azure Active Directory にアクセスする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5bc1c57c0c40df03d27471aafd222908ba9d5887
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528153"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925453"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>無料の Azure Active Directory Domain Services サブスクリプションを使用する
 
@@ -48,8 +48,8 @@ ms.locfileid: "46528153"
 
 ## <a name="more-information"></a>詳細情報
 
-- 無料の Azure Active Directory サブスクリプションには、サインイン アクティビティのレポートは含まれません。 (データ侵害の際に役立つ可能性がある) サインイン アクティビティを記録するには、Azure Active Directory Premium サブスクリプションが必要です。 詳細については、[Azure AD がデータを保存する期間](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)を参照してください。
+- 無料の Azure Active Directory サブスクリプションには、サインイン アクティビティのレポートは含まれません。 (データ侵害の際に役立つ可能性がある) サインイン アクティビティを記録するには、Azure Active Directory Premium サブスクリプションが必要です。 詳細については、[Azure AD がデータを保存する期間](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)を参照してください。
 
 - Microsoft 365 管理センターから **Azure Active Directory** 管理センターにアクセスすることもできます。 Microsoft 365 管理センターの左側のナビゲーションウィンドウで、[**管理センター**]、\>[**Azure Active Directory**] の順にクリックします。
 
-- ユーザーとグループの管理や、その他のディレクトリ管理タスクの実行の詳細については、「[Azure AD Directory の管理](https://docs.microsoft.com/azure/active-directory/active-directory-administer)」を参照してください。
+- ユーザーとグループの管理や、その他のディレクトリ管理タスクの実行の詳細については、「[Azure AD Directory の管理](/azure/active-directory/active-directory-administer)」を参照してください。

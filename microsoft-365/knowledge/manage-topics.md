@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 3d083537f3a9337d88d63861e0bf66867f558aba
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 2443319d254130b38bb1047a633c85c160eadd8c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454007"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926002"
 ---
 # <a name="manage-topics-in-the-topic-center"></a>トピック センターでトピックを管理する 
 
@@ -47,12 +47,12 @@ ms.locfileid: "50454007"
 > [!Note] 
 > [トピックの管理] ページでは、各ナレッジ マネージャーは、トピックのファイルとページにアクセスできるトピックのみを表示できます。 これは、[提案済み]、[確認済み]、[削除済み]、および [発行済み] の各タブに表示されるトピックに反映されます。 ただし、このトピックの数は、組織内の合計カウントを示します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 トピック センターでトピックを管理するには、次の必要があります。
 - Viva Topics ライセンスを持っている。
 
-- [トピックを [**管理できるユーザー] 権限を持**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) つ。 ナレッジ管理者は、ビバ トピックのアクセス許可設定でユーザーにこのアクセス許可を付与できます。 
+- [トピックを [**管理できるユーザー] 権限を持**](./topic-experiences-user-permissions.md) つ。 ナレッジ管理者は、ビバ トピックのアクセス許可設定でユーザーにこのアクセス許可を付与できます。 
 
 トピックを管理できるユーザー権限がない限り、トピック センターの [トピックの管理] ページ **を表示** することはできません。
 
@@ -111,8 +111,4 @@ ms.locfileid: "50454007"
 ## <a name="published-topics"></a>発行済みトピック
 公開されたトピックは編集され、特定の情報がページに遭遇したユーザーに常に表示されます。 手動で作成したトピックもここに示します。
 
-   ![トピックの管理](../media/knowledge-management/manage-topics-new.png) </br> 
-
-
-
-
+   ![トピックの管理](../media/knowledge-management/manage-topics-new.png) </br>

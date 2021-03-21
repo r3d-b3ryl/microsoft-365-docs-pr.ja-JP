@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 管理センターでのネットワーク接続の概要 (プレビュー)
-ms.openlocfilehash: 159edf6f95910625c3f924d02c8307d681164df7
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454243"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926098"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センターのネットワーク接続 (プレビュー)
 
@@ -97,7 +97,7 @@ Microsoft 365 管理センターには、Microsoft 365 テナントから収集�
 
 ## <a name="how-we-can-solve-these-challenges"></a>これらの課題を解決する方法
 
-企業は、Office 365 接続の原則に従い、Microsoft [365 管理センターの](https://aka.ms/pnc) ネットワーク接続機能を使用することで、一般的なユーザー エクスペリエンスを向上し、環境を保護できます。 ほとんどの場合、これらの一般的な原則に従って、エンド ユーザーの待機時間、サービスの信頼性、Microsoft 365 の全体的なパフォーマンスに大きなプラスの影響を与えます。
+企業は、Office 365 接続の原則に従い、Microsoft [365 管理センターの](./microsoft-365-network-connectivity-principles.md) ネットワーク接続機能を使用することで、一般的なユーザー エクスペリエンスを向上し、環境を保護できます。 ほとんどの場合、これらの一般的な原則に従って、エンド ユーザーの待機時間、サービスの信頼性、Microsoft 365 の全体的なパフォーマンスに大きなプラスの影響を与えます。
 
 Microsoft は、大規模なエンタープライズ顧客向け Microsoft 365 のネットワーク パフォーマンスの問題を調査する必要が生じ、顧客のネットワーク境界インフラストラクチャに関連する根本原因が頻繁に発生する場合があります。 顧客ネットワーク境界の問題の一般的な根本原因が見つかった場合、それを識別する単純なテスト測定値を特定します。 特定の問題を識別する測定しきい値を持つテストは、任意の場所で同じ測定値をテストし、この根本原因が存在するかどうかを確認し、それを管理者とネットワークインサイトとして共有することができます。
 

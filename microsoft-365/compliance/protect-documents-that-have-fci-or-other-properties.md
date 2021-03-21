@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止 (DLP) ポリシーを使用して、プロパティを持つドキュメントをサード パーティ製システムから保護する方法について学習します。
-ms.openlocfilehash: 971d2a1dd4f69f7bbd2598e31fc99c9c5cfe1eda
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2d66a0a863b2076044a5c1d1cb9c3d4e8c29a186
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423800"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925563"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
 
@@ -55,7 +55,7 @@ DLP ポリシーで Windows Server FCI プロパティまたは他のプロパ�
 
 DLP は検索クローラーを使用してサイトの機密情報を識別および分類し、その機密情報を検索インデックスの安全な部分に格納するために重要です。 ドキュメントを 365 から 365 にアップロードOffice SharePoint は、ドキュメントのプロパティに基づいてクロールされたプロパティを自動的に作成します。 ただし、DLP ポリシーで FCI または他のプロパティを使用するには、クロールされたプロパティを管理プロパティにマップして、そのプロパティを持つコンテンツをインデックスに保持する必要があります。
 
-検索プロパティと管理プロパティの詳細については [、「SharePoint Online で検索スキーマを管理する」を参照してください](https://go.microsoft.com/fwlink/p/?LinkID=627454)。
+検索プロパティと管理プロパティの詳細については [、「SharePoint Online で検索スキーマを管理する」を参照してください](/sharepoint/manage-search-schema)。
 
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>手順 1: 必要なプロパティが含まれるドキュメントを Office 365 にアップロードする
 
@@ -105,9 +105,9 @@ DLP は検索クローラーを使用してサイトの機密情報を識別お�
 
 Document プロパティ **にこれらの** 値が含まれている条件は、セキュリティ コンプライアンス センターの UI では一時的に使用できませんが、PowerShell を使用してこの条件 &amp; を使用できます。 コマンドレットを使用して DLP ポリシーを操作し、パラメーターと一緒にコマンドレットを使用して、Document プロパティにこれらの値が含まれる条件  `New\Set\Get-DlpCompliancePolicy`  `New\Set\Get-DlpComplianceRule`  `ContentPropertyContainsWords` **を追加できます**。
 
-これらのコマンドレットの詳細については [、「Security Compliance &amp; Center コマンドレット」を参照してください](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)。
+これらのコマンドレットの詳細については [、「Security Compliance &amp; Center コマンドレット」を参照してください](/powershell/exchange/exchange-online-powershell)。
 
-1. [リモート PowerShell を使用 &amp; してセキュリティ コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [リモート PowerShell を使用 &amp; してセキュリティ コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell)
 
 2. を使用してポリシーを作成します  `New-DlpCompliancePolicy` 。
 
@@ -125,7 +125,7 @@ Document プロパティ **にこれらの** 値が含まれている条件は�
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows Server FCI には、この例で使用される個人を特定できる情報を含む、多くの組み込みプロパティが含まれています。 プロパティごとに使用できる値は、組織ごとに異なる場合があります。 ここで **使用する高** 値 **、中** 程度値、 **および低** 値は、一例です。 組織では、Windows Server ベースのファイル サーバー上のファイル サーバー リソース マネージャーで、可能な値を持つ Windows Server FCI 分類プロパティを表示できます。 詳細については、「分類プロパティを [作成する」を参照してください](https://go.microsoft.com/fwlink/p/?LinkID=627456)。
+   Windows Server FCI には、この例で使用される個人を特定できる情報を含む、多くの組み込みプロパティが含まれています。 プロパティごとに使用できる値は、組織ごとに異なる場合があります。 ここで **使用する高** 値 **、中** 程度値、 **および低** 値は、一例です。 組織では、Windows Server ベースのファイル サーバー上のファイル サーバー リソース マネージャーで、可能な値を持つ Windows Server FCI 分類プロパティを表示できます。 詳細については、「分類プロパティを [作成する」を参照してください](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))。
 
 完了したら、両方とも Document プロパティを使用する 2 つの新しいルールにこれらの値 **の条件が含まれている必要** があります。 この条件は UI には表示されませんが、他の条件、アクション、および設定が表示されます。
 
@@ -142,7 +142,7 @@ Document プロパティ **にこれらの** 値が含まれている条件は�
 > [!CAUTION]
 > サイトを再インデックス付けすると、検索システムで多大な負荷が発生することがあります。 シナリオで絶対に必要な場合を限り、サイトのインデックスを再設定しない。
 
-詳細については、「[サイト、ライブラリ、またはリストのクロールおよび再インデックスの手動要求](https://go.microsoft.com/fwlink/p/?LinkID=627457)」を参照してください。
+詳細については、「[サイト、ライブラリ、またはリストのクロールおよび再インデックスの手動要求](/sharepoint/crawl-site-content)」を参照してください。
 
 ### <a name="reindex-a-site-optional"></a>サイトのインデックスを再作成する (オプション)
 
