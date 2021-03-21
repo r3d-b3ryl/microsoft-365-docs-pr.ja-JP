@@ -11,8 +11,9 @@
         - name: 優先するアカウントのセキュリティに関する推奨事項
           href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: ID とデバイスのアクセス構成
-      href: ./office-365-security/microsoft-365-policies-configurations.md
       items:
+        - name: 概要
+          href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: 事前に必要な作業
           href: ./office-365-security/identity-access-prerequisites.md
         - name: 共通 ID とデバイスのアクセス ポリシー
@@ -95,7 +96,7 @@
                   href: mtp/mtp-pilot-simulate.md
                 - name: 閉じて要約する
                   href: mtp/mtp-pilot-close.md
-        - name: 概要
+        - name: 作業の開始
           items:
             - name: 概要
               href: mtp/get-started.md
@@ -360,6 +361,8 @@
               href: ./mtp/overview-security-center.md
             - name: 脅威エクスプローラー (およびリアルタイムの検出)
               href: ./office-365-security/threat-explorer.md
+            - name: メール エンティティ ページ
+              href: ./office-365-security/mdo-email-entity-page.md
             - name: AIR の概要
               href: ./office-365-security/office-365-air.md
             - name: 自動調査と対応のしくみ
@@ -702,8 +705,8 @@
                 - name: スタンドアロン EOP で役割グループを管理する
                   href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 for Enterprise
-      href: 'https://docs.microsoft.com/microsoft-365/enterprise'
+      href: ../enterprise/index.yml
     - name: Microsoft 365 for Business
-      href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
+      href: ./index.yml
     - name: Microsoft 365 コンプライアンス
-      href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+      href: ../compliance/index.yml
