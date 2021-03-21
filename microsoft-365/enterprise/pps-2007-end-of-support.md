@@ -15,142 +15,142 @@ search.appverid:
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
-description: PerformancePoint Server 2007、ProClarity、および SharePoint Server 2007 がサポートの終了に達しました。 この記事を読むと、BI ソリューションのアップグレードの計画に役立ちます。
-ms.openlocfilehash: 4a13e6f8a40de78c0d98b03369b52a78899fc7a9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+description: PerformancePoint Server 2007、ProClarity、および SharePoint Server 2007 はサポートの終了に達しました。 この記事を読んで、BI ソリューションのアップグレードを計画する方法についてお読みください。
+ms.openlocfilehash: aa6adae24d78b6be72f17fd56c272b1293e6fcdc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519599"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927338"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 のサポート終了ロードマップ
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Office 2007 のサーバーとアプリケーションは、ビジネスインテリジェンス (BI) ソリューションの一部として使用される可能性のあるサーバーやアプリケーションを含む、サポートの最後まで到達しました。 次の表に、影響を受ける BI アプリケーションの一覧を示します。
+Office 2007 のサーバーとアプリケーションは、ビジネス インテリジェンス (BI) ソリューションの一部として使用している可能性があるサーバーやアプリケーションなど、サポートの最後に達しています。 次の表に、影響を受ける BI アプリケーションの一覧を示します。
   
-|**Microsoft BI アプリケーション**|**サポート終了日**|
+|**Microsoft BI アプリケーション**|**サポートが終了した日付**|
 |:-----|:-----|
-|ProClarity Analytics Server 6.3 Service Pack 3  <br/> ProClarity デスクトップ Professional 6.3  <br/> ProClarity SharePoint Viewer 6.3  <br/> |2017 年 7 月 11 日  <br/> |
+|ProClarity Analytics Server 6.3 Service Pack 3  <br/> ProClarity Desktop Professional 6.3  <br/> ProClarity SharePoint ビューアー 6.3  <br/> |2017 年 7 月 11 日  <br/> |
 |SharePoint Server 2007 Service Pack 3  <br/> |2017 年 10 月 10 日  <br/> |
 |PerformancePoint Server 2007 Service Pack 3  <br/> |2018 年 1 月 9 日  <br/> |
    
-詳細については、「 [Office 2007 サーバーおよびクライアントからのアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)」を参照してください。
+詳細については [、「2007 年](upgrade-from-office-2007-servers-and-products.md)のサーバーとクライアントからのアップグレードに役立Officeリソース」を参照してください。
   
-## <a name="what-does-end-of-support-mean"></a>*サポート終了の* 意味
+## <a name="what-does-end-of-support-mean"></a>サポート終了 *とはどういう意味* ですか?
 
-多くの Microsoft 製品、PerformancePoint Server 2007 SP3、ProClarity ソフトウェア、および SharePoint Server 2007 SP3 と同様に、Microsoft は新しい機能、バグ修正プログラム、およびセキュリティ更新プログラムを提供しています。 製品のライフサイクルは、通常、製品の最初のリリースから10年間続きます。 そのライフサイクルの終了は、製品のサポート終了と呼ばれます。 ProClarity、PerformancePoint Server、および SharePoint Server 2007 のサポートが終了すると、Microsoft は提供しなくなりました。
+ほとんどの Microsoft 製品と同様に、PerformancePoint Server 2007 SP3、ProClarity ソフトウェア、および SharePoint Server 2007 SP3 にはサポート ライフサイクルがあります。その間、Microsoft は新機能、バグ修正、およびセキュリティ更新プログラムを提供します。 製品のライフサイクルは、通常、製品の最初のリリースから 10 年間続く。 そのライフサイクルの終了は、製品のサポートの終了と呼ばれる。 ProClarity、PerformancePoint Server、および SharePoint Server 2007 がサポートの終了に達すると、Microsoft は次の機能を提供しなくなりました。
   
-- 発生する可能性のある問題のテクニカルサポート。
+- 発生する可能性のある問題に対するテクニカル サポート。
     
-- 検出された問題と、サーバーの安定性と有用性に影響する可能性のあるバグの修正。
+- 検出され、サーバーの安定性と使いやすさに影響を与える可能性がある問題のバグ修正。
     
-- 検出された脆弱性のセキュリティ修正プログラムによって、サーバーまたはアプリケーションがセキュリティ侵害に対して脆弱になる可能性があります。
+- 検出され、サーバーまたはアプリケーションがセキュリティ侵害に対して脆弱になる可能性がある脆弱性に対するセキュリティ修正。
     
 - タイム ゾーンの更新。
     
-ProClarity、SharePoint Server 2007 SP3、および PerformancePoint Server 2007 SP3 のインストールは、サポートが終了した場合でも引き続き実行されます。 ただし、これらのアプリケーションからできるだけ早く移行することを強くお勧めします。
+ProClarity、SharePoint Server 2007 SP3、および PerformancePoint Server 2007 SP3 のインストールは、サポートが終了した場合でも引き続き実行されます。 ただし、できるだけ早くこれらのアプリケーションから移行することを強く推奨します。
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-2007以降の Microsoft BI アプリケーションには多くの変更が加えられており、次の表に要約されているように、いくつかのオプションを考慮する必要があります。
+2007 以降、Microsoft BI アプリケーションには多くの変更が加え、次の表に示すいくつかのオプションを検討する必要があります。
   
-|**使用していた場合**|**次のオプションを参照してください...**|**次の点に注意してください。**|
+|**この ... を使用していた場合。**|**これらのオプションについて説明します。.**|**そして、これを念頭に置いて...**|
 |:-----|:-----|:-----|
-| PerformancePoint Server 2007 &amp; の監視分析機能 (次のものが含まれる)<br/>-PerformancePoint 監視サーバー <br/>-PerformancePoint ダッシュボードデザイナー<br/>-SharePoint Services のダッシュボードビューアー (PerformancePoint ダッシュボード、スコアカード、およびレポートのレンダリングに使用されます)<br/> |**ブラウザー内** の excel (クラウドまたはオンプレミス) 概要については、「 [Excel の BI 機能」および「Microsoft 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)」を参照してください。<br/><br/> **POWER BI** (クラウドまたはオンプレミス)。 概要については、「 [POWER BI とは](https://go.microsoft.com/fwlink/?linkid=841341)」を参照してください。 <br/><br/> **SQL Server Reporting Services** (オンプレミス)。 概要については、「 [SQL Server Reporting Services (SSRS): モバイルおよび改ページレポートを作成、展開、管理](https://go.microsoft.com/fwlink/?linkid=841342)する」を参照してください。 <br/><br/> **PerformancePoint Services** (オンプレミス)。 概要については、「 [PerformancePoint Services の新機能 (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343)」を参照してください。 <br/> |Excel は、オンライン (クラウドベース) またはオンプレミスのソリューションとして使用できます。 Excel では、多くのレポートとダッシュボードのニーズを満たすことができます。  <br/><br/> Power BI は、オンラインまたはオンプレミスのソリューションとして使用できます。 Power BI は、Microsoft 365 には含まれていません。 ただし、Power BI の無料使用を開始できます。 その後、データの使用状況とビジネスニーズに応じて、Microsoft 365 E5 を使用して Power BI Pro にアップグレードできます。<br/> <br/> Reporting Services と PerformancePoint Services は、どちらもオンプレミスのソリューションです。 <br/><br/> PerformancePoint Services は、SharePoint Server 2010、SharePoint Server 2013、および SharePoint Server 2016 で利用できます。 <br/> <br/> PerformancePoint Server 2007 で利用できる機能とレポートの種類の中には、Excel、Power BI、Reporting Services、PerformancePoint Services では使用できないものがあります。 利用可能な機能を確認して、ビジネスニーズに最適なソリューションを決定します。 <br/> |
-| ProClarity ソフトウェア (以下を含む)<br/>-ProClarity デスクトップ Professional<br/> -ProClarity Analytics Server<br/>-ProClarity SharePoint Viewer<br/> |**Microsoft パートナーと協力** して、お客様のニーズに最適なソリューションを特定します。 [Microsoft パートナーセンター](https://go.microsoft.com/fwlink/?linkid=841249)を参照してください。 <br/><br/> また、excel で excel をブラウザー、Power BI、SQL Server Reporting Services、または PerformancePoint Services で使用することを検討することもできます。  <br/> |ProClarity ソフトウェアの一部の機能は、Excel、Power BI、Reporting Services、PerformancePoint Services など、他の Microsoft 製品では利用できません。  <br/> |
-|SharePoint Server 2007 Kpi (MOSS Kpi とも呼ばれる)  <br/> |Excel **Services を使用した excel**。 概要については、「 [excel および Excel Services のビジネスインテリジェンス (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx)」を参照してください。 <br/> |Sharepoint Server 2007 を使用して作成された MOSS Kpi は、SharePoint Server 2010、SharePoint Server 2013、および SharePoint Server 2016 で使用できます。 ただし、新しい MOSS Kpi を作成することはできません。  <br/> |
-|Excel 2007  <br/> |**Excel** (クラウドまたはオンプレミス)。 概要については、「 [Excel および Office 365 の BI 機能](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)」を参照してください。 <br/><br/> **POWER BI** (クラウドまたはオンプレミス)。 概要については、「 [POWER BI とは](https://go.microsoft.com/fwlink/?linkid=841341)」を参照してください。 <br/> |Excel と Power BI はどちらも、さまざまなデータソースをサポートしており、組織のクラウドベースのソリューションとオンプレミスのソリューションを提供しています。  <br/> |
+| PerformancePoint Server 2007 Monitoring Analytics 機能( &amp; 以下を含む)<br/>- PerformancePoint 監視サーバー <br/>- PerformancePoint ダッシュボード デザイナー<br/>- ダッシュボード ビューアー (SharePoint Services (PerformancePoint ダッシュボード、スコアカード、レポートのレンダリングに使用)<br/> |**ブラウザー (クラウドまたは** オンプレミス) で Excel を使用する Excel。 概要については [、「Excel および Microsoft 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)の BI 機能」を参照してください。<br/><br/> **Power BI** (クラウドまたはオンプレミス)。 概要については [、「Power BI とは」を参照してください。](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Serverレポート サービス** (オンプレミス)。 概要については、「レポート サービス [(SSRS) SQL Server: モバイル](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports)レポートとページ分割されたレポートを作成、展開、および管理する」を参照してください。 <br/><br/> **PerformancePoint Services** (オンプレミス)。 概要については [、「What's new for PerformancePoint Services (SharePoint Server 2010)」を参照してください](/previous-versions/office/sharepoint-server-2010/ee661741(v=office.14))。 <br/> |Excel は、オンライン (クラウドベース) またはオンプレミス のソリューションとして利用できます。 多くのレポートとダッシュボードのニーズを Excel で満たすことができます。  <br/><br/> Power BI は、オンラインまたはオンプレミスのソリューションとして利用できます。 Power BI は Microsoft 365 には含まれていません。 ただし、無料で Power BI の使用を開始できます。 後で、データ使用量とビジネス ニーズに応じて、Microsoft 365 E5 を使用して Power BI Pro にアップグレードできます。<br/> <br/> Reporting Services と PerformancePoint Servicesは、両方ともオンプレミス ソリューションです。 <br/><br/> PerformancePoint Services SharePoint Server 2010、SharePoint Server 2013、および SharePoint Server 2016 で使用できます。 <br/> <br/> 2007 年から 2007 年PerformancePoint Server使用できる一部の機能とレポートの種類は、Excel、Power BI、Reporting Services、またはレポート サービスPerformancePoint Services。 利用可能な機能を確認して、ビジネス ニーズに最適なソリューションを判断します。 <br/> |
+| ProClarity ソフトウェア:<br/>- ProClarity デスクトップ プロフェッショナル<br/> - ProClarity Analytics Server<br/>- ProClarity SharePoint ビューアー<br/> |**Microsoft パートナーと一緒に** 、ニーズに最適なソリューションを特定します。 Microsoft パートナー [センターにアクセスします](https://go.microsoft.com/fwlink/?linkid=841249)。 <br/><br/> ブラウザー、Power BI、レポート サービス、またはレポート サービスで Excel を使用SQL Server検討PerformancePoint Services。  <br/> |ProClarity ソフトウェアの一部の機能は、Excel、Power BI、Reporting Services、およびレポート サービスなど、他の Microsoft 製品PerformancePoint Services。  <br/> |
+|SharePoint Server 2007 KPI (MOSS KPI とも呼ばれる)  <br/> |**Excel と Excel Services**。 概要については、「Excel and [Excel Services (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx)のビジネス インテリジェンス」を参照してください。 <br/> |SharePoint Server 2007 を使用して作成された MOSS KPI は、SharePoint Server 2010、SharePoint Server 2013、および SharePoint Server 2016 で使用できます。 ただし、新しい MOSS KPI は作成できない。  <br/> |
+|Excel 2007  <br/> |**Excel** (クラウドまたはオンプレミス)。 概要については、「Excel および [365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)の BI 機能Office参照してください。 <br/><br/> **Power BI** (クラウドまたはオンプレミス)。 概要については [、「Power BI とは」を参照してください。](https://go.microsoft.com/fwlink/?linkid=841341) <br/> |Excel と Power BI の両方で、さまざまなデータ ソースをサポートして、組織のクラウドベースとオンプレミスのソリューションを提供します。  <br/> |
    
 ### <a name="help-selecting-a-solution"></a>ソリューションの選択に関するヘルプ
 
-多くの BI 選択を利用できるようになると、どのオプションが最適かを判断するのが圧倒的なものになるかもしれません。 ヘルプを利用できるオンラインガイドが用意されています。 「 [Microsoft ビジネスインテリジェンス (BI) ツールを選択する」を参照して、分析とレポート作成を](https://go.microsoft.com/fwlink/?linkid=839877)行います。
+利用可能な BI の選択肢が非常に多い場合、最適なオプションを決定するには圧倒的に思えるかもしれません。 オンライン ガイドをご利用いただけます。 分析 [とレポート作成については、「Microsoft Business Intelligence (BI) ツールの選択」を参照してください](/sql/reporting-services/choosing-microsoft-business-intelligence-bi-tools-for-analysis-and-reporting)。
   
-### <a name="what-if-i-dont-upgrade-now"></a>今アップグレードしていない場合はどうすればよいですか。
+### <a name="what-if-i-dont-upgrade-now"></a>今すぐアップグレードしない場合は?
 
-すぐにアップグレードしないことを選択できます。 既存のサーバーとアプリケーションは引き続き実行されます。 しかし、サポートが終了したため、セキュリティ更新プログラムを含む、それ以上の更新プログラムは受信されません。 また、サーバーアプリケーションに問題が発生した場合は、Microsoft テクニカルサポートからサポートを受けることができなくなります。
+すぐにアップグレードしない選択が可能です。 既存のサーバーとアプリケーションは引き続き実行されます。 ただし、サポートが終了した後、セキュリティ更新プログラムを含むそれ以上の更新プログラムは受け取らない。 サーバー アプリケーションに問題がある場合は、Microsoft テクニカル サポートからヘルプを受け取る必要があります。
   
 ## <a name="how-do-i-plan-my-upgrade"></a>アップグレードを計画する方法
 
-アップグレードオプションを調査した後、次の手順として、アップグレード計画を準備します。 以下のセクションには、参考になる情報やその他のリソースが含まれています。 クラウドまたはオンプレミスの両方で機能する2つの主なオプションと、オンプレミスのみの2つのオプションがあります。
+アップグレード オプションを確認した後、次にアップグレード 計画を準備します。 以下のセクションには、情報と役立つその他のリソースが含まれます。 クラウドまたはオンプレミスの両方で動作する 2 つのオプションと、オンプレミス専用の 2 つを含む 4 つの主なオプションがあります。
   
 |**オプション**|**クラウドまたはオンプレミスの場合**|
 |:-----|:-----|
-|[SharePoint Server (オンプレミス) を含む Excel](#excel-with-sharepoint-server-on-premises) <br/> |Both/フォーム/データシート  <br/> |
+|[Excel with SharePoint Server (オンプレミス)](#excel-with-sharepoint-server-on-premises) <br/> |Both/フォーム/データシート  <br/> |
 |[Power BI](#use-power-bi-in-the-cloud-or-on-premises)<br/> |Both/フォーム/データシート  <br/> |
 |[レポート サービス](#use-reporting-services-on-premises) <br/> |オンプレミスのみ  <br/> |
 |[PerformancePoint Services](#use-performancepoint-services-on-premises) <br/> |オンプレミスのみ  <br/> |
    
-### <a name="use-excel-in-the-cloud-or-on-premises"></a>Excel を使用する (クラウドまたはオンプレミスの場合)
+### <a name="use-excel-in-the-cloud-or-on-premises"></a>Excel を使用する (クラウドまたはオンプレミス)
 
-Excel Services (SharePoint Server の *Excel Services* とも呼ばれます) では、コンピューターに excel がインストールされていない場合でも、ブラウザーウィンドウでブックを表示して使用できます。 Excel を使用して、レポート、スコアカード、およびダッシュボードを作成できます。 次に、ブラウザーで Excel を使用することができます。 Microsoft 365 または SharePoint Server on-premises の一部として SharePoint Online を使用しているかどうかにかかわらず、ブックを他のユーザーと共有します。 オンプレミスまたはクラウドに保存されているデータを使用することができます。これにより、さまざまなデータソースを使用できます。
+SharePoint Server の Excel Servicesとも呼ばれる Excel を使用すると、Excel がコンピューターにインストールされていない場合でも、ブラウザー ウィンドウでブックを表示および使用できます。 Excel を使用してレポート、スコアカード、ダッシュボードを作成できます。 次に、Microsoft 365 または SharePoint Server オンプレミスの一部として SharePoint Online を使用しているかに関係ない、ブラウザーで Excel を使用できる他のユーザーとブックを共有します。 オンプレミスまたはクラウドに保存されたデータを使用すると、さまざまなデータ ソースを使用できます。
   
-次の表では、excel を使用して SharePoint Server で Excel を使用することの主365な利点を比較します。 詳細は以下を参照してください。
+次の表は、Excel と Microsoft 365 を使用して Excel を SharePoint Server で使用する主な利点を比較しています。 詳細については、次の情報を参照してください。
   
-|**Microsoft 365 (クラウド) を使用した Excel**|**SharePoint Server (オンプレミス) を含む Excel**|
+|**Excel with Microsoft 365 (クラウド内)**|**Excel with SharePoint Server (オンプレミス)**|
 |:-----|:-----|
-|**最新の最大バージョンの Excel を取得** します。 Microsoft 365 では、最新バージョンの Excel を入手できます。これには、強力な新しいグラフの種類、グラフや表をすばやく簡単に作成する機能、およびより多くのデータソースのサポートが含まれます。 <br/> <br/> **セットアップがより簡単に** なりました。 Excel は Microsoft 365 for business に含まれています。そのため、お客様の側はあまり深くはありません。 サインアップしてサインインすると、オンプレミスのサーバーをアップグレードした場合よりも迅速かつ効率的に稼働することができます。 <br/> <br/> **ユーザーがブックにアクセスできる場所があり** ます。 ユーザーは、自分のコンピューター、スマートフォン、タブレットを使用して、どこからでもブックを安全に表示できます。 <br/> <br/> **他にもまだあります！** 「 [Excel および Office 365 の BI 機能](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)」を参照してください。 <br/> |**グローバル設定を管理し** ます。 SharePoint 管理者は、セキュリティ、負荷分散、セッション管理、ブックのキャッシュ、外部データ接続などのグローバル設定を指定できます。 <br/> <br/> **PerformancePoint services で Excel Services を使用することができ** ます。 SharePoint Server のインストールの一部として Excel Services と PerformancePoint Services を構成し、PerformancePoint ダッシュボードに Excel Services レポートを含めることができます。 <br/> <br/> **他にもまだあります！** 「 [Excel Services および Excel Services のビジネスインテリジェンス (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx)」を参照してください。 <br/> |
+|**Excel の最新の最大バージョンを取得します**。 Microsoft 365 では、強力な新しいグラフの種類、グラフとテーブルをすばやく簡単に作成する機能、より多くのデータ ソースのサポートを含む最新バージョンの Excel を取得できます。 <br/> <br/> **セットアップははるかに簡単です**。 Excel はビジネス向け Microsoft 365 に含まれているので、重い持ち上げはありません。 サインアップしてサインインすると、オンプレミス サーバーをアップグレードする場合よりも高速かつ効率的に起動して実行できるようになります。 <br/> <br/> **ユーザーは、どこでも自分のブックにアクセスできます**。 ユーザーは、コンピューター、スマートフォン、タブレットを使用して、どこにいてもブックを安全に表示できます。 <br/> <br/> **他にもまだあります！** Excel [および 365 の BI 機能Office参照してください](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)。 <br/> |**グローバル設定を管理します**。 SharePoint 管理者は、セキュリティ、負荷分散、セッション管理、ブックキャッシュ、外部データ接続などのグローバル設定を指定できます。 <br/> <br/> **このファイルは、Excel ServicesとPerformancePoint Servicesできます**。 SharePoint Server のインストールExcel Services、PerformancePoint Servicesレポートを構成し、PerformancePoint ダッシュボードにExcel Servicesレポートを含めさせることができます。 <br/> <br/> **他にもまだあります！** 「Excel [and Excel Services (SharePoint Server 2013)のビジネス インテリジェンス」を参照してください](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx)。 <br/> |
    
-#### <a name="excel-with-microsoft-365-in-the-cloud"></a>Microsoft 365 (クラウド) を使用した Excel
+#### <a name="excel-with-microsoft-365-in-the-cloud"></a>Excel with Microsoft 365 (クラウド内)
 
-Microsoft 365 に移行すると、最新のサービスとアプリケーション (Excel 2016 を含む) が使用できるようになります。 PerformancePoint Services は、Microsoft 365 では使用できません。そのため、PerformancePoint ダッシュボードのコンテンツを Excel ブックまたは他のレポートに置き換えます。 この記事では、Excel 2016 に新しい種類のグラフが多数含まれており、Excel で優れたダッシュボードを作成した方が、これまでよりも簡単になることをお勧めします。 そして、新機能が定期的に追加されます。 詳細については、「 [Excel 2016 For Windows の新機能](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)」を参照してください。
+Microsoft 365 に移行すると、Excel 2016 を含む最新のサービスとアプリケーションが提供されます。 PerformancePoint Services Microsoft 365 では使用できないので、PerformancePoint ダッシュボードのコンテンツを Excel ブックまたは他のレポートに置き換えます。 良いニュースは、Excel 2016 には新しいグラフの種類が多数含め、Excel で印象的なダッシュボードを作成する方がこれまで以上に簡単です。 また、新しい機能は定期的に追加されます。 詳細については [、「What's New in Excel 2016 for Windows」を参照してください](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)。
   
-また、50の座席または複数の Microsoft 365 を購入した場合は、Microsoft FastTrack のチームがセットアップに役立てることができます。 詳細については、 [Fasttrack](https://www.microsoft.com/fasttrack/microsoft-365)を参照してください。
+また、50 シート以上の Microsoft 365 を購入した場合は、Microsoft FastTrack チームがセットアップを支援できます。 詳細については [、「FastTrack」を参照してください](https://www.microsoft.com/fasttrack/microsoft-365)。
   
-#### <a name="excel-with-sharepoint-server-on-premises"></a>SharePoint Server (オンプレミス) を含む Excel
+#### <a name="excel-with-sharepoint-server-on-premises"></a>Excel with SharePoint Server (オンプレミス)
 
-新しいバージョンの SharePoint にアップグレードする場合は、次のように excel Services またはブラウザーで Excel を使用できます。
+SharePoint の新しいバージョンにアップグレードする場合は、次のように、Excel を Excel Servicesまたはブラウザーで使用できます。
   
 - SharePoint Server 2010 の Excel Services
     
 - SharePoint Server 2013 の Excel Services
     
-- Office Online Server の一部であり、SharePoint Server 2016 とは別にインストールされる Excel
+- SharePoint Server 2016 とは別にOfficeオンライン サーバーの一部である Excel
     
-SharePoint Server の新しいバージョンで PerformancePoint Services を構成し、それを Excel と組み合わせて使用することもできます。
+新しいバージョンPerformancePoint Services SharePoint Server でも構成し、Excel と共に使用できます。
   
-SharePoint のアップグレードオプションの詳細については、「 [Sharepoint Server 2007 のサポート終了ロードマップ](sharepoint-2007-end-of-support.md)」を参照してください。
+SharePoint アップグレード オプションの詳細については [、「SharePoint Server 2007 End of support Roadmap」を参照してください](sharepoint-2007-end-of-support.md)。
   
-Excel Services の詳細については、「 [Excel services の概要 (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841362)」を参照してください。
+詳細については、「Excel Services概要 [(SharePoint Server 2010 Excel Services」を参照してください](/previous-versions/office/sharepoint-server-2010/ee424405(v=office.14))。
   
-### <a name="use-power-bi-in-the-cloud-or-on-premises"></a>Power BI (クラウドまたはオンプレミス) を使用する
+### <a name="use-power-bi-in-the-cloud-or-on-premises"></a>Power BI を使用する (クラウドまたはオンプレミス)
 
-Power BI は、データを分析し、insights を共有するためのビジネス分析ツールのスイートです。 Power BI では、オンプレミスまたはオンラインのデータソースを使用して、対話型のレポートとダッシュボードを作成できます。 ユーザーは、自分のコンピューターまたはモバイルデバイスでレポートやダッシュボードを表示して使用することができます。
+Power BI は、データを分析し、分析情報を共有するためのビジネス分析ツールのスイートです。 Power BI を使用すると、オンプレミスまたはオンラインのデータ ソースを使用して対話型のレポートとダッシュボードを作成できます。 ユーザーは、自分のコンピューターまたはモバイル デバイスでレポートとダッシュボードを表示および使用できます。
   
-Power BI は、Microsoft 365 または SharePoint Server の一部ではありません。 これは、Power BI デスクトップ、Power BI ゲートウェイ、および Power BI サービスを含む独立したオファーリングです。 Power BI は、SharePoint Online とも統合されています。 Power BI for free を使い始めることができます。 データの使用状況とビジネスニーズに基づいて、後で Microsoft 365 E5 を使用して Power BI Pro にアップグレードできます。 詳細については、「 [POWER BI とは](https://go.microsoft.com/fwlink/?linkid=841341)」を参照してください。
+Power BI は Microsoft 365 または SharePoint Server の一部ではない。 これは、Power BI Desktop、Power BI ゲートウェイ、および Power BI サービスを含む個別の製品です。 Power BI は SharePoint Online にも統合されます。 Power BI の使用を無料で開始できます。 データ使用量とビジネス ニーズに基づいて、後で Microsoft 365 E5 を使用して Power BI Pro にアップグレードできます。 詳細については [、「Power BI とは」を参照してください。](https://go.microsoft.com/fwlink/?linkid=841341)
   
-### <a name="use-reporting-services-on-premises"></a>Reporting Services を使用する (オンプレミス)
+### <a name="use-reporting-services-on-premises"></a>レポート サービスの使用 (オンプレミス)
 
-SQL Server Reporting Services には、堅牢なレポートソリューションが用意されています。 レポートサービスは、ネイティブモードまたは SharePoint 統合モードのどちらかで構成できます。 レポートデザイナー、レポートビルダー、Power View など、さまざまなツールを使用してレポートを作成できます。 SQL Server の最新リリースでは、SQL Server Mobile Report Publisher を使用して、画面サイズに合わせて拡大または縮小するレポートを配信することもできます。 これにより、閲覧者は自分のモバイルデバイスでレポートを使用できるようになります。 詳細については、「 [SQL Server Reporting Services (SSRS): モバイルおよび改ページレポートを作成、展開、管理](https://go.microsoft.com/fwlink/?linkid=841342)する」を参照してください。
+SQL Serverレポート サービスは、堅牢なレポート ソリューションを提供します。 Reporting Services は、ネイティブ モードまたは SharePoint 統合モードで構成できます。 レポート デザイナー、レポート ビルダー、レポート ビルダーなど、さまざまなツールを使用してレポートを作成Power View。 モバイル レポートの最新リリースSQL Server、モバイル レポート発行元SQL Serverを使用して、任意の画面サイズに合ったレポートを配信することもできます。 これにより、閲覧者はモバイル デバイスでレポートを使用できます。 詳細については、「レポート サービス [(SSRS) SQL Server: モバイル](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports)レポートとページ分割されたレポートを作成、展開、および管理する」を参照してください。
   
-### <a name="use-performancepoint-services-on-premises"></a>PerformancePoint Services を使用する (オンプレミス)
+### <a name="use-performancepoint-services-on-premises"></a>[PerformancePoint Servicesを使用する (オンプレミス)
 
-PerformancePoint Server 2007 は、SharePoint Server 2007 とは別に販売されています。 SharePoint Server 2010 以降では、PerformancePoint Services は SharePoint Server のサービスアプリケーションです。 そのため、PerformancePoint Services を使用するために個別のサーバーライセンスまたはハードウェアを購入する必要はありません。
+PerformancePoint Server 2007 は SharePoint Server 2007 とは別に販売されました。 SharePoint Server 2010 より、PerformancePoint Services SharePoint Server のサービス アプリケーションです。 そのため、別のサーバー ライセンスまたはハードウェアを購入して、サーバー ライセンスを使用する必要PerformancePoint Services。
   
-PerformancePoint Server 2007 から PerformancePoint Services に移動するには、より新しいバージョンの SharePoint Server に移動して PerformancePoint Services を構成します。 移動先の SharePoint Server のバージョンによって、既存のダッシュボードコンテンツを PerformancePoint Server 2007 から PerformancePoint Services にインポートできるかどうかが決まります。
+2007 PerformancePoint Serverから 2007 PerformancePoint Servicesに移動するには、より新しいバージョンの SharePoint Server に移動し、サーバーを構成PerformancePoint Services。 移動する SharePoint Server のバージョンは、既存のダッシュボード コンテンツを 2007 年から 2007 年PerformancePoint ServerにインポートできるかどうかをPerformancePoint Services。
   
-- SharePoint Server 2010 にアップグレードする場合は、performancepoint Server 2007 から performancepoint ダッシュボードのコンテンツを SharePoint Server 2010 の performancepoint Services にインポートできます。 詳細については、「 [Import Wizard: PerformancePoint server 2007 content To SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=838873)」を参照してください。
+- SharePoint Server 2010 にアップグレードする場合は、PerformancePoint ダッシュボード コンテンツを PerformancePoint Server 2007 から SharePoint Server 2010 PerformancePoint Services にインポートできます。 詳細については、「Import [Wizard: PerformancePoint Server 2007 コンテンツから SharePoint Server 2010」を参照してください](/previous-versions/office/sharepoint-server-2010/ee681485(v=office.14))。
     
-- SharePoint Server 2013 または SharePoint Server 2016 に移動する場合、新しいダッシュボードコンテンツ (データソース、レポート、スコアカード、およびダッシュボードページ) を作成する必要があります。
+- SharePoint Server 2013 または SharePoint Server 2016 に移動する場合は、新しいダッシュボード コンテンツ (データ ソース、レポート、スコアカード、ダッシュボード ページ) を作成する必要があります。
     
-PerformancePoint Services アップグレードプランを開始するには、次のリソースを参照してください。
+アップグレード計画の開始PerformancePoint Services、次のリソースを参照してください。
   
-- [SharePoint Server 2007 サポート終了ロードマップ](sharepoint-2007-end-of-support.md)
+- [SharePoint Server 2007 のサポート終了ロードマップ](sharepoint-2007-end-of-support.md)
     
-- 移動先の SharePoint のバージョンがわかっている場合は、PerformancePoint Services の対応する記事を参照してください。
+- 移行する SharePoint のバージョンがわかっている場合は、次の記事を参照PerformancePoint Services。
     
-  - [PerformancePoint Services を計画する (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841363)
+  - [プラン PerformancePoint Services (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/ee681486(v=office.14))
     
-  - [SharePoint Server の PerformancePoint Services 2013 の概要](https://go.microsoft.com/fwlink/?linkid=841551)
+  - [PerformancePoint Services SharePoint Server 2013 の概要](/sharepoint/administration/performancepoint-services-overview)
     
-  - [SharePoint Server 2016 の PerformancePoint Services の概要](https://go.microsoft.com/fwlink/?linkid=874704)
+  - [SharePoint Server 2016 の PerformancePoint Services の概要](/sharepoint/administration/performancepoint-services-overview)
     
-PerformancePoint Services にアップグレードすると、いくつかの新機能と拡張機能が利用できるようになります。 PerformancePoint Services では、向上したスコアカードが提供されます。新しい視覚エフェクト (分解ツリー、KPI 詳細レポートなど)その他のグラフの種類。タイムインテリジェンスフィルター処理機能の向上。向上したアクセシビリティコンプライアンス。 詳細については、「 [PerformancePoint Services の新機能 (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343)」を参照してください。
+この機能にアップグレードPerformancePoint Services、いくつかの新機能と拡張機能が提供されます。 PerformancePoint Servicesスコアカードを提供しています。分解ツリーや KPI 詳細レポートなどの新しい視覚化。グラフの種類が多い。より優れたタイム インテリジェンス フィルター機能。アクセシビリティコンプライアンスの強化。 詳細については [、「What's new for PerformancePoint Services (SharePoint Server 2010)」を参照してください](/previous-versions/office/sharepoint-server-2010/ee661741(v=office.14))。
   
-## <a name="where-can-i-get-help-with-my-upgrade"></a>アップグレードに関するヘルプはどこで入手できますか?
+## <a name="where-can-i-get-help-with-my-upgrade"></a>アップグレードに関するヘルプはどこで受け取れるのですか?
 
-オンプレミスでアップグレードするか、Microsoft 365 に移行するかにかかわらず、Microsoft パートナーと連携することをお勧めします。 認定パートナーは、お客様のビジネスニーズに最も適したソリューションを特定し、展開に役立てることができます。 [Microsoft パートナーセンター](https://go.microsoft.com/fwlink/?linkid=841249)にアクセスし、検索フィルターを使用してソリューションプロバイダーを検索します。
+オンプレミスにアップグレードする場合も、Microsoft 365 に移行する場合も、Microsoft パートナーと一緒に作業することをお勧めします。 認定パートナーは、ビジネス ニーズに最適なソリューションを特定し、展開に役立ちます。 Microsoft パートナー [センターにアクセスし](https://go.microsoft.com/fwlink/?linkid=841249)、検索フィルターを使用してソリューション プロバイダーを検索します。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)

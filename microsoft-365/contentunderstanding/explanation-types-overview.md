@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntexの説明のタイプの詳細については、こちらを参照してください。
-ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242629"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928402"
 ---
 # <a name="introduction-to-explanation-types"></a>説明の種類の概要
 
@@ -71,7 +71,7 @@ ms.locfileid: "50242629"
    ![確実に大文字のみ](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> パターンリストの説明を手動で作成する代わりに、 [説明ライブラリ](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) を使用して、共通パターンのリストにパターンリストテンプレート ( *日付*、 *電話番号*、 *クレジットカード番号* など) を使用します。
+> パターンリストの説明を手動で作成する代わりに、 [説明ライブラリ](#use-explanation-templates) を使用して、共通パターンのリストにパターンリストテンプレート ( *日付*、 *電話番号*、 *クレジットカード番号* など) を使用します。
 
 ## <a name="proximity"></a>類似性 
 

@@ -1,7 +1,7 @@
 ---
-title: 脅威分析による最新の攻撃キャンペーンと手法を理解する
-description: Microsoft 365 の脅威分析対話型レポートを使用して、新たな脅威に対する組織のセキュリティ体制と回復性を評価します。
-keywords: セキュリティ, マルウェア, Microsoft 365, M365, セキュリティ センター, 脅威分析, Microsoft Defender ATP, サイバー, セキュリティの位置, 新たな脅威
+title: 脅威分析を使用して、最新の攻撃キャンペーンと手法を理解する
+description: Microsoft 365 の脅威分析対話型レポートを使用して、新たな脅威に対する組織のセキュリティ体制と回復力を評価します。
+keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティ センター、脅威分析、Microsoft Defender ATP、サイバー、セキュリティの態勢、新たな脅威
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -16,20 +16,20 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: f02a469c40e964772703e9b0a4cf5bca208f1eea
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: be29ce428def99f9dae678375e058356a3e12e6d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926836"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927146"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>脅威分析による最新の攻撃キャンペーンと手法を理解する 
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>脅威分析を使用して、最新の攻撃キャンペーンと手法を理解する 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-サイバー脅威の頻度が高まり、高度になってきつながっています。 組織は、特定の新たな脅威に対するセキュリティの状態と回復性をすばやく評価する必要があります。
+サイバー脅威はますます頻繁に、高度になってきている。 組織は、特定の新たな脅威に対するセキュリティの態勢と回復力を迅速に評価する必要があります。
 
-**脅威分析は** 、新たな脅威 (新しい手法、攻撃キャンペーン、マルウェアのアウトブレーク) が特定されるとすぐに公開される一連の対話型レポートです。 レポートは、環境に対する脅威の影響を評価するのに役立ち、特定の脅威を含め、組織の回復性を高め、特定の脅威を防ぐために推奨されるアクションを提供します。
+**脅威分析は** 、新しい脅威(新しい手法、攻撃キャンペーン、マルウェアの発生)が特定されるとすぐに公開される一連の対話型レポートです。 このレポートは、環境に対する脅威の影響を評価するのに役立ち、組織の回復力を高め、特定の脅威を防止するための推奨アクションを提供します。
 
-[Microsoft Defender for Endpoint の脅威分析について詳しくは、次をご覧ください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。  
+[脅威分析の詳細については、「Microsoft Defender for Endpoint」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。

@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1f5fa231c371ca7a8d6a22ca0b4ff388fd89004c
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 5de805784b2772b0169b2ad2a503e9378b82fda7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711918"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927098"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Microsoft 365 Defender を体験してみませんか? ラボ環境 [で評価したり、パイロット](https://aka.ms/mtp-trial-lab) プロジェクトを実 [稼働環境で実行することができます](https://aka.ms/m365d-pilotplaybook)。
+> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](./mtp-pilot.md?ocid=cx-evalpilot)こともできます。
 >
 
 次の機能は、Microsoft 365 Defender の最新リリースで一般公開 (GA) されています。
@@ -42,13 +42,13 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2021"></a>2021 年 3 月
 - [CloudAppEvents テーブル](advanced-hunting-cloudappevents-table.md) <br>Microsoft Cloud App Security の対象となるさまざまなクラウド アプリとサービスのイベントに関する情報を検索します。 この表には、以前に使用した情報も含まれています `AppFileEvents` 。
 ## <a name="february-2021"></a>2021 年 2 月
-- (プレビュー)強化された[Microsoft 365 https://security.microsoft.com) セキュリティ センター (](https://security.microsoft.com)はパブリック プレビューで利用可能になります。 この新しいエクスペリエンスにより、Defender for Endpoint と Defender for Office 365 が中央に表示されます。 [変更された情報の詳細については、次のリンクを参照してください](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)。
+- (プレビュー)強化された[Microsoft 365 https://security.microsoft.com) セキュリティ センター (](https://security.microsoft.com)はパブリック プレビューで利用可能になります。 この新しいエクスペリエンスにより、Defender for Endpoint と Defender for Office 365 が中央に表示されます。 [変更点についての詳細情報](./overview-security-center.md) はこちらを参照してください。
 
 ## <a name="september-2020"></a>2020 年 9 月
 - [IdentityDirectoryEvents テーブル](advanced-hunting-identitydirectoryevents-table.md) <br> Active Directory を実行しているオンプレミスのドメイン コントローラーに関連するイベントを検索します (AD)。 この [高度な検索](advanced-hunting-overview.md) スキーマ テーブルでは、ドメイン コントローラー上の ID 関連のイベントとシステム イベントの範囲について説明します。
 - [AssignedIPAddresses() 関数](advanced-hunting-assignedipaddresses-function.md) <br> 高度な検索クエリでこの関数を使用すると、デバイスに割り当てられた最新の IP アドレスや、特定の時刻から最新の IP アドレスをすばやく取得できます。
 
-## <a name="july-2020"></a>2020 年 7 月
+## <a name="july-2020"></a>2020 年7 月
 - [FileProfile() 関数](advanced-hunting-fileprofile-function.md) <br> 高度な検索クエリでこの関数を使用して、包括的なファイル情報で結果を強化します。
 - [ID テーブルとアプリ テーブル](advanced-hunting-schema-tables.md)<br> 高度なハンティング スキーマの[IdentityLogonEvents、IdentityQueryEvents、](advanced-hunting-identitylogonevents-table.md)[および AppFileEvents](advanced-hunting-appfileevents-table.md)テーブルを使用して、認証イベント、Active Directory クエリ、およびアプリ関連のアクティビティを表示します。 [](advanced-hunting-identityqueryevents-table.md)
 - [検出する](advanced-hunting-go-hunt.md)<br> インシデントの調査から、高度な検索で特定のイベント、ユーザー、デバイス、または他のエンティティの種類を調べにすばやくピボットします。
@@ -69,4 +69,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2019"></a>2019 年 3 月
 - 高度な検出 <br> 電子メールやデータ、デバイス、および ID に影響を与える脅威を積極的に検出できるさまざまな検索機能へのランディング ページ。
 - [Microsoft セキュア スコア](microsoft-secure-score.md) <br> 組織のセキュリティ体制を測定し、より多くの改善アクションを示す数値が大きい。 セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 
-- [レポート](monitoring-and-reporting.md) <br>  セキュリティ アナリストや管理者が毎日の操作の一環として追跡するさまざまな領域をカバーするカードのホストを備えます。
+- [レポート](./overview-security-center.md) <br>  セキュリティ アナリストや管理者が毎日の操作の一環として追跡するさまざまな領域をカバーするカードのホストを備えます。

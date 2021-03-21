@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 602b4b3abd2b07386ad130e4b2cd21bb593eee7e
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261574"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928075"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。たとえば、機密ラベルに対応する暗号化の設定によって、次のようにコンテンツを保護できます。
 
@@ -49,9 +49,9 @@ ms.locfileid: "50261574"
 
 ## <a name="understand-how-the-encryption-works"></a>暗号化のしくみを理解する
 
-暗号化では、Azure Information Protection の Azure Rights Management サービス (Azure RMS) が使用されます。 この保護ソリューションでは、暗号化ポリシー、ID ポリシー、および認識ポリシーが使用されます。 詳細については、 Azure Information Protection ドキュメントの「[Azure Rights Management とは](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)」を参照してください。 
+暗号化では、Azure Information Protection の Azure Rights Management サービス (Azure RMS) が使用されます。 この保護ソリューションでは、暗号化ポリシー、ID ポリシー、および認識ポリシーが使用されます。 詳細については、 Azure Information Protection ドキュメントの「[Azure Rights Management とは](/azure/information-protection/what-is-azure-rms)」を参照してください。 
 
-暗号化ソリューションを使用すると、**スーパー ユーザー** 機能により、認証されたユーザーとサービスが、組織のために暗号化されたデータの閲覧と検査を常に行えるようにできます。 必要に応じて、暗号化を削除または変更することができます。 詳細については、「[Azure Information Protection および検索サービスまたはデータ回復用のスーパー ユーザーの構成](https://docs.microsoft.com/azure/information-protection/configure-super-users)」を参照してください。
+暗号化ソリューションを使用すると、**スーパー ユーザー** 機能により、認証されたユーザーとサービスが、組織のために暗号化されたデータの閲覧と検査を常に行えるようにできます。 必要に応じて、暗号化を削除または変更することができます。 詳細については、「[Azure Information Protection および検索サービスまたはデータ回復用のスーパー ユーザーの構成](/azure/information-protection/configure-super-users)」を参照してください。
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>暗号化のラベルを構成する方法
 
@@ -93,8 +93,8 @@ ms.locfileid: "50261574"
 
 新しいラベルの暗号化が適用された場合、または元の暗号化が削除された場合にそれが実際に実行されるのは、このアクションをサポートする次の使用権限または役割が、ラベルの適用を行うユーザーに付与されている場合のみです。
 
-- 「エクスポート」または「フル コントロール」の[使用権限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
-- [Rights Management 発行者または Rights Management 所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)の役割、または[スーパー ユーザー](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
+- 「エクスポート」または「フル コントロール」の[使用権限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
+- [Rights Management 発行者または Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)の役割、または[スーパー ユーザー](/azure/information-protection/configure-super-users)。
 
 ユーザーに上記のいずれかの権限または役割が付与されていない場合はラベルを適用することはできず、そのため元の暗号化が維持されます。 ユーザーには次のメッセージが表示されます: **You don't have permission to make this change to the sensitivity label. Please contact the content owner.** (秘密度ラベルを変更するためのアクセス許可がありません。コンテンツの所有者に連絡してください。)
 
@@ -141,7 +141,7 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 
 再認証に加え、暗号化設定とユーザー グループのメンバーシップが再評価を受けます。 そのため、ユーザーが最後にコンテンツにアクセスした後に暗号化設定またはグループ メンバーシップに変更が加えられた場合、同じドキュメントやメールに対してのアクセス性が変化する可能性があります。
 
-既定の 30 日の設定を変更する方法については、「[Rights Management 使用ライセンス](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license)」を参照してください。
+既定の 30 日の設定を変更する方法については、「[Rights Management 使用ライセンス](/azure/information-protection/configure-usage-rights#rights-management-use-license)」を参照してください。
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>特定のユーザーまたはグループにアクセス許可を割り当てる
 
@@ -163,7 +163,7 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 
 - すべての認証されたユーザー。 選択する前に、この設定の[要件と制限事項](#requirements-and-limitations-for-add-any-authenticated-users)を理解しておいてください。
 
-- Azure AD で、特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([以前の Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))。 Microsoft 365 グループは、静的メンバーシップまたは[動的メンバーシップ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)を持つことができます。 このグループの種類は Azure AD に同期されていないため、また、メールが有効になっていないセキュリティグループを使用できないため、[Exchange からの動的配布グループ](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) を使用することはできません。
+- Azure AD で、特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([以前の Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))。 Microsoft 365 グループは、静的メンバーシップまたは[動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を持つことができます。 このグループの種類は Azure AD に同期されていないため、また、メールが有効になっていないセキュリティグループを使用できないため、[Exchange からの動的配布グループ](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) を使用することはできません。
 
 - 任意のメール アドレスまたはドメイン。 この組織の任意のドメイン名を入力して、Azure AD を使用する別の組織のすべてのユーザーを指定するには、このオプションを使用します。 **gmail.com**、**hotmail.com**、**outlook.com** などのドメイン名を入力することにより、ソーシャル プロバイダーに対してこのオプションを使用することもできます。
 
@@ -179,7 +179,7 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 この設定では、ラベルによって暗号化されているコンテンツにアクセスできるユーザーは制限されませんが、コンテンツの暗号化は実行され、コンテンツの使用 (アクセス許可) およびコンテンツへのアクセス (有効期限とオフライン アクセス) を制限するオプションが提供されます。 ただし、暗号化されたコンテンツを開くために使用するアプリケーションでは、使用する認証方法がサポートされている必要があります。 このため、Google などのフェデレーションされたソーシャル プロバイダーやワンタイム パスコード認証はメールに対してのみ動作し、動作するのは Exchange Online を使用した場合のみになります。 Microsoft アカウントは、Office 365 アプリおよび [Azure Information Protection ビューアー](https://portal.azurerms.com/#/download)で使用できます。
 
 > [!NOTE]
-> [SharePoint および OneDrive の Office ファイルで機密ラベルが有効になっている](sensitivity-labels-sharepoint-onedrive-files.md)場合は、[SharePoint および OneDrive の Azure AD B2B との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)でこの設定を使用することを検討してください。
+> [SharePoint および OneDrive の Office ファイルで機密ラベルが有効になっている](sensitivity-labels-sharepoint-onedrive-files.md)場合は、[SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration-preview)でこの設定を使用することを検討してください。
 
 いずれの認証ユーザー設定の場合も、一般的なシナリオとして次のようなものがあります。
 
@@ -191,10 +191,10 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 
 該当するユーザーまたはグループに付与するアクセス許可を選択するときには、次のいずれかを選択できます。
 
-- 既定の権限のグループ (「共同制作者」や「レビュー担当者」など) で[事前定義されたアクセス許可レベル](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)。
+- 既定の権限のグループ (「共同制作者」や「レビュー担当者」など) で[事前定義されたアクセス許可レベル](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)。
 - カスタムのアクセス許可。1 つ以上の使用権限を選択します。
 
-適切な許可の選択に役立つ詳細については、「[使用権限と説明](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)」を参照してください。  
+適切な許可の選択に役立つ詳細については、「[使用権限と説明](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)」を参照してください。  
 
 ![既定またはカスタムのアクセス許可を選択する際のオプション](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -214,7 +214,7 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 - Rights Management 発行者は、常に、オフラインでドキュメントや電子メールにアクセスできます。
 - Rights Management 発行者は、失効後のドキュメントも開くことができます。
 
-詳細については、「[Rights Management 発行者と Rights Management 所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)」を参照してください。
+詳細については、「[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)」を参照してください。
 
 ### <a name="double-key-encryption"></a>二重キー暗号化
 
@@ -229,7 +229,7 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 
 これらのオプションを使用すると、ユーザーがコンテンツに機密度ラベルを手動で適用するときにアクセス許可を割り当てることができます。
 
-- Outlook では、ユーザーは選択した受信者に対して [[転送不可](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)] オプションと同等の制限を選択することができます。
+- Outlook では、ユーザーは選択した受信者に対して [[転送不可](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)] オプションと同等の制限を選択することができます。
 
 - Word、PowerPoint、Excel で、ユーザーは特定のユーザー、グループ、または組織に対して任意のアクセス許可を選択するよう求められます。
 
@@ -406,7 +406,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 - Azure Information Protection の保護を有効にする
     
-    秘密度ラベルが暗号化を適用するには、Azure Information Protection の保護サービス (Azure Rights Management) をテナントに対して有効にする必要があります。  新しいテナントの場合はこれが既定の設定になっていますが、サービスを手動で有効にする必要がある場合があります。 詳細については、「[Azure Information Protection の保護サービスのアクティブ化](https://docs.microsoft.com/azure/information-protection/activate-service)」を参照してください。
+    秘密度ラベルが暗号化を適用するには、Azure Information Protection の保護サービス (Azure Rights Management) をテナントに対して有効にする必要があります。  新しいテナントの場合はこれが既定の設定になっていますが、サービスを手動で有効にする必要がある場合があります。 詳細については、「[Azure Information Protection の保護サービスのアクティブ化](/azure/information-protection/activate-service)」を参照してください。
 
 - Azure Information Protection 用に Exchange を構成する
     
@@ -416,8 +416,8 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
     
     このような追加のシナリオを Exchange でサポートする場合は、次の項目を参照してください。
     
-    - Exchange Online の場合は、「[Exchange Online: IRM 構成](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)」の説明を参照してください。
-    - Exchange On-Premises の場合は、[RMS コネクタを展開して Exchange サーバーを構成する](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)必要があります。 
+    - Exchange Online の場合は、「[Exchange Online: IRM 構成](/azure/information-protection/configure-office365#exchangeonline-irm-configuration)」の説明を参照してください。
+    - Exchange On-Premises の場合は、[RMS コネクタを展開して Exchange サーバーを構成する](/azure/information-protection/deploy-rms-connector)必要があります。 
 
 ## <a name="next-steps"></a>次の手順
 

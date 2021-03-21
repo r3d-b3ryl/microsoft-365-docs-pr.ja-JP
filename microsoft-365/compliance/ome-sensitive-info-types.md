@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 365 Message Encryption を使用して組織の機密情報の種類ポリシーをOfficeする方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 22aec87b149c58b2537f6921fb7c37552ef72f98
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: ad570f64122aecd245b912b1b6545a5950e838cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741380"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927745"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>メッセージ暗号化を使用して組織の機密情報の種類ポリシーを作成する
 
@@ -35,7 +35,7 @@ Exchange 管理センター (EAC) にサインインし、[メール フロー�
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>PowerShell でメール フロー ルールを使用してポリシーを作成するには
 
-組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShellを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。 ポリシーを作成Set-IRMConfiguration、New-TransportRuleコマンドレットを使用します。
+組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用し、Windows PowerShellを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 ポリシーを作成Set-IRMConfiguration、New-TransportRuleコマンドレットを使用します。
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>PowerShell で作成されたメール フロー ルールの例
 
@@ -54,7 +54,7 @@ Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-詳細については [、「Set-IRMConfiguration」](https://docs.microsoft.com/powershell/module/exchange/set-irmconfiguration) および [「New-TransportRule」を参照してください](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)。
+詳細については [、「Set-IRMConfiguration」](/powershell/module/exchange/set-irmconfiguration) および [「New-TransportRule」を参照してください](/powershell/module/exchange/new-transportrule)。
 
 ## <a name="how-recipients-access-attachments"></a>受信者が添付ファイルにアクセスする方法
 
@@ -77,4 +77,4 @@ Microsoft 365 は、このアクティビティを監査し、管理者が使用
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>機密情報の種類ポリシーを無効またはカスタマイズするには
 
-Exchange メール フロー ルールを作成したら、Exchange [](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)管理センター   >   (EAC) の [メール フロー ルール] に移動してルールを無効にし、[送信機密メールの暗号化 (アウトボックス ルール) ] を無効にすることで、ルールを無効または *無効* にできます。
+Exchange メール フロー ルールを作成したら、Exchange [](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)管理センター   >   (EAC) の [メール フロー ルール] に移動してルールを無効にし、[送信機密メールの暗号化 (アウトボックス ルール) ] を無効にすることで、ルールを無効または *無効* にできます。

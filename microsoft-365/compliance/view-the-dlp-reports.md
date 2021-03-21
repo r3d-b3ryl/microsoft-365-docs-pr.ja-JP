@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Office 365 の DLP レポートを使用して、DLP ポリシーの一致、上書き、または誤検知の数を表示し、時間の流れによって上昇または下向きかどうかを確認します。
-ms.openlocfilehash: eb281f4d912a9e21716d7f9859564a02f9c23401
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 742f0ef0334e714c7f31cbc2f97559993454f6b7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423830"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928391"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
@@ -36,7 +36,7 @@ ms.locfileid: "50423830"
     
   - 組織の DLP ポリシーに違反するビジネス プロセスを検出します。
     
-  - コンテンツに適用されているアクションを確認して、DLP ポリシーのビジネスへの影響を理解します。
+  - コンテンツに適用されているアクションを確認することで、DLP ポリシーのビジネスへの影響を理解します。
     
   - 特定の DLP ポリシーに関する一致箇所を表示することによって、そのポリシーのコンプライアンス遵守を確認します。
     
@@ -46,7 +46,7 @@ ms.locfileid: "50423830"
     
 - **DLP インシデント** また、このレポートには、ポリシーの一致レポートなど、時間の間にポリシーの一致が表示されます。 ただし、ポリシーが一致するレポートには、ルール レベルでの一致が表示されます。たとえば、メールが 3 つの異なるルールに一致した場合、ポリシー一致レポートには 3 つの異なる行項目が表示されます。 対照的に、インシデント レポートにはアイテム レベルでの一致が表示されます。たとえば、電子メールが 3 つの異なるルールに一致した場合、インシデント レポートには、そのコンテンツの 1 つの行アイテムが表示されます。 
     
-  レポート数は集計方法が異なっていますので、ポリシー一致レポートは、特定のルールとの一致を識別し、DLP ポリシーを微調整する方が優れた方法です。 インシデント レポートは、DLP ポリシーに問題がある特定のコンテンツを特定する方が適切です。
+  レポート数は集計方法が異なっていますので、ポリシー一致レポートは、特定のルールとの一致を識別し、DLP ポリシーを微調整する方が優れた方法です。 インシデント レポートは、DLP ポリシーで問題となる特定のコンテンツを特定するのに適しています。
     
 - **DLP の誤検知と上書き** DLP ポリシーでユーザーが上書きしたり、誤検知を報告したりできる場合、このレポートには時間のかかるインスタンスの数が表示されます。 レポートは、日付、場所、ポリシー、またはポリシーによってフィルター処理できます。 このレポートを使用すると、以下のことを行えます。 
     
@@ -56,7 +56,7 @@ ms.locfileid: "50423830"
     
   - ユーザーによる多くの上書きが行われることによって、DLP ポリシーと有効なビジネスプロセスとの競合を検出します。
     
-すべての DLP レポートには、最新の 4 か月の期間のデータを表示できます。 最新のデータは、レポートに表示されるまで最大で 24 時間かかることがあります。
+すべての DLP レポートでは、最新の 4 か月間のデータを表示できます。 最新のデータは、レポートに表示されるまで最大で 24 時間かかることがあります。
   
 これらのレポートは、セキュリティ コンプライアンス センター レポート &amp; ダッシュボードで \> **確認** \> **できます**。
   
@@ -64,7 +64,7 @@ ms.locfileid: "50423830"
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>ユーザーがオーバーライドのために送信した位置合わせを表示する
 
-DLP ポリシーでユーザーが上書きを許可している場合は、誤検知レポートと上書きレポートを使用して、ポリシー ヒントでユーザーが送信したテキストを表示できます。
+DLP ポリシーでユーザーがそれを上書きすることを許可している場合は、誤検知および上書きレポートを使用して、ポリシーのヒントでユーザーが送信したテキストを表示できます。
   
 ![DLP 誤検知レポートおよび上書きレポートの詳細の位置合わせフィールド](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
@@ -88,18 +88,16 @@ DLP ポリシーでユーザーが上書きを許可している場合は、誤�
 
 セキュリティ &amp; コンプライアンス センターのほとんどのコマンドレットを使用するには、次のようにする必要があります。
   
-1. [リモート PowerShell を使用 &amp; してセキュリティ コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
+1. [リモート PowerShell を使用 &amp; してセキュリティ コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
     
-2. これらのセキュリティ コンプライアンス センター [のコマンドレット &amp; を使用する](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. これらのセキュリティ コンプライアンス センター [のコマンドレット &amp; を使用する](/powershell/exchange/exchange-online-powershell)
     
 ただし、DLP レポートは、Exchange Online を含む Office 365 全体からデータを取り込む必要があります。 このため、DLP レポートのコマンドレットは、セキュリティ コンプライアンス センター Powershell ではなく、Exchange Online &amp; Powershell で使用できます。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
   
-1. [リモート PowerShell で Exchange Online に接続する](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [リモート PowerShell で Exchange Online に接続する](/powershell/exchange/connect-to-exchange-online-powershell)
     
 2. DLP レポート用のいずれかのコマンドレットを使用します。
     
-      - [Get-DlpDetectionsReport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
     
-      - [Get-DlpDetailReport](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
-    
-
+      - [Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)

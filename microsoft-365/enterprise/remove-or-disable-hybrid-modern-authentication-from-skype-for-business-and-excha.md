@@ -17,56 +17,54 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、Skype for Business と Exchange からハイブリッド先進認証を削除または無効化する方法について説明します。
-ms.openlocfilehash: 70f62b9b2165464837aa1dea0e12854df116efe0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: この記事では、Skype for Business および Exchange からハイブリッドモダン認証を削除または無効にする方法について説明します。
+ms.openlocfilehash: 9442ef3e19d0835bfd59f27ec425e36fd7dfcf7a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547098"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927290"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Skype for Business および Exchange からのハイブリッド先進認証の削除または無効化
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-ハイブリッドモダン認証 (HMA) を有効にして、現在の環境に適していないことを検出した場合は、HMA を無効にすることができます。 この記事では、その方法について説明します。
+ハイブリッドモダン認証 (HMA) を有効にして、現在の環境に適しない場合にのみ、HMA を無効にできます。 この記事では、その方法について説明します。
   
-## <a name="who-is-this-article-for"></a>この記事の対象読者
+## <a name="who-is-this-article-for"></a>この記事は誰の記事ですか?
 
-Skype for Business Online、オンプレミス、または Exchange Online またはオンプレミスで先進認証を有効にしている場合に、HMA を無効にするには、次の手順を実行します。
+Skype for Business Online またはオンプレミス、Exchange Online またはオンプレミスでモダン認証を有効にし、HMA を無効にする必要がある場合は、次の手順を実行します。
 
 > [!IMPORTANT]
-> Skype for business Online またはオンプレミスでトポロジが混在していて、開始する前にサポートされているトポロジを確認する必要がある場合は、「[先進認証でサポートされている skype For business トポロジ](https://technet.microsoft.com/library/mt803262.aspx)」を参照してください。
+> Skype for[Business Online](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)またはオンプレミスの場合、混在トポロジ HMA を使用し、開始する前にサポートされているトポロジを確認する必要がある場合は、「モダン認証でサポートされる Skype for Business トポロジ」の記事を参照してください。
   
-## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>ハイブリッド先進認証を無効にする方法 (Exchange)
+## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>ハイブリッドモダン認証 (Exchange) を無効にする方法
 
-1. **Exchange オンプレミス**: Exchange 管理シェルを開き、次のコマンドを実行します。 
+1. **Exchange オンプレミス: Exchange** 管理シェルを開き、次のコマンドを実行します。 
 
 ```powershell
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange online**: リモート PowerShell を使用して [exchange online に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) します。 *OAuth2ClientProfileEnabled*フラグを ' false ' にするには、次のコマンドを実行します。
+2. **Exchange Online**: [リモート PowerShell を使用して Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) に接続します。 次のコマンドを実行して  *、OAuth2ClientProfileEnabled*  フラグを 'false' に設定します。
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 ```
     
-## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>ハイブリッド先進認証を無効にする方法 (Skype for Business)
+## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>ハイブリッドモダン認証を無効にする方法 (Skype for Business)
 
-1. **Skype For Business オンプレミス**: skype For Business 管理シェルで次のコマンドを実行します。
+1. **Skype for Business オンプレミス**: Skype for Business 管理シェルで次のコマンドを実行します。
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **Skype For Business online**: リモート PowerShell を使用して [Skype for business online に接続](manage-skype-for-business-online-with-microsoft-365-powershell.md) します。 先進認証を無効にするには、次のコマンドを実行します。
+2. **Skype for Business Online**: [リモート PowerShell を使用して Skype for Business Online](manage-skype-for-business-online-with-microsoft-365-powershell.md) に接続します。 次のコマンドを実行して、モダン認証を無効にします。
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed
 ```
 
-[モダン認証の概要に戻る](hybrid-modern-auth-overview.md) 
-  
-
+[モダン認証の概要にリンクします](hybrid-modern-auth-overview.md) 。 

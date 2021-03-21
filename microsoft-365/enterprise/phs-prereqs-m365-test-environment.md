@@ -14,22 +14,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: パスワード ハッシュ同期の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 8e8db4aae39acda0762f9b6394b23ab047727ea5
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3236c79e308f269c07146ff094c7ae27271b97fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233786"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928052"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期に必要な ID およびデバイス アクセスの前提条件
 
-*このテスト ラボ ガイドは、エンタープライズ テスト環境向け Microsoft 365 でのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
 
-[ID](../security/office-365-security/microsoft-365-policies-configurations.md) とデバイスのアクセス構成は、Azure Active Directory (Azure AD) と統合された Microsoft 365 enterprise のすべてのサービスへのアクセスを保護するための一連の構成と条件付きアクセス ポリシーです。
+[ID およびデバイス](../security/office-365-security/microsoft-365-policies-configurations.md) アクセス構成は、Azure Active Directory (Azure Active Directory )と統合されたエンタープライズ向け Microsoft 365 のすべてのサービスへのアクセスを保護するための一連の構成と条件付きアクセス ポリシーです。AD。
 
-この記事では、ID とデバイス アクセスに関するパスワード ハッシュ同期認証の前提条件構成を使用[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)するハイブリッドの要件を満たす Microsoft 365 テスト環境を構成する方法について説明します。
+この記事では、ID およびデバイス アクセス用のパスワード ハッシュ同期認証前提条件構成を使用して、[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)ハイブリッドの要件を満たす Microsoft 365 テスト環境を構成する方法について説明します。
 
-このテスト環境を設定するには、10 のフェーズがあります。
+このテスト環境をセットアップするには、10 のフェーズがあります。
 
 1. パスワード ハッシュ同期テスト環境でシミュレートされたエンタープライズを作成する
 2. Azure AD シームレス シングル サインオンを構成する
@@ -44,7 +44,7 @@ ms.locfileid: "50233786"
 
 ## <a name="phase-1-build-out-your-simulated-enterprise-with-password-hash-sync-microsoft-365-test-environment"></a>フェーズ 1: パスワード ハッシュ同期 Microsoft 365 テスト環境でシミュレートされたエンタープライズを構築する
 
-パスワード ハッシュ同期のテスト ラボ [ガイドの手順](password-hash-sync-m365-ent-test-environment.md) に従います。
+パスワード ハッシュ同期テスト ラボ ガイド [の手順](password-hash-sync-m365-ent-test-environment.md) に従います。
 最終的な構成は、次のようになります。
 
 ![パスワード ハッシュ同期テスト環境があるシミュレートされたエンタープライズ](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
@@ -57,7 +57,7 @@ ms.locfileid: "50233786"
 
 最初に、組織で使用されているパブリック IP アドレスまたはアドレス範囲を確認します。
 
-次に、「[Azure Active Directory で名前付きの場所を構成する](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)」の手順に従って、アドレスまたはアドレス範囲を名前付きの場所として追加します。 
+次に、「[Azure Active Directory で名前付きの場所を構成する](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)」の手順に従って、アドレスまたはアドレス範囲を名前付きの場所として追加します。 
 
 ## <a name="phase-4-configure-password-writeback"></a>フェーズ 4: パスワード ライトバックを構成する
 
@@ -89,23 +89,23 @@ User 2 アカウントの多要素認証のみテストします。
 
 ## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>フェーズ 7: ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする 
 
-ドメイン [に参加している](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) Windows コンピューターのデバイスの自動登録を有効にするには、次の手順に従います。
+ドメイン [に参加している Windows コンピューター](/azure/active-directory/devices/hybrid-azuread-join-plan) のデバイスの自動登録を有効にするには、次の手順に従います。
 
-## <a name="phase-8-configure-azure-ad-password-protection"></a>フェーズ 8: Azure ADパスワード保護を構成する 
+## <a name="phase-8-configure-azure-ad-password-protection"></a>フェーズ 8: Azure のパスワード保護AD構成する 
 
-既知 [の脆弱なパスワード](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) とそのバリアントをブロックするには、次の手順に従います。
+既知 [の脆弱なパスワードとその](/azure/active-directory/authentication/concept-password-ban-bad) バリアントをブロックするには、次の手順に従います。
 
-## <a name="phase-9-enable-azure-ad-identity-protection"></a>フェーズ 9: Azure AD Identity Protection を有効にする
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>フェーズ 9: Azure AD ID 保護を有効にする
 
 [テスト ラボ ガイドの「Azure AD Identity Protection」のフェーズ 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) に説明されている手順に従います。 
 
 ## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>フェーズ 10: Exchange Online と Skype for Business Online のモダン認証を有効にする
 
-Exchange Online については、[こちら](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)で説明されている手順に従います。 
+Exchange Online については、[こちら](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)で説明されている手順に従います。 
 
 Skype for Business Online については、
 
-1. [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) に接続します。
+1. [Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) に接続します。
 
 2. 次のコマンドを実行します。
 
@@ -123,7 +123,7 @@ Skype for Business Online については、
 
 ## <a name="next-step"></a>次の手順
 
-[共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。
+[共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。
 
 ## <a name="see-also"></a>関連項目
 
@@ -135,4 +135,4 @@ Skype for Business Online については、
 
 [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise のドキュメント](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

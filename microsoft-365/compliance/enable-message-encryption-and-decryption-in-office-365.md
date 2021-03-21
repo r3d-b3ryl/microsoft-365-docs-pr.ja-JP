@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
-description: Office 365 Message Encryption により、電子メール ユーザーは、組織の内外の人々に暗号化されたメッセージを送信することができます。 管理者は、暗号化のための条件を設定するメールフロールール (トランスポートルールとも呼ばれます) を作成することによって、Office 365 メッセージの暗号化を有効にすることができます。
-ms.openlocfilehash: a4492d91c4f9755c2fc03e3441e239980ffb0b99
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+description: Office 365 Message Encryption により、電子メール ユーザーは、組織の内外の人々に暗号化されたメッセージを送信することができます。 管理者は、暗号化の条件Officeメール フロー ルール (トランスポート ルールとも呼ばれる) を作成することで、365 Message Encryption を有効にできます。
+ms.openlocfilehash: 18c934b0529554a757af5fdb3de02678ee8cefa8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409015"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927847"
 ---
 # <a name="enable-message-encryption-and-decryption"></a>メッセージの暗号化と復号化を有効にする
 
-Office 365 Message Encryption により、電子メール ユーザーは、組織の内外の人々に暗号化されたメッセージを送信することができます。 管理者は、暗号化のための条件を設定するメールフロールール (トランスポートルールとも呼ばれます) を作成することによって、Office 365 メッセージの暗号化を有効にすることができます。 いずれかのユーザーがルールの条件に一致するメッセージを送信すると、メッセージは暗号化されます。
+Office 365 Message Encryption により、電子メール ユーザーは、組織の内外の人々に暗号化されたメッセージを送信することができます。 管理者は、暗号化の条件Officeメール フロー ルール (トランスポート ルールとも呼ばれる) を作成することで、365 Message Encryption を有効にできます。 ユーザーの 1 人がルールの条件に一致するメッセージを送信すると、メッセージは暗号化されます。
   
-暗号化のメールフロールールを作成する方法については、「 [電子メールメッセージを暗号化または暗号化解除するルールを定義](https://go.microsoft.com/fwlink/p/?LinkID=402846)する」を参照してください。
+暗号化用のメール フロー ルールを作成する方法については、「電子メール メッセージを暗号化または復号化するためのルールを定義 [する」を参照してください](./define-mail-flow-rules-to-encrypt-email.md)。
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 での暗号化](https://go.microsoft.com/fwlink/p/?LinkID=392525)
+[Office 365 での暗号化](./encryption.md)

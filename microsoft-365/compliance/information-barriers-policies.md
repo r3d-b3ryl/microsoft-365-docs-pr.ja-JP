@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 65fa24d0a69e43cbdb2deeed8362b83d6b097413
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b245a0f7ca0845024fec0c498aca4c7d447f14ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838360"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928017"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -60,7 +60,7 @@ ms.locfileid: "50838360"
 - ディレクトリ データ - 組織の構造がディレクトリ データに反映されます。 このアクションを実行するには、グループ メンバーシップ、部署名などのユーザー アカウント属性が Azure Active Directory (または Exchange Online) に正しく設定されていることを確認します。 詳細については、次のリソースを参照してください。
   - [情報障壁ポリシーの属性](information-barriers-attributes.md)
   - [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-  - [Office 365 PowerShell でユーザー アカウント プロパティを構成する](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+  - [Office 365 PowerShell でユーザー アカウント プロパティを構成する](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
 - スコープディレクトリ検索 - 組織の最初の情報バリア ポリシーを定義する前に、Microsoft Teams でスコープディレクトリ検索を有効 [にする必要があります](/MicrosoftTeams/teams-scoped-directory-search)。 情報バリア ポリシーを設定または定義する前に、スコープディレクトリ検索を有効にしてから少なくとも 24 時間待ちます。
 
@@ -124,7 +124,7 @@ ms.locfileid: "50838360"
 セグメントの定義に使用する組織のディレクトリ データ内の属性を決定します。 *Department、MemberOf、* またはサポートされている属性を使用できます。  ユーザーに対して選択した属性に値が含まれます。 [情報バリアについては、サポートされている属性の一覧を参照してください](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
-> **次のセクションに進む前に**、セグメントの定義に使用できる属性の値がディレクトリ データに含まれています。 ディレクトリ データに使用する属性の値が含されていない場合は、情報バリアを続行する前に、その情報を含めるユーザー アカウントを更新する必要があります。 このヘルプを表示するには、次のリソースを参照してください。<br/>- [365 PowerShell を使用してユーザー Officeプロパティを構成する](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **次のセクションに進む前に**、セグメントの定義に使用できる属性の値がディレクトリ データに含まれています。 ディレクトリ データに使用する属性の値が含されていない場合は、情報バリアを続行する前に、その情報を含めるユーザー アカウントを更新する必要があります。 このヘルプを表示するには、次のリソースを参照してください。<br/>- [365 PowerShell を使用してユーザー Officeプロパティを構成する](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>PowerShell を使用してセグメントを定義する
 
@@ -302,7 +302,7 @@ Contoso には、人事、営業、マーケティング、リサーチ、製造
 
 Contoso 社は、Azure Active Directory の Department 属性を使用して、次のようにセグメントを定義します。
 
-| 部門 | セグメント定義 |
+| Department | セグメント定義 |
 |:-------------|:---------------------|
 | 人事 | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` |
 | 営業 | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"` |
@@ -326,7 +326,7 @@ Contoso は、次の表で説明するように、3 つのポリシーを定義�
 
 コマンドレットが終了すると、Contoso は法的および業界の要件に準拠しています。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - [情報バリアの概要を取得する](information-barriers.md)
 - [Microsoft Teams の情報バリアの詳細](/MicrosoftTeams/information-barriers-in-teams)

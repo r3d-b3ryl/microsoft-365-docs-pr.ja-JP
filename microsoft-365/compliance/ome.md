@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: 組織内外のユーザー間で暗号化された電子メール メッセージを送受信する方法について学習します。
-ms.openlocfilehash: 8d1803442428f3061c686afa0b790d3f468abde8
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741328"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927715"
 ---
 # <a name="message-encryption"></a>メッセージの暗号化
 
@@ -36,7 +36,7 @@ Office 365 Message Encryption を使用すると、組織は組織内外のユ�
 
 この記事の以降の部分では、新しい OME 機能について説明します。
 
-Office 365 Message Encryption は、Azure Information Protection の一部である Microsoft Azure Rights Management (Azure RMS) 上に構築されたオンライン サービスです。 このサービスには、電子メールのセキュリティ保護に役立つ暗号化、ID、承認ポリシーが含まれています。 メッセージを暗号化するには、アクセス許可管理のテンプレートである[転送不可オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)および[暗号化のみ](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)オプションを使用します。
+Office 365 Message Encryption は、Azure Information Protection の一部である Microsoft Azure Rights Management (Azure RMS) 上に構築されたオンライン サービスです。 このサービスには、電子メールのセキュリティ保護に役立つ暗号化、ID、承認ポリシーが含まれています。 メッセージを暗号化するには、アクセス許可管理のテンプレートである[転送不可オプション](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)および[暗号化のみ](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)オプションを使用します。
 
 ユーザーは、次のオプションを使用して、電子メール メッセージとさまざまな添付ファイルを暗号化できます。 サポートされているすべての添付ファイルの種類の一覧については、「[IRM ポリシーの対象となるメッセージ添付ファイルの種類](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)」を参照してください。
 
@@ -54,7 +54,7 @@ Outlook 以外のクライアントで暗号化または権利で保護された
 
 保護されたメールの送信者が GCC High で、受信者が GCC High の外部 (商用ユーザー、Outlook.com ユーザー、Gmail などの他のメール プロバイダーのユーザーを含む) の場合、受信者はラッパー メールを受信します。 ラッパー メッセージは、メッセージの閲覧と返信が行える OME ポータルにリダイレクトします。 上記以外の場合で、送信者と受信者の両方が GCC High の内部にいる場合は、たとえ受信者が同じ組織に存在していない場合でも、Outlook クライアントを使用してメールを読む受信者には暗号化され権限で保護されたメールでネイティブの、ファーストクラスの読み取り操作が提供されます。 GCC High での操作方法の違いの詳細については、「[OME のバージョンを比較する](ome-version-comparison.md)」を参照してください。
 
-OME を使用して暗号化できるメッセージおよび添付ファイルのサイズ制限の詳細については、 「[Exchange Online の制限](https://technet.microsoft.com/library/exchange-online-limits.aspx)」を参照してください。
+OME を使用して暗号化できるメッセージおよび添付ファイルのサイズ制限の詳細については、 「[Exchange Online の制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)」を参照してください。
 
 ## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Office 365 Advanced Message Encryption が OME 上で動作する仕組み
 

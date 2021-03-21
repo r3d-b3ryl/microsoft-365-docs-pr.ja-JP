@@ -17,22 +17,22 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: この記事では、Office 365 監査ログレコードの結果をエクスポートするときに含まれるその他のプロパティについて説明します。
+description: この記事では、365 監査ログ レコードの結果をエクスポートするときに含まれるOffice説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 250db03e7d330ed013909925b44f8d9843f1197d
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 69a34f4de948bc9533ef2872d94171134e50ffea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350703"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927075"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
 
 監査ログの検索結果をセキュリティ/コンプライアンス センターからエクスポートする場合は、検索条件に一致するすべての結果をダウンロードするオプションを利用できます。 このエクスポートを行うには、[**監査ログの検索**] ページで、[**結果のエクスポート**] \> [**テスト結果のダウンロード**] の順に選択します。 詳細については、「[監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
   
- 監査ログ検索のすべての結果をエクスポートすると、統合監査ログの生データは、ローカルコンピューターにダウンロードされるコンマ区切り値 (CSV) ファイルにコピーされます。 このファイルには、[**AuditData**] という名前の列にある各監査レコードからの追加情報が入っています。 この列には、監査ログ レコードからの複数のプロパティに対する複数値プロパティが含まれています。 この複数値プロパティに含まれる各 **プロパティ: 値** ペアはカンマで区切られています。 
+ 監査ログ検索のすべての結果をエクスポートすると、統合監査ログの生データが、ローカル コンピューターにダウンロードされるコンマ区切り値 (CSV) ファイルにコピーされます。 このファイルには、[**AuditData**] という名前の列にある各監査レコードからの追加情報が入っています。 この列には、監査ログ レコードからの複数のプロパティに対する複数値プロパティが含まれています。 この複数値プロパティに含まれる各 **プロパティ: 値** ペアはカンマで区切られています。 
   
-次の表では、マルチプロパティの **Auditdata** 列に含まれる (イベントが発生するサービスによって異なります) プロパティについて説明します。 **このプロパティ列を持つ Office 365 サービス** は、プロパティが含まれるサービスとアクティビティの種類 (ユーザーまたは管理者) を示します。 これらのプロパティまたはこのトピックに記載されていないプロパティの詳細については、「 [Management ACTIVITY API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993)」を参照してください。
+次の表では、複数プロパティの AuditData 列に含まれるプロパティ (イベントが発生するサービスに応じて) **について説明** します。 **このプロパティ列を持つ Office 365 サービス** は、プロパティが含まれるサービスとアクティビティの種類 (ユーザーまたは管理者) を示します。 これらのプロパティ、またはこのトピックに記載されていない可能性があるプロパティの詳細については [、「Management Activity API Schema」を参照してください](/office/office-365-management-api/office-365-management-activity-api-schema)。
   
 > [!TIP]
 > Excel の Power Query に含まれる JSON 変換機能を使用すると、[**AuditData**] 列を複数の列に分割し、プロパティごとに個別の列を設定できます。 このようにすると、これらの 1 つ以上のプロパティで並べ替えやフィルター処理を行うことができます。 これを行う方法については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。 
@@ -65,11 +65,11 @@ ms.locfileid: "49350703"
 |Members|チームで追加または削除されたユーザーが一覧表示されます。次の値によって、ユーザーに割り当てられているロールの種類が示されます。<br/><br/> **1** - 所有者ロールを意味します。<br/> **2** - メンバー ロールを意味します。<br/> **3** - ゲスト ロールを意味します。 <br/><br/>Members プロパティには、組織の名前とメンバーのメール アドレスも含まれます。|Microsoft Teams|
 |ModifiedProperties (Name、NewValue、OldValue)|このプロパティは、管理イベント (サイトまたはサイト コレクションの管理者グループのメンバーとしてユーザーを追加するなど) に対して表示されます。このプロパティには、変更されたプロパティの名前 (サイト管理者グループなど)、変更されたプロパティの新しい値 (サイト管理者として追加されたユーザーなど)、および変更されたオブジェクトの以前の値が格納されます。|すべて (管理者のアクティビティ)|
 |ObjectId|Exchange 管理者の監査ログの場合は、コマンドレットによって変更されたオブジェクトの名前。  <br/> SharePoint アクティビティの場合は、ユーザーがアクセスしたファイルまたはフォルダーの完全な URL パス名。  <br/> Azure AD アクティビティの場合は、変更されたユーザー アカウントの名前。|すべて|
-|Operation|ユーザーまたは管理アクティビティの名前。 このプロパティの値は、[**アクティビティ**] ドロップ ダウン リストで選択した値に対応します。 [**すべてのアクティビティの結果を表示**] を選択した場合、レポートにはすべてのサービスのすべてのユーザーと管理アクティビティのエントリが取り込まれます。 監査ログに記録される操作/アクティビティの説明については、「 [Office 365 で監査ログを検索](search-the-audit-log-in-security-and-compliance.md)する」の「監査 **対象のアクティビティ**」タブを参照してください。  <br/> Exchange 管理者アクティビティでは、このプロパティは、実行されたコマンドレットの名前を識別します。|すべて|
+|Operation|ユーザーまたは管理アクティビティの名前。 このプロパティの値は、[**アクティビティ**] ドロップ ダウン リストで選択した値に対応します。 [**すべてのアクティビティの結果を表示**] を選択した場合、レポートにはすべてのサービスのすべてのユーザーと管理アクティビティのエントリが取り込まれます。 監査ログに記録される操作/アクティビティの説明については、「監査ログ[365](search-the-audit-log-in-security-and-compliance.md)で監査ログを検索する」の「監査Officeしてください。   <br/> Exchange 管理者アクティビティでは、このプロパティは、実行されたコマンドレットの名前を識別します。|すべて|
 |OrganizationId|組織の GUID。|すべて|
 |Path|アクセスされたメッセージが置かれているメールボックス フォルダーの名前。このプロパティは、メッセージの作成先、コピー先、移動先のフォルダーも識別します。|Exchange (メールボックス アクティビティ)|
 |Parameters|Exchange 管理者のアクティビティの場合、Operation プロパティで識別されたコマンドレットで使用された、すべてのパラメーターの名前と値。|Exchange (管理者のアクティビティ)|
-|RecordType|レコードによって示される操作の種類。 このプロパティは、操作がトリガーされたサービスまたは機能を示します。 レコードの種類とそれに対応する列挙値 (監査レコードの **RecordType** プロパティに表示される値) の一覧については、「 [監査ログのレコードの種類](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)」を参照してください。| 
+|RecordType|レコードによって示される操作の種類。 このプロパティは、操作がトリガーされたサービスまたは機能を示します。 レコードの種類とそれに対応する ENUM 値 (監査レコードの **RecordType** プロパティに表示される値) については、「監査ログ レコードの種類」 [を参照してください](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。| 
 |ResultStatus|(**Operation** プロパティで指定された) アクションが正常に終了したかどうかを示します。  <br/> Exchange 管理者アクティビティでは、値は **True** (成功) または **False** (失敗) のいずれかになります。|すべて  <br/>|
 |SecurityComplianceCenterEventType|アクティビティがセキュリティ/コンプライアンス センター イベントであることを意味します。 セキュリティ/コンプライアンス センター アクティビティはすべて、このプロパティの値が **0** です。|セキュリティ/コンプライアンス センター|
 |SharingType|リソースが共有されたユーザーに割り当てられているアクセス許可の種類。このユーザーは、**UserSharedWith** プロパティによって識別されます。|SharePoint|
@@ -79,7 +79,7 @@ ms.locfileid: "49350703"
 |SourceFileName|ユーザーがアクセスしたファイルまたはフォルダーの名前。|SharePoint|
 |SourceRelativeUrl|ユーザーがアクセスするファイルが含まれているフォルダーの URL。 **SiteURL**、**SourceRelativeURL**、および **SourceFileName** プロパティの値の組み合わせは、**ObjectID** プロパティの値と同じであり、ユーザーがアクセスするファイルの完全パス名です。|SharePoint|
 |Subject|アクセスされたメッセージの件名。|Exchange (メールボックス アクティビティ)|
-|TabType| チームで追加、削除、または更新されたタブの種類。このプロパティの有効な値は次のとおりです。<br/><br/> **Excel pin** - Excel のタブ。  <br/> **Extension** - すべてのファースト パーティおよびサード パーティのアプリ (Class Schedule、VSTS、Forms など)。  <br/> **Notes** - OneNote のタブ。  <br/> **Pdfpin** - PDF のタブ。  <br/> **Powerbi** -power BI タブ。  <br/> **Powerpointpin** - PowerPoint のタブ。  <br/> **Sharepointfiles** - SharePoint のタブ。  <br/> **Webpage** - ピン留めされた Web サイトのタブ。  <br/> **Wiki-tab** - Wiki のタブ。  <br/> **Wordpin** - Word のタブ。|Microsoft Teams|
+|TabType| チームで追加、削除、または更新されたタブの種類。このプロパティの有効な値は次のとおりです。<br/><br/> **Excel pin** - Excel のタブ。  <br/> **Extension** - すべてのファースト パーティおよびサード パーティのアプリ (Class Schedule、VSTS、Forms など)。  <br/> **Notes** - OneNote のタブ。  <br/> **Pdfpin** - PDF のタブ。  <br/> **Powerbi** - [Power BI] タブ。  <br/> **Powerpointpin** - PowerPoint のタブ。  <br/> **Sharepointfiles** - SharePoint のタブ。  <br/> **Webpage** - ピン留めされた Web サイトのタブ。  <br/> **Wiki-tab** - Wiki のタブ。  <br/> **Wordpin** - Word のタブ。|Microsoft Teams|
 |Target|(**Operation** プロパティで識別された) アクションの実行対象となったユーザー。たとえば、SharePoint または Microsoft Team にゲスト ユーザーが追加されると、このプロパティにそのユーザーが一覧表示されます。|Azure Active Directory|
 |TeamGuid|Microsoft Teams のチームの ID。|Microsoft Teams|
 |TeamName|Microsoft Teams のチームの名前。|Microsoft Teams|
@@ -88,7 +88,7 @@ ms.locfileid: "49350703"
 |UserId|結果としてログ記録されているレコードが生成されたアクション (**Operation** プロパティで指定された) を実行したユーザー。 システム アカウント (SHAREPOINT\system または NT AUTHORITY\SYSTEM など) によって実行されたアクティビティの監査レコードも監査ログに含まれます。 UserId プロパティのもう 1 つの一般的な値は app@sharepoint です。 これは、アクティビティを実行した "ユーザー" が、ユーザー、管理者、またはサービスの代理として、組織全体のアクション (SharePoint サイトまたは OneDrive アカウント検索など) を実行するために必要な アクセス許可が SharePoint に与えられているアプリケーションであることを示しています。 詳細については、「[監査レコード内の app\@sharepoint ユーザー](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)」を参照してください。 |すべて|
 |UserKey|**UserID** プロパティで識別されたユーザーの別の ID。このプロパティには、たとえば SharePoint でユーザーによって発生したイベントの Passport 固有 ID (PUID) が格納されます。このプロパティは、他のサービスで発生したイベントや、システム アカウントによって発生したイベントの **UserID** プロパティと同じ値を示す場合もあります。|すべて|
 |UserSharedWith|リソースが共有されたユーザー。**Operation** プロパティの値が **SharingSet** の場合は、このプロパティが含まれます。このユーザーは、レポートの **[共有ユーザー]** 列にも表示されます。|SharePoint|
-|UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** -Microsoft 365 組織の管理者。<sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
+|UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** - Microsoft 365 組織の管理者。<sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
 |Version|ログに記録された (**Operation** プロパティで識別された) アクティビティのバージョン番号を示します。|すべて|
 |Workload|アクティビティが発生した Microsoft 365 サービス。|すべて|
 ||||

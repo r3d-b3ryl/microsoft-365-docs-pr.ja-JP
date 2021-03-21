@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 高度な電子情報開示ケースに関連するコンテンツを保持するために、保管担当者とそのデータ ソースにホールドを配置する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fbad81e93635f823fab1c4f44867760d00fc59ed
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838588"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926375"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Advanced eDiscovery の保留を管理する
 
@@ -80,7 +80,7 @@ ms.locfileid: "50838588"
       Microsoft  365 グループと Microsoft Teams を保留にするためのヒントについては、「FAQ」セクションを参照してください。
 
       > [!NOTE]
-      > ユーザーの OneDrive アカウントの URL には、ユーザー プリンシパル名 (UPN) (たとえば) が含まれます `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` 。 まれに、ユーザーの UPN が変更された場合、OneDrive URL も新しい UPN を組み込むに変更されます。 ユーザーの OneDrive アカウントが非保管ホールドの一部であり、その UPN が変更されている場合は、保持を更新し、新しい OneDrive URL をポイントする必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](https://docs.microsoft.com/onedrive/upn-changes)」をご覧ください。
+      > ユーザーの OneDrive アカウントの URL には、ユーザー プリンシパル名 (UPN) (たとえば) が含まれます `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` 。 まれに、ユーザーの UPN が変更された場合、OneDrive URL も新しい UPN を組み込むに変更されます。 ユーザーの OneDrive アカウントが非保管ホールドの一部であり、その UPN が変更されている場合は、保持を更新し、新しい OneDrive URL をポイントする必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](/onedrive/upn-changes)」をご覧ください。
 
    1. **Exchange パブリック フォルダー** - トグル スイッチを [すべて] の位置に移動して、Exchange Online 組織のすべてのパブリック フォルダーを保留にします。 特定のパブリック フォルダーを選択して保留にすることはできません。 パブリック フォルダーを保持しない場合は、トグル スイッチを **[** なし] に設定したままにします。
 
@@ -92,7 +92,7 @@ ms.locfileid: "50838588"
 
     - [  **条件の追加** ] をクリックして 1 つ以上の条件を追加し、保留リストの検索クエリを絞り込む。 各条件は、保留リストの作成時に作成および実行される KQL 検索クエリに句を追加します。 たとえば、日付範囲内に作成された電子メールまたはサイト ドキュメントが保留に設定される日付範囲を指定できます。 条件は、AND 演算子によってキーワードのクエリ (キーワード ボックスで指定される) と論理的に接続されます。 つまり、アイテムはキーワード クエリと保留状態の両方を満たす必要があります。
 
-     検索クエリの作成と条件の使用の詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions)」を参照してください。
+     検索クエリの作成と条件の使用の詳細については、「[コンテンツ検索のキーワード クエリと検索条件](/office365/SecurityCompliance/keyword-queries-and-search-conditions)」を参照してください。
 
 11. クエリ ベースの保留リストを構成した後、[**次へ**] をクリックします。
 

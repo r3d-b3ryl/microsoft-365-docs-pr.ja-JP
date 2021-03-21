@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: この記事では、365 メッセージ暗号化の異なるバージョンOffice説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a587e27460d949811f9f30af0244cf325aaadac6
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741338"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927735"
 ---
 # <a name="compare-versions-of-ome"></a>OME のバージョンを比較する
 
@@ -41,7 +41,7 @@ Exchange Online には、電子メール メッセージと添付ファイルの
 
 ### <a name="prepare-for-ad-rms-deprecation"></a>RMS の非推奨AD準備する
 
-Azure Information Protection を既にセットアップ済みで、使用していない場合は、Exchange Online PowerShell を使用してサービスを有効にしてください。 ローカル コンピューターで、組織内のグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用して、別のウィンドウで [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) にWindows PowerShellします。
+Azure Information Protection を既にセットアップ済みで、使用していない場合は、Exchange Online PowerShell を使用してサービスを有効にしてください。 ローカル コンピューターで、組織内のグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用して、別のウィンドウで [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) にWindows PowerShellします。
 
 Azure Information Protection を有効にするには、次のコマンドを入力Set-IrmConfigurationコマンドレットを使用します。
 
@@ -49,7 +49,7 @@ Azure Information Protection を有効にするには、次のコマンドを入
 Set-IrmConfiguration -AzureRMSLicensingEnabled $true
 ```
 
-組織が Azure Information Protection をまだセットアップしていない場合は、RMS から Azure Information Protection に移行AD必要があります。 手順については、「RMS から Azure Information Protection への [移行AD」を参照してください](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)。
+組織が Azure Information Protection をまだセットアップしていない場合は、RMS から Azure Information Protection に移行AD必要があります。 手順については、「RMS から Azure Information Protection への [移行AD」を参照してください](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)。
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>機能と機能を並べて比較する
 

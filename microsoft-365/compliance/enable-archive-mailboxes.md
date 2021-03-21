@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: コンプライアンス センターを使用して、組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効にする方法を説明します。
-ms.openlocfilehash: d7506b92cc16120f1d40a6d5a1744ab38d446a76
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 2bc80d347d1324a317cc2cc2712d475781adc492
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233817"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926517"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>セキュリティ/コンプライアンス センターでアーカイブ メールボックスを有効にする
 
@@ -103,7 +103,7 @@ Microsoft 365 でのアーカイブ (*インプレース アーカイブ* とも
 
 アーカイブ メールボックスを有効にするには、PowerShell を使用することもできます。 PowerShell を使用する主な理由は、組織内のすべてのユーザーのためにアーカイブ メールボックスをすばやく有効にできるということです。
 
-最初の手順は、Exchange Online PowerShell へ接続することです。 手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+最初の手順は、Exchange Online PowerShell へ接続することです。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 Exchange Online に接続したら、次のセクションのコマンドを実行してアーカイブメール ボックスを有効または無効にできます。
 
@@ -151,8 +151,8 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 - アーカイブ メールボックスと Exchange アイテム保持ポリシーの詳細については、次のトピックを参照してください。
 
-  - [Exchange Online での保持タグおよびアイテム保持ポリシー](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+  - [Exchange Online での保持タグおよびアイテム保持ポリシー](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
-  - [Exchange Online の既定のアイテム保持ポリシー](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
+  - [Exchange Online の既定のアイテム保持ポリシー](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
   - [組織のメールボックスについて、アーカイブ削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

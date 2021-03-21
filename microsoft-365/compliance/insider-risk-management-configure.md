@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: d1ac0bd289185f47fc5eb0bbe34c16fbe28bba84
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: a995b6fdbbff36c6466f5e55cda9d7e196fa2c02
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819893"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927031"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -227,7 +227,7 @@ Defender for Endpoint を [インサイダー](/windows/security/threat-protecti
 
 11. 前の手順で **SharePoint** サイト、機密ラベル、機密情報の種類を優先コンテンツとして指定する場合は *、SharePoint* サイトの詳細ページ、機密情報の種類、および機密ラベルが *表示* されます。  ポリシーで優先順位を付ける SharePoint、機密情報の種類、および機密ラベルを定義するには、次の詳細ページを使用します。
 
-    - **SharePoint サイト**: **[SharePoint サイトの追加** ] を選択し、アクセス権を持ち、優先順位を付ける SharePoint 組織を選択します。 たとえば *、"group1@contoso.sharepoint.com/sites/group1" です*。
+    - **SharePoint サイト**: **[SharePoint サイト** の追加] を選択し、アクセス権を持ち、優先順位を付ける SharePoint サイトを選択します。 たとえば *、"group1@contoso.sharepoint.com/sites/group1" です*。
     - **機密情報の種類**: [機密情報 **の種類を追加** する] を選択し、優先順位を付ける機密の種類を選択します。 たとえば *、"米国の銀行口座番号"* と *"クレジット カード番号"* などです。
     - **[感度ラベル]**: [感度 **ラベルの追加] を選択し** 、優先順位を付けるラベルを選択します。 たとえば *、"Confidential" と* *"Secret" などです*。
 
@@ -247,7 +247,7 @@ Defender for Endpoint を [インサイダー](/windows/security/threat-protecti
 16. [次 **へ] を** 選択して続行します。
 17. [確認 **] ページ** で、ポリシーに対して選択した設定と、選択内容に関する提案や警告を確認します。 [ **編集] を** 選択してポリシー値を変更するか、[送信] を選択 **して** ポリシーを作成およびアクティブ化します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 最初のインサイダー リスク管理ポリシーを作成するためにこれらの手順を完了すると、約 24 時間後にアクティビティ インジケーターからアラートの受信を開始します。 この記事の手順 4 のガイダンスまたは「新しいインサイダー リスク ポリシーの作成」の手順を使用して、必要に応じて追加のポリシー [を構成します](insider-risk-management-policies.md#create-a-new-policy)。
 

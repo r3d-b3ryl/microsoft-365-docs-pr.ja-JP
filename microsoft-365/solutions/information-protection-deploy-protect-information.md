@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティ機能とコンプライアンス機能を展開し、個人情報を保護します。
-ms.openlocfilehash: a5bba79f8ab382707b6fd5e448003a0271d690c6
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597240"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928474"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を保護する
 
@@ -38,7 +38,7 @@ ms.locfileid: "50597240"
 ![データプライバシー規制の対象となる個人情報を保護するための主要なサービス](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
->このソリューションでは、データプライバシー規制の対象となる情報を保護するためのセキュリティおよびコンプライアンス機能について説明します。 Microsoft 365 のセキュリティ機能の完全な一覧については [、「Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)セキュリティドキュメント」を参照してください。 Microsoft 365 のコンプライアンス機能の完全な一覧については [、「Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)コンプライアンスドキュメント」を参照してください。
+>このソリューションでは、データプライバシー規制の対象となる情報を保護するためのセキュリティおよびコンプライアンス機能について説明します。 Microsoft 365 のセキュリティ機能の完全な一覧については [、「Microsoft 365](../security/index.yml)セキュリティドキュメント」を参照してください。 Microsoft 365 のコンプライアンス機能の完全な一覧については [、「Microsoft 365](../compliance/index.yml)コンプライアンスドキュメント」を参照してください。
 >
 
 ## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>情報保護管理に影響を与えるデータプライバシー規制
@@ -68,7 +68,7 @@ Microsoft 365 の情報保護スキームを開始するために、次のセク
 Microsoft [の情報保護ソリューションには](../compliance/information-protection.md) 、Microsoft 365、Microsoft Azure、Microsoft Windows の複数の統合機能が含まれます。 Microsoft 365 では、情報保護ソリューションには次のものが含まれます。
 
 - [カスタマー キーによるサービスの暗号化](../compliance/customer-key-overview.md)
-- [機密情報の種類](../compliance/what-the-sensitive-information-types-look-for.md)(データプライバシーリスクの評価と機密アイテムの識別に関する記事[で説明)](information-protection-deploy-assess.md)
+- [機密情報の種類](../compliance/sensitive-information-type-entity-definitions.md)(データプライバシーリスクの評価と機密アイテムの識別に関する記事[で説明)](information-protection-deploy-assess.md)
 - [秘密度ラベル](../compliance/sensitivity-labels.md) 
   - サービス/コンテナー レベル
   - クライアント側/コンテンツ レベル
@@ -81,10 +81,10 @@ Microsoft [の情報保護ソリューションには](../compliance/information
 
 Microsoft 365 以外の他の情報保護機能の詳細については、以下を参照してください。
 
-- [Microsoft Cloud Application Security (MCAS)](https://docs.microsoft.com/cloud-app-security/)
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
+- [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
+- [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
-- [Windows 情報保護](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+- [Windows 情報保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 ## <a name="sensitivity-labels"></a>秘密度ラベル
 

@@ -1,5 +1,5 @@
 ---
-title: DAP パートナー用の Windows PowerShell を使用して顧客のテナントレポートデータを取得する
+title: DAP パートナー向けデータを使用して顧客Windows PowerShellレポート データを取得する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,27 +15,27 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 概要:Microsoft Exchange Online用のリモートWindows PowerShellを使用して、個々の顧客テナントからレポートを取得します。
-ms.openlocfilehash: 24d56fffa60232c4ea39f4fe7769131cab23be2f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8ea5f9834bfcc0d517fc1e0938c3547d88d1d8a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691685"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927218"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell を使用して顧客のテナント レポート データを取得する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft Exchange Online のリモート Windows PowerShell を使用して、個々の顧客のテナントからレポートを取得します。
+個々の顧客Windows PowerShellからMicrosoft Exchange Onlineを取得するには、リモート サーバーを使用します。
   
-シンジケートおよびクラウドソリューションプロバイダー (CSP) パートナーは、Exchange Online PowerShell のリモート Windows PowerShell を使用して、顧客テナントレポートを構成するデータに直接アクセスできます。 これにより、パートナーはレポートのデータを収集および保存してから、その他の操作を実行できます。 リモート接続を開いた後、顧客テナンシーに関するレポート データを取得することは、顧客テナンシーに対してなんらかのコマンドレットを実行することと同じです。
+シンジケーションおよびクラウド ソリューション プロバイダー (CSP) パートナーは、Exchange Online PowerShell 用のリモート サーバー経由で顧客テナント レポートを直接構成するデータWindows PowerShellアクセスできます。 これにより、パートナーはレポートのデータを収集および保存してから、その他の操作を実行できます。 リモート接続を開いた後、顧客テナンシーに関するレポート データを取得することは、顧客テナンシーに対してなんらかのコマンドレットを実行することと同じです。
   
-この記事では、Exchange Online のリモート Windows PowerShell を使用して、1つの顧客のテナントに接続し、レポートを取得します。 既定では、Windows PowerShell は複数の顧客テナンシーからレポート データを集約することをサポートしていません。 この手順で取得するレポートは、接続先の  _DelegatedOrg_ のレポートのみです。
+この記事では、Exchange Online のリモート Windows PowerShellを使用して、単一の顧客テナントに接続し、レポートを取得します。 既定では、Windows PowerShell は複数の顧客テナンシーからレポート データを集約することをサポートしていません。 この手順で取得するレポートは、接続先の  _DelegatedOrg_ のレポートのみです。
   
  
 ## <a name="before-you-begin"></a>はじめに
 
-- Exchange Online テナントへの接続は、リモートの Windows PowerShell を使用して行う必要があります。手順については、「[委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)」を参照してください。
+- Exchange Online テナントへの接続は、リモートの Windows PowerShell を使用して行う必要があります。手順については、「[委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
     
 ## <a name="run-the-get-stalemailboxreport-sample"></a>Get-StaleMailboxReport のサンプルを実行する
 
@@ -51,9 +51,8 @@ Exchange Online、Lync Online、および SharePoint Online には使用でき�
 
 #### 
 
-[Office 365 レポート Web サービス](https://go.microsoft.com/fwlink/p/?LinkId=532777)
+[Office 365 レポート Web サービス](/previous-versions/office/developer/o365-enterprise-developers/jj984325(v=office.15))
   
-[Get-CsClientDeviceDetailReport](https://go.microsoft.com/fwlink/p/?LinkId=526430)
+[Get-CsClientDeviceDetailReport](/powershell/module/exchange/get-csclientdevicedetailreport)
   
 [パートナーのヘルプ](https://go.microsoft.com/fwlink/p/?LinkID=533477)
-
