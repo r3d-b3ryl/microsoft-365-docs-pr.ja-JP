@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 サービスへの安全なアクセスを構成する
-description: ベースライン、機密性の高い、機密性の高い保護の 3 つの層に対して MFA、条件付きアクセス、関連ポリシーを実装するための基準ガイダンスを示します。
+title: Microsoft 365 サービスへのセキュリティで保護されたアクセスを構成する
+description: ベースライン、機密性の高い、機密性の高い 3 つの保護層に対して MFA、条件付きアクセス、および関連するポリシーを実装するための基準ガイダンスを見つける。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,13 +12,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 00d6c1dd842cd906547f0d450a41052aaa466d35
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: 11cd4222978487b23a12262ec3b7e8d6a0fcf230
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771801"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916360"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="8da62-103">Microsoft 365 サービスへの安全なアクセスを構成する</span><span class="sxs-lookup"><span data-stu-id="8da62-103">Configure secure access to Microsoft 365 services</span></span>
+# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="8be9f-103">Microsoft 365 サービスへのセキュリティで保護されたアクセスを構成する</span><span class="sxs-lookup"><span data-stu-id="8be9f-103">Configure secure access to Microsoft 365 services</span></span>
 
-<span data-ttu-id="8da62-104">このソリューションは[、"M365 ゴールデン](https://aka.ms/m365goldenconfig)構成" に基づいており、MFA、条件付きアクセス、および関連するポリシーを実装するための、ベースライン、機密性の高い、機密性の高い 3 つの層の保護ポリシーに関する説明です。</span><span class="sxs-lookup"><span data-stu-id="8da62-104">This solution is based on the "[M365 golden config](https://aka.ms/m365goldenconfig)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span> 
+<span data-ttu-id="8be9f-104">このソリューションは、ベースライン、機密性の高い、機密性の高い 3 つの保護層に対して MFA、条件付きアクセス、および関連するポリシーを実装するための[、"M365 ゴールデン](../security/office-365-security/microsoft-365-policies-configurations.md)構成" に基づいて作成されています。</span><span class="sxs-lookup"><span data-stu-id="8be9f-104">This solution is based on the "[M365 golden config](../security/office-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
