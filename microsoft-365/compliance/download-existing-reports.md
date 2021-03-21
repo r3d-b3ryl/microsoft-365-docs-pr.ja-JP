@@ -1,5 +1,5 @@
 ---
-title: セキュリティ/コンプライアンスセンターで既存のレポートをダウンロードする &amp;
+title: セキュリティ コンプライアンス センターで既存のレポートを &amp; ダウンロードする
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,35 +14,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: セキュリティ/コンプライアンスセンターで、既存のレポートをダウンロードする方法について説明し &amp; ます。
-ms.openlocfilehash: 4dd5716bef6f04c5f665b7d3a000362a91f3c31a
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+description: セキュリティ コンプライアンス センターで 1 つ以上の既存のレポートをダウンロードする方法 &amp; について学習します。
+ms.openlocfilehash: 92f48ee29b310ca2924b2caf29ef2c062461cfd2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201413"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926613"
 ---
-# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a><span data-ttu-id="24047-103">セキュリティ/コンプライアンスセンターで既存のレポートをダウンロードする &amp;</span><span class="sxs-lookup"><span data-stu-id="24047-103">Download existing reports in the Security &amp; Compliance Center</span></span>
+# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a><span data-ttu-id="bdc41-103">セキュリティ コンプライアンス センターで既存のレポートを &amp; ダウンロードする</span><span class="sxs-lookup"><span data-stu-id="bdc41-103">Download existing reports in the Security &amp; Compliance Center</span></span>
 
-<span data-ttu-id="24047-104">セキュリティ/ [ &amp; コンプライアンスセンター](https://protection.office.com)では、組織のセキュリティチームが組織に対する脅威を軽減して対処するのに役立つ、いくつかの[レポートと分析](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)情報が提供されています。</span><span class="sxs-lookup"><span data-stu-id="24047-104">In the [Security &amp; Compliance Center](https://protection.office.com), several [reports and insights](../security/office-365-security/reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization.</span></span> <span data-ttu-id="24047-105">組織のセキュリティチームのメンバーである場合は、1つまたは複数の既存のレポートをダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="24047-105">If you're a member of your organization's security team, you can download one or more existing reports.</span></span> 
+<span data-ttu-id="bdc41-104">セキュリティ コンプライアンス[センター &amp; では、](https://protection.office.com)[組織の](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)セキュリティ チームが組織の脅威を軽減して対処するために、いくつかのレポートと分析情報を利用できます。</span><span class="sxs-lookup"><span data-stu-id="bdc41-104">In the [Security &amp; Compliance Center](https://protection.office.com), several [reports and insights](../security/office-365-security/reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization.</span></span> <span data-ttu-id="bdc41-105">組織のセキュリティ チームのメンバーである場合は、1 つ以上の既存のレポートをダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="bdc41-105">If you're a member of your organization's security team, you can download one or more existing reports.</span></span> 
   
-## <a name="download-existing-reports"></a><span data-ttu-id="24047-106">既存のレポートをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="24047-106">Download existing reports</span></span>
+## <a name="download-existing-reports"></a><span data-ttu-id="bdc41-106">既存のレポートをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="bdc41-106">Download existing reports</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="24047-107">[セキュリティ/ &amp; コンプライアンスセンターで、必要なアクセス許可が割り当てら](../security/office-365-security/protect-against-threats.md)れていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="24047-107">Make sure that you have the necessary [permissions assigned in the Security &amp; Compliance Center](../security/office-365-security/protect-against-threats.md).</span></span> <span data-ttu-id="24047-108">一般に、全体管理者、セキュリティ管理者、およびセキュリティ閲覧者は、セキュリティコンプライアンスセンターでレポートにアクセスでき &amp; ます。</span><span class="sxs-lookup"><span data-stu-id="24047-108">In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center.</span></span> 
+> <span data-ttu-id="bdc41-107">セキュリティ コンプライアンス センターで必要な [アクセス許可が割り当てられているか &amp; 確認します](../security/office-365-security/protect-against-threats.md)。</span><span class="sxs-lookup"><span data-stu-id="bdc41-107">Make sure that you have the necessary [permissions assigned in the Security &amp; Compliance Center](../security/office-365-security/protect-against-threats.md).</span></span> <span data-ttu-id="bdc41-108">一般に、グローバル管理者、セキュリティ管理者、およびセキュリティ 閲覧者は、セキュリティ コンプライアンス センターのレポートに &amp; アクセスできます。</span><span class="sxs-lookup"><span data-stu-id="bdc41-108">In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center.</span></span> 
   
-1. <span data-ttu-id="24047-109">セキュリティ/ [ &amp; コンプライアンスセンター](https://protection.office.com)で、[**レポート**レポート] に移動 \> し**てダウンロード**します。</span><span class="sxs-lookup"><span data-stu-id="24047-109">In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Reports for download**.</span></span>
+1. <span data-ttu-id="bdc41-109">セキュリティ コンプライアンス [センター &amp; で、[](https://protection.office.com)レポートレポート] **に** \> **移動してダウンロードします**。</span><span class="sxs-lookup"><span data-stu-id="bdc41-109">In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Reports for download**.</span></span>
 
-2. <span data-ttu-id="24047-110">リストから1つ以上のアイテムを選択します。</span><span class="sxs-lookup"><span data-stu-id="24047-110">Select one or more items in the list.</span></span>
+2. <span data-ttu-id="bdc41-110">リスト内の 1 つ以上のアイテムを選択します。</span><span class="sxs-lookup"><span data-stu-id="bdc41-110">Select one or more items in the list.</span></span>
 
-3. <span data-ttu-id="24047-111">[**レポートのダウンロード**] をクリックし、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="24047-111">Click **Download report**, and then click **Close**.</span></span>
+3. <span data-ttu-id="bdc41-111">[レポート **のダウンロード] を** クリックし、[閉じる] **をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="bdc41-111">Click **Download report**, and then click **Close**.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="24047-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="24047-112">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="bdc41-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="bdc41-112">Related topics</span></span>
 
-[<span data-ttu-id="24047-113">セキュリティ/コンプライアンスセンターのレポートと分析 &amp;</span><span class="sxs-lookup"><span data-stu-id="24047-113">Reports and insights in the Security &amp; Compliance Center</span></span>](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[<span data-ttu-id="bdc41-113">セキュリティ コンプライアンス センターのレポート &amp; と分析情報</span><span class="sxs-lookup"><span data-stu-id="bdc41-113">Reports and insights in the Security &amp; Compliance Center</span></span>](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
-[<span data-ttu-id="24047-114">セキュリティ/コンプライアンスセンターでレポートのスケジュールを作成する &amp;</span><span class="sxs-lookup"><span data-stu-id="24047-114">Create a schedule for a report in the Security &amp; Compliance Center</span></span>](../security/office-365-security/create-a-schedule-for-a-report.md)
+[<span data-ttu-id="bdc41-114">セキュリティ コンプライアンス センターでレポートのスケジュールを &amp; 作成する</span><span class="sxs-lookup"><span data-stu-id="bdc41-114">Create a schedule for a report in the Security &amp; Compliance Center</span></span>](../security/office-365-security/view-reports-for-atp.md)
   
-[<span data-ttu-id="24047-115">セキュリティ/コンプライアンスセンターでレポートのスケジュールを管理する &amp;</span><span class="sxs-lookup"><span data-stu-id="24047-115">Manage schedules for reports in the Security &amp; Compliance Center</span></span>](../security/office-365-security/manage-schedules-for-multiple-reports.md)
+[<span data-ttu-id="bdc41-115">セキュリティ コンプライアンス センターでレポートのスケジュールを &amp; 管理する</span><span class="sxs-lookup"><span data-stu-id="bdc41-115">Manage schedules for reports in the Security &amp; Compliance Center</span></span>](../security/office-365-security/view-reports-for-atp.md)
   
-[<span data-ttu-id="24047-116">セキュリティ/コンプライアンスセンターでカスタムレポートをダウンロードする &amp;</span><span class="sxs-lookup"><span data-stu-id="24047-116">Download a custom report in the Security &amp; Compliance Center</span></span>](../security/office-365-security/set-up-and-download-a-custom-report.md)
+[<span data-ttu-id="bdc41-116">セキュリティ コンプライアンス センターでカスタム レポート &amp; をダウンロードする</span><span class="sxs-lookup"><span data-stu-id="bdc41-116">Download a custom report in the Security &amp; Compliance Center</span></span>](../security/office-365-security/view-reports-for-atp.md)

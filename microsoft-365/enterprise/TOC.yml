@@ -23,7 +23,7 @@
     - name: 展開
       items:
         - name: ドメインの追加
-          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+          href: ../admin/setup/add-domain.md
         - name: エンドポイントを構成してバイパスする
           items:
             - name: Office 365 IP アドレスと URL の Web サービス
@@ -49,7 +49,7 @@
             - name: 中国ユーザー向け Microsoft 365 の最適化
               href: microsoft-365-networking-china.md
             - name: ネイティブ Windows 10 VPN クライアントでリモートワーカーのための Microsoft 365 のトラフィックを最適化する
-              href: 'https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization'
+              href: /windows/security/identity-protection/vpn/vpn-office-365-optimization
         - name: Office 365 向け ExpressRoute
           href: azure-expressroute.md
           items:
@@ -126,7 +126,7 @@
             - name: シングル サインオン
               href: microsoft-365-client-support-single-sign-on.md
             - name: 基本的なモビリティ セキュリティと Intune のどちらかを選択する
-              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
+              href: /office365/securitycompliance/choose-between-mdm-and-intune
         - name: ハイブリッド先進認証
           items:
             - name: Skype for Business Server と Exchange Server の前提条件
@@ -147,13 +147,13 @@
                 - name: Office 2007 サーバー/クライアントからアップグレードする
                   href: upgrade-from-office-2007-servers-and-products.md
                 - name: Office 2007 デスクトップ
-                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2007-end-support-roadmap'
+                  href: /DeployOffice/endofsupport/office-2007-end-support-roadmap
                 - name: Exchange 2007
                   href: exchange-2007-end-of-support.md
                 - name: SharePoint 2007
                   href: sharepoint-2007-end-of-support.md
                 - name: Office Communications Server
-                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
                 - name: PerformancePoint Server 2007
                   href: pps-2007-end-of-support.md
                 - name: Project Server 2007
@@ -163,13 +163,13 @@
                 - name: Office 2010 サーバー/クライアントからアップグレードする
                   href: upgrade-from-office-2010-servers-and-products.md
                 - name: Office 2010 デスクトップ
-                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2010-end-support-roadmap'
+                  href: /DeployOffice/endofsupport/office-2010-end-support-roadmap
                 - name: Exchange 2010
                   href: exchange-2010-end-of-support.md
                 - name: SharePoint 2010
                   href: upgrade-from-sharepoint-2010.md
                 - name: Lync Server 2010
-                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
                 - name: Project Server 2010
                   href: project-server-2010-end-of-support.md
         - name: Microsoft 365 でのテナントの分離
@@ -178,9 +178,9 @@
             - name: Azure Active Directory Domain Services での分離とアクセス制御
               href: microsoft-365-isolation-in-azure-active-directory.md
             - name: テナント境界の監視とテスト
-              href: microsoft-365-monitoring-and-testing.md
+              href: /compliance/assurance/assurance-monitoring-and-testing
             - name: リソースの制限
-              href: microsoft-365-resource-limits.md
+              href: /compliance/assurance/assurance-resource-limits
             - name: 分離とアクセス制御
               href: microsoft-365-isolation-in-microsoft-365.md
             - name: 検索でのテナントの分離
@@ -192,7 +192,7 @@
     - name: 展開
       items:
         - name: ドメインの追加
-          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+          href: ../admin/setup/add-domain.md
     - name: 管理
       items:
         - name: Microsoft 365 サービス正常性の状態
@@ -321,7 +321,7 @@
                 - name: 概要
                   href: hybrid-solutions.md
                 - name: SharePoint Server 2016 認証に Azure Active Directory を使用する
-                  href: using-azure-ad-for-sharepoint-server-authentication.md
+                  href: /azure/active-directory/saas-apps/sharepoint-on-premises-tutorial
                 - name: オンプレミス ネットワークを Azure 仮想ネットワークに接続する
                   href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
                 - name: Azure IaaS でディレクトリ同期サーバーを展開する
@@ -386,13 +386,13 @@
             - name: Office 2007 サーバー/クライアントからアップグレードする
               href: upgrade-from-office-2007-servers-and-products.md
             - name: Office 2007 デスクトップ
-              href: 'https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap'
+              href: /DeployOffice/office-2007-end-support-roadmap
             - name: Exchange 2007
               href: exchange-2007-end-of-support.md
             - name: SharePoint 2007
               href: sharepoint-2007-end-of-support.md
             - name: Office Communications Server
-              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+              href: /skypeforbusiness/plan-your-deployment/upgrade
             - name: PerformancePoint Server 2007
               href: pps-2007-end-of-support.md
             - name: Project Server 2007
@@ -402,13 +402,13 @@
             - name: Office 2010 サーバー/クライアントからアップグレードする
               href: upgrade-from-office-2010-servers-and-products.md
             - name: Office 2010 デスクトップ
-              href: 'https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap'
+              href: /DeployOffice/office-2010-end-support-roadmap
             - name: Exchange 2010
               href: exchange-2010-end-of-support.md
             - name: SharePoint 2010
               href: upgrade-from-sharepoint-2010.md
             - name: Lync Server 2010
-              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+              href: /skypeforbusiness/plan-your-deployment/upgrade
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 - name: コンプライアンス
@@ -424,13 +424,13 @@
         - name: 準備する
           href: configure-services-and-applications.md
         - name: Exchange Online
-          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+          href: /Exchange/exchange-online
         - name: SharePoint
-          href: 'https://docs.microsoft.com/sharepoint/sharepoint-online'
+          href: /sharepoint/sharepoint-online
         - name: Skype for Business
-          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+          href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: 'https://docs.microsoft.com/MicrosoftTeams/Teams-overview'
+          href: /MicrosoftTeams/Teams-overview
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
         - name: Azure 著作権管理
@@ -438,7 +438,7 @@
         - name: リリース オプションの構成
           href: 'https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47'
         - name: ユーザーをトレーニングする
-          href: 'https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users'
+          href: /office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users
     - name: 管理
       items:
         - name: サービス正常性の確認方法
@@ -446,13 +446,13 @@
         - name: サポート オプション
           href: 'https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b'
         - name: Exchange Online
-          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+          href: /Exchange/exchange-online
         - name: SharePoint
           href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
         - name: Skype for Business
-          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+          href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: 'https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide'
+          href: //MicrosoftTeams/quality-of-experience-review-guide
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
         - name: パフォーマンスとチューニング
@@ -473,21 +473,21 @@
             - name: Skype for Business Online のパフォーマンスの調整
               href: tune-skype-for-business-online-performance.md
             - name: Project Online のパフォーマンスの調整
-              href: 'https://docs.microsoft.com/ProjectOnline/tune-project-online-performance'
+              href: /ProjectOnline/tune-project-online-performance
             - name: パフォーマンスのトラブルシューティングの計画
               href: performance-troubleshooting-plan.md
 - name: Windows 10
-  href: 'https://docs.microsoft.com/windows/deployment/'
+  href: /windows/deployment/
 - name: Microsoft 365 Apps for enterprise
-  href: 'https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps'
+  href: /deployoffice/deployment-guide-microsoft-365-apps
 - name: Surface デバイス
-  href: 'https://docs.microsoft.com/surface/deploy'
+  href: /surface/deploy
 - name: デバイスの管理
   items:
     - name: ロードマップ
       href: device-management-roadmap-microsoft-365.md
 - name: Microsoft Edge
-  href: 'https://docs.microsoft.com/deployedge/deploy-edge-plan-deployment'
+  href: /deployedge/deploy-edge-plan-deployment
 - name: 展開および更新プログラム チャネルの構成例
   items:
     - name: 概要
@@ -568,7 +568,7 @@
         - name: SharePoint Online サイト グループを管理する
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: Exchange Online を管理する
-      href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
+      href: /powershell/exchange/connect-to-exchange-online-powershell
     - name: メールを Microsoft 365 に移行するには、PowerShell を使用します。
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items:
@@ -586,11 +586,11 @@
         - name: 委任アクセス許可パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: 委任アクセス許可パートナー用リモート Windows PowerShell 経由で Exchange Online に接続する
-          href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
+          href: /powershell/exchange/connect-to-exchange-online-powershell
         - name: 委任アクセス許可パートナー用 Windows PowerShell 経由で顧客レポート データを取得する
           href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Microsoft Teams を管理する
-      href: 'https://docs.microsoft.com/microsoftteams/teams-powershell-install'
+      href: /microsoftteams/teams-powershell-install
     - name: Skype for Business Online を管理する
       href: manage-skype-for-business-online-with-microsoft-365-powershell.md
       items:
@@ -678,15 +678,15 @@
 - name: Microsoft 365 のアーキテクチャとソリューション
   href: ../solutions/index.yml
 - name: クラウドサービスによるエンタープライズ ビジネスの継続性の管理 (EBCM)
-  href: ebcm-understanding-ebcm-with-cloud-services.md
+  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
   items:
     - name: 顧客およびクラウド パートナーの EBCM 責任
-      href: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
+      href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities
     - name: Microsoft 365 クラウド サービスの回復性
-      href: ebcm-m365-service-resiliency.md
+      href: /compliance/assurance/assurance-m365-service-resiliency
     - name: 継続性計画を立てる
-      href: ebcm-developing-your-ebcm-plan.md
+      href: /compliance/assurance/assurance-developing-your-ebcm-plan
     - name: サービス インシデント対策のシナリオ
-      href: ebcm-microsoft-365-mitigations.md
+      href: /compliance/assurance/assurance-microsoft-365-mitigations
 - name: Microsoft 365 for Business
   href: ../admin/index.yml
