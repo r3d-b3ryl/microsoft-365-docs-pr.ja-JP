@@ -19,12 +19,12 @@ description: セキュリティ コンプライアンス センターでエク�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 614cd7c256fe8af5fd7474a2101f937b1ecfd0d3
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3f8f8dfc5cf1066b4ebcf166487bfcdb0a8b2db7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406410"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922500"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -341,7 +341,7 @@ ETR 検索と名前の可用性は、割り当てられている特定の役割�
 :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="検出場所と検出された脅威 (ここでは、ユーザーのフィッシング偽装) を示す保護されたユーザーの脅威エクスプローラーの詳細ウィンドウ。":::
 
 > [!TIP]
-> **最適な結果を得** るためには、完全 *なメール アドレスを使用して* 保護されたユーザーを検索します。 たとえば、ユーザーの偽装を調査する場合など、保護されたユーザーを検索すると、より迅速 *かつ* firstname.lastname@contoso.com見つけ出されます。 保護されたドメインを検索すると、ルート ドメイン (たとえば、contoso.com) とドメイン名 *(contoso)* が取得されます。 ルート ドメイン を検索すると、contoso.comの偽装とドメイン名 contoso *のcontoso.com* 両方が返 *されます*。
+> **最適な結果を得** るためには、完全 *なメール アドレスを使用して* 保護されたユーザーを検索します。 たとえば、ユーザーの偽装を調査する場合など、保護されたユーザーを検索すると、より迅速 *かつ* firstname.lastname@contoso.com 見つけ出されます。 保護されたドメインを検索すると、ルート ドメイン (たとえば、contoso.com) とドメイン名 *(contoso)* が取得されます。 ルート ドメイン を検索すると、contoso.com の偽装とドメイン *名 contoso の contoso.com* 両方が返 *されます*。
 
 ### <a name="preview-email-header-and-download-email-body"></a>メール ヘッダーのプレビューとメール本文のダウンロード
 
@@ -507,7 +507,7 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
 この記事で説明するシナリオに加えて、エクスプローラー (またはリアルタイム検出) で使用できるレポート オプションも多数用意されています。 次の記事をご覧ください。
 
 - [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
-- [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイルを表示する](malicious-files-detected-in-spo-odb-or-teams.md)
+- [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイルを表示する](./atp-for-spo-odb-and-teams.md)
 - [脅威エクスプローラー (およびリアルタイム検出) のビューの概要を取得する](threat-explorer-views.md)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
 - [Microsoft Threat Protection での自動調査および対応](../mtp/mtp-autoir.md)
@@ -528,7 +528,7 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
   - セキュリティ管理者 (これは Azure Active Directory 管理センター ( ) で割り当 <https://aad.portal.azure.com> てることができます。
   - セキュリティ閲覧者
 
-- Exchange Online の場合は、Exchange 管理センター ( ) または Exchange Online PowerShell で次のいずれかの役割が割り <https://admin.protection.outlook.com/ecp/> [当てられている必要があります](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)。
+- Exchange Online の場合は、Exchange 管理センター ( ) または Exchange Online PowerShell で次のいずれかの役割が割り <https://admin.protection.outlook.com/ecp/> [当てられている必要があります](/powershell/exchange/exchange-online-powershell)。
 
   - 組織の管理
   - 表示専用組織の管理
@@ -538,14 +538,14 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
 役割とアクセス許可の詳細については、次のリソースを参照してください。
 
 - [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
-- [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+- [Exchange Online の機能アクセス許可](/exchange/permissions-exo/feature-permissions)
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出の違い
 
 - リアルタイム *検出レポートは* 、Defender で 365 プラン 1 Office使用できます。 *脅威エクスプローラー* は、Defender for Office 365 プラン 2 で利用できます。
 - リアルタイム検出レポートを使用すると、リアルタイムで検出を表示できます。 脅威エクスプローラーも同様にこれを実行しますが、特定の攻撃に関する追加の詳細も提供します。
 - すべての *電子メール ビュー* は脅威エクスプローラーで使用できますが、リアルタイム検出レポートでは使用できません。
-- 脅威エクスプローラーには、より多くのフィルター機能と使用可能なアクションが含まれています。 詳細については [、「Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 プラン」を参照してください](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 脅威エクスプローラーには、より多くのフィルター機能と使用可能なアクションが含まれています。 詳細については [、「Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 プラン」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="other-articles"></a>その他の記事
 

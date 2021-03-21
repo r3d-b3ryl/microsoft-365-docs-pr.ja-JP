@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender でインシデント API を一覧表示する
-description: Microsoft 365 Defender でインシデント API を一覧表示する方法について説明します
-keywords: リスト、インシデント、インシデント、API
+description: Microsoft 365 Defender でインシデント API を一覧表示する方法について説明します。
+keywords: リスト, インシデント, インシデント, API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 39a170a1845ab33f67d77b2de3d5f298f67fdc99
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d1e2ceb4c5cc662fe0aff248f2d0662ad6a2cc82
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932072"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922236"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデント API を一覧表示する
 
@@ -37,31 +37,31 @@ ms.locfileid: "49932072"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> 一部の情報は、製品のリリース前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 
 ## <a name="api-description"></a>API の説明
 
-リスト インシデント API を使用すると、インシデントを並べ替え、情報に基づいたサイバーセキュリティ対応を作成できます。 環境保持ポリシーで指定した時間範囲内に、ネットワーク内でフラグが設定されたインシデントのコレクションが公開されます。 最新のインシデントがリストの一番上に表示されます。 各インシデントには、関連するアラートとその関連エンティティの配列が含まれる。
+リスト インシデント API を使用すると、インシデントを並べ替え、情報に基づいたサイバーセキュリティ対応を作成できます。 環境保持ポリシーで指定した時間範囲内で、ネットワークでフラグが設定されたインシデントのコレクションが公開されます。 最新のインシデントがリストの上部に表示されます。 各インシデントには、関連するアラートとその関連エンティティの配列が含まれる。
 
-この API は、次の **OData 演算子をサポート** しています。
+API では、次の **OData 演算子がサポート** されています。
 
-- `$filter`on `lastUpdateTime` `createdTime` `status` 、、、properties `assignedTo`
-- `$top`、最大値は **100 です。**
+- `$filter` on `lastUpdateTime` the `createdTime` , , and `status` `assignedTo` properties
+- `$top`で、最大値 **は 100 です。**
 - `$skip`
 
 ## <a name="limitations"></a>制限事項
 
 1. 最大ページ サイズは **100 インシデントです**。
-2. 要求の最大速度は **、1 分あたり 50 回****、1 時間あたり 1500 件の通話です**。
+2. 要求の最大レートは **、1 分あたり 50 通話****、1 時間あたり 1500 通話です**。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Access Microsoft 365 Defender API」を参照してください](api-access.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Access Microsoft 365 Defender API」を参照してください。](api-access.md)
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
-アプリケーション | Incident.Read.All | すべてのインシデントの読み取り
+アプリケーション | Incident.Read.All | すべてのインシデントを読み取る
 アプリケーション | Incident.ReadWrite.All | すべてのインシデントの読み取りおよび書き込み
 委任 (職場または学校のアカウント) | Incident.Read | インシデントの読み取り
 委任 (職場または学校のアカウント) | Incident.ReadWrite | インシデントの読み取りおよび書き込み
@@ -69,7 +69,7 @@ ms.locfileid: "49932072"
 > [!Note]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、ポータルでインシデントに対する表示権限を持っている必要があります。
+> - ユーザーは、ポータルでインシデントの表示アクセス許可を持っている必要があります。
 > - 応答には、ユーザーが公開されているインシデントだけが含まれます。
 
 ## <a name="http-request"></a>HTTP 要求
@@ -82,7 +82,7 @@ GET /api/incidents
 
 名前 | 種類 | 説明
 -|-|-
-Authorization | String | ベアラー {トークン}。 **Required**
+Authorization | String | ベアラー {token}。 **必須**
 
 
 ## <a name="request-body"></a>要求本文
@@ -91,7 +91,7 @@ Authorization | String | ベアラー {トークン}。 **Required**
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文でインシデントの一覧 `200 OK` を返します。 [](api-incident.md)
+成功した場合、このメソッドは `200 OK` 応答本文のインシデントの一 [覧](api-incident.md) を返します。
 
 ## <a name="schema-mapping"></a>スキーマ マッピング
 
@@ -100,86 +100,86 @@ Authorization | String | ベアラー {トークン}。 **Required**
 フィールド名 | 説明 | 値の例
 -|-|-
 incidentId | インシデントを表す一意の識別子 | 924565
-redirectIncidentId | インシデント処理ロジックの一部として、インシデントが別のインシデントとグループ化されている場合にのみ入力されます。 | 924569
-incidentName | すべてのインシデントで使用可能な文字列値。 | ランサムウェア アクティビティ
-createdTime | インシデントが最初に作成された時刻。 | 2020-09-06T14:46:57.0733333Z
-lastUpdateTime | バックエンドでインシデントが最後に更新された時刻。<br /><br /> このフィールドは、インシデントが取得される時間の範囲の要求パラメーターを設定するときに使用できます。 | 2020-09-06T14:46:57.29Z
-assignedTo | インシデントの所有者、または *所有者が割り* 当てられていない場合は null。 | secop2@contoso.com
-classification | インシデントの仕様。 プロパティの値は *、Unknown、FalsePositive、TruePositive**です。*  | 不明
-判断 | インシデントの決定を指定します。 プロパティの値は次のとおりです *。NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting*、 *UnwantedSoftware*、 *Other* | NotAvailable
-status | インシデント (アクティブまたは解決 *済* み) *を分類します*。 これは、インシデントへの対応を整理して管理するのに役立ちます。 | Active
-severity | 資産への影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高いアイテムでは、最も迅速な注意が必要です。<br /><br />次のいずれかの値:*情報、低**、** 中、および *高。* | 中
-tags | 共通の特性を持つインシデントのグループにフラグを設定する場合など、インシデントに関連付けられたカスタム タグの配列。 | \[\]
-アラート | インシデントに関連するアラートのすべてと、重大度、アラートに関与したエンティティ、アラートのソースなどのその他の情報を含む配列。 | \[\] (下記のアラート フィールドの詳細を参照してください)
+redirectIncidentId | インシデント処理ロジックの一部として、インシデントが別のインシデントとグループ化されている場合にのみ設定されます。 | 924569
+incidentName | すべてのインシデントで使用できる文字列値。 | ランサムウェアのアクティビティ
+createdTime | インシデントが最初に作成された時刻。 | 2020-09-06T14:46:57.073333Z
+lastUpdateTime | バックエンドでインシデントが最後に更新された時刻。<br /><br /> このフィールドは、インシデントが取得される時間の範囲に対して要求パラメーターを設定するときに使用できます。 | 2020-09-06T14:46:57.29Z
+assignedTo | インシデントの所有者、または所有者 *が割り当* てられていない場合は null。 | secop2@contoso.com
+classification | インシデントの仕様。 プロパティの値は次 *のとおりです。不明**、FalsePositive、TruePositive*  | 不明
+決定 | インシデントの決定を指定します。 プロパティの値は次 *のとおりです。 NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting*、 *UnwantedSoftware*、*その* 他 | NotAvailable
+status | インシデント (アクティブ *、または解決* 済み) *を分類します*。 インシデントに対する対応を整理および管理するのに役立ちます。 | 有効
+severity | アセットへの影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高い項目では、最も迅速な注意が必要です。<br /><br />次のいずれかの値: Informational、Low、*Medium、High です。   | 中
+tags | インシデントに関連付けられたカスタム タグの配列 。たとえば、共通の特性を持つインシデントのグループにフラグを設定します。 | \[\]
+アラート | インシデントに関連するアラートのすべてと、重大度、アラートに関係していたエンティティ、アラートのソースなどのその他の情報を含む配列。 | \[\] (以下のアラート フィールドの詳細を参照してください)
 
-### <a name="alerts-metadata"></a>通知メタデータ
+### <a name="alerts-metadata"></a>アラート メタデータ
 
 フィールド名 | 説明 | 値の例
 -|-|-
 alertId | アラートを表す一意の識別子 | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId | このアラートが関連付けられているインシデントを表す一意の識別子 | 924565
-serviceSource | Microsoft Defender for Endpoint、Microsoft Cloud App Security、Id 用 Microsoft Defender、Microsoft Defender for Office 365 など、アラートの発信元となるサービス。 | MicrosoftCloudAppSecurity
+serviceSource | Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365 など、アラートの発生元となるサービス。 | MicrosoftCloudAppSecurity
 creationTime | アラートが最初に作成された時刻。 | 2020-09-06T14:46:55.7182276Z
-lastUpdatedTime | バックエンドでアラートが最後に更新された時刻。 | 2020-09-06T14:46:57.2433333Z
+lastUpdatedTime | バックエンドでアラートが最後に更新された時刻。 | 2020-09-06T14:46:57.243333Z
 resolvedTime | アラートが解決された時刻。 | 2020-09-10T05:22:59Z
-firstActivity | バックエンドでアクティビティが更新されたとアラートが最初に報告された時刻。| 2020-09-04T05:22:59Z
-タイトル | 各アラートで使用可能な文字列値を簡単に識別します。 | ランサムウェア アクティビティ
-説明 | 各アラートを説明する文字列値。 | ユーザー Test User2 (testUser2@contoso.com) は、一般的でない拡張子 *の herunterladen* で終わる複数の拡張子を持つ 99 のファイルを操作しました。 これは、異常な数のファイル操作であり、潜在的なランサムウェア攻撃を示しています。
-category | キル チェーンに沿った攻撃の進行状況を視覚的および数値で表示します。 [MITRE ATT&CK™配置されます](https://attack.mitre.org/)。 | 影響
-status | アラート (新規、アクティブ *、* または解決 *済み) を分類します*。 これは、アラートへの応答を整理して管理するのに役立ちます。 | 新規
-severity | 資産への影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高いアイテムでは、最も迅速な注意が必要です。<br>次のいずれかの値:*情報、低**、** 中、および *高。* | 中
+firstActivity | アクティビティがバックエンドで更新されたとアラートが最初に報告された時刻。| 2020-09-04T05:22:59Z
+タイトル | 各アラートで使用できる文字列値を簡単に識別します。 | ランサムウェアのアクティビティ
+説明 | 各アラートを表す文字列値。 | ユーザー Test User2 (testUser2@contoso.com) は、複数の拡張子を持つ 99 ファイルを操作し、珍しい拡張子 *herunterladen で終わらせた*。 これは、ファイル操作の異常な数であり、潜在的なランサムウェア攻撃を示しています。
+category | キル チェーンに沿って攻撃がどこまで進んでいるかの視覚的および数値的なビュー。 CK の [MITRE ATT&に™します](https://attack.mitre.org/)。 | 影響
+status | アラートを分類する (*新規、**アクティブ*、*または解決済み*)。 アラートに対する応答を整理および管理するのに役立ちます。 | 新規
+severity | アセットへの影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高い項目では、最も迅速な注意が必要です。<br>次のいずれかの値: Informational、Low、*Medium、High です。   | 中
 investigationId | このアラートによってトリガーされる自動調査 ID。 | 1234
-investigationState | 調査の現在の状態に関する情報。 Unknown 、 *Terminated*、 *SuccessfullyRemediated*、  *Failed*、 *PartiallyRemediated*、 *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*,  *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
-classification | インシデントの仕様。 プロパティの値は、Unknown、FalsePositive、TruePositive、*または null です。*    | 不明
-判断 | インシデントの決定を指定します。 プロパティの値は *、NotAvailable*、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other または null *です。*    | Apt
-assignedTo | インシデントの所有者、または *所有者が割り* 当てられていない場合は null。 | secop2@contoso.com
-actorName | このアラートに関連付けられているアクティビティ グループ (含まれる場合)。 | 1997
-threatFamilyName | このアラートに関連付けられている脅威ファミリ。 | null
-mitreTechniques | MITRE ATT と [CK](https://attack.mitre.org/)フレームワークに合&攻撃™です。 | \[\]
-devices | インシデントに関連するアラートが送信されたデバイスすべて。 | \[\] (以下のエンティティ フィールドの詳細を参照してください)
+investigationState | 調査の現在の状態に関する情報。 次の値の 1 つ:不明、終了 、正常に修復された、良性、失敗、*部分的* に修復された、*実行中**、PendingApproval 、PendingApproval* *、PendingResource* *、PartiallyInvestigated 、TerminatedByUser 、TerminatedBySystem*、キューに入れられ *、InnerFailure 、PreexistingAlert*   *、UnsupportedOs* *、UnsupportedAlertType* *、SuppressedAlert*。  | サポートされていないAlertType
+classification | インシデントの仕様。 プロパティの値は、*不明**、FalsePositive、TruePositive、* または *null です。*  | 不明
+決定 | インシデントの決定を指定します。 プロパティの値は次 *のとおりです。 NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting* *、* *UnwantedSoftware*、 Other or *null* | Apt
+assignedTo | インシデントの所有者、または所有者 *が割り当* てられていない場合は null。 | secop2@contoso.com
+actorName | このアラートに関連付けられているアクティビティ グループ (その場合)。 | ボロン
+threatFamilyName | このアラートに関連付けられた脅威ファミリ。 | null
+mitreTechniques | 攻撃手法は [、MITRE ATT](https://attack.mitre.org/)および CK&に™されます。 | \[\]
+デバイス | インシデントに関連する通知が送信されたすべてのデバイス。 | \[\] (以下のエンティティ フィールドの詳細を参照してください)
 
 ### <a name="device-format"></a>デバイスの形式
 
 フィールド名 | 説明 | 値の例
 -|-|-
 DeviceId | Microsoft Defender ATP で指定されているデバイス ID。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  Azure Active Directory で指定されているデバイス[ID。](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) ドメインに参加しているデバイスでのみ使用できます。 | null
+aadDeviceId |  Azure Active Directory で指定されている[デバイス ID。](/azure/active-directory/fundamentals/active-directory-whatis) ドメインに参加しているデバイスでのみ使用できます。 | null
 deviceDnsName | デバイスの完全修飾ドメイン名。 | user5cx.middleeast.corp.contoso.com
 osPlatform | デバイスが実行されている OS プラットフォーム。| WindowsServer2016
 osBuild | デバイスが実行されている OS のビルド バージョン。 | 14393
-rbacGroupName | デバイス [に関連付けられている役割ベースの](https://docs.microsoft.com/azure/role-based-access-control/overview) アクセス制御 (RBAC) グループ。 | WDATP-Ring0
-firstSeen | デバイスが初めて表示された時刻。 | 2020-02-06T14:16:01.9330135Z
-healthStatus | デバイスの正常性状態。 | Active
+rbacGroupName | デバイス [に関連付けられた役割ベース](/azure/role-based-access-control/overview) のアクセス制御 (RBAC) グループ。 | WDATP-Ring0
+firstSeen | デバイスが最初に表示された時刻。 | 2020-02-06T14:16:01.9330135Z
+healthStatus | デバイスの正常性状態。 | 有効
 riskScore | デバイスのリスク スコア。 | 高い
-entities | 特定のアラートの一部として識別された、またはアラートに関連付けらたすべてのエンティティ。 | \[\] (以下のエンティティ フィールドの詳細を参照してください)
+エンティティ | 特定のアラートの一部として、または関連付けと識別されたすべてのエンティティ。 | \[\] (以下のエンティティ フィールドの詳細を参照してください)
 
 ### <a name="entity-format"></a>エンティティの形式
 
 フィールド名 | 説明 | 値の例
 -|-|-
-entityType | 特定のアラートの一部として識別された、または関連付けされているエンティティ。<br>プロパティの値は *、User*、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry *です*。        | User
-sha1 | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられているアラートのファイル ハッシュ。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
-sha256 | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられているアラートのファイル ハッシュ。 | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
-fileName | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられているアラートのファイル名 | Detector.UnitTests.dll
-filePath | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられているアラートのファイル パス | C: \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
+entityType | 特定のアラートの一部または関連付けと識別されたエンティティ。<br>プロパティの値は次 *のとおりです*。 ユーザー 、 *Ip*、 *Url*、*ファイル*、*プロセス*、 MailBox 、 *MailMessage*、  *MailCluster*、*レジストリ* | User
+sha1 | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル ハッシュ。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
+sha256 | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル ハッシュ。 | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
+fileName | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル名 | Detector.UnitTests.dll
+filePath | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル パス | C: \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
 processId | entityType が Process の場合に *使用できます*。 | 24348
-processCommandLine | entityType が Process の場合に *使用できます*。 | "ファイルをダウンロードする準備が \_ できました1911150169.exe"
+processCommandLine | entityType が Process の場合に *使用できます*。 | "ファイルがダウンロードできる状態 \_1911150169.exe"
 processCreationTime | entityType が Process の場合に *使用できます*。 | 2020-07-18T03:25:38.5269993Z
 parentProcessId | entityType が Process の場合に *使用できます*。 | 16840
 parentProcessCreationTime | entityType が Process の場合に *使用できます*。 | 2020-07-18T02:12:32.8616797Z
-ipAddress | entityType が Ip の場合に *使用できます*。 <br>悪意のあるネットワークの宛先への通信など、ネットワーク イベントに関連付けられている *アラートの* IP アドレス。 | 62.216.203.204
-url | entityType が Url の場合に *使用できます*。 <br>悪意のあるネットワークの宛先への通信など、ネットワーク イベントに関連付 *けられているアラートの URL。* | down.esales360.cn
+ipAddress | entityType が Ip の場合に *使用できます*。 <br>悪意のあるネットワーク宛先への通信など、ネットワーク イベントに関連付 *けられたアラートの* IP アドレス。 | 62.216.203.204
+url | entityType が Url の場合に *使用できます*。 <br>ネットワーク イベント (悪意のあるネットワーク宛先への通信など) に関連付 *けられたアラートの URL* です。 | down.esales360.cn
 accountName | entityType が User の場合に *使用できます*。 | testUser2
 domainName | entityType が User の場合に *使用できます*。 | europe.corp.contoso
-userSid | entityType が User の場合に *使用できます*。 | S-1-5-21-1721254763-462695806-1538882281-4156657
+userSid | entityType が User の場合に *使用できます*。 | S-1-5-21-1721254763-462695806-1538882281-41566657
 aadUserId | entityType が User の場合に *使用できます*。 | fc8f7484-f813-4db2-afab-bc1507913fb6
 userPrincipalName | entityType がUser / *MailBox* / *MailMessage の場合に使用できます*。 | testUser2@contoso.com
-mailboxDisplayName | entityType が *MailBox の場合に使用できます*。 | User2 のテスト
+mailboxDisplayName | entityType が *MailBox の場合に使用できます*。 | Test User2
 mailboxAddress | entityType がUser / *MailBox* / *MailMessage の場合に使用できます*。 | testUser2@contoso.com
-clusterBy | entityType が  *MailCluster の場合に使用できます*。 | 件名P2SenderDomain;ContentType
+clusterBy | entityType が  *MailCluster の場合に使用できます*。 | 件名。P2SenderDomain;ContentType
 sender | entityType がUser / *MailBox* / *MailMessage の場合に使用できます*。 | user.abc@mail.contoso.co.in
 受信者 | entityType が *MailMessage の場合に使用できます*。 | testUser2@contoso.com
-subject | entityType が *MailMessage の場合に使用できます*。 | \[外部 \] の注意
+subject | entityType が *MailMessage の場合に使用できます*。 | \[EXTERNAL \] Attention
 deliveryAction | entityType が *MailMessage の場合に使用できます*。 | 配信
 securityGroupId | entityType が  *SecurityGroup の場合に使用できます*。 | 301c47c8-e15f-4059-ab09-e2ba9ffd372b
 securityGroupName | entityType が  *SecurityGroup の場合に使用できます*。 | ネットワーク構成演算子
@@ -715,8 +715,8 @@ GET https://api.security.microsoft.com/api/incidents
 ## <a name="related-articles"></a>関連記事
 
 - [Microsoft 365 Defender API へのアクセス](api-access.md)
-- [API の制限とライセンスについて](api-terms.md)
+- [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)
 - [インシデントの概要](incidents-overview.md)
 - [インシデント API](api-incident.md)
-- [インシデント API を更新する](api-update-incidents.md)
+- [インシデント API の更新](api-update-incidents.md)

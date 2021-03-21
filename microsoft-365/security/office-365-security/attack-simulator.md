@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーターを使用して、Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c88a5df6fae61e1ffe70214ad4a73deef4b380e
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 105ca66cdfacaab3b73d8bf89c3a05207b673a3c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717608"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921362"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender の攻撃シミュレーター for Office 365
 
@@ -45,7 +45,7 @@ ms.locfileid: "50717608"
 
 - セキュリティ/コンプライアンス センターを開くには、<https://protection.office.com/> へ移動します。 攻撃シミュレーターは、脅威管理 **攻撃シミュレーター** \> **で利用できます**。 直接攻撃シミュレーターに移動し、開きます <https://protection.office.com/attacksimulator> 。
 
-- 異なる Microsoft 365 サブスクリプション間での攻撃シミュレーターの可用性の詳細については [、「Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)サービスの説明」を参照してください。
+- 異なる Microsoft 365 サブスクリプション間での攻撃シミュレーターの可用性の詳細については [、「Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)サービスの説明」を参照してください。
 
 - 組織の管理またはセキュリティ管理者 **の役割グループ** の **メンバーである** 必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
@@ -55,7 +55,7 @@ ms.locfileid: "50717608"
 
 - フィッシング キャンペーンは 30 日間イベントを収集して処理します。 キャンペーンの開始後最大 90 日間、キャンペーンの履歴データを利用できます。
 
-- 攻撃シミュレーションとトレーニング関連データは、Microsoft 365 サービスの他の顧客データと一緒に保存されます。 詳細については [、「Microsoft 365 データの場所」を参照してください](/microsoft-365/enterprise/o365-data-locations)。
+- 攻撃シミュレーションとトレーニング関連データは、Microsoft 365 サービスの他の顧客データと一緒に保存されます。 詳細については [、「Microsoft 365 データの場所」を参照してください](../../enterprise/o365-data-locations.md)。
 
 - 攻撃シミュレーターに対応する PowerShell コマンドレットはありません。
 

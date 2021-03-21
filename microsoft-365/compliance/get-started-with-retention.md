@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 27f361ba98cdaecb5b7788283c8d4244583ee82c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406517"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922621"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 保持する必要のあるコンテンツを保持し、その必要のないコンテンツを削除することにより、組織のデータの管理を開始する用意はできていますか? 開始するために、次の概要ガイダンスを参考にできます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "50406517"
 
 アイテム保持ポリシーと保持ラベルはさまざまなサブスクリプションでサポートされており、ユーザーのライセンス要件は使用する機能によって異なります。
 
-Microsoft 365 コンプライアンス機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)」を参照してください。 保持については、「[情報ガバナンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance)」セクション、および機能レベルのライセンス要件に関する PDF または Excel ダウンロード ファイルを参照してください。
+Microsoft 365 コンプライアンス機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 保持については、「[情報ガバナンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance)」セクション、および機能レベルのライセンス要件に関する PDF または Excel ダウンロード ファイルを参照してください。
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルを作成して管理するために必要なアクセス許可
 
@@ -56,9 +56,9 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 この既定の役割を使用する代わりに、新しい役割グループを作成し、このグループに **保持管理** 役割を追加することもできます。 読み取り専用の役割の場合は、**閲覧限定の保持管理** を使用します。 
 
-役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)」を参照してください。
+役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
-ユーザーを役割グループに追加して役割を割り当てる手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」をご覧ください。
+ユーザーを役割グループに追加して役割を割り当てる手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
 
 これらのアクセス許可は、アイテム保持ポリシーと保持ラベルの作成、構成、適用にのみ必要です。 これらのポリシーとラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
 

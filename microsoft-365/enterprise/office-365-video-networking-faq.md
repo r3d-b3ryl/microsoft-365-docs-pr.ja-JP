@@ -1,5 +1,5 @@
 ---
-title: Office 365 のビデオネットワークについてよく寄せられる質問
+title: Office 365 ビデオ ネットワークに関するよく寄せられる質問
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,110 +19,110 @@ ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
-description: 帯域幅の計画、暗号化、およびサービスがコンテンツ配信ネットワーク (CDNs) をどのように活用するか & に関してよく寄せられる質問の回答を参照してください。
-ms.openlocfilehash: e08a67988290e7ead87ff30a5ebdf9c8560f4825
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 帯域幅の計画、暗号化、サービスによるコンテンツ配信ネットワーク (CDN) の活用方法に関する最も&質問に対する回答を見つける。
+ms.openlocfilehash: 8bc0a69ff744967d24aa7d21ed6daee1a839f159
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696166"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921572"
 ---
-# <a name="office-365-video-networking-frequently-asked-questions"></a>Office 365 のビデオネットワークについてよく寄せられる質問
+# <a name="office-365-video-networking-frequently-asked-questions"></a>Office 365 ビデオ ネットワークに関するよく寄せられる質問
 
-Office 365 のビデオリポジトリおよびストリーミングサービスを使用すると、組織内のビデオを簡単に保存およびストリーミングすることができます。 [Office 365 ビデオについて](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)多くの重要な情報があります。このネットワーク FAQ は、帯域幅の計画、暗号化、およびサービスが[コンテンツ配信ネットワーク](content-delivery-networks.md)(cdns) を活用する方法に関してよく寄せられる質問に回答するように設計されています。
+365 Officeストリーミング サービスを使用すると、組織内でのビデオの保存とストリーミングが簡単になります。 [365 ビデオに関する多くのOfficeがあります](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)。このネットワークに関する FAQ は、帯域幅の計画、暗号化、およびサービスがコンテンツ配信ネットワーク[](content-delivery-networks.md) (CDN) を活用する方法に関する最も一般的な質問に答える目的で設計されています。
   
-ビデオをアップロードまたは再生したときに何が起こるかを十分に理解していない場合は、このビデオをまとめたものとして、 [Office 365 のビデオにアップロードしたときにビデオファイル](https://www.youtube.com/watch?v=HXSZ0jYBKlM)がどうなるかを確認してください。
+ビデオがアップロードまたは再生された場合に何が起こるかについて十分に理解していない場合は、このビデオをまとめて見てみましょう [。Office 365 Video](https://www.youtube.com/watch?v=HXSZ0jYBKlM)にアップロードするとビデオ ファイルに何が起こるか。
   
-## <a name="what-are-the-office-365-video-bandwidth-requirements"></a>Office 365 のビデオ帯域幅の要件を教えてください。
+## <a name="what-are-the-office-365-video-bandwidth-requirements"></a>365 ビデオOffice要件は何ですか?
 
-Office 365 にアップロードできる [サポートされているビデオ形式](https://support.office.com/article/dd1af01c-fd8e-4640-b17b-93ee02b9b817) は多数あります。 各ビデオファイルは、再生にさまざまなビデオ品質を持つ標準形式にエンコードされます。 Office 365 Video は、アダプティブビットレートのストリーミングを使用して、使用可能なネットワーク帯域幅とビデオプレーヤーのサイズに基づいて、最適なビデオ再生品質を選択します。 これを行うために、player は最初に最小の再生品質を要求します。 その後、サービスは、2秒間のビデオセグメントをビデオプレーヤーに送信します。 プレーヤーは、各セグメントが配信される速度に基づいて、より高いまたは低い再生品質を要求できます。
+365[](https://support.office.com/article/dd1af01c-fd8e-4640-b17b-93ee02b9b817)にアップロードできる多数のサポートされているビデオOfficeがあります。 その後、各ビデオ ファイルは、再生用にいくつかの異なるビデオ品質を持つ標準形式にエンコードされます。 Office 365 ビデオでは、アダプティブ ビットレート ストリーミングを使用して、利用可能なネットワーク帯域幅とビデオ プレーヤーのサイズに基づいて最適なビデオ再生品質を選択します。 これを行うには、プレイヤーは最初に最も低い再生品質を要求します。 その後、サービスはビデオ プレーヤーに 2 秒間のビデオ セグメントの送信を開始します。 プレイヤーは、各セグメントの配信速度に基づいて、より高い再生品質または低い再生品質を要求できます。
   
-アダプティブビットレートストリーミングでは、ビデオの再生が最小限に抑えられている間、バックグラウンドでこれらすべてが実行されます。 ビデオの再生中に、ビデオプレーヤーでは、視聴者が自動再生の品質を手動で上書きして、特定のビデオ再生品質を選択することができます。
+アダプティブ ビットレート ストリーミングは、ビデオが中断やバッファー処理の最小量で再生されている間、バックグラウンドでこのすべての処理を行います。 ビデオ再生中に、ビデオ プレーヤーは、ビューアーが手動で自動再生品質を上書きして、特定のビデオ再生品質を選択できます。
   
-ビデオ再生の各品質のネットワーク要件の概要を示すクイックテーブルを次に示します。 ビデオの再生に必要なユーザーあたりの最小帯域幅は802Kbps です。
+ビデオ再生の各品質のネットワーク要件の概要を示す簡単な表を次に示します。 ビデオの再生に必要な 1 人あたりの最小帯域幅は 802Kbps です。
   
-| 再生品質 | ネットワークの速度 |
+| 再生品質 | ネットワーク速度 |
 |:-----|:-----|
-|288 p  <br/> |802Kbps  <br/> |
+|288p  <br/> |802Kbps  <br/> |
 |360p  <br/> |1.2 Mbps  <br/> |
 |576p  <br/> |2.5 Mbps  <br/> |
-|プログレッシブ  <br/> |3.8 Mbps  <br/> |
+|720p  <br/> |3.8 Mbps  <br/> |
 
 ([トップに戻る](office-365-video-networking-faq.md))
   
-## <a name="how-do-content-delivery-networks-cdns-help-video-playback"></a>コンテンツ配信ネットワーク (CDNs) はどのようにビデオの再生をサポートしますか?
+## <a name="how-do-content-delivery-networks-cdns-help-video-playback"></a>コンテンツ配信ネットワーク (CDN) はビデオの再生にどう役立ちますか?
 
-同じ地理的位置にある同じ組織の複数のユーザーが同じビデオをストリーミングしている場合、CDNs はその地域に近い場所にこれらのビデオのコピーを保存します。 ビデオが保存されているか、最も近い場所にキャッシュされていると、各ユーザーは、その場所から離れた場所ではなく、最も近い場所からビデオをストリームします。 Office 365 Video は、azure メディアサービスを使用して Azure CDNs にキャッシュされているものと、期間を管理します。 Azure Media Services では、任意の [AZURE CDN の場所](https://azure.microsoft.com/documentation/articles/cdn-pop-locations/) を使用して、ビデオフラグメントとマニフェストを数日間キャッシュできます。 組織内のユーザーがキャッシュされたビデオを引き続き視聴する場合は、キャッシュに残ります。 何度もビデオにアクセスできない場合、ビデオは最終的にキャッシュから削除されます。 次回、ユーザーがビデオを視聴しようとしたときに、それが最も近い CDN の場所で再びキャッシュされます。
+同じ地理的な場所内の同じ組織の複数のユーザーが同じビデオをストリーミングしている場合、CDN は、これらのビデオのコピーをその地理的地域に近い場所に保存します。 ビデオを保存するか、最も近い場所にキャッシュすると、各ユーザーは、遠く離れた場所ではなく、最も近い場所からビデオをストリーミングします。 Office 365 ビデオでは、Azure Media Services を使用して、Azure CDN にキャッシュされるコンテンツと、その期間を管理します。 Azure Media Services では [、Azure CDN](/azure/cdn/cdn-pop-locations) の任意の場所を使用して、数日間ビデオ フラグメントとマニフェストをキャッシュできます。 組織内のユーザーがキャッシュされたビデオを引き続き視聴する場合、キャッシュに残されます。 数日間ビデオにアクセスするユーザーがいない場合、ビデオは最終的にキャッシュから削除されます。 次回、誰かがビデオを視聴しようとすると、最も近い CDN の場所に再びキャッシュされます。
   
-ビデオを視聴しようとしているすべてのユーザーは、ビデオの近くにある CDN の利点で、ビデオが近い場所にあることを示しています。 これにより、ビデオの再生速度が向上します。ただし、ビデオを再生するためにネットワーク要件が変更されることはありません。
+近くの CDN でコンテンツがキャッシュされている間にビデオを視聴しようとするすべてのユーザーは、ビデオが近く、ほとんどの場合ホップが少なく、離れて行くメリットがあります。 これにより、ビデオの再生速度が向上します。ただし、ビデオを再生するネットワーク要件は変更されません。
   
 > [!NOTE]
-> 容量の制限に達しているなど、状況によっては、3日が経過する前にビデオが削除されることがあります。
+> 容量制限に達した場合など、3 日前にビデオが削除される場合があります。
   
 ([トップに戻る](office-365-video-networking-faq.md))
   
-## <a name="can-i-cache-the-videos-locally-for-faster-playback"></a>再生を高速化するためにビデオをローカルにキャッシュすることはできますか?
+## <a name="can-i-cache-the-videos-locally-for-faster-playback"></a>高速再生のためにビデオをローカルにキャッシュできますか?
 
-はい。 Office 365 では、ローカル CDN またはキャッシュプロキシを使用して、アクセスを高速化するためにビデオやその他の Office 365 コンテンツをローカルネットワークに格納することはできません。 ネットワークにローカルキャッシュソリューションを実装する方法はいくつかありますが、最も一般的な方法は、コンテンツをローカルにキャッシュするプロキシソリューションを使用する方法です。 プロキシまたはプライベート CDN によってビデオフラグメントとマニフェストがキャッシュされた後、プロキシまたはプライベート CDN を経由してルーティングされるこれらのファイルへの要求は、インターネット上の場所から引き出されずにローカルキャッシュから取得されます。 このようなソリューションを計画する際には、ネットワーク帯域幅、容量、ビデオ再生の同時実行を考慮します。
+はい。 Office 365 では、ローカル CDN またはキャッシュ プロキシを使用してビデオや他の Office 365 コンテンツをローカル ネットワークに持ち込み、アクセスを高速化できます。 ネットワークにローカル キャッシュ ソリューションを実装するにはいくつかの方法があります。最も一般的な方法は、コンテンツをローカルにキャッシュするプロキシ ソリューションを使用する方法です。 プロキシまたはプライベート CDN がビデオ フラグメントとマニフェストをキャッシュすると、プロキシまたはプライベート CDN を経由するファイルに対する今後の要求はローカル キャッシュから引き出され、インターネットの場所から引き出されません。 このようなソリューションの計画中に、ネットワーク帯域幅、容量、ビデオ再生の同時実行を検討します。
   
 ([トップに戻る](office-365-video-networking-faq.md))
   
-## <a name="how-videos-are-encrypted-and-secured"></a>ビデオを暗号化してセキュリティで保護する方法
+## <a name="how-videos-are-encrypted-and-secured"></a>ビデオの暗号化とセキュリティ保護の方法
 
-Office 365 Video は、データのセキュリティを確保し、プライベートにすることが重要であることを認識しています。 [Microsoft Trust Center](https://products.office.com/business/office-365-trust-center-welcome) は、コンテンツのプライバシーとセキュリティに対するコミットメントについて説明します。 ビデオの再生では、パフォーマンスを向上させるには速度が重要です。しかし、exchange のセキュリティやプライバシーをスピードアップすることはありません。 スピード、セキュリティ、プライバシーに対応する方法を次に示します。
+Office 365 ビデオでは、データを安全かつプライベートに保つ必要がある点が分かっています。 [Microsoft Trust Center では](https://products.office.com/business/office-365-trust-center-welcome) 、コンテンツのプライバシーとセキュリティに対する取り組みについて説明します。 ビデオの再生では、優れたエクスペリエンスを実現するには速度が重要です。ただし、速度と引き換えにセキュリティやプライバシーは侵害しません。 速度、セキュリティ、プライバシーに対応する方法を次に示します。
   
-組織内のユーザーが新しいビデオをアップロードすると、そのビデオはトランスコードされ、AES-128 暗号化によって暗号化され、Azure Media Services に格納されます。 これは、送信中と保存中の両方のビデオが暗号化されることを意味します。
+組織内のユーザーが新しいビデオをアップロードすると、そのビデオはトランスコードされ、AES-128 暗号化で暗号化され、Azure Media Services に保存されます。 つまり、ビデオは転送中と保存時の両方で暗号化されます。
   
-組織内の誰かが新しいビデオを視聴しようとすると、次の手順に従います。
+組織内のユーザーが新しいビデオを視聴しようとすると、次の手順に従います。
   
-1. ビデオを表示する権限がある場合は、SharePoint Online にお問い合わせください。
+1. SharePoint Online にビデオを表示する権限がある場合は、SharePoint Online に問い合えます。
 
-2. SharePoint Online は、ファイルのアクセス許可を使用して、ユーザーがビデオを視聴できるかどうかを判断します。
+2. SharePoint Online では、ファイルのアクセス許可を使用して、ユーザーがビデオを視聴できるかどうかを判断します。
 
-3. 許可されている場合、SharePoint Online は、ビデオプレーヤーに提供するために Azure からトークンを取得します。
+3. 許可されている場合、SharePoint Online は Azure からトークンを取得してビデオ プレーヤーに渡します。
 
-4. その後、ビデオプレーヤーは、トークンを使用して Azure の復号化キーを要求します。
+4. その後、ビデオ プレーヤーはトークンを使用して Azure から復号化キーを要求します。
 
-5. 復号キーが手元にある場合、ビデオプレーヤーはビデオをストリームできます。
+5. 復号化キーを手にして、ビデオ プレーヤーはビデオをストリーミングできます。
 
-![O365 ビデオの再生](../media/9d3c6e76-151d-48a3-a30e-ba8dd07db0b7.png)
-  
-([トップに戻る](office-365-video-networking-faq.md))
-  
-## <a name="what-are-the-requirements-to-playback-office-365-video"></a>Office 365 ビデオを再生するための要件
-
-Office 365 のビデオサポートされているオペレーティングシステムと web ブラウザーは、 [office 365 のシステム要件](https://support.office.com/article/Office-365-system-requirements-719254c0-2671-4648-9c84-c6a3d4f3be45)である SharePoint Online の要件と同じです。 使用しているオペレーティングシステムと web ブラウザーの構成に応じて、ビデオプレーヤーの特定のニーズが決まります。 [ビデオ再生の要件](https://support.office.com/article/ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)の詳細については、以下を参照してください。
+![O365 ビデオ再生](../media/9d3c6e76-151d-48a3-a30e-ba8dd07db0b7.png)
   
 ([トップに戻る](office-365-video-networking-faq.md))
   
-## <a name="i-cant-get-office-365-video-to-work-where-should-i-start"></a>Office 365 ビデオをご利用いただけません。どこから始めるべきですか?
+## <a name="what-are-the-requirements-to-playback-office-365-video"></a>365 ビデオを再生するOfficeは何ですか?
 
-Office 365 ビデオへの接続のトラブルシューティングでは、ネットワーク、ISP、および Office 365 の構成に関するトラブルシューティングを行います。 最初に開始する場所は、サービス正常性ダッシュボードです。 これにより、Office 365 のビデオで問題が発生しているかどうかがわかります。 すべてがすばらしいのであれば、次のような追加のリソースを参照してください。
+Office 365 ビデオでサポートされるオペレーティング システムと Web ブラウザーは [、365](https://support.office.com/article/Office-365-system-requirements-719254c0-2671-4648-9c84-c6a3d4f3be45)のシステム要件の SharePoint Online 要件Office同じです。 どのオペレーティング システムと Web ブラウザーの構成に応じて、ビデオ プレーヤーの特定のニーズが決定されます。 ビデオ再生の要件の [詳細については、次の情報を参照してください](https://support.office.com/article/ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)。
   
-- [Office 365 のビデオに必要なネットワークエンドポイント](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)に接続できることを確認してください。
+([トップに戻る](office-365-video-networking-faq.md))
+  
+## <a name="i-cant-get-office-365-video-to-work-where-should-i-start"></a>365 ビデオをOfficeできないので、どこから始める必要がありますか?
 
-- [Office 365 ネットワークトラブルシューティングガイド](https://support.office.com/article/Office-365-performance-tuning-and-troubleshooting-Admin-and-IT-Pro-1492cb94-bd62-43e6-b8d0-2a61ed88ebae)を使用して、ネットワーク接続を確認します。
+Office 365 ビデオへの接続のトラブルシューティングには、ネットワーク、ISP、および 365 の構成のトラブルシューティングOfficeがあります。 最初に開始する場所は、サービス正常性ダッシュボードです。 これにより、365 ビデオOffice問題が発生している可能性が示されます。 すべてが見栄えの良い場合は、役立つ追加のリソースを次に示します。
+  
+- [365 ビデオ](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)に必要なネットワーク エンドポイントに接続Officeしてください。
 
-- [低速のネットワークで Office 365 を使用するためのベストプラクティス](https://support.office.com/article/Best-practices-for-using-Office-365-on-a-slow-network-fd16c8d2-4799-4c39-8fd7-045f06640166)を参照してください。
+- 365 ネットワークのトラブルシューティング ガイドOffice [使用して、ネットワーク接続を確認します](https://support.office.com/article/Office-365-performance-tuning-and-troubleshooting-Admin-and-IT-Pro-1492cb94-bd62-43e6-b8d0-2a61ed88ebae)。
 
-- [Office 365 のビデオ構成に関するヘルプを参照して](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)ください。
+- 低速ネットワーク [で 365 を使用Officeのベスト プラクティスを参照してください](https://support.office.com/article/Best-practices-for-using-Office-365-on-a-slow-network-fd16c8d2-4799-4c39-8fd7-045f06640166)。
+
+- [365 ビデオ構成Officeヘルプを参照してください](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)。
 
 ([トップに戻る](office-365-video-networking-faq.md))
   
-## <a name="office-365-video-resources"></a>Office 365 のビデオリソース
+## <a name="office-365-video-resources"></a>Office 365 ビデオ リソース
 
-Office 365 ビデオを正常に展開して使用するために役立つその他のリソースを以下に示します。
+365 ビデオの展開と使用に役立つその他のOffice次に示します。
   
-[Office 365 のビデオ構成に関するヘルプを参照する](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)
+[365 ビデオOfficeのヘルプを検索する](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)
   
 [Office 365 ビデオを利用する](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
   
-[Office 365 でチャネルを作成および管理するビデオ](https://support.office.com/article/Create-and-manage-a-channel-in-Office-365-Video-1fede4cc-13c0-435a-b585-e7fbf1c83bb2)
+[365 ビデオでチャネルOffice管理する](https://support.office.com/article/Create-and-manage-a-channel-in-Office-365-Video-1fede4cc-13c0-435a-b585-e7fbf1c83bb2)
   
 [Office 365 ビデオ ポータルを管理する](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
   
-[Office 365 のビデオで使用できるビデオ形式](https://support.office.com/article/Video-formats-that-work-in-Office-365-Video-dd1af01c-fd8e-4640-b17b-93ee02b9b817)
+[365 ビデオで動作するOffice形式](https://support.office.com/article/Video-formats-that-work-in-Office-365-Video-dd1af01c-fd8e-4640-b17b-93ee02b9b817)
   
 ([トップに戻る](office-365-video-networking-faq.md))
   
-ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/video365networkfaq](https://aka.ms/video365networkfaq)
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/video365networkfaq]()

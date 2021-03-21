@@ -1,5 +1,5 @@
 ---
-title: 攻撃シミュレーショントレーニングの展開に関する考慮事項と FAQ
+title: 攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,14 +20,14 @@ ms.custom:
 description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織での攻撃シミュレーションとトレーニングに関する展開に関する考慮事項とよく寄せられる質問について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b57252252d8a22ade4b8e1a18f42d7fdce91324e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454736"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921374"
 ---
-# <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーショントレーニングの展開に関する考慮事項と FAQ
+# <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
 攻撃シミュレーションのトレーニングが [一般提供されました](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 攻撃シミュレーショントレーニングを使用すると、Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織は、実際の、武器化されたフィッシング ペイロードを利用したフィッシング シミュレーションの作成と管理を可能にすることで、ソーシャル エンジニアリング リスクを測定および管理できます。 テラノバ のセキュリティと提携して提供されるハイパーターゲットトレーニングは、知識の向上と従業員の行動の変更に役立ちます。
 
@@ -72,7 +72,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 - ゲスト ユーザー。
 - Azure Active Directory (Azure Active Directory) でアクティブでなくなったAD。
 
-有効なメールボックスを持つゲスト以外のユーザーだけがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーをターゲットにする場合は[、Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)の[Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember)コマンドレットを使用して、配布グループのメンバーを表示および検証できます。
+有効なメールボックスを持つゲスト以外のユーザーだけがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーをターゲットにする場合は[、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)の[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember)コマンドレットを使用して、配布グループのメンバーを表示および検証できます。
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>攻撃シミュレーショントレーニングレポートの問題
 

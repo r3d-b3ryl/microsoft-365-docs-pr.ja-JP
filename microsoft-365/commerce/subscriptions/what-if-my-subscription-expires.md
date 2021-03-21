@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
-ms.openlocfilehash: a9e2e68c0eee119126af93552a50f1859f708c1f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 7560e715a9b1951915866f96c8df3bd1f884a475
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741359"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921818"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
 期限切れ、または解約を決定したためにサブスクリプションが終了した場合、Microsoft 365 サービス、アプリケーション、および顧客データへのアクセスは、サブスクリプションが完全にオフまたは *削除* される前に複数の状態を経ます。 この進行を認識している場合、手遅れになる前にサブスクリプションをアクティブな状態に戻すか、Microsoft 365 を終了する場合には、最終的に削除される前にデータをバックアップする必要があります。
 
-[Microsoft 365 サポート](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)に問い合わせる前に、この重要な情報をお読みください。
+[Microsoft 365 サポート](../../admin/contact-support-for-business-products.md)に問い合わせる前に、この重要な情報をお読みください。
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>サブスクリプションが期限切れになると、データはどうなりますか?
 
@@ -51,7 +51,7 @@ ms.locfileid: "50741359"
 *ほとんどの国と地域で、ほとんどのオファーについて。
   
 > [!NOTE]
-> **"顧客データ" とは何ですか?** [Microsoft オンライン サービス使用条件](https://go.microsoft.com/fwlink/p/?LinkId=613649)に定義されている顧客データとは、お客様自身が Microsoft 365 サービスを使用することによって、または代理によって Microsoft に提供されるすべてのテキスト、サウンド、または画像ファイルを含むすべてのデータを指します。 顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)」を参照してください。
+> **"顧客データ" とは何ですか?** [Microsoft オンライン サービス使用条件](https://go.microsoft.com/fwlink/p/?LinkId=613649)に定義されている顧客データとは、お客様自身が Microsoft 365 サービスを使用することによって、または代理によって Microsoft に提供されるすべてのテキスト、サウンド、または画像ファイルを含むすべてのデータを指します。 顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](../../compliance/get-started-with-service-trust-portal.md)」を参照してください。
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
 
@@ -210,13 +210,13 @@ ms.locfileid: "50741359"
 
 ::: moniker range="o365-worldwide"
 
-- **Microsoft 365 を購入します。** 試用期間が経過すると、猶予期間に入り、Microsoft 365 を購入するまでの期間がさらに 30 日間与えられます (ほとんどの国と地域のほとんどの試用版が対象)。 試用版を有料サブスクリプションに切り替える方法については、「[一般法人向け Microsoft 365 の試用版を購入する](../buy-a-subscription-from-your-free-trial.md)」を参照してください。
+- **Microsoft 365 を購入します。** 試用期間が経過すると、猶予期間に入り、Microsoft 365 を購入するまでの期間がさらに 30 日間与えられます (ほとんどの国と地域のほとんどの試用版が対象)。 試用版を有料サブスクリプションに切り替える方法については、「[一般法人向け Microsoft 365 の試用版を購入する](../try-or-buy-microsoft-365.md)」を参照してください。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **Microsoft 365 を購入します。** 試用期間が経過すると、猶予期間に入り、Microsoft 365 を購入するまでの期間がさらに 30 日間与えられます (ほとんどの国と地域のほとんどの試用版が対象)。 試用版を有料サブスクリプションに切り替える方法については、「[一般法人向け Microsoft 365 の試用版を購入する](../buy-a-subscription-from-your-free-trial.md)」を参照してください。
+- **Microsoft 365 を購入します。** 試用期間が経過すると、猶予期間に入り、Microsoft 365 を購入するまでの期間がさらに 30 日間与えられます (ほとんどの国と地域のほとんどの試用版が対象)。 試用版を有料サブスクリプションに切り替える方法については、「[一般法人向け Microsoft 365 の試用版を購入する](../try-or-buy-microsoft-365.md)」を参照してください。
 
 ::: moniker-end
 
@@ -235,7 +235,6 @@ ms.locfileid: "50741359"
 
 ## <a name="related-content"></a>関連コンテンツ 
 
-[サブスクリプションを解約する](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (記事)\
-[一般法人向け Microsoft 365 を更新する](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (記事)\
-[サブスクリプションを再アクティブ化する](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (記事)\
-
+[サブスクリプションを解約する](./cancel-your-subscription.md) (記事)\
+[一般法人向け Microsoft 365 を更新する](./renew-your-subscription.md) (記事)\
+[サブスクリプションを再アクティブ化する](./reactivate-your-subscription.md) (記事)\

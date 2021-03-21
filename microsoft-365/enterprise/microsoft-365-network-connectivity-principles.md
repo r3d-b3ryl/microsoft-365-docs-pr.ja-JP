@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 ネットワーク接続を安全に最適化するための最新のガイドについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: e0391133721270c0fdfb288b5d26ab23f301a844
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519741"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923292"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 ネットワーク接続の原則
 
@@ -228,7 +228,7 @@ Microsoft では、幅広い Microsoft 365 のセキュリティ機能を用意�
   - Microsoft 365 のトラフィックをローカルに送信する
 - 「[増分最適化](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt)」のセクションで説明されているように、改善には段階的に対処できます。 一部の最適化手法では、使用しているネットワーク アーキテクチャによっては、より優れたコスト/利益率を提供する場合があるので、組織にとって最も意味のある最適化を選択する必要があります。
 
-Microsoft 365 のセキュリティとコンプライアンスの詳細については、「[Microsoft 365 セキュリティ](https://docs.microsoft.com/microsoft-365/security)」と「[Microsoft 365 コンプライアンス](https://docs.microsoft.com/microsoft-365/compliance)」の記事を参照してください。
+Microsoft 365 のセキュリティとコンプライアンスの詳細については、「[Microsoft 365 セキュリティ](../security/index.yml)」と「[Microsoft 365 コンプライアンス](../compliance/index.yml)」の記事を参照してください。
   
 ## <a name="incremental-optimization"></a>増分の最適化
 <a name="BKMK_IncOpt"> </a>

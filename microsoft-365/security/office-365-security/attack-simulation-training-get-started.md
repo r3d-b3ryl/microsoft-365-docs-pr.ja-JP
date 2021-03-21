@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38e16ecd8185b9e8542f58613790585b5aab73ee
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 6e344153ef433bc13b16136e584ec4da73fcef6a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820236"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921350"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>攻撃シミュレーション トレーニングの使用を開始する
 
@@ -36,11 +36,11 @@ ms.locfileid: "50820236"
 > [!NOTE]
 > 攻撃シミュレーション トレーニングは、Microsoft Defender の攻撃シミュレーター for Office 365 で説明されている古い攻撃シミュレーター [v1 エクスペリエンスに置き換Officeします](attack-simulator.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Microsoft セキュリティ センターを開くには、 に移動します <https://security.microsoft.com/> 。 攻撃シミュレーション のトレーニングは、メールと **コラボレーションの攻撃シミュレーション** \> **トレーニングで利用できます**。 攻撃シミュレーション のトレーニングに直接移動するには、を開きます <https://security.microsoft.com/attacksimulator> 。
 
-- さまざまな Microsoft 365 サブスクリプションでの攻撃シミュレーション トレーニングの可用性の詳細については [、「Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)サービスの説明」を参照してください。
+- さまざまな Microsoft 365 サブスクリプションでの攻撃シミュレーション トレーニングの可用性の詳細については [、「Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)サービスの説明」を参照してください。
 
 - この記事の手順を実行するには、セキュリティ & コンプライアンス センターまたは Azure Active Directory でアクセス許可を割り当てる必要があります。 具体的には、組織の管理、セキュリティ管理者、または次のいずれかの役割のメンバーである必要があります。
   - **攻撃シミュレーターの管理者**: 攻撃シミュレーション キャンペーンのすべての側面を作成および管理します。

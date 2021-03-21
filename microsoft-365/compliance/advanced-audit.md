@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 012361e8ebbf1961d5ca21cef97357d5150523d5
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 0a77a5c54ce328a3966a952fc8fef08553f42462
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712057"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923487"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
 Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compliance.md)を使用すると、組織は Microsoft 365 のさまざまなサービスにわたって、さまざまな種類の監査済みアクティビティを可視化できます。 高度な監査は、侵害の範囲の決定に役立つ重要なイベントへのアクセスを提供し、Office 365 管理アクティビティ API への迅速なアクセスを提供することで、調査の実施に必要な監査ログの保持を高め、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。
 
 > [!NOTE]
-> 高度な監査は、Office 365 E5/G5 または Microsoft 365 Enterprise E5/G5のサブスクリプションを持つ組織で利用できます。 さらに、Microsoft 365 E5 コンプライアンス アドオン ライセンスや Microsoft 365 E5 eDiscovery and Audit アドオン ライセンスは、監査ログの長期保持や調査のための重要なイベントへのアクセスと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。 ライセンスの詳細については、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)」を参照してください。
+> 高度な監査は、Office 365 E5/G5 または Microsoft 365 Enterprise E5/G5のサブスクリプションを持つ組織で利用できます。 さらに、Microsoft 365 E5 コンプライアンス アドオン ライセンスや Microsoft 365 E5 eDiscovery and Audit アドオン ライセンスは、監査ログの長期保持や調査のための重要なイベントへのアクセスと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。 ライセンスの詳細については、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)」を参照してください。
 
 この記事では、高度な監査機能の概要を説明し、高度な監査用にユーザーを設定する方法を示します。
 
@@ -85,7 +85,7 @@ MailItemsAccessed 監査レコードを検索するには、Microsoft 365 コン
 
 ![監査ログ検索ツールで MailItemsAccessed アクションを検索する](../media/AdvAudit_MailItemsAccessed.png)
 
-Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) または [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) コマンドを実行することもできます。
+Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) または [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) コマンドを実行することもできます。
 
 ### <a name="send"></a>Send
 
@@ -103,7 +103,7 @@ Send 監査レコードを検索するには、Microsoft 365 コンプライア�
 
 ![監査ログ検索ツールでの送信済みメッセージ アクションの検索](../media/AdvAudit_SentMessage.png)
 
-Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) または [Search-MailboxAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) コマンドを実行することもできます。
+Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) または [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) コマンドを実行することもできます。
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
@@ -125,7 +125,7 @@ SearchQueryInitiatedExchange 監査レコードを検索するには、コンプ
 
 ![監査ログ検索ツールでの実行されたメール検索アクションの検索](../media/AdvAudit_SearchExchange.png)
 
-また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
+また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
 > (特定の E5 ユーザーによって実行された) SearchQueryInitiatedExchange イベントが監査ログの検索結果に含まれるように、Exchange Online PowerShell で次のコマンドを実行する必要があります: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
@@ -150,7 +150,7 @@ SearchQueryInitiatedSharePoint 監査レコードを検索するには、コン�
 
 ![監査ログ検索ツールでの実行された SharePoint 検索アクションの検索](../media/AdvAudit_SearchSharePoint.png)
 
-また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
+また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
 > (特定の E5 ユーザーによって実行された) SearchQueryInitiatedExchange イベントが監査ログの検索結果に含まれるように、Exchange Online PowerShell で次のコマンドを実行する必要があります: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
@@ -165,7 +165,7 @@ Office 365 管理アクティビティ API を使用して監査ログにアク�
 
 すべての組織には、最初に 1 分あたり 2,000 件の要求のベースラインが割り当てられます。 この制限は、組織のシート数とライセンス サブスクリプションに応じて動的に増加します。 E5 組織は、E5 以外の組織の約 2 倍の帯域幅を利用できます。 また、サービスの正常性を保護するために、最大帯域幅の上限も設定されます。
 
-詳細については、「[Office 365 管理アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)」の「API 調整」のセクションを参照してください。
+詳細については、「[Office 365 管理アクティビティ API リファレンス](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)」の「API 調整」のセクションを参照してください。
 
 ## <a name="set-up-advanced-audit-for-users"></a>ユーザーの高度な監査のセットアップを行う
 
@@ -183,7 +183,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 
    ユーザーの MailItemsAccessed、送信、およびその他の重要なイベントの監査レコードのログ記録は、24  時間以内に開始されます。
 
-グループ ベースのライセンスを使用してユーザーのグループにライセンスを割り当てている組織では、グループに対する Microsoft 365 Advanced Auditing のライセンス割り当てをオフにする必要があります。 変更を保存したら、Microsoft 365 Advanced Auditing がグループに対してオフになっていることを確認します。 その後、グループに対するライセンス割り当てをもう一度オンにします。 グループ ベースのライセンスの手順については、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
+グループ ベースのライセンスを使用してユーザーのグループにライセンスを割り当てている組織では、グループに対する Microsoft 365 Advanced Auditing のライセンス割り当てをオフにする必要があります。 変更を保存したら、Microsoft 365 Advanced Auditing がグループに対してオフになっていることを確認します。 その後、グループに対するライセンス割り当てをもう一度オンにします。 グループ ベースのライセンスの手順については、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
 
 ユーザー メールボックスまたは共有メールボックスについてログに記録されるメールボックス操作をカスタマイズしている場合、MailItemsAccessed などの新しい既定のメールボックス操作は、これらのメールボックスでは自動的に監査されません。 ログオンの種類ごとに監査されるメールボックス操作の変更については、 「[メールボックスの監査を管理する](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)」の「既定でログに記録されるメールボックスの操作を変更または復元する」セクションを参照してください。
 

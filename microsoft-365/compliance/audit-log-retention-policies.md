@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
-ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 53449b6b83373eb2f749a4547845866dbea4a2af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712047"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922853"
 ---
 # <a name="manage-audit-log-retention-policies"></a>監査ログの保持ポリシーを管理する
 
@@ -104,7 +104,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 
 > [!IMPORTANT]
-> **New-UnifiedAuditLogRetentionPolicy** コマンドレットを使用すると、ダッシュボードの **[監査保持ポリシーの作成]** ツールでは使用できないレコードの種類またはアクティビティの監査ログ保持ポリシーを作成できます。 この場合、**[監査保持ポリシー]** ダッシュボードからポリシーを編集 (保持期間の変更やアクティビティの追加と削除など) することはできません。 コンプライアンス センターでは、ポリシーを表示したり、削除したりすることはできません。 ポリシーを編集するには、セキュリティ/コンプライアンス センターの PowerShell で [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) コマンドレットを使用します。<br/><br/>**ヒント:** PowerShell を使用して編集する必要があるポリシーのメッセージがポップアップ ページの上部に表示されます。
+> **New-UnifiedAuditLogRetentionPolicy** コマンドレットを使用すると、ダッシュボードの **[監査保持ポリシーの作成]** ツールでは使用できないレコードの種類またはアクティビティの監査ログ保持ポリシーを作成できます。 この場合、**[監査保持ポリシー]** ダッシュボードからポリシーを編集 (保持期間の変更やアクティビティの追加と削除など) することはできません。 コンプライアンス センターでは、ポリシーを表示したり、削除したりすることはできません。 ポリシーを編集するには、セキュリティ/コンプライアンス センターの PowerShell で [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) コマンドレットを使用します。<br/><br/>**ヒント:** PowerShell を使用して編集する必要があるポリシーのメッセージがポップアップ ページの上部に表示されます。
 
 ### <a name="delete-policies-in-the-dashboard"></a>ダッシュボードでポリシーを削除する
 
@@ -118,7 +118,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 PowerShell で監査ログの保持ポリシーを作成するには、次の手順を実行します。
 
-1. [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 次のコマンドを実行して監査ログの保持ポリーを作成します。
 
@@ -142,11 +142,11 @@ PowerShell で監査ログの保持ポリシーを作成するには、次の手
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
 ```
 
-詳細については、「[New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy)」を参照してください。
+詳細については、「[New-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/new-unifiedauditlogretentionpolicy)」を参照してください。
 
 ### <a name="view-policies-in-powershell"></a>PowerShell でポリシーを表示する
 
-セキュリティ/コンプライアンス センターの PowerShell で [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) コマンドレットを使用して、監査ログの保持ポリシーを表示します。
+セキュリティ/コンプライアンス センターの PowerShell で [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) コマンドレットを使用して、監査ログの保持ポリシーを表示します。
 
 組織においてすべての監査ログの保持ポリシーの設定を表示するコマンドの例を以下に示します。 このコマンドを実行すると、ポリシーが優先度の高い順に並べ替えられます。
 
@@ -159,11 +159,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ### <a name="edit-policies-in-powershell"></a>PowerShell でポリシーを編集する
 
-セキュリティ/コンプライアンス センターの PowerShell で[Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) コマンドレットを使用して、既存の監査ログの保持ポリシーを編集します。
+セキュリティ/コンプライアンス センターの PowerShell で[Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) コマンドレットを使用して、既存の監査ログの保持ポリシーを編集します。
 
 ### <a name="delete-policies-in-powershell"></a>PowerShell でポリシーを削除する
 
-セキュリティ/コンプライアンス センターの PowerShell で[Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) コマンドレットを使用して、監査ログの保持ポリシーを削除します。 組織からポリシーが削除されるまで、最大 30 分かかる場合があります。
+セキュリティ/コンプライアンス センターの PowerShell で[Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) コマンドレットを使用して、監査ログの保持ポリシーを削除します。 組織からポリシーが削除されるまで、最大 30 分かかる場合があります。
 
 ## <a name="more-information"></a>詳細情報
 

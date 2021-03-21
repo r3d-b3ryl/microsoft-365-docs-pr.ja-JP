@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 組織のニーズを満たすルールを使用できるようにするカスタム機密情報タイプを作成する方法について説明します。
-ms.openlocfilehash: 40584b430af6e822b115e014c20481c027222aae
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423406"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922661"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
 
@@ -33,7 +33,7 @@ ms.locfileid: "50423406"
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>現在のルールの XML ファイルをエクスポートする
 
-XML をエクスポートするには、[リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)必要があります。
+XML をエクスポートするには、[リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell)必要があります。
   
 1. PowerShell で次のように入力すると、組織のルールが画面上に表示されます。まだ独自のルールを作成していない場合は、"Microsoft Rule Package" というラベルの付いた既定の組み込みルールだけが表示されます。
 
@@ -201,7 +201,7 @@ XML 内でクレジット カード番号のルール定義が見つかったら
   
 1. ルールを Unicode エンコードの .xml ファイルとして保存します。これとは違うエンコードでファイルを保存すると、ルールが機能しないことに注意してください。
     
-2. [リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+2. [リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell)
     
 3. PowerShell で次のように入力します。
 

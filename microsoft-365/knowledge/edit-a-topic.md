@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454173"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921518"
 ---
 # <a name="edit-an-existing-topic"></a>既存のトピックを編集する 
 
@@ -34,11 +34,11 @@ Viva Topics では、既存のトピックを編集できます。 既存のト�
 > [!Note] 
 > AI によって収集されるトピックの情報はセキュリティでトリミング[](topic-experiences-security-trimming.md)されますが、既存のトピックを編集するときに手動で追加するトピックの説明とユーザー情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 既存のトピックを編集するには、次の必要があります。
 - Viva Topics ライセンスを持っている。
-- トピックを作成または編集 [**できるユーザーに対するアクセス許可を持つ**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 ナレッジ管理者は、ビバ トピックのアクセス許可設定でユーザーにこのアクセス許可を付与できます。 
+- トピックを作成または編集 [**できるユーザーに対するアクセス許可を持つ**](./topic-experiences-user-permissions.md)。 ナレッジ管理者は、ビバ トピックのアクセス許可設定でユーザーにこのアクセス許可を付与できます。 
 
 > [!Note] 
 > トピック センター (ナレッジ マネージャー) でトピックを管理する権限を持つユーザーには、トピックを作成および編集するためのアクセス許可が既に付与されています。
@@ -130,13 +130,6 @@ Viva Topics では、既存のトピックを編集できます。 既存のト�
 
 
 ## <a name="see-also"></a>関連項目
-
-
-
-  
-
-
-
 
 
 

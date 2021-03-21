@@ -15,157 +15,157 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: この記事では、Microsoft 365 の Advanced eDiscovery のケースで、レビューセット内のドキュメントのメタデータフィールドを定義します。
-ms.openlocfilehash: 2bf9773f6c36e53231bb577c30e9900bf3e24df7
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: この記事では、Microsoft 365 の Advanced eDiscovery のケースで、レビュー セット内のドキュメントのメタデータ フィールドを定義します。
+ms.openlocfilehash: 3f8ac33e3f11557843b590ed2a9f7d903e33f5ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358445"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922061"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Advanced eDiscovery のドキュメントメタデータフィールド
 
-次の表は、高度な電子情報開示のケースにおけるレビューセット内のドキュメントのメタデータフィールドの一覧です。 この表には、次の情報が記載されています。
+次の表に、Advanced eDiscovery のケースのレビュー セット内のドキュメントのメタデータ フィールドを示します。 表に、次の情報を示します。
 
-- **フィールド名** と **表示フィールド名:** メタデータフィールドの名前と、選択したドキュメントのファイルメタデータを校閲セットに表示するときに表示されるフィールドの名前。 一部のメタデータフィールドは、ドキュメントのファイルメタデータを表示するときには含まれません。 これらのフィールドは、アスタリスク (*) で強調表示されています。
+- **フィールド名** と **表示** フィールド名: レビュー セットで選択したドキュメントのファイル メタデータを表示するときに表示されるメタデータ フィールドの名前とフィールドの名前。 ドキュメントのファイル メタデータを表示するときに、一部のメタデータ フィールドは含まれません。 これらのフィールドはアスタリスク (*)で強調表示されます。
 
-- **検索可能なフィールド名:**[レビューセットクエリ](review-set-search.md)の実行時に検索できるプロパティの名前。 空白セルは、レビューセットクエリでフィールドを検索できないことを意味します。
+- **検索可能なフィールド名:** レビュー セット クエリを実行するときに検索できるプロパティ [の名前](review-set-search.md)です。 空白のセルは、レビュー セット クエリ内のフィールドを検索できないという意味です。
 
-- エクスポートされた**フィールド名:** ドキュメントがエクスポートされるときに含まれるメタデータフィールドの名前を指定します。  空白セルは、フィールドがエクスポートされたメタデータに含まれていないことを示します。
+- **エクスポートされたフィールド名:** ドキュメントのエクスポート時に含まれるメタデータ フィールドの名前。  空白のセルは、フィールドがエクスポートされたメタデータに含まれていないを意味します。
 
-- **説明:** メタデータフィールドの説明。
+- **説明:** メタデータ フィールドの説明。
 
 > [!NOTE]
-> [レビューセット検索](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)の**キーワード**フィールドは、キーワードクエリ言語 (kql) を使用します。 [検索可能な **フィールド名]** 列に表示されているフィールドは、校閲セットの検索の [ **キーワード** ] フィールドで使用して、クエリビルダーを使用しなくても複雑なクエリを作成できます。 KQL の詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](https://go.microsoft.com/fwlink/?LinkId=269603)」を参照してください。
+> レビュー **セット検索の** [キーワード [] フィールドは、](./review-set-search.md) キーワード クエリ言語 (KQL) を使用します。 [検索可能なフィールド名] 列に表示されるフィールドは、レビューセット検索の [キーワード] フィールドで使用して、クエリ ビルダーを使用せずに複雑なクエリを形成できます。 KQL の詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
 
 |**フィールド名** と **表示フィールド名**|**検索可能なフィールド名**|**エクスポートされたフィールド名**|**説明**|
 |:-----|:-----|:-----|:-----|
-|添付ファイルのコンテンツ Id|AttachmentContentId||アイテムの添付ファイルのコンテンツ Id。|
+|添付ファイルのコンテンツ ID|AttachmentContentId||アイテムの添付ファイルコンテンツ ID。|
 |添付ファイル名|AttachmentNames|Attachment_Names|添付ファイルの名前の一覧。|
-|弁護士クライアント特権スコア|AttorneyClientPrivilegeScore||委任状-クライアント特権モデルのコンテンツスコア。|
-|設定元|設定元|Doc_authors|ドキュメントのメタデータから作成します。|
-|BCC|Bcc|Email_bcc|メッセージの種類の Bcc フィールド。 表示形式**は \<SMTPAddress> DisplayName**です。|
-|CC|Cc|Email_cc|メッセージの種類の Cc フィールド。 表示形式**は \<SMTPAddress> DisplayName**です。|
-|コンプライアンスラベル|ComplianceLabels|Compliance_labels|Office 365 のコンテンツに適用される[保持ラベル](retention.md)。|
-|複合パス|CompoundPath|Compound_path|アイテムのソースを記述する、人間が判読できるパス。|
-|内容|コンテンツ||アイテムの抽出されたテキスト。|
+|弁護士クライアント特権スコア|AttorneyClientPrivilegeScore||弁護士クライアント特権モデルのコンテンツ スコア。|
+|Author|Author|Doc_authors|ドキュメント メタデータから作成者を作成します。|
+|BCC|Bcc|Email_bcc|メッセージの種類の BCC フィールド。 形式は **DisplayName です \<SMTPAddress>**。|
+|CC|Cc|Email_cc|メッセージの種類の Cc フィールド。 形式は **DisplayName です \<SMTPAddress>**。|
+|コンプライアンス ラベル|ComplianceLabels|Compliance_labels|[365](retention.md) のコンテンツに適用Officeラベル。|
+|複合パス|CompoundPath|Compound_path|アイテムのソースを記述する人間が読み取り可能なパス。|
+|Content*|コンテンツ||アイテムの抽出されたテキスト。|
 |会話本文|会話本文||アイテムの会話本文。|
 |会話のトピック|会話のトピック||アイテムの会話のトピック。|
-|会話 ID|ConversationId|Conversation_ID|メッセージからの会話 Id。|
+|会話 ID|ConversationId|Conversation_ID|メッセージの会話 ID。|
 |会話インデックス||Conversation_index|メッセージからの会話インデックス。|
-|会話 Pdf の時間|ConversationPdfTime||会話の PDF 版が作成された日付。|
-|会話の墨消しの書き込み時間|ConversationRedactionBurnTime||会話の PDF 版がチャット用に作成された日付。|
-|文書作成日|CreatedTime|Doc_date_created|ドキュメントのメタデータから日付を作成します。|
-|Custodian|Custodian|Custodian|アイテムが関連付けられていた保管担当者の名前。|
-|日付|日付|日付|日付は、ファイルの種類に応じた計算フィールドです。<br /><br />メール: 送信日<br />電子メールの添付ファイル: ドキュメントの最終更新日。利用できない場合は、親の送信日<br />埋め込まれたドキュメント: ドキュメントの最終更新日。使用できない場合、親の最終変更日<br />SPO ドキュメント (モダン添付ファイルを含む): SharePoint の最終更新日利用できない場合は、ドキュメントの最終更新日<br />Office 以外の365ドキュメント: 最終変更日<br />会議: 会議の開始日<br />ボイスメール: 送信日<br />IM: 送信日|
-|その他のパス|Dedupedcompoundpath|Deduped_compound_path|完全に重複しているドキュメント (コンテンツ、ドキュメントに基づいた電子メール: ハッシュに基づく) の複合パスのリスト。|
-|その他の保管担当者|DedupedCustodians|Deduped_custodians|完全に重複したドキュメント (コンテンツに基づいた電子メールの場合は、ドキュメントの場合はハッシュに基づく) の保管担当者のリスト。|
-|その他のファイル Id|DedupedFileIds|Deduped_file_IDs|完全に重複しているドキュメント (コンテンツに基づいた電子メールの場合は、ドキュメントの場合はハッシュに基づく) のファイル Id のリスト。|
-|ドキュメントコメント|DocComments|Doc_comments|ドキュメントのメタデータからのコメント。|
-|ドキュメント会社||Doc_company|ドキュメントメタデータからの会社。|
-|DocIndex *|||ファミリ内のインデックス。 **-1** または **0** は、それがルートであることを意味します。|
-|ドキュメントのキーワード||Doc_keywords|ドキュメントのメタデータからのキーワード。|
-|ドキュメントの更新者||Doc_modified_by|ドキュメントメタデータからの最終更新日。|
-|ドキュメントのリビジョン||Doc_revision|ドキュメントのメタデータからのリビジョン。|
-|ドキュメントの件名||Doc_subject|ドキュメントのメタデータの件名。|
-|ドキュメント テンプレート||Doc_template|ドキュメントのメタデータからのテンプレート。|
-|基準となるテーマ|DominantTheme|Dominant_theme|分析に対して計算された、基準となるテーマ。|
-|サブセットの複製||Duplicate_subset|完全に重複した場合のグループ ID。|
-|EmailAction *||Email_action|値 **なし**、 **返信**、または **転送**。メッセージの件名行に基づいています。|
-|電子メール配信確認||Email_delivery_receipt|配信確認のためにインターネットヘッダーで提供される電子メールアドレス。|
-|Importance|EmailImportance|Email_importance|メッセージの重要度: **0** -低 **1** -標準。 **2** -高|
-|EmailLevel *||Email_level|属する電子メールスレッド内のメッセージレベルを示します。添付ファイルは親メッセージの値を継承します。|
-|電子メールメッセージ Id||Email_message_ID|メッセージのインターネットメッセージ Id。|
-|EmailReadReceipt *||Email_read_receipt|開封確認のためにインターネットヘッダーで提供される電子メールアドレス。|
-|電子メールのセキュリティ|EmailSecurity|Email_security|メッセージのセキュリティ設定: **0** -なし。 **1** -署名済み。 **2** -暗号化、 **3** -暗号化済みで署名済み。|
-|メールの秘密度|電子メールの秘密度|email_sensitivity|メッセージの秘密度設定: **0** -なし。 **1 つ** の個人。 **2** -プライベート。 **3** -社外秘。|
-|メールセット|EmailSet|Email_set|同じメールセット内のすべてのメッセージのグループ ID。|
-|EmailThread *||Email_thread|メールセット内のメッセージの位置。ルートから現在のメッセージまでのノード Id で構成され、ピリオド (.) で区切られています。|
-|抽出されたコンテンツタイプ||Extracted_content_type|抽出されたコンテンツタイプ (mime タイプの形式)。たとえば、 **image/jpeg**|
-|ExtractedTextLength*||Extracted_text_length|抽出した文字列の文字数を指定します。|
-|ファミリー関連性スコアケース問題 1 *||Family_relevance_score_case_issue_1|関連性のない家族の関連性スコアケースの問題1。|
-|FamilyDuplicateSet*||Family_duplicate_set|相互に正確に重複するファミリの数値識別子 (同じコンテンツとすべて同じ添付ファイル)。|
-|ファミリ ID|FamilyId|Family_ID|ファミリ Id はすべてのアイテムをグループにまとめます。電子メールの場合、これにはメッセージとすべての添付ファイルが含まれます。ドキュメントの場合は、ドキュメントと埋め込みアイテムが含まれます。|
-|ファミリーサイズ||Family_size|ファミリ内のドキュメントの数。|
-|ファイル関連性スコアケース問題 1 *||File_relevance_score_case_issue_1|関連性のないファイル関連性スコアケース問題1。|
-|File クラス|FileClass|File_class|SharePoint および OneDrive のコンテンツの場合: **ドキュメント**;Exchange からのコンテンツ: **電子メール** または **添付ファイル**。|
+|会話の Pdf 時間|ConversationPdfTime||会話の PDF バージョンが作成された日付。|
+|会話のやり直しの書き込み時間|ConversationRedactionBurnTime||会話の PDF バージョンがチャット用に作成された日付。|
+|ドキュメントの作成日|CreatedTime|Doc_date_created|ドキュメント メタデータから日付を作成します。|
+|カストディアン|カストディアン|カストディアン|アイテムが関連付けられた保管担当者の名前。|
+|日付|日付|日付|Date は、ファイルの種類に依存する計算フィールドです。<br /><br />メール: 送信日<br />電子メールの添付ファイル: ドキュメントの最終変更日。使用できない場合は、親の送信日<br />埋め込みドキュメント: ドキュメントの最終変更日。使用できない場合は、親の最終変更日<br />SPO ドキュメント (最新の添付ファイルを含む): SharePoint の最終更新日。使用できない場合は、ドキュメントの最終変更日<br />非更新Office 365 ドキュメント: 最終変更日<br />会議: 会議の開始日<br />VoiceMail: 送信日<br />IM: 送信日|
+|その他のパス|Dedupedcompoundpath|Deduped_compound_path|完全に重複するドキュメントの複合パスの一覧 (電子メール: コンテンツに基づく、ドキュメント: ハッシュに基づく)。|
+|その他の保管担当者|DedupedCustodians|Deduped_custodians|完全に重複するドキュメントの保管担当者の一覧 (電子メール、コンテンツに基づく、ドキュメント、ハッシュに基づく)。|
+|その他のファイルの ID|DedupedFileIds|Deduped_file_IDs|完全に重複するドキュメントのファイル ID の一覧 (電子メール、コンテンツに基づく、ドキュメント、ハッシュに基づく)。|
+|ドキュメントコメント|DocComments|Doc_comments|ドキュメント メタデータからのコメント。|
+|ドキュメント会社||Doc_company|ドキュメント メタデータの会社。|
+|DocIndex*|||ファミリ内のインデックス。 **-1** または **0 は** 、ルートを意味します。|
+|ドキュメント キーワード||Doc_keywords|ドキュメント メタデータのキーワード。|
+|によって変更されたドキュメント||Doc_modified_by|ドキュメント メタデータによる最終変更日。|
+|ドキュメントのリビジョン||Doc_revision|ドキュメント メタデータからのリビジョン。|
+|ドキュメントの件名||Doc_subject|ドキュメント メタデータの件名。|
+|ドキュメント テンプレート||Doc_template|ドキュメント メタデータのテンプレート。|
+|主なテーマ|DominantTheme|Dominant_theme|分析用に計算された主なテーマ。|
+|重複するサブセット||Duplicate_subset|正確な重複のグループ ID。|
+|EmailAction*||Email_action|値は **None、Reply、** または **Forward です**。 メッセージの件名に基づいて指定します。|
+|電子メール配信の受信||Email_delivery_receipt|配信の受信用にインターネット ヘッダーで提供される電子メール アドレス。|
+|Importance|EmailImportance|Email_importance|メッセージの重要度: **0** - 低。 **1** - 標準。 **2** - 高|
+|EmailLevel*||Email_level|メッセージが属する電子メール スレッド内のメッセージのレベルを示します。添付ファイルは親メッセージの値を継承します。|
+|電子メール メッセージ ID||Email_message_ID|メッセージのインターネット メッセージ ID。|
+|EmailReadReceipt*||Email_read_receipt|インターネット ヘッダーで読み取り受信用に指定された電子メール アドレス。|
+|メール セキュリティ|EmailSecurity|Email_security|メッセージのセキュリティ設定: **0** - なし。 **1** - 署名済み。 **2** - 暗号化。 **3** - 暗号化され、署名されています。|
+|電子メールの感度|EmailSensitivity|email_sensitivity|メッセージの感度設定: **0** - なし。 **1** 個人用。 **2** - プライベート。 **3** - CompanyConfidential。|
+|電子メール セット|EmailSet|Email_set|同じメール セット内のすべてのメッセージのグループ ID。|
+|EmailThread*||Email_thread|電子メール セット内のメッセージの位置。ルートから現在のメッセージまでのノードの ID で構成され、ピリオド (.) で区切ります。|
+|抽出されたコンテンツ タイプ||Extracted_content_type|MIME タイプの形式で抽出されたコンテンツ タイプ。たとえば **、image/jpeg**|
+|ExtractedTextLength*||Extracted_text_length|抽出されたテキスト内の文字数。|
+|ファミリの関連性スコア ケースの問題 1*||Family_relevance_score_case_issue_1|ファミリの関連性スコア 関連性からのケースの問題 1。|
+|FamilyDuplicateSet*||Family_duplicate_set|互いに完全に重複するファミリの数値識別子 (同じコンテンツとすべての同じ添付ファイル)。|
+|ファミリ ID|FamilyId|Family_ID|ファミリ ID は、すべてのアイテムをグループ分けします。電子メールの場合、これにはメッセージとすべての添付ファイルが含まれます。ドキュメントの場合、これにはドキュメントと埋め込みアイテムが含まれます。|
+|ファミリ サイズ||Family_size|ファミリ内のドキュメントの数。|
+|ファイルの関連性スコア ケースの問題 1*||File_relevance_score_case_issue_1|ファイルの関連性スコア 関連性からのケースの問題 1。|
+|ファイル クラス|FileClass|File_class|SharePoint と OneDrive のコンテンツの場合: **Document**;Exchange からのコンテンツの場合:**電子メールまたは****添付ファイル**。|
 |ファイル ID|FileId|File_ID|ケース内で一意のドキュメント識別子。|
-|作成されたファイルシステムの日付||File_system_date_created|ファイルシステムから作成された日付 (Office 以外の365データにのみ適用されます)。|
-|ファイルシステムの日付が変更されました||File_system_date_modified|ファイルシステムからの変更日付 (Office 以外の365データにのみ適用されます)。|
+|ファイル システムの作成日||File_system_date_created|ファイル システムから作成された日付 (365 データOffice適用されます)。|
+|ファイル システムの日付が変更されました||File_system_date_modified|ファイル システムからの変更日 (365 データOffice適用されます)。|
 |ファイルの種類|FileType||ファイル拡張子に基づくアイテムのファイルの種類。|
-|グループ Id| GroupID|  |グループ化されたコンテンツのグループ ID。|
-|添付ファイルあり|HasAttachment|Email_has_attachment|メッセージに添付ファイルがあるかどうかを示します。|
-|弁護士|HasAttorney||**True** の場合、少なくとも1人の参加者が弁護士リストに含まれています。それ以外の場合、値は **False**になります。|
-|HasText||Has_text|アイテムにテキストが含まれているかどうかを示します。有効な値は、 **True** と **False**です。|
-|不変 ID||Immutable_ID|この Id は、校閲セット内のドキュメントを一意に識別するために使用されます。 このフィールドをレビューセット検索で使用することはできません。また、Id を使用して、ドキュメントにネイティブの場所からアクセスすることはできません。|
-|包括型|InclusiveType|Inclusive_type|分析に対して計算される包括型: **0** -包括的ではありません。 **1** -包含; **2** -包括負; **3** -包括的コピー。|
-|[返信先 Id||In_reply_to_ID|[メッセージの返信先 Id。|
-|モダン添付ファイル| IsModernAttachment|  |このファイルは、モダンな添付ファイルまたはリンクされたファイルです。|
-|ドキュメントのバージョン | IsFromDocumentVersion |  |現在の文書は別のバージョンの文書です。|
-|電子メールの添付ファイル | IsEmailAttachment|  |このアイテムは、メッセージに添付されたアイテムとして表示される電子メールの添付ファイルからのものです。|
-|インライン添付ファイル| IsInlineAttachment|  |これはインラインでアタッチされ、メッセージの本文に表示されます。|
-|担当者|IsRepresentative 者|Is_representative|完全に重複したすべてのセットに含まれる1つのドキュメントは、担当者としてマークされます。|
-|アイテム クラス|ItemClass|Item_class|Exchange server によって提供される Item クラス。たとえば、 **IPM.メモ**|
-|Last modified date|LastModifiedDate|Doc_date_modified|ドキュメントメタデータからの最終変更日。|
-|ロード ID|LoadId|Load_ID|アイテムがレビューセットに追加された荷重セットの Id。|
-|場所|場所|場所|ドキュメントのソースとなる場所の種類を示す文字列。<br /><br />**インポート** されたデータ-Office 以外の365データ<br />**Teams** -Microsoft teams<br />**Exchange** -exchange メールボックス<br />**Sharepoint** -sharepoint サイト<br />**Onedrive** -onedrive アカウント|
-|場所の名前|Msrtcsip-locationname|Location_name|アイテムのソースを識別する文字列。 Exchange の場合、これはメールボックスの SMTP アドレスになります。SharePoint および OneDrive の場合、サイトコレクションの URL。|
-|担当者としてマーク|MarkAsRepresentative||正確な重複のセットごとに1つのドキュメントが担当者としてマークされます。|
-|プリタグ付きケースの問題としてマークされました。 1 *||Marked_as_pre_tagged_Case_issue_1|関連性のない、タグ付きケースの問題1としてマークされました。|
-|シードケース問題 1 * としてマークされている||Marked_as_seed_Case_issue_1|シードケース問題1と関連性があるとマークされています。|
-|会議の終了日|会議の終了日|Meeting_end_date|会議の会議の終了日。|
-|会議の開始日|会議の開始日|Meeting_start_date|会議の会議の開始日。|
-|メッセージの種類|MessageKind|Message_kind|検索するメッセージの種類を示します。 可能な値: ** <br /> <br /> 連絡先 <br /> ドキュメント <br /> メール <br /> externaldata <br /> fax <br /> im <br /> ジャーナル <br /> 会議 <br /> ** (Microsoft teams でのチャット、会議、通話のアイテムを返す) ** <br /> メモ <br /> 投稿 <br /> rssfeeds <br /> tasks <br /> ボイスメール**| 
-|ネイティブ拡張機能|/モジュール|Native_extension|アイテムのネイティブな内線番号。|
-|ネイティブファイル名|ファイル名|Native_file_name|アイテムのネイティブファイル名。|
-|NativeMD5||Native_MD5|ファイルストリームの MD5 ハッシュ (128 ビットのハッシュ値)。|
-|NativeSHA256||Native_SHA_256|ファイルストリームの SHA256 ハッシュ (256 ビットハッシュ値)。|
-|ND/ET 並べ替え: 添付ファイルを除外する|NdEtSortExclAttach|ND_ET_sort_excl_attach|電子メールスレッド (ET) セットと、同一に近い (ND) セットの連結。 このフィールドは、レビュー時に効率的に並べ替えるために使用されます。 **D**は ND セットにプレフィックスが付けられ、 **E**は ET セットにプレフィックスとして付けられます。|
-|ND/ET ソート: 添付ファイルを含む|NdEtSortInclAttach|ND_ET_sort_incl_attach|電子メールスレッド (ET) セットと、同一に近い (ND) セットの連結。 このフィールドは、レビュー時に効率的に並べ替えるために使用されます。 **D**は ND セットにプレフィックスが付けられ、 **E**は ET セットにプレフィックスとして付けられます。 ET セット内の各電子メールアイテムの後に、適切な添付ファイルが続きます。|
-|正規化関連性スコアケース問題1||Normalized_relevance_score_case_issue_1|関連性から正規化された関連性スコアケースの問題1。|
-|O365 作成者||O365_authors|SharePoint からの作成者。|
-|O365 の作成者||O365_created_by|SharePoint から作成されました。|
-|O365 の作成日||O365_date_created|SharePoint から作成された日付。|
-|O365 日付が変更されました||O365_date_modified|SharePoint から最終変更された日付。|
-|O365 更新者||O365_modified_by|SharePoint から更新しました。|
-|親 ID|ParentId|Parent_ID|アイテムの親の Id。|
-|ParentNode||Parent_node|電子メールスレッド内の最も近い先行電子メールメッセージ。|
-|親パス|ParentPath|Parent_path|アイテムの直接の親の複合パス。|
-|参加者のドメイン|ParticipantDomains|Email_participant_domains|メッセージの参加者のすべてのドメインの一覧。|
-|参加者|参加者|Email_participants|メッセージのすべての参加者のリスト。たとえば、[送信者]、[宛先]、[Cc]、[Bcc] などです。|
+|グループ ID| GroupID|  |グループ化されたコンテンツのグループ ID。|
+|添付ファイルを持つ|HasAttachment|Email_has_attachment|メッセージに添付ファイルが含されているかどうかを示します。|
+|弁護士を持つ|HasAttorney||**True** の場合は、少なくとも 1 人の参加者が弁護士リストに表示されます。それ以外の場合、値は **False です**。|
+|HasText*||Has_text|アイテムにテキストが含されているかどうかを示します。可能な値は **True と** **False です**。|
+|不変 ID||Immutable_ID|この ID は、レビュー セット内のドキュメントを一意に識別するために使用されます。 このフィールドは、レビュー セットの検索では使用できません。Id を使用して、ネイティブの場所にあるドキュメントにアクセスできません。|
+|包括型|InclusiveType|Inclusive_type|分析用に計算される包括的な型: **0** - 包括的ではありません。 **1** - 包括的。 **2** - 包括マイナス。 **3** - 包括コピー。|
+|[Id に返信する]||In_reply_to_ID|メッセージから Id に返信します。|
+|最新の添付ファイル| IsModernAttachment|  |このファイルは、最新の添付ファイルまたはリンク されたファイルです。|
+|ドキュメントのバージョンから | IsFromDocumentVersion |  |現在のドキュメントは、別のバージョンの別のドキュメントからのドキュメントです。|
+|メールの添付ファイル | IsEmailAttachment|  |このアイテムは、添付アイテムとしてメッセージに表示される電子メール添付ファイルからのアイテムです。|
+|インライン添付| IsInlineAttachment|  |これはインラインで添付され、メッセージの本文に表示されます。|
+|Is Representative|IsRepresentative|Is_representative|完全な重複のセットごとに 1 つのドキュメントが代表としてマークされます。|
+|アイテム クラス|ItemClass|Item_class|Exchange サーバーによって提供されるアイテム クラス。たとえば **、IPM などです。メモ**|
+|Last modified date|LastModifiedDate|Doc_date_modified|ドキュメント のメタデータから最後に変更された日付。|
+|読み込み ID|LoadId|Load_ID|アイテムがレビュー セットに追加された読み込みセットの ID。|
+|Location|Location|Location|ドキュメントのソース元の場所の種類を示す文字列。<br /><br />**インポートされたデータ** - 非Office 365 データ<br />**Teams** - Microsoft Teams<br />**Exchange** - Exchange メールボックス<br />**SharePoint** - SharePoint サイト<br />**OneDrive** - OneDrive アカウント|
+|場所名|LocationName|Location_name|アイテムのソースを識別する文字列。 交換の場合、これはメールボックスの SMTP アドレスです。SharePoint および OneDrive の場合は、サイト コレクションの URL を指定します。|
+|代理人としてマーク|MarkAsRepresentative||正確な重複の各セットから 1 つのドキュメントが代表者としてマークされます。|
+|タグ付け済みとしてマークされているケースの問題 1*||Marked_as_pre_tagged_Case_issue_1|関連性からタグ付け済みのケースの問題 1 としてマークされます。|
+|シードとしてマークされているケースの問題 1*||Marked_as_seed_Case_issue_1|関連性からシード ケースの問題 1 としてマークされます。|
+|会議の終了日|MeetingEndDate|Meeting_end_date|会議の会議終了日。|
+|会議の開始日|MeetingStartDate|Meeting_start_date|会議の会議の開始日。|
+|メッセージの種類|MessageKind|Message_kind|検索するメッセージの種類。 可能な値: 連絡先ドキュメントメール外部データ FAX im journals 会議 **<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> microsoftteams (Microsoft** Teams のチャット、会議、通話からアイテムを返します) メモは **<br /> <br /> <br /> rssfeeds タスクボイスメール <br /> を投稿 <br />** します| 
+|ネイティブ拡張機能|NativeExtension|Native_extension|アイテムのネイティブ拡張。|
+|ネイティブ ファイル名|NativeFileName|Native_file_name|アイテムのネイティブ ファイル名。|
+|NativeMD5||Native_MD5|ファイル ストリームの MD5 ハッシュ (128 ビット ハッシュ値)。|
+|NativeSHA256||Native_SHA_256|ファイル ストリームの SHA256 ハッシュ (256 ビット ハッシュ値)。|
+|ND/ET 並べ替え: 添付ファイルを除外する|NdEtSortExclAttach|ND_ET_sort_excl_attach|電子メール スレッド (ET) セットと Near-duplicate (ND) セットの連結。 このフィールドは、レビュー時に効率的な並べ替えに使用されます。 **D は ND** セットの先頭に付き **、E** は ET セットのプレフィックスです。|
+|ND/ET 並べ替え: 添付ファイルを含む|NdEtSortInclAttach|ND_ET_sort_incl_attach|電子メール スレッド (ET) セットとほぼ重複 (ND) セットの連結。 このフィールドは、レビュー時に効率的な並べ替えに使用されます。 **D は ND** セットの先頭に付き **、E** は ET セットのプレフィックスです。 ET セット内の各電子メール アイテムの後に適切な添付ファイルが続きます。|
+|正規化された関連性スコア ケースの問題 1||Normalized_relevance_score_case_issue_1|正規化された関連性スコア 関連性からのケースの問題 1。|
+|O365 作成者||O365_authors|SharePoint の作成者。|
+|によって作成された O365||O365_created_by|SharePoint から作成されます。|
+|O365 作成日||O365_date_created|SharePoint から作成された日付。|
+|O365 日付の変更||O365_date_modified|SharePoint からの最終変更日。|
+|によって変更された O365||O365_modified_by|SharePoint から変更されました。|
+|親 ID|ParentId|Parent_ID|アイテムの親の ID。|
+|ParentNode||Parent_node|電子メール スレッド内の最も近い先行する電子メール メッセージ。|
+|親パス|ParentPath|Parent_path|アイテムの直接親の複合パス。|
+|参加者ドメイン|ParticipantDomains|Email_participant_domains|メッセージの参加者のすべてのドメインの一覧。|
+|Participants|Participants|Email_participants|メッセージのすべての参加者の一覧。たとえば、Sender、To、Cc、Bcc などです。|
 |ピボット ID|PivotId|Pivot_ID|ピボットの ID。|
-|潜在的に権限のある|PotentiallyPrivileged|Potentially_privileged|ドキュメントが権限を持つ可能性があると見なされるようにする場合は True、委任状の特権検出モデル|
-|処理状態|ProcessingStatus|Error_code|アイテムが校閲セットに追加された後の処理状態。|
-|読み取り率の問題1||Read_percent_Case_issue_1|関連性からパーセンテージケース1を読み取ります。|
-|閲覧の百分位|ReadPercentile 位||関連性に基づいてドキュメントの百分位を読み取ります。|
-|受信者の数||Recipient_count|メッセージ内の受信者の数。|
-|受信者のドメイン|受信者ドメイン|Email_recipient_domains|メッセージの受信者のすべてのドメインの一覧。|
-|受信者|受信者|Email_recipients|メッセージのすべての受信者のリスト (宛先、Cc、Bcc)。|
-|関連性負荷グループケースの問題1||Relevance_load_group_case_issue_1|関連性からの関連性負荷グループケースの問題1。|
-|関連性状態の説明ケース問題1||Relevance_status_description_Case_issue_1|関連性の状態に関する説明ケース問題1。|
-|関連性タグケースの問題1||Relevance_tag_case_issue_1|関連性が関連性のある関連性タグケースの問題1。|
-|関連性のコメント||Relevance_comment|[コメント] フィールドが関連性から出ます。|
-|関連性スコア|RelevanceScore||関連性に基づいたドキュメントの関連性スコア。|
-|関連性タグ|RelevanceTag||関連性に基づいたドキュメントの関連性スコア。|
-|代表 ID|RepresentativeId||正確な重複の各セットの数値識別子。|
-|Sender|Sender|Email_sender|メッセージの種類の Sender (差出人) フィールド。 表示形式**は \<SmtpAddress> DisplayName**です。|
-|送信者/作成者|SenderAuthor||アイテムの送信者または作成者から構成される集計フィールド。|
+|潜在的に特権がある|潜在的にPrivileged|Potentially_privileged|True の場合は、弁護士クライアント特権検出モデルがドキュメントの潜在的な特権を考慮します。|
+|処理の状態|ProcessingStatus|Error_code|アイテムがレビュー セットに追加された後の処理状態。|
+|読み取り率 ケースの問題 1||Read_percent_Case_issue_1|関連性からケースの割合の問題 1 を読み取る。|
+|読み取りパーセント|ReadPercentile||関連性に基づいてドキュメントのパーセントを読み取る。|
+|受信者数||Recipient_count|メッセージ内の受信者の数。|
+|受信者ドメイン|RecipientDomains|Email_recipient_domains|メッセージの受信者のすべてのドメインの一覧。|
+|受信者|受信者|Email_recipients|メッセージのすべての受信者の一覧 (To、Cc、Bcc)。|
+|関連性の読み込みグループ ケースの問題 1||Relevance_load_group_case_issue_1|関連性の読み込みグループ 関連性からのケースの問題 1。|
+|関連性の状態の説明 ケースの問題 1||Relevance_status_description_Case_issue_1|関連性の状態の説明 関連性からのケースの問題 1。|
+|関連性タグ ケースの問題 1||Relevance_tag_case_issue_1|関連性タグ 関連性からのケースの問題 1。|
+|関連性のコメント||Relevance_comment|関連性のコメント フィールド。|
+|関連性スコア|RelevanceScore||関連性に基づくドキュメントの関連性スコア。|
+|関連性タグ|RelevanceTag||関連性に基づくドキュメントの関連性スコア。|
+|代表 ID|RepresentativeId||完全な重複の各セットの数値識別子。|
+|Sender|Sender|Email_sender|メッセージの種類の送信者 (差出人) フィールド。 形式は **DisplayName です \<SmtpAddress>**。|
+|送信者/作成者|SenderAuthor||アイテムの送信者または作成者で構成される計算フィールド。|
 |送信者ドメイン|SenderDomain|Email_sender_domain|送信者のドメイン。|
 |送信日時|送信日時|Email_date_sent|メッセージの送信日。|
-|順序の設定: 最初を含む|SetOrderInclusivesFirst|Set_order_inclusives_first|並べ替えフィールド-電子メールと添付ファイル: カウンター-時系列;ドキュメント: 最初にピボットしてから、類似性スコアを降順にします。|
-|SimilarityPercent||Similarity_percent|オブジェクトがほぼ重複している場合のピボットの類似点を示します。|
-|ネイティブファイルサイズ|Size|Native_size|ネイティブアイテムのバイト数。|
+|Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|並べ替えフィールド - 電子メールと添付ファイル: カウンター時系列。ドキュメント: 最初にピボットし、類似度スコアを降順に指定します。|
+|SimilarityPercent||Similarity_percent|近くの重複セットのピボットに対するドキュメントの類似点を示します。|
+|ネイティブ ファイル サイズ|Size|Native_size|ネイティブ アイテムのバイト数。|
 |件名|件名|Email_subject|メッセージの件名。|
-|件名/タイトル|SubjectTitle||アイテムの件名またはタイトルから構成される集計フィールド。|
-|ケースの問題1のタグ付き||Tagged_by_Case_issue_1|このドキュメントに関連するケースの問題1に対してタグ付けされたユーザー。|
-|タグ|タグ|タグ|レビューセットで適用されるタグ。|
-|テーマリスト|テーマ一覧|Themes_list|分析に対して計算されたテーマのリスト。|
-|タイトル|タイトル|Doc_title|ドキュメントのメタデータからのタイトル。|
-|宛先|宛先|Email_to|メッセージの種類の "宛先" フィールド 表示形式**は \<SmtpAddress> DisplayName**です|
-|メールセット内で一意|UniqueInEmailSet||電子メールセットに添付ファイルが重複している場合は**False** 。|
-|修復されました|(修復)|Was_Remediated|アイテムが修復された場合は**True** 、それ以外の場合は**False**。|
-|文字カウント|WordCount|Word_count|アイテム内の単語数。|
+|件名/タイトル|SubjectTitle||アイテムの件名またはタイトルで構成される計算フィールド。|
+|ケースの問題 1 でタグ付け||Tagged_by_Case_issue_1|関連性でこのドキュメントにケースの問題 1 をタグ付けしたユーザー。|
+|タグ|タグ|タグ|レビュー セットに適用されるタグ。|
+|テーマリスト|ThemesList|Themes_list|分析用に計算されたテーマの一覧。|
+|Title|Title|Doc_title|ドキュメント メタデータのタイトル。|
+|To|To|Email_to|メッセージの種類をフィールドに指定します。 Format is **DisplayName \<SmtpAddress>**|
+|メール セットで一意|UniqueInEmailSet||**メール** セットに添付ファイルが重複している場合は False。|
+|修復された|WasRemediated|Was_Remediated|**True** の場合は、アイテムが修復され、それ以外の場合は **False です**。|
+|文字カウント|WordCount|Word_count|アイテム内の単語の数。|
 |||||
 
 > [!NOTE]
-> 上級電子情報開示ケースのデータを収集する際に Office 365 コンテンツの場所を検索するときの検索可能なプロパティの詳細については、「 [コンテンツ検索のキーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
+> 高度な電子情報開示ケースのデータを収集するときに Office 365 コンテンツの場所を検索する場合の検索可能なプロパティの詳細については、「コンテンツ検索のキーワード クエリと検索条件」を [参照してください](keyword-queries-and-search-conditions.md)。

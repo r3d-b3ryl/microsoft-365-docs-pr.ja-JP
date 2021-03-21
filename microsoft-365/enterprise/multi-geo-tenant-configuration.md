@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: この記事では、サテライトの場所を追加する方法と、Microsoft 365 Multi-Geoのテナントを構成する方法について説明します。
-ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: 9176c66e8d0aa7e893ef137131147f8e0c85d3ac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040570"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923650"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo テナントの構成
 
@@ -93,7 +93,7 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 
 1.  テナントの一連のグローバル管理者の資格情報を使用して、[接続してサインイン](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
 
-2.  [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) コマンドレットを使用して、ユーザーごとに優先されるデータの場所を設定します。次に、例を示します。
+2.  [Set-MsolUser](/powershell/msonline/v1/set-msoluser) コマンドレットを使用して、ユーザーごとに優先されるデータの場所を設定します。次に、例を示します。
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -110,10 +110,10 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive のプロビジョニングと PDL の効果
 
-テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーの OneDrive を移動するには [、「OneDrive for Business 地域移動」を参照してください](move-onedrive-between-geo-locations.md)。
+テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーの OneDrive を移動するには [、「OneDrive for Business Geo Move」を参照してください](move-onedrive-between-geo-locations.md)。
 
 > [!NOTE]
-> PLD が変更され、MailboxRegion がメールボックス データベースの地域の場所コードと一致しなくなった場合、Exchange Online はユーザーのメールボックスを自動的に再配置します。 詳細については、「複数地域環境での Exchange Online メールボックスの管理 [」を参照してください](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)。
+> PLD が変更され、MailboxRegion がメールボックス データベースの地理的場所コードと一致しなくなった場合、Exchange Online はユーザーのメールボックスを自動的に再配置します。 詳細については、「複数地域環境での Exchange Online メールボックスの管理 [」を参照してください](./administering-exchange-online-multi-geo.md)。
 
 テナント内に OneDrive サイトを持っていないユーザーの場合、ユーザーの PDL が会社のサテライトの場所のいずれかと一致すれば、ユーザーの OneDrive は PDL 値に基づいてプロビジョニングされます。
 

@@ -1,5 +1,5 @@
 ---
-title: 顧客キーまたは可用性キーをローリングまたはローテーションする
+title: カスタマー キーまたは可用性キーをローリングまたはローテーションする
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,71 +12,71 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 顧客キーと共に使用される Azure Key Vault に格納されている顧客のルートキーをロールする方法について説明します。 サービスには、Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、Teams の各ファイルが含まれます。
-ms.openlocfilehash: 29a36636253f5f01181f231941d0c3a9e26abacc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 顧客キーで使用される Azure Key Vault に格納されている顧客ルート キーをロールする方法について説明します。 サービスには、Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、Teams ファイルが含まれます。
+ms.openlocfilehash: 980d6b198b326cb75bb2b4ef4d2c980f605f23e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633644"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923333"
 ---
-# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>顧客キーまたは可用性キーをローリングまたはローテーションする
+# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>カスタマー キーまたは可用性キーをローリングまたはローテーションする
 
 > [!CAUTION]
-> セキュリティまたはコンプライアンスの要件によってキーをロールする必要がある場合は、顧客キーと共に使用する暗号化キーのみをロールアウトしてください。 また、ポリシーに関連付けられている、またはポリシーに関連付けられていたキーは削除しないでください。 キーをロールすると、以前のキーを使用してコンテンツが暗号化されます。 たとえば、アクティブなメールボックスは頻繁に再暗号化されますが、非アクティブ、切断済み、および無効になったメールボックスは、以前のキーで暗号化されたままになります。 SharePoint Online は復元と回復のためにコンテンツのバックアップを実行するので、古いキーを使用してアーカイブされたコンテンツが残っている場合があります。
+> セキュリティ要件またはコンプライアンス要件によってキーをロールする必要がある場合にのみ、顧客キーで使用する暗号化キーをロールします。 また、ポリシーに関連付けられているキーや関連付けられたキーは削除しない。 キーをロールすると、前のキーで暗号化されたコンテンツが表示されます。 たとえば、アクティブなメールボックスは頻繁に再暗号化されますが、非アクティブなメールボックス、切断されたメールボックス、および無効になっているメールボックスは、以前のキーで暗号化されます。 SharePoint Online は復元および回復の目的でコンテンツのバックアップを実行します。そのため、古いキーを使用してコンテンツがアーカイブされている可能性があります。
 
 ## <a name="about-rolling-the-availability-key"></a>可用性キーのローリングについて
 
-Microsoft は、お客様に可用性キーの直接制御を公開しません。 たとえば、Azure Key Vault で所有するキーのみをロール (回転) することができます。 Microsoft 365 は、内部で定義されたスケジュールで可用性キーをロールします。 これらの主要なロールには、顧客向けのサービスレベル契約 (SLA) はありません。 Microsoft 365 は、自動化された手動ではないプロセスで、Microsoft 365 のサービスコードを使用して可用性キーを回転させます。 Microsoft 管理者がロールプロセスを開始する場合があります。 キーは、キーストアに直接アクセスせずに自動機構を使用してロールされます。 可用性キーシークレットストアへのアクセスは、Microsoft 管理者にはプロビジョニングされません。 可用性キーのローリングは、最初にキーを生成するのと同じメカニズムを利用します。 可用性キーの詳細については、「[可用性キーに](customer-key-availability-key-understand.md)ついて」を参照してください。
+Microsoft は、可用性キーの直接制御を顧客に公開しない。 たとえば、Azure Key Vault で所有しているキーのみをロール (回転) できます。 Microsoft 365 は、内部で定義されたスケジュールで可用性キーをロールします。 これらの主要なロールには、顧客向けサービス レベル契約 (SLA) はありません。 Microsoft 365 は、自動化された手動以外のプロセスで Microsoft 365 サービス コードを使用して可用性キーをローテーションします。 Microsoft 管理者は、ロール プロセスを開始できます。 キーは、キー ストアに直接アクセスせずに自動化されたメカニズムを使用してロールされます。 可用性キー シークレット ストアへのアクセスは、Microsoft 管理者にプロビジョニングされません。 可用性キーのローリングでは、最初にキーを生成するのと同じメカニズムが利用されます。 可用性キーの詳細については、「可用性キー [について」を参照してください](customer-key-availability-key-understand.md)。
 
 > [!IMPORTANT]
-> Exchange Online と Skype for Business の可用性キーは、作成する DEP ごとに一意の可用性キーが生成されるため、ユーザーが新しい DEP を作成することによって効果的にロールバックできます。 SharePoint Online、OneDrive for Business、Teams の各ファイルの可用性キーは、フォレストレベルに存在し、DEPs と顧客間で共有されています。これは、Microsoft 社内で定義されたスケジュールでのみ発生します。 新しい DEP が作成されるたびに可用性キーがロールされないリスクを軽減するために、SharePoint、OneDrive、および Teams は、新しい DEP が作成されるたびに、顧客のルートキーと可用性キーによってラップされるキーであるテナントの中間キー (TIK) をロールします。
+> Exchange Online および Skype for Business 可用性キーは、作成する DEP ごとに一意の可用性キーが生成されるので、新しい DEP を作成する顧客が効果的にロールできます。 SharePoint Online、OneDrive for Business、Teams ファイルの可用性キーはフォレスト レベルで存在し、DEP と顧客間で共有されます。つまり、ローリングは Microsoft 内部で定義されたスケジュールでのみ行われます。 新しい DEP が作成されるごとに可用性キーを展開しないリスクを軽減するために、SharePoint、OneDrive、Teams は、新しい DEP が作成されるごとに、顧客のルート キーと可用性キーによってラップされたキーであるテナント中間キー (TIK) をロールします。
 
-## <a name="request-a-new-version-of-each-existing-root-key-you-want-to-roll"></a>ロールアップする各既存のルートキーの新しいバージョンを要求する
+## <a name="request-a-new-version-of-each-existing-root-key-you-want-to-roll"></a>ロールする各既存のルート キーの新しいバージョンを要求する
 
-キーをロールする場合は、新しいバージョンの既存のキーを要求します。 既存のキーの新しいバージョンを要求するには、最初にキーを作成したときと同じ構文を使用して、同じコマンドレット[AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey)を使用します。 データ暗号化ポリシー (DEP) に関連付けられているキーのローリングを完了した後、別のコマンドレットを実行して、顧客キーが新しいキーの使用を開始するようにします。 各 Azure Key Vault (AKV) でこの手順を実行します。
+キーをロールするときに、既存のキーの新しいバージョンを要求します。 既存のキーの新しいバージョンを要求するには、最初にキーを作成したのと同じ構文で、同じコマンドレット [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey)を使用します。 データ暗号化ポリシー (DEP) に関連付けられたキーのローリングが完了したら、別のコマンドレットを実行して、顧客キーが新しいキーの使用を開始します。 各 Azure Key Vault (AKV) でこの手順を実行します。
 
-以下に例を示します。
+次に例を示します。
 
-1. Azure PowerShell を使用して Azure サブスクリプションにサインインします。 手順については、「 [Azure PowerShell を使用](https://docs.microsoft.com/powershell/azure/authenticate-azureps)してサインインする」を参照してください。
+1. Azure PowerShell を使用して Azure サブスクリプションにサインインします。 手順については [、「Azure PowerShell でサインインする」を参照してください](/powershell/azure/authenticate-azureps)。
 
-2. 次の例に示されているように、AzKeyVaultKey コマンドレットを実行します。
+2. 次の例Add-AzKeyVaultKey、このコマンドレットを実行します。
 
    ```powershell
    Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
    ```
 
-   この例では、O365EX という名前のキーが**VaultA1-Key001** **vault に**存在するため、このコマンドレットによってキーの新しいバージョンが作成されます。 この操作により、キーのバージョン履歴にある以前のキーバージョンが保持されます。 暗号化されたデータを復号化するには、以前のキーバージョンが必要です。 DEP に関連付けられているキーのロールアウトを完了したら、追加のコマンドレットを実行して、顧客キーが新しいキーの使用を開始していることを確認します。 次のセクションでは、コマンドレットについて詳しく説明します。
+   この例では **、Contoso-O365EX-NA-VaultA1-Key001** という名前のキーが **Contoso-O365EX-NA-VaultA1** コンテナーに存在する場合、コマンドレットは新しいバージョンのキーを作成します。 この操作では、キーのバージョン履歴内の以前のキー バージョンが保持されます。 暗号化されたデータを復号化するには、以前のキー バージョンが必要です。 DEP に関連付けられたキーのローリングが完了したら、追加のコマンドレットを実行して、顧客キーが新しいキーの使用を開始します。 次のセクションでは、コマンドレットの詳細について説明します。
   
-## <a name="update-the-customer-key-for-exchange-online-and-skype-for-business"></a>Exchange Online と Skype for Business の顧客キーを更新する
+## <a name="update-the-customer-key-for-exchange-online-and-skype-for-business"></a>Exchange Online および Skype for Business のカスタマー キーを更新する
 
-Exchange Online と Skype for Business で使用されている DEP に関連付けられている Azure キーヴォールトキーのいずれかをロールバックする場合は、新しいキーをポイントするように DEP を更新する必要があります。 これは、可用性キーを回転させません。
+Exchange Online および Skype for Business で使用される DEP に関連付けられている Azure Key Vault キーのいずれかをロールする場合は、新しいキーをポイントするように DEP を更新する必要があります。 これにより、可用性キーはローテーションされない。
 
-新しいキーを使用してメールボックスを暗号化するようにカスタマーキーに指示するには、次のように、Set-DataEncryptionPolicy コマンドレットを実行します。
+新しいキーを使用してメールボックスを暗号化するように顧客キーに指示するには、次のように Set-DataEncryptionPolicyコマンドレットを実行します。
 
-1. Azure PowerShell で Set-DataEncryptionPolicy コマンドレットを実行します。
+1. Azure PowerShell でSet-DataEncryptionPolicyコマンドレットを実行します。
   
    ```powershell
    Set-DataEncryptionPolicy -Identity <DataEncryptionPolicyID> -Refresh
    ```
 
-   72時間以内に、この DEP に関連付けられているアクティブなメールボックスは新しいキーで暗号化されます。
+   72 時間以内に、この DEP に関連付けられているアクティブなメールボックスが新しいキーで暗号化されます。
 
-2. メールボックスの DataEncryptionPolicyID プロパティの値を確認するには、「[メールボックスに DEP が割り当てられているかどうかを判断](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox)する」の手順を使用します。 このプロパティの値は、更新されたキーがサービスによって適用されると変更されます。
+2. メールボックスの DataEncryptionPolicyID プロパティの値を確認するには、「メールボックスに割り当てられた DEP を決定する」の手順 [を使用します](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox)。 サービスが更新されたキーを適用すると、このプロパティの値が変更されます。
   
-## <a name="update-the-customer-key-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>SharePoint Online、OneDrive for Business、および Teams ファイルの顧客キーを更新する
+## <a name="update-the-customer-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>SharePoint Online、OneDrive for Business、Teams ファイルのカスタマー キーを更新する
 
-SharePoint Online では、一度に1つのキーのみをロールすることができます。 キーコンテナーで両方のキーをロールする場合は、最初の操作が完了するまで待機します。 Microsoft では、この問題を回避するために運用をずらすことをお勧めします。 SharePoint Online と OneDrive for business で使用されている DEP に関連付けられている Azure キーヴォールトキーのいずれかをロールバックする場合は、新しいキーをポイントするように DEP を更新する必要があります。 これは、可用性キーを回転させません。
+SharePoint Online では、一度に 1 つのキーのみをロールできます。 キー コンテナーで両方のキーをロールする場合は、最初の操作が完了するのを待ちます。 Microsoft では、この問題を回避するために操作をずらしてください。 SharePoint Online および OneDrive for Business で使用される DEP に関連付けられている Azure Key Vault キーのいずれかをロールする場合は、DEP を更新して新しいキーをポイントする必要があります。 これにより、可用性キーはローテーションされない。
 
-1. Get-spodataencryptionpolicy コマンドレットを次のように実行します。
+1. 次のようにUpdate-SPODataEncryptionPolicyコマンドレットを実行します。
   
    ```powershell
    Update-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
    ```
 
-   このコマンドレットは、SharePoint Online と OneDrive for business のキーロール操作を開始しますが、アクションはすぐには完了しません。
+   このコマンドレットは、SharePoint Online および OneDrive for Business のキー ロール操作を開始しますが、アクションはすぐには完了されません。
 
-2. キーロール操作の進行状況を確認するには、次のように Get-spodataencryptionpolicy コマンドレットを実行します。
+2. キー ロール操作の進行状況を確認するには、次のように Get-SPODataEncryptionPolicyコマンドレットを実行します。
 
    ```powershell
    Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
@@ -84,10 +84,10 @@ SharePoint Online では、一度に1つのキーのみをロールすること�
 
 ## <a name="related-articles"></a>関連記事
 
-- [Office 365 の顧客キーによるサービスの暗号化](customer-key-overview.md)
+- [顧客キーによるサービスの暗号化 (Office 365)](customer-key-overview.md)
 
-- [Office 365 の顧客キーの設定](customer-key-set-up.md)
+- [Office 365 のカスタマー キーを設定する](customer-key-set-up.md)
 
-- [Office 365 の顧客キーの管理](customer-key-manage.md)
+- [Office 365 のカスタマー キーを管理する](customer-key-manage.md)
 
-- [可用性キーについて](customer-key-availability-key-understand.md)
+- [可用性キーの詳細](customer-key-availability-key-understand.md)

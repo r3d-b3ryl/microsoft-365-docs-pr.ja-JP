@@ -20,79 +20,79 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: この記事には、ネットワークの計画、テスト、Office 365 への移行に関する情報へのリンクが含まれています。
-ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+description: この記事には、ネットワークの計画、テスト、および 365 への移行に関するOfficeがあります。
+ms.openlocfilehash: 99bcc1bd0447b192860fc0bcc67fc18d87c2d5fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948450"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923590"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 のネットワークと移行の計画
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-この記事には、ネットワークの計画とテスト、および Office 365 への移行に関する情報へのリンクが記載されています。
+この記事には、ネットワークの計画とテスト、および 365 への移行に関するOfficeがあります。
   
-Office 365 に初めて展開するか、Office に移行する前に、これらのトピックの情報を使用して必要な帯域幅を推定し、Office 365 に展開または移行するのに十分な帯域幅があるかどうかをテストして確認することができます。
+初めて展開するか、Office 365 に移行する前に、これらのトピックの情報を使用して必要な帯域幅を見積もり、Office 365 に展開または移行するのに十分な帯域幅をテストして確認できます。
 
-この記事は [、Office 365 のネットワーク計画とパフォーマンスチューニング](https://aka.ms/tune)に含まれています。
+この記事は [、365](./network-planning-and-performance.md)のネットワーク計画とパフォーマンスの調整Officeです。
 
-Microsoft 365 およびその他の Microsoft クラウドプラットフォームおよびサービスに対してネットワークを最適化するための手順については、「 [エンタープライズアーキテクトのための Microsoft クラウドネットワーク](https://aka.ms/cloudarchnetworking) 」のポスターを参照してください。
+Microsoft 365 および他の Microsoft クラウド プラットフォームとサービスのネットワークを最適化する手順については [、「Microsoft Cloud Networking for Enterprise Architects」](../solutions/cloud-architecture-models.md) ポスターを参照してください。
    
-## <a name="estimate-network-bandwidth-requirements"></a>ネットワーク帯域幅の要件を見積もる
+## <a name="estimate-network-bandwidth-requirements"></a>ネットワーク帯域幅の要件の見積もり
 <a name="EstimateBandwidthRequirements"> </a>
 
-Office 365 を使用すると、組織のインターネット回線の使用率が向上する可能性があります。 Office 365 が完全に展開され、少なくとも20% の容量を維持している間に、使用可能な帯域幅の量が増加しているかどうかを判断することが重要です。
+365 Officeを使用すると、組織のインターネット回線の使用率が向上する可能性があります。 Office 365 が完全に展開された後、最も多くの日数を処理するために少なくとも 20% の容量を残しながら、現在利用可能な帯域幅の量が予想される増加を処理するのに十分かどうかを判断することが重要です。
   
 帯域幅を推定するには、次の手順を使用します。
   
-1. 各インターネット出口を使用するクライアントの数を評価します。 Terabit ネットワークが可能な限り多くの接続を処理できるようにします。 
+1. 各インターネット出力を使用するクライアントの数を評価します。 マルチテラビット ネットワークで可能な限り多くの接続を処理します。 
     
-2. クライアントが使用できる Office 365 サービスと機能を決定します。 さまざまなサービスや利用状況のプロファイルを持つユーザーのグループが存在する可能性があります。
+2. クライアントがOffice 365 のサービスと機能を決定します。 サービスや利用状況プロファイルが異なるユーザーのグループがある可能性があります。
     
-3. クライアントのパイロットグループに対するネットワークの使用を測定します。 パイロットクライアントが、組織内のユーザーのさまざまなプロファイルおよび地理的に異なる場所を代表するものであることを確認します。 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744)と[Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network)の従来の電卓、または自社のネットワークで実行した[ケーススタディ](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)に対して、結果をクロスチェックすることができます。 
+3. クライアントのパイロット グループのネットワーク使用を測定します。 パイロット クライアントが組織内のユーザーの異なるプロファイルと、さまざまな地理的な場所を表す必要があります。 Exchange と[Microsoft Teams](/microsoftteams/prepare-network)の古い計算機、[](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744)または独自のネットワークで実行[](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)したケース スタディに対して、結果をクロスチェックできます。 
     
-4. ネットワークに変更を加える前に、パイロットグループの測定値を使用して、組織のニーズ全体を推定し、見積もりを検証するために再テストします。
+4. パイロット グループの測定値を使用して、組織のニーズ全体を推定し、ネットワークに変更を加える前に、見積もりを検証するために再テストします。
     
 ## <a name="test-your-existing-network"></a>既存のネットワークをテストする
 <a name="calculators"> </a>
 
- **ネットワークツール。** インターネット帯域幅をテストおよび検証して、ダウンロード、アップロード、および待機時間の制約を決定します。 これらのツールは、完全に展開された後と同様に、移行のためのネットワークの機能を決定するのに役立ちます。 
+ **ネットワーク ツール。** インターネット帯域幅をテストして検証し、ダウンロード、アップロード、遅延の制約を判断します。 これらのツールは、完全に展開した後と同様に、移行のためのネットワークの機能を判断するのに役立ちます。 
     
 - [Microsoft リモート接続アナライザー](https://go.microsoft.com/fwlink/p/?LinkId=517243): Exchange Online 環境での接続をテストします。
     
-- Outlook および Office 365 の問題を修正するには、 [Microsoft Support And Recovery Assistant For Office 365](https://diagnostics.office.com/#/Download?env=SOC) を使用します。 
+- Outlook および [365 の問題を解決するには、Office 365](https://diagnostics.office.com/#/Download?env=SOC) の Microsoft サポート Officeアシスタントを使用します。 
     
-## <a name="best-practices-for-network-planning-and-improving-migration-performance-for-office-365"></a>Office 365 のネットワーク計画と移行パフォーマンスの向上のためのベストプラクティス
+## <a name="best-practices-for-network-planning-and-improving-migration-performance-for-office-365"></a>365 のネットワーク計画と移行パフォーマンスの向上Office方法
 <a name="BestPractices"> </a>
 
-Office 365 の動作を向上させる方法の詳細については、これらのベストプラクティスをさらに掘り下げて説明します。
+365 エクスペリエンスの向上に関する詳細については、これらのベスト プラクティスOffice詳しくはお読みください。
   
-1. すぐにユーザーのサポートを開始する必要がありますか。 ネットワークが連携していない場合に、SharePoint Online、Exchange Online、Lync Online などの Office 365 を使用する際のヒントについては、「 [office 365 を低速ネットワークで使用するためのベストプラクティス](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) 」を参照してください。 この記事では、Office 365 の動作を最適化するための TechNet および Support.office.com のコンテンツのロードについて説明し、web ページをカスタマイズする簡単な方法について説明します。また、最適な Office 365 環境に合わせて Internet Explorer 設定を設定する方法についても説明します。 
+1. ユーザーを支援する方法を、今すぐ始めてみませんか? ネットワークが連携していない場合の Office 365 (SharePoint Online、Exchange Online、Lync Online など) の使用に関するヒントについては、「低速ネットワークで [Office 365](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) を使用するためのベスト プラクティス」を参照してください。 この記事では、Office 365 エクスペリエンスを最適化するための TechNet と Support.office.com のコンテンツの負荷にリンクし、web ページをカスタマイズする簡単な方法と、Office 365 エクスペリエンスの最適な Internet Explorer 設定を設定する方法について説明します。 
     
-2. 「 [Office 365 のネットワーク接続の原則](https://aka.ms/o365networkingprinciples) 」を参照して、office 365 のトラフィックを安全に管理し、最適なパフォーマンスを得るための接続の原則について理解します。 この記事では、Office 365 ネットワーク接続をセキュリティで保護するための最新のガイドについて説明します。 
+2. [365 Office 365](./microsoft-365-network-connectivity-principles.md)ネットワーク接続の原則を参照して、365 トラフィックを安全に管理し、可能な限り最高のパフォーマンスを得Office接続の原則を理解してください。 この記事では、Office 365 ネットワーク接続をセキュリティで保護するための最新のガイドについて説明します。 
     
-3. Windows 更新プログラムのスケジュールを慎重に管理することによって、メールの移行のパフォーマンスを向上させます。 クライアントコンピューターをバッチ処理で更新し、ネットワーク帯域幅の使用を制限するために Office 365 に移行する前にすべてのクライアントコンピューターが更新されるようにすることができます。 詳細については、「 [365 Office のデスクトップを手動で更新および構成する (最新の更新プログラム](https://support.microsoft.com/gp/office-2013-365-update))」を参照してください。
+3. Windows 更新プログラムのスケジュールを慎重に管理することで、メール移行のパフォーマンスを向上させます。 クライアント コンピューターをバッチで更新し、すべてのクライアント コンピューターが Office 365 に移行する前に更新され、ネットワーク帯域幅の使用を調整できます。 詳細については、「最新の更新プログラムについては、デスクトップを手動で更新Office [365 用に構成する」を参照してください](https://support.microsoft.com/gp/office-2013-365-update)。
     
-4. Office 365 のネットワークトラフィックは、信頼されたインターネットサービスとして扱われ、組織によっては、信頼されていないインターネットサービスへのネットワークトラフィックに関する、従来のフィルタリングやスキャンの多くをバイパスできるようになります。 これには、プロキシユーザー認証やパケット検査などの送信処理の削除に加えて、適切なネットワークアドレス変換 (NAT) を使用してインターネットへのローカル出口を保証し、増加したネットワーク要求を処理するのに十分な帯域幅容量を含めることが含まれます。 ネットワーク上の信頼されたインターネットサービスとして Office 365 を処理するようにネットワークを構成する方法の詳細については、「 [office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)」を参照してください。
+4. Office 365 ネットワーク トラフィックは、信頼できるインターネット サービスとして扱い、一部の組織が信頼されていないインターネット サービスへのネットワーク トラフィックに配置する従来のフィルター処理とスキャンの多くをバイパスできる場合に最適です。 これには、通常、プロキシ ユーザー認証やパケット 検査などの送信処理を削除し、ネットワーク アドレス変換 (NAT) を適切に使用してインターネットへのローカル出力を確保し、増加するネットワーク要求を処理するのに十分な帯域幅容量が含まれます。 Office [365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)をネットワーク上の信頼できるインターネット サービスとして処理するためのネットワークの構成に関するその他のガイダンスについては、「365 エンドポイントの管理」を参照 Officeしてください。
     
-1. [Office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)を確認します。 Office 365 に送られる追加のトラフィックは、送信プロキシ接続の増加と、TLS/SSL を介したセキュリティで保護されたトラフィックの増加につながります。
+1. [365 Officeの管理を確認します](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。 365 を使用するOfficeすると、送信プロキシ接続が増加し、TLS/SSL 上のセキュリティで保護されたトラフィックが増加します。
     
-2. 送信プロキシでユーザー認証が必要な場合は、接続が遅くなったり、機能が失われたりすることがあります。 Office 365 ドメインの認証要件を省略すると、このオーバーヘッドを減らすことができます。
+2. 送信プロキシでユーザー認証が必要な場合は、接続が遅くなるか、機能が失われる可能性があります。 365 ドメインの認証要件をOfficeすると、このオーバーヘッドを削減できます。
     
-3. 多数の共有予定表とメールボックスがある場合、Outlook から Exchange への接続数が増加する可能性があります。 たとえば、Outlook クライアントは、使用されている共有予定表ごとに、最大2つの追加の接続を開くことができます。 このような状況では、出口プロキシが接続を処理できることを確認するか、Outlook 用 Office 365 への接続のプロキシをバイパスするようにします。
+3. 共有予定表とメールボックスの数が多い場合は、Outlook から Exchange への接続数が増える場合があります。 たとえば、Outlook クライアントは、使用している共有予定表ごとに最大 2 つの追加接続を開く場合があります。 この状況では、出力プロキシが接続を処理したり、Outlook 用の 365 への接続Officeバイパスしたりできます。
     
-4. パブリック IP アドレスに対してサポートされるデバイスの最大数と、複数の IP アドレス間で負荷分散を行う方法を決定します。 詳細については、[Office 365 の NAT サポート](nat-support-with-microsoft-365.md)をご覧ください。
+4. パブリック IP アドレスでサポートされるデバイスの最大数と、複数の IP アドレス間で負荷分散する方法を決定します。 詳細については、[Office 365 の NAT サポート](nat-support-with-microsoft-365.md)をご覧ください。
     
-5. ネットワーク上のコンピューターからの送信接続を調査している場合は、このフィルター処理を Office 365 ドメインにバイパスすると、接続性とパフォーマンスが向上します。 さらに、送信検査をバイパスすることで、単一のインターネット出口の必要性がなくなり、Office 365 の宛先のネットワーク要求に対してローカルのインターネット出口が有効になります。
+5. ネットワーク上のコンピューターからの送信接続を検査する場合は、このフィルター処理を Office 365 ドメインにバイパスすると、接続性とパフォーマンスが向上します。 さらに、多くの場合、送信検査をバイパスすると、単一のインターネット出力が不要になる場合が多く、365 件のネットワーク要求に対してローカルOfficeを有効にできます。
     
-6. 内部ネットワーク設定を見つけるお客様は、パフォーマンスに影響を与える場合があります。 最大転送単位 (MTU) サイズ、ネットワーク自動ネゴシエーションまたは自動検出、インターネットへのサブ最適なルートなどの設定は、よく見られる場所です。
+6. 一部のお客様は、内部ネットワーク設定がパフォーマンスに影響を与える可能性があります。 最大伝送単位 (MTU) サイズ、ネットワークの自動ネゴシエーションまたは自動検出、インターネットへの最適なルートの設定は、一般的な場所です。
     
-## <a name="network-planning-reference-for-office-365"></a>Office 365 のネットワーク計画リファレンス
+## <a name="network-planning-reference-for-office-365"></a>365 のネットワーク計画Office参照
 <a name="NetReference"> </a>
 
-これらのトピックには、詳細な Office 365 のネットワーク参照情報が含まれています。
+これらのトピックには、365 ネットワークOffice詳細な情報が含まれています。
   
 - [Office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
@@ -102,13 +102,13 @@ Office 365 の動作を向上させる方法の詳細については、これら
     
 - [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
     
-- [Office 365 ネットワーク接続の原則](https://aka.ms/o365networkingprinciples)
+- [Office 365 ネットワーク接続の原則](./microsoft-365-network-connectivity-principles.md)
     
-- [Office 365 のビデオネットワークについてよく寄せられる質問 (FAQ)](office-365-video-networking-faq.md)
+- [Office 365 ビデオ ネットワークに関するよく寄せられる質問 (FAQ)](office-365-video-networking-faq.md)
     
 - [Office 365 サービスに接続するネットワーク デバイスの計画](plan-for-network-devices.md)
     
-- [Office 365 サービスのセットアップガイド](setup-guides-for-microsoft-365.md)
+- [365 サービスのOfficeガイド](setup-guides-for-microsoft-365.md)
  
 ## <a name="see-also"></a>関連項目
 

@@ -19,19 +19,19 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online 最新版と従来版の発行サイト ページで iFrame のパフォーマンスを最適化する方法について説明します。
-ms.openlocfilehash: 8985eb1038bbdfc53dc3c6a8ea9350fa6df33556
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d6e9aefa23972589c752540959b17f5d20ed0889
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692229"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923062"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online 最新版と従来版の発行サイト ページで iFrame を最適化する
 
 iFrame は、動画やその他のメディアなどのリッチ コンテンツをプレビューするのに便利です。 ただし、iFrame には SharePoint サイト ページ内の別個のページが読み込まれるため、iFrame に読み込まれるコンテンツには大きな画像、動画、またはページの読み込み時間全体に影響する可能性のある他の要素が含まれていることがあり、ページで制御できません。 この記事では、ページ内の iFrame がユーザーに発生する可能性のある待ち時間や、一般的な問題の解決方法を判断する方法について説明します。
 
 >[!NOTE]
->Sharepoint Online の最新版サイトでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)」を参照してください。
+>Sharepoint Online の最新版サイトでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)」を参照してください。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>SharePoint 用ページ診断ツールを使用して iFrame を使用する Web パーツを分析する
 
@@ -44,8 +44,8 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 考えられる結果は次のとおりです。
 
-- **要注意** (赤): このページには、iFrameを使用する Web パーツが **3 つ以上**含まれています
-- **改善の余地あり** (黄): このページには、iFrameを使用する Web パーツが **1 つまたは 2 つ**含まれています
+- **要注意** (赤): このページには、iFrameを使用する Web パーツが **3 つ以上** 含まれています
+- **改善の余地あり** (黄): このページには、iFrameを使用する Web パーツが **1 つまたは 2 つ** 含まれています
 - **操作は不要** (緑): このページには iFrame を使用する Web パーツが含まれていません
 
 [**iFrame を使用する Web パーツが検出されました**] の結果が、結果の [**改善の余地あり**] セクションまたは [**要注意**] セクションのいずれかに表示されている場合は、結果をクリックして iframe が含まれる Web パーツを表示できます。
@@ -80,4 +80,4 @@ iFrame は本来、javascript、CSS、framework の要素など、関連付け�
 
 [Office 365 のパフォーマンスをチューニングする](tune-microsoft-365-performance.md)
 
-[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)

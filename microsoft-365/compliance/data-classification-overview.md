@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999397"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922681"
 ---
 # <a name="know-your-data---data-classification-overview"></a>データを把握する - データ分類の概要
 
@@ -37,7 +37,7 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 
 これらの機能は、データ分類のページでも管理することができます。
 - [トレーニング可能な分類子](classifier-learn-about.md)
-- [機密情報の種類](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類](./sensitive-information-type-entity-definitions.md)
 
 データ分類は、**Microsoft 365 コンプライアンス センター** または **Microsoft 365 セキュリティ センター**  >  [**分類**]  >  [**データ分類**] で確認することができます。
 
@@ -49,7 +49,7 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 
 ## <a name="prerequisites"></a>前提条件
 
-さまざまなサブスクリプションがエンドポイント DLP をサポートしています。 エンドポイント DLP のライセンス オプションについては、「[情報保護ライセンスのガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)」を参照してください。 
+さまざまなサブスクリプションがエンドポイント DLP をサポートしています。 エンドポイント DLP のライセンス オプションについては、「[情報保護ライセンスのガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)」を参照してください。 
 
 ### <a name="permissions"></a>アクセス許可
 
@@ -97,7 +97,7 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 
 > [!NOTE]
 > 機密ラベルをまだ作成または発行していない場合、または、いずれのコンテンツにも機密ラベルが適用されていない場合、"No sensitivity labels detected" (機密ラベルが検出されませんでした) というメッセージがこのカードに表示されます。 機密ラベルの使用を開始するには、次を参照してください:
->- [機密ラベルの使用を開始する](get-started-with-sensitivity-labels.md) または、AIP については [Azure Information Protection ポリシーを構成する](https://docs.microsoft.com/azure/information-protection/configure-policy)
+>- [機密ラベルの使用を開始する](get-started-with-sensitivity-labels.md) または、AIP については [Azure Information Protection ポリシーを構成する](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>コンテンツに適用されている上位の保持ラベル
 

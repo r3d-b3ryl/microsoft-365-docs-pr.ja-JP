@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: 19bc4763f60fae1db914ab7c1f10354e7904cb50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068975"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923172"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -87,7 +87,7 @@ Microsoft 365 E3の ユーザーは、これらのアドオンを使用して、
 
 これらの製品は、**2020 年 10 月 13 日** にサポートが終了しました:
 
-- [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Office 2010](/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) は、**2021 年 4 月 13 日** にサポートが終了します。
@@ -120,11 +120,11 @@ Microsoft 365 for Enterprise の製品、機能、コンポーネントの展開
 
 ## <a name="additional-microsoft-365-products"></a>追加の Microsoft 365 製品
 
-- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](../business/index.yml)
 
   小規模および中規模の企業向けに、優れた生産性やコラボレーション機能と、ビジネス データを保護するためのデバイス管理およびセキュリティ ソリューションを統合します。
 
-- [Microsoft 365 Education](https://docs.microsoft.com/education)
+- [Microsoft 365 Education](/education)
 
   手ごろな価格の教育用に構築された単一ソリューションで、教育者が創造力を発揮し、チームワークを促進し、シンプルかつ安全な操作性を実現できるようにします。
 
@@ -154,7 +154,7 @@ Microsoft 365 for Enterprise、Microsoft Surface デバイス、およびMicroso
 
 ![Microsoft 365 の基礎トレーニング](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-Microsoft 365 と、Microsoft 365の認定の詳細について学ぶには: [認定済Microsoft 365: 基本](https://docs.microsoft.com/learn/paths/m365-fundamentals/)から始めることができます。
+Microsoft 365 と、Microsoft 365の認定の詳細について学ぶには: [認定済Microsoft 365: 基本](/learn/paths/m365-fundamentals/)から始めることができます。
 
 ## <a name="see-also"></a>関連項目
 

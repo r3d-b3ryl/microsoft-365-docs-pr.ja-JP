@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: SharePoint のページ診断ツールを使用して、SharePoint Online モダン ポータルとクラシック発行ページを事前に定義されたパフォーマンス条件のセットに対して分析します。
-ms.openlocfilehash: a6616a7d3f9f27365c7b96bbfb08a17c6d2be030
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b55e5c04f56bac4e6313284de60753d1beaaaed1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820219"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921632"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint のページ診断ツールを使用する
 
@@ -177,7 +177,7 @@ SharePoint モダン ポータル ページまたは従来の発行サイト ペ
 
 [Office 365 のパフォーマンスをチューニングする](tune-microsoft-365-performance.md)
 
-[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
 

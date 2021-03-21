@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37b473e2cfffff3984ff81245f09e98ee18685ea
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 0ac1028ca3485f75518ccca298a1fd85a7bf40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826200"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922392"
 ---
 # <a name="user-submissions-policy"></a>ユーザー申請ポリシー
 
@@ -75,7 +75,7 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 - ユーザー申請の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
 
   - **組織の管理** または [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の **セキュリティ管理者**。
-  - Exchange **Online の**[組織の管理](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)。
+  - Exchange **Online の**[組織の管理](/Exchange/permissions-exo/permissions-exo#role-groups)。
 
 - Exchange Online PowerShell にアクセスする必要があります。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、申請メールボックスを指定すると、次のようなエラー メッセージが表示されます。
 
@@ -83,8 +83,8 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
   Exchange Online PowerShell へのアクセスを有効または無効にする方法の詳細については、次のトピックを参照してください。
 
-  - [Exchange Online PowerShell へのアクセスを有効または無効にする](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
-  - [Exchange Online のクライアント アクセス ルール](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Exchange Online PowerShell へのアクセスを有効または無効にする](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Exchange Online のクライアント アクセス ルール](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>コンプライアンス センターのセキュリティ &を使用して、ユーザー申請メールボックスを構成する
 
@@ -155,4 +155,3 @@ SafetyAPIAction は次のいずれかの整数値です。
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 この形式に従ってないメッセージは、申請ポータルに正しく表示されません。
-

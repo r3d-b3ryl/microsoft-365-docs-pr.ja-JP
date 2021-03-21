@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b20ae766ee308e9c59ed0d495df7c5a97c79b00
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1d048a65b34bc97a619855216945d1cc988bf9e2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287067"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921386"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -94,7 +94,7 @@ Microsoft では、2 種類のスプーフィングされたメッセージを�
   - 送信者と受信者は同じドメインのサブドメインにあります。
     > From: laura@marketing.fabrikam.com <br> To: julia@engineering.fabrikam.com
 
-  - 送信者と受信者は同じ組織に属する異なるドメインに属しています (つまり、両方のドメインが同じ組織内の[承認済みドメイン](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)として構成されています)。
+  - 送信者と受信者は同じ組織に属する異なるドメインに属しています (つまり、両方のドメインが同じ組織内の[承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)として構成されています)。
     > From: sender @ microsoft.com <br> To: recipient @ bing.com
 
     スパムボットの収集活動を阻止するために、メールアドレスにスペースが使用されます。
@@ -150,7 +150,7 @@ Microsoft Defender for Office 365 組織は、セキュリティ/コンプライ
 
   - DMARC.org で次のよくある質問を確認してください: [I operate a mailing list and I want to interoperate with DMARC, what should I do?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)。
 
-  - 次のブログ記事の手順を参照してください: [DMARC との相互運用で失敗を回避するためのメーリング リスト運営者向けのヒント](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)。
+  - 次のブログ記事の手順を参照してください: [DMARC との相互運用で失敗を回避するためのメーリング リスト運営者向けのヒント](/archive/blogs/tzink/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures)。
 
   - メーリング リスト サーバーに ARC をサポートする更新プログラムをインストールすることを検討してください (<http://arc-spec.org> を参照)。
 

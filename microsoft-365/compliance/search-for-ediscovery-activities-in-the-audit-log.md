@@ -15,26 +15,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: 電子情報開示のアクセス許可を割り当てられたユーザーが、セキュリティ & コンプライアンスセンターでコンテンツ検索とコア電子情報開示タスクを実行するときに記録されるイベントについて説明します。
+description: 電子情報開示アクセス許可が割り当てられたユーザーがセキュリティ コンプライアンス センターでコンテンツ検索タスクとコア電子情報開示タスクを実行するときに記録されるイベント&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 529e1a0ac3dc66ac15bd1b3fbcde466fb36d5f4e
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7324cf610373202cdc24f48c23dc0647d4a21ea8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357547"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922489"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 
-セキュリティ & コンプライアンスセンターで実行されるか、または対応する PowerShell コマンドレットを実行することによって、コンテンツ検索と電子情報開示関連のアクティビティ (コア電子情報開示および上級電子情報開示用) が監査ログに記録されます。 イベントは、管理者または電子情報開示マネージャー (電子情報開示のアクセス許可を割り当てられたユーザー) がセキュリティ/コンプライアンス センターでコンテンツ検索およびコア電子情報開示タスクを実行したときに記録されます。
+セキュリティ & コンプライアンス センターで実行するか、対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連のアクティビティ (Core eDiscovery および Advanced eDiscovery の場合) は、監査ログに記録されます。 イベントは、管理者または電子情報開示マネージャー (電子情報開示のアクセス許可を割り当てられたユーザー) がセキュリティ/コンプライアンス センターでコンテンツ検索およびコア電子情報開示タスクを実行したときに記録されます。
   
-- コアおよび上級電子情報開示ケースの作成と管理
+- コアおよび高度な電子情報開示ケースの作成と管理
 
 - コンテンツ検索の作成、開始、編集
 
 - コンテンツ検索アクション (検索結果のプレビュー、エクスポート、削除など) の実行
 
-- 高度な電子情報開示での保管担当者およびレビューセットの管理
+- Advanced eDiscovery での保管担当者とレビュー セットの管理
 
 - コンテンツ検索用のアクセス許可フィルターの構成
 
@@ -55,10 +55,10 @@ ms.locfileid: "47357547"
 
 3. 左側のウィンドウで [**検索**] をクリックし、[**監査ログの検索**] をクリックします。
 
-4. [ **アクティビティ** ] ドロップダウンリストで、[ **電子情報開示アクティビティ** ] または [ **高度な電子情報開示アクティビティ**] の下にある1つ以上のアクティビティをクリックして検索します。
+4. [アクティビティ **] ドロップダウン** リストの [**電子** 情報開示アクティビティ] または [高度な電子情報開示アクティビティ] で、検索する 1 つ以上のアクティビティをクリックします。
 
     > [!NOTE]
-    > [ **アクティビティ** ] ドロップダウンリストには、コマンドレットの監査ログからレコードを返す、 **電子情報開示のコマンドレットアクティビティ** という名前のアクティビティのグループも含まれています。
+    > [**アクティビティ]** ドロップダウン リストには、コマンドレット監査ログからレコードを返す電子情報開示コマンドレット アクティビティという名前のアクティビティのグループも含まれています。
   
 5. 日付と時間の範囲を選択します。その期間内に発生した電子情報開示イベントが表示されます。 
 
@@ -72,11 +72,11 @@ ms.locfileid: "47357547"
 
     イベント レコードの詳細なプロパティが記載された [**詳細**] スライド アウト ページが表示されます。 さらに詳細な情報を表示するには、[**詳細情報**] をクリックします。 これらのプロパティの説明については、「[電子情報開示アクティビティの詳細なプロパティ](#detailed-properties-for-ediscovery-activities)」セクションを参照してください。
 
-10. 必要に応じて、監査ログの検索結果を CSV ファイルにエクスポートし、Excel Power Query 機能を使用してこれらのレコードの書式設定とフィルター処理を行うことができます。 詳細については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。
+10. 必要に応じて、監査ログの検索結果を CSV ファイルにエクスポートし、Excel Power Query 機能を使用してこれらのレコードの書式設定とフィルター処理を行います。 詳細については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。
 
 ## <a name="ediscovery-activities"></a>電子情報開示アクティビティ
 
-次の表は、管理者またはユーザーが、セキュリティ/コンプライアンス センターを使用するか、セキュリティ/コンプライアンス センターの PowerShell で対応するコマンドレットを実行して、電子情報開示関連アクティビティを実行するときにログに記録されるコンテンツ検索およびコア電子情報開示アクティビティを示しています。 また、このリストでアクティビティを検索すると、Advanced で実行されるアクティビティの一部が返されることにも注意してください。
+次の表は、管理者またはユーザーが、セキュリティ/コンプライアンス センターを使用するか、セキュリティ/コンプライアンス センターの PowerShell で対応するコマンドレットを実行して、電子情報開示関連アクティビティを実行するときにログに記録されるコンテンツ検索およびコア電子情報開示アクティビティを示しています。 また、この一覧でアクティビティを検索すると、Advanced で実行される一部のアクティビティが返されます。
   
 > [!NOTE]
 > このセクションに示されている電子情報開示アクティビティは、次のセクションで説明される電子情報開示コマンドレットのアクティビティと同様の情報を示しています。 電子情報開示アクティビティは 30 分以内に監査ログの検索結果に表示されるため、このセクションで示されている電子情報開示アクティビティを使用することをお勧めします。 電子情報開示コマンドレットのアクティビティが監査ログの検索結果に表示されるには、最大 24 時間かかります。 
@@ -103,7 +103,7 @@ ms.locfileid: "47357547"
 |電子情報開示ケースが削除されました  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |電子情報開示ケースが削除されました。 ケースを削除する前に、ケースに関連付けられた保留をすべて削除する必要があります。  <br/> |
 |検索のアクセス許可フィルターが削除されました  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |検索のアクセス許可フィルターが削除されました。  <br/> |
 |電子情報開示ケースの保留に対する検索クエリが削除されました  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |電子情報開示ケースに関連付けられたクエリベースの保留が削除されました。 多くの場合、保留リストからのクエリの削除は、保留を削除した結果として発生します。 保留または保留クエリを削除する場合、保留中だったコンテンツの場所は解放されます。  <br/> |
-|コンテンツ検索のエクスポートがダウンロードされました  <br/> |SearchExportDownloaded  <br/> |該当なし  <br/> |ユーザーがコンテンツ検索の結果をローカル コンピューターにダウンロードしました。 検索結果をダウンロードするには、**コンテンツ検索のエクスポートが開始されました**のアクティビティを開始している必要があります。  <br/> |
+|コンテンツ検索のエクスポートがダウンロードされました  <br/> |SearchExportDownloaded  <br/> |該当なし  <br/> |ユーザーがコンテンツ検索の結果をローカル コンピューターにダウンロードしました。 検索結果をダウンロードするには、**コンテンツ検索のエクスポートが開始されました** のアクティビティを開始している必要があります。  <br/> |
 |コンテンツ検索の結果がプレビューされました  <br/> |SearchPreviewed  <br/> |該当なし  <br/> |ユーザーがコンテンツ検索の結果をプレビューしました。  <br/> |
 |コンテンツ検索の結果が消去されました  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |ユーザーが、**New-ComplianceSearchAction -Purge** コマンドを実行して、コンテンツ検索の結果を消去しました。  <br/> |
 |コンテンツ検索の分析が削除されました  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |(Advanced eDiscovery の検索結果を準備するための) コンテンツ検索の準備アクションが削除されました。 準備アクションから 2 週間経過していない場合は、Advanced eDiscovery のために準備された検索結果は Microsoft Azure 記憶域から削除されています。 準備アクションが 2 週間以上経過している場合は、このイベントは、対応する準備アクションのみが削除されたことを示しています。  <br/> |
@@ -117,7 +117,7 @@ ms.locfileid: "47357547"
 |コンテンツ検索のエクスポートが開始されました  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |ユーザーがコンテンツ検索の結果をエクスポートしました。  <br/> |
 |レポートのエクスポートが開始されました  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |ユーザーがコンテンツ検索レポートをエクスポートしました。  <br/> |
 |コンテンツ検索が停止されました  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |ユーザーがコンテンツ検索を停止しました。  <br/> |
-|(なし)|CaseViewed|Get-ComplianceCase|ユーザーは、セキュリティ/コンプライアンス センターの**電子情報開示**ページで、またはコマンドレットを実行して、ケースのリストを表示しました。|
+|(なし)|CaseViewed|Get-ComplianceCase|ユーザーは、セキュリティ/コンプライアンス センターの **電子情報開示** ページで、またはコマンドレットを実行して、ケースのリストを表示しました。|
 |(なし)|SearchViewed|Get-ComplianceSearch|ユーザーは、セキュリティ/コンプライアンス センターで、またはコマンドレットを実行して、コンテンツ検索のリスト ([**検索**] タブに表示) を表示しました。 このアクティビティは、ユーザーが電子情報開示ケースに関連付けられたコンテンツ検索リストを表示した場合 (ケースの [**検索**] タブをクリックした場合)、または **Get-ComplianceSearch -Case** コマンドを実行した場合にも記録されます。|
 |(なし)|ViewedSearchExported|Get-ComplianceSearchAction -Export|ユーザーは、セキュリティ/コンプライアンス センターで、またはコマンドレットを実行して、コンテンツ検索エクスポート ジョブ ([**エクスポート**] タブに表示) を表示しました。 このアクティビティは、ユーザーが電子情報開示ケースのエクスポート ジョブのリストを表示した場合 (ケースの [**エクスポート**] タブに表示] タブをクリックした場合)、または **Get-ComplianceSearchAction -Case -Export** コマンドを実行した場合にも記録されます。|
 |(なし)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|ユーザーは、セキュリティ/コンプライアンス センターで、またはコマンドレットを実行して、コンテンツ検索結果をプレビューします。|
@@ -125,7 +125,7 @@ ms.locfileid: "47357547"
   
 ## <a name="advanced-ediscovery-activities"></a>Advanced eDiscovery アクティビティ
 
-次の表では、監査ログに記録される高度な電子情報開示アクティビティについて説明します。 これらのアクティビティは、関連する電子情報開示活動に加えて、高度な電子情報開示ケースでのアクティビティの進行状況を追跡するために使用できます。
+次の表では、監査ログに記録される高度な電子情報開示アクティビティについて説明します。 これらのアクティビティ (関連する電子情報開示アクティビティに加えて、Advanced eDiscovery ケースでのアクティビティの進行状況を追跡するために使用できます。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
@@ -165,31 +165,31 @@ ms.locfileid: "47357547"
   
 |**フレンドリ名**|**操作 (コマンドレット)**|**説明**|
 |:-----|:-----|:-----|
-|電子情報開示ケースで保留が作成されました  <br/> |[New-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823813) <br/> |電子情報開示ケースの保留が作成されました。 保留は、コンテンツ ソースを指定してもしなくても作成できます。 コンテンツ ソースを指定すると、監査ログ エントリで識別されます。  <br/> |
-|電子情報開示ケースから保留が削除されました  <br/> |[Remove-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823814) <br/> |電子情報開示ケースに関連付けられた保留が削除されました。 保留を削除すると、コンテンツのすべての場所が保留から解放されます。 また、保留を削除すると、その保留に関連付けられたケースの保留ルールも削除されます (下記の **Remove-CaseHoldRule** を参照)。  <br/> |
-|電子情報開示ケースで保留が変更されました  <br/> |[Set-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823815) <br/> |電子情報開示ケースに関連付けられた保留が変更されました。 発生する可能性のある変更としては、コンテンツの場所の追加または削除、保留のオフ (無効化) があります。  <br/> |
-|電子情報開示ケースの保留に対する検索クエリが作成されました  <br/> |[New-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823816) <br/> |電子情報開示ケースに関連付けられたクエリベースの保留が作成されました。  <br/> |
-|電子情報開示ケースの保留に対する検索クエリが削除されました  <br/> |[Remove-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823820) <br/> |電子情報開示ケースに関連付けられたクエリベースの保留が削除されました。 多くの場合、保留リストからのクエリの削除は、保留を削除した結果として発生します。 保留または保留クエリを削除する場合、保留中だったコンテンツの場所は解放されます。  <br/> |
-|電子情報開示ケースの保留に対する検索クエリが変更されました  <br/> |[Set-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823819) <br/> |電子情報開示ケースに関連付けられたクエリベースの保留が変更されました。 発生する可能性のある変更としては、クエリの編集、クエリベースの保留の日付範囲の編集があります。  <br/> |
-|電子情報開示ケースが作成されました  <br/> |[New-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823842) <br/> |電子情報開示ケースが作成されました。 ケースを作成する際に必要な操作は、名前を付けることだけです。 メンバーの追加、保留の作成、ケースに関連付けられたコンテンツ検索の作成などの他のケース関連のタスクにより、追加のイベントがログに記録されます。  <br/> |
-|電子情報開示ケースが削除されました  <br/> |[Remove-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823844) <br/> |電子情報開示ケースが削除されました。 ケースを削除する前に、ケースに関連付けられた保留をすべて削除する必要があります。  <br/> |
-|電子情報開示ケースが変更されました  <br/> |[Set-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823846) <br/> |電子情報開示ケースが変更されました。 変更としては、開いているケースを閉じる、閉じたケースを再度開くなどがあります。  <br/> |
-|電子情報開示ケースにメンバーが追加されました  <br/> |[Add-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823848) <br/> |ユーザーが電子情報開示ケースのメンバーとして追加されました。 ケースのメンバーとしてユーザーは、必要なアクセス許可が割り当てられているかどうかに応じて、ケース関連のさまざまなタスクを実行できます。  <br/> |
-|電子情報開示ケースからメンバーが削除されました  <br/> |[Remove-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823849) <br/> |ユーザーが、電子情報開示ケースのメンバーから削除されました。  <br/> |
-|電子情報開示ケースのメンバーシップが変更されました  <br/> |[Update-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823850) <br/> |電子情報開示ケースのメンバーシップ リストが変更されました。 このアクティビティは、すべてのメンバーが新しいユーザーのグループに置き換えられたときにログに記録されます。 1 人のメンバーが追加または削除されると、**Add-ComplianceCaseMember** または **Remove-ComplianceCaseMember** 操作がログに記録されます。  <br/> |
-|コンテンツ検索が作成されました  <br/> |[New-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517935) <br/> |新しいコンテンツ検索が作成されました。  <br/> |
-|コンテンツ検索が削除されました  <br/> |[Remove-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517936) <br/> |既存のコンテンツ検索が削除されました。  <br/> |
-|コンテンツ検索が変更されました  <br/> |[Set-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517937) <br/> |既存のコンテンツの検索が変更されました。 変更としては、検索されるコンテンツの場所の追加または削除、検索クエリの編集などがあります。  <br/> |
-|コンテンツ検索が開始されました  <br/> |[Start-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517938) <br/> |コンテンツ検索が開始されました。 セキュリティ/コンプライアンス センターの GUI を使用してコンテンツ検索を作成または変更すると、検索は自動的に開始されます。 **New-ComplianceSearch** または **Set-ComplianceSearch** コマンドレットを使用して検索を作成または変更する場合、**Start-ComplianceSearch** コマンドレットを実行して検索を開始する必要があります。  <br/> |
-|コンテンツ検索が停止されました  <br/> |[Stop-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517939) <br/> |実行中だったコンテンツ検索が停止されました。  <br/> |
-|コンテンツ検索アクションが作成されました  <br/> |[New-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=527971) <br/> |コンテンツ検索アクションが作成されました。 コンテンツ検索アクションには、検索結果のプレビュー、検索結果のエクスポート、Advanced eDiscovery で分析するための検索結果の準備、コンテンツ検索の検索条件と一致するアイテムの完全な削除などがあります。  <br/> |
-|コンテンツ検索アクションが削除されました  <br/> |[Remove-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=824027) <br/> |コンテンツ検索アクションが削除されました。  <br/> |
-|検索のアクセス許可フィルターが作成されました  <br/> |[New-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617542) <br/> |検索のアクセス許可フィルターが作成されました。  <br/> |
-|検索のアクセス許可フィルターが削除されました  <br/> |[Remove-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617543) <br/> |検索のアクセス許可フィルターが削除されました。  <br/> |
-|検索のアクセス許可フィルターが変更されました  <br/> |[Set-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617544) <br/> |検索のアクセス許可フィルターが変更されました。  <br/> |
-|電子情報開示管理者が作成されました  <br/> |[Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=798217) <br/> |ユーザーが、組織の電子情報開示管理者として追加されました。  <br/> |
-|電子情報開示管理者が削除されました  <br/> |[Remove-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823945) <br/> |電子情報開示管理者が組織から削除されました。  <br/> |
-|電子情報開示管理者のメンバーシップが変更されました  <br/> |[Update-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823946) <br/> |組織の電子情報開示管理者のリストが変更されました。 このアクティビティは、電子情報開示管理者が新しいユーザーのグループに置き換えられた場合にログに記録されます。 1 人のユーザーが追加または削除された場合、**Add-eDiscoveryCaseAdmin** または **Remove-eDiscoveryCaseAdmin** 操作がログに記録されます。  <br/> |
+|電子情報開示ケースで保留が作成されました  <br/> |[New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy) <br/> |電子情報開示ケースの保留が作成されました。 保留は、コンテンツ ソースを指定してもしなくても作成できます。 コンテンツ ソースを指定すると、監査ログ エントリで識別されます。  <br/> |
+|電子情報開示ケースから保留が削除されました  <br/> |[Remove-CaseHoldPolicy](/powershell/module/exchange/remove-caseholdpolicy) <br/> |電子情報開示ケースに関連付けられた保留が削除されました。 保留を削除すると、コンテンツのすべての場所が保留から解放されます。 また、保留を削除すると、その保留に関連付けられたケースの保留ルールも削除されます (下記の **Remove-CaseHoldRule** を参照)。  <br/> |
+|電子情報開示ケースで保留が変更されました  <br/> |[Set-CaseHoldPolicy](/powershell/module/exchange/set-caseholdpolicy) <br/> |電子情報開示ケースに関連付けられた保留が変更されました。 発生する可能性のある変更としては、コンテンツの場所の追加または削除、保留のオフ (無効化) があります。  <br/> |
+|電子情報開示ケースの保留に対する検索クエリが作成されました  <br/> |[New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule) <br/> |電子情報開示ケースに関連付けられたクエリベースの保留が作成されました。  <br/> |
+|電子情報開示ケースの保留に対する検索クエリが削除されました  <br/> |[Remove-CaseHoldRule](/powershell/module/exchange/remove-caseholdrule) <br/> |電子情報開示ケースに関連付けられたクエリベースの保留が削除されました。 多くの場合、保留リストからのクエリの削除は、保留を削除した結果として発生します。 保留または保留クエリを削除する場合、保留中だったコンテンツの場所は解放されます。  <br/> |
+|電子情報開示ケースの保留に対する検索クエリが変更されました  <br/> |[Set-CaseHoldRule](/powershell/module/exchange/set-caseholdrule) <br/> |電子情報開示ケースに関連付けられたクエリベースの保留が変更されました。 発生する可能性のある変更としては、クエリの編集、クエリベースの保留の日付範囲の編集があります。  <br/> |
+|電子情報開示ケースが作成されました  <br/> |[New-ComplianceCase](/powershell/module/exchange/new-compliancecase) <br/> |電子情報開示ケースが作成されました。 ケースを作成する際に必要な操作は、名前を付けることだけです。 メンバーの追加、保留の作成、ケースに関連付けられたコンテンツ検索の作成などの他のケース関連のタスクにより、追加のイベントがログに記録されます。  <br/> |
+|電子情報開示ケースが削除されました  <br/> |[Remove-ComplianceCase](/powershell/module/exchange/remove-compliancecase) <br/> |電子情報開示ケースが削除されました。 ケースを削除する前に、ケースに関連付けられた保留をすべて削除する必要があります。  <br/> |
+|電子情報開示ケースが変更されました  <br/> |[Set-ComplianceCase](/powershell/module/exchange/set-compliancecase) <br/> |電子情報開示ケースが変更されました。 変更としては、開いているケースを閉じる、閉じたケースを再度開くなどがあります。  <br/> |
+|電子情報開示ケースにメンバーが追加されました  <br/> |[Add-ComplianceCaseMember](/powershell/module/exchange/add-compliancecasemember) <br/> |ユーザーが電子情報開示ケースのメンバーとして追加されました。 ケースのメンバーとしてユーザーは、必要なアクセス許可が割り当てられているかどうかに応じて、ケース関連のさまざまなタスクを実行できます。  <br/> |
+|電子情報開示ケースからメンバーが削除されました  <br/> |[Remove-ComplianceCaseMember](/powershell/module/exchange/remove-compliancecasemember) <br/> |ユーザーが、電子情報開示ケースのメンバーから削除されました。  <br/> |
+|電子情報開示ケースのメンバーシップが変更されました  <br/> |[Update-ComplianceCaseMember](/powershell/module/exchange/update-compliancecasemember) <br/> |電子情報開示ケースのメンバーシップ リストが変更されました。 このアクティビティは、すべてのメンバーが新しいユーザーのグループに置き換えられたときにログに記録されます。 1 人のメンバーが追加または削除されると、**Add-ComplianceCaseMember** または **Remove-ComplianceCaseMember** 操作がログに記録されます。  <br/> |
+|コンテンツ検索が作成されました  <br/> |[New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) <br/> |新しいコンテンツ検索が作成されました。  <br/> |
+|コンテンツ検索が削除されました  <br/> |[Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch) <br/> |既存のコンテンツ検索が削除されました。  <br/> |
+|コンテンツ検索が変更されました  <br/> |[Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch) <br/> |既存のコンテンツの検索が変更されました。 変更としては、検索されるコンテンツの場所の追加または削除、検索クエリの編集などがあります。  <br/> |
+|コンテンツ検索が開始されました  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |コンテンツ検索が開始されました。 セキュリティ/コンプライアンス センターの GUI を使用してコンテンツ検索を作成または変更すると、検索は自動的に開始されます。 **New-ComplianceSearch** または **Set-ComplianceSearch** コマンドレットを使用して検索を作成または変更する場合、**Start-ComplianceSearch** コマンドレットを実行して検索を開始する必要があります。  <br/> |
+|コンテンツ検索が停止されました  <br/> |[Stop-ComplianceSearch](/powershell/module/exchange/stop-compliancesearch) <br/> |実行中だったコンテンツ検索が停止されました。  <br/> |
+|コンテンツ検索アクションが作成されました  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |コンテンツ検索アクションが作成されました。 コンテンツ検索アクションには、検索結果のプレビュー、検索結果のエクスポート、Advanced eDiscovery で分析するための検索結果の準備、コンテンツ検索の検索条件と一致するアイテムの完全な削除などがあります。  <br/> |
+|コンテンツ検索アクションが削除されました  <br/> |[Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) <br/> |コンテンツ検索アクションが削除されました。  <br/> |
+|検索のアクセス許可フィルターが作成されました  <br/> |[New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) <br/> |検索のアクセス許可フィルターが作成されました。  <br/> |
+|検索のアクセス許可フィルターが削除されました  <br/> |[Remove-ComplianceSecurityFilter](/powershell/module/exchange/remove-compliancesecurityfilter) <br/> |検索のアクセス許可フィルターが削除されました。  <br/> |
+|検索のアクセス許可フィルターが変更されました  <br/> |[Set-ComplianceSecurityFilter](/powershell/module/exchange/set-compliancesecurityfilter) <br/> |検索のアクセス許可フィルターが変更されました。  <br/> |
+|電子情報開示管理者が作成されました  <br/> |[Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) <br/> |ユーザーが、組織の電子情報開示管理者として追加されました。  <br/> |
+|電子情報開示管理者が削除されました  <br/> |[Remove-eDiscoveryCaseAdmin](/powershell/module/exchange/remove-ediscoverycaseadmin) <br/> |電子情報開示管理者が組織から削除されました。  <br/> |
+|電子情報開示管理者のメンバーシップが変更されました  <br/> |[Update-eDiscoveryCaseAdmin](/powershell/module/exchange/update-ediscoverycaseadmin) <br/> |組織の電子情報開示管理者のリストが変更されました。 このアクティビティは、電子情報開示管理者が新しいユーザーのグループに置き換えられた場合にログに記録されます。 1 人のユーザーが追加または削除された場合、**Add-eDiscoveryCaseAdmin** または **Remove-eDiscoveryCaseAdmin** 操作がログに記録されます。  <br/> |
    
 ## <a name="detailed-properties-for-ediscovery-activities"></a>電子情報開示アクティビティの詳細なプロパティ
 

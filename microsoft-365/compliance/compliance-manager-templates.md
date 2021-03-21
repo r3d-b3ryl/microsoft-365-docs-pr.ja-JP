@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定された Excel ファイルを使用してテンプレートを作成および変更します。
-ms.openlocfilehash: 9f76ff6202ff9ad4a876c57209748dd7c98877b4
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405831"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922787"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーでの評価テンプレートの操作
 
 **この記事では、次の情報を参照してください。** テンプレート **の動作と評価** テンプレート **ページ** からテンプレートを管理する方法について説明します。 新しいテンプレートの作成 **、** 既存のテンプレートの変更 **、Excel** を使用したテンプレート データの書式設定、およびテンプレート レポートのエクスポートに関する手順を取得 **します**。
 
 > [!IMPORTANT]
-> 組織で使用できる評価テンプレートは、ライセンス契約によって異なります。 [詳細を確認します](https://go.microsoft.com/fwlink/?linkid=2132371)。
+> 組織で使用できる評価テンプレートは、ライセンス契約によって異なります。 [詳細を確認します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="templates-overview"></a>テンプレートの概要
 
@@ -38,7 +38,7 @@ ms.locfileid: "50405831"
 
 #### <a name="included-and-premium-templates"></a>含まれるテンプレートとプレミアム テンプレート
 
-使用できるテンプレートは、組織のライセンス契約 (ライセンスの詳細の表示)[に基づいて作成されます](https://go.microsoft.com/fwlink/?linkid=2132371)。 テンプレートには、組み込みとプレミアムの 2 つのカテゴリがあります。
+使用できるテンプレートは、組織のライセンス契約 (ライセンスの詳細の表示)[に基づいて作成されます](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 テンプレートには、組み込みとプレミアムの 2 つのカテゴリがあります。
 
 1. **含まれているテンプレート** は、組織のライセンス契約の一部として使用できます。
 2. **プレミアム テンプレートから評価** を作成するには、プレミアム テンプレートを購入する必要があります。 購入後は、必要に応じてテンプレートから評価を作成できます。
@@ -60,7 +60,7 @@ ms.locfileid: "50405831"
 
 カウンターに 5/2 が表示されている場合は、組織が制限を超え、使用しているプレミアム テンプレートの 3 つを購入する必要があります。
 
-詳細 [については、「コンプライアンス マネージャーのライセンス ガイダンス](https://go.microsoft.com/fwlink/?linkid=2132371) 」を参照してください。
+詳細 [については、「コンプライアンス マネージャーのライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 」を参照してください。
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>評価テンプレート ページからのテンプレートの表示と管理
 

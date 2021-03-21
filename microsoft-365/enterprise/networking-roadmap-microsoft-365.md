@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のネットワーク ロードマップ
+title: Microsoft 365 のネットワークロードマップ
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 ネットワークを実装するためのロードマップ。
-ms.openlocfilehash: 2962adf7bdca35d06672696471e0932fd1a7b09c
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: be1691138290a592822bfb4d59286fe795270450
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787753"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923554"
 ---
-# <a name="networking-roadmap-for-microsoft-365"></a>Microsoft 365 のネットワーク ロードマップ
+# <a name="networking-roadmap-for-microsoft-365"></a>Microsoft 365 のネットワークロードマップ
 
-Microsoft 365 enterprise には、コラボレーションと生産性のクラウド サービス、Microsoft Intune、および Microsoft Azure の多くの ID およびセキュリティ サービスが含まれています。 これらのクラウド ベースのサービスはすべて、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。 これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。 
+Microsoft 365 for enterprise には、コラボレーションと生産性のクラウド サービス、Microsoft Intune、Microsoft Azure の多くの ID およびセキュリティ サービスが含まれます。 これらのクラウド ベースのサービスはすべて、クライアント デバイスからインターネットや専用回線経由の接続のセキュリティ、パフォーマンス、および信頼性に依存しています。 これらのサービスをホストし、世界中のお客様に利用可能にするため、Microsoft はパフォーマンスと統合を重視するネットワーク インフラストラクチャを設計しました。 
 
-Microsoft 365 オンボーディングの重要な部分は、ネットワークとインターネット接続が最適化されたアクセス用に設定されている必要があります。 グローバルに分散したサービスとしてのソフトウェア (SaaS) クラウドにアクセスするためのオンプレミス ネットワークの構成は、オンプレミスのデータセンターへのトラフィックと中央インターネット接続用に最適化された従来のネットワークとは異なります。 
+Microsoft 365 オンボーディングの重要な部分は、ネットワークとインターネット接続が最適化されたアクセス用にセットアップされる点です。 グローバルに分散された Software-as-a-Service (SaaS) クラウドにアクセスするためのオンプレミス ネットワークの構成は、オンプレミスデータセンターへのトラフィックと中央インターネット接続用に最適化された従来のネットワークとは異なります。 
 
 以下の記事を活用して主な違いを理解し、エッジ デバイス、クライアント コンピューター、オンプレミス ネットワークを変更して、オンプレミス ユーザーの最高のパフォーマンスを引き出します。
 
@@ -36,7 +36,7 @@ Microsoft 365 オンボーディングの重要な部分は、ネットワーク
 
 - [Microsoft 365 ネットワークのしくみを理解する](microsoft-365-networking-overview.md)
 - [現在のネットワーク接続を評価する](assessing-network-connectivity.md)
-- [組織に ExpressRoute が適切かどうかを判断する](network-planning-with-expressroute.md)
+- [ExpressRoute が組織に適切かどうかを判断する](network-planning-with-expressroute.md)
 - [ネットワーク デバイスの計画](plan-for-network-devices.md)
 - [移行用にネットワークをセットアップする](network-and-migration-planning.md)
 
@@ -44,23 +44,23 @@ Microsoft 365 オンボーディングの重要な部分は、ネットワーク
 
 ネットワーク実装の展開フェーズでは、次の手順を実行します。
 
-- [エンタープライズ ネットワークが Microsoft 365 接続用に最適化されている](set-up-network-for-microsoft-365.md)
-- [組織の DNS ドメインを追加する](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
+- [エンタープライズ ネットワークが Microsoft 365 接続用に最適化されていないことを確認する](set-up-network-for-microsoft-365.md)
+- [組織の DNS ドメインを追加する](../admin/setup/add-domain.md)
 - [Microsoft 365 エンドポイントへの接続を最適化する](microsoft-365-ip-web-service.md)
 - [リモート ワーカーの接続を最適化する](microsoft-365-vpn-split-tunnel.md)
-- 必要に応じて [、ExpressRoute を構成します。](azure-expressroute.md)
+- 必要に応じて [、ExpressRoute を構成する](azure-expressroute.md)
 
 ## <a name="manage"></a>管理
 
 ネットワーク実装の管理フェーズでは、次の処理を行います。
 
-- [ネットワーク デバイスが最新の Office 365 エンドポイントを使用している](microsoft-365-endpoints.md)
-- [ネットワークパフォーマンスを監視および調整する](network-planning-and-performance.md)
+- [ネットワーク デバイスが最新のエンドポイント 365 エンドポイントOffice確認する](microsoft-365-endpoints.md)
+- [ネットワークパフォーマンスの監視と調整](network-planning-and-performance.md)
 - [ExpressRoute 接続を監視する](managing-expressroute-for-connectivity.md)
 
 ## <a name="network-equipment-vendors"></a>ネットワーク機器ベンダー
 
-ネットワーク機器ベンダーの場合は [、Microsoft 365 ネットワーク パートナー プログラムに参加してください](microsoft-365-networking-partner-program.md)。 Microsoft 365 ネットワーク接続の原則を製品とソリューションに組み込むプログラムに登録します。 
+ネットワーク機器ベンダーの場合は [、Microsoft 365 Networking Partner Program に参加してください](microsoft-365-networking-partner-program.md)。 Microsoft 365 ネットワーク接続の原則を製品とソリューションに組み込むプログラムに登録します。 
 
 ## <a name="how-contoso-did-networking-for-microsoft-365"></a>Contoso 社が Microsoft 365 のネットワークを行った方法
 
@@ -70,4 +70,4 @@ Microsoft 365 オンボーディングの重要な部分は、ネットワーク
 
 ## <a name="next-step"></a>次の手順
 
-Microsoft 365 ネットワーク接続の概要を [使用して、ネットワーク計画を開始します](microsoft-365-networking-overview.md)。
+[Microsoft 365](microsoft-365-networking-overview.md)ネットワーク接続の概要を使用して、ネットワーク計画を開始します。

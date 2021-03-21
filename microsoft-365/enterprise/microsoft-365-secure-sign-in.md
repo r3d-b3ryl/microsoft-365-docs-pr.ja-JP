@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: ユーザーが多要素認証（MFA）およびその他の機能を使用して安全にサインインすることを要求します。
-ms.openlocfilehash: 8426d902ff8be8541b5d770af6d34cdf71868047
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c470a8bb1e67925ced929225796ac30191db247e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558528"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923138"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Microsoft 365 テナントへのユーザー サインインの保護
 
@@ -37,14 +37,14 @@ ms.locfileid: "49558528"
 
 Windows 10 Enterprise の Windows Hello for Business では、Windows デバイスにサインオンするときのパスワードを強力な 2 要素認証に置き換えます。 この 2 要素認証は、デバイスと生体認証または PIN に関連付けられる新しい種類のユーザー資格情報です。
 
-詳しくは、「[Windows Hello for Business の概要](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)」をご覧ください。
+詳しくは、「[Windows Hello for Business の概要](/windows/security/identity-protection/hello-for-business/hello-overview)」をご覧ください。
 
 
 ## <a name="azure-ad-password-protection"></a>Azure AD パスワード保護
 
 Azure AD パスワード保護は、既知の脆弱なパスワードとそのバリアントを検出してブロックし、組織固有の脆弱な用語もブロックできます。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。
 
-詳細については、[Azure AD パスワード保護の設定](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)を参照してください。
+詳細については、[Azure AD パスワード保護の設定](/azure/active-directory/authentication/concept-password-ban-bad)を参照してください。
 
 ## <a name="mfa"></a>MFA
 
@@ -52,7 +52,7 @@ MFA では、ユーザーのサインインは、ユーザー アカウントの
 
 ![正しいパスワードと追加認証によりサインインが成功する](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-MFA を使用するための最初の手順は、***すべての管理者アカウント (特権アカウント) に MFA を要求する** _ことです。
+MFA を使用するための最初の手順は、***すべての管理者アカウント（特権アカウント）に MFA を要求する*** ことです。
 
 この最初の手順以外にも、Microsoft はすべてのユーザーに MFA をお勧めします。
 
@@ -60,20 +60,20 @@ Microsoft 365 プランに基づき管理者またはユーザーに MFA の使�
 
 | プラン | 推奨事項 |
 |---------|---------|
-|Microsoft 365 のすべてのプラン (Azure AD Premium P1 または P2 ライセンスなし)     |[Azure AD でセキュリティの既定値を有効にします](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。   |
-|Microsoft 365 E3 (Azure AD Premium P1 ライセンスを含む)     | [一般的な条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br>- [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [すべてのユーザーに MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [従来の認証をブロックする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 のすべてのプラン (Azure AD Premium P1 または P2 ライセンスなし)     |[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。   |
+|Microsoft 365 E3 (Azure AD Premium P1 ライセンスを含む)     | [一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (Azure AD Premium P2 ライセンスを含む)     | Azure AD Identity Protection を利用して、次の 2 つのポリシーを作成して、Microsoft の[条件付きアクセスと関連ポリシーの推奨されるセット](../security/office-365-security/identity-access-policies.md)の実装を開始します。<br> - [サインインのリスクが中、または高のときに MFA を要求する](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高リスク ユーザーはパスワードを変更する必要がある](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>セキュリティの既定値
 
-セキュリティの既定値は、2019 年 10 月 21 日以降に作成された Microsoft 365 および Office 365 の有料または試用版サブスクリプションの新機能です。 これらのサブスクリプションではセキュリティの既定値がオンになっており、_*_すべてのユーザーが Microsoft Authenticator アプリで MFA を使用する必要があります_*_。
+セキュリティの既定値は、2019 年 10 月 21 日以降に作成された Microsoft 365 および Office 365 の有料または試用版サブスクリプションの新機能です。 これらのサブスクリプションではセキュリティの既定値がオンになっており、***すべてのユーザーが Microsoft Authenticator アプリで MFA を使用する必要があります***。
  
 ユーザーは、スマートフォンから Microsoft Authenticator アプリを使用して MFA に 14 日間登録できます。これは、セキュリティの既定値が有効になった後、初めてサインインしたときから始まります。 14 日が経過すると、ユーザーは MFA 登録が完了するまでサインインできなくなります。
 
 セキュリティの既定値では、すべての組織が、既定で有効になっているユーザー サインインの基本レベルのセキュリティを確保しています。 条件付きアクセス ポリシーを使用する MFA を優先して、または個々のアカウントに対して、セキュリティの既定値を無効にすることができます。
 
-詳細については、「[セキュリティの既定値の概要](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
+詳細については、「[セキュリティの既定値の概要](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
 
 ### <a name="conditional-access-policies"></a>条件付きアクセス ポリシー
 
@@ -87,7 +87,7 @@ Microsoft 365 プランに基づき管理者またはユーザーに MFA の使�
 
 条件付きアクセスには、Microsoft 365 E3 および E5 に含まれている Azure AD Premium P1 ライセンスが必要です。
 
-詳細については、「[条件付きアクセスの概要](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)」 を参照してください。
+詳細については、「[条件付きアクセスの概要](/azure/active-directory/conditional-access/overview)」 を参照してください。
 
 ### <a name="using-these-methods-together"></a>これらの方法を組み合わせて使用する
 
@@ -102,7 +102,7 @@ Microsoft 365 プランに基づき管理者またはユーザーに MFA の使�
 
 | メソッド | Enabled | 無効 | 追加の認証方法 |
 |:-------|:-----|:-------|:-------|
-| _ *セキュリティの既定値**  | 条件付きアクセス ポリシーを使用できない | 条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
+| **セキュリティの既定値**  | 条件付きアクセス ポリシーを使用できない | 条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
 | **条件付きアクセス ポリシー** | いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます  | MFA 登録中にユーザーが指定  |
 ||||
 
@@ -137,16 +137,16 @@ Azure AD Identity Protection では次の作業を実行できます。
 | 不審なインシデントを調査し、管理操作によって解決する | セキュリティ インシデントに関する情報を使用して、リスク イベントを調査できます。調査の追跡と修復処理 (パスワードのリセットなど) の開始のための基本的なワークフローを利用できます。 |
 |||
 
-[Azure AD Identity Protection の詳細情報](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)を参照してください。
+[Azure AD Identity Protection の詳細情報](/azure/active-directory/active-directory-identityprotection)を参照してください。
 
-[Azure AD Identity Protection を有効にする手順](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)を参照してください。
+[Azure AD Identity Protection を有効にする手順](/azure/active-directory/active-directory-identityprotection-enable)を参照してください。
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>MFA と安全なサインインのための管理技術リソース
 
 - [MFA for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 - [Microsoft 365 の ID ロードマップ](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD トレーニング ビデオ](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [Azure AD 多要素認証の登録ポリシーの構成](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [Azure AD 多要素認証の登録ポリシーの構成](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [ID とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>次のステップ

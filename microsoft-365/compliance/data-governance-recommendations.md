@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターは、組織の現在の設定に基づきデータ ガバナンスのための推奨事項を提供し、ユーザーによる設定作業を簡略化します。これらの推奨事項の一部は組織で特定のコンテンツを検出し、そのコンテンツを管理するための推奨手順を提供します。たとえば、重要な業務コンテンツ (弁護士/依頼人特権や秘密保持契約書に関わる情報など) を含むアイテムが推奨事項によって検出された際に、ユーザーは保持ラベルを自動適用し、必要に応じてアイテムを機密扱いにして保持することができます。このトピックでは、ユーザーに表示される可能性があるデータ ガバナンスの推奨事項を一覧表示し、それぞれの推奨事項をトリガーするコンテンツについて説明します。
-ms.openlocfilehash: 805919aa4cfceca5f3409b0f218a3b6018fc38cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a022369fb783a498971c91664fa6532472d8589
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637769"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922611"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>データ ガバナンスの推奨事項のためのコンテンツの識別方法
 
@@ -32,7 +32,7 @@ Microsoft 365 セキュリティ センターと Microsoft 365 コンプライ�
 
 ## <a name="clean-up-voicemail"></a>ボイスメールのクリーンアップ
 
-この推奨事項は、メッセージの種類が "ボイスメール" と識別されるメール メッセージがユーザーのメールボックスで検出されたときに表示されます。詳細については、「[Exchange でのメッセージのプロパティ](https://docs.microsoft.com/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange)」を参照してください。
+この推奨事項は、メッセージの種類が "ボイスメール" と識別されるメール メッセージがユーザーのメールボックスで検出されたときに表示されます。詳細については、「[Exchange でのメッセージのプロパティ](/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange)」を参照してください。
 
 ## <a name="label-attorney-client-privilege-content"></a>弁護士/依頼人特権関連コンテンツのラベル付け 
 

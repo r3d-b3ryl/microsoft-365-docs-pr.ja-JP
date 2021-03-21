@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーは、国内、地域、業界の規制、標準、および法律に合わせて評価を構築するテンプレートを提供します。
-ms.openlocfilehash: 73777746606c20d43cdf330b04e7301b5c512bcc
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b83ad63de34217ac7c469dc784ca85644f6a5e3d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406749"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922821"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
 
 **この記事では、次の情報を参照してください。** コンプライアンス マネージャーで評価を作成 **するためのテンプレート** の包括的な一覧を表示します。
 
 > [!IMPORTANT]
-> 組織で使用できる評価テンプレートは、ライセンス契約によって異なります。 [詳細を確認します](https://go.microsoft.com/fwlink/?linkid=2132371)。
+> 組織で使用できる評価テンプレートは、ライセンス契約によって異なります。 [詳細を確認します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="overview"></a>概要
 
@@ -45,7 +45,7 @@ ms.locfileid: "50406749"
 コンプライアンス マネージャーで、[評価テンプレート] **ページに移動** します。 組織で使用できるすべてのテンプレートの一覧が表示されます。 含まれているテンプレートとプレミアム テンプレートの違いを理解することが重要です。
 
 - **含まれるテンプレートは** 、組織のライセンス契約の一部として含まれるテンプレートです。
- - **プレミアム テンプレートには、** 組織が取得する可能性がある追加のテンプレートが表示されます (サービス用語を [参照](https://go.microsoft.com/fwlink/?linkid=2132371))。
+ - **プレミアム テンプレートには、** 組織が取得する可能性がある追加のテンプレートが表示されます (サービス用語を [参照](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance))。
 
 テンプレートを表示 [および管理する方法の詳細については、以下を参照してください](compliance-manager-templates.md#viewing-and-managing-templates-from-the-assessment-templates-page)。
 
@@ -55,8 +55,8 @@ ms.locfileid: "50406749"
 ## <a name="included-templates"></a>含まれるテンプレート
 
 - [Microsoft データ保護基準](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
-- [EU GDPR](https://docs.microsoft.com/compliance/regulatory/gdpr) (Microsoft 365、Office 365、Intune)
-- [ISO 27001:2013](https://docs.microsoft.com/compliance/regulatory/offering-iso-27001)
+- [EU GDPR](/compliance/regulatory/gdpr) (Microsoft 365、Office 365、Intune)
+- [ISO 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Rev.4
 
 > [!NOTE]
@@ -70,7 +70,7 @@ ms.locfileid: "50406749"
 - アルバニア - 個人データの保護に関する法律 No. 9887
 - アンティグアBarbuda-Data保護法 /2013 (Microsoft 365)
 - 付録 III to OMB Circular No. A-130 - 連邦自動情報リソースのセキュリティ
-- [アルゼンチン - 個人データ保護法 25.326](https://docs.microsoft.com/compliance/regulatory/offering-pdpa-argentina) (Microsoft 365)
+- [アルゼンチン - 個人データ保護法 25.326](/compliance/regulatory/offering-pdpa-argentina) (Microsoft 365)
 - アーカンソー州 - 個人情報保護法 (Microsoft 365)
 - アジア太平洋経済協力 (APEC) プライバシー フレームワーク
 - オーストラリア - ASD Essential 8 (Microsoft 365)
@@ -79,13 +79,13 @@ ms.locfileid: "50406749"
 - オーストラリア - スパム法 2003 (Microsoft 365)
 - オーストラリアのプライバシー (クレジット レポート) コード 2014 (バージョン 2.1)
 - オーストラリアのエネルギーセクターサイバーセキュリティ フレームワーク (AESCSF) (Microsoft 365)
-- [オーストラリアの情報セキュリティ登録評価プログラム (IRAP) バージョン 2](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365)
-- [オーストラリアプルデンシャル規制機関 CPS](https://docs.microsoft.com/compliance/regulatory/offering-apra-australia) (Microsoft 365)
+- [オーストラリアの情報セキュリティ登録評価プログラム (IRAP) バージョン 2](/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365)
+- [オーストラリアプルデンシャル規制機関 CPS](/compliance/regulatory/offering-apra-australia) (Microsoft 365)
 - オーストリアの通信法 2003 (Microsoft 365)
 - バハマ - データ保護法 (Microsoft 365)
 - バルバドス - データ保護法案 2019 (Microsoft 365)
 - ベラルーシの情報、情報の書式設定、保護に関する法律 (Microsoft 365)
-- [ベルギー NBB 2015 年 12](https://docs.microsoft.com/compliance/regulatory/offering-nbb-fsma-belgium) 月 (Microsoft 365)
+- [ベルギー NBB 2015 年 12](/compliance/regulatory/offering-nbb-fsma-belgium) 月 (Microsoft 365)
 - バミューダ - 電子取引法 (Microsoft 365)
 - 個人データの保護に関するボスニア・ヘルツェゴビナ法
 - ブラジル - 消費者保護コード法 No. 8078 (Office 365)
@@ -96,22 +96,22 @@ ms.locfileid: "50406749"
 - カリフォルニア州 - Education Code-EDC、 Title 3, Division 14, Part 65, Chapter 2.5- Social Media Privacy
 - カリフォルニア州 - SB-327 情報のプライバシー: 接続されたデバイス (Microsoft 365)
 - カリフォルニア州消費者信用報告機関法 (Microsoft 365)
-- [カリフォルニア州消費者プライバシー法 (CCPA)](https://docs.microsoft.com/compliance/regulatory/offering-ccpa) (Microsoft 365)
+- [カリフォルニア州消費者プライバシー法 (CCPA)](/compliance/regulatory/offering-ccpa) (Microsoft 365)
 - カナダ - セキュリティ保護規則の違反 (Microsoft 365)
 - カナダ - ブリティッシュ コロンビア州 - 情報プライバシー &セキュリティ - FOIPPA (Microsoft 365)
-- [カナダ - Office](https://docs.microsoft.com/compliance/regulatory/offering-osfi-canada) の監督の詳細 (Microsoft 365)
+- [カナダ - Office](/compliance/regulatory/offering-osfi-canada) の監督の詳細 (Microsoft 365)
 - カナダ - 個人情報保護法 (PHIPA) (Microsoft 365)
 - カナダ - 個人情報保護および電子文書法 (PIPEDA) (Microsoft 365)
 - カナダ - 保護された B
 - カナダ Cybersecure (Microsoft 365)
 - CAN-SPAM 法 (Microsoft 365)
-- [CDSA コンテンツ保護 &セキュリティ標準](https://docs.microsoft.com/compliance/regulatory/offering-cdsa) (Microsoft 365)
-- [CFR - 連邦規制コード タイトル 21](https://docs.microsoft.com/compliance/regulatory/offering-fda-cfr-title-21-part-11) (Microsoft 365)
+- [CDSA コンテンツ保護 &セキュリティ標準](/compliance/regulatory/offering-cdsa) (Microsoft 365)
+- [CFR - 連邦規制コード タイトル 21](/compliance/regulatory/offering-fda-cfr-title-21-part-11) (Microsoft 365)
 - 化学施設のテロ対策標準 (CFATS) (Microsoft 365)
 - 子どものオンライン プライバシー保護ルール (COPPA) (Microsoft 365)
 - 中国 - 個人情報のセキュリティ仕様 (Microsoft 365)
-- [CIS 実装グループ 1、グループ 2、グループ 3](https://docs.microsoft.com/compliance/regulatory/offering-cis-benchmark)
-- [クラウド セキュリティ アライアンス (CSA) クラウド コントロール マトリックス (CCM)](https://docs.microsoft.com/compliance/regulatory/offering-csa-star-attestation)
+- [CIS 実装グループ 1、グループ 2、グループ 3](/compliance/regulatory/offering-cis-benchmark)
+- [クラウド セキュリティ アライアンス (CSA) クラウド コントロール マトリックス (CCM)](/compliance/regulatory/offering-csa-star-attestation)
 - CMMC レベル 1、レベル 2、レベル 3、レベル 4、レベル 5 (Microsoft 365)
 - COBIT 5 (Microsoft 365)
 - コロンビア - Decree No. 1377/2013 (以前はコロンビア法 1581/2012)
@@ -123,7 +123,7 @@ ms.locfileid: "50406749"
 - Connecticut General Statutes - 機密情報を受け取る州の請負業者に関する一般的な規定 (Microsoft 365)
 - Connecticut 州法 - 個人情報を含むセキュリティの再コンピューター化されたデータの侵害 (Microsoft 365)
 - コンシューマー個人情報セキュリティ侵害通知法 (Microsoft 365)
-- [刑事司法情報サービス (CJIS) セキュリティ ポリシー](https://docs.microsoft.com/compliance/regulatory/offering-cjis) (Microsoft 365)
+- [刑事司法情報サービス (CJIS) セキュリティ ポリシー](/compliance/regulatory/offering-cjis) (Microsoft 365)
 - クロアチア - 個人データ保護法 (Microsoft 365)
 - 中国のサイバーセキュリティ法 (Microsoft 365)
 - キプロス 個人データ法の処理 (Microsoft 365)
@@ -132,7 +132,7 @@ ms.locfileid: "50406749"
 - Delaware Computer Security Breaches- Commerce and Trade Subtitle II - 12B-100 to 12B-104
 - デンマーク - データ保護法
 - デンマーク - ターミナル機器に情報を保存およびアクセスする場合に必要な情報と同意に関するEnd-User注文
-- [DFARS](https://docs.microsoft.com/compliance/regulatory/offering-dfars) (Microsoft 365)
+- [DFARS](/compliance/regulatory/offering-dfars) (Microsoft 365)
 - 欧州議会および理事会のディレクティブ 2013/40/EU (Microsoft 365)
 - Dubai - Health Data Protection Regulation (Microsoft 365)
 - Dubai Consumer Protection Regulations (Telecommunications Regulatory Authority)(Microsoft 365)
@@ -145,10 +145,10 @@ ms.locfileid: "50406749"
 - EU - EudraLex Volume 4 — GMP ガイドライン、付録 11
 - EU ディレクティブ 2006/24/EC
 - FDIC プライバシー ルール (Microsoft 365)
-- [連邦金融機関審査評議会 (FFIEC) Information Security Booklet](https://docs.microsoft.com/compliance/regulatory/offering-ffiec-us) (Microsoft 365, Intune)
-- [FedRamp High Security Controls](https://docs.microsoft.com/compliance/regulatory/offering-fedramp) (Office 365)
-- [FedRamp High Security Controls_NIST 800-53](https://docs.microsoft.com/compliance/regulatory/offering-fedramp) (Microsoft 365)
-- [FedRAMP モデレート](https://docs.microsoft.com/compliance/regulatory/offering-fedramp)
+- [連邦金融機関審査評議会 (FFIEC) Information Security Booklet](/compliance/regulatory/offering-ffiec-us) (Microsoft 365, Intune)
+- [FedRamp High Security Controls](/compliance/regulatory/offering-fedramp) (Office 365)
+- [FedRamp High Security Controls_NIST 800-53](/compliance/regulatory/offering-fedramp) (Microsoft 365)
+- [FedRAMP モデレート](/compliance/regulatory/offering-fedramp)
 - フィンランド - データ保護法
 - クラウド サービスの情報セキュリティ評価に関するフィンランドの基準 (Microsoft 365)
 - FINRA サイバーセキュリティ チェックリスト
@@ -157,30 +157,30 @@ ms.locfileid: "50406749"
 - 消費者金融情報の FTC プライバシー (Microsoft 365)
 - ガーナのデータ保護法
 - 一般的に受け入れられるレコードキーピングの原則 (Microsoft 365)
-- [ドイツ - クラウド コンピューティング コンプライアンスコントロール カタログ (C5)](https://docs.microsoft.com/compliance/regulatory/offering-c5-germany) (Microsoft 365)
+- [ドイツ - クラウド コンピューティング コンプライアンスコントロール カタログ (C5)](/compliance/regulatory/offering-c5-germany) (Microsoft 365)
 - ドイツ - 連邦データ保護法 (Microsoft 365)
-- [Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy](offering-glba.md) (Microsoft 365)
+- [Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy](/compliance/regulatory/offering-GLBA) (Microsoft 365)
 - ギリシャ - 個人データの処理に関する個人の保護に関する法律 2472/1997 (Microsoft 365)
 - ハワイ - 個人情報のセキュリティ侵害 第 487N 章
-- [HIPAA/HITECH](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech) (Microsoft 365, Intune)
-- [HITRUST](https://docs.microsoft.com/compliance/regulatory/offering-hitrust) (Microsoft 365)
+- [HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech) (Microsoft 365, Intune)
+- [HITRUST](/compliance/regulatory/offering-hitrust) (Microsoft 365)
 - 香港 - 個人データ (プライバシー) 条例 (Microsoft 365)
 - インド - 2000 年の IT 法 (Microsoft 365)
 - インドの情報技術 (妥当なセキュリティプラクティスと手順、機密性の高い個人データまたは情報) ルール
 - インドネシア - 法律 11/2008 (Microsoft 365)
 - インドネシア - Peraturan Pemerintah No.82 Tahun 2012 - Government Regulation - Data Protection Regulation (Microsoft 365)
 - IRAP v3
-- [IRS-P1075](https://docs.microsoft.com/compliance/regulatory/offering-irs-1075) (Microsoft 365)
+- [IRS-P1075](/compliance/regulatory/offering-irs-1075) (Microsoft 365)
 - IRS - 収益手順 98-25 自動レコード
 - ISO 15489 (Microsoft 365)
-- [ISO 22301:2019](https://docs.microsoft.com/compliance/regulatory/offering-iso-22301) (Microsoft 365)
+- [ISO 22301:2019](/compliance/regulatory/offering-iso-22301) (Microsoft 365)
 - ISO 27005:2018 (Microsoft 365)
-- [ISO 27017:2015](https://docs.microsoft.com/compliance/regulatory/offering-iso-27017) (Microsoft 365)
+- [ISO 27017:2015](/compliance/regulatory/offering-iso-27017) (Microsoft 365)
 - ISO 27799 Health informations - ISO/IEC 27002 を使用した正常性の情報セキュリティ管理 (Microsoft 365)
 - ISO 31000:2018 (Microsoft 365)
 - ISO 80001-1 医療機器を組み込んだ IT ネットワークのリスク管理の適用 (Microsoft 365)
-- [ISO/IEC 27018:2014](https://docs.microsoft.com/compliance/regulatory/offering-iso-27018)
-- [ISO/IEC 27701:2019](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701) (Microsoft 365)
+- [ISO/IEC 27018:2014](/compliance/regulatory/offering-iso-27018)
+- [ISO/IEC 27701:2019](/compliance/regulatory/offering-iso-27701) (Microsoft 365)
 - イスラエル - プライバシー保護 (データの海外へのデータ転送) 規制 (Microsoft 365)
 - ITU X.1052 Information Security Management Framework (Microsoft 365)
 - 日本 - 不正なコンピューター アクセスの禁止に関する法律 (Microsoft 365)
@@ -204,11 +204,11 @@ ms.locfileid: "50406749"
 - メキシコ - 連邦消費者保護法 (Microsoft 365)
 - メキシコ連邦データ保護法 (Microsoft 365)
 - 取引所の最小許容リスク基準 (MARS-E) 2.0 (Microsoft 365)
-- [モーション ピクチャ関連付け (MPA) コンテンツ セキュリティのベスト プラクティス](https://docs.microsoft.com/compliance/regulatory/offering-mpaa) (Microsoft 365)
+- [モーション ピクチャ関連付け (MPA) コンテンツ セキュリティのベスト プラクティス](/compliance/regulatory/offering-mpaa) (Microsoft 365)
 - ミャンマー - 市民のプライバシーとセキュリティを保護する法律
 - NAIC - 顧客情報モデル規制 MDL-673 の保護に関する標準 (Microsoft 365)
 - ネパール - 情報に対する権利法
-- [NERC CIP](https://docs.microsoft.com/compliance/regulatory/offering-nerc-cip) (Microsoft 365)
+- [NERC CIP](/compliance/regulatory/offering-nerc-cip) (Microsoft 365)
 - オランダ - 個人データ保護法 / 1999 (Microsoft 365)
 - ネバダ州第 603A 章 - 個人情報のセキュリティとプライバシー (Microsoft 365)
 - ニューヨークプライバシー法 - DRAFT (Microsoft 365)
@@ -222,8 +222,8 @@ ms.locfileid: "50406749"
 - NIST 800-37 (Microsoft 365)
 - NIST 800-53
 - NIST 800-63 デジタル ID ガイドライン (Microsoft 365)
-- [NIST 800-171](https://docs.microsoft.com/compliance/regulatory/offering-nist-sp-800-171) (Microsoft 365)
-- [NIST CSF](https://docs.microsoft.com/compliance/regulatory/offering-nist-csf) (Microsoft 365)
+- [NIST 800-171](/compliance/regulatory/offering-nist-sp-800-171) (Microsoft 365)
+- [NIST CSF](/compliance/regulatory/offering-nist-csf) (Microsoft 365)
 - NIST プライバシー フレームワーク
 - NIST Special Publication 800-128 (Microsoft 365)
 - NIST Special Publication 1800-1 モバイル デバイスでの電子正常性レコードのセキュリティ保護 (Microsoft 365)
@@ -233,7 +233,7 @@ ms.locfileid: "50406749"
 - オマーン - 電子取引法 (Microsoft 365)
 - OWASP ProActive Controls for Developers 2018 v3.0 (Microsoft 365)
 - パキスタン電子データ保護法 2005 -Draft (Microsoft 365)
-- [PCI DSS v3.2.1](https://docs.microsoft.com/compliance/regulatory/offering-pci-dss) (Microsoft 365)
+- [PCI DSS v3.2.1](/compliance/regulatory/offering-pci-dss) (Microsoft 365)
 - ペルー法 29733 データプライバシー保護法
 - フィリピン BSP Information Security Management Guidelines (Microsoft 365)
 - 2012 年のフィリピンデータプライバシー法 (Microsoft 365)
@@ -242,23 +242,23 @@ ms.locfileid: "50406749"
 - カタール クラウド セキュリティ ポリシー
 - RBNZ BS11 アウトソーシング ポリシー (Microsoft 365)
 - モルドバの個人データ保護に関する法律 (Microsoft 365)
-- [インドの予約銀行サイバーセキュリティ フレームワーク](https://docs.microsoft.com/compliance/regulatory/offering-rbi-irdai-india) (Microsoft 365)
+- [インドの予約銀行サイバーセキュリティ フレームワーク](/compliance/regulatory/offering-rbi-irdai-india) (Microsoft 365)
 - ルーマニア - データ保護法 190/2018 (Microsoft 365)
 - ロシア - 情報、情報技術、情報セキュリティに関する連邦法 149-FZ
-- [個人データに関するロシア連邦連邦法](https://docs.microsoft.com/compliance/regulatory/offering-russia-data-localization) (Microsoft 365)
+- [個人データに関するロシア連邦連邦法](/compliance/regulatory/offering-russia-data-localization) (Microsoft 365)
 - セントルシアデータ保護法 (Microsoft 365)
-- [SEC 17-4(a)](https://docs.microsoft.com/compliance/regulatory/offering-sec-17a-4) (Microsoft 365)
+- [SEC 17-4(a)](/compliance/regulatory/offering-sec-17a-4) (Microsoft 365)
 - SIG (Microsoft 365)
 - シンガポール - 銀行法 (Cap.19)
 - シンガポール - サイバーセキュリティ 2018 (Microsoft 365)
 - シンガポール - IMDA IoT サイバーセキュリティ ガイド (Microsoft 365)
 - シンガポール - シンガポール技術リスク管理フレームワークの通貨機関 (Microsoft 365)
-- [シンガポール - 多層クラウド セキュリティ (MTCS) Standard](https://docs.microsoft.com/compliance/regulatory/offering-mtcs-singapore) (Microsoft 365)
+- [シンガポール - 多層クラウド セキュリティ (MTCS) Standard](/compliance/regulatory/offering-mtcs-singapore) (Microsoft 365)
 - シンガポール - アウトソーシングされたサービス プロバイダー監査レポート (OSPAR) (Microsoft 365)
 - シンガポール - 個人データ保護法 / 2012 (Microsoft 365)
 - シンガポールスパム管理法 (Microsoft 365)
-- [SOC 1](https://docs.microsoft.com/compliance/regulatory/offering-soc) (Microsoft 365)
-- [SOC 2](https://docs.microsoft.com/compliance/regulatory/offering-soc) (Microsoft 365)
+- [SOC 1](/compliance/regulatory/offering-soc) (Microsoft 365)
+- [SOC 2](/compliance/regulatory/offering-soc) (Microsoft 365)
 - 南アフリカ消費者保護 ACT 68 2008 (Microsoft 365)
 - 南アフリカ消費者保護 ACT 68 2008 (Microsoft 365)
 - 南アフリカ電子通信取引法、2002 年 (Microsoft 365)
@@ -275,17 +275,17 @@ ms.locfileid: "50406749"
 - タイ PDPA (Microsoft 365)
 - 中国の営業秘密法 (Microsoft 365)
 - トリニダードトバゴのデータ保護 (2011 年の法律 13) (Microsoft 365)
-- [信頼できる情報セキュリティ評価 Exchange](https://docs.microsoft.com/compliance/regulatory/offering-tisax-germany)
+- [信頼できる情報セキュリティ評価 Exchange](/compliance/regulatory/offering-tisax-germany)
 - トルコ - KVKK 個人データ保護 6698 (Microsoft 365)
 - UAE - 2019 年の連邦法 No 2 健康分野における情報通信技術 (ICT) の使用について
 - 英国 - オフショア石油活動規制 / 2011 (Microsoft 365)
-- [UK Cyber Essentials](https://docs.microsoft.com/compliance/regulatory/offering-cyber-essentials-plus-uk) (Microsoft 365)
+- [UK Cyber Essentials](/compliance/regulatory/offering-cyber-essentials-plus-uk) (Microsoft 365)
 - 英国- 防御サプライヤー向けサイバーセキュリティ 標準 (Microsoft 365)
 - 英国のプライバシーと電子通信 (Microsoft 365)
 - ウクライナ - 個人データ保護法 (Microsoft 365)
 - US DoE 10 CFR Part 810 (Microsoft 365)
 - 米国 - 2014 年の連邦情報セキュリティ近代化法 (FISMA) (Microsoft 365)
-- [US FERPA](https://docs.microsoft.com/compliance/regulatory/offering-ferpa) (Microsoft 365)
+- [US FERPA](/compliance/regulatory/offering-ferpa) (Microsoft 365)
 - US-Cloud法 (Microsoft 365)
 - ユタ州消費者信用保護法 (Microsoft 365)
 - 個人データに関するウズベキスタンの法律

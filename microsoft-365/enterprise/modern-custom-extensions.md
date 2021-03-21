@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online のモダン サイト ページでユーザー設定の拡張機能のパフォーマンスを最適化する方法について説明します。
-ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287199"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923061"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページでユーザー設定の拡張機能のパフォーマンスを最適化する
 
@@ -45,17 +45,17 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 - **改善の機会** (黄) **5** 個以上の拡張機能が使用されている場合、[要確認] としてこのセクションで強調表示され、7 個以上の拡張機能が使用されると、[確認が必要です] として強調表示されます。
 - **操作不要** (緑): 読み込み時間が 1 秒を超える拡張機能はありません。
 
-拡張機能がページの読み込み時間に影響を与える場合、またはページ上の拡張機能が多すぎる場合、結果は結果の **[** 要注意] セクションに表示されます。 結果をクリックすると、読み込みに時間がかかっている拡張機能または多すぎるとして強調表示された拡張機能を確認します。 今後の SharePoint 用ページ診断ツールの更新プログラムでは分析ルールが更新される可能性があるため、常に最新バージョンのツールを使用するようにしてください。
+拡張機能がページの読み込み時間に影響を与える場合、またはページに拡張機能が多すぎる場合、結果は結果の **[** 注意が必要] セクションに表示されます。 結果をクリックすると、読み込みに時間がかかっている拡張機能または多すぎるとして強調表示された拡張機能を確認します。 今後の SharePoint 用ページ診断ツールの更新プログラムでは分析ルールが更新される可能性があるため、常に最新バージョンのツールを使用するようにしてください。
 
 ![ページ読み込み時間の結果](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 結果に含まれる情報は次のとおりです。
 
 - **[名前と ID]** には、ページで拡張機能を見つけるのに役立つ識別情報が表示されます。
-- **合計** は、モジュールの読み込みと初期化に対する拡張の合計時間を示します。 これは、ページ上で実行するために拡張情報が最初から最後まで実行するために必要な合計相対時間です。
-- **モジュール読み** 込みでは、拡張機能の JavaScript ファイルと CSS ファイルをダウンロード、評価、読み込むのに必要な時間を示します。 次に、Init プロセスを開始します。
+- **合計は** 、モジュールの読み込みと初期化に対する拡張の合計時間を示します。 これは、ページ上で最初から最後まで、拡張機能が実行する合計相対時間です。
+- **モジュールの読** み込みでは、拡張機能 JavaScript ファイルと CSS ファイルのダウンロード、評価、読み込みに必要な時間が表示されます。 その後、Init プロセスが開始されます。
 - **Init は** 、拡張機能がデータを初期化するために必要な時間を示します。
-    これは非同期呼び出しであり、init time は、返された promise が解決された場合の onInit 関数の時間の計算です。
+    これは非同期呼び出しであり、init 時間は、返される約束が解決された場合の onInit 関数の時間の計算です。
 
 この情報は、デザイナーと開発者が問題のトラブルシューティングを行えるように提供されています。 この情報は、設計開発チームに提供するようにします。
 
@@ -88,7 +88,7 @@ SharePoint Framework (SPFx) 拡張機能は、SharePoint のユーザー エク�
 
 - **拡張機能の大きさと依存関係**
   - 静的リソースの最適なダウンロードを行うには、Office 365 CDN を使用する必要があります。 _js/css_ ファイルの配信元として、パブリックの CDN 配信元が推奨されています。 Office 365 CDN の使用に関する詳細については、「[SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用](use-microsoft-365-cdn-with-spo.md)」を参照してください。
-  - SharePoint Framework (SPFx) に付属する _React_ や _Fabric imports_ などのフレームワークを再利用してください。 詳細については、「[SharePoint Framework の概要](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)」を参照してください。
+  - SharePoint Framework (SPFx) に付属する _React_ や _Fabric imports_ などのフレームワークを再利用してください。 詳細については、「[SharePoint Framework の概要](/sharepoint/dev/spfx/sharepoint-framework-overview)」を参照してください。
   - 最新バージョンの SharePoint Framework を使用するようにし、新しいバージョンがリリースされた場合にはアップグレードしてください。
 - **データの取得/キャッシュ**
   - 表示するデータを取得するのに拡張機能が追加のサーバー呼び出しに依存している場合は、それらのサーバー API が高速で、(_localStorage_ や _IndexDB_ (大規模なセットの場合) などを使用する) クライアント側キャッシュが実装されていることを確認してください。
@@ -116,7 +116,7 @@ SharePoint Framework (SPFx) 拡張機能は、SharePoint のユーザー エク�
 
 [Office 365 のパフォーマンスをチューニングする](tune-microsoft-365-performance.md)
 
-[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
 

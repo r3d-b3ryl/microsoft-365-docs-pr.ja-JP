@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Sharepoint online のモダンサイトページで画像を最適化するために、SharePoint Online に含まれているツールを使用する方法について説明します。
-ms.openlocfilehash: 09122dfd0bc832cf9a09cfb05bf0540e323797d9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: SharePoint Online に含まれるツールを使用して、SharePoint Online モダン サイト ページの画像を最適化する方法について説明します。
+ms.openlocfilehash: a4f2def86e1378a9fb76ae9ecbe6a55da75ecffc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692112"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923018"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで画像を最適化する
 
@@ -35,7 +35,7 @@ ms.locfileid: "46692112"
 クラシック発行サイトで画像を最適化する方法の詳細については、「[SharePoint Online の画像の最適化](image-optimization-for-sharepoint-online.md)」を参照してください。
 
 >[!NOTE]
->Sharepoint Online の最新ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)」を参照してください。
+>Sharepoint Online の最新ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)」を参照してください。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>SharePoint 用ページ診断ツールを使用して画像の最適化を分析する
 
@@ -48,7 +48,7 @@ SharePoint のモダン サイトを SharePoint 用ページ診断ツールを�
 
 考えられる結果は次のとおりです。
 
-- **注意が必要です** (赤): このページには大きさが 300KB 以上の画像が **1 つ以上**含まれています
+- **注意が必要です** (赤): このページには大きさが 300KB 以上の画像が **1 つ以上** 含まれています
 - **対処は不要です** (緑): このページには大きさが 300KB 以上の画像は含まれていません
 
 結果の [**注意が必要です**] セクションに [**大きな画像が検出されました**] という結果が表示された場合は、結果をクリックすると追加の詳細が表示されます。
@@ -72,7 +72,7 @@ SharePoint のモダン サイトを SharePoint 用ページ診断ツールを�
 
 [Office 365 のパフォーマンスをチューニングする](tune-microsoft-365-performance.md)
 
-[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
 
