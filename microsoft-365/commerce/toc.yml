@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: ユーザーを別のサブスクリプションに移動する
       href: subscriptions/move-users-different-subscription.md
+    - name: 自動請求ポリシーを管理する
+      href: licenses/manage-auto-claim-policies.md
     - name: サブスクリプションとライセンスを理解する
       href: licenses/subscriptions-and-licenses.md
 - name: 請求と支払い
@@ -67,7 +69,7 @@
     - name: 請求アカウントを管理する
       href: manage-billing-accounts.md
     - name: テナントと自分の請求アカウントを関連付ける
-      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: パートナーとの関係を管理する
   href: manage-partners.md
 - name: アカウントの使用を停止する

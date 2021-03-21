@@ -108,6 +108,8 @@
           href: get-started/get-started-devices.md
         - name: Autopilot と登録ステータス ページの初回実行時エクスペリエンス
           href: get-started/esp-first-run.md
+        - name: Windows 10 の位置情報サービス
+          href: get-started/device-location.md
         - name: アプリ制御の使用を開始する
           href: get-started/get-started-app-control.md
         - name: アプリを展開する
