@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51a6bc33778248a69e533d9e2077365a63b97e30
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ed1eeb29119d477673bb04d9474bd38438db9fd9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50424133"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928942"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -41,9 +41,9 @@ ms.locfileid: "50424133"
 
 カスタム検出を管理するには、次のいずれかの役割を割り当てる必要があります。
 
-- **セキュリティ管理者**:この [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) ロールを持つユーザーは、Microsoft 365 セキュリティ センターおよび他のポータルおよびサービスのセキュリティ設定を管理できます。
+- **セキュリティ管理者**:この [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) ロールを持つユーザーは、Microsoft 365 セキュリティ センターおよび他のポータルおよびサービスのセキュリティ設定を管理できます。
 
-- **セキュリティ オペレーター**:この [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) ロールを持つユーザーは、アラートを管理し、Microsoft 365 セキュリティ センターのすべての情報を含む、セキュリティ関連の機能へのグローバルな読み取り専用アクセス権を持つ。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、Defender **for** Endpoint のセキュリティ設定の管理アクセス許可も必要です。
+- **セキュリティ オペレーター**:この [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) ロールを持つユーザーは、アラートを管理し、Microsoft 365 セキュリティ センターのすべての情報を含む、セキュリティ関連の機能へのグローバルな読み取り専用アクセス権を持つ。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、Defender **for** Endpoint のセキュリティ設定の管理アクセス許可も必要です。
 
 必要なアクセス許可を管理するには、グローバル **管理者は次の機能を使用** できます。
 
@@ -138,17 +138,17 @@ DeviceEvents
 
 #### <a name="actions-on-devices"></a>デバイスでのアクション
 これらのアクションは、クエリ結果の列 `DeviceId` のデバイスに適用されます。
-- **デバイスの分離**—Microsoft Defender for Endpoint を使用して完全なネットワーク分離を適用し、デバイスが任意のアプリケーションまたはサービスに接続できません。 [Microsoft Defender for Endpoint マシンの分離の詳細](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **調査パッケージの収集**— ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender for Endpoint 調査パッケージの詳細](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **デバイスの分離**—Microsoft Defender for Endpoint を使用して完全なネットワーク分離を適用し、デバイスが任意のアプリケーションまたはサービスに接続できません。 [Microsoft Defender for Endpoint マシンの分離の詳細](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **調査パッケージの収集**— ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender for Endpoint 調査パッケージの詳細](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **ウイルス対策スキャンの実行**-デバイスでWindows Defenderウイルス対策スキャンを実行します。
 - **調査を開始** する -デバイス [で自動調査](mtp-autoir.md) を開始する
-- **アプリの実行を制限** する :Microsoft 発行の証明書で署名されたファイルのみを実行できるデバイスの制限を設定します。 [Microsoft Defender for Endpoint でのアプリ制限の詳細](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
+- **アプリの実行を制限** する :Microsoft 発行の証明書で署名されたファイルのみを実行できるデバイスの制限を設定します。 [Microsoft Defender for Endpoint でのアプリ制限の詳細](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>ファイルに対するアクション
 選択すると、クエリ結果の 、または列のファイルに対して [ファイルの検疫] `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` アクションを適用できます。 このアクションでは、ファイルを現在の場所から削除し、コピーを検疫に入れる。
 
 #### <a name="actions-on-users"></a>ユーザーに対するアクション
-選択すると、クエリ結果の **、、** または列のユーザーに対してユーザーに対して [侵害されたユーザーとしてマーク] `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` アクションが実行されます。 このアクションは、Azure Active Directory でユーザーのリスク レベルを "高" に設定し、対応する ID 保護 [ポリシーをトリガーします](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+選択すると、クエリ結果の **、、** または列のユーザーに対してユーザーに対して [侵害されたユーザーとしてマーク] `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` アクションが実行されます。 このアクションは、Azure Active Directory でユーザーのリスク レベルを "高" に設定し、対応する ID 保護 [ポリシーをトリガーします](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
 > カスタム検出ルールの許可またはブロックアクションは、Microsoft 365 Defender では現在サポートされていません。

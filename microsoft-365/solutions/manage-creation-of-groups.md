@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Microsoft 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: 04c2b6e738ed41f8d4a2bf96716fb74b1d260497
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838641"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929158"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
@@ -63,7 +63,7 @@ ms.locfileid: "50838641"
 - グループの作成が許可されているグループのメンバー
 
 > [!NOTE]
-> [Azure ライセンスの割り当て方法の詳細については、「Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)ポータルでライセンスを割り当てるまたは削除する」を参照してください。
+> [Azure ライセンスの割り当て方法の詳細については、「Azure Active Directory](/azure/active-directory/fundamentals/license-users-groups)ポータルでライセンスを割り当てるまたは削除する」を参照してください。
 
 以下のユーザーは Azure AD Premium ライセンスまたは Azure AD Basic EDU のライセンスが割り当てられている必要はありません。
 
@@ -83,19 +83,19 @@ ms.locfileid: "50838641"
 
 4. グループの設定を完了し、組織でグループを作成できるユーザーまたは他のグループを追加します。
 
-詳細については、「[Microsoft 365 管理センターでのセキュリティ グループの作成、編集、または削除](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group)」を参照してください。
+詳細については、「[Microsoft 365 管理センターでのセキュリティ グループの作成、編集、または削除](../admin/email/create-edit-or-delete-a-security-group.md)」を参照してください。
 
 ## <a name="step-2-run-powershell-commands"></a>手順 2: PowerShell コマンドを実行する
 
-グループレベルのゲスト アクセス設定を変更するには、[Graph 用 Azure Active Directory PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (モジュール名 **AzureADPreview**) のプレビュー バージョンを使用する必要があります。
+グループレベルのゲスト アクセス設定を変更するには、[Graph 用 Azure Active Directory PowerShell (AzureAD)](/powershell/azure/active-directory/install-adv2) (モジュール名 **AzureADPreview**) のプレビュー バージョンを使用する必要があります。
 
-- 以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Azure AD モジュールのインストール](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。
+- 以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Azure AD モジュールのインストール](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。
 
 - Azure AD PowerShell モジュール (AzureAD) の 2.0 一般提供バージョンをインストールしている場合には、PowerShell セッションで `Uninstall-Module AzureAD` を実行してアンインストールし、`Install-Module AzureADPreview` を実行してプレビュー バージョンをインストールする必要があります。
 
 - プレビュー バージョンを既にインストールしている場合には、`Install-Module AzureADPreview`を実行しそれがこのモジュールの最新バージョンであることを確認します。
 
-下のスクリプトを、Notepad などのテキスト エディターまたは [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise) にコピーます。
+下のスクリプトを、Notepad などのテキスト エディターまたは [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise) にコピーます。
 
 作成 *\<GroupName\>* したグループの名前に置き換える。 例:
 
@@ -109,7 +109,7 @@ PowerShell ウィンドウで、ファイルを保存した場所に移動 し�
 
 `.\GroupCreators.ps1`
 
-サインインを求められたら、[管理者アカウントでサインイン](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)します。
+サインインを求められたら、[管理者アカウントでサインイン](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)します。
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -164,7 +164,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 グループのメンバーと同じ手順を再度実行します。
 
 > [!NOTE]
-> グループのメンバーがグループを作成できない場合は、OWA メールボックス ポリシーによってブロックされていない [か確認します](https://go.microsoft.com/fwlink/?linkid=852135)。
+> グループのメンバーがグループを作成できない場合は、OWA メールボックス ポリシーによってブロックされていない [か確認します](/powershell/module/exchange/set-owamailboxpolicy)。
 
 ## <a name="related-topics"></a>関連項目
 
@@ -172,10 +172,10 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 
-[Office 365 PowerShell の概要](https://go.microsoft.com/fwlink/p/?LinkId=808033)
+[Office 365 PowerShell の概要](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
-[セルフサービス グループ管理に必要な Azure Active Directory の設定](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
+[セルフサービス グループ管理に必要な Azure Active Directory の設定](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
-[ExecutionPolicy の設定](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+[ExecutionPolicy の設定](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[グループ設定を構成するための Azure Active Directory コマンドレット](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[グループ設定を構成するための Azure Active Directory コマンドレット](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)

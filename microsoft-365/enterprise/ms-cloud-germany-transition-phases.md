@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: e630e88fa25bc97bcac27a032499bc31718be396
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 5e1bf9257cfd4751333e2e01789bb7dbaf2685fa
+ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826212"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50939637"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行への影響 (全般)
 
@@ -60,22 +60,36 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 グローバ�
 |:-------|:-----|:-------|
 | MCD でホストOffice 365 テナントを、同意なしに移行することはできません。 | Microsoft は 2 つの方法のいずれかを使用して移行する権利を取得します。これにより、Microsoft はデータとサービスの Office 365 Global services インスタンスへの移行を調整できます。 <ol><li>365 Office管理者は、Microsoft が駆動する移行にオプトインします。 </li><li> お客様は、2020 年 5 月 1 日Office MCD テナント 365 テナント内のすべてのサブスクリプションを更新します。 毎月、これらの顧客に移行の権利を通知し、30 日待って顧客にキャンセルの機会を与え、その後直接オプトインします。</li></ol> | <ul><li>テナントは移行に同意済みとしてマークされ、管理センターには確認が表示されます。 </li><li>受信確認は、Office 365 テナント メッセージ センターに投稿されます。 サービス構成は、Microsoft Cloud Deutschland エンドポイントから続行されます。 </li><li>テナント管理者は、移行フェーズの状態Office 365 メッセージ センターで更新プログラムを監視する必要があります。 </li></ul>|
 
-## <a name="subscription-phase-3"></a>サブスクリプション (フェーズ 3)
+## <a name="before-the-migration-starts"></a>移行を開始する前に
+
+すべての顧客に適用される移行準備手順をよく理解 [してください](ms-cloud-germany-transition-add-pre-work.md#applies-to-everyone)。
+
+所有する 1 つ以上の DNS 名前空間に _msoid_ という DNS CNAME を設定した場合は、最新のフェーズ 8 の終了まで CNAME を削除する必要があります。 フェーズ 8 の終了前にいつでも CNAME _msoid_ を削除できます。 DNS の [事前作業を参照してください](ms-cloud-germany-transition-add-pre-work.md#dns)。
+
+microsoft Cloud Deutschland インスタンスで Office 365 および Azure にシングル サインオンを使用している場合は、Azure サブスクリプションの移行を準備し、スケジュールする必要があります。 Microsoft Azure の事前作業 [を理解してください](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure)。
+
+## <a name="before-phase-2-starts"></a>フェーズ 2 の開始前
+
+ADFS を使用している場合は、証明書利用者信頼を追加する前と後に [、ADFS](ms-cloud-germany-transition-azure-ad.md) 構成を Office 365 Global サービスにバックアップしてください。
+
+## <a name="subscription-transfer-phase-3"></a>サブスクリプションの転送 (フェーズ 3)
 
 **適用対象**: Microsoft Cloud Deutschland (MCD) でホストOffice 365 テナントを持つすべてのお客様
 
 | Step(s) | 説明 | 影響 |
-|:-------|:-----|:-------|
-| サブスクリプションが転送され、ライセンスが再割り当てされます。 | テナントが Office 365 サービスに移行すると、転送された Microsoft Cloud Deutschland サブスクリプションに対応する Office 365 サービス サブスクリプションが購入されます。 Microsoft Cloud Deutschland ライセンスが割り当てられているユーザーには、365 サービス Office割り当てられます。 従来の Microsoft Cloud Deutschland サブスクリプションは、Office 365 サービス テナントから削除されます。 | <ul><li>組織が (ライセンスよりも多くのシートを使用する) 'ライセンスオーバー' 状況にある場合は、この問題が解決されるまで移行がブロックされる場合があります。 割り [当てられたシート](ms-cloud-germany-transition-add-pre-work.md?view=o365-worldwide#applies-to-everyone) 数が使用されているシートと一致する方法については、「Pre-Work」を参照してください。</li><li> 既存のサブスクリプションへの変更は、このフェーズ中にブロックされます (たとえば、新しいサブスクリプション購入やシート 数の変更はありません)。 </li><li> ライセンス割り当ての変更はブロックされます。 </li><li> Microsoft Cloud Deutschland サブスクリプションは、対応する 365 サービス サブスクリプションOffice移行されます。 このサブスクリプションOffice 365 サービスの提供は、Microsoft (プラン マッピングとも呼ばれる) _によって定義されます_。 </li><li> 365 サービスによって提供される機能 (サービス プラン) の数は、Office Microsoft Cloud Deutschland オファーよりも大きくなる可能性があります。 365 サービスOfficeユーザー ライセンスは、同様の Microsoft Cloud Deutschland 機能 (サービス プラン) と同等に割り当てられます。 すべてのユーザーのユーザー ライセンスが新しい機能に自動的に割り当てられます。 管理者は、必要に応じて、これらのライセンスを無効にする明示的なアクションを実行する必要があります。 </li><li> サブスクリプションの移行が完了すると、Office 365 サービスとドイツのサブスクリプションの両方が Office 365 管理ポータルに表示され、ドイツのサブスクリプションの状態はプロビジョニング解除されます。  </li><li> ユーザーは、新しい 365 サービス サブスクリプションに関連付Office再割り当てされます。 ドイツのサブスクリプションまたは SKU GUID に依存している顧客プロセスは壊れ、Office 365 サービスを提供する必要があります。 </li><li> Office 365 サービスの新しいサブスクリプションは、新しい用語 (毎月/四半期/年) で購入され、お客様は Microsoft Cloud Deutschland サブスクリプションの未使用残高に対して日割り払い払いを受け取る予定です。 </li><li> パートナーの Microsoft Cloud Deutschland テナントは移行されません。 CSP のお客様は、同Officeの新しいサービス 365 サービス テナントOffice 365 サービスに移行されます。 顧客の移行後、パートナーは 365 サービス テナントOfficeこの顧客を管理できます。 </li><li> テナント管理者が無効にしない限り、追加の機能 (Microsoft Planner や Microsoft Flow など) を使用できます。ユーザーのライセンスに割り当てられているサービス プランを無効にする方法については、「ユーザー ライセンスの割り当て中に [Microsoft 365](disable-access-to-services-while-assigning-user-licenses.md)サービスへのアクセスを無効にする」を参照してください。 |
+|:-------|:-------|:-------|
+| サブスクリプションが転送され、ライセンスが再割り当てされます。 | 対応Office 365 グローバル サービス サブスクリプションは、転送された Microsoft Cloud Deutschland サブスクリプションの Office 365 Global インスタンスで購入されます。 割り当てられた Microsoft Cloud Deutschland ライセンスを持つユーザーには、365 Global インスタンスOfficeライセンスが割り当てられます。 従来の Microsoft Cloud Deutschland サブスクリプションは、Office 365 サービス テナントから削除されます。| <ul><li>既存のサブスクリプションへの変更は、このフェーズ中にブロックされます (たとえば、新しいサブスクリプション購入やシート 数の変更はありません)。</li><li>ライセンス割り当ての変更はブロックされます。</li><li>Microsoft Cloud Deutschland サブスクリプションは、対応する 365 Global services サブスクリプションOfficeに移行されます。 このサブスクリプションOffice 365 Global Services オファーは、Microsoft (オファー マッピングとも呼ばれる) _によって定義されます_。</li><li>365 サービスによって提供される機能 (サービス プラン) の数は、Office Microsoft Cloud Deutschland オファーよりも大きくなる可能性があります。 365 サービスOfficeユーザー ライセンスは、同様の Microsoft Cloud Deutschland 機能 (サービス プラン) と同等に割り当てられます。 すべてのユーザーのユーザー ライセンスが新しい機能に自動的に割り当てられます。 管理者は、必要に応じて、これらのライセンスを無効にする明示的なアクションを実行する必要があります。 </li><li>サブスクリプションの移行が完了すると、Office 365 サービスと Microsoft Cloud Deutschland サブスクリプションの両方が Office 365 管理ポータルに表示され、Microsoft Cloud Deutschland サブスクリプションの状態がプロビジョニング解除されます。 </li><li>ユーザーは、新しい 365 サービス サブスクリプションに関連付Office再割り当てされます。 Microsoft Cloud Deutschland サブスクリプションまたは SKU GUID に依存しているすべての顧客プロセスは壊れ、Office 365 サービスを提供して修正する必要があります。 </li><li>Office 365 サービスの新しいサブスクリプションは、新しい用語 (毎月/四半期/年) で購入され、お客様は Microsoft Cloud Deutschland サブスクリプションの未使用残高に対して日割り払い払いを受け取る予定です。 </li><li>パートナーの Microsoft Cloud Deutschland テナントは移行されません。 CSP のお客様は、同Officeの新しいサービス 365 サービス テナントOffice 365 サービスに移行されます。 顧客の移行後、パートナーは 365 サービス テナントOfficeこの顧客を管理できます。 </li><li>テナント管理者が無効にしない限り、追加の機能 (Microsoft Planner や Microsoft Flow など) を使用できます。ユーザーのライセンスに割り当てられているサービス プランを無効にする方法については、「ユーザー ライセンスの割り当て中に [Microsoft 365](disable-access-to-services-while-assigning-user-licenses.md)サービスへのアクセスを無効にする」を参照してください。</li></ul> |
 ||||
 
 ## <a name="sharepoint-online-phase-4"></a>SharePoint Online (フェーズ 4)
 
 **適用対象**: SharePoint Online を使用しているすべてのお客様
 
+引き続き SharePoint 2013 ワークフローを使用している場合は、SharePoint Online の移行中に SharePoint 2013 ワークフローの使用を制限します。
+
 | Step(s) | 説明 | 影響 |
 |:-------|:-----|:-------|
-| SharePoint と OneDrive が移行される | SharePoint Online と OneDrive for Business は、このフェーズで Microsoft Cloud Deutschland から Office 365 グローバル サービスに移行されます。<br><ul><li>既存の Microsoft Cloud Deutschland URL は保持されます (たとえば `contoso.sharepoint.de` )。</li><li>既存のサイトは保持されます。</li><li>Microsoft Cloud Deutschland または Office 365 Global services インスタンスのセキュリティ トークン サービス (STS) によって発行されたクライアント側認証トークンは、移行中に有効です。</li></ul>|<ul><li>移行中の 2 つの短い期間、コンテンツは読み取り専用になります。 この間、SharePoint で "コンテンツを編集できない" バナーが表示されます。</li><li>検索インデックスは保持されません。再構築には最大 10 日かかる場合があります。</li><li>SharePoint Online および OneDrive for Business コンテンツは、移行中に 2 つの短い期間の読み取り専用になります。 この間、ユーザーには「コンテンツを編集できない」バナーが簡単に表示されます。</li><li>SharePoint Online の移行が完了すると、インデックスの再構築中に SharePoint Online および OneDrive for Business コンテンツの検索結果が使用できなくなる場合があります。 この期間中、検索クエリで完全な結果が返されない場合があります。 SharePoint Online News などの検索インデックスに依存する機能は、インデックスの再作成が完了する間に影響を受ける可能性があります。</li></ul>|
+| SharePoint と OneDrive が移行される | SharePoint Online と OneDrive for Business は、このフェーズで Microsoft Cloud Deutschland から Office 365 グローバル サービスに移行されます。<br><ul><li>既存の Microsoft Cloud Deutschland URL は保持されます (たとえば `contoso.sharepoint.de` )。</li><li>既存のサイトは保持されます。</li><li>Microsoft Cloud Deutschland または Office 365 Global services インスタンスのセキュリティ トークン サービス (STS) によって発行されたクライアント側認証トークンは、移行中に有効です。</li></ul>|<ul><li>移行中の 2 つの短い期間、コンテンツは読み取り専用になります。 この間、SharePoint で "コンテンツを編集できない" バナーが表示されます。</li><li>検索インデックスは保持されません。再構築には最大 10 日かかる場合があります。</li><li>SharePoint Online および OneDrive for Business コンテンツは、移行中に 2 つの短い期間の読み取り専用になります。 この間、ユーザーには「コンテンツを編集できない」バナーが簡単に表示されます。</li><li>SharePoint Online の移行が完了すると、インデックスの再構築中に SharePoint Online および OneDrive for Business コンテンツの検索結果が使用できなくなる場合があります。 この期間中、検索クエリで完全な結果が返されない場合があります。 SharePoint Online News などの検索インデックスに依存する機能は、インデックスの再作成が完了する間に影響を受ける可能性があります。</li><li>SharePoint 2013 ワークフローは移行中に壊れ、移行後に再発行する必要があります。</li></ul>|
 ||||
 
 その他の考慮事項:
@@ -86,18 +100,22 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 グローバ�
 
 - SharePoint Online インスタンスが移行される Microsoft Cloud Deutschland のお客様は、SharePoint Online PowerShell モジュール/Microsoft.SharePointOnline.CSOM をバージョン 16.0.20717.12000 以上に更新する必要があります。 それ以外の場合、PowerShell またはクライアント側のオブジェクト モデルを介して SharePoint Online への接続が失敗します。
 
+> [!NOTE]
+> 電子情報開示を使用している場合は、電子情報開示の移行エクスペリエンスを [認識してください](ms-cloud-germany-transition-add-experience.md#ediscovery-phase-4-to-the-end-of-phase-9)。
+
 ## <a name="exchange-online-phase-5"></a>Exchange Online (フェーズ 5)
 
 **適用対象:** Exchange Online を使用しているすべてのお客様
 
-Exchange Online ハイブリッドを使用している場合:Exchange Online ハイブリッド管理者は、この移行の一環としてハイブリッド構成ウィザード  **(HCW)** を複数回実行する必要があります。 Exchange の [事前作業の高度な移行手順を参照してください。](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
+Exchange Online ハイブリッドを使用している場合:Exchange Online ハイブリッド管理者は、この移行の一環としてハイブリッド構成ウィザード  **(HCW)** を複数回実行する必要があります。 移行手順 [5 が開始](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-configuration)する前に Exchange **の事前作業を適用します**。 Exchange Online ハイブリッドのお客様は、「Office 365 Germany」モードで Exchange ハイブリッド構成ウィザード (HCW) の最新バージョンを実行して、Office 365 グローバル サービスへの移行用のオンプレミス構成を準備する必要があります。
 
-移行の事前作業で [](ms-cloud-germany-transition-add-pre-work.md#exchange-online)説明したように、移行手順 **5** が開始する前に、Exchange Online ハイブリッド顧客は、Office 365 グローバル サービスへの移行用のオンプレミス構成を準備するために、"Office 365 Germany" モードで最新バージョンの Exchange ハイブリッド構成ウィザード (HCW) を実行する必要があります。
+移行フェーズ **9** が完了すると (メッセージ センター通知が公開されている場合)、Office 365 Worldwide 設定を使用して HCW を再度実行して、オンプレミス システムを Office 365 Global サービスに接続する必要があります。
 
-移行 **フェーズ 5** が完了すると (メッセージ センター通知が公開されている場合)、Office 365 Worldwide 設定を使用して HCW を再度実行して、オンプレミス システムを Office 365 Global サービスに接続する必要があります。 カスタム ドメインを使用する場合は、追加の DNS 更新プログラムが必要になる場合があります。
+フェーズ 5 でユーザーの写真を変更する場合は [、「Set-UserPhoto」を参照してください。](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
+|オンボーディングメールボックスまたはオフボードメールボックスの移動を停止または削除します。Exchange オンプレミスと Exchange Online の間でメールボックスを移動しない。  | これにより、メールボックスの移動要求がエラーと一緒に失敗しない。 | そうしない場合は、サービスまたはクライアントのOfficeがあります。 |
 | Exchange Online メールボックスは、Microsoft Cloud Deutschland から 365 グローバル Officeに移動されます。| Exchange Online の構成では、移行中の組織に新しい移動先のドイツ語地域が追加されます。 365 Officeグローバル サービス領域は既定として設定され、内部負荷分散サービスはメールボックスを 365 サービス内の適切な既定の領域に再配布Officeできます。 この移行では、どちらの側 (MCD またはグローバル サービス) のユーザーも同じ組織内にいて、いずれかの URL エンドポイントを使用できます。 |<ul><li>ユーザーとサービスを従来の MCD URL (outlook.office.de) から新しいサービス 365 Office URL ( ) に移行します `https://outlook.office365.com` 。</li><li>ユーザーは移行中に従来の MCD URL を通じてサービスに引き続きアクセスすることができますが、移行が完了すると、従来の URL の使用を停止する必要があります。</li><li>ユーザーは、オンライン機能 (予定表、メールOfficeユーザー) Office のOfficeポータルを使用するに移行する必要があります。 365 サービスにまだ移行されていないサービスOffice移行するまでは機能しません。 </li><li>移行Outlook Web Appパブリック フォルダーエクスペリエンスは提供しない場合があります。 </li></ul>|
 | 自動検出のカスタム DNS 設定を更新する| 現在 Microsoft Cloud Deutschland を指している AutoDiscover の顧客管理 DNS 設定を更新して、Exchange Online フェーズ (フェーズ 5) の完了時に Office 365 Global エンドポイントを参照する必要があります。 <br> CNAME を指す既存の DNS エントリ autodiscover-outlook.office.de をポイントするために更新する autodiscover.outlook.com。 |  AutoDiscover 経由の可用性要求とサービス検出呼び出しは、365 サービスOffice直接ポイントします。 これらの DNS 更新を実行しないお客様は、移行が完了すると自動検出サービスの問題が発生する可能性があります。 |
 ||||
@@ -111,9 +129,9 @@ Exchange Online ハイブリッドを使用している場合:Exchange Online �
 
 - 他のOutlook Web Appの共有メールボックスにアクセスするユーザー (たとえば、MCD 環境のユーザーがグローバル環境の共有メールボックスにアクセスする場合など) は、2 回目の認証を求めるメッセージが表示されます。 ユーザーは、最初に自分のメールボックスを認証してアクセスし、次に共有メールボックスを `outlook.office.de` 開く必要があります `outlook.office365.com` 。 他のサービスでホストされている共有リソースにアクセスする場合は、2 回目の認証が必要です。
 
-- 既存の Microsoft Cloud Deutschland のお客様または移行中のユーザーの場合、共有メールボックスが File **> Info >** Add Account を使用して Outlook に追加された場合、予定表のアクセス許可の表示が失敗する場合があります (Outlook クライアントは Rest API を使用しようと試み `https://outlook.office.de/api/v2.0/Me/Calendars` .)予定表のアクセス許可を表示するアカウントを追加する場合は [、「Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) で予定表を共有するためのユーザー エクスペリエンスの変更」の説明に従ってレジストリ キーを追加して、このアクションが成功するようにすることができます。 このレジストリ キーは、グループ ポリシーを使用して組織全体に展開できます。
+- 既存の Microsoft Cloud Deutschland のお客様または移行中のユーザーの場合、ファイル > **Info >** Add Account を使用して共有メールボックスを Outlook に追加すると、予定表のアクセス許可の表示が失敗する場合があります (Outlook クライアントは Rest API の使用を試みる)。 `https://outlook.office.de/api/v2.0/Me/Calendars` 予定表のアクセス許可を表示するアカウントを追加する場合は [、「Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) で予定表を共有するためのユーザー エクスペリエンスの変更」の説明に従ってレジストリ キーを追加して、このアクションが成功するようにすることができます。 このレジストリ キーは、グループ ポリシーを使用して組織全体に展開できます。
 
-- 移行フェーズ中に、PowerShell コマンドレット **New-migrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例:
+- 移行フェーズ中に、PowerShell コマンドレット **New-migrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 次に例を示します。
 
 ```powershell
 New-PSSession 
@@ -139,31 +157,44 @@ Exchange Online Protection (EOP) のバック エンド機能は、新しい地�
 
 ## <a name="skype-for-business-online-phase-7"></a>Skype for Business Online (フェーズ 7)
 
-**適用対象:** SharePoint Online を使用しているすべてのユーザー
+**適用対象:** Skype for Business Online を使用しているすべてのお客様
+
+[Skype for Business Online](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online)移行手順の事前作業について理解している必要があります。
 
 <!--
     Question from ckinder
     the PowerShell command seems to be incomplete
 -->
+
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| Skype for Business から Teams への移行。 | 既存の Skype for Business のお客様は、ヨーロッパの Office 365 グローバル サービスに移行され、Office 365 サービスの地域 "ドイツ" の Microsoft Teams に移行されます。 |<ul><li>ユーザーは移行日に Skype for Business にサインインできない。 移行の 10 日前に管理センターに投稿し、移行がいつ行われ、移行を開始するときにもう一度知らせます。</li><li> ポリシー構成が移行されます。 </li><li>ユーザーは Teams に移行され、移行後に Skype for Business を使用できなくなりました。 </li><li>ユーザーには Teams デスクトップ クライアントがインストールされている必要があります。 インストールは、Skype for Business インフラストラクチャのポリシーを介して 10 日間に行われますが、失敗した場合でも、ユーザーはクライアントをダウンロードするか、サポートされているブラウザーに接続する必要があります。 </li><li>連絡先と会議は Teams に移行されます。</li><li>タイム サービスが Office 365 サービスに移行するまで、顧客の DNS エントリが完了するまで、ユーザーは Skype for Business にサインインできない。 </li><li>連絡先と既存の会議は、引き続き Skype for Business 会議として機能します。 </li><li>PowerShell は、テナントとユーザーの設定とポリシーを管理するために使用します。 PowerShell セッションに接続する場合は、次の項目を追加します。 <br><br> `-OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"`</li></ul>|
+| Skype for Business から Teams への移行。 | 既存の Skype for Business のお客様は、ヨーロッパの Office 365 グローバル サービスに移行され、Office 365 サービスの地域 "ドイツ" の Microsoft Teams に移行されます。 |<ul><li>ユーザーは移行日に Skype for Business にサインインできない。 移行の 10 日前に管理センターに投稿し、移行がいつ行われ、移行を開始するときにもう一度知らせます。</li><li> ポリシー構成が移行されます。 </li><li>ユーザーは Teams に移行され、移行後に Skype for Business を使用できなくなりました。 </li><li>ユーザーには Teams デスクトップ クライアントがインストールされている必要があります。 インストールは、Skype for Business インフラストラクチャのポリシーを介して 10 日間に行われますが、失敗した場合でも、ユーザーはクライアントをダウンロードするか、サポートされているブラウザーに接続する必要があります。 </li><li>連絡先と会議は Teams に移行されます。</li><li>タイム サービスが Office 365 サービスに移行するまで、顧客の DNS エントリが完了するまで、ユーザーは Skype for Business にサインインできない。 </li><li>連絡先と既存の会議は、引き続き Skype for Business 会議として機能します。 </li></ul>|
 ||||
+
+移行フェーズ 9 が完了した後に PowerShell を使用して Skype for Business Online に接続する必要がある場合は、次のコードを使用して接続します。
+
+```powershell
+Import-Module MicrosoftTeams
+$userCredential = Get-Credential
+Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"
+```
 
 ## <a name="dynamics-365-phase-8"></a>Dynamics 365 (フェーズ 8)
 
 **適用対象:** Microsoft Dynamics 365 を使用しているすべてのお客様
+
+[Microsoft Dynamics 365](ms-cloud-germany-transition-add-pre-work.md#dynamics365)のインストール手順の事前作業について理解している必要があります。
 
 Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に移行するために追加の契約が必要です。
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
 | Microsoft Dynamics リソース | Microsoft Dynamics をお持ちのお客様は、Microsoft Engineering または Microsoft FastTrack が Microsoft Dynamics 365 を Office 365 Global services インスタンスに移行します。* |<ul><li>移行後、管理者は組織を検証します。 <</li><li>管理者は、必要に応じてワークフローを変更します。 </li><li>管理者は、必要に応じて AdminOnly モードをクリアします。</li><li>管理者は、必要に応じて _サンドボックスから組織_ の種類を変更します。</li><li>インスタンス (org) にアクセスする新しい URL をエンド ユーザーに通知します。</li><li>新しいエンドポイント URL への受信接続を更新します。 </li><li>移行中は、ユーザーが Dynamics サービスを利用できません。 </li><li>ユーザーは、各組織の移行後に組織の正常性と機能を検証する必要があります。</li></ul>|
-|||||
+||||
 
 \* (i) Microsoft Dynamics 365 をお持ちのお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。
 
-## <a name="power-bi-phase-8-of-9"></a>Power BI (フェーズ 8 / 9)
+## <a name="power-bi-phase-8"></a>Power BI (フェーズ 8)
 
 **適用対象:** Microsoft Power BI (PBI) を使用しているすべてのお客様
 
@@ -180,20 +211,26 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 Office "ドイツ" に移行する 365 テナントでは、テナント移行がフェーズ 9 に達した後、すべてのユーザーが Office 365 からサインアウトし、すべての Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントに戻る必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンを取得できます。
 
+モバイル デバイスの手順の事前 [作業が完了済みである必要](ms-cloud-germany-transition-add-pre-work.md#mobile) があります。
+
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
 | クライアントはOffice切りOffice、Azure ADは、365 サービスを指すテナント スコープをOfficeします。 | この構成変更により、Office 365 サービス エンドポイントを更新し、Officeポイントできます。 | <ul><li>すべての Office _アプリを_ 閉じてからサインイン (またはクライアントの再起動とユーザーのサインインを強制する) をユーザーに通知して、Office クライアントが変更を受け取るのを有効にします。 </li><li>カットオーバーから 72時間以内に、Office アプリの再アクティブ化を求める Office バナーが表示される可能性があるユーザーとヘルプ デスク スタッフに通知します。 </li><li>個人用Office上のすべてのアプリケーションを閉じ、ユーザーはサインアウトしてからもう一度サインインする必要があります。 [黄色のライセンス認証] バーでサインインし、365 サービスOffice再アクティブ化します。</li><li>共有コンピューターでは、個人用のコンピューターに似たアクションが必要であり、特別な手順は必要とします。 </li><li>モバイル デバイスでは、ユーザーはアプリからサインアウトして閉じてから、もう一度サインインする必要があります。 </li></ul>|
 ||||
 
+## <a name="line-of-business-apps"></a>Line-of-business アプリ
+
+Line-of-business アプリがある場合は、業務行アプリの手順の事前作業 [が完了済みである必要](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps) があります。
+
 ## <a name="office-services"></a>Office サービス
 
-Office で最も最近使用された (MRU) サービスは、移行ではなく、MCD Office 365 Global サービスへの切り替えです。 365 Global services 側Office MRU リンクだけが、ポータルから移行した後 Office.com されます。 MCD からの MRU リンクは、365 グローバル サービスOffice MRU リンクとして表示されません。 365 Officeグローバル サービスでは、MRU リンクにアクセスできるのは、テナントの移行がフェーズ 9 に達した後のみです。
+Office で最も最近使用された (MRU) サービスは、移行ではなく、Microsoft Cloud Deutschland から Office 365 Global サービスへの切り替えです。 365 Global services 側Office MRU リンクだけが、ポータルから移行した後 Office.com されます。 Microsoft Cloud Deutschland からの MRU リンクは、365 グローバル サービスの MRU Office表示されません。 365 Officeグローバル サービスでは、MRU リンクにアクセスできるのは、テナントの移行がフェーズ 9 に達した後のみです。
 
-## <a name="next-step"></a>次の手順
+## <a name="post-migration"></a>移行後
 
-[追加の事前作業を実行する](ms-cloud-germany-transition-add-pre-work.md)
+移行後のアクティビティの記事を [必ず読んで](ms-cloud-germany-transition-add-experience.md#post-migration) 、それを実行してください。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 
@@ -209,6 +246,6 @@ Office で最も最近使用された (MRU) サービスは、移行ではなく
 
 クラウド アプリ:
 
-- [Dynamics 365 移行プログラム情報](https://aka.ms/d365ceoptin)
-- [Power BI 移行プログラム情報](https://aka.ms/pbioptin)
-- [Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 移行プログラム情報](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移行プログラム情報](/power-bi/admin/service-admin-migrate-data-germany)
+- [Microsoft Teams へのアップグレードを開始する](/microsoftteams/upgrade-start-here)

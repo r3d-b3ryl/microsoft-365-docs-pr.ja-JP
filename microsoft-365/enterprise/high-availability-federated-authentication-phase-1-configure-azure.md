@@ -1,5 +1,5 @@
 ---
-title: 高可用性フェデレーション認証のフェーズ 1 Azure を構成する
+title: 高可用性フェデレーション認証 フェーズ 1 Azure の構成
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: '概要: microsoft 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。'
-ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+description: '概要: Microsoft 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。'
+ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332342"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929110"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 
-このフェーズでは、フェーズ2、3、4で仮想マシンをホストする Azure で、リソースグループ、仮想ネットワーク (VNet)、および可用性セットを作成します。 このフェーズは、「[Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)」に進む前に完了しておく必要があります。 すべてのフェーズについては、「 [Microsoft 365 の高可用性フェデレーション認証を Azure に展開](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) する」を参照してください。
+このフェーズでは、フェーズ 2、3、および 4 で仮想マシンをホストするリソース グループ、仮想ネットワーク (VNet)、可用性セットを Azure で作成します。 このフェーズは、「[Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)」に進む前に完了しておく必要があります。 すべての [フェーズについては、「Azure での Microsoft 365](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) の高可用性フェデレーション認証の展開」を参照してください。
   
-Azure は、次の基本コンポーネントを使用してプロビジョニングする必要があります。
+Azure は、次の基本的なコンポーネントを使用してプロビジョニングする必要があります。
   
 - リソース グループ
     
@@ -57,13 +57,13 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
     
 2. その結果のビットを 10 進数に変換して、ゲートウェイ サブネットのサイズに設定されたプレフィックス長のアドレス空間として表現します。
     
-この計算を実行する PowerShell コマンドブロックおよび C# または Python コンソールアプリケーションについては、「 [Azure gateway のサブネットのアドレス空間計算ツール](address-space-calculator-for-azure-gateway-subnets.md) 」を参照してください。
+この [計算を実行する PowerShell](address-space-calculator-for-azure-gateway-subnets.md) コマンド ブロックおよび C# または Python コンソール アプリケーションについては、「Azure ゲートウェイ サブネットのアドレス空間計算」を参照してください。
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   
 |**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |Active Directory ドメインサービス (AD DS) ドメインコントローラーとディレクトリ同期サーバー仮想マシン (Vm) によって使用されるサブネット。  <br/> |
+|1.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |Active Directory ドメイン サービス (DS) ドメイン コントローラー ADディレクトリ同期サーバー仮想マシン (VM) によって使用されるサブネット。  <br/> |
 |2.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
 |3.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |Web アプリケーション プロキシ VM が使用するサブネット。  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |Azure ゲートウェイ VM が使用するサブネット。  <br/> |
@@ -94,7 +94,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
    
  **表 D:オンプレミスの DNS サーバー**
   
-クロスプレミスネットワークから組織のネットワークへのパケットをサイト間 VPN 接続を介してルーティングするには、組織のオンプレミスネットワーク上のすべての到達可能な場所に対するアドレススペース (CIDR 表記) のリストを持つローカルネットワークを使用して仮想ネットワークを構成する必要があります。 このローカル ネットワークを定義するアドレス空間の一覧は、一意であることが必要であり、別の仮想ネットワークや別のローカル ネットワークとの重複がないことが必要になります。
+サイト間 VPN 接続を通してクロスオンプレミス ネットワークから組織ネットワークにパケットをルーティングするには、組織のオンプレミス ネットワーク上のすべての到達可能な場所のアドレス スペースの一覧 (CIDR 表記) を持つローカル ネットワークを使用して仮想ネットワークを構成する必要があります。 このローカル ネットワークを定義するアドレス空間の一覧は、一意であることが必要であり、別の仮想ネットワークや別のローカル ネットワークとの重複がないことが必要になります。
   
 一連のローカル ネットワークのアドレス スペースに関しては表 L に記入します。3 つの空白のエントリが記載されていますが、通常はさらに必要となります。IT 部門に尋ねてこのアドレス スペースの一覧を特定してください。
   
@@ -106,10 +106,10 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
    
  **表 L:ローカル ネットワークのアドレス プレフィックス**
   
-では、Microsoft 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始しましょう。
+次に、Microsoft 365 のフェデレーション認証をホストする Azure インフラストラクチャの構築を開始します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「 [Azure PowerShell の概要」を](https://docs.microsoft.com/powershell/azure/get-started-azureps)参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「Azure [PowerShell の使用を開始する」を参照してください](/powershell/azure/get-started-azureps)。 
   
 まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。
   
@@ -118,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> カスタム設定に基づいて、すぐに実行できる PowerShell コマンドブロックを生成するには、この [Microsoft Excel 構成ブック](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)を使用します。 
+> カスタム設定に基づいてすぐに実行できる PowerShell コマンド ブロックを生成するには、この Microsoft Excel 構成ブック [を使用します](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 次のコマンドを使用して、サブスクリプションの名前を取得します。
   
@@ -126,13 +126,13 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-以前のバージョンの Azure PowerShell では、代わりにこのコマンドを使用してください。
+以前のバージョンの Azure PowerShell では、代わりにこのコマンドを使用します。
   
 ```powershell
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Azure サブスクリプションを設定します。 引用符で囲まれたすべての内容 (文字を含む) を \< and > 正しい名前に置き換えます。
+Azure サブスクリプションを設定します。 引用符内の文字を含むすべてを正しい \< and > 名前に置き換える。
   
 ```powershell
 $subscrName="<subscription name>"
@@ -199,7 +199,7 @@ New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locNa
 
 ```
 
-次に、仮想マシンを持つ各サブネットのネットワークセキュリティグループを作成します。 サブネットを分離するには、サブネットのネットワーク セキュリティ グループでの特定の種類のトラフィックを許可または拒否する規則を追加できます。
+次に、仮想マシンを持つサブネットごとにネットワーク セキュリティ グループを作成します。 サブネットを分離するには、サブネットのネットワーク セキュリティ グループでの特定の種類のトラフィックを許可または拒否する規則を追加できます。
   
 ```powershell
 # Create network security groups
@@ -253,7 +253,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> 個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。 ただし、このサイト間 VPN 接続が使用できなくなった場合、VNet 内のドメインコントローラーは、オンプレミスの Active Directory ドメインサービスで行われたユーザーアカウントとグループの更新を受信しません。 これが行われないようにするには、サイト間 VPN 接続の高可用性を構成します。 詳細については、「[高可用性のクロスプレミス接続および VNet 間接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)」を参照してください。
+> 個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。 ただし、このサイト間 VPN 接続が使用できなくなった場合、VNet 内のドメイン コントローラーは、オンプレミスの Active Directory ドメイン サービスで行われたユーザー アカウントとグループに対する更新プログラムを受信できません。 このようなことが起こらないよう、サイト間 VPN 接続の高可用性を構成できます。 詳細については、「[高可用性のクロスプレミス接続および VNet 間接続](/azure/vpn-gateway/vpn-gateway-highlyavailable)」を参照してください。
   
 次に、このコマンドの表示から得られる、仮想ネットワーク用の Azure VPN ゲートウェイのパブリック IPv4 アドレスを記録します。
   
@@ -261,7 +261,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-次に、Azure VPN ゲートウェイに接続するようにオンプレミスの VPN デバイスを構成します。詳細については、「[サイト間 VPN Gateway 接続の VPN デバイスについて](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」を参照してください。
+次に、Azure VPN ゲートウェイに接続するようにオンプレミスの VPN デバイスを構成します。詳細については、「[サイト間 VPN Gateway 接続の VPN デバイスについて](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」を参照してください。
   
 オンプレミス VPN デバイスを構成するには、次のものが必要になります。
   
@@ -302,20 +302,18 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 **フェーズ 1: Microsoft 365 の高可用性フェデレーション認証用の Azure インフラストラクチャ**
 
-![Azure インフラストラクチャを使用した Azure における高可用性 Microsoft 365 フェデレーション認証のフェーズ1](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Azure の高可用性 Microsoft 365 フェデレーション認証と Azure インフラストラクチャのフェーズ 1](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>次の手順
 
-[「フェーズ 2: ドメインコントローラーを構成](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)する」を使用して、このワークロードの構成を続行します。
+[ [フェーズ 2: このワークロードの](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 構成を続行するドメイン コントローラーを構成する] を使用します。
   
 ## <a name="see-also"></a>関連項目
 
 [Azure に Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Microsoft 365 開発/テスト環境のフェデレーション id](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Microsoft 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/solution-architecture-center.md)
+[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)
 
-[Microsoft 365 id と Azure Active Directory について](about-microsoft-365-identity.md)
-
-
+[Microsoft 365 ID と Azure Active Directory について](about-microsoft-365-identity.md)

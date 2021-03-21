@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Microsoft Viva のトピックを設定する方法について説明します。
-ms.openlocfilehash: cc420a0631f5b861341116abcd50cfe90e15450e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 629008e083d71e09632b05e21eaefb011d7d9ce2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551893"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929446"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Microsoft Viva のトピックを設定する
 
@@ -25,7 +25,7 @@ Microsoft 365 管理センターを使用して、トピックを設定および
 
 Microsoft 365 管理センターにアクセスしてトピックを設定するには、 [ビ](https://www.microsoft.com/microsoft-viva/topics) バ トピックをサブスクライブし、グローバル管理者または SharePoint 管理者である必要があります。
 
-管理デバイスを必要とするように[](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)SharePoint を構成している場合は、管理デバイスからトピックを設定してください。
+管理デバイスを必要とするように[](/sharepoint/control-access-from-unmanaged-devices)SharePoint を構成している場合は、管理デバイスからトピックを設定してください。
 
 ## <a name="video-demonstration"></a>ビデオ デモンストレーション
 
@@ -48,7 +48,7 @@ Microsoft 365 管理センターにアクセスしてトピックを設定する
 
 3. [ユーザーを **ナレッジに接続する] ページ** で、[スタート] **を** クリックしてセットアップ プロセスを説明します。
 
-    ![概要](../media/k-get-started.png) 
+    ![作業の開始](../media/k-get-started.png) 
 
 4. [ビバ **トピックの検索方法の選択] ページ** で、トピックの検出を構成します。 **[SharePoint トピック ソースの選択**] セクションで、検出中にトピックのソースとしてクロールする SharePoint サイトを選択します。 次から選択します。
     - **すべてのサイト**: 組織内のすべての SharePoint サイト。 これには、現在および将来のサイトが含まれます。
@@ -123,6 +123,8 @@ Microsoft 365 管理センターにアクセスしてトピックを設定する
 
     ![適用される設定](../media/ksetup7.png)    
 
+最初にトピックの検出を有効にすると、すべての推奨トピックが [トピックの管理] ビューに表示されるまで最大 2 週間かかる場合があります。 トピックの検出は、コンテンツの新しいコンテンツまたは更新が行われた後も継続されます。 ビバ トピックスが新しい情報を評価する場合、組織で提案されるトピックの数が変動するのが普通です。
+
 ## <a name="assign-licenses"></a>ライセンスを割り当てる
 
 トピック エクスペリエンスを構成したら、トピックを使用するユーザーにライセンスを割り当てる必要があります。 ライセンスを持つユーザーだけが、ハイライト、トピック カード、トピック ページ、トピック センターなどのトピックに関する情報を表示できます。 
@@ -137,7 +139,8 @@ Microsoft 365 管理センターにアクセスしてトピックを設定する
 
 4. [ **アプリ]** で **、[Graph Connectors Search with Index (Viva Topics)** と **Viva Topics の** 両方が選択されている必要があります。
 
-    ![Microsoft 365 管理センターの Microsoft Viva Topics ライセンス](../media/topic-experiences-licenses.png)
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft 365 管理センターの Microsoft Viva Topics ライセンス](../media/topic-experiences-licenses.png)
 
 5. **[変更の保存]** をクリックします。
 

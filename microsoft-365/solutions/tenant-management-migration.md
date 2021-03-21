@@ -16,23 +16,23 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Microsoft 365 テナントの Windows デバイスOfficeクライアント アプリ、Officeサーバーを移行します。
-ms.openlocfilehash: 85f1c0d927b881c4d1526ce538ae54f5954a0664
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 336dee2e62c6d0917c437252ba1d741c304998fa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406362"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929146"
 ---
-# <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>手順 4. エンタープライズ テナント用の Microsoft 365 の移行
+# <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>手順 4.  エンタープライズ テナント用の Microsoft 365 の移行
 
 ほとんどのエンタープライズ組織には、オペレーティング システム、クライアント ソフトウェア、およびサーバー ソフトウェアの複数のリリースを含む異種環境があります。 Microsoft 365 for enterprise には、IT インフラストラクチャの主要なコンポーネントの最も安全なバージョンが含まれています。 また、クラウド テクノロジを活用するように設計された生産性機能も含まれています。
 
 エンタープライズ統合製品スイートの Microsoft 365 のビジネス価値を最大化するには、次のリリースを移行するための戦略の計画と実装を開始します。
 
-| From | へ |
+| 送信元 | To |
 |:-------|:-----|
 | Windows 7 と Windows 8.1 | Windows 10 Enterprise |
-| Officeのデバイスにインストールされているクライアント製品を管理する | Microsoft 365 Apps for enterprise |
+| Officeのデバイスにインストールされているクライアント製品を管理する | エンタープライズ向け Microsoft  365 アプリ |
 | Officeサーバーにインストールされているサーバー製品の一覧 | Microsoft 365 の同等のクラウドベースのサービス |
 |  |  |
 
@@ -40,17 +40,17 @@ ms.locfileid: "50406362"
 
 エンタープライズ ライセンスの各 Microsoft 365 には、Windows 10 Enterprise のライセンスが含まれています。 Windows 7 または Windows 8.1 を実行するデバイスを移行するには、一時アップグレードを実行できます。 2020 年 1 月 14 日に Windows *7 のサポートが終了しました*。 
 
-一時アップグレードを超えて Windows 10 Enterprise をインストールするその他の方法については [、「Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)展開シナリオ」を参照してください。 自分で[Windows 10 の展開を計画](https://aka.ms/planforwin10deployment)することもできます。
+一時アップグレードを超えて Windows 10 Enterprise をインストールするその他の方法については [、「Windows 10](/windows/deployment/windows-10-deployment-scenarios)展開シナリオ」を参照してください。 自分で[Windows 10 の展開を計画](/windows/deployment/planning/)することもできます。
 
 ## <a name="migrating-to-microsoft-365-apps-for-enterprise"></a>エンタープライズ向け Microsoft 365 Apps への移行
 
-Microsoft 365 for enterprise には、Microsoft クラウドからインストールおよび更新される Office クライアント製品 (Word、PowerPoint、Excel、および Outlook) のバージョンである Microsoft 365 Apps for enterprise が含まれています。 詳細については、「エンタープライズ向 [け Microsoft 365 Apps について」を参照してください](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
+Microsoft 365 for enterprise には、Microsoft クラウドからインストールおよび更新される Office クライアント製品 (Word、PowerPoint、Excel、および Outlook) のバージョンである Microsoft 365 Apps for enterprise が含まれています。 詳細については、「エンタープライズ向 [け Microsoft 365 Apps について」を参照してください](/deployoffice/about-microsoft-365-apps)。
 
 2019 以前のバージョンのコンピューターを最新Officeではなく、次の手順を実行します。
 
 1. ユーザーに対して Microsoft 365 ライセンスを取得して割り当てる。
 2. コンピューター Office 2013 2016 Officeまたは 2016 をアンインストールします。
-3. Microsoft 365 Apps for enterprise を個別にインストールするか、IT ロールアウト中にインストールします。 詳細については、「展開ガイド [for Microsoft 365 Apps」を参照してください](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)。
+3. Microsoft 365 Apps for enterprise を個別にインストールするか、IT ロールアウト中にインストールします。 詳細については、「展開ガイド [for Microsoft 365 Apps」を参照してください](/deployoffice/deployment-guide-microsoft-365-apps)。
 
 Microsoft 365 Apps for enterprise は、セキュリティ更新プログラムと新機能更新プログラムの両方を自動的にインストールし、セキュリティと生産性を強化する Microsoft 365 のクラウドベースのサービスを利用できます。
 
@@ -60,9 +60,9 @@ Microsoft 365 for enterprise には、web ブラウザーや Outlook クライ�
 
 特定の Microsoft 365 ワークロードのユーザーとデータの移行に関する情報については、次のリソースを使用します。
 
-- [オンプレミスのメールボックスから Exchange Online にExchange Serverメールボックスを移動する](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
-- [SharePoint Server から SharePoint Online への SharePoint データの移行](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
-- [Skype for Business Online を Microsoft Teams に移行する](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
+- [オンプレミスのメールボックスから Exchange Online にExchange Serverメールボックスを移動する](/exchange/hybrid-deployment/move-mailboxes)
+- [SharePoint Server から SharePoint Online への SharePoint データの移行](/sharepointmigration/migrate-to-sharepoint-online)
+- [Skype for Business Online を Microsoft Teams に移行する](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 

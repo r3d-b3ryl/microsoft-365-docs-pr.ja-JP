@@ -20,20 +20,20 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: ページ診断を使用して SharePoint Online のモダン サイト ページの Web パーツのパフォーマンスを最適化する方法について説明します。
-ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+description: ページ診断を使用して SharePoint Online モダン サイト ページの Web パーツのパフォーマンスを最適化する方法について説明します。
+ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287151"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929062"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで Web パーツのパフォーマンスを最適化する
 
 SharePoint Online のモダン サイト ページには、ページの読み込み時間全体に影響する可能性のある Web パーツが含まれています。 この記事では、ページ内の Web パーツによるユーザーが感じる待機時間への影響を特定する方法と、一般的な問題を修復する方法について説明します。
 
 >[!NOTE]
->Sharepoint Online のモダン ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)」を参照してください。
+>Sharepoint Online のモダン ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)」を参照してください。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>SharePoint 用ページ診断ツールを使用して Web パーツを分析する
 
@@ -56,16 +56,16 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 結果に含まれる情報は次のとおりです。
 
-- **Web パーツ** がカスタムか Microsoft OOTB かを示します。
-- **名前と ID には** 、ページ上で Web パーツを見つけるのに役立つ識別情報が表示されます。
-- **合計** は、Web パーツがモジュールの読み込み、初期化、レンダリングを行う合計時間を示します。 これは、Web パーツがページにレンダリングするために最初から最後まで行った相対時間の合計です。
-- **モジュール読み** 込みでは、拡張機能の JavaScript ファイルと CSS ファイルをダウンロード、評価、読み込むのに必要な時間を示します。 次に、Init プロセスを開始します。
-- **遅延読み** 込みでは、ページのメイン セクションに表示されない Web パーツの遅延読み込みの時間が表示されます。 レンダリングする Web パーツが多すぎる場合や、ページの読み込み時間を最小限に抑えるためにレンダリングするためにキューに入れられます。
-- **Init は** 、Web パーツがデータを初期化するために必要な時間を示します。
-    これは非同期呼び出しであり、init time は、返された promise が解決された場合の onInit 関数の時間の計算です。
-- **レンダリング** は、モジュールの読み込みと Init の完了後に UI (ユーザー インターフェイス) をレンダリングするために必要な時間を示します。
+- **作成者は** 、Web パーツがカスタムか Microsoft OOTB かを示します。
+- **名前と ID には** 、ページで Web パーツを見つけるのに役立つ識別情報が表示されます。
+- **[合計** ] は、Web パーツがモジュールの読み込み、初期化、レンダリングを行う合計時間を示します。 最初から最後まで、Web パーツがページにレンダリングするために必要な相対時間の合計です。
+- **モジュールの読** み込みでは、拡張機能 JavaScript ファイルと CSS ファイルのダウンロード、評価、読み込みに必要な時間が表示されます。 その後、Init プロセスが開始されます。
+- **遅延読み** 込みでは、ページのメイン セクションに表示されない Web パーツの遅延読み込み時間が表示されます。 レンダリングする Web パーツが多すぎて、ページの読み込み時間を最小限に抑えるためにレンダリングするためにキューに入れられます。
+- **Init** は、Web パーツがデータを初期化するために必要な時間を示します。
+    これは非同期呼び出しであり、init 時間は、返される約束が解決された場合の onInit 関数の時間の計算です。
+- **Render** は、モジュールの読み込みと Init の完了後の UI (ユーザー インターフェイス) のレンダリングに必要な時間を示します。
     ドキュメント (ページ) に DOM をマウントする JavaScript の実行時間です。
-    画像など、非同期リソースのレンダリングには、完了に時間がかかる場合があります。
+    非同期リソースのレンダリング (イメージなど) は、完了にさらに時間がかかる場合があります。
 
 この情報は、デザイナーと開発者が問題のトラブルシューティングを行えるように提供されています。 この情報は、設計開発チームに提供するようにします。
 
@@ -80,10 +80,10 @@ Web パーツのパフォーマンスが低い場合に考えられる原因の�
   - かたまりごとに分けるために、_import()_ ステートメントを使用して頻度が低いシナリオを移動し、モード コード (プロパティ ウィンドウなど) を編集します。
   - 機能していないコードをすべて完全に削除するために、_package.json_ の依存関係を確認します。 テスト/ビルド専用依存関係があれば、すべて devDependencies に移動します。
   - 静的リソースの最適なダウンロードを行うには、Office 365 CDN を使用する必要があります。 _js/css_ ファイルの配信元として、パブリックの CDN 配信元が推奨されています。 Office 365 CDN の使用に関する詳細については、「[SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用](use-microsoft-365-cdn-with-spo.md)」を参照してください。
-  - SharePoint Framework (SPFx) に付属する _React_ や _Fabric imports_ などのフレームワークを再利用してください。 詳細については、「[SharePoint Framework の概要](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)」を参照してください。
+  - SharePoint Framework (SPFx) に付属する _React_ や _Fabric imports_ などのフレームワークを再利用してください。 詳細については、「[SharePoint Framework の概要](/sharepoint/dev/spfx/sharepoint-framework-overview)」を参照してください。
   - 最新バージョンの SharePoint Framework を使用するようにし、新しいバージョンがリリースされた場合にはアップグレードしてください。
 - データの取得/キャッシュ
-  - Web パーツが追加のサーバー呼び出しに依存して表示用のデータをフェッチする場合は、それらのサーバー API が高速で、クライアント側キャッシュを実装する (より大きなセットに _localStorage_ や _IndexedDB_ を使用するなど) 必要があります。
+  - Web パーツが追加のサーバー呼び出しに依存して表示用のデータをフェッチする場合は、それらのサーバー API が高速で、クライアント側キャッシュを実装します _(localStorage_ や _IndexedDB_ を使用して大きなセットを作成する場合など)。
   - 重要なデータを表示するために複数の呼び出しが必要な場合は、サーバーへの呼び出しのバッチ処理または複数の要求を 1 つの呼び出しに統合する他の方法を検討してください。
   - または、データの一部の要素で低速の API が要求され、これらの要素が初期レンダリングには重要でない場合、これらを重要なデータのレンダリング後に実行される別の呼び出しに切り離します。
   - 複数のパーツが同じデータを使用している場合、共通データ層を使用して呼び出しの重複を防ぎます。
@@ -108,7 +108,7 @@ Web パーツのパフォーマンスが低い場合に考えられる原因の�
 
 [Office 365 のパフォーマンスをチューニングする](tune-microsoft-365-performance.md)
 
-[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
 

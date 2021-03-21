@@ -14,12 +14,12 @@ ms.custom:
 description: 管理者は、セキュリティ コンプライアンス センターの&を使用して、メッセージに何が起こったのかを確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3f7e4bc9624b9fae48074203da525d7a504a12
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 587e111a71b321c131d0e63a0510ec7e1afa289a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741577"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929398"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -40,7 +40,7 @@ ms.locfileid: "50741577"
 >
 > - メッセージ 追跡を行うには、組織の管理、コンプライアンス管理、またはヘルプ デスクの役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 >
-> - 結果に表示されるメッセージの最大数は、選択したレポートの種類によって異なります (詳細については、「レポートの種類の選択 [」セクションを](#choose-report-type) 参照してください)。 Exchange Online PowerShell またはスタンドアロン EOP PowerShell の [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) コマンドレットは、結果のすべてのメッセージを返します。
+> - 結果に表示されるメッセージの最大数は、選択したレポートの種類によって異なります (詳細については、「レポートの種類の選択 [」セクションを](#choose-report-type) 参照してください)。 Exchange Online PowerShell またはスタンドアロン EOP PowerShell の [Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) コマンドレットは、結果のすべてのメッセージを返します。
 
 ## <a name="open-message-trace"></a>メッセージのトレースを開く
 
@@ -231,7 +231,7 @@ ms.locfileid: "50741577"
   > 
   > - 正常に配信された不当なメッセージは、メッセージ トレースに複数の **イベント** エントリを生成します。
   > 
-  > - このリストは、網羅的なことを意図した場合ではありません。 その他のイベントの詳細については、「 [メッセージ追跡ログのイベントの種類」を参照してください](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 このリンクは、Exchange Server (オンプレミス Exchange) トピックです。
+  > - このリストは、網羅的なことを意図した場合ではありません。 その他のイベントの詳細については、「 [メッセージ追跡ログのイベントの種類」を参照してください](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 このリンクは、Exchange Server (オンプレミス Exchange) トピックです。
 
 - **詳細:** このセクションには、次の詳細が含まれます。
 
@@ -251,7 +251,7 @@ ms.locfileid: "50741577"
 
 - **sender_address**: 送信者の電子メール アドレス (エイリアス @ *ドメイン*)。
 
-- **Recipient_status**: 受信者へのメッセージの配信の状態。 メッセージが複数の受信者に送信された場合は、すべての受信者とそれぞれの対応する状態が形式で表示されます \<*email address*\> ## \<*status*\> 。 以下に例を示します。
+- **Recipient_status**: 受信者へのメッセージの配信の状態。 メッセージが複数の受信者に送信された場合は、すべての受信者とそれぞれの対応する状態が形式で表示されます \<*email address*\> ## \<*status*\> 。 次に例を示します。
 
   - **##Receive Send** は、メッセージがサービスによって受信され、目的の宛先に送信されたという意味です。
 
@@ -271,7 +271,7 @@ ms.locfileid: "50741577"
 
 - **方向性**: メッセージが受信 (1) を組織に送信されたかどうか、または送信 (2) が組織から送信されたかどうかを示します。
 
-- **connector_id**: 送信元コネクタまたは宛先コネクタの名前。 Exchange Online のコネクタの詳細については、「Configure mail flow using connectors in Office [365」を参照してください](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
+- **connector_id**: 送信元コネクタまたは宛先コネクタの名前。 Exchange Online のコネクタの詳細については、「Configure mail flow using connectors in Office [365」を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 
 - **delivery_priority**: メッセージが高、低、または標準の優先度 <sup>*</sup> で **送信されたかどうか**。  
 
@@ -289,13 +289,13 @@ ms.locfileid: "50741577"
 
 - **server_hostname**: 宛先サーバーのホスト名または FQDN。
 
-- **source_context**: ソース フィールドに関連付けられた追加 **の** 情報。 以下に例を示します。
+- **source_context**: ソース フィールドに関連付けられた追加 **の** 情報。 次に例を示します。
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **source**: イベントを担当する Exchange Online コンポーネント。 以下に例を示します。
+- **source**: イベントを担当する Exchange Online コンポーネント。 次に例を示します。
 
   - `AGENT`
 
@@ -313,7 +313,7 @@ ms.locfileid: "50741577"
 
 - **related_recipient_address**: メッセージに関連付けられている他の受信者の電子メール アドレスを表示するイベントと一緒 `EXPAND` `REDIRECT` `RESOLVE` に使用します。
 
-- **reference**: このフィールドには、特定の種類のイベントに関する追加情報が含まれる。 以下に例を示します。
+- **reference**: このフィールドには、特定の種類のイベントに関する追加情報が含まれる。 次に例を示します。
 
   - **DSN**: このイベントの後に DSN が生成される場合、関連付けられた配信状態通知 (DSN、配信不可レポート、NDR、バウンス メッセージとも呼ばれる) の **message_id** 値であるレポート リンクが含まれる。 これが DSN メッセージの場合、このフィールドには、DSN **が** message_id元のメッセージの値を格納します。
 
@@ -331,7 +331,7 @@ ms.locfileid: "50741577"
 
 - **return_path**: メッセージを送信した **MAIL FROM** コマンドで指定された戻りメール アドレス。 このフィールドは空ではありませんが、null 送信者アドレスの値をとして表す場合があります `<>` 。
 
-- **message_info**: メッセージに関する追加情報。 以下に例を示します。
+- **message_info**: メッセージに関する追加情報。 次に例を示します。
 
   - UTC でのメッセージの配信日時とイベント `DELIVER` `SEND` 。 配信日時は、メッセージが最初に Exchange Online 組織に入った時刻です。 UTC の日付時刻は、ISO 8601 の日付時刻形式で表されます。ここで、 = 年、= 月、= 日は、時刻コンポーネントの先頭を示し `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` `hh` 、= 時間 `mm` 、= `ss` `fff` `Z` `Zulu` 分、= 秒、秒の分数を表し、UTC を表すもう 1 つの方法です。
 
@@ -413,7 +413,7 @@ ms.locfileid: "50741577"
 |---|---|
 |`ETR|ruleId=<guid>`|一致したルールの ID。|
 |`St=<datetime>`|ルールの一致が発生した UTC の日付と時刻。|
-|`Action=<ActionDefinition>`|適用されたアクション。 使用可能なアクションの一覧については [、「Exchange Online のメール フロー ルールアクション」を参照してください](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
+|`Action=<ActionDefinition>`|適用されたアクション。 使用可能なアクションの一覧については [、「Exchange Online のメール フロー ルールアクション」を参照してください](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |`Mode=<Mode>`|ルールのモード。 有効な値は次のとおりです。<ul><li>**[適用**]: ルールのすべてのアクションが適用されます。</li><li>**ポリシー ヒントを使用してテストする:** ポリシー ヒントのアクションは送信されますが、その他の強制アクションは実行されません。</li><li>**ポリシー ヒントなしのテスト**: アクションはログ ファイルに一覧表示されますが、送信者には通知されません。強制アクションは実行されません。</li></ul>|
 |
 

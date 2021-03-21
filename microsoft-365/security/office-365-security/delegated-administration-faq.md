@@ -15,12 +15,12 @@ ms.custom:
 description: 管理者は、Microsoft パートナーおよびリセラー向け Microsoft 365 で委任された管理タスクに関するよく寄せられる質問と回答を表示できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 304fbba16d6c8e81e965462e3405824bd22982c9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 82fa70a8025f67610032ba59368bc74789b60f84
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405938"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929374"
 ---
 # <a name="delegated-administration-faq"></a>代理管理に関する FAQ
 
@@ -53,4 +53,4 @@ Microsoft パートナーまたはリセラーで、Microsoft アドバイザー
 
 ## <a name="can-i-get-consolidated-reporting-across-all-of-my-subtenants"></a>すべてのサブテナ間で統合レポートを取得できますか?
 
-管理する会社全体の統合レポートは、Microsoft 365 管理センター レポートでは利用できません。 ただし、Microsoft Graph を使用してレポートを [取得できます](https://docs.microsoft.com/graph/overview)。
+管理する会社全体の統合レポートは、Microsoft 365 管理センター レポートでは利用できません。 ただし、Microsoft Graph を使用してレポートを [取得できます](/graph/overview)。

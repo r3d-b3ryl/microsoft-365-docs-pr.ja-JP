@@ -1,5 +1,5 @@
 ---
-title: ユーザーライセンスの割り当て中に Microsoft 365 サービスへのアクセスを無効にする
+title: ユーザー ライセンスの割り当て中に Microsoft 365 サービスへのアクセスを無効にする
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,36 +17,36 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: Microsoft 365 で PowerShell を使用して、ユーザーアカウントにライセンスを割り当て、特定のサービスプランを無効にする方法について説明します。
-ms.openlocfilehash: b027c805638284a78d4e49f4c65518be02e60392
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: PowerShell for Microsoft 365 を使用して、ユーザー アカウントにライセンスを割り当て、特定のサービス プランを同時に無効にする方法について説明します。
+ms.openlocfilehash: 7486968f6f4822047a1697ee1e05129277fd11a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691842"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929434"
 ---
-# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>ユーザーライセンスの割り当て中に Microsoft 365 サービスへのアクセスを無効にする
+# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>ユーザー ライセンスの割り当て中に Microsoft 365 サービスへのアクセスを無効にする
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 サブスクリプションには、個々のサービスのサービスプランが付属しています。 Microsoft 365 管理者は、ユーザーにライセンスを割り当てるときに、特定のプランを無効にする必要があります。 この記事の手順に従って、個々のユーザーアカウントまたは複数のユーザーアカウントに対して PowerShell を使用して特定のサービスプランを無効にしながら、Microsoft 365 ライセンスを割り当てることができます。
+Microsoft 365 サブスクリプションには、個々のサービスのサービス プランが用意されています。 Microsoft 365 管理者は、多くの場合、ユーザーにライセンスを割り当てるときに特定のプランを無効にする必要があります。 この記事の手順では、Microsoft 365 ライセンスを割り当てながら、個々のユーザー アカウントまたは複数のユーザー アカウントに PowerShell を使用して特定のサービス プランを無効にできます。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 
-次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。
+次に、このコマンドを使用してテナントのライセンス プランを一覧表示します。
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-次に、ユーザープリンシパル名 (UPN) とも呼ばれるライセンスを追加するアカウントのサインイン名を取得します。
+次に、ライセンスを追加するアカウントのサインイン名 (ユーザー プリンシパル名 (UPN) とも呼ばれる) を取得します。
 
-次に、有効にするサービスの一覧をコンパイルします。 ライセンスプランの完全な一覧 (製品名とも呼ばれます)、含まれるサービスプラン、およびそれに対応するフレンドリ名については、「 [ライセンスの製品名とサービスプラン識別子](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)」を参照してください。
+次に、有効にするサービスの一覧をコンパイルします。 ライセンス プラン (製品名とも呼ばれる) の完全な一覧、付属のサービス プラン、対応する表示名については、「ライセンスの製品名とサービス プラン識別子」を [参照してください](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
-次のコマンドブロックの場合は、ユーザーアカウントのユーザープリンシパル名、SKU パーツ番号、およびサービスプランのリストを入力して、説明テキストと文字を有効にし、削除し \< and > ます。 次に、完成したコマンドを PowerShell コマンド プロンプトで実行します。
+以下のコマンド ブロックで、ユーザー アカウントのユーザー プリンシパル名、SKU パーツ番号、およびサービス プランの一覧を入力して、説明テキストと文字を有効にして削除 \< and > します。 次に、完成したコマンドを PowerShell コマンド プロンプトで実行します。
   
 ```powershell
 $userUPN="<user account UPN>"
@@ -67,9 +67,9 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-次に、このコマンドを実行して現在のサブスクリプションを表示します。
+次に、このコマンドを実行して現在のサブスクリプションを確認します。
   
 ```powershell
 Get-MsolAccountSku
@@ -81,7 +81,7 @@ Get-MsolAccountSku
 
 `Get-MsolAccountSku` コマンドの出力に関して次に説明します。
   
-- **AccountSkuId** は、組織のサブスクリプションの \<OrganizationName> \<Subscription> 形式です。 \<OrganizationName>は、Microsoft 365 に登録したときに指定した値で、組織に固有のものです。 この \<Subscription> 値は、特定のサブスクリプションのためのものです。 たとえば、litwareinc: ENTERPRISEPACK の場合、組織名は litwareinc で、サブスクリプション名は ENTERPRISEPACK (Office 365 Enterprise E3) になります。
+- **AccountSkuId** は、次の形式で組織 \<OrganizationName> のサブスクリプション \<Subscription> です。 これは、Microsoft 365 に登録するときに指定した値であり、組織 \<OrganizationName> に固有の値です。 値 \<Subscription> は、特定のサブスクリプションの値です。 たとえば、litwareinc:ENTERPRISEPACK の場合、組織名は litwareinc、サブスクリプション名は ENTERPRISEPACK (Office 365 Enterprise E3) です。
     
 - **ActiveUnits** は、サブスクリプションで購入したライセンス数です。
     
@@ -89,9 +89,9 @@ Get-MsolAccountSku
     
 - **ConsumedUnits** は、このサブスクリプションでユーザーに割り当てたライセンスの数です。
     
-ライセンスを付与するユーザーを含む Microsoft 365 サブスクリプションの AccountSkuId に注意してください。 また、割り当てに十分なライセンスがあることを確認してください ( **Activeunits**から**ConsumedUnits**を差し引く)。
+ライセンスを取得するユーザーを含む Microsoft 365 サブスクリプションの AccountSkuId に注意してください。 また、割り当てるのに十分なライセンスが存在する **(ActiveUnits から ConsumedUnits** を減算する) **必要があります** 。
   
-次に、次のコマンドを実行して、すべてのサブスクリプションで利用可能な Microsoft 365 サービスプランの詳細を確認します。
+次に、このコマンドを実行して、すべてのサブスクリプションで利用可能な Microsoft 365 サービス プランの詳細を確認します。
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -99,9 +99,9 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 このコマンドの出力に基づいて、ユーザーにライセンスを割り当てるときに無効にするサービス プランを判別します。
   
-ここでは、サービスプランと、それに対応する Microsoft 365 サービスの一部を示します。
+サービス プランとそれに対応する Microsoft 365 サービスの一部を次に示します。
 
-次の表に、最も一般的なサービスの Microsoft 365 サービスプランとそのフレンドリ名を示します。 実際のサービス プランの一覧とは、異なる場合があります。 
+次の表に、最も一般的なサービスの Microsoft 365 サービス プランとその親しみ名を示します。 実際のサービス プランの一覧とは、異なる場合があります。 
   
 |**サービス プラン**|**説明**|
 |:-----|:-----|
@@ -109,19 +109,19 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 enterprise 用アプリ *(旧称 Office 365 ProPlus)*  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise (以前は Office *365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
    
-ライセンスプランの完全な一覧 (製品名とも呼ばれます)、含まれるサービスプラン、およびそれに対応するフレンドリ名については、「 [ライセンスの製品名とサービスプラン識別子](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)」を参照してください。
+ライセンス プラン (製品名とも呼ばれる) の完全な一覧、付属のサービス プラン、対応する表示名については、「ライセンスの製品名とサービス プラン識別子」を [参照してください](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
    
 この時点で、AccountSkuId と無効にするサービス プランが決まったため、1 ユーザーまたは複数ユーザーにライセンスを割り当てることができます。
   
 ### <a name="for-a-single-user"></a>単一ユーザーの場合
 
-単一のユーザーの場合は、ユーザーアカウントのユーザープリンシパル名、AccountSkuId、およびサービスプランのリストを入力して、説明テキストと文字を無効にし、削除し \< and > ます。 次に、完成したコマンドを PowerShell コマンド プロンプトで実行します。
+1 人のユーザーの場合は、ユーザー アカウントのユーザー プリンシパル名、AccountSkuId、およびサービス プランの一覧を入力して、説明テキストと文字を無効にして削除 \< and > します。 次に、完成したコマンドを PowerShell コマンド プロンプトで実行します。
   
 ```powershell
 $userUPN="<the user's account name in email format>"
