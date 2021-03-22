@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Standard のプロダクトキーを入力する
+title: Microsoft 365 Business Standard のプロダクト キーを入力する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,52 +17,52 @@ ms.collection:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: 小売店で購入した Microsoft 365 Business Standard プロダクトキーを償還する方法について説明します。
+description: 小売店で購入した Microsoft 365 Busines sStandard のプロダクト キーを利用する方法を学びます。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
 ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/14/2020
 ms.locfileid: "49072749"
 ---
-# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクトキーを入力する
+# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 
-小売り店から Microsoft 365 Business Standard を購入した場合、この記事はサブスクリプションのライセンス認証に役立てることができます。
+小売店から Microsoft 365 Business Standard を購入した場合、この記事はサブスクリプションのライセンス認証を行うのに役立ちます。
   
- **他に何か必要ですか?**
- **Microsoft 365 ファミリまたは microsoft 365 Personal のヘルプについては** 、「 [Office でプロダクトキーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。  
- **ボリュームライセンスのお客様の場合** Microsoft [Open License プログラム](https://go.microsoft.com/fwlink/p/?LinkID=613298)を使用して microsoft 365 for business を購入した場合は、「 [microsoft open から購入したプロダクトキーを入力](purchases-from-microsoft-open.md)してください」という記事を参照してください。
+ **他のヘルプが必要な場合**
+ **Microsoft 365 Family または Microsoft 365 Personal** のヘルプについては、「[Office でのプロダクト キーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。  
+ **ボリューム ライセンスをお持ちの場合** [Microsoft Open ライセンス プログラム](https://go.microsoft.com/fwlink/p/?LinkID=613298)を通じて Microsoft 365 for Businessを 購入した場合は、「[Microsoft Open から購入したプロダクト キーを入力する](purchases-from-microsoft-open.md)」の記事を参照してください。
   
 ## <a name="activate-a-new-subscription"></a>新しいサブスクリプションのライセンス認証
 
 1. <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a> に移動します。
 
-2. プロダクトキーを入力し、[ **次へ** ] を選択します。
+2. プロダクト キーを入力し、[**次へ**] を選択します。
 
-3. 名前、勤務先のメールアドレス、会社の電話番号、会社名、国または地域を入力し、[ **次へ** ] を選択します。
+3. 名前、ビジネス メール アドレス、勤務先の電話番号、会社名、国または地域を入力し、[**次へ**] を選択します。
 
-4. 電話番号を入力して、id を確認するためのテキストまたは呼び出しを受信します。
+4. 本人確認のため、テキスト メッセージを受信したり通話したりする電話番号を入力します。
 
-5. 新しいドメインを取得するか、既に所有しているドメイン名を使用するか、または後でドメインを追加することができます。 この手順はさまざまな場合があるため、どちらのオプションを選択するかに応じて、プロンプトに従ってください。
+5. 新しいドメインを取得したり、既に所有しているドメイン名を使用したり、後でドメインを追加したりすることができます。 選択したオプションにより手順が異なる場合がありますが、画面の指示に従います。
 
     > [!NOTE]
-    > サブスクリプションがその用語の最後に自動的に拡張されるようにするには、クレジットカードを追加してから、そのサブスクリプションに対して [定期的な課金を有効](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) にします。
+    > サブスクリプションが期間の終了時に自動的に延長されることを確認したい場合は、クレジット カードまたは銀行口座を追加してから、そのサブスクリプションの[定期的な請求をオンにする](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)ことができます。
 
-6. 完了したら、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a> に移動してサブスクリプションを管理します。
+6. 完了したら、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>に移動し、サブスクリプションを管理します。
 
-## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>有効期限を延長するか、既存のサブスクリプションにライセンスを追加する
+## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>有効期限を延長するか、既存のサブスクリプションにライセンスを追加します
 
-有効期限を延長したり、既存の Microsoft 365 Business Standard サブスクリプションにライセンスを追加したりするには、同じ Microsoft 365 プランに新しい未使用のキーを使用してください。 既に引き換え済みのキーを再度使用することはできないため、元の Microsoft 365 プロダクトキーを入力しても機能しません。 [プロダクトキーを使用して、有料のサブスクリプションにライセンスを追加または拡張する](licenses/add-licenses-using-product-key.md)を参照してください。
+有効期限を延長したり、既存の Microsoft 365 Business Standard サブスクリプションにライセンスを追加したりするには、同じ Microsoft 365 プランの新しい未使用のキーを使用します。 以前使用したキーの再利用はできないため、元の Microsoft 365 プロダクト キーを入力することはできません。 「[プロダクト キーを使用するための有料のサブスクリプションにライセンスを追加するか、サブスクリプションを延長する](licenses/add-licenses-using-product-key.md)」を参照してください。
 
 ## <a name="whats-next"></a>次の手順
 
-Microsoft 365 for business を初めて使用する場合は、 [microsoft 365](../admin/setup/setup.md)をセットアップする方法について説明しています。
+Microsoft 365 for Business を初めて使用する場合は、[Microsoft 365 のセットアップ](../admin/setup/setup.md)方法を学習してください。
   
-## <a name="still-having-trouble-with-product-keys"></a>プロダクトキーの問題が解決しない場合
+## <a name="still-having-trouble-with-product-keys"></a>プロダクト キーの問題が解決しない場合
 
-一般的なエラーと解決策の一覧については[、「Microsoft 365 for business プロダクトキーに関する問題](product-key-errors-and-solutions.md)」を参照してください。
+一般的なエラーと解決策の一覧については、「[一般法人向け Microsoft 365 プロダクト キーの問題](product-key-errors-and-solutions.md)」を参照してください。
   
 または、[Microsoft サポートにお電話ください](../admin/contact-support-for-business-products.md)。
