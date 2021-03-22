@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva トピックの概要。
-ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917382"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453971"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva トピックの概要 
 
@@ -45,7 +45,7 @@ SharePoint ニュースやページのコンテンツでトピックがメンシ
 
 ## <a name="knowledge-indexing"></a>知識のインデックス化
 
-Viva トピックは、マイクロソフトの AI 技術を用いて、Microsoft 365 環境の **トピック** を特定します。
+Viva トピックは、Microsoft の AI 技術を用いて、Microsoft 365 環境の **トピック** を特定します。
 
 トピックとは、組織的に重要な意味を持つフレーズや用語のことです。 組織にとって特定の意味を持ち、それに関連したリソースがあり、ユーザーがその意味を理解し、それに関する詳細な情報を見つけるのに役立ちます。 組織にとって重要なトピックには、さまざまな種類があります。 当初、Microsoft の AI 技術は以下のタイプに焦点を当てています。
 - プロジェクト
@@ -66,7 +66,7 @@ Viva トピックは、マイクロソフトの AI 技術を用いて、Microsof
 
 知識管理者は、テナント内のすべての SharePoint サイトをクロールしてトピックを探すことも、特定のサイトだけを選択することもできます。
 
-[トピックの検出とキュレーション](./topic-experiences-discovery-curation.md)を参照してください。
+[トピックの検出とキュレーション](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)を参照してください。
 
 ## <a name="roles"></a>ロール
 
@@ -108,7 +108,7 @@ Microsoft 365 管理センターの管理制御により、知識ネットワー
 - トピックを作成し編集できるユーザーを制御します。
 - トピックを閲覧できるユーザーを制御します。
 
-管理制御の詳細については、「[ユーザーのアクセス許可を割り当てる](./plan-topic-experiences.md#user-permissions)」、「[トピック表示を管理する](./topic-experiences-knowledge-rules.md)」、「[トピック検出を管理する](./topic-experiences-discovery.md)」などの情報を参照してください。
+管理制御の詳細については、「[ユーザーのアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)」、「[トピック表示を管理する](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)」、「[トピック検出を管理する](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery)」などの情報を参照してください。
 
 ## <a name="topic-curation--feedback"></a>トピックのキュレーションとフィードバック
 
@@ -120,7 +120,8 @@ AI は、お客様の環境の変化に合わせて、トピックを改善す�
 
 さらに、適切なアクセス許可を持つユーザーは、トピックに関連する Yammer の会話などのアイテムにタグを付け、特定のトピックに追加することができます。 
 
-[トピックの検出とキュレーション](./topic-experiences-discovery-curation.md)を参照してください。
+[トピックの検出とキュレーション](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)を参照してください。
 
 
 ## <a name="see-also"></a>関連項目
+
