@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: 857f8118bb2cc0f94065a8b8696c92bd3ae05cc4
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 4f07732e403d711e2fa89bfb7c61c9eadfb2bd0b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461852"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926185"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 すべての種類の組織では、企業データ全体にわたって規制、法務およびビジネスに不可欠なレコードを管理するためにレコード管理ソリューションが必要です。 Microsoft 365 のレコード管理は、組織が法的義務を管理できるようにし、規制の遵守を実証する機能を提供します。これにより、ビジネス上、保持する必要がなくなった、価値がなくなった、または不要になったアイテムを定期的に処分することができて効率が向上します。
 
@@ -94,9 +94,7 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 
 <sup>1</sup> セキュリティ保護された場所にコピーを保持することによって、OneDrive と Exchange ではサポートされますが、SharePoint ではブロックされます。
 
-ユーザーが SharePoint のラベル付きドキュメントを削除しようとしたときに表示されるメッセージは、次のとおりです。
-
-![SharePoint の「アイテムが削除されませんでした」というメッセージ](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+ドキュメントが添付されているリスト アイテムに保持ラベルを適用する場合、そのドキュメントは保持設定を継承せず、リスト アイテムから削除されます。 対照的に、そのリスト アイテムが保持ラベル付きのレコードとして宣言された場合、ドキュメントの添付ファイルは保持設定を継承し、削除されません。 
 
 <sup>2</sup> コンテナーには、SharePoint ドキュメント ライブラリ、OneDrive アカウントと Exchange メールボックスが含まれます。
 

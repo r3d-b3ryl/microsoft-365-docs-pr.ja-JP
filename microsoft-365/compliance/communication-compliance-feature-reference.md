@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 48cc75276e4e3791fa16520df5a4c392c23a0cd5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 298300de8581d3eea185f05b92bb69cb6e7a69eb
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919913"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034206"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信コンプライアンス機能リファレンス
 
@@ -237,7 +237,7 @@ OCR が有効になっているポリシーの保留中のアラートを確認�
 コンマで入力して区切る各単語は個別に適用されます (メールまたは添付ファイルに適用するポリシー条件には、1 つの単語のみを適用する必要があります)。 たとえば、条件を使用します **。Message** には、"banker"、"confidential"、"insider trading" というキーワードがコンマ (銀行家、機密情報、"インサイダー取引") で区切られた、これらの単語が含まれるものとします。 ポリシーは、"banker"、"confidential"、または "insider trading" という語句を含むすべてのメッセージに適用されます。 このポリシー条件を適用するには、これらの単語または語句の 1 つのみを実行する必要があります。 メッセージまたは添付ファイル内の単語は、入力した単語と完全に一致している必要があります。
 
 >[!IMPORTANT]
->ユーザー辞書ファイルをインポートする場合、各単語または語句はキャリッジ リターンと個別の行で区切る必要があります。 <br> 次に例を示します。 <br><br>
+>ユーザー辞書ファイルをインポートする場合、各単語または語句はキャリッジ リターンと個別の行で区切る必要があります。 <br> 例として以下のようなものがあります。 <br><br>
 >*banker* <br>
 >*confidential* <br>
 >*インサイダー取引*
@@ -526,6 +526,21 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
 ```
+
+通信コンプライアンス ポリシーの一致は、各ポリシーの監督メールボックスに格納されます。 場合によっては、監視メールボックスのサイズを確認して、現在の 50 GB の制限に近づいていなかっている必要がある場合があります。 メールボックスの制限に達した場合、ポリシーの一致はキャプチャされません。同じアクティビティの一致を引き続きキャプチャするには、新しいポリシー (同じ設定) を作成する必要があります。
+
+ポリシーの監督メールボックスのサイズを確認するには、次の手順を実行します。
+
+1. 最新の認証を使用して Exchange Online PowerShell に接続するには、Exchange Online PowerShell V2 モジュールの [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) コマンドレットを使用します。
+2. PowerShell で次のコマンドを実行します。
+
+    ```PowerShell
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    {
+       "<Name of your communication compliance policy>: " + $p.Name
+       Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize
+    }
+    ```
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>365 の監督からのOffice
 

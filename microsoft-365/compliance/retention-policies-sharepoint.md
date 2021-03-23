@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: dd1260df23579ad2e6605805bafe9e36d2274a8e
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 448f3e8e2ab827527b02263fea2b07de4b345dc1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727402"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919773"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
->*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 この記事の情報は[保持の詳細](retention.md)に関する記事を補足するもので、SharePoint と OneDrive に固有の情報が含まれています。
 
@@ -49,7 +49,11 @@ SharePoint または OneDrive サイトに保存されているすべてのフ�
 > [!TIP]
 > [保持ラベル用の自動適用ポリシーを使用したクエリ](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties) を使用する場合、次のエントリを使用して特定のドキュメント ライブラリを除外することができます。`NOT(DocumentLink:"<URL to document library>")`
 
-リスト アイテムはアイテム保持ポリシーではサポートされていませんが、システム リストの項目を除き、保持ラベルではサポートされています。 これらは、SharePoint によってシステムの管理やマスター ページ カタログ、ソリューション カタログ、データ ソースの追加に使用される非表示リストです。
+リスト アイテムはアイテム保持ポリシーではサポートされていませんが、システム リストの項目を除き、保持ラベルではサポートされています。 これらは、SharePoint によってシステムの管理やマスター ページ カタログ、ソリューション カタログ、データ ソースの追加に使用される非表示リストです。 ドキュメントが添付されているサポートされるリスト アイテムに保持ラベルを適用する場合:
+- 標準の保持ラベルの場合 (アイテムがレコードとして宣言されていない):
+    - ドキュメントの添付ファイルは、ラベルの保持設定を自動的に継承しませんが、個別にラベルを付けることができます。
+- アイテムをレコードとして宣言する保持ラベルの場合: 
+    - ドキュメントにまだラベルが付けられていない場合、ドキュメントの添付ファイルはラベルから保持設定を自動的に継承します。
 
 アイテム保持ポリシーと保持ラベルの両方のアイテム保持設定は、ライブラリ、リスト、およびフォルダーを含む組織構造には適用されません。
 
