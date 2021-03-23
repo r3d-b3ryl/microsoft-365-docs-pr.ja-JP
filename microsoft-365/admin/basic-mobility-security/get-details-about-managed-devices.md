@@ -96,7 +96,7 @@ ms.locfileid: "50904254"
 
 2. <span data-ttu-id="9887c-147">次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="9887c-147">Run the following command.</span></span>
 
-    <span data-ttu-id="9887c-148">Get-MsolDevice -All -ReturnRegisteredOwners |Where-Object {$_.RegisteredOwners.Count -gt 0}</span><span class="sxs-lookup"><span data-stu-id="9887c-148">Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}</span></span>
+    <span data-ttu-id="9887c-148">Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}</span><span class="sxs-lookup"><span data-stu-id="9887c-148">Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}</span></span>
 
 <span data-ttu-id="9887c-149">その他の例については  [、「Get-MsolDevice」を参照してください](https://go.microsoft.com/fwlink/?linkid=2157939)。</span><span class="sxs-lookup"><span data-stu-id="9887c-149">For more examples, see  [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939).</span></span>
 
