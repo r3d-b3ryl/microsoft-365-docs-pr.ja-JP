@@ -106,161 +106,161 @@ ms.locfileid: "50904254"
 
 1. <span data-ttu-id="9887c-152">次のテキストをコピーしてメモ帳に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="9887c-152">Copy and paste the following text into Notepad.</span></span>  
 
-2.  <span data-ttu-id="9887c-153">param (</span><span class="sxs-lookup"><span data-stu-id="9887c-153">param (</span></span>
+2.  param (
 
-3.  <span data-ttu-id="9887c-154">[PSObject[]]$users = @(),</span><span class="sxs-lookup"><span data-stu-id="9887c-154">[PSObject[]]$users = @(),</span></span>
+3.  [PSObject[]]$users = @(),
 
-4.  <span data-ttu-id="9887c-155">[Switch]$export,</span><span class="sxs-lookup"><span data-stu-id="9887c-155">[Switch]$export,</span></span>
+4.  [Switch]$export,
 
-5.  <span data-ttu-id="9887c-156">[String]$exportFileName = "UserDeviceComplianceStatus_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",</span><span class="sxs-lookup"><span data-stu-id="9887c-156">[String]$exportFileName = "UserDeviceComplianceStatus_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",</span></span>
+5.  [String]$exportFileName = "UserDeviceComplianceStatus_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",
 
-6.  <span data-ttu-id="9887c-157">[String]$exportPath = [環境]::GetFolderPath("Desktop")</span><span class="sxs-lookup"><span data-stu-id="9887c-157">[String]$exportPath = [Environment]::GetFolderPath("Desktop")</span></span>
+6.  [String]$exportPath = [Environment]::GetFolderPath("Desktop")
 
-7.  <span data-ttu-id="9887c-158">)</span><span class="sxs-lookup"><span data-stu-id="9887c-158">)</span></span>
+7.  )
 
-9.  <span data-ttu-id="9887c-159">[System.Collections.IDictionary]$script:schema = @{</span><span class="sxs-lookup"><span data-stu-id="9887c-159">[System.Collections.IDictionary]$script:schema = @{</span></span>
+9.  [System.Collections.IDictionary]$script:schema = @{
 
-11.  <span data-ttu-id="9887c-160">DeviceId = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-160">DeviceId = ''</span></span>
+11.  DeviceId = ''
 
-12.  <span data-ttu-id="9887c-161">DeviceOSType = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-161">DeviceOSType = ''</span></span>
+12.  DeviceOSType = ''
 
-13.  <span data-ttu-id="9887c-162">DeviceOSVersion = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-162">DeviceOSVersion = ''</span></span>
+13.  DeviceOSVersion = ''
 
-14.  <span data-ttu-id="9887c-163">DeviceTrustLevel = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-163">DeviceTrustLevel = ''</span></span>
+14.  DeviceTrustLevel = ''
 
-15.  <span data-ttu-id="9887c-164">DisplayName = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-164">DisplayName = ''</span></span>
+15.  DisplayName = ''
 
-16.  <span data-ttu-id="9887c-165">IsCompliant = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-165">IsCompliant = ''</span></span>
+16.  IsCompliant = ''
 
-17.  <span data-ttu-id="9887c-166">IsManaged = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-166">IsManaged = ''</span></span>
+17.  IsManaged = ''
 
-18.  <span data-ttu-id="9887c-167">ApproximateLastLogonTimestamp = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-167">ApproximateLastLogonTimestamp = ''</span></span>
+18.  ApproximateLastLogonTimestamp = ''
 
-19.  <span data-ttu-id="9887c-168">DeviceObjectId = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-168">DeviceObjectId = ''</span></span>
+19.  DeviceObjectId = ''
 
-20.  <span data-ttu-id="9887c-169">RegisteredOwnerUpn = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-169">RegisteredOwnerUpn = ''</span></span>
+20.  RegisteredOwnerUpn = ''
 
-21.  <span data-ttu-id="9887c-170">RegisteredOwnerObjectId = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-170">RegisteredOwnerObjectId = ''</span></span>
+21.  RegisteredOwnerObjectId = ''
     
 
-22.  <span data-ttu-id="9887c-171">RegisteredOwnerDisplayName = ''</span><span class="sxs-lookup"><span data-stu-id="9887c-171">RegisteredOwnerDisplayName = ''</span></span>
+22.  RegisteredOwnerDisplayName = ''
     
 
-23.  <span data-ttu-id="9887c-172">}</span><span class="sxs-lookup"><span data-stu-id="9887c-172">}</span></span>
+23.  }
     
 
-25.  <span data-ttu-id="9887c-173">関数 createResultObject</span><span class="sxs-lookup"><span data-stu-id="9887c-173">function createResultObject</span></span>
+25.  function createResultObject
     
 
-26.  <span data-ttu-id="9887c-174">{</span><span class="sxs-lookup"><span data-stu-id="9887c-174">{</span></span>
+26.  {
     
 
-28.  <span data-ttu-id="9887c-175">[PSObject]$resultObject = New-Object -TypeName PSObject -Property $script:schema</span><span class="sxs-lookup"><span data-stu-id="9887c-175">[PSObject]$resultObject = New-Object -TypeName PSObject -Property $script:schema</span></span>
+28.  [PSObject]$resultObject = New-Object -TypeName PSObject -Property $script:schema
     
 
-30.  <span data-ttu-id="9887c-176">戻り$resultObject</span><span class="sxs-lookup"><span data-stu-id="9887c-176">return $resultObject</span></span>
+30.  return $resultObject
     
 
-31.  <span data-ttu-id="9887c-177">}</span><span class="sxs-lookup"><span data-stu-id="9887c-177">}</span></span>
+31.  }
     
 
-33.  <span data-ttu-id="9887c-178">If ($users.Count -eq 0)</span><span class="sxs-lookup"><span data-stu-id="9887c-178">If ($users.Count -eq 0)</span></span>
+33.  If ($users.Count -eq 0)
     
 
-34.  <span data-ttu-id="9887c-179">{</span><span class="sxs-lookup"><span data-stu-id="9887c-179">{</span></span>
+34.  {
     
 
-35.  <span data-ttu-id="9887c-180">$users = Get-MsolUser</span><span class="sxs-lookup"><span data-stu-id="9887c-180">$users = Get-MsolUser</span></span>
+35.  $users = Get-MsolUser
     
 
-36.  <span data-ttu-id="9887c-181">}</span><span class="sxs-lookup"><span data-stu-id="9887c-181">}</span></span>
+36.  }
     
 
-38.  <span data-ttu-id="9887c-182">[PSObject[]] $result = foreach ($u $users)</span><span class="sxs-lookup"><span data-stu-id="9887c-182">[PSObject[]]$result = foreach ($u in $users)</span></span>
+38.  [PSObject[]]$result = foreach ($u in $users)
     
 
-39.  <span data-ttu-id="9887c-183">{</span><span class="sxs-lookup"><span data-stu-id="9887c-183">{</span></span>
+39.  {
     
 
-41.  <span data-ttu-id="9887c-184">[PSObject]$devices = get-msoldevice -RegisteredOwnerUpn $u.UserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="9887c-184">[PSObject]$devices = get-msoldevice -RegisteredOwnerUpn $u.UserPrincipalName</span></span>
+41.  [PSObject]$devices = get-msoldevice -RegisteredOwnerUpn $u.UserPrincipalName
     
 
-42.  <span data-ttu-id="9887c-185">foreach ($dの$devices)</span><span class="sxs-lookup"><span data-stu-id="9887c-185">foreach ($d in $devices)</span></span>
+42.  foreach ($d in $devices)
     
 
-43.  <span data-ttu-id="9887c-186">{</span><span class="sxs-lookup"><span data-stu-id="9887c-186">{</span></span>
+43.  {
     
 
-44.  <span data-ttu-id="9887c-187">[PSObject]$deviceResult = createResultObject</span><span class="sxs-lookup"><span data-stu-id="9887c-187">[PSObject]$deviceResult = createResultObject</span></span>
+44.  [PSObject]$deviceResult = createResultObject
     
 
-45.  <span data-ttu-id="9887c-188">$deviceResult.DeviceId = $d.DeviceId</span><span class="sxs-lookup"><span data-stu-id="9887c-188">$deviceResult.DeviceId = $d.DeviceId</span></span>
+45.  $deviceResult.DeviceId = $d.DeviceId
     
 
-46.  <span data-ttu-id="9887c-189">$deviceResult.DeviceOSType = $d.DeviceOSType</span><span class="sxs-lookup"><span data-stu-id="9887c-189">$deviceResult.DeviceOSType = $d.DeviceOSType</span></span>
+46.  $deviceResult.DeviceOSType = $d.DeviceOSType
     
 
-47.  <span data-ttu-id="9887c-190">$deviceResult.DeviceOSVersion = $d.DeviceOSVersion</span><span class="sxs-lookup"><span data-stu-id="9887c-190">$deviceResult.DeviceOSVersion = $d.DeviceOSVersion</span></span>
+47.  $deviceResult.DeviceOSVersion = $d.DeviceOSVersion
     
 
-48.  <span data-ttu-id="9887c-191">$deviceResult.DeviceTrustLevel = $d.DeviceTrustLevel</span><span class="sxs-lookup"><span data-stu-id="9887c-191">$deviceResult.DeviceTrustLevel = $d.DeviceTrustLevel</span></span>
+48.  $deviceResult.DeviceTrustLevel = $d.DeviceTrustLevel
     
 
-49.  <span data-ttu-id="9887c-192">$deviceResult.DisplayName = $d.DisplayName</span><span class="sxs-lookup"><span data-stu-id="9887c-192">$deviceResult.DisplayName = $d.DisplayName</span></span>
+49.  $deviceResult.DisplayName = $d.DisplayName
     
 
-50.  <span data-ttu-id="9887c-193">$deviceResult.IsCompliant = $d.GraphDeviceObject.IsCompliant</span><span class="sxs-lookup"><span data-stu-id="9887c-193">$deviceResult.IsCompliant = $d.GraphDeviceObject.IsCompliant</span></span>
+50.  $deviceResult.IsCompliant = $d.GraphDeviceObject.IsCompliant
     
 
-51.  <span data-ttu-id="9887c-194">$deviceResult.IsManaged = $d.GraphDeviceObject.IsManaged</span><span class="sxs-lookup"><span data-stu-id="9887c-194">$deviceResult.IsManaged = $d.GraphDeviceObject.IsManaged</span></span>
+51.  $deviceResult.IsManaged = $d.GraphDeviceObject.IsManaged
     
 
-52.  <span data-ttu-id="9887c-195">$deviceResult.DeviceObjectId = $d.ObjectId</span><span class="sxs-lookup"><span data-stu-id="9887c-195">$deviceResult.DeviceObjectId = $d.ObjectId</span></span>
+52.  $deviceResult.DeviceObjectId = $d.ObjectId
     
 
-53.  <span data-ttu-id="9887c-196">$deviceResult.RegisteredOwnerUpn = $u.UserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="9887c-196">$deviceResult.RegisteredOwnerUpn = $u.UserPrincipalName</span></span>
+53.  $deviceResult.RegisteredOwnerUpn = $u.UserPrincipalName
     
 
-54.  <span data-ttu-id="9887c-197">$deviceResult.RegisteredOwnerObjectId = $u.ObjectId</span><span class="sxs-lookup"><span data-stu-id="9887c-197">$deviceResult.RegisteredOwnerObjectId = $u.ObjectId</span></span>
+54.  $deviceResult.RegisteredOwnerObjectId = $u.ObjectId
     
 
-55.  <span data-ttu-id="9887c-198">$deviceResult.RegisteredOwnerDisplayName = $u.DisplayName</span><span class="sxs-lookup"><span data-stu-id="9887c-198">$deviceResult.RegisteredOwnerDisplayName = $u.DisplayName</span></span>
+55.  $deviceResult.RegisteredOwnerDisplayName = $u.DisplayName
     
 
-56.  <span data-ttu-id="9887c-199">$deviceResult.ApproximateLastLogonTimestamp = $d.ApproximateLastLogonTimestamp</span><span class="sxs-lookup"><span data-stu-id="9887c-199">$deviceResult.ApproximateLastLogonTimestamp = $d.ApproximateLastLogonTimestamp</span></span>
+56.  $deviceResult.ApproximateLastLogonTimestamp = $d.ApproximateLastLogonTimestamp
     
 
-58.  <span data-ttu-id="9887c-200">$deviceResult</span><span class="sxs-lookup"><span data-stu-id="9887c-200">$deviceResult</span></span>
+58.  $deviceResult
     
 
-59.  <span data-ttu-id="9887c-201">}</span><span class="sxs-lookup"><span data-stu-id="9887c-201">}</span></span>
+59.  }
     
 
-61.  <span data-ttu-id="9887c-202">}</span><span class="sxs-lookup"><span data-stu-id="9887c-202">}</span></span>
+61.  }
     
 
-63.  <span data-ttu-id="9887c-203">If ($export)</span><span class="sxs-lookup"><span data-stu-id="9887c-203">If ($export)</span></span>
+63.  If ($export)
     
 
-64.  <span data-ttu-id="9887c-204">{</span><span class="sxs-lookup"><span data-stu-id="9887c-204">{</span></span>
+64.  {
     
 
-65.  <span data-ttu-id="9887c-205">$result |Export-Csv -path ($exportPath + " \" + $exportFileName) -NoTypeInformation</span><span class="sxs-lookup"><span data-stu-id="9887c-205">$result | Export-Csv -path ($exportPath + "\" + $exportFileName) -NoTypeInformation</span></span>
+65.  $result | Export-Csv -path ($exportPath + "\" + $exportFileName) -NoTypeInformation
     
 
-66.  <span data-ttu-id="9887c-206">}</span><span class="sxs-lookup"><span data-stu-id="9887c-206">}</span></span>
+66.  }
     
 
-67.  <span data-ttu-id="9887c-207">Else</span><span class="sxs-lookup"><span data-stu-id="9887c-207">Else</span></span>
+67.  Else
     
 
-68.  <span data-ttu-id="9887c-208">{</span><span class="sxs-lookup"><span data-stu-id="9887c-208">{</span></span>
+68.  {
     
 
-69.  <span data-ttu-id="9887c-209">$result</span><span class="sxs-lookup"><span data-stu-id="9887c-209">$result</span></span>
+69.  $result
     
 
-70.  <span data-ttu-id="9887c-210">}</span><span class="sxs-lookup"><span data-stu-id="9887c-210">}</span></span>
+70.  }
     
 
 71.  <span data-ttu-id="9887c-211">ファイル拡張子 .ps1 を使用Windows PowerShellスクリプト ファイルとして保存します。たとえば、Get-MsolUserDeviceComplianceStatus.ps1。</span><span class="sxs-lookup"><span data-stu-id="9887c-211">Save it as a Windows PowerShell script file by using the file extension .ps1; for example, Get-MsolUserDeviceComplianceStatus.ps1.</span></span>   
