@@ -1,5 +1,5 @@
 ---
-title: 管理センターの microsoft 365 レポート-Microsoft 365 グループ
+title: 管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,37 +18,37 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: グループとそのアクティビティについて知るために、Microsoft 365 groups レポートを取得します。
+description: Microsoft 365 のグループ レポートで、グループとそのアクティビティについて確認します。
 ms.openlocfilehash: b45582388103e843e2893cfceb9aa1106cb9ce76
 ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/28/2020
 ms.locfileid: "48295096"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターの microsoft 365 レポート-Microsoft 365 グループ
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
 
-Microsoft 365 **Reports** dashboard には、組織内の製品全体にわたるアクティビティの概要が表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft 365 groups レポートでは、組織内のグループのアクティビティについての洞察を得て、作成され、使用されているグループの数を確認できます。
+Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft 365 グループレポートでは、組織内のグループのアクティビティに関する詳細を分析したり、作成中および使用中のグループの数を確認したりすることができます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
+> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。  
   
 ## <a name="how-to-get-to-the-groups-report"></a>グループ レポートを作成する方法
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
 
-2. オプションで、[**アクティブなユーザー] の**下にある [**詳細表示**] を選択します。 Microsoft 365 Services。
+2. オプションから、[**アクティブなユーザー - Microsoft 365 サービス**] の下の [**詳細を表示する**] を選択します。
 3. [**レポートの選択**] ドロップダウンから、[**Office 365**] \> [**グループのアクティビティ**] の順に選択します。
   
 ## <a name="interpret-the-groups-report"></a>グループ レポートを解釈する
 
 [**グループ**]、[**アクティビティ**]、[**ファイル**]、[**記憶域**] のグラフを見ることで、グループのアクティビティの概要がわかります。 
   
-![Microsoft 365 レポート-グループ活動](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
+![Microsoft 365 レポート - グループ アクティビティ](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
   
 |アイテム|説明|
 |:-----|:-----|
-|1.  <br/> |**Microsoft 365 groups**レポートでは、過去7日間、30日間、90日間、または180日の傾向を確認できます。 ただし、レポートで特定の日を選択すると、表 (7) には、(レポートが生成された日付ではなく) 現在の日付から最大 28 日間のデータが表示されます。  <br/> |
+|1.  <br/> |[**Microsoft 365 グループ**] レポートでは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、表 (7) には、(レポートが生成された日付ではなく) 現在の日付から最大 28 日間のデータが表示されます。  <br/> |
 |2.  <br/> |各レポートのデータは、通常、過去 24 - 48 時間まで表示されます。  <br/> |
 |3.  <br/> |[**グループ**] ビューには、指定された日に存在するグループの合計数、メールの会話、Yammer への投稿、SharePoint ファイルのアクティビティ、表示された SharePoint のページに基づいて、その日のアクティブなグループが表示されます。  <br/> |
 |4.  <br/> |[**アクティビティ**] ビューには、グループ ワークロード全体のグループ アクティビティの数が表示されます。 レポート期間中の任意の日に、すべてのグループのグループ メールボックスで受信された Exchange メールを表示することもできます。 また、グループに関連付けられている Yammer グループ全体で、投稿、閲覧、およびいいね! が付けられたメッセージを表示することもできます。 <br/> |
