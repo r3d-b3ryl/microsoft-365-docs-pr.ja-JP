@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品と機能の更新プログラムのリリース オプションを設定する方法について説明します。
-ms.openlocfilehash: f500aac89495c55d27fc4afb699254653786422d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e909cdf35ba9dd8282540783f7c362e5ae49212e
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915208"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034081"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準リリースオプションまたはターゲット リリース オプションを設定する
 
@@ -117,3 +117,7 @@ Microsoft 365 では、数年ごとにコストの高い更新プログラムを
 ## <a name="learn-more"></a>詳細情報
 
 Microsoft 365 メッセージ センターでメッセージを管理して、今後の[Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)の更新プログラムとリリースに関する通知を受け取る方法について説明します。 [](/office365/admin/manage/message-center)
+
+## <a name="related-articles"></a>関連記事
+
+[Office Insider](https://insider.office.com/join/windows)

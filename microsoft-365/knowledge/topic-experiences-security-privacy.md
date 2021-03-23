@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Microsoft Viva Topics のセキュリティとプライバシーを計画する方法について説明します。
-ms.openlocfilehash: 9ac7ea085be115ef06244422713099c01ec50a36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917346"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994548"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva Topics のセキュリティとプライバシー
 
@@ -51,10 +51,10 @@ ms.locfileid: "50917346"
 
 |トピック アイテム|ユーザーに表示される情報|
 |:---------|:------------------|
-|トピック名|ユーザーは、トピック センターのすべてのトピックのトピック名を確認できます。 一部のトピックは、ユーザーとの関連性が低い場合は表示されない場合があります。|
+|トピック名|ユーザーはトピック センターでトピックのトピック名を確認できます。 一部のトピックは、ユーザーがソース コンテンツに対するアクセス許可を持たなかったり、ユーザーとの関連性が低い場合に表示されない場合があります。|
 |トピックの説明|AI によって生成された説明は、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。 手動で入力または編集した説明は、すべてのユーザーに表示されます。|
 |連絡先|ピン留めされたユーザーは、すべてのユーザーに表示されます。 提案されたユーザーは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
-|ファイル|ファイルは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
+|Files|ファイルは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
 |ページ|ページは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
 |サイト|サイトは、ソース コンテンツに対するアクセス許可を持つユーザーにのみ表示されます。|
 
@@ -82,7 +82,7 @@ ms.locfileid: "50917346"
 
 個々のトピック ページのアクセス許可を変更して、特定のユーザー グループへのアクセスを絞り込む一方で、管理上の労力が高いので、この方法はお勧めしません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 [3 層の保護を使って Teams を構成する](../solutions/configure-teams-three-tiers-protection.md)
 

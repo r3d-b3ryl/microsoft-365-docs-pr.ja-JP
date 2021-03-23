@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 36af6e0f882c87d05c5f397982533fb48875b0da
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921518"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994608"
 ---
 # <a name="edit-an-existing-topic"></a>既存のトピックを編集する 
 
@@ -34,7 +34,7 @@ Viva Topics では、既存のトピックを編集できます。 既存のト�
 > [!Note] 
 > AI によって収集されるトピックの情報はセキュリティでトリミング[](topic-experiences-security-trimming.md)されますが、既存のトピックを編集するときに手動で追加するトピックの説明とユーザー情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 既存のトピックを編集するには、次の必要があります。
 - Viva Topics ライセンスを持っている。
@@ -67,11 +67,11 @@ Viva Topics では、既存のトピックを編集できます。 既存のト�
 
     ![[説明] セクション](../media/knowledge-management/description.png)</br>
 
-4. [ピン <b>留めされたユーザー</b> ] セクションでは、ユーザーを "ピン留め" して、トピックの件名の専門家として表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前または電子メール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。
+4. [ピン <b>留めされた</b> ユーザー] セクションでは、ユーザーを "ピン留め" して、トピックに接続しているユーザー (たとえば、接続リソースの所有者) として表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前または電子メール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。
  
     ![ピン留めされたユーザーを追加する](../media/knowledge-management/pinned-people.png)</br>
 
-    [ <b>推奨ユーザー] セクション</b> には、AI がトピックに関するリソースへの接続からトピックに関する重要な専門家である可能性があると考えるユーザーが表示されます。 ユーザー カードのピン アイコンを選択すると、その状態を [推奨済み] から [ピン留め] に変更できます。
+    [ <b>推奨ユーザー] セクション</b> には、AI がトピックへの接続からトピックに関するリソースに接続されている可能性があるというユーザーが表示されます。 ユーザー カードのピン アイコンを選択すると、その状態を [推奨済み] から [ピン留め] に変更できます。
 
    ![推奨されるユーザーをピン留めする](../media/knowledge-management/suggested-people.png)</br>
 

@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) および Microsoft Defender for Office 365 で使用できるフィッシング対策ポリシーについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3458d6702dab48072e4846038400b087b1a4a8f1
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929230"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994584"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
@@ -35,7 +35,7 @@ ms.locfileid: "50929230"
 
 フィッシング対策の保護設定を構成するポリシーは、Exchange Online メールボックスを使用する Microsoft 365 組織、Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 組織向け Microsoft Defender で利用できます。
 
-Microsoft Defender for Office 365 のフィッシング対策ポリシーは、365 の Defender を持つ組織でのみOfficeできます。 次に例を示します。
+Microsoft Defender for Office 365 のフィッシング対策ポリシーは、365 の Defender を持つ組織でのみOfficeできます。 例として以下のようなものがあります。
 
 - Microsoft 365 Enterprise E5、Microsoft 365 Education A5 など
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -46,7 +46,7 @@ Microsoft Defender for Office 365 のフィッシング対策ポリシーは、3
 
 ****
 
-|特徴|EOP のフィッシング対策ポリシー|Microsoft Defender のフィッシング対策ポリシー (Office 365)|
+|機能|EOP のフィッシング対策ポリシー|Microsoft Defender のフィッシング対策ポリシー (Office 365)|
 |---|:---:|:---:|
 |既定のポリシーを自動的に作成する|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
 |カスタム ポリシーの作成|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
@@ -206,17 +206,21 @@ EOP および Microsoft Defender のフィッシング対策ポリシーでは�
   - **偽装ドメイン**: From アドレスには保護されたドメインが含まれる。
   - **異常な** 文字 : 差出人アドレスには、保護された送信者またはドメインに、通常とは異なる文字セット (数学記号とテキスト、大文字と小文字の組み合わせなど) が含まれています。
 
-
   > [!IMPORTANT]
   >
-  > 送信者と受信者の間の初回の連絡先の間に表示される安全ヒントを有効にするための推奨事項 **:** 偽装の安全ヒントがオフになっている場合でも、メールフロー ルール (トランスポート ルールとも呼ばれる) を使用して、値が有効な **X-MS-Exchange-EnableFirstContactSafetyTip** という名前のメッセージ ヘッダーをメッセージに追加することをお勧めします。 安全上のヒントは、送信者から初めてメッセージを受け取った場合、または送信者からメッセージを受け取らない場合に、受信者に通知します。 この機能は、潜在的な偽装攻撃に対するセキュリティ保護の層を追加します。 
+  > 偽装安全ヒントがオフになっている場合でも、メールフロー ルール (トランスポート ルールとも呼ばれる) を使用して、値が有効な **X-MS-Exchange-EnableFirstContactSafetyTip** という名前のメッセージ ヘッダーをメッセージに追加することをお勧めします。 安全上のヒントは、送信者から初めてメッセージを受け取った場合、または送信者からメッセージを受け取らない場合に、受信者に通知します。 この機能は、潜在的な偽装攻撃に対するセキュリティ保護の層を追加します。
+  >
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="複数の受信者による偽装保護の安全ヒントのテキスト。":::
 
-- **メールボックス インテリジェンス**: 頻繁に連絡先を持つユーザーのメール パターンを決定する人工知能 (AI) を有効または無効にします。 この設定は、AI が正当なメールとスプーフィングされたメールとそれらの連絡先を区別するのに役立ちます。 メールボックス インテリジェンスは、Exchange Online メールボックスでのみ使用できます。
+- **メールボックス インテリジェンス**: 頻繁に連絡先を持つユーザーのメール パターンを決定する人工知能 (AI) を有効または無効にします。 この設定は、AI がメッセージと正当な送信者と偽装された送信者を区別するのに役立ちます。
 
-- **メールボックス インテリジェンス ベースの偽装保護**: 各ユーザーの個々の送信者マップに基づいて、拡張偽装結果を有効または無効にします。 このインテリジェンスにより、Microsoft 365 はユーザー偽装検出をカスタマイズし、誤検知をより適切に処理できます。 ユーザー偽装が検出されると、メッセージに対して実行する特定のアクションを定義できます。
+  たとえば、ガブリエラ Laureano (glaureano@contoso.com) は会社の CEO なので、ポリシーの設定を保護するために、ユーザーに保護された送信者として追加します。 ただし、このポリシーが適用される受信者の中には、ガブリエラ・ラウレアーノ (glaureano@fabrikam.com) という名前のベンダーと定期的に通信する glaureano@fabrikam.com。 これらの受信者は glaureano@fabrikam.com との通信履歴を持つため、メールボックス インテリジェンスは glaureano@fabrikam.com からのメッセージをそれらの受信者の偽装 glaureano@contoso.com として識別しません。
 
-  - **アクションを適用しない**
+  メールボックス インテリジェンスによって学習された頻繁な連絡先 (およびその不足) を使用してユーザーを偽装攻撃から保護するには、メールボックス インテリジェンスベースの偽装保護を有効にし、メールボックス インテリジェンスも有効にする場合に実行するアクションを指定できます。 
+
+- **メールボックス インテリジェンス ベースの偽装保護**: この設定をオンにすると、メールボックス インテリジェンス結果からの偽装検出のメッセージに対して実行するアクションを指定できます。
+
+  - **アクションを適用** しない : この値は、メールボックス インテリジェンスを有効にした後、メールボックス インテリジェンスベースの偽装保護をオフにした場合と同じ結果 **になります。**
   - **メッセージを他の電子メール アドレスにリダイレクトする**
   - **メッセージを迷惑メール フォルダーに移動する**
   - **メッセージを検疫する**

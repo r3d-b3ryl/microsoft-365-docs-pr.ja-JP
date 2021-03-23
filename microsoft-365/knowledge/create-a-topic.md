@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6a182556c68a472145f9d4eac69c8915653a67df
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904938"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994596"
 ---
 # <a name="create-a-new-topic"></a>新規トピックを作成する 
 
@@ -29,7 +29,7 @@ ms.locfileid: "50904938"
 > AI によって収集されるトピックの情報はセキュリティでトリミング[](topic-experiences-security-trimming.md)されますが、手動で作成したトピックのトピックの説明とユーザー情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 新しいトピックを作成するには、次の必要があります。
 - Viva Topics ライセンスを持っている。
@@ -66,7 +66,7 @@ ms.locfileid: "50904938"
 
     ![トピックの説明](../media/knowledge-management/description.png)</br>
 
-4. [ピン <b>留めされたユーザー</b> ] セクションでは、ユーザーを "ピン留め" して、トピックの件名の専門家として表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。 ユーザーをドラッグして、ユーザーのリストが表示される順序を変更できます。
+4. [ピン <b>留めされた</b> ユーザー] セクションでは、ユーザーを "ピン留め" して、トピックへの接続 (たとえば、接続されたリソースの所有者) として表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。 ユーザーをドラッグして、ユーザーのリストが表示される順序を変更できます。
  
     ![ピン留めされたユーザー](../media/knowledge-management/pinned-people.png)</br>
 

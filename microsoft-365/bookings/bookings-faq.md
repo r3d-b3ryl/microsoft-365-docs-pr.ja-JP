@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft Bookings のよく寄せられる質問。
-ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
+ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913828"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50999531"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft Bookings に関するよく寄せられる質問
 
@@ -37,7 +37,7 @@ Microsoft Bookings は、予定のスケジュール設定と管理を容易に�
 
 ### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>[スタッフの管理] で予約可能な属性を変更する方法
 
-スタッフメンバーが追加された場合、要求を受け入れるか拒否するメールを受け取ったと思います。 同じメールを開き、[拒否] を選択して予約不可にできます。 現在、アプリ内からこれを切り替える方法は存在しない。
+スタッフメンバーが追加された場合、要求を受け入れるか拒否するメールを受け取ったと思います。 同じメールを開き、[拒否] を選択すると、予約が可能でなかれません。 現在、アプリ内からこれを切り替える方法は存在しない。
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>エンド ユーザーが Bookings アプリにアクセスする方法
 
@@ -65,11 +65,11 @@ OWA メールボックス ポリシーを使用して Bookings へのアクセ�
 
 ### <a name="is-all-the-functionality-of-the-original-bookings-web-app-available-in-microsoft-teams"></a>元の Bookings Web アプリのすべての機能は、Microsoft Teams で利用できますか?
 
-軽量バージョンの Bookings が Teams でアプリとして利用できる。 最初のお知らせは、こちらからご [確認ください](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)。 Web アプリにはディープ リンク機能があります。セットアップ後、Teams を離れることなく、予約の毎日の使用を行います。 プラットフォーム間の情報フロー。
+軽量バージョンの Bookings が Teams でアプリとして利用できる。 最初のアナウンスはここ [です](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)。 Web アプリにはディープ リンク機能があります。セットアップ後、Teams を離れることなく、予約の毎日の使用を行います。 プラットフォーム間の情報フロー。
 
 ### <a name="is-bookings-a-small-business-offering-or-an-enterprise-offering-or-both"></a>Bookings は小規模ビジネス向けオファリングか、エンタープライズ オファリングか、あるいはその両方か。
 
-予約は、さまざまな業界のエンタープライズおよび中小企業のお客様にとって理想的なソリューションです。 使用例は次のとおりです。
+予約は、さまざまな業界のエンタープライズおよび中小企業の両方の顧客にとって理想的なソリューションです。 使用例は次のとおりです。
 
 - 金融サービス
     - コンサルティング
@@ -144,11 +144,11 @@ E1/F1/F3 ライセンスを持つ従業員、またはライセンスがない�
 
 また、Bookings Web アプリを通じてその時点で予定が既にスケジュールされている場合、ストアの従業員は予約で利用できないと表示されます。 Bookings で予約された予定は、予約内のスタッフ メンバーの予定表にビジー状態として反映されます。 予約が有効でないライセンスを持つスタッフは、同じテナント内にある場合でも、個人用カレンダーが Bookings の可用性に影響を与える可能性があります。
 
-ゲスト ロールのユーザーは、最初の予定の作成で顧客が提供した情報を表示できます。 たとえば、予定を予約したストア担当者が、予定の前に顧客に電話する必要がある場合、顧客はスケジュールプロセス中に顧客が提供する情報にアクセスできます。 予約されたスタッフ メンバーは、確認メールに表示される情報、および .ics 予定表イベント (入力された場合は顧客の電話番号など) にアクセスできます。
+ゲスト ロールのユーザーは、最初の予定の作成で顧客が提供した情報を表示できます。 たとえば、予定を予約したストア担当者が、予定の前に顧客に電話する必要がある場合、顧客はスケジュールプロセス中に顧客が提供する情報にアクセスできます。 予約されたスタッフメンバーは、確認メールに表示される情報、および .ics 予定表イベント (入力された場合は顧客の電話番号など) にアクセスできます。
 
 ゲスト ロールのユーザーは、Bookings Web アプリにアクセスして設定を変更したり、予定を表示および管理したり (追加、キャンセル、再スケジュール) したりする機能を持つ必要があります。 ただし、顧客が予約を行うのと同じ方法で、[セルフサービス] ページを使用して顧客に代わって予定を作成できます。
 
-ページと予定を設定および管理するには、各ストアのビジネス マネージャーまたは管理者に Bookings 適格ライセンスをライセンスすることをお勧めします。 その後、残りのスタッフは、予約のスケジュールを変更またはキャンセルするために、Bookings でライセンスを取得した従業員と作業します。
+ページと予定を設定および管理するには、各ストアのビジネス マネージャーまたは管理者に Bookings 適格ライセンスをライセンスすることをお勧めします。 その後、残りのスタッフは Bookings のライセンスを取得した従業員と一緒に作業し、予約のスケジュールを変更またはキャンセルします。
 
 ## <a name="product-features"></a>製品の機能
 
@@ -176,7 +176,7 @@ Bookings 予定表を削除するには、Exchange で関連付けられたメ�
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>予約はタイム ゾーン全体でどのように機能しますか?
 
-既定では、すべての時間がビジネス タイム ゾーン (ローカル タイム ゾーン) にあります。 つまり、予約カレンダーに対して構成した設定 (勤務時間など) は、このタイム ゾーンに表示されます。 セルフサービス ページには、エンド ユーザーのタイム ゾーン内のすべての予定時間を表示する機能があります。必要に応じてオフにできます。 [ **予約] ページ タブ** で [ビジネス タイム ゾーンにタイム スロットを常に表示する] がオフのままである場合、ページを訪れたユーザーは、自分のローカル タイム ゾーンにタイム スロットを表示します。
+既定では、すべての時間がビジネス タイム ゾーン (ローカル タイム ゾーン) にあります。 予約カレンダーに対して構成した設定 (勤務時間など) は、このタイム ゾーンに表示されます。 セルフサービス ページには、エンド ユーザーのタイム ゾーン内のすべての予定時間を表示する機能があります。必要に応じてオフにできます。 [ **予約] ページ タブ** で [ビジネス タイム ゾーンにタイム スロットを常に表示する] がオフのままである場合、ページを訪れたユーザーは、自分のローカル タイム ゾーンにタイム スロットを表示します。
 
 :::image type="content" source="media/bookings-faq-region.png" alt-text="地域とタイム ゾーンの設定を予約する":::
 
@@ -244,7 +244,7 @@ Bookings Web アプリ内でタイム オフを記録すると、常にスタッ
 
 ### <a name="where-is-bookings-data-stored"></a>Bookings データはどこに保存されますか?
 
-Bookings は Microsoft 365 アプリであり、すべてのデータは Microsoft 365 プラットフォームと Exchange に保存されます。 予約は、Microsoft によって設定されたデータ ストレージ ポリシーすべてに従います。これは同じポリシーの後に、すべてのアプリOfficeされます。 予約では、Exchange の共有メールボックスを使用して、顧客、スタッフ、サービス、および予定の詳細を格納します。 Exchange の共有メールボックスのコンプライアンス ポリシーは、Bookings メールボックスにも適用されます。 すべての顧客データ (予約時に顧客が提供する情報を含む) は Bookings にキャプチャされ、アプリ内に保存され、Exchange に保存されます。 Microsoft Bookings は、Microsoft 365 で使用されているポリシーと同じポリシーを使用します。ここで確認 [できます。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+Bookings は Microsoft 365 アプリであり、すべてのデータは Microsoft 365 プラットフォームと Exchange に保存されます。 予約は、Microsoft によって設定されたデータ ストレージ ポリシーすべてに従います。これは、すべてのアプリが従うのと同Officeポリシーです。 予約では、Exchange の共有メールボックスを使用して、顧客、スタッフ、サービス、および予定の詳細を格納します。 Exchange の共有メールボックスのコンプライアンス ポリシーは、Bookings メールボックスにも適用されます。 すべての顧客データ (予約時に顧客が提供する情報を含む) は Bookings にキャプチャされ、アプリ内に保存され、Exchange に保存されます。 Microsoft Bookings は、Microsoft 365 で使用されているポリシーと同じポリシーを使用します。ここで確認 [できます。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
 
 ### <a name="is-there-a-way-to-centrally-manage-bookings-calendars-for-all-users"></a>すべてのユーザーの予約カレンダーを一部管理する方法はありますか?
 
@@ -274,7 +274,7 @@ Bookings Web アプリへのアクセスには、通常の Azure Active Director
 
 次のコマンドを使用して、すべての Bookings メールボックスと、そのメールボックスにアクセスできるユーザーの情報を取得できます。
 
-`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '@')}`
+`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '*@*')}`
 
 ## <a name="technical-questions"></a>技術的な質問
 
