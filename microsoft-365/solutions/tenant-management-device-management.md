@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Microsoft 365 テナントのデバイスとアプリの管理に適切なオプションを展開します。
-ms.openlocfilehash: 994ab7d21ae70307fa78e1f7249d39ac314a7358
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904614"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050996"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>手順 5.  エンタープライズ テナント向け Microsoft 365 のデバイスとアプリの管理
 
@@ -48,7 +48,7 @@ Microsoft [Intune を使用して、MDM](/mem/intune/fundamentals/planning-guide
 
 ## <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
-Microsoft は、安全で生産性の高い従業員を確保するために [、ID](../security/office-365-security/microsoft-365-policies-configurations.md) とデバイス アクセスのための一連の構成を提供します。 これらの構成には、次の使用が含まれます。
+Microsoft は、安全で生産性の高い従業員を確保するために [、ID](../security/defender-365-security/microsoft-365-policies-configurations.md) とデバイス アクセスのための一連の構成を提供します。 これらの構成には、次の使用が含まれます。
 
 - Azure AD 条件付きアクセス ポリシー
 - Microsoft Intune デバイスのコンプライアンスとアプリ保護ポリシー
@@ -61,8 +61,8 @@ Microsoft は、安全で生産性の高い従業員を確保するために [�
 
 デバイス アクセスとアプリ管理の場合は、次の記事の構成を使用します。
 
-- [前提条件](../security/office-365-security/identity-access-prerequisites.md)
-- [共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)
+- [前提条件](../security/defender-365-security/identity-access-prerequisites.md)
+- [共通 ID とデバイスのアクセス ポリシー](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>手順 5 の結果
 

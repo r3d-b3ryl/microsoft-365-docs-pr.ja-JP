@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 10cebf0ab74936d7275586f2e8f09c841c8c653f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918316"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050740"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降の 1 つのアーキテクトの視点
 
@@ -135,9 +135,9 @@ Azure ADのポリシー エンジンは、条件付き [アクセス ポリシ�
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md?view=o365-worldwide)
+- [Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
-- [Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
 - [Microsoft Information Protection](../compliance/information-protection.md?view=o365-worldwide) (MIP)
 - [Azure Sentinel](/azure/sentinel/)
@@ -189,7 +189,7 @@ Outlook クライアントを見て、Exchange ではなく、このエクスペ
 
 ### <a name="multi-geo"></a>Multi-Geo
 
-複数 [地域または複数](../enterprise/microsoft-365-multi-geo.md) 地域にしない場合は、それが問題です。 365 Office-Geo を使用すると、データ常駐要件を満たすために選択した地域の場所にデータをプロビジョニングして保存できます。 [](../enterprise/o365-data-locations.md) この機能には多くの誤解があります。 以下の点にご注意ください:
+複数 [地域または複数](../enterprise/microsoft-365-multi-geo.md) 地域にしない場合は、それが問題です。 365 Office-Geo を使用すると、データ常駐要件を満たすために選択した地域の場所にデータをプロビジョニングして保存できます。 [](../enterprise/o365-data-locations.md) この機能には多くの誤解があります。 以下の点にご注意ください。
 
 - パフォーマンス上の利点を提供する必要はない。 ネットワーク設計が正しく設定されていないと、 [パフォーマンスが](https://aka.ms/office365networking) 低下する可能性があります。 必ずしもデータではなく、Microsoft ネットワークにデバイスを "閉じる" 方法で取得します。
 - GDPR 準拠の [ソリューションではありません](https://www.microsoft.com/trust-center/privacy/gdpr-overview)。 GDPR は、データ主権やストレージの場所に焦点を当てない。 その他のコンプライアンス フレームワークがあります。
@@ -227,7 +227,7 @@ Azure AD [PIM について](/azure/active-directory/privileged-identity-manageme
 
 ### <a name="security-and-compliance-center-scc"></a>セキュリティおよびコンプライアンス センター (SCC)
 
-[Office 365 セキュリティ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) & コンプライアンス センターのアクセス許可は、Azure の役割とは別の"役割グループ"のADです。 これらの役割グループの中には、Azure AD ロール (セキュリティ リーダーなど) と同じ名前を持ち、異なるメンバーシップを持つ場合があります。 Azure の役割を使用ADします。 各役割グループは、1 つ以上の "ロール" (同じ単語を再利用する方法を参照してください)で構成され、Azure AD のメンバー (電子メールが有効なオブジェクト) があります。 また、役割と同じ名前の役割グループを作成できます。この役割を含む場合と含めない場合があります (この混乱を避けます)。
+[Office 365 セキュリティ](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) & コンプライアンス センターのアクセス許可は、Azure の役割とは別の"役割グループ"のADです。 これらの役割グループの中には、Azure AD ロール (セキュリティ リーダーなど) と同じ名前を持ち、異なるメンバーシップを持つ場合があります。 Azure の役割を使用ADします。 各役割グループは、1 つ以上の "ロール" (同じ単語を再利用する方法を参照してください)で構成され、Azure AD のメンバー (電子メールが有効なオブジェクト) があります。 また、役割と同じ名前の役割グループを作成できます。この役割を含む場合と含めない場合があります (この混乱を避けます)。
 
 ある意味では、これらは Exchange 役割グループ モデルの進化です。 ただし、Exchange Online には独自の役割 [グループ管理](/exchange/permissions-exo) インターフェイスがあります。 Exchange Online の一部の役割グループは、Azure AD またはセキュリティ & コンプライアンス センターからロックおよび管理されますが、同じ名前または類似の名前を持ち、Exchange Online で管理される役割グループもあります (混乱を招く)。 Exchange 管理のスコープが必要ない限り、Exchange Online ユーザー インターフェイスの使用を避けることをお勧めします。
 
@@ -262,7 +262,7 @@ Azure AD [PIM について](/azure/active-directory/privileged-identity-manageme
 注: データ プラットフォームのセキュリティと委任 (Power BI がコンポーネント) は複雑な領域です。
 - **MEM/Intune**  - [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](/mem/intune/fundamentals/role-based-access-control)
 - **エンドポイント用 Microsoft Defender**  - [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/mtp/mtp-permissions.md)
+- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
 - **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
 - **Stream**  - [https://docs.microsoft.com/stream/assign-administrator-user-role](/stream/assign-administrator-user-role)
 - **情報バリア**  - [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](../compliance/information-barriers.md)
@@ -296,7 +296,7 @@ Office 365 には統合 [監査ログがあります](../compliance/search-the-a
 
 ログは 1 つの場所にのみ向けられる必要があります。 また [、365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) ログを Microsoft Cloud App Security Office Power BI のカスタム RBAC モデルと統合する場合にも [役立つ場合があります](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide)。 リポジトリごとに利点と対象ユーザーが異なります。
 
-[Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide)と呼ばれるサービスには、セキュリティ、脅威、脆弱性などのための非常に豊富な組み込みの分析システムがあります。
+[Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)と呼ばれるサービスには、セキュリティ、脅威、脆弱性などのための非常に豊富な組み込みの分析システムがあります。
 
 大規模な顧客の多くは、このログ データをサードパーティのシステム (SIEM など) に転送したいと思っています。 これにはさまざまな方法がありますが、一般的な [Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) と [Graph](/graph/security-integration) は良い開始点です。
 

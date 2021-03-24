@@ -1,0 +1,74 @@
+---
+title: Microsoft Defender ATP での Web 閲覧のセキュリティの監視
+description: Microsoft Defender ATP で Web 保護を使用して Web 閲覧のセキュリティを監視する
+keywords: Web 保護、Web 脅威保護、Web 閲覧、監視、レポート、カード、ドメイン リスト、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: ellevin
+author: levinec
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 5d5cb89bccb0d7ea0fa4891c3b5b0d11a7244cf8
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51063707"
+---
+# <a name="monitor-web-browsing-security"></a>Web 閲覧のセキュリティを監視する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**適用対象:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+>Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+
+Web 保護を使用すると、Microsoft Defender セキュリティ センターの [レポートと Web 保護] の>を使用して、組織の **Web** 閲覧セキュリティを監視できます。 レポートには、Web 脅威検出の統計情報を提供するカードが含まれます。
+
+- **Web 脅威保護の** 検出時間の推移 - この傾向カードには、選択した期間中に種類別に検出された Web 脅威の数が表示されます (過去 30 日間、過去 3 か月、過去 6 か月)
+ 
+    ![Web 脅威の保護検出を時間の間に示すカードの画像](images/wtp-blocks-over-time.png)
+
+- **Web 脅威保護の** 概要 - このカードには、過去 30 日間の Web 脅威検出の合計が表示され、さまざまな種類の Web 脅威に対する配布が表示されます。 スライスを選択すると、悪意のある Web サイトや望ましくない Web サイトで見つかったドメインの一覧が開きます。
+
+    ![Web 脅威保護の概要を示すカードの画像](images/wtp-summary.png)
+
+>[!Note]
+>ブロックがカードまたはドメイン リストに反映されるまで最大 12 時間かかる場合があります。
+
+## <a name="types-of-web-threats"></a>Web の脅威の種類
+
+Web 保護は、悪意のある Web サイトと望ましくない Web サイトを次のように分類します。
+
+- **フィッシング -** スプーフィングされた Web フォームや、ユーザーをだまして資格情報などの機密情報を取得するように設計された他のフィッシング メカニズムを含む Web サイト
+- **悪意** のある - マルウェアをホストし、コードを悪用する Web サイト
+- **カスタム インジケーター** - ブロック用にカスタム インジケーター リストに追加した URL またはドメインを持つ [Web](manage-indicators.md) サイト
+
+## <a name="view-the-domain-list"></a>ドメイン リストの表示
+
+Web 脅威保護の概要カードで特定の Web 脅威カテゴリを **選択して** 、[ドメイン] ページ **を開** きます。 このページには、その脅威カテゴリの下のドメインの一覧が表示されます。 このページには、ドメインごとに次の情報が表示されます。
+
+- **アクセス数** - ドメイン内の URL に対する要求の数
+- **ブロック** - 要求がブロックされた回数
+- **アクセスの傾向** - アクセス試行回数の変更
+- **脅威カテゴリ** - Web 脅威の種類
+- **デバイス** - アクセス試行を行うデバイスの数
+
+ドメインを選択して、そのドメイン内の URL にアクセスしようとしたデバイスの一覧と URL の一覧を表示します。
+
+## <a name="related-topics"></a>関連項目
+
+- [Web 保護の概要](web-protection-overview.md)
+- [Web コンテンツ のフィルター処理](web-content-filtering.md)
+- [Web 脅威保護](web-threat-protection.md)
+- [Web の脅威に対応する](web-protection-response.md)

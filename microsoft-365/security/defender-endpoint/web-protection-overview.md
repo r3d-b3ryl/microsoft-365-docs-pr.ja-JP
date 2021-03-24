@@ -1,0 +1,64 @@
+---
+title: Web 保護
+description: Microsoft Defender ATP の Web 保護と組織を保護する方法について説明します。
+keywords: Web 保護、Web 脅威保護、Web 閲覧、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー、悪意のある Web サイト
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: ellevin
+author: levinec
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: efddd646af609200708c5fd6d2e8b27211bd7021
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51063692"
+---
+# <a name="web-protection"></a>Web 保護
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**適用対象:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+
+>Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+
+Microsoft Defender for Endpoint の Web 保護は [、Web](web-threat-protection.md) 脅威保護と Web コンテンツ フィルターで構成 [される機能です](web-content-filtering.md)。 Web 保護を使用すると、Web の脅威からデバイスを保護し、望ましくないコンテンツを規制できます。 Microsoft Defender セキュリティ センターで Web 保護レポートを見つけるには、Web 保護に関するレポート> **行います**。
+
+![すべての Web 保護カードのイメージ](images/web-protection.png)
+
+## <a name="web-threat-protection"></a>Web 脅威保護
+
+Web 脅威保護を構成するカードは、時間の過ぎた Web 脅威検出 **と** **Web 脅威の概要です**。
+
+Web 脅威保護には、次の機能が含まれます。
+- 組織に影響を与える Web 脅威に対する包括的な可視性
+- アラートと URL およびこれらの URL にアクセスするデバイスの包括的なプロファイルによる Web 関連の脅威アクティビティに対する調査機能
+- 悪意のある Web サイトや望ましくない Web サイトへの一般的なアクセス傾向を追跡する一連のセキュリティ機能
+
+## <a name="web-content-filtering"></a>Web コンテンツ のフィルター処理
+
+Web コンテンツ フィルターを構成するカードは、 **カテゴリ別の Web** アクティビティ **、Web コンテンツ** フィルターの概要、および Web アクティビティ **の概要です**。
+
+Web コンテンツ フィルターには、次の機能が含まれます。
+- ユーザーが、オンプレミスまたは離れた場所を閲覧している場合でも、ブロックされたカテゴリの Web サイトにアクセスするのを防ぐ
+- Microsoft Defender for Endpoint の役割ベースのアクセス制御設定で定義されているデバイス グループを使用して、さまざまなポリシーをさまざまなユーザーセットに簡単に [展開できます。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
+- 同じ中央の場所にある Web レポートにアクセスし、実際のブロックと Web 使用状況を可視化できます。
+
+## <a name="in-this-section"></a>このセクションの内容
+
+トピック | 説明
+:---|:---
+[Web 脅威保護](web-threat-protection.md) | フィッシング サイト、マルウェア ベクター、悪用サイト、信頼されていないサイトまたは低評価サイト、ブロックしたサイトへのアクセスを停止します。
+[Web コンテンツ のフィルター処理](web-content-filtering.md) | コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および調整します。

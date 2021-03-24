@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: 7b62191d08e5ff91e54bb16b06a0511e02f16b6d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c56deb091078fb1917bc1060aa366da4e18bd176
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916180"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050876"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>手順 5.  リモートワーカー向けの生産性向上アプリとサービスを展開する
 
@@ -68,7 +68,7 @@ Teams は、デスクトップ、Web、モバイル バージョンの Teams か
 
 リモート ワーカーは、Outlook を使用することにより、メール、予定表、連絡先、タスクなどにいつでもアクセスでき、自分の予定を一元的に管理することができます。 Outlook は、ユーザーが自分に関連する内容を基に、予定どおり作業を遂行したり、1 日の作業に優先順位を付けたりするのに役立ちます。 Outlook を使用すると、添付ファイルを OneDrive から直接共有したり、Teams 会議を計画して参加したり、予定表を表示して共有したり、他のユーザーに代理アクセス権を提供したりできます。 リモート ワーカーは、仕事上の責任と個人的な責任の両方について、次の予定を知り、何に注意が必要かを把握することにより、重要な問題に注意を集中できるようになります。 Outlook は、リモート ワーカーが自分の時間を管理をしたり、ファイルや組織内の人物など、必要な情報を簡単に見つけたりするのに役立ちます。 
 
-組織のメールと、先進認証と条件付きアクセスをサポートするメール クライアントを保護する、推奨される ID とデバイス アクセス ポリシーについては、[こちらの記事](../security/office-365-security/secure-email-recommended-policies.md)を参照してください。
+組織のメールと、先進認証と条件付きアクセスをサポートするメール クライアントを保護する、推奨される ID とデバイス アクセス ポリシーについては、[こちらの記事](../security/defender-365-security/secure-email-recommended-policies.md)を参照してください。
 
 ## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>SharePoint と OneDrive でファイルを格納して共同編集
 
@@ -81,7 +81,7 @@ Teams は、デスクトップ、Web、モバイル バージョンの Teams か
 - [ファイル共有](/sharepointmigration/fileshare-to-odsp-migration-guide)
 - [ボックス](/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
-SharePoint Online と OneDrive を保護するには、推奨される ID とデバイス アクセス ポリシーに関する[こちらの記事](../security/office-365-security/sharepoint-file-access-policies.md)を参照してください。
+SharePoint Online と OneDrive を保護するには、推奨される ID とデバイス アクセス ポリシーに関する[こちらの記事](../security/defender-365-security/sharepoint-file-access-policies.md)を参照してください。
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Microsoft 365 アプリを使用した、コンテンツの作成と共同作業
 

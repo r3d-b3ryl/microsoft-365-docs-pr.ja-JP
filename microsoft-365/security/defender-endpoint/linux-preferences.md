@@ -1,0 +1,418 @@
+---
+title: Linux 用 Microsoft Defender ATP の基本設定を設定する
+ms.reviewer: ''
+description: エンタープライズで Microsoft Defender ATP for Linux を構成する方法について説明します。
+keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: dansimp
+author: dansimp
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection:
+- m365-security-compliance
+- m365initiative-defender-endpoint
+ms.topic: conceptual
+ms.technology: mde
+ms.openlocfilehash: 5206de55523c6f5a24fa85f29d48620b38be5bfa
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51064556"
+---
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Endpoint for Linux の基本設定を設定する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**適用対象:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+
+>[!IMPORTANT]
+>このトピックでは、エンタープライズ環境で Defender for Endpoint for Linux の基本設定を設定する方法について説明します。 コマンド ラインからデバイスで製品を構成する場合は、「Resources」を参照 [してください](linux-resources.md#configure-from-the-command-line)。
+
+エンタープライズ環境では、Defender for Endpoint for Linux を構成プロファイルで管理できます。 このプロファイルは、選択した管理ツールから展開されます。 企業が管理する基本設定は、デバイス上でローカルに設定された基本設定よりも優先されます。 つまり、企業のユーザーは、この構成プロファイルを介して設定された基本設定を変更できないのです。
+
+この記事では、このプロファイルの構造 (開始に使用できる推奨プロファイルを含む) と、プロファイルを展開する方法について説明します。
+
+## <a name="configuration-profile-structure"></a>構成プロファイル構造
+
+構成プロファイルは 、キーで識別されるエントリ (基本設定の名前を示す) で構成される .json ファイルで、その後に、基本設定の性質に依存する値が続きます。 数値などの単純な値や、入れ子になった基本設定のリストなどの複雑な値を指定できます。
+
+通常、構成管理ツールを使用して、名前を持つファイルを場所 ```mdatp_managed.json``` にプッシュします ```/etc/opt/microsoft/mdatp/managed/``` 。
+
+構成プロファイルのトップ レベルには、製品全体の基本設定と、製品のサブエリアのエントリが含まれています。これは、次のセクションで詳しく説明します。
+
+### <a name="antivirus-engine-preferences"></a>ウイルス対策エンジンの基本設定
+
+構成 *プロファイルの antivirusEngine* セクションを使用して、製品のウイルス対策コンポーネントの基本設定を管理します。
+
+|||
+|:---|:---|
+| **キー** | antivirusEngine |
+| **データ型** | 辞書 (入れ子になった基本設定) |
+| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+
+#### <a name="enable--disable-real-time-protection"></a>リアルタイム保護を有効/無効にする
+
+リアルタイム保護 (アクセス時のファイルのスキャン) を有効にするかどうかを指定します。
+
+|||
+|:---|:---|
+| **キー** | enableRealTimeProtection |
+| **データ型** | Boolean |
+| **可能な値** | true (既定) <br/> false |
+
+#### <a name="enable--disable-passive-mode"></a>パッシブ モードを有効/無効にする
+
+ウイルス対策エンジンがパッシブ モードで実行されるかどうかを決定します。 パッシブ モードの場合:
+- リアルタイム保護はオフです。
+- オンデマンド スキャンが有効です。
+- 脅威の自動修復が無効になります。
+- セキュリティ インテリジェンスの更新プログラムが有効になっている。
+- [状態] メニュー アイコンは非表示です。
+
+|||
+|:---|:---|
+| **キー** | passiveMode |
+| **データ型** | Boolean |
+| **指定可能な値** | false (既定) <br/> true |
+| **コメント** | Defender for Endpoint version 100.67.60 以上で使用できます。 |
+
+#### <a name="exclusion-merge-policy"></a>除外マージ ポリシー
+
+除外のマージ ポリシーを指定します。 管理者定義の除外とユーザー定義の除外 ( ) の組み合わせ、または管理者定義の除外 ( ) のみを `merge` 組み合わせて指定できます `admin_only` 。 この設定は、ローカル ユーザーが独自の除外を定義するのを制限するために使用できます。
+
+|||
+|:---|:---|
+| **キー** | exclusionsMergePolicy |
+| **データ型** | String |
+| **指定可能な値** | merge (既定) <br/> admin_only |
+| **コメント** | Defender for Endpoint version 100.83.73 以上で使用できます。 |
+
+#### <a name="scan-exclusions"></a>スキャンの除外
+
+スキャンから除外されたエンティティ。 除外は、完全パス、拡張子、またはファイル名で指定できます。
+
+|||
+|:---|:---|
+| **キー** | 除外 |
+| **データ型** | 辞書 (入れ子になった基本設定) |
+| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+
+**除外の種類**
+
+スキャンから除外されるコンテンツの種類を指定します。
+
+|||
+|:---|:---|
+| **キー** | $type |
+| **データ型** | String |
+| **指定可能な値** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+
+**除外されたコンテンツへのパス**
+
+完全なファイル パスでスキャンからコンテンツを除外するために使用します。
+
+|||
+|:---|:---|
+| **キー** | path |
+| **データ型** | String |
+| **指定可能な値** | 有効なパス |
+| **コメント** | 適用 *できるのは、$type**が excludedPath である場合のみです。* |
+
+**パスの種類 (ファイル/ディレクトリ)**
+
+*path* プロパティがファイルまたはディレクトリを参照しているかどうかを示します。 
+
+|||
+|:---|:---|
+| **キー** | isDirectory |
+| **データ型** | Boolean |
+| **指定可能な値** | false (既定) <br/> true |
+| **コメント** | 適用 *できるのは、$type**が excludedPath である場合のみです。* |
+
+**スキャンから除外されたファイル拡張子**
+
+ファイル拡張子でスキャンからコンテンツを除外するために使用します。
+
+|||
+|:---|:---|
+| **キー** | 拡張機能 |
+| **データ型** | String |
+| **指定可能な値** | 有効なファイル拡張子 |
+| **コメント** | 適用 *できるのは* 、$type FileExtension が *除外されている場合のみです。* |
+
+**スキャンから除外されるプロセス**
+
+すべてのファイル アクティビティがスキャンから除外されるプロセスを指定します。 プロセスは、名前 (たとえば) または完全パス `cat` (たとえば) で指定できます `/bin/cat` 。
+
+|||
+|:---|:---|
+| **キー** | name |
+| **データ型** | String |
+| **指定可能な値** | 任意の文字列 |
+| **コメント** | ファイルが excludedFileName *$type**場合にのみ適用されます。* |
+
+#### <a name="allowed-threats"></a>許可される脅威
+
+製品によってブロックされ、代わりに実行が許可されている脅威の一覧 (名前で識別されます)。
+
+|||
+|:---|:---|
+| **キー** | allowedThreats |
+| **データ型** | 文字列の配列 |
+
+#### <a name="disallowed-threat-actions"></a>禁止された脅威アクション
+
+脅威が検出された場合にデバイスのローカル ユーザーが実行できるアクションを制限します。 この一覧に含まれるアクションは、ユーザー インターフェイスには表示されません。
+
+|||
+|:---|:---|
+| **キー** | disallowedThreatActions |
+| **データ型** | 文字列の配列 |
+| **可能な値** | allow (ユーザーによる脅威の許可を制限する) <br/> 復元 (検疫からの脅威の復元をユーザーに制限する) |
+| **コメント** | Defender for Endpoint version 100.83.73 以上で使用できます。 |
+
+#### <a name="threat-type-settings"></a>脅威の種類の設定
+
+ウイルス *対策エンジンの threatTypeSettings* 基本設定は、製品による特定の脅威の種類の処理方法を制御するために使用されます。
+
+|||
+|:---|:---|
+| **キー** | threatTypeSettings |
+| **データ型** | 辞書 (入れ子になった基本設定) |
+| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+
+**脅威の種類**
+
+動作が構成されている脅威の種類。
+
+|||
+|:---|:---|
+| **キー** | キー |
+| **データ型** | String |
+| **指定可能な値** | potentially_unwanted_application <br/> archive_bomb |
+
+**実行する操作**
+
+前のセクションで指定した種類の脅威に出く際に実行するアクション。 次の指定が可能です。
+
+- **監査**: デバイスは、この種類の脅威から保護されませんが、脅威に関するエントリがログに記録されます。
+- **ブロック**: デバイスは、この種類の脅威から保護され、セキュリティ コンソールで通知されます。
+- **オフ**: デバイスは、この種類の脅威から保護され、何もログに記録されません。
+
+|||
+|:---|:---|
+| **キー** | 値 |
+| **データ型** | String |
+| **指定可能な値** | 監査 (既定) <br/> block <br/> off |
+
+#### <a name="threat-type-settings-merge-policy"></a>脅威の種類の設定の差し込みポリシー
+
+脅威の種類の設定のマージ ポリシーを指定します。 これは、管理者定義設定とユーザー定義設定 ( ) の組み合わせか、管理者定義の設定 ( ) のみを `merge` 組み合わせて使用できます `admin_only` 。 この設定を使用すると、ローカル ユーザーがさまざまな脅威の種類に対して独自の設定を定義するのを制限できます。
+
+|||
+|:---|:---|
+| **キー** | threatTypeSettingsMergePolicy |
+| **データ型** | String |
+| **指定可能な値** | merge (既定) <br/> admin_only |
+| **コメント** | Defender for Endpoint version 100.83.73 以上で使用できます。 |
+
+#### <a name="antivirus-scan-history-retention-in-days"></a>ウイルス対策スキャン履歴の保持 (日数)
+
+デバイスのスキャン履歴に結果が保持される日数を指定します。 古いスキャン結果は履歴から削除されます。 ディスクから削除された古い検疫済みファイル。
+
+|||
+|:---|:---|
+| **キー** | scanResultsRetentionDays |
+| **データ型** | String |
+| **指定可能な値** | 90 (既定)。 使用できる値は、1 日から 180 日です。 |
+| **コメント** | Defender for Endpoint version 101.04.76 以上で使用できます。 |
+
+#### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>ウイルス対策スキャン履歴内のアイテムの最大数
+
+スキャン履歴に保持するエントリの最大数を指定します。 エントリには、過去に実行されたオンデマンド スキャンとすべてのウイルス対策検出が含まれます。
+
+|||
+|:---|:---|
+| **キー** | scanHistoryMaximumItems |
+| **データ型** | String |
+| **指定可能な値** | 10000 (既定値)。 許可される値は、5000 アイテムから 15,000 アイテムまでです。 |
+| **コメント** | Defender for Endpoint version 101.04.76 以上で使用できます。 |
+
+### <a name="cloud-delivered-protection-preferences"></a>クラウドによる保護の基本設定
+
+構成 *プロファイルの cloudService* エントリを使用して、製品のクラウド駆動型保護機能を構成します。
+
+|||
+|:---|:---|
+| **キー** | cloudService |
+| **データ型** | 辞書 (入れ子になった基本設定) |
+| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+
+#### <a name="enable--disable-cloud-delivered-protection"></a>クラウド配信保護を有効/無効にする
+
+デバイスでクラウド配信の保護を有効にするかどうかを指定します。 サービスのセキュリティを向上させるために、この機能を有効にすることをお勧めします。
+
+|||
+|:---|:---|
+| **キー** | enabled |
+| **データ型** | Boolean |
+| **可能な値** | true (既定) <br/> false |
+
+#### <a name="diagnostic-collection-level"></a>診断コレクション レベル
+
+診断データは、Defender for Endpoint を安全かつ最新の状態に保ち、問題を検出、診断、修正し、製品の改善を行う場合に使用されます。 この設定は、製品から Microsoft に送信される診断のレベルを決定します。
+
+|||
+|:---|:---|
+| **キー** | diagnosticLevel |
+| **データ型** | String |
+| **指定可能な値** | 省略可能 (既定) <br/> 必須 |
+
+#### <a name="enable--disable-automatic-sample-submissions"></a>自動サンプル申請を有効または無効にする
+
+疑わしいサンプル (脅威を含む可能性が高い) を Microsoft に送信するかどうかを決定します。 サンプル申請を制御するには、次の 3 つのレベルがあります。
+
+- **なし**: 疑わしいサンプルは Microsoft に送信されません。
+- **安全**: 個人を特定できる情報 (PII) を含む疑わしいサンプルだけが自動的に送信されます。 これは、この設定の既定値です。
+- **すべて**: すべての疑わしいサンプルが Microsoft に送信されます。
+
+|||
+|:---|:---|
+| **キー** | automaticSampleSubmissionConsent |
+| **データ型** | String |
+| **指定可能な値** | none <br/> safe (既定) <br/> すべての |
+
+#### <a name="enable--disable-automatic-security-intelligence-updates"></a>セキュリティ インテリジェンスの自動更新を有効または無効にする
+
+セキュリティ インテリジェンスの更新プログラムが自動的にインストールされるかどうかを決定します。
+
+|||
+|:---|:---|
+| **キー** | automaticDefinitionUpdateEnabled |
+| **データ型** | Boolean |
+| **可能な値** | true (既定) <br/> false |
+
+## <a name="recommended-configuration-profile"></a>推奨される構成プロファイル
+
+開始するには、Defender for Endpoint が提供するすべての保護機能を利用するために、企業の次の構成プロファイルをお勧めします。
+
+次の構成プロファイルは次のようになります。
+
+- リアルタイム保護を有効にする (RTP)
+- 次の脅威の種類の処理方法を指定します。
+  - **望ましくない可能性のあるアプリケーション (PUA) が** ブロックされる
+  - **アーカイブボム** (圧縮率が高いファイル) は、製品ログに対して監査されます
+- セキュリティ インテリジェンスの自動更新を有効にする
+- クラウドによる保護を有効にする
+- レベルで自動サンプル提出を `safe` 有効にする
+
+### <a name="sample-profile"></a>サンプル プロファイル
+
+```JSON
+{
+   "antivirusEngine":{
+      "enableRealTimeProtection":true,
+      "threatTypeSettings":[
+         {
+            "key":"potentially_unwanted_application",
+            "value":"block"
+         },
+         {
+            "key":"archive_bomb",
+            "value":"audit"
+         }
+      ]
+   },
+   "cloudService":{
+      "automaticDefinitionUpdateEnabled":true,
+      "automaticSampleSubmissionConsent":"safe",
+      "enabled":true
+   }
+}
+```
+
+## <a name="full-configuration-profile-example"></a>完全な構成プロファイルの例
+
+次の構成プロファイルには、このドキュメントで説明されているすべての設定のエントリが含まれています。製品を詳細に制御する高度なシナリオに使用できます。
+
+### <a name="full-profile"></a>フル プロファイル
+
+```JSON
+{
+   "antivirusEngine":{
+      "enableRealTimeProtection":true,
+      "passiveMode":false,
+      "exclusionsMergePolicy":"merge",
+      "exclusions":[
+         {
+            "$type":"excludedPath",
+            "isDirectory":false,
+            "path":"/var/log/system.log"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home"
+         },
+         {
+            "$type":"excludedFileExtension",
+            "extension":"pdf"
+         },
+         {
+            "$type":"excludedFileName",
+            "name":"cat"
+         }
+      ],
+      "allowedThreats":[
+         "EICAR-Test-File (not a virus)"
+      ],
+      "disallowedThreatActions":[
+         "allow",
+         "restore"
+      ],
+      "threatTypeSettingsMergePolicy":"merge",
+      "threatTypeSettings":[
+         {
+            "key":"potentially_unwanted_application",
+            "value":"block"
+         },
+         {
+            "key":"archive_bomb",
+            "value":"audit"
+         }
+      ]
+   },
+   "cloudService":{
+      "enabled":true,
+      "diagnosticLevel":"optional",
+      "automaticSampleSubmissionConsent":"safe",
+      "automaticDefinitionUpdateEnabled":true
+   }
+}
+```
+
+## <a name="configuration-profile-validation"></a>構成プロファイルの検証
+
+構成プロファイルは、有効な JSON 形式のファイルである必要があります。 これを確認するために使用できるツールは多数ある。 たとえば、デバイスにインストール `python` されている場合は、次の情報を使用します。
+
+```bash
+python -m json.tool mdatp_managed.json
+```
+
+JSON が整形式の場合、上記のコマンドはターミナルに出力し、終了コードを返します `0` 。 それ以外の場合は、問題を説明するエラーが表示され、コマンドは終了コードを返します `1` 。
+
+## <a name="configuration-profile-deployment"></a>構成プロファイルの展開
+
+企業の構成プロファイルを構築したら、企業が使用している管理ツールを使用して展開できます。 Defender for Endpoint for Linux は *、/etc/opt/microsoft/mdatp/managed/mdatp_managed.jsファイルから管理構成を読み取* ります。

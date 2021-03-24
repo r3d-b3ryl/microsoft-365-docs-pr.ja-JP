@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920930"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51042688"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -60,8 +60,8 @@ ms.locfileid: "50920930"
 ## <a name="initial-protections"></a>初期保護
 
 チームおよび基になる SharePoint サイトへのアクセスを保護するためには、次のベスト プラクティスを確認します。
-- [ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)
-- [SharePoint Online アクセス ポリシー](../security/office-365-security/sharepoint-file-access-policies.md)
+- [ID とデバイスのアクセス ポリシー](../security/defender-365-security/identity-access-policies.md)
+- [SharePoint Online アクセス ポリシー](../security/defender-365-security/sharepoint-file-access-policies.md)
 - [ベースライン保護を使用してチームを展開する](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>ゲスト共有

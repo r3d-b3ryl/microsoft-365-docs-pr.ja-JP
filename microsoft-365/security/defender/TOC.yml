@@ -1,0 +1,290 @@
+- name: Microsoft 365 セキュリティ
+  href: index.yml
+  expanded: true
+  items:
+    - name: Microsoft セキュア スコア
+      items:
+        - name: セキュア スコアの概要
+          href: microsoft-secure-score.md
+        - name: セキュリティ体制にアクセス
+          href: microsoft-secure-score-improvement-actions.md
+        - name: スコアの履歴を記録し、目標を達成する
+          href: microsoft-secure-score-history-metrics-trends.md
+        - name: 今後の予定
+          href: microsoft-secure-score-whats-coming.md
+        - name: 新機能
+          href: microsoft-secure-score-whats-new.md
+    - name: Microsoft 365 Defender
+      items:
+        - name: 概要
+          items:
+            - name: Microsoft 365 Defender とは
+              href: microsoft-365-defender.md
+            - name: Microsoft 365 Defender の新機能
+              href: whats-new.md
+            - name: プレビュー機能
+              href: preview.md
+            - name: Microsoft 365 セキュリティ センター
+              href: overview-security-center.md
+            - name: 問題のトラブルシューティング
+              href: troubleshoot.md
+            - name: 業界のテスト
+              href: top-scoring-industry-tests.md
+        - name: プラン
+          items:
+            - name: 前提条件
+              href: prerequisites.md
+            - name: データ セキュリティとプライバシー
+              href: data-privacy.md
+            - name: Microsoft セキュリティ ポータル
+              href: portals.md
+        - name: 機能を評価する
+          items:
+            - name: 試用版ラボの概要
+              href: m365d-evaluation.md
+            - name: 準備
+              href: prepare-m365d-eval.md
+            - name: セットアップ
+              href: setup-m365deval.md
+            - name: 構成およびオンボード
+              href: config-m365d-eval.md
+            - name: Microsoft 365 Defender サービスを開始する
+              href: 'https://docs.microsoft.com/microsoft-365/security/defender/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
+            - name: テスト アラートを生成する
+              href: generate-test-alert.md
+        - name: 展開
+          items:
+            - name: Microsoft Threat Protection を有効にする
+              href: m365d-enable.md
+            - name: 実稼働環境でパイロット プロジェクトを実行する
+              items:
+                - name: パイロットの概要
+                  href: m365d-pilot.md
+                - name: プラン
+                  href: m365d-pilot-plan.md
+                - name: 準備
+                  href: prepare-m365d-eval.md
+                - name: 攻撃のシミュレーション
+                  href: m365d-pilot-simulate.md
+                - name: 閉じて要約する
+                  href: m365d-pilot-close.md
+            - name: サポートされているサービスを展開する
+              href: deploy-supported-services.md
+        - name: 使い方ガイド
+          items:
+            - name: 試用版ラボまたはパイロット環境を作成する
+              href: m365d-evaluation.md
+            - name: パイロット プレイブックを実行する
+              href: m365d-pilot.md
+            - name: よくあるご質問 (FAQ) をオンにする
+              href: m365d-enable-faq.md
+            - name: インシデント
+              items:
+                - name: 概要
+                  href: incidents-overview.md
+                - name: インシデントの優先度を設定する
+                  href: incident-queue.md
+                - name: インシデントを調査する
+                  items:
+                    - name: インシデントを調査する
+                      href: investigate-incidents.md
+                    - name: インシデントを管理する
+                      href: manage-incidents.md
+                - name: メール通知を取得する
+                  href: get-incident-notifications.md
+            - name: 自動調査および対応
+              items:
+                - name: 自動調査および対応の概要
+                  href: m365d-autoir.md
+                - name: 自動調査および対応機能の構成
+                  href: m365d-configure-auto-investigation-response.md
+                - name: 修復アクション
+                  href: m365d-remediation-actions.md
+                - name: アクション センターにアクセスする
+                  href: m365d-action-center.md
+                - name: 保留中の修復アクションを承認または拒否する
+                  href: m365d-autoir-actions.md
+                - name: 自動調査の詳細と結果を表示する
+                  href: m365d-autoir-results.md
+                - name: 誤検知/検出漏れを報告する
+                  href: m365d-autoir-report-false-positives-negatives.md
+            - name: 高度な検出
+              items:
+                - name: 高度な検出の概要
+                  href: advanced-hunting-overview.md
+                - name: サンプルを学習、トレーニングして取得する
+                  items:
+                    - name: クエリ言語の説明
+                      href: advanced-hunting-query-language.md
+                    - name: エキスパート トレーニングを受ける
+                      href: advanced-hunting-expert-training.md
+                    - name: 共有クエリを使用する
+                      href: advanced-hunting-shared-queries.md
+                    - name: デバイス、メール、アプリ、ID 全体で探す
+                      href: advanced-hunting-query-emails-devices.md
+                    - name: ランサムウェアを探す
+                      href: advanced-hunting-find-ransomware.md
+                    - name: Defender for Endpoint からの移行
+                      href: advanced-hunting-migrate-from-mde.md
+                - name: クエリ結果を操作する
+                  href: advanced-hunting-query-results.md
+                - name: クエリ結果に対し、アクションを行う
+                  href: advanced-hunting-take-action.md
+                - name: 検出する
+                  href: advanced-hunting-go-hunt.md
+                - name: エラーを最適化し処理する
+                  items:
+                    - name: クエリのベスト プラクティスを適用する
+                      href: advanced-hunting-best-practices.md
+                    - name: エラーを処理する
+                      href: advanced-hunting-errors.md
+                    - name: クォータと使用パラメータ
+                      href: advanced-hunting-limits.md
+                - name: データの範囲の拡張
+                  href: advanced-hunting-extend-data.md
+                - name: データ スキーマ
+                  items:
+                    - name: スキーマを理解する
+                      href: advanced-hunting-schema-tables.md
+                    - name: AADSignInEventsBeta
+                      href: advanced-hunting-aadsignineventsbeta-table.md
+                    - name: AADSpnSignInEventsBeta
+                      href: advanced-hunting-aadspnsignineventsbeta-table.md
+                    - name: スキーマ名の変更
+                      href: advanced-hunting-schema-changes.md
+                    - name: AlertEvidence
+                      href: advanced-hunting-alertevidence-table.md
+                    - name: AlertInfo
+                      href: advanced-hunting-alertinfo-table.md
+                    - name: AppFileEvents
+                      href: advanced-hunting-appfileevents-table.md
+                    - name: CloudAppEvents
+                      href: advanced-hunting-cloudappevents-table.md
+                    - name: DeviceEvents
+                      href: advanced-hunting-deviceevents-table.md
+                    - name: DeviceFileCertificateInfo
+                      href: advanced-hunting-devicefilecertificateinfo-table.md
+                    - name: DeviceFileEvents
+                      href: advanced-hunting-devicefileevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceInfo
+                      href: advanced-hunting-deviceinfo-table.md
+                    - name: DeviceLogonEvents
+                      href: advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceNetworkInfo
+                      href: advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceTvmSecureConfigurationAssessment
+                      href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
+                    - name: DeviceTvmSecureConfigurationAssessmentKB
+                      href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                    - name: DeviceTvmSoftwareInventoryVulnerabilities
+                      href: advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
+                    - name: DeviceTvmSoftwareVulnerabilitiesKB
+                      href: advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
+                    - name: EmailAttachmentInfo
+                      href: advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailEvents
+                      href: advanced-hunting-emailevents-table.md
+                    - name: EmailPostDeliveryEvents
+                      href: advanced-hunting-emailpostdeliveryevents-table.md
+                    - name: EmailUrlInfo
+                      href: advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityDirectoryEvents
+                      href: advanced-hunting-identitydirectoryevents-table.md
+                    - name: IdentityInfo
+                      href: advanced-hunting-identityinfo-table.md
+                    - name: IdentityLogonEvents
+                      href: advanced-hunting-identitylogonevents-table.md
+                    - name: IdentityQueryEvents
+                      href: advanced-hunting-identityqueryevents-table.md
+                - name: 関数
+                  items:
+                    - name: AssignedIPAddresses()
+                      href: advanced-hunting-assignedipaddresses-function.md
+                    - name: DeviceFromIP()
+                      href: advanced-hunting-devicefromip-function.md
+                    - name: FileProfile()
+                      href: advanced-hunting-fileprofile-function.md
+                - name: カスタム検出
+                  items:
+                    - name: カスタム検出の概要
+                      href: custom-detections-overview.md
+                    - name: 検出ルールの作成と管理
+                      href: custom-detection-rules.md
+            - name: レポート
+              items:
+                - name: レポートを監視し、表示する
+                  href: overview-security-center.md
+                - name: IDの監視とレポート
+                  href: overview-security-center.md
+                - name: データの監視とレポート
+                  href: overview-security-center.md
+                - name: デバイスの監視とレポート
+                  href: overview-security-center.md
+                - name: アプリの監視とレポート
+                  href: overview-security-center.md
+        - name: 参照
+          items:
+            - name: アクセス許可と設定
+              items:
+                - name: アクセスを管理する
+                  href: m365d-permissions.md
+                - name: タイム ゾーンを設定する
+                  href: m365d-time-zone.md
+                - name: デバイス プロファイルを表示する
+                  href: device-profile.md
+                - name: フィードバックの提供
+                  href: feedback.md
+                - name: ServiceNow のチケットとタスクを作成する
+                  items:
+                    - name: ServiceNow 統合の概要
+                      href: tickets.md
+            - name: Microsoft 365 Defender API (プレビュー)
+              items:
+                - name: Microsoft 365 Defender API の概要 (プレビュー)
+                  href: api-overview.md
+                - name: Microsoft 365 Defender API の使用を開始する (プレビュー)
+                  items:
+                    - name: Microsoft 365 Defender API のライセンスと使用条件
+                      href: api-terms.md
+                    - name: Microsoft 365 Defender API にアクセスする
+                      href: api-access.md
+                    - name: Hello World の例
+                      href: api-hello-world.md
+                    - name: アプリケーション コンテキストでアクセスする
+                      href: api-create-app-web.md
+                    - name: ユーザー コンテキストでアクセスする
+                      href: api-create-app-user-context.md
+                    - name: パートナー アプリケーションへのアクセスを取得する
+                      href: api-partner-access.md
+                    - name: その他の API リソース
+                      href: api-articles.md
+                - name: Microsoft 365 Defender API とスキーマ (プレビュー)
+                  items:
+                    - name: サポートされている Microsoft 365 Defender API
+                      href: api-supported.md
+                    - name: 一般的な REST API エラー コード
+                      href: api-error-codes.md
+                    - name: 高度な追及 API
+                      href: api-advanced-hunting.md
+                    - name: インシデント API
+                      items:
+                        - name: インシデントの方法とプロパティ
+                          href: api-incident.md
+                        - name: インシデントを一覧表示する
+                          href: api-list-incidents.md
+                        - name: インシデントを更新する
+                          href: api-update-incidents.md
+            - name: 新しい Microsoft 365 セキュリティ センター
+              href: overview-security-center.md
+    - name: 関連情報
+      items:
+        - name: 最新の攻撃手法を理解する
+          href: latest-attack-campaigns.md

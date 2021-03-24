@@ -16,18 +16,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 3156e6bc7715db9847b295add7850dcbd0ff6642
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b5dba3aa5db6a687a195f866d1cabe1138f9aa66
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918408"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050900"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 全体に脅威保護機能を展開する
 
 [マルウェア](/windows/security/threat-protection/intelligence/understanding-malware)、ファイルレスの脅威などの高度なサイバー攻撃 [は、](/windows/security/threat-protection/intelligence/fileless-threats)一般的に発生します。 企業は、効果的な IT セキュリティ機能を使用して自分自身と顧客を保護する必要があります。 サイバー攻撃は、信頼の喪失から財務上の苦境、ビジネスを脅かすダウンタイムなど、組織にとって大きな問題を引き起こす可能性があります。 脅威からの保護は重要ですが、組織の時間、労力、リソースをどこに集中する必要があるのか判断することが困難な場合があります。 
 
-Microsoft のセキュリティ ソリューションは、製品とサービスに組み込されています。 オートメーション機能と機械学習機能を使用すると、セキュリティ チームの負荷が軽減され、適切なアイテムが確実に対処されます。 Microsoft セキュリティ ソリューションの強みは、インテリジェント セキュリティ グラフで毎日処理する数兆のシグナルに [基いて構築されています](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)。 Microsoft 365 セキュリティ ソリューションには [、Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md)が含まれており、電子メール、データ、デバイス、および ID 間で信号をまとめ、組織に対する高度な脅威の画像を描画するソリューションです。
+Microsoft のセキュリティ ソリューションは、製品とサービスに組み込されています。 オートメーション機能と機械学習機能を使用すると、セキュリティ チームの負荷が軽減され、適切なアイテムが確実に対処されます。 Microsoft セキュリティ ソリューションの強みは、インテリジェント セキュリティ グラフで毎日処理する数兆のシグナルに [基いて構築されています](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)。 Microsoft 365 セキュリティ ソリューションには [、Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)が含まれており、電子メール、データ、デバイス、および ID 間で信号をまとめ、組織に対する高度な脅威の画像を描画するソリューションです。
 
 
 このビデオでは、展開プロセスの概要について説明します。

@@ -1,0 +1,53 @@
+---
+title: エンドポイント イベントの Microsoft Defender のストリーム
+description: 高度なハンティング イベントをイベント ハブまたは Azure ストレージ アカウントにストリーミングするように Microsoft Defender ATP を構成する方法について説明します。
+keywords: raw data export, streaming API, API, Event hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 22f4e4c974b60e291273eb9bebfa34583f4e2fb7
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51063844"
+---
+# <a name="raw-data-streaming-api"></a>Raw Data Streaming API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**適用対象:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+
+## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>高度なハンティング イベントをイベント ハブまたは Azure ストレージ アカウントにストリーミングします。
+
+Defender for Endpoint では、高度な[](advanced-hunting-overview.md)ハンティングを通じて使用可能なすべてのイベントを[イベント](https://docs.microsoft.com/azure/event-hubs/)ハブや Azure ストレージ アカウント[にストリーミングできます](https://docs.microsoft.com/azure/event-hubs/)。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
+
+
+## <a name="in-this-section"></a>このセクションの内容
+
+トピック | 説明
+:---|:---
+[エンドポイント イベントの Microsoft Defender を Azure イベント ハブにストリーミングする](raw-data-export-event-hub.md)| テナントでストリーミング API を有効にし、Defender for Endpoint を構成して高度なハンティングを [イベント](advanced-hunting-overview.md) ハブにストリーミングする方法について説明します。
+[エンドポイントイベントの Defender を Azure ストレージ アカウントにストリーミングする](raw-data-export-storage.md)| テナントでストリーミング API を有効にし、Defender for Endpoint を構成して Azure ストレージ アカウントに [高度](advanced-hunting-overview.md) なハンティングをストリーミングする方法について説明します。
+
+
+## <a name="related-topics"></a>関連項目
+- [高度なハンティングの概要](advanced-hunting-overview.md)
+- [Azure Event Hubs のドキュメント](https://docs.microsoft.com/azure/event-hubs/)
+- [Azure ストレージ アカウントのドキュメント](https://docs.microsoft.com/azure/storage/common/storage-account-overview)

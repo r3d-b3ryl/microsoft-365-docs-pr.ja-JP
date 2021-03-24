@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f767b44b66fbc69f28a6514acc3936eb3074e70b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a5ff570439dfecd287a5a5975358262af71d8025
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918480"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051020"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 全体で脅威保護機能を構成する
 
@@ -42,13 +42,13 @@ Microsoft は、すべての SaaS アプリケーション (特に Microsoft 365
 
 ![ベースライン保護を展開するプロセス](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Azure id Protection を含む前提条件AD構成します](../security/office-365-security/identity-access-prerequisites.md)。
-2. [ベースライン保護用に共通の ID および](../security/office-365-security/identity-access-policies.md) デバイス アクセス ポリシーを構成します。
-3. ゲスト ユーザー [](../security/office-365-security/identity-access-policies-guest-access.md) [、Microsoft Teams、Exchange](../security/office-365-security/teams-access-policies.md) [Online、および](../security/office-365-security/secure-email-recommended-policies.md)SharePoint Online および[OneDrive のポリシーを構成します](../security/office-365-security/sharepoint-file-access-policies.md)。
+1. [Azure id Protection を含む前提条件AD構成します](../security/defender-365-security/identity-access-prerequisites.md)。
+2. [ベースライン保護用に共通の ID および](../security/defender-365-security/identity-access-policies.md) デバイス アクセス ポリシーを構成します。
+3. ゲスト ユーザー [](../security/defender-365-security/identity-access-policies-guest-access.md) [、Microsoft Teams、Exchange](../security/defender-365-security/teams-access-policies.md) [Online、および](../security/defender-365-security/secure-email-recommended-policies.md)SharePoint Online および[OneDrive のポリシーを構成します](../security/defender-365-security/sharepoint-file-access-policies.md)。
 
 ### <a name="more-information-about-protecting-identities"></a>ID の保護の詳細
 
-- [ID とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)
+- [ID とデバイスのアクセス構成](../security/defender-365-security/microsoft-365-policies-configurations.md)
 - [Azure MFA のセキュリティ ガイダンス](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>手順 2: Microsoft Defender for Identity を構成する
@@ -77,7 +77,7 @@ Microsoft Defender for Identity を使用すると、ハイブリッド環境で
 
 ## <a name="step-3-turn-on-microsoft-365-defender"></a>手順 3: Microsoft 365 Defender を有効にする
 
-[Microsoft 365 Defender は信号](../security/mtp/microsoft-threat-protection.md) を組み合わせ、機能を 1 つのソリューションに統合します。 統合された Microsoft 365 Defender ソリューションを使用すると、セキュリティ専門家は、これらの各製品が受け取る脅威信号を一緒にまとめ、脅威の全範囲と影響を特定できます。環境に入った方法、影響を受けるもの、組織に現在どのように影響を与えています。 Microsoft 365 Defender は、攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己回復するために自動アクションを実行します。
+[Microsoft 365 Defender は信号](../security/defender/microsoft-365-defender.md) を組み合わせ、機能を 1 つのソリューションに統合します。 統合された Microsoft 365 Defender ソリューションを使用すると、セキュリティ専門家は、これらの各製品が受け取る脅威信号を一緒にまとめ、脅威の全範囲と影響を特定できます。環境に入った方法、影響を受けるもの、組織に現在どのように影響を与えています。 Microsoft 365 Defender は、攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己回復するために自動アクションを実行します。
 
 Microsoft 365 Defender は、アラート、インシデント、自動調査と対応、およびワークロード全体の高度な検出 (Microsoft Defender for Identity、microsoft Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Cloud App Security) を単一のウィンドウに統合します。 365 サービス用に 1 つ以上の Defender を構成Office、Microsoft 365 Defender を有効にしてください。 新機能は Microsoft 365 Defender に継続的に追加されます。プレビュー機能の受信をオプトインすることを検討してください。
 
@@ -85,22 +85,22 @@ Microsoft 365 Defender は、アラート、インシデント、自動調査と
 
 ![Microsoft 365 Defender の展開プロセス](../media/deploy-threat-protection/deploy-mtp-steps.png) 
 
-1. [前提条件を確認します](../security/mtp/prerequisites.md)。
-2. [Microsoft 365 Defender を有効にする](../security/mtp/mtp-enable.md)。
-3. [プレビュー機能をオプトインします](../security/mtp/preview.md)。
+1. [前提条件を確認します](../security/defender/prerequisites.md)。
+2. [Microsoft 365 Defender を有効にする](../security/defender/m365d-enable.md)。
+3. [プレビュー機能をオプトインします](../security/defender/preview.md)。
 
 ### <a name="more-information-about-microsoft-365-defender"></a>Microsoft 365 Defender の詳細
 
-- [Microsoft 365 Defender とは](../security/mtp/microsoft-threat-protection.md)
-- [Microsoft 365 Defender の新機能](../security/mtp/whats-new.md)
+- [Microsoft 365 Defender とは](../security/defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender の新機能](../security/defender/whats-new.md)
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>手順 4: Microsoft Defender for Office 365
 
-[Microsoft Defender for Office 365 は](../security/office-365-security/office-365-atp.md) 、電子メール メッセージ (添付ファイルと URL)、Officeドキュメント、およびコラボレーション ツールにおける悪意のある脅威から組織を保護します。 次の表に、Microsoft 365 E5 にOffice 365 の機能をサポートする Microsoft Defender の一覧を示します。
+[Microsoft Defender for Office 365 は](../security/defender-365-security/defender-for-office-365.md) 、電子メール メッセージ (添付ファイルと URL)、Officeドキュメント、およびコラボレーション ツールにおける悪意のある脅威から組織を保護します。 次の表に、Microsoft 365 E5 にOffice 365 の機能をサポートする Microsoft Defender の一覧を示します。
 
 |構成、保護、および検出機能|自動化、調査、修復、および教育機能|
 |---|---|
-|[添付ファイル保護](../security/office-365-security/atp-safe-attachments.md)<br/>[リンク保護](../security/office-365-security/atp-safe-links.md)<br/>[安全なドキュメント](../security/office-365-security/safe-docs.md)<br/>[SharePoint、OneDrive、Microsoft Teams 用の ATP](../security/office-365-security/atp-for-spo-odb-and-teams.md)<br/>[Defender for Office 365 保護のフィッシング詐欺対策](../security/office-365-security/set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|[脅威トラッカー](../security/office-365-security/threat-trackers.md)<br/>[脅威エクスプローラー](../security/office-365-security/threat-explorer.md)<br/>[自動調査および対応](../security/office-365-security/office-365-air.md)<br/>[攻撃シミュレータ](../security/office-365-security/attack-simulator.md)|
+|[添付ファイル保護](../security/defender-365-security/safe-attachments.md)<br/>[リンク保護](../security/defender-365-security/safe-links.md)<br/>[安全なドキュメント](../security/defender-365-security/safe-docs.md)<br/>[SharePoint、OneDrive、Microsoft Teams 用の ATP](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Defender for Office 365 保護のフィッシング詐欺対策](../security/defender-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[脅威トラッカー](../security/defender-365-security/threat-trackers.md)<br/>[脅威エクスプローラー](../security/defender-365-security/threat-explorer.md)<br/>[自動調査および対応](../security/defender-365-security/office-365-air.md)<br/>[攻撃シミュレータ](../security/defender-365-security/attack-simulator.md)|
 |
 
 Microsoft Defender for Office 365 を使用すると、組織全体のユーザーは、電子メール コンテンツとドキュメントに対する脅威の保護を利用して、より安全にコミュニケーションと共同作業Officeできます。
@@ -109,14 +109,14 @@ Microsoft Defender for Office 365 を使用すると、組織全体のユーザ�
 
 ![Microsoft Defender for Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
-1. [365 ポリシー用に Microsoft Defender をOffice構成します](../security/office-365-security/protect-against-threats.md)。
-2. [Microsoft Defender を 365 レポートOfficeして使用します](../security/office-365-security/view-reports-for-atp.md)。
-3. [脅威の調査と対応機能を使用します](../security/office-365-security/office-365-ti.md)。
+1. [365 ポリシー用に Microsoft Defender をOffice構成します](../security/defender-365-security/protect-against-threats.md)。
+2. [Microsoft Defender を 365 レポートOfficeして使用します](../security/defender-365-security/view-reports-for-mdo.md)。
+3. [脅威の調査と対応機能を使用します](../security/defender-365-security/office-365-ti.md)。
 
 ### <a name="more-information-about-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
-- [Microsoft Defender for Office 365 の概要](../security/office-365-security/office-365-atp.md)
-- [Microsoft Defender for Office 365 の新機能](../security/office-365-security/whats-new-in-office-365-atp.md)
+- [Microsoft Defender for Office 365 の概要](../security/defender-365-security/defender-for-office-365.md)
+- [Microsoft Defender for Office 365 の新機能](../security/defender-365-security/whats-new-in-defender-for-office-365.md)
 
 ## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>手順 5: エンドポイント用の Microsoft Defender を構成する
 
@@ -162,19 +162,19 @@ Microsoft Defender for Office 365 を使用すると、組織全体のユーザ�
 ![Microsoft 365 セキュリティ センター](../media/solutions-architecture-center/m365-security-center.png)
 
 Microsoft 365 セキュリティ センターは、特にセキュリティ管理者とセキュリティ運用チームを対象とします。 Microsoft 365 セキュリティ センターでは、次の機能を使用できます。
-- Secure Score を使用して組織の全体的なセキュリティ正常性 [を表示します](../security/mtp/microsoft-secure-score.md)。
-- [ID、データ、](../security/mtp/overview-security-center.md) デバイス、アプリ、インフラストラクチャの状態に関するレポートを監視および表示します。
-- インシデントを通じてアラートにドット [を接続します](../security/mtp/incident-queue.md)。
-- 自動化 [された調査と修復を使用して](../security/mtp/mtp-autoir.md) 、脅威に対処します。
-- [電子メール、データ、デバイス](../security/mtp/advanced-hunting-overview.md)、および ID に影響を与える侵入の試みや侵害アクティビティなど、脅威を積極的に探します。
-- [脅威分析を使用して、最新の](../security/mtp/latest-attack-campaigns.md) 攻撃キャンペーンと手法を理解します。
+- Secure Score を使用して組織の全体的なセキュリティ正常性 [を表示します](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)。
+- [ID、データ、](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) デバイス、アプリ、インフラストラクチャの状態に関するレポートを監視および表示します。
+- インシデントを通じてアラートにドット [を接続します](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)。
+- 自動化 [された調査と修復を使用して](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir) 、脅威に対処します。
+- [電子メール、データ、デバイス](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)、および ID に影響を与える侵入の試みや侵害アクティビティなど、脅威を積極的に探します。
+- [脅威分析を使用して、最新の](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) 攻撃キャンペーンと手法を理解します。
 - ...その他!
 
 ### <a name="more-information-about-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの詳細
 
-- [Microsoft 365 セキュリティ センターの使用を開始します](../security/mtp/overview-security-center.md)。
-- [レポートを監視および表示します](../security/mtp/overview-security-center.md)。
-- [Microsoft 365 のセキュリティ ポータルを参照してください](../security/mtp/portals.md)。
+- [Microsoft 365 セキュリティ センターの使用を開始します](../security/defender/overview-security-center.md)。
+- [レポートを監視および表示します](../security/defender/overview-security-center.md)。
+- [Microsoft 365 のセキュリティ ポータルを参照してください](../security/defender/portals.md)。
 
 ## <a name="step-8-train-users"></a>手順 8: ユーザーのトレーニング
 
