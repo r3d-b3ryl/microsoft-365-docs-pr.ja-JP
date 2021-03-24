@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を使用するか、構成に従ってコンテンツが自動的に削除されるかにかかわらず、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: d2c2e4e469efe16277f34a902f6720dc2b39e908
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9786b5e93801153e168784d51e37a00ee1822bc
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918043"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051929"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
@@ -44,7 +44,7 @@ Microsoft365 コンプライアンス センターの [**処理**] タブに正�
 
 さらに、処理プロセス中にアイテムの内容を表示するには、**コンテンツ エクスプローラーのコンテンツ閲覧者** と **コンテンツ エクスプローラーのリスト閲覧者** の 2 つの役割グループにユーザーを追加します。 ユーザーがこれらの役割グループのアクセス許可を持っていない場合でも、処理確認操作を選択して処理確認を完了することができますが、コンプライアンス センターからアイテムのコンテンツを表示することができません。
 
-これらのアクセス許可を構成する手順については、「[Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
+これらのアクセス許可を構成する手順については、「[Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
 
 ### <a name="enable-auditing"></a>監査を有効にする
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: b88e32ccfc0f82749ede2b0919001e9c29f7f7be
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a6b04bcce7d0fe505173a807fbc2d4105831419c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906019"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051889"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -64,7 +64,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 既定の役割を使用する代わりに、新しい役割グループを作成し、**秘密度ラベル管理者** の役割または **組織の構成** の役割をこのグループに追加できます。 読み取り専用の役割の場合は、**秘密度ラベルリーダー** を使用します。 
 
-ユーザーを既定の役割に追加する方法、または独自の役割グループを作成する方法については、「[ユーザーに Office 365 セキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
+ユーザーを既定の役割に追加する方法、または独自の役割グループを作成する方法については、「[ユーザーに Office 365 セキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
 
 これらのアクセス許可は、機密ラベルとそのラベル ポリシーの作成と構成を行う場合にのみ必要です。 アプリまたはサービスでラベルを適用するためには必要はありません。 秘密度ラベルに関連する特定の構成に追加のアクセス許可が必要な場合、それらのアクセス許可はそれぞれのドキュメントの説明に記載されています。
 

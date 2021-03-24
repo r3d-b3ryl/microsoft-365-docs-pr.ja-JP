@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eabc9a59592ed2b1849bac8c7b716e68d4b9e214
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f61a67b29dec114d222dfc7b25e44c163859ba41
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922551"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051739"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -900,7 +900,7 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 
 ### <a name="quarantine-activities"></a>検疫アクティビティ
 
-次の表に、監査ログで検索できる検疫アクティビティを示します。 検疫の詳細については、「[Office 365 でのメール メッセージの検疫](../security/office-365-security/quarantine-email-messages.md)」を参照してください。
+次の表に、監査ログで検索できる検疫アクティビティを示します。 検疫の詳細については、「[Office 365 でのメール メッセージの検疫](../security/defender-365-security/quarantine-email-messages.md)」を参照してください。
 
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
