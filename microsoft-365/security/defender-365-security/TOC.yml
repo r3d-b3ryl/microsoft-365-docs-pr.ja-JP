@@ -1,0 +1,67 @@
+- name: Microsoft 365 セキュリティ
+  href: index.yml
+  expanded: true
+  items:
+    - name: Office 365 セキュリティ
+      href: index.yml
+      items:
+        - name: 概要
+          items:
+            - name: セキュリティのロードマップ
+              href: security-roadmap.md
+            - name: Exchange Online Protection
+              items:
+                - name: Exchange Online Protection の概要
+                  href: exchange-online-protection-overview.md
+                - name: EOP の機能
+                  href: eop-features.md
+                - name: スタンドアロン EOP のアクセス許可
+                  href: feature-permissions-in-eop.md
+                - name: スタンドアロン EOP の Exchange 管理者センター
+                  href: exchange-admin-center-in-exchange-online-protection-eop.md
+                - name: スタンドアロン EOP で受信者を管理する
+                  href: manage-recipients-in-eop.md
+                - name: EOP のメール フロー
+                  href: mail-flow-in-eop.md
+                - name: 検疫する
+                  href: quarantine-email-messages.md
+                - name: スタンドアロン EOP の監査レポート
+                  href: auditing-reports-in-eop.md
+            - name: Defender for Office 365
+              href: defender-for-office-365.md
+            - name: Defender for Office 365 の新機能
+              href: whats-new-in-defender-for-office-365.md
+            - name: SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365
+              href: mdo-for-spo-odb-and-teams.md
+            - name: 新しい Microsoft 365 セキュリティ センター
+              href: threat-explorer.md
+            - name: AIR の概要
+              href: office-365-air.md
+            - name: 自動調査と対応のしくみ
+              href: automated-investigation-response-office.md
+            - name: 修復アクション
+              href: air-remediation-actions.md
+            - name: マルウェア対策保護
+              href: anti-malware-protection.md
+            - name: スパム対策保護
+              href: anti-spam-protection.md
+            - name: フィッシング対策保護
+              href: anti-phishing-protection.md
+            - name: スプーフィング対策保護
+              href: anti-spoofing-protection.md
+            - name: Defender for Office 365 の安全な添付ファイル
+              href: safe-attachments.md
+            - name: Defender for Office 365 の安全なリンク
+              href: safe-links.md
+            - name: 送信スパム保護
+              href: outbound-spam-controls.md
+            - name: セキュリティ ダッシュボードの概要
+              href: security-dashboard.md
+            - name: 脅威の調査および対応のしくみ
+              href: office-365-ti.md
+            - name: Office 365 セキュリティ インシデント対応
+              href: office365-security-incident-response-overview.md
+            - name: セキュリティ/コンプライアンス センターのメール追跡の分析情報
+              href: mail-flow-insights-v2.md
+            - name: 選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス
+              href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
