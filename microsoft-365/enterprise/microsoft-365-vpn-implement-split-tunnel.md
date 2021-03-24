@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: 2feb03f2142639a1c1de4ff9a69768e23f282546
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93adc70882e0c8ce9752cb471b13c301a4a59bd4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924226"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051284"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -274,7 +274,7 @@ Teams が音声や _Session Traversal Utilities for NAT (STUN)_ 増幅攻撃な�
 - **Pulse Secure**: [VPN トンネリング: 分割トンネリングを構成して Office365 アプリケーションを除外する方法](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
 - **チェック ポイント VPN**: 365 および他の SaaS アプリケーションOfficeスプリット トンネル [を構成する方法](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 Microsoft Security Team[](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)は、今日の独自のリモート作業シナリオで、セキュリティ専門家と IT が最新のセキュリティ制御を実現するための主要な方法について概説する記事を公開しました。 さらに、この件に関してお客様からよく寄せられる質問と回答を以下に示します。
 
@@ -304,7 +304,7 @@ Q1 に記載されているテナント制限機能に加えて、「[条件付�
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>ウイルスやマルウェアからの保護はどうすればいいですか？
 
-同じく、Office 365 は、サービス自体のさまざまな層にある「最適化」のマークのあるエンドポイントを保護します。これは[このドキュメントで概説されています](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 上記のように、プロトコル/トラフィックを完全に理解していない可能性のあるデバイスと一緒に実行するのではなく、サービス自体にこれらのセキュリティ要素を提供する方が非常に効率的です。既定では、SharePoint Online は [既知のマルウェアのファイルアップロードを自動的](../security/office-365-security/virus-detection-in-spo.md) にスキャンします
+同じく、Office 365 は、サービス自体のさまざまな層にある「最適化」のマークのあるエンドポイントを保護します。これは[このドキュメントで概説されています](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 上記のように、プロトコル/トラフィックを完全に理解していない可能性のあるデバイスと一緒に実行するのではなく、サービス自体にこれらのセキュリティ要素を提供する方が非常に効率的です。既定では、SharePoint Online は [既知のマルウェアのファイルアップロードを自動的](../security/defender-365-security/virus-detection-in-spo.md) にスキャンします
 
 上記の Exchange エンドポイントでは [、Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) と [microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) は、サービスへのトラフィックのセキュリティを提供する優れた仕事をします。
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft Defender for Office 365 を設定し、フィッシング、マルウェア、その他の脅威から機密データを保護します。
-ms.openlocfilehash: 0424fd56e30477f4e8d9e84b7ac78ba6255781fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80ad3767b277e4808b6df4bdd977688794649e11
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913288"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050848"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -35,7 +35,7 @@ ms.locfileid: "50913288"
 
 開始する前に、365 Secure Score Officeを確認してください。 Office 365 Secure Score は、通常のアクティビティとセキュリティ設定に基づいて組織のセキュリティを分析し、スコアを割り当てる。 まず、現在のスコアをメモします。 スコアを上げするには、この記事で推奨されるアクションを完了します。 目標は、最大スコアを達成するのではなく、ユーザーの生産性に悪影響を及ぼしない環境を保護する機会を認識する方法です。
 
-詳細については [、「Microsoft Secure Score」を参照してください](../security/mtp/microsoft-secure-score.md)。
+詳細については [、「Microsoft Secure Score」を参照してください](../security/defender/microsoft-secure-score.md)。
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>メール内のマルウェアに対する保護のレベルを上げる
 
@@ -57,7 +57,7 @@ ms.locfileid: "50913288"
 
 6. [保存] **を選択します。**
 
-詳細については [、「EOP でのマルウェア対策保護」を参照してください](../security/office-365-security/anti-malware-protection.md)。
+詳細については [、「EOP でのマルウェア対策保護」を参照してください](../security/defender-365-security/anti-malware-protection.md)。
 
 ## <a name="protect-against-ransomware"></a>ランサムウェアから保護する
 
@@ -83,13 +83,13 @@ ms.locfileid: "50913288"
 
 |Setting|ファイルの添付ファイルを開く前にユーザーにOfficeする||
 |---|---|---|
-|名前|ランサムウェア対策ルール: ユーザーに警告する|
+|Name|ランサムウェア対策ルール: ユーザーに警告する|
 |場合は、このルールを適用します。 . .|任意の添付ファイル 。 . . ファイル拡張子が一致します。 . .|
 |単語または語句を指定する|次のファイルの種類を追加します。  <br/> dotm、docm、xlsm、sltm、xla、xlam、xll、pptm、potm、ppam、ppsm、sldm|
 |次の操作を行います。 . .|受信者にメッセージで通知します。|
 |メッセージ テキストを提供する|これらの種類のファイルは、悪意のあるコードを含むマクロが含まれている可能性があるから、知らない人から開かれません。|
 
-詳しくは、以下を参照してください。
+詳細については、以下を参照してください。
 
 - [ランサムウェア: リスクを軽減する方法](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -115,7 +115,7 @@ ms.locfileid: "50913288"
 
 |Setting|ファイルの添付ファイルを開く前にユーザーにOfficeする|
 |---|---|
-|名前|外部ドメインへの電子メールの自動転送を防止する|
+|Name|外部ドメインへの電子メールの自動転送を防止する|
 |... の場合は、このルールを適用します。|送信者 。 . . は外部/内部です。 . . 組織内|
 |条件の追加|メッセージのプロパティ 。 . . メッセージの種類を含める。 . . 自動転送|
 |次の ..を実行します。|メッセージをブロックします。 . . メッセージを拒否し、説明を含める。|
@@ -138,13 +138,13 @@ Microsoft Defender for Office 365 でフィッシング対策ポリシーを作�
 
 4. [フィッシング **対策] ページで、[+** 作成] **を選択します**。 ウィザードが起動し、フィッシング対策ポリシーを定義する手順を実行します。
 
-5. 次の表で推奨されるポリシーの名前、説明、および設定を指定します。 詳細については、「365 オプションの Microsoft Defender でのフィッシング対策ポリシーについて [Office」を参照してください](../security/office-365-security/set-up-anti-phishing-policies.md)。
+5. 次の表で推奨されるポリシーの名前、説明、および設定を指定します。 詳細については、「365 オプションの Microsoft Defender でのフィッシング対策ポリシーについて [Office」を参照してください](../security/defender-365-security/set-up-anti-phishing-policies.md)。
 
 6. 設定を確認した後、必要に応じて [このポリシーを作成する] または **[****保存]** を選択します。
 
 |設定またはオプション|推奨される設定値|
 |---|---|
-|名前|ドメインと最も価値のあるキャンペーン スタッフ|
+|Name|ドメインと最も価値のあるキャンペーン スタッフ|
 |説明|最も重要なスタッフとドメインが偽装されていないか確認します。|
 |保護対象のユーザーの追加|[+**条件の追加] を選択します。受信者は .** ユーザー名を入力するか、候補者、キャンペーン マネージャー、その他の重要なスタッフ メンバーのメール アドレスを入力します。 偽装から保護する最大 20 の内部アドレスと外部アドレスを追加できます。|
 |保護対象のドメインの追加|Select **+ Add a condition, the recipient domain is**. Microsoft 365 サブスクリプションに関連付けられているカスタム ドメイン (定義されている場合) を入力します。 複数のドメインを入力できます。|
@@ -175,13 +175,13 @@ Microsoft Defender for Office 365 でフィッシング対策ポリシーを作�
 
 |設定またはオプション|推奨される設定値|
 |---|---|
-|名前|検出されたマルウェアを使用して、現在および将来のメールをブロックします。|
+|Name|検出されたマルウェアを使用して、現在および将来のメールをブロックします。|
 |説明|検出されたマルウェアを使用して、現在および将来の電子メールと添付ファイルをブロックします。|
 |添付ファイルの不明なマルウェアの応答を保存する|[ **ブロック] を選択します。 検出されたマルウェアを使用して現在および将来のメールと添付ファイルをブロックします**。|
 |検出時に添付ファイルをリダイレクトする|リダイレクトを有効にする (このボックスを選択します) 管理者アカウントまたは検疫用のメールボックスのセットアップを入力します。          添付ファイルのマルウェア スキャンが時間切れまたはエラーが発生した場合は、上記の選択項目を適用します (このボックスを選択します)。|
 |適用先|受信者ドメインはです。 . . ドメインを選択します。|
 
-詳細については、「Microsoft Defender for microsoft Defender for Office [365」を参照してください](../security/office-365-security/set-up-anti-phishing-policies.md)。
+詳細については、「Microsoft Defender for microsoft Defender for Office [365」を参照してください](../security/defender-365-security/set-up-anti-phishing-policies.md)。
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>セーフ リンクを使用したフィッシング攻撃からの保護
 
@@ -219,12 +219,12 @@ Microsoft Defender for Office 365 でフィッシング対策ポリシーを作�
 
 |設定またはオプション|推奨される設定値|
 |---|---|
-|名前|ドメイン内のすべての受信者の安全なリンク ポリシー|
+|Name|ドメイン内のすべての受信者の安全なリンク ポリシー|
 |メッセージ内の不明な潜在的に悪意のある URL のアクションを選択する|[ **オン] を選択すると、ユーザー** がリンクをクリックすると、URL が書き換えされ、既知の悪意のあるリンクの一覧に対してチェックされます。|
 |安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする|このボックスを選択します。|
 |適用先|受信者ドメインはです。 . . ドメインを選択します。|
 
-詳細については、「セーフ リンク [」を参照してください](../security/office-365-security/atp-safe-links.md)。
+詳細については、「セーフ リンク [」を参照してください](../security/defender-365-security/safe-links.md)。
 
 ## <a name="go-to-intune-admin-center"></a>Intune 管理センターに移動する
 

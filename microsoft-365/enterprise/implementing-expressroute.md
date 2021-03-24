@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute for Office 365 を実装する方法について説明します。これは、365 サービスに接続されている多数のインターネットにOfficeを提供します。
-ms.openlocfilehash: d0f0b5156aae5a3e2c38f51ba0b74738918593e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909834"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051368"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
@@ -191,7 +191,7 @@ ExpressRoute 回線がネットワークを Microsoft ネットワークに接�
 
 |**カリフォルニアとニューヨークの ExpressRoute meet-me の計画場所**||
 |:-----|:-----|
-|Location  <br/> |人数  <br/> |インターネット出力を通して Microsoft ネットワークに予想される待機時間  <br/> |ExpressRoute を使用した Microsoft ネットワークへの予期される待機時間  <br/> |
+|場所  <br/> |人数  <br/> |インターネット出力を通して Microsoft ネットワークに予想される待機時間  <br/> |ExpressRoute を使用した Microsoft ネットワークへの予期される待機時間  <br/> |
 |Los Angeles  <br/> |10,000  <br/> |~15ms  <br/> |~10ms (シリコン バレー経由)  <br/> |
 |ワシントン DC  <br/> |15,000  <br/> |~20ms  <br/> |~10ms (ニューヨーク経由)  <br/> |
 |ダラス  <br/> |5,000  <br/> |~15ms  <br/> |~40ms (ニューヨーク経由)  <br/> |
@@ -225,7 +225,7 @@ Office 365 地域、ExpressRoute ネットワーク サービス プロバイダ
 
 - ExpressRoute ルートがネットワークにアドバタイズされる時間と、クライアントがインターネットまたは ExpressRoute パスを選択するメカニズムを決定します。たとえば、直接ルーティングやアプリケーション プロキシなどです。
 
-- 送信者ポリシー フレームワーク エントリを含む [DNS レコードの変更を](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) 計画します。
+- 送信者ポリシー フレームワーク エントリを含む [DNS レコードの変更を](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) 計画します。
 
 - 発信元と受信元 NAT を含む NAT 戦略を計画します。
 
@@ -572,7 +572,7 @@ ExpressRoute 接続を使用して Office 365 を展開する場合は、Express
   
 ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/implementexpressroute365]()
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   

@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Microsoft 365 のデバイス管理をセットアップするためのロードマップ。
-ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918968"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051462"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 のデバイス管理ロードマップ
 
@@ -54,10 +54,10 @@ Microsoft Intune を使用して、モバイル デバイス管理またはモ�
  
 ## <a name="identity-and-device-access-recommendations"></a>ID とデバイスのアクセスに関する推奨事項
 
-Microsoft では、セキュアで生産性の高い労働力を確保するために [ID とデバイスのアクセス](../security/office-365-security/microsoft-365-policies-configurations.md)に関する一連の推奨事項を提供しています。 デバイス アクセスの場合は、次の記事の推奨事項と設定を使用します。
+Microsoft では、セキュアで生産性の高い労働力を確保するために [ID とデバイスのアクセス](../security/defender-365-security/microsoft-365-policies-configurations.md)に関する一連の推奨事項を提供しています。 デバイス アクセスの場合は、次の記事の推奨事項と設定を使用します。
 
-- [前提条件](../security/office-365-security/identity-access-prerequisites.md)
-- [共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)
+- [前提条件](../security/defender-365-security/identity-access-prerequisites.md)
+- [共通 ID とデバイスのアクセス ポリシー](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 社が Microsoft 365 のデバイス管理を行った方法
 

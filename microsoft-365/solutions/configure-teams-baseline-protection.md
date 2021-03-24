@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 678e9824682339afda32342e70848492b738ec6d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916336"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052507"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -31,15 +31,15 @@ ms.locfileid: "50916336"
 
 ## <a name="initial-protections"></a>初期保護
 
-最初のステップとして、基本的な ID とデバイス アクセス ポリシーの構成をお勧めします。 詳細については、「[Policy recommendations for securing Teams chats, groups, and files (Teams チャット、グループ、ファイルをセキュリティで保護するためのポリシーの推奨事項)](../security/office-365-security/teams-access-policies.md)」を参照してください。
+最初のステップとして、基本的な ID とデバイス アクセス ポリシーの構成をお勧めします。 詳細については、「[Policy recommendations for securing Teams chats, groups, and files (Teams チャット、グループ、ファイルをセキュリティで保護するためのポリシーの推奨事項)](../security/defender-365-security/teams-access-policies.md)」を参照してください。
 
 また、ドキュメント、添付ファイル、リンクなどに含まれているマルウェアから保護するために、基本的な Defender for Office 365 機能をオンにすることもお勧めします。 次の表の各オプションをオンにすることをお勧めします。
 
 |オプション|情報|
 |:------|:-----------|
-|SPO、OneDrive、Teams 用の安全な添付ファイル機能|[添付ファイル保護](../security/office-365-security/atp-safe-attachments.md)<br>[Defender for Office 365 - SharePoint、OneDrive、Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)|
-|安全なドキュメント|[Microsoft Defender for Office 365 の安全なドキュメント](../security/office-365-security/safe-docs.md)|
-|Teams 用の安全なリンク|[Teams での Office 365 の安全なリンク](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[リンク保護](../security/office-365-security/atp-safe-links.md)|
+|SPO、OneDrive、Teams 用の安全な添付ファイル機能|[添付ファイル保護](../security/defender-365-security/safe-attachments.md)<br>[Defender for Office 365 - SharePoint、OneDrive、Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)|
+|安全なドキュメント|[Microsoft Defender for Office 365 の安全なドキュメント](../security/defender-365-security/safe-docs.md)|
+|Teams 用の安全なリンク|[Teams での Office 365 の安全なリンク](../security/defender-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[リンク保護](../security/defender-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Teams ゲスト共有
 

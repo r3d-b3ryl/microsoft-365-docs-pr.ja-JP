@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Office365 を使用して 1 つ以上のメール アカウントへのメール転送を設定します。
-ms.openlocfilehash: 593a4d1ca906bdee44ec00e260949ff75b582340
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cdefab3df59f1c57abbc221943b58c978ff582a9
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915892"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050716"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Microsoft 365 でのメール転送の構成
 
@@ -42,7 +42,7 @@ ms.locfileid: "50915892"
 組織の管理者として、ユーザーのメールボックスのメール転送をセットアップする会社の要件がある場合があります。 メール転送を利用すれば、あるユーザーのメールボックスに送信されたメール メッセージを組織内外の別のユーザーのメールボックスに転送できます。
 
 > [!IMPORTANT]
-> 送信スパム フィルター ポリシーを使用して、外部受信者への自動転送を制御できます。 詳細については [、「Microsoft 365](../../security/office-365-security/external-email-forwarding.md?preserve-view=true&view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)で外部メールの自動転送を制御する」を参照してください。
+> 送信スパム フィルター ポリシーを使用して、外部受信者への自動転送を制御できます。 詳細については [、「Microsoft 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)で外部メールの自動転送を制御する」を参照してください。
 
 ## <a name="configure-email-forwarding"></a>メール転送を構成する
 

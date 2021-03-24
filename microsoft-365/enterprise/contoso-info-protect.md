@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 for enterprise の情報保護機能を使用してクラウド内のデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911040"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051498"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -76,9 +76,9 @@ Contoso は、次の手順に従って、情報保護要件に合った Microsof
 
 Exchange Online と SharePoint のロールアウトの一環として、Contoso は次の条件付きアクセス ポリシーのセットを構成し、適切なグループに適用しました。
 
-- [デバイスで管理されるアプリケーション アクセスと管理されないアプリケーション アクセスのポリシー](../security/office-365-security/identity-access-policies.md)
-- [Exchange Online アクセス ポリシー](../security/office-365-security/secure-email-recommended-policies.md)
-- [SharePoint アクセス ポリシー](../security/office-365-security/sharepoint-file-access-policies.md)
+- [デバイスで管理されるアプリケーション アクセスと管理されないアプリケーション アクセスのポリシー](../security/defender-365-security/identity-access-policies.md)
+- [Exchange Online アクセス ポリシー](../security/defender-365-security/secure-email-recommended-policies.md)
+- [SharePoint アクセス ポリシー](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 情報保護のための Contoso ポリシーのセットを次に示します。
 
@@ -117,7 +117,7 @@ Contoso 社が、ID およびアクセス管理、脅威保護、情報保護、
 
 ## <a name="see-also"></a>関連項目
 
-[セキュリティのロードマップ](../security/office-365-security/security-roadmap.md)
+[セキュリティのロードマップ](../security/defender-365-security/security-roadmap.md)
 
 [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 

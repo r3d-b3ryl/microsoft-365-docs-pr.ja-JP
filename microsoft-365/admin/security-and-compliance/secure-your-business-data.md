@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。 '
-ms.openlocfilehash: 5607d301ceda44fd582055d49daa9082ee321cb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914488"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050680"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>ビジネス プラン用の Microsoft 365 をセキュリティで保護する上位 10 の方法
 
@@ -47,15 +47,15 @@ Microsoft では、サービス プランに適用される次の表に示すタ
 |1|[多要素認証をセットアップする](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[ユーザーをトレーニングする](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[専用の管理者アカウントを使用する](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4 |[メール内のマルウェアに対する保護のレベルを上げる](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[ランサムウェアから保護する](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6 |[電子メールの自動転送を停止する](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7 |[メッセージOfficeを使用する](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8 |[フィッシング攻撃からメールを保護する](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[安全な添付ファイルを使用して悪意のある添付ファイルやファイルから保護する](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10  |[セーフ リンクを使用したフィッシング攻撃からの保護](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4|[メール内のマルウェアに対する保護のレベルを上げる](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5|[ランサムウェアから保護する](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|6|[電子メールの自動転送を停止する](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|7|[メッセージOfficeを使用する](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8|[フィッシング攻撃からメールを保護する](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9|[安全な添付ファイルを使用して悪意のある添付ファイルやファイルから保護する](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[セーフ リンクを使用したフィッシング攻撃からの保護](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-開始する前に [、Microsoft 365 セキュリティ](../../security/mtp/microsoft-secure-score.md) センターで Microsoft 365 Secure Score を確認してください。 一元化されたダッシュボードから、Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 Microsoft 製品とサービスの広範なセットに対する追加の分析情報と可視性を活用すると、組織のセキュリティ正常性に関する自信を持って報告できます。
+開始する前に [、Microsoft 365 セキュリティ](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) センターで Microsoft 365 Secure Score を確認してください。 一元化されたダッシュボードから、Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 Microsoft 製品とサービスの広範なセットに対する追加の分析情報と可視性を活用すると、組織のセキュリティ正常性に関する自信を持って報告できます。
 
 ![Microsoft Secure Score のスクリーンショット](../../media/secure-score.png)
 
@@ -132,7 +132,7 @@ Microsoft 365 環境にはマルウェアに対する保護が含まれていま
 
 6. [保存] **を選択します。**
 
-詳細については [、「EOP でのマルウェア対策保護」を参照してください](../../security/office-365-security/anti-malware-protection.md)。
+詳細については [、「EOP でのマルウェア対策保護」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection)。
 
 ## <a name="5-protect-against-ransomware"></a>5: ランサムウェアから保護する
 <a name="ransomware"> </a>
@@ -161,7 +161,7 @@ Microsoft 365 環境にはマルウェアに対する保護が含まれていま
     
 | Setting | ファイルの添付ファイルを開く前にユーザーにOfficeする | ランサムウェアなどの悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
 |:-----|:-----|:-----|
-|名前  <br/> |ランサムウェア対策ルール: ユーザーに警告する  <br/> |ランサムウェア対策ルール: ファイルの種類をブロックする  <br/> |
+|Name  <br/> |ランサムウェア対策ルール: ユーザーに警告する  <br/> |ランサムウェア対策ルール: ファイルの種類をブロックする  <br/> |
 |場合は、このルールを適用します。 . .  <br/> |任意の添付ファイル 。 . . ファイル拡張子が一致します。 . .  <br/> |任意の添付ファイル 。 . . ファイル拡張子が一致します。 . .  <br/> |
 |単語または語句を指定する  <br/> |次のファイルの種類を追加します。  <br/> dotm、docm、xlsm、sltm、xla、xlam、xll、pptm、potm、ppam、ppsm、sldm  <br/> |次のファイルの種類を追加します。  <br/> ade, adp、ani、bas、bat、chm、cmd、com、cpl、crt、hlp、hta、inf、ins、ins、job、js、jse、lnk、mda、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、sct、shs、url、vb、vbe、vbs、wsc、wsf、wsh、  <br/> |
 |次の操作を行います。 . .  <br/> |免責事項の先頭に追加する  <br/> |メッセージをブロックします。 . . メッセージを拒否し、説明を含める  <br/> |
@@ -170,7 +170,7 @@ Microsoft 365 環境にはマルウェアに対する保護が含まれていま
 > [!TIP]
 > ブロックするファイルを手順 4 のマルウェア対策リスト [に追加することもできます](#4-raise-the-level-of-protection-against-malware-in-mail)。
 
-詳しくは、以下を参照してください。
+詳細については、以下を参照してください。
 
 - [ランサムウェア: リスクを軽減する方法](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -197,7 +197,7 @@ Microsoft 365 環境にはマルウェアに対する保護が含まれていま
 
 |Setting|外部ドメインへのメールの自動転送を拒否する|
 |---|---|
-|名前|外部ドメインへの電子メールの自動転送を防止する|
+|Name|外部ドメインへの電子メールの自動転送を防止する|
 |... の場合は、このルールを適用します。|送信者 。 . . は外部/内部です。 . . 組織内|
 |条件の追加|受信者 。 . . は外部/内部です。 . . 組織外|
 |条件の追加|メッセージのプロパティ 。 . . メッセージの種類を含める。 . . 自動転送|
@@ -254,13 +254,13 @@ Defender for Office 365 でフィッシング対策ポリシーを作成する�
 
 4. [フィッシング対策] ページで、[+ 作成] **を選択します**。 ウィザードが起動し、フィッシング対策ポリシーを定義する手順を実行します。
 
-5. 推奨されるポリシーの名前、説明、設定を以下のグラフで指定します。 詳細については、「Microsoft Defender のフィッシング対策ポリシーについて」を参照 [Office 365 オプション](../../security/office-365-security/set-up-anti-phishing-policies.md) について説明します。
+5. 推奨されるポリシーの名前、説明、設定を以下のグラフで指定します。 詳細については、「Microsoft Defender のフィッシング対策ポリシーについて」を参照 [Office 365 オプション](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies) について説明します。
 
 6. 設定を確認した後、必要に応じて [ **このポリシーの作成** ] または [ **保存]** を選択します。
 
 |設定またはオプション|推奨される設定値|
 |---|---|
-|名前|ドメインと最も価値のあるキャンペーン スタッフ|
+|Name|ドメインと最も価値のあるキャンペーン スタッフ|
 |説明|最も重要なスタッフとドメインが偽装されていないか確認します。|
 |保護対象のユーザーの追加|[+**条件の追加] を選択します。受信者は .** ユーザー名を入力するか、候補者、キャンペーン マネージャー、その他の重要なスタッフ メンバーのメール アドレスを入力します。 偽装から保護する最大 20 の内部アドレスと外部アドレスを追加できます。|
 |保護対象のドメインの追加|Select **+ Add a condition, the recipient domain is**. Microsoft 365 サブスクリプションに関連付けられているカスタム ドメイン (定義されている場合) を入力します。 複数のドメインを入力できます。|
@@ -270,7 +270,7 @@ Defender for Office 365 でフィッシング対策ポリシーを作成する�
 |適用先|**[受信者のドメインが次の場合]** を選択します。 **[これらのいずれか]** では、**[選択]** を選択します。 **[+ 追加]** を選択します。 ドメインの名前の横にあるチェック ボックスをオンにします (たとえば、リスト contoso.com をクリックし、[追加] を **選択します**。 [**完了**] を選択します。|
 |
 
-詳細については、「Defender [for Office 365」を参照](../../security/office-365-security/configure-atp-anti-phishing-policies.md)してください。
+詳細については、「Defender [for Office 365」を参照](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)してください。
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: 安全な添付ファイルを使用して悪意のある添付ファイルやファイルから保護する
 <a name="atp"> </a>
@@ -295,14 +295,14 @@ Defender for Office 365 でフィッシング対策ポリシーを作成する�
 
 |設定またはオプション|推奨される設定値|
 |---|---|
-|名前|検出されたマルウェアを使用して、現在および将来のメールをブロックします。|
+|Name|検出されたマルウェアを使用して、現在および将来のメールをブロックします。|
 |説明|検出されたマルウェアを使用して、現在および将来の電子メールと添付ファイルをブロックします。|
 |添付ファイルの不明なマルウェアの応答を保存する|[ **ブロック] を選択します。 検出されたマルウェアを使用して現在および将来のメールと添付ファイルをブロックします**。|
 |検出時に添付ファイルをリダイレクトする|リダイレクトを有効にする (このボックスを選択) <br/> 検疫用の管理者アカウントまたはメールボックスのセットアップを入力します。 <br/> 添付ファイルのマルウェア スキャンが時間切れまたはエラーが発生した場合は、上記の選択項目を適用します (このボックスを選択します)。|
 |適用先|受信者ドメインはです。 . . ドメインを選択します。|
 |
 
-詳細については、「Defender [for Office 365」を参照](../../security/office-365-security/configure-atp-anti-phishing-policies.md)してください。
+詳細については、「Defender [for Office 365」を参照](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)してください。
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: セーフ リンクを使用してフィッシング攻撃から保護する
 <a name="phishingatp"> </a>
@@ -343,10 +343,10 @@ Defender for Office 365 でフィッシング対策ポリシーを作成する�
 
 |設定またはオプション|推奨される設定値|
 |---|---|
-|名前|ドメイン内のすべての受信者の安全なリンク ポリシー|
+|Name|ドメイン内のすべての受信者の安全なリンク ポリシー|
 |メッセージ内の不明な潜在的に悪意のある URL のアクションを選択する|[ **オン] を選択すると、ユーザー** がリンクをクリックすると、URL が書き換えされ、既知の悪意のあるリンクの一覧に対してチェックされます。|
 |ファイルを指す疑わしいリンクやリンクに対してリアルタイムの URL スキャンを適用する|このボックスを選択します。|
 |適用先|受信者ドメインはです。 . . ドメインを選択します。|
 |
 
-詳細については [、「Safe Links in Microsoft Defender for microsoft Defender for Office 365」を参照してください](../../security/office-365-security/atp-safe-links.md)。
+詳細については [、「Safe Links in Microsoft Defender for microsoft Defender for Office 365」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links)。

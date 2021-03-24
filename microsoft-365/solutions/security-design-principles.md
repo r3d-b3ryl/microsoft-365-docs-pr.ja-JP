@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b6696d15d728e6b66be5e54a9a3c372564c9f187
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7cd9098766024093a0b9fa2d6e95131bf13d09df
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920858"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052484"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>セキュリティ上のハードル :1 人の建築家の視点
 
@@ -49,7 +49,7 @@ ms.locfileid: "50920858"
 
 次に、ゼロ信頼アーキテクチャアプローチを採用します。 これは、ID ベースの最新のセキュリティ境界の構築から始まります。 セキュリティ アーキテクチャを設計し、オンプレムでもクラウドでも、すべてのアクセス試行が検証されるまで信頼されていないと処理されます。"信頼しない、常に確認する"。 この設計アプローチは、セキュリティと生産性を向上させるだけでなく、ユーザーが任意の種類のデバイスでどこからでも作業することもできます。 Microsoft 365 に含まれる高度なクラウド コントロールは、ユーザーの ID を保護しながら、ユーザー リスク レベルに基づいて貴重なリソースへのアクセスを制御するのに役立ちます。
 
-推奨される構成については、「Identity and [device access configurations」を参照してください](../security/office-365-security/microsoft-365-policies-configurations.md)。
+推奨される構成については、「Identity and [device access configurations」を参照してください](../security/defender-365-security/microsoft-365-policies-configurations.md)。
 
 ## <a name="transition-security-controls-to-the-cloud"></a>セキュリティ制御をクラウドに移行する
 

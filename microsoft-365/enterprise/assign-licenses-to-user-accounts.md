@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Microsoft 365 ライセンスを個別に、またはグループ メンバーシップに基づいてユーザー アカウントに割り当てる方法について説明します。
-ms.openlocfilehash: 6bba3cd767787f450840c5cae6c30f2be21bed1b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2fe1e2f959fae8b0bc82a7dcd4f65f33b21c368a
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905442"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051534"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Microsoft 365 ライセンスをユーザー アカウントに割り当てる
 
@@ -67,7 +67,7 @@ Azure ADのセキュリティ グループを構成して、一連のサブス�
 
 ライセンスが割り当てられている適切な一連のユーザー アカウントを使用して、次の準備ができました。
 
-- [セキュリティの実装](../security/office-365-security/security-roadmap.md)
+- [セキュリティの実装](../security/defender-365-security/security-roadmap.md)
 - [Microsoft 365 Apps などのクライアント ソフトウェアを展開する](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [デバイス管理のセットアップ](device-management-roadmap-microsoft-365.md)
 - [サービスとアプリケーションの構成](configure-services-and-applications.md)

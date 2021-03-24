@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド専用の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 3e5a9ef1f610bf3dc6d23c9e584e179fb8ab9ca9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 537718eb0efcffc296162a4458158efcbdad9986
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905142"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051546"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件
 
 *このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
 
-[ID およびデバイス アクセス](../security/office-365-security/microsoft-365-policies-configurations.md) 構成は、Azure Active Directory (Azure Active Directory ) と統合されているすべてのサービスへのアクセスを保護するための一連の推奨構成と条件付きアクセス ポリシー AD。
+[ID およびデバイス アクセス](../security/defender-365-security/microsoft-365-policies-configurations.md) 構成は、Azure Active Directory (Azure Active Directory ) と統合されているすべてのサービスへのアクセスを保護するための一連の推奨構成と条件付きアクセス ポリシー AD。
 
-この記事では、ID とデバイス アクセス用の[クラウド専用の前提条件構成](../security/office-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。
+この記事では、ID とデバイス アクセス用の[クラウド専用の前提条件構成](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。
 
 このテスト環境は、次に示す 8 つのフェーズで設定します。
 
@@ -109,11 +109,11 @@ Skype for Business Online については、
   Get-CsOAuthConfiguration
   ```
 
-その結果、ID およびデバイス アクセスのクラウド専用前提条件構成[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)の要件を満たすテスト環境が得られます。 
+その結果、ID およびデバイス アクセスのクラウド専用前提条件構成[](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)の要件を満たすテスト環境が得られます。 
 
 ## <a name="next-step"></a>次の手順
 
-[共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。
+[共通 ID とデバイスのアクセス ポリシー](../security/defender-365-security/identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。
 
 ## <a name="see-also"></a>関連項目
 

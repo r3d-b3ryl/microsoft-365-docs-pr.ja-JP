@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加、セキュリティ ポリシーの設定など、Microsoft 365 Business Premium のセットアップ手順について説明します。
-ms.openlocfilehash: 5b082e78f3dc4067dcce4a96a8088b2347bc3af4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d49ba7ccdb65691756aaa505d0856deb115595b
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912572"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052236"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップ ウィザードで Microsoft 365 Business Premium をセットアップする
 
@@ -107,7 +107,7 @@ Microsoft 365 Business Premium を購入する場合は、所有するドメイ�
 
 ウィザードで設定したポリシーは、[すべてのユーザー] というセキュリティ [グループ](/office365/admin/create-groups/compare-groups#security-groups) に自動的 *に適用されます*。 管理センターでポリシーを割り当てる追加のグループを作成することもできます。
 
-1. 高度な **サイバー脅威** からの保護の強化では [、Office 365 Advance Threat Protection](../security/office-365-security/office-365-atp.md) スキャン ファイルとリンクを Office アプリで許可する既定値を受け入れる必要があります。
+1. 高度な **サイバー脅威** からの保護の強化では [、Office 365 Advance Threat Protection](../security/defender-365-security/defender-for-office-365.md) スキャン ファイルとリンクを Office アプリで許可する既定値を受け入れる必要があります。
 
     ![[保護の強化] ページのスクリーンショット。](../media/increasetreatprotection.png)
 

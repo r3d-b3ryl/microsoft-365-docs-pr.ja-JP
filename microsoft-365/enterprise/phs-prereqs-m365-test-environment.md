@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: パスワード ハッシュ同期の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 3236c79e308f269c07146ff094c7ae27271b97fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ca83b6ab715a752d3d9620af631263eb5d84fa3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928052"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051248"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期に必要な ID およびデバイス アクセスの前提条件
 
 *このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
 
-[ID およびデバイス](../security/office-365-security/microsoft-365-policies-configurations.md) アクセス構成は、Azure Active Directory (Azure Active Directory )と統合されたエンタープライズ向け Microsoft 365 のすべてのサービスへのアクセスを保護するための一連の構成と条件付きアクセス ポリシーです。AD。
+[ID およびデバイス](../security/defender-365-security/microsoft-365-policies-configurations.md) アクセス構成は、Azure Active Directory (Azure Active Directory )と統合されたエンタープライズ向け Microsoft 365 のすべてのサービスへのアクセスを保護するための一連の構成と条件付きアクセス ポリシーです。AD。
 
-この記事では、ID およびデバイス アクセス用のパスワード ハッシュ同期認証前提条件構成を使用して、[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)ハイブリッドの要件を満たす Microsoft 365 テスト環境を構成する方法について説明します。
+この記事では、ID およびデバイス アクセス用のパスワード ハッシュ同期認証前提条件構成を使用して、[](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)ハイブリッドの要件を満たす Microsoft 365 テスト環境を構成する方法について説明します。
 
 このテスト環境をセットアップするには、10 のフェーズがあります。
 
@@ -119,11 +119,11 @@ Skype for Business Online については、
   Get-CsOAuthConfiguration
   ```
 
-上述の手順により、ID とデバイス アクセス用の[パスワード ハッシュ同期付き Active Directory の前提条件構成](../security/office-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たすテスト環境が作成されます。 
+上述の手順により、ID とデバイス アクセス用の[パスワード ハッシュ同期付き Active Directory の前提条件構成](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たすテスト環境が作成されます。 
 
 ## <a name="next-step"></a>次の手順
 
-[共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。
+[共通 ID とデバイスのアクセス ポリシー](../security/defender-365-security/identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。
 
 ## <a name="see-also"></a>関連項目
 
