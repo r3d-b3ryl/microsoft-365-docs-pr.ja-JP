@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fdfcc2e7454b1243016754ba32dcc2622b876672
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927755"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051749"
 ---
 # <a name="message-encryption-faq"></a>メッセージの暗号化に関する FAQ
 
@@ -165,7 +165,7 @@ Outlook on the web では、保護されたメールの失効がサポートさ�
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>暗号化されたメールに関するレポート機能や分析情報はありますか?
 
-セキュリティとコンプライアンス センターに暗号化レポートがあります。 「 [セキュリティ コンプライアンス センターで電子メール セキュリティ レポートを表示&する」を参照してください](../security/office-365-security/view-email-security-reports.md)。
+セキュリティとコンプライアンス センターに暗号化レポートがあります。 「 [セキュリティ コンプライアンス センターで電子メール セキュリティ レポートを表示&する」を参照してください](../security/defender-365-security/view-email-security-reports.md)。
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>電子情報開示などのコンプライアンス機能でメッセージ暗号化を使用できますか?
 

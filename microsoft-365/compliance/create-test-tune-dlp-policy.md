@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、調整する方法について学習します。
-ms.openlocfilehash: d26412eb54176dfd3c5d881d82076b2a58330ebd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923453"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052085"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
@@ -50,7 +50,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 [表示のみ **] DLP コンプライアンス管理** 役割を使用して、DLP ポリシーおよび DLP レポートに対する表示専用の権限を持つ役割グループを作成します。
 
-詳細については、「[Give users access to the Office 365 Security & Compliance Center (Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する)](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「[Give users access to the Office 365 Security & Compliance Center (Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する)](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
   
 ポリシーを適用しない DLP ポリシーを作成して適用するには、これらのアクセス許可が必要です。
 

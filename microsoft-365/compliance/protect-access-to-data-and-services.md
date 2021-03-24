@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Microsoft 365 データとサービスへのユーザーとデバイスのアクセスを保護し、データ損失から保護する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd8bbb62bc87ff59594e2fb2a3e21311c2452d9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9ff7bd2ff8b4b333eb30a6cc82797a8968941e0b
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925543"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051699"
 ---
 # <a name="protect-user-and-device-access"></a>ユーザーとデバイス アクセスの保護
 
@@ -38,7 +38,7 @@ Microsoft 365 環境の管理に使用する管理アカウントには、管理
 
 まず、管理用に管理者アカウントのみを使用します。 管理者は、通常の非管理用に個別のユーザー アカウントを持ち、ジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。
 
-多要素認証と条件付きアクセスで管理者アカウントを保護します。 詳細については、「管理者アカウントの [保護」を参照してください](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts)。 
+多要素認証と条件付きアクセスで管理者アカウントを保護します。 詳細については、「管理者アカウントの [保護」を参照してください](../security/defender-365-security/identity-access-prerequisites.md#protecting-administrator-accounts)。 
 
 次に、365 で特権アクセス管理Officeします。 特権アクセスの管理では、Office 365 の特権的管理タスクを細かくアクセス制限できます。 これは、機密データへの永続的なアクセスまたは重要な構成設定へのアクセスを持つ既存の特権管理者アカウントを使用する可能性のある侵害から組織を保護するのに役立ちます。
 
@@ -50,7 +50,7 @@ Microsoft 365 環境の管理に使用する管理アカウントには、管理
 最後に、テナントに 2 つ以上の緊急アクセス アカウントを作成することで、管理アクセスの不注意による影響を軽減できます。 「Azure AD で緊急 [アクセス アカウントを管理する」を参照してください](/azure/active-directory/users-groups-roles/directory-emergency-access)。 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>手順 3: 推奨される ID とデバイス アクセス ポリシーを構成する
-多要素認証 (MFA) と条件付きアクセス ポリシーは、侵害されたアカウントや不正アクセスを軽減するための強力なツールです。 一緒にテストされた一連のポリシーを実装することをお勧めします。 展開手順を含む詳細については、「Identity and [device access configurations」を参照してください](../security/office-365-security/microsoft-365-policies-configurations.md)。
+多要素認証 (MFA) と条件付きアクセス ポリシーは、侵害されたアカウントや不正アクセスを軽減するための強力なツールです。 一緒にテストされた一連のポリシーを実装することをお勧めします。 展開手順を含む詳細については、「Identity and [device access configurations」を参照してください](../security/defender-365-security/microsoft-365-policies-configurations.md)。
 
  これらのポリシーは、次の機能を実装します。
 - Mult-factor 認証
@@ -63,7 +63,7 @@ Intune デバイスのコンプライアンスを実装するには、デバイ�
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>手順 4: SharePoint デバイス アクセス ポリシーを構成する
 
-Microsoft では、デバイス アクセス制御を使用して、機密性の高い規制の高いコンテンツを使用して SharePoint サイト内のコンテンツを保護することを推奨します。 詳細については [、「SharePoint サイトとファイルのセキュリティ保護に関するポリシーの推奨事項」を参照してください](../security/office-365-security/sharepoint-file-access-policies.md)。
+Microsoft では、デバイス アクセス制御を使用して、機密性の高い規制の高いコンテンツを使用して SharePoint サイト内のコンテンツを保護することを推奨します。 詳細については [、「SharePoint サイトとファイルのセキュリティ保護に関するポリシーの推奨事項」を参照してください](../security/defender-365-security/sharepoint-file-access-policies.md)。
 
 
 

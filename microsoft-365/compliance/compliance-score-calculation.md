@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Microsoft Compliance Manager がリスクに対処し、コンプライアンス態勢を改善するために行ったアクションに基づいて、パーソナライズされたスコアを計算する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d340c31b4f5477df845531bfb933883f331198
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908577"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052115"
 ---
 # <a name="compliance-score-calculation"></a>コンプライアンス スコアの計算
 
@@ -61,7 +61,7 @@ ms.locfileid: "50908577"
 
 たとえば、Azure AD ポータルで多要素認証 (MFA) を有効にすると、コンプライアンス マネージャーは設定を検出し、コントロール アクセス ソリューションの詳細に反映します。 逆に、MFA を有効にしなかった場合、コンプライアンス マネージャーは推奨されるアクションとしてフラグを設定します。
 
-Secure Score の [詳細と動作について説明します](../security/mtp/microsoft-secure-score.md)。
+Secure Score の [詳細と動作について説明します](../security/defender/microsoft-secure-score.md)。
   
 ## <a name="action-types-and-points"></a>アクションの種類とポイント
 
@@ -113,7 +113,7 @@ Secure Score の [詳細と動作について説明します](../security/mtp/mi
 |**型**|**割り当てられたスコア**|
 |:-----|:-----|
 | 予防的な必須 | 27 |
-| 予防的な裁量 | 9  |
+| 予防的な裁量 | 9 |
 | 探偵必須 | 3 |
 | 探偵の裁量 | 1 |
 | 修正必須 | 3 |

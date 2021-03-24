@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: コンテンツ検索のアクセス許可フィルターを使用して、電子情報開示マネージャーが組織内のメールボックスとサイトのサブセットのみを検索できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be1daa4785f67ef54f107319bf88438c134896ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 78d36ccd602ea546099e768d7e91594a668df586
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927985"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051729"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>コンテンツ検索用にアクセス許可フィルターを設定する
 
@@ -45,7 +45,7 @@ ms.locfileid: "50927985"
 
 ## <a name="requirements-to-configure-permissions-filtering"></a>アクセス許可フィルターを構成するための要件
 
-- コンプライアンス セキュリティ フィルターのコマンドレットを実行するには、セキュリティ/コンプライアンス センターの組織管理の役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- コンプライアンス セキュリティ フィルターのコマンドレットを実行するには、セキュリティ/コンプライアンス センターの組織管理の役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 - コンプライアンス セキュリティ フィルターコマンドレットを使用するには、Exchange Online とセキュリティ &コンプライアンス センター PowerShell の両方に接続する必要があります。 これらのコマンドレットではメールボックスプロパティへのアクセスが必要なので、これは Exchange Online PowerShell に接続する必要がある理由です。 手順については、次のセクションを参照してください。
 

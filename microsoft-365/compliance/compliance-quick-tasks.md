@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Microsoft 365 でのコンプライアンスの迅速な開始に役立つタスクについて説明します。
-ms.openlocfilehash: 69aef07e65f5644f9aa294025c8388410f160243
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908587"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052105"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 
@@ -34,7 +34,7 @@ Microsoft 365 コンプライアンスを初め、どこから始めるのか疑
 
 まず、組織内のユーザーにコンプライアンスアクセス許可を割り当て、これらのタスクを実行し、権限のないユーザーが自分の責任外の領域にアクセスするのを防ぐことから始める。 Microsoft 365 に含まれるコンプライアンス ソリューションの構成と実装を開始する前に、コンプライアンス データ管理者とコンプライアンス管理者の役割に適切なユーザーが割り当てられている必要があります。 また、コンプライアンス マネージャーでデータを表示するには、Azure Active Directory グローバル リーダー ロールにユーザーを割り当てる必要があります。
 
-アクセス許可を構成し、管理者の役割にユーザーを割り当てる手順については、「Security & コンプライアンス センターのアクセス許可」 [を参照してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+アクセス許可を構成し、管理者の役割にユーザーを割り当てる手順については、「Security & コンプライアンス センターのアクセス許可」 [を参照してください](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="task-2-know-your-state-of-compliance"></a>タスク 2: コンプライアンスの状態を知る
 
@@ -47,9 +47,9 @@ Microsoft 365 コンプライアンスを初め、どこから始めるのか疑
 >[!IMPORTANT]
 >セキュリティとコンプライアンスは、ほとんどの組織で緊密に統合されています。 セキュリティとコンプライアンスの両方に対する防御の詳細なアプローチを提供するために、組織が基本的なセキュリティ、脅威保護、ID およびアクセス管理領域に対応することが重要です。
 >
->Microsoft [365](../security/mtp/microsoft-secure-score.md) セキュリティ センターで Microsoft 365 Secure Score を確認し、次の記事に示すタスクを完了します。
+>Microsoft [365](../security/defender/microsoft-secure-score.md) セキュリティ センターで Microsoft 365 Secure Score を確認し、次の記事に示すタスクを完了します。
 >
-> - [セキュリティロードマップ - 最初の 30 日間、90 日間、それ以降の最優先事項](../security/office-365-security/security-roadmap.md)
+> - [セキュリティロードマップ - 最初の 30 日間、90 日間、それ以降の最優先事項](../security/defender-365-security/security-roadmap.md)
 > - [自宅での作業をサポートするセキュリティ チームの上位 12 のタスク](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>タスク 3: 組織の監査を有効にする
@@ -124,7 +124,7 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 アクティビティ エクスプローラーを使用する手順については、「アクティビティ エクスプローラーの使用を開始 [する」を参照してください](data-classification-activity-explorer.md)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 組織のコンプライアンス管理の基本を構成しましたので、機密情報を保護し、追加のインサイダー リスクを検出して行動するために、Microsoft 365 の次のコンプライアンス ソリューションを検討してください。
 
@@ -135,7 +135,7 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 さらに、保持ラベルは、コンテンツ [をレコードとしてマーク](records-management.md) するレコード管理をサポートします。 この場合、ラベルは、組織が規制要件を遵守するために必要になる可能性のあるコンテンツに追加の制限を設定します。
 
 保持ラベルを作成および発行する手順については、次のガイダンスを参照してください。
-- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+- [アイテム保持ラベルを作成して、アプリに適用する](create-apply-retention-labels.md)
 - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
 
 レコード管理を開始するには、「レコード管理の開始 [」を参照してください](get-started-with-records-management.md)。

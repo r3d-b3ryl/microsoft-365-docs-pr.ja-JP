@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 18ab0065a4a6c90f61730a313eb8c54f538fafab
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918052"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052125"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
@@ -112,7 +112,7 @@ ms.locfileid: "50918052"
 
 9. [閉 **じる] を** 選択して手順を完了します。
 
-役割グループとアクセス許可の詳細については、「[Permissions in the Compliance Center (コンプライアンス センターのアクセス許可)](../security/office-365-security/protect-against-threats.md)」を参照してください。 
+役割グループとアクセス許可の詳細については、「[Permissions in the Compliance Center (コンプライアンス センターのアクセス許可)](../security/defender-365-security/protect-against-threats.md)」を参照してください。 
 
 ## <a name="step-2-required-enable-the-audit-log"></a>手順 2 (必須): 監査ログを有効にする
 
@@ -283,7 +283,7 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 
 4. 修復コントロールを使用してアラートを修復し、アラートが適切に解決されていることを確認します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 最初の通信コンプライアンス ポリシーを作成するためにこれらの手順を完了すると、24 ~ 48 時間後にアクティビティ インジケーターからアラートの受信を開始します。 この記事の手順 5 のガイダンスを使用して、必要に応じて追加のポリシーを構成します。
 

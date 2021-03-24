@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 管理者として、およびメッセージ送信者として、365 Advanced Message Encryption で暗号化された特定のOffice取り消しできます。
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 340a9e73dba50e28223ee561db749a089c649df6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917199"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051719"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>高度なメッセージ暗号化によって暗号化された電子メールを取り消す
 
@@ -75,7 +75,7 @@ Microsoft 365 管理者は、次の一般的な手順に従って、適格な暗
 - メッセージを取り消す可能性を確認します。
 - メールを取り消します。
 
-### <a name="step-1-obtain-the-message-id-of-the-email"></a>手順 1.  電子メールのメッセージ ID を取得する
+### <a name="step-1-obtain-the-message-id-of-the-email"></a>手順 1. 電子メールのメッセージ ID を取得する
 
 暗号化されたメールを取り消す前に、メールのメッセージ ID を収集します。 MessageId は通常、次の形式です。
 
@@ -91,13 +91,13 @@ Microsoft 365 管理者は、次の一般的な手順に従って、適格な暗
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>セキュリティ コンプライアンス センターの [メッセージ暗号化] レポートを使用して、Officeのメッセージ ID を &amp; 識別するには
 
-1. セキュリティ コンプライアンス センター &amp; で、[メッセージの暗号化] **レポートに移動します**。 このレポートの詳細については、「セキュリティ コンプライアンス センター [で電子メール セキュリティ レポートを表示する」を &amp; 参照してください](../security/office-365-security/view-email-security-reports.md)。
+1. セキュリティ コンプライアンス センター &amp; で、[メッセージの暗号化] **レポートに移動します**。 このレポートの詳細については、「セキュリティ コンプライアンス センター [で電子メール セキュリティ レポートを表示する」を &amp; 参照してください](../security/defender-365-security/view-email-security-reports.md)。
 
 2. [詳細の **表示] テーブル** を選択し、取り消すメッセージを識別します。
 
 3. メッセージをダブルクリックして、メッセージ ID を含む詳細を表示します。
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>手順 2.  メールが失効可能な場合の確認
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>手順 2. メールが失効可能な場合の確認
 
 メッセージを取り消すかどうかを確認するには、セキュリティ コンプライアンス センターの [詳細] テーブルの [暗号化]レポートに [失効の状態] フィールドが表示されているかどうかを &amp; 確認します。
 
@@ -119,7 +119,7 @@ Microsoft 365 管理者は、次の一般的な手順に従って、適格な暗
      "Test message" True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>手順 3.  メールを取り消す
+### <a name="step-3-revoke-the-mail"></a>手順 3. メールを取り消す
 
 取り消す電子メールのメッセージ ID がわかって、メッセージが失効可能なと確認したら、セキュリティ コンプライアンス センターまたは Windows PowerShell を使用して電子 &amp; メールを取り消Windows PowerShell。
 

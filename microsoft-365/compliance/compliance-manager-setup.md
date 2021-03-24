@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ユーザーのアクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザー履歴を管理し、ダッシュボード ビューをフィルター処理します。
-ms.openlocfilehash: d8eb1d7d8245aa31cb5429452128cedc0adf4684
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925705"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052135"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -72,7 +72,7 @@ ms.locfileid: "50925705"
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>the Office 365 Security & コンプライアンス センターについて
 
-コンプライアンス センターの [Office 365 セキュリティ &詳細を参照してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+コンプライアンス センターの [Office 365 セキュリティ &詳細を参照してください](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 Office 365 セキュリティ/コンプライアンス センターにアクセスできない場合、または Microsoft Service Trust Portal で従来のバージョンのコンプライアンス マネージャーにアクセスする必要がある場合は、サービス信頼ポータルの管理者設定によって、役割を割り[](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)当てる別の方法 (指示の表示) が提供されます。 このような役割の機能が制限されている点に注意してください。
 
@@ -104,7 +104,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 ### <a name="set-up-automated-testing"></a>自動テストのセットアップ
 
-コンプライアンス マネージャーの一部の改善アクションも [Microsoft Secure Score によって監視されます](../security/mtp/microsoft-secure-score.md)。 共同で監視されるアクションの自動テストを設定できます。つまり、セキュリティで保護されたスコアでアクションがテストおよび更新された場合、それらの結果はコンプライアンス マネージャーの同じアクションと同期し、コンプライアンス スコアにカウントされます。
+コンプライアンス マネージャーの一部の改善アクションも [Microsoft Secure Score によって監視されます](../security/defender/microsoft-secure-score.md)。 共同で監視されるアクションの自動テストを設定できます。つまり、セキュリティで保護されたスコアでアクションがテストおよび更新された場合、それらの結果はコンプライアンス マネージャーの同じアクションと同期し、コンプライアンス スコアにカウントされます。
 
 コンプライアンス マネージャーが新しい組織では、既定で自動テストが有効になっています。 Microsoft 365 または Office 365 を初めて展開する場合、Secure Score がデータを完全に収集し、コンプライアンス スコアに組み込むには約 7 日かかる。  自動テストを有効にすると、アクションのテスト日は更新されませんが、テストの状態は更新されます。 新しい評価が作成されると、スコアには Microsoft コントロール スコアと Secure Score 統合が自動的に含まれます。
 
@@ -363,5 +363,5 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 **詳細については、「評価**[テンプレートを使用する方法」を参照してください](compliance-manager-templates.md)。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 評価を設定して [コンプライアンス マネージャーをカスタマイズします](compliance-manager-assessments.md)。

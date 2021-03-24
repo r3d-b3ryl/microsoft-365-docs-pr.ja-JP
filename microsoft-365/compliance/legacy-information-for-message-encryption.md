@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 従来のファイルを組織Office 365 Message Encryption (OME) に移行する方法について説明します。
-ms.openlocfilehash: 0b9c32b8b30753b02a5a0cdaa40b644ca89cfba3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eabf655b6fa92a6f502ebe1e071d41f394f78929
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905919"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051829"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
@@ -69,7 +69,7 @@ Exchange メール フロー ルールを作成する方法の詳細について
 
 2. [管理] **タイルを選択** します。
 
-3. Microsoft 365 管理センターで、[管理センター] \> **[Exchange] を選択します**。
+3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
 
 4. EAC で、[メールフロー ルール] に移動し、[新しい新しい] アイコン [ \>  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しいルールの作成] を選択します**。 EAC の使用の詳細については [、「Exchange Online の Exchange 管理センター」を参照してください](/exchange/exchange-admin-center)。
 
@@ -125,7 +125,7 @@ Exchange メール フロー ルールを作成する方法の詳細について
 
 2. [管理] **タイルを選択** します。
 
-3. Microsoft 365 管理センターで、[管理センター] \> **[Exchange] を選択します**。
+3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
 
 4. EAC で、[メールフロー ルール] に移動し、[新しい新しい] アイコン [ \>  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しいルールの作成] を選択します**。 EAC の使用の詳細については [、「Exchange Online の Exchange 管理センター」を参照してください](/exchange/exchange-admin-center)。
 
@@ -293,7 +293,7 @@ Office 365 メッセージ暗号化では、暗号化インフラストラクチ
   
  **Q.私は Exchange ホスト型暗号化 (EHE) サブスクライバーです。365 Message Encryption へのアップグレードのOfficeはどこで確認できますか?**
   
-EHE のすべてのお客様は、Office 365 Message Encryption にアップグレードされました。 詳細については、「Exchange ホスト型 [暗号化アップグレード センター」を参照してください](../security/office-365-security/exchange-online-protection-overview.md)。
+EHE のすべてのお客様は、Office 365 Message Encryption にアップグレードされました。 詳細については、「Exchange ホスト型 [暗号化アップグレード センター」を参照してください](../security/defender-365-security/exchange-online-protection-overview.md)。
   
  **Q.365 Message Encryption をサポートするには、組織のファイアウォールで URL、IP アドレス、またはポートを開Office必要がありますか?**
   

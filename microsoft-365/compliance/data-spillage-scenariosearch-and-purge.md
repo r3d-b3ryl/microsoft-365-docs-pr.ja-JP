@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 電子情報開示と検索ツールを使用して、組織内のデータ流出インシデントを管理して対応します。
-ms.openlocfilehash: 9ca637dcd3b4b07846d977d64f535b7b5319d884
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925683"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051979"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューション シリーズ: データ流出シナリオ - 検索と削除
 
@@ -121,7 +121,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
   
 セキュリティとコンプライアンス センターでメッセージ トレースを使用するか、Exchange Online PowerShell で対応するコマンドレットを使用できます。 メッセージ トレースは、返されるデータの完全性に関する完全な保証を提供しない点に注意することが重要です。 メッセージ トレースの使用の詳細については、以下を参照してください。 
   
-- [セキュリティとコンプライアンス センターのメッセージ追跡](../security/office-365-security/message-trace-scc.md)
+- [セキュリティとコンプライアンス センターのメッセージ追跡](../security/defender-365-security/message-trace-scc.md)
     
 - [セキュリティ コンプライアンス センターの新&トレース](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
@@ -199,7 +199,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>データ流出調査プロセスの監査
 
-監査ログで、調査中に実行された電子情報開示アクティビティを検索できます。 監査ログを検索して、手順 7 で実行した **New-ComplianceSearchAction -Purge** コマンドの監査レコードを返して、こぼれたデータを削除することもできます。 詳しくは、以下を参照してください。
+監査ログで、調査中に実行された電子情報開示アクティビティを検索できます。 監査ログを検索して、手順 7 で実行した **New-ComplianceSearchAction -Purge** コマンドの監査レコードを返して、こぼれたデータを削除することもできます。 詳細については、以下を参照してください。
 
 - [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
 
