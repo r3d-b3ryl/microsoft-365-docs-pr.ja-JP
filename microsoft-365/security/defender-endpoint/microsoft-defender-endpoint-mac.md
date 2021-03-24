@@ -1,0 +1,164 @@
+---
+title: Microsoft Defender ATP for Mac
+ms.reviewer: ''
+description: Microsoft Defender for Endpoint for Mac をインストール、構成、更新、および使用する方法について説明します。
+keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: dansimp
+author: dansimp
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection:
+- m365-security-compliance
+- m365initiative-defender-endpoint
+ms.topic: conceptual
+ms.technology: mde
+ms.openlocfilehash: 3e96cf09fd13a4d99546a1c18f9c61f40c362bf8
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51061588"
+---
+# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**適用対象:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+このトピックでは、Defender for Endpoint for Mac をインストール、構成、更新、および使用する方法について説明します。
+
+> [!CAUTION]
+> Defender for Endpoint for Mac と共に他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しない副作用が発生する可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、MDATP for Mac ウイルス対策機能をパッシブ モードで実行する構成後も、Mac EDR 機能の[](mac-preferences.md#enable--disable-passive-mode)MDATP を安全に利用できます。
+
+## <a name="whats-new-in-the-latest-release"></a>最新リリースの新機能
+
+[Microsoft Defender for Endpoint の新機能](whats-new-in-microsoft-defender-atp.md)
+
+[Microsoft Defender for Endpoint for Mac の新機能](mac-whatsnew.md)
+
+> [!TIP]
+> 共有するフィードバックがある場合は、デバイスで Microsoft Defender for Endpoint for Mac を開き、[フィードバックの送信に役立つ] に移動して送信  >  **します**。
+
+プレビュー機能 (Mac デバイスのエンドポイント検出や応答など) を含む最新の機能を取得するには、Microsoft Defender for Endpoint を実行している macOS デバイスを "Insider" デバイスに構成します。
+
+## <a name="how-to-install-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac をインストールする方法
+
+### <a name="prerequisites"></a>前提条件
+
+- Defender for Endpoint サブスクリプションと Microsoft Defender セキュリティ センター ポータルへのアクセス
+- macOS と BASH スクリプトの初心者レベルのエクスペリエンス
+- デバイスの管理特権 (手動展開の場合)
+
+### <a name="installation-instructions"></a>インストール手順
+
+Defender for Endpoint for Mac のインストールと構成に使用できる方法と展開ツールがいくつかあります。
+
+- サードパーティの管理ツール:
+    - [Microsoft Intune ベースの展開](mac-install-with-intune.md)
+    - [JAMF ベースの展開](mac-install-with-jamf.md)
+    - [その他の MDM 製品](mac-install-with-other-mdm.md)
+
+- コマンド ライン ツール:
+    - [手動展開](mac-install-manually.md)
+
+### <a name="system-requirements"></a>システム要件
+
+macOS の最新の 3 つのメジャー リリースがサポートされています。
+
+> [!IMPORTANT]
+> macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存のお客様の場合は [、macOS Catalina](mac-sysext-policies.md)および macOS の新しいバージョンの新しい構成プロファイルに記載されている追加の構成プロファイルを必ず展開してください。
+
+> [!IMPORTANT]
+> macOS 10.13 (High Sierra) のサポートは、2021 年 2 月 15 日に中止されます。
+
+- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
+- ディスク領域: 1 GB
+
+macOS のベータ版はサポートされていません。
+
+サービスを有効にした後、ネットワークまたはファイアウォールを構成して、ネットワークとエンドポイント間の送信接続を許可する必要がある場合があります。
+
+### <a name="licensing-requirements"></a>ライセンスの要件
+
+Microsoft Defender for Endpoint for Mac では、次のいずれかの Microsoft ボリューム ライセンス オファーが必要です。
+
+- Microsoft 365 E5 (M365 E5)
+- Microsoft 365 E5 Security
+- Microsoft 365 A5 (M365 A5)
+
+> [!NOTE]
+> 対象となるライセンスユーザーは、最大 5 つの同時デバイスで Microsoft Defender for Endpoint を使用できます。
+> Microsoft Defender for Endpoint は、クラウド ソリューション プロバイダー (CSP) から購入できます。 CSP を介して購入した場合、Microsoft ボリューム ライセンスの提供は必要とされません。
+
+### <a name="network-connections"></a>ネットワーク接続
+
+次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールを作成する必要があります。 
+
+
+
+|**ドメインリストのスプレッドシート**|**説明**|
+|:-----|:-----|
+|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>スプレッドシートをダウンロードするには、 [ 次の ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)mdatp-urls.xlsxします。
+
+Microsoft Defender for Endpoint では、次の検出方法を使用してプロキシ サーバーを検出できます。
+- プロキシの自動構成 (PAC)
+- Web プロキシ自動検出プロトコル (WPAD)
+- 静的プロキシの手動構成
+
+プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合は、以前にリストした URL で匿名トラフィックが許可されている必要があります。
+
+> [!WARNING]
+> 認証されたプロキシはサポートされていません。 PAC、WPAD、または静的プロキシだけが使用されている必要があります。
+>
+> SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーが、Microsoft Defender for Endpoint for Mac からインターセプトなしで関連する URL にデータを直接渡す例外を構成します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
+
+接続がブロックされていないとテストするには、ブラウザー [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) で [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) 開きます。
+
+コマンド ラインが必要な場合は、ターミナルで次のコマンドを実行して接続を確認することもできます。
+
+```bash
+curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+```
+
+このコマンドからの出力は、次のようになります。
+
+ `OK https://x.cp.wd.microsoft.com/api/report`
+
+ `OK https://cdn.x.cp.wd.microsoft.com/ping`
+
+> [!CAUTION]
+> クライアント デバイスでシステム [整合性保護](https://support.apple.com/en-us/HT204899) (SIP) を有効にすることをお勧めします。 SIP は、OS の低レベル改ざんを防止する組み込みの macOS セキュリティ機能であり、既定で有効になっています。
+
+Microsoft Defender for Endpoint をインストールすると、ターミナルで次のコマンドを実行して接続を検証できます。
+```bash
+mdatp connectivity test
+```
+
+## <a name="how-to-update-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac を更新する方法
+
+Microsoft は、パフォーマンス、セキュリティ、および新機能の提供を行うソフトウェア更新プログラムを定期的に発行しています。 Microsoft Defender for Endpoint for Mac を更新するには、Microsoft AutoUpdate (MAU) という名前のプログラムが使用されます。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint for Mac」を参照してください](mac-updates.md)。
+
+## <a name="how-to-configure-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac を構成する方法
+
+エンタープライズ環境で製品を構成する方法については、「Microsoft Defender for Endpoint for Mac の設定 [」をご覧ください](mac-preferences.md)。
+
+## <a name="macos-kernel-and-system-extensions"></a>macOS カーネルとシステム拡張機能
+
+macOS の進化に合わせ、カーネル拡張機能ではなくシステム拡張機能を活用する Microsoft Defender for Endpoint for Mac 更新プログラムを準備しています。 関連する詳細については、「Microsoft Defender for Endpoint for Mac の新機能 [」を参照してください](mac-whatsnew.md)。
+
+## <a name="resources"></a>リソース
+
+- ログ記録、アンインストール、その他のトピックの詳細については [、「Resources for Microsoft Defender for Endpoint for Mac」を参照してください](mac-resources.md)。
+
+- [Microsoft Defender for Endpoint for Mac のプライバシー](mac-privacy.md)。

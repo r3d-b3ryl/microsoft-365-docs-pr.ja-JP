@@ -1,0 +1,76 @@
+---
+title: セキュリティ インシデント対応
+f1.keywords:
+- NOCSH
+ms.author: chrfox
+author: chrfox
+manager: laurawi
+ms.date: 04/27/2018
+audience: ITPro
+ms.topic: overview
+ms.collection:
+- o365_security_incident_response
+- M365-security-compliance
+localization_priority: Normal
+search.appverid:
+- MET150
+description: このソリューションは、Microsoft 365 での最も一般的なサイバーセキュリティ攻撃の外観と、それに対する対応方法を示します。
+ms.custom:
+- seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 65ff75253f45ae2d0f051dafe73c6e665f89827a
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51065195"
+---
+# <a name="security-incident-response"></a>セキュリティ インシデント対応
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用対象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+ **概要:** このソリューションでは、Office 365 で最も一般的なサイバーセキュリティ攻撃の指標、特定の攻撃を肯定的に確認する方法、およびそれに対応する方法を示します。
+
+## <a name="learn-how-to-respond-to-cyberattacks"></a>サイバー攻撃に対応する方法を学ぶ
+
+すべてのサイバー攻撃を利用できない。 攻撃者は常に防御戦略の新しい弱点を探している、または古い攻撃を行っています。 攻撃を認識する方法を知ることにより、攻撃に迅速に対応できます。これにより、セキュリティ インシデントの期間が短縮されます。
+
+この一連の記事は、Microsoft 365 での特定の種類の攻撃の外観を理解するのに役立ち、対応する手順を説明します。 これらは、以下を理解する簡単なエントリ ポイントです。
+
+- 攻撃とは何か、どのように機能するのか。
+
+- 侵害の指標 (IOC) と呼ばれる、どのような兆候を検索し、それらを検索する方法。
+
+- 攻撃を肯定的に確認する方法。
+
+- 攻撃を断ち切り、将来組織をより良く保護するための手順。
+
+- 各攻撃の種類に関する詳細な情報へのリンク。
+
+より多くの記事が時間の間に追加されるので、毎月ここに戻って確認してください。
+
+## <a name="detect-and-remediate-articles"></a>記事の検出と修復
+
+- [Microsoft Office 365 での不正な同意付与の検出と修復](detect-and-remediate-illicit-consent-grants.md)
+
+- [Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
+
+## <a name="incident-response-articles"></a>インシデント対応の記事
+
+- [侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
+
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>サイバー セキュリティの専門家のように、Microsoft 365 のセキュリティを強化する
+
+Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。  Microsoft 365 のセキュリティ ロードマップ - 最初の [30 日間、90](security-roadmap.md) 日以降の最優先事項を使用して、Microsoft 365 組織をセキュリティ保護するための Microsoft 推奨ベスト プラクティスを実装します。
+
+- 最初の 30 日間に実行するタスク。  これらは直ちに影響を及ぼし、ユーザーに対する影響は低いです。
+
+- 90 日間で実行するタスク。 これらは、計画と実装にもう少し時間がかかるが、セキュリティの態勢を大幅に改善する
+
+- 90 日を超える。 これらの機能強化は、最初の 90 日間の作業で構築されます。
