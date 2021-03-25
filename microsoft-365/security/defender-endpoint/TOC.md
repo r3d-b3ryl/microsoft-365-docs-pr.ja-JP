@@ -1,7 +1,7 @@
 # [Microsoft Defender for Endpoint](index.yml)
 
 ## [概要]()
-### [Microsoft Defender for Endpoint とは](microsoft-defender-advanced-threat-protection.md)
+### [Microsoft Defender for Endpoint とは](microsoft-defender-endpoint.md)
 ### [最小要件](minimum-requirements.md)
 ### [Microsoft Defender for Endpoint の新機能](whats-new-in-microsoft-defender-atp.md)
 ### [プレビュー機能](preview.md)
