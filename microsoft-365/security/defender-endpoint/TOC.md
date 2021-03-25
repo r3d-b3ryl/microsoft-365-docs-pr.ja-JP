@@ -149,7 +149,7 @@
 ##### [ライセンスの問題のトラブルシューティング](mac-support-license.md)
 
 #### [プライバシー](mac-privacy.md)
-#### [参照資料](mac-resources.md)
+#### [リソース](mac-resources.md)
 
 ### [iOS 用 Microsoft Defender for Endpoint]()
 #### [Microsoft Defender for Endpoint for iOS の概要](microsoft-defender-endpoint-ios.md)
@@ -187,7 +187,7 @@
 ##### [不足しているイベントの問題のトラブルシューティング](linux-support-events.md)
 
 #### [プライバシー](linux-privacy.md)
-#### [参照資料](linux-resources.md)
+#### [リソース](linux-resources.md)
 
 ### [Android 用エンドポイント用 Microsoft Defender]()
 #### [Android 用エンドポイント向け Microsoft Defender の概要](microsoft-defender-endpoint-android.md)
@@ -583,3 +583,7 @@
 #### [攻撃表面の縮小に関する問題のトラブルシューティング]()
 ##### [ネットワーク保護](troubleshoot-np.md)
 ##### [攻撃面の減少ルール](troubleshoot-asr.md)
+
+# [Microsoft 365 セキュリティ](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
+# [Defender for Office 365](../office-365-security/overview.md)

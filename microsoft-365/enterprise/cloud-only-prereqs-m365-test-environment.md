@@ -14,115 +14,115 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド専用の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 537718eb0efcffc296162a4458158efcbdad9986
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 927aa032e4181206b3a744da7076b696ac5cf4d4
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051546"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199551"
 ---
-# <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a><span data-ttu-id="4fa16-103">Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件</span><span class="sxs-lookup"><span data-stu-id="4fa16-103">Identity and device access prerequisites for cloud only in your Microsoft 365 test environment</span></span>
+# <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a><span data-ttu-id="e6150-103">Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件</span><span class="sxs-lookup"><span data-stu-id="e6150-103">Identity and device access prerequisites for cloud only in your Microsoft 365 test environment</span></span>
 
-<span data-ttu-id="4fa16-104">*このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*</span><span class="sxs-lookup"><span data-stu-id="4fa16-104">*This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*</span></span>
+<span data-ttu-id="e6150-104">*このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*</span><span class="sxs-lookup"><span data-stu-id="e6150-104">*This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*</span></span>
 
-<span data-ttu-id="4fa16-105">[ID およびデバイス アクセス](../security/defender-365-security/microsoft-365-policies-configurations.md) 構成は、Azure Active Directory (Azure Active Directory ) と統合されているすべてのサービスへのアクセスを保護するための一連の推奨構成と条件付きアクセス ポリシー AD。</span><span class="sxs-lookup"><span data-stu-id="4fa16-105">[Identity and device access configurations](../security/defender-365-security/microsoft-365-policies-configurations.md) are a set of recommended configurations and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD).</span></span>
+<span data-ttu-id="e6150-105">[ID およびデバイス アクセス](../security/office-365-security/microsoft-365-policies-configurations.md) 構成は、Azure Active Directory (Azure Active Directory ) と統合されているすべてのサービスへのアクセスを保護するための一連の推奨構成と条件付きアクセス ポリシー AD。</span><span class="sxs-lookup"><span data-stu-id="e6150-105">[Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) are a set of recommended configurations and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD).</span></span>
 
-<span data-ttu-id="4fa16-106">この記事では、ID とデバイス アクセス用の[クラウド専用の前提条件構成](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="4fa16-106">This article describes how to configure a Microsoft 365 test environment that meets the requirements of the [cloud only prerequisite configuration](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access.</span></span>
+<span data-ttu-id="e6150-106">この記事では、ID とデバイス アクセス用の[クラウド専用の前提条件構成](../security/office-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="e6150-106">This article describes how to configure a Microsoft 365 test environment that meets the requirements of the [cloud only prerequisite configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access.</span></span>
 
-<span data-ttu-id="4fa16-107">このテスト環境は、次に示す 8 つのフェーズで設定します。</span><span class="sxs-lookup"><span data-stu-id="4fa16-107">There are eight phases to setting up this test environment:</span></span>
+<span data-ttu-id="e6150-107">このテスト環境は、次に示す 8 つのフェーズで設定します。</span><span class="sxs-lookup"><span data-stu-id="e6150-107">There are eight phases to setting up this test environment:</span></span>
 
-1. <span data-ttu-id="4fa16-108">軽量なテスト環境を構築する</span><span class="sxs-lookup"><span data-stu-id="4fa16-108">Build out your lightweight test environment</span></span>
-2. <span data-ttu-id="4fa16-109">名前付きの場所を構成する</span><span class="sxs-lookup"><span data-stu-id="4fa16-109">Configure named locations</span></span>
-3. <span data-ttu-id="4fa16-110">セルフサービスのパスワードのリセットを構成する</span><span class="sxs-lookup"><span data-stu-id="4fa16-110">Configure self-service password reset</span></span>
-4. <span data-ttu-id="4fa16-111">多要素認証を構成する</span><span class="sxs-lookup"><span data-stu-id="4fa16-111">Configure multifactor authentication</span></span>
-5. <span data-ttu-id="4fa16-112">ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする</span><span class="sxs-lookup"><span data-stu-id="4fa16-112">Enable automatic device registration of domain-joined Windows computers</span></span>
-6. <span data-ttu-id="4fa16-113">Azure ADパスワード保護を構成する</span><span class="sxs-lookup"><span data-stu-id="4fa16-113">Configure Azure AD password protection</span></span> 
-7. <span data-ttu-id="4fa16-114">Azure AD Identity Protection を有効化する</span><span class="sxs-lookup"><span data-stu-id="4fa16-114">Enable Azure AD Identity Protection</span></span>
-8. <span data-ttu-id="4fa16-115">Exchange Online および Skype for Business Online に対して先進認証を有効化する</span><span class="sxs-lookup"><span data-stu-id="4fa16-115">Enable modern authentication for Exchange Online and Skype for Business Online</span></span>
+1. <span data-ttu-id="e6150-108">軽量なテスト環境を構築する</span><span class="sxs-lookup"><span data-stu-id="e6150-108">Build out your lightweight test environment</span></span>
+2. <span data-ttu-id="e6150-109">名前付きの場所を構成する</span><span class="sxs-lookup"><span data-stu-id="e6150-109">Configure named locations</span></span>
+3. <span data-ttu-id="e6150-110">セルフサービスのパスワードのリセットを構成する</span><span class="sxs-lookup"><span data-stu-id="e6150-110">Configure self-service password reset</span></span>
+4. <span data-ttu-id="e6150-111">多要素認証を構成する</span><span class="sxs-lookup"><span data-stu-id="e6150-111">Configure multifactor authentication</span></span>
+5. <span data-ttu-id="e6150-112">ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする</span><span class="sxs-lookup"><span data-stu-id="e6150-112">Enable automatic device registration of domain-joined Windows computers</span></span>
+6. <span data-ttu-id="e6150-113">Azure ADパスワード保護を構成する</span><span class="sxs-lookup"><span data-stu-id="e6150-113">Configure Azure AD password protection</span></span> 
+7. <span data-ttu-id="e6150-114">Azure AD Identity Protection を有効化する</span><span class="sxs-lookup"><span data-stu-id="e6150-114">Enable Azure AD Identity Protection</span></span>
+8. <span data-ttu-id="e6150-115">Exchange Online および Skype for Business Online に対して先進認証を有効化する</span><span class="sxs-lookup"><span data-stu-id="e6150-115">Enable modern authentication for Exchange Online and Skype for Business Online</span></span>
 
-## <a name="phase-1-build-out-your-lightweight-microsoft-365-test-environment"></a><span data-ttu-id="4fa16-116">フェーズ 1: 軽量な Microsoft 365 テスト環境を構築する</span><span class="sxs-lookup"><span data-stu-id="4fa16-116">Phase 1: Build out your lightweight Microsoft 365 test environment</span></span>
+## <a name="phase-1-build-out-your-lightweight-microsoft-365-test-environment"></a><span data-ttu-id="e6150-116">フェーズ 1: 軽量な Microsoft 365 テスト環境を構築する</span><span class="sxs-lookup"><span data-stu-id="e6150-116">Phase 1: Build out your lightweight Microsoft 365 test environment</span></span>
 
-<span data-ttu-id="4fa16-117">「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」に説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fa16-117">Follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).</span></span>
-<span data-ttu-id="4fa16-118">最終的な構成は、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="4fa16-118">Here is the resulting configuration.</span></span>
+<span data-ttu-id="e6150-117">「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」に説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e6150-117">Follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).</span></span>
+<span data-ttu-id="e6150-118">最終的な構成は、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="e6150-118">Here is the resulting configuration.</span></span>
 
 ![軽量な Microsoft 365 Enterprise テスト環境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
-## <a name="phase-2-configure-named-locations"></a><span data-ttu-id="4fa16-120">フェーズ 2: 名前付きの場所を構成する</span><span class="sxs-lookup"><span data-stu-id="4fa16-120">Phase 2: Configure named locations</span></span>
+## <a name="phase-2-configure-named-locations"></a><span data-ttu-id="e6150-120">フェーズ 2: 名前付きの場所を構成する</span><span class="sxs-lookup"><span data-stu-id="e6150-120">Phase 2: Configure named locations</span></span>
 
-<span data-ttu-id="4fa16-121">最初に、組織で使用されているパブリック IP アドレスまたはアドレス範囲を確認します。</span><span class="sxs-lookup"><span data-stu-id="4fa16-121">First, determine the public IP addresses or address ranges used by your organization.</span></span>
+<span data-ttu-id="e6150-121">最初に、組織で使用されているパブリック IP アドレスまたはアドレス範囲を確認します。</span><span class="sxs-lookup"><span data-stu-id="e6150-121">First, determine the public IP addresses or address ranges used by your organization.</span></span>
 
-<span data-ttu-id="4fa16-122">次に、「[Azure Active Directory で名前付きの場所を構成する](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)」の手順に従って、アドレスまたはアドレス範囲を名前付きの場所として追加します。</span><span class="sxs-lookup"><span data-stu-id="4fa16-122">Next, follow the instructions in [Configure named locations in Azure Active Directory](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) to add the addresses or address ranges as named locations.</span></span> 
+<span data-ttu-id="e6150-122">次に、「[Azure Active Directory で名前付きの場所を構成する](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)」の手順に従って、アドレスまたはアドレス範囲を名前付きの場所として追加します。</span><span class="sxs-lookup"><span data-stu-id="e6150-122">Next, follow the instructions in [Configure named locations in Azure Active Directory](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) to add the addresses or address ranges as named locations.</span></span> 
 
-## <a name="phase-3-configure-self-service-password-reset"></a><span data-ttu-id="4fa16-123">フェーズ 3: セルフサービス パスワードのリセットを構成する</span><span class="sxs-lookup"><span data-stu-id="4fa16-123">Phase 3: Configure self-service password reset</span></span>
+## <a name="phase-3-configure-self-service-password-reset"></a><span data-ttu-id="e6150-123">フェーズ 3: セルフサービス パスワードのリセットを構成する</span><span class="sxs-lookup"><span data-stu-id="e6150-123">Phase 3: Configure self-service password reset</span></span>
 
-<span data-ttu-id="4fa16-124">次に、テスト ラボ ガイドの[「パスワードのリセット」のフェーズ 3](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset) に説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fa16-124">Follow the instructions in [Phase 3 of the password reset Test Lab Guide](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset).</span></span> 
+<span data-ttu-id="e6150-124">次に、テスト ラボ ガイドの[「パスワードのリセット」のフェーズ 3](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset) に説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e6150-124">Follow the instructions in [Phase 3 of the password reset Test Lab Guide](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset).</span></span> 
 
-<span data-ttu-id="4fa16-125">特定の Azure AD グループに含まれるアカウントのパスワード リセットを有効にする場合は、それらのアカウントを **パスワードのリセット** グループに追加します。</span><span class="sxs-lookup"><span data-stu-id="4fa16-125">When enabling password reset for the accounts in a specific Azure AD group, add these accounts to the **Password reset** group:</span></span>
+<span data-ttu-id="e6150-125">特定の Azure AD グループに含まれるアカウントのパスワード リセットを有効にする場合は、それらのアカウントを **パスワードのリセット** グループに追加します。</span><span class="sxs-lookup"><span data-stu-id="e6150-125">When enabling password reset for the accounts in a specific Azure AD group, add these accounts to the **Password reset** group:</span></span>
 
-- <span data-ttu-id="4fa16-126">ユーザー 2</span><span class="sxs-lookup"><span data-stu-id="4fa16-126">User 2</span></span>
-- <span data-ttu-id="4fa16-127">ユーザー 3</span><span class="sxs-lookup"><span data-stu-id="4fa16-127">User 3</span></span>
-- <span data-ttu-id="4fa16-128">ユーザー 4</span><span class="sxs-lookup"><span data-stu-id="4fa16-128">User 4</span></span>
-- <span data-ttu-id="4fa16-129">ユーザー 5</span><span class="sxs-lookup"><span data-stu-id="4fa16-129">User 5</span></span>
+- <span data-ttu-id="e6150-126">ユーザー 2</span><span class="sxs-lookup"><span data-stu-id="e6150-126">User 2</span></span>
+- <span data-ttu-id="e6150-127">ユーザー 3</span><span class="sxs-lookup"><span data-stu-id="e6150-127">User 3</span></span>
+- <span data-ttu-id="e6150-128">ユーザー 4</span><span class="sxs-lookup"><span data-stu-id="e6150-128">User 4</span></span>
+- <span data-ttu-id="e6150-129">ユーザー 5</span><span class="sxs-lookup"><span data-stu-id="e6150-129">User 5</span></span>
 
-<span data-ttu-id="4fa16-130">User 2 アカウントのパスワードのリセットのみテストします。</span><span class="sxs-lookup"><span data-stu-id="4fa16-130">Test password reset only for the User 2 account.</span></span>
+<span data-ttu-id="e6150-130">User 2 アカウントのパスワードのリセットのみテストします。</span><span class="sxs-lookup"><span data-stu-id="e6150-130">Test password reset only for the User 2 account.</span></span>
 
-## <a name="phase-4-configure-multi-factor-authentication"></a><span data-ttu-id="4fa16-131">フェーズ 4: 多要素認証を構成する</span><span class="sxs-lookup"><span data-stu-id="4fa16-131">Phase 4: Configure multi-factor authentication</span></span>
+## <a name="phase-4-configure-multi-factor-authentication"></a><span data-ttu-id="e6150-131">フェーズ 4: 多要素認証を構成する</span><span class="sxs-lookup"><span data-stu-id="e6150-131">Phase 4: Configure multi-factor authentication</span></span>
 
-<span data-ttu-id="4fa16-132">次のユーザー アカウントについて、[テスト ラボ ガイドの「多要素認証」のフェーズ 2](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) に説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fa16-132">Follow the instructions in [Phase 2 of the multi-factor authentication Test Lab Guide](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) for the following user accounts:</span></span>
+<span data-ttu-id="e6150-132">次のユーザー アカウントについて、[テスト ラボ ガイドの「多要素認証」のフェーズ 2](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) に説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e6150-132">Follow the instructions in [Phase 2 of the multi-factor authentication Test Lab Guide](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) for the following user accounts:</span></span>
 
-- <span data-ttu-id="4fa16-133">ユーザー 2</span><span class="sxs-lookup"><span data-stu-id="4fa16-133">User 2</span></span>
-- <span data-ttu-id="4fa16-134">ユーザー 3</span><span class="sxs-lookup"><span data-stu-id="4fa16-134">User 3</span></span>
-- <span data-ttu-id="4fa16-135">ユーザー 4</span><span class="sxs-lookup"><span data-stu-id="4fa16-135">User 4</span></span>
-- <span data-ttu-id="4fa16-136">ユーザー 5</span><span class="sxs-lookup"><span data-stu-id="4fa16-136">User 5</span></span>
+- <span data-ttu-id="e6150-133">ユーザー 2</span><span class="sxs-lookup"><span data-stu-id="e6150-133">User 2</span></span>
+- <span data-ttu-id="e6150-134">ユーザー 3</span><span class="sxs-lookup"><span data-stu-id="e6150-134">User 3</span></span>
+- <span data-ttu-id="e6150-135">ユーザー 4</span><span class="sxs-lookup"><span data-stu-id="e6150-135">User 4</span></span>
+- <span data-ttu-id="e6150-136">ユーザー 5</span><span class="sxs-lookup"><span data-stu-id="e6150-136">User 5</span></span>
 
-<span data-ttu-id="4fa16-137">User 2 アカウントの多要素認証のみテストします。</span><span class="sxs-lookup"><span data-stu-id="4fa16-137">Test multi-factor authentication only for the User 2 account.</span></span>
+<span data-ttu-id="e6150-137">User 2 アカウントの多要素認証のみテストします。</span><span class="sxs-lookup"><span data-stu-id="e6150-137">Test multi-factor authentication only for the User 2 account.</span></span>
 
-## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a><span data-ttu-id="4fa16-138">フェーズ 5: ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする</span><span class="sxs-lookup"><span data-stu-id="4fa16-138">Phase 5: Enable automatic device registration of domain-joined Windows computers</span></span> 
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a><span data-ttu-id="e6150-138">フェーズ 5: ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする</span><span class="sxs-lookup"><span data-stu-id="e6150-138">Phase 5: Enable automatic device registration of domain-joined Windows computers</span></span> 
 
-<span data-ttu-id="4fa16-139">ドメイン [に参加している Windows コンピューター](/azure/active-directory/devices/hybrid-azuread-join-plan) のデバイスの自動登録を有効にするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fa16-139">Follow [these instructions](/azure/active-directory/devices/hybrid-azuread-join-plan) to enable automatic device registration of domain-joined Windows computers.</span></span>
+<span data-ttu-id="e6150-139">ドメイン [に参加している Windows コンピューター](/azure/active-directory/devices/hybrid-azuread-join-plan) のデバイスの自動登録を有効にするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e6150-139">Follow [these instructions](/azure/active-directory/devices/hybrid-azuread-join-plan) to enable automatic device registration of domain-joined Windows computers.</span></span>
 
-## <a name="phase-6-configure-azure-ad-password-protection"></a><span data-ttu-id="4fa16-140">フェーズ 6: Azure のパスワード保護AD構成する</span><span class="sxs-lookup"><span data-stu-id="4fa16-140">Phase 6: Configure Azure AD password protection</span></span> 
+## <a name="phase-6-configure-azure-ad-password-protection"></a><span data-ttu-id="e6150-140">フェーズ 6: Azure のパスワード保護AD構成する</span><span class="sxs-lookup"><span data-stu-id="e6150-140">Phase 6: Configure Azure AD password protection</span></span> 
 
-<span data-ttu-id="4fa16-141">既知 [の脆弱なパスワードとその](/azure/active-directory/authentication/concept-password-ban-bad) バリアントをブロックするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fa16-141">Follow [these instructions](/azure/active-directory/authentication/concept-password-ban-bad) to block known weak passwords and their variants.</span></span>
+<span data-ttu-id="e6150-141">既知 [の脆弱なパスワードとその](/azure/active-directory/authentication/concept-password-ban-bad) バリアントをブロックするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e6150-141">Follow [these instructions](/azure/active-directory/authentication/concept-password-ban-bad) to block known weak passwords and their variants.</span></span>
 
-## <a name="phase-7-enable-azure-ad-identity-protection"></a><span data-ttu-id="4fa16-142">フェーズ 7: Azure AD Identity Protection を有効化する</span><span class="sxs-lookup"><span data-stu-id="4fa16-142">Phase 7: Enable Azure AD Identity Protection</span></span>
+## <a name="phase-7-enable-azure-ad-identity-protection"></a><span data-ttu-id="e6150-142">フェーズ 7: Azure AD Identity Protection を有効化する</span><span class="sxs-lookup"><span data-stu-id="e6150-142">Phase 7: Enable Azure AD Identity Protection</span></span>
 
-<span data-ttu-id="4fa16-143">[テスト ラボ ガイドの「Azure AD Identity Protection」のフェーズ 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) に説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fa16-143">Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection).</span></span> 
+<span data-ttu-id="e6150-143">[テスト ラボ ガイドの「Azure AD Identity Protection」のフェーズ 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) に説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e6150-143">Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection).</span></span> 
 
-## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a><span data-ttu-id="4fa16-144">フェーズ 8: Exchange Online および Skype for Business Online に対して先進認証を有効化する</span><span class="sxs-lookup"><span data-stu-id="4fa16-144">Phase 8: Enable modern authentication for Exchange Online and Skype for Business Online</span></span>
+## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a><span data-ttu-id="e6150-144">フェーズ 8: Exchange Online および Skype for Business Online に対して先進認証を有効化する</span><span class="sxs-lookup"><span data-stu-id="e6150-144">Phase 8: Enable modern authentication for Exchange Online and Skype for Business Online</span></span>
 
-<span data-ttu-id="4fa16-145">Exchange Online については、[こちら](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)で説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fa16-145">For Exchange Online, follow [these instructions](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later).</span></span> 
+<span data-ttu-id="e6150-145">Exchange Online については、[こちら](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)で説明されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e6150-145">For Exchange Online, follow [these instructions](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later).</span></span> 
 
-<span data-ttu-id="4fa16-146">Skype for Business Online については、</span><span class="sxs-lookup"><span data-stu-id="4fa16-146">For Skype for Business Online:</span></span>
+<span data-ttu-id="e6150-146">Skype for Business Online については、</span><span class="sxs-lookup"><span data-stu-id="e6150-146">For Skype for Business Online:</span></span>
 
-1. <span data-ttu-id="4fa16-147">[Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) に接続します。</span><span class="sxs-lookup"><span data-stu-id="4fa16-147">Connect to [Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).</span></span>
+1. <span data-ttu-id="e6150-147">[Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) に接続します。</span><span class="sxs-lookup"><span data-stu-id="e6150-147">Connect to [Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).</span></span>
 
-2. <span data-ttu-id="4fa16-148">次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="4fa16-148">Run this command.</span></span>
+2. <span data-ttu-id="e6150-148">次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e6150-148">Run this command.</span></span>
 
   ```powershell
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
-3. <span data-ttu-id="4fa16-149">このコマンドを使用して、変更が成功したことを確認します。</span><span class="sxs-lookup"><span data-stu-id="4fa16-149">Verify that the change was successful with this command.</span></span>
+3. <span data-ttu-id="e6150-149">このコマンドを使用して、変更が成功したことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e6150-149">Verify that the change was successful with this command.</span></span>
 
   ```powershell
   Get-CsOAuthConfiguration
   ```
 
-<span data-ttu-id="4fa16-150">その結果、ID およびデバイス アクセスのクラウド専用前提条件構成[](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)の要件を満たすテスト環境が得られます。</span><span class="sxs-lookup"><span data-stu-id="4fa16-150">The result is a test environment that meets the requirements of the [cloud-only prerequisite configuration](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access.</span></span> 
+<span data-ttu-id="e6150-150">その結果、ID およびデバイス アクセスのクラウド専用前提条件構成[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)の要件を満たすテスト環境が得られます。</span><span class="sxs-lookup"><span data-stu-id="e6150-150">The result is a test environment that meets the requirements of the [cloud-only prerequisite configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access.</span></span> 
 
-## <a name="next-step"></a><span data-ttu-id="4fa16-151">次の手順</span><span class="sxs-lookup"><span data-stu-id="4fa16-151">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="e6150-151">次の手順</span><span class="sxs-lookup"><span data-stu-id="e6150-151">Next step</span></span>
 
-<span data-ttu-id="4fa16-152">[共通 ID とデバイスのアクセス ポリシー](../security/defender-365-security/identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。</span><span class="sxs-lookup"><span data-stu-id="4fa16-152">Use [Common identity and device access policies](../security/defender-365-security/identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.</span></span>
+<span data-ttu-id="e6150-152">[共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)を使用して、前提条件に基づいて構築し ID とデバイスを保護するポリシーを構成します。</span><span class="sxs-lookup"><span data-stu-id="e6150-152">Use [Common identity and device access policies](../security/office-365-security/identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="4fa16-153">関連項目</span><span class="sxs-lookup"><span data-stu-id="4fa16-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e6150-153">関連項目</span><span class="sxs-lookup"><span data-stu-id="e6150-153">See also</span></span>
 
-[<span data-ttu-id="4fa16-154">その他の ID のテスト ラボ ガイド</span><span class="sxs-lookup"><span data-stu-id="4fa16-154">Additional identity Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md#identity)
+[<span data-ttu-id="e6150-154">その他の ID のテスト ラボ ガイド</span><span class="sxs-lookup"><span data-stu-id="e6150-154">Additional identity Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md#identity)
 
-[<span data-ttu-id="4fa16-155">ID ロードマップ</span><span class="sxs-lookup"><span data-stu-id="4fa16-155">Identity roadmap</span></span>](identity-roadmap-microsoft-365.md)
+[<span data-ttu-id="e6150-155">ID ロードマップ</span><span class="sxs-lookup"><span data-stu-id="e6150-155">Identity roadmap</span></span>](identity-roadmap-microsoft-365.md)
 
-[<span data-ttu-id="4fa16-156">Microsoft 365 Enterprise のテスト ラボ ガイド</span><span class="sxs-lookup"><span data-stu-id="4fa16-156">Microsoft 365 for enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
+[<span data-ttu-id="e6150-156">Microsoft 365 Enterprise のテスト ラボ ガイド</span><span class="sxs-lookup"><span data-stu-id="e6150-156">Microsoft 365 for enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
 
-[<span data-ttu-id="4fa16-157">Microsoft 365 for enterprise の概要</span><span class="sxs-lookup"><span data-stu-id="4fa16-157">Microsoft 365 for enterprise overview</span></span>](microsoft-365-overview.md)
+[<span data-ttu-id="e6150-157">Microsoft 365 for enterprise の概要</span><span class="sxs-lookup"><span data-stu-id="e6150-157">Microsoft 365 for enterprise overview</span></span>](microsoft-365-overview.md)
 
-[<span data-ttu-id="4fa16-158">Microsoft 365 for enterprise のドキュメント</span><span class="sxs-lookup"><span data-stu-id="4fa16-158">Microsoft 365 for enterprise documentation</span></span>](/microsoft-365-enterprise/)
+[<span data-ttu-id="e6150-158">Microsoft 365 for enterprise のドキュメント</span><span class="sxs-lookup"><span data-stu-id="e6150-158">Microsoft 365 for enterprise documentation</span></span>](/microsoft-365-enterprise/)
