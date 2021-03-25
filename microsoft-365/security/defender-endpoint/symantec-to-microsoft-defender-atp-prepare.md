@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 8784c8d608666946461ddc27aa2e7f2b740276a0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87da8a558e1295f793600aae2fdd836667374052
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185493"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218726"
 ---
 # <a name="migrate-from-symantec---phase-1-prepare-for-your-migration"></a>Symantec からの移行 - フェーズ 1: 移行の準備
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185493"
 |*お前はここにいる!*| | |
 
 
-**Symantec から [Microsoft Defender](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)** for Endpoint への移行の準備フェーズへようこそ。 
+**Symantec から [Microsoft Defender](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)** for Endpoint への移行の準備フェーズへようこそ。 
 
 この移行フェーズには、次の手順が含まれます。
 1. [エンドポイントの Microsoft Defender を取得します](#get-microsoft-defender-for-endpoint)。
@@ -89,5 +89,5 @@ Microsoft Defender セキュリティ センターへのアクセス許可は、
 
 ## <a name="next-step"></a>次の手順
 
-**おめでとう** ございます! Symantec から **Microsoft** Defender for Endpoint への移行の [準備フェーズが完了しました](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)。
+**おめでとう** ございます! Symantec から **Microsoft** Defender for Endpoint への移行の [準備フェーズが完了しました](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)。
 - [[エンドポイント用 Microsoft Defender のセットアップ] に進みます](symantec-to-microsoft-defender-atp-setup.md)。

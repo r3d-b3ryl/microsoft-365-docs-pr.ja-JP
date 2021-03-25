@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920506"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218666"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop デバイス 
 
@@ -37,13 +37,13 @@ Microsoft Managed Desktop に登録するには、デバイスが次のモデル
 
 | モデル    | 最小仕様  | 追加要件    | アーカイブ日付   | 退職日   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Latitude 5310 / 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2022 年 4 月 28 日  | 2025 年 4 月 28 日 |
+| **\*[Dell Latitude 5320 / 5320 2-in-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5320-laptop-or-2-in-1/spd/latitude-13-5320-2-in-1-laptop?)** | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2023 年 1 月 22 日  | 2026 年 1 月 22 日 |
 | [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2022 年 4 月 28 日 | 2025 年 4 月 28 日  |
-| [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2022 年 4 月 28 日 | 2025 年 4 月 28 日  |
+| **\*[Dell Latitude 5420](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5420-laptop/spd/latitude-5420-laptop?)** | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2023 年 1 月 2 日 | 2026 年 1 月 2 日  |
 | [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2022 年 4 月 28 日 | 2025 年 4 月 28 日 |
 | [Dell Latitude 7310 / 7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2022 年 5 月 4 日  | 2025 年 5 月 4 日  |
 | **\*[Dell Latitude 7420 / 7420 2-in-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-7420-business-laptop-or-2-in-1/spd/latitude-14-7420-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2023 年 3 月 22 日  | 2026 年 3 月 22 日  |
-| [Dell Latitude 9410 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2022 年 5 月 5 日  | 2025 年 5 月 5 日  |
+| **\*[Dell Latitude 9420 2-in-1](https://www.dell.com/en-us/work/shop/scc/sr/laptops/latitude-laptops?~ck=mn)** | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2023 年 4 月  | 2026 年 4 月  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | 2022 年 5 月 5 日  | 2025 年 5 月 5 日  |
 | [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB / Intel i3 / 8 GB RAM | なし | 2022 年 5 月 27 日  | 2025 年 5 月 27 日  |
 | [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB / Intel i3 / 8 GB RAM | なし | 2022 年 5 月 15 日  | 2025 年 5 月 15 日  |

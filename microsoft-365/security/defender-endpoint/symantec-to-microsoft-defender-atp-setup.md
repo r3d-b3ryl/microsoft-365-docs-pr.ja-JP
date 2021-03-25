@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6a5e5c10e92d5c8c017360033d7c3fc23b707730
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185481"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218714"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>Symantec からの移行 - フェーズ 2: エンドポイント用 Microsoft Defender のセットアップ
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185481"
 ||*お前はここにいる!* | |
 
 
-**Symantec から [Microsoft Defender](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)** for Endpoint への移行のセットアップ フェーズへようこそ。 このフェーズには、次の手順が含まれます。
+**Symantec から [Microsoft Defender](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)** for Endpoint への移行のセットアップ フェーズへようこそ。 このフェーズには、次の手順が含まれます。
 1. [Microsoft Defender ウイルス対策 (Windows の特定のバージョンの場合) を有効または再インストールします](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows)。
 2. [Microsoft Defender ウイルス対策を有効にする](#enable-microsoft-defender-antivirus)。
 3. [Microsoft Defender ウイルス対策の更新プログラムを取得します](#get-updates-for-microsoft-defender-antivirus)。
@@ -228,5 +228,5 @@ Configuration Manager とデバイス コレクションを使用して、マル
 
 ## <a name="next-step"></a>次の手順
 
-**おめでとう** ございます! Symantec から Microsoft Defender for Endpoint への移行の [セットアップ フェーズが完了しました](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)。
+**おめでとう** ございます! Symantec から Microsoft Defender for Endpoint への移行の [セットアップ フェーズが完了しました](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)。
 - [フェーズ 3: エンドポイント用 Microsoft Defender にオンボードするに進む](symantec-to-microsoft-defender-atp-onboard.md)

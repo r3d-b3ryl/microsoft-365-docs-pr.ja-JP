@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79b4d343326d722e42e09ae2794c05dcdd8eb603
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920566"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218738"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop アーカイブ デバイス
 
@@ -40,11 +40,14 @@ Microsoft Managed Desktop に登録するには、デバイスが次のモデル
 |---------|---------|---------|---------|
 |Dell Precision 3530| 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | **2023 年 5 月 22 日** |
 |Dell Latitude 5300 / 5300 2-in-1 / 5400 / 5500 | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | **2024 年 6 月 1 日**  |
+|Dell Latitude 5310 / 5310 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | **2025 年 4 月 28 日**  |
+|Dell Latitude 5410 / 5410 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | **2025 年 4 月 28 日**  |
 |Dell Latitude 5490 | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | **2023 年 1 月 9 日** |
 |Dell Latitude 7200 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | **2024 年 5 月 1 日** |
 |Dell Latitude 7300 / 7400 / 7400 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | **2024 年 5 月 1 日**  |
 |Dell Latitude 7390 / 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | IR カメラが必要 | **2023 年 1 月 9 日** |
 |Dell Latitude 7410 / 7410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | **2025 年 5 月 19 日**  |
+|Dell Latitude 9410 / 9410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR カメラが必要 | **2025 年 5 月 5 日**  |
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB RAM | なし | **2025 年 5 月 1 日**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | 5VS01AV、IR カメラ、指紋センサーが必要な SKU  | **2023 年 2 月 15 日** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | 5VS01AV、IR カメラ、指紋センサーが必要な SKU  | **2023 年 11 月 30 日** |

@@ -13,12 +13,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e5da8ec3e4555af062aad1a4ebfa96d972bee23b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065875"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218750"
 ---
 # <a name="evaluate-controlled-folder-access"></a>フォルダー アクセスの制御を評価する
 
@@ -76,5 +76,5 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ## <a name="see-also"></a>関連項目
 
 * [フォルダー アクセスを制御して重要なフォルダーを保護する](controlled-folders.md)
-* [エンドポイントに対する Microsoft Defender の評価](evaluate-atp.md)
+* [エンドポイントに対する Microsoft Defender の評価](evaluate-mde.md)
 * [監査モードの使用](audit-windows-defender.md)
