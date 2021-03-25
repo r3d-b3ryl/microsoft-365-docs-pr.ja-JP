@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: アクティブ サービスが中断していないかどうかを確認するため、サポートに連絡する前に、Microsoft 365 サービスの正常性状態を表示します。
-ms.openlocfilehash: 3802ca01902d5b0d457d2a3d75b784d38f71bd42
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 30b677a80e5a08d75534a91aa04d735443660f18
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924686"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215482"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 サービス正常性を確認する方法
 
@@ -47,7 +47,7 @@ ms.locfileid: "50924686"
 1. [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) の Microsoft 365 管理センターに移動し、管理者アカウントでサインインします。
 
     > [!NOTE]
-    > 全体管理者またはサービス管理者の役割を割り当てられているユーザーは、サービス正常性を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)」を参照してください。
+    > 全体管理者またはサービス管理者の役割を割り当てられているユーザーは、サービス正常性を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)」を参照してください。
   
 2. 新しい管理センターを使用していない場合は、[**ホーム**] ページで、右上隅にある [**新しい管理センターを試す**] トグルを選択します。
 
@@ -153,4 +153,5 @@ Microsoft 365 サービスで問題が発生し、それが [**サービス正�
 ## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理センターのアクティビティ レポート](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-[メッセージ センターのユーザー設定](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)
+[メッセージ センターのユーザー設定](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)<br/>
+[管理センターで Windows リリースの正常性を確認する方法](https://docs.microsoft.com/windows/deployment/update/check-release-health)

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理センターを使用して、クラウドでの組織の設定、ユーザーおよびサブスクリプションの管理を行います。 管理者アクセス許可によるアカウントへのサインインから始めます。
-ms.openlocfilehash: dca9e5dd4cc8a35721014fa06c0bb844b608778c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7d326629de4859819784af015292f99b044658d0
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903550"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215494"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
@@ -84,7 +84,7 @@ ms.locfileid: "50903550"
 |[**設定**] <br/> |メール、サイト、および Office スイートなどのアプリのグローバル設定を管理します。 パスワード ポリシーと有効期限を変更します。 contoso.com などのドメイン名を追加して更新します。 組織プロファイルとリリース設定を変更します。 また、パートナーが管理センターにアクセスできるかどうかを選択します。  <br/> |
 |**セットアップ** <br/> |既存のドメインの管理、多要素認証の有効化と管理、管理者のアクセス権の管理、Office 365 へのユーザー メールボックスの移行、機能の更新プログラムの管理を行ったり、ユーザーによる Office アプリのインストールを支援したりします。 |
 |**レポート** <br/> |電子メールの使用や Office ライセンス認証数などに関する詳細レポートでは、組織で Microsoft 365 がどのように使われているかが一目でわかります。新しいアクティビティ レポートの使用方法については、[こちら](../activity-reports/activity-reports.md)を参照してください。  <br/> |
-|**正常性** <br/> |サービスの正常性がひとめでわかるように表示されます。 また、詳細やサービスの正常性の履歴を確認することもできます。 「[サービスの正常性の確認方法](../../enterprise/view-service-health.md)」を参照してください。  <br/> 機能やサービスの今後の変更を確認するには、メッセージ センターを使用します。 そこには、変更の予定とその変更がユーザーにどのような影響を与えるかを理解するための情報を含む、お知らせが投稿されます。 詳細については、「[Office 365 のメッセージ センター](../manage/message-center.md)」を参照してください。  <br/> |
+|**正常性** <br/> |正常性を一目で確認します。 詳細と正常性履歴も確認できます。 詳細[については、「サービスの正常性を確認する](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)[方法」および「Windows リリースの正常性を確認する方法」](https://docs.microsoft.com/windows/deployment/update/check-release-health)を参照してください。  <br/><br/>機能やサービスの今後の変更を確認するには、メッセージ センターを使用します。 そこには、変更の予定とその変更がユーザーにどのような影響を与えるかを理解するための情報を含む、お知らせが投稿されます。 メッセージ センターで詳細 [を確認します](../manage/message-center.md)。 <br/> |
 |**管理センター** <br/> |Exchange、Skype for Business、SharePoint、Yammer、Azure AD の管理センターを個別に開きます。 各管理センターには、そのサービスで利用可能なすべての設定が含まれます。  <br/> たとえば、Exchange 管理センターでは、メール、予定表、配布グループなどのセットアップと管理を行います。SharePoint 管理センターでは、サイト コレクション、サイト設定、OneDrive for Business の作成と管理を行います。Skype for Business 管理センターでは、インスタント メッセージ通知、ダイヤルイン会議、オンライン プレゼンスのセットアップを行います。  <br/> [Exchange 管理センター](/exchange/exchange-admin-center)および [SharePoint 管理センター](/sharepoint/sharepoint-online)について学びましょう。<br/> **注:** 利用できる管理センターは、プランと地域によって異なります。           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>管理センターの一般的なタスク
