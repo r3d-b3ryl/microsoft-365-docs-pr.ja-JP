@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 423840ae62d0531da76044238bbeef05078a82c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc526371fdf12314f762c885ba1775fcf3f00d00
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907990"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215554"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
@@ -33,7 +33,7 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
-IT アーキテクトが Microsoft 365 のグループについて知っておくべきこと
+この図には、Microsoft 365 グループに関する IT アーキテクト向け情報が含まれています。 組織での共同作業のために Microsoft 365 グループとチームを構成および管理する方法については [、「Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) との安全なコラボレーションをセットアップする」および「コラボレーション ガバナンスとは」を [参照してください](/microsoft-365/solutions/collaboration-governance-overview)。
 
 | アイテム | 説明 |
 |:-----|:-----|
@@ -52,7 +52,7 @@ Microsoft 365 には、情報保護とコンプライアンス機能の広範な
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>多地域組織向けのセキュリティと情報保護
-単一の Microsoft 365 テナントを使用する多地域組織向けのセキュリティと情報保護
+単一の Microsoft 365 テナントを使用する複数地域組織のセキュリティと情報保護
 
 | アイテム | 説明 |
 |:-----|:-----|

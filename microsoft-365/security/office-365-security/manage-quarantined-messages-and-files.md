@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について学習できます。 Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫済みファイルを管理することもできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c606daccfd037cad4d894ab7f33ff02fcf172b5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205346"
+ms.locfileid: "51215540"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -197,6 +197,8 @@ Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online�
 
 - **[メッセージをダウンロード]**: 表示されるポップアップ ウィンドウで、**[このメッセージをダウンロードするリスクを理解しています]** を選択して、メッセージのローカル コピーを .eml 形式で保存します。
 
+- **[送信者のブロック**] : 送信者が管理者受信者メールボックスに電子メールを送信するのをブロックします。
+
 - **送信メッセージ**: 表示されるフライアウト ウィンドウで、次のオプションを選択します。
 
   - **オブジェクトの種類**:**メール**(既定 **)、URL、** または **添付ファイル 。**
@@ -307,6 +309,6 @@ Defender for Office 365 の組織では、管理者は SharePoint Online、OneDr
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): このコマンドレットはメッセージ専用であり、SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルからのマルウェア ファイルではありません。
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): このコマンドレットはメッセージ専用であり、SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルから検疫されたファイルではありません。
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
