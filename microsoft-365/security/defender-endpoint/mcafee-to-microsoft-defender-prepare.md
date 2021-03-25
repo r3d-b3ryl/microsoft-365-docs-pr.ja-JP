@@ -22,17 +22,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c87ed20dd1d0c959a9af52fd766d0a34232747b2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: adc8c1259be1e226bf1c2592090cf6008c976cf8
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061635"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186631"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>McAfee からの移行 - フェーズ 1: 移行の準備
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |![フェーズ 1: 準備](images/phase-diagrams/prepare.png)<br/>フェーズ 1: 準備 |[![フェーズ 2: セットアップ](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[フェーズ 2: セットアップ](mcafee-to-microsoft-defender-setup.md) |[![フェーズ 3: オンボード](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[フェーズ 3: オンボード](mcafee-to-microsoft-defender-onboard.md) |
@@ -68,7 +68,7 @@ McAfee を最新の状態に保ち、組織のデバイスに最新のセキュ�
 
 組織のデバイスの更新に関するヘルプが必要ですか? 以下のリソースを参照してください。
 
-|OS | Resource |
+|OS | リソース |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|

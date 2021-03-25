@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint Service の問題のトラブルシューティング
-description: サービスにアクセスしようとするときに、サーバー エラーなどの既知の問題に対する解決策を見つけて回避します。
+description: サービスにアクセスしようとするときにサーバー エラーなどの既知の問題に対する解決策と回避策を見つける。
 keywords: エンドポイントの Microsoft Defender のトラブルシューティング、Windows ATP のトラブルシューティング、サーバー エラー、アクセス拒否、無効な資格情報、データなし、ダッシュボード ポータル、許可、イベント ビューアー
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: bd211a56ee9ed6aa871c8d55149247a4755bc863
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064867"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186019"
 ---
 # <a name="troubleshoot-service-issues"></a>サービスの問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -41,7 +41,7 @@ ms.locfileid: "51064867"
 Cookie を許可するブラウザーを構成します。
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>ポータルに存在する要素またはデータ
-一部の UI 要素またはデータが Microsoft Defender セキュリティ センターで見つからない場合は、プロキシ設定でブロックされている可能性があります。
+一部の要素やデータが Microsoft Defender セキュリティ センターで見つからない場合は、プロキシ設定でブロックされている可能性があります。
 
 プロキシ許可リスト `*.securitycenter.windows.com` が含まれているか確認します。
 
@@ -51,7 +51,7 @@ Cookie を許可するブラウザーを構成します。
 
 ## <a name="microsoft-defender-for-endpoint-service-shows-event-or-error-logs-in-the-event-viewer"></a>Microsoft Defender for Endpoint Service は、イベント ビューアーにイベント ログまたはエラー ログを表示します。
 
-Microsoft Defender [](event-error-codes.md) for Endpoint サービスによって報告されるイベントの一覧については、「イベント ビューアーを使用してイベントとエラーを確認する」を参照してください。 このトピックには、イベント エラーのトラブルシューティング手順も含まれています。
+Microsoft [](event-error-codes.md) Defender for Endpoint サービスによって報告されるイベントの一覧については、「イベント ビューアーを使用してイベントとエラーを確認する」を参照してください。 この記事には、イベント エラーのトラブルシューティング手順も含まれています。
 
 ## <a name="microsoft-defender-for-endpoint-service-fails-to-start-after-a-reboot-and-shows-error-577"></a>Microsoft Defender for Endpoint service が再起動後に開始に失敗し、エラー 577 が表示される
 

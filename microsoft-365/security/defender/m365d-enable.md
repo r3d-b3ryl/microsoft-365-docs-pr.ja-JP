@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4165f13e24e1ecb53413025c59bf6f3195525b17
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 399da6fd54145f73ac72fdac04e8d25148f76507
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068620"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186751"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 
@@ -95,7 +95,7 @@ Microsoft サポート スタッフは、テナントのサービスおよび関
 - [ライセンス要件およびその他の前提条件](prerequisites.md)
 - [サポートされているサービスを展開する](deploy-supported-services.md)
 - [Microsoft 365 Defender の概要](microsoft-365-defender.md)
-- [Microsoft Defender for Endpoint の概要](../defender-endpoint/microsoft-defender-advanced-threat-protection.md)
+- [Microsoft Defender for Endpoint の概要](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender for Office 365 の概要](../defender-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security の概要](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity の概要](/azure-advanced-threat-protection/what-is-atp)

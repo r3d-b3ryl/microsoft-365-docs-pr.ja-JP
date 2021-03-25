@@ -16,12 +16,12 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ae50d53fbc9bf01d4cd16b939461eecc9ec1a568
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cd662dc130adc37b3bf8bd06839242ccc9a49f8e
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165179"
+ms.locfileid: "51185971"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダー アクセスを制御して重要なフォルダーを保護する
 
@@ -40,7 +40,7 @@ ms.locfileid: "51165179"
 > [!NOTE]
 > スクリプト エンジンは信頼されていないので、制御された保護されたフォルダーへのアクセスを許可することはできません。  たとえば、PowerShell は、証明書とファイルインジケーターで許可されている場合でも、フォルダー アクセスの制御 [によって信頼されません](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates)。 
 
-フォルダー アクセスの制御は [、Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)で最適に機能します。これにより、通常のアラート調査シナリオの一環として、フォルダー アクセスの制御イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
+フォルダー アクセスの制御は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)で最適に機能します。これにより、通常のアラート調査シナリオの一環として、フォルダー アクセスの制御イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
 
 > [!TIP]
 > フォルダー アクセスブロックの制御は、アラート キューにアラートを [生成しない](alerts-queue.md)。 ただし、高度な検索を使用している間、またはカスタム検出ルール[](investigate-machines.md)を使用して、デバイス[](advanced-hunting-overview.md)タイムライン ビューでフォルダー アクセス ブロックの制御に関する情報[を表示できます](custom-detection-rules.md)。

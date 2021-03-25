@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 6caa1cfe08a20aa824d85966c104a25988b8be53
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: af9e9315088a8dd5da9740b33135551d28664ed7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165359"
+ms.locfileid: "51186115"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>アクション センターにアクセスして修復アクションを確認する
 
@@ -46,14 +46,14 @@ ms.locfileid: "51165359"
 
 |統合された新しいアクション センター  |前のアクション センター  |
 |---------|---------|
-|デバイスと電子メールの保留中のアクションと完了したアクションを 1 つの場所に一覧表示する <br/>([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) plus Microsoft Defender for Office [365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp))|デバイスの保留中のアクションと完了したアクションの一覧 <br/> ([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) のみ)   |
+|デバイスと電子メールの保留中のアクションと完了したアクションを 1 つの場所に一覧表示する <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender for Office [365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp))|デバイスの保留中のアクションと完了したアクションの一覧 <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) のみ)   |
 |場所は次の場所です。<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |場所は次の場所です。<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | Microsoft 365 セキュリティ センターで、[アクション センター] **を選択します**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Microsoft 365 セキュリティ センターのアクション センターへの移動"::: | Microsoft Defender セキュリティ センターで、[自動調査 **] アクション センター**  >  **を選択します**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Microsoft Defender セキュリティ センターからアクション センターに移動する":::  |
 
 統合アクション センターでは、365 用の Defender for Endpoint と Defender 全体で修復Officeされます。 すべての修復アクションの共通言語を定義し、統合された調査エクスペリエンスを提供します。 
 
 適切なアクセス許可と次のサブスクリプションの 1 つ以上がある場合は、統合アクション センターを使用できます。
-- [Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)
+- [Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 

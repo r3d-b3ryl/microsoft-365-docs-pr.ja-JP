@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6e2c18bd3710e659b5f9887844bc92528da4607
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6b080c209292c8cac1aa64d748926734f4be964c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062100"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185469"
 ---
 # <a name="techniques-in-the-device-timeline"></a>デバイスタイムラインのテクニック
 
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 特定のデバイスで発生したイベントを分析することで、調査に関するより多くの洞察を得られる可能性があります。 まず、[デバイス] リストから目的のデバイス [を選択します](machines-view-overview.md)。 デバイス ページで、[タイムライン] タブを **選択** して、デバイスで発生したイベントを表示できます。

@@ -21,17 +21,17 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 3fbe7ca11ca168f2af75b76252acf4d3a97b35f0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6a5e5c10e92d5c8c017360033d7c3fc23b707730
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066812"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185481"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>Symantec からの移行 - フェーズ 2: エンドポイント用 Microsoft Defender のセットアップ
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![フェーズ 1: 準備](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[フェーズ 1: 準備](symantec-to-microsoft-defender-atp-prepare.md) |![フェーズ 2: セットアップ](images/phase-diagrams/setup.png)<br/>フェーズ 2: セットアップ |[![フェーズ 3: オンボード](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[フェーズ 3: オンボード](symantec-to-microsoft-defender-atp-onboard.md) |
@@ -87,7 +87,7 @@ Windows Server 2016 を使用している場合に Microsoft Defender ウイル�
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> さらにサポートが必要な場合 [「Microsoft Defender Antivirus on Windows Server 2016 and 2019」を参照](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)してください。
+> さらにヘルプが必要ですか? [「Microsoft Defender Antivirus on Windows Server 2016 and 2019」を参照](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)してください。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Windows Server で Microsoft Defender ウイルス対策をパッシブ モードに設定する
 

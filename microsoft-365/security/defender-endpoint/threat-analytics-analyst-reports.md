@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 38d6d4f3ce1fd6a6ba51b2ac0802892c036f3e50
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 599eab29628d11d67843f89a0eb59bb4db1e66ad
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068467"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185457"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>脅威分析のアナリスト レポートを理解する
 
@@ -30,7 +30,7 @@ ms.locfileid: "51068467"
 
 **適用対象:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) ](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)

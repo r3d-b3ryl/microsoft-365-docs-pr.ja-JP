@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c7f60df38ce9f34fecae975be40206d7270b0863
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7887f26cb8ca7e0e769249a10f008308149aaa42
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062532"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186691"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>Microsoft Defender for Endpoint for iOS の展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -128,7 +128,7 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
 
    ユーザー グループに展開する場合、ユーザーはポリシーが適用される前にデバイスにサインインする必要があります。
 
-   **[次へ]** をクリックします。
+   [ **次へ**] をクリックします。
 
 1. [レビュー **と作成] ページ** で、完了したら、[作成] を **選択します**。 新しいプロファイルが構成プロファイルの一覧に表示されます。
 
@@ -140,7 +140,7 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
     > ![Microsoft Endpoint Manager Admin Center7 のイメージ](images/ios-deploy-7.png)
 
     - プロファイルの名前を指定します。 構成プロファイル ファイルのインポートを求めるメッセージが表示されたら、上記でダウンロードしたファイルを選択します。
-    - [割 **り当て** ] セクションで、このプロファイルを適用するデバイス グループを選択します。 ベスト プラクティスとして、これはすべての管理対象 iOS デバイスに適用する必要があります。 **[次へ]** をクリックします。
+    - [割 **り当て** ] セクションで、このプロファイルを適用するデバイス グループを選択します。 ベスト プラクティスとして、これはすべての管理対象 iOS デバイスに適用する必要があります。 [ **次へ**] をクリックします。
     - [レビュー **と作成] ページ** で、完了したら、[作成] を **選択します**。 新しいプロファイルが構成プロファイルの一覧に表示されます。
 
 ## <a name="next-steps"></a>次の手順
