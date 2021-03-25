@@ -1,0 +1,84 @@
+---
+title: 365 で既定でセキュリティOffice
+f1.keywords:
+- NOCSH
+ms.author: dansimp
+author: dansimp
+manager: dansimp
+ms.date: ''
+audience: ITPro
+ms.topic: conceptual
+localization_priority: Normal
+search.appverid:
+- MET150
+- MOE150
+ms.collection:
+- M365-security-compliance
+description: Exchange Online Protection (EOP) の既定のセキュリティで保護された設定の詳細
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f1b495a9c985077dfc88d1da7a221bb60ca10df9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51205650"
+---
+# <a name="secure-by-default-in-office-365"></a>365 で既定でセキュリティOffice
+
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用対象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+"Secure by default" は、可能な限り最も安全な既定の設定を定義するために使用される用語です。
+
+ただし、セキュリティと生産性のバランスを取る必要があります。 これには、次の分散が含まれます。
+
+- **使いやすさ**: 設定がユーザーの生産性を低下させる必要があります。
+- **リスク**: セキュリティが重要なアクティビティをブロックする可能性があります。
+- **従来の** 設定 : 新しい最新の設定が改善された場合でも、ビジネス上の理由から、古い製品や機能の一部の構成を維持する必要がある場合があります。
+
+Exchange Online のメールボックスを持つ Microsoft 365 組織は、Exchange Online Protection (EOP) によって保護されています。 この保護には、次の機能が含まれます。
+
+- マルウェアが疑われるメールは自動的に検疫され、受信者に通知されます。 [「EOP でマルウェア対策ポリシーを構成する」を参照してください](configure-anti-malware-policies.md)。
+- 信頼度の高いフィッシングと識別された電子メールは、スパム対策ポリシーアクションに従って処理されます。 [「EOP でスパム対策ポリシーを構成する」を参照してください](configure-your-spam-filter-policies.md)。
+
+EOP の詳細については [、「Exchange Online Protection の概要」を参照してください](exchange-online-protection-overview.md)。
+
+Microsoft は既定で顧客のセキュリティを維持したいと考えていますので、一部のテナントの上書きはマルウェアや高信頼フィッシングには適用されません。 これらのオーバーライドには、次のものが含まれます。
+
+- 許可された送信者リストまたは許可されたドメイン リスト (スパム対策ポリシー)
+- Outlook の差出人セーフ リスト
+- IP 許可一覧 (接続フィルター)
+
+これらの上書きに関する詳細については、「差出人セーフ リストの作成 [」を参照してください](create-safe-sender-lists-in-office-365.md)。
+
+> [!NOTE]
+> EOP スパム対策ポリシーで信頼度の高いフィッシングメールの評決を受け、メッセージを迷惑メール フォルダーに移動するアクションを廃止中です。 信頼度の高いフィッシング メッセージにこのアクションを使用するスパム対策ポリシーは、検疫メッセージに **変換されます**。 信頼 **度の高いフィッシング メッセージ** の [電子メール アドレスにメッセージをリダイレクトする] アクションは影響を受けません。
+
+既定ではセキュリティで保護は、オンまたはオフにできる設定ではなく、潜在的に危険なメッセージや望ましくないメッセージをメールボックスから守るフィルター処理の仕組みです。 マルウェアと高信頼のフィッシング メッセージは検疫する必要があります。 マルウェアまたは高信頼フィッシングとして検疫されたメッセージを管理できるのは管理者のみです。また、そこから Microsoft に誤検知を報告することもできます。 詳細については [、「EOP で検疫済みメッセージとファイルを管理者として管理する」を参照してください。](manage-quarantined-messages-and-files.md)
+
+## <a name="more-on-why-were-doing-this"></a>これを行う理由の詳細
+
+既定でセキュリティで保護されるという考え方は、構成された例外がメッセージの配信を許可する場合でも、悪意のあるメッセージを知っていた場合と同じアクションを実行します。 これは、マルウェアで常に使用していたのと同じ方法で、この動作を信頼性の高いフィッシング メッセージに拡張しています。
+
+データは、ユーザーが迷惑メール フォルダー内のメッセージと検疫の悪意のあるリンクをクリックする可能性が 30 倍高い可能性を示しています。 また、信頼度の高いフィッシング メッセージに対する誤検知率 (良いメッセージが悪いとマークされている) が非常に低いことを示し、管理者は管理者の申請で誤検知を解決できます。
+
+また、スパム対策ポリシーと Outlook の差出人セーフ リストで許可されている送信者と許可されたドメイン リストが広すぎて、良いよりも害が大きいと判断しました。
+
+別の言い方をすると、セキュリティ サービスとして、ユーザーが侵害されるのを防ぐために、お客様の代理として行動しています。 
+
+## <a name="exceptions"></a>例外
+
+信頼度の高いフィッシング メッセージがフィルター処理をバイパスできる唯一のオーバーライドは、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) です。 メール フロー ルールを使用してフィルター処理をバイパスするには、「メール フロー ルールを使用してメッセージに [SCL を設定する」を参照してください](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
+
+次のシナリオでは、オーバーライドの使用のみを検討する必要があります。
+
+- フィッシング シミュレーション: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
+- セキュリティ/SecOps メールボックス: フィルター処理されていないメッセージを取得するためにセキュリティ チームが使用する専用のメールボックス (良いメールボックスと悪いメールボックスの両方)。 その後、Teams は悪意のあるコンテンツが含まれているか確認できます。
+- サード パーティ製フィルター: ドメインの MX レコードが 365 を指していない場合、既定ではセキュリティで保護Officeされません。
+- 誤検知: 管理者の申請を介して Microsoft によって分析されている特定のメッセージを一時的に許可 [する場合があります](admin-submission.md)。 すべての上書きと同様に、一時的な上書きをお勧めします。
