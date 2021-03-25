@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 金融サービス機関が、Microsoft 365 と Teams を使用して、財務的なセキュリテとコンプライアンスを維持し、効果的に共同作業を行う方法について説明します。
 f1.keywords: NOCSH
-ms.openlocfilehash: f0d5697e5582c8e165e35920cf010648ea942274
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f7e32502994f89451d8016ed5664ebe3591dcc8d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052520"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200343"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 
@@ -196,7 +196,7 @@ Microsoft が最近発表した Microsoft 365 Defender ソリューションは�
 ### <a name="the-intelligent-security-graph"></a>[インテリジェント セキュリティ グラフ](https://www.microsoft.com/security/business/intelligence) 
 Microsoft 365 が提供するセキュリティ サービスは、インテリジェント セキュリティ グラフに支えられています。 サイバー攻撃に対抗するため、インテリジェント セキュリティ グラフは高度な分析を利用して、脅威インテリジェンスを Microsoft やそのパートナーからのシグナルと結びつけます。 Microsoft はグローバル サービスを大規模に運営しており、スタック全体の保護レイヤーを強化する何兆ものセキュリティ シグナルを収集しています。 機械学習モデルがこのインテリジェンスを評価し、シグナルと脅威に関する分析情報は Microsoft の製品やサービスで幅広く共有されます。 これにより、Microsoft は脅威をすばやく検出して対応し、アクション可能な警告や情報を顧客に提供して、改善を促すことができます。 機械学習モデルは新しい分析情報によって継続的にトレーニングおよび更新されており、さらにセキュリティが強化された製品の開発や、よりプロアクティブなセキュリティの提供に役立っています。
 
-[Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide) は、メールや Office ドキュメントで配信される悪意のあるリンクやマルウェアから組織を保護する、統合された Microsoft 365 サービスを提供します。 現在、ユーザーに影響を与える最も一般的な攻撃ベクトルの 1 つは、メールによるフィッシング攻撃です。 この攻撃は特定のユーザーをターゲットとしていて、ユーザーに悪意のあるリンクをクリックさせたり、マルウェアを含む添付ファイルを開かせたりするためのコール トゥ アクションが含まれており、非常に巧妙です。 コンピューターが感染すると、攻撃者はユーザーの認証情報を盗んで組織内を動き回るか、メールやデータを抜き出して機密情報を探します。 Defender for Office 365 は、クリック時にドキュメントやリンクを評価し、悪意があるものを発見した場合にはアクセスをブロックすることにより、添付ファイルやリンクの安全性を確認します。 メールの添付ファイルは、ユーザーのメールボックスに配信される前に保護されたサンドボックス内で開かれます。 また、不正な URL がないか Office ドキュメント内のリンクも評価します。 Defender for Office 365 はさらに、SharePoint Online、OneDrive for Business、Teams 内のリンクやファイルも保護します。 不正なファイルが検出されると Defender for Office 365 は自動的にそのファイルをロックし、潜在的な損害を抑えます。
+[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide) は、メールや Office ドキュメントで配信される悪意のあるリンクやマルウェアから組織を保護する、統合された Microsoft 365 サービスを提供します。 現在、ユーザーに影響を与える最も一般的な攻撃ベクトルの 1 つは、メールによるフィッシング攻撃です。 この攻撃は特定のユーザーをターゲットとしていて、ユーザーに悪意のあるリンクをクリックさせたり、マルウェアを含む添付ファイルを開かせたりするためのコール トゥ アクションが含まれており、非常に巧妙です。 コンピューターが感染すると、攻撃者はユーザーの認証情報を盗んで組織内を動き回るか、メールやデータを抜き出して機密情報を探します。 Defender for Office 365 は、クリック時にドキュメントやリンクを評価し、悪意があるものを発見した場合にはアクセスをブロックすることにより、添付ファイルやリンクの安全性を確認します。 メールの添付ファイルは、ユーザーのメールボックスに配信される前に保護されたサンドボックス内で開かれます。 また、不正な URL がないか Office ドキュメント内のリンクも評価します。 Defender for Office 365 はさらに、SharePoint Online、OneDrive for Business、Teams 内のリンクやファイルも保護します。 不正なファイルが検出されると Defender for Office 365 は自動的にそのファイルをロックし、潜在的な損害を抑えます。
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。 Defender for Endpoint には、企業のエンドポイントでの機密データの検出と保護のための機能が組み込まれています。
 
