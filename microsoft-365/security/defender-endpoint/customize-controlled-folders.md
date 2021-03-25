@@ -12,19 +12,17 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 03/24/2021
 ms.technology: mde
-ms.openlocfilehash: 64f96544361a672881c590716adea80f40777c6e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.topic: how-to
+ms.openlocfilehash: 0962913df63e6837664cdb8ff79710d66e66977c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163341"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199915"
 ---
 # <a name="customize-controlled-folder-access"></a>フォルダー アクセスの制御をカスタマイズする
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -120,7 +118,7 @@ Windows セキュリティ アプリ、グループ ポリシー、PowerShell �
 
 4. [ **許可されたアプリを追加する] を選択** し、プロンプトに従ってアプリを追加します。
 
-    ![許可されたアプリ ボタンを追加する方法のスクリーンショット](/microsoft-365/security/defender-endpoint/images/cfa-allow-app)
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="許可されたアプリ ボタンを追加する":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>グループ ポリシーを使用して特定のアプリを許可する
 
@@ -149,7 +147,7 @@ Windows セキュリティ アプリ、グループ ポリシー、PowerShell �
 
    引き続き使用 `Add-MpPreference -ControlledFolderAccessAllowedApplications` して、リストにアプリを追加します。 このコマンドレットを使用して追加されたアプリは、Windows セキュリティ アプリに表示されます。
 
-![上記のコマンドレットが入力された PowerShell ウィンドウのスクリーンショット](/microsoft-365/security/defender-endpoint/images/cfa-allow-app-ps)
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="アプリを許可する PowerShell コマンドレット":::
 
 > [!IMPORTANT]
 > リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します。 コマンドレットを `Set-MpPreference` 使用すると、既存のリストが上書きされます。

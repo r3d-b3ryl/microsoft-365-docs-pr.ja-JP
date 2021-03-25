@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d78f90e78a50d5902070f441a1d60693a5f531c8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185721"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199611"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成する
 
@@ -35,7 +35,8 @@ ms.locfileid: "51185721"
 
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 悪意のある可能性のあるファイルやマルウェアの疑いを禁止することで、組織での攻撃の伝播をさらに防ぐことが可能です。 悪意のある可能性のあるポータブル実行可能ファイル (PE) ファイルが分かっている場合は、そのファイルをブロックできます。 この操作によって、組織内のコンピューターで読み取り、書き込み、または実行されるのを防ぐ。
 
@@ -52,13 +53,13 @@ ms.locfileid: "51185721"
 - ファイルのブロックを開始するには、まず [設定] で [ブロック] 機能または [許可 [**]** 機能を有効にする](advanced-features.md)必要があります。
 - この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、.exe ファイルや _.dll_ ファイルを含むポータブル実行可能ファイル _(PE) ファイルがサポート_ されています。 対象範囲は時間の長い期間延長されます。
 
->[!IMPORTANT]
->- 許可またはブロックアクションの前にファイルの分類がデバイスのキャッシュに存在する場合は、ファイルに対して許可またはブロック関数を実行できません。 
->- 信頼できる署名付きファイルは、異なる方法で処理されます。 Defender for Endpoint は、悪意のあるファイルを処理するために最適化されています。 信頼できる署名付きファイルをブロックしようとすると、パフォーマンスに影響を与える場合があります。
+ネットワーク共有からローカル デバイスに大きなファイルをコピーする場合、特に VPN 接続を使用してパフォーマンスに影響を与える可能性があります。 
 
- 
->[!NOTE]
->通常、ファイル ブロックは数分以内に適用されますが、30 分以上かかる場合があります。
+> [!IMPORTANT]
+> - 許可またはブロックアクションの前にファイルの分類がデバイスのキャッシュに存在する場合は、ファイルに対して許可またはブロック関数を実行できません。 
+> - 信頼できる署名付きファイルは、異なる方法で処理されます。 Defender for Endpoint は、悪意のあるファイルを処理するために最適化されています。 信頼できる署名付きファイルをブロックしようとすると、パフォーマンスに影響を与える場合があります。
+> - 通常、ファイル ブロックは数分以内に適用されますが、30 分以上かかる場合があります。
+> - ファイル インジケーター ポリシーが競合している場合は、より安全なポリシーの適用ポリシーが適用されます。 たとえば、両方のハッシュの種類が同じファイルを定義している場合、SHA-256 ファイル ハッシュ インジケーター ポリシーが MD5 ファイル ハッシュ インジケーター ポリシーよりも優先されます。
 
 ### <a name="create-an-indicator-for-files-from-the-settings-page"></a>設定ページからファイルのインジケーターを作成する
 

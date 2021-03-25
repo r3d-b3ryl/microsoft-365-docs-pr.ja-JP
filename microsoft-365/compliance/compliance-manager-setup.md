@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ユーザーのアクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザー履歴を管理し、ダッシュボード ビューをフィルター処理します。
-ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052135"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199220"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -72,7 +72,7 @@ ms.locfileid: "51052135"
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>the Office 365 Security & コンプライアンス センターについて
 
-コンプライアンス センターの [Office 365 セキュリティ &詳細を参照してください](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
+コンプライアンス センターの [Office 365 セキュリティ &詳細を参照してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 Office 365 セキュリティ/コンプライアンス センターにアクセスできない場合、または Microsoft Service Trust Portal で従来のバージョンのコンプライアンス マネージャーにアクセスする必要がある場合は、サービス信頼ポータルの管理者設定によって、役割を割り[](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)当てる別の方法 (指示の表示) が提供されます。 このような役割の機能が制限されている点に注意してください。
 

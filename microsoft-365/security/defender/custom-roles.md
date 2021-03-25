@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 17d55a434cc0499b9b24039f19ec7ed3c94310e8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060745"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199959"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Microsoft 365 Defender の役割ベースのアクセス制御のカスタム ロール
 
@@ -53,7 +53,7 @@ Microsoft 365 Defender へのアクセスは[、Azure Active Directory (AAD)](m3
 カスタム ロールとアクセス許可は、次の各セキュリティ ポータルを介して作成および個別に管理できます。 
 
 - Microsoft Defender for Endpoint – [エンドポイント用 Microsoft Defender の役割を編集する](../defender-endpoint/user-roles.md)
-- Microsoft Defender for Office 365 – セキュリティ コンプライアンス センター& [アクセス許可](../defender-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
+- Microsoft Defender for Office 365 – セキュリティ コンプライアンス センター& [アクセス許可](../office-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
 - Microsoft Cloud App Security – [管理者アクセスを管理する](/cloud-app-security/manage-admins)
 
 個々のポータルを介して作成された各カスタム ロールにより、関連する製品ポータルのデータにアクセスできます。 たとえば、Microsoft Defender for Endpoint を介して作成されたカスタム ロールは、Defender for Endpoint データへのアクセスのみを許可します。

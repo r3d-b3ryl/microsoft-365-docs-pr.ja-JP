@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41c97d122362ec1fa945fc012ab7a1da46a43b68
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ed6f6b42570a908a1f4a83d46ef5b2de0c558692
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165587"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199743"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -141,7 +141,7 @@ Azure Advanced Threat Protection との統合により、別の Microsoft Identi
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。
 
-Office 365 脅威インテリジェンスでコンテキスト デバイスの統合を受け取る場合は、[セキュリティ とコンプライアンス] ダッシュボードで Defender for Endpoint &する必要があります。 詳細については、「脅威の調査 [と対応」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-ti)。
+Office 365 脅威インテリジェンスでコンテキスト デバイスの統合を受け取る場合は、[セキュリティ とコンプライアンス] ダッシュボードで Defender for Endpoint &する必要があります。 詳細については、「脅威の調査 [と対応」を参照してください](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
 
 ## <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 

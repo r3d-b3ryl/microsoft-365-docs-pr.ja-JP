@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d54ab8eaa1e17be82752c480c963d3a24af56389
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a04f3be1f13fb57cd76cda7115d014f2ba3aa8d6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187579"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198827"
 ---
 # <a name="create-indicators"></a>インジケーターの作成
 
@@ -33,13 +33,14 @@ ms.locfileid: "51187579"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
+> [!TIP]
 > Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 侵害の指標 (IoC) 照合は、すべてのエンドポイント保護ソリューションに不可欠な機能です。 この機能により、SecOps は検出およびブロック (予防と応答) のインジケーターの一覧を設定できます。
 
 エンティティの検出、防止、除外を定義するインジケーターを作成します。 実行するアクションと、アクションを適用する期間、およびアクションを適用するデバイス グループの範囲を定義できます。
 
-現在サポートされているソースは、Defender for Endpoint のクラウド検出エンジン、自動調査と修復エンジン、およびエンドポイント防止エンジン (Microsoft Defender AV) です。
+現在サポートされているソースは、Defender for Endpoint のクラウド検出エンジン、自動調査と修復エンジン、およびエンドポイント防止エンジン (Microsoft Defender Antivirus) です。
 
 **クラウド検出エンジン**<br>
 Defender for Endpoint のクラウド検出エンジンは、収集されたデータを定期的にスキャンし、設定したインジケーターの一致を試みます。 一致がある場合は、IoC に指定した設定に従ってアクションが実行されます。
@@ -63,8 +64,8 @@ Defender for Endpoint のクラウド検出エンジンは、収集されたデ�
 - [証明書](indicator-certificates.md)
 
 
->[!NOTE]
->テナントごとに 15,000 のインジケーターの制限があります。
+> [!NOTE]
+> テナントごとに 15,000 のインジケーターの制限があります。 ファイルと証明書のインジケーターは、Microsoft Defender ウイルス対策用に [定義された除外をブロックしない](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)。 インジケーターは、Microsoft Defender ウイルス対策がパッシブ モードでサポートされていません。 
 
 
 ## <a name="related-topics"></a>関連項目

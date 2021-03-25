@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: af0cc59813c76e4ed6a3c0e50140e7fa26c91080
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: acc825a8fc445d224fbc91dd12dace2a5e1b25c8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051068"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199527"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -140,7 +140,7 @@ DLP ルールを作成するには
 
 4. 必要に応じて安全なドキュメントもオンにし、**[保存]** をクリックします。
 
-その他のガイドについては、「[SharePoint、OneDrive、Microsoft Teams 用の ATP](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)」と「[SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする](../security/defender-365-security/turn-on-mdo-for-spo-odb-and-teams.md)」を参照してください。
+その他のガイドについては、「[SharePoint、OneDrive、Microsoft Teams 用の ATP](../security/office-365-security/mdo-for-spo-odb-and-teams.md)」と「[SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md)」を参照してください。
 
 ## <a name="add-copyright-information-to-your-files"></a>ファイルに著作権情報を追加する
 
@@ -165,4 +165,4 @@ Microsoft 365 コンプライアンス管理センターで秘密度ラベルを
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](share-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有の環境を作成する](create-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)

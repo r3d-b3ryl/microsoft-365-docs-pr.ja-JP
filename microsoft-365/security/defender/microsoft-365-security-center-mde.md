@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: dbbe692b3339a316f924ae4858753bbb961dd70c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b580c6f20ed3b242fc0bc239a49fe89ccc09d013
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165623"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199197"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "51165623"
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 強化された [Microsoft 365](overview-security-center.md) セキュリティ センターは、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能を組み合 [https://security.microsoft.com](https://security.microsoft.com) わせたもの。 このセキュリティ センターは、Microsoft Defender セキュリティ センターやコンプライアンス センターの Office 365 セキュリティ &など、既存の Microsoft セキュリティ ポータルの機能を統合します。
 

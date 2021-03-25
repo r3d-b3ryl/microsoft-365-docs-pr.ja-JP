@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb2923c3f2cb3f27a864fdc3c5070107998823d5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066844"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199539"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac の Intune ベースの展開
 
@@ -137,7 +137,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 1. デバイスの管理を確認します。
 
-    ![デバイス管理のスクリーンショットを確認する](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-3-confirmdevicemgmt)
+    ![デバイス管理のスクリーンショットを確認する](./images/mdatp-3-confirmdevicemgmt.png)
 
     [ **システム環境設定を開く]** を選択し、一 **覧で [管理プロファイル** ] を探し、[ **承認...] を選択します**。管理プロファイルが [確認済み] **と表示されます**。
 
@@ -160,9 +160,9 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 2. プロファイルの名前を選択します。 **Platform=macOS を Profile** **type=Extensions に変更します**。 **[作成]** を選択します。
 
-3. タブで `Basics` 、この新しいプロファイルに名前を付きます。
+3. [基本 **] タブ** で、この新しいプロファイルに名前を付きます。
 
-4. タブで `Configuration settings` 、セクションに次のエントリを追加 `Allowed system extensions` します。
+4. [構成 **設定] タブ** で、[許可されたシステム拡張機能] セクションに次 **のエントリを追加** します。
 
     バンドル識別子         | チーム識別子
     --------------------------|----------------
@@ -170,9 +170,9 @@ Microsoft Defender セキュリティ センターからインストールパッ
     com.microsoft.wdav.netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > ![[許可されたチーム識別子] セクションを含む [構成設定] タブのスクリーンショット](images/mac-system-extension-intune2.png)
+    > ![[基本] タブの [構成設定] の拡張機能設定のスクリーンショット](images/mac-system-extension-intune2.png)
 
-5. タブで `Assignments` 、このプロファイルを [すべてのユーザー] に割り当& **すべてのデバイスに割り当てる必要があります**。
+5. [割り **当て] タブ** で、このプロファイルを [すべてのユーザー] または **[すべての&に割り当てる] をクリックします**。
 
 6. この構成プロファイルを確認して作成します。
 
@@ -186,7 +186,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 4. **[OK]** をクリックします。
 
-    ![システム構成プロファイルのスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![カスタム構成プロファイルのファイルから構成をインポートする](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
 
 5. [割 **り当**  >  **ての管理] を選択します**。 [含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。
 
@@ -194,14 +194,14 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 7. 別のプロファイルを作成し、名前を付け、intune/WindowsDefenderATPOnboarding.xmlファイルをアップロードします。
 
-8. `fulldisk.mobileconfig` [GitHub リポジトリからダウンロードし](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)、として保存します `tcc.xml` 。 別のプロファイルを作成し、任意の名前を付け、このファイルをアップロードします。<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
+8. **GitHub リポジトリから fulldisk.mobileconfig** を [ダウンロードし](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)、そのリポジトリ **としてtcc.xml。** 別のプロファイルを作成し、任意の名前を付け、このファイルをアップロードします。<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
 
    > [!CAUTION]
    > macOS 10.15 (Catalina) には、新しいセキュリティとプライバシーの強化が含まれている。 このバージョンでは、既定では、アプリケーションは明示的な同意なしにディスク上の特定の場所 (ドキュメント、ダウンロード、デスクトップなど) にアクセスできません。 この同意がない場合、Microsoft Defender for Endpoint はデバイスを完全に保護できません。
    >
    > この構成プロファイルは、エンドポイント用 Microsoft Defender へのフル ディスク アクセスを許可します。 以前に Intune を使用して Microsoft Defender for Endpoint を構成した場合は、この構成プロファイルを使用して展開を更新することをお勧めします。
 
-9. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint for Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。 `netfilter.mobileconfig` [GitHub リポジトリからダウンロード](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)し、前のセクションnetext.xml手順と同じ手順で展開します。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint for Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。 [GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)リポジトリから **netfilter.mobileconfig** をダウンロードし、netext.xmlとして保存し、前のセクションと同じ手順で展開します。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
 10. Microsoft Defender for Endpoint for Mac および Microsoft Auto Update が macOS 10.15 (Catalina) の UI に通知を表示するには `notif.mobileconfig` [、GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) リポジトリからダウンロードし、カスタム ペイロードとしてインポートします。 <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
@@ -210,7 +210,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 Intune の変更が登録済みデバイスに反映された後は、[デバイスの状態の監視]の下に表示  >  **されます**。
 
 > [!div class="mx-imgBorder"]
-> ![kext のスクリーンショット - デバイスの状態](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade)
+> ![モニターでのデバイスの状態の表示](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>アプリケーションの発行
 
@@ -222,7 +222,7 @@ Intune の変更が登録済みデバイスに反映された後は、[デバイ
 
 4. [構成 **] を** 選択し、必要な情報を追加します。
 
-5. **最小 OS として macOS High Sierra 10.13** を使用します。
+5. **最小 OS として macOS High Sierra 10.14** を使用します。
 
 6. [アプリ *のバージョンを無視する] を* [はい] **に設定します**。 その他の設定には任意の値を指定できます。
 
@@ -232,12 +232,12 @@ Intune の変更が登録済みデバイスに反映された後は、[デバイ
     > Intune によってアップロードされたバージョンがデバイスのバージョンより低い場合は、下位バージョンがインストールされ、Microsoft Defender for Endpoint が効果的にダウングレードされます。 これにより、機能しないアプリケーションが発生する可能性があります。 製品 [の更新方法の詳細については、「Deploy updates for Microsoft Defender for Endpoint for Mac」](mac-updates.md) を参照してください。 [アプリのバージョンを無視する] が [いいえ] に設定 *されている* Microsoft Defender for Endpoint を展開した場合 **は、[は** い] に変更 **してください**。 Microsoft Defender for Endpoint がまだクライアント デバイスにインストールできない場合は、Microsoft Defender for Endpoint をアンインストールし、更新されたポリシーをプッシュします。
      
     > [!div class="mx-imgBorder"]
-    > ![[アプリの追加] ダイアログ ボックスの [アプリ情報の構成] オプションのスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![アプリの追加でのアプリ情報の表示](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
 
 7. **[OK] と [** 追加]**を選択します**。
 
     > [!div class="mx-imgBorder"]
-    > ![サンプルの概要のスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![[通知] ウィンドウに表示されるデバイスの状態](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
 
 8. パッケージのアップロードに少し時間がかかる場合があります。 完了したら、一覧からパッケージを選択し、[割り当て] と [ **グループの追加** ] **に移動します**。
 

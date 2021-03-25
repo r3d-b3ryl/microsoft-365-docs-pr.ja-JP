@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 6a40b80faef124a3a03e84a749b901a01791f6fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 85afc0dedd4fea9ea11c378ca35523d668acc84c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165083"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199185"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの Microsoft Defender for Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165083"
 **適用対象:**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 [https://security.microsoft.com](https://security.microsoft.com) で強化された[Microsoft 365 セキュリティ センター](./overview-security-center.md) は、Microsoft Defender セキュリティ センターや Office 365 セキュリティ/コンプライアンス センターなどの既存の Microsoft セキュリティ ポータルのセキュリティ機能を組み合わせた製品です。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
 
@@ -49,18 +49,18 @@ ms.locfileid: "51165083"
 
 |**領域**  |**変更の説明**  |
 |---------|---------|
-| [[メール エンティティ] ページ](../defender-365-security/mdo-email-entity-page.md) | このページは、今まで色々なページやビューに分散していたメール情報を **統合** します。 脅威と傾向に関するメールの調査結果は、*1 か所に集中しています*。 ヘッダー情報とメールプレビューは、他の便利なメール関連情報と共に同じメール ページからアクセスできます。 同様に、悪意のある添付ファイルまたは URL に対するデトネーションの状態は、同じページのタブにあります。 [メール エンティティ] ページは、管理者やセキュリティ運用チームがメールの脅威とその状態をすばやく把握し、処理を迅速に決定するのに役立ちます。  |
-| [調査](../defender-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | [Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) および[Defender for Endpoint](../defender-endpoint/automated-investigations.md)の AIR 機能を 1 つにまとめます。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。  | 
+| [[メール エンティティ] ページ](../office-365-security/mdo-email-entity-page.md) | このページは、今まで色々なページやビューに分散していたメール情報を **統合** します。 脅威と傾向に関するメールの調査結果は、*1 か所に集中しています*。 ヘッダー情報とメールプレビューは、他の便利なメール関連情報と共に同じメール ページからアクセスできます。 同様に、悪意のある添付ファイルまたは URL に対するデトネーションの状態は、同じページのタブにあります。 [メール エンティティ] ページは、管理者やセキュリティ運用チームがメールの脅威とその状態をすばやく把握し、処理を迅速に決定するのに役立ちます。  |
+| [調査](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) および[Defender for Endpoint](../defender-endpoint/automated-investigations.md)の AIR 機能を 1 つにまとめます。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。  | 
 | [通知ビュー](../../compliance/alert-policies.md) | Office Security and Compliance センターの **[通知の表示]** ウィンドウに、Microsoft 365 セキュリティ センターへのリンクがあります。 **[通知のページを開く]** のリンクをクリックすると、 Microsoft 365 セキュリティ センターが表示されます。 通知キュー内の Office 365 をクリックすると、**[通知の表示]** ページにアクセスできます。 |
-| [攻撃シミュレーション トレーニング](../defender-365-security/attack-simulation-training-insights.md)   | 攻撃シミュレーション トレーニングを使用して、組織内で現実的な攻撃シナリオを実行します。 これらのシミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、従業員をトレーニングするのに役立ちます。 攻撃シミュレーション トレーニングには、より多くのオプション、強化されたレポート、および強化されたトレーニング フローおよび配信と管理がより容易になったトレーニングシナリオが含まれています。  |
+| [攻撃シミュレーション トレーニング](../office-365-security/attack-simulation-training-insights.md)   | 攻撃シミュレーション トレーニングを使用して、組織内で現実的な攻撃シナリオを実行します。 これらのシミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、従業員をトレーニングするのに役立ちます。 攻撃シミュレーション トレーニングには、より多くのオプション、強化されたレポート、および強化されたトレーニング フローおよび配信と管理がより容易になったトレーニングシナリオが含まれています。  |
 
 次の領域に変更はありません。
-- [Explorer](../defender-365-security/threat-explorer.md)
+- [Explorer](../office-365-security/threat-explorer.md)
 - [ポリシーとルール](../../compliance/alert-policies.md)
-- [キャンペーン](../defender-365-security/campaigns.md)
-- [Submissions](../defender-365-security/admin-submission.md)
+- [キャンペーン](../office-365-security/campaigns.md)
+- [Submissions](../office-365-security/admin-submission.md)
 - [確認](./m365d-action-center.md)
-- [脅威トラッカー](../defender-365-security/threat-trackers.md)
+- [脅威トラッカー](../office-365-security/threat-trackers.md)
 
 また、この記事の下にある **関連情報** セクションを確認します。
 
@@ -135,7 +135,7 @@ ms.locfileid: "51165083"
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の高度な検出の例
 高度な検出を使用してメールの脅威の検索を開始しますか? 実行する操作:
 
-[Microsoft Defender for Office 365の記事](/microsoft-365/security/defender-365-security/defender-for-office-365)の「[使用を開始する](/microsoft-365/security/defender-365-security/defender-for-office-365.md#getting-started)」セクションには、次のような論理的な早期構成用の単位があります。
+[Microsoft Defender for Office 365の記事](/microsoft-365/security/office-365-security/defender-for-office-365)の「[使用を開始する](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started)」セクションには、次のような論理的な早期構成用の単位があります。
 
 1. 名前に "anti (対策)" を使用してすべてを構成します。
 - マルウェア対策
@@ -147,7 +147,7 @@ ms.locfileid: "51165083"
 3. ワークロードを保護する (例: OSharePoint Online、OneDrive と Teams)
 4. ゼロアワー自動消去を使用して保護する
 
-[リンク](../defender-365-security/protect-against-threats.md)をクリックすると、一気にジャンプして、第 1 日目から使用できる構成を入手できます。
+[リンク](../office-365-security/protect-against-threats.md)をクリックすると、一気にジャンプして、第 1 日目から使用できる構成を入手できます。
 
 **開始** の最後の手順は、**ゼロアワー自動消去**(ZAP) によるユーザー保護です。 ZAP で不審なメールや悪意のあるメール、配信後のメールの自動消去が成功したどうかを知るのはとても重要です。
 
@@ -182,4 +182,4 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 - [メールと共同作業の通知](../../compliance/alert-policies.md#default-alert-policies)
 - [デバイス、メール、アプリ、ID 全体の脅威を探す](./advanced-hunting-query-emails-devices.md)
 - [カスタム検出ルール](/microsoft-365/security/defender-endpoint/custom-detection-rules)
-- [フィッシング攻撃のシミュレーションを作成](../defender-365-security/attack-simulation-training.md)して[従業員をトレーニングするためのペイロードを作成する](../defender-365-security/attack-simulation-training-payloads.md)
+- [フィッシング攻撃のシミュレーションを作成](../office-365-security/attack-simulation-training.md)して[従業員をトレーニングするためのペイロードを作成する](../office-365-security/attack-simulation-training-payloads.md)

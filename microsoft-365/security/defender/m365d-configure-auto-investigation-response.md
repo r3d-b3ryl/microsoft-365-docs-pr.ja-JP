@@ -17,12 +17,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 7a33fdf1436d88906257c8b603a5da579c2e3846
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: afdf4b4ec8824fa49843074880bcd6f4f1857cca
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068652"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200271"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Microsoft 365 Defender で自動調査と対応機能を構成する
 
@@ -46,7 +46,7 @@ Microsoft 365 Defender[](m365d-autoir.md)には、セキュリティ運用チー
 |サブスクリプションの要件 |これらのサブスクリプションの 1 つ。 <br/>- Microsoft 365 E5<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 セキュリティ<br/>- Microsoft 365 A5 セキュリティ<br/>- Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<p> [「Microsoft 365 Defender のライセンス要件」を参照してください](./prerequisites.md#licensing-requirements)。|
 |ネットワーク要件 |- [Id の Microsoft Defender が有効](/azure-advanced-threat-protection/what-is-atp)<br/>- [構成済みの Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)<br/>- [Id 統合用 Microsoft Defender](/cloud-app-security/mdi-integration) |
 |Windows コンピューターの要件 |- Windows 10、バージョン 1709 以降がインストール済み (「[Windows 10 リリース情報](/windows/release-information/)」を参照してください) <br/>- 次の脅威保護サービスが構成されています。<br/>- [エンドポイント用 Microsoft Defender](../defender-endpoint/configure-endpoints.md)<br/>- [Microsoft Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|電子メール コンテンツと電子メール ファイルOffice保護 |[Microsoft Defender for Office 365 が構成](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) されている |
+|電子メール コンテンツと電子メール ファイルOffice保護 |[Microsoft Defender for Office 365 が構成](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) されている |
 |アクセス許可 | 自動調査と対応機能を構成するには、Azure Active Directory ( ) または Microsoft 365 管理センター ( ) でグローバル管理者またはセキュリティ管理者の役割が割り当てられている [https://portal.azure.com](https://portal.azure.com) 必要があります [https://admin.microsoft.com](https://admin.microsoft.com) 。<p>保留中のアクションの確認、承認、拒否など、自動調査および応答機能を操作するために必要なアクセス許可を取得するには、「アクション センター タスクに必要なアクセス許可」 [を参照](m365d-action-center.md#required-permissions-for-action-center-tasks)してください。 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>デバイス グループのオートメーション レベルを確認または変更する
@@ -61,21 +61,21 @@ Microsoft 365 Defender[](m365d-autoir.md)には、セキュリティ運用チー
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>365 でセキュリティポリシーとアラート ポリシー Officeする
 
-Microsoft は、特定のリスク [を特定するのに](../../compliance/alert-policies.md) 役立つ組み込みのアラート ポリシーを提供します。 これらのリスクには、Exchange 管理者のアクセス許可の悪用、マルウェアアクティビティ、外部および内部の潜在的な脅威、および情報ガバナンスのリスクが含まれます。 一部のアラートでは [、365 で自動調査とOffice発生する場合があります](../defender-365-security/office-365-air.md)。 [365 の機能を使用Office Microsoft Defender が正](/microsoft-365/security/defender-365-security/defender-for-office-365)しく構成されていることを確認します。
+Microsoft は、特定のリスク [を特定するのに](../../compliance/alert-policies.md) 役立つ組み込みのアラート ポリシーを提供します。 これらのリスクには、Exchange 管理者のアクセス許可の悪用、マルウェアアクティビティ、外部および内部の潜在的な脅威、および情報ガバナンスのリスクが含まれます。 一部のアラートでは [、365 で自動調査とOffice発生する場合があります](../office-365-security/office-365-air.md)。 [365 の機能を使用Office Microsoft Defender が正](/microsoft-365/security/office-365-security/defender-for-office-365)しく構成されていることを確認します。
 
 特定のアラートとセキュリティ ポリシーによって自動調査がトリガーされる場合は、電子メールとコンテンツに対して修復アクションは自動的に実行されません。 代わりに、電子メールおよび電子メール コンテンツのすべての修復アクションは、アクション センターのセキュリティ運用チームによる承認を [待っています](m365d-action-center.md)。
 
-365 Officeのセキュリティ設定は、電子メールとコンテンツの保護に役立ちます。 これらの設定を表示または変更するには、「脅威から保護する [」のガイダンスに従います](../defender-365-security/protect-against-threats.md)。
+365 Officeのセキュリティ設定は、電子メールとコンテンツの保護に役立ちます。 これらの設定を表示または変更するには、「脅威から保護する [」のガイダンスに従います](../office-365-security/protect-against-threats.md)。
 
 1. Microsoft 365 セキュリティ センター ( ) で [https://security.microsoft.com](https://security.microsoft.com) 、[ポリシーの脅威の保護 **]**  >  **に移動します**。
-2. 次のすべてのポリシーが構成されていることを確認します。 ヘルプと推奨事項を取得するには、「脅威から保護 [する」を参照してください](/microsoft-365/security/defender-365-security/protect-against-threats)。
-   - [マルウェア対策 (Office 365)](../defender-365-security/protect-against-threats.md#part-1---anti-malware-protection)
-   - [Defender for Office 365)](../defender-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
-   - [安全な添付ファイル (Office 365)](../defender-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
-   - [セーフ リンク (Office 365)](../defender-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
-   - [スパム対策 (Office 365)](../defender-365-security/protect-against-threats.md#part-3---anti-spam-protection)
-3. Microsoft [Defender for Office SharePoint、OneDrive、および Microsoft Teams の 365](../defender-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) が有効になっていることを確認します。
-4. メール保護 [のための 0 時間の自動削除が](../defender-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) 有効になってください。
+2. 次のすべてのポリシーが構成されていることを確認します。 ヘルプと推奨事項を取得するには、「脅威から保護 [する」を参照してください](/microsoft-365/security/office-365-security/protect-against-threats)。
+   - [マルウェア対策 (Office 365)](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection)
+   - [Defender for Office 365)](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [安全な添付ファイル (Office 365)](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
+   - [セーフ リンク (Office 365)](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
+   - [スパム対策 (Office 365)](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection)
+3. Microsoft [Defender for Office SharePoint、OneDrive、および Microsoft Teams の 365](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) が有効になっていることを確認します。
+4. メール保護 [のための 0 時間の自動削除が](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) 有効になってください。
 5. (この手順は省略可能です)。Microsoft [365 コンプライアンス Office () の 365](../../compliance/alert-policies.md) アラート ポリシーを確認します [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) 。 いくつかの既定のアラート ポリシーは、[脅威の管理] カテゴリに表示されます。 これらのアラートの中には、自動調査と応答をトリガーする場合があります。 詳細については、「既定のアラート [ポリシー」を参照してください](../../compliance/alert-policies.md#default-alert-policies)。
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Microsoft 365 Defender がオンになっていることを確認する

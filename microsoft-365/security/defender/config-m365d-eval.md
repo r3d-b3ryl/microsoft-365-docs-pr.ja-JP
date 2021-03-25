@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ab4019751a26507fcc80007d3262f20f861d25c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063451"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199231"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>試用版ラボまたはパイロット環境用に Microsoft 365 Defender の柱を構成する
 
@@ -71,14 +71,14 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 
    ![Image of_Office 365 セキュリティ & コンプライアンス センターの脅威管理ポリシー ページ](../../media/mtp-eval-32.png)
  
-2. [ **フィッシング対策] をクリックし**、[ポリシー **名と説明を作成** して入力する] を選択します。 **[次へ]** をクリックします。
+2. [ **フィッシング対策] をクリックし**、[ポリシー **名と説明を作成** して入力する] を選択します。 [ **次へ**] をクリックします。
 
    ![ポリシーに名前Officeできる 365 セキュリティ & コンプライアンス センターのフィッシング対策ポリシー ページの画像](../../media/mtp-eval-33.png)
 
    > [!NOTE]
    > Microsoft Defender の高度なフィッシング対策ポリシーを編集して、Office 365 に設定します。 [高度 **なフィッシングのしきい値] を** **2 - アグレッシブ に変更します**。
 
-3. [条件 **の追加] ドロップダウン メニュー** をクリックし、ドメインを受信者ドメインとして選択します。 **[次へ]** をクリックします。
+3. [条件 **の追加] ドロップダウン メニュー** をクリックし、ドメインを受信者ドメインとして選択します。 [ **次へ**] をクリックします。
 
    ![Image of_Office 365 Security & コンプライアンス センターのフィッシング対策ポリシー ページで、アプリケーションの条件を追加できます。](../../media/mtp-eval-34.png)
  
@@ -96,7 +96,7 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
  
 7. 次に、[安全な **リンク] ポリシーを** 選択し、鉛筆アイコンをクリックして既定のポリシーを編集します。
 
-8. 残りのオプション **が選択** されている間は、[ユーザーが安全なリンクをクリックしても追跡しない] オプションが選択されていないことを確認します。 詳細については [、「セーフ リンクの設定」](/microsoft-365/security/defender-365-security/recommended-settings-for-eop-and-office365) を参照してください。 **[保存]** をクリックします。 
+8. 残りのオプション **が選択** されている間は、[ユーザーが安全なリンクをクリックしても追跡しない] オプションが選択されていないことを確認します。 詳細については [、「セーフ リンクの設定」](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) を参照してください。 **[保存]** をクリックします。 
 
    ![Image of_Office 365 セキュリティ & コンプライアンス センター] ページで、[ユーザーが安全をクリックしても追跡しない] オプションが選択されていないことを示します。](../../media/mtp-eval-38.png)
 
@@ -208,7 +208,7 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 
    ![[Of_Microsoft 365 セキュリティ センター] ページの [Defender セキュリティ センター] オプションのイメージ](../../media/mtp-eval-58.png)
  
-2. Microsoft Defender for Endpoint ウィザードに従います。 **[次へ]** をクリックします。 
+2. Microsoft Defender for Endpoint ウィザードに従います。 [ **次へ**] をクリックします。 
 
    ![イメージ of_the Microsoft Defender セキュリティ センターウェルカム ウィザード ページ](../../media/mtp-eval-59.png)
 
@@ -219,7 +219,7 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
    > [!NOTE]
    > 後で、データストレージの場所など、一部の設定を変更することはできません。 
 
-   **[次へ]** をクリックします。 
+   [ **次へ**] をクリックします。 
 
 4. [ **続行] を** クリックすると、Microsoft Defender for Endpoint テナントがプロビジョニングされます。
 

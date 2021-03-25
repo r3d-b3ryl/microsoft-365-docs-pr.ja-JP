@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 の ID、デバイス、および脅威保護サービスによる個人データ侵害を防止します。
-ms.openlocfilehash: 145b8a59f7eafb95adf71dc24613ee15ef1c2cca
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052352"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199467"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>データプライバシー規制に ID、デバイス、および脅威保護を使用する
 
@@ -70,7 +70,7 @@ ID およびコントロール アクセス カテゴリAD Azure Active **Direct
 - 非アクティブ時にモバイル デバイスをロックする必要があります。
 - 複数のサインインエラーでモバイル デバイスにワイプを要求する。
 
-[[脅威に対する保護] カテゴリOffice Exchange](../security/defender-365-security/defender-for-office-365.md) Online Protectionおよび Microsoft Defender を 365 に使用すると、次の機能を使用できます。
+[[脅威に対する保護] カテゴリOffice Exchange](../security/office-365-security/defender-for-office-365.md) Online Protectionおよび Microsoft Defender を 365 に使用すると、次の機能を使用できます。
 
 - 送信者認証 (SPF、DMARC、DKIM) を有効にします。
 - 365 のフィッシングOfficeポリシー用に Microsoft Defender をセットアップします。
@@ -81,8 +81,8 @@ ID およびコントロール アクセス カテゴリAD Azure Active **Direct
 
 ### <a name="references"></a>参照:
 
-- [共通 ID とデバイスのアクセス ポリシー](../security/defender-365-security/identity-access-policies.md)
+- [共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)
 - [365 の脅威からOfficeする](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [添付ファイル保護](../security/defender-365-security/safe-attachments.md)
-- [リンク保護](../security/defender-365-security/safe-links.md)
-- [安全なドキュメント](../security/defender-365-security/safe-docs.md)
+- [添付ファイル保護](../security/office-365-security/safe-attachments.md)
+- [リンク保護](../security/office-365-security/safe-links.md)
+- [安全なドキュメント](../security/office-365-security/safe-docs.md)

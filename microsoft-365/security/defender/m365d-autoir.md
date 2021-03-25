@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c12937c016875c26a7212117e41aac4349cb540d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065900"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199635"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender での自動調査と対応
 
@@ -90,7 +90,7 @@ Microsoft 365 Defender では、次の表にまとめると、各自動調査は
 |エンティティ |脅威対策サービス  |
 |:---------|:---------|
 |デバイス (エンドポイントとも呼ばれますが、コンピューターとも呼ばれます)     |[Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
-|電子メール コンテンツ (ファイルと URL を含む電子メール メッセージ)     |[Microsoft Defender for Office 365](../defender-365-security/defender-for-office-365.md)         |
+|電子メール コンテンツ (ファイルと URL を含む電子メール メッセージ)     |[Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > すべてのアラートによって自動調査がトリガーされるのではなく、すべての調査によって自動修復アクションが発生する場合はそうではありません。組織の自動調査と対応の構成方法によって異なります。 「Microsoft [365 Defender で自動](m365d-configure-auto-investigation-response.md)調査と応答機能を構成する」を参照してください。

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 25647e65f9d031a68b9133df68573eac56f8ff24
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7cf9d391533f52a3011698112d4e5be1495118c2
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064803"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200031"
 ---
 # <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>サポートされているオペレーティング システムとプラットフォーム - 脅威と脆弱性の管理
 
@@ -52,7 +52,7 @@ Windows Server 2008 R2 | オペレーティング システム (OS) の脆弱性
 Windows Server 2012 R2 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性<br/>オペレーティング システム (OS) 構成評価<br/>セキュリティ制御の構成評価<br/>ソフトウェア製品構成の評価
 Windows Server 2016 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性<br/>オペレーティング システム (OS) 構成評価<br/>セキュリティ制御の構成評価<br/>ソフトウェア製品構成の評価
 Windows Server 2019 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性<br/>オペレーティング システム (OS) 構成評価<br/>セキュリティ制御の構成評価<br/>ソフトウェア製品構成の評価
-macOS 10.13 "High Sierra" 以上 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性 
+macOS 10.14 "Mojave" 以上 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性 
 Linux | サポートされていません (計画済み)
 
 ## <a name="related-articles"></a>関連記事

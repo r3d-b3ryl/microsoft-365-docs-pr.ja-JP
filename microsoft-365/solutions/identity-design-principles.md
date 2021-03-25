@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050740"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200019"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降の 1 つのアーキテクトの視点
 
@@ -135,7 +135,7 @@ Azure ADのポリシー エンジンは、条件付き [アクセス ポリシ�
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
@@ -227,7 +227,7 @@ Azure AD [PIM について](/azure/active-directory/privileged-identity-manageme
 
 ### <a name="security-and-compliance-center-scc"></a>セキュリティおよびコンプライアンス センター (SCC)
 
-[Office 365 セキュリティ](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) & コンプライアンス センターのアクセス許可は、Azure の役割とは別の"役割グループ"のADです。 これらの役割グループの中には、Azure AD ロール (セキュリティ リーダーなど) と同じ名前を持ち、異なるメンバーシップを持つ場合があります。 Azure の役割を使用ADします。 各役割グループは、1 つ以上の "ロール" (同じ単語を再利用する方法を参照してください)で構成され、Azure AD のメンバー (電子メールが有効なオブジェクト) があります。 また、役割と同じ名前の役割グループを作成できます。この役割を含む場合と含めない場合があります (この混乱を避けます)。
+[Office 365 セキュリティ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) & コンプライアンス センターのアクセス許可は、Azure の役割とは別の"役割グループ"のADです。 これらの役割グループの中には、Azure AD ロール (セキュリティ リーダーなど) と同じ名前を持ち、異なるメンバーシップを持つ場合があります。 Azure の役割を使用ADします。 各役割グループは、1 つ以上の "ロール" (同じ単語を再利用する方法を参照してください)で構成され、Azure AD のメンバー (電子メールが有効なオブジェクト) があります。 また、役割と同じ名前の役割グループを作成できます。この役割を含む場合と含めない場合があります (この混乱を避けます)。
 
 ある意味では、これらは Exchange 役割グループ モデルの進化です。 ただし、Exchange Online には独自の役割 [グループ管理](/exchange/permissions-exo) インターフェイスがあります。 Exchange Online の一部の役割グループは、Azure AD またはセキュリティ & コンプライアンス センターからロックおよび管理されますが、同じ名前または類似の名前を持ち、Exchange Online で管理される役割グループもあります (混乱を招く)。 Exchange 管理のスコープが必要ない限り、Exchange Online ユーザー インターフェイスの使用を避けることをお勧めします。
 
