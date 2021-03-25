@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 5e1bf9257cfd4751333e2e01789bb7dbaf2685fa
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939637"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165635"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行への影響 (全般)
 
@@ -62,7 +62,7 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 グローバ�
 
 ## <a name="before-the-migration-starts"></a>移行を開始する前に
 
-すべての顧客に適用される移行準備手順をよく理解 [してください](ms-cloud-germany-transition-add-pre-work.md#applies-to-everyone)。
+すべての顧客に適用される移行準備手順をよく理解 [してください](ms-cloud-germany-transition-add-pre-work.md)。
 
 所有する 1 つ以上の DNS 名前空間に _msoid_ という DNS CNAME を設定した場合は、最新のフェーズ 8 の終了まで CNAME を削除する必要があります。 フェーズ 8 の終了前にいつでも CNAME _msoid_ を削除できます。 DNS の [事前作業を参照してください](ms-cloud-germany-transition-add-pre-work.md#dns)。
 
@@ -111,7 +111,7 @@ Exchange Online ハイブリッドを使用している場合:Exchange Online �
 
 移行フェーズ **9** が完了すると (メッセージ センター通知が公開されている場合)、Office 365 Worldwide 設定を使用して HCW を再度実行して、オンプレミス システムを Office 365 Global サービスに接続する必要があります。
 
-フェーズ 5 でユーザーの写真を変更する場合は [、「Set-UserPhoto」を参照してください。](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
+フェーズ 5 の間にユーザーの写真を変更する場合は、「フェーズ 5 中の [Exchange Online Set-UserPhoto」を参照してください。](ms-cloud-germany-transition-add-experience.md#exchange-online-set-userphoto-during-phase-5)
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
@@ -131,7 +131,7 @@ Exchange Online ハイブリッドを使用している場合:Exchange Online �
 
 - 既存の Microsoft Cloud Deutschland のお客様または移行中のユーザーの場合、ファイル > **Info >** Add Account を使用して共有メールボックスを Outlook に追加すると、予定表のアクセス許可の表示が失敗する場合があります (Outlook クライアントは Rest API の使用を試みる)。 `https://outlook.office.de/api/v2.0/Me/Calendars` 予定表のアクセス許可を表示するアカウントを追加する場合は [、「Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) で予定表を共有するためのユーザー エクスペリエンスの変更」の説明に従ってレジストリ キーを追加して、このアクションが成功するようにすることができます。 このレジストリ キーは、グループ ポリシーを使用して組織全体に展開できます。
 
-- 移行フェーズ中に、PowerShell コマンドレット **New-migrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 次に例を示します。
+- 移行フェーズ中に、PowerShell コマンドレット **New-migrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例:
 
 ```powershell
 New-PSSession 
@@ -211,11 +211,11 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 Office "ドイツ" に移行する 365 テナントでは、テナント移行がフェーズ 9 に達した後、すべてのユーザーが Office 365 からサインアウトし、すべての Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントに戻る必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンを取得できます。
 
-モバイル デバイスの手順の事前 [作業が完了済みである必要](ms-cloud-germany-transition-add-pre-work.md#mobile) があります。
+モバイル デバイスの手順の事前 [作業が完了済みである必要](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) があります。
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| クライアントはOffice切りOffice、Azure ADは、365 サービスを指すテナント スコープをOfficeします。 | この構成変更により、Office 365 サービス エンドポイントを更新し、Officeポイントできます。 | <ul><li>すべての Office _アプリを_ 閉じてからサインイン (またはクライアントの再起動とユーザーのサインインを強制する) をユーザーに通知して、Office クライアントが変更を受け取るのを有効にします。 </li><li>カットオーバーから 72時間以内に、Office アプリの再アクティブ化を求める Office バナーが表示される可能性があるユーザーとヘルプ デスク スタッフに通知します。 </li><li>個人用Office上のすべてのアプリケーションを閉じ、ユーザーはサインアウトしてからもう一度サインインする必要があります。 [黄色のライセンス認証] バーでサインインし、365 サービスOffice再アクティブ化します。</li><li>共有コンピューターでは、個人用のコンピューターに似たアクションが必要であり、特別な手順は必要とします。 </li><li>モバイル デバイスでは、ユーザーはアプリからサインアウトして閉じてから、もう一度サインインする必要があります。 </li></ul>|
+| クライアントはOffice切りOffice、Azure ADは、365 サービスを指すテナント スコープをOfficeします。 | この構成変更により、Office 365 サービス エンドポイントを更新し、Officeポイントできます。 | <ul><li>すべての Office _アプリを_ 閉じてからサインイン (またはクライアントの再起動とユーザーのサインインを強制する) をユーザーに通知して、Office クライアントが変更を受け取るのを有効にします。 </li><li>カットオーバーから 72時間以内に、Office アプリの再アクティブ化を求める Office バナーが表示される可能性があるユーザーとヘルプ デスク スタッフに通知します。 </li><li>個人用Office上のすべてのアプリケーションを閉じ、ユーザーはサインアウトしてからもう一度サインインする必要があります。 [黄色のライセンス認証] バーでサインインし、365 サービスOffice再アクティブ化します。</li><li>共有コンピューターでは、個人用のコンピューターに似たアクションが必要であり、特別な手順は必要とします。 </li><li>モバイル デバイスでは、ユーザーはアプリからサインアウトして閉じてから、もう一度サインインする必要があります。</li></ul>|
 ||||
 
 ## <a name="line-of-business-apps"></a>Line-of-business アプリ

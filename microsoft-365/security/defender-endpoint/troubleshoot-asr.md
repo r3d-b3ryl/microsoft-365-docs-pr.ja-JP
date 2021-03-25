@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: d090c82e8c76da8f2e19dc9189006fdea3d6990d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: cc8c66665740449e499c11e1db4403caef20cf9c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066811"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183767"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールのトラブルシューティング
 
@@ -29,7 +29,7 @@ ms.locfileid: "51066811"
 
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 

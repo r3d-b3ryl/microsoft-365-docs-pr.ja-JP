@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Deutschland からの移行AD Active Directory フェデレーション サービス (FS) の移行手順について説明します。'
-ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918908"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165659"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>ADから移行するための FS 移行手順の詳細
 
@@ -59,11 +59,11 @@ FS バックアップを完了してテストしたらAD手順を実行して、
 
 8. [AD FS 2012: 発行承認ルールの選択]で、[すべてのユーザーにこの証明書利用者へのアクセスを許可する] を選択し、[次へ] をクリック **します**。
 
-8. [AD FS 2016 および AD FS 2019:  [アクセス制御ポリシーの選択] ページで、適切なアクセス制御ポリシーを選択し、[次へ] をクリック **します**。 選択されていない場合、証明書利用者信頼は **機能** しません。
+9. [AD FS 2016 および AD FS 2019:  [アクセス制御ポリシーの選択] ページで、適切なアクセス制御ポリシーを選択し、[次へ] をクリック **します**。 選択されていない場合、証明書利用者信頼は **機能** しません。
 
-9. [ **信頼の準備** 完了] **ページの [次へ] をクリック** して、ウィザードを完了します。
+10. [ **信頼の準備** 完了] **ページの [次へ] をクリック** して、ウィザードを完了します。
 
-10. [完了 **] ページで** [ **閉じる] をクリック** します。
+11. [完了 **] ページで** [ **閉じる] をクリック** します。
 
 ウィザードを閉じると、証明書利用者信頼と証明書利用者Office 365 グローバル サービスが確立されます。 ただし、発行変換ルールはまだ構成されていません。
 
@@ -74,7 +74,19 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
 
 1. FS **ヘルプで** クレーム [AD実行](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)し、スクリプトの右上隅にある [コピー]オプションを使用して PowerShell スクリプトをコピーします。
 
-2. AD FS ファームで Power AD Shell スクリプトを実行してグローバル証明書利用者信頼を生成する方法については、「AD [FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) ヘルプ」で説明されている手順に従います。
+2. AD FS ファームで Power AD Shell スクリプトを実行してグローバル証明書利用者信頼を生成する方法については、「AD [FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) ヘルプ」で説明されている手順に従います。 スクリプトを実行する前に、生成されたスクリプトの次のコード行を次のように置き換えます。
+
+   ```powershell
+   # AD FS Help generated value
+   $claims = Get-AdfsRelyingPartyTrust -Identifier $(Get-RpIdentifier) | Select-Object IssuanceTransformRules;
+   # replace with
+   $claims = Get-AdfsRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline | Select-Object IssuanceTransformRules;
+
+   # AD FS Help generated value
+   Set-AdfsRelyingPartyTrust -TargetIdentifier $(Get-RpIdentifier) -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   # replace with
+   Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   ```
 
 3. 2 つの証明書利用者Ttrustsが存在するを確認します。1 つは Microsoft Cloud Deutschland 用、1 つは Office 365 Global サービス用です。 次のコマンドをチェックに活用できます。 2 つの行と、それぞれの名前と識別子を返す必要があります。
 
@@ -86,9 +98,7 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
 
 5. テナントの移行中に、サポートされているさまざまな移行手順で、AD FS 認証が Microsoft Cloud Deutschland および Microsoft Global クラウドで動作しているのを定期的に確認します。
 
-
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>AD FS 障害復旧 (WID データベース)
-
 
 障害時にAD FS ファームを復元するにはAD [FS Rapid Restore Tool](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) を活用する必要があります。 したがって、ツールをダウンロードし、移行の開始前にバックアップを作成して安全に保存する必要があります。 この例では、WID データベースで実行されているファームをバックアップするために、次のコマンドを実行しています。
 
@@ -112,7 +122,6 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
 
 4. バックアップを目的の宛先に安全に保存します。
 
-
 ### <a name="restore-an-ad-fs-farm"></a>FS ファームAD復元する
 
 ファームが完全に失敗し、古いファームに戻る方法がない場合は、次の手順を実行します。 
@@ -126,7 +135,6 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
    ```
 
 3. 新しい DNS レコードまたはロード バランサーを FS サーバーの新しいADポイントします。
-
 
 ## <a name="more-information"></a>詳細
 

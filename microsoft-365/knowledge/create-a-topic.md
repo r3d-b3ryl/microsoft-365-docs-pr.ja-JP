@@ -14,14 +14,14 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 6a182556c68a472145f9d4eac69c8915653a67df
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: c1f7b67bb49aff8d6656798d80636d9de5858877
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994596"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165839"
 ---
-# <a name="create-a-new-topic"></a>新規トピックを作成する 
+# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Microsoft Viva Topics で新しいトピックを作成する
 
 ビバ トピックでは、インデックス作成によって検出されない場合や、AI テクノロジがトピックとして確立するのに十分な証拠が見つからなかった場合に、新しいトピックを作成できます。
 

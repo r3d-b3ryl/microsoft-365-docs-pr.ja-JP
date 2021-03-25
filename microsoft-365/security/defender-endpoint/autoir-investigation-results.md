@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/02/2021
-ms.openlocfilehash: c11d9cd1ce4c2ca49315ec62b51c23ef981555f4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b66640736e9dc3835919e39d482b2d38b0c9dcc7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067324"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183683"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 
 ## <a name="new-unified-investigation-page"></a>(NEW!)統合された調査ページ
 
-調査ページが最近更新され、デバイス、電子メール、およびコラボレーション コンテンツ全体の情報が含まれます。 新しい統合された調査ページでは、共通言語が定義され [、Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)  および Microsoft Defender for Office 365 全体で自動調査 [を行う一元的なエクスペリエンスが](/microsoft-365/security/defender-365-security/office-365-atp)提供されます。 
+調査ページが最近更新され、デバイス、電子メール、およびコラボレーション コンテンツ全体の情報が含まれます。 新しい統合された調査ページでは、共通言語が定義され [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  および Microsoft Defender for Office 365 全体で自動調査 [を行う一元的なエクスペリエンスが](/microsoft-365/security/defender-365-security/office-365-atp)提供されます。 
 
 > [!TIP]
 > 変更の詳細については [、「(NEW!) 」を参照してください。統合された調査ページ](/microsoft-365/security/mtp/mtp-autoir-results)。
