@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、最新のドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境を常に改善できます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed29ad5186972f56609a596d88a48c7c460f295f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c695bc2632e766eb6f14c4e9f7eabbbddff66fd2
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905859"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164976"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -33,7 +33,7 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 > 一部のコンプライアンス機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリースに自分自身を [追加してみてください](/office365/admin/manage/release-options-in-office-365)。
 
 > [!TIP]
-> 他の管理センターで何が起こっているのか興味がありますか? 次の記事を参照してください。<br>[Microsoft 365 管理センターの新機能](/office365/admin/whats-new-in-preview)<br>[SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender の新機能](../security/mtp/whats-new.md)<br><br>
+> 他の管理センターで何が起こっているのか興味がありますか? 次の記事を参照してください。<br>[Microsoft 365 管理センターの新機能](/office365/admin/whats-new-in-preview)<br>[SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender の新機能](../security/defender/whats-new.md)<br><br>
 Microsoft [365 ロードマップ](https://www.microsoft.com/en-us/microsoft-365/roadmap) にアクセスして、起動、展開、開発中、キャンセル、または以前にリリースされた Microsoft 365 の機能について説明します。
 
 ## <a name="january-2021"></a>2021 年 1 月
@@ -78,7 +78,7 @@ Microsoft 365 コンプライアンス コンテンツ チームは、コンプ�
 
 ### <a name="data-connectors"></a>データ コネクタ
 
-[Redtail Speak、Salesforce](archiving-third-party-data.md#third-party-data-connectors)Chatter、ServiceNow、Yieldbroker の 4 つの新しい Globanet コネクタがリリースされました。
+[Redtail Speak、Salesforce](archiving-third-party-data.md#third-party-data-connectors)Chatter、ServiceNow、Yieldbroker の 4 つの新しい Veritas コネクタがリリースされました。
 
 ### <a name="encryption"></a>暗号化
 
@@ -122,7 +122,7 @@ Microsoft 365 コンプライアンス コンテンツ チームは、コンプ�
 
 ### <a name="data-connectors"></a>データ コネクタ
 
-[プレビューの 5 つの新しい Globanet コネクタ](archiving-third-party-data.md#third-party-data-connectors)。 新しいコネクタには、Reuters Dealing、Reuters FX、CellTrust、XIP、汎用 MS SQLデータベース データが含まれます。
+[プレビューの 5 つの新しい Veritas コネクタ](archiving-third-party-data.md#third-party-data-connectors)。 新しいコネクタには、Reuters Dealing、Reuters FX、CellTrust、XIP、汎用 MS SQLデータベース データが含まれます。
 
 ### <a name="retention-labels-disposition-review"></a>保持ラベル (廃棄レビュー)
 
@@ -169,7 +169,7 @@ Microsoft 365 コンプライアンス コンテンツ チームは、コンプ�
 
 ### <a name="data-connectors"></a>データ コネクタ
 
-- [新しいサード パーティ製のデータ コネクタ](archiving-third-party-data.md#third-party-data-connectors)。 25 個の新しいデータ コネクタ(Globanet から 14 個、Telemessage から 8 個を含む)。
+- [新しいサード パーティ製のデータ コネクタ](archiving-third-party-data.md#third-party-data-connectors)。 25 個の新しいデータ コネクタ(Veritas から 14 個、Telemessage から 8 個を含む)。
 - [物理不良コネクタ](import-physical-badging-data.md)。 従業員の生の物理アクセス イベントや、組織の不良システムによって生成された物理アクセス アラームなど、物理的な不良データをインポートします。 たとえば、建物、サーバー ルーム、またはデータ センターへのエントリが含まれます。 物理的な不正なデータは、内部の悪意のある活動やデータの盗難から組織を保護するために、インサイダー リスク管理ソリューションで使用できます。
 
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理

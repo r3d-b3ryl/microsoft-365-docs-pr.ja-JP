@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Microsoft 365 の Globanet から Cisco Jabber データをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: ae94c7c48a229f7257f16deee391aade3413da53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Microsoft 365 の Veritas から Cisco Jabber データをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
+ms.openlocfilehash: 7465d1f8d80d67e2a284200cbf1628178609b3c3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924003"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164411"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Cisco Jabber データをアーカイブするコネクタをセットアップする
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、データを Cisco Jabber プラットフォームから Microsoft 365 組織のユーザー メールボックスにインポートおよびアーカイブします。 Globanet は、Jabber の MS SQL データベース (1:1 チャット メッセージやグループ チャットなど) からアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された [Cisco Jabber](https://globanet.com/jabber/) コネクタを提供します。 コネクタは、Cisco Jabber の MS SQL データベースからデータを取得し、処理し、そのコンテンツをユーザーの Cisco Jabber アカウントから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、データを Cisco Jabber プラットフォームから Microsoft 365 組織のユーザー メールボックスにインポートおよびアーカイブします。 Veritas は、Jabber の MS SQL データベース (1:1 チャット メッセージやグループ チャットなど) からアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された Cisco [Jabber](https://globanet.com/jabber/) コネクタを提供します。 コネクタは、Cisco Jabber の MS SQL データベースからデータを取得し、処理し、そのコンテンツをユーザーの Cisco Jabber アカウントから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
 Cisco Jabber データをユーザー メールボックスに保存した後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Microsoft 365 で Cisco Jabber コネクタを使用してデータをインポートおよびアーカイブすると、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ Cisco Jabber データをユーザー メールボックスに保存した後、
 
 1. 組織は、Cisco と一緒に MS データベースで Cisco Jabber をセットアップSQLします。
 
-2. 24 時間に 1 回、Cisco Jabber アイテムは MS SQLから Globanet Merge1 サイトにコピーされます。 コネクタは、チャット メッセージのコンテンツを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、Cisco Jabber アイテムは MS SQL Veritas Merge1 サイトにコピーされます。 コネクタは、チャット メッセージのコンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成する Cisco Jabber コネクタは、毎日 Globanet Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にアイテムを転送します。
+3. Microsoft 365 コンプライアンス センターで作成する Cisco Jabber コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にアイテムを転送します。
 
 4. コネクタとしての自動ユーザー マッピングは、手順 3 で説明されている *Email* プロパティの値を使用して、特定のユーザーのメールボックスにアイテム [をインポートします](#step-3-map-users-and-complete-the-connector-setup)。 MS SQL の **Cisco Jabber という** 名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、そのフォルダーにメッセージ アイテムがインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべての Cisco Jabber アイテムには、このプロパティが含まれるので、すべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact/)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
+- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
 - 手順 1 でコネクタSQLする前に、Jabber アイテムを取得する MS データベースをセットアップします。 手順 2 で Cisco Jabber コネクタを構成するときに、MS SQLデータベースの接続設定を指定します。 詳細については [、「Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf)コネクタ ユーザー ガイド」を参照してください。
 
@@ -61,9 +61,9 @@ Cisco Jabber データをユーザー メールボックスに保存した後、
 
 5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-cisco-jabber-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトで Cisco Jabber コネクタを構成する
+## <a name="step-2-configure-the-cisco-jabber-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで Cisco Jabber コネクタを構成する
 
-2 番目の手順は、Globanet Merge1 サイトの MS SQLコネクタで Cisco Jabber を構成することです。 Ms SQL コネクタで Cisco Jabber を構成する方法については [、「Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf)サード パーティ コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Veritas Merge1 サイトの MS SQLコネクタで Cisco Jabber を構成することです。 Ms SQL コネクタで Cisco Jabber を構成する方法については [、「Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf)サード パーティ コネクタ ユーザー ガイド」を参照してください。
 
 [ファイルの **保存と&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 

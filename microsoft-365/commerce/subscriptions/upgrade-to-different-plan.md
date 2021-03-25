@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 別のプランにアップグレードする方法について学習します。
-ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924316"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164451"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
@@ -92,7 +92,7 @@ ms.locfileid: "50924316"
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>ライセンスよりも多くのユーザーを持つため、サブスクリプションを今すぐアップグレードできない。
 
-プランを自動的にアップグレードするには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../admin/manage/resolve-license-conflicts.md)。 ライセンスの競合を解決した後、[アップグレード] タブにプランが **表示されます。** ない場合は、手動 [でプランを変更するか](change-plans-manually.md)、サポート [を呼び出します](../../admin/contact-support-for-business-products.md)。
+プランを自動的にアップグレードするには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決した後、[アップグレード] タブにプランが **表示されます。** ない場合は、手動 [でプランを変更するか](change-plans-manually.md)、サポート [を呼び出します](../../admin/contact-support-for-business-products.md)。
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>このサブスクリプションが完全にセットアップされていないか、サービスが利用できないので、今すぐサブスクリプションをアップグレードできません。
 

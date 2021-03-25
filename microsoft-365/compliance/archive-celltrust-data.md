@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、CellTrust データを Globanet から Microsoft 365 にインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 59477fd413a93c70606f4059671ae771c00c8a84
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Veritas から Microsoft 365 に CellTrust データをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
+ms.openlocfilehash: 855d48303c7c35c32951105799aa117675820420
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919935"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164391"
 ---
 # <a name="set-up-a-connector-to-archive-celltrust-data"></a>CellTrust データをアーカイブするコネクタをセットアップする
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、CellTrust プラットフォームから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet は [、サード](https://globanet.com/celltrust/) パーティ製のデータ ソースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートする CellTrust コネクタを提供します。 コネクタは、CellTrust アカウントからの SMS メッセージのコンテンツを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、CellTrust プラットフォームから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas は [、サードパーティ](https://globanet.com/celltrust/) のデータ ソースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートする CellTrust コネクタを提供します。 コネクタは、CellTrust アカウントからの SMS メッセージのコンテンツを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
 CellTrust データをユーザー メールボックスに保存した後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 CellTrust コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ CellTrust データをユーザー メールボックスに保存した後、訴
 
 1. 組織は CellTrust を使用して、CellTrust サイトをセットアップおよび構成します。
 
-2. 24 時間に 1 回、CellTrust アイテムは Globanet Merge1 サイトにコピーされます。 コネクタは、メッセージのコンテンツを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、CellTrust アイテムは Veritas Merge1 サイトにコピーされます。 コネクタは、メッセージのコンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成する CellTrust コネクタは、毎日 Globanet Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にメッセージを転送します。
+3. Microsoft 365 コンプライアンス センターで作成する CellTrust コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にメッセージを転送します。
 
 4. コネクタとしての自動ユーザー マッピングは、手順 3 で説明されている *Email* プロパティの値を使用して、特定のユーザーのメールボックスにアイテム [をインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **CellTrust** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、メッセージ アイテムがそのフォルダーにインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべての CellTrust アイテムには、このプロパティが含まれるので、すべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Merge1 アカウントを作成します。 アカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/contact-us/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Merge1 アカウントを作成します。 アカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
 - 手順 1 で CellTrust コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 Microsoft 365 コンプライアンス センターの [ **データ** コネクタ] ページにコネクタを追加するには、この役割が必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の [組織の管理] 役割グループにメールボックスインポートエクスポート役割を追加できます。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の記事の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
@@ -59,9 +59,9 @@ CellTrust データをユーザー メールボックスに保存した後、訴
 
 5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-celltrust-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトで CellTrust コネクタを構成する
+## <a name="step-2-configure-the-celltrust-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで CellTrust コネクタを構成する
 
-2 番目の手順は、Globanet Merge1 サイトで CellTrust コネクタを構成することです。 CellTrust コネクタを構成する方法の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20CellTrust%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Veritas Merge1 サイトで CellTrust コネクタを構成することです。 CellTrust コネクタを構成する方法の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20CellTrust%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
 [ファイルの **保存と&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 

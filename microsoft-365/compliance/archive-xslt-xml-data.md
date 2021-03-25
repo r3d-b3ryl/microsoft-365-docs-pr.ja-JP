@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Microsoft 365 の Globanet から XSLT/XML データをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 097b523b6a1909f3f9575302fe11ad61a7558472
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Microsoft 365 の Veritas から XSLT/XML データをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: 51b05f83c51626bc60dc19b5ec9a63750903281c
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921727"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163761"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>XSLT/XML データをアーカイブするコネクタをセットアップする
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Web ページ ソースから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet には [XSLT/XML](https://globanet.com/xslt-xml) コネクタが用意されています。これにより、XSLT (拡張可能スタイル シート言語変換) を使用して作成されたファイルを迅速に開発し、XML ファイルを Microsoft 365 にインポートできる他のファイル形式 (HTML やテキストなど) に変換できます。 コネクタは、アイテムのコンテンツを XSLT/XML ソースから電子メール メッセージ形式に変換し、変換されたアイテムを Microsoft 365 メールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、Web ページ ソースから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas は [XSLT/XML](https://globanet.com/xslt-xml) コネクタを提供し、XSLT (拡張可能スタイル シート言語変換) を使用して作成されたファイルを迅速に開発して、XML ファイルを Microsoft 365 にインポートできる他のファイル形式 (HTML やテキストなど) に変換できます。 コネクタは、アイテムのコンテンツを XSLT/XML ソースから電子メール メッセージ形式に変換し、変換されたアイテムを Microsoft 365 メールボックスにインポートします。
 
 XSLT/XML データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどの Microsoft 365 コンプライアンス機能を適用できます。 XSLT/XML コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ XSLT/XML データをユーザー メールボックスに格納した後、訴�
 
 1. 組織は XSLT/XML ソースを使用して XSLT/XML サイトを設定および構成します。
 
-2. 24 時間に 1 回、XSLT/XML ソースからのチャット メッセージが Globanet Merge1 サイトにコピーされます。 コネクタは、コンテンツを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、XSLT/XML ソースからのチャット メッセージが Veritas Merge1 サイトにコピーされます。 コネクタは、コンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成した XSLT/XML コネクタは、毎日 Globanet Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にメッセージを転送します。
+3. Microsoft 365 コンプライアンス センターで作成した XSLT/XML コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にメッセージを転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたメッセージ アイテムを特定のユーザーのメールボックスにインポートします。 **XSLT/XML** という名前の受信トレイ フォルダー内の新しいサブフォルダーがユーザー メールボックスに作成され、メッセージ アイテムがそのフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべてのメッセージには、このプロパティが含まれるので、メッセージのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/contact-us/)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
+- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
 - 手順 1 で XSLT/XML コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 Microsoft 365 コンプライアンス センターの [ **データ** コネクタ] ページにコネクタを追加するには、この役割が必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていない。 Exchange Online の [組織の管理] 役割グループにメールボックスインポートエクスポート役割を追加できます。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の記事の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
@@ -61,7 +61,7 @@ XSLT/XML データをユーザー メールボックスに格納した後、訴�
 
 ## <a name="step-2-configure-an-xsltxml-connector"></a>手順 2: XSLT/XML コネクタを構成する
 
-2 番目の手順は、Merge1 サイトで XSLT/XML コネクタを構成することです。 Globanet Merge1 サイトで XSLT/XML コネクタを構成する方法については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Merge1 サイトで XSLT/XML コネクタを構成することです。 Veritas Merge1 サイトで XSLT/XML コネクタを構成する方法については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
 [ファイルの **保存と&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 切り替え計画を手動で行う必要がある理由、またはサポートを呼び出す必要がある理由を理解します。
-ms.openlocfilehash: d13b7290f4b5f9aede7406cf76ee60cac262c814
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0880337e4879c093119b98f4d0108ca65c17e705
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922270"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164463"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Microsoft 365 をビジネス プランに切り替えできない理由
 
@@ -42,18 +42,18 @@ ms.locfileid: "50922270"
   
 ::: moniker range="o365-worldwide"
 
- **他に何か必要ですか?** [別のサブスクリプションを購入する](../try-or-buy-microsoft-365.md)  | [サブスクリプションをキャンセルする](cancel-your-subscription.md)  | [サブスクリプションと課金](../index.yml)  | [通話サポート](../../admin/contact-support-for-business-products.md)
+ **他のヘルプが必要な場合** [別のサブスクリプションを購入する](../try-or-buy-microsoft-365.md)  | [サブスクリプションをキャンセルする](cancel-your-subscription.md)  | [サブスクリプションと課金](../index.yml)  | [通話サポート](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **他に何か必要ですか?** [別のサブスクリプションを購入する](../try-or-buy-microsoft-365.md)  | [サブスクリプションをキャンセルする](cancel-your-subscription.md)  | [サブスクリプションと課金](../index.yml)  | [通話サポート](../../admin/contact-support-for-business-products.md)
+ **他のヘルプが必要な場合** [別のサブスクリプションを購入する](../try-or-buy-microsoft-365.md)  | [サブスクリプションをキャンセルする](cancel-your-subscription.md)  | [サブスクリプションと課金](../index.yml)  | [通話サポート](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **他に何か必要ですか?** [21Vianet が運用Office 365](../../admin/services-in-china/buy-or-try-subscriptions.md)のサブスクリプションを購入または試す  | [サブスクリプションをキャンセルする](cancel-your-subscription.md)  | [通話サポート](../../admin/contact-support-for-business-products.md)
+ **他のヘルプが必要な場合** [21Vianet が運用Office 365](../../admin/services-in-china/buy-or-try-subscriptions.md)のサブスクリプションを購入または試す  | [サブスクリプションをキャンセルする](cancel-your-subscription.md)  | [通話サポート](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
@@ -63,19 +63,19 @@ ms.locfileid: "50922270"
 
 ::: moniker range="o365-worldwide"
 
-プランの切 **り替え** ボタンを使用してプランを自動的に切り替えるには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../admin/manage/resolve-license-conflicts.md)。 ライセンスの競合を解決すると、[プランの切り替え] ボタン **が表示** されます。 ない場合は、手動 [でプランを切り替](switch-plans-manually.md)えるか、サポート [を呼び出します](../../admin/contact-support-for-business-products.md)。
+プランの切 **り替え** ボタンを使用してプランを自動的に切り替えるには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決すると、[プランの切り替え] ボタン **が表示** されます。 ない場合は、手動 [でプランを切り替](switch-plans-manually.md)えるか、サポート [を呼び出します](../../admin/contact-support-for-business-products.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-プランの切 **り替え** ボタンを使用してプランを自動的に切り替えるには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../admin/manage/resolve-license-conflicts.md)。 ライセンスの競合を解決すると、[プランの切り替え] ボタン **が表示** されます。 ない場合は、手動 [でプランを切り替](switch-plans-manually.md)えるか、サポート [を呼び出します](../../admin/contact-support-for-business-products.md)。
+プランの切 **り替え** ボタンを使用してプランを自動的に切り替えるには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決すると、[プランの切り替え] ボタン **が表示** されます。 ない場合は、手動 [でプランを切り替](switch-plans-manually.md)えるか、サポート [を呼び出します](../../admin/contact-support-for-business-products.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-プランの切 **り替え** ボタンを使用してプランを自動的に切り替えるには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../admin/manage/resolve-license-conflicts.md)。 ライセンスの競合を解決すると、[プランの切り替え] ボタン **が表示** されます。 ない場合は、手動 [でプランを切り替](switch-plans-manually.md)えるか、サポート [を呼び出します](../../admin/contact-support-for-business-products.md)。
+プランの切 **り替え** ボタンを使用してプランを自動的に切り替えるには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決すると、[プランの切り替え] ボタン **が表示** されます。 ない場合は、手動 [でプランを切り替](switch-plans-manually.md)えるか、サポート [を呼び出します](../../admin/contact-support-for-business-products.md)。
 
 ::: moniker-end
 

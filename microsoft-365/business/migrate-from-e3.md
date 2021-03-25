@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 - MET150
 description: 365 E3 から Microsoft 365 Business Premium にビジネスを移行するOffice説明します。
-ms.openlocfilehash: f655037891bf8ec42e7b927256025c89c9354e98
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912944"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164535"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>365 E3 Office Microsoft 365 Business Premium への移行 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>365 E3 Office Microsoft 365 Business Premium への移行
 
 Microsoft 365 Business Premium には、クラス最高のクラウドベースの生産性アプリと簡単なデバイス管理とセキュリティを組み合わせた、小規模ビジネスに必要なすべてが含されています。 現在、Office 365 E3 サブスクリプションをお持ちで、従業員数が 300 人を超える場合は、セキュリティ機能を追加するために Microsoft 365 Business Premium への切り替えをご検討ください。
 
@@ -39,17 +39,17 @@ Microsoft 365 Business Premium には、クラス最高のクラウドベース�
 
 次の表に、Microsoft 365 Business Premium と 365 E3 Officeを示します。
 
-| 特徴    | Microsoft 365 Business Premium のサポート    | 365 E3 Officeサポート | 
+| 機能    | Microsoft 365 Business Premium のサポート    | 365 E3 Officeサポート | 
 |:-------|:-----|:-----|
 | **社内**        | | | 
-| Officeアプリ<sup>1</sup>    | Microsoft 365 Apps for business    | エンタープライズ向け Microsoft  365 アプリ | 
+| Officeアプリ<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for enterprise | 
 | **クラウド生産性アプリ**        | | | 
 | Exchange Online と Outlook    | メールボックスあたり 50 GB のストレージ制限と無制限のストレージExchange Online Archiving    | メールボックスあたり 100 GB のストレージ制限と無制限のストレージExchange Online Archiving | 
 | Teams    | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | ![365 E3 Office付属](../media/check-mark.png) | 
 | OneDrive for Business    | ユーザーあたり 1 TB のストレージ制限    | 無制限 | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | ![365 E3 Office付属](../media/check-mark.png) | 
 | StaffHub    | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | ![365 E3 Office付属](../media/check-mark.png) | 
-| Outlook カスタマー マネージャー、MileIQ    | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | | 
+| Outlook Customer Manager    | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | | 
 | **脅威の防止**        | | | 
 | Microsoft Defender for Office 365 プラン 1 | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | 含まれていませんが、追加できます | 
 | **ID 管理**        | | | 
@@ -122,7 +122,7 @@ Microsoft 365 Business Premium には、Exchange Online プラン 1 を使用す
 
 ### <a name="threat-protection"></a>脅威に対する保護
 
-Microsoft 365 Business Premium に移行した後、365 の Defender Officeがあります。 概要 [については、「Microsoft Defender for Office 365」](../security/office-365-security/office-365-atp.md) を参照してください。 セットアップするには、「[安全なリンク](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)の設定、安全[](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)な添付ファイルのセットアップ、および[365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)の Defender でのフィッシング対策のOfficeしてください。
+Microsoft 365 Business Premium に移行した後、365 の Defender Officeがあります。 概要 [については、「Microsoft Defender for Office 365」](../security/defender-365-security/defender-for-office-365.md) を参照してください。 セットアップするには、「[安全なリンク](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)の設定、安全[](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)な添付ファイルのセットアップ、および[365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)の Defender でのフィッシング対策のOfficeしてください。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 

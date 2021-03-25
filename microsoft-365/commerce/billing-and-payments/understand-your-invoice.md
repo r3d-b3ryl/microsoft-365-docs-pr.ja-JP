@@ -1,7 +1,7 @@
 ---
 title: 課金内容または請求書の内容を理解する
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: 2b11cca810b17ae2dacc3ddab723725608ffceb5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 98c42bf480db8be3d750ab9788e407b7064335a9
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911700"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164488"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス ファイルを共有する方法の概要。
-ms.openlocfilehash: b481e7564625fcd019a53ba9116acdb724b4af61
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6066bb2b1f1ea4fb4fac6a2d9d08dbd19d6cb7b0
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422365"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164599"
 ---
 # <a name="overview-of-sharing-business-files"></a>ビジネス ファイルの共有の概要
 
@@ -33,6 +33,10 @@ ms.locfileid: "50422365"
 
 |![安全に共有する](../media/securely-share-file.png)<br/>[会社外のユーザーとファイルを共有する](#share-a-file-with-someone-outside-of-your-company)|![クライアントとの共同作業](../media/share-and-collab-with-partner.png) <br/>[クライアントまたはビジネス パートナーとの共有と共同作業](#share-and-collaborate-with-a-client-or-business-partner) | ![組織内で共有する](../media/share-inside-your-org.png) <br/>[ビジネス内で共有する](#share-inside-your-business) |
 |--|--|--|
+
+インフォグラフィックをダウンロードして、ビジネス ファイルを共有する方法の概要を簡単に確認できます。 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)
 
 ## <a name="share-a-file-with-someone-outside-of-your-company"></a>会社外のユーザーとファイルを共有する
 
@@ -68,7 +72,3 @@ ms.locfileid: "50422365"
 - [OneDrive でファイルとフォルダーを共有する](https://support.microsoft.com/en-us/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
 - [会社全体のチームを作成する](https://support.microsoft.com/en-us/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
 - [チームにゲストを追加する](https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
-
-インフォグラフィックをダウンロードして、ビジネス ファイルを共有する方法の概要を簡単に確認できます。 
-
-[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)

@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Globanet Zoom Meetings から Microsoft 365 にデータをインポートおよびアーカイブするコネクタをセットアップできます。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティデータを管理できます。
-ms.openlocfilehash: a8f6ab0a629054457a3a0dc7cbbe74c051820058
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Veritas Zoom Meetings から Microsoft 365 にデータをインポートおよびアーカイブするコネクタをセットアップできます。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティデータを管理できます。
+ms.openlocfilehash: b67098f3ddb1149927f4b82270c8fa4f14bbe558
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923363"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163731"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>ズーム 会議データをアーカイブするコネクタをセットアップする
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Zoom Meetings から Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet には、サード パーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された Zoom [Meetings](https://globanet.com/zoom/) コネクタが提供されています。 コネクタは、会議のコンテンツ (チャット、記録されたファイル、メタデータを含む) を Zoom Meetings アカウントから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、Zoom Meetings から Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された Zoom [Meetings](https://globanet.com/zoom/) コネクタが提供されています。 コネクタは、会議のコンテンツ (チャット、記録されたファイル、メタデータを含む) を Zoom Meetings アカウントから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
 Zoom Meetings データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 ズーム 会議コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ Zoom Meetings データをユーザー メールボックスに格納した後�
 
 1. 組織は、ズーム会議を使用して、ズーム会議サイトを設定および構成します。
 
-2. 24 時間に 1 回、Zoom Meetings の会議アイテムが Globanet Merge1 サイトにコピーされます。 また、コネクタは会議のコンテンツを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、ズーム会議の会議アイテムが Veritas Merge1 サイトにコピーされます。 また、コネクタは会議のコンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成した Zoom Meetings コネクタは、毎日 Globanet Merge1 に接続し、会議メッセージを Microsoft クラウドの安全な Azure Storage の場所に転送します。
+3. Microsoft 365 コンプライアンス センターで作成した Zoom Meetings コネクタは、毎日 Veritas Merge1 に接続し、会議メッセージを Microsoft クラウドの安全な Azure Storage の場所に転送します。
 
 4. コネクタは、手順 3 で説明したように *、Email* プロパティと自動ユーザー マッピングの値を使用して、変換された会議アイテムを特定のユーザーのメールボックスにインポートします。 Zoom **Meetings** という名前の受信トレイ フォルダー内の新しいサブフォルダーがユーザー のメールボックスに作成され、そのフォルダーに会議アイテムがインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての会議アイテムには、このプロパティが含まれるので、会議のすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
+- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
 - 組織の Zoom Business または Zoom Enterprise アカウントのユーザー名とパスワードを取得します。 Zoom Meetings コネクタを構成する場合は、手順 2 でこのアカウントにサインインする必要があります。
 
@@ -73,7 +73,7 @@ Zoom Meetings データをユーザー メールボックスに格納した後�
 
 ## <a name="step-2-configure-the-zoom-meetings-connector"></a>手順 2: Zoom Meetings コネクタを構成する
 
-2 番目の手順は、Merge1 サイトで Zoom Meetings コネクタを構成することです。 Globanet Merge1 サイトで Zoom Meetings コネクタを構成する方法の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Merge1 サイトで Zoom Meetings コネクタを構成することです。 Veritas Merge1 サイトで Zoom Meetings コネクタを構成する方法の詳細については [、「Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)サード パーティ コネクタ ユーザー ガイド」を参照してください。
 
 [ファイルの **保存と&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 

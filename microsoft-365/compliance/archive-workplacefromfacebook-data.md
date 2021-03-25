@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Globanet の Merge1 サイトにアーカイブされている Facebook から Microsoft 365 に Workplace からデータをインポートおよびアーカイブするコネクタを設定できます。 コネクタをセットアップするには、Globanet を操作する必要があります このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 843e758430b1fe05ac2977c5a06f12838c81cd42
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Veritas の Merge1 サイトにアーカイブされている Facebook から Microsoft 365 に Workplace からデータをインポートおよびアーカイブするコネクタを設定できます。 コネクタをセットアップするには、Veritas を操作する必要があります このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: 25221b1d71fe106f0f6dcf9c629414aeb0de8709
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923385"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163831"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Facebook データから Workplace をアーカイブするコネクタをセットアップする
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Workplace から Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet は[](https://globanet.com/workplace/)、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された Facebook コネクタからの Workplace を提供します。 コネクタは、チャット、添付ファイル、投稿、ビデオなどのコンテンツを Workplace から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、Workplace から Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas は[](https://globanet.com/workplace/)、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された Facebook コネクタからの Workplace を提供します。 コネクタは、チャット、添付ファイル、投稿、ビデオなどのコンテンツを Workplace から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
 Workplace データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Facebook コネクタから Workplace を使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ Workplace データをユーザー メールボックスに格納した後、訴
 
 1. 組織は、Facebook の Workplace を使用して Workplace サイトを設定および構成します。
 
-2. 24 時間に 1 回、Workplace のアイテムが Globanet Merge1 サイトにコピーされます。 コネクタは、これらのアイテムのコンテンツを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、Workplace のアイテムが Veritas Merge1 サイトにコピーされます。 コネクタは、これらのアイテムのコンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成した Facebook コネクタからの Workplace は、毎日 Globanet Merge1 に接続し、Workplace アイテムを Microsoft クラウド内の安全な Azure Storage の場所に転送します。
+3. Microsoft 365 コンプライアンス センターで作成した Facebook コネクタからの Workplace は、毎日 Veritas Merge1 に接続し、Workplace アイテムを Microsoft クラウド内の安全な Azure Storage の場所に転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 Facebook の Workplace という名前の **受信** トレイ フォルダー内にサブフォルダーが作成され、Workplace アイテムがそのフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての Workplace アイテムには、このプロパティが含まれているので、すべてのチャットまたは参加者のメール アドレスが入力されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
+- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
 - コンプライアンスと電子情報開示の目的で API を介して Workplace からデータを取得するカスタム https://my.workplace.com/work/admin/apps/ 統合を作成します。
 
@@ -63,7 +63,7 @@ Workplace データをユーザー メールボックスに格納した後、訴
 
 5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-workplace-from-facebook-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトの Facebook コネクタから Workplace を構成する
+## <a name="step-2-configure-the-workplace-from-facebook-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトの Facebook コネクタから Workplace を構成する
 
 2 番目の手順は、Merge1 サイトの Facebook コネクタから Workplace を構成することです。 Facebook コネクタから Workplace を構成する方法については [、「Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Workplace%20from%20Facebook%20User%20Guide%20.pdf)コネクタ ユーザー ガイド」を参照してください。
 

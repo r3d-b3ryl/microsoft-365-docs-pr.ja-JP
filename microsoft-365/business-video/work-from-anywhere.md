@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 がどこからでも作業する方法の概要。
-ms.openlocfilehash: 7c3a0ee4b69f7fa4e07064f0adc108afe70bd54d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: f68c2f4b05437dd5cb29a3588a4878f464c5566a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421683"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164563"
 ---
 # <a name="work-from-anywhere---overview"></a>どこからでも作業する - 概要
 
@@ -33,7 +33,11 @@ ms.locfileid: "50421683"
 
 **Pro ヒント:** 個人用デバイス上の仕事用アプリの通知をオフにして、ワーク ライフ バランスを維持します。
 
-以下の 4 つのヒントを使用して、どこからでも作業するためのヒントを取得するためのインフォグラフィックをダウンロードします [。PDF](https://go.microsoft.com/fwlink/?linkid=2079451) [、PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
+以下の 4 つのヒントを使用して、どこにいても作業できます。
+
+インフォグラフィックをダウンロードして、どこからでも作業するためのヒントを取得します。 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **自宅で定期的に働く方法を考えていますか?**
 

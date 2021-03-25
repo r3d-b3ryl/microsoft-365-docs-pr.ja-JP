@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Microsoft 365 の Globanet FX Connect からデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: da6b0c82193fc76090ba9a324ea4c3d8f415063a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Microsoft 365 の Veritas FX Connect からデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: 1efbe8d6d8cecdd8394b565abad4d33c8610398f
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904207"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164263"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data"></a>FX Connect データをアーカイブするためのコネクタのセットアップ
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、FX Connect コラボレーション プラットフォームから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet は [、FX Connect](https://globanet.com/fx-connect/) アイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された FX Connect コネクタを提供します。 コネクタは、組織の FX Connect アカウントの取引、メッセージ、その他の詳細などのコンテンツを FX Connect から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、FX Connect コラボレーション プラットフォームから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas は [、FX Connect](https://globanet.com/fx-connect/) アイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された FX Connect コネクタを提供します。 コネクタは、組織の FX Connect アカウントの取引、メッセージ、その他の詳細などのコンテンツを FX Connect から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
 FX Connect データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 FX Connect コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ FX Connect データをユーザー メールボックスに格納した後、�
 
 1. 組織は、FX Connect を使用して FX Connect サイトをセットアップおよび構成します。
 
-2. 24 時間に 1 回、FX Connect アカウントのアイテムが Globanet Merge1 サイトにコピーされます。 コネクタは、FX Connect アイテムを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、FX Connect アカウントのアイテムが Veritas Merge1 サイトにコピーされます。 コネクタは、FX Connect アイテムを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成した FX Connect コネクタは、毎日 Globanet Merge1 サイトに接続し、FX Connect アイテムを Microsoft クラウド内の安全な Azure Storage の場所に転送します。
+3. Microsoft 365 コンプライアンス センターで作成した FX Connect コネクタは、毎日 Veritas Merge1 サイトに接続し、FX Connect アイテムを Microsoft クラウド内の安全な Azure Storage の場所に転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、特定のユーザーのメールボックスにアイテム [をインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **FX Connect** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、そのフォルダーにアイテムがインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての FX Connect アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。  アカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
+- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。  アカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
 - 手順 1 で FX Connect コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 Microsoft 365 コンプライアンス センターの [ **データ** コネクタ] ページにコネクタを追加するには、この役割が必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていない。 Exchange Online の [組織の管理] 役割グループにメールボックスインポートエクスポート役割を追加できます。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の記事の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
@@ -59,7 +59,7 @@ FX Connect データをユーザー メールボックスに格納した後、�
 
 5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-fx-connect-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトで FX Connect コネクタを構成する
+## <a name="step-2-configure-the-fx-connect-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで FX Connect コネクタを構成する
 
 2 番目の手順は、Merge1 サイトで FX Connect コネクタを構成することです。 FX Connect コネクタを構成する方法の詳細については [、「Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20FX%20Connect%20User%20Guide%20.pdf)コネクタ ユーザー ガイド」を参照してください。
 

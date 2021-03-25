@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、XIP ソース データを Globanet から Microsoft 365 にインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: d3e249c94ad68dbc2e0be51617807b1e48251fa6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、XIP ソース データを Veritas から Microsoft 365 にインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
+ms.openlocfilehash: dd0881260b278819d9a2a86d2d43cb22c3b2420a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922887"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163808"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>XIP ソース データをアーカイブするコネクタをセットアップする
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、XIP ソース プラットフォームから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet は [、XIP](https://globanet.com/xip/) ファイルを使用して Microsoft 365 にアイテムをインポートできる XIP コネクタを提供します。 XIP ファイルは ZIP ファイルに似ていますが、デジタル署名を使用できます。 デジタル署名は、XIP ソース ファイルが抽出される前に、Globanet Merge 1 によって検証されます。 コネクタは、コンテンツを XIP ソース ファイルから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、XIP ソース プラットフォームから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas は [、XIP](https://globanet.com/xip/) ファイルを使用して Microsoft 365 にアイテムをインポートできる XIP コネクタを提供します。 XIP ファイルは ZIP ファイルに似ていますが、デジタル署名を使用できます。 デジタル署名は、XIP ソース ファイルが抽出される前に Veritas Merge 1 によって検証されます。 コネクタは、コンテンツを XIP ソース ファイルから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
 XIP ソース データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 XIP コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ XIP ソース データをユーザー メールボックスに格納した後�
 
 1. 組織は XIP ソースと一緒に XIP サイトを設定および構成します。
 
-2. 24 時間に 1 回、XIP ソース アイテムが Globanet Merge1 サイトにコピーされます。 コネクタは、コンテンツを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、XIP ソース アイテムが Veritas Merge1 サイトにコピーされます。 コネクタは、コンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成した XIP コネクタは、毎日 Globanet Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にメッセージを転送します。
+3. Microsoft 365 コンプライアンス センターで作成した XIP コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にメッセージを転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたメッセージ アイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **XIP** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、そのフォルダーにアイテムがインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべてのソース アイテムには、このプロパティが含まれるので、すべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 アカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/contact-us/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 アカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
 - 手順 1 で XIP コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 Microsoft 365 コンプライアンス センターの [データ コネクタ] ページにコネクタを追加するには、この役割が必要です。 既定では、この役割は Exchange Online の任意の役割グループに割り当てられていない。 Exchange Online の [組織の管理] 役割グループにメールボックスインポートエクスポート役割を追加できます。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の記事の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
@@ -59,7 +59,7 @@ XIP ソース データをユーザー メールボックスに格納した後�
 
 5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-xip-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトで XIP コネクタを構成する
+## <a name="step-2-configure-the-xip-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで XIP コネクタを構成する
 
 2 番目の手順は、Merge1 サイトで XIP コネクタを構成することです。 XIP コネクタを構成する方法の詳細については [、「Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XIP%20User%20Guide%20.pdf)コネクタ ユーザー ガイド」を参照してください。
 

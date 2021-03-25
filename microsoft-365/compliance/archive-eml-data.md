@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Globanet から Microsoft 365 に EML データをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: a7495ea4accd2a40b188f92a75336f81a8f527f1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Veritas から Microsoft 365 に EML データをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
+ms.openlocfilehash: 5261c30097cf571062d3c125841ac112e0552822
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924435"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164366"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>EML データをアーカイブするコネクタをセットアップする
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Microsoft 365 組織のユーザー メールボックスに EML データをインポートおよびアーカイブします。 EML は、ファイルに保存された電子メール メッセージのファイル拡張子です。 コネクタは、アイテムのコンテンツをソース形式から電子メール メッセージ形式に変換し、そのアイテムをユーザー メールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、Microsoft 365 組織のユーザー メールボックスに EML データをインポートおよびアーカイブします。 EML は、ファイルに保存された電子メール メッセージのファイル拡張子です。 コネクタは、アイテムのコンテンツをソース形式から電子メール メッセージ形式に変換し、そのアイテムをユーザー メールボックスにインポートします。
 
 EML メッセージをユーザー メールボックスに保存した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどの Microsoft 365 コンプライアンス機能を適用できます。 EML コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ EML メッセージをユーザー メールボックスに保存した後、訴
 
 1. 組織は EML ソースと一緒に EML サイトを設定および構成します。
 
-2. 24 時間に 1 回、EML ソースのコンテンツ アイテムが Globanet Merge1 サイトにコピーされます。 このプロセスの間、EML ファイルのコンテンツは電子メール メッセージ形式に変換されます。
+2. 24 時間に 1 回、EML ソースのコンテンツ アイテムが Veritas Merge1 サイトにコピーされます。 このプロセスの間、EML ファイルのコンテンツは電子メール メッセージ形式に変換されます。
 
-3. Microsoft 365 コンプライアンス センターで作成した EML コネクタは、毎日 Globanet Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にメッセージを転送します。
+3. Microsoft 365 コンプライアンス センターで作成した EML コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にメッセージを転送します。
 
 4. コネクタは、手順 3 で説明されている自動ユーザー マッピング プロセスの *Email* プロパティの値を使用して、変換されたメッセージ アイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 このプロセスでは **、EML** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、EML アイテムがそのフォルダーにインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべてのメッセージには、このプロパティが含まれるので、コンテンツ アイテムのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 アカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
+- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 アカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
 - 手順 1 で EML コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 Microsoft 365 コンプライアンス センターの [ **データ** コネクタ] ページにコネクタを追加するには、この役割が必要です。 既定では、この役割は Exchange Online の役割グループに割り当てられていない。 Exchange Online の [組織の管理] 役割グループにメールボックスインポートエクスポート役割を追加できます。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の記事の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
 
@@ -59,9 +59,9 @@ EML メッセージをユーザー メールボックスに保存した後、訴
 
 5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-eml-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトで EML コネクタを構成する
+## <a name="step-2-configure-the-eml-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで EML コネクタを構成する
 
-2 番目の手順は、Globanet Merge1 サイトで EML コネクタを構成することです。 EML コネクタの構成の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20EML%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Veritas Merge1 サイトで EML コネクタを構成することです。 EML コネクタの構成の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20EML%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
 [ファイルの **保存と&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 

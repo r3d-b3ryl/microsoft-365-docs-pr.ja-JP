@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Microsoft 365 の Globanet の Webex Teams コネクタからデータをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: d284ea9688af325d95b9e2b6d5fc455acc5fca68
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Microsoft 365 の Veritas の Webex Teams コネクタからデータをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: 654ca53fd4cd7c6091ff74360545ba335f753ffd
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920811"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163908"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Webex Teams データをアーカイブするコネクタをセットアップする
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Webex Teams から Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet は [、Webex Teams](https://globanet.com/webex-teams/) 通信アイテムをキャプチャして Microsoft 365 にインポートするように構成された Webex Teams コネクタを提供します。 コネクタは、組織の Webex Teams アカウントからの 1:1 チャット、グループ会話、チャネル会話、添付ファイルなどのコンテンツを Webex Teams から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、Webex Teams から Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas は [、Webex Teams](https://globanet.com/webex-teams/) 通信アイテムをキャプチャし、Microsoft 365 にインポートするように構成された Webex Teams コネクタを提供します。 コネクタは、組織の Webex Teams アカウントからの 1:1 チャット、グループ会話、チャネル会話、添付ファイルなどのコンテンツを Webex Teams から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
 Webex Teams データをユーザー メールボックスに保存した後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Webex Teams コネクタを使用して Microsoft 365 でデータをインポートおよびアーカイブすると、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ Webex Teams データをユーザー メールボックスに保存した後、�
 
 1. 組織は Webex Teams を使用して Webex Teams サイトをセットアップおよび構成します。
 
-2. 24 時間に 1 回、Webex Teams アイテムが Globanet Merge1 サイトにコピーされます。 また、コネクタは Webex Teams アイテムを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、Webex Teams アイテムが Veritas Merge1 サイトにコピーされます。 また、コネクタは Webex Teams アイテムを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成し、毎日 Globanet Merge1 に接続し、Webex Teams アイテムを Microsoft クラウドの安全な Azure Storage の場所に転送する Webex Teams コネクタ。
+3. Microsoft 365 コンプライアンス センターで作成し、毎日 Veritas Merge1 に接続し、Webex Teams アイテムを Microsoft クラウド内の安全な Azure Storage の場所に転送する Webex Teams コネクタ。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、特定のユーザーのメールボックスにアイテム [をインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **Webex Teams** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、そのフォルダーにアイテムがインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての Webex Teams アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 このアカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
+- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
 - Webex Teams アカウントから [https://developer.webex.com/](https://developer.webex.com) データをフェッチするアプリケーションを作成します。 アプリケーションの作成の手順については、「Merge1 サード パーティ コネクタ ユーザー [ガイド」を参照してください。](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)
 
@@ -63,7 +63,7 @@ Webex Teams データをユーザー メールボックスに保存した後、�
 
 5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-webex-teams-connector-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトで Webex Teams コネクタを構成する
+## <a name="step-2-configure-the-webex-teams-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで Webex Teams コネクタを構成する
 
 2 番目の手順は、Merge1 サイトで Webex Teams コネクタを構成することです。 Webex Teams コネクタを構成する方法の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 

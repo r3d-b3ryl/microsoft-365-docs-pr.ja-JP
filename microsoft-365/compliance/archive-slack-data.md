@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Globanet Slack 電子情報開示から Microsoft 365 にデータをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: a5273082ba2f88cda8c323f47aec40fed31455d2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Veritas Slack 電子情報開示から Microsoft 365 にデータをインポートおよびアーカイブするコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
+ms.openlocfilehash: 48b0a6d4d5e8f6eafaaf900aa5c773cf4f99fe72
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925099"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163961"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Slack 電子情報開示データをアーカイブするコネクタをセットアップする
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、サードパーティのデータをソーシャル メディア、インスタント メッセージング、ドキュメント コラボレーション プラットフォームから Microsoft 365 組織のメールボックスにインポートおよびアーカイブします。 Globanet は、 [サードパーティ](https://globanet.com/slack/) のデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された Slack コネクタを提供します。 Slack は Slack API からメッセージとファイルをプルし、メール メッセージ形式に変換してから、アイテムをユーザー メールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、サードパーティ のデータをソーシャル メディア、インスタント メッセージング、ドキュメント コラボレーション プラットフォームから Microsoft 365 組織のメールボックスにインポートおよびアーカイブします。 Veritas には [、サードパーティ](https://globanet.com/slack/) のデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された Slack コネクタが提供されています。 Slack は Slack API からメッセージとファイルをプルし、メール メッセージ形式に変換してから、アイテムをユーザー メールボックスにインポートします。
 
 Slack 電子情報開示データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 Slack コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -33,15 +33,15 @@ Slack 電子情報開示データをユーザー メールボックスに格納�
 
 1. 組織は Slack を使用して Slack サイトを設定および構成します。
 
-2. 24 時間に 1 回、Slack 電子情報開示からのチャット メッセージが Globanet Merge1 サイトにコピーされます。 また、コネクタはチャット メッセージのコンテンツを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、Slack 電子情報開示からのチャット メッセージが Veritas Merge1 サイトにコピーされます。 また、コネクタはチャット メッセージのコンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成した Slack 電子情報開示コネクタは、毎日 Globanet Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にチャット メッセージを転送します。
+3. Microsoft 365 コンプライアンス センターで作成した Slack 電子情報開示コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にチャット メッセージを転送します。
 
 4. コネクタは、手順 3 で説明したように *、Email* プロパティと自動ユーザー マッピングの値を使用して、変換されたチャット メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 **Slack eDiscovery** という名前の受信トレイ フォルダー内の新しいサブフォルダーがユーザー メールボックスに作成され、そのフォルダーにチャット メッセージ アイテムがインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべてのチャット メッセージには、このプロパティが含まれるので、チャット メッセージのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 アカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
+- Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 アカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
 - 組織の Slack エンタープライズ アカウントのユーザー名とパスワードを取得します。 Slack を構成する場合は、手順 2 でこのアカウントにサインインする必要があります。
 
@@ -63,7 +63,7 @@ Slack 電子情報開示データをユーザー メールボックスに格納�
 
 ## <a name="step-2-configure-slack-ediscovery"></a>手順 2: Slack 電子情報開示を構成する
 
-2 番目の手順は、Merge1 サイトで Slack 電子情報開示コネクタを構成することです。 Globanet Merge1 サイトで Slack 電子情報開示コネクタを構成する方法の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Merge1 サイトで Slack 電子情報開示コネクタを構成することです。 Veritas Merge1 サイトで Slack 電子情報開示コネクタを構成する方法の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
 [ファイルの **保存と&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 

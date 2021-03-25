@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織に最適な Microsoft 365 サブスクリプションについて説明します。
-ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19da01142bfe0abf2ad02c3a0ccab4ef25e09df4
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913756"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164647"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションの選択
 
@@ -33,7 +33,7 @@ ms.locfileid: "50913756"
 
 適切な Microsoft 365 サブスクリプションを選択すると、サービスを有効に利用できます。 ここでは&#39;比較し、ビジネスに合ったプラン&#39;選択する方法について説明します。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. ブラウザーで  **、Microsoft 365 Business Premium を検索します**。
 2. **[Microsoft 365 Business Premium]** ページを開き、[プランと価格を表示 **する] を選択します**。 ここでは、小規模企業に合わせて調整されたサブスクリプションを確認できます。
@@ -54,7 +54,6 @@ ms.locfileid: "50913756"
 | **ソーシャル、ビデオ、サイト** | Stream, Yammer, Planner, SharePoint Online \* , PowerApps \* , Microsoft Flow\* | はい | はい | はい |
 | **ビジネス アプリ** | アプリのスケジュール設定 - 予約\*\* | はい | はい | はい |
 |
- | ビジネス アプリ - MileIQ\*\* | はい | はい | いいえ |
 | **脅威の防止** | Office 365 Advanced Threat Protection | いいえ | はい | いいえ |
  | Windows Exploit Guard の適用 | いいえ | はい | いいえ |
 | **ID 管理** | ハイブリッド Azure Active Directory アカウントのセルフサービス パスワードリセット | いいえ | はい | いいえ |

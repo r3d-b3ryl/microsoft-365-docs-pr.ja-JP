@@ -13,19 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントでサインインすると、ユーザーは Office 365 のエンタープライズ レベルのプライバシー、セキュリティ、コンプライアンスの約束を満たす Microsoft 365 エクスペリエンスで Cortana を使用してクラウドベースのアシスタンス サービスを受けることができます。
-ms.openlocfilehash: 00702724a44cd75bc68e9f7adac7170d81c080fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a45f23c022474ff39eca891eec03139dda936027
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914800"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164671"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 の Cortana
 
@@ -55,7 +54,7 @@ Cortana エンタープライズ サービスは、ユーザーからのクエ�
 
 次の表では、Cortana エンタープライズ サービスのデータ処理について説明します。
 
-| 名前 | 説明 |
+| Name | 説明 |
 |:-----|:-----|
 |**ストレージ**  <br/> |顧客データは、365 クラウド内の Microsoft Office保存されます。 データはテナントの一部です。 <br/><br/>音声音声は保持されません。  <br/> |
 |**Geo に滞在する**  <br/> |顧客データは、Geo の Office 365 クラウド内の Microsoft サーバーに保存されます。 データはテナントの一部です。  <br/> |

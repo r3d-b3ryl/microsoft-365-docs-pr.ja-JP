@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、Globanet から Microsoft 365 に Salesforce Chatter データをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 14f1f190acef1036ebe29e43a7df4005242f8c23
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者は、Salesforce Chatter データを Veritas から Microsoft 365 にインポートおよびアーカイブするためのコネクタをセットアップできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
+ms.openlocfilehash: c04dc3026eaa5abb23b332dbae826c052344da31
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925119"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164061"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Salesforce Chatter データをアーカイブするためのコネクタのセットアップ
 
-Microsoft 365 コンプライアンス センターの Globanet コネクタを使用して、Salesforce Chatter プラットフォームから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Globanet は [、サードパーティ](http://globanet.com/chatter/) のデータ ソースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートする Salesforce Chatter コネクタを提供します。 コネクタは、チャット、添付ファイル、投稿などのコンテンツを Salesforce Chatter から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、Salesforce Chatter プラットフォームから Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas は [、サードパーティ](http://globanet.com/chatter/) のデータ ソースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートする Salesforce Chatter コネクタを提供します。 コネクタは、チャット、添付ファイル、投稿などのコンテンツを Salesforce Chatter から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
 Salesforce Chatter データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどの Microsoft 365 コンプライアンス機能を適用できます。 Salesforce Chatter コネクタを使用して Microsoft 365 でデータをインポートおよびアーカイブすると、組織が政府機関および規制ポリシーに準拠し続けるのに役立ちます。
 
@@ -33,15 +33,15 @@ Salesforce Chatter データがユーザー メールボックスに保存され
 
 1. 組織は Salesforce Chatter と一緒に Salesforce Chatter サイトを設定および構成します。
 
-2. 24 時間に 1 回、Salesforce Chatter アイテムが Globanet Merge1 サイトにコピーされます。 コネクタは、メール メッセージ形式への Salesforce Chatter アイテムも含まれます。
+2. 24 時間に 1 回、Salesforce Chatter アイテムが Veritas Merge1 サイトにコピーされます。 コネクタは、メール メッセージ形式への Salesforce Chatter アイテムも含まれます。
 
-3. Microsoft 365 コンプライアンス センターで作成した Salesforce Chatter コネクタは、毎日 Globanet Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所に Chatter コンテンツを転送します。
+3. Microsoft 365 コンプライアンス センターで作成した Salesforce Chatter コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所に Chatter コンテンツを転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **Salesforce Chatter** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべての Chatter アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- Microsoft コネクタ用の Merge1 アカウントを作成します。 アカウントを作成するには [、Globanet カスタマー サポートにお問い合わせください](https://globanet.com/contact-us/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Merge1 アカウントを作成します。 アカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
 - Salesforce アプリケーションを作成し、 でトークンを取得します [https://salesforce.com](https://salesforce.com) 。 Salesforce アカウントに管理者としてログインし、ユーザー個人トークンを取得してデータをインポートする必要があります。 また、更新、削除、および編集をキャプチャするには、Chatter サイトでトリガーを公開する必要があります。 これらのトリガーはチャネルに投稿を作成し、Merge1 はチャネルから情報をキャプチャします。 アプリケーションを作成してトークンを取得する方法の詳細な手順については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
@@ -61,9 +61,9 @@ Salesforce Chatter データがユーザー メールボックスに保存され
 
 5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-salesforce-chatter-on-the-globanet-merge1-site"></a>手順 2: Globanet Merge1 サイトで Salesforce Chatter を構成する
+## <a name="step-2-configure-the-salesforce-chatter-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで Salesforce Chatter を構成する
 
-2 番目の手順は、Globanet Merge1 サイトで Salesforce Chatter コネクタを構成することです。 Salesforce Chatter コネクタを構成する方法の詳細については [、「Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Veritas Merge1 サイトで Salesforce Chatter コネクタを構成することです。 Salesforce Chatter コネクタを構成する方法の詳細については [、「Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)コネクタ ユーザー ガイド」を参照してください。
 
 [ファイルの **保存と&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
 
