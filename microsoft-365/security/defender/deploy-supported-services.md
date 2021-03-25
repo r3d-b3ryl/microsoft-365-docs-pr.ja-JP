@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0902dce0af3c101cbaf7ff526beb71e9f46a1bf4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 434c318be404ffb04cac7a05664c8f001bb46507
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187519"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198863"
 ---
 # <a name="deploy-supported-services"></a>サポートされているサービスを展開する
 
@@ -78,7 +78,7 @@ Microsoft 365 Defender の完全な利点を得る場合は、サポートされ
 | サービス | プロビジョニング手順 | 初期構成 |
 | ------ | ------ | ------ |
 | Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint 展開ガイド](../defender-endpoint/deployment-phases.md) | *「プロビジョニングの手順」を参照してください。* |
-|Microsoft Defender for Office 365 | *None(365 Officeプロビジョニング)* | [Microsoft Defender for Office 365 のポリシーを構成する](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
+|Microsoft Defender for Office 365 | *None(365 Officeプロビジョニング)* | [Microsoft Defender for Office 365 のポリシーを構成する](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | Microsoft Defender for Identity | [クイック スタート: Microsoft Defender for Identity インスタンスを作成する](/azure-advanced-threat-protection/install-atp-step1) | *「プロビジョニングの手順」を参照してください。* |
 | Microsoft Cloud App Security | *なし* | [クイック スタート: Microsoft Cloud App Security の使用を開始する](/cloud-app-security/getting-started-with-cloud-app-security) |
 
@@ -89,6 +89,6 @@ Microsoft 365 Defender の完全な利点を得る場合は、サポートされ
 - [Microsoft 365 Defender の概要](microsoft-365-defender.md)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 - [Microsoft Defender for Endpoint の概要](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Microsoft Defender for Office 365 の概要](../defender-365-security/defender-for-office-365.md)
+- [Microsoft Defender for Office 365 の概要](../office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security の概要](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity の概要](/azure-advanced-threat-protection/what-is-atp)

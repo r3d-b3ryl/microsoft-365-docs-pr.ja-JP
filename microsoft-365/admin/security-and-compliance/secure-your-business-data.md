@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。 '
-ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050680"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197853"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>ビジネス プラン用の Microsoft 365 をセキュリティで保護する上位 10 の方法
 
@@ -42,7 +42,7 @@ Microsoft のビジネス プランの 1 つを使用している小規模また
 
 Microsoft では、サービス プランに適用される次の表に示すタスクを完了してください。
 
-||タスク|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
+||Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
 |1|[多要素認証をセットアップする](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[ユーザーをトレーニングする](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -132,7 +132,7 @@ Microsoft 365 環境にはマルウェアに対する保護が含まれていま
 
 6. [保存] **を選択します。**
 
-詳細については [、「EOP でのマルウェア対策保護」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection)。
+詳細については [、「EOP でのマルウェア対策保護」を参照してください](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection)。
 
 ## <a name="5-protect-against-ransomware"></a>5: ランサムウェアから保護する
 <a name="ransomware"> </a>
@@ -254,7 +254,7 @@ Defender for Office 365 でフィッシング対策ポリシーを作成する�
 
 4. [フィッシング対策] ページで、[+ 作成] **を選択します**。 ウィザードが起動し、フィッシング対策ポリシーを定義する手順を実行します。
 
-5. 推奨されるポリシーの名前、説明、設定を以下のグラフで指定します。 詳細については、「Microsoft Defender のフィッシング対策ポリシーについて」を参照 [Office 365 オプション](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies) について説明します。
+5. 推奨されるポリシーの名前、説明、設定を以下のグラフで指定します。 詳細については、「Microsoft Defender のフィッシング対策ポリシーについて」を参照 [Office 365 オプション](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) について説明します。
 
 6. 設定を確認した後、必要に応じて [ **このポリシーの作成** ] または [ **保存]** を選択します。
 
@@ -270,7 +270,7 @@ Defender for Office 365 でフィッシング対策ポリシーを作成する�
 |適用先|**[受信者のドメインが次の場合]** を選択します。 **[これらのいずれか]** では、**[選択]** を選択します。 **[+ 追加]** を選択します。 ドメインの名前の横にあるチェック ボックスをオンにします (たとえば、リスト contoso.com をクリックし、[追加] を **選択します**。 [**完了**] を選択します。|
 |
 
-詳細については、「Defender [for Office 365」を参照](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)してください。
+詳細については、「Defender [for Office 365」を参照](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)してください。
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: 安全な添付ファイルを使用して悪意のある添付ファイルやファイルから保護する
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Defender for Office 365 でフィッシング対策ポリシーを作成する�
 |適用先|受信者ドメインはです。 . . ドメインを選択します。|
 |
 
-詳細については、「Defender [for Office 365」を参照](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)してください。
+詳細については、「Defender [for Office 365」を参照](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)してください。
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: セーフ リンクを使用してフィッシング攻撃から保護する
 <a name="phishingatp"> </a>
@@ -349,4 +349,4 @@ Defender for Office 365 でフィッシング対策ポリシーを作成する�
 |適用先|受信者ドメインはです。 . . ドメインを選択します。|
 |
 
-詳細については [、「Safe Links in Microsoft Defender for microsoft Defender for Office 365」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links)。
+詳細については [、「Safe Links in Microsoft Defender for microsoft Defender for Office 365」を参照してください](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)。

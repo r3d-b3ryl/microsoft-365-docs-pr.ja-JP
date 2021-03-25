@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: このランディング ページには、365 のセキュリティとコンプライアンスに関するリンクとOfficeがあります。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90f4083bdf38f4b1390ee31d0853ad65e3fe236f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051709"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198060"
 ---
 # <a name="plan-for-security-amp-compliance"></a>セキュリティコンプライアンスを &amp; 計画する
 
@@ -46,7 +46,7 @@ Microsoft 365 のデータとサービスへのアクセスを保護すること
   
 - [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
     
-- [セキュリティで保護された電子メール ポリシーと構成](../security/defender-365-security/secure-email-recommended-policies.md)
+- [セキュリティで保護された電子メール ポリシーと構成](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -62,15 +62,15 @@ Microsoft 365 のデータとサービスへのアクセスを保護すること
   
 - [セキュリティ コンプライアンス センター &amp; に移動する](./microsoft-365-compliance-center.md)
     
-- [セキュリティ コンプライアンス センター &amp; のアクセス許可](~/security/defender-365-security/protect-against-threats.md)
+- [セキュリティ コンプライアンス センター &amp; のアクセス許可](~/security/office-365-security/protect-against-threats.md)
     
-- [ユーザーにセキュリティ コンプライアンス センターへのアクセス &amp; 権を与える](~/security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [ユーザーにセキュリティ コンプライアンス センターへのアクセス &amp; 権を与える](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>手順 6: エンドツーエンドのセキュリティ シナリオを開始点として使用する
 
 これらの推奨構成は、エンタープライズ 規模または高度なアクセス セキュリティ シナリオの開始点として使用します。
   
-- [セキュリティで保護された電子メール ポリシーと構成](../security/defender-365-security/secure-email-recommended-policies.md)
+- [セキュリティで保護された電子メール ポリシーと構成](../security/office-365-security/secure-email-recommended-policies.md)
     
 - [Microsoft Cloud の Contoso](../enterprise/contoso-case-study.md)
     

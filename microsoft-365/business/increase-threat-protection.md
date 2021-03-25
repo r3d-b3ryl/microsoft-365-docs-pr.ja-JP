@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft Defender for Office 365 を設定し、フィッシング、マルウェア、その他の脅威から機密データを保護します。
-ms.openlocfilehash: 80ad3767b277e4808b6df4bdd977688794649e11
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6526ed9a849e83f19f74656004978089ce367ea9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050848"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198393"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -57,7 +57,7 @@ ms.locfileid: "51050848"
 
 6. [保存] **を選択します。**
 
-詳細については [、「EOP でのマルウェア対策保護」を参照してください](../security/defender-365-security/anti-malware-protection.md)。
+詳細については [、「EOP でのマルウェア対策保護」を参照してください](../security/office-365-security/anti-malware-protection.md)。
 
 ## <a name="protect-against-ransomware"></a>ランサムウェアから保護する
 
@@ -138,7 +138,7 @@ Microsoft Defender for Office 365 でフィッシング対策ポリシーを作�
 
 4. [フィッシング **対策] ページで、[+** 作成] **を選択します**。 ウィザードが起動し、フィッシング対策ポリシーを定義する手順を実行します。
 
-5. 次の表で推奨されるポリシーの名前、説明、および設定を指定します。 詳細については、「365 オプションの Microsoft Defender でのフィッシング対策ポリシーについて [Office」を参照してください](../security/defender-365-security/set-up-anti-phishing-policies.md)。
+5. 次の表で推奨されるポリシーの名前、説明、および設定を指定します。 詳細については、「365 オプションの Microsoft Defender でのフィッシング対策ポリシーについて [Office」を参照してください](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 6. 設定を確認した後、必要に応じて [このポリシーを作成する] または **[****保存]** を選択します。
 
@@ -181,7 +181,7 @@ Microsoft Defender for Office 365 でフィッシング対策ポリシーを作�
 |検出時に添付ファイルをリダイレクトする|リダイレクトを有効にする (このボックスを選択します) 管理者アカウントまたは検疫用のメールボックスのセットアップを入力します。          添付ファイルのマルウェア スキャンが時間切れまたはエラーが発生した場合は、上記の選択項目を適用します (このボックスを選択します)。|
 |適用先|受信者ドメインはです。 . . ドメインを選択します。|
 
-詳細については、「Microsoft Defender for microsoft Defender for Office [365」を参照してください](../security/defender-365-security/set-up-anti-phishing-policies.md)。
+詳細については、「Microsoft Defender for microsoft Defender for Office [365」を参照してください](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>セーフ リンクを使用したフィッシング攻撃からの保護
 
@@ -224,7 +224,7 @@ Microsoft Defender for Office 365 でフィッシング対策ポリシーを作�
 |安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする|このボックスを選択します。|
 |適用先|受信者ドメインはです。 . . ドメインを選択します。|
 
-詳細については、「セーフ リンク [」を参照してください](../security/defender-365-security/safe-links.md)。
+詳細については、「セーフ リンク [」を参照してください](../security/office-365-security/safe-links.md)。
 
 ## <a name="go-to-intune-admin-center"></a>Intune 管理センターに移動する
 

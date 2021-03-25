@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 環境で組織が現在直面している最も一般的な脅威と攻撃のシナリオ、およびこれらのリスクを軽減するための推奨されるアクション。
-ms.openlocfilehash: 328bd4c079531ee57b41422fd2d3f2c53ef8dc18
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 504a2d4628c265b387941e2e4de0461f7ac3be9b
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051092"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199043"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDM)
 
@@ -70,7 +70,7 @@ Microsoft は、テナント内の Secure Score ツールを提供し、通常�
 
 |推奨事項  |E3  |E5  |
 |---------|---------|---------|
-|**多要素認証をセットアップし、サインイン リスク ポリシーを** 含む推奨条件付きアクセス ポリシーを使用します。 Microsoft では、すべてのクラウド アプリ (Office 365 サービスと Microsoft 365 サービスを含む) を保護するために、一連のポリシーを推奨し、テストしています。 「Identity [and device access configurations」を参照してください](./defender-365-security/microsoft-365-policies-configurations.md)。 | |![緑のチェック マーク](../media/green-check-mark.png)|
+|**多要素認証をセットアップし、サインイン リスク ポリシーを** 含む推奨条件付きアクセス ポリシーを使用します。 Microsoft では、すべてのクラウド アプリ (Office 365 サービスと Microsoft 365 サービスを含む) を保護するために、一連のポリシーを推奨し、テストしています。 「Identity [and device access configurations」を参照してください](./office-365-security/microsoft-365-policies-configurations.md)。 | |![緑のチェック マーク](../media/green-check-mark.png)|
 |**すべてのユーザーに多要素認証が必要です**。 推奨される条件付きアクセス ポリシーを実装するために必要なライセンスが必要ない場合は、少なくともすべてのユーザーに多要素認証が必要です。|![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)|
 |**メール内のマルウェアに対する保護のレベルを上げる**。 365 Office Microsoft 365 環境にはマルウェアに対する保護が含まれていますが、マルウェアに一般的に使用されるファイルの種類を含む添付ファイルをブロックすることで、この保護を強化できます。|![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)|
 |**標的型フィッシング攻撃からメールを保護します**。 Office 365 環境または Microsoft 365 環境用に 1 つ以上のカスタム ドメインを構成している場合は、ターゲットフィッシング対策保護を構成できます。 Office 365 用 Defender の一部であるフィッシング対策保護は、悪意のある偽装ベースのフィッシング攻撃や他のフィッシング攻撃から組織を保護するのに役立ちます。 カスタム ドメインを構成していない場合は、これを行う必要があります。| |![緑のチェック マーク](../media/green-check-mark.png)|
@@ -116,7 +116,7 @@ Microsoft 365 の情報保護機能は、ユーザーが持っている情報、
 
 |推奨事項 |E3|E5 |
 |---------|---------|---------|
-|**条件付きアクセスと関連するポリシー** を確認して最適化し、ゼロトラスト ネットワークの目標に合わせて調整します。 既知の脅威からの保護には、一連の推奨ポリシー [の実装が含まれます](./defender-365-security/microsoft-365-policies-configurations.md)。 これらのポリシーの実装を確認して、ネットワークにアクセスしたハッカーからアプリとデータを保護します。 Windows 10 の推奨 Intune アプリ保護ポリシーでは、Windows 情報保護 (WIP) が有効です。 WIP は、電子メール、ソーシャル メディア、パブリック クラウドなど、アプリやサービスを通じて組織データが偶発的に漏洩しないように保護します。 |         |![緑のチェック マーク](../media/green-check-mark.png)|
+|**条件付きアクセスと関連するポリシー** を確認して最適化し、ゼロトラスト ネットワークの目標に合わせて調整します。 既知の脅威からの保護には、一連の推奨ポリシー [の実装が含まれます](./office-365-security/microsoft-365-policies-configurations.md)。 これらのポリシーの実装を確認して、ネットワークにアクセスしたハッカーからアプリとデータを保護します。 Windows 10 の推奨 Intune アプリ保護ポリシーでは、Windows 情報保護 (WIP) が有効です。 WIP は、電子メール、ソーシャル メディア、パブリック クラウドなど、アプリやサービスを通じて組織データが偶発的に漏洩しないように保護します。 |         |![緑のチェック マーク](../media/green-check-mark.png)|
 |**外部メール転送を無効にします**。 ユーザーのメールボックスにアクセスするハッカーは、メールを自動的に転送するメールボックスを設定することで、メールを盗む可能性があります。 これは、ユーザーの認識がなくても発生する可能性があります。 メール フロー ルールを構成することで、この問題を回避できます。|![緑のチェック マーク](../media/green-check-mark.png) |![緑のチェック マーク](../media/green-check-mark.png)|
 |**匿名の外部予定表の共有を無効にします**。 既定では、外部の匿名予定表の共有が許可されます。 [予定表の共有を無効](/exchange/sharing/sharing-policies/modify-a-sharing-policy) にして、機密情報の潜在的なリークを減らします。|![緑のチェック マーク](../media/green-check-mark.png) |![緑のチェック マーク](../media/green-check-mark.png)|
 |**機密データのデータ損失防止ポリシーを構成します**。 セキュリティ コンプライアンス センターでデータ損失防止ポリシーを作成し、クレジット カード番号、社会保障番号、銀行口座番号などの機密データを検出して &amp; 保護します。 Microsoft 365 には、データ損失防止ポリシーで使用できる定義済みの機密情報の種類が多数含まれています。 また、環境に合った機密データ用に独自の機密情報の種類を作成することもできます。 |![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)|

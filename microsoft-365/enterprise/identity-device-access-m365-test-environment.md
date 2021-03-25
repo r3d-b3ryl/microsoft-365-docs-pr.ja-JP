@@ -14,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: e90c27edbf4ad5a78c337bf2488956ce82a1ec3e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5a9e9ef9ea6b8f6dc80aa7fea225f3573b8fcadc
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051320"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197877"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境の ID およびデバイス
 
 *このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
 
-[ID およびデバイス アクセス](../security/defender-365-security/microsoft-365-policies-configurations.md) 構成は、Azure Active Directory (Azure Active Directory ) と統合されているすべてのサービスへのアクセスを保護するための一連の推奨構成と条件付きアクセス ポリシー AD。
+[ID およびデバイス アクセス](../security/office-365-security/microsoft-365-policies-configurations.md) 構成は、Azure Active Directory (Azure Active Directory ) と統合されているすべてのサービスへのアクセスを保護するための一連の推奨構成と条件付きアクセス ポリシー AD。
 
 共通の ID とデバイス アクセス構成が設定されたテスト環境を作成するには、次の方法を実行します。
 
@@ -35,7 +35,7 @@ ms.locfileid: "51051320"
   - [パスワード ハッシュ同期 (PHS)](phs-prereqs-m365-test-environment.md)
   - [パススルー認証 (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. 共通 [ID およびデバイス アクセス](../security/defender-365-security/identity-access-policies.md) ポリシーを使用して、テスト環境用に構成された前提条件に基いて構築されるポリシーを構成し、ID とデバイスの保護を確認して検証します。
+2. 共通 [ID およびデバイス アクセス](../security/office-365-security/identity-access-policies.md) ポリシーを使用して、テスト環境用に構成された前提条件に基いて構築されるポリシーを構成し、ID とデバイスの保護を確認して検証します。
 
 ## <a name="see-also"></a>関連項目
 

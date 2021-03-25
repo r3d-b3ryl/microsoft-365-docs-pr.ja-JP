@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、Microsoft 365 のエンタープライズ テスト環境用の追加の Microsoft 365 セキュリティ設定を有効にします。
-ms.openlocfilehash: 186452396af4227a94a7f6cd0fa0109e9d6a7e17
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d1bff8b736e5074f621a173d206f7c5f77841b25
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051272"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198353"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向け Microsoft 365 の Microsoft 365 セキュリティの強化
 
@@ -47,7 +47,7 @@ ms.locfileid: "51051272"
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>最新の認証をサポートしないアプリをブロックする SharePoint Online を構成する
 
-最新の認証をサポートしていないアプリには、Microsoft 365 サブスクリプションとそのデジタル資産をセキュリティで保護する重要な要素である ID とデバイス アクセス構成を適用できません。 [](../security/defender-365-security/microsoft-365-policies-configurations.md) 
+最新の認証をサポートしていないアプリには、Microsoft 365 サブスクリプションとそのデジタル資産をセキュリティで保護する重要な要素である ID とデバイス アクセス構成を適用できません。 [](../security/office-365-security/microsoft-365-policies-configurations.md) 
 
 1. Microsoft 365 管理センター ( ) に移動し、グローバル管理者アカウントを使用して Microsoft 365 テスト ラボ サブスクリプション [https://portal.microsoft.com](https://portal.microsoft.com) にサインインします。
     
@@ -77,7 +77,7 @@ Defender for Office 365 for SharePoint、OneDrive、および Microsoft Teams �
 
 マルウェアは、ウイルスとスパイウェアから構成されます。 ウイルスは、他のプログラムやデータに感染し、感染できるプログラムを探してコンピューター全体に蔓延します。 スパイウェアは、サインイン情報および個人データなどの個人情報を収集して作成者に送り返すマルウェアです。 
 
-Microsoft 365 には、悪意のあるソフトウェアから受信メッセージと送信メッセージを保護し、スパムから保護するのに役立つ組み込みのマルウェアおよびスパム フィルター機能があります。 詳細については、「スパム対策 [とマルウェア対策&を参照してください](../security/defender-365-security/anti-spam-and-anti-malware-protection.md)。
+Microsoft 365 には、悪意のあるソフトウェアから受信メッセージと送信メッセージを保護し、スパムから保護するのに役立つ組み込みのマルウェアおよびスパム フィルター機能があります。 詳細については、「スパム対策 [とマルウェア対策&を参照してください](../security/office-365-security/anti-spam-and-anti-malware-protection.md)。
 
 一般的な添付ファイルの種類を持つファイルに対してマルウェア対策処理が実行されるのを確認するには、次の手順を実行します。
 
@@ -100,7 +100,7 @@ Microsoft 365 の脅威管理は、組織のデータへのモバイル デバ�
 
 ダッシュボードのすべてのカードを詳しくは、提供された情報を理解してください。
 
-詳細については、「セキュリティ ダッシュボード [」を参照してください](../security/defender-365-security/security-dashboard.md)。
+詳細については、「セキュリティ ダッシュボード [」を参照してください](../security/office-365-security/security-dashboard.md)。
 
 
 ## <a name="phase-4-examine-microsoft-secure-score"></a>フェーズ 4: Microsoft Secure Score を調べる

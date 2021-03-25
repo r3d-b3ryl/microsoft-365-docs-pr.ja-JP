@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Pc、電話、タブレットのデータ保護に役立つ Microsoft 365 Business Premium に備わるセキュリティ機能について説明します。
-ms.openlocfilehash: d641fc66e27f3c5e0a7c8609e4fa25fac93d8561
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f04a998c74128edac306167617e073c412fce2ea
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052256"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198413"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium のセキュリティとコンプライアンス機能
 
@@ -63,7 +63,7 @@ Microsoft 365 Business Premium は、PC、電話、タブレット上のデー�
 
 Microsoft 365 Business Premium の高度な機能を使用すると、サイバー アタックからビジネスを保護し、機密情報を保護できます。
   
-- **[Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md)**
+- **[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md)**
     
     Microsoft Defender for Office 365 は、従業員または顧客情報を侵害するように設計された高度なフィッシング攻撃やランサムウェア攻撃からビジネスを保護するのに役立ちます。 以下の機能があります。
     
@@ -104,14 +104,14 @@ Microsoft 365 Business Premium サブスクリプションには、コンプラ�
     
     Exchange Online Archivingライセンスを使用すると、継続的なデータ バックアップを使用してメッセージを簡単にアーカイブできます。 後で検出または復元に必要な場合に備え、削除済みアイテムを含むすべてのユーザーの電子メールが保存されます。 さらに、さまざまな保持ポリシーを使用して、訴訟ホールド、電子情報開示、またはコンプライアンス要件を満たすために電子メール データを保持できます。
     
-- **[秘密度ラベル](../compliance/sensitivity-labels.md)**
+- **[機密ラベル](../compliance/sensitivity-labels.md)**
 
    Microsoft 365 Business Premium には [、Azure Information Protection Plan 1 のすべての機能が含まれています](https://go.microsoft.com/fwlink/p/?linkid=871407)。 この計画では、電子メールやドキュメント内の機密情報へのアクセスを制御できる機密ラベルを作成できます。"転送しない" や "コピーしない" などのコントロールを使用します。 機密情報を "Confidential" として分類し、機密情報をビジネスの外部および内部で共有する方法を指定できます。 エンタープライズ レベルの暗号化は、電子メールやドキュメントに簡単に適用して、情報を非公開にできます。 また、アプリの Azure Information Protection クライアント アドインをインストールOfficeすることもできます。 詳細については、「[Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。 [感度] ラベルの場合は、次 **のAzInfoProtection_UL.exe。**
 
 これらの機能は、セキュリティ コンプライアンス センター &amp; と Intune 管理センターで管理できます。 時間がたつ間に、簡略化されたコントロールが Microsoft 365 管理センターに追加されます。
   
     
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>これらのセキュリティ機能は、すべての市場で利用できますか?
   

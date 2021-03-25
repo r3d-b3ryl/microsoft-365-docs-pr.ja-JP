@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3b2e5d834caab9973006eda64e369a2a6aa17b5d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163317"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197935"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>統合された Microsoft 365 セキュリティ センターの概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "51163317"
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 > Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
 
@@ -44,7 +44,7 @@ ms.locfileid: "51163317"
 
 Microsoft 365 セキュリティ センターは、Microsoft Defender セキュリティ センターや Office 365 セキュリティ/コンプライアンス センターなどの既存の Microsoft セキュリティ ポータルの機能を統合します。 セキュリティ センターは、情報への迅速なアクセス、よりシンプルなレイアウト、およびより簡単に使用できるように関連情報をまとめることを重視しています。 このセンターには次のものが含まれます。
 
-- **[Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)** Microsoft Defender for Office 365 は、メールと Office 365 リソースを保護するための一連の防止、検出、調査、およびハンティング機能を使用して、組織が企業を保護するのに役立ちます。
+- **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 は、メールと Office 365 リソースを保護するための一連の防止、検出、調査、およびハンティング機能を使用して、組織が企業を保護するのに役立ちます。
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** は、組織内のデバイスに対して、予防的な保護、侵害後の検出、自動調査、および対応を提供します。
 - **[Microsoft 365 Defender](microsoft-365-defender.md)** は、Microsoft の *Extended Detection and Response* (XDR) ソリューションの一部であり、Microsoft 365 セキュリティ ポートフォリオを活用して、ドメイン全体の脅威データを自動的に分析し、単一のダッシュボードで攻撃の全体像を構築します。
 
@@ -103,7 +103,7 @@ Microsoft 365 セキュリティ センターは、Microsoft Defender for Office
 
 ![エンドポイントの役割とグループ、役割、およびデバイス グループを表示する [アクセス許可と役割] ページ。](../../media/converged-roles-5.png)
 
- Microsoft 365 セキュリティ センターへのアクセスは、Azure Active Directory グローバル ロールを使用して、またはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft Defender セキュリティ センターへのユーザー アクセスの割り当て](/microsoft-365/security/defender-endpoint/assign-portal-access)」をご覧ください。 Defender for Office 365 については、「[Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可](../defender-365-security/permissions-microsoft-365-compliance-security.md)」をご覧ください。
+ Microsoft 365 セキュリティ センターへのアクセスは、Azure Active Directory グローバル ロールを使用して、またはカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft Defender セキュリティ センターへのユーザー アクセスの割り当て](/microsoft-365/security/defender-endpoint/assign-portal-access)」をご覧ください。 Defender for Office 365 については、「[Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可](../office-365-security/permissions-microsoft-365-compliance-security.md)」をご覧ください。
 
 - [Microsoft 365 Defender へのアクセスを管理する](m365d-permissions.md)方法の詳細
 - Microsoft 365 セキュリティ センターで[カスタム ロールを作成する](custom-roles.md)方法の詳細
@@ -179,7 +179,7 @@ Microsoft 365 セキュリティ センターの特徴と機能を調べてく�
 - [デバイス、メール、アプリ、ID 全体の脅威を探す](./advanced-hunting-query-emails-devices.md)
 - [カスタム検出ルール](./custom-detection-rules.md)
 - [メールとコラボレーションのアラート](../../compliance/alert-policies.md#default-alert-policies)
-- [フィッシング攻撃のシミュレーションを作成し](../defender-365-security/attack-simulation-training.md)、[チームをトレーニングするためのペイロードを作成する](/microsoft-365/security/defender-365-security/attack-simulation-training-payloads)
+- [フィッシング攻撃のシミュレーションを作成し](../office-365-security/attack-simulation-training.md)、[チームをトレーニングするためのペイロードを作成する](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
 ### <a name="related-information"></a>関連情報
 - [Microsoft 365 セキュリティ センター](overview-security-center.md)

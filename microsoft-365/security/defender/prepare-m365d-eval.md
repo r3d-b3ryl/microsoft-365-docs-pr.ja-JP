@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f0e0bf29068bea0f213f8b00403213969f5b9106
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066748"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199139"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Microsoft 365 Defender 試用版ラボまたはパイロット環境を準備する
 
@@ -85,10 +85,10 @@ Active Directory とオンプレミスの Azure Active Directory 間の同期が
 4. [Express **Settings] に移動します**。
 ![[Express Settings] ページのイメージ](../../media/mtp-eval-4.png) <br>
 
-5. グローバル管理者の資格情報を入力します。 **[次へ]** をクリックします。
+5. グローバル管理者の資格情報を入力します。 [ **次へ**] をクリックします。
 ![グローバル管理者の資格情報をADする必要がある [Azure に接続する] ページのイメージ](../../media/mtp-eval-5.png) <br>
 
-6. Active Directory Domain Services エンタープライズ管理者の資格情報を入力します。 **[次へ]** をクリックします。
+6. Active Directory Domain Services エンタープライズ管理者の資格情報を入力します。 [ **次へ**] をクリックします。
 ![資格情報を入力するAD DS ページへの接続のイメージ](../../media/mtp-eval-6.png) <br>
 
 7. [インストール **] を** クリックして構成を確認します。
@@ -105,7 +105,7 @@ Active Directory に[ユーザーとグループを追加し](/azure-advanced-th
 
 | コンポーネント                               | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 構成順序のランク |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-|Microsoft Defender for Office 365|Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL) や共同作業ツールによって生じる悪意のある脅威から組織を保護します。 <br> [詳細情報](/microsoft-365/security/defender-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
+|Microsoft Defender for Office 365|Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL) や共同作業ツールによって生じる悪意のある脅威から組織を保護します。 <br> [詳細情報](/microsoft-365/security/office-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
 |Microsoft Defender for Identity|Microsoft Defender for Identity は、Active Directory シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、および調査します。 <br> [詳細情報を参照してください](/azure-advanced-threat-protection/)。| 2 |
 |Microsoft Cloud App Security| Microsoft Cloud App Security は、複数のクラウドで動作するクラウド アクセス セキュリティ ブローカー (CASB) です。 豊富な可視性、データ移動の制御、高度な分析を提供し、すべてのクラウド サービスでサイバー脅威を特定し、対処します。 <br> [詳細情報を参照してください](/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender for Endpoint | Microsoft Defender for Endpoint のエンドポイント検出および対応機能により、高度な攻撃のほとんどリアルタイムで実用的な検出が実現されます。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 <br> [詳細情報](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                   |                                                                                                                                                                                                                                    

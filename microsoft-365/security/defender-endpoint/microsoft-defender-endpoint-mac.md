@@ -2,7 +2,7 @@
 title: Microsoft Defender ATP for Mac
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint for Mac をインストール、構成、更新、および使用する方法について説明します。
-keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6af8a6e0e23201f3c5861cb6a28b2bffa0f04ea4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186439"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198995"
 ---
 # <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac
 
@@ -80,9 +80,9 @@ macOS の最新の 3 つのメジャー リリースがサポートされてい�
 > macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存のお客様の場合は [、macOS Catalina](mac-sysext-policies.md)および macOS の新しいバージョンの新しい構成プロファイルに記載されている追加の構成プロファイルを必ず展開してください。
 
 > [!IMPORTANT]
-> macOS 10.13 (High Sierra) のサポートは、2021 年 2 月 15 日に中止されます。
+> macOS 10.13 (High Sierra) のサポートは、2021 年 2 月 15 日より中止されました。
 
-- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
+- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave)
 - ディスク領域: 1 GB
 
 macOS のベータ版はサポートされていません。

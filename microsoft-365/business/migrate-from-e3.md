@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 365 E3 から Microsoft 365 Business Premium にビジネスを移行するOffice説明します。
-ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cb70260201686cae02428c715ac98ffe2f88787f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164535"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198099"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>365 E3 Office Microsoft 365 Business Premium への移行
 
@@ -122,8 +122,8 @@ Microsoft 365 Business Premium には、Exchange Online プラン 1 を使用す
 
 ### <a name="threat-protection"></a>脅威に対する保護
 
-Microsoft 365 Business Premium に移行した後、365 の Defender Officeがあります。 概要 [については、「Microsoft Defender for Office 365」](../security/defender-365-security/defender-for-office-365.md) を参照してください。 セットアップするには、「[安全なリンク](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)の設定、安全[](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)な添付ファイルのセットアップ、および[365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)の Defender でのフィッシング対策のOfficeしてください。
+Microsoft 365 Business Premium に移行した後、365 の Defender Officeがあります。 概要 [については、「Microsoft Defender for Office 365」](../security/office-365-security/defender-for-office-365.md) を参照してください。 セットアップするには、「[安全なリンク](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)の設定、安全[](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)な添付ファイルのセットアップ、および[365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)の Defender でのフィッシング対策のOfficeしてください。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 感度ラベルの使用を開始するには、「感度ラベルの概要 [」と](../compliance/sensitivity-labels.md) 「感度ラベルの作成と管理」 [ビデオを参照](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) してください。

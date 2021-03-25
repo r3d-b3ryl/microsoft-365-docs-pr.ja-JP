@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: ad341de0d0aed45ff3bf734e3c933b423eac3353
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c51c002d263452142a1bcf6fc5603d6ec4ef4cf7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060750"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197971"
 ---
 # <a name="device-profile-page"></a>[デバイス プロファイル] ページ
 
@@ -81,7 +81,7 @@ Microsoft 365 セキュリティ ポータルでは、デバイス プロファ�
 * **ウイルス対策スキャンの実行** - ウイルスWindows Defender定義を更新し、すぐにウイルス対策スキャンを実行します。 [クイック スキャン] または [フル スキャン] の間で選択します。
 * **調査パッケージの収集** - デバイスに関する情報を収集します。 調査が完了したら、ダウンロードできます。
 * **ライブ応答セッションの開始** - デバイスにリモート シェルを読み込んで、詳細なセキュリティ [調査を行います](/microsoft-365/security/defender-endpoint/live-response)。
-* **自動調査の開始** - 脅威 [を自動的に調査および修復します](../defender-365-security/office-365-air.md)。 このページから自動調査を手動で実行することもできますが、特定のアラート[](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies)ポリシーによって独自に自動調査がトリガーされます。
+* **自動調査の開始** - 脅威 [を自動的に調査および修復します](../office-365-security/office-365-air.md)。 このページから自動調査を手動で実行することもできますが、特定のアラート[](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies)ポリシーによって独自に自動調査がトリガーされます。
 * **アクション センター** - 現在実行中の応答アクションに関する情報を表示します。
 
 ## <a name="tabs-section"></a>[タブ] セクション
@@ -183,4 +183,4 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 * [Microsoft 365 Defender の概要](microsoft-365-defender.md)
 * [Microsoft 365 Defender を有効にする](m365d-enable.md)
 * [ライブ応答を使用して、デバイス上のエンティティを調査する](../defender-endpoint/live-response.md)
-* [Office 365 での自動調査および対応 (AIR)](../defender-365-security/office-365-air.md)
+* [Office 365 での自動調査および対応 (AIR)](../office-365-security/office-365-air.md)

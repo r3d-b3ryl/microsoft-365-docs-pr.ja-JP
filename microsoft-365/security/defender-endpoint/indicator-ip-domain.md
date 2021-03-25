@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0196148c9dbf3ec769594d714524a3fd9e4d18fd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185959"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198485"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>IPs と URL/ドメインのインジケーターを作成する 
 
@@ -34,7 +34,8 @@ ms.locfileid: "51185959"
 
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
 Defender for Endpoint は、Microsoft が悪意のある IPS/URL と見なす動作、Windows Defender SmartScreen for Microsoft ブラウザー、および Microsoft 以外のブラウザーやブラウザー外で行われた呼び出しに対するネットワーク保護を通じてブロックできます。
@@ -57,8 +58,10 @@ IPS、URL、またはドメインのインジケーターを作成する前に�
 
 > [!IMPORTANT]
 > インジケーター リストに追加できるのは外部の AP のみです。 インジケーターは、内部の IPs に対して作成できません。
-> Web 保護のシナリオでは、Microsoft Edge の組み込み機能を使用することをお勧めします。 Microsoft Edge はネットワーク保護 [を利用して](network-protection.md) ネットワーク トラフィックを検査し、TCP、HTTP、HTTPS (TLS) のブロックを許可します。 その他のすべてのプロセスでは、Web 保護シナリオでネットワーク保護を活用して検査と実施を行います。 <br>
-> 注:
+> Web 保護のシナリオでは、Microsoft Edge の組み込み機能を使用することをお勧めします。 Microsoft Edge はネットワーク保護 [を利用して](network-protection.md) ネットワーク トラフィックを検査し、TCP、HTTP、HTTPS (TLS) のブロックを許可します。 競合する URL インジケーター ポリシーがある場合は、長いパスが適用されます。 たとえば、URL インジケーター ポリシーは URL インジケーター `https:\\support.microsoft.com/en-us/office` ポリシーよりも優先されます `https:\\support.microsoft.com` 。
+
+> [!NOTE]
+> その他のすべてのプロセスでは、Web 保護シナリオでネットワーク保護を活用して検査と実施を行います。 
 > - IP は 3 つのプロトコルすべてでサポートされています
 > - サポートされている IP アドレスは 1 つのみです (CIDR ブロックまたは IP 範囲なし)
 > - 暗号化された URL (フル パス) は、ファースト パーティのブラウザーでのみブロックできます (Internet Explorer エッジ)

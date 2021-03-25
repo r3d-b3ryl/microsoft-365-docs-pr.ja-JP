@@ -18,16 +18,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43324b0f3a0d5d351d7164bb05415899bf7d181c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dc3d775aced2ea3da42312cbf5a4d5e5af9fae50
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062451"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198779"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Endpoint for Linux の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1012364-30121021123640"></a>101.23.64 (30.121021.12364.0)
+
+- マウント ポイント全体がウイルス対策除外リストに追加される状況のパフォーマンスが向上しました。 このバージョンより前のバージョンでは、マウント ポイントから発生したファイル アクティビティは、製品によって引き続き処理されました。 このバージョンでは、除外されたマウント ポイントのファイル アクティビティが抑制され、製品のパフォーマンスが向上します。
+- コマンド ライン ツールに、前回のオンデマンド スキャンに関する情報を表示する新しいオプションが追加されました。 最後のオンデマンド スキャンに関する情報を表示するには、次のコマンドを実行します。 `mdatp health --details antivirus`
+- バグ修正に関するその他&改善点
 
 ## <a name="1011853"></a>101.18.53
 

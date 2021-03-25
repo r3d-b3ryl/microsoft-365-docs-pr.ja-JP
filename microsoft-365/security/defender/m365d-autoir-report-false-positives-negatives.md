@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8658b08f0d3948d6d23486ec885486e8bbfdf273
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 851fd05f0fec4b8d113e515783092eed0114db0f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060721"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199115"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能で誤検知/負を処理する
 
@@ -48,7 +48,7 @@ ms.locfileid: "51060721"
 
 |アイテムが見つからないか、誤って検出された |サービス  |操作  |
 |---------|---------|---------|
-|- 電子メール メッセージ <br/>- メールの添付ファイル <br/>- 電子メール メッセージの URL<br/>- ファイル内の URL Officeファイル      |[Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)        |[疑わしいスパム、フィッシング、URL、ファイルをスキャンのために Microsoft に送信する](../defender-365-security/admin-submission.md)         |
+|- 電子メール メッセージ <br/>- メールの添付ファイル <br/>- 電子メール メッセージの URL<br/>- ファイル内の URL Officeファイル      |[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[疑わしいスパム、フィッシング、URL、ファイルをスキャンのために Microsoft に送信する](../office-365-security/admin-submission.md)         |
 |デバイス上のファイルまたはアプリ    |[Microsoft Defender for Endpoint](/windows/security/threat-protection)         |[マルウェア分析のために Microsoft にファイルを送信する](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>誤検知が繰り返されるのを防ぐためにアラートを調整する

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 25f1a177571862e92c502b584bbd51801141069a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8940d1dd370f804f8539bf4e753b1112d3c8d3bf
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068660"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198199"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -58,8 +58,8 @@ ms.locfileid: "51068660"
 ## <a name="supported-event-types"></a>サポートされているイベントの種類
 次の表は、次の値でイベントを `ActionType` キャプチャします。
 
-- **手動修復** – 管理者は、ユーザー メールボックスに配信された後、電子メール メッセージに対して手動でアクションを実行しました。 これには、脅威エクスプローラーを通 [じて手動](../defender-365-security/threat-explorer.md) で実行されるアクションや、自動調査と応答 [(AIR) アクションの承認が含まれます](m365d-autoir-actions.md)。
-- **フィッシング ZAP** – 配信後にフィッシング メールに対してゼロ時間自動削除 [(ZAP)](../defender-365-security/zero-hour-auto-purge.md) がアクションを実行しました。
+- **手動修復** – 管理者は、ユーザー メールボックスに配信された後、電子メール メッセージに対して手動でアクションを実行しました。 これには、脅威エクスプローラーを通 [じて手動](../office-365-security/threat-explorer.md) で実行されるアクションや、自動調査と応答 [(AIR) アクションの承認が含まれます](m365d-autoir-actions.md)。
+- **フィッシング ZAP** – 配信後にフィッシング メールに対してゼロ時間自動削除 [(ZAP)](../office-365-security/zero-hour-auto-purge.md) がアクションを実行しました。
 - **マルウェア ZAP** – 配信後にマルウェアを含む電子メール メッセージが検出された場合、ゼロ時間自動削除 (ZAP) がアクションを実行しました。
 
 ## <a name="related-topics"></a>関連項目

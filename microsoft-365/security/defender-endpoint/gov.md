@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 31928deddc2a504cc0b6c91af287e4977791c920
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1fd128a9b734606039438db1f6d9fbc36e93a3b9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065868"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199015"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府機関のお客様向けエンドポイント向け Microsoft Defender
 
@@ -76,25 +76,25 @@ DoD (PREVIEW) | https://securitycenter.microsoft.us
 OS のバージョン | GCC | GCC High | DoD (PREVIEW)
 :---|:---|:---|:---
 Windows 10 バージョン 20H2 [(KB4586853 )](https://support.microsoft.com/help/4586853) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
-Windows 10 バージョン 2004 [(KB4586853 )](https://support.microsoft.com/help/4586853) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows 10 バージョン 1909 [(KB4586819](https://support.microsoft.com/help/4586819)) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows 10 バージョン 1903 [(KB4586819](https://support.microsoft.com/help/4586819)) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows 10 バージョン 1809 [(KB4586839](https://support.microsoft.com/help/4586839)) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows 10 バージョン 1803 [(KB4598245 )](https://support.microsoft.com/help/4598245) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows 10 バージョン 1709 | ![いいえ](/security/defender-endpoint/images/svg/check-no)<br>注: サポートされません | ![は ](/security/defender-endpoint/images/svg/check-yes) い [KB4499147](https://support.microsoft.com/help/4499147)<br>注: [非推奨 、](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください | ![いいえ](/security/defender-endpoint/images/svg/check-no)<br>注: サポートされません
-Windows 10 バージョン 1703 以前 | ![いいえ](/security/defender-endpoint/images/svg/check-no)<br>注: サポートされません | ![いいえ](/security/defender-endpoint/images/svg/check-no)<br>注: サポートされません | ![いいえ](/security/defender-endpoint/images/svg/check-no)<br>注: サポートされません
-Windows Server 2019 [(KB4586839](https://support.microsoft.com/help/4586839)を使用) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2016 | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2012 R2 | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2008 R2 SP1 | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows 8.1 Enterprise | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows 8 Pro | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows 7 SP1エンタープライズ | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows 7 SP1 Pro | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Linux | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中
-macOS | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中
-Android | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて
-iOS | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて
+Windows 10 バージョン 2004 [(KB4586853 )](https://support.microsoft.com/help/4586853) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 10 バージョン 1909 [(KB4586819](https://support.microsoft.com/help/4586819)) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 10 バージョン 1903 [(KB4586819](https://support.microsoft.com/help/4586819)) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 10 バージョン 1809 [(KB4586839](https://support.microsoft.com/help/4586839)) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 10 バージョン 1803 [(KB4598245 )](https://support.microsoft.com/help/4598245) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 10 バージョン 1709 | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません | ![は ](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147)<br>注: [非推奨 、](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません
+Windows 10 バージョン 1703 以前 | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません
+Windows Server 2019 [(KB4586839](https://support.microsoft.com/help/4586839)を使用) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows Server 2016 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 8.1 Enterprise | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 8 Pro | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 7 SP1エンタープライズ | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 7 SP1 Pro | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Linux | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
+macOS | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
+Android | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
+iOS | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
 
 > [!NOTE]
 > パッチが指定されている場合、Defender for Endpoint を正しい環境に構成するには、デバイスオンボーディングの前に展開する必要があります。
@@ -107,9 +107,9 @@ Azure Defender for Servers を使用する場合は、次の [OS バージョン
 
 OS のバージョン | GCC | GCC High | DoD (PREVIEW)
 :---|:---|:---|:---
-Windows Server 2016 | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2012 R2 | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2008 R2 SP1 | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
+Windows Server 2016 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
 
 <br>
 
@@ -147,24 +147,24 @@ Defender for Endpoint は、商用サービスと完全なパリティを持つ�
 
 フィーチャー名 | GCC | GCC High | DoD (PREVIEW)
 :---|:---|:---|:---
-自動調査と修復: ライブ応答 | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-自動調査と修復: 365 Officeへの応答 | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて
-メール通知 | ![いいえ](/security/defender-endpoint/images/svg/check-no) ロール アウト | ![いいえ](/security/defender-endpoint/images/svg/check-no) ロール アウト | ![いいえ](/security/defender-endpoint/images/svg/check-no) ロール アウト
-評価ラボ | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-管理と API: デバイスの正常性とコンプライアンス レポート | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-管理と API: サードパーティ製品との統合 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中
-管理と API: ストリーミング API | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中
-管理と API: 脅威保護レポート | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-脅威&の管理 | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-脅威の分析 | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Web コンテンツ のフィルター処理 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中
-統合: Azure Sentinel | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中
-統合: Microsoft Cloud App Security | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて
-統合: Microsoft コンプライアンス マネージャー | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて
-統合: Microsoft Defender for Identity | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて
-統合: Microsoft Defender for Office 365 | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて
-統合: Microsoft Endpoint DLP | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて
-統合: Microsoft Intune | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中
-統合: Microsoft Power Automate & Azure Logic Apps | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中 | ![いいえ](/security/defender-endpoint/images/svg/check-no) 開発中
-統合: Skype for Business / Teams | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes) | ![はい](/security/defender-endpoint/images/svg/check-yes)
-Microsoft 脅威エキスパート | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて | ![いいえ](/security/defender-endpoint/images/svg/check-no) エンジニアリング バックログについて
+自動調査と修復: ライブ応答 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+自動調査と修復: 365 Officeへの応答 | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
+メール通知 | ![いいえ](images/svg/check-no.svg) ロール アウト | ![いいえ](images/svg/check-no.svg) ロール アウト | ![いいえ](images/svg/check-no.svg) ロール アウト
+評価ラボ | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+管理と API: デバイスの正常性とコンプライアンス レポート | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+管理と API: サードパーティ製品との統合 | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
+管理と API: ストリーミング API | ![はい](images/svg/check-yes.svg) | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
+管理と API: 脅威保護レポート | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+脅威&の管理 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+脅威の分析 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Web コンテンツ のフィルター処理 | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
+統合: Azure Sentinel | ![はい](images/svg/check-yes.svg) | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
+統合: Microsoft Cloud App Security | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
+統合: Microsoft コンプライアンス マネージャー | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
+統合: Microsoft Defender for Identity | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
+統合: Microsoft Defender for Office 365 | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
+統合: Microsoft Endpoint DLP | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
+統合: Microsoft Intune | ![はい](images/svg/check-yes.svg) | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
+統合: Microsoft Power Automate & Azure Logic Apps | ![はい](images/svg/check-yes.svg) | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
+統合: Skype for Business / Teams | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Microsoft 脅威エキスパート | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて

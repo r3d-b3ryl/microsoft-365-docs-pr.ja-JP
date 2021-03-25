@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Microsoft Defender Antivirus が、ウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威から Windows デバイスを保護する方法について説明します。
-ms.openlocfilehash: 5fe55817018eeae49e6e41c95d93006b6f05ece0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7c5d000e2a8c30e17d1f890cef69fe88beed75bb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052220"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198365"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策によって検出された脅威
 
@@ -89,4 +89,4 @@ Microsoft Defender Antivirus によって脅威が検出されると、次のこ
 [Windows セキュリティ アプリから Microsoft Defender ウイルス対策を有効](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) にし、使用する方法 (記事)\
 [グループ ポリシーを使用して Microsoft Defender ウイルス対策を](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) 有効にする方法 (記事)\
 [ウイルス対策定義を更新する方法](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (記事)\
-[分析のためにマルウェアとマルウェア以外のマルウェアを Microsoft に送信する](/microsoft-365/security/defender-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) 方法 (記事)
+[分析のためにマルウェアとマルウェア以外のマルウェアを Microsoft に送信する](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) 方法 (記事)
