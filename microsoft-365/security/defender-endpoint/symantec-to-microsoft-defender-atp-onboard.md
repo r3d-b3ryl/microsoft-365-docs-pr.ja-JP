@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 95b2e4bfc0eca58d6c71670b21ded81affcc219f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cc005c559e0f91f1c5888f8d7e4e7a2a420894db
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185505"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218702"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Symantec から移行する - フェーズ 3: オンボードから Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185505"
 || |*お前はここにいる!* |
 
 
-**シマンテックからエンドポイント用 Microsoft Defender への移行 [のフェーズ](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)3 へようこそ**。 この移行フェーズには、次の手順が含まれます。
+**シマンテックからエンドポイント用 Microsoft Defender への移行 [のフェーズ](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)3 へようこそ**。 この移行フェーズには、次の手順が含まれます。
 
 1. [デバイスを Microsoft Defender for Endpoint にオンボードします](#onboard-devices-to-microsoft-defender-for-endpoint)。
 2. [検出テストを実行します](#run-a-detection-test)。
@@ -105,6 +105,6 @@ Symantec をアンインストールしたので、次の手順では、Microsof
 
 ## <a name="next-steps"></a>次の手順
 
-**おめでとう** ございます! Symantec から [Microsoft Defender for Endpoint への移行が完了しました](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)。 
+**おめでとう** ございます! Symantec から [Microsoft Defender for Endpoint への移行が完了しました](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)。 
 - Microsoft Defender[セキュリティ センター ()](security-operations-dashboard.md)のセキュリティ操作ダッシュボードにアクセスします [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
 - [Microsoft Defender for Endpoint の管理、移行後](manage-atp-post-migration.md)。
