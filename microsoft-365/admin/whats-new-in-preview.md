@@ -21,12 +21,12 @@ description: Microsoft 365 管理センター - 今月追加された機能に�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b670c6a333485bc3a19ae14b8e7c71f08181cac5
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215578"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222005"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -37,7 +37,7 @@ ms.locfileid: "51215578"
 
 ::: moniker-end
 
-[Microsoft 365](microsoft-365-admin-center-preview.md)管理センターに継続的に新機能を追加し、学習した問題を修正し、フィードバックに基づいて変更を加えます。 以下を見て、今日利用可能な機能を確認してください。 一部の機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリース [に自分自身を追加してみてください](manage/release-options-in-office-365.md)。
+[Microsoft 365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)管理センターに継続的に新機能を追加し、学習した問題を修正し、フィードバックに基づいて変更を加えます。 以下を見て、今日利用可能な機能を確認してください。 一部の機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリース [に自分自身を追加してみてください](manage/release-options-in-office-365.md)。
 
 他の Microsoft クラウド サービスの新機能を知りたい場合は、次の手順を実行します。
 

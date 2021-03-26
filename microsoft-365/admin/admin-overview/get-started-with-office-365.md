@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: コンピューター、電話、タブレットで Microsoft 365 をセットアップして使用する方法について説明します。
-ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74821886832e699a90d9a54a9b8c7ce9a8cfab75
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906290"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222029"
 ---
 # <a name="get-started"></a>作業の開始
 
@@ -60,7 +60,7 @@ ms.locfileid: "50906290"
   
 - [管理者向けトレーニング](../index.yml): 管理者向け無料のオンライン クラスへのリンクを取得します。
     
-- [管理者ヘルプ](./admin-overview.md): トップ タスク、管理ツールの概要、および問題のトラブルシューティングに関する情報を取得します。
+- [管理者ヘルプ](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview): トップ タスク、管理ツールの概要、および問題のトラブルシューティングに関する情報を取得します。
     
 - [サポートへの問い合わせ - 管理者向けヘルプ](../contact-support-for-business-products.md) : お問い合わせ、オンライン要求の開き方、またはコミュニティのサポートをお願いします。 
     

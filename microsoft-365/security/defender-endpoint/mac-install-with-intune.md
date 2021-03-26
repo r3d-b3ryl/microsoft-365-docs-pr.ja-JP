@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199539"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222515"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac の Intune ベースの展開
 
@@ -136,8 +136,6 @@ Microsoft Defender セキュリティ センターからインストールパッ
 標準のポータル サイトインストールを超えて Mac デバイスに対する特別なプロビジョニング [は必要ない](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)。
 
 1. デバイスの管理を確認します。
-
-    ![デバイス管理のスクリーンショットを確認する](./images/mdatp-3-confirmdevicemgmt.png)
 
     [ **システム環境設定を開く]** を選択し、一 **覧で [管理プロファイル** ] を探し、[ **承認...] を選択します**。管理プロファイルが [確認済み] **と表示されます**。
 

@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: '概要: PowerShell for Microsoft 365 を使用して、Microsoft 365 管理センターで作成できないレポートを作成します。'
-ms.openlocfilehash: 12cba74d114ea03804741335bd34ece403926033
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dc183ae8a315bf788befc85474d0647802ac91ee
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924698"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222781"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>PowerShell を使用して Microsoft 365 のレポートを作成する
 
@@ -33,7 +33,7 @@ Microsoft 365 管理センターでは、さまざまなレポートを利用で
   
 - PowerShell for Microsoft 365 を使用したレポート作成の開始:
     
-  - [Microsoft 365 で PowerShell を使用する理由](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
+  - [Microsoft 365 で PowerShell を使用する理由](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - ユーザー アカウントおよびライセンスのレポート:

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b9ce376736e5f00ee0f6a4f308d783e75052357
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 97a64c8537ff2a6f9948ed6ed056b8aa7379ce69
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163301"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222337"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>SIEM ツールへの検出のプル
 
@@ -53,7 +53,7 @@ Defender for Endpoint は現在、専用の SIEM 統合モデルを通じて、�
 
 - [Defender for Endpoint で SIEM 統合を有効にする](enable-siem-integration.md)
 - サポートされている SIEM ツールを構成します。
-     - [エンドポイント検出用の Defender をプルする HP ArcSight の構成](configure-arcsight.md)
+     - [エンドポイント検出用の Defender をプルする Micro Focus ArcSight の構成](configure-arcsight.md)
      - エンドポイント検出用 Defender をプルする IBM QRadar を構成する 詳細については [、「IBM Knowledge Center」を参照してください](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)。
 
-検出 API で公開されているフィールドの一覧の詳細については [、「Defender for Endpoint Detection fields」を参照してください](api-portal-mapping.md)。
+検出 API で公開されているフィールドの一覧の詳細については、「Defender for Endpoint Detection [fields」を参照してください](api-portal-mapping.md)。

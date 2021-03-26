@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターからの集中展開に関するよくある質問に対する回答を確認します。
-ms.openlocfilehash: 9f4841508701d4dd5878e99fcc51a436bc5824e2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915472"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221837"
 ---
 # <a name="centralized-deployment-faq"></a>一元展開に関する FAQ
 
@@ -72,7 +72,7 @@ Office 365 管理者が Office アドイン (Word、Excel、PowerPoint、およ�
 
 はい。 管理者は、管理者が展開した LOB アドインのメタデータ変更をサポートするために、新しいマニフェスト ファイルをアップロードできます。アドインは、次にアプリケーションを起動Office更新します。 Web アプリケーションはいつでも変更できます。  
  
-詳細については [、「line-of-business アドイン」を参照してください](./manage-addins-in-the-admin-center.md#more-about-office-add-ins-security)。  
+詳細については [、「line-of-business アドイン」を参照してください](./manage-addins-in-the-admin-center.md)。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>管理者はアドインをオフにできますか?  
 

@@ -2,8 +2,8 @@
 title: Microsoft 365 管理センター - 概要
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,18 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターの詳細について説明します。
-ms.openlocfilehash: b936a42629086c8674bd2d89454e98e387b15efc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423037"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221763"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
 Microsoft 365 管理センターは、クラウドでビジネスを管理する場所です。 ユーザーの追加と削除、ライセンスの変更、パスワードのリセットなどのタスクを実行できます。 
+
+セキュリティやデバイス管理などの専門的なワークスペースを使用すると、きめ細かな制御を行えます。 管理センターの機能の詳細については、この記事の「セキュリティ、デバイス管理 [、Exchange](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) などの特定の種類の IT ロールと他のワークスペースについて」を参照してください。
 
 Microsoft 365 管理センターにアクセスするには、[admin.microsoft.com] に移動するか、既にサインインしている場合はアプリ 起動ツールを選択し、[管理] を選択 **します**。 [](https://admin.microsoft.com)
 
@@ -51,3 +53,112 @@ Microsoft 365 管理センターにアクセスするには、[admin.microsoft.c
 いつでもサポートが必要な場合は、[ヘルプが必要] **を選択します**。 質問を入力し、表示されるリンクを確認します。 ここで回答が表示されていない場合は、[サポートに問い合わせ] を選択 **して** サービス要求を開きます。 
 
 課金、パスワード、ユーザー、および管理者の管理の詳細については、このコースの他のレッスンを参照してください。
+
+## <a name="who-is-an-admin"></a>管理者は誰ですか? 
+
+既定では、Microsoft 365 for business サブスクリプションに登録して購入するユーザーは、管理者のアクセス許可を取得します。 そのユーザーは、組織の Microsoft 365 の管理に役立つ管理者アクセス許可を他のユーザーに割り当てできます。
+
+"このページにアクセスしたり、このアクションを実行したりするためのアクセス許可はありません"というメッセージが表示された場合は、管理者ではありません。
+<br><br>    
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
+  
+### <a name="who-has-admin-permissions-in-my-business"></a>社内の管理者アカウントをお持ちの場合
+<a name="bkmk_admin"> </a>
+
+パスワードのリセット、アカウントの削除などのタスクを実行するために管理者が必要な場合の問い合わせ先を次に示します。
+  
+- **大学と学校**:学校の技術サポート チームに問い合わせます。 通常、学校のサイトにリンクが掲載されています。 小規模な学校では、管理者のアクセス許可を持つ少数の個人しかいない場合があります。 
+    
+- **大企業**:社内のヘルプ デスク/技術サポートに問い合わせます。 
+    
+- **中小企業**:事業主または共同所有者に問い合わせます。多くの場合、業務に関するすべてのコンピューターの保守を担当している IT コンサルタントに管理者アクセス許可を付与しています。 
+  
+仕事や学校で誰に連絡して助けを求めるか分からない場合は、ユーザー アカウントとパスワードを与えた人に問い合わせしてみてください。
+
+> [!NOTE]
+> 対象のリリース管理者は、最初に新機能にアクセスできます。 新機能は、後ですべての管理者にロールアウトされます。 つまり、管理センターが表示されないか、ヘルプ記事で説明されているのと異なって見える可能性があります。 新機能を最初に確認するには、以下の「管理センターに参加する」を参照してください。 
+
+## <a name="turn-on-targeted-release"></a>対象指定リリースを有効にする
+
+1. [admin.microsoft.com](https://admin.microsoft.com) にサインインしてナビゲーション ウィンドウに移動し、[**設定**] \> [**組織プロファイルの設定**] の順に選択します。
+
+2. [**リリースの設定**] カードに移動し、[**編集**] を選択します。 
+    
+3. [**全員へ対象指定リリース**] または [**選択したユーザーへ対象指定リリース**] を選択します。 [選択したユーザーへ対象指定リリース] を選択した場合は、選択したユーザーのリストに管理者アカウント (または、組織が参加させたいすべての管理者) を追加する必要があります。
+    
+## <a name="admin-center-feedback"></a>管理センターのフィードバック
+
+管理センターでは、すべてのページの下部にある [ヘルプが必要ですか **]** ボタンの横にある [フィードバックを提供する] を選択することで、エクスペリエンスに関する Microsoft のフィードバックを提供できます。 気に入った点や改善できると思われる点をぜひお知らせください。 また、全体的な印象や新しくリリースされた特定の機能に関するご意見を集めるための、ポップアップ ウィンドウでのアンケートがときどき表示されることがあります。 さらに、この記事の最後にある [**この情報は役に立ちましたか?**] を選択する方法でも、フィードバックを送信できます。
+
+## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
+ここで質問に対する回答が得られなかった場合は、 このページの **下部** にある [フィードバック] セクションに移動し、質問をします。 
+  
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Microsoft 365 のどのプランを試用または購入できますか?
+
+Microsoft 365 は、Office 365、Windows 10、Enterprise Mobility + Security が含まれ、すべてのユーザーがクリエイティブかつ安全に共同作業を行えるようにする完全なインテリジェント ソリューションです。 管理センターでは、次の Microsoft 365 サブスクリプションを試用または購入できます。
+  
+- Microsoft 365 for business
+- Microsoft 365 Enterprise E3
+- Microsoft 365 Enterprise E5
+    
+詳細については、「[Microsoft 365 サブスクリプションを試用または購入する](../commerce/try-or-buy-microsoft-365.md)」を参照してください。
+
+### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>バグを見つけた場合、または機能の強化をリクエストする場合は、 どのように Microsoft に連絡すればよいですか?
+
+Microsoft ではいつでもユーザーからのご意見をお待ちしております。 バグの報告やフィードバックの送信をしていただくことで、Microsoft 365 管理センターの改善に役立ちます。 フィードバックを送信するには、ページ下部にある [**フィードバック**] ボタンを選択し、フォームを使用してご意見をお聞かせください。 コメントに関して Microsoft 365 管理センター チームからの連絡をご希望される場合は、チェックボックスをオンにし、お客様のメール アドレスを確認してください。 すべてのフィードバックに折り返しご連絡することはできませんが、できるだけご連絡を差し上げるようにいたします。 
+  
+管理センター以外にも、Microsoft の UserVoice フォーラムからもフィードバックを送信できます。 このページを使用して機能に関する提案を行うと、それに対して他のフォーラム ユーザーが投票を行えます: [新しい管理センター用の UserVoice フォーラム](https://go.microsoft.com/fwlink/?linkid=2024994)。
+
+### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>特定の種類の IT 担当者役割とセキュリティ、デバイス管理、Exchange などの他のワークスペースについて説明してください。
+
+Microsoft 365 管理センターは、Microsoft 365 を管理するすべてのチームおよび役割に共通の入り口です。 操作、情報、およびコントロールは、管理者や役割ごとにカスタマイズされています。 また、専門的なワークスペースでは、込み入った細かな制御を行えます。 これらの専門的なワークスペースには、SharePoint、Teams &amp; Skype、Exchange、セキュリティ、コンプライアンス、デバイス管理、および Azure Active Directory が含まれます。 専門的なワークスペースは、Microsoft 365 管理センター ([https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)) のナビゲーション ウィンドウで見つけることができます。
+
+### <a name="what-language-options-are-available-the-admin-center"></a>管理センターで使用できる言語オプションは何ですか?
+
+Microsoft 365 管理センターは、40 の言語に完全にローカライズされています。
+
+|言語 |Locale |
+|---------|---------|
+|アラビア語 | ar |
+|ブルガリア語 | bg |
+|カタルニア語 | ca |
+|チェコ語 | cs |
+|デンマーク語 | da |
+|ドイツ語 | de |
+|ギリシャ語 | el |
+|スペイン語 | es |
+|英語 | en |
+|エストニア語 | et |
+|バスク語 | eu |
+|フィンランド語 | fi |
+|フランス語 | fr |
+|ガリシア語 | gl |
+|ヘブライ語 | he |
+|クロアチア語 | hr |
+|ハンガリー語 | hu |
+|インドネシア語  | id |
+|イタリア語 | it |
+|日本語 | ja |
+|韓国語 | ko |
+|リトアニア語 | lt |
+|ラトビア語 | lv |
+|オランダ語 | nl |
+|ノルウェー語 | no |
+|ポーランド語 | pl |
+|ポルトガル語 (ブラジル) | pt |
+|ポルトガル語 (ポルトガル) | pt-pt |
+|ルーマニア語 | ro |
+|ロシア語 | ru |
+|スロバキア語 | sk |
+|スロベニア語 | sl |
+|セルビア語 (キリル)  | sr-cyrl |
+|Serbian Latin | sr |
+|スウェーデン語 | sv |
+|タイ語 | th |
+|トルコ語 | tr |
+|ウクライナ語 | uk |
+|ベトナム語 | vi |
+|Chinese Simplified | zh-hans |
+|Chinese Traditional | zh-hant |
+  

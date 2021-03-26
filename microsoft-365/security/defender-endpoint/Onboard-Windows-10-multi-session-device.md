@@ -16,37 +16,35 @@ ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 30e664aed74ed01944c67b139e6268fc3340ada4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061820"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222613"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows 仮想デスクトップのオンボード Windows 10 マルチセッション デバイス 
 読み取り 6 分 
 
 適用対象: 
 - Windows 仮想デスクトップで実行されている Windows 10 マルチセッション (WVD) 
-> [!IMPORTANT]
-> Microsoft Defender for Endpoint へようこそ。Microsoft Defender for Endpoint の新しい名前。 Microsoft Defender for Office 365 と他の更新プログラムに関する詳細情報は、こちらをご覧ください。. 製品およびドキュメントの名前は、近いうちに更新される予定です。
 
 > [!WARNING]
 > Microsoft Defender for Endpoint for Windows Virtual Desktop マルチセッション シナリオのサポートは現在プレビュー中で、ホスト/VM ごとに最大 25 の同時セッションが制限されています。 ただし、Windows 仮想デスクトップ上の単一セッション シナリオは完全にサポートされています。
 
-Microsoft Defender for Endpoint では、両方の VDI セッションと Windows 仮想デスクトップ セッションの監視がサポートされています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Windows Virtual Desktop セッションを実装する必要がある場合があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
+Microsoft Defender for Endpoint では、VDI セッションと Windows 仮想デスクトップ セッションの両方の監視がサポートされています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Windows Virtual Desktop セッションを実装する必要がある場合があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
  ## <a name="before-you-begin"></a>はじめに
-非永続的な [VDI の考慮事項について理解してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 [Windows Virtual Desktop には](https://docs.microsoft.com/azure/virtual-desktop/overview)永続性以外のオプションは用意されませんが、新しいホストのプロビジョニングやマシンの再展開に使用できる、ゴールデン Windows イメージを使用する方法が用意されています。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
+非永続的な [VDI の考慮事項について理解してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 [Windows Virtual Desktop には](https://docs.microsoft.com/azure/virtual-desktop/overview)永続性以外のオプションは用意されませんが、新しいホストの準備やマシンの再展開に使用できる、ゴールデン Windows イメージを使用する方法が用意されています。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
 
 > [!NOTE]
 > オンボーディング方法の選択に応じて、デバイスは次のように Microsoft Defender for Endpoint ポータルに表示されます。 
 > - 仮想デスクトップごとに 1 つのエントリ 
 > - 仮想デスクトップごとに複数のエントリ 
 
-Microsoft では、仮想デスクトップごとに 1 つのエントリとして Windows Virtual Desktop をオンボーディングをお勧めします。 これにより、Microsoft Defender Endpoint ポータルでの調査エクスペリエンスが、コンピューター名に基づいて 1 つのデバイスのコンテキスト内に確実に表示されます。 WVD ホストを頻繁に削除して再展開する組織では、同じコンピューターの複数のオブジェクトが Microsoft Defender for Endpoint ポータルに作成されるのを防ぐため、このメソッドの使用を強く検討する必要があります。 これは、インシデントを調査するときに混乱を招く可能性があります。 テスト環境または非揮発性環境の場合は、別の方法で選択できます。 
+Microsoft では、仮想デスクトップごとに 1 つのエントリとして Windows Virtual Desktop をオンボーディングをお勧めします。 これにより、Microsoft Defender Endpoint ポータルでの調査エクスペリエンスが、コンピューター名に基づいて 1 つのデバイスのコンテキスト内に確実に表示されます。 WVD ホストを頻繁に削除および再展開する組織では、同じコンピューターの複数のオブジェクトが Microsoft Defender for Endpoint ポータルに作成されるのを防ぐため、このメソッドの使用を強く検討する必要があります。 これは、インシデントを調査するときに混乱を招く可能性があります。 テスト環境または非揮発性環境の場合は、別の方法で選択できます。 
 
-Microsoft では、Microsoft Defender for Endpoint オンボーディング スクリプトを WVD ゴールデン イメージに追加する方法をお勧めします。 この方法で、このオンボーディング スクリプトが最初の起動時にすぐに実行されるのを確認できます。 これは、WVD ゴールデン イメージからプロビジョニングされた WVD マシンすべてで最初に起動するスタートアップ スクリプトとして実行されます。 ただし、変更せずにギャラリー イメージのいずれかを使用している場合は、スクリプトを共有の場所に配置し、ローカル またはドメイン グループ ポリシーから呼び出します。 
+Microsoft では、Microsoft Defender for Endpoint オンボーディング スクリプトを WVD ゴールデン イメージに追加する方法をお勧めします。 この方法で、このオンボーディング スクリプトが最初の起動時にすぐに実行されるのを確認できます。 これは、WVD ゴールデン イメージからプロビジョニングされたすべての WVD コンピューターで最初に起動スクリプトとして実行されます。 ただし、変更せずにギャラリー イメージのいずれかを使用している場合は、スクリプトを共有の場所に配置し、ローカル またはドメイン グループ ポリシーから呼び出します。 
 
 > [!NOTE]
 > WVD ゴールデン イメージ上の VDI オンボーディングスタートアップ スクリプトの配置と構成によって、WVD の起動時に実行されるスタートアップ スクリプトとして構成されます。 実際の WVD ゴールデン イメージのオンボードは推奨されません。 もう 1 つの考慮事項は、スクリプトの実行に使用されるメソッドです。 セッションを受信できるコンピューターとサービスへのデバイスオンボーディングの時間を短縮するには、スタートアップ/プロビジョニング プロセスの早い段階で実行する必要があります。 以下のシナリオ 1 & 2 では、これを考慮します。
@@ -103,7 +101,7 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>ゴールデン イメージを作成する際のコンピューターのタグ付け 
 
-オンボーディングの一環として、Microsoft セキュリティ センターで WVD マシンを簡単に区別できるコンピューター タグの設定を検討する必要があります。 詳細については、「レジストリ キーの [値を設定してデバイス タグを追加する」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value)。 
+オンボーディングの一環として、Microsoft セキュリティ センターで WVD マシンを容易に区別できるよう、コンピューター タグの設定を検討する必要があります。 詳細については、「レジストリ キーの [値を設定してデバイス タグを追加する」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value)。 
 
 #### <a name="other-recommended-configuration-settings"></a>その他の推奨構成設定 
 

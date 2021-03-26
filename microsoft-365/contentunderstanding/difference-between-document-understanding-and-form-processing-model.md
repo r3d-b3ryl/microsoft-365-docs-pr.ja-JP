@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: ドキュメント理解とフォーム処理モデルの主な違いについて説明します
-ms.openlocfilehash: 9640b028e4b5a9cbd914b183e61de9b8a7ba00bc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f12cc46e1ffcbc610f50ba327e22ad46a2591521
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905792"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222271"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>ドキュメント理解とフォーム処理モデルの違い 
 
@@ -34,7 +34,7 @@ Microsoft SharePoint Syntex のコンテンツを理解すると、SharePoint �
 どちらのモデルも一般的に同じ目的で使用されますが、以下に示す主な違いは、どちらを使用できるかに影響します。
 
 > [!NOTE]
-> フォーム処理とドキュメント理解シナリオの例の詳細については、「[SharePoint Syntex の導入: 概要](./adoption-getstarted.md#form-processing-scenario-example)」を参照してください。
+> フォーム処理とドキュメント理解シナリオの例の詳細については、「[SharePoint Syntex の導入: 概要](./adoption-getstarted.md)」を参照してください。
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>構造化コンテンツと非構造化コンテンツおよび半構造化コンテンツ

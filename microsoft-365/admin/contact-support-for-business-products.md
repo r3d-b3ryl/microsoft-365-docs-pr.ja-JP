@@ -22,12 +22,12 @@ search.appverid:
 description: 国または地域別にリストされている電話番号を使用するか、サービス リクエストをオンラインで送信して、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e355a07584d45a85c363956d1bb4e45eae708be
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907040"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222041"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる方法 - 管理者ヘルプ
 
@@ -42,7 +42,7 @@ ms.locfileid: "50907040"
 
 オンラインでサービス リクエストを開始すると時間を節約できます。 ここでは、解決策の検索やテクニカル サポーへの連絡をお手伝いします。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーが管理者ではないことを意味します。その場合は、「[Who has admin permissions in my business? (社内の管理者アクセス許可の所有者)](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーが管理者ではないことを意味します。その場合は、「[Who has admin permissions in my business? (社内の管理者アクセス許可の所有者)](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)」を参照してください。
 
 2. [**ヘルプが必要ですか?**] ボタンを選択します。 
 

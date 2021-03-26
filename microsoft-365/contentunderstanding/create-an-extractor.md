@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でエクストラクターを作成する方法について説明します。
-ms.openlocfilehash: 8218d04d2f5cb4e8f8f67bdcd744b7f1a4a4d18a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e95df00c2601bccc5041f96c745048adc8dfc91f
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905814"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222793"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でエクストラクターを作成する
 
@@ -91,7 +91,7 @@ ms.locfileid: "50905814"
 
 ### <a name="use-the-explanation-library"></a>説明ライブラリ
 
-日付などのアイテムの説明を作成するには、[説明ライブラリ を使用する](./explanation-types-overview.md#use-the-explanation-library)方があらゆるバリエーションを手動で入力するより簡単です。 説明ライブラリは、あらかじめ用意されている語句やパターンの説明のセットです。 ライブラリでは、日付、電話番号、郵便番号などの一般的な語句またはパターンリストのすべての書式設定を行います。 
+日付などのアイテムの説明を作成するには、[説明ライブラリ を使用する](./explanation-types-overview.md)方があらゆるバリエーションを手動で入力するより簡単です。 説明ライブラリは、あらかじめ用意されている語句やパターンの説明のセットです。 ライブラリでは、日付、電話番号、郵便番号などの一般的な語句またはパターンリストのすべての書式設定を行います。 
 
 *サービスの開始日* サンプルでは、説明ライブラリの *日付* についての既成の説明を使用する方が効率的です。
 

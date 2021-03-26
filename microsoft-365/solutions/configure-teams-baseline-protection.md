@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: cd5a88069b9947bd4dcb01f6ca76620bb8ed9a52
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200295"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222745"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "51200295"
 |:------|:-----------|
 |SPO、OneDrive、Teams 用の安全な添付ファイル機能|[添付ファイル保護](../security/office-365-security/safe-attachments.md)<br>[Defender for Office 365 - SharePoint、OneDrive、Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
 |安全なドキュメント|[Microsoft Defender for Office 365 の安全なドキュメント](../security/office-365-security/safe-docs.md)|
-|Teams 用の安全なリンク|[Teams での Office 365 の安全なリンク](../security/office-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[リンク保護](../security/office-365-security/safe-links.md)|
+|Teams 用の安全なリンク|[Teams での Office 365 の安全なリンク](../security/office-365-security/safe-links.md)<br>[リンク保護](../security/office-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Teams ゲスト共有
 

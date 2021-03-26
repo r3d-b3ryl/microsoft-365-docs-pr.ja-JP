@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c94b387bbd73e2c4f9b3de243131ae023ddb4cb8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200019"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222527"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降の 1 つのアーキテクトの視点
 
@@ -231,7 +231,7 @@ Azure AD [PIM について](/azure/active-directory/privileged-identity-manageme
 
 ある意味では、これらは Exchange 役割グループ モデルの進化です。 ただし、Exchange Online には独自の役割 [グループ管理](/exchange/permissions-exo) インターフェイスがあります。 Exchange Online の一部の役割グループは、Azure AD またはセキュリティ & コンプライアンス センターからロックおよび管理されますが、同じ名前または類似の名前を持ち、Exchange Online で管理される役割グループもあります (混乱を招く)。 Exchange 管理のスコープが必要ない限り、Exchange Online ユーザー インターフェイスの使用を避けることをお勧めします。
 
-カスタム ロールを作成できない。 役割は、Microsoft によって作成されたサービスによって定義され、新しいサービスが導入されるにつれて増加します。 これは概念的には、Azure [のアプリケーションで定義](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) されたロールと似AD。 新しいサービスを有効にすると、多くの場合、新しい役割グループを作成して、アクセス権を付与または委任する必要があります (インサイダー リスク [管理など](../compliance/insider-risk-management-configure.md?view=o365-worldwide#step-1-required-enable-permissions-for-insider-risk-management))。
+カスタム ロールを作成できない。 役割は、Microsoft によって作成されたサービスによって定義され、新しいサービスが導入されるにつれて増加します。 これは概念的には、Azure [のアプリケーションで定義](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) されたロールと似AD。 新しいサービスを有効にすると、多くの場合、新しい役割グループを作成して、アクセス権を付与または委任する必要があります (インサイダー リスク [管理など](../compliance/insider-risk-management-configure.md?view=o365-worldwide))。
 
 また、これらの役割グループには直接メンバーシップが必要であり、Azure の役割グループADできません。 残念ながら、現在、これらの役割グループは、AZURE および PIM ADされていません。 Azure ADロールと同様に、API や Saviynt のようなパートナー ガバナンス製品を使用してこれらの管理を推奨する傾向があります。
 

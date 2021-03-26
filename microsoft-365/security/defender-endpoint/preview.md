@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 370048586c5ddfa6fa9ea265e929608357adf5df
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aab7f12b250c1415ad65a9e706edf6b68050b2f
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186883"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222657"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
@@ -40,9 +40,6 @@ ms.locfileid: "51186883"
 
 
 Defender for Endpoint サービスは常に更新され、新機能の強化と機能が含まれます。
-
-> [!TIP]
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink)
 
 Defender for Endpoint プレビュー リリースの新機能について説明し、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみてください。
 
@@ -68,15 +65,6 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 - [Web コンテンツ フィルター](web-content-filtering.md) <br> Web コンテンツ フィルターは、Microsoft Defender for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
 
 - [デバイスの正常性とコンプライアンス レポート](machine-reports.md) <br/> デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。
-
-- [情報保護](information-protection-in-windows-overview.md)<BR>
-情報保護は、Microsoft 365 Enterprise スイートの不可欠な部分で、機密性の高いデータを安全に保ちながら、職場での生産性を実現するためのインテリジェントな保護を提供します。 Microsoft Defender for Endpoint は Microsoft Threat Protection にシームレスに統合され、Windows デバイスに完全かつ包括的なデータ損失防止 (DLP) ソリューションを提供します。
-
-    >[!NOTE]
-    >部分的に Windows 10 バージョン 1809 から利用できます。
-
-- [オンボード Windows Server 2019](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender for Endpoint では、Windows Server 2019 のサポートが追加されました。 Windows 10 クライアント デバイスで使用できるのと同じ方法で、Windows Server 2019 をオンボードできます。
-
 
 > [!TIP] 
 > Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

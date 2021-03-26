@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理センターを使用して、クラウドでの組織の設定、ユーザーおよびサブスクリプションの管理を行います。 管理者アクセス許可によるアカウントへのサインインから始めます。
-ms.openlocfilehash: 7d326629de4859819784af015292f99b044658d0
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: ef606565d7cad94bc0c7ff81630ef6c2fe8a6fc4
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215494"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222089"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
@@ -71,7 +71,7 @@ ms.locfileid: "51215494"
 
 ## <a name="admin-center-features-and-settings"></a>管理センターの機能と設定
 
-管理センター の左側のナビゲーションに表示される機能と設定を以下に列挙します。 管理タスクの詳細については、「[管理者ヘルプ](./admin-overview.md)」を参照してください。
+管理センター の左側のナビゲーションに表示される機能と設定を以下に列挙します。 管理タスクの詳細については、「[管理者ヘルプ](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)」を参照してください。
   
 |**メニュー**|**目的**|
 |-----|-----|

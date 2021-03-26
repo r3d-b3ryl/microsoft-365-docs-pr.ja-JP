@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP 展開のセットアップ
-description: Microsoft Defender ATP の展開をセットアップする方法について説明します。
+title: Microsoft Defender for Endpoint の展開をセットアップする
+description: Microsoft Defender for Endpoint の展開をセットアップする方法について説明します。
 keywords: 展開、セットアップ、ライセンス検証、テナント構成、ネットワーク構成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186151"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222443"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開をセットアップする
 
@@ -98,7 +98,7 @@ Microsoft Defender Security Center に初めてアクセスする場合は、最
 
 4. 基本設定を設定します。
 
-   **データストレージの場所** - これを正しく設定することが重要です。 顧客が主にホストする場所 (米国、EU、英国) を決定します。 この設定後に場所を変更することはできません。また、Microsoft は指定した位置情報からデータを転送できません。 
+   **データストレージの場所** - これを正しく設定することが重要です。 顧客が主にホストする場所 (米国、EU、英国) を決定します。 この設定後は場所を変更できないので、Microsoft は指定した位置情報からデータを転送しない。 
 
     **データ保持** - 既定値は 6 か月です。
 
@@ -124,10 +124,7 @@ Microsoft Defender ATP センサーでは、センサー データをレポー�
 
 -   Web プロキシ自動検出プロトコル (WPAD)
 
-透過プロキシまたは WPAD がネットワーク トポロジに実装されている場合、特別な構成設定は不要です。 プロキシ内の Microsoft Defender for Endpoint URL 除外の詳細については、このドキュメントの「URL 許可リストまたは Microsoft Docs の付録」セクションを [参照してください](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)。
-
-> [!NOTE]
-> 許可する必要がある URL の詳細な一覧については、この記事を [参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
+透過プロキシまたは WPAD がネットワーク トポロジに実装されている場合、特別な構成設定は不要です。 プロキシの Microsoft Defender for Endpoint URL 除外の詳細については[](production-deployment.md#proxy-service-urls)、このドキュメントの「URL の許可リスト」または「デバイス プロキシとインターネット接続の設定の構成」の「プロキシ サービス URL」セクションを[参照](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)してください。
 
 **手動の静的プロキシの構成:**
 
@@ -200,31 +197,34 @@ v20 を含む URL は、Windows 10 バージョン 1803 以降のデバイスが
 
 プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合、Microsoft Defender for Endpoint センサーがシステム コンテキストから接続している場合は、一覧の URL で匿名トラフィックが許可されている必要があります。
 
-次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールを作成する必要がある場合があります。
+次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールの作成が必要な場合があります。
 
 |**ドメインリストのスプレッドシート**|**説明**|
 |:-----|:-----|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-###  <a name="microsoft-defender-for-endpoint-service-backend-ip-range"></a>Microsoft Defender for Endpoint Service バックエンド IP 範囲
+###  <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Microsoft Defender for Endpoint Service バックエンド IP 範囲
 
-ネットワーク デバイスが前のセクションに記載されている URL をサポートしない場合は、次の情報を使用できます。
+ネットワーク デバイスが DNS ベースのルールをサポートしない場合は、代わりに IP 範囲を使用します。
 
-Defender for Endpoint は Azure クラウド上に構築され、次の地域に展開されます。
+Defender for Endpoint は Azure クラウドに構築され、次の地域に展開されます。
 
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
+- AzureCloud.eastus
+- AzureCloud.eastus2
+- AzureCloud.westcentralus
+- AzureCloud.northeurope
+- AzureCloud.westeurope
+- AzureCloud.uksouth
+- AzureCloud.ukwest
 
-Azure IP 範囲は、Microsoft [Azure データセンター IP 範囲で確認できます](https://www.microsoft.com/en-us/download/details.aspx?id=41653)。
+Azure IP 範囲とサービス タグ – パブリック クラウドで Azure IP 範囲 [を確認できます](https://www.microsoft.com/download/details.aspx?id=56519)。
 
 > [!NOTE]
-> クラウドベースのソリューションとして、IP アドレス範囲が変更される可能性があります。 DNS 解決設定に移動する必要があります。
+> クラウドベースのソリューションとして、IP アドレス範囲が変更される可能性があります。 DNS ベースのルールに移動する必要があります。
+
+> [!NOTE]
+> 米国政府機関のお客様は、「Defender for Endpoint for US Government」ページの対応 [するセクションを参照](gov.md#service-backend-ip-ranges) してください。
 
 ## <a name="next-step"></a>次の手順
 
