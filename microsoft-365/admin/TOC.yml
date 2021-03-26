@@ -58,8 +58,6 @@
       items:
         - name: 管理センターの概要
           href: admin-overview/about-the-admin-center.md
-        - name: 新しい管理センターについて
-          href: microsoft-365-admin-center-preview.md
         - name: 管理者ロールについて
           href: add-users/about-admin-roles.md
         - name: Admin モバイル アプリ

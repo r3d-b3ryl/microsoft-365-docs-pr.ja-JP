@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: この記事では、Microsoft クラウドで顧客データを安全に保つために使用されるさまざまな形式の暗号化の概要について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8e184fbe722de674db6f9bcc47e2ab5aa0723d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4a351215b7773574d5932b936e30c5d5ca7aa116
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926224"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222282"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud での暗号化
 
@@ -57,7 +57,7 @@ Microsoft は、クラウド サービスで使用される基になる暗号化
 - [Azure での暗号化](office-365-azure-encryption.md)
 - [BitLocker とDistributed Key Manager (DKM) による暗号化](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 - [Office 365 でのサービスの暗号化](office-365-service-encryption.md)
-- [Office Skype for Business、OneDrive for Business、SharePoint Online、Exchange Online の 365 暗号化](./n/compliance/assurance/assurance-encryption-for-microsoft-365-services)
+- [Office Skype for Business、OneDrive for Business、SharePoint Online、Exchange Online の 365 暗号化](https://docs.microsoft.com/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
 - [転送中データの暗号化](/compliance/assurance/assurance-encryption-in-transit)
 - [顧客により管理される暗号化機能](office-365-customer-managed-encryption-features.md)
 - [暗号化のリスクと保護](office-365-encryption-risks-and-protections.md)
