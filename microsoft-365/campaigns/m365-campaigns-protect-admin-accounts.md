@@ -2,10 +2,10 @@
 title: 管理者アカウントを保護する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理者アカウントを設定して保護する方法について学習します。
-ms.openlocfilehash: ec5b971ba4f1fdc8834e10ddf90ff219f763f805
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912176"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398243"
 ---
 # <a name="protect-your-administrator-accounts"></a>管理者アカウントを保護する
 
@@ -36,13 +36,13 @@ ms.locfileid: "50912176"
 - 緊急事態に備え、追加の管理者アカウントを設定する方法。
 - これらのアカウントを保護する方法。
 
-Microsoft 365 にサインアップして情報を入力すると、自動的にグローバル管理者になります。グローバル管理者は、Microsoft 管理センターのユーザー アカウントと他のすべての設定を最終的に制御しますが、アクセスの程度が異なるさまざまな種類の管理アカウントがあります。 管理 [役割の種類ごとに異](/office365/admin/add-users/about-admin-roles) なるアクセス レベルの詳細については、管理者の役割に関するページを参照してください。
+Microsoft 365 にサインアップして情報を入力すると、自動的にグローバル管理者になります。グローバル管理者は、Microsoft 管理センターのユーザー アカウントと他のすべての設定を最終的に制御できますが、アクセスの程度が異なるさまざまな種類の管理アカウントがあります。 管理 [役割の種類ごとに異](/office365/admin/add-users/about-admin-roles) なるアクセス レベルの詳細については、管理者の役割に関するページを参照してください。
 
 ## <a name="create-additional-admin-accounts"></a>追加の管理者アカウントを作成する
 
 管理アカウントは管理にのみ使用します。 管理者は、Office アプリを定期的に使用するための個別のユーザー アカウントを持ち、アカウントやデバイスの管理や他の管理機能の作業に必要な場合にのみ管理アカウントを使用する必要があります。 また、管理者アカウントから Microsoft 365 ライセンスを削除して、支払いを行う必要がなさる必要がなさるのも良い考えです。
 
-管理者に別の信頼できる従業員へのアクセス権を付与するために、少なくとも 1 つの追加のグローバル管理者アカウントを設定する必要があります。 ユーザー管理用に個別の管理者アカウントを作成することもできます (この役割はユーザー管理 **管理者と呼ばれています**)。 詳細については、「管理者の役割 [」を参照してください](/office365/admin/add-users/about-admin-roles)。
+別の信頼できる従業員に管理者アクセス権を与えるために、少なくとも 1 つの追加のグローバル管理者アカウントをセットアップする必要があります。 ユーザー管理用に個別の管理者アカウントを作成することもできます (この役割はユーザー管理 **管理者と呼ばれています**)。 詳細については、「管理者の役割 [」を参照してください](/office365/admin/add-users/about-admin-roles)。
 
 追加の管理者アカウントを作成するには、次の方法を実行します。
 
@@ -76,12 +76,11 @@ Microsoft 365 にサインアップして情報を入力すると、自動的に
 3. [役割] **セクションを展開** し、[ユーザー] **(管理アクセスなし) を選択します**。
 4. [製品 **ライセンス] セクション** で **、Microsoft 365 Business** のセレクターを [オン] に移動 **します**。
 
-## <a name="register-each-of-these-accounts-for-multi-factor-authentication"></a>多要素認証用にこれらの各アカウントを登録する
+## <a name="turn-on-security-defaults"></a>セキュリティの既定値を有効にする
 
-これらのアカウントが多要素認証 [を使用している必要があります](m365-campaigns-multifactor-authenication.md)。
+セキュリティの既定値は、Microsoft が組織の代わりに管理する構成済みのセキュリティ設定を提供することで、組織を ID 関連の攻撃から保護するのに役立ちます。 これらの設定には、すべての管理者およびユーザー アカウントに対して多要素認証 (MFA) を有効にする機能が含まれます。 セキュリティの既定値の詳細と有効にする方法については、「セキュリティの既定値を有効にする [」を参照してください](m365-campaigns-conditional-access.md)。
 
 ## <a name="additional-recommendations"></a>その他の推奨事項
 
-- 管理者アカウントも多要素認証用に設定してください。 これを行う方法については、「条件付きアクセス ポリシーの構成 [」で説明します](m365-campaigns-conditional-access.md)。
 - 管理者アカウントを使用する前に、関連のないブラウザー セッションとアプリ (個人用メール アカウントを含む) を閉じます。 プライベート ウィンドウまたはシークレット ブラウザー ウィンドウでも使用できます。
 - 管理タスクを完了した後は、必ずブラウザー セッションからサインアウトしてください。

@@ -1,11 +1,11 @@
 ---
-title: 非管理対象 Windows 10 PC と Mac の保護
+title: 非管理対象の Windows 10 PC と Mac を保護する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,17 +23,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 で管理されていないデバイスや持ち込みデバイス (BYOD) を保護します。
-ms.openlocfilehash: 5c27b29b5bb4fb445655e671d8c654ad8e9abc6b
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+description: Microsoft 365 で管理されていないデバイスまたは持ち込み専用デバイス (BYOD) を保護します。
+ms.openlocfilehash: 430f5446f86c26cb1f0fd1c7f34613cddec473b2
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044386"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398255"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>非管理対象 Windows 10 PC と Mac の保護
+# <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>非管理対象の Windows 10 PC と Mac を保護する
 
-Windows 10 PC と Mac を Microsoft Intune に登録することで管理できます。これにより、環境内のデータにアクセスする前に、Windows 10 PC と Mac が正常で安全な状態を確保できます。 ただし、多くのキャンペーンや小規模企業には、組織で管理されない独自のデバイス (BYOD) を持ち込むスタッフが含まれます。 これらの非管理対象 PC と Mac の場合は、この記事を使用して、最小セキュリティ機能が構成されていることを確認します。
+Windows 10 PC と Mac は、Microsoft Intune に登録することで管理できます。これにより、環境内のデータにアクセスする前に、Windows 10 PC と Mac が正常で安全な状態を確保できます。 ただし、多くのキャンペーンや小規模企業には、組織によって管理されない独自のデバイス (BYOD) を持ち込むスタッフが含まれます。 これらの管理されていない PC および Mac については、この記事を使用して、最小限のセキュリティ機能が構成されていることを確認します。
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -52,29 +52,29 @@ Windows 10 PC または Mac が組織によって管理されていない場合�
 
 **デバイスの暗号化を有効にする**<p>
 
-デバイスの暗号化は、さまざまな Windows デバイスで利用できます。また、データを暗号化することでデータを保護するのに役立ちます。 デバイスの暗号化を有効にした場合、承認された個人のみがデバイスとデータにアクセスできます。 手順 [については、「デバイスの暗号化を有効にする](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 」をご覧ください。
+デバイスの暗号化は、幅広い Windows デバイスで利用できます。データを暗号化することでデータを保護するのに役立ちます。 デバイスの暗号化を有効にした場合、承認された個人のみがデバイスとデータにアクセスできます。 手順 [については、「デバイスの暗号化を有効](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) にする」を参照してください。
 
- デバイスでデバイスの暗号化を利用できない場合は、代わりに標準的な [BitLocker 暗号化を](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 有効にできます。 (BitLocker は Windows 10 Home エディションでは使用できません)。 
+ デバイスでデバイスの暗号化を利用できない場合は、代わりに標準の [BitLocker 暗号化を](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 有効にできます。 (BitLocker は Windows 10 Home Edition では使用できません)。 
 
 **Windows セキュリティでデバイスを保護する**<p>
-Windows 10 をお持ちの場合は、Windows セキュリティによる最新のウイルス対策保護が提供されます。 Windows 10 を初めて起動すると、Windows セキュリティが有効にされ、マルウェア (悪意のあるソフトウェア)、ウイルス、セキュリティの脅威をスキャンして PC を保護できます。 Windows セキュリティでは、リアルタイム保護を使用して、PC でダウンロードまたは実行したすべてをスキャンします。
+Windows 10 をお持ちの場合は、Windows セキュリティを使用して最新のウイルス対策保護を受け取る必要があります。 Windows 10 を初めて起動すると、Windows セキュリティが有効で、マルウェア (悪意のあるソフトウェア)、ウイルス、セキュリティの脅威をスキャンして PC の保護を積極的に支援します。 Windows Security は、リアルタイム保護を使用して、PC でダウンロードまたは実行するすべてをスキャンします。
 
 Windows Update では、自動的に Windows セキュリティの更新プログラムをダウンロードして、PC の安全を確保し、脅威から保護します。
 
-以前のバージョンの Windows を使用している場合はMicrosoft Security Essentials Windows セキュリティに移行すると良い方法です。 詳しくは [、Windows セキュリティを使ったデバイスの保護に関するヘルプをご覧ください](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)。
+以前のバージョンの Windows を使用し、Microsoft Security Essentialsしている場合は、Windows セキュリティに移行すると良い方法です。 詳細については [、「Windows セキュリティでデバイスを保護する」を参照してください](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)。
 
 **Windows ファイアウォールを有効にする**<p>
-別のファイアウォールが有効になっている場合でも、常に Windows ファイアウォールを実行する必要があります。 Windows ファイアウォールをオフにした場合、デバイス (およびネットワークがある場合) が未承認のアクセスに対して脆弱になる可能性があります。 手順 [については、「Windows ファイアウォールをオンまたはオフにする](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) 」を参照してください。
+別のファイアウォールを有効にしている場合でも、常に Windows ファイアウォールを実行する必要があります。 Windows ファイアウォールをオフにすると、デバイス (およびネットワークがある場合) が、承認されていないアクセスに対してより脆弱になる可能性があります。 手順 [については、「Windows ファイアウォールを有効または無効にする](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) 」を参照してください。
 
 ## <a name="mac"></a>[ Mac ](#tab/Mac)
 
 **FileVault を使用して Mac ディスクを暗号化する**<p>
-ディスク暗号化は、デバイスの紛失時や盗難時にデータを保護します。 FileVault のフル ディスク暗号化は、スタートアップ ディスク上の情報への不正なアクセスを防ぐのに役立ちます。 手順 [については、「FileVault を使って Mac の](https://support.apple.com/HT204837) スタートアップ ディスクを暗号化する」をご覧ください。
+ディスク暗号化は、デバイスが紛失または盗難に遭った場合にデータを保護します。 FileVault のフル ディスク暗号化は、起動ディスク上の情報への不正アクセスを防ぐのに役立ちます。 手順 [については、「FileVault を使用して](https://support.apple.com/HT204837) Mac 上の起動ディスクを暗号化する」を参照してください。
 
 **マルウェアから Mac を保護する**<p>
-Microsoft では、Mac に信頼性の高いウイルス対策ソフトウェアをインストールして使用してください。 選択肢の一覧については、次の記事を参照してください: [最適な Mac ウイルス対策 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
+Microsoft では、Mac に信頼性の高いウイルス対策ソフトウェアをインストールして使用する必要があります。 選択肢の一覧については、次の記事を参照してください。 [ベスト Mac ウイルス対策 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
 
-また、信頼できるソースからのみソフトウェアを使用することで、マルウェアのリスクを軽減できます。 [セキュリティとプライバシー] &設定では、Mac にインストールされているソフトウェアのソースを指定できます。 詳しくは、「Mac を [マルウェアから保護する」をご覧ください](https://support.apple.com/kb/PH25087)。
+また、信頼できるソースからのみソフトウェアを使用することで、マルウェアのリスクを軽減できます。 [セキュリティとプライバシー] &設定を使用すると、Mac にインストールされているソフトウェアのソースを指定できます。 詳細については、「Mac を [マルウェアから保護する」を参照してください](https://support.apple.com/kb/PH25087)。
 
 **ファイアウォール保護を有効にする**<p>
-ファイアウォール設定を使用して、インターネットまたはネットワークに接続するときに、他のコンピューターによって開始された不要な連絡先から Mac を保護します。 この保護を使用しない場合、Mac は承認されていないアクセスに対してより脆弱になる可能性があります。 手順 [については、アプリケーション ファイアウォール](https://support.apple.com/HT201642) に関するページを参照してください。
+ファイアウォールの設定を使用して、インターネットやネットワークに接続するときに他のコンピューターによって開始された不要な連絡先から Mac を保護します。 この保護がない場合、Mac は不正アクセスに対してより脆弱になる可能性があります。 手順 [については、アプリケーション ファイアウォール](https://support.apple.com/HT201642) に関するページを参照してください。

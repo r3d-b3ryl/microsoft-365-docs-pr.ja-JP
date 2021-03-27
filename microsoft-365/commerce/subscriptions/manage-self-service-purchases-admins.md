@@ -10,26 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーが行ったセルフサービス購入を管理する方法について学習できます。
-ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920182"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398183"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 管理者は、組織内のユーザーが行ったセルフサービス購入を確認できます。 セルフサービス購入ごとに、製品名、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーが表示されます。 組織で必要な場合は、PowerShell を介して製品ごとにセルフサービス購入をオフにできます。 セルフサービス購入または一般購入で購入した製品と同じデータ管理ポリシーとアクセス ポリシーがあります。
 
@@ -37,13 +35,49 @@ ms.locfileid: "50920182"
 
 ## <a name="view-self-service-subscriptions"></a>セルフサービス サブスクリプションの表示
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+
+::: moniker-end
+
 2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
 3. サブスクリプションの詳細を表示するには、一覧から 1 つを選択します。
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>セルフサービス購入サブスクリプションのライセンスを持っているユーザーを表示する
 
-1. 管理センターで、[課金ライセンス]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">に移動</a>します。
+> [!NOTE]
+> 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てまたは割り当て解除できない。 セルフサービス購入 [サブスクリプションを引き](#take-over-a-self-service-purchase-subscription)継ぎ、ライセンスの割り当てまたは割り当てを解除できます。
+
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金ライセンス] **ページ** > **に移動** します。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金ライセンス] **ページ** > **に移動** します。
+
+::: moniker-end
+
 2. フィルター アイコンを選択し、[セルフサービス] **を選択します**。
 3. 製品を選択すると、ユーザーに割り当てられたライセンスが表示されます。
     > [!NOTE]
@@ -67,7 +101,24 @@ ms.locfileid: "50920182"
 
 セルフサービス購入に割り当てられたユーザーに対して、既存のライセンスを割り当てたり、既存の契約を通じて追加のサブスクリプションを購入することができます。 これらの一般購入ライセンスを割り当てると、購入者に既存のサブスクリプションのキャンセルを要求できます。
 
-1. 管理センターで、[課金の購入サービス **]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">ページに移動</a> します。
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、[課金の購入サービス **]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">ページに移動</a> します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金の購入サービス **]** > **ページに移動** します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金の購入サービス **]** > **ページに移動** します。
+
+::: moniker-end
+
 2. 購入する製品を見つけて選択し、[購入] を **選択します**。
 3. 残りの手順を完了して購入を完了します。
 4. 「セルフサービス購入サブスクリプション[](#view-who-has-licenses-for-a-self-service-purchase-subscription)のライセンスを持っているユーザーを表示する」の手順に従って、次の手順で参照するユーザーのリストをエクスポートします。
@@ -88,7 +139,24 @@ ms.locfileid: "50920182"
 > [!NOTE]
 > ユーザーを移動するサブスクリプションで移動するユーザーごとに使用可能なライセンスが必要です。
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+
+::: moniker-end
+
 2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
 3. 引き継ぐサブスクリプションを選択します。
 4. [サブスクリプションの詳細] ページの [ **サブスクリプションと設定** ] セクションで、[このサブスクリプションを制御 **する] を選択します**。
@@ -102,7 +170,24 @@ ms.locfileid: "50920182"
 
 セルフサービス購入サブスクリプションをキャンセルすると、ライセンスを持つユーザーは製品へのアクセスを失います。 最初にセルフサービス購入サブスクリプションを購入したユーザーは、サブスクリプションがキャンセルされたというメールを受信します。
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+
+::: moniker-end
+
 2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
 3. キャンセルするサブスクリプションを選択します。
 4. [サブスクリプションの詳細] ページの [ **サブスクリプションと設定** ] セクションで、[このサブスクリプションを制御 **する] を選択します**。

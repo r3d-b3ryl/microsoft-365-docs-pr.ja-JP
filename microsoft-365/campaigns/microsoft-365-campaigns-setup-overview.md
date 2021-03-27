@@ -2,11 +2,11 @@
 title: Microsoft 365 Business Premium のセットアップの概要
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
 ms.date: 9/20/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: キャンペーンなどのビジネス向け Microsoft 365 Business Premium のセットアップの概要
-ms.openlocfilehash: fee9391d7a6375f14f0e38f8c6a349fe4ec11619
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e612771ca4e967462f190c41396f16c6faf9d195
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912108"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398267"
 ---
 # <a name="set-up-microsoft-365"></a>Microsoft 365 のセットアップ
 
@@ -61,7 +61,7 @@ ms.locfileid: "50912108"
 主要なスタッフの場合は、保護を強化するために [管理対象デバイス](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) を使用することをお勧めします。 すべてのデバイスで、多要素認証を [セットアップする必要があります](m365-campaigns-multifactor-authenication.md)。
 3. すべてのユーザーは、フィッシングなどの攻撃について学習して、自分自身とキャンペーンを保護する方法 [を学ぶ必要があります](m365-campaigns-phishing-and-attacks.md)。 この [インフォグラフィックは](m365-campaigns-protect-campaign-infographic.md) 、ユーザーがオンラインの脅威からキャンペーンを保護する方法を理解するのにも役立ちます。
 
-## <a name="contact-support"></a>サポートに連絡する
+## <a name="contact-support"></a>サポートに連絡
 
  **サポートに連絡する場合:**
   
