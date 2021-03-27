@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac のパフォーマンスの問題のトラブルシューティング
-description: Microsoft Defender ATP for Mac のパフォーマンスの問題をトラブルシューティングします。
+title: Microsoft Defender for Endpoint for Mac のパフォーマンスの問題のトラブルシューティング
+description: Microsoft Defender for Endpoint for Mac のパフォーマンスの問題をトラブルシューティングします。
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,52 +18,52 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6dd5681dfafd069a4c52f72e1dc1733584283a2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87190d9e0bb62d42642374bd7c9f6f3acad3c80a
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185911"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379388"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a><span data-ttu-id="6f07c-104">Microsoft Defender for Endpoint for Mac のパフォーマンスの問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="6f07c-104">Troubleshoot performance issues for Microsoft Defender for Endpoint for Mac</span></span>
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a><span data-ttu-id="402d1-104">Microsoft Defender for Endpoint for Mac のパフォーマンスの問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="402d1-104">Troubleshoot performance issues for Microsoft Defender for Endpoint for Mac</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="6f07c-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="6f07c-105">**Applies to:**</span></span>
+<span data-ttu-id="402d1-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="402d1-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="6f07c-106">Microsoft Defender for Endpoint for Mac</span><span class="sxs-lookup"><span data-stu-id="6f07c-106">Microsoft Defender for Endpoint for Mac</span></span>](microsoft-defender-endpoint-mac.md)
-- [<span data-ttu-id="6f07c-107">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="6f07c-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="6f07c-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6f07c-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="402d1-106">Microsoft Defender for Endpoint for Mac</span><span class="sxs-lookup"><span data-stu-id="402d1-106">Microsoft Defender for Endpoint for Mac</span></span>](microsoft-defender-endpoint-mac.md)
+- [<span data-ttu-id="402d1-107">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="402d1-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="402d1-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="402d1-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="6f07c-109">Microsoft Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="6f07c-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="6f07c-110">無料試用版にサインアップします。</span><span class="sxs-lookup"><span data-stu-id="6f07c-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="402d1-109">Microsoft Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="402d1-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="402d1-110">無料試用版にサインアップします。</span><span class="sxs-lookup"><span data-stu-id="402d1-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-<span data-ttu-id="6f07c-111">このトピックでは、Microsoft Defender for Endpoint for Mac に関連するパフォーマンスの問題を絞り込む一般的な手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="6f07c-111">This topic provides some general steps that can be used to narrow down performance issues related to Microsoft Defender for Endpoint for Mac.</span></span>
+<span data-ttu-id="402d1-111">このトピックでは、Microsoft Defender for Endpoint for Mac に関連するパフォーマンスの問題を絞り込む一般的な手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="402d1-111">This topic provides some general steps that can be used to narrow down performance issues related to Microsoft Defender for Endpoint for Mac.</span></span>
 
-<span data-ttu-id="6f07c-112">リアルタイム保護 (RTP) は、Microsoft Defender for Endpoint for Mac の機能であり、デバイスを継続的に監視し、脅威から保護します。</span><span class="sxs-lookup"><span data-stu-id="6f07c-112">Real-time protection (RTP) is a feature of Microsoft Defender for Endpoint for Mac that continuously monitors and protects your device against threats.</span></span> <span data-ttu-id="6f07c-113">ファイルとプロセスの監視、その他のヒューリスティックで構成されます。</span><span class="sxs-lookup"><span data-stu-id="6f07c-113">It consists of file and process monitoring and other heuristics.</span></span>
+<span data-ttu-id="402d1-112">リアルタイム保護 (RTP) は、Microsoft Defender for Endpoint for Mac の機能であり、デバイスを継続的に監視し、脅威から保護します。</span><span class="sxs-lookup"><span data-stu-id="402d1-112">Real-time protection (RTP) is a feature of Microsoft Defender for Endpoint for Mac that continuously monitors and protects your device against threats.</span></span> <span data-ttu-id="402d1-113">ファイルとプロセスの監視、その他のヒューリスティックで構成されます。</span><span class="sxs-lookup"><span data-stu-id="402d1-113">It consists of file and process monitoring and other heuristics.</span></span>
 
-<span data-ttu-id="6f07c-114">実行中のアプリケーションとデバイスの特性によっては、Microsoft Defender for Endpoint for Mac を実行するときに最適でないパフォーマンスが発生する場合があります。</span><span class="sxs-lookup"><span data-stu-id="6f07c-114">Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender for Endpoint for Mac.</span></span> <span data-ttu-id="6f07c-115">特に、短時間で多くのリソースにアクセスするアプリケーションまたはシステム プロセスは、Microsoft Defender for Endpoint for Mac のパフォーマンスの問題につながる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="6f07c-115">In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender for Endpoint for Mac.</span></span>
+<span data-ttu-id="402d1-114">実行中のアプリケーションとデバイスの特性によっては、Microsoft Defender for Endpoint for Mac を実行するときに最適でないパフォーマンスが発生する場合があります。</span><span class="sxs-lookup"><span data-stu-id="402d1-114">Depending on the applications that you're running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender for Endpoint for Mac.</span></span> <span data-ttu-id="402d1-115">特に、短時間で多くのリソースにアクセスするアプリケーションまたはシステム プロセスは、Microsoft Defender for Endpoint for Mac のパフォーマンスの問題につながる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="402d1-115">In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender for Endpoint for Mac.</span></span>
 
-<span data-ttu-id="6f07c-116">次の手順を使用して、これらの問題のトラブルシューティングと軽減を行います。</span><span class="sxs-lookup"><span data-stu-id="6f07c-116">The following steps can be used to troubleshoot and mitigate these issues:</span></span>
+<span data-ttu-id="402d1-116">次の手順を使用して、これらの問題のトラブルシューティングと軽減を行います。</span><span class="sxs-lookup"><span data-stu-id="402d1-116">The following steps can be used to troubleshoot and mitigate these issues:</span></span>
 
-1. <span data-ttu-id="6f07c-117">次のいずれかの方法を使用してリアルタイム保護を無効にし、パフォーマンスが向上するかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="6f07c-117">Disable real-time protection using one of the following methods and observe whether the performance improves.</span></span> <span data-ttu-id="6f07c-118">この方法は、Microsoft Defender for Endpoint for Mac がパフォーマンスの問題に貢献するかどうかを絞り込むのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="6f07c-118">This approach helps narrow down whether Microsoft Defender for Endpoint for Mac is contributing to the performance issues.</span></span>
+1. <span data-ttu-id="402d1-117">次のいずれかの方法を使用してリアルタイム保護を無効にし、パフォーマンスが向上するかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="402d1-117">Disable real-time protection using one of the following methods and observe whether the performance improves.</span></span> <span data-ttu-id="402d1-118">この方法は、Microsoft Defender for Endpoint for Mac がパフォーマンスの問題に貢献するかどうかを絞り込むのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="402d1-118">This approach helps narrow down whether Microsoft Defender for Endpoint for Mac is contributing to the performance issues.</span></span>
 
-    <span data-ttu-id="6f07c-119">デバイスが組織によって管理されていない場合は、次のいずれかのオプションを使用してリアルタイム保護を無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="6f07c-119">If your device is not managed by your organization, real-time protection can be disabled using one of the following options:</span></span>
+    <span data-ttu-id="402d1-119">デバイスが組織によって管理されていない場合は、次のいずれかのオプションを使用してリアルタイム保護を無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="402d1-119">If your device is not managed by your organization, real-time protection can be disabled using one of the following options:</span></span>
 
-    - <span data-ttu-id="6f07c-120">ユーザー インターフェイスから。</span><span class="sxs-lookup"><span data-stu-id="6f07c-120">From the user interface.</span></span> <span data-ttu-id="6f07c-121">Microsoft Defender for Endpoint for Mac を開き、[設定の管理] **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="6f07c-121">Open Microsoft Defender for Endpoint for Mac and navigate to **Manage settings**.</span></span>
+    - <span data-ttu-id="402d1-120">ユーザー インターフェイスから。</span><span class="sxs-lookup"><span data-stu-id="402d1-120">From the user interface.</span></span> <span data-ttu-id="402d1-121">Microsoft Defender for Endpoint for Mac を開き、[設定の管理] **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="402d1-121">Open Microsoft Defender for Endpoint for Mac and navigate to **Manage settings**.</span></span>
 
-      ![リアルタイム保護のスクリーンショットを管理する](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-36-rtp)
+      ![リアルタイム保護のスクリーンショットを管理する](images/mdatp-36-rtp.png)
 
-    - <span data-ttu-id="6f07c-123">ターミナルから。</span><span class="sxs-lookup"><span data-stu-id="6f07c-123">From the Terminal.</span></span> <span data-ttu-id="6f07c-124">セキュリティ上の目的で、この操作には昇格が必要です。</span><span class="sxs-lookup"><span data-stu-id="6f07c-124">For security purposes, this operation requires elevation.</span></span>
+    - <span data-ttu-id="402d1-123">ターミナルから。</span><span class="sxs-lookup"><span data-stu-id="402d1-123">From the Terminal.</span></span> <span data-ttu-id="402d1-124">セキュリティ上の目的で、この操作には昇格が必要です。</span><span class="sxs-lookup"><span data-stu-id="402d1-124">For security purposes, this operation requires elevation.</span></span>
 
       ```bash
       mdatp config real-time-protection --value disabled
       ```
 
-    <span data-ttu-id="6f07c-125">デバイスが組織によって管理されている場合は [、「Microsoft Defender for Endpoint for Mac](mac-preferences.md)の設定」の手順に従って、管理者がリアルタイム保護を無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="6f07c-125">If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender for Endpoint for Mac](mac-preferences.md).</span></span>
+    <span data-ttu-id="402d1-125">デバイスが組織によって管理されている場合は [、「Microsoft Defender for Endpoint for Mac](mac-preferences.md)の設定」の手順に従って、管理者がリアルタイム保護を無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="402d1-125">If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender for Endpoint for Mac](mac-preferences.md).</span></span>
 
-2. <span data-ttu-id="6f07c-126">Finder を開き、[アプリケーション ユーティリティ **]**  >  **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="6f07c-126">Open Finder and navigate to **Applications** > **Utilities**.</span></span> <span data-ttu-id="6f07c-127">[ **アクティビティ モニター] を** 開き、システムでリソースを使用しているアプリケーションを分析します。</span><span class="sxs-lookup"><span data-stu-id="6f07c-127">Open **Activity Monitor** and analyze which applications are using the resources on your system.</span></span> <span data-ttu-id="6f07c-128">一般的な例としては、ソフトウェアアップデータとコンパイラが含まれます。</span><span class="sxs-lookup"><span data-stu-id="6f07c-128">Typical examples include software updaters and compilers.</span></span>
+2. <span data-ttu-id="402d1-126">Finder を開き、[アプリケーション ユーティリティ **]**  >  **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="402d1-126">Open Finder and navigate to **Applications** > **Utilities**.</span></span> <span data-ttu-id="402d1-127">[ **アクティビティ モニター] を** 開き、システムでリソースを使用しているアプリケーションを分析します。</span><span class="sxs-lookup"><span data-stu-id="402d1-127">Open **Activity Monitor** and analyze which applications are using the resources on your system.</span></span> <span data-ttu-id="402d1-128">一般的な例としては、ソフトウェアアップデータとコンパイラが含まれます。</span><span class="sxs-lookup"><span data-stu-id="402d1-128">Typical examples include software updaters and compilers.</span></span>
 
-3. <span data-ttu-id="6f07c-129">パフォーマンスの問題に寄与するプロセスまたはディスクの場所の除外を使用して Microsoft Defender for Endpoint for Mac を構成し、リアルタイム保護を再び有効にしてください。</span><span class="sxs-lookup"><span data-stu-id="6f07c-129">Configure Microsoft Defender for Endpoint for Mac with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.</span></span>
+3. <span data-ttu-id="402d1-129">パフォーマンスの問題に寄与するプロセスまたはディスクの場所の除外を使用して Microsoft Defender for Endpoint for Mac を構成し、リアルタイム保護を再び有効にしてください。</span><span class="sxs-lookup"><span data-stu-id="402d1-129">Configure Microsoft Defender for Endpoint for Mac with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.</span></span>
 
-    <span data-ttu-id="6f07c-130">詳細 [については、「Configure and validate exclusions for Microsoft Defender for Endpoint for Mac」](mac-exclusions.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6f07c-130">See [Configure and validate exclusions for Microsoft Defender for Endpoint for Mac](mac-exclusions.md) for details.</span></span>
+    <span data-ttu-id="402d1-130">詳細 [については、「Configure and validate exclusions for Microsoft Defender for Endpoint for Mac」](mac-exclusions.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="402d1-130">See [Configure and validate exclusions for Microsoft Defender for Endpoint for Mac](mac-exclusions.md) for details.</span></span>

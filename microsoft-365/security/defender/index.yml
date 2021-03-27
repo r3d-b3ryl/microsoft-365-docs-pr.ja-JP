@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365 のセキュリティに関するドキュメント
-summary: Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明し、あらゆる攻撃から企業をより適切に保護できるようにします。
+title: Microsoft 365 Defender
+summary: Microsoft 365 Defender の堅牢なセキュリティ ソリューションについて説明します。
 metadata:
-  title: Microsoft 365 のセキュリティに関するドキュメント
-  description: Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明し、あらゆる攻撃から企業をより適切に保護できるようにします
+  title: Microsoft 365 Defender のドキュメント
+  description: Microsoft 365 Defender の堅牢なセキュリティ ソリューションについて説明します。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 1690dfc1c0a3a2afb32d4554ac4876c5f9928a2e
-  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.openlocfilehash: 4187cc69acba30ae5cbcad093d91ec291b42bca5
+  ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "51062019"
+  ms.lasthandoff: 03/26/2021
+  ms.locfileid: "51382497"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -28,3 +28,23 @@ landingContent:
       url: ../defender/microsoft-365-defender.md
     - text: Microsoft 365 セキュリティ センター
       url: ../defender/overview-security-center.md
+- title: Microsoft 365 セキュリティ センター
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft 365 セキュリティ センターの概要
+      url: overview-security-center.md
+    - text: Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
+      url: microsoft-365-security-center-mde.md
+    - text: Microsoft 365 セキュリティ センターの Microsoft Defender for Office 365
+      url: ../defender/microsoft-365-security-center-mdo.md
+- title: インシデントとアラートを管理する
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: インシデントを調査する
+      url: investigate-incidents.md
+    - text: 自動調査および対応
+      url: m365d-autoir.md
+    - text: 脅威を探す
+      url: advanced-hunting-overview.md
