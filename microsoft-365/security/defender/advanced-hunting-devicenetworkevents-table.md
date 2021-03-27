@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3e09ace7130e5a58d3c386a57951dbf2ea5f5f2a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ffa79ea7e3c75887531020e83d081ee3206d1a11
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063516"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382855"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -47,38 +47,45 @@ ms.locfileid: "51063516"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `DeviceId` | string | コンピューターの一意識別子 |
-| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `DeviceId` | 文字列 | コンピューターの一意識別子 |
+| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
 | `RemotePort` | int | 接続されているリモート デバイスの TCP ポート |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `LocalIP` | 文字列 | 通信中に使用されるローカル コンピューターに割り当てられた IP アドレス |
 | `LocalPort` | int | 通信中に使用されるローカル コンピューター上の TCP ポート |
-| `Protocol` | string | 通信中に使用されるプロトコル |
-| `LocalIPType` | string | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
-| `RemoteIPType` | string | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
-| `InitiatingProcessSHA1` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
-| `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `Protocol` | 文字列 | 通信中に使用されるプロトコル |
+| `LocalIPType` | 文字列 | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
+| `RemoteIPType` | 文字列 | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
+| `InitiatingProcessSHA1` | 文字列 | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
+| `InitiatingProcessSHA256` | 文字列 | イベントを開始したプロセス (イメージ ファイル) の SHA-256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `InitiatingProcessMD5` | 文字列型 | イベントを開始したプロセス (イメージ ファイル) の MD5 ハッシュ |
-| `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
+| `InitiatingProcessFileName` | 文字列 | イベントを開始したプロセスの名前 |
 | `InitiatingProcessFileSize` | long | イベントの処理を実行したファイルのサイズ |
+| `InitiatingProcessVersionInfoCompanyName` | 文字列 | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの会社名 |
+| `InitiatingProcessVersionInfoProductName` | 文字列 | イベントを担当するプロセス (イメージ ファイル) のバージョン情報からの製品名 |
+| `InitiatingProcessVersionInfoProductVersion` | 文字列 | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの製品バージョン |
+| `InitiatingProcessVersionInfoInternalFileName` | 文字列 | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの内部ファイル名 |
+| `InitiatingProcessVersionInfoOriginalFileName` | 文字列 | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの元のファイル名 |
+| `InitiatingProcessVersionInfoFileDescription` | 文字列 | イベントを担当するプロセス (イメージ ファイル) のバージョン情報の説明 |
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
-| `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
+| `InitiatingProcessCommandLine` | 文字列 | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
-| `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
-| `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
+| `InitiatingProcessFolderPath` | 文字列 | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
+| `InitiatingProcessParentFileName` | 文字列 | イベントを担当するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
-| `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
-| `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
-| `InitiatingProcessAccountSid` | string | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
-| `InitiatingProcessAccountUpn` | string | イベントを担当するプロセスを実行したアカウントのユーザー プリンシパル名 (UPN) |
-| `InitiatingProcessIntegrityLevel` | string | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
-| `InitiatingProcessTokenElevation` | string | イベントを開始したプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
+| `InitiatingProcessAccountDomain` | 文字列 | イベントを担当するプロセスを実行したアカウントのドメイン |
+| `InitiatingProcessAccountName` | 文字列 | イベントを担当するプロセスを実行したアカウントのユーザー名 |
+| `InitiatingProcessAccountSid` | 文字列 | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
+| `InitiatingProcessAccountUpn` | 文字列 | イベントを担当するプロセスを実行したアカウントのユーザー プリンシパル名 (UPN) |
+| `InitiatingProcessAccountObjectId` | 文字列 | Azure ADを実行したユーザー アカウントのオブジェクト ID を指定します。 |
+| `InitiatingProcessIntegrityLevel` | 文字列 | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
+| `InitiatingProcessTokenElevation` | 文字列 | イベントを開始したプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
-| `AppGuardContainerId` | string | ブラウザーのアクティビティを分離するために Application Guard が使用する仮想化コンテナーの識別子 |
-| `AdditionalFields` | string | JSON 配列形式のイベントに関する追加情報 |
+| `AppGuardContainerId` | 文字列 | ブラウザーのアクティビティを分離するために Application Guard が使用する仮想化コンテナーの識別子 |
+| `AdditionalFields` | 文字列 | JSON 配列形式のイベントに関する追加情報 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

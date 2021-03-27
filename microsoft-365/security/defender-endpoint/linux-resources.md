@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ab5400a197a1f0ac61c8b298a06165d217f44fd1
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187759"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394736"
 ---
 # <a name="resources"></a>リソース
 
@@ -105,6 +105,7 @@ Defender for Endpoint for Linux をアンインストールするには、いく
 |Group                 |シナリオ                                                |コマンド                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |構成         |リアルタイム保護のオン/オフ                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|構成         |動作監視のオン/オフを切り替えます                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
 |構成         |クラウド保護のオン/オフ                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |構成         |製品診断のオン/オフ                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |構成         |自動サンプル申請のオン/オフ                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |

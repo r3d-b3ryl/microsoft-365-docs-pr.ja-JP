@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c6afa48fcee80c0b8fb7ed0563264932566b6321
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185793"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379492"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -31,12 +31,10 @@ ms.locfileid: "51185793"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 サービスへのデバイスのオンボーディングには、いくつかの最小要件があります。 サービスにデバイスをオンボードするライセンス、ハードウェアとソフトウェアの要件、その他の構成設定について説明します。
-
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)。
 
 > [!TIP]
 > - Defender for Endpoint: Defender for Endpoint Tech Community の [最新の機能強化について説明します](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)。
@@ -80,7 +78,6 @@ Windows 10 商用エディションの比較の詳細な比較表については
 Defender for Endpoint へのアクセスはブラウザーを介して行われ、次のブラウザーをサポートします。
 
 - Microsoft Edge
-- Internet Explorerバージョン 11
 - Google Chrome
 
 > [!NOTE]
@@ -121,11 +118,12 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 ### <a name="other-supported-operating-systems"></a>その他のサポートされているオペレーティング システム
 - Android
+- iOS
 - Linux
 - macOS
 
 > [!NOTE]
-> 統合を機能するには、Defender for Endpoint と互換性のある Android と macOS の Linux ディストリビューションとバージョンを正確に知る必要があります。
+> 統合が機能するには、Defender for Endpoint と互換性がある Android、iOS、macOS の Linux ディストリビューションとバージョンを確認する必要があります。
 
 
 
@@ -164,7 +162,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
    ![diagtrack の sc クエリ コマンドの結果](images/windefatp-sc-qc-diagtrack.png)
 
 
-サービスが自動的に開始に設定されている場合は、START_TYPEに設定する必要 **AUTO_START。**
+サービスが自動的に開始に設定されている場合は、START_TYPEに設定する **必要AUTO_START。**
 
 
 **コマンド ラインを使用して、Windows 10 診断データ サービスを自動的に開始する設定を行います。**
@@ -203,11 +201,11 @@ Defender for Endpoint エージェントは、Microsoft Defender Antivirus が�
 
 Microsoft Defender ウイルス対策がアクティブなマルウェア対策であるかどうかを問う場合は、Defender for Endpoint デバイスでセキュリティ インテリジェンス更新プログラムを構成します。 詳細については [、「Manage Microsoft Defender Antivirus updates and apply baselines」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
 
-Microsoft Defender Antivirus が組織内のアクティブなマルウェア対策ではなく、Defender for Endpoint サービスを使用している場合、Microsoft Defender ウイルス対策はパッシブ モードになります。
+Microsoft Defender Antivirus が組織内のアクティブなマルウェア対策ではない場合、Defender for Endpoint サービスを使用すると、Microsoft Defender ウイルス対策はパッシブ モードになります。
 
 組織でグループ ポリシーなどの方法で Microsoft Defender Antivirus を無効にしている場合は、オンボードされているデバイスをこのグループ ポリシーから除外する必要があります。
 
-サーバーをオンボーディングしている場合、Microsoft Defender Antivirus がサーバー上のアクティブなマルウェア対策ではない場合、Microsoft Defender Antivirus はパッシブ モードで動作するように構成するか、アンインストールする必要があります。 構成はサーバーのバージョンに依存します。 詳細については [、「Microsoft Defender ウイルス対策の互換性」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)。
+サーバーをオンボーディングしている場合に、Microsoft Defender Antivirus がサーバー上のアクティブなマルウェア対策ではない場合は、パッシブ モードに切り替わるかアンインストールするように Microsoft Defender ウイルス対策を構成する必要があります。 構成はサーバーのバージョンに依存します。 詳細については [、「Microsoft Defender ウイルス対策の互換性」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)。
 
 > [!NOTE]
 > 通常のグループ ポリシーはタンパー プロテクションには適用されません。タンパー プロテクションがオンの場合、Microsoft Defender ウイルス対策設定の変更は無視されます。

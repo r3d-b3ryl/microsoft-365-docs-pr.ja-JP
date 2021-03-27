@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ce77d55ece955fbf97b5c9f32859514b55acb5a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb0cffb9716b2d0940e816dc69217486fd51a21d
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187651"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379335"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac の除外を構成および検証する
 
@@ -55,7 +55,7 @@ ms.locfileid: "51187651"
 除外 | 定義 | 例
 ---|---|---
 ファイル拡張子 | 拡張機能を持つすべてのファイル (コンピューター上の任意の場所) | `.test`
-ファイル | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+File | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 フォルダー | 指定したフォルダーの下のすべてのファイル (再帰的) | `/var/log/`<br/>`/var/*/`
 プロセス | 特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル | `/bin/cat`<br/>`cat`<br/>`c?t`
 
@@ -79,7 +79,7 @@ JAMF、Intune、または別の管理コンソールから除外を構成する�
 
 Defender for Endpoint アプリケーションを開き、次のスクリーンショットに示すように、[設定の追加と削除] の [除外の管理]  >  に移動します。
 
-![除外の管理のスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-37-exclusions)
+![除外の管理のスクリーンショット](images/mdatp-37-exclusions.png)
 
 追加する除外の種類を選択し、プロンプトに従います。
 

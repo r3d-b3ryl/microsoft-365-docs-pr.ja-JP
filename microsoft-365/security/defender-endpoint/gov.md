@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 059ff9ca6f0c93c6adbac3b1d552cbedcf308759
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 089614fab57950af5f60181ce7ed2116046ad347
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222709"
+ms.locfileid: "51379372"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府機関のお客様向けエンドポイント向け Microsoft Defender
 
@@ -52,7 +52,7 @@ GCC | GCC High | DoD
 Microsoft Defender for Endpoint Server GCC | Microsoft Defender for Endpoint Server for GCC High | Microsoft Defender for Endpoint Server for DOD
 サーバー用 Azure Defender | サーバー用 Azure Defender - Government | サーバー用 Azure Defender - Government
 
-<br>
+<br />
 
 ## <a name="portal-urls"></a>ポータル URL
 米国政府機関のお客様向け Microsoft Defender for Endpoint ポータル URL を次に示します。
@@ -63,7 +63,7 @@ GCC | https://gcc.securitycenter.microsoft.us
 GCC High | https://securitycenter.microsoft.us
 DoD | https://securitycenter.microsoft.us
 
-<br>
+<br />
 
 ## <a name="endpoint-versions"></a>エンドポイントのバージョン
 
@@ -78,8 +78,8 @@ Windows 10 バージョン 1909 [(KB4586819](https://support.microsoft.com/help/
 Windows 10 バージョン 1903 [(KB4586819](https://support.microsoft.com/help/4586819)) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
 Windows 10 バージョン 1809 [(KB4586839](https://support.microsoft.com/help/4586839)) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
 Windows 10 バージョン 1803 [(KB4598245 )](https://support.microsoft.com/help/4598245) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
-Windows 10 バージョン 1709 | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません | ![は ](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147)<br>注: [非推奨 、](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません
-Windows 10 バージョン 1703 以前 | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません | ![いいえ](images/svg/check-no.svg)<br>注: サポートされません
+Windows 10 バージョン 1709 | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません | ![は ](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147)<br />注: [非推奨 、](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません
+Windows 10 バージョン 1703 以前 | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません
 Windows Server 2019 [(KB4586839](https://support.microsoft.com/help/4586839)を使用) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
 Windows Server 2016 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
@@ -88,8 +88,8 @@ Windows 8.1 Enterprise | ![はい](images/svg/check-yes.svg) | ![はい](images/
 Windows 8 Pro | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
 Windows 7 SP1エンタープライズ | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
-Linux | ![いいえ](images/svg/check-no.svg) ロール アウト | ![いいえ](images/svg/check-no.svg) ロール アウト | ![いいえ](images/svg/check-no.svg) ロール アウト
-macOS | ![いいえ](images/svg/check-no.svg) ロール アウト | ![いいえ](images/svg/check-no.svg) ロール アウト | ![いいえ](images/svg/check-no.svg) ロール アウト
+Linux | ![必要](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。 | ![必要](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。 | ![必要](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。
+macOS | ![必要](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。 | ![必要](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。 | ![必要](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。
 Android | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
 iOS | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
 
@@ -98,6 +98,9 @@ iOS | ![いいえ](images/svg/check-no.svg) エンジニアリング バック�
 
 > [!NOTE]
 > Microsoft Monitoring Agent を使用して Windows 10 または Windows Server 2019 より古い Windows デバイス[をオンボードしようとしている場合](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) セットアップ ウィザードを使用する場合、またはコマンド ラインまたはスクリプトを使用する場合は、[Azure Cloud] で[](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)[Azure [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) US Government] を選択する必要があります。"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" パラメーターを 1 に設定します。 [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
+
+> [!NOTE]
+> Linux ではバージョン 101.25.72 以上、macOS ではバージョン 101.25.69 以上が必要です。 プレビュー中は、これらのバージョンは "Insider Fast" チャネルでのみ利用可能です。 手順 [については、「Linux ソフトウェア リポジトリを構成](linux-install-manually.md#configure-the-linux-software-repository) する」または [「チャネル名を設定する (macOS)」](mac-updates.md#set-the-channel-name) を参照してください。
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Azure Defender for Servers を使用する場合の OS のバージョン
 Azure Defender for Servers を使用する場合は、次の [OS バージョンがサポートされます](https://docs.microsoft.com/azure/security-center/security-center-wdatp)。
@@ -108,7 +111,7 @@ Windows Server 2016 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg
 Windows Server 2012 R2 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![必要](images/svg/check-yes.svg)
 
-<br>
+<br />
 
 ## <a name="required-connectivity-settings"></a>必須の接続設定
 プロキシまたはファイアウォールが既定ですべてのトラフィックをブロックし、特定のドメインの通過だけを許可している場合は、ダウンロード可能シートに記載されているドメインを許可ドメインのリストに追加します。
@@ -117,7 +120,7 @@ Windows Server 2008 R2 SP1 | ![はい](images/svg/check-yes.svg) | ![はい](ima
 
 ドメインリストのスプレッドシート | 説明
 :-----|:-----
-![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/> | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
+![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/> | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br /><br />[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 詳細については、「デバイス プロキシと [インターネット接続の設定を構成する」を参照してください](configure-proxy-internet.md)。
 
@@ -140,10 +143,10 @@ Azure IP 範囲とサービス タグ – US Government Cloud で Azure IP 範�
 > [!NOTE]
 > クラウドベースのソリューションとして、IP アドレス範囲が変更される可能性があります。 DNS ベースのルールに移動する必要があります。
 
-<br>
+<br />
 
 ## <a name="api"></a>API
-API ドキュメントに記載されているパブリック URI の代わりに、次の [URI](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro)を使用する必要があります。
+API ドキュメントに記載されているパブリック URI の代わりに、次の [URI](apis-intro.md)を使用する必要があります。
 
 エンドポイントの種類 | GCC | GCC High & DoD
 :---|:---|:---
@@ -151,7 +154,7 @@ API ドキュメントに記載されているパブリック URI の代わり�
 Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
 SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https://wdatp-alertexporter-us.securitycenter.windows.us`
 
-<br>
+<br />
 
 ## <a name="feature-parity-with-commercial"></a>商用機能と機能のパリティ
 米国政府機関のお客様向けエンドポイントの Defender は、商用サービスと完全に同一性を持つ必要があります。 すべての商用機能と機能を米国政府機関のお客様に提供しますが、まだ利用できない機能がいくつか用意されています。

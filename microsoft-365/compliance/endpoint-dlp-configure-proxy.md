@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント DLP のデバイス プロキシとインターネット接続の構成方法について説明します。
-ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907007"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199276"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>エンドポイント DLP のデバイス プロキシとインターネット接続の構成
 
@@ -76,7 +76,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 > [!NOTE]
 > これは、既定のプロキシで WinHTTP を使用する Windows サービスを含むすべてのアプリケーションに影響します。 - トポロジを変更するノート PC (例えば、オフィスから自宅へ) が netsh で正しく動作しない。 レジストリ ベースの静的プロキシの構成を使用します。
 
-1. 管理者特権でのコマンド ラインを開きます。
+1. 管理者特権でコマンド プロンプトを開きます。
     1. **[スタート]** をクリックし、「**cmd**」と入力する
     1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 2.  次のコマンドを入力して、**Enter** キーを押します。
@@ -96,7 +96,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
 プロキシまたはファイアウォールが既定ですべてのトラフィックをブロックし、特定のドメインの通過だけを許可している場合は、ダウンロード可能シートに記載されているドメインを許可ドメインのリストに追加します。
 
-この[ダウンロード可能なスプレッドシート](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)には、ネットワークが接続可能である必要があるサービスとそれに関連付けられた URL の一覧が表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター処理ルールがないことを確認する必要があります。そうでない場合、URL 専用の許可ルールを作成する必要があります。
+この[ダウンロード可能なスプレッドシート](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)には、ネットワークが接続可能である必要があるサービスとそれに関連付けられた URL の一覧が表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター処理ルールがないことを確認する必要があります。そうでない場合、URL 専用の許可ルールを作成する必要があります。
 
 プロキシまたはファイアウォールで HTTPS スキャン (SSL 検査) が有効になっている場合は、上記の表に示されているドメインを HTTPS スキャンから除外します。
 エンドポイント DLP がシステム コンテキストから接続しているため、プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合は、前述の URL で匿名トラフィックが許可されていることを確認してください。
@@ -107,7 +107,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
 1. エンドポイント DLP が実行されている PC に、[MDATP クライアント アナライザー ツール](https://aka.ms/mdatpanalyzer)をダウンロードします。
 2. デバイス上に MDATPClientAnalyzer.zip のコンテンツを抽出します。
-3. 管理者特権でのコマンド ラインを開きます。
+3. 管理者特権でコマンド プロンプトを開きます。
     1. **[スタート]** をクリックし、「**cmd**」と入力します。
     1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 4.  次のコマンドを入力して、**Enter** キーを押します。

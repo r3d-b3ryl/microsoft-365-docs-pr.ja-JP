@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e511c12240512af772b3552f63ad9ed98ff105af
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a9ca0af0c522205309ffdcbfd1ac28638bd197c7
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062083"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382795"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -38,23 +38,24 @@ ms.locfileid: "51062083"
 この `FileProfile()` 関数は、高度な検索の[](advanced-hunting-overview.md)エンリッチメント関数で、クエリで見つかったファイルに次のデータを追加します。
 
 | Column | データ型 | 説明 |
-|------------|-------------|-------------|
-| SHA1 | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| SHA256 | string | 記録されたアクションが適用されたファイルの SHA-256 |
-| MD5 | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
-| FileSize | int | ファイルのサイズ (バイト単位) |
-| GlobalPrevalence | int | Microsoft がグローバルに観察したエンティティのインスタンス数 |
-| GlobalFirstSeen | 日付型 | エンティティが最初に Microsoft によってグローバルに観察された日時 |
-| GlobalLastSeen | 日付型 | エンティティが Microsoft によってグローバルに最後に観察された日時 |
-| 署名者 | string | ファイルの署名者に関する情報 |
-| 発行者 | string | 発行元証明機関 (CA) に関する情報 |
-| SignerHash | string | 署名者を識別する一意のハッシュ値 |
-| IsCertificateValid | boolean | ファイルの署名に使用する証明書が有効かどうか |
-| IsRootSignerMicrosoft | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
-| IsExecutable | boolean | ファイルがポータブル実行可能ファイル (PE) ファイルかどうか |
-| ThreatName | string | マルウェアまたは検出された他の脅威の検出名 |
-| Publisher | string | ファイルを発行した組織の名前 |
-| SoftwareName | string | ソフトウェア製品の名前 |
+|------------|---------------|-------------|
+| `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
+| `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 |
+| `MD5` | 文字列 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
+| `FileSize` | int | ファイルのサイズ (バイト単位) |
+| `GlobalPrevalence` | int | Microsoft がグローバルに観察したエンティティのインスタンス数 |
+| `GlobalFirstSeen` | 日付型 | エンティティが最初に Microsoft によってグローバルに観察された日時 |
+| `GlobalLastSeen` | 日付型 | エンティティが Microsoft によってグローバルに最後に観察された日時 |
+| `Signer` | 文字列 | ファイルの署名者に関する情報 |
+| `Issuer` | 文字列 | 発行元証明機関 (CA) に関する情報 |
+| `SignerHash` | 文字列 | 署名者を識別する一意のハッシュ値 |
+| `IsCertificateValid` | boolean | ファイルの署名に使用する証明書が有効かどうか |
+| `IsRootSignerMicrosoft` | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
+| `SignatureState` | 文字列 | ファイル署名の状態: SignedValid - ファイルは有効な署名で署名されています。SignedInvalid - ファイルは署名されますが、証明書は無効です。Signeded - ファイルは署名されていない、不明 - ファイルに関する情報を取得できません
+| `IsExecutable` | boolean | ファイルがポータブル実行可能ファイル (PE) ファイルかどうか |
+| `ThreatName` | 文字列 | マルウェアまたは検出された他の脅威の検出名 |
+| `Publisher` | 文字列 | ファイルを発行した組織の名前 |
+| `SoftwareName` | string | ソフトウェア製品の名前 |
 
 ## <a name="syntax"></a>構文
 

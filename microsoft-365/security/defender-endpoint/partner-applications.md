@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79db436c2017c00e1b5d669797c5fb025f651a8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186235"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382942"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のパートナー アプリケーション 
 
@@ -98,6 +98,7 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 ![Aruba ClearPass ポリシー マネージャーのロゴのイメージ](images/aruba-logo.png) | [Aruba ClearPass ポリシー マネージャー](https://go.microsoft.com/fwlink/?linkid=2127544) | ネットワークへのアクセスを許可する前に、Defender for Endpoint が各エンドポイントにインストールされ、更新されていることを確認する
 ![ネットワーク ロゴの青い六角形の画像](images/bluehexagon-logo.png) | [ネットワーク用青い六角形](https://go.microsoft.com/fwlink/?linkid=2104613) | Blue Hexagon は、ネットワーク脅威保護のための業界初のリアルタイムディープ ラーニング プラットフォームを構築しました
 ![CyberMDX ロゴのイメージ](images/cybermdx-logo.png) | [CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620) | Cyber MDX は、包括的な医療資産の可視性、脅威防止、およびリプスを Defender for Endpoint 環境に統合します。
+![HYAS Protect ロゴのイメージ](images/hyas-logo.png) | [HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763) | HYAS Protect は、攻撃者インフラストラクチャの権限のある知識を利用して、Microsoft Defender for Endpoint エンドポイントをサイバー攻撃からプロアクティブに保護します。
 ![Vectra ネットワーク検出と応答 (NDR) ロゴのイメージ](images/vectra-logo.png) |[Vectra ネットワーク検出と応答 (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)| Vectra は、AI &セキュリティ調査を適用して、サイバー攻撃をリアルタイムで検出して対応します
 
 

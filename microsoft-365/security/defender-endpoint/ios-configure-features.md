@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 90e65c57321fa05a62bc94f4f56d92062d0826a1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18fbc13614753ae57856a124d76bbad682ab88e5
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186703"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379357"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>iOS 機能用に Microsoft Defender for Endpoint を構成する
 
@@ -102,3 +102,9 @@ Defender for Endpoint for iOS を使用すると、管理者は iOS デバイス
 ## <a name="report-unsafe-site"></a>安全でないサイトを報告する
 
 フィッシング Web サイトは、お客様の個人情報または財務情報を取得する目的で信頼できる Web サイトになりすます。 フィッシング サイト [の可能性がある Web サイトを報告](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) する場合は、[ネットワーク保護に関するフィードバックを提供する] ページをご覧ください。
+
+## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>Microsoft Defender for Endpoint がインストールされている場合の iOS でのバッテリー消費の問題
+
+アプリによるバッテリー使用量は、CPU やネットワークの使用状況など、さまざまな要因に基づいて Apple によって計算されます。 Microsoft Defender for Endpoint では、バックグラウンドでローカル/ループバック VPN を使用して、悪意のある Web サイトや接続の Web トラフィックを確認します。 任意のアプリからのネットワーク パケットは、このチェックを通過し、Microsoft Defender for Endpoint のバッテリー使用量が不正確に計算される原因になります。 これは、ユーザーに誤った印象を与えます。 Microsoft Defender for Endpoint の実際のバッテリー消費量は、デバイスの [バッテリーの設定] ページに表示される値よりも少ない値です。 これは、バッテリー消費を理解するために Microsoft Defender for Endpoint アプリで実施されたテストに基づいて行われます。
+
+また、使用される VPN はローカル VPN であり、従来の VPN とは異なり、ネットワーク トラフィックはデバイスの外部に送信されません。

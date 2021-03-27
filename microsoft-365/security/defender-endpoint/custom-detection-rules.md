@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: fc4c15d2e391176ed0b4420c13fb865674da0361
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 48b1f1bf9506acc8491887fca49295d5e4ccbd69
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163589"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382711"
 ---
 # <a name="create-custom-detection-rules"></a>検出ルールの作成
 
@@ -98,8 +98,8 @@ DeviceEvents
 - **3 時間ごとに** 実行され、過去 6 時間のデータを確認します。
 - **1 時間** ごとに 1 時間ごとに実行され、過去 2 時間のデータを確認します。
 
-> [!IMPORTANT]
-> カスタム検出として既にスケジュールされているクエリを変更する場合、次の即時実行には、新しいクエリが作成されている場合とまったく同じ 30 日間のルックバック ウィンドウが表示されます。 多数のクエリに対する変更、および選択した頻度の既定のルックバック期間よりも高い時間フィルターを使用すると、Advanced Hunting の全体的なクォータ消費量に影響を与え、1 日のクォータが使い果たされる可能性があります。
+ルールを編集すると、設定した頻度に従ってスケジュールされた次の実行時に適用された変更と一緒に実行されます。
+
 
 > [!TIP]
 > クエリのタイム フィルターとルックバック期間を一致します。 ルックバック期間外の結果は無視されます。

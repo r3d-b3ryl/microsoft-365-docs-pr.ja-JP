@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for Mac の Intune ベースの展開
+title: Microsoft Defender for Endpoint for Mac の Intune ベースの展開
 description: Microsoft Intune を使用して、Microsoft Defender for Endpoint for Mac をインストールします。
 keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: bd74f3a487de4febecb2086cb126c50b8432c342
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222515"
+ms.locfileid: "51379635"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac の Intune ベースの展開
 
@@ -62,7 +62,7 @@ ms.locfileid: "51222515"
 | [Microsoft Defender for Endpoint へのフル ディスク アクセスを許可する](#create-system-configuration-profiles-step-8) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
 | [ネットワーク拡張ポリシー](#create-system-configuration-profiles-step-9) | MDATP_NetExt.xml | 該当なし |
 | [Microsoft AutoUpdate (MAU) の構成](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-updates#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
-| [Microsoft Defender for Endpoint 構成設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-preferences#intune-profile-1)<br/><br/> **注:** macOS 用のサード パーティ製 AV を実行する予定の場合は、 に `passiveMode` 設定します `true` 。 | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
+| [Microsoft Defender for Endpoint 構成設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-preferences#intune-profile-1)<br/><br/> **注:** macOS 用のサード パーティ製 AV の実行を計画している場合は、 に設定 `passiveMode` します `true` 。 | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [エンドポイントおよび MS AutoUpdate (MAU) 通知の Microsoft Defender の構成](#create-system-configuration-profiles-step-10) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 または com.microsoft.wdav.tray |
 
 ## <a name="download-installation-and-onboarding-packages"></a>インストール パッケージとオンボーディング パッケージのダウンロード
@@ -137,9 +137,11 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 1. デバイスの管理を確認します。
 
+   ![デバイス管理のスクリーンショットを確認する](images/mdatp-3-confirmdevicemgmt.png)
+
     [ **システム環境設定を開く]** を選択し、一 **覧で [管理プロファイル** ] を探し、[ **承認...] を選択します**。管理プロファイルが [確認済み] **と表示されます**。
 
-    ![管理プロファイルのスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-4-managementprofile)
+    ![管理プロファイルのスクリーンショット](images/mdatp-4-managementprofile.png)
 
 2. [続行 **] を** 選択し、登録を完了します。
 
@@ -148,7 +150,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 3. Intune で、[デバイスの管理 **] [**  >  **すべての**  >  **デバイス] を開きます**。 ここにリストされているデバイスの中からデバイスを確認できます。
 
    > [!div class="mx-imgBorder"]
-   > ![デバイスの追加スクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-5-alldevices)
+   > ![デバイスの追加スクリーンショット](images/mdatp-5-alldevices.png)
 
 ## <a name="approve-system-extensions"></a>システム拡張機能の承認
 
@@ -182,9 +184,9 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 3. 構成プロファイルを開き、intune/kext.xml。 このファイルは、前のセクションの 1 つで作成されました。
 
-4. **[OK]** をクリックします。
+4. [**OK**] を選択します。
 
-    ![カスタム構成プロファイルのファイルから構成をインポートする](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![カスタム構成プロファイルのファイルから構成をインポートする](images/mdatp-6-systemconfigurationprofiles.png)
 
 5. [割 **り当**  >  **ての管理] を選択します**。 [含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。
 
@@ -208,7 +210,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 Intune の変更が登録済みデバイスに反映された後は、[デバイスの状態の監視]の下に表示  >  **されます**。
 
 > [!div class="mx-imgBorder"]
-> ![モニターでのデバイスの状態の表示](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
+> ![モニターでのデバイスの状態の表示](images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>アプリケーションの発行
 
@@ -230,43 +232,43 @@ Intune の変更が登録済みデバイスに反映された後は、[デバイ
     > Intune によってアップロードされたバージョンがデバイスのバージョンより低い場合は、下位バージョンがインストールされ、Microsoft Defender for Endpoint が効果的にダウングレードされます。 これにより、機能しないアプリケーションが発生する可能性があります。 製品 [の更新方法の詳細については、「Deploy updates for Microsoft Defender for Endpoint for Mac」](mac-updates.md) を参照してください。 [アプリのバージョンを無視する] が [いいえ] に設定 *されている* Microsoft Defender for Endpoint を展開した場合 **は、[は** い] に変更 **してください**。 Microsoft Defender for Endpoint がまだクライアント デバイスにインストールできない場合は、Microsoft Defender for Endpoint をアンインストールし、更新されたポリシーをプッシュします。
      
     > [!div class="mx-imgBorder"]
-    > ![アプリの追加でのアプリ情報の表示](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![アプリの追加でのアプリ情報の表示](images/mdatp-8-intuneappinfo.png)
 
 7. **[OK] と [** 追加]**を選択します**。
 
     > [!div class="mx-imgBorder"]
-    > ![[通知] ウィンドウに表示されるデバイスの状態](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![[通知] ウィンドウに表示されるデバイスの状態](images/mdatp-9-intunepkginfo.png)
 
 8. パッケージのアップロードに少し時間がかかる場合があります。 完了したら、一覧からパッケージを選択し、[割り当て] と [ **グループの追加** ] **に移動します**。
 
     > [!div class="mx-imgBorder"]
-    > ![クライアント アプリのスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-10-clientapps)
+    > ![クライアント アプリのスクリーンショット](images/mdatp-10-clientapps.png)
 
 9. [割 **り当ての種類] を [** 必須] **に変更します**。
 
 10. [含 **まれるグループ] を選択します**。 [すべての **デバイスにこのアプリを必須にする]=[はい]を選択します**。 [ **グループの選択] を選択** して、対象とするユーザーを含むグループを追加します。 **[OK] と [** 保存]**を選択します**。
 
     > [!div class="mx-imgBorder"]
-    > ![Intune の割り当て情報のスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-11-assignments)
+    > ![Intune の割り当て情報のスクリーンショット](images/mdatp-11-assignments.png)
 
 11. しばらくすると、アプリケーションは登録済みのすべてのデバイスに公開されます。 [デバイスの監視] の [**デバイスのインストール** 状態]  >  **に表示されます**。
 
     > [!div class="mx-imgBorder"]
-    > ![Intune デバイスの状態のスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-12-deviceinstall)
+    > ![Intune デバイスの状態のスクリーンショット](images/mdatp-12-deviceinstall.png)
 
 ## <a name="verify-client-device-state"></a>クライアント デバイスの状態を確認する
 
 1. 構成プロファイルをデバイスに展開した後、Mac デバイス **で [System Preferences**  >  **Profiles]** を開きます。
 
-    ![System Preferences のスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-13-systempreferences)<br/>
-    ![System Preferences Profiles スクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-14-systempreferencesprofiles)
+    ![System Preferences のスクリーンショット](images/mdatp-13-systempreferences.png)<br/>
+    ![System Preferences Profiles スクリーンショット](images/mdatp-14-systempreferencesprofiles.png)
 
-2. 次の構成プロファイルが存在し、インストールされていることを確認します。 管理 **プロファイルは** Intune システム プロファイルである必要があります。 _Wdav-config_ と _wdav-kext_ は、Intune で追加されたシステム構成プロファイルです。 ![ プロファイルのスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-15-managementprofileconfig)
+2. 次の構成プロファイルが存在し、インストールされていることを確認します。 管理 **プロファイルは** Intune システム プロファイルである必要があります。 _Wdav-config_ と _wdav-kext_ は、Intune で追加されたシステム構成プロファイルです。 ![ プロファイルのスクリーンショット](images/mdatp-15-managementprofileconfig.png)
 
 3. 右上隅に Microsoft Defender アイコンも表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![ステータス バーのスクリーンショットの Microsoft Defender アイコン](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+    > ![ステータス バーのスクリーンショットの Microsoft Defender アイコン](images/mdatp-icon-bar.png)
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

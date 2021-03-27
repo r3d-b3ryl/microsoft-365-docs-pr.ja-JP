@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd92b44892b49a007316acb97296a44514db0578
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061700"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379351"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint サービスにオンボードする
 
@@ -89,7 +89,10 @@ System Center Operations Manager (SCOM) または Azure Monitor (以前は Opera
  - さらに、SP1 のWindows Server 2008 R2、次の要件を満たしていることを確認します。
     - 2 [月の月次更新プログラムのロールアップをインストールする](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
     - [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (以降) または[KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)のいずれかをインストールする
-
+   
+   > [!NOTE]
+    > SCCM を使用して SP1 Windows Server 2008 R2管理している場合、SCCM クライアント エージェントは .Net Framework 4.5.2 をインストールします。 そのため、.NET framework 4.5 (以降) をインストールする必要はないので、
+   
  - SP1 Windows Server 2008 R2 R2 のWindows Server 2012: System Center Endpoint Protection クライアント [を構成および更新します](#configure-and-update-system-center-endpoint-protection-clients)。
 
     > [!NOTE]

@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b31e7aeb9178cb6021434319e55ddef927d7c263
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165875"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379480"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントの検出と応答 (EDR)
 
@@ -132,6 +132,9 @@ Microsoft Defender Antivirus がアクティブ モードまたはパッシブ �
 2. 種類`sc query windefend`
 
 3. 結果の一覧の STATE **行で、** サービスが実行されているのを確認します。
+
+### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>ブロック モードの EDR が無効になるのにどれくらいの時間が必要ですか?
+ブロック モードで EDR を無効にした場合、システムでこの機能を無効にするには最大 30 分かかる場合があります。
 
 ## <a name="see-also"></a>関連項目
 

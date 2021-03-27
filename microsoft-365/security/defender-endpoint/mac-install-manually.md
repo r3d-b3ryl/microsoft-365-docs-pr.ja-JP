@@ -1,6 +1,6 @@
 ---
-title: macOS 用 Microsoft Defender ATP の手動展開
-description: コマンド ラインから手動で macOS 用 Microsoft Defender ATP をインストールします。
+title: microsoft Defender for Endpoint for macOS の手動展開
+description: コマンド ラインから Microsoft Defender for Endpoint for macOS を手動でインストールします。
 keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2629eb3d13e6eb908644dfcade46a7ac2768637
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187447"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379472"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>microsoft Defender for Endpoint for macOS の手動展開
 
@@ -64,20 +64,20 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 1. Finder でダウンロードした wdav.pkg に移動し、開きます。
 
-    ![アプリのインストールのスクリーンショット1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
+    ![アプリのインストールのスクリーンショット1](images/mdatp-28-appinstall.png)
 
 2. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。
 
-    ![アプリのインストールのスクリーンショット2](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-29-appinstalllogin)
+    ![アプリのインストールのスクリーンショット2](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > Microsoft のドライバーのインストールを許可するように求めるメッセージが表示されます ("System Extension Blocked" または "Installation is on hold" のいずれかまたは両方)。 ドライバーのインストールを許可する必要があります。
 
-   ![アプリのインストールのスクリーンショット3](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-30-systemextension)
+   ![アプリのインストールのスクリーンショット3](images/mdatp-30-systemextension.png)
 
 3. [ **セキュリティの基本設定を開く]** または [システム環境設定を開く **] >[セキュリティ] &選択します**。 [許可 **] を選択します**。
 
-    ![セキュリティとプライバシー ウィンドウのスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-31-securityprivacysettings)
+    ![セキュリティとプライバシー ウィンドウのスクリーンショット](images/mdatp-31-securityprivacysettings.png)
 
    インストールが続行されます。
 
@@ -119,7 +119,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 1. wdav.pkg と MicrosoftDefenderATPOnboardingMacOs.py microsoft Defender for Endpoint for macOS を展開するデバイスにコピーします。
 
-    クライアント デバイスは orgId に関連付けではありません。 *orgId 属性は* 空白です。
+    クライアント デバイスが orgId に関連付けされていない。 *orgId 属性は* 空白です。
 
     ```bash
     mdatp health --field org_id
@@ -139,7 +139,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 インストール後、右上隅の macOS ステータス バーに Microsoft Defender アイコンが表示されます。
 
-   ![ステータス バーのスクリーンショットの Microsoft Defender アイコン](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+   ![ステータス バーのスクリーンショットの Microsoft Defender アイコン](images/mdatp-icon-bar.png)
    
 
 ## <a name="how-to-allow-full-disk-access"></a>フル ディスク アクセスを許可する方法

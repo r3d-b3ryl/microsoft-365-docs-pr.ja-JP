@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215533"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394748"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -63,6 +63,14 @@ ms.locfileid: "51215533"
 ## <a name="live-response-unsigned-script-execution"></a>ライブ応答の署名されていないスクリプトの実行
 
 この機能を有効にすると、ライブ応答セッションで署名されていないスクリプトを実行できます。
+
+
+## <a name="restrict-correlation-to-within-scoped-device-groups"></a>スコープ付きデバイス グループ内への相関関係の制限
+この設定を有効にすると、アラートはスコープ設定されたデバイス グループに基づいて個別のインシデントに関連付けされます。 既定では、インシデントの相関関係はテナント スコープ全体で発生します。
+
+>[!NOTE]
+>この設定を変更すると、将来のアラートの相関関係にのみ影響します。
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修復されたアラート
 

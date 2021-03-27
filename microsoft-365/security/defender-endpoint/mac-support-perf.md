@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac のパフォーマンスの問題のトラブルシューティング
-description: Microsoft Defender ATP for Mac のパフォーマンスの問題をトラブルシューティングします。
+title: Microsoft Defender for Endpoint for Mac のパフォーマンスの問題のトラブルシューティング
+description: Microsoft Defender for Endpoint for Mac のパフォーマンスの問題をトラブルシューティングします。
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6dd5681dfafd069a4c52f72e1dc1733584283a2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87190d9e0bb62d42642374bd7c9f6f3acad3c80a
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185911"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379388"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac のパフォーマンスの問題のトラブルシューティング
 
@@ -52,7 +52,7 @@ ms.locfileid: "51185911"
 
     - ユーザー インターフェイスから。 Microsoft Defender for Endpoint for Mac を開き、[設定の管理] **に移動します**。
 
-      ![リアルタイム保護のスクリーンショットを管理する](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-36-rtp)
+      ![リアルタイム保護のスクリーンショットを管理する](images/mdatp-36-rtp.png)
 
     - ターミナルから。 セキュリティ上の目的で、この操作には昇格が必要です。
 

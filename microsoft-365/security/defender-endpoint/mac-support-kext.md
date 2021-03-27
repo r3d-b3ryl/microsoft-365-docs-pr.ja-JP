@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac でのカーネル拡張機能の問題のトラブルシューティング
-description: Microsoft Defender ATP for Mac のカーネル拡張機能に関連する問題のトラブルシューティングを行います。
+title: Microsoft Defender for Endpoint for Mac でのカーネル拡張機能の問題のトラブルシューティング
+description: Microsoft Defender for Endpoint for Mac のカーネル拡張機能に関連する問題のトラブルシューティングを行います。
 keywords: microsoft、 defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bdd5c6309a19863339b00e846c1c2670fc4f261b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187603"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379518"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac でのカーネル拡張機能の問題のトラブルシューティング
 
@@ -44,7 +44,7 @@ macOS High Sierra (10.13) から、macOS では、デバイスでの実行を許
 
 Microsoft Defender for Endpoint for Mac の展開/インストール中にカーネル拡張機能を承認しなかった場合、アプリケーションはバナーを表示して有効にするように求めます。
 
-   ![RTP が無効なスクリーンショット](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix)
+   ![RTP が無効なスクリーンショット](images/mdatp-32-main-app-fix.png)
 
 また、実行できます ```mdatp health``` 。 リアルタイム保護が有効になっているが使用できない場合に報告されます。 これは、カーネル拡張機能がデバイスでの実行が承認されていないことを示します。
 
@@ -73,11 +73,11 @@ real_time_protection_available              : true
 
 このプロンプトが表示されない場合は、30 分以上経過し、カーネル拡張機能がデバイスでの実行が承認されていないことを意味します。
 
-![プロンプトの有効期限が切れたスクリーンショットの後のセキュリティとプライバシーのウィンドウ](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt)
+![プロンプトの有効期限が切れたスクリーンショットの後のセキュリティとプライバシーのウィンドウ](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 この場合、承認フローを再度トリガーするには、次の手順を実行する必要があります。
 
-1. ターミナルで、ドライバーのインストールを試みる。 カーネル拡張機能がデバイスでの実行を承認されていないので、次の操作は失敗します。 ただし、承認フローが再びトリガーされます。
+1. ターミナルで、ドライバーのインストールを試みる。 カーネル拡張機能がデバイスで実行を承認できなかったため、次の操作は失敗します。 ただし、承認フローが再びトリガーされます。
 
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext

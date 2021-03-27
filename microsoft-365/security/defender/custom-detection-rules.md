@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9699b5e2bc2e33b94795b7c23bd3f34f0383a8cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 12a35a9f80da6b401495fcae7c245436b35b991c
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060814"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382891"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -116,12 +116,16 @@ DeviceEvents
 - **推奨されるアクション**—応答者がアラートに応答して実行する可能性がある追加のアクション
 
 #### <a name="rule-frequency"></a>ルールの頻度
-新しいルールを保存または編集すると、過去 30 日間のデータの一致が実行され、チェックされます。 その後、ルールは一定の間隔で再び実行され、選択した頻度に基づいてルックバック期間が適用されます。
+新しいルールを保存すると、過去 30 日間のデータの一致が実行され、チェックされます。 その後、ルールは一定の間隔で再び実行され、選択した頻度に基づいてルックバック期間が適用されます。
 
 - **24 時間ごとに** 実行され、過去 30 日間のデータを確認します。
 - **12 時間ごとに** 実行され、過去 24 時間のデータを確認します。
 - **3 時間ごとに** 実行され、過去 6 時間のデータを確認します。
 - **1 時間** ごとに 1 時間ごとに実行され、過去 2 時間のデータを確認します。
+
+ルールを編集すると、設定した頻度に従ってスケジュールされた次の実行時に適用された変更と一緒に実行されます。
+
+
 
 >[!TIP]
 > クエリのタイム フィルターとルックバック期間を一致します。 ルックバック期間外の結果は無視されます。  

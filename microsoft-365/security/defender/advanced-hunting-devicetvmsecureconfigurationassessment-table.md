@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cf37fe2aeac193c6b45f55fd5f5c850470ba6da4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3d991bc5e78fc7b33e20df1f86471a0969b7345f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063460"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382597"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -44,17 +44,17 @@ ms.locfileid: "51063460"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
+| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
+| `OSPlatform` | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
 | `Timestamp` | datetime | レコードが作成された日付と時刻 |
 | `ConfigurationId` | 文字列 | 特定の構成の一意の識別子 |
-| `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
-| `ConfigurationSubcategory` | string | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationCategory` | 文字列 | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
+| `ConfigurationSubcategory` | 文字列 | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationImpact` | 文字列 | 構成の評価が全体の構成スコア (1-10) に及ぼす影響 |
 | `IsCompliant` | ブール値 | 構成やポリシーが正しく構成されているかどうかを示します |
 | `IsApplicable` | boolean | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
-| `Context` | string | 構成またはポリシーに関するその他のコンテキスト情報 |
-| `IsExpectedUserImpactCompliant` | boolean | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
+| `Context` | 文字列 | 構成またはポリシーに関するその他のコンテキスト情報 |
+| `IsExpectedUserImpact` | boolean | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
 
 ## <a name="related-topics"></a>関連項目
 

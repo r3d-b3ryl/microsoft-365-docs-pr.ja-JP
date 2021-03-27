@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 247b8b8d8e18c8eecb09029581635ae907433f55
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df96b57b9898dd973fab053918d763d1972bd50d
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068339"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382807"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>高度な狩猟に関する専門家のトレーニングを受け取る
 
@@ -37,8 +37,7 @@ ms.locfileid: "51068339"
 
 新しいセキュリティ アナリストや経験豊富な脅威ハンター向け Web キャスト シリーズである Tracking _the adversary_ を使用して、高度な狩猟に関する知識を迅速に強化します。 このシリーズでは、独自の高度なクエリを作成する方法の基本について説明します。 基本に関する最初のビデオから始めるか、エクスペリエンスのレベルに合った高度なビデオにジャンプします。
 
-
-| Title | 説明 | ウォッチ | クエリ | 
+| 役職 | 説明 | ウォッチ | クエリ | 
 |--|--|--|--|
 | エピソード 1: KQL の基本 | このエピソードでは、Microsoft 365 Defender での高度な狩猟の基本について説明します。 使用可能な高度な検索データと基本的な KQL 構文と演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | エピソード 2: 参加 | 高度な検索のデータと、テーブルを一緒に結合する方法について学び続ける。 、、および結合について説明し、既定の Kusto 結合のニュアンス `inner` `outer` `unique` `semi` を理解 `innerunique` します。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
@@ -48,7 +47,7 @@ ms.locfileid: "51068339"
 
 *L33TSP3AK* を使用して、より専門的なトレーニングを受け取る: Microsoft 365 Defender の高度な狩猟は、Microsoft 365 Defender の高度な検索を使用してセキュリティ調査を行う技術的な知識と実践的なスキルを拡張するアナリスト向け Web キャスト シリーズです。 
 
-| Title | 説明 | ウォッチ | クエリ | 
+| 役職 | 説明 | ウォッチ | クエリ | 
 |--|--|--|--|
 | エピソード 1  | このエピソードでは、高度な検索クエリを実行する場合のさまざまなベスト プラクティスについて説明します。 対象となるトピックの中には、クエリを最適化する方法、ランサムウェアの高度な検索を使用する方法、動的型として JSON を処理する方法、および外部データ演算子を操作する方法があります。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [CSL ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
 
