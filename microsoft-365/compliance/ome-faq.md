@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051749"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394685"
 ---
 # <a name="message-encryption-faq"></a>メッセージの暗号化に関する FAQ
 
@@ -56,13 +56,13 @@ OME の新機能は、次の条件で使用できます。
 
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>Azure Information Protection で独自のキー (BYOK) を持参して Exchange Online を使用できますか?
 
-はい。 OME をセットアップする前に、BYOK をセットアップする手順を完了してください。
+可能です! OME をセットアップする前に、BYOK をセットアップする手順を完了してください。
   
 BYOK の詳細については、「Azure Information Protection テナント キーの計画 [と実装」を参照してください](/information-protection/plan-design/plan-implement-tenant-key)。
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Azure Information Protection を使用した OME と BYOK は、サブポエナなどのサード パーティのデータ要求に対する Microsoft のアプローチを変更しますか?
 
-いいえ。 OME と、Azure Information Protection から BYOK と呼ばれる独自の暗号化キーを提供および制御するオプションは、法執行機関のサブポエナに対応するようには設計されていない。 OME は、BYOK for Azure Information Protection を使用して、コンプライアンスに焦点を当てたお客様向けに設計されました。 Microsoft は、顧客データに対するサード パーティの要求を非常に真剣に受け止めています。 クラウド サービス プロバイダーとして、常に顧客データのプライバシーを主張しています。 Subpoena を取得した場合は、常に第三者を顧客にリダイレクトして情報を取得します。 (Brad Smith のブログ「 政府のスヌーピングから顧客データを保護する」 [をご覧ください](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 受信した要求の詳細な情報を定期的に公開します。 サード パーティのデータ要求の詳細については、「Microsoft Trust [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Center で顧客データにアクセスする政府機関および法執行機関の要求への対応」を参照してください。 また、オンライン サービス条項 (OST) の「顧客データの開示 [」を参照してください](https://www.microsoft.com/Licensing/product-licensing/products.aspx)。
+いいえ。 OME と、Azure Information Protection から BYOK と呼ばれる独自の暗号化キーを提供および制御するオプションは、法執行機関のサブポエナに対応するようには設計されていない。 OME は、BYOK for Azure Information Protection を使用して、コンプライアンスに焦点を当てたお客様向けに設計されました。 Microsoft は、顧客データに対するサードパーティの要求を真剣に受け止める。 クラウド サービス プロバイダーとして、常に顧客データのプライバシーを主張しています。 Subpoena を取得した場合は、常に第三者を顧客にリダイレクトして情報を取得します。 (Brad Smith のブログを読む: 政府のスヌーピングから顧客データ [を保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 受信した要求の詳細な情報を定期的に公開します。 サード パーティのデータ要求の詳細については、「Microsoft Trust [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Center で顧客データにアクセスする政府機関および法執行機関の要求への対応」を参照してください。 また、オンライン サービス条項 (OST) の「顧客データの開示 [」を参照してください](https://www.microsoft.com/Licensing/product-licensing/products.aspx)。
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>この機能は、従来の 365 メッセージ暗号化 (OME) Office情報権利管理 (IRM) 機能とどのように関連していますか?
 
@@ -120,7 +120,7 @@ Word、Excel、PowerPoint ファイルなどのファイル形式がサポート
 
 短い答えははい! PDF 暗号化を使用すると、セキュリティで保護された通信または安全な共同作業を通じて、機密性の高い PDF ドキュメントを保護できます。 電子メールを送信すると、Office 365 サービスは Outlook クライアントではなく PDF ファイルの添付ファイルを暗号化します。
 
-Outlook on the web、Outlook for iOS、および Outlook for Android の場合は、追加の手順なしで送信する PDF を暗号化できます。 これらのクライアントは、PDF 暗号化をネイティブにサポートします。
+Outlook on the web、Outlook for iOS、および Outlook for Android の場合、送信する PDF はそれ以上の手順なしで暗号化できます。 これらのクライアントは、PDF 暗号化をネイティブにサポートします。
 
 Outlook デスクトップは、PDF ファイル添付ファイルの暗号化をネイティブにサポートしません。 代わりに、Exchange メール フロー ルールまたは DLP を設定して、最初に PDF 添付ファイルに暗号化を適用する必要があります。 Outlook Desktop から PDF 添付ファイルを使用してメールを送信すると、クライアントは最初に添付ファイルを含むメッセージをサービスに送信します。 サービスがファイルを受信すると、サービスは Exchange Online のデータ損失防止 (DLP) ポリシーまたはメール フロー ルールの OME 保護を適用します。 次に、Exchange Online は保護された PDF ファイル添付ファイルを使用してメッセージを送信します。
 
@@ -157,15 +157,15 @@ Outlook on the web では、保護されたメールの失効がサポートさ�
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>セキュリティ コンプライアンス センターを通じてデータ損失防止 (DLP) でポリシーを設定することで、メッセージを自動的に &amp; 暗号化できますか?
 
-はい。 メール フロー ルールは、Exchange Online で設定するか、セキュリティ コンプライアンス センターで DLP を &amp; 使用して設定できます。
+可能です! メール フロー ルールは、Exchange Online で設定するか、セキュリティ コンプライアンス センターで DLP を &amp; 使用して設定できます。
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>会社のブランド化で暗号化されたメッセージをカスタマイズできますか?
 
-はい。 電子メール メッセージと OME ポータルのカスタマイズの詳細については、「暗号化されたメッセージに組織のブランドを追加する」を参照してください。 「 [暗号化されたメッセージに組織のブランドを追加する」を参照してください](add-your-organization-brand-to-encrypted-messages.md)。
+可能です! 電子メール メッセージと OME ポータルのカスタマイズの詳細については、「暗号化されたメッセージに組織のブランドを追加する」を参照してください。 「 [暗号化されたメッセージに組織のブランドを追加する」を参照してください](add-your-organization-brand-to-encrypted-messages.md)。
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>暗号化されたメールに関するレポート機能や分析情報はありますか?
 
-セキュリティとコンプライアンス センターに暗号化レポートがあります。 「 [セキュリティ コンプライアンス センターで電子メール セキュリティ レポートを表示&する」を参照してください](../security/defender-365-security/view-email-security-reports.md)。
+セキュリティとコンプライアンス センターに暗号化レポートがあります。 「 [セキュリティ コンプライアンス センターで電子メール セキュリティ レポートを表示&する」を参照してください](../security/office-365-security/view-email-security-reports.md)。
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>電子情報開示などのコンプライアンス機能でメッセージ暗号化を使用できますか?
 
@@ -173,7 +173,7 @@ Outlook on the web では、保護されたメールの失効がサポートさ�
 
 ## <a name="can-i-remove-encryption-from-email"></a>電子メールから暗号化を削除できますか?
 
-管理者は、暗号化を削除するメール フロー ルールを設定できます。 暗号化専用保護を使用してメールを受信しない限り、別の組織によって適用されるメールからメール フロー ルールを使用して暗号化を削除できない。
+管理者は、暗号化を削除するメール フロー ルールを設定できます。 メールが暗号化専用保護を使用して暗号化されていない限り、別の組織によって適用されるメールからメール フロー ルールを使用して暗号化を削除できない。
 
 ## <a name="is-delegated-access-supported"></a>委任アクセスはサポートされていますか?
 
@@ -185,7 +185,7 @@ Outlook on the web では、保護されたメールの失効がサポートさ�
 
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>共有メールボックスに送信される暗号化されたメッセージを開く方法は?
 
-はい。 暗号化されたメッセージは、共有メールボックスでサポートされます。
+可能です! 暗号化されたメッセージは、共有メールボックスでサポートされます。
 
 - ユーザーは、共有メールボックスで保護されたメールを開き、共有メールボックスが配布グループの一部として保護されたメールを受信しました。
 

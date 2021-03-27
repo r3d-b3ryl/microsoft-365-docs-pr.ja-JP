@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定した後、AKV キーを復元し、アクセス許可とデータ暗号化ポリシーを管理して、そのキーを管理する方法について説明します。
-ms.openlocfilehash: 8f55667254ce7f5cbd9d4de274623ca4a3c4aa9d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 284a8ff24fef2f7e8b807477c99e20aaf593552e
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909949"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394671"
 ---
 # <a name="manage-customer-key"></a>顧客キーの管理
 
@@ -168,9 +168,11 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
   - **ローリング:** キー ロールが進行中です。 geo のキーがローリングされている場合は、キー ロール操作を完了したサイトの割合に関する情報も表示され、進行状況を監視できます。
 
-## <a name="unassign-a-dep-from-a-mailbox"></a>メールボックスからの DEP の割り当てを解除する
+## <a name="roll-back-from-customer-key-to-microsoft-managed-keys"></a>顧客キーから Microsoft マネージ キーへのロールバック
 
-Set-mailbox PowerShell コマンドレットを使用してメールボックスから DEP の割り当てを解除し、にを設定 `DataEncryptionPolicy` します `$NULL` 。 このコマンドレットを実行すると、現在割り当てられている DEP の割り当てを解除し、既定の Microsoft 管理キーに関連付けられた DEP を使用してメールボックスを再暗号化します。 Microsoft マネージ キーで使用される DEP の割り当てを解除できません。 Microsoft 管理キーを使用しない場合は、別の DEP をメールボックスに割り当てできます。
+テナント レベルの顧客キーの場合は、顧客キーからの "offboarding" の要求を受け取って Microsoft に連絡する必要があります。 要求は On Call Engineering チームによって処理されます。
+
+アプリケーション レベルの顧客キーの場合は、Set-mailbox PowerShell コマンドレットを使用してメールボックスから DEP の割り当てを解除し、にを設定します `DataEncryptionPolicy` `$NULL` 。 このコマンドレットを実行すると、現在割り当てられている DEP の割り当てを解除し、既定の Microsoft 管理キーに関連付けられた DEP を使用してメールボックスを再暗号化します。 Microsoft マネージ キーで使用される DEP の割り当てを解除できません。 Microsoft 管理キーを使用しない場合は、別の顧客キー DEP をメールボックスに割り当てできます。
 
 PowerShell コマンドレットを使用してメールボックスから DEP の割り当てを解除Set-Mailbox手順を実行します。
 
@@ -184,7 +186,7 @@ PowerShell コマンドレットを使用してメールボックスから DEP �
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>キーを取り消し、データ削除パス プロセスを開始する
 
-可用性キーを含むすべてのルート キーの失効を制御します。 顧客キーは、規制要件の出口計画の側面を制御します。 データを削除してサービスを終了するためにキーを取り消す場合、データ削除プロセスが完了すると、サービスは可用性キーを削除します。
+可用性キーを含むすべてのルート キーの失効を制御します。 顧客キーは、規制要件の出口計画の側面を制御します。 データを削除してサービスを終了するためにキーを取り消す場合、データ削除プロセスが完了すると、サービスは可用性キーを削除します。 テナント レベルのポリシーに対してデータ削除を実行できません。
 
 Microsoft 365 は、データ削除パスを監査および検証します。 詳細については、「SSAE 18 SOC 2 Report available on the [Service Trust Portal」を参照してください](https://servicetrust.microsoft.com/)。 さらに、Microsoft では次のドキュメントを推奨しています。
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: この記事では、Microsoft 365 の顧客キーでサービスの暗号化がどのように機能するのかについて説明します。
-ms.openlocfilehash: 9ed4b523c77cf1fa80d23e8fbe5c93e938f222a2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 21291dc45cd634cd5b6a88c4e58972c17486724f
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916889"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394725"
 ---
 # <a name="service-encryption-with-customer-key"></a>カスタマー キーによるサービスの暗号化
 
@@ -37,7 +37,7 @@ Microsoft 365 では、BitLocker と分散キー マネージャー (DKM) を介
 
 ## <a name="customer-key-encrypts-data-at-rest-in-office-365"></a>顧客キーは、365 で保存中のデータOfficeします。
 
-指定したキーを使用して、顧客キーは次の暗号化を行います。
+指定したキーを使用して、アプリケーション レベルの顧客キーは次の値を暗号化します。
 
 - SharePoint Online、OneDrive for Business、Teams ファイル。
 - OneDrive for Business にアップロードされたファイル。
