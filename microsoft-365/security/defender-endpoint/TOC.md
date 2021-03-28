@@ -140,7 +140,7 @@
 ###### [デバイス コントロールの概要](mac-device-control-overview.md)
 ###### [JAMF の例](mac-device-control-jamf.md)
 ###### [Intune の例](mac-device-control-intune.md)
-##### [スキャンのスケジュール](mac-schedule-scan-atp.md)
+##### [スキャンのスケジュール](mac-schedule-scan.md)
 
 #### [トラブルシューティング]()
 ##### [インストールに関する問題のトラブルシューティング](mac-support-install.md)
@@ -354,7 +354,7 @@
 #### [全般]()
 ##### [データの保管場所を確認し、データ保持設定を更新する](data-retention-settings.md)
 ##### [アラート通知を構成する](configure-email-notifications.md)
-##### [高度な機能を構成する](advanced-features.md
+##### [高度な機能を構成する](advanced-features.md)
 
 #### [アクセス許可]()
 ##### [基本的なアクセス許可を使用してポータルにアクセスする](basic-permissions.md)
@@ -587,5 +587,5 @@
 ##### [攻撃面の減少ルール](troubleshoot-asr.md)
 
 # [Microsoft 365 セキュリティ](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 # [Defender for Office 365](../office-365-security/overview.md)
