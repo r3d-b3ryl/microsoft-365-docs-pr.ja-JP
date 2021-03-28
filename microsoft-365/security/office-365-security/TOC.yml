@@ -314,7 +314,7 @@
           href: quarantine-faq.md
     - name: 参照
       items:
-        - name: セキュリティのロードマップ
+        - name: セキュリティ ロードマップ
           href: security-roadmap.md
         - name: EOP のヘルプとサポート
           href: help-and-support-for-eop.md
@@ -382,6 +382,6 @@
     - name: Microsoft 365 セキュリティ
       href: ../index.yml
     - name: Microsoft 365 Defender
-      href: ../defender/index.yml
+      href: ../index.yml
     - name: Microsoft Defender for Endpoint
       href: ../defender-endpoint/index.yml
