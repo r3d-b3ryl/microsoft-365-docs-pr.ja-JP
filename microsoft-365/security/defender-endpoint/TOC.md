@@ -33,7 +33,7 @@
 #### [フェーズ 2: セットアップ](mcafee-to-microsoft-defender-setup.md)
 #### [フェーズ 3: オンボード](mcafee-to-microsoft-defender-onboard.md)
 ### [Symantec から Microsoft Defender for Endpoint に切り替える]()
-#### [移行の概要](symantec-to-microsoft-defender-atp-migration.md)
+#### [移行の概要](symantec-to-microsoft-defender-endpoint-migration.md)
 #### [フェーズ 1: 準備](symantec-to-microsoft-defender-atp-prepare.md)
 #### [フェーズ 2: セットアップ](symantec-to-microsoft-defender-atp-setup.md)
 #### [フェーズ 3: オンボード](symantec-to-microsoft-defender-atp-onboard.md)
@@ -115,7 +115,7 @@
 ##### [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md)
 ##### [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
 
-### [Mac 用 Microsoft Defender Advanced Threat Protection]()
+### [iOS 用 Microsoft Defender for Endpoint]()
 #### [Mac 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-mac.md)
 #### [新機能](mac-whatsnew.md)
 
@@ -378,6 +378,8 @@
 ##### [デバイスのオフボーディング](offboard-machines.md)
 
 #### [Microsoft Defender Security Center のタイム ゾーン設定を構成する](time-settings.md)
+
+### [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](defender-endpoint-false-positives-negatives.md)
 
 ### [他の Microsoft ソリューションとの統合を構成する]()
 #### [条件付きアクセスを構成する](configure-conditional-access.md)
