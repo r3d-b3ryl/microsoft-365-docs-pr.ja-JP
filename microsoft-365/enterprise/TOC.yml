@@ -452,7 +452,7 @@
         - name: Skype for Business
           href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: //MicrosoftTeams/quality-of-experience-review-guide
+          href: 'https://docs.microsoft.com/microsoftteams/upgrade-monitor-quality'
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
         - name: パフォーマンスとチューニング
@@ -477,7 +477,11 @@
             - name: パフォーマンスのトラブルシューティングの計画
               href: performance-troubleshooting-plan.md
 - name: Windows 10
-  href: /windows/deployment/
+  items:
+    - name: サービス正常性の確認方法
+      href: 'https://docs.microsoft.com/windows/deployment/update/check-release-health'
+    - name: 展開と更新
+      href: /windows/deployment/
 - name: Microsoft 365 Apps for enterprise
   href: /deployoffice/deployment-guide-microsoft-365-apps
 - name: Surface デバイス
