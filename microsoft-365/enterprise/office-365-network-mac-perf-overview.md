@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 管理センターでのネットワーク接続の概要 (プレビュー)
-ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926098"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408407"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センターのネットワーク接続 (プレビュー)
 
@@ -148,6 +148,10 @@ Microsoft には、Microsoft 365 の動作をサポートOfficeデスクトッ�
 
 > [!div class="mx-imgBorder"]
 > ![場所固有の詳細](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+
+## <a name="sharing-network-assessment-data-with-microsoft"></a>ネットワーク評価データを Microsoft と共有する
+
+既定では、組織のネットワーク評価とネットワーク分析情報は Microsoft の従業員と共有されます。 これには、スタッフからの個人データが含まれるのではなく、オフィスの場所の管理センターに表示される特定のネットワーク評価指標とネットワークインサイトだけが含まれます。 また、オフィスの所在地名や住所も含まれるので、話し合うオフィスの市区町会とサポート ID を伝える必要があります。 これをオフにすると、ネットワーク接続について説明している Microsoft エンジニアは、この情報を表示できません。 この設定を有効にすると、有効にした日から始まる将来のデータだけが共有されます。
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>LAN サブネットオフィスの場所の CSV インポート
 

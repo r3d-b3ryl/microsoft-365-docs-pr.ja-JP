@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf903bd1b09370dd7de2706b078778137ea029fb
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b568206d4263a574c8de653fe5345dd344ba43
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187819"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408549"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Microsoft Defender for Endpoint for Linux を手動で展開する
 
@@ -87,7 +87,7 @@ Defender for Endpoint for Linux は、以下のいずれかのチャネル *([ch
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    たとえば、CentOS 7 を実行し *、Prod* チャネルから Linux 用 MDE を展開する場合は、次のようになります。
+    たとえば、CentOS 7 を実行し、Prod チャネルから Defender for Endpoint for Linux を展開する場合は、次の *コマンドを実行* します。
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -383,6 +383,27 @@ Options:
 ## <a name="operating-system-upgrades"></a>オペレーティング システムのアップグレード
 
 オペレーティング システムを新しいメジャー バージョンにアップグレードする場合は、まず Defender for Endpoint for Linux をアンインストールし、アップグレードをインストールし、最後にデバイスで Defender for Endpoint for Linux を再構成する必要があります。
+
+## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>サーバーから実稼働チャネルInsiders-Fast移行する方法
+
+1. macOS 用 MDE の "Insiders-Fast チャネル" バージョンをアンインストールします。
+
+    ``
+    sudo yum remove mdatp
+    ``
+
+1. Linux の MDE を無効Insiders-Fastレポ  ``
+    sudo yum repolist
+    ``
+
+    > [!NOTE]
+    > 出力には "packages-microsoft-com-fast-prod" が表示されます。
+
+    ``
+    sudo yum-config-manager --disable packages-microsoft-com-fast-prod
+    ``
+1. "実稼働チャネル" を使用して Linux 用 MDE を再展開します。
+
 
 ## <a name="uninstallation"></a>アンインストール
 

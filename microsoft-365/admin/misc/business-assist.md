@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Microsoft Business Assist プログラムと、ビジネス向け Microsoft 365 のヘルプと使用方法の改善に組織を支援する方法について説明します。
-ms.openlocfilehash: eb0309ae68bf4569d4cba8dd8501343304389e80
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+description: ビジネス アシスト プログラムと、Microsoft 365 for business のヘルプと使用状況の改善に組織を支援する方法について説明します。
+ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034296"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408527"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 のビジネス アシスト
 
 小規模ビジネスの専門家からの専門的なアドバイスを受け、サブスクリプションを有効に利用できます。
 
-**Microsoft 365** の Business Assist は、特に、オンボーディングから日常使用まで、ビジネスの成長に合わせ、5 人未満のユーザーを持つ企業向けサービスです。
+**Microsoft 365** の Business Assist は、5 人未満のユーザーを持つ企業向けで、オンボーディングから日常使用まで、ビジネスの成長に合わせ、中小企業のスペシャリストに 24 時間アクセスできます。
 
 ## <a name="business-assist-services"></a>ビジネス アシスト サービス
 
@@ -38,7 +38,7 @@ ms.locfileid: "51034296"
 | | | |
 
 > [!div class="nextstepaction"]
-> [今すぐ購入する](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [今すぐ購入する](https://go.microsoft.com/fwlink/p/?linkid=2158423)
 
 ## <a name="eligibility-for-business-assist"></a>ビジネス アシストの適格性
 
@@ -58,4 +58,4 @@ ms.locfileid: "51034296"
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: [サービスの購入] ページの [アドオン] セクションからビジネス アシストを購入する":::
 
 > [!div class="nextstepaction"]
-> [今すぐ購入する](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [今すぐ購入する](https://go.microsoft.com/fwlink/p/?linkid=2158423)

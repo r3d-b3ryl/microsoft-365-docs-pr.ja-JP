@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: サブスクリプション間でユーザーを移動する方法について学習します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 7eb07bda4fd1a558a8126f11ef3a1fbc4ceb0389
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 31deb1b81e1f9605210b50036441f98dc3b6a811
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907882"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408305"
 ---
 # <a name="move-users-to-a-different-subscription"></a>ユーザーを別のサブスクリプションに移動する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここに示す詳細と一致しない場合は [、「Overview of Microsoft 365 admin center」を参照してください](../../business-video/admin-center-overview.md)。
 
 ::: moniker-end
 
@@ -46,24 +46,32 @@ ms.locfileid: "50907882"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+
 2. 既存のライセンスを置き換えるユーザーの名前の横にある円を選択します。
-3. 上部で [**その他のオプション (...)**] を選択し、[**製品ライセンスの管理**] を選択します。
-4. [**製品ライセンスの管理**] ウィンドウで、[**既存の製品ライセンス割り当てを置き換える**] \> [**次へ**] の順に選択します。
-5. これらのユーザーに割り当 **てる** ライセンスの [オン] の位置に切り替えます。\
-    ユーザーが利用できるサービスを制限できます。 それらのユーザーに設定しないサービスのトグルを [**オフ**] の位置に切り替えます。 選択したユーザーで以前に割り当てられたライセンスは削除されます。
-6. [**既存の製品を置き換える**] ウィンドウの下部で、[**置換**] \> [**閉じる**] の順に選択します。
+
+3. 上部の [製品ライセンスの **管理] を選択します**。
+
+4. [製品ライセンス **の管理] ウィンドウ** で、[置換] **を**  選択し、ユーザーに割り当てるライセンスを選択します。
+
+5. 下部にある [変更の保存] **を** \> **選択します**。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+
 2. 既存のライセンスを置き換えるユーザー名の横のチェック ボックスをオンにします。
+
 3. [**一括処理**] ウィンドウで、[**製品ライセンスの編集**] を選択します。
+
 4. [**製品の割り当て**] ウィンドウで、[**既存の製品ライセンス割り当てを置き換える**] \> [**次へ**] の順に選択します。
-5. これらのユーザーに割り当 **てる** ライセンスの [オン] の位置に切り替えます。\
+
+5. これらのユーザーに割り当てるライセンスのトグルを [**オン**] の位置に切り替えます。
+
     ユーザーが利用できるサービスを制限できます。 そのユーザーに設定しないサービスのトグルを [**オフ**] の位置に切り替えます。 選択したユーザーで以前に割り当てられたライセンスは削除されます。
+
 6. [**既存の製品を置き換える**] ウィンドウの下部で、[**置換**] \> [**閉じる**] \> [**閉じる**] の順に選択します。
 
 ::: moniker-end
@@ -71,11 +79,17 @@ ms.locfileid: "50907882"
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+
 2. 既存のライセンスを置き換えるユーザー名の横のチェック ボックスをオンにします。
+
 3. [**一括処理**] ウィンドウで、[**製品ライセンスの編集**] を選択します。
+
 4. [**製品の割り当て**] ウィンドウで、[**既存の製品ライセンス割り当てを置き換える**] \> [**次へ**] の順に選択します。
-5. これらのユーザーに割り当 **てる** ライセンスの [オン] の位置に切り替えます。\
+
+5. これらのユーザーに割り当てるライセンスのトグルを [**オン**] の位置に切り替えます。
+
     ユーザーが利用できるサービスを制限できます。 そのユーザーに設定しないサービスのトグルを [**オフ**] の位置に切り替えます。 選択したユーザーで以前に割り当てられたライセンスは削除されます。
+
 6. [**既存の製品を置き換える**] ウィンドウの下部で、[**置換**] \> [**閉じる**] \> [**閉じる**] の順に選択します。
 
 ::: moniker-end
@@ -91,3 +105,4 @@ ms.locfileid: "50907882"
 [手動でプランを変更](change-plans-manually.md) する (記事)\
 [Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) のサブスクリプションとライセンスについて (記事)\
 [別の Microsoft 365 for business サブスクリプションを購入](../try-or-buy-microsoft-365.md) する (記事)
+

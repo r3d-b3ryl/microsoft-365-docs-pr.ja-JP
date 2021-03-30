@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc9e5fb29518207c5360d5fbe29b8b4848d350e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 18e43d8e38c24a8aa28c6455dc1a769b8da0df2b
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067507"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408625"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -34,7 +34,9 @@ ms.locfileid: "51067507"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-高度 `DeviceTvmSoftwareInventory` な検索スキーマの表には、ネットワーク [内のデバイスに現在インストール](next-gen-threat-and-vuln-mgt.md) されているソフトウェアの脅威&脆弱性管理インベントリ (サポート情報の終了など) が含まれている。 たとえば、現在脆弱なソフトウェア バージョンでインストールされているデバイスに関連するイベントを探します。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
+高度 `DeviceTvmSoftwareInventory` な検索スキーマの表には、ネットワーク内[](next-gen-threat-and-vuln-mgt.md)のデバイスに現在インストールされているソフトウェアの脅威と脆弱性管理インベントリ (サポート情報の終了など) が含まれている。 たとえば、現在脆弱なソフトウェア バージョンでインストールされているデバイスに関連するイベントを探します。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
+
+DeviceTVMSoftwareInventory には、脅威と脆弱性の管理が共通プラットフォーム列挙 (CPE) と一致する可能性があるすべてのソフトウェアが含まれている 。脆弱性が存在するかどうかに関わりはありません。
 
 >[!NOTE]
 >テーブル `DeviceTvmSoftwareInventory` と `DeviceTvmSoftwareVulnerabilities` テーブルがテーブルを置き換 `DeviceTvmSoftwareInventoryVulnerabilities` えました。 最初の 2 つの表には、脆弱性管理アクティビティの通知に使用できる列が追加されています。
@@ -43,23 +45,20 @@ ms.locfileid: "51067507"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
+| `DeviceId` | string | サービス内のデバイスの一意の識別子。 |
+| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN)。 |
 | `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
-| `OSVersion` | string | デバイスで実行されているオペレーティング システムのバージョン |
-| `OSArchitecture` | string | デバイスで実行されているオペレーティング システムのアーキテクチャ |
-| `SoftwareVendor` | string | ソフトウェア ベンダーの名前 |
-| `SoftwareName` | string | ソフトウェア製品の名前 |
-| `SoftwareVersion` | string | ソフトウェア製品のバージョン番号 |
-| `EndOfSupportStatus` | string | 指定したサポート終了日 (EOS) または終了日 (EOL) を基準にしたソフトウェア製品のライフサイクル ステージを示します。 |
-| `EndOfSupportDate` | string | ソフトウェア製品のサポート終了日 (EOS) または終了日 (EOL) |
-
-
+| `OSVersion` | string | デバイスで実行されているオペレーティング システムのバージョン。 |
+| `OSArchitecture` | string | デバイスで実行されているオペレーティング システムのアーキテクチャ。 |
+| `SoftwareVendor` | string | ソフトウェア ベンダーの名前。 |
+| `SoftwareName` | string | ソフトウェア製品の名前。 |
+| `SoftwareVersion` | string | ソフトウェア製品のバージョン番号。 |
+| `EndOfSupportStatus` | string | 指定したサポート終了日 (EOS) または終了 (EOL) の日付を基準にしたソフトウェア製品のライフサイクル ステージを示します。 |
+| `EndOfSupportDate` | string | ソフトウェア製品のサポート終了日 (EOS) または終了 (EOL) 日付。 |
 
 ## <a name="related-topics"></a>関連項目
 
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-reference.md)
 - [脅威および脆弱性管理の概要](next-gen-threat-and-vuln-mgt.md)
-

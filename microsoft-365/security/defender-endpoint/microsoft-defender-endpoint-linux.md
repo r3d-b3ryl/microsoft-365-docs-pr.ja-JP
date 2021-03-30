@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84d85b723d4dcbdfc07a074c40241242c57bc390
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185589"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408339"
 ---
-# <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Endpoint for Linux
+# <a name="microsoft-defender-for-endpoint-for-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -83,6 +83,11 @@ Microsoft Defender for Endpoint for Linux のインストールと構成に使�
   > Defender for Endpoint for Linux を他のベースのセキュリティ ソリューションと並べて実行する `fanotify` 方法はサポートされていません。 オペレーティング システムのハングを含む予期しない結果につながる可能性があります。
 
 - ディスク領域: 1 GB
+- /opt/microsoft/mdatp/sbin/wdavdaemon には実行可能なアクセス許可が必要です。 詳細については、「Microsoft Defender ATP for Linux のインストールに関する問題のトラブルシューティング」の「デーモンに実行可能なアクセス許可が付与されている」 [を参照してください](/microsoft-365/security/defender-endpoint/linux-support-install)。
+- メモリ: 1 GB
+    > [!NOTE]
+    > /var に空きディスク領域が含まれます。
+
 - ソリューションは現在、次のファイル システムの種類に対してリアルタイム保護を提供します。
 
   - `btrfs`
@@ -112,7 +117,7 @@ Microsoft Defender for Endpoint for Linux のインストールと構成に使�
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルタールールが存在しなかっている必要があります。 ある場合は、許可ルール *の作成が* 必要な場合があります。
 
-|**ドメインリストのスプレッドシート**|**説明**|
+|**ドメインリストのスプレッドシート**|**Description**|
 |:-----|:-----|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

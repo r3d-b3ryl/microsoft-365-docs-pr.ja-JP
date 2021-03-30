@@ -6,10 +6,10 @@
   items:
     - name: Microsoft 365 の試用または購入
       href: try-or-buy-microsoft-365.md
-    - name: 試用期間を延長する
-      href: extend-your-trial.md
     - name: アドオンを購入するか、管理します
       href: buy-or-edit-an-add-on.md
+    - name: Microsoft 365 のビジネスサポート
+      href: ../admin/misc/business-assist.md
     - name: 記憶領域を追加する
       href: add-storage-space.md
 - name: サブスクリプションを管理する

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed28d3b5b7bafaea2d72b7a8c45f66bf69033bc2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a8595bae216911350d3f18fcceef729ef020a424
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187795"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408167"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Endpoint for Linux の基本設定を設定する
 
@@ -61,6 +61,7 @@ ms.locfileid: "51187795"
 | **キー** | antivirusEngine |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+|||
 
 #### <a name="enable--disable-real-time-protection"></a>リアルタイム保護を有効/無効にする
 
@@ -71,6 +72,7 @@ ms.locfileid: "51187795"
 | **キー** | enableRealTimeProtection |
 | **データ型** | Boolean |
 | **可能な値** | true (既定) <br/> false |
+|||
 
 #### <a name="enable--disable-passive-mode"></a>パッシブ モードを有効/無効にする
 
@@ -87,6 +89,7 @@ ms.locfileid: "51187795"
 | **データ型** | Boolean |
 | **指定可能な値** | false (既定) <br/> true |
 | **コメント** | Defender for Endpoint version 100.67.60 以上で使用できます。 |
+|||
 
 #### <a name="exclusion-merge-policy"></a>除外マージ ポリシー
 
@@ -98,6 +101,7 @@ ms.locfileid: "51187795"
 | **データ型** | String |
 | **指定可能な値** | merge (既定) <br/> admin_only |
 | **コメント** | Defender for Endpoint version 100.83.73 以上で使用できます。 |
+|||
 
 #### <a name="scan-exclusions"></a>スキャンの除外
 
@@ -108,6 +112,7 @@ ms.locfileid: "51187795"
 | **キー** | 除外 |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+|||
 
 **除外の種類**
 
@@ -118,6 +123,7 @@ ms.locfileid: "51187795"
 | **キー** | $type |
 | **データ型** | String |
 | **指定可能な値** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+|||
 
 **除外されたコンテンツへのパス**
 
@@ -129,6 +135,7 @@ ms.locfileid: "51187795"
 | **データ型** | String |
 | **指定可能な値** | 有効なパス |
 | **コメント** | 適用 *できるのは、$type**が excludedPath である場合のみです。* |
+|||
 
 **パスの種類 (ファイル/ディレクトリ)**
 
@@ -140,6 +147,7 @@ ms.locfileid: "51187795"
 | **データ型** | Boolean |
 | **指定可能な値** | false (既定) <br/> true |
 | **コメント** | 適用 *できるのは、$type**が excludedPath である場合のみです。* |
+|||
 
 **スキャンから除外されたファイル拡張子**
 
@@ -151,6 +159,7 @@ ms.locfileid: "51187795"
 | **データ型** | String |
 | **指定可能な値** | 有効なファイル拡張子 |
 | **コメント** | 適用 *できるのは* 、$type FileExtension が *除外されている場合のみです。* |
+|||
 
 **スキャンから除外されるプロセス**
 
@@ -162,6 +171,7 @@ ms.locfileid: "51187795"
 | **データ型** | String |
 | **指定可能な値** | 任意の文字列 |
 | **コメント** | ファイルが excludedFileName *$type**場合にのみ適用されます。* |
+|||
 
 #### <a name="allowed-threats"></a>許可される脅威
 
@@ -171,6 +181,7 @@ ms.locfileid: "51187795"
 |:---|:---|
 | **キー** | allowedThreats |
 | **データ型** | 文字列の配列 |
+|||
 
 #### <a name="disallowed-threat-actions"></a>禁止された脅威アクション
 
@@ -182,6 +193,7 @@ ms.locfileid: "51187795"
 | **データ型** | 文字列の配列 |
 | **可能な値** | allow (ユーザーによる脅威の許可を制限する) <br/> 復元 (検疫からの脅威の復元をユーザーに制限する) |
 | **コメント** | Defender for Endpoint version 100.83.73 以上で使用できます。 |
+|||
 
 #### <a name="threat-type-settings"></a>脅威の種類の設定
 
@@ -192,6 +204,7 @@ ms.locfileid: "51187795"
 | **キー** | threatTypeSettings |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+|||
 
 **脅威の種類**
 
@@ -202,6 +215,7 @@ ms.locfileid: "51187795"
 | **キー** | キー |
 | **データ型** | String |
 | **指定可能な値** | potentially_unwanted_application <br/> archive_bomb |
+|||
 
 **実行する操作**
 
@@ -216,6 +230,7 @@ ms.locfileid: "51187795"
 | **キー** | 値 |
 | **データ型** | String |
 | **指定可能な値** | 監査 (既定) <br/> block <br/> off |
+|||
 
 #### <a name="threat-type-settings-merge-policy"></a>脅威の種類の設定の差し込みポリシー
 
@@ -227,6 +242,7 @@ ms.locfileid: "51187795"
 | **データ型** | String |
 | **指定可能な値** | merge (既定) <br/> admin_only |
 | **コメント** | Defender for Endpoint version 100.83.73 以上で使用できます。 |
+|||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>ウイルス対策スキャン履歴の保持 (日数)
 
@@ -238,6 +254,7 @@ ms.locfileid: "51187795"
 | **データ型** | String |
 | **指定可能な値** | 90 (既定)。 使用できる値は、1 日から 180 日です。 |
 | **コメント** | Defender for Endpoint version 101.04.76 以上で使用できます。 |
+|||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>ウイルス対策スキャン履歴内のアイテムの最大数
 
@@ -249,6 +266,7 @@ ms.locfileid: "51187795"
 | **データ型** | String |
 | **指定可能な値** | 10000 (既定値)。 許可される値は、5000 アイテムから 15,000 アイテムまでです。 |
 | **コメント** | Defender for Endpoint version 101.04.76 以上で使用できます。 |
+|||
 
 ### <a name="cloud-delivered-protection-preferences"></a>クラウドによる保護の基本設定
 
@@ -259,6 +277,7 @@ ms.locfileid: "51187795"
 | **キー** | cloudService |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+|||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>クラウド配信保護を有効/無効にする
 
@@ -269,6 +288,7 @@ ms.locfileid: "51187795"
 | **キー** | enabled |
 | **データ型** | Boolean |
 | **可能な値** | true (既定) <br/> false |
+|||
 
 #### <a name="diagnostic-collection-level"></a>診断コレクション レベル
 
@@ -279,6 +299,7 @@ ms.locfileid: "51187795"
 | **キー** | diagnosticLevel |
 | **データ型** | String |
 | **指定可能な値** | 省略可能 (既定) <br/> 必須 |
+|||
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>自動サンプル申請を有効または無効にする
 
@@ -293,6 +314,7 @@ ms.locfileid: "51187795"
 | **キー** | automaticSampleSubmissionConsent |
 | **データ型** | String |
 | **指定可能な値** | none <br/> safe (既定) <br/> すべての |
+|||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>セキュリティ インテリジェンスの自動更新を有効または無効にする
 
@@ -303,6 +325,7 @@ ms.locfileid: "51187795"
 | **キー** | automaticDefinitionUpdateEnabled |
 | **データ型** | Boolean |
 | **可能な値** | true (既定) <br/> false |
+|||
 
 ## <a name="recommended-configuration-profile"></a>推奨される構成プロファイル
 
@@ -339,6 +362,7 @@ ms.locfileid: "51187795"
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true
+      "proxy":"http://proxy.server:port/"
    }
 }
 ```
@@ -399,6 +423,7 @@ ms.locfileid: "51187795"
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true
+      "proxy": "http://proxy.server:port/"
    }
 }
 ```
@@ -412,6 +437,17 @@ python -m json.tool mdatp_managed.json
 ```
 
 JSON が整形式の場合、上記のコマンドはターミナルに出力し、終了コードを返します `0` 。 それ以外の場合は、問題を説明するエラーが表示され、コマンドは終了コードを返します `1` 。
+
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>ファイル上のmdatp_managed.jsが正常に動作しているのを確認する
+/etc/opt/microsoft/mdatp/managed/mdatp_managed.jsが正しく動作することを確認するには、次の設定の横に "[managed]" と表示されます。  
+- cloud_enabled
+- cloud_automatic_sample_submission_consent
+- passice_mode_enabled
+- real_time_protection_enabled
+- automatic_definition_update_enabled
+
+> [!NOTE]
+> 有効にmdatp_managed.js、wdavdaemon の再起動は必要ありません。
 
 ## <a name="configuration-profile-deployment"></a>構成プロファイルの展開
 

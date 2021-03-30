@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: 49fe330fa6844361a77caaebb0e6a411297ee643
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ee828b6852440f5be07fdf34df2fb6a11253ae1c
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907017"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034248"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
@@ -89,7 +89,7 @@ ms.locfileid: "50907017"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>手順 1: 保持期間がイベントに基づくラベルを作成する
 
-保持ラベルを作成して構成するには、[[保持ラベルの作成と構成](./create-apply-retention-labels.md#create-and-configure-retention-labels)] の手順を使用します。 ただし、イベント ベースの保持に固有の [保持ラベルの作成] ウィザードの [**保持設定の定義**] ページで、**次の期間に基づいて保持期間を開始** した後、既定のイベントの種類の 1 つをドロップダウン リスト、または **新しいイベントの種類の作成** を選択して独自のリストを作成します。
+保持ラベルを作成するには、[[保持ラベルの作成と構成](./create-apply-retention-labels.md#step-1-create-retention-labels)] の手順をご覧ください。 ただし、イベント ベースの保持に固有の [保持ラベルの作成] ウィザードの [**保持設定の定義**] ページで、**次の期間に基づいて保持期間を開始** した後、既定のイベントの種類の 1 つをドロップダウン リスト、または **新しいイベントの種類の作成** を選択して独自のリストを作成します。
 
 ![保持ラベルの新しいイベントの種類を作成する](../media/SPRetention6.png)
 
@@ -212,7 +212,7 @@ REST API を使用するには、2 つのオプションがあります。
 
 REST API を使用する前に、グローバル管理者として、保持イベント呼び出しに使用する URL を確認します。 これを行うには、REST API の URL を使用して、保持イベント呼び出しの取得を実行します。
 
-```console
+```http
 https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
 ```
 

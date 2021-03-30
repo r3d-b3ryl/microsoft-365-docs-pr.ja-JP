@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394748"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418118"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -72,6 +72,9 @@ ms.locfileid: "51394748"
 >この設定を変更すると、将来のアラートの相関関係にのみ影響します。
 
 
+## <a name="enable-edr-in-block-mode"></a>ブロック モードで EDR を有効にする
+ブロック モードのエンドポイント検出と応答 (EDR) は、Microsoft Defender Antivirus がパッシブ モードで実行されている場合でも、悪意のあるアーティファクトからの保護を提供します。 オンにすると、ブロック モードの EDR は、デバイスで検出された悪意のあるアーティファクトや動作をブロックします。 ブロック モードの EDR は、侵害後に検出された悪意のあるアーティファクトを修復するために、舞台裏で動作します。
+
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修復されたアラート
 
 Windows 10 バージョン 1809 以降に作成されたテナントの場合、自動分析結果の状態が "脅威が見つかりません" または "修復済み" であるアラートを解決するように、自動調査と修復機能が既定で構成されています。  アラートを自動解決したくない場合は、手動で機能をオフにする必要があります。
@@ -115,6 +118,14 @@ Windows 10 バージョン 1809 以降に作成されたテナントの場合、
 
 > [!NOTE]
 > ネットワーク保護は、Defender for Endpoint データで選択した場所の外部にある可能性がある場所で要求を処理する評判サービスを活用します。
+
+
+## <a name="tamper-protection"></a>タンパープロテクション
+一部の種類のサイバー攻撃では、悪いアクターがコンピューターでウイルス対策保護などのセキュリティ機能を無効にしようとします。 悪いアクターは、データに簡単にアクセスしたり、マルウェアをインストールしたり、データ、ID、デバイスを悪用したりするために、セキュリティ機能を無効にしています。
+
+タンパープロテクションは基本的に Microsoft Defender ウイルス対策をロックし、アプリやメソッドを通じてセキュリティ設定が変更されるのを防ぐ。
+
+セキュリティ ソリューションとその重要な機能に対する望ましくない変更を防止するために、改ざん防止を有効にしてください。
 
 ## <a name="show-user-details"></a>ユーザーの詳細を表示する
 
@@ -219,4 +230,4 @@ Insider リスク管理設定で [セキュリティ ポリシー](/microsoft-36
 ## <a name="related-topics"></a>関連項目
 
 - [データ保持設定の更新](data-retention-settings.md)
-- [アラート通知の構成](configure-email-notifications.md)
+- [アラート通知を構成する](configure-email-notifications.md)

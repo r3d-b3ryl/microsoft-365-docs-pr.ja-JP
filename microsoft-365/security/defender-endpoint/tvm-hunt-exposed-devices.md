@@ -1,5 +1,5 @@
 ---
-title: 公開されているデバイスのハント
+title: 露出したデバイスの追求
 description: セキュリティ管理者、IT 管理者、および SecOps の共同作業に脅威と脆弱性の管理を使用する方法について説明します。
 keywords: mdatp-tvm のシナリオ、mdatp、tvm、tvm のシナリオ、脅威& の脆弱性の暴露を減らす、脅威と脆弱性を軽減する、セキュリティ構成を改善する、デバイスの Microsoft Secure Score を増やす、デバイスの脅威 & の脆弱性を増やす Microsoft Secure Score、Microsoft Secure Score for Devices、露出スコア、セキュリティコントロール
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9af7464d9cae06dc53abb019aa0b189d6e72e749
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 99e59005bc01a113567e64c921ddcdc1d66785d2
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060830"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408293"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>公開されているデバイスを探す - 脅威と脆弱性の管理
 
@@ -43,13 +43,13 @@ ms.locfileid: "51060830"
 
 ### <a name="schema-tables"></a>スキーマ テーブル
 
-- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - デバイスにインストールされているソフトウェアのインベントリ (バージョン情報とサポート終了の状態を含む)
+- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - デバイスにインストールされているソフトウェアのインベントリ (バージョン情報やサポート終了の状態を含む)。
 
-- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - デバイスで見つかったソフトウェアの脆弱性と、各脆弱性に対処する利用可能なセキュリティ更新プログラムの一覧
+- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - デバイスで見つかったソフトウェアの脆弱性と、各脆弱性に対処する利用可能なセキュリティ更新プログラムの一覧。
 
-- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - 悪用コードが一般に公開されているかどうかを含む、一般に公開された脆弱性のナレッジ ベース
+- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - 悪用コードが一般に公開されているかどうかを含む、一般に公開された脆弱性のナレッジ ベース。
 
-- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - デバイス上のさまざまなセキュリティ構成の状態を示す脅威および脆弱性管理評価イベント
+- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - デバイス上のさまざまなセキュリティ構成の状態を示す脅威および脆弱性管理評価イベント。
 
 - [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - Threat & 脆弱性管理でデバイスを評価するために使用されるさまざまなセキュリティ構成のナレッジ ベース。さまざまな標準とベンチマークへのマッピングが含まれています
 
@@ -81,5 +81,5 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)
 - [脅威と脆弱性管理の役割のデータ アクセスを構成する](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [高度な検出の概要](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [高度な追求の概要](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [すべての高度な検索テーブル](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)

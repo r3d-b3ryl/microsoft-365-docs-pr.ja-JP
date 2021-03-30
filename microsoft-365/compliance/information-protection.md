@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Microsoft Information Protection (MIP) を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: 285b5885f56151bcbd877eb6ede04447c7a405dc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e8487bf443592fa45b887929f947b701406dba55
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927041"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394695"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 の Microsoft Information Protection
 
@@ -47,8 +47,8 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 データの状況を把握し、ハイブリッド環境全体にわたって重要なデータを識別するには、次の機能を使用します:
  
 |機能|解決される問題|作業の開始|
-|:------|:------------|:--------------------|:-----------------------------|
-|[機密情報の種類](sensitive-information-type-entity-definitions.md)| 組み込みの正規表現、カスタムの正規表現、関数を使用して、機密性の高いデータを識別します。 補強証拠には、キーワード、信頼度レベル、近接度があります。| [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)|
+|:------|:------------|:--------------------|
+|[機密情報の種類](sensitive-information-type-learn-about.md)| 組み込みの正規表現、カスタムの正規表現、関数を使用して、機密性の高いデータを識別します。 補強証拠には、キーワード、信頼度レベル、近接度があります。| [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)|
 |[トレーニング可能な分類子](classifier-learn-about.md)| アイテム内の要素を識別する (パターン マッチング) のではなく、関心のあるデータの例を使用して機密性の高いデータを識別します。 組み込みの分類子を使用することも、独自のコンテンツを使用して分類子をトレーニングすることもできます。| [トレーニング可能な分類子の使用を開始する](classifier-get-started-with.md) |
 |[データの分類](data-classification-overview.md) | 組織内の、秘密度ラベルまたは保持ラベルを有するアイテムまたは分類済みアイテムのグラフィカルな ID です。 この情報を使用して、ユーザーがこれらのアイテムに対して実行しているアクションに関する分析情報を得ることもできます。 | [コンテンツ エクスプローラーの使用を開始する](data-classification-content-explorer.md)<br /><br /> [アクティビティ エクスプローラーの使用を開始する](data-classification-activity-explorer.md) |
 
@@ -57,7 +57,7 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 暗号化、アクセス制限、視覚的なマーキングなどを含む柔軟な保護アクションを適用するには、次の機能を使用します。
 
 |機能|解決される問題|作業の開始|
-|:------|:------------|---------------------|:----------------------------|
+|:------|:------------|---------------------|
 |[秘密度ラベル](sensitivity-labels.md)| 組織の内外を移動するデータをラベル付けして保護する、アプリ、サービス、デバイスにまたがる単一のソリューションです。 <br /><br />サンプル シナリオ: <br /> [Office アプリの秘密度ラベルを管理する](sensitivity-labels-office-apps.md)<br /> [ドキュメントとメールを暗号化する](encryption-sensitivity-labels.md )<br /> [Power BI でラベルを適用して表示する](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> 秘密度ラベルのシナリオの包括的なリストについては、"作業の開始" のドキュメントを参照してください。|[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)| Windows コンピューターの場合、秘密度ラベルが拡張され、すべてのファイルの種類に対するエクスプローラーや PowerShell からのラベル付けや保護を含む機能が追加されています<br /><br /> 追加機能の例: [Azure Information Protection 統合ラベル付けクライアントのカスタム構成](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection 統合ラベル付けクライアント管理者ガイド](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[二重キー暗号化](double-key-encryption.md)| どのような状況においても、保護されたコンテンツを復号化できるのは自分の組織だけです。また、規制要件により、暗号化キーを地理的な境界内に保持する必要があります。 | [二重キー暗号化の展開](double-key-encryption.md#deploy-dke)|
@@ -76,6 +76,9 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 
 
 |機能|解決される問題|作業の開始|
-|:------|:------------|:---------------------|:-----------------------------|
-|[データ損失防止 (DLP)](data-loss-prevention-policies.md)| 機密アイテムの意図しない共有の防止をサポートします。 <br /><br />サンプル シナリオ: [Microsoft Teams のチャットやチャネル メッセージでの機密情報の保護](dlp-microsoft-teams.md) | [既定の DLP ポリシーの使用を開始する](get-started-with-the-default-dlp-policy.md)|
+|:------|:------------|:---------------------|
+|[データ損失防止 (DLP)](data-loss-prevention-policies.md)| 機密アイテムの意図しない共有の防止をサポートします。 | [既定の DLP ポリシーの使用を開始する](get-started-with-the-default-dlp-policy.md)|
 |[エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)| Windows 10 コンピューターで使用され共有されるアイテムに DLP 機能を拡張します。 | [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md)|
+|[Microsoft Compliance Extension (プレビュー) の詳細情報](dlp-chrome-learn-about.md) | Chrome ブラウザーに DLP 機能を拡張します | [Microsoft Compliance Extension (プレビュー) を開始する](dlp-chrome-get-started.md)|
+|[Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報 (プレビュー)](dlp-on-premises-scanner-learn.md)|ファイル アクティビティの DLP 監視とそれらのファイルの保護アクションを、オンプレミスのファイル共有と SharePoint フォルダーおよびドキュメント ライブラリに拡張します。|[Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) の使用を開始する](dlp-on-premises-scanner-get-started.md)|
+|[Microsoft Teams のチャットやチャネル メッセージでの機密情報の保護](dlp-microsoft-teams.md) | 一部の DLP 機能を Teams のチャットおよびチャネル メッセージに拡張します | [Microsoft Teams の既定のデータ損失防止ポリシーについての詳細情報 (プレビュー)](dlp-teams-default-policy.md)| 
