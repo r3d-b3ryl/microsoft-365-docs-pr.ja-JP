@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft Defender for Endpoint のドキュメント
-summary: Microsoft Defender for Endpoint は、予防保護、侵害後の検出、自動調査、および対応を提供します。
+title: Microsoft Defender for Endpoint ドキュメント
+summary: Microsoft Defender for Endpoint は、予防的な保護、侵害後の検出、自動調査、および対応を行います。
 metadata:
-  title: Microsoft Defender for Endpoint のドキュメント
-  description: Microsoft Defender for Endpoint について説明し、組み込みのセキュリティ機能を最大限に活用して、デバイスの保護、悪意のあるアクティビティの検出、脅威の修復を行います。必須。検索結果に表示される記事の説明。 < 160 文字です。
+  title: Microsoft Defender for Endpoint ドキュメント
+  description: Microsoft Defender for Endpoint について学習し、組み込みのセキュリティ機能を最大限に活用してデバイスを保護し、悪意のあるアクティビティを検出し、脅威を修復します#必須。検索結果に表示される記事の説明。 < 160 文字。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: efa23f4c40021d95185203c22c8bba5009e15f2f
   ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 03/24/2021
   ms.locfileid: "51185745"
@@ -32,13 +32,13 @@ landingContent:
       url: whats-new-in-microsoft-defender-atp.md
   - linkListType: video
     links:
-    - text: 概要ビデオ
+    - text: 概要のビデオ
       url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
-- title: サービス&を評価する
+- title: サービスの評価と展開
   linkLists:
   - linkListType: get-started
     links:
-    - text: エンドポイントに対する Microsoft Defender の評価
+    - text: Microsoft Defender for Endpoint の評価
       url: evaluation-lab.md
     - text: 展開の計画
       url: deployment-strategy.md
@@ -46,7 +46,7 @@ landingContent:
     links:
     - text: 展開ガイド
       url: deployment-phases.md
-    - text: オンボードでサポートされているデバイス
+    - text: サポート対象デバイスのオンボード
       url: onboard-configure.md
   - linkListType: how-to-guide
     links:
@@ -62,27 +62,27 @@ landingContent:
     links:
     - text: エンドポイントの検出および応答
       url: overview-endpoint-detection-response.md
-    - text: 動作のブロックと格納
+    - text: 動作ブロックと封じ込め
       url: behavioral-blocking-containment.md
-    - text: 自動調査と対応 (AIR)
+    - text: 自動調査と応答 (AIR)
       url: automated-investigations.md
-    - text: 高度な検出
+    - text: 高度な追及
       url: advanced-hunting-overview.md
     - text: Microsoft 脅威エキスパート
       url: microsoft-threat-experts.md
     - text: 脅威の分析
       url: threat-analytics.md
-- title: 他のプラットフォームで Microsoft Defender for Endpoint を使用する
+- title: 他のプラットフォームでの Microsoft Defender for Endpoint の使用
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Defender for Endpoint for Mac
+    - text: Mac 用 Microsoft Defender for Endpoint
       url: microsoft-defender-endpoint-mac.md
     - text: iOS 用 Microsoft Defender for Endpoint
       url: microsoft-defender-endpoint-ios.md
-    - text: Microsoft Defender for Endpoint for Linux
+    - text: Linux 用 Microsoft Defender for Endpoint
       url: microsoft-defender-endpoint-linux.md
-    - text: Android 用エンドポイント用 Microsoft Defender
+    - text: Android 用 Microsoft Defender for Endpoint
       url: microsoft-defender-endpoint-android.md
 - title: 参照
   linkLists:
@@ -96,7 +96,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 脅威&の管理
+    - text: 脅威と脆弱性の管理
       url: next-gen-threat-and-vuln-mgt.md
     - text: 攻撃面の縮小
       url: overview-attack-surface-reduction.md

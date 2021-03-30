@@ -21,6 +21,8 @@
           href: service-description/device-lifecycle.md
         - name: デバイスの要件
           href: service-description/device-requirements.md
+        - name: デバイスの画像
+          href: service-description/device-images.md
         - name: プログラム デバイス
           href: service-description/device-list.md
           items:

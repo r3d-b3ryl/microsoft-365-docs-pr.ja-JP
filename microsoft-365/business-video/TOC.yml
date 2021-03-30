@@ -49,6 +49,8 @@
       items:
         - name: Outlook と Teams を使用する
           href: collab-outlook-teams.md
+        - name: 小規模ビジネスで Microsoft Teams を開始する
+          href: get-started-teams-small-business.md
         - name: グループのメール アドレスを作成する
           href: group-email.md
         - name: 共有予定表を作成する
@@ -101,6 +103,8 @@
           href: view-bill.md
         - name: 新しいライセンスを購入する
           href: buy-licenses.md
+        - name: 既存のライセンスを削除する
+          href: remove-existing-licenses.md
         - name: 支払方法を更新する
           href: update-payment.md
         - name: ユーザー パスワードをリセットする

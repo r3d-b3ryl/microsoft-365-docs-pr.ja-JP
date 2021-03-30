@@ -377,7 +377,7 @@
               href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: Globanet データコネクタ
+        - name: Veritas データ コネクタ
           items:
             - name: CellTrust
               href: archive-celltrust-data.md
@@ -411,10 +411,10 @@
               href: archive-symphony-data.md
             - name: 区切られたテキスト
               href: archive-text-delimited-data.md
-            - name: Web ページ
-              href: archive-webpagecapture-data.md
             - name: Webex チーム
               href: archive-webexteams-data.md
+            - name: Web ページ
+              href: archive-webpagecapture-data.md
             - name: Facebookからの職場
               href: archive-workplacefromfacebook-data.md
             - name: XIP
@@ -697,6 +697,8 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: テーマ
               href: themes-in-advanced-ediscovery.md
+            - name: プレディクティブ コーディング モジュール (プレビュー)
+              href: predictive-coding-overview.md
             - name: 関連モジュールを使用したデータ分析
               href: using-relevance.md
             - name: 関連モジュールの廃止
