@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
 description: この記事では、Office 365 Import Service を使用して PST ファイルを Microsoft 365 にインポートする方法について管理者に対してよく寄せられる質問に対する回答について説明します。
-ms.openlocfilehash: adcc84df7aed25f0d51c8fb6a1899bfa56453854
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d775e7cadb71e47cc916a064386971ecd3d08afc
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906791"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408636"
 ---
 # <a name="faq-about-importing-pst-files"></a>PST ファイルのインポートに関する FAQ
 
 **この記事は管理者向けです。PST ファイルを自分のメールボックスにインポートしますか?「Outlook [.pst ファイルからメール、連絡先、予定表をインポートする」を参照してください。](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
-   
+
 Microsoft 365 メールボックスに PST ファイルを一括インポートする Office 365 Import Service の使用に関してよく寄せられる質問を次に示します。 PST ファイルをインポートする方法の詳細については、「PST ファイルを [365 にインポートするOfficeを参照してください](./importing-pst-files-to-office-365.md)。
   
 ## <a name="using-network-upload-to-import-pst-files"></a>ネットワーク アップロードを使用して PST ファイルをインポートする
@@ -83,7 +83,7 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
 
  **PST ファイルをインポートするときにメッセージ サイズに制限はありますか?**
   
-はい。 PST ファイルに 150 MB を超えるメールボックス アイテムが含まれる場合、インポート プロセスではアイテムがスキップされます。
+はい。 PST ファイルに 150 MB を超えるメールボックス アイテムが含まれている場合、アイテムはスキップされ、インポートプロセス中にインポートされません。 Exchange Online では 150 MB がメッセージ サイズの制限のため、150 MB を超えるアイテムはインポートされません。 詳細については [、「Exchange Online のメッセージ制限」を参照してください](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
  **メッセージの送受信時刻や受信者のリストなどのメッセージ プロパティは、PST ファイルを Microsoft 365 メールボックスにインポートするときに保持されますか?**
   
@@ -156,7 +156,7 @@ Office 365 Import サービスで使用できるのは、2.5 インチのソリ�
   
  **Microsoft のデータ センターにハード ドライブが到着してから PST ファイルが Azure にアップロードされるまで、どれくらいかかりますか?**
   
-Microsoft データ センターでハード ドライブを受信した後、組織の Azure Storage 領域に PST ファイルをアップロードするには、7 ~ 10 営業日かかるでしょう。 PST ファイルは、`ingestiondata` と呼ばれる Azure blob コンテナーにアップロードされます。 
+Microsoft データ センターでハード ドライブを受信した後、組織の Azure Storage 領域に PST ファイルをアップロードするには、7 ~ 10 営業日かかるでしょう。 PST ファイルは、`ingestiondata` と呼ばれる Azure blob コンテナーにアップロードされます。
   
  **メールボックスに PST ファイルをインポートするには、どれぐらい時間がかかりますか?**
   
@@ -178,12 +178,12 @@ PST ファイル形式には、ANSI と Unicode という 2 つのバージョ�
   
  **PST ファイルをインポートするときにメッセージ サイズに制限はありますか?**
   
-はい。 PST ファイルに 150 MB を超えるメールボックス アイテムが含まれる場合、インポート プロセスではアイテムがスキップされます。
+はい。 PST ファイルに 150 MB を超えるメールボックス アイテムが含まれている場合、アイテムはスキップされ、インポートプロセス中にインポートされません。 Exchange Online では 150 MB がメッセージ サイズの制限のため、150 MB を超えるアイテムはインポートされません。 詳細については [、「Exchange Online のメッセージ制限」を参照してください](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
   **PST インポート プロセスでは、重複するメールアイテムはどのように処理されますか?**
 
 PST　インポート プロセスによってアイテムの重複がチェックされます。インポート先のメールボックス内またはインポート先のアーカイブ内のインポート先フォルダーに一致するアイテムがある場合、一致するアイテムは PST ファイルからメールボックスまたはアーカイブにコピーされません。 同じ PST ファイルをインポートして、(PST インポート マッピング ファイルの TargetRootFolder プロパティを使用して) 異なるインポート先フォルダーを指定すると、その PST ファイル内のすべてのアイテムが再インポートされます。
- 
+
  **メッセージの送受信時刻や受信者のリストなどのメッセージ プロパティは、PST ファイルを Microsoft 365 メールボックスにインポートするときに保持されますか?**
   
 はい。 インポート プロセス中は、元のメッセージのメタデータが変更されることはありません
@@ -224,6 +224,6 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
   
 はい。
   
- **ハード ドライブを別の国に送付しなければならない場合、何か必要な手続きはありますか?**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-Microsoft 宛てに発送するハード ディスク ドライブは、国境を越える場合があります。この場合、ハード ディスク ドライブとドライブに含まれているデータが、輸出入に関して適用される法律に違反しないことを保証するのはお客様の責任になります。ハード ディスク ドライブを発送する前に、指定した Microsoft データ センターへのディスクとデータの送付について、法律違反事項がないことを助言者に確認してください。こうすることで、ドライブが Microsoft に適時に到着します。
+The hard drive that you ship to Microsoft might have to cross international borders. その場合は、該当する法律に従ってハード ドライブとデータがインポートおよび/またはエクスポートされるのを確認する責任があります。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

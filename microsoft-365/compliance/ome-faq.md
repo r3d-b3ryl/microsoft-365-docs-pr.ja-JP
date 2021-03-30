@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 589a28690d1654576ace45edd482b8d67161d616
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394685"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408592"
 ---
 # <a name="message-encryption-faq"></a>メッセージの暗号化に関する FAQ
 
@@ -118,7 +118,7 @@ Word、Excel、PowerPoint ファイルなどのファイル形式がサポート
   
 ## <a name="are-pdf-file-attachments-supported"></a>PDF ファイルの添付ファイルはサポートされていますか?
 
-短い答えははい! PDF 暗号化を使用すると、セキュリティで保護された通信または安全な共同作業を通じて、機密性の高い PDF ドキュメントを保護できます。 電子メールを送信すると、Office 365 サービスは Outlook クライアントではなく PDF ファイルの添付ファイルを暗号化します。
+短い答えははい! 有効にした場合、PDF 暗号化を使用すると、セキュリティで保護された通信または安全な共同作業を通じて、機密性の高い PDF ドキュメントを保護できます。 電子メールを送信すると、Office 365 サービスは PDF ファイルの添付ファイルを暗号化します。 Outlook クライアントは PDF ファイルの添付ファイルを暗号化しない。
 
 Outlook on the web、Outlook for iOS、および Outlook for Android の場合、送信する PDF はそれ以上の手順なしで暗号化できます。 これらのクライアントは、PDF 暗号化をネイティブにサポートします。
 
