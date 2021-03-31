@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1b203a29083aaa4a1f86abcd7e2c7b24bd63f186
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379492"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445746"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -54,6 +54,7 @@ ms.locfileid: "51379492"
 > [!NOTE]
 > 対象となるライセンスユーザーは、最大 5 つの同時デバイスで Microsoft Defender for Endpoint を使用できます。
 > Microsoft Defender for Endpoint は、クラウド ソリューション プロバイダー (CSP) から購入できます。
+> RDSH VM では、エンドポイント 用の個別の Defender ライセンスは必要とできません。
 
 Microsoft Defender for Endpoint for servers には、次のいずれかのライセンス オプションが必要です。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8b68e6b6dc42de5730aa634386406d4762b1fa2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163685"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445366"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>Microsoft Defender ATP でアラート通知を構成する
 
@@ -51,9 +51,9 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
 電子メール通知を送信するデバイスとアラートの重大度と通知受信者を決定するルールを作成できます。
 
 
-1. ナビゲーション ウィンドウで、[設定アラート通知 **]**  >  **を選択します**。
+1. ナビゲーション ウィンドウで、[設定] [メール通知 **]**  >  **を選択します**。
 
-2. [通知 **ルールの追加] をクリックします**。
+2. [アイテム **の追加] をクリックします**。
 
 3. [全般] 情報を指定します。
     - **ルール名** - 通知ルールの名前を指定します。
@@ -67,7 +67,7 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
     - **[デバイス** ] - すべてのデバイス (グローバル管理者の役割のみ) または選択したデバイス グループの通知を受信者に通知するかどうかを選択します。 詳細については、「デバイス グループの作成 [と管理」を参照してください](machine-groups.md)。
     - **アラートの重大度** - アラートの重大度レベルを選択します。
 
-4. **[次へ]** をクリックします。
+4. [ **次へ**] をクリックします。
     
 5. 受信者のメール アドレスを入力し、[受信者の追加] **をクリックします**。 複数のメール アドレスを追加することができます。
 

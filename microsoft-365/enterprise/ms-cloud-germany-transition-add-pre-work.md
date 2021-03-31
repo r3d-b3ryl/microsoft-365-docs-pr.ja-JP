@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する場合の事前作業。'
-ms.openlocfilehash: d05b3fc06c4530a69c49962b0d2b793353033c99
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165611"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445604"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の事前作業
 
@@ -115,9 +115,12 @@ nslookup -querytype=CNMAE msoid.contoso.com
 **適用対象:** オンプレミスの Exchange サーバーでアクティブな Exchange ハイブリッド構成を使用しているすべてのお客様<br>
 **適用時**: フェーズ 5 が開始される前の任意の時間
 
+Exchange Online とオンプレミス のハイブリッド展開を行うエンタープライズ顧客はExchange Serverハイブリッド構成ウィザード (HCW) を実行して、ハイブリッドセットアップを維持および確立します。 Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場合、管理者は Exchange 移行 (フェーズ 5) を開始する前に、"Office 365 Germany" モードで HCW の最新ビルドを再実行する必要があります。 次に、フェーズ 5 の完了時に "Office 365 Worldwide" モードで HCW を再度実行し、Office 365 ドイツ地域の設定でオンプレミス展開を完了します。
+
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| テナントが移行ステージ 5 に入る前に、いつでもハイブリッド構成ウィザード (HCW) の最新バージョンに更新します。 このアクティビティは、365 テナントの移行が開始されたというメッセージ センター Office受信した直後に開始できます (フェーズ 1)。<br>Exchange 管理者は、以前のバージョンの HCW をアンインストールしてから、最新バージョン (17.0.5378.0 以降) をインストールして実行する必要があります [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 |<ul><li>HCW の最新バージョンには、Microsoft Cloud Deutschland インスタンスから 365 Global Services への Exchange Online の移行をサポートするために必要Officeが含まれています。</li><li> 更新プログラムには、送信コネクタと受信コネクタのオンプレミス証明書 _設定の__変更が含まれます_。</li><li>フェーズ 5 の前に HCW を実行する場合は、my Office 365 組織の下のリスト ボックスで Office _365 Exchange Online_ の下の HCW の 2nd ページで "Office _365_ Germany" を選択します。</li><li>**注**: フェーズ 9 の後に Office 365 テナントの移行が完了したら、HCW を削除して再インストールします。今回は、HCW の 2nd ページの "Office 365 Worldwide" 設定を使用して Exchange Online グローバル サービスを使用してハイブリッドセットアップを完了します。</li></ul>|フェーズ 5 (Exchange 移行) の前に HCW を実行すると、サービスまたはクライアントの障害が発生する可能性があります。 |
+| (Pre-Stage 5) - 365 ドイツの設定を使用して HCW をOffice実行する <br><br> <i>このアクティビティは、365 テナントの移行が開始されたというメッセージ センター Office受信した直後に開始できます (フェーズ 1)。</i>| ステージ 5 より前から HCW (17.0.5378.0 以上) をアンインストールおよび再実行すると [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 、Microsoft Cloud Deutschland ユーザーと Office 365 ドイツ地域に移行されたユーザーの両方とメールを送受信するオンプレミス構成が準備されます。 <p><li> HCW で、[My **Office 365** 組織がホストされている] の下のリスト ボックスで、[Office **365 ドイツ] を選択します。** | ステージ 5 [Exchange 移行] が開始する前にこのタスクを完了できなかった場合、オンプレミスの Exchange 展開と 365 の間でルーティングされるメールの NDRs Officeがあります。  
+| (Post-Stage 5) - 365 ワールドワイド設定を使用して HCW をOffice実行する <br><br> <i>このアクティビティは、Exchange 移行が完了したというメッセージ センター通知を受け取った後に開始できます (フェーズ 5)。</i>| ステージ 5 以降から HCW をアンインストールして再実行すると、ハイブリッド構成のオンプレミス構成がリセットされ [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 、365 グローバルOfficeされます。 <p><li> [My Office **365** 組織がホストされている] の下のリスト ボックスで **、[365 ワールドワイド] Officeを選択します**。 | ステージ 9 [移行の完了] より前にこのタスクを完了できなかった場合、オンプレミスの Exchange 展開と 365 の間でルーティングされるメールの NDRs Officeがあります。  
 | 認証のためのグローバル セキュリティ トークン サービス (STS) を指す AuthServer オンプレミスの確立 | これにより、ハイブリッドオンプレミス環境を対象とする移行状態のユーザーからの Exchange 可用性要求に対する認証要求が、オンプレミス サービスにアクセスするために認証されます。 同様に、これにより、オンプレミスから 365 のグローバル サービス エンドポイントへのOffice認証が保証されます。 | Azure AD移行 (フェーズ 2) が完了したら、オンプレミス Exchange (ハイブリッド) トポロジの管理者は、Office 365 グローバル サービス用の新しい認証サービス エンドポイントを追加する必要があります。 Exchange PowerShell のこのコマンドを使用して、Azure Active Directory の Azure portal にある組織のテナント `<TenantID>` ID に置き換える。<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> このタスクを完了できないと、Microsoft Cloud Deutschland から Office 365 サービスに移行されたメールボックス ユーザーの情報をハイブリッド空き時間要求で提供できない場合があります。  |
 ||||
 
@@ -211,7 +214,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

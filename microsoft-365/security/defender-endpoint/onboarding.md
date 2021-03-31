@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56645553c43289995012d53d7caf879874e65c8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186931"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445734"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスにオンボードする
 
@@ -72,10 +72,10 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 | Endpoint     | ツール オプション                       |
 |--------------|------------------------------------------|
 | **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md)   |
-| **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
+| **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
 | **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [アプリベース](ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
+| **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)               | 
 
 
 ## <a name="step-2-configure-capabilities"></a>手順 2: 機能を構成する
@@ -87,7 +87,7 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 
 展開例のツールは次のとおりです。
 - [Microsoft Endpoint Configuration Manager を使用したオンボーディング](onboarding-endpoint-configuration-manager.md)
-- [Microsoft Endpoint Manager を使用したオンボーディング](onboarding-endpoint-manager.md)
+- [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)
 
 上記の展開ツールを使用して、次の Defender for Endpoint 機能の構成について説明します。
 - エンドポイントの検出と応答の構成
@@ -96,4 +96,5 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 
 ## <a name="related-topics"></a>関連項目
 - [Microsoft Endpoint Configuration Manager を使用したオンボーディング](onboarding-endpoint-configuration-manager.md)
-- [Microsoft Endpoint Manager を使用したオンボーディング](onboarding-endpoint-manager.md)
+- [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)
+- [Microsoft 365 E5 の安全なドキュメント](../office-365-security/safe-docs.md)

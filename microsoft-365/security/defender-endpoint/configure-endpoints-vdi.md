@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 167db9b5da841528e95f167b3af6a840b6c71eb4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165563"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445288"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
 
@@ -48,8 +48,11 @@ VDIs をオンボーディングする際に関連する課題が生じ得る場
 
 VDI デバイスは、Defender for Endpoint ポータルに次のように表示できます。
 
-- デバイスごとに 1 つのエントリ。  
-この場合、セッションの作成時に、無人応答ファイルを使用する場合など、同じデバイス名を構成する必要があります。
+- デバイスごとに 1 つのエントリ。
+
+  > [!NOTE]
+  > この場合、セッションの作成 *時* に、無人応答ファイルを使用する場合など、同じデバイス名を構成する必要があります。
+
 - デバイスごとに複数のエントリ (セッションごとに 1 つ)。
 
 次の手順では、VDI デバイスのオンボードについて説明し、単一エントリと複数エントリの手順を強調表示します。
@@ -84,14 +87,15 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
    > [!NOTE]
    > ドメイン グループ ポリシーは、永続的でない VDI デバイスのオンボーディングにも使用できます。
 
-4. 実装するメソッドに応じて、適切な手順に従います。 <br>
-   **デバイスごとに 1 つのエントリの場合**:<br>
+4. 実装するメソッドに応じて、適切な手順に従います。
+
+   - デバイスごとに 1 つのエントリの場合:
    
-   **[PowerShell スクリプト] タブを選択** し、[追加] を **クリックします**(Windows エクスプローラーは、以前にオンボーディング スクリプトをコピーしたパスで直接開きます)。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1` 。
+     **[PowerShell スクリプト] タブを選択** し、[追加] を **クリックします**(Windows エクスプローラーは、以前にオンボーディング スクリプトをコピーしたパスで直接開きます)。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1` 。 他のファイルは自動的にトリガーされますので、指定する必要はありません。
    
-   **各デバイスの複数のエントリの場合**:
+   - 各デバイスの複数のエントリの場合:
    
-   [スクリプト **] タブを** 選択し、[追加] を **クリックします** (Windows エクスプローラーは、以前にオンボーディング スクリプトをコピーしたパスで直接開きます)。 オンボーディング bash スクリプトに移動します `WindowsDefenderATPOnboardingScript.cmd` 。
+     [スクリプト **] タブを** 選択し、[追加] を **クリックします** (Windows エクスプローラーは、以前にオンボーディング スクリプトをコピーしたパスで直接開きます)。 オンボーディング bash スクリプトに移動します `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. ソリューションをテストします。
 
@@ -103,8 +107,15 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
    1. 別のユーザーと一緒にデバイスにログオンします。
       
-   1. **デバイスごとに 1 つのエントリの** 場合: Microsoft Defender セキュリティ センターで 1 つのエントリのみを確認します。<br>
-      **デバイスごとに複数のエントリについて**: Microsoft Defender セキュリティ センターで複数のエントリを確認します。
+   1. 実装するメソッドに応じて、適切な手順に従います。
+   
+      - デバイスごとに 1 つのエントリの場合: 
+    
+        Microsoft Defender セキュリティ センターで 1 つのエントリのみを確認します。
+
+      - 各デバイスの複数のエントリの場合: 
+       
+        Microsoft Defender セキュリティ センターで複数のエントリを確認します。
 
 6. [ナビゲーション **] ウィンドウの [** デバイス] リストをクリックします。
 
@@ -118,14 +129,14 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
 1. レジストリ値を次に設定します。
 
-    ```reg
+    ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
     ```
 
     またはコマンド ラインを使用する:
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 

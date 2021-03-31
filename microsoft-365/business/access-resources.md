@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、一行のビジネス アプリ、ファイル共有、プリンターなど、オンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: b78509d72cbd9b3c121039c4965625bf5c21c7e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1bca0beb3ccc78e670ad33ce446b9b3f7c372ba7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913524"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445350"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の Azure AD参加デバイスからオンプレミス リソースにアクセスする
 
@@ -64,3 +64,7 @@ Azure-AD参加した Windows デバイスが以前にドメインに参加して
 - ユーザーが Active Directory 認証に依存するアプリケーションに対して認証できない場合があります。 従来のアプリを評価し、可能であれば最新の Auth を使用するアプリへの更新を検討します。
 
 - Active Directory プリンターの検出が機能しません。 すべてのユーザーに直接プリンター パスを指定するか、ユニバーサル 印刷 [を使用できます](/universal-print/)。
+
+### <a name="related-articles"></a>関連記事
+
+[Azure AD Connect の前提条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
