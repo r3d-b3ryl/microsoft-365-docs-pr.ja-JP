@@ -18,25 +18,25 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ca24fff5e8b18128c55288352e65aa3cecfe3d81
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165635"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476615"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行への影響 (全般)
 
-Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 グローバル サービスの地域 "ドイツ" へのテナント移行は、一連のフェーズと、ワークロードごとに構成されたアクションとして実行されます。 次の図は、新しいドイツのデータセンターへの移行の 9 つのフェーズを示しています。
+Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 グローバル サービスの地域 "ドイツ" へのテナント移行は、一連のフェーズと、ワークロードごとに構成されたアクションとして実行されます。 この図は、新しいドイツのデータセンターへの移行の 10 フェーズを示しています。
 
-![新しいドイツのデータセンターへの移行の 9 つのフェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![新しいドイツのデータセンターへの移行の 10 フェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 移行プロセスは、組織の全体的な規模と複雑さによって、何週間にも渡って完了します。 移行が進行中の間、ユーザーと管理者は、このドキュメントで詳しく説明されている変更点を使用して、サービスを引き続き利用できます。 グラフィックとテーブルは、移行中のフェーズと手順を定義します。
 
 |手順|Duration|責任ある当事者|説明|
 |:--------|:--------|:--------|:--------|
 |Opt-In|時間|顧客|組織に移行を選択します。|
-|プレワーク|日数|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
+|プレワーク|Days|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
 |Azure Active Directory (Azure AD)|1~ 2 日|Microsoft|Azure AD組織を世界中に移行します。|
 |Azure|週|顧客|新しい世界中の Azure サブスクリプションを作成し、Azure サービスを移行します。|
 |サブスクリプション&ライセンス移行|1~ 2 日|Microsoft|世界中のサブスクリプションを購入し、Microsoft Cloud Deutschland サブスクリプションをキャンセルし、ユーザー ライセンスを移行します。|
@@ -47,6 +47,8 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 グローバ�
 |Power BI & Dynamics 365|15 日以上|Microsoft|Power BI および Dynamics 365 コンテンツを移行します。|
 |Azure の最終AD|1~ 2 日|Microsoft|テナントを世界中に切り替えます。|
 |Clean-Up|1~ 2 日|顧客|Active Directory フェデレーション サービス (AD FS) 証明書利用者信頼、Azure AD Connect、および Office クライアントの再起動など、Microsoft Cloud Deutschland への従来の接続をクリーンアップします。|
+|エンドポイントが無効|30 日間|Microsoft|Azure AD の最終決定から 30 日後、Microsoft Cloud Deutschland Azure AD サービスは移行された組織のエンドポイント アクセスを停止します。 認証などのエンドポイント要求は、Microsoft Cloud Deutschland サービスに対してこの時点から順方向に失敗します。 |
+
 
 フェーズとそのアクションにより、重要なデータとエクスペリエンスが 365 グローバル Officeに移行されます。 テナントが移行キューに追加されると、各ワークロードは、バックエンド サービスで実行される一連の手順として完了します。 一部のワークロードでは、管理者 (またはユーザー) によるアクションが必要な場合や、移行が実行および説明されているフェーズの使用状況に影響を与える場合があります。「移行の整理方法」を [参照してください。](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -118,6 +120,7 @@ Exchange Online ハイブリッドを使用している場合:Exchange Online �
 |オンボーディングメールボックスまたはオフボードメールボックスの移動を停止または削除します。Exchange オンプレミスと Exchange Online の間でメールボックスを移動しない。  | これにより、メールボックスの移動要求がエラーと一緒に失敗しない。 | そうしない場合は、サービスまたはクライアントのOfficeがあります。 |
 | Exchange Online メールボックスは、Microsoft Cloud Deutschland から 365 グローバル Officeに移動されます。| Exchange Online の構成では、移行中の組織に新しい移動先のドイツ語地域が追加されます。 365 Officeグローバル サービス領域は既定として設定され、内部負荷分散サービスはメールボックスを 365 サービス内の適切な既定の領域に再配布Officeできます。 この移行では、どちらの側 (MCD またはグローバル サービス) のユーザーも同じ組織内にいて、いずれかの URL エンドポイントを使用できます。 |<ul><li>ユーザーとサービスを従来の MCD URL (outlook.office.de) から新しいサービス 365 Office URL ( ) に移行します `https://outlook.office365.com` 。</li><li>ユーザーは移行中に従来の MCD URL を通じてサービスに引き続きアクセスすることができますが、移行が完了すると、従来の URL の使用を停止する必要があります。</li><li>ユーザーは、オンライン機能 (予定表、メールOfficeユーザー) Office のOfficeポータルを使用するに移行する必要があります。 365 サービスにまだ移行されていないサービスOffice移行するまでは機能しません。 </li><li>移行Outlook Web Appパブリック フォルダーエクスペリエンスは提供しない場合があります。 </li></ul>|
 | 自動検出のカスタム DNS 設定を更新する| 現在 Microsoft Cloud Deutschland を指している AutoDiscover の顧客管理 DNS 設定を更新して、Exchange Online フェーズ (フェーズ 5) の完了時に Office 365 Global エンドポイントを参照する必要があります。 <br> CNAME を指す既存の DNS エントリ autodiscover-outlook.office.de をポイントするために更新する autodiscover.outlook.com。 |  AutoDiscover 経由の可用性要求とサービス検出呼び出しは、365 サービスOffice直接ポイントします。 これらの DNS 更新を実行しないお客様は、移行が完了すると自動検出サービスの問題が発生する可能性があります。 |
+| ユーザーは POP3、IMAP4、SMTP クライアント構成を更新する必要があります。 | クライアント プロトコル POP3、IMAP4、SMTP の Microsoft Cloud Deutschland エンドポイントへのデバイス接続を持つユーザーは、メールボックスの移行と同時に [Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) ワールドワイド エンドポイントに切り替えるクライアント デバイスを手動でOffice 365 ドイツ地域に更新する必要があります。 <br> smtp.office365.com : SMTP (TCP:587), outlook.office365.com : IMAP4 (TCP:993), POP3 (TCP:995)| これらのプロトコルのユーザーは、メールボックスの移行中に Outlook モバイルまたは Outlook on the web を使用し、完了時にクライアント デバイスの IMAP4、POP3、SMTP 設定を新しいエンドポイントに更新する必要があります。 クライアント エンドポイントの更新に失敗すると、ユーザー メールボックスの移行時に Microsoft Cloud Deutschland に対するクライアント接続エラーが発生します。 |
 ||||
 
 その他の考慮事項:
@@ -131,7 +134,7 @@ Exchange Online ハイブリッドを使用している場合:Exchange Online �
 
 - 既存の Microsoft Cloud Deutschland のお客様または移行中のユーザーの場合、ファイル > **Info >** Add Account を使用して共有メールボックスを Outlook に追加すると、予定表のアクセス許可の表示が失敗する場合があります (Outlook クライアントは Rest API の使用を試みる)。 `https://outlook.office.de/api/v2.0/Me/Calendars` 予定表のアクセス許可を表示するアカウントを追加する場合は [、「Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) で予定表を共有するためのユーザー エクスペリエンスの変更」の説明に従ってレジストリ キーを追加して、このアクションが成功するようにすることができます。 このレジストリ キーは、グループ ポリシーを使用して組織全体に展開できます。
 
-- 移行フェーズ中に、PowerShell コマンドレット **New-migrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例:
+- 移行フェーズ中に、PowerShell コマンドレット **New-migrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 次に例を示します。
 
 ```powershell
 New-PSSession 
@@ -205,6 +208,18 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 \*\* (i) Microsoft Power BI をお持ちのお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。
 
+## <a name="azure-ad-finalization-phase-9-10"></a>Azure ADの最終処理 (フェーズ 9、10)
+
+**適用対象:** すべてのお客様
+
+移行のOffice 365 テナントが移行の最後のステップ [Azure AD Finalization (Phase 9)] を完了すると、すべてのサービスが世界中に移行されます。 Microsoft Cloud Deutschland エンドポイントに対して、アプリケーションまたはユーザーがテナントのリソースにアクセスする必要はありません。 最終処理が完了した 30 日後に自動的に、Microsoft Cloud Deutschland Azure AD サービスは移行されたテナントのエンドポイント アクセスを停止します。 認証などのエンドポイント要求は、Microsoft Cloud Deutschland サービスに対してこの時点から順方向に失敗します。 
+
+| Step(s) | 説明 | 影響 |
+|:-------|:-------|:-------|
+| ユーザー エンドポイントの更新 | すべてのユーザーが適切な Microsoft ワールドワイド エンドポイントを使用してサービスにアクセスする |移行が完了した 30 日後、Microsoft Cloud Deutschland エンドポイントは要求の尊重を停止します。クライアントまたはアプリケーション のトラフィックは失敗します。  |
+| Azure ADアプリケーション エンドポイントを更新する | アプリケーションの認証、Azure Active Directory (Azure AD) Graph、MS Graph エンドポイントを Microsoft Worldwide サービスのエンドポイントに更新する必要があります。 | 移行が完了した 30 日後、Microsoft Cloud Deutschland エンドポイントは要求の尊重を停止します。クライアントまたはアプリケーション のトラフィックは失敗します。 |
+||||
+
 ## <a name="office-apps"></a>Office アプリ
 
 **適用対象:** デスクトップ アプリケーションをOfficeしているすべてのお客様 (Word、Excel、PowerPoint、Outlook、...)
@@ -230,7 +245,7 @@ Office で最も最近使用された (MRU) サービスは、移行ではなく
 
 移行後のアクティビティの記事を [必ず読んで](ms-cloud-germany-transition-add-experience.md#post-migration) 、それを実行してください。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 18df7c43e21fb186dee56dabc29a67654f0f6882
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7e170967e1670433a7d28753430f0cb15818039b
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923770"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476639"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター地域Office 365 サービスへの Microsoft Cloud Deutschland からの移行
 
@@ -63,9 +63,9 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 
 ## <a name="how-is-the-migration-organized"></a>移行の整理方法
 
-次の図は、新しいドイツのデータセンターへの移行の 9 つのフェーズを示しています。
+この図は、新しいドイツのデータセンターへの移行の 10 フェーズを示しています。
 
-![新しいドイツのデータセンターへの移行の 9 つのフェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![新しいドイツのデータセンターへの移行の 10 フェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 移行をオプトイン [すると、これらのフェーズが開始されます](./ms-cloud-germany-migration-opt-in.md)。 移行フェーズの大部分は、最小限の顧客とのやり取りが必要なバック エンド サービス操作として実行され、その後に 1 つのフェーズが実行されます。 追加の顧客主導のタスクと全体的な移行状態の開始は、移行プロセス中に Microsoft 365 管理センターのメッセージ センターを通じて伝達されます。 タスクの例としては、お客様が管理する DNS 更新プログラム、Exchange ハイブリッド顧客のハイブリッド セットアップの再構成、Azure 移行が含まれます。
 
@@ -93,6 +93,8 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 - Dynamics complete
 - Power BI の完了
 - サービスの最終的なカットオーバーが完了しました
+
+Azure ADがワールドワイド サービスに切り替わると、すべてのクライアントとアプリケーションが適切なエンドポイントを使用するように完全に移行される必要があります。 最終的なカットオーバーの後に 30 日間のウィンドウが表示されます。Microsoft Cloud Deutschland サービスから Azure AD トークンを引き続き取得できます。 30 日間の期間が経過すると、クライアントとアプリケーションは Microsoft Cloud Deutschland の Azure ADエンドポイントにアクセスできなくなりました。 アプリケーションまたはユーザー アクセスは、この時点から失敗します。 このタイム ウィンドウが閉じる前に、すべてのユーザーとアプリケーションが正しいエンドポイントに移行されていることを確認する必要があります。 
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター地域への移行
 
@@ -173,18 +175,18 @@ Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサ�
 20. PSTN 通話
 21. Microsoft Teams
 22. 管理者レポート/利用状況レポート
-23. Web 用 Office
+23. Webアプリ上の Office
 24. Planner
 25. Sway
 26. Microsoft 365 アプリ
 27. Outlook モバイル
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD プレミアム P1、Intune、および Rights Management Service)
-29. Yammer Enterprise
+29. Yammer エンタープライズ
 30. Microsoft Forms
 31. Power Automate for Office 365
 32. Power Virtual Agents for Office 365
 33. PowerApps for Office 365
-34. Microsoft の予約
+34. Microsoft Bookings
 35. To-Do
 36. Whiteboard
 37. Microsoft StuffHub
@@ -334,7 +336,7 @@ Microsoft が管理する IP 範囲と DNS ゾーンは、グローバル サー
 
 [移行のオプトイン](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

@@ -1,5 +1,5 @@
 ---
-title: Windows 仮想デスクトップのオンボード Windows 10 マルチセッション デバイス
+title: Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード
 description: Windows 仮想デスクトップでの Windows 10 マルチセッション デバイスのオンボードに関する記事の詳細
 keywords: Windows 仮想デスクトップ、WVD、microsoft Defender、エンドポイント、オンボード
 search.product: eADQiWindows 10XVcnh
@@ -13,24 +13,20 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222613"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488147"
 ---
-# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows 仮想デスクトップのオンボード Windows 10 マルチセッション デバイス 
+# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード 
 読み取り 6 分 
 
 適用対象: 
 - Windows 仮想デスクトップで実行されている Windows 10 マルチセッション (WVD) 
-
-> [!WARNING]
-> Microsoft Defender for Endpoint for Windows Virtual Desktop マルチセッション シナリオのサポートは現在プレビュー中で、ホスト/VM ごとに最大 25 の同時セッションが制限されています。 ただし、Windows 仮想デスクトップ上の単一セッション シナリオは完全にサポートされています。
 
 Microsoft Defender for Endpoint では、VDI セッションと Windows 仮想デスクトップ セッションの両方の監視がサポートされています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Windows Virtual Desktop セッションを実装する必要がある場合があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 

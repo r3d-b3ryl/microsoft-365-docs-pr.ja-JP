@@ -1,5 +1,5 @@
 ---
-title: Web コンテンツ のフィルター処理
+title: Web コンテンツ フィルタリング
 description: Microsoft Defender ATP の Web コンテンツ フィルターを使用して、コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および調整します。
 keywords: Web 保護、Web 脅威保護、Web 閲覧、監視、レポート、カード、ドメイン リスト、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8ab1ba1f0dc1bb629e438380b7b77e1ed221f08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 16f0d96b75ec7035ca133f75a83df1f284ee5c4b
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186031"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484746"
 ---
-# <a name="web-content-filtering"></a>Web コンテンツ のフィルター処理
+# <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -60,7 +60,7 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 
 この機能を試す前に、次の要件を満たしていることを確認してください。
 
-- Windows 10 Enterprise E5 ライセンスまたは Microsoft 365 E3 + Microsoft 365 E5 セキュリティ アドオン。
+- Windows 10 Enterprise E5、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Security アドオン、または Microsoft Defender for Endpoint スタンドアロン ライセンス。 
 - Microsoft Defender セキュリティ センター ポータルへのアクセス
 - 最新の MoCAMP 更新プログラムを使用して Windows 10 Anniversary Update (バージョン 1607) 以降を実行しているデバイス。
 
@@ -160,9 +160,11 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 - 割り当てられていないデバイスでは、レポート内に正しくないデータが表示されます。 [デバイス グループのレポート>] ピボットに、空白の [デバイス グループ] フィールドを含む行が表示される場合があります。 このグループには、割り当てられていないデバイスが指定したグループに入る前に含まれる。 この行のレポートには、デバイスの正確な数やアクセス数が含まれているとは思えない。
 
+- Web コンテンツ フィルター レポートは、現在、上位 5,000 レコードの表示に制限されています。 たとえば、[ドメイン] レポートには、該当する場合、特定のフィルター クエリの上位 5000 ドメインの最大数だけが表示されます。 
+
 ## <a name="related-topics"></a>関連項目
 
 - [Web 保護の概要](web-protection-overview.md)
-- [Web 脅威保護](web-threat-protection.md)
+- [Web の脅威に対する保護](web-threat-protection.md)
 - [Web セキュリティの監視](web-protection-monitoring.md)
-- [Web の脅威に対応する](web-protection-response.md)
+- [Web の脅威への対応](web-protection-response.md)
