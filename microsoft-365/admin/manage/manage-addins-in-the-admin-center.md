@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 集中型アドインを使用して組織内のユーザーとグループにアドインを展開する方法について学習します。
-ms.openlocfilehash: 0750b6c9b91bc5cbd67d227fadb304bfc6cf7537
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 836dfa7a0c1b6cf1550e5c139bc0ca36be8f5424
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915400"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470943"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>管理センターでアドインを管理する
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 Officeアドインを使用すると、ドキュメントをカスタマイズし、Web 上の情報にアクセスする方法を合理化できます (「Office アドインの使用を開始する」を [参照してください](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862))。 
 

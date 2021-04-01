@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する際のカスタマー エクスペリエンスに関するその他の情報。'
-ms.openlocfilehash: ecc549ca4d0bb8122de3bf092c004c919e958d5e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8e28b9d6c8cc23e128234973039a4873b327e9fd
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165647"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476374"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行への影響 (上級)
 
-Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのドイツ地域へのテナント移行は、一連のフェーズと、ワークロードごとに構成されたアクションとして実行されます。 次の図は、新しいドイツのデータセンターへの移行の 9 つのフェーズを示しています。
+Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのドイツ地域へのテナント移行は、一連のフェーズと、ワークロードごとに構成されたアクションとして実行されます。 この図は、新しいドイツのデータセンターへの移行の 10 フェーズを示しています。
 
-![新しいドイツのデータセンターへの移行の 9 つのフェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![新しいドイツのデータセンターへの移行の 10 フェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 以下のセクションでは、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する際のカスタマー エクスペリエンスに関する追加情報を提供します。
 
@@ -138,7 +138,7 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 
 [移行フェーズのアクションと影響について理解する](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

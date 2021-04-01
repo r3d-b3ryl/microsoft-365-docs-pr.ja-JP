@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be906baca3a54183e22fa3b4ee424a9d8fc6957a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198695"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476627"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac の新機能
 
@@ -39,7 +39,12 @@ ms.locfileid: "51198695"
 > macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存の顧客の場合は、このページに記載されている追加の構成プロファイルを [必ず展開してください](mac-sysext-policies.md)。
 
 > [!IMPORTANT]
-> macOS 10.13 (High Sierra) のサポートは、2021 年 2 月 15 日に中止されます。
+> macOS 10.13 (High Sierra) のサポートは、2021 年 2 月 15 日に中止されました。
+
+## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
+
+- コマンド ライン ツールに、前回のオンデマンド スキャンに関する情報を表示する新しいオプションが追加されました。 最後のオンデマンド スキャンに関する情報を表示するには、次のコマンドを実行します。 `mdatp health --details antivirus`
+- バグ修正&パフォーマンスの向上
 
 ## <a name="1012279-20121012122790"></a>101.22.79 (20.121012.12279.0)
 

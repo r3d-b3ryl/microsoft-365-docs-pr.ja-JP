@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c0e8adde9b1ed66e401348d998ae5c1ad8a7442
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b83e6682ce0c11d076e0bbef60fdef365c9be564
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166007"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471103"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のデータストレージの場所を確認し、データ保持設定を更新する
 
@@ -45,6 +45,8 @@ ms.locfileid: "51166007"
 [設定データの保持] に移動すると、データの **場所**  >  **を確認できます**。
 
 ## <a name="update-data-retention-settings"></a>データ保持設定の更新
+
+データ保持設定を更新できます。 既定では、保持期間は 180 日です。 
 
 1. ナビゲーション ウィンドウで、[設定データ保持 **]**  >  **を選択します**。
 

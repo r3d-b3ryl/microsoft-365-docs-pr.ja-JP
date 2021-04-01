@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 7c3b4f82d94888cfa6c63b25f20130a38f8b4c9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f24f519ec3bb12622d74c1d02fbc0bb017aa2b24
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919202"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476411"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -108,11 +108,11 @@ ms.locfileid: "50919202"
     | -KeyVaultName                               | メールボックス移行アプリケーション証明書/シークレットを格納する Azure Key Vault インスタンス。 | 必須 |
     | -CertificateName                            | キー コンテナーで証明書を生成または検索する場合の証明書名。 | 必須 |
     | -CertificateSubject                         | AZURE Key Vault 証明書のサブジェクト名 (CN=contoso_fabrikam など)。 | 必須 |
-    | -ExistingApplicationId                      | 既に作成されている場合に使用するメール移行アプリケーション。 | 省略可能 |
+    | -ExistingApplicationId                      | 既に作成されている場合に使用するメール移行アプリケーション。 | オプション |
     | -AzureAppPermissions                        | Exchange や MSGraph などのメールボックス移行アプリケーションに与える必要があるアクセス許可 (Exchange for Moving Mailboxs, MSGraph for using the consent link invitation to resource tenant). | 必須 |
-    | -UseAppAndCertGeneratedForSendingInvitation | 移行先テナント管理者に同意リンクの招待を送信するために使用する移行用に作成されたアプリケーションを使用するパラメーター。存在しない場合は、ターゲット管理者の資格情報が Azure 招待マネージャーに接続し、招待をターゲット管理者として送信するように求めるメッセージが表示されます。 | 省略可能 |
-    | -KeyVaultAuditStorageAccountName            | Key Vault の監査ログが格納されるストレージ アカウント。 | 省略可能 |
-    | -KeyVaultAuditStorageResourceGroup          | Key Vault 監査ログを格納するためのストレージ アカウントを含むリソース グループ。 | 省略可能 |
+    | -UseAppAndCertGeneratedForSendingInvitation | 移行先テナント管理者に同意リンクの招待を送信するために使用する移行用に作成されたアプリケーションを使用するパラメーター。存在しない場合は、ターゲット管理者の資格情報が Azure 招待マネージャーに接続し、招待をターゲット管理者として送信するように求めるメッセージが表示されます。 | オプション |
+    | -KeyVaultAuditStorageAccountName            | Key Vault の監査ログが格納されるストレージ アカウント。 | オプション |
+    | -KeyVaultAuditStorageResourceGroup          | Key Vault 監査ログを格納するためのストレージ アカウントを含むリソース グループ。 | オプション |
     ||||
 
     >[!Note]
@@ -455,44 +455,32 @@ Get-MoveRequest -Flags "CrossTenant"
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant 
-#Note, the filter applied on GetMailbox is for an attribute set on CA1 = “ProjectKermit” 
+#Note, the filter applied on Get-Mailbox is for an attribute set on CustomAttribute1 = "ProjectKermit" 
 #These are the ‘target’ users to be moved to the Northwind org tenant #################################################################  
-$outFile = "$home\desktop\UserListToImport.csv" 
-$outArray = @() 
+$outFileUsers = "$home\desktop\userstomigrate.txt"
+$outFileUsersXML = "$home\desktop\userstomigrate.xml"
 #output the test objects 
-$Mailboxes = get-mailbox -filter "CustomAttribute1 -like ‘ProjectKermit'" -resultsize unlimited  
-#created these mailboxes in adv using separate scripts but you get the idea on how to define the user list to move 
-Foreach ($i in $Mailboxes)  
-{ 
-    $user = get-Recipient $i.alias 
-    $myobj = New-Object System.Object 
-    $myObj | Add-Member -type NoteProperty -name primarysmtpaddress -value $i.PrimarySMTPAddress 
-    $myObj | Add-Member -type NoteProperty -name alias -value $i.alias 
-    $myObj | Add-Member -type NoteProperty -name FirstName -value $User.FirstName 
-    $myObj | Add-Member -type NoteProperty -name LastName -value $User.LastName 
-    $myObj | Add-Member -type NoteProperty -name DisplayName -value $User.DisplayName 
-    $myObj | Add-Member -type NoteProperty -name Name -value $i.Name 
-    $myObj | Add-Member -type NoteProperty -name SamAccountName -value $i.SamAccountName 
-    $myObj | Add-Member -type NoteProperty -name legacyExchangeDN -value $i.legacyExchangeDN    $myObj | Add-Member -type NoteProperty -name ExchangeGuid -value $i.ExchangeGuid 
-    $outArray += $myObj 
-} 
-$outArray | Export-CSV $outfile -notypeinformation  
+Get-Mailbox -Filter "CustomAttribute1 -like 'ProjectKermit'" -ResultSize Unlimited | Select-Object -ExpandProperty Alias | Out-File $outFileUsers
+$mailboxes = Get-Content $outFileUsers
+$mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
+
 ################################################################# 
 #Copy the file $outfile to the desktop of the target on-premises 
 #then run the below to create MEU in Target 
 #################################################################  
-$ImportUserList = import-csv "$home\desktop\UserListToImport.csv" 
-$pwstr = "Something 98053 Random!!"; 
-$pw = new-object "System.Security.SecureString"; 
-for ($i=0; $i -lt $pwstr.Length; $i++) {$pw.AppendChar($pwstr[$i])} foreach ($user in $ImportUserList) { 
-     $tmpUser = $null 
-    $UPNSuffix = "@northwindtraders.com"    $UPN = $user.Alias+$upnsuffix 
-    $tmpUser = New-MailUser -organization -UserPrincipalName $upn -ExternalEmailAddress $user.primarysmtpaddress -FirstName $user.FirstName ` 
-                 -LastName $user.LastName -SamAccountName $user.SamAccountName -ResetPasswordOnNextLogon $false ` 
-                 -Alias $user.alias -PrimarySmtpAddress $UPN -Name $User.Name -DisplayName $user.DisplayName ` 
-                 -OrganizationalUnit "OU=ContosoUsers,OU=MLB,DC=ContosoLab,DC=net" -Password $pw       $x500 = "x500:" + $user.legacyExchangeDN 
-    $tmpUser | Set-MailUser -ExchangeGuid $user.ExchangeGuid -EmailAddresses @{Add=$x500} -CustomAttribute1 "ProjectKermit" 
-}  
+$mailboxes = Import-Clixml $home\desktop\userstomigrate.xml
+
+foreach ($m in $mailboxes) {
+    $organization = "@contoso.onmicrosoft.com"
+    $mosi = $m.Alias+$organization
+    $Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force
+    $x500 = "x500:" +$m.LegacyExchangeDn
+    $tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password
+    $tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "ProjectKermit"
+    $tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}
+    $tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}
+    }
+
 ################################################################# 
 # On AADSync machine, run AADSync 
 #################################################################  
@@ -725,7 +713,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
    | Information Protection for Office 365 - Standard  |
    | MyAnalytics の分析情報                           |
    | Microsoft 365 Advanced Auditing                   |
-   | Microsoft の予約                                |
+   | Microsoft Bookings                                |
    | Microsoft Business Center                         |
    | Microsoft MyAnalytics (フル機能)                      |
    | Office 365 Advanced eDiscovery                    |

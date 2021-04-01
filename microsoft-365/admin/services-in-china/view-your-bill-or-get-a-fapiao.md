@@ -21,17 +21,14 @@ search.appverid:
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: 中国の 21Vianet がOffice 365 に関する請求明細書または請求書を表示します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: aa6a83f7054488b4e8944010a24341daeb83c690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf12a74a612cbdce366d7e3528a9aefaa0849ee0
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914296"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470907"
 ---
 # <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>21Vianet が運営する 365 Officeを表示するか、Fapiao を取得する
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 21Vianet サブスクリプション料金が運用する 365 Officeに関する情報については、請求明細書または請求書を表示できます。 Fapiao (最終的な購入証明) を入手できます。 Fapiao 要求は、支払い後約 3 日後に [Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) 管理システムに送信できます。 
   

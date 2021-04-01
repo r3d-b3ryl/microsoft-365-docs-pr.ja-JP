@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222443"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476312"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開をセットアップする
 
@@ -124,7 +124,7 @@ Microsoft Defender ATP センサーでは、センサー データをレポー�
 
 -   Web プロキシ自動検出プロトコル (WPAD)
 
-透過プロキシまたは WPAD がネットワーク トポロジに実装されている場合、特別な構成設定は不要です。 プロキシの Microsoft Defender for Endpoint URL 除外の詳細については[](production-deployment.md#proxy-service-urls)、このドキュメントの「URL の許可リスト」または「デバイス プロキシとインターネット接続の設定の構成」の「プロキシ サービス URL」セクションを[参照](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)してください。
+透過プロキシまたは WPAD がネットワーク トポロジに実装されている場合、特別な構成設定は不要です。 プロキシ内の Microsoft Defender for Endpoint URL の除外の[](production-deployment.md#proxy-service-urls)詳細については、このドキュメントの「プロキシ サービス URL の一覧を許可する」または「デバイス プロキシとインターネット接続の設定を構成する」を[参照](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)してください。
 
 **手動の静的プロキシの構成:**
 
@@ -172,7 +172,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 > - これは、既定のプロキシで WinHTTP を使用する Windows サービスを含むすべてのアプリケーションに影響します。</br>
 > - トポロジを変更しているラップトップ (たとえば、オフィスから自宅) は netsh に誤動作します。 レジストリ ベースの静的プロキシの構成を使用します。
 
-1. 管理者特権のコマンド ラインを開きます。
+1. 管理者特権でコマンド プロンプトを開きます。
 
     1. **[スタート]** をクリックし、「**cmd**」と入力します。
 
@@ -199,7 +199,7 @@ v20 を含む URL は、Windows 10 バージョン 1803 以降のデバイスが
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールの作成が必要な場合があります。
 
-|**ドメインリストのスプレッドシート**|**説明**|
+|**ドメインリストのスプレッドシート**|**Description**|
 |:-----|:-----|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 

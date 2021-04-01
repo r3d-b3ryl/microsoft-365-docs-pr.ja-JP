@@ -23,21 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Microsoft 365 でドメイン名を購入する方法について説明します。
-ms.openlocfilehash: 24c6ac017cf25e1a40148e7a2c982e9d1068664b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915676"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470513"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
  *追加、変更またはドメインを削除するには、[ビジネスまたはエンタープライズ プラン](https://products.office.com/business/office)の **グローバル管理者** である **必要** があります。これらの変更は、テナント全体、*カスタマイズ管理者* または *正規ユーザー* に影響を与え、変更を加えることはできません。*  
 

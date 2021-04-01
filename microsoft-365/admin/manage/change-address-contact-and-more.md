@@ -21,21 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 組織のプロファイル (組織名、住所、電話、技術的な連絡先、電子メールなど) を変更する方法について説明します。
-ms.openlocfilehash: 9813e7a959579223f27efa082b1ef11efe6ed06d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93f0777ba5f1cd20cca6e286a4b4366c403fc9da
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915424"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470561"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
   
 組織のプロファイル (組織名、住所、電話、技術的な連絡先など) を変更できます。 **この情報を更新するには、全体管理者でなければなりません。**
   

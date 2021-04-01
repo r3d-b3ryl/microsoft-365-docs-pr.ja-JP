@@ -12,16 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2a21dfead9b1f1ba2f05fc7629ce4fcda9991017
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 9fe1665eda882793a62315299a3cbf6667ec7988
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819979"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445655"
 ---
 # <a name="insider-risk-management-alerts"></a>Insider リスク管理アラート
 
 インサイダーリスク管理警告は、インサイダーリスク管理ポリシーで定義されたリスク インジケーターによって自動的に生成されます。 これらの通知で、コンプライアンスアナリストと捜査官が、現在のリスクの状態をすべて把握できるようになり、組織がトリアージでき見つかったリスクに対処できるようになります。 既定では、ポリシーは低、中、および重大度の高いアラートを一定の量生成しますが[](insider-risk-management-settings.md#alert-volume)、ニーズに合わせてアラートボリュームを増減できます。 さらに、ポリシー ウィザードを使用して新しいポリシー [を](insider-risk-management-settings.md#indicator-level-settings-preview) 作成するときに、ポリシー インジケーターのアラートしきい値を構成できます。
+
+危険なアクティビティに関する詳細、コンテキスト、および関連するコンテンツをアラートが提供する方法と、調査プロセスをより効果的にする方法の概要については [、「Insider Risk Management Alerts Triage Experience」](https://www.youtube.com/watch?v=KgmpxBLJLPI) ビデオをご覧ください。
 
 ## <a name="alert-dashboard"></a>アラート ダッシュボード
 

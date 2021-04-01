@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: a9e75441a8c4a336e8c657d27330c118fcac4788
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379472"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476319"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>microsoft Defender for Endpoint for macOS の手動展開
 
@@ -119,7 +119,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 1. wdav.pkg と MicrosoftDefenderATPOnboardingMacOs.py microsoft Defender for Endpoint for macOS を展開するデバイスにコピーします。
 
-    クライアント デバイスが orgId に関連付けされていない。 *orgId 属性は* 空白です。
+    クライアント デバイスがクライアント デバイスに関連付org_id。 org_id *属性は* 空白です。
 
     ```bash
     mdatp health --field org_id
@@ -131,23 +131,96 @@ Microsoft Defender セキュリティ センターからインストールパッ
     /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
-3. デバイスが組織に関連付けられると、有効な *orgId* が報告されます。
+3. デバイスが組織に関連付けられたので、有効な組織 ID を報告します。
 
     ```bash
     mdatp health --field org_id
     ```
 
-インストール後、右上隅の macOS ステータス バーに Microsoft Defender アイコンが表示されます。
+    インストール後、右上隅の macOS ステータス バーに Microsoft Defender アイコンが表示されます。
+    
+    > [!div class="mx-imgBorder"]
+    > ![ステータス バーのスクリーンショットの Microsoft Defender アイコン](images/mdatp-icon-bar.png)
 
-   ![ステータス バーのスクリーンショットの Microsoft Defender アイコン](images/mdatp-icon-bar.png)
-   
 
 ## <a name="how-to-allow-full-disk-access"></a>フル ディスク アクセスを許可する方法
 
 > [!CAUTION]
 > macOS 10.15 (Catalina) には、新しいセキュリティとプライバシーの強化が含まれている。 このバージョンでは、既定では、アプリケーションは明示的な同意なしにディスク上の特定の場所 (ドキュメント、ダウンロード、デスクトップなど) にアクセスできません。 この同意がない場合、Microsoft Defender for Endpoint はデバイスを完全に保護できません。
 
-同意を許可するには、System Preferences -> セキュリティ & プライバシー -> プライバシー -> フル ディスク アクセスを開きます。 ロック アイコンをクリックして変更します (ダイアログ ボックスの下部)。 [エンドポイント用 Microsoft Defender] を選択します。
+1. 同意を許可するには **、[System Preferences**  >  **Security &プライバシー**  >  **のフル** ディスク アクセス  >  **] を開きます**。 ロック アイコンをクリックして変更します (ダイアログ ボックスの下部)。 [エンドポイント用 Microsoft Defender] を選択します。
+
+2. AV 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
+
+    1. リアルタイム保護が有効であることを確認します (次のコマンドを実行した結果 1 で示されます)。
+
+        ```bash
+        mdatp health --field real_time_protection_enabled
+        ```
+
+    1. ターミナル ウィンドウを開きます。 次のコマンドをコピーして実行します。
+
+        ```bash
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        ```
+
+    1. ファイルは Defender for Endpoint for Mac によって検疫されている必要があります。 次のコマンドを使用して、検出された脅威の一覧を表示します。
+
+        ```bash
+        mdatp threat list
+        ```
+
+3. EDR 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
+
+   1. Microsoft Edge for Mac や Safari などのブラウザーで。
+
+   1. MDATP MacOS ファイルをダウンロードDIY.zip抽出 https://aka.ms/mdatpmacosdiy します。
+
+      次のメッセージが表示される場合があります。
+
+      > "mdatpclientanalyzer.blob.core.windows.net" でダウンロードを許可しますか?<br/>
+      > [Web サイトの基本設定] でファイルをダウンロードできる Web サイトを変更できます。
+
+4. **[許可]** をクリックします。
+
+5. [ **ダウンロード] を開きます**。
+
+6. **MDATP MacOS DIY が表示されます**。
+
+   > [!TIP]
+   > ダブルクリックすると、次のメッセージが表示されます。
+   > 
+   > > **開発者が検証者になれませんので、"MDATP MacOS DIY" を開くことができません。**<br/>
+   > > macOS は、このアプリがマルウェアから解放されているのを確認できません。<br/>
+   > > **\[ ごみ箱の \] 取り消しに****\[ 移動する \]** 
+  
+7. [ **キャンセル**] をクリックします。
+
+8. **MDATP MacOS DIY を右クリックし**、[開く] を **クリックします**。 
+
+    システムは、次のメッセージを表示する必要があります。
+
+    > **macOS は **MDATP MacOS DIY の開発者を確認できません**。本当に開く必要がありますか?**<br/>
+    > このアプリを開いて、コンピューターと個人情報を Mac に害を与えるマルウェアやプライバシーを侵害する可能性のあるシステム セキュリティを上書きします。
+
+10. [ **開く**] をクリックします。
+
+    システムは、次のメッセージを表示する必要があります。
+
+    > Microsoft Defender ATP - macOS EDR DIY テスト ファイル<br/>
+    > 対応するアラートは、MDATP ポータルで使用できます。
+
+11. [ **開く**] をクリックします。
+
+    数分で"macOS EDR テスト アラート" という名前のアラートが発生する必要があります。
+
+12. [Microsoft Defender セキュリティ センター] ( に移動します https://SecurityCenter.microsoft.com) 。
+
+13. [アラート キュー] に移動します。
+
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="重大度、カテゴリ、検出元、およびアクションの折りたたみメニューを示す macOS EDR テストアラートの例。":::
+    
+    アラートの詳細とデバイスのタイムラインを確認し、通常の調査手順を実行します。
 
 ## <a name="logging-installation-issues"></a>インストールの問題をログに記録する
 

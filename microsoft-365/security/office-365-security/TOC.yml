@@ -379,8 +379,6 @@
               href: move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
             - name: スタンドアロン EOP で役割グループを管理する
               href: manage-admin-role-group-permissions-in-eop.md
-    - name: Microsoft 365 セキュリティ
-      href: ../index.yml
     - name: Microsoft 365 Defender
       href: ../index.yml
     - name: Microsoft Defender for Endpoint

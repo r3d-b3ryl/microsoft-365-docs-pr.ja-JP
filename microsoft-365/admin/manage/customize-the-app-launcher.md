@@ -23,21 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'カスタム タイルをアプリ 起動ツールに追加して、メール、ドキュメント、アプリ、SharePoint サイト、外部サイト、その他のリソースへのクイック リンクを作成します。 '
-ms.openlocfilehash: cc4edbfadc5c9555e04d04de8f7368dd86aa9974
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b6ae4deed1566492574e30cf8cb66a750c9858c8
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915436"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470633"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 Microsoft 365 では、アプリ 起動ツールを使用して、メール、予定表、ドキュメント、アプリをすばやく簡単に取得できます (詳細[を参照)。](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) これらは、Microsoft 365 で取得するアプリと[、SharePoint ストア](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43)または Azure サーバーから追加するカスタム アプリ[AD。](/previous-versions/office/office-365-api/)
   

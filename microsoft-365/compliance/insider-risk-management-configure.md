@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: a995b6fdbbff36c6466f5e55cda9d7e196fa2c02
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9e1b7a18bea09d10cb133ce9106df45533a72172
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927031"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445231"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -96,7 +96,7 @@ Insider リスク管理では、Microsoft 365 監査ログを使用して、ポ�
 
 ## <a name="step-3-enable-and-view-insider-risk-analytics-insights-optional"></a>手順 3: インサイダー リスク分析の分析情報を有効にして表示する (オプション)
 
-Insider リスク管理分析を使用すると、インサイダー リスク ポリシーを構成することなく、組織内の潜在的なインサイダー リスクの評価を実行できます。 この評価は、組織が高いユーザー リスクの潜在的な領域を特定し、構成を検討できるインサイダー リスク管理ポリシーの種類と範囲を特定するのに役立ちます。 この評価は、追加のライセンスや既存のポリシーの将来の最適化のニーズを判断するのにも役立ちます。 分析スキャン結果は、分析情報がレポートとして確認できるまで最大 48 時間かかる場合があります。 分析インサイトの詳細については、「Insider リスク管理設定 [: Analytics (プレビュー)」を参照してください](insider-risk-management-settings.md#analytics-preview)。
+Insider リスク管理分析を使用すると、インサイダー リスク ポリシーを構成することなく、組織内の潜在的なインサイダー リスクの評価を実行できます。 この評価は、組織が高いユーザー リスクの潜在的な領域を特定し、構成を検討できるインサイダー リスク管理ポリシーの種類と範囲を特定するのに役立ちます。 この評価は、追加のライセンスや既存のポリシーの将来の最適化のニーズを判断するのにも役立ちます。 分析スキャン結果は、分析情報がレポートとして確認できるまで最大 48 時間かかる場合があります。 分析の分析分析の詳細については、「Insider リスク管理設定 [: Analytics (プレビュー)」](insider-risk-management-settings.md#analytics-preview) と「Insider Risk [Management Analytics」](https://www.youtube.com/watch?v=5c0P5MCXNXk) ビデオを参照して、分析が潜在的なインサイダー リスクの特定を加速し、迅速にアクションを実行する際に役立つ方法を理解するのに役立ちます。
 
 Insider Risk Analytics を有効にするには、Insider Risk *Management 、Insider* Risk *Management Admin、* または Microsoft 365 *Global admin* 役割グループのメンバーである必要があります。
 

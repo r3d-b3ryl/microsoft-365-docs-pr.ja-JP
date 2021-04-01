@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 985131900a5e07188c0af641fb86f794d558f80b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc17f89da743afce0d64b45f96493c050e61e343
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919783"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408362"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -43,33 +43,33 @@ ms.locfileid: "50919783"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
-次の Teams アイテムは、Teams のアイテム保持ポリシーを使用して保持および削除できます: 埋め込みの画像、テーブル、ハイパーテキスト リンク、および他の Teams メッセージ、ファイル、[カード コンテンツ](/microsoftteams/platform/task-modules-and-cards/what-are-cards)へのリンクを含む、チャット メッセージとチャネル メッセージ。 チャット メッセージには、チャット内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
+Teams のチャット メッセージとチャネル メッセージは、Teams のアイテム保持ポリシーを使用して削除できます。また、メッセージ内のテキストに加えて、コンプライアンス上の理由により、埋め込み画像、表、ハイパーテキスト リンク、他の Teams メッセージやファイルへのリンク、および [カード コンテンツ](/microsoftteams/platform/task-modules-and-cards/what-are-cards)を保持することができます。 チャット メッセージには、チャット内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
 
 > [!NOTE]
 > カード コンテンツに関する機能は最近追加され、現在はテナントに完全にロール アウトされています。 詳細については、「[Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available (Teams 内のアプリケーションを使用したアダプティブ カード コンテンツのコンプライアンスに関する Microsoft 365 の機能が利用可能になりました)](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)」を参照してください。
 
-プライベート チャネルの Teams メッセージは、現在、保持ポリシーではサポートされていません。 Teams のアイテム保持ポリシーを使用する場合、コード スニペット、Teams モバイル クライアントからの録音されたボイスメモ、サムネイル、お知らせ画像、および絵文字の形式での他のユーザーからの反応は含まれません。
+プライベート チャネルの Teams メッセージは、現在、保持ポリシーではサポートされていません。 Teams のアイテム保持ポリシーを使用する場合、コード スニペット、Teams モバイル クライアントからの録音されたボイスメモ、サムネイル、お知らせ画像、および絵文字の形式での他のユーザーからの反応は保持されません。
 
 Teams で使用するメールとファイルは、Teams のアイテム保持ポリシーに含まれていません。 これらのアイテムには、独自のアイテム保持ポリシーがあります。
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Microsoft Teams での保持のしくみ
 
-アイテム保持ポリシーを使用して、Teams 内のチャットとチャネル メッセージからデータを保持および削除できます。 バックグラウンドでは、Exchange メールボックスを使用してこれらのメッセージを保存します。 Teams チャットのデータは、チャットに含まれる各ユーザーのメールボックスの隠しフォルダーに保存され、グループ メールボックスの同様の隠しフォルダーが Teams チャネル メッセージに使用されます。
+アイテム保持ポリシーを使用して、Teams 内のチャットとチャネル メッセージからデータを保持することができ、それらを削除することもできます。 バックグラウンドでは、Exchange メールボックスを使用してこれらのメッセージからのデータを保存します。 Teams チャットのデータは、チャットに含まれる各ユーザーのメールボックスの隠しフォルダーに保存され、グループ メールボックスの同様の隠しフォルダーが Teams チャネル メッセージに使用されます。
 
 これらのメールボックスは、RecipientTypeDetails 属性で一覧表示されます。
 
-- **MailUser**: これらのメールボックスには、クラウドベースの Teams ユーザーのメッセージが保存されます。
-- **UserMailbox**: これらのメールボックスには、[オンプレミスの Teams ユーザー](search-cloud-based-mailboxes-for-on-premises-users.md)のメッセージが保存されます。
-- **GroupMailbox**: これらのメールボックスは Teams チャネルのメッセージを保存します。
+- **MailUser**: これらのメールボックスには、クラウドベースの Teams ユーザーのメッセージ データが保存されます。
+- **UserMailbox**: これらのメールボックスには、[オンプレミスの Teams ユーザー](search-cloud-based-mailboxes-for-on-premises-users.md)のメッセージ データが保存されます。
+- **GroupMailbox**: これらのメールボックスは Teams チャネルのメッセージ データを保存します。
 
 Teams 会議室に使用される RoomMailbox などの他のメールボックスの種類は、Teams 保持ポリシーではサポートされていません。
 
-Azure を利用したチャット サービスでもこのデータが保存されますが、Teams でもこのサービスを使用していることを理解することが重要です。既定では、このサービスはデータを無期限に保存します。 このため、コンプライアンス上の理由で Teams メッセージを削除する必要がある場合は、Exchange メールボックスと基盤となる Azure ベースのチャット サービスの両方からこのデータを完全に削除できる Teams の保持ポリシーを使用することをお勧めします。 基盤となるアーキテクチャの詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](/MicrosoftTeams/security-compliance-overview)」、特に「[情報保護アーキテクチャ](/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
+Teams では、すべてのメッセージ (チャットおよびチャネル メッセージ) のプライマリ ストレージとして Azure を利用したチャット サービスを使用しており、既定ではこのサービスはデータを無期限に格納しているという点を理解していることは重要です。 このため、コンプライアンス上の理由で Teams メッセージを削除する必要がある場合は、Teams のアイテム保持ポリシーを使用することをお勧めします。アイテム保持ポリシーは、作成された日に基づいて、特定の期間の後にメッセージを削除することができます。 メッセージは、Exchange メールボックスとその基になる Azure を利用したチャット サービスの両方から完全に削除されます。 基盤となるアーキテクチャの詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](/MicrosoftTeams/security-compliance-overview)」、特に「[情報保護アーキテクチャ](/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
 
-Teams のチャットとチャネル メッセージはメールボックスに保存されますが、この Teams のデータは、**Teams のチャネル メッセージ** と **Teams のチャット** の場所に対して構成されているアイテム保持ポリシーによってのみ含まれます。 Teams のチャットとチャネル メッセージは、Exchange ユーザーまたはグループのメールボックスに対して構成されているアイテム保持ポリシーの影響を受けません。
+Teams のチャットとチャネル メッセージのデータはメールボックスに保存されますが、このデータは、**Teams のチャネル メッセージ** と **Teams のチャット** の場所に対して構成されているアイテム保持ポリシーによってのみ含まれます。 Teams のチャットとチャネル メッセージは、Exchange ユーザーまたはグループのメールボックスに対して構成されているアイテム保持ポリシーの影響を受けません。
 
 > [!NOTE]
-> ユーザーが Teams データを保持するアクティブなアイテム保持ポリシーに含まれている場合、このポリシーに含まれるユーザーのメールボックスを削除すると、Teams のデータを保持するためにメールボックスは[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)に変換されます。 ユーザーのこの Teams のデータを保持する必要がない場合は、メールボックスを削除する前に、アイテム保持ポリシーからそのユーザー アカウントを除外します。
+> ユーザーが Teams メッセージを保持するアクティブなアイテム保持ポリシーに含まれている場合、このポリシーに含まれるユーザーのメールボックスを削除すると、Teams のデータを保持するためにメールボックスは[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)に変換されます。 ユーザーのこの Teams のデータを保持する必要がない場合は、メールボックスを削除する前に、アイテム保持ポリシーからそのユーザー アカウントを除外します。
 
 チャット メッセージとチャネル メッセージのアイテム保持ポリシーが構成されると、Exchange サービスのタイマー ジョブが、これらの Teams メッセージが保存されている隠しフォルダ内のアイテムを定期的に評価します。 このタイマー ジョブを実行するには、最大 7 日間かかります。 アイテムの保持期間が満了すると、これらのアイテムは SubstrateHolds フォルダに移動されます。これは、すべてのユーザーまたはグループのメールボックスにある別の隠しフォルダで、「論理的に削除済み」アイテムが完全に削除される前に保存するためのものです。
 

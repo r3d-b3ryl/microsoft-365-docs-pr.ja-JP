@@ -22,21 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品と機能の更新プログラムのリリース オプションを設定する方法について説明します。
-ms.openlocfilehash: e909cdf35ba9dd8282540783f7c362e5ae49212e
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 6c5d505f0ece47b0a47df8b7ed1dc015afe93e82
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034081"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470573"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準リリースオプションまたはターゲット リリース オプションを設定する
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 > [!IMPORTANT]
 > この記事で説明する Microsoft 365 更新プログラムは、Microsoft 365、SharePoint Online、および Exchange Online に適用されます。 これらのリリース オプションは、Microsoft 365 への変更をリリースするための最善の努力の方法ですが、すべての時間またはすべての更新プログラムについて保証することはできません。 Microsoft 365 Apps、Skype for Business、Microsoft Teams、および関連サービスには適用されません。 Microsoft 365 Apps のリリース オプションの詳細については [、「Microsoft 365](/deployoffice/overview-update-channels)Apps の更新プログラム チャネルの概要」を参照してください。

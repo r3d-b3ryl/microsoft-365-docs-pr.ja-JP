@@ -21,17 +21,14 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: 中国の 21Vianet が運営する Office 365 で支払いを行った後、Fapiao 要求を 21Vianet Fapiao 管理システムに送信する方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914476"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470955"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>21Vianet が運用Office 365 の Fapiao を申請する
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
 
 Fapiao 要求は、支払い後約 3 日後に 21Vianet Fapiao 管理システムに送信できます。 Fapiao 要求を送信すると、2 日後に処理されます。
   
@@ -111,7 +108,7 @@ Fapiao が使用されなき場合、システムは通知を表示し、Fapiao 
   
 ![21Vianet Fapiao 管理システムが使い切れた場合に表示されるエラー メッセージ。](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
-## <a name="faqs"></a>よく寄せられる質問
+## <a name="faqs"></a>FAQ
 
 ### <a name="what-services-can-i-get-from-online-support"></a>オンライン サポートからどのようなサービスを受け取れるか。
 

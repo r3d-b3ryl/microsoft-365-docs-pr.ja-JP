@@ -20,21 +20,15 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 管理センターで管理者の電話番号とメール アドレスを更新します。 自分の管理者パスワードをリセットする場合は、この情報が必要です。
-ms.openlocfilehash: a5b1548ee6ac0fa6bac976758ea8f6753ea2853c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914992"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470919"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメール アドレスを更新する
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 この記事では、管理者が Microsoft 365 でビジネス用の電話とメール アドレスを変更する方法について説明します。
   
 会社名、住所、電話番号、技術的な連絡先情報などの会社のプロファイル情報を変更する方法を探している場合は、「[組織の住所およびその他のプロファイル情報を変更する](change-address-contact-and-more.md)」を参照してください。

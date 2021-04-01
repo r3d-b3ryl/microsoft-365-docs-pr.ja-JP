@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f6f01a1bed296b6af2e6be973de6605910809fc3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1648c648401086b296bd267fc1a9e7b011930e74
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926405"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445645"
 ---
 # <a name="insider-risk-management-cases"></a>Insider リスク管理ケース
 
@@ -29,6 +29,8 @@ ms.locfileid: "50926405"
 - ケースを良性として解決する
 - ケースを ServiceNow インスタンスまたは電子メール受信者と共有する
 - 高度な電子情報開示調査のケースをエスカレートする
+
+インサイダー リスク管理におけるケースの調査と管理の概要については、「Insider Risk Management Investigation and [Escalation」](https://www.youtube.com/watch?v=UONUSmkRC8s) ビデオをご覧ください。
 
 ## <a name="cases-dashboard"></a>ケース ダッシュボード
 
@@ -52,7 +54,7 @@ ms.locfileid: "50926405"
 
 検索コントロール **を使用** して、特定のテキストのケース名を検索し、ケース フィルターを使用して、次の属性でケースを並べ替える。
 
-- ステータス
+- 状態
 - ケースが起きてからの時間、開始日、終了日
 - 最終更新、開始日、終了日
 
@@ -92,7 +94,7 @@ ms.locfileid: "50926405"
 
 [ **アラート]** タブには、ケースに含まれる現在のアラートが要約されます。 新しいアラートは既存のケースに追加され、割り当てられたアラート キューに追加されます。 次のアラート属性がキューに一覧表示されます。
 
-- ステータス
+- 状態
 - 重要度
 - 検出された時間
 
@@ -100,7 +102,7 @@ ms.locfileid: "50926405"
 
 検索コントロールを使用して、特定のテキストのアラート名を検索し、アラート フィルターを使用して、次の属性でケースを並べ替える。
 
-- ステータス
+- 状態
 - 重要度
 - 検出された時間、開始日、終了日
 

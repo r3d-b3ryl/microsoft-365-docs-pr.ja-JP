@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1757160b37500e97586fbb6dfb16d81303bc54e4
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379351"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476483"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint サービスにオンボードする
 
@@ -204,7 +204,7 @@ Defender for Endpoint は、Azure Security Center と統合して、包括的な
 - 自動オンボーディング - Defender for Endpoint センサーは、Azure セキュリティ センターにオンボードされている Windows サーバーで自動的に有効になります。 Azure Security Center オンボーディングの詳細については、「強化されたセキュリティのための Azure Security Center Standard へのオンボーディング」 [を参照してください](https://docs.microsoft.com/azure/security-center/security-center-onboarding)。
 
     > [!NOTE]
-    > 自動オンボーディングは、SP1、Windows Server 2008 R2 R2、Windows Server 2012 Windows Server 2016 にのみ適用されます。
+    > Azure Defender for Servers と Microsoft Defender for Endpoint の統合は [、Windows Server 2019 と Windows Virtual Desktop (WVD)](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
 
 - Azure Security Center によって監視される Windows サーバーは、Defender for Endpoint - Azure Security Center で Defender for Endpoint テナントにシームレスに接続し、クライアントとサーバー全体で 1 つのビューを提供します。  さらに、Defender for Endpoint アラートは Azure Security Center コンソールで利用できます。
 - サーバー調査 - Azure Security Center のお客様は、Microsoft Defender Security Center にアクセスして詳細な調査を実行して、潜在的な侵害の範囲を明らかにできます。
@@ -283,7 +283,7 @@ Windows サーバーをオフボードするには、次のいずれかの方法
 <br>
 
 ## <a name="related-topics"></a>関連項目
-- [オンボード Windows 10 デバイス](configure-endpoints.md)
+- [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)
 - [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
 - [新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)

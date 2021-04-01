@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する場合の事前作業。'
-ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445604"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476351"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の事前作業
 
@@ -102,12 +102,13 @@ nslookup -querytype=CNMAE msoid.contoso.com
 
 <!-- before phase 5 -->
 
-**適用対象**: 共有予定表と可用性アドレス空間を有効にしている Exchange Online のお客様<br>
+**適用対象**: Exchange Online のお客様<br>
 **適用時**: フェーズ 9 の終了前の任意の時間
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| 365 サービスへの今後の移行を外部Office通知します。 | 可用性アドレス空間の構成では、空き時間情報を 365 Officeできます。 | そうしない場合は、お客様の移行の後のフェーズでサービスまたはクライアントの障害が発生する可能性があります。 |
+| 365 サービスへの今後の移行を外部Office通知します。 |  お客様は、予定表と空き時間情報の共有を有効にしたパートナーに通知する必要があります (空き時間情報を 365 と共有Office必要があります。 可用性構成は、Exchange Online の移行が完了Office [365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) のグローバル エンドポイントを使用するために移行する必要があります。 | そうしない場合は、お客様の移行の後のフェーズでサービスまたはクライアントの障害が発生する可能性があります。 |
+| 必要な IMAP4/POP3/SMTP クライアントの変更をユーザーに通知します。 | クライアント プロトコル IMAP4、POP3、SMTP の Microsoft Cloud Deutschland エンドポイントへのデバイス接続を持つユーザーは、クライアント デバイスを手動で更新して、Office [365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)ワールドワイド エンドポイントに切り替える必要があります。 | この依存関係をこれらのプロトコルのユーザーに事前に伝え、この移行中に Outlook mobile または Outlook on the web を使用するために切り替える必要があります。 クライアント エンドポイントの更新に失敗すると、ユーザー メールボックスの移行時に Microsoft Cloud Deutschland に対するクライアント接続エラーが発生します。 |
 ||||
 
 ### <a name="exchange-online-hybrid-configuration"></a>Exchange Online ハイブリッド構成

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、Microsoft Teams のチャットとチャネルに DLP ポリシーを適用できます。 この記事では、その動作について詳しくは、この記事を参照してください。
-ms.openlocfilehash: 3a7b228292952bdba3c950b8ab67501c40e99238
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 40c55ed486efc75619b514a60b707ac75554953b
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917923"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445665"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -31,7 +31,10 @@ Teams チャットでの DLP 保護のサポートには、E5 が必要です。
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft Teams 用 DLP の概要
 
-最近では [、データ損失防止](data-loss-prevention-policies.md) (DLP) 機能が拡張され、Microsoft Teams のチャット メッセージとチャネル メッセージ (プライベート チャネル メッセージを含む) **が含まれるまで拡張されました**。
+最近では [、データ損失防止](data-loss-prevention-policies.md) (DLP) 機能が拡張され、Microsoft Teams のチャット メッセージとチャネル メッセージ (プライベート チャネル メッセージを含む) **が含まれるまで拡張されました**。 
+
+> [!IMPORTANT]
+> DLP は現在、チャットスレッドまたはチャネル スレッドの実際のメッセージにのみ適用されます。 アクティビティ通知 (短いメッセージ プレビューを含み、ユーザーの通知設定に基づいて表示される)は、現時点では Teams DLP には含まれません。 メッセージの一部に表示される機密情報は、DLP ポリシーが適用され、メッセージ自体の機密情報が削除された後でも、通知に表示されます。
 
 組織に DLP がある場合は、Microsoft Teams チャネルまたはチャット セッションで機密情報を共有するユーザーを防止するポリシーを定義できます。 この保護のしくみの例を次に示します。
 
@@ -56,7 +59,8 @@ Teams チャットでの DLP 保護のサポートには、E5 が必要です。
 
 送信者が Teams チャネルで社会保障番号を共有した例に戻り、受信者が見た情報を次に示します。
 
-![ブロックされたメッセージ](../media/dlp-teams-blockedmessage-notification-to-user.png)
+> [!div class="mx-imgBorder"]
+> ![ブロックされたメッセージ](../media/dlp-teams-blockedmessage-notification-to-user.png)
 
 **[What's this?** ][](data-loss-prevention-policies.md)リンクは DLP ポリシーに関する記事を開き、メッセージがブロックされた理由を説明するのに役立ちます。
 
@@ -70,9 +74,15 @@ Teams チャットでの DLP 保護のサポートには、E5 が必要です。
 
 3. ポリシーを選択し、[ポリシー設定] の **横にある**[編集] を **選択します**。
 
-4. 新しいルールを作成するか、ポリシーの既存のルールを編集します。<br/>![ポリシーのルールの編集](../media/dlp-teams-editrule.png)<br/>
+4. 新しいルールを作成するか、ポリシーの既存のルールを編集します。
 
-5. [ユーザー通知 **] タブで** 、[メール テキストの **カスタマイズ** ] または [ポリシー ヒントのテキスト **オプションのカスタマイズ] を選択** します。<br/>![ユーザー通知とポリシーヒントをカスタマイズする](../media/dlp-teams-editrule-usernotifications.png)<br/>  
+    > [!div class="mx-imgBorder"]
+    > ![ポリシーのルールの編集](../media/dlp-teams-editrule.png)
+
+5. [ユーザー通知 **] タブで** 、[メール テキストの **カスタマイズ** ] または [ポリシー ヒントのテキスト **オプションのカスタマイズ] を選択** します。
+
+    > [!div class="mx-imgBorder"]
+    > ![ユーザー通知とポリシーヒントをカスタマイズする](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
 6. 電子メール通知やポリシー ヒントに使用するテキストを指定し、[保存] を **選択します**。
 
@@ -89,20 +99,25 @@ Teams チャットでの DLP 保護のサポートには、E5 が必要です。
 
 2. [**データ損失防止ポリシー] を**  >  **選択します**。
 
-3. ポリシーを選択し、[場所] の下の値 **を確認します**。 Teams のチャット **メッセージとチャネル メッセージが表示される** 場合は、すべて設定されています。 編集しない場合は、[編集] を **クリックします**。<br/>![既存のポリシーの場所](../media/dlp-teams-editexistingpolicy.png)<br/>
+3. ポリシーを選択し、[場所] の下の値 **を確認します**。 Teams のチャット **メッセージとチャネル メッセージが表示される** 場合は、すべて設定されています。 編集しない場合は、[編集] を **クリックします**。
 
-4. [状態 **] 列** で、Teams チャット メッセージとチャネル メッセージの **ポリシーをオンにします**。<br/>![Teams のチャットとチャネルの DLP](../media/dlp-teams-addteamschatschannels.png)<br/>
+    > [!div class="mx-imgBorder"]
+    > ![既存のポリシーの場所](../media/dlp-teams-editexistingpolicy.png)
+
+4. [状態 **] 列** で、Teams チャット メッセージとチャネル メッセージの **ポリシーをオンにします**。
+
+    > [!div class="mx-imgBorder"]
+    > ![Teams のチャットとチャネルの DLP](../media/dlp-teams-addteamschatschannels.png)
 
 5. [場所 **の選択] タブ** で、すべてのアカウントの既定の設定を維持するか、[特定の場所を選択する] **を選択します**。 次の情報を指定できます。
+
     1. 最大 1000 個の個別アカウントを含めるか除外する
     1. 配布リストとセキュリティ グループを含めるか除外します。 **これはパブリック プレビュー機能です。**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
     
 6. **[次へ]** を選択します。
 
-
-
-6. [**保存**] をクリックします。
+7. **[保存]** をクリックします。
 
 変更がデータ センターを通じて動作し、ユーザー アカウントに同期するために約 1 時間を許可します。
 <!-- again, why user accounts? -->
@@ -115,26 +130,39 @@ Teams チャットでの DLP 保護のサポートには、E5 が必要です。
 
 2. [**データ損失防止ポリシー] +**  >    >  **[ポリシーの作成] を選択します**。
 
-3. テンプレートを選択 [し、[](data-loss-prevention-policies.md#dlp-policy-templates)次へ] を **選択します**。<br/>この例では、米国の個人を特定できる情報データ テンプレートを選択しました。<br/>![DLP ポリシーのプライバシー テンプレート](../media/dlp-teams-createnewpolicy-template.png)<br/>
+3. テンプレートを選択 [し、[](data-loss-prevention-policies.md#dlp-policy-templates)次へ] を **選択します**。
+
+    この例では、米国の個人を特定できる情報データ テンプレートを選択しました。
+
+    > [!div class="mx-imgBorder"]
+    > ![DLP ポリシーのプライバシー テンプレート](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
 4. [ポリシー **に名前を付け** ] タブで、ポリシーの名前と説明を指定し、[次へ] を **選択します**。
 
 5. [場所 **の選択] タブ** で、すべてのアカウントの既定の設定を維持するか、[特定の場所を選択する] **を選択します**。 次の情報を指定できます。
+
     1. 最大 1000 個の個別アカウントを含めるか除外する
     1. 配布リストとセキュリティ グループを含めるか除外します。 **これはパブリック プレビュー機能です。**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
-![DLP ポリシーの場所](../media/dlp-teams-selectlocationsnewpolicy.png)
+    ![DLP ポリシーの場所](../media/dlp-teams-selectlocationsnewpolicy.png)
 
-> [!NOTE]
-> 機密情報を含むドキュメントが Teams で不適切に共有されない場合は **、SharePoint** サイトと **OneDrive** アカウントが Teams チャットメッセージとチャネル メッセージと共にオンになっていることを **確認します**。
-
+    > [!NOTE]
+    > 機密情報を含むドキュメントが Teams で不適切に共有されない場合は **、SharePoint** サイトと **OneDrive** アカウントが Teams チャットメッセージとチャネル メッセージと共にオンになっていることを **確認します**。
 
 6. [ポリシー設定 **] タブ** の[保護するコンテンツの種類をカスタマイズする] で、既定の単純な設定を保持するか、[詳細設定を使用する] を選択して、[次へ] を選択 **します**。 詳細設定を選択した場合は、ポリシーのルールを作成または編集できます。 (このヘルプについては、「簡易設定 [と詳細設定」を参照](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)してください。
 
-7.  [ポリシー **設定] タブ** の **[機密情報** が検出された場合の操作] で、設定を確認します。 (既定のポリシー ヒントと電子メール通知を[](use-notifications-and-policy-tips.md)保持するか、カスタマイズすることもできます)。<br/>![ヒントと通知を含む DLP ポリシー設定](../media/dlp-teams-policysettings-tipsemails.png)<br/>設定の確認または編集が完了したら、[次へ] を **選択します**。
+7.  [ポリシー **設定] タブ** の **[機密情報** が検出された場合の操作] で、設定を確認します。 (既定のポリシー ヒントと電子メール通知を[](use-notifications-and-policy-tips.md)保持するか、カスタマイズすることもできます)。
 
-8. [ポリシーの **設定**] タブの [ポリシーを有効にするか、最初にテストするのかを選択しますか **?]** で、ポリシーを有効 [](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)にするか、最初にテストするか、今のところオフにしておき、[次へ] を選択します。<br/>![ポリシーを有効にするかどうかを指定する](../media/dlp-teams-policysettings-turnonnow.png)<br/>
+    > [!div class="mx-imgBorder"]
+    > ![ヒントと通知を含む DLP ポリシー設定](../media/dlp-teams-policysettings-tipsemails.png)
+
+    設定の確認または編集が完了したら、[次へ] を **選択します**。
+
+8. [ポリシーの **設定**] タブの [ポリシーを有効にするか、最初にテストするのかを選択しますか **?]** で、ポリシーを有効 [](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)にするか、最初にテストするか、今のところオフにしておき、[次へ] を選択します。
+
+    > [!div class="mx-imgBorder"]
+    > ![ポリシーを有効にするかどうかを指定する](../media/dlp-teams-policysettings-turnonnow.png)
 
 9. [設定 **の確認] タブ** で、新しいポリシーの設定を確認します。 [編集 **] を** 選択して変更を加えます。 完了したら、[作成] を **選択します**。
 
@@ -144,26 +172,38 @@ Teams チャットでの DLP 保護のサポートには、E5 が必要です。
 
 機密情報を含む SharePoint ドキュメントに、既定で SharePoint または Teams から外部ゲストがアクセスできないことを確認するには、次の項目を選択します。
 
-- 新しいファイルを既定で機密性の高いファイルとしてマークすることで、DLP スキャンを実行して共有しても安全とマークされるまで、ドキュメントが [保護されます。](/sharepoint/sensitive-by-default)
+- 新しいファイルを既定で機密性の高いファイルとしてマークすることで、DLP スキャンが行い、共有が安全とマークされるまで、ドキュメントが [確実に保護されます](/sharepoint/sensitive-by-default)。
+
 - 推奨される DLP ポリシー構造
+
     - **条件**
         - コンテンツには、次の機密情報の種類が含まれる。 [適用されるすべて選択]
+        
         - Microsoft 365 から組織外のユーザーとコンテンツを共有する
-        <br/>![機密性の高いコンテンツの外部共有を検出する DLP 条件](../media/dlp-teams-external-sharing/external-condition.png)<br/>
-
+        
+          > [!div class="mx-imgBorder"]
+          > ![機密性の高いコンテンツの外部共有を検出する DLP 条件](../media/dlp-teams-external-sharing/external-condition.png)
 
     - **アクション**
         - 外部ユーザーのコンテンツへのアクセスを制限する
+        
         - メールおよびポリシー ヒントでユーザーに通知する
-        - インシデント レポートを管理者に送信する    
-        <br/>![機密性の高いコンテンツの外部共有をブロックする DLP アクション](../media/dlp-teams-external-sharing/external-action.png)<br/>
+        
+        - インシデント レポートを管理者に送信する
+        
+        > [!div class="mx-imgBorder"]
+        > ![機密性の高いコンテンツの外部共有をブロックする DLP アクション](../media/dlp-teams-external-sharing/external-action.png)
 
 機密情報を含む SharePoint でドキュメントを外部ゲストと共有しようとすると、DLP ポリシーが実行されます。
-<br/>![外部共有がブロックされている](../media/dlp-teams-external-sharing/external-sharing-blocked.png)<br/>
+
+> [!div class="mx-imgBorder"]
+> ![外部共有がブロックされている](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
 
 
 ゲストが Teams でドキュメントを開き、外部ブロックを使用すると、DLP ポリシーが実行されます。
-<br/>![外部アクセスがブロックされている](../media/dlp-teams-external-sharing/external-access-blocked.png)<br/>
+
+> [!div class="mx-imgBorder"]
+> ![外部アクセスがブロックされている](../media/dlp-teams-external-sharing/external-access-blocked.png)
 
 ## <a name="related-articles"></a>関連記事
 

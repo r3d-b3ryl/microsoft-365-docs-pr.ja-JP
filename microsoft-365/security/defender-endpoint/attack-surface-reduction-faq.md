@@ -14,13 +14,14 @@ ms.author: v-maave
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
+ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7685bd70d85ecebe759ade762b78ee2c3639cea8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061796"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476470"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 
@@ -37,7 +38,7 @@ ASR はもともと、Windows 10 バージョン 1709 で、Microsoft Defender A
 
 ## <a name="do-i-need-to-have-an-enterprise-license-to-run-asr-rules"></a>ASR ルールを実行するには、エンタープライズ ライセンスが必要ですか?
 
-ASR ルールと機能の完全なセットは、Windows 10 のエンタープライズ ライセンスを持っている場合にのみサポートされます。 限られた数のルールは、エンタープライズ ライセンスなしで動作する場合があります。 Microsoft 365 Business をお持ちの場合は、Microsoft Defender Antivirus をプライマリ セキュリティ ソリューションとして設定し、PowerShell を使用してルールを有効にしてください。 ただし、エンタープライズ ライセンスのない ASR の使用は公式にはサポートされていません。ASR の完全な機能は使用できません。
+ASR ルールと機能の完全なセットは、Windows 10 のエンタープライズ ライセンスを持っている場合にのみサポートされます。 限られた数のルールは、エンタープライズ ライセンスなしで動作する場合があります。 Microsoft 365 Business をお持ちの場合は、Microsoft Defender Antivirus をプライマリ セキュリティ ソリューションとして設定し、PowerShell を使用してルールを有効にしてください。 エンタープライズ ライセンスなしで ASR を使用しても、正式にはサポートされていないので、ASR の完全な機能を使用することはできません。
 
 Windows ライセンスの詳細については [、「Windows 10 Licensing」](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) を参照し [、Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)のボリューム ライセンス ガイドを参照してください。
 
@@ -49,11 +50,56 @@ Windows ライセンスの詳細については [、「Windows 10 Licensing」](
 
 E3 でサポートされるルールはすべて、E5 でもサポートされています。
 
-E5 では、Defender for Endpoint との統合も向上しました。 E5 を使用すると [、Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) を使用して、アラートの分析をリアルタイムで監視および確認し、ルールの除外を微調整し、ASR ルールを構成し、イベント レポートのリストを表示できます。
+E5 は、Defender for Endpoint とのより大きな統合を追加します。 E5 を使用すると、リアルタイムでアラートを表示し、ルールの除外を微調整し、ASR ルールを構成し、イベント レポートのリストを表示できます。
 
 ## <a name="what-are-the-currently-supported-asr-rules"></a>現在サポートされている ASR ルールは何ですか?
-
 ASR は現在、以下のすべてのルールをサポートしています。
+
+## <a name="what-rules-to-enable-all-or-can-i-turn-on-individual-rules"></a>有効にするルール すべて、または個々のルールを有効にできますか?
+環境に最適な機能を把握するために、監査モードで ASR ルールを [有効にしてください](audit-windows-defender.md)。 この方法では、組織に与える影響を判断します。 たとえば、業務のライン アプリケーションなどです。
+
+## <a name="how-do-asr-rules-exclusions-work"></a>ASR ルールの除外は、どのように機能しますか?
+ASR ルールの場合、除外を 1 つ追加すると、すべての ASR ルールに影響します。
+次の 2 つの特定のルールでは、除外はサポートされていません。
+
+|ルールの名前|GUID|ファイル&フォルダーの除外|
+|:--|:--|:--|
+|JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|サポートされていません|
+|WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|サポートされていません|
+
+ASR ルールの除外は、ワイルドカード、パス、および環境変数をサポートします。 ASR ルールでワイルドカードを使用する方法の詳細については、「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
+
+ASR ルールの除外に関する次の項目 (ワイルドカードや env を含む) に注意してください。 変数:
+
+- ASR ルールの除外は、Defender AV の除外とは独立しています
+- ワイルドカードを使用してドライブ文字を定義することはできません
+- 複数のフォルダーをパスで除外する場合は、\ の複数のインスタンスを使用して、複数の入れ子になったフォルダーを示します \* (たとえば、c:\Folder \* \* \Test)
+- Microsoft Endpoint Configuration Manager *はワイルドカード (** または ?) をサポートしていない
+- ランダムな文字 (自動ファイル生成) を含むファイルを除外する場合は、'?' 記号 (たとえば、C:\Folder\fileversion?) を使用できます。docx)
+- グループ ポリシーの ASR 除外では引用符はサポートされていません (エンジンは長いパス、スペースなどをネイティブに処理しますので、引用符を使用する必要はありません)
+- ASR ルールは NT AUTHORITY\SYSTEM アカウントで実行されます。そのため、環境変数はコンピューター変数に制限されます。
+
+
+
+## <a name="how-do-i-know-what-i-need-to-exclude"></a>除外する必要がある情報を知る方法
+ASR ルールが異なると、保護フローが異なります。 構成する ASR ルールが保護する機能と、実際の実行フローがどのようにパンアウトされるのかを常に考えておきます。
+
+例: **Windows** ローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする ローカル セキュリティ機関サブシステム (LSASS) プロセスからの直接読み取りは、企業の資格情報を公開する可能性があるから、セキュリティ リスクになる可能性があります。
+
+このルールにより、信頼されていないプロセスは LSASS メモリに直接アクセスできます。 プロセスが OpenProcess() 関数を使用して LSASS にアクセスしようとするたびに、PROCESS_VM_READ のアクセス権を持つルールは、そのアクセス権を特にブロックします。
+
+:::image type="content" source="images/asrfaq1.png" alt-text="LSASS を盗む資格情報をブロックする":::
+
+上記の例を見て、アクセス権がブロックされたプロセスの例外を実際に作成する必要がある場合、フル パスと共にファイル名を追加すると、ファイル名はブロックから除外され、LSASS プロセス メモリへのアクセスが許可された後は除外されます。 値 0 は、ASR ルールがこのファイル/プロセスを無視し、ブロック/監査を行うのを意味します。
+
+:::image type="content" source="images/asrfaq2.png" alt-text="ファイル asr を除外する":::
+
+## <a name="what-are-the-rules-microsoft-recommends-enabling"></a>Microsoft が有効に推奨するルールは何ですか?
+
+可能な限りすべてのルールを有効にすることをお勧めします。 ただし、ルールを有効にしない場合があります。 たとえば、Microsoft Endpoint Configuration Manager (または System Center Configuration Manager - SCCM) を使用してエンドポイントを管理する場合は、PSExec コマンドおよび WMI コマンド ルールから発生するプロセス作成をブロックすることを有効にすることをお勧めしません。
+
+ルール固有の各情報や警告については、パブリック ドキュメントで確認することを強 [くお勧めします](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md)。
+保護の複数の柱にまたがって、Office、資格情報、スクリプト、電子メールなど。WMI イベント サブスクリプションによる永続化のブロックを除くすべての ASR ルールは、Windows 1709 以降でサポートされます。
 
 * [メール クライアントと Web メールから実行可能なコンテンツをブロックする](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 * [すべてのアプリケーションOffice子プロセスの作成をブロックする](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
@@ -136,7 +182,7 @@ Windows 10 から直接インデックス オプションを開いてみろ。
 ## <a name="see-also"></a>関連項目
 
 * [攻撃表面の縮小の概要](attack-surface-reduction.md)
-* [攻撃表面の縮小ルールを評価する](evaluate-attack-surface-reduction.md)
-* [攻撃表面の縮小ルールをカスタマイズする](customize-attack-surface-reduction.md)
-* [攻撃表面の縮小ルールを有効にする](enable-attack-surface-reduction.md)
+* [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
+* [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)
+* [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
 * [Microsoft Defender と他のウイルス対策/マルウェア対策との互換性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
