@@ -95,7 +95,7 @@
         - name: 既定のセキュリティ保護
           href: secure-by-default.md
         - name: 詳細については、「Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーを構成する」を参照してください。
-          href: configure-atp-anti-phishing-policies.md
+          href: configure-mdo-anti-phishing-policies.md
         - name: マルウェア対策ポリシーを構成する
           href: configure-anti-malware-policies.md
         - name: スパム対策ポリシーの構成
