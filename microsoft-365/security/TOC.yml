@@ -28,26 +28,14 @@
           href: ./office-365-security/sharepoint-file-access-policies.md
         - name: 推奨される SaaS アプリの MCAS ポリシー
           href: ./office-365-security/mcas-saas-access-policies.md
-    - name: Microsoft 365 セキュリティ センター
-      href: defender/overview-security-center.md
-    - name: Microsoft セキュア スコア
-      items:
-        - name: セキュア スコアの概要
-          href: defender/microsoft-secure-score.md
-        - name: セキュリティ体制にアクセス
-          href: defender/microsoft-secure-score-improvement-actions.md
-        - name: スコアの履歴を記録し、目標を達成する
-          href: defender/microsoft-secure-score-history-metrics-trends.md
-        - name: 今後の予定
-          href: defender/microsoft-secure-score-whats-coming.md
-        - name: 新機能
-          href: defender/microsoft-secure-score-whats-new.md
     - name: Microsoft 365 Defender
       items:
         - name: 概要
           items:
-            - name: Microsoft 365 Defender とは
+            - name: Microsoft 365 Business とは
               href: defender/microsoft-365-defender.md
+            - name: Microsoft 365 セキュリティ センター
+              href: defender/overview-security-center.md
             - name: Microsoft 365 Defender の新機能
               href: defender/whats-new.md
             - name: Microsoft 365 セキュリティ センターの Defender for Endpoint
@@ -116,6 +104,18 @@
               href: defender/m365d-pilot.md
             - name: よくあるご質問 (FAQ) をオンにする
               href: defender/m365d-enable-faq.md
+            - name: Microsoft セキュア スコア
+              items:
+                - name: セキュア スコアの概要
+                  href: defender/microsoft-secure-score.md
+                - name: セキュリティ体制にアクセス
+                  href: defender/microsoft-secure-score-improvement-actions.md
+                - name: スコアの履歴を記録し、目標を達成する
+                  href: defender/microsoft-secure-score-history-metrics-trends.md
+                - name: 今後の予定
+                  href: defender/microsoft-secure-score-whats-coming.md
+                - name: 新機能
+                  href: defender/microsoft-secure-score-whats-new.md
             - name: 脅威の分析
               items:
                 - name: 脅威の分析の概要
