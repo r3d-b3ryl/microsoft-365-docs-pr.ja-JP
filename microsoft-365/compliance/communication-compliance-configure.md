@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e4dcbeeda50c6229935bae8003d8db129d852451
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052125"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488204"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
@@ -112,7 +112,7 @@ ms.locfileid: "51052125"
 
 9. [閉 **じる] を** 選択して手順を完了します。
 
-役割グループとアクセス許可の詳細については、「[Permissions in the Compliance Center (コンプライアンス センターのアクセス許可)](../security/defender-365-security/protect-against-threats.md)」を参照してください。 
+役割グループとアクセス許可の詳細については、「[Permissions in the Compliance Center (コンプライアンス センターのアクセス許可)](../security/office-365-security/protect-against-threats.md)」を参照してください。 
 
 ## <a name="step-2-required-enable-the-audit-log"></a>手順 2 (必須): 監査ログを有効にする
 
@@ -134,9 +134,6 @@ ms.locfileid: "51052125"
 ポリシーで配布グループを割り当てると、ポリシーは配布グループ内の各ユーザーからのすべてのメールと Teams チャットを監視します。 ポリシーで Microsoft 365 グループを割り当てると、ポリシーは、各グループ メンバーが受信した個々の電子メールやチャットではなく、そのグループに送信されたすべてのメールと Teams チャットを監視します。
 
 Exchange オンプレミス展開または外部メール プロバイダーを持つ組織で、ユーザーの Microsoft Teams チャットを監視する場合は、監視するオンプレミスメールボックスまたは外部メールボックスを持つユーザーの配布グループを作成する必要があります。 これらの手順の後半では、ポリシー ウィザードでこの配布グループを **[監視** 対象ユーザーとグループ] の選択として割り当てる必要があります。
-
->[!IMPORTANT]
->組織がセキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスを使用して、オンプレミス ユーザーの Teams チャット データを検索できるようにするには、Microsoft サポートに要求を提出する必要があります。 詳細については、「オンプレミス ユーザー向けクラウドベースのメールボックスの検索 [」を参照してください](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 大規模な企業組織の監督対象ユーザーを管理するには、大規模なグループ全体のユーザーすべてを監視する必要がある場合があります。 PowerShell を使用して、割り当てられたグループのグローバル通信コンプライアンス ポリシーの配布グループを構成できます。 これにより、1 つのポリシーで何千人ものユーザーを監視し、新入社員が組織に参加するに従って通信コンプライアンス ポリシーを更新できます。
 
@@ -283,7 +280,7 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 
 4. 修復コントロールを使用してアラートを修復し、アラートが適切に解決されていることを確認します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 最初の通信コンプライアンス ポリシーを作成するためにこれらの手順を完了すると、24 ~ 48 時間後にアクティビティ インジケーターからアラートの受信を開始します。 この記事の手順 5 のガイダンスを使用して、必要に応じて追加のポリシーを構成します。
 

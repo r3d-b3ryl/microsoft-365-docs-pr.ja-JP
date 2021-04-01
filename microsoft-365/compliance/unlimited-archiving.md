@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Exchange Online メールボックスに無制限のアーカイブ記憶域を提供する自動拡張アーカイブについて説明します。
-ms.openlocfilehash: 9692ba27c64f41ac584bb4008a8b860daab031f5
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
-ms.translationtype: HT
+ms.openlocfilehash: d61d3649ed65a93298928cced21180bbeca6aa95
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029433"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476268"
 ---
 # <a name="overview-of-unlimited-archiving"></a>無制限アーカイブの概要
 
@@ -90,7 +90,8 @@ Outlook または Outlook on the web を使って自動拡張アーカイブに�
 
 - 自動拡張記憶域に移動されたものも含め、アーカイブ メールボックスの任意のフォルダーにアクセスできます。
 
-- 自動拡張アーカイブの検索は、Web 版の Outlook でも使用できます。 オンライン アーカイブと同様に、現在のフォルダー自体を検索することによってのみ、追加記憶域に移動されたアイテムを検索できます。 つまり、フォルダー リストでアーカイブ フォルダーを選択し、検索範囲として 1 つのフォルダーを選択する必要があります。 同様に、自動拡張記憶域内のフォルダーにサブフォルダーがある場合は、各サブフォルダーを個別に検索する必要があります。
+- 自動拡張アーカイブの検索は、Outlook for the web (OWA) で使用できます。 オンライン アーカイブと同様に、追加の記憶域に移動されたアイテムを検索できます。 OWA で検索範囲としてアーカイブを選択すると、すべてのアーカイブ (自動拡張アーカイブを含む) と、それに対応するサブフォルダーが検索されます。
+
 - 自動拡張アーカイブの検索は、Outlook デスクトップの最新チャネル (プレビュー) で利用できます。 このプレビューでは、「現在のメールボックス」範囲が利用可能で、自動拡張アーカイブを検索することができます。 この機能やその他の Microsoft Search サポート機能の詳細については、「[Microsoft Search を活用して Windows 版 Outlook を Exchange Online に接続する方法](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)」を参照してください。 
 
 - 自動拡張アーカイブ内の Outlook のアイテム数および閲覧済み/未読数 (Outlook および Outlook on the web) は正しくないことがあります。

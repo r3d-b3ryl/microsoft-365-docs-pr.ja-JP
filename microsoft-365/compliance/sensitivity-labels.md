@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919593"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408602"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -49,9 +49,9 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 機密ラベルを適用するには、ユーザーは Microsoft 365の職場または学校のアカウントを使用して、サインインする必要があります。
 
 > [!NOTE]
-> 米国政府機関のテナント向けに、秘密度ラベルが新たにサポートされました (GCC および GCC-H)。 詳細については、Microsoft 365 Apps for enterprise のリリース ノート、[バージョン 2101: 1 月 26 日](/officeupdates/current-channel#version-2101-january-26)を参照してください。
+> 米国政府機関テナントの場合、秘密度ラベルは [GCC および GCC High 環境でサポートされるようになっており](/officeupdates/current-channel#version-2101-january-26)、現在は DoD 環境で展開されています。
 >
-> Azure Information Protection 統合ラベル付けクライアントおよびスキャナーについては、「[Azure Information Protection Premium の米国政府機関向けのサービスの説明](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)」を参照してください。
+> これらの環境で、Azure Information Protection 統合ラベル付けクライアントとスキャナーを使用する場合は、「[Azure Information Protection Premium の政府機関向けのサービスの説明](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)」を参照してください。
 
 機密ラベルは、次の目的に使用できます。
   

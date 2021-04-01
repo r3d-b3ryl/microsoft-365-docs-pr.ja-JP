@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 の検索ツールとeDiscovery ツールを使用して検索できるメールとファイルのプロパティについて説明します。
-ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b3b2410c899ec98f39a4f89e5ea0a86537e5b666
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903585"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488302"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>コンテンツ検索と eDiscovery のキーワード クエリと検索条件
 
@@ -105,7 +105,7 @@ ms.locfileid: "50903585"
 |FileName|ファイルの名前。|`filename:"marketing plan"`  <br/> `filename:estimate`|最初の例では、タイトルに "marketing plan" と完全一致する語句が含まれるファイルが返されます。2 番目の例では、ファイル名に "estimate" という単語を含むファイルが返されます。|
 |LastModifiedTime|アイテムが最後に変更された日付。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|最初の例では、2016 年 5 月 1 日以降に変更されたアイテムが返されます。 2 番目の例では、2016 年 5 月 1 日～ 2016 年 6 月 1 日に変更されたアイテムが返されます。|
 |ModifiedBy|アイテムを最後に変更した人。 このプロパティには、必ずユーザーの表示名を使用してください。|`modifiedby:"Garth Fort"`|Garth Fort によって最後に変更されたすべてのアイテム。|
-|Path|SharePoint または OneDrive for Business サイトの特定のサイトのパス (URL)。  <br/> Path プロパティに対して指定したサイトのフォルダーに存在するアイテムを取得するには、指定するフォルダーの URL に /\* を追加する必要があります。例: `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注**: `Path` プロパティを使用して OneDrive の場所を検索すると、メディア ファイル (.png、.tiff、.wav ファイルなど) は検索結果に返されません。 OneDrive フォルダー内のメディア ファイルを検索するには、検索クエリで別のサイト プロパティを使用します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business サイト内のすべてのアイテムが返されます。 2 番目の例では、指定したサイト フォルダー (およびサイト内のフォルダー) に存在するドキュメントで、ファイル名に "confidential" という単語が含まれるものが返されます。|
+|Path|SharePoint または OneDrive for Business サイトの特定のサイトのパス (URL)。<br/><br/>指定したサイトからのみアイテムを返す場合は、URL の末尾に末尾を追加する `/` 必要があります。たとえば、 `path: "https://contoso.sharepoint.com/sites/international/"` <br/><br/> path プロパティで指定したサイト内のフォルダーにあるアイテムを返す場合は、URL の末尾に追加する `/*` 必要があります。たとえば、  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/><br/> **注**: `Path` プロパティを使用して OneDrive の場所を検索すると、メディア ファイル (.png、.tiff、.wav ファイルなど) は検索結果に返されません。 OneDrive フォルダー内のメディア ファイルを検索するには、検索クエリで別のサイト プロパティを使用します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business サイト内のすべてのアイテムが返されます。 2 番目の例では、指定したサイト フォルダー (およびサイト内のフォルダー) に存在するドキュメントで、ファイル名に "confidential" という単語が含まれるものが返されます。|
 |SharedWithUsersOWSUser|指定したユーザーと共有されているドキュメントで、そのユーザーの OneDrive for Business サイトの [**自分と共有**] ページに表示されるドキュメント。 これらは、組織内の他のユーザーによって指定したユーザーと明示的に共有されているドキュメントです。 SharedWithUsersOWSUser プロパティを使う検索クエリと一致するドキュメントをエクスポートすると、ドキュメントは、指定したユーザーとドキュメントを共有しているユーザーの元のコンテンツの場所からエクスポートされます。 詳細については、「[組織内で共有されているサイト コンテンツの検索](#searching-for-site-content-shared-within-your-organization)」を参照してください。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|どちらの例でも、Garth Fort と明示的に共有されていて、Garth Fort の OneDrive for Business アカウントの [**自分と共有**] ページに表示されるすべての内部ドキュメントが返されます。|
 |Site|組織内のサイトかサイトのグループの URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|最初の例では、組織内のすべてのユーザー向けの OneDrive for Business のサイトからアイテムが返されます。 2 番目の例では、すべてのチーム サイトからアイテムが返されます。|
 |Size|アイテムのサイズ (バイト数)。|`size>=1`  <br/> `size:1..10000`|最初の例では、1 バイトより大きいアイテムが返されます。2 番目の例では、1 ～ 10,000 バイトのサイズのメッセージが返されます。|
@@ -457,3 +457,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - 特定のプロパティ値でマークされているコンテンツを検索結果から除外するには、プロパティの名前の前にマイナス記号 (-) を置きます。 たとえば、 `-from:"Sara Davis"` は、Sara Davis によって送信されたすべてのメッセージを除外します。
 
 - メッセージの種類に基づいてアイテムをエクスポートできます。 たとえば、Skype の会話と Microsoft Teams のチャットをエクスポートするには、構文 `kind:im` を使用します。 メール メッセージだけを返すには、`kind:email` を使用します。 Microsoft Teams のチャット、会議、通話を返すには、`kind:microsoftteams` を使用します。
+
+- 前に説明したように、サイトを検索する場合、プロパティを使用して指定したサイト内のアイテムのみを返す場合は、URL の末尾に末尾を `/` `path` 追加する必要があります。 末尾を含めなかった場合は、同様のパス名を持つサイトのアイテム `/` も返されます。 たとえば、名前の付いたサイトのアイテムを使用する場合や `path:sites/HelloWorld` `sites/HelloWorld_East` 、返 `sites/HelloWorld_West` される場合などです。 HelloWorld サイトからのみアイテムを返す場合は、 を使用する必要があります `path:sites/HelloWorld/` 。

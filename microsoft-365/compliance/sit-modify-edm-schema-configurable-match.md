@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 構成可能な一致を使用するために、完全一致スキーマを変更する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e00466e4648ebe93f0658383515d1543f858e1b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dea641072983163c6fbbcc5888d5ee6ea91f6990
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919374"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408316"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>構成可能な一致を使用するために完全一致スキーマを変更する
 
@@ -102,6 +102,9 @@ EDM が構成可能な一致を使用するようにこのスキーマを更新�
 - \,
 
 6. [セキュリティ/コンプライアンス センター PowerShellに接続する](/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
+
+> [!NOTE]
+> 組織が[テナント レベル (パブリック プレビュー) で Microsoft 365 のカスタマー キー](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)を設定している場合、完全一致では暗号化機能が自動的に使用されます。 この機能を利用できるのは、商用クラウド内の E5 ライセンスが割り当てられたテナントのみです。
 
 7. 以下のコマンドレットを一度に 1 つずつ実行して、スキーマを更新します。
 

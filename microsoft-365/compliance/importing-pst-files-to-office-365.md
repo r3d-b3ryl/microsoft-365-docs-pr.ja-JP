@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: overview
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: セキュリティ/コンプライアンス センターのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: 6d0bca6d76a0eccb9bc8181e73f2c36c51acaf77
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c645228598eb9cf0e6edca7104b8977e7eaf72f7
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911321"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408538"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
 
@@ -66,11 +66,11 @@ ms.locfileid: "50911321"
     
 4. **PST インポート ジョブを作成する** - 次の手順では、セキュリティ/コンプライアンス センターの [**PST のインポート**] ページで PST インポート ジョブを作成し、前の手順で作成した PST インポート マッピング ファイルを送信します。 ネットワーク アップロードの場合、(PST ファイルが Azure にアップロードされているため) Microsoft 365 は PST ファイル内のデータを分析し、実際に PST インポート マッピング ファイルで指定したメールボックスにインポートするデータを制御するフィルターを設定する機会を提供します。 
     
-    ドライブ送付の場合は、プロセスのこの時点で、次のことが追加で行われます。
+    ドライブ送付の場合は、プロセスのこの時点で、他に次のことが行われます。
     
     - Microsoft データ センターにハード ドライブを物理的に送付します (Microsoft データ センターの送付先のアドレスは、インポート ジョブを作成したときに表示されます)。
     
-    - Microsoft データ センターの担当者がハード ドライブを受け取ると、担当者はハード ドライブ上の PST ファイルをユーザーの組織の Azure Storage の場所にアップロードします。 前に説明したように、PST ファイルは、ユーザーの組織があるのと同じ地域の Microsoft データ センターにある Azure Storage の場所にアップロードされます。
+    - Microsoft データ センターの担当者がハード ドライブを受け取ると、担当者はハード ドライブ上の PST ファイルをユーザーの組織の Azure Storage の場所にアップロードします。 前に説明したように、PST ファイルは、ユーザーの組織があるのと同じ地域の Microsoft データセンターにある Azure Storage の場所にアップロードされます。
     
       > [!NOTE]
       > ハード ドライブの PST ファイルは、Microsoft がハード ドライブを受信してから 7 から10 営業日以内に Azure にアップロードされます。
@@ -178,7 +178,7 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
  
  **PST ファイルをインポートするときにメッセージ サイズに制限はありますか?**
   
-はい。 PST ファイルに 150 MB を超えるメールボックス アイテムが含まれる場合、インポート プロセスではアイテムがスキップされます。
+はい。 PST ファイルに 150 MB を超えるメールボックス アイテムが含まれる場合、そのアイテムはインポート プロセスでスキップされ、インポートされません。 Exchange Online では 150 MB がメッセージ サイズの制限であるため、150 MB を超えるアイテムはインポートされません。 詳細については、「[Exchange Online のメッセージの制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)」を参照してください。
   
  **メッセージの送受信時刻や受信者のリストなどのメッセージ プロパティは、PST ファイルを Microsoft 365 メールボックスにインポートするときに保持されますか?**
   
@@ -271,7 +271,7 @@ PST ファイル形式には、ANSI と Unicode という 2 つのバージョ�
   
  **PST ファイルをインポートするときにメッセージ サイズに制限はありますか?**
   
-はい。 PST ファイルに 150 MB を超えるメールボックス アイテムが含まれる場合、インポート プロセスではアイテムがスキップされます。
+はい。 PST ファイルに 150 MB を超えるメールボックス アイテムが含まれる場合、そのアイテムはインポート プロセスでスキップされ、インポートされません。 Exchange Online では 150 MB がメッセージ サイズの制限であるため、150 MB を超えるアイテムはインポートされません。 詳細については、「[Exchange Online のメッセージの制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)」を参照してください。
   
   **PST インポート プロセスでは、重複するメールアイテムはどのように処理されますか?**
 
@@ -317,6 +317,6 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
   
 はい。
   
- **ハード ドライブを別の国に送付しなければならない場合、何か必要な手続きはありますか?**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-Microsoft 宛てに発送するハード ディスク ドライブは、国境を越える場合があります。この場合、ハード ディスク ドライブとドライブに含まれているデータが、輸出入に関して適用される法律に違反しないことを保証するのはお客様の責任になります。ハード ディスク ドライブを発送する前に、指定した Microsoft データ センターへのディスクとデータの送付について、法律違反事項がないことを助言者に確認してください。こうすることで、ドライブが Microsoft に適時に到着します。
+The hard drive that you ship to Microsoft might have to cross international borders. その場合、お客様にはハード ドライブとそれに含まれるデータが適用法に従って輸入または輸出されることを保証する責任があります。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
