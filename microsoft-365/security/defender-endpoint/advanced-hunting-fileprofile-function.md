@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: 668b3fe503268c46e4a1313f0c4cfb8a6a3dd602
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6c828418d27db24cbd6e87f040486b3abc45e6c6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067971"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499553"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -34,20 +34,20 @@ ms.locfileid: "51067971"
 Column | データ型 | 説明
 -|-|-
 SHA1 | 文字列 | 記録されたアクションが適用されたファイルの SHA-1
-SHA256 | string | 記録されたアクションが適用されたファイルの SHA-256
-MD5 | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ
+SHA256 | 文字列 | 記録されたアクションが適用されたファイルの SHA-256
+MD5 | 文字列 | 記録されたアクションが適用されたファイルの MD5 ハッシュ
 FileSize | int | ファイルのサイズ (バイト単位)
 GlobalPrevalence | int | Microsoft がグローバルに観察したエンティティのインスタンス数
 GlobalFirstSeen | 日付型 | エンティティが最初に Microsoft によってグローバルに観察された日時
 GlobalLastSeen | 日付型 | エンティティが Microsoft によってグローバルに最後に観察された日時
-署名者 | string | ファイルの署名者に関する情報
-発行者 | string | 発行元証明機関 (CA) に関する情報
-SignerHash | string | 署名者を識別する一意のハッシュ値
+署名者 | 文字列 | ファイルの署名者に関する情報
+発行者 | 文字列 | 発行元証明機関 (CA) に関する情報
+SignerHash | 文字列 | 署名者を識別する一意のハッシュ値
 IsCertificateValid | boolean | ファイルの署名に使用する証明書が有効かどうか
 IsRootSignerMicrosoft | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します。
 IsExecutable | boolean | ファイルがポータブル実行可能ファイル (PE) ファイルかどうか
-ThreatName | string | マルウェアまたは検出された他の脅威の検出名
-Publisher | string | ファイルを発行した組織の名前
+ThreatName | 文字列 | マルウェアまたは検出された他の脅威の検出名
+発行者 | 文字列 | ファイルを発行した組織の名前
 SoftwareName | string | ソフトウェア製品の名前
 
 ## <a name="syntax"></a>構文
@@ -85,6 +85,6 @@ DeviceFileEvents
 
 ## <a name="related-topics"></a>関連項目
 
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-reference.md)

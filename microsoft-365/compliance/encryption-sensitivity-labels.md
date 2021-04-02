@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f670a3cdefb7b6cd78d24a17fc2e6276274efff3
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928075"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222420"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -227,27 +227,33 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 
 ## <a name="let-users-assign-permissions"></a>ユーザーがアクセス許可を割り当てる
 
+> [!IMPORTANT]
+> ラベル クライアントの中には、ユーザーに権限を割り当てさせてもらえるオプションが一部サポートされていないものがあります。 詳細については、このセクションを参照してください。
+
 これらのオプションを使用すると、ユーザーがコンテンツに機密度ラベルを手動で適用するときにアクセス許可を割り当てることができます。
 
-- Outlook では、ユーザーは選択した受信者に対して [[転送不可](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)] オプションと同等の制限を選択することができます。
+- Outlook では、ユーザーは選択した受信者に対して [[転送不可](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)] オプションまたは [[暗号化のみ]](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)と同等の制限を選択することができます。
+    
+    [転送しない] オプションは、すべての電子メール クライアントでサポートされています。この場合、これらのクライアントは、最高のラベルをサポートしています。 ただし、 **暗号化専用** オプションを検出性ラベル付きで適用する最新のリリースは、Azure Information Protection の統合ラベル クライアントではなく、組み込みのラベル機能でのみサポートされます。 この機能をサポートしないメール クライアントの場合、ラベルは表示されません。
+    
+    組み込みのラベル機能を使用する Outlook アプリで、暗号化専用オプションを検出ラベル付きで適用する方法を確認するには、[「utlookの機能テーブル」](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook)と **「ユーザーが権限を割り当て可能- 暗号化のみ」** 行を使用します。
 
 - Word、PowerPoint、Excel で、ユーザーは特定のユーザー、グループ、または組織に対して任意のアクセス許可を選択するよう求められます。
 
-    > [!NOTE]
-    > Word、PowerPoint、Excel 用のこのオプションは、Azure Information Protection 統合ラベル付けクライアントでサポートされています。 組み込みのラベル付けを使用するアプリの場合は、[どのアプリがそれをサポートしているかを確認します](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)。
-    >
-    > このオプションが選択されているもののユーザーのアプリでサポートされていない場合、そのラベルはユーザーに表示されないか、または一貫性のためにラベルは表示されますが、ユーザーへの説明メッセージとともに適用はされません。
+    このオプションは、Azure Information Protection 統合ラベル付けクライアントおよび組み込みラベルを使用一部のアプリでサポートされています。 この機能をサポートしないアプリの場合、ラベルがユーザーに対して表示されないか、一貫性のためにラベルが表示されますが、ユーザーに説明メッセージを使用して適用できません。
+    
+    このオプションをサポートする組み込みのラベルを使用するアプリを確認するには、[Word、Excel、PowerPointの機能テーブル](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)と **ユーザーが権限を割り当て可能にする行 : - ユーザーにアクセスを確認します**。
 
 選択するオプションがサポートされている場合に、秘密度ラベルがユーザーに表示されるどうかについて、次の表で確認できます。
 
 |設定 |ラベルを Outlook で表示|ラベルを Word、PowerPoint、Excel で表示|
 |:-----|:-----|:-----|:-----|
-|**In Outlook, enforce restrictions equivalent to the Do Not Forward option** (Outlook で、[転送不可] オプションと同等の制限を適用する)|はい |いいえ |
+|**In Outlook, enforce restrictions with the Do Not Forward option　または[暗号化のみ]オプション**|必要 |いいえ |
 |**In Word, PowerPoint, and Excel, prompt users to specify permissions** (Word、PowerPoint、Excel で、アクセス許可の指定をユーザーに求める) |いいえ |はい|
 
 両方の設定を選択すると、ラベルは Outlook と Word、Excel、PowerPoint の両方で表示されます。
 
-ユーザーがアクセス許可を割り当てることができる機密度ラベルは、ユーザーが手動でのみコンテンツに適用できます。自動適用したり、推奨ラベルとして使用したりすることはできません。
+ユーザーがアクセス許可を割り当てなければならない機密度ラベルは、ユーザーが手動でコンテンツに適用できます。自動適用したり、推奨ラベルとして使用したりすることはできません。
 
 ユーザーが割り当てるアクセス許可の構成:
 
@@ -255,13 +261,21 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 
 ### <a name="outlook-restrictions"></a>Outlook の制限
 
-Outlook では、ユーザーがメッセージにアクセス許可を割り当てることができる機密度ラベルを適用する場合、制限は [転送不可] オプションと同じです。 メッセージの上部にラベル名と説明が表示されます。これは、コンテンツが保護されていることを示します。 Word、PowerPoint、Excel ([次のセクション](#word-powerpoint-and-excel-permissions)参照) とは異なり、ユーザーは特定のアクセス許可を選択するよう求められません。
+Outlook では、ユーザーがメッセージにアクセス許可を割り当てることができる機密度ラベルを適用する場合、 **[転送不可]** または **[暗号化のみ]** オプションを選択できます。 メッセージの上部にラベル名と説明が表示されます。これは、コンテンツが保護されていることを示します。 Word、PowerPoint、Excel ([次のセクション](#word-powerpoint-and-excel-permissions)参照) とは異なり、ユーザーは特定のアクセス許可を選択するよう求められません。
 
 ![Outlook のメッセージに適用される機密度ラベル](../media/sensitivity-label-outlook-protection-applied.png)
 
-[転送不可] オプションがメールに適用されると、メールは暗号化され、受信者は認証する必要があります。 それにより、受信者はそれを転送したり、印刷したり、コピーしたりすることができなくなります。 たとえば、Outlook クライアントでは、[転送] ボタン、[名前を付けて保存] および [印刷] メニュー オプションは使用できず、[宛先]、[CC]、または [BCC] ボックスで受信者を追加または変更することはできません。
+これらのオプションがメールに適用されると、メールは暗号化され、受信者は認証する必要があります。 受信者には自動的に使用権限が制限されます。
 
-メールに添付されている暗号化されていない Office ドキュメントでは、自動的に同じ制限が継承されます。 これらのドキュメントに適用される使用権は、[コンテンツの編集]、[編集]、[保存]、[表示]、[開く]、[読み取り]、および [マクロの許可] です。 ユーザーが添付ファイルに別の使用権を要求する場合、または添付ファイルがこの継承された保護をサポートする Office ドキュメントでない場合は、メールに添付する前にファイルを保護する必要があります。
+- **[転送不可]**：受信者はそれを転送したり、印刷したり、コピーしたりすることができなくなります。 たとえば、Outlook クライアントでは、[転送] ボタン、[名前を付けて保存] および [印刷] メニュー オプションは使用できず、[宛先]、[CC]、または [BCC] ボックスで受信者を追加または変更することはできません。
+    
+    このオプションの機能の詳細については、[メールで[転送しない] オプションを使ってを転送しないでください](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)を参照してください。
+
+- **暗号化のみ使用**: 受信者には、[名前を付けて保存]、[エクスポート]、および [フル コントロール] を除くすべての使用権があります。 この利用権の組み合わせは、受信者に保護を解除できないという制限がないという意味です。 たとえば、受信者はメールからコピーし、印刷して、転送することができます。
+    
+    このオプションの機能の詳細については、[メールで[暗号化のみ] オプションを使ってを転送しないでください](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)を参照してください。
+
+メールに添付されている暗号化されていない Office ドキュメントでは、自動的に同じ制限が継承されます。 [転送不可]のドキュメントに適用される使用権は、[コンテンツの編集]、[編集]、[保存]、[表示]、[開く]、[読み取り]、および [マクロの許可] です。 ユーザーが添付ファイルに別の使用権を要求する場合、または添付ファイルがこの継承された保護をサポートする Office ドキュメントでない場合は、メールに添付する前にファイルを暗号化する必要があります。
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Word、PowerPoint、および Excel のアクセス許可
 

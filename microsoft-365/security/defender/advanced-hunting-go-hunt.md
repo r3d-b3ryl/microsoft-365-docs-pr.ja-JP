@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 242c15bdd2f28f7277b93781d521c5414b9e90cf
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 392db06aa517e3e970f85ccc971c3a6a6bc6e548
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068331"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498288"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>go hunt を使用してエンティティまたはイベント情報をすばやく検索する
 
@@ -73,7 +73,7 @@ and DeviceName == deviceName
 ### <a name="supported-entity-types"></a>サポートされているエンティティの種類
 次のエンティティ *の種類を選択* した後で、go hunt を使用できます。
 
-- Files
+- ファイル
 - メール
 - 電子メール クラスター
 - メールボックス
@@ -108,7 +108,7 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 - [カスタム検出ルールの作成](custom-detection-rules.md)
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [カスタム検出ルール](custom-detection-rules.md)

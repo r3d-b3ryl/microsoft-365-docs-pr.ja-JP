@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3d991bc5e78fc7b33e20df1f86471a0969b7345f
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 1c4b71139a0fba84928c3f604e3c770d140d9e2b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382597"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499741"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -44,8 +44,8 @@ ms.locfileid: "51382597"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
+| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
+| `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
 | `Timestamp` | datetime | レコードが作成された日付と時刻 |
 | `ConfigurationId` | 文字列 | 特定の構成の一意の識別子 |
 | `ConfigurationCategory` | 文字列 | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
@@ -53,7 +53,7 @@ ms.locfileid: "51382597"
 | `ConfigurationImpact` | 文字列 | 構成の評価が全体の構成スコア (1-10) に及ぼす影響 |
 | `IsCompliant` | ブール値 | 構成やポリシーが正しく構成されているかどうかを示します |
 | `IsApplicable` | boolean | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
-| `Context` | 文字列 | 構成またはポリシーに関するその他のコンテキスト情報 |
+| `Context` | string | 構成またはポリシーに関するその他のコンテキスト情報 |
 | `IsExpectedUserImpact` | boolean | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
 
 ## <a name="related-topics"></a>関連項目

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定された Excel ファイルを使用してテンプレートを作成および変更します。
-ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922787"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499019"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーでの評価テンプレートの操作
 
@@ -38,17 +38,17 @@ ms.locfileid: "50922787"
 
 #### <a name="included-and-premium-templates"></a>含まれるテンプレートとプレミアム テンプレート
 
-使用できるテンプレートは、組織のライセンス契約 (ライセンスの詳細の表示)[に基づいて作成されます](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 テンプレートには、組み込みとプレミアムの 2 つのカテゴリがあります。
+使用できるテンプレートは、組織のライセンス契約 (ライセンスの詳細の表示)[に基づいて作成されます](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。 テンプレートには、組み込みとプレミアムの 2 つのカテゴリがあります。
 
 1. **含まれているテンプレート** は、組織のライセンス契約の一部として使用できます。
-2. **プレミアム テンプレートから評価** を作成するには、プレミアム テンプレートを購入する必要があります。 購入後は、必要に応じてテンプレートから評価を作成できます。
+2. **プレミアム テンプレートから評価** を作成するには、プレミアム テンプレートを購入する必要があります。 購入後は、必要に応じてテンプレートから評価を作成できます。 [プレミアム テンプレートを購入する方法について説明します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 
 #### <a name="active-and-inactive-templates"></a>アクティブなテンプレートと非アクティブなテンプレート
 
 テンプレートはアクティブまたは非アクティブとしてアクティブ状態を表示します。
 
 - テンプレートは、そのテンプレート **から評価** を作成するとアクティブと見なされます。
-- 組織が評価の **フレームワーク** としてテンプレートを使用しない場合、テンプレートは非アクティブと見なされます。
+- 組織が評価に **テンプレート** を使用しない場合、テンプレートは非アクティブと見なされます。
 
 プレミアム テンプレートを購入し、そこから評価を作成すると、そのテンプレートは 1 年間アクティブになります。 更新をキャンセルしない限り、購入は自動的に更新されます。
 
@@ -60,7 +60,7 @@ ms.locfileid: "50922787"
 
 カウンターに 5/2 が表示されている場合は、組織が制限を超え、使用しているプレミアム テンプレートの 3 つを購入する必要があります。
 
-詳細 [については、「コンプライアンス マネージャーのライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 」を参照してください。
+詳細 [については、「コンプライアンス マネージャーのライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) 」を参照してください。
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>評価テンプレート ページからのテンプレートの表示と管理
 

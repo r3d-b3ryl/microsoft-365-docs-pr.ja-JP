@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Microsoft 365 テナントに接続するには、Microsoft 365 用 PowerShell を使用して、コマンド ラインから管理センターのタスクを実行します。
-ms.openlocfilehash: 58af42958e9b50ee8e39cbd7bd5aab53812e444c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08005ba1cbdcbfec14585d22614129a9b33352b9
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919178"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445758"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell を使用して Microsoft 365 に接続する
 
@@ -84,7 +84,20 @@ Graph 用 Azure Active Directory PowerShell モジュールにおいて新しい
     Install-Module -Name AzureAD
     ```
 
-   信頼されていないリポジトリからモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、Enter キーを押します。
+  既定では、PowerShell ギャラリー (PSGallery) は、**PowerShellGet** 用の信頼されたリポジトリとして構成されません。 初めて PSGallery を使用する場合は、次のメッセージが表示されます。
+
+```console
+Untrusted repository
+
+You are installing the modules from an untrusted repository. If you trust this repository, change
+its InstallationPolicy value by running the `Set-PSRepository` cmdlet.
+
+Are you sure you want to install the modules from 'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
+```
+
+インストールを続行するには [**はい**] または [**すべてにはい**] をクリックします。
+
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>手順 2: Microsoft 365 サブスクリプション用の Azure AD に接続する
 

@@ -1,5 +1,5 @@
 ---
-title: デバイスの Microsoft Secure Score
+title: デバイス向けの Microsoft セキュア スコア
 description: デバイスのスコアは、アプリケーション、オペレーティング システム、ネットワーク、アカウント、およびセキュリティ制御全体にわたるデバイスの一括セキュリティ構成状態を示します。
 keywords: Microsoft Secure Score for Devices, mdatp Microsoft Secure Score for Devices, secure score, configuration score, threat and vulnerability management, security controls, improvement opportunitis, security configuration score over time, security configuration score, baseline
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d9ccd4f7dcc8b1546772a756aaf850dadfc87905
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fcf33b309045b9ca763b0d3cabc44fb13505ee0b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063748"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500051"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>デバイスの Microsoft Secure Score
+# <a name="microsoft-secure-score-for-devices"></a>デバイス向けの Microsoft セキュア スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -112,5 +112,5 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 
 - [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)
-- [露出スコア](tvm-exposure-score.md)
+- [暴露スコア](tvm-exposure-score.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ユーザーのアクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザー履歴を管理し、ダッシュボード ビューをフィルター処理します。
-ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199220"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499031"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -91,7 +91,7 @@ Office 365 または Microsoft 365 サブスクリプションを持つ Azure AD
 | :------------- | :-------------: | :------------: |
 | **データを読み取るが編集しない**| コンプライアンス マネージャー リーダー  | Azure AD グローバル リーダー、セキュリティ リーダー | 
 | **データの編集**| コンプライアンス マネージャーの投稿 | コンプライアンス管理者 | 
-| **テスト結果の編集**| コンプライアンス マネージャーの評価 | コンプライアンス管理者 | 
+| **テスト結果の編集**| コンプライアンス マネージャー評価者 | コンプライアンス管理者 | 
 | **評価、テンプレート、テナント データの管理**| コンプライアンス マネージャーの管理 | コンプライアンス管理者、コンプライアンス データ管理者、セキュリティ管理者  | 
 | **ユーザーの割り当て**| グローバル管理者 | グローバル管理者 | 
 

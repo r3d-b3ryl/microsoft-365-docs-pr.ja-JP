@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 53ec8146080e88b913de1f58d16750ffa766a1b2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e0744a01fc599b66f371b01194579f4845ed19fb
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063588"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498729"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -254,7 +254,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>文字列の解析
 解析または変換が必要な文字列を効率的に処理するために使用できるさまざまな関数があります。 
 
-| 文字列 | 関数 | 使用例 |
+| String | 関数 | 使用例 |
 |--|--|--|
 | コマンド ライン | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | コマンドとすべての引数を抽出します。 | 
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | ファイルパスまたはフォルダー パスのセクションを抽出します。 |
@@ -268,5 +268,5 @@ SHA256,ThreatTypes,DetectionMethods
 - [Kusto クエリ言語のドキュメント](/azure/data-explorer/kusto/query/)
 - [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [高度なハンティング エラーの処理](advanced-hunting-errors.md)
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)

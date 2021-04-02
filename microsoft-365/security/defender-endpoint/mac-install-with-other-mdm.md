@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3a20f0a356a32eddc05b3792c0c04c23197a7b0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185697"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498961"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac 用に異なるモバイル デバイス管理 (MDM) システムを使用した展開
 
@@ -43,7 +43,7 @@ ms.locfileid: "51185697"
 ## <a name="approach"></a>方法
 
 > [!CAUTION]
-> 現在、Microsoft oficially は、Microsoft Defender for Endpoint for Mac の展開と管理のために Intune と JAMF のみをサポートしています。 Microsoft は、以下に示す情報に関して、明示または黙示を問わず一切の保証を行いません。
+> 現在、Microsoft は、Microsoft Defender for Endpoint for Mac の展開と管理に Intune と JAMF のみを正式にサポートしています。 Microsoft は、以下に示す情報に関して、明示または黙示を問わず一切の保証を行いません。
 
 組織で正式にサポートされていないモバイル デバイス管理 (MDM) ソリューションを使用している場合、Microsoft Defender for Endpoint for Mac を展開または実行できないという意味ではありません。
 
@@ -84,6 +84,10 @@ MDM はこれを使用して、設定ファイルをクライアント デバイ
 ### <a name="kernel-extension-policy"></a>カーネル拡張機能ポリシー
 
 KEXT またはカーネル拡張ポリシーを設定します。 Microsoft が提供するカーネル拡張機能を許可するには、チーム識別子 **UBF8T346G9** を使用します。
+
+> [!CAUTION]
+> 環境が Apple Silicon (M1) デバイスで構成されている場合、これらのコンピューターは KEXT ポリシーを使用して構成プロファイルを受け取る必要があります。
+> Apple は、これらのコンピューターで KEXT をサポートしていない、このようなプロファイルの展開は M1 コンピューターで失敗します。
 
 ### <a name="system-extension-policy"></a>システム拡張ポリシー
 

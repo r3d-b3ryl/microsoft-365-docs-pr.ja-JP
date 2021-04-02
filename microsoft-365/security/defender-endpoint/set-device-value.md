@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33692ddf62153c0a6aa8f84568d69803af113bc6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 76df62243db837ec91819497980ff1de2295e3b6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185565"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498317"
 ---
 # <a name="set-device-value-api"></a>デバイス値 API の設定
 
@@ -74,16 +74,16 @@ POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDevice
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター |    種類    | 説明
+パラメーター |    型    | 説明
 :---|:---|:---
 DeviceValue |    列挙 |    デバイスの値。 使用できる値は、'Normal'、'Low'、および 'High' です。 **必須**
 

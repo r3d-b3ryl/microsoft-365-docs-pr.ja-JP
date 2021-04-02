@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小ルールを有効にする
+title: 攻撃面の減少ルールを有効にする
 description: 攻撃表面の縮小 (ASR) ルールを有効にして、マクロ、スクリプト、一般的なインジェクション手法を使用する攻撃からデバイスを保護します。
 keywords: 攻撃表面の縮小、腰、ホスト侵入防止システム、保護ルール、悪用防止、脆弱性対策、悪用、感染防止、有効化、有効にする
 search.product: eADQiWindows 10XVcnh
@@ -14,14 +14,14 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1deec767c6af777b23ab5a91c9e719f690e0c048
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf4fa88b3fbbf5d977d54a78c480129665049b23
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165143"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499403"
 ---
-# <a name="enable-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールを有効にする
+# <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -137,7 +137,7 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
 
 2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に移動 **し、[** 管理用 **テンプレート] を選択します**。
 
-3. ツリーを Windows コンポーネント **に展開**  >  **します。Microsoft Defender ウイルス対策Windows Defender**  >  **エクスプロイト ガード**  >  **攻撃の表面の縮小です**。
+3. ツリーを Windows コンポーネント **に展開**  >  **する Microsoft Defender ウイルス** 対策  >  **Microsoft Defender Exploit Guard**  >  **攻撃表面の縮小**。
 
 4. [攻撃 **表面縮小ルールの構成] を選択し、[** 有効] を **選択します**。 その後、[オプション] セクションで各ルールの個別の状態を設定できます。
 
@@ -211,4 +211,4 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
 
 - [攻撃表面の縮小を評価する](evaluate-attack-surface-reduction.md)
 
-- [攻撃表面の縮小に関する FAQ](attack-surface-reduction.md)
+- [攻撃面の減少の FAQ](attack-surface-reduction.md)

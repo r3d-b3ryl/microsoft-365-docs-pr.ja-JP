@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: c22e4b754f9d28156c3d26c567581572e59d718d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 66ecdc8fbcde04d78f2deede5f4e296a7f051ef0
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064388"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499158"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -43,8 +43,8 @@ ms.locfileid: "51064388"
 |-------------|-----------|-------------|
 | `AlertId` | string | アラートの一意識別子 |
 | `Timestamp` | datetime | イベントが記録された日付と時刻 |
-| `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
+| `DeviceId` | 文字列 | サービス内のデバイスの一意の識別子 |
+| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
 | `Severity` | 文字列 | アラートで識別された脅威インジケーターまたは侵害アクティビティの起こりうる影響 (高、中、低) を示します。 |
 | `Category` | 文字列 | アラートで識別された脅威インジケーターまたは侵害アクティビティの種類 |
 | `Title` | 文字列 | アラートのタイトル |
@@ -52,11 +52,11 @@ ms.locfileid: "51064388"
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
-| `AttackTechniques` | string | MITRE ATT&をトリガーしたアクティビティに関連付けられた CK テクニックを使用します。 |
+| `AttackTechniques` | 文字列 | MITRE ATT&をトリガーしたアクティビティに関連付けられた CK テクニックを使用します。 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を and 列と組み合わせて `DeviceName` 使用する必要 `Timestamp` があります。 |
 | `Table` | 文字列 | イベントの詳細を含むテーブル |
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-reference.md)

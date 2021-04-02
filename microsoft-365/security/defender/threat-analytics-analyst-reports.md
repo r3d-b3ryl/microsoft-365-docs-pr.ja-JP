@@ -11,8 +11,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc534b7bec27784ccf25f92ab0282fdbecdc9196
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f916137be71dffeaed7e3718286032a17c9f8e04
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066732"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498479"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>脅威分析のアナリスト レポートを理解する
 
@@ -56,7 +56,7 @@ _脅威分析レポートのアナリスト レポート セクション_
 | MITRE ATT&CK 技術の観察 | CK 攻撃フレームワークの[MITRE ATT](https://attack.mitre.org/)に&方法 | 
 | [軽減策](#apply-additional-mitigations) | 脅威の影響を停止または軽減する可能性がある推奨事項。 このセクションには、脅威分析レポートの一部として動的に追跡されない軽減策も含まれています。 |
 | [検出の詳細](#understand-how-each-threat-can-be-detected) | 脅威に関連付けられたアクティビティやコンポーネントを表面化できる Microsoft セキュリティ ソリューションによって提供される特定の一般的な検出。 | 
-| [高度な検出](#find-subtle-threat-artifacts-using-advanced-hunting) | [脅威の可能性のあるアクティビティ](advanced-hunting-overview.md) を事前に特定するための高度な検索クエリ。 ほとんどのクエリは、特に悪意のある可能性のあるコンポーネントや、悪意のあると動的に評価できなかった動作を見つけ出す場合に、検出を補完するために提供されます。 | 
+| [高度な追求](#find-subtle-threat-artifacts-using-advanced-hunting) | [脅威の可能性のあるアクティビティ](advanced-hunting-overview.md) を事前に特定するための高度な検索クエリ。 ほとんどのクエリは、特に悪意のある可能性のあるコンポーネントや、悪意のあると動的に評価できなかった動作を見つけ出す場合に、検出を補完するために提供されます。 | 
 | 関連情報 | レポートの作成中にアナリストが参照する Microsoft およびサードパーティの文書。 脅威分析コンテンツは、Microsoft の研究者によって検証されたデータに基づいて行います。 一般に公開されているサードパーティのソースからの情報は、その情報として明確に識別されます。 | 
 | 変更ログ | レポートが発行された時刻と、レポートに大幅な変更が加えた時刻。 |
 

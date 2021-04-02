@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059f960bae8a5a00f678bb6f52ef217b4f8ed7d6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4c04ce3479ac995e59c3bdfa9a2bdcca87eca17b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185995"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499920"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint の Web 保護は [、Web](web-threat-protection
 
 ![すべての Web 保護カードのイメージ](images/web-protection.png)
 
-## <a name="web-threat-protection"></a>Web 脅威保護
+## <a name="web-threat-protection"></a>Web の脅威に対する保護
 
 Web 脅威保護を構成するカードは、時間の過ぎた Web 脅威検出 **と** **Web 脅威の概要です**。
 
@@ -47,7 +47,7 @@ Web 脅威保護には、次の機能が含まれます。
 - アラートと URL およびこれらの URL にアクセスするデバイスの包括的なプロファイルによる Web 関連の脅威アクティビティに対する調査機能
 - 悪意のある Web サイトや望ましくない Web サイトへの一般的なアクセス傾向を追跡する一連のセキュリティ機能
 
-## <a name="web-content-filtering"></a>Web コンテンツ のフィルター処理
+## <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
 Web コンテンツ フィルターを構成するカードは、 **カテゴリ別の Web** アクティビティ **、Web コンテンツ** フィルターの概要、および Web アクティビティ **の概要です**。
 
@@ -60,5 +60,5 @@ Web コンテンツ フィルターには、次の機能が含まれます。
 
 トピック | 説明
 :---|:---
-[Web 脅威保護](web-threat-protection.md) | フィッシング サイト、マルウェア ベクター、悪用サイト、信頼されていないサイトまたは低評価サイト、ブロックしたサイトへのアクセスを停止します。
-[Web コンテンツ のフィルター処理](web-content-filtering.md) | コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および調整します。
+[Web の脅威に対する保護](web-threat-protection.md) | フィッシング サイト、マルウェア ベクター、悪用サイト、信頼されていないサイトまたは低評価サイト、ブロックしたサイトへのアクセスを停止します。
+[Web コンテンツ フィルタリング](web-content-filtering.md) | コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および調整します。

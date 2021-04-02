@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1559d8dca6b6909f22473c5a8f4d25d4bac501d1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: be01d5908e4c79f642cdbbddd75115f6ebc2c713
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062252"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499638"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-for-macos-policies-in-jamf-pro"></a>Jamf Pro で macOS 用 Microsoft Defender for Endpoint ポリシーをセットアップする
 
@@ -349,60 +349,51 @@ ms.locfileid: "51062252"
 
 これらの手順は、macOS 10.15 (Catalina) 以降に適用できます。
 
-1. `notif.mobileconfig` [GitHub リポジトリからダウンロードする](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig)
+1. Jamf Pro ダッシュボードで、[コンピューター] 、[ **構成** プロファイル **] の順に選択します**。
 
-2. として保存します `MDATP_MDAV_notification_settings.plist` 。
-
-3. Jamf Pro ダッシュボードで、[全般] を **選択します**。 
-       
-4. 次の詳細を入力します。
-
-    **全般** 
+2. [ **新規] を** クリックし、[オプション] に次の詳細を **入力します**。
     
-    - 名前: MDATP MDAV 通知の設定
-    - 説明: macOS 10.15 (Catalina) 以降
-    - カテゴリ: なし (既定)
-    - 配布方法: 自動インストール(既定)
-    - Level: Computer Level(default)
+    - タブ **全般**: 
+        - **名前**: MDATP MDAV 通知の設定
+        - **説明**: macOS 10.15 (Catalina) 以降
+        - **カテゴリ**: なし *(既定)*
+        - **配布方法**: 自動的にインストール *する (既定)*
+        - **レベル**: コンピューター レベル *(既定)*
 
-    ![構成設定 mdatpmdav のイメージ](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![構成設定 mdatpmdav のイメージ](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
+    - [タブ **通知]** をクリック **し、[追加**] をクリックし、次の値を入力します。
+        - **バンドル ID**: `com.microsoft.wdav.tray`
+        - **重大な通知**: [無効にする] **をクリックします。**
+        - **通知**: [有効にする **] をクリックします。**
+        - **バナー通知の種類**: [含める]**と [一時**]  *(既定) を選択します。*
+        - **ロック画面の通知**: [非表示] **をクリックします。**
+        - **通知センターの通知**: [表示] を **クリックします。**
+        - **バッジ アプリのアイコン**: [表示] **をクリックします。**
 
-5. [ファイル **のアップロード] (PLIST ファイル) を選択します**。
+        ![構成設定 mdatpmdav 通知トレイのイメージ](images/7f9138053dbcbf928e5182ee7b295ebe.png)
 
-    ![構成設定アップロード plistfile のイメージ](images/7f9138053dbcbf928e5182ee7b295ebe.png)
- 
+    - [タブ **通知]** の [ **もう 1** 回追加] をクリックし、[新しい通知の設定 **] まで下にスクロールします。**
+        - **バンドル ID**: `com.microsoft.autoupdate2`
+        - 残りの設定を上記と同じ値に構成する
 
-6. [**ファイルの選択]**  >  **MDATP_MDAV_Notification_Settings.plist を選択します**。
+        ![構成設定 mdatpmdav 通知 mau のイメージ](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
 
+        通知構成が 2 つの 「テーブル」 に追加され、もう 1 つはバンドル ID : **com.microsoft.wdav.tray、** もう 1 つはバンドル **ID: com.microsoft.autoupdate2** です。 要件ごとにアラート設定を構成することもできますが、バンドル ID は前の説明とまったく同じにする必要があります。Include **スイッチは** 通知に対して **[オン] にする** 必要 **があります**。
 
-    ![構成設定 mdatpmdav notsettings のイメージ](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
-
-
-    ![構成設定 mdatpmdav notifsettings のイメージ](images/20e33b98eb54447881dc6c89e58b890f.png)
-
-7. [アップロード **を開く]**  >  **を選択します**。
-
-    ![構成設定 upl img のイメージ](images/7697c33b9fd376ae5a8023d01f9d3857.png)
-
-
-    ![構成設定 upl イメージのイメージ](images/2bda9244ec25d1526811da4ea91b1c86.png)
-
-8. [スコープ] **タブを選択** し、[追加] を **選択します**。
+3. [スコープ] **タブを選択** し、[追加] を **選択します**。
 
     ![構成設定スコープの追加のイメージ](images/441aa2ecd36abadcdd8aed03556080b5.png)
 
+4. **[Contoso's Machine Group] を選択します**。 
 
-9. **[Contoso's Machine Group] を選択します**。 
-
-10. [追加 **] を** 選択し、[保存] **を選択します**。
+5. [追加 **] を** 選択し、[保存] **を選択します**。
     
     ![構成設定 contoso machine grp save のイメージ](images/09a275e321268e5e3ac0c0865d3e2db5.png)
-
     
     ![構成設定のイメージの保存の追加](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
-11. [**完了**] を選択します。 新しい構成プロファイルが **表示されます**。
+6. [**完了**] を選択します。 新しい構成プロファイルが **表示されます**。
     ![構成設定完了 img のイメージ](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>手順 5: Microsoft AutoUpdate (MAU) を構成する
@@ -477,7 +468,7 @@ ms.locfileid: "51062252"
    
      ![構成設定 scopetab のイメージ](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-13. **[追加]** を選択します。
+13. [**追加**] を選択します。
     
     ![構成設定 addimg1 のイメージ](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -568,7 +559,7 @@ ms.locfileid: "51062252"
 
     ![構成設定 contoso machinegrp のイメージ](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
-15. **[追加]** を選択します。 
+15. [**追加**] を選択します。 
 
 16. **[保存]** を選択します。 
     
@@ -578,8 +569,12 @@ ms.locfileid: "51062252"
     
     ![構成設定 donimg2 のイメージ](images/6c8b406ee224335a8c65d06953dc756e.png)
 
+または、「Jamf Pro を使用したカスタム構成プロファイルの展開」の説明に従って [、fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) をダウンロードして JAMF 構成プロファイルに [アップロードできます|方法 2: Jamf Pro に構成プロファイルをアップロードします](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a>手順 7: Microsoft Defender for Endpoint のカーネル拡張機能を承認する
+
+> [!CAUTION]
+> Apple Silicon (M1) デバイスは KEXT をサポートしていない。 KEXT ポリシーからなる構成プロファイルのインストールは、これらのデバイスで失敗します。
 
 1. [構成プロファイル **] で、[+** 新規 **] を選択します**。
 
@@ -629,6 +624,7 @@ ms.locfileid: "51062252"
 
     ![doneimag の構成設定のイメージ](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
+または、「Jamf Pro を使用したカスタム構成プロファイルの展開」の説明に従って [、kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) をダウンロードして JAMF 構成プロファイルにアップロード [できます|方法 2: Jamf Pro に構成プロファイルをアップロードします](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-8-approve-system-extensions-for-microsoft-defender-for-endpoint"></a>手順 8: エンドポイント用 Microsoft Defender のシステム拡張機能を承認する
 
@@ -687,57 +683,53 @@ ms.locfileid: "51062252"
 
 エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint for Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
->[!NOTE]
->JAMF にはコンテンツ フィルター ポリシーの組み込みのサポートが用意されていません。これは、Microsoft Defender for Endpoint for Mac がデバイスにインストールするネットワーク拡張機能を有効にするための前提条件です。 さらに、JAMF は展開するポリシーの内容を変更する場合があります。
->そのため、次の手順では、構成プロファイルに署名する回避策を提供します。
+これらの手順は、macOS 10.15 (Catalina) 以降に適用できます。
 
-1. `netfilter.mobileconfig` [GitHub リポジトリからデバイスにダウンロード](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)し、次のように保存します。`com.microsoft.network-extension.mobileconfig`
+1. Jamf Pro ダッシュボードで、[コンピューター] 、[ **構成** プロファイル **] の順に選択します**。
 
-2. JAMF の組 [み込](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) みの証明機関を使用して署名証明書を作成するには、このページの指示に従います。
+2. [ **新規] を** クリックし、[オプション] に次の詳細を **入力します**。
 
-3. 証明書を作成してデバイスにインストールしたら、macOS デバイスからターミナルから次のコマンドを実行します。
+    - タブ **全般**: 
+        - **名前**: Microsoft Defender ATP ネットワーク拡張機能
+        - **説明**: macOS 10.15 (Catalina) 以降
+        - **カテゴリ**: なし *(既定)*
+        - **配布方法**: 自動的にインストール *する (既定)*
+        - **レベル**: コンピューター レベル *(既定)*
 
-   ```bash
-   $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
-   ```
+    - タブ **コンテンツ フィルター**:
+        - **フィルター名**: Microsoft Defender ATP コンテンツ フィルター
+        - **識別子**: `com.microsoft.wdav`
+        - サービス **アドレス 、****組織、****ユーザー名、** パスワード、**証明書** を空白のままにする **(Include** *は* 選択されません) 
+        - **フィルターの順序**: Inspector
+        - **ソケット フィルター**: `com.microsoft.wdav.netext`
+        - **ソケット フィルターの指定要件**: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+        - [ **ネットワーク フィルター] フィールド** を空白のままにします **([含** める *] は* 選択されません)
 
-   ![署名済み構成を作成するコマンドを含むターミナル ウィンドウ](images/netext-create-profile.png)
+        識別子、 **ソケット フィルター** **、ソケット フィルター** の指定 **された** 要件の正確な値は、上記で指定したとおりです。
 
-4. JAMF ポータルから [構成プロファイル] に移動 **し、[** アップロード] ボタン **をクリック** します。 
+        ![構成設定 mdatpmdav のイメージ](images/netext-create-profile.png)
 
-   ![アップロード ウィンドウのイメージ](images/netext-upload-file.png)
-
-5. [ファイル **の選択] を選択** し、 を選択します `microsoft.network-extension.signed.mobileconfig` 。
-
-   ![アップロード ウィンドウのイメージ netext choose file](images/netext-choose-file.png)
-
-6. [アップロード **] を選択します**。
-
-   ![アップロード ウィンドウ netext アップロード ファイル 2 の画像](images/netext-upload-file2.png)
-
-7. ファイルをアップロードすると、新しいページにリダイレクトされ、このプロファイルの作成が完了します。
-
-   ![新しい構成プロファイル netext プロファイル ページのイメージ](images/netext-profile-page.png)
-
-8. [スコープ] **タブを選択** します。
+3. [スコープ] **タブを選択** します。
 
    ![[構成設定] [sco] タブのイメージ](images/0df36fc308ba569db204ee32db3fb40a.png)
 
-9. **[+ 追加]** を選択します。
+4. **[+ 追加]** を選択します。
 
-10. [ **グループ名]** > [コンピューター グループ] **を>** Contoso の [コンピューター グループ] **を選択します**。
+5. [ **グループ名]** > [コンピューター グループ] **を>** Contoso の [コンピューター グループ] **を選択します**。
 
-11. **[+ 追加]** を選択します。
+6. **[+ 追加]** を選択します。
 
     ![構成設定 adim のイメージ](images/0dde8a4c41110dbc398c485433a81359.png)
 
-12. **[保存]** を選択します。
+7. **[保存]** を選択します。
 
     ![構成設定のイメージ savimg netextscop](images/netext-scope.png)
 
-13. [**完了**] を選択します。
+8. [**完了**] を選択します。
 
     ![構成設定 netextfinal のイメージ](images/netext-final.png)
+
+または、「Jamf Pro を使用したカスタム構成プロファイルの展開」の説明に従って [、netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) をダウンロードして JAMF 構成プロファイル [にアップロードできます|方法 2: Jamf Pro に構成プロファイルをアップロードします](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>手順 10: Microsoft Defender for Endpoint for Mac でスキャンをスケジュールする
 「Microsoft Defender [for Endpoint for Mac でスキャンをスケジュールする」の手順に従います](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
@@ -838,7 +830,7 @@ ms.locfileid: "51062252"
 
     **Scope**
     
-    **[追加]** を選択します。
+    [**追加**] を選択します。
     
     ![構成設定 ad1img のイメージ](images/1c08d097829863778d562c10c5f92b67.png)
 

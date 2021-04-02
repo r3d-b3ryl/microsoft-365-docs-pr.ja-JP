@@ -2,7 +2,7 @@
 title: インジケーターの作成
 ms.reviewer: ''
 description: エンティティの検出、防止、除外を定義するファイル ハッシュ、IP アドレス、URL、またはドメインのインジケーターを作成します。
-keywords: 管理、許可、ブロック、ブロック、クリーン、悪意のある、ファイル ハッシュ、IP アドレス、URL、ドメイン
+keywords: 管理、許可、ブロックされた、ブロック、クリーン、悪意のある、ファイル ハッシュ、ip アドレス、URL、ドメイン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
-ms.translationtype: MT
+ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379300"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470895"
 ---
 # <a name="create-indicators"></a>インジケーターの作成
 
@@ -34,42 +34,45 @@ ms.locfileid: "51379300"
 
 
 > [!TIP]
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-侵害の指標 (IoC) 照合は、すべてのエンドポイント保護ソリューションに不可欠な機能です。 この機能により、SecOps は検出およびブロック (予防と応答) のインジケーターの一覧を設定できます。
+侵害インジケーター (IoCs) マッチングは、すべてのエンドポイント保護ソリューションで不可欠な機能です。 この機能により、SecOps は検出およびブロック (防止と応答) のインジケーターの一覧を設定できます。
 
-エンティティの検出、防止、除外を定義するインジケーターを作成します。 実行するアクションと、アクションを適用する期間、およびアクションを適用するデバイス グループの範囲を定義できます。
+エンティティの検出、防止、除外を定義するインジケーターを作成します。 実行するアクションと、アクションを適用する期間とその時期、アクションを適用するデバイス グループの範囲を定義できます。
 
-現在サポートされているソースは、Defender for Endpoint のクラウド検出エンジン、自動調査と修復エンジン、およびエンドポイント防止エンジン (Microsoft Defender Antivirus) です。
+現在サポートされているソースは、Defender for Endpoint のクラウド検出エンジン、自動調査と修復エンジン、エンドポイント防止エンジン (Microsoft Defender ウィルス対策) です。
 
 **クラウド検出エンジン**<br>
-Defender for Endpoint のクラウド検出エンジンは、収集されたデータを定期的にスキャンし、設定したインジケーターの一致を試みます。 一致がある場合は、IoC に指定した設定に従ってアクションが実行されます。
+Defender for Endpoint のクラウド検出エンジンは、収集されたデータを定期的にスキャンし、設定したインジケーターと一致するものを探します。 一致がある場合、IoC に指定した設定に従ってアクションが実行されます。
 
 **エンドポイント防止エンジン**<br>
-インジケーターの同じリストは、予防エージェントによって受け入れされます。 つまり、Microsoft Defender AV がプライマリ AV 構成の場合、一致するインジケーターは設定に従って処理されます。 たとえば、アクションが "Alert and Block" の場合、Microsoft Defender AV はファイルの実行 (ブロックと修復) を防止し、対応するアラートが発生します。 一方、アクションが "許可" に設定されている場合、Microsoft Defender AV はファイルの実行を検出またはブロックします。
+インジケーターの同じリストは、防止エージェントによって適用されます。 つまり、Microsoft Defender AV が主な AV 構成である場合、一致したインジケーターは設定に従って処理されます。 たとえば、アクションが "Alert and Block (警告とブロック)" の場合、Microsoft Defender AV によってファイルの実行 (ブロックおよび修復) が防止され、対応する警告が発生します。 一方、アクションが "許可" に設定されている場合、Microsoft Defender AV ではファイルの検出やファイルの実行がブロックされません。
 
 **自動調査と修復エンジン**<BR>
-自動調査と修復は同じように動作します。 インジケーターが "許可" に設定されている場合、自動調査と修復は、そのインジケーターの "悪い" 評決を無視します。 "Block" に設定すると、自動調査と修復によって"悪い" と処理されます。
+自動調査と修復は同じように動作します。 インジケーターが "許可" に設定されている場合、自動調査と修復では"悪い" 判定は無視されます。 "ブロック" に設定すると、自動調査と修復は、"悪い" として処理します。
+
+> [!NOTE]
+> EnableFileHashComputation 設定は、ファイル スキャン時に cert とファイル IoC のファイル ハッシュを計算します。 このポリシーは、信頼できるアプリケーションに属するハッシュと cert の IoC 適用をサポートしています。 ファイル設定の許可またはブロックで、同時に有効化、無効化できます。 EnableFileHashComputation はグループ ポリシーから手動で有効にでき、既定では無効になっています。
 
 
 現在サポートされているアクションは次のとおりです。
 - 許可
-- アラートのみ
-- アラートとブロック
+- 通知のみ
+- 通知とブロック
 
 
 次のインジケーターを作成できます。
-- [Files](indicator-file.md)
+- [ファイル](indicator-file.md)
 - [IP アドレス、URL/ドメイン](indicator-ip-domain.md)
 - [証明書](indicator-certificates.md)
 
 
 > [!NOTE]
-> テナントごとに 15,000 のインジケーターの制限があります。 ファイルと証明書のインジケーターは、Microsoft Defender ウイルス対策用に [定義された除外をブロックしない](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)。 インジケーターは、パッシブ モードの場合、Microsoft Defender ウイルス対策ではサポートされません。 
+> 1 テナントあたり 15,000 件のインジケーターの制限があります。 ファイルおよび証明書インジケーターは、[Microsoft Defender ウイルス対策ソフトウェア用に定義された例外](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)をブロックしません。 Microsoft Defender ウイルス対策はパッシブ モードの場合にインジケーターをサポートしません。 
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [コンテキスト IoC の作成](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
-- [Microsoft Defender for Endpoint インジケーター API を使用する](ti-indicator.md)
+- [エンドポイント インジケーター API に Microsoft Defender を使用する](ti-indicator.md)
 - [パートナー統合ソリューションの使用](partner-applications.md)

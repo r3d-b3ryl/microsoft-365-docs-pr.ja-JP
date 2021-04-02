@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ca095a7a65a114182d736176840fdd4e651a8646
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1d9c3233f72541ccd0463eefef93bde5e7d9900f
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066804"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499958"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>権限&前提条件 - 脅威と脆弱性の管理
 
@@ -41,7 +41,7 @@ ms.locfileid: "51066804"
 - サポート [されているオペレーティング システムとプラットフォームを実行する](tvm-supported-os.md)
 - ネットワークに次の必須更新プログラムをインストールして展開し、脆弱性評価の検出率を向上させる必要があります。
 
-> Release | セキュリティ更新プログラムの KB 番号とリンク
+> リリース | セキュリティ更新プログラムの KB 番号とリンク
 > :---|:---
 > Windows 10 Version 1709 | [KB4493441 および](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 > Windows 10 Version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) および [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
@@ -76,7 +76,7 @@ ms.locfileid: "51066804"
 ## <a name="related-articles"></a>関連記事
 
 - [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
-- [サポートされているオペレーティング システムとプラットフォーム](tvm-supported-os.md)
+- [サポート対象オペレーティング システムとプラットフォーム](tvm-supported-os.md)
 - [デバイス値の割り当て](tvm-assign-device-value.md)
 - [脅威と脆弱性の管理ダッシュボード](tvm-dashboard-insights.md)
 

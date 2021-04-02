@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eaa0068fe52119bfd9dc2381b253b259cb8df907
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1fc4635b71e68bb56fa7ec54c9c7b1263b83446b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062084"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498244"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>適切な設定で高度な狩猟範囲を拡張する
 
@@ -54,5 +54,5 @@ ms.locfileid: "51062084"
 | ドメイン コントローラ | Microsoft Defender for Identity に送信されるオンプレミスの Active Directory からのデータ、アカウントの詳細、ログオン アクティビティ、Active Directory クエリなどの ID 関連情報の強化 | [IdentityInfo、IdentityLogonEvents、IdentityQueryEvents](advanced-hunting-identitylogonevents-table.md)などの複数の[](advanced-hunting-identityinfo-table.md)[テーブル](advanced-hunting-identityqueryevents-table.md)  | - [Microsoft Defender for Identity センサーのインストール](/azure-advanced-threat-protection/install-atp-step4)<br>- [関連する Windows イベントを有効にする](/azure-advanced-threat-protection/configure-event-collection) |
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

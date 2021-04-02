@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4ba3e81163cdbba54bf718dca929e2df3b39a1c3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e63af4153804a09424c36fb03ac715da5f6d9485
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067052"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499133"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -39,22 +39,22 @@ ms.locfileid: "51067052"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
+| `DeviceId` | 文字列 | サービス内のデバイスの一意の識別子 |
+| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を and 列と組み合わせて `DeviceName` 使用する必要 `Timestamp` があります。 |
-| `NetworkAdapterName` | string | ネットワーク アダプターの名前 |
-| `MacAddress` | string | ネットワーク アダプターの MAC アドレス |
-| `NetworkAdapterType` | string | ネットワーク アダプターの種類。 使用できる値については、この列挙 [を参照してください。](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2&preserve-view=true) |
-| `NetworkAdapterStatus` | string | ネットワーク アダプターの運用状態。 使用できる値については、この列挙 [を参照してください。](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2&preserve-view=true) |
-| `TunnelType` | string | トンネリング プロトコル (インターフェイスが 6to4、Teredo、ISATAP、PPTP、SSTP、SSH など) に使用されている場合 |
-| `ConnectedNetworks` | string | アダプターが接続されているネットワーク。 各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれる |
-| `DnsAddresses` | string | JSON 配列形式の DNS サーバー アドレス |
-| `IPv4Dhcp` | string | DHCP サーバーの IPv4 アドレス |
-| `IPv6Dhcp` | string | DHCP サーバーの IPv6 アドレス |
-| `DefaultGateways` | string | JSON 配列形式の既定のゲートウェイ アドレス |
-| `IPAddresses` | string | アダプターに割り当てられているすべての IP アドレスと、それぞれのサブネット プレフィックスと IP アドレス空間 (パブリック、プライベート、リンク ローカルなど) を含む JSON 配列 |
+| `NetworkAdapterName` | 文字列 | ネットワーク アダプターの名前 |
+| `MacAddress` | 文字列 | ネットワーク アダプターの MAC アドレス |
+| `NetworkAdapterType` | 文字列 | ネットワーク アダプターの種類。 使用できる値については、この列挙 [を参照してください。](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2&preserve-view=true) |
+| `NetworkAdapterStatus` | 文字列 | ネットワーク アダプターの運用状態。 使用できる値については、この列挙 [を参照してください。](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2&preserve-view=true) |
+| `TunnelType` | 文字列 | トンネリング プロトコル (インターフェイスが 6to4、Teredo、ISATAP、PPTP、SSTP、SSH など) に使用されている場合 |
+| `ConnectedNetworks` | 文字列 | アダプターが接続されているネットワーク。 各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれる |
+| `DnsAddresses` | 文字列 | JSON 配列形式の DNS サーバー アドレス |
+| `IPv4Dhcp` | 文字列 | DHCP サーバーの IPv4 アドレス |
+| `IPv6Dhcp` | 文字列 | DHCP サーバーの IPv6 アドレス |
+| `DefaultGateways` | 文字列 | JSON 配列形式の既定のゲートウェイ アドレス |
+| `IPAddresses` | 文字列 | アダプターに割り当てられているすべての IP アドレスと、それぞれのサブネット プレフィックスと IP アドレス空間 (パブリック、プライベート、リンク ローカルなど) を含む JSON 配列 |
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-reference.md)

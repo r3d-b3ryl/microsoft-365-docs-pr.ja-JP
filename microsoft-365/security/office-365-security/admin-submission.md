@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターの Submits ポータルを使用して、疑わしいメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、ファイルを Microsoft に送信してスキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dd566de3ba4b4281b19c423b8623f081c378bca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206735"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499329"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -122,9 +122,9 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
    ![添付ファイルの提出例](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>管理者の申請を表示する
+## <a name="view-items-submitted-for-analysis"></a>分析のために提出されたアイテムの表示
 
-[セキュリティ & コンプライアンス センター] で、[脅威管理の申請] に移動し、[管理者の申請] タブで [新しい申請] をクリックします \> 。  
+[セキュリティ & コンプライアンス センター] で、[脅威管理の申請] に移動し、[送信済み分析] \> **タブに移動している必要があります**。
 
 ページの上部付近では、開始日、終了日、および (既定で) ボックスに値を入力し、[更新] ボタンをクリックして、申請 **ID** (すべての申請に割り当てられている GUID 値) でフィルター処理できます。 ![ ](../../media/scc-quarantine-refresh.png) Update
 
@@ -225,7 +225,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 フィルター条件を変更するには、[送信者] ボタン **を** クリックし、次のいずれかの値を選択します。
 
 - **送信元ドメイン**
-- **件名**
+- **[件名]**
 - **提出者**
 - **申請の種類**
 - [**Sender IP (送信者の IP)**]
@@ -254,6 +254,9 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 ページの上部の近くに開始日、終了日を入力し、ボックスに値を入力し、[更新]ボタンをクリックして[送信済み] でフィルター ![ 処理できます ](../../media/scc-quarantine-refresh.png) 。 Update
 
 結果をエクスポートするには、ページの上部 **にある [エクスポート** ] をクリックし、[グラフ データ] または [ **テーブル** ] を **選択します**。 表示されるダイアログで、.csv ファイルを保存します。
+
+> [!NOTE]
+> 組織がカスタム メールボックスにのみ送信するように構成されている場合、報告されたメッセージは再スキャンのために送信されません。ユーザーレポートメッセージ ポータルの結果は常に空になります。
 
 ## <a name="undo-user-submissions"></a>ユーザー申請の元に戻す
 

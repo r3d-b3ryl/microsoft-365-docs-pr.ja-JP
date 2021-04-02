@@ -4,16 +4,20 @@ description: Microsoft マネージド デスクトップにサービスとし�
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c51ebdbcd2a8d6d13f5ba0009d470581e317a365
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: a107c6364e6766094724972e931606003e0c87f7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920434"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445198"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft マネージド デスクトップ サービスの説明
 
@@ -23,7 +27,7 @@ Microsoft Managed Desktop は、セキュアで最先端の環境をユーザー
 - デバイスの構成
 - Microsoft のベスト プラクティスに従って、Windows Hello、BitLocker、セキュア ブート、仮想化ベースのセキュリティなどにより、ユーザーとデバイスをセキュリティで保護するための機能
 - デバイス セキュリティのモニタリング サービスと修復サービス
-- アプリの互換性は、[Desktop App Assure](/fasttrack/win-10-desktop-app-assure) から確認
+- アプリの互換性は、[App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) から確認
 - Windows 10 および Microsoft 365 Apps for enterprise apps の更新プログラムの管理
 - デバイスとアプリの使用状況に関する分析データ
 - ユーザー向けの IT サポート
@@ -31,7 +35,7 @@ Microsoft Managed Desktop は、セキュアで最先端の環境をユーザー
 
 Microsoft マネージド デスクトップに含まれる特定のサービスの詳細については、このセクションの「その他のトピック」 を参照してください。 Microsoft マネージド デスクトップを利用することに決めた場合は、[[Microsoft マネージド デスクトップの登録準備]](../get-ready/index.md)で、サービスに参加するための準備の手順を確認できます。
 
-- [[Microsoft マネージド デスクトップサポートでされている地域と言語]](regions-languages.md) では、サービスでサポートされている地域と言語について説明しています。
+- [[サポートでされている地域と言語]](regions-languages.md) では、サービスでサポートされている地域と言語について説明しています。
 - ユーザーが最高のエクスペリエンスを体感できるように、Microsoft マネージド デスクトップでは特定のデバイスのみがサポートされています。 [[プログラムデバイス]](device-list.md) は、デバイスがユーザーにより提供されるかあるいはパートナーと協力するかにかかわらず、サービスで使用できる正確なデバイス モデルと構成を指定します。
 - [[デバイスサービス]](device-services.md) は、Microsoft がサブスクライバーに提供するデバイス関連のサービスを指定します。
 - [[デバイス構成]](device-policies.md) は、サービスが登録されているデバイスに適用される既定およびセキュリティ関連のモバイル デバイス管理ポリシーを明確にします。

@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 326e508fbf5a0e968e890f5727a6ae542de437c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186007"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499943"
 ---
 # <a name="monitor-web-browsing-security"></a>Web 閲覧のセキュリティを監視する
 
@@ -69,6 +69,6 @@ Web 脅威保護の概要カードで特定の Web 脅威カテゴリを **選�
 ## <a name="related-topics"></a>関連項目
 
 - [Web 保護の概要](web-protection-overview.md)
-- [Web コンテンツ のフィルター処理](web-content-filtering.md)
-- [Web 脅威保護](web-threat-protection.md)
-- [Web の脅威に対応する](web-protection-response.md)
+- [Web コンテンツ フィルタリング](web-content-filtering.md)
+- [Web の脅威に対する保護](web-threat-protection.md)
+- [Web の脅威への対応](web-protection-response.md)

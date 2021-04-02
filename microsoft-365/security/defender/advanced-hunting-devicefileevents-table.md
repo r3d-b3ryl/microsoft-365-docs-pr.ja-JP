@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 62989eca2fd00757ea02d03bf24a0049135d97b0
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 6528d25b385a2b4eafc408cbfb6609372a6688de
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382867"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498582"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -102,7 +102,7 @@ ms.locfileid: "51382867"
 > ファイル ハッシュ情報は、利用可能なときに常に表示されます。 ただし、SHA1、SHA256、または MD5 を計算できない理由はいくつか考えられる。 たとえば、ファイルがリモート ストレージに置かれているか、別のプロセスによってロックされている、圧縮されている、または仮想としてマークされている可能性があります。 これらのシナリオでは、ファイル ハッシュ情報は空に表示されます。
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)

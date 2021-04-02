@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: d1402d8486725559335a5edc5ee13c78a0125932
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186427"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499065"
 ---
 # <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
@@ -90,7 +90,7 @@ ms.locfileid: "51186427"
 [**修復**](tvm-remediation.md) | 作成した修復アクティビティと推奨事項の例外を参照してください。
 [**ソフトウェア インベントリ**](tvm-software-inventory.md) | 組織内の脆弱なソフトウェアの一覧と、弱点と脅威に関する情報を参照してください。
 [**弱点**](tvm-weaknesses.md) | 組織の一般的な脆弱性と露出 (CVEs) の一覧を参照してください。
-[**イベントタイムライン**](threat-and-vuln-mgt-event-timeline.md) | 組織のリスクに影響を与える可能性があるイベントを表示します。
+[**イベントのタイムライン**](threat-and-vuln-mgt-event-timeline.md) | 組織のリスクに影響を与える可能性があるイベントを表示します。
 
 ## <a name="apis"></a>API
 
@@ -98,16 +98,16 @@ ms.locfileid: "51186427"
 
 関連する API については、次の記事を参照してください。
 
-- [サポートされている Microsoft Defender for Endpoint API](exposed-apis-list.md)
+- [サポート対象 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 - [コンピューター API](machine.md)
 - [推奨事項 API](vulnerability.md)
 - [API のスコア付け](score.md)
 - [ソフトウェア API](software.md)
 - [脆弱性 API](vulnerability.md)
-- [コンピューターとソフトウェアによる脆弱性の一覧表示](get-all-vulnerabilities-by-machines.md)
+- [マシンとソフトウェアによる脆弱性の一覧表示](get-all-vulnerabilities-by-machines.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [サポートされているオペレーティング システムとプラットフォーム](tvm-supported-os.md)
+- [サポート対象オペレーティング システムとプラットフォーム](tvm-supported-os.md)
 - [脅威と脆弱性の管理ダッシュボード](tvm-dashboard-insights.md)
 - [ブログ: Microsoft の脅威&脆弱性管理は、何千人もの顧客が脆弱性をリアルタイムで検出、優先順位付け、修復するのに役立ちます](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

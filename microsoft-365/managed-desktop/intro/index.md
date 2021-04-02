@@ -3,18 +3,19 @@ title: Microsoft マネージド デスクトップは必要ですか?
 description: サービスの概要についてのオリエンテーションとさまざまな対象ユーザー向けの記事のショートカット
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
+audience: ITpro
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920622"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445556"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -57,8 +58,10 @@ IT 管理者は、次の機能を利用できます。
 Microsoft マネージド デスクトップは、登録済みのデバイスやそれらが使用する Microsoft ソフトウェアを管理する負担を軽減します。
 
 - **ハードウェア:** IT 部門がデバイス (およびそのドライバー) を調査し、テストする代わりに、Microsoft マネージド デスクトップによって特定のデバイスが慎重にテストされ、エンタープライズ レベルのパフォーマンス要件を満たし、サービスで動作することが保証された [デバイスの一覧](../service-description/device-list.md)が作成されます。 承認済みの一覧に記載されている場合は、デバイスを自分で取得する (またはパートナーとの共同作業) か、所有しているデバイスを再利用することができます。 デバイスの登録は簡単でわかりやすく、さらに、展開する前にユーザー向けにデバイス操作の特定の側面を [カスタマイズ](../working-with-managed-desktop/config-setting-overview.md) することもできます。
+
 - **更新:** Microsoft マネージド デスクトップは、Windows 10 の品質更新プログラムおよび機能更新プログラム、ドライバー、ファームウェア、ウイルス対策定義、Microsoft 365 Apps for enterprise の [展開グループ](../service-description/updates.md)のすべての側面をセットアップおよび管理します。 これには、すべての更新プログラムの広範なテストと検証が含まれ、登録済みのデバイスが常に最新であることを保証し、中断を最小限に抑えて、IT 部門を継続的なタスクから解放します。
-- **アプリ:** Microsoft 365 Enterprise の一部として、Microsoft はいくつかの重要な Microsoft アプリを提供 (および管理) します。 ただし、その他のアプリもビジネスに必要となる可能性があります。 IT 部門がこれらのアプリケーションをテスト、パッケージ化、展開する代わりに、Microsoft がそれらの展開を支援し、必要に応じて [Desktop App Assure](/fasttrack/win-10-desktop-app-assure)を通じてサポートします。 詳細については、「[Microsoft マネージド デスクトップのアプリ](../get-ready/apps.md)」をご覧ください。
+
+- **アプリ:** Microsoft 365 Enterprise の一部として、Microsoft はいくつかの重要な Microsoft アプリを提供 (および管理) します。 ただし、その他のアプリもビジネスに必要となる可能性があります。 IT 部門がこれらのアプリケーションをテスト、パッケージ化、展開する代わりに、Microsoft が [FastTrack](https://www.microsoft.com/FastTrack) プログラムでそれらの展開をサポートします。 さらに、Microsoft [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) プログラムで、Microsoft 製品の最新バージョンに移行する場合に発生するアプリの互換性の問題を修復することがきます。 詳細については、「[Microsoft マネージド デスクトップのアプリ](../get-ready/apps.md)」をご覧ください。
 
 
 ## <a name="device-monitoring"></a>デバイスの監視
@@ -69,6 +72,7 @@ Microsoft マネージド デスクトップは、登録済みのデバイスや
 
 
 ## <a name="need-more-details"></a>より詳しい情報が必要ですか?
+
 お客様事例を含む Microsoft マネージド デスクトップの価値の詳細については、「[Microsoft マネージド デスクトップ](https://aka.ms/mmd)」をご覧ください。 開始にあたっての最適な参照先は、[ロードマップ](https://aka.ms/AA6jiam)、[Forrester Total Economic Impact のケース スタディ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)、ダウンロード可能な[ワンページ サマリー](https://aka.ms/AA6ob3h)です。 最新のニュースについては、Microsoft マネージド デスクトップの[ブログ](https://aka.ms/AA6l2dd)をご覧ください。
 
 Microsoft マネージド デスクトップがお客様の組織に適していると思われる場合は、サービス、組織の登録を準備する方法、サービスの開始方法、その後の継続的な運用方法 （必要に応じてお客様とユーザーが簡単に支援を受けられる方法を含む） について説明する追加のドキュメントを参照して理解を深めることができます。 既に開始が可能な場合は、お客様の[ローカルアカウントチーム](https://pages.email.office.com/contactmmd/)にお問い合わせください。

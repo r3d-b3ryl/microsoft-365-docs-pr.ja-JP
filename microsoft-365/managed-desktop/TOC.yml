@@ -15,7 +15,7 @@
     - name: Microsoft マネージド デスクトップ サービスの説明
       href: service-description/index.md
       items:
-        - name: サポートされている地域と言語
+        - name: サポートされる地域
           href: service-description/regions-languages.md
         - name: 製品のライフサイクル
           href: service-description/device-lifecycle.md
@@ -96,6 +96,8 @@
           href: get-started/company-portal.md
         - name: Enterprise State Roaming を有効にする
           href: get-started/enterprise-state-roaming.md
+        - name: ユーザー エクスペリエンスをローカライズ
+          href: get-started/localization.md
         - name: デバイスをセットアップする
           href: get-started/set-up-devices.md
           items:

@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8940d1dd370f804f8539bf4e753b1112d3c8d3bf
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c6612127f43e650dee18bdc9390fc26b0a693f69
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198199"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498887"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -45,12 +45,12 @@ ms.locfileid: "51198199"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | string | Microsoft 365 によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | 文字列 | Microsoft 365 によって生成された電子メールの一意の識別子 |
 | `InternetMessageId` | string | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `Action` | string | エンティティに対して実行されるアクション |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類: 手動修復、フィッシング ZAP、マルウェア ZAP |
-| `ActionTrigger` | string | 管理者 (手動または保留中の自動アクションの承認を通じて) または ZAP や動的配信などの特別なメカニズムによってアクションがトリガーされたかどうかを示します。 |
-| `ActionResult` | string | アクションの結果 |
+| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類: 手動修復、フィッシング ZAP、マルウェア ZAP |
+| `ActionTrigger` | 文字列 | 管理者 (手動または保留中の自動アクションの承認を通じて) または ZAP や動的配信などの特別なメカニズムによってアクションがトリガーされたかどうかを示します。 |
+| `ActionResult` | 文字列 | アクションの結果 |
 | `RecipientEmailAddress` | string | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
 | `DeliveryLocation` | string | メールの配信場所: 受信トレイ/フォルダー、オンプレミス/外部、迷惑メール、検疫、失敗、中断、削除済みアイテム |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
@@ -63,7 +63,7 @@ ms.locfileid: "51198199"
 - **マルウェア ZAP** – 配信後にマルウェアを含む電子メール メッセージが検出された場合、ゼロ時間自動削除 (ZAP) がアクションを実行しました。
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)

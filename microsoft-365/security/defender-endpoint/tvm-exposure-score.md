@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc7abd678d6f2d317d02c4ed2b8028e7e270b055
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 34c3122b017b14605fdbb3358f31f73e26361a4d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068451"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500125"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>露出スコア - 脅威と脆弱性の管理
 
@@ -64,6 +64,6 @@ ms.locfileid: "51068451"
 ## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
-- [デバイスの Microsoft Secure Score](tvm-microsoft-secure-score-devices.md)
+- [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
-- [イベントタイムライン](threat-and-vuln-mgt-event-timeline.md)
+- [イベントのタイムライン](threat-and-vuln-mgt-event-timeline.md)

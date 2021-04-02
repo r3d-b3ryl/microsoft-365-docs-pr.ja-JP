@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7754fa586b24fdedaa9691b45f5da4654c882a5b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185983"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499896"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Web の脅威から組織を保護する
 
@@ -36,7 +36,7 @@ ms.locfileid: "51185983"
 Web 脅威保護は [、Defender](web-protection-overview.md) for Endpoint の Web 保護の一部です。 ネットワーク保護 [を使用して](network-protection.md) 、Web の脅威からデバイスを保護します。 Microsoft Edge や Chrome や Firefox のような一般的なサード パーティ製ブラウザーと統合することで、Web 脅威保護は Web プロキシなしで Web の脅威を停止し、離れた場所やオンプレミスの間にデバイスを保護できます。 Web 脅威保護は、フィッシング サイト、マルウェア ベクター、悪用サイト、信頼されていないサイトまたは低評価サイト、カスタム インジケーター リストでブロックしたサイトへのアクセスを [停止します](manage-indicators.md)。
 
 >[!Note]
->デバイスが新しい顧客インジケーターを受信するには、最大で 1 時間かかる場合があります。
+>デバイスが新しいカスタム インジケーターを受信するには、最大で 1 時間かかる場合があります。
 
 ## <a name="prerequisites"></a>前提条件
 Web 保護は、ネットワーク保護を使用して、Microsoft Edge およびサードパーティの Web ブラウザーで Web 閲覧のセキュリティを提供します。
@@ -51,7 +51,7 @@ Web 保護は、ネットワーク保護を使用して、Microsoft Edge およ�
 ## <a name="related-topics"></a>関連項目
 
 - [Web 保護の概要](web-protection-overview.md)
-- [Web 脅威保護](web-threat-protection.md)
+- [Web の脅威に対する保護](web-threat-protection.md)
 - [Web セキュリティの監視](web-protection-monitoring.md)
-- [Web の脅威に対応する](web-protection-response.md)
+- [Web の脅威への対応](web-protection-response.md)
 - [ネットワーク保護](network-protection.md)
