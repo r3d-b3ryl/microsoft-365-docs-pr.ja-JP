@@ -390,6 +390,7 @@
 ## リファレンス
 ### [管理と API]()
 #### [管理と API の概要](management-apis.md)
+#### [API リリースノート](api-release-notes.md)
 #### [Microsoft Defender for Endpoint API]()
 ##### [概要]()
 ###### [Microsoft Defender for Endpoint API ライセンスと条件](api-terms-of-use.md)
@@ -586,6 +587,5 @@
 ##### [ネットワーク保護](troubleshoot-np.md)
 ##### [攻撃面の減少ルール](troubleshoot-asr.md)
 
-# [Microsoft 365 セキュリティ](../index.yml)
-# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+# [Microsoft 365 Defender](../index.yml)
 # [Defender for Office 365](../office-365-security/overview.md)

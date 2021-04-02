@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,48 +20,48 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3d991bc5e78fc7b33e20df1f86471a0969b7345f
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 1c4b71139a0fba84928c3f604e3c770d140d9e2b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382597"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499741"
 ---
-# <a name="devicetvmsecureconfigurationassessment"></a><span data-ttu-id="92b44-105">DeviceTvmSecureConfigurationAssessment</span><span class="sxs-lookup"><span data-stu-id="92b44-105">DeviceTvmSecureConfigurationAssessment</span></span>
+# <a name="devicetvmsecureconfigurationassessment"></a><span data-ttu-id="43b17-105">DeviceTvmSecureConfigurationAssessment</span><span class="sxs-lookup"><span data-stu-id="43b17-105">DeviceTvmSecureConfigurationAssessment</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="92b44-106">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="92b44-106">**Applies to:**</span></span>
-- <span data-ttu-id="92b44-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="92b44-107">Microsoft 365 Defender</span></span>
+<span data-ttu-id="43b17-106">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="43b17-106">**Applies to:**</span></span>
+- <span data-ttu-id="43b17-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="43b17-107">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="92b44-108">`DeviceTvmSecureConfigurationAssessment` テーブルの各行には、[脅威および脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) からの特定のセキュリティ構成に対する評価イベントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="92b44-108">Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt).</span></span> <span data-ttu-id="92b44-109">このリファレンスを使用して最新の評価結果を確認し、デバイスが準拠しているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="92b44-109">Use this reference to check the latest assessment results and determine whether devices are compliant.</span></span>
+<span data-ttu-id="43b17-108">`DeviceTvmSecureConfigurationAssessment` テーブルの各行には、[脅威および脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) からの特定のセキュリティ構成に対する評価イベントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="43b17-108">Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt).</span></span> <span data-ttu-id="43b17-109">このリファレンスを使用して最新の評価結果を確認し、デバイスが準拠しているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="43b17-109">Use this reference to check the latest assessment results and determine whether devices are compliant.</span></span>
 
-<span data-ttu-id="92b44-110">高度な検索スキーマの他のテーブルの詳細については、「[高度な検索リファレンス](advanced-hunting-schema-tables.md)」 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="92b44-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="43b17-110">高度な検索スキーマの他のテーブルの詳細については、「[高度な検索リファレンス](advanced-hunting-schema-tables.md)」 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="43b17-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="92b44-111">列名</span><span class="sxs-lookup"><span data-stu-id="92b44-111">Column name</span></span> | <span data-ttu-id="92b44-112">データ型</span><span class="sxs-lookup"><span data-stu-id="92b44-112">Data type</span></span> | <span data-ttu-id="92b44-113">説明</span><span class="sxs-lookup"><span data-stu-id="92b44-113">Description</span></span> |
+| <span data-ttu-id="43b17-111">列名</span><span class="sxs-lookup"><span data-stu-id="43b17-111">Column name</span></span> | <span data-ttu-id="43b17-112">データ型</span><span class="sxs-lookup"><span data-stu-id="43b17-112">Data type</span></span> | <span data-ttu-id="43b17-113">説明</span><span class="sxs-lookup"><span data-stu-id="43b17-113">Description</span></span> |
 |-------------|-----------|-------------|
-| `DeviceId` | <span data-ttu-id="92b44-114">string</span><span class="sxs-lookup"><span data-stu-id="92b44-114">string</span></span> | <span data-ttu-id="92b44-115">サービス内のデバイスの一意の識別子</span><span class="sxs-lookup"><span data-stu-id="92b44-115">Unique identifier for the device in the service</span></span> |
-| `DeviceName` | <span data-ttu-id="92b44-116">文字列</span><span class="sxs-lookup"><span data-stu-id="92b44-116">string</span></span> | <span data-ttu-id="92b44-117">デバイスの完全修飾ドメイン名 (FQDN)</span><span class="sxs-lookup"><span data-stu-id="92b44-117">Fully qualified domain name (FQDN) of the device</span></span> |
-| `OSPlatform` | <span data-ttu-id="92b44-118">文字列</span><span class="sxs-lookup"><span data-stu-id="92b44-118">string</span></span> | <span data-ttu-id="92b44-119">デバイスで実行されているオペレーティング システムのプラットフォーム。</span><span class="sxs-lookup"><span data-stu-id="92b44-119">Platform of the operating system running on the device.</span></span> <span data-ttu-id="92b44-120">これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。</span><span class="sxs-lookup"><span data-stu-id="92b44-120">This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</span></span>|
-| `Timestamp` | <span data-ttu-id="92b44-121">datetime</span><span class="sxs-lookup"><span data-stu-id="92b44-121">datetime</span></span> | <span data-ttu-id="92b44-122">レコードが作成された日付と時刻</span><span class="sxs-lookup"><span data-stu-id="92b44-122">Date and time when the record was generated</span></span> |
-| `ConfigurationId` | <span data-ttu-id="92b44-123">文字列</span><span class="sxs-lookup"><span data-stu-id="92b44-123">string</span></span> | <span data-ttu-id="92b44-124">特定の構成の一意の識別子</span><span class="sxs-lookup"><span data-stu-id="92b44-124">Unique identifier for a specific configuration</span></span> |
-| `ConfigurationCategory` | <span data-ttu-id="92b44-125">文字列</span><span class="sxs-lookup"><span data-stu-id="92b44-125">string</span></span> | <span data-ttu-id="92b44-126">構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御</span><span class="sxs-lookup"><span data-stu-id="92b44-126">Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls</span></span> |
-| `ConfigurationSubcategory` | <span data-ttu-id="92b44-127">文字列</span><span class="sxs-lookup"><span data-stu-id="92b44-127">string</span></span> | <span data-ttu-id="92b44-128">構成が属するサブカテゴリまたはサブグループ。</span><span class="sxs-lookup"><span data-stu-id="92b44-128">Subcategory or subgrouping to which the configuration belongs.</span></span> <span data-ttu-id="92b44-129">多くの場合、これは特定の機能または機能を説明します。</span><span class="sxs-lookup"><span data-stu-id="92b44-129">In many cases, this describes specific capabilities or features.</span></span> |
-| `ConfigurationImpact` | <span data-ttu-id="92b44-130">文字列</span><span class="sxs-lookup"><span data-stu-id="92b44-130">string</span></span> | <span data-ttu-id="92b44-131">構成の評価が全体の構成スコア (1-10) に及ぼす影響</span><span class="sxs-lookup"><span data-stu-id="92b44-131">Rated impact of the configuration to the overall configuration score (1-10)</span></span> |
-| `IsCompliant` | <span data-ttu-id="92b44-132">ブール値</span><span class="sxs-lookup"><span data-stu-id="92b44-132">boolean</span></span> | <span data-ttu-id="92b44-133">構成やポリシーが正しく構成されているかどうかを示します</span><span class="sxs-lookup"><span data-stu-id="92b44-133">Indicates whether the configuration or policy is properly configured</span></span> |
-| `IsApplicable` | <span data-ttu-id="92b44-134">boolean</span><span class="sxs-lookup"><span data-stu-id="92b44-134">boolean</span></span> | <span data-ttu-id="92b44-135">構成またはポリシーがデバイスに適用されるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="92b44-135">Indicates whether the configuration or policy applies to the device</span></span> |
-| `Context` | <span data-ttu-id="92b44-136">文字列</span><span class="sxs-lookup"><span data-stu-id="92b44-136">string</span></span> | <span data-ttu-id="92b44-137">構成またはポリシーに関するその他のコンテキスト情報</span><span class="sxs-lookup"><span data-stu-id="92b44-137">Additional contextual information about the configuration or policy</span></span> |
-| `IsExpectedUserImpact` | <span data-ttu-id="92b44-138">boolean</span><span class="sxs-lookup"><span data-stu-id="92b44-138">boolean</span></span> | <span data-ttu-id="92b44-139">構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="92b44-139">Indicates whether there will be user impact if the configuration or policy is applied</span></span> |
+| `DeviceId` | <span data-ttu-id="43b17-114">string</span><span class="sxs-lookup"><span data-stu-id="43b17-114">string</span></span> | <span data-ttu-id="43b17-115">サービス内のデバイスの一意の識別子</span><span class="sxs-lookup"><span data-stu-id="43b17-115">Unique identifier for the device in the service</span></span> |
+| `DeviceName` | <span data-ttu-id="43b17-116">string</span><span class="sxs-lookup"><span data-stu-id="43b17-116">string</span></span> | <span data-ttu-id="43b17-117">デバイスの完全修飾ドメイン名 (FQDN)</span><span class="sxs-lookup"><span data-stu-id="43b17-117">Fully qualified domain name (FQDN) of the device</span></span> |
+| `OSPlatform` | <span data-ttu-id="43b17-118">string</span><span class="sxs-lookup"><span data-stu-id="43b17-118">string</span></span> | <span data-ttu-id="43b17-119">デバイスで実行されているオペレーティング システムのプラットフォーム。</span><span class="sxs-lookup"><span data-stu-id="43b17-119">Platform of the operating system running on the device.</span></span> <span data-ttu-id="43b17-120">これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。</span><span class="sxs-lookup"><span data-stu-id="43b17-120">This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</span></span>|
+| `Timestamp` | <span data-ttu-id="43b17-121">datetime</span><span class="sxs-lookup"><span data-stu-id="43b17-121">datetime</span></span> | <span data-ttu-id="43b17-122">レコードが作成された日付と時刻</span><span class="sxs-lookup"><span data-stu-id="43b17-122">Date and time when the record was generated</span></span> |
+| `ConfigurationId` | <span data-ttu-id="43b17-123">文字列</span><span class="sxs-lookup"><span data-stu-id="43b17-123">string</span></span> | <span data-ttu-id="43b17-124">特定の構成の一意の識別子</span><span class="sxs-lookup"><span data-stu-id="43b17-124">Unique identifier for a specific configuration</span></span> |
+| `ConfigurationCategory` | <span data-ttu-id="43b17-125">文字列</span><span class="sxs-lookup"><span data-stu-id="43b17-125">string</span></span> | <span data-ttu-id="43b17-126">構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御</span><span class="sxs-lookup"><span data-stu-id="43b17-126">Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls</span></span> |
+| `ConfigurationSubcategory` | <span data-ttu-id="43b17-127">文字列</span><span class="sxs-lookup"><span data-stu-id="43b17-127">string</span></span> | <span data-ttu-id="43b17-128">構成が属するサブカテゴリまたはサブグループ。</span><span class="sxs-lookup"><span data-stu-id="43b17-128">Subcategory or subgrouping to which the configuration belongs.</span></span> <span data-ttu-id="43b17-129">多くの場合、これは特定の機能または機能を説明します。</span><span class="sxs-lookup"><span data-stu-id="43b17-129">In many cases, this describes specific capabilities or features.</span></span> |
+| `ConfigurationImpact` | <span data-ttu-id="43b17-130">文字列</span><span class="sxs-lookup"><span data-stu-id="43b17-130">string</span></span> | <span data-ttu-id="43b17-131">構成の評価が全体の構成スコア (1-10) に及ぼす影響</span><span class="sxs-lookup"><span data-stu-id="43b17-131">Rated impact of the configuration to the overall configuration score (1-10)</span></span> |
+| `IsCompliant` | <span data-ttu-id="43b17-132">ブール値</span><span class="sxs-lookup"><span data-stu-id="43b17-132">boolean</span></span> | <span data-ttu-id="43b17-133">構成やポリシーが正しく構成されているかどうかを示します</span><span class="sxs-lookup"><span data-stu-id="43b17-133">Indicates whether the configuration or policy is properly configured</span></span> |
+| `IsApplicable` | <span data-ttu-id="43b17-134">boolean</span><span class="sxs-lookup"><span data-stu-id="43b17-134">boolean</span></span> | <span data-ttu-id="43b17-135">構成またはポリシーがデバイスに適用されるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="43b17-135">Indicates whether the configuration or policy applies to the device</span></span> |
+| `Context` | <span data-ttu-id="43b17-136">string</span><span class="sxs-lookup"><span data-stu-id="43b17-136">string</span></span> | <span data-ttu-id="43b17-137">構成またはポリシーに関するその他のコンテキスト情報</span><span class="sxs-lookup"><span data-stu-id="43b17-137">Additional contextual information about the configuration or policy</span></span> |
+| `IsExpectedUserImpact` | <span data-ttu-id="43b17-138">boolean</span><span class="sxs-lookup"><span data-stu-id="43b17-138">boolean</span></span> | <span data-ttu-id="43b17-139">構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="43b17-139">Indicates whether there will be user impact if the configuration or policy is applied</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="92b44-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="92b44-140">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="43b17-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="43b17-140">Related topics</span></span>
 
-- [<span data-ttu-id="92b44-141">積極的に脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="92b44-141">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="92b44-142">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="92b44-142">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="92b44-143">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="92b44-143">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="92b44-144">デバイス、メール、アプリ、ID 全体で探す</span><span class="sxs-lookup"><span data-stu-id="92b44-144">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="92b44-145">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="92b44-145">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="92b44-146">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="92b44-146">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
-- [<span data-ttu-id="92b44-147">脅威および脆弱性管理の概要</span><span class="sxs-lookup"><span data-stu-id="92b44-147">Overview of Threat & Vulnerability Management</span></span>](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="43b17-141">積極的に脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="43b17-141">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="43b17-142">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="43b17-142">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="43b17-143">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="43b17-143">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="43b17-144">デバイス、メール、アプリ、ID 全体で探す</span><span class="sxs-lookup"><span data-stu-id="43b17-144">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="43b17-145">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="43b17-145">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="43b17-146">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="43b17-146">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+- [<span data-ttu-id="43b17-147">脅威および脆弱性管理の概要</span><span class="sxs-lookup"><span data-stu-id="43b17-147">Overview of Threat & Vulnerability Management</span></span>](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

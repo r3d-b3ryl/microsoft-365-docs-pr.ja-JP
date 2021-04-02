@@ -16,8 +16,14 @@
       href: create-a-content-center.md
     - name: 分類子を作成する
       href: create-a-classifier.md
+    - name: モデルを複製する
+      href: duplicate-a-model.md
+    - name: モデルの名前を変更する
+      href: rename-a-model.md
     - name: 抽出子を作成する
       href: create-an-extractor.md
+    - name: 抽出子の名前を変更する
+      href: rename-an-extractor.md
     - name: 説明の種類
       href: explanation-types-overview.md
     - name: モデルを適用する
