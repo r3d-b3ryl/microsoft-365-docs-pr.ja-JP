@@ -2,8 +2,8 @@
 title: Microsoft 365 Business への移行 (Office 365 E3 から)
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 365 E3 から Microsoft 365 Business Premium にビジネスを移行するOffice説明します。
-ms.openlocfilehash: cb70260201686cae02428c715ac98ffe2f88787f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ffb82fa40f05383260ac1b97ed0bdf5f2f30c1df
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198099"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578329"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>365 E3 Office Microsoft 365 Business Premium への移行
 
@@ -124,6 +124,6 @@ Microsoft 365 Business Premium には、Exchange Online プラン 1 を使用す
 
 Microsoft 365 Business Premium に移行した後、365 の Defender Officeがあります。 概要 [については、「Microsoft Defender for Office 365」](../security/office-365-security/defender-for-office-365.md) を参照してください。 セットアップするには、「[安全なリンク](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)の設定、安全[](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)な添付ファイルのセットアップ、および[365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)の Defender でのフィッシング対策のOfficeしてください。
 
-### <a name="sensitivity-labels"></a>機密ラベル
+### <a name="sensitivity-labels"></a>秘密度ラベル
 
 感度ラベルの使用を開始するには、「感度ラベルの概要 [」と](../compliance/sensitivity-labels.md) 「感度ラベルの作成と管理」 [ビデオを参照](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) してください。

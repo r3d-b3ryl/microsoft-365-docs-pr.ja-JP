@@ -19,30 +19,23 @@ search.appverid:
 - MET150
 description: 無料試用版を取得する方法、または Microsoft 365 for business のサブスクリプションを購入する方法について説明します。
 ms.date: 08/07/2020
-ms.openlocfilehash: 05ac30ae25f4748751eee04c34d049b07d5b7511
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198438"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576903"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 Microsoft 365 for business はサブスクリプション サービスで、Microsoft が IT の管理を行っている間、クラウドで組織を実行できます。 Microsoft はデバイスを管理し、実際の脅威から保護し、最新のビジネス ソフトウェアを組織に提供します。 Microsoft 365 Business Standard、Microsoft 365 Business Premium、または Microsoft 365 Apps for business の無料試用版サブスクリプションにサインアップし、30 日間試用できます。
 
 > [!NOTE]
 > 無料試用版にサインアップする場合は、クレジット カードを使用する必要があります。 無料試用版の期間が終了すると、試用版サブスクリプションは有料サブスクリプションに自動的に変換されます。 試用期間が終了するまで、クレジット カードは請求されません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md)」を参照してください。
+無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="try-a-free-trial-subscription"></a>無料試用版サブスクリプションを試す
 
@@ -111,6 +104,21 @@ Microsoft 365 for business サブスクリプションを既に持っている�
 > [!NOTE]
 > 試用版サブスクリプションの有効期限が切れた後、90 日間の猶予期間が終了する前に、ユーザーを無料試用版サブスクリプションから新しいサブスクリプションに移動する必要があります。 これにより、データ、アカウント、および構成を保持できます。 それ以外の場合、その情報は削除されます。
 
+::: moniker range="o365-21vianet"
+## <a name="payment-options"></a>支払いオプション
+
+サブスクリプションの支払い方法は、次の方法で行います。
+
+- 請求書
+
+- Alipay または China UnionPay を使用したオンライン支払い
+
+支払いの証明は、Fapiaos の形式で提供されます。 Fapiao 要求は、支払い後約 3 日後に [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) システムに送信できます。 詳細については [、「Apply for a Fapiao for 21Vianet Office 365」を参照してください](../admin/services-in-china/apply-for-a-fapiao.md)。
+
+> [!NOTE]
+>  国際クレジット カードは受け付けていません。
+::: moniker-end
+
 ## <a name="next-steps"></a>次の手順
 
 新しいアカウントを持ち、最初のサブスクリプションを設定している場合は、ガイド付きセットアップ記事を使用して、開始に役立ちます。
@@ -129,4 +137,4 @@ Microsoft 365 for business サブスクリプションを既に持っている�
 [ユーザーにライセンスを割り当てる](../admin/manage/assign-licenses-to-users.md)(記事)\
 [別のプランにアップグレード](subscriptions/upgrade-to-different-plan.md) する (記事)\
 [ビジネス向け Microsoft 365](buy-or-edit-an-add-on.md) 用のアドオンを購入または編集する (記事)\
-[サブスクリプションの記憶域を追加する](add-storage-space.md)
+[サブスクリプションに容量を追加する](add-storage-space.md)

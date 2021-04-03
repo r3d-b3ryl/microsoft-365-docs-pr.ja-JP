@@ -1,5 +1,5 @@
 ---
-title: サブスクリプションの記憶域を追加する
+title: サブスクリプションに容量を追加する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,30 +23,23 @@ search.appverid:
 - MET150
 description: Microsoft 365 サブスクリプションのファイル ストレージを追加および削減する方法について説明します。 追加のファイル ストレージを使用すると、SharePoint Online と OneDrive にさらに多くのコンテンツを格納できます。
 ms.date: ''
-ms.openlocfilehash: b170924f40d517cb6bbdf8635ad3e163eadc8643
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d65677b9c078026343410b53acd48932258cb4b1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911928"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576963"
 ---
-# <a name="add-storage-space-for-your-subscription"></a>サブスクリプションの記憶域を追加する
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
+# <a name="add-storage-space-for-your-subscription"></a>サブスクリプションに容量を追加する
 
 SharePoint Online サイト コレクションの容量が不足し始めた場合、ご使用のプランが対象に含まれている場合は、サブスクリプションに容量を追加できます。 使用可能なアドオンの一覧に Office **365 Extra File Storage** が表示されない場合は、プランが対象外となります。 詳細については、「自分のプラン [が適格か」を参照してください。](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> ボリューム ライセンスまたは CSP を使用してサブスクリプションを購入した場合、Microsoft から直接組織Office **365 Extra File Storage** を購入することはできません。 サポートについては、担当者またはパートナーにお問い合わせください。
+> ボリューム ライセンスまたは CSP を使用してサブスクリプションを購入した場合、Microsoft から直接組織Office **365 Extra File Storage** を購入することはできません。 サポートが必要な場合は、担当者またはパートナーにお問い合わせください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-この記事のタスクを実行するには、グローバル管理者または SharePoint 管理者である必要があります。 詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事のタスクを実行するには、グローバル管理者または SharePoint 管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="view-available-storage"></a>使用可能なストレージの表示
 
@@ -111,5 +104,5 @@ Office 365 Extra File Storage は、次のサブスクリプションでご利�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[サイトストレージの制限を管理](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) する (記事)\
+[サイトストレージの制限を管理](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) する (記事)\
 [OneDrive ユーザーの既定の記憶域を設定する](/onedrive/set-default-storage-space)(記事)

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906039"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570376"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -33,7 +33,7 @@ MCCA を使用すると、コンプライアンス 管理の改善アクショ�
 
 MCCA を理解するもう 1 つのリソースは [、GitHub の README の指示にアクセスする方法です](https://github.com/OfficeDev/MCCA#overview)。 このページでは、前提条件に関する詳細な情報を提供し、完全なインストール手順を示します。 このページにアクセスするには、GitHub アカウントは必要ない。
 
-**可用性**: MCCA は、Office 365 ライセンスと Microsoft 365 ライセンスと米国政府機関コミュニティ (GCC) 中程度および GCC 高い顧客を持つすべての組織で利用できます。DOD のお客様にサービスを拡大する計画が進行中です。
+**可用性**: MCCA は、Office 365 および Microsoft 365 ライセンスと米国政府機関コミュニティ (GCC) モデレート、GCC High、および国防総省 (DoD) のお客様のすべての組織で利用できます。
 
 ## <a name="install-mcca-and-run-a-report"></a>MCCA をインストールしてレポートを実行する
 
@@ -104,16 +104,16 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 1 | アジア太平洋 |
   | 2 | オーストラリア |
   | 3 | カナダ |
-  | 4  | ヨーロッパ (フランスを除く) / 中東 / アフリカ |
-  | 5  | フランス |
-  | 6  | インド |
-  | 7  | 日本 |
-  | 8  | 韓国 |
-  | 9  | 北アメリカ (カナダを除く) |
-  | 10   | 南アメリカ |
+  | 4 | ヨーロッパ (フランスを除く) / 中東 / アフリカ |
+  | 5 | フランス |
+  | 6 | インド |
+  | 7 | 日本 |
+  | 8 | 韓国 |
+  | 9 | 北アメリカ (カナダを除く) |
+  | 10 | 南アメリカ |
   | 11 | 南アフリカ |
   | 12  | スイス |
-  | 13  | アラブ首長国連邦 |
+  | 13 | アラブ首長国連邦 |
   | 14  | 英国 |
 
 
@@ -129,11 +129,11 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
 ![MCCA - ロール](../media/compliance-manager-mcca-roles.png "MCCA の役割")
 
 例外:
-1. [Exchange Online で IRM を使用する] セクション以外では、IP のレポートを生成することはできません。
+1. [Exchange Online で IRM を使用する] セクション以外では、ユーザーは IP のレポートを生成することはできません。
 2. ユーザーは、[Exchange Online で IRM を使用する] セクション以外の IP のレポートを生成できます。
 3. ユーザーは、[O365 で通信コンプライアンスを有効にする] セクションとは別に、IP のレポートを生成できます。
 4. ユーザーは、[365 で監査を有効にする] セクション以外の IP Office生成できない。
-5. ユーザーは、[365 で監査を有効にする] セクションとは別に、IP Office生成できます。
+5. ユーザーは、[365 で監査を有効にする] セクション以外の IP Office生成できます。
 
 #### <a name="solutions-summary-section"></a>[ソリューションの概要] セクション
 

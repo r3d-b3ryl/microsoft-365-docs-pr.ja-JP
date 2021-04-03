@@ -14,26 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Microsoft 365 管理センターでサード パーティ製アプリをアクティブ化および管理する方法について説明します。
-ms.openlocfilehash: f560b23871fc6d6ecb319a5704453f2400cb9982
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911412"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576915"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサード パーティ製アプリのサブスクリプションを管理する
 
 新しい Microsoft 365 管理センターでは、サード パーティ製アプリのライセンスと課金を管理できます。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
-
 プレビュー モードを有効にした状態で、Microsoft 365 管理センターでサード パーティ製アプリのライセンスと課金を管理できます。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
-
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>サービスとしてのソフトウェア アプリを取得する方法
 

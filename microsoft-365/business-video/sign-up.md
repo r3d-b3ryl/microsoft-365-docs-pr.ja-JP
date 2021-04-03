@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium サブスクリプションにサインアップする
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium にサインアップする方法について説明します。
-ms.openlocfilehash: 5faf34aa1cf5afb86ee935766bd91b4c3fc92d77
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: dcc6fd42b2aab073e027135cb5e939867b2bdc9d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421823"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578617"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>Microsoft 365 Business Premium サブスクリプションにサインアップする
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 Microsoft 365 Business Premium (以前は Microsoft 365 Business と呼ばば) にサインアップするには、次の手順に従います。
 

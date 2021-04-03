@@ -1,6 +1,6 @@
 ---
 title: Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する
-description: certs/wifi/lan
+description: 証明書の要件と Wi-Fi 接続
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -11,12 +11,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9f4490711c1ea051afe9d8efb081a2f7a141f8ba
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: a59add6f6821824f189703b3dedd35fda313ec31
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909120"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574585"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する  
  
@@ -86,3 +87,14 @@ LAN プロファイルをエクスポートしたら、次の手順に従って 
 4. 企業 VPN ごとにプロファイルを作成します (Intune を使用して VPN 接続を追加するには [、「Windows 10 と Windows Holographic デバイスの設定」を参照してください](/intune/vpn-settings-windows-10))。
 5. Microsoft Managed Desktop Admin ポータルを使用して Microsoft Managed Desktop IT 運用に「証明書の展開」または「Wi-Fi プロファイルの展開」というタイトルのサポート要求を送信し、構成プロファイルを確認し、"モダン Workplace デバイス - テスト" に展開します。 Microsoft Managed Desktop IT Operations は、管理ポータルのサポート要求を介して要求が完了した時間を知らせします。 
  
+## <a name="steps-to-get-ready"></a>準備の手順
+
+1. 「Microsoft [Managed Desktop の前提条件」を参照してください](prerequisites.md)。
+2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
+3. [ゲスト アカウントの前提条件](guest-accounts.md)
+4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
+5. [Microsoft Managed Desktop 用の証明書とネットワーク プロファイルを準備](certs-wifi-lan.md) する (この記事)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+7. [Microsoft マネージド デスクトップのアプリ](apps.md)
+8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
+9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md) 

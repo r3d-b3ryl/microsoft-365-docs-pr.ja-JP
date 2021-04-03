@@ -2,8 +2,8 @@
 title: 安全な添付ファイルを管理する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 安全な添付ファイルを管理する方法について学習します。
-ms.openlocfilehash: 89297ec7daeca4b20c01baa9f9554d4574d9df6a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 9afbdef2c7b400cf0bee5ae1e1ac3a9de6588cb8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422281"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578713"
 ---
 # <a name="manage-safe-attachments"></a>安全な添付ファイルを管理する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422281"
 
 Microsoft Defender for Office 365 (以前は Microsoft 365 ATP、または Advanced Threat Protection) は、Outlook、OneDrive、SharePoint、Teams に悪意のあるコンテンツを含むファイルからビジネスを保護するのに役立ちます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. 管理センターに移動 [し、[セットアップ](https://admin.microsoft.com)] を **選択します**。
 1. 下にスクロールして **高度な脅威からの保護を強化します**。 [表示 **] 、[****管理] の順** に選択し **、[ATP の安全な添付ファイル] を選択します**。

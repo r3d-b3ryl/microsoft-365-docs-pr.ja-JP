@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ユーザーのアクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザー履歴を管理し、ダッシュボード ビューをフィルター処理します。
-ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499031"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570559"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -30,9 +30,9 @@ ms.locfileid: "51499031"
 
 ## <a name="who-can-access-compliance-manager"></a>コンプライアンス マネージャーにアクセスできるユーザー
 
-コンプライアンス マネージャーは、Office 365 ライセンスと Microsoft 365 ライセンスを持つ組織、および米国政府機関コミュニティ クラウド (GCC) モデレートおよび GCC High のお客様に利用できます。 評価の可用性と管理機能は、ライセンス契約によって異なっています。  [サービスの説明の詳細を表示します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+コンプライアンス マネージャーは、Office 365 ライセンスと Microsoft 365 ライセンスを持つ組織、および米国政府機関コミュニティ クラウド (GCC) モデレート、GCC High、および国防総省 (DoD) のお客様が利用できます。 評価の可用性と管理機能は、ライセンス契約によって異なっています。  [サービスの説明の詳細を表示します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 組織の Microsoft 365 グローバル管理者が、コンプライアンス マネージャーにアクセスする最初のユーザーになる可能性があります。 コンプライアンス マネージャーに初めてアクセスする場合は、グローバル管理者がサインインし、以下に示すユーザーアクセス許可を設定することをお勧めします。
 
@@ -52,7 +52,7 @@ ms.locfileid: "51499031"
 組織のグローバル管理者の役割を持つユーザーは、コンプライアンス マネージャーのユーザーアクセス許可を設定できます。 アクセス許可は、Office 365 セキュリティ &コンプライアンス センターと Azure Active Directory (Azure Active Directory) で設定AD。
 
 > [!NOTE]
-> 米国政府機関 (GCC) の高い環境のお客様は、Azure AD のコンプライアンス マネージャーに対するユーザーのアクセス許可と役割のみを設定AD。 Azure の詳細な手順ADロールの種類の定義については、以下を参照してください。
+> 米国政府機関コミュニティ (GCC) High 環境と国防総省 (DoD) 環境のお客様は、Azure AD のコンプライアンス マネージャーのユーザーアクセス許可と役割のみを設定できます。 Azure の詳細な手順ADロールの種類の定義については、以下を参照してください。
 
 コンプライアンス センターでアクセス許可を設定し、Office 365 セキュリティ &役割を割り当てるには、次の手順を実行します。
 
@@ -100,7 +100,7 @@ Office 365 または Microsoft 365 サブスクリプションを持つ Azure AD
 Microsoft 365 コンプライアンス センターのコンプライアンス マネージャー設定を使用すると、改善アクションの自動テストを有効または無効にできます。 また、この設定を使用すると、改善アクションに関連付けられたユーザーのデータ (改善アクションを別のユーザーに再割り当てする機能など) を管理できます。  コンプライアンス マネージャーの設定にアクセスできるのは、グローバル管理者またはコンプライアンス マネージャー管理者の役割を持つユーザーのみです。
 
 > [!NOTE]
-> これらの環境では Secure Score を使用できないので、GCC High 環境のユーザーは自動テスト機能を使用できません。 GCC High のお客様は、改善アクションを手動で実装してテストする必要があります。
+> これらの環境では Secure Score を使用できないので、自動テスト機能は GCC High 環境および DoD 環境では使用できません。 GCC High および DoD のお客様は、改善アクションを手動で実装してテストする必要があります。
 
 ### <a name="set-up-automated-testing"></a>自動テストのセットアップ
 

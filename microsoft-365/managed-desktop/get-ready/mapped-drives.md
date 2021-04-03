@@ -1,6 +1,6 @@
 ---
 title: Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
-description: 確認するための重要な手順
+description: マップされたドライブ上のデータにユーザーがアクセスできる重要な手順
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: f770f5083fe9193660b03e7971b09a127f2dae16
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922910"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574561"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
 
@@ -36,7 +37,7 @@ ms.locfileid: "50922910"
 - これらのファイル共有場所へのアクセスを必要とするユーザー グループ 
 - 割り当てる必要がある特定のドライブ文字 (必要な場合)
 
-次に例を示します。
+例:
 
 | ドライブ文字 | UNC パス | ユーザー グループ |
 |--------------|----------|------------|
@@ -52,4 +53,16 @@ ms.locfileid: "50922910"
 2. "マップされたドライブの展開" というタイトルのサポート要求を送信し、必要なすべてのファイル共有の詳細を提供します。  
 3. Microsoft Managed Desktop IT Operations は、要求が完了したら、サポート要求の更新プログラムを使用して助言します。 最初は、この構成はテスト展開グループ内のデバイスにのみ展開されます。  
 4. Microsoft Managed Desktop IT Operations によって展開された構成が期待通り動作するかどうかをテストして確認する必要があります。 テストが完了したら、同じサポート要求の詳細にある [ディスカッション] タブを使用して返信し、Microsoft Managed Desktop IT Operations に通知します。  
-5. その後、Microsoft Managed Desktop IT Operations チームが構成を他の展開グループに展開します。
+5. その後、Microsoft Managed Desktop IT Operations チームが構成を他の展開グループに展開します。 
+
+## <a name="steps-to-get-ready"></a>準備の手順
+
+1. 「Microsoft [Managed Desktop の前提条件」を参照してください](prerequisites.md)。
+2. [準備状況評価ツールを使用します](readiness-assessment-tool.md)。
+3. [ゲスト アカウントの前提条件](guest-accounts.md)
+4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
+5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+7. [Microsoft マネージド デスクトップのアプリ](apps.md)
+8. [Microsoft Managed Desktop 用にマップされたドライブを準備する](mapped-drives.md) (この記事)
+9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーは、国内、地域、業界の規制、標準、および法律に合わせて評価を構築するテンプレートを提供します。
-ms.openlocfilehash: b83ad63de34217ac7c469dc784ca85644f6a5e3d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8cdeb6da09a42ad0331690b843ab4f039a5c2bf6
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922821"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570569"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
 
@@ -60,7 +60,7 @@ ms.locfileid: "50922821"
 - NIST 800-53 Rev.4
 
 > [!NOTE]
-> 米国政府機関コミュニティ (GCC) 中程度および GCC 高い顧客の場合、上記のテンプレートに加えて、サイバーセキュリティ成熟度モデル認定 (CMMC) レベル 1 ~ 5 のテンプレートが含まれています。
+> 米国政府コミュニティ (GCC) モデレート、GCC High、および国防総省 (DoD) のお客様向け: 上記のテンプレートに加えて、サイバーセキュリティ成熟度モデル認定 (CMMC) レベル 1 ~ 5 のテンプレートが含まれています。
 
 ## <a name="premium-templates"></a>プレミアム テンプレート
 

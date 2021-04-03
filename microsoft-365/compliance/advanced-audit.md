@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 0a77a5c54ce328a3966a952fc8fef08553f42462
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923487"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574656"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -153,7 +153,7 @@ SearchQueryInitiatedSharePoint 監査レコードを検索するには、コン�
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
-> (特定の E5 ユーザーによって実行された) SearchQueryInitiatedExchange イベントが監査ログの検索結果に含まれるように、Exchange Online PowerShell で次のコマンドを実行する必要があります: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
+> (特定の E5 ユーザーによって実行された) SearchQueryInitiatedSharePoint イベントが監査ログの検索結果に含まれるように、Exchange Online PowerShell で次のコマンドを実行する必要があります: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
 複数地域環境では、ユーザーのメールボックスが配置されているフォレストで **Set-Mailbox** コマンドを実行する必要があります。 ユーザーのメールボックスの場所を特定するには、次のコマンドを実行します: `Get-Mailbox <user identity> | FL MailboxLocations`。
 以前に、ユーザーのメールボックスが配置されているフォレストとは異なるフォレストで `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` コマンドが実行された場合は、ユーザーのメールボックスから (`Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` を実行して) SearchQueryInitiated 値を削除し、その後でユーザーのメールボックスが配置されているフォレスト内のユーザーのメールボックスに追加する必要があります。
 

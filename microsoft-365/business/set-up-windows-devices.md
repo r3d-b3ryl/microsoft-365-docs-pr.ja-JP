@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium ユーザー向け Windows デバイスのセットアップ
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,27 +26,27 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: Microsoft 365 Business Premium ユーザー向け Windows 10 Pro を実行している Windows デバイスをセットアップして、一元管理とセキュリティ制御を有効にする方法について説明します。
-ms.openlocfilehash: b1877d83f113a2ba23d0db374967e0afcd7fe067
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Microsoft 365 Business Premium ユーザー向け Windows 10 Pro を実行している Windows デバイスをセットアップし、集中管理とセキュリティ制御を有効にする方法について説明します。
+ms.openlocfilehash: 9c9ffe5bd74d9e9877a87309757c481576ee89d2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928726"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578129"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 Business Premium ユーザー向け Windows デバイスのセットアップ
 
-## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 Business Premium ユーザー向け Windows デバイスをセットアップするための前提条件
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 Business Premium ユーザー用の Windows デバイスをセットアップするための前提条件
 
 Microsoft 365 Business Premium ユーザー向け Windows デバイスをセットアップする前に、すべての Windows デバイスで Windows 10 Pro バージョン 1703 (Creators Update) が実行されている必要があります。 Windows 10 Pro は、Windows 10 Business を展開する前提条件です。これは、Windows 10 Pro を補完し、Microsoft 365 Business Premium の一元的な管理とセキュリティ制御を可能にする一連のクラウド サービスとデバイス管理機能です。
   
-Windows 7 Pro、Windows 8 Pro、または Windows 8.1 Pro を実行している Windows デバイスがある場合、Microsoft 365 Business Premium サブスクリプションは Windows 10 のアップグレードを受ける権利を持っています。
+Windows 7 Pro、Windows 8 Pro、または Windows 8.1 Pro を実行している Windows デバイスがある場合は、Microsoft 365 Business Premium サブスクリプションで Windows 10 アップグレードを受ける権利があります。
   
 Windows デバイスを Windows 10 Pro Creators Update にアップグレードする方法については、「[Windows デバイスを Windows Pro Creators Update にアップグレードする](upgrade-to-windows-pro-creators-update.md)」の手順に従います。
   
-「 [デバイスが Azure AD に](#verify-the-device-is-connected-to-azure-ad) 接続されていることを確認する」を参照して、アップグレードが完了したのか確認してください。
+「 [デバイスが Azure](#verify-the-device-is-connected-to-azure-ad) AD接続されていることを確認する」を参照し、アップグレードが正常に動作したと確認してください。
 
-Windows から Microsoft 365 への接続に関する短いビデオをご覧ください。<br><br>
+Windows を Microsoft 365 に接続する方法に関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
@@ -54,7 +54,7 @@ Windows から Microsoft 365 への接続に関する短いビデオをご覧く
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Windows 10 デバイスを組織の Azure AD に参加させる
 
-組織内のすべての Windows デバイスが Windows 10 Pro Creators Update にアップグレードされている場合、または既に Windows 10 Pro Creators Update を実行している場合は、これらのデバイスを組織の Azure Active Directory に参加できます。 デバイスが参加すると、Microsoft 365 Business Premium サブスクリプションの一部である Windows 10 Business に自動的にアップグレードされます。
+組織内のすべての Windows デバイスが Windows 10 Pro Creators Update にアップグレードされている場合、または Windows 10 Pro Creators Update を既に実行している場合は、これらのデバイスを組織の Azure Active Directory に参加できます。 デバイスに参加すると、Microsoft 365 Business Premium サブスクリプションの一部である Windows 10 Business に自動的にアップグレードされます。
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>新しい、または新たにアップグレードした Windows 10 Pro デバイスについて
 
@@ -64,7 +64,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
     
     ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. ここで、[組織の **セットアップ] を** 選択し、Microsoft 365 Business Premium のユーザー名とパスワードを入力します。 
+2. ここでは、[組織 **のセットアップ] を選択** し、Microsoft 365 Business Premium のユーザー名とパスワードを入力します。 
     
 3. Windows 10 デバイスのセットアップを完了します。
     
@@ -96,27 +96,27 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
    ![Enter your work or school email on the Let's get you signed in page](../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. On the **Make sure this is your organization** page, verify that the information is correct, and choose **Join**.
+6. [組織 **の確認] ページで** 、情報が正しいか確認し、[参加] を **選択します**。
   
-   [ **すべて完了しました。** page,100,000 
+   [ **すべて完了しました。** ページ, chosse **Done**.
   
-   ![On the Make sure this is your organization screen, choose Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![[組織の構成を確認する] 画面で、[参加] を選択します。](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-ファイルを OneDrive for Business にアップロードした場合、それらの同期を取り消します。 サード パーティ製のツールを使用してプロファイルとファイルを移行した場合は、それらのツールを新しいプロファイルと同期します。
+ファイルを OneDrive for Business にアップロードした場合、それらの同期を取り消します。 サード パーティ製のツールを使用してプロファイルとファイルを移行した場合は、新しいプロファイルに同期することもできます。
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>デバイスが Azure AD に接続されていることを確認する
 
-To verify your sync status, on the **Access work or school** page in **Settings,** select the **Connected to** _ area to expose \<organization name\> the buttons **Info** and **Disconnect**. [ **情報] を** 選択して同期状態を取得します。 
+同期の状態を確認するには、[設定] の [仕事または学校にアクセスする] ページで、[_ _ に接続] 領域を選択して、[情報] と [切断] ボタン \<organization name\> **を表示****します**。 [ **情報] を** 選択して同期の状態を取得します。 
   
-[同期 **の状態] ページ** で、[ **同期** ] を選択して最新のモバイル デバイス管理ポリシーを PC に適用します。
+[同期の **状態] ページで** 、[同期] **を** 選択して、最新のモバイル デバイス管理ポリシーを PC に取得します。
   
-Microsoft 365 Business Premium アカウントの使用を開始するには、Windows **の** [スタート] ボタンに移動し、現在のアカウントの画像を右クリックして、アカウントを **切り替えます**。 自分の組織のメール アドレスとパスワードを使用してサインインします。
+Microsoft 365 Business Premium アカウントの使用を開始するには **、[Windows** スタート] ボタンに移動し、現在のアカウントの画像を右クリックし、[アカウントの切り替え] **をクリックします**。 自分の組織のメール アドレスとパスワードを使用してサインインします。
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
-## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>PC が Windows 10 Business にアップグレードされたのを確認する
+## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>PC が Windows 10 Business にアップグレードされているのを確認する
 
-Azure AD参加している Windows 10 デバイスが、Microsoft 365 Business Premium サブスクリプションの一部として Windows 10 Business にアップグレードされます。
+Microsoft 365 Business Premium サブスクリプションAD、Windows 10 デバイスに参加している Azure 10 デバイスが Windows 10 Business にアップグレードされるのを確認します。
   
 1. Go to **Settings** \> **System** \> **About**.
     
@@ -126,7 +126,7 @@ Azure AD参加している Windows 10 デバイスが、Microsoft 365 Business P
   
 ## <a name="next-steps"></a>次の手順
 
-モバイル デバイスをセットアップするには [、「Microsoft 365 Business Premium](set-up-mobile-devices.md)ユーザー向けモバイル デバイスのセットアップ」、デバイス保護ポリシーまたはアプリ保護ポリシーを設定するには [、「Microsoft 365 for business](manage.md)の管理」を参照してください。
+モバイル デバイスをセットアップするには [、「Microsoft 365 Business Premium](set-up-mobile-devices.md)ユーザー向けモバイル デバイスのセットアップ」、デバイス保護ポリシーまたはアプリ保護ポリシーを設定するには、「ビジネス向け [Microsoft 365](manage.md)の管理」を参照してください。
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップと使用の詳細
 

@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium サブスクリプションのセットアップ
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium をセットアップする方法について説明します。
-ms.openlocfilehash: f8c40cc5bf5ef062826abc7ca04935950895ef43
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2e6cdf3c2280b527571d62f5e3535dcea6ad3523
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422017"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578653"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. Microsoft 365 管理センターにサインインし、[セットアップに移動]  **を選択します**。 セットアップ ウィザードが起動します。
 2.  [アプリ  **のインストールOffice]**  ページで、コンピューターにアプリをOfficeするか、[続行] を選択  **します**。

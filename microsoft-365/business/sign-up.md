@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium にサインアップする
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium に含まれる内容について説明し、Microsoft 365 Business Premium へのサインアップに関する詳細なガイダンスを参照してください。
-ms.openlocfilehash: 54a8e92ccced24f446e73a96f75e4aa1531a95aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4aa1ae9ea48863434c960da69e41ffb2d3a0a89
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912512"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578109"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium にサインアップする
 
@@ -42,7 +42,7 @@ Microsoft 365 Business Premium を取得するには、次の 3 つの方法が�
 - **Microsoft パートナーの場合**: パートナーの場合は、「Microsoft パートナー センターから [Microsoft 365 Business Premium を取得する」を参照してください](get-microsoft-365-business.md)。
 - **Microsoft ストアでヘルプを表示する**: Microsoft [ストアにアクセスします](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft ストアは、プランに関する質問、ビジネス ニーズに合ったプランの購入、セットアップの完了に役立ちます。
 
-**何か違う必要がありますか?** 次の操作を実行できます。
+**何か違う必要がありますか?** 以下のことを実行できます。
 - [365 プランOffice Microsoft 365 Business Premium にアップグレードします](migrate-to-microsoft-365-business.md)。
 - [Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2102309) 365 Business Premium の無料試用版を 1 か月間受け取る。
 - [機能が少ないプランが必要な場合は、Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkID=510935) にサインアップします。 各ビジネス プランに含まれる内容は[、products.office.com。](https://go.microsoft.com/fwlink/?linkid=2109397)

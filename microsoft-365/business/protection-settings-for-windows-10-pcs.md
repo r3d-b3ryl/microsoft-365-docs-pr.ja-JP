@@ -2,8 +2,8 @@
 title: Windows 10 PC のデバイス保護設定を編集または作成する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Windows 10 デバイスをセキュリティで保護するための Microsoft 365 for business で利用可能な設定について説明します。
-ms.openlocfilehash: db310731ef996500de61535b5b9f99e240ec75ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912804"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578229"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Windows 10 PC のデバイス保護設定を編集または作成する
 
@@ -70,7 +70,7 @@ Microsoft 365 Business Premium を使用して Windows 10 デバイスをセキ�
   
 |||
 |:-----|:-----|
-|Setting  <br/> |説明  <br/> |
+|設定  <br/> |説明  <br/> |
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |
 |デバイスに対する攻撃を回避するルールを使用する  <br/> |オンにすると、攻撃の回避により、デバイス感染のためにマルウェアが通常使用するアクションやアプリをブロックすることができます。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[攻撃の回避](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)」を参照してください。  <br/> |

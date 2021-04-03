@@ -2,8 +2,8 @@
 title: Outlook をメール用にセットアップする
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 メール用に Outlook を設定する方法について説明します。
-ms.openlocfilehash: b27f59e50190a4f355ff1f4c346161b8efc4219e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 9dc0ed41df4aaadee060e0c7606600ba5512df09
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421993"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578641"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Outlook for Microsoft 365 for business email のセットアップ 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 アプリをインストールOffice、Outlook&#39;、予定表、連絡先の使用を開始する必要があります。 ここでは&#39;方法を示します。
 

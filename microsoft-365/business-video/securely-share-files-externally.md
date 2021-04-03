@@ -2,8 +2,8 @@
 title: ビジネス外でファイルを安全に共有する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス ファイルを外部で安全に共有する方法について説明します。
-ms.openlocfilehash: e023ccc48d4489d7d50ea688c9e5b16c1b9a3758
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 317267b4051b4e250cf53f2fbc375b9277c7d000
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422089"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578677"
 ---
 # <a name="securely-share-files-externally"></a>ファイルを外部と安全に共有する
 
@@ -33,7 +33,7 @@ ms.locfileid: "50422089"
 
 Microsoft 365 for business では、組織内のユーザーとファイルを共有するのは簡単ですが、組織外のユーザーと共有する必要がある場合があります。 顧客とファイルを安全に共有するには、安全なリンクを送信できます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. SharePoint サイトのドキュメント ライブラリの上部にある [新規]をクリックし、[フォルダー] を **選択します**。
 1. フォルダーに名前を付け、[作成] を **クリックします**。

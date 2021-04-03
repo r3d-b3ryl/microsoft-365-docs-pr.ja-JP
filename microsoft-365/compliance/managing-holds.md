@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 高度な電子情報開示ケースに関連するコンテンツを保持するために、保管担当者とそのデータ ソースにホールドを配置する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926375"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570591"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Advanced eDiscovery の保留を管理する
 
@@ -76,8 +76,6 @@ ms.locfileid: "50926375"
       > [**ユーザー、グループ、またはチームの選択**] をクリックして保留にするメールボックスを指定するときに、表示されるメールボックス ピッカーは空の状態です。これは、パフォーマンスを向上させるための仕様です。このリストにユーザーを追加するには、検索ボックスに名前 (3 文字以上) を入力します。
 
    1. **SharePoint サイト**- [サイトの選択 **]** をクリックし、[サイトの選択] を再度クリックして、保留に設定する SharePoint サイトと OneDrive for Business サイトを指定します。 保留にするサイトごとに URL を入力します。 Microsoft 365 グループまたは Microsoft チームの SharePoint サイトの URL を追加することもできます。 [選択 **] を** クリックし、[完了] を **クリックします**。
-    
-      Microsoft  365 グループと Microsoft Teams を保留にするためのヒントについては、「FAQ」セクションを参照してください。
 
       > [!NOTE]
       > ユーザーの OneDrive アカウントの URL には、ユーザー プリンシパル名 (UPN) (たとえば) が含まれます `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` 。 まれに、ユーザーの UPN が変更された場合、OneDrive URL も新しい UPN を組み込むに変更されます。 ユーザーの OneDrive アカウントが非保管ホールドの一部であり、その UPN が変更されている場合は、保持を更新し、新しい OneDrive URL をポイントする必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](/onedrive/upn-changes)」をご覧ください。
@@ -118,7 +116,7 @@ ms.locfileid: "50926375"
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Microsoft Teams と 365 グループOffice保留
 
-Microsoft Teams は、365 グループOffice基に構築されています。 したがって、高度な電子情報開示で保留に設定する方法は非常に似ています。 
+Microsoft Teams は、365 グループOffice基に構築されています。 したがって、高度な電子情報開示で保留に設定する方法は非常に似ています。
 
 - **追加の Microsoft 365 グループまたは Microsoft Teams サイトをカストディアンにマップする方法また、Microsoft 365 グループと Microsoft Teams に非保管ホールドを設定する方法について説明します。** Microsoft Teams は、Microsoft 365 グループ上に構築されています。 したがって、電子情報開示ケースで保留に設定する方法は非常に似ています。 Microsoft 365 グループと Microsoft Teams を保留にするときに、次の点に気を付ける必要があります。
   - Microsoft 365 グループと Microsoft Teams にあるコンテンツを保留にするには、グループまたはチームに関連付けられているメールボックスと SharePoint サイトを指定する必要があります。

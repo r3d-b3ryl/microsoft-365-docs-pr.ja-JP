@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 for business のポリシーが会社のデータを保護する方法
+title: Microsoft 365 for business のポリシーが企業データを保護する方法
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,21 +26,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: ユーザーの個人用デバイスで会社のデータを保護するには、特定のデバイスおよびセキュリティグループを対象としたポリシーを使用します。
-ms.openlocfilehash: 18bf29d82b8020d31fec681b2114af86f52cad9c
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: ユーザーの個人用デバイス上の会社のデータを保護するには、特定のデバイスとセキュリティ グループを対象とするポリシーを使用します。
+ms.openlocfilehash: 5c6a4b85b080c6c1afaf6ac5bec046f2a539ee20
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471161"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578429"
 ---
-# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 for business のポリシーが会社のデータを保護する方法
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 for business のポリシーが企業データを保護する方法
 
 この記事は、Microsoft 365 Business Premium に適用されます。
 
 作成するポリシーはデバイスの種類に固有のものであり、特定のユーザーのグループに適用できます。つまり、エグゼクティブに適用されるポリシーと、他の全員に適用される別のポリシーを作成できるということです。
   
-Android と iOS デバイスでは、Office アプリと Office アプリによって使用される作業ファイルを保護する、アプリケーション ポリシーを追加または編集できます。 Windows 10 デバイスをさらに制御することができます。したがって、アプリケーションポリシーには、暗号化や、ネットワークおよびクラウドの場所の保護など、より多くの設定を含めることができます。 ウイルス対策および自動更新などの設定を強制する、Windows 10 デバイスのデバイス ポリシーを作成することもできます。 セットアップ時に作成したポリシーをそのまま使用することをお勧めしますが、ポリシーを微調整したり、さらに追加したりする場合は、次の記事を参照してください。
+Android と iOS デバイスでは、Office アプリと Office アプリによって使用される作業ファイルを保護する、アプリケーション ポリシーを追加または編集できます。 Windows 10 デバイスはもう少し制御できます。そのため、アプリケーション ポリシーには、ネットワークやクラウドの場所の暗号化や保護など、より多くの設定を含めできます。 ウイルス対策および自動更新などの設定を強制する、Windows 10 デバイスのデバイス ポリシーを作成することもできます。 セットアップ中に作成したポリシーに固執することをお勧めしますが、ポリシーの微調整や追加を行う場合は、次の記事を参照してください。
   
 [Android または iOS デバイスのアプリの構成を設定する](app-protection-settings-for-android-and-ios.md)
   

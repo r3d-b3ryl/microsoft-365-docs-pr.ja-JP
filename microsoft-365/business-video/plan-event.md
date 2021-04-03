@@ -2,8 +2,8 @@
 title: Microsoft Planner でイベントを計画する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft planner でイベントを計画する方法について説明します。
-ms.openlocfilehash: 11453ae83f636e20cd67cc7a4202e8d6995e09a1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a1fe282b7edc9d52db643b47a5dc15a214588e10
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422305"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578725"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Microsoft Planner を使用してイベントを計画する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c8a41e1a-c30d-4adb-ab32-6eac922d0ec0?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 Microsoft Planner を使用して、製品の立ち上げの追跡など、イベントを計画します。
 

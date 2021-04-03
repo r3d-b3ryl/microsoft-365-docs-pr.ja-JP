@@ -2,8 +2,8 @@
 title: 電話で多要素サインインを設定する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 電話で多要素認証を設定する方法について学習します。
-ms.openlocfilehash: a41f8b99dfbfc25af0815450b42cb83884e3246e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4a4041777b055b03e2ab5efede72eca56afdf589
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422053"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578665"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>電話で多要素認証を設定する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422053"
 
 多要素認証は、ビジネスのセキュリティを強化します。 次の手順に従ってセットアップします。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. サインインすると、[必要な情報] プロンプト [https://office.com](https://office.com) **が表示** されます。 **[次へ]** を選択します。
 1. [ **手順 1] で**、[ **認証電話]** ドロップダウン リストから **[モバイル** アプリ] を選択します。

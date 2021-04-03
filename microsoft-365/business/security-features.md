@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium のセキュリティとコンプライアンス機能
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: reference
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Pc、電話、タブレットのデータ保護に役立つ Microsoft 365 Business Premium に備わるセキュリティ機能について説明します。
-ms.openlocfilehash: f04a998c74128edac306167617e073c412fce2ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bca20a7a03a93f7ac2bf8752476046f0db43cc70
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198413"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578149"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium のセキュリティとコンプライアンス機能
 
@@ -104,7 +104,7 @@ Microsoft 365 Business Premium サブスクリプションには、コンプラ�
     
     Exchange Online Archivingライセンスを使用すると、継続的なデータ バックアップを使用してメッセージを簡単にアーカイブできます。 後で検出または復元に必要な場合に備え、削除済みアイテムを含むすべてのユーザーの電子メールが保存されます。 さらに、さまざまな保持ポリシーを使用して、訴訟ホールド、電子情報開示、またはコンプライアンス要件を満たすために電子メール データを保持できます。
     
-- **[機密ラベル](../compliance/sensitivity-labels.md)**
+- **[秘密度ラベル](../compliance/sensitivity-labels.md)**
 
    Microsoft 365 Business Premium には [、Azure Information Protection Plan 1 のすべての機能が含まれています](https://go.microsoft.com/fwlink/p/?linkid=871407)。 この計画では、電子メールやドキュメント内の機密情報へのアクセスを制御できる機密ラベルを作成できます。"転送しない" や "コピーしない" などのコントロールを使用します。 機密情報を "Confidential" として分類し、機密情報をビジネスの外部および内部で共有する方法を指定できます。 エンタープライズ レベルの暗号化は、電子メールやドキュメントに簡単に適用して、情報を非公開にできます。 また、アプリの Azure Information Protection クライアント アドインをインストールOfficeすることもできます。 詳細については、「[Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。 [感度] ラベルの場合は、次 **のAzInfoProtection_UL.exe。**
 

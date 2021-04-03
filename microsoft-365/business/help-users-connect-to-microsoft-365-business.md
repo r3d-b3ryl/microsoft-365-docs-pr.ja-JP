@@ -1,9 +1,9 @@
 ---
-title: ユーザーが Microsoft 365 Business Premium に接続できるようにする
+title: ユーザーが Microsoft 365 Business Premium に接続するのに役立ちます
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,22 +27,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: ビジネスクラウドスイートのセットアップが完了し、既定のデバイスポリシーが設定されており、適用できる状態になった後に予想される処理について説明します。
-ms.openlocfilehash: d3aad182f7e233f239b35e35c032e8ca09c57769
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Business Cloud Suite のセットアップが完了し、既定のデバイス ポリシーが設定され、適用する準備が整った後に期待する内容について説明します。
+ms.openlocfilehash: d3e47247197f2688388ed50057b16fde53e7e830
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400924"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578449"
 ---
-# <a name="help-users-connect-to-microsoft-365-business-premium"></a>ユーザーが Microsoft 365 Business Premium に接続できるようにする
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>ユーザーが Microsoft 365 Business Premium に接続するのに役立ちます
 
-セットアップが完了すると、既定のデバイスポリシーが設定され、適用できる状態になります。 モバイルデバイスでは、ユーザーが Office アプリをダウンロードします。 ユーザーが職場または学校のアカウントでサインインすると、ポリシーが適用されます。 一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。 ユーザーがセットアップおよび接続できるようにするには、以下のトピックを参照して共有してください。
+セットアップが完了すると、既定のデバイス ポリシーが設定され、適用する準備が整います。 モバイル デバイスでは、ユーザーはアプリOfficeダウンロードします。 次に、ユーザーが自分の仕事または学校のアカウントでサインインするときにポリシーが適用されます。 一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。 ユーザーがセットアップと接続を行うのに役立つ次のトピックを参照して共有します。
   
-[Microsoft 365 Business Premium ユーザーの Windows デバイスをセットアップする](set-up-windows-devices.md)
+[Microsoft 365 Business Premium ユーザー向け Windows デバイスのセットアップ](set-up-windows-devices.md)
   
 [ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する](add-autopilot-devices-and-profile.md)
   
-[Microsoft 365 Business Premium ユーザーのモバイルデバイスのセットアップ](set-up-mobile-devices.md)
+[Microsoft 365 Business Premium ユーザー向けモバイル デバイスのセットアップ](set-up-mobile-devices.md)
   
 

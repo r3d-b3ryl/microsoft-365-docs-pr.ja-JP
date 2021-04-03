@@ -2,8 +2,8 @@
 title: AutoPilot デバイスの作成と編集
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Microsoft 365 Business Premium で AutoPilot を使用してデバイスをアップロードする方法について説明します。 プロファイルは、デバイスまたはデバイスのグループに割り当てできます。
-ms.openlocfilehash: 910abb98b94b749177b04cd12c766f82d348e379
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 506ff44e3cb6656b19174e82688b5af141ea2b79
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913400"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578489"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>AutoPilot デバイスを作成し編集する
 

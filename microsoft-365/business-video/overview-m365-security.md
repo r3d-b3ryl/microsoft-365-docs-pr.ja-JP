@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium Security の概要
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向け Microsoft 365 に含まれるセキュリティ機能について説明します。
-ms.openlocfilehash: e21dc1a9f27f9b5896ace2f09ebb936b8189fdd3
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5274d54fb39cfbeee8ce9abd7fb738543aaacc53
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422329"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578737"
 ---
 # <a name="overview-of-security"></a>セキュリティの概要
 
@@ -55,7 +55,7 @@ Office 365 Message Encryption は、暗号化機能とアクセス権機能を�
 
 Exchange Online Archivingは、Microsoft Exchange または Exchange Online と組み合わせ、保留やデータの冗長性などの高度なアーカイブ機能を提供するクラウドベースのアーカイブ ソリューションです。 保持ポリシーを使用すると、組織が電子メールや他の通信に関連する負債を減らすのに役立ちます。 会社が訴訟に関連する通信を保持する必要がある場合は、In-Place保持と訴訟ホールドを使用して、関連する電子メールを保持できます。
 
-## <a name="device-management"></a>デバイス管理
+## <a name="device-management"></a>デバイスの管理
 
 Microsoft 365 Business Premium の高度なデバイス管理機能を使用すると、登録されたデバイスでユーザーが実行できる操作を監視および制御できます。 これらの機能には、条件付きアクセス、モバイル デバイス管理 (MDM)、BitLocker、自動更新が含まれます。
 
