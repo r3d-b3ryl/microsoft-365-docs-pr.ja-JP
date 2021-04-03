@@ -4,70 +4,70 @@ summary: ビジネス向け Microsoft 365 をセットアップして管理す�
 brand: m365
 metadata:
   title: Microsoft 365 Small Business のトレーニング
-  description: Microsoft 365 管理センターで Microsoft 365 をセットアップおよび管理します。
+  description: Microsoft 365 管理センターで Microsoft 365 を設定および管理します。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
-  author: Sirkkuw
-  ms.author: sirkkuw
+  author: twerner
+  ms.author: twernermsft
   ms.date: 12/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 2a874179c9a3da778ff0757d9a883af44a462141
-  ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+  ms.openlocfilehash: 0c9ba8560c2ee64b8e0da4d14afe869006bd6ed8
+  ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/11/2021
-  ms.locfileid: "49794162"
+  ms.lasthandoff: 04/02/2021
+  ms.locfileid: "51580572"
 productDirectory:
   items:
-  - title: 開始する
+  - title: 作業の開始
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: ビジネス向け Microsoft 365 への移行を計画します。
     url: what-is-microsoft-365.md
   - title: 一般法人向け Microsoft 365 をセットアップする
     imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
-    summary: ドメインの追加、ユーザーの追加、セキュリティ ポリシーの設定を行います。
+    summary: ドメインの追加、ユーザーの追加、セキュリティ ポリシーのセットアップを行います。
     url: sign-up.md
-  - title: コンピューターをセットアップする
+  - title: コンピューターのセットアップ
     imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
-    summary: ファイルOffice、電子メールのセットアップ、ファイルの移行を行います。
+    summary: ファイルOfficeインストール、メールのセットアップ、ファイルの移行を行います。
     url: upgrade.md
   - title: モバイル デバイスをセットアップする
     imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
     summary: モバイル Officeアプリをインストールします。
     url: work-from-anywhere.md
-  - title: 他のユーザーと共同作業を行う
+  - title: 他のユーザーとの共同作業
     imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
-    summary: Teams で従業員や顧客と一緒に作業します。
+    summary: Teams の従業員と顧客と一緒に作業します。
     url: collab-outlook-teams.md
   - title: ファイルの保存と共有
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
     summary: ファイルを安全に保存し、どこからでもアクセスできます。
     url: overview-file-sharing.md
-  - title: Business Voice のセットアップ
+  - title: ビジネスボイスのセットアップ
     imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
-    summary: 電話サービスと会議をセットアップします。
+    summary: 電話サービスと会議を設定します。
     url: business-voice.md
-  - title: ビジネス アプリをセットアップする
+  - title: ビジネス アプリのセットアップ
     imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
-    summary: Bookings、Lists、Tasks... をセットアップして学習します。
+    summary: Bookings、Lists、Tasks..について設定して説明します。
     url: overview-bookings.md
-  - title: サブスクリプションを管理する
+  - title: サブスクリプションの管理
     imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
-    summary: ユーザーの管理、パスワードのリセット、請求書の表示など。
+    summary: ユーザーを管理し、パスワードをリセットし、請求書を表示します。
     url: what-is-admin.md
-  - title: デバイスを管理する
+  - title: デバイスの管理
     imageSrc: https://docs.microsoft.com/office/media/icons/devices-2-blue.svg
-    summary: 個人用デバイスと仕事用デバイスのポリシーを設定します。
+    summary: 個人用デバイスと作業デバイスのポリシーを設定します。
     url: secure-win-10-pro-devices.md
   - title: ビジネスをセキュリティで保護する
     imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
-    summary: セキュリティとコンプライアンスの機能を設定します。
+    summary: セキュリティ機能とコンプライアンス機能を設定します。
     url: overview-m365-security.md
   - title: サポートを受ける
     imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
-    summary: Microsoft 365 for business に関するヘルプを表示します。
+    summary: Microsoft 365 for business に関するヘルプを参照してください。
     url: find-help-answers.md
 additionalContent:
   sections:
