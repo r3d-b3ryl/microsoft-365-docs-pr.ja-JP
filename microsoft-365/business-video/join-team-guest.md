@@ -2,8 +2,8 @@
 title: ゲストとしてチームに参加
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,31 +20,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams でゲストとしてチームに参加する方法について説明します。
-ms.openlocfilehash: 51f287361877cb0b427a38c48683c064bda99126
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603962"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578857"
 ---
-# <a name="join-a-team-as-a-guest"></a><span data-ttu-id="ff268-103">ゲストとしてチームに参加</span><span class="sxs-lookup"><span data-stu-id="ff268-103">Join a team as a guest</span></span>
+# <a name="join-a-team-as-a-guest"></a><span data-ttu-id="02639-103">ゲストとしてチームに参加</span><span class="sxs-lookup"><span data-stu-id="02639-103">Join a team as a guest</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys?autoplay=false]
 
-## <a name="try-it"></a><span data-ttu-id="ff268-104">演習</span><span class="sxs-lookup"><span data-stu-id="ff268-104">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="02639-104">お試しください!</span><span class="sxs-lookup"><span data-stu-id="02639-104">Try it!</span></span>
 
-<span data-ttu-id="ff268-105">チームに参加するための Microsoft Teams の招待を受け取った場合は、招待を受け入れる手順が 2 つ含まれます。</span><span class="sxs-lookup"><span data-stu-id="ff268-105">If you receive a Microsoft Teams invitation to join a team, there are a couple of steps to accept the invitation.</span></span>
+<span data-ttu-id="02639-105">チームに参加するための Microsoft Teams の招待を受け取った場合は、招待を受け入れる手順が 2 つ含まれます。</span><span class="sxs-lookup"><span data-stu-id="02639-105">If you receive a Microsoft Teams invitation to join a team, there are a couple of steps to accept the invitation.</span></span>
 
-1. <span data-ttu-id="ff268-106">電子メールの招待を開き  **、[Microsoft Teams を開く] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="ff268-106">Open the email invitation, and select  **Open Microsoft Teams**.</span></span> <span data-ttu-id="ff268-107">招待が表示されていない場合は、迷惑メールまたはスパム フォルダーを確認します。</span><span class="sxs-lookup"><span data-stu-id="ff268-107">If you don't see the invitation, check your junk or spam folder.</span></span>
-  1. <span data-ttu-id="ff268-108">メール アドレスが Microsoft アカウントの作成に使用されていない場合は、作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ff268-108">If your email address has not previously been used to create a Microsoft account, you'll need to create one.</span></span>
+1. <span data-ttu-id="02639-106">電子メールの招待を開き  **、[Microsoft Teams を開く] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="02639-106">Open the email invitation, and select  **Open Microsoft Teams**.</span></span> <span data-ttu-id="02639-107">招待が表示されていない場合は、迷惑メールまたはスパム フォルダーを確認します。</span><span class="sxs-lookup"><span data-stu-id="02639-107">If you don't see the invitation, check your junk or spam folder.</span></span>
+  1. <span data-ttu-id="02639-108">メール アドレスが Microsoft アカウントの作成に使用されていない場合は、作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="02639-108">If your email address has not previously been used to create a Microsoft account, you'll need to create one.</span></span>
 
-     <span data-ttu-id="ff268-109">[アカウントの  **作成] ダイアログで**  、[次へ]  **を選択** し、パスワードを作成し、[次へ] を  **選択します**。</span><span class="sxs-lookup"><span data-stu-id="ff268-109">On the  **Create account**  dialog, select  **Next** , create a password, and select  **Next**.</span></span>
-  1. <span data-ttu-id="ff268-110">電子メール アドレスを確認するには、確認メールを開き、セキュリティ コードをコピーします。</span><span class="sxs-lookup"><span data-stu-id="ff268-110">To verify your email address, open the verification email, and copy the security code.</span></span>
-  1. <span data-ttu-id="ff268-111">[メールの確認]ダイアログでセキュリティ コードを入力し、[次へ] を選択し、[表示される文字を入力する] 行に CAPTCHA を入力し、[次へ] を選択し、[同意する]**を\*\*\*\*選択します**。 </span><span class="sxs-lookup"><span data-stu-id="ff268-111">Enter your security code in the  **Verify email**  dialog, select  **Next** , enter the CAPTCHA in the  **Enter the characters you see**  line, select  **Next** , then  **Accept**.</span></span>
-1. <span data-ttu-id="ff268-112">Microsoft Teams アプリをダウンロードしない場合は、[代わりに Web アプリ  **を使用する] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="ff268-112">If you don't want to download the Microsoft Teams app, select  **Use the web app instead**.</span></span>
-1. <span data-ttu-id="ff268-113">Teams Web アプリでは、投稿を表示または返信したり、独自の投稿を作成したりして、[ファイル] タブを選択してチーム ドキュメントを表示または編集できます。</span><span class="sxs-lookup"><span data-stu-id="ff268-113">In the Teams web app you can view or reply to posts, or create your own posts, and select  **Files**  tab to view or edit team documents.</span></span>
+     <span data-ttu-id="02639-109">[アカウントの  **作成] ダイアログで**  、[次へ]  **を選択** し、パスワードを作成し、[次へ] を  **選択します**。</span><span class="sxs-lookup"><span data-stu-id="02639-109">On the  **Create account**  dialog, select  **Next** , create a password, and select  **Next**.</span></span>
+  1. <span data-ttu-id="02639-110">電子メール アドレスを確認するには、確認メールを開き、セキュリティ コードをコピーします。</span><span class="sxs-lookup"><span data-stu-id="02639-110">To verify your email address, open the verification email, and copy the security code.</span></span>
+  1. <span data-ttu-id="02639-111">[メールの確認]ダイアログでセキュリティ コードを入力し、[次へ] を選択し、[表示される文字を入力する] 行に CAPTCHA を入力し、[次へ] を選択し、[同意する]**を\*\*\*\*選択します**。 </span><span class="sxs-lookup"><span data-stu-id="02639-111">Enter your security code in the  **Verify email**  dialog, select  **Next** , enter the CAPTCHA in the  **Enter the characters you see**  line, select  **Next** , then  **Accept**.</span></span>
+1. <span data-ttu-id="02639-112">Microsoft Teams アプリをダウンロードしない場合は、[代わりに Web アプリ  **を使用する] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="02639-112">If you don't want to download the Microsoft Teams app, select  **Use the web app instead**.</span></span>
+1. <span data-ttu-id="02639-113">Teams Web アプリでは、投稿を表示または返信したり、独自の投稿を作成したりして、[ファイル] タブを選択してチーム ドキュメントを表示または編集できます。</span><span class="sxs-lookup"><span data-stu-id="02639-113">In the Teams web app you can view or reply to posts, or create your own posts, and select  **Files**  tab to view or edit team documents.</span></span>
 
-    <span data-ttu-id="ff268-114">組織で Teams アプリを既に使用している場合は、チームにゲストとして参加する方が簡単です。</span><span class="sxs-lookup"><span data-stu-id="ff268-114">If you already use the Teams app in your organization joining a team as a guest is a lot simpler.</span></span>
+    <span data-ttu-id="02639-114">組織で Teams アプリを既に使用している場合は、チームにゲストとして参加する方が簡単です。</span><span class="sxs-lookup"><span data-stu-id="02639-114">If you already use the Teams app in your organization joining a team as a guest is a lot simpler.</span></span>
 
-1. <span data-ttu-id="ff268-115">Microsoft Teams アプリを開き、[はい]  **を**  選択して招待されたチームに切り替えます。</span><span class="sxs-lookup"><span data-stu-id="ff268-115">Just open Microsoft Teams app and choose  **Yes**  to switch to the team you are invited to.</span></span>  <span data-ttu-id="ff268-116">これで、Teams でプロジェクトで共同作業を行います。</span><span class="sxs-lookup"><span data-stu-id="ff268-116">Now you can collaborate on the project in Teams.</span></span>
-2. <span data-ttu-id="ff268-117">会社のチームに切り替える場合は、[組織] ドロップダウン  **から選択します**  。</span><span class="sxs-lookup"><span data-stu-id="ff268-117">To switch back to your company's team, select it from the  **Organization**  drop-down.</span></span>
+1. <span data-ttu-id="02639-115">Microsoft Teams アプリを開き、[はい]  **を**  選択して招待されたチームに切り替えます。</span><span class="sxs-lookup"><span data-stu-id="02639-115">Just open Microsoft Teams app and choose  **Yes**  to switch to the team you are invited to.</span></span>  <span data-ttu-id="02639-116">これで、Teams でプロジェクトで共同作業を行います。</span><span class="sxs-lookup"><span data-stu-id="02639-116">Now you can collaborate on the project in Teams.</span></span>
+2. <span data-ttu-id="02639-117">会社のチームに切り替える場合は、[組織] ドロップダウン  **から選択します**  。</span><span class="sxs-lookup"><span data-stu-id="02639-117">To switch back to your company's team, select it from the  **Organization**  drop-down.</span></span>

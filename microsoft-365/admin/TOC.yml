@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 概要
+    - name: 作業の開始
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -241,6 +241,8 @@
           href: manage/pin-apps-to-app-launcher.md
         - name: 最新のアプリへとユーザーをアップグレードする
           href: setup/upgrade-users-to-latest-office-client.md
+        - name: Microsoft 365 Apps を Microsoft 365 管理センターでテストして展開する
+          href: manage/test-and-deploy-microsoft-365-apps.md
         - name: アドインの一元展開
           items:
             - name: アドインの一元展開の要件

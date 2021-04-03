@@ -90,7 +90,7 @@
           items:
             - name: 概要
               href: defender/get-started.md
-            - name: Microsoft Threat Protection を有効にする
+            - name: Microsoft 365 Defender を有効にする
               href: defender/m365d-enable.md
             - name: サポートされているサービスを展開する
               href: defender/deploy-supported-services.md
@@ -140,6 +140,12 @@
                       href: defender/investigate-users.md
                 - name: メール通知を取得する
                   href: defender/get-incident-notifications.md
+            - name: Microsoft 脅威エキスパート
+              items:
+                - name: Microsoft 脅威エキスパートの概要
+                  href: mtp/microsoft-threat-experts.md
+                - name: Microsoft 脅威エキスパートの機能を構成および管理する
+                  href: mtp/configure-microsoft-threat-experts.md
             - name: 自動調査および対応
               items:
                 - name: 自動調査および対応の概要
@@ -422,7 +428,7 @@
             - name: 既定のセキュリティ保護
               href: ./office-365-security/secure-by-default.md
             - name: 詳細については、「Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーを構成する」を参照してください。
-              href: ./office-365-security/configure-atp-anti-phishing-policies.md
+              href: ./office-365-security/configure-mdo-anti-phishing-policies.md
             - name: マルウェア対策ポリシーを構成する
               href: ./office-365-security/configure-anti-malware-policies.md
             - name: スパム対策ポリシーの構成
