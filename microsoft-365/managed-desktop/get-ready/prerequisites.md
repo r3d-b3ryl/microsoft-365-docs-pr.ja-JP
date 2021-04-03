@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5b5fb7185bb696bb6daae0a67a209cf3f7e77655
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: fcfddadf13e000156fa5431cc30bc72f4f3537e2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924566"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581048"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの前提条件
 
@@ -47,7 +48,7 @@ Microsoft Managed Desktop では、機能するために特定のライセンス
 - Microsoft Intune 
 - Windows 10 Enterprise  
 - Microsoft Defender for Endpoint
-- エンタープライズ向け Microsoft  365 アプリ
+- Microsoft 365 Apps for enterprise
 - Microsoft Teams
 - [SharePoint Online プラン 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
 - [Exchange Online プラン 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans) 
@@ -55,3 +56,15 @@ Microsoft Managed Desktop では、機能するために特定のライセンス
 
 > [!TIP]
 > Microsoft アカウント マネージャーは、現在のライセンスとサービス プランを確認し、重複を避けながら、必要な追加のライセンスまたはサービス プランを取得するための最も効率的なパスを見つけるのに役立ちます。
+
+## <a name="steps-to-get-ready"></a>準備の手順
+
+1. 「Microsoft [Managed Desktop の前提条件」を参照してください](prerequisites.md)。 (この記事)
+2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
+3. [ゲスト アカウントの前提条件](guest-accounts.md)
+4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
+5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+7. [Microsoft マネージド デスクトップのアプリ](apps.md)
+8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
+9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)

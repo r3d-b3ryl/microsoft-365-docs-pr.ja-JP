@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 管理センターでのネットワーク接続の概要 (プレビュー)
-ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408407"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581132"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センターのネットワーク接続 (プレビュー)
 
@@ -205,6 +205,10 @@ Microsoft 365 サービス フロント ドアは、Microsoft のグローバル
 ### <a name="what-is-an-internet-egress-location"></a>インターネットの出力場所とは何ですか?
 
 インターネット出力の場所は、ネットワーク トラフィックがエンタープライズ ネットワークから出てインターネットに接続する場所です。 これは、ネットワーク アドレス変換 (NAT) デバイスを持ち、通常はインターネット サービス プロバイダー (ISP) に接続する場所として識別されます。 場所とインターネットの出力場所との距離が長い場合は、WAN バックホールが重要な可能性があります。
+
+### <a name="what-license-is-needed-for-this-capability"></a>この機能に必要なライセンス
+
+Microsoft 365 管理センターへのアクセスを提供するライセンスが必要です。
 
 ## <a name="related-topics"></a>関連項目
 

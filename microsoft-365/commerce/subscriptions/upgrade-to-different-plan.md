@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 別のプランにアップグレードする方法について学習します。
-ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164451"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580980"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 ビジネスが変更された場合や、その他の機能が必要な場合は、プランをアップグレードできます。 これを行う最も簡単な方法は、管理センターの **[アップグレード** ] タブを使用する方法です。 ただし、[アップグレード] **タブの** 使用は、すべての状況でサポートされるわけではありません。 場合によっては、手動でプランを変更できる場合があります。
 

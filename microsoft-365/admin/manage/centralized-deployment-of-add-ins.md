@@ -2,8 +2,8 @@
 title: 組織でアドインの集中展開が機能するかどうかを判断する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしているか確認し、集中展開を使用してアドインをOfficeできます。
-ms.openlocfilehash: c9f2879e989085042758cc1c5385bea45427e7ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1516a10932158ba137f58900e0c19c5fea3bd119
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915460"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580956"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -43,7 +43,7 @@ ms.locfileid: "50915460"
 
 すべてのユーザーのクライアントにアドインが表示されるには、最大 24 時間かかる場合があります。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 アドインの一元展開では、ユーザーが Microsoft 365 Enterprise SKU E3/E5/F3 または Business SKU: Business Basic、Business Standard、Business Premium (および組織 ID を使用して Office にサインイン) を使用し、Exchange Online およびアクティブな Exchange Online メールボックスを使用している必要があります。 サブスクリプション ディレクトリが Azure Active Directory に存在するか、Azure Active Directory にフェデレーションされている必要があります。
 以下に示すアプリケーションと Exchange に関するOffice要件を確認したり、集中展開互換性チェッカー [を使用することができます](#centralized-deployment-compatibility-checker)。

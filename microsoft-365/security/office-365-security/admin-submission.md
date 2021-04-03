@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターの Submits ポータルを使用して、疑わしいメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、ファイルを Microsoft に送信してスキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499329"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581072"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -55,7 +55,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 - メッセージとファイルを Microsoft に送信するには、次のいずれかの役割グループのメンバーである必要があります。
 
-  - **組織の管理** または [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の **セキュリティ管理者**。
+  - **セキュリティ センター** の **組織の** 管理 [またはセキュリティ &リーダー](permissions-in-the-security-and-compliance-center.md)です。
 
   - Exchange **Online の**[組織の管理](/Exchange/permissions-exo/permissions-exo#role-groups)。
 

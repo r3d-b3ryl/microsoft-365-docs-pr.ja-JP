@@ -2,8 +2,8 @@
 title: 未成年者とストアからアドインを取得する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 未成年者の個人データを管理する一般データ保護規則 (GDPR) の規制について学ぶ。
-ms.openlocfilehash: c49ea719bc85166cc8082200eb833273b0ab5835
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e7f53a5a6b64f29f5029f0080fef44439c926edb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915256"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580920"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>未成年者とストアからアドインを取得する
 
@@ -48,7 +48,7 @@ ms.locfileid: "50915256"
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|Web 用 Office  <br/> |該当なし  <br/> |
+|Webアプリ上の Office  <br/> |該当なし  <br/> |
    
  **Outlook の場合**: 
   

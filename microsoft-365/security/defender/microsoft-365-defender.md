@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f789053e0922ee81155a243bbaa7b3ab5b0f6d87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064659"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581084"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender は、エンドポイント、ID、メール、および�
 
 この対話型ガイドでは、Microsoft 365 Defender を使用して組織を保護する方法について説明します。 Microsoft 365 Defender がセキュリティ リスクの検出、組織への攻撃の調査、有害なアクティビティの自動防止に役立つ方法を説明します。
 
-> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+[対話型ガイドを確認する](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 
@@ -92,7 +92,7 @@ Microsoft 365 Defender のクロスプロダクト機能は次のとおりです
 - **製品間の脅威** の検出 - セキュリティ チームは、独自の組織の知識を活用して、さまざまな保護製品によって収集された生データに対して独自のカスタム クエリを作成することで、侵害の兆候を探し出します。 Microsoft 365 Defender は、エンドポイント全体で 30 日間の過去の生信号とアラート データへのクエリ ベースのアクセスを提供し、365 データのOffice提供します。 
 
 
-## <a name="get-started"></a>概要
+## <a name="get-started"></a>作業の開始
 Microsoft 365 Defender のライセンス要件を満たしてから、Microsoft 365 セキュリティ センター (microsoft 365 セキュリティ センター) でサービスを有効[security.microsoft.com。](https://security.microsoft.com) 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b490159d12bebdb95b6f168671393f8939da33be
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ee6fd4bd8d60f828bb474fc80cb987f4f94edcbe
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068675"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581096"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターの概要
 
@@ -33,7 +33,7 @@ ms.locfileid: "51068675"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
 
 Microsoft Defender セキュリティ センターは、Microsoft Defender for Endpoint の機能にアクセスできるポータルです。
 
@@ -46,7 +46,7 @@ Microsoft Defender セキュリティ センターは、Microsoft Defender for E
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Microsoft Defender for Endpoint 対話型ガイド
 この対話型ガイドでは、Microsoft Defender for Endpoint を使用して組織に対する脅威を調査する方法について説明します。 Microsoft Defender for Endpoint が、疑わしいアクティビティの特定、組織のリスクの調査、脅威の修復に役立つ方法について説明します。
 
-> [!VIDEO https://aka.ms/MSDE-IG]
+[対話型ガイドを確認する](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>このセクションの内容
 

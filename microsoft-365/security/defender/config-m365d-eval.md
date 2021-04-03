@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199231"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580968"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>試用版ラボまたはパイロット環境用に Microsoft 365 Defender の柱を構成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "51199231"
 
 Microsoft 365 Defender 試用版ラボまたはパイロット環境を作成し、それを展開するには、次の 3 段階のプロセスを実行します。
 
-|[![フェーズ 1: 準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[フェーズ 1: 準備](prepare-m365d-eval.md) |[![フェーズ 2: セットアップ](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[フェーズ 2: セットアップ](setup-m365deval.md) |![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png)<br/>フェーズ 3: オンボード | [![パイロットに戻る](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[パイロット プレイブックに戻る](m365d-pilot.md) |
+|[![フェーズ 1: 準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[フェーズ 1: 準備](prepare-m365d-eval.md) |[![フェーズ 2: 設定](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[フェーズ 2: 設定](setup-m365deval.md) |![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png)<br/>フェーズ 3: オンボード | [![パイロットに戻る](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[パイロット プレイブックに戻る](m365d-pilot.md) |
 |--|--|--|--|
 || |*お前はここにいる!* | |
 
@@ -285,8 +285,7 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 
 お疲れさまでした。 Microsoft 365 Defender 試用版ラボまたはパイロット環境を作成しました。 これで、Microsoft 365 Defender ユーザー インターフェイスについて理解できます。 次の Microsoft 365 Defender 対話型ガイドから学習できる情報を参照し、各ダッシュボードを毎日のセキュリティ操作タスクに使用する方法について説明します。
 
-
->[!VIDEO https://aka.ms/MTP-Interactive-Guide]
+[対話型ガイドを確認する](https://aka.ms/MTP-Interactive-Guide)
 
 次に、攻撃をシミュレートし、クロス製品機能がエンドポイントに対するファイルレス攻撃を検出、作成、および自動的に応答する方法を確認できます。
 
