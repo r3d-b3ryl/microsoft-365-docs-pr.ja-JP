@@ -2,8 +2,8 @@
 title: ユーザーを別のサブスクリプションに移動する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーを別のサブスクリプションに移動する方法について学習します。
-ms.openlocfilehash: 158201eb4bcdf7e4b7451c1811dcc68692f341ff
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4f26e890e7c3c008c807dfed75829562dbebd087
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422965"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578979"
 ---
 # <a name="move-users-to-different-subscriptions"></a>ユーザーを別のサブスクリプションに移動する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422965"
 
 ユーザーが役割を変更すると、現在の Microsoft 365 Business Premium サブスクリプションでは利用できない機能が必要な場合があります。 この場合、これらの機能を含む新しいサブスクリプションを追加し、必要なユーザーにライセンスを割り当てできます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 ### <a name="add-a-new-subscription"></a>新しいサブスクリプションを追加する
 

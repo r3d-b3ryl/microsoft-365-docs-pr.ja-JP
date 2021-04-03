@@ -2,8 +2,8 @@
 title: ゲストとしてチームに参加
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams でゲストとしてチームに参加する方法について説明します。
-ms.openlocfilehash: 51f287361877cb0b427a38c48683c064bda99126
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603962"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578857"
 ---
 # <a name="join-a-team-as-a-guest"></a>ゲストとしてチームに参加
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 チームに参加するための Microsoft Teams の招待を受け取った場合は、招待を受け入れる手順が 2 つ含まれます。
 

@@ -2,8 +2,8 @@
 title: Android に Office アプリをインストールする
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Outlook などのアプリを Android デバイスにOfficeする方法について説明します。
-ms.openlocfilehash: 8e4abb38ad56d9bfe8f5e3a580dd1075cd16a564
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d474f8abed48844bbe8e92be62ede6da5056fe9a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422545"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578881"
 ---
 # <a name="install-outlook-and-office-apps-on-android-devices"></a>Android デバイスに Outlook Officeアプリをインストールする
 
@@ -33,7 +33,7 @@ ms.locfileid: "50422545"
 
 Android デバイスが Microsoft 365 Business Premium によって管理されている場合、アプリを初めてインストールする場合は、追加のセキュリティを設定するように求Officeがあります。 
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. デバイスで、[Google Play ストア] を選択します。
 2. インストールするOfficeアプリを検索します。 この&#39;Outlook を使用します。

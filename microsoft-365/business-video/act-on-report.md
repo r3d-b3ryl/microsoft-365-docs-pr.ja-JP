@@ -2,8 +2,8 @@
 title: 使用状況レポートの確認
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用状況レポートの情報を使用する方法について学習します。
-ms.openlocfilehash: 579d47515f57dfc3211a6e76a6d791999f6b5efc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 1c499b62f14aeec392d15939c8e6d70c9bad7ced
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423191"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579015"
 ---
 # <a name="review-usage-reports-in-microsoft-365"></a>Microsoft 365 での使用状況レポートの確認
 
@@ -36,7 +36,7 @@ ms.locfileid: "50423191"
 
 管理センター [では、](https://admin.microsoft.com)利用可能なすべてのレポートを確認できます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. [レポート] **に移動し**、[利用状況] **に移動します**。 レポートを選択して、レポートの詳細を検索します。 [アクティブ ユーザー] レポートには、ビジネスのユーザーが最も使用しているサービスが表示されます。
 1. 例として、先に進んで OneDrive レポートを確認します。 ここでは、アカウントを持つユーザーの数を確認できます。合計ファイルとアクティブ ファイルの数、および使用されるストレージも表示できます。 他のすべてのレポートを表示するには、ドロップダウン メニューに移動します。

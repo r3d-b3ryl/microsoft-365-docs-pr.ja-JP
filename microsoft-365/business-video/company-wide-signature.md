@@ -2,8 +2,8 @@
 title: 全社的な署名を作成する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 会社全体の電子メール署名を作成する方法について学習します。
-ms.openlocfilehash: 22676ef6464e15e63efbe77d6dd6e88b4e494896
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a1a85826be2a799b56cf3d06b6416778470a116f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422809"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578953"
 ---
 # <a name="create-a-company-wide-email-signature"></a>会社全体のメール署名を作成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422809"
 
 会社全体の電子メール署名は、組織内のユーザーが送信したメールごとに表示されます。 会社の連絡先情報や法的免責事項など、重要な詳細を表示するために使用できます。 
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. Microsoft 365 管理センターで **、[Exchange] を選択します**。
 1. [メール **フロー] を選択します**。

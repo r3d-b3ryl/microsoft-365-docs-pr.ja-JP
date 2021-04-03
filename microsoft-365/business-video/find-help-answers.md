@@ -2,8 +2,8 @@
 title: 回答とヘルプを見つける
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium の管理者向けヘルプを見つける方法について説明します。
-ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d16f3ece9782a33c3377e4a6bc2a93b29d54c1a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913636"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578905"
 ---
 # <a name="find-answers-and-help-for-admins"></a>管理者向け回答とヘルプの検索
 
@@ -34,7 +34,7 @@ ms.locfileid: "50913636"
 
 Microsoft 365 Business Premium に関する質問やサポートが必要な場合は、ヘルプを受ける方法がいくつかあります。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. 作業資格情報を使用 [office.com](https://office.com) サインインして、[管理者] を **選択します**。
 1. 管理センターのホーム ページで、[管理者向 **けトレーニング** ] を選択して、利用可能なトレーニング オプションを確認します。

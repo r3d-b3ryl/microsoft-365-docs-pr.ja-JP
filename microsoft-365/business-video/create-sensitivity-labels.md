@@ -2,8 +2,8 @@
 title: 秘密度ラベルを作成する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 感度ラベルを作成および管理する方法について学習します。
-ms.openlocfilehash: e1e7d030065ab5146056d36f396eb5ddd44f360e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 997b05ba549d3dc57e1793585331dfcfae1e277b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422785"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578941"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>感度ラベルを使用してドキュメントを保護する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422785"
 
 機密ラベルを使用すると、ビジネスに敏感なコンテンツを分類して保護できます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. 管理センター [で、[](https://admin.microsoft.com)コンプライアンス管理センター **] を** 選択します。
 1. [分類 **]** を選択し、[ **感度] ラベルを選択します**。
@@ -42,7 +42,7 @@ ms.locfileid: "50422785"
 1. [ラベル名 **]、[****ツールヒント]、および**[説明] を **入力します**。 **[次へ]** を選択します。
 1. [暗号化] を **オンにします**。 アクセス許可を割り当てる場合、ユーザーによるコンテンツへのアクセスを期限切れにするかどうか、オフライン アクセスを許可するかどうかを選択します。
 1. **[アクセス許可の割り当て**] を選択し、[ **これらの電子メール アドレスまたはドメインを追加する] を選択します**。
-1. メール アドレスまたはドメイン名 (メール アドレスなど) をContoso.org。  [ **追加] を** 選択し、追加するメール アドレスまたはドメインごとに繰り返します。
+1. メール アドレスまたはドメイン名 (メール アドレスなど) を Contoso.org。  [ **追加] を** 選択し、追加するメール アドレスまたはドメインごとに繰り返します。
 1. [プリセット **またはカスタムからアクセス許可を選択する] を選択します**。
 1. ドロップダウン リストを使用して、レビューアーやビューアーなどの事前設定されたアクセス許可を選択するか、[カスタムアクセス許可 **] を** 選択します。 [カスタム] を **選択した場合** は、一覧からアクセス許可を選択します。 [保存 **] 、[****保存] 、および**[次へ] の順に **選択します**。
 1. [コンテンツ **のマーキング] を** オンにし、使用するマーキングを選択します。

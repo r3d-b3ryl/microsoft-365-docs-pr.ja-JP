@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0311450386f3b7c9f950276340901daacc06b2a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+audience: Admin
+ms.openlocfilehash: caf9274284548a179e088131930ae832c098b521
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453940"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579400"
 ---
 # <a name="readiness-assessment-tools"></a>準備状況評価ツール
 
@@ -89,3 +90,15 @@ Microsoft Managed Desktop に登録する際に、可能な限りスムーズな
 ## <a name="after-enrollment"></a>登録後
 
 Microsoft Managed Desktop への登録が完了したら、Intune と Azure の特定の設定に戻って調整ADしてください。 詳細については、「登録後に [設定を調整する」を参照してください](../get-started/conditional-access.md)。
+
+## <a name="steps-to-get-ready"></a>準備の手順
+
+1. [Microsoft Managed Desktop の前提条件を確認します](prerequisites.md)。
+2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。 (この記事)
+3. [ゲスト アカウントの前提条件](guest-accounts.md)
+4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
+5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+7. [Microsoft マネージド デスクトップのアプリ](apps.md)
+8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
+9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)

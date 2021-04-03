@@ -1,7 +1,7 @@
 ---
 title: 管理センターの Microsoft 365 レポート - Microsoft Teams ユーザー アクティビティ
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams のユーザー アクティビティ レポートを取得し、組織内の Teams アクティビティに関する洞察を得る方法について説明します。
-ms.openlocfilehash: 41403bcda1d1485798ac5eefe8f3386a314aea1b
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: a4f8cd995d1559da3846fbb38cc5a9441358da72
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406183"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579616"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理センターの Microsoft 365 レポート - Microsoft Teams ユーザー アクティビティ
 
-Microsoft 365 **レポート ダッシュボードには** 、組織内の製品全体のアクティビティの概要が表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft Teams ユーザー アクティビティ レポートで、組織内の Microsoft Teams アクティビティに関する分析情報を取得します。
+Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft Teams ユーザー アクティビティ レポートで、組織内の Microsoft Teams アクティビティに関する分析情報を取得します。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル リーダー、またはレポート リーダーである必要があります。または Exchange、SharePoint、Teams Service、Teams Communications、Skype for Business の管理者である必要があります。  
+> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Microsoft Teams ユーザー アクティビティ レポートを取得する手順
 
@@ -55,7 +55,7 @@ Microsoft 365 **レポート ダッシュボードには** 、組織内の製品
 |**測定基準**|**定義**|
 |ユーザー名  <br/> |ユーザーの電子メール アドレス。 実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。   <br/> |
 |チャネル メッセージ   <br/> |ユーザーが指定した期間中にチーム チャットに投稿した一意のメッセージの数。  <br/> |
-|チャット メッセージ   <br/> |ユーザーが指定した期間中にプライベート チャットに投稿した一意のメッセージの数。  <br/> |
+|チャットのメッセージ   <br/> |ユーザーが指定した期間中にプライベート チャットに投稿した一意のメッセージの数。  <br/> |
 |会議の合計   <br/> |指定した期間中にユーザーが参加したオンライン会議の数。  <br/> |
 |1:1 通話   <br/> | 指定した期間中にユーザーが参加した 1:1 呼び出しの数。  <br/> |
 |最終アクティビティ日 (UTC)  <br/> |ユーザーが Microsoft Teams アクティビティに参加した最後の日付。<br/> |

@@ -2,8 +2,8 @@
 title: メールのインポートとリダイレクト
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向け Microsoft 365 にメールをインポートする方法について説明します。
-ms.openlocfilehash: 1339582fea07b276bf264d2635ea85a38b26c1c2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 7049642d071ff6b16a489a89c9355b35667a1e58
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422557"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578893"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 にメールをインポートする 
 
@@ -33,7 +33,7 @@ ms.locfileid: "50422557"
 
 Microsoft 365 にサインアップした後も、古いアカウントにメールが送信される場合があります。たとえば、Gmail アカウントまたは Outlook アカウントを仕事用に使用した場合などです。 新しいアカウントと古いアカウントの両方を引き続き使用するか、古いアカウントから新しいアカウントにデータをインポートできます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 ### <a name="step-1-export-your-old-email"></a>手順 1: 古いメールをエクスポートします。
 

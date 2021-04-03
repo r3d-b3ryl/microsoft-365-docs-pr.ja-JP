@@ -2,8 +2,8 @@
 title: ドメインの追加
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: サブスクリプションに別のドメインを追加する方法について学習します。
-ms.openlocfilehash: fef3dc06f270b79cc7f9e729b39727c9116b923d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8899cb9667ffa080746ca9173b61897f9c5db399
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423085"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579003"
 ---
 # <a name="add-another-domain"></a>別のドメインを追加する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50423085"
 
 会社が異なる目的で複数のドメイン名を必要とする場合があります。 たとえば、顧客が既に会社名を使用し、通信が届かないので、会社名の別のスペルを追加できます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. Microsoft 365 管理センターで、[セットアップ] を **選択します**。
 1. [カスタム **ドメインの設定を取得する] で、[** 表示] を **選択します**。

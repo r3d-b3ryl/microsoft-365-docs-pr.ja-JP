@@ -1,9 +1,9 @@
 ---
-title: 管理センターの Microsoft 365 レポート-Yammer デバイスの使用状況レポート
+title: 管理センターの Microsoft 365 レポート - Yammer使用状況レポート
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,48 +20,48 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Yammer デバイスの使用状況レポートを取得して、ユーザーが Yammer を使用しているデバイスについて把握します。
-ms.openlocfilehash: fae76e9ef769248217140c059004efc7ad330928
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+description: ユーザーがYammerを使用しているデバイスを確認するには、デバイス使用状況レポートをYammerします。
+ms.openlocfilehash: 01749c21dd0f8355556718ee9179244fb250c97a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779387"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579472"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>管理センターの Microsoft 365 レポート-Yammer デバイスの使用状況レポート
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>管理センターの Microsoft 365 レポート - Yammer使用状況レポート
 
-Microsoft 365 **Reports** dashboard には、組織内の製品全体にわたるアクティビティの概要が表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
+Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
   
 Yammer デバイスの使用状況レポートでは、ユーザーが Yammer を使用しているデバイスについての情報を示します。デバイスの種類別に毎日使用するユーザー数を表示したり、デバイスの種類別にユーザー数を表示したりします。どちらも選択した期間で表示できます。また、ユーザーごとの詳細を表示することもできます。
   
 > [!NOTE]
-> レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
+> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。  
  
 ## <a name="how-do-i-get-to-the-yammer-device-usage-report"></a>Yammer デバイスの使用状況レポートの作成方法
 
-1. 管理センターで、[ **レポート** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
-2. ダッシュボードのホームページから、Yammer カードの [ **詳細表示** ] ボタンをクリックします。
+1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
+2. ダッシュボードのホームページで、カードの [その **他の表示** ] Yammerクリックします。
   
-## <a name="interpret-the-yammer-device-usage-report"></a>Yammer デバイスの使用状況レポートを解釈する
+## <a name="interpret-the-yammer-device-usage-report"></a>デバイス使用状況Yammerレポートを解釈する
 
-OneDrive レポートでの使用状況を表示するには、[ **デバイスの使用状況** ] タブを選択します。<br/>![Microsoft 365 レポート-Microsoft Yammer デバイスの使用状況レポート。](../../media/e21af4c0-0ad2-4485-8ab1-2f82d7dfa90e.png)
+[デバイスの使用状況] タブを選択すると、OneDrive レポートで使用状況 **を表示** できます。<br/>![Microsoft 365 レポート - Microsoft Yammer使用状況レポート。](../../media/e21af4c0-0ad2-4485-8ab1-2f82d7dfa90e.png)
 
-レポートに列を追加または削除するには、[ **列の選択** ] を選択します。  <br/> ![Yammer デバイスの使用状況レポート-列の選択](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Yammer使用状況レポート - 列を選択する](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
 
-また、[ **エクスポート** ] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
+また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   
 |アイテム|説明|
 |:-----|:-----|
 |**測定基準**|**定義**|
-|ユーザー名  <br/> |ユーザーの電子メール アドレス。 実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。 このグリッドには、Microsoft 365 アカウントを使用して Yammer にログインしたユーザー、またはシングルサインオンを使用してネットワークにログインしたユーザーが表示されます。 <br/> |
+|ユーザー名  <br/> |ユーザーの電子メール アドレス。 実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。 このグリッドには、Microsoft 365 アカウントYammerシングル サインオンを使用してネットワークにログインしたユーザーが表示されます。 <br/> |
 |表示名  <br/> |ユーザーの完全な名前。 実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。  <br/> |
-|ユーザーの状態  <br/> |アクティブ、削除済み、または中断の3つの値のいずれか。 これらのレポートには、アクティブ、中断、および削除されたユーザーのデータが表示されます。 保留中のユーザーは、メッセージの投稿、開封、またはそのような操作ができないため、保留中のユーザーは反映されません。   <br/> |
-|状態変更日付 (UTC)  <br/> |Yammer でユーザーの都道府県が変更された日付。  <br/> |
-|最後のアクティビティの日付 (UTC)  <br/> |ユーザーが Yammer アクティビティに参加した最後の日付 (UTC)。  <br/> |
-|Web  <br/> |ユーザーが web 上で Yammer を使用したかどうかを示します。  <br/> |
-|Windows phone  <br/> | ユーザーが Windows phone で Yammer を使用したかどうかを示します。  <br/> |
-|Android スマートフォン  <br/> |ユーザーが Android 電話で Yammer を使用したかどうかを示します。 <br/>|
-|iphone <br/> | ユーザーが iPhone で Yammer を使用したかどうかを示します。  <br/> |
-|ipad  <br/> |ユーザーが iPad で Yammer を使用したかどうかを示します。 <br/>|
-|も  <br/> |ユーザーが別のデバイスで Yammer を使用しているかどうかを示します (前述のリストには含まれていません)。 <br/>|
+|ユーザーの状態  <br/> |アクティブ、削除、または中断の 3 つの値のいずれかを指定します。 これらのレポートには、アクティブ、中断、削除されたユーザーのデータが表示されます。 保留中のユーザーはメッセージを投稿、読み取り、または同様に行えないので、保留中のユーザーは反映されません。   <br/> |
+|状態の変更日 (UTC)  <br/> |ユーザーの状態が変更された日付は、Yammer。  <br/> |
+|最終アクティビティ日 (UTC)  <br/> |ユーザーがアクティビティに参加した最後の日付 (UTC) Yammerです。  <br/> |
+|Web  <br/> |ユーザーが web 上でYammerを使用したかどうかを示します。  <br/> |
+|Windows Phone  <br/> | ユーザーが Windows 電話でYammerを使用したかどうかを示します。  <br/> |
+|Android スマートフォン  <br/> |ユーザーが Android スマートフォンでYammerを使用したかどうかを示します。 <br/>|
+|iphone <br/> | ユーザーが iPhone 上でYammerを使用したかどうかを示します。  <br/> |
+|ipad  <br/> |ユーザーが iPad で使用したYammerを示します。 <br/>|
+|その他  <br/> |ユーザーが以前にリストされていない別Yammerデバイスで使用したかどうかを示します。 <br/>|
 |||

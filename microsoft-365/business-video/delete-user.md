@@ -2,8 +2,8 @@
 title: ビジネス向け Microsoft 365 からユーザーを削除する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向け Microsoft 365 でユーザーを削除する方法について説明します。
-ms.openlocfilehash: 902bf9d22a904064562346d2451cef596b71cca6
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422749"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578929"
 ---
 # <a name="delete-a-user"></a>ユーザーを削除する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422749"
 
 従業員が会社を離れる場合は、ビジネス向け Microsoft 365 から従業員を削除する必要があります。 その前に、会社のファイルへのアクセスをブロックし、作成したドキュメントを保持し、ユーザーの削除に関連する他のいくつかの管理タスクを実行する必要があります。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. 管理センターで 、[ユーザー] を **選択し**、[アクティブなユーザー] **を選択します**。
 1. 削除するユーザーを選択し、[ユーザーの削除] **を選択します**。

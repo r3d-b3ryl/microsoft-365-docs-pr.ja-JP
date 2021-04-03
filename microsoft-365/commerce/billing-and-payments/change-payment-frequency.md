@@ -21,21 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: ビジネス サブスクリプションの請求頻度を変更する方法について学習します。
-ms.openlocfilehash: ae3e3b4d0231fc5992215d243e141fb643d13626
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7d2f60e25611025e5b06d4e78555d59c486626d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911892"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579796"
 ---
 # <a name="change-your-billing-frequency"></a>請求頻度の変更
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 サブスクリプションを購入する場合、月単位の課金か年単位の課金かを選択できます。 サブスクリプションの請求頻度を変更するには、次の手順を実行します。
 

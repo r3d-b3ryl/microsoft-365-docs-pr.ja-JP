@@ -15,21 +15,14 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理する方法について説明します。
-ms.openlocfilehash: 3297b2322983eabb793116a450a618b3a62a5a9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911400"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579736"
 ---
 # <a name="manage-partner-relationships"></a>パートナー関係の管理
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理できます。 物事をセットアップするには、いくつかの手順が必要です。
 
@@ -37,9 +30,9 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 2. パートナーは、パートナー関係を確立するために顧客に電子メール要求を送信します。
 3. お客様は、Microsoft 365 管理センターで招待を受け入れ、パートナーとの作業を開始します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md)」を参照してください。
+これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>パートナーが自分の組織や学校に対して何ができますか?
 

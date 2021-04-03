@@ -1,7 +1,7 @@
 ---
 title: 管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Microsoft 365 のグループ レポートで、グループとそのアクティビティについて確認します。
-ms.openlocfilehash: b45582388103e843e2893cfceb9aa1106cb9ce76
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: HT
+ms.openlocfilehash: 9ab034531099b5572c42eb3a48ec28d99487ac99
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295096"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579556"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
 

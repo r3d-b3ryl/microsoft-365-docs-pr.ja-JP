@@ -2,8 +2,8 @@
 title: ファイルを OneDrive に移動する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: OneDrive にファイルを移動する方法について説明します。
-ms.openlocfilehash: f5795ba907e2ac88136887410b5b713bd7d56d81
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b955895d48853e73a5f2f73e6c6f49d8806e735f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422725"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578917"
 ---
 # <a name="move-files-to-onedrive"></a>OneDrive にファイルを移動する
 
@@ -33,7 +33,7 @@ ms.locfileid: "50422725"
 
 Microsoft 365 Business Premium にサインアップすると、既存&#39;OneDrive for Business にコピーする必要があります。 OneDrive は、アクセスを制御する個人用の作業ファイルや機密性の高いビジネス ファイルを格納する場合に便利です。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. Windows から、[スタート] ボタン  **を選択** します。
 2. OneDrive を検索して選択します。
@@ -45,5 +45,5 @@ Microsoft 365 Business Premium にサインアップすると、既存&#39;OneDr
 
 OneDrive ファイルをローカルで操作する以外に、Web ブラウザーからアクセスできます。
 
-1. Web ブラウザーで、仕事用メールoffice.comサインインします。
+1. Web ブラウザーで、仕事用メール office.com サインインします。
 2. **[OneDrive] を選択します**。 すべてのファイルが一覧表示され、任意のコンピューターからブラウザーで作業できます。
