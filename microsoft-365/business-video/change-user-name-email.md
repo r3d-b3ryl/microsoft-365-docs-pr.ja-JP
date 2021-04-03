@@ -2,8 +2,8 @@
 title: ユーザーの名前または電子メール アドレスを変更する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーの名前または電子メール アドレスを変更する方法について説明します。
-ms.openlocfilehash: f45f0bb2f2243a6105f6b5f3de89dd4693acbe17
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6c08110e8725645f2e1d0deffcadd9f34354e1f9
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422953"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580680"
 ---
 # <a name="change-a-users-name-or-email-address"></a>ユーザーの名前または電子メール アドレスを変更する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422953"
 
 ユーザーの名前やメール アドレスを変更する必要がある場合があります。 これを行うには、表示名、エイリアス、またはメール アドレスを変更します。 
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 ### <a name="change-a-users-display-name"></a>ユーザーの表示名を変更する
 

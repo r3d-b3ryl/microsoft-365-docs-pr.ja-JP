@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium セットアップの概要
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium をセットアップするために必要な情報について説明します。
-ms.openlocfilehash: ac13ab8a932c76c000873866a7feae3b6b0c9d7f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 70d0bf00afaa1a504097ac80598f9c1b1a184b05
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421897"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580404"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>Microsoft 365 Business Premium セットアップの概要
 
@@ -61,7 +61,7 @@ Microsoft 365 でビジネスをクラウドに移行する決定をおめでと
 
 ## <a name="2-add-a-domain-name"></a>2. ドメイン名を追加する
 
-- ドメイン名は、組織にプロフェッショナルで覚えやすいオンライン ID (オンライン ID など) _を_ 提供rob@contoso.com。 既にお持ちのお客様は、Microsoft 365 または Microsoft 365 にお持ち込み&#39;、移行をお手伝いします。
+- ドメイン名は、組織にプロフェッショナルで覚えやすいオンライン ID (オンライン ID など) _を_ 提供 rob@contoso.com。 既にお持ちのお客様は、Microsoft 365 または Microsoft 365 にお持ち込み&#39;、移行をお手伝いします。
 - ドメイン&#39;必要がありますか? &#39;Microsoft 365 または Microsoft 365 にサインアップすると同時に、簡単に 1 つを取得できます。
 
 **注:**  メールに加えて、WordPress、GoDaddy、Wix など、さまざまなホスト上の Web サイトでドメインを使用できます。

@@ -2,8 +2,8 @@
 title: iOS に Office アプリをインストールする
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: iOS デバイスにアプリをOfficeする方法について学習します。
-ms.openlocfilehash: 2a7e69767eee6506a0c1685c2d679fc5ce743c3d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0cb7cae3a4569d83a1b2e6b27ca42de2142f30e5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422521"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580560"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>iOS デバイスに Outlook Officeアプリをインストールする
 
@@ -33,7 +33,7 @@ Microsoft 365 Business Premium を&#39;したら、iPhone にOfficeアプリを�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. iPhone で、App Store を開きます。
 2. [  **検索] を** 選択し、検索バーに  **「Outlook」** と入力し、それを選択します。

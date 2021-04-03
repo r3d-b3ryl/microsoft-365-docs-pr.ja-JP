@@ -2,8 +2,8 @@
 title: 共有予定表を作成する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有予定表を作成する方法について学習します。
-ms.openlocfilehash: 22cf4473e7d370a3ae09b76e42d9ab29d0508a44
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8877cce7234890dca5cd83a74c69b93d3b1dcd04
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421813"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580392"
 ---
 # <a name="create-a-shared-calendar"></a>共有予定表を作成する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWm?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 共有カレンダーを使用すると、ユーザーが会議や他のイベントで利用できる時間をすばやく確認できます。
 

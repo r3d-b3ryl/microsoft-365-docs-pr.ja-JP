@@ -2,8 +2,8 @@
 title: ビジネス向け Web サイトを作成する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向け GoDaddy Web サイトを作成する方法について学習します。
-ms.openlocfilehash: 64b8b7bacaf218f95a0fb89d03eb280f755f1f2f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8f7057fcb7ed85502ce856fb50349a91466e0d6c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422737"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580644"
 ---
 # <a name="create-a-website"></a>Web サイトの作成
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 Microsoft 365 には、ビジネス向けパブリック Web サイトは含めりません。 1 つを設定するには、GoDaddy、Wix、WordPress など、Web ホスティング会社の使用を検討してください。
 

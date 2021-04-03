@@ -2,8 +2,8 @@
 title: 安全なリンクの管理
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 悪意のあるサイトからビジネスを保護するためにセーフ リンクを管理する方法について学習します。
-ms.openlocfilehash: 0f0cc6845f699ba5b05c30e21f876f4b4d47b6a6
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ce0c1ba6e4099b6eaf4ec974938170020b8a5892
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422245"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580632"
 ---
 # <a name="manage-safe-links"></a>安全なリンクの管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422245"
 
 Microsoft Defender for Office 365 (以前は Microsoft 365 ATP または Advanced Threat Protection) は、ユーザーが Office アプリのリンクをクリックすると、悪意のあるサイトからビジネスを保護するのに役立ちます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. 管理センターに移動 [し、[セットアップ](https://admin.microsoft.com)] を **選択します**。
 1. 下にスクロールして **高度な脅威からの保護を強化します**。 [表示 **] 、[****管理] の** 順に選択し **、[ATP セーフ リンク] を選択します**。

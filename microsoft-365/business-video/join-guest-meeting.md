@@ -2,8 +2,8 @@
 title: ゲストとの Microsoft Teams 会議に参加する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ゲストとの Teams 会議に参加する方法について学習します。
-ms.openlocfilehash: f17cf94471b58c45192298a47af9e1f142d39c75
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 781e1aa242270588ba50a025ca0dd71c06354ad0
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422497"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580548"
 ---
 # <a name="join-a-teams-meeting-with-guests"></a>ゲストとの Teams の会議に参加する
 
@@ -33,7 +33,7 @@ ms.locfileid: "50422497"
 
 Microsoft Teams を使用すると、内部ユーザーと外部ユーザーの両方との会議に簡単に参加して参加できます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. Microsoft Teams で、[予定表] **を選択し**、会議を見つける。
 1. [ **参加]** を選択し、カメラとマイクをオンまたはオフにするかどうかを決定し、[今すぐ参加] **を選択します**。

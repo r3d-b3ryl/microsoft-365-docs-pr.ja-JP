@@ -2,8 +2,8 @@
 title: グループのメール アドレスを作成する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: グループメール アドレスを作成する方法について学習します。
-ms.openlocfilehash: 9591d7e70a480200977b6a77cab3a1bf683263ba
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0854c41a4af52649c09fc8e5e3d121282e615d8e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422569"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580584"
 ---
 # <a name="create-a-group-email-address"></a>グループのメール アドレスを作成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "50422569"
 
 グループを作成する場合は、中央の電子メール アドレスを作成し、共同作業を行います。 これを使用して、すべてのユーザーがメールを表示および取得できる売上や情報のような電子メール アドレスを提供できます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. Outlook の [ホーム] タブ  **で、[** 新しいグループ]  **を選択します**。
 2. [グループ  **の作成]**  ボックスに、グループ名、情報のような短いメール アドレス、説明を入力します。

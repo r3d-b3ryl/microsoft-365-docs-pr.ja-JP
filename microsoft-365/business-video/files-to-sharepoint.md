@@ -2,8 +2,8 @@
 title: 会社のファイルを SharePoint に移動する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 会社のファイルを SharePoint に移動する方法について説明します。
-ms.openlocfilehash: ab19fed6f0ebe473cbe8493ceebc5f4ca7dc9a8f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e7a778fea9d358d2c5b3e7944edfbb8b2b7fb0f1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422713"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580608"
 ---
 # <a name="move-files-to-sharepoint"></a>ファイルを SharePoint に移動する
 
@@ -33,7 +33,7 @@ ms.locfileid: "50422713"
 
 Microsoft 365 Business Premium にサインアップした後、会社&#39;を SharePoint にコピーする必要があります。 SharePoint は、すべてのユーザーがアクセスする必要がある共有会社のファイルを保存する場合に便利です。 これは通常、ファイル共有またはネットワーク ドライブの使用を置き換える。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. Microsoft Teams を開き、ビジネスのすべてのユーザーがアクセスできるチームを開きます。
 2. [ファイル  **] を** 選択し  **、[SharePoint で開く] を選択します**。

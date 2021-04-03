@@ -2,8 +2,8 @@
 title: OneDrive for Business にファイルを移動する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,28 +23,28 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: いくつかの簡単な手順で、個人の仕事用ファイルや機密会社のファイルを OneDrive for Business に移動する方法について説明します。
-ms.openlocfilehash: 561c9dee1080a50dea695f136df10be8e5d52959
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+description: 個人用の作業ファイルと機密性の高い会社のファイルを OneDrive for Business に移動する方法については、簡単な手順で説明します。
+ms.openlocfilehash: d6bcf2b41f1052c521fda50557aac4bf6a3800fa
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785914"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580076"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>OneDrive for Business にファイルを移動する
 
-OneDrive for business へのファイルの移動に関する短いビデオを見ることができます。<br><br>
+OneDrive for Business へのファイルの移動に関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>OneDrive for Business にファイルを移動する
 
 ユーザーのコンピューターに多くの個人用ファイルが含まれている場合は、最初にこれらのファイルを OneDrive for Business に移動する必要があります。
   
-1. Portal.office.com に移動し、ユーザーの Microsoft 365 for business の資格情報でサインインします。
+1. [ユーザー] portal.office.com に移動し、ビジネス資格情報としてユーザーの Microsoft 365 を使用してサインインします。
 
 2. アプリ起動ツール ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) をクリックして OneDrive に移動します。 
     
@@ -52,6 +52,6 @@ OneDrive for business へのファイルの移動に関する短いビデオを�
     
 ユーザー プロファイルと重要なファイルを転送するには、ForensiT などのサード パーティ製ツールを使用することもできます。OneDrive for Business で作成されたファイルもアップロードする必要があります。
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップと使用方法の詳細
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップと使用の詳細
 
 [一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

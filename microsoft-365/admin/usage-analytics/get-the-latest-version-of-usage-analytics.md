@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 usage analytics の最新バージョンを取得する
+title: Microsoft 365 利用状況分析の最新バージョンを取得する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6561a052-02bb-479d-93ca-5a0f16faf2ee
-description: Microsoft 365 usage analytics の最新バージョンを取得します。
-ms.openlocfilehash: 5fc02fb6688edb2355deed1733d6228fef9bb0c1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Microsoft 365 利用状況分析の最新バージョンを取得します。
+ms.openlocfilehash: 2cc58814f1f2d01dd8e779751cdc6b0287faf29f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401496"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580764"
 ---
-# <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a>Microsoft 365 usage analytics の最新バージョンを取得する
+# <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析の最新バージョンを取得する
 
-テンプレートアプリは、新しいデータまたは新しい視覚エフェクトで年に何度も更新される場合があります。 既存のインスタンスは引き続き動作しますが、最新バージョンを取得する場合は、新しいインスタンスを作成し、カスタマイズを新しいインスタンスに適用する必要があります。 「 [Microsoft 365 usage Analytics を有効にする」を](enable-usage-analytics.md)参照してください。 
+テンプレート アプリは、1 年に数回、新しいデータや新しい視覚エフェクトで更新される場合があります。 既存のインスタンスは引き続き動作しますが、最新バージョンを取得する場合は、新しいインスタンスを作成し、カスタマイズを新しいインスタンスに適用する必要があります。 「Enable [Microsoft 365 usage analytics」を参照してください](enable-usage-analytics.md)。 
   
 

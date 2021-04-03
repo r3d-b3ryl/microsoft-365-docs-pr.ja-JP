@@ -2,8 +2,8 @@
 title: フィッシング対策の保護を設定する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: フィッシング対策保護を設定する方法について学習します。
-ms.openlocfilehash: 8cef8f916a8a3e2b27dd7f76ddecd921d59ca0c4
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 32494eda4496d99e5e5f4def213ba7876f6c3183
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422005"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580416"
 ---
 # <a name="set-up-anti-phishing"></a>フィッシング詐欺対策を設定する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422005"
 
 フィッシングは、電子メールが使い慣れたソースから送信されたように見えるが、個人情報の収集を試みる悪意のある攻撃です。 既定では、Microsoft 365 にはフィッシング対策保護がいくつか含まれていますが、設定を絞り込み、その保護を強化できます。 それでは、見てみよ。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. 管理センターで、[セキュリティ [https://admin.microsoft.com](https://admin.microsoft.com) ] 、[**脅威** 管理] 、[**ポリシー**] 、[ATP フィッシング対策]**の順に選択します**。 
 1. [既定 **のポリシー] を** 選択して絞り込む。

@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium の脅威保護を強化する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: コンプライアンス機能を設定して、データ損失を防止し、お客様と顧客の機密情報を安全に保ちます。
-ms.openlocfilehash: e210787718025c5df29af8d4a2283291dcecc2a8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c0accc37d3dcda9ba75813f01a98a3233c5a8369
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912532"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579956"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 

@@ -2,8 +2,8 @@
 title: 組織全体にわたるチームを作成する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams で組織全体のチームを作成する方法について説明します。
-ms.openlocfilehash: 98513795b5f499e288671431defffbd4be0d2a4d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: fa24457bbe34136c793fd0e7a5856ba57e345ca1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422473"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580536"
 ---
 # <a name="create-an-org-wide-team"></a>組織全体にわたるチームを作成する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 会社のすべてのユーザーが参加できる組織全体のチームを Microsoft Teams に作成します。 Microsoft 365 にユーザーを追加すると、ユーザーはこのチームに自動的に追加されます。
 

@@ -2,8 +2,8 @@
 title: デバイス上の作業ファイルを保護する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,23 +27,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
-description: '既定の構成とアプリケーション管理ポリシーを追加して、ユーザーの個人用モバイルデバイス上の会社のデータを保護する方法について説明します。 '
-ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: 'ユーザーの個人用モバイル デバイス上の会社データを保護するための既定の構成とアプリケーション管理ポリシーの追加について説明します。 '
+ms.openlocfilehash: 7e3967dad47508e938b760d0eb96ba8685d886a1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470909"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580036"
 ---
 # <a name="protect-work-files-on-devices"></a>デバイス上の作業ファイルを保護する
 
 この記事は、Microsoft 365 Business Premium に適用されます。
 
-今日の世界では、ユーザーは自分のデバイスに結び付けられており、個人や作業のライフサイクルの衝突により、会社のデータが従業員の個人のデバイスで終了する可能性があります。 ここで構成する設定は、ユーザーの個人の設定またはデータに影響を与えることなく、作業ファイルの制御を取り戻したり、保護を提供するのに役立ちます。
+今日の世界では、ユーザーはデバイスに関連付けられているので、個人と仕事の生活が衝突すると、会社のデータは従業員の個人デバイスに終わる可能性があります。 ここで構成する設定は、ユーザーの個人の設定またはデータに影響を与えることなく、作業ファイルの制御を取り戻したり、保護を提供するのに役立ちます。
   
 ## <a name="configuring-policies-during-setup"></a>セットアップ時にポリシーを構成する
 
-セットアップ時に、Android、iOS、および Windows 10 用の3つのアプリケーション管理ポリシーが追加されます。 各ポリシーには同じ設定があり、すべてのユーザーに適用されます。 ユーザーが勤務先のアカウントを携帯電話に接続すると、ポリシーがアクティブ化されます。
+セットアップ中に、Android、iOS、および Windows 10 ごとに 3 つのアプリケーション管理ポリシーが追加されます。 各ポリシーは同じ設定を持ち、すべてのユーザーに適用されます。 ユーザーが自分の仕事用アカウントを自分の携帯電話に接続すると、ポリシーがアクティブ化されます。
   
 セットアップ時は既定の構成を受け入れることをお勧めします。セットアップが完了した後、構成を微調整して、特定のユーザー グループに制御のさまざまなレベルを適用できるように、ポリシーを追加できます。
   

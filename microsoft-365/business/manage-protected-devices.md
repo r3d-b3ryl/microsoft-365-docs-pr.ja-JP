@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium で保護されたデバイスを管理する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 保護ポリシーによって管理されるデバイスから会社のデータを削除し、Windows 10 デバイスを工場出荷時の設定にリセットする方法について説明します。
-ms.openlocfilehash: 5bedcdc95a8d0f67c7db73d84f530a0518a07216
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: fdd92e797774a47455d6b4163dfe399bf74d41f3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222321"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580156"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium で保護されたデバイスを管理する
 

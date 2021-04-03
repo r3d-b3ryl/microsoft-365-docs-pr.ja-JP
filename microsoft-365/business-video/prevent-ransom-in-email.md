@@ -2,8 +2,8 @@
 title: ランサムウェア用のメール ルールを作成する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ランサムウェアを防止するために電子メール ルールを作成する方法について学習します。
-ms.openlocfilehash: 34590945b13408cf3521f000d703bd37e04ba73f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 96822916753f2f70d481c213e7e31046f7081446
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913552"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580500"
 ---
 # <a name="create-email-rules-to-prevent-ransomware"></a>ランサムウェアを防止する電子メール ルールを作成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50913552"
 
 Microsoft 365 は、JavaScript、バッチ、実行可能ファイルなどの潜在的に危険なファイルが Outlook で開かされないようにすることで、ランサムウェアからビジネスを保護するのに役立ちます。 追加の種類のファイルをブロックまたは警告するルールを追加して、このレベルの保護を強化するには、次の手順を実行します。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. [管理センター] で 、[ [https://admin.microsoft.com](https://admin.microsoft.com) 管理センター] で **[Exchange]** **を選択します**。
 1. 左側のメニューから、[メール フロー] **を選択します**。

@@ -2,8 +2,8 @@
 title: PC を Microsoft 365 Business Premium に接続する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: PC を Microsoft 365 Business に接続する方法について説明します。
-ms.openlocfilehash: d1c53feb0940e3ec8fcd040bb119ec3d285a615f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 7afbf3a1a515b1f023d660e72a77144b93d66a89
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422797"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580656"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>PC を Microsoft 365 Business Premium に接続する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 Microsoft 365 Business Premium (以前は Microsoft 365 Business と呼ばれる) をセットアップした後、ユーザーと従業員は、セキュリティと管理機能をフルに活用するためにいくつかの手順を実行する必要があります。 ここでは&#39;方法を示します。
 
 まず、Windows 10 Pro がインストールされていることを確認します。

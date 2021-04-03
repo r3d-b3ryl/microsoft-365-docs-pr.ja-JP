@@ -2,8 +2,8 @@
 title: セットアップ時に Windows 10 に Office をインストールする
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -25,18 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: Microsoft 365 Business Premium を使用して、ユーザーが Windows 10 デバイスすべてに最新バージョンの Office を所有していることを自動的に確認する方法を説明します。
-ms.openlocfilehash: 1ca386f75743178aebaf0bfabbabcb74f4813685
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Microsoft 365 Business Premium を使用すると、ユーザーがすべての Windows 10 デバイスで最新バージョンのOfficeを自動的に確認する方法について説明します。
+ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400840"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580176"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>セットアップ時に Windows 10 に Office をインストールする
 
-![を指すバナー https://aka.ms/aboutM365preview 。](../media/m365admincenterchanging.png)
+![を指す https://aka.ms/aboutM365preview バナー。](../media/m365admincenterchanging.png)
 
-既定では、この設定はオフになっています。 この機能をオンにして、ユーザーが Windows 10 デバイスすべてに最新バージョンの Office を所有していることを確認できますが、最初にすべての前提条件が満たされていることを確認してください。 この設定では、「microsoft [365 Business premium による Office クライアントの展開を準備](prepare-for-office-client-deployment.md)する」で説明されているその他の要件に加えて、ユーザーが Microsoft 365 business premium のライセンスを持っている必要があります。
+この設定は既定でオフになっています。 ユーザーがすべての Windows 10 デバイスで最新バージョンの Office を使用していることを確認するために有効にできますが、まずすべての前提条件が満たされていることを確認します。 Microsoft 365 Business Premium による Office クライアント展開の準備で説明されている他の要件に加えて、この設定でソフトウェアをデバイスにプッシュするには、Microsoft [365](prepare-for-office-client-deployment.md)Business Premium のライセンスが必要です。
   
-セットアップ時に既定の設定をそのまま使用することをお勧めします。
+セットアップ時に既定の設定を受け入れすることをお勧めします。

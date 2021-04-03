@@ -2,8 +2,8 @@
 title: ビジネス向け Microsoft 365 にファイルを保存する場所
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向け Microsoft 365 でファイルを保存できる場所について説明します。
-ms.openlocfilehash: e8c0347489b3d35217b3cad38e26670d2c6023bb
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d1f0a35c3b9b253b8f847ae8578e26a7deec18bb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421837"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580368"
 ---
 # <a name="where-to-store-files"></a>ファイルを保存する場所
 
@@ -33,12 +33,12 @@ ms.locfileid: "50421837"
 
 Microsoft 365 では、OneDrive for Business または SharePoint サイトに作業内容を保存できます。 組織内の各ユーザーには、個人用作業ファイルを格納する独自の OneDrive for Business ライブラリがあります。 OneDrive フォルダーにファイルを作成して保存すると、クラウドと同期し、Web ブラウザー、コンピューター、モバイル デバイスなど、どこからでもファイルにアクセスできます。 共有ファイルストレージとチームコラボレーションの場合は、SharePoint サイトを使用します。 SharePoint サイトはクラウドと同期して、どこからでも簡単にアクセスできます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 ### <a name="store-or-share-files-with-onedrive"></a>OneDrive でファイルを保存または共有する
 
 1. コンピューター上で、エクスプローラーを使用して OneDrive を開きます。 または [、365 Officeアプリ](https://www.office.com/)起動ツール  **から OneDrive**  を開きます。
-2. [共有] をクリックして他のユーザーにドキュメントを表示したり、リンクを送信したりして、個人用ファイルを表示してアップロードしたり、ドキュメントやフォルダーを共有したりします。 [詳細情報](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#os_type=onedrive_-_business)。
+2. [共有] をクリックして他のユーザーにドキュメントを表示したり、リンクを送信したりして、個人用ファイルを表示してアップロードしたり、ドキュメントやフォルダーを共有したりします。 [詳細情報を参照してください](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#os_type=onedrive_-_business)。
 
 ### <a name="collaborate-with-a-sharepoint-site"></a>SharePoint サイトとの共同作業
 

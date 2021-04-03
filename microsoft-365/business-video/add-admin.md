@@ -2,8 +2,8 @@
 title: 管理者の追加
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 別の管理者を追加する方法について学習します。
-ms.openlocfilehash: 83b4432858f33f8132647840b746bb5aa23d68b5
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: f6f50f65a886d3c094a162349496a7e0c13562f1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423179"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580728"
 ---
 # <a name="add-an-admin"></a>管理者の追加
 
@@ -34,7 +34,7 @@ ms.locfileid: "50423179"
 
 Microsoft 365 Business にサインアップすると、自動的にグローバル管理者になります。ビジネスを管理するために、他のユーザーを管理者にすることもできます。 
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 ### <a name="add-an-existing-employee-as-an-admin"></a>既存の従業員を管理者として追加する
 

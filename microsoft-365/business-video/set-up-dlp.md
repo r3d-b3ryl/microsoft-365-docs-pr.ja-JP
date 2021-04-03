@@ -2,8 +2,8 @@
 title: データの損失を防止する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: データ損失防止ポリシーの設定を管理する方法について説明します。
-ms.openlocfilehash: 54cd508ef0b0cfcf8b71dc86a4903f77a5354c36
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 04dbbcfd39186b8161fb497b72ddb070fbfb7471
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422065"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580440"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>DLP によるデータ損失の防止
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422065"
 
 データ損失防止ポリシーは、社会保障番号や医療記録など、ビジネスの機密情報を特定して保護するのに役立ちます。 
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. 開始するには、管理センターに移動し [、[](https://admin.microsoft.com)セットアップ] を **選択します**。
 1. [データ損失防止 **の設定] まで下にスクロールし、[** 表示] を選択し、[管理] を **選択します**。 

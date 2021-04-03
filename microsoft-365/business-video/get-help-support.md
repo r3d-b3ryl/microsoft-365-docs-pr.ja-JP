@@ -2,8 +2,8 @@
 title: ヘルプまたはサポートを利用する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で管理者のヘルプまたはサポートを受ける方法について説明します。
-ms.openlocfilehash: 852b931f4710ad4117560485002ebe10ef97d3ad
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 016e31ea12f1efeb50597cdb34391d324dc0f58d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422581"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580596"
 ---
 # <a name="get-help-or-support"></a>ヘルプまたはサポートを利用する
 
@@ -46,7 +46,7 @@ ms.locfileid: "50422581"
 
 国または地域の Microsoft 365 または Microsoft 365 Business Premium サポート電話番号については、「ビジネス製品のサポートにお問い合 [わせください」を参照してください](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 Microsoft 365 Business Premium では、ヘルプやサポートを受ける方法がいくつかあります。 ヘルプは、Microsoft 管理センター、Microsoft ストア、または Microsoft ソリューション プロバイダーから参照できます。
 

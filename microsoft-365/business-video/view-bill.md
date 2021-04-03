@@ -2,8 +2,8 @@
 title: 請求書を表示、ダウンロード、または印刷する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 請求書を表示、ダウンロード、または印刷する方法について学習します。
-ms.openlocfilehash: 626165bf4ea1e14edf55bd2acd1dae0385d32a41
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 81b8e2551b7c5cfe1ade205d5b1b82b481e04273
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421647"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580344"
 ---
 # <a name="view-download-or-print-your-bill-for-microsoft-365"></a>Microsoft 365 の請求書を表示、ダウンロード、または印刷する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50421647"
 
 Microsoft 365 Business では、毎月のサブスクリプション請求書を確認し、それをダウンロードして保存するか、印刷できます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. Microsoft 365 管理センターで、左側のナビゲーション ウィンドウで [課金] を選択し、[支払い] &**します**。
 1. 請求書を選択して表示します。 請求書が表示しない場合は、ドロップダウン リストから **[フィルター処理:** 過去 6 か月] を選択します。

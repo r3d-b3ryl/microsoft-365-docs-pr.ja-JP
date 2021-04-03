@@ -2,8 +2,8 @@
 title: Windows 10 デバイスを構成する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,19 +27,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: 組織内のすべてのユーザーに適用される Windows 10 のデバイスポリシーを構成する方法について説明します。これにより、確実に安全な方法で接続できます。
-ms.openlocfilehash: 811e948b33e8d305c88ff3e502c413356178696a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 組織内のすべてのユーザーに適用される Windows 10 のデバイス ポリシーを構成し、安全な方法で接続する方法について説明します。
+ms.openlocfilehash: c7d27b903734f9348471bb7765b88650caeed9d5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401016"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580276"
 ---
 # <a name="configure-windows-10-devices"></a>Windows 10 デバイスを構成する
 
-セットアップ時に、組織内のすべてのユーザーに適用される Windows 10 のデバイスポリシーを作成します。 ユーザーが職場または学校のアカウントを使用して Windows 10 デバイス上の Office アプリにサインインすると、構成した設定が自動的に適用され、ユーザーが安全な方法で接続されるようになります。
+セットアップ中に、組織内のすべてのユーザーに適用される Windows 10 のデバイス ポリシーを作成します。 ユーザーが自分の Windows 10 デバイスの Office アプリに自分の仕事または学校のアカウントでサインインすると、ユーザーが安全な方法で接続するための設定が自動的に適用されます。
   
-セットアップ時は既定の構成を受け入れることをお勧めします。 セットアップ後に、追加のポリシーを作成して、特定のユーザーグループに適用することができます。
+セットアップ時は既定の構成を受け入れることをお勧めします。 セットアップ後、より多くのポリシーを作成し、ユーザーの特定のグループにターゲットを設定できます。
   
 Windows 10 デバイスの構成を管理するポリシーを追加するには、「[Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)」 (Windows 10 PC にデバイス構成を設定する) を参照してください。
   

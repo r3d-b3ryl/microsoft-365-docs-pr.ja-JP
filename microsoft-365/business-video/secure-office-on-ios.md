@@ -2,8 +2,8 @@
 title: iOS の Office アプリをセキュリティで保護する
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium Officeアプリを保護する方法について説明します。
-ms.openlocfilehash: 197041a4eb9ada65f4b6046d93f2a856cbdfb40d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5a5f52f87fe63fdec6df9611a5ea44a2ecf4466b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422113"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580464"
 ---
 # <a name="secure-office-apps-on-ios"></a>iOS の Office アプリをセキュリティで保護する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422113"
 
 モバイル ユーザーがサインインする PIN または指紋を入力する必要があるユーザー アクセス ポリシーを設定し、デバイスに保存されている作業ファイルも暗号化できます。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 1. Microsoft 365 管理センターにサインインします。
 1. [ポリシー **] で、[** ポリシーの **追加] を選択します**。
