@@ -1,5 +1,5 @@
 ---
-title: フォルダー アクセスの制御を有効にする
+title: 制御されたフォルダー アクセスを有効にする
 keywords: フォルダー アクセスの制御、Windows 10、Windows Defender、ランサムウェア、保護、ファイル、フォルダー、有効化、オン、使用
 description: フォルダー アクセスの制御を有効にすることで重要なファイルを保護する方法について説明します。
 search.product: eADQiWindows 10XVcnh
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218762"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571010"
 ---
-# <a name="enable-controlled-folder-access"></a>フォルダー アクセスの制御を有効にする
+# <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "51218762"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、Windows 10 および Windows Server 2019 に含まれています。
 
@@ -74,7 +74,7 @@ ms.locfileid: "51218762"
 
 4. 「Configure **Windows Defender**  >  **Exploit Guard**  >  **管理フォルダー アクセス を有効にする」に**  >  **移動します**。
 
-5. 保護されたフォルダーにアクセスできる各アプリケーションへのパスと、保護が必要な追加のフォルダーへのパスを入力します。 **[追加]** を選択します。<br/> ![Intune でフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5. 保護されたフォルダーにアクセスできる各アプリケーションへのパスと、保護が必要な追加のフォルダーへのパスを入力します。 [**追加**] を選択します。<br/> ![Intune でフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
 
    > [!NOTE]
    > Wilcard はアプリケーションでサポートされますが、フォルダーではサポートされません。 サブフォルダーは保護されません。 許可されたアプリは、再起動するまでイベントをトリガーし続ける。
@@ -140,5 +140,5 @@ ms.locfileid: "51218762"
 ## <a name="see-also"></a>関連項目
 
 * [フォルダー アクセスを制御して重要なフォルダーを保護する](controlled-folders.md)
-* [フォルダー アクセスの制御をカスタマイズする](customize-controlled-folders.md)
-* [エンドポイントに対する Microsoft Defender の評価](evaluate-mde.md)
+* [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
+* [Microsoft Defender for Endpoint の評価](evaluate-mde.md)

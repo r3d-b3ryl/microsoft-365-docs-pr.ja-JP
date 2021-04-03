@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: dda0e58e587add2693f8448dd0833ce17706786c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7ce652d58be2d9ff28d82c088d5471a7bffdf6dc
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067355"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570974"
 ---
 # <a name="test-how-microsoft-defender-for-endpoint-features-work-in-audit-mode"></a>Microsoft Defender for Endpoint の機能が監査モードで動作する方法をテストする
 
@@ -47,14 +47,14 @@ Defender for Endpoint を使用すると、特に攻撃表面の縮小ルール�
 
  **監査オプション** | **監査モードを有効にする方法** | **イベントを表示する方法**
 |---------|---------|---------|
-| 監査はすべてのイベントに適用されます | [フォルダー アクセスの制御を有効にする](enable-controlled-folders.md) | [フォルダー アクセスイベントの制御](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
-| 監査は個々のルールに適用されます | [攻撃表面の縮小ルールを有効にする](enable-attack-surface-reduction.md) | [攻撃表面の縮小ルール イベント](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
+| 監査はすべてのイベントに適用されます | [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md) | [フォルダー アクセスイベントの制御](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
+| 監査は個々のルールに適用されます | [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md) | [攻撃表面の縮小ルール イベント](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
 | 監査はすべてのイベントに適用されます | [ネットワーク保護を有効にする](enable-network-protection.md) | [ネットワーク保護イベント](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
 | 監査は個々の軽減策に適用されます | [エクスプロイト保護を有効にする](enable-exploit-protection.md) | [エクスプロイト保護イベント](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
 ## <a name="related-topics"></a>関連項目
 
-* [デバイスを悪用から保護する](exploit-protection.md)
+* [エクスプロイトからデバイスを保護する](exploit-protection.md)
 * [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
 * [ネットワークを保護する](network-protection.md)
 * [重要なフォルダーを保護する](controlled-folders.md)

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 74b23b4a1b67ecd5c9199388985e8e38c3231239
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0280f4fd43034f9ffb70104771fa4a099943af2d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221825"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500231"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -43,16 +43,15 @@ ms.locfileid: "51221825"
 
 この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)。
 
+管理者は、ユーザー パスワードを一定の日数が経過したら期限切れにするか、パスワードの有効期限が切れないように設定することができます。 既定では、パスワードが組織へ設定されているので、有効期限が切れることはありません。
+
+最近の研究では、強制的なパスワードの変更はメリットよりデメリットの方が大きいことが強く示唆されています。 ハッカーが簡単に推測できる方法で、より弱いパスワードの選択、パスワードの再利用、または古いパスワードの更新をユーザーに促します。 [多要素認証](../security-and-compliance/set-up-multi-factor-authentication.md) を有効にすることをおすすめします。
+
 これらの手順を実行するには、[グローバル管理者](../add-users/about-admin-roles.md)である必要があります。
 
 ユーザーの場合は、自分のパスワードを期限なしに設定する権限はありません。 職場または学校のテクニカル サポートに、この記事の手順を実行するように依頼してください。
 
-管理者は、ユーザー パスワードを一定の日数が経過したら期限切れにするか、パスワードの有効期限が切れないように設定することができます。
-
 ## <a name="set-password-expiration-policy"></a>パスワードの有効期限ポリシーを設定する
-
-> [!Tip]
-> 既定では、パスワードの有効期限は 90 日に設定されています。 最近の研究では、強制的なパスワードの変更はメリットよりデメリットの方が大きいことが強く示唆されています。 ハッカーが簡単に推測できる方法で、より弱いパスワードの選択、パスワードの再利用、または古いパスワードの更新をユーザーに促します。 パスワードを無期限に設定する場合は、[多要素認証](../security-and-compliance/set-up-multi-factor-authentication.md)を有効にすることをお勧めします。
 
 特定の時間が経過するとユーザーのパスワードが期限切れになるように設定する場合は、以下の手順に従います。
 

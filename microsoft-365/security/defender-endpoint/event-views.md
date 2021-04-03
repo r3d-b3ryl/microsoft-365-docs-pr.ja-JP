@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小イベントの表示
+title: 攻撃面の減少イベントを表示する
 description: カスタム ビューをインポートして、攻撃表面の縮小イベントを表示します。
 keywords: イベント ビュー、exploit guard、監査、レビュー、イベント
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: de605a667284c1218a3efe6e388d99b26b42e333
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068579"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569745"
 ---
-# <a name="view-attack-surface-reduction-events"></a>攻撃表面の縮小イベントの表示
+# <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "51068579"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 イベント ビューアーで攻撃表面の縮小イベントを確認し、動作しているルールや設定を監視します。 また、設定が "ノイズ" すぎるか、毎日のワークフローに影響を与えるかどうかを判断することもできます。
 
@@ -76,7 +76,7 @@ Windows イベント ビューアーでカスタム ビューを作成して、�
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
-5. **[OK]** をクリックします。 フィルターの名前を指定します。
+5. **[OK]** を選択します。 フィルターの名前を指定します。
 
 6. その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
 
@@ -176,11 +176,11 @@ Windows イベント ビューアーで次のイベントにアクセスでき�
 ネットワーク保護 | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
 ネットワーク保護 | Windows Defender (運用) | 1125 | 監査モードでネットワーク保護が発生した場合のイベント
 ネットワーク保護 | Windows Defender (運用) | 1126 | ブロック モードでネットワーク保護が発生した場合のイベント
-フォルダー アクセスの制御 | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
-フォルダー アクセスの制御 | Windows Defender (運用) | 1124 | 監査された制御フォルダー アクセス イベント
-フォルダー アクセスの制御 | Windows Defender (運用) | 1123 | ブロックされたフォルダー アクセスイベントの制御
-フォルダー アクセスの制御 | Windows Defender (運用) | 1127 | ブロックされたフォルダー アクセスのセクター書き込みブロック イベント
-フォルダー アクセスの制御 | Windows Defender (運用) | 1128 | 監査された制御フォルダー アクセス セクター書き込みブロック イベント
+制御されたフォルダー アクセス | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
+制御されたフォルダー アクセス | Windows Defender (運用) | 1124 | 監査された制御フォルダー アクセス イベント
+制御されたフォルダー アクセス | Windows Defender (運用) | 1123 | ブロックされたフォルダー アクセスイベントの制御
+制御されたフォルダー アクセス | Windows Defender (運用) | 1127 | ブロックされたフォルダー アクセスのセクター書き込みブロック イベント
+制御されたフォルダー アクセス | Windows Defender (運用) | 1128 | 監査された制御フォルダー アクセス セクター書き込みブロック イベント
 攻撃面の縮小 | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
 攻撃面の縮小 | Windows Defender (運用) | 1122 | 監査モードでルールが発生した場合のイベント
 攻撃面の縮小 | Windows Defender (運用) | 1121 | ブロック モードでルールが発生した場合のイベント

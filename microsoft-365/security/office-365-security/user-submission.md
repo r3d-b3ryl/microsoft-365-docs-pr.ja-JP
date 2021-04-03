@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d3f2640752f2dae152ef4be8b9ac2d2996c802a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d86c79f0f0ab74d1dfbb88e7803f4ee4d691ea73
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206058"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501178"
 ---
 # <a name="user-submissions-policy"></a>ユーザー申請ポリシー
 
@@ -119,6 +119,9 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
         > [!NOTE]
         > 米国政府機関 (GCC、GCC-H、DoD) は、カスタム メールボックスのみを **構成できます**。 他の 2 つのオプションは無効になっています。
+
+        > [!NOTE]
+        > 組織がカスタム メールボックスにのみ送信するように構成されている場合、報告されたメッセージは再スキャンのために送信されません。ユーザーレポートメッセージ ポータルの結果は常に空になります。
 
       完了したら、[確認] を **クリックします**。
 

@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f6b1e257fd767fa112fddb41d773065b8002a2a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 6df23e0d7e3ea0ecd7ebacd96f00cb47b9e0aa84
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909192"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574597"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する
 
@@ -77,3 +78,14 @@ UNC パスを使用してデバイスがオンプレミスのドメイン コン
 クラウド専用環境ではプリンターを自動的に検出することはできませんが、ユーザーは、デバイスがオンプレミスのドメイン コントローラーにアクセスできる限り、プリンター パスまたはプリンター キュー パスを使用してオンプレミスプリンターを使用できます。
 
 <!--add fuller material on printers when available-->
+## <a name="steps-to-get-ready"></a>準備の手順
+
+1. 「Microsoft [Managed Desktop の前提条件」を参照してください](prerequisites.md)。
+2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
+3. [ゲスト アカウントの前提条件](guest-accounts.md)
+4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
+5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
+6. [Microsoft Managed Desktop のオンプレミス リソース アクセスを準備](authentication.md) する (この記事)
+7. [Microsoft マネージド デスクトップのアプリ](apps.md)
+8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
+9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)

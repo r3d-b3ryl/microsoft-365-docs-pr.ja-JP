@@ -7,19 +7,19 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 908ddf531a5a20b9811084ba534a152ad6158170
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4364e6a38d4597a95d4d9a1f05dcce6fce5797ef
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198851"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500700"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>デバイス ID で不足している KB を取得する
 
@@ -43,9 +43,9 @@ GET /api/machines/{machineId}/getmissingkbs
 
 ## <a name="request-header"></a>要求ヘッダー
 
-Name | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

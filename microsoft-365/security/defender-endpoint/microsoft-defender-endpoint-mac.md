@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP for Mac
+title: Mac 用 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint for Mac をインストール、構成、更新、および使用する方法について説明します。
-keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave
+keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 22d35a42eb7fb7eadbba686c292729772951c05c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198995"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500686"
 ---
-# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac
+# <a name="microsoft-defender-for-endpoint-for-mac"></a>Mac 用 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51198995"
 このトピックでは、Defender for Endpoint for Mac をインストール、構成、更新、および使用する方法について説明します。
 
 > [!CAUTION]
-> Defender for Endpoint for Mac と共に他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しない副作用が発生する可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、MDATP for Mac ウイルス対策機能をパッシブ モードで実行する構成後も、Mac EDR 機能の[](mac-preferences.md#enable--disable-passive-mode)MDATP を安全に利用できます。
+> Microsoft Defender for Endpoint for Mac と共に他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しない副作用につながる可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、パッシブ モードで実行するウイルス対策機能を構成した後でも、Defender for Endpoint for Mac EDR 機能を安全に利用できます。 [](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>最新リリースの新機能
 
@@ -107,7 +107,7 @@ Microsoft Defender for Endpoint for Mac では、次のいずれかの Microsoft
 
 
 
-|**ドメインリストのスプレッドシート**|**説明**|
+|**ドメインリストのスプレッドシート**|**Description**|
 |:-----|:-----|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>スプレッドシートをダウンロードするには、 [ 次の ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)mdatp-urls.xlsxします。
 
@@ -157,7 +157,7 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 macOS の進化に合わせ、カーネル拡張機能ではなくシステム拡張機能を活用する Microsoft Defender for Endpoint for Mac 更新プログラムを準備しています。 関連する詳細については、「Microsoft Defender for Endpoint for Mac の新機能 [」を参照してください](mac-whatsnew.md)。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - ログ記録、アンインストール、その他のトピックの詳細については [、「Resources for Microsoft Defender for Endpoint for Mac」を参照してください](mac-resources.md)。
 

@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a161cfcad301c6e5cac2c7398b5c13559b27698d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 02d7810ef27b495e69fd6d8ca72baf40df13ee93
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065971"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500445"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>ソフトウェア インベントリ - 脅威と脆弱性の管理
 
@@ -127,5 +127,5 @@ CPE がないソフトウェアは、このデバイス固有のソフトウェ�
 
 - [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
-- [イベントタイムライン](threat-and-vuln-mgt-event-timeline.md)
+- [イベントのタイムライン](threat-and-vuln-mgt-event-timeline.md)
 - [Microsoft Defender for Endpoint Devices リストの表示と整理](machines-view-overview.md)

@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f663a9dcc5bebd3a7fd124bbd0c0fece5dbb62e4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 40383524ffe26326800369570856499d149e31c3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068316"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500391"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -45,33 +45,33 @@ ms.locfileid: "51068316"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
-| `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `QueryType` | string | QueryGroup、QueryUser、または EnumerateUsers などのクエリの種類 |
-| `QueryTarget` | string | クエリを実行するユーザー、グループ、デバイス、ドメイン、その他のエンティティ型の名前 |
-| `Query` | string | クエリの実行に使用される文字列 |
-| `Protocol` | string | 通信中に使用されるプロトコル |
-| `AccountName` | string | アカウントのユーザー名 |
-| `AccountDomain` | string | アカウントのドメイン |
-| `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
-| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
-| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
-| `DeviceName` | string | エンドポイントの完全修飾ドメイン名 (FQDN) |
-| `IPAddress` | string | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
-| `Port` | string | 通信中に使用される TCP ポート |
-| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの名前 |
-| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの IP アドレス |
-| `DestinationPort` | string | 関連するネットワーク通信の宛先ポート |
-| `TargetDeviceName` | string | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
-| `TargetAccountUpn` | string | 記録されたアクションが適用されたアカウントのユーザー プリンシパル名 (UPN) |
-| `TargetAccountDisplayName` | string | 記録されたアクションが適用されたアカウントの表示名 |
-| `Location` | string | イベントに関連付けられている都市、国、その他の地理的な場所 |
+| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `Application` | 文字列 | 記録されたアクションを実行したアプリケーション |
+| `QueryType` | 文字列 | QueryGroup、QueryUser、または EnumerateUsers などのクエリの種類 |
+| `QueryTarget` | 文字列 | クエリを実行するユーザー、グループ、デバイス、ドメイン、その他のエンティティ型の名前 |
+| `Query` | 文字列 | クエリの実行に使用される文字列 |
+| `Protocol` | 文字列 | 通信中に使用されるプロトコル |
+| `AccountName` | 文字列 | アカウントのユーザー名 |
+| `AccountDomain` | 文字列 | アカウントのドメイン |
+| `AccountUpn` | 文字列 | アカウントのユーザー プリンシパル名 (UPN) |
+| `AccountSid` | 文字列 | アカウントのセキュリティ識別子 (SID) |
+| `AccountObjectId` | 文字列 | Azure アカウントのアカウントの一意AD |
+| `AccountDisplayName` | 文字列 | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
+| `DeviceName` | 文字列 | エンドポイントの完全修飾ドメイン名 (FQDN) |
+| `IPAddress` | 文字列 | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
+| `Port` | 文字列 | 通信中に使用される TCP ポート |
+| `DestinationDeviceName` | 文字列 | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの名前 |
+| `DestinationIPAddress` | 文字列 | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの IP アドレス |
+| `DestinationPort` | 文字列 | 関連するネットワーク通信の宛先ポート |
+| `TargetDeviceName` | 文字列 | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
+| `TargetAccountUpn` | 文字列 | 記録されたアクションが適用されたアカウントのユーザー プリンシパル名 (UPN) |
+| `TargetAccountDisplayName` | 文字列 | 記録されたアクションが適用されたアカウントの表示名 |
+| `Location` | 文字列 | イベントに関連付けられている都市、国、その他の地理的な場所 |
 | `ReportId` | long | イベントの一意識別子 |
-| `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
+| `AdditionalFields` | 文字列 | エンティティまたはイベントに関する追加情報 |
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)

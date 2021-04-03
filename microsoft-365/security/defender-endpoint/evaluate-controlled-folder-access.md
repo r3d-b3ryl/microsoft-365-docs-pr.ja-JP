@@ -1,5 +1,5 @@
 ---
-title: フォルダー アクセスの制御を評価する
+title: 制御されたフォルダー アクセスを評価する
 description: フォルダー アクセスの制御によって、悪意のあるアプリによってファイルが変更されるのを保護する方法について説明します。
 keywords: エクスプロイト保護、Windows 10、Windows Defender、ランサムウェア、保護、評価、テスト、デモ、試す
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218750"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569907"
 ---
-# <a name="evaluate-controlled-folder-access"></a>フォルダー アクセスの制御を評価する
+# <a name="evaluate-controlled-folder-access"></a>制御されたフォルダー アクセスを評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "51218750"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
 [フォルダー アクセスの制御は](controlled-folders.md) 、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護する機能です。 フォルダー アクセスの制御は、Windows Server 2019 および Windows 10 クライアントでサポートされます。
@@ -76,5 +76,5 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ## <a name="see-also"></a>関連項目
 
 * [フォルダー アクセスを制御して重要なフォルダーを保護する](controlled-folders.md)
-* [エンドポイントに対する Microsoft Defender の評価](evaluate-mde.md)
-* [監査モードの使用](audit-windows-defender.md)
+* [Microsoft Defender for Endpoint の評価](evaluate-mde.md)
+* [監査モードを使用する](audit-windows-defender.md)

@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: c0575b5eaf5a4683f86d4a48dd1076fa2c423acf
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c0a29f93b9ea926beaeecb840ba108da04a89ebb
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068315"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501142"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint から高度なハンティング クエリを移行する
 
@@ -180,6 +180,6 @@ AlertInfo
 
 ## <a name="see-also"></a>関連項目
 - [Microsoft 365 Defender を有効にする](advanced-hunting-query-language.md)
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [エンドポイント向け Microsoft Defender での高度な検索](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

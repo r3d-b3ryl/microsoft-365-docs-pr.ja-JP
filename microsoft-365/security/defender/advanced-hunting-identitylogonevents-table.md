@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2d6904d47e58a7cf7a1b7fce5083da43c9a01a76
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: a2eddaaa47fb194028ac53e327fcdf037cbb055d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382509"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500400"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -75,7 +75,7 @@ ms.locfileid: "51382509"
 | `AdditionalFields` | 文字列 | エンティティまたはイベントに関する追加情報 |
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)

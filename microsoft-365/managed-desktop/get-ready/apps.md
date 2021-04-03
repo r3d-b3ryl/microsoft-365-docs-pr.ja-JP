@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ea0990e5f30aa45ec48bb2e6a7c957c187c74ebb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922946"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574621"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのアプリ
 
@@ -75,3 +76,16 @@ Microsoft は、付属の Microsoft 365 Apps for enterprise Apps の展開、更
 ## <a name="deploying-apps"></a>アプリの展開
 
 アプリをパッケージ化するために使用する方法が何であれ、完了したら、「アプリを Microsoft Managed Desktop デバイスに展開する」の手順に従 [う準備ができました](../get-started/deploy-apps.md)。
+
+
+## <a name="steps-to-get-ready"></a>準備の手順
+
+1. 「Microsoft [Managed Desktop の前提条件」を参照してください](prerequisites.md)。
+2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
+3. [ゲスト アカウントの前提条件](guest-accounts.md)
+4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
+5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+7. [Microsoft Managed Desktop のアプリ](apps.md) (この記事)
+8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
+9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)

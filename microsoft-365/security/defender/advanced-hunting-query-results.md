@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dd25d021d04dc5e8a831e327fedb16d28e32b32a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7086108febc25c4ecaaa3015c1d9a49f9d8ee642
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068268"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500914"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を処理する
 
@@ -154,7 +154,7 @@ AppFileEvents
 フィルターを適用してクエリを変更し、クエリを実行すると、結果がそれに応じて更新されます。
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)

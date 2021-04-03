@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0683e0f2c9f4d46b3b644e2fec882a126aaab9b9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5aba1ab4bed0eeb5f6127ab865ceea674e8d5902
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062020"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501000"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの優先順位付け
 
@@ -65,7 +65,7 @@ Microsoft 365 Defender は相関分析を適用し、異なる製品からのす
 ### <a name="assigned-to"></a>割り当て先
 自分に割り当てられているアラート、または自動化によって処理されたアラートを表示できます。
 
-### <a name="categories"></a>カテゴリ
+### <a name="categories"></a>Categories
 カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 
 
 ### <a name="classification"></a>分類

@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e664f0da29e0403b415792c839fd740006791cf0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 71ebcd759e9fb6fd39550975039eb58be13e6b84
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063459"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501156"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -44,12 +44,12 @@ ms.locfileid: "51063459"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | 特定の構成の一意の識別子 |
-| `ConfigurationImpact` | string | 構成が全体の構成スコアに与える影響の評価 (1-10) |
+| `ConfigurationImpact` | 文字列 | 構成が全体の構成スコアに与える影響の評価 (1-10) |
 | `ConfigurationName` | string | 構成の表示名 |
 | `ConfigurationDescription` | string | 構成の説明 |
 | `RiskDescription` | string | 関連するリスクの説明 |
 | `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|
-| `ConfigurationSubcategory` | string |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationSubcategory` | 文字列 |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationBenchmarks` | string | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
 | `Tags` | string | セキュリティ構成を識別または分類するために使用されるさまざまな属性を表すラベル |
 | `RemediationOptions` | string | 関連するリスクを軽減または対処するために推奨されるアクション |

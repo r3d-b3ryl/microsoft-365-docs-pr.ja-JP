@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for Linux
+title: Linux 用 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: Microsoft Defender ATP for Linux をインストールして使用する方法について説明します。
 keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: cc2f5be700395f6d88c05481d74501f4d9d92b76
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408339"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500670"
 ---
 # <a name="microsoft-defender-for-endpoint-for-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51408339"
 このトピックでは、Microsoft Defender for Endpoint for Linux をインストール、構成、更新、および使用する方法について説明します。
 
 > [!CAUTION]
-> Microsoft Defender for Endpoint for Linux と共に他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しないシステム エラーが発生する可能性があります。
+> Microsoft Defender for Endpoint for Linux と共に他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しない副作用が発生する可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、パッシブ モードで実行するウイルス対策機能を構成した後でも、Defender for Endpoint for Linux EDR 機能を安全に利用できます。 [](linux-preferences.md#enable--disable-passive-mode)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Endpoint for Linux をインストールする方法
 
@@ -110,8 +110,8 @@ Microsoft Defender for Endpoint for Linux のインストールと構成に使�
 サービスを有効にした後、ネットワークまたはファイアウォールを構成して、ネットワークとエンドポイント間の送信接続を許可する必要がある場合があります。
 
 - 監査フレームワーク ( `auditd` ) を有効にする必要があります。
-  >[!NOTE]
-  > 追加されたルールによってキャプチャされたシステム イベントは監査ログに追加され、ホストの監査とアップストリーム コレクション `audit.logs` に影響を与える可能性があります。 Microsoft Defender for Endopoint for Linux で追加されたイベントには、キーがタグ付け `mdatp` されます。
+  > [!NOTE]
+  > 追加されたルールによってキャプチャされたシステム イベントは (s) に追加され、ホストの監査とアップストリーム コレクション `/etc/audit/rules.d/` `audit.log` に影響を与える可能性があります。 Microsoft Defender for Endpoint for Linux によって追加されたイベントには、キーがタグ付け `mdatp` されます。
 
 ### <a name="network-connections"></a>ネットワーク接続
 
@@ -145,6 +145,6 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 エンタープライズ環境で製品を構成する方法のガイダンスについては、「Linux 用 Microsoft Defender for Endpoint の基本設定の [設定」を参照してください](linux-preferences.md)。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - ログ記録、アンインストール、その他のトピックの詳細については [、「Resources」を参照してください](linux-resources.md)。

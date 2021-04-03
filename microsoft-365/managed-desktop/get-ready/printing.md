@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3decc7d67decc5557e7921e68108e2ddb447f0fd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924554"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574549"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、印刷リソースを準備する
 
@@ -37,3 +38,15 @@ Microsoft Managed Desktop に登録する準備が整ったら、印刷要件を
 3.  管理ポータルを使用して、要求がいつ完了したのかお知らせします。 最初は、テスト展開グループ内のデバイスにのみ構成を展開します。
 4.  構成が期待通り動作するかどうかをテストして確認する必要があります。 サポート要求の [ **ディスカッション]** タブを使用して返信し、テストが完了したらお知らせします。
 5.  その後、構成を他の展開グループに展開します。
+
+## <a name="steps-to-get-ready"></a>準備の手順
+
+1. 「Microsoft [Managed Desktop の前提条件」を参照してください](prerequisites.md)。
+2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
+3. [ゲスト アカウントの前提条件](guest-accounts.md)
+4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
+5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+7. [Microsoft マネージド デスクトップのアプリ](apps.md)
+8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
+9. [Microsoft Managed Desktop の印刷リソースを準備する](printing.md) (この記事)

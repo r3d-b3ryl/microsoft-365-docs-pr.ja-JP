@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fc2d6ecda35535f6af67aaaf90036ee44b9b79b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4795809b7b24f09e52cb2c48a035dd7925fa136f
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067051"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500721"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -40,44 +40,44 @@ ms.locfileid: "51067051"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
+| `DeviceId` | 文字列 | サービス内のデバイスの一意の識別子 |
+| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
+| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類 |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダー |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは、通常は入力されません。使用可能な場合は SHA1 列を使用します。 |
-| `MD5` | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
+| `MD5` | 文字列 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
 | `ProcessId` | int | 新しく作成されたプロセスのプロセス ID (PID) |
-| `ProcessCommandLine` | string | 新しいプロセスの作成に使用するコマンド ライン |
-| `ProcessIntegrityLevel` | string | 新しく作成されたプロセスの整合性レベル。 Windows は、ダウンロードしたインターネットから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
-| `ProcessTokenElevation` | string | 新しく作成されたプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
+| `ProcessCommandLine` | 文字列 | 新しいプロセスの作成に使用するコマンド ライン |
+| `ProcessIntegrityLevel` | 文字列 | 新しく作成されたプロセスの整合性レベル。 Windows は、ダウンロードしたインターネットから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
+| `ProcessTokenElevation` | 文字列 | 新しく作成されたプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
 | `ProcessCreationTime` | 日付型 | プロセスが作成された日時 |
-| `AccountDomain` | string | アカウントのドメイン |
-| `AccountName` | string | アカウントのユーザー名 |
-| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `LogonId` | string | ログオン セッションの識別子。 この識別子は、再起動の間にのみ同じデバイスで一意です |
-| `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
-| `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
-| `InitiatingProcessAccountSid` | string | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
-| `InitiatingProcessLogonId` | string | イベントを開始したプロセスのログオン セッションの識別子。 この識別子は、再起動の間にのみ同じデバイスで一意です。 |
-| `InitiatingProcessIntegrityLevel` | string | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
-| `InitiatingProcessTokenElevation` | string | イベントを開始したプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
-| `InitiatingProcessSHA1` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
-| `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-256。 このフィールドは、通常は設定されません。使用可能な場合は SHA1 列を使用します。 |
-| `InitiatingProcessMD5` | string | イベントを開始したプロセス (イメージ ファイル) の MD5 ハッシュ |
-| `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
+| `AccountDomain` | 文字列 | アカウントのドメイン |
+| `AccountName` | 文字列 | アカウントのユーザー名 |
+| `AccountSid` | 文字列 | アカウントのセキュリティ識別子 (SID) |
+| `LogonId` | 文字列 | ログオン セッションの識別子。 この識別子は、再起動の間にのみ同じデバイスで一意です |
+| `InitiatingProcessAccountDomain` | 文字列 | イベントを担当するプロセスを実行したアカウントのドメイン |
+| `InitiatingProcessAccountName` | 文字列 | イベントを担当するプロセスを実行したアカウントのユーザー名 |
+| `InitiatingProcessAccountSid` | 文字列 | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
+| `InitiatingProcessLogonId` | 文字列 | イベントを開始したプロセスのログオン セッションの識別子。 この識別子は、再起動の間にのみ同じデバイスで一意です。 |
+| `InitiatingProcessIntegrityLevel` | 文字列 | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
+| `InitiatingProcessTokenElevation` | 文字列 | イベントを開始したプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
+| `InitiatingProcessSHA1` | 文字列 | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
+| `InitiatingProcessSHA256` | 文字列 | イベントを開始したプロセス (イメージ ファイル) の SHA-256。 このフィールドは、通常は設定されません。使用可能な場合は SHA1 列を使用します。 |
+| `InitiatingProcessMD5` | 文字列 | イベントを開始したプロセス (イメージ ファイル) の MD5 ハッシュ |
+| `InitiatingProcessFileName` | 文字列 | イベントを開始したプロセスの名前 |
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
-| `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
+| `InitiatingProcessCommandLine` | 文字列 | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
-| `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
+| `InitiatingProcessFolderPath` | 文字列 | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
 | `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
-| `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
+| `InitiatingProcessParentFileName` | 文字列 | イベントを担当するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を and 列と組み合わせて `DeviceName` 使用する必要 `Timestamp` があります。 |
-| `AppGuardContainerId` | string | ブラウザーのアクティビティを分離するために Application Guard が使用する仮想化コンテナーの識別子 |
+| `AppGuardContainerId` | 文字列 | ブラウザーのアクティビティを分離するために Application Guard が使用する仮想化コンテナーの識別子 |
 
 ## <a name="related-topics"></a>関連項目
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-reference.md)

@@ -145,6 +145,7 @@
 #### [トラブルシューティング]()
 ##### [インストールに関する問題のトラブルシューティング](mac-support-install.md)
 ##### [パフォーマンスに関する問題のトラブルシューティング](mac-support-perf.md)
+##### [クラウド接続に関する問題のトラブルシューティング](troubleshoot-cloud-connect-mdemac.md)
 ##### [カーネル拡張に関する問題のトラブルシューティング](mac-support-kext.md)
 ##### [ライセンスに関する問題のトラブルシューティング](mac-support-license.md)
 
@@ -586,6 +587,7 @@
 #### [攻撃面の減少に関する問題のトラブルシューティング]()
 ##### [ネットワーク保護](troubleshoot-np.md)
 ##### [攻撃面の減少ルール](troubleshoot-asr.md)
+##### [攻撃面の減少ルールに以降する](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
 # [Defender for Office 365](../office-365-security/overview.md)

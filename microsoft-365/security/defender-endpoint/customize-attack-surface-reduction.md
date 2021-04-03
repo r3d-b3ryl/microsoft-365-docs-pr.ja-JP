@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小ルールをカスタマイズする
+title: 攻撃面の減少ルールをカスタマイズする
 description: 監査モード、ブロック モード、または無効モードでルールを個別に設定し、攻撃表面の縮小ルールから除外する必要があるファイルとフォルダーを追加する
 keywords: 攻撃表面の縮小、腰、ホスト侵入防止システム、保護ルール、悪用防止、脆弱性対策、悪用、感染防止、カスタマイズ、構成、除外
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 99a88a869c8a79f79cbc3a16fc73bf556416c51a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 52a51b1035f1aa0fb152cf17dc9561cce378d59d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163300"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570353"
 ---
-# <a name="customize-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールをカスタマイズする
+# <a name="customize-attack-surface-reduction-rules"></a>攻撃面の減少ルールをカスタマイズする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "51163300"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -116,6 +116,6 @@ WMI イベント サブスクリプションによる永続化のブロック | 
 ## <a name="related-topics"></a>関連項目
 
 * [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
-* [攻撃表面の縮小ルールを有効にする](enable-attack-surface-reduction.md)
-* [攻撃表面の縮小ルールを評価する](evaluate-attack-surface-reduction.md)
-* [攻撃表面の縮小に関する FAQ](attack-surface-reduction.md)
+* [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
+* [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
+* [攻撃面の減少の FAQ](attack-surface-reduction.md)

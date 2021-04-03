@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 594d4b5790f95abed966163e448d332467f35b51
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35dd300d828bfa48ad753d7c65f36b2555cf4f60
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068755"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500173"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>ダッシュボードの分析情報 - 脅威と脆弱性の管理
 
@@ -65,8 +65,8 @@ Microsoft Defender セキュリティ センターの脅威と脆弱性の管理
 分野 | 説明
 :---|:---
 **選択したデバイス グループ (#/#)**   | ダッシュボードに表示する脅威と脆弱性の管理データを、デバイス グループ別にフィルター処理します。 フィルターで選択した項目は、脅威と脆弱性の管理ページ全体に適用されます。
-[**露出スコア**](tvm-exposure-score.md)   | 組織のデバイスが脅威や脆弱性にさらされている現在の状態を確認します。 デバイスで検出された弱点、デバイスが侵害される可能性、組織に対するデバイスの価値、デバイスで検出された関連アラートなど、組織の露出スコアに影響を与える要因がいくつかあります。 目標は、組織の露出スコアを下げ、より安全に行う方法です。 スコアを減らすには、セキュリティに関する推奨事項に記載されている関連するセキュリティ構成の問題を修復する必要があります。
-[**デバイスの Microsoft Secure Score**](tvm-microsoft-secure-score-devices.md) | 組織のオペレーティング システム、アプリケーション、ネットワーク、アカウント、およびセキュリティ制御のセキュリティ体制を参照してください。 目標は、関連するセキュリティ構成の問題を修復して、デバイスのスコアを上げです。 バーを選択すると、[セキュリティの推奨事項] **ページに移動** します。
+[**暴露スコア**](tvm-exposure-score.md)   | 組織のデバイスが脅威や脆弱性にさらされている現在の状態を確認します。 デバイスで検出された弱点、デバイスが侵害される可能性、組織に対するデバイスの価値、デバイスで検出された関連アラートなど、組織の露出スコアに影響を与える要因がいくつかあります。 目標は、組織の露出スコアを下げ、より安全に行う方法です。 スコアを減らすには、セキュリティに関する推奨事項に記載されている関連するセキュリティ構成の問題を修復する必要があります。
+[**デバイス向けの Microsoft セキュア スコア**](tvm-microsoft-secure-score-devices.md) | 組織のオペレーティング システム、アプリケーション、ネットワーク、アカウント、およびセキュリティ制御のセキュリティ体制を参照してください。 目標は、関連するセキュリティ構成の問題を修復して、デバイスのスコアを上げです。 バーを選択すると、[セキュリティの推奨事項] **ページに移動** します。
 **デバイスの露出の分布** | 露出レベルに基づいて公開されるデバイスの数を確認します。 ドーナツ グラフのセクションを選択して、[デバイス] リストページに移動し、影響を受けるデバイス名、露出レベル、リスク レベル、その他の詳細 (ドメイン、オペレーティング システム プラットフォーム、正常性状態、最後に表示された状態、タグなど) を表示します。
 **セキュリティに関する推奨事項の上位** | 組織のリスクエクスポージャーと必要な緊急性に基づいて並べ替え、優先順位が付けられている照合されたセキュリティ推奨事項を参照してください。 [ **詳細を表示]** を選択すると、一覧に残りのセキュリティ推奨事項が表示されます。 例外 **がある推奨事項の一** 覧の [例外の表示] を選択します。
 **脆弱なソフトウェアの上位** | ネットワークのデバイスにインストールされている脆弱なソフトウェアのスタックランクのリストと、そのソフトウェアが組織の露出スコアに与える影響について、組織のソフトウェア インベントリをリアルタイムで可視化します。 [ソフトウェア インベントリ]ページで、脆弱なソフトウェアリストの残りの部分を表示するには、詳細のアイテムを選択するか、[詳細を表示]**を選択** します。
@@ -79,9 +79,9 @@ Microsoft Defender セキュリティ センターの脅威と脆弱性の管理
 ## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
-- [露出スコア](tvm-exposure-score.md)
-- [デバイスの Microsoft Secure Score](tvm-microsoft-secure-score-devices.md)
+- [暴露スコア](tvm-exposure-score.md)
+- [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
 - [ソフトウェア インベントリ](tvm-software-inventory.md)
-- [イベントタイムライン](threat-and-vuln-mgt-event-timeline.md)
+- [イベントのタイムライン](threat-and-vuln-mgt-event-timeline.md)
 

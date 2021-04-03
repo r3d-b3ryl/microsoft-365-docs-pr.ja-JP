@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティ機能とコンプライアンス機能を展開し、個人情報を保護します。
-ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2d3a5baa063e6672760dda60ae6d76ea928ccd16
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928474"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500984"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を保護する
 
@@ -83,14 +83,15 @@ Microsoft 365 以外の他の情報保護機能の詳細については、以下
 
 - [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
-- [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
+- [Microsoft エンドポイント マネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows 情報保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 ## <a name="sensitivity-labels"></a>秘密度ラベル
 
 Microsoft Information Protection フレームワークの感度ラベルを使用すると、ユーザーの生産性と共同作業能力を妨げることなく、組織のデータを分類して保護できます。
 
-![Microsoft 365 の感度ラベル](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 の感度ラベル](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>感度ラベルの前提条件
 
@@ -115,7 +116,7 @@ Microsoft Information Protection フレームワークの感度ラベルを使�
 
       電子メール保護に最新の感度ラベル付けを使用する予定で、OME のような既存の電子メール暗号化方法を使用する場合は、同じ機能を使用できますが、どちらを適用するかのシナリオを理解する必要があります。 最新のOfficeタイプの保護と OME ベースの保護を比較する表を含む、365 Message Encryption の新機能 [(OME)](#office-365-message-encryption-ome-new-capabilities)を参照してください。
 
-3. より広範な情報保護スキームへの統合を計画します。 OME との共存の上、現在の感度ラベルは、Microsoft 365 データ損失防止 (DLP) や Microsoft Cloud App Security など、サイドに沿った機能を使用できます。 データプライバシー関連の情報保護の目標を達成するには [、「Sensitivity Labels」と「Microsoft Cloud App Security」](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) を参照してください。
+3. より広範な情報保護スキームへの統合を計画します。 OME との共存の上に、Microsoft 365 データ損失防止 (DLP) や Microsoft Cloud App Security など、一方で感度ラベルを使用できます。 データプライバシー関連の情報保護の目標を達成するには [、「Microsoft 365](../compliance/information-protection.md) の Microsoft Information Protection」を参照してください。
 
 4. 感度ラベルの分類と制御スキームを開発します。 「 [データ分類と感度ラベル分類」を参照してください](https://aka.ms/dataclassificationwhitepaper)。
 
@@ -215,11 +216,13 @@ Microsoft 365 コンプライアンス センターの DLP ポリシーを使用
 
 また、ローカルにインストールされたバージョンの Excel、PowerPoint、および Word の機密アイテムを監視および保護することもできます。この中には、機密性の高いアイテムを識別し、DLP ポリシーを適用する機能が含まれます。 DLP は、ユーザーがこれらのアプリからコンテンツを共有するときにOfficeします。
 
-![DLP でサポートされているワークロード](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> [!div class="mx-imgBorder"]
+> ![DLP でサポートされているワークロード](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 次の図は、個人データを保護する DLP の例を示しています。
 
-![DLP を使用して個人データを保護する例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> [!div class="mx-imgBorder"]
+> ![DLP を使用して個人データを保護する例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 DLP は、正常性レコードを含むドキュメントまたは電子メールを識別し、そのドキュメントへのアクセスを自動的にブロックするか、電子メールの送信をブロックするために使用されます。 その後、DLP は受信者にポリシー ヒントを通知し、エンド ユーザーと管理者にアラートを送信します。
 
@@ -252,7 +255,8 @@ DLP ポリシーの計画は、次の場合に行います。
 
 DLP ポリシーは、Microsoft Compliance 管理センターで構成され、保護のレベル、ポリシーが探している機密情報の種類、およびターゲット ワークロードを指定します。 基本的なコンポーネントは、保護とデータの種類を識別することです。
 
-![Microsoft 365 での DLP ポリシー構成](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 での DLP ポリシー構成](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 GDPR を認識する DLP ポリシーの例を次に示します。
 
@@ -270,7 +274,7 @@ DLP [ポリシーの作成](../compliance/create-test-tune-dlp-policy.md) と適
 
 >[!Note]
 >保護のレベルが上がった場合、ユーザーが情報を共有してアクセスする能力が低下し、生産性や毎日のタスクを完了する能力に影響を与える可能性があります。
->
+
 
 従業員が保護レベルを上げるときに、より安全な環境で生産性を維持するために、時間を取って新しいセキュリティ ポリシーと手順をトレーニングし、教育します。
 
@@ -285,7 +289,8 @@ DLP [ポリシーの作成](../compliance/create-test-tune-dlp-policy.md) と適
 
 これらの要素が決定したら、機密情報の種類、分類の機密ラベル付け、および DLP ポリシーを一緒に使用できます。 次の図は、例を示しています。
 
-![DLP を操作する感度ラベルの例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> [!div class="mx-imgBorder"]
+> ![DLP を操作する感度ラベルの例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [このイメージのより大きなバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 

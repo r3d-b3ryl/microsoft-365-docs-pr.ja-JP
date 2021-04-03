@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager で評価を構築し、組織にとって重要な規制と認定の要件を満たすのに役立ちます。
-ms.openlocfilehash: ff2aa41b91f3cb019dbed542c422d61c79c4ecb5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8051a036f2ffda2f3a2840880318466a2ec71af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908597"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500643"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>コンプライアンス マネージャーでの評価の作成と管理
 
@@ -53,7 +53,7 @@ Microsoft では、Microsoft **365** データ保護基準に関する既定の�
 3. [独自のカスタム評価を作成します](#create-your-own-custom-assessment)。
 
 > [!NOTE]
-> 評価を作成および変更できるのは、グローバル管理者またはコンプライアンス マネージャーの管理役割を持つユーザーのみです。 役割とアクセス [許可について詳しくは、次のページをご覧ください](compliance-manager-setup.md#set-user-permissions-and-assign-roles)。
+> 評価を作成および変更できるのは、グローバル管理者、コンプライアンス マネージャー管理、またはコンプライアンス マネージャー評価者の役割を持つユーザーのみです。 役割とアクセス [許可について詳しくは、次のページをご覧ください](compliance-manager-setup.md#set-user-permissions-and-assign-roles)。
 
 **事前に構築された評価を使用する**
 

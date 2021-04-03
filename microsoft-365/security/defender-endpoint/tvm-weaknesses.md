@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b42e25c409ba19639e77e95fafc3d939514511ea
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 775592cd2ed9c29df79b04e07cb53efb7bea82d6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068444"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501244"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織の脆弱性 - 脅威と脆弱性の管理
 
@@ -155,5 +155,5 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 - [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
 - [ソフトウェア インベントリ](tvm-software-inventory.md)
-- [ダッシュボードの分析情報](tvm-dashboard-insights.md)
+- [ダッシュボード インサイト](tvm-dashboard-insights.md)
 - [Microsoft Defender for Endpoint Devices リストの表示と整理](machines-view-overview.md)

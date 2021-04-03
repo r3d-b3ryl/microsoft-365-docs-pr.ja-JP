@@ -19,12 +19,12 @@ description: セキュリティ コンプライアンス センターでエク�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445722"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570986"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -112,6 +112,8 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 > [!div class="mx-imgBorder"]
 > ![URL タグ](../../media/tags-urls.png)
+> 
+詳しくは、このビデオ [をご覧ください](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)。 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>脅威の検出エクスペリエンスの改善 (今後)
 
@@ -204,7 +206,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 - URL フライアウトの [クリック] セクションに、クリックされた完全な URL  (URL の一部であるクエリ パラメーターを含む) を表示します。 現在、URL ドメインとパスはタイトル バーに表示されます。 その情報を拡張して、完全な URL を表示します。
 
-- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 次に例を示します。
+- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 例:
 
    -  URL、URL ドメイン、URL ドメイン、および URL の [ドメイン] および [パス] フィルター フィールドで、プレフィックスの付きまたは指定 `http://` **なしで** 検索します。   検索は同じ結果を表示する必要があります。
 

@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/10/2020
 ms.technology: mde
-ms.openlocfilehash: 60e8710415e328d06fac4c02e428094e5e4bcc92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ea2524cb214d3cf7c784162a472722727cf0d57c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067460"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500613"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>適切な設定で高度な狩猟範囲を拡張する
 
@@ -45,7 +45,7 @@ ms.locfileid: "51067460"
 
 ## <a name="related-topics"></a>関連項目
 
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-reference.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

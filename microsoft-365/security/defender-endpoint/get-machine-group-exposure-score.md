@@ -7,19 +7,19 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fe4c2d4a4f18a1057472007f21936b4111673849
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 54b3e0cd63189e67de0aa101634508ff8833dc6a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166780"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500244"
 ---
 # <a name="list-exposure-score-by-device-group"></a>デバイス グループ別の露出スコアの一覧表示
 
@@ -56,9 +56,9 @@ GET /api/exposureScore/ByMachineGroups
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前        | 種類 | 説明
+| 名前        | 型 | 説明
 |:--------------|:-------|:--------------|
-| Authorization | 文字列 | ベアラー {token}。**必須**。
+| Authorization | String | ベアラー {token}。**必須**。
 
 ## <a name="request-body"></a>要求本文
 
