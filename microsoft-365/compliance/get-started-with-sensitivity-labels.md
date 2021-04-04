@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: a6b04bcce7d0fe505173a807fbc2d4105831419c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
+ms.openlocfilehash: d685b050d32ea7bf482a39ad8d72abe3ee74567d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051889"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499685"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -32,9 +32,7 @@ ms.locfileid: "51051889"
 
 秘密度ラベルの概要とそれらが組織のデータを保護する方法の詳細については、「[秘密度ラベルの詳細](sensitivity-labels.md)」を参照してください。
 
-[Azure Information Protection](/azure/information-protection/what-is-information-protection) がある場合、ラベルを統合ラベル付けプラットフォームに移行する必要があるかどうか、および使用するラベル付けクライアントを決定します。
-- [自分のテナントが統合されたラベル付けプラットフォームにあるかどうかを判断するにはどうすればよいですか?](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Windows ラベル付けソリューションを選択する](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
+[Azure Information Protection](/azure/information-protection/what-is-information-protection) を使用していて、Azure ポータルから管理されている Azure Information Protection ラベルを引き続き使用している場合は、これらのラベルを[統合ラベル付けプラットフォーム](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)に移行する必要があります。 Windows コンピューターの場合、公開された機密ラベルに[使用するラベル付けクライアント](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)を選択できます。
 
 秘密度ラベルを使用して組織のデータを保護する準備ができたら、次の手順に従います。
 
@@ -64,7 +62,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 既定の役割を使用する代わりに、新しい役割グループを作成し、**秘密度ラベル管理者** の役割または **組織の構成** の役割をこのグループに追加できます。 読み取り専用の役割の場合は、**秘密度ラベルリーダー** を使用します。 
 
-ユーザーを既定の役割に追加する方法、または独自の役割グループを作成する方法については、「[ユーザーに Office 365 セキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
+ユーザーを既定の役割に追加する方法、または独自の役割グループを作成する方法については、「[ユーザーに Office 365 セキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
 
 これらのアクセス許可は、機密ラベルとそのラベル ポリシーの作成と構成を行う場合にのみ必要です。 アプリまたはサービスでラベルを適用するためには必要はありません。 秘密度ラベルに関連する特定の構成に追加のアクセス許可が必要な場合、それらのアクセス許可はそれぞれのドキュメントの説明に記載されています。
 

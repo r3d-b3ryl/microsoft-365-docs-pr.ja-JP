@@ -57,23 +57,6 @@
       items:
         - name: Microsoft マネージド デスクトップの前提条件
           href: get-ready/prerequisites.md
-        - name: ネットワークを準備する
-          href: get-ready/network.md
-        - name: オンプレミス リソースへのアクセスを準備する
-          href: get-ready/authentication.md
-        - name: マップ済みドライブを準備する
-          href: get-ready/mapped-drives.md
-        - name: 証明書とネットワーク プロファイルを準備する
-          href: get-ready/certs-wifi-lan.md
-        - name: ゲスト アカウントの前提条件
-          href: get-ready/guest-accounts.md
-        - name: 印刷リソースを準備する
-          href: get-ready/printing.md
-        - name: アプリを準備する
-          href: get-ready/apps.md
-          items:
-            - name: Microsoft コンサルティング サービスを使用する
-              href: get-ready/apps-MCS.md
         - name: 準備状況の評価ツールを使用する
           href: get-ready/readiness-assessment-tool.md
           items:
@@ -81,6 +64,23 @@
               href: get-ready/readiness-assessment-fix.md
             - name: ダウンロード可能な準備状況の評価チェック
               href: get-ready/readiness-assessment-downloadable.md
+        - name: ゲスト アカウントの前提条件
+          href: get-ready/guest-accounts.md
+        - name: ネットワークを準備する
+          href: get-ready/network.md
+        - name: 証明書とネットワーク プロファイルを準備する
+          href: get-ready/certs-wifi-lan.md
+        - name: オンプレミス リソースへのアクセスを準備する
+          href: get-ready/authentication.md
+        - name: アプリを準備する
+          href: get-ready/apps.md
+          items:
+            - name: Microsoft コンサルティング サービスを使用する
+              href: get-ready/apps-MCS.md
+        - name: マップ済みドライブを準備する
+          href: get-ready/mapped-drives.md
+        - name: 印刷リソースを準備する
+          href: get-ready/printing.md
     - name: Microsoft マネージド デスクトップの使用を開始する
       href: get-started/index.md
       items:

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '概要: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。'
 hideEdit: true
-ms.openlocfilehash: 1c0a2a486bf6964edc9b94fd670c96ade161cacd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b4b256e9138f89cd9d44182a08dd22050b17f7c2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925270"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581108"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL および IP アドレス範囲
 
@@ -66,6 +66,7 @@ Office 365 には、インターネットへの接続が必要です。Office 36
 >
 
 ## <a name="related-topics"></a>関連項目
+[Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](https://docs.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide)
 
 [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)
 

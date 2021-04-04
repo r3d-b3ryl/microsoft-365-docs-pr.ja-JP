@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec60fc7063bdd4a2656385ed86098d6ae2b4abc0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dad2722a1f9e99fad53c83348d049fa9a60f8b62
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205955"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580992"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -52,7 +52,7 @@ Microsoft Defender for Office 365 は、電子メール メッセージ、リン
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の対話型のガイド
 この対話型のガイドでは、Microsoft Defender for Office 365 を使用して組織を保護する方法について説明します。 Defender for Office 365 が、保護ポリシーの定義、組織への脅威の分析、攻撃への対応にどのように役立つかをご覧いただけます。
 
-> [!VIDEO https://aka.ms/MSDO-IG]
+[対話型のガイドをチェックしてください](https://aka.ms/MSDO-IG)
 
 ## <a name="getting-started"></a>はじめに
 
@@ -97,6 +97,8 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Microsoft Defender for Office 365 のポリシーを構成する
 
 Microsoft Defender for Office 365 を使用して、組織のセキュリティ チームは、セキュリティ/コンプライアンス センターでポリシーを定義することにより、保護を構成できます ([<https://protection.office.com> \> **脅威管理** \> **ポリシー**] に移動します)。
+
+[このビデオ](https://www.youtube.com/watch?v=vivvTmWJ_3c)を見て詳細をご確認ください。 
 
 > [!TIP]
 > 定義するポリシーの簡便なリストについては、「[脅威から保護する](protect-against-threats.md)」を参照してください。

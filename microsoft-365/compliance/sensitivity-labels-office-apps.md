@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034196"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498825"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -119,7 +119,7 @@ Office 組み込みのラベル付けクライアントを使用するには、�
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 組み込みのラベル付けクライアントと Azure Information Protection クライアント
 
-ユーザーが Azure Information Protection クライアントの 1 つ ([統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)または[クラシック クライアント](/azure/information-protection/rms-client/aip-client)) をインストールしている場合、既定では、組み込みのラベル付けクライアントは Office アプリでオフになっています。 
+ユーザーが [Azure Information Protection クライアント](/azure/information-protection/rms-client/aip-clientv2)をインストールしている場合、既定では、組み込みのラベル付けクライアントは Office アプリでオフになっています。 
 
 Azure Information Protection client for Office アプリではなく組み込みのラベル機能を使用するには、グループ ポリシー設定 [[Office 2013 および Office 2016 プログラムのグループ ポリシー設定が理由で読み込まれたアドインなし]](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)に記述された **[管理対象アドインの一覧]** を使用することをお勧めします。
 
