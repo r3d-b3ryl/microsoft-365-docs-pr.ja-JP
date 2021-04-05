@@ -1,6 +1,6 @@
 ---
-title: 動作のブロックと格納
-description: Microsoft Defender ATP の動作のブロックと格納機能について説明します。
+title: 動作ブロックと封じ込め
+description: Microsoft Defender for Endpoint での動作のブロックと格納機能について説明します。
 keywords: Microsoft Defender ATP、ブロック モードの EDR、パッシブ モードのブロック
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: dcad3b7233f2efd444d41c15916eaae195634c8c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166235"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587169"
 ---
-# <a name="behavioral-blocking-and-containment"></a>動作のブロックと格納
+# <a name="behavioral-blocking-and-containment"></a>動作ブロックと封じ込め
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51166235"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>概要
 
@@ -42,7 +42,7 @@ ms.locfileid: "51166235"
 
 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作とプロセス ツリーに基づいて、脅威を特定して停止するのに役立ちます。 次世代の保護、EDR、Defender for Endpoint のコンポーネントと機能は、動作ブロック機能と格納機能で機能します。 
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="動作のブロックと格納":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="動作ブロックと封じ込め":::
 
 動作のブロックと格納機能は、Defender for Endpoint の複数のコンポーネントと機能と組み合わせ、攻撃を直ちに停止し、攻撃の進行を防止します。
 

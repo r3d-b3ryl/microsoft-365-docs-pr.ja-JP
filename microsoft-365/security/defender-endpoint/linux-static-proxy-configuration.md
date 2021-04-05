@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 461c728f6b61aa407d76e3674ba3339027c21a25
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b96f49d6c4744eae987393c17792c4f566d98997
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187459"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587073"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-for-linux-for-static-proxy-discovery"></a>静的プロキシ検出用に Microsoft Defender for Endpoint for Linux を構成する
 
@@ -35,7 +34,7 @@ ms.locfileid: "51187459"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft Defender ATP は、環境変数を使用してプロキシ サーバーを ```HTTPS_PROXY``` 検出できます。 この設定は、インストール時 **と** 製品のインストール後の両方で構成する必要があります。
 

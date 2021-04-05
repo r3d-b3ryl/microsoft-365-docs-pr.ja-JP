@@ -1,7 +1,7 @@
 ---
-title: Android の機能用に Microsoft Defender ATP を構成する
-description: Android 用 Microsoft Defender ATP を構成する方法について説明します。
-keywords: microsoft, defender, atp, android, configuration
+title: Android 機能用に Microsoft Defender for Endpoint を構成する
+description: Android 用エンドポイント用 Microsoft Defender を構成する方法について説明します。
+keywords: microsoft、 defender, atp, mde, android, configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4325020e653f14898ece4192e03cbf8b90131136
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c395aafc8a468cfdeaea973ab02421212870192a
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163449"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587217"
 ---
 # <a name="configure-defender-for-endpoint-for-android-features"></a>Android の機能用に Defender for Endpoint を構成する
 
@@ -52,5 +51,5 @@ Defender for Endpoint for Android では、IT 管理者は Web 保護機能を�
 > Android 用エンドポイントの Defender は、Web 保護機能を提供するために VPN を使用します。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。 詳細については、「Android を実行 [するデバイスで Web 保護を構成する」を参照してください](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android)。
 
 ## <a name="related-topics"></a>関連項目
-- [Android 用エンドポイント向け Microsoft Defender の概要](microsoft-defender-endpoint-android.md)
-- [Microsoft Intune を使用して Microsoft Defender for Endpoint for Android を展開する](android-intune.md)
+- [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
+- [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)

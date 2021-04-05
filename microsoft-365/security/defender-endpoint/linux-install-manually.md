@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for Linux を手動で展開する
+title: Microsoft Defender for Endpoint for Linux を手動で展開する
 ms.reviewer: ''
 description: コマンド ラインから手動で Microsoft Defender ATP for Linux を展開する方法について説明します。
 keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 98b568206d4263a574c8de653fe5345dd344ba43
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 91dda662b12893fb010e8bb46541a87ea4a8cd27
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408549"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587673"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Microsoft Defender for Endpoint for Linux を手動で展開する
 
@@ -35,7 +34,7 @@ ms.locfileid: "51408549"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 この記事では、Microsoft Defender for Endpoint for Linux を手動で展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
 

@@ -1,5 +1,5 @@
 ---
-title: Defender for Endpoint Defender ATP Devices リストのデバイスを調査する
+title: Defender for Endpoint Devices リストのデバイスを調査する
 description: アラート、ネットワーク接続情報、デバイス タグとグループの追加、サービスの正常性の確認を行って、影響を受けるデバイスを調査します。
 keywords: デバイス、タグ、グループ、エンドポイント、アラート キュー、アラート、デバイス名、ドメイン、最後に表示される、内部 IP、アクティブなアラート、脅威カテゴリ、フィルター、並べ替え、アラートの確認、ネットワーク、接続、種類、パスワードの盗み取り、ランサムウェア、悪用、脅威、重要度の低い、サービスの正常性
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f5415b6337d21b780a75a192a565078a6cacc06
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185733"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587721"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストのデバイスを調査する
 
@@ -34,7 +34,7 @@ ms.locfileid: "51185733"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 特定のデバイスで発生したアラートの詳細を調べて、アラートまたは侵害の潜在的な範囲に関連する可能性のある他の動作またはイベントを特定します。
 
@@ -70,11 +70,11 @@ ms.locfileid: "51185733"
 - タグの管理
 - デバイスの分離
 - アプリの実行を制限する
-- ウイルス対策スキャンの実行
+- ウイルス対策スキャンを実行する
 - 調査パッケージの収集
 - ライブ応答セッションの開始
 - 自動調査の開始
-- 脅威の専門家に相談する
+- 脅威のエキスパートに相談する
 - アクション センター
 
 アクション センター、特定のデバイス ページ、または特定のファイル ページで応答アクションを実行できます。

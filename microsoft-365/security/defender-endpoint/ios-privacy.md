@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f3851d9ecc0a40a9fa52702ee187fb8a94a740c3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 97d22cd8ff1c651bdab5c3613567b2a4778ec9d6
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186679"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587577"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-for-ios"></a>プライバシー情報 - Microsoft Defender for Endpoint for iOS
 
@@ -32,7 +31,7 @@ ms.locfileid: "51186679"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
 > Defender for Endpoint for iOS では、VPN を使用して Web 保護機能を提供します。 これは通常の VPN ではなく、デバイスの外部でトラフィックを受け取らないローカルまたは自己ループ VPN です。 **Microsoft または組織では、閲覧アクティビティが表示されない。**

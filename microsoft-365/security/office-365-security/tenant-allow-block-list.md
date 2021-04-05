@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55116ddac8fa25b63e50b7fba73f668855e2858d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 103ddc9aa0858f9203582ac07a655fd7f5506cf3
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206440"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587589"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL を管理する
 
@@ -33,9 +33,6 @@ ms.locfileid: "51206440"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
->
-> この記事で説明する機能はプレビューで、変更される可能性があります。一部の組織では利用できません。
->
 > 現時点 **では、テナント** 許可/ブロック一覧で許可アイテムを構成できません。
 
 Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない Microsoft 365 組織では、EOP フィルターの評決に同意しない可能性があります。 たとえば、メッセージが正しい (誤検知) とマークされている場合や、悪いメッセージが許可される場合があります (偽陰性)。

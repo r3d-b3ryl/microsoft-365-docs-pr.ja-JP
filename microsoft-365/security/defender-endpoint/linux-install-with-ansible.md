@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eca9727676fec9b716724719c182ca958b22ec85
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0a4dd551da8fcb38559360307a878edde3b3a1ba
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187807"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587637"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-with-ansible"></a>Ansible を使用して Microsoft Defender for Endpoint for Linux を展開する
 
@@ -35,7 +34,7 @@ ms.locfileid: "51187807"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 この記事では、Ansible を使用して Defender for Endpoint for Linux を展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
 

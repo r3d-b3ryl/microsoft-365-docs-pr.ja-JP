@@ -1,6 +1,6 @@
 ---
-title: クライアントの動作のブロック
-description: クライアントの動作ブロックは、Microsoft Defender ATP の動作ブロックと格納機能の一部です。
+title: クライアントの動作ブロック
+description: クライアントの動作ブロックは、Microsoft Defender for Endpoint の動作ブロックと格納機能の一部です。
 keywords: 動作ブロック、迅速な保護、クライアントの動作、Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c37a1180f9def51daa4229418b05abe7cf787aa3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165263"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587109"
 ---
-# <a name="client-behavioral-blocking"></a>クライアントの動作のブロック
+# <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51165263"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>概要
 
@@ -65,7 +65,7 @@ ms.locfileid: "51165263"
 |特権エスカレーション   | 動作:Win32/PrivilegeEscalation.*!ml |
 |Defense Evasion    | 動作:Win32/DefenseEvasion.*!ml |
 |資格情報アクセス  | 動作:Win32/CredentialAccess.*!ml |
-|Discovery  | 動作:Win32/Discovery.*!ml |
+|検出  | 動作:Win32/Discovery.*!ml |
 |横方向の動き | 動作:Win32/LateralMovement.*!ml |
 |Collection |   動作:Win32/Collection.*!ml |
 |コマンドとコントロール | 動作:Win32/CommandAndControl.*!ml |
@@ -87,13 +87,13 @@ ms.locfileid: "51165263"
 
 - [ブロック モードの EDR](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
-- [攻撃面の縮小](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [攻撃面の減少](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
 - [次世代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (ウイルス対策)
 
 ## <a name="related-articles"></a>関連記事
 
-- [動作のブロックと格納](behavioral-blocking-containment.md)
+- [動作ブロックと封じ込め](behavioral-blocking-containment.md)
 
 - [フィードバック ループのブロック](feedback-loop-blocking.md)
 

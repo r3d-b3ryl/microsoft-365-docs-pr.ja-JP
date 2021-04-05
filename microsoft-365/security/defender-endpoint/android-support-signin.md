@@ -1,7 +1,7 @@
 ---
-title: Android 用 Microsoft Defender ATP の問題のトラブルシューティング
-description: Android 用 Microsoft Defender ATP の問題のトラブルシューティング
-keywords: microsoft、Defender、atp、android、クラウド、接続、コミュニケーション
+title: Microsoft Defender for Endpoint for Android の問題のトラブルシューティング
+description: Microsoft Defender for Endpoint for Android の問題のトラブルシューティング
+keywords: microsoft、Defender、atp、mde、android、クラウド、接続、コミュニケーション
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 444541c85f8f4416288dcebf4bbee2c65a33d3d2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5fabcb3156a54d4aa8a4671d7561a8deca16fe1f
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164871"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587649"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-for-android"></a>Microsoft Defender for Endpoint for Android の問題のトラブルシューティング
 
@@ -33,7 +32,7 @@ ms.locfileid: "51164871"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 デバイスのオンボード時に、アプリのインストール後にサインインの問題が表示される場合があります。
 

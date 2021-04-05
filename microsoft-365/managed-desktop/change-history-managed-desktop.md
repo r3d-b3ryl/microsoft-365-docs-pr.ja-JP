@@ -13,16 +13,38 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9176bfbbd015243266ba1c8cbad9d04787f6a6cc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5e57f21690372b16c86a65fcfe4d00cb5c907391
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909252"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587529"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 この記事では、Microsoft Managed Desktop のドキュメントの新しい記事 [と更新された記事を一覧表示します](index.yml)。 「更新された」記事には、重要な追加や修正が含め、誤字、スタイル、書式設定の問題の修正などのマイナーな修正は一覧に表示されません。 GitHub のリポジトリにアクセスすると、特定のコミットの履歴 (変更の詳細を含む) をいつでも [表示できます](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
+
+## <a name="march-2021"></a>2021 年 3 月
+新しい記事または変更された記事 | 説明
+--- | ---
+[Microsoft マネージド デスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
+[Autopilot と登録ステータス ページの初回実行時エクスペリエンス](get-started/esp-first-run.md) | 更新された記事
+[Windows 10 の位置情報サービス](get-started/device-location.md) | 新しい記事
+[デバイスの画像](service-description/device-images.md) | 新しい記事
+[Microsoft Managed Desktop でサポートされている地域](service-description/regions-languages.md) | 更新された記事
+[ユーザー エクスペリエンスをローカライズ](get-started/localization.md) | 新しい記事
+
+## <a name="february-2021"></a>2021 年 2 月
+新しい記事または変更された記事 | 説明
+--- | ---
+[管理ポータルへのアクセス](get-started/access-admin-portal.md) | 更新された記事
+[Microsoft マネージド デスクトップのテクノロジ](intro/technologies.md) | 更新された記事
+[デバイスの要件](service-description/device-requirements.md) | 更新された記事
+[準備評価ツールで見つかった問題を修正する](get-ready/readiness-assessment-fix.md) | 更新された記事
+[Microsoft OneDrive](get-started/onedrive.md) | 新しい記事
+[コンプライアンス](intro/compliance.md) | 更新済み
+[Microsoft 365 Apps for enterprise](get-started/m365-apps.md) | 更新された記事
+[準備状況評価ツール](get-ready/readiness-assessment-tool.md) | 更新された記事
 
 ## <a name="january-2021"></a>2021 年 1 月
 新しい記事または変更された記事 | 説明
@@ -267,7 +289,7 @@ ms.locfileid: "50909252"
 --- | ---
 [Microsoft Managed Desktop デバイスに Intune ポータルをインストールする](get-started/company-portal.md) | 新しい記事
 [Microsoft マネージ デスクトップ デバイスに Microsoft Project と Microsoft Visio をインストールする](get-started/project-visio.md) | 新しい記事 
-[Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](get-ready/authentication.md) | 新しい記事
+[Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](get-ready/authentication.md) | 新しい記事
 [Microsoft Managed Desktop にデバイスを登録する](get-started/register-devices-self.md) | 新しい記事
 [Microsoft Managed Desktop for Partners にデバイスを登録する](get-started/register-devices-partner.md) | 新しい記事
 [Microsoft Managed Desktop デバイスへのアプリの展開](get-started/deploy-apps.md) | 更新された記事

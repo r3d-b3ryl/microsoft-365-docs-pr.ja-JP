@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 484869535c466435ab997f32bf858dd1ad52c841
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f5e9c237f53351df0249f0a12d08b8ba61572f7e
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187495"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587085"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Endpoint for Linux の除外を構成および検証する
 
@@ -34,7 +33,7 @@ ms.locfileid: "51187495"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 この記事では、オンデマンド スキャンに適用される除外を定義する方法、およびリアルタイムの保護と監視について情報を提供します。
 
@@ -55,7 +54,7 @@ ms.locfileid: "51187495"
 除外 | 定義 | 例
 ---|---|---
 ファイル拡張子 | 拡張子が付いたすべてのファイル(デバイス上の任意の場所) | `.test`
-ファイル | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+File | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 フォルダー | 指定したフォルダーの下のすべてのファイル (再帰的) | `/var/log/`<br/>`/var/*/`
 プロセス | 特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル | `/bin/cat`<br/>`cat`<br/>`c?t`
 

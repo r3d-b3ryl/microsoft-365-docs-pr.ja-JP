@@ -1,7 +1,7 @@
 ---
 title: ブロック モードでのエンドポイントの検出と応答
 description: ブロック モードでのエンドポイントの検出と応答の詳細
-keywords: Microsoft Defender ATP、ブロック モードの EDR、パッシブ モードのブロック
+keywords: Microsoft Defender ATP、mde、ブロック モードの EDR、パッシブ モードのブロック
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379480"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587205"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントの検出と応答 (EDR)
 
@@ -35,7 +35,7 @@ ms.locfileid: "51379480"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>ブロック モードの EDR とは
 
@@ -139,6 +139,6 @@ Microsoft Defender Antivirus がアクティブ モードまたはパッシブ �
 ## <a name="see-also"></a>関連項目
 
 - [Tech Community ブログ: ブロック モードでの EDR の導入: トラックでの攻撃の停止](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
-- [動作のブロックと格納](behavioral-blocking-containment.md)
+- [動作ブロックと封じ込め](behavioral-blocking-containment.md)
 - [より良い一緒に:Microsoft Defender Antivirus と Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

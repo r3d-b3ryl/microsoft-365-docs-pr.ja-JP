@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP でユーザー アカウントを調査する
+title: Microsoft Defender for Endpoint のユーザー アカウントを調査する
 description: 調査中に、侵害された資格情報や関連付けられたユーザー アカウントのピボットが発生する可能性があるユーザー アカウントを調査します。
 keywords: 調査, アカウント, ユーザー, ユーザー エンティティ, アラート, microsoft Defender atp
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e79e558a7d256c46178e91b89bff27bfa6893ce9
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 672867d107d005004201caab7d6497ceb048ac97
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186715"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587709"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のユーザー アカウントを調査する
 
@@ -35,7 +35,7 @@ ms.locfileid: "51186715"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
 
 ## <a name="investigate-user-account-entities"></a>ユーザー アカウント エンティティの調査
 
