@@ -16,18 +16,16 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Teams でセキュリティで保護されたコンテンツコラボレーションをセットアップして、その感度に基づいてデータを保護する方法について学習します。
-ms.openlocfilehash: 88cb3557f1c150a9c9fd68ba362fcc9c424aa73a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 804307b3035f0d2246dc0ac541cce2d63506c351
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906470"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591912"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Microsoft 365 とセキュリティで保護された共同作業を設定する
+# <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Microsoft 365 および Microsoft Teams との安全なコラボレーションをセットアップする
 
 適切なユーザーと簡単に情報を共有できる一方で、過剰共有を防ぐことが、組織の成功の鍵となります。 これには、機密性の高いデータを、アクセス権を持つ必要があるユーザーと安全に共有できる機能が含まれます。 プロジェクトによっては、機密データを組織外のユーザーと共有する場合があります。
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 このコラボレーション ソリューション のガイダンスには、次の 2 つのコンポーネントが含まれています。
 - プロジェクトごとに適切なレベルの保護を備え、Microsoft Teams を展開する
@@ -36,6 +34,8 @@ ms.locfileid: "50906470"
 ![適切な保護を使用して Teams を展開し、適切なセキュリティ設定で外部共有を構成する](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 多目的で使いやすいコンテンツ コラボレーション ツールが利用できない場合、ユーザーはドキュメントに電子メールを送信して共同作業を行う場合が多い。 これは、時間の多いエラーが発生しやすい共同作業方法であり、情報の不適切な共有のリスクを高める可能性があります。 共有情報が難しすぎると、IT によって管理されていないコンシューマー製品の使用に戻る可能性があります。 これにより、さらに大きなリスクが生じ得る可能性があります。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Microsoft 365 では、次に役立つさまざまな構成で Teams を展開できます。
 
@@ -71,7 +71,7 @@ Microsoft 365 では、次に役立つさまざまな構成で Teams を展開�
 | Microsoft Teams   | ゲスト アクセス、プライベート チーム、プライベート チャネル | Microsoft 365 E1、E3、E5 |
 | Microsoft 365 コンプライアンス  | 秘密度ラベル    | Microsoft 365 E3、E5 |
 
-### <a name="collaboration-governance"></a>共同作業のガバナンス
+### <a name="collaboration-governance"></a>共同作業ガバナンス
 
 Microsoft 365 には、コラボレーション ソリューションを管理するための多くのオプションが提供されています。 この展開コンテンツをコラボレーション ガバナンス コンテンツと[](collaboration-governance-overview.md)共に使用して、組織に最適なコラボレーション ソリューションを作成することをお勧めします。
 

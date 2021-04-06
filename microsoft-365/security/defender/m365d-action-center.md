@@ -20,13 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/01/2021
-ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199599"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592086"
 ---
 # <a name="the-action-center"></a>アクション センター
 
@@ -96,12 +95,12 @@ ms.locfileid: "51199599"
 
 - 調査パッケージの収集 
 - デバイスを分離する (この操作は元に戻すことができます) 
-- オフボード マシン 
+- マシンのオフボード 
 - リリース コードの実行 
 - 検疫からの解放 
 - 要求サンプル 
 - コードの実行を制限する (このアクションは元に戻すことができます) 
-- ウイルス対策スキャンの実行 
+- ウイルス対策スキャンを実行する 
 - 停止と検疫 
 
 自動調査の結果として自動的に実行される修復アクションに加[](m365d-autoir.md)えて、アクション センターは、検出された脅威に対処するためにセキュリティ チームが実行したアクションと、Microsoft 365 Defender の脅威保護機能の結果として実行されたアクションも追跡します。 自動修復アクションと手動修復アクションの詳細については、「修復アクション」 [を参照してください](m365d-remediation-actions.md)。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Cloud Deutschland からの移行の事前作業
+title: Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -18,28 +18,32 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する場合の事前作業。'
-ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: e04246626088d9fca653c98246fd4a5b81bc1d30
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476351"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591876"
 ---
-# <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の事前作業
+# <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
-組織に関連する作業前の手順にアクセスするには、次のリンクを使用します。
+これらのリンクを使用して、組織に関連する移行前の手順に移動します。
 
-- Microsoft Cloud Deutschland で **Office** 365 を使用しているすべてのお客様に対して、次の手順を [実行します](#general-tenant-migration-considerations)。
-- **DNS の変更については、** この [手順を実行します](#dns)。
-- オンプレミスで Active **Directory フェデレーション サービスを使用している場合は** 、次の手順 [を実行します](#active-directory-federation-services-ad-fs)。
-- SharePoint Online を使用 **している場合は、** この手順 [を実行します](#sharepoint-online)。
-- Exchange Online または Exchange ハイブリッド **を使用** している場合 **は、** この手順 [を実行します](#exchange-online)。
-- Skype for Business Online を **使用している場合は、** この手順 [を実行します。](#skype-for-business-online)
-- サードパーティのモバイル デバイス管理 (MDM) ソリューションを使用している場合は、この手順 [を実行します](#mobile-device-management)。
-- サード パーティのサービスまたは 365 と統合されている業務ライン **(LOB)** アプリを使用している場合Office手順を [実行します](#line-of-business-apps)。
-- **Dynamics 365** も使用している場合は、この手順 [を実行します](#dynamics365)。
-- Power BI も使用している **場合は、** この手順 [を実行します](#power-bi)。
-- Azure サービスを 365 サブスクリプションと一緒にOffice場合は、この手順を[実行します](#microsoft-azure)。 
+使用している場合
+
+- **Office 365 in Microsoft Cloud Deutschland,** do these [steps](#general-tenant-migration-considerations).
+- **カスタム ドメインは、** この [手順を実行します](#dns-entries-for-custom-domains)。
+
+- **SharePoint Online 、** この手順 [を実行します](#sharepoint-online)。
+- **Exchange Online または** **Exchange ハイブリッド 、** この手順 [を実行します](#exchange-online)。
+- **Skype for Business Online 、** この手順 [を実行します](#skype-for-business-online)。
+- **Dynamics 365 は**、この手順 [を実行します](#dynamics365)。
+- **Power BI 、** この [手順を実行します](#power-bi)。
+
+- **Active Directory フェデレーション サービス** for Azure AD接続するには、次の手順 [を実行します](#active-directory-federation-services-ad-fs)。
+- **サード パーティのサービス** または 365 と統合された LOB **(line-of-business)** アプリOfficeこの手順を [実行します](#line-of-business-apps)。
+- サードパーティのモバイル デバイス管理 (MDM) ソリューションで、この手順 [を実行します](#mobile-device-management)。
+- **Azure services with** your Office 365 サブスクリプション, この [手順を実行します](#microsoft-azure)。
 
 ## <a name="general-tenant-migration-considerations"></a>テナントの移行に関する一般的な考慮事項
 
@@ -59,7 +63,7 @@ Office 365 テナントとユーザー識別子は移行中に保持されます
 | 移行中にコンテンツ [が](https://docs.microsoft.com/microsoft-365/compliance/retention) 不注意で削除されるのを回避するために、組織全体の保持ポリシーを作成します。  |<ul><li>移行中にエンド ユーザーによってコンテンツが誤って削除されるのを回避するために、組織全体の保持ポリシーを有効にすることもできます。 </li><li>保持は必要ありませんが、移行中はいつでも保持が期待通り動作する必要があります。保持ポリシーを持つことはバックアップの安全メカニズムです。 同時に、保持ポリシーは、すべての顧客、特に保存過多を懸念しているユーザーが使用する場合があります。</li></ul>| 「アイテム保持ポリシーと保持ラベルについて」の [説明に従ってアイテム保持ポリシーを適用します](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 / 9 より前に行われない場合に発生する可能性があります。 </li></ul>|
 |||||
 
-## <a name="dns"></a>DNS
+## <a name="dns-entries-for-custom-domains"></a>カスタム ドメインの DNS エントリ
 
 <!-- before phase 9 -->
 
@@ -72,7 +76,7 @@ Office 365 テナントとユーザー識別子は移行中に保持されます
 DNS 名前空間で CNAME を設定した場合に確認するには、以下の手順に従い、contoso.com を独自 _のドメイン名_ に置き換える必要があります。
 
 ```console
-nslookup -querytype=CNMAE msoid.contoso.com
+nslookup -querytype=CNAME msoid.contoso.com
 ```
 
 コマンド ラインが DNS レコードを返す場合は、ドメインから _msoid_ CNAME を削除します。

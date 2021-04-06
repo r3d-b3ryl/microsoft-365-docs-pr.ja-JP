@@ -20,14 +20,13 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/29/2021
 ms.technology: m365d
-ms.openlocfilehash: d78bf3689020b5a24863e5a0f1ec817af50178ad
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7106f5d2e740d2b4cacbcaeb0b9391095bbeb356
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065907"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592026"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>アクション センターでのアクションの表示と管理
 
@@ -52,8 +51,11 @@ Microsoft 365 Defender の脅威保護機能により、特定の修復アクシ
 ![アクションを承認または拒否する](../../media/air-actioncenter-itemselected.png)
 
 1. [https://security.microsoft.com](https://security.microsoft.com) に移動し、サインインします。 
+
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
+
 3. アクション センターの [**Pending (保留中)**] タブで、リスト内のアイテムを選択します。 そのフライアウト ウィンドウが開きます。
+
 4. フライアウト ウィンドウで情報を確認し、次のいずれかの手順を実行します。
    - [ **調査ページを開く]** を選択して、調査の詳細を表示します。
    - [承認 **] を** 選択して保留中のアクションを開始します。
@@ -71,19 +73,25 @@ Microsoft 365 Defender の脅威保護機能により、特定の修復アクシ
 ### <a name="undo-one-remediation-action"></a>1 つの修復アクションを元に戻す
 
 1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
+
 2. [履歴 **] タブ** で、元に戻す操作を選択します。
+
 3. 画面の右側のウィンドウで、[元に戻す] を **選択します**。
 
 ### <a name="undo-multiple-remediation-actions"></a>複数の修復アクションを元に戻す
 
 1. [アクション センター] に移動し https://security.microsoft.com/action-center) 、サインインします。
+
 2. [履歴 **] タブ** で、元に戻す操作を選択します。 同じアクションの種類を持つアイテムを選択してください。 フライアウト ウィンドウが開きます。
+
 3. フライアウト ウィンドウで、[元に戻す] を **選択します**。
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイス間で検疫からファイルを削除するには 
 
 1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
+
 2. [履歴 **] タブ** で、アクションの種類が [検疫ファイル] のファイルを **選択します**。
+
 3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を **選択します**。
 
 ## <a name="next-steps"></a>次の手順

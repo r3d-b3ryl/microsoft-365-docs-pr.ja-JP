@@ -1,6 +1,6 @@
 ---
 title: 自動調査の詳細と結果
-description: 自動調査の結果と主な検出事項は、調査の実行中および実行後に表示できます。
+description: Microsoft 365 Defender での自動調査の結果と主要な結果を表示する
 keywords: 自動化、調査、結果、分析、詳細、修復、autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
-ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198971"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592122"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -61,8 +60,11 @@ Microsoft 365 Defender では[](m365d-autoir.md)、自動調査が実行され�
 > アクションを承認 [、拒否、または](m365d-action-center.md#required-permissions-for-action-center-tasks) 元に戻すには、特定のアクセス許可が必要です。
 
 1. [https://security.microsoft.com](https://security.microsoft.com) に移動し、サインインします。 
+
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
+
 3. [**保留中**] タブまたは [**履歴**] タブのいずれかでアイテムを選択します。 そのフライアウト ウィンドウが開きます。
+
 4. フライアウト ウィンドウで情報を確認し、次のいずれかの手順を実行します。
    - [ **調査ページを開く]** を選択して、調査の詳細を表示します。
    - [承認 **] を** 選択して保留中のアクションを開始します。
@@ -76,9 +78,13 @@ Microsoft 365 Defender では[](m365d-autoir.md)、自動調査が実行され�
 ![インシデントの詳細](../../media/mtp-incidentdetails-tabs.png)
 
 1. [https://security.microsoft.com](https://security.microsoft.com) に移動し、サインインします。 
+
 2. ナビゲーション ウィンドウで、[インシデント] を選択 **し、[インシデント&通知**  >  **します**。 
+
 3. リストでアイテムを選択し、[インシデント ページを開 **く] を選択します**。
+
 4. [調査 **] タブを** 選択し、一覧で調査を選択します。 そのフライアウト ウィンドウが開きます。
+
 5. [調査 **ページを開く] を選択します**。 
 
 ## <a name="investigation-details"></a>調査の詳細
@@ -98,7 +104,7 @@ Microsoft 365 Defender では[](m365d-autoir.md)、自動調査が実行され�
 | **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、Office アプリ、Cloud App Security、その他の Microsoft 365 Defender 機能の脅威保護機能から発生する可能性があります。|
 | **デバイス** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、 [デバイス グループのオートメーション レベルに対応します](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
-| **ユーザー**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
+| **Users**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
 | **証拠** | アラート/調査によって発生した証拠の一部を一覧表示します。 評決 (悪意のある、疑 *わしい、* または脅威が見 *つからない*) と修復の状態が含まれます。 |
 | **Entities**  | 各エンティティの種類 (悪意のある、疑わしい、または脅威が見つからない)の評決を含む、分析された各エンティティの詳細 *を提供します*。|
 |**Log**    | アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f6b085f200d3b0c71bb3608f8e5ba9ed85632676
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a6c7e7e920d18d9d8bf29d71d317008ea0c37bbf
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500336"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592098"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender のインシデントを調査する
 
@@ -85,6 +85,10 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 ![インシデントの [コンピューター] タブの画像](../../media/incident-machines.png)
 
 [タイムライン] タブを選択すると、コンピューターのタイムラインをスクロールして、コンピューター上で監視されているすべてのイベントおよび動作、発生したアラートを日付順に表示できます。
+
+> [!TIP]
+> デバイス ページでオンデマンド スキャンを実行できます。 Microsoft 365 セキュリティ センターで、[デバイス インベントリ] **を選択します**。 通知があるデバイスを選択し、ウイルス対策スキャンを実行します。 ウイルス対策スキャンなどのアクションは追跡され、[デバイス インベントリ] ページ **に表示** されます。 詳細については、「デバイスで [Microsoft Defender ウイルス対策スキャンを実行する」を参照してください](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+
 
 ## <a name="users"></a>ユーザー
 

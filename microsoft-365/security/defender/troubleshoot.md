@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender サービスの問題のトラブルシューティング
-description: 既知の Microsoft 365 Defender の問題に関する解決策を見つけて回避する
+description: 既知の Microsoft 365 Defender の問題に対する解決策と回避策を見つける
 keywords: Microsoft Threat Protection のトラブルシューティング、トラブルシューティング、Azure ATP、問題、アドオン、設定ページ
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d8083cbba3582c41ca91c57978675987822d0d9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a2cd27bf7bf8b1c4931b9d768f3a6b5e5f2a0d93
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065899"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592038"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender サービスの問題のトラブルシューティング
 
@@ -49,6 +49,12 @@ ms.locfileid: "51065899"
 
 詳細については [、「Microsoft Defender for Identity integration」を参照してください](/cloud-app-security/mdi-integration)。
 
-## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>サービスを有効にする設定ページはどこに表示されますか?
+## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>サービスを有効にする設定ページはどこに表示されますか?
 
 Microsoft 365 Defender を有効にするには、Microsoft 365 セキュリティ センターのナビゲーション ウィンドウから [設定] にアクセスします。 このナビゲーション アイテムは、前提条件のアクセス許可とライセンスを持 [っている場合にのみ表示されます](m365d-enable.md#check-license-eligibility-and-required-permissions)。
+
+## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>ファイル/URL の例外を作成する方法
+
+誤検知とは、悪意のあるファイルまたは URL であり、脅威ではないと検出されます。 インジケーターを作成し、ブロックを解除して特定のファイル/URL を許可する除外を定義できます。 「Defender [for Endpoint」の「Address false positives/negatives」を参照してください](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives)。
+
+

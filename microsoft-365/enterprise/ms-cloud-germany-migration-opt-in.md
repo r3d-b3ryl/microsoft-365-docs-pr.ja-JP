@@ -19,17 +19,17 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: '
-ms.openlocfilehash: 190b020ac683bcb97317a281c520b7f1ac92c721
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b99238b588363203f7aac07b3fb056d7a37e19f
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910920"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592074"
 ---
-# <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター リージョンの Office 365 サービスへの移行をオプトインする方法
+# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの新しい移行をオプトインする方法
 
->[!Note]
->この記事は、Microsoft Cloud Germany (Microsoft Cloud Deutschland) のお客様にのみ適用されます。
+> [!NOTE]
+> この記事は、Microsoft Cloud Germany (Microsoft Cloud Deutschland) のお客様にのみ適用されます。
 >
 
 ## <a name="how-to-request-migration"></a>移行を要求する方法
@@ -68,7 +68,7 @@ Online Services の条項は、Microsoft が Microsoft 365、Dynamics 365、Powe
 
 [移行中のカスタマー エクスペリエンスを理解する](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

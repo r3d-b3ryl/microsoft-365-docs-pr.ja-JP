@@ -1,5 +1,5 @@
 ---
-title: 自動調査の詳細と結果
+title: 自動調査の詳細と結果を表示する
 description: 自動調査の結果と主な検出事項は、調査の実行中および実行後に表示できます。
 keywords: 自動化、調査、結果、分析、詳細、修復、autoair
 search.appverid: met150
@@ -21,15 +21,14 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/02/2021
-ms.openlocfilehash: 57a515fec2baabba7146959a43737771ef5c8cfe
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8ecf39090d368427c103c7ec78e22bc13f7c339f
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197771"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591770"
 ---
-# <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
+# <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
 **適用対象:**
 - Microsoft Defender for Endpoint
@@ -87,7 +86,7 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 | **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、Office アプリ、Cloud App Security、その他の Microsoft 365 Defender 機能の脅威保護機能から発生する可能性があります。|
 | **デバイス** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、デバイス グループ [のオートメーション レベルに対応します](automation-levels.md)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
-| **ユーザー**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
+| **Users**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
 | **証拠** | アラート/調査によって発生した証拠の一部を一覧表示します。 評決 (悪意のある、疑 *わしい、* または脅威が見 *つからない*) と修復の状態が含まれます。 |
 | **Entities**  | 各エンティティの種類 (悪意のある、疑わしい、または脅威が見つからない)の評決を含む、分析された各エンティティの詳細 *を提供します*。|
 |**Log**    | アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|

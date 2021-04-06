@@ -1,5 +1,5 @@
 ---
-title: 新しいドイツのデータセンター地域Office 365 サービスへの移行の変更点
+title: 新しいドイツのデータセンター地域Office 365 サービスへの移行後の変更点
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -19,26 +19,26 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行に関する変更点について説明します。'
-ms.openlocfilehash: cadad596011bbcde02b61f01e949c93a5a62a1c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923828"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591782"
 ---
-# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター地域Office 365 サービスへの移行の変更点
+# <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター地域Office 365 サービスへの移行後の変更点
 
 テナントの移行は、管理者とユーザーに対する影響を最小限に抑える設計です。 ただし、各ワークロードごとに考慮事項があります。 ワークロードの移行エクスペリエンスについて理解を深めるには、次のセクションを参照してください。
 
 新しいドイツのデータセンター地域における Microsoft Cloud Deutschland と Office 365 サービスの主な違いは次のとおりです。
 
-| カテゴリ | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) | 新しいドイツのデータセンター リージョンでの Office 365 サービス |
+| カテゴリ | Microsoft Cloud Germany (Microsoft Cloud Deutschland) | 新しいドイツのデータセンター リージョンでの Office 365 サービス |
 |:-------|:-----|:-------|
 | 1 つの Office 365 テナントのみでサブスクリプションに利用可能な Microsoft 365 サービス | 15 サービス | 29 サービス <br><br> 詳細については [、「365](ms-cloud-germany-transition.md#serv-avail)クラウド サービスの異なるサービス間のOfficeとは」を参照してください。 |
-| 新機能 | 利用可能な新機能はありません。 | 新しい機能は、365 サービスOffice利用できます。 |
+| 新機能 | 新しい機能は利用できません。 | 新しい機能は、365 サービスOffice利用できます。 |
 | データ トラスティ | はい | いいえ |
 | グローバルな Office 365 テナントでのテナント間コラボレーション | いいえ | はい |
-| 顧客データの常駐 | 顧客データはドイツのデータ センター内にのみ保存されます。 | Microsoft は、ドイツ内で次の顧客データを保存します。 <ul><li> Exchange Online メールボックス コンテンツ (電子メール本文、予定表エントリ、および電子メール添付ファイルのコンテンツ) </li><li> SharePoint Online サイトのコンテンツと、そのサイト内に保存されているファイル、および OneDrive for Business にアップロードされたファイル </li></ul> |
+| 顧客データの常駐 | 顧客データはドイツのデータ センター内にのみ保存されます。 | Microsoft は、ドイツ内で次の顧客データを保存します。 <ul><li> ExchangeOnline メールボックスのコンテンツ (メール本文、予定表のエントリ、メール添付ファイルのコンテンツ) </li><li> SharePoint Online サイトのコンテンツと、そのサイト内に保存されているファイル、および OneDrive for Business にアップロードされたファイル </li></ul> |
 | 該当する条件 | [この補足を含む](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) オンライン サービス [の利用規約](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 ||||
 
@@ -80,6 +80,8 @@ ms.locfileid: "50923828"
 
 Office移行前と移行中にオンライン `office.de` サービスにアクセスできます。 ユーザーのメールボックスが 365 サービスの Officeに移行された後、ユーザーは 365 サービス URL のOffice開始する必要があります。 以降のワークロードが 365 サービスOffice移行すると、そのサービスのインターフェイスが office.com 動作し始める。
 
+Office で最も最近使用された (MRU) サービスは、移行ではなく、Microsoft Cloud Deutschland から Office 365 Global サービスへの切り替えです。 365 Global services 側Office MRU リンクだけが、ポータルから移行した後 Office.com されます。 Microsoft Cloud Deutschland からの MRU リンクは、365 グローバル サービスの MRU Office表示されません。 365 Officeグローバル サービスでは、MRU リンクにアクセスできるのは、テナントの移行がフェーズ 9 に達した後のみです。
+
 ## <a name="exchange-online-protection"></a>Exchange Online Protection
 
 - Exchange Online Protection (EOP) のバック エンド機能は、新しいドイツ地域にコピーされます。
@@ -97,7 +99,7 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止され、Office 365 ビデ�
 
 [移行フェーズのアクションと影響について理解する](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

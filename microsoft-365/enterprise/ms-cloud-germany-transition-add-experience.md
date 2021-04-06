@@ -1,5 +1,5 @@
 ---
-title: 移行フェーズアクションと Microsoft Cloud Deutschland からの移行への影響 (上級)
+title: Microsoft Cloud Deutschland からの移行の移行後のアクティビティ
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,48 +17,21 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する際のカスタマー エクスペリエンスに関するその他の情報。'
-ms.openlocfilehash: 8e28b9d6c8cc23e128234973039a4873b327e9fd
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行した後の移行後のアクティビティ。'
+ms.openlocfilehash: 745589c1c997540094fc4a770e437de89015f88a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476374"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591758"
 ---
-# <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行への影響 (上級)
+# <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行後のアクティビティ
 
-Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのドイツ地域へのテナント移行は、一連のフェーズと、ワークロードごとに構成されたアクションとして実行されます。 この図は、新しいドイツのデータセンターへの移行の 10 フェーズを示しています。
+次のセクションでは、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行した後、複数のサービスの移行後のアクティビティを提供します。
 
-![新しいドイツのデータセンターへの移行の 10 フェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+## <a name="azure-ad"></a>Azure AD
 
-以下のセクションでは、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する際のカスタマー エクスペリエンスに関する追加情報を提供します。
-
-## <a name="office-365-portal-services-between-phase-2-and-phase-3"></a>Office 365 Portal Services のフェーズ 2 とフェーズ 3 の間
-
-フェーズ 2 とフェーズ 3 の間、パートナー ポータルにアクセスできない場合があります。 この間、パートナーはパートナー ポータルでテナントの情報にアクセスできない場合があります。 移行ごとに異なるので、アクセシビリティ内の期間は数時間である可能性があります。
-
-### <a name="ediscovery-phase-4-to-the-end-of-phase-9"></a>電子情報開示フェーズ 4 ~ フェーズ 9 の終了
-
-**適用対象:** 電子情報開示を使用しているすべてのユーザー
-
-| Step(s) | 説明 | 影響 |
-|:-------|:-------|:-------|
-| フェーズ 4 の初めからフェーズ 9 が完了するまで、電子情報開示検索は失敗するか、移行された SharePoint Online、OneDrive for Business、Exchange Online の場所に対して 0 の結果を返します。 | 移行中、お客様は、コンテンツ検索を含むセキュリティ & コンプライアンス センターでケース、保留、[検索、およびエクスポートを](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)[作成し続けます](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)。 ただし、移行された SharePoint Online、OneDrive for Business、Exchange Online の場所に対して検索すると、0 の結果が返されるか、エラーが発生します。 修復については、「Impact」列 _を参照_ してください。 | 移行中に検索で結果がゼロまたはエラーが返された場合は、SharePoint Online で次のアクションを実行してください。 <ul><li>「OneDrive または SharePoint からファイルとフォルダーをダウンロードする」の手順に従って [、SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)Online または OneDrive for Business サイトからサイトを直接ダウンロードします。 このメソッドには、サイトに対する SharePoint Online 管理者のアクセス許可または読み取り専用のアクセス許可が必要です。</li><li>制限を超えた場合は [、「OneDrive](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)または SharePoint からファイルとフォルダーをダウンロードする」で説明したように、お客様は、SharePoint ファイルと [Teams](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)ファイルをコンピューターと同期するのガイダンスに従って OneDrive for Business 同期クライアントを使用できます。</li><li>詳細については  [、「In-Place eDiscovery in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
-||||
-
-## <a name="exchange-online-set-userphoto-during-phase-5"></a>Exchange Online Set-UserPhotoフェーズ 5 中
-
-**適用対象:** ユーザーの写真を Exchange Online に保存し **、Set-UserPhoto** を使用しているすべてのお客様:
-
-| Step(s) | 説明 | 影響 |
-|:-------|:-------|:-------|
-| 新しい地域 "ドイツ" は既存の Exchange Online 組織のセットアップに追加され、メールボックスは 365 サービスOffice移動されます。 | Exchange Online の構成では、移行中の組織に新しい移動先のドイツ語地域が追加されます。 このOffice 365 サービス領域は既定として設定されています。これにより、内部負荷分散サービスは、メールボックスを 365 サービス内の適切な既定の領域に再配布Officeできます。 この移行では、いずれかの側 (ドイツまたは Office 365 サービス) のユーザーが同じ組織内にいて、いずれかの URL エンドポイントを使用できます。 | ユーザー メールボックスが移行されたが、管理者メールボックスが移行されていない場合、またはその逆の場合、管理者は **PowerShell コマンドレットである Set-UserPhoto** を実行できません。 このような場合、管理者は、次の構文を使用して接続セットアップ中に追加 `ConnectionUri` の文字列を渡す必要があります。 <br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br> ここで `<user_email>` **、Set-UserPhoto** を使用して写真を変更する必要があるユーザーの電子メール ID のプレースホルダーです。 |
-||||
-
-## <a name="post-migration"></a>移行後
-
-### <a name="azure-ad-phase-9"></a>Azure ADフェーズ 9
-
+### <a name="azure-ad-connect"></a>Azure AD Connect
 **適用対象:** すべてのお客様が Azure AD接続と ID を同期する
 
 | Step(s) | 説明 | 影響 |
@@ -66,7 +39,8 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 | Azure AD接続を更新します。 | Azure AD への切り上げが完了すると、組織は Office 365 サービスを完全に使用し、Microsoft Cloud Deutschland に接続されなくなりました。 この時点で、お客様はデルタ同期プロセスが完了した後、レジストリ パスの文字列値を `AzureInstance` 3 (Microsoft Cloud Deutschland) から 0 に変更する必要があります `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` 。 | レジストリ キーの `AzureInstance` 値を変更します。 そうしない場合、Microsoft Cloud Deutschland エンドポイントが使用できなくなった後、オブジェクトが同期されません。 |
 |||||
 
-**適用対象:** ADFS でフェデレーション認証を使用しているすべてのお客様
+### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Azure AD FS とのフェデレーションAD認証
+**適用対象:** FS とのフェデレーション認証を使用AD顧客
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
@@ -77,6 +51,7 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
     Question from ckinder
     The following paragraph is not clear
 -->
+### <a name="group-approvals"></a>グループの承認
 **適用対象:** 移行前の過去 30 日間に Azure AD承認要求が承認されなかったエンド ユーザー 
 
 | Step(s) | 説明 | 影響 |
@@ -88,6 +63,7 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
     Question from ckinder
     The following paragraph is not clear
 -->
+## <a name="custom-dns-updates"></a>カスタム DNS 更新プログラム
 **適用対象:**  自分の DNS ゾーンを管理しているすべての顧客
 
 | Step(s) | 説明 | 影響 |
@@ -95,6 +71,7 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 | 365 サービス エンドポイントのOffice DNS サービスを更新します。 | Microsoft Cloud Deutschland を指す顧客管理 DNS エントリを更新して、Office 365 グローバル サービス エンドポイントをポイントする必要があります。 | サービスまたはソフトウェア クライアントの障害が発生する可能性があります。 |
 ||||
 
+## <a name="third-party-services"></a>サード パーティのサービス
 **適用対象:** 365 サービス エンドポイントでサード パーティOfficeを使用しているお客様
 
 | Step(s) | 説明 | 影響 |
@@ -102,7 +79,8 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 | 365 サービス エンドポイントのパートナーとOfficeサービスを更新します。 | <ul><li>Office 365 ドイツを指すサード パーティのサービスとパートナーは、Office 365 サービス エンドポイントをポイントするために更新する必要があります。 例: 利用可能な場合は、ベンダーやパートナーと連携して、ギャラリー アプリのバージョンのアプリケーションを再登録します。 </li><li>Graph API を利用するカスタム アプリケーションのポイントを指定 `graph.microsoft.de` します `graph.microsoft.com` 。 エンドポイントが変更された他の API も、活用する場合は更新する必要があります。 </li><li>すべてのファースト パーティ以外のエンタープライズ アプリケーションを変更して、世界中のエンドポイントにリダイレクトします。 </li></ul>| 必須のアクション。 サービスまたはソフトウェア クライアントの障害が発生する可能性があります。 |
 ||||
 
-### <a name="sharepoint-online-post-migration"></a>SharePoint Online の移行後
+## <a name="sharepoint-online"></a>SharePoint Online
+**適用対象**: SharePoint 2013 ワークフローを使用しているお客様
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
@@ -110,51 +88,9 @@ Microsoft Cloud Deutschland から Microsoft の Office 365 サービスのド�
 | Outlook 経由でアイテムを共有する | SharePoint Online と OneDrive for Business のアイテムを Outlook 経由で共有すると、テナントの切り替え後に機能しなくなりました。 |<ul><li>SharePoint Online および OneDrive for Business では、Outlook 経由でアイテムを共有できます。 Outlook ボタンを押すと、共有可能なリンクが作成され、新しいメッセージにプッシュOutlook Web App。</li><li>テナントの切り替え後、この共有方法は機能しません。 これは既知の問題だと認識しています。 ただし、この Outlook 機能は廃止の道にあるので、廃止が展開されるまで問題の修正は計画されていません。 </li></ul>|
 ||||
 
-### <a name="exchange-online-post-migration"></a>Exchange Online の移行後
-
-ハイブリッド Exchange 構成を使用している場合:
+## <a name="exchange-online"></a>Exchange Online
+**適用対象**: ハイブリッド Exchange 構成を使用しているお客様
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
 | ハイブリッド構成ウィザード (HCW) を 365 サービスOffice再実行します。 | 既存の HCW 構成は、Microsoft Cloud Deutschland をサポートすることを意図しています。 Exchange サービスの移行が完了すると、Microsoft Cloud Deutschland からオンプレミス構成を切り離します。 |<ul><li>必須のアクション。 サービスまたはソフトウェア クライアントの障害が発生する可能性があります。 Exchange メールボックスの移行が開始する前に (5 日以上の通知を含む)、メールボックスのオンボーディングまたはオフボードの移動を停止して削除する必要があるクライアントに通知します。  表示しない場合は、移動要求にエラーが表示されます。 </li><li>Exchange メールボックスの移行が完了したら、オンボーディングとオフボードの移動を再開できるクライアントに通知します。 <br> Microsoft Cloud Deutschland から 365 サービスへの Exchange の移行中に、PowerShell コマンドレットである **Test-MigrationServerAvailabiilty** を実行すると、Office 365 サービスが動作しない可能性があります。 ただし、移行が完了すると正しく動作します。 </li><li>メールボックスの移行後にクライアントが資格情報または承認に関する問題にぶつかった場合、ユーザーは Exchange コントロール パネル (ECP) を使用して、移行エンドポイントでオンプレミスの管理者資格情報を再入力できます。 `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` </li></ul>|
-
-### <a name="ediscovery-post-migration"></a>電子情報開示の移行後
-
-**適用対象:** 電子情報開示を使用しているすべての顧客
-
-| Step(s) | 説明 | 影響 |
-|:-------|:-------|:-------|
-|  すべての SharePoint Online、OneDrive for Business、Exchange Online の場所は、セキュリティおよびコンプライアンス センター (SCC) と共に移行されています。 | すべての電子情報開示アクティビティは、世界中のテナントから実行する必要があります。 これで、検索は 100% 成功します。  エラーやエラーは、通常のサポート チャネルに従う必要があります。 | なし |
-||||
-
-**適用対象:**  移行前の手順の一部としてアイテム保持ポリシーを適用したすべての顧客
-
-| Step(s) | 説明 | 影響 |
-|:-------|:-------|:-------|
-| 移行前の手順で作成された組織全体の保持ポリシーを削除する | 顧客は、移行前の作業中に作成された組織全体の保持ポリシーを削除できます。 | なし |
-||||
-
-## <a name="next-step"></a>次の手順
-
-[移行フェーズのアクションと影響について理解する](ms-cloud-germany-transition-phases.md)
-
-## <a name="more-information"></a>詳細情報
-
-はじめに:
-
-- [新しいドイツのデータセンター地域Office 365 サービスへの Microsoft Cloud Deutschland からの移行](ms-cloud-germany-transition.md)
-- [Microsoft Cloud Deutschland 移行アシスタント](https://aka.ms/germanymigrateassist)
-- [移行のオプトイン方法](ms-cloud-germany-migration-opt-in.md)
-- [移行中のカスタマー エクスペリエンス](ms-cloud-germany-transition-experience.md)
-
-切り替えの移動:
-
-- [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
-- [その他の作業前](ms-cloud-germany-transition-add-pre-work.md)
-- Azure [AD、デバイス](ms-cloud-germany-transition-add-devices.md)[、](ms-cloud-germany-transition-azure-ad.md)[エクスペリエンス](ms-cloud-germany-transition-add-experience.md)、および FS のAD[情報](ms-cloud-germany-transition-add-adfs.md)です。
-
-クラウド アプリ:
-
-- [Dynamics 365 移行プログラム情報](/dynamics365/get-started/migrate-data-german-region)
-- [Power BI 移行プログラム情報](/power-bi/admin/service-admin-migrate-data-germany)
-- [Microsoft Teams へのアップグレードを開始する](/microsoftteams/upgrade-start-here)
