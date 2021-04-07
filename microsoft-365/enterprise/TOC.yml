@@ -274,15 +274,15 @@
           items:
             - name: 概要
               href: ms-cloud-germany-transition.md
+            - name: 変更すると何が変わりますか?
+              href: ms-cloud-germany-transition-experience.md
             - name: 移行のオプトイン
               href: ms-cloud-germany-migration-opt-in.md
-            - name: 変更点
-              href: ms-cloud-germany-transition-experience.md
-            - name: 事前作業
+            - name: 移行前
               href: ms-cloud-germany-transition-add-pre-work.md
-            - name: 移行フェーズのアクションと影響 (一般)
+            - name: 移行フェーズのアクションと影響
               href: ms-cloud-germany-transition-phases.md
-            - name: 移行フェーズのアクションと影響 (上級)
+            - name: 移行後
               href: ms-cloud-germany-transition-add-experience.md
             - name: 追加情報
               items:
@@ -292,6 +292,8 @@
                   href: ms-cloud-germany-transition-add-devices.md
                 - name: AD FS の移行手順
                   href: ms-cloud-germany-transition-add-adfs.md
+                - name: 電子情報開示
+                  href: ms-cloud-germany-transition-add-scc.md
 - name: ID
   items:
     - name: ロードマップ
