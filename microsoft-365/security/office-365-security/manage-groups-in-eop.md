@@ -15,12 +15,12 @@ ms.custom:
 description: スタンドアロンの Exchange Online Protection (EOP) 組織の管理者は、Exchange 管理センター (EAC) およびスタンドアロンの Exchange Online Protection (EOP) PowerShell で配布グループとメールが有効なセキュリティ グループを作成、変更、削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b97e3fac0840753edada964252875a6e3a4fa04
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b9d83f2fb59ee8f8d2d3035045ed438d5ba45851
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205056"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599571"
 ---
 # <a name="manage-groups-in-eop"></a>EOP でグループを管理する
 
@@ -43,7 +43,7 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 Exchange 管理センター (EAC) とスタンドアロン EOP PowerShell でグループを管理できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - Exchange 管理センターを開く方法については、「 [スタンドアロン EOP の Exchange 管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
@@ -216,7 +216,7 @@ $CurrentMemberNames += "Tyson Fawcett"
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-構文とパラメーターの詳細については [、「Set-EOPDistributionGroup」](https://docs.microsoft.com/powershell/module/exchange/set-eopdistributiongroup) および [「Update-EOPDistributionGroupMember」を参照してください](https://docs.microsoft.com/powershell/module/exchange/update-eopdistributiongroupmember)。
+構文とパラメーターの詳細については [、「Set-EOPDistributionGroup」](/powershell/module/exchange/set-eopdistributiongroup) および [「Update-EOPDistributionGroupMember」を参照してください](/powershell/module/exchange/update-eopdistributiongroupmember)。
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>リモート サーバーを使用してグループを削除Windows PowerShell
 
@@ -226,7 +226,7 @@ Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMem
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-構文とパラメーターの詳細については [、「Remove-EOPDistributionGroup」を参照してください](https://docs.microsoft.com/powershell/module/exchange/remove-eopdistributiongroup)。
+構文とパラメーターの詳細については [、「Remove-EOPDistributionGroup」を参照してください](/powershell/module/exchange/remove-eopdistributiongroup)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 

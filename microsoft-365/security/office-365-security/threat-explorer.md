@@ -19,12 +19,12 @@ description: セキュリティ コンプライアンス センターでエク�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570986"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599889"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -113,7 +113,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 > [!div class="mx-imgBorder"]
 > ![URL タグ](../../media/tags-urls.png)
 > 
-詳しくは、このビデオ [をご覧ください](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)。 
+[このビデオ](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)を見て詳細をご確認ください。 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>脅威の検出エクスペリエンスの改善 (今後)
 
@@ -520,7 +520,7 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
 - [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイルを表示する](./mdo-for-spo-odb-and-teams.md)
 - [脅威エクスプローラー (およびリアルタイム検出) のビューの概要を取得する](threat-explorer-views.md)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft Threat Protection での自動調査および対応](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Microsoft Threat Protection での自動調査および対応](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 

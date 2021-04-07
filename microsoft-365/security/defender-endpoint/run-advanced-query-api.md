@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caf7a1bacfd726c560356d542bec3cf56c6b39d4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 40487143ff18cedb76c9f3f33c52cab24687c282
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200199"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604371"
 ---
 # <a name="advanced-hunting-api"></a>高度なハンティング API
 
@@ -30,27 +30,33 @@ ms.locfileid: "51200199"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="limitations"></a>制限事項
+
 1. クエリを実行できるのは、過去 30 日間のデータのみです。
+
 2. 結果には、最大 100,000 行が含まれます。
+
 3. 実行の数はテナントごとに制限されます。
-   - API 呼び出し: 1 分あたり最大 45 回の呼び出し。
+   - API 呼び出し: 1 分あたり最大 45 回の呼び出し、1 時間あたり最大 1500 回の呼び出し。
    - 実行時間: 1 時間ごとに 10 分、1 日に 3 時間の実行時間。
+
 4. 1 つの要求の最大実行時間は 10 分です。
+
 5. 429 応答は、要求数または CPU によってクォータ制限に達した値を表します。 応答本文を読み取り、どの制限に達したのかを理解します。 
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
 アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   AdvancedQuery.Read.All |    '高度なクエリを実行する'
+Application |   AdvancedQuery.Read.All |    '高度なクエリを実行する'
 委任 (職場または学校のアカウント) | AdvancedQuery.Read | '高度なクエリを実行する'
 
 >[!Note]
@@ -59,7 +65,8 @@ ms.locfileid: "51200199"
 >- ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 ```
 
@@ -71,19 +78,21 @@ Authorization | ベアラー {token}。 **必須**
 Content-Type    | application/json
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 種類    | 説明
+パラメーター | 型    | 説明
 :---|:---|:---
 クエリ | テキスト |  実行するクエリ。 **必須**
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは 200 OK を返し、応答本文で _QueryResponse_ オブジェクトを返します。
 
 
 ## <a name="example"></a>例
 
-要求
+##### <a name="request"></a>要求
 
 以下は、要求の例です。
 
@@ -101,7 +110,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-応答
+##### <a name="response"></a>応答
 
 以下は、応答の例です。
 
@@ -145,7 +154,8 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-## <a name="related-topic"></a>関連トピック
+## <a name="related-topics"></a>関連項目
+
 - [Microsoft Defender for Endpoint API の概要](apis-intro.md)
 - [ポータルからの高度な検索](advanced-hunting-query-language.md)
-- [PowerShell を使用した高度なハンティング](run-advanced-query-sample-powershell.md)
+- [PowerShell を使用した高度な追求](run-advanced-query-sample-powershell.md)

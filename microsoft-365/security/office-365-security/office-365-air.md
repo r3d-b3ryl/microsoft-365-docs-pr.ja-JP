@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1460deef11a87044530c54c8b10637284829a0cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206680"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599466"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -81,11 +81,9 @@ Microsoft Defender for Office 365 では、修復アクションは自動的に�
 - [マルウェア対策ポリシー](protect-against-threats.md#part-1---anti-malware-protection)
 - [アンチフィッシュ保護](protect-against-threats.md#part-2---anti-phishing-protection)
 - [スパム対策保護](protect-against-threats.md#part-3---anti-spam-protection)
-- [アンチフィッシュ保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection)
-- [スパム対策保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-3---anti-spam-protection)
-- [安全なリンクと安全な添付ファイル](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [電子メールの 0 時間自動削除](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop)
+- [安全なリンクと安全な添付ファイル](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [電子メールの 0 時間自動削除](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
 さらに、組織のアラート [ポリシー](../../compliance/alert-policies.md)(特に脅威管理カテゴリの既定のポリシー) を確認 [してください](../../compliance/alert-policies.md#default-alert-policies)。
 
@@ -94,7 +92,7 @@ Microsoft Defender for Office 365 では、修復アクションは自動的に�
 Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マルウェアアクティビティ、外部および内部の潜在的な脅威、情報ガバナンスのリスクを特定するのに役立つ、多くの組み込みのアラート ポリシーが提供されています。 既定のアラート [ポリシーのいくつかは、](../../compliance/alert-policies.md#default-alert-policies) 自動調査をトリガーできます。 次の表に、自動調査をトリガーするアラート、Microsoft 365 セキュリティ センターでの重大度、および生成方法について説明します。
 
 |アラート|重要度|アラートの生成方法|
-|:---|:---|:---|
+|---|---|---|
 |悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次の場合に生成されます。 <ul><li>組織内の安全なリンク [によって保護](safe-links.md) されたユーザーが悪意のあるリンクをクリックする</li><li>URL の評決の変更は、Microsoft Defender によって 365 のOfficeされます。</li><li>ユーザーは、安全なリンクの警告ページ (組織のセーフ リンク ポリシーに基づく) [を上書きします](set-up-safe-links-policies.md)。</li></ul> <p> このアラートをトリガーするイベントの詳細については、「安全なリンク ポリシーを設定 [する」を参照してください](set-up-safe-links-policies.md)。|
 |電子メール メッセージがマルウェアまたはフィッシングとしてユーザーによって報告される|**Informational**|このアラートは、組織のユーザーがレポート メッセージ アドインまたはレポートフィッシング[](enable-the-report-message-add-in.md)アドインを使用してフィッシングメールとしてメッセージを[報告するときに生成されます](enable-the-report-phish-add-in.md)。|
 |配信後にマルウェアを含む電子メール メッセージが削除される|**Informational**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して Exchange Online メールボックスから感染したメッセージ [を削除します](zero-hour-auto-purge.md)。|
@@ -113,7 +111,7 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 |Task|必要な役割|
 |---|---|
 |AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は [、Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) またはセキュリティ コンプライアンス センター [&割り当てることができます](permissions-in-the-security-and-compliance-center.md)。|
-|自動調査を開始する <p> --- または --- <p> 推奨されるアクションを承認または拒否する|[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)またはセキュリティ コンプライアンス センターで割り当てられた次[&のいずれかを指定します](permissions-in-the-security-and-compliance-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、コンプライアンス センターのセキュリティ & [割り当てられます](permissions-in-the-security-and-compliance-center.md)。 そこに新しい役割グループを作成し、その新しい役割グループに Search and Purge 役割を追加する必要がある場合があります。</li></ul>|
+|自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)またはセキュリティ コンプライアンス センターで割り当てられた次[&のいずれかを指定します](permissions-in-the-security-and-compliance-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、コンプライアンス センターのセキュリティ & [割り当てられます](permissions-in-the-security-and-compliance-center.md)。 そこに新しい役割グループを作成し、その新しい役割グループに Search and Purge 役割を追加する必要がある場合があります。</li></ul>|
 
 ## <a name="required-licenses"></a>必須のライセンス
 
@@ -122,7 +120,6 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 - セキュリティ管理者 (グローバル管理者を含む)
 - 組織のセキュリティ操作チーム (セキュリティ リーダーと検索と削除の役割を持 **つユーザーを含** む)
 - エンド ユーザー
-
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>セキュリティ センターで変更が近日公開される
 
@@ -144,7 +141,7 @@ microsoft Defender で Office 365 用の AIR 機能を既に使用している�
 
 次の表に、Microsoft Defender 365 の AIR に加わる変更とOffice示します。
 
-|アイテム|何が変わるのか?|
+|Item|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|
@@ -152,9 +149,9 @@ microsoft Defender で Office 365 用の AIR 機能を既に使用している�
 |**[エンティティ]** タブ|[ **エンティティ] タブ** には、すべての概要ビューを含むタブインタブ スタイルと、エンティティの種類別にフィルター処理する機能があります。 [ **エンティティ] タブには** 、[ **エクスプローラーで開** く] オプションに加えて、Go **ハンティング オプションが追加** されています。 脅威エクスプローラーまたは[高度な検索](threat-explorer.md)を使用[](../defender-endpoint/advanced-hunting-overview.md)して、エンティティと脅威を検索し、結果をフィルター処理できます。|
 |**[アクション]** タブ|更新された [ **アクション] タブ** には、[ **保留中** のアクション] タブと [アクションの履歴] **タブが追加** されました。保留中のアクションを選択すると表示されるサイド ウィンドウで、アクションを承認 (または拒否) できます。|
 |**[証拠]** タブ|新しい **[証拠]** タブには、アクションに関連する主要なエンティティの結果が表示されます。 各証拠に関連するアクションは、保留中のアクションを選択するときに開くサイド ウィンドウで承認 (または拒否) できます。|
-|**アクション センター**|更新されたアクション **センター** ( ) は、電子メール、デバイス、および ID 間で保留中のアクションと完了したアクション [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) をまとめます。 詳細については、「アクション センター」を参照してください。 (詳細については、「アクション センター [」を参照](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center)してください。
-|**[インシデント]** ページ|[ **インシデント] ページ** では、複数の調査を相互に関連付け、調査の統合されたビューを向上しました。 ([インシデントの詳細については、.)](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview)
-
+|**アクション センター**|更新されたアクション **センター** ( ) は、電子メール、デバイス、および ID 間で保留中のアクションと完了したアクション [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) をまとめます。 詳細については、「アクション センター」を参照してください。 (詳細については、「アクション センター [」を参照](../defender/m365d-action-center.md)してください。|
+|**[インシデント]** ページ|[ **インシデント] ページ** では、複数の調査を相互に関連付け、調査の統合されたビューを向上しました。 ([インシデントの詳細については、.)](../defender/incidents-overview.md)|
+|
 
 ## <a name="next-steps"></a>次の手順
 

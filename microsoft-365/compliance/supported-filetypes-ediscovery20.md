@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示でサポートされているファイルの種類
+title: Advanced eDiscovery でサポートされるファイルの種類
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,204 +14,204 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 Advanced eDiscovery でサポートされているファイルの種類の一覧。これには、高度な電子情報開示の OCR 機能でサポートされている画像ファイルの種類が含まれます。
+description: Microsoft 365 Advanced eDiscovery でサポートされているファイルの種類の一覧 (Advanced eDiscovery の OCR 機能でサポートされるイメージ ファイルの種類を含む)。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a552e6cf0d32e77c2a21bc959ae313e6fc53d4eb
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 719a0474d45825114cf4ea3fbd19082bb8df7622
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817130"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599832"
 ---
-# <a name="supported-file-types-in-advanced-ediscovery"></a>高度な電子情報開示でサポートされているファイルの種類
+# <a name="supported-file-types-in-advanced-ediscovery"></a>Advanced eDiscovery でサポートされるファイルの種類
 
-高度な電子情報開示では、さまざまなレベルで多くのファイルの種類がサポートされています。 サポートファイルの種類の詳細については、この記事の次の表を参照してください。 この一覧は最終処理されていないため、検証テストを続行するときに新しいファイルの種類を追加します。 これらの表は、ファイルの種類がテキスト抽出 (および画像ファイルの OCR テキストの抽出) に対してサポートされているかどうかを示し、ネイティブビューアーで表示できます。また、Advanced eDiscovery の注釈ビューアーでもサポートしています。
+高度な電子情報開示は、さまざまなレベルで多くのファイルの種類をサポートしています。 サポート ファイルの種類については、この記事の次の表で説明します。 このリストは完成していません。検証テストを続行する場合は、新しいファイルの種類を追加します。 これらの表は、ファイルの種類がテキスト抽出 (および画像ファイルの光学式文字認識または OCR テキスト抽出) でサポートされるかどうかを示します。ネイティブ ビューアーで表示可能で、Advanced eDiscovery の Annotate ビューアーでもサポートされます。
 
-## <a name="archive--container"></a>Archive/Container
+## <a name="archive--container"></a>アーカイブ/コンテナー
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | コンテナーの抽出 | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | コンテナーの抽出 | 可能な拡張機能 |
 |:---- |:---- |:---- |:---- |:---- |
-|アプリケーション/x-7z-圧縮 | はい | はい | はい | . 7z |
-|アプリケーション/x-rar 圧縮 | はい | はい | はい | rar |
-|アプリケーション/x-tar | はい | はい | はい | tar |
-|アプリケーション/zip | はい | はい | はい | .zip |
+|application/x-7z-compressed | はい | はい | はい | .7z |
+|application/x-rar-compressed | はい | はい | はい | .rar |
+|application/x-tar | はい | はい | はい | .tar |
+|application/zip | はい | はい | はい | .zip |
 ||||||||
 
-## <a name="audio--video"></a>音声/ビデオ
+## <a name="audio--video"></a>オーディオ/ビデオ
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-| application/mp4 | はい | はい | いいえ | はい | いいえ | . f4v;. m4a;. m4v;. mp4;. mp4v;。 mpeg4 |
-|音声/mpeg | はい | はい | いいえ | はい | いいえ | mpeg-2 |
-|ビデオ/3gpp | はい | はい | いいえ | はい | いいえ | .3gp |
-|video/3gpp2 | はい | はい | いいえ | はい | いいえ | . 3g2;. 3g2 |
-|ビデオ/quicktime | はい | はい | いいえ | はい | いいえ | . moov、.mov、.qt |
-|ビデオ/m4v | はい | はい | いいえ | はい | いいえ | .m4v |
+| application/mp4 | はい | はい | いいえ | はい | いいえ | .f4v; .m4a; .m4v; .mp4; .mp4v; .mpeg; .mpeg4 |
+|audio/mpeg | はい | はい | いいえ | はい | いいえ | .mpeg |
+|video/3gpp | はい | はい | いいえ | はい | いいえ | .3gp |
+|video/3gpp2 | はい | はい | いいえ | はい | いいえ | .3g2; .3gp2 |
+|video/quicktime | はい | はい | いいえ | はい | いいえ | .moov; .mov; .qt |
+|video/x-m4v | はい | はい | いいえ | はい | いいえ | .m4v |
 ||||||||
 
 ## <a name="database"></a>Database
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|アプリケーション/x-msaccess.exe | はい | はい | はい | いいえ | いいえ | .mdb |
+|application/x-msaccess | はい | はい | はい | いいえ | いいえ | .mdb |
 ||||||||
 
 ## <a name="email"></a>メール
 
-|Mime の種類 |ファイルの識別 |メタデータ抽出 |テキストの抽出 |ネイティブビューアー |ビューアーに注釈を付ける | 可能な拡張機能 |
+|Mime の種類 |ファイルの識別 |メタデータの抽出 |テキスト抽出 |ネイティブ ビューアー |注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd. ms-outlook | はい | はい | はい | はい | はい | .msg |
+|application/vnd.ms-outlook | はい | はい | はい | はい | はい | .msg |
 |message/rfc822 | はい | はい | はい | はい | はい | .eml |
-|テキスト/vcard-連絡先 | はい | はい | はい | はい | はい | .vcf |
+|text/vcard-contact | はい | はい | はい | はい | はい | .vcf |
 ||||||||
 
-## <a name="email-container"></a>メールコンテナー
+## <a name="email-container"></a>メール コンテナー
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | コンテナーの抽出 | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | コンテナーの抽出 | 可能な拡張機能 |
 |:------| :------| :------| :------| :------|
-|application/mbox | はい | はい | はい | mbox |
-|application/vnd. ms-outlook-pst | はい | はい | はい | .pst |
+|application/mbox | はい | はい | はい | .mbox |
+|application/vnd.ms-outlook-pst | はい | はい | はい | .pst |
 ||||||||
 
 ## <a name="html"></a>HTML
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/xhtml + xml | はい | はい | はい | はい | はい | xhtml |
+|application/xhtml+xml | はい | はい | はい | はい | はい | .xhtml |
 |application/xml | はい | はい | はい | はい | はい | .xml |
-|text/html | はい | はい | はい | はい | はい | .htm、.html、. shtml.dll |
+|text/html | はい | はい | はい | はい | はい | .htm; .html; .shtml |
 ||||||||
 
-## <a name="image"></a>イメージ
+## <a name="image"></a>Image
 
-|Mime の種類 |ファイルの識別 |メタデータ抽出 |OCR テキストの抽出 |ネイティブビューアー |ビューアーに注釈を付ける |可能な拡張機能 |
+|Mime の種類 |ファイルの識別 |メタデータの抽出 |OCR テキストの抽出 |ネイティブ ビューアー |注釈ビューアー |可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
 |image/bmp | はい | はい | はい | はい | はい | .bmp |
-|イメージ/emf | はい | はい | はい | はい | はい | .emf |
+|image/emf | はい | はい | はい | はい | はい | .emf |
 |image/gif | はい | はい | はい | はい | はい | .gif |
-|image/jpeg | はい | はい | はい | はい | はい | .jpeg、.jpg |
+|image/jpeg | はい | はい | はい | はい | はい | .jpeg; .jpg |
 |image/png | はい | はい | はい | はい | はい | .png |
-|image/svg + xml | はい | はい | はい | はい | いいえ | svg |
+|image/svg+xml | はい | はい | はい | はい | いいえ | .svg |
 |image/tiff | はい | はい | はい | はい | はい | .tif |
-|画像/vnd. .dwg | はい | はい | はい | はい | はい | .dwg、dxf |
+|image/vnd.dwg | はい | はい | はい | はい | はい | .dwg; .dxf |
 |image/wmf | はい | はい | はい | はい | はい | .wmf |
 ||||||||
 
 ## <a name="microsoft-excel"></a>Microsoft Excel
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd. が application | はい | はい | はい | はい | はい | .dat; .xls |
-|アプリケーション/vnd を有効にします。12 | はい | はい | はい | はい | いいえ | .xlsb |
-|アプリケーション/vnd を有効にします。12 | はい | はい | はい | はい | はい | .xlsm |
-|アプリケーション/が application を有効にします。12 | はい | はい | はい | いいえ | いいえ | 。 xltm |
+|application/vnd.ms-excel | はい | はい | はい | はい | はい | .dat; .xls |
+|application/vnd.ms-excel.sheet.binary.macroenabled.12 | はい | はい | はい | はい | いいえ | .xlsb |
+|application/vnd.ms-excel.sheet.macroenabled.12 | はい | はい | はい | はい | はい | .xlsm |
+|application/vnd.ms-excel.template.macroenabled.12 | はい | はい | はい | いいえ | いいえ | .xltm |
 |application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | はい | はい | はい | はい | はい | .xlsx |
-|application/vnd. openxmlformats-officedocument | はい | はい | はい | はい | はい | 。 xltx |
+|application/vnd.openxmlformats-officedocument.spreadsheetml.template | はい | はい | はい | はい | はい | .xltx |
 ||||||||
 
 ## <a name="microsoft-onenote"></a>Microsoft OneNote
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|アプリケーション/onenote | はい | はい | はい | はい | いいえ | .one |
+|application/onenote | はい | はい | はい | いいえ | いいえ | .one |
 ||||||||
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd. が application | はい | はい | はい | はい | はい | .pot; .pps; .ppt |
+|application/vnd.ms-powerpoint | はい | はい | はい | はい | はい | .pot; .pps; .ppt |
 |application/vnd.openxmlformats-officedocument.presentationml.presentation | はい | はい | はい | はい | はい | .pptx |
-|openxmlformats-officedocument (アプリケーション/vnd) | はい | はい | はい | はい | はい | . ppsx |
-|openxmlformats-officedocument (アプリケーション/vnd) | はい | はい | はい | はい | はい | . potx |
+|application/vnd.openxmlformats-officedocument.presentationml.slideshow | はい | はい | はい | はい | はい | .ppsx |
+|application/vnd.openxmlformats-officedocument.presentationml.template | はい | はい | はい | はい | はい | .potx |
 ||||||||
 
 ## <a name="microsoft-project"></a>Microsoft Project
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd. ms-project | はい | はい | はい | いいえ | はい | .mpp |
+|application/vnd.ms-project | はい | はい | はい | いいえ | はい | .mpp |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher
 
-|Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+|Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|アプリケーション/x-mspublisher | はい | はい | はい | はい | はい | .pub |
+|application/x-mspublisher | はい | はい | はい | はい | はい | .pub |
 ||||||||
 
 ## <a name="microsoft-visio"></a>Microsoft Visio
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd. ms-visio | はい | はい | はい | はい | いいえ |  |
-|アプリケーション/vnd visio | はい | はい | はい | はい | はい | .vsd |
+|application/vnd.ms-visio.drawing | はい | はい | はい | はい | いいえ |  |
+|application/vnd.visio | はい | はい | はい | はい | はい | .vsd |
 ||||||||
 
 ## <a name="microsoft-word"></a>Microsoft Word
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/msword | はい | はい | はい | はい | はい | .dat; .doc |
-| アプリケーション/rtf | はい | はい | はい | はい | はい | .doc; .rtf |
-|application/vnd.ms-word.document を有効にします。 | はい | はい | はい | はい | はい | .docm |
-|アプリケーション/が application を有効にします。12 | はい | はい | はい | はい | はい | normal.dotm |
+| application/rtf | はい | はい | はい | はい | はい | .doc; .rtf |
+|application/vnd.ms-word.document.macroenabled.12 | はい | はい | はい | はい | はい | .docm |
+|application/vnd.ms-word.template.macroenabled.12 | はい | はい | はい | はい | はい | .dotm |
 |application/vnd.openxmlformats-officedocument.wordprocessingml.document | はい | はい | はい | はい | はい | .docx |
-|application/vnd. openxmlformats-officedocument | はい | はい | はい | はい | はい | .dotx |
+|application/vnd.openxmlformats-officedocument.wordprocessingml.template | はい | はい | はい | はい | はい | .dotx |
 ||||||||
 
 ## <a name="microsoft-works"></a>Microsoft Works
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd. ms-works-ss | はい | はい | いいえ | いいえ | いいえ | wps |
-|application/vnd-wp | はい | はい | いいえ | いいえ | いいえ | wps |
+|application/vnd.ms-works-ss | はい | はい | いいえ | いいえ | いいえ | .wps |
+|application/vnd.ms-works-wp | はい | はい | いいえ | いいえ | いいえ | .wps |
 ||||||||
 
-## <a name="open-document-format"></a>開いているドキュメント形式
+## <a name="open-document-format"></a>ドキュメント形式を開く
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd. oasis | はい | はい | はい | はい | はい | odt |
+|application/vnd.oasis.opendocument.text | はい | はい | はい | はい | はい | .odt |
 ||||||||
 
 ## <a name="other"></a>その他
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/json | はい | はい | はい | はい | はい | × |
-|application/vnd. ms-graph | はい | はい | いいえ | いいえ | いいえ |  |
+|application/vnd.ms-graph | はい | はい | いいえ | いいえ | いいえ |  |
 |application/winhlp | はい | はい | いいえ | いいえ | いいえ | .hlp |
-|アプリケーション/x-tnef | はい | はい | いいえ | いいえ | いいえ |  |
+|application/x-tnef | はい | はい | いいえ | いいえ | いいえ |  |
 ||||||||
 
 ## <a name="plain-text"></a>プレーン テキスト
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
 |text/csv | はい | はい | はい | はい | はい | .csv |
-|text/plain | はい | はい | はい | はい | はい | .. .css; .csv;... pl; .txt |
+|text/plain | はい | はい | はい | はい | はい | .con; .css; .csv; .dat; .pl; .txt |
 ||||||||
 
 ## <a name="portable-document-format"></a>Portable Document Format
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/pdf | はい | はい | はい | はい | はい | .pdf |
 ||||||||
 
-## <a name="word-perfect"></a>完全な単語
+## <a name="word-perfect"></a>Word Perfect
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd wordperfect;バージョン = 5.0 | はい | はい | はい | いいえ | いいえ | wpd |
-|application/vnd wordperfect;バージョン = 5.1 | はい | はい | はい | いいえ | いいえ | wpd |
-|application/vnd wordperfect;バージョン = 6. x | はい | はい | はい | いいえ | いいえ | wpd |
+|application/vnd.wordperfect;version=5.0 | はい | はい | はい | いいえ | いいえ | .wpd |
+|application/vnd.wordperfect;version=5.1 | はい | はい | はい | いいえ | いいえ | .wpd |
+|application/vnd.wordperfect;version=6.x | はい | はい | はい | いいえ | いいえ | .wpd |
 ||||||||
 
 ## <a name="word-pro"></a>Word Pro
 
-| Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
+| Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd. lotus-wordpro | はい | はい | いいえ | いいえ | いいえ | lwp |
+|application/vnd.lotus-wordpro | はい | はい | いいえ | いいえ | いいえ | .lwp |
 ||||||||

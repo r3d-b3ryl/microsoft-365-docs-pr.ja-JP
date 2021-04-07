@@ -20,12 +20,12 @@ description: ユーザーは、セキュリティまたはコンプライアン�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 16dbbe81d1131821dfdbf75caff5b5121f8cc45b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7cd36ac0dec20851a423acd58e5ad7d38cb65d93
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206305"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599925"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
 
@@ -40,7 +40,7 @@ ms.locfileid: "51206305"
 
 セキュリティ & コンプライアンス センターでユーザーに付与できるさまざまなアクセス許可の詳細については、「セキュリティ & コンプライアンス センター」 [を参照してください](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - この記事の手順を完了するには、グローバル管理者またはセキュリティ & コンプライアンス センターの OrganizationManagement 役割グループのメンバーである必要があります。
 
@@ -80,7 +80,7 @@ ms.locfileid: "51206305"
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-構文とパラメーターの詳細については [、「Add-RoleGroupMember」を参照してください。](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
+構文とパラメーターの詳細については [、「Add-RoleGroupMember」を参照してください。](/powershell/module/exchange/add-rolegroupmember)
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 

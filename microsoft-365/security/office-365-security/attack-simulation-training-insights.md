@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft 365 セキュリティ センターでの攻撃シミュレーション トレーニングが従業員に与える影響と、シミュレーションとトレーニングの結果から分析情報を得る方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 93d8829f9fbc4271d33e3208e5564529b4022fc3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205196"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51600009"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 
@@ -45,7 +45,7 @@ ms.locfileid: "51205196"
 
 [シミュレーション [**] タブ** で](https://security.microsoft.com/attacksimulator?viewid=simulations)シミュレーションを選択すると、シミュレーションの詳細が表示されます。[推奨されるアクション] **セクションが表示** されます。
 
-推奨されるアクション セクションでは、Microsoft Secure Score で使用可能な推奨事項 [の詳細を示します](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)。 これらの推奨事項は、シミュレーションで使用されるペイロードに基づいており、従業員と環境の保護に役立ちます。 各改善アクションをクリックすると、その詳細が表示されます。
+推奨されるアクション セクションでは、Microsoft Secure Score で使用可能な推奨事項 [の詳細を示します](../defender/microsoft-secure-score.md)。 これらの推奨事項は、シミュレーションで使用されるペイロードに基づいており、従業員と環境の保護に役立ちます。 各改善アクションをクリックすると、その詳細が表示されます。
 
 > [!div class="mx-imgBorder"]
 > ![攻撃シミュレーション トレーニングの推奨事項のアクション セクション](../../media/attack-sim-preview-recommended-actions.png)

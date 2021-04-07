@@ -19,12 +19,12 @@ ms.custom:
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aff62792be86b9c77430777c23edc655fe3bb9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0a2c400e77c83fa61e276dee1d870835d466b5af
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205256"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599549"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -137,6 +137,6 @@ SPF は、ユーザーのためにメールを送信できるメール サーバ
 
  SPF はスプーフィングの防止に役立ちますが、SPF では保護できないスプーフィング テクニックがあります。 それらから保護するには、SPF のセットアップ後に、DKIM と DMARC を Office 365 用に構成する必要があります。
 
-[DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) メール認証の目標は、メールの内容が改ざんされていないと証明することです。
+[DKIM](use-dkim-to-validate-outbound-email.md) メール認証の目標は、メールの内容が改ざんされていないと証明することです。
 
-[DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide) メール認証の目標は、SPF と DKIM の情報が From アドレスと確実に一致していることを確認することです。
+[DMARC](use-dmarc-to-validate-email.md) メール認証の目標は、SPF と DKIM の情報が From アドレスと確実に一致していることを確認することです。

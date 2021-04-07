@@ -20,19 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 5a705444c81d884c10b99e5f0d2bfbb9e4f057e2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206550"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599853"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
-
 
 この記事では、最新の認証と条件付きアクセスをサポートする組織の電子メール および電子メール クライアントを保護するために、推奨される ID およびデバイス アクセス ポリシーを実装する方法について説明します。 このガイダンスは、共通 [ID](identity-access-policies.md) とデバイス アクセス ポリシーに基いて作成され、さらにいくつかの推奨事項も含まれています。
 
@@ -103,7 +102,7 @@ ActiveSync クライアントをブロックする Exchange Online の新しい�
 
 iOS および Android デバイスのユーザーが、Outlook for iOS および Android を使用して仕事または学校のコンテンツにのみアクセスするには、それらの潜在的なユーザーを対象とする条件付きアクセス ポリシーが必要です。
 
-「Outlook for iOS および Android を使用してメッセージング コラボレーション アクセスを管理する」でこのポリシーを構成する手順 [を参照してください]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)。
+「Outlook for iOS および Android を使用してメッセージング コラボレーション アクセスを管理する」でこのポリシーを構成する手順 [を参照してください](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)。
 
 ## <a name="set-up-message-encryption"></a>メッセージの暗号化を設定する
 

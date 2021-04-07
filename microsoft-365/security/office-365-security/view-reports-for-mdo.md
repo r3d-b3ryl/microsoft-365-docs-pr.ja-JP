@@ -20,12 +20,12 @@ description: セキュリティ コンプライアンス センターで Microso
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28978dbca3f9e4039b4f8c21c49a2963802afa54
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205602"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599901"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センター Officeレポート ダッシュボードで Defender for & 365 レポートを表示する
 
@@ -100,7 +100,7 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **メッセージ ID**: メッセージ ヘッダーの **[Message-ID** ヘッダー] フィールドで使用できます。一意である必要があります。 値の例は `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 次のようになります (角かっこに注意してください)。
-  - **File**
+  - **ファイル**
 
   [フィルター] **をクリック** すると、次のフィルターを使用してレポートを変更できます。
 
@@ -113,8 +113,8 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
-  - **File**
-  - **件名**
+  - **ファイル**
+  - **[件名]**
 
   [フィルター] **をクリック** すると、次のフィルターを使用して結果を変更できます。
 
@@ -182,8 +182,8 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
-  - **File**
-  - **件名**
+  - **ファイル**
+  - **[件名]**
 
   [フィルター] **をクリック** すると、次のフィルターを使用して結果を変更できます。
 
@@ -196,7 +196,7 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
-  - **File**
+  - **ファイル**
 
   [フィルター] **をクリック** すると、次のフィルターを使用してレポートを変更できます。
 
@@ -282,8 +282,8 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 - **URL クリック保護アクション**: 組織内のユーザーによる URL クリックの数と、クリックの結果を示します。
 
   - **ブロック (** ユーザーが URL への移動をブロックされました)
-  - **ブロックおよびクリックスルー**
-  - **スキャン中にクリックスルー**
+  - **ブロックおよびクリックスルー (** ユーザーが URL への引き続き移動を選択しました)
+  - **スキャン中にクリックスルー** (ユーザーがスキャンが完了する前にリンクをクリックしました)
 
   クリックすると、ユーザーがブロック ページをクリックして悪意のある Web サイトに移動した (管理者はセーフ リンク ポリシーでクリックスルーを無効にできます)。
 
@@ -315,7 +315,7 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 [詳細テーブル **の表示]** をクリックすると、過去 7 日間組織内で発生したすべてのクリックのほぼリアルタイム ビューがレポートに表示されます。詳細は次のとおりです。
 
 - **クリック時間**
-- **User**
+- **ユーザー**
 - **URL**
 - **操作**
 - **App**
@@ -350,11 +350,11 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ リーダー**
-- **グローバル リーダー**
+- **グローバル閲覧者**
 
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンスセンターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンスセンターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 

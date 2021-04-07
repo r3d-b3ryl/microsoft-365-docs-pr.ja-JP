@@ -1,12 +1,13 @@
 ---
 title: Microsoft 365 全体で脅威保護機能を構成する手順
-description: Microsoft 365 E5 全体に脅威保護サービスと機能を展開する方法について説明します。
+description: この記事は、脅威保護ソリューションを実装するためのガイドとして使用します。 Microsoft 365 E5 全体に脅威保護サービスと機能を展開する方法について説明します。
+keywords: セキュリティ、セットアップ、構成、Microsoft 365 E5、高度な脅威保護
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
 localization_priority: Normal
@@ -16,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: bd7c98f5888f8dc93a8aa341b186ea744d5b2882
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 925c62e1c6201c54fcf09d0dd98b06906d9e057f
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199935"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599865"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 全体で脅威保護機能を構成する
 
@@ -53,7 +54,7 @@ Microsoft は、すべての SaaS アプリケーション (特に Microsoft 365
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>手順 2: Microsoft Defender for Identity を構成する
 
-[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) は、オンプレミスの Active Directory ドメイン サービス (AD DS) 信号と一緒に動作するクラウドベースのセキュリティ ソリューションで、高度な脅威、侵害された ID、組織に向けられた悪意のあるインサイダーアクションを特定、検出、および調査します。
+[Microsoft Defender for Identity](/defender-for-identity/what-is) は、オンプレミスの Active Directory ドメイン サービス (AD DS) 信号と一緒に動作するクラウドベースのセキュリティ ソリューションで、高度な脅威、侵害された ID、組織に向けられた悪意のあるインサイダーアクションを特定、検出、および調査します。
 
 Microsoft Defender for Identity を使用すると、ハイブリッド環境での高度な攻撃の検出に苦労しているセキュリティ操作 (SecOps) アナリストやセキュリティ 専門家は、次の作業を行えます。
 - 学習ベースの分析を使用して、ユーザー、エンティティの動作、アクティビティを監視します。
@@ -79,7 +80,7 @@ Microsoft Defender for Identity を使用すると、ハイブリッド環境で
 
 [Microsoft 365 Defender は信号](../security/defender/microsoft-365-defender.md) を組み合わせ、機能を 1 つのソリューションに統合します。 統合された Microsoft 365 Defender ソリューションを使用すると、セキュリティ専門家は、これらの各製品が受け取る脅威信号を一緒にまとめ、脅威の全範囲と影響を特定できます。環境に入った方法、影響を受けるもの、組織に現在どのように影響を与えています。 Microsoft 365 Defender は、攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己回復するために自動アクションを実行します。
 
-Microsoft 365 Defender は、アラート、インシデント、自動調査と対応、およびワークロード全体の高度な検出 (Microsoft Defender for Identity、microsoft Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Cloud App Security) を単一のウィンドウに統合します。 365 サービス用に 1 つ以上の Defender を構成Office、Microsoft 365 Defender を有効にしてください。 新機能は Microsoft 365 Defender に継続的に追加されます。プレビュー機能の受信をオプトインすることを検討してください。
+Microsoft 365 Defender は、アラート、インシデント、自動調査と対応、およびワークロード全体の高度な検出 (Microsoft Defender for Identity、microsoft Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Cloud App Security) を単一のウィンドウに統合します。 新機能は Microsoft 365 Defender に継続的に追加されます。プレビュー機能の受信をオプトインすることを検討してください。
 
 ### <a name="to-set-up-microsoft-365-defender"></a>Microsoft 365 Defender をセットアップするには
 
@@ -91,7 +92,7 @@ Microsoft 365 Defender は、アラート、インシデント、自動調査と
 
 ### <a name="more-information-about-microsoft-365-defender"></a>Microsoft 365 Defender の詳細
 
-- [Microsoft 365 Defender とは](../security/defender/microsoft-365-defender.md)
+- [Microsoft 365 Business とは](../security/defender/microsoft-365-defender.md)
 - [Microsoft 365 Defender の新機能](../security/defender/whats-new.md)
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>手順 4: Microsoft Defender for Office 365
@@ -161,7 +162,7 @@ Microsoft Defender for Office 365 を使用すると、組織全体のユーザ�
 
 ![Microsoft 365 セキュリティ センター](../media/solutions-architecture-center/m365-security-center.png)
 
-Microsoft 365 セキュリティ センターは、特にセキュリティ管理者とセキュリティ運用チームを対象とします。 Microsoft 365 セキュリティ センターでは、次の機能を使用できます。
+Microsoft 365 セキュリティ センターは、セキュリティ管理者とセキュリティ運用チームを対象とします。 Microsoft 365 セキュリティ センターでは、次の機能を使用できます。
 - Secure Score を使用して組織の全体的なセキュリティ正常性 [を表示します](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)。
 - [ID、データ、](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) デバイス、アプリ、インフラストラクチャの状態に関するレポートを監視および表示します。
 - インシデントを通じてアラートにドット [を接続します](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)。

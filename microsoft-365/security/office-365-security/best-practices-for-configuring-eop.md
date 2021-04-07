@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 成功のために自分自身をセットアップし、一般的な構成エラーを回避するために、スタンドアロンの Exchange Online Protection (EOP) に関するベスト プラクティスの推奨事項に従ってください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dfd0b7290bdcded887ef6b81d5b0d4acbdd6cddb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 94586d409d6d8b53ba68c22b6b4f62d2b72266db
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205093"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599477"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>スタンドアロン EOP を構成するためのベスト プラクティス
 
@@ -60,7 +60,7 @@ ms.locfileid: "51205093"
 |[メールボックスへの IMAP 接続](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|無効|無効||
 |[メールボックスへの POP 接続](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|無効|無効||
 |認証された SMTP 申請|無効|無効|電子メールを生成および送信する POP3 および IMAP4 クライアントおよびアプリケーションおよびデバイスには、認証されたクライアント SMTP 申請 (クライアント SMTP 申請または SMTP AUTH とも呼ばれる) が必要です。 <p> SMTP AUTH をグローバルまたは選択的に有効または無効にする手順については、「Exchange Online で認証されたクライアント SMTP 送信を有効または無効にする」 [を参照してください](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)。|
-|メールボックスへの EWS 接続|無効|無効|Outlook では、空き時間情報、アウトオブオフィス設定、および予定表の共有に Exchange Web Services を使用します。 EWS をグローバルに無効にできない場合は、次のオプションがあります。 <ul><li>クライアント [がモダン認証](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) (モダン認証) をサポートしている場合は、認証ポリシーを使用して EWS による基本認証の使用を防止します。</li><li>クライアント [アクセス ルールを使用して](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) 、EWS を特定のユーザーまたは送信元 IP アドレスに制限します。</li><li>特定のアプリケーションへの EWS アクセスをグローバルまたはユーザーごとに制御します。 手順については、「Exchange で [EWS へのアクセスを制御する」を参照してください](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)。</li></ul> <p> レポート[メッセージ アドインと](enable-the-report-message-add-in.md)レポート[](enable-the-report-phish-add-in.md)フィッシング アドインは、サポートされている環境で既定で REST を使用しますが、REST が使用できない場合は EWS に戻ります。 REST を使用するサポートされている環境は次のとおりです。<ul><li>Exchange Online</li><li>Exchange 2019 または Exchange 2016</li><li>Microsoft 365 サブスクリプションまたは 1 回購入 Outlook 2019 からの現在の Outlook for Windows。</li><li>Microsoft 365 サブスクリプションまたは 1 回購入 Outlook for Mac 2016 以降からの現在の Outlook for Mac。</li><li>iOS 版および Android 版 Outlook</li><li>Outlook on the web</li></ul>|
+|メールボックスへの EWS 接続|無効|無効|Outlook では、空き時間情報、アウトオブオフィス設定、および予定表の共有に Exchange Web Services を使用します。 EWS をグローバルに無効にできない場合は、次のオプションがあります。 <ul><li>クライアント [がモダン認証](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) (モダン認証) をサポートしている場合は、認証ポリシーを使用して EWS による基本認証の使用を防止します。</li><li>クライアント [アクセス ルールを使用して](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) 、EWS を特定のユーザーまたは送信元 IP アドレスに制限します。</li><li>特定のアプリケーションへの EWS アクセスをグローバルまたはユーザーごとに制御します。 手順については、「Exchange で [EWS へのアクセスを制御する」を参照してください](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)。</li></ul> <p> レポート[メッセージ アドインと](enable-the-report-message-add-in.md)レポート[](enable-the-report-phish-add-in.md)フィッシング アドインは、サポートされている環境で既定で REST を使用しますが、REST が使用できない場合は EWS に戻ります。 REST を使用するサポートされている環境は次のとおりです。<ul><li>Exchange Online</li><li>Exchange 2019 または Exchange 2016</li><li>Microsoft 365 サブスクリプションまたは 1 回購入 Outlook 2019 からの現在の Outlook for Windows。</li><li>Microsoft 365 サブスクリプションまたは 1 回購入 Outlook for Mac 2016 以降からの現在の Outlook for Mac。</li><li>iOS 版および Android 版 Outlook</li><li>Outlook on the web</li></ul>|
 |[PowerShell 接続](/powershell/exchange/disable-access-to-exchange-online-powershell)|無効|無効|メールボックス ユーザーまたはメール ユーザー [(Get-User](/powershell/module/exchange/get-user) コマンドレットによって返されるユーザー オブジェクト) で使用できます。|
 |ス [プーフィング インテリジェンスを](learn-about-spoof-intelligence.md) 使用して送信者を許可リストに追加する|はい|はい||
 |[ディレクトリ ベースのエッジ ブロック (DBEB)](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|有効|有効|ドメインの種類 = 権限|

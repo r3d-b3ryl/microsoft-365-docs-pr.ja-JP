@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 組織外のユーザーと共同作業をするために、Teams、OneDrive、SharePoint など、Microsoft 365 アプリを構成する方法について説明します。
-ms.openlocfilehash: 359e72c12c43ca1ea984f93d87ab4868e6d1eb66
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 85aa77982fa15adb62bd587856546d2828edb942
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916396"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599821"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 
@@ -33,6 +33,8 @@ Microsoft 365 の外部共有機能により、組織内のユーザーはディ
 
 - **共有を有効にする** - Azure Active Directory、Teams、Microsoft 365 グループ、および SharePoint 全体で共有コントロールを構成して、組織に必要な共有レベルを許可します。
 - **追加のセキュリティを有効にする** - 組織外のユーザーに認証を要求するように基本的な共有機能を構成することができると同時に、Microsoft 365 には、データを保護し、外部と共有しながらガバナンス ポリシーを維持するのに役立つ多くの追加のセキュリティとコンプライアンス機能があります。
+
+[「Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams)および Microsoft Teams との安全なコラボレーションのセットアップ」を参照して、外部共有が Microsoft 365 の全体的なコラボレーション ガイダンスとどのように結び付くのかについて説明します。
 
 ## <a name="enable-sharing"></a>共有を有効にする
 

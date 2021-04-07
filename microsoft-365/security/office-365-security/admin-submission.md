@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターの Submits ポータルを使用して、疑わしいメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、ファイルを Microsoft に送信してスキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581072"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599877"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -78,7 +78,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
    - **ファイル**: [ファイルの **選択] をクリックします**。 開いたダイアログで、.eml ファイルまたは .msg ファイルを見つけて選択し、[開く] を **クリックします**。
 
    > [!NOTE]
-   > 365 プラン 1 またはプラン 2 Office Defender を使用する管理者は、30 日間の古いメッセージを送信できます。 他の管理者は、7 日間だけ戻って行くことができます。
+   > 30 日間の古いメッセージを送信する機能は、365 人のユーザーに対して Defender Office中断されています。 管理者は 7 日間だけ戻って行くことができます。
 
 2. [受信者 **] セクション** で、ポリシー チェックを実行する 1 つ以上の受信者を指定します。 ポリシー チェックは、ユーザーまたは組織のポリシーが原因で電子メールがスキャンをバイパスしたかどうかを判断します。
 

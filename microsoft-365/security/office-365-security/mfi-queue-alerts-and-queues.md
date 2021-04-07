@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでキュー ウィジェットを使用して、送信コネクタを超えるオンプレミスまたはパートナー組織への失敗したメール フローを監視する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14cadd0e8611fbbc65c3bdc9849beebf3a3eb34d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206945"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599985"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>コンプライアンス センターのセキュリティ &キューの分析情報
 
@@ -87,7 +87,7 @@ Microsoft 365 は引き続き 24 時間配信を再試行します。 24 時間�
 - **宛先サーバー**
 - **最後の IP アドレス**
 - **最後のエラー**
-- **修正方法**: 一般的な問題とソリューションを利用できます。 [今すぐ **修正] リンクが** 利用可能な場合は、それをクリックして問題を解決します。 それ以外の場合は、エラーと考えられる解決策の詳細については、利用可能なリンクをクリックしてください。
+- **修正方法**: 一般的な問題とソリューションを利用できます。 [今すぐ **修正する]** リンクが利用可能な場合は、それをクリックして問題を解決します。 それ以外の場合は、エラーと考えられる解決策の詳細については、利用可能なリンクをクリックしてください。
 
 ![メール フロー ダッシュボードの [キュー] インサイトをクリックした後の詳細](../../media/mfi-queues-details.png)
 

@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: ハイブリッドモダン認証 (HMA) Exchange Serverを使用して、より安全なユーザー認証と承認を提供するために、オンプレミスのユーザー認証を構成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9393b457c219fb03ae2e8a35c3f795c324919f27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0a0e521f4ac81a8aa113b2e945045d31f2c1952
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579724"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599501"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -65,6 +65,9 @@ HMA をオンにすると、次の意味があります。
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>すべての前提条件を満たしていることを確認する
 
 Skype for Business と Exchange の両方で多くの前提条件が一般的なので、ハイブリッドモダン認証の概要と、オンプレミスの Skype for Business サーバーと Exchange サーバーで使用するための前提条件を [確認してください](hybrid-modern-auth-overview.md)。 この記事  *の手順*  を開始する前に、これを行います。
+
+> [!NOTE]
+> Outlook Web App Exchange コントロール パネルはハイブリッドモダン認証では動作しません。
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Azure サーバーにオンプレミス Web サービス URL を SPN として追加AD
 
@@ -185,6 +188,8 @@ TCP 443 で Exchange サーバーを使用しているオンプレミスのお�
 52.125.128.0/20
 52.127.96.0/23
 ```
+
+iOS および Android 用の Outlook アプリは、Microsoft サービスを使用して、日常と仕事の検索、計画、優先順位付けを行って、モバイル デバイスで Microsoft 365 または Office 365 を体験するための最良の方法として設計されています。 詳細については、「ハイブリッドモダン認証と Outlook for iOS および Android の使用」 [を参照してください](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)。
 
 ## <a name="related-topics"></a>関連項目
 

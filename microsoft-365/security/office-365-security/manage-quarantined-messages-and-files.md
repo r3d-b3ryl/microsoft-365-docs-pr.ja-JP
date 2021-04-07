@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について学習できます。 Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫済みファイルを管理することもできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215540"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599537"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -108,7 +108,7 @@ Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online�
      - **[バルク]**
      - **フィッシング**: スパム フィルターの評決は、フィッシングメールまたはフィッシング対策保護がメッセージ [(ス](set-up-anti-phishing-policies.md#spoof-settings)プーフィング設定または偽装保護) を [検疫しました](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
      - **マルウェア**
-     - **スパム**
+     - **[スパム]**
      - **高信頼フィッシング**
 
    - **ポリシーの種類**: 次のポリシーの種類ごとに、メッセージをフィルター処理します。
@@ -189,7 +189,6 @@ Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online�
 - **[メッセージ ヘッダーを表示]**: このリンクをクリックすると、メッセージ ヘッダー テキストが表示されます。 ヘッダー フィールドと値を詳しく分析するには、メッセージ ヘッダー テキストをクリップボードにコピーし、**[Microsoft メッセージ ヘッダー アナライザー]** を選択して、リモート接続アナライザーに移動します (このタスクを実行するために Microsoft 365 を閉じたくない場合は、右クリックして **[新しいタブで開く]** を選択します)。 メッセージ ヘッダーを [Microsoft メッセージ ヘッダー アナライザー] セクションのページに貼り付け、**[ヘッダーを分析]** を選択します。
 
 - **[メッセージのプレビュー]**: 表示されるポップアップ ウィンドウで、次のいずれかのオプションを選択します。
-
   - **[ソースを表示]**: すべてのリンクが無効になったメッセージ本文の HTML バージョンを表示します。
   - **[テキスト表示]**: プレーン テキストでメッセージ本文を表示します。
 
@@ -197,7 +196,7 @@ Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online�
 
 - **[メッセージをダウンロード]**: 表示されるポップアップ ウィンドウで、**[このメッセージをダウンロードするリスクを理解しています]** を選択して、メッセージのローカル コピーを .eml 形式で保存します。
 
-- **[送信者のブロック**] : 送信者が管理者受信者メールボックスに電子メールを送信するのをブロックします。
+- **[送信者のブロック**] : 送信者が組織内の受信者にメッセージを送信するのを防ぐ。
 
 - **送信メッセージ**: 表示されるフライアウト ウィンドウで、次のオプションを選択します。
 
@@ -260,7 +259,7 @@ Defender for Office 365 の組織では、管理者は SharePoint Online、OneDr
      - カスタムの日付/時刻範囲。
    - **受信時刻**
    - **検疫の理由**: 使用可能な値は Malware **のみです**。
-   - **ポリシーの種類**
+   - **[ポリシーの種類]**
 
 特定の検疫済みファイルを見つけたら、ファイルを選択して詳細を表示し、そのファイルに対してアクションを実行します (メッセージの表示、リリース、ダウンロード、削除など)。
 

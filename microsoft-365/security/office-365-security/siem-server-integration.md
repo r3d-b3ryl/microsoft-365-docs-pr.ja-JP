@@ -18,12 +18,12 @@ ms.custom:
 description: Microsoft 365 クラウド サービスとアプリケーションとのセキュリティ情報とイベント管理 (SIEM) サーバーの統合の概要を確認する
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d060b3c12304f6a23ad9421bb43e54c4cd561af5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206820"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599949"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Microsoft 365 サービスおよびアプリケーションとのセキュリティ情報とイベント管理 (SIEM) サーバーの統合
 
@@ -34,7 +34,7 @@ ms.locfileid: "51206820"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-## <a name="summary"></a>要約
+## <a name="summary"></a>概要
 
 組織がセキュリティ情報とイベント管理 (SIEM) サーバーを使用または取得する計画を立てましたか? Microsoft 365 または Microsoft 365 と統合する方法Officeがあります。 この記事では、SIEM サーバーと Microsoft 365 サービスおよびアプリケーションを統合するために使用できるリソースの一覧を示します。
 
@@ -58,7 +58,7 @@ SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプ
 |Microsoft 365 サービスまたはアプリケーション|SIEM サーバーの入力/メソッド|追加情報|
 |---|---|---|
 |[Microsoft Defender for Office 365](defender-for-office-365.md)|監査ログ|[SIEM との Microsoft Defender との統合 (Office 365)](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|Azure でホストされる HTTPS エンドポイント <p> REST API|[SIEM ツールにアラートをプルする](../defender-endpoint/configure-siem.md)|
+|[Microsoft Defender for Endpoint](/windows/security/threat-protection/)|Azure でホストされる HTTPS エンドポイント <p> REST API|[SIEM ツールにアラートをプルする](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|ログの統合|[SIEM と Microsoft Cloud App Security の統合](/cloud-app-security/siem)|
 |
 

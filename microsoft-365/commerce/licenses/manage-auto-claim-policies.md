@@ -1,5 +1,5 @@
 ---
-title: 自動クレーム ポリシーの管理
+title: 自動請求ポリシーを管理する
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -18,14 +18,14 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911473"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599453"
 ---
-# <a name="manage-auto-claim-policies"></a>自動クレーム ポリシーの管理
+# <a name="manage-auto-claim-policies"></a>自動請求ポリシーを管理する
 
 自動クレーム ポリシーを使用すると、ユーザーはアプリに初めてサインインした製品のライセンスを自動的に要求できます。 管理者は、通常、手動で、またはグループ ベースのライセンスを使用して、ユーザーにライセンスを割り当てる。 自動クレーム ポリシーを使用して、ユーザーがライセンスを自動的に要求できる製品を管理します。 また、これらのライセンスが提供する製品を制御できます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "50911473"
 
 ## <a name="before-you-begin"></a>はじめに
 
-自動クレーム ポリシーを作成および管理するには、グローバル管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../../admin/add-users/about-admin-roles.md)」を参照してください。
+自動クレーム ポリシーを作成および管理するには、グローバル管理者、ユーザー管理者、またはライセンス管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>自動クレーム ポリシー機能を有効または無効にする
 
@@ -55,6 +55,8 @@ ms.locfileid: "50911473"
 2. ページの中央で、[設定を有効にする **] ボタンを選択** します。
 
 ### <a name="turn-off-auto-claim-policies"></a>自動クレーム ポリシーを無効にする
+
+自動クレーム ポリシー設定をオフにできるのは、グローバル管理者のみです。
 
 1. 管理センターで、[設定組織の設定 **]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">ページに移動</a> します。
 2. 表の下部付近で、[ユーザーが所有 **するアプリとサービス] を選択します**。
