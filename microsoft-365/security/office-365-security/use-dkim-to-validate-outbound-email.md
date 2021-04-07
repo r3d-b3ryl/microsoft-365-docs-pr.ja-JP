@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/8/2019
+ms.date: 04/05/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Priority
@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df380c739724ed285401af4af451b610129c382c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5b5122984969113ec0c0533952ea3bf18bff5e5c
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206118"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592110"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -60,11 +60,11 @@ Microsoft 365 では、初期ドメインの 'onmicrosoft.com' に対応する D
 
 - [悪意のあるスプーフィング防止の点で DKIM のしくみが SPF 単独よりも優れているといえる理由](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
 
-- [手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
+- [手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする手順](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
 
 - [DKIM を手動でセットアップする手順](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
-- [DKIM の複数のドメインを構成するには](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
+- [DKIM の複数のドメインを構成する手順](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
 - [カスタム ドメインの DKIM 署名ポリシーを無効にする](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
 
@@ -85,7 +85,7 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 
 基本事項:DKIM では秘密キーを使用して、暗号化された署名をメッセージ ヘッダーに挿入します。署名ドメイン、つまり送信ドメインは、**d=** フィールドの値としてヘッダーに挿入されます。確認ドメイン、つまり受信者のドメインは、**d=** フィールドを使用して、DNS から公開キーを検索し、メッセージを認証します。メッセージが確認されれば、DKIM チェックは合格です。
 
-## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする
+## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする
 <a name="1024to2048DKIM"> </a>
 
 DKIM キーでは 1024 ビットと 2048 ビットの両方がサポートされています。次の手順では、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で 1024 ビット キーを 2048 ビットにアップグレードする方法について説明します。 次の手順は、2 つの使用例を対象としています。目的の構成に最適なものを選択してください。
@@ -192,7 +192,7 @@ TTL:                3600
 > 2 番目のレコードを作成することは重要ですが、作成時に使用できるのはセレクターのうち 1 つのみである場合があります。 本質的に、2 番目のセレクターはまだ作成されていないアドレスを指している可能性があります。 それでも、キーの交換がシームレスに行われるようになるため、2 番目の CNAME レコードを作成することをお勧めします。
 
 
-### <a name="enable-dkim-signing-for-your-custom-domain"></a>カスタム ドメインに対して DKIM 署名を有効にする
+### <a name="steps-to-enable-dkim-signing-for-your-custom-domain"></a>カスタム ドメインに対して DKIM 署名を有効にする手順
 <a name="EnableDKIMinO365"> </a>
 
 DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を有効にする準備が整ったことになります。 これは、Microsoft 365 管理センターか、PowerShell を使用して行うことができます。
@@ -201,13 +201,13 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 
 1. 職場または学校のアカウントを使用して、[Microsoft 365 にサインイン](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)します。
 
-2. 左上にあるアプリ起動ツールのアイコンを選択して、**[管理]** をクリックします。
+2. 使用するポータルに応じて、 [protection.office.com](https://protection.office.com) または [security.microsoft.com](https://security.microsoft.com) にアクセスし、以下のパスに従います。
 
-3. 左下のナビゲーションで、**[管理者]** を展開し、**[Exchange]** を選択します。
+|protection.office.com  |security.microsoft.com  |
+|---------|---------|
+| [脅威の管理] > [ポリシー] > [追加のポリシー] > [DKIM]     | [メールとコラボレーション] > [ポリシーとルール] > [脅威ポリシー] > [追加のポリシー] > [DKIM]        | 
 
-4. **[保護]** \> **[dkim]** の順に移動します。
-
-5. DKIM を有効にするドメインを選択してから、**[このドメインのメッセージに DKIM 署名で署名する]** で **[有効]** を選択します。各カスタム ドメインにこの手順を繰り返します。
+3. DKIM を有効にするドメインを選択してから、**[このドメインのメッセージに DKIM 署名で署名する]** で **[有効]** を選択します。各カスタム ドメインにこの手順を繰り返します。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>PowerShell を使用してカスタム ドメインの DKIM 署名を有効にするには
 

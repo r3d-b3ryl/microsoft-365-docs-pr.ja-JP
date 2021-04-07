@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 全体に脅威保護機能を展開する
-description: Microsoft 365 E5 の脅威保護サービスとセキュリティの概要を確認します。
+description: Microsoft 365 E5 の脅威保護サービスとセキュリティ機能の概要を確認します。 Microsoft 365 E5 を使用して、ユーザー アカウント、デバイス、メール コンテンツを保護します。
 keywords: 脅威保護、セキュリティ、E5、サイバー攻撃、マルウェア、M365、ソリューション
 ms.author: deniseb
 author: denisebmsft
@@ -17,16 +17,20 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 922e7b7ea8bceced7085af49485b3479a671d5cd
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599961"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604380"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Microsoft 365 E5 全体に脅威保護機能を展開する
 
-[マルウェア](/windows/security/threat-protection/intelligence/understanding-malware)、ファイルレスの脅威などの高度なサイバー攻撃 [は、](/windows/security/threat-protection/intelligence/fileless-threats)一般的に発生します。 企業は、効果的な IT セキュリティ機能を使用して自分自身と顧客を保護する必要があります。 サイバー攻撃は、信頼の喪失から財務上の苦境、ビジネスを脅かすダウンタイムなど、組織にとって大きな問題を引き起こす可能性があります。 脅威からの保護は重要ですが、組織の時間、労力、リソースをどこに集中する必要があるのか判断することが困難な場合があります。 
+このソリューションでは、Microsoft 365 E5 全体の強力な脅威保護機能について説明します。 このソリューションを参照して、含まれている機能、機能、組織でのこれらの機能の展開を開始する方法の概要を確認します。
+
+## <a name="why-protecting-against-threats-is-important"></a>脅威からの保護が重要な理由 
+
+[マルウェア](/windows/security/threat-protection/intelligence/understanding-malware)、ファイルレスの脅威などの高度なサイバー攻撃 [は、](/windows/security/threat-protection/intelligence/fileless-threats)一般的に発生します。 企業は、効果的な IT セキュリティ機能を使用して自分自身と顧客を保護する必要があります。 サイバー攻撃は、信頼の喪失から財務上の苦境、ビジネスを脅かすダウンタイムなど、組織にとって大きな問題を引き起こす可能性があります。 脅威からの保護は重要ですが、組織の時間、労力、リソースをどこに集中する必要があるのか判断することが困難な場合があります。 Microsoft 365 E5 が役立ちます。 
 
 Microsoft のセキュリティ ソリューションは、製品とサービスに組み込されています。 オートメーション機能と機械学習機能を使用すると、セキュリティ チームの負荷が軽減され、適切なアイテムが確実に対処されます。 Microsoft セキュリティ ソリューションの強みは、インテリジェント セキュリティ グラフで毎日処理する数兆のシグナルに [基いて構築されています](/graph/security-concept-overview)。 Microsoft 365 セキュリティ ソリューションには [、Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)が含まれており、電子メール、データ、デバイス、および ID 間で信号をまとめ、組織に対する高度な脅威の画像を描画するソリューションです。
 
@@ -45,11 +49,13 @@ Microsoft 365 E5 では、脅威保護機能は既定で統合されています
 
 Microsoft 365 Defender は、信号とデータを統合された [Microsoft 365](/microsoft-365/security/defender/overview-security-center)セキュリティ センターにまとめます。 
 
-![Microsoft 365 Defender ダッシュボードの概念図](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 Defender ダッシュボードの概念図](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
 
 次の図は、これらの個々の機能を展開する推奨パスを示しています。 
 
-![M365 脅威保護信号](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
+> [!div class="mx-imgBorder"]
+> ![M365 脅威保護信号](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
 
 |ソリューション/機能  |説明  |
 |---------|---------|
@@ -62,29 +68,27 @@ Microsoft 365 Defender は、信号とデータを統合された [Microsoft 365
 > [!TIP]
 > 複数のセキュリティ チームを持つ組織は、これらの機能を並行して実装できます。 
 
-## <a name="deploy-your-threat-protection-solution"></a>脅威保護ソリューションの展開
+## <a name="plan-to-deploy-your-threat-protection-solution"></a>脅威保護ソリューションの展開を計画する
 
- 次の図は、脅威保護機能を展開する高レベルのプロセスを示しています。 
+次の図は、脅威保護機能を展開する高レベルのプロセスを示しています。 
 
 ![脅威保護機能を展開するプロセス](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
-組織が可能な限り最高の保護を提供するには、次の手順を含むプロセスを使用してセキュリティ ソリューションをセットアップして展開します。
+組織で可能な限り最高の保護を提供するには、次の手順を含むプロセスを使用してセキュリティ ソリューションをセットアップして展開します。
 
-1. [多要素認証と条件付きアクセス ポリシーのセットアップ](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
-2. [Id の Microsoft Defender を構成する](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
-3. [Microsoft 365 Defender を有効にする](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
-4. [Defender for Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
-5. [エンドポイント用の Microsoft Defender の構成](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
-6. [Microsoft Cloud App Security の構成](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
-7. [状態の監視とアクションの実行](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
-8. [ユーザーのトレーニング](deploy-threat-protection-configure.md#step-8-train-users)
+1. [多要素認証と条件付きアクセス ポリシーを設定します](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)。
+2. [Id の Microsoft Defender を構成します](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)。
+3. [Microsoft 365 Defender を有効にする](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)。
+4. [Defender for Office 365.](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
+5. [エンドポイントの Microsoft Defender を構成します](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)。
+6. [Microsoft Cloud App Security を構成します](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)。
+7. [状態を監視し、アクションを実行します](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)。
+8. [ユーザーをトレーニングします](deploy-threat-protection-configure.md#step-8-train-users)。
 
 脅威保護機能は並行して構成できます。そのため、複数のネットワーク セキュリティ チームが異なるサービスを担当している場合は、組織の保護機能を同時に構成できます。
 
 ## <a name="next-step"></a>次の手順
 
+「Microsoft [365 全体で脅威保護機能を構成する」に進みます](deploy-threat-protection-configure.md)。
 
-![脅威保護機能を展開するプロセス](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
-
-Microsoft [365 全体の脅威保護機能の構成に進む](deploy-threat-protection-configure.md)
 
