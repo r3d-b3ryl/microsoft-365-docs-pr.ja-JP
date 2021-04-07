@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 847dd2d090fb26c5558d4a3496a79cf4829881fb
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: 81a1a4ce2e99caaca1025c6ddbbdfdc7ab7c449d
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604395"
+ms.locfileid: "51615509"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 全体で脅威保護機能を構成する
 
@@ -128,11 +128,8 @@ Microsoft Defender for Office 365 を使用すると、組織全体のユーザ�
 ![Microsoft Defender for Endpoint を展開するプロセス](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
 1. [Microsoft Defender for Endpoint の環境を準備します](../security/defender-endpoint/deployment-phases.md)。
-
 2. [エンドポイント用 Microsoft Defender を展開します](../security/defender-endpoint/production-deployment.md)。
-
 3. [Microsoft Defender for Endpoint サービスにオンボードします](../security/defender-endpoint/onboarding.md)。
-
 4. [上位のセキュリティ管理タスクを完了します](../security/defender-endpoint/tvm-security-recommendation.md)。
 
 ### <a name="more-information-about-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の詳細
@@ -149,11 +146,8 @@ Microsoft Defender for Office 365 を使用すると、組織全体のユーザ�
 ![Microsoft Cloud App Security の展開プロセス](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [ポータルと他の基本的な要件を設定します](/cloud-app-security/general-setup)。
-
 2. [クラウド検出をセットアップし、](/cloud-app-security/set-up-cloud-discovery) アプリ [を接続します](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)。
-
 3. [おすすめアプリの条件付きアクセス アプリ制御を展開します](/cloud-app-security/proxy-deployment-aad)。
-
 4. [調査ツールとダッシュボードを使用します](/cloud-app-security/investigate)。
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の詳細情報

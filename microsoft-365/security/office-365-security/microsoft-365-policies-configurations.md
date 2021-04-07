@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 104ef919d356642985e7b34d16650c27a8141e86
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599809"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615101"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -201,7 +201,7 @@ Azure 統合アプリの ID およびデバイス アクセス構成を構成お
 1. 前提条件の ID 機能とその設定を構成します。
 2. 共通 ID を構成し、条件付きアクセス ポリシーにアクセスします。
 3. ゲストおよび外部ユーザーの条件付きアクセス ポリシーを構成します。
-4. Microsoft Teams、Exchange Online、SharePoint などの Microsoft 365 クラウド アプリの条件付きアクセス ポリシーを構成します。
+4. Microsoft Teams、Exchange Online、SharePoint などの Microsoft 365 クラウド アプリの条件付きアクセス ポリシーと Microsoft Cloud App Security ポリシーを構成します。
 
 ID とデバイス アクセスを構成した後は [、Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) 機能の展開ガイドを参照して、考慮すべき追加機能の段階的なチェックリストと、アクセスの保護、監視、および監査を行う [Azure AD Identity Governance](/azure/active-directory/governance/) を参照してください。
 

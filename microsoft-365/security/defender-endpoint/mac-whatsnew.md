@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476627"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615221"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac の新機能
 
@@ -33,13 +33,15 @@ ms.locfileid: "51476627"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!IMPORTANT]
 > macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存の顧客の場合は、このページに記載されている追加の構成プロファイルを [必ず展開してください](mac-sysext-policies.md)。
 
-> [!IMPORTANT]
-> macOS 10.13 (High Sierra) のサポートは、2021 年 2 月 15 日に中止されました。
+## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
+
+- Microsoft Defender for Endpoint for Mac は、米国政府機関のお客様向けプレビューで利用できます。 詳細については [、「Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
+- パフォーマンスの向上 (特に XCode Simulator アプリを使用する場合の状況) &修正
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
 

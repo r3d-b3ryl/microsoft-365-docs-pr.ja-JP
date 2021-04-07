@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,27 +20,20 @@ search.appverid:
 - MET150
 description: Microsoft 365 for business サブスクリプションのライセンス数を増やしたり、ライセンス数を減らしたりする方法について説明します。
 ms.date: ''
-ms.openlocfilehash: 904444790a7984ebce4f549c77bfd22e8f459c9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911544"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615137"
 ---
 # <a name="buy-or-remove-licenses"></a>「ライセンスの購入または削除」
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 次の手順を使用して、サブスクリプションのライセンス数を増やしたり、ライセンス数を減らしたりできます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 - ユーザーを [追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。
 - Microsoft 365 for business または Office 365 Enterprise プランをサード パーティパートナーを通じて購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。
 
@@ -60,29 +53,24 @@ ms.locfileid: "50911544"
 
 ::: moniker range="o365-worldwide"
 
-1. Microsoft 365 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページに移動します。
-2. **[製品]** タブで、ライセンスを購入または削除するサブスクリプションを見つけます。 **[その他の操作]** (3 つのドット) を選択してから、**[ライセンスの購入]** を選択します。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. ライセンスを数を減らす場合は、**[ライセンスの購入]** ウィンドウの上部で、**[ライセンスの削除]** を選択します。
-4. ライセンスを購入または削除するには、**[ライセンスの総数]** ボックスにある **[新しい数量]** に、このサブスクリプションに必要なライセンスの総数を入力します。 たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。 ライセンスを 5 つ削除する場合は、95 と入力します。
-5. **[保存]** を選択します。
-
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
-2. [サブスクリプション **] ページで** 、ライセンスを購入または削除するサブスクリプションを選択し、[ライセンスの追加 **と削除] を選択します**。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. [ライセンス **の総数] ボックス** に、このサブスクリプションに必要なライセンスの総数を入力し、[閉じるを送信] **を** \> **選択します**。 たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。 5 つのライセンスを削除する場合は、「95」と入力します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
-2. [サブスクリプション **] ページで** 、ライセンスを購入または削除するサブスクリプションを選択し、[ライセンスの追加 **と削除] を選択します**。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. [ライセンス **の総数] ボックス** に、このサブスクリプションに必要なライセンスの総数を入力し、[閉じる] を選択 \> **します**。 たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。 ライセンスを 5 つ削除する場合は、95 と入力します。
-
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
+
+2. **[製品]** タブで、ライセンスを購入または削除するサブスクリプションを見つけます。 **[その他の操作]** (3 つのドット) を選択してから、**[ライセンスの購入]** を選択します。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+3. ライセンスを数を減らす場合は、**[ライセンスの購入]** ウィンドウの上部で、**[ライセンスの削除]** を選択します。
+4. ライセンスを購入または削除するには、**[ライセンスの総数]** ボックスにある **[新しい数量]** に、このサブスクリプションに必要なライセンスの総数を入力します。 たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。 ライセンスを 5 つ削除する場合は、95 と入力します。
+5. **[保存]** を選択します。
 
 > [!NOTE]
 > すべてのライセンスが現在ユーザーに割り当てられている場合は、サブスクリプションのライセンス数を減らしません。 ライセンス数を減らすには、まずユーザー [から 1](../../admin/manage/remove-licenses-from-users.md)つ以上のライセンスの割り当てを解除してから、サブスクリプションからライセンスを削除します。

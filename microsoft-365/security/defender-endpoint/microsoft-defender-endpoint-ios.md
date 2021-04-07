@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 72c3cfd51e472bbbda61f0084e131c4298633193
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 7d4bc095a9fbc0b9cd166d3133ed291a2c8c01da
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186991"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615425"
 ---
 # <a name="microsoft-defender-for-endpoint-for-ios"></a>iOS 用 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "51186991"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 **Microsoft Defender for Endpoint for iOS** は、Web サイト、電子メール、アプリからのフィッシングや安全でないネットワーク接続に対する保護を提供します。 すべてのアラートは、Microsoft Defender セキュリティ センターの 1 つのウィンドウから利用できます。 このポータルにより、セキュリティ チームは、他のプラットフォームと共に、iOS デバイス上の脅威の一元的なビューを提供します。
 
@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint for iOS の展開は Microsoft Intune (MDM) 経�
 
 ## <a name="resources"></a>リソース
 
-- ブログにアクセスして、今後のリリースについて情報を得 [る](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
+- 「Microsoft Defender for Endpoint for [iOS](ios-whatsnew.md) またはブログの新機能」を参照して、今後のリリースに関する情報を確認 [してください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
 
 - アプリ内フィードバック システムまたは SecOps ポータルを通じて [フィードバックを提供する](https://securitycenter.microsoft.com)
 

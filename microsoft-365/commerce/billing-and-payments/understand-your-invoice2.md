@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Microsoft 365 for Business の課金内容または請求書の請求内容および課金情報についての詳細、および発注書番号を変更する方法について説明します。
-ms.openlocfilehash: 99b52928d458e7883919ee46aaafaa7a66278447
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911688"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615377"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
@@ -106,36 +106,24 @@ ms.locfileid: "50911688"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-
-2. [**表**] ビューの場合、[**カード**] を選択します。
-
-3. 変更するサブスクリプションを見つけます。
-
-4. [**課金**] セクションで、[**請求書**] の横にある [**編集**] を選択します。
-
-5. [**お支払いの詳細の変更**] ウィンドウの下部で、PO 番号を入力してから [**保存**] を選択します。
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-2. 支払い方法を変更するサブスクリプションを選択して、**[支払い方法]** セクションで **[お支払いの詳細の変更]** を選択します。
-
-3. [**お支払いの詳細の変更**] ウィンドウの下部で、PO 番号を入力してから [**送信**] を選択します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-2. 支払い方法を変更するサブスクリプションを選択して、**[支払い方法]** セクションで **[お支払いの詳細の変更]** を選択します。
-
-3. [**お支払いの詳細の変更**] ウィンドウの下部で、PO 番号を入力してから [**送信**] を選択します。
-
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
+
+1. **[製品]** タブで、変更するサブスクリプションを選択します。
+
+1. [サブスクリプションの詳細] ページの [ **サブスクリプションと支払** いの設定] セクションで、[請求書の編集] **を選択します**。 
+
+1. [音声で支払う詳細の編集 **]** ウィンドウの下部で、PO 番号を入力し、[保存] を **選択します**。
 
 ## <a name="related-articles"></a>関連記事
 

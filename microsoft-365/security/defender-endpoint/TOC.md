@@ -115,6 +115,8 @@
 ##### [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md)
 ##### [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
 
+### [ネットワークデバイス](network-devices.md)
+
 ### [iOS 用 Microsoft Defender for Endpoint]()
 #### [Mac 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-mac.md)
 #### [新機能](mac-whatsnew.md)
