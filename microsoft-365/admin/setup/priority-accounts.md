@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: ビジネスに大きな影響を与えるアカウントとの間で送信される、失敗したメールメッセージと遅延メール メッセージを監視します。
-ms.openlocfilehash: 0bba1f87f80de9fea249ce2604e83ceeadfb79ee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050644"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632182"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>優先アカウントを管理および監視する
 
@@ -26,10 +26,16 @@ ms.locfileid: "51050644"
 
 組織がこれらのアカウントを保護するために、特定のユーザーを優先度アカウントとして指定し、追加の保護を提供するアプリ固有の機能を活用できます。 今後、より多くのアプリと機能が優先アカウントをサポートし、まず、優先度アカウント保護とプレミアム メール フロー監視の 2 つの機能を **発表しました**。
 
-- **優先度アカウント** 保護 - Microsoft Defender for Office 365 (以前は Office 365 Advanced Threat Protection) は、アラート、レポート、調査のフィルターで使用できるタグとして優先度アカウントをサポートします。 詳細については [、「Microsoft Defender の User tags for Office 365」を参照してください](../../security/defender-365-security/user-tags.md)。
+- **優先度アカウント** 保護 - Microsoft Defender for Office 365 (以前は Office 365 Advanced Threat Protection) は、アラート、レポート、調査のフィルターで使用できるタグとして優先度アカウントをサポートします。 詳細については [、「Microsoft Defender の User tags for Office 365」を参照してください](../../security/office-365-security/user-tags.md)。
+
+  自然な質問は、「すべてのユーザーが優先事項ではありませんか? すべてのユーザーを優先アカウントとして指定しない理由 はい、すべてのユーザーが優先事項ですが、優先度アカウント保護には次のような追加の利点があります。
+
+  - **その他のヒューリスティック**: Microsoft データセンター内のメール フローの分析は、会社の役員のメール フロー パターンが平均的な従業員とは異なっているという点を示しています。 優先度アカウント保護は、通常の従業員に利益を得ない会社の役員に合わせて特別に調整された追加のヒューリスティックを提供します。
+  - **レポートのその他の可視性**: 実際には、すべてのユーザー (または影響を受けるすべてのユーザー) の情報は、アラート、レポート、および調査で既に利用できます。 優先度アカウント タグをフィルターとして使用すると、調査を具体的にターゲットに設定できます。
+
 - **Premium Mail Flow Monitoring** - 正常なメール フローはビジネスの成功にとって重要であり、配信の遅延や失敗はビジネスに悪影響を及ぼす可能性があります。 失敗または遅延メールのしきい値を選択し、そのしきい値を超えたときにアラートを受信し、優先アカウントの電子メールの問題のレポートを表示できます。 詳細については、「最新の EAC で優先度アカウントの電子メールの [問題」レポートを参照してください。](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-優先度アカウントのセキュリティのベスト プラクティスについては、「優先度アカウント [のセキュリティに関する推奨事項」を参照してください](../../security/defender-365-security/security-recommendations-for-priority-accounts.md)。
+優先度アカウントのセキュリティのベスト プラクティスについては、「優先度アカウント [のセキュリティに関する推奨事項」を参照してください](../../security/office-365-security/security-recommendations-for-priority-accounts.md)。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -44,6 +50,8 @@ ms.locfileid: "51050644"
 
 > [!NOTE]
 > 最大 250 の優先度アカウントを監視できます。
+
+メールボックスに優先度アカウント保護を適用する場合は、メールボックスにアクセスできるユーザー (CEO や CEO の予定表を管理する CEO のエグゼクティブ アシスタントなど) にも優先度アカウント保護を適用する必要があります。
 
 ### <a name="add-priority-accounts-from-the-setup-page"></a>[セットアップ] ページから優先度アカウントを追加する
 

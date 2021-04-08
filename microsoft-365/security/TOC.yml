@@ -332,6 +332,8 @@
                           href: defender/api-update-incidents.md
     - name: Office 365 セキュリティ
       href: ./office-365-security/overview.md
+    - name: Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
+      href: ./office-365-security/protection-stack-microsoft-defender-for-office365.md
       items:
         - name: 概要
           items:

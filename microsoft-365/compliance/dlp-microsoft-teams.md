@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、Microsoft Teams のチャットとチャネルに DLP ポリシーを適用できます。 この記事では、その動作について詳しくは、この記事を参照してください。
-ms.openlocfilehash: 40c55ed486efc75619b514a60b707ac75554953b
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: bd6fa1c04a57f64997d5646374007641afa0f958
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445665"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632239"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -184,7 +184,7 @@ Teams チャットでの DLP 保護のサポートには、E5 が必要です。
           > [!div class="mx-imgBorder"]
           > ![機密性の高いコンテンツの外部共有を検出する DLP 条件](../media/dlp-teams-external-sharing/external-condition.png)
 
-    - **アクション**
+    - **Actions**
         - 外部ユーザーのコンテンツへのアクセスを制限する
         
         - メールおよびポリシー ヒントでユーザーに通知する
