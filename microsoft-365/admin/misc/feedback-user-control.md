@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品について Microsoft に送信できるフィードバックについて説明します。
-ms.openlocfilehash: 0a6c895eacd7a1cf8077141c6a848236a53818e7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644847"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650069"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>組織の Microsoft フィードバックの詳細
 
@@ -49,9 +49,9 @@ ms.locfileid: "51644847"
 
 ユーザーは、自分のエクスペリエンスを評価し、システムによって開始されたアンケート プロンプトを介して自分のエクスペリエンスに関する追加情報を提供できます。 これらのプロンプトは、Microsoft 365 製品内で発生します。 メッセージが表示されたら、ユーザーはフィードバックを提供する場合に選択できます。 アンケートのプロンプトは、通常、アプリの右下に表示されます。 ユーザーがフィードバックの提供、プロンプトの却下、またはプロンプトの表示を一度に消す場合、そのユーザーは一時アンケートを再び表示しません。 また、Microsoft はガバナンス プロセスを活用して、これらのシステムによって開始されるアンケートの数を制限します。  ガバナンスの目的は、ユーザーがアンケートプロンプトの数に圧倒されないという目的です。
 
-:::image type="content" source="../../media/feedback-outlook-example.png" alt-text="スクリーンショット: Outlook の製品内フィードバックの例":::
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="スクリーンショット: Microsoft 365 アンケートを推奨する可能性":::
-:::image type="content" source="../../media/feedback-in-product1.png" alt-text="スクリーンショット: 製品内フィードバック ページの例":::
+:::image type="content" source="../../media/feedback-love.png" alt-text="スクリーンショット: 製品内フィードバック要求の例":::
+
+:::image type="content" source="../../media/feedback-excel.png" alt-text="スクリーンショット: 製品内フィードバック要求の例":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>どのような種類のフィードバックが最適ですか?
 
@@ -90,3 +90,7 @@ Microsoft はフィードバックを使用して Microsoft 製品を改善し�
 受け取ったフィードバックは、Microsoft ガバナンス ルールに従って保存および処理され、承認された用途にのみアクセスできます。
 
 使いやすいツールと明確な選択肢を使用して、お客様のプライバシーを管理します。 データの収集および使用方法については透明性が高く、共有する情報に基づいた意思決定が可能です。 お客様が委託するデータを強力なセキュリティと暗号化で保護します。 弊社は、地域のプライバシーに関する法律を尊重し、お客様のプライバシーを人権として法的保護を求め争います。 メール、チャット、ファイル、その他の個人コンテンツを使用して広告をターゲットに設定することはできません。 データを収集する際、お客様のエクスペリエンスを向上するために使用します。 プライバシーに対する Microsoft のアプローチの詳細については、こちらを参照 [してください](https://privacy.microsoft.com/)。 詳しくは、プライバシーの [概要をご覧ください](/compliance/assurance/assurance-privacy)。
+
+## <a name="how-can-i-see-my-users-feedback"></a>ユーザーのフィードバックを確認する方法
+
+近日、Microsoft 製品用に収集したフィードバック データをお客様に共有します。 Microsoft 365 管理センターの新しいエクスペリエンスに取り組み、組織のフィードバック データを表示、削除、エクスポートします。 これにより、Microsoft 365 製品に関するユーザーのエクスペリエンスに関する透明性と有用な洞察が得られる。

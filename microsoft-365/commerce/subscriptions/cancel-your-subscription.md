@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: 一般法人向け Microsoft 365 または有料版サブスクリプションをキャンセルする方法について説明します。
 ms.date: ''
-ms.openlocfilehash: 7a2de2a261baeb4e64e12742810635f352217933
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916878"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615389"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 *対象*: ユーザーに割り当てたライセンスが 25 より少ない場合は、いつでも Microsoft 365 管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをオンラインでキャンセルできます。 ユーザーに割り当てられたライセンスが 25 よりも多い場合は、ライセンスを 25 未満に減らすか、[サポートに連絡してサブスクリプションをキャンセルします](../../admin/contact-support-for-business-products.md)。
 
@@ -53,46 +46,26 @@ ms.locfileid: "50916878"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> のページの順に移動し、**[製品]** タブを選択します。
-2. キャンセルするサブスクリプションを見つけます。 **[その他の操作]** (3 つのドット) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
-3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
-4. **[保存]** を選択します。
-
-これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されます。 一般法人向け Microsoft 365 の有料サブスクリプションをキャンセルした場合に予期される動作の詳細については、「[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
-
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-2. **[サブスクリプション]** ページで、サブスクリプションを選択します。
-
-3. **[その他の操作]** メニューから **[サブスクリプションのキャンセル]** を選択します。
-
-    ![[その他の操作] メニューのクローズアップ。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. 重要な日付を確認し、キャンセルの理由に関するフィードバックを入力して、**[サブスクリプションのキャンセル]** を選択します。
-
-    これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されます。 一般法人向け Microsoft 365 の有料サブスクリプションをキャンセルした場合に予期される動作の詳細については、「[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-2. **[サブスクリプション]** ページで、サブスクリプションを選択します。
-
-3. **[その他の操作]** メニューから **[サブスクリプションのキャンセル]** を選択します。
-
-    ![[その他の操作] メニューのクローズアップ。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. 重要な日付を確認し、キャンセルの理由に関するフィードバックを入力して、**[サブスクリプションのキャンセル]** を選択します。
-
-    これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されます。 一般法人向け Microsoft 365 の有料サブスクリプションをキャンセルした場合に予期される動作の詳細については、「[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
-
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
+
+2. **[製品]** タブを選択します。
+3. キャンセルするサブスクリプションを見つけます。 **[その他の操作]** (3 つのドット) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+4. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
+5. **[保存]** を選択します。
+
+これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されます。 一般法人向け Microsoft 365 の有料サブスクリプションをキャンセルした場合に予期される動作の詳細については、「[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Microsoft 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929158"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656987"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
@@ -43,7 +43,7 @@ ms.locfileid: "50929158"
 - Power BI (クラシック)
 - Web 向けプロジェクト / ロードマップ
 
-この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365 のグローバル管理者は、Microsoft 365 管理センター、Planner、Teams、Exchange、SharePoint Online などの方法でグループを作成できます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
+この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365 グローバル管理者は、Microsoft 365 管理センター、Planner、Exchange、および SharePoint Online を介してグループを作成できます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
 
 - Exchange 管理者: Exchange 管理センター、Azure AD
 - パートナー レベル 1 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD

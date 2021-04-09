@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3aa964f8e213d64f583738d8957899c1b7b5146c
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3532fd461fff02fac54e96e0a1a1e69c39c16907
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501099"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657021"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Microsoft 365 Defender で高度な狩猟を行って脅威を積極的に探す
 
@@ -54,6 +54,17 @@ ms.locfileid: "51501099"
 - Microsoft Defender for Identity
 
 高度な検索を使用するには [、Microsoft 365 Defender をオンにしてください](m365d-enable.md)。
+
+### <a name="before-you-begin"></a>はじめに
+
+ユーザーが Microsoft Defender にアクセスするには、次のいずれかのレベルのアクセス許可が必要です。
+
+- フル アクセス (読み取りおよび書き込み)
+- 読み取り専用アクセス
+
+**フル アクセス**: フル アクセスを持つユーザーは、クエリを保存、変更、および共有できます。 フル アクセス権を割り当てるには、Azure Active Directory (AAD) の "セキュリティ管理者" または "グローバル管理者" 組み込みの役割にユーザーを追加する必要があります。
+
+**読み取り専用アクセス**: 読み取り専用アクセス権を持つユーザーは、ログインしてすべてのアラートと関連情報を表示できます。 クエリを保存、変更、または共有できない。 読み取り専用アクセス権を割り当てるには、AAD の "Security Reader" 組み込みロールにユーザーを追加する必要があります。
 
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品に関して Microsoft に送信できるフィードバックを管理します。
-ms.openlocfilehash: 9c6ed46b21a5ee697c4c512c09defd66e6b961c9
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644863"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650018"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織の Microsoft フィードバックを管理する
 
@@ -32,7 +32,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 フィードバックの種類と Microsoft がユーザー フィードバックを使用する方法の詳細については、「組織の Microsoft フィードバックについて [」を参照してください](../misc/feedback-user-control.md)。
 
-次の表は、以下のフィードバック ポリシーの表に示すフィードバック ポリシーに現在接続されているアプリとサービスを表しています。
+次の表は、以下のフィードバック ポリシーの表に示すフィードバック ポリシーに現在接続されているアプリとサービスを表しています。 スクリーンショットの例については、以下の表を参照してください。
 
 |**アプリ & サービス**|**製品内フィードバック** <br> |**製品内アンケート** <br> |**メタデータ コレクション** <br> |**顧客エンゲージメント** <br> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -51,15 +51,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 |**Visio**|はい|はい|はい|はい|
 |**Yammer**|はい|はい|はい|はい|
 
-製品フィードバックの例を次に示します。
-
-**製品内フィードバック**
-
-:::image type="content" source="../../media/feedback-in-product-help.png" alt-text="スクリーンショット: 製品内ヘルプの例":::
-
-**製品内アンケート**
-
-:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="スクリーンショット: Microsoft アプリの製品内アンケートの例":::
+[製品内のアンケートとフィードバックの例については、こちらを参照してください。](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
 
 **メタデータ コレクション**
 

@@ -21,21 +21,14 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 継続請求をオフまたはオンにして Microsoft 365 を更新する方法について説明します。
-ms.openlocfilehash: 8b38336ccb7a0a29b5782e55117389f6a19a0d80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 76be85fe3cbeafb275478e6236e051b6a252c099
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903526"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615173"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 この記事の情報は、大部分の Microsoft 365 for business の憂慮サブスクリプションに該当します。
   
@@ -53,6 +46,19 @@ ms.locfileid: "50903526"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+::: moniker-end
+
 2. 継続請求を管理するサブスクリプションを選択します。
 3. サブスクリプションの詳細情報ページの **[Subscription and payment settings]** (サブスクリプションと支払い設定) の下で、**[Edit recurring billing]** (継続請求の編集) を選択します。
 4. **[Edit recurring billing settings]** (継続請求の設定の編集) ウィンドウで、**[オン]**、**[オン、ただし一度更新]**、または **[オフにする]** を選択します。
@@ -63,46 +69,6 @@ ms.locfileid: "50903526"
     > - **継続請求** を無効にしても、サブスクリプションはキャンセルされません。 サブスクリプションを有効にし続ける場合には、請求書の支払いを手動で行う必要があります。
     > - **継続請求** をオフにすると、サブスクリプションは有効期限が切れるまで有効になります。 有効期限は、**[Subscription and payment settings]** (サブスクリプションと支払いの設定) セクションのサブスクリプションの詳細情報ページで確認できます。
     > - サブスクリプションをただちにキャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-2. 継続請求を管理するサブスクリプションを選択します。
-
-3. **[継続請求]** のトグルを **[オン]** に切り替えます。
-
-    ![継続請求がオンになっているサブスクリプション カードのクローズアップ。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    トグルを **[オフ]** に切り替えると、**継続請求** がオフになります。
-
-    > [!NOTE]
-    > - **継続請求** 設定の変更は、アクティブなサブスクリプションに対してのみ行うことができます。 サブスクリプションが既に期限切れになっていたり、無効であったりする場合に、**継続請求** をオンまたはオフにするには、 サブスクリプションを [再アクティブ化](reactivate-your-subscription.md)するする必要があります。
-    > - **継続請求** を無効にしても、サブスクリプションはすぐにはキャンセルされません。 期限切れになるまでアクティブのままとなります。 有効期限はサブスクリプション カードで確認できます。
-    > - サブスクリプションをただちにキャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-  
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-2. 継続請求を管理するサブスクリプションを選択します。
-
-3. **[継続請求]** のトグルを **[オン]** に切り替えます。
-
-    ![継続請求がオンになっているサブスクリプション カードのクローズアップ。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    トグルを **[オフ]** に切り替えると、**継続請求** がオフになります。
-
-    > [!NOTE]
-    > - **継続請求** 設定の変更は、アクティブなサブスクリプションに対してのみ行うことができます。 サブスクリプションが既に期限切れになっていたり、無効であったりする場合に、**継続請求** をオンまたはオフにするには、 サブスクリプションを [再アクティブ化](reactivate-your-subscription.md)するする必要があります。
-    > - **継続請求** を無効にしても、サブスクリプションはすぐにはキャンセルされません。 期限切れになるまでアクティブのままとなります。 有効期限はサブスクリプション カードで確認できます。
-    > - サブスクリプションをただちにキャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
-
-::: moniker-end
 
 ## <a name="related-articles"></a>関連記事
 

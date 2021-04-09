@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06b52e937dd0260a50883c45c36389a6a955ad0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604536"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657043"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -46,7 +46,7 @@ ms.locfileid: "51604536"
 
 指定された Microsoft Defender for Endpoint デバイスは、構成済みのネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで使用されます。 検出された Defender for Endpoint の脅威および脆弱性管理機能は、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイを保護するための統合ワークフローを提供します。  
 
-ネットワーク デバイスが検出および分類された後、セキュリティ管理者は最新のセキュリティ推奨事項を受け取り、組織全体に展開されたネットワーク デバイスに対して最近検出された脆弱性を確認できます。
+ネットワーク デバイスが検出され、分類された後、セキュリティ管理者は最新のセキュリティ推奨事項を受け取り、組織全体に展開されたネットワーク デバイスで最近検出された脆弱性を確認できます。
 
 ## <a name="approach"></a>方法
 
@@ -95,9 +95,9 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/*
+    - *.blob.core.windows.net/networkscannerstable/ *
 
-    注: これらの URL は、許可されたデータ収集の Defender for Endpoint ドキュメントリストでは指定されていません。
+    注: すべての URL が、許可されたデータ収集の Defender for Endpoint ドキュメントリストで指定されていない場合。
 
 ## <a name="permissions"></a>アクセス許可
 
