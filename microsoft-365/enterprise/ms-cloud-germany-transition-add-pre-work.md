@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する場合の事前作業。'
-ms.openlocfilehash: e04246626088d9fca653c98246fd4a5b81bc1d30
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 3172c76288a8b9957f106f17e6cd34ccaf024067
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591876"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644730"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
@@ -115,18 +115,19 @@ nslookup -querytype=CNAME msoid.contoso.com
 | 必要な IMAP4/POP3/SMTP クライアントの変更をユーザーに通知します。 | クライアント プロトコル IMAP4、POP3、SMTP の Microsoft Cloud Deutschland エンドポイントへのデバイス接続を持つユーザーは、クライアント デバイスを手動で更新して、Office [365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)ワールドワイド エンドポイントに切り替える必要があります。 | この依存関係をこれらのプロトコルのユーザーに事前に伝え、この移行中に Outlook mobile または Outlook on the web を使用するために切り替える必要があります。 クライアント エンドポイントの更新に失敗すると、ユーザー メールボックスの移行時に Microsoft Cloud Deutschland に対するクライアント接続エラーが発生します。 |
 ||||
 
-### <a name="exchange-online-hybrid-configuration"></a>Exchange Online ハイブリッド構成
+### <a name="exchange-online-hybrid-customers"></a>Exchange Online ハイブリッドのお客様
 
 **適用対象:** オンプレミスの Exchange サーバーでアクティブな Exchange ハイブリッド構成を使用しているすべてのお客様<br>
 **適用時**: フェーズ 5 が開始される前の任意の時間
 
-Exchange Online とオンプレミス のハイブリッド展開を行うエンタープライズ顧客はExchange Serverハイブリッド構成ウィザード (HCW) を実行して、ハイブリッドセットアップを維持および確立します。 Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場合、管理者は Exchange 移行 (フェーズ 5) を開始する前に、"Office 365 Germany" モードで HCW の最新ビルドを再実行する必要があります。 次に、フェーズ 5 の完了時に "Office 365 Worldwide" モードで HCW を再度実行し、Office 365 ドイツ地域の設定でオンプレミス展開を完了します。
+Exchange Online とオンプレミスのハイブリッド展開を持つエンタープライズのお客様は、ハイブリッド構成ウィザード (HCW) Exchange Server AAD Connect を実行して、ハイブリッドセットアップを維持および確立します。 Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場合、管理者は Exchange 移行 (フェーズ 5) を開始する前に、"Office 365 Germany" モードで HCW の最新ビルドを再実行する必要があります。 次に、フェーズ 5 の完了時に "Office 365 Worldwide" モードで HCW を再度実行し、Office 365 ドイツ地域の設定でオンプレミス展開を完了します。 ディレクトリ属性は、365 Office Azure の間で同期AD AAD Connect を介してオンプレミス展開と同期されます。 
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| (Pre-Stage 5) - 365 ドイツの設定を使用して HCW をOffice実行する <br><br> <i>このアクティビティは、365 テナントの移行が開始されたというメッセージ センター Office受信した直後に開始できます (フェーズ 1)。</i>| ステージ 5 より前から HCW (17.0.5378.0 以上) をアンインストールおよび再実行すると [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 、Microsoft Cloud Deutschland ユーザーと Office 365 ドイツ地域に移行されたユーザーの両方とメールを送受信するオンプレミス構成が準備されます。 <p><li> HCW で、[My **Office 365** 組織がホストされている] の下のリスト ボックスで、[Office **365 ドイツ] を選択します。** | ステージ 5 [Exchange 移行] が開始する前にこのタスクを完了できなかった場合、オンプレミスの Exchange 展開と 365 の間でルーティングされるメールの NDRs Officeがあります。  
-| (Post-Stage 5) - 365 ワールドワイド設定を使用して HCW をOffice実行する <br><br> <i>このアクティビティは、Exchange 移行が完了したというメッセージ センター通知を受け取った後に開始できます (フェーズ 5)。</i>| ステージ 5 以降から HCW をアンインストールして再実行すると、ハイブリッド構成のオンプレミス構成がリセットされ [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 、365 グローバルOfficeされます。 <p><li> [My Office **365** 組織がホストされている] の下のリスト ボックスで **、[365 ワールドワイド] Officeを選択します**。 | ステージ 9 [移行の完了] より前にこのタスクを完了できなかった場合、オンプレミスの Exchange 展開と 365 の間でルーティングされるメールの NDRs Officeがあります。  
+| (Pre-Phase 5) - 365 ドイツの設定を使用して HCW をOffice実行する <br><br> <i>このアクティビティは、365 テナントの移行が開始されたというメッセージ センター Office受信した直後に開始できます (フェーズ 1)。</i>| フェーズ 5 より前の HCW (17.0.5378.0 以上) をアンインストールおよび再実行すると、Microsoft Cloud Deutschland ユーザーと Office 365 ドイツ地域に移行されたユーザーの両方とメールを送受信するオンプレミス構成が準備されます。 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) <p><li> HCW で、[My **Office 365** 組織がホストされている] の下のリスト ボックスで、[Office **365 ドイツ] を選択します。** | フェーズ 5 [Exchange 移行] が開始する前にこのタスクを完了できなかった場合、オンプレミスの Exchange 展開と 365 の間でルーティングされるメールの NDRs Officeがあります。  
+| (Post-Phase 5) - 365 ワールドワイド設定を使用して HCW をOffice実行する <br><br> <i>このアクティビティは、Exchange 移行が完了したというメッセージ センター通知を受け取った後に開始できます (フェーズ 5)。</i>| フェーズ 5 以降から HCW をアンインストールして再実行すると、ハイブリッド構成のオンプレミス構成は [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 、365 グローバルOfficeリセットされます。 <p><li> [My Office **365** 組織がホストされている] の下のリスト ボックスで **、[365 ワールドワイド] Officeを選択します**。 | フェーズ 9 [移行の完了] より前にこのタスクを完了できなかった場合、オンプレミスの Exchange 展開と 365 の間でルーティングされるメールの NDRs Officeがあります。  
 | 認証のためのグローバル セキュリティ トークン サービス (STS) を指す AuthServer オンプレミスの確立 | これにより、ハイブリッドオンプレミス環境を対象とする移行状態のユーザーからの Exchange 可用性要求に対する認証要求が、オンプレミス サービスにアクセスするために認証されます。 同様に、これにより、オンプレミスから 365 のグローバル サービス エンドポイントへのOffice認証が保証されます。 | Azure AD移行 (フェーズ 2) が完了したら、オンプレミス Exchange (ハイブリッド) トポロジの管理者は、Office 365 グローバル サービス用の新しい認証サービス エンドポイントを追加する必要があります。 Exchange PowerShell のこのコマンドを使用して、Azure Active Directory の Azure portal にある組織のテナント `<TenantID>` ID に置き換える。<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> このタスクを完了できないと、Microsoft Cloud Deutschland から Office 365 サービスに移行されたメールボックス ユーザーの情報をハイブリッド空き時間要求で提供できない場合があります。  |
+| (プレフェーズ 5) - 共有メールボックスの設定を保持する | 一部のハイブリッドユーザーは、Exchange Online コマンドを使用してクラウド ユーザー メールボックスを 「共有」 メールボックスに変換しています。 このクラウド メールボックス構成はメールボックスとローカル Exchange Online ディレクトリに書き込まれますが、AAD Connect を介して顧客の Active Directory に同期されません。 その結果、メールボックス RemoteRecipientType 値と RemoteDisplayType 値の Active Directory 表記と、Exchange Online でメールボックスを共有として定義する値との間に不一致が生じることができます。 <br><br> お客様は、すべての共有メールボックスが 、、またはを使用して適切にプロビジョニング `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` されていることを確認する責任があります `Set-RemoteMailbox -Shared` 。  ハイブリッド環境でユーザーのメールボックスを変換する方法については、 [このリファレンスを参照してください](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| フェーズ 5 [Exchange Online Migration] の前にこのタスクを完了できなかった場合、共有メールボックスの NDR が発生し、ライセンスのないメールボックスに戻り、影響を受けるメールボックスの共有アクセスが失われる可能性があります。 [Exchange ハイブリッド展開で](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) ディレクトリ同期を実行した後、共有メールボックスは予期せずユーザー メールボックスに変換され、Exchange Online 移行が完了する前にこの問題に対処しない場合の影響について説明します。  
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online

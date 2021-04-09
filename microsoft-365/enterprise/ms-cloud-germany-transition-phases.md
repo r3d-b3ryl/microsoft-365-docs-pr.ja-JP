@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 0cf1358b4170b69d3506062c336a1cf67a2da2de
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e3ed1d76a755ce6326ac6ae53b990136a10b564a
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591734"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644718"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -128,7 +128,7 @@ Active Directory フェデレーション サービス (AD FS) を使用して�
 
 **適用対象:** Exchange Online を使用しているすべてのお客様
 
-Exchange Online ハイブリッドを使用している場合:Exchange Online ハイブリッド管理者は、この移行の一環としてハイブリッド構成ウィザード  **(HCW)** を複数回実行する必要があります。 移行手順 [5 が開始](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-configuration)する前に Exchange **の事前作業を適用します**。 Exchange Online ハイブリッドのお客様は、「Office 365 Germany」モードで Exchange ハイブリッド構成ウィザード (HCW) の最新バージョンを実行して、Office 365 グローバル サービスへの移行用のオンプレミス構成を準備する必要があります。
+Exchange Online ハイブリッドを使用している場合:Exchange Online ハイブリッド管理者は、この移行の一環としてハイブリッド構成ウィザード  **(HCW)** を複数回実行する必要があります。 移行手順 [5 が開始](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers)する前に Exchange **の事前作業を適用します**。 Exchange Online ハイブリッドのお客様は、「Office 365 Germany」モードで Exchange ハイブリッド構成ウィザード (HCW) の最新バージョンを実行して、Office 365 グローバル サービスへの移行用のオンプレミス構成を準備する必要があります。
 
 移行フェーズ **9** が完了すると (メッセージ センター通知が公開されている場合)、Office 365 Worldwide 設定を使用して HCW を再度実行して、オンプレミス システムを Office 365 Global サービスに接続する必要があります。
 
@@ -145,7 +145,7 @@ Exchange Online ハイブリッドを使用している場合:Exchange Online �
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **適用対象:** Exchange Online PowerShell を使用する Exchange Online 管理者
 
-移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例:
+移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 以下に例を示します。
 
 ```powershell
 New-PSSession 

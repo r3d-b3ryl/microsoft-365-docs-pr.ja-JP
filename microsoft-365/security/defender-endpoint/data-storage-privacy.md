@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 228a8813bcfff052c7f861dcd2962a94cb58c0fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: e19c64c01c892a8a5f47f5892882feab1242f897
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165971"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644490"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint データストレージとプライバシー
 
@@ -31,7 +31,7 @@ ms.locfileid: "51165971"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 このセクションでは、Defender for Endpoint のプライバシーとデータ処理に関してよく寄せられる質問について説明します。
 > [!NOTE]
@@ -95,6 +95,9 @@ Microsoft Azure Government データ センターに展開されているサー�
 **契約の終了または有効期限時**<br>
 ライセンスが猶予期間または中断モードの間、データは保持され、利用できます。 この期間の終わりに、そのデータは Microsoft のシステムから消去され、契約の終了または有効期限から 180 日以内に回復不能になります。
 
+**高度なハンティング データ**<br>
+高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。
+
 
 ## <a name="can-microsoft-help-us-maintain-regulatory-compliance"></a>Microsoft は、規制コンプライアンスの維持に役立ちますか?
 
@@ -104,4 +107,4 @@ Microsoft は、コンプライアンスに準拠した個別に検証された�
 
 Defender for Endpoint 認定レポートの詳細については [、「Microsoft Trust Center」を参照してください](https://servicetrust.microsoft.com/)。 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-datastorage-belowfoldlink) 
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-datastorage-belowfoldlink) 

@@ -20,12 +20,12 @@ description: 管理者は、Microsoft 365 の脅威保護について説明し�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 189325dab37a548c717cd554ecd1d37c19ae57ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2df88df9f1f0e2c14c0adcf0d5772189a1276e9d
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205794"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650232"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -59,8 +59,8 @@ ms.locfileid: "51205794"
 |フィッシング対策保護|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |スパム対策保護|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |0 時間の自動削除 (電子メールの場合)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|電子メールおよびドキュメント内の悪意のある URL やOfficeからの保護 (安全なリンクと安全な添付ファイル)|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|SharePoint、OneDrive、Microsoft Teams ワークロードの安全な添付ファイルを有効にする|[Defender for Office 365 ](turn-on-mdo-for-spo-odb-and-teams.md)|
+|電子メールおよびドキュメント内の悪意のある URL とファイルOffice保護 (安全なリンクと安全な添付ファイル)|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|SharePoint、OneDrive、Microsoft Teams ワークロードの安全な添付ファイルを有効にする|[Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
 |高度なフィッシング対策保護|[Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>ロールと権限

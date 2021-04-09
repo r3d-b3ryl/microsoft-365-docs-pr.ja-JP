@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、管理者は、フィッシングや悪意のある URL を使用する他の攻撃から組織を保護するために、Office 365 の Defender のセーフ リンク保護について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06ec3ab1a255e9eaa8c190ed5c248c9587273e03
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206560"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644778"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全なリンク
 
@@ -118,11 +118,11 @@ ms.locfileid: "51206560"
 
 - **ユーザーに元の URL** へのクリックを許可しない : 警告ページから元の [](#warning-pages-from-safe-links)URL へのクリックをユーザーに許可またはブロックします。 推奨値が有効です。
 
-- **通知ページと警告ページに組織** のブランド化を表示する: このオプションは、警告ページに組織のブランド化を表示します。 ブランド化は、既定の Microsoft 警告ページが攻撃者によって頻繁に使用されるので、ユーザーが正当な警告を識別するのに役立ちます。 カスタマイズされたブランド化の詳細については、「組織の Azure Active Directory サインイン ページにブランド化を追加する [」を参照してください](/azure/active-directory/fundamentals/customize-branding)。
+- **通知ページと警告ページに組織** のブランド化を表示する: このオプションは、警告ページに組織のブランド化を表示します。 ブランド化は、既定の Microsoft 警告ページが攻撃者によって頻繁に使用されるので、ユーザーが正当な警告を識別するのに役立ちます。 カスタマイズされたブランド化の詳細については、「 [組織用に Microsoft 365 テーマをカスタマイズする」を参照してください](../../admin/setup/customize-your-organization-theme.md)。
 
 - **次の URL を書き換えない**: URL は変更しない。 スキャンを必要としない安全な URL のカスタム リストを保持します。 リストは、各セーフ リンク ポリシーで一意です。 [次の URLを書き換えない] リストの詳細[](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)については、この記事の後半の「セーフ リンク ポリシー」の「次の URL を書き換えない」リストを参照してください。
 
-安全なリンク ポリシーの Standard および Strict ポリシー設定の推奨値の詳細については、「セーフ リンク ポリシー設定 [」を参照してください](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
+  安全なリンク ポリシーの Standard および Strict ポリシー設定の推奨値の詳細については、「セーフ リンク ポリシー設定 [」を参照してください](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
 - **受信者フィルター**: ポリシーが適用されるユーザーを決定する受信者の条件と例外を指定する必要があります。 条件や例外には次のプロパティを使用できます。
 
@@ -167,7 +167,7 @@ ms.locfileid: "51206560"
 - **ユーザーのクリックを追跡しない**
 - **ユーザーに元の URL へのクリックを許可しない**
 
-これらの設定については、「電子メール メッセージの安全 [なリンクの設定」セクションで説明](#safe-links-settings-for-email-messages) します。
+これらの設定については、「電子メール メッセージの [セーフ リンク設定」で説明しました](#safe-links-settings-for-email-messages)。
 
 Microsoft Teams の安全なリンク保護を有効にすると、保護されたユーザーがリンクをクリックすると、Teams の URL が既知の悪意のあるリンクの一覧に対してチェックされます (クリック時の保護)。 URL は書き換え用ではありません。 リンクが悪意のあると判明した場合、ユーザーには次のエクスペリエンスがあります。
 
@@ -256,22 +256,22 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 セーフ リンクのグローバル設定で URL の一覧を構成します。 手順については [、「Configure the Configure the following URL」リストを参照してください](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)。
 
-**注**:
-
-- あらゆる場所でブロックされている URL の本当に汎用的なリストについては、「Manage [the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
-
-- 制限:
-  - エントリの最大数は 500 です。
-  - エントリの最大長は 128 文字です。
-  - すべてのエントリは、10,000 文字を超えることはできません。
-
-- URL の末尾にスラッシュ ( ) を `/` 含めない。 たとえば、 を `https://www.contoso.com` 使用します `https://www.contoso.com/` 。
-
-- ドメイン専用 URL (たとえば、または) は、ドメインを含む `contoso.com` `tailspintoys.com` すべての URL をブロックします。
-
-- 完全なドメインをブロックせずにサブドメインをブロックできます。 たとえば、サブドメインを含む URL をブロックしますが、完全なドメインを含む `toys.contoso.com*` URL はブロックしない `contoso.com` 。
-
-- URL エントリごとに最大 3 つのワイルドカード ( `*` ) を含めできます。
+> [!NOTE]
+> 
+> - あらゆる場所でブロックされている URL の本当に汎用的なリストについては、「Manage [the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
+> 
+> - 制限:
+>   - エントリの最大数は 500 です。
+>   - エントリの最大長は 128 文字です。
+>   - すべてのエントリは、10,000 文字を超えることはできません。
+> 
+> - URL の末尾にスラッシュ ( ) を `/` 含めない。 たとえば、 を `https://www.contoso.com` 使用します `https://www.contoso.com/` 。
+> 
+> - ドメイン専用 URL (たとえば、または) は、ドメインを含む `contoso.com` `tailspintoys.com` すべての URL をブロックします。
+> 
+> - 完全なドメインをブロックせずにサブドメインをブロックできます。 たとえば、サブドメインを含む URL をブロックしますが、完全なドメインを含む `toys.contoso.com*` URL はブロックしない `contoso.com` 。
+> 
+> - URL エントリごとに最大 3 つのワイルドカード ( `*` ) を含めできます。
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>"次の URL をブロックする" リストのエントリ構文
 
@@ -296,20 +296,20 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 新規または既存のセーフ リンク ポリシーのリストにエントリを追加するには、「Create Safe [Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) or [Modify Safe Links policies」を参照してください](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
 
-**注**:
-
-- 次のクライアントは、セーフ リンク ポリシーの [次の URL を書き **換** えない] リストを認識しません。 ポリシーに含まれるユーザーは、次のクライアントでのセーフ リンク スキャンの結果に基づいて URL へのアクセスをブロックできます。
-
-  - Microsoft Teams
-  - Office Web アプリ
-
-  すべての場所で許可されている URL の本当に汎用的なリストについては [、「Manage the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
-
-- ユーザー エクスペリエンスを向上させるために、一般的に使用される内部 URL をリストに追加する方法を検討してください。 たとえば、Skype for Business や SharePoint などのオンプレミス サービスがある場合は、それらの URL を追加してスキャンから除外できます。
-
-- [セーフ リンク] ポリシーで次の **URL** エントリを書き換えない場合は、リストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、リストには次のようなエントリが含まれるので、後で次のような `https://contoso.com/a` サブパスを含めることにしました `https://contoso.com/a/b` 。 新しいエントリを追加する代わりに、既存のエントリにワイルドカードを追加して、 `https://contoso.com/a/*` になります。
-
-- URL エントリごとに最大 3 つのワイルドカード ( `*` ) を含めできます。 ワイルドカードには、プレフィックスまたはサブドメインが明示的に含まれます。 たとえば、指定したドメイン内のサブドメインとパスをユーザーがアクセスできるので、エントリは同 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` じではありません。
+> [!NOTE]
+> 
+> - 次のクライアントは、セーフ リンク ポリシーの [次の URL を書き **換** えない] リストを認識しません。 ポリシーに含まれるユーザーは、次のクライアントでのセーフ リンク スキャンの結果に基づいて URL へのアクセスをブロックできます。
+> 
+>   - Microsoft Teams
+>   - Office Web アプリ
+> 
+>   すべての場所で許可されている URL の本当に汎用的なリストについては [、「Manage the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
+> 
+> - ユーザー エクスペリエンスを向上させるために、一般的に使用される内部 URL をリストに追加する方法を検討してください。 たとえば、Skype for Business や SharePoint などのオンプレミス サービスがある場合は、それらの URL を追加してスキャンから除外できます。
+> 
+> - [セーフ リンク] ポリシーで次の **URL** エントリを書き換えない場合は、リストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、リストには次のようなエントリが含まれるので、後で次のような `https://contoso.com/a` サブパスを含めることにしました `https://contoso.com/a/b` 。 新しいエントリを追加する代わりに、既存のエントリにワイルドカードを追加して、 `https://contoso.com/a/*` になります。
+> 
+> - URL エントリごとに最大 3 つのワイルドカード ( `*` ) を含めできます。 ワイルドカードには、プレフィックスまたはサブドメインが明示的に含まれます。 たとえば、指定したドメイン内のサブドメインとパスをユーザーがアクセスできるので、エントリは同 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` じではありません。
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>"次の URL を書き換えない" リストのエントリ構文
 

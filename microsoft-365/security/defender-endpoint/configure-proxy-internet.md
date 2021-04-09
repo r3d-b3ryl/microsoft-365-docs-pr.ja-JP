@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b529b1c7fa5c4f9f81cb6bfbb5f1a6bd7823a9ad
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587601"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644706"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -57,6 +57,13 @@ WinHTTP 構成設定は、Windows Internet (WinINet) インターネット ブ�
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>レジストリ ベースの静的プロキシを使用して、プロキシ サーバーを手動で構成します。
 
 コンピューターがインターネットへの接続を許可されていない場合、Defender for Endpoint センサーだけが診断データを報告し、Defender for Endpoint サービスと通信できるレジストリ ベースの静的プロキシを構成します。
+
+> [!NOTE]
+> - Windows 10 または Windows Server 2019 でこのオプションを使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。</br>
+> Windows 10 バージョン 1909 - https://support.microsoft.com/kb/4601380</br>
+> Windows 10 バージョン 2004 - https://support.microsoft.com/kb/4601382</br>
+> Windows 10 バージョン 20H2 - https://support.microsoft.com/kb/4601382</br>
+> これらの更新プログラムは、CnC (Command and Control) チャネルの接続性と信頼性を向上します。</br>
 
 静的プロキシは、グループ ポリシー (GP) を使用して構成できます。 グループ ポリシーは次の場所にあります。
 

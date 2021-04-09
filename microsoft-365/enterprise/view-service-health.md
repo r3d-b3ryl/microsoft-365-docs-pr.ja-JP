@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: アクティブ サービスが中断していないかどうかを確認するため、サポートに連絡する前に、Microsoft 365 サービスの正常性状態を表示します。
-ms.openlocfilehash: 30b677a80e5a08d75534a91aa04d735443660f18
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: e0ab4eaa1f7a96168839a4abef2f0f254a21d0ad
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215482"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644634"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 サービス正常性を確認する方法
 
@@ -47,7 +47,7 @@ ms.locfileid: "51215482"
 1. [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) の Microsoft 365 管理センターに移動し、管理者アカウントでサインインします。
 
     > [!NOTE]
-    > 全体管理者またはサービス管理者の役割を割り当てられているユーザーは、サービス正常性を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)」を参照してください。
+    > グローバル管理者またはサービス サポート管理者ロールが割り当てられているユーザーは、サービスの正常性を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)」を参照してください。
   
 2. 新しい管理センターを使用していない場合は、[**ホーム**] ページで、右上隅にある [**新しい管理センターを試す**] トグルを選択します。
 

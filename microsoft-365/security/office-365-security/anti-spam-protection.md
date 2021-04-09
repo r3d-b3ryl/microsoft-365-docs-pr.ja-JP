@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) でスパムを防止するのに役立つスパム対策設定とフィルターについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f19330d7af9c4a6601baa9562766eb5a6e7052a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206865"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650268"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 
@@ -91,7 +91,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
   - **DMARC**: ドメイン ベースのメッセージ認証、レポート、および準拠は、宛先電子メール システムが SPF または DKIM チェックに失敗し、電子メール パートナーに別のレベルの信頼を提供するメッセージを処理する方法を決定するのに役立ちます。 詳細については [、「Use DMARC to validate email in Microsoft 365」を参照してください](use-dmarc-to-validate-email.md)。
 
-- **バルク メール設定を確認** する: スパム対策ポリシーで構成するバルク準拠レベル (BCL) のしきい値によって、バルク メール (グレー _メールとも呼_ ばれる) がスパムとしてマークされるかどうかを決定します。 既定でオンの PowerShell 専用設定 _MarkAsSpamBulkMail_ も結果に貢献します。 詳細については [、「Microsoft 365 でスパム対策ポリシーを構成する」を参照してください](configure-your-spam-filter-policies.md)。
+- **バルク メール設定を確認** する: スパム対策ポリシーで構成するバルク 苦情レベル (BCL) のしきい値によって、バルク メール (グレー _メールとも呼_ ばれる) がスパムとしてマークされるかどうかを決定します。 既定でオンの PowerShell 専用設定 _MarkAsSpamBulkMail_ も結果に貢献します。 詳細については [、「Microsoft 365 でスパム対策ポリシーを構成する」を参照してください](configure-your-spam-filter-policies.md)。
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>受信トレイへのスパムの配信を防止する
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3aa5c8065b882dff670d6b829141955bf615d933
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498825"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599842"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -85,18 +85,20 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |[ラベル変更の正当な理由を要求する](sensitivity-labels.md#what-label-policies-can-do)                     | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[カスタム ヘルプ ページへのリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[コンテンツをマークする](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
-|[変数を使用した動的マーキング](#dynamic-markings-with-variables)                                              | レビュー中                     | レビュー中                 | レビュー中         | レビュー中           | レビュー中               |
+|[変数を使用した動的マーキング](#dynamic-markings-with-variables) <sup>1</sup>                                              | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[ユーザーに権限の割り当てをさせる: <br /> - 転送不可](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[ユーザーに権限の割り当てをさせる: <br /> - 暗号化のみ](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011 以上 | レビュー中 | レビュー中  | レビュー中 | ロール アウト |
-|[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | ロール アウト: 2101 以上                        | 16.43 以上 <sup>\*</sup>                    | レビュー中            | レビュー中                | はい                |
+|[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | ロール アウト: 2101 以上                        | 16.43+ <sup>2</sup>                    | レビュー中            | レビュー中                | はい                |
 |[ラベル関連のユーザー アクティビティを監査する](data-classification-activity-explorer.md) | 2011 以上 | レビュー中 | レビュー中           | レビュー中               | レビュー中 |
-|[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009 以上                      | 16.44 以上 <sup>\*</sup>                    | レビュー中           | レビュー中               | はい |
+|[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009 以上                      | 16.44+ <sup>2</sup>                    | レビュー中           | レビュー中               | はい |
 |
 
 **脚注:**
 
-<sup>\*</sup> [新しい Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439) が必要です
+<sup>1</sup> 現在サポートされているのは [Item.Label と If.App 変数](#dynamic-markings-with-variables)のみです
+<br />
+<sup>2</sup> [新しい Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439) が必要です
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 組み込みのラベル付けクライアントおよびその他のラベル付けソリューション
@@ -293,18 +295,18 @@ Office アプリの外部に秘密度ラベルを適用することを含むシ�
 > [!IMPORTANT]
 > 現在、すべてのプラットフォームのすべてのアプリが、ヘッダー、フッター、透かしに指定できる動的コンテンツ マーキングをサポートしているわけではありません。 この機能をサポートしていないアプリの場合、変数を解決するのではなく、ラベル構成で指定された元のテキストとしてマーキングを適用します。
 > 
-> Azure Information Protection 統合ラベル付けクライアントは、動的マーキングをサポートしています。 Office に組み込まれているラベル付けについては、このページの[機能](#support-for-sensitivity-label-capabilities-in-apps)セクションの表を参照してください。
+> Azure Information Protection 統合ラベル付けクライアントは、動的マーキングと一覧表示されたすべての変数をサポートしています。 Office に組み込まれているラベル付けについては、このページにある [[機能]](#support-for-sensitivity-label-capabilities-in-apps) セクションの表で最小のバージョンを確認し、次の表でサポートされている変数を特定してください。
 
 コンテンツ マーキングの秘密度ラベルを構成する場合、ヘッダー、フッター、または透かしのテキスト文字列で次の変数を使用できます。
 
 | 変数 | 説明 | ラベルが適用された場合の例 |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | 適用されたラベルのラベル表示名| **全般**|
-| `${Item.Name}` | ラベル付けされたコンテンツのファイル名またはメールの件名 | **Sales.docx** |
-| `${Item.Location}` | ラベル付けされたドキュメントのパスとファイル名、またはラベル付けされたメールの件名 | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | ラベルを適用するユーザーの表示名| **Richard Simone** |
-| `${User.PrincipalName}` | ラベルを適用するユーザーの Azure AD ユーザー プリンシパル名 (UPN) | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | ラベルを適用するユーザーのローカル タイム ゾーンでの、コンテンツにラベルが付けられた日付と時刻 | **2020 年 8 月 10 日午後 1:30** |
+| `${Item.Label}` | 適用されたラベルのラベル表示名 <br /><br> 組み込みのラベル付け: Word、Excel、PowerPoint、Outlook でサポートされています | **全般**|
+| `${Item.Name}` | ラベル付けされたコンテンツのファイル名またはメールの件名 <br /><br> 組み込みのラベル付け: Word、Excel、PowerPoint でサポートされています | **Sales.docx** |
+| `${Item.Location}` | ラベル付けされたドキュメントのパスとファイル名、またはラベル付けされたメールの件名 <br /><br> 組み込みのラベル付け: Word、Excel、PowerPoint でサポートされています | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | ラベルを適用するユーザーの表示名 <br /><br> 組み込みのラベル付け: Word、Excel、PowerPoint でサポートされています | **Richard Simone** |
+| `${User.PrincipalName}` | ラベルを適用するユーザーの Azure AD ユーザー プリンシパル名 (UPN) <br /><br> 組み込みのラベル付け: Word、Excel、PowerPoint でサポートされています  | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | ラベルを適用するユーザーのローカル タイム ゾーンでの、コンテンツにラベルが付けられた日付と時刻 <br /><br> 組み込みのラベル付け: Word、Excel、PowerPoint でサポートされています  | **2020 年 8 月 10 日午後 1:30** |
 
 > [!NOTE]
 > これらの変数の構文では大文字と小文字が区別されます。
@@ -312,9 +314,6 @@ Office アプリの外部に秘密度ラベルを適用することを含むシ�
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Word、Excel、PowerPoint、および Outlook にさまざまな視覚的マーキングを設定する
 
 追加の変数として、テキスト文字列で "If.App" 変数ステートメントを使用して Office アプリケーションの種類ごとに視覚的マーキングを構成し、**Word**、**Excel**、**PowerPoint**、または **Outlook** の値を使用してアプリケーションの種類を識別できます。 これらの値を短縮することもできます。これは、同じ If.App ステートメントで複数を指定する場合に必要です。
-
-> [!NOTE]
-> 完全を期すために、Outlook の手順が含まれていますが、現在は Azure Information Protection 統合ラベル付けクライアントでのみサポートされています。
 
 次の構文を使用してください。
 

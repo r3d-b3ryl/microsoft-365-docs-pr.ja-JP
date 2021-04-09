@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 91dda662b12893fb010e8bb46541a87ea4a8cd27
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c695eb0d786e73da5adb95bbca5c1747243d6203
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587673"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644742"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Microsoft Defender for Endpoint for Linux を手動で展開する
 
@@ -385,7 +385,7 @@ Options:
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>サーバーから実稼働チャネルInsiders-Fast移行する方法
 
-1. macOS 用 MDE の "Insiders-Fast チャネル" バージョンをアンインストールします。
+1. Linux 用 MDE の "Insiders-Fast チャネル" バージョンをアンインストールします。
 
     ``
     sudo yum remove mdatp

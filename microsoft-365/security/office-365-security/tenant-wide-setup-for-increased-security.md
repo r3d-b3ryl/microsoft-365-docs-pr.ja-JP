@@ -20,12 +20,12 @@ ms.custom:
 description: このトピックでは、Microsoft 365 環境のセキュリティに影響を与えるテナント全体の設定の推奨構成について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64715b026c3dcb029bea4d75697bf687559c168c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: efcc468dc9b6a41af79ecf2f22a6ad58a410e08f
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206425"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650328"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する 
 
@@ -53,7 +53,7 @@ Microsoft 365 セキュリティ センターには、環境を保護する機�
 |**フィッシング対策**|はい|カスタム ドメインがある場合は、CEO などの最も価値のあるユーザーのメール アカウントを保護し、ドメインを保護するために、既定のフィッシング対策ポリシーを構成します。 <p> [Office 365](set-up-anti-phishing-policies.md)のフィッシング対策ポリシーを確認し[、「EOP](configure-anti-phishing-policies-eop.md)でフィッシング対策ポリシーを構成する」または「Microsoft Defender for Office [365](configure-atp-anti-phishing-policies.md)でフィッシング対策ポリシーを構成する」を参照してください。|
 |**マルウェア対策エンジン**|はい| 既定のポリシーを編集します。 <ul><li>共通の添付ファイルの種類フィルター: [オン] を選択します。</li></ul> <p> カスタム マルウェア フィルター ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用することもできます。 <p> 詳しくは、以下の資料を参照してください。 <ul><li>[マルウェア対策保護](anti-malware-protection.md)</li><li>[マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)</li></ul>|
 |**Microsoft Defender の安全な添付ファイル for Office 365**|いいえ|[安全な添付ファイル] のメイン ページで、[グローバル設定] **をクリックし** 、次の設定をオンにします。 <ul><li>**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする**</li></ul> <p> 次の設定で安全な添付ファイル ポリシーを作成します。 <ul><li> **[ブロック**]: 不明 **なマルウェア応答** として [ブロック] を選択します。</li><li>**リダイレクトを有効** にする: このボックスをオンにして、管理者アカウントや検疫アカウントなどの電子メール アドレスを入力します。</li><li>**添付ファイルのマルウェア スキャンがタイム アウト** またはエラーが発生した場合は、上記の選択を適用します。このボックスをオンにします。</li><li>**_適用:_***受信者ドメインがドメイン** \> を選択します。</li></ul> <p> 詳細: [SharePoint、OneDrive、Microsoft Teams](mdo-for-spo-odb-and-teams.md) の安全な添付ファイルと安全な添付ファイル [ポリシーの設定](set-up-safe-attachments-policies.md)|
-|**Microsoft Defender for Office 365 の安全なリンク**|はい|[セーフ リンク] のメイン ページで、[グローバル設定] **をクリックします**。 <ul><li>**[セーフ リンクを使用する: Office 365 アプリケーション**: この設定が有効になっていることを確認します。</li><li>**ユーザーが [安全なリンク] をクリック** しても追跡しない : この設定をオフにすると、ユーザーのクリックを追跡できます。</li></ul> <p> 次の設定で安全なリンク ポリシーを作成します。 <ul><li>**メッセージ内の不明な潜在的に悪意** のある URL のアクションを選択します。この設定が [オン] である必要 **があります**。</li><li>**Microsoft Teams 内の不明な** URL または潜在的に悪意のある URL のアクションを選択します。この設定が [オン] に設定されているのを確認 **します**。</li><li>**ファイルを指す疑わしいリンク** やリンクに対してリアルタイムの URL スキャンを適用する: このボックスをオンにします。</li><li>**メッセージを配信する前に URL** のスキャンが完了するのを待ちます。このボックスをオンにします。</li><li>**組織内で送信された電子メール メッセージへの安全なリンクを適用** する: このボックスをオンにします。</li><li>**ユーザーに元の URL へのクリックを** 許可しない: このボックスをオンにします。</li><li>**適用先**: **受信者ドメインがドメイン** \> を選択します。</li></ul> <p> 詳細: [安全なリンク ポリシーを設定します](set-up-safe-links-policies.md)。|
+|**Microsoft Defender for Office 365 の安全なリンク**|はい|[セーフ リンク] のメイン ページで、[グローバル設定] **をクリックします**。 <ul><li>**[セーフ リンクを使用する: Office 365 アプリケーション**: この設定が有効になっていることを確認します。</li><li>**ユーザーが [安全なリンク] をクリック** しても追跡しない : この設定をオフにすると、ユーザーのクリックを追跡できます。</li></ul> <p> 次の設定で安全なリンク ポリシーを作成します。 <ul><li>**メッセージ内の不明な潜在的に悪意** のある URL のアクションを選択します。この設定が [オン] である必要 **があります**。</li><li>**Microsoft Teams 内の不明な** URL または潜在的に悪意のある URL のアクションを選択します。この設定が [オン] に設定されているのを確認 **します**。</li><li>**ファイルを指す疑わしいリンク** やリンクに対してリアルタイムの URL スキャンを適用する: このボックスをオンにします。</li><li>**メッセージを配信する前に URL** のスキャンが完了するのを待ちます。このボックスをオンにします。</li><li>**組織内で送信された電子メール メッセージに安全なリンクを適用** する : このボックスをオンにします。</li><li>**ユーザーに元の URL へのクリックを** 許可しない: このボックスをオンにします。</li><li>**適用先**: **受信者ドメインがドメイン** \> を選択します。</li></ul> <p> 詳細: [安全なリンク ポリシーを設定します](set-up-safe-links-policies.md)。|
 |**スパム対策 (メール フィルター)**|はい| 何を見守る: <ul><li>スパムが多すぎます - カスタム設定を選択し、既定のスパム フィルター ポリシーを編集します。</li><li>スプーフィング インテリジェンス : ドメインをスプーフィングしている送信者を確認します。 これらの送信者をブロックまたは許可します。</li></ul> <p> 詳細: [Microsoft 365 Email Anti-Spam Protection](anti-spam-protection.md).|
 |***電子メール認証***|はい|電子メール認証では、ドメイン ネーム システム (DNS) を使用して、電子メールの送信者に関する電子メール メッセージに検証可能な情報を追加します。 Microsoft 365 は既定のドメイン (onmicrosoft.com) の電子メール認証を設定しますが、Microsoft 365 管理者はカスタム ドメインに電子メール認証を使用できます。 3 つの認証方法が使用されます。 <ul><li>送信者ポリシー フレームワーク (または SPF)。</li><ul><li>セットアップについては、「スプーフィングを防止するために [Microsoft 365 で SPF をセットアップする」を参照してください](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>DomainKeys Identified Mail (DKIM)。</li><ul><li>[「DKIM を使用してカスタム ドメインから送信される送信メールを検証する」を参照してください](use-dkim-to-validate-outbound-email.md)。</li><li>DKIM を構成した後、セキュリティ センターで有効にしてください。</li></ul><li>ドメイン ベースのメッセージ認証、レポート、および準拠 (DMARC)</li><ul><li>DMARC セットアップでは [、DMARC を使用して Microsoft 365 で電子メールを検証します](use-dmarc-to-validate-email.md)。</li></ul></ul>|
 |

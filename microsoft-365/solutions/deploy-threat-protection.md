@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 全体に脅威保護機能を展開する
 description: Microsoft 365 E5 の脅威保護サービスとセキュリティ機能の概要を確認します。 Microsoft 365 E5 を使用して、ユーザー アカウント、デバイス、メール コンテンツを保護します。
-keywords: 脅威保護、セキュリティ、E5、サイバー攻撃、マルウェア、M365、ソリューション
+keywords: 高度な脅威保護、セキュリティ、Microsoft 365 E5、ソリューション、デバイスの保護、防御
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604380"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650316"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Microsoft 365 E5 全体に脅威保護機能を展開する
 

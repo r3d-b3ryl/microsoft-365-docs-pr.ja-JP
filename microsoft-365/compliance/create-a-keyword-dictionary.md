@@ -18,28 +18,56 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 セキュリティ/コンプライアンス センターでキーワード ディクショナリを作成する基本的な手順について説明します。
-ms.openlocfilehash: ff96eda71857b4b0f802462da96e4f4abbaf05f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b70deed531204f2ffe85253bd9ae2073dad291ec
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908391"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632193"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
 データ損失防止 (DLP) は、機密アイテムの識別、監視、および保護を行うことができます。 機密アイテムの識別には、特に汎用コンテンツ (医療関連の通信など) または不適切な言語や露骨な表現を識別するときに、キーワードを検索する必要がある場合があります。 機密情報の種類でキーワード リストを作成することができますが、キーワード リストにはサイズの制限があり、リストの作成や編集を行うには、XML を変更する必要があります。 キーワード辞書は、キーワードの管理が簡単になり、はるかに大規模で、辞書で最大 1 MB の用語 (圧縮後) をサポートし、あらゆる言語をサポートします。 テナント制限は、圧縮後も 1 MB です。 1 MBの圧縮後の制限は、テナント全体で結合されたすべての辞書が 100 万文字近くになる可能性があることを意味します。
-  
-> [!NOTE]
-> テナントごとに作成できるキーワード辞書ベースの機密情報の種類は 50 個に制限されています。
 
-> [!NOTE]
-> Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。
-> - 中国語 (簡体字)
-> - 中国語 (繁体字)
-> - 韓国語
-> - 日本語
->
->このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (プレビュー) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
+## <a name="keyword-dictionary-limits"></a>キーワード辞書の制限
+
+テナントごとに作成できるキーワード辞書ベースの機密情報の種類は 50 個に制限されています。 テナント内のキーワード辞書数を検索するために、この PowerShell スクリプトをテナントに対して実行することができます。
+
+```powershell
+$rawFile = $env:TEMP + "\rule.xml"
+
+$kd = Get-DlpKeywordDictionary
+$ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
+Set-Content -path $rawFile -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+$UnicodeEncoding = New-Object System.Text.UnicodeEncoding
+$FileContent = [System.IO.File]::ReadAllText((Resolve-Path $rawFile), $unicodeEncoding)
+
+if($kd.Count -gt 0)
+{
+$count = 0
+$entities = $FileContent -split "Entity id"
+for($j=1;$j -lt $entities.Count;$j++)
+{
+for($i=0;$i -lt $kd.Count;$i++)
+{
+$Matches = Select-String -InputObject $entities[$j] -Pattern $kd[$i].Identity -AllMatches
+$count = $Matches.Matches.Count + $count
+if($Matches.Matches.Count -gt 0) {break}
+}
+}
+
+Write-Output "Total Keyword Dictionary SIT:"
+$count
+}
+else
+{
+$Matches = Select-String -InputObject $FileContent -Pattern $kd.Identity -AllMatches
+Write-Output "Total Keyword Dictionary SIT:"
+$Matches.Matches.Count
+}
+
+Remove-Item $rawFile
+```
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>キーワード ディクショナリを作成する基本的な手順
 
@@ -237,3 +265,12 @@ Get-DlpKeywordDictionary -Name "Diseases"
       </Resource>
     </LocalizedStrings>
 ```
+
+> [!NOTE]
+> Microsoft 365 Information Protection は、次のような場合に 2 バイト文字セットの言語をプレビューでサポートします。
+> - 中国語 (簡体字)
+> - 中国語 (繁体字)
+> - 韓国語
+> - 日本語
+>
+>このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポー](mip-dbcs-relnotes.md)」を参照してください。

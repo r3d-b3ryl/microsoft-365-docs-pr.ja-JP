@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5 および ATP P1 および ATP P2 のお客様は、電子メール エンティティ ページを使用して各メールの 360 度のビューを取得できます。
-ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 7797e9f5965f43b856c2c34df1f99fddf72d5df5
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599489"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650340"
 ---
 # <a name="the-email-entity-page"></a>メール エンティティ ページ
 
@@ -119,7 +119,7 @@ microsoft Defender for Office 365 (または MDO) E5、MDO P1 と P2 の管理�
   - メールボックスで迷惑メール ルールが有効になっている場合、Exchange Online Protection (EOP) は、いくつかの条件に従ってメッセージを迷惑メールに移動できます。 この移動は、スパム フィルターの評決アクション [メッセージを迷惑メール フォルダーに移動する] またはメールボックスの [送信者のブロック] リストに基づいて行います。 迷惑メール ルールを無効にすると、メールボックスの差出人セーフ リストに基づいて迷惑メール フォルダーにメッセージが配信されません。
   - メールボックスで迷惑メール ルールが無効になっている場合、EOP はスパム フィルターの評決アクション [迷惑メール フォルダーにメッセージを移動する] またはメールボックスのセーフ リスト コレクションに基づいてメッセージを迷惑メール フォルダーに移動できません。
 
-- *バルク準拠レベル (BCL)*: メッセージのバルク 苦情レベル (BCL)。 BCL が高いほど、バルク メール メッセージが苦情を生成する可能性が高くなります (電子メールがスパムである可能性が高い場合、自然な結果)。
+- *バルク 苦情レベル (BCL)*: メッセージの一括苦情レベル (BCL)。 BCL が高いほど、バルク メール メッセージが苦情を生成する可能性が高くなります (電子メールがスパムである可能性が高い場合、自然な結果)。
 
 - *スパム信頼レベル (SCL)*: メッセージのスパム信頼レベル (SCL)。 値が高いほど、メッセージがスパムである可能性が高くなります。
 

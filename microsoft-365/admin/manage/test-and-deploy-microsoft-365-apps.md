@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 管理センターの統合アプリ ポータルから、組織内のユーザーおよびグループ向け Microsoft および Microsoft パートナー アプリを検索、テスト、展開します。
-ms.openlocfilehash: f806d48e0ed582b1b5c1ee262058ce987125bd99
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: da67cbe5f8b6e5f2da42e1f4b57a55d7d4a768fb
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488291"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644478"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルでパートナーによる Microsoft 365 アプリのテストと展開
 
@@ -29,7 +29,7 @@ Microsoft 365 管理センターでは、1 つの場所から単一ストア ア
 
 パートナーがこれらのアプリを作成する方法の詳細については、「商用市場向け SaaS プランを計画する方法」 [を参照してください。](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-統合アプリ ポータルは、グローバル管理者のみアクセス可能で、WorldWide のお客様のみ利用できます。 この機能は、主権クラウドと政府機関クラウドでは使用できません。
+統合アプリ ポータルは、グローバル管理者のみアクセス可能で、世界規模のお客様のみ利用できます。 この機能は、主権クラウドと政府機関クラウドでは使用できません。
 
 統合アプリ ポータルには、組織に展開されているパートナーからの単一のアプリと Microsoft 365 アプリを含むアプリの一覧が表示されます。 Web アプリ、SPFx アプリ、Office、Teams アプリだけが一覧表示されます。 Web アプリの場合は、2 種類のアプリを確認できます。
 

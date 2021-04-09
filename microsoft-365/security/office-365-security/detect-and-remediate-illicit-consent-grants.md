@@ -18,12 +18,12 @@ description: 365 で不正な同意許可攻撃を認識して修復するMicros
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9b3ff11acb32a4b3038cc18922f8e22fda0b4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205943"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644682"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不正同意の付与を検出して修復する
 
@@ -86,7 +86,7 @@ Azure Active Directory Portal または PowerShell を使用してユーザー�
 
 Azure Active Directory Portal を使用して、個々のユーザーがアクセス許可を付与したアプリケーション [を検索できます](https://portal.azure.com/)。
 
-1. 管理者権限を持つ Azure Portal にサインインします。
+1. 管理者権限を持つ Azure portal にサインインします。
 
 2. [Azure Active Directory] ブレードを選択します。
 
@@ -128,7 +128,7 @@ Illicit Consent Grant 攻撃を確認する最も簡単な方法は [ 、Get-Azu
 5. 次の PowerShell コマンドを実行します。
 
    ```powershell
-   Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+   .\Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
 スクリプトは、1 つのファイルを Permissions.csv。 次の手順に従って、不正なアプリケーションのアクセス許可の付与を探します。

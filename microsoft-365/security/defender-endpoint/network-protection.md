@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.date: 03/08/2021
 ms.topic: how-to
-ms.openlocfilehash: be98bf810d00b6e39ba9d2674604a9fd2128a8cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ef3fbeec65be512dfe07f1d533df4d8e9b31532
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198657"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644502"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -32,7 +32,7 @@ ms.locfileid: "51198657"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ネットワーク保護は、インターネット ベースのイベントからデバイスの攻撃表面を減らすのに役立ちます。 これは、従業員がアプリケーションを使用して、インターネット上でフィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストする可能性のある危険なドメインにアクセスするのを防ぐためです。 ネットワーク保護は [、Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) の範囲を拡張して、低評価ソース (ドメインまたはホスト名に基づく) への接続を試みるすべての送信 HTTP トラフィックをブロックします。
 
@@ -81,7 +81,7 @@ Windows イベント ログを確認して、ネットワーク保護が悪意�
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. **[OK]** をクリックします。
+2. **[OK]** を選択します。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するためにフィルター処理するカスタム ビューを作成します。
 
@@ -90,6 +90,16 @@ Windows イベント ログを確認して、ネットワーク保護が悪意�
 | 5007 | 設定が変更された場合のイベント |
 | 1125 | 監査モードでネットワーク保護が発生した場合のイベント |
 | 1126 | ブロック モードでネットワーク保護が発生した場合のイベント |
+
+## <a name="network-protection-troubleshooting"></a>ネットワーク保護のトラブルシューティング
+
+ネットワーク保護が実行される環境のため、Microsoft はオペレーティング システムのプロキシ設定を検出できない場合があります。 場合によっては、ネットワーク保護クライアントがクラウド サービスにアクセスできない場合があります。 接続の問題を解決するには、E5 ライセンスをお持ちのお客様は、次のいずれかの Defender レジストリ キーを構成する必要があります。
+
+```console
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+
+```
 
 ## <a name="related-articles"></a>関連記事
 
