@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品に関して Microsoft に送信できるフィードバックを管理します。
-ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650018"
+ms.locfileid: "51657009"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織の Microsoft フィードバックを管理する
 

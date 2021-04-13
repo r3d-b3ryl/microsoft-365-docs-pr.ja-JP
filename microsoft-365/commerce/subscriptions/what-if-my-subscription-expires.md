@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
-ms.openlocfilehash: ee83e237d17dc2de60b08b8d4dbdc46c98fc8251
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615401"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644658"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
@@ -68,6 +68,9 @@ ms.locfileid: "51615401"
 > [!IMPORTANT]
 > 一般的な無効ステージが終了する前にサブスクリプション データを削除する場合は、[アカウントの使用を停止する](../close-your-account.md)ことができます。
   
+> [!NOTE]
+> サブスクリプションを明示的に削除すると、期限切れや無効なステージはスキップされ、OneDrive を含む SharePoint Online のデータやコンテンツは直ちに削除されます。
+
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>サブスクリプションの有効期限切れが近い場合
 
 サブスクリプションの有効期間中、自分と自分が管理するユーザーは、自分のデータ、サービス (メール、OneDrive for Business など)、Office アプリケーションに通常どおりアクセスできます。 管理者には、サブスクリプションの期限日が近いことが、メールと管理センター経由で通知されます。
