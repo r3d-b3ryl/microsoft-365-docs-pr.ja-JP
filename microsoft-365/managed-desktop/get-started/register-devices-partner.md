@@ -1,7 +1,6 @@
 ---
 title: デバイスを登録するためのパートナー向け手順
 description: Microsoft Managed Desktop でデバイスを管理できるよう、パートナーがデバイスを登録する方法
-keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,17 +11,17 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: baf15ca4b83052af84d2b22b3d2604c6022ac900
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 227786fdcf1e490be1e3ce74bbc1be1c5f21acfe
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445592"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689235"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>デバイスを登録するためのパートナー向け手順
 
 
-このトピックでは、パートナーがデバイスを登録するための手順について説明します。 デバイスを自分で登録するプロセスについては、「Microsoft Managed Desktop のデバイスを自分で登録する [」に記載されています](register-devices-self.md)。
+この記事では、パートナーがデバイスを登録するための手順について説明します。 デバイスを自分で登録するプロセスについては、「Microsoft Managed Desktop のデバイスを自分で登録する [」に記載されています](register-devices-self.md)。
 
 
 
@@ -36,20 +35,25 @@ ms.locfileid: "51445592"
 
 ## <a name="register-devices-by-using-partner-center"></a>パートナー センターを使用してデバイスを登録する
 
-顧客との関係を確立したら、パートナー センターを利用して、次の手順に従って、関係のある顧客のデバイスを Autopilot に追加できます。
+顧客との関係を確立したら、パートナー センターを使用して、次の手順に従って、関係のある顧客のデバイスを Autopilot に追加できます。
 
 1. パートナー センター [に移動する](https://partner.microsoft.com/dashboard)
 2. [ **パートナー センター** ] メニューから [顧客] を選択し、管理するデバイスを持つ顧客を選択します。
 3. 顧客の詳細ページで、[デバイス] を **選択します**。
 4. [デバイス **にプロファイルを適用する]** で、[デバイスの追加 **] を選択します**。
-5. グループ **Microsoft365Managed_Autopilot** を入力し、[参照] を選択して顧客のリスト (.csv ファイル形式) をパートナー センターにアップロードします。
+5. 次の表に示すように、選択したデバイス プロファイルに適切なグループ タグを入力し、[参照]を選択して顧客のリスト (.csv ファイル形式) をパートナー センターにアップロードします。
 
+|[デバイス プロファイル](../service-description/profiles.md)  |グループ タグ  |
+|---------|---------|
+|機密性の高いデータ     |**Microsoft365Managed \_ SensitiveData**    |
+|Power User     | **Microsoft365Managed \_ PowerUser**          |
+|標準     | **Microsoft365Managed \_ Standard**        |
 
 > [!IMPORTANT]
-> グループ名は大文字と特殊文字 **Microsoft365Managed_Autopilot** 完全に一致する必要があります。 これにより、新しく登録されたデバイスに Microsoft Managed Desktop Autopilot プロファイルを割り当てることができます。
+> グループ名は、大文字と特殊文字を含む、表に記載されている名前と完全に一致する必要があります。 これにより、新しく登録されたデバイスに Microsoft Managed Desktop Autopilot プロファイルを割り当てることができます。
 
 >[!NOTE]
-> デバイスの購入でこの .csv ファイルを受け取っている必要があります。 .csv ファイルを受信しなかった場合は [、「Windows Autopilot](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)へのデバイスの追加」の手順に従って、自分で作成できます。 このWindows PowerShellは [、Microsoft Managed Desktop Admin](./register-devices-self.md?view=o365-worldwide#obtain-the-hardware-hash)ポータルで使用されるスクリプトとは異なります。 パートナーは [、Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) を使用して、Microsoft マネージ デスクトップ デバイスのデバイスをパートナー センターに登録する必要があります。
+> デバイスの購入でこの .csv ファイルを受け取っている必要があります。 .csv ファイルを受信しなかった場合は [、「Windows Autopilot](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)へのデバイスの追加」の手順に従って、自分で作成できます。 このWindows PowerShellは [、Microsoft Managed Desktop Admin](./register-devices-self.md#obtain-the-hardware-hash)ポータルで使用されるスクリプトとは異なります。 パートナーは [、Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) を使用して、Microsoft マネージ デスクトップ デバイスのデバイスをパートナー センターに登録する必要があります。
 
 .csv ファイルのアップロード中にエラー メッセージが表示される場合は、ファイルの形式を確認します。 列の順序が「新しいデバイスで [Windows Autopilot](/partner-center/autopilot#add-devices-to-a-customers-account)プロファイルを使用して顧客のアウトボックス エクスペリエンスをカスタマイズする」で説明されている順序と一致するようにします。 [デバイスの追加] の横にあるリンクから提供されるサンプルの .csv ファイルを使用 **して、デバイス** リストを作成することもできます。 
 
@@ -60,7 +64,14 @@ ms.locfileid: "51445592"
 
 顧客の登録を完了する前に、まず顧客との関係を確立する必要があります。 それぞれの顧客に提供する一意のリンクが必要です。 「OEM [リレーションシップを確立する方法」を参照してください](/windows/deployment/windows-autopilot/registration-auth#oem-authorization)。
 
-リレーションシップを確立したら、グループ タグ を使用して顧客のデバイスの登録を開始 **Microsoft365Managed_Autopilot。**
+リレーションシップを確立したら、選択したデバイス プロファイルごとに適切なグループ タグを使用して、顧客のデバイスの登録を開始できます。
+
+
+|デバイス プロファイル  |グループ タグ  |
+|---------|---------|
+|機密性の高いデータ     | **Microsoft365Managed \_ SensitiveData**     |
+|Power User     | **Microsoft365Managed \_ PowerUser**          |
+|標準     | **Microsoft365Managed \_ Standard**      |
 
 > [!IMPORTANT]
-> グループ名は大文字と特殊文字 **Microsoft365Managed_Autopilot** 完全に一致する必要があります。 これにより、新しく登録されたデバイスに Microsoft Managed Desktop Autopilot プロファイルを割り当てることができます。
+> グループ タグは、大文字と特殊文字を含む、表に記載されているタグと完全に一致する必要があります。 これにより、新しく登録されたデバイスに Microsoft Managed Desktop Autopilot プロファイルを割り当てることができます。

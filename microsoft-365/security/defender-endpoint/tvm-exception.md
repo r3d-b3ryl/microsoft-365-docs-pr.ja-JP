@@ -1,7 +1,7 @@
 ---
 title: セキュリティに関する推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 description: 脅威と脆弱性管理のセキュリティに関する推奨事項の例外を作成および監視します。
-keywords: microsoft Defender atp tvm 修復、mdatp tvm、脅威と脆弱性管理、脅威 & 脆弱性管理、脅威 & 脆弱性管理修復、tvm 修復 intune、tvm 修復 sccm
+keywords: エンドポイント tvm 修復、mdatp tvm、脅威と脆弱性管理、脅威 & の脆弱性管理、脅威 & の脆弱性管理修復、tvm 修復 intune、tvm 修復 sccm の microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500181"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689415"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 
@@ -36,7 +36,7 @@ ms.locfileid: "51500181"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 推奨事項が現時点では関連しない場合の修復要求の代わりに、推奨事項の例外を作成できます。 組織にデバイス グループがある場合は、例外の範囲を特定のデバイス グループに設定できます。 例外は、選択したデバイス グループに対して作成するか、過去と現在のすべてのデバイス グループに対して作成できます。  
 
@@ -84,7 +84,7 @@ ms.locfileid: "51500181"
 
 ### <a name="global-exceptions"></a>グローバル例外
 
-グローバル管理者のアクセス許可 (Microsoft Defender ATP 管理者と呼ばれる) がある場合は、グローバル例外を作成して取り消す事が可能です。 これは、 **組織内のすべての** 現在および将来のデバイス グループに影響を与え、同様のアクセス許可を持つユーザーだけが変更できます。 推奨事項の状態は、"active" から "完全な例外" に変更されます。
+グローバル管理者のアクセス許可がある場合は、グローバル例外を作成およびキャンセルできます。 これは、 **組織内のすべての** 現在および将来のデバイス グループに影響を与え、同様のアクセス許可を持つユーザーだけが変更できます。 推奨事項の状態は、"active" から "完全な例外" に変更されます。
 
 ![グローバル例外オプションの表示。](images/tvm-exception-global.png)
 

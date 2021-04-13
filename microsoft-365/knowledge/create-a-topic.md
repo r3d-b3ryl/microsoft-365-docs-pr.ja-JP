@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c1f7b67bb49aff8d6656798d80636d9de5858877
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7d1dc1af6e845ccfe2fb0e8f5701a2cd3018c308
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165839"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687533"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Microsoft Viva Topics で新しいトピックを作成する
 
@@ -42,82 +42,77 @@ ms.locfileid: "51165839"
 
 2 つの場所から新しいトピックを作成できます。
 
-- トピック センターのホーム ページ: トピックを作成または編集できるユーザー (投稿者) を持つライセンスユーザーは、[新しい] メニューを選択<b></b>して [トピック] ページを選択して、トピック センターから新しいトピックを<b>作成できます</b>。</br> 
+- トピック センターのホーム ページ: トピックを作成または編集できるユーザー (投稿者) を持つライセンスユーザーは、[新しい] メニューを選択して [トピック] ページを選択して、トピック センターから新しいトピックを **作成できます**。 
 
-    ![トピック センターからの新しいトピック](../media/knowledge-management/new-topic.png) </br> 
+    ![トピック センターからの新しいトピック](../media/knowledge-management/new-topic.png)  
 
-- [トピックの管理] ページ: トピックの管理権限を持つライセンスユーザー (ナレッジ マネージャー) は、[トピック センター] の [トピックの管理] ページで [新しいトピック] ページを選択して、新しいトピックを<b>作成できます</b>。</br> 
+- [トピックの管理] ページ: トピックの管理権限を持つライセンスユーザー (ナレッジ マネージャー) は、[トピック センター] の [トピックの管理] ページで [新しいトピック] ページを選択して、新しいトピックを **作成できます**。 
 
-    ![トピックの管理に関する新しいトピック](../media/knowledge-management/new-topic-topic-center.png) </br> 
+    ![トピックの管理に関する新しいトピック](../media/knowledge-management/new-topic-topic-center.png)  
 
 ### <a name="to-create-a-new-topic"></a>新しいトピックを作成するには、次の方法を使用します。
 
 1. [トピックの管理] ページのリボンから新しいトピック ページを作成するオプションを選択します。
 
-2.   [この **トピックに名前を付け** ] セクションに、新しいトピックの名前を入力します。
+2.  [この **トピックに名前を付け** ] セクションに、新しいトピックの名前を入力します。
 
-    ![このトピックに名前を付け](../media/knowledge-management/k-new-topic-page.png) </br> 
+    ![このトピックに名前を付け](../media/knowledge-management/k-new-topic-page.png)  
 
+3. [代替 **名] セクション** で、トピックが参照される可能性があるその他の名前を入力します。 
 
-3. [代替 <b>名] セクション</b> で、トピックが参照される可能性があるその他の名前を入力します。 
+    ![代替名](../media/knowledge-management/alt-names.png)  
 
-    ![代替名](../media/knowledge-management/alt-names.png) </br> 
-4. [説明 <b>] セクション</b> で、トピックについて説明する文を 2 つ入力します。 
+4. [説明 **] セクション** で、トピックについて説明する文を 2 つ入力します。 
 
-    ![トピックの説明](../media/knowledge-management/description.png)</br>
+    ![トピックの説明](../media/knowledge-management/description.png)
 
-4. [ピン <b>留めされた</b> ユーザー] セクションでは、ユーザーを "ピン留め" して、トピックへの接続 (たとえば、接続されたリソースの所有者) として表示できます。 まず、[新しいユーザーの追加] ボックス<b></b>に名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコン<b></b>を選択して、ピン留めを解除することもできます。 ユーザーをドラッグして、ユーザーのリストが表示される順序を変更できます。
+4. [ピン **留めされた** ユーザー] セクションでは、ユーザーを "ピン留め" して、トピックへの接続 (たとえば、接続されたリソースの所有者) として表示できます。 まず、[新しいユーザーの追加] ボックスに名前またはメール アドレスを入力し、検索結果から追加するユーザーを選択します。 ユーザー カードの [リストから削除] アイコンを選択して、ピン留めを解除することもできます。 ユーザーをリスト内の別の場所にドラッグできます。
  
-    ![ピン留めされたユーザー](../media/knowledge-management/pinned-people.png)</br>
+    ![ピン留めされたユーザー](../media/knowledge-management/pinned-people.png)
 
+5. [ピン留 **めされたファイルとページ** ] セクションでは、トピックに関連付けられているファイルまたは SharePoint サイト ページを追加または "ピン留め" できます。
 
-5. [ピン留 <b>めされたファイルとページ</b> ] セクションでは、トピックに関連付けられているファイルまたは SharePoint サイト ページを追加または "ピン留め" できます。
-
-   ![ピン留めされたファイルとページ](../media/knowledge-management/pinned-files-and-pages.png)</br>
+   ![ピン留めされたファイルとページ](../media/knowledge-management/pinned-files-and-pages.png)
  
-    新しいファイルを追加するには、[<b></b>追加] を選択し、頻繁またはフォローしているサイトから SharePoint サイトを選択し、サイトのドキュメント ライブラリからファイルを選択します。
+    新しいファイルを追加するには、[追加] を選択し、頻繁またはフォローしているサイトから SharePoint サイトを選択し、サイトのドキュメント ライブラリからファイルを選択します。
 
-    [リンクから] オプション <b>を使用して</b> 、URL を指定してファイルまたはページを追加することもできます。 
+    [リンクから] オプション **を使用して** 、URL を指定してファイルまたはページを追加することもできます。 
 
     > [!Note] 
     > 追加するファイルとページは、同じ Microsoft 365 テナント内にある必要があります。 トピックの外部リソースへのリンクを追加する場合は、手順 8 のキャンバス アイコンを使用して追加できます。
 
 
-6.  [ <b>関連サイト]</b> セクションには、トピックに関する情報を持つサイトが表示されます。 
+6.  [ **関連サイト]** セクションには、トピックに関する情報を持つサイトが表示されます。 
 
-    ![[関連サイト] セクション](../media/knowledge-management/related-sites.png)</br>
+    ![[関連サイト] セクション](../media/knowledge-management/related-sites.png)
 
-    [追加] を選択してからサイトを<b></b>検索するか、[頻繁なサイト] または [最近使用したサイト] の一覧からサイトを選択して、関連サイトを追加できます。</br>
+    [追加] を選択してからサイトを検索するか、[頻繁なサイト] または [最近使用したサイト] の一覧からサイトを選択して、関連サイトを追加できます。
     
-    ![サイトの選択](../media/knowledge-management/sites.png)</br>
+    ![サイトの選択](../media/knowledge-management/sites.png)
 
-7. [ <b>関連トピック] セクション</b> には、トピック間に存在する接続が表示されます。 別のトピックに接続を追加するには、[関連するトピックに<b></b>接続する] ボタンを選択し、関連するトピックの名前を入力し、検索結果から接続を選択します。 
+7. [ **関連トピック] セクション** には、トピック間に存在する接続が表示されます。 別のトピックに接続を追加するには、[関連するトピックに接続する] ボタンを選択し、関連するトピックの名前を入力し、検索結果から接続を選択します。 
 
-   ![関連項目](../media/knowledge-management/related-topic.png)</br>  
+   ![関連項目](../media/knowledge-management/related-topic.png)  
 
-    次に、トピックの関連付け方法について説明し、[更新] を選択 <b>します</b>。</br>
+    次に、トピックの関連付け方法について説明し、[更新] を選択 **します**。
 
-   ![関連トピックの説明](../media/knowledge-management/related-topics-update.png)</br> 
+   ![関連トピックの説明](../media/knowledge-management/related-topics-update.png) 
 
    追加した関連トピックは、接続されているトピックとして表示されます。
 
-   ![関連トピックが接続されている](../media/knowledge-management/related-topics-final.png)</br> 
+   ![関連トピックが接続されている](../media/knowledge-management/related-topics-final.png) 
 
-   関連するトピックを削除するには、削除するトピックを選択し、[トピックの削除] <b>アイコンを選択</b> します。</br>
+   関連するトピックを削除するには、削除するトピックを選択し、[トピックの削除] **アイコンを選択** します。
  
-   ![関連トピックの削除](../media/knowledge-management/remove-related.png)</br>  
+   ![関連トピックの削除](../media/knowledge-management/remove-related.png)  
 
-   次に、[削除] <b>を選択します</b>。</br>
+   次に、[削除] **を選択します**。
 
-   ![削除の確認](../media/knowledge-management/remove-related-confirm.png)</br> 
-     
- 
-
+   ![削除の確認](../media/knowledge-management/remove-related-confirm.png) 
 
 8. また、短い説明の下にあるキャンバス アイコンを選択して、静的なアイテム (テキスト、画像、リンクなど) をページに追加することもできます。 選択すると SharePoint ツールボックスが開き、そこからページに追加するアイテムを選択できます。
 
-   ![キャンバス アイコン](../media/knowledge-management/webpart-library.png)</br> 
-
+   ![キャンバス アイコン](../media/knowledge-management/webpart-library.png) 
 
 9. [発行 **] を** 選択して変更を保存します。 
 

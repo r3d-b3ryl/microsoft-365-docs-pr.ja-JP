@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: この記事では、Azure ExpressRoute ルーティング要件、回線、およびルーティング ドメインについて、365 で使用Officeします。
-ms.openlocfilehash: 9d3c381cfb6e24c1c87ef3dcfb83a9b93f991b93
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222409"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687171"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 
@@ -106,7 +106,7 @@ Microsoft ピアリングOffice使用できる 365 の各機能は、アプリ�
 
 通常、PAC ファイルは、ExpressRoute アドバタイズされたエンドポイントにネットワーク要求を回線に直接送信し、他のすべてのネットワーク要求をプロキシに送信することを目的とします。 このような PAC ファイルを構成する場合は、次の順序で PAC ファイルを作成します。
   
-1. 上記の表の列 2 のサブ FQDN を PAC ファイルの上部に含め、プロキシにトラフィックを送信します。 [365](./managing-expressroute-for-connectivity.md)エンドポイントの管理に関する記事で使用するサンプル PAC ファイルOfficeしました。
+1. 上記の表の列 2 のサブ FQDN を PAC ファイルの上部に含め、プロキシにトラフィックを送信します。 [365](./managing-office-365-endpoints.md)エンドポイントの管理に関する記事で使用するサンプル PAC ファイルOfficeしました。
 
 2. ExpressRoute 回線にトラフィックを直接送信する最初[](./urls-and-ip-address-ranges.md)のセクションの下のこの記事に、ExpressRoute にアドバタイズされたマークが付いているすべての FQDN を含めます。
 
@@ -231,11 +231,11 @@ ExpressRoute を使用した選択的ルーティングは、テスト、ユー�
 
 4. **BGP コミュニティ** - [BGP](./bgp-communities-in-expressroute.md) コミュニティ タグに基づくフィルター処理を使用すると、お客様は 365 のアプリケーションOffice ExpressRoute を通過するアプリケーションと、インターネットを通過するアプリケーションを特定できます。
 
-ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/erorouting]()
+ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/erorouting]()
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   

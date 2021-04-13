@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint for Mac のクラウド接続の問題のトラブルシューティング
-description: このトピックでは、Microsoft Defender for Endpoint for Mac のクラウド接続の問題をトラブルシューティングする方法について説明します。
+title: macOS 上の Microsoft Defender for Endpoint のクラウド接続の問題のトラブルシューティング
+description: このトピックでは、macOS 上の Microsoft Defender for Endpoint のクラウド接続の問題をトラブルシューティングする方法について説明します。
 keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e522495fa86b5a71faa9f25cc863c29cc5d124c0
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: a8871274cabae0762cecc2ff513afe93c2d4811f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476687"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688503"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac のクラウド接続の問題のトラブルシューティング
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上の Microsoft Defender for Endpoint のクラウド接続の問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51476687"
 
 **プラットフォーム** macOS
 
-このトピックでは、Microsoft Defender for Endpoint for Mac のクラウド接続の問題をトラブルシューティングする方法について説明します。
+このトピックでは、macOS 上の Microsoft Defender for Endpoint のクラウド接続の問題をトラブルシューティングする方法について説明します。
 
 ## <a name="run-the-connectivity-test"></a>接続テストの実行
 Defender for Endpoint for Mac が現在のネットワーク設定とクラウドと通信できる場合にテストするには、コマンド ラインから接続テストを実行します。
@@ -72,7 +72,7 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合は、以前にリストした URL で匿名トラフィックが許可されている必要があります。
 
 > [!WARNING]
-> 認証されたプロキシはサポートされていません。 PAC、WPAD、または静的プロキシだけが使用されている必要があります。 SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーが、Microsoft Defender for Endpoint for Mac からインターセプトなしで関連する URL にデータを直接渡す例外を構成します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
+> 認証されたプロキシはサポートされていません。 PAC、WPAD、または静的プロキシだけが使用されている必要があります。 SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーの例外を構成して、macOS 上の Microsoft Defender for Endpoint のデータを、傍受なしで関連する URL に直接渡します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
 接続がブロックされていないとテストするには:Microsoft Edge for Mac や Safari などのブラウザーで開き https://x.cp.wd.microsoft.com/api/report 、 を開きます https://cdn.x.cp.wd.microsoft.com/ping 。
 
 必要に応じて、ターミナルで次のコマンドを実行します。

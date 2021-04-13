@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP のライブ応答の問題のトラブルシューティング
-description: Microsoft Defender ATP でライブ応答を使用するときに発生する可能性がある問題のトラブルシューティング
+title: Microsoft Defender for Endpoint のライブ応答の問題のトラブルシューティング
+description: Microsoft Defender for Endpoint でライブ応答を使用するときに発生する可能性のある問題のトラブルシューティング
 keywords: ライブ応答、ライブ、応答、ロック、ファイルのトラブルシューティング
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 62525548be777a3187cea5ed4be622ac9d42079b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 2601001687fc22da98ca3cd81010237d12705ea4
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183822"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687413"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Microsoft Defender for Endpoint のライブ応答の問題のトラブルシューティング
 
@@ -31,7 +31,7 @@ ms.locfileid: "51183822"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 このページでは、ライブ応答の問題をトラブルシューティングするための詳細な手順を示します。
 

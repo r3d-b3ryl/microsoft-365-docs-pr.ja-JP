@@ -1,7 +1,7 @@
 ---
-title: プライバシー情報 - Microsoft Defender for Endpoint for iOS
+title: プライバシー情報 - Microsoft Defender for Endpoint on iOS
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint for iOS のプライバシー情報について説明します。
+description: iOS 上の Microsoft Defender for Endpoint のプライバシー情報について説明します。
 keywords: microsoft、defender、atp、ios、ポリシー、概要
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97d22cd8ff1c651bdab5c3613567b2a4778ec9d6
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: f5598df8a9e3493a1c4922f672468dd54e84c31e
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587577"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688203"
 ---
-# <a name="privacy-information---microsoft-defender-for-endpoint-for-ios"></a>プライバシー情報 - Microsoft Defender for Endpoint for iOS
+# <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>プライバシー情報 - Microsoft Defender for Endpoint on iOS
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

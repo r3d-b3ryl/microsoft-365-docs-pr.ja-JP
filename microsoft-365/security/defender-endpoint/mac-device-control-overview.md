@@ -1,6 +1,6 @@
 ---
 title: macOS のデバイスコントロール
-description: USB デバイスなどのリムーバブル 記憶域からの脅威を軽減するために Microsoft Defender for Endpoint for Mac を構成する方法について説明します。
+description: Usb デバイスなどのリムーバブル 記憶域からの脅威を軽減するために Microsoft Defender for Endpoint on Mac を構成する方法について説明します。
 keywords: microsoft, defender, atp, mac, device, control, usb, リムーバブル, メディア
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 098eb30764870e69c5b1b6c2cec3cf8e5cb11691
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186571"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688683"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186571"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -52,7 +52,7 @@ macOS のデバイスコントロールには、次の前提条件がありま�
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
 >   ```
-> - デバイスが Microsoft AutoUpdate 更新チャネル (以前に呼び出 `Beta` `InsiderFast` された) にある必要があります。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint for Mac」を参照してください](mac-updates.md)。
+> - デバイスが Microsoft AutoUpdate 更新チャネル (以前に呼び出 `Beta` `InsiderFast` された) にある必要があります。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint on Mac」を参照してください](mac-updates.md)。
 > 
 >   次のコマンドを使用して更新チャネルを確認できます。 
 > 
@@ -66,7 +66,7 @@ macOS のデバイスコントロールには、次の前提条件がありま�
 >    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
 >    ```
 >
->    または、管理環境 (JAMF または Intune) にある場合は、更新プログラム チャネルをリモートで構成できます。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint for Mac」を参照してください](mac-updates.md)。 
+>    または、管理環境 (JAMF または Intune) にある場合は、更新プログラム チャネルをリモートで構成できます。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint on Mac」を参照してください](mac-updates.md)。 
 
 ## <a name="device-control-policy"></a>デバイス制御ポリシー
 
@@ -76,10 +76,10 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 構成プロファイル内で、デバイス制御ポリシーは次のセクションで定義されます。
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | deviceControl |
+| **Key** | deviceControl |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
 
@@ -96,11 +96,11 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 エンド ユーザーがこの通知をクリックすると、既定のブラウザーで Web ページが開きます。 エンド ユーザーが通知をクリックするときに開く URL を構成できます。
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | navigationTarget |
-| **データ型** | 文字列 |
+| **Key** | navigationTarget |
+| **データ型** | String |
 | **コメント** | 定義されていない場合、製品は、製品が実行したアクションを説明する汎用ページを指す既定の URL を使用します。 |
 
 ### <a name="allow-or-block-removable-devices"></a>リムーバブル デバイスを許可またはブロックする
@@ -110,10 +110,10 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 > [!NOTE]
 > 現在サポートされているリムーバブル メディアの種類は次のとおりです。ポリシーには USB ストレージ デバイスを含めできます。
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | removableMediaPolicy |
+| **Key** | removableMediaPolicy |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
 
@@ -143,10 +143,10 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 - `audit` - この適用レベルでは、デバイスへのアクセスが制限されている場合、ユーザーに通知が表示されます。ただし、デバイスは引き続き使用できます。 この適用レベルは、ポリシーの有効性を評価するために役立ちます。
 - `block` - この適用レベルでは、ユーザーがデバイスで実行できる操作は、ポリシーで定義されている操作に制限されます。 さらに、ユーザーに通知が発生します。 
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | enforcementLevel |
+| **Key** | enforcementLevel |
 | **データ型** | String |
 | **指定可能な値** | 監査 (既定) <br/> block |
 
@@ -168,10 +168,10 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 > [!NOTE]
 > この `execute` アクセス許可は、Mach-O バイナリの実行のみを参照します。 スクリプトの実行や他の種類のペイロードは含めではありません。
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | アクセス許可 |
+| **Key** | アクセス許可 |
 | **データ型** | 文字列の配列 |
 | **可能な値** | none <br/> read <br/> write <br/> execute |
 
@@ -183,35 +183,35 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 ディクショナリ `vendors` には 1 つ以上のエントリが含まれるので、各エントリはベンダー ID で識別されます。
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | ベンダー |
+| **Key** | ベンダー |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 
 ベンダーごとに、そのベンダーのデバイスに必要なアクセス許可レベルを指定できます。
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | アクセス許可 |
+| **Key** | アクセス許可 |
 | **データ型** | 文字列の配列 |
 | **可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
 
 さらに、必要に応じて、より詳細なアクセス許可が定義されているベンダーに属する製品のセットを指定できます。 ディクショナリ `products` には 1 つ以上のエントリが含まれるので、各エントリは製品 ID で識別されます。 
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | 製品 |
+| **Key** | 製品 |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 
 製品ごとに、その製品の目的のアクセス許可レベルを指定できます。
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | アクセス許可 |
+| **Key** | アクセス許可 |
 | **データ型** | 文字列の配列 |
 | **可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
 
@@ -219,18 +219,18 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 辞書 `serialNumbers` には 1 つ以上のエントリが含まれるので、各エントリはシリアル番号で識別されます。
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | serialNumbers |
+| **Key** | serialNumbers |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 
 シリアル番号ごとに、目的のアクセス許可レベルを指定できます。
 
-|||
+|Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | アクセス許可 |
+| **Key** | アクセス許可 |
 | **データ型** | 文字列の配列 |
 | **可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
 
@@ -336,7 +336,7 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>デバイス制御ポリシーの展開
 
-「Microsoft Defender for Endpoint for Mac の設定」の説明に従って、デバイス制御ポリシーを他の製品設定の [横に含める必要があります](mac-preferences.md)。
+macOS での Microsoft Defender for Endpoint の設定の説明に従って、デバイス制御ポリシーを他の製品設定の横 [に含める必要があります](mac-preferences.md)。
 
 このプロファイルは、「構成プロファイルの展開」に記載されている手順 [を使用して展開できます](mac-preferences.md#configuration-profile-deployment)。
 

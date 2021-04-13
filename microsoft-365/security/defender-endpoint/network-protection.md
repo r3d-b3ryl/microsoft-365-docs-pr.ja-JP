@@ -15,14 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.date: 03/08/2021
 ms.topic: how-to
-ms.openlocfilehash: 2ef3fbeec65be512dfe07f1d533df4d8e9b31532
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: ae7dbea7d476e8a8f6198378e1d1bb29e24c37a2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644502"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688347"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -36,14 +35,16 @@ ms.locfileid: "51644502"
 
 ネットワーク保護は、インターネット ベースのイベントからデバイスの攻撃表面を減らすのに役立ちます。 これは、従業員がアプリケーションを使用して、インターネット上でフィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストする可能性のある危険なドメインにアクセスするのを防ぐためです。 ネットワーク保護は [、Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) の範囲を拡張して、低評価ソース (ドメインまたはホスト名に基づく) への接続を試みるすべての送信 HTTP トラフィックをブロックします。
 
-ネットワーク保護は、Windows 10 バージョン 1709 から Windows でサポートされています。 
+ネットワーク保護は、Windows 10 バージョン 1709 から Windows でサポートされています。 ネットワーク保護は他のオペレーティング システムではまだサポートされていませんが、クロムに基づく新しい Microsoft Edge を使用して Web 保護がサポートされています。 詳細については、「Web 保護」 [を参照してください](web-protection-overview.md)。
+
+ネットワーク保護は、Web 保護の保護 [をオペレーティング](web-protection-overview.md) システム レベルまで拡張します。 Edge の Web 保護機能は、サポートされている他のブラウザーやブラウザー以外のアプリケーションに提供されます。 さらに、ネットワーク保護は、エンドポイントの検出と応答で使用する場合に、侵害の指標 (IOC) の可視性とブロック [を提供します](overview-endpoint-detection-response.md)。 たとえば、ネットワーク保護はカスタム インジケーターと [動作します](manage-indicators.md)。
 
 ネットワーク保護を有効にする方法の詳細については、「ネットワーク保護を有効 [にする」を参照してください](enable-network-protection.md)。 グループ ポリシー、PowerShell、MDM CSP を使用して、ネットワーク内のネットワーク保護を有効にして管理します。
 
 > [!TIP]
 > ネットワーク保護の仕組みについては、「Microsoft Defender ATP testground サイト」demo.wd.microsoft.com [を参照](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) してください。
 
-ネットワーク保護は [、Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)で最適に機能します。これにより、アラート調査シナリオの一環として、エクスプロイト保護イベントとブロックに関する詳細なレポート [が提供されます](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts)。
+ネットワーク保護は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)で最適に機能します。これにより、アラート調査シナリオの一環として、エクスプロイト保護イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
 
 ネットワーク保護が接続をブロックすると、アクション センターから通知が表示されます。 セキュリティ運用チームは、 [組織の詳細と](customize-attack-surface-reduction.md#customize-the-notification) 連絡先情報を使用して通知をカスタマイズできます。 さらに、個々の攻撃表面の縮小ルールを有効にし、監視する特定の手法に合わせてカスタマイズできます。
 
@@ -55,18 +56,18 @@ ms.locfileid: "51644502"
 
 | Windows バージョン | Microsoft Defender ウイルス対策 |
 |:---|:---|
-| Windows 10 バージョン 1709 以降 <p>Windows Server 1803 以降 | [Microsoft Defender ウイルス対策のリアルタイム保護と](https://docs.microsoft.com/windows/security/threat-protection/configure-real-time-protection-microsoft-defender-antivirus.md)[クラウド配信の保護を有効](https://docs.microsoft.com/windows/security/threat-protection/enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります |
+| Windows 10 バージョン 1709 以降 <p>Windows Server 1803 以降 | [Microsoft Defender ウイルス対策のリアルタイム保護と](configure-real-time-protection-microsoft-defender-antivirus.md)[クラウド配信の保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります |
 
 サービスを有効にした後、サービスとデバイス (エンドポイントとも呼ばれます) 間の接続を許可するために、ネットワークまたはファイアウォールを構成する必要がある場合があります。  
 
-- .smartscreen.microsoft.com
-- .smartscreen-prod.microsoft.com
+- `.smartscreen.microsoft.com`
+- `.smartscreen-prod.microsoft.com`
 
 ## <a name="review-network-protection-events-in-the-microsoft-defender-for-endpoint-security-center"></a>Microsoft Defender for Endpoint Security Center のネットワーク保護イベントを確認する
 
-Microsoft Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックに関する詳細 [なレポートを提供します](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts)。
+Microsoft Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックに関する詳細 [なレポートを提供します](investigate-alerts.md)。
 
-高度な検索を使用して、Microsoft Defender for Endpoint データ [を照会できます](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)。 監査モードを使用 [している場合](audit-windows-defender.md)は、高度な検索を使用して、ネットワーク保護設定が有効になっている場合に環境に与える影響を確認できます。
+高度な検索を使用して、Microsoft Defender for Endpoint データ [を照会できます](advanced-hunting-overview.md)。 監査モードを使用 [している場合](audit-windows-defender.md)は、高度な検索を使用して、ネットワーク保護設定が有効になっている場合に環境に与える影響を確認できます。
 
 クエリの例を次に示します。
 
@@ -90,6 +91,28 @@ Windows イベント ログを確認して、ネットワーク保護が悪意�
 | 5007 | 設定が変更された場合のイベント |
 | 1125 | 監査モードでネットワーク保護が発生した場合のイベント |
 | 1126 | ブロック モードでネットワーク保護が発生した場合のイベント |
+
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Windows 10 Enterprise Multi-Session を実行している Windows 仮想デスクトップに関する考慮事項
+
+Windows 10 Enterprise のマルチユーザーの性質上、次の点に注意してください。
+
+1. ネットワーク保護はデバイス全体の機能であり、特定のユーザー セッションを対象とすることはできません。
+
+2. Web コンテンツ フィルター ポリシーもデバイス全体です。
+
+3. ユーザー グループを区別する必要がある場合は、個別の Windows Virtual Desktop ホスト プールと割り当てを作成してください。
+
+4. 監査モードでネットワーク保護をテストし、展開する前に動作を評価します。 
+
+5. 多数のユーザーまたは多数のマルチユーザー セッションがある場合は、展開のサイズを変更してください。
+
+### <a name="alternative-option-for-network-protection"></a>ネットワーク保護の代替オプション
+
+Windows 10 Enterprise Multi-Session 1909 以上が Azure の Windows Virtual Desktop で使用されている場合、Microsoft Edge のネットワーク保護は次の方法で有効にできます。
+
+1. [ [ネットワーク保護を有効にする] を](enable-network-protection.md) 使用し、指示に従ってポリシーを適用します。
+
+2. 次の PowerShell コマンドを実行します。 `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
 
 ## <a name="network-protection-troubleshooting"></a>ネットワーク保護のトラブルシューティング
 

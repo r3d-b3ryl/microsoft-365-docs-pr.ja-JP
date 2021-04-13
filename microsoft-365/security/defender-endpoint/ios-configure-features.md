@@ -1,5 +1,5 @@
 ---
-title: iOS 機能用に Microsoft Defender for Endpoint を構成する
+title: iOS の機能で Microsoft Defender for Endpoint を構成する
 description: iOS 機能用に Microsoft Defender ATP を展開する方法について説明します。
 keywords: microsoft、 defender, atp, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f74d4799bcb02051cddd09b80ed6ab50258302b
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587229"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687487"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>iOS 機能用に Microsoft Defender for Endpoint を構成する
+# <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS の機能で Microsoft Defender for Endpoint を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51587229"
 > IOS 用エンドポイントの Defender は、Web Protection 機能を提供するために VPN を使用します。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。
 
 ## <a name="conditional-access-with-defender-for-endpoint-for-ios"></a>iOS 用エンドポイントの Defender を使用した条件付きアクセス  
-Microsoft Defender for Endpoint for iOS および Microsoft Intune および Azure Active Directory を使用すると、デバイスのリスク レベルに基づいてデバイスコンプライアンスと条件付きアクセス ポリシーを適用できます。 Defender for Endpoint は、Intune を介してこの機能を活用するために展開できるモバイル脅威防御 (MTD) ソリューションです。
+Microsoft Defender for Endpoint on iOS、Microsoft Intune、Azure Active Directory を使用すると、デバイスのリスク レベルに基づいてデバイスコンプライアンスと条件付きアクセス ポリシーを適用できます。 Defender for Endpoint は、Intune を介してこの機能を活用するために展開できるモバイル脅威防御 (MTD) ソリューションです。
 
 IOS 用 Defender for Endpoint を使用して条件付きアクセスを設定する方法の詳細については [、「Defender for Endpoint and Intune」を参照してください](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)。
 
@@ -68,7 +68,7 @@ Apple iOS では、同時にアクティブになる複数のデバイス全体�
 企業データが脱獄された iOS デバイスでアクセスされるのを保護するには、Intune で次のコンプライアンス ポリシーを設定することをお勧めします。
 
 > [!NOTE]
-> 現時点では、Microsoft Defender for Endpoint for iOS は脱獄シナリオに対する保護を提供しません。 脱獄されたデバイスで使用する場合、特定のシナリオで、企業の電子メール ID や企業プロファイル画像 (利用可能な場合) など、アプリケーションで使用されるデータをローカルで公開できます
+> 現時点では、Microsoft Defender for Endpoint on iOS では、脱獄シナリオに対する保護は提供されません。 脱獄されたデバイスで使用する場合、特定のシナリオで、企業の電子メール ID や企業プロファイル画像 (利用可能な場合) など、アプリケーションで使用されるデータをローカルで公開できます
 
 以下の手順に従って、脱獄されたデバイスに対するコンプライアンス ポリシーを作成します。
 

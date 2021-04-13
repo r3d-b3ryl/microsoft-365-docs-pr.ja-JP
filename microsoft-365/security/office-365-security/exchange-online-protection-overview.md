@@ -15,12 +15,12 @@ ms.custom:
 description: Exchange Online Protection (EOP) がスタンドアロン環境とハイブリッド環境でオンプレミスの電子メール組織を保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3df7b376d559535e168bfa21d2a8770b19569c4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b699c0d6353d725b8d03cf4cf556a3e2ac798041
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206780"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687055"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -70,6 +70,9 @@ EOP の仕組みを理解すると、受信メールの処理方法がわかり�
 - **Exchange Enterprise CAL with Services**: 追加の Exchange Enterprise CAL with Services ライセンスを購入したオンプレミスの Exchange 組織がある場合、EOP は付属のサービスの一部です。
 
 すべての EOP サブスクリプション プランの要件、重要な制限、および機能の可用性については、「Exchange Online Protection サービスの説明」 [を参照してください](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+
+> [!NOTE]
+> **365 E3 サブスクリプションOffice EOP が含まれています**。 サブスクリプションで EOP セキュリティ機能をセットアップする手順と、microsoft Defender for Office 365 サブスクリプションが提供するセキュリティの追加に関する情報については、「脅威から保護する」を参照[してください。](protect-against-threats.md) セットアップ用の EOP 機能の推奨設定については、「推奨事項[](best-practices-for-configuring-eop.md)」の記事を参照してください。EOP 設定は特に呼び出されます。
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>オンプレミスの電子メール組織の EOP のセットアップ
 

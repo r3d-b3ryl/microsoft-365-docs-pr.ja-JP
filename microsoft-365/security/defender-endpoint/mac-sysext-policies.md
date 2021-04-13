@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: a4c92d27d45208634f99f9bfb2f756cfc5792fac
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186655"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689127"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS Catalina および macOS の新しいバージョンの新しい構成プロファイル
 
@@ -34,11 +34,11 @@ ms.locfileid: "51186655"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-macOS の進化に合わせ、カーネル拡張機能ではなくシステム拡張機能を活用する Microsoft Defender for Endpoint for Mac 更新プログラムを準備しています。 この更新プログラムは、macOS Catalina (10.15.4) 以降のバージョンの macOS にのみ適用されます。
+macOS の進化に合わせ、カーネル拡張機能ではなくシステム拡張機能を活用する macOS 更新プログラムの Microsoft Defender for Endpoint を準備しています。 この更新プログラムは、macOS Catalina (10.15.4) 以降のバージョンの macOS にのみ適用されます。
 
-Microsoft Defender for Endpoint for Mac を管理環境 (JAMF、Intune、または別の MDM ソリューションを通じて) に展開している場合は、新しい構成プロファイルを展開する必要があります。 これらの手順を実行しない場合、ユーザーは、これらの新しいコンポーネントを実行するための承認プロンプトを取得します。
+管理環境 (JAMF、Intune、または別の MDM ソリューションを介して) macOS に Microsoft Defender for Endpoint を展開している場合は、新しい構成プロファイルを展開する必要があります。 これらの手順を実行しない場合、ユーザーは、これらの新しいコンポーネントを実行するための承認プロンプトを取得します。
 
 ## <a name="jamf"></a>JAMF
 
@@ -69,10 +69,10 @@ Microsoft Defender for Endpoint for Mac を管理環境 (JAMF、Intune、また�
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint for Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 >[!NOTE]
->JAMF にはコンテンツ フィルター ポリシーの組み込みのサポートが用意されていません。これは、Microsoft Defender for Endpoint for Mac がデバイスにインストールするネットワーク拡張機能を有効にするための前提条件です。 さらに、JAMF は展開するポリシーの内容を変更する場合があります。
+>JAMF には、コンテンツ フィルター ポリシーの組み込みのサポートが用意されていません。これは、macOS 上の Microsoft Defender for Endpoint がデバイスにインストールするネットワーク拡張機能を有効にするための前提条件です。 さらに、JAMF は展開するポリシーの内容を変更する場合があります。
 >そのため、次の手順では、構成プロファイルに署名する回避策を提供します。
 
 1. テキスト エディターを使用して、次のコンテンツを `com.microsoft.network-extension.mobileconfig` デバイスに保存します。
@@ -308,7 +308,7 @@ sysext.xml: OK
 1.  Intune で、[デバイス構成の **管理**  >  **] を開きます**。 [プロファイル **の**  >  **管理] [プロファイルの**  >  **作成] を選択します**。
 2. プロファイルの名前を選択します。 **Platform=macOS と** **Profile type=Custom を変更します**。 [構成 **] を選択します**。
 3.  構成プロファイルを開 **き、sysext.xml。** このファイルは、前の手順で作成されました。
-4.  **[OK]** をクリックします。
+4.  **[OK]** を選択します。
 
     ![Intune のスクリーンショットのシステム拡張機能](images/mac-system-extension-intune.png)
 

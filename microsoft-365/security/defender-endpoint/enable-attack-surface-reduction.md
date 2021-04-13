@@ -11,15 +11,16 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: ''
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 84947057abbd456dee5cbf5d0c6fea37f679d9ad
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.topic: how-to
+ms.openlocfilehash: e6f3d6da2424b2b3b6b7c1f2c9973e4046d6e27f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570950"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689178"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -29,7 +30,8 @@ ms.locfileid: "51570950"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。 次のエディションとバージョンの Windows を実行しているデバイスに対して ASR ルールを設定できます。
 - Windows 10 Pro [バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 以降
@@ -37,11 +39,15 @@ ms.locfileid: "51570950"
 - Windows Server バージョン [1803 (半期チャネル)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 以降
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-各 ASR ルールには、次の 3 つの設定のいずれかを含む。
+各 ASR ルールには、次の 4 つの設定のいずれかを含む。
 
-- 構成されていません: ASR ルールを無効にする
-- ブロック: ASR ルールを有効にする
-- 監査: ASR ルールが有効な場合に組織に与える影響を評価する
+- **構成されていません**: ASR ルールを無効にする
+- **ブロック**: ASR ルールを有効にする
+- **監査**: ASR ルールが有効な場合に組織に与える影響を評価する
+- **警告**: ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスする
+
+> [!IMPORTANT]
+> 現在、Microsoft Endpoint Manager (MEM) で ASR ルールを構成する場合、3 つの ASR ルールでは警告モードはサポートされていません。 詳細については、「警告モード [がサポートされていないケース」を参照してください](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
 Microsoft Defender for Endpoint (Defender [for Endpoint)](https://docs.microsoft.com/windows/security/threat-protection) で使用できる高度な監視およびレポート機能を利用するには、Windows E5 ライセンス (または類似のライセンス SKU) で ASR ルールを使用することを強くお勧めします。 ただし、高度な監視およびレポート機能にアクセスできない Windows Professional や E3 などの他のライセンスの場合は、ASR ルールがトリガーされる際に各エンドポイントで生成されるイベント (イベント転送など) の上に独自の監視およびレポート ツールを開発できます。
 
@@ -97,11 +103,12 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
 
 `Value: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84=2|3B576869-A4EC-4529-8536-B80A7769E899=1|D4F940AB-401B-4EfC-AADC-AD5F3C50688A=2|D3E037E1-3EB8-44C8-A917-57927947596D=1|5BEB7EFE-FD9A-4556-801D-275E5FFC04CC=0|BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550=1`
 
-監査モードで有効、無効、または有効にする値は次のとおりです。
+監査モードで有効 (ブロック)、無効化、警告、または有効にする値は次のとおりです。
 
-- Disable = 0
-- ブロック (ASR ルールを有効にする) = 1
-- 監査 = 2
+- 0 : 無効にする (ASR ルールを無効にする)
+- 1 : ブロック (ASR ルールを有効にする)
+- 2 : 監査 (ASR ルールが有効な場合に組織に与える影響を評価する)
+- 6 : 警告 (ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスできる)
 
 除外を追加するには [、./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) 構成サービス プロバイダー (CSP) を使用します。
 
@@ -143,11 +150,12 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
 
    **[Show....]** を選択し、[値名] 列にルール ID を入力し、[値] 列に選択した状態 **を** 次のように入力します。
 
-   - Disable = 0
-   - ブロック (ASR ルールを有効にする) = 1
-   - 監査 = 2
+   - 0 : 無効にする (ASR ルールを無効にする)
+   - 1 : ブロック (ASR ルールを有効にする)
+   - 2 : 監査 (ASR ルールが有効な場合に組織に与える影響を評価する)
+   - 6 : 警告 (ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスできる)
 
-   ![空の攻撃表面縮小ルール ID と値 1 を示すグループ ポリシー設定](/microsoft-365/security/defender-endpoint/images/asr-rules-gp)
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="グループ ポリシーの ASR ルール":::
 
 5. ASR ルールからファイルとフォルダーを除外するには、[攻撃表面の縮小ルールからファイルとパスを除外する] 設定を選択し、オプションを [有効] に **設定します**。 [ **表示] を** 選択し、[値の名前] 列に各ファイル **またはフォルダーを入力** します。 各 **アイテムの [** 値] **列に 0** を入力します。
 
@@ -161,7 +169,7 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
 
 1. [ **スタート] メニューに「powershell」** と入力し、Windows PowerShellを右クリックし **、[** 管理者として **実行] を選択します**。
 
-2. 次のコマンドレットを入力します。
+2. 次の cmdlet を入力します。
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -171,6 +179,12 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
+    ```
+
+    警告モードで ASR ルールを有効にするには、次のコマンドレットを使用します。
+
+    ```PowerShell
+    Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
 
     ASR ルールをオフにするには、次のコマンドレットを使用します。
@@ -191,7 +205,7 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
     PowerShell 動詞を使用 `Add-MpPreference` して、既存のリストに新しいルールを追加することもできます。
 
     > [!WARNING]
-    > `Set-MpPreference` ルールの既存のセットは常に上書きされます。 既存のセットに追加する場合は、代わりに使用する `Add-MpPreference` 必要があります。
+    > `Set-MpPreference` ルールの既存のセットは常に上書きされます。 既存のセットに追加する場合は、代わりに `Add-MpPreference` 使用します。
     > を使用して、ルールとその現在の状態の一覧を取得できます `Get-MpPreference` 。
 
 3. ASR ルールからファイルとフォルダーを除外するには、次のコマンドレットを使用します。

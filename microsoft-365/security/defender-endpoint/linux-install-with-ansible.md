@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a4dd551da8fcb38559360307a878edde3b3a1ba
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 48c34f2a8fb65cb0fc8ecbb616b9d041f61ae044
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587637"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688131"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-with-ansible"></a>Ansible を使用して Microsoft Defender for Endpoint for Linux を展開する
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -174,7 +174,7 @@ Microsoft Defender セキュリティ センターからオンボーディング
       baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
       gpgcheck: yes
       enabled: Yes
-  when: ansible_os_family == "RedHat"
+    when: ansible_os_family == "RedHat"
   ```
 
 - Ansible インストールを作成し、YAML ファイルをアンインストールします。
@@ -189,7 +189,8 @@ Microsoft Defender セキュリティ センターからオンボーディング
           tasks:
             - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_apt_repo.yml
-            - apt:
+            - name: Install MDATP
+              apt:
                 name: mdatp
                 state: latest
                 update_cache: yes
@@ -200,36 +201,39 @@ Microsoft Defender セキュリティ センターからオンボーディング
         ```
         ```Output
         - hosts: servers
-        tasks:
-            - apt:
+          tasks:
+            - name: Uninstall MDATP
+              apt:
                 name: mdatp
                 state: absent
         ```
 
-    - yum ベースの配布では、次の YAML ファイルを使用します。
+    - dnf ベースの配布では、次の YAML ファイルを使用します。
 
         ```bash
-        cat install_mdatp_yum.yml
+        cat install_mdatp_dnf.yml
         ```
         ```Output
         - hosts: servers
           tasks:
             - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_yum_repo.yml
-            - yum:
-              name: mdatp
-              state: latest
-              enablerepo: packages-microsoft-com-prod-[channel]
+            - name: Install MDATP
+              dnf:
+                name: mdatp
+                state: latest
+                enablerepo: packages-microsoft-com-prod-[channel]
         ```
 
         ```bash
-        cat uninstall_mdatp_yum.yml
+        cat uninstall_mdatp_dnf.yml
         ```
         ```Output
         - hosts: servers
-        tasks:
-            - yum:
-               name: mdatp
+          tasks:
+            - name: Uninstall MDATP
+              dnf:
+                name: mdatp
                 state: absent
         ```
 
@@ -271,10 +275,10 @@ Microsoft Defender セキュリティ センターからオンボーディング
 
 ## <a name="references"></a>関連情報
 
-- [YUM リポジトリの追加または削除](https://docs.ansible.com/ansible/2.3/yum_repository_module.html)
+- [YUM リポジトリの追加または削除](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 
-- [yum パッケージ マネージャーを使用してパッケージを管理する](https://docs.ansible.com/ansible/latest/modules/yum_module.html)
+- [dnf パッケージ マネージャーを使用してパッケージを管理する](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
 
-- [APT リポジトリの追加と削除](https://docs.ansible.com/ansible/latest/modules/apt_repository_module.html)
+- [APT リポジトリの追加と削除](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
-- [apt-packages の管理](https://docs.ansible.com/ansible/latest/modules/apt_module.html)
+- [apt-packages の管理](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)

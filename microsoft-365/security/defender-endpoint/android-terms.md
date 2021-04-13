@@ -18,14 +18,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: b957147d8a4b0606159669ded2cafca5568daf71
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 2bcc8c1f977a6060ac94dc3a634f075a5c1ee041
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166223"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687951"
 ---
-# <a name="microsoft-defender-for-endpoint-for-android-application-license-terms"></a>Microsoft Defender for Endpoint for Android アプリケーション ライセンス条項
+# <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Microsoft Defender for Endpoint on Android アプリケーション ライセンス条項
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51166223"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## <a name="microsoft-application-license-terms-microsoft-defender-for-endpoint"></a>MICROSOFT アプリケーション ライセンス条項: エンドポイント用 MICROSOFT DEFENDER

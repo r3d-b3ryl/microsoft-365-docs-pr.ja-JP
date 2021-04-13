@@ -1,6 +1,6 @@
 ---
-title: microsoft Defender for Endpoint for macOS の手動展開
-description: コマンド ラインから Microsoft Defender for Endpoint for macOS を手動でインストールします。
+title: macOS での Microsoft Defender for Endpoint の手動展開
+description: コマンド ラインから手動で macOS に Microsoft Defender for Endpoint をインストールします。
 keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9e75441a8c4a336e8c657d27330c118fcac4788
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476319"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688599"
 ---
-# <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>microsoft Defender for Endpoint for macOS の手動展開
+# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint の手動展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,9 +33,9 @@ ms.locfileid: "51476319"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-このトピックでは、Microsoft Defender for Endpoint for macOS を手動で展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
+このトピックでは、Microsoft Defender for Endpoint を macOS に手動で展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
 - [インストール パッケージとオンボーディング パッケージのダウンロード](#download-installation-and-onboarding-packages)
 - [アプリケーションのインストール (macOS 10.15 以前のバージョン)](#application-installation-macos-1015-and-older-versions)
 - [アプリケーションのインストール (macOS 11 以降のバージョン)](#application-installation-macos-11-and-newer-versions)
@@ -43,7 +43,7 @@ ms.locfileid: "51476319"
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、 [メインの Microsoft Defender for Endpoint for macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
+開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
 
 ## <a name="download-installation-and-onboarding-packages"></a>インストール パッケージとオンボーディング パッケージのダウンロード
 
@@ -105,9 +105,9 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
     ![システム拡張機能のセキュリティの基本設定1](images/big-sur-install-3.png)
 
-5. Microsoft Defender for Endpoint for Mac で配布&すべてのシステム拡張機能について、手順 3 から 4 を繰り返します。
+5. Microsoft Defender for Endpoint on Mac で配布&すべてのシステム拡張機能について、手順 3 から 4 を繰り返します。
 
-6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint for Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
+6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint on Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
 
     ![システム拡張機能のセキュリティの基本設定2](images/big-sur-install-4.png)
 
@@ -117,7 +117,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 ## <a name="client-configuration"></a>クライアント構成
 
-1. wdav.pkg と MicrosoftDefenderATPOnboardingMacOs.py microsoft Defender for Endpoint for macOS を展開するデバイスにコピーします。
+1. wdav.pkg と MicrosoftDefenderATPOnboardingMacOs.py を macOS に Microsoft Defender for Endpoint を展開するデバイスにコピーします。
 
     クライアント デバイスがクライアント デバイスに関連付org_id。 org_id *属性は* 空白です。
 

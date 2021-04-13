@@ -1,6 +1,6 @@
 ---
 title: Web 保護
-description: Microsoft Defender ATP の Web 保護と組織を保護する方法について説明します。
+description: Microsoft Defender for Endpoint の Web 保護と、組織を保護する方法について説明します。
 keywords: Web 保護、Web 脅威保護、Web 閲覧、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー、悪意のある Web サイト
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c04ce3479ac995e59c3bdfa9a2bdcca87eca17b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a985719663ec23d41ce4da57aea9aa5e0cf7674c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499920"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688971"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -32,7 +32,7 @@ ms.locfileid: "51499920"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Microsoft Defender for Endpoint の Web 保護は [、Web](web-threat-protection.md) 脅威保護と Web コンテンツ フィルターで構成 [される機能です](web-content-filtering.md)。 Web 保護を使用すると、Web の脅威からデバイスを保護し、望ましくないコンテンツを規制できます。 Microsoft Defender セキュリティ センターで Web 保護レポートを見つけるには、Web 保護に関するレポート> **行います**。
 

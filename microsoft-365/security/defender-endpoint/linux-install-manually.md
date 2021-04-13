@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint for Linux を手動で展開する
+title: Linux での Microsoft Defender for Endpoint の手動展開
 ms.reviewer: ''
 description: コマンド ラインから手動で Microsoft Defender ATP for Linux を展開する方法について説明します。
 keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c695eb0d786e73da5adb95bbca5c1747243d6203
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 78ea8b106253098791d71ef9ff788b7cf1df4ec7
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644742"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688407"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Microsoft Defender for Endpoint for Linux を手動で展開する
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "51644742"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-この記事では、Microsoft Defender for Endpoint for Linux を手動で展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
+この記事では、Microsoft Defender for Endpoint を Linux に手動で展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
 
-- [Microsoft Defender for Endpoint for Linux を手動で展開する](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
+- [Linux での Microsoft Defender for Endpoint の手動展開](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [前提条件とシステム要件](#prerequisites-and-system-requirements)
   - [Linux ソフトウェア リポジトリの構成](#configure-the-linux-software-repository)
     - [RHEL とバリアント (CentOS および Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
@@ -54,7 +54,7 @@ ms.locfileid: "51644742"
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-開始する前に [、「Microsoft Defender for Endpoint for Linux」](microsoft-defender-endpoint-linux.md) を参照して、現在のソフトウェア バージョンの前提条件とシステム要件について説明します。
+開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については [、「Microsoft Defender for Endpoint on Linux」](microsoft-defender-endpoint-linux.md) を参照してください。
 
 ## <a name="configure-the-linux-software-repository"></a>Linux ソフトウェア リポジトリの構成
 

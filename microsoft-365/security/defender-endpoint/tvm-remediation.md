@@ -1,7 +1,7 @@
 ---
 title: 脅威と脆弱性の管理による脆弱性の修復
 description: セキュリティの推奨事項によって検出されたセキュリティの弱点を修復し、必要に応じて脅威と脆弱性の管理で例外を作成します。
-keywords: microsoft Defender atp tvm 修復、mdatp tvm、脅威と脆弱性管理、脅威 & 脆弱性管理、脅威 & 脆弱性管理修復、tvm 修復 intune、tvm 修復 sccm
+keywords: エンドポイント tvm 修復、mdatp tvm、脅威と脆弱性管理、脅威 & の脆弱性管理、脅威 & の脆弱性管理修復、tvm 修復 intune、tvm 修復 sccm の microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4ffa89fd7162ac90e0cbbb029b1adbefa2ffd520
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: be24528c2337c5d2616eb1bf69906f60ae7b4375
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499989"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689367"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>脅威と脆弱性の管理による脆弱性の修復
 
@@ -34,7 +34,7 @@ ms.locfileid: "51499989"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="request-remediation"></a>修復の要求
 

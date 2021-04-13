@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP のデバイスで応答アクションを実行する
+title: Microsoft Defender for Endpoint のデバイスで応答アクションを実行する
 description: デバイスの分離、調査パッケージの収集、タグの管理、av スキャンの実行、アプリの実行の制限など、デバイスで応答アクションを実行します。
 keywords: 応答、分離、デバイスの分離、調査パッケージの収集、アクション センター、制限、タグの管理、av スキャン、アプリの制限
 search.product: eADQiWindows 10XVcnh
@@ -16,21 +16,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f918d1673ef8a83c54f365dd06406c33bcc4d983
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f538bd33ad2f595aa9b3dafa8a13a5682161b52f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060969"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688323"
 ---
-# <a name="take-response-actions-on-a-device"></a>デバイスで応答アクションを実行する
+# <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
 
 デバイスを分離するか、調査パッケージを収集することで、検出された攻撃に迅速に対応します。 デバイスでアクションを実行した後、アクション センターでアクティビティの詳細を確認できます。
 
@@ -40,10 +40,10 @@ ms.locfileid: "51060969"
 - 自動調査の開始
 - ライブ応答セッションの開始
 - 調査パッケージの収集
-- ウイルス対策スキャンの実行
+- ウイルス対策スキャンを実行する
 - アプリの実行を制限する
 - デバイスの分離
-- 脅威の専門家に相談する
+- 脅威のエキスパートに相談する
 - アクション センター
 
 [![応答アクションのイメージ ](images/response-actions.png)](images/response-actions.png#lightbox)
@@ -159,7 +159,7 @@ ms.locfileid: "51060969"
 
 ![アプリ制限のイメージ](images/atp-app-restriction.png)
 
-## <a name="isolate-devices-from-the-network"></a>ネットワークからデバイスを分離する
+## <a name="isolate-devices-from-the-network&quot;></a>ネットワークからデバイスを分離する
 
 攻撃の重大度とデバイスの感度に応じて、ネットワークからデバイスを分離できます。 このアクションは、攻撃者が侵害されたデバイスを制御し、データの漏洩や横方向の移動などの追加のアクティビティを実行するのを防ぐのに役立ちます。
 
@@ -169,7 +169,7 @@ ms.locfileid: "51060969"
 
 このデバイス分離機能は、デバイスを監視し続ける Defender for Endpoint サービスへの接続を維持しながら、侵害されたデバイスをネットワークから切断します。
 
-Windows 10 バージョン 1709 以降では、ネットワーク分離レベルを制御できます。 Outlook、Microsoft Teams、Skype for Business 接続 ("選択的分離") を有効にできます。
+Windows 10 バージョン 1709 以降では、ネットワーク分離レベルを制御できます。 Outlook、Microsoft Teams、Skype for Business 接続 (&quot;選択的分離") を有効にできます。
 
 >[!NOTE]
 >いつでもデバイスをネットワークに再接続できます。 デバイス ページのボタンが [分離から解放] と表示され、デバイスを分離するのと同じ手順を実行します。
@@ -186,7 +186,7 @@ Windows 10 バージョン 1709 以降では、ネットワーク分離レベル
 
 ![ネットワーク接続なしのイメージ](images/atp-notification-isolate.png)
 
-## <a name="consult-a-threat-expert"></a>脅威の専門家に相談する
+## <a name="consult-a-threat-expert"></a>脅威のエキスパートに相談する
 
 Microsoft の脅威の専門家に相談して、潜在的に侵害されたデバイスや既に侵害されたデバイスに関する詳細な分析情報を確認できます。 Microsoft Threat Experts は、Microsoft Defender セキュリティ センター内から直接関与して、迅速かつ正確な対応を行います。 専門家は、潜在的に侵害されたデバイスに関するだけでなく、複雑な脅威、取得した標的型攻撃通知、またはアラートに関する詳細が必要な場合、またはポータル ダッシュボードに表示される脅威インテリジェンス コンテキストを理解するためにも洞察を提供します。
 
@@ -207,5 +207,5 @@ Microsoft の脅威の専門家に相談して、潜在的に侵害されたデ�
 ![情報を含むアクション センターのイメージ](images/action-center-details.png)
 
 ## <a name="related-topic"></a>関連トピック
-- [ファイルに対して応答アクションを実行する](respond-file-alerts.md)
+- [ファイルの対応措置を講じる](respond-file-alerts.md)
 - [レポートの不正確さ](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

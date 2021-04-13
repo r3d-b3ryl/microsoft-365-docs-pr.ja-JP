@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint for Mac のパフォーマンスの問題のトラブルシューティング
-description: Microsoft Defender for Endpoint for Mac のパフォーマンスの問題をトラブルシューティングします。
+title: macOS での Microsoft Defender for Endpoint のパフォーマンスの問題のトラブルシューティング
+description: macOS の Microsoft Defender for Endpoint のパフォーマンスの問題をトラブルシューティングします。
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,39 +18,39 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ff93b44627cf876384522f0c4f25d22347c8661
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 18bde560543fd1344a64cf1edd64f02f12831c25
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476257"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689103"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac のパフォーマンスの問題のトラブルシューティング
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のパフォーマンスの問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用対象:**
 
-- [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-このトピックでは、Microsoft Defender for Endpoint for Mac に関連するパフォーマンスの問題を絞り込む一般的な手順について説明します。
+このトピックでは、macOS 上の Microsoft Defender for Endpoint に関連するパフォーマンスの問題を絞り込む一般的な手順について説明します。
 
-リアルタイム保護 (RTP) は、Microsoft Defender for Endpoint for Mac の機能であり、デバイスを継続的に監視し、脅威から保護します。 ファイルとプロセスの監視、その他のヒューリスティックで構成されます。
+リアルタイム保護 (RTP) は、macOS 上の Microsoft Defender for Endpoint の機能であり、デバイスを継続的に監視し、脅威から保護します。 ファイルとプロセスの監視、その他のヒューリスティックで構成されます。
 
-実行中のアプリケーションとデバイスの特性によっては、Microsoft Defender for Endpoint for Mac を実行するときに最適でないパフォーマンスが発生する場合があります。 特に、短時間で多くのリソースにアクセスするアプリケーションまたはシステム プロセスは、Microsoft Defender for Endpoint for Mac のパフォーマンスの問題につながる可能性があります。
+実行中のアプリケーションとデバイスの特性によっては、macOS で Microsoft Defender for Endpoint を実行するときに最適でないパフォーマンスが発生する場合があります。 特に、短い時間で多くのリソースにアクセスするアプリケーションまたはシステム プロセスは、macOS 上の Microsoft Defender for Endpoint のパフォーマンスの問題につながる可能性があります。
 
 次の手順を使用して、これらの問題のトラブルシューティングと軽減を行います。
 
-1. 次のいずれかの方法を使用してリアルタイム保護を無効にし、パフォーマンスが向上するかどうかを確認します。 この方法は、Microsoft Defender for Endpoint for Mac がパフォーマンスの問題に貢献するかどうかを絞り込むのに役立ちます。
+1. 次のいずれかの方法を使用してリアルタイム保護を無効にし、パフォーマンスが向上するかどうかを確認します。 この方法は、macOS 上の Microsoft Defender for Endpoint がパフォーマンスの問題に貢献するかどうかを絞り込むのに役立ちます。
 
       デバイスが組織によって管理されていない場合は、次のいずれかのオプションを使用してリアルタイム保護を無効にすることができます。
 
-    - ユーザー インターフェイスから。 Microsoft Defender for Endpoint for Mac を開き、[設定の管理] **に移動します**。
+    - ユーザー インターフェイスから。 macOS で Microsoft Defender for Endpoint を開き、[設定の管理] **に移動します**。
 
       ![リアルタイム保護のスクリーンショットを管理する](images/mdatp-36-rtp.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "51476257"
       mdatp config real-time-protection --value disabled
       ```
 
-      デバイスが組織によって管理されている場合は [、「Microsoft Defender for Endpoint for Mac](mac-preferences.md)の設定」の手順に従って、管理者がリアルタイム保護を無効にすることができます。
+      デバイスが組織によって管理されている場合は [、「MacOS](mac-preferences.md)で Microsoft Defender for Endpoint の基本設定を設定する」の手順に従って、管理者がリアルタイム保護を無効にすることができます。
       
       リアルタイム保護がオフの間にパフォーマンスの問題が解決しない場合、問題の発生源はエンドポイント検出および応答コンポーネントである可能性があります。 この場合、詳細な手順と軽減策については、カスタマー サポートにお問い合わせください。
 
@@ -154,6 +154,6 @@ ms.locfileid: "51476257"
       > [!NOTE]
       > アプリケーションは、統計をメモリに格納し、ファイルのアクティビティが開始され、リアルタイム保護が有効にされた後にのみ追跡します。 リアルタイム保護がオフの前または期間中に起動されたプロセスはカウントされません。 さらに、トリガーされたスキャンがカウントされるイベントのみ。
       > 
-1. パフォーマンスの問題に寄与するプロセスまたはディスクの場所の除外を使用して Microsoft Defender for Endpoint for Mac を構成し、リアルタイム保護を再び有効にしてください。
+1. パフォーマンスの問題に寄与するプロセスまたはディスクの場所を除外し、リアルタイム保護を再び有効にして、macOS 上の Microsoft Defender for Endpoint を構成します。
 
-     詳細 [については、「Configure and validate exclusions for Microsoft Defender for Endpoint for Mac」](mac-exclusions.md) を参照してください。
+     詳細 [については、「MacOS](mac-exclusions.md) での Microsoft Defender for Endpoint の除外の構成と検証」を参照してください。

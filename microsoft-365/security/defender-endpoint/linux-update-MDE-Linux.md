@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4c2e4d80628dab40de9e99abb27237176b9f171
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a967333a58f74938ea70e32e0c48d2decb597e98
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062467"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688803"
 ---
-# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) の更新プログラムをスケジュールする
+# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) の更新をスケジュールする
 
-Microsoft Defender for Endpoint for Linux で更新プログラムを実行するには [、「Deploy updates for Microsoft Defender for Endpoint for Linux」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)。
+Microsoft Defender for Endpoint on Linux で更新プログラムを実行するには [、「Deploy updates for Endpoint on Linux」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)。
 
 Linux (および Unix) には、スケジュールされたタスクを実行できる **crontab** (タスク スケジューラと同様) というツールがあります。
 
@@ -127,7 +127,7 @@ Puppet による自動化: Cron ジョブとスケジュールされたタスク
 
 詳細については、「[https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/)」を参照してください。
 
-## <a name="additional-information"></a>ページの先頭へ
+## <a name="additional-information"></a>追加情報
 
 **crontab のヘルプを表示するには**
 

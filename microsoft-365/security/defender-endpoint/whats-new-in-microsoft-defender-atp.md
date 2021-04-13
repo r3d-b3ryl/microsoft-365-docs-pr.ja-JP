@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP の新機能
-description: Microsoft Defender ATP の最新リリースで一般的に利用可能な機能 (GA) と、Windows 10 および Windows Server のセキュリティ機能について説明します。
-keywords: Microsoft Defender atp の新機能、ga、一般提供、機能、利用可能、新しい
+title: Microsoft Defender for Endpoint の新機能
+description: Microsoft Defender for Endpoint の最新リリースで一般的に利用可能な機能 (GA) と、Windows 10 および Windows Server のセキュリティ機能について説明します。
+keywords: エンドポイント向け microsoft Defender の新機能、ga、一般提供、機能、利用可能、新しい
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c9f4c0689739224b00c9c14db1482d54faab3512
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587613"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688239"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -52,22 +52,22 @@ ms.locfileid: "51587613"
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint が Windows 仮想デスクトップのサポートを追加しました。
 
 ## <a name="december-2020"></a>2020年12月
-- [iOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint が iOS のサポートを追加しました。 iOS 用エンドポイント用 Microsoft Defender をインストール、構成、更新、および使用する方法について説明します。
+- [iOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint が iOS のサポートを追加しました。 iOS で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 ## <a name="september-2020"></a>2020 年 9 月
-- [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android 用エンドポイント用 Microsoft Defender をインストール、構成、更新、および使用する方法について説明します。
+- [Android 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android 上で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 - [脅威と脆弱性管理 macOS のサポート](tvm-supported-os.md)<br> macOS の脅威と脆弱性の管理はパブリック プレビューに表示され、macOS デバイスの脆弱性を継続的に検出して、リスクに焦点を当て、修復の優先順位を設定するのに役立ちます。 詳細については [、Microsoft Tech Community のブログ投稿をご覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
 
 
 ## <a name="august-2020"></a>2020 年 8 月
-- [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android 用 Microsoft Defender for Endpoint をインストール、構成、および使用する方法について説明します。
+- [Android 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android で Microsoft Defender for Endpoint をインストール、構成、および使用する方法について説明します。
 
 
 ## <a name="july-2020"></a>2020 年7 月
 - [証明書のインジケーターを作成 ](manage-indicators.md) <br> 証明書を許可またはブロックするインジケーターを作成します。 
 
 ## <a name="june-2020"></a>2020 年 6 月
-- [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint が Linux のサポートを追加しました。 Microsoft Defender for Endpoint for Linux をインストール、構成、更新、および使用する方法について説明します。
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint が Linux のサポートを追加しました。 Linux で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 - [評価ラボの攻撃シミュレーター](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint は、さまざまな脅威シミュレーション プラットフォームと提携し、ポータル内からプラットフォームの機能を簡単にテストできます。
 
@@ -78,7 +78,7 @@ ms.locfileid: "51587613"
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [iOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint for Mac は、Mac デバイスに次世代の保護を提供します。 統合エンドポイント セキュリティ プラットフォームのコア コンポーネントは、エンドポイントの検出と応答を含む Mac デバイス [で使用できます](microsoft-defender-endpoint-mac.md)。
+- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint on macOS では、次世代の保護を Mac デバイスに提供します。 統合エンドポイント セキュリティ プラットフォームのコア コンポーネントは、エンドポイントの検出と応答を含む Mac デバイス [で使用できます](microsoft-defender-endpoint-mac.md)。
  
 - [脅威&脆弱性管理アプリケーションとアプリケーション バージョンの終末情報](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>使用期限に達したアプリケーションとアプリケーションのバージョンはタグ付けまたはラベル付けされ、サポートされなくなったことを認識し、アンインストールまたは置換を行うアクションを実行できます。 これにより、パッチが適用されていないアプリケーションによるさまざまな脆弱性の暴露に関連するリスクが軽減されます。
 

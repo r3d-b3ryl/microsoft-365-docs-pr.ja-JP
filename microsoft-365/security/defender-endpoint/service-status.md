@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP サービスの正常性を確認する
-description: Microsoft Defender ATP サービスの正常性を確認し、サービスに問題が発生していないかを確認し、解決された以前の問題を確認します。
+title: Microsoft Defender for Endpoint サービスの正常性を確認する
+description: Microsoft Defender for Endpoint Service の正常性を確認し、サービスに問題が発生していないかを確認し、解決された以前の問題を確認します。
 keywords: ダッシュボード、サービス、問題、サービス正常性、現在の状態、状態履歴、影響の概要、予備的な根本原因、解決時間、解決時間、予想される解決時間
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45782fcce51e15adf61757d836d313d229558571
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b4545daace5df1a1a9c6e827f7d8f1b522a690c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064876"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687627"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Microsoft Defender for Endpoint サービスの正常性を確認する
 
@@ -33,7 +33,7 @@ ms.locfileid: "51064876"
 
 
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
 **サービス正常性は** 、Defender for Endpoint サービスの現在の状態に関する情報を提供します。 サービスの正常性が正常か、現在の問題が発生した場合に確認できます。 問題がある場合は、問題が検出された時期、根本的な予備的な原因、予想される解決時間などの情報が表示されます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "51064876"
 - 更新時間
 - 影響の概要
 - 予備的な根本原因
-- 次の手順
+- 次のステップ
 - 予想される解決時間
 
 問題の進行状況に関する更新プログラムは、問題が解決されるにつれてページに反映されます。 更新された推定解決時間や次の手順などの情報に関する更新プログラムが表示されます。

@@ -1,5 +1,5 @@
 ---
-title: Android 用 Microsoft Defender ATP
+title: Android の Microsoft Defender ATP
 ms.reviewer: ''
 description: Android 用 Microsoft Defender ATP をインストールして使用する方法について説明します。
 keywords: microsoft、Defender、atp、android、インストール、展開、アンインストール、intune
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e2432dc4aa2c67fadc9112512a080f24c0064df4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 32c42691b3a2b43f9740da26084bf45af0ee80f5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187615"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687783"
 ---
-# <a name="microsoft-defender-for-endpoint-for-android"></a>Android 用エンドポイント用 Microsoft Defender
+# <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上のエンドポイント用 Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51187615"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 このトピックでは、Android 用 Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
@@ -42,7 +42,7 @@ ms.locfileid: "51187615"
 > Android 用 Defender for Endpoint と共に他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しないシステム エラーが発生する可能性があります。
 
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-for-android"></a>Android 用エンドポイント用 Microsoft Defender をインストールする方法
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Android に Microsoft Defender for Endpoint をインストールする方法
 
 ### <a name="prerequisites"></a>前提条件
 
@@ -62,7 +62,7 @@ ms.locfileid: "51187615"
     -   Microsoft Defender セキュリティ センター ポータルへのアクセス。
 
         > [!NOTE]
-        > Microsoft Intune は、Android 用 Microsoft Defender for Endpoint を展開する唯一のサポートされるモバイル デバイス管理 (MDM) ソリューションです。 現在、Intune で Defender for Endpoint for Android 関連のデバイス コンプライアンス ポリシーを適用するには、現在登録されているデバイスだけがサポートされています。 
+        > Microsoft Intune は、Android に Microsoft Defender for Endpoint を展開する唯一のサポートされるモバイル デバイス管理 (MDM) ソリューションです。 現在、Intune で Defender for Endpoint for Android 関連のデバイス コンプライアンス ポリシーを適用するには、現在登録されているデバイスだけがサポートされています。 
 
     -   Microsoft [Endpoint Manager 管理センターにアクセスして](https://go.microsoft.com/fwlink/?linkid=2109431)、組織内の登録済みユーザー グループにアプリを展開します。
 
@@ -73,23 +73,23 @@ ms.locfileid: "51187615"
 
 ### <a name="installation-instructions"></a>インストール手順
 
-Microsoft Defender for Endpoint for Android では、登録済みデバイスの両方のモード (従来のデバイス管理者モードと Android Enterprise モード) へのインストールがサポートされています。
+Microsoft Defender for Endpoint on Android では、登録されているデバイスの両方のモード (従来のデバイス管理者モードと Android Enterprise モード) へのインストールがサポートされています。
 **現在、Android Enterprise では、仕事用プロファイルと企業所有の完全管理ユーザー デバイス登録を持つ個人所有のデバイスがサポートされています。準備ができたら、他の Android Enterprise モードのサポートが発表されます。**
 
-Android 用の Microsoft Defender for Endpoint の展開は、Microsoft Intune (MDM) を介して行います。
-詳細については [、「Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune」を参照してください](android-intune.md)。
+Android での Microsoft Defender for Endpoint の展開は、Microsoft Intune (MDM) 経由です。
+詳細については [、「Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune」を参照してください](android-intune.md)。
 
 
 > [!NOTE]
-> **Microsoft Defender for Endpoint for Android は [Google Play で利用](https://play.google.com/store/apps/details?id=com.microsoft.scmx) できます。** <br> Intune から Google Play に接続して、デバイス管理者モードと Android Enterprise entrollment モード全体で Microsoft Defender for Endpoint アプリを展開できます。 
+> **Android 上のエンドポイント用 Microsoft Defender は [、Google Play で利用](https://play.google.com/store/apps/details?id=com.microsoft.scmx) できます。** <br> Intune から Google Play に接続して、デバイス管理者モードと Android Enterprise entrollment モード全体で Microsoft Defender for Endpoint アプリを展開できます。 
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-for-android"></a>Android 用エンドポイント用 Microsoft Defender を構成する方法
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>Android 上のエンドポイント用 Microsoft Defender を構成する方法
 
-Microsoft Defender for Endpoint for Android の機能を構成する方法については、「Configure Microsoft Defender for Endpoint for Android フィーチャー」 [を参照してください](android-configure.md)。
+Android の機能で Microsoft Defender for Endpoint を構成する方法については、「Configure Microsoft Defender for Endpoint on Android フィーチャー [」を参照してください](android-configure.md)。
 
 
 
 ## <a name="related-topics"></a>関連項目
-- [Microsoft Intune を使用して Microsoft Defender for Endpoint を展開する](android-intune.md)
-- [Android の機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)
+- [Microsoft Intune を使用して Android に Microsoft Defender for Endpoint を展開する](android-intune.md)
+- [Android の機能でエンドポイント用 Microsoft Defender を構成する](android-configure.md)
 

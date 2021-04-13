@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint for Linux の新機能
-description: Microsoft Defender ATP for Linux の主な変更点の一覧。
+title: Microsoft Defender for Endpoint on Linux の新機能
+description: Linux での Microsoft Defender ATP の主な変更点の一覧。
 keywords: microsoft, defender, atp, linux, whatsnew, release
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7a55d254c20506913d0995bffc941a67bb34a38e
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2866cd0c9ee9b40aa9c08c4ff7dce64f745d3d03
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615437"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688635"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Endpoint for Linux の新機能
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
 
-- Microsoft Defender for Endpoint for Linux は、米国政府機関のお客様向けプレビューで利用できます。 詳細については [、「Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
-- FUSE ファイルシステムを使用したシステムで Microsoft Defender for Endpoint for Linux を使用すると OS がハングする問題を修正しました
+- Microsoft Defender for Endpoint on Linux は、米国政府機関のお客様向けプレビューで利用できます。 詳細については [、「Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
+- FUSE ファイルシステムを使用するシステムで Linux 上の Microsoft Defender for Endpoint を使用すると OS がハングする問題を修正しました
 - 他のバグ修正&パフォーマンスの向上
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)

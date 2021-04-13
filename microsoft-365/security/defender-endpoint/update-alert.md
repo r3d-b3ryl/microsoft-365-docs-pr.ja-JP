@@ -1,6 +1,6 @@
 ---
 title: アラート エンティティ API の更新
-description: この API を使用して Microsoft Defender ATP アラートを更新する方法について説明します。 状態、決定、分類、および assignedTo プロパティを更新できます。
+description: この API を使用して Microsoft Defender for Endpoint アラートを更新する方法について説明します。 状態、決定、分類、および assignedTo プロパティを更新できます。
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7dd3ab3da34efa6cb954db2a596d7a1e48efedf1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 94be185bd30cd36f456a66d5ae30a4361abc0c48
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199311"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688251"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -30,7 +30,7 @@ ms.locfileid: "51199311"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -70,7 +70,7 @@ PATCH /api/alerts/{id}
 
 名前 | 種類 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 Content-Type | 文字列 | application/json. **必須**
 
 
@@ -84,7 +84,7 @@ Content-Type | 文字列 | application/json. **必須**
 status | String | アラートの現在の状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。
 assignedTo | String | アラートの所有者
 classification | String | アラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive'です。 
-決定 | 文字列 | アラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
+決定 | String | アラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
 comment | String | 警告に追加するコメント。
 
 ## <a name="response"></a>応答

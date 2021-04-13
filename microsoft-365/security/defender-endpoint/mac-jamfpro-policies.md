@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be01d5908e4c79f642cdbbddd75115f6ebc2c713
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499638"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687735"
 ---
-# <a name="set-up-the-microsoft-defender-for-endpoint-for-macos-policies-in-jamf-pro"></a>Jamf Pro で macOS 用 Microsoft Defender for Endpoint ポリシーをセットアップする
+# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf Pro の macOS ポリシーで Microsoft Defender for Endpoint をセットアップする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,9 +56,9 @@ ms.locfileid: "51499638"
 
 9. [ネットワーク拡張機能の構成](#step-9-configure-network-extension)
 
-10. [Microsoft Defender for Endpoint for Mac でのスキャンのスケジュール設定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [Microsoft Defender for Endpoint for macOS の展開](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
+11. [macOS での Microsoft Defender for Endpoint の展開](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>手順 1: Microsoft Defender for Endpoint オンボーディング パッケージを取得する
@@ -360,7 +360,7 @@ ms.locfileid: "51499638"
         - **配布方法**: 自動的にインストール *する (既定)*
         - **レベル**: コンピューター レベル *(既定)*
 
-        ![構成設定 mdatpmdav のイメージ](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![構成プロファイル設定 mdatpmdav のイメージ](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - [タブ **通知]** をクリック **し、[追加**] をクリックし、次の値を入力します。
         - **バンドル ID**: `com.microsoft.wdav.tray`
@@ -468,7 +468,7 @@ ms.locfileid: "51499638"
    
      ![構成設定 scopetab のイメージ](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-13. [**追加**] を選択します。
+13. **[追加]** を選択します。
     
     ![構成設定 addimg1 のイメージ](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -559,7 +559,7 @@ ms.locfileid: "51499638"
 
     ![構成設定 contoso machinegrp のイメージ](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
-15. [**追加**] を選択します。 
+15. **[追加]** を選択します。 
 
 16. **[保存]** を選択します。 
     
@@ -681,7 +681,7 @@ ms.locfileid: "51499638"
 
 ## <a name="step-9-configure-network-extension"></a>手順 9: ネットワーク拡張機能を構成する
 
-エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint for Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 これらの手順は、macOS 10.15 (Catalina) 以降に適用できます。
 
@@ -731,10 +731,10 @@ ms.locfileid: "51499638"
 
 または、「Jamf Pro を使用したカスタム構成プロファイルの展開」の説明に従って [、netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) をダウンロードして JAMF 構成プロファイル [にアップロードできます|方法 2: Jamf Pro に構成プロファイルをアップロードします](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
-## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>手順 10: Microsoft Defender for Endpoint for Mac でスキャンをスケジュールする
-「Microsoft Defender [for Endpoint for Mac でスキャンをスケジュールする」の手順に従います](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
+## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>手順 10: macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする
+macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [するの手順に従います](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
 
-## <a name="step-11-deploy-microsoft-defender-for-endpoint-for-macos"></a>手順 11: Microsoft Defender for Endpoint for macOS を展開する
+## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>手順 11: macOS に Microsoft Defender for Endpoint を展開する
 
 1. 保存した場所に移動します `wdav.pkg` 。
 
@@ -830,7 +830,7 @@ ms.locfileid: "51499638"
 
     **Scope**
     
-    [**追加**] を選択します。
+    **[追加]** を選択します。
     
     ![構成設定 ad1img のイメージ](images/1c08d097829863778d562c10c5f92b67.png)
 

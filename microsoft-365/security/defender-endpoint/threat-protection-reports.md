@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP の脅威保護レポート
+title: Microsoft Defender for Endpoint の脅威保護レポート
 description: 脅威保護レポートを使用してアラートの検出、カテゴリ、重大度を追跡する
 keywords: アラート検出, ソース, カテゴリ別アラート, アラート重大度, アラート分類, 決定
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4ecd2df31e1e03da5134d3d4180dcba75d3cee26
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d32ab04f4acda60f65316719a4607c6c9bbd6447
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183839"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688983"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の脅威保護レポート
 
@@ -33,7 +33,7 @@ ms.locfileid: "51183839"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 脅威保護レポートは、組織で生成されたアラートに関する高レベルの情報を提供します。 このレポートには、検出元、カテゴリ、重大度、状態、分類、および時間の間のアラートの決定を示す傾向情報が含まれています。
 
@@ -41,7 +41,7 @@ ms.locfileid: "51183839"
 
 ![脅威保護レポートの画像](images/threat-protection-reports.png)
 
-セクション | 説明 
+Section | 説明 
 :---|:---
 1 | アラートの傾向
 2 | アラートの概要

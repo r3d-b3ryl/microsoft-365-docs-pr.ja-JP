@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP の脅威分析を使用して、新たな脅威を追跡して対応する
+title: Microsoft Defender for Endpoint の脅威分析を使用して、新たな脅威を追跡して対応する
 ms.reviewer: ''
 description: 新たな脅威と攻撃の手法と、それらを停止する方法について説明します。 組織への影響を評価し、組織の回復力を評価します。
 keywords: 脅威分析、リスク評価、OS 軽減、マイクロコード軽減、軽減状態
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 853a862556825e714bb06e51839f9c026e0cc0e0
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 61b6b0c19730045468c77e5f24bf18470aa5dbd5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501188"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688263"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>脅威の分析を使用して、新たな脅威を追跡し対応する 
 
@@ -34,7 +34,7 @@ ms.locfileid: "51501188"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 より高度な敵対者と新しい脅威が頻繁かつ一般に出現する中で、以下を迅速に実行できる必要があります。
 

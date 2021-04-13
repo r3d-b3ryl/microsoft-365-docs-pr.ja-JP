@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint for Mac の新機能
-description: 以前のバージョンの Microsoft Defender for Endpoint for Mac の主な変更点について説明します。
+title: Microsoft Defender for Endpoint on Mac の新機能
+description: 以前のバージョンの Microsoft Defender for Endpoint on Mac の主な変更点について説明します。
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 67bbc987dc339c0e1f0354e07d6d2db8c39ec8b9
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615221"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689043"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac の新機能
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "51615221"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
-- Microsoft Defender for Endpoint for Mac は、米国政府機関のお客様向けプレビューで利用できます。 詳細については [、「Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
+- Microsoft Defender for Endpoint on macOS は、米国政府機関のお客様向けプレビューで利用できます。 詳細については [、「Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。
 - パフォーマンスの向上 (特に XCode Simulator アプリを使用する場合の状況) &修正
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
@@ -61,7 +61,7 @@ ms.locfileid: "51615221"
 > [!NOTE]
 > このリリースでは、古いコマンド ライン ツールの構文は廃止されました。 新しい構文の詳細については [、「Resources」を参照してください](mac-resources.md#configuring-from-the-command-line)。
 
-- ネットワーク拡張機能を無効にする新しいコマンド ライン スイッチを追加 `mdatp system-extension network-filter disable` しました。 このコマンドは、Microsoft Defender for Endpoint for Mac に関連する可能性があるネットワークの問題のトラブルシューティングに役立ちます。
+- ネットワーク拡張機能を無効にする新しいコマンド ライン スイッチを追加 `mdatp system-extension network-filter disable` しました。 このコマンドは、Microsoft Defender for Endpoint on Mac に関連する可能性があるネットワークの問題のトラブルシューティングに役立ちます。
 - バグ修正&パフォーマンスの向上
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
@@ -94,7 +94,7 @@ ms.locfileid: "51615221"
 
 - この製品のバージョンは、macOS Big Sur 11 ベータ 9 で検証されています
 
-- コマンド ライン ツールの新 `mdatp` しい構文が既定の構文になります。 新しい構文の詳細については [、「Resources for Microsoft Defender for Endpoint for Mac」を参照してください。](mac-resources.md#configuring-from-the-command-line)
+- コマンド ライン ツールの新 `mdatp` しい構文が既定の構文になります。 新しい構文の詳細については [、「Resources for Microsoft Defender for Endpoint on macOS」を参照してください。](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
   > 古いコマンド ライン ツールの構文は **、2021** 年 1 月 1 日に製品から削除されます。
@@ -159,7 +159,7 @@ ms.locfileid: "51615221"
 
 ## <a name="1009027"></a>100.90.27
 
-- システム全体 [の更新チャネル](mac-updates.md#set-the-channel-name) とは異なる Microsoft Defender for Endpoint for Mac の更新チャネルを設定できます。
+- システム全体 [の更新チャネル](mac-updates.md#set-the-channel-name) とは異なる macOS 上の Microsoft Defender for Endpoint の更新チャネルを設定できます。
 - 新しい製品アイコン
 - その他のユーザー エクスペリエンスの向上
 - バグ修正
@@ -196,7 +196,7 @@ ms.locfileid: "51615221"
 
 ## <a name="1007942"></a>100.79.42
 
-- Microsoft Defender for Endpoint for Mac がタイム マシンに干渉する場合がある問題を修正しました
+- Mac 上の Microsoft Defender for Endpoint がタイム マシンに干渉する場合がある問題を修正しました
 - バックエンド サービスとの接続をテストするためにコマンド ライン ユーティリティに新しいスイッチを追加しました
   ```bash
   mdatp connectivity test

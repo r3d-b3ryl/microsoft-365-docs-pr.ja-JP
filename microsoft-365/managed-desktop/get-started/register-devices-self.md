@@ -1,7 +1,6 @@
 ---
 title: 新しいデバイスを自分で登録する
 description: デバイスを自分で登録して、Microsoft Managed Desktop で管理できるよう
-keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3aff3bdc1260e9aa2a23760020aeabd71d6b28fd
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 4de1d173a26005d32fb07117d93ee78582b77d54
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445580"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689211"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
@@ -91,8 +90,11 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 次の手順を実行します。
 
 1. [ **ファイルのアップロード]** で、前に作成した CSV ファイルへのパスを指定します。
+2. ドロップダウン メニュー [でデバイス](../service-description/profiles.md) プロファイルを選択します。
 3. [デバイス **の登録] を選択します**。 システムは、デバイスのリストにデバイスを追加します。 **登録** 保留として **マークされます**。 登録に要する時間は通常 10 分未満で、成功するとデバイスは Ready **for user** として表示され、ユーザーが使用を開始する準備ができていることを意味します。
 
+> [!NOTE]
+> デバイスの Azure Active Directory (AAD) グループ メンバーシップを手動で変更すると、デバイス プロファイルのグループに自動的に再割り当てされ、競合するグループから削除されます。
 
 デバイス登録の進行状況は、メイン ページで監視できます。 報告される可能性がある状態は次のとおりです。
 
@@ -101,7 +103,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
 | ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft Managed Desktop では、初回セットアップをガイドしますので、それ以上の準備を行う必要はありません。 |
-| Active | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
+| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
@@ -119,6 +121,11 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 デバイスが Microsoft Managed Desktop パートナー サプライヤーから提供されている場合は、イメージが正しい必要があります。
 
 必要に応じて、自分で画像を適用することもできます。 作業を開始するには、使用している Microsoft 担当者に問い合わせ、画像を適用するための場所と手順を提供します。
+
+### <a name="autopilot-group-tag"></a>Autopilot グループ タグ
+
+管理者ポータルを使用してデバイスを登録すると、自動パイロット **グループ タグ** Microsoft365Managed_Autopilot自動的に割り当てされます。
+このサービスは、すべての Microsoft Managed Desktop デバイスを毎日監視し、グループ タグをまだ持ってないデバイスに割り当てします。
 
 ### <a name="deliver-the-device"></a>デバイスの配信
 

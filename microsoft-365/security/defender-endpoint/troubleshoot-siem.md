@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP での SIEM ツール統合の問題のトラブルシューティング
-description: Microsoft Defender ATP で SIEM ツールを使用するときに発生する可能性のある問題のトラブルシューティングを行います。
+title: Microsoft Defender for Endpoint での SIEM ツール統合の問題のトラブルシューティング
+description: Microsoft Defender for Endpoint で SIEM ツールを使用する場合に発生する可能性のある問題のトラブルシューティングを行います。
 keywords: トラブルシューティング, siem, クライアント シークレット, secret
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: c1c8fdb0b6e84d4265defb95d91b59a584b7f4c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185781"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689451"
 ---
-# <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM ツールの統合に関する問題のトラブルシューティング
+# <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM ツール統合に関する問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51185781"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 SIEM ツールで検出を引き出す際に問題のトラブルシューティングが必要になる場合があります。
 
@@ -82,7 +82,7 @@ SIEM コネクタ アプリケーションを有効にしようとするとき�
 
 
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
 ## <a name="related-topics"></a>関連項目
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
