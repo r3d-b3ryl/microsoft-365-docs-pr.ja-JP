@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6bf9691f390173ec86dcadd19707c980aa66336f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1f20a81f5205c5734387214822fa87ac5cf9a09c
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687771"
+ms.locfileid: "51698210"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上のエンドポイント用 Microsoft Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "51687771"
 **Microsoft Defender for Endpoint on iOS** では、Web サイト、電子メール、アプリからのフィッシングや安全でないネットワーク接続に対する保護が提供されます。 すべてのアラートは、Microsoft Defender セキュリティ センターの 1 つのウィンドウから利用できます。 このポータルにより、セキュリティ チームは、他のプラットフォームと共に、iOS デバイス上の脅威の一元的なビューを提供します。
 
 > [!CAUTION]
-> IOS 用 Defender for Endpoint と共に他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しないシステム エラーが発生する可能性があります。
+> iOS で Defender for Endpoint と共に他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しないシステム エラーが発生する可能性があります。
 
 ## <a name="pre-requisites"></a>前提条件
 
@@ -58,7 +58,7 @@ ms.locfileid: "51687771"
 - Microsoft Defender セキュリティ センター ポータルへのアクセス。
 
     > [!NOTE]
-    > Microsoft Intune は、iOS に Microsoft Defender for Endpoint を展開する場合にサポートされている唯一のモバイル デバイス管理 (MDM) ソリューションです。 現在、Intune で Defender for Endpoint for iOS 関連のデバイス コンプライアンス ポリシーを適用するには、現在登録されているデバイスだけがサポートされています。
+    > Microsoft Intune は、iOS に Microsoft Defender for Endpoint を展開する場合にサポートされている唯一のモバイル デバイス管理 (MDM) ソリューションです。 現在、Intune で iOS 関連のデバイス コンプライアンス ポリシーで Defender for Endpoint を適用する場合は、現在登録されているデバイスだけがサポートされています。
 
 - 組織の [登録済みユーザー](https://go.microsoft.com/fwlink/?linkid=2109431)グループにアプリを展開するには、Microsoft Endpoint Manager 管理センターにアクセスします。
 
@@ -69,7 +69,7 @@ ms.locfileid: "51687771"
 - デバイスは Intune ポータル サイト アプリ [に登録されています](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
 
 > [!NOTE]
-> **iOS 用 Microsoft Defender ATP (Microsoft Defender for Endpoint) が [Apple App Store で利用可能になります](https://aka.ms/mdatpiosappstore)。**
+> **iOS の Microsoft Defender ATP (Microsoft Defender for Endpoint) が [Apple App Store で利用可能になります](https://aka.ms/mdatpiosappstore)。**
 
 ## <a name="installation-instructions"></a>インストール手順
 
