@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP オンボーディングの問題のトラブルシューティング
-description: デバイスのオンボーディング中または Microsoft Defender ATP サービスで発生する可能性のある問題のトラブルシューティングを行います。
+title: Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
+description: デバイスのオンボーディング中または Microsoft Defender for Endpoint サービスで発生する可能性のある問題のトラブルシューティングを行います。
 keywords: オンボーディング、オンボーディングの問題、イベント ビューアー、データ収集とプレビュー ビルド、センサー データ、診断のトラブルシューティング
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3b2c944cd7fc9d629b47947db9d6e8856729e0d7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066027"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689667"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -35,7 +35,7 @@ ms.locfileid: "51066027"
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 問題が発生した場合は、Microsoft Defender for Endpoint オンボーディング プロセスのトラブルシューティングが必要になる場合があります。
 このページでは、展開ツールのいずれかを使用して展開するときに発生する可能性のあるオンボーディングの問題と、デバイスで発生する可能性のある一般的なエラーをトラブルシューティングするための詳細な手順を示します。
@@ -455,6 +455,6 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 ## <a name="related-topics"></a>関連項目
 
-- [エンドポイントの Microsoft Defender のトラブルシューティング](troubleshoot-mdatp.md)
-- [オンボード デバイス](onboard-configure.md)
+- [Microsoft Defender for Endpoint のトラブルシューティング](troubleshoot-mdatp.md)
+- [デバイスのオンボード](onboard-configure.md)
 - [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)

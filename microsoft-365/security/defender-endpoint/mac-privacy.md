@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d1d4aa871438e10aed86ddd436757072fb6b5cc4
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 93715f761beded95cfaa91b4747a2e4b5a3c61c1
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587505"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689679"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac のプライバシー
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のプライバシー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,13 +35,13 @@ ms.locfileid: "51587505"
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Microsoft は、Microsoft Defender for Endpoint for Mac を使用する際に、データの収集方法と使用方法について選択する必要がある情報とコントロールを提供します。
+Microsoft は、macOS で Microsoft Defender for Endpoint を使用する場合に、データの収集方法と使用方法について選択する必要がある情報とコントロールを提供します。
 
 このトピックでは、製品内で使用できるプライバシーコントロール、ポリシー設定を使用してこれらのコントロールを管理する方法、および収集されるデータ イベントの詳細について説明します。
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac のプライバシーコントロールの概要
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>macOS 上の Microsoft Defender for Endpoint のプライバシー制御の概要
 
-このセクションでは、Microsoft Defender for Endpoint for Mac によって収集されるさまざまな種類のデータのプライバシー制御について説明します。
+このセクションでは、Microsoft Defender for Endpoint on macOS で収集されるさまざまな種類のデータのプライバシー制御について説明します。
 
 ### <a name="diagnostic-data"></a>診断ログ
 
@@ -73,7 +73,7 @@ Microsoft Defender for Endpoint クライアント ソフトウェアの診断�
 
 IT 管理者の場合は、エンタープライズ レベルでこれらのコントロールを構成できます。 
 
-前のセクションで説明した各種データのプライバシー制御については、「Mac 用 Microsoft Defender for Endpoint の設定」 [で詳しく説明します](mac-preferences.md)。
+前のセクションで説明したさまざまな種類のデータのプライバシー制御については、「MacOS での Microsoft Defender for Endpoint の基本設定の設定」 [で詳しく説明します](mac-preferences.md)。
 
 新しいポリシー設定と同様に、組織でポリシー設定を広く実装する前に、構成する設定が望ましい効果を得られるか確認するために、制限された制御された環境で慎重にテストする必要があります。
 
@@ -94,7 +94,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 | org_id                  | デバイスが属する企業に関連付けられた一意の識別子。 Microsoft は、問題が一部の企業に影響を与えるかどうか、および影響を受け取る企業の数を特定できます。 |
 | ホスト名                | ローカル デバイス名 (DNS サフィックスなし)。 Microsoft は、問題がインストールの選択セットに影響を与えるかどうか、および影響を受け取るユーザーの数を特定できます。 |
 | product_guid            | 製品の一意の識別子。 Microsoft は、製品の異なる味に影響を与える問題を区別できます。 |
-| app_version             | Microsoft Defender for Endpoint for Mac アプリケーションのバージョン。 Microsoft は、問題を表示している製品のバージョンを特定して、問題の優先順位を正しく設定できます。|
+| app_version             | macOS アプリケーションの Microsoft Defender for Endpoint のバージョン。 Microsoft は、問題を表示している製品のバージョンを特定して、問題の優先順位を正しく設定できます。|
 | sig_version             | セキュリティ インテリジェンス データベースのバージョン。 Microsoft が問題を表示しているセキュリティ インテリジェンスのバージョンを特定して、問題を正しく優先順位付けできます。 |
 | supported_compressions  | アプリケーションでサポートされている圧縮アルゴリズムの一覧 (例 `['gzip']` : . Microsoft は、アプリケーションと通信するときに使用できる圧縮の種類を理解できます。 |
 | release_ring            | デバイスが関連付けられているリング (Insider Fast、Insider Slow、Production など)。 Microsoft は、問題が発生している可能性のあるリリース リングを特定して、問題の優先順位を正しく設定できます。 |
@@ -174,7 +174,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 | Field            | 説明 |
 | ---------------- | ----------- |
-| version          | Microsoft Defender for Endpoint for Mac のバージョン。 |
+| version          | macOS 上のエンドポイント用 Microsoft Defender のバージョン。 |
 | instance_id      | カーネル拡張機能の起動時に生成される一意の識別子。 |
 | trace_level      | カーネル拡張機能のトレース レベル。 |
 | サブシステム        | リアルタイム保護に使用される基になるサブシステム。 |
@@ -189,8 +189,8 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 診断ログは、フィードバック送信機能の一部としてユーザーの同意を得た場合にのみ収集されます。 次のファイルは、サポート ログの一部として収集されます。
 
 - */Library/Logs/Microsoft/mdatp/ の下のすべてのファイル*
-- Microsoft Defender for Endpoint for Mac で作成および使用される */Library/Application Support/Microsoft/Defender/* の下のファイルのサブセット
-- Microsoft Defender for Endpoint for Mac で使用される */Library/Managed Preferences* の下のファイルのサブセット
+- MacOS 上の Microsoft Defender for Endpoint で作成および使用される */Library/Application Support/Microsoft/Defender/* の下のファイルのサブセット
+- MacOS 上の Microsoft Defender for Endpoint で使用される */Library/Managed Preferences* の下のファイルのサブセット
 - /Library/Logs/Microsoft/autoupdate.log
 - $HOME/ライブラリ/基本設定/com.microsoft.autoupdate2.plist
 

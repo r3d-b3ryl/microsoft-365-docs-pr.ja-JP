@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint for Mac でのカーネル拡張機能の問題のトラブルシューティング
-description: Microsoft Defender for Endpoint for Mac のカーネル拡張機能に関連する問題のトラブルシューティングを行います。
+title: macOS の Microsoft Defender for Endpoint でのカーネル拡張機能の問題のトラブルシューティング
+description: macOS の Microsoft Defender for Endpoint のカーネル拡張機能関連の問題のトラブルシューティングを行います。
 keywords: microsoft、 defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,31 +18,31 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379518"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689655"
 ---
-# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac でのカーネル拡張機能の問題のトラブルシューティング
+# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>macOS の Microsoft Defender for Endpoint でのカーネル拡張機能の問題のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-この記事では、Microsoft Defender for Endpoint for Mac の一部としてインストールされているカーネル拡張機能に関する問題をトラブルシューティングする方法について説明します。
+この記事では、macOS 上の Microsoft Defender for Endpoint の一部としてインストールされているカーネル拡張機能に関する問題をトラブルシューティングする方法について説明します。
 
 macOS High Sierra (10.13) から、macOS では、デバイスでの実行を許可する前に、すべてのカーネル拡張機能を明示的に承認する必要があります。
 
-Microsoft Defender for Endpoint for Mac の展開/インストール中にカーネル拡張機能を承認しなかった場合、アプリケーションはバナーを表示して有効にするように求めます。
+macOS での Microsoft Defender for Endpoint の展開/インストール中にカーネル拡張機能を承認しなかった場合、アプリケーションはバナーを表示して有効にするように求めます。
 
    ![RTP が無効なスクリーンショット](images/mdatp-32-main-app-fix.png)
 
@@ -58,7 +58,7 @@ real_time_protection_available              : true
 ...
 ```
 
-次のセクションでは、Microsoft Defender for Endpoint for Mac の展開に使用した方法に応じて、この問題に対処する方法に関するガイダンスを提供します。
+以下のセクションでは、microsoft Defender for Endpoint を macOS に展開するために使用した方法に応じて、この問題に対処する方法に関するガイダンスを提供します。
 
 ## <a name="managed-deployment"></a>管理された展開
 

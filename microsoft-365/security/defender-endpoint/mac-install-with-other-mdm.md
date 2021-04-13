@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 58e3b14dcb80db961f01b92f038ce4d32da7e2e8
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498961"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689707"
 ---
-# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac 用に異なるモバイル デバイス管理 (MDM) システムを使用した展開
+# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender 用の異なるモバイル デバイス管理 (MDM) システムを使用した展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,20 +34,20 @@ ms.locfileid: "51498961"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、 [メインの Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md) ページを参照してください。
+開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
 
 ## <a name="approach"></a>方法
 
 > [!CAUTION]
-> 現在、Microsoft は、Microsoft Defender for Endpoint for Mac の展開と管理に Intune と JAMF のみを正式にサポートしています。 Microsoft は、以下に示す情報に関して、明示または黙示を問わず一切の保証を行いません。
+> 現在、Microsoft は正式に Intune と JAMF のみをサポートし、macOS 上の Microsoft Defender for Endpoint の展開と管理を行います。 Microsoft は、以下に示す情報に関して、明示または黙示を問わず一切の保証を行いません。
 
-組織で正式にサポートされていないモバイル デバイス管理 (MDM) ソリューションを使用している場合、Microsoft Defender for Endpoint for Mac を展開または実行できないという意味ではありません。
+組織が正式にサポートされていないモバイル デバイス管理 (MDM) ソリューションを使用している場合、これは macOS で Microsoft Defender for Endpoint を展開または実行できないという意味ではありません。
 
-Microsoft Defender for Endpoint for Mac は、ベンダー固有の機能に依存しない。 これは、次の機能をサポートする MDM ソリューションと一緒に使用できます。
+Microsoft Defender for Endpoint on macOS は、ベンダー固有の機能に依存しない。 これは、次の機能をサポートする MDM ソリューションと一緒に使用できます。
 
 - 管理対象デバイスに macOS .pkg を展開します。
 - 管理対象デバイスに macOS システム構成プロファイルを展開します。
@@ -72,7 +72,7 @@ Microsoft Defender [](mac-install-with-jamf.md)Security Center からダウン�
 
 ### <a name="license-settings"></a>ライセンス設定
 
-システム構成 [プロファイルを設定します](mac-install-with-jamf.md)。 Microsoft Defender for Endpoint for Mac は macOS の一部ではなされていないので、MDM ソリューションでは"カスタム設定プロファイル" と呼ばれる場合があります。
+システム構成 [プロファイルを設定します](mac-install-with-jamf.md)。 MDM ソリューションは、macOS 上の Microsoft Defender for Endpoint が macOS の一部ではなされていないので、それを "カスタム設定プロファイル" と呼ぶ場合があります。
 
 プロパティ リスト jamf/WindowsDefenderATPOnboarding.plist を使用します。これは [、Microsoft Defender](mac-install-with-jamf.md)セキュリティ センターからダウンロードしたオンボーディング パッケージから抽出できます。
 システムが XML 形式の任意のプロパティ リストをサポートしている場合があります。 その場合は、jamf/WindowsDefenderATPOnboarding.plist ファイルを as-is でアップロードできます。
@@ -112,7 +112,7 @@ KEXT またはカーネル拡張ポリシーを設定します。 Microsoft が�
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint for Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 - フィルターの種類: プラグイン
 - プラグイン バンドル識別子: `com.microsoft.wdav`

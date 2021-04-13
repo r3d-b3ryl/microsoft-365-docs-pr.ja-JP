@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 36db18ba16bb51f3be0cbaba7d4ca4d27195e85d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6c1d6ae5d4635186bf0a1cbb55c7f906e8584f01
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187663"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689691"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-for-macos-device-groups-in-jamf-pro"></a>Jamf Pro で macOS デバイス グループの Microsoft Defender for Endpoint をセットアップする
+# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Jamf Pro の macOS デバイス グループで Microsoft Defender for Endpoint をセットアップする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51187663"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 グループ ポリシー組織単位 (OUs)、Microsoft Endpoint Configuration Manager のデバイス コレクション、Intune のデバイス グループに似たデバイス グループを設定します。
 
@@ -52,4 +52,4 @@ ms.locfileid: "51187663"
     ![Jamf Pro3 の画像](images/contoso-machine-group.png)
 
 ## <a name="next-step"></a>次の手順
-- [Jamf Pro で macOS ポリシー用の Microsoft Defender for Endpoint をセットアップする](mac-jamfpro-policies.md)
+- [Jamf Pro の macOS ポリシーで Microsoft Defender for Endpoint をセットアップする](mac-jamfpro-policies.md)

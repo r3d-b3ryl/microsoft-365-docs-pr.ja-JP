@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 37d31fe93a849871e7da92fff521b6a75beac531
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187639"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689643"
 ---
-# <a name="resources-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac のリソース
+# <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のリソース
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51187639"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="collecting-diagnostic-information"></a>診断情報の収集
 
@@ -80,7 +80,7 @@ ms.locfileid: "51187639"
 
 ## <a name="uninstalling"></a>アンインストール
 
-Microsoft Defender for Endpoint for Mac をアンインストールするには、いくつかの方法があります。 中央管理アンインストールは JAMF で使用できるが、Microsoft Intune ではまだ利用できない点に注意してください。
+macOS で Microsoft Defender for Endpoint をアンインストールするには、いくつかの方法があります。 中央管理アンインストールは JAMF で使用できるが、Microsoft Intune ではまだ利用できない点に注意してください。
 
 ### <a name="interactive-uninstallation"></a>対話型アンインストール
 
@@ -112,11 +112,11 @@ Microsoft Defender for Endpoint for Mac をアンインストールするには�
 |Diagnostics  |診断ログの生成                   |`mdatp diagnostic create --path [directory]`                                      |
 |正常性       |製品の正常性を確認する                 |`mdatp health`                                                                    |
 |正常性       |spefic 製品属性を確認する       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
-|保護   |パスをスキャンする                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
-|保護   |クイック スキャンを実行する                            |`mdatp scan quick`                                                                |
-|保護   |フル スキャンを実行する                             |`mdatp scan full`                                                                 |
-|保護   |進行中のオンデマンド スキャンをキャンセルする           |`mdatp scan cancel`                                                               |
-|保護   |セキュリティ インテリジェンス更新プログラムの要求     |`mdatp definitions update`                                                        |
+|Protection   |パスをスキャンする                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
+|Protection   |クイック スキャンを実行する                            |`mdatp scan quick`                                                                |
+|Protection   |フル スキャンを実行する                             |`mdatp scan full`                                                                 |
+|Protection   |進行中のオンデマンド スキャンをキャンセルする           |`mdatp scan cancel`                                                               |
+|Protection   |セキュリティ インテリジェンス更新プログラムの要求     |`mdatp definitions update`                                                        |
 |EDR          |デバイスにグループ タグを追加します。 EDR タグは、デバイス グループの管理に使用されます。 詳細については、次のページをご覧ください。 https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |デバイスからグループ タグを削除する               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |グループ ID の追加                               |`mdatp edr group-ids --group-id [group]`                                          |
@@ -143,7 +143,7 @@ zsh でオートコンプリートを有効にするには、次の方法を実�
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- 次のコマンドを実行して、Microsoft Defender for Endpoint for Mac のオートコンプリートを有効にし、ターミナル セッションを再起動します。
+- 次のコマンドを実行して、macOS 上の Microsoft Defender for Endpoint のオートコンプリートを有効にし、ターミナル セッションを再起動します。
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions

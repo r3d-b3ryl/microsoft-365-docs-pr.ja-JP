@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint for Mac の Intune ベースの展開
-description: Microsoft Intune を使用して、Microsoft Defender for Endpoint for Mac をインストールします。
+title: MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
+description: Microsoft Intune を使用して、macOS に Microsoft Defender for Endpoint をインストールします。
 keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,27 +18,27 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd74f3a487de4febecb2086cb126c50b8432c342
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 7486bde0886506a5966a95cdb0b85fc009858801
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379635"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689751"
 ---
-# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac の Intune ベースの展開
+# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 > [!NOTE]
 > このドキュメントでは、macOS デバイスで Microsoft Defender for Endpoint を展開および構成するための従来の方法について説明します。 ネイティブ エクスペリエンスは MEM コンソールで利用できます。 MEM コンソールでネイティブ UI をリリースすると、管理者はアプリケーションを構成して展開し、macOS デバイスに送信する方法がはるかに簡単になります。 <br> <br>
->ブログ投稿 [MEM は、Microsoft Defender for Endpoint for macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) の展開を簡略化し、新機能について説明します。 アプリを構成するには [、Microsoft InTune の [Microsoft Defender for Endpoint for Mac の設定] に移動します](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos)。 アプリを展開するには、「Microsoft Intune を使用して [Microsoft Defender for Endpoint を macOS デバイスに追加する」に移動します](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)。
+>ブログ投稿 [MEM は、Microsoft Defender for Endpoint for macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) の展開を簡略化し、新機能について説明します。 アプリを構成するには [、「Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos)の macOS 上の Microsoft Defender for Endpoint の設定」に移動します。 アプリを展開するには、「Microsoft Intune を使用して [Microsoft Defender for Endpoint を macOS デバイスに追加する」に移動します](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)。
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 
-このトピックでは、Intune を介して Microsoft Defender for Endpoint for Mac を展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
+このトピックでは、Intune を介して macOS に Microsoft Defender for Endpoint を展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
 
 1. [インストール パッケージとオンボーディング パッケージのダウンロード](#download-installation-and-onboarding-packages)
 1. [クライアント デバイスのセットアップ](#client-device-setup)
@@ -48,7 +48,7 @@ ms.locfileid: "51379635"
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、 [メインの Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md) ページを参照してください。
+開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
 
 ## <a name="overview"></a>概要
 
@@ -184,7 +184,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 3. 構成プロファイルを開き、intune/kext.xml。 このファイルは、前のセクションの 1 つで作成されました。
 
-4. [**OK**] を選択します。
+4. **[OK]** を選択します。
 
     ![カスタム構成プロファイルのファイルから構成をインポートする](images/mdatp-6-systemconfigurationprofiles.png)
 
@@ -201,9 +201,9 @@ Microsoft Defender セキュリティ センターからインストールパッ
    >
    > この構成プロファイルは、エンドポイント用 Microsoft Defender へのフル ディスク アクセスを許可します。 以前に Intune を使用して Microsoft Defender for Endpoint を構成した場合は、この構成プロファイルを使用して展開を更新することをお勧めします。
 
-9. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint for Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。 [GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)リポジトリから **netfilter.mobileconfig** をダウンロードし、netext.xmlとして保存し、前のセクションと同じ手順で展開します。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。 [GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)リポジトリから **netfilter.mobileconfig** をダウンロードし、netext.xmlとして保存し、前のセクションと同じ手順で展開します。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
-10. Microsoft Defender for Endpoint for Mac および Microsoft Auto Update が macOS 10.15 (Catalina) の UI に通知を表示するには `notif.mobileconfig` [、GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) リポジトリからダウンロードし、カスタム ペイロードとしてインポートします。 <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
+10. microsoft Defender for Endpoint on macOS および Microsoft Auto Update が macOS 10.15 (Catalina) の UI に通知を表示するには `notif.mobileconfig` [、GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) リポジトリからダウンロードし、カスタム ペイロードとしてインポートします。 <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
 11. [ **割り当ての>する] を選択します**。  [含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。
 
@@ -227,9 +227,9 @@ Intune の変更が登録済みデバイスに反映された後は、[デバイ
 6. [アプリ *のバージョンを無視する] を* [はい] **に設定します**。 その他の設定には任意の値を指定できます。
 
     > [!CAUTION]
-    > [ *アプリのバージョンを無視する* ] **を [いいえ** ] に設定すると、アプリケーションが Microsoft AutoUpdate を通じて更新プログラムを受け取る機能に影響します。 製品 [の更新方法の詳細については、「Deploy updates for Microsoft Defender for Endpoint for Mac」](mac-updates.md) を参照してください。
+    > [ *アプリのバージョンを無視する* ] **を [いいえ** ] に設定すると、アプリケーションが Microsoft AutoUpdate を通じて更新プログラムを受け取る機能に影響します。 製品 [の更新方法の詳細については、「MacOS](mac-updates.md) での Microsoft Defender for Endpoint の更新プログラムの展開」を参照してください。
     >
-    > Intune によってアップロードされたバージョンがデバイスのバージョンより低い場合は、下位バージョンがインストールされ、Microsoft Defender for Endpoint が効果的にダウングレードされます。 これにより、機能しないアプリケーションが発生する可能性があります。 製品 [の更新方法の詳細については、「Deploy updates for Microsoft Defender for Endpoint for Mac」](mac-updates.md) を参照してください。 [アプリのバージョンを無視する] が [いいえ] に設定 *されている* Microsoft Defender for Endpoint を展開した場合 **は、[は** い] に変更 **してください**。 Microsoft Defender for Endpoint がまだクライアント デバイスにインストールできない場合は、Microsoft Defender for Endpoint をアンインストールし、更新されたポリシーをプッシュします。
+    > Intune によってアップロードされたバージョンがデバイスのバージョンより低い場合は、下位バージョンがインストールされ、Microsoft Defender for Endpoint が効果的にダウングレードされます。 これにより、機能しないアプリケーションが発生する可能性があります。 製品 [の更新方法の詳細については、「MacOS](mac-updates.md) での Microsoft Defender for Endpoint の更新プログラムの展開」を参照してください。 [アプリのバージョンを無視する] が [いいえ] に設定 *されている* Microsoft Defender for Endpoint を展開した場合 **は、[は** い] に変更 **してください**。 Microsoft Defender for Endpoint がまだクライアント デバイスにインストールできない場合は、Microsoft Defender for Endpoint をアンインストールし、更新されたポリシーをプッシュします。
      
     > [!div class="mx-imgBorder"]
     > ![アプリの追加でのアプリ情報の表示](images/mdatp-8-intuneappinfo.png)
@@ -282,4 +282,4 @@ Intune の変更が登録済みデバイスに反映された後は、[デバイ
 
 ## <a name="uninstallation"></a>アンインストール
 
-クライアント デバイス [から](mac-resources.md#uninstalling) Microsoft Defender for Endpoint for Mac を削除する方法の詳細については、「アンインストール」を参照してください。
+クライアント デバイス [から](mac-resources.md#uninstalling) macOS 上の Microsoft Defender for Endpoint を削除する方法の詳細については、「アンインストール」を参照してください。
