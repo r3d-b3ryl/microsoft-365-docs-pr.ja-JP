@@ -27,7 +27,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755620"
+ms.locfileid: "51759410"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 

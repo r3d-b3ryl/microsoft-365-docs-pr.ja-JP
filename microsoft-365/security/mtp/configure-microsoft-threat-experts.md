@@ -10,16 +10,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 93e900423fcef1fd357ca50db70e250ef6082dc7
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 38bf768f1a5603fa3da0d7a3acc8f409ed6372de
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570580"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765529"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Microsoft 365 Defender を使用して Microsoft Threat Experts の機能を構成および管理する
 
@@ -32,7 +32,7 @@ ms.locfileid: "51570580"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!IMPORTANT]
 > 適用する前に、Microsoft Technical Service プロバイダーとアカウント チームと一緒に、Microsoft Threat Experts - Targeted Attack Notifications マネージ脅威ハンティング サービスの適格性要件について説明してください。
@@ -168,4 +168,4 @@ Microsoft Threat Experts からの応答は、お問い合わせに応じて異�
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Threat Experts の概要](microsoft-threat-experts.md)
+- [Microsoft 脅威エキスパートの概要](microsoft-threat-experts.md)

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 726a85969dab715a1b6244f14d1bf0259cf301e8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163377"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768988"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint のサポートに問い合わせ
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "51163377"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint は最近、サポート プロセスをアップグレードして、よりモダンで高度なサポート エクスペリエンスを提供しました。 
 
@@ -79,8 +79,8 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 
 Defender for Endpoint サポートに問い合わせ、サポート チケットを開く方法について説明します。 
 
-
-
+> [!Note]
+> Microsoft とのパーミエ サポート契約がある場合は、ウィジェットにプレミア タグが表示されます。 設定されていない場合は、Microsoft アカウント マネージャーに問い合わせください。
 
 ### <a name="contact-support"></a>サポートに連絡
 このオプションは、ヘッドセットのように見えるアイコンをクリックして使用できます。 次に、サポート ケースを提出する次のページが表示されます。
@@ -95,5 +95,5 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 
 
 ## <a name="related-topics"></a>関連項目
-- [サービスの問題のトラブルシューティング](troubleshoot-mdatp.md)
-- [サービスの正常性を確認する](service-status.md)
+- [サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)
+- [サービス正常性の確認](service-status.md)

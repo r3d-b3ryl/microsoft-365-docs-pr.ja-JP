@@ -28,9 +28,9 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755644"
+ms.locfileid: "51759884"
 ---
-# <a name="get-started"></a>開始する
+# <a name="get-started"></a>概要
 
 組織は最近 Microsoft 365 を手に入れたので、電子メールの読み取り、ドキュメントの共有などのために使用する必要があります。 コンピューター、電話、タブレットで Microsoft 365 をセットアップして使用する方法について説明します。
 

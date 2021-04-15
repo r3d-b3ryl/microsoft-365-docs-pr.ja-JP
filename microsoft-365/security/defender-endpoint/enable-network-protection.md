@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a513013c4b5f41cf95b876648882cb56ba818b32
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570998"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769000"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -28,20 +28,24 @@ ms.locfileid: "51570998"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [ネットワーク保護](network-protection.md) は、従業員がアプリケーションを使用して、インターネット上でフィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストする可能性のある危険なドメインにアクセスするのを防ぐのに役立ちます。 テスト環境 [でネットワーク保護](evaluate-network-protection.md) を監査して、ブロックするアプリを確認してから有効にできます。
 
-[ネットワーク フィルター構成オプションの詳細](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[ネットワーク フィルター構成オプションの詳細](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>ネットワーク保護が有効になっているか確認する
 
 レジストリ エディターを使用して、ローカル デバイスでネットワーク保護が有効になっているか確認します。
 
 1. タスク バーの **[スタート** ] ボタンを選択し **、「regedit」と入力して** レジストリ エディターを開きます。
-1. サイド **メニュー HKEY_LOCAL_MACHINE** を選択する
-1. 入れ子になったメニューから **ソフトウェア** ポリシーへの移動 Microsoft  >  **Windows Defender Windows Defender**  >    >    >  **Exploit Guard**  >  **ネットワーク保護**
-1. デバイス上のネットワーク保護の現在の状態を表示するには **、[EnableNetworkProtection]** を選択します。
+
+2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択する
+
+3. 入れ子になったメニューから **ソフトウェア** ポリシーへの移動 Microsoft  >  **Windows Defender Windows Defender**  >    >    >  **Exploit Guard**  >  **ネットワーク保護**
+
+4. デバイス上のネットワーク保護の現在の状態を表示するには **、[EnableNetworkProtection]** を選択します。
 
     * 0 または **Off**
     * 1、または **On**
@@ -83,9 +87,9 @@ ms.locfileid: "51570998"
 
 1. Microsoft Endpoint Manager 管理センターにサインインします (https://endpoint.microsoft.com)
 
-2. エンドポイント保護構成プロファイル [の作成または編集](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
+2. エンドポイント保護構成プロファイル [の作成または編集](/mem/intune/protect/endpoint-protection-configure)
 
-3. プロファイル フローの [構成設定] で **、[Microsoft Defender Exploit Guard Network** filtering Network  >    >  **protection**  >  **Enable** or **Audit only] に移動します。**
+3. プロファイル **フローの [構成** 設定] で **、[Microsoft Defender Exploit Guard Network** filtering Network protection Enable or Audit  >    >    >   only] に **移動します。**
 
 ### <a name="group-policy"></a>グループ ポリシー
 
@@ -116,7 +120,7 @@ ms.locfileid: "51570998"
 
 1. [スタート **] を** 選択し **、「regedit」と** 入力してレジストリ **エディターを開きます**。
 
-2. [ファイル] に **移動HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection**
+2. [ファイル] に **移動HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
 
 3. **[EnableNetworkProtection] を選択し**、値を確認します。
    * 0=Off

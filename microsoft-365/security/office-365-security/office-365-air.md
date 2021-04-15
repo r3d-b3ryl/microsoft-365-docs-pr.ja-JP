@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9850506771f53b125c08b1df2149ee024191d823
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599466"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768868"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -123,7 +123,7 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>セキュリティ センターで変更が近日公開される
 
-microsoft Defender で Office 365 用の AIR 機能を既に使用している場合は、改善された Microsoft [365](../defender/overview-security-center.md)セキュリティ センターにいくつかの変更点が表示されます。 
+microsoft Defender で Office 365 用の AIR 機能を既に使用している場合は、改善された Microsoft [365](../defender/overview-security-center.md)セキュリティ センターにいくつかの変更点が表示されます。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター":::
 
@@ -153,7 +153,7 @@ microsoft Defender で Office 365 用の AIR 機能を既に使用している�
 |**[インシデント]** ページ|[ **インシデント] ページ** では、複数の調査を相互に関連付け、調査の統合されたビューを向上しました。 ([インシデントの詳細については、.)](../defender/incidents-overview.md)|
 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [自動調査の詳細と結果を確認する](air-view-investigation-results.md#view-details-of-an-investigation)
 - [保留中のアクションの確認と承認](air-remediation-actions.md)

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18422f74d87bbadf014de24849235ce5c25bd614
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920470"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768892"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 
@@ -46,7 +46,7 @@ Microsoft Managed Desktop に登録するには、デバイスがこれらの要
 デバイスには、次のソフトウェアがプレインストールされている必要があります。
 
 - Windows 10 Enterprise、Pro、または Pro ワークステーション エディション
-- 64 ビット バージョンの Microsoft Office実行 
+- エンタープライズ向け Microsoft 365 Apps の 64 ビット バージョン 
 - 適用可能なすべてのデバイス ドライバー
 
 
@@ -57,7 +57,7 @@ Microsoft Managed Desktop に登録するには、デバイスがこれらの要
 - UEFI セキュア ブートに対して有効 
 - 信頼できるプラットフォーム モジュール 2.0 
 - 仮想化ベースのセキュリティが可能 
-- ハイパーバイザーで保護されたコード整合性をサポート 
+- [BIOS でサポートされるハイパーバイザー](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) で保護されたコード整合性
 
 これらの機能とサービスが使用するテクノロジの詳細については [、「Microsoft Managed Desktop テクノロジ」を参照してください](../intro/technologies.md)。
 
@@ -72,12 +72,13 @@ Microsoft Managed Desktop に登録するには、デバイスがこれらの要
 
 デバイスが 2020 年 7 月 1 日以降に作成された場合は [、Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)をサポートするために、IR カメラ、指紋リーダー、または両方が必要です。
 
-## <a name="recommended-requirements"></a>推奨される要件
+## <a name="recommended-features"></a>推奨される機能
 
-絶対要件ではありませんが、次の機能を備えたデバイスを選択すると、ユーザーのエクスペリエンスが向上します。
+次の機能を備えたデバイスを選択すると、ユーザーのエクスペリエンスが向上します。
 
 - Intel vPro-platform プロセッサまたは AMD Ryzen Pro プロセッサ
 - 容量が 256 GB 以上の SSD タイプのブート ドライブ
+- 16 GB 以上の内部デバイス メモリ (RAM)
 - モダン スタンバイのサポート
 - デバイスがセキュリティで保護されたコア PC の種類
 - カーネル DMA 保護をサポート

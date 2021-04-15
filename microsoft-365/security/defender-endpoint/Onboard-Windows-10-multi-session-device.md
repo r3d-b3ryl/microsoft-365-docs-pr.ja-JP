@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760088"
+ms.locfileid: "51764319"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード 
 読み取り 6 分 
@@ -76,62 +76,75 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 1. グループ ポリシー管理コンソール (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。
 
-1. グループ ポリシー管理エディターで、[コンピューター構成の基本設定 \> **] コントロール** \> **パネルの設定に移動します**。 
+2. グループ ポリシー管理エディターで、[コンピューター構成の基本設定 \> **] コントロール** \> **パネルの設定に移動します**。 
 
-1. [スケジュールされたタスク **] を右クリックし**、[ **新規**] をクリックし、[ **イミディエイ** ト タスク] (少なくとも Windows 7) をクリックします。 
+3. [スケジュールされたタスク **] を右クリックし**、[ **新規**] をクリックし、[ **イミディエイ** ト タスク] (少なくとも Windows 7) をクリックします。 
 
-1. 開く [タスク] ウィンドウで、[全般] タブ **に移動** します。[セキュリティ **オプション] で、[****ユーザーまたはグループの変更] をクリックし、「SYSTEM」** と入力します。 [名前 **の確認] をクリック** し、[OK] をクリックします。 NT AUTHORITY\SYSTEM は、タスクが実行されるユーザー アカウントとして表示されます。 
+4. 開く [タスク] ウィンドウで、[全般] タブ **に移動** します。[セキュリティ **オプション] で、[****ユーザーまたはグループの変更] をクリックし、「SYSTEM」** と入力します。 [名前 **の確認] をクリック** し、[OK] をクリックします。 NT AUTHORITY\SYSTEM は、タスクが実行されるユーザー アカウントとして表示されます。 
 
-1. [ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **] チェック ボックスを** オンにします。 
+5. [ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **] チェック ボックスを** オンにします。 
 
-1. [操作] タブに **移動し** 、[新規] を **クリックします**。 [アクション **] フィールドで [プログラム** の開始] が選択されている必要があります。 次の情報を入力します。 
+6. [操作] タブに **移動し** 、[新規] を **クリックします**。 [アクション **] フィールドで [プログラム** の開始] が選択されている必要があります。 次の情報を入力します。 
 
-    > Action = "プログラムの開始" <br>
-    > Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-    > 引数の追加 (省略可能) = -ExecutionPolicy Bypass -command \\ "&Path\To\Onboard-NonPersistentMachine.ps1"
+   `Action = "Start a program"`
 
-1. **[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。
+   `Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe`
+
+   `Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
+
+   次に **、[OK] を** 選択し、開いている GPMC ウィンドウを閉じます。
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*シナリオ 3: 管理ツールを使用したオンボーディング*
 
 管理ツールを使用してコンピューターを管理する場合は、Microsoft Endpoint Configuration Manager を使用してデバイスをオンボードできます。
 
-詳細については、「Configuration Manager を使用 [したオンボード Windows 10 デバイス」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm)。 
+詳細については、「Configuration Manager を使用 [したオンボード Windows 10 デバイス」を参照してください](configure-endpoints-sccm.md)。
 
 > [!WARNING]
-> 攻撃表面縮小ルールを使用する場合は、Configuration [Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)クライアントが正しく機能するために使用する WMI コマンドをブロックしますので[、"PSExec](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)コマンドおよび WMI コマンドから発生するプロセス作成をブロックする" というルールは、Microsoft Endpoint Configuration Manager による管理と互換性がないので使用できません。 
+> 攻撃表面縮小ルールを[](attack-surface-reduction.md)使用する場合は、Microsoft Endpoint Configuration Manager による管理と互換性がありませんので[、「PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセス作成をブロックする」というルールは使用できません。 このルールは、Configuration Manager クライアントが正しく機能するために使用する WMI コマンドをブロックします。 
 
 > [!TIP]
-> デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test)。 
+> デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。 
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>ゴールデン イメージを作成する際のコンピューターのタグ付け 
 
-オンボーディングの一環として、Microsoft セキュリティ センターで WVD マシンを容易に区別できるよう、コンピューター タグの設定を検討する必要があります。 詳細については、「レジストリ キーの [値を設定してデバイス タグを追加する」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value)。 
+オンボーディングの一環として、Microsoft セキュリティ センターで WVD マシンを容易に区別できるよう、コンピューター タグの設定を検討する必要があります。 詳細については、「レジストリ キーの [値を設定してデバイス タグを追加する」を参照してください](machine-tags.md#add-device-tags-by-setting-a-registry-key-value)。 
 
 #### <a name="other-recommended-configuration-settings"></a>その他の推奨構成設定 
 
-ゴールデン イメージを作成する場合は、初期保護設定も構成できます。 詳細については、「その他の推奨 [される構成設定」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp#other-recommended-configuration-settings)。 
+ゴールデン イメージを作成する場合は、初期保護設定も構成できます。 詳細については、「その他の推奨 [される構成設定」を参照してください](configure-endpoints-gp.md#other-recommended-configuration-settings)。 
 
 また、FSlogix ユーザー プロファイルを使用している場合は、次のファイルを常時保護から除外することをお勧めします。 
 
 **ファイルの除外:** 
 
-> %ProgramFiles%\FSLogix\Apps\frxdrv.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxdrvvt.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxccd.sys <br>
-> %TEMP% \* .VHD <br>
-> %TEMP% \* .VHDX <br>
-> %Windir%\TEMP \* .VHD <br>
-> %Windir%\TEMP \* .VHDX <br>
-> \\storageaccount.file.core.windows.net\share \* \* .VHD <br>
-> \\storageaccount.file.core.windows.net\share \* \* .VHDX <br>
+`%ProgramFiles%\FSLogix\Apps\frxdrv.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxdrvvt.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxccd.sys`
+
+`%TEMP%\*.VHD`
+
+`%TEMP%\*.VHDX`
+
+`%Windir%\TEMP\*.VHD`
+
+`%Windir%\TEMP\*.VHDX`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHD`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHDX`
 
 **プロセスを除外する:**
 
-> %ProgramFiles%\FSLogix\Apps\frxccd.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxccds.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxsvc.exe <br>
+`%ProgramFiles%\FSLogix\Apps\frxccd.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxccds.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
 
 #### <a name="licensing-requirements"></a>ライセンスの要件 
 
-Windows 10 マルチセッションはクライアント OS です。 エンドポイントの Microsoft Defender のライセンス要件については、「ライセンス要件」 [を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
+ライセンスに関する注意: Windows 10 Enterprise マルチセッションを使用する場合、要件に応じて、すべてのユーザーが Microsoft Defender for Endpoint (ユーザーあたり)、Windows Enterprise E5、Microsoft 365 Security、または Microsoft 365 E5 を介してライセンスを取得するか、Azure Defender を介して VM ライセンスを取得するように選択できます。
+エンドポイントの Microsoft Defender のライセンス要件については、「ライセンス要件」 [を参照してください](minimum-requirements.md#licensing-requirements)。

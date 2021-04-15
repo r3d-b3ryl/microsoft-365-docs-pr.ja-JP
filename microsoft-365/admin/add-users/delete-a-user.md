@@ -25,7 +25,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755562"
+ms.locfileid: "51759920"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   

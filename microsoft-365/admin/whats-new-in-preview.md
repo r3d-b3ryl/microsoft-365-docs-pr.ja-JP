@@ -21,12 +21,12 @@ description: Microsoft 365 管理センター - 今月追加された機能に�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222005"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768723"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -50,6 +50,27 @@ ms.locfileid: "51222005"
 - [Office 更新プログラム](/OfficeUpdates/)
 - [Windows リリースの正常性を確認する方法](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
+## <a name="april-2021"></a>2021 年 4 月
+
+### <a name="admin-mobile-app"></a>Admin モバイル アプリ
+
+### <a name="manage-licenses-and-bills-from-the-admin-mobile-app"></a>管理モバイル アプリからライセンスと請求書を管理する
+
+- これで、サブスクリプションのすべての利用可能なライセンスと割り当てられたライセンスを表示できます。 ユーザーにライセンスを割り当てるか、または割り当て解除したり、ライセンスを追加または削除したりできます。
+- アプリで詳細な請求書を表示できます。
+- これらの更新プログラムは [、Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) デバイスと [iOS デバイスの両方で利用](https://go.microsoft.com/fwlink/p/?linkid=2159787) できます。
+
+:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="スクリーンショット: 管理者のモバイル アプリ割り当てライセンス ページ":::
+:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="スクリーンショット: ユーザーとそのライセンスを含むモバイル アプリの管理画面":::
+:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="スクリーンショット: [管理] モバイル アプリの請求書の概要ページ":::
+
+### <a name="updated-message-center-feed-in-the-admin-mobile-app"></a>管理モバイル アプリのメッセージ センター フィードを更新しました
+
+- これで、メッセージ センター フィードの読み取りエクスペリエンスが柔軟になります。 これで、サービスまたはタグに基づいてメッセージをフィルター処理し、メッセージをお気に入りとしてマークする機能が追加されています。 メッセージを読み取り、未読、またはアーカイブとしてマークする一括アクションも追加されました。
+- これらの更新プログラムは [、Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) デバイスと [iOS デバイスの両方で利用](https://go.microsoft.com/fwlink/p/?linkid=2159787) できます。
+
+:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="スクリーンショット: 管理モバイル アプリ [メッセージ センター フィード] ページ":::
+
 ## <a name="ignite-2021-march"></a>Ignite 2021 (3 月)
 
 Microsoft Ignite へようこそ。 Microsoft [Ignite 2021](https://myignite.microsoft.com/sessions)のセッションに参加できたらと思います。 Ignite で話したいくつかの点を次に示します。
@@ -66,7 +87,7 @@ Microsoft Ignite へようこそ。 Microsoft [Ignite 2021](https://myignite.mic
 
 ### <a name="whats-new-features"></a>新機能
 
-アプリ内のユーザーの "新機能" 機能の表示方法が改善Officeしました。 これで、ユーザーが表示できる Whats の新しいウィンドウにリッチ コンテンツを表示できます。 また、機能についてユーザーに知らせる前に、この機能の詳細を確認できます。 For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+アプリ内のユーザーの "新機能" 機能の表示方法が改善Officeしました。 これで、ユーザーが表示できる Whats の新しいウィンドウにリッチ コンテンツを表示できます。 また、機能についてユーザーに知らせる前に、この機能の詳細を確認できます。 詳細については、「新機能」にOffice [機能を管理するを参照してください](manage/show-hide-new-features.md)。
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="スクリーンショット: Office Power BI の改善点を示す新しいページをアプリに表示する":::
 
@@ -206,7 +227,7 @@ Microsoft で Ignite シーズンに移行する中で、セッション中に�
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>最新Office管理について
 
-数か月前に、ユーザーのアプリに表示される新しいメッセージを管理できる設定が [Officeされました](#office-whats-new-management)。 今月、組織のユーザーに表示する新しいメッセージをすばやく処理し、追跡するのに役立つ新しいホーム ページ カードがリリースされました。
+数か月前に、ユーザーのアプリに表示される新しいメッセージを管理できる設定がOfficeされました。 今月、組織のユーザーに表示する新しいメッセージをすばやく処理し、追跡するのに役立つ新しいホーム ページ カードがリリースされました。
 
 ### <a name="docs-training-and-videos-june"></a>ドキュメント、トレーニング、ビデオ (6 月)
 
@@ -398,46 +419,3 @@ Microsoft 365 管理センターを使用して、iOS 用 SharePoint モバイ�
 - **Microsoft 365** ビデオ シリーズの新機能: 今月は、SharePoint Online のカスタム検索機能、アプリ内ヘルプ ウィンドウを介してエンド ユーザーから特定の機能を表示または非表示にできる Office "What's New" 管理機能、Yammer の最新のセキュリティとコンプライアンス更新プログラムなどについて説明します。 最新のエピソードを次に示します[。Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)の新機能
 
 - **ドキュメントの** 移動: 365 Office Web 記事と Microsoft 365 コンテンツを組み合わせて、新しい URL に気付いた可能性があります。 たとえば、この記事は以前は次の場所でホスト **docs.microsoft.com/Office365/Admin/whats-new-in-preview、URL** は次 **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview。** ページをブックマークした場合は、リンクを更新する必要があります。ただし、コンテンツ リンクは新しいコンテンツ レポにリダイレクトされます。
-
-## <a name="january-2020---happy-new-year"></a>2020 年 1 月 - 新年おめでとう
-
-> [!NOTE]
-> YouTube に Microsoft [365](https://go.microsoft.com/fwlink/p/?linkid=2118096) ビデオ シリーズの新機能があるのをご存知ですか? これは、ユーザーに展開した最新の機能を強調表示します。 毎月、[ビデオ、トレーニング、ドキュメント] セクションの最新エピソードへのリンク [を開始](#videos-training-and-docs) します。 <br> <br> 最新のエピソードを次に示します[。Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)の新機能
-
-### <a name="dark-mode"></a>暗いモード
-
-最初にダーク モードを展開した時は、ホーム ページでのみ使用できます。 ダーク モードはプレビューから外れ、管理センターのほとんどのページでターゲットリリースになります。
-
-1. 最初に、[ターゲットリリース] をオンにする必要があります。[設定] [組織] プロファイルの [リリース] \>  \>  \> **の基本設定に移動します**。
-1. 次に、暗いモードを有効にする場合は、[ホーム] ページに **移動** し、[暗いモード] ボタン **を選択** します。 ([検索] **フィールドとこの** 記事の [新しいリンク] **の横** に表示されます)。
-1. 暗いモードが使用可能なページの場合、ボタンはページの上部にある [新しい管理センターの切り替 **え] の横** にあります。
-
-### <a name="office-whats-new-management"></a>Office新機能の管理
-
-管理者は、Microsoft がアプリ内のユーザーに "What's New" を通信する方法を制御Office、そのコントロールを使用できます。 [設定] \> **Office[新しい管理プレビュー] に移動します**。 機能を選択して詳細を表示し、ユーザーに特定の"新機能" メッセージを表示しない場合は、[ユーザーから非表示] ボタンを選択できます。 たとえば、組織の全員が機能に関するトレーニングを受けているまで、組織は機能についてユーザーに知らせるのを待っている可能性があります。
-
-![機能の詳細Office開いた新機能プレビューの画面キャプチャ。](../media/whatsnew-officemgmt-preview.png)
-
-この機能は、11 月にプレビューするために最初にリリースされましたが、いくつかの機能更新プログラムについて知る必要があります。Office 新機能の管理プレビューの更新プログラムが[利用可能です](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)。
-
-### <a name="partners"></a>パートナー
-
-Howdy, Partners! (自分を助けられなかった。今月も更新があります。 パートナーは、管理センターの [課金アカウント] セクションで、CSP のお客様に Microsoft Customer Agreement  (MCA) を受け入れるオプションを提供できる新機能があります。 この新しいエクスペリエンスでは、次の機能を使用します。
-
-1. 顧客は、パートナー関係と MCA を受け入れるリンクを含む招待メールを受け取ります。
-2. 顧客がサインインすると、管理センターから MCA とパートナーのアクセス許可を表示して受け入れできます。
-
-### <a name="resource-mailboxes"></a>リソース メールボックス
-
-リソース メールボックスの一覧が新しいスタイルに更新されました。 Microsoft 365 管理センターで、[リソースルーム] & \> **します**。
-
-### <a name="videos-training-and-docs-january"></a>ビデオ、トレーニング、ドキュメント (1 月)
-
-1 月にリリースした小規模ビジネス管理者トレーニングを確認します。
-
-- [ビジネス Web サイトを作成する](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [回答とヘルプを見つける](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [ヘルプまたはサポートを利用する](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [ユーザーを削除する](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Microsoft サブスクリプションの選択](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [ビジネス セキュリティ向け Microsoft 365 の概要](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)
