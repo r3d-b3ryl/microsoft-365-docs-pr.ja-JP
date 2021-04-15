@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 58e3b14dcb80db961f01b92f038ce4d32da7e2e8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3343eb433a6ae5c708651abf298bd4f061817543
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689707"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764135"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender 用の異なるモバイル デバイス管理 (MDM) システムを使用した展開
 
@@ -40,9 +40,11 @@ ms.locfileid: "51689707"
 
 開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。
 
+
 ## <a name="approach"></a>方法
 
 > [!CAUTION]
+
 > 現在、Microsoft は正式に Intune と JAMF のみをサポートし、macOS 上の Microsoft Defender for Endpoint の展開と管理を行います。 Microsoft は、以下に示す情報に関して、明示または黙示を問わず一切の保証を行いません。
 
 組織が正式にサポートされていないモバイル デバイス管理 (MDM) ソリューションを使用している場合、これは macOS で Microsoft Defender for Endpoint を展開または実行できないという意味ではありません。
@@ -72,7 +74,9 @@ Microsoft Defender [](mac-install-with-jamf.md)Security Center からダウン�
 
 ### <a name="license-settings"></a>ライセンス設定
 
-システム構成 [プロファイルを設定します](mac-install-with-jamf.md)。 MDM ソリューションは、macOS 上の Microsoft Defender for Endpoint が macOS の一部ではなされていないので、それを "カスタム設定プロファイル" と呼ぶ場合があります。
+システム構成 [プロファイルを設定します](mac-install-with-jamf.md)。 
+
+MDM ソリューションは、macOS 上の Microsoft Defender for Endpoint が macOS の一部ではなされていないので、それを "カスタム設定プロファイル" と呼ぶ場合があります。
 
 プロパティ リスト jamf/WindowsDefenderATPOnboarding.plist を使用します。これは [、Microsoft Defender](mac-install-with-jamf.md)セキュリティ センターからダウンロードしたオンボーディング パッケージから抽出できます。
 システムが XML 形式の任意のプロパティ リストをサポートしている場合があります。 その場合は、jamf/WindowsDefenderATPOnboarding.plist ファイルを as-is でアップロードできます。

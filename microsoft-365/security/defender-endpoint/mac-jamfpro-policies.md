@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687735"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765133"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf Pro の macOS ポリシーで Microsoft Defender for Endpoint をセットアップする
 
@@ -32,7 +32,7 @@ ms.locfileid: "51687735"
 
 **適用対象:**
 
-- [Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 
 このページでは、Jamf Pro で macOS ポリシーを設定するために必要な手順について説明します。
 
@@ -731,8 +731,10 @@ ms.locfileid: "51687735"
 
 または、「Jamf Pro を使用したカスタム構成プロファイルの展開」の説明に従って [、netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) をダウンロードして JAMF 構成プロファイル [にアップロードできます|方法 2: Jamf Pro に構成プロファイルをアップロードします](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
+
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>手順 10: macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする
 macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [するの手順に従います](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
+
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>手順 11: macOS に Microsoft Defender for Endpoint を展開する
 

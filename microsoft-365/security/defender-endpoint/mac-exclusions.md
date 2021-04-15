@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1282543a68ce4cb5c322423656d33c5db12b97b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2281fccfb97d38dbdc218799b087290433deff30
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688587"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764159"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender の除外を構成および検証する
 
@@ -39,18 +39,18 @@ ms.locfileid: "51688587"
 この記事では、オンデマンド スキャンに適用される除外を定義する方法、およびリアルタイムの保護と監視について情報を提供します。
 
 >[!IMPORTANT]
->この記事で説明する除外は、エンドポイントの検出と応答 (EDR) を含む、他の Defender for Endpoint for Mac 機能には適用されません。 この記事で説明する方法を使用して除外するファイルは、EDR アラートなどの検出を引き続きトリガーできます。
+>この記事で説明する除外は、エンドポイントの検出と応答 (EDR) を含む、他の Defender for Endpoint on Mac 機能には適用されません。 この記事で説明する方法を使用して除外するファイルは、EDR アラートなどの検出を引き続きトリガーできます。
 
-特定のファイル、フォルダー、プロセス、およびプロセスで開いたファイルを Defender for Endpoint for Mac スキャンから除外できます。
+特定のファイル、フォルダー、プロセス、およびプロセスで開いたファイルは、Defender for Endpoint on Mac スキャンから除外できます。
 
-除外は、組織に固有またはカスタマイズされたファイルまたはソフトウェアで誤った検出を回避するために役立ちます。 また、Defender for Endpoint for Mac によって引き起こされたパフォーマンスの問題を軽減する場合にも役立ちます。
+除外は、組織に固有またはカスタマイズされたファイルまたはソフトウェアで誤った検出を回避するために役立ちます。 また、Defender for Endpoint on Mac によるパフォーマンスの問題を軽減する場合にも役立ちます。
 
 >[!WARNING]
->除外を定義すると、Defender for Endpoint for Mac によって提供される保護が低下します。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
+>除外を定義すると、Defender for Endpoint on Mac によって提供される保護が低下します。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
 
 ## <a name="supported-exclusion-types"></a>サポートされる除外の種類
 
-次の表は、Defender for Endpoint for Mac でサポートされる除外の種類を示しています。
+次の表に、Defender for Endpoint on Mac でサポートされている除外の種類を示します。
 
 除外 | 定義 | 例
 ---|---|---
@@ -73,7 +73,7 @@ File | 完全パスで識別される特定のファイル | `/var/log/test.log`
 
 ### <a name="from-the-management-console"></a>管理コンソールから
 
-JAMF、Intune、または別の管理コンソールから除外を構成する方法の詳細については、「Defender for Endpoint for Mac の設定」 [を参照してください](mac-preferences.md)。
+JAMF、Intune、または別の管理コンソールから除外を構成する方法の詳細については、「Defender for Endpoint on Mac の設定」 [を参照してください](mac-preferences.md)。
 
 ### <a name="from-the-user-interface"></a>ユーザー インターフェイスから
 
@@ -93,7 +93,7 @@ Defender for Endpoint アプリケーションを開き、次のスクリーン�
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Defender for Endpoint for Mac がマルウェアを報告した場合、ルールは機能していません。 マルウェアの報告がない場合、ダウンロードしたファイルが存在する場合は、除外が機能しています。 ファイルを開き、EICAR テスト ファイル Web サイトで説明されている内容と内容が同じ [ことを確認できます](http://2016.eicar.org/86-0-Intended-use.html)。
+Defender for Endpoint on Mac でマルウェアが報告された場合、ルールは機能していません。 マルウェアの報告がない場合、ダウンロードしたファイルが存在する場合は、除外が機能しています。 ファイルを開き、EICAR テスト ファイル Web サイトで説明されている内容と内容が同じ [ことを確認できます](http://2016.eicar.org/86-0-Intended-use.html)。
 
 インターネット にアクセスできない場合は、独自の EICAR テスト ファイルを作成できます。 次の Bash コマンドを使用して、EICAR 文字列を新しいテキスト ファイルに書き込む。
 

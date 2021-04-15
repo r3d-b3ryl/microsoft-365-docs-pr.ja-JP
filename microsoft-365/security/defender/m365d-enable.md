@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18564b2a5a47b2cf4a8bbd94a3e3a315c8f269ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bf8fdb2a8a42ef7b70b744cbbb5663e6afe51989
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200259"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764384"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 
@@ -77,7 +77,7 @@ Microsoft  365 セキュリティ センターで [ヘルプが必要ですか] 
 - [高度なハンティング](advanced-hunting-overview.md) 機能
 - 脅威の分析
 
-![Microsoft 365 Defender を備えた Microsoft 365 セキュリティ センター ナビゲーション ウィンドウのイメージインシデント管理などの Microsoft 365 Defender 機能を備えた ](../../media/mtp-enable/mtp-on.png)
+![Microsoft 365 Defender を備えた Microsoft 365 セキュリティ センター ナビゲーション ウィンドウのイメージインシデント管理などの Microsoft 365 Defender 機能を備えた ](../../media/overview-incident.png)
  *Microsoft 365* セキュリティ センター
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Id データの Microsoft Defender の取得 

@@ -1,24 +1,26 @@
 ---
-title: Microsoft Defender AV スキャンの除外を設定する
+title: Microsoft Defender ウイルス対策スキャンの除外を設定する
 description: Microsoft Defender AV によってスキャンされるファイル (指定されたプロセスによって変更されたファイルを含む) とフォルダーを除外できます。 PowerShell を使用して除外を検証します。
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: ksarens
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 47db9b4451a885c92ca4fda0f87f0150415d3338
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 08f7f9d4a6e9e70d3ef071f30712b2ae53f4ea52
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691504"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764665"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Microsoft Defender ウイルス対策スキャンの除外を構成および検証する
 
@@ -40,7 +42,8 @@ Microsoft Defender ウイルス対策スキャンから、特定のファイル�
 - [プロセスによって開いたファイルの除外を構成および検証します](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。 これにより、特定のプロセスで開いたスキャンからファイルを除外できます。
 
 ## <a name="recommendations-for-defining-exclusions"></a>除外を定義するための推奨事項
-
+[!IMPORTANT]
+Microsoft Defender Antivirus には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるファイルなど) に基づく多くの自動除外が含まれています。  
 除外を定義すると、Microsoft Defender ウイルス対策によって提供される保護が低下します。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
 
 除外を定義する際に注意する必要がある推奨事項の一覧を次に示します。  
