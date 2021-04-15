@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 従業員が辞職したときに、そのファイルやメールを保存する方法について説明します。
-ms.openlocfilehash: 38cc44bbe602f3c8c38ca54391d0967fbafbfcf7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17911e4a4551bba07d2c2ad034941bba737dcc1d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906314"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755608"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>元ユーザーのデータにアクセスしてバックアップを作成する
 
@@ -44,8 +44,22 @@ ms.locfileid: "50906314"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。  
-    
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+
+::: moniker-end
+
 2. ユーザーを選択します。
 
 3. 右側のウィンドウで、[**OneDrive**] を選択します。 [**ファイルへのアクセス**] で、[**ファイルへのリンクの作成**] を選択します。
@@ -56,69 +70,27 @@ ms.locfileid: "50906314"
 > 一度に最大 500 MB のファイルとフォルダーを移動またはコピーできます。<br/>
 > バージョン履歴のあるドキュメントを移動またはコピーすると、最新バージョンのみ移動されます。  
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。  
-
-2. ユーザーを選択します。
-
-3. 右側のウィンドウで [**OneDrive の設定**] を展開し、[**アクセス]** の横にある [**ファイルにアクセスする**] を選択します。
-
-4. リンクを選択してファイルの場所を開きます。 ファイルをコンピューターにダウンロードするか、[**移動先**] または [**指定の場所にコピー**] を選択して、自分の OneDrive または共有ライブラリに移動またはコピーします。 
-
-> [!NOTE]
-> 一度に最大 500 MB のファイルとフォルダーを移動またはコピーできます。<br/>
-> バージョン履歴のあるドキュメントを移動またはコピーすると、最新バージョンのみ移動されます。  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。 
-
-2. ユーザーを選択します。
-
-3. 右側のウィンドウで [**OneDrive の設定**] を展開し、[**アクセス]** の横にある [**ファイルにアクセスする**] を選択します。
-
-4. リンクを選択してファイルの場所を開きます。 ファイルをコンピューターにダウンロードするか、[**移動先**] または [**指定の場所にコピー**] を選択して、自分の OneDrive または共有ライブラリに移動またはコピーします。  
-
-> [!NOTE]
-> 一度に最大 500 MB のファイルとフォルダーを移動またはコピーできます。<br/>
-> バージョン履歴のあるドキュメントを移動またはコピーすると、最新バージョンのみ移動されます。  
-
-::: moniker-end
-    
-
-
 ## <a name="revoke-admin-access-to-a-users-onedrive"></a>ユーザーの OneDrive への管理者アクセスを取り消す
 
 グローバル管理者は、ユーザーの OneDrive 内のコンテンツへのアクセス権を自分自身に付与できますが、不要になったときにアクセス権を削除することもできます。 
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. 全体管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>SharePoint 管理者として管理センターにサインインします。 
-
-    管理者センターにアクセスする権限がないというメッセージが表示される場合は、組織には管理者権限がありません。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 全体管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank"></a>SharePoint 管理者として管理センターにサインインします。
-
-    管理者センターにアクセスする権限がないというメッセージが表示される場合は、組織には管理者権限がありません。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> から管理センターにアクセスします。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 全体管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"></a>SharePoint 管理者として管理センターにサインインします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> から管理センターにアクセスします。
 
-    管理者センターにアクセスする権限がないというメッセージが表示される場合は、組織には管理者権限がありません。
-
-::: moniker-end
+::: moniker-end 
 
 2. 左側のウィンドウで、[**管理センター**] \> [**SharePoint**] の順に選択します。 (場合によっては、管理センターのリストを表示するために **[すべて表示]** を選択する必要があります。)
 

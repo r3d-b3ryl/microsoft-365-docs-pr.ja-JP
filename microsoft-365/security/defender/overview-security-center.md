@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 02/02/2021
+ms.date: 04/07/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,18 +19,16 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197935"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760016"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>統合された Microsoft 365 セキュリティ センターの概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **適用対象:**
 
@@ -57,39 +55,39 @@ Office 365 セキュリティ/コンプライアンス センターまたは Mic
 
 Office 365 セキュリティ/コンプライアンス センター (protection.office.com) および Microsoft Defender セキュリティ センター (securitycenter.microsoft.com) で使用するすべてのセキュリティ コンテンツは、*Microsoft 365 セキュリティ センター* にあります。
 
-Microsoft 365 セキュリティ センターは、さまざまなワークロードからの信号を単一の統合されたエクスペリエンスに取り込むことにより、セキュリティ チームが調査して攻撃に対応するのを支援します。
+Microsoft 365 セキュリティ センターは、さまざまなワークロードからのシグナルを一連の統合エクスペリエンスに取り込み、セキュリティ チームが攻撃を調査して対応するのに役立ちます。
 
 - インシデントとアラート
 - 検索
 - アクション センター
 - 脅威の分析
 
-Microsoft 365 セキュリティ センターは、Microsoft Defender for Office 365 および Microsoft Defender for Endpoint を統合する際に、*統一性、明確性、および共通の目標* を強調しています。 統合は、以下にリストされている優先順位に基づいており、各セキュリティ スイートが組み合わせにもたらした機能を犠牲にすることなく行われました。
+Microsoft 365 セキュリティ センターは、Microsoft Defender for Office 365 および Microsoft Defender for Endpoint を統合する際に、*統一性、明確性、および共通の目標* を強調しています。 マージは、以下に示す優先順位に基づいて行われたので、各セキュリティ スイートが次の組み合わせに持ち込んだ機能を犠牲にすることなく行いました。
 
-- 共通の構築ブロック
-- 共通の用語
-- 共通のエンティティ
-- 他のワークロードと同等の機能
+- 共通の構成要素
+- 一般的な用語
+- 共通エンティティ
+- 他のワークロードとの機能のパリティ
 
 ## <a name="unified-investigations"></a>統一された調査
 
-セキュリティ センターを合理化すると、Microsoft 365 組織全体のインシデントを調査するための単一のウィンドウが作成されます。 主な例は、Microsoft 365 セキュリティ センターのクイック起動の **[インシデント]** ノードです。
+セキュリティ センターを統合すると、Microsoft 365 全体でセキュリティ インシデントを調査する 1 つの場所が作成されます。 主な例は **、[** インシデント]  & Microsoft 365 セキュリティ センターのクイック 起動時のアラートです。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="MDO の [インシデント] ページ。":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 セキュリティ センターの [インシデント] ページ。":::
 
-例として、重大度の **高い** インシデント名をダブルクリックすると、センター統合の利点を示すページが表示されます。
+インシデント名を選択すると、収束セキュリティ センターの値を示すページが表示されます。
 
-![複数のエンドポイントでの特権エスカレーションを伴う多段階のインシデント。影響を受けるデバイスが 16 個、影響を受けるユーザーが 9 個表示されます。](../../media/converged-incident-info-3.png)
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 セキュリティ センターのインシデントの概要ページの例":::
 
-> [!TIP]
-> 統合された **[ユーザー]** タブは、問い合わせを開始するのに適した場所です。 この単一ページには、統合されたワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、および MCAS (使用する場合)) のユーザーと、オンプレミスの Active Directory、Azure Active Directory、同期ユーザー、ローカル ユーザー、サードパーティ ユーザーなどのさまざまなソースの情報が表示されます。 [新しい [ユーザー] エクスペリエンス](investigate-users.md)の詳細をご覧ください。
+<!--
+![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
+--> 
 
-インシデント情報には、影響を受けるメールボックスの横に、ユーザー/ID の詳細とリスクのあるデバイスが表示されます。 また、**調査情報** と収集された **証拠** を関連付けます。 これにより、管理者とセキュリティ運用チームは、リスクの高い 1 つのアラートから、影響を受けるユーザーとメールボックスに簡単にピボットできます。 このページの上部にある **[インシデント]** タブを見ると、この単一の場所から利用できる他の主要なセキュリティ ピボットがあります。
+インシデント ページの上部には、[概要] タブ、[通知] 、[**デバイス**] 、[**ユーザー**] 、[メールボックス] 、[調査]、および **[証拠**] タブが **表示** されます。 詳細については、次のタブを選択します。 たとえば、[ユーザー]タブには、統合ワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Cloud App Security) のユーザーの情報と、オンプレミスの Active Directory ドメイン サービス (AD DS)、Azure Active Directory (Azure AD)、サードパーティ ID プロバイダーなどのさまざまなソースが表示されます。 詳細については、「ユーザーの調査 [」を参照してください](investigate-users.md)。
 
-> [!IMPORTANT]
-> 特定のインシデントのページの上部に、**[概要]**、**[アラート]**、**[デバイス]**、**[ユーザー]**、**[メールボックス]**、**[調査]**、および **[証拠]** タブが表示されます。
+環境内のインシデントを確認し、これらのタブをドリルダウンし、さまざまな種類の脅威に対してインシデントに提供された情報にアクセスする方法について理解を深める方法を実践してください。
 
-**[調査]** を選択すると、実行中の分析のグラフィックと、修正の状態 (**承認待ち** など) が一覧表示されるページが開きます。 時間をかけて環境内の特定のインシデントを選択し、これらのタブにドリルダウンして、さまざまな種類の脅威のプロファイルを作成する練習をしてください。 精通していると、後の差し迫った調査に役立ちます。
+詳細については [、「Microsoft 365 セキュリティ センターでのインシデント」を参照してください](incidents-overview.md)。
 
 ## <a name="improved-processes"></a>改善されたプロセス
 

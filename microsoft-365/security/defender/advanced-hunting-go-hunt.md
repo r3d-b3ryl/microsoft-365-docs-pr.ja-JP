@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 392db06aa517e3e970f85ccc971c3a6a6bc6e548
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0f09f74a1cefad5a9b6b438752ebe57e583397c7
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498288"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759980"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>go hunt を使用してエンティティまたはイベント情報をすばやく検索する
 
@@ -39,7 +39,7 @@ Go *Hunt アクションを使用* すると、強力なクエリ ベースの�
 
 go *hunt アクション* は、イベントまたはエンティティの詳細が表示されるたびに、セキュリティ センターのさまざまなセクションで使用できます。 たとえば、次のセクション *から go hunt* を使用できます。
 
-- インシデント ページ [では、](investigate-incidents.md#incident-overview)インシデントに関連付けられているユーザー、デバイス、その他多くのエンティティに関する詳細を確認できます。 エンティティを選択すると、追加の情報と、そのエンティティに対して実行できるさまざまなアクションが表示されます。 次の例では、メールボックスが選択され、メールボックスに関する詳細と、メールボックスの詳細を検索するオプションが表示されます。
+- インシデント ページ [では、](investigate-incidents.md#summary)インシデントに関連付けられているユーザー、デバイス、その他多くのエンティティに関する詳細を確認できます。 エンティティを選択すると、追加の情報と、そのエンティティに対して実行できるさまざまなアクションが表示されます。 次の例では、メールボックスが選択され、メールボックスに関する詳細と、メールボックスの詳細を検索するオプションが表示されます。
 
     ![移動ハント オプションを使用してメールボックスの詳細を示す画像](../../media/mtp-ah/go-hunt-email.png)
 

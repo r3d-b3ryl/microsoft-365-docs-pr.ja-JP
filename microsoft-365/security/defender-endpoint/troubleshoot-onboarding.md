@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689667"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755800"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -292,8 +292,9 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
     ![Microsoft Defender ウイルス対策のレジストリ キーのイメージ](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
-   > さらに、既定の開始値wdfilter.syswdboot.sysの開始値が "0" に設定されている必要があります。
+   > すべての Windows Defender (wdboot、wdfilter、wdnisdrv、wdnissvc、および windefend) は、既定の状態である必要があります。 これらのサービスの起動を変更する機能はサポートされていないため、システムのイメージを再作成する必要があります。
    >
+   > WdBoot と WdFilter の既定の構成の例:
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 

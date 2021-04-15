@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法について説明します。 ユーザーの電子メールと OneDrive コンテンツの操作を決定します。 また、製品ライセンスを保持するか、支払いを停止するか決定します。
-ms.openlocfilehash: 5c647d353f807f20a35c889ba1d6f7715343c5cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904446"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755562"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
@@ -59,15 +59,21 @@ ms.locfileid: "50904446"
 ユーザーを削除する手順は、ガイドに従って実行できます。以下の方法でガイドを開始できます。
 
 ::: moniker range="o365-worldwide"
+
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+
 ::: moniker-end
 
 2. 削除するユーザーを選択し、[ユーザーの削除] **を選択します**。

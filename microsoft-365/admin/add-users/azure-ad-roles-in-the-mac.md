@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Microsoft 365 管理センターで Azure 管理者の役割を管理する。
-ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72835a0f9fdf9a15fc3ffa07c0fab6ca6f0260cb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904494"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759944"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365管理センター のAzure Active Directory の役割について
 
@@ -29,15 +29,11 @@ Microsoft 365 管理センターでは、30 を超える Azure AD の役割を�
 
 Microsoft 365 管理センターまたは Azure ポータルで役割を割り当てても、Windows PowerShell の Azure AD モジュールを使用してロールを割り当てても関係なく、管理者ロールを割り当てられたユーザーが、組織が登録されているクラウド サービスへの同じアクセス レベルを所有します。
 
-::: moniker range="o365-worldwide"
-
 Microsoft 365 管理センターで、[**役割**] に移動し、任意の役割を選択して詳細ウィンドウを開きます。 [**アクセス許可**] タブを選択して、実行する許可を持った役割を割り当てられた管理者についての詳細な一覧を表示します。 役割にユーザーを追加するには、**[割り当てられた]** または **[割り当てられた管理者]** タブを選択します。 Microsoft 365 管理センターでの役割を割り当てる方法の詳細については、「[管理者ロールを割り当てる](assign-admin-roles.md)」を参照してください。
-
-::: moniker-end
 
 ## <a name="all-azure-ad-roles"></a>すべての Azure AD の役割
 
-以下は、Microsoft 365 管理センターで利用可能なすべての管理者ロールの一覧です。 Microsoft 365 の管理者役割について詳しい説明をお探しですか ? [管理者ロールの詳細](./about-admin-roles.md?view=o365-worldwide)をチェックアウトします。
+以下は、Microsoft 365 管理センターで利用可能なすべての管理者ロールの一覧です。 Microsoft 365 の管理者役割について詳しい説明をお探しですか ? [管理者ロールの詳細](./about-admin-roles.md)をチェックアウトします。
 
 |管理者ロール     |説明  |
 |---------|---------|

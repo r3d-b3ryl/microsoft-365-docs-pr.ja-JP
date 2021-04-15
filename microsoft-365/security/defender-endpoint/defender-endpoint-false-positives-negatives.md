@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: ddd10e6164a8fae5d0d3d60c04ca854ef9771dba
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688743"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759872"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -125,9 +125,11 @@ ms.locfileid: "51688743"
 ウイルス対策スキャンの開始や調査パッケージの収集などのその他のアクションは、手動で、または Live Response を介して [実行されます](live-response.md)。 Live Response を使用して実行されるアクションは元に戻すことはできません。
 
 アラートを確認した後、次に修復アクション [を確認します](manage-auto-investigation.md)。 誤検知の結果として何かアクションが実行された場合は、ほとんどの種類の修復アクションを元に戻すことができます。 具体的には、次の方法を使用できます。
-- [一度に 1 つの操作を元に戻します](#undo-an-action)。
-- [一度に複数の操作を元に戻す](#undo-multiple-actions-at-one-time)。そして 
-- [複数のデバイス間で検疫からファイルを削除します](#remove-a-file-from-quarantine-across-multiple-devices)。 
+
+- [アクション センターから検疫済みファイルを復元する](#restore-a-quarantined-file-from-the-action-center)
+- [複数の操作を一度に元に戻す](#undo-multiple-actions-at-one-time)
+- [複数のデバイス間で検疫からファイルを削除します](#remove-a-file-from-quarantine-across-multiple-devices)。  and 
+- [検疫からファイルを復元する](#restore-file-from-quarantine)
 
 誤検知の結果として実行されたアクションの確認と元に戻す操作が完了したら、除外の確認または [定義に進みます](#part-3-review-or-define-exclusions)。
 
@@ -139,7 +141,7 @@ ms.locfileid: "51688743"
 
 3. アイテムを選択すると、実行された修復アクションの詳細が表示されます。
 
-### <a name="undo-an-action"></a>操作を元に戻す
+### <a name="restore-a-quarantined-file-from-the-action-center"></a>アクション センターから検疫済みファイルを復元する
 
 1. アクション センター ( ) に移動 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) し、サインインします。
 
@@ -164,7 +166,33 @@ ms.locfileid: "51688743"
 
 2. [履歴 **] タブ** で、アクションの種類が [検疫ファイル] のファイルを **選択します**。
 
+3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を **選択します**。
+
+### <a name="restore-file-from-quarantine"></a>検疫からファイルを復元する
+
+調査後にファイルがクリーンだと判断した場合は、ファイルをロールバックして検疫から削除できます。 ファイルが検疫された各デバイスで次のコマンドを実行します。
+
+1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
+
+   1. **[スタート]** をクリックし、「_cmd_」と入力します。
+
+   1. [コマンド プロンプト] を **右クリックし、[** 管理者として **実行] を選択します**。
+
+2. 次のコマンドを入力し、Enter キーを **押します**。
+
+    ```console
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    ```
+
+    > [!NOTE]
+    > シナリオによっては **、ThreatName が** 次のように表示される場合があります `EUS:Win32/
+CustomEnterpriseBlock!cl` 。 Defender for Endpoint は、過去 30 日間にこのデバイスで検疫されたカスタム ブロックされたファイルを復元します。
+
+    > [!IMPORTANT]
+    > 潜在的なネットワーク脅威として検疫されたファイルは、回復できない可能性があります。 検疫後にユーザーがファイルを復元しようとすると、そのファイルにアクセスできない可能性があります。 これは、システムがファイルにアクセスするためのネットワーク資格情報を持たなくなった場合に発生する可能性があります。 通常、これはシステムまたは共有フォルダーに一時的にログオンし、アクセス トークンの有効期限が切れた結果です。
+
 3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を **選択します**。 
+
 
 ## <a name="part-3-review-or-define-exclusions"></a>パート 3: 除外を確認または定義する
 

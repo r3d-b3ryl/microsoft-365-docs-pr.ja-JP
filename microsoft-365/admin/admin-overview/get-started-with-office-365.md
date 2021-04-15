@@ -23,23 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: コンピューター、電話、タブレットで Microsoft 365 をセットアップして使用する方法について説明します。
-ms.openlocfilehash: 74821886832e699a90d9a54a9b8c7ce9a8cfab75
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0bc2478375cdec231a00bade933680cb69578126
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222029"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755644"
 ---
-# <a name="get-started"></a>作業の開始
+# <a name="get-started"></a>開始する
 
 組織は最近 Microsoft 365 を手に入れたので、電子メールの読み取り、ドキュメントの共有などのために使用する必要があります。 コンピューター、電話、タブレットで Microsoft 365 をセットアップして使用する方法について説明します。
-  
-::: moniker range="o365-worldwide"
-
-****
-
-
-::: moniker-end
 
 ## <a name="training-resources-for-your-users"></a>ユーザー向けのトレーニング リソース
 

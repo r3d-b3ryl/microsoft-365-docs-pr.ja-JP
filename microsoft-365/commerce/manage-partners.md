@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理する方法について説明します。
-ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579736"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749856"
 ---
 # <a name="manage-partner-relationships"></a>パートナー関係の管理
 
@@ -30,9 +30,9 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 2. パートナーは、パートナー関係を確立するために顧客に電子メール要求を送信します。
 3. お客様は、Microsoft 365 管理センターで招待を受け入れ、パートナーとの作業を開始します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
+これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>パートナーが自分の組織や学校に対して何ができますか?
 
@@ -85,7 +85,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 管理者の役割は、パートナーからいつでも削除できます。 管理者ロールを削除しても、パートナー関係は削除されます。 リセラーなど、別の容量で引き続き作業できます。 パートナーと仕事をしなくなった場合は、パートナーに問い合わせ、関係を終了してください。
 
-1. 管理センターで、[課金パートナーの関係 **]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">ページに移動</a>します。
+1. 管理センターで、[設定パートナーの関係 **]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">ページに移動</a>します。
 2. [パートナー **の関係] ページ** で、削除するパートナーの名前を含む行を選択します。
 3. パートナーの名前を含む行を選択します。
 4. パートナー ページで、[役割の削除] **を選択します**。

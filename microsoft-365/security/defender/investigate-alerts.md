@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 989574a860bea798c48e077f5633c31eb857e85e
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 601a8674327c424592c65014793599dc19b2bcd3
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500944"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51759434"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
 
@@ -35,8 +35,6 @@ ms.locfileid: "51500944"
 
 **適用対象:**
 - Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 アラートは、すべてのインシデントの基礎であり、環境内で悪意のあるイベントや不審なイベントが発生したかどうかを示します。 アラートは通常、より広範な攻撃の一部であり、インシデントに関する手がかりを提供します。
 

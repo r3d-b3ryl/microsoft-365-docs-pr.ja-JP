@@ -15,12 +15,14 @@ ms.date: 07/23/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 912136a7229ec55b7f1644aebc946f63acb68040
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 0fd1e6b2eec1be722af58e0753e158c050b56c6b
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691287"
+ms.locfileid: "51749880"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および管理する
 
@@ -67,4 +69,4 @@ Get-Help <cmdlet> -Online
 
 - [管理および構成ツールのリファレンス トピック](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender ウイルス対策コマンドレット](/powershell/module/defender/?view=win10-ps)
+- [Microsoft Defender ウイルス対策コマンドレット](/powershell/module/defender)

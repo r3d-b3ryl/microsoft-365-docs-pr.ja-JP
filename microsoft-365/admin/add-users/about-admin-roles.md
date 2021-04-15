@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者は、管理センターでサポート チケットを開くことができます。
-ms.openlocfilehash: e0155ee9e263d4b62dced0e2bd943781ccf93a4c
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644257"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755620"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
@@ -61,11 +61,7 @@ Microsoft 365 管理センターでの役割を割り当てる方法の詳細に
 
 ## <a name="commonly-used-microsoft-365-admin-center-roles"></a>よく使用される Microsoft 365 管理センターの役割
 
-::: moniker range="o365-worldwide"
-
 Microsoft 365 管理センターで、[**役割**] に移動し、任意の役割を選択して詳細ウィンドウを開きます。 [**アクセス許可**] タブを選択して、実行する許可を持った役割を割り当てられた管理者についての詳細な一覧を表示します。 役割にユーザーを追加するには、**[割り当てられた]** または **[割り当てられた管理者]** タブを選択します。
-
-::: moniker-end
 
 おそらく、組織内で次の役割を割り当てる必要があるだけです。 既定では、最初にほとんどの組織が使用する役割が表示されます。 役割が見つからない場合は、一覧の一番下に移動し、[**すべてをカテゴリ別に表示**] を選択します。 (役割に関連付けられたコマンドレットなどの詳細については、「[Azure Active Directory での管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を参照してください。)
 

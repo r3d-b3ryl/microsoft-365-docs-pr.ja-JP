@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 7f733dab02ab3ff33131be96a96451d7d1c14f55
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 60a1f21e65df007e78077d8c3bb22161313c1073
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904410"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755728"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターにおける Intune 管理者の役割
 
@@ -31,11 +31,7 @@ Microsoft 365 管理センターを使用すると、Microsoft Intune の役割�
 
 Microsoft 365 管理センターでの役割を割り当てる方法の詳細については、「[管理者ロールを割り当てる](assign-admin-roles.md)」を参照してください。
 
-::: moniker range="o365-worldwide"
-
 Microsoft 365 管理センターで、[**役割**] に移動し、任意の役割を選択して詳細ウィンドウを開きます。 [**アクセス許可**] タブを選択して、実行する許可を持った役割を割り当てられた管理者についての詳細な一覧を表示します。 役割にユーザーを追加するには、**[割り当てられた]** または **[割り当てられた管理者]** タブを選択します。
-
-::: moniker-end
 
 ## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで利用可能なMicrosoft Intune の役割
 

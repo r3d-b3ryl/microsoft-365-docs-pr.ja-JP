@@ -11,27 +11,27 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/26/2021
-ms.reviewer: ''
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 34bebddcf052a643529f1d2b8a8a869a0ffe4a91
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: how-to
+ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183823"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760100"
 ---
 # <a name="troubleshoot-network-protection"></a>ネットワーク保護のトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> [!TIP]
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 ネットワーク保護を [使用すると、](network-protection.md) 次のような問題が発生する可能性があります。
@@ -57,7 +57,7 @@ ms.locfileid: "51183823"
 > - [クラウド配信の保護が](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 有効になっています。
 > - 監査モードが有効になっていません。 グループ [ポリシーを使用して](enable-network-protection.md#group-policy) ルールを無効 **(値** : **0) に設定します**。
 
-## <a name="use-audit-mode"></a>監査モードの使用
+## <a name="use-audit-mode"></a>監査モードを使用する
 
 監査モードでネットワーク保護を有効にしてから、作成した Web サイトにアクセスして機能をデモできます。 すべての Web サイト接続はネットワーク保護によって許可されますが、ネットワーク保護が有効になっている場合にブロックされた接続を示すイベントがログに記録されます。
 
@@ -103,9 +103,29 @@ ms.locfileid: "51183823"
    mpcmdrun -getfiles
    ```
 
-3. 既定では、C:\ProgramData\Microsoft\Windows ファイルにDefender\Support\MpSupportFiles.cab。 提出フォームにファイルを添付します。
+3. 提出フォームにファイルを添付します。 既定では、診断ログはで保存されます `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。 
 
-## <a name="related-topics"></a>関連項目
+## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>ネットワーク保護に関する接続の問題を解決する (E5 のお客様向け)
+
+ネットワーク保護が実行される環境のため、Microsoft はオペレーティング システムのプロキシ設定を確認できません。 場合によっては、ネットワーク保護クライアントがクラウド サービスにアクセスできない場合があります。 ネットワーク保護に関する接続の問題を解決するには、次のいずれかのレジストリ キーを構成して、ネットワーク保護がプロキシ構成を認識します。
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+```
+
+---OR---
+
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+```
+
+レジストリ キーは、PowerShell、Microsoft Endpoint Manager、またはグループ ポリシーを使用して構成できます。 以下に役立つリソースを示します。
+- [レジストリ キーの操作](/powershell/scripting/samples/working-with-registry-keys)
+- [エンドポイント保護のカスタム クライアント設定を構成する](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [グループ ポリシー設定を使用してエンドポイント保護を管理する](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+
+## <a name="see-also"></a>関連項目
 
 - [ネットワーク保護](network-protection.md)
 - [ネットワーク保護を評価する](evaluate-network-protection.md)

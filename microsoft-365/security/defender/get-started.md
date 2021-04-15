@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a6fe207773d2682ab68392269ac915030c67fa4b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f408ed0fe77034f69fc6e51ada75012f752ee2e7
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063443"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51759824"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>Microsoft 365 for Defender の使用を開始する
 
@@ -32,8 +32,6 @@ ms.locfileid: "51063443"
 
 **適用対象:**
 - Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft 365 Defender は、企業全体のセキュリティを監視および管理できる統合エクスペリエンスです。 ID、エンドポイント、データ、アプリ、電子メール、およびコラボレーション ツールにわたる統合されたアラートにより、脅威の調査と対応が一元的な場所で行える。 
 

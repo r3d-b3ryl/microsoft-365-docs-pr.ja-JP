@@ -10,16 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2021
+ms.date: 04/13/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6c411507b834bd7f09f4688bda11e3ece9f6d7c8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: b8122807b8e26a848781f9f66f8e13032345f3fd
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691299"
+ms.locfileid: "51749916"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して Microsoft Defender ウイルス対策を構成および管理する
 
@@ -87,9 +89,9 @@ ms.locfileid: "51691299"
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | [スケジュールされた Microsoft Defender ウイルス対策スキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Reporting | 拡張通知を無効にする | [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
 | ルート | Microsoft Defender ウイルス対策を無効にする | 使用しない (インストールされているサード パーティ製ウイルス対策アプリが正しく動作するように、この設定を [構成されていない] に設定する必要があります)
-| ルート | プロキシ サーバーをバイパスするアドレスを定義する | 関連性がなくなった |
-| ルート | ネットワークに接続するためのプロキシの自動構成 (.pac) を定義する | 関連性がなくなった |
-| ルート | ネットワークに接続するためのプロキシ サーバーを定義する | 関連性がなくなった |
+| ルート | プロキシ サーバーをバイパスするアドレスを定義する | 不使用 |
+| ルート | ネットワークに接続するためのプロキシの自動構成 (.pac) を定義する | 不使用 |
+| ルート | ネットワークに接続するためのプロキシ サーバーを定義する | 不使用 |
 | ルート | リストのローカル管理者のマージ動作を構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | ルート | マルウェア対策サービスが通常の優先度で起動を許可する | [Microsoft Defender ウイルス対策スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md) |
 | ルート | マルウェア対策サービスの実行を常に許可する | [Microsoft Defender ウイルス対策スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md) |

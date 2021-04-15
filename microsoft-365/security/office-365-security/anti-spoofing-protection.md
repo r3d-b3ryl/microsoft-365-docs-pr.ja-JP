@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 746b00c7fbf1a90f8bda56c1ba031777f6dee409
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408613"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688779"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -122,7 +122,8 @@ Microsoft では、2 種類のスプーフィングされたメッセージを�
 
   - SFTY はメッセージの安全レベルです。 9 はフィッシング詐欺、22 はクロスドメイン スプーフィングを示します。
 
-スプーフィングに関連するカテゴリおよび複合認証 (compauth) 値の詳細については、「[Microsoft 365 のスパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」をご覧ください。
+> [!NOTE]
+> ***compauth=fail reason=###** _ のようなメッセージが表示され、複合認証 (compauth) とスプーフィングに関する値について知る必要がある場合、[_Microsoft 365 のスパム対策メッセージ ヘッダー*](anti-spam-message-headers.md) をご確認ください。 または、 [*reason*](anti-spam-message-headers.md) コードに直接移動します。
 
 DMARC の詳細については、「[DMARC を使用して Microsoft 365 でメールを検証する](use-dmarc-to-validate-email.md)」を参照してください。
 

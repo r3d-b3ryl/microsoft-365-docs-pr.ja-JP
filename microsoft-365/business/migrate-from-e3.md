@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 365 E3 から Microsoft 365 Business Premium にビジネスを移行するOffice説明します。
-ms.openlocfilehash: ffb82fa40f05383260ac1b97ed0bdf5f2f30c1df
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f2b7962918186f4a1063c5a66596135c2972ec71
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578329"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750002"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>365 E3 Office Microsoft 365 Business Premium への移行
 
@@ -49,8 +49,8 @@ Microsoft 365 Business Premium には、クラス最高のクラウドベース�
 | OneDrive for Business    | ユーザーあたり 1 TB のストレージ制限    | 無制限 | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | ![365 E3 Office付属](../media/check-mark.png) | 
 | StaffHub    | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | ![365 E3 Office付属](../media/check-mark.png) | 
-| Outlook Customer Manager    | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | | 
-| **脅威の防止**        | | | 
+| MileIQ    | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | | 
+| **脅威保護**        | | | 
 | Microsoft Defender for Office 365 プラン 1 | ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    | 含まれていませんが、追加できます | 
 | **ID 管理**        | | | 
 | ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービス パスワードリセット、Azure AD 多要素認証 (MFA)、条件付きアクセス、オンプレミス ID のパスワード ライトバック|     ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    |  | 
@@ -60,7 +60,7 @@ Microsoft 365 Business Premium には、クラス最高のクラウドベース�
 | Win 7/8.1 Pro ライセンスから Windows 10 Pro へのアップグレード権限|     ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)    || 
 | **情報保護**        | | |
 |Office 365 データ損失防止|    ![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)|![365 E3 Office付属](../media/check-mark.png)|
-|Azure Information Protection Plan 1, Bitlocker の適用|![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)||
+|Azure Information Protection Plan 1, BitLocker の適用|![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)||
 |Azure Information Protection Plan 1, Sensitivity labels|![Microsoft 365 Business Premium に含まれる](../media/check-mark.png)||
 |**クライアント アクセス ライセンス (CAL 権限)**|||
 |エンタープライズ CAL スイート (Exchange、SharePoint、Skype)||![365 E3 Office付属](../media/check-mark.png)|

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365 のセキュリティに関するドキュメント
-summary: Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明し、あらゆる攻撃から企業をより適切に保護できるようにします。
+title: Microsoft Defender for Office 365 ドキュメント
+summary: メールとコラボレーション ツールの保護を強化するために、Defender for Office 365 の堅牢なセキュリティ ソリューションについて学習します。
 metadata:
-  title: Microsoft 365 のセキュリティに関するドキュメント
-  description: Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明し、あらゆる攻撃から企業をより適切に保護できるようにします
+  title: Microsoft Defender for Office 365 セキュリティ ドキュメント
+  description: メールとコラボレーション ツールの保護を強化するために、Defender for Office 365 の堅牢なセキュリティ ソリューションについて学習します。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -11,74 +11,118 @@ metadata:
   ms.collection: m365-security-compliance
   author: mjcaparas
   ms.author: macapara
-  ms.date: 09/13/2019
+  ms.date: 04/13/2021
   localization_priority: Priority
-  ms.openlocfilehash: 82fe9cabd7fc5ff3c9b9be1b11db66eb0bea7dde
-  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+  ms.openlocfilehash: a646d52b903a1ab16d2f552b456793492462c44b
+  ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "51205033"
+  ms.lasthandoff: 04/14/2021
+  ms.locfileid: "51760262"
 landingContent:
-- title: Microsoft 365 Defender
+- title: Defender for Office 365 & Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft 365 Business とは
-      url: ../defender/microsoft-365-defender.md
-    - text: Microsoft 365 セキュリティ センター
-      url: ../defender/overview-security-center.md
-- title: 無料試用版の使用を開始する
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Microsoft 365 Defender
-      url: ../defender/m365d-evaluation.md
-    - text: Microsoft 365 Defender のパイロット向けプレイブック
-      url: ../defender/m365d-pilot.md
-- title: リモート従業員を保護する
+    - text: Office 365 セキュリティの概要
+      url: overview.md
+    - text: EOP および Defender で 365 用に事前設定されたセキュリティ ポリシー Officeする
+      url: preset-security-policies.md
+- title: Defender for Office 365
   linkLists:
   - linkListType: get-started
     links:
-    - text: リモート従業員を保護する
-      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
-- title: Microsoft Defender for Identity
+    - text: 脅威から保護する
+      url: protect-against-threats.md
+    - text: EOP および Microsoft Defender の 365 用に事前設定Officeポリシー
+      url: preset-security-policies.md
+    - text: Microsoft Defender for Office 365 の新機能
+      url: whats-new-in-defender-for-office-365.md
+- title: Defender for Office 365 の評価
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Defender for Office 365 の評価
+      url: office-365-evaluation.md
+    - text: Exchange Online Protection に切り替える
+      url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+- title: 電子メール認証保護のセットアップ
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: SPF を設定して、スプーフィングを防止する
+      url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+    - text: DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
+      url: use-dkim-to-validate-outbound-email.md
+    - text: DMARC を使用してメールを検証する
+      url: use-dmarc-to-validate-email.md
+- title: Exchange Online Protection をセットアップする
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Defender for Identity とは
-      url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
-    - text: Microsoft Defender for Identity のアーキテクチャ
-      url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
-- title: Defender for Office 365
+    - text: Exchange Online Protection の概要
+      url: exchange-online-protection-overview.md
+    - text: セットアップ用の EOP および Microsoft Defender Office 365 セキュリティの推奨設定
+      url: recommended-settings-for-eop-and-office365.md
+- title: 防止
   linkLists:
   - linkListType: overview
     links:
-    - text: Defender for Office 365 とは
-      url: defender-for-office-365.md
-    - text: Defender for Office 365 サービス説明書
-      url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-- title: Defender for Endpoint
+    - text: 'セキュリティ強化のために、Office 365 テナントを構成する '
+      url: tenant-wide-setup-for-increased-security.md
+    - text: EOP および Defender の構成アナライザー (Office 365)
+      url: configuration-analyzer-for-security-policies.md
+    - text: 攻撃シミュレーション トレーニングを通して洞察を得る
+      url: attack-simulation-training-insights.md
+- title: 検出する
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Defender for Endpoint とは
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-    - text: 機能の概要
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
-- title: Azure Defender
+    - text: スタンドアロン EOP のメール フロー ルール (トランスポート ルール)
+      url: mail-flow-rules-transport-rules-0.md
+    - text: 脅威トラッカー
+      url: threat-trackers.md
+    - text: セキュリティ/コンプライアンス センターのスマート レポートと分析情報
+      url: reports-and-insights-in-security-and-compliance.md
+- title: 調査
   linkLists:
   - linkListType: overview
     links:
-    - text: Azure Defender とは
-      url: https://docs.microsoft.com/azure/security-center/security-center-intro
-    - text: サポートされている機能
-      url: https://docs.microsoft.com/azure/security-center/security-center-services
-- title: Microsoft Cloud App Security
+    - text: 脅威エクスプローラーのビューとリアルタイム検出
+      url: threat-explorer-views.md
+    - text: Microsoft Defender for microsoft Defender for Office 365
+      url: campaigns.md
+    - text: 365 で配信された悪意のあるOfficeする
+      url: investigate-malicious-email-that-was-delivered.md
+    - text: 365 レポートOffice Defender を表示する
+      url: view-reports-for-mdo.md
+- title: EOP で調査する
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Cloud App Security とは
-      url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
-    - text: Microsoft Cloud App Security の使用を開始する
-      url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
+    - text: EOP でのレポートとメッセージの追跡
+      url: reporting-and-message-trace-in-exchange-online-protection.md
+    - text: スタンドアロン EOP で管理者監査ログを表示する
+      url: view-the-admin-audit-log-eop.md
+- title: 対応
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 365 で配信された悪意のあるOffice修復する
+      url: remediate-malicious-email-delivered-office-365.md
+    - text: 侵害されたメール アカウントに対応する
+      url: responding-to-a-compromised-email-account.md
+    - text: Outlook ルールとカスタム フォームインジェクション攻撃の修復
+      url: detect-and-remediate-outlook-rules-forms-attack.md
+    - text: False Positives/False Negatives の送信
+      url: admin-submission.md
+- title: 自動化
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 365 の Defender での自動調査と応答 (AIR) のOffice方法
+      url: automated-investigation-response-office.md
+    - text: 365 用 Defender の AIR のOfficeする
+      url: office-365-air.md
+    - text: AIR で侵害されたユーザー アカウントに対処する
+      url: address-compromised-users-quickly.md

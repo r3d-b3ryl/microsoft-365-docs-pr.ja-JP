@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488147"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760088"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード 
 読み取り 6 分 
@@ -54,7 +54,7 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 #### <a name="scenario-1-using-local-group-policy"></a>*シナリオ 1: ローカル グループ ポリシーの使用*
 このシナリオでは、スクリプトをゴールデン イメージに配置する必要があります。ローカル グループ ポリシーを使用して、起動プロセスの早い段階で実行します。
 
-「非永続的な仮想デスクトップ インフラストラクチャ VDI デバイスのオンボード [」の手順を使用します](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。
+「非永続的な仮想デスクトップ インフラストラクチャ VDI デバイスのオンボード [」の手順を使用します](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。
 
 デバイスごとに 1 つのエントリの指示に従います。
 
@@ -62,32 +62,41 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 このシナリオでは、中央に位置するスクリプトを使用し、ドメイン ベースのグループ ポリシーを使用してスクリプトを実行します。 また、スクリプトをゴールデン イメージに配置し、同じ方法で実行することもできます。
 
 **セキュリティ センターWindowsDefenderATPOnboardingPackage.zipファイルをWindows Defenderする**
+
 1. VDI 構成パッケージ .zip ファイルを開きます (WindowsDefenderATPOnboardingPackage.zip)  
-    - Microsoft Defender セキュリティ センター ナビゲーションウィンドウで、[設定オンボード]  >  **を選択します**。 
-    - オペレーティング システムとして [Windows 10] を選択します。 
-    - [展開方法 **] フィールド** で、永続的でないエンドポイントの VDI オンボーディング スクリプトを選択します。 
-    - [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。 
+
+    1. Microsoft Defender セキュリティ センター ナビゲーションウィンドウで、[設定オンボード]  >  **を選択します**。 
+    1. オペレーティング システムとして [Windows 10] を選択します。 
+    1. [展開方法 **] フィールド** で、永続的でないエンドポイントの VDI オンボーディング スクリプトを選択します。 
+    1. [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。 
+
 2. .zip ファイルの内容を、デバイスがアクセスできる共有の読み取り専用の場所に展開します。 **OptionalParamsPolicy** という名前のフォルダーと **、WindowsDefenderATPOnboardingScript.cmd** とファイルが必要 **Onboard-NonPersistentMachine.ps1。**
 
 **グループ ポリシー管理コンソールを使用して、仮想マシンの起動時にスクリプトを実行する**
+
 1. グループ ポリシー管理コンソール (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。
+
 1. グループ ポリシー管理エディターで、[コンピューター構成の基本設定 \> **] コントロール** \> **パネルの設定に移動します**。 
+
 1. [スケジュールされたタスク **] を右クリックし**、[ **新規**] をクリックし、[ **イミディエイ** ト タスク] (少なくとも Windows 7) をクリックします。 
+
 1. 開く [タスク] ウィンドウで、[全般] タブ **に移動** します。[セキュリティ **オプション] で、[****ユーザーまたはグループの変更] をクリックし、「SYSTEM」** と入力します。 [名前 **の確認] をクリック** し、[OK] をクリックします。 NT AUTHORITY\SYSTEM は、タスクが実行されるユーザー アカウントとして表示されます。 
+
 1. [ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **] チェック ボックスを** オンにします。 
+
 1. [操作] タブに **移動し** 、[新規] を **クリックします**。 [アクション **] フィールドで [プログラム** の開始] が選択されている必要があります。 次の情報を入力します。 
 
-> Action = "プログラムの開始" <br>
-> Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-> 引数の追加 (省略可能) = -ExecutionPolicy Bypass -command \\ "&Path\To\Onboard-NonPersistentMachine.ps1"
+    > Action = "プログラムの開始" <br>
+    > Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
+    > 引数の追加 (省略可能) = -ExecutionPolicy Bypass -command \\ "&Path\To\Onboard-NonPersistentMachine.ps1"
 
-**[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。
+1. **[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*シナリオ 3: 管理ツールを使用したオンボーディング*
 
 管理ツールを使用してコンピューターを管理する場合は、Microsoft Endpoint Configuration Manager を使用してデバイスをオンボードできます。
 
-詳細については、「Configuration Manager を使用した [Windows 10 デバイスのオンボード」を参照してください。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
+詳細については、「Configuration Manager を使用 [したオンボード Windows 10 デバイス」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm)。 
 
 > [!WARNING]
 > 攻撃表面縮小ルールを使用する場合は、Configuration [Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)クライアントが正しく機能するために使用する WMI コマンドをブロックしますので[、"PSExec](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)コマンドおよび WMI コマンドから発生するプロセス作成をブロックする" というルールは、Microsoft Endpoint Configuration Manager による管理と互換性がないので使用できません。 

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: e3ed1d76a755ce6326ac6ae53b990136a10b564a
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: cd83d2abcc061562047aeb384856cc9ab04dcad3
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644718"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760040"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -82,6 +82,20 @@ Active Directory フェデレーション サービス (AD FS) を使用して�
 ## <a name="phase-2-azure-ad-migration"></a>フェーズ 2: Azure AD移行
 このフェーズでは、Azure Active Directory が新しいデータセンター領域に移行され、アクティブになります。 古い Azure ADエンドポイントは引き続き使用できます。
 
+### <a name="exchange-online-hybrid---modify-authserver-on-premises"></a>Exchange Online ハイブリッド - オンプレミスの AuthServer の変更
+**適用対象:** オンプレミスの Exchange サーバーでアクティブな Exchange ハイブリッド構成を使用しているすべてのお客様
+
+**適用時**: フェーズ 2 の終了後
+
+Azure の移行が完了した後、認証のために、オンプレミスの AuthServer がグローバル セキュリティ トークン サービス (STS) をAD必要があります。
+これにより、ハイブリッドオンプレミス環境を対象とする移行状態のユーザーからの Exchange 可用性要求に対する認証要求が、オンプレミス サービスにアクセスするために認証されます。 同様に、これにより、オンプレミスから 365 のグローバル サービス エンドポイントへのOffice認証が保証されます。 Azure AD移行 (フェーズ 2) が完了したら、オンプレミス Exchange (ハイブリッド) トポロジの管理者は、Office 365 グローバル サービス用の新しい認証サービス エンドポイントを追加する必要があります。 Exchange PowerShell のこのコマンドを使用して、Azure Active Directory の Azure portal にある組織のテナント `<TenantID>` ID に置き換える。
+
+```powershell
+New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantID>/metadata/json/1
+```
+
+このタスクを完了できないと、Microsoft Cloud Deutschland から Office 365 サービスに移行されたメールボックス ユーザーの情報をハイブリッド空き時間要求で提供できない場合があります。
+
 ## <a name="phase-3-subscription-transfer"></a>フェーズ 3: サブスクリプションの転送
 
 **適用対象**: Microsoft Cloud Deutschland (MCD) でホストOffice 365 テナントを持つすべてのお客様
@@ -117,35 +131,41 @@ Active Directory フェデレーション サービス (AD FS) を使用して�
 その他の考慮事項:
 
 - 組織で引き続き SharePoint 2010 ワークフローを使用している場合、2021 年 12 月 31 日以降は機能しなくなりました。 SharePoint 2013 ワークフローは引き続きサポートされます。ただし、2020 年 11 月 1 日から新しいテナントでは既定でオフになっています。 SharePoint Online サービスへの移行が完了したら、Power Automate または他のサポートされているソリューションに移動することをお勧めします。
-
+ 
 - SharePoint Online インスタンスがまだ移行されていない Microsoft Cloud Deutschland のお客様は、SharePoint Online PowerShell モジュール/Microsoft.SharePointOnline.CSOM バージョン 16.0.20616.12000 以下に滞在する必要があります。 それ以外の場合、PowerShell またはクライアント側のオブジェクト モデルを介して SharePoint Online への接続が失敗します。
+
+- このフェーズでは、SharePoint URL の背後にある IP アドレスが変更されます。 Office 365 グローバル サービスに移行すると、保持されているテナント URL (たとえば、および) のアドレスがワールドワイド Microsoft 365 URL および IP アドレス範囲 `contoso.sharepoint.de` `contoso-my.sharepoint.de` [(SharePoint Online および OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)に変更されます。
 
 
 > [!NOTE]
-> 電子情報開示を使用している場合は、電子情報開示の移行エクスペリエンスを [認識してください](ms-cloud-germany-transition-add-experience.md)。
+> 電子情報開示を使用している場合は、電子情報開示の移行エクスペリエンスを [認識してください](ms-cloud-germany-transition-add-scc.md)。
 
 ## <a name="phase-5-exchange-online"></a>フェーズ 5: Exchange Online 
+フェーズ 5 より、Exchange Online メールボックスは Microsoft Cloud Deutschland から 365 Global services Officeに移動されます。
 
-**適用対象:** Exchange Online を使用しているすべてのお客様
+365 Officeグローバル サービス領域は既定として設定され、内部負荷分散サービスはメールボックスを 365 サービス内の適切な既定の領域に再配布Officeできます。 この移行では、どちらの側 (MCD またはグローバル サービス) のユーザーも同じ組織内にいて、いずれかの URL エンドポイントを使用できます。
 
-Exchange Online ハイブリッドを使用している場合:Exchange Online ハイブリッド管理者は、この移行の一環としてハイブリッド構成ウィザード  **(HCW)** を複数回実行する必要があります。 移行手順 [5 が開始](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers)する前に Exchange **の事前作業を適用します**。 Exchange Online ハイブリッドのお客様は、「Office 365 Germany」モードで Exchange ハイブリッド構成ウィザード (HCW) の最新バージョンを実行して、Office 365 グローバル サービスへの移行用のオンプレミス構成を準備する必要があります。
+新しい地域 "ドイツ" が組織のセットアップに追加されます。 Exchange Online の構成では、移行中の組織に新しい移動先のドイツ語地域が追加されます。
 
-移行フェーズ **9** が完了すると (メッセージ センター通知が公開されている場合)、Office 365 Worldwide 設定を使用して HCW を再度実行して、オンプレミス システムを Office 365 Global サービスに接続する必要があります。
+- ユーザーとサービスを従来の MCD URL ( ) から新しいサービス `https://outlook.office.de` 365 Office URL ( ) に移行します `https://outlook.office365.com` 。
+-  新しいドイツのデータセンター地域の Exchange Online サービス (Outlook Web Access および Exchange 管理センター) は、このフェーズから利用できます。以前は利用できません。
+- ユーザーは移行中に従来の MCD URL を通じてサービスに引き続きアクセスすることができますが、移行が完了すると、従来の URL の使用を停止する必要があります。
+- ユーザーは、オンライン機能 (予定表、メールOfficeユーザー) Office のOfficeポータルを使用するに移行する必要があります。 365 サービスにまだ移行されていないサービスOffice移行するまでは機能しません。
+- 移行Outlook Web Appパブリック フォルダーエクスペリエンスは提供しない場合があります。
 
-フェーズ 5 の間にユーザーの写真を変更する場合は、「フェーズ 5 中の [Exchange Online Set-UserPhoto」を参照してください。](#exchange-online-powershell)
+フェーズ 5 の間にユーザーの写真を変更する場合は [、「Exchange Online PowerShell -](#exchange-online-powershell)フェーズ 5 のSet-UserPhotoを参照してください。
 
-| Step(s) | 説明 | 影響 |
-|:-------|:-------|:-------|
-|**管理者**: メールボックスの移動を停止する|オンボーディングメールボックスまたはオフボードメールボックスの移動を停止または削除します。Exchange オンプレミスと Exchange Online の間でメールボックスを移動しない。  | これにより、メールボックスの移動要求がエラーと一緒に失敗しない。 そうしない場合は、サービスまたはクライアントのOfficeがあります。 |
-| 新しい地域 "ドイツ" が組織のセットアップに追加されます。 | Exchange Online の構成では、移行中の組織に新しい移動先のドイツ語地域が追加されます。 | |
-| Exchange Online メールボックスは、Microsoft Cloud Deutschland から 365 グローバル Officeに移動されます。| 365 Officeグローバル サービス領域は既定として設定され、内部負荷分散サービスはメールボックスを 365 サービス内の適切な既定の領域に再配布Officeできます。 この移行では、どちらの側 (MCD またはグローバル サービス) のユーザーも同じ組織内にいて、いずれかの URL エンドポイントを使用できます。 |<ul><li>ユーザーとサービスを従来の MCD URL (outlook.office.de) から新しいサービス 365 Office URL ( ) に移行します `https://outlook.office365.com` 。</li><li>ユーザーは移行中に従来の MCD URL を通じてサービスに引き続きアクセスすることができますが、移行が完了すると、従来の URL の使用を停止する必要があります。</li><li>ユーザーは、オンライン機能 (予定表、メールOfficeユーザー) Office のOfficeポータルを使用するに移行する必要があります。 365 サービスにまだ移行されていないサービスOffice移行するまでは機能しません。 </li><li>移行Outlook Web Appパブリック フォルダーエクスペリエンスは提供しない場合があります。 </li></ul>|
-| **管理者**: 自動検出用のカスタム DNS 設定を更新する| 現在 Microsoft Cloud Deutschland を指している AutoDiscover の顧客管理 DNS 設定を更新して、Exchange Online フェーズ (フェーズ 5) の完了時に Office 365 Global エンドポイントを参照する必要があります。 <br> CNAME を指す既存の DNS エントリ autodiscover-outlook.office.de をポイントするために更新する autodiscover.outlook.com。 |  AutoDiscover 経由の可用性要求とサービス検出呼び出しは、365 サービスOffice直接ポイントします。 これらの DNS 更新を実行しないお客様は、移行が完了すると自動検出サービスの問題が発生する可能性があります。 |
-||||
+### <a name="dns-record-for-autodiscover-in-exchange-online"></a>Exchange Online での自動検出の DNS レコード
+**適用対象:** カスタム ドメインで Exchange Online を使用しているお客様
+
+現在 Microsoft Cloud Deutschland を指している AutoDiscover の顧客管理 DNS 設定を更新して、Exchange Online フェーズ (フェーズ 5) の完了時に Office 365 Global エンドポイントを参照する必要があります。 <br> CNAME を指す既存の DNS エントリは、autodiscover-outlook.office.de をポイントするために更新する **autodiscover.outlook.com。**
+
+移行フェーズ **9** の完了時にこれらの DNS 更新プログラムを実行しないお客様は、移行が完了するとサービスの問題が発生する可能性があります。
 
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **適用対象:** Exchange Online PowerShell を使用する Exchange Online 管理者
 
-移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 以下に例を示します。
+移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 次に例を示します。
 
 ```powershell
 New-PSSession 
@@ -169,8 +189,8 @@ PowerShell コマンドレット **Set-UserPhoto** を使用すると、ユー�
 - `myaccount.microsoft.com` will only work after the tenant cutover in phase 9. Links will produce "something went wrong" error messages until that time.
 -->
 - 他のOutlook Web Appの共有メールボックスにアクセスするユーザー (たとえば、MCD 環境のユーザーがグローバル環境の共有メールボックスにアクセスする場合など) は、2 回目の認証を求めるメッセージが表示されます。 ユーザーは、最初に自分のメールボックスを認証してアクセスし、次に共有メールボックスを `outlook.office.de` 開く必要があります `outlook.office365.com` 。 他のサービスでホストされている共有リソースにアクセスする場合は、2 回目の認証が必要です。
-
 - 既存の Microsoft Cloud Deutschland のお客様または移行中のユーザーの場合、ファイル > **Info >** Add Account を使用して共有メールボックスを Outlook に追加すると、予定表のアクセス許可の表示が失敗する場合があります (Outlook クライアントは Rest API の使用を試みる)。 `https://outlook.office.de/api/v2.0/Me/Calendars` 予定表のアクセス許可を表示するアカウントを追加する場合は [、「Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) で予定表を共有するためのユーザー エクスペリエンスの変更」の説明に従ってレジストリ キーを追加して、このアクションが成功するようにすることができます。 このレジストリ キーは、グループ ポリシーを使用して組織全体に展開できます。
+- Exchange Online の移行前の手順で説明したように、デバイスにレガシ プロトコル (POP3/IMAP4/SMTP) を使用しているすべてのユーザーが [、Exchange](ms-cloud-germany-transition-add-pre-work.md#exchange-online)メールボックスが新しいドイツのデータセンター地域に移動された後にクライアントのエンドポイントを変更する準備ができているか確認します。
 
 移行および Exchange Online リソースの移行後の組織の違いの詳細については、「新しいドイツのデータセンター地域の [Office 365](ms-cloud-germany-transition-experience.md)サービスへの移行中のカスタマー エクスペリエンス」の情報を確認してください。
 
@@ -185,6 +205,19 @@ Exchange Online Protection (EOP) のバック エンド機能は、新しい地�
 |:-------|:-------|:-------|
 | Exchange Online ルーティングと履歴メッセージの詳細の移行。 | Exchange Online を使用すると、外部ホストから 365 Officeルーティングできます。 外部 MX レコードは、EOP サービスにルーティングするために移行されます。 テナントの構成と履歴の詳細が移行されます。 |<ul><li>Microsoft が管理する DNS エントリは、365 ドイツ EOP Office 365 サービスOffice更新されます。</li><li>EOP のデュアル書き込みで EOP の移行を行った後、お客様は 30 日間待機する必要があります。 それ以外の場合は、データ損失が発生する可能性があります。</li></ul>|
 ||||
+
+### <a name="exchange-online-hybrid-deployments"></a>Exchange Online ハイブリッド展開
+**適用対象:** オンプレミスの Exchange サーバーでアクティブな Exchange ハイブリッド構成を使用しているすべてのお客様
+
+移行手順 [5 が](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) 開始する前に Exchange の事前作業 **が適用済みである必要があります**。 Exchange Online ハイブリッドのお客様は、「Office 365 Germany」モードで Exchange ハイブリッド構成ウィザード (HCW) の最新バージョンを実行して、Office 365 グローバル サービスへの移行用のオンプレミス構成を準備する必要があります。
+
+**管理アクション:**
+- 移行フェーズ 6 の開始と移行フェーズ 9 の完了 (メッセージ センター通知が公開されている場合) の間に、Office 365 Worldwide 設定を使用して HCW を再度実行して、オンプレミス システムを Office 365 グローバル サービスに接続する必要があります。 フェーズ 9 [移行の完了] の前にこのタスクを完了できなかった場合、オンプレミスの Exchange 展開と 365 の間でルーティングされるメールの NDRs Officeがあります。
+- オンボーディングメールボックスまたはオフボードメールボックスの移動を停止または削除します。Exchange オンプレミスと Exchange Online の間でメールボックスを移動しない。  これにより、メールボックスの移動要求がエラーと一緒に失敗しない。 そうしない場合は、サービスまたはクライアントのOfficeがあります。
+- HCW Send-Connectors作成され、Exchange Online を対象とするコネクタ以外に作成された追加のサーバーは、HCW の実行が実行された直後にこのフェーズで更新する必要があります。それ以外の場合は動作を停止します。 これらの送信コネクタの TLS ドメインを更新する必要があります。 <br> TLS ドメインを更新するには、次の PowerShell コマンドを使用して、Exchange Serverします。
+```powershell
+Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
+```
 
 ## <a name="phase-7-skype-for-business-online"></a>フェーズ 7: Skype for Business Online
 
@@ -236,6 +269,27 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 \*\* (i) Microsoft Power BI をお持ちのお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。
 
+## <a name="phase-9-office-apps"></a>フェーズ 9: Office アプリ
+
+**適用対象:** デスクトップ アプリケーションをOfficeしているすべてのお客様 (Word、Excel、PowerPoint、Outlook、...)
+
+Office "ドイツ" に移行する 365 テナントでは、テナント移行がフェーズ 9 に達した後、すべてのユーザーが Office 365 からサインアウトし、すべての Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントに戻る必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンを取得できます。
+
+最新のアプリケーションを使用して、最適なユーザー エクスペリエンスOfficeできます。 企業は、月次エンタープライズ チャネルの使用を検討する必要があります。
+
+モバイル デバイスの手順の事前 [作業が完了済みである必要](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) があります。
+
+| Step(s) | 説明 | 影響 |
+|:-------|:-------|:-------|
+| クライアントはOffice切りOffice、Azure ADは、365 サービスを指すテナント スコープをOfficeします。 | この構成変更により、Office 365 サービス エンドポイントを更新し、Officeポイントできます。 | <ul><li>すべての Office _アプリを_ 閉じてからサインイン (またはクライアントの再起動とユーザーのサインインを強制する) をユーザーに通知して、Office クライアントが変更を受け取るのを有効にします。 </li><li>カットオーバーから 72時間以内に、Office アプリの再アクティブ化を求める Office バナーが表示される可能性があるユーザーとヘルプ デスク スタッフに通知します。 </li><li>個人用Office上のすべてのアプリケーションを閉じ、ユーザーはサインアウトしてからもう一度サインインする必要があります。 [黄色のライセンス認証] バーでサインインし、365 サービスOffice再アクティブ化します。</li><li>共有コンピューターでは、個人用のコンピューターに似たアクションが必要であり、特別な手順は必要とします。 </li><li>モバイル デバイスでは、ユーザーはアプリからサインアウトして閉じてから、もう一度サインインする必要があります。</li></ul>|
+||||
+
+## <a name="phase-9-line-of-business-apps"></a>フェーズ 9: Line-of-business アプリ
+
+**適用対象:** 365 から 365 に接続されている一Office
+
+Line-of-business アプリがある場合は、業務行アプリの手順の事前作業 [が完了済みである必要](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps) があります。
+
 ## <a name="phase-9--10-azure-ad-finalization"></a>フェーズ 9 & 10: Azure ADファイナライゼーション
 
 **適用対象:** すべてのお客様
@@ -247,23 +301,6 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 | ユーザー エンドポイントの更新 | すべてのユーザーが適切な Microsoft ワールドワイド エンドポイントを使用してサービスにアクセスする |移行が完了した 30 日後、Microsoft Cloud Deutschland エンドポイントは要求の尊重を停止します。クライアントまたはアプリケーション のトラフィックは失敗します。  |
 | Azure ADアプリケーション エンドポイントを更新する | アプリケーションの認証、Azure Active Directory (Azure AD) Graph、MS Graph エンドポイントを Microsoft Worldwide サービスのエンドポイントに更新する必要があります。 | 移行が完了した 30 日後、Microsoft Cloud Deutschland エンドポイントは要求の尊重を停止します。クライアントまたはアプリケーション のトラフィックは失敗します。 |
 ||||
-
-## <a name="office-apps"></a>Office アプリ
-
-**適用対象:** デスクトップ アプリケーションをOfficeしているすべてのお客様 (Word、Excel、PowerPoint、Outlook、...)
-
-Office "ドイツ" に移行する 365 テナントでは、テナント移行がフェーズ 9 に達した後、すべてのユーザーが Office 365 からサインアウトし、すべての Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントに戻る必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンを取得できます。
-
-モバイル デバイスの手順の事前 [作業が完了済みである必要](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) があります。
-
-| Step(s) | 説明 | 影響 |
-|:-------|:-------|:-------|
-| クライアントはOffice切りOffice、Azure ADは、365 サービスを指すテナント スコープをOfficeします。 | この構成変更により、Office 365 サービス エンドポイントを更新し、Officeポイントできます。 | <ul><li>すべての Office _アプリを_ 閉じてからサインイン (またはクライアントの再起動とユーザーのサインインを強制する) をユーザーに通知して、Office クライアントが変更を受け取るのを有効にします。 </li><li>カットオーバーから 72時間以内に、Office アプリの再アクティブ化を求める Office バナーが表示される可能性があるユーザーとヘルプ デスク スタッフに通知します。 </li><li>個人用Office上のすべてのアプリケーションを閉じ、ユーザーはサインアウトしてからもう一度サインインする必要があります。 [黄色のライセンス認証] バーでサインインし、365 サービスOffice再アクティブ化します。</li><li>共有コンピューターでは、個人用のコンピューターに似たアクションが必要であり、特別な手順は必要とします。 </li><li>モバイル デバイスでは、ユーザーはアプリからサインアウトして閉じてから、もう一度サインインする必要があります。</li></ul>|
-||||
-
-## <a name="phase-9-line-of-business-apps"></a>フェーズ 9: Line-of-business アプリ
-
-Line-of-business アプリがある場合は、業務行アプリの手順の事前作業 [が完了済みである必要](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps) があります。
 
 ## <a name="post-migration"></a>移行後
 

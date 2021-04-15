@@ -20,18 +20,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c993977e0f052a7dc2e7827ff5bdefacee19ac2d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: db458015d8434843ec64f3c2c00d640d4c4d8ff2
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064644"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51760178"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>アカウントを Microsoft Defender for Endpoint から Microsoft 365 セキュリティ センターにリダイレクトする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
@@ -56,7 +54,7 @@ SIEM と拡張検出および応答 (XDR) による脅威保護に対する Micr
 リンクとルーティングの詳細については、以下の表を参照してください。
 ## <a name="siem-api-routing"></a>SIEM API ルーティング
 
-|**プロパティ**  |**リダイレクトが OFF の場合の宛先**  |**リダイレクトが ON の場合の宛先** | 
+|**Property**  |**リダイレクトが OFF の場合の宛先**  |**リダイレクトが ON の場合の宛先** | 
 |---------|---------|---------|
 | LinkToWDATP | [アラート] ページ (securitycenter.windows.com | [アラート] ページ (security.microsoft.com  |
 | IncidentLinkToWDATP | [インシデント] ページ (securitycenter.windows.com  | [インシデント] ページ (security.microsoft.com  |
@@ -65,7 +63,7 @@ SIEM と拡張検出および応答 (XDR) による脅威保護に対する Micr
 
 ## <a name="email-alert-notifications"></a>電子メールアラート通知
 
-|**プロパティ**  |**リダイレクトが OFF の場合の宛先**  |**リダイレクトが ON の場合の宛先** |
+|**Property**  |**リダイレクトが OFF の場合の宛先**  |**リダイレクトが ON の場合の宛先** |
 |---------|---------|---------|
 | [アラート] ページ  | [アラート] ページ (securitycenter.windows.com  | [アラート] ページ (security.microsoft.com  |
 | インシデント ページ  |[インシデント] ページ (securitycenter.windows.com  | [インシデント] ページ (security.microsoft.com  

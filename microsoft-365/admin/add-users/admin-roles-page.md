@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 8df1b8b46b4b2ec4f8f686f6422851b5f186f2ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3c55619dc1193d7c41f8a52fc027f03f13f3c9ad
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903738"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759956"
 ---
 # <a name="get-started-with-the-roles-page"></a>[役割] ページの使用を開始する
 
@@ -33,7 +33,7 @@ ms.locfileid: "50903738"
 ![管理者の役割を示す図](../../media/roles-main-page.png)
 
 > [!TIP]
-> 役割の詳細な説明をお探しですか ? [「Azure Active Directory の管理者役割のアクセス許可」](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)および「管理者ロール[について」を参照してください](/office365/admin/add-users/about-admin-roles)。
+> 役割の詳細な説明をお探しですか ? [「Azure Active Directory の管理者役割のアクセス許可」](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)および「管理者ロール[について」を参照してください](/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="about-the-admin-roles-page"></a>[管理者の役割] ページについて
 
@@ -56,23 +56,23 @@ ms.locfileid: "50903738"
 
 ### <a name="exchange-admin"></a>Exchange 管理者
 
-ユーザーのメール メールボックス、Microsoft 365 グループ、および Exchange Online を表示および管理する必要があるユーザーに Exchange 管理者の役割を割り当てる。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 [詳細情報](/office365/admin/add-users/about-exchange-online-admin-role)
+ユーザーのメール メールボックス、Microsoft 365 グループ、および Exchange Online を表示および管理する必要があるユーザーに Exchange 管理者の役割を割り当てる。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 [詳細情報](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>グローバル管理者
 
-Microsoft オンライン サービス全体のほとんどの管理機能とデータへのグローバル アクセスが必要なユーザーにグローバル管理者の役割を割り当てる。 グローバルなアクセスを多くのユーザーに許可することはセキュリティ上のリスクであるため、2 〜 4 人のグローバル管理者を配置することをお勧めします。 すべてのユーザーのパスワードをリセットし、ドメインを追加および管理できるのは、グローバル管理者のみです。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 Microsoft オンライン サービスにサインアップしたユーザーが自動的にグローバル管理者になります。詳細 [については、以下を参照してください。](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Microsoft オンライン サービス全体のほとんどの管理機能とデータへのグローバル アクセスが必要なユーザーにグローバル管理者の役割を割り当てる。 グローバルなアクセスを多くのユーザーに許可することはセキュリティ上のリスクであるため、2 〜 4 人のグローバル管理者を配置することをお勧めします。 すべてのユーザーのパスワードをリセットし、ドメインを追加および管理できるのは、グローバル管理者のみです。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 Microsoft オンライン サービスにサインアップしたユーザーが自動的にグローバル管理者になります。詳細 [については、以下を参照してください。](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
-### <a name="global-reader"></a>グローバルリーダー
+### <a name="global-reader"></a>グローバル閲覧者
 
-グローバル管理者が表示できるすべての管理センターで管理機能と設定を表示する必要があるユーザーに、グローバル リーダー管理者の役割を割り当てる。 グローバル リーダー管理者の役割は、設定を編集できない。 [詳細情報](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+グローバル管理者が表示できるすべての管理センターで管理機能と設定を表示する必要があるユーザーに、グローバル リーダー管理者の役割を割り当てる。 グローバル リーダー管理者の役割は、設定を編集できない。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="helpdesk-admin"></a>ヘルプデスク管理者
 
-パスワードをリセットするユーザーにヘルプデスク管理者の役割を割り当て、セキュリティの問題に対してユーザーにサインアウトを強制します。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 ヘルプデスク管理者は、ディレクトリ リーダー、ゲスト招待者、ヘルプデスク管理者、メッセージ センター リーダー、レポート リーダーなど、管理者以外のユーザーとこれらの役割を割り当てられたユーザーにのみ役立ちます。 [詳細情報](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+パスワードをリセットするユーザーにヘルプデスク管理者の役割を割り当て、セキュリティの問題に対してユーザーにサインアウトを強制します。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 ヘルプデスク管理者は、ディレクトリ リーダー、ゲスト招待者、ヘルプデスク管理者、メッセージ センター リーダー、レポート リーダーなど、管理者以外のユーザーとこれらの役割を割り当てられたユーザーにのみ役立ちます。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="service-admin"></a>サービス管理者
 
-Azure、Microsoft 365、および 365 サービスのサービス要求を作成する必要があるユーザーにサービス管理者Office割り当てる。 [詳細情報](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Azure、Microsoft 365、および 365 サービスのサービス要求を作成する必要があるユーザーにサービス管理者Office割り当てる。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>SharePoint 管理者
 
@@ -84,9 +84,7 @@ Teams 管理者の役割を、Skype 管理センターの Teams にアクセス�
 
 ### <a name="user-admin"></a>ユーザー管理者
 
-ユーザーパスワードのリセットにアクセスして管理するユーザーにユーザー管理者の役割を割り当て、ユーザーとグループを管理します。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 [詳細情報](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
-
-::: moniker range="o365-worldwide"
+ユーザーパスワードのリセットにアクセスして管理するユーザーにユーザー管理者の役割を割り当て、ユーザーとグループを管理します。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ## <a name="compare-roles"></a>ロールの比較
 
@@ -97,8 +95,6 @@ Teams 管理者の役割を、Skype 管理センターの Teams にアクセス�
 - 最大 3 つの役割を選択し、[役割の比較 **] を** 選択して、各役割が持つアクセス許可を確認します。
 
 ![管理者ロールの比較を示す図](../../media/compare-roles-list.png)
-
-::: moniker-end
 
 ## <a name="related-topics"></a>関連項目
 

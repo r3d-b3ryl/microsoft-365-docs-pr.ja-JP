@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 784e73467efc114f05ebdfca9bc4034e2d75f6c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185709"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760418"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -32,7 +32,7 @@ ms.locfileid: "51185709"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ライブ応答により、セキュリティ運用チームはリモート シェル接続を使用してデバイス (コンピューターとも呼ばれます) に瞬時にアクセスできます。 これにより、詳細な調査作業を行い、迅速に特定された脅威をリアルタイムに含める即時対応アクションを実行できます。 
 
@@ -144,11 +144,13 @@ ms.locfileid: "51185709"
 |`connections` | すべてのアクティブな接続を表示します。 |
 |`dir` | ディレクトリ内のファイルとサブディレクトリの一覧を表示します。 |
 |`download <file_path> &` | バックグラウンドでファイルをダウンロードします。 |
-ドライバー |  デバイスにインストールされているすべてのドライバーを表示します。 |
-|`fg <command ID>` | ファイルのダウンロードをフォアグラウンドに返します。 |
+|`drivers` |  デバイスにインストールされているすべてのドライバーを表示します。 |
+|`fg <command ID>` | 指定したジョブをフォアグラウンドのフォアグラウンドに配置し、現在のジョブに設定します。 <br> メモ: fg は、PID ではなくジョブから使用できる "コマンド ID" を受け取る |
 |`fileinfo` | ファイルに関する情報を取得します。 |
 |`findfile` | デバイス上の特定の名前でファイルを検索します。 |
+|`getfile <file_path>` | ファイルをダウンロードします。 |
 |`help` | ライブ応答コマンドのヘルプ情報を提供します。 |
+|`jobs` | 現在実行中のジョブ、その ID、状態を表示します。 |
 |`persistence` | デバイス上のすべての既知の永続化メソッドを表示します。 |
 |`processes` | デバイスで実行しているすべてのプロセスを表示します。 |
 |`registry` | レジストリ値を表示します。 |
@@ -162,7 +164,6 @@ ms.locfileid: "51185709"
 | コマンド | 説明 |
 |---|---|
 | `analyze` | さまざまな犯罪エンジンを使用してエンティティを分析し、評決に達します。 |
-| `getfile` | デバイスからファイルを取得します。 <br> 注: このコマンドには、前提条件のコマンドがあります。 このコマンドを組み `-auto` 合わせて使用すると `getfile` 、前提条件コマンドを自動的に実行できます。 |
 | `run` | デバイス上のライブラリから PowerShell スクリプトを実行します。 |
 | `library` | ライブ応答ライブラリにアップロードされたファイルを一覧表示します。 |
 | `putfile` | ライブラリからデバイスにファイルを置く。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。 |
@@ -303,10 +304,9 @@ processes > output.txt
 
 ## <a name="limitations"></a>制限事項
 
-- ライブ応答セッションは、一度に 10 回のライブ応答セッションに制限されます。
-- 大規模なコマンド実行はサポートされていません。
-- ライブ応答セッションの非アクティブタイムアウト値は 5 分です。 
-- ユーザーは一度に 1 つのセッションのみを開始できます。
+- ライブ応答セッションは、一度に 25 のライブ応答セッションに制限されます。
+- ライブ応答セッションの非アクティブタイムアウト値は 30 分です。 
+- ユーザーは最大 10 の同時セッションを開始できます。
 - デバイスは、一度に 1 つのセッションでのみ使用できます。
 - 次のファイル サイズの制限が適用されます。
    - `getfile` limit: 3 GB

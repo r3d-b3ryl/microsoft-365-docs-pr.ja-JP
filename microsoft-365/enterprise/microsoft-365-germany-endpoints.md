@@ -20,18 +20,22 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: この記事では、ドイツで 365 を使用しているお客様Officeエンドポイントについて説明します。
 hideEdit: true
-ms.openlocfilehash: 8d3e8bfe2a52027b412aff87e063f2458ca47f74
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923992"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759896"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany のエンドポイント
 
  *適用対象: Office 365 Admin*
 
 Office 365 にはインターネットへの接続が必要です。 以下のエンドポイントは、ドイツの **365** プランのみを使用しているOfficeに到達できる必要があります。
+
+> [!NOTE]
+> ドイツの新しい Microsoft 365 データセンター地域に移行しているお客様の場合、エンドポイントは変更されます。
+> 詳細については [、「Microsoft Cloud Deutschland](ms-cloud-germany-transition.md)から新しいドイツのデータセンター地域Office 365 サービスへの移行」を参照してください。
   
  **Office 365 エンドポイント:** [(GCC を含む) 世界](urls-and-ip-address-ranges.md)  | [21Vianet が運営する Office 365](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 ドイツ* |  [Office 365 米国政府機関向け DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 米国政府 GCC 高](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
