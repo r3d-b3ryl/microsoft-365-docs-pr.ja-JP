@@ -22,107 +22,127 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a6c7e7e920d18d9d8bf29d71d317008ea0c37bbf
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 5fe594dca935b7377a385b487f1464c3f0a91151
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592098"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760328"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a><span data-ttu-id="87100-104">Microsoft 365 Defender のインシデントを調査する</span><span class="sxs-lookup"><span data-stu-id="87100-104">Investigate incidents in Microsoft 365 Defender</span></span>
+# <a name="investigate-incidents-in-microsoft-365-defender"></a><span data-ttu-id="4e519-104">Microsoft 365 Defender のインシデントを調査する</span><span class="sxs-lookup"><span data-stu-id="4e519-104">Investigate incidents in Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="87100-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="87100-105">**Applies to:**</span></span>
+<span data-ttu-id="4e519-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="4e519-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="87100-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="87100-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="4e519-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="4e519-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="87100-107">Microsoft 365 Defender は、デバイス、ユーザー、およびメールボックス全体からのすべての関連するアラート、資産、調査、および証拠を集計し、攻撃の幅広い全体を総合的に調査します。</span><span class="sxs-lookup"><span data-stu-id="87100-107">Microsoft 365 Defender aggregates all related alerts, assets, investigations and evidence from across your devices, users, and mailboxes to give you a comprehensive look into the entire breadth of an attack.</span></span>
+<span data-ttu-id="4e519-107">Microsoft 365 Defender は、デバイス、ユーザー、メールボックス全体からのすべての関連するアラート、資産、調査、証拠をインシデントに集約し、攻撃の幅広い全体を総合的に調査します。</span><span class="sxs-lookup"><span data-stu-id="4e519-107">Microsoft 365 Defender aggregates all related alerts, assets, investigations and evidence from across your devices, users, and mailboxes into an incident to give you a comprehensive look into the entire breadth of an attack.</span></span>
 
-<span data-ttu-id="87100-108">効果的な修復計画を考案できるようにするために、ネットワークに影響するアラートを調査し、その意味を理解し、インシデントに関連する証拠を照合します。</span><span class="sxs-lookup"><span data-stu-id="87100-108">Investigate the alerts that affect your network, understand what they mean, and collate evidence associated with the incidents so that you can devise an effective remediation plan.</span></span>
+<span data-ttu-id="4e519-108">インシデント内では、ネットワークに影響を与えるアラートを調査し、その意味を理解し、効果的な修復計画を策定できるよう証拠を照合します。</span><span class="sxs-lookup"><span data-stu-id="4e519-108">Within an incident, you investigate the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.</span></span>
 
-## <a name="investigate-an-incident"></a><span data-ttu-id="87100-109">インシデントの調査</span><span class="sxs-lookup"><span data-stu-id="87100-109">Investigate an incident</span></span>
+## <a name="initial-investigation"></a><span data-ttu-id="4e519-109">初期調査</span><span class="sxs-lookup"><span data-stu-id="4e519-109">Initial investigation</span></span>
 
-1. <span data-ttu-id="87100-110">インシデント キューからインシデントを選択します。</span><span class="sxs-lookup"><span data-stu-id="87100-110">Select an incident from the incident queue.</span></span> <BR> <span data-ttu-id="87100-111">サイド パネルが開き、ステータス、重大度、カテゴリ、影響を受け取ったエンティティなどの重要な情報のプレビューが表示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-111">A side panel opens and gives a preview of important information such as status, severity, categories, and the impacted entities.</span></span>
+<span data-ttu-id="4e519-110">詳細を確認する前に、インシデントのプロパティと概要を確認してください。</span><span class="sxs-lookup"><span data-stu-id="4e519-110">Before diving into the details, take a look at the properties and summary of the incident.</span></span>
 
-    ![インシデント サイドパネルの画像](../../media/incident-side-panel.png)
+<span data-ttu-id="4e519-111">まず、チェック マーク列からインシデントを選択します。</span><span class="sxs-lookup"><span data-stu-id="4e519-111">You can start by selecting the incident from the check mark column.</span></span> <span data-ttu-id="4e519-112">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="4e519-112">Here's an example.</span></span>
 
-2. <span data-ttu-id="87100-113">[**インシデント ページを開く**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="87100-113">Select **Open incident page**.</span></span> <BR> <span data-ttu-id="87100-114">インシデント ページが開き、インシデントの詳細、コメント、アクション、タブ (概要、アラート、デバイス、ユーザー、調査、証拠) が表示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-114">This opens the incident page where you'll find more information incident details, comments, and actions, tabs (overview, alerts, devices, users, investigations, evidence).</span></span>
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="チェック マーク列からインシデントを選択する例":::
 
-3. <span data-ttu-id="87100-115">インシデントに関連するアラート、デバイス、ユーザー、その他のエンティティを確認します。</span><span class="sxs-lookup"><span data-stu-id="87100-115">Review the alerts, devices, users, other entities involved in the incident.</span></span>
+<span data-ttu-id="4e519-114">その場合、概要ウィンドウが開き、インシデントに関する重要な情報 (重大度、割り当てられているユーザー、インシデントの[MITRE ATT&CK &trade; ](https://attack.mitre.org/)カテゴリなど) が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-114">When you do, a summary pane opens with key information about the incident, such as severity, who it is assigned to, and the [MITRE ATT&CK&trade;](https://attack.mitre.org/) categories for the incident.</span></span> <span data-ttu-id="4e519-115">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="4e519-115">Here's an example.</span></span>
 
-## <a name="incident-overview"></a><span data-ttu-id="87100-116">インシデントの概要</span><span class="sxs-lookup"><span data-stu-id="87100-116">Incident overview</span></span>
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="インシデントの概要ウィンドウの例":::
 
-<span data-ttu-id="87100-117">概要ページでは、インシデントに関する主な情報がスナップショットで表示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-117">The overview page gives you a snapshot glance into the top things to notice about the incident.</span></span>
+<span data-ttu-id="4e519-117">ここから、[インシデントページを開 **く] を選択できます**。</span><span class="sxs-lookup"><span data-stu-id="4e519-117">From here, you can select **Open incident page**.</span></span> <span data-ttu-id="4e519-118">これにより、インシデントのメイン ページが開き、アラート、デバイス、ユーザー、調査、および証拠の概要情報とタブが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-118">This opens the main page for the incident where you'll find more summary information and tabs for alerts, devices, users, investigations, and evidence.</span></span>
 
-![インシデントの概要ページの画像](../../media/incidents-overview.png)
+<span data-ttu-id="4e519-119">インシデント キューからインシデント名を選択して、インシデントのメイン ページを開く方法も指定できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-119">You can also open the main page for an incident by selecting the incident name from the incident queue.</span></span>
 
-<span data-ttu-id="87100-119">攻撃カテゴリを使用すると、キル チェーンに対する攻撃の進行状況を視覚的および数値的に確認できます。</span><span class="sxs-lookup"><span data-stu-id="87100-119">The attack categories give you a visual and numeric view of how advanced the attack has progressed against the kill chain.</span></span> <span data-ttu-id="87100-120">他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender は[MITRE ATT &trade; ](https://attack.mitre.org/)と CK フレームワーク&揃っています。</span><span class="sxs-lookup"><span data-stu-id="87100-120">As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework.</span></span>
+## <a name="summary"></a><span data-ttu-id="4e519-120">概要</span><span class="sxs-lookup"><span data-stu-id="4e519-120">Summary</span></span>
 
-<span data-ttu-id="87100-121">範囲セクションでは、このインシデントの一部である最も影響を受ける資産の一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-121">The scope section gives you a list of top impacted assets that are part of this incident.</span></span> <span data-ttu-id="87100-122">この資産に関する特定の情報 (リスク レベル、調査の優先順位、資産のタグ付けなど) がある場合は、その情報もこのセクションに表示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-122">If there is specific information regarding this asset, such as risk level, investigation priority as well as any tagging on the assets this will also surface in this section.</span></span>
+<span data-ttu-id="4e519-121">[ **概要] ページ** では、インシデントに関する一番上の情報をスナップショットで確認できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-121">The **Summary** page gives you a snapshot glance at the top things to notice about the incident.</span></span>
 
-<span data-ttu-id="87100-123">アラートのタイムラインでは、アラートの発生順に時系列でプレビューすることができ、これらのアラートがインシデントに関連付けられた理由も表示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-123">The alerts timeline provides a sneak peek into the chronological order in which the alerts occurred, as well as the reasons that these alerts linked to this incident.</span></span>
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 セキュリティ センターのインシデントの概要ページの例":::
 
-<span data-ttu-id="87100-124">最後に、証拠セクションでは、どれぐらいの数の成果物がインシデントに含まれるかや修復状況の概要が示されます。そのため、対応が必要かどうかをすぐに特定できます。</span><span class="sxs-lookup"><span data-stu-id="87100-124">And last - the evidence section provides a summary of how many different artifacts were included in the incident and their remediation status, so you can immediately identify if any action is needed on your end.</span></span>
+<span data-ttu-id="4e519-123">攻撃カテゴリを使用すると、キル チェーンに対する攻撃の進行状況を視覚的および数値的に確認できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-123">The attack categories give you a visual and numeric view of how advanced the attack has progressed against the kill chain.</span></span> <span data-ttu-id="4e519-124">他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender は[MITRE ATT &trade; ](https://attack.mitre.org/)と CK フレームワーク&揃っています。</span><span class="sxs-lookup"><span data-stu-id="4e519-124">As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework.</span></span>
 
-<span data-ttu-id="87100-125">この概要は、注意が必要なインシデントの特徴の洞察を提供することで、インシデントの初回トリアージに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="87100-125">This overview can assist in the initial triage of the incident by providing insight to the top characteristics of the incident that you should be aware of.</span></span>
+<span data-ttu-id="4e519-125">範囲セクションでは、このインシデントの一部である最も影響を受ける資産の一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-125">The scope section gives you a list of top impacted assets that are part of this incident.</span></span> <span data-ttu-id="4e519-126">この資産に関する特定の情報 (リスク レベル、調査の優先順位、資産のタグ付けなど) がある場合は、その情報もこのセクションに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-126">If there is specific information regarding this asset, such as risk level, investigation priority as well as any tagging on the assets this will also surface in this section.</span></span>
 
-## <a name="alerts"></a><span data-ttu-id="87100-126">アラート</span><span class="sxs-lookup"><span data-stu-id="87100-126">Alerts</span></span>
+<span data-ttu-id="4e519-127">アラートのタイムラインでは、アラートが発生した時系列の順序と、これらのアラートがこのインシデントにリンクされている理由を確認できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-127">The alerts timeline provides a sneak peek into the chronological order in which the alerts occurred, as well as the reasons that these alerts are linked to this incident.</span></span>
 
-<span data-ttu-id="87100-127">インシデントに関連するすべてのアラートと、重大度、アラートに関連したエンティティ、アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365)、および関連付けされた理由など、インシデントに関連するその他の情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="87100-127">You can view all the alerts related to the incident and other information about them such as severity, entities that were involved in the alert, the source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365) and the reason they were linked together.</span></span>
+<span data-ttu-id="4e519-128">最後に、証拠セクションでは、どれぐらいの数の成果物がインシデントに含まれるかや修復状況の概要が示されます。そのため、対応が必要かどうかをすぐに特定できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-128">And last - the evidence section provides a summary of how many different artifacts were included in the incident and their remediation status, so you can immediately identify if any action is needed on your end.</span></span>
 
-![インシデント アラート ページの画像](../../media/incident-alerts.png)
+<span data-ttu-id="4e519-129">この概要は、インシデントの最初のトリアージを支援するために、注意する必要があるインシデントの最高の特性に関する洞察を提供します。</span><span class="sxs-lookup"><span data-stu-id="4e519-129">This overview can assist in the initial triage of the incident by providing insight into the top characteristics of the incident that you should be aware of.</span></span>
 
-<span data-ttu-id="87100-129">既定では、アラートは発生順に並べ替えられています。これにより、発生した攻撃を時系列で確認できます。</span><span class="sxs-lookup"><span data-stu-id="87100-129">By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time.</span></span> <span data-ttu-id="87100-130">各アラートをクリックすると、関連するアラート ページに移動し、そのアラートの詳細な調査を実行できます。</span><span class="sxs-lookup"><span data-stu-id="87100-130">Clicking on each alert will lead you to the relevant alert page where you can conduct an in-depth investigation of that alert.</span></span> <span data-ttu-id="87100-131">アラート の調査でアラート ページと統合アラート キューを使用する方法 [について説明します。](investigate-alerts.md)</span><span class="sxs-lookup"><span data-stu-id="87100-131">Learn how to use alert pages and the unified alert queue in [Investigate alerts](investigate-alerts.md)</span></span>
+## <a name="alerts"></a><span data-ttu-id="4e519-130">アラート</span><span class="sxs-lookup"><span data-stu-id="4e519-130">Alerts</span></span>
 
-## <a name="devices"></a><span data-ttu-id="87100-132">デバイス</span><span class="sxs-lookup"><span data-stu-id="87100-132">Devices</span></span>
+<span data-ttu-id="4e519-131">[アラート **] タブ** で、インシデントに関連するアラートや、次のようなアラートに関するその他の情報のアラート キューを表示できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-131">On the **Alert** tab, you can view the alert queue for alerts related to the incident and other information about them such as:</span></span>
 
-<span data-ttu-id="87100-133">[デバイス] タブには、インシデントに関連するアラートが表示されているすべてのデバイスが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-133">The devices tab lists all the devices where alerts related to the incident are seen.</span></span>
+- <span data-ttu-id="4e519-132">重大度。</span><span class="sxs-lookup"><span data-stu-id="4e519-132">Severity.</span></span>
+- <span data-ttu-id="4e519-133">アラートに関与したエンティティ。</span><span class="sxs-lookup"><span data-stu-id="4e519-133">The entities that were involved in the alert.</span></span>
+- <span data-ttu-id="4e519-134">アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365)。</span><span class="sxs-lookup"><span data-stu-id="4e519-134">The source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365).</span></span>
+- <span data-ttu-id="4e519-135">リンクされた理由。</span><span class="sxs-lookup"><span data-stu-id="4e519-135">The reason they were linked together.</span></span>
 
-<span data-ttu-id="87100-134">攻撃が行われたコンピューターの名前をクリックすると、そのコンピューターのページが表示されます。調査を簡単にするために、トリガーされたアラートや関連イベントが表示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-134">Clicking the name of the machine where the attack was conducted navigates you to its Machine page where you can see alerts that were triggered on it and related events provided to ease investigation.</span></span>
+<span data-ttu-id="4e519-136">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="4e519-136">Here's an example.</span></span>
 
-![インシデントの [コンピューター] タブの画像](../../media/incident-machines.png)
+:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="インシデントのアラート ページの例":::
 
-<span data-ttu-id="87100-136">[タイムライン] タブを選択すると、コンピューターのタイムラインをスクロールして、コンピューター上で監視されているすべてのイベントおよび動作、発生したアラートを日付順に表示できます。</span><span class="sxs-lookup"><span data-stu-id="87100-136">Selecting the Timeline tab enables you to scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.</span></span>
+<span data-ttu-id="4e519-138">既定では、アラートは時系列的に順序付けされ、インシデントが時間の間にどのように再生されたのか確認できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-138">By default, the alerts are ordered chronologically to allow you to see how the incident played out over time.</span></span> <span data-ttu-id="4e519-139">各アラートを選択すると、アラートのメイン ページに移動し、アラートの詳細な調査を実行できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-139">Selecting each alert takes you to the alert's main page where you can conduct an in-depth investigation of that alert.</span></span> 
+
+<span data-ttu-id="4e519-140">アラートの調査でアラート キューとアラート ページを使用する方法 [について説明します。](investigate-alerts.md)</span><span class="sxs-lookup"><span data-stu-id="4e519-140">Learn how to use the alert queue and alert pages in [Investigate alerts](investigate-alerts.md)</span></span>
+
+## <a name="devices"></a><span data-ttu-id="4e519-141">デバイス</span><span class="sxs-lookup"><span data-stu-id="4e519-141">Devices</span></span>
+
+<span data-ttu-id="4e519-142">[ **デバイス]** タブには、インシデントに関連付けたすべてのデバイスが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-142">The **Devices** tab lists all the devices related to the incident.</span></span> <span data-ttu-id="4e519-143">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="4e519-143">Here's an example.</span></span>
+
+:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="インシデントのデバイス ページの例":::
+
+<span data-ttu-id="4e519-145">デバイスのチェック マークを選択すると、デバイス、ディレクトリ データ、アクティブなアラート、ログオンしているユーザーの詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-145">You can select the check mark for a device to see details of the device, directory data, active alerts, and logged on users.</span></span> <span data-ttu-id="4e519-146">デバイスの名前を選択すると、Microsoft Defender for Endpoints デバイス インベントリにデバイスの詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-146">Select the name of the device to see device details in the Microsoft Defender for Endpoints device inventory.</span></span>
+
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Microsoft Defender for Endpoints のデバイス ページの例":::
+
+<span data-ttu-id="4e519-148">デバイス ページから、すべての通知、タイムライン、セキュリティに関する推奨事項など、デバイスに関する追加情報を収集できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-148">From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations.</span></span> <span data-ttu-id="4e519-149">たとえば、[タイムライン]タブから、コンピューターのタイムラインをスクロールして、発生したアラートと一緒に、コンピューター上で観察されたイベントと動作を時系列順に表示できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-149">For example, from the **Timeline** tab, you can scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="87100-137">デバイス ページでオンデマンド スキャンを実行できます。</span><span class="sxs-lookup"><span data-stu-id="87100-137">You can do on-demand scans on a device page.</span></span> <span data-ttu-id="87100-138">Microsoft 365 セキュリティ センターで、[デバイス インベントリ] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="87100-138">In the Microsoft 365 security center, choose **Device inventory**.</span></span> <span data-ttu-id="87100-139">通知があるデバイスを選択し、ウイルス対策スキャンを実行します。</span><span class="sxs-lookup"><span data-stu-id="87100-139">Select a device that has alerts, and then run an antivirus scan.</span></span> <span data-ttu-id="87100-140">ウイルス対策スキャンなどのアクションは追跡され、[デバイス インベントリ] ページ **に表示** されます。</span><span class="sxs-lookup"><span data-stu-id="87100-140">Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page.</span></span> <span data-ttu-id="87100-141">詳細については、「デバイスで [Microsoft Defender ウイルス対策スキャンを実行する」を参照してください](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。</span><span class="sxs-lookup"><span data-stu-id="87100-141">To learn more, see [Run Microsoft Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).</span></span>
+> <span data-ttu-id="4e519-150">デバイス ページでオンデマンド スキャンを実行できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-150">You can do on-demand scans on a device page.</span></span> <span data-ttu-id="4e519-151">Microsoft 365 セキュリティ センターで、[エンドポイント] > **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="4e519-151">In the Microsoft 365 security center, choose **Endpoints > Device inventory**.</span></span> <span data-ttu-id="4e519-152">通知があるデバイスを選択し、ウイルス対策スキャンを実行します。</span><span class="sxs-lookup"><span data-stu-id="4e519-152">Select a device that has alerts, and then run an antivirus scan.</span></span> <span data-ttu-id="4e519-153">ウイルス対策スキャンなどのアクションは追跡され、[デバイス インベントリ] ページ **に表示** されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-153">Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page.</span></span> <span data-ttu-id="4e519-154">詳細については、「デバイスで [Microsoft Defender ウイルス対策スキャンを実行する」を参照してください](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。</span><span class="sxs-lookup"><span data-stu-id="4e519-154">To learn more, see [Run Microsoft Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).</span></span>
 
+## <a name="users"></a><span data-ttu-id="4e519-155">ユーザー</span><span class="sxs-lookup"><span data-stu-id="4e519-155">Users</span></span>
 
-## <a name="users"></a><span data-ttu-id="87100-142">ユーザー</span><span class="sxs-lookup"><span data-stu-id="87100-142">Users</span></span>
+<span data-ttu-id="4e519-156">[ **ユーザー]** タブには、インシデントの一部または関連付けとして識別されたすべてのユーザーが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-156">The **Users** tab lists all the users that have been identified to be part of or related to the incident.</span></span> <span data-ttu-id="4e519-157">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="4e519-157">Here's an example.</span></span>
 
-<span data-ttu-id="87100-143">特定のインシデントに関連すると識別されたユーザーを表示します。</span><span class="sxs-lookup"><span data-stu-id="87100-143">See users that have been identified to be part of, or related to a given incident.</span></span>
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例":::
 
-<span data-ttu-id="87100-144">ユーザー名をクリックすると、ユーザーの Cloud App Security ページに移動します。ここで詳細な調査を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="87100-144">Clicking the username navigates you to the user's Cloud App Security page where further investigation can be conducted.</span></span>
+<span data-ttu-id="4e519-159">ユーザーのチェック マークを選択すると、ユーザー アカウントの脅威、露出、連絡先情報の詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-159">You can select the check mark for a user to see details of the user account threat, exposure, and contact information.</span></span> <span data-ttu-id="4e519-160">ユーザー名を選択すると、追加のユーザー アカウントの詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-160">Select the user name to see additional user account details.</span></span>
 
-![インシデントの [ユーザー] タブの画像](../../media/incident-users.png)
+## <a name="mailboxes"></a><span data-ttu-id="4e519-161">メールボックス</span><span class="sxs-lookup"><span data-stu-id="4e519-161">Mailboxes</span></span>
 
-## <a name="mailboxes"></a><span data-ttu-id="87100-146">メールボックス</span><span class="sxs-lookup"><span data-stu-id="87100-146">Mailboxes</span></span>
+<span data-ttu-id="4e519-162">[ **メールボックス] タブ** には、インシデントの一部または関連付けとして識別されたすべてのメールボックスが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-162">The **Mailboxes** tab lists all the mailboxes that have been identified to be part of or related to the incident.</span></span> <span data-ttu-id="4e519-163">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="4e519-163">Here's an example.</span></span>
 
-<span data-ttu-id="87100-147">インシデントに関連すると識別されたメールボックスを調査します。</span><span class="sxs-lookup"><span data-stu-id="87100-147">Investigate mailboxes that's been identified to be part of, or related to an incident.</span></span> <span data-ttu-id="87100-148">さらに調査作業を行うには、メール関連のアラートを選択すると、Microsoft Defender for Office 365 が開き、修復アクションを実行できます。</span><span class="sxs-lookup"><span data-stu-id="87100-148">To do further investigative work, selecting the mail-related alert will open Microsoft Defender for Office 365 where you can take remediation actions.</span></span>
+:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="インシデントのメールボックス ページの例":::
 
-![インシデントの [メールボックス] タブの画像](../../media/incident-mailboxes.png)
+<span data-ttu-id="4e519-165">メールボックスのチェック マークを選択すると、アクティブなアラートの一覧を表示できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-165">You can select the check mark for a mailbox to see a list of active alerts.</span></span> <span data-ttu-id="4e519-166">メールボックス名を選択すると、Microsoft Defender for microsoft Defender for microsoft Defender 365 の [エクスプローラー] ページに追加Office表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-166">Select the mailbox name to see additional mailbox details on the Explorer page for Microsoft Defender for Office 365.</span></span>
 
-## <a name="investigations"></a><span data-ttu-id="87100-150">調査</span><span class="sxs-lookup"><span data-stu-id="87100-150">Investigations</span></span>
+## <a name="investigations"></a><span data-ttu-id="4e519-167">調査</span><span class="sxs-lookup"><span data-stu-id="4e519-167">Investigations</span></span>
 
-<span data-ttu-id="87100-151">[ **調査] を** 選択して、このインシデントのアラートによってトリガーされる自動調査を表示します。</span><span class="sxs-lookup"><span data-stu-id="87100-151">Select **Investigations** to see all the automated investigations triggered by alerts in this incident.</span></span> <span data-ttu-id="87100-152">調査は、Microsoft Defender for Endpoint および Defender for Office 365 で実行するように自動調査を構成した方法に応じて、修復アクションを実行するか、アナリストによるアクションの承認を待機します。</span><span class="sxs-lookup"><span data-stu-id="87100-152">The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.</span></span>
+<span data-ttu-id="4e519-168">[ **調査] タブ** には、このインシデントのアラートによってトリガーされる自動調査の一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-168">The **Investigations** tab lists all the automated investigations triggered by alerts in this incident.</span></span> <span data-ttu-id="4e519-169">調査は、Microsoft Defender for Endpoint および Defender for Office 365 で実行するように自動調査を構成した方法に応じて、修復アクションを実行するか、アナリストによるアクションの承認を待機します。</span><span class="sxs-lookup"><span data-stu-id="4e519-169">The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.</span></span>
 
-![インシデントの [調査] タブの画像](../../media/incident-investigations.png)
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="インシデントの [調査] ページの例":::
 
-<span data-ttu-id="87100-154">調査を選択して [調査の詳細] ページに移動すると、調査と修復状況に関する詳細情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-154">Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status.</span></span> <span data-ttu-id="87100-155">調査の一環として承認待ちアクションがある場合は、[保留中のアクション] タブに表示されます。インシデント修復の一環としてアクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="87100-155">If there are any actions pending for approval as part of the investigation, they will appear in the Pending actions tab. Take action as part of incident remediation.</span></span>
+<span data-ttu-id="4e519-171">調査を選択して [調査の詳細] ページに移動すると、調査と修復状況に関する詳細情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-171">Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status.</span></span> <span data-ttu-id="4e519-172">調査の一環として承認待ちアクションがある場合は、[保留中のアクション] タブに表示されます。インシデント修復の一環としてアクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="4e519-172">If there are any actions pending for approval as part of the investigation, they will appear in the Pending actions tab. Take action as part of incident remediation.</span></span>
 
-## <a name="evidence"></a><span data-ttu-id="87100-156">証拠</span><span class="sxs-lookup"><span data-stu-id="87100-156">Evidence</span></span>
+## <a name="evidence-and-response"></a><span data-ttu-id="4e519-173">証拠と対応</span><span class="sxs-lookup"><span data-stu-id="4e519-173">Evidence and Response</span></span>
 
-<span data-ttu-id="87100-157">Microsoft 365 Defender は、インシデントがサポートしているすべてのイベントと不審なエンティティを自動的にアラートで調査し、自動応答と重要なファイル、プロセス、サービス、電子メールなどの情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="87100-157">Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with autoresponse and information about the important files, processes, services, emails, and more.</span></span> <span data-ttu-id="87100-158">これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。</span><span class="sxs-lookup"><span data-stu-id="87100-158">This helps quickly detect and block potential threats in the incident.</span></span>
+<span data-ttu-id="4e519-174">[ **証拠と応答] タブ** には、インシデント内のアラートでサポートされているイベントと疑わしいエンティティが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4e519-174">The **Evidence and Response** tab shows all the supported events and suspicious entities in the alerts in the incident.</span></span> <span data-ttu-id="4e519-175">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="4e519-175">Here's an example.</span></span>
 
-![インシデントの [証拠] タブの画像](../../media/incident-evidence.png)
+:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="インシデントの証拠と応答ページの例":::
 
-<span data-ttu-id="87100-160">分析された各エンティティには、判定 (悪質、不審、クリーン)、および修復状況が示されます。</span><span class="sxs-lookup"><span data-stu-id="87100-160">Each of the analyzed entities will be marked with a verdict (Malicious, Suspicious, Clean) as well as a remediation status.</span></span> <span data-ttu-id="87100-161">これにより、インシデント全体の修復状況、および修復の次の手順について理解するのをサポートします。</span><span class="sxs-lookup"><span data-stu-id="87100-161">This assists you in understanding the remediation status of the entire incident and what are the next steps that can be taken to further remediate.</span></span>
+<span data-ttu-id="4e519-177">Microsoft 365 Defender は、インシデントがサポートしているすべてのイベントと、アラート内の不審なエンティティを自動的に調査し、重要な電子メール、ファイル、プロセス、サービス、IP アドレスなどの情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4e519-177">Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more.</span></span> <span data-ttu-id="4e519-178">これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。</span><span class="sxs-lookup"><span data-stu-id="4e519-178">This helps you quickly detect and block potential threats in the incident.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="87100-162">関連項目</span><span class="sxs-lookup"><span data-stu-id="87100-162">Related topics</span></span>
+<span data-ttu-id="4e519-179">分析された各エンティティには、評決 (悪意のある、疑わしい、クリーン) と修復状態がマークされます。</span><span class="sxs-lookup"><span data-stu-id="4e519-179">Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status.</span></span> <span data-ttu-id="4e519-180">これにより、インシデント全体の修復状態と、次に実行できる手順を理解できます。</span><span class="sxs-lookup"><span data-stu-id="4e519-180">This helps you understand the remediation status of the entire incident and what next steps can be taken.</span></span>
 
-- [<span data-ttu-id="87100-163">インシデントの概要</span><span class="sxs-lookup"><span data-stu-id="87100-163">Incidents overview</span></span>](incidents-overview.md)
-- [<span data-ttu-id="87100-164">インシデントの優先度設定</span><span class="sxs-lookup"><span data-stu-id="87100-164">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="87100-165">インシデントの管理</span><span class="sxs-lookup"><span data-stu-id="87100-165">Manage incidents</span></span>](manage-incidents.md)
+## <a name="related-topics"></a><span data-ttu-id="4e519-181">関連項目</span><span class="sxs-lookup"><span data-stu-id="4e519-181">Related topics</span></span>
+
+- [<span data-ttu-id="4e519-182">インシデントの概要</span><span class="sxs-lookup"><span data-stu-id="4e519-182">Incidents overview</span></span>](incidents-overview.md)
+- [<span data-ttu-id="4e519-183">インシデントの優先度設定</span><span class="sxs-lookup"><span data-stu-id="4e519-183">Prioritize incidents</span></span>](incident-queue.md)
+- [<span data-ttu-id="4e519-184">インシデントの管理</span><span class="sxs-lookup"><span data-stu-id="4e519-184">Manage incidents</span></span>](manage-incidents.md)
 
