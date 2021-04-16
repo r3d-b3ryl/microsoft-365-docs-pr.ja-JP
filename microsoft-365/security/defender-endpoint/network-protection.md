@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768916"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861157"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -42,7 +42,7 @@ ms.locfileid: "51768916"
 ネットワーク保護を有効にする方法の詳細については、「ネットワーク保護を有効 [にする」を参照してください](enable-network-protection.md)。 グループ ポリシー、PowerShell、MDM CSP を使用して、ネットワーク内のネットワーク保護を有効にして管理します。
 
 > [!TIP]
-> ネットワーク保護の仕組みについては、「Microsoft Defender ATP testground サイト」demo.wd.microsoft.com [を参照](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) してください。
+> ネットワーク保護のしくみについては、「Microsoft Defender for [](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) Endpoint testground」の demo.wd.microsoft.com を参照してください。
 
 ネットワーク保護は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)で最適に機能します。これにより、アラート調査シナリオの一環として、エクスプロイト保護イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
 
@@ -82,7 +82,7 @@ Windows イベント ログを確認して、ネットワーク保護が悪意�
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. **[OK]** を選択します。
+2. [**OK**] を選択します。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するためにフィルター処理するカスタム ビューを作成します。
 

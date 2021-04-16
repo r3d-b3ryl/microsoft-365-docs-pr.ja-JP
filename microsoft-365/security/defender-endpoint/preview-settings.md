@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP でプレビュー エクスペリエンスを有効にする
+title: Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
 description: Microsoft Defender for Endpoint のプレビュー エクスペリエンスをオンにし、今後の機能を試します。
 keywords: 高度な機能、設定、ブロック ファイル
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e492ce155fd39532d9fa04ebc09b3029931d1c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 9e8b5a2cf26c3ba99b528695c3296f7a83d5bc22
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186139"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861085"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
 
@@ -32,7 +32,7 @@ ms.locfileid: "51186139"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 

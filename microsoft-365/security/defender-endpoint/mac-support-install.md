@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac のインストールに関する問題のトラブルシューティング
-description: Microsoft Defender ATP for Mac のインストールに関する問題のトラブルシューティングを行います。
+title: Microsoft Defender for Endpoint for Mac のインストールに関する問題のトラブルシューティング
+description: Microsoft Defender for Endpoint for Mac のインストールに関する問題のトラブルシューティングを行います。
 keywords: microsoft, defender, atp, mac, install
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 754f389f37bce3be1c5a636f1911b5d0fb3fd29c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d2ad3160c9f36a27dc98f44365433de5f8b26bb2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689619"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861433"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のインストールの問題のトラブルシューティング
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689619"
 
 **適用対象:**
 
-- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

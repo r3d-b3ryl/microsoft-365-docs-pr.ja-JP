@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP でライブ応答を使用してデバイス上のエンティティを調査する
+title: Microsoft Defender for Endpoint のライブ応答を使用してデバイス上のエンティティを調査する
 description: 安全なリモート シェル接続を使用してデバイスにアクセスし、調査作業を行い、デバイスでリアルタイムで即座に応答アクションを実行します。
 keywords: リモート、シェル、接続、ライブ、応答、リアルタイム、コマンド、スクリプト、修復、ハント、エクスポート、ログ、ドロップ、ダウンロード、ファイル、
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760418"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860799"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -47,7 +47,7 @@ ms.locfileid: "51760418"
 - PowerShell スクリプトまたは実行可能ファイルをライブラリにアップロードし、テナント レベルからデバイスで実行します。
 - 修復アクションを実行または元に戻します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 デバイスでセッションを開始する前に、次の要件を満たしていることを確認してください。
 

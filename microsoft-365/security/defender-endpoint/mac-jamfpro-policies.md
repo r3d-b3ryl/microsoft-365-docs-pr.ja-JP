@@ -1,6 +1,6 @@
 ---
-title: Jamf Pro で Microsoft Defender ATP for macOS ポリシーをセットアップする
-description: Jamf Pro で Microsoft Defender ATP for macOS ポリシーをセットアップする方法について説明します。
+title: Jamf Pro で macOS 用 Microsoft Defender for Endpoint ポリシーをセットアップする
+description: Jamf Pro で Microsoft Defender Endpoint for macOS ポリシーをセットアップする方法について説明します。
 keywords: ポリシー, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765133"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862273"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf Pro の macOS ポリシーで Microsoft Defender for Endpoint をセットアップする
 
@@ -125,7 +125,7 @@ ms.locfileid: "51765133"
 
     ![ターゲットのイメージ](images/jamfpro-targets.png) 
 
-11. **[保存]** を選択します。
+11. [**保存**] を選択します。
 
     ![展開ターゲット コンピューターのイメージ](images/jamfpro-deployment-target.png)
 
@@ -318,7 +318,7 @@ ms.locfileid: "51765133"
     >![構成設定 intune ファイルのアップロードのイメージ](images/8e69f867664668796a3b2904896f0436.png)
 
 
-11. **[保存]** を選択します。 
+11. [**保存**] を選択します。 
 
     ![構成設定のイメージ 画像を保存する](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -360,7 +360,7 @@ ms.locfileid: "51765133"
         - **配布方法**: 自動的にインストール *する (既定)*
         - **レベル**: コンピューター レベル *(既定)*
 
-        ![構成プロファイル設定 mdatpmdav のイメージ](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![新しい macOS 構成プロファイル画面のイメージ](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - [タブ **通知]** をクリック **し、[追加**] をクリックし、次の値を入力します。
         - **バンドル ID**: `com.microsoft.wdav.tray`
@@ -460,7 +460,7 @@ ms.locfileid: "51765133"
 
     ![構成設定 uplimg のイメージ](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. **[保存]** を選択します。
+11. [**保存**] を選択します。
 
     ![構成設定 saveimg のイメージ](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -561,7 +561,7 @@ ms.locfileid: "51765133"
 
 15. **[追加]** を選択します。 
 
-16. **[保存]** を選択します。 
+16. [**保存**] を選択します。 
     
 17. [**完了**] を選択します。
     
@@ -616,7 +616,7 @@ ms.locfileid: "51765133"
 
     ![構成設定のイメージにイメージを追加する](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. **[保存]** を選択します。
+9. [**保存**] を選択します。
 
     ![構成設定の saveimag のイメージ](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -671,7 +671,7 @@ ms.locfileid: "51765133"
 
    ![構成設定 addima のイメージ](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. **[保存]** を選択します。
+9. [**保存**] を選択します。
 
    ![構成設定 sysext スコープのイメージ](images/sysext-scope.png)
 
@@ -721,7 +721,7 @@ ms.locfileid: "51765133"
 
     ![構成設定 adim のイメージ](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. **[保存]** を選択します。
+7. [**保存**] を選択します。
 
     ![構成設定のイメージ savimg netextscop](images/netext-scope.png)
 
@@ -780,7 +780,7 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
     
      ![[構成設定の制限] タブのイメージ](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-8. **[保存]** を選択します。 パッケージは Jamf Pro にアップロードされます。 
+8. [**保存**] を選択します。 パッケージは Jamf Pro にアップロードされます。 
 
    ![構成設定パック upl jamf pro のイメージ](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -808,7 +808,7 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
     ![構成設定の再チェック インのイメージ](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
   
-13. **[保存]** を選択します。 
+13. [**保存**] を選択します。 
  
 14. [パッケージ **] を選択>構成します**。
  
@@ -818,7 +818,7 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
 
     ![構成設定 MDATP と MDA の追加のイメージ](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. **[保存]** を選択します。
+16. [**保存**] を選択します。
 
     ![構成設定のイメージsavimg](images/9d6e5386e652e00715ff348af72671c6.png)
 

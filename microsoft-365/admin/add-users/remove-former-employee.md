@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'このチェックリストに従って、Microsoft 365 から従業員を削除し、データをセキュリティで保護します。 '
-ms.openlocfilehash: d67ac65f4f3e6600b942b4f7d56826da35735b5c
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 50355a20e0d0e8ff782deebd9be65fdabf875bb2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470871"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860775"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>元従業員を削除または削除する
 
@@ -143,7 +143,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 2. ブロックする従業員の名前を選択し、[メール] タブ **を選択** します。
 3. [メール **転送] で**、[メール転送 **の管理] を選択します**。
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。 [転送 **先住所]** ボックスに、メールを取得する現在の従業員のメール アドレスを入力します。
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 6. 元従業員のアカウントを削除しないよう注意してください。
 
 ::: moniker-end
@@ -158,7 +158,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。
   
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 
 6. 元従業員のアカウントを削除しないよう注意してください。
 
@@ -174,7 +174,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。
   
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 
 6. 元従業員のアカウントを削除しないよう注意してください。
 
@@ -188,7 +188,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
 3. ユーザーを選択し、[モバイル デバイス] **で、[** 詳細の表示] **を選択します**。
 4. [モバイル デバイス **の詳細]** ページの [モバイル デバイス] で、モバイル デバイスを選択し、[データ ワイプ デバイスのワイプ] を選択し、[ブロック] ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) を **選択します**。
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
    > [!TIP]
    > オンプレミスの Blackberry Enterprise Service からユーザーを削除または無効にしてください。 さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。 ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。
 
@@ -275,16 +275,16 @@ Microsoft 365 サブスクリプションの一部としてメールがある場
 2. ライセンスを削除するサブスクリプションを選択します。
 3. 詳細ページで、[ライセンスの削除] **を選択します**。
 4. [ライセンス **の削除]** ウィンドウの [新しい数量] の [ライセンスの合計] **ボックスに、** このサブスクリプションに必要なライセンスの総数を入力します。 たとえば、25 のライセンスを持ち、そのうちの 1 つを削除する場合は、「24」と入力します。
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 2. [ **ライセンスの追加と削除]** を選択してライセンスを削除し、他のユーザーを雇うまでライセンスの支払いを行わない。
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 2. [ **ライセンスの追加と削除]** を選択してライセンスを削除し、他のユーザーを雇うまでライセンスの支払いを行わない。
 ::: moniker-end
 
@@ -344,7 +344,7 @@ Office 365 からユーザーのライセンスを削除すると、ユーザー
   
 Active Directory でユーザー アカウントを削除および復元する方法については、「ユーザー アカウントの削除 [」を参照してください](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))。
   
-Azure Active Directory を使用している場合は [、Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell コマンドレットを参照してください。
+Azure Active Directory を使用している場合は [、Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell コマンドレットを参照してください。
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>従業員のメール セッションの終了について知っておく必要があること
 

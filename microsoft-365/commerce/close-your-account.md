@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Microsoft でアカウントを閉じる方法について説明します。
-ms.openlocfilehash: 0ee0a649a9adb93ecdbb1cd9dbedbc04dfb46ba0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579748"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860549"
 ---
 # <a name="close-your-account"></a>アカウントの使用を停止する
 
@@ -42,7 +42,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 
 ユーザーを削除するには、「ユーザー管理管理者 <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">: 1 人または複数のユーザーを削除する」を参照してください</a>。
 
-<a href="https://go.microsoft.com/fwlink/?linkid=842230">Remove-MsolUser PowerShell コマンドレット</a>を使用して、ユーザーを一括で削除することもできます。
+<a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">Remove-MsolUser PowerShell コマンドレット</a>を使用して、ユーザーを一括で削除することもできます。
 
 組織で Microsoft Azure Active Directory (Azure Active Directory )と同期する Active Directory を使用している場合は、代AD Active Directory からユーザー アカウントを削除します。 手順については <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">、「Azure Active Directory のユーザーを一括削除する」を参照してください</a>。
 

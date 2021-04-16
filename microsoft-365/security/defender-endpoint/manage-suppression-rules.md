@@ -1,6 +1,6 @@
 ---
 title: エンドポイント抑制ルールの Microsoft Defender の管理
-description: 抑制ルールを使用して、ポータルにアラートが表示されるのを防ぐ必要がある場合があります。 Microsoft Defender ATP で抑制ルールを管理する方法について説明します。
+description: 抑制ルールを使用して、ポータルにアラートが表示されるのを防ぐ必要がある場合があります。 Microsoft Defender for Endpoint で抑制ルールを管理する方法について説明します。
 keywords: 抑制、ルール、ルール名、スコープ、アクション、アラートの管理、オン、オフ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d2ff8fa1f07f82c3cc719f49f50ee25937aea243
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f1549512a02fe3af71d32c6b33c69cc705de99a8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187567"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862129"
 ---
 # <a name="manage-suppression-rules"></a>抑制ルールの管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "51187567"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ポータルへのアラートの表示を抑制する必要がある場合があります。 組織内の既知のツールやプロセスなど、無実と知られている特定のアラートに対して抑制ルールを作成できます。 アラートを抑制する方法の詳細については、「アラートを抑制する」 [を参照してください](manage-alerts.md)。

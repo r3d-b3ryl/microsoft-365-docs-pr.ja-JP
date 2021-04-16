@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP サービスのオフボード デバイス
-description: オンボード Windows 10 デバイス、サーバー、Microsoft Defender ATP サービスからの Windows 以外のデバイス
+title: Microsoft Defender for Endpoint サービスのオフボード デバイス
+description: Microsoft Defender for Endpoint サービスのオンボード Windows 10 デバイス、サーバー、Windows 以外のデバイス
 keywords: offboarding, エンドポイントオフボード用 Microsoft Defender, windows atp offboarding
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a95ff5214ea9f696622ea184ece1c5aa9fb3db2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18c708904e0fbfceafa2aeb387ffa9ce26e83c87
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186967"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861133"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスのオフボード デバイス
 
@@ -38,7 +38,7 @@ ms.locfileid: "51186967"
 - Windows Server 2012 R2
 - Windows Server 2016
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-offboarddevices-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-offboarddevices-abovefoldlink)
 
 使用する展開方法に応じて、対応する手順に従います。
 

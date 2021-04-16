@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint へのインターネット アクセスのないオンボード デバイス
 ms.reviewer: ''
-description: Microsoft Defender ATP センサーにセンサー データを送信できるよう、インターネット にアクセスしないオンボード デバイス
+description: センサー データを Microsoft Defender for Endpoint センサーに送信できるよう、インターネット にアクセスしないオンボード デバイス
 keywords: オンボード、サーバー、VM、オンプレミス、oms ゲートウェイ、ログ分析、Azure ログ分析、mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b31705a4e6dc8cdd480c8b43c2154a2d6ddacddd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186943"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861349"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint へのインターネット アクセスのないオンボード デバイス
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186943"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 インターネット にアクセスせずにデバイスをオンボードするには、次の一般的な手順を実行する必要があります。
@@ -48,7 +48,7 @@ ms.locfileid: "51186943"
 > - オフラインでの CTL の更新の詳細については、「CTL ファイルをダウンロードするファイルまたは Web サーバーを構成する [」を参照してください](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。
 
 オンボーディング方法の詳細については、次の記事を参照してください。
-- [以前のバージョンの Windows のオンボード](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
+- [以前のバージョンの Windows をオンボードする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
 - [Microsoft Defender for Endpoint サービスへのオンボード サーバー](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [デバイス プロキシとインターネット接続の設定を構成する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 

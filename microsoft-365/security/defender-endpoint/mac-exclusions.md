@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac の除外を構成および検証する
-description: Microsoft Defender ATP for Mac の除外を指定して検証します。 除外は、ファイル、フォルダー、およびプロセスに対して設定できます。
+title: Microsoft Defender for Endpoint for Mac の除外を構成および検証する
+description: Microsoft Defender for Endpoint for Mac の除外を指定して検証します。 除外は、ファイル、フォルダー、およびプロセスに対して設定できます。
 keywords: microsoft、Defender、atp、mac、除外、スキャン、ウイルス対策
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2281fccfb97d38dbdc218799b087290433deff30
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 7b5254e9b4289219a08730d736c8f9738e7a65f0
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764159"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861589"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender の除外を構成および検証する
 

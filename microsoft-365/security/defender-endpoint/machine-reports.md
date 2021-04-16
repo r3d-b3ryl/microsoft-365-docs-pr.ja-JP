@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP のデバイスの正常性とコンプライアンス レポート
+title: Microsoft Defender for Endpoint のデバイスの正常性とコンプライアンス レポート
 description: デバイスの正常性とコンプライアンス レポートを使用して、デバイスの正常性状態の検出、ウイルス対策の状態、OS プラットフォーム、および Windows 10 バージョンを追跡する
 keywords: 正常性状態、ウイルス対策、OS プラットフォーム、Windows 10 バージョン、バージョン、正常性、コンプライアンス、状態
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5229ba068672035c2dce3afee1919f9c2d7f9e44
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35100a4b8bdaee23c427816450e948ced9ed3191
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186451"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860293"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のデバイスの正常性とコンプライアンス レポート
 
@@ -33,13 +33,13 @@ ms.locfileid: "51186451"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 デバイスの状態レポートは、組織内のデバイスに関する高レベルの情報を提供します。 このレポートには、センサーの正常性状態、ウイルス対策の状態、OS プラットフォーム、および Windows 10 バージョンを示す傾向情報が含まれています。
 
 ダッシュボードは、デバイス レポートのイメージという 2 ![ つのセクションに構成されています。](images/device-reports.png)
  
-セクション | 説明
+Section | 説明
 :---|:---
 1 | デバイスの傾向
 2 | デバイスの概要 (現在の日)

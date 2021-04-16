@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac の基本設定を設定する
-description: エンタープライズ組織で Microsoft Defender ATP for Mac を構成します。
+title: Microsoft Defender for Endpoint for Mac の基本設定を設定する
+description: エンタープライズ組織で Microsoft Defender for Endpoint for Mac を構成します。
 keywords: microsoft、defender、atp、mac、management、preferences、enterprise、intune、jamf、macos、catalina、mojave、high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 951c51c767ba09ebc6056481b4fac45da09c5671
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688551"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860925"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -32,7 +32,7 @@ ms.locfileid: "51688551"
 
 **適用対象:**
 
-- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
 >この記事では、エンタープライズ組織の macOS で Microsoft Defender for Endpoint の基本設定を設定する方法について説明します。 コマンド ライン インターフェイスを使用して macOS 上の Microsoft Defender for Endpoint を構成するには、「Resources」を [参照してください](mac-resources.md#configuring-from-the-command-line)。
@@ -829,7 +829,7 @@ JAMF コンソールで、[**コンピューター** 構成プロファイル] �
 
 5. 構成プロファイルを開き、ファイルを `com.microsoft.wdav.xml` アップロードします。 (このファイルは手順 3 で作成されました。
 
-6. **[OK]** を選択します。
+6. [**OK**] を選択します。
 
 7. [割 **り当**  >  **ての管理] を選択します**。 [含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。
 

@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Microsoft 365 プランを変更する前に、Outlook、OneDrive、Yammer SharePoint コンテンツをバックアップします。
-ms.openlocfilehash: d29d4e739a9328a63a491696ba26bee5b1947f0a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ecfd17d779cbb39ff786b192f72621bc94677776
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924062"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860525"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランを切り替える前にデータをバックアップする
 
@@ -66,6 +66,6 @@ https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 
 組織  _\<orgDomain\>_ の URL はここで指定します。
   
-たとえば、組織のドメインが contoso.onmicrosoft.com の場合、チーム サイトへの直接 URL は https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx のようになります。
+たとえば、組織のドメインが contoso.onmicrosoft.com の場合、チーム サイトへの直接 URL は `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx` のようになります。
   
 ユーザーは SharePoint チーム サイトからローカル コンピューターまたは別の場所に、いつでも SharePoint Online ドキュメントをダウンロードすることもできます。

@@ -1,8 +1,8 @@
 ---
 title: エンドポイントの検出および応答機能の概要
 ms.reviewer: ''
-description: Microsoft Defender ATP のエンドポイント検出および応答機能について説明します。
-keywords: ''
+description: Microsoft Defender for Endpoint のエンドポイント検出および応答機能について説明します。
+keywords: エンドポイント、エンドポイントの検出と応答、応答、検出、サイバーセキュリティ、保護のための microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a5a665fac1883016ac222197ba8322f78e2558f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 138a6afde9e8c601fd41811928580644b85bf2e2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186175"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861721"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>エンドポイントの検出と応答の概要
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186175"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint endpoint detection and response capabilitis provide advanced attack detections are near real-time and actionable. セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。
 

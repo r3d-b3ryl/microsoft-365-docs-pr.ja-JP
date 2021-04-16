@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP インシデントの管理
+title: エンドポイント インシデントの Microsoft Defender の管理
 description: インシデントの割り当て、状態の更新、または分類の設定によってインシデントを管理します。
 keywords: インシデント、管理、割り当て、状態、分類、真のアラート、誤ったアラート
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8b5e806d09f08a12c090a1055f2c165f25b7ea1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: abb538972b48f8790286c0a546eecdd69fc83fb5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185814"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862141"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>エンドポイント インシデントの Microsoft Defender の管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "51185814"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 インシデントの管理は、すべてのサイバーセキュリティ操作の重要な部分です。 インシデントを管理するには、[インシデント] キューまたは [インシデント管理] ウィンドウからインシデント **を選択します**。 
 
@@ -82,5 +82,5 @@ ms.locfileid: "51185814"
 
 ## <a name="related-topics"></a>関連項目
 - [インシデント キュー](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [インシデント キューの表示と整理](view-incidents-queue.md)
+- [インシデント キューを表示および整理する](view-incidents-queue.md)
 - [インシデントの調査](investigate-incidents.md)

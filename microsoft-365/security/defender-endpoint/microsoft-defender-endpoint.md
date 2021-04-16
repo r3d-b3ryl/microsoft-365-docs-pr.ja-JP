@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint は、高度な永続的な脅威から防御するのに役立つエンタープライズ エンドポイント セキュリティ プラットフォームです。
-keywords: Microsoft Defender for Endpoint の概要、Microsoft Defender Advanced Threat Protection の概要、Microsoft Defender ATP の概要、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、マシンの動作センサー、クラウド セキュリティ、分析、脅威インテリジェンス、攻撃表面の縮小、次世代保護、自動調査と修復、Microsoft 脅威の専門家、セキュリティ スコア、高度な狩猟、Microsoft 脅威保護、サイバー脅威の検出
+keywords: Microsoft Defender for Endpoint の概要、Microsoft Defender Advanced Threat Protection の概要、Microsoft Defender for Endpoint の概要、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、マシンの動作センサー、クラウド セキュリティ、分析、脅威インテリジェンス、攻撃表面の縮小、次世代保護、自動調査と修復、Microsoft 脅威専門家、セキュリティ スコア、高度な検出、Microsoft 脅威保護、サイバー脅威の検出
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c5d02a4d76ae7e031ad9f3af0db282cc4cb45ed
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187210"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861829"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "51187210"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > Windows 10 Enterprise Edition の機能の詳細については [、「Windows 10 Enterprise Edition」を参照してください](https://www.microsoft.com/WindowsForBusiness/buy)。
 
@@ -84,7 +84,7 @@ Defender for Endpoint では、Windows 10 に組み込むテクノロジと Micr
 
 <a name="asr"></a>
 
-**[攻撃面の縮小](overview-attack-surface-reduction.md)**<br>
+**[攻撃面の減少](overview-attack-surface-reduction.md)**<br>
 攻撃表面の縮小機能のセットは、スタック内の防御の最初の行を提供します。 構成設定が適切に設定され、悪用の軽減手法が適用されていることを確認することで、この機能は攻撃や悪用に抵抗します。 この一連の機能には、[](network-protection.md)悪意のある[](web-protection-overview.md)IP アドレス、ドメイン、URL へのアクセスを規制するネットワーク保護と Web 保護も含まれます。 
 
 <a name="ngp"></a>
@@ -94,7 +94,7 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 
 <a name="edr"></a>
 
-**[エンドポイントの検出および応答](overview-endpoint-detection-response.md)**<br>
+**[エンドポイントでの検出と対応](overview-endpoint-detection-response.md)**<br>
 エンドポイントの検出および対応機能は、最初の 2 つのセキュリティの柱を越えた高度な脅威を検出、調査、および対応するために用意されています。 [高度な検索](advanced-hunting-overview.md) では、クエリ ベースの脅威検出ツールを使用して、侵害を積極的に検出し、カスタム検出を作成できます。
 
 <a name="ai"></a>
@@ -104,7 +104,7 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 
 <a name="ss"></a>
 
-**[デバイスの Microsoft Secure Score](tvm-microsoft-secure-score-devices.md)**<br>
+**[デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)**<br>
 
 Defender for Endpoint には、エンタープライズ ネットワークのセキュリティ状態を動的に評価し、保護されていないシステムを特定し、組織の全体的なセキュリティを向上させるために推奨されるアクションを実行するのに役立つ Microsoft Secure Score for Devices が含まれています。
 

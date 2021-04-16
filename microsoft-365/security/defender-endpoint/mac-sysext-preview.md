@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac - システム拡張機能 (プレビュー)
-description: この記事では、Microsoft Defender ATP for Mac のシステム拡張機能の機能を試す手順について説明します。 この機能は現在パブリック プレビュー中です。
+title: Microsoft Defender for Endpoint for Mac - システム拡張機能 (プレビュー)
+description: この記事では、Microsoft Defender for Endpoint for Mac のシステム拡張機能の機能を試す手順について説明します。 この機能は現在パブリック プレビュー中です。
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0e89977c10de04d8c3331733cd1432525ac3196d
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689067"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860329"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>Microsoft Defender for Endpoint on macOS - システム拡張機能のパブリック プレビュー)
 
@@ -62,7 +62,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  または、管理環境 (JAMF または Intune) を使用している場合は、更新プログラム チャネルをリモートで構成できます。 詳細については [、「Deploy updates for Microsoft Defender ATP for Mac: Set the channel name 」を参照してください](mac-updates.md#set-the-channel-name)。
+  または、管理環境 (JAMF または Intune) を使用している場合は、更新プログラム チャネルをリモートで構成できます。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint for Mac: Set the channel name 」を参照してください](mac-updates.md#set-the-channel-name)。
 
 ## <a name="deployment-steps"></a>展開手順
 

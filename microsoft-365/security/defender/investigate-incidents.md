@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5fe594dca935b7377a385b487f1464c3f0a91151
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760328"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861877"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender のインシデントを調査する
 
@@ -38,7 +38,7 @@ ms.locfileid: "51760328"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender は、デバイス、ユーザー、メールボックス全体からのすべての関連するアラート、資産、調査、証拠をインシデントに集約し、攻撃の幅広い全体を総合的に調査します。
+Microsoft 365 Defender は、デバイス、ユーザー、およびメールボックス全体からのすべての関連するアラート、資産、調査、および証拠をインシデントに集約し、攻撃の幅広い全体を総合的に調査します。
 
 インシデント内では、ネットワークに影響を与えるアラートを調査し、その意味を理解し、効果的な修復計画を策定できるよう証拠を照合します。
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender は、デバイス、ユーザー、メールボックス
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="チェック マーク列からインシデントを選択する例":::
 
-その場合、概要ウィンドウが開き、インシデントに関する重要な情報 (重大度、割り当てられているユーザー、インシデントの[MITRE ATT&CK &trade; ](https://attack.mitre.org/)カテゴリなど) が表示されます。 次に例を示します。
+その場合、概要ウィンドウが開き、インシデントに関する重要な情報 (重大度、割り当て先、インシデントの[MITRE ATT&CK &trade; ](https://attack.mitre.org/)カテゴリなど) が表示されます。 次に例を示します。
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="インシデントの概要ウィンドウの例":::
 
@@ -70,7 +70,7 @@ Microsoft 365 Defender は、デバイス、ユーザー、メールボックス
 
 アラートのタイムラインでは、アラートが発生した時系列の順序と、これらのアラートがこのインシデントにリンクされている理由を確認できます。
 
-最後に、証拠セクションでは、どれぐらいの数の成果物がインシデントに含まれるかや修復状況の概要が示されます。そのため、対応が必要かどうかをすぐに特定できます。
+最後に、 - 証拠セクションには、インシデントに含まれるさまざまなアーティファクトの数とその修復状態の概要が示されています。そのため、必要なアクションが必要な場合は直ちに特定できます。
 
 この概要は、インシデントの最初のトリアージを支援するために、注意する必要があるインシデントの最高の特性に関する洞察を提供します。
 

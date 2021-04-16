@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP プレビュー機能
+title: Microsoft Defender for Endpoint プレビュー機能
 description: Microsoft Defender for Endpoint プレビュー機能にアクセスする方法について説明します。
 keywords: プレビュー、プレビュー エクスペリエンス、Microsoft Defender for Endpoint、機能、更新プログラム
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a91fa3c8ff55f46619c7b49eaf973ad94f60bfe
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698192"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861061"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
@@ -62,7 +62,7 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 以下の機能がプレビュー リリースに含まれています。
 
-- [デバイスの検出](device-discovery.md) <br> 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 その後、検出されたデバイスをオンボードして、ネットワークに管理されていないエンドポイントを持つことに関連するリスクを軽減できます。
+- [デバイス検出](device-discovery.md) <br> 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 その後、検出されたデバイスをオンボードして、ネットワークに管理されていないエンドポイントを持つことに関連するリスクを軽減できます。
 
    > [!IMPORTANT]
    > 標準検出は、2021 年 5 月 10 日からすべてのプレビューユーザーの既定のモードになります。 基本モードは、[設定] ページで保持できます。 

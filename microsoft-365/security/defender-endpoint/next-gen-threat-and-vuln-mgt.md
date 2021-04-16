@@ -1,7 +1,7 @@
 ---
 title: 脅威と脆弱性の管理
 description: この新しい機能では、エンドポイントの脆弱性と誤った構成の検出、事前設定、修復に対して、ゲームを変えるリスクベースのアプローチを使用します。
-keywords: Threat & の脆弱性管理、脅威と脆弱性の管理、MDATP TVM、MDATP-TVM、脆弱性管理、脆弱性評価、脅威と脆弱性のスキャン、セキュリティで保護された構成評価、Microsoft Defender atp、microsoft Defender atp、エンドポイントの脆弱性、次世代
+keywords: Threat & の脆弱性管理、脅威と脆弱性の管理、MDATP TVM、MDATP-TVM、脆弱性管理、脆弱性評価、脅威と脆弱性のスキャン、セキュリティで保護された構成評価、エンドポイント用 Microsoft Defender、microsoft Defender atp、エンドポイントの脆弱性、次世代
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: e9c575aa8968b8cab2c5d91b9fe0b1cb46b292d3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499065"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860763"
 ---
 # <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "51499065"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 エンドポイントの弱点を効果的に特定、評価、修復するには、健全なセキュリティ プログラムを実行し、組織のリスクを軽減する上で極めて重要です。 脅威と脆弱性の管理は、組織の暴露を削減し、エンドポイントの役割を強化し、組織の回復性を向上させるためのインフラストラクチャとして機能します。
 

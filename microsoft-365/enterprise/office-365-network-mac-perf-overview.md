@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 管理センターでのネットワーク接続の概要 (プレビュー)
-ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768628"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860865"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センターのネットワーク接続 (プレビュー)
 
@@ -63,7 +63,7 @@ Microsoft 365 管理センターには、Microsoft 365 テナントから収集�
 
 このオプションでは、Windows Location Services もWi-Fiも必要ありません。 OneDrive for Windows バージョンは最新のバージョンで、その場所にある少なくとも 1 つのコンピューターにインストールされている必要があります。
 
-また、[場所] ページに場所を追加するか、CSV ファイルから場所をインポートする必要があります。 追加する場所には、Office LAN サブネット情報が含まれる必要があります。
+また、[場所] ページに場所を追加するか **、CSV** ファイルから場所をインポートする必要があります。 追加する場所には、Office LAN サブネット情報が含まれる必要があります。
 
 このオプションを使用すると、都市内で複数のオフィスを定義できます。
 
@@ -97,7 +97,7 @@ Microsoft 365 管理センターには、Microsoft 365 テナントから収集�
 
 ## <a name="how-we-can-solve-these-challenges"></a>これらの課題を解決する方法
 
-企業は、Office 365 接続の原則に従い、Microsoft [365 管理センターの](./microsoft-365-network-connectivity-principles.md) ネットワーク接続機能を使用することで、一般的なユーザー エクスペリエンスを向上し、環境を保護できます。 ほとんどの場合、これらの一般的な原則に従って、エンド ユーザーの待機時間、サービスの信頼性、Microsoft 365 の全体的なパフォーマンスに大きなプラスの影響を与えます。
+企業は、Office 365 接続の原則に従い、Microsoft [365 管理センターの](./microsoft-365-network-connectivity-principles.md) ネットワーク接続機能を使用することで、一般的なユーザー エクスペリエンスを向上し、環境を保護できます。 ほとんどの場合、これらの一般的な原則に従って、Microsoft 365 のエンドユーザーの待機時間、サービスの信頼性、および全体的なパフォーマンスに大きなプラスの影響を与えます。
 
 Microsoft は、大規模なエンタープライズ顧客向け Microsoft 365 のネットワーク パフォーマンスの問題を調査する必要が生じ、顧客のネットワーク境界インフラストラクチャに関連する根本原因が頻繁に発生する場合があります。 顧客ネットワーク境界の問題の一般的な根本原因が見つかった場合、それを識別する単純なテスト測定値を特定します。 特定の問題を識別する測定しきい値を持つテストは、任意の場所で同じ測定値をテストし、この根本原因が存在するかどうかを確認し、それを管理者とネットワークインサイトとして共有することができます。
 
@@ -121,6 +121,14 @@ Microsoft には、Microsoft 365 の動作をサポートOfficeデスクトッ�
 
 > [!div class="mx-imgBorder"]
 > ![ネットワークインサイトの場所](../media/m365-mac-perf/m365-mac-perf-locations.png)
+
+## <a name="remote-worker-assessment-and-user-connection-metrics"></a>リモート ワーカー評価とユーザー接続の指標
+
+ネットワーク トラフィック ログをリモートユーザーまたはオンサイト ユーザーとして分類し、その割合を概要ウィンドウの [ユーザー接続の指標] セクションに表示します。 リモート ユーザーを持つ都市では、その場所のページを開く際に、場所固有のリモート ネットワーク評価スコアが表示されます。 場所の一覧には、オフィスの場所とリモートワーカー都市の両方が含め、フィルター処理と並べ替えが可能です。 Exchange、SharePoint、Teams のポイントの内訳を含むリモート ワーカー評価スコアを提供します。
+
+ホーム ユーザー のネットワーク分析情報は、都市レベルで集計および報告され、リモート従業員が少なくとも 5 人の都市に限定されます。 自宅で働く個々の従業員を特定していません。
+
+場所はオンサイトまたはリモートとして自動分類されます。ただし、オンサイトのすべての出力 IP アドレスを手動で入力して、100% の分類を確実に行うことができます。 このルートに移動する場合は、すべての出力 IP アドレスを追加した後、[場所の設定] フライアウトで [すべてのオンサイトの出力 **IP** アドレスを手動で入力する] チェック ボックスをオンにする必要があります。 これが完了すると、オンサイトとしてマークした出力 IP アドレスからのすべてのネットワーク トラフィック ログは常にオフィスとして分類され、他のすべての出力 IP アドレスはリモートとして分類されます。
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>特定のオフィスの場所ネットワークのパフォーマンスの概要と分析情報
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP のパートナー アプリケーション
+title: Microsoft Defender for Endpoint のパートナー アプリケーション
 ms.reviewer: ''
 description: サポートされているパートナー アプリケーションを表示して、プラットフォームの検出、調査、および脅威インテリジェンス機能を強化する
 keywords: パートナー、アプリケーション、サードパーティ、接続、sentinelone、ルックアウト、bitdefender、corrata、morphisec、paloalto、ziften、より良いモバイル
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 60a2eca25090f60414e91eacfed090bc86a4cf93
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382942"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862213"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のパートナー アプリケーション 
 
@@ -33,7 +33,7 @@ ms.locfileid: "51382942"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint は、プラットフォームの検出、調査、および脅威インテリジェンス機能の強化に役立つサード パーティ製アプリケーションをサポートします。
 

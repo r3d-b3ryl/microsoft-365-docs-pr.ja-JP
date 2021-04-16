@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP でデバイス グループを作成および管理する
+title: Microsoft Defender for Endpoint でデバイス グループを作成および管理する
 description: デバイス グループを作成し、グループに適用されるルールを混同して、デバイス グループに自動修復レベルを設定する
 keywords: デバイス グループ、グループ、修復、レベル、ルール、aad グループ、役割、割り当て、ランク
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dfc7c04bbde2b7061c92f5a25115b75a2f5b47b5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066300"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860305"
 ---
 # <a name="create-and-manage-device-groups"></a>デバイス グループの作成と管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "51066300"
 - Azure Active Directory
 - Office 365
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 エンタープライズ シナリオでは、通常、セキュリティ操作チームには一連のデバイスが割り当てられます。 これらのデバイスは、ドメイン、コンピューター名、指定されたタグなどの一連の属性に基づいてグループ化されます。

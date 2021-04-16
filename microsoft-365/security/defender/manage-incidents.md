@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760070"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861733"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの管理
 
@@ -65,7 +65,7 @@ Microsoft 365 セキュリティ センター (& >) のクイック 起動時に
 
 ## <a name="edit-the-incident-name"></a>インシデント名を編集する
 
-インシデントには、影響を受けるエンドポイントの数、影響を受けるユーザー、検出元、カテゴリなどのアラート属性に基づいて、名前が自動的に割り当てられます。 これにより、インシデントの範囲をすばやく理解できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
+Microsoft 365 Defender は、影響を受けるエンドポイントの数、影響を受けるユーザー、検出元、カテゴリなどのアラート属性に基づいて名前を自動的に割り当てる。 これにより、インシデントの範囲をすばやく理解できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
 
 インシデント名は、[インシデントの管理] ウィンドウの **[インシデント名** ] フィールド **から編集** できます。
 
@@ -97,3 +97,9 @@ Microsoft 365 セキュリティ センター (& >) のクイック 起動時に
 ## <a name="add-comments"></a>コメントを追加する
 
 [コメント] フィールドを使用して、インシデントに複数のコメント **を追加** できます。 各コメントは、インシデントの履歴イベントに追加されます。 インシデントのコメントと履歴は、[概要] ページの[コメントと履歴] リンク **から確認** できます。
+
+## <a name="related-topics"></a>関連項目
+
+- [インシデントの概要](incidents-overview.md)
+- [インシデントの優先度設定](incident-queue.md)
+- [インシデントの調査](investigate-incidents.md)

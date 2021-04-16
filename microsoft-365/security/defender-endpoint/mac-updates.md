@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac の更新プログラムを展開する
-description: エンタープライズ環境での Microsoft Defender ATP for Mac の更新プログラムを制御します。
+title: Microsoft Defender for Endpoint for Mac の更新プログラムを展開する
+description: エンタープライズ環境での Microsoft Defender for Endpoint for Mac の更新プログラムを制御します。
 keywords: microsoft、Defender、atp、mac、更新プログラム、展開
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3321c1bd181b89c53e2618fc20fa7f733a20cfc1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689055"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860317"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689055"
 
 **適用対象:**
 
-- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -78,7 +78,7 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 
 |Section|値|
 |:--|:--|
-| **ドメイン** | com.microsoft.autoupdate2 |
+| **ドメイン** | `com.microsoft.autoupdate2` |
 | **Key** | ChannelName |
 | **データ型** | String |
 | **指定可能な値** | ベータ版 <br/> Preview <br/> Current |
@@ -96,11 +96,11 @@ MAU が更新プログラムを検索する頻度を変更します。
 
 |Section|値|
 |:--|:--|
-| **ドメイン** | com.microsoft.autoupdate2 |
+| **ドメイン** | `com.microsoft.autoupdate2` |
 | **Key** | UpdateCheckFrequency |
 | **データ型** | 整数 |
 | **既定値** | 720 (分) |
-| **Comment** | この値は分で設定されます。 |
+| **コメント** | この値は分で設定されます。 |
 
 
 ### <a name="change-how-mau-interacts-with-updates"></a>MAU と更新プログラムのやり取り方法を変更する
@@ -109,11 +109,11 @@ MAU が更新プログラムを検索する方法を変更します。
 
 |Section|値|
 |:--|:--|
-| **ドメイン** | com.microsoft.autoupdate2 |
+| **ドメイン** | `com.microsoft.autoupdate2` |
 | **Key** | HowToCheck |
 | **データ型** | String |
 | **指定可能な値** | 手動 <br/> AutomaticCheck <br/> AutomaticDownload |
-| **Comment** |  AutomaticDownload はダウンロードを実行し、可能であればサイレント インストールします。 |
+| **コメント** |  AutomaticDownload はダウンロードを実行し、可能であればサイレント インストールします。 |
 
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>[更新プログラムの確認] ボタンが有効になっているかどうかを変更する
@@ -122,7 +122,7 @@ MAU が更新プログラムを検索する方法を変更します。
 
 |Section|値|
 |:--|:--|
-| **ドメイン** | com.microsoft.autoupdate2 |
+| **ドメイン** | `com.microsoft.autoupdate2` |
 | **Key** | EnableCheckForUpdatesButton |
 | **データ型** | Boolean |
 | **可能な値** | True (既定) <br/> False |
@@ -134,7 +134,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 
 |Section|値|
 |:--|:--|
-| **ドメイン** | com.microsoft.autoupdate2 |
+| **ドメイン** | `com.microsoft.autoupdate2` |
 | **Key** | DisableInsiderCheckbox |
 | **データ型** | Boolean |
 | **可能な値** | False (既定) <br/> True |
@@ -146,7 +146,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 
 |Section|値|
 |:--|:--|
-| **ドメイン** | com.microsoft.autoupdate2 |
+| **ドメイン** | `com.microsoft.autoupdate2` |
 | **Key** | SendAllTelemetryEnabled |
 | **データ型** | Boolean |
 | **可能な値** | True (既定) <br/> False |

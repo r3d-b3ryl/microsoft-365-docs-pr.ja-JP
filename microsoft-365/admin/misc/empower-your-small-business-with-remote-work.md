@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Microsoft 365 を使用している企業向けリモートワークに関する最新の方法情報、ヒント、リソース、ガイダンスについて説明します。
-ms.openlocfilehash: eac86583a1e72b70399024354f9adc7ad24e1047
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 3ef8bb3527e6be258eda8d745d841e8bd81cdd6c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034284"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860585"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>リモート ワークで小規模ビジネスを強化する
 
@@ -87,7 +87,7 @@ Microsoft 365 Business のテクニカル ドキュメント ハブが更新さ�
 
 ## <a name="need-to-ask-a-question"></a>質問する必要がありますか? 
 
-Teams フォーラムまたは[管理者フォーラム](https://answers.microsoft.com/msteams/forum)[Office問い合わせください](https://answers.microsoft.com/msoffice/forum/msoffice_o365Admin)。
+Teams フォーラムまたは[管理者フォーラム](https://answers.microsoft.com/msteams/forum)[Office問い合わせください](https://answers.microsoft.com)。
 
 > [!NOTE]
 > この記事とビデオのほとんどのタスクは、Microsoft 365 Business Basic (以前は Office 365 Business Essentials) のサブスクリプションを使用して実行できますが、プレミアム サブスクリプションが必要な場合があります。 

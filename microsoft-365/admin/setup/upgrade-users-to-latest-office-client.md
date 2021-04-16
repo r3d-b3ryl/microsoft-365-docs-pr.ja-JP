@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 組織のユーザーの最新Microsoft OfficeクライアントOfficeアップグレードする方法について学習します。
-ms.openlocfilehash: 14be8d63b2acb3e4838640dc399595c0ba3f97f5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d2d5e54506d06662c6c2feef0d142f1e195163f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913996"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860573"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>ビジネス ユーザー向け Microsoft 365 を最新のクライアントにOfficeする
 
@@ -91,9 +91,9 @@ Office を含むサブスクリプションに切り替えてください。 「
 
 **オプション 2: ボリューム ライセンスを通じて個別の購入、Office購入、Office購入**
 
- - 1 回に 1 回の購入を行う場合は、Office。 「Office [ビジネス &amp; またはプロフェッショナル](https://products.office.com/home-and-business) 」 [をOfficeする](https://products.office.com/professional)
+ - 1 回に 1 回の購入を行う場合は、Office。 「Office [ビジネス &amp; またはプロフェッショナル](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) 」 [をOfficeする](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
-     OR
+     または
 
  - ボリューム ライセンスを使用して、Officeコピーを複数購入します。 「[ボリューム ライセンスで提供されるスイート製品の比較](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison)」をご覧ください。
 

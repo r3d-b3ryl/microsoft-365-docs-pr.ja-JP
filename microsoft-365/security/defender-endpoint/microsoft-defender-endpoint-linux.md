@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint on Linux
+title: Linux 用 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: Microsoft Defender ATP for Linux をインストールして使用する方法について説明します。
+description: Microsoft Defender for Endpoint for Linux をインストールして使用する方法について説明します。
 keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0fea9d4dd46be2a77ea27728787a43b5273f92f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687759"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861397"
 ---
-# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux
+# <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -83,7 +83,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
   > Defender for Endpoint for Linux を他のベースのセキュリティ ソリューションと並べて実行する `fanotify` 方法はサポートされていません。 オペレーティング システムのハングを含む予期しない結果につながる可能性があります。
 
 - ディスク領域: 1 GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon には実行可能なアクセス許可が必要です。 詳細については、「Microsoft Defender ATP for Linux のインストールに関する問題のトラブルシューティング」の「デーモンに実行可能なアクセス許可が付与されている」 [を参照してください](/microsoft-365/security/defender-endpoint/linux-support-install)。
+- /opt/microsoft/mdatp/sbin/wdavdaemon には実行可能なアクセス許可が必要です。 詳細については、「Microsoft Defender for Endpoint for Linux のインストールに関する問題のトラブルシューティング」の「デーモンに実行可能なアクセス許可を付与する [」を参照してください](/microsoft-365/security/defender-endpoint/linux-support-install)。
 - メモリ: 1 GB
     > [!NOTE]
     > /var に空きディスク領域が含まれます。

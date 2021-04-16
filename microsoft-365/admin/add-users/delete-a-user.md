@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法について説明します。 ユーザーの電子メールと OneDrive コンテンツの操作を決定します。 また、製品ライセンスを保持するか、支払いを停止するか決定します。
-ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759920"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860739"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
@@ -127,7 +127,7 @@ ms.locfileid: "51759920"
 
 4. [ライセンス **の削除]** ウィンドウの [**新** しい数量] の [ライセンスの合計] ボックスに、このサブスクリプションに必要なライセンスの総数を入力します。 たとえば、100 のライセンスを持ち、5 つのライセンスを削除する場合は、「95」と入力します。
 
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 
 将来、新しいユーザーを組織のサブスクリプションに追加する手順を実行すると、ライセンスの購入を求めるメッセージが表示されるため、手間が省けます。
 
@@ -155,7 +155,7 @@ ms.locfileid: "51759920"
 
 ## <a name="delete-many-users-at-the-same-time"></a>多数のユーザーを同時に削除する
 
-[Remove-MsolUser](https://go.microsoft.com/fwlink/p/?linkid=842230) PowerShell コマンドレットを参照してください。
+[Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell コマンドレットを参照してください。
 
 ## <a name="fix-issues-with-deleting-a-user"></a>ユーザーの削除に関する問題を解決する
 

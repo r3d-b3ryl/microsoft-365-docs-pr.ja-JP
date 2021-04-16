@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP で以前のバージョンの Windows をオンボードする
-description: センサー データを Microsoft Defender ATP センサーに送信できるよう、オンボードでサポートされている以前のバージョンの Windows デバイス
+title: Microsoft Defender for Endpoint で以前のバージョンの Windows をオンボードする
+description: センサー データを Microsoft Defender for Endpoint センサーに送信できるよう、オンボードでサポートされている以前のバージョンの Windows デバイス
 keywords: オンボード、Windows、7、81、oms、sp1、enterprise、pro、down level
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b180e7555bb3339324d3b99956d8f8ad73dc13c3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186391"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861361"
 ---
-# <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows のオンボード
+# <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,7 +63,7 @@ Defender for Endpoint は System Center Endpoint Protection と統合され、�
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>センサー データを Microsoft Defender for Endpoint に報告する Microsoft Monitoring Agent (MMA) をインストールして構成する
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 最小システム要件を確認するには、次の詳細を確認します。
 - [2018 年 2 月の更新プログラムのロールアップをインストールする](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   

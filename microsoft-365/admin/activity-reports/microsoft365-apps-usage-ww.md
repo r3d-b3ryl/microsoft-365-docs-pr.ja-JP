@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Microsoft 365 管理センターの Microsoft 365 レポート ダッシュボードを使用して、使用状況レポート用の Microsoft 365 アプリを取得する方法について説明します。
-ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d41a1680b46709c3f41b5238d309794c68101cee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644269"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860751"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>管理センターの Microsoft 365 レポート - Microsoft 365 Apps の使用状況
 
@@ -33,7 +33,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 
  > [!NOTE]
- > レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバル リーダー、またはレポート リーダーである必要があります。 共有コンピューターのライセンス認証は、このレポートではサポートされていません。
+ > レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバル リーダー、またはレポート リーダーである必要があります。 共有コンピューターのライセンス認証は、このレポートには含まれません。
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>Microsoft 365 Apps 利用状況レポートにアクセスする方法
 
@@ -50,7 +50,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |アイテム|説明|
  |:-----|:-----|
  |1. <br/> |**Microsoft 365 Apps** 利用状況レポートでは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、表 (7) には、(レポートが生成された日付ではなく) 現在の日付から最大 28 日間のデータが表示されます。 <br/> |
- |2. <br/> |各レポートのデータは、通常、過去 7 日間までカバーされます。 <br/> |
+ |2. <br/> |各レポートのデータは、通常、過去 2 日間までカバーされます。 6 日ごとに、データの品質を確保するために、マイナーな更新プログラムを使用してレポートを更新します。 <br/> |
  |3。 <br/> |[ **ユーザー]** ビューには、Outlook、Word、Excel、PowerPoint、OneNote、Teams の各アプリのアクティブ ユーザー数の傾向が表示されます。 "アクティブ ユーザー" は、これらのアプリ内で意図的なアクションを実行するユーザーです。 <br/> |
  |4. <br/> |[ **プラットフォーム] ビュー** には、Windows、Mac、Web、およびモバイルの各プラットフォームのすべてのアプリでアクティブ ユーザーの傾向が表示されます。 <br/> |
  |5.<br/>|[ユーザー **] グラフ** の Y 軸は、それぞれのアプリの一意のアクティブ ユーザーの数です。 [プラットフォーム **] グラフ**   の Y 軸は、それぞれのプラットフォームの一意のユーザー数です。 両方のグラフの X 軸は、特定のプラットフォームでアプリが使用された日付です。<br/>|

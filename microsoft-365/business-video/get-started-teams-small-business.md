@@ -1,5 +1,5 @@
 ---
-title: 小規模ビジネスでの Microsoft Teams の使用を開始する
+title: 小規模ビジネスで Microsoft Teams を開始する
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 小規模ビジネスで Microsoft Teams を使用する方法について説明します。
-ms.openlocfilehash: 592d5eda985239f79ce42291af840ff7762a903c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: b77ad43722764895a4f89c623d4af9403aa25e5b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034287"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860561"
 ---
-# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>小規模ビジネスでの Microsoft Teams の使用を開始する
+# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>小規模ビジネスで Microsoft Teams を開始する
 
 - [ビジネスで Teams を使用する (ビデオ)](#use-teams-for-your-business-video)
 - [ビジネス向けオンライン会議をホストする (ビデオ)](#host-online-meetings-for-your-business-video)
@@ -47,7 +47,7 @@ ms.locfileid: "51034287"
 
 ## <a name="1-get-ready"></a>1. 準備をする 
 
-使い始めるのは簡単です。 既に Microsoft 365 サブスクリプションをお持ちの場合は、Microsoft Teams を含むライセンスを持っているすべてのユーザーに確認してください。 会社に Microsoft Teams がまだ存在しない場合は、ビジネスに適切な [Microsoft Teams](https://aka.ms/TeamsBusinessBasic) を見つけてサインアップできます。
+使い始めるのは簡単です。 既に Microsoft 365 サブスクリプションをお持ちの場合は、Microsoft Teams を含むライセンスを持っているすべてのユーザーに確認してください。 会社に Microsoft Teams がまだ存在しない場合は、ビジネスに適切な [Microsoft Teams](https://www.microsoft.com/microsoft-teams/teams-for-work) を見つけてサインアップできます。
 
 ### <a name="get-microsoft-teams-ready-for-your-customers"></a>Microsoft Teams を顧客に提供する準備をする
 
@@ -133,4 +133,4 @@ Microsoft [365 Business Voice](https://aka.ms/getbusinessvoice) をサブスク�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[リモートワークで中小企業に力を与](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) える (記事)
+[リモートワークで中小企業に力を与](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work) える (記事)

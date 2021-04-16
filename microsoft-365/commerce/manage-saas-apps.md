@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Microsoft 365 管理センターでサード パーティ製アプリをアクティブ化および管理する方法について説明します。
-ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576915"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860537"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサード パーティ製アプリのサブスクリプションを管理する
 
@@ -31,7 +31,7 @@ ms.locfileid: "51576915"
 
 サード パーティ製アプリを購入するには、いくつかの方法があります。
 
-- **直接購入** – 顧客は Azure [Marketplace](https://azuremarketplace.microsoft.com/marketplace/)または [AppSource](https://www.appsource.com/)からサブスクリプションを直接購入できます。
+- **直接購入** – 顧客は Azure [Marketplace](https://azuremarketplace.microsoft.com/marketplace/)または [AppSource](https://appsource.microsoft.com/)からサブスクリプションを直接購入できます。
 - **パートナー購入** – パートナー センターを通じてパートナーと一緒にサブスクリプションを購入します。
 - **Microsoft の提案** – サード パーティ製アプリを含む Microsoft Sales からの提案に応答します。
 
