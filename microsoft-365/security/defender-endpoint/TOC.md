@@ -9,7 +9,7 @@
 ### [Microsoft Defender セキュリティ センターの概要](use.md)
 ### [ポータルの概要](portal-overview.md)
 ### [米国政府のお客様向けの Microsoft Defender for Endpoint](gov.md)
-### [Windows 以外のプラットフォームの Microsoft Defender for Endpoint](non-windows.md)
+### [Windows 以外のプラットフォーム上の Microsoft Defender for Endpoint](non-windows.md)
 
 ## [機能を評価する](evaluation-lab.md)
 
@@ -85,6 +85,65 @@
 ##### [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)
 ##### [攻撃面の減少イベントを表示する](event-views.md)
 
+### 次世代の保護
+#### [Microsoft Defender ウイルス対策の概要](microsoft-defender-antivirus-in-windows-10.md)
+#### [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
+#### [ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+#### [ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365](office-365-microsoft-defender-antivirus.md)
+#### [クラウド配信保護と Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)
+#### [Microsoft Defender ウイルス対策を評価する](evaluate-microsoft-defender-antivirus.md)
+#### [Microsoft Defender ウイルス対策機能を構成する](configure-microsoft-defender-antivirus-features.md)
+##### [クラウドによる保護を有効にする](enable-cloud-protection-microsoft-defender-antivirus.md)
+##### [クラウドによる保護レベルを指定する](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)
+##### [改ざん防止機能を使用してセキュリティ設定を保護する](prevent-changes-to-security-settings-with-tamper-protection.md)
+##### [事前ブロックを有効にする](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+##### [クラウド ブロックのタイムアウト期間の構成](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+##### [行動、ヒューリスティック、リアルタイム保護を構成する](configure-protection-features-microsoft-defender-antivirus.md)
+##### [望ましくない可能性のあるアプリケーションを検出してブロックする](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+##### [グループ ポリシーで Microsoft Defender ウイルス対策を常時保護を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+##### [Microsoft Defender ウイルス対策検出の修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
+##### [スケジュールされたクイックまたは完全な Microsoft Defender ウイルス スキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+##### [Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [他のセキュリティ製品との互換性](microsoft-defender-antivirus-compatibility.md)
+
+#### [ウイルス対策ソフトウェアとマルウェア対策の更新プログラムを取得する](manage-updates-baselines-microsoft-defender-antivirus.md)
+##### [Microsoft Defender ウイルス対策更新プログラムのソースを管理する](manage-protection-updates-microsoft-defender-antivirus.md)
+##### [保護更新プログラムをダウンロードして適用するスケジュールを管理する](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [Microsoft Defender ウイルス対策の更新プログラムを管理し、古くなったエンドポイントをスキャンする](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+##### [イベントベースの強制更新プログラムを管理する](manage-event-based-updates-microsoft-defender-antivirus.md)
+##### [モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+
+#### [組織の Microsoft Defender ウイルス対策を管理する](configuration-management-reference-microsoft-defender-antivirus.md)
+##### [Microsoft エンドポイント マネージャーを使用して Microsoft Defender ウイルス対策を管理する](use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [グループ ポリシー設定を使用して Microsoft Defender ウイルス対策を管理する](use-group-policy-microsoft-defender-antivirus.md)
+##### [PowerShell コマンドレットを使った Microsoft Defender ウイルス対策の管理](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+##### [Microsoft Defender ウイルス対策を管理するために Windows Management Instrumentation (WMI) を使用する](use-wmi-microsoft-defender-antivirus.md)
+##### [mpcmdrun.exe ツールを使用して Microsoft Defender ウイルス対策を管理する](command-line-arguments-microsoft-defender-antivirus.md)
+
+#### [Microsoft Defender ウイルス対策を展開してレポートする](deploy-manage-report-microsoft-defender-antivirus.md)
+##### [Microsoft Defender ウイルス対策を展開して有効にする](deploy-microsoft-defender-antivirus.md)
+##### [仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド](deployment-vdi-microsoft-defender-antivirus.md)
+##### [Microsoft Defender ウイルス対策のレポート](report-monitor-microsoft-defender-antivirus.md)
+
+#### [スキャンと修復](review-scan-results-microsoft-defender-antivirus.md)
+##### [オンデマンドの Microsoft Defender ウイルス対策スキャンを構成して実行する](run-scan-microsoft-defender-antivirus.md)
+##### [Microsoft Defender オフライン スキャンの結果を実行してレビューする](microsoft-defender-offline.md)
+##### [Microsoft Defender ウイルス対策スキャン オプションを構成する](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+##### [Microsoft Defender ウイルス対策で検疫済みファイルを復元する](restore-quarantined-files-microsoft-defender-antivirus.md)
+
+#### [Microsoft Defender ウイルス対策の除外](configure-exclusions-microsoft-defender-antivirus.md)
+##### [ファイル拡張子とフォルダーの場所に基づく除外](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+##### [プロセスによって開かれたファイルの除外](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Windows Server の除外](configure-server-exclusions-microsoft-defender-antivirus.md)
+##### [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+
+#### Microsoft Defender ウイルス対策のトラブルシューティング
+##### [更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング](troubleshoot-reporting.md)
+##### [Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする](troubleshoot-microsoft-defender-antivirus.md)
+##### [サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
+
+
 #### [ハードウェア ベースの分離]()
 ##### [Windows 10 のハードウェア ベースの分離](overview-hardware-based-isolation.md)
 
@@ -115,10 +174,17 @@
 ##### [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md)
 ##### [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
 
+
+### [デバイス検出]()
+#### [デバイス検出の概要](device-discovery.md)
+#### [デバイス検出の構成](configure-device-discovery.md)
+#### [デバイス検出に関する FAQ](device-discovery-faq.md)
+
+
 ### [ネットワークデバイス](network-devices.md)
 
-### [iOS 用 Microsoft Defender for Endpoint]()
-#### [Mac 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-mac.md)
+### [macOS 用 Microsoft Defender for Endpoint]()
+#### [macOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-mac.md)
 #### [新機能](mac-whatsnew.md)
 
 #### [展開]()
@@ -154,7 +220,7 @@
 #### [プライバシー](mac-privacy.md)
 #### [リソース](mac-resources.md)
 
-### [iOS 用 Microsoft Defender for Endpoint]()
+### [iOS 用 Microsoft Defender for Endpoint API]()
 #### [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
 
 #### [展開]()

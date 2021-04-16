@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4f3b2b54370e3481699a540dd8fd2acc30be7514
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760166"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768880"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -302,8 +302,8 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 サーバーのオンボード中に問題が発生した場合は、次の検証手順を実行して、考えられる問題に対処します。
 
-- [Microsoft Monitoring Agent (MMA) がインストールされ、センサー データをサービスに報告するように構成されていることを確認する](configure-server-endpoints.md#server-mma)
-- [サーバー プロキシとインターネット接続の設定が正しく構成されていることを確認する](configure-server-endpoints.md#server-proxy)
+- [Microsoft Monitoring Agent (MMA) がインストールされ、センサー データをサービスに報告するように構成されていることを確認する](configure-server-endpoints.md)
+- [サーバー プロキシとインターネット接続の設定が正しく構成されていることを確認する](configure-server-endpoints.md)
 
 また、次の情報を確認する必要があります。
 

@@ -24,7 +24,7 @@ search.appverid:
 description: 共有メールボックスは、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。 共有メールボックスを作成する前に知っておくべきことを説明します。
 ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50915988"
