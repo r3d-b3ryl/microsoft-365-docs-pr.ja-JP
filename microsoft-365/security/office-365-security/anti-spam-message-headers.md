@@ -18,12 +18,12 @@ description: 管理者は、Exchange Online Protection (EOP) によってメッ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04b98ad6b1ca136429395dfd1636b43bbbc6878a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 469f28acb40017f3d431e3545c81877126f50c18
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206880"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688455"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
 
@@ -74,7 +74,7 @@ ms.locfileid: "51206880"
 |`LANG`|メッセージが作成された言語であり、国番号 (たとえば、ロシア語は ru_RU) で指定されます。|
 |`PTR:[ReverseDNS]`|逆引き DNS 参照とも呼ばれる、送信元の IP アドレスの PTR レコード。|
 |`SCL`|メッセージの SCL (Spam Confidence Level) です。 値が高いほど、メッセージがスパムである可能性が高くなります。 詳細については、「[Spam Confidence Level (SCL)](spam-confidence-levels.md)」を参照してください。|
-|`SFTY`|メッセージはフィッシングとして識別され、次のいずれかの値が付けられます。 <ul><li>9.1: 既定値。 メッセージには、フィッシング URL、他のフィッシング コンテンツ、またはオンプレミスの Exchange によってフィッシングとしてマークされた要素の一部またはすべてが含まれます。</li><li>9.11: [組織内または自己完結型のスプーフィング](anti-spoofing-protection.md#different-types-of-spoofing)。 組織内スプーフィングの安全性に関するヒントがメッセージに追加されます。</li><li>9.19: ドメインの偽装。 送信ドメインが、[保護されたドメインを偽装](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)しようとしています。 ドメイン偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li><li>9.20: ユーザーの偽装。 送信ユーザーが、受信者の組織内のユーザー、または Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーで指定されている保護ユーザーを偽装しようとしています。 ユーザー偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li><li>9.21: [クロスドメイン スプーフィング](anti-spoofing-protection.md#different-types-of-spoofing)。 メッセージはスプーフィング対策チェックにパスしませんでした。 差出人ヘッダー内の送信者のメール ドメインは認証されません。また、このドメインは外部ドメインです。 [複合認証](#authentication-results-message-header-fields)と組み合わせて使用されます。</li><li>9.22: ユーザーが、オーバーライドされた差出人セーフ リストを持っている点を除き、9.21 と同じです。 </li><li>9.23: ただし、組織が、オーバーライドされた許可された送信者またはドメインを持っている点を除き、9.22 と同じです。</li><li>9.24: ユーザーが、オーバーライドされた Exchange メール フロー ルール (トランスポート ルールとも呼ばれます) を持っている点を除き、9.23 と同じです。</li></ul>|
+|`SFTY`|メッセージはフィッシングとして識別され、次のいずれかの値が付けられます。 <ul><li>9.19: ドメインの偽装。 送信ドメインが、[保護されたドメインを偽装](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)しようとしています。 ドメイン偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li><li>9.20: ユーザーの偽装。 送信ユーザーが、受信者の組織内のユーザー、または Microsoft Defender for Office 365 の[フィッシング詐欺対策ポリシーで指定されている保護ユーザー](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)を偽装しようとしています。 ユーザー偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li></ul>|
 |`SFV:BLK`|メッセージがユーザーの受信拒否リスト内のアドレスから送信されているため、フィルター処理が省略され、メッセージはブロックされました。 <p> 管理者がユーザーの受信拒否リストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
 |`SFV:NSPM`|スパム フィルタリングによって、メッセージがスパムではないとしてマークされ、メッセージは意図された受信者に送信されました。|
 |`SFV:SFE`|メッセージがユーザーの差出人セーフ リスト内のアドレスから送信されているため、フィルター処理が省略され、メッセージは許可されました。 <p> 管理者がユーザーの信頼できる差出人のリストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
