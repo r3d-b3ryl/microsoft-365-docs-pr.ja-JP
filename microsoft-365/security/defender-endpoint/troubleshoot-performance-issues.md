@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 560eeb1e1099576f9f4babf02cc38eb842094fd1
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862487"
+ms.locfileid: "51876339"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -60,7 +60,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 
 | フィールド名 | 説明 |
 |---|---|
-|ProcessImageName   | プロセス イメージ名 |
+|ProcessImageName | プロセス イメージ名 |
 | TotalTime | このプロセスによってアクセスされたファイルのスキャンに費やされた累積時間 (ミリ秒単位) |
 |カウント | このプロセスによってアクセスされるスキャンされたファイルの数 |
 |MaxTime |  このプロセスによってアクセスされるファイルの最長単一スキャンの時間 (ミリ秒単位) |
@@ -69,13 +69,13 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 
 パフォーマンスへの影響が大きい場合は [、「Microsoft Defender ウイルス](collect-diagnostic-data.md)対策スキャンの除外の構成と検証」の手順に従って、パス/プロセスの除外にプロセスを追加してみてください。
 
-前の手順で問題が解決しない場合は、次のセクションのプロセス モニター[](#capture-process-logs-using-process-monitor)または Windows[パフォーマンス](#capture-performance-logs-using-windows-performance-recorder)レコーダーを使用して詳細を収集できます。 
+前の手順で問題が解決しない場合は、次のセクションのプロセス モニター[](#capture-process-logs-using-process-monitor)または Windows[パフォーマンス](#capture-performance-logs-using-windows-performance-recorder)レコーダーを使用して詳細を収集できます。
      
 ## <a name="capture-process-logs-using-process-monitor"></a>プロセス モニターを使用してプロセス ログをキャプチャする
 
-プロセス モニター (ProcMon) は、リアルタイム プロセスを表示できる高度な監視ツールです。 これを使用して、パフォーマンスの問題が発生している場合にキャプチャできます。 
+プロセス モニター (ProcMon) は、リアルタイム プロセスを表示できる高度な監視ツールです。 これを使用して、パフォーマンスの問題が発生している場合にキャプチャできます。
 
-1. プロセス [モニター v3.60 を](/sysinternals/downloads/procmon) 次のようなフォルダーにダウンロードします `C:\temp` 。 
+1. プロセス [モニター v3.60 を](/sysinternals/downloads/procmon) 次のようなフォルダーにダウンロードします `C:\temp` 。
 
 2. Web のファイルのマークを削除するには、次の方法を実行します。
     1. [プロパティ] を **右クリックProcessMonitor.zipし、[** プロパティ] を **選択します**。
@@ -188,7 +188,9 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 6. [ **プロファイルの追加...] を選択し** 、ファイルのパスを参照 `WD.wprp` します。
 
 7. その後、その下に Microsoft Defender  *for Endpoint* Analysis という名前のカスタム測定値の下に新しいプロファイル セットが表示されます。
+
     ![in-file](images/wpr-infile.png)
+
     >[!WARNING]
     >Windows Server に 64 GB 以上の RAM がある場合は、代わりにカスタム測定値 `Microsoft Defender for Endpoint analysis for large servers` を使用します `Microsoft Defender for Endpoint analysis` 。 それ以外の場合、システムが大量の非ページ プール メモリまたはバッファーを消費し、システムが不安定な場合があります。 [リソース分析] を展開して、追加するプロファイル **を選択できます**。 このカスタム プロファイルは、詳細なパフォーマンス分析に必要なコンテキストを提供します。
  
@@ -219,7 +221,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
     >[!TIP]
     >データコレクションは 5 分以下にしてください。 多くのデータが収集されているので、2 ~ 3 分は良好な範囲です。
 
-12. [**保存**] を選択します。
+12. **[保存]** を選択します。
 
     ![[保存] を選択する](images/wpr-10.png)
 
@@ -227,8 +229,8 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
     ![詳細を入力する](images/wpr-12.png)
 
-    1. [ **ファイル名:]** を選択して、トレース ファイルの保存場所を決定します。 既定では、1.is に保存されます `%user%\Documents\WPR Files\` 。 
-    1. [**保存**] を選択します。 
+    1. [ **ファイル名:]** を選択して、トレース ファイルの保存場所を決定します。 既定では、1.is に保存されます `%user%\Documents\WPR Files\` 。
+    1. **[保存]** を選択します。
 
 14. トレースが結合されている間待ちます。
 

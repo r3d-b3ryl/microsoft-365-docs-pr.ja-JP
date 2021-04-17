@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f24f519ec3bb12622d74c1d02fbc0bb017aa2b24
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: d52a0ca4a2dc9b799a32f70962416ffe190e16db
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476411"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876189"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -435,6 +435,10 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 **移動後に、オンプレミスのソースで RemoteMailboxes を更新する必要がありますか?**
 
 はい、ソース テナント メールボックスがターゲット テナントに移動するときに、ソースのオンプレミス ユーザーの targetAddress (RemoteRoutingAddress/ExternalEmailAddress) を更新する必要があります。  メール ルーティングは、異なる targetAddresses を持つ複数のメール ユーザー間の参照に従う場合があります。メール ユーザーの空き時間情報の参照はメールボックス ユーザーの場所をターゲットにしている必要があります。 空き時間情報の参照は、複数のリダイレクトを追跡しない。 
+
+**Teams 会議はクロステナントを移行しますか?**  
+
+会議は移動しますが、アイテムがクロステナントに移行しても Teams 会議 URL は更新されません。 URL はターゲット テナントで無効になりますので、Teams 会議を削除して再作成する必要があります。
 
 **Teams チャット フォルダーのコンテンツはクロステナントを移行しますか?**  
 
