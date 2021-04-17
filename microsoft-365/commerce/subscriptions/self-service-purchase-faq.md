@@ -1,5 +1,5 @@
 ---
-title: セルフサービス購入についてよく寄せられる質問
+title: セルフサービス購入に関するよくあるご質問
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,112 +16,112 @@ ms.custom:
 - aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
-description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
+description: セルフサービス購入についてよく寄せられる質問への回答を紹介します。
 ms.date: 09/15/2020
 ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
 ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "47816927"
 ---
-# <a name="self-service-purchase-faq"></a>セルフサービス購入についてよく寄せられる質問
+# <a name="self-service-purchase-faq"></a>セルフサービス購入に関するよくあるご質問
 
-セルフサービス購入により、ユーザーは新しいテクノロジを試して、より大規模な組織を最終的に利益するソリューションを開発する機会を得ることができます。 中央の調達と IT teams は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を介してセルフサービス購入ソリューションを購入して展開するすべてのユーザーに対して表示されます。 管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 詳細については、「 [Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)」を参照してください。
+セルフサービス購入により、ユーザーは新しいテクノロジを試して、最終的により大規模な組織に利益をもたらすソリューションを開発する機会が得られます。 中央調達と IT チームは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を介してセルフサービス購入ソリューションを購入して展開するすべてのユーザーを表示できます。 管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。
 
-セルフサービス購入は、電源プラットフォーム (Power BI、電源アプリ、および電源自動化)、プロジェクト、Visio で利用できます。
+セルフサービス購入は、Power Platform (Power BI、Power Apps、Power Automate)、Project、Visio で利用できます。
 
 > [!NOTE]
-> セルフサービス購入は、インドまたは官公庁または教育機関のお客様にはご利用いただけません。 ブラジルおよびコンゴ民主共和国では、プロジェクトと Visio をセルフサービスで購入することはできません。
+> セルフサービス購入は、インドまたは政府機関や教育機関のお客様にはご利用いただけません。 Project と Visio は、ブラジルとコンゴ民主共和国ではセルフサービスで購入することはできません。
 
-## <a name="making-a-self-service-purchase"></a>セルフサービス購入の作成
+## <a name="making-a-self-service-purchase"></a>セルフサービス購入を行う
 
-### <a name="how-does-a-customer-make-a-self-service-purchase"></a>お客様はどのようにしてセルフサービス購入を行いますか?
+### <a name="how-does-a-customer-make-a-self-service-purchase"></a>セルフサービス購入はどのように行えますか?
 
-お客様は、製品の web サイトから、またはアプリ内購入プロンプトからセルフサービス購入を行うことができます。 お客様は、既存の Azure Active Directory (AD) テナント内のユーザーであることを確認するために、最初にメールアドレスを入力するよう求められています。 次に、Azure AD 資格情報を使用してサインインするように指示されています。 サインインした後、お客様は購入するサブスクリプションの数を選択し、クレジットカードの支払いを指定するように求められます。 購入が完了すると、サブスクリプションの使用を開始できるようになります。 買い手は、組織内の他のユーザーにライセンスを製品に割り当てることができる、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> の制限されたビューにアクセスできます。
+製品 Web サイトから、またはアプリ内購入プロンプトから、オンラインでセルフサービス購入を行うことができます。 既存の Azure Active Directory (AD) テナント内のユーザーであることを確認するために、最初にメール アドレスを入力するよう求められます。 次に、Azure AD 資格情報を使用してサインインするように指示されています。 サインインした後、購入するサブスクリプションの数を選択し、クレジット カードの支払いを指定するように求められます。 購入が完了すると、サブスクリプションの使用を開始できるようになります。 購入者は、製品のライセンスを組織内の他の人に割り当てることができる、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の制限されたビューにアクセスできます。
 
-### <a name="what-are-the-payment-options-for-self-service-purchases"></a>セルフサービス購入の支払いオプションとは
+### <a name="what-are-the-payment-options-for-self-service-purchases"></a>セルフサービス購入にはどのような支払い方法がありますか?
 
-現時点では、クレジットカードのみが利用可能な支払い方法です。 請求による支払いはサポートされていません。
+現時点では、ご利用いただける支払い方法はクレジット カードのみです。 請求書による支払いはサポートされていません。
 
-### <a name="who-can-buy-through-self-service-purchase"></a>セルフサービス購入で購入できるユーザー
+### <a name="who-can-buy-through-self-service-purchase"></a>誰がセルフサービス購入で購入できますか?
 
-管理された Azure AD テナントのゲスト以外のユーザーアカウントを持つユーザーは、セルフサービス購入を行うことができます。 セルフサービス購入は、官公庁または教育機関のテナントでは使用できません。 これが組織に当てはまる場合は、セルフサービス購入を制御するために追加の操作は必要ありません。
+管理対象 Azure AD テナントのゲスト以外のユーザー アカウントを持つユーザーは、セルフサービス購入を行うことができます。 セルフサービス購入は、政府または教育機関のテナントでは使用できません。 これが自分の組織に当てはまる場合は、セルフサービス購入を制御するために追加の操作は必要ありません。
 
 セルフサービス購入の対象になっていない組織または市場のユーザーには、IT 管理者に連絡するように求めるメッセージが表示されます。
 
-### <a name="can-guest-users-buy-through-self-service-purchase"></a>ゲストユーザーはセルフサービス購入で購入できますか?
+### <a name="can-guest-users-buy-through-self-service-purchase"></a>ゲスト ユーザーはセルフサービス購入で購入できますか?
 
-いいえ、ゲストユーザーはゲストになっているテナントでセルフサービス購入を完了できません。
+いいえ、ゲスト ユーザーはゲストになっているテナントでセルフサービス購入を完了できません。
 
-### <a name="can-users-synced-from-an-on-premises-active-directory-buy-through-self-service-purchase"></a>オンプレミスの Active Directory からのユーザーの同期は、セルフサービスの購入で行うことができますか。
+### <a name="can-users-synced-from-an-on-premises-active-directory-buy-through-self-service-purchase"></a>オンプレミスの Active Directory から同期されたユーザーは、セルフサービスの購入で行うことができますか?
 
-ユーザーが適格な Azure AD テナントにアクティブなユーザーアカウントを持っている場合は、セルフサービス購入を完了できます。
+ユーザーが、対象の Azure AD テナントにアクティブなユーザー アカウントを持っている場合は、セルフサービス購入を完了できます。
 
-### <a name="who-can-self-service-purchasers-assign-licenses-to"></a>セルフサービスの purchasers にライセンスを割り当てることができるユーザー
+### <a name="who-can-self-service-purchasers-assign-licenses-to"></a>セルフサービス購入者は誰にライセンスを割り当てることができますか?
 
-セルフサービス purchasers では、同じ Azure AD テナント内のユーザーにのみライセンスを割り当てることができます。 購入者は、ライセンスを割り当てるために <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> の限定されたビューにアクセスできます。 Purchasers は、セルフサービス購入で購入した製品にライセンスを割り当てることができ、同じ Azure AD テナント内のユーザーに対してのみライセンスを割り当てることができます。
+セルフサービス購入者は、同じ Azure AD テナント内のユーザーにのみライセンスを割り当てることができます。 購入者は、ライセンスを割り当てるために<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の制限されたビューにアクセスできます。 購入者は、セルフサービス購入で購入した製品のライセンスを割り当てることができ、同じ Azure AD テナント内のユーザーに対してのみライセンスを割り当てることができます。
 
-### <a name="where-does-the-self-service-purchaser-see-and-manage-their-purchases"></a>セルフサービスの購入者は購入を確認して管理しますか?
+### <a name="where-does-the-self-service-purchaser-see-and-manage-their-purchases"></a>セルフサービス購入者はどこで購入を確認および管理しますか?
 
-セルフサービス purchasers では、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の限定されたビューで購入を管理できます。 Purchasers は、常に、Microsoft 365 および Dynamics online のすべてのアプリに組み込まれているアプリ起動ツールの **管理者** タイルから管理センターにアクセスできます。 Purchasers では、作成した購入を表示したり、同じサービスに対して追加のサブスクリプションを購入したり、それらのサブスクリプションのライセンスを組織内の他のユーザーに割り当てることができます。 また、purchasers は、請求書の表示と支払い、支払い方法の更新、およびサブスクリプションのキャンセルを行うことができます。
+セルフサービス購入者は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の制限されたビューで購入を管理できます。 購入者は常に、すべての Microsoft 365 および Dynamics Online アプリに組み込まれているアプリ起動ツールの **[管理者]** タイルから管理センターにアクセスできます。 購入者は、実行した購入を表示したり、同じサービスに対して追加のサブスクリプションを購入したり、それらのサブスクリプションのライセンスを組織内の他のユーザーに割り当てたりすることができます。 また、購入者は、請求書の表示と支払い、支払い方法の更新、サブスクリプションのキャンセルを行うことができます。
 
-## <a name="pricing"></a>価格設定
+## <a name="pricing"></a>価格
 
-### <a name="what-is-the-pricing-for-self-service-purchases"></a>セルフサービス購入の価格設定について
+### <a name="what-is-the-pricing-for-self-service-purchases"></a>セルフサービス購入の価格はどのようになっていますか?
 
-セルフサービス購入の各製品の価格は、Microsoft の web サイトでご利用いただけます。 また、ユーザーがセルフサービス購入を行うときに、支払いの処理の一部として価格も表示されます。 これらの価格は、パートナーによって集中購入または料金を提示する際に組織が支払う価格とは異なる場合があります。
+セルフサービス購入の各製品の価格は、Microsoft の Web サイトでご確認いただけます。 また、ユーザーがセルフサービス購入を行うときに、精算手続きの一部として価格も表示されます。 これらの価格は、組織が一括購入する場合に支払う価格、またはパートナーを通じて提供される価格とは異なる場合があります。
 
-### <a name="who-is-responsible-for-payment"></a>支払いの責任者
+### <a name="who-is-responsible-for-payment"></a>支払いの責任者は誰ですか?
 
-セルフサービス購入によってサブスクリプションを購入するユーザーとは、請求先の人物、および購入の諸条件と価格に基づいて支払いの責任者をいいます。
+セルフサービス購入を通じてサブスクリプションを購入するユーザーです。このユーザーが請求先であり、購入の条件と価格に基づいて支払いを行う責任があります。
 
-## <a name="admin-capabilities"></a>管理機能
+## <a name="admin-capabilities"></a>管理者の機能
 
-### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>セルフサービス購入における管理者の権限を教えてください
+### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>セルフサービス購入において、管理者にはどのような機能がありますか?
 
-管理者は、組織内で行われたすべてのセルフサービスの購入を <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で確認できます。 これらのユーザーは、製品、購入者名、購入したサブスクリプション、有効期限、注文履歴、購入価格、および割り当てられたユーザーを各セルフサービス購入に対して確認できます。 電源プラットフォーム管理センターでは、管理者はセルフサービス購入容量を表示することもできます。 組織に必要な場合、管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 管理者は、セルフサービス購入された製品と一元的に購入された製品に対して、同じデータ管理およびアクセスポリシーを有します。
+管理者は、組織内で行われたすべてのセルフサービス購入を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で表示できます。 管理者は、製品、購入者名、購入済みのサブスクリプション、有効期限、注文履歴、購入価格、各セルフサービス購入に割り当てられているユーザーを表示できます。 Power Platform 管理センターでは、管理者はセルフサービス購入容量を表示することもできます。 組織から要求された場合、管理者は PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 管理者は、セルフサービス購入された製品と一元的に購入された製品に対して、同じデータ管理およびアクセス ポリシーを有します。
 
-管理者は、組織内のユーザーがセルフサービス購入を行うことができるかどうかを制御することもできます。 詳細については、「 [Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)」を参照してください。
+管理者は、組織内のユーザーがセルフサービス購入を行うことができるかどうかを制御することもできます。 詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。
 
-### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>セルフサービス購入を有効にすることによって、Microsoft はデータガバナンスとコンプライアンスをどのように重視していますか?
+### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>セルフサービス購入を有効にすることによるデータ ガバナンスとコンプライアンスを Microsoft はどのように重視していますか?
 
-管理者は、データガバナンスとコンプライアンスの要件に基づいて、テナント内で使用可能なサービスと製品を制御します。 組織で有効になっているすべてのデータ管理およびアクセスポリシーは、利用可能なセルフサービス購入サービスに適用されます。
+管理者は、データ ガバナンスとコンプライアンスの要件に基づいて、テナント内で使用可能なサービスと製品を制御します。 組織で有効になっているすべてのデータ管理およびアクセス ポリシーが、使用可能なセルフサービス購入サービスに適用されます。
 
-### <a name="who-owns-the-product-data-created-from-self-service-purchases"></a>セルフサービス購入から作成された製品データの所有者
+### <a name="who-owns-the-product-data-created-from-self-service-purchases"></a>セルフサービス購入から作成された製品データを所有するのは誰ですか?
 
 セルフサービス購入で購入した製品から作成されたデータは、組織によって所有および制御されます。
 
-### <a name="how-do-i-centralize-the-purchases-made-through-self-service-purchase"></a>セルフサービス購入で行われた購入を一元管理するにはどうすればよいですか?
+### <a name="how-do-i-centralize-the-purchases-made-through-self-service-purchase"></a>セルフサービス購入で行われた購入をどのように一元管理できますか?
 
-管理者は既存のライセンスを割り当てることも、セルフサービス購入製品の追加サブスクリプションを購入することもできます。これには、既存の契約と、セルフサービス購入に割り当てられたユーザーの料金があります。 これらの集中的に購入したライセンスを割り当てた後、管理者は purchasers に既存のサブスクリプションをキャンセルするよう要求できます。
+管理者は、セルフサービス購入に割り当てられたユーザーの既存の契約と価格設定を通じて、既存のライセンスを割り当てることも、セルフサービス購入製品の追加サブスクリプションを購入することもできます。 これらの一元的に購入されたライセンスを割り当てた後、管理者は購入者に既存のサブスクリプションをキャンセルするように要求することができます。
 
-### <a name="where-does-the-admin-see-self-service-purchases"></a>管理者はどこにセルフサービス購入を表示しますか?
+### <a name="where-does-the-admin-see-self-service-purchases"></a>管理者はどこでセルフサービス購入を確認できますか?
 
-グローバルおよび課金管理者は、 **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で**製品**を請求する際に、セルフサービス購入により購入したサブスクリプションを確認できます。 [製品] リストにフィルターを適用して、中央の調達で購入されたサブスクリプションのみを表示したり、セルフサービス購入で購入したサブスクリプションを含めることができます。
+グローバル管理者と請求管理者は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の **[課金情報]** > **[お使いの製品]** でセルフサービス購入を通じて購入したサブスクリプションを確認できます。 製品リストをフィルター処理して、中央調達で購入されたサブスクリプションのみを表示したり、セルフサービス購入で購入されたサブスクリプションを含めたりすることができます。
 
-管理者は、製品、買い手名、購入したサブスクリプション、有効期限、注文履歴、購入価格、割り当てられたユーザーを表示できます。
+管理者は、製品、購入者名、購入済みのサブスクリプション、有効期限、注文履歴、購入価格、割り当てられているユーザーを表示できます。
 
 ## <a name="support-and-training"></a>サポートとトレーニング
 
-### <a name="are-customers-it-departments-or-partners-expected-to-support-products-bought-through-self-service-purchase"></a>お客様の IT 部門やパートナーは、セルフサービス購入によって購入された製品をサポートすることを期待していますか。
+### <a name="are-customers-it-departments-or-partners-expected-to-support-products-bought-through-self-service-purchase"></a>セルフサービス購入で購入された製品は、ユーザーの IT 部門やパートナーでサポートされますか?
 
-IT 部門およびパートナーは、セルフサービス購入を通じて購入された製品に対するサポートを提供することを期待していません。 Microsoft は、セルフサービスの purchasers の標準サポートを提供しています。
+IT 部門やパートナーでは、セルフサービス購入で購入された製品に対するサポートは提供されません。 Microsoft は、セルフサービス購入者に対して標準サポートを提供します。
 
-### <a name="if-a-self-service-purchaser-calls-support-does-that-use-the-customers-premier-support-incidents"></a>セルフサービスの購入者がサポートに電話をかける場合、お客様のプレミアサポートインシデントを使用していますか?
+### <a name="if-a-self-service-purchaser-calls-support-does-that-use-the-customers-premier-support-incidents"></a>セルフサービス購入者がサポートに問い合わせる場合、プレミア サポート インシデントが使用されますか?
 
-セルフサービス purchasers では、お客様のプレミアサポートインシデントを使用してセルフサービス購入のサポートを受けることはできません。
+セルフサービス購入者が、セルフサービス購入のサポートを受けるためにプレミア サポート インシデントを使用することはありません。
 
-### <a name="how-are-users-expected-to-receive-training-on-the-products-they-buy-through-self-service-purchase"></a>セルフサービス購入で購入した製品について、ユーザーはどのようにトレーニングを受けられるようになりますか?
+### <a name="how-are-users-expected-to-receive-training-on-the-products-they-buy-through-self-service-purchase"></a>セルフサービス購入で購入した製品について、ユーザーはどのようにトレーニングを受けられますか?
 
-ユーザー向けの豊富なトレーニングは、製品 web サイトで提供されています。 これらの製品には、他のユーザーから直接回答やヒントを得るためのガイド学習、ドキュメント、サンプル、および強力なコミュニティが用意されています。
+ユーザー向けの豊富なトレーニングが、製品 Web サイトで提供されています。 これらの製品には、他のユーザーから直接回答やヒントを得るためのガイド学習、ドキュメント、サンプル、および強力なコミュニティが用意されています。
 
 ### <a name="what-happens-to-a-self-service-purchase-if-a-user-leaves-the-organization"></a>ユーザーが組織を離れた場合、セルフサービス購入はどうなりますか?
 
-最初にセルフサービス購入製品を購入したユーザーが組織を離れた場合、有効なユーザーは、サブスクリプションの期間中は製品を引き続き完全に使用できます。 サブスクリプションは、購入者が直接取り消すか、カスタマーサポートによってサブスクリプションのキャンセルを要求するまでアクティブなままになります。 管理者は、解約されたサブスクリプションのユーザーに対して、集中購入したライセンスを割り当てることもできます。
+最初にセルフサービス購入製品を購入したユーザーが組織を離れた場合、有効なユーザーは、サブスクリプション期間中は引き続きその製品を完全に使用できます。 サブスクリプションは、購入者が直接キャンセルするか、管理者がカスタマー サポートを介してサブスクリプションのキャンセルを要求するまでアクティブの状態が続きます。 管理者は、キャンセルされたサブスクリプションのユーザーに対して、一元的に購入されたライセンスを割り当てることもできます。
 
 ## <a name="partners"></a>パートナー
 
-### <a name="whats-the-role-of-microsofts-partners-in-self-service-purchases"></a>セルフサービス購入における Microsoft のパートナーの役割
+### <a name="whats-the-role-of-microsofts-partners-in-self-service-purchases"></a>セルフサービス購入における Microsoft のパートナーの役割は何ですか?
 
-管理権限を委任されたパートナーは、管理者と同様に、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>でセルフサービス購入を表示できます。パートナーは、セルフサービス購入によって購入された製品を集中管理する組織のサポートに役立ちます。 また、パートナーは、セルフサービス購入の機能を拡張するためのソリューションを提供することができます。
+代理管理者権限を持つパートナーは、管理者と同様に、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>でセルフサービス購入を表示できます。パートナーは、セルフサービス購入によって購入された製品を集中管理する組織をサポートします。 また、パートナーは、セルフサービス購入の機能を拡張するためのソリューションを提供することができます。
