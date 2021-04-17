@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d38d7a54aa860049e1968e5b92c801107bea0514
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687963"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876111"
 ---
-#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender for Endpoint on Android - プライバシー情報
+#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 用 Microsoft Defender for Endpoint - プライバシー情報
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,7 +32,9 @@ ms.locfileid: "51687963"
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender for Endpoint for Android は、構成済みの Android デバイスから情報を収集し、Defender for Endpoint を持つ同じテナントに格納します。
+Defender for Endpoint for Android は、構成済みの Android デバイスから情報を収集し、Defender for Endpoint を持つ同じテナントに格納します。 この情報は、Defender for Endpoint for iOS をセキュリティで保護し、最新の状態に保ち、期待通り実行し、サービスをサポートするために収集されます。
+
+データ ストレージの詳細については [、「Microsoft Defender for Endpoint data storage and privacy」を参照してください](data-storage-privacy.md)。
 
 情報は、Defender for Endpoint for Android のセキュリティを確保し、最新の状態に保ち、期待通り実行し、サービスをサポートするために収集されます。
 
@@ -42,7 +44,7 @@ Defender for Endpoint for Android は、構成済みの Android デバイスか�
 
 ### <a name="app-information"></a>アプリ情報
 
-デバイス上の Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
+デバイス上 **の** 悪意のある Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
 
 -  ソースのインストール
 -  APK の保存場所 (ファイル パス)
@@ -50,7 +52,7 @@ Defender for Endpoint for Android は、構成済みの Android デバイスか�
 
 ### <a name="web-page--network-information"></a>Web ページ / ネットワーク情報
 
-- [完全な URL] (サポートされているブラウザーの場合) (クリック時)
+- 悪意のある接続または Web ページが検出された場合にのみ、Web サイトの完全な URL。
 - 接続情報
 - プロトコルの種類 (HTTP、HTTPS など)
 
@@ -73,6 +75,9 @@ Defender for Endpoint for Android は、構成済みの Android デバイスか�
     -   ユーザー プリンシパル名 – ユーザーの電子メール ID
 
 ### <a name="product-and-service-usage-data"></a>製品とサービスの使用状況データ
+
+次の情報は、デバイスにインストールされている Microsoft Defender for Endpoint アプリの場合にのみ収集されます。 
+
 -   名前、バージョン、アプリアップグレードの状態を含むアプリ パッケージ情報
 
 -   アプリで実行されるアクション

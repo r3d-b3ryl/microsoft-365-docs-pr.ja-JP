@@ -18,12 +18,12 @@ description: 管理者は、Exchange Online Protection (EOP) の高度な配信�
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX
-ms.openlocfilehash: 09e07d8406b470fd3dac25944d013b997f2f90c1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760437"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876067"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760437"
 > [!NOTE]
 > この記事で説明する機能はプレビューで、すべてのユーザーが利用できるとは言え、変更される可能性があります。
 
-Exchange Online Protection [](secure-by-default.md)(EOP) では、マルウェアや信頼性の高いフィッシングの評決を引き起こしているメッセージに対して、安全なリストやフィルター バイパスを許可しないので、組織を既定でセキュリティで保護します。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあるという認識があります。 次に例を示します。
+既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアや高信頼のフィッシングの評決が発生するメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 次に例を示します。
 
 - **サード パーティのフィッシング シミュレーション**: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
 - **セキュリティ操作 (SecOps)** メールボックス: セキュリティ チームがフィルター処理されていないメッセージ (良いメッセージと悪いメッセージの両方) を収集および分析するために使用する専用のメールボックス。
@@ -44,12 +44,12 @@ Microsoft 365 の高度な配信ポリシーを使用して、これらの特定
 
 - EOP と Microsoft Defender 365 のフィルター Office、これらのメッセージに対してアクションを実行しません。<sup>\*</sup>
 - [スパムとフィッシングのゼロアワー パージ (ZAP)](zero-hour-auto-purge.md) は、これらのメッセージに対してアクションを実行しません。<sup>\*</sup>
-- [既定のシステム通知](alerts.md) は、これらのシナリオではトリガーされません。
+- [これらのシナリオでは](alerts.md) 、既定のシステム通知はトリガーされません。
 - [365 の Defender の AIR とクラスター Office、これらの](office-365-air.md) メッセージは無視されます。
 - 特に、サード パーティ製のフィッシング シミュレーションの場合:
   - [管理者の申請は](admin-submission.md) 、メッセージがフィッシング シミュレーション キャンペーンの一部であり、実際の脅威ではないという自動応答を生成します。 アラートと AIR はトリガーされません。
   - [Defender for Office 365](safe-links.md) のセーフ リンクは、これらのメッセージで特定された URL をブロックまたは削除しません。
-  - [Defender 365 の安全な添付Office、](safe-attachments.md) これらのメッセージの添付ファイルは削除されません。
+  - [Defender for Office 365](safe-attachments.md) の安全な添付ファイルは、これらのメッセージ内の添付ファイルを削除しません。
 
 <sup>\*</sup> マルウェアのフィルター処理やマルウェアに対する ZAP をバイパスできない。
 
@@ -106,8 +106,8 @@ Microsoft 365 の高度な配信ポリシーを使用して、これらの特定
 
 高度な配信ポリシーが役立つ 2 つのシナリオに加えて、フィルター処理をバイパスする必要がある他のシナリオがあります。
 
-- **サード パーティ製フィルター**: ドメインの MX レコードが Office 365 を指していない場合 (メッセージは最初にどこか別 [](secure-by-default.md)の場所にルーティングされます)、既定ではセキュリティで保護されません。
+- **サード パーティ製のフィルター**: ドメインのMX レコードが Office 365 を指していない場合 (メッセージは最初にどこか [](secure-by-default.md)別の場所にルーティングされます)、既定ではセキュリティ保護は *利用できません*。
 
   サード パーティのフィルター処理によって既に評価されているメッセージに対して Microsoft のフィルター処理をバイパスするには、メール フロー ルール (トランスポート ルールとも呼ばれる) を使用します。「メッセージで [SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)を設定するには、メール フロー ルールを使用する」を参照してください。
 
-- **レビュー中** の誤検知 : 管理者の申請を通じて Microsoft によって分析中の特定の [](admin-submission.md)メッセージを一時的に許可して、Microsoft に不適切とマークされている既知の良いメッセージ (誤検知) を報告することができます。 すべての上書きと同様に、これらの許容量は一時的なものとすることを強くお勧めします。
+- **レビュー中** の誤検知 : 管理者の申請を通じて Microsoft によって分析中の特定の [](admin-submission.md)メッセージを一時的に許可して、Microsoft に不適切とマークされている既知の良いメッセージ (誤検知) を報告することができます。 すべての上書きと同様に、これらの手当を **_一_** 時的に行うのを強くお勧めします。
