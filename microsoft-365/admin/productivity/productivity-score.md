@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914584"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876133"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -155,3 +155,11 @@ Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** �
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 
 生産性スコアについての考えと、改善方法についてのアイデアをお聞かせください。 製品内の **フィードバック** セクションを使用するか、生産性スコア チーム prodscorefeedback@microsoft.com までご連絡ください。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[レポートを使用して Microsoft 365 のアクティビティを監視する](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (記事)
+
+[Microsoft 365 利用状況分析を有効にする](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (記事)
+
+[Microsoft 365 管理センターの概要](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (ビデオ)
