@@ -140,6 +140,7 @@
 
 #### Microsoft Defender ウイルス対策のトラブルシューティング
 ##### [更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング](troubleshoot-reporting.md)
+##### [パフォーマンスに関する問題のトラブルシューティング](troubleshoot-performance-issues.md)
 ##### [Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする](troubleshoot-microsoft-defender-antivirus.md)
 ##### [サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -249,6 +250,7 @@
 ##### [望ましくない可能性のあるアプリケーションを検出してブロックする](linux-pua.md)
 ##### [Linux 用 Microsoft Defender for Endpoint でスキャンをスケジュールする](linux-schedule-scan-atp.md)
 ##### [Microsoft Defender for Endpoint (Linux) の更新をスケジュールする](linux-update-MDE-Linux.md)
+##### [Chef を使用して Linux 用 Microsoft Defender for Endpoint を展開する](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [トラブルシューティング]()
 ##### [インストールに関する問題のトラブルシューティング](linux-support-install.md)
