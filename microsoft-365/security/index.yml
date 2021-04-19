@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft 365 のセキュリティに関するドキュメント
-summary: Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明し、あらゆる攻撃から企業をより適切に保護できるようにします。
+summary: Microsoft 365 セキュリティ センターは、複数のセキュリティ テクノロジを 1 つの包括的な管理コンソールに統合し、企業を保護する拡張機能を提供します。
 metadata:
   title: Microsoft 365 のセキュリティに関するドキュメント
   description: Microsoft Defender for Endpoint について学ぶ - サイバー脅威からエンドポイントを保護し、セキュリティ運用チームに脅威を修復する機能を提供する方法。
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: c7ec3e0bb970d74d9e33c3d74eb0cd18aaf8d16c
-  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+  ms.openlocfilehash: a8d2e2c5ec41436bba7f013304daa8f259db9444
+  ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "51200355"
+  ms.lasthandoff: 04/15/2021
+  ms.locfileid: "51768556"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:

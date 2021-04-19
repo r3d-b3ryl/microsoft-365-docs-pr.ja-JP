@@ -301,7 +301,7 @@
               href: how-dlp-works-between-admin-centers.md
             - name: DLP ポリシーの警告を構成および表示する (プレビュー)
               href: dlp-configure-view-alerts-policies.md
-            - name: 'DLP ポリシー(プレビュー)で感度ラベルを条件として使用する '
+            - name: 'DLP ポリシーで感度ラベルを条件として使用する '
               href: dlp-sensitivity-label-as-condition.md
             - name: Microsoft 以外のクラウド アプリにはデータ損失防止ポリシーを使用する
               href: dlp-use-policies-non-microsoft-cloud-apps.md
@@ -385,8 +385,12 @@
           items:
             - name: CellTrust
               href: archive-celltrust-data.md
-            - name: Cisco Jabber
+            - name: MS SQL 上の Cisco Jabber
               href: archive-ciscojabberonmssql-data.md
+            - name: Oracle 上の Cisco Jabber (プレビュー)
+              href: archive-ciscojabberonoracle-data.md
+            - name: PostgreSQL 上の Cisco Jabber (プレビュー)
+              href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX 接続

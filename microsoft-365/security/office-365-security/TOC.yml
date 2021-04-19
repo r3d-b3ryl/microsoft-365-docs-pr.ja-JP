@@ -1,9 +1,11 @@
 - name: Office 365 セキュリティ
-  href: overview.md
+  href: index.yml
   expanded: true
   items:
     - name: 概要
       items:
+        - name: Office 365 セキュリティの概要
+          href: overview.md
         - name: Defender for Office 365
           href: defender-for-office-365.md
         - name: Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
@@ -385,3 +387,5 @@
       href: ../index.yml
     - name: Microsoft Defender for Endpoint
       href: ../defender-endpoint/index.yml
+    - name: Microsoft Defender for Identity
+      href: 'https://docs.microsoft.com/defender-for-identity/'
