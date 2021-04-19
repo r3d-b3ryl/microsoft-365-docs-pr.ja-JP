@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876201"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887259"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの優先順位付け
 
@@ -102,7 +102,7 @@ Microsoft 365 Defender は、相関分析を適用し、関連するアラート
 
    - 格納: テナントへの追加の影響を軽減します。
    - 根絶: セキュリティの脅威を削除します。
-   - 回復: 攻撃前の状態にテナント リソースを復元します。
+   - 回復: テナント リソースをインシデントの前の状態に復元します。
 
 3. インシデントを解決した後、時間を取って次の手順を実行します。
 
