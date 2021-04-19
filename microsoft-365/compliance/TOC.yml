@@ -208,7 +208,7 @@
             - name: OME のバージョンを比較する
               href: ome-version-comparison.md
             - name: Office 365 Message Encryption に関する FAQ
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: Exchange Online がメールの機密情報をセキュリティで保護する方法
               href: exchange-online-secures-email-secrets.md
             - name: Office 365 でメール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
@@ -303,10 +303,12 @@
               href: dlp-configure-view-alerts-policies.md
             - name: 'DLP ポリシーで感度ラベルを条件として使用する '
               href: dlp-sensitivity-label-as-condition.md
-            - name: Microsoft 以外のクラウド アプリにはデータ損失防止ポリシーを使用する
+            - name: Microsoft 以外のクラウド アプリのデータ損失防止ポリシーを使用する
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: DLP ポリシーの条件と例外 (プレビュー)
+            - name: DLP ポリシーの条件と例外
               href: dlp-conditions-and-exceptions.md
+            - name: データ損失防止ポリシーヒントのリファレンス
+              href: dlp-policy-tips-reference.md
 - name: 情報ガバナンスの管理
   items:
     - name: データを統制する
