@@ -222,6 +222,7 @@
 
 ### [iOS 用 Microsoft Defender for Endpoint API]()
 #### [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
+#### [新機能](ios-whatsnew.md)
 
 #### [展開]()
 ##### [Intune を介した iOS 用 Microsoft Defender for Endpoint の展開](ios-install.md)
@@ -631,4 +632,5 @@
 ##### [攻撃面の減少ルールに以降する](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
-# [Defender for Office 365](../office-365-security/overview.md)
+# [Defender for Office 365](../office-365-security/index.yml)
+# [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
