@@ -28,7 +28,7 @@ ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: アクティブ サービスが中断していないかどうかを確認するため、サポートに連絡する前に、Microsoft 365 サービスの正常性状態を表示します。
 ms.openlocfilehash: e0ab4eaa1f7a96168839a4abef2f0f254a21d0ad
 ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/08/2021
 ms.locfileid: "51644634"
@@ -47,7 +47,7 @@ ms.locfileid: "51644634"
 1. [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) の Microsoft 365 管理センターに移動し、管理者アカウントでサインインします。
 
     > [!NOTE]
-    > グローバル管理者またはサービス サポート管理者ロールが割り当てられているユーザーは、サービスの正常性を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)」を参照してください。
+    > グローバル 管理者またはサービス サポート管理者の役割が割り当てられているユーザーは、サービスの状態を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)」を参照してください。
   
 2. 新しい管理センターを使用していない場合は、[**ホーム**] ページで、右上隅にある [**新しい管理センターを試す**] トグルを選択します。
 
@@ -154,4 +154,4 @@ Microsoft 365 サービスで問題が発生し、それが [**サービス正�
 
 [Microsoft 365 管理センターのアクティビティ レポート](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 [メッセージ センターのユーザー設定](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)<br/>
-[管理センターで Windows リリースの正常性を確認する方法](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+[管理センターで Windows リリースの状態を確認する方法](https://docs.microsoft.com/windows/deployment/update/check-release-health)
