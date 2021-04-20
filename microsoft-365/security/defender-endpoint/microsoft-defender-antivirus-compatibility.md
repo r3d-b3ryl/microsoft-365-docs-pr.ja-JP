@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 131b9970572b1034ba5c9907a001f0497d450339
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 8e179135f12ad6f4ea765eaf975a40534446b51f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765445"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893391"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender ウイルス対策の互換性
 
@@ -60,7 +60,7 @@ Microsoft Defender ウイルス対策は、Windows 10 を実行しているエ�
 
 Windows Server、バージョン 1803 以降、または Windows Server 2019 を使用している場合は、次のレジストリ キーを設定して、Microsoft Defender Antivirus をパッシブ モードに設定できます。
 - パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- 名前: `ForcePassiveMode`
+- 名前: `ForceDefenderPassiveMode`
 - タイプ: `REG_DWORD`
 - 値: `1`
 
@@ -125,7 +125,7 @@ Windows Server インストールの主な違いおよび管理オプション�
 ## <a name="see-also"></a>関連項目
 
 - [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
-- [Windows Server の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
+- [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
 - [ブロック モードの EDR](edr-in-block-mode.md)
 - [エンドポイント保護の構成](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 - [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](defender-endpoint-false-positives-negatives.md)

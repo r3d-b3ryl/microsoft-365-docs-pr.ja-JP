@@ -1,5 +1,5 @@
 ---
-title: グループ ポリシーを使用して Windows 10 デバイスを Microsoft Defender ATP にオンボードする
+title: グループ ポリシーを使用して Windows 10 デバイスを Microsoft Defender for Endpoint にオンボードする
 description: グループ ポリシーを使用して、構成パッケージを Windows 10 デバイスに展開して、サービスにオンボードします。
 keywords: グループ ポリシーを使用したデバイスの構成、デバイス管理、Windows ATP デバイスの構成、Microsoft Defender for Endpoint デバイスのオンボード、グループ ポリシー
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fc4b17ef96e85d3bacd4e83c2de3f4bb7fbfa5c3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166173"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893636"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシーを使用した Windows 10 デバイスのオンボード 
 
@@ -34,7 +34,7 @@ ms.locfileid: "51166173"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 
 > [!NOTE]
@@ -42,7 +42,7 @@ ms.locfileid: "51166173"
 > 
 > Windows Server 2019 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
 
-## <a name="onboard-devices-using-group-policy"></a>グループ ポリシーを使用したオンボード デバイス
+## <a name="onboard-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする
 
 [![さまざまな展開パスを示す PDF のイメージ](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 

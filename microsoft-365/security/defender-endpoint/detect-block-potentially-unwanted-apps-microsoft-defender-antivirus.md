@@ -14,38 +14,35 @@ audience: ITPro
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 20d4767f9813b741c55109d617f78302feaa0f7e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 8350db473580fd4d1728c3473742da5b63196c52
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765025"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893579"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションの検出とブロック
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
-> [!NOTE]
-> 望ましくない可能性のあるアプリケーション (PUA) は、コンピューターの動作が遅くなる、予期しない広告を表示する、または最悪の場合は予期しないソフトウェアや望ましくない可能性のある他のソフトウェアをインストールするソフトウェアのカテゴリです。 Windows 10 (バージョン 2004 以降) の既定では、Microsoft Defender ウイルス対策は、エンタープライズ (E5) デバイスの PUA と見なされるアプリをブロックします。
-
-望ましくない可能性のあるアプリケーション (PUA) は、ウイルス、マルウェア、その他の種類の脅威とは見なされませんが、エンドポイントのパフォーマンスや使用に悪影響を及ぼすエンドポイントに対してアクションを実行する可能性があります。 _PUA_ は、特定の種類の望ましくない動作が原因で、Microsoft Defender for Endpoint によって評価される評価が低いアプリケーションを参照できます。
+望ましくない可能性のあるアプリケーション (PUA) は、コンピューターの動作が遅くなる、予期しない広告を表示する、または最悪の場合は予期しないソフトウェアや望ましくない可能性のある他のソフトウェアをインストールするソフトウェアのカテゴリです。 PUA はウイルス、マルウェア、その他の種類の脅威とは見なされませんが、エンドポイントのパフォーマンスや使用に悪影響を及ぼすエンドポイントに対してアクションを実行する可能性があります。 PUA *という用語は* 、特定の種類の望ましくない動作が原因で、Microsoft Defender for Endpoint によって評価される、評判の悪いアプリケーションを参照できます。
 
 次に例を示します。
 
 - **広告または** プロモーションを表示する広告ソフトウェア(Web ページに広告を挿入するソフトウェアを含む)。
-- **同じエンティティによって** デジタル署名されていない他のソフトウェアのインストールを提供するソフトウェアのバンドル。 また、PUA と見なされる他のソフトウェアのインストールを提供するソフトウェア。
+- **同じエンティティによって** デジタル署名されていない他のソフトウェアのインストールを提供するソフトウェアのバンドル。 また、PUA と見なす他のソフトウェアをインストールするソフトウェアも提供しています。
 - **セキュリティ製品の存在** で動作が異なるソフトウェアを含む、セキュリティ製品による検出を積極的に回避しようとする Evasion ソフトウェア。
 
 > [!TIP]
 > セキュリティ機能による特別な注意のためにアプリケーションにラベルを付けするために使用する条件の詳細と条件については、「Microsoft がマルウェアと望ましくない可能性のあるアプリケーションを識別する方法」を [参照してください](/windows/security/threat-protection/intelligence/criteria)。
 
-望ましくない可能性のあるアプリケーションは、ネットワークが実際のマルウェアに感染するリスクを高め、マルウェア感染を特定しにくくしたり、IT リソースを無駄にしたりします。 PUA 保護は、Windows 10、Windows Server 2019、および Windows Server 2016 でサポートされています。
+望ましくない可能性のあるアプリケーションは、ネットワークが実際のマルウェアに感染するリスクを高め、マルウェア感染を特定しにくくしたり、IT リソースを無駄にしたりします。 PUA 保護は、Windows 10、Windows Server 2019、および Windows Server 2016 でサポートされています。 Windows 10 (バージョン 2004 以降) では、既定で PUA for Enterprise (E5) デバイスと見なされるアプリがブロックされます。
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -55,8 +52,10 @@ ms.locfileid: "51765025"
 
 Microsoft Edge (クロム ベースのバージョン 80.0.361.50) で望ましくない可能性があるアプリケーション保護は既定で無効になっていますが、ブラウザー内から簡単にオンにできます。
 
-1. 省略記号を選択し、[設定] を **選択します**。
+1. エッジ ブラウザーで省略記号を選択し、[設定] を **選択します**。
+
 2. [プライバシー **、検索、サービス] を選択します**。
+
 3. [セキュリティ **] セクションで** 、[望ましくない可能性のあるアプリ **をブロックする] をオンにします**。
 
 > [!TIP]
@@ -68,7 +67,7 @@ PUA 保護が有効になっているクロム ベースのエッジでは、Mic
 
 セキュリティ管理者 [は、Microsoft](/DeployEdge/configure-microsoft-edge) Edge と Microsoft Defender SmartScreen を組み合わせて PUA に関連付けられた URL からユーザーのグループを保護する方法を構成できます。 Microsoft Defender SmartScreen [には、PUA](/DeployEdge/microsoft-edge-policies#smartscreen-settings) をブロックするためのグループ ポリシー設定など、いくつかのグループ ポリシー [設定が明示的に用意されています](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled)。 さらに、管理者はグループ ポリシー設定を使用して [Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) をオンまたはオフにし、Microsoft Defender SmartScreen 全体を構成できます。
 
-Microsoft Defender for Endpoint には、Microsoft が管理するデータ セットに基づいて独自のブロック リストが用意されています。独自の脅威インテリジェンスに基づいてこのリストをカスタマイズできます。 Microsoft Defender for Endpoint ポータル [で](/microsoft-365/security/defender-endpoint/manage-indicators) インジケーターを作成および管理する場合、Microsoft Defender SmartScreen は新しい設定を尊重します。
+Microsoft Defender for Endpoint には、Microsoft が管理するデータ セットに基づいて独自のブロックリストが含まれるが、独自の脅威インテリジェンスに基づいてこのリストをカスタマイズできます。 Microsoft Defender for Endpoint ポータル [で](manage-indicators.md) インジケーターを作成および管理する場合、Microsoft Defender SmartScreen は新しい設定を尊重します。
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策
 
@@ -123,7 +122,7 @@ System Center 2012 Configuration Manager の場合は、「Configuration Manager
 
 7. [有効 **] を** 選択して PUA 保護を有効にします。
 
-8. [**オプション]** で、[**ブロック]** を選択して望ましくない可能性のあるアプリケーションをブロックするか、[監査モード] を選択して環境での設定の動作をテストします。 **[OK]** を選択します。
+8. [**オプション]** で、[**ブロック]** を選択して望ましくない可能性のあるアプリケーションをブロックするか、[監査モード] を選択して環境での設定の動作をテストします。 [**OK**] を選択します。
 
 9. グループ ポリシー オブジェクトは、通常と同じ方法で展開します。
 
@@ -135,7 +134,7 @@ System Center 2012 Configuration Manager の場合は、「Configuration Manager
 Set-MpPreference -PUAProtection Enabled
 ```
 
-このコマンドレットの値を設定して、 `Enabled` 機能が無効になっている場合に有効にします。
+無効になっている場合、このコマンドレットの値 `Enabled` を設定して機能を有効にします。
 
 ##### <a name="to-set-pua-protection-to-audit-mode"></a>PUA 保護を監査モードに設定するには
 
@@ -153,7 +152,7 @@ PUA 保護を有効に保つことをお勧めします。 ただし、次のコ
 Set-MpPreference -PUAProtection Disabled
 ```
 
-このコマンドレットの値を設定すると、 `Disabled` 機能が有効になっている場合は機能がオフになります。
+このコマンドレットの値を設定して `Disabled` 、機能が有効になっている場合は無効にします。
 
 [Microsoft Defender ウイルス対策で PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)を使用する方法の詳細については、「Use PowerShell コマンドレットを使用して Microsoft Defender Antivirus コマンドレットと[Defender](/powershell/module/defender/index)コマンドレットを構成および実行する」を参照してください。
 
@@ -180,6 +179,17 @@ PSComputerName   :
 
 Microsoft Defender [ウイルス対策イベントの表示の詳細](troubleshoot-microsoft-defender-antivirus.md) については、「トラブルシューティング イベントの IDS」を参照してください。 PUA イベントは、イベント ID **1160 の下に記録されます**。
 
+Microsoft Defender for Endpoint を使用している場合は、高度な検索クエリを使用して PUA イベントを表示できます。 クエリの例を次に示します。
+
+```console
+DeviceEvents
+| where ActionType == "AntivirusDetection"
+| extend x = parse_json(AdditionalFields)
+| evaluate bag_unpack(x)
+| where ThreatName startswith_cs 'PUA:'
+| project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
+```
+
 ## <a name="excluding-files"></a>ファイルの除外
 
 PUA 保護によってファイルが誤ってブロックされた場合や、タスクを完了するために PUA の機能が必要な場合があります。 このような場合、ファイルを除外リストに追加できます。
@@ -189,4 +199,4 @@ PUA 保護によってファイルが誤ってブロックされた場合や、�
 ## <a name="see-also"></a>関連項目
 
 - [次世代の保護](microsoft-defender-antivirus-in-windows-10.md)
-- [動作、ヒューリスティック、およびリアルタイムの保護を構成する](configure-protection-features-microsoft-defender-antivirus.md)
+- [行動、ヒューリスティック、リアルタイム保護を構成する](configure-protection-features-microsoft-defender-antivirus.md)

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP の接続アプリケーション
+title: Microsoft Defender for Endpoint の接続アプリケーション
 ms.reviewer: ''
-description: 標準の OAuth 2.0 プロトコルを使用して認証し、Microsoft Defender ATP API で使用するためのトークンを提供する接続パートナー アプリケーションを表示します。
+description: 標準の OAuth 2.0 プロトコルを使用して認証を行い、Microsoft Defender for Endpoint API で使用するためのトークンを提供する接続パートナー アプリケーションを表示します。
 keywords: パートナー、アプリケーション、サードパーティ、接続、sentinelone、ルックアウト、bitdefender、corrata、morphisec、paloalto、ziften、より良いモバイル
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 294d6cfa5f8bf6b883c37e527cb492e8d65fc94c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163601"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893499"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の接続アプリケーション
 
@@ -33,7 +33,7 @@ ms.locfileid: "51163601"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 接続されたアプリケーションは、API を使用して Defender for Endpoint プラットフォームと統合されます。 
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP で条件付きアクセスを構成する
+title: Microsoft Defender for Endpoint で条件付きアクセスを構成する
 description: 条件付きアクセスを実装するために Intune、Microsoft Defender セキュリティ センター、Azure で実行する必要がある手順について説明します。
 keywords: 条件付きアクセス、条件付きアクセス、デバイス リスク、リスク レベル、統合、Intune 統合
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0185d7875ac149909ef088d041383a1cf36a8a3a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165863"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893651"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で条件付きアクセスを構成する
 
@@ -31,11 +31,11 @@ ms.locfileid: "51165863"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 このセクションでは、条件付きアクセスを適切に実装するために必要なすべての手順について説明します。
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 >[!WARNING]
 >このシナリオでは、登録されているデバイスAD Azure がサポートされていない点に注意することが重要です。</br>
 >Intune に登録されているデバイスだけがサポートされています。
@@ -116,4 +116,4 @@ Microsoft Defender セキュリティ センター、Intune ポータル、Azure
 
 詳細については [、「Enable Microsoft Defender ATP with Conditional Access in Intune」を参照してください](https://docs.microsoft.com/intune/advanced-threat-protection)。
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

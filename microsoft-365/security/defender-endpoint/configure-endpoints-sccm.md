@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: b477f302855cb5d4b00e0502bcfa9aa3aeb6b5c2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165575"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892865"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用した Windows 10 デバイスのオンボード
 
@@ -35,7 +35,7 @@ ms.locfileid: "51165575"
 - Microsoft Endpoint Configuration Manager current branch
 - System Center 2012 R2 構成マネージャー
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## <a name="supported-client-operating-systems"></a>サポートされているクライアント オペレーティング システム
 
@@ -160,7 +160,7 @@ System Center Configuration Manager コンプライアンスの詳細につい�
 監査モードまたはブロック モードでネットワーク保護を有効にする前に、サポート ページから入手できるマルウェア対策プラットフォーム更新プログラムがインストール [されていることを確認してください](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
 
-**フォルダー アクセスの制御**<br>
+**制御されたフォルダー アクセス**<br>
 監査モードで機能を 30 日以上有効にします。 この期間が終了した後、検出を確認し、保護されたディレクトリへの書き込みを許可するアプリケーションの一覧を作成します。
 
 詳細については、「管理フォルダー アクセス [の評価」を参照してください](evaluate-controlled-folder-access.md)。
@@ -223,7 +223,7 @@ System Center 2012 R2 Configuration Manager を使用している場合、監視
 
     ![エラーがない展開が正常に実行されたことを示す Configuration Manager](images/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-atp-service"></a>デバイスが Microsoft Defender ATP サービスに準拠しているのを確認する
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>デバイスが Microsoft Defender for Endpoint サービスに準拠しているのを確認する
 
 System Center 2012 R2 Configuration Manager で構成アイテムのコンプライアンス ルールを設定して、展開を監視できます。
 
@@ -244,5 +244,5 @@ Value: "1"
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
-- [新しくオンボードされた Microsoft Defender ATP デバイスで検出テストを実行する](run-detection-test.md)
+- [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

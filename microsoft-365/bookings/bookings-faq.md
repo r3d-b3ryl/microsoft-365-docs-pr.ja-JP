@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft Bookings のよく寄せられる質問。
-ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
-ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
+ms.openlocfilehash: 5338d710fa58ff9eba88b068f4fb412cecb83ae1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50999531"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892919"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft Bookings に関するよく寄せられる質問
 
@@ -118,7 +118,7 @@ OWA メールボックス ポリシーを使用して Bookings へのアクセ�
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Microsoft Bookings の取得方法
 
-Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5 ライセンス、および iOS および Android コンパニオン アプリをお持ちのお客様は、Microsoft 365 で予約を利用できます。 予約はスタンドアロン アプリとして利用できません。 Outlook Web Appまたは Outlook on the web は、Outlook 内にデータを格納する場合に、Bookings を使用するために有効にする必要があります。
+予約は、Office 365 A3、A5、E3、E5、Microsoft 365 Business Standard、Microsoft 365 Business Premium、A3、A5、E3、E5 をご利用のお客様に提供されます。 iOS と Android コンパニオン アプリで予約を使用できます。 予約はスタンドアロン アプリとして利用できません。 Outlook Web Appまたは Outlook on the web は、Outlook 内にデータを格納する場合に、Bookings を使用するために有効にする必要があります。
 
 Bookings ライセンスは、カレンダーの作成と管理など、製品に対して完全な機能を提供します。 また、管理者または閲覧者の役割でユーザーがスタッフとして追加された場合に、ユーザーが既存の予定表を表示および編集することもできます。
 
@@ -349,7 +349,7 @@ Bookings がスタッフ メンバーの予定表と適切に同期するには�
 
 このエラーが長い期間続く場合、または頻繁に表示される場合は、サポートにお問い合わせください。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加のリソース
 
 
   - [Microsoft Bookings がエンタープライズ ブログの可用性を拡大](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)

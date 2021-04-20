@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP にオンボードされているデバイスを取得する
-description: Intune で管理されているデバイスの Microsoft Defender ATP へのオンボーディングを追跡し、オンボーディング速度を向上します。
+title: Microsoft Defender for Endpoint にオンボードされているデバイスを取得する
+description: Intune で管理されたデバイスの Microsoft Defender for Endpoint へのオンボーディングを追跡し、オンボーディング 速度を向上します。
 keywords: オンボード、Intune 管理、MDATP、WDATP、Microsoft Defender、Windows Defender、高度な脅威保護、構成管理
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6145acd5e8e2743ff42dce3cf01af0128e8ca225
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5e20c424f15561c8b6f0544b80aca6e30c56409d
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166091"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893331"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint にオンボードされているデバイスを取得する
 
@@ -31,7 +31,7 @@ ms.locfileid: "51166091"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 オンボードされた各デバイスは、追加のエンドポイント検出と応答 (EDR) センサーを追加し、ネットワーク内の侵害アクティビティに対する可視性を向上します。 また、オンボーディングにより、デバイスで脆弱なコンポーネントやセキュリティ構成の問題をチェックし、攻撃中に重大な修復アクションを受け取る可能性があります。
 
@@ -71,7 +71,7 @@ Defender for Endpoint は [、Windows 10 デバイスのオンボードに便利
 
 詳細については [、「Intune デバイス構成プロファイルを使用してデバイスを Defender for Endpoint にオンボードする」を参照してください](https://docs.microsoft.com/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)。
 
->Microsoft Defender ATP を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>Microsoft Defender ATP を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>関連項目
 - [デバイスが正しく構成されていることを確認する](configure-machines.md)

@@ -1,5 +1,5 @@
 ---
-title: Windows Server の Microsoft Defender ウイルス対策
+title: Windows Server 上の Microsoft Defender ウイルス対策
 description: Windows Server 2016 および Windows Server 2019 で Microsoft Defender ウイルス対策を有効にして構成する方法について説明します。
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
 search.product: eADQiWindows 10XVcnh
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d9452b6d2eeaad3880894b9ec66c8bc71797b429
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 50e6f9b16dbc633e75e86acdc54ac43580107ae3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764605"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893379"
 ---
-# <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server の Microsoft Defender ウイルス対策
+# <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -160,7 +160,7 @@ sc query Windefend
 
 自動サンプル申請を有効にするには、管理者として Windows PowerShell コンソールを起動し、次のいずれかの設定に従って **SubmitSamplesConsent** 値データを設定します。
 
-|設定  |説明  |
+|Setting  |説明  |
 |---------|---------|
 |**0**  - **常にプロンプトを表示する**     |Microsoft Defender ウイルス対策サービスでは、必要なすべてのファイルの提出を確認するように求めるメッセージが表示されます。 これは Microsoft Defender ウイルス対策の既定の設定ですが、WINDOWS Server 2016 または 2019 のインストールでは GUI を使用しない場合は推奨されません。         |
 |**1**   - **安全なサンプルを自動的に送信する**     |Microsoft Defender ウイルス対策サービスは、"安全" とマークされているすべてのファイルを送信し、残りのファイルを求めるメッセージを表示します。         |
@@ -181,7 +181,7 @@ Microsoft 以外のウイルス対策製品をプライマリ ウイルス対策
 
 Windows Server、バージョン 1803、または Windows Server 2019 を使用している場合は、次のレジストリ キーを設定して Microsoft Defender Antivirus をパッシブ モードに設定できます。
 - パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- 名前: `ForcePassiveMode`
+- 名前: `ForceDefenderPassiveMode`
 - タイプ: `REG_DWORD`
 - 値: `1`
 

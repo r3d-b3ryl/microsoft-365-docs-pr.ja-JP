@@ -1,6 +1,6 @@
 ---
 title: デバイス プロキシとインターネット接続の設定を構成する
-description: クラウド サービスとの通信を有効にするには、Microsoft Defender ATP プロキシとインターネット設定を構成します。
+description: Microsoft Defender for Endpoint プロキシとインターネット設定を構成して、クラウド サービスとの通信を有効にします。
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644706"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893603"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -178,7 +178,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 > [!NOTE]
 > Azure Security Center (ASC) 経由でオンボーディングを行う場合、複数のワークスペースが使用される可能性があります。 上記の TestCloudConnection.exe 手順を、各ワークスペースのオンボード コンピューターで実行する必要があります (ワークスペース間で *.blob.core.windows.net URL に変更が加わるかどうかを判断するには)。
 
-## <a name="verify-client-connectivity-to-microsoft-defender-atp-service-urls"></a>Microsoft Defender ATP サービス URL へのクライアント接続を確認する
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>エンドポイント サービス URL 用 Microsoft Defender へのクライアント接続を確認する
 
 プロキシ構成が正常に完了したことを確認します。WinHTTP は環境内のプロキシ サーバーを介して検出および通信でき、プロキシ サーバーは Defender for Endpoint サービス URL へのトラフィックを許可します。
 

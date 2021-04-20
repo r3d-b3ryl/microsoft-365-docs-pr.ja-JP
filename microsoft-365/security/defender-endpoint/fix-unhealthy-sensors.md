@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: a24dc4ef23d32b19de9d2871b7d87aae90d05828
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065699"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893403"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で不健康なセンサーを修正する
 
@@ -32,11 +32,11 @@ ms.locfileid: "51065699"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
 構成ミスまたは非アクティブとして分類されたデバイスは、さまざまな原因によりフラグが設定される可能性があります。 このセクションでは、デバイスが非アクティブまたは正しく構成されていないと分類された原因について説明します。
 
-## <a name="inactive-devices"></a>非アクティブなデバイス
+## <a name="inactive-devices"></a>非アクティブ デバイス
 
 非アクティブなデバイスは、問題が原因でフラグが設定されているとは限りません。 デバイスで実行される次のアクションにより、デバイスが非アクティブとして分類される可能性があります。
 
@@ -55,7 +55,7 @@ ms.locfileid: "51065699"
 
 デバイスが 'Active' 状態にあると思いますか? [サポート チケットを開きます](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561)。
 
-## <a name="misconfigured-devices"></a>誤った構成済みデバイス
+## <a name="misconfigured-devices"></a>誤って構成されたデバイス
 構成が正しく設定されていないデバイスは、さらに次のように分類できます。
 - 通信障害
 - センサー データなし
@@ -68,7 +68,7 @@ ms.locfileid: "51065699"
 - [デバイスにインターネット接続が確立されている](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
   Window Defender ATP センサーでは、センサー データを報告し、Microsoft Defender for Endpoint サービスと通信するために Microsoft Windows HTTP (WinHTTP) が必要です。
 
-- [エンドポイント サービス URL 用 Microsoft Defender へのクライアント接続を確認する](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
+- [エンドポイント サービス URL 用 Microsoft Defender へのクライアント接続を確認する](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   プロキシ構成が正常に完了し、WinHTTP が環境内のプロキシ サーバーを介して検出して通信し、プロキシ サーバーが Microsoft Defender for Endpoint サービス URL へのトラフィックを許可することを確認します。
 
 修正アクションを実行してもデバイスの状態が正しく構成されていない場合は、サポート [チケットを開きます](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)。
@@ -80,7 +80,7 @@ ms.locfileid: "51065699"
 - [デバイスにインターネット接続が確立されている](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
   Window Defender ATP センサーでは、センサー データを報告し、Microsoft Defender for Endpoint サービスと通信するために Microsoft Windows HTTP (WinHTTP) が必要です。
 
-- [エンドポイント サービス URL 用 Microsoft Defender へのクライアント接続を確認する](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
+- [エンドポイント サービス URL 用 Microsoft Defender へのクライアント接続を確認する](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   プロキシ構成が正常に完了し、WinHTTP が環境内のプロキシ サーバーを介して検出して通信し、プロキシ サーバーが Microsoft Defender for Endpoint サービス URL へのトラフィックを許可することを確認します。
 
 - [診断データ サービスが有効になっているか確認する](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>

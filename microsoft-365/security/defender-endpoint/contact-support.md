@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP のサポートに問い合わせ
-description: Microsoft Defender ATP サポートに連絡する方法について説明します。
+title: Microsoft Defender for Endpoint サポートに連絡する
+description: Microsoft Defender for Endpoint サポートに連絡する方法について説明します。
 keywords: サポート、連絡先、プレミア サポート、ソリューション、問題、ケース
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768988"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892843"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 

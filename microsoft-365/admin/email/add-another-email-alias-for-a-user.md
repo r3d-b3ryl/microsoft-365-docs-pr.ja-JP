@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Microsoft 365 for business アカウントに関連付けられたメール エイリアスと呼ばれる複数の電子メール アドレスを持つ方法について説明します。 '
-ms.openlocfilehash: a44271cdbf52136e61702697a960cc3cbcd8119d
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 4003dcfca29a722ccdf9b86cca5aa1141fbdb367
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471003"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892807"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>ユーザーに別のメール エイリアスを追加する
   
@@ -75,7 +75,7 @@ Microsoft 365 のプライマリ メール アドレスは、通常、アカウ�
     これで、ユーザーはプライマリ アドレスとエイリアスを持つ必要があります。 たとえば、Eliza Hoffman のプライマリ アドレス Eliza@NodPublishers.com とエイリアス Sales@NodPublishers.com に送信されたメールはすべて、Eliza の受信トレイに移動します。
     
   
-7. **ユーザーが返信すると *、From*  アドレスがメインの電子メール エイリアスです。** たとえば、メッセージがメールに送信され、Sales@NodPublishers.com 受信トレイに届いたとします。 Eliza がメッセージに返信する場合、Sales@NodPublishers.com ではなく、Eliza のプライマリ メール アドレスが送信者として表示されます。 
+7. **ユーザーが返信すると *、From* アドレスは Outlook クライアントに依存します。Outlook on the web では、電子メールが受信されたエイリアスが使用されます (これを ping-pong の原則と呼ぶ)。Outlook デスクトップは、メインのメール エイリアスを使用します。** たとえば、メッセージがメールに送信され、Sales@NodPublishers.com 受信トレイに届いたとします。 Eliza が Outlook デスクトップを使用してメッセージに返信すると、メインの電子メール アドレスは、Eliza@NodPublishers.com として表示 Sales@NodPublishers.com。
     
 ::: moniker-end
 
@@ -106,7 +106,7 @@ Microsoft 365 のプライマリ メール アドレスは、通常、アカウ�
     これで、ユーザーはプライマリ アドレスとエイリアスを持つ必要があります。 たとえば、Eliza Hoffman のプライマリ アドレス Eliza@NodPublishers.com とエイリアス Sales@NodPublishers.com に送信されたメールはすべて、Eliza の受信トレイに移動します。
     
   
-7. **ユーザーが返信すると *、From*  アドレスがメインの電子メール エイリアスです。** たとえば、メッセージがメールに送信され、Sales@NodPublishers.com 受信トレイに届いたとします。 Eliza がメッセージに返信する場合、Sales@NodPublishers.com ではなく、Eliza のプライマリ メール アドレスが送信者として表示されます。 
+7. **ユーザーが返信すると *、From* アドレスは Outlook クライアントに依存します。Outlook on the web では、電子メールが受信されたエイリアスが使用されます (これを ping-pong の原則と呼ぶ)。Outlook デスクトップは、メインのメール エイリアスを使用します。** たとえば、メッセージがメールに送信され、Sales@NodPublishers.com 受信トレイに届いたとします。 Eliza が Outlook デスクトップを使用してメッセージに返信すると、メインの電子メール アドレスは、Eliza@NodPublishers.com として表示 Sales@NodPublishers.com。
 
 ::: moniker-end
 
@@ -137,7 +137,7 @@ Microsoft 365 のプライマリ メール アドレスは、通常、アカウ�
     これで、ユーザーはプライマリ アドレスとエイリアスを持つ必要があります。 たとえば、Eliza Hoffman のプライマリ アドレス Eliza@NodPublishers.com とエイリアス Sales@NodPublishers.com に送信されたメールはすべて、Eliza の受信トレイに移動します。
     
   
-7. **ユーザーが返信すると *、From*  アドレスがメインの電子メール エイリアスです。** たとえば、メッセージがメールに送信され、Sales@NodPublishers.com 受信トレイに届いたとします。 Eliza がメッセージに返信する場合、Sales@NodPublishers.com ではなく、Eliza のプライマリ メール アドレスが送信者として表示されます。 
+7. **ユーザーが返信すると *、From* アドレスは Outlook クライアントに依存します。Outlook on the web では、電子メールが受信されたエイリアスが使用されます (これを ping-pong の原則と呼ぶ)。Outlook デスクトップは、メインのメール エイリアスを使用します。** たとえば、メッセージがメールに送信され、Sales@NodPublishers.com 受信トレイに届いたとします。 Eliza が Outlook デスクトップを使用してメッセージに返信すると、メインの電子メール アドレスは、Eliza@NodPublishers.com として表示 Sales@NodPublishers.com。
 
 ::: moniker-end
 
@@ -151,6 +151,10 @@ Microsoft 365 のプライマリ メール アドレスは、通常、アカウ�
 
 
 GoDaddy または別のパートナーからサブスクリプションを購入した場合、新しいエイリアスをプライマリとして設定するには、GoDaddy またはパートナーの管理コンソールに移動する必要があります。
+
+## <a name="sending-email-from-the-proxy-address-easily"></a>プロキシ アドレスからメールを簡単に送信する
+
+2021 年 4 月に新しい機能が展開され、Outlook on the web を使用すると、ユーザーはエイリアスから簡単に送信できます。 テナント管理者がコマンドレットを使用するテナントに機能がロールアウトすると、テナント内のユーザーは、各エントリが Outlook 設定のエイリアスに対応するチェック ボックスの一覧にアクセスできます。 `Set-OrganizationConfig -SendFromAliasEnabled $true` エイリアスを選択すると、[新規作成] フォームの [From] ドロップダウンにエイリアスが表示されます。
   
 ## <a name="related-articles"></a>関連記事
 

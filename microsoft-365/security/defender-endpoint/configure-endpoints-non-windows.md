@@ -1,6 +1,6 @@
 ---
 title: Windows 以外のデバイスを Microsoft Defender for Endpoint サービスにオンボードする
-description: センサー データを Microsoft Defender ATP サービスに送信できるよう、Windows 以外のデバイスを構成します。
+description: センサー データを Microsoft Defender for Endpoint サービスに送信できるよう、Windows 以外のデバイスを構成します。
 keywords: Windows 以外のデバイスのオンボード、macos、Linux、デバイス管理、Windows ATP デバイスの構成、Microsoft Defender for Endpoint デバイスの構成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71f230f557792d75659dc4dbfc5911811514d5ea
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: c78779cd4a8a329864b6ac7e0debfc30ca0b3a56
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687879"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893591"
 ---
 # <a name="onboard-non-windows-devices"></a>Windows 以外のデバイスをオンボードする
 
@@ -48,7 +48,7 @@ Defender for Endpoint は、Windows および Windows 以外のプラットフ�
 Windows 以外のデバイスをオンボードするには、次の手順を実行する必要があります。
 1. オンボーディングの好みの方法を選択します。
 
-   - macOS デバイスの場合は、Microsoft Defender ATP またはサード パーティ製ソリューションを使用してオンボードを選択できます。 詳細については [、「Microsoft Defender for Endpoint for Mac」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
+   - macOS デバイスの場合は、Microsoft Defender for Endpoint またはサード パーティ製ソリューションを使用してオンボードを選択できます。 詳細については [、「Microsoft Defender for Endpoint for Mac」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
 
    - その他の Windows 以外のデバイスの場合は、[サードパーティとの統合による Windows 以外のデバイスのオンボード **] を選択します**。   
     1. ナビゲーション ウィンドウで、[相互運用性パートナー]**を**  >  **選択します**。 サード パーティ製のソリューションが一覧に表示されます。

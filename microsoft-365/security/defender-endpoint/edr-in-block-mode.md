@@ -1,7 +1,7 @@
 ---
 title: ブロック モードでのエンドポイントの検出と応答
 description: ブロック モードでのエンドポイントの検出と応答の詳細
-keywords: Microsoft Defender ATP、mde、ブロック モードの EDR、パッシブ モードのブロック
+keywords: Microsoft Defender for Endpoint, mde, EDR in block mode, パッシブ モード ブロック
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: a2fbb8f1b48dacb27468f8f088f5000da9fcb3b9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587205"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893567"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントの検出と応答 (EDR)
 
@@ -140,5 +140,5 @@ Microsoft Defender Antivirus がアクティブ モードまたはパッシブ �
 
 - [Tech Community ブログ: ブロック モードでの EDR の導入: トラックでの攻撃の停止](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [動作ブロックと封じ込め](behavioral-blocking-containment.md)
-- [より良い一緒に:Microsoft Defender Antivirus と Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
+- [ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

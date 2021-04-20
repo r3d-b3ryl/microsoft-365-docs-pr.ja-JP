@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP のセキュリティ ベースラインへの準拠を強化する
-description: Microsoft Defender ATP のセキュリティ 基準は、最適な保護を提供するために Microsoft Defender ATP セキュリティコントロールを設定します。
-keywords: Intune 管理、MDATP、WDATP、Microsoft Defender、高度な脅威保護 ASR、セキュリティ ベースライン
+title: Microsoft Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する
+description: Microsoft Defender for Endpoint セキュリティ ベースラインは、最適な保護を提供するためにセキュリティ制御を設定します。
+keywords: Intune 管理、MDATP、WDATP、MDE、エンドポイント向け Microsoft Defender、高度な脅威保護 ASR、セキュリティ ベースライン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74073441ad7be89e0af278ff1e371133251b5ea7
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 19a2276955b253a23ee1552a3f1d4d0345dfe247
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163401"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893543"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Microsoft Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する
 
@@ -31,7 +31,7 @@ ms.locfileid: "51163401"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 セキュリティ 基準は、セキュリティ専門家と Windows システム管理者の専門家の両方からのガイダンスに従ってセキュリティ機能が構成されていることを確認します。 展開すると、Defender for Endpoint セキュリティ ベースラインは、最適な保護を提供するために Defender for Endpoint セキュリティ コントロールを設定します。
 
@@ -41,11 +41,11 @@ ms.locfileid: "51163401"
 - [Intune 管理にデバイスを登録する](configure-machines.md#enroll-devices-to-intune-management)
 - [必要なアクセス許可を持っている必要があります。](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines"></a>Microsoft Defender ATP と Windows Intune のセキュリティ ベースラインを比較する
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Microsoft Defender for Endpoint と Windows Intune のセキュリティ ベースラインを比較する
 Windows Intune のセキュリティ ベースラインには、ブラウザー設定、PowerShell 設定、Microsoft Defender ウイルス対策などの一部のセキュリティ機能の設定など、Windows を実行しているデバイスを安全に構成するために必要な、一連の推奨設定が提供されています。 これに対し、Defender for Endpoint ベースラインには、エンドポイント検出と応答 (EDR) の設定、Windows Intune のセキュリティ ベースラインにある設定など、Defender for Endpoint スタック内のすべてのセキュリティ コントロールを最適化する設定が用意されています。 各ベースラインの詳細については、以下を参照してください。
 
 - [Intune の Windows セキュリティ基準の設定](https://docs.microsoft.com/intune/security-baseline-settings-windows)
-- [Intune の Microsoft Defender ATP ベースライン設定](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
+- [Intune のエンドポイント基準設定用 Microsoft Defender](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
 理想的には、Defender for Endpoint にオンボードされているデバイスは、Windows を最初にセキュリティ保護するための Windows Intune セキュリティ ベースラインと、Defender for Endpoint セキュリティ 基準を上に重ね、Defender for Endpoint セキュリティコントロールを最適に構成するための両方のベースラインを展開します。 リスクと脅威に関する最新のデータを利用し、ベースラインの進化に伴う競合を最小限に抑えるために、リリース後すぐにすべての製品に最新バージョンのベースラインを適用してください。
 
@@ -104,7 +104,7 @@ Windows Intune のセキュリティ ベースラインには、ブラウザー�
 >[!TIP]
 >Intune のセキュリティ ベースラインは、デバイスを包括的に保護して保護するための便利な方法を提供します。 [Intune のセキュリティ基準について詳しくは、次のページをご覧ください](https://docs.microsoft.com/intune/security-baselines)。
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>関連項目
 - [デバイスが正しく構成されていることを確認する](configure-machines.md)

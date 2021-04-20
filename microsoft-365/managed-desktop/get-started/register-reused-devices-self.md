@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689223"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893277"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
@@ -136,7 +136,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 ハッシュ データを 1 つの CSV ファイルにマージすると、デバイスの登録 [に進むことができます](#register-devices-by-using-the-admin-portal)。
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
+## <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
 
 [Microsoft Endpoint Manager で、](https://endpoint.microsoft.com/)左側 **のナビゲーション ウィンドウで**[デバイス] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[デバイス] を **選択します**。 [Microsoft Managed Desktop Devices] ワークスペースで、[デバイスの登録] **を** 選択し、新しいデバイスを登録するフライインを開きます。
 
@@ -162,10 +162,10 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
 | ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft Managed Desktop では、初回セットアップをガイドしますので、それ以上の準備を行う必要はありません。 |
-| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
+| Active | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
-#### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
+### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
 
 | エラー メッセージ | 詳細 |
 |---------------|-------------|
@@ -175,13 +175,13 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 | 別の組織によって要求されたデバイス | このデバイスは、既に別の組織によって要求されています。 デバイスのサプライヤーに確認します。 |
 | 予期しないエラーです | 要求を自動的に処理する必要があります。 サポートに問い合わせ、要求 ID を入力します。 <requestId> |
 
-### <a name="check-the-image"></a>画像を確認する
+## <a name="check-the-image"></a>画像を確認する
 
 デバイスが Microsoft Managed Desktop パートナー サプライヤーから提供されている場合は、イメージが正しい必要があります。
 
 必要に応じて、自分で画像を適用することもできます。 作業を開始するには、使用している Microsoft 担当者に問い合わせ、画像を適用するための場所と手順を提供します。
 
-### <a name="deliver-the-device"></a>デバイスの配信
+## <a name="deliver-the-device"></a>デバイスの配信
 
 > [!IMPORTANT]
 > デバイスをユーザーに渡す前に、そのユーザーに適切なライセンスを取得して [適用](../get-ready/prerequisites.md) してください。

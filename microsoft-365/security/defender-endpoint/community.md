@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint コミュニティ センターへのアクセス
-description: Microsoft Defender ATP コミュニティ センターにアクセスして、製品に関するエクスペリエンス、エンゲージメント、および学習を共有します。
+title: Microsoft Defender for Endpoint コミュニティ センターにアクセスする
+description: Microsoft Defender for Endpoint コミュニティ センターにアクセスして、エクスペリエンスを共有し、製品について説明します。
 keywords: コミュニティ, コミュニティ センター, 技術コミュニティ, 会話, お知らせ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 71dc2a004f188eac34258afb2200cfd4e67f47ab
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ef1076fb5b8bfc38090374671998460190faaba9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165239"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893427"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Microsoft Defender for Endpoint コミュニティ センターへのアクセス
+# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Microsoft Defender for Endpoint コミュニティ センターにアクセスする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "51165239"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint Community Center は、コミュニティ メンバーが製品に関するエクスペリエンスを学び、共同作業し、共有できる場所です。 
 

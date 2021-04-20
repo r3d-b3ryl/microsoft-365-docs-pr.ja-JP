@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4de1d173a26005d32fb07117d93ee78582b77d54
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b2976fc643eb433039d9595bc8e9632fd8cb60ea
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689211"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893475"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
@@ -77,7 +77,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
+### <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
 
 [Microsoft Endpoint Manager で、](https://endpoint.microsoft.com/)左側 **のナビゲーション ウィンドウで**[デバイス] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[デバイス] を **選択します**。 [Microsoft Managed Desktop Devices] ワークスペースで、[デバイスの登録] **を** 選択し、新しいデバイスを登録するフライインを開きます。
 
@@ -103,7 +103,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
 | ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft Managed Desktop では、初回セットアップをガイドしますので、それ以上の準備を行う必要はありません。 |
-| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
+| Active | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング

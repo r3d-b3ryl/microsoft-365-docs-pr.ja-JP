@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d34b984436b3ed0537af2eebcd8475ec270cd8e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165791"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893487"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Microsoft Defender for Endpoint をリングに展開する
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165791"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Microsoft Defender for Endpoint の展開は、リング ベースの展開方法を使用して実行できます。 
 
@@ -75,17 +75,17 @@ Evaluate | リング 1: パイロット テスト用の 50 のシステムを特
 
 
 ### <a name="pilot"></a>パイロット
-Microsoft Defender ATP は、サービスにオンボードできるさまざまなエンドポイントをサポートしています。 このリングで、オンボードする複数のデバイスを特定し、定義した終了条件に基づいて、次の展開リングに進みます。
+Microsoft Defender for Endpoint は、サービスにオンボードできるさまざまなエンドポイントをサポートしています。 このリングで、オンボードする複数のデバイスを特定し、定義した終了条件に基づいて、次の展開リングに進みます。
 
 次の表に、サポートされているエンドポイントと、サービスにデバイスをオンボードするために使用できる対応するツールを示します。 
 
 | Endpoint     | 展開ツール                       |
 |--------------|------------------------------------------|
 | **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br> 注: 10 台を超えるデバイスを実稼働環境に展開する場合は、代わりに Group Policy メソッドを使用するか、以下に示す他のサポートされているツールを使用します。<br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md)   |
-| **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
+| **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
 | **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [アプリベース](ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
+| **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)               | 
 
 
 
@@ -94,11 +94,11 @@ Microsoft Defender ATP は、サービスにオンボードできるさまざま
 この段階では、展開 [の計画に](deployment-strategy.md) 役立つ展開の計画資料を使用できます。 
 
 
-次の資料を使用して、組織に最適な Microsoft Defender ATP アーキテクチャを選択します。
+次の資料を使用して、組織に最適な Microsoft Defender for Endpoint アーキテクチャを選択します。
 
-|**項目**|**説明**|
+|**Item**|**説明**|
 |:-----|:-----|
-|[![Microsoft Defender ATP 展開戦略のサムネイルイメージ](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
+|[![Microsoft Defender for Endpoint 展開戦略のサム イメージ](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
 
 
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ead616b7af3df05f4c0c5755ad779f0251555734
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066547"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893439"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評価ラボ
 
@@ -32,7 +32,7 @@ ms.locfileid: "51066547"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
 包括的なセキュリティ製品評価を行う場合、エンドツーエンドの攻撃シミュレーションを実際に実行する前に、複雑な環境とデバイス構成が必要になる複雑なプロセスになる可能性があります。 複雑さを加えるのは、シミュレーション アクティビティ、アラート、および結果が評価中に反映される場所を追跡する際の課題です。
@@ -52,7 +52,7 @@ Microsoft Defender for Endpoint 評価ラボは、プラットフォームの機
  お好みのシミュレーターをインストールし、評価ラボ内でシナリオを実行し、プラットフォームのパフォーマンスを即座に確認できます。 また、さまざまなシミュレーションにアクセスして、シミュレーション カタログから実行できます。
     
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 評価ラボにアクセスするには、ライセンス[](minimum-requirements.md#licensing-requirements)要件を満たすか、Microsoft Defender for Endpoint への試用版アクセス権が必要です。
 
 次のセキュリティ設定 **の管理権限** が必要です。
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint 評価ラボは、プラットフォームの機
 
 詳細については、「役割の作成 [と管理」を参照してください](user-roles.md)。
 
-Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
+Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
 
 
 ## <a name="get-started-with-the-lab"></a>ラボの使用を開始する
@@ -74,10 +74,10 @@ Microsoft Defender for Endpoint を体験してみませんか? [無料試用版
 ![メニューの評価ラボのイメージ](images/evaluation-lab-menu.png)
 
 >[!NOTE]
->- 各環境は、制限された一連のテスト デバイスでプロビジョニングされます。
 >- 選択した環境構造の種類に応じて、デバイスはライセンス認証日から指定された時間数で利用できます。
->- プロビジョニングされたデバイスを使いきった場合、新しいデバイスは提供されません。 削除されたデバイスでは、使用可能なテスト デバイスの数は更新されません。
->- リソースが限られている場合は、デバイスを慎重に使用してください。
+>- 各環境は、制限された一連のテスト デバイスでプロビジョニングされます。 プロビジョニングされたデバイスを使いきった場合、新しいデバイスは提供されません。 削除されたデバイスでは、使用可能なテスト デバイスの数は更新されません。
+>- リソースが使いきりになったときにラボを使用できなくなりました。 リセットも更新もされません。
+>- リソースは慎重に使用してください。ラボ のリソースは制限されています。 リセットも更新もされません。 
 
 ラボを既に持っていますか? 新しい脅威シミュレーターを有効にし、アクティブなデバイスを持っている必要があります。
 
@@ -122,9 +122,9 @@ Microsoft Defender for Endpoint を体験してみませんか? [無料試用版
 
 次のセキュリティ コンポーネントは、テスト デバイスで事前に構成されています。
 
-- [攻撃面の縮小](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [攻撃面の減少](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 - [一目でブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [フォルダー アクセスの制御](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [制御されたフォルダー アクセス](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
 - [エクスプロイト保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
 - [ネットワーク保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [望ましくない可能性のあるアプリケーションの検出](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)

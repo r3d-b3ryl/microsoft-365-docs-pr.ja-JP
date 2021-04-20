@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP API の一般的なエラー
-description: 説明付き Microsoft Defender ATP API の一般的なエラーの一覧。
+title: エンドポイント API エラーの一般的な Microsoft Defender
+description: 説明付きエンドポイント API エラーの一般的な Microsoft Defender の一覧。
 keywords: apis、mdatp api、エラー、トラブルシューティング
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ddbbe07bc477ae3a5016feb795b5bad5ed82a30a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4fc2aeb6ee5a95f7eb121abdcf4431dc6d34cd49
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064379"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893463"
 ---
 # <a name="common-rest-api-error-codes"></a>一般的な REST API エラー コード
 
@@ -32,7 +32,7 @@ ms.locfileid: "51064379"
 * メッセージは、変更できるフリー テキストです。
 * ページの下部には、応答の例があります。
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 エラー コード |HTTP ステータス コード |メッセージ 
 :---|:---|:---
