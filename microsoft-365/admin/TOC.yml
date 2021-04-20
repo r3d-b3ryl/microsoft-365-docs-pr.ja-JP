@@ -201,7 +201,7 @@
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: ドメインに関する FAQ
           href: setup/domains-faq.yml
-        - name: ホスト特有の手順
+        - name: DNS の手順
           items:
             - name: 任意の DNS ホストでネームサーバーを変更する
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
