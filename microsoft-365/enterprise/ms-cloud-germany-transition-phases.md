@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: cd83d2abcc061562047aeb384856cc9ab04dcad3
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 121f2059e4a13684169ab40b7bfdaae13ef6045e
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760040"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899250"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -131,11 +131,8 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 その他の考慮事項:
 
 - 組織で引き続き SharePoint 2010 ワークフローを使用している場合、2021 年 12 月 31 日以降は機能しなくなりました。 SharePoint 2013 ワークフローは引き続きサポートされます。ただし、2020 年 11 月 1 日から新しいテナントでは既定でオフになっています。 SharePoint Online サービスへの移行が完了したら、Power Automate または他のサポートされているソリューションに移動することをお勧めします。
- 
-- SharePoint Online インスタンスがまだ移行されていない Microsoft Cloud Deutschland のお客様は、SharePoint Online PowerShell モジュール/Microsoft.SharePointOnline.CSOM バージョン 16.0.20616.12000 以下に滞在する必要があります。 それ以外の場合、PowerShell またはクライアント側のオブジェクト モデルを介して SharePoint Online への接続が失敗します。
-
+ - SharePoint Online インスタンスがまだ移行されていない Microsoft Cloud Deutschland のお客様は、SharePoint Online PowerShell モジュール/Microsoft.SharePointOnline.CSOM バージョン 16.0.20616.12000 以下に滞在する必要があります。 それ以外の場合、PowerShell またはクライアント側のオブジェクト モデルを介して SharePoint Online への接続が失敗します。
 - このフェーズでは、SharePoint URL の背後にある IP アドレスが変更されます。 Office 365 グローバル サービスに移行すると、保持されているテナント URL (たとえば、および) のアドレスがワールドワイド Microsoft 365 URL および IP アドレス範囲 `contoso.sharepoint.de` `contoso-my.sharepoint.de` [(SharePoint Online および OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)に変更されます。
-
 
 > [!NOTE]
 > 電子情報開示を使用している場合は、電子情報開示の移行エクスペリエンスを [認識してください](ms-cloud-germany-transition-add-scc.md)。
@@ -150,7 +147,8 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 - ユーザーとサービスを従来の MCD URL ( ) から新しいサービス `https://outlook.office.de` 365 Office URL ( ) に移行します `https://outlook.office365.com` 。
 -  新しいドイツのデータセンター地域の Exchange Online サービス (Outlook Web Access および Exchange 管理センター) は、このフェーズから利用できます。以前は利用できません。
 - ユーザーは移行中に従来の MCD URL を通じてサービスに引き続きアクセスすることができますが、移行が完了すると、従来の URL の使用を停止する必要があります。
-- ユーザーは、オンライン機能 (予定表、メールOfficeユーザー) Office のOfficeポータルを使用するに移行する必要があります。 365 サービスにまだ移行されていないサービスOffice移行するまでは機能しません。
+- ユーザーは、オンライン機能 (予定表、メールOfficeユーザー) Office のOfficeポータルを使用するに移行する必要があります。 365 サービスにまだ移行されていないサービスOffice移行するまでは機能しません。 
+- この制限は、"My Account" などのバックグラウンド サービスにも適用されます。 グローバル サービスのアカウントは、フェーズ 9 の完了後に利用できます。 この場合、ユーザーは MCD ポータルを使用してアカウント設定を管理する必要があります。
 - 移行Outlook Web Appパブリック フォルダーエクスペリエンスは提供しない場合があります。
 
 フェーズ 5 の間にユーザーの写真を変更する場合は [、「Exchange Online PowerShell -](#exchange-online-powershell)フェーズ 5 のSet-UserPhotoを参照してください。
@@ -158,14 +156,17 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 ### <a name="dns-record-for-autodiscover-in-exchange-online"></a>Exchange Online での自動検出の DNS レコード
 **適用対象:** カスタム ドメインで Exchange Online を使用しているお客様
 
-現在 Microsoft Cloud Deutschland を指している AutoDiscover の顧客管理 DNS 設定を更新して、Exchange Online フェーズ (フェーズ 5) の完了時に Office 365 Global エンドポイントを参照する必要があります。 <br> CNAME を指す既存の DNS エントリは、autodiscover-outlook.office.de をポイントするために更新する **autodiscover.outlook.com。**
+現在 Microsoft Cloud Deutschland を指している自動検出の顧客管理 DNS 設定は、Exchange Online フェーズ (フェーズ 5) の完了時に Office 365 グローバル エンドポイントを参照するために更新する必要があります。 <br> CNAME を指す既存の DNS エントリは、autodiscover-outlook.office.de をポイントするために更新する **autodiscover.outlook.com。**
 
 移行フェーズ **9** の完了時にこれらの DNS 更新プログラムを実行しないお客様は、移行が完了するとサービスの問題が発生する可能性があります。
+
+> [!NOTE]
+> 自動検出エントリのカスタム ドメインの管理センターの検証エラーは無視できます。 サービスは、CNAME レコードが新しいレコードに変更された場合にのみ autodiscover.outlook.com。
 
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **適用対象:** Exchange Online PowerShell を使用する Exchange Online 管理者
 
-移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 次に例を示します。
+移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 以下に例を示します。
 
 ```powershell
 New-PSSession 
@@ -182,29 +183,21 @@ PowerShell コマンドレット **Set-UserPhoto** を使用すると、ユー�
  ここで `<user_email>` 、ユーザー メールボックスの電子メール ID のプレースホルダーを指定します。 
 
 その他の考慮事項:
-<!--
-    The statement below is not clear. What does myaccount.microsoft.com mean?
-
-
-- `myaccount.microsoft.com` will only work after the tenant cutover in phase 9. Links will produce "something went wrong" error messages until that time.
--->
 - 他のOutlook Web Appの共有メールボックスにアクセスするユーザー (たとえば、MCD 環境のユーザーがグローバル環境の共有メールボックスにアクセスする場合など) は、2 回目の認証を求めるメッセージが表示されます。 ユーザーは、最初に自分のメールボックスを認証してアクセスし、次に共有メールボックスを `outlook.office.de` 開く必要があります `outlook.office365.com` 。 他のサービスでホストされている共有リソースにアクセスする場合は、2 回目の認証が必要です。
 - 既存の Microsoft Cloud Deutschland のお客様または移行中のユーザーの場合、ファイル > **Info >** Add Account を使用して共有メールボックスを Outlook に追加すると、予定表のアクセス許可の表示が失敗する場合があります (Outlook クライアントは Rest API の使用を試みる)。 `https://outlook.office.de/api/v2.0/Me/Calendars` 予定表のアクセス許可を表示するアカウントを追加する場合は [、「Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) で予定表を共有するためのユーザー エクスペリエンスの変更」の説明に従ってレジストリ キーを追加して、このアクションが成功するようにすることができます。 このレジストリ キーは、グループ ポリシーを使用して組織全体に展開できます。
+- アクティブな Exchange ハイブリッド構成を使用しているすべてのお客様は、メールボックスをオンプレミス Exchange Server から Exchange Online に移動することはできません。Microsoft Cloud Deutschland にも、ドイツの新しいデータセンター地域にも移動できません。 お客様は、フェーズ 5 より前に継続的なメールボックスの移動が完了し、このフェーズが完了した後に再開される必要があります。
 - Exchange Online の移行前の手順で説明したように、デバイスにレガシ プロトコル (POP3/IMAP4/SMTP) を使用しているすべてのユーザーが [、Exchange](ms-cloud-germany-transition-add-pre-work.md#exchange-online)メールボックスが新しいドイツのデータセンター地域に移動された後にクライアントのエンドポイントを変更する準備ができているか確認します。
+- メールボックスの移行後、Outlook Web App Skype for Business 会議をスケジュールすることはできません。 必要に応じて、ユーザーは代わりに Outlook を使用する必要があります。
 
 移行および Exchange Online リソースの移行後の組織の違いの詳細については、「新しいドイツのデータセンター地域の [Office 365](ms-cloud-germany-transition-experience.md)サービスへの移行中のカスタマー エクスペリエンス」の情報を確認してください。
-
 
 ## <a name="phase-6-exchange-online-protection--security-and-compliance"></a>フェーズ 6: Exchange Online Protection / Security and Compliance
 
 **適用対象:** Exchange Online を使用しているすべてのお客様<br>
 
-Exchange Online Protection (EOP) のバック エンド機能は、新しい地域 "ドイツ" にコピーされます。
+Exchange Online Protection (EOP) のバック エンド機能は、新しい地域 "ドイツ" にコピーされます。 Exchange Online を使用すると、外部ホストから Office 365 へのルーティングが可能になります。また、セキュリティおよびコンプライアンス機能のバック エンド サービスも含め、historial テナントの詳細が移行されています。
 
-| Step(s) | 説明 | 影響 |
-|:-------|:-------|:-------|
-| Exchange Online ルーティングと履歴メッセージの詳細の移行。 | Exchange Online を使用すると、外部ホストから 365 Officeルーティングできます。 外部 MX レコードは、EOP サービスにルーティングするために移行されます。 テナントの構成と履歴の詳細が移行されます。 |<ul><li>Microsoft が管理する DNS エントリは、365 ドイツ EOP Office 365 サービスOffice更新されます。</li><li>EOP のデュアル書き込みで EOP の移行を行った後、お客様は 30 日間待機する必要があります。 それ以外の場合は、データ損失が発生する可能性があります。</li></ul>|
-||||
+Exchange Online 機能のみを使用しているお客様 (ハイブリッド以外) は、この段階で注意を払う必要があります。
 
 ### <a name="exchange-online-hybrid-deployments"></a>Exchange Online ハイブリッド展開
 **適用対象:** オンプレミスの Exchange サーバーでアクティブな Exchange ハイブリッド構成を使用しているすべてのお客様
@@ -223,19 +216,18 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 
 **適用対象:** Skype for Business Online を使用しているすべてのお客様
 
-[Skype for Business Online](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online)移行手順の事前作業について理解している必要があります。
+Skype [for Business Online 移行の移行前の手順を確認](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) し、すべての手順を完了してください。
+このフェーズでは、Skype for Business が Microsoft Teams に移行されます。 既存の Skype for Business のお客様は、ヨーロッパの Office 365 グローバル サービスに移行され、Office 365 サービスの地域 "ドイツ" の Microsoft Teams に移行されます。
 
-<!--
-    Question from ckinder
-    the PowerShell command seems to be incomplete
--->
+- ユーザーは移行日に Skype for Business にサインインできない。 移行の 10 日前に、移行がいつ行われますか、また移行が開始されたときに再び通知するメッセージが管理センターに表示されます。
+- ポリシー構成が移行されます。
+- ユーザーは Teams に移行され、移行後に Skype for Business にアクセスできなくなりました。
+- ユーザーには、Microsoft Teams デスクトップ クライアントがインストールされている必要があります。 インストールは、Skype for Business インフラストラクチャのポリシーを介して 10 日間に行われますが、失敗した場合でも、ユーザーはクライアントをダウンロードするか、サポートされているブラウザーに接続する必要があります。
+- 連絡先と会議は Microsoft Teams に移行されます。
+- タイム サービスが Office 365 サービスに移行するまで、顧客の DNS エントリが完了するまで、ユーザーは Skype for Business にサインインできない。
+- 連絡先と既存の会議は、引き続き Skype for Business 会議として機能します。
 
-| Step(s) | 説明 | 影響 |
-|:-------|:-------|:-------|
-| Skype for Business から Teams への移行。 | 既存の Skype for Business のお客様は、ヨーロッパの Office 365 グローバル サービスに移行され、Office 365 サービスの地域 "ドイツ" の Microsoft Teams に移行されます。 |<ul><li>ユーザーは移行日に Skype for Business にサインインできない。 移行の 10 日前に管理センターに投稿し、移行がいつ行われ、移行を開始するときにもう一度知らせます。</li><li> ポリシー構成が移行されます。 </li><li>ユーザーは Teams に移行され、移行後に Skype for Business を使用できなくなりました。 </li><li>ユーザーには Teams デスクトップ クライアントがインストールされている必要があります。 インストールは、Skype for Business インフラストラクチャのポリシーを介して 10 日間に行われますが、失敗した場合でも、ユーザーはクライアントをダウンロードするか、サポートされているブラウザーに接続する必要があります。 </li><li>連絡先と会議は Teams に移行されます。</li><li>タイム サービスが Office 365 サービスに移行するまで、顧客の DNS エントリが完了するまで、ユーザーは Skype for Business にサインインできない。 </li><li>連絡先と既存の会議は、引き続き Skype for Business 会議として機能します。 </li></ul>|
-||||
-
-移行フェーズ 9 が完了した後に PowerShell を使用して Skype for Business Online に接続する必要がある場合は、次のコードを使用して接続します。
+移行フェーズ 9 の完了後に PowerShell を使用して Skype for Business Online に接続する必要がある場合は、次の PowerShell コードを使用して接続します。
 
 ```powershell
 Import-Module MicrosoftTeams
@@ -294,13 +286,21 @@ Line-of-business アプリがある場合は、業務行アプリの手順の事
 
 **適用対象:** すべてのお客様
 
-移行のOffice 365 テナントが移行の最後のステップ [Azure AD Finalization (Phase 9)] を完了すると、すべてのサービスが世界中に移行されます。 Microsoft Cloud Deutschland エンドポイントに対して、アプリケーションまたはユーザーがテナントのリソースにアクセスする必要はありません。 最終処理が完了した 30 日後に自動的に、Microsoft Cloud Deutschland Azure AD サービスは移行されたテナントのエンドポイント アクセスを停止します。 認証などのエンドポイント要求は、Microsoft Cloud Deutschland サービスに対してこの時点から順方向に失敗します。 
+移行のOffice 365 テナントが移行の最終ステップ (Azure AD Finalization (Phase 9)) を完了すると、すべてのサービスが世界中に移行されます。 Microsoft Cloud Deutschland エンドポイントに対して、アプリケーションまたはユーザーがテナントのリソースにアクセスする必要はありません。 最終処理が完了した 30 日後に自動的に、Microsoft Cloud Deutschland Azure AD サービスは移行されたテナントのエンドポイント アクセスを停止します。 認証などのエンドポイント要求は、Microsoft Cloud Deutschland サービスに対してこの時点から順方向に失敗します。 
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
 | ユーザー エンドポイントの更新 | すべてのユーザーが適切な Microsoft ワールドワイド エンドポイントを使用してサービスにアクセスする |移行が完了した 30 日後、Microsoft Cloud Deutschland エンドポイントは要求の尊重を停止します。クライアントまたはアプリケーション のトラフィックは失敗します。  |
 | Azure ADアプリケーション エンドポイントを更新する | アプリケーションの認証、Azure Active Directory (Azure AD) Graph、MS Graph エンドポイントを Microsoft Worldwide サービスのエンドポイントに更新する必要があります。 | 移行が完了した 30 日後、Microsoft Cloud Deutschland エンドポイントは要求の尊重を停止します。クライアントまたはアプリケーション のトラフィックは失敗します。 |
 ||||
+
+### <a name="azure-ad-connect"></a>Azure AD Connect
+**適用対象:** すべてのお客様が Azure AD接続と ID を同期する
+
+| Step(s) | 説明 | 影響 |
+|:-------|:-------|:-------|
+| Azure AD接続を更新します。 | Azure AD への切り上げが完了すると、組織は Office 365 サービスを完全に使用し、Microsoft Cloud Deutschland に接続されなくなりました。 この時点で、お客様はデルタ同期プロセスが完了した後、レジストリ パスの文字列値を `AzureInstance` 3 (Microsoft Cloud Deutschland) から 0 に変更する必要があります `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` 。 | レジストリ キーの `AzureInstance` 値を変更します。 そうしない場合、Microsoft Cloud Deutschland エンドポイントが使用できなくなった後、オブジェクトが同期されません。 |
+|||||
 
 ## <a name="post-migration"></a>移行後
 

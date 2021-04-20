@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、Teams、および SharePoint コラボレーションのコンプライアンス オプションについて説明します。
-ms.openlocfilehash: 88083d88b274e750e0fc6f1907268c996312163c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920894"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899354"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 グループ、Teams、および SharePoint コラボレーションのコンプライアンス オプション
 
@@ -60,7 +60,7 @@ Teams のアイテム保持ポリシーでは、チャット メッセージと�
 
 - [Microsoft Teams のアイテム保持ポリシー](/microsoftteams/retention-policies)
 
-1 つのアイテム保持ポリシーを Microsoft 365 グループ、Teams チャット、Teams チャネル メッセージに適用できます。 
+1 つのアイテム保持ポリシーを設定して、Teams チャットメッセージと Teams チャネル メッセージに適用できます。 
 
 追加情報:
 
