@@ -175,6 +175,9 @@
 ##### [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md)
 ##### [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
 
+#### [デバイス コントロール]()
+##### [デバイス コントロールのレポート](device-control-report.md)
+##### [USB デバイスの制御](control-usb-devices-using-intune.md)
 
 ### [デバイス検出]()
 #### [デバイス検出の概要](device-discovery.md)

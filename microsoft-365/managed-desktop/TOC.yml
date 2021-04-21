@@ -23,6 +23,8 @@
           href: service-description/device-requirements.md
         - name: デバイスの画像
           href: service-description/device-images.md
+        - name: デバイス名
+          href: service-description/device-names.md
         - name: プログラム デバイス
           href: service-description/device-list.md
           items:
@@ -83,6 +85,8 @@
           href: get-ready/mapped-drives.md
         - name: 印刷リソースを準備する
           href: get-ready/printing.md
+        - name: デバイス名のアドレス
+          href: get-ready/address-device-names.md
     - name: Microsoft マネージド デスクトップの使用を開始する
       href: get-started/index.md
       items:
@@ -157,6 +161,8 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: デバイス プロファイルを変更する
           href: working-with-managed-desktop/change-device-profile.md
+        - name: デバイスの削除
+          href: working-with-managed-desktop/remove-devices.md
         - name: 構成可能な設定
           href: working-with-managed-desktop/config-setting-overview.md
           items:
