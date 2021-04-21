@@ -475,6 +475,7 @@
 ####### [セキュリティ上の推奨事項を取得する](get-security-recommendations.md)
 ####### [マシン タグの追加または削除](add-or-remove-machine-tags.md)
 ####### [IP でマシンを検出する](find-machines-by-ip.md)
+####### [タグでマシンを検出する](find-machines-by-tag.md)
 ####### [不足している KB を取得する](get-missing-kbs-machine.md)
 ####### [デバイス値の設定](set-device-value.md)
 
