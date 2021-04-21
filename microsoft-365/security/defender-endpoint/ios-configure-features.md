@@ -1,6 +1,6 @@
 ---
 title: iOS の機能で Microsoft Defender for Endpoint を構成する
-description: iOS 機能用に Microsoft Defender ATP を展開する方法について説明します。
+description: iOS 機能に Microsoft Defender for Endpoint を展開する方法について説明します。
 keywords: microsoft、 defender, atp, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f5f7345f92b3ac76aa647a9caed63e5684be9c30
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687487"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903312"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS の機能で Microsoft Defender for Endpoint を構成する
 
@@ -49,7 +49,7 @@ IOS 用 Defender for Endpoint を使用して条件付きアクセスを設定�
 既定で有効になっている場合は、VPN を無効にする必要がある場合があります。 たとえば、VPN が構成されているときに動作しないアプリを実行する場合です。 このような場合は、次の手順に従って、デバイス上のアプリから VPN を無効にできます。
 
 1. iOS デバイスで、[設定]**アプリを開** き、[全般] をクリックまたはタップ **し****、[VPN] をタップします**。
-1. Microsoft Defender ATP の [i] ボタンをクリックまたはタップします。
+1. Microsoft Defender for Endpoint の "i" ボタンをクリックまたはタップします。
 1. [オンデマンド接続 **] をオフにして** VPN を無効にします。
 
     > [!div class="mx-imgBorder"]

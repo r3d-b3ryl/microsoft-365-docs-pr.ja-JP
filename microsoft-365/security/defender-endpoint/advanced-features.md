@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698270"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903792"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -71,8 +71,7 @@ ms.locfileid: "51698270"
 
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>スコープ付きデバイス グループ内への相関関係の制限
-この設定を有効にすると、アラートはスコープ設定されたデバイス グループに基づいて個別のインシデントに関連付けされます。 既定では、インシデントの相関関係はテナント スコープ全体で発生します。
-
+この構成は、ローカルの SOC 操作でアラートの相関関係をアクセスできるデバイス グループにのみ制限する場合に使用できます。 この設定を有効にすると、デバイス グループをまたがったアラートで構成されるインシデントは、1 つのインシデントとは見なされません。 ローカル SOC は、関連するデバイス グループの 1 つへのアクセス権を持つため、インシデントに対してアクションを実行できます。 ただし、グローバル SOC では、1 つのインシデントではなく、デバイス グループ別に複数の異なるインシデントが表示されます。 この設定を有効にしない場合は、組織全体のインシデントの相関関係の利点を上回る場合は、この設定を有効にすることをお勧めしません。
 >[!NOTE]
 >この設定を変更すると、将来のアラートの相関関係にのみ影響します。
 
@@ -230,7 +229,7 @@ Intune 統合を有効にした場合、Intune は従来の条件付きアクセ
 > Intune によって作成される従来の CA ポリシー[](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)は、エンドポイントの構成に使用される最新の条件付きアクセス ポリシーとは異なります。
 
 
-## <a name="device-discovery"></a>デバイスの検出
+## <a name="device-discovery"></a>デバイス検出
 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 詳細については、「デバイスの検出 [」を参照してください](device-discovery.md)。
 
 ## <a name="preview-features"></a>プレビュー機能

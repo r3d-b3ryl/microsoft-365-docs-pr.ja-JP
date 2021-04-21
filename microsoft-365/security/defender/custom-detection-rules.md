@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 220e4e6546899dd00f3a02bf83039a928be4f8dc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498847"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903756"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -178,6 +178,9 @@ DeviceEvents
 
 ## <a name="manage-existing-custom-detection-rules"></a>既存のカスタム検出ルールの管理
 既存のカスタム検出ルールの一覧を表示し、以前の実行を確認し、トリガーしたアラートを確認できます。 必要に応じてルールを実行して変更できます。
+
+>[!TIP]
+> カスタム検出によって発生したアラートは、アラートとインシデント API で利用できます。 詳細については、「サポートされている [Microsoft 365 Defender API」を参照してください](api-supported.md)。
 
 ### <a name="view-existing-rules"></a>既存のルールの表示
 

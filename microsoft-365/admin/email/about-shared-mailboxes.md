@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスは、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。 共有メールボックスを作成する前に知っておくべきことを説明します。
-ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 83e779d59a8e763b3d0c0482966e75604d5f1574
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915988"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903216"
 ---
 # <a name="about-shared-mailboxes"></a>共有メールボックスについて
 
@@ -63,7 +63,7 @@ ms.locfileid: "50915988"
 > [!NOTE]
 > 共有メールボックスにアクセスするには、ユーザーは Exchange Online ライセンスを持っている必要がありますが、共有メールボックス用の異なるライセンスは必要ありません。 どの共有メールボックスにも、対応するユーザー アカウントがあります。 共有メールボックスを作成する際に、パスワードの入力を求められなかったことにご注意ください。 このアカウントにはパスワードが設定されていますが、そのパスワードはシステムで生成され、ユーザーにはわかりません。 アカウントを使用して共有メールボックスにログインしないでください。 ライセンスがない場合は、共有メールボックスは 50 GB に制限されます。 サイズ制限を 100 GB に増やすには、Exchange Online プラン 2 のライセンス、または Exchange Online Archiving アドオンのライセンス付きの Exchange Online プラン 1 のライセンスを共有メールボックスに割り当てる必要があります。 これにより、無制限のアーカイブ記憶域を得るための自動拡張アーカイブを有効にできるようにもなります。 同様に、共有メールボックスに訴訟ホールドをかける場合は、Exchange Online プラン 2 のライセンス、または Exchange Online Archiving アドオン ライセンス付帯のExchange Online Plan 1 ライセンスが共有メールボックスで必要です。 Microsoft Defender for Office 365、Advanced eDiscovery、または自動アイテム保持ポリシーなどの高度な機能を適用する場合は、その機能のために共有メールボックスにライセンスを付与する必要があります。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
 [共有メールボックスを作成する](create-a-shared-mailbox.md)
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams でゲストとしてチームに参加する方法について説明します。
-ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578857"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903720"
 ---
 # <a name="join-a-team-as-a-guest"></a>ゲストとしてチームに参加
 
@@ -48,3 +48,7 @@ ms.locfileid: "51578857"
 
 1. Microsoft Teams アプリを開き、[はい]  **を**  選択して招待されたチームに切り替えます。  これで、Teams でプロジェクトで共同作業を行います。
 2. 会社のチームに切り替える場合は、[組織] ドロップダウン  **から選択します**  。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Teams でのゲスト エクスペリエンス](https://docs.microsoft.com/microsoftteams/guest-experience) (記事) 組織の [Microsoft Teams](https://docs.microsoft.com/microsoftteams/enable-features-office-365) 設定の管理 ( [記事)](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) ゲスト アクセスと外部アクセスを使用して組織外のユーザーと共同作業を行う (記事)

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP for Linux リソース
+title: Microsoft Defender for Endpoint on Linux リソース
 ms.reviewer: ''
-description: Microsoft Defender ATP for Linux のリソース (アンインストール方法、診断ログの収集方法、CLI コマンド、製品に関する既知の問題など) について説明します。
+description: Microsoft Defender for Endpoint on Linux のリソース (アンインストール方法、診断ログの収集方法、CLI コマンド、製品に関する既知の問題など) について説明します。
 keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4f2324bc47bdee38e1cdeed1e21b5f9063e9a5c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: de2602bdc94507d27236b939553a6567b2587f36
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587066"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903144"
 ---
 # <a name="resources"></a>リソース
 
@@ -123,11 +123,11 @@ Defender for Endpoint for Linux をアンインストールするには、いく
 |Diagnostics           |ログ レベルの変更                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
 |Diagnostics           |診断ログの生成                                |`mdatp diagnostic create --path [directory]`                           |
 |正常性                |製品の正常性を確認する                              |`mdatp health`                                                         |
-|保護            |パスをスキャンする                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
-|保護            |クイック スキャンを実行する                                         |`mdatp scan quick`                                                     |
-|保護            |フル スキャンを実行する                                          |`mdatp scan full`                                                      |
-|保護            |進行中のオンデマンド スキャンをキャンセルする                        |`mdatp scan cancel`                                                    |
-|保護            |セキュリティ インテリジェンス更新プログラムの要求                  |`mdatp definitions update`                                             |
+|Protection            |パスをスキャンする                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
+|Protection            |クイック スキャンを実行する                                         |`mdatp scan quick`                                                     |
+|Protection            |フル スキャンを実行する                                          |`mdatp scan full`                                                      |
+|Protection            |進行中のオンデマンド スキャンをキャンセルする                        |`mdatp scan cancel`                                                    |
+|Protection            |セキュリティ インテリジェンス更新プログラムの要求                  |`mdatp definitions update`                                             |
 |保護履歴    |完全な保護履歴を印刷する                       |`mdatp threat list`                                                    |
 |保護履歴    |脅威の詳細を取得する                                      |`mdatp threat get --id [threat-id]`                                    |
 |検疫の管理 |検疫済みファイルの一覧表示                              |`mdatp threat quarantine list`                                         |

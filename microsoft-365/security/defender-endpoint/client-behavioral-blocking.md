@@ -1,7 +1,7 @@
 ---
 title: クライアントの動作ブロック
 description: クライアントの動作ブロックは、Microsoft Defender for Endpoint の動作ブロックと格納機能の一部です。
-keywords: 動作ブロック、迅速な保護、クライアントの動作、Microsoft Defender ATP
+keywords: 動作のブロック、迅速な保護、クライアントの動作、Microsoft Defender ATP、エンドポイントの microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 48929d0e2b0c932d37cb5d29783712d00b17117f
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587109"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904154"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
@@ -65,7 +65,7 @@ ms.locfileid: "51587109"
 |特権エスカレーション   | 動作:Win32/PrivilegeEscalation.*!ml |
 |Defense Evasion    | 動作:Win32/DefenseEvasion.*!ml |
 |資格情報アクセス  | 動作:Win32/CredentialAccess.*!ml |
-|検出  | 動作:Win32/Discovery.*!ml |
+|Discovery  | 動作:Win32/Discovery.*!ml |
 |横方向の動き | 動作:Win32/LateralMovement.*!ml |
 |Collection |   動作:Win32/Collection.*!ml |
 |コマンドとコントロール | 動作:Win32/CommandAndControl.*!ml |

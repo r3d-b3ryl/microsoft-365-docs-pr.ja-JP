@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 14553f3891fd81a672b62fa0575f6c253fbb0224
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 496ad5695d9cd491817bad5daf3c76a02addefd1
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060809"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904190"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender API の概要
 
@@ -47,6 +47,11 @@ Microsoft 365 Defender API を使用して、共有インシデントと高度�
 - **[製品間の](api-advanced-hunting.md)** 脅威の検出 - セキュリティ チームの組織の知識を活用して、複数の保護製品で収集された生データをふるいにかけ、独自のカスタム クエリを作成することで、侵害の兆候を探します。
 
 これらの Microsoft 365 Defender 固有の API と共に、他[](api-articles.md)の各セキュリティ製品は、独自の機能を利用するために追加の API を公開します。
+
+
+> [!NOTE]
+> 統合ポータルへの移行は、Microsoft Defender for Endpoint API に基づく PowerBi ダッシュボードに影響を与える必要があります。 対話型ポータルの移行に関係なく、既存の API を引き続き操作できます。
+
 
 ## <a name="learn-more"></a>詳細情報
 

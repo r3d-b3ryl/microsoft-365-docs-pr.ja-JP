@@ -1,7 +1,7 @@
 ---
-title: iOS 用 Microsoft Defender ATP のアプリベースの展開
+title: iOS での Microsoft Defender for Endpoint のアプリ ベースの展開
 ms.reviewer: ''
-description: アプリを使用して iOS 用 Microsoft Defender ATP を展開する方法について説明します。
+description: アプリを使用して iOS に Microsoft Defender for Endpoint を展開する方法について説明します。
 keywords: microsoft、Defender、atp、ios、アプリ、インストール、展開、アンインストール、Intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6cfd2953e752ed9c96f7f16a3ec7ea1fd8862ab2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 4ddaf8759fa0f2ffb4ed3eb3bb940426dfb3da2c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689739"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904060"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -37,14 +37,14 @@ ms.locfileid: "51689739"
 
 このトピックでは、Intune ポータル サイト登録デバイスでの IOS 用 Defender for Endpoint の展開について説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 - ユーザーに対して iOS 登録が行われたことを確認します。 IOS 用 Defender for Endpoint を使用するには、Defender for Endpoint ライセンスが割り当てられている必要があります。 ライセンスの割 [り当て方法については、「ユーザー](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) にライセンスを割り当てる」を参照してください。
 
 > [!NOTE]
-> iOS 用 Microsoft Defender ATP (Microsoft Defender for Endpoint) が Apple App [Store で利用可能になります](https://aka.ms/mdatpiosappstore)。
+> iOS 上のエンドポイント用 Microsoft Defender が [Apple App Store で利用可能になります](https://aka.ms/mdatpiosappstore)。
 
 ## <a name="deployment-steps"></a>展開手順
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP for iOS Application ライセンス条項
+title: Microsoft Defender for Endpoint on iOS Application license terms
 ms.reviewer: ''
-description: iOS ライセンス条項に関する Microsoft Defender ATP について説明します
+description: iOS ライセンス条項の Microsoft Defender for Endpoint について説明します。
 keywords: microsoft、Defender、atp、iOS、ライセンス、用語、アプリケーション、使用、インストール、サービス、フィードバック、スコープ、
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 75bcf13120c05990abf2b20cd68f460219b73cd6
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e2f2abbb27d1040f0fa9bcd1134103d54372b25b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688935"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903964"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios-application-license-terms"></a>Microsoft Defender for Endpoint on iOS アプリケーション ライセンス条項
 

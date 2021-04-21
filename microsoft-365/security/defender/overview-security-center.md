@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 2e1553b231692d184146897ddc05e11930ed1bf0
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760016"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903976"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>統合された Microsoft 365 セキュリティ センターの概要
 
@@ -149,6 +149,9 @@ Microsoft 365 セキュリティ センターには、Microsoft セキュリテ�
 > Microsoft 365 セキュリティ センターのラーニング ハブの上部には、製品 (現在、Microsoft 365 Defender、Microsoft Defender for Endpoint、および Microsoft Defender for Office 365) から選択できる便利な **フィルター** があります。 各セクションの学習リソースの数がリストされていることに注意してください。これは、学習者がトレーニングと学習のために手元にあるリソースの数を追跡するのに役立ちます。
 >
 > 製品フィルターに沿って、現在のトピック、リソースの種類 (ビデオからウェビナーまで)、セキュリティ領域に関する知識または経験のレベル、セキュリティの役割、および製品の機能が一覧表示されます。
+
+> [!TIP]
+> [Microsoft Learn](https://docs.microsoft.com/e/learn/)には他にも多くの学習機会があります。 コース [MS-500T02-A: Microsoft 365](https://docs.microsoft.com/learn/certifications/courses/ms-500t02)Threat Protection の実装などの認定トレーニングがあります。
 
 ## <a name="send-us-your-feedback"></a>フィードバックの送信
 

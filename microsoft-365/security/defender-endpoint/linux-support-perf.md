@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint for Linux のパフォーマンスの問題のトラブルシューティング
-description: Microsoft Defender Endpoint for Linux のパフォーマンスの問題をトラブルシューティングします。
+title: Microsoft Defender for Endpoint on Linux のパフォーマンスの問題のトラブルシューティング
+description: Linux 上の Microsoft Defender Endpoint のパフォーマンスの問題をトラブルシューティングします。
 keywords: microsoft、Defender、atp、Linux、パフォーマンス
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb43fd383606ab26ba2688ad5704bb7653e82a7f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860341"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903988"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のパフォーマンスの問題のトラブルシューティング
 
@@ -145,6 +145,6 @@ ms.locfileid: "51860341"
     >[!NOTE]
     > アプリケーションは、統計をメモリに格納し、ファイルのアクティビティが開始され、リアルタイム保護が有効にされた後にのみ追跡します。 リアルタイム保護がオフの前または期間中に起動されたプロセスはカウントされません。 さらに、トリガーされたスキャンがカウントされるイベントのみ。
 
-5. パフォーマンスの問題に寄与するプロセスまたはディスクの場所を除外して、Microsoft Defender ATP for Linux を構成し、リアルタイム保護を再び有効にしてください。
+5. パフォーマンスの問題に寄与するプロセスまたはディスクの場所を除外し、リアルタイム保護を再び有効にして、Linux 上の Microsoft Defender Endpoint を構成します。
 
-    詳細については、「Linux 用 Microsoft Defender ATP の除外の構成と検証 [」を参照してください](linux-exclusions.md)。
+    詳細については [、「Configure and validate exclusions for Microsoft Defender for Endpoint for Linux」を参照してください](linux-exclusions.md)。

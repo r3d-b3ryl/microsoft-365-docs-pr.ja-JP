@@ -1,7 +1,7 @@
 ---
-title: Ansible を使用して Microsoft Defender ATP for Linux を展開する
+title: Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 ms.reviewer: ''
-description: Ansible を使用して Microsoft Defender ATP for Linux を展開する方法について説明します。
+description: Ansible を使用して Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
 keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 48c34f2a8fb65cb0fc8ecbb616b9d041f61ae044
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688131"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903906"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 

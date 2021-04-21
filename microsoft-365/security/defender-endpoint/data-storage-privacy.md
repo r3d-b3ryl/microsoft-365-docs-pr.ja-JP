@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b191c4a24ce170d23fc3d9e43293cc7bbe59e80
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: dfdfcdcfb8d76f95e3b866f5f95af7efd94ed59e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892819"
+ms.locfileid: "51904130"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint データストレージとプライバシー
 
@@ -90,7 +90,7 @@ Microsoft Azure Government データ センターに展開されているサー�
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft は自分のデータを保存する期間を指定します。 Microsoft のデータ保持ポリシーとは
 **サービスオンボーディング時**<br>
-データのデータ保持ポリシーを選択できます。 これにより、Window Defender for Endpoint がデータを保存する期間が決されます。 会社の規制コンプライアンスニーズを満たすために、1 か月から 6 か月の範囲で柔軟に選択できます。
+既定では、データは 180 日間保持されます。ただし、データのデータ保持ポリシーを指定できます。 これにより、Window Defender for Endpoint がデータを保存する期間が決されます。 会社の規制コンプライアンスニーズを満たすために、1 か月から 6 か月の範囲で柔軟に選択できます。
 
 **契約の終了または有効期限時**<br>
 ライセンスが猶予期間または中断モードの間、データは保持され、利用できます。 この期間の終わりに、そのデータは Microsoft のシステムから消去され、契約の終了または有効期限から 180 日以内に回復不能になります。

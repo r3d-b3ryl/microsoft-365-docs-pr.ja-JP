@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8350db473580fd4d1728c3473742da5b63196c52
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 808eff2074dfe1573708264590b401f3d38db982
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893579"
+ms.locfileid: "51904012"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションの検出とブロック
 
@@ -61,7 +61,7 @@ Microsoft Edge (クロム ベースのバージョン 80.0.361.50) で望まし�
 > [!TIP]
 > Microsoft Edge (クロムベース) を実行している場合は [、Microsoft Defender SmartScreen](https://demo.smartscreen.msft.net/)デモ ページの 1 つでテストすることで、PUA 保護の URL ブロック機能を安全に確認できます。
 
-### <a name="blocking-urls-with-microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen を使用した URL のブロック
+### <a name="block-urls-with-microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen で URL をブロックする
 
 PUA 保護が有効になっているクロム ベースのエッジでは、Microsoft Defender SmartScreen は PUA に関連付けられた URL から保護します。
 
@@ -69,9 +69,9 @@ PUA 保護が有効になっているクロム ベースのエッジでは、Mic
 
 Microsoft Defender for Endpoint には、Microsoft が管理するデータ セットに基づいて独自のブロックリストが含まれるが、独自の脅威インテリジェンスに基づいてこのリストをカスタマイズできます。 Microsoft Defender for Endpoint ポータル [で](manage-indicators.md) インジケーターを作成および管理する場合、Microsoft Defender SmartScreen は新しい設定を尊重します。
 
-## <a name="microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策
+## <a name="microsoft-defender-antivirus-and-pua-protection"></a>Microsoft Defender ウイルス対策と PUA 保護
 
-Microsoft Defender Antivirus の望ましくない可能性のあるアプリケーション (PUA) 保護機能は、ネットワーク内のエンドポイントで PUA を検出およびブロックできます。
+Microsoft Defender Antivirus の望ましくない可能性のあるアプリケーション (PUA) 保護機能は、ネットワーク内のエンドポイントで PUA を検出してブロックできます。
 
 > [!NOTE]
 > この機能は、Windows 10、Windows Server 2019、および Windows Server 2016 で使用できます。
@@ -80,7 +80,7 @@ Microsoft Defender Antivirus は、PUA ファイルと、PUA ファイルのダ�
 
 通知は、Windows セキュリティ アプリ内の通常 [の検疫リストに表示されます](microsoft-defender-security-center-antivirus.md)。
 
-### <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策で PUA 保護を構成する
+## <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策で PUA 保護を構成する
 
 [Microsoft Intune、Microsoft Endpoint](/mem/intune/protect/device-protect)Configuration [Manager、グループ](/mem/configmgr/protect/deploy-use/endpoint-protection)ポリシー [](/azure/active-directory-domain-services/manage-group-policy)、または PowerShell コマンドレットを使用して[PUA 保護を有効にできます](/powershell/module/defender/?preserve-view=true&view=win10-ps)。
 
@@ -91,11 +91,11 @@ Microsoft Defender Antivirus は、PUA ファイルと、PUA ファイルのダ�
 
 監査モードでの PUA 保護は、社内のソフトウェア セキュリティ コンプライアンス チェックを実施し、誤検知を回避する場合に役立ちます。
 
-#### <a name="use-intune-to-configure-pua-protection"></a>Intune を使用して PUA 保護を構成する
+### <a name="use-intune-to-configure-pua-protection"></a>Intune を使用して PUA 保護を構成する
 
 詳細 [については、「Configure device Restriction settings in Microsoft Intune」](/intune/device-restrictions-configure) および [「Microsoft Defender Antivirus device Restriction settings for Windows 10 in Intune」](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) を参照してください。
 
-#### <a name="use-configuration-manager-to-configure-pua-protection"></a>Configuration Manager を使用して PUA 保護を構成する
+### <a name="use-configuration-manager-to-configure-pua-protection"></a>Configuration Manager を使用して PUA 保護を構成する
 
 PUA 保護は、Microsoft エンドポイント マネージャー (現在のブランチ) で既定で有効になっています。
 
@@ -106,7 +106,7 @@ System Center 2012 Configuration Manager の場合は、「Configuration Manager
 > [!NOTE]
 > Microsoft Defender ウイルス対策によってブロックされた PUA イベントは、Microsoft エンドポイント構成マネージャーではなく、Windows イベント ビューアーで報告されます。
 
-#### <a name="use-group-policy-to-configure-pua-protection"></a>グループ ポリシーを使用して PUA 保護を構成する
+### <a name="use-group-policy-to-configure-pua-protection"></a>グループ ポリシーを使用して PUA 保護を構成する
 
 1. [Windows 10 2020 年 10 月更新プログラム (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)用の管理用テンプレート (.admx) をダウンロードしてインストールする
 
@@ -126,9 +126,9 @@ System Center 2012 Configuration Manager の場合は、「Configuration Manager
 
 9. グループ ポリシー オブジェクトは、通常と同じ方法で展開します。
 
-#### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a>PowerShell コマンドレットを使用して PUA 保護を構成する
+### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a>PowerShell コマンドレットを使用して PUA 保護を構成する
 
-##### <a name="to-enable-pua-protection"></a>PUA 保護を有効にするには
+#### <a name="to-enable-pua-protection"></a>PUA 保護を有効にするには
 
 ```PowerShell
 Set-MpPreference -PUAProtection Enabled
@@ -136,7 +136,7 @@ Set-MpPreference -PUAProtection Enabled
 
 無効になっている場合、このコマンドレットの値 `Enabled` を設定して機能を有効にします。
 
-##### <a name="to-set-pua-protection-to-audit-mode"></a>PUA 保護を監査モードに設定するには
+#### <a name="to-set-pua-protection-to-audit-mode"></a>PUA 保護を監査モードに設定するには
 
 ```PowerShell
 Set-MpPreference -PUAProtection AuditMode
@@ -144,7 +144,7 @@ Set-MpPreference -PUAProtection AuditMode
 
 設定は `AuditMode` 、PUA をブロックせずに検出します。
 
-##### <a name="to-disable-pua-protection"></a>PUA 保護を無効にするには
+#### <a name="to-disable-pua-protection"></a>PUA 保護を無効にするには
 
 PUA 保護を有効に保つことをお勧めします。 ただし、次のコマンドレットを使用してオフにできます。
 
@@ -154,9 +154,9 @@ Set-MpPreference -PUAProtection Disabled
 
 このコマンドレットの値を設定して `Disabled` 、機能が有効になっている場合は無効にします。
 
-[Microsoft Defender ウイルス対策で PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)を使用する方法の詳細については、「Use PowerShell コマンドレットを使用して Microsoft Defender Antivirus コマンドレットと[Defender](/powershell/module/defender/index)コマンドレットを構成および実行する」を参照してください。
+詳細については [、「PowerShell コマンドレット](use-powershell-cmdlets-microsoft-defender-antivirus.md) を使用して Microsoft Defender ウイルス対策コマンドレットと Defender コマンドレットを構成および実行する」 [を参照してください](/powershell/module/defender/index)。
 
-## <a name="view-pua-events"></a>PUA イベントの表示
+## <a name="view-pua-events-using-powershell"></a>PowerShell を使用して PUA イベントを表示する
 
 PUA イベントは Windows イベント ビューアーで報告されますが、Microsoft エンドポイント マネージャーや Intune では報告されません。 コマンドレットを使用して `Get-MpThreat` 、Microsoft Defender ウイルス対策が処理した脅威を表示することもできます。 次に例を示します:
 
@@ -175,11 +175,15 @@ TypeID           : 0
 PSComputerName   :
 ```
 
+## <a name="get-email-notifications-about-pua-detections"></a>PUA 検出に関する電子メール通知を取得する
+
 電子メール通知を有効にし、PUA 検出に関するメールを受信できます。
 
 Microsoft Defender [ウイルス対策イベントの表示の詳細](troubleshoot-microsoft-defender-antivirus.md) については、「トラブルシューティング イベントの IDS」を参照してください。 PUA イベントは、イベント ID **1160 の下に記録されます**。
 
-Microsoft Defender for Endpoint を使用している場合は、高度な検索クエリを使用して PUA イベントを表示できます。 クエリの例を次に示します。
+## <a name="view-pua-events-using-advanced-hunting"></a>高度な検索を使用して PUA イベントを表示する
+
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)を使用している場合は、高度な検索クエリを使用して PUA イベントを表示できます。 クエリの例を次に示します。
 
 ```console
 DeviceEvents
@@ -190,7 +194,9 @@ DeviceEvents
 | project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
 ```
 
-## <a name="excluding-files"></a>ファイルの除外
+高度な狩猟の詳細については、「高度な狩猟 [を使用して脅威を事前に検索する」を参照してください](advanced-hunting-overview.md)。
+
+## <a name="exclude-files-from-pua-protection"></a>PUA 保護からファイルを除外する
 
 PUA 保護によってファイルが誤ってブロックされた場合や、タスクを完了するために PUA の機能が必要な場合があります。 このような場合、ファイルを除外リストに追加できます。
 

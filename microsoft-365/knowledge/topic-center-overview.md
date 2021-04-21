@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 01b3310f5f822f3f6f38bf4d9e727d41fe2b179b
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760112"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904072"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva Topics のトピック センターの概要
 
@@ -70,12 +70,12 @@ Microsoft Viva Topics では、トピック センターは、組織の知識の
 
 ## <a name="manage-topics-page"></a>[トピックの管理] ページ
 
-トピック センターの [ **トピックの管理]** セクションで作業するには、ナレッジ マネージャーの役割に必要な必要なトピックの管理権限が必要です。 管理者は、ナレッジ管理のセットアップ中にこれらの[](set-up-topic-experiences.md)アクセス許可をユーザーに割り当て[](topic-experiences-knowledge-rules.md)、または Microsoft 365 管理センターを通じて管理者が後で新しいユーザーを追加できます。
+トピック センターの [ **トピックの管理]** セクションで作業するには、ナレッジ マネージャーの役割に必要な [トピックの管理] 権限が必要です。 管理者は、ナレッジ管理のセットアップ中にこれらの[](set-up-topic-experiences.md)アクセス許可をユーザーに割り当て[](topic-experiences-knowledge-rules.md)、または Microsoft 365 管理センターを通じて管理者が後で新しいユーザーを追加できます。
 
 [トピックの管理] ページで、トピック ダッシュボードには、指定したソースの場所から識別された、アクセス権を持つすべてのトピックが表示されます。 各トピックには、トピックが検出された日付が表示されます。 [トピックの管理] アクセス許可が割り当てられたユーザーは、未確認のトピックを確認し、次の項目を選択できます。
-- トピックを確認する: トピックに関連するファイルとページにアクセスできるユーザーにトピックを強調表示し、関連するトピック カードとトピック ページを表示できます。
+- トピックを確認する: AI が推奨するトピックが人間のキュレーターによって検証されたことをユーザーに示します。 
 - トピックを発行する: トピック情報を編集して、最初に特定されたトピックの品質を向上し、トピックへのビュー アクセス権を持つすべてのユーザーにトピックを強調表示します。 
-- トピックを拒否する: トピックをユーザーが使用できません。 トピックは [拒否] タブ **に移動** され、必要に応じて後で確認できます。 
+- トピックを拒否する: トピックをエンド ユーザーに検出不可にする。 トピックは [拒否] タブ **に移動** され、必要に応じて後で確認できます。 
 
 > [!Note] 
 > 「 [トピックの管理」ページ](manage-topics.md) のトピック管理トピックの詳細については、「トピックの管理」を参照してください。

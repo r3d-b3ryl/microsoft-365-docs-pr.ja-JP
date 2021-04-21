@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Linux のプライバシー
-description: プライバシーの制御、プライバシーに影響を与えるポリシー設定の構成方法、および Microsoft Defender ATP for Linux で収集された診断データに関する情報。
+title: Linux 上のエンドポイント用 Microsoft Defender のプライバシー
+description: プライバシー制御、プライバシーに影響を与えるポリシー設定を構成する方法、および Microsoft Defender for Endpoint on Linux で収集された診断データに関する情報。
 keywords: microsoft、Defender、atp、Linux、プライバシー、診断
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaf537c84adaba3d632367567cc569069650d21a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688359"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903252"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender のプライバシー
 

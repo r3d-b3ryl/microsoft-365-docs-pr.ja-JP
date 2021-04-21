@@ -1,5 +1,5 @@
 ---
-title: Windows の概要の情報保護
+title: Windows における情報保護の概要
 ms.reviewer: ''
 description: 機密情報を特定して保護するために Windows で情報保護がどのように機能するのかについて説明します。
 keywords: 情報、保護、dlp、データ、損失、防止、保護
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 733f86ed48b9cc7a68fb0cd346c7b15fdcc3ce65
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 803c0af0c495eedfd26023d4e71d98df6a1b1b64
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187507"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904024"
 ---
-# <a name="information-protection-in-windows-overview"></a>Windows の概要の情報保護
+# <a name="information-protection-in-windows-overview"></a>Windows における情報保護の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "51187507"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "51187507"
 
 
 >[!TIP]
-> Microsoft Defender ATP と Microsoft Information Protection の統合方法に関するブログ記事を参照して、Windows デバイス上の機密データを検出、保護、 [監視します](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
+> Microsoft Defender for Endpoint (以前は Microsoft Defender ATP) が Microsoft Information Protection と統合して Windows デバイス上の機密データを検出、保護、監視する方法に関するブログ記事をお [読みください](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint は、データの検出、分類、および保護に次のメソッドを適用します。
 

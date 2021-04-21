@@ -1,6 +1,6 @@
 ---
-title: Linux 用 Microsoft Defender ATP の不足しているイベントまたはアラートの問題のトラブルシューティング
-description: Microsoft Defender ATP for Linux で不足しているイベントやアラートの問題のトラブルシューティングを行います。
+title: Linux 上の Microsoft Defender for Endpoint の不足しているイベントまたはアラートの問題のトラブルシューティング
+description: Linux 上の Microsoft Defender for Endpoint のイベントやアラートの問題が見つからない場合のトラブルシューティングを行います。
 keywords: microsoft、Defender、atp、Linux、イベント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5981cb75b4c835390e27d902b5950e3c68305200
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 40d394a4fc7349789dea9bd96ccdaf71067ab39e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687456"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904000"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上の Microsoft Defender for Endpoint の不足しているイベントまたはアラートの問題のトラブルシューティング
 
@@ -31,7 +31,7 @@ ms.locfileid: "51687456"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
 
 この記事では、セキュリティ センター ポータルで不足しているイベントやアラートを軽減するための一般的 [な手順について説明](https://securitycenter.windows.com/) します。
 

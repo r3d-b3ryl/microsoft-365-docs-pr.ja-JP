@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 電子メールの自動転送を停止する方法について学習します。
-ms.openlocfilehash: b6715cfdf8622521d977e0746cb9a340a8f70a5c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578605"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903684"
 ---
 # <a name="stop-email-auto-forward"></a>電子メールの自動転送を停止する
 
@@ -47,3 +47,7 @@ ms.locfileid: "51578605"
 1. 一番下までスクロールし、[保存] を **選択します**。
 
     ルールが作成され、ハッカーはメッセージを自動転送できなくなりました。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[ユーザーに](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) 別のメール エイリアスを追加する (記事) [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) でメール転送を構成する (記事) ビジネス管理者向け [Office 365](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) として電子メール配信の問題を検索して修正する (記事)

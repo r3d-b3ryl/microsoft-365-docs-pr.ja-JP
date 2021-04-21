@@ -1,6 +1,6 @@
 ---
-title: Linux 用 Microsoft Defender ATP の除外を構成および検証する
-description: Linux 用 Microsoft Defender ATP の除外を指定して検証します。 除外は、ファイル、フォルダー、およびプロセスに対して設定できます。
+title: Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
+description: Linux 上のエンドポイント用 Microsoft Defender の除外を指定して検証します。 除外は、ファイル、フォルダー、およびプロセスに対して設定できます。
 keywords: microsoft、Defender、atp、Linux、除外、スキャン、ウイルス対策
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fbc8fe7ef6f9af86debdeb0826865c88e86b2c6a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688191"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903942"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
 

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 362222e4737b1a8dd6b8a0a284bf3bfb1903c288
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: aa699aae24b1e6383f5a2afbe7fce31e0f53805c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861452"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903930"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Defender for Endpoint on Linux with Chef の展開
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Chef を使用して Linux 用 Microsoft Defender for Endpoint を展開する
 
 開始する前に:
 
@@ -110,7 +110,7 @@ end
 
 必ず、オンボーディング ファイルの場所にパス名を更新してください。
 Chef ワークステーションに展開をテストするには、次のコマンドを実行します ``sudo chef-client -z -o mdatp`` 。
-展開後は、Microsoft Defender ATP for Linux 用の Set preferences - Windows セキュリティ ポリシーに基づいて、構成ファイルを作成してサーバーに展開|  [Microsoft Docs](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences).  
+展開後は、Linux 上の Microsoft Defender for Endpoint の基本設定の設定に基づいて、構成ファイルを作成してサーバー  [に展開する方法を検討する必要があります](/linux-preferences.md)。  
 構成ファイルを作成してテストしたら、それをクックブック/mdatp/files フォルダーに配置し、オンボーディング パッケージも配置できます。  次に、mdatp/recipies フォルダーに settings_mdatp.rb ファイルを作成し、次のテキストを追加できます。
 
 ```powershell

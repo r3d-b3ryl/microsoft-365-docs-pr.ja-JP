@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: サブスクリプションに別のドメインを追加する方法について学習します。
-ms.openlocfilehash: 8899cb9667ffa080746ca9173b61897f9c5db399
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
-ms.translationtype: HT
+ms.openlocfilehash: a641005913f7dfd866366f0f8065019dd5c17fe8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579003"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903744"
 ---
 # <a name="add-another-domain"></a>別のドメインを追加する
 
@@ -53,3 +53,7 @@ ms.locfileid: "51579003"
 1. ユーザー名を入力し、ドロップダウン リストから新しいドメインを選択します。
 1. [**変更を保存する**] を選択し、ウィンドウを閉じます。
 1. 新しいドメインでメールを受信する必要がある各ユーザーに、これらの手順を繰り返します。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) にドメインを追加する ( [記事)](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) DNS レコードを追加してドメインに接続する (記事) ネームサーバーを変更して、任意のドメイン レジストラーで [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) をセットアップする (記事) [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (記事)

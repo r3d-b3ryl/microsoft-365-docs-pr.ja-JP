@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893651"
+ms.locfileid: "51903780"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で条件付きアクセスを構成する
 
@@ -98,7 +98,7 @@ Microsoft Defender セキュリティ センター、Intune ポータル、Azure
 
 ### <a name="step-4-assign-the-policy"></a>手順 4: ポリシーを割り当てる
 1. Azure portal [で、[すべてのサービス](https://portal.azure.com)] を選択 **し****、Intune** でフィルター処理し **、[Microsoft Intune] を選択します**。
-2. [**デバイス コンプライアンス ポリシー**  >  **] を選択>** Microsoft Defender ATP コンプライアンス ポリシーを選択します。
+2. [**デバイス コンプライアンス ポリシー**  >  **] を選択>** Microsoft Defender for Endpoint コンプライアンス ポリシーを選択します。
 3. **[割り当て]** を選択します。
 4. ポリシーを割り当てるには、Azure ADグループを含めるか除外します。
 5. ポリシーをグループに展開するには、[保存] を **選択します**。 ポリシーの対象となるユーザー デバイスは、コンプライアンスについて評価されます。
@@ -114,6 +114,6 @@ Microsoft Defender セキュリティ センター、Intune ポータル、Azure
 
 6. [ポリシー **を有効にする]** を選択し、[ **作成] を選択して** 変更を保存します。
 
-詳細については [、「Enable Microsoft Defender ATP with Conditional Access in Intune」を参照してください](https://docs.microsoft.com/intune/advanced-threat-protection)。
+詳細については、「Intune での条件付きアクセスを使用した Microsoft Defender for Endpoint のコンプライアンスの [適用」を参照してください](https://docs.microsoft.com/intune/advanced-threat-protection)。
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

@@ -1,6 +1,6 @@
 ---
 title: 転送プロキシの背後で発生する接続イベントの調査
-description: プロキシではなく、実際のターゲットを表面化する Microsoft Defender ATP のネットワーク保護を通じて高度な HTTP レベルの監視を使用する方法について説明します。
+description: プロキシではなく、実際のターゲットを表面化する Microsoft Defender for Endpoint のネットワーク保護を通じて高度な HTTP レベルの監視を使用する方法について説明します。
 keywords: プロキシ、ネットワーク保護、転送プロキシ、ネットワーク イベント、監査、ブロック、ドメイン名、ドメイン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587565"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904048"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>転送プロキシの背後で発生する接続イベントの調査
 

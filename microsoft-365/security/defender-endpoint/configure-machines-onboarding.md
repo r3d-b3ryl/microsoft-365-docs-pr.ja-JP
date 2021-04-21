@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e20c424f15561c8b6f0544b80aca6e30c56409d
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 09ca9fb466efd7764f7459a4754cfb30c8100bdb
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893331"
+ms.locfileid: "51904142"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint にオンボードされているデバイスを取得する
 
@@ -55,8 +55,8 @@ Defender for Endpoint は [、Windows 10 デバイスのオンボードに便利
 
 [オンボード] **カードで、[** その他のデバイス **の** オンボード] を選択して、Intune でプロファイルを作成して割り当てる。 このリンクを使用すると、Intune のデバイス コンプライアンス ページに移動し、オンボーディング状態の同様の概要を示します。
 
-![Intune デバイス管理の Microsoft Defender ATP デバイスコンプライアンス ページ](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
-   *Intune デバイス管理の Microsoft Defender ATP デバイスコンプライアンス ページ*
+![Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
+   *Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ*
 
 >[!TIP]
 >または、Microsoft Defender ATP のすべてのサービス > Intune > デバイス コンプライアンス> Microsoft [Azure](https://portal.azure.com/) ポータルの [Defender for Endpoint オンボーディング コンプライアンス] **ページに** 移動することもできます。
