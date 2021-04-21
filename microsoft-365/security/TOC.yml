@@ -29,6 +29,7 @@
         - name: 推奨される SaaS アプリの MCAS ポリシー
           href: ./office-365-security/mcas-saas-access-policies.md
     - name: Microsoft 365 Defender
+      href: ./defender/index.yml
       items:
         - name: 概要
           items:
