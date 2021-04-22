@@ -1,7 +1,7 @@
 ---
 title: MacOS デバイスの Microsoft Defender for Endpoint を Jamf Pro に登録する
 description: MacOS デバイスの Microsoft Defender for Endpoint を Jamf Pro に登録する
-keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,57 +18,57 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e832493159649cb6721320da53c25f57855baa4f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 0fa0db3ba85ff003d91b43d06c709ab66c37ce02
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861649"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933099"
 ---
-# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a><span data-ttu-id="9c2d2-104">MacOS デバイスの Microsoft Defender for Endpoint を Jamf Pro に登録する</span><span class="sxs-lookup"><span data-stu-id="9c2d2-104">Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro</span></span> 
+# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a><span data-ttu-id="ddb09-104">MacOS デバイスの Microsoft Defender for Endpoint を Jamf Pro に登録する</span><span class="sxs-lookup"><span data-stu-id="ddb09-104">Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="9c2d2-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="9c2d2-105">**Applies to:**</span></span>
-- [<span data-ttu-id="9c2d2-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="9c2d2-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="9c2d2-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9c2d2-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="ddb09-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="ddb09-105">**Applies to:**</span></span>
+- [<span data-ttu-id="ddb09-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ddb09-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="ddb09-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="ddb09-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="9c2d2-108">Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="9c2d2-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="9c2d2-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="ddb09-108">Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="ddb09-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="ddb09-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="ddb09-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-## <a name="enroll-macos-devices"></a><span data-ttu-id="9c2d2-110">macOS デバイスの登録</span><span class="sxs-lookup"><span data-stu-id="9c2d2-110">Enroll macOS devices</span></span>
+## <a name="enroll-macos-devices"></a><span data-ttu-id="ddb09-110">macOS デバイスの登録</span><span class="sxs-lookup"><span data-stu-id="ddb09-110">Enroll macOS devices</span></span>
 
-<span data-ttu-id="9c2d2-111">JamF に登録するには、複数の方法があります。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-111">There are multiple methods of getting enrolled to JamF.</span></span>
+<span data-ttu-id="ddb09-111">JamF に登録するには、複数の方法があります。</span><span class="sxs-lookup"><span data-stu-id="ddb09-111">There are multiple methods of getting enrolled to JamF.</span></span>
 
-<span data-ttu-id="9c2d2-112">この記事では、次の 2 つの方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-112">This article will guide you on two methods:</span></span>
+<span data-ttu-id="ddb09-112">この記事では、次の 2 つの方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="ddb09-112">This article will guide you on two methods:</span></span>
 
-- [<span data-ttu-id="9c2d2-113">方法 1: 登録の招待</span><span class="sxs-lookup"><span data-stu-id="9c2d2-113">Method 1:  Enrollment Invitations</span></span>](#enrollment-method-1-enrollment-invitations)
-- [<span data-ttu-id="9c2d2-114">方法 2: 事前登録</span><span class="sxs-lookup"><span data-stu-id="9c2d2-114">Method 2:  Prestage Enrollments</span></span>](#enrollment-method-2-prestage-enrollments)
+- [<span data-ttu-id="ddb09-113">方法 1: 登録の招待</span><span class="sxs-lookup"><span data-stu-id="ddb09-113">Method 1:  Enrollment Invitations</span></span>](#enrollment-method-1-enrollment-invitations)
+- [<span data-ttu-id="ddb09-114">方法 2: 事前登録</span><span class="sxs-lookup"><span data-stu-id="ddb09-114">Method 2:  Prestage Enrollments</span></span>](#enrollment-method-2-prestage-enrollments)
 
-<span data-ttu-id="9c2d2-115">完全な一覧については、「コンピューターの登録 [について」を参照してください](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-115">For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html).</span></span>
+<span data-ttu-id="ddb09-115">完全な一覧については、「コンピューターの登録 [について」を参照してください](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)。</span><span class="sxs-lookup"><span data-stu-id="ddb09-115">For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html).</span></span>
 
 
-## <a name="enrollment-method-1-enrollment-invitations"></a><span data-ttu-id="9c2d2-116">登録方法 1: 登録の招待</span><span class="sxs-lookup"><span data-stu-id="9c2d2-116">Enrollment Method 1: Enrollment Invitations</span></span>
+## <a name="enrollment-method-1-enrollment-invitations"></a><span data-ttu-id="ddb09-116">登録方法 1: 登録の招待</span><span class="sxs-lookup"><span data-stu-id="ddb09-116">Enrollment Method 1: Enrollment Invitations</span></span>
 
-1. <span data-ttu-id="9c2d2-117">Jamf Pro ダッシュボードで、[登録の招待] **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-117">In the Jamf Pro dashboard, navigate to **Enrollment invitations**.</span></span>
+1. <span data-ttu-id="ddb09-117">Jamf Pro ダッシュボードで、[登録の招待] **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="ddb09-117">In the Jamf Pro dashboard, navigate to **Enrollment invitations**.</span></span>
 
     ![構成設定のイメージ1](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
-2. <span data-ttu-id="9c2d2-119">[+ **新規] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-119">Select **+ New**.</span></span>
+2. <span data-ttu-id="ddb09-119">[+ **新規] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="ddb09-119">Select **+ New**.</span></span>
 
     ![ロゴの説明が自動的に生成される](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
-3. <span data-ttu-id="9c2d2-121">[ **招待の受信者の指定] >** **[** 電子メール アドレス] の下に、受信者の電子メール アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-121">In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.</span></span>
+3. <span data-ttu-id="ddb09-121">[ **招待の受信者の指定] >** **[** 電子メール アドレス] の下に、受信者の電子メール アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="ddb09-121">In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.</span></span>
 
     ![構成設定のイメージ2](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
     ![構成設定のイメージ 3](images/ae3597247b6bc7c5347cf56ab1e820c0.png)
 
-    <span data-ttu-id="9c2d2-124">たとえば、次の janedoe@contoso.com</span><span class="sxs-lookup"><span data-stu-id="9c2d2-124">For example: janedoe@contoso.com</span></span>
+    <span data-ttu-id="ddb09-124">たとえば、次の janedoe@contoso.com</span><span class="sxs-lookup"><span data-stu-id="ddb09-124">For example: janedoe@contoso.com</span></span>
 
     ![構成設定のイメージ 4](images/4922c0fcdde4c7f73242b13bf5e35c19.png)
 
-4. <span data-ttu-id="9c2d2-126">招待のメッセージを構成します。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-126">Configure the message for the invitation.</span></span>
+4. <span data-ttu-id="ddb09-126">招待のメッセージを構成します。</span><span class="sxs-lookup"><span data-stu-id="ddb09-126">Configure the message for the invitation.</span></span>
 
     ![構成設定のイメージ5](images/ce580aec080512d44a37ff8e82e5c2ac.png)
 
@@ -78,36 +78,36 @@ ms.locfileid: "51861649"
 
     ![構成設定のイメージ8](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
 
-## <a name="enrollment-method-2-prestage-enrollments"></a><span data-ttu-id="9c2d2-131">登録方法 2: 事前登録</span><span class="sxs-lookup"><span data-stu-id="9c2d2-131">Enrollment Method 2: Prestage Enrollments</span></span>
+## <a name="enrollment-method-2-prestage-enrollments"></a><span data-ttu-id="ddb09-131">登録方法 2: 事前登録</span><span class="sxs-lookup"><span data-stu-id="ddb09-131">Enrollment Method 2: Prestage Enrollments</span></span>
 
-1. <span data-ttu-id="9c2d2-132">Jamf Pro ダッシュボードで、[Prestage 登録 **] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-132">In the Jamf Pro dashboard, navigate to **Prestage enrollments**.</span></span>
+1. <span data-ttu-id="ddb09-132">Jamf Pro ダッシュボードで、[Prestage 登録 **] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="ddb09-132">In the Jamf Pro dashboard, navigate to **Prestage enrollments**.</span></span>
 
     ![構成設定のイメージ 9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
-2. <span data-ttu-id="9c2d2-134">「Computer [PreStage 登録」の手順に従います](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html)。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-134">Follow the instructions in [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html).</span></span>
+2. <span data-ttu-id="ddb09-134">「Computer [PreStage 登録」の手順に従います](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html)。</span><span class="sxs-lookup"><span data-stu-id="ddb09-134">Follow the instructions in [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html).</span></span>
 
-## <a name="enroll-macos-device"></a><span data-ttu-id="9c2d2-135">macOS デバイスの登録</span><span class="sxs-lookup"><span data-stu-id="9c2d2-135">Enroll macOS device</span></span>
+## <a name="enroll-macos-device"></a><span data-ttu-id="ddb09-135">macOS デバイスの登録</span><span class="sxs-lookup"><span data-stu-id="ddb09-135">Enroll macOS device</span></span>
 
-1. <span data-ttu-id="9c2d2-136">[ **続行] を** 選択し、[システムの基本設定] ウィンドウから **CA 証明書をインストール** します。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-136">Select **Continue** and install the CA certificate from a **System Preferences** window.</span></span>
+1. <span data-ttu-id="ddb09-136">[ **続行] を** 選択し、[システムの基本設定] ウィンドウから **CA 証明書をインストール** します。</span><span class="sxs-lookup"><span data-stu-id="ddb09-136">Select **Continue** and install the CA certificate from a **System Preferences** window.</span></span>
 
     ![Jamf Pro 登録のイメージ1](images/jamfpro-ca-certificate.png)
 
-2. <span data-ttu-id="9c2d2-138">CA 証明書がインストールされた後、ブラウザー ウィンドウに戻り、[続行] を **選択して** MDM プロファイルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-138">Once CA certificate is installed, return to the browser window and select **Continue** and install the MDM profile.</span></span> 
+2. <span data-ttu-id="ddb09-138">CA 証明書がインストールされた後、ブラウザー ウィンドウに戻り、[続行] を **選択して** MDM プロファイルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="ddb09-138">Once CA certificate is installed, return to the browser window and select **Continue** and install the MDM profile.</span></span> 
 
     ![Jamf Pro 登録のイメージ2](images/jamfpro-install-mdm-profile.png)
 
-3. <span data-ttu-id="9c2d2-140">[JAMF **からの** ダウンロードを許可する] を選択します。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-140">Select **Allow** to downloads from JAMF.</span></span>
+3. <span data-ttu-id="ddb09-140">[JAMF **からの** ダウンロードを許可する] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ddb09-140">Select **Allow** to downloads from JAMF.</span></span>
 
     ![Jamf Pro 登録のイメージ3](images/jamfpro-download.png)
 
-4. <span data-ttu-id="9c2d2-142">[続行 **] を** 選択して MDM プロファイルのインストールを続行します。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-142">Select **Continue** to proceed with the MDM Profile installation.</span></span> 
+4. <span data-ttu-id="ddb09-142">[続行 **] を** 選択して MDM プロファイルのインストールを続行します。</span><span class="sxs-lookup"><span data-stu-id="ddb09-142">Select **Continue** to proceed with the MDM Profile installation.</span></span> 
 
     ![Jamf Pro 登録のイメージ 4](images/jamfpro-install-mdm.png)
 
-5. <span data-ttu-id="9c2d2-144">[続行 **] を** 選択して MDM プロファイルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-144">Select **Continue** to install the MDM Profile.</span></span>
+5. <span data-ttu-id="ddb09-144">[続行 **] を** 選択して MDM プロファイルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="ddb09-144">Select **Continue** to install the MDM Profile.</span></span>
 
     ![Jamf Pro 登録のイメージ5](images/jamfpro-mdm-unverified.png)
 
-6. <span data-ttu-id="9c2d2-146">[続行 **] を**  選択して構成を完了します。</span><span class="sxs-lookup"><span data-stu-id="9c2d2-146">Select **Continue**  to complete the configuration.</span></span> 
+6. <span data-ttu-id="ddb09-146">[続行 **] を**  選択して構成を完了します。</span><span class="sxs-lookup"><span data-stu-id="ddb09-146">Select **Continue**  to complete the configuration.</span></span> 
 
     ![Jamf Pro 登録のイメージ6](images/jamfpro-mdm-profile.png)
