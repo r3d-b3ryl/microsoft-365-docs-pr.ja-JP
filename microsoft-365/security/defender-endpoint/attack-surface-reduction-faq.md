@@ -1,6 +1,6 @@
 ---
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
-description: Microsoft Defender ATP の攻撃表面の縮小ルールに関するよく寄せられる質問に対する回答を見つける。
+description: Microsoft Defender for Endpoint の攻撃表面縮小ルールに関するよく寄せられる質問に対する回答を見つける。
 keywords: 攻撃表面の縮小ルール、asr、hips、ホスト侵入防止システム、保護ルール、悪用防止、脆弱性対策、悪用、感染防止、エンドポイント用 microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: cf41dda4ff61137d6b60b2fc735227f15418477e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476470"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935595"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 
@@ -64,8 +64,8 @@ ASR ルールの場合、除外を 1 つ追加すると、すべての ASR ル�
 
 |ルールの名前|GUID|ファイル&フォルダーの除外|
 |:--|:--|:--|
-|JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|サポートされていません|
-|WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|サポートされていません|
+|JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|非サポート|
+|WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|非サポート|
 
 ASR ルールの除外は、ワイルドカード、パス、および環境変数をサポートします。 ASR ルールでワイルドカードを使用する方法の詳細については、「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
 

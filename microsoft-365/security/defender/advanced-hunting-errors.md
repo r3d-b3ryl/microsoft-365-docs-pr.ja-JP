@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender の高度な検索でエラーを処理する
 description: 高度な検索を使用する場合に表示されるエラーを理解する
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ、kusto、タイムアウト、リソース、エラー、不明なエラー、制限、クォータ、パラメーター、割り当て
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ、kusto、タイムアウト、リソース、エラー、不明なエラー、制限、クォータ、パラメーター、割り当て
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 83f2603b00062633ce61a3a8f364e33cbc5b029d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: d8d165f39c45bd235800dc951d50934b47dd7ff5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499725"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935451"
 ---
 # <a name="handle-advanced-hunting-errors"></a>高度なハンティング エラーの処理
 

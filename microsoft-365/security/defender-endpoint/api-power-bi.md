@@ -1,5 +1,5 @@
 ---
-title: Power BI への Microsoft Defender ATP API 接続
+title: Power BI へのエンドポイント API 接続用 Microsoft Defender
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint API の上に Power Business Intelligence (BI) レポートを作成します。
 keywords: apis、サポートされている API、Power BI、レポート
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 696782ca03e5494c3fc5ca08943d1079c5d78f8a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167032"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935043"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Power BI を使用してカスタム レポートを作成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "51167032"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -141,7 +141,7 @@ ms.locfileid: "51167032"
 詳細については、「Power BI レポート テンプレート [」を参照してください](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
 
 ## <a name="sample-reports"></a>サンプル レポート
-Microsoft Defender ATP Power BI レポートサンプルを表示します。 詳細については、「Browse [code samples 」を参照してください](https://docs.microsoft.com/samples/browse/?products=mdatp)。
+Microsoft Defender for Endpoint Power BI レポートサンプルを表示します。 詳細については、「Browse [code samples 」を参照してください](https://docs.microsoft.com/samples/browse/?products=mdatp)。
 
 
 ## <a name="related-topic"></a>関連トピック

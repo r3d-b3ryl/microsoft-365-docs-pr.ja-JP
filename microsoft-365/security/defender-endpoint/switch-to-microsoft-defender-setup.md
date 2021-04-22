@@ -1,7 +1,7 @@
 ---
 title: エンドポイント用 Microsoft Defender に切り替える - セットアップ
 description: これは、Microsoft Defender for Endpoint に切り替えるフェーズ 2 セットアップです。
-keywords: 移行、 Windows Defender Advanced Threat Protection, atp, edr
+keywords: 移行, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 6f2104e38bd55806e0873166b07a31aff46e9c24
-ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
+ms.openlocfilehash: 656ee0bda769cb5ff2cdbe406db2a95e791210c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51484758"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935559"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 
@@ -100,7 +100,7 @@ Windows Server 2016 を使用している場合に Microsoft Defender ウイル�
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> さらにヘルプが必要ですか? 「Microsoft [Defender Antivirus on Windows Server」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
+> さらにサポートが必要な場合 「Microsoft [Defender Antivirus on Windows Server」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Windows Server で Microsoft Defender ウイルス対策をパッシブ モードに設定する
 
@@ -128,7 +128,7 @@ Microsoft Defender ウイルス対策を有効にするには、Intune を使用
 |---------|---------|
 |[Intune](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**注**: Intune は現在 Microsoft エンドポイント マネージャーです。 |1. Microsoft Endpoint Manager 管理センターに [移動し、](https://go.microsoft.com/fwlink/?linkid=2109431) サインインします。<br/>2. [**デバイス**  >  **構成プロファイル] を選択** し、構成するプロファイルの種類を選択します。 デバイス制限プロファイルの種類をまだ作成していない場合、または新しいデバイス制限の種類を作成する場合は[、「Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure)でデバイス制限設定を構成する」を参照してください。<br/>3. [プロパティ] **を選択** し、[構成設定: **編集] を選択します**。<br/>4. **[Microsoft Defender ウイルス対策] を展開します**。 <br/>5. クラウド **による保護を有効にする**。<br/>6. [サンプル申請の前にユーザー **に確認** する] ドロップダウンで、[すべてのサンプルを **自動的に送信する] を選択します**。<br/>7. [望ましくない可能性 **のあるアプリケーションの** 検出] ドロップダウンで、[有効にする] または [**監査] を****選択します**。<br/>8. [確認] **+ [保存] を選択** し、[保存] を **選択します**。<br/>**ヒント**: Intune デバイス プロファイルの詳細 (設定の作成および構成方法など)については、「Microsoft Intune デバイス プロファイルとは」 [を参照してください](https://docs.microsoft.com/intune/device-profiles)。|
 |Windows のコントロール パネル     |ここでのガイダンスに従います [。Microsoft Defender ウイルス対策を有効にする](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows)。 <br/>**注**: 一部の *バージョンの* Windows では *、Microsoft Defender ウイルス* Windows Defender代わりにウイルス対策ソフトウェアが表示される場合があります。        |
-|[高度なグループ ポリシーの管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>または<br/>[グループ ポリシー管理コンソール](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. [コンピューターの構成 **]**  >  **[管理用テンプレート**  >  **] Windows コンポーネント Microsoft** Defender Antivirus  >  **に移動します**。 <br/>2. [Microsoft Defender ウイルス対策を無効にする] という **ポリシーを探します**。<br/>3. [ポリシー **設定の編集] を選択** し、ポリシーが無効になっているか確認します。 これにより、Microsoft Defender ウイルス対策が有効です。 <br/>**注**: 一部の *バージョンの* Windows では *、Microsoft Defender ウイルス* Windows Defender代わりにウイルス対策ソフトウェアが表示される場合があります。 |
+|[高度なグループ ポリシーの管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[グループ ポリシー管理コンソール](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. [コンピューターの構成 **]**  >  **[管理用テンプレート**  >  **] Windows コンポーネント Microsoft** Defender Antivirus  >  **に移動します**。 <br/>2. [Microsoft Defender ウイルス対策を無効にする] という **ポリシーを探します**。<br/>3. [ポリシー **設定の編集] を選択** し、ポリシーが無効になっているか確認します。 これにより、Microsoft Defender ウイルス対策が有効です。 <br/>**注**: 一部の *バージョンの* Windows では *、Microsoft Defender ウイルス* Windows Defender代わりにウイルス対策ソフトウェアが表示される場合があります。 |
 
 ### <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode"></a>Microsoft Defender ウイルス対策がパッシブ モードにあるか確認する
 

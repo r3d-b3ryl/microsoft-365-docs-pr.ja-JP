@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint for Mac - システム拡張機能 (プレビュー)
-description: この記事では、Microsoft Defender for Endpoint for Mac のシステム拡張機能の機能を試す手順について説明します。 この機能は現在パブリック プレビュー中です。
-keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
+title: Microsoft Defender for Endpoint on Mac - システム拡張機能 (プレビュー)
+description: この記事では、Microsoft Defender for Endpoint on Mac のシステム拡張機能の機能を試す手順について説明します。 この機能は現在パブリック プレビュー中です。
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cc148bcc0b2623eaaa8d31ef50708174264fa3b2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860329"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934947"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>Microsoft Defender for Endpoint on macOS - システム拡張機能のパブリック プレビュー)
 
@@ -34,7 +34,7 @@ ms.locfileid: "51860329"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-macOS の進化に合わせ、カーネル拡張機能ではなくシステム拡張機能を活用する Defender for Endpoint for Mac 更新プログラムを準備しています。 この更新プログラムは、macOS Catalina (10.15.4) 以降のバージョンの macOS にのみ適用されます。
+macOS の進化に合わせ、カーネル拡張機能ではなくシステム拡張機能を活用する Defender for Endpoint on Mac 更新プログラムを準備しています。 この更新プログラムは、macOS Catalina (10.15.4) 以降のバージョンの macOS にのみ適用されます。
 
 この機能は現在パブリック プレビュー中です。 この記事では、デバイスでこの機能を有効にする方法について説明します。 この機能は、独自のデバイスでローカルで試したり、管理ツールを使用してリモートで構成することができます。
 
@@ -62,7 +62,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  または、管理環境 (JAMF または Intune) を使用している場合は、更新プログラム チャネルをリモートで構成できます。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint for Mac: Set the channel name 」を参照してください](mac-updates.md#set-the-channel-name)。
+  または、管理環境 (JAMF または Intune) を使用している場合は、更新プログラム チャネルをリモートで構成できます。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint on Mac: Set the channel name 」を参照してください](mac-updates.md#set-the-channel-name)。
 
 ## <a name="deployment-steps"></a>展開手順
 
@@ -74,7 +74,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 
 1. すべての展開の前提条件が満たされた後、デバイスを再起動して、システム拡張の承認とライセンス認証プロセスを起動します。
 
-   Defender for Endpoint システム拡張機能を承認する一連のシステム プロンプトが表示されます。 シリーズのすべてのプロンプト **を** 承認する必要があります。macOS では、Defender for Endpoint for Mac がデバイスにインストールする拡張機能ごとに明示的な承認が必要です。
+   Defender for Endpoint システム拡張機能を承認する一連のシステム プロンプトが表示されます。 MacOS **では** 、Defender for Endpoint on Mac がデバイスにインストールする拡張機能ごとに明示的な承認が必要なので、シリーズのすべてのプロンプトを承認する必要があります。
    
    承認ごとに、[Open **Security Preferences]** を選択し、[許可] を選択してシステム拡張機能の実行を許可します。
 

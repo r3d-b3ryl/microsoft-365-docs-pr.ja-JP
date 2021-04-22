@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP for Android Application ライセンス条項
+title: Microsoft Defender for Endpoint on Android Application ライセンス条項
 ms.reviewer: ''
-description: Microsoft Defender ATP for Android ライセンス条項について説明します。
-keywords: microsoft、Defender、atp、android、license、Terms、application、use、installation、Service、feedback、scope、
+description: Android ライセンス条項に関する Microsoft Defender for Endpoint について説明します。
+keywords: microsoft、defender、Microsoft Defender for Endpoint、Android、ライセンス、用語、アプリケーション、使用、インストール、サービス、フィードバック、スコープ、
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 2bcc8c1f977a6060ac94dc3a634f075a5c1ee041
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687951"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934623"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Microsoft Defender for Endpoint on Android アプリケーション ライセンス条項
 
@@ -105,7 +105,7 @@ ms.locfileid: "51687951"
 
     2.  それぞれのアプリケーション ストア プロバイダーとその子会社は、本規約の第三者受益者であり、本規約に同意した場合、アプリケーション ストア プロバイダーは、特典または権利を付与する本規約の条項を直接適用し、利用する権利を有します。
 
-9.  **商標に関する通知。** Microsoft、Microsoft Defender ATP、MDATP、Microsoft 365 は、米国およびその他の国における Microsoft Corporation の登録または共通の法律上の商標です。
+9.  **商標に関する通知。** Microsoft、Microsoft Defender for Endpoint、Microsoft 365 は、米国およびその他の国における Microsoft Corporation の登録または共通の法律上の商標です。
 
 10. **ENTIRE AGREEMENT.** この契約と、お客様が使用する補足、更新プログラム、インターネット ベースのサービス、およびサポート サービスに関する条項は、アプリケーションおよびサポート サービスの完全な契約です。
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 試用版ラボ環境を準備する
 description: Microsoft 365 Defender 試用版ラボまたはパイロット環境をセットアップする際に、関係者のサインオフ、タイムライン、環境に関する考慮事項、導入順序を準備する
-keywords: MTP 試用版準備、MTP パイロット準備、MTP パイロット プロジェクトの実行準備、パイロット MTP プロジェクトの実行、展開、準備、利害関係者、タイムライン、環境、エンドポイント、サーバー、管理、導入
+keywords: Microsoft 365 Defender 試用版準備、Microsoft 365 Defender パイロット準備、Microsoft 365 Defender パイロット プロジェクトの実行準備、パイロット Microsoft 365 Defender プロジェクトの実行、展開、準備、利害関係者、タイムライン、環境、エンドポイント、サーバー、管理、導入
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d5e98cead84c0be76ca252b23f3c2d062b22dd73
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199139"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935619"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Microsoft 365 Defender 試用版ラボまたはパイロット環境を準備する
 
@@ -36,7 +36,7 @@ ms.locfileid: "51199139"
 
 Microsoft 365 Defender 試用版ラボまたはパイロット環境を作成し、それを展開するには、次の 3 段階のプロセスを実行します。
 
-|![フェーズ 1: 準備](../../media/phase-diagrams/prepare.png)<br/>フェーズ 1: 準備 |[![フェーズ 2: セットアップ](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[フェーズ 2: セットアップ](setup-m365deval.md) |[![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[フェーズ 3: オンボード](config-m365d-eval.md) | [![パイロットに戻る](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[パイロット プレイブックに戻る](m365d-pilot.md) |
+|![フェーズ 1: 準備](../../media/phase-diagrams/prepare.png)<br/>フェーズ 1: 準備 |[![フェーズ 2: 設定](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[フェーズ 2: 設定](setup-m365deval.md) |[![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[フェーズ 3: オンボード](config-m365d-eval.md) | [![パイロットに戻る](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[パイロット プレイブックに戻る](m365d-pilot.md) |
 |--|--|--|--|
 |*お前はここにいる!* | || |
 
@@ -62,7 +62,7 @@ Microsoft 365 Defender をプロビジョニングして使用するライセン
 
 -   I = このプロジェクトの通知
 
-| Name                 | Role                                                                                                                                                                                                          | アクション |
+| 名前                 | Role                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 名前とメールを入力する | **最高情報セキュリティ責任者 (CISO)** 新しいテクノロジ展開の組織の内部でスポンサーを務め、役員 *の代表者。*                                                  | だから     |
 | 名前とメールを入力する | **サイバー防御運用センター (CDOC)** の代表は *、CDOC* チームの担当者で、この変更が顧客のセキュリティ運用チームのプロセスとどのように一致するのか定義します。       | だから     |
@@ -106,8 +106,8 @@ Active Directory に[ユーザーとグループを追加し](/azure-advanced-th
 | コンポーネント                               | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 構成順序のランク |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 |Microsoft Defender for Office 365|Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL) や共同作業ツールによって生じる悪意のある脅威から組織を保護します。 <br> [詳細情報](/microsoft-365/security/office-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
-|Microsoft Defender for Identity|Microsoft Defender for Identity は、Active Directory シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、および調査します。 <br> [詳細情報を参照してください](/azure-advanced-threat-protection/)。| 2 |
-|Microsoft Cloud App Security| Microsoft Cloud App Security は、複数のクラウドで動作するクラウド アクセス セキュリティ ブローカー (CASB) です。 豊富な可視性、データ移動の制御、高度な分析を提供し、すべてのクラウド サービスでサイバー脅威を特定し、対処します。 <br> [詳細情報を参照してください](/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
+|Microsoft Defender for Identity|Microsoft Defender for Identity は、Active Directory シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、および調査します。 <br> [詳細情報](/azure-advanced-threat-protection/) を参照してください。| 2 |
+|Microsoft Cloud App Security| Microsoft Cloud App Security は、複数のクラウドで動作するクラウド アクセス セキュリティ ブローカー (CASB) です。 豊富な可視性、データ移動の制御、高度な分析を提供し、すべてのクラウド サービスでサイバー脅威を特定し、対処します。 <br> [詳細情報](/cloud-app-security/) を参照してください。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender for Endpoint | Microsoft Defender for Endpoint のエンドポイント検出および対応機能により、高度な攻撃のほとんどリアルタイムで実用的な検出が実現されます。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 <br> [詳細情報](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                   |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>次の手順

@@ -2,7 +2,7 @@
 title: Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 ms.reviewer: ''
 description: エンタープライズで Microsoft Defender for Endpoint on Linux を構成する方法について説明します。
-keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2c162d652656afb61f1d74bad9ec963825d25a14
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 7f3dd65aea0efa570ec5d6a1d27479b787e16831
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903872"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935283"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -37,9 +37,9 @@ ms.locfileid: "51903872"
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 >[!IMPORTANT]
->このトピックでは、エンタープライズ環境で Defender for Endpoint for Linux の基本設定を設定する方法について説明します。 コマンド ラインからデバイスで製品を構成する場合は、「Resources」を参照 [してください](linux-resources.md#configure-from-the-command-line)。
+>このトピックでは、エンタープライズ環境で Defender for Endpoint on Linux の基本設定を設定する方法について説明します。 コマンド ラインからデバイスで製品を構成する場合は、「Resources」を参照 [してください](linux-resources.md#configure-from-the-command-line)。
 
-エンタープライズ環境では、Defender for Endpoint for Linux を構成プロファイルで管理できます。 このプロファイルは、選択した管理ツールから展開されます。 企業が管理する基本設定は、デバイス上でローカルに設定された基本設定よりも優先されます。 つまり、企業のユーザーは、この構成プロファイルを介して設定された基本設定を変更できないのです。
+エンタープライズ環境では、Defender for Endpoint on Linux を構成プロファイルで管理できます。 このプロファイルは、選択した管理ツールから展開されます。 企業が管理する基本設定は、デバイス上でローカルに設定された基本設定よりも優先されます。 つまり、企業のユーザーは、この構成プロファイルを介して設定された基本設定を変更できないのです。
 
 この記事では、このプロファイルの構造 (開始に使用できる推奨プロファイルを含む) と、プロファイルを展開する方法について説明します。
 
@@ -450,4 +450,4 @@ JSON が整形式の場合、上記のコマンドはターミナルに出力し
 
 ## <a name="configuration-profile-deployment"></a>構成プロファイルの展開
 
-企業の構成プロファイルを構築したら、企業が使用している管理ツールを使用して展開できます。 Defender for Endpoint for Linux は *、/etc/opt/microsoft/mdatp/managed/mdatp_managed.jsファイルから管理構成を読み取* ります。
+企業の構成プロファイルを構築したら、企業が使用している管理ツールを使用して展開できます。 Defender for Endpoint on Linux は *、/etc/opt/microsoft/mdatp/managed/mdatp_managed.jsファイルから管理構成を読み取* ります。

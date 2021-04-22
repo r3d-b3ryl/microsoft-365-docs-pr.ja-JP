@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender の前提条件
 description: Microsoft 365 Defender のライセンス、ハードウェアとソフトウェアの要件、その他の構成設定について説明します。
-keywords: 要件、前提条件、ハードウェア、ソフトウェア、ブラウザー、MTP、M365、ライセンス、E5、A5、EMS、購入
+keywords: 要件、前提条件、ハードウェア、ソフトウェア、ブラウザー、Microsoft 365 Defender、M365、ライセンス、E5、A5、EMS、購入
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f9904ecb5b9ab0a0f634903a5dc0ee3049d06b38
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 930a3de078d6d003241bb6fcd5df71bc9f301962
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066747"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935607"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender の前提条件
 

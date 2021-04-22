@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの AppFileEvents テーブル
 description: 高度なハンティング スキーマの AppFileEvents テーブルで、クラウド アプリとサービスに関連付けられているファイル関連のイベントについて説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、AppFileEvents、Cloud App Security、MCAS
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、AppFileEvents、Cloud App Security、MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b8b3b34e1b8535772d19f8ddd9f52c5c0a89292b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 861a04eb168190f2bb64bbb0258de6767c619e1b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499347"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934719"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -46,31 +46,31 @@ ms.locfileid: "51499347"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
-| `Application` | 文字列 | 記録されたアクションを実行したアプリケーション |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `Application` | string | 記録されたアクションを実行したアプリケーション |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダー |
-| `PreviousFileName` | 文字列 | アクションの結果として名前が変更されたファイルの元の名前 |
-| `PreviousFolderPath` | 文字列 | 記録されたアクションが適用される前のファイルを含む元のフォルダー |
-| `Protocol` | 文字列 | 使用されるネットワーク プロトコル |
-| `AccountName` | 文字列 | アカウントのユーザー名 |
-| `AccountDomain` | 文字列 | アカウントのドメイン |
-| `AccountSid` | 文字列 | アカウントのセキュリティ識別子 (SID) |
-| `AccountUpn` | 文字列 | アカウントのユーザー プリンシパル名 (UPN) |
-| `AccountObjectId` | 文字列 | Azure アカウントのアカウントの一意AD |
-| `AccountDisplayName` | 文字列 | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
-| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
-| `DeviceType` | 文字列 | デバイスの種類 | 
-| `OSPlatform` | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
+| `PreviousFileName` | string | アクションの結果として名前が変更されたファイルの元の名前 |
+| `PreviousFolderPath` | string | 記録されたアクションが適用される前のファイルを含む元のフォルダー |
+| `Protocol` | string | 使用されるネットワーク プロトコル |
+| `AccountName` | string | アカウントのユーザー名 |
+| `AccountDomain` | string | アカウントのドメイン |
+| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
+| `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
+| `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
+| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
+| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
+| `DeviceType` | string | デバイスの種類 | 
+| `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
 | `IPAddress` | string | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
-| `Port` | 文字列 | 通信中に使用される TCP ポート  |
-| `DestinationDeviceName` | 文字列 | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの名前 |
-| `DestinationIPAddress` | 文字列 | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの IP アドレス |
-| `DestinationPort` | 文字列 | 関連するネットワーク通信の宛先ポート |
-| `Location` | 文字列 | イベントに関連付けられている都市、国、その他の地理的な場所 |
-| `Isp` | 文字列 | エンドポイント IP アドレスに関連付けられたインターネット サービス プロバイダー (ISP) |
+| `Port` | string | 通信中に使用される TCP ポート  |
+| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの名前 |
+| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの IP アドレス |
+| `DestinationPort` | string | 関連するネットワーク通信の宛先ポート |
+| `Location` | string | イベントに関連付けられている都市、国、その他の地理的な場所 |
+| `Isp` | string | エンドポイント IP アドレスに関連付けられたインターネット サービス プロバイダー (ISP) |
 | `ReportId` | long | イベントの一意識別子 |
-| `AdditionalFields` | 文字列 | エンティティまたはイベントに関する追加情報 |
+| `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
 
 >[!TIP]
 > テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。

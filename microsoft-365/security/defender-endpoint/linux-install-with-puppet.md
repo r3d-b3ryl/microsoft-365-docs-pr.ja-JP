@@ -2,7 +2,7 @@
 title: Linux での Microsoft Defender for Endpoint の展開 (Puppet を使用)
 ms.reviewer: ''
 description: Puppet を使用して Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
-keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 413f8113d2f782c0a57d648a6db8178f2e522270
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: d54732134e91b87b2639634c365556beda5312b0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903884"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934575"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Linux での Microsoft Defender for Endpoint の展開 (Puppet を使用)
 
@@ -36,7 +36,7 @@ ms.locfileid: "51903884"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-この記事では、Puppet を使用して Defender for Endpoint for Linux を展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
+この記事では、Puppet を使用して Defender for Endpoint を Linux に展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
 
 - [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
 - [Puppet マニフェストの作成](#create-a-puppet-manifest)
@@ -45,7 +45,7 @@ ms.locfileid: "51903884"
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
- 現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メイン [の Defender for Endpoint for Linux ページを参照してください](microsoft-defender-endpoint-linux.md)。
+ 現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メイン [の Defender for Endpoint on Linux ページを参照してください](microsoft-defender-endpoint-linux.md)。
 
 さらに、Puppet の展開では、Puppet 管理タスクを理解し、Puppet を構成し、パッケージを展開する方法を知る必要があります。 Puppet には、同じタスクを実行する多くの方法があります。 これらの手順では、パッケージの展開に役立つ apt など、サポートされている *Puppet* モジュールの可用性を前提とします。 組織で別のワークフローを使用する場合があります。 詳細については [、Puppet のドキュメント](https://puppet.com/docs) を参照してください。
 
@@ -79,7 +79,7 @@ Microsoft Defender セキュリティ センターからオンボーディング
 
 ## <a name="create-a-puppet-manifest"></a>Puppet マニフェストの作成
 
-Defender for Endpoint for Linux を、Puppet サーバーによって管理されるデバイスに展開するために、Puppet マニフェストを作成する必要があります。 この例では *、puppetlabs* から利用できる apt モジュールと *yumrepo* モジュールを使用し、モジュールが Puppet サーバーにインストールされていることを前提とします。
+Linux 上の Defender for Endpoint を、Puppet サーバーによって管理されるデバイスに展開するために、Puppet マニフェストを作成する必要があります。 この例では *、puppetlabs* から利用できる apt モジュールと *yumrepo* モジュールを使用し、モジュールが Puppet サーバーにインストールされていることを前提とします。
 
 Puppet インストールの *modules フォルダー install_mdatp下に、install_mdatp/* ファイル、install_mdatp/マニフェストのフォルダーを作成します。  このフォルダーは、通常 *、/etc/puppetlabs/code/environments/production/modules* on your Puppet server にあります。 上記でmdatp_onboard.jsしたファイルのコピーを *、install_mdatp/files フォルダーにコピー* します。 *init.pp を作成する* 展開手順を含むファイルを次に示します。
 
@@ -103,7 +103,7 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>`install_mdatp/manifests/init.pp` のコンテンツ
 
-Defender for Endpoint for Linux は、以下のいずれかのチャネル *([channel] と* 示す) から展開できます。insiders-fast *、insiders-slow、**または prod* です。 これらの各チャネルは、Linux ソフトウェア リポジトリに対応します。
+Defender for Endpoint on Linux は、以下のいずれかのチャネル *([channel]* と示す) から展開できます。insiders-fast *、insiders-slow、**または prod* です。 これらの各チャネルは、Linux ソフトウェア リポジトリに対応します。
 
 チャネルの選択によって、デバイスに提供される更新プログラムの種類と頻度が決されます。 *insiders-fast* のデバイスは、更新プログラムと新機能を受け取る最初のデバイスで、後で *insiders-slow* と最後に *prod が続きます*。
 
@@ -238,7 +238,7 @@ mdatp health --field healthy
 
 ## <a name="operating-system-upgrades"></a>オペレーティング システムのアップグレード
 
-オペレーティング システムを新しいメジャー バージョンにアップグレードする場合は、まず Defender for Endpoint for Linux をアンインストールし、アップグレードをインストールし、最後にデバイスで Defender for Endpoint for Linux を再構成する必要があります。
+オペレーティング システムを新しいメジャー バージョンにアップグレードする場合は、まず、Linux 上の Defender for Endpoint をアンインストールし、アップグレードをインストールし、最後にデバイス上で Defender for Endpoint on Linux を再構成する必要があります。
 
 ## <a name="uninstallation"></a>アンインストール
 

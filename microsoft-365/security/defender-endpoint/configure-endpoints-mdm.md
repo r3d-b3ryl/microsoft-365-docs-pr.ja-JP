@@ -1,7 +1,7 @@
 ---
 title: モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード
 description: モバイル デバイス管理ツールを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-keywords: mdm を使用したオンボード デバイス、デバイス管理、オンボード Windows ATP デバイス、オンボード Microsoft Defender for Endpoint デバイス、mdm
+keywords: mdm を使用したオンボード デバイス、デバイス管理、オンボード Microsoft Defender for Endpoint デバイス、mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f3042ef9ced11ebc5439308d2781528d5267975f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 951b0f33356ab99485f09ccc4147691e13ed3c6e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893615"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935007"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード
 

@@ -1,7 +1,7 @@
 ---
 title: エンドポイント用 Microsoft Defender への切り替え - 準備
 description: これは、Microsoft Defender for Endpoint に移行するフェーズ 1 の準備です。
-keywords: 移行、 Windows Defender Advanced Threat Protection, atp, edr
+keywords: 移行, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: de0d5ca756cdd8fe6eaf82968d04d143a098269c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3705a84ae6cc182fb82120eae05cb1ff6e7df430
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688071"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935247"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -60,7 +60,7 @@ ms.locfileid: "51688071"
 
 組織のデバイスの更新に関するヘルプが必要ですか? 以下のリソースを参照してください。
 
-|OS | リソース |
+|OS | Resource |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|

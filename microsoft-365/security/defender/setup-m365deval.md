@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 試用版ラボまたはパイロット環境をセットアップする
 description: Access Microsoft 365 Security Center その後、Microsoft 365 Defender 試用版ラボ環境をセットアップする
-keywords: Microsoft Threat Protection 試用版セットアップ、Microsoft Threat Protection パイロット セットアップ、Try Microsoft Threat Protection、Microsoft Threat Protection 評価ラボ セットアップ
+keywords: Microsoft 365 Defender 試用版セットアップ、Microsoft 365 Defender パイロット セットアップ、Microsoft 365 Defender、Microsoft 365 Defender 評価ラボセットアップを試す
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 976f6a1ec010348e8a281c251064acdd7a26748b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ae81f6be0a83d5d0141f0f0c8c89f8f2207cc56c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066739"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935427"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Microsoft 365 Defender 試用版ラボ環境のセットアップ 
 
@@ -37,7 +37,7 @@ ms.locfileid: "51066739"
 
 Microsoft 365 Defender 試用版ラボまたはパイロット環境を作成し、それを展開するには、次の 3 段階のプロセスを実行します。
 
-|[![フェーズ 1: 準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[フェーズ 1: 準備](prepare-m365d-eval.md) |![フェーズ 2: セットアップ](../../media/phase-diagrams/setup.png)<br/>フェーズ 2: セットアップ |[![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[フェーズ 3: オンボード](config-m365d-eval.md) | [![パイロットに戻る](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[パイロット プレイブックに戻る](m365d-pilot.md) |
+|[![フェーズ 1: 準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[フェーズ 1: 準備](prepare-m365d-eval.md) |![フェーズ 2: 設定](../../media/phase-diagrams/setup.png)<br/>フェーズ 2: 設定 |[![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[フェーズ 3: オンボード](config-m365d-eval.md) | [![パイロットに戻る](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[パイロット プレイブックに戻る](m365d-pilot.md) |
 |--|--|--|--|
 ||*お前はここにいる!*  | | |
 
@@ -89,7 +89,7 @@ Office 365 または Azure Active Directory サブスクリプションにサイ
 
    ![[Go setup] Officeをクリックするように求める 365 E5 試用版登録セットアップ ページのイメージ](../../media/mtp-eval-15.png)
 
-8. 企業ドメインを 365 テナントOffice接続します。 [省略可能][ **既に所有しているドメインを接続する] を選択し** 、ドメイン名を入力します。 **[次へ]** をクリックします。
+8. 企業ドメインを 365 テナントOffice接続します。 [省略可能][ **既に所有しているドメインを接続する] を選択し** 、ドメイン名を入力します。 [ **次へ**] をクリックします。
 
    ![サインインとメールOfficeカスタマイズする必要がある 365 E5 セットアップ ページの画像](../../media/mtp-eval-16.png)
  

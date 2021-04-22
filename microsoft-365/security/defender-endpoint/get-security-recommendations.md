@@ -1,7 +1,7 @@
 ---
-title: セキュリティに関する推奨事項を取得する
+title: セキュリティ上の推奨事項を取得する
 description: 特定のデバイス ID に関連するセキュリティ推奨事項のコレクションを取得します。
-keywords: apis、 graph api, supported apis, get, list, file, information, security recommendation per device, threat & vulnerability management api, mdatp tvm api
+keywords: apis、graph api、サポートされている API、get、list、file、information、デバイスごとのセキュリティ推奨事項、脅威 & 脆弱性管理 API、Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,20 +14,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6c65926985c7c8a194ab87c44c3fc269488c463c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bc209687d51b3e05bfcfd6028042ba5912b877f6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199770"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935307"
 ---
-# <a name="get-security-recommendations"></a>セキュリティに関する推奨事項を取得する
+# <a name="get-security-recommendations"></a>セキュリティ上の推奨事項を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,9 +52,9 @@ GET /api/machines/{machineId}/recommendations
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 
 
 ## <a name="request-body"></a>要求本文

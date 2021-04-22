@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Office 365 での自動調査と対応
-keywords: AIR、autoIR、ATP、自動化、調査、対応、修復、脅威、高度、脅威、保護
+keywords: AIR、autoIR、Microsoft Defender for Endpoint、自動化、調査、対応、修復、脅威、高度、脅威、保護
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9850506771f53b125c08b1df2149ee024191d823
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 89421348d858a869e033380802e402465949c554
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768868"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935175"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -91,12 +91,12 @@ Microsoft Defender for Office 365 では、修復アクションは自動的に�
 
 Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マルウェアアクティビティ、外部および内部の潜在的な脅威、情報ガバナンスのリスクを特定するのに役立つ、多くの組み込みのアラート ポリシーが提供されています。 既定のアラート [ポリシーのいくつかは、](../../compliance/alert-policies.md#default-alert-policies) 自動調査をトリガーできます。 次の表に、自動調査をトリガーするアラート、Microsoft 365 セキュリティ センターでの重大度、および生成方法について説明します。
 
-|アラート|重要度|アラートの生成方法|
+|通知|重要度|アラートの生成方法|
 |---|---|---|
 |悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次の場合に生成されます。 <ul><li>組織内の安全なリンク [によって保護](safe-links.md) されたユーザーが悪意のあるリンクをクリックする</li><li>URL の評決の変更は、Microsoft Defender によって 365 のOfficeされます。</li><li>ユーザーは、安全なリンクの警告ページ (組織のセーフ リンク ポリシーに基づく) [を上書きします](set-up-safe-links-policies.md)。</li></ul> <p> このアラートをトリガーするイベントの詳細については、「安全なリンク ポリシーを設定 [する」を参照してください](set-up-safe-links-policies.md)。|
-|電子メール メッセージがマルウェアまたはフィッシングとしてユーザーによって報告される|**Informational**|このアラートは、組織のユーザーがレポート メッセージ アドインまたはレポートフィッシング[](enable-the-report-message-add-in.md)アドインを使用してフィッシングメールとしてメッセージを[報告するときに生成されます](enable-the-report-phish-add-in.md)。|
-|配信後にマルウェアを含む電子メール メッセージが削除される|**Informational**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して Exchange Online メールボックスから感染したメッセージ [を削除します](zero-hour-auto-purge.md)。|
-|配信後にフィッシング URL を含む電子メール メッセージが削除される|**Informational**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して Exchange Online メールボックスから感染したメッセージ [を削除します](zero-hour-auto-purge.md)。|
+|電子メール メッセージがマルウェアまたはフィッシングとしてユーザーによって報告される|**情報**|このアラートは、組織のユーザーがレポート メッセージ アドインまたはレポートフィッシング[](enable-the-report-message-add-in.md)アドインを使用してフィッシングメールとしてメッセージを[報告するときに生成されます](enable-the-report-phish-add-in.md)。|
+|配信後にマルウェアを含む電子メール メッセージが削除される|**情報**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して Exchange Online メールボックスから感染したメッセージ [を削除します](zero-hour-auto-purge.md)。|
+|配信後にフィッシング URL を含む電子メール メッセージが削除される|**情報**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して Exchange Online メールボックスから感染したメッセージ [を削除します](zero-hour-auto-purge.md)。|
 |不審なメール送信パターンが検出される|**Medium**|このアラートは、組織内の誰かが不審なメールを送信し、電子メールの送信を制限される危険性がある場合に生成されます。 このアラートは、アカウントが侵害されたが、ユーザーを制限するのに十分な重大性を示す可能性がある動作に関する早期の警告です。 <p> まれですが、このポリシーによって生成されるアラートは異常である可能性があります。 ただし、ユーザー アカウントが侵害されているかどうかを確認する [方が良い方法です](responding-to-a-compromised-email-account.md)。|
 |ユーザーが電子メールの送信を制限されている|**High**|このアラートは、組織内のユーザーが送信メールの送信を制限されている場合に生成されます。 このアラートは、通常、電子メール アカウント [が侵害された場合に発生します](responding-to-a-compromised-email-account.md)。 <p> 制限付きユーザーの詳細については [、「Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md)の制限付きユーザー ポータルからブロックされたユーザーを削除する」を参照してください。|
 |
@@ -141,7 +141,7 @@ microsoft Defender で Office 365 用の AIR 機能を既に使用している�
 
 次の表に、Microsoft Defender 365 の AIR に加わる変更とOffice示します。
 
-|Item|何が変わるのか?|
+|アイテム|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|
@@ -153,7 +153,7 @@ microsoft Defender で Office 365 用の AIR 機能を既に使用している�
 |**[インシデント]** ページ|[ **インシデント] ページ** では、複数の調査を相互に関連付け、調査の統合されたビューを向上しました。 ([インシデントの詳細については、.)](../defender/incidents-overview.md)|
 |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [自動調査の詳細と結果を確認する](air-view-investigation-results.md#view-details-of-an-investigation)
 - [保留中のアクションの確認と承認](air-remediation-actions.md)

@@ -1,7 +1,7 @@
 ---
 title: 脅威と脆弱性の管理でサポートされているオペレーティング システムとプラットフォーム
 description: 脅威と脆弱性の管理に必要なオペレーティング システムまたはプラットフォームを満たして、すべてのデバイスのアクティビティが適切に考慮されていることを確認します。
-keywords: 脅威&管理、脅威と脆弱性の管理、オペレーティング システム、プラットフォーム要件、前提条件、mdatp-tvm サポート os、mdatp-tvm、
+keywords: 脅威&の管理、脅威と脆弱性の管理、オペレーティング システム、プラットフォーム要件、前提条件、Microsoft Defender for Endpoint-tvm サポート os、Microsoft Defender for Endpoint-tvm、
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fd778b66e85507d5e6d91ed786b16454a5c0fc8f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 55322d238839d347882ec1d74b767c68fd2be2b3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500440"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935523"
 ---
 # <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>サポートされているオペレーティング システムとプラットフォーム - 脅威と脆弱性の管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500440"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 開始する前に、次のオペレーティング システムまたはプラットフォームで脅威と脆弱性の管理に必要な要件を満たして、デバイス内のアクティビティが適切に説明されていることを確認してください。
 

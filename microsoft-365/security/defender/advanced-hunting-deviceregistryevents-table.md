@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceRegistryEvents テーブル
 description: 高度なハンティング スキーマの DeviceRegistryEvents テーブルからクエリできるレジストリ イベントについて説明します。
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、registryevents、レジストリ、DeviceRegistryEvents、キー、サブキー、値
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、registryevents、レジストリ、DeviceRegistryEvents、キー、サブキー、値
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ca348d600c79cbfddd3328c702127eadb80774c8
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a256282ffd8afabae7ffe6dab9a2b132e4fee475
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499768"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934871"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -46,7 +46,7 @@ ms.locfileid: "51499768"
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `DeviceId` | string | コンピューターの一意識別子 |
-| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `RegistryKey` | string | 記録されたアクションが適用されたレジストリ キー |
 | `RegistryValueType` | string | 記録されたアクションが適用されたレジストリ値のデータ型 (バイナリや文字列など) |

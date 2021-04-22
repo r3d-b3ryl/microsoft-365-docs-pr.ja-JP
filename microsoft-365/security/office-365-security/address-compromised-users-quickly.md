@@ -1,6 +1,6 @@
 ---
 title: 調査と対応を自動化して、侵害されたユーザー アカウントに対処する
-keywords: AIR、autoIR、ATP、自動化、調査、対応、修復、脅威、高度、脅威、保護、侵害
+keywords: AIR、autoIR、Microsoft Defender for Endpoint、自動化、調査、対応、修復、脅威、高度、脅威、保護、侵害
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.date: 02/25/2020
 description: Microsoft Defender for Office 365 Plan 2 で、侵害されたユーザー アカウントを検出して対処するプロセスを高速化する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2428cc2c1f82b4f2b881433fde991dd04b268d6e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206745"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934695"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>調査と対応を自動化して、侵害されたユーザー アカウントに対処する
 

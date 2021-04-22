@@ -1,10 +1,10 @@
 ---
 title: エンドポイント用 Microsoft Defender を他の Microsoft ソリューションと統合する
-description: Microsoft Defender for Endpoint が、Microsoft Defender for Identity や Azure Security Center などの他の Microsoft ソリューションと統合する方法について説明します。
+description: Microsoft Defender for Endpoint が、Microsoft Defender for Identity や Azure Defender を含む他の Microsoft ソリューションと統合する方法について説明します。
 author: mjcaparas
 ms.author: macapara
 ms.prod: m365-security
-keywords: microsoft 365 defender, 条件付きアクセス, office, 高度な脅威保護, id 用 microsoft Defender, microsoft defender for office, Azure security center, microsoft cloud app security, azure sentinel
+keywords: microsoft 365 defender, 条件付きアクセス, office, エンドポイント用 Microsoft Defender, id 用 microsoft Defender, microsoft defender for office, Azure Defender, microsoft cloud app security, azure sentinel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d12afd27288655f4f5a82eeed24686f27171a7a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ce8dbef2f4fb7c3503f04f15148d2071b449b2dc
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765397"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935535"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -38,7 +38,7 @@ ms.locfileid: "51765397"
 
 Microsoft Defender for Endpoint は、さまざまな Microsoft ソリューションと直接統合します。
 
-### <a name="azure-security-center"></a>Azure Security Center
+### <a name="azure-defender"></a>Azure Defender
 Microsoft Defender for Endpoint は、Windows サーバー上のエンドポイント検出および応答 (EDR) 機能を含む包括的なサーバー保護ソリューションを提供します。
 
 ### <a name="azure-sentinel"></a>Azure Sentinel
@@ -54,10 +54,10 @@ Microsoft Defender for Endpoint の動的デバイス リスク スコアは条�
 Microsoft Cloud App Security では、Microsoft Defender for Endpoint エンドポイント信号を活用して、サポートされていないクラウド サービス (シャドウ IT) をすべての Microsoft Defender for Endpoint 監視対象デバイスから使用するなど、クラウド アプリケーションの使用状況を直接可視化できます。
 
 ### <a name="microsoft-defender-for-identity"></a>Microsoft Defender for Identity
-疑わしいアクティビティは、ユーザー コンテキストで実行されているプロセスです。 Microsoft Defender for Endpoint と Azure ATP の統合により、アクティビティと ID 全体でサイバー セキュリティ調査を柔軟に実施できます。
+疑わしいアクティビティは、ユーザー コンテキストで実行されているプロセスです。 Microsoft Defender for Endpoint と Microsoft Defender for Identity の統合により、アクティビティと ID 全体でサイバーセキュリティ調査を柔軟に実施できます。
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender for Office
-[Defender for Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) は、ATP セーフ リンク、ATP の安全な添付ファイル、高度なフィッシング対策、スプーフィング インテリジェンス機能を通じて、電子メール メッセージまたはファイル内のマルウェアから組織を保護するのに役立ちます。 365 ATP Office Microsoft Defender for Endpoint の統合により、セキュリティ アナリストは攻撃のエントリ ポイントを調査するために上流に移動できます。 脅威インテリジェンスの共有を通じて、攻撃を封じ込め、ブロックすることができます。 
+[Defender for Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) は、安全なリンク、安全な添付ファイル、高度なフィッシング対策、スプーフィング インテリジェンス機能を通じて、電子メール メッセージまたはファイル内のマルウェアから組織を保護するのに役立ちます。 Microsoft Defender for Office 365 と Microsoft Defender for Endpoint の統合により、セキュリティ アナリストは攻撃のエントリ ポイントを調査するために上流に移動できます。 脅威インテリジェンスの共有を通じて、攻撃を封じ込め、ブロックすることができます。 
 
 >[!NOTE]
 > 過去 30 Office内のイベントに対して、365 データの Defender が表示されます。 アラートの場合、365 Officeの Defender は、最初のアクティビティ時間に基づいて表示されます。 その後、データは Defender で 365 以降Officeされます。

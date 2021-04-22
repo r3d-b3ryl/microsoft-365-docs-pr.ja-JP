@@ -1,7 +1,7 @@
 ---
 title: 脅威保護 (Windows 10)
 description: Microsoft Defender for Endpoint は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。
-keywords: 脅威保護、Microsoft Defender Advanced Threat Protection、攻撃表面の縮小、次世代保護、エンドポイントの検出と対応、自動調査と対応、Microsoft Threat Experts、Microsoft Secure Score for Devices、Advanced Hunting、Cyber Threat Hunting、Web Threat Protection
+keywords: 脅威保護、Microsoft Defender for Endpoint、攻撃表面の縮小、次世代保護、エンドポイントの検出と対応、自動調査と対応、Microsoft Threat Experts、Microsoft Secure Score for Devices、Advanced Hunting、Cyber Threat Hunting、Web Threat Protection
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4206519d62feb82bbc297659e01b0cc3902b83dc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061162"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934935"
 ---
-# <a name="threat-protection"></a>脅威の防止
+# <a name="threat-protection"></a>脅威保護
 [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。 Defender for Endpoint は、エンドポイントをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティの態勢を改善します。
 
 > [!TIP]
@@ -52,7 +52,7 @@ ms.locfileid: "51061162"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
-**[脅威&の管理](next-gen-threat-and-vuln-mgt.md)**<br>
+**[脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)**<br>
 この組み込み機能では、エンドポイントの脆弱性と誤った構成の検出、事前設定、修復に対して、ゲームを変えるリスクベースのアプローチを使用します。
 
 - [脅威&の管理の概要](next-gen-threat-and-vuln-mgt.md)
@@ -63,15 +63,15 @@ ms.locfileid: "51061162"
 
 <a name="asr"></a>
 
-**[攻撃面の縮小](overview-attack-surface-reduction.md)**<br>
+**[攻撃面の減少](overview-attack-surface-reduction.md)**<br>
 攻撃表面の縮小機能のセットは、スタック内の防御の最初の行を提供します。 構成設定が適切に設定され、悪用の軽減手法が適用されていることを確認することで、これらの一連の機能は攻撃と悪用に抵抗します。
 
 - [ハードウェア ベースの分離](overview-hardware-based-isolation.md)
 - [アプリケーション制御](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
-- [デバイス制御](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+- [デバイス コントロール](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [エクスプロイト保護](exploit-protection.md)
 - [ネットワーク保護](network-protection.md) [、Web 保護](web-protection-overview.md)
-- [フォルダー アクセスの制御](controlled-folders.md)
+- [制御されたフォルダー アクセス](controlled-folders.md)
 - [ネットワーク ファイアウォール](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [攻撃面の減少ルール](attack-surface-reduction.md)
 
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 
 <a name="edr"></a>
 
-**[エンドポイントの検出および応答](overview-endpoint-detection-response.md)**<br>
+**[エンドポイントでの検出と対応](overview-endpoint-detection-response.md)**<br>
 エンドポイントの検出および応答機能は、侵入の試みとアクティブな侵害を検出、調査、および対応するために配置されます。 高度な検出機能を使用すると、クエリベースの脅威検出ツールを使用して、侵害を積極的に検出し、カスタム検出を作成できます。
 
 - [Alerts](alerts-queue.md)
@@ -97,7 +97,7 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 - [Forensic コレクション](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [脅威インテリジェンス](threat-indicator-concepts.md)
 - [高度なデトレーションと分析サービス](respond-file-alerts.md#deep-analysis)
-- [高度な検出](advanced-hunting-overview.md)
+- [高度な追求](advanced-hunting-overview.md)
     - [カスタム検出](overview-custom-detections.md)
 
 <a name="ai"></a>
@@ -107,7 +107,7 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 
 - [調査と修復の自動化](automated-investigations.md)
 - [自動調査の詳細と結果を表示する](auto-investigation-action-center.md)
-- [修復アクションの表示と承認](manage-auto-investigation.md)
+- [修復アクションを表示および承認する](manage-auto-investigation.md)
 
 <a name="mte"></a>
 

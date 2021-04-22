@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 セキュリティ センターで Microsoft 365 Defender データへのアクセスを管理する
 description: Microsoft 365 Defender でデータへのアクセス許可を管理する方法について説明します。
-keywords: アクセス、アクセス許可、MTP、Microsoft Threat Protection、M365、セキュリティ、MCAS、MDATP、Cloud App Security、Microsoft Defender Advanced Threat Protection、スコープ、スコーピング、RBAC
+keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e1be2cf4d5510b2a31a61f848d7d99d6a6704d49
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 52e4e9fc8c73d1adca0c24c5bebb50f9dcf7ac6f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068612"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935631"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Azure Active Directory グローバル ロールを使用して Microsoft 365 Defender へのアクセスを管理する
 

@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの EmailEvents テーブル
 description: 高度なハンティング スキーマの EmailEvents テーブルで、Microsoft 365 メールに関連付けられているイベントについて説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、EmailEvents、ネットワーク メッセージ ID、送信者、受信者、添付ファイル ID、添付ファイル名、マルウェアの評決、フィッシングの評決、添付ファイル数、リンク数、URL カウント
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、EmailEvents、ネットワーク メッセージ ID、送信者、受信者、添付ファイル ID、添付ファイル ID、添付ファイル名、マルウェアの評決、フィッシングの評決、添付ファイル数、リンクカウント、URL カウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 460668c281dff378867a721f4e3635a36cb590e2
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 18d3d768b672364f730b042239ae9fa0042f95f6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498907"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935487"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -45,12 +45,12 @@ ms.locfileid: "51498907"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | 文字列 | Microsoft 365 によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | string | Microsoft 365 によって生成された電子メールの一意の識別子 |
 | `InternetMessageId` | string | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `SenderMailFromAddress` | string | MAIL FROM ヘッダーの送信者メール アドレス (エンベロープ送信者またはリターン パス アドレスとも呼ばれる) |
 | `SenderFromAddress` | string | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |
 | `SenderDisplayName` | string | アドレス帳に表示される送信者の名前(通常は、特定の名前または名、ミドル イニシャル、姓または姓の組み合わせ) |
-| `SenderObjectId` | 文字列 |Azure アカウントの送信者のアカウントの一意AD |
+| `SenderObjectId` | string |Azure アカウントの送信者のアカウントの一意AD |
 | `SenderMailFromDomain` | string | MAIL FROM ヘッダーの送信者ドメイン (エンベロープ送信者またはリターン パス アドレスとも呼ばれる) |
 | `SenderFromDomain` | string | 受信者のメール クライアントで受信者に表示される、MAIL FROM ヘッダーの送信者ドメイン |
 | `SenderIPv4` | string | 検出された、最後にメッセージをリレーしたメール サーバーの IPv4 アドレス |
@@ -63,20 +63,20 @@ ms.locfileid: "51498907"
 | `DeliveryAction` | string | メールの配信アクション: Delivered、Junked、Blocked、または Replaced |
 | `DeliveryLocation` | string | メールの配信場所: 受信トレイ/フォルダー、オンプレミス/外部、迷惑メール、検疫、失敗、中断、削除済みアイテム |
 | `ThreatTypes` | string | 電子メールにマルウェア、フィッシング、その他の脅威が含まれているかどうかに関する電子メール フィルター スタックからの評決 |
-| `ThreatNames` | 文字列 |マルウェアまたは検出された他の脅威の検出名 |
-| `DetectionMethods` | 文字列 | 電子メールで見つかったマルウェア、フィッシング、その他の脅威を検出するために使用される方法 |
-| `ConfidenceLevel` | 文字列 | スパムまたはフィッシングの評決の信頼レベルの一覧。 スパムの場合、この列にはスパム信頼レベル (SCL) が表示され、電子メールがスキップされた (-1)、スパムではない (0,1)、中程度の信頼度を持つスパム (5,6) が検出された、または高い信頼度を持つスパムである (9) ことを示します。 フィッシングの場合、この列には信頼度が "高" か "低" かを表示します。 |
+| `ThreatNames` | string |マルウェアまたは検出された他の脅威の検出名 |
+| `DetectionMethods` | string | 電子メールで見つかったマルウェア、フィッシング、その他の脅威を検出するために使用される方法 |
+| `ConfidenceLevel` | string | スパムまたはフィッシングの評決の信頼レベルの一覧。 スパムの場合、この列にはスパム信頼レベル (SCL) が表示され、電子メールがスキップされた (-1)、スパムではない (0,1)、中程度の信頼度を持つスパム (5,6) が検出された、または高い信頼度を持つスパムである (9) ことを示します。 フィッシングの場合、この列には信頼度が "高" か "低" かを表示します。 |
 | `EmailAction` | string | フィルターの判定、ポリシー、ユーザー アクションに基づいてメールに対して実行される最終的なアクション: メッセージを迷惑メール フォルダーに移動、X-ヘッダーの追加、件名の変更、メッセージのリダイレクト、メッセージの削除、検疫フォルダーへの配信、アクションなし、Bcc メッセージ |
 | `EmailActionPolicy` | string | 適用されたアクション ポリシー: 高信頼度のスパム対策、スパム対策、バルク メール スパム対策、フィッシング スパム対策、ドメイン偽装フィッシング対策、ユーザー偽装フィッシング対策、スプーフィング フィッシング対策、グラフ偽装フィッシング対策、マルウェア対策、安全な添付ファイル、Enterprise Transport Rules (ETR) |
 | `EmailActionPolicyGuid` | string | メールに対する最終アクションを決定したポリシーの一意の識別子 |
 | `AttachmentCount` | int | メール内の添付ファイル数 |
 | `UrlCount` | int | メールに埋め込まれている URL の数 |
 | `EmailLanguage` | string | 検出されたメールのコンテンツの言語 |
-| `Connectors` | 文字列 | 組織のメール フローと電子メールのルーティング方法を定義するカスタム手順 |
-| `OrgLevelAction` | 文字列 | 組織レベルで定義されたポリシーとの一致に対応して電子メールに対して実行されるアクション |
-| `OrgLevelPolicy` | 文字列 | 電子メールで実行されたアクションをトリガーした組織ポリシー |
-| `UserLevelAction` | 文字列 | 受信者によって定義されたメールボックス ポリシーとの一致に応答して電子メールに対して実行されるアクション |
-| `UserLevelPolicy` | 文字列 | 電子メールで実行されたアクションをトリガーしたエンド ユーザー メールボックス ポリシー |
+| `Connectors` | string | 組織のメール フローと電子メールのルーティング方法を定義するカスタム手順 |
+| `OrgLevelAction` | string | 組織レベルで定義されたポリシーとの一致に対応して電子メールに対して実行されるアクション |
+| `OrgLevelPolicy` | string | 電子メールで実行されたアクションをトリガーした組織ポリシー |
+| `UserLevelAction` | string | 受信者によって定義されたメールボックス ポリシーとの一致に応答して電子メールに対して実行されるアクション |
+| `UserLevelPolicy` | string | 電子メールで実行されたアクションをトリガーしたエンド ユーザー メールボックス ポリシー |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
 
 ## <a name="related-topics"></a>関連項目

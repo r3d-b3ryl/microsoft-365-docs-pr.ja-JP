@@ -1,7 +1,7 @@
 ---
-title: Microsoft Endpoint Manager を使用したオンボーディング
+title: Microsoft エンドポイント マネージャーを使用したオンボーディング
 description: Microsoft エンドポイント マネージャーを使用して Microsoft Defender for Endpoint にオンボードする方法について説明します。
-keywords: オンボーディング、構成、展開、展開、エンドポイント マネージャー、mdatp、高度な脅威保護、コレクションの作成、エンドポイント検出応答、次世代保護、攻撃表面の縮小、Microsoft エンドポイント マネージャー
+keywords: オンボーディング、構成、展開、展開、エンドポイント マネージャー、Microsoft Defender for Endpoint、コレクション作成、エンドポイント検出応答、次世代保護、攻撃表面の縮小、Microsoft エンドポイント マネージャー
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9edcceca2f6cc7c2377eb388d7394a23dfbae99d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186259"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935259"
 ---
-# <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft Endpoint Manager を使用したオンボーディング
+# <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用したオンボーディング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51186259"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 この記事は展開ガイドの一部であり、オンボーディング方法の例として機能します。 
 
@@ -91,7 +91,7 @@ Microsoft Endpoint Manager の詳細については、次のリソースを参�
 >Intune は Azure Active Directory (Azure Active Directory AD) グループを使用してデバイスとユーザーを管理します。 Intune 管理者は、組織のニーズに合わせてグループを設定できます。<br>
 詳細については、「グループを追加して [ユーザーとデバイスを整理する」を参照してください](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)。
 
-### <a name="create-a-group"></a>グループを作成する
+### <a name="create-a-group"></a>グループの作成
 
 1.  MEM ポータルを開きます。
 
@@ -123,12 +123,12 @@ Microsoft Endpoint Manager の詳細については、次のリソースを参�
 
 最初に、Defender for Endpoint にオンボードするユーザーまたはデバイスのグループを選択する構成ポリシーを示します。
 
-- [エンドポイントの検出および応答](#endpoint-detection-and-response) 
+- [エンドポイントでの検出と対応](#endpoint-detection-and-response) 
 
 次に、いくつかの異なる種類のエンドポイント セキュリティ ポリシーを作成します。
 
 - [次世代の保護](#next-generation-protection)
-- [攻撃面の縮小](#attack-surface-reduction--attack-surface-reduction-rules)
+- [攻撃面の減少](#attack-surface-reduction--attack-surface-reduction-rules)
 
 ### <a name="endpoint-detection-and-response"></a>エンドポイントの検出および応答
 

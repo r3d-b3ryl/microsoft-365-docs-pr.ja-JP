@@ -19,12 +19,12 @@ description: セキュリティ コンプライアンス センターでエク�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 0dcda063fc544c88157cff21b8a28f7a84a6a6fb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599889"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934707"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -520,7 +520,7 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
 - [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイルを表示する](./mdo-for-spo-odb-and-teams.md)
 - [脅威エクスプローラー (およびリアルタイム検出) のビューの概要を取得する](threat-explorer-views.md)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft Threat Protection での自動調査および対応](../defender/m365d-autoir.md)
+- [Microsoft 365 Defender での自動調査と対応](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 

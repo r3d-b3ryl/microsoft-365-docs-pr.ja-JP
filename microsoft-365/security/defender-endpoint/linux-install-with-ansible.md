@@ -2,7 +2,7 @@
 title: Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 ms.reviewer: ''
 description: Ansible を使用して Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
-keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903906"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934779"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 
@@ -36,7 +36,7 @@ ms.locfileid: "51903906"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-この記事では、Ansible を使用して Defender for Endpoint for Linux を展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
+この記事では、Ansible を使用して Defender for Endpoint を Linux に展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
 
 - [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
 - [Ansible YAML ファイルの作成](#create-ansible-yaml-files)
@@ -45,7 +45,7 @@ ms.locfileid: "51903906"
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md) ページを参照してください。
+開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) ページを参照してください。
 
 さらに、Ansible 展開では、Ansible 管理タスクを理解し、Ansible を構成し、プレイブックとタスクを展開する方法を理解する必要があります。 Ansible には、同じタスクを実行する多くの方法があります。 これらの手順では、パッケージの展開に役立つ *apt* や *unarchive* など、サポートされている Ansible モジュールの可用性を前提とします。 組織で別のワークフローを使用する場合があります。 詳細については [、Ansible のドキュメント](https://docs.ansible.com/) を参照してください。
 
@@ -129,7 +129,7 @@ Microsoft Defender セキュリティ センターからオンボーディング
 
 - Defender for Endpoint リポジトリとキーを追加します。
 
-    Defender for Endpoint for Linux は、以下のいずれかのチャネル *([channel] と* 示す) から展開できます。insiders-fast *、insiders-slow、**または prod* です。 これらの各チャネルは、Linux ソフトウェア リポジトリに対応します。
+    Defender for Endpoint on Linux は、以下のいずれかのチャネル *([channel]* と示す) から展開できます。insiders-fast *、insiders-slow、**または prod* です。 これらの各チャネルは、Linux ソフトウェア リポジトリに対応します。
 
     チャネルの選択によって、デバイスに提供される更新プログラムの種類と頻度が決されます。 *insiders-fast* のデバイスは、更新プログラムと新機能を受け取る最初のデバイスで、後で *insiders-slow* と最後に *prod が続きます*。
 
@@ -271,7 +271,7 @@ Microsoft Defender セキュリティ センターからオンボーディング
 
 ## <a name="operating-system-upgrades"></a>オペレーティング システムのアップグレード
 
-オペレーティング システムを新しいメジャー バージョンにアップグレードする場合は、まず Defender for Endpoint for Linux をアンインストールし、アップグレードをインストールし、最後にデバイスで Defender for Endpoint for Linux を再構成する必要があります。
+オペレーティング システムを新しいメジャー バージョンにアップグレードする場合は、まず、Linux 上の Defender for Endpoint をアンインストールし、アップグレードをインストールし、最後にデバイス上で Defender for Endpoint on Linux を再構成する必要があります。
 
 ## <a name="references"></a>関連情報
 

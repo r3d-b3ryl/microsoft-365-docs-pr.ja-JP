@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender での高度な検索クエリのベスト プラクティス
 description: 高度な検索を使用して、高速、効率的、エラーフリーの脅威ハンティング クエリを作成する方法について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ、kusto、回避タイムアウト、コマンド ライン、プロセス ID、最適化、ベスト プラクティス、解析、参加、要約
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ、kusto、回避タイムアウト、コマンド ライン、プロセス ID、最適化、ベスト プラクティス、解析、参加、要約
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e0744a01fc599b66f371b01194579f4845ed19fb
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 7db7607d3ed9d6f1b215fb842d5b6dd2415a770a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498729"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934899"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 

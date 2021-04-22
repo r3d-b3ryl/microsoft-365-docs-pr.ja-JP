@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの EmailPostDeliveryEvents テーブル
 description: 高度なハンティング スキーマの EmailPostDeliveryEvents テーブルで Microsoft 365 メールで実行される配信後のアクションについて説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、EmailPostDeliveryEvents、ネットワーク メッセージ ID、送信者、添付ファイル ID、添付ファイル名、マルウェアの評決、フィッシングの評決、添付ファイル数、リンクカウント、URL カウント
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、EmailPostDeliveryEvents、ネットワーク メッセージ ID、送信者、受信者、添付ファイル ID、添付ファイル名、マルウェアの評決、フィッシングの評決、添付ファイル数、リンクカウント、URL カウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c6612127f43e650dee18bdc9390fc26b0a693f69
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 444af2441eef5a3720325656f996e6bcdb42937e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498887"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935475"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -45,12 +45,12 @@ ms.locfileid: "51498887"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | 文字列 | Microsoft 365 によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | string | Microsoft 365 によって生成された電子メールの一意の識別子 |
 | `InternetMessageId` | string | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `Action` | string | エンティティに対して実行されるアクション |
-| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類: 手動修復、フィッシング ZAP、マルウェア ZAP |
-| `ActionTrigger` | 文字列 | 管理者 (手動または保留中の自動アクションの承認を通じて) または ZAP や動的配信などの特別なメカニズムによってアクションがトリガーされたかどうかを示します。 |
-| `ActionResult` | 文字列 | アクションの結果 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類: 手動修復、フィッシング ZAP、マルウェア ZAP |
+| `ActionTrigger` | string | 管理者 (手動または保留中の自動アクションの承認を通じて) または ZAP や動的配信などの特別なメカニズムによってアクションがトリガーされたかどうかを示します。 |
+| `ActionResult` | string | アクションの結果 |
 | `RecipientEmailAddress` | string | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
 | `DeliveryLocation` | string | メールの配信場所: 受信トレイ/フォルダー、オンプレミス/外部、迷惑メール、検疫、失敗、中断、削除済みアイテム |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint のユーザー アカウントを調査する
 description: 調査中に、侵害された資格情報や関連付けられたユーザー アカウントのピボットが発生する可能性があるユーザー アカウントを調査します。
-keywords: 調査, アカウント, ユーザー, ユーザー エンティティ, アラート, microsoft Defender atp
+keywords: 調査, アカウント, ユーザー, ユーザー エンティティ, アラート, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 672867d107d005004201caab7d6497ceb048ac97
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: e98142e4076c5e695f16eb06c062bc69d3d7dd55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587709"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935067"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のユーザー アカウントを調査する
 
@@ -51,7 +51,7 @@ ms.locfileid: "51587709"
 
 ユーザー アカウント エンティティを調査すると、次の情報が表示されます。
 
-- ユーザー アカウントの詳細、Azure Advanced Threat Protection (Azure ATP) アラート、ログオンしているデバイス、役割、ログオンの種類、その他の詳細
+- ユーザー アカウントの詳細、Microsoft Defender for Identity アラート、ログオンしているデバイス、役割、ログオンの種類、その他の詳細
 - インシデントとユーザーのデバイスの概要
 - このユーザーに関連するアラート
 - 組織内で観察される (ログオンしているデバイス)
@@ -60,10 +60,10 @@ ms.locfileid: "51587709"
 
 ### <a name="user-details"></a>ユーザーの詳細
 
-左側の **[** ユーザーの詳細] ウィンドウには、関連する開いているインシデント、アクティブなアラート、SAM 名、SID、Azure ATP アラート、ユーザーがログオンしているデバイスの数、ユーザーが最初と最後に表示された時間、役割、ログオンの種類など、ユーザーに関する情報が表示されます。 有効にした統合機能に応じて、その他の詳細が表示されます。 たとえば、Skype for business integration を有効にした場合、ポータルからユーザーに連絡できます。 **[Azure ATP アラート**] セクションには、Azure ATP 機能を有効にし、ユーザーに関連するアラートがある場合に、Azure ATP ページに移動するリンクが含まれている。 Azure ATP ページには、アラートに関する詳細が表示されます。
+左側の **[** ユーザーの詳細] ウィンドウには、関連する開いているインシデント、アクティブなアラート、SAM 名、SID、Microsoft Defender for Identity アラート、ユーザーがログオンしているデバイスの数、ユーザーが最初と最後に表示された時間、役割、ログオンの種類など、ユーザーに関する情報が表示されます。 有効にした統合機能に応じて、その他の詳細が表示されます。 たとえば、Skype for business integration を有効にした場合、ポータルからユーザーに連絡できます。 **[Azure ATP アラート**] セクションには、Microsoft Defender for Identity 機能を有効にし、ユーザーに関連するアラートがある場合は、[Microsoft Defender for Identity] ページに移動するリンクが含まれている。 Microsoft Defender for Identity ページには、アラートに関する詳細が表示されます。
 
 >[!NOTE]
->この機能を使用するには、Azure ATP と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
+>この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
 
 組織の概要、アラート、および監視は、ユーザー アカウントに関するさまざまな属性を表示するさまざまなタブです。
 

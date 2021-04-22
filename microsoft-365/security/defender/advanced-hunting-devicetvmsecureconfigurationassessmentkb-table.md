@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessmentKB テーブル
 description: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessmentKB テーブルに記載される、脅威および脆弱性管理により評価されるさまざまなセキュリティ構成について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威の保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、脅威 & 脆弱性管理、TVM、デバイス管理、セキュリティ構成、MITRE ATT&CK フレームワーク、ナレッジ ベース、KB、DeviceTvmSecureConfigurationAssesmentKB
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、脅威 & 脆弱性管理、TVM、デバイス管理、セキュリティ構成、MITRE ATT&CK フレームワーク、ナレッジ ベース、KB、DeviceTvmSecureConfigurationAssesmentKBSmentKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 71ebcd759e9fb6fd39550975039eb58be13e6b84
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a387d917e5ae93a6289aa2af527d52f1ce1195f4
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501156"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934870"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -44,12 +44,12 @@ ms.locfileid: "51501156"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | 特定の構成の一意の識別子 |
-| `ConfigurationImpact` | 文字列 | 構成が全体の構成スコアに与える影響の評価 (1-10) |
+| `ConfigurationImpact` | string | 構成が全体の構成スコアに与える影響の評価 (1-10) |
 | `ConfigurationName` | string | 構成の表示名 |
 | `ConfigurationDescription` | string | 構成の説明 |
 | `RiskDescription` | string | 関連するリスクの説明 |
 | `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|
-| `ConfigurationSubcategory` | 文字列 |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationSubcategory` | string |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationBenchmarks` | string | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
 | `Tags` | string | セキュリティ構成を識別または分類するために使用されるさまざまな属性を表すラベル |
 | `RemediationOptions` | string | 関連するリスクを軽減または対処するために推奨されるアクション |

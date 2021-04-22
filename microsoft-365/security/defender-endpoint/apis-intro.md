@@ -1,8 +1,8 @@
 ---
-title: エンドポイント API 用 Microsoft Defender にアクセスする
+title: Microsoft Defender for Endpoint API にアクセスする
 ms.reviewer: ''
-description: API を使用してワークフローを自動化し、Microsoft Defender ATP 機能に基づいて革新する方法について説明します。
-keywords: apis, api, wdatp, open api, microsoft defender atp api, public api, supported apis, アラート, デバイス, ユーザー, ドメイン, IP, ファイル, 高度なハンティング, クエリ
+description: API を使用してワークフローを自動化し、Microsoft Defender for Endpoint の機能に基づいて革新する方法について説明します。
+keywords: apis, api, Microsoft Defender for Endpoint, open api, Microsoft Defender for Endpoint api, public api, supported api, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 70a8ba9d3ff864ca58c856714b00f0e8feba933a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 87dce8ff4fde505eb8d4e458c8d9fb56556f4d78
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164764"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935108"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>エンドポイント API 用 Microsoft Defender にアクセスする 
+# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API にアクセスする 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51164764"
 **適用対象:** 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 
@@ -61,7 +61,7 @@ Defender for Endpoint の API の概要については、このビデオをご�
   2. 目的のアクセス許可をアプリケーションに割り当てる (たとえば、「アラートの読み取り」、"コンピューターの分離" など)。 
   3. このアプリケーションのキーを作成します。
   4. キーを使用してアプリケーションを使用してトークンを取得します。
-  5. トークンを使用して Microsoft Defender ATP API にアクセスする
+  5. トークンを使用して Microsoft Defender for Endpoint API にアクセスする
 
      詳細については、「Get [access with application context 」を参照してください](exposed-apis-create-app-webapp.md)。
 
@@ -74,7 +74,7 @@ Defender for Endpoint の API の概要については、このビデオをご�
   1. AAD ネイティブ アプリケーションを作成します。
   2. 目的のアクセス許可をアプリケーションに割り当てる (「アラートの読み取り」、"コンピューターの分離" など)。 
   3. ユーザー資格情報を使用してアプリケーションを使用してトークンを取得します。
-  4. トークンを使用して Microsoft Defender ATP API にアクセスする
+  4. トークンを使用して Microsoft Defender for Endpoint API にアクセスする
 
      詳細については、「ユーザー コンテキストで [アクセスを取得する」を参照してください](exposed-apis-create-app-nativeapp.md)。
 

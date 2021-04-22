@@ -1,7 +1,7 @@
 ---
 title: 高度な捜索スキーマの EmailUrlInfo テーブル
 description: 高度な捜索スキーマの EmailUrlInfo テーブルで URL またはリンクの情報について学習する
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、EmailUrlInfo、ネットワーク メッセージ ID、URL、リンク
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、EmailUrlInfo、ネットワーク メッセージ ID、URL、リンク
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 323ec9292115cf810bca7bf5de03b09cb35bceb1
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a3baea57a2237ca6eb3f85cd5bd4a204d45d4bc0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498858"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935463"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -42,9 +42,9 @@ ms.locfileid: "51498858"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | 文字列 | Microsoft 365 によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | string | Microsoft 365 によって生成された電子メールの一意の識別子 |
 | `Url` | 文字列型 | メールの件名、本文、または添付ファイル内の完全な URL |
-| `UrlDomain` | 文字列 | URL のドメイン名またはホスト名 |
+| `UrlDomain` | string | URL のドメイン名またはホスト名 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
 
 ## <a name="related-topics"></a>関連項目

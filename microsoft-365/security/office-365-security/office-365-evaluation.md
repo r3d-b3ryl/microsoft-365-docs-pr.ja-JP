@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender を 365 のOfficeする
 description: 評価モードOffice 365 の Defender は、マルウェアなどの評決をログに記録するが、メッセージに対して動作しない Office 365 メール ポリシーの Defender を作成します。
-keywords: 評価Office 365、Microsoft Defender for Office 365、office 365 評価、try office 365、Microsoft Defender、ATP
+keywords: 評価Office 365、Microsoft Defender for Office 365、office 365 評価、try office 365、Microsoft Defender、Microsoft Defender for Endpoint
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5862361dbd3a220e4b37400dbb6515af91eaa959
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768808"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935139"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender を 365 のOfficeする
 
@@ -57,7 +57,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 - アクションのレポートの分析
 - 評価結果の提示
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 ### <a name="licensing"></a>ライセンス
 

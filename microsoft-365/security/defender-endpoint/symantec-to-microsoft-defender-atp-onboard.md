@@ -1,7 +1,7 @@
 ---
 title: Symantec to Microsoft Defender for Endpoint - Phase 3, Onboarding
 description: これは、シマンテックから Microsoft Defender for Endpoint への移行のフェーズ 3 オンボーディングです。
-keywords: 移行、 Windows Defender Advanced Threat Protection, atp, edr
+keywords: 移行, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: b42a33d975e1368ad25d4a7102ef44bf8b9824a8
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 63c870c5682e963e6ab29160218c7405cabb0838
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698282"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935547"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Symantec から移行する - フェーズ 3: オンボードから Microsoft Defender for Endpoint
 
@@ -57,12 +57,12 @@ ms.locfileid: "51698282"
  
 展開方法は、選択されているオペレーティング システムによって異なります。 オンボーディングのヘルプについては、以下の表に示すリソースを参照してください。
 
-|オペレーティング システム  |Method  |
+|オペレーティング システム  |メソッド  |
 |---------|---------|
 |Windows 10     |- [グループ ポリシー](configure-endpoints-gp.md)<br/>- [Configuration Manager](configure-endpoints-sccm.md)<br/>- [モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<br/>- [ローカル スクリプト](configure-endpoints-script.md) <br/><br/>**注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、Microsoft Endpoint Configuration Manager、または Intune を使用することをお勧めします。         |
 |- Windows 8.1 Enterprise <br/>- Windows 8.1 Pro <br/>- Windows 7 SP1エンタープライズ <br/>- Windows 7 SP1 Pro     | [Microsoft 監視エージェント](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)<br/><br/>**注**: Microsoft 監視エージェントは Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)。        |
 |- Windows Server 2019 以降 <br/>- Windows Server 2019 コア エディション <br/>- Windows Server バージョン 1803 以降 |- [ローカル スクリプト](configure-endpoints-script.md) <br/>- [グループ ポリシー](configure-endpoints-gp.md) <br/>- [Configuration Manager](/configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [永続的でないデバイスの VDI オンボーディング スクリプト](configure-endpoints-vdi.md) <br/><br/>**注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、Microsoft Endpoint Configuration Manager、または Intune を使用することをお勧めします。    |
-|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender セキュリティ センター](configure-server-endpoints.md)<br/>- [Azure セキュリティ センター](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
+|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender セキュリティ センター](configure-server-endpoints.md)<br/>- [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
 |macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)<br/><br/>iOS<br/><br/>Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS 以上の LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)  |
 
 ## <a name="run-a-detection-test"></a>検出テストを実行する
@@ -103,7 +103,7 @@ Symantec をアンインストールしたので、次の手順では、Microsof
 > [!IMPORTANT]
 > Windows Server 2016 を使用している場合は、Microsoft Defender ウイルス対策を手動で開始する必要があります。 これを行うには、デバイスで PowerShell コマンドレット `mpcmdrun.exe -wdenable` を使用します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 **おめでとう** ございます! Symantec から [Microsoft Defender for Endpoint への移行が完了しました](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)。 
 - Microsoft Defender[セキュリティ センター ()](security-operations-dashboard.md)のセキュリティ操作ダッシュボードにアクセスします [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 

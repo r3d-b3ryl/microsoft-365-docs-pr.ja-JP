@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ad23e030048506784edd8f1988fa33263a085ae
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 25b70f91824db2a6d05db5d3981dd50f4f2b477a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861337"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934743"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Microsoft Defender for Endpoint の機能を構成および管理する
 
@@ -49,5 +49,5 @@ Defender for Endpoint の機能を構成および管理し、組織に最適な�
 [攻撃表面の縮小機能を構成する](configure-attack-surface-reduction.md) | 攻撃表面の縮小機能を構成し、設定が適切に適用され、悪用の軽減方法が設定されていることを確認します。
 [次世代の保護を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 次世代の保護を構成して、すべての種類の新しい脅威をキャッチします。
 [Microsoft Threat Experts の機能を構成する](configure-microsoft-threat-experts.md) | Microsoft Threat Experts のサイバーセキュリティ脅威インテリジェンスを構成および管理します。
-[Microsoft Threat Protection の統合を構成する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Defender for Endpoint と統合する他のソリューションを構成します。
+[Microsoft 365 Defender 統合の構成](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Defender for Endpoint と統合する他のソリューションを構成します。
 [管理と API のサポート](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | セキュリティ情報とイベント管理 (SIEM) にアラートをプルするか、API を使用してカスタム アラートを作成します。 Power BI レポートを作成およびビルドします。

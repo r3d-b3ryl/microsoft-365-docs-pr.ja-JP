@@ -1,7 +1,7 @@
 ---
 title: Symantec から Microsoft Defender for Endpoint への移行
 description: Symantec から Microsoft Defender for Endpoint への切り替え方法の概要を確認する
-keywords: 移行、 Windows Defender Advanced Threat Protection, atp, edr
+keywords: 移行, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6517359c805bb449d075e401283a79a791461630
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 587cf49ddc8d6135047fbb5e0207ed0f94d1dbe0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218806"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934731"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>Symantec から Microsoft Defender for Endpoint への移行
 シマンテック エンドポイント保護 (Symantec) から [Microsoft Defender for](https://docs.microsoft.com/windows/security/threat-protection) Endpoint (Microsoft Defender for Endpoint) に切り替える予定の場合は、適切な場所にいます。 この記事をガイドとして使用します。
@@ -58,12 +58,12 @@ ms.locfileid: "51218806"
 
 | 機能/機能 | 説明 |
 |---|---|
-| [脅威&の管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 脅威&管理機能は、エンドポイント (デバイスなど) 全体の弱点を特定、評価、修復するのに役立ちます。 |
-| [攻撃面の縮小](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | 攻撃表面の縮小ルールは、組織のデバイスとアプリケーションをサイバー脅威や攻撃から保護するのに役立ちます。 |
+| [脅威と脆弱性の管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 脅威&管理機能は、エンドポイント (デバイスなど) 全体の弱点を特定、評価、修復するのに役立ちます。 |
+| [攻撃面の減少](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | 攻撃表面の縮小ルールは、組織のデバイスとアプリケーションをサイバー脅威や攻撃から保護するのに役立ちます。 |
 | [次世代の保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | 次世代の保護には、脅威やマルウェアのブロックに役立つ Microsoft Defender ウイルス対策が含まれています。 |
-| [エンドポイントの検出および応答](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | エンドポイントの検出および応答機能は、侵入の試みとアクティブな侵害を検出、調査、および対応します。  |
-| [高度な検出](advanced-hunting-overview.md) | 高度な検出機能により、セキュリティ運用チームは既知または潜在的な脅威のインジケーターとエンティティを検索できます。 |
-| [動作のブロックと格納](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作に基づいて脅威を特定し、停止し、ツリーを処理するのに役立ちます。 |
+| [エンドポイントでの検出と対応](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | エンドポイントの検出および応答機能は、侵入の試みとアクティブな侵害を検出、調査、および対応します。  |
+| [高度な追求](advanced-hunting-overview.md) | 高度な検出機能により、セキュリティ運用チームは既知または潜在的な脅威のインジケーターとエンティティを検索できます。 |
+| [動作ブロックと封じ込め](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作に基づいて脅威を特定し、停止し、ツリーを処理するのに役立ちます。 |
 | [調査と修復の自動化](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | 自動調査および応答機能は、アラートを調べ、侵害を解決するために直ちに修復アクションを実行します。 |
 | [脅威の検出サービス](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (Microsoft Threat Experts) | 脅威検出サービスは、セキュリティ運用チームに専門家レベルの監視と分析を提供し、重要な脅威を見逃しなくするために役立ちます。 |
 

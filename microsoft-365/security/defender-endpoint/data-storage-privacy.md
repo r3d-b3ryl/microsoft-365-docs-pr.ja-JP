@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint データストレージとプライバシー
 description: Microsoft Defender for Endpoint が収集するプライバシーとデータを処理する方法について説明します。
-keywords: Microsoft Defender for Endpoint, Microsoft Defender for Endpoint, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
+keywords: Microsoft Defender for Endpoint, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dfdfcdcfb8d76f95e3b866f5f95af7efd94ed59e
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 2279045093ebfac4a7eb4544a3e0c137c08c9c0c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904130"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935391"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint データストレージとプライバシー
 

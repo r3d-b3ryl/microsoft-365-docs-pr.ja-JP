@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint for Mac の基本設定を設定する
-description: エンタープライズ組織で Microsoft Defender for Endpoint for Mac を構成します。
-keywords: microsoft、defender、atp、mac、management、preferences、enterprise、intune、jamf、macos、catalina、mojave、high sierra
+title: Mac 上のエンドポイント用 Microsoft Defender の基本設定を設定する
+description: エンタープライズ組織で MMicrosoft Defender for Endpoint on Mac を構成します。
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860925"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934563"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -175,7 +175,7 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 
 #### <a name="allowed-threats"></a>許可される脅威
 
-Defender for Endpoint for Mac でブロックされない脅威を名前で指定します。 これらの脅威の実行が許可されます。
+Defender for Endpoint on Mac でブロックされない脅威を名前で指定します。 これらの脅威の実行が許可されます。
 
 |Section|値|
 |:---|:---|

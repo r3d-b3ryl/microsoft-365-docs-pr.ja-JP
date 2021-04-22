@@ -1,8 +1,8 @@
 ---
-title: Android 上のエンドポイント用 Microsoft Defender
+title: Android 用 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: Android に Microsoft Defender for Endpoint をインストールして使用する方法について説明します。
-keywords: microsoft、Defender、atp、android、インストール、展開、アンインストール、intune
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, android, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a78fc7e07f89c2e13a698ee526403989f26dd65
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 35a43aa7bfcd9ed8c83d10c2ec44a974b03bca72
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768844"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935571"
 ---
-# <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上のエンドポイント用 Microsoft Defender
+# <a name="microsoft-defender-for-endpoint-on-android"></a>Android 用 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -62,7 +62,7 @@ ms.locfileid: "51768844"
     -   Microsoft Defender セキュリティ センター ポータルへのアクセス。
 
         > [!NOTE]
-        > Microsoft Intune は、Android に Microsoft Defender for Endpoint を展開する唯一のサポートされるモバイル デバイス管理 (MDM) ソリューションです。 現在、Intune で Defender for Endpoint for Android 関連のデバイス コンプライアンス ポリシーを適用するには、現在登録されているデバイスだけがサポートされています。 
+        > Microsoft Intune は、Android に Microsoft Defender for Endpoint を展開する唯一のサポートされるモバイル デバイス管理 (MDM) ソリューションです。 現在、Intune で Android 関連のデバイス コンプライアンス ポリシーで Defender for Endpoint を適用する場合は、現在登録されているデバイスだけがサポートされています。 
 
     -   Microsoft [Endpoint Manager 管理センターにアクセスして](https://go.microsoft.com/fwlink/?linkid=2109431)、組織内の登録済みユーザー グループにアプリを展開します。
 
@@ -90,6 +90,6 @@ Android の機能で Microsoft Defender for Endpoint を構成する方法につ
 
 
 ## <a name="related-topics"></a>関連項目
-- [Microsoft Intune を使用して Android に Microsoft Defender for Endpoint を展開する](android-intune.md)
-- [Android の機能でエンドポイント用 Microsoft Defender を構成する](android-configure.md)
+- [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)
+- [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)
 

@@ -1,7 +1,7 @@
 ---
 title: 高度な検索でランサムウェアを検索する
 description: 高度な検索を使用して、ランサムウェアの影響を受ける可能性のあるデバイスを見つける。
-keywords: 高度な狩猟、ランサムウェア、脅威の検出、サイバー脅威の検出、検索、クエリ、テレメトリ、Microsoft 365、Microsoft Threat Protection、Microsoft 365 Defender
+keywords: 高度な狩猟, ランサムウェア, 脅威の狩猟, サイバー脅威の狩猟, 検索, クエリ, テレメトリ, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 97f2174f74e7866f75b901cd1609341548a1a7c5
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: b6d88f5383cef052ac1b0871b4f0556ba3ba160e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498213"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934815"
 ---
 # <a name="hunt-for-ransomware"></a>ランサムウェアを探す
 

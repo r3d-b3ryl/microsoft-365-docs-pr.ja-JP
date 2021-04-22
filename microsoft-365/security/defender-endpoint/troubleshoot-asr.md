@@ -1,7 +1,7 @@
 ---
 title: 攻撃表面の縮小ルールに関する問題のトラブルシューティング
 description: Microsoft Defender for Endpoint の攻撃表面縮小ルールに関する問題のトラブルシューティングを行うリソースとサンプル コード。
-keywords: トラブルシューティング、エラー、修正、Windows Defender 例、asr、ルール、ヒップ、トラブルシューティング、監査、除外、誤検知、破損、ブロック、エンドポイント用 Microsoft Defender、Microsoft Defender Advanced Threat Protection
+keywords: トラブルシューティング、エラー、修正、Windows Defender 例、asr、ルール、ヒップ、トラブルシューティング、監査、除外、誤検知、破損、ブロック、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: d483c098f221e2d4d2e61a10393154b8f5d1498d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198743"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935223"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールのトラブルシューティング
 
@@ -33,7 +33,7 @@ ms.locfileid: "51198743"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 攻撃表面の [縮小ルールを使用すると、](attack-surface-reduction.md) 次のような問題が発生する可能性があります。
@@ -124,6 +124,6 @@ demo.wd.microsoft.com の [Windows Defender](https://demo.wd.microsoft.com?ocid=
 
 - [攻撃面の減少ルール](attack-surface-reduction.md)
 
-- [攻撃表面の縮小ルールを有効にする](enable-attack-surface-reduction.md)
+- [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
 
-- [攻撃表面の縮小ルールを評価する](evaluate-attack-surface-reduction.md)
+- [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)

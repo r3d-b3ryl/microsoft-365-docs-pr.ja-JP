@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 セキュリティ センターの Microsoft Defender for Office 365
 description: Office 365 セキュリティ/コンプライアンス センターから Microsoft 365 セキュリティ センターへの変更について説明します。
-keywords: Microsoft 365 のセキュリティ、Microsoft 365 セキュリティ センターの使用を開始する、OATP、MDATP、MDO、MDE、ガラスの単一ウィンドウ、新しいセキュリティ ポータル、新しい Defender セキュリティ ポータル
+keywords: Microsoft 365 セキュリティ、Microsoft 365 セキュリティ センターの使用を開始する、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、単一ウィンドウのガラス、新しいセキュリティ ポータル、新しい Defender セキュリティ ポータル
 ms.date: 02/02/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 0c4a849bf3f91d4803adcb45c13b59d76afda388
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 980a384d3c4fd44a368f35d6f885ea0c8288376a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760190"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935415"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの Microsoft Defender for Office 365
 

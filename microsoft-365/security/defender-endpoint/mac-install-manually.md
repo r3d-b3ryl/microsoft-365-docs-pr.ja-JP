@@ -1,7 +1,7 @@
 ---
 title: macOS での Microsoft Defender for Endpoint の手動展開
 description: コマンド ラインから手動で macOS に Microsoft Defender for Endpoint をインストールします。
-keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d8458f1bacc6577d83878a94c24e649371d90038
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688599"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935331"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint の手動展開
 
@@ -164,7 +164,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    1. ファイルは Defender for Endpoint for Mac によって検疫されている必要があります。 次のコマンドを使用して、検出された脅威の一覧を表示します。
+    1. このファイルは、Defender for Endpoint on Mac で検疫されている必要があります。 次のコマンドを使用して、検出された脅威の一覧を表示します。
 
         ```bash
         mdatp threat list
@@ -207,7 +207,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
     システムは、次のメッセージを表示する必要があります。
 
-    > Microsoft Defender ATP - macOS EDR DIY テスト ファイル<br/>
+    > エンドポイント用 Microsoft Defender - macOS EDR DIY テスト ファイル<br/>
     > 対応するアラートは、MDATP ポータルで使用できます。
 
 11. [ **開く**] をクリックします。
@@ -228,4 +228,4 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 ## <a name="uninstallation"></a>アンインストール
 
-クライアント デバイス [から](mac-resources.md#uninstalling) macOS 用 Microsoft Defender for Endpoint を削除する方法の詳細については、「アンインストール」を参照してください。
+クライアント デバイス [から](mac-resources.md#uninstalling) macOS 上の Microsoft Defender for Endpoint を削除する方法の詳細については、「アンインストール」を参照してください。

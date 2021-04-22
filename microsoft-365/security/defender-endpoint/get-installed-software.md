@@ -1,7 +1,7 @@
 ---
-title: インストールされているソフトウェアを取得する
+title: インストールされたソフトウェアを取得する
 description: 特定のデバイス ID に関連するインストール済みソフトウェアのコレクションを取得します。
-keywords: apis、 graph api、 supported apis, get, list, file, information, software inventory, installed software per device, threat & vulnerability management api, mdatp tvm api
+keywords: apis、 graph api, supported apis, get, list, file, information, software inventory, installed software per device, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6164020ef05561563fe0434bd2edac8c7b3e689a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ebd689fd53dd804f857c6bec7a412c27988835d0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166810"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935115"
 ---
-# <a name="get-installed-software"></a>インストールされているソフトウェアを取得する
+# <a name="get-installed-software"></a>インストールされたソフトウェアを取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "51166810"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -55,9 +55,9 @@ GET /api/machines/{machineId}/software
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 
 
 ## <a name="request-body"></a>要求本文

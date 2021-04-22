@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c4cdc80170b49a111f476d2d17222c41e2b5c55f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893403"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935367"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で不健康なセンサーを修正する
 
@@ -66,7 +66,7 @@ ms.locfileid: "51893403"
 次の推奨されるアクションは、通信障害のある誤った構成済みデバイスに関連する問題を解決するのに役立ちます。
 
 - [デバイスにインターネット接続が確立されている](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Window Defender ATP センサーでは、センサー データを報告し、Microsoft Defender for Endpoint サービスと通信するために Microsoft Windows HTTP (WinHTTP) が必要です。
+  Microsoft Defender ATP センサーでは、センサー データをレポートし、Microsoft Defender for Endpoint service サービスと通信するために、Microsoft Windows HTTP (WinHTTP) が必要になります。
 
 - [エンドポイント サービス URL 用 Microsoft Defender へのクライアント接続を確認する](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   プロキシ構成が正常に完了し、WinHTTP が環境内のプロキシ サーバーを介して検出して通信し、プロキシ サーバーが Microsoft Defender for Endpoint サービス URL へのトラフィックを許可することを確認します。
@@ -78,7 +78,7 @@ ms.locfileid: "51893403"
 これらのアクションに従って、誤って構成されたデバイスに関連する既知の問題を修正し、状態が "センサー データなし" になります。
 
 - [デバイスにインターネット接続が確立されている](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Window Defender ATP センサーでは、センサー データを報告し、Microsoft Defender for Endpoint サービスと通信するために Microsoft Windows HTTP (WinHTTP) が必要です。
+  Microsoft Defender ATP センサーでは、センサー データをレポートし、Microsoft Defender for Endpoint service サービスと通信するために、Microsoft Windows HTTP (WinHTTP) が必要になります。
 
 - [エンドポイント サービス URL 用 Microsoft Defender へのクライアント接続を確認する](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   プロキシ構成が正常に完了し、WinHTTP が環境内のプロキシ サーバーを介して検出して通信し、プロキシ サーバーが Microsoft Defender for Endpoint サービス URL へのトラフィックを許可することを確認します。

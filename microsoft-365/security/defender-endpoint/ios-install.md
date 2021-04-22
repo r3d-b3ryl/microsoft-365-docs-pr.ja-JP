@@ -2,7 +2,7 @@
 title: iOS での Microsoft Defender for Endpoint のアプリ ベースの展開
 ms.reviewer: ''
 description: アプリを使用して iOS に Microsoft Defender for Endpoint を展開する方法について説明します。
-keywords: microsoft、Defender、atp、ios、アプリ、インストール、展開、アンインストール、Intune
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4ddaf8759fa0f2ffb4ed3eb3bb940426dfb3da2c
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 62eefbd17b826aa2cfb541c04ba206d0f58f9bbf
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904060"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935055"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -35,20 +35,20 @@ ms.locfileid: "51904060"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-このトピックでは、Intune ポータル サイト登録デバイスでの IOS 用 Defender for Endpoint の展開について説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
+このトピックでは、Intune ポータル サイト登録デバイスでの iOS での Defender for Endpoint の展開について説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
 
 ## <a name="before-you-begin"></a>開始する前に
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-- ユーザーに対して iOS 登録が行われたことを確認します。 IOS 用 Defender for Endpoint を使用するには、Defender for Endpoint ライセンスが割り当てられている必要があります。 ライセンスの割 [り当て方法については、「ユーザー](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) にライセンスを割り当てる」を参照してください。
+- ユーザーに対して iOS 登録が行われたことを確認します。 iOS で Defender for Endpoint を使用するには、Defender for Endpoint ライセンスが割り当てられている必要があります。 ライセンスの割 [り当て方法については、「ユーザー](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) にライセンスを割り当てる」を参照してください。
 
 > [!NOTE]
 > iOS 上のエンドポイント用 Microsoft Defender が [Apple App Store で利用可能になります](https://aka.ms/mdatpiosappstore)。
 
 ## <a name="deployment-steps"></a>展開手順
 
-Intune ポータル サイトを介して iOS 用 Defender for Endpoint を展開します。
+Intune ポータル サイトを介して iOS に Defender for Endpoint を展開します。
 
 ### <a name="add-ios-store-app"></a>iOS ストア アプリの追加
 
@@ -61,7 +61,7 @@ Intune ポータル サイトを介して iOS 用 Defender for Endpoint を展�
 
 1. [ **最小オペレーティング システム] として [iOS 11.0]** を選択します。 アプリに関する残りの情報を確認し、[次へ] を **クリックします**。
 
-1. [割り *当て] セクションで* 、[必須] **セクションに** 移動し、[グループの追加] **を選択します**。 その後、IOS アプリの Defender for Endpoint をターゲットとするユーザー グループを選択できます。 [選択 **] をクリック** し、[次へ] **をクリックします**。
+1. [割り *当て] セクションで* 、[必須] **セクションに** 移動し、[グループの追加] **を選択します**。 その後、iOS アプリで Defender for Endpoint をターゲットとするユーザー グループを選択できます。 [選択 **] をクリック** し、[次へ] **をクリックします**。
 
     > [!NOTE]
     > 選択したユーザー グループは、Intune に登録されたユーザーで構成する必要があります。
@@ -78,11 +78,11 @@ Intune ポータル サイトを介して iOS 用 Defender for Endpoint を展�
 
 ## <a name="complete-onboarding-and-check-status"></a>オンボーディングとチェックの状態を完了する
 
-1. デバイスに Defender for Endpoint for iOS がインストールされた後、アプリ アイコンが表示されます。
+1. iOS の Defender for Endpoint がデバイスにインストールされた後、アプリ アイコンが表示されます。
 
     ![スマートフォンの説明が自動的に生成されるスクリーン ショット](images/41627a709700c324849bf7e13510c516.png)
 
-2. [Defender for Endpoint] アプリ アイコンをタップし、画面の指示に従ってオンボーディングの手順を完了します。 詳細には、Defender for Endpoint for iOS に必要な iOS アクセス許可のエンド ユーザーによる承諾が含まれます。
+2. [Defender for Endpoint] アプリ アイコンをタップし、画面の指示に従ってオンボーディングの手順を完了します。 詳細には、iOS 上の Defender for Endpoint で必要な iOS アクセス許可のエンド ユーザーによる承諾が含まれます。
 
 3. オンボードが成功すると、デバイスは Microsoft Defender セキュリティ センターの [デバイス] リストに表示されます。
 
@@ -144,4 +144,4 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
 
 ## <a name="next-steps"></a>次の手順
 
-[iOS 機能用に Defender for Endpoint を構成する](ios-configure-features.md)
+[iOS の機能でエンドポイント用 Defender を構成する](ios-configure-features.md)
