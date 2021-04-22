@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 がローカルの Active-Directory に参加している Windows 10 デバイスをわずか数ステップで保護する方法について説明します。
-ms.openlocfilehash: 8a45c6959bee368491c5c6424e3713300c443779
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580136"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939504"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>ドメインに参加している Windows 10 デバイスを Microsoft 365 Business Premium によって管理可能にする
 
@@ -116,3 +116,7 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 6.  複数のドメイン コントローラーがある場合は、ポリシーが使用可能になるまで SYSVOL がレプリケートされるのを待ちます。 この手順は、将来のバージョンの管理用テンプレートでも機能します。
 
 この時点で、既定の Azure アカウント資格情報を使用して **自動 MDM** 登録を有効にするポリシー AD確認できます。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[ドメイン ユーザーを Microsoft 365](manage-domain-users.md) に同期する ( [記事)](../admin/create-groups/create-groups.md) 管理センターでグループを作成する (記事) [チュートリアル:](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) 管理ドメインのハイブリッド Azure Active Directory 参加を構成する (記事)

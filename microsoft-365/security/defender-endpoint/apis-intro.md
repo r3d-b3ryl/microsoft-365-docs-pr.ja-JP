@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint API にアクセスする
 ms.reviewer: ''
 description: API を使用してワークフローを自動化し、Microsoft Defender for Endpoint の機能に基づいて革新する方法について説明します。
-keywords: apis, api, Microsoft Defender for Endpoint, open api, Microsoft Defender for Endpoint api, public api, supported api, alerts, device, user, domain, ip, file, advanced hunting, query
+keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft Defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87dce8ff4fde505eb8d4e458c8d9fb56556f4d78
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 843bd953b97f29a5b9c80fc44a9b19fae60a6fa7
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935108"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939768"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API にアクセスする 
 

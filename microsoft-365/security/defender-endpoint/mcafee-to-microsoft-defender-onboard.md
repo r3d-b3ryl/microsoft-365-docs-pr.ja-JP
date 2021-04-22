@@ -1,7 +1,7 @@
 ---
 title: McAfee to Microsoft Defender for Endpoint - Onboard
 description: これは、McAfee から Microsoft Defender for Endpoint に移行するフェーズ 3 オンボードです。
-keywords: 移行、 Windows Defender Advanced Threat Protection, atp, edr
+keywords: 移行, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c30a552b4a2abcea9ceff4968c2a9e7e32ff2450
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 973491ffd5f29cef4a6dd652676cad538182f009
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862081"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935955"
 ---
 # <a name="migrate-from-mcafee---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>McAfee から移行する - フェーズ 3: オンボードから Microsoft Defender for Endpoint
 
@@ -40,7 +40,7 @@ ms.locfileid: "51862081"
 |--|--|--|
 || |*お前はここにいる!* |
 
-**McAfee Endpoint [Security (McAfee) から Microsoft Defender Advanced Threat Protection (Microsoft Defender for Endpoint)](mcafee-to-microsoft-defender-migration.md#the-migration-process)** への移行フェーズ 3 へようこそ。 この移行フェーズには、次の手順が含まれます。
+**McAfee Endpoint [Security (McAfee)](mcafee-to-microsoft-defender-migration.md#the-migration-process)** から Microsoft Defender for Endpoint への移行のフェーズ 3 へようこそ。 この移行フェーズには、次の手順が含まれます。
 
 1. [デバイスを Microsoft Defender for Endpoint にオンボードします](#onboard-devices-to-microsoft-defender-for-endpoint)。
 2. [検出テストを実行します](#run-a-detection-test)。
@@ -66,7 +66,7 @@ ms.locfileid: "51862081"
 |Windows 10     |- [グループ ポリシー](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp)<br/>- [Configuration Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm)<br/>- [モバイル デバイス管理 (Intune)](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-mdm)<br/>- [ローカル スクリプト](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-script) <br/><br/>**注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、Microsoft Endpoint Configuration Manager、または Intune を使用することをお勧めします。         |
 |- Windows 8.1 Enterprise <br/>- Windows 8.1 Pro <br/>- Windows 7 SP1エンタープライズ <br/>- Windows 7 SP1 Pro     | [Microsoft 監視エージェント](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-atp)<br/><br/>**注**: Microsoft 監視エージェントは Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)。        |
 |- Windows Server 2019 以降 <br/>- Windows Server 2019 コア エディション <br/>- Windows Server バージョン 1803 以降 |- [ローカル スクリプト](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-script) <br/>- [グループ ポリシー](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp) <br/>- [Configuration Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) <br/>- [System Center Configuration Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm#onboard-windows-10-devices-using-earlier-versions-of-system-center-configuration-manager) <br/>- [永続的でないデバイスの VDI オンボーディング スクリプト](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi) <br/><br/>**注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、Microsoft Endpoint Configuration Manager、または Intune を使用することをお勧めします。    |
-|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender セキュリティ センター](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#option-1-onboard-servers-through-microsoft-defender-security-center)<br/>- [Azure セキュリティ センター](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
+|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender セキュリティ センター](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#option-1-onboard-servers-through-microsoft-defender-security-center)<br/>- [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
 |macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)<br/><br/>iOS<br/><br/>Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS 以上の LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Windows 以外のデバイスをオンボードする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-non-windows)  |
 
 ## <a name="run-a-detection-test"></a>検出テストを実行する
@@ -77,8 +77,8 @@ ms.locfileid: "51862081"
 |オペレーティング システム  |ガイダンス  |
 |---------|---------|
 |- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server バージョン 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |「 [検出テストを実行する」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test)。 <br/><br/>Microsoft Defender for Endpoint デモ シナリオ サイト ( ) にアクセス [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) し、1 つ以上のシナリオを試してください。 たとえば、クラウド配信の **保護デモ シナリオを** 試してみてください。         |
-|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |で DIY アプリをダウンロードして使用します [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <br/><br/>詳細については [、「Microsoft Defender for Endpoint for Mac」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)。        |
-|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS 以上の LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. 次のコマンドを実行し、1 の結果 **を探します**。 <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. ターミナル ウィンドウを開き、次のコマンドを実行します。 <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. 次のコマンドを実行して、検出された脅威を一覧表示します。 <br/>`mdatp threat list`. <br/><br/>詳細については [、「Microsoft Defender for Endpoint for Linux」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux)。 |
+|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |で DIY アプリをダウンロードして使用します [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <br/><br/>詳細については [、「Microsoft Defender for Endpoint on Mac」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)。        |
+|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS 以上の LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. 次のコマンドを実行し、1 の結果 **を探します**。 <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. ターミナル ウィンドウを開き、次のコマンドを実行します。 <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. 次のコマンドを実行して、検出された脅威を一覧表示します。 <br/>`mdatp threat list`. <br/><br/>詳細については [、「Microsoft Defender for Endpoint on Linux」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux)。 |
 
 ## <a name="uninstall-mcafee"></a>McAfee のアンインストール
 
@@ -103,4 +103,4 @@ McAfee をアンインストールしたので、次の手順は、Microsoft Def
 **おめでとう** ございます! McAfee から [Microsoft Defender for Endpoint への移行が完了しました](mcafee-to-microsoft-defender-migration.md#the-migration-process)。 
 
 - Microsoft Defender[セキュリティ センター ()](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/security-operations-dashboard)のセキュリティ操作ダッシュボードにアクセスします [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
-- [Microsoft Defender Advanced Threat Protection の管理、移行後](manage-atp-post-migration.md)。
+- [Microsoft Defender for Endpoint の管理、移行後](manage-atp-post-migration.md)。

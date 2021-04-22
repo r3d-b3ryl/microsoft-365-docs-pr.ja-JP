@@ -1,8 +1,8 @@
 ---
 title: Linux 用 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint for Linux をインストールして使用する方法について説明します。
-keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+description: Linux で Microsoft Defender for Endpoint をインストールして使用する方法について説明します。
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861397"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935943"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51861397"
 このトピックでは、Linux 上で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 > [!CAUTION]
-> 他のサード パーティ製エンドポイント保護製品を Microsoft Defender for Endpoint on Linux で実行すると、パフォーマンスの問題や予期しない副作用につながる可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、パッシブ モードで実行するウイルス対策機能を構成した後でも、Defender for Endpoint for Linux EDR 機能を安全に利用できます。 [](linux-preferences.md#enable--disable-passive-mode)
+> 他のサード パーティ製エンドポイント保護製品を Microsoft Defender for Endpoint on Linux で実行すると、パフォーマンスの問題や予期しない副作用につながる可能性があります。 Microsoft 以外のエンドポイント保護が環境内の絶対的な要件である場合でも、パッシブ モードで実行するウイルス対策機能を構成した後も、Linux EDR の Defender [](linux-preferences.md#enable--disable-passive-mode)for Endpoint の機能を安全に利用できます。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Linux に Microsoft Defender for Endpoint をインストールする方法
 
@@ -80,10 +80,10 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 - 最小カーネル バージョン 3.10.0-327
 - カーネル `fanotify` オプションを有効にする必要があります
   > [!CAUTION]
-  > Defender for Endpoint for Linux を他のベースのセキュリティ ソリューションと並べて実行する `fanotify` 方法はサポートされていません。 オペレーティング システムのハングを含む予期しない結果につながる可能性があります。
+  > Linux で Defender for Endpoint を他のベースのセキュリティ ソリューションと並べて実行する `fanotify` 方法はサポートされていません。 オペレーティング システムのハングを含む予期しない結果につながる可能性があります。
 
 - ディスク領域: 1 GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon には実行可能なアクセス許可が必要です。 詳細については、「Microsoft Defender for Endpoint for Linux のインストールに関する問題のトラブルシューティング」の「デーモンに実行可能なアクセス許可を付与する [」を参照してください](/microsoft-365/security/defender-endpoint/linux-support-install)。
+- /opt/microsoft/mdatp/sbin/wdavdaemon には実行可能なアクセス許可が必要です。 詳細については、「Microsoft Defender for Endpoint on Linux のインストールに関する問題のトラブルシューティング」の「デーモンに実行可能なアクセス許可が付与されている」 [を参照してください](/microsoft-365/security/defender-endpoint/linux-support-install)。
 - メモリ: 1 GB
     > [!NOTE]
     > /var に空きディスク領域が含まれます。

@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの IdentityInfo テーブル
 description: 高度なハンティング スキーマの IdentityInfo テーブルのユーザー アカウント情報について説明します。
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft の脅威の保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、AccountInfo、IdentityInfo、アカウント
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、AccountInfo、IdentityInfo、アカウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7e1ad4d10c3b71a04421d92304dc2bfcb6147da
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: ce1a3d5153d324d008d2d46048838351eb7bc047
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498209"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935823"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -45,21 +45,21 @@ ms.locfileid: "51498209"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
-| `AccountUpn` | 文字列 | アカウントのユーザー プリンシパル名 (UPN) |
-| `OnPremSid` | 文字列 | アカウントのオンプレミスセキュリティ識別子 (SID) |
-| `CloudSid` | 文字列 | アカウントのクラウド セキュリティ識別子 |
-| `GivenName` | 文字列 | アカウント ユーザーの名前または名を指定する |
-| `Surname` | 文字列 | アカウント ユーザーの姓、ファミリ名、または姓 |
-| `AccountDisplayName` | 文字列 | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
-| `Department` | 文字列 | アカウント ユーザーが属する部署の名前 |
-| `JobTitle` | 文字列 | アカウント ユーザーの役職 |
-| `AccountName` | 文字列 | アカウントのユーザー名 |
-| `AccountDomain` | 文字列 | アカウントのドメイン |
-| `EmailAddress` | 文字列 | アカウントの SMTP アドレス |
-| `SipProxyAddress` | 文字列 | アカウントのボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) アドレス |
-| `City` | 文字列 | アカウント ユーザーが保存されている都市 |
-| `Country` | 文字列 | アカウント ユーザーが保存されている国/地域 |
-| `IsAccountEnabled` | boolean | アカウントが有効になっているかどうかを示します。 |
+| `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
+| `OnPremSid` | string | アカウントのオンプレミスセキュリティ識別子 (SID) |
+| `CloudSid` | string | アカウントのクラウド セキュリティ識別子 |
+| `GivenName` | string | アカウント ユーザーの名前または名を指定する |
+| `Surname` | string | アカウント ユーザーの姓、ファミリ名、または姓 |
+| `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
+| `Department` | string | アカウント ユーザーが属する部署の名前 |
+| `JobTitle` | string | アカウント ユーザーの役職 |
+| `AccountName` | string | アカウントのユーザー名 |
+| `AccountDomain` | string | アカウントのドメイン |
+| `EmailAddress` | string | アカウントの SMTP アドレス |
+| `SipProxyAddress` | string | アカウントのボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) アドレス |
+| `City` | string | アカウント ユーザーが保存されている都市 |
+| `Country` | string | アカウント ユーザーが保存されている国/地域 |
+| `IsAccountEnabled` | ブール値 | アカウントが有効になっているかどうかを示します。 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

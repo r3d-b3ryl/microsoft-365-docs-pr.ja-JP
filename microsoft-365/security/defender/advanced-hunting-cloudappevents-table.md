@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの CloudAppEvents テーブル
 description: 高度なハンティング スキーマの CloudAppEvents テーブルで、クラウド アプリとサービスからのイベントについて説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、CloudAppEvents、CloudAppEvents、Cloud App Security、MCAS
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、CloudAppEvents、CloudAppEvents、Cloud App Security、MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 83b9eec37648ba48aa8e6931e836e8a5e22458c8
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 17f424d368c0df2f07cda41917f005e4163e5750
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760028"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935871"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 

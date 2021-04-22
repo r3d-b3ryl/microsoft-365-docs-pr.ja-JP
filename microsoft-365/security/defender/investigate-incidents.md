@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender のインシデントを調査する
+title: Microsoft 365 Defender でのインシデントの分析
 description: デバイス、ユーザー、メールボックスに関連するインシデントを分析します。
-keywords: インシデント、コンピューター、デバイス、ユーザー、ID、メール、電子メール、メールボックス、調査、グラフ、証拠
+keywords: インシデント、インシデント、分析、応答、コンピューター、デバイス、ユーザー、ID、メール、メール、メールボックス、調査、グラフ、証拠
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,17 +22,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861877"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939744"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender のインシデントを調査する
+# <a name="analyze-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの分析
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -40,9 +39,9 @@ ms.locfileid: "51861877"
 
 Microsoft 365 Defender は、デバイス、ユーザー、およびメールボックス全体からのすべての関連するアラート、資産、調査、および証拠をインシデントに集約し、攻撃の幅広い全体を総合的に調査します。
 
-インシデント内では、ネットワークに影響を与えるアラートを調査し、その意味を理解し、効果的な修復計画を策定できるよう証拠を照合します。
+インシデント内では、ネットワークに影響を与えるアラートを分析し、その意味を理解し、証拠を照合して、効果的な修復計画を策定できます。
 
-## <a name="initial-investigation"></a>初期調査
+## <a name="initial-analysis"></a>初期分析
 
 詳細を確認する前に、インシデントのプロパティと概要を確認してください。
 
@@ -87,9 +86,9 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="インシデントのアラート ページの例":::
 
-既定では、アラートは時系列的に順序付けされ、インシデントが時間の間にどのように再生されたのか確認できます。 各アラートを選択すると、アラートのメイン ページに移動し、アラートの詳細な調査を実行できます。 
+既定では、アラートは時系列的に順序付けされ、インシデントが時間の間にどのように再生されたのか確認できます。 各アラートを選択すると、アラートのメイン ページに移動し、アラートの詳細な分析を実行できます。 
 
-アラートの調査でアラート キューとアラート ページを使用する方法 [について説明します。](investigate-alerts.md)
+アラートの分析でアラート キューとアラート ページを使用する方法 [について説明します。](investigate-alerts.md)
 
 ## <a name="devices"></a>デバイス
 

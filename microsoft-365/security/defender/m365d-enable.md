@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 セキュリティ センターで Microsoft 365 Defender を有効にする
 description: Microsoft 365 Defender を有効にして、セキュリティ インシデントと対応の統合を開始する方法について説明します。
-keywords: 開始する、MTP、Microsoft Threat Protection、M365、セキュリティ、データの場所、必要なアクセス許可、ライセンスの適格性、設定ページを有効にする
+keywords: 開始する、Microsoft 365 Defender、Microsoft 365 Defender、M365、セキュリティ、データの場所、必要なアクセス許可、ライセンスの適格性、設定ページを有効にする
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bf8fdb2a8a42ef7b70b744cbbb5663e6afe51989
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 2d69ae70b137c9e5378958721f7f9958e57c0306
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764384"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935643"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 

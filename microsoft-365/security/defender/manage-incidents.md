@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender でのインシデントの管理
 description: 状態の割り当てと更新を行う方法について説明します。
-keywords: インシデント、インシデント、警告、関連付けられた警告、割り当て、更新、状態、管理、分類、microsoft、365、m365
+keywords: インシデント、インシデント、分析、応答、アラート、相関アラート、割り当て、更新、状態、管理、分類、microsoft、365、m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861733"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939756"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの管理
 
@@ -61,7 +61,7 @@ Microsoft 365 セキュリティ センター (& >) のクイック 起動時に
 - インシデント キュー内のインシデントのプロパティ ウィンドウ。
 - **インシデントの** 概要ページ。
 
-調査中に、あるインシデントから別のインシデントにアラートを移動する場合は、[アラート] タブからアラートを移動することもできます。これにより、関連するすべてのアラートを含む大小のインシデントを作成できます。
+分析中に、あるインシデントから別のインシデントにアラートを移動する場合は、[アラート] タブからアラートを移動することもできます。これにより、関連するすべてのアラートを含む大小のインシデントを作成できます。
 
 ## <a name="edit-the-incident-name"></a>インシデント名を編集する
 
@@ -102,4 +102,4 @@ Microsoft 365 Defender は、影響を受けるエンドポイントの数、影
 
 - [インシデントの概要](incidents-overview.md)
 - [インシデントの優先度設定](incident-queue.md)
-- [インシデントの調査](investigate-incidents.md)
+- [インシデントの分析](investigate-incidents.md)

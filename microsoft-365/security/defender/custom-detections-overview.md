@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender でのカスタム検出の概要
 description: 高度な検出を使用してカスタム検出を作成し、アラートを生成する方法を理解する
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、microsoft 365、Microsoft Threat Protection
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 589a15aa456a96a5eef8042d922d338f056a882d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bf635ed03cb0d99d54fc94b622bf244447b32a80
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498829"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935703"
 ---
 # <a name="custom-detections-overview"></a>カスタム検出の概要
 

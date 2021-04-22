@@ -1,7 +1,7 @@
 ---
 title: 役割ベースのアクセス制御のカスタム ロール
 description: Microsoft 365 セキュリティ センターでカスタム ロールを管理する方法について説明します。
-keywords: access、 permissions, MTP, Microsoft Threat Protection, M365, security, MCAS, MDATP, Cloud App Security, Microsoft Defender Advanced Threat Protection, scope, scoping, RBAC, role-based access, custom role-based access, role-based auth, RBAC in MDO, role, rolegroups, permissions inheritance, fine-grained permissions
+keywords: Access、 permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC, role-based access, custom role-based access, role-based auth, RBAC in MDO, role, rolegroups, permissions inheritance, 詳細なアクセス許可
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9dfa9f113c0a7d57360c2da6105cbfa07fcf6a99
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199959"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935691"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Microsoft 365 Defender の役割ベースのアクセス制御のカスタム ロール
 
@@ -83,11 +83,11 @@ Microsoft 365 Defender へのアクセスは[、Azure Active Directory (AAD)](m3
  
 | **Microsoft 365 Defender では、次のいずれかの役割が必要です**  | **Defender for Endpoint では、次のいずれかの役割が必要です**  | **365 の Defender に必要な役割は、次Officeです。** | **Cloud App Security では、次のいずれかの役割が必要です** | 
 |---------|---------|---------|---------|
-| 調査データの表示: <ul><li>[アラート] ページ</li> <li>アラート キュー</li> <li>インシデント</li>  <li>インシデント キュー</li> <li>アクション センター</li></ul>| データの表示 - セキュリティ操作 | <ul><li>[表示のみ] アラートの管理 </li> <li>組織の構成</li><li>監査ログ</li> <li>表示のみ可能な監査ログ</li> <li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li><li>表示専用の受信者</li></ul>  | <ul><li>グローバル管理者</li> <li>セキュリティ管理者</li> <li>コンプライアンス管理者</li> <li>セキュリティ オペレーター</li> <li>セキュリティ閲覧者</li> <li>グローバルリーダー</li></ul> |
-| ハンティング データの表示 | データの表示 - セキュリティ操作 | <ul><li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li> <li>表示専用の受信者</li> | <ul><li>グローバル管理者</li> <li>セキュリティ管理者</li> <li>コンプライアンス管理者</li> <li>セキュリティ オペレーター</li> <li>セキュリティ閲覧者</li> <li>グローバルリーダー</li></ul> |
+| 調査データの表示: <ul><li>[アラート] ページ</li> <li>アラート キュー</li> <li>インシデント</li>  <li>インシデント キュー</li> <li>アクション センター</li></ul>| データの表示 - セキュリティ操作 | <ul><li>[表示のみ] アラートの管理 </li> <li>組織の構成</li><li>監査ログ</li> <li>表示のみ可能な監査ログ</li> <li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li><li>表示専用の受信者</li></ul>  | <ul><li>グローバル管理者</li> <li>セキュリティ管理者</li> <li>コンプライアンス管理者</li> <li>セキュリティ オペレーター</li> <li>セキュリティ閲覧者</li> <li>グローバル閲覧者</li></ul> |
+| ハンティング データの表示 | データの表示 - セキュリティ操作 | <ul><li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li> <li>表示専用の受信者</li> | <ul><li>グローバル管理者</li> <li>セキュリティ管理者</li> <li>コンプライアンス管理者</li> <li>セキュリティ オペレーター</li> <li>セキュリティ閲覧者</li> <li>グローバル閲覧者</li></ul> |
 | アラートとインシデントの管理 | アラートの調査 | <ul><li>アラートの管理</li> <li>セキュリティ管理者</li> | <ul><li>グローバル管理者</li> <li>セキュリティ管理者</li> <li>コンプライアンス管理者</li> <li>セキュリティ オペレーター</li> <li>セキュリティ閲覧者</li></ul> |
 | アクション センターの修復 | アクティブな修復アクション – セキュリティ操作 | 検索と削除 | |
-| カスタム検出の設定 | セキュリティ設定の管理 |<ul><li>アラートの管理</li> <li>セキュリティ管理者</li></ul> | <ul><li>グローバル管理者</li> <li>セキュリティ管理者</li> <li>コンプライアンス管理者</li> <li>セキュリティ オペレーター</li> <li>セキュリティ閲覧者</li> <li>グローバルリーダー</li></ul> |
+| カスタム検出の設定 | セキュリティ設定の管理 |<ul><li>アラートの管理</li> <li>セキュリティ管理者</li></ul> | <ul><li>グローバル管理者</li> <li>セキュリティ管理者</li> <li>コンプライアンス管理者</li> <li>セキュリティ オペレーター</li> <li>セキュリティ閲覧者</li> <li>グローバル閲覧者</li></ul> |
 | 脅威の分析 | アラートとインシデント のデータ: <ul><li>データの表示 - セキュリティ操作</li></ul>TVM の軽減策:<ul><li>データの表示 - 脅威と脆弱性の管理</li></ul> | アラートとインシデント のデータ:<ul> <li>[表示のみ] アラートの管理</li> <li>アラートの管理</li> <li>組織の構成</li><li>監査ログ</li> <li>表示のみ可能な監査ログ</li><li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li><li>表示専用の受信者</li> </ul> 電子メールの試行を防止します。 <ul><li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li><li>表示専用の受信者</li> | MCAS または MDI ユーザーには使用できません |
 
 たとえば、Microsoft Defender for Endpoint のハンティング データを表示するには、データ セキュリティ操作のアクセス許可を表示する必要があります。  

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930139"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939626"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 用 Microsoft Defender for Endpoint - プライバシー情報
 
@@ -70,7 +70,7 @@ Defender for Endpoint on Android は、構成済みの Android デバイスか�
 
     -   Azure テナント ID - Azure Active Directory 内の組織を識別する GUID
 
-    -   Microsoft Defender ATP 組織 ID - デバイスが属する企業に関連付けられた一意の識別子。 Microsoft は、問題が企業の選択セットに影響を与えるかどうか、および影響を受け取る企業の数を特定できます。 
+    -   Microsoft Defender for Endpoint org ID - デバイスが属する企業に関連付けられた一意の識別子。 Microsoft は、問題が企業の選択セットに影響を与えるかどうか、および影響を受け取る企業の数を特定できます。 
 
     -   ユーザー プリンシパル名 – ユーザーの電子メール ID
 

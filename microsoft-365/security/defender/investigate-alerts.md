@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender でアラートを調査する
-description: デバイス、ユーザー、メールボックス間で表示されるアラートを調査します。
-keywords: インシデント、アラート、調査、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
+title: Microsoft 365 Defender でアラートを分析する
+description: デバイス、ユーザー、およびメールボックス間で表示されるアラートを分析します。
+keywords: インシデント、アラート、調査、調査、分析、応答、相関関係、攻撃、コンピューター、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862008"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939544"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
+# <a name="analyze-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを分析する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51862008"
 
 アラートは、すべてのインシデントの基礎であり、環境内で悪意のあるイベントや不審なイベントが発生したかどうかを示します。 アラートは通常、より広範な攻撃の一部であり、インシデントに関する手がかりを提供します。
 
-Microsoft 365 Defender では、関連するアラートがまとめて集計され、インシデント [が発生します](incidents-overview.md)。 インシデントは常に攻撃の広範なコンテキストを提供しますが、アラートの調査は、より深い分析が必要な場合に有用です。 
+Microsoft 365 Defender では、関連するアラートがまとめて集計され、インシデント [が発生します](incidents-overview.md)。 インシデントは常に攻撃の広範なコンテキストを提供しますが、アラートの分析は、より深い分析が必要な場合に有用です。 
 
 アラート **キューには、** 現在の一連のアラートが表示されます。 Microsoft 365セキュリティ センター (& >) のクイック 起動時に[インシデント] から通知キューに[security.microsoft.com。](https://security.microsoft.com)
 
@@ -134,12 +134,12 @@ Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft 
 
 ## <a name="resolve-an-alert"></a>アラートを解決する
 
-アラートの調査が完了し、解決したら、[アラートの管理] ウィンドウに移動して、アラートの状態を [解決済み]としてマークし、False アラートまたは **True** アラートとして分類します。 true アラートの場合は、[決定] フィールドにアラートの脅威の種類 **を指定** します。
+アラートの分析が完了し、解決したら、[アラートの管理] ウィンドウに移動し、その状態を [解決済み] としてマークし、False アラートまたは **True** アラートとして分類します。 true アラートの場合は、[決定] フィールドにアラートの脅威の種類 **を指定** します。
 
 アラートを分類し、その決定を指定すると、Microsoft 365 Defender を調整して、より真のアラートと誤ったアラートを減らします。
 
 ## <a name="see-also"></a>関連項目
 
 - [インシデントの概要](incidents-overview.md)
-- [インシデントの調査](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)
+- [インシデントの分析](investigate-incidents.md)

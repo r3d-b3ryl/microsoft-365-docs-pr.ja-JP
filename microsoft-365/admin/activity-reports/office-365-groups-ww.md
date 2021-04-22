@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Microsoft 365 のグループ レポートで、グループとそのアクティビティについて確認します。
-ms.openlocfilehash: fd3aa664b5a40bb5fffe0ed23e07ba6f1a5907c2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579568"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939232"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
 
@@ -63,6 +63,11 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |[メッセージ] Yammer (投稿)  <br/> |レポート期間中にグループにYammerメッセージの数。  <br/> |
 |[メッセージ] Yammer (読み取り)  <br/> |レポート期間中にグループで読み取Yammer会話の数。  <br/> |
 |[メッセージ] Yammer (お気に入り)  <br/> |レポート期間中に、Yammerグループで気に入ったメッセージの数。  <br/> |
-|メンバー  <br/> |グループ内のメンバーの数。  <br/> |
+|Members  <br/> |グループ内のメンバーの数。  <br/> |
 |外部メンバー |グループ内の外部ユーザーの数。|
 |||
+
+## <a name="related-content"></a>関連コンテンツ
+
+[管理センターの Microsoft 365 レポート](activity-reports.md) (記事) セキュリティ [&](../../compliance/reports-in-security-and-compliance.md) コンプライアンス センターのレポート (記事) 管理センターの [Microsoft 365](../../admin/activity-reports/active-users-ww.md) レポート - Active Users (記事)
+

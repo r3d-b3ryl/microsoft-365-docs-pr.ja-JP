@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの DeviceAlertEvents テーブル
 description: 高度なハンティング スキーマの DeviceAlertEvents テーブルのアラート生成イベントについて説明します。
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft Defender for Endpoint、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、DeviceAlertEvents、アラート、重大度、カテゴリ
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、mdatp、microsoft Defender atp、エンドポイント用の microsoft Defender、wdatp 検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、DeviceAlertEvents、アラート、重大度、カテゴリ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: bb2350fed5fadee359695743989e02a3b3e44fb2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f4f6ecdc57d8602f49fb389c741c5e01dc1b41b5
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935343"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939650"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 

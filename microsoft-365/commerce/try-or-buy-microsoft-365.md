@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 無料試用版を取得する方法、または Microsoft 365 for business のサブスクリプションを購入する方法について説明します。
 ms.date: 08/07/2020
-ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 505ce060b9b40d72a54adbfffbcb2b3cf47a66e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576903"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939186"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
 
@@ -33,9 +33,19 @@ Microsoft 365 for business はサブスクリプション サービスで、Micr
 > [!NOTE]
 > 無料試用版にサインアップする場合は、クレジット カードを使用する必要があります。 無料試用版の期間が終了すると、試用版サブスクリプションは有料サブスクリプションに自動的に変換されます。 試用期間が終了するまで、クレジット カードは請求されません。
 
+
+::: moniker region="o365-21vianet"
+
+> [!IMPORTANT]
+> **中国の 21Vianet Office 365** の支払いオプション国際クレジット カードは受け付けていません。 サブスクリプションの支払い方法は、次の方法で行います。
+> - 請求書
+> - Alipay または China UnionPay の支払いの証明を使用したオンライン支払いは、Fapiaos の形式で提供されます。 Fapiao 要求は、支払い後約 3 日後に [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) システムに送信できます。 詳細については [、「Apply for a Fapiao for 21Vianet Office 365」を参照してください](../admin/services-in-china/apply-for-a-fapiao.md)。
+
+::: moniker-end
+
 ## <a name="before-you-begin"></a>開始する前に
 
-無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
+無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="try-a-free-trial-subscription"></a>無料試用版サブスクリプションを試す
 
@@ -64,7 +74,7 @@ Microsoft 365 for business はサブスクリプション サービスで、Micr
 
 購入する前に、ビジネス向け Microsoft 365 の機能を試す時間が必要ですか? 試用版サブスクリプションの期限切れまでの期間が 15 日以内になり、その前に試用版を延長していない場合、試用版をさらに 30 日間延長できます。 延長できるのは 1 回のみです。
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. [製品 **] タブ** で、拡張する試用版サブスクリプションを選択します。 
 3. [サブスクリプションの詳細] ページの [ **サブスクリプションと支払** いの設定] セクションで、[終了日の **延長] を選択します**。
 4. [終了日 **の延長] ウィンドウ** で、内線情報を確認し、必要に応じて支払い方法を選択します。 完了したら、[試用版の延長] **を選択します**。

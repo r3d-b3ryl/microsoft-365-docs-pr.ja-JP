@@ -1,7 +1,7 @@
 ---
 title: サポートされている Microsoft 365 Defender API
 description: サポートされている Microsoft 365 Defender API
-keywords: MTP、API、API
+keywords: Microsoft 365 Defender、API、API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b2239b960106d756cbd29504af05af77a553067d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f2c66dca326589807f5712c5548c177a0d08ade0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060806"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935727"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>サポートされている Microsoft 365 Defender API 
 
@@ -59,6 +59,6 @@ ms.locfileid: "51060806"
 ## <a name="related-articles"></a>関連記事
 
 - [Microsoft 365 Defender API の概要](api-overview.md)
-- [Microsoft Threat Protection API へのアクセス](api-access.md)
+- [Microsoft 365 Defender API へのアクセス](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)

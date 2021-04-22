@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けオンライン会議を開催する方法について学習します。
-ms.openlocfilehash: dffdf847962962b2f2e9daf70dae210abbb7614b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 893a03b064b6f73711b69a61c90cd40023241c48
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580512"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939520"
 ---
 # <a name="host-online-meetings-for-your-business"></a>ビジネス向けオンライン会議を開催する
 
@@ -35,9 +35,9 @@ ms.locfileid: "51580512"
 
 クライアント、顧客、またはパートナーとプロジェクトで頻繁に密接に共同作業を行う場合は、[](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)クライアント用のチームを作成して、会議に簡単に招待したり、Microsoft Teams で会話、ファイルを共有したり、プロジェクトの追跡を行うことができます。
 
-インフォグラフィックをダウンロードして、Microsoft Teams とのオンライン会議に参加またはホストする方法の概要を簡単に確認できます。
+インフォグラフィックをダウンロードして、Microsoft Teams とのオンライン会議に参加またはホストする方法の簡単な概要を確認します。
 
-インフォグラフィックをダウンロードして、Microsoft Teams とのオンライン会議に参加またはホストする方法の概要を簡単に確認できます。 [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
+[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
 ## <a name="1-schedule-a-meeting"></a>1. 会議をスケジュールする
 

@@ -20,19 +20,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: 別のプランにアップグレードする方法について学習します。
-ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580980"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939174"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
 ビジネスが変更された場合や、その他の機能が必要な場合は、プランをアップグレードできます。 これを行う最も簡単な方法は、管理センターの **[アップグレード** ] タブを使用する方法です。 ただし、[アップグレード] **タブの** 使用は、すべての状況でサポートされるわけではありません。 場合によっては、手動でプランを変更できる場合があります。
-
-> [!NOTE]
-> この記事は、新しい管理センターに適用されます。 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。 古い管理センターに関する記事を表示するには、「ビジネス プラン用に別の [Microsoft 365](switch-to-a-different-plan.md)に切り替える」を参照してください。
 
 ## <a name="use-the-upgrade-tab"></a>[アップグレード] タブを使用する
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender でのインシデントの優先順位付け
 description: Microsoft 365 Defender のインシデント キューからインシデントをフィルター処理する方法について説明します。
-keywords: インシデント、キュー、概要、デバイス、ID、ユーザー、メールボックス、メール、インシデント
+keywords: インシデント、キュー、概要、デバイス、ID、ユーザー、メールボックス、電子メール、インシデント、分析、応答
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887259"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939708"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの優先順位付け
 
@@ -81,45 +81,11 @@ Microsoft 365 Defender は、相関分析を適用し、関連するアラート
 | 状態 | 状態に基づいて表示されるインシデントのリストを制限して、アクティブなインシデントまたは解決されたインシデントを確認できます。 |
 |||
 
-## <a name="incident-response-workflow"></a>インシデント対応ワークフロー
-
-インシデントに対応する一般的なワークフローを次に示します。
-
-1. 調査と解決に最も優先度の高いインシデントを特定し、トリアージします。
-2. 優先度の高いインシデントごとに、調査を開始 [します](investigate-incidents.md)。
-
-   a. インシデントの概要を表示して、インシデントの範囲と重大度、および影響を受けるエンティティ ([概要] タブ) **を理解** します。
-
-   b. アラートを見て、発生元、スコープ、重大度 ([アラート] タブ) を **理解** します。
-
-   c. 必要に応じて、影響を受け取ったデバイス、ユーザー、およびメールボックス([デバイス]、[ユーザー]、および [メールボックス] タブ) に関する **情報を収集** します。
-
-   d.  Microsoft 365 Defender が一部のアラートを自動的に解決した方法 ([調査] タブ) **を参照** してください。
-   
-   e.  必要に応じて、インシデントのデータ セットの情報を使用して詳細を確認します ([証拠と応答] **タブ** )。
-
-   調査を行う場合は、次の事項に注意する必要があります。
-
-   - 格納: テナントへの追加の影響を軽減します。
-   - 根絶: セキュリティの脅威を削除します。
-   - 回復: テナント リソースをインシデントの前の状態に復元します。
-
-3. インシデントを解決した後、時間を取って次の手順を実行します。
-
-   - 攻撃の種類とその影響を理解します。
-   - セキュリティコミュニティの攻撃を調査して、セキュリティ攻撃の傾向を調査します。
-   - インシデントの解決に使用したワークフローを思い出し、必要に応じて標準のワークフローとプレイブックを更新します。
-   - セキュリティ態勢の変更が必要かどうかを判断し、それらを実装するための手順を実行します。
-
-基本的なプロセスの概要を次に示します。
-
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="インシデントを調査する基本的なプロセス":::
-
 ## <a name="next-step"></a>次の手順
 
-優先度が最も高いインシデントを決定した後、それを選択して調査を開始 [します](investigate-incidents.md)。
+優先度が最も高いインシデントを決定した後、それを選択して分析を開始 [します](investigate-incidents.md)。
 
 ## <a name="see-also"></a>関連項目
 - [インシデントの概要](incidents-overview.md)
-- [インシデントの調査](investigate-incidents.md)
+- [インシデントの分析](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)

@@ -1,7 +1,7 @@
 ---
 title: go hunt を使用してエンティティに関する関連情報を取得する
 description: 高度な検索を使用してエンティティまたはイベントに関する関連情報をすばやくクエリするために、移動ハント ツールを使用する方法について学習します。
-keywords: 高度な狩猟、インシデント、ピボット、エンティティ、go hunt、関連イベント、脅威狩り、サイバー脅威狩り、検索、クエリ、テレメトリ、Microsoft 365、Microsoft Threat Protection
+keywords: 高度な狩猟、インシデント、ピボット、エンティティ、go hunt、関連イベント、脅威ハンティング、サイバー脅威ハンティング、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0f09f74a1cefad5a9b6b438752ebe57e583397c7
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 51d33ea9a372b5bfe017f4c3544e0d6413d53001
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759980"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935835"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>go hunt を使用してエンティティまたはイベント情報をすばやく検索する
 

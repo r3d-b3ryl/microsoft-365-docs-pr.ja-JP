@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender Advanced Hunting スキーマの名前付け変更
 description: 高度な検索スキーマの名前付け変更テーブルと列を追跡および確認する
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、データ、名前付けの変更、名前の変更、Microsoft Threat Protection
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data、名前付け変更、名前の変更
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ab6bdefb457fb31df98d829ee801b72f4c8ae70a
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 22d26dac6b7ee502d6934349d22b1d40532f575f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499700"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935775"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前付けの変更
 

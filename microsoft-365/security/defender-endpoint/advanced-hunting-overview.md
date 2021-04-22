@@ -1,7 +1,7 @@
 ---
 title: エンドポイント向け Microsoft Defender での高度な検索の概要
 description: Microsoft Defender for Endpoint の脅威検出機能を使用して、ネットワーク内の脅威と弱点を検出するクエリを作成する
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、エンドポイント用 Microsoft Defender、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、タイム ゾーン、UTC
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、mdatp、microsoft Defender atp、エンドポイント用の microsoft Defender、wdatp、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、タイム ゾーン、UTC
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 114c0192f77411016fcb13ec2b912f4440ffa6e0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 906ae4bdebcc46e210fa9c5dcb5387c880fdbb38
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934359"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939662"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>高度な狩猟で脅威を積極的に探す
 

@@ -1,7 +1,7 @@
 ---
 title: テスト Microsoft 365 Defender アラートの生成
 description: テストアラートを生成して、Microsoft 365 Defender ラボ環境の動作を試す
-keywords: Microsoft Threat Protection シミュレーション、Try Microsoft Threat Protection、Microsoft Threat Protection でのテスト アラートの生成、Microsoft Threat Protection 評価ラボでのテスト アラート
+keywords: Microsoft 365 Defender シミュレーション、Microsoft 365 Defender の試用、Microsoft 365 Defender でのテストアラートの生成、Microsoft 365 Defender 評価ラボでのテストアラートの生成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: eae17a2cec3aa4da036ef1de52c3cd637701b929
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ebe01570b8b425b45acdcb11cc7df47d2d62e547
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060729"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935655"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Microsoft 365 Defender 評価ラボでテストアラートを生成する  
 

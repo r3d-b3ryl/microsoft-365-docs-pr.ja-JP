@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のビジネス アシスト
+title: Microsoft 365 のビジネスサポート
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,14 +16,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: ビジネス アシスト プログラムと、Microsoft 365 for business のヘルプと使用状況の改善に組織を支援する方法について説明します。
-ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 767146cbbb68ff2e6632a7cae74a8b232834b01b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408527"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929034"
 ---
-# <a name="business-assist-for-microsoft-365"></a>Microsoft 365 のビジネス アシスト
+# <a name="business-assist-for-microsoft-365"></a>Microsoft 365 のビジネスサポート
 
 小規模ビジネスの専門家からの専門的なアドバイスを受け、サブスクリプションを有効に利用できます。
 
@@ -55,7 +55,7 @@ ms.locfileid: "51408527"
 
 2. **[Microsoft** **365** のスモール ビジネス アシストの詳細] を選択し、購入を完了します。
 
-:::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: [サービスの購入] ページの [アドオン] セクションからビジネス アシストを購入する":::
+:::image type="content" source="../../media/business-assist-april.png" alt-text="Screeenshot: [サービスの購入] ページの [アドオン] セクションからビジネス アシストを購入する":::
 
 > [!div class="nextstepaction"]
 > [今すぐ購入する](https://go.microsoft.com/fwlink/p/?linkid=2158423)

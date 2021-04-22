@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender の高度な検索クエリ言語について説明します。
 description: 最初の脅威の捜索クエリを作成し、一般的な演算子と高度な捜索クエリ言語の他の側面について学習する
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、言語、学習、最初のクエリ、テレメトリ、イベント、テレメトリ、カスタム検出、スキーマ、kusto、演算子、データ型、powershell ダウンロード、クエリの例
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、言語、学習、最初のクエリ、テレメトリ、イベント、テレメトリ、カスタム検出、スキーマ、kusto、演算子、データ型、powershell ダウンロード、クエリの例
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b22badcb9c099679e3d785e407f83d2121a84901
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: e7bae0577b83deed26b0a3beb0f16efc80bb5846
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500364"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935787"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 

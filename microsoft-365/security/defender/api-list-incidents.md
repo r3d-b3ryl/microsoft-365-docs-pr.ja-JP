@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4488a552475121adc4a439106bc0bf0d97cb509a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7fb0de4f8dc67331e7acca59e70d061fe7c19493
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062043"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935739"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデント API を一覧表示する
 
@@ -80,9 +80,9 @@ GET /api/incidents
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 -|-|-
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **Required**
 
 
 ## <a name="request-body"></a>要求本文
@@ -142,7 +142,7 @@ mitreTechniques | 攻撃手法は [、MITRE ATT](https://attack.mitre.org/)お�
 
 フィールド名 | 説明 | 値の例
 -|-|-
-DeviceId | Microsoft Defender ATP で指定されているデバイス ID。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+DeviceId | Microsoft Defender for Endpoint で指定されているデバイス ID。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  Azure Active Directory で指定されている[デバイス ID。](/azure/active-directory/fundamentals/active-directory-whatis) ドメインに参加しているデバイスでのみ使用できます。 | null
 deviceDnsName | デバイスの完全修飾ドメイン名。 | user5cx.middleeast.corp.contoso.com
 osPlatform | デバイスが実行されている OS プラットフォーム。| WindowsServer2016
@@ -185,7 +185,7 @@ securityGroupId | entityType が  *SecurityGroup の場合に使用できます*
 securityGroupName | entityType が  *SecurityGroup の場合に使用できます*。 | ネットワーク構成演算子
 registryHive | entityType がレジストリの場合  *に使用できます*。 | HKEY \_ ローカル \_ コンピューター |
 registryKey | entityType がレジストリの場合  *に使用できます*。 | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | entityType がレジストリの場合  *に使用できます*。 | 文字列
+registryValueType | entityType がレジストリの場合  *に使用できます*。 | String
 registryValue | entityType がレジストリの場合  *に使用できます*。 | 31-00-00-00
 deviceId | エンティティに関連するデバイスの ID (存在する場合)。 | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 

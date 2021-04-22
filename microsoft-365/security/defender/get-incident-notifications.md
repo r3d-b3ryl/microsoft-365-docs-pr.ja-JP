@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender でインシデント通知を取得する
+title: Microsoft 365 Defender で電子メールでインシデント通知を取得する
 description: Microsoft 365 Defender でインシデントのメール通知を取得するルールを作成する方法について説明します。
-keywords: インシデント、電子メール、電子メールの通知、構成、ユーザー、メールボックス、電子メール、インシデント
+keywords: インシデント、電子メール、電子メールの通知、構成、ユーザー、メールボックス、電子メール、インシデント、分析、応答
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72a1f8fe71efcfa7f4f73671611576a454b508e6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861319"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939720"
 ---
 # <a name="get-incident-notifications-by-email"></a>電子メールでインシデント通知を取得する
 
@@ -43,7 +43,7 @@ Microsoft 365 Defender をセットアップして、新しいインシデント
 - デバイス グループ。
 - インシデントごとの最初の更新のみ。
 
-電子メール通知には、インシデント名、重大度、カテゴリなど、インシデントに関する重要な詳細が含まれています。 また、インシデントに直接移動して、調査を直ちに開始することもできます。 詳細については、「インシデントの [調査」を参照してください](investigate-incidents.md)。
+電子メール通知には、インシデント名、重大度、カテゴリなど、インシデントに関する重要な詳細が含まれています。 インシデントに直接移動し、分析を直に開始することもできます。 詳細については、「インシデントの分析 [」を参照してください](investigate-incidents.md)。
 
 電子メール通知で受信者を追加または削除できます。 新しい受信者は、インシデントが追加された後に通知を受け取る。 
 
@@ -77,4 +77,4 @@ Microsoft 365 Defender をセットアップして、新しいインシデント
 ## <a name="see-also"></a>関連項目
 - [インシデントの概要](incidents-overview.md)
 - [インシデントの優先度設定](incident-queue.md)
-- [インシデントの調査](investigate-incidents.md)
+- [インシデントの分析](investigate-incidents.md)

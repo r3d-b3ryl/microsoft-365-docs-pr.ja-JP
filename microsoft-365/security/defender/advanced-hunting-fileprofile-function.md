@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender の高度な検索での FileProfile() 関数
 description: FileProfile() を使用して高度な検索クエリ結果のファイルに関する情報を強化する方法について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、FileProfile、ファイル プロファイル、関数、エンリッチメント
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、FileProfile、ファイル プロファイル、関数、エンリッチメント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ea4f22b70e607b42155342dde1ac16b1ad640981
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 67295529cdb7b8a3e93e663f2a8a28d27a8f6737
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498458"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935847"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -39,22 +39,22 @@ ms.locfileid: "51498458"
 
 | Column | データ型 | 説明 |
 |------------|---------------|-------------|
-| `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
+| `SHA1` | string | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 |
-| `MD5` | 文字列 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
+| `MD5` | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
 | `FileSize` | int | ファイルのサイズ (バイト単位) |
 | `GlobalPrevalence` | int | Microsoft がグローバルに観察したエンティティのインスタンス数 |
 | `GlobalFirstSeen` | 日付型 | エンティティが最初に Microsoft によってグローバルに観察された日時 |
 | `GlobalLastSeen` | 日付型 | エンティティが Microsoft によってグローバルに最後に観察された日時 |
-| `Signer` | 文字列 | ファイルの署名者に関する情報 |
-| `Issuer` | 文字列 | 発行元証明機関 (CA) に関する情報 |
-| `SignerHash` | 文字列 | 署名者を識別する一意のハッシュ値 |
-| `IsCertificateValid` | boolean | ファイルの署名に使用する証明書が有効かどうか |
-| `IsRootSignerMicrosoft` | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
-| `SignatureState` | 文字列 | ファイル署名の状態: SignedValid - ファイルは有効な署名で署名されています。SignedInvalid - ファイルは署名されますが、証明書は無効です。Signeded - ファイルは署名されていない、不明 - ファイルに関する情報を取得できません
-| `IsExecutable` | boolean | ファイルがポータブル実行可能ファイル (PE) ファイルかどうか |
-| `ThreatName` | 文字列 | マルウェアまたは検出された他の脅威の検出名 |
-| `Publisher` | 文字列 | ファイルを発行した組織の名前 |
+| `Signer` | string | ファイルの署名者に関する情報 |
+| `Issuer` | string | 発行元証明機関 (CA) に関する情報 |
+| `SignerHash` | string | 署名者を識別する一意のハッシュ値 |
+| `IsCertificateValid` | ブール値 | ファイルの署名に使用する証明書が有効かどうか |
+| `IsRootSignerMicrosoft` | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
+| `SignatureState` | string | ファイル署名の状態: SignedValid - ファイルは有効な署名で署名されています。SignedInvalid - ファイルは署名されますが、証明書は無効です。Signeded - ファイルは署名されていない、不明 - ファイルに関する情報を取得できません
+| `IsExecutable` | ブール値 | ファイルがポータブル実行可能ファイル (PE) ファイルかどうか |
+| `ThreatName` | string | マルウェアまたは検出された他の脅威の検出名 |
+| `Publisher` | string | ファイルを発行した組織の名前 |
 | `SoftwareName` | string | ソフトウェア製品の名前 |
 
 ## <a name="syntax"></a>構文

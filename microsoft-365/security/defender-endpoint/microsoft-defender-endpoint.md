@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint は、高度な永続的な脅威から防御するのに役立つエンタープライズ エンドポイント セキュリティ プラットフォームです。
-keywords: Microsoft Defender for Endpoint の概要、Microsoft Defender Advanced Threat Protection の概要、Microsoft Defender for Endpoint の概要、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、マシンの動作センサー、クラウド セキュリティ、分析、脅威インテリジェンス、攻撃表面の縮小、次世代保護、自動調査と修復、Microsoft 脅威専門家、セキュリティ スコア、高度な検出、Microsoft 脅威保護、サイバー脅威の検出
+keywords: Microsoft Defender for Endpoint の概要、エンドポイント向け Microsoft Defender の概要、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、マシンの動作センサー、クラウド セキュリティ、分析、脅威インテリジェンス、攻撃表面の縮小、次世代保護、自動調査と修復、Microsoft 脅威の専門家、セキュリティスコア、高度な狩猟、Microsoft 365 Defender、サイバー脅威ハンティング
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861829"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935931"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -64,7 +64,7 @@ Defender for Endpoint では、Windows 10 に組み込むテクノロジと Micr
 <a href="#apis"><center><b>一元的な構成と管理、API</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -126,7 +126,7 @@ Microsoft Defender for Endpoint を既存のワークフローに統合します
 
 **[Microsoft ソリューションとの統合](threat-protection-integration.md)** <br>
 Defender for Endpoint は、以下を含むさまざまな Microsoft ソリューションと直接統合します。
-- Azure Security Center
+- Azure Defender
 - Azure Sentinel
 - Intune
 - Microsoft Cloud App Security
