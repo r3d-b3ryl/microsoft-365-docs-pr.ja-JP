@@ -1,7 +1,7 @@
 ---
 title: McAfee to Microsoft Defender for Endpoint - Prepare
 description: これはフェーズ 1 の準備で、McAfee から Microsoft Defender for Endpoint に移行します。
-keywords: 移行、 Windows Defender Advanced Threat Protection, atp, edr
+keywords: 移行, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 45b22d0066496e40bb8f2e17d9f82de860d73ea4
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cb480e743be9184fd60cba0f82a287b8562c1901
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861425"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934215"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>McAfee からの移行 - フェーズ 1: 移行の準備
 
@@ -68,7 +68,7 @@ McAfee を最新の状態に保ち、組織のデバイスに最新のセキュ�
 
 組織のデバイスの更新に関するヘルプが必要ですか? 以下のリソースを参照してください。
 
-|OS | リソース |
+|OS | Resource |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|

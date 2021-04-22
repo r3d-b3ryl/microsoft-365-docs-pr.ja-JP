@@ -1,7 +1,7 @@
 ---
 title: ダッシュボードの分析情報 - 脅威と脆弱性の管理
 description: 脅威と脆弱性管理ダッシュボードは、SecOps とセキュリティ管理者がサイバーセキュリティの脅威に対処し、組織のセキュリティの回復力を構築するのに役立ちます。
-keywords: mdatp-tvm、mdatp-tvm ダッシュボード、脅威 & 脆弱性管理、脅威と脆弱性管理、リスクベースの脅威 & 脆弱性管理、セキュリティ構成、Microsoft Secure Score for Devices、露出スコア
+keywords: Microsoft Defender for Endpoint-tvm、Microsoft Defender for Endpoint-tvm ダッシュボード、脅威 & の脆弱性管理、脅威と脆弱性の管理、リスクベースの脅威 & の脆弱性管理、セキュリティ構成、Microsoft Secure Score for Devices、露出スコア
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35dd300d828bfa48ad753d7c65f36b2555cf4f60
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 82b6123a99eb406918708c6bf23b870ef3bc3d79
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500173"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934143"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>ダッシュボードの分析情報 - 脅威と脆弱性の管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500173"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 脅威と脆弱性の管理は Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次の固有の値を提供します。
 

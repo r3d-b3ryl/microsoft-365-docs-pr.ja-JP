@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 攻撃シミュレーションを実行する
 description: Microsoft 365 Defender パイロット プロジェクトの攻撃シミュレーションを実行して、それがどのように展開され、すぐに修復されるかを確認します。
-keywords: Microsoft Threat Protection パイロット攻撃シミュレーション、Microsoft Threat Protection パイロット攻撃シミュレーションの実行、Microsoft Threat Protection の攻撃のシミュレーション、Microsoft Threat Protection パイロット プロジェクト、サイバーセキュリティ、高度な永続的な脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
+keywords: Microsoft 365 Defender パイロット攻撃シミュレーション、Microsoft 365 Defender パイロット攻撃シミュレーションの実行、Microsoft 365 Defender、Microsoft 365 Defender パイロット プロジェクト、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bb6472fdd52cdab0ab649fbb76b1ff6a683d6c80
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068252"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934479"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Microsoft 365 Defender 攻撃シミュレーションを実行する
 
@@ -420,7 +420,7 @@ Microsoft 365 セキュリティ センター ポータルでインシデント�
 
    このパイロットの場合は、このルールを実稼働環境のテスト デバイスのサブセットに制限できます。
 
-6. **[作成]** を選択します。 次に、ナビゲーション **パネルから [カスタム** 検出ルール] を選択します。
+6. [**作成**] を選択します。 次に、ナビゲーション **パネルから [カスタム** 検出ルール] を選択します。
 
    ![メニューの [カスタム検出ルール] オプションのスクリーンショット](../../media/mtp/fig27a.png)
 
@@ -437,7 +437,7 @@ Microsoft 365 セキュリティ センター ポータルでインシデント�
 > [!NOTE]
 > パイロット テスト ラボ環境でハンティング クエリを実行するには、独自の GitHub アカウントを準備してください。
 
-|Title|説明|MP4 をダウンロードする|YouTube で視聴する|使用する CSL ファイル|
+|タイトル|説明|MP4 をダウンロードする|YouTube で視聴する|使用する CSL ファイル|
 |---|---|---|---|---|
 |エピソード 1: KQL の基本|Microsoft 365 Defender の高度な狩猟機能の基本について説明します。 使用可能な高度な検索データと基本的な KQL 構文と演算子について説明します。|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[エピソード 1: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |エピソード 2: 参加|高度な検索のデータと、テーブルを一緒に結合する方法について引き続き学習します。 内部、外側、一意、および半結合、および既定の Kusto innerunique 結合のニュアンスについて説明します。|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[エピソード 2: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|

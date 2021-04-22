@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903792"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934371"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -151,7 +151,7 @@ Skype for Business 統合を有効にすると、Skype for Business、電子メ�
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Id 統合用 Microsoft Defender
 
-Azure Advanced Threat Protection との統合により、別の Microsoft Identity セキュリティ製品に直接ピボットできます。 Azure Advanced Threat Protection は、侵害された疑いのあるアカウントと関連リソースに関する追加の分析情報を使用して調査を強化します。 この機能を有効にすると、識別の観点からネットワーク全体をピボットすることで、デバイスベースの調査機能を強化できます。
+Microsoft Defender for Identity との統合により、別の Microsoft Identity セキュリティ製品に直接ピボットできます。 Microsoft Defender for Identity は、侵害された疑いのあるアカウントと関連するリソースに関する追加の分析情報を使用して調査を強化します。 この機能を有効にすると、識別の観点からネットワーク全体をピボットすることで、デバイスベースの調査機能を強化できます。
 
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。
@@ -160,7 +160,7 @@ Azure Advanced Threat Protection との統合により、別の Microsoft Identi
 
 この機能は、アクティブな 365 E5 Office脅威インテリジェンス アドオンがある場合にのみ使用できます。 詳細については、「365 Enterprise E5 Office」を参照してください。
 
-この機能を有効にした場合、Office 365 Advanced Threat Protection のデータを Microsoft Defender セキュリティ センターに組み込み、Office 365 メールボックスと Windows デバイス全体で包括的なセキュリティ調査を実行できます。
+この機能を有効にした場合、microsoft Defender for Office 365 のデータを Microsoft Defender セキュリティ センターに組み込み、Office 365 メールボックスと Windows デバイス全体で包括的なセキュリティ調査を実行できます。
 
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。

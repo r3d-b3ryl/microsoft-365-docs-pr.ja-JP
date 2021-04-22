@@ -2,7 +2,7 @@
 title: プライバシー情報 - Microsoft Defender for Endpoint on iOS
 ms.reviewer: ''
 description: iOS 上の Microsoft Defender for Endpoint のプライバシー情報について説明します。
-keywords: microsoft、defender、atp、ios、ポリシー、概要
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, ios, policy, overview
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5598df8a9e3493a1c4922f672468dd54e84c31e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688203"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934287"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>プライバシー情報 - Microsoft Defender for Endpoint on iOS
 
@@ -34,15 +34,15 @@ ms.locfileid: "51688203"
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> Defender for Endpoint for iOS では、VPN を使用して Web 保護機能を提供します。 これは通常の VPN ではなく、デバイスの外部でトラフィックを受け取らないローカルまたは自己ループ VPN です。 **Microsoft または組織では、閲覧アクティビティが表示されない。**
+> iOS のエンドポイントの Defender は、VPN を使用して Web 保護機能を提供します。 これは通常の VPN ではなく、デバイスの外部でトラフィックを受け取らないローカルまたは自己ループ VPN です。 **Microsoft または組織では、閲覧アクティビティが表示されない。**
 
-Defender for Endpoint for iOS は、構成済みの iOS デバイスから情報を収集し、Defender for Endpoint がある同じテナントに保存します。 この情報は、Defender for Endpoint for iOS をセキュリティで保護し、最新の状態に保ち、期待通り実行し、サービスをサポートするために収集されます。
+iOS のエンドポイント用 Defender は、構成済みの iOS デバイスから情報を収集し、Defender for Endpoint を持つ同じテナントに格納します。 この情報は、IOS の Defender for Endpoint をセキュリティで保護し、最新の状態に保ち、期待通り実行し、サービスをサポートするために収集されます。
 
 データ ストレージの詳細については [、「Microsoft Defender for Endpoint data storage and privacy」を参照してください](data-storage-privacy.md)。
 
 ## <a name="required-data"></a>必須データ 
 
-必要なデータは、iOS 用 Defender for Endpoint を期待通り動作させるのに必要なデータで構成されます。 このデータはサービスの運用に不可欠であり、エンド ユーザー、組織、デバイス、アプリに関連するデータを含めできます。 
+必要なデータは、iOS の Defender for Endpoint を期待通り動作させるのに必要なデータで構成されます。 このデータはサービスの運用に不可欠であり、エンド ユーザー、組織、デバイス、アプリに関連するデータを含めできます。 
 
 収集するデータの種類の一覧を次に示します。 
 

@@ -1,7 +1,7 @@
 ---
 title: 自動調査を使用して脅威を調査および修復する
 description: Microsoft Defender for Endpoint の自動調査フローについて説明します。
-keywords: 自動化, 調査, 検出, Defender atp
+keywords: 自動化された、調査、検出、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 7143a360fb7093f94c6f66373587e1c895dd3213
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5ea869d4016cc794b3046a664c1519f6b3250c67
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200307"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933975"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
@@ -46,7 +46,7 @@ ms.locfileid: "51200307"
 この記事では、AIR の概要を説明し、次の手順と追加のリソースへのリンクを含みます。
 
 > [!TIP]
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)。
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)。
 
 ## <a name="how-the-automated-investigation-starts"></a>自動調査の開始方法
 

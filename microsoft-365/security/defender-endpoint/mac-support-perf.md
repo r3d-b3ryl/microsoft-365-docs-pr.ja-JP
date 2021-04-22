@@ -1,7 +1,7 @@
 ---
 title: macOS での Microsoft Defender for Endpoint のパフォーマンスの問題のトラブルシューティング
 description: macOS の Microsoft Defender for Endpoint のパフォーマンスの問題をトラブルシューティングします。
-keywords: microsoft, defender, atp, mac, performance
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698222"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934251"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のパフォーマンスの問題のトラブルシューティング
 
@@ -32,7 +32,7 @@ ms.locfileid: "51698222"
 
 **適用対象:**
 
-- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -66,7 +66,7 @@ ms.locfileid: "51698222"
 
 2. Finder を開き、[アプリケーション ユーティリティ **]**  >  **に移動します**。 [ **アクティビティ モニター] を** 開き、システムでリソースを使用しているアプリケーションを分析します。 一般的な例としては、ソフトウェアアップデータとコンパイラが含まれます。
 
-1. 最も多くのスキャンをトリガーしているアプリケーションを見つけるには、Defender for Endpoint for Mac によって収集されたリアルタイム統計を使用できます。
+1. 最も多くのスキャンをトリガーしているアプリケーションを見つけるには、Defender for Endpoint on Mac によって収集されたリアルタイム統計を使用できます。
 
       > [!NOTE]
       > この機能は、バージョン 100.90.70 以降で使用できます。

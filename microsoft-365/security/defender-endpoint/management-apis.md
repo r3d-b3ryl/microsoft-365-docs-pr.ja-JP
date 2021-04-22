@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862093"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934459"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要 
 
@@ -41,7 +41,7 @@ Defender for Endpoint は、お客様がプラットフォームを簡単に採�
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>エンドポイントのオンボーディングとポータル アクセス 
 
-デバイスオンボーディングは、クライアント デバイス用の Microsoft Endpoint Manager と Microsoft Intune、およびサーバー デバイス用の Azure Security Center に完全に統合され、構成、展開、および監視の完全なエンドツーエンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpoint では、デバイス管理に使用されるグループ ポリシーや他のサード パーティ製ツールもサポートしています。
+デバイスオンボーディングは、クライアント デバイス用の Microsoft Endpoint Manager と Microsoft Intune、およびサーバー デバイス用の Azure Defender に完全に統合され、構成、展開、および監視の完全なエンドツーエンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpoint では、デバイス管理に使用されるグループ ポリシーや他のサード パーティ製ツールもサポートしています。
 
 Defender for Endpoint は、役割ベースのアクセス制御 (RBAC) の柔軟性を通じて、ポータルにアクセスできるユーザーが見て実行できる機能を詳細に制御します。 RBAC モデルは、セキュリティ チーム構造のすべての機能をサポートします。
 - グローバルに分散した組織とセキュリティ チーム

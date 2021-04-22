@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 description: Microsoft Defender for Endpoint で誤検知または誤検知を処理する方法について説明します。
-keywords: ウイルス対策、例外、除外、Defender atp、誤検知、偽陰性、ブロックされたファイル、ブロックされた URL
+keywords: ウイルス対策、例外、除外、Microsoft Defender for Endpoint、誤検知、偽陰性、ブロックされたファイル、ブロックされた URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759872"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933591"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -440,7 +440,7 @@ Microsoft Endpoint Manager を[使用して PUA](/mem/endpoint-manager-overview)
 > [!IMPORTANT]
 > 自動調査と *修復には、* 完全自動化を使用することをお勧めします。 誤検知のため、これらの機能をオフにしない。 代わりに [、"許可"](#indicators-for-microsoft-defender-for-endpoint)インジケーターを使用して例外を定義し、自動的に適切なアクションを実行するために自動調査と修復を設定します。 この [ガイダンスに従って](automation-levels.md#levels-of-automation) 、セキュリティ運用チームが処理する必要があるアラートの数を減らすのに役立ちます。 
 
-## <a name="still-need-help"></a>さらにヘルプが必要ですか?
+## <a name="still-need-help"></a>さらにサポートが必要な場合
 
 この記事のすべての手順を実行し、引き続きヘルプが必要な場合は、テクニカル サポートにお問い合わせください。
 

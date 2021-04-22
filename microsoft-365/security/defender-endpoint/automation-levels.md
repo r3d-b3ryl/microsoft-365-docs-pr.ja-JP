@@ -1,7 +1,7 @@
 ---
 title: 自動調査と修復の自動化レベル
 description: オートメーション レベルの概要と、Microsoft Defender for Endpoint での動作の概要を確認する
-keywords: 自動化された、 調査、 レベル、 defender atp
+keywords: 自動化された、 調査、 レベル、 Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: bb3e8c468983622d780ca185640c2816316bfd48
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 013e01e9f84cae01258afc6ba139b7b5ada5912f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165323"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934119"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自動調査および修復機能の自動化レベル
 
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint の自動調査および修復 (AIR) 機能は�
 |オートメーション レベル | 説明|
 |:---|:---|
 |**完全 - 脅威を自動的に修復する** <br/>(フル オートメーションとも *呼ばれます*)| 完全な自動化により、修復アクションは自動的に実行されます。 実行される修復アクションはすべて、[履歴] タブの [[アクション](auto-investigation-action-center.md) センター] で **表示** できます。必要に応じて、修復アクションを元に戻すことができます。<br/><br/>**_完全な自動化は推奨_* され、Microsoft Defender for Endpoint で 2020 年 8 月 16 日以降に作成されたテナントでは既定で選択され、デバイス グループがまだ定義されていません。*  |
-|**Semi - 修復の承認が必要** <br/>(セミオートメーション *とも呼ばれます*)| このレベルのセミオートメーションでは、修復アクションに対して承認 *が* 必要です。 このような保留中のアクションは、[保留中] タブの [[](auto-investigation-action-center.md)アクション センター] で表示および **承認** できます。<br/><br/>*このレベルのセミオートメーションは、Microsoft Defender ATP を使用して 2020 年 8 月 16 日より前に作成されたテナントに対して既定で選択され、デバイス グループは定義されていません。*|
+|**Semi - 修復の承認が必要** <br/>(セミオートメーション *とも呼ばれます*)| このレベルのセミオートメーションでは、修復アクションに対して承認 *が* 必要です。 このような保留中のアクションは、[保留中] タブの [[](auto-investigation-action-center.md)アクション センター] で表示および **承認** できます。<br/><br/>*このレベルのセミオートメーションは、Microsoft Defender for Endpoint で 2020 年 8 月 16 日より前に作成されたテナントに対して既定で選択され、デバイス グループは定義されていません。*|
 |**Semi - コア フォルダー修復の承認が必要** <br/>(また、セミオートメーション *の一種*)  | このレベルのセミオートメーションでは、コア フォルダー内のファイルまたは実行可能ファイルに必要な修復アクションに対して承認が必要です。 コア フォルダーには、Windows () などのオペレーティング システム ディレクトリ **が含** まれます `\windows\*` 。<br/><br/>修復アクションは、他の (コア以外の) フォルダーにあるファイルまたは実行可能ファイルに対して自動的に実行できます。 <br/><br/>コア フォルダー内のファイルまたは実行可能ファイルの保留中のアクションは、[保留中] タブの [](auto-investigation-action-center.md)[アクション センター] で表示および **承認** できます。 <br/><br/>他のフォルダーのファイルまたは実行可能ファイルに対して実行されたアクションは、[アクション [](auto-investigation-action-center.md)センター] の [履歴] タブ **で表示** できます。 |
 |**Semi - 一時フォルダー以外の修復の承認が必要** <br/>(また、セミオートメーション *の一種*)| このレベルのセミオートメーションでは、一時フォルダーに含まれるファイルまたは実行可能ファイルに必要な修復アクションに対して承認 *が* 必要です。 <br/><br/>一時フォルダーには、次の例を含めできます。 <br/>- `\users\*\appdata\local\temp\*`<br/>- `\documents and settings\*\local settings\temp\*` <br/>- `\documents and settings\*\local settings\temporary\*`<br/>- `\windows\temp\*`<br/>- `\users\*\downloads\*`<br/>- `\program files\` <br/>- `\program files (x86)\*`<br/>- `\documents and settings\*\users\*`<br/><br/>修復アクションは、一時フォルダー内のファイルまたは実行可能ファイルに対して自動的に実行できます。 <br/><br/>一時フォルダーに含めされていないファイルまたは実行可能ファイルの保留中のアクションは、[保留中] タブの [](auto-investigation-action-center.md)[アクション センター] で表示および **承認** できます。<br/><br/>一時フォルダー内のファイルまたは実行可能ファイルに対して実行されたアクションは、[履歴] タブ [](auto-investigation-action-center.md)の [アクション センター] で表示および **承認** できます。   |
 |**自動応答なし** <br/>(オートメーションなしとも *呼ばれます*) | 自動化を行う必要がない場合、組織のデバイスでは自動調査は実行されません。 その結果、自動調査の結果として修復アクションや保留中は実行されません。 ただし、ウイルス対策機能と次世代保護機能[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)の構成方法によっては、望ましくない可能性のあるアプリケーションからの保護など、他の脅威保護機能が有効になる場合があります。<br/><br/>***組織の *デバイスの* セキュリティ** 体制が低下しますので、自動化なしオプションの使用は推奨されません。 [オートメーション レベルを完全オートメーション (または](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups)少なくとも半オートメーション) *に設定する場合を検討してください。 |

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint for Mac の更新プログラムを展開する
-description: エンタープライズ環境での Microsoft Defender for Endpoint for Mac の更新プログラムを制御します。
-keywords: microsoft、Defender、atp、mac、更新プログラム、展開
+title: Microsoft Defender for Endpoint の更新プログラムを Mac に展開する
+description: エンタープライズ環境での Microsoft Defender for Endpoint on Mac の更新プログラムを制御します。
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, updates, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860317"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934503"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 

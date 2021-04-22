@@ -1,7 +1,7 @@
 ---
 title: デバイスを Microsoft Defender for Endpoint サービスにオンボードする
 description: Windows 10 デバイス、サーバー、Windows 以外のデバイスをオンボードし、検出テストを実行する方法について学習します。
-keywords: オンボーディング、エンドポイントオンボーディング用 Microsoft Defender、Windows atp オンボーディング、sccm、グループ ポリシー、mdm、ローカル スクリプト、検出テスト
+keywords: オンボーディング、Microsoft Defender for Endpoint オンボーディング、sccm、グループ ポリシー、mdm、ローカル スクリプト、検出テスト
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 05cc5770df5bb05687bb8be69ad89a7abd6875ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861377"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933555"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>デバイスを Microsoft Defender for Endpoint サービスにオンボードする
 

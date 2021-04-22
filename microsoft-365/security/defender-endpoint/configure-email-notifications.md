@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint でアラート通知を構成する
 description: Microsoft Defender for Endpoint を使用すると、重大度や他の条件に基づいて、セキュリティアラートの電子メール通知設定を構成できます。
-keywords: 電子メール通知、アラート通知の構成、エンドポイント用 Microsoft Defender、エンドポイント通知用 microsoft Defender、エンドポイント通知用 microsoft Defender、Windows 10 enterprise、Windows 10 Education
+keywords: 電子メール通知、構成アラート通知、Microsoft Defender for Endpoint、Microsoft Defender for Endpoint 通知、Microsoft Defender for Endpoint アラート、Windows 10 enterprise、Windows 10 Education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893630"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933951"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でアラート通知を構成する
 

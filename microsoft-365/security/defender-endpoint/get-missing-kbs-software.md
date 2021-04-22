@@ -1,7 +1,7 @@
 ---
 title: ソフトウェア ID で不足している KB を取得する
 description: ソフトウェア ID によって不足しているセキュリティ更新プログラムを取得します。
-keywords: apis、 graph api, supported apis, get, list, file, information, software ID, threat & 脆弱性管理 api, mdatp tvm api
+keywords: apis、 graph api, supported apis, get, list, file, information, software id, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e5d84a3eadab85713779dd70848bc11d27484dcc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 25ac8ce2c9fb17b2576f86dae1da984865b19018
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499390"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933891"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>ソフトウェア ID で不足している KB を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "51499390"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

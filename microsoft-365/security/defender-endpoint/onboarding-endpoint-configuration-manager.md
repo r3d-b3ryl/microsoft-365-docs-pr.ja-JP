@@ -1,7 +1,7 @@
 ---
 title: Microsoft Endpoint Configuration Manager を使用したオンボーディング
 description: Microsoft Endpoint Configuration Manager を使用して Microsoft Defender for Endpoint にオンボードする方法について説明します。
-keywords: オンボーディング、構成、展開、展開、エンドポイント構成マネージャー、mdatp、高度な脅威保護、コレクションの作成、エンドポイント検出応答、次世代保護、攻撃表面の縮小、Microsoft エンドポイント構成マネージャー
+keywords: オンボーディング、構成、展開、展開、エンドポイント構成マネージャー、Microsoft Defender for Endpoint、コレクション作成、エンドポイント検出応答、次世代保護、攻撃表面の縮小、Microsoft エンドポイント構成マネージャー
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 84273ce3e060eb86ee246a5cc6a8cae3cba743b5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186403"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934491"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用したオンボーディング
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186403"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 この記事は展開ガイドの一部であり、オンボーディング方法の例として機能します。 
@@ -117,9 +117,9 @@ Microsoft Endpoint Configuration Manager を使用してエンドポイントを
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>手順 2: Microsoft Defender for Endpoint の機能を構成する 
 このセクションでは、Windows デバイスで Microsoft Endpoint Configuration Manager を使用して次の機能を構成する方法について説明します。
 
-- [**エンドポイントの検出および応答**](#endpoint-detection-and-response)
+- [**エンドポイントでの検出と対応**](#endpoint-detection-and-response)
 - [**次世代の保護**](#next-generation-protection)
-- [**攻撃面の縮小**](#attack-surface-reduction)
+- [**攻撃面の減少**](#attack-surface-reduction)
 
 
 ### <a name="endpoint-detection-and-response"></a>エンドポイントの検出および応答
@@ -389,4 +389,4 @@ ASR ルールがエンドポイントに正しく適用されているかどう�
 監査モードでフォルダー アクセスの制御が正常に構成されました。
 
 ## <a name="related-topic"></a>関連トピック
-- [Microsoft Endpoint Manager を使用したオンボーディング](onboarding-endpoint-manager.md)
+- [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)

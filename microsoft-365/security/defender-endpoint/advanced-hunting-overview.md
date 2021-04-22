@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP での高度な狩猟の概要
-description: Microsoft Defender ATP の脅威検出機能を使用して、ネットワーク内の脅威と弱点を見つけるクエリを作成する
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、mdatp、microsoft Defender atp、wdatp、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、タイム ゾーン、UTC
+title: エンドポイント向け Microsoft Defender での高度な検索の概要
+description: Microsoft Defender for Endpoint の脅威検出機能を使用して、ネットワーク内の脅威と弱点を検出するクエリを作成する
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、エンドポイント用 Microsoft Defender、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、タイム ゾーン、UTC
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e5f29874ae42f2b82906a5ac0d2e615009d499f
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 114c0192f77411016fcb13ec2b912f4440ffa6e0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615485"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934359"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>高度な狩猟で脅威を積極的に探す
 

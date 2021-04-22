@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 検出 API フィールド
+title: Microsoft Defender for Endpoint detections API フィールド
 description: 検出 API フィールドが Microsoft Defender セキュリティ センターの値にマップされる方法を理解する
 keywords: 検出、検出フィールド、フィールド、API、フィールド、プル検出、rest api、要求、応答
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e304d731409c4cd0fac722d492b3fab5ed28fd35
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164883"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933639"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender for Endpoint detections API フィールド
 
@@ -31,7 +31,7 @@ ms.locfileid: "51164883"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
 検出 API の一部として公開されるデータ フィールドと、そのデータ フィールドが Microsoft Defender セキュリティ センターにマップされる方法について説明します。
 
@@ -105,4 +105,4 @@ ms.locfileid: "51164883"
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)
 - [REST API を使用したエンドポイント検出用の Microsoft Defender のプル](pull-alerts-using-rest-api.md)
-- [SIEM ツールの統合に関する問題のトラブルシューティング](troubleshoot-siem.md)
+- [SIEM ツール統合に関する問題のトラブルシューティング](troubleshoot-siem.md)

@@ -1,7 +1,7 @@
 ---
-title: Id でソフトウェアを取得する
+title: ID でソフトウェアを取得する
 description: デバイス グループ別の露出スコアの一覧を取得します。
-keywords: apis, graph api, supported apis, get, software, mdatp tvm api
+keywords: apis, graph api, supported api, get, software, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,20 +14,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 57d6ccd2c5387d478b75cfb6fb32a5b1052e491c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 31203e83570dbeb2404c9f1578301b5d6c18223c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198591"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934311"
 ---
-# <a name="get-software-by-id"></a>Id でソフトウェアを取得する
+# <a name="get-software-by-id"></a>ID でソフトウェアを取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,9 +52,9 @@ GET /api/Software/{Id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前        | 種類 | 説明
+| 名前        | 型 | 説明
 |:--------------|:-------|:--------------|
-| Authorization | 文字列 | ベアラー {token}。**必須**。
+| Authorization | String | ベアラー {token}。**必須**。
 
 ## <a name="request-body"></a>要求本文
 Empty

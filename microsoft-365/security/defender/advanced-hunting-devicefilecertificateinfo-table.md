@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの DeviceFileCertificateInfo テーブル
 description: 高度なハンティング スキーマの DeviceFileCertificateInfo テーブルのファイル署名情報について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、デジタル署名、証明書、ファイル署名、DeviceFileCertificateInfo
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、デジタル署名、証明書、ファイル署名、DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eafe84e2d08ce15fe2c3a7cbfafb0822a2f38666
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 272896c745386f13fc0e36301c5c16f5f24dbb42
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498629"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933675"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -42,22 +42,22 @@ ms.locfileid: "51498629"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `DeviceId` | 文字列 | コンピューターの一意識別子 |
-| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `DeviceId` | string | コンピューターの一意識別子 |
+| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| `IsSigned` | boolean | ファイルが署名されているかどうかを示します。 |
-| `SignatureType` | 文字列 | 署名情報をファイル自体に埋め込みコンテンツとして読み取ったか、外部カタログ ファイルから読み取ったかを示します。 |
-| `Signer` | 文字列 | ファイルの署名者に関する情報 |
-| `SignerHash` | 文字列 | 署名者を識別する一意のハッシュ値 |
-| `Issuer` | 文字列 | 発行元証明機関 (CA) に関する情報 |
-| `IssuerHash` | 文字列 | 発行元証明機関 (CA) を識別する一意のハッシュ値 |
-| `CertificateSerialNumber` | 文字列 | 発行元証明機関 (CA) に固有の証明書の識別子 |
-| `CrlDistributionPointUrls` | 文字列 |  証明書と証明書失効リスト (CRL) を含むネットワーク共有の URL を示す JSON 配列 |
+| `IsSigned` | ブール値 | ファイルが署名されているかどうかを示します。 |
+| `SignatureType` | string | 署名情報をファイル自体に埋め込みコンテンツとして読み取ったか、外部カタログ ファイルから読み取ったかを示します。 |
+| `Signer` | string | ファイルの署名者に関する情報 |
+| `SignerHash` | string | 署名者を識別する一意のハッシュ値 |
+| `Issuer` | string | 発行元証明機関 (CA) に関する情報 |
+| `IssuerHash` | string | 発行元証明機関 (CA) を識別する一意のハッシュ値 |
+| `CertificateSerialNumber` | string | 発行元証明機関 (CA) に固有の証明書の識別子 |
+| `CrlDistributionPointUrls` | string |  証明書と証明書失効リスト (CRL) を含むネットワーク共有の URL を示す JSON 配列 |
 | `CertificateCreationTime` | 日付型 | 証明書が作成された日時 |
 | `CertificateExpirationTime` | 日付型 | 証明書の有効期限が設定されている日時 |
 | `CertificateCountersignatureTime` | 日付型 | 証明書が署名された日時 |
-| `IsTrusted` | boolean | 不明なルート証明書情報、無効な署名、失効した証明書、その他の疑いがある属性をチェックする WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。 |
-| `IsRootSignerMicrosoft` | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
+| `IsTrusted` | ブール値 | 不明なルート証明書情報、無効な署名、失効した証明書、その他の疑いがある属性をチェックする WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。 |
+| `IsRootSignerMicrosoft` | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 | 
 
 ## <a name="related-topics"></a>関連項目

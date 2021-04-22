@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP アラート キューの表示と整理
-description: Microsoft Defender ATP アラート キューの動作と、アラートの一覧を並べ替えてフィルター処理する方法について説明します。
+title: Microsoft Defender for Endpoint Alerts キューの表示と整理
+description: Microsoft Defender for Endpoint アラート キューの動作と、アラートの一覧を並べ替えてフィルター処理する方法について説明します。
 keywords: アラート、キュー、アラート キュー、並べ替え、順序、フィルター、アラートの管理、新規、進行中、解決済み、最新、キュー内の時間、重大度、期間、Microsoft 脅威専門家のアラート
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: e1c85db5afac70ec4f2520eed55dcc4f3773fd03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067931"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934335"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Microsoft Defender for Endpoint Alerts キューの表示と整理
 
@@ -31,7 +31,7 @@ ms.locfileid: "51067931"
 **適用対象:**
 - [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
 アラート **キューには** 、ネットワーク内のデバイスからフラグが設定されたアラートの一覧が表示されます。 既定では、キューには、グループ化されたビューで過去 30 日間に表示されたアラートが表示されます。 最新のアラートがリストの上部に表示され、最新のアラートを最初に確認できます。
 
@@ -61,7 +61,7 @@ ms.locfileid: "51067931"
 高 </br>(赤) | 高度な永続的な脅威 (APT) に関連付けられている一般的なアラート。 これらのアラートは、デバイスに与える損害の重大度が高いので、高いリスクを示します。 例として、資格情報の盗難ツールアクティビティ、グループに関連付けされていないランサムウェア アクティビティ、セキュリティ センサーの改ざん、または人間の敵を示す悪意のあるアクティビティがあります。
 中 </br>(オレンジ) | 高度な永続的脅威 (APT) の一部である可能性がある侵害後の動作に対するエンドポイント検出と応答からのアラート。 これには、攻撃段階に典型的な観察された動作、異常なレジストリの変更、疑わしいファイルの実行などがあります。 一部は内部セキュリティ テストの一部ですが、高度な攻撃の一部である可能性も考え、調査が必要です。
 低 </br>(黄色) | 一般的なマルウェアに関連する脅威に関するアラート。 たとえば、ハッキング ツール、マルウェア以外のハッキング ツール (探索コマンドの実行、ログのクリアなど) は、組織を対象とする高度な脅威を示す場合が多くはありません。 また、組織内のユーザーによる分離されたセキュリティ ツールのテストから行う場合があります。
-Informational </br>(灰色) | ネットワークに悪影響を及ぼすとは見なされない可能性があるが、潜在的なセキュリティ問題に関する組織のセキュリティ認識を推進する可能性があるアラート。
+情報 </br>(灰色) | ネットワークに悪影響を及ぼすとは見なされない可能性があるが、潜在的なセキュリティ問題に関する組織のセキュリティ認識を推進する可能性があるアラート。
 
 #### <a name="understanding-alert-severity"></a>アラートの重大度について
 

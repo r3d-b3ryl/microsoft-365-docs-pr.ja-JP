@@ -1,7 +1,7 @@
 ---
 title: ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-keywords: ローカル スクリプトを使用したデバイスの構成、デバイス管理、Windows ATP デバイスの構成、Microsoft Defender for Endpoint デバイスの構成
+keywords: ローカル スクリプトを使用してデバイスを構成し、デバイス管理を行い、Microsoft Defender for Endpoint デバイスを構成する
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 77473df9cc3e0e98efac8eaacd0a51b551bc3258
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 056268ed093d371d39a6136dd0b272c12ab6f9d7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067867"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933915"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 
@@ -30,7 +30,7 @@ ms.locfileid: "51067867"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 また、個々のデバイスを Defender for Endpoint に手動でオンボードすることもできます。 ネットワーク内のすべてのデバイスのオンボーディングにコミットする前に、サービスをテストするときに最初にこれを行う必要があります。
 
@@ -39,7 +39,7 @@ ms.locfileid: "51067867"
 >
 > 大規模に展開するには、他の [展開オプションを使用します](configure-endpoints.md)。 たとえば、グループ ポリシーを使用してオンボード Windows 10 デバイスで使用可能なスクリプトを使用して、オンボーディング スクリプトを実稼働 [環境の 10](configure-endpoints-gp.md)台以上のデバイスに展開できます。
 
-## <a name="onboard-devices"></a>オンボード デバイス 
+## <a name="onboard-devices"></a>デバイスのオンボード 
 
 [![さまざまな展開パスを示す PDF のイメージ](images/onboard-script.png)](images/onboard-script.png#lightbox)
 

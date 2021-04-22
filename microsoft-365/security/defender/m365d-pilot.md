@@ -1,7 +1,7 @@
 ---
 title: パイロット Microsoft 365 Defender プロジェクトを実行する
 description: Microsoft 365 Defender のメリットと導入を効果的に判断するには、パイロット Microsoft 365 Defender プロジェクトを実稼働環境で実行します。
-keywords: Microsoft Threat Protection パイロット、パイロット Microsoft Threat Protection プロジェクトの実行、実稼働での Microsoft Threat Protection の評価、Microsoft Threat Protection パイロット プロジェクト、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
+keywords: Microsoft 365 Defender パイロット、パイロット Microsoft 365 Defender プロジェクトの実行、Microsoft 365 Defender の実稼働での評価、Microsoft 365 Defender パイロット プロジェクト、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度なハンティング
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1dd310d962cbce2b339cf09d5be6317c227d3f13
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b1616b39597a90ff8e8f7b4c92f29f75c62fea18
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068251"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934431"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>パイロット Microsoft 365 Defender プロジェクトを実行する 
 
@@ -50,9 +50,9 @@ ms.locfileid: "51068251"
 このガイドでは、Microsoft 365 Defender の概要とパイロット プロジェクトのセットアップ方法に関する手順を説明します。 
 
 Microsoft 365 Defender は、エンドポイント、ID、電子メール、およびアプリケーション全体の保護、検出、防止、調査、および応答をネイティブに調整し、高度な攻撃に対する統合保護を提供する統合された侵害前および侵害後のエンタープライズ防御スイートです。 これは、次の機能を 1 つのセキュリティ ソリューションに組み合わせて調整することで行います。
-  - Microsoft Defender for Endpoint、Microsoft Defender Advanced Threat Protection (エンドポイント) の新しい名前
-  - Microsoft Defender for Office 365、365 ATP のOffice名 (電子メール) 
-  - Microsoft Defender for Identity、Azure ATP の新しい名前 (ID) 
+  - エンドポイント用 Microsoft Defender (エンドポイント)
+  - Microsoft Defender for Office 365 (メール) 
+  - Microsoft Defender for Identity (IDENTITY) 
   - Microsoft Cloud App Security (アプリ)
 
 ![イメージ of_Microsoftユーザー向け 365 Defender ソリューション、Microsoft Defender for Identity、エンドポイント用 Microsoft Defender for Endpoint、クラウド アプリ、Microsoft Cloud App Security、およびデータの場合、Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)

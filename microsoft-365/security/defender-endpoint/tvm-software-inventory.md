@@ -1,7 +1,7 @@
 ---
 title: 脅威と脆弱性管理のソフトウェア インベントリ
 description: Microsoft Defender for Endpoint の脅威と脆弱性管理のソフトウェア インベントリ ページには、ソフトウェアで検出された脆弱性と脆弱性の数が表示されます。
-keywords: 脅威と脆弱性の管理、エンドポイント用 Microsoft Defender、エンドポイント ソフトウェア インベントリ用 Microsoft Defender、mdatp 脅威 & 脆弱性管理、mdatp 脅威 & 脆弱性管理ソフトウェア インベントリ、mdatp tvm ソフトウェア インベントリ、tvm ソフトウェア インベントリ
+keywords: 脅威と脆弱性の管理, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint ソフトウェア インベントリ, Microsoft Defender for Endpoint threat & の脆弱性管理, Microsoft Defender for Endpoint Threat & の脆弱性管理ソフトウェア インベントリ, Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4ceb7cc4d39dbddbb4cd325491c16f4503bfc52
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0d270760cfed965c8190668afcdb1cc25223d2b1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689379"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933723"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>ソフトウェア インベントリ - 脅威と脆弱性の管理
 

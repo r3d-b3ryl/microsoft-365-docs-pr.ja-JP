@@ -1,7 +1,7 @@
 ---
 title: Intune を使用して Microsoft Defender for Endpoint を管理する
 description: Intune を使用して Microsoft Defender for Endpoint を管理する方法について説明します。
-keywords: 移行後、管理、運用、メンテナンス、使用率、Intune、Windows Defender Advanced Threat Protection、atp、edr
+keywords: 移行後、管理、運用、メンテナンス、使用率、Intune、Microsoft Defender for Endpoint、edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 01936eb323060190f2e785df04c3d317f7999d08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d8396c352e593f9922b11e23119f7d9718eaf752
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185887"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934227"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Intune を使用してエンドポイント用 Microsoft Defender を管理する
 
@@ -35,7 +35,7 @@ ms.locfileid: "51185887"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft Intune [(Intune)](https://docs.microsoft.com/mem)を含む Microsoft Endpoint Manager を使用して、デバイス (エンドポイントとも呼ばれます) の組織の脅威保護機能を管理することをお勧めします。 [エンドポイント マネージャーの詳細については、次のページを参照してください](https://docs.microsoft.com/mem/endpoint-manager-overview)。
 
@@ -61,7 +61,7 @@ Microsoft Intune [(Intune)](https://docs.microsoft.com/mem)を含む Microsoft E
 
 次の表に、Intune を使用して Microsoft Defender for Endpoint を構成するために実行できるさまざまなタスクを示します。 すべてを一度に構成する必要は一度に行う必要があります。タスクを選択し、対応するリソースを読み取り、続行します。
 
-|タスク  |追加情報  |
+|Task  |追加情報  |
 |---------|---------|
 |**Intune を使用して組織のデバイスを管理** して、それらのデバイスとデバイスに保存されているデータを保護する     |[Microsoft Intune でデバイスを保護する](https://docs.microsoft.com/mem/intune/protect/device-protect)         |
 |**Microsoft Defender for Endpoint と Intune をモバイル** 脅威防御ソリューションとして統合する <br/>*(Windows 10 以降を実行している Android デバイスおよびデバイスの場合)*   |[Intune で条件付きアクセスを使用して Microsoft Defender for Endpoint のコンプライアンスを適用する](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)         |

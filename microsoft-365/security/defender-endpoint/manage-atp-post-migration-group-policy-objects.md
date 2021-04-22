@@ -1,7 +1,7 @@
 ---
 title: グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を管理する
 description: グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を管理する方法について説明します。
-keywords: 移行後、管理、運用、メンテナンス、使用率、PowerShell、Windows Defender Advanced Threat Protection、atp、edr
+keywords: 移行後、管理、運用、メンテナンス、使用率、PowerShell、Microsoft Defender for Endpoint、edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 6d10bd932d9414f1460076d3fe7ca8dbed8041a6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1b8f2e7c7435f2161f7261722795b35ca848ec2f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185659"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934239"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を管理する
 
@@ -35,7 +35,7 @@ ms.locfileid: "51185659"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 > [!NOTE]
@@ -47,12 +47,12 @@ Azure Active Directory ドメイン サービスのグループ ポリシー オ
 
 次の表に、グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を構成するために実行できるさまざまなタスクを示します。
 
-|タスク  |追加情報  |
+|Task  |追加情報  |
 |---------|---------|
 |**ユーザー オブジェクトとコンピューター オブジェクトの設定を管理する** <br/><br/>*組み込みのグループ ポリシー オブジェクトをカスタマイズするか、組織のニーズに合わせてカスタム グループ ポリシー オブジェクトと組織単位を作成します。*     |[Azure Active Directory ドメイン サービス管理ドメインでのグループ ポリシーの管理](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy)   |
 |**Microsoft Defender ウイルス対策の構成** <br/><br/>*組織のデバイス&ポリシー設定、除外、修復、スケジュールされたスキャン (エンドポイントとも呼ばれます) などのウイルス対策機能を構成します。*   |[グループ ポリシー設定を使用して Microsoft Defender ウイルス対策を構成および管理する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/>[グループ ポリシーを使用してクラウド配信の保護を有効にする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)      |
 |**組織の攻撃表面の縮小ルールを管理する** <br/><br/>*フォルダー内のファイルを除外するか、&デバイスに表示される通知通知にカスタム テキストを追加して、攻撃表面の縮小ルールをカスタマイズします。* |[グループ ポリシー オブジェクトを使用して攻撃表面の縮小ルールをカスタマイズする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders) |
-|**エクスプロイト保護の設定を管理する**<br/><br/>*エクスプロイト保護設定をカスタマイズし、構成ファイルをインポートしてから、グループ ポリシーを使用してその構成ファイルを展開できます。*  |[エクスプロイト保護の設定をカスタマイズする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/>[エクスプロイト保護構成のインポート、エクスポート、および展開](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml)<br/><br/>[グループ ポリシーを使用して構成を配布する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
+|**エクスプロイト保護の設定を管理する**<br/><br/>*エクスプロイト保護設定をカスタマイズし、構成ファイルをインポートしてから、グループ ポリシーを使用してその構成ファイルを展開できます。*  |[エクスプロイト保護の設定をカスタマイズする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/>[エクスプロイト保護構成のインポート、エクスポート、展開](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml)<br/><br/>[グループ ポリシーを使用して構成を配布する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
 |**ネットワーク保護を有効** にして、従業員が悪意のあるコンテンツをインターネット上で使用するアプリを使用するのを防ぐ <br/><br/>*テスト環境で [ネットワーク保護のために](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-network-protection) 監査モードを最初に使用して、展開前にブロックされるアプリを確認することをお勧めします。* |[グループ ポリシーを使用してネットワーク保護を有効にする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)  |
 |**ランサムウェアから保護するためにフォルダー** アクセスの制御を構成する <br/><br/>*[フォルダー アクセスの制御](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) は、アンチランソイエムウェア保護とも呼ばれます。*  |[グループ ポリシーを使用してフォルダー アクセスの制御を有効にする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy) |
 |**インターネット上の悪意のあるサイト** やファイルから保護するために Microsoft Defender SmartScreen を構成します。  |[グループ ポリシーを使用して Microsoft Defender SmartScreen グループ ポリシーとモバイル デバイス管理 (MDM) 設定を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)  |

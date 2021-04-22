@@ -1,7 +1,7 @@
 ---
 title: セキュリティに関する推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 description: 脅威と脆弱性管理のセキュリティに関する推奨事項の例外を作成および監視します。
-keywords: エンドポイント tvm 修復、mdatp tvm、脅威と脆弱性管理、脅威 & の脆弱性管理、脅威 & の脆弱性管理修復、tvm 修復 intune、tvm 修復 sccm の microsoft Defender
+keywords: Microsoft Defender for Endpoint tvm 修復、Microsoft Defender for Endpoint tvm、脅威と脆弱性管理、脅威 & 脆弱性管理、脅威 & 脆弱性管理修復、tvm 修復 intune、tvm 修復 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1af8e5ec9d3aef560c739de5212e8118cf89cd7a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689415"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933747"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 

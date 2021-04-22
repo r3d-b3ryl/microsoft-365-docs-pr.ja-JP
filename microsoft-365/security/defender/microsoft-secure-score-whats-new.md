@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 5a868904a43e17952368e097c0b0e963252d5bed
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570365"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933867"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -50,7 +50,7 @@ Microsoft Teams のお客様は、Secure Score の新しい改善アクション
 
 ## <a name="december-2020"></a>2020年12月
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Microsoft Defender for Endpoint (以前は Microsoft Defender ATP) に 6 つのアカウント関連の改善アクションを追加しました。
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に 6 つのアカウント関連の改善アクションを追加しました。
 
 - '最小パスワード長' を '14 文字以上' に設定する
 - [パスワード履歴の適用] を [24 以上のパスワード] に設定する
@@ -65,7 +65,7 @@ Microsoft Teams のお客様は、Secure Score の新しい改善アクション
 
 [ServiceNow の共有] にアクセスして Secure Score を使用して **ServiceNow チケット** >作成する機能は使用できなくなりました。 次の手順を決定する間、フィードバックと継続的なサポートに感謝します。
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Microsoft Defender for Endpoint (以前は Microsoft Defender ATP) に 3 つのサービス関連の改善アクションを追加しました。
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に 3 つのサービス関連の改善アクションを追加しました。
 
 - Windows サービスのクォートされていないサービス パスを修正する
 - サービスの実行可能パスを共通の保護された場所に変更する

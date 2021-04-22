@@ -1,7 +1,7 @@
 ---
 title: グループ ポリシーを使用して Windows 10 デバイスを Microsoft Defender for Endpoint にオンボードする
 description: グループ ポリシーを使用して、構成パッケージを Windows 10 デバイスに展開して、サービスにオンボードします。
-keywords: グループ ポリシーを使用したデバイスの構成、デバイス管理、Windows ATP デバイスの構成、Microsoft Defender for Endpoint デバイスのオンボード、グループ ポリシー
+keywords: グループ ポリシーを使用したデバイスの構成、デバイス管理、エンドポイント デバイス用 Microsoft Defender の構成、Microsoft Defender for Endpoint デバイスのオンボード、グループ ポリシー
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: b8f56c8f2ba92073ea7ae9464f199d9c900b932f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893636"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933963"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシーを使用した Windows 10 デバイスのオンボード 
 

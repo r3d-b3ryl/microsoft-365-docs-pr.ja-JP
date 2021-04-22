@@ -1,7 +1,7 @@
 ---
 title: 脅威と脆弱性の管理によるセキュリティに関する推奨事項
 description: 脅威、侵害される可能性、および脅威と脆弱性の管理における価値によって優先順位付けされた、アクション可能なセキュリティの推奨事項を取得します。
-keywords: 脅威と脆弱性の管理、mdatp tvm セキュリティの推奨事項、サイバーセキュリティの推奨事項、アクション可能なセキュリティの推奨事項
+keywords: 脅威と脆弱性の管理、Microsoft Defender for Endpoint tvm セキュリティ推奨事項、サイバーセキュリティの推奨事項、アクション可能なセキュリティの推奨事項
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97d496271c1ef7185419f7d39956da0429f070aa
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: af22bac911339de9c2e02df24a77c1889a33d43a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500486"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933735"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項 - 脅威と脆弱性の管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500486"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 組織内で特定されたサイバーセキュリティの弱点は、アクション可能なセキュリティ推奨事項にマップされ、影響によって優先順位が付けされます。 優先順位付けされた推奨事項は、脆弱性を軽減または修復し、コンプライアンスを推進する時間を短縮するのに役立ちます。
 

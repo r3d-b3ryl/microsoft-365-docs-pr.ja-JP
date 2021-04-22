@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマリファレンス
 description: 高度な検索スキーマのテーブルについて説明し、脅威検出クエリを実行できるデータを理解します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、mdatp、microsoft Defender atp、wdatp 検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、エンドポイント用 Microsoft Defender、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 38fe205227089acaec1ba0cbecffdfb76acf6a24
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: b35cc32f776083b58bc6467be43508a805d92d9c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615473"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934347"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の高度なハンティング スキーマを理解する
 

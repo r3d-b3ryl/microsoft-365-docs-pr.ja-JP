@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: a8b7268e89470a85a34015967b69abb1818fe64f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222656"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933843"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>イベント ビューアーを使用してイベントとエラーを確認する
 
@@ -34,7 +34,7 @@ ms.locfileid: "51222656"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 イベントの ID は、個々のデバイスの [イベント ビューアー](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) で確認できます。
 
@@ -59,7 +59,7 @@ ms.locfileid: "51222656"
 <th>イベント ID</th>
 <th>メッセージ</th>
 <th>説明</th>
-<th>アクション</th>
+<th>Action</th>
 </tr>
 <tr>
 <td>1</td>
@@ -301,13 +301,13 @@ ms.locfileid: "51222656"
 </tr>
 <tr>
 <td>42</td>
-<td>Microsoft Defender for Endpoint WDATP コンポーネントは、アクションの実行に失敗しました。 コンポーネント: %1、Action: %2、例外の種類: %3、例外メッセージ: %4</td>
+<td>Microsoft Defender for Endpoint コンポーネントは、アクションの実行に失敗しました。 コンポーネント: %1、Action: %2、例外の種類: %3、例外メッセージ: %4</td>
 <td>内部エラー。 サービスの開始に失敗しました。</td>
 <td>このエラーが解決しない場合は、サポートにお問い合わせください。</td>
 </tr>
 <tr>
 <td>43</td>
-<td>Microsoft Defender for Endpoint WDATP コンポーネントは、アクションの実行に失敗しました。 コンポーネント: %1、Action: %2、例外の種類: %3、例外エラー: %4、例外メッセージ: %5</td>
+<td>Microsoft Defender for Endpoint コンポーネントは、アクションの実行に失敗しました。 コンポーネント: %1、Action: %2、例外の種類: %3、例外エラー: %4、例外メッセージ: %5</td>
 <td>内部エラー。 サービスの開始に失敗しました。</td>
 <td>このエラーが解決しない場合は、サポートにお問い合わせください。</td>
 </tr>
@@ -482,13 +482,13 @@ ms.locfileid: "51222656"
 </tr>
 <tr>
    <td>81</td>
-   <td>Advanced Threat Protection ETW Windows Defenderを作成できなかった。 エラー コード: %1</td>
+   <td>エンドポイント ETW 自動ロガー用 Microsoft Defender の作成に失敗しました。 エラー コード: %1</td>
    <td>ETW セッションの作成に失敗しました。</td>
    <td>デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。</td>
 </tr>
 <tr>
    <td>82</td>
-   <td>Advanced Threat Protection ETW Windows Defenderを削除できなかった。 エラー コード: %1</td>
+   <td>エンドポイント ETW 自動ロガー用 Microsoft Defender の削除に失敗しました。 エラー コード: %1</td>
    <td>ETW セッションの削除に失敗しました。</td>
    <td>サポートにお問い合わせください。</td>
 </tr>
@@ -500,7 +500,7 @@ ms.locfileid: "51222656"
 </tr>
 <tr>
    <td>85</td>
-   <td>Advanced Threat Protection 実行可能ファイルWindows Defenderトリガーに失敗しました。 エラー コード: %1</td>
+   <td>Microsoft Defender for Endpoint 実行可能ファイルのトリガーに失敗しました。 エラー コード: %1</td>
    <td>SenseIR 実行可能ファイルの主演に失敗しました。</td>
    <td>デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。</td>
 </tr>
@@ -554,19 +554,19 @@ ms.locfileid: "51222656"
 </tr>
 <tr>
    <td>94</td>
-   <td>Windows Defender高度な脅威保護の実行可能ファイルが開始されました</td>
+   <td>Microsoft Defender for Endpoint 実行可能ファイルが開始されました</td>
    <td>SenseCE 実行可能ファイルが開始されました。</td>
    <td>通常の動作通知。アクションは必要ありません。</td>
 </tr>
 <tr>
    <td>95</td>
-   <td>Windows Defender Advanced Threat Protection 実行可能ファイルが終了しました</td>
+   <td>Microsoft Defender for Endpoint 実行可能ファイルが終了しました</td>
    <td>SenseCE 実行可能ファイルが終了しました。</td>
    <td>通常の動作通知。アクションは必要ありません。</td>
 </tr>
 <tr>
    <td>96</td>
-   <td>Windows Defender高度な脅威保護 Init が呼び出しました。 結果コード: %2</td>
+   <td>Microsoft Defender for Endpoint Init が呼び出しました。 結果コード: %2</td>
    <td>SenseCE 実行可能ファイルは MCE 初期化と呼ばされています。</td>
    <td>通常の動作通知。アクションは必要ありません。</td>
 </tr>
@@ -590,28 +590,28 @@ ms.locfileid: "51222656"
 </tr>
 <tr>
    <td>100</td>
-   <td>Windows Defender Advanced Threat Protection 実行可能ファイルの起動に失敗しました。 エラー コード: %1</td>
+   <td>Microsoft Defender for Endpoint 実行可能ファイルの起動に失敗しました。 エラー コード: %1</td>
    <td>SenseCE 実行可能ファイルの起動に失敗しました。</td>
    <td>デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。</td>
 </tr>
 <tr>
    <td>102</td>
-   <td>Windows Defender高度な脅威保護ネットワークの検出と応答の実行可能ファイルが開始されました</td>
+   <td>Microsoft Defender for Endpoint Network Detection and Response 実行可能ファイルが開始されました</td>
    <td>SenseNdr 実行可能ファイルが開始されました。</td>
    <td>通常の動作通知。アクションは必要ありません。</td>
 </tr>
 <tr>
    <td>103</td>
-   <td>Windows Defender高度な脅威保護ネットワークの検出と応答の実行可能ファイルが終了しました</td>
+   <td>Microsoft Defender for Endpoint Network Detection and Response 実行可能ファイルが終了しました</td>
    <td>SenseNdr 実行可能ファイルが終了しました。</td>
    <td>通常の動作通知。アクションは必要ありません。</td>
 </tr>
 </tbody>
 </table>
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>関連項目
-- [オンボード Windows 10 デバイス](configure-endpoints.md)
+- [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
-- [エンドポイントの Microsoft Defender のトラブルシューティング](troubleshoot-onboarding.md)
+- [Microsoft Defender for Endpoint のトラブルシューティング](troubleshoot-onboarding.md)

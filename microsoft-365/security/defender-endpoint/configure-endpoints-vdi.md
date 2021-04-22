@@ -1,7 +1,7 @@
 ---
 title: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
 description: 構成パッケージを仮想デスクトップ インフラストラクチャ (VDI) デバイスに展開して、Microsoft Defender for Endpoint サービスにオンボードします。
-keywords: 仮想デスクトップ インフラストラクチャ (VDI) デバイスの構成、vdi、デバイス管理、Windows ATP エンドポイントの構成、Microsoft Defender for Endpoint エンドポイントの構成
+keywords: 仮想デスクトップ インフラストラクチャ (VDI) デバイス、vdi、デバイス管理の構成、エンドポイント用 Microsoft Defender の構成、エンドポイント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 1e970be7967e221c29017be804a98770a778654f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 3872be343e51c4e28f946192256932b048a23791
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892795"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933903"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
 

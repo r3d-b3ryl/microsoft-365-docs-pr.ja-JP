@@ -1,7 +1,7 @@
 ---
 title: Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
 description: Linux 上のエンドポイント用 Microsoft Defender の除外を指定して検証します。 除外は、ファイル、フォルダー、およびプロセスに対して設定できます。
-keywords: microsoft、Defender、atp、Linux、除外、スキャン、ウイルス対策
+keywords: microsoft、defender、Microsoft Defender for Endpoint、Linux、除外、スキャン、ウイルス対策
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903942"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934299"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
 
@@ -38,18 +38,18 @@ ms.locfileid: "51903942"
 この記事では、オンデマンド スキャンに適用される除外を定義する方法、およびリアルタイムの保護と監視について情報を提供します。
 
 > [!IMPORTANT]
-> この記事で説明する除外は、エンドポイントの検出と応答 (EDR) を含む、他の Defender for Endpoint for Linux 機能には適用されません。 この記事で説明する方法を使用して除外するファイルは、EDR アラートなどの検出を引き続きトリガーできます。
+> この記事で説明する除外は、エンドポイントの検出と応答 (EDR) を含む、他の Defender for Endpoint on Linux 機能には適用されません。 この記事で説明する方法を使用して除外するファイルは、EDR アラートなどの検出を引き続きトリガーできます。
 
-特定のファイル、フォルダー、プロセス、およびプロセスで開いたファイルを Defender for Endpoint for Linux スキャンから除外できます。
+特定のファイル、フォルダー、プロセス、およびプロセスが開いたファイルは、Defender for Endpoint on Linux スキャンから除外できます。
 
-除外は、組織に固有またはカスタマイズされたファイルまたはソフトウェアで誤った検出を回避するために役立ちます。 また、Defender for Endpoint for Linux によって引き起こされたパフォーマンスの問題を軽減する場合にも役立ちます。
+除外は、組織に固有またはカスタマイズされたファイルまたはソフトウェアで誤った検出を回避するために役立ちます。 また、Defender for Endpoint on Linux によって引き起こされたパフォーマンスの問題を軽減する場合にも役立ちます。
 
 > [!WARNING]
-> 除外を定義すると、Defender for Endpoint for Linux によって提供される保護が低下します。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
+> 除外を定義すると、Defender for Endpoint on Linux によって提供される保護が低下します。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
 
 ## <a name="supported-exclusion-types"></a>サポートされる除外の種類
 
-次の表は、Defender for Endpoint for Linux でサポートされる除外の種類を示しています。
+次の表に、Defender for Endpoint on Linux でサポートされる除外の種類を示します。
 
 除外 | 定義 | 例
 ---|---|---
@@ -72,7 +72,7 @@ File | 完全パスで識別される特定のファイル | `/var/log/test.log`
 
 ### <a name="from-the-management-console"></a>管理コンソールから
 
-Puppet、Ansible、または別の管理コンソールから除外を構成する方法の詳細については、「Defender for Endpoint for Linux の設定」 [を参照してください](linux-preferences.md)。
+Puppet、Ansible、または別の管理コンソールから除外を構成する方法の詳細については、「Linux での Defender for Endpoint の設定」 [を参照してください](linux-preferences.md)。
 
 ### <a name="from-the-command-line"></a>コマンド ラインから
 
@@ -152,7 +152,7 @@ mdatp exclusion
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Defender for Endpoint for Linux がマルウェアを報告した場合、ルールは機能していません。 マルウェアの報告がない場合、ダウンロードしたファイルが存在する場合は、除外が機能しています。 ファイルを開き、EICAR テスト ファイル Web サイトで説明されている内容と内容が同じ [ことを確認できます](http://2016.eicar.org/86-0-Intended-use.html)。
+Defender for Endpoint on Linux がマルウェアを報告した場合、ルールは機能していません。 マルウェアの報告がない場合、ダウンロードしたファイルが存在する場合は、除外が機能しています。 ファイルを開き、EICAR テスト ファイル Web サイトで説明されている内容と内容が同じ [ことを確認できます](http://2016.eicar.org/86-0-Intended-use.html)。
 
 インターネット にアクセスできない場合は、独自の EICAR テスト ファイルを作成できます。 次の Bash コマンドを使用して、EICAR 文字列を新しいテキスト ファイルに書き込む。
 

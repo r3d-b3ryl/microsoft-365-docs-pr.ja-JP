@@ -1,7 +1,7 @@
 ---
 title: 攻撃表面の縮小ルールを使用してマルウェアの感染を防止する
 description: 攻撃表面の縮小ルールは、悪用がアプリやスクリプトを使用してデバイスにマルウェアに感染するのを防ぐのに役立ちます。
-keywords: 攻撃表面の縮小ルール、asr、hips、ホスト侵入防止システム、保護ルール、悪用防止、脆弱性対策、悪用、感染防止、Microsoft Defender for Endpoint、Microsoft Defender ATP
+keywords: 攻撃表面の縮小ルール、asr、hips、ホスト侵入防止システム、保護ルール、悪用防止、脆弱性対策、悪用、感染防止、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8790d959dc41e3edea684c66e556a2ec67f85ae1
-ms.sourcegitcommit: 0fe5989b7ee2f7ae0181f2781e31db7f58689441
+ms.openlocfilehash: 98f04a9aa34fda78c7caba2f6cb71c135428784f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697529"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933987"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>攻撃表面の縮小ルールを使用してマルウェアの感染を防止する
 
@@ -90,7 +90,7 @@ Microsoft Defender ウイルス対策は、アクティブ モードでリアル
 
 ## <a name="notifications-and-alerts"></a>通知とアラート
 
-攻撃表面の縮小ルールがトリガーされるたびに、デバイスに通知が表示されます。 通知は [、会社の詳細](customize-attack-surface-reduction.md#customize-the-notification) と連絡先情報でカスタマイズできます。
+攻撃表面の縮小ルールがトリガーされるたびに、デバイスに通知が表示されます。 会社の詳細や連絡先情報を使用して[通知をカスタマイズ](customize-attack-surface-reduction.md#customize-the-notification)することができます。
 
 さらに、特定の攻撃表面の縮小ルールがトリガーされると、アラートが生成されます。 
 
@@ -135,7 +135,7 @@ Windows イベント ログを確認して、攻撃表面の縮小ルールに�
 2. [スタート] メニューに *「イベント ビューアー*」という単語を入力して、Windows イベント ビューアーを開きます。
 3. [アクション **] で**、[カスタム **ビューのインポート.... を選択します**。
 4. 抽出された場所 *cfa-events.xml* ファイルを選択します。 または [、XML を直接コピーします](event-views.md)。
-5. **[OK]** を選択します。
+5. [**OK**] を選択します。
 
 イベントをフィルター処理して、次のイベントのみを表示するカスタム ビューを作成できます。そのすべては、フォルダー アクセスの制御に関連しています。
 

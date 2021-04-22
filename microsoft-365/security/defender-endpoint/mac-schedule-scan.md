@@ -1,7 +1,7 @@
 ---
-title: macOS 用 MDATP を使用してスキャンをスケジュールする方法
+title: macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする方法
 description: 組織の資産をより保護するために、macOS の Microsoft Defender for Endpoint の自動スキャン時間をスケジュールする方法について説明します。
-keywords: microsoft、Defender、atp、mac、スキャン、ウイルス対策
+keywords: microsoft、defender、Microsoft Defender for Endpoint、mac、スキャン、ウイルス対策
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 71576c777f58aa193f2a73db7edea832d29a97c6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 2c1dc16dc3fbb61a77e1d7348d47fdfd778c56e2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860933"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934515"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする
 

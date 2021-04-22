@@ -1,7 +1,7 @@
 ---
 title: サードパーティの HIPS から ASR ルールへの移行
 description: サードパーティのホスト侵入防止システム (HIPS) ソリューションから ASR ルールへの移行にアプローチする方法について説明します。
-keywords: 攻撃表面の縮小ルール、asr、asr ルール、ヒップ、ホスト侵入防止システム、保護ルール、悪用防止、脆弱性対策、悪用、感染防止、Microsoft Defender for Endpoint、Microsoft Defender ATP
+keywords: 攻撃表面の縮小ルール、asr、asr ルール、ヒップ、ホスト侵入防止システム、保護ルール、悪用防止、脆弱性対策、悪用、感染防止、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 5b2c6c12de7b87a045a81a552e3fe74b4829e94d
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764785"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933783"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>サードパーティの HIPS から ASR ルールへの移行
 
@@ -41,7 +41,7 @@ ms.locfileid: "51764785"
 - **適用対象**- すべてのプロセス
 - **プロセス**- N/A
 - **操作**- レジストリの変更
-- **ファイル/フォルダー、レジストリ キー/値、プロセス、サービスの例** - *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs\StartExe,*HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image* File Execution Options \Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcessExit*\MonitorProcess
+- **ファイル/フォルダー、レジストリ キー/値、プロセス、サービスの例** - *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs\StartExe,*HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image* File Execution Options \Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\\MonitorProcessExit*\MonitorProcess
 - **攻撃表面の縮小ルール**- ASR ルールは、侵害のインジケーター (IOC) ではなく、攻撃手法をブロックします。 特定のファイル拡張子をブロックしても、デバイスが侵害されるのを防ぐとは限らないため、必ずしも役に立つとは限らない。 攻撃者がペイロードの新しい種類の拡張機能を作成するまで、攻撃を部分的に警告します。
 - **その他の推奨機能**- Microsoft Defender AV を有効にし、クラウド保護と動作分析を強くお勧めします。 ASR ルール "ランサムウェアに対する高度な保護を使用する" などの追加の防止を使用することをお勧めします。 これにより、ランサムウェア攻撃に対するより高いレベルの保護が提供されます。 さらに、これらのレジストリ キーのいくつかは、特定のアラートをトリガーする ASEP 手法など、Microsoft Defender for Endpoint によって監視されます。 さらに、使用するレジストリ キーには、少なくともローカル管理者特権または信頼できるインストーラー特権を変更する必要があります。 最小限の管理アカウントまたは権限を持つ、ロックダウンされた環境の使用をお勧めします。 その他のシステム構成は、より広範なセキュリティ推奨事項の一部である"必須ではない役割に対して SeDebug を無効にする" など、有効にできます。
 
@@ -59,7 +59,7 @@ ms.locfileid: "51764785"
 - **適用対象**- Mshta
 - **プロセス**- mshta.exe
 - **操作**- プロセスの実行
-- **ファイル/フォルダー、レジストリ キー/値、プロセス、サービス**- powershell.exe、cmd.exe、regsvr32.exe
+- **ファイル/フォルダー、レジストリ キー/** 値、プロセス、サービス - powershell.exe、cmd.exe、regsvr32.exe
 - **攻撃表面の縮小ルール**- ASR ルールには、子プロセスが "削除" されるのを防ぐための特定のmshta.exe。 このコントロールは、Exploit Protection またはアプリケーションコントロールのWindows Defender内です。
 - **その他の推奨機能**- アプリケーションWindows Defenderを有効にして、mshta.exeが完全に実行されるのを防ぐ。 組織で一行のビジネス アプリに対して "mshta.exe" が必要な場合は、特定の Windows Defender Exploit Protection ルールを構成して、mshta.exeプロセスを起動mshta.exe防止します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "51764785"
 - **に適用される**- Office  
 - **プロセス**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- プロセスの実行
-- ファイル/フォルダー、レジストリ **キー/値、プロセス、サービス**- powershell.exe、cmd.exe、wscript.exe、mshta.exe、EQNEDT32.EXE、regsrv32.exe
+- **ファイル/フォルダー、レジストリ キー/** 値、プロセス、サービス - powershell.exe、cmd.exe、wscript.exe、mshta.exe、EQNEDT32.EXE、regsrv32.exe
 - 攻撃 **表面の縮小** ルール - ASR ルールには、Office アプリによる子プロセスの起動を防止する組み込みのルールがあります。"すべての Office アプリケーションによる子プロセスの作成をブロックする"、GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A"。
 - **その他の推奨機能**- N/A
     
@@ -87,7 +87,7 @@ ms.locfileid: "51764785"
 - **に適用される**- Office
 - **プロセス**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- ファイルの作成
-- ファイル/フォルダー、レジストリ キー/値、プロセス **、サービス** の例 - C:\Users *\AppData **.exe、C:\ProgramData**.exe、C:\ProgramData**.com、C:\Users* AppData\Local\Temp **.com、C:\Users*\Downloads**.exe、C:\Users *\AppData **.scf、C:\ProgramData**.scf、C:\Users\Public.exe、C:\Users\Desktop\exe*
+- ファイル/フォルダー、レジストリ キー **/** 値、プロセス、サービスの例 - C:\Users *\AppData **.exe、C:\ProgramData**.exe、C:\ProgramData**.com、C:\Users* AppData\Local\Temp **.com、C:\Users*\Downloads**.exe、C:\Users *\AppData **.scf、C:\ProgramData**.scf、C:\Users\Public.exe、C:\Users\Desktop\exe*
 - **攻撃表面の縮小ルール**- N/A。
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>Wscript が特定の種類のファイルを読み取るのをブロックする
@@ -137,7 +137,7 @@ ms.locfileid: "51764785"
 - **攻撃表面の縮小ルール**- 全体的に、ASR ルールはアプリケーション マネージャーとして機能するように設計されていない。
 - **その他の推奨機能**- ユーザーが特定のプロセスやプログラムを起動しに行かねない場合は、アプリケーションコントロールを使用Windows Defender勧めします。 Microsoft Defender for Endpoint File および Cert インジケーターは、インシデント対応シナリオで使用できます (アプリケーション制御メカニズムとして見るべきではない)。
     
-### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>MDATP AV 構成への未承認の変更をブロックする
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Microsoft Defender ウイルス対策の構成に対する未承認の変更をブロックする
 
 - **適用対象**- すべてのプロセス
 - **プロセス**- *
