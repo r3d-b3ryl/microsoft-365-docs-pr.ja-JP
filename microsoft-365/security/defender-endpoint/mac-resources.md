@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint for Mac のリソース
-description: Microsoft Defender for Endpoint for Mac のリソース (アンインストール方法、診断ログの収集方法、CLI コマンド、製品に関する既知の問題など)。
-keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Microsoft Defender for Endpoint on Mac のリソース
+description: Microsoft Defender for Endpoint on Mac のリソース (アンインストール方法、診断ログの収集方法、CLI コマンド、製品に関する既知の問題など)。
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,28 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 98e123ac4775096c968bc831965a562481c848b6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862177"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934527"
 ---
-# <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="3edc3-104">macOS 上のエンドポイント用 Microsoft Defender のリソース</span><span class="sxs-lookup"><span data-stu-id="3edc3-104">Resources for Microsoft Defender for Endpoint on macOS</span></span>
+# <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="ec2a9-104">macOS 上のエンドポイント用 Microsoft Defender のリソース</span><span class="sxs-lookup"><span data-stu-id="ec2a9-104">Resources for Microsoft Defender for Endpoint on macOS</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="3edc3-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="3edc3-105">**Applies to:**</span></span>
-- [<span data-ttu-id="3edc3-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="3edc3-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="3edc3-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3edc3-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="ec2a9-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="ec2a9-105">**Applies to:**</span></span>
+- [<span data-ttu-id="ec2a9-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ec2a9-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="ec2a9-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="ec2a9-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="3edc3-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="3edc3-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="3edc3-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="3edc3-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="ec2a9-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="ec2a9-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="ec2a9-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="collecting-diagnostic-information"></a><span data-ttu-id="3edc3-110">診断情報の収集</span><span class="sxs-lookup"><span data-stu-id="3edc3-110">Collecting diagnostic information</span></span>
+## <a name="collecting-diagnostic-information"></a><span data-ttu-id="ec2a9-110">診断情報の収集</span><span class="sxs-lookup"><span data-stu-id="ec2a9-110">Collecting diagnostic information</span></span>
 
-<span data-ttu-id="3edc3-111">問題を再現できる場合は、ログ レベルを上げ、システムを一時実行し、ログ レベルを既定に復元します。</span><span class="sxs-lookup"><span data-stu-id="3edc3-111">If you can reproduce a problem, increase the logging level, run the system for some time, and restore the logging level to the default.</span></span>
+<span data-ttu-id="ec2a9-111">問題を再現できる場合は、ログ レベルを上げ、システムを一時実行し、ログ レベルを既定に復元します。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-111">If you can reproduce a problem, increase the logging level, run the system for some time, and restore the logging level to the default.</span></span>
 
-1. <span data-ttu-id="3edc3-112">ログ レベルを上げ:</span><span class="sxs-lookup"><span data-stu-id="3edc3-112">Increase logging level:</span></span>
+1. <span data-ttu-id="ec2a9-112">ログ レベルを上げ:</span><span class="sxs-lookup"><span data-stu-id="ec2a9-112">Increase logging level:</span></span>
 
    ```bash
    mdatp log level set --level verbose
@@ -49,12 +49,12 @@ ms.locfileid: "51862177"
    Log level configured successfully
    ```
 
-2. <span data-ttu-id="3edc3-113">問題を再現する</span><span class="sxs-lookup"><span data-stu-id="3edc3-113">Reproduce the problem</span></span>
+2. <span data-ttu-id="ec2a9-113">問題を再現する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-113">Reproduce the problem</span></span>
 
-3. <span data-ttu-id="3edc3-114">Microsoft `sudo mdatp diagnostic create` Defender for Endpoint ログをバックアップするために実行します。</span><span class="sxs-lookup"><span data-stu-id="3edc3-114">Run `sudo mdatp diagnostic create` to back up the Microsoft Defender for Endpoint logs.</span></span> <span data-ttu-id="3edc3-115">ファイルは .zip アーカイブ内に格納されます。</span><span class="sxs-lookup"><span data-stu-id="3edc3-115">The files will be stored inside a .zip archive.</span></span> <span data-ttu-id="3edc3-116">このコマンドは、操作が成功した後、バックアップへのファイル パスも出力します。</span><span class="sxs-lookup"><span data-stu-id="3edc3-116">This command will also print out the file path to the backup after the operation succeeds.</span></span>
+3. <span data-ttu-id="ec2a9-114">Microsoft `sudo mdatp diagnostic create` Defender for Endpoint ログをバックアップするために実行します。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-114">Run `sudo mdatp diagnostic create` to back up the Microsoft Defender for Endpoint logs.</span></span> <span data-ttu-id="ec2a9-115">ファイルは .zip アーカイブ内に格納されます。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-115">The files will be stored inside a .zip archive.</span></span> <span data-ttu-id="ec2a9-116">このコマンドは、操作が成功した後、バックアップへのファイル パスも出力します。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-116">This command will also print out the file path to the backup after the operation succeeds.</span></span>
 
    > [!TIP]
-   > <span data-ttu-id="3edc3-117">既定では、診断ログはに保存されます `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。</span><span class="sxs-lookup"><span data-stu-id="3edc3-117">By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`.</span></span> <span data-ttu-id="3edc3-118">診断ログが保存されているディレクトリを変更するには、次のコマンドに渡し、目的の `--path [directory]` `[directory]` ディレクトリに置き換わります。</span><span class="sxs-lookup"><span data-stu-id="3edc3-118">To change the directory where diagnostic logs are saved, pass `--path [directory]` to the below command, replacing `[directory]` with the desired directory.</span></span>
+   > <span data-ttu-id="ec2a9-117">既定では、診断ログはに保存されます `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-117">By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`.</span></span> <span data-ttu-id="ec2a9-118">診断ログが保存されているディレクトリを変更するには、次のコマンドに渡し、目的の `--path [directory]` `[directory]` ディレクトリに置き換わります。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-118">To change the directory where diagnostic logs are saved, pass `--path [directory]` to the below command, replacing `[directory]` with the desired directory.</span></span>
 
    ```bash
    sudo mdatp diagnostic create
@@ -63,7 +63,7 @@ ms.locfileid: "51862177"
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
 
-4. <span data-ttu-id="3edc3-119">ログ レベルの復元:</span><span class="sxs-lookup"><span data-stu-id="3edc3-119">Restore logging level:</span></span>
+4. <span data-ttu-id="ec2a9-119">ログ レベルの復元:</span><span class="sxs-lookup"><span data-stu-id="ec2a9-119">Restore logging level:</span></span>
 
    ```bash
    mdatp log level set --level info
@@ -72,78 +72,78 @@ ms.locfileid: "51862177"
    Log level configured successfully
    ```
 
-## <a name="logging-installation-issues"></a><span data-ttu-id="3edc3-120">インストールの問題をログに記録する</span><span class="sxs-lookup"><span data-stu-id="3edc3-120">Logging installation issues</span></span>
+## <a name="logging-installation-issues"></a><span data-ttu-id="ec2a9-120">インストールの問題をログに記録する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-120">Logging installation issues</span></span>
 
-<span data-ttu-id="3edc3-121">インストール中にエラーが発生した場合、インストーラーは一般的なエラーのみを報告します。</span><span class="sxs-lookup"><span data-stu-id="3edc3-121">If an error occurs during installation, the installer will only report a general failure.</span></span>
+<span data-ttu-id="ec2a9-121">インストール中にエラーが発生した場合、インストーラーは一般的なエラーのみを報告します。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-121">If an error occurs during installation, the installer will only report a general failure.</span></span>
 
-<span data-ttu-id="3edc3-122">詳細ログはに保存されます `/Library/Logs/Microsoft/mdatp/install.log` 。</span><span class="sxs-lookup"><span data-stu-id="3edc3-122">The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`.</span></span> <span data-ttu-id="3edc3-123">インストール中に問題が発生した場合は、このファイルを送信して、原因の診断に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="3edc3-123">If you experience issues during installation, send us this file so we can help diagnose the cause.</span></span>
+<span data-ttu-id="ec2a9-122">詳細ログはに保存されます `/Library/Logs/Microsoft/mdatp/install.log` 。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-122">The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`.</span></span> <span data-ttu-id="ec2a9-123">インストール中に問題が発生した場合は、このファイルを送信して、原因の診断に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-123">If you experience issues during installation, send us this file so we can help diagnose the cause.</span></span>
 
-## <a name="uninstalling"></a><span data-ttu-id="3edc3-124">アンインストール</span><span class="sxs-lookup"><span data-stu-id="3edc3-124">Uninstalling</span></span>
+## <a name="uninstalling"></a><span data-ttu-id="ec2a9-124">アンインストール</span><span class="sxs-lookup"><span data-stu-id="ec2a9-124">Uninstalling</span></span>
 
-<span data-ttu-id="3edc3-125">macOS で Microsoft Defender for Endpoint をアンインストールするには、いくつかの方法があります。</span><span class="sxs-lookup"><span data-stu-id="3edc3-125">There are several ways to uninstall Microsoft Defender for Endpoint on macOS.</span></span> <span data-ttu-id="3edc3-126">中央管理アンインストールは JAMF で使用できるが、Microsoft Intune ではまだ利用できない点に注意してください。</span><span class="sxs-lookup"><span data-stu-id="3edc3-126">Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.</span></span>
+<span data-ttu-id="ec2a9-125">macOS で Microsoft Defender for Endpoint をアンインストールするには、いくつかの方法があります。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-125">There are several ways to uninstall Microsoft Defender for Endpoint on macOS.</span></span> <span data-ttu-id="ec2a9-126">中央管理アンインストールは JAMF で使用できるが、Microsoft Intune ではまだ利用できない点に注意してください。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-126">Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.</span></span>
 
-### <a name="interactive-uninstallation"></a><span data-ttu-id="3edc3-127">対話型アンインストール</span><span class="sxs-lookup"><span data-stu-id="3edc3-127">Interactive uninstallation</span></span>
+### <a name="interactive-uninstallation"></a><span data-ttu-id="ec2a9-127">対話型アンインストール</span><span class="sxs-lookup"><span data-stu-id="ec2a9-127">Interactive uninstallation</span></span>
 
-- <span data-ttu-id="3edc3-128">Finder **ファイル>開きます**。</span><span class="sxs-lookup"><span data-stu-id="3edc3-128">Open **Finder > Applications**.</span></span> <span data-ttu-id="3edc3-129">[Microsoft **Defender for Endpoint] を右クリックし>に移動します**。</span><span class="sxs-lookup"><span data-stu-id="3edc3-129">Right click on **Microsoft Defender for Endpoint > Move to Trash**.</span></span>
+- <span data-ttu-id="ec2a9-128">Finder **ファイル>開きます**。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-128">Open **Finder > Applications**.</span></span> <span data-ttu-id="ec2a9-129">[Microsoft **Defender for Endpoint] を右クリックし>に移動します**。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-129">Right click on **Microsoft Defender for Endpoint > Move to Trash**.</span></span>
 
-### <a name="from-the-command-line"></a><span data-ttu-id="3edc3-130">コマンド ラインから</span><span class="sxs-lookup"><span data-stu-id="3edc3-130">From the command line</span></span>
+### <a name="from-the-command-line"></a><span data-ttu-id="ec2a9-130">コマンド ラインから</span><span class="sxs-lookup"><span data-stu-id="ec2a9-130">From the command line</span></span>
 
 - ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
 - ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
 
-## <a name="configuring-from-the-command-line"></a><span data-ttu-id="3edc3-131">コマンド ラインからの構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-131">Configuring from the command line</span></span>
+## <a name="configuring-from-the-command-line"></a><span data-ttu-id="ec2a9-131">コマンド ラインからの構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-131">Configuring from the command line</span></span>
 
-<span data-ttu-id="3edc3-132">製品設定の制御やオンデマンド スキャンのトリガーなどの重要なタスクは、コマンド ラインから実行できます。</span><span class="sxs-lookup"><span data-stu-id="3edc3-132">Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:</span></span>
+<span data-ttu-id="ec2a9-132">製品設定の制御やオンデマンド スキャンのトリガーなどの重要なタスクは、コマンド ラインから実行できます。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-132">Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:</span></span>
 
-|<span data-ttu-id="3edc3-133">Group</span><span class="sxs-lookup"><span data-stu-id="3edc3-133">Group</span></span>        |<span data-ttu-id="3edc3-134">シナリオ</span><span class="sxs-lookup"><span data-stu-id="3edc3-134">Scenario</span></span>                                   |<span data-ttu-id="3edc3-135">コマンド</span><span class="sxs-lookup"><span data-stu-id="3edc3-135">Command</span></span>                                                                           |
+|<span data-ttu-id="ec2a9-133">Group</span><span class="sxs-lookup"><span data-stu-id="ec2a9-133">Group</span></span>        |<span data-ttu-id="ec2a9-134">シナリオ</span><span class="sxs-lookup"><span data-stu-id="ec2a9-134">Scenario</span></span>                                   |<span data-ttu-id="ec2a9-135">コマンド</span><span class="sxs-lookup"><span data-stu-id="ec2a9-135">Command</span></span>                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
-|<span data-ttu-id="3edc3-136">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-136">Configuration</span></span>|<span data-ttu-id="3edc3-137">リアルタイム保護のオン/オフ</span><span class="sxs-lookup"><span data-stu-id="3edc3-137">Turn on/off real-time protection</span></span>           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
-|<span data-ttu-id="3edc3-138">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-138">Configuration</span></span>|<span data-ttu-id="3edc3-139">クラウド保護のオン/オフ</span><span class="sxs-lookup"><span data-stu-id="3edc3-139">Turn on/off cloud protection</span></span>               |`mdatp config cloud --value [enabled/disabled]`                                   |
-|<span data-ttu-id="3edc3-140">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-140">Configuration</span></span>|<span data-ttu-id="3edc3-141">製品診断のオン/オフ</span><span class="sxs-lookup"><span data-stu-id="3edc3-141">Turn on/off product diagnostics</span></span>            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
-|<span data-ttu-id="3edc3-142">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-142">Configuration</span></span>|<span data-ttu-id="3edc3-143">自動サンプル申請のオン/オフ</span><span class="sxs-lookup"><span data-stu-id="3edc3-143">Turn on/off automatic sample submission</span></span>    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
-|<span data-ttu-id="3edc3-144">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-144">Configuration</span></span>|<span data-ttu-id="3edc3-145">許可リストに脅威名を追加する</span><span class="sxs-lookup"><span data-stu-id="3edc3-145">Add a threat name to the allowed list</span></span>      |`mdatp threat allowed add --name [threat-name]`                                   |
-|<span data-ttu-id="3edc3-146">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-146">Configuration</span></span>|<span data-ttu-id="3edc3-147">許可リストから脅威名を削除する</span><span class="sxs-lookup"><span data-stu-id="3edc3-147">Remove a threat name from the allowed list</span></span> |`mdatp threat allowed remove --name [threat-name]`                                |
-|<span data-ttu-id="3edc3-148">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-148">Configuration</span></span>|<span data-ttu-id="3edc3-149">許可されている脅威名の一覧を表示する</span><span class="sxs-lookup"><span data-stu-id="3edc3-149">List all allowed threat names</span></span>              |`mdatp threat allowed list`                                                       |
-|<span data-ttu-id="3edc3-150">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-150">Configuration</span></span>|<span data-ttu-id="3edc3-151">PUA 保護を有効にする</span><span class="sxs-lookup"><span data-stu-id="3edc3-151">Turn on PUA protection</span></span>                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
-|<span data-ttu-id="3edc3-152">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-152">Configuration</span></span>|<span data-ttu-id="3edc3-153">PUA 保護をオフにする</span><span class="sxs-lookup"><span data-stu-id="3edc3-153">Turn off PUA protection</span></span>                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
-|<span data-ttu-id="3edc3-154">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-154">Configuration</span></span>|<span data-ttu-id="3edc3-155">PUA 保護の監査モードを有効にする</span><span class="sxs-lookup"><span data-stu-id="3edc3-155">Turn on audit mode for PUA protection</span></span>      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
-|<span data-ttu-id="3edc3-156">構成</span><span class="sxs-lookup"><span data-stu-id="3edc3-156">Configuration</span></span>|<span data-ttu-id="3edc3-157">パッシブ モードのオン/オフ</span><span class="sxs-lookup"><span data-stu-id="3edc3-157">Turn on/off passiveMode</span></span>                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|<span data-ttu-id="3edc3-158">Diagnostics</span><span class="sxs-lookup"><span data-stu-id="3edc3-158">Diagnostics</span></span>  |<span data-ttu-id="3edc3-159">ログ レベルの変更</span><span class="sxs-lookup"><span data-stu-id="3edc3-159">Change the log level</span></span>                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|<span data-ttu-id="3edc3-160">Diagnostics</span><span class="sxs-lookup"><span data-stu-id="3edc3-160">Diagnostics</span></span>  |<span data-ttu-id="3edc3-161">診断ログの生成</span><span class="sxs-lookup"><span data-stu-id="3edc3-161">Generate diagnostic logs</span></span>                   |`mdatp diagnostic create --path [directory]`                                      |
-|<span data-ttu-id="3edc3-162">正常性</span><span class="sxs-lookup"><span data-stu-id="3edc3-162">Health</span></span>       |<span data-ttu-id="3edc3-163">製品の正常性を確認する</span><span class="sxs-lookup"><span data-stu-id="3edc3-163">Check the product's health</span></span>                 |`mdatp health`                                                                    |
-|<span data-ttu-id="3edc3-164">正常性</span><span class="sxs-lookup"><span data-stu-id="3edc3-164">Health</span></span>       |<span data-ttu-id="3edc3-165">spefic 製品属性を確認する</span><span class="sxs-lookup"><span data-stu-id="3edc3-165">Check for a spefic product attribute</span></span>       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
-|<span data-ttu-id="3edc3-166">Protection</span><span class="sxs-lookup"><span data-stu-id="3edc3-166">Protection</span></span>   |<span data-ttu-id="3edc3-167">パスをスキャンする</span><span class="sxs-lookup"><span data-stu-id="3edc3-167">Scan a path</span></span>                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
-|<span data-ttu-id="3edc3-168">Protection</span><span class="sxs-lookup"><span data-stu-id="3edc3-168">Protection</span></span>   |<span data-ttu-id="3edc3-169">クイック スキャンを実行する</span><span class="sxs-lookup"><span data-stu-id="3edc3-169">Do a quick scan</span></span>                            |`mdatp scan quick`                                                                |
-|<span data-ttu-id="3edc3-170">Protection</span><span class="sxs-lookup"><span data-stu-id="3edc3-170">Protection</span></span>   |<span data-ttu-id="3edc3-171">フル スキャンを実行する</span><span class="sxs-lookup"><span data-stu-id="3edc3-171">Do a full scan</span></span>                             |`mdatp scan full`                                                                 |
-|<span data-ttu-id="3edc3-172">Protection</span><span class="sxs-lookup"><span data-stu-id="3edc3-172">Protection</span></span>   |<span data-ttu-id="3edc3-173">進行中のオンデマンド スキャンをキャンセルする</span><span class="sxs-lookup"><span data-stu-id="3edc3-173">Cancel an ongoing on-demand scan</span></span>           |`mdatp scan cancel`                                                               |
-|<span data-ttu-id="3edc3-174">Protection</span><span class="sxs-lookup"><span data-stu-id="3edc3-174">Protection</span></span>   |<span data-ttu-id="3edc3-175">セキュリティ インテリジェンス更新プログラムの要求</span><span class="sxs-lookup"><span data-stu-id="3edc3-175">Request a security intelligence update</span></span>     |`mdatp definitions update`                                                        |
-|<span data-ttu-id="3edc3-176">EDR</span><span class="sxs-lookup"><span data-stu-id="3edc3-176">EDR</span></span>          |<span data-ttu-id="3edc3-177">デバイスにグループ タグを追加します。</span><span class="sxs-lookup"><span data-stu-id="3edc3-177">Add group tag to device.</span></span> <span data-ttu-id="3edc3-178">EDR タグは、デバイス グループの管理に使用されます。</span><span class="sxs-lookup"><span data-stu-id="3edc3-178">EDR tags are used for managing device groups.</span></span> <span data-ttu-id="3edc3-179">詳細については、次のページをご覧ください。 https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups</span><span class="sxs-lookup"><span data-stu-id="3edc3-179">For more information, please visit https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups</span></span> |`mdatp edr tag set --name GROUP --value [name]` |
-|<span data-ttu-id="3edc3-180">EDR</span><span class="sxs-lookup"><span data-stu-id="3edc3-180">EDR</span></span>          |<span data-ttu-id="3edc3-181">デバイスからグループ タグを削除する</span><span class="sxs-lookup"><span data-stu-id="3edc3-181">Remove group tag from device</span></span>               |`mdatp edr tag remove --tag-name [name]`                                          |
-|<span data-ttu-id="3edc3-182">EDR</span><span class="sxs-lookup"><span data-stu-id="3edc3-182">EDR</span></span>          |<span data-ttu-id="3edc3-183">グループ ID の追加</span><span class="sxs-lookup"><span data-stu-id="3edc3-183">Add Group ID</span></span>                               |`mdatp edr group-ids --group-id [group]`                                          |
+|<span data-ttu-id="ec2a9-136">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-136">Configuration</span></span>|<span data-ttu-id="ec2a9-137">リアルタイム保護のオン/オフ</span><span class="sxs-lookup"><span data-stu-id="ec2a9-137">Turn on/off real-time protection</span></span>           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
+|<span data-ttu-id="ec2a9-138">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-138">Configuration</span></span>|<span data-ttu-id="ec2a9-139">クラウド保護のオン/オフ</span><span class="sxs-lookup"><span data-stu-id="ec2a9-139">Turn on/off cloud protection</span></span>               |`mdatp config cloud --value [enabled/disabled]`                                   |
+|<span data-ttu-id="ec2a9-140">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-140">Configuration</span></span>|<span data-ttu-id="ec2a9-141">製品診断のオン/オフ</span><span class="sxs-lookup"><span data-stu-id="ec2a9-141">Turn on/off product diagnostics</span></span>            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
+|<span data-ttu-id="ec2a9-142">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-142">Configuration</span></span>|<span data-ttu-id="ec2a9-143">自動サンプル申請のオン/オフ</span><span class="sxs-lookup"><span data-stu-id="ec2a9-143">Turn on/off automatic sample submission</span></span>    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
+|<span data-ttu-id="ec2a9-144">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-144">Configuration</span></span>|<span data-ttu-id="ec2a9-145">許可リストに脅威名を追加する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-145">Add a threat name to the allowed list</span></span>      |`mdatp threat allowed add --name [threat-name]`                                   |
+|<span data-ttu-id="ec2a9-146">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-146">Configuration</span></span>|<span data-ttu-id="ec2a9-147">許可リストから脅威名を削除する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-147">Remove a threat name from the allowed list</span></span> |`mdatp threat allowed remove --name [threat-name]`                                |
+|<span data-ttu-id="ec2a9-148">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-148">Configuration</span></span>|<span data-ttu-id="ec2a9-149">許可されている脅威名の一覧を表示する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-149">List all allowed threat names</span></span>              |`mdatp threat allowed list`                                                       |
+|<span data-ttu-id="ec2a9-150">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-150">Configuration</span></span>|<span data-ttu-id="ec2a9-151">PUA 保護を有効にする</span><span class="sxs-lookup"><span data-stu-id="ec2a9-151">Turn on PUA protection</span></span>                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
+|<span data-ttu-id="ec2a9-152">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-152">Configuration</span></span>|<span data-ttu-id="ec2a9-153">PUA 保護をオフにする</span><span class="sxs-lookup"><span data-stu-id="ec2a9-153">Turn off PUA protection</span></span>                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
+|<span data-ttu-id="ec2a9-154">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-154">Configuration</span></span>|<span data-ttu-id="ec2a9-155">PUA 保護の監査モードを有効にする</span><span class="sxs-lookup"><span data-stu-id="ec2a9-155">Turn on audit mode for PUA protection</span></span>      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
+|<span data-ttu-id="ec2a9-156">構成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-156">Configuration</span></span>|<span data-ttu-id="ec2a9-157">パッシブ モードのオン/オフ</span><span class="sxs-lookup"><span data-stu-id="ec2a9-157">Turn on/off passiveMode</span></span>                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
+|<span data-ttu-id="ec2a9-158">Diagnostics</span><span class="sxs-lookup"><span data-stu-id="ec2a9-158">Diagnostics</span></span>  |<span data-ttu-id="ec2a9-159">ログ レベルの変更</span><span class="sxs-lookup"><span data-stu-id="ec2a9-159">Change the log level</span></span>                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
+|<span data-ttu-id="ec2a9-160">Diagnostics</span><span class="sxs-lookup"><span data-stu-id="ec2a9-160">Diagnostics</span></span>  |<span data-ttu-id="ec2a9-161">診断ログの生成</span><span class="sxs-lookup"><span data-stu-id="ec2a9-161">Generate diagnostic logs</span></span>                   |`mdatp diagnostic create --path [directory]`                                      |
+|<span data-ttu-id="ec2a9-162">正常性</span><span class="sxs-lookup"><span data-stu-id="ec2a9-162">Health</span></span>       |<span data-ttu-id="ec2a9-163">製品の正常性を確認する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-163">Check the product's health</span></span>                 |`mdatp health`                                                                    |
+|<span data-ttu-id="ec2a9-164">正常性</span><span class="sxs-lookup"><span data-stu-id="ec2a9-164">Health</span></span>       |<span data-ttu-id="ec2a9-165">spefic 製品属性を確認する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-165">Check for a spefic product attribute</span></span>       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
+|<span data-ttu-id="ec2a9-166">Protection</span><span class="sxs-lookup"><span data-stu-id="ec2a9-166">Protection</span></span>   |<span data-ttu-id="ec2a9-167">パスをスキャンする</span><span class="sxs-lookup"><span data-stu-id="ec2a9-167">Scan a path</span></span>                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
+|<span data-ttu-id="ec2a9-168">Protection</span><span class="sxs-lookup"><span data-stu-id="ec2a9-168">Protection</span></span>   |<span data-ttu-id="ec2a9-169">クイック スキャンを実行する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-169">Do a quick scan</span></span>                            |`mdatp scan quick`                                                                |
+|<span data-ttu-id="ec2a9-170">Protection</span><span class="sxs-lookup"><span data-stu-id="ec2a9-170">Protection</span></span>   |<span data-ttu-id="ec2a9-171">フル スキャンを実行する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-171">Do a full scan</span></span>                             |`mdatp scan full`                                                                 |
+|<span data-ttu-id="ec2a9-172">Protection</span><span class="sxs-lookup"><span data-stu-id="ec2a9-172">Protection</span></span>   |<span data-ttu-id="ec2a9-173">進行中のオンデマンド スキャンをキャンセルする</span><span class="sxs-lookup"><span data-stu-id="ec2a9-173">Cancel an ongoing on-demand scan</span></span>           |`mdatp scan cancel`                                                               |
+|<span data-ttu-id="ec2a9-174">Protection</span><span class="sxs-lookup"><span data-stu-id="ec2a9-174">Protection</span></span>   |<span data-ttu-id="ec2a9-175">セキュリティ インテリジェンス更新プログラムの要求</span><span class="sxs-lookup"><span data-stu-id="ec2a9-175">Request a security intelligence update</span></span>     |`mdatp definitions update`                                                        |
+|<span data-ttu-id="ec2a9-176">EDR</span><span class="sxs-lookup"><span data-stu-id="ec2a9-176">EDR</span></span>          |<span data-ttu-id="ec2a9-177">デバイスにグループ タグを追加します。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-177">Add group tag to device.</span></span> <span data-ttu-id="ec2a9-178">EDR タグは、デバイス グループの管理に使用されます。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-178">EDR tags are used for managing device groups.</span></span> <span data-ttu-id="ec2a9-179">詳細については、次のページをご覧ください。 https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups</span><span class="sxs-lookup"><span data-stu-id="ec2a9-179">For more information, please visit https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups</span></span> |`mdatp edr tag set --name GROUP --value [name]` |
+|<span data-ttu-id="ec2a9-180">EDR</span><span class="sxs-lookup"><span data-stu-id="ec2a9-180">EDR</span></span>          |<span data-ttu-id="ec2a9-181">デバイスからグループ タグを削除する</span><span class="sxs-lookup"><span data-stu-id="ec2a9-181">Remove group tag from device</span></span>               |`mdatp edr tag remove --tag-name [name]`                                          |
+|<span data-ttu-id="ec2a9-182">EDR</span><span class="sxs-lookup"><span data-stu-id="ec2a9-182">EDR</span></span>          |<span data-ttu-id="ec2a9-183">グループ ID の追加</span><span class="sxs-lookup"><span data-stu-id="ec2a9-183">Add Group ID</span></span>                               |`mdatp edr group-ids --group-id [group]`                                          |
 
-### <a name="how-to-enable-autocompletion"></a><span data-ttu-id="3edc3-184">オートコンプリートを有効にする方法</span><span class="sxs-lookup"><span data-stu-id="3edc3-184">How to enable autocompletion</span></span>
+### <a name="how-to-enable-autocompletion"></a><span data-ttu-id="ec2a9-184">オートコンプリートを有効にする方法</span><span class="sxs-lookup"><span data-stu-id="ec2a9-184">How to enable autocompletion</span></span>
 
-<span data-ttu-id="3edc3-185">bash でオートコンプリートを有効にするには、次のコマンドを実行し、ターミナル セッションを再起動します。</span><span class="sxs-lookup"><span data-stu-id="3edc3-185">To enable autocompletion in bash, run the following command and restart the Terminal session:</span></span>
+<span data-ttu-id="ec2a9-185">bash でオートコンプリートを有効にするには、次のコマンドを実行し、ターミナル セッションを再起動します。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-185">To enable autocompletion in bash, run the following command and restart the Terminal session:</span></span>
 
 ```bash
 echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
-<span data-ttu-id="3edc3-186">zsh でオートコンプリートを有効にするには、次の方法を実行します。</span><span class="sxs-lookup"><span data-stu-id="3edc3-186">To enable autocompletion in zsh:</span></span>
+<span data-ttu-id="ec2a9-186">zsh でオートコンプリートを有効にするには、次の方法を実行します。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-186">To enable autocompletion in zsh:</span></span>
 
-- <span data-ttu-id="3edc3-187">デバイスでオートコンプリートが有効になっているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="3edc3-187">Check whether autocompletion is enabled on your device:</span></span>
+- <span data-ttu-id="ec2a9-187">デバイスでオートコンプリートが有効になっているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-187">Check whether autocompletion is enabled on your device:</span></span>
 
    ```zsh
    cat ~/.zshrc | grep autoload
    ```
 
-- <span data-ttu-id="3edc3-188">前のコマンドで出力が生成されない場合は、次のコマンドを使用してオートコンプリートを有効にできます。</span><span class="sxs-lookup"><span data-stu-id="3edc3-188">If the preceding command does not produce any output, you can enable autocompletion using the following command:</span></span>
+- <span data-ttu-id="ec2a9-188">前のコマンドで出力が生成されない場合は、次のコマンドを使用してオートコンプリートを有効にできます。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-188">If the preceding command does not produce any output, you can enable autocompletion using the following command:</span></span>
 
    ```zsh
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- <span data-ttu-id="3edc3-189">次のコマンドを実行して、macOS 上の Microsoft Defender for Endpoint のオートコンプリートを有効にし、ターミナル セッションを再起動します。</span><span class="sxs-lookup"><span data-stu-id="3edc3-189">Run the following commands to enable autocompletion for Microsoft Defender for Endpoint on macOS and restart the Terminal session:</span></span>
+- <span data-ttu-id="ec2a9-189">次のコマンドを実行して、macOS 上の Microsoft Defender for Endpoint のオートコンプリートを有効にし、ターミナル セッションを再起動します。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-189">Run the following commands to enable autocompletion for Microsoft Defender for Endpoint on macOS and restart the Terminal session:</span></span>
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
@@ -152,10 +152,10 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
-## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a><span data-ttu-id="3edc3-190">エンドポイント検疫ディレクトリのクライアント Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="3edc3-190">Client Microsoft Defender for Endpoint quarantine directory</span></span>
+## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a><span data-ttu-id="ec2a9-190">エンドポイント検疫ディレクトリのクライアント Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="ec2a9-190">Client Microsoft Defender for Endpoint quarantine directory</span></span>
 
-<span data-ttu-id="3edc3-191">`/Library/Application Support/Microsoft/Defender/quarantine/` によって検疫されたファイルが含まれる `mdatp` 。</span><span class="sxs-lookup"><span data-stu-id="3edc3-191">`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`.</span></span> <span data-ttu-id="3edc3-192">ファイルの名前は、脅威の追跡 Id にちなんで指定されます。</span><span class="sxs-lookup"><span data-stu-id="3edc3-192">The files are named after the threat trackingId.</span></span> <span data-ttu-id="3edc3-193">現在の trackingIds は 、 と一緒に表示されます `mdatp threat list` 。</span><span class="sxs-lookup"><span data-stu-id="3edc3-193">The current trackingIds is shown with `mdatp threat list`.</span></span>
+<span data-ttu-id="ec2a9-191">`/Library/Application Support/Microsoft/Defender/quarantine/` によって検疫されたファイルが含まれる `mdatp` 。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-191">`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`.</span></span> <span data-ttu-id="ec2a9-192">ファイルの名前は、脅威の追跡 Id にちなんで指定されます。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-192">The files are named after the threat trackingId.</span></span> <span data-ttu-id="ec2a9-193">現在の trackingIds は 、 と一緒に表示されます `mdatp threat list` 。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-193">The current trackingIds is shown with `mdatp threat list`.</span></span>
 
-## <a name="microsoft-defender-for-endpoint-portal-information"></a><span data-ttu-id="3edc3-194">Microsoft Defender for Endpoint ポータル情報</span><span class="sxs-lookup"><span data-stu-id="3edc3-194">Microsoft Defender for Endpoint portal information</span></span>
+## <a name="microsoft-defender-for-endpoint-portal-information"></a><span data-ttu-id="ec2a9-194">Microsoft Defender for Endpoint ポータル情報</span><span class="sxs-lookup"><span data-stu-id="ec2a9-194">Microsoft Defender for Endpoint portal information</span></span>
 
-<span data-ttu-id="3edc3-195">[macOS の EDR](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)機能が、Microsoft Defender for Endpoint ブログに届き、Microsoft Defender for Endpoint Security Center で何を期待する必要があるかについての詳細なガイダンスが提供されています。</span><span class="sxs-lookup"><span data-stu-id="3edc3-195">[EDR capabilities for macOS have now arrived](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801), on the Microsoft Defender for Endpoint blog, provides detailed guidance on what to expect in Microsoft Defender for Endpoint Security Center.</span></span>
+<span data-ttu-id="ec2a9-195">[macOS の EDR](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)機能が、Microsoft Defender for Endpoint ブログに届き、Microsoft Defender for Endpoint Security Center で何を期待する必要があるかについての詳細なガイダンスが提供されています。</span><span class="sxs-lookup"><span data-stu-id="ec2a9-195">[EDR capabilities for macOS have now arrived](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801), on the Microsoft Defender for Endpoint blog, provides detailed guidance on what to expect in Microsoft Defender for Endpoint Security Center.</span></span>
