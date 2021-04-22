@@ -1,7 +1,7 @@
 ---
 title: ゼロデイの脆弱性を軽減する - 脅威と脆弱性の管理
 description: 脅威と脆弱性の管理を通じて、環境内のゼロデイ脆弱性を見つけて軽減する方法について説明します。
-keywords: mdatp tvm ゼロデイの脆弱性、tvm、脅威&脆弱性管理、ゼロデイ、0 日、0 日間の脆弱性の軽減、脆弱な CVE
+keywords: Microsoft Defender for Endpoint tvm ゼロデイの脆弱性、tvm、脅威& 脆弱性管理、ゼロデイ、0 日、0 日間の脆弱性の軽減、脆弱な CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 941e4989dcb91ff9240131f5980d0e1eced2b21d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: be508e646a67f01887814a0e72170e438ee86212
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501224"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933063"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>ゼロデイの脆弱性を軽減する - 脅威と脆弱性の管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51501224"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ゼロデイの脆弱性とは、公式のパッチやセキュリティ更新プログラムがリリースされていない一般に公開された脆弱性です。 ゼロデイの脆弱性は、多くの場合、重大度レベルが高く、積極的に悪用されます。
 

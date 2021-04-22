@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender サービスの問題のトラブルシューティング
 description: 既知の Microsoft 365 Defender の問題に対する解決策と回避策を見つける
-keywords: Microsoft Threat Protection のトラブルシューティング、トラブルシューティング、Azure ATP、問題、アドオン、設定ページ
+keywords: Microsoft 365 Defender のトラブルシューティング、トラブルシューティング、Microsoft Defender for Identity、issues、アドオン、設定ページ
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a2cd27bf7bf8b1c4931b9d768f3a6b5e5f2a0d93
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 0c933edfe80275dbfa60464ff862a7609b269332
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592038"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933399"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender サービスの問題のトラブルシューティング
 

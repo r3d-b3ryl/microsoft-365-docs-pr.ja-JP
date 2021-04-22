@@ -2,7 +2,7 @@
 title: エンドポイントの検出および応答機能の概要
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint のエンドポイント検出および応答機能について説明します。
-keywords: エンドポイント、エンドポイントの検出と応答、応答、検出、サイバーセキュリティ、保護のための microsoft Defender
+keywords: エンドポイントの Microsoft Defender、エンドポイントの検出と応答、応答、検出、サイバーセキュリティ、保護
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 138a6afde9e8c601fd41811928580644b85bf2e2
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b00bef611a3e4b33bf15a5366b09a96f68d4c1a2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861721"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933519"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>エンドポイントの検出と応答の概要
 

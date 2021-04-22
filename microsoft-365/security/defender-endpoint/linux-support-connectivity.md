@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Linux のクラウド接続の問題のトラブルシューティング
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint on Linux のクラウド接続の問題のトラブルシューティング
-keywords: microsoft、Defender、atp、Linux、クラウド、接続、コミュニケーション
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, cloud, connectivity, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 985e4c39c60600da892c010b6ee26e9c98bb0611
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0345d7f88d147abb750e66a5e61f516abf38d553
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903168"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933111"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のクラウド接続の問題のトラブルシューティング
 
@@ -37,7 +37,7 @@ ms.locfileid: "51903168"
 
 ## <a name="run-the-connectivity-test"></a>接続テストの実行
 
-Defender for Endpoint for Linux が現在のネットワーク設定とクラウドと通信できる場合にテストするには、コマンド ラインから接続テストを実行します。
+Defender for Endpoint on Linux が現在のネットワーク設定とクラウドと通信できる場合にテストするには、コマンド ラインから接続テストを実行します。
 
 ```bash
 mdatp connectivity test
@@ -86,7 +86,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 > [!WARNING]
 > PAC、WPAD、および認証されたプロキシはサポートされていません。 静的プロキシまたは透過プロキシのみを使用してください。
 >
-> SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーが、Defender for Endpoint for Linux からインターセプトなしで関連する URL にデータを直接渡す例外を構成します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
+> SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーの例外を構成して、Defender for Endpoint on Linux のデータを、インターセプトなしで関連する URL に直接渡します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
 
 静的プロキシが必要な場合は、プロキシ のアドレスとポートに対応するプロキシ パラメーターを上記の `proxy_address:port` コマンドに追加します。
 
@@ -107,7 +107,7 @@ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.micr
 
 また、置換するために正しい静的プロキシ アドレスが入力されていることを確認します `address:port` 。
 
-このファイルが正しい場合は、ターミナルで次のコマンドを実行して Defender for Endpoint for Linux を再読み込みし、設定を伝達してください。
+このファイルが正しい場合は、ターミナルで次のコマンドを実行して、Defender for Endpoint on Linux を再読み込みし、設定を伝達してください。
 
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp

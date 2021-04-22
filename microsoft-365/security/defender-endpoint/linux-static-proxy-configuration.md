@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Linux 静的プロキシ検出
 ms.reviewer: ''
 description: 静的プロキシ検出用に Microsoft Defender for Endpoint on Linux を構成する方法について説明します。
-keywords: microsoft、Defender、atp、Linux、インストール、プロキシ
+keywords: microsoft、defender、Microsoft Defender for Endpoint、Linux、インストール、プロキシ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e59727b6bb5fca58595764fc003009891546d8f6
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: c5dc14c71c344bf508cda8d39f892d740781ac87
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903848"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933123"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>静的プロキシ検出用に Microsoft Defender for Endpoint on Linux を構成する
 

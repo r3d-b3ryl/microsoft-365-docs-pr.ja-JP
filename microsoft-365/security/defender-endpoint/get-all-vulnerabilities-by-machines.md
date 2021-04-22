@@ -1,7 +1,7 @@
 ---
 title: コンピューターとソフトウェアによってすべての脆弱性を取得する
 description: コンピューターとソフトウェアによって組織に影響を与えるすべての脆弱性の一覧を取得します。
-keywords: apis, graph api, supported api, get, vulnerability information, mdatp tvm api
+keywords: apis, graph api, supported api, get, vulnerability information, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f7d67948e3b3e7a1a878386a397d2f4a6e8e998e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 229c1f9e77a0cb85744155e82934b48dd63052b2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166900"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933411"
 ---
-# <a name="list-vulnerabilities-by-machine-and-software"></a>コンピューターとソフトウェアによる脆弱性の一覧表示
+# <a name="list-vulnerabilities-by-machine-and-software"></a>マシンとソフトウェアによる脆弱性の一覧表示
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "51166900"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -60,9 +60,9 @@ GET /api/vulnerabilities/machinesVulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 
 
 ## <a name="request-body"></a>要求本文

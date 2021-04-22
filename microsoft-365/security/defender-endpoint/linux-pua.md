@@ -1,7 +1,7 @@
 ---
 title: Linux 上のエンドポイント用 Microsoft Defender を使用して、望ましくない可能性のあるアプリケーションを検出およびブロックする
 description: Microsoft Defender for Endpoint on Linux を使用して、望ましくない可能性があるアプリケーション (PUA) を検出してブロックします。
-keywords: microsoft、Defender、atp、Linux、pua、pus
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, linux, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9631fc2eb1cb791f48f107482474d1bb8e2fd62b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 7ec3399129cc65d75b464f5d5f56bb11250ccaf2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903860"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933159"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender を使用して、望ましくない可能性のあるアプリケーションを検出およびブロックする
 
@@ -35,7 +35,7 @@ ms.locfileid: "51903860"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Defender for Endpoint for Linux の望ましくない可能性のあるアプリケーション (PUA) 保護機能は、ネットワーク内のエンドポイント上の PUA ファイルを検出してブロックできます。
+Defender for Endpoint on Linux の望ましくない可能性のあるアプリケーション (PUA) 保護機能は、ネットワーク内のエンドポイント上の PUA ファイルを検出してブロックできます。
 
 これらのアプリケーションは、ウイルス、マルウェア、その他の種類の脅威とは見なされませんが、パフォーマンスや使用に悪影響を及ぼすエンドポイントに対してアクションを実行する可能性があります。 PUA は、評判が悪いと見なされるアプリケーションも参照できます。
 
@@ -43,13 +43,13 @@ Defender for Endpoint for Linux の望ましくない可能性のあるアプリ
 
 ## <a name="how-it-works"></a>メカニズム
 
-Defender for Endpoint for Linux では、PUA ファイルを検出して報告できます。 ブロック モードで構成すると、PUA ファイルは検疫に移動されます。
+Defender for Endpoint on Linux では、PUA ファイルを検出してレポートできます。 ブロック モードで構成すると、PUA ファイルは検疫に移動されます。
 
-エンドポイントで PUA が検出されると、Defender for Endpoint for Linux は脅威履歴に感染の記録を保持します。 履歴は、Microsoft Defender セキュリティ センター ポータルまたはコマンド ライン ツール `mdatp` を使用して視覚化できます。 脅威名には"Application" という単語が含まれる。
+エンドポイントで PUA が検出されると、Defender for Endpoint on Linux は脅威履歴に感染の記録を保持します。 履歴は、Microsoft Defender セキュリティ センター ポータルまたはコマンド ライン ツール `mdatp` を使用して視覚化できます。 脅威名には"Application" という単語が含まれる。
 
 ## <a name="configure-pua-protection"></a>PUA 保護の構成
 
-Defender for Endpoint for Linux の PUA 保護は、次のいずれかの方法で構成できます。
+Defender for Endpoint on Linux の PUA 保護は、次のいずれかの方法で構成できます。
 
 - **Off**: PUA 保護は無効です。
 - **監査**: PUA ファイルは製品ログに報告されますが、Microsoft Defender セキュリティ センターでは報告されません。 感染の記録は脅威の履歴に保存され、製品によるアクションは実行されません。
@@ -70,8 +70,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>管理コンソールを使用して PUA 保護を構成します。
 
-企業では、他の製品設定の構成方法と同様に、Puppet や Ansible などの管理コンソールから PUA 保護を構成できます。 詳細については、「Defender for [](linux-preferences.md#threat-type-settings) Endpoint for Linux の設定」の「脅威の種類の設定[」セクションを参照](linux-preferences.md)してください。
+企業では、他の製品設定の構成方法と同様に、Puppet や Ansible などの管理コンソールから PUA 保護を構成できます。 詳細については、「Defender for [](linux-preferences.md#threat-type-settings) Endpoint on Linux の設定」の「脅威の種類の設定[」セクションを参照](linux-preferences.md)してください。
 
 ## <a name="related-articles"></a>関連記事
 
-- [Defender for Endpoint for Linux の基本設定を設定する](linux-preferences.md)
+- [Defender for Endpoint on Linux の基本設定を設定する](linux-preferences.md)

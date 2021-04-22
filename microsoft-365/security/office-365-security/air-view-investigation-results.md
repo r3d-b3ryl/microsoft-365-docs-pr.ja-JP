@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 での自動調査の結果を表示する
-keywords: AIR、autoIR、ATP、自動化、調査、修復、アクション
+keywords: AIR、autoIR、Microsoft Defender for Endpoint、自動化、調査、修復、アクション
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -19,12 +19,12 @@ description: Microsoft 365 の自動調査中および後に、結果と主要�
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bf18a9fb80805581a1439b3965a664fd0868248
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ebdd25e9bddf53682f747fff7477d49dd1c94755
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205530"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933495"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 での自動調査の詳細と結果
 

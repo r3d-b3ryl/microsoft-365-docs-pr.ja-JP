@@ -1,7 +1,7 @@
 ---
 title: 脅威と脆弱性管理のイベント タイムライン
 description: イベントタイムラインは、リスクが組織に導入される方法と、リスクを軽減するために発生した軽減策を解釈するのに役立つリスクニュースフィードです。
-keywords: イベント タイムライン, mdatp イベント タイムライン, mdatp tvm イベント タイムライン, 脅威と脆弱性の管理, Microsoft Defender for Endpoint
+keywords: イベント タイムライン, Microsoft Defender for Endpoint イベント タイムライン, Microsoft Defender for Endpoint tvm イベント タイムライン, 脅威と脆弱性管理, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 90a124f9b0bf9ef775141e359224fde566c61c8d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 64362598ff4b0512eb110917071e6d32abb8ede9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501205"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933483"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>イベントタイムライン - 脅威と脆弱性の管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "51501205"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 イベントタイムラインは、新しい脆弱性や悪用を通じて組織にリスクがどのように導入されるのかを解釈するのに役立つリスクニュースフィードです。 組織のリスクに影響を与える可能性があるイベントを表示できます。 たとえば、導入された新しい脆弱性、悪用可能になった脆弱性、エクスプロイト キットに追加された悪用などがあります。
 

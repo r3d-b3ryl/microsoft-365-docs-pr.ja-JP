@@ -1,7 +1,7 @@
 ---
 title: Configuration Manager を使用して Microsoft Defender for Endpoint を管理する
 description: Configuration Manager を使用して Microsoft Defender for Endpoint を管理する方法について説明します。
-keywords: 移行後、管理、運用、メンテナンス、使用率、Configuration Manager、Windows Defender Advanced Threat Protection、atp、edr
+keywords: 移行後、管理、運用、メンテナンス、使用率、Configuration Manager、Microsoft Defender for Endpoint、edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: bd6b6bd2721b686ab10922d09a9e94b9ebcce522
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0cd52388feb987b4231d911cd3c3fd10babba017
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185654"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933207"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration Manager を使用して Microsoft Defender for Endpoint を管理する
 
@@ -35,7 +35,7 @@ ms.locfileid: "51185654"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 Microsoft Endpoint Manager [(Microsoft](https://docs.microsoft.com/mem) [Intune)](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) と Microsoft Endpoint [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction) (Configuration Manager) を使用して、デバイス (エンドポイントとも呼ばれます) の組織の脅威保護機能を管理することをお勧めします。 
@@ -44,7 +44,7 @@ Microsoft Endpoint Manager [(Microsoft](https://docs.microsoft.com/mem) [Intune)
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration Manager を使用して Microsoft Defender for Endpoint を構成する
 
-|タスク  |追加情報  |
+|Task  |追加情報  |
 |---------|---------|
 |**Configuration Manager コンソールをまだ** インストールしていない場合はインストールする<br/><br/>*Configuration Manger コンソールをまだ持ってない場合は、これらのリソースを使用してビットを取得してインストールします。* |[インストール メディアの取得](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/install/get-install-media)<br/><br/>[Configuration Manager コンソールのインストール](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/install/install-consoles)  |
 |**Configuration Manager を使用してデバイスを** Microsoft Defender for Endpoint にオンボードする <br/><br/> *デバイス (またはエンドポイント) が Microsoft Defender for Endpoint にまだオンボードされていない場合は、Configuration Manager を使用して実行できます。*   |[Configuration Manager を使用して Microsoft Defender for Endpoint にオンボードする](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)      |

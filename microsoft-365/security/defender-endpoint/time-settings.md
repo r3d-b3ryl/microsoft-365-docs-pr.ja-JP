@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender セキュリティ センターのタイム ゾーン設定
 description: ここに示す情報を使用して、Microsoft Defender セキュリティ センターのタイム ゾーン設定を構成し、ライセンス情報を表示します。
-keywords: 設定, Microsoft Defender, サイバーセキュリティ脅威インテリジェンス, 高度な脅威保護, タイム ゾーン, utc, 現地時間, ライセンス
+keywords: 設定, Microsoft Defender, サイバーセキュリティ脅威インテリジェンス, エンドポイント用 Microsoft Defender, タイム ゾーン, utc, 現地時間, ライセンス
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e395420b92c29977f1c802d1c10683492c1aba10
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: df55a1b0e92c24b5f52032330ef95bf19aeb8cb3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470467"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932633"
 ---
 # <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender セキュリティ センターのタイム ゾーン設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "51470467"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
 
 [タイム ゾーン **] メニュー** の [タイム ゾーン設定] アイコン 1 を使用して、タイム ゾーンを構成し、ライセンス ![ ](images/atp-time-zone.png) 情報を表示します。
 

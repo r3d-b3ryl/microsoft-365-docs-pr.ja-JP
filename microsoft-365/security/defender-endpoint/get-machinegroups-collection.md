@@ -1,6 +1,6 @@
 ---
 title: RBAC マシン グループ コレクション API の取得
-description: Get KB コレクション API を使用して、Microsoft Defender Advanced Threat Protection の RBAC デバイス グループのコレクションを取得する方法について説明します。
+description: Get KB コレクション API を使用して、Microsoft Defender for Endpoint の RBAC デバイス グループのコレクションを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, RBAC, group
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: 54a0edb47204fe6e48666f0927d05121af95e00a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 18566025d79f02281c1d2c1509dd98f1e57879c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167020"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932777"
 ---
 # <a name="get-kb-collection-api"></a>KB コレクション API の取得
 
@@ -30,7 +30,7 @@ ms.locfileid: "51167020"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

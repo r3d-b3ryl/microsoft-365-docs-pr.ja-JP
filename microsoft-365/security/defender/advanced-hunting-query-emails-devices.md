@@ -1,7 +1,7 @@
 ---
 title: 高度な検索機能を使用して、デバイス、電子メール、アプリ、および ID 間の脅威を検出する
 description: デバイス、電子メール、アプリ、および ID をカバーする一般的な検索シナリオとサンプル クエリを調査します。
-keywords: 高度なハンティング、Office365 データ、Windows デバイス、Office365 メールの正規化、電子メール、アプリ、ID、脅威ハンティング、サイバー脅威ハンティング、検索、クエリ、テレメトリ、Microsoft 365、Microsoft Threat Protection
+keywords: 高度なハンティング、Office365 データ、Windows デバイス、Office365 メール正規化、電子メール、アプリ、ID、脅威ハンティング、サイバー脅威ハンティング、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0fb8bb54e6a893fb434fe453c70ed38b8e8ccb30
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499315"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932967"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、メール、アプリ、ID 全体の脅威を探す
 

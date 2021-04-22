@@ -1,7 +1,7 @@
 ---
 title: Windows サーバーを Microsoft Defender for Endpoint サービスにオンボードする
 description: センサー データを Microsoft Defender for Endpoint センサーに送信できるよう、Windows サーバーをオンボードします。
-keywords: オンボード サーバー、サーバー、2012r2、2016、2019、サーバーオンボーディング、デバイス管理、Windows ATP サーバーの構成、Microsoft Defender for Endpoint サーバーのオンボード、Microsoft Defender for Endpoint サーバーのオンボード
+keywords: オンボード サーバー、サーバー、2012r2、2016、2019、サーバーオンボーディング、デバイス管理、エンドポイント サーバー用 Microsoft Defender の構成、Microsoft Defender for Endpoint サーバーのオンボード、Microsoft Defender for Endpoint サーバーのオンボード
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f2660f19d4b6b0d5f8e2dbf48843002a2bfb7f1d
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769104"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932955"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint サービスにオンボードする
 
@@ -55,7 +55,7 @@ Windows サーバーの Windows セキュリティ ベースラインをダウ�
 指定されたオプションを使用してオンボーディング手順を完了した後、System Center Endpoint Protection クライアントを構成および [更新する必要があります](#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
-> Microsoft Monitoring Agent (オプション 1) または Microsoft Endpoint Manager (オプション 3) を介して Windows サーバーをオンボードするには、ノードごとに Defender for Endpoint スタンドアロン サーバー ライセンスが必要です。 または、Azure セキュリティ センター (オプション 2) を介して Windows サーバーをオンボードするには、ノードごとに Azure Defender for Servers ライセンスが必要です [。「Azure](https://docs.microsoft.com/azure/security-center/security-center-services)Security Center で利用可能なサポートされる機能」を参照してください。
+> Microsoft Monitoring Agent (オプション 1) または Microsoft Endpoint Manager (オプション 3) を介して Windows サーバーをオンボードするには、ノードごとに Defender for Endpoint スタンドアロン サーバー ライセンスが必要です。 または、Azure セキュリティ センター (オプション 2) を介して Windows サーバーをオンボードするには、ノードごとに Azure Defender for Servers ライセンスが必要です。「Azure Defender で利用可能なサポートされる機能」を [参照してください](https://docs.microsoft.com/azure/security-center/security-center-services)。
 
 ### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>オプション 1: Microsoft 監視エージェント (MMA) のインストールと構成によるオンボード
 
@@ -73,7 +73,7 @@ System Center Operations Manager (SCOM) または Azure Monitor (以前は Opera
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、サービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint エンドポイントで検出テストを実行 [する」を参照してください](run-detection-test.md)。
 
-#### <a name="before-you-begin"></a>はじめに
+#### <a name="before-you-begin"></a>開始する前に
 
 オンボーディング要件を満たすために、次の手順を実行します。
 
@@ -127,13 +127,13 @@ SP1 Windows Server 2008 R2 R2 のWindows Server 2012: System Center Endpoint Pro
 
 3. **[Azure セキュリティ センターのオンボード サーバー] をクリックします**。
 
-4. [「Microsoft Defender for Endpoint with Azure](https://docs.microsoft.com/azure/security-center/security-center-wdatp) Security Center」および「Azure ARC を使用している場合は、Microsoft [](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)Defender for Endpoint 統合を有効にする」のオンボーディング手順に従います。
+4. [「Microsoft Defender for Endpoint with Azure Defender」](https://docs.microsoft.com/azure/security-center/security-center-wdatp)のオンボーディング手順に従い、Azure ARC を使用している場合は[、「Microsoft Defender for](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)Endpoint 統合を有効にする」のオンボーディング手順に従います。
 
 オンボーディングの手順を完了した後、System Center [Endpoint Protection クライアントを構成および更新する必要があります](#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
 >
-> - Azure Defender for Servers (以前の Azure Security Center Standard Edition) によるオンボーディングが期待通り動作するには、サーバーが Microsoft Monitoring Agent (MMA) 設定内で適切なワークスペースとキーを構成している必要があります。
+> - Azure Defender for Servers によるオンボーディングが期待通り動作するには、サーバーが Microsoft Monitoring Agent (MMA) 設定内で適切なワークスペースとキーを構成している必要があります。
 > - 構成が完了すると、適切なクラウド管理パックがコンピューターに展開され、センサー プロセス (MsSenseS.exe) が展開され、開始されます。
 > - これは、サーバーが OMS ゲートウェイ サーバーをプロキシとして使用するように構成されている場合にも必要です。
 
@@ -188,26 +188,25 @@ Windows Server のサポートは、サーバーアクティビティ、カー�
 
     Windows サーバーでグループ ポリシーを使用して Microsoft Defender ウイルス対策を構成および管理する方法については、「グループ ポリシー設定を使用して Microsoft Defender ウイルス対策を構成および管理する」 [を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)。
 
-## <a name="integration-with-azure-security-center"></a>Azure セキュリティ センターとの統合
+## <a name="integration-with-azure-defender"></a>Azure Defender との統合
 
-Defender for Endpoint は、Azure Security Center と統合して、包括的な Windows サーバー保護ソリューションを提供できます。 この統合により、Azure Security Center は Defender for Endpoint の機能を使用して、Windows サーバーの脅威検出を強化できます。
+Defender for Endpoint は、Azure Defender と統合して、包括的な Windows サーバー保護ソリューションを提供できます。 この統合により、Azure Defender は Defender for Endpoint の機能を使用して、Windows サーバーの脅威検出を強化できます。
 
 この統合には、次の機能が含まれています。
 
-- 自動オンボーディング - Defender for Endpoint センサーは、Azure セキュリティ センターにオンボードされている Windows サーバーで自動的に有効になります。 Azure Security Center オンボーディングの詳細については、「強化されたセキュリティのための Azure Security Center Standard へのオンボーディング」 [を参照してください](https://docs.microsoft.com/azure/security-center/security-center-onboarding)。
+- 自動オンボーディング - Azure Defender にオンボードされている Windows サーバーで Defender for Endpoint センサーが自動的に有効になります。 Azure Defender オンボーディングの詳細については、「セキュリティ強化のための Azure Defender Standard へのオンボーディング [」を参照してください](https://docs.microsoft.com/azure/security-center/security-center-onboarding)。
 
     > [!NOTE]
     > Azure Defender for Servers と Microsoft Defender for Endpoint の統合は [、Windows Server 2019 と Windows Virtual Desktop (WVD)](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
 
-- Azure Security Center によって監視される Windows サーバーは、Defender for Endpoint - Azure Security Center で Defender for Endpoint テナントにシームレスに接続し、クライアントとサーバー全体で 1 つのビューを提供します。  さらに、Defender for Endpoint アラートは Azure Security Center コンソールで利用できます。
-- サーバー調査 - Azure Security Center のお客様は、Microsoft Defender Security Center にアクセスして詳細な調査を実行して、潜在的な侵害の範囲を明らかにできます。
+- Azure Defender によって監視される Windows サーバーは、Defender for Endpoint でも利用できます 。 Azure Defender は Defender for Endpoint テナントにシームレスに接続し、クライアントとサーバー全体で単一のビューを提供します。  さらに、Defender for Endpoint アラートは Azure Defender コンソールで利用できます。
+- サーバー調査 - Azure Defender のお客様は、Microsoft Defender セキュリティ センターにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにできます。
 
 > [!IMPORTANT]
->
-> - Azure Security Center を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーは米国、EU ではヨーロッパおよび英国のユーザー)。
+> - Azure Defender を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーは米国、EU ではヨーロッパおよび英国のユーザー)。<br>
 Defender for Endpoint によって収集されたデータは、プロビジョニング中に特定されたテナントの地理的位置に格納されます。
-> - Azure Security Center を使用する前に Defender for Endpoint を使用する場合、後で Azure Security Center と統合した場合でも、テナントの作成時に指定した場所にデータが格納されます。
-> - 構成が完了すると、データの保存場所を変更できません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに問い合わせ、テナントをリセットする必要があります。
+> - Azure Defender を使用する前に Defender for Endpoint を使用する場合、後で Azure Defender と統合した場合でも、テナントの作成時に指定した場所にデータが格納されます。
+> - 構成が完了すると、データの保存場所を変更できません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに問い合わせ、テナントをリセットする必要があります。 <br>
 この統合を利用したサーバー エンドポイントの監視は、365 GCC のお客様Office無効になっています。
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>System Center Endpoint Protection クライアントの構成と更新

@@ -1,7 +1,7 @@
 ---
 title: 試用版ラボまたはパイロット環境用に Microsoft 365 Defender の柱を構成する
 description: Microsoft 365 Defender の柱 (microsoft Defender for Office 365、Microsoft Defender for Identity、Microsoft Cloud App Security、Microsoft Defender for Endpoint など) を、試用版ラボまたはパイロット環境用に構成します。
-keywords: Microsoft Threat Protection 試用版の構成、Microsoft Threat Protection 試用版の構成、Microsoft Threat Protection パイロット プロジェクトの構成、Microsoft Threat Protection の柱の構成、Microsoft Threat Protection の柱の構成
+keywords: Microsoft 365 Defender 試用版、Microsoft 365 Defender 試用版の構成、Microsoft 365 Defender パイロット プロジェクトの構成、Microsoft 365 Defender の柱の構成、Microsoft 365 Defender の柱の構成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 05bdc9cbb678a3d6c1cee726fc4d8c2e45d2d360
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580968"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933507"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>試用版ラボまたはパイロット環境用に Microsoft 365 Defender の柱を構成する
 
@@ -163,9 +163,6 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 
     ![[of_theの設定] ページの [Microsoft Defender for Endpoint] トグルをオンにする必要があるイメージ](../../media/mtp-eval-52.png)
 
-> [!NOTE]
-> Windows Defender ATP が Microsoft Defender for Endpoint として再ブランドされました。 すべてのポータルの変更点の再ブランド化は、一貫性を確保するために展開されています。
-
 
 ## <a name="configure-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の構成
 
@@ -285,7 +282,7 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 
 お疲れさまでした。 Microsoft 365 Defender 試用版ラボまたはパイロット環境を作成しました。 これで、Microsoft 365 Defender ユーザー インターフェイスについて理解できます。 次の Microsoft 365 Defender 対話型ガイドから学習できる情報を参照し、各ダッシュボードを毎日のセキュリティ操作タスクに使用する方法について説明します。
 
-[対話型ガイドを確認する](https://aka.ms/MTP-Interactive-Guide)
+[対話型のガイドをチェックしてください](https://aka.ms/MTP-Interactive-Guide)
 
 次に、攻撃をシミュレートし、クロス製品機能がエンドポイントに対するファイルレス攻撃を検出、作成、および自動的に応答する方法を確認できます。
 

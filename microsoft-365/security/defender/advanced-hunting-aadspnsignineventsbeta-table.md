@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの AADSpnSignInEventsBeta テーブル
 description: 高度なハンティング スキーマの Azure Active Directory サービス プリンシパルとマネージ ID サインイン イベント テーブルに関連付けられている情報について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、description、Description、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
+keywords: 高度な狩猟、脅威ハンティング、サイバー脅威ハンティング、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 64f3e1d51f94c4cd2578a1d512115aa717c3eaa8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 984e945107b6e0b41459659a7f2e9f649981e4b5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063612"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932597"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -35,7 +35,7 @@ ms.locfileid: "51063612"
 
 >[!IMPORTANT]
 > この表は現在ベータ版で `AADSpnSignInEventsBeta` 、Azure Active Directory (AAD) サービス プリンシパルおよびマネージ ID サインイン イベントをハントするために、短期的に提供されています。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。<br><br>
-> Azure Security Center の統合された Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできますが、microsoft Defender for Office、Microsoft Defender for Identity、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
+> Azure Defender の統合された Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできますが、microsoft Defender for Office、Microsoft Defender for Identity、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
 
 
 
@@ -54,7 +54,7 @@ ms.locfileid: "51063612"
 | `Timestamp` | datetime      | レコードが作成された日付と時刻                                                                                                     |
 | `Application`          | 文字列        | 記録されたアクションを実行したアプリケーション                                                                                                   |
 | `ApplicationId`        | string        | アプリケーションの一意の識別子                                                                                                           |
-| `IsManagedIdentity`    | boolean       | マネージ ID によってサインインが開始されたかどうかを示します。                                                                               |
+| `IsManagedIdentity`    | ブール値       | マネージ ID によってサインインが開始されたかどうかを示します。                                                                               |
 | `ErrorCode`            | int        | サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。 |
 | `CorrelationId`        | string        | サインイン イベントの一意の識別子                                                                                                          |
 | `ServicePrincipalName` | string        | サインインを開始したサービス プリンシパルの名前                                                                                        |
@@ -76,6 +76,6 @@ ms.locfileid: "51063612"
 ## <a name="related-articles"></a>関連記事
 
 -   [AADSignInEventsBeta](./advanced-hunting-aadsignineventsbeta-table.md)
--   [高度な検出の概要](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+-   [高度な追求の概要](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 -   [クエリ言語の説明](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
 -   [スキーマを理解する](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)

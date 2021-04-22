@@ -1,6 +1,6 @@
 ---
 title: 電子メール保護の順序と優先順位
-keywords: セキュリティ, マルウェア, Microsoft 365, M365, security center, ATP, Microsoft Defender for Endpoint, Office 365 ATP, Azure ATP
+keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティ センター、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の保護のアプリケーションの順序と、保護ポリシーの優先度の値によって適用されるポリシーがどのように決定されるのかについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b36e66f095ff81f551a55d2dc2af0693f8b3455a
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 8cd2809fa69064c2058516f459eeba60683c91b9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769012"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930379"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 

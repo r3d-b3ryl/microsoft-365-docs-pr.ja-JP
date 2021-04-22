@@ -1,7 +1,7 @@
 ---
 title: ASR ルールの展開と検出を最適化する
 description: 攻撃表面の縮小 (ASR) ルールを最適化して、一般的なマルウェアの悪用を特定して防止します。
-keywords: オンボード、Intune 管理、MDATP、WDATP、Microsoft Defender、Windows Defender、高度な脅威保護、攻撃表面の縮小、ASR、セキュリティ ベースライン
+keywords: オンボード、Intune 管理、Microsoft Defender for Endpoint、Microsoft Defender、Windows Defender、攻撃表面の縮小、ASR、セキュリティ ベースライン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5ce39bb3ff0bf3eea4ac4e89c554de43499b15f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 91295135c833c6b403078bdfd517c7b84ec7d630
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165479"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932849"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>ASR ルールの展開と検出を最適化する
 

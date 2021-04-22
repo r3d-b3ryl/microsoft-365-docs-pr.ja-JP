@@ -1,7 +1,7 @@
 ---
 title: 組織の脆弱性 - 脅威と脆弱性の管理
 description: 組織で実行されているソフトウェアで見つかった脆弱性の一般的な脆弱性と露出 (CVE) ID を一覧表示します。 Microsoft Defender for Endpoint の脅威と脆弱性の管理機能によって検出されました。
-keywords: mdatp の脅威&脆弱性管理、脅威と脆弱性管理、mdatp tvm の弱点ページ、tvm、tvm の脆弱性リスト、tvm の脆弱性の詳細を使用して弱点を見つける
+keywords: Microsoft Defender for Endpoint threat & の脆弱性管理、脅威と脆弱性管理、Microsoft Defender for Endpoint tvm の弱点ページ、tvm、tvm の脆弱性リスト、tvm の脆弱性の詳細を使用して弱点を見つける
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0f573b2425764876e877de44555691979a0e1fcf
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: a8039a06dc58c31158f90d39857ffbeba92138d5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689403"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933075"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織の脆弱性 - 脅威と脆弱性の管理
 

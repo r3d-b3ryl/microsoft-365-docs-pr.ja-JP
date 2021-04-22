@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender をオンにするときによく寄せられる質問
 description: Microsoft 365 Defender の有効化に関連するライセンス、アクセス許可、初期設定、その他の製品およびサービスに関する最も一般的な質問に対する回答を取得する
-keywords: よく寄せられる質問、FAQ、GCC、開始、MTP、Microsoft Threat Protection、M365、セキュリティ、データの場所、必要なアクセス許可、ライセンスの適格性、設定ページの有効化
+keywords: よく寄せられる質問、FAQ、GCC、開始、有効にする Microsoft 365 Defender、Microsoft 365 Defender、M365、セキュリティ、データの場所、必要なアクセス許可、ライセンスの適格性、設定ページ
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7482bf614e7cb3ffad6596f3c5d8bc554d46d912
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 55c1a3807fe8e28ca12f4f638c1ab2ca717523ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068651"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933435"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Microsoft 365 Defender をオンにするときによく寄せられる質問
 

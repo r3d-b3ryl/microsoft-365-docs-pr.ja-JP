@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender advanced hunting API
 description: Microsoft 365 Defender の高度な狩猟 API を使用して高度な狩猟クエリを実行する方法について説明します。
-keywords: 高度なハンティング、API、API、MTP、M365 Defender、Microsoft 365 Defender
+keywords: 高度なハンティング、API、API、M365 Defender、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 482801bb47429ae370e06cfcbcf26bacfb8b2a92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066763"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932895"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced hunting API
 
@@ -33,7 +33,7 @@ ms.locfileid: "51066763"
 
 **適用対象:**
 
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -87,7 +87,7 @@ Content-Type | application/json
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 種類 | 説明
+パラメーター | 型 | 説明
 -|-|-
 クエリ | テキスト | 実行するクエリ。 **注: 必須**
 
@@ -183,4 +183,4 @@ Content-Type | application/json
 - [Microsoft 365 Defender API へのアクセス](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)
-- [高度な検出の概要](advanced-hunting-overview.md)
+- [高度な追求の概要](advanced-hunting-overview.md)

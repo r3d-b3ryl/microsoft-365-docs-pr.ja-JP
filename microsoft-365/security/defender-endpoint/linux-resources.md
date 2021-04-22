@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Linux リソース
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint on Linux のリソース (アンインストール方法、診断ログの収集方法、CLI コマンド、製品に関する既知の問題など) について説明します。
-keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de2602bdc94507d27236b939553a6567b2587f36
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903144"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933327"
 ---
 # <a name="resources"></a>リソース
 
@@ -81,7 +81,7 @@ ms.locfileid: "51903144"
 
 ## <a name="uninstall"></a>Uninstall
 
-Defender for Endpoint for Linux をアンインストールするには、いくつかの方法があります。 Puppet などの構成ツールを使用している場合は、構成ツールのパッケージのアンインストール手順に従います。
+Linux で Defender for Endpoint をアンインストールするには、いくつかの方法があります。 Puppet などの構成ツールを使用している場合は、構成ツールのパッケージのアンインストール手順に従います。
 
 ### <a name="manual-uninstallation"></a>手動アンインストール
 

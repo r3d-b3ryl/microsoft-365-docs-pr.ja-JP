@@ -1,6 +1,6 @@
 ---
 title: 管理セキュリティ サービス プロバイダー (MSSP) へのアクセスを許可する
-description: Microsoft Defender ATP との MSSP 統合を構成するために必要な手順を実行する
+description: Microsoft Defender for Endpoint との MSSP 統合を構成するために必要な手順を実行する
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1bb7bc3565bbb7c05f165c5649f3672ff33bb18b
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165455"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932753"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>管理セキュリティ サービス プロバイダー (MSSP) アクセス権の付与 (プレビュー)
 
@@ -32,7 +32,7 @@ ms.locfileid: "51165455"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 >[!IMPORTANT] 
 >一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -136,7 +136,7 @@ ms.locfileid: "51165455"
 
 ## <a name="related-topics"></a>関連項目
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
-- [アラート通知の構成](configure-mssp-notifications.md)
+- [アラート通知を構成する](configure-mssp-notifications.md)
 - [顧客テナントからアラートを取得する](fetch-alerts-mssp.md)
 
 

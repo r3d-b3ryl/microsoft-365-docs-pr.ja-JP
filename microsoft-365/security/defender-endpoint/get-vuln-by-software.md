@@ -1,7 +1,7 @@
 ---
-title: ソフトウェア別に脆弱性を一覧表示する
+title: ソフトウェアによる脆弱性の一覧表示
 description: インストールされているソフトウェアの脆弱性の一覧を取得します。
-keywords: apis, graph api, supported api, get, vulnerabilities list, mdatp tvm api
+keywords: apis, graph api, supported api, get, vulnerabilities list, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f05c1a67c845e7f88cbcb3ee88cf7a664d5a4bf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c28417d9782d14d890e771ed401f8ee5d3c26bc0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167211"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932765"
 ---
-# <a name="list-vulnerabilities-by-software"></a>ソフトウェア別に脆弱性を一覧表示する
+# <a name="list-vulnerabilities-by-software"></a>ソフトウェアによる脆弱性の一覧表示
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "51167211"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -56,9 +56,9 @@ GET /api/Software/{Id}/vulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前        | 種類 | 説明
+| 名前        | 型 | 説明
 |:--------------|:-------|:--------------|
-| Authorization | 文字列 | ベアラー {token}。**必須**。
+| Authorization | String | ベアラー {token}。**必須**。
 
 ## <a name="request-body"></a>要求本文
 Empty

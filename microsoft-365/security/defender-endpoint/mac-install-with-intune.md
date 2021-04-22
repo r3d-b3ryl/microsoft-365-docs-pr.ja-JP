@@ -1,7 +1,7 @@
 ---
-title: MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
-description: Microsoft Intune を使用して、macOS に Microsoft Defender for Endpoint をインストールします。
-keywords: microsoft、 defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Microsoft Defender for Endpoint on Mac の Intune ベースの展開
+description: Microsoft Intune を使用して、Microsoft Defender for Endpoint を Mac にインストールします。
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dbb4e3a558256f19594ab0aa4efbd2c9eed6b7f8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: c98ce17b7b71f2d05aeffe66dbb1e08f9046f463
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764217"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933147"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -37,7 +37,7 @@ ms.locfileid: "51764217"
 
 **適用対象:**
 
-- [macOS 上のエンドポイント用 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 
 このトピックでは、Intune を介して macOS に Microsoft Defender for Endpoint を展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
 
@@ -160,7 +160,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 1. Intune で、[デバイス構成の **管理**  >  **] を開きます**。 [プロファイル **の**  >  **管理] [プロファイルの**  >  **作成] を選択します**。
 
-2. プロファイルの名前を選択します。 **Platform=macOS を Profile** **type=Extensions に変更します**。 **[作成]** を選択します。
+2. プロファイルの名前を選択します。 **Platform=macOS を Profile** **type=Extensions に変更します**。 [**作成**] を選択します。
 
 3. [基本 **] タブ** で、この新しいプロファイルに名前を付きます。
 
@@ -186,7 +186,7 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 3. 構成プロファイルを開き、intune/kext.xml。 このファイルは、前のセクションの 1 つで作成されました。
 
-4. **[OK]** を選択します。
+4. [**OK**] を選択します。
 
     ![カスタム構成プロファイルのファイルから構成をインポートする](images/mdatp-6-systemconfigurationprofiles.png)
 

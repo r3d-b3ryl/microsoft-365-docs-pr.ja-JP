@@ -1,7 +1,7 @@
 ---
 title: Linux 上のエンドポイント用 Microsoft Defender のプライバシー
 description: プライバシー制御、プライバシーに影響を与えるポリシー設定を構成する方法、および Microsoft Defender for Endpoint on Linux で収集された診断データに関する情報。
-keywords: microsoft、Defender、atp、Linux、プライバシー、診断
+keywords: microsoft、defender、Microsoft Defender for Endpoint、Linux、プライバシー、診断
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903252"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933339"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender のプライバシー
 
@@ -33,13 +33,13 @@ ms.locfileid: "51903252"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft は、Defender for Endpoint for Linux を使用する場合に、データの収集方法と使用方法について選択する必要がある情報とコントロールを提供します。
+Microsoft は、Defender for Endpoint on Linux を使用する場合に、データの収集方法と使用方法について選択する必要がある情報とコントロールを提供します。
 
 このトピックでは、製品内で使用できるプライバシーコントロール、ポリシー設定を使用してこれらのコントロールを管理する方法、および収集されるデータ イベントの詳細について説明します。
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のプライバシー制御の概要
 
-このセクションでは、Defender for Endpoint for Linux によって収集されるさまざまな種類のデータのプライバシー制御について説明します。
+このセクションでは、Defender for Endpoint on Linux によって収集されるさまざまな種類のデータのプライバシー制御について説明します。
 
 ### <a name="diagnostic-data"></a>診断ログ
 
@@ -75,7 +75,7 @@ Defender for Endpoint クライアント ソフトウェアの診断データに
 
 IT 管理者の場合は、エンタープライズ レベルでこれらのコントロールを構成できます。 
 
-前のセクションで説明した各種データのプライバシー制御については、「Defender for Endpoint for Linux の設定」 [で詳しく説明します](linux-preferences.md)。
+前のセクションで説明した各種データのプライバシー制御については、「Defender for Endpoint on Linux の設定」 [で詳しく説明します](linux-preferences.md)。
 
 新しいポリシー設定と同様に、組織でポリシー設定を広く実装する前に、構成する設定が望ましい効果を得られるか確認するために、制限された制御された環境で慎重にテストする必要があります。
 
@@ -96,7 +96,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 | org_id                  | デバイスが属する企業に関連付けられた一意の識別子。 Microsoft は、問題が一部の企業に影響を与えるかどうか、および影響を受け取る企業の数を特定できます。 |
 | ホスト名                | ローカル デバイス名 (DNS サフィックスなし)。 Microsoft は、問題がインストールの選択セットに影響を与えるかどうか、および影響を受け取るユーザーの数を特定できます。 |
 | product_guid            | 製品の一意の識別子。 Microsoft は、製品の異なる味に影響を与える問題を区別できます。 |
-| app_version             | Defender for Endpoint for Linux アプリケーションのバージョン。 Microsoft は、問題を表示している製品のバージョンを特定して、問題の優先順位を正しく設定できます。|
+| app_version             | Linux アプリケーションの Defender for Endpoint のバージョン。 Microsoft は、問題を表示している製品のバージョンを特定して、問題の優先順位を正しく設定できます。|
 | sig_version             | セキュリティ インテリジェンス データベースのバージョン。 Microsoft が問題を表示しているセキュリティ インテリジェンスのバージョンを特定して、問題を正しく優先順位付けできます。 |
 | supported_compressions  | アプリケーションでサポートされている圧縮アルゴリズムの一覧 (例 `['gzip']` : . Microsoft は、アプリケーションと通信するときに使用できる圧縮の種類を理解できます。 |
 | release_ring            | デバイスが関連付けられているリング (Insider Fast、Insider Slow、Production など)。 Microsoft は、問題が発生している可能性のあるリリース リングを特定して、問題の優先順位を正しく設定できます。 |
@@ -163,7 +163,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 | Field            | 説明 |
 | ---------------- | ----------- |
-| version          | Defender for Endpoint for Linux のバージョン。 |
+| version          | Linux 上のエンドポイント用 Defender のバージョン。 |
 | instance_id      | カーネル拡張機能の起動時に生成される一意の識別子。 |
 | trace_level      | カーネル拡張機能のトレース レベル。 |
 | サブシステム        | リアルタイム保護に使用される基になるサブシステム。 |
@@ -178,7 +178,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 診断ログは、フィードバック送信機能の一部としてユーザーの同意を得た場合にのみ収集されます。 次のファイルは、サポート ログの一部として収集されます。
 
 - */var/log/microsoft/mdatp の下のすべてのファイル*
-- Defender for Endpoint for Linux で作成および使用される */etc/opt/microsoft/mdatp* の下のファイルのサブセット
+- Defender for Endpoint on Linux で作成および使用される */etc/opt/microsoft/mdatp* の下のファイルのサブセット
 - *\* /var/log/microsoft_mdatp_ .log の下の製品のインストールとアンインストール ログ*
 
 ### <a name="optional-diagnostic-data"></a>オプションの診断データ

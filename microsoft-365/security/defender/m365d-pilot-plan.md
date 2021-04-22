@@ -1,7 +1,7 @@
 ---
 title: パイロット Microsoft 365 Defender プロジェクトの計画
 description: パイロットの Microsoft 365 Defender プロジェクトを関係者と計画して、期待を管理し、成功した結果を確実に達成します。
-keywords: Microsoft Threat Protection パイロット、パイロット Microsoft Threat Protection プロジェクトの計画、実稼働での Microsoft Threat Protection の評価、Microsoft Threat Protection パイロット プロジェクト、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
+keywords: Microsoft 365 Defender パイロット、パイロット Microsoft 365 Defender プロジェクトの計画、Microsoft 365 Defender の実稼働での評価、Microsoft 365 Defender パイロット プロジェクト、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度なハンティング
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aee508414b2388b04ab362eedb1f894a4c3d54fd
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 98f0c91a51cc2b73cc26e6fb53143a417a7a147e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063436"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932549"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>パイロット Microsoft 365 Defender プロジェクトの計画 
 
@@ -61,7 +61,7 @@ ms.locfileid: "51063436"
 
 評価するオペレーティング システムの種類も、組織の構成に基づいて定義する必要があります。 これには[、Mac](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements)エンドポイント[、Linux サーバー](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements) [、Windows 10 エンドポイント](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)[、Windows Server 2016](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)が含まれます。
 
-## <a name="use-cases"></a>ユース ケース
+## <a name="use-cases"></a>使用例
 
 使用例は、テスト対象のツールが意図したユーザーによって使用される方法のステートメントを表します。 これらは、SOC アナリストなど、特定のペルソナの観点からユーザー ストーリーとして策定できます。 例:
 - SOC アナリストとして、ネットワーク内のデバイス、ユーザー、メールボックス間でアラートとイベントを表示、関連付け、評価、管理する必要があります。 [インシデント管理]
@@ -86,7 +86,7 @@ ms.locfileid: "51063436"
 
 プランのすべての要素をまとめる方法の 1 つは、スコアカードを作成する方法です。 以下のスコアカードのサンプルを参照してください。
 
-| ユース ケース | 要件 | 構成要件 | テスト計画 | 予想結果 | テストの状態 | スコア | メモ |
+| ユース ケース | 要件 | 構成要件 | テスト計画 | 予想結果 | テストの状態 | スコア | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |インシデント管理|- Microsoft 365 Defender  </br></br>- Microsoft Defender for Identity </br></br>- エンドポイント用 Microsoft Defender </br></br>- Microsoft Cloud App Security (オプション)|詳細については [、「準備](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 、セットアップ、および構成の前提条件」を参照してください。 |[攻撃のシミュレーション](m365d-pilot-simulate.md) <br></br>[インシデントの調査](./m365d-pilot-simulate.md#investigate-an-incident) |調査担当者は、インシデントの範囲と影響を理解し、インシデントを管理できます。||||
 |AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- エンドポイント用 Microsoft Defender |詳細については [、「準備](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 、セットアップ、および構成の前提条件」を参照してください。 <br>自動IR を有効にする  |[攻撃のシミュレーション](m365d-pilot-simulate.md) <br></br>[自動調査](m365d-pilot-simulate.md#automated-investigation-and-remediation) |アラートとインシデントは、Microsoft 365 Defender によって自動的に修復されます。||||

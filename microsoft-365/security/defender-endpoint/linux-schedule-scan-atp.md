@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint (Linux) でスキャンをスケジュールする方法
 description: 組織の資産をよりよく保護するために、Microsoft Defender for Endpoint (Linux) の自動スキャン時間をスケジュールする方法について説明します。
-keywords: microsoft、Defender、atp、Linux、スキャン、ウイルス対策、エンドポイント用 microsoft Defender (Linux)
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, スキャン, ウイルス対策, microsoft Defender for endpoint (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3f5d4c490e28c7985a0420fa5013a8e0f51a167
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f868570fccf9b30cde5f16aa8e71292fb8b09497
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065723"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933135"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) でのスキャンのスケジュール設定
 
@@ -115,7 +115,7 @@ Puppet による自動化: Cron ジョブとスケジュールされたタスク
 
 詳細については、「[https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/)」を参照してください。
 
-## <a name="additional-information"></a>ページの先頭へ
+## <a name="additional-information"></a>追加情報
 
 **crontab のヘルプを表示するには**
 

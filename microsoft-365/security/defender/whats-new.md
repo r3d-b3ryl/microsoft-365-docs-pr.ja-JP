@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender の新機能
 description: Microsoft 365 Defender の新機能と機能の一覧
-keywords: microsoft Threat Protection の新機能、ga、一般提供、機能、利用可能、新しい
+keywords: Microsoft 365 Defender の新機能、ga、一般提供、機能、利用可能、新しい
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e75cfe445f62860f8bdb1480fcf9029daa8ac6ea
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068243"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933387"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 

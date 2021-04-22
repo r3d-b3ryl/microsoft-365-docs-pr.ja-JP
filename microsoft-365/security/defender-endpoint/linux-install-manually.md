@@ -2,7 +2,7 @@
 title: Linux での Microsoft Defender for Endpoint の手動展開
 ms.reviewer: ''
 description: コマンド ラインから手動で Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
-keywords: microsoft、 defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2beb46c62de2e9720d1626e0e1e5ce806a6d7e19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903918"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929087"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
@@ -58,7 +58,7 @@ ms.locfileid: "51903918"
 
 ## <a name="configure-the-linux-software-repository"></a>Linux ソフトウェア リポジトリの構成
 
-Defender for Endpoint for Linux は、以下のいずれかのチャネル *([channel] と* 示す) から展開できます。insiders-fast *、insiders-slow、**または prod* です。 これらの各チャネルは、Linux ソフトウェア リポジトリに対応します。 これらのリポジトリのいずれかを使用するためにデバイスを構成する手順を以下に示します。
+Defender for Endpoint on Linux は、以下のいずれかのチャネル *([channel]* と示す) から展開できます。insiders-fast *、insiders-slow、**または prod* です。 これらの各チャネルは、Linux ソフトウェア リポジトリに対応します。 これらのリポジトリのいずれかを使用するためにデバイスを構成する手順を以下に示します。
 
 チャネルの選択によって、デバイスに提供される更新プログラムの種類と頻度が決されます。 *insiders-fast* のデバイスは、更新プログラムと新機能を受け取る最初のデバイスで、後で *insiders-slow* と最後に *prod が続きます*。
 
@@ -86,7 +86,7 @@ Defender for Endpoint for Linux は、以下のいずれかのチャネル *([ch
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    たとえば、CentOS 7 を実行し、Prod チャネルから Defender for Endpoint for Linux を展開する場合は、次の *コマンドを実行* します。
+    たとえば、CentOS 7 を実行し、Prod チャネルから Linux 上の Defender for Endpoint を展開する場合は、次の *コマンドを実行* します。
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -328,7 +328,7 @@ Microsoft Defender セキュリティ センターからオンボーディング
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > 初期インストールの完了後にプロキシの構成が必要な場合があります。 静的 [プロキシ検出用に Defender for Endpoint for Linux を構成する: インストール後の構成を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
+    > 初期インストールの完了後にプロキシの構成が必要な場合があります。 「Configure Defender for Endpoint on Linux for static proxy [discovery: Post-installation configuration」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
 
 5. 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
 
@@ -344,7 +344,7 @@ Microsoft Defender セキュリティ センターからオンボーディング
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - このファイルは、Defender for Endpoint for Linux によって検疫されている必要があります。 次のコマンドを使用して、検出された脅威の一覧を表示します。
+    - このファイルは、Linux 上の Defender for Endpoint によって検疫されている必要があります。 次のコマンドを使用して、検出された脅威の一覧を表示します。
 
         ```bash
         mdatp threat list
@@ -381,7 +381,7 @@ Options:
 
 ## <a name="operating-system-upgrades"></a>オペレーティング システムのアップグレード
 
-オペレーティング システムを新しいメジャー バージョンにアップグレードする場合は、まず Defender for Endpoint for Linux をアンインストールし、アップグレードをインストールし、最後にデバイスで Defender for Endpoint for Linux を再構成する必要があります。
+オペレーティング システムを新しいメジャー バージョンにアップグレードする場合は、まず、Linux 上の Defender for Endpoint をアンインストールし、アップグレードをインストールし、最後にデバイス上で Defender for Endpoint on Linux を再構成する必要があります。
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>サーバーから実稼働チャネルInsiders-Fast移行する方法
 
@@ -406,4 +406,4 @@ Options:
 
 ## <a name="uninstallation"></a>アンインストール
 
-クライアント デバイス [から Defender](linux-resources.md#uninstall) for Endpoint for Linux を削除する方法の詳細については、「アンインストール」を参照してください。
+クライアント デバイス [から Linux](linux-resources.md#uninstall) 上の Defender for Endpoint を削除する方法の詳細については、「アンインストール」を参照してください。

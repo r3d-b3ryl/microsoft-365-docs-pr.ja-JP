@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587721"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929111"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストのデバイスを調査する
 
@@ -172,12 +172,12 @@ ms.locfileid: "51587721"
 
 ### <a name="active-alerts"></a>アクティブなアラート
 
-Azure Advanced **Threat Protection** カードには、Azure ATP 機能を有効にし、アクティブなアラートがある場合、デバイスとそのリスク レベルに関連するアラートの概要が表示されます。 詳細については、「アラート」ドリルダウンで確認できます。
+Microsoft Defender for Identity 機能を有効にし、アクティブなアラートがある場合、Azure Advanced **Threat Protection** カードには、デバイスとそのリスク レベルに関連するアラートの概要が表示されます。 詳細については、「アラート」ドリルダウンで確認できます。
 
 ![アクティブなアラート カードのイメージ](images/risk-level-small.png)
 
 >[!NOTE]
->この機能を使用するには、Azure ATP と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
+>この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
 
 ### <a name="logged-on-users"></a>ログオンしているユーザー
 

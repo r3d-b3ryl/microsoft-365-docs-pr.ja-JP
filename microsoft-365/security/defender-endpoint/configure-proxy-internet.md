@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893603"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932801"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -176,7 +176,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 *.blob.core.windows.net URL エンドポイントは、テスト結果の 「ファイアウォール ルール: *.blob.core.windows.net」セクションに示されている URL に置き換え可能です。 
 
 > [!NOTE]
-> Azure Security Center (ASC) 経由でオンボーディングを行う場合、複数のワークスペースが使用される可能性があります。 上記の TestCloudConnection.exe 手順を、各ワークスペースのオンボード コンピューターで実行する必要があります (ワークスペース間で *.blob.core.windows.net URL に変更が加わるかどうかを判断するには)。
+> Azure Defender 経由でオンボーディングを行う場合、複数のワークスペースが使用されている可能性があります。 上記の TestCloudConnection.exe 手順を、各ワークスペースのオンボード コンピューターで実行する必要があります (ワークスペース間で *.blob.core.windows.net URL に変更が加わるかどうかを判断するには)。
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>エンドポイント サービス URL 用 Microsoft Defender へのクライアント接続を確認する
 

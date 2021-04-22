@@ -1,7 +1,7 @@
 ---
 title: パイロット Microsoft 365 Defender プロジェクトの結果の概要
 description: スコアカードを完了し、レポートの結果を分析し、前進する方法を決定することで、パイロット Microsoft 365 Defender プロジェクトを終了します。
-keywords: Microsoft Threat Protection パイロットは、Microsoft Threat Protection のパイロット プロジェクトの後に何を行うのか、Microsoft Threat Protection の評価後に実行する操作、Microsoft Threat Protection パイロットから展開への移行、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な捜し方を決定します。
+keywords: Microsoft 365 Defender パイロットは、Microsoft 365 Defender プロジェクトのパイロットの後に次に何を行うかを決定し、Microsoft 365 Defender パイロットから展開、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度なハンティングに移行した後の処理を決定します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2553e88992b7eca906b4697edee4cdf632929444
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 64cdb37b64780a651b2689e68e21c5a385df5ba9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068611"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932871"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Microsoft 365 Defender パイロットの終了と概要  
 

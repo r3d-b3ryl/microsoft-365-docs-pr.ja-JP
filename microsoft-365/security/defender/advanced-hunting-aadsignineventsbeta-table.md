@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの AADSignInEventsBeta テーブル
 description: 高度なハンティング スキーマの Azure Active Directory サインイン イベント テーブルに関連付けられている情報について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft の脅威保護、microsoft 365、mtp、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b595496c28710bfa25fc88653425242770bf57f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063619"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932609"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -35,7 +35,7 @@ ms.locfileid: "51063619"
 
 >[!IMPORTANT]
 > この `AADSignInEventsBeta` 表は現在ベータ版で、Azure Active Directory (AAD) サインイン イベントをハントするために短期的に提供されています。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。<br><br>
-> Azure Security Center の統合された Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできますが、microsoft Defender for Office、Microsoft Defender for Identity、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
+> Azure Defender の統合された Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできますが、microsoft Defender for Office、Microsoft Defender for Identity、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
 
  
 
@@ -61,7 +61,7 @@ ms.locfileid: "51063619"
 | `AccountObjectId`                 | string        | Azure アカウントのアカウントの一意AD                                                                                                                                       |
 | `AccountUpn`                      | string        | アカウントのユーザー プリンシパル名 (UPN)                                                                                                                                            |
 | `IsExternalUser`                  | int        | サインインしたユーザーが外部かどうかを示します。 指定できる値: -1 (設定されていない) 、0 (外部ではない)、1 (外部)。                                                                   |
-| `IsGuestUser`                     | boolean       | サインインしたユーザーがテナントのゲストかどうかを示します。                                                                                                                  |
+| `IsGuestUser`                     | ブール値       | サインインしたユーザーがテナントのゲストかどうかを示します。                                                                                                                  |
 | `AlternateSignInName`             | string        | Azure サーバーにサインインするユーザーのオンプレミス ユーザー プリンシパル名 (UPN) AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | 日付型        | 最後にサインインしたユーザーがパスワードを変更した日時                                                                                                              |
 | `ResourceDisplayName`             | string        | アクセスされたリソースの表示名                                                                                                                                               |
@@ -101,7 +101,7 @@ ms.locfileid: "51063619"
 ## <a name="related-articles"></a>関連記事
 
 -   [AADSpnSignInEventsBeta](./advanced-hunting-aadspnsignineventsbeta-table.md)
--   [高度な検出の概要](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+-   [高度な追求の概要](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 -   [クエリ言語の説明](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
 -   [スキーマを理解する](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP の API エクスプローラー
+title: エンドポイント向け Microsoft Defender の API エクスプローラー
 ms.reviewer: ''
 description: API エクスプローラーを使用して、API クエリの作成と実行、テスト、および使用可能な API の要求の送信を行う
 keywords: api, explorer, send, request, get, post,
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0cfe5227d5d1cdb1f1f4eaea2c859937d7e75264
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b8d0d991e46464bae3b4d21d6218b9b3b2d2b4cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065060"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930115"
 ---
 # <a name="api-explorer"></a>API エクスプローラー
 
@@ -63,7 +63,7 @@ API エクスプローラーは、Defender for Endpoint によって提供され
 
 一部のサンプルでは、URL にパラメーター ({machine- ID} など) を指定する必要があります。
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 **API エクスプローラーを使用するには、API トークンが必要ですか?** <br>
 API にアクセスするための資格情報は必要とされません。 API エクスプローラーは、要求を行うたびに Defender for Endpoint 管理ポータル トークンを使用します。

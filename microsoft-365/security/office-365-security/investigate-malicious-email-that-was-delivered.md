@@ -1,6 +1,6 @@
 ---
 title: 365 で配信された悪意のあるOffice調査する、悪意のあるメールを検索して調査する
-keywords: TIMailData-Inline、セキュリティ インシデント、インシデント、ATP PowerShell、電子メール マルウェア、侵害されたユーザー、メール フィッシング、電子メール マルウェア、電子メール ヘッダーの読み取り、ヘッダーの読み取り、電子メール ヘッダーの開く、特別なアクション
+keywords: TIMailData-Inline、セキュリティ インシデント、インシデント、Microsoft Defender for Endpoint PowerShell、電子メール マルウェア、侵害されたユーザー、メールフィッシング、電子メール マルウェア、電子メール ヘッダーの読み取り、ヘッダーの読み取り、電子メール ヘッダーの開く、特別なアクション
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,12 +20,12 @@ description: 脅威の調査と対応機能を使用して悪意のあるメー�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2781850eacf8b0fcf4909406aca335f1bbeb0753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 02e396cac060f2b8431b2b70e89c18950596d9c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205473"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933375"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>365 で配信された悪意のあるOfficeする
 
@@ -41,7 +41,7 @@ ms.locfileid: "51205473"
 > [!NOTE]
 > 修復に関する記事については、こちらを参照 [してください](remediate-malicious-email-delivered-office-365.md)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 次の要件が満たされていることを確認してください。
 
@@ -59,7 +59,7 @@ ms.locfileid: "51205473"
 
 ****
 
-|アクティビティ|役割グループ|役割のプレビューが必要ですか?|
+|最新情報|役割グループ|役割のプレビューが必要ですか?|
 |---|---|---|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メール メッセージのヘッダーを表示し、検疫済みメール メッセージをプレビューおよびダウンロードする|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|

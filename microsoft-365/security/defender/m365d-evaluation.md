@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender
 description: Microsoft 365 Defender 試用版ラボまたはパイロット環境をセットアップして、組織内のデバイス、ID、データ、アプリケーションを保護するように設計されたセキュリティ ソリューションを試して体験します。
-keywords: Microsoft Threat Protection 試用版、Microsoft Threat Protection の試用、Microsoft Threat Protection の評価、Microsoft Threat Protection 評価ラボ、Microsoft Threat Protection パイロット、サイバーセキュリティ、高度な永続的な脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
+keywords: Microsoft 365 Defender 試用版、Microsoft 365 Defender の試用、Microsoft 365 Defender、Microsoft 365 Defender 評価ラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2ea829e0e2697facd2522dbf16ced7d620662eee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1c260588b80d8325567b74148a7a62586cfbc707
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068619"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933171"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Microsoft 365 Defender 試用版ラボまたはパイロット環境を作成する 
 

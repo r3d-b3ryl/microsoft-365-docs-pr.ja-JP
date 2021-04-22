@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Microsoft Viva のトピックを設定する方法について説明します。
-ms.openlocfilehash: 629008e083d71e09632b05e21eaefb011d7d9ce2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929446"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930223"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Microsoft Viva のトピックを設定する
 
@@ -37,6 +37,27 @@ Microsoft 365 管理センターにアクセスしてトピックを設定する
 
 <br>
 
+## <a name="assign-licenses"></a>ライセンスを割り当てる
+
+トピックを使用するユーザーにライセンスを割り当てる必要があります。 ライセンスを持つユーザーだけが、ハイライト、トピック カード、トピック ページ、トピック センターなどのトピックに関する情報を表示できます。 
+
+ライセンスを割り当てる
+
+1. Microsoft 365 管理センターで、**[ユーザー** ]、[**アクティブなユーザー**]の順にクリックします。
+
+2. ライセンスを取得するユーザーを選択し、[ライセンスとアプリ] **をクリックします**。
+
+3. [ライセンス **] で**、[ビバ トピック] **を選択します**。
+
+4. [ **アプリ]** で **、[Graph Connectors Search with Index (Viva Topics)** と **Viva Topics の** 両方が選択されている必要があります。
+
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft 365 管理センターの Microsoft Viva Topics ライセンス](../media/topic-experiences-licenses.png)
+
+5. **[変更の保存]** をクリックします。
+
+ライセンスが割り当てられた後、ユーザーがトピックにアクセスするには、最大で 1 時間かかる場合があります。
+
 ## <a name="set-up-topics"></a>トピックを設定する
 
 トピックを設定するには
@@ -48,7 +69,7 @@ Microsoft 365 管理センターにアクセスしてトピックを設定する
 
 3. [ユーザーを **ナレッジに接続する] ページ** で、[スタート] **を** クリックしてセットアップ プロセスを説明します。
 
-    ![作業の開始](../media/k-get-started.png) 
+    ![開始する](../media/k-get-started.png) 
 
 4. [ビバ **トピックの検索方法の選択] ページ** で、トピックの検出を構成します。 **[SharePoint トピック ソースの選択**] セクションで、検出中にトピックのソースとしてクロールする SharePoint サイトを選択します。 次から選択します。
     - **すべてのサイト**: 組織内のすべての SharePoint サイト。 これには、現在および将来のサイトが含まれます。
@@ -124,25 +145,6 @@ Microsoft 365 管理センターにアクセスしてトピックを設定する
     ![適用される設定](../media/ksetup7.png)    
 
 最初にトピックの検出を有効にすると、すべての推奨トピックが [トピックの管理] ビューに表示されるまで最大 2 週間かかる場合があります。 トピックの検出は、コンテンツの新しいコンテンツまたは更新が行われた後も継続されます。 ビバ トピックスが新しい情報を評価する場合、組織で提案されるトピックの数が変動するのが普通です。
-
-## <a name="assign-licenses"></a>ライセンスを割り当てる
-
-トピック エクスペリエンスを構成したら、トピックを使用するユーザーにライセンスを割り当てる必要があります。 ライセンスを持つユーザーだけが、ハイライト、トピック カード、トピック ページ、トピック センターなどのトピックに関する情報を表示できます。 
-
-ライセンスを割り当てる
-
-1. Microsoft 365 管理センターで、**[ユーザー** ]、[**アクティブなユーザー**]の順にクリックします。
-
-2. ライセンスを取得するユーザーを選択し、[ライセンスとアプリ] **をクリックします**。
-
-3. [ライセンス **] で**、[ビバ トピック] **を選択します**。
-
-4. [ **アプリ]** で **、[Graph Connectors Search with Index (Viva Topics)** と **Viva Topics の** 両方が選択されている必要があります。
-
-   > [!div class="mx-imgBorder"]
-   > ![Microsoft 365 管理センターの Microsoft Viva Topics ライセンス](../media/topic-experiences-licenses.png)
-
-5. **[変更の保存]** をクリックします。
 
 ## <a name="manage-topic-experiences"></a>トピック エクスペリエンスの管理
 

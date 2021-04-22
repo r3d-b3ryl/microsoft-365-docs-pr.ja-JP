@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 の新機能
 description: Microsoft Defender for microsoft Defender for Office 365 で利用できる新機能について説明します。
-keywords: 365 atp、ga、Office一般提供、機能、利用可能、新機能の新機能
+keywords: Microsoft Defender for Office 365, ga, generally available, capabilitis, available, new
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dd691b0d018db2b7afb3b88a2c1f9f7f8a39a33
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4bb1450790883deec295f554ddf9614c0f01fe2d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569781"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930485"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -38,7 +38,7 @@ ms.locfileid: "51569781"
 
 この記事では、Microsoft Defender for microsoft Defender for Office一覧を示します。 現在プレビュー中の機能は (プレビュー) **で示されます**。
 
-詳しくは、このビデオ [をご覧ください](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3)。
+[このビデオ](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3)を見て詳細をご確認ください。
 > [!TIP]
 > Microsoft Defender for Office 365 がありませんか? [試用版を開始するために販売に問い合わせ。](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 

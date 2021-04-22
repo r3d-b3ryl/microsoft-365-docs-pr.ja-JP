@@ -19,12 +19,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: a9625b391260d27610bb304b0ae3788b541b7709
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912010"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930235"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>登録番号とレビュー中の通知について
 
@@ -36,7 +36,7 @@ ms.locfileid: "50912010"
 
 登録番号が必須の国の場合、テキスト ボックスの上のラベルは、必要な番号の種類を示します。
 
-たとえば、次のスクリーンショットでは、ラベルは CNPJ 登録番号が必要な状態を示しています。
+たとえば、次のスクリーンショットでは、ラベルは CNPJ (ブラジル) 登録番号が必要かどうかを示しています。
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="C N P J 番号の登録番号フィールドのスクリーンショット。":::
 

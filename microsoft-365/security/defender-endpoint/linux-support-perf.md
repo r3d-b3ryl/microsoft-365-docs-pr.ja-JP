@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint on Linux のパフォーマンスの問題のトラブルシューティング
-description: Linux 上の Microsoft Defender Endpoint のパフォーマンスの問題をトラブルシューティングします。
-keywords: microsoft、Defender、atp、Linux、パフォーマンス
+description: Microsoft Defender for Endpoint on Linux のパフォーマンスの問題をトラブルシューティングします。
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, linux, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903988"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933219"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のパフォーマンスの問題のトラブルシューティング
 
@@ -34,17 +34,17 @@ ms.locfileid: "51903988"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-この記事では、Defender for Endpoint for Linux に関連するパフォーマンスの問題を絞り込む一般的な手順について説明します。
+この記事では、Defender for Endpoint on Linux に関連するパフォーマンスの問題を絞り込む一般的な手順について説明します。
 
-リアルタイム保護 (RTP) は、デバイスを継続的に監視し、脅威から保護する Defender for Endpoint for Linux の機能です。 ファイルとプロセスの監視、その他のヒューリスティックで構成されます。
+リアルタイム保護 (RTP) は、デバイスを継続的に監視し、脅威から保護する、Linux 上の Defender for Endpoint の機能です。 ファイルとプロセスの監視、その他のヒューリスティックで構成されます。
 
-実行中のアプリケーションとデバイスの特性によっては、Defender for Endpoint for Linux を実行するときに最適でないパフォーマンスが発生する場合があります。 特に、短時間で多くのリソースにアクセスするアプリケーションまたはシステム プロセスは、Defender for Endpoint for Linux のパフォーマンスの問題につながる可能性があります。
+実行中のアプリケーションとデバイスの特性によっては、Defender for Endpoint on Linux を実行するときに最適でないパフォーマンスが発生する場合があります。 特に、短時間で多くのリソースにアクセスするアプリケーションまたはシステム プロセスは、Defender for Endpoint on Linux のパフォーマンスの問題につながる可能性があります。
 
 開始する前に、 **他のセキュリティ製品がデバイスで現在実行されていないか確認してください**。 複数のセキュリティ製品が競合し、ホストのパフォーマンスに影響を与える可能性があります。
 
 次の手順を使用して、これらの問題のトラブルシューティングと軽減を行います。
 
-1. 次のいずれかの方法を使用してリアルタイム保護を無効にし、パフォーマンスが向上するかどうかを確認します。 この方法は、Defender for Endpoint for Linux がパフォーマンスの問題に貢献するかどうかを絞り込むのに役立ちます。
+1. 次のいずれかの方法を使用してリアルタイム保護を無効にし、パフォーマンスが向上するかどうかを確認します。 この方法は、Defender for Endpoint on Linux がパフォーマンスの問題に貢献するかどうかを絞り込むのに役立ちます。
 
     デバイスが組織によって管理されていない場合は、コマンド ラインからリアルタイム保護を無効にすることができます。
 
@@ -55,11 +55,11 @@ ms.locfileid: "51903988"
     Configuration property updated
     ```
 
-    デバイスが組織によって管理されている場合は [、「Defender for Endpoint for Linux](linux-preferences.md)の設定」の手順に従って、管理者がリアルタイム保護を無効にすることができます。
+    デバイスが組織によって管理されている場合は、「Defender for Endpoint on Linux の設定」の手順に従って、管理者がリアルタイム保護 [を無効にすることができます](linux-preferences.md)。
 
     リアルタイム保護がオフの間にパフォーマンスの問題が解決しない場合、問題の発生源はエンドポイント検出および応答コンポーネントである可能性があります。 この場合、詳細な手順と軽減策については、カスタマー サポートにお問い合わせください。
 
-2. 最も多くのスキャンをトリガーしているアプリケーションを見つけるには、Defender for Endpoint for Linux によって収集されたリアルタイム統計を使用できます。
+2. 最も多くのスキャンをトリガーしているアプリケーションを見つけるには、Defender for Endpoint on Linux によって収集されたリアルタイム統計を使用できます。
 
     > [!NOTE]
     > この機能は、バージョン 100.90.70 以降で使用できます。
@@ -140,11 +140,11 @@ ms.locfileid: "51903988"
     125  CrashPlanService 164
     ```
 
-    Defender for Endpoint for Linux のパフォーマンスを向上させるために、行の下に数値が最も高いディフェンダーを見つけて除外 `Total files scanned` を追加します。 詳細については、「Defender for Endpoint for Linux の除外の構成と検証 [」を参照してください](linux-exclusions.md)。
+    Defender for Endpoint on Linux のパフォーマンスを向上するには、行の下に数値が最も多いディフェンダーを見つけて除外 `Total files scanned` を追加します。 詳細については、「Linux での Defender for Endpoint の除外の構成と [検証」を参照してください](linux-exclusions.md)。
 
     >[!NOTE]
     > アプリケーションは、統計をメモリに格納し、ファイルのアクティビティが開始され、リアルタイム保護が有効にされた後にのみ追跡します。 リアルタイム保護がオフの前または期間中に起動されたプロセスはカウントされません。 さらに、トリガーされたスキャンがカウントされるイベントのみ。
 
-5. パフォーマンスの問題に寄与するプロセスまたはディスクの場所を除外し、リアルタイム保護を再び有効にして、Linux 上の Microsoft Defender Endpoint を構成します。
+5. パフォーマンスの問題に寄与するプロセスまたはディスクの場所を除外して、Microsoft Defender for Endpoint on Linux を構成し、リアルタイム保護を再び有効にしてください。
 
-    詳細については [、「Configure and validate exclusions for Microsoft Defender for Endpoint for Linux」を参照してください](linux-exclusions.md)。
+    詳細については [、「Configure and validate exclusions for Microsoft Defender for Endpoint on Linux」を参照してください](linux-exclusions.md)。
