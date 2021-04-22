@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender で 365 プラン 2 のユーザー タグを持つ特定のOfficeを識別する方法について説明します。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別するために、Office 365 で使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c439dcb91831475bc10da4a01d0fa29e7aae359
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632204"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943013"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365)
 
@@ -49,6 +49,9 @@ ms.locfileid: "51632204"
 この記事では、セキュリティ コンプライアンス センターでユーザー タグを構成する&説明します。 ユーザー タグを管理するセキュリティ &コンプライアンス センターにはコマンドレットはありません。
 
 影響の大きなユーザー アカウントを保護するための戦略の一部であるユーザー タグの詳細については [、「Microsoft 365](security-recommendations-for-priority-accounts.md)の優先アカウントのセキュリティに関する推奨事項」を参照してください。
+
+> [!NOTE]
+> 統合 Microsoft 365 セキュリティ センターを使用する場合は、次のタグを設定できます https://security.microsoft.com/userTags 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 

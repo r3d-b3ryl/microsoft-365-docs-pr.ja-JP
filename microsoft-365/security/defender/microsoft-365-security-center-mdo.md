@@ -2,7 +2,7 @@
 title: Microsoft 365 セキュリティ センターの Microsoft Defender for Office 365
 description: Office 365 セキュリティ/コンプライアンス センターから Microsoft 365 セキュリティ センターへの変更について説明します。
 keywords: Microsoft 365 セキュリティ、Microsoft 365 セキュリティ センターの使用を開始する、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、単一ウィンドウのガラス、新しいセキュリティ ポータル、新しい Defender セキュリティ ポータル
-ms.date: 02/02/2021
+ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 980a384d3c4fd44a368f35d6f885ea0c8288376a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b5decd562509d134899b85b380791087a913cd58
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935415"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943067"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの Microsoft Defender for Office 365
 
@@ -64,6 +64,9 @@ ms.locfileid: "51935415"
 
 > [!IMPORTANT]
 > Microsoft 365 セキュリティ ポータル (https://security.microsoft.com) は、https://securitycenter.windows.comとhttps://protection.office.comにあるキュリティ機能を組合わせています。 ただし、表示される内容はサブスクリプションによって異なります。 たとえば、Microsoft Defender for Office 365 Plan 1 または 2 をスタンドアロン サブスクリプションとしてお持ちの場合、Security for Endpoints 関連の機能は表示されません。また Defender for Office Plan 1 のお客様の場合、Threat Analytics などのアイテムは表示されません。
+
+> [!TIP]
+>  EOP は 365 の Defender のコア要素であるとして、すべての Exchange Online Protection (EOP) 機能が Microsoft 365 セキュリティ センターに含Officeされます。
 
 ## <a name="microsoft-365-security-center-home-page"></a>Microsoft 365 セキュリティ センターのホーム ページ
 

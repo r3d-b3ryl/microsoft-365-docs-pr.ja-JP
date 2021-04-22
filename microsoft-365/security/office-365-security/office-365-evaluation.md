@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -18,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935139"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51942995"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender を 365 のOfficeする
 
@@ -32,11 +33,14 @@ ms.locfileid: "51935139"
 > [!IMPORTANT]
 > Microsoft Defender for Office 365 評価はパブリック プレビュー中です。 このプレビュー バージョンは、サービス レベル契約なしで提供されます。 一部の機能はサポートされていないか、制限された機能を持っている可能性があります。
 
-包括的なセキュリティ製品評価を実施すると、アップグレードと購入に関する情報に基づいた意思決定を行う際に役立ちます。 セキュリティ製品の機能を試して、セキュリティ運用チームの日常業務に役立つ方法を評価するのに役立ちます。
+セキュリティ製品の徹底的な評価を実施すると、アップグレードと購入に関する情報に基づいた意思決定を行う際に役立ちます。 セキュリティ製品の機能を試して、セキュリティ運用チームの日常業務に役立つ方法を評価するのに役立ちます。
 
 [Microsoft Defender for Office 365](defender-for-office-365.md)評価エクスペリエンスは、デバイスと環境構成の複雑さを排除し、Microsoft Defender for Office 365 の機能の評価に集中できるよう設計されています。 評価モードでは、Exchange Online メールボックスに送信されるメッセージはすべて、MX レコードを Microsoft にポイントすることなく評価できます。 この機能はメール保護にのみ適用され、Word、SharePoint、Teams Officeクライアントには適用されません。
 
 microsoft Defender for Office 365 をサポートするライセンスをまだ持ってない場合は、無料[の 30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)日間の評価を開始し、Office 365 セキュリティ & コンプライアンス センター () で機能をテストできます。 https://protection.office.com/homepage) クイック セットアップを楽しめ、必要に応じて簡単にオフにできます。
+
+> [!NOTE]
+> 統合された Microsoft 365 セキュリティ ポータル (security.microsoft.com) を使用している場合は、Office 365 評価用の Defender を開始できます。メール & Collaboration > Policies & Rules > Threat Policies > 追加ポリシー)。
 
 ## <a name="how-the-evaluation-works"></a>評価のしくみ
 

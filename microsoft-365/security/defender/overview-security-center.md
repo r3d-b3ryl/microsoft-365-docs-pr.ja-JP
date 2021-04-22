@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f9bb0690cf48c4cc694c0d563ba7d4203953358a
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939266"
+ms.locfileid: "51943055"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>統合された Microsoft 365 セキュリティ センターの概要
 
@@ -50,6 +50,9 @@ Office 365 セキュリティ/コンプライアンス センターまたは Mic
 
 - [Microsoft 365 セキュリティ センターの Defender for Office 365](microsoft-365-security-center-mdo.md)
 - [Microsoft 365 セキュリティ センターの Defender for Endpoint](microsoft-365-security-center-mde.md)
+
+> [!NOTE]
+> Microsoft 365 セキュリティ ポータルは、既存の役割ベースのアクセスを使用して適用し、各セキュリティ モデルを統合ポータルに移動します。 統合された各ワークロード (MDO や MDE など) には、独自の役割ベースのアクセス権があります。 製品に既に存在する役割は、Microsoft 365 セキュリティ ポータルに自動的に統合されます。 ただし、MCAS の役割とアクセス許可は MCAS で引き続き処理されます。
 
 ## <a name="what-to-expect"></a>想定される変化
 
