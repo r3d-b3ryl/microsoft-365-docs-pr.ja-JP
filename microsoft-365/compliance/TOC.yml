@@ -138,6 +138,8 @@
           href: data-classification-content-explorer.md
         - name: アクティビティ エクスプローラーの使用を開始する
           href: data-classification-activity-explorer.md
+        - name: アクティビティ エクスプローラーで報告されたラベル付けアクション
+          href: data-classification-activity-explorer-available-events.md
         - name: データ分類のリリース ノート
           href: data-classification-pub-preview-relnotes.md
     - name: 秘密度ラベル
