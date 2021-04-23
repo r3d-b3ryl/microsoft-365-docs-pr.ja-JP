@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 5bf879bed31f4a8ddea868f28084148c3ec8afae
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edce65314062f731673926195be791f77d1cb823
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205036"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952550"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>ID およびデバイス アクセス ポリシーを実装するための前提条件作業
 
@@ -46,18 +46,18 @@ ms.locfileid: "51205036"
 
 次の表では、すべての ID モデルに適用される前提条件の機能と構成について説明します(ただし、特に示す場合を除く)。
 
-|構成|例外|
-|---|:---:|
-|[PHS を構成します](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  漏洩した資格情報を検出し、リスクベースの条件付きアクセスに対応するには、これを有効にする必要があります。 **注:** これは、組織がフェデレーション認証を使用するかどうかに関係なく必要です。|クラウド専用|
-|[シームレスなシングル サインオンを有効](/azure/active-directory/connect/active-directory-aadconnect-sso) にして、組織ネットワークに接続されている組織デバイスでユーザーが自動的にサインインします。|クラウド専用とフェデレーション|
-|[名前付き場所を構成します](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)。 Azure AD Identity Protection は使用できるすべてのセッション データを収集し、分析してリスク スコアを生成します。 Azure の名前付き場所構成で、組織のネットワークのパブリック IP AD指定することをお勧めします。 これらの範囲からのトラフィックにはリスク スコアが低下し、組織環境外からのトラフィックにはリスク スコアが高くなります。||
-|[セルフサービス パスワード リセット (SSPR)](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)および多要素認証 (MFA) に対してすべてのユーザーを登録します。 Azure AD多要素認証にユーザーを登録することをお勧めします。 Azure AD Id Protection では、Azure AD多要素認証を使用して、追加のセキュリティ検証を実行します。 さらに、最適なサインイン エクスペリエンスを得る場合は、ユーザーがデバイスに [Microsoft Authenticator](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) アプリと Microsoft Company Portal アプリをインストールすることをお勧めします。 これらは、プラットフォームごとにアプリ ストアからインストールできます。||
-|[ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にします](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。 条件付きアクセスでは、アプリに接続するデバイスがドメインに参加しているか、準拠しているかが確認されます。 Windows コンピューターでこの方法をサポートするには、デバイスを Azure AD に登録する必要があります。  この記事では、自動デバイス登録を構成する方法について説明します。|クラウド専用|
-|**サポート チームを用意します**。 MFA を完了できないユーザーのための計画を立てます。 ポリシー除外グループに追加したり、新しい MFA 情報を登録したりします。 これらのセキュリティに敏感な変更を行う前に、実際のユーザーが要求を行っている必要があります。 同意を支援するようにユーザーの上司に依頼する方法も効果的です。||
-|[オンプレミス AD へのパスワード ライトバックを構成します](/azure/active-directory/active-directory-passwords-getting-started)。 パスワードライトバックを使用するとADリスクの高いアカウント侵害が検出された場合に、ユーザーがオンプレミスのパスワードを変更するように Azure AD要求できます。 Azure AD Connect を使用してこの機能を有効にするには、Azure AD Connectセットアップ ウィザードのオプション機能画面でパスワードライトバックを有効にするか、Windows PowerShell 経由で有効にします。|クラウド専用|
-|[Azure ADパスワード保護を構成します](/azure/active-directory/authentication/concept-password-ban-bad)。 Azure AD パスワード保護は、既知の脆弱なパスワードとそのバリアントを検出してブロックし、組織固有の脆弱な用語もブロックできます。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。||
-|[Azure Active Directory IDENTITY Protection を有効にします](/azure/active-directory/identity-protection/overview-identity-protection)。 Azure AD Id Protection を使用すると、組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できます。||
-|**Exchange Online および** Skype for [Business Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) の [モダン認証を有効にします](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。 最新の認証は、MFA を使用する前提条件です。 モダン認証は、2016 および 2019 Office、SharePoint、および OneDrive for Business で既定で有効になっています。||
+|構成|例外|ライセンス|
+|---|:---:|---|
+|[PHS を構成します](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  漏洩した資格情報を検出し、リスクベースの条件付きアクセスに対応するには、これを有効にする必要があります。 **注:** これは、組織がフェデレーション認証を使用するかどうかに関係なく必要です。|クラウド専用|Microsoft 365 E3 または E5|
+|[シームレスなシングル サインオンを有効](/azure/active-directory/connect/active-directory-aadconnect-sso) にして、組織ネットワークに接続されている組織デバイスでユーザーが自動的にサインインします。|クラウド専用とフェデレーション|Microsoft 365 E3 または E5|
+|[名前付き場所を構成します](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)。 Azure AD Identity Protection は使用できるすべてのセッション データを収集し、分析してリスク スコアを生成します。 Azure の名前付き場所構成で、組織のネットワークのパブリック IP AD指定することをお勧めします。 これらの範囲からのトラフィックにはリスク スコアが低下し、組織環境外からのトラフィックにはリスク スコアが高くなります。||Microsoft 365 E3 または E5|
+|[セルフサービス パスワード リセット (SSPR)](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)および多要素認証 (MFA) に対してすべてのユーザーを登録します。 Azure AD多要素認証にユーザーを登録することをお勧めします。 Azure AD Id Protection では、Azure AD多要素認証を使用して、追加のセキュリティ検証を実行します。 さらに、最適なサインイン エクスペリエンスを得る場合は、ユーザーがデバイスに [Microsoft Authenticator](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) アプリと Microsoft Company Portal アプリをインストールすることをお勧めします。 これらは、プラットフォームごとにアプリ ストアからインストールできます。||Microsoft 365 E3 または E5|
+|[ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にします](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。 条件付きアクセスでは、アプリに接続するデバイスがドメインに参加しているか、準拠しているかが確認されます。 Windows コンピューターでこの方法をサポートするには、デバイスを Azure AD に登録する必要があります。  この記事では、自動デバイス登録を構成する方法について説明します。|クラウド専用|Microsoft 365 E3 または E5|
+|**サポート チームを用意します**。 MFA を完了できないユーザーのための計画を立てます。 ポリシー除外グループに追加したり、新しい MFA 情報を登録したりします。 これらのセキュリティに敏感な変更を行う前に、実際のユーザーが要求を行っている必要があります。 同意を支援するようにユーザーの上司に依頼する方法も効果的です。||Microsoft 365 E3 または E5|
+|[オンプレミス AD へのパスワード ライトバックを構成します](/azure/active-directory/active-directory-passwords-getting-started)。 パスワードライトバックを使用するとADリスクの高いアカウント侵害が検出された場合に、ユーザーがオンプレミスのパスワードを変更するように Azure AD要求できます。 Azure AD Connect を使用してこの機能を有効にするには、Azure AD Connectセットアップ ウィザードのオプション機能画面でパスワードライトバックを有効にするか、Windows PowerShell 経由で有効にします。|クラウド専用|Microsoft 365 E3 または E5|
+|[Azure ADパスワード保護を構成します](/azure/active-directory/authentication/concept-password-ban-bad)。 Azure AD パスワード保護は、既知の脆弱なパスワードとそのバリアントを検出してブロックし、組織固有の脆弱な用語もブロックできます。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。||Microsoft 365 E3 または E5|
+|[Azure Active Directory IDENTITY Protection を有効にします](/azure/active-directory/identity-protection/overview-identity-protection)。 Azure AD Id Protection を使用すると、組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できます。||E5 セキュリティ アドオンを使用した Microsoft 365 E5 または Microsoft 365 E3|
+|**Exchange Online および** Skype for [Business Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) の [モダン認証を有効にします](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。 最新の認証は、MFA を使用する前提条件です。 モダン認証は、2016 および 2019 Office、SharePoint、および OneDrive for Business で既定で有効になっています。||Microsoft 365 E3 または E5|
 |
 
 ## <a name="recommended-client-configurations"></a>推奨されるクライアント構成
@@ -99,11 +99,11 @@ BYOD Windows デバイスの場合、ユーザーは [仕事用 **または学�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|[OneDrive 同期クライアント](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 8.1|サポート済み|サポート済み|該当なし|該当なし|サポート済み|
-|Windows 10|サポート|サポート済み|該当なし|該当なし|サポート済み|
-|Android|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
-|iOS|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
-|macOS|サポート済み|サポート済み|該当なし|該当なし|サポートされていません|
+|Windows 8.1|サポート|サポート|該当なし|該当なし|サポート|
+|Windows 10|サポート|サポート|該当なし|該当なし|サポート|
+|Android|サポート|サポート|サポート|サポート|N/A|
+|iOS|サポート|サポート|サポート|サポート|N/A|
+|macOS|サポート|サポート|該当なし|該当なし|サポートされていません|
 |Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 |
 

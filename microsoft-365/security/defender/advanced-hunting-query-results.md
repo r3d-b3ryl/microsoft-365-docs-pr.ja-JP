@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 34880c870cdf398ab1565f7f532ac95a6fde475d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eccf93b019baa240a46260a28f3f0bc109345dd4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932931"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952598"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を処理する
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932931"
 
 **適用対象:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -152,6 +153,9 @@ AppFileEvents
 ![高度な捜索フィルターの画像](../../media/advanced-hunting-filter.png)
 
 フィルターを適用してクエリを変更し、クエリを実行すると、結果がそれに応じて更新されます。
+
+>[!NOTE]
+>この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Microsoft 365 Defender をオンに](m365d-enable.md) し、より多くのデータ ソースを使用して脅威を検出します。 「Advanced [Hunting queries](advanced-hunting-migrate-from-mde.md)from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動できます。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

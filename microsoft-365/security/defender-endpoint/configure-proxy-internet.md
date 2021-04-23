@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c8f25b924109823951c331fe744b548d372eaf11
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932801"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957619"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -60,6 +60,7 @@ WinHTTP 構成設定は、Windows Internet (WinINet) インターネット ブ�
 
 > [!NOTE]
 > - Windows 10 または Windows Server 2019 でこのオプションを使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。</br>
+> Windows 10 バージョン 1809 または Windows Server 2019 - https://support.microsoft.com/kb/5001384 <br>
 > Windows 10 バージョン 1909 - https://support.microsoft.com/kb/4601380</br>
 > Windows 10 バージョン 2004 - https://support.microsoft.com/kb/4601382</br>
 > Windows 10 バージョン 20H2 - https://support.microsoft.com/kb/4601382</br>

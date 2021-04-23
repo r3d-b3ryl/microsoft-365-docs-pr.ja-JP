@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 17aca5fb388aef26504902ee63b22410420c8827
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932955"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952490"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint サービスにオンボードする
 
@@ -194,7 +194,7 @@ Defender for Endpoint は、Azure Defender と統合して、包括的な Window
 
 この統合には、次の機能が含まれています。
 
-- 自動オンボーディング - Azure Defender にオンボードされている Windows サーバーで Defender for Endpoint センサーが自動的に有効になります。 Azure Defender オンボーディングの詳細については、「セキュリティ強化のための Azure Defender Standard へのオンボーディング [」を参照してください](https://docs.microsoft.com/azure/security-center/security-center-onboarding)。
+- 自動オンボーディング - Azure Defender にオンボードされている Windows サーバーで Defender for Endpoint センサーが自動的に有効になります。 Azure Defender オンボーディングの詳細については、「統合 Microsoft Defender for Endpoint ライセンスを使用する [」を参照してください](https://docs.microsoft.com/azure/security-center/security-center-wdatp)。
 
     > [!NOTE]
     > Azure Defender for Servers と Microsoft Defender for Endpoint の統合は [、Windows Server 2019 と Windows Virtual Desktop (WVD)](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
@@ -293,7 +293,7 @@ Windows サーバーをオフボードするには、次のいずれかの方法
     > [!NOTE]
     > この記事では、x64 ベースのサーバー (MMA Agent .exe x64 [New SHA-2 準拠バージョン](https://go.microsoft.com/fwlink/?LinkId=828603)) を使用している必要があります。
 
-**手順-2: ファイル名 DeployMMA.cmd を作成する (メモ帳を使用)** cmd ファイルに次の行を追加します。 ワークスペース ID と KEY が必要になります。
+**手順-2: ファイル名 DeployMMA.cmd を作成する (メモ帳を使用)** cmd ファイルに次の行を追加します。 ワークスペース ID と KEY が必要です。
 
 ```dos
 @echo off 
@@ -338,9 +338,10 @@ DOMAIN\NETLOGON\MMA\filename から C:\windows\MMA\filename にファイルを�
 
 :::image type="content" source="images/startupprops.png" alt-text="プロパティの起動":::
 
-ここで実行するファイルの名前は c:\windows\MMA\DeployMMA.cmd サーバーが起動プロセスの一部として再起動すると、カスタマー エクスペリエンスと診断テレメトリ KB の更新プログラムがインストールされ、ワークスペース ID とキーを設定しながら MMAAgent がインストールされ、サーバーがオンボードされます。
+ここで実行するファイルの名前は c:\windows\MMA\DeployMMA.cmd です。
+サーバーが起動プロセスの一部として再起動すると、カスタマー エクスペリエンスと診断テレメトリ KB の更新プログラムがインストールされ、MMA エージェントがインストールされ、ワークスペース ID とキーが設定され、サーバーがオンボードされます。
 
-また、すべてのサーバーを **再起動しない** 場合は、即時タスクを使用して deployMMA.cmd を実行することもできます。
+すべてのサーバーを再起動 **しない** 場合は、即時タスクを使用して deployMMA.cmd を実行することもできます。
 これは、2 つのフェーズで実行できます。 まず **、GPO でファイルと** フォルダーを作成します。GPO が適用され、すべてのサーバーにインストール ファイルが含まれています。 次に、イミディエイト タスクを追加します。 これにより、再起動を必要とせずに同じ結果が得られます。
 
 スクリプトは exit メソッドを持ち、MMA がインストールされている場合は再び実行されませんので、毎日スケジュールされたタスクを使用して同じ結果を得る場合も可能です。 Configuration Manager コンプライアンス ポリシーと同様に、MMA が存在しているのを確認するために毎日チェックされます。

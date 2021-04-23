@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935715"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952562"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935715"
 
 **適用対象:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 カスタム検出ルールは、高度な検索クエリを使用して設計および [調整できるルール](advanced-hunting-overview.md) です。 これらのルールを使用すると、侵害の疑いのあるアクティビティや誤った構成されたエンドポイントなど、さまざまなイベントやシステム状態を積極的に監視できます。 一定の間隔で実行し、アラートを生成し、一致するたびに応答アクションを実行する設定できます。
 
@@ -219,6 +220,9 @@ DeviceEvents
 
 >[!TIP]
 >テーブル内のアイテムに関する情報をすばやく表示し、アクションを実行するには、表の左側にある [&#10003;] の選択列を使用します。
+
+>[!NOTE]
+>この記事の一部の列は、Microsoft Defender for Endpoint では使用できない場合があります。 [Microsoft 365 Defender をオンに](m365d-enable.md) し、より多くのデータ ソースを使用して脅威を検出します。 「Advanced [Hunting queries](advanced-hunting-migrate-from-mde.md)from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動できます。
 
 ## <a name="see-also"></a>関連項目
 - [カスタム検出の概要](custom-detections-overview.md)

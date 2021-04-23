@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Microsoft Viva のプラントピックを計画する方法について説明します。
-ms.openlocfilehash: 19baf8bdcfdd1fe38d64e3c2f259ace1ceab5a4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925978"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957541"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Microsoft Viva のトピックの計画
 
@@ -32,7 +32,7 @@ ms.locfileid: "50925978"
 
 データのセキュリティとプライバシーが尊重され、トピック エクスペリエンスはユーザーに権限を持たなかったファイルへの追加のアクセス権をユーザーに付与しない。 計画プロセスの一環として [、Microsoft Viva Topics のセキュリティと](topic-experiences-security-privacy.md) プライバシーも確認することをお勧めします。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 Microsoft 365 管理センターにアクセスしてトピックを設定するには、 [ビ](https://www.microsoft.com/microsoft-viva/topics) バ トピックをサブスクライブし、グローバル管理者または SharePoint 管理者である必要があります。
 
@@ -70,6 +70,9 @@ Site name,URL
 ## <a name="user-permissions"></a>ユーザーのアクセス許可
 
 指定するユーザーのアクセス許可によって、組織内のユーザーがトピックと対話し、そのユーザーが実行できる操作が決まれます。
+
+> [!Note] 
+> 現時点では、ビバ トピックはゲスト (外部) ユーザーに対するライセンスまたはユーザーアクセス許可の提供をサポートしません。 
 
 *トピックを管理する*
 

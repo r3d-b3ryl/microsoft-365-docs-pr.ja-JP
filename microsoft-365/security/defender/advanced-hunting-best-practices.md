@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7db7607d3ed9d6f1b215fb842d5b6dd2415a770a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: abc6b561c2fca8106397b1656432628c983e2ece
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934899"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952694"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -263,6 +263,9 @@ SHA256,ThreatTypes,DetectionMethods
 | IPv6 アドレス | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | IPv4 または IPv6 アドレスを標準の IPv6 表記に変換します。 IPv6 アドレスを比較するには [、ipv6_compare() を使用します](/azure/data-explorer/kusto/query/ipv6-comparefunction)。 |
 
 サポートされている解析関数の詳細については [、「Kusto 文字列関数」を参照してください](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。 
+
+>[!NOTE]
+>この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Microsoft 365 Defender をオンに](m365d-enable.md) し、より多くのデータ ソースを使用して脅威を検出します。 「Advanced [Hunting queries](advanced-hunting-migrate-from-mde.md)from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動できます。
 
 ## <a name="related-topics"></a>関連項目
 - [Kusto クエリ言語のドキュメント](/azure/data-explorer/kusto/query/)

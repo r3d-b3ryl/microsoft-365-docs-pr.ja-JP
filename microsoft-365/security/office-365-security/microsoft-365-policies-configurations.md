@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 104ef919d356642985e7b34d16650c27a8141e86
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 464a99ca67da72633879840263fe64ad8311fd4c
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615101"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952574"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -50,6 +50,8 @@ ID とデバイス アクセスの設定とポリシーは、高度に規制さ�
 
 エンタープライズ向け Microsoft 365 の ID とデバイス アクセス構成の概要については、このビデオをご覧ください。
 
+<br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
@@ -57,13 +59,13 @@ ID とデバイス アクセスの設定とポリシーは、高度に規制さ�
 
 ## <a name="intended-audience"></a>対象ユーザー
 
-これらの推奨事項は、Azure AD (IDENTITY)、Microsoft Intune (デバイス管理)、Azure Information Protection (データ保護) などの Microsoft 365 クラウドの生産性とセキュリティ サービスに精通しているエンタープライズ アーキテクトおよび IT 担当者を対象としています。
+これらの推奨事項は、Azure AD (IDENTITY)、Microsoft Intune (デバイス管理)、Microsoft Information Protection (データ保護) などの Microsoft 365 クラウドの生産性とセキュリティ サービスに精通しているエンタープライズ アーキテクトおよび IT 担当者を対象としています。
 
 ### <a name="customer-environment"></a>お客様の環境
 
 推奨されるポリシーは、Microsoft クラウド内で完全に運用されているエンタープライズ組織と、Azure AD テナントと同期されたオンプレミスの Active Directory ドメイン サービス (AD DS) フォレストであるハイブリッド ID インフラストラクチャを持つお客様に適用されます。
 
-提供されている推奨事項の多くは、Identity & Threat Protection アドオン、EMS E5、または Azure Premium P2 ライセンスを持つ Microsoft 365 E5、Microsoft 365 E3 でのみ利用可能なサービスに依存しています。
+提供されている推奨事項の多くは、E5 セキュリティ アドオン、EMS E5、または Azure AD Premium P2 ライセンスを持つ Microsoft 365 E5、Microsoft 365 E3 でのみ利用可能なサービスに依存しています。
 
 これらのライセンスを持つ組織では、少なくともすべての Microsoft 365 プランに含まれるセキュリティの既定値を実装してください。 [](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
@@ -122,8 +124,8 @@ Azure ADは、ID 管理機能の完全なスイートを提供します。 こ�
 |[条件付きアクセス](/azure/active-directory/conditional-access/overview)|Azure ADは、ユーザー サインインの条件を評価し、条件付きアクセス ポリシーを使用して許可されたアクセスを決定します。 たとえば、このガイダンスでは、機密データへのアクセスにデバイスコンプライアンスを要求する条件付きアクセス ポリシーを作成する方法について説明します。 これにより、自分のデバイスと盗まれた資格情報を持つハッカーが機密データにアクセスするリスクが大幅に軽減されます。 また、デバイスは正常性とセキュリティに関する特定の要件を満たす必要があるため、デバイス上の機密データも保護します。|Microsoft 365 E3 または E5|
 |[Azure AD グループ](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件付きアクセス ポリシー、Intune を使用したデバイス管理、組織内のファイルやサイトに対するアクセス許可でさえ、ユーザー アカウントまたは Azure AD グループへの割り当てに依存します。 実装する保護のレベルAD Azure グループを作成することをお勧めします。 たとえば、エグゼクティブ スタッフは、ハッカーの価値の高いターゲットである可能性が高くなります。 したがって、これらの従業員のユーザー アカウントを Azure AD グループに追加し、このグループを条件付きアクセス ポリシーおよびアクセスに対してより高いレベルの保護を適用する他のポリシーに割り当てるのが理にかなっています。|Microsoft 365 E3 または E5|
 |[デバイスの登録](/azure/active-directory/devices/overview)|デバイスを Azure AD登録して、デバイスの ID を作成します。 この ID は、ユーザーがサインインするときにデバイスを認証し、ドメインに参加している PC または準拠した PC を必要とする条件付きアクセス ポリシーを適用するために使用されます。 このガイダンスでは、デバイスの登録を使用して、ドメインに参加している Windows コンピューターを自動的に登録します。 デバイスの登録は、Intune を使用してデバイスを管理するための前提条件です。|Microsoft 365 E3 または E5|
-|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できます。 このガイダンスは、多要素認証に条件付きアクセス ポリシーを適用するために、このリスク評価に依存します。 このガイダンスには、アカウントのリスクの高いアクティビティが検出された場合に、ユーザーがパスワードを変更する必要がある条件付きアクセス ポリシーも含まれています。|Identity & Threat Protection アドオン、EMS E5、または Azure Premium P2 ライセンスを持つ Microsoft 365 E5、Microsoft 365 E3|
-|[セルフサービス パスワードのリセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|管理者が制御できる複数の認証方法の検証を提供することで、ユーザーがヘルプ デスクの介入なしに安全にパスワードをリセットできます。|Microsoft 365 E3 または E5|
+|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できます。 このガイダンスは、多要素認証に条件付きアクセス ポリシーを適用するために、このリスク評価に依存します。 このガイダンスには、アカウントのリスクの高いアクティビティが検出された場合に、ユーザーがパスワードを変更する必要がある条件付きアクセス ポリシーも含まれています。|Microsoft 365 E5、Microsoft 365 E3 と E5 セキュリティ アドオン、EMS E5、または Azure ADプレミアム P2 ライセンス|
+|[セルフサービスによるパスワードのリセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|管理者が制御できる複数の認証方法の検証を提供することで、ユーザーがヘルプ デスクの介入なしに安全にパスワードをリセットできます。|Microsoft 365 E3 または E5|
 |[Azure ADパスワード保護](/azure/active-directory/authentication/concept-password-ban-bad)|既知の脆弱なパスワードとそのバリアント、および組織に固有の追加の弱い用語を検出してブロックします。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。|Microsoft 365 E3 または E5|
 |
 
@@ -194,7 +196,7 @@ Azure 統合アプリの ID およびデバイス アクセス構成を構成お
 
 一部の意図しない構成が発生する可能性があるから、すべてのアプリに適用されるポリシー セットを作成しなけことをお勧めします。 たとえば、すべてのアプリをブロックするポリシーによって管理者が Azure ポータルからロックアウトされ、Microsoft Graph などの重要なエンドポイントに対して除外を構成することはできません。
 
-## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>ID とデバイス アクセスを構成するプロセスの手順
+## <a name="steps-to-configure-identity-and-device-access"></a>ID とデバイス アクセスを構成する手順
 
 ![ID とデバイス アクセスを構成する手順。](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 

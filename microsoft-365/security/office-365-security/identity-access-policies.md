@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 7ade29259a5552bc9bbaac4b143842c69d05f917
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4b7315cbb8704b691ce4f3d6b96958f18248b478
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205353"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952634"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 
@@ -55,18 +55,18 @@ ms.locfileid: "51205353"
 
 これらのタスクを実行する時間を与えるために、次の表に示す順序でベースライン ポリシーを実装することをお勧めします。 ただし、機密性の高い高度に規制されたレベルの保護に関する MFA ポリシーは、いつでも実装できます。
 
-|保護レベル|ポリシー|詳細情報|
-|---|---|---|
-|**Baseline**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](#require-mfa-based-on-sign-in-risk)||
-||[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-multi-factor)|最新の認証を使用しないクライアントは条件付きアクセス ポリシーをバイパスできます。そのため、これらをブロックすることが重要です。|
-||[高リスク ユーザーはパスワードを変更する必要がある](#high-risk-users-must-change-password)|リスクの高いアクティビティが自分のアカウントで検出された場合、サインイン時にユーザーにパスワードの変更を強制的に行います。|
-||[アプリデータ保護ポリシーの適用](#apply-app-data-protection-policies)|プラットフォームごとに 1 つの Intune アプリ保護ポリシー (Windows、iOS/iPadOS、Android)。|
-||[承認済みアプリとアプリ保護を要求する](#require-approved-apps-and-app-protection)|iOS、iPadOS、または Android を使用して携帯電話とタブレットに対してモバイル アプリ保護を適用します。|
-||[デバイス コンプライアンス ポリシーの定義](#define-device-compliance-policies)|プラットフォームごとに 1 つのポリシー。|
-||[準拠 PC が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Windows または MacOS を使用して PC の Intune 管理を強制します。|
-|**機密**|[サインイン リスクが低い、中程度、または高い場合に MFA *を要求**する*](#require-mfa-based-on-sign-in-risk)||
-||[準拠している PC とモバイル *デバイスを* 要求する](#require-compliant-pcs-and-mobile-devices)|PC (Windows または MacOS) と電話またはタブレット (iOS、iPadOS、または Android) の両方に Intune 管理を適用します。|
-|**厳しく規制**|[*常に* MFA を要求する](#require-mfa-based-on-sign-in-risk)|
+|保護レベル|ポリシー|詳細情報|ライセンス|
+|---|---|---|---|
+|**Baseline**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](#require-mfa-based-on-sign-in-risk)||E5 セキュリティ アドオンを使用した Microsoft 365 E5 または Microsoft 365 E3|
+||[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-multi-factor)|最新の認証を使用しないクライアントは条件付きアクセス ポリシーをバイパスできます。そのため、これらをブロックすることが重要です。|Microsoft 365 E3 または E5|
+||[高リスク ユーザーはパスワードを変更する必要がある](#high-risk-users-must-change-password)|リスクの高いアクティビティが自分のアカウントで検出された場合、サインイン時にユーザーにパスワードの変更を強制的に行います。|E5 セキュリティ アドオンを使用した Microsoft 365 E5 または Microsoft 365 E3|
+||[アプリケーション保護ポリシー (APP) データ保護の適用](#apply-app-data-protection-policies)|プラットフォームごとに 1 つの Intune アプリ保護ポリシー (Windows、iOS/iPadOS、Android)。|Microsoft 365 E3 または E5|
+||[承認済みアプリとアプリ保護を要求する](#require-approved-apps-and-app-protection)|iOS、iPadOS、または Android を使用して携帯電話とタブレットに対してモバイル アプリ保護を適用します。|Microsoft 365 E3 または E5|
+||[デバイス コンプライアンス ポリシーの定義](#define-device-compliance-policies)|プラットフォームごとに 1 つのポリシー。|Microsoft 365 E3 または E5|
+||[準拠 PC が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Windows または MacOS を使用して PC の Intune 管理を強制します。|Microsoft 365 E3 または E5|
+|**機密**|[サインイン リスクが低い、中程度、または高い場合に MFA *を要求**する*](#require-mfa-based-on-sign-in-risk)||E5 セキュリティ アドオンを使用した Microsoft 365 E5 または Microsoft 365 E3|
+||[準拠している PC とモバイル *デバイスを* 要求する](#require-compliant-pcs-and-mobile-devices)|PC (Windows または MacOS) と電話またはタブレット (iOS、iPadOS、または Android) の両方に Intune 管理を適用します。|Microsoft 365 E3 または E5|
+|**厳しく規制**|[*常に* MFA を要求する](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 または E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>グループとユーザーへのポリシーの割り当て
@@ -95,11 +95,11 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 これらの推奨事項のAD作成された Azure のすべてのグループは、Microsoft 365 グループとして作成する必要があります。 これは、Microsoft Teams と SharePoint でドキュメントをセキュリティ保護する際に、感度ラベルを展開する場合に重要です。
 
-![Microsoft 365 グループを作成するための画面キャプチャ](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![Microsoft 365 グループの作成例](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>サインイン リスクに基づいて MFA を要求する
 
-使用を要求する前に、ユーザーに MFA を登録する必要があります。 Microsoft 365 E5、Identity & Threat Protection アドオンを使用する Microsoft 365 E3、EMS E5 を使用した Office 365、または Azure AD Premium P2 の個々のライセンスがある場合は、Azure AD Identity Protection の MFA 登録ポリシーを使用して、ユーザーに MFA の登録を要求できます。 前提条件 [となる作業には、](identity-access-prerequisites.md) すべてのユーザーを MFA に登録する作業が含まれます。
+使用を要求する前に、ユーザーに MFA を登録する必要があります。 Microsoft 365 E5、E5 セキュリティ アドオン付き Microsoft 365 E3、EMS E5 を使用した Office 365、または Azure AD Premium P2 の個々のライセンスがある場合は、Azure AD Identity Protection の MFA 登録ポリシーを使用して、ユーザーが MFA に登録するように要求できます。 前提条件 [となる作業には、](identity-access-prerequisites.md) すべてのユーザーを MFA に登録する作業が含まれます。
 
 ユーザーが登録された後、新しい条件付きアクセス ポリシーを使用してサインインに MFA を要求できます。
 
@@ -125,7 +125,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 対象とする保護レベルに基づいてリスク レベルの設定を適用します。
 
-|保護のレベル|必要なリスク レベルの値|アクション|
+|保護のレベル|必要なリスク レベルの値|Action|
 |---|---|---|
 |基準|高、中|両方を確認します。|
 |機密|高、中、低|3 つすべてがチェックされます。|
@@ -134,7 +134,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 [アクセス制御 **] セクションで、次の操作を** 行います。
 
-|Setting|[プロパティ]|値|アクション|
+|Setting|[プロパティ]|値|Action|
 |---|---|---|---|
 |許可|**Grant access**||Select|
 |||**多要素認証を要求する**|小切手|
@@ -165,7 +165,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 [アクセス制御 **] セクションで、次の操作を** 行います。
 
-|Setting|[プロパティ]|値|アクション|
+|Setting|[プロパティ]|値|Action|
 |---|---|---|---|
 |許可|**アクセスをブロックする**||Select|
 ||**選択したコントロールすべてが必要**||Select|
@@ -187,7 +187,7 @@ Exchange Online では、認証ポリシーを使用して[](/exchange/clients-a
 
 [割り **当て] セクションで、次の設定を** 行います。
 
-|型|[プロパティ]|値|アクション|
+|型|[プロパティ]|値|Action|
 |---|---|---|---|
 |Users|含める|**すべてのユーザー**|Select|
 |ユーザーのリスク|**High**||Select|
@@ -195,7 +195,7 @@ Exchange Online では、認証ポリシーを使用して[](/exchange/clients-a
 
 2 番目の **[割り当て] セクションで、次の設定を** 行います。
 
-|型|[プロパティ]|値|アクション|
+|型|[プロパティ]|値|Action|
 |---|---|---|---|
 |Access|**SSL 経由でのみ**||Select|
 |||**パスワードの変更を必須とする**|小切手|
@@ -211,7 +211,7 @@ What if ツール [を使用して](/azure/active-directory/active-directory-con
 
 ## <a name="apply-app-data-protection-policies"></a>APP データ保護ポリシーの適用
 
-アプリ保護ポリシー (APP) は、許可するアプリと、組織のデータで実行できるアクションを定義します。 APP で使用できる選択肢により、組織は特定のニーズに合わせて保護を調整できます。 一部のユーザーにとって、完全なシナリオを実装するために必要なポリシー設定が明らかではない場合があります。 組織がモバイル クライアント エンドポイントの強化を優先するために、Microsoft は iOS および Android モバイル アプリ管理用の APP データ保護フレームワークに分類を導入しました。
+APP は、許可するアプリと、組織のデータに対して実行できるアクションを定義します。 APP で使用できる選択肢により、組織は特定のニーズに合わせて保護を調整できます。 一部のユーザーにとって、完全なシナリオを実装するために必要なポリシー設定が明らかではない場合があります。 組織がモバイル クライアント エンドポイントの強化を優先するために、Microsoft は iOS および Android モバイル アプリ管理用の APP データ保護フレームワークに分類を導入しました。
 
 APP データ保護フレームワークは、3 つの異なる構成レベルに編成され、各レベルは前のレベルから構築されます。
 
@@ -294,7 +294,7 @@ Intune でコンプライアンス ポリシーを作成する手順について
 
 [ **デバイスの正常性> Windows 正常性構成証明サービス** の評価ルールについては、次の表を参照してください。
 
-|プロパティ|値|アクション|
+|Properties|値|Action|
 |---|---|---|
 |BitLocker を要求する|必須|Select|
 |デバイスでセキュア ブートを有効にする必要がある|必須|Select|
@@ -307,36 +307,36 @@ Intune でコンプライアンス ポリシーを作成する手順について
 
 システム **セキュリティについては、** 次の表を参照してください。
 
-|型|[プロパティ]|値|アクション|
+|型|[プロパティ]|値|Action|
 |---|---|---|---|
 |Password|モバイル デバイスのロックを解除するためにパスワードを要求する|必須|Select|
 ||単純なパスワード|ブロック|Select|
 ||パスワードの種類|デバイスの既定値|Select|
-||パスワードの最小文字数|6|種類|
-||パスワードが必要になる前の最大非アクティブ時間 (分)|15 |種類 <p> この設定は、Android バージョン 4.0 以上または KNOX 4.0 以上でサポートされています。 iOS デバイスの場合、iOS 8.0 以上でサポートされています。|
-||パスワードの有効期限 (日)|41|種類|
-||再利用を防止する以前のパスワードの数|5|種類|
+||パスワードの最小文字数|6|型|
+||パスワードが必要になる前の最大非アクティブ時間 (分)|15 |型 <p> この設定は、Android バージョン 4.0 以上または KNOX 4.0 以上でサポートされています。 iOS デバイスの場合、iOS 8.0 以上でサポートされています。|
+||パスワードの有効期限 (日)|41|型|
+||再利用を防止する以前のパスワードの数|5|型|
 ||デバイスがアイドル状態から戻る際にパスワードを要求する (Mobile および Holographic)|必須|Windows 10 以降で使用可能|
 |暗号化|デバイス上のデータ ストレージの暗号化|必須|Select|
 |デバイス セキュリティ|ファイアウォール|必須|Select|
 ||ウイルス対策|必須|Select|
 ||スパイウェア対策|必須|Select <p> この設定には、Windows セキュリティ センターに登録されているスパイウェア対策ソリューションが必要です。|
 |Defender|Microsoft Defender マルウェア対策|必須|Select|
-||Microsoft Defender マルウェア対策の最小バージョン||種類 <p> Windows 10 デスクトップでのみサポートされます。 Microsoft では、最新バージョンから 5 つ以下のバージョンをお勧めします。|
+||Microsoft Defender マルウェア対策の最小バージョン||型 <p> Windows 10 デスクトップでのみサポートされます。 Microsoft では、最新バージョンから 5 つ以下のバージョンをお勧めします。|
 ||Microsoft Defender マルウェア対策の署名を最新の情報に更新する|必須|Select|
 ||リアルタイム保護|必須|Select <p> Windows 10 デスクトップでのみサポート|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-|型|[プロパティ]|値|アクション|
+|型|[プロパティ]|値|Action|
 |---|---|---|---|
-|Microsoft Defender for Endpoint ルール|デバイスがコンピューター リスク スコアの下にあるか、または下にある必要がある|中|Select|
+|Microsoft Endpoint Manager 管理センターのエンドポイントルールの Microsoft Defender|[デバイスがコンピューター リスク スコアの下にあるか、または下にある必要がある](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|中|Select|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>準拠している PC を必要とします (ただし、準拠していない電話とタブレット)
 
-準拠している PC を要求するポリシーを追加する前に、管理用のデバイスを Intune に登録してください。 デバイスが意図したユーザーを所有しているという保証のために、デバイスを Intune に登録する前に、多要素認証を使用することを推奨します。
+準拠している PC を要求するポリシーを追加する前に、Intune で管理用にデバイスを登録してください。 デバイスが意図したユーザーを所有しているという保証のために、デバイスを Intune に登録する前に、多要素認証を使用することを推奨します。
 
 準拠している PC を要求するには、次の操作を行います。
 

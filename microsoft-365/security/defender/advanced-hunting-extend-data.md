@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40cec28bf88445df13f78e672c4289d440b2b848
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f4b1399b77583e95b109575a9577d8b1af89e6ad
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935859"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952670"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>適切な設定で高度な狩猟範囲を拡張する
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935859"
 
 **適用対象:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 [高度な検索](advanced-hunting-overview.md) は、デバイス、Office 365 ワークスペース、Azure AD、Microsoft Defender for Identity など、さまざまなソースからのデータに依存します。 可能な限り包括的なデータを取得するには、対応するデータ ソースに正しい設定が含されていることを確認します。
 
@@ -52,6 +53,9 @@ ms.locfileid: "51935859"
 | データ | 説明 | スキーマ テーブル | 構成する方法 |
 | --- | --- | --- | --- |
 | ドメイン コントローラ | Microsoft Defender for Identity に送信されるオンプレミスの Active Directory からのデータ、アカウントの詳細、ログオン アクティビティ、Active Directory クエリなどの ID 関連情報の強化 | [IdentityInfo、IdentityLogonEvents、IdentityQueryEvents](advanced-hunting-identitylogonevents-table.md)などの複数の[](advanced-hunting-identityinfo-table.md)[テーブル](advanced-hunting-identityqueryevents-table.md)  | - [Microsoft Defender for Identity センサーのインストール](/azure-advanced-threat-protection/install-atp-step4)<br>- [関連する Windows イベントを有効にする](/azure-advanced-threat-protection/configure-event-collection) |
+
+>[!NOTE]
+>この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Microsoft 365 Defender をオンに](m365d-enable.md) し、より多くのデータ ソースを使用して脅威を検出します。 「Advanced [Hunting queries](advanced-hunting-migrate-from-mde.md)from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動できます。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

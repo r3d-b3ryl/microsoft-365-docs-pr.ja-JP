@@ -20,16 +20,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d8d165f39c45bd235800dc951d50934b47dd7ff5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935451"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952682"
 ---
 # <a name="handle-advanced-hunting-errors"></a>高度なハンティング エラーの処理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**適用対象:**
+- Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 
 高度な検索では、構文の間違いを通知するエラーと、クエリが定義済みのクォータと使用状況パラメーターに達するたびに [エラーが表示されます](advanced-hunting-limits.md)。 エラーを解決または回避する方法のヒントについては、以下の表を参照してください。
@@ -43,6 +48,8 @@ ms.locfileid: "51935451"
 | 結果のサイズ制限を超えた  | クエリの結果セットの集計サイズが最大サイズを超えました。 このエラーは、結果セットが大きいので、10,000 レコードの制限での切り捨てが許容できるサイズに減らできない場合に発生する可能性があります。 コンテンツが大きな複数の列を持つ結果は、このエラーの影響を受けそうになります。 | [クエリを最適化する](advanced-hunting-best-practices.md) | `Result size limit exceeded. Use "summarize" to aggregate results, "project" to drop uninteresting columns, or "take" to truncate results.` |
 | リソースの過剰な消費 | クエリは過剰な量のリソースを消費し、完了を停止しました。 高度な検索では、最適化が行えなかった特定の演算子が識別される場合があります。 | [クエリを最適化する](advanced-hunting-best-practices.md) | -`Query stopped due to excessive resource consumption.`<br>-`Query stopped. Adjust use of the <operator name> operator to avoid excessive resource consumption.` |
 | 不明なエラー | 不明な理由でクエリが失敗しました。 | クエリの実行を再試行してください。 クエリが不明なエラーを引き続き返す場合は、ポータルから Microsoft に問い合わせください。 | `An unexpected error occurred during query execution. Please try again in a few minutes.`
+
+
 
 ## <a name="related-topics"></a>関連項目
 - [高度な狩猟のベスト プラクティス](advanced-hunting-best-practices.md)

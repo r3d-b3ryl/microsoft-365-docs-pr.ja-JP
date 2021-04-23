@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: fcfddadf13e000156fa5431cc30bc72f4f3537e2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e4469d8abcfa8308c64e2efa7f7dc4f0156e5718
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581048"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957529"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの前提条件
 
@@ -27,7 +27,7 @@ ms.locfileid: "51581048"
 
 分野 | 前提条件の詳細
 --- | ---
-ライセンス |Microsoft Managed Desktop では、Microsoft Defender for Endpoint (または同等のライセンス) をユーザーに割り当てた Microsoft 365 E3 ライセンスが必要です。 Azure Active Directory Premium 2 の 2 つのライセンスをテナントで使用できる必要がありますが、ユーザーはこのライセンスを必要としません。 <br>特定のサービス プランの詳細については、このトピックの [「ライセンスの詳細」](#more-about-licenses) を参照してください。<br>使用可能なライセンスの詳細については [、「Microsoft 365 ライセンス」を参照してください](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
+ライセンス |Microsoft Managed Desktop では、Microsoft Defender for Endpoint (または同等のライセンス) をユーザーに割り当てた Microsoft 365 E3 ライセンスが必要です。<br>特定のサービス プランの詳細については、このトピックの [「ライセンスの詳細」](#more-about-licenses) を参照してください。<br>使用可能なライセンスの詳細については [、「Microsoft 365 ライセンス」を参照してください](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)。
 接続 |  すべての Microsoft Managed Desktop デバイスでは、企業ネットワークから多数の Microsoft サービス エンドポイントへの接続が必要です。<br><br>必要な IPS と URL の完全な一覧については、「ネットワーク構成」 [を参照してください](../get-ready/network.md)。 
 Azure Active Directory |    Azure Active Directory (Azure AD) は、すべてのユーザー アカウントの権限のソースである必要があります。または、サポートされている最新バージョンの Azure AD Connect を使用して、ユーザー アカウントをオンプレミスの Active Directory から同期する必要があります。<br><br>[Microsoft Managed](/azure/active-directory/devices/enterprise-state-roaming-overview) Desktop ユーザーに対してエンタープライズ状態ローミングを有効にする必要があります。<br><br>詳細については [、「Azure AD 接続」を参照してください](/azure/active-directory/hybrid/whatis-azure-ad-connect)。<br><br>サポートされている Azure AD Connect のバージョンの詳細については [、「Azure AD:バージョン のリリース履歴」を参照してください](/azure/active-directory/hybrid/reference-connect-version-history)。
 認証 |    Azure ADがユーザー アカウントのプライマリ認証のソースではない場合は、Azure AD Connect で次のいずれかを構成する必要があります。<br>- パスワード ハッシュ同期<br>- パススルー認証<br>- Azure の統合要件を満たAD外部 ID プロバイダー (Windows Server ADFS と Microsoft 以外の IDP を含む)。 詳細については [、ガイドライン](https://www.microsoft.com/download/details.aspx?id=56843) を参照してください。 <br><br>Azure AD Connect で認証オプションを設定する場合は、パスワードの書き戻しも推奨されます。 詳細については、「Password [writeback」を参照してください](/azure/active-directory/authentication/howto-sspr-writeback)。 <br><br>外部 ID プロバイダーが実装されている場合は、ソリューションを検証する必要があります。<br>- Azure のAD要件を満たす<br>- Azure AD条件付きアクセスをサポートします。これにより、Microsoft Managed Desktop デバイスコンプライアンス ポリシーを構成できます。<br>- Microsoft Managed Desktop の一部として必要な Microsoft 365 サービスまたは機能のデバイス登録と使用を有効にします。 <br><br>Azure AD の認証オプションの詳細については、「Azure AD Connect ユーザー サインイン [オプション」を参照してください](/azure/active-directory/connect/active-directory-aadconnect-user-signin)。
@@ -48,7 +48,7 @@ Microsoft Managed Desktop では、機能するために特定のライセンス
 - Microsoft Intune 
 - Windows 10 Enterprise  
 - Microsoft Defender for Endpoint
-- Microsoft 365 Apps for enterprise
+- Microsoft 365 Apps for Enterprise
 - Microsoft Teams
 - [SharePoint Online プラン 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
 - [Exchange Online プラン 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans) 
@@ -64,7 +64,7 @@ Microsoft Managed Desktop では、機能するために特定のライセンス
 3. [ゲスト アカウントの前提条件](guest-accounts.md)
 4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
 5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
 7. [Microsoft マネージド デスクトップのアプリ](apps.md)
 8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
 9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)
