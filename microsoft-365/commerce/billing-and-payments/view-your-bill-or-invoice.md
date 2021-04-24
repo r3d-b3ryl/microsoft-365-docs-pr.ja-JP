@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: 395c9773d4bc67ed466d7b3f8d568cecedddfd36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911648"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939488"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -55,6 +55,22 @@ ms.locfileid: "50911648"
 2. [**請求書**] タブで、ドロップダウン リストから日付範囲を選択し、次に表示する注文を選択します。
 3. [概要] ページには、請求書のアイテム、数量、価格、割引、全アイテムの合計が表示されます。
 4. 請求書を PDF 形式で印刷または保存するには、[**PDF のダウンロード**] を選択します。
+
+::: moniker region="o365-21vianet"
+
+## <a name="request-a-fapiao"></a>発票を要求する
+
+支払い後約 3 日で、発票要求を[発票管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465)に送信できます。
+
+1. <a href=”https://go.microsoft.com/fwlink/p/?linkid=850627” target=”_blank”>管理センター</a>で、[**課金情報**]  >  [**請求と支払い**] ページの順に移動します。
+
+2. 必要な請求書を見つけて、**[発票]** を選択します。
+
+> [!NOTE]
+
+> [発票管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465)にアクセスするには、登録済みのアカウントが必要です。 アカウントをまだ設定していない場合は、「[21Vianet が運営する Office 365 の発票の申請](../../admin/services-in-china/apply-for-a-fapiao.md)」を参照してください。
+
+::: moniker-end
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>請求明細書のコピーをメールで受け取る
 

@@ -2,7 +2,7 @@
 title: 業界のテストでトップスコアを記録 - Microsoft 365 Defender
 ms.reviewer: ''
 description: Microsoft 365 Defender の最新のスコアと分析を表示します。 個別の試験 (AV-TEST、AV Comparatives、 SE Labs、MITRE ATT&CK) で高いスコアを一貫して達成しています。 最新のスコアと分析をご覧ください。
-keywords: Microsoft Defender ウイルス対策、Windows Defender ウイルス対策、AV レビュー、ウイルス対策テスト、AV テスト、最新の AV スコア、検出スコア、セキュリティ製品のテスト、セキュリティ業界テスト、業界のウイルス対策テスト、最善のウイルス対策、av-test、av-comparatives、SE ラボ、MITRE ATT&CK、エンドポイント保護プラットフォーム、EPP、エンドポイント検出と応答、EDR、Windows 10、Microsoft Defender ウイルス対策、WDAV、MDATP、Microsoft Threat Protection、セキュリティ、マルウェア、av、ウイルス対策、スコア、スコア付け、次世代の保護、ランク付け、成功
+keywords: Microsoft Defender ウイルス対策、Windows Defender ウイルス対策、AV レビュー、ウイルス対策テスト、AV テスト、最新の AV スコア、検出スコア、セキュリティ製品のテスト、セキュリティ業界テスト、業界のウイルス対策テスト、最善のウイルス対策、av-test、av-comparatives、SE ラボ、MITRE ATT&CK、エンドポイント保護プラットフォーム、EPP、エンドポイント検出と応答、EDR、Windows 10、Microsoft Defender ウイルス対策、WDAV、Microsoft Defender for Endpoint、Microsoft 365 Defender、セキュリティ、マルウェア、av、ウイルス対策、スコア、スコア付け、次世代の保護、ランク付け、成功
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 1f649af2ca6089d1366cc6e080a430a6a00fc300
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569864"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934395"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 
