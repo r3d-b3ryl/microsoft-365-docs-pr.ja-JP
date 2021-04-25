@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Project Cortex のコンテンツ理解をセットアップする
-ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051569"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994703"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -59,7 +59,9 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
 
 Ai builder の容量は、[ [AI ビルダー電卓](https://powerapps.microsoft.com/ai-builder-calculator)を使用して見積もることができます。
 
-[Power Platform 管理センター](https://admin.powerplatform.microsoft.com/resources/capacity) に移動して、クレジットと使用状況を確認します。
+カスタム Power Platform 環境を使用する場合は、 [その環境にクレジット割り当てる](/power-platform/admin/capacity-add-on)必要があります。
+
+「[Power Platform 管理センター](https://admin.powerplatform.microsoft.com/resources/capacity)」 に移動して、クレジットと使用状況を確認します。
 
 ## <a name="to-set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -80,11 +82,21 @@ Ai builder の容量は、[ [AI ビルダー電卓](https://powerapps.microsoft.
       - **SharePointライブラリはなし** どのサイトも使用できるようにしたくない場合(セットアップ後に変更できます)。
 
    > [!div class="mx-imgBorder"]
-   > ![フォームの処理を構成する](../media/content-understanding/admin-configforms.png)
+   > ![フォーム処理サイトのオプションを構成する](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > 含まれているサイトを削除しても、そのサイトのライブラリに適用されている既存のモデルには影響しません。また、ドキュメント理解モデルをライブラリに適用する機能もありません。 
     
+    複数の Power Platform 環境を構成している場合は、フォームの処理に使用する環境を選択できます。 (お持ちの環境が 1 つのみである場合、このオプションは表示されません)。
+
+    ![フォーム処理の Power Platform オプションを構成する](../media/content-understanding/setup-power-platform-env.png)
+
+    **Power Platform 環境** には、以下を選択できます。
+    - **既定の環境を使用** して、 Power Platform 環境を使用します。
+    - **カスタム環境を使用** して、カスタム 環境を使用します。 リストから使用する環境を選択します。 フォーム処理モデルを作成 する前に、この環境で *AI Builder for Project Cortex* アプリをインストールし、そのアプリに AI Builder クレジットを割り当てる必要があります。
+
+    [**次へ**] をクリックします。
+
 5. **コンテンツセンターの作成** ページで、ユーザーがドキュメント理解モデルを作成して管理することができるように、SharePoint コンテンツセンターサイトを作成できます。
 
     1. [**サイト名**] に、コンテンツ センター サイトの名前を入力します。
@@ -126,3 +138,5 @@ SharePoint Syntex を構成したら、SharePoint Syntex機能を使用するユ
 [フォーム処理モデルの概要](/ai-builder/form-processing-model-overview)
 
 [ステップバイステップ: ドキュメント理解モデルを作成する方法について理解する (ビデオ)](https://www.youtube.com/watch?v=DymSHObD-bg)
+
+[Power Platform 管理センターで環境を作成して管理する](/power-platform/admin/create-environment)
