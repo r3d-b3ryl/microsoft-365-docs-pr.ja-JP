@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 121f2059e4a13684169ab40b7bfdaae13ef6045e
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899250"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995023"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -166,7 +166,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **適用対象:** Exchange Online PowerShell を使用する Exchange Online 管理者
 
-移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 以下に例を示します。
+移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例:
 
 ```powershell
 New-PSSession 
@@ -195,7 +195,7 @@ PowerShell コマンドレット **Set-UserPhoto** を使用すると、ユー�
 
 **適用対象:** Exchange Online を使用しているすべてのお客様<br>
 
-Exchange Online Protection (EOP) のバック エンド機能は、新しい地域 "ドイツ" にコピーされます。 Exchange Online を使用すると、外部ホストから Office 365 へのルーティングが可能になります。また、セキュリティおよびコンプライアンス機能のバック エンド サービスも含め、historial テナントの詳細が移行されています。
+Exchange Online Protection (EOP) のバック エンド機能は、新しい地域 "ドイツ" にコピーされます。 Exchange Online を使用すると、外部ホストから Office 365 へのルーティングが可能で、テナントの履歴の詳細が移行されています。これには、セキュリティおよびコンプライアンス機能のバック エンド サービスも含まれます。
 
 Exchange Online 機能のみを使用しているお客様 (ハイブリッド以外) は、この段階で注意を払う必要があります。
 
@@ -226,6 +226,7 @@ Skype [for Business Online 移行の移行前の手順を確認](ms-cloud-german
 - 連絡先と会議は Microsoft Teams に移行されます。
 - タイム サービスが Office 365 サービスに移行するまで、顧客の DNS エントリが完了するまで、ユーザーは Skype for Business にサインインできない。
 - 連絡先と既存の会議は、引き続き Skype for Business 会議として機能します。
+- フェーズ 9 が完了すると、Web ブラウザーバージョンの Microsoft Teams は動作しません。
 
 移行フェーズ 9 の完了後に PowerShell を使用して Skype for Business Online に接続する必要がある場合は、次の PowerShell コードを使用して接続します。
 

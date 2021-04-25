@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876339"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995083"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -33,7 +33,7 @@ ms.locfileid: "51876339"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-Microsoft Defender for Endpoint のリアルタイム保護サービスに関連する CPU 使用率やパフォーマンスの問題がシステムで高い場合は、Microsoft サポートにチケットを提出できます。 「Microsoft Defender AV 診断 [データの収集」の手順に従います](/collect-diagnostic-data.md)。
+Microsoft Defender for Endpoint のリアルタイム保護サービスに関連する CPU 使用率やパフォーマンスの問題がシステムで高い場合は、Microsoft サポートにチケットを提出できます。 「Microsoft Defender ウイルス対策診断 [データの収集」の手順に従います](collect-diagnostic-data.md)。
 
 管理者は、これらの問題を自分でトラブルシューティングできます。 
 
@@ -132,7 +132,6 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
  
     >[!TIP] 
     >問題が完全に再現されるのを待ち、トレースの開始時にタイムスタンプをメモします。
-    
 
 10. CPU 使用率が高い状態の間に 2 ~ 4 分のプロセス アクティビティが発生したら、拡大鏡アイコンを選択してキャプチャを停止します。
 
@@ -250,7 +249,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
 1. Microsoft **[Defender for Endpoint analysis profile for performance](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** traces for a download a file named in a local directory ( `WD.wprp` `C:\traces` .
 
-3. [スタート] メニュー **アイコンを右クリック** し **、[Windows Powershell ] (Admin)** または [コマンド プロンプト **(Admin)] を** 選択して、[管理] コマンド プロンプト ウィンドウを開きます。
+3. [スタート] メニュー **アイコンを右クリック** し、[管理者] Windows PowerShellまたはコマンド プロンプト **(Admin)** を選択して、[管理者] コマンド プロンプト ウィンドウを開きます。 
 
 4. [ユーザー アカウント制御] ダイアログ ボックスが表示されたら、[はい] を **選択します**。
 
@@ -278,7 +277,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
 9. ファイルとフォルダーの両方を Microsoft サポートへの申請に含める。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [Microsoft Defender AV 診断データの収集](collect-diagnostic-data.md)
+- [Microsoft Defender ウイルス対策診断データの収集](collect-diagnostic-data.md)
 - [Microsoft Defender ウイルス対策スキャンの除外を構成および検証する](configure-exclusions-microsoft-defender-antivirus.md)

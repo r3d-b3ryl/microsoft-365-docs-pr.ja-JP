@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15909684d07bac46fd42163cee545bc4752b61d4
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934371"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995011"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -127,6 +127,8 @@ Windows 10 バージョン 1809 以降に作成されたテナントの場合、
 一部の種類のサイバー攻撃では、悪いアクターがコンピューターでウイルス対策保護などのセキュリティ機能を無効にしようとします。 悪いアクターは、データに簡単にアクセスしたり、マルウェアをインストールしたり、データ、ID、デバイスを悪用したりするために、セキュリティ機能を無効にしています。
 
 タンパープロテクションは基本的に Microsoft Defender ウイルス対策をロックし、アプリやメソッドを通じてセキュリティ設定が変更されるのを防ぐ。
+
+この機能は、組織で Microsoft Defender ウイルス対策を使用し、クラウドベースの保護が有効になっている場合に使用できます。 詳細については、「クラウド提供の保護を通じて Microsoft Defender ウイルス対策で次世代テクノロジを使用する [」を参照してください](cloud-protection-microsoft-defender-antivirus.md)。
 
 セキュリティ ソリューションとその重要な機能に対する望ましくない変更を防止するために、改ざん防止を有効にしてください。
 

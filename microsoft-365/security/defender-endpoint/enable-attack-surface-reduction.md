@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: df77a3d6c1f66882600a200b83b3b2585473f42b
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939244"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995071"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -33,27 +33,23 @@ ms.locfileid: "51939244"
 > [!TIP]
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。 次のエディションとバージョンの Windows を実行しているデバイスに対して ASR ルールを設定できます。
-- Windows 10 Pro [バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 以降
-- Windows 10 Enterprise バージョン [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 以降
-- Windows Server バージョン [1803 (半期チャネル)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 以降
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+[攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。
 
 **要件** 次のエディションとバージョンの Windows を実行しているデバイスに対して攻撃表面の縮小ルールを設定できます。
 
-- Windows 10 Pro バージョン 1709 以降
-- Windows 10 Enterprise バージョン 1709 以降
-- Windows Server バージョン 1803 (半期チャネル) 以降
-- Windows Server 2019
+- Windows 10 Pro [バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
+- Windows 10 Enterprise バージョン [1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
+- Windows Server バージョン [1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803) 以降
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-攻撃表面の縮小ルールは Windows E5 ライセンスを必要としますが、Windows E5 を使用している場合は、高度な管理機能を利用できます。 Windows E5 でのみ使用できるこれらの機能には、Defender for Endpoint で使用できる監視、分析、ワークフロー、および Microsoft 365 セキュリティ センターのレポート機能と構成機能が含まれます。 これらの高度な機能は、Windows Professional または Windows E3 ライセンスでは使用できません。ただし、これらのライセンスがある場合は、イベント ビューアーと Microsoft Defender ウイルス対策ログを使用して攻撃表面の縮小ルール イベントを確認できます。
+攻撃表面の縮小ルールは [Windows E5](/windows/deployment/deploy-enterprise-licenses)ライセンスを必要としますが、Windows E5 を使用している場合は、高度な管理機能を利用できます。 Windows E5 でのみ使用できるこれらの機能には [、Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)で使用できる監視、分析、ワークフロー、 [および Microsoft 365](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)セキュリティ センターのレポート機能と構成機能が含まれます。 これらの高度な機能は、Windows Professional または Windows E3 ライセンスでは使用できません。ただし、これらのライセンスがある場合は、イベント ビューアーと Microsoft Defender ウイルス対策ログを使用して攻撃表面の縮小ルール イベントを確認できます。
 
 各 ASR ルールには、次の 4 つの設定のいずれかを含む。
 
 - **構成されていません**: ASR ルールを無効にする
 - **ブロック**: ASR ルールを有効にする
 - **監査**: ASR ルールが有効な場合に組織に与える影響を評価する
-- **警告**: ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスする
+- **警告**: ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスできる
 
 > [!IMPORTANT]
 > 現在、Microsoft Endpoint Manager (MEM) で ASR ルールを構成する場合、3 つの ASR ルールでは警告モードはサポートされていません。 詳細については、「警告モード [がサポートされていないケース」を参照してください](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。

@@ -1,5 +1,5 @@
 ---
-title: ファイルのインジケーターを作成する
+title: 'ファイルのインジケーターを作成 '
 ms.reviewer: ''
 description: エンティティの検出、防止、除外を定義するファイル ハッシュのインジケーターを作成します。
 keywords: ファイル、ハッシュ、管理、許可、ブロック、ブロック、クリーン、悪意のある、ファイル ハッシュ、IP アドレス、URL、ドメイン
@@ -17,75 +17,107 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199611"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995059"
 ---
-# <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成する
+# <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-
 > [!TIP]
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-悪意のある可能性のあるファイルやマルウェアの疑いを禁止することで、組織での攻撃の伝播をさらに防ぐことが可能です。 悪意のある可能性のあるポータブル実行可能ファイル (PE) ファイルが分かっている場合は、そのファイルをブロックできます。 この操作によって、組織内のコンピューターで読み取り、書き込み、または実行されるのを防ぐ。
+悪意のある可能性のあるファイルやマルウェアの疑いを禁止することで、組織での攻撃の伝播をさらに防ぐ。 悪意のある可能性のあるポータブル実行可能ファイル (PE) ファイルが分かっている場合は、そのファイルをブロックできます。 この操作によって、組織内のデバイスで読み取り、書き込み、または実行されるのを防ぐ。
 
-ファイルのインジケーターを作成するには、次の 2 つの方法があります。
+ファイルのインジケーターを作成するには、次の 3 つの方法があります。
+
 - 設定ページからインジケーターを作成する
 - ファイルの詳細ページからインジケーターの追加ボタンを使用してコンテキスト インジケーターを作成する
+- インジケーター API を使用してインジケーター [を作成する](ti-indicator.md)
 
-### <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>はじめに
+
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
-- この機能は、組織でウイルス対策とクラウドベースWindows Defenderが有効になっている場合に使用できます。 詳細については、「クラウド提供の保護を通じて Microsoft Defender ウイルス対策で次世代テクノロジを使用する [」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)。
-- マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
-- Windows 10 バージョン 1703 以降の Windows Server 2016 および 2019 のコンピューターでサポートされます。
-- ファイルのブロックを開始するには、まず [設定] で [ブロック] 機能または [許可 [**]** 機能を有効にする](advanced-features.md)必要があります。
-- この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、.exe ファイルや _.dll_ ファイルを含むポータブル実行可能ファイル _(PE) ファイルがサポート_ されています。 対象範囲は時間の長い期間延長されます。
+- この機能は、組織で **Microsoft Defender ウイルス** 対策 (アクティブ モード) を使用し、クラウドベースの保護が有効になっている **場合に使用できます**。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 
-ネットワーク共有からローカル デバイスに大きなファイルをコピーする場合、特に VPN 接続を使用してパフォーマンスに影響を与える可能性があります。 
+- マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-> [!IMPORTANT]
-> - 許可またはブロックアクションの前にファイルの分類がデバイスのキャッシュに存在する場合は、ファイルに対して許可またはブロック関数を実行できません。 
-> - 信頼できる署名付きファイルは、異なる方法で処理されます。 Defender for Endpoint は、悪意のあるファイルを処理するために最適化されています。 信頼できる署名付きファイルをブロックしようとすると、パフォーマンスに影響を与える場合があります。
-> - 通常、ファイル ブロックは数分以内に適用されますが、30 分以上かかる場合があります。
-> - ファイル インジケーター ポリシーが競合している場合は、より安全なポリシーの適用ポリシーが適用されます。 たとえば、両方のハッシュの種類が同じファイルを定義している場合、SHA-256 ファイル ハッシュ インジケーター ポリシーが MD5 ファイル ハッシュ インジケーター ポリシーよりも優先されます。
+- Windows 10 バージョン 1703 以降の Windows Server 2016 および 2019 のデバイスでサポートされます。
 
-### <a name="create-an-indicator-for-files-from-the-settings-page"></a>設定ページからファイルのインジケーターを作成する
+- ファイルのブロックを開始するには、まず [設定] の [ブロックまたは許可 [] 機能を](advanced-features.md) 有効にする必要があります。
 
-1. ナビゲーション ウィンドウで、[設定インジケーター]**を**  >  **選択します**。  
+この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、.exe ファイルや .dll ファイルを含むポータブル実行可能ファイル (PE) ファイルがサポートされています。 対象範囲は時間の長い期間延長されます。
 
-2. [ファイル ハッシュ **] タブを選択** します。
+## <a name="create-an-indicator-for-files-from-the-settings-page"></a>設定ページからファイルのインジケーターを作成する
 
-3. [インジケーター **の追加] を選択します**。
+1. ナビゲーション ウィンドウで、[インジケーターの設定 **] >選択します**。
+
+2. [ファイル ハッシュ **] タブを選択**   します。
+
+3. [インジケーター **の追加] を選択します**。
 
 4. 次の詳細を指定します。
-   - Indicator - エンティティの詳細を指定し、インジケーターの有効期限を定義します。
-   - Action - 実行するアクションを指定し、説明を入力します。
-   - Scope - コンピューター グループのスコープを定義します。
+    - Indicator - エンティティの詳細を指定し、インジケーターの有効期限を定義します。
+    - Action - 実行するアクションを指定し、説明を入力します。
+    - Scope - デバイス グループのスコープを定義します。
 
-5. [概要] タブで詳細を確認し、[保存] を **クリックします**。
+5. [概要] タブで詳細を確認し、[保存] を **選択します**。
 
-### <a name="create-a-contextual-indicator-from-the-file-details-page"></a>ファイルの詳細ページからコンテキスト インジケーターを作成する
-ファイルに対して応答アクションを実行 [する場合のオプションの 1](respond-file-alerts.md) つは、ファイルのインジケーターを追加することです。 
+## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>ファイルの詳細ページからコンテキスト インジケーターを作成する
 
-ファイルのインジケーター ハッシュを追加すると、組織内のコンピューターがファイルを実行しようとするたびに、アラートを発生してファイルをブロックできます。
+ファイルに対して応答アクションを実行 [する場合のオプションの 1](respond-file-alerts.md)つは   、ファイルのインジケーターを追加することです。 ファイルのインジケーター ハッシュを追加すると、組織内のデバイスがファイルの実行を試みるたびに、アラートを発生してファイルをブロックできます。
 
 インジケーターによって自動的にブロックされたファイルは、ファイルのアクション センターには表示されませんが、アラートはアラート キューに表示されます。
 
+>[!IMPORTANT]
+>- 通常、ファイル ブロックは数分以内に適用および削除されますが、30 分以上かかる場合があります。
+>- ファイル インジケーター ポリシーが競合している場合は、より安全なポリシーの適用ポリシーが適用されます。 たとえば、両方のハッシュの種類が同じファイルを定義している場合、SHA-256 ファイル ハッシュ インジケーター ポリシーが MD5 ファイル ハッシュ インジケーター ポリシーよりも優先されます。
+>- EnableFileHashComputation グループ ポリシーを無効にすると、ファイル IoC のブロック精度が低下します。 ただし、EnableFileHashComputation を有効にすると、デバイスのパフォーマンスに影響を与える可能性があります。
+>    - たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続を使用して) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
+>    - EnableFileHashComputation グループ ポリシーの詳細については [、「Defender CSP」を参照してください。](/windows/client-management/mdm/defender-csp)
 
-## <a name="related-topics"></a>関連項目
+## <a name="policy-conflict-handling"></a>ポリシーの競合の処理  
+
+Cert および File IoC ポリシー処理の競合は、次の順序に従います。
+
+- アプリケーションコントロールと AppLocker でファイルが許可Windows Defenderモード ポリシー/ポリシーが適用されない場合は、[**ブロック**]
+
+- それ以外の場合は、Defender ウイルス対策除外でファイルが許可されている場合は、[ **許可]**
+
+- それ以外の場合、ファイルがブロックまたは警告ファイル IoC によってブロックまたは警告される場合は、ブロック **/警告**
+
+- それ以外の場合は、ファイルが許可ファイル IOC ポリシーで許可されている場合は、[**許可**]
+
+- それ以外の場合は、ASR ルール、CFA、AV、SmartScreen、その後ブロックによってファイルがブロック **されます**。  
+
+- Else **Allow** (AppLocker Windows Defenderアプリケーション&を渡し、IoC ルールは適用されません)
+
+同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全な (長い) ハッシュのポリシーが適用されます。 たとえば、SHA-256 ファイル ハッシュ IoC ポリシーは、両方のハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。
+
+脅威と脆弱性管理のブロック脆弱なアプリケーション機能は、ファイル IoC を適用に使用し、上記の競合処理順序に従います。
+
+### <a name="examples"></a>例
+
+|コンポーネント |コンポーネントの適用 |ファイル インジケーター アクション |結果
+|--|--|--|--|
+|攻撃表面の縮小ファイル パスの除外 |許可 |ブロック |ブロック
+|攻撃表面の縮小ルール |ブロック |許可 |許可
+|Windows Defender Application Control |許可 |ブロック |許可 |
+|Windows Defender Application Control |ブロック |許可 |ブロック
+|Microsoft Defender ウイルス対策の除外 |許可 |ブロック |許可
+
+## <a name="see-also"></a>こちらもご覧ください
+
 - [インジケーターの作成](manage-indicators.md)
-- [IPs と URL/ドメインのインジケーターを作成する](indicator-ip-domain.md)
+- [IP および URL/ドメインのインジケーターを作成](indicator-ip-domain.md)
 - [証明書に基づいてインジケーターを作成する](indicator-certificates.md)
 - [インジケーターの管理](indicator-manage.md)

@@ -19,12 +19,12 @@ description: EOP と Office 365 が、電子メールの上部に安全ヒント
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1820cab63abbbac09aa60a9c1684f3672882451
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 659a83c73b4fef9097aa317332c9951d53b09a33
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205662"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994987"
 ---
 # <a name="safety-tips-in-email-messages"></a>電子メール メッセージの安全性に関するヒント
 
@@ -55,6 +55,6 @@ Outlook の安全ヒントは、安全ヒントが開いて、メッセージ本
 
 ## <a name="working-with-safety-tips"></a>安全に関するヒントを操作する
 
-安全に関するヒントは、すべてのメッセージが受信されるとは限らなくても、Outlook on the web で常に有効になります。 管理者は、Outlook などの他の電子メール クライアントの安全に関するヒントをオフにできます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+管理者は、スパム対策ポリシーで安全に関するヒントをオンまたはオフにできます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 EOP でメッセージを分類する方法 (つまり、メッセージがスパムではないか、スパムとしてマークされている必要がある) に同意しない場合は、分析のために Microsoft にメッセージを送信して、エクスペリエンスを向上できます。 手順については、「メッセージと [ファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。 また、安全上のヒントにある [フィードバック] リンクをクリックして、Microsoft にコメントを直接送信して、改善を支援することもできます。

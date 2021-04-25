@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: 468f06edf16eb6ea00fd4d26c716bc145474dd25
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 60de4e3f36427a69ecf0bf52e5dfd34f089991f3
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904278"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994975"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -47,11 +47,9 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 <sup>1</sup>Windows 8.1 RT デバイスのアクセス制御は、1 つの RT デバイスExchange ActiveSync。
 
-<sup>2</sup>Windows 8.1 RT デバイスのアクセス制御は、1 つの RT デバイスExchange ActiveSync。
-Windows 10 のアクセス制御には、Azure AD Premium を含むサブスクリプションが必要で、デバイスを Azure Active Directory に参加する必要があります。
+<sup>2</sup>Windows 10 のアクセス制御には、Azure AD Premium を含むサブスクリプションが必要で、デバイスを Azure Active Directory に参加する必要があります。
 
-<sup>3</sup>Windows 8.1 RT デバイスのアクセス制御は、1 つの RT デバイスExchange ActiveSync。
-2020 年 6 月以降、9 より後の Android バージョンでは、Samsung Knox デバイス以外のパスワード設定を管理できません。
+<sup>3</sup>2020 年 6 月以降、9 より後の Android バージョンでは、Samsung Knox デバイス以外のパスワード設定を管理できません。
 
 >[!NOTE]
 >以前の OS バージョンで既に登録されているデバイスは引き続き機能しますが、機能は予告なしに変更される可能性があります。
@@ -62,7 +60,7 @@ Windows 10 のアクセス制御には、Azure AD Premium を含むサブスク�
 
 次の表に示すさまざまな種類のモバイル デバイスでサポートされているアプリは、ユーザーのデバイスに適用される新しいモバイル デバイス管理ポリシーが作成され、ユーザーがデバイスを以前に登録しなかった場合に、Basic Mobility and Security に登録するようユーザーに求めるメッセージを表示します。 ポリシーの設定方法によっては、ユーザーのデバイスがポリシーに準拠しない場合、ユーザーがこれらのアプリの Microsoft 365 リソースにアクセスできないか、アクセス権を持っている可能性がありますが、Microsoft 365 はポリシー違反を報告します。
 
-|**製品**|**iOS 10.0 以降**|**Android 5.0 以降**|
+|**Product**|**iOS 10.0 以降**|**Android 5.0 以降**|
 |:-----|:-----|:-----|
 |**Exchange** Exchange ActiveSyncには、バージョン 14.1 以降を使用する組み込みの電子メールアプリと、TouchDown Exchange ActiveSyncサード パーティ製アプリが含まれます。 |メール |メール |
 |**Office**   **および OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**電話とタブレットの場合**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **電話のみ:** <br/> Office Mobile |
