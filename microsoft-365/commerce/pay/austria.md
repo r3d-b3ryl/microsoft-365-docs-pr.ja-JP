@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f973737f3be59a9206b207e58605784da617fc81
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6b405536aaa86df5ca6f7f959bd5e9b1cf942ca4
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549606"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024159"
 ---
 # <a name="payment-information-for-austria"></a>オーストリアのお支払い情報
 
@@ -43,3 +43,5 @@ SWIFT コード: CITIIE2X\
 IBAN コード: IE81CITI99005170000124\
 アカウント番号: 70000124\
 アカウント名: MICROSOFT
+
+現地の Microsoft 子会社から発行された請求書は、VAT/売上税/GST の標準税率で発行され、VAT/売上税/GST の目的で国内のサービス供給と見なされます。

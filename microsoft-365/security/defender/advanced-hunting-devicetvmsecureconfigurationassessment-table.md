@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e128eabc43c73949b5c747e51f3b59ac8b9a0ac5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2e3e649911cb2ce63c2a49be0ebc93e35e8055d6
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933027"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024219"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -34,6 +34,7 @@ ms.locfileid: "51933027"
 
 **適用対象:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 
 
@@ -44,16 +45,16 @@ ms.locfileid: "51933027"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
+| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
+| `OSPlatform` | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
 | `Timestamp` | datetime | レコードが作成された日付と時刻 |
 | `ConfigurationId` | 文字列 | 特定の構成の一意の識別子 |
-| `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
-| `ConfigurationSubcategory` | string | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationCategory` | 文字列 | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
+| `ConfigurationSubcategory` | 文字列 | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationImpact` | 文字列 | 構成の評価が全体の構成スコア (1-10) に及ぼす影響 |
 | `IsCompliant` | ブール値 | 構成やポリシーが正しく構成されているかどうかを示します |
 | `IsApplicable` | ブール値 | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
-| `Context` | string | 構成またはポリシーに関するその他のコンテキスト情報 |
+| `Context` | 文字列 | 構成またはポリシーに関するその他のコンテキスト情報 |
 | `IsExpectedUserImpact` | ブール値 | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
 
 ## <a name="related-topics"></a>関連項目

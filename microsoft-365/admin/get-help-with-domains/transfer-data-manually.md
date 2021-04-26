@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: プランまたは会社名を変更した場合、または複数のサブスクリプションを 1 に結合した場合に、2 つの Microsoft 365 アカウント間でデータを手動で転送する方法について説明します。
-ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b240ffbbdbfb6ed7d20a9ead9b1ee90a3af4570d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915508"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023835"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>2 つのアカウント間でデータを手動で転送する
 
@@ -91,11 +91,11 @@ Microsoft 365 でホストされているパブリック Web サイトがある�
   
 - 古いサイトをテンプレートとして保存し、新しいサイトにテンプレートをインポートできます。
 
-- ドキュメントを転送するには、まず新しいサイトで階層を手動で再作成します。 その後は、両方の SharePoint チーム サイトを同時に開き、両方のドキュメント ライブラリをエクスプローラーで開いて、ドキュメントをコピーして貼り付けることができます。 「[ビデオ: [エクスプローラーで開く] を使用してライブラリ ファイルをコピーまたは移動する](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)」を参照してください。
+- ドキュメントを転送するには、まず新しいサイトで階層を手動で再作成します。 その後は、両方の SharePoint チーム サイトを同時に開き、両方のドキュメント ライブラリをエクスプローラーで開いて、ドキュメントをコピーして貼り付けることができます。 「[ビデオ: [エクスプローラーで開く] を使用してライブラリ ファイルをコピーまたは移動する](../../business-video/store-files.md)」を参照してください。
 
 - リスト データを転送するには、[リスト テンプレート](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)を保存し、保存したテンプレートを使用して新しいサイトにリストを再作成します。
 
-- ドキュメント ライブラリまたはリスト コンテンツを SharePoint Online 環境 (OneDrive for Business またはチーム サイト) からファイル共有またはローカル コンピューターに保存するには [、「SharePoint Online](https://support.microsoft.com/kb/2783484)コンテンツの手動移行に関する情報」を参照してください。
+- ドキュメント ライブラリまたはリスト コンテンツを SharePoint Online 環境 (OneDrive for Business またはチーム サイト) からファイル共有またはローカル コンピューターに保存するには [、「SharePoint Online](/sharepoint/troubleshoot/migration-tool/content-manual-migration)コンテンツの手動移行に関する情報」を参照してください。
 
 ## <a name="transfer-users-data-between-subscriptions"></a>サブスクリプション間でユーザーのデータを転送する
 

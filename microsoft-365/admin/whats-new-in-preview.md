@@ -21,12 +21,12 @@ description: Microsoft 365 管理センター - 今月追加された機能に�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768723"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024195"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -231,7 +231,7 @@ Microsoft で Ignite シーズンに移行する中で、セッション中に�
 
 ### <a name="docs-training-and-videos-june"></a>ドキュメント、トレーニング、ビデオ (6 月)
 
-- [Teams の使用を開始する](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+- [Teams の使用を開始する](../business-video/get-started-teams-small-business.md)
 
 ## <a name="may-2020"></a>2020 年 5 月
 
@@ -333,19 +333,19 @@ Teams の使用量が増えたので、管理に役立つ機能がいくつか�
 
 #### <a name="for-your-users"></a>ユーザーの場合
 
-- [会議をスケジュールする](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [会議をスケジュールする](../business-video/schedule-guest-meeting.md)
 - [Teams 会議に参加する](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [組織全体にわたるチームを作成する](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [ゲストとチームを作成する](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [チームにゲストとして参加する](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [グループのメール アドレスを作成する](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [組織全体にわたるチームを作成する](../business-video/org-wide-team.md)
+- [ゲストとチームを作成する](../business-video/team-with-guests.md)
+- [チームにゲストとして参加する](../business-video/join-team-guest.md)
+- [グループのメール アドレスを作成する](../business-video/group-email.md)
 
 #### <a name="for-admins-and-business-owners"></a>管理者およびビジネス所有者向け
 
 - [リモート ワークで小規模ビジネスを強化する](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [リモート 小規模ビジネスの実行](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Microsoft Business Basic にサインアップする](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [2 要素サインインのセットアップ](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [リモート 小規模ビジネスの実行](../business-video/sign-up.md)
+- [Microsoft Business Basic にサインアップする](../business-video/sign-up.md)
+- [2 要素サインインのセットアップ](../business-video/sign-up.md)
 
 ## <a name="march-2020"></a>2020 年 3 月
 

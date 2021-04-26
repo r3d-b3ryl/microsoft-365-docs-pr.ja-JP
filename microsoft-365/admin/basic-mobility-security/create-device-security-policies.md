@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security を使用して、組織情報を保護するデバイス ポリシーを作成します。
-ms.openlocfilehash: f31930f1a753259622520e50da8c255e7cd410e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904290"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023907"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する
 
@@ -36,7 +36,7 @@ Basic Mobility and Security を使用すると、Microsoft 365 の組織情報�
 
 - Basic Mobility and Security がサポートするデバイス、モバイル デバイス アプリ、セキュリティ設定について説明します。 「Basic [Mobility and Security の機能」を参照してください](capabilities.md)。
 - ポリシーを展開する Microsoft 365 ユーザーを含むセキュリティ グループを作成し、Microsoft 365 へのアクセスがブロックされるのを除外する可能性があるユーザーに対して作成します。 組織に新しいポリシーを展開する前に、少ないユーザーに展開してポリシーをテストすることをお勧めします。 自分またはポリシーをテストできる数の少ない Microsoft 365 ユーザーを含むセキュリティ グループを作成して使用できます。 セキュリティ グループの詳細については、「セキュリティ グループの [作成、編集、または削除」を参照してください](../email/create-edit-or-delete-a-security-group.md)。
-- Microsoft 365 で Basic Mobility and Security ポリシーを作成および展開するには、Microsoft 365 グローバル管理者である必要があります。詳細については、「Security [&アクセス許可」を参照してください](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)。
+- Microsoft 365 で Basic Mobility and Security ポリシーを作成および展開するには、Microsoft 365 グローバル管理者である必要があります。詳細については、「Security [&アクセス許可」を参照してください](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 - ポリシーを展開する前に、Basic Mobility and Security にデバイスを登録する場合の潜在的な影響を組織に知らせて下さい。 ポリシーの設定方法に応じて、準拠しないデバイスが Microsoft 365 や、登録済みデバイスにインストールされているアプリケーション、写真、個人情報などのデータへのアクセスをブロックし、データを削除できます。
 
 >[!NOTE]
@@ -85,7 +85,7 @@ Basic Mobility and Security を使用すると、Microsoft 365 の組織情報�
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>手順 4: サポートされていないデバイスの電子メール アクセスをブロックする
 
-組織情報をセキュリティで保護するには、Basic Mobility and Security でサポートされていないモバイル デバイスの Microsoft 365 メールへのアプリ アクセスをブロックする必要があります。 サポートされているデバイスの一覧については、「サポートされている [デバイス」を参照してください](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)。
+組織情報をセキュリティで保護するには、Basic Mobility and Security でサポートされていないモバイル デバイスの Microsoft 365 メールへのアプリ アクセスをブロックする必要があります。 サポートされているデバイスの一覧については、「サポートされている [デバイス」を参照してください](../../admin/basic-mobility-security/capabilities.md)。
 
 **アプリへのアクセスをブロックするには、次の方法を実行します。**
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 583bd8ad67fa78ae09fde69813506606ca9806b7
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8087535472e0affe4d7f7526b4c05aabe44ad2ac
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549618"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024171"
 ---
 # <a name="payment-information-for-australia"></a>オーストラリアのお支払い情報
 
@@ -42,3 +42,5 @@ SWIFT コード: CITIAU2X\
 BSB コード: 248053\
 アカウント番号: 100001074\
 アカウント名: MICROSOFT
+
+現地の Microsoft 子会社から発行された請求書は、VAT/売上税/GST の標準税率で発行され、VAT/売上税/GST の目的で国内のサービス供給と見なされます。

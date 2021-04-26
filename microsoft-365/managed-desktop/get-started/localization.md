@@ -1,5 +1,5 @@
 ---
-title: ユーザー エクスペリエンスのローカライズ
+title: ユーザー エクスペリエンスをローカライズ
 description: ユーザーのデバイスをローカライズする方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -12,14 +12,14 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20456ce837be60b707569ae07d4fb00b695b3a98
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445983"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023263"
 ---
-# <a name="localize-the-user-experience"></a>ユーザー エクスペリエンスのローカライズ
+# <a name="localize-the-user-experience"></a>ユーザー エクスペリエンスをローカライズ
 
 Microsoft Managed Desktop デバイスのユーザーは、セットアップ プロセス ("すぐに使用できる") または後で、選択した言語を選択できます。
 
@@ -62,43 +62,43 @@ Microsoft Managed Desktop デバイスのユーザーは、セットアップ �
 
 Microsoft [Managed](../service-description/device-images.md#universal-image) Desktop によって提供されるユニバーサル イメージには、次の言語と Windows 10 用が含まれます。
 
+- アラビア語
+- ブルガリア語
+- 中国語 (簡体字)
+- 中国語 (繁体字)
+- クロアチア語
+- チェコ語
+- デンマーク語  
+- オランダ語  
 - 英語 (米国、GB、AU、CA、IN)
-- スペイン語 (スペイン、メキシコ)
-- 日本語
+- エストニア語
+- フィンランド語 
 - フランス語 (フランス、カナダ)
 - ドイツ語
-- ポルトガル語 (ブラジル)
-- イタリア語
-- Chinese Simplified
-- オランダ語  
-- スウェーデン語
-- デンマーク語  
-- フィンランド語 
-- ロシア語 
-- ノルウェー語 (ブークモール)
-- 韓国語
-- Chinese Traditional
-- ポーランド語
-- トルコ語
-- アラビア語
-- ヘブライ語
-- ポルトガル語 (ポルトガル)
-- チェコ語
-- ハンガリー語
-- タイ語
-- インドネシア語
 - ギリシャ語
-- スロバキア語
-- ベトナム語
-- スロベニア語
-- クロアチア語
-- ルーマニア語
-- リトアニア語
-- ブルガリア語
-- セルビア語 (ラテン文字)
+- ヘブライ語
+- ハンガリー語
+- インドネシア語
+- イタリア語
+- 日本語
+- 韓国語
 - ラトビア語
+- リトアニア語
+- ノルウェー語 (ブークモール)
+- ポーランド語
+- ポルトガル語 (ブラジル)
+- ポルトガル語 (ポルトガル)
+- ルーマニア語
+- ロシア語 
+- セルビア語 (ラテン文字)
+- スロバキア語
+- スロベニア語
+- スペイン語 (スペイン、メキシコ)
+- スウェーデン語
+- タイ語
+- トルコ語
 - ウクライナ語
-- エストニア語
+- ベトナム語
 
 Microsoft 365 Apps for Enterprise では、若干異なるリストがサポートされている場合があります。
 

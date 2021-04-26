@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 909cd6a7e3d1334ab2aa5ad2ad000de55e3a1224
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 94febae2ba015ebc102473937443129bcfc56e9c
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551802"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024135"
 ---
 # <a name="payment-information-for-canada"></a>カナダのお支払い情報
 
@@ -44,3 +44,5 @@ Bank: Citibank N.A., Canadian Branch\
 BIC/SWIFT コード: CITICATTBCH\
 アカウント番号: 3003600001\
 アカウント名: MICROSOFT
+
+現地の Microsoft 子会社から発行された請求書は、VAT/売上税/GST の標準税率で発行され、VAT/売上税/GST の目的で国内のサービス供給と見なされます。

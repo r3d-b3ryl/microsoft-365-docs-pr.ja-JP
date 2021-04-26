@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Microsoft 365 を使用している企業向けリモートワークに関する最新の方法情報、ヒント、リソース、ガイダンスについて説明します。
-ms.openlocfilehash: 3ef8bb3527e6be258eda8d745d841e8bd81cdd6c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860585"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023739"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>リモート ワークで小規模ビジネスを強化する
 
@@ -37,9 +37,9 @@ ms.locfileid: "51860585"
 
 COVID-19 (Novel Coronavirus) の流行に照らして、多くのビジネスオーナーは完全にリモートワークスタッフを持っています。 リモート作業を安全、安全、生産性に移行するために実行できる操作を次に示します。
 
-詳細については、「小規模ビジネス向け Microsoft Teams の使用を [開始する」を参照してください](https://support.microsoft.com/office/get-started-with-microsoft-teams-in-your-small-business-184f1aba-2f91-43f0-86e1-9fae607e24f6)。
+詳細については、「小規模ビジネス向け Microsoft Teams の使用を [開始する」を参照してください](../../business-video/get-started-teams-small-business.md)。
 
-サブスクリプションは既に持っていますが、セットアップが必要ですか? [「Microsoft 365 小規模ビジネス トレーニング」を参照してください](https://support.microsoft.com/office/set-up-your-small-business-6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+サブスクリプションは既に持っていますが、セットアップが必要ですか? [「Microsoft 365 小規模ビジネス トレーニング」を参照してください](../../business-video/index.yml)。
 
 ## <a name="connect-with-employees-and-customers"></a>従業員と顧客との接続
 
@@ -49,19 +49,19 @@ COVID-19 (Novel Coronavirus) の流行に照らして、多くのビジネスオ
 
 Microsoft Teams を通じて、従業員、顧客、またはパートナーとの音声、ビデオ、および Web 会議をホストします。
 
-詳細については、「Host [online Meetings and](https://support.microsoft.com/topic/host-online-meetings-for-your-business-d5101f5c-30e3-4097-bb10-6d2fdeb9cf53) Chat with [employees and Customers」を参照してください](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)。
+詳細については、「Host [online Meetings and](../../business-video/start-and-pin-chats.md) Chat with [employees and Customers」を参照してください](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)。
 
 ### <a name="store-and-share-files"></a>ファイルの保存と共有
 
 ビジネス ドキュメントをクラウドに入れて、社内と外部の両方で安全に共有します。
 
-詳細については、「ビジネス ファイルの共有 [の概要」](https://support.microsoft.com/topic/share-your-business-files-overview-6725104a-6df7-4778-99c4-c06217dffecc) および「ファイルのアップロードと共有 [」を参照してください](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)。
+詳細については、「ビジネス ファイルの共有 [の概要」](../../business-video/overview-file-sharing.md) および「ファイルのアップロードと共有 [」を参照してください](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)。
 
 ### <a name="collaborate-with-customers"></a>顧客との共同作業
 
 従業員と顧客をチームに招待して、チームと直接協力して、すべての調整と共同作業を 1 か所で行えます。
 
-詳細については、「チームを作成 [する」および「ゲスト アクセス](https://support.microsoft.com/office/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7) を [有効にする」を参照してください](https://docs.microsoft.com/MicrosoftTeams/guest-joins)。
+詳細については、「チームを作成 [する」および「ゲスト アクセス](../../business-video/team-with-guests.md) を [有効にする」を参照してください](/MicrosoftTeams/guest-access)。
 
 ## <a name="manage-and-secure-your-business-to-run-remotely"></a>リモートで実行するためのビジネスの管理とセキュリティ保護
 
@@ -71,13 +71,13 @@ Microsoft Teams を通じて、従業員、顧客、またはパートナーと�
 
 データとデバイスを保護するには、多要素認証を使用します。
 
-詳細については、「多要素認証 [を有効にする」を参照してください](https://support.microsoft.com/office/secure-employee-accounts-with-mfa-in-microsoft-365-business-e12187b8-216a-4490-9e3b-df34a06fb787)。
+詳細については、「多要素認証 [を有効にする」を参照してください](../../business-video/turn-on-mfa.md)。
 
 ### <a name="secure-your-devices"></a>デバイスをセキュリティで保護する
 
 PC と電話をリモートで管理し、保護され、最新の情報を提供します。 Microsoft 365 Business が必要です。
 
-詳細については、「デバイスの管理 [」を参照してください](https://support.microsoft.com/office/manage-policies-for-windows-10-pcs-5b5aec9e-e267-463a-bc39-54753375e579)。
+詳細については、「デバイスの管理 [」を参照してください](../../business-video/secure-win-10-pro-devices.md)。
 
 ### <a name="more-for-admins-and-partners"></a>管理者とパートナー向け詳細
 

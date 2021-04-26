@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security に関するよく寄せられる質問。
-ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 14e12678ec210325f63914594fb6debcf7abb880
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906266"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023895"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>基本的なモビリティとセキュリティに関するよく寄せられる質問 (FAQ)
 
@@ -51,7 +51,7 @@ Basic Mobility and Security の使用を開始するには、次の 4 つの手�
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>基本的なモビリティとセキュリティをセットアップしていますが、スタックしているようです。 Microsoft 365 Service Health はしばらくの間、"プロビジョニング" を表示しています。 解決方法
 
-サービスの準備に時間がかかる場合があります。 プロビジョニングが完了すると、[基本モビリティとセキュリティ] ページが表示されます。 24 時間待機し、状態がまだプロビジョニングされている場合は、サポートに問い合わせ、問題の把握に役立ちます。 サポート オプションについては、「Still [need help? 」を参照してください](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp)。
+サービスの準備に時間がかかる場合があります。 プロビジョニングが完了すると、[基本モビリティとセキュリティ] ページが表示されます。 24 時間待機し、状態がまだプロビジョニングされている場合は、サポートに問い合わせ、問題の把握に役立ちます。
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>デバイスの登録に失敗した場合はどうなりますか?
 
@@ -73,7 +73,7 @@ Basic Mobility and Security の使用を開始するには、次の 4 つの手�
 
 ## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>Basic Mobility and Security のポリシーの動作 それらを設定する方法 無効にしますか?
 
-Basic Mobility and Security の初期セットアップが完了したら、ポリシーを作成し、ポリシーをセキュリティ コンプライアンス センターのユーザー グループ&適用します。 ポリシーでは、ポリシーのユーザーが、デバイスを Microsoft 365 データへのアクセスに使用する前に、デバイスを Basic Mobility and Security に登録する必要があります。 設定するポリシーによって、モバイル デバイスの設定 (パスワードをリセットする頻度、データ暗号化が必要かどうかなど) が決められます。 詳細については、「Create device security [policies](create-device-security-policies.md)in Basic Mobility and Security and Microsoft   [365 compliance center」を参照してください](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8)。
+Basic Mobility and Security の初期セットアップが完了したら、ポリシーを作成し、ポリシーをセキュリティ コンプライアンス センターのユーザー グループ&適用します。 ポリシーでは、ポリシーのユーザーが、デバイスを Microsoft 365 データへのアクセスに使用する前に、デバイスを Basic Mobility and Security に登録する必要があります。 設定するポリシーによって、モバイル デバイスの設定 (パスワードをリセットする頻度、データ暗号化が必要かどうかなど) が決められます。 詳細については、「Create device security [policies](create-device-security-policies.md)in Basic Mobility and Security and Microsoft   [365 compliance center」を参照してください](../../compliance/microsoft-365-compliance-center.md)。
 
 デバイス ポリシーの作成と展開の手順については、「Create device security policies in Basic Mobility and [Security」を参照してください](create-device-security-policies.md)。
 

@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: '365 のサインアップ プロセスを実行する前に知る必要Officeします。 '
-ms.openlocfilehash: 93d3f58db24e4233e8d7b2929fd2471707614097
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f2a4f555540b801441644af28435170f82229909
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904374"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023919"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
@@ -70,7 +70,7 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
 
 プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [すべての製品 [を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。
   
@@ -135,6 +135,6 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
     > [!IMPORTANT]
     >  サインアップする場合は、組織に最適な支払い方法を選択してください。 支払いオプションを変更するには、課金サポートに連絡する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="related-content"></a>関連コンテンツ
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (リンク)

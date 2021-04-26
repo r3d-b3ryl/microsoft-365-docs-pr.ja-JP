@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a3f9d023628177b3d9bc784a129abe359c4a28c2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 93b3c5813d2f95ffeb4e55ee8f8aba3f9283e4a0
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549978"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024099"
 ---
 # <a name="payment-information-for-united-kingdom"></a>英国のお支払い情報
 
@@ -43,3 +43,5 @@ SWIFT コード: CITIIE2X\
 IBAN コード: IE65CITI99005170000121\
 アカウント番号: 70000121\
 アカウント名: MICROSOFT
+
+現地の Microsoft 子会社から発行された請求書は、VAT/売上税/GST の標準税率で発行され、VAT/売上税/GST の目的で国内のサービス供給と見なされます。

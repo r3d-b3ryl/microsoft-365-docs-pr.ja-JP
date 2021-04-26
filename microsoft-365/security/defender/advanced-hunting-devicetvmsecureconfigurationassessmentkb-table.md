@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a387d917e5ae93a6289aa2af527d52f1ce1195f4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1dfa710b86afdcfd8a5643555564a0f34c7b4702
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934870"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024243"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -34,6 +34,7 @@ ms.locfileid: "51934870"
 
 **適用対象:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 
 
@@ -44,15 +45,15 @@ ms.locfileid: "51934870"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | 特定の構成の一意の識別子 |
-| `ConfigurationImpact` | string | 構成が全体の構成スコアに与える影響の評価 (1-10) |
+| `ConfigurationImpact` | 文字列 | 構成が全体の構成スコアに与える影響の評価 (1-10) |
 | `ConfigurationName` | string | 構成の表示名 |
 | `ConfigurationDescription` | string | 構成の説明 |
 | `RiskDescription` | string | 関連するリスクの説明 |
 | `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|
-| `ConfigurationSubcategory` | string |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationSubcategory` | 文字列 |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationBenchmarks` | string | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
 | `Tags` | string | セキュリティ構成を識別または分類するために使用されるさまざまな属性を表すラベル |
-| `RemediationOptions` | string | 関連するリスクを軽減または対処するために推奨されるアクション |
+| `RemediationOptions` | 文字列 | 関連するリスクを軽減または対処するために推奨されるアクション |
 
 ## <a name="related-topics"></a>関連項目
 

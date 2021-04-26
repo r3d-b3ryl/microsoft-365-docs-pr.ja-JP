@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 006539e75ba4e26f409f08993f12a94fc8f37b75
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a3d151eab91d496a3cdb5301959f37e77fee5388
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549474"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024147"
 ---
 # <a name="payment-information-for-belgium"></a>ベルギーの支払い情報
 
@@ -43,3 +43,5 @@ SWIFT コード: CITIIE2X\
 IBAN コード: IE54CITI99005170000125\
 アカウント番号: 70000125\
 アカウント名: MICROSOFT
+
+現地の Microsoft 子会社から発行された請求書は、VAT/売上税/GST の標準税率で発行され、VAT/売上税/GST の目的で国内のサービス供給と見なされます。

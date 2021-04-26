@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 組み込みの Basic Mobility and Security を使用して、登録済みデバイスから情報を削除します。
-ms.openlocfilehash: ddf13ef6627d70128064e2d8bd185203244b12e4
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819810"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023859"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility and Security でモバイル デバイスをワイプする
 
@@ -45,7 +45,7 @@ ms.locfileid: "50819810"
 
 ## <a name="wipe-a-mobile-device"></a>モバイル デバイスをワイプする
 
-1.  [Microsoft 365 管理センターに移動します](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23)。
+1.  [Microsoft 365 管理センターに移動します](../../admin/admin-overview/about-the-admin-center.md)。
 
 2. [モバイル デバイスの管理] を検索フィールドに入力し、結果の一覧から [モバイル デバイス **の管理** ] を選択します。
 
