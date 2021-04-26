@@ -457,6 +457,7 @@
 ####### [アラートの一覧表示](get-alerts.md)
 ####### [アラートの作成](create-alert-by-reference.md)
 ####### [アラートの更新](update-alert.md)
+####### [アラートのバッチ更新](batch-update-alerts.md)
 ####### [ID でアラート情報を取得する](get-alert-info-by-id.md)
 ####### [アラート関連のドメイン情報を取得する](get-alert-related-domain-info.md)
 ####### [アラート関連のファイル情報を取得する](get-alert-related-files-info.md)
@@ -501,6 +502,7 @@
 
 ###### [インジケーター]()
 ####### [インジケーター メソッドとプロパティ](ti-indicator.md)
+####### [インジケーターのインポート](import-ti-indicators.md)
 ####### [インジケーターの送信](post-ti-indicator.md)
 ####### [インジケーターの一覧表示](get-ti-indicators-collection.md)
 ####### [インジケーターの削除](delete-ti-indicator-by-id.md)
