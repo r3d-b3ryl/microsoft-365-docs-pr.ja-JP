@@ -129,15 +129,15 @@
                   href: defender/incidents-overview.md
                 - name: インシデントの優先度を設定する
                   href: defender/incident-queue.md
-                - name: インシデントを調査する
+                - name: インシデントを管理する
+                  href: defender/manage-incidents.md
+                - name: インシデント対応
                   items:
-                    - name: インシデントを調査する
+                    - name: インシデントを分析する
                       href: defender/investigate-incidents.md
-                    - name: インシデントを管理する
-                      href: defender/manage-incidents.md
-                    - name: アラートを調査する
+                    - name: アラートを分析する
                       href: defender/investigate-alerts.md
-                    - name: Microsoft 365 セキュリティ センターのユーザーを調査する
+                    - name: ユーザーを分析する
                       href: defender/investigate-users.md
                 - name: メール通知を取得する
                   href: defender/get-incident-notifications.md
