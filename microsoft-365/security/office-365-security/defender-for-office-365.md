@@ -88,7 +88,7 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 - Microsoft Defender for Office 365 プラン 1 は、Microsoft 365 Business Premium に含まれています。
 
-- Microsoft Defender for Office 365 プラン 1 および Microsoft Defender for Office 365 プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして利用できます。 詳細については、「[Microsoft Defender for Office 365 プラン全体での機能の可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+- Microsoft Defender for Office 365 プラン 1 および Microsoft Defender for Office 365 プラン 2 はいずれも、特定のサブスクリプションのアドオンとして利用できます。 詳細については、「[Microsoft Defender for Office 365 プラン全体での機能の可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
 
 - [安全なドキュメント](safe-docs.md)機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティ ライセンス (Microsoft Defender for Office 365 プランには含まれません) を持つユーザーのみが利用できます。
 

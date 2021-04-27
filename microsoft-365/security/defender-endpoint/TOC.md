@@ -243,6 +243,8 @@
 ##### [手動展開](linux-install-manually.md)
 ##### [Puppet ベースの展開](linux-install-with-puppet.md)
 ##### [Ansible ベースの展開](linux-install-with-ansible.md)
+##### [Chef を使用して Linux 用 Microsoft Defender for Endpoint を展開する](linux-deploy-defender-for-endpoint-with-chef.md)
+
 
 #### [更新](linux-updates.md)
 
@@ -253,7 +255,6 @@
 ##### [望ましくない可能性のあるアプリケーションを検出してブロックする](linux-pua.md)
 ##### [Linux 用 Microsoft Defender for Endpoint でスキャンをスケジュールする](linux-schedule-scan-atp.md)
 ##### [Microsoft Defender for Endpoint (Linux) の更新をスケジュールする](linux-update-MDE-Linux.md)
-##### [Chef を使用して Linux 用 Microsoft Defender for Endpoint を展開する](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [トラブルシューティング]()
 ##### [インストールに関する問題のトラブルシューティング](linux-support-install.md)
