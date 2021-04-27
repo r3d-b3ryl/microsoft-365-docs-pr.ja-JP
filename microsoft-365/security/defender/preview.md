@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 291ee6d2f72579a6daf731c121265164b2aaa547
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c82e1abf9e539ad169bbc488ade9cd21bb8e6727
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066740"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029076"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender プレビュー機能
 
@@ -68,10 +68,6 @@ Microsoft 365 Defender プレビュー リリースの新機能について説�
 
 現在、次の機能と拡張機能がプレビューで利用できます:
 
-### <a name="improved-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの強化
-改善された [Microsoft 365 セキュリティ センター](https://security.microsoft.com)がパブリック プレビューで利用できるようになりました。 この新しいエクスペリエンスにより、Defender for Endpoint、Defender for Office 365、Microsoft 365 Defender などが Microsoft 365 セキュリティ センターに導入されます。 これは、セキュリティコントロールを管理するための新しいホームです。 [新機能について説明します](./overview-security-center.md)。
-
-- **[Microsoft 365 Defender の脅威分析レポート](threat-analytics.md)** - 脅威分析は、アクティブな攻撃の影響に対応し、最小限に抑えるのに役立ちます。 また、Microsoft 365 Defender ソリューションによってブロックされる攻撃の試みについて説明し、さらなる暴露のリスクを軽減し、回復力を高める予防措置を講じてみることができます。 統合セキュリティ エクスペリエンスの一環として、Microsoft Defender for Endpoint および Microsoft Defender では、E5 ライセンス所有者向Office利用できます。
 - **[Microsoft 365 Defender API](api-overview.md)** - Microsoft 365 Defender のトップ レベル API を使用すると、共有インシデントと高度なハンティング テーブルに基づいてワークフローを自動化できます。 
 - **[高度な狩猟でアクションを](advanced-hunting-take-action.md)** 実行する -迅速に脅威を含むか、高度な狩猟で見つけた侵害された資産 [に対処します](advanced-hunting-overview.md)。
 - **[ポータル内スキーマ参照](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**- セキュリティ センターで高度な検索スキーマ テーブルに関する情報を直接取得します。 テーブルと列の説明に加えて、この参照には、サポートされているイベントの種類 ( `ActionType` 値) とサンプル クエリが含まれます。

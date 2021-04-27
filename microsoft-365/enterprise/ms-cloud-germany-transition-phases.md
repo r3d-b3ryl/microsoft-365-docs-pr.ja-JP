@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995023"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029064"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -226,7 +226,7 @@ Skype [for Business Online 移行の移行前の手順を確認](ms-cloud-german
 - 連絡先と会議は Microsoft Teams に移行されます。
 - タイム サービスが Office 365 サービスに移行するまで、顧客の DNS エントリが完了するまで、ユーザーは Skype for Business にサインインできない。
 - 連絡先と既存の会議は、引き続き Skype for Business 会議として機能します。
-- フェーズ 9 が完了すると、Web ブラウザーバージョンの Microsoft Teams は動作しません。
+- Microsoft Teams の Web ブラウザー バージョンは、フェーズ 9 が完了するまで機能しません。
 
 移行フェーズ 9 の完了後に PowerShell を使用して Skype for Business Online に接続する必要がある場合は、次の PowerShell コードを使用して接続します。
 

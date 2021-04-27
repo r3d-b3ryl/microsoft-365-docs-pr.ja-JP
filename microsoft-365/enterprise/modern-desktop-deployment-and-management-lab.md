@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907458"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028666"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows および Office展開ラボ キット
 
@@ -99,7 +99,7 @@ Windows および Office 展開ラボ キットは、Windows 10 Enterprise お�
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-* インストールされているベースライン バージョン 2002 は、コンソール内の更新プログラムを使用してバージョン 2010 に更新できます。 このコンテンツをダウンロードするには、広帯域幅のインターネット接続を使用し、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 キットの有効期限は 2021 年 5 月 2 日です。 有効期限が切る前に、新しいバージョンが発行されます。
+* インストールされているベースライン バージョン 2002 は、コンソール内の更新プログラムを使用してバージョン 2010 に更新できます。 このコンテンツをダウンロードするには、広帯域幅のインターネット接続を使用し、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 キットの有効期限は 2021 年 7 月 22 日です。 有効期限が切る前に、新しいバージョンが発行されます。
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 

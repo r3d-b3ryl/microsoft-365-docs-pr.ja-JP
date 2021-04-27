@@ -13,18 +13,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: d412e9f9ae93eb9709d9c15009b55fd52d5d37db
-ms.sourcegitcommit: d3101e0c7f4ce52fc34402c28d4acb81206532c5
+ms.openlocfilehash: 32949081418a6984a2b34d039a4dc39d60a56608
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51880724"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029093"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
 Microsoft 365 エンタープライズ ソリューション シリーズは、Microsoft 365 の機能を実装するためのガイダンスを提供します。特に Teams アーキテクチャ図を含む機能がテクノロジをまたがっている場合。
 
-### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 の Microsoft Teams と関連生産性サービス
+## <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 の Microsoft Teams と関連生産性サービス
 Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
 
 | アイテム | 説明 |
@@ -32,14 +32,22 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 |[![Teams 論理アーキテクチャのポスター](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021 年 1 月更新   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
 
 
-### <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
+## <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
 この図には、Microsoft 365 グループに関する IT アーキテクト向け情報が含まれています。 組織での共同作業のために Microsoft 365 グループとチームを構成および管理する方法については [、「Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) との安全なコラボレーションをセットアップする」および「コラボレーション ガバナンスとは」を [参照してください](/microsoft-365/solutions/collaboration-governance-overview)。
 
 | アイテム | 説明 |
 |:-----|:-----|
 |[![グループ インフォグラフィックのサムネイル](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 2020 年 5 月更新|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
 
-### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 の情報保護とコンプライアンス機能
+## <a name="migrate-to-microsoft-365"></a>Microsoft 365 に移行する
+
+Microsoft は、移行中にコンテンツのセキュリティを保護し、確保するために重点を置いて、オンプレミスのネットワーク ファイル共有と SharePoint Server サイトを Microsoft 365 に移行するためのツールを提供しています。 この一連の図は、コンテンツを SharePoint、Teams、OneDrive に移動するために使用できるさまざまな方法と、データがプロセスを流れる方法を示しています。 
+
+| アイテム | 説明 |
+|:-----|:-----|
+|[![モデル ポスター: Microsoft 365 への移行](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [PDF としてダウンロードする](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) \|[Visio としてダウンロードする](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx)   <br/> 2021 年 3 月更新 |含まれる内容: <ul><li>  ファイル共有の移行</li><li>SharePoint Server の移行 </li> </ul><br> 詳細については、「コンテンツを [Microsoft 365 に移行する」を参照してください](/sharepointmigration/migrate-to-sharepoint-online)。|
+
+## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 の情報保護とコンプライアンス機能
 
 Microsoft 365 には、情報保護とコンプライアンス機能の広範なセットが含まれています。 Microsoft の生産性向上ツールと共に、これらの機能は、厳しい規制コンプライアンス フレームワークを遵守しながら、組織がリアルタイムで共同作業を行うのを支援するように設計されています。 
 
@@ -51,14 +59,14 @@ Microsoft 365 には、情報保護とコンプライアンス機能の広範な
 |[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英語: [PDF としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日本語: [PDF としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> 更新日: 2020 年 11 月|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスク</li><li>サードパーティのデータの取り込み</li>|
 
 
-### <a name="security-and-information-protection-for-multi-region-organizations"></a>多地域組織向けのセキュリティと情報保護
+## <a name="security-and-information-protection-for-multi-region-organizations"></a>多地域組織向けのセキュリティと情報保護
 単一の Microsoft 365 テナントを使用する複数地域組織のセキュリティと情報保護
 
 | アイテム | 説明 |
 |:-----|:-----|
 |[![複数地域のインフォグラフィック](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>更新日: 2020 年 3 月 |グローバル組織で単一の Microsoft 365 テナントを使用することは、さまざまな理由で最適な選択肢と経験です。 ただし、多くのアーキテクトは、さまざまな地域でセキュリティおよび情報保護の目標を達成する方法に取り組んでいます。 このトピックでは、推奨事項について説明します。 |
 
-### <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Microsoft Defender for Endpoint 展開戦略
+## <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Microsoft Defender for Endpoint 展開戦略
 
 環境に応じて、一部のツールは特定のアーキテクチャに適しています。
 
@@ -69,7 +77,7 @@ Microsoft 365 には、情報保護とコンプライアンス機能の広範な
 
 
 <a name="BKMK_O365IDP"></a>
-### <a name="identity-and-device-protection-for-microsoft-365"></a>Microsoft 365 の ID とデバイス保護
+## <a name="identity-and-device-protection-for-microsoft-365"></a>Microsoft 365 の ID とデバイス保護
 
 Azure AD アプリケーション プロキシで公開されている Microsoft 365、その他の SaaS サービス、およびオンプレミス アプリケーションにアクセスする ID とデバイスを保護するための推奨機能。
 
@@ -78,7 +86,7 @@ Azure AD アプリケーション プロキシで公開されている Microsoft
 |[![モデルポスター: Microsoft 365 の ID とデバイス保護](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [PDF として表示する](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020 年 9 月更新|データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 このモデルは、ID とデバイスを保護する機能の詳細と比較できる機能を示します。  <br/> |
  
 <a name="BKMK_ediscovery"></a>
-### <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示アーキテクチャ
+## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示アーキテクチャ
 
 Microsoft 365 Multi-Geo 環境内を含む、高度な電子情報開示のエンドツーエンドのワークフローとデータ フロー。 
 
@@ -88,18 +96,16 @@ Microsoft 365 Multi-Geo 環境内を含む、高度な電子情報開示のエ�
   
 
 
-### <a name="microsoft-telephony-solutions"></a>Microsoft テレフォニー ソリューション
+## <a name="microsoft-telephony-solutions"></a>Microsoft テレフォニー ソリューション
 
 Microsoft では、Microsoft クラウド内の Teams の使用を開始する際に使用できるいくつかのオプションをサポートしています。このポスターは、どの Microsoft テレフォニー ソリューション (クラウド内の電話システムまたはオンプレミスのエンタープライズ ボイス) が組織のユーザーに適しているかを判断し、組織を公衆交換電話網 (PSTN) に接続する方法を決定するのに役立ちます。
 
+| アイテム | 説明 |
+|:-----|:-----|
+|[![Microsoft テレフォニー ソリューションのポスター](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 詳細については、「Plan [your Teams voice solution 」を参照してください](/microsoftteams/cloud-voice-landing-page)。|
 
-[![Microsoft テレフォニー ソリューションのポスター](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/>
-[PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) | [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br>
-更新日: 2019 年 1 月
 
-詳細については、このポスターの記事を参照してください: [Microsoft テレフォニー ソリューション](/SkypeForBusiness/hybrid/msft-telephony-solutions)。
-
-### <a name="empower-remote-workers"></a>リモート ワーカーの支援
+## <a name="empower-remote-workers"></a>リモート ワーカーの支援
 
 Microsoft 365 および他の Microsoft クラウド テクノロジを使用すると、従業員に、組織内のオンプレミスおよびクラウドベースの情報、ツール、およびリソースへの安全なアクセスを提供できます。 
 
@@ -109,7 +115,7 @@ Microsoft 365 および他の Microsoft クラウド テクノロジを使用す
 
 詳細については、このポスターの記事 [「Microsoft 365](empower-people-to-work-remotely.md)を使用してリモート ワーカーに権限を与える」を参照してください。
 
-### <a name="microsoft-teams-with-security-isolation"></a>セキュリティの分離を備え、Microsoft Teams
+## <a name="microsoft-teams-with-security-isolation"></a>セキュリティの分離を備え、Microsoft Teams
 
 Microsoft 365 では、Microsoft Teams でプライベート チームを構成し、SharePoint サイトのセキュリティ設定と一意の秘密度ラベルを使用してファイルを暗号化し、チーム メンバーだけが暗号化を解除できます。
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: laurawi
+manager: dansimp
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社は、トップシークレット プロジェクトのセキュリティ分離を持つチームを使用して、新しい製品とサービスのスイートを開発する方法について説明します。'
-ms.openlocfilehash: d5ab2808251ff6a53f8975ea868431691d3301e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 751bf3972d148219a6cc341067c0bf34cd581447
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051008"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029018"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation のトップシークレット プロジェクトの分離チーム
 
@@ -40,7 +40,7 @@ Contoso IT スタッフ[](secure-teams-security-isolation.md)は、Project 2X �
 
 ## <a name="step-1-created-a-private-team"></a>手順 1: プライベート チームを作成する
 
-まず、チームの基になる SharePoint サイトへのアクセスを保護するために、Contoso IT 管理者が推奨される SharePoint アクセス ポリシー [を構成しました](../security/defender-365-security/sharepoint-file-access-policies.md)。
+まず、チームの基になる SharePoint サイトへのアクセスを保護するために、Contoso IT 管理者が推奨される SharePoint アクセス ポリシー [を構成しました](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 次に、Contoso IT 管理者が Project 2X という名前の新しいプライベート チームを作成し、Project 2X スタッフのユーザー アカウントをメンバーとして追加しました。 また、Project 2X チームの所有者だけがプライベート チャネルを作成できるようチームを構成しました。
 
@@ -64,7 +64,7 @@ Contoso 管理者は、Project 2X という名前の新しい **感度ラベル�
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>手順 3: 基になる SharePoint サイトを構成する
 
-まず、チームの基になる SharePoint サイトへのアクセスを保護するために、Contoso IT 管理者が推奨される SharePoint アクセス ポリシー [を構成しました](../security/defender-365-security/sharepoint-file-access-policies.md)。
+まず、チームの基になる SharePoint サイトへのアクセスを保護するために、Contoso IT 管理者が推奨される SharePoint アクセス ポリシー [を構成しました](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 次に、サイトの追加のアクセス許可設定を構成しました。
 

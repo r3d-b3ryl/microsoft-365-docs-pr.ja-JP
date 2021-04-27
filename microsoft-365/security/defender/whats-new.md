@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 91029f03e089f44f49800bfe2d18536a8d415411
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933387"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029030"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -38,6 +38,12 @@ RSS フィード: 次の URL をコピーしてフィード リーダーに貼�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+## <a name="april-2021"></a>2021 年 4 月
+- Microsoft 365 セキュリティ センターの強化 <br> 改善された [Microsoft 365 セキュリティ センター](https://security.microsoft.com)がパブリック プレビューで利用できるようになりました。 この新しいエクスペリエンスにより、Defender for Endpoint、Defender for Office 365、Microsoft 365 Defender などが Microsoft 365 セキュリティ センターに導入されます。 これは、セキュリティコントロールを管理するための新しいホームです。 [新機能について説明します](./overview-security-center.md)。
+
+- [Microsoft 365 Defender の脅威分析レポート](threat-analytics.md)<br>
+ 脅威分析は、アクティブな攻撃に対応し、影響を最小限に抑えるのに役立ちます。 また、Microsoft 365 Defender ソリューションによってブロックされる攻撃の試みについて説明し、さらなる暴露のリスクを軽減し、回復力を高める予防措置を講じてみることができます。 統合セキュリティ エクスペリエンスの一環として、Microsoft Defender for Endpoint および Microsoft Defender では、E5 ライセンス所有者向Office利用できます。
 
 ## <a name="march-2021"></a>2021 年 3 月
 - [CloudAppEvents テーブル](advanced-hunting-cloudappevents-table.md) <br>Microsoft Cloud App Security の対象となるさまざまなクラウド アプリとサービスのイベントに関する情報を検索します。 この表には、以前に使用した情報も含まれています `AppFileEvents` 。
