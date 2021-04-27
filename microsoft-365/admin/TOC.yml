@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 概要
+    - name: 作業の開始
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -402,11 +402,11 @@
         - name: 予定表をゲスト ユーザーと共有する
           href: manage/share-calendars-with-external-users.md
         - name: ゲスト ユーザーとのチームを作成する
-          href: 'https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7'
+          href: ../business-video/team-with-guests.md
         - name: ゲスト ユーザーとの Teams 会議のスケジュールを設定する
-          href: 'https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a'
+          href: ../business-video/schedule-guest-meeting.md
         - name: ゲスト ユーザーとの Teams 会議に参加する
-          href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
+          href: ../business-video/join-guest-meeting.md
     - name: トラブルシューティング
       href: /office/troubleshoot/
     - name: サポートに連絡
