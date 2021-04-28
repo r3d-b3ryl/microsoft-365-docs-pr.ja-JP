@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 0edc3847d6b832f254c6f289355570a3a044b1f4
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650316"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061039"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Microsoft 365 E5 全体に脅威保護機能を展開する
 
-このソリューションでは、Microsoft 365 E5 全体の強力な脅威保護機能について説明します。 このソリューションを参照して、含まれている機能、機能、組織でのこれらの機能の展開を開始する方法の概要を確認します。
+このソリューションでは、Microsoft 365 E5 全体の強力な脅威保護機能と、これらの機能が重要な理由について説明します。 このソリューションを参照して、Microsoft 365 E5 に含まれる機能、脅威保護機能の機能、組織で脅威保護を設定および構成する方法の概要を確認します。
 
-## <a name="why-protecting-against-threats-is-important"></a>脅威からの保護が重要な理由 
+## <a name="why-threat-protection-is-important"></a>脅威の保護が重要な理由 
 
 [マルウェア](/windows/security/threat-protection/intelligence/understanding-malware)、ファイルレスの脅威などの高度なサイバー攻撃 [は、](/windows/security/threat-protection/intelligence/fileless-threats)一般的に発生します。 企業は、効果的な IT セキュリティ機能を使用して自分自身と顧客を保護する必要があります。 サイバー攻撃は、信頼の喪失から財務上の苦境、ビジネスを脅かすダウンタイムなど、組織にとって大きな問題を引き起こす可能性があります。 脅威からの保護は重要ですが、組織の時間、労力、リソースをどこに集中する必要があるのか判断することが困難な場合があります。 Microsoft 365 E5 が役立ちます。 
 

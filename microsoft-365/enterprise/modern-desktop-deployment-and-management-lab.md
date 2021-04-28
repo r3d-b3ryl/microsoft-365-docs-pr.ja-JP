@@ -2,10 +2,10 @@
 title: Windows および Office展開ラボ キット
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: greglin
+author: greg-lindsay
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028666"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060875"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows および Office展開ラボ キット
 
@@ -104,23 +104,15 @@ Windows および Office 展開ラボ キットは、Windows 10 Enterprise お�
 ## <a name="additional-guidance"></a>追加のガイダンス
 
   - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
-
   - [Microsoft Endpoint Configuration Manager OS の展開](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-
   - [Windows 10 の展開計画](/windows/deployment/planning/index)
-
   - [Microsoft 365 アプリの展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)
-
   - [Intune が会社のためにできることとは。](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>関連リソース
 
   - [Microsoft 365 の概要](https://www.microsoft.com/microsoft-365/default.aspx)
-
   - [Office 365 for business](https://products.office.com/business/office)
-
   - [Enterprise Mobility + Security の概要](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
   - [大企業向け Windows 10](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-
   - [中小企業向け Windows 10](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

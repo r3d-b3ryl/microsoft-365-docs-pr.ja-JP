@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029064"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061087"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
 Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 グローバル サービスの地域 "ドイツ" へのテナント移行は、一連のフェーズと、ワークロードごとに構成されたアクションとして実行されます。 この図は、新しいドイツのデータセンターへの移行の 10 フェーズを示しています。
 
-![新しいドイツのデータセンターへの移行の 10 フェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+[![新しいドイツのデータセンターへの移行の 10 フェーズ ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 移行プロセスは、組織の全体的な規模と複雑さによって、何週間にも渡って完了します。 移行が進行中の間、ユーザーと管理者は、このドキュメントで詳しく説明されている変更点を使用して、サービスを引き続き利用できます。 グラフィックとテーブルは、移行中のフェーズと手順を定義します。
 
@@ -125,7 +125,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 |:-------|:-----|:-------|
 | SharePoint と OneDrive が移行される | SharePoint Online と OneDrive for Business は、このフェーズで Microsoft Cloud Deutschland から Office 365 グローバル サービスに移行されます。<br><ul><li>既存の Microsoft Cloud Deutschland URL は保持されます (たとえば `contoso.sharepoint.de` )。</li><li>既存のサイトは保持されます。</li><li>Microsoft Cloud Deutschland または Office 365 Global services インスタンスのセキュリティ トークン サービス (STS) によって発行されたクライアント側認証トークンは、移行中に有効です。</li></ul>|<ul><li>移行中の 2 つの短い期間、コンテンツは読み取り専用になります。 この間、SharePoint で "コンテンツを編集できない" バナーが表示されます。</li><li>検索インデックスは保持されません。再構築には最大 10 日かかる場合があります。</li><li>SharePoint Online および OneDrive for Business コンテンツは、移行中に 2 つの短い期間の読み取り専用になります。 この間、ユーザーには「コンテンツを編集できない」バナーが簡単に表示されます。</li><li>SharePoint Online の移行が完了すると、インデックスの再構築中に SharePoint Online および OneDrive for Business コンテンツの検索結果が使用できなくなる場合があります。 この期間中、検索クエリで完全な結果が返されない場合があります。 SharePoint Online News などの検索インデックスに依存する機能は、インデックスの再作成が完了する間に影響を受ける可能性があります。</li><li>SharePoint 2013 ワークフローは移行中に壊れ、移行後に再発行する必要があります。</li></ul>
 |**SPO 管理者**: SharePoint 2013 ワークフローを再発行する| SharePoint Online 管理者は、移行後に SharePoint 2013 ワークフローを再発行します。|SharePoint 2013 ワークフローを使用できます。
-|**PowerShell ユーザー**: 新しいモジュールに更新する| SharePoint Online Powershell モジュールのすべてのユーザーは、SharePoint Online の移行が完了した後、モジュール/Microsoft.SharePointOnline.CSOM をバージョン 16.0.20717.12000 以上に更新する必要があります。 完了はメッセージ センターで伝達されます。| PowerShell またはクライアント側オブジェクト モデル経由の SharePoint Online は失敗しなくなりました。
+|**PowerShell ユーザー**: 新しいモジュールに更新する| SharePoint Online PowerShell モジュールのすべてのユーザーは、SharePoint Online の移行が完了した後、モジュール/Microsoft.SharePointOnline.CSOM をバージョン 16.0.20717.12000 以上に更新する必要があります。 完了はメッセージ センターで伝達されます。| PowerShell またはクライアント側オブジェクト モデル経由の SharePoint Online は失敗しなくなりました。
 ||||
 
 その他の考慮事項:
