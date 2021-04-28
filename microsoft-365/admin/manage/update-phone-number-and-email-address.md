@@ -20,36 +20,48 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 管理センターで管理者の電話番号とメール アドレスを更新します。 自分の管理者パスワードをリセットする場合は、この情報が必要です。
-ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 49e3cd3e861499d41107b9c76da175a95e74bb0e
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470919"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073779"
 ---
-# <a name="update-your-admin-phone-number-and-email-address"></a><span data-ttu-id="92218-104">管理者の電話番号とメール アドレスを更新する</span><span class="sxs-lookup"><span data-stu-id="92218-104">Update your admin phone number and email address</span></span>
+# <a name="update-your-admin-phone-number-and-email-address"></a><span data-ttu-id="4fa5c-104">管理者の電話番号とメール アドレスを更新する</span><span class="sxs-lookup"><span data-stu-id="4fa5c-104">Update your admin phone number and email address</span></span>
 
-<span data-ttu-id="92218-105">この記事では、管理者が Microsoft 365 でビジネス用の電話とメール アドレスを変更する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="92218-105">This article explains how you, the admin, can change your business phone and email address in Microsoft 365.</span></span>
+<span data-ttu-id="4fa5c-105">この記事では、管理者が Microsoft 365 でビジネス用の電話とメール アドレスを変更する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-105">This article explains how you, the admin, can change your business phone and email address in Microsoft 365.</span></span>
   
-<span data-ttu-id="92218-106">会社名、住所、電話番号、技術的な連絡先情報などの会社のプロファイル情報を変更する方法を探している場合は、「[組織の住所およびその他のプロファイル情報を変更する](change-address-contact-and-more.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="92218-106">If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).</span></span>
+<span data-ttu-id="4fa5c-106">会社名、住所、電話番号、技術的な連絡先情報などの会社のプロファイル情報を変更する方法を探している場合は、「[組織の住所およびその他のプロファイル情報を変更する](change-address-contact-and-more.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-106">If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).</span></span>
+
+<span data-ttu-id="4fa5c-107">ユーザーの連絡先情報の変更や元従業員の削除の詳細については、「関連コンテンツ」 [を参照してください](#related-content)。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-107">For more information about changing user contact information or removing former employees, see [Related content](#related-content).</span></span>
   
-## <a name="to-update-your-phone-number-and-email-address"></a><span data-ttu-id="92218-107">電話番号とメール アドレスを更新するには</span><span class="sxs-lookup"><span data-stu-id="92218-107">To update your phone number and email address</span></span>
+## <a name="to-update-your-phone-number-and-email-address"></a><span data-ttu-id="4fa5c-108">電話番号とメール アドレスを更新するには</span><span class="sxs-lookup"><span data-stu-id="4fa5c-108">To update your phone number and email address</span></span>
 
-<span data-ttu-id="92218-108">[セキュリティ **情報] ページを** 使用して、携帯電話番号と代替メール アドレスを変更します。</span><span class="sxs-lookup"><span data-stu-id="92218-108">Use the **Security Info** page to change your mobile phone number and alternate email address.</span></span> <span data-ttu-id="92218-109">代替メール アドレスは、管理者パスワード (コンピューターの管理者パスワードではなく) のリセットなど、重要な通知に使用されます。</span><span class="sxs-lookup"><span data-stu-id="92218-109">The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password).</span></span> 
+<span data-ttu-id="4fa5c-109">[セキュリティ **情報] ページを** 使用して、携帯電話番号と代替メール アドレスを変更します。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-109">Use the **Security Info** page to change your mobile phone number and alternate email address.</span></span> <span data-ttu-id="4fa5c-110">代替メール アドレスは、管理者パスワード (コンピューターの管理者パスワードではなく) のリセットなど、重要な通知に使用されます。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-110">The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password).</span></span> 
   
-1. <span data-ttu-id="92218-110">Microsoft 365 管理センターを参照します。</span><span class="sxs-lookup"><span data-stu-id="92218-110">Browse to the Microsoft 365 admin center.</span></span>
+1. <span data-ttu-id="4fa5c-111">Microsoft 365 管理センターを参照します。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-111">Browse to the Microsoft 365 admin center.</span></span>
 
-2. <span data-ttu-id="92218-111">ヘッダーで、プロファイル アイコン [マイ アカウント \> **のセキュリティ情報]** \> **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="92218-111">In the header, select your profile icon \> **My account** \> **Security Info**.</span></span>
+2. <span data-ttu-id="4fa5c-112">ヘッダーで、プロファイル アイコン [マイ アカウント \> **のセキュリティ情報]** \> **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-112">In the header, select your profile icon \> **My account** \> **Security Info**.</span></span>
 
-3. <span data-ttu-id="92218-112">[セキュリティ情報 **] タブで**、[メソッド電話代替 **電話の** 追加] または [メール] を \>  \> 選択 **して詳細** を追加します。</span><span class="sxs-lookup"><span data-stu-id="92218-112">In the **Security info** tab, select **Add Method** \> **Phone** \> **Alternate Phone** or **Email** to add details.</span></span> <span data-ttu-id="92218-113">携帯電話、電話、および代替メール アドレスの詳細を更新するには、[変更] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="92218-113">To update your mobile, phone, and alternate email address details, select **Change**.</span></span> <span data-ttu-id="92218-114">代替メール アドレスに Microsoft の電子メール アドレス以外のアドレスを使用してください。</span><span class="sxs-lookup"><span data-stu-id="92218-114">Make sure you use something other than your Microsoft email address for your alternate email address.</span></span>
+3. <span data-ttu-id="4fa5c-113">[セキュリティ情報 **] タブで**、[メソッド電話代替 **電話の** 追加] または [メール] を \>  \> 選択 **して詳細** を追加します。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-113">In the **Security info** tab, select **Add Method** \> **Phone** \> **Alternate Phone** or **Email** to add details.</span></span> <span data-ttu-id="4fa5c-114">携帯電話、電話、および代替メール アドレスの詳細を更新するには、[変更] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-114">To update your mobile, phone, and alternate email address details, select **Change**.</span></span> <span data-ttu-id="4fa5c-115">代替メール アドレスに Microsoft の電子メール アドレス以外のアドレスを使用してください。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-115">Make sure you use something other than your Microsoft email address for your alternate email address.</span></span>
 
     > [!IMPORTANT]
-    > <span data-ttu-id="92218-115">管理者パスワード (コンピューターの管理者パスワードではなく) をリセットするには、代替メール アドレスと携帯電話番号が必要です。</span><span class="sxs-lookup"><span data-stu-id="92218-115">The alternate email address and the mobile phone number are needed for resetting your admin password (not your computer admin password).</span></span>
+    > <span data-ttu-id="4fa5c-116">管理者パスワード (コンピューターの管理者パスワードではなく) をリセットするには、代替メール アドレスと携帯電話番号が必要です。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-116">The alternate email address and the mobile phone number are needed for resetting your admin password (not your computer admin password).</span></span>
 
-4. <span data-ttu-id="92218-116">設定が完了したら、[**保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="92218-116">When you are finished, select **Save**.</span></span>
+4. <span data-ttu-id="4fa5c-117">設定が完了したら、[**保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-117">When you are finished, select **Save**.</span></span>
   
-<span data-ttu-id="92218-117">請求に関する質問の答えについては、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="92218-117">For answers to billing questions, see:</span></span>
+<span data-ttu-id="4fa5c-118">請求に関する質問の答えについては、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4fa5c-118">For answers to billing questions, see:</span></span>
   
-- [<span data-ttu-id="92218-118">Microsoft 365 for business の請求先住所を変更する</span><span class="sxs-lookup"><span data-stu-id="92218-118">Change your billing addresses for Microsoft 365 for business</span></span>](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [<span data-ttu-id="4fa5c-119">Microsoft 365 for business の請求先住所を変更する</span><span class="sxs-lookup"><span data-stu-id="4fa5c-119">Change your billing addresses for Microsoft 365 for business</span></span>](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [<span data-ttu-id="92218-119">支払方法を管理する</span><span class="sxs-lookup"><span data-stu-id="92218-119">Manage payment methods</span></span>](../../commerce/billing-and-payments/manage-payment-methods.md)
+- [<span data-ttu-id="4fa5c-120">支払方法を管理する</span><span class="sxs-lookup"><span data-stu-id="4fa5c-120">Manage payment methods</span></span>](../../commerce/billing-and-payments/manage-payment-methods.md)
+
+## <a name="related-content"></a><span data-ttu-id="4fa5c-121">関連コンテンツ</span><span class="sxs-lookup"><span data-stu-id="4fa5c-121">Related content</span></span>
+
+<span data-ttu-id="4fa5c-122">[ユーザー名とメール アドレスの変更](../add-users/change-a-user-name-and-email-address.md) (ビデオ)</span><span class="sxs-lookup"><span data-stu-id="4fa5c-122">[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)</span></span>
+
+<span data-ttu-id="4fa5c-123">[新入社員の追加](../add-users/add-new-employee.md) (ビデオ)</span><span class="sxs-lookup"><span data-stu-id="4fa5c-123">[Add a new employee](../add-users/add-new-employee.md) (video)</span></span>
+
+<span data-ttu-id="4fa5c-124">[元従業員を削除する](../add-users/remove-former-employee.md) (ビデオ)</span><span class="sxs-lookup"><span data-stu-id="4fa5c-124">[Remove a former employee](../add-users/remove-former-employee.md) (video)</span></span>
+
+<span data-ttu-id="4fa5c-125">[以前のユーザーのデータにアクセスしてバックアップ](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) する (記事)</span><span class="sxs-lookup"><span data-stu-id="4fa5c-125">[Access and back up a former user's data](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (article)</span></span>
