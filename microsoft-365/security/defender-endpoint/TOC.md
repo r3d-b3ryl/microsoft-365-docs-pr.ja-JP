@@ -49,7 +49,163 @@
 #### [グループ ポリシー オブジェクト](manage-atp-post-migration-group-policy-objects.md)
 #### [PowerShell、WMI、MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
-## [セキュリティ管理]()
+
+## [デバイスの構成とオンボード]()
+### [Windows および Windows Server 上の Microsoft Defender for Endpoint]()
+#### [デバイスを Microsoft Defender for Endpoint にオンボードする](onboard-configure.md)
+#### [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
+#### [Windows 10 デバイスのオンボード]()
+##### [オンボーディング ツールとメソッド](configure-endpoints.md)
+##### [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
+##### [Microsoft Endpoint Configuration Manager を使用したデバイスのオンボード](configure-endpoints-sccm.md)
+##### [モバイル デバイス管理ツールを使用したデバイスのオンボード](configure-endpoints-mdm.md)
+##### [ローカル スクリプトを使用したデバイスのオンボード](configure-endpoints-script.md)
+##### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
+##### [Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード](Onboard-Windows-10-multi-session-device.md)
+#### [Windows サーバーのオンボード](configure-server-endpoints.md)
+
+#### [インターネット アクセスなしでデバイスをオンボードする](onboard-offline-machines.md)
+#### [新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)
+#### [デバイスに対してシミュレートされた攻撃を実行する](attack-simulations.md)
+#### [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
+#### [オンボーディングまたはオフボーディングの通知ルールを作成する](onboarding-notification.md)
+
+### [他のオペレーティング システム上の Microsoft Defender for Endpoint]()
+#### [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)
+
+#### [macOS 用 Microsoft Defender for Endpoint]()
+##### [macOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-mac.md)
+##### [新機能](mac-whatsnew.md)
+ 
+##### [展開]()
+###### [Microsoft Intune ベースの展開](mac-install-with-intune.md)
+###### [JAMF Pro ベースの展開]()
+####### [Jamf Pro を使用した macOS 用 Microsoft Defender for Endpoint の展開](mac-install-with-jamf.md)
+####### [Jamf Pro へのログイン](mac-install-jamfpro-login.md)
+####### [デバイス グループを設定する](mac-jamfpro-device-groups.md)
+####### [ポリシーを設定する](mac-jamfpro-policies.md)
+####### [デバイスを登録する](mac-jamfpro-enroll-devices.md)
+ 
+###### [別のモバイル デバイス管理 (MDM) システムを使用した展開](mac-install-with-other-mdm.md)
+###### [手動展開](mac-install-manually.md)
+##### [更新](mac-updates.md)
+ 
+##### [構成]()
+###### [除外を構成および検証する](mac-exclusions.md)
+###### [環境設定](mac-preferences.md)
+###### [望ましくない可能性のあるアプリケーションを検出してブロックする](mac-pua.md)
+###### [デバイス コントロール]()
+####### [デバイス コントロールの概要](mac-device-control-overview.md)
+####### [JAMF の例](mac-device-control-jamf.md)
+####### [Intune の例](mac-device-control-intune.md)
+###### [スキャンのスケジュール](mac-schedule-scan.md)
+ 
+##### [トラブルシューティング]()
+###### [インストールに関する問題のトラブルシューティング](mac-support-install.md)
+###### [パフォーマンスに関する問題のトラブルシューティング](mac-support-perf.md)
+###### [クラウド接続に関する問題のトラブルシューティング](troubleshoot-cloud-connect-mdemac.md)
+###### [カーネル拡張に関する問題のトラブルシューティング](mac-support-kext.md)
+###### [ライセンスに関する問題のトラブルシューティング](mac-support-license.md)
+ 
+##### [プライバシー](mac-privacy.md)
+##### [リソース](mac-resources.md)
+
+
+#### [iOS 用 Microsoft Defender for Endpoint API]()
+##### [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
+##### [新機能](ios-whatsnew.md)
+ 
+##### [展開]()
+###### [Intune を介した iOS 用 Microsoft Defender for Endpoint の展開](ios-install.md)
+ 
+##### [構成]()
+###### [iOS 機能の構成](ios-configure-features.md)
+##### [プライバシー](ios-privacy.md)
+ 
+ 
+#### [Linux 用 Microsoft Defender for Endpoint]()
+##### [Linux 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-linux.md)
+##### [新機能](linux-whatsnew.md)
+##### [展開]()
+###### [手動展開](linux-install-manually.md)
+###### [Puppet ベースの展開](linux-install-with-puppet.md)
+###### [Ansible ベースの展開](linux-install-with-ansible.md)
+ 
+##### [更新](linux-updates.md)
+ 
+##### [構成]()
+###### [除外を構成および検証する](linux-exclusions.md)
+###### [静的プロキシの構成](linux-static-proxy-configuration.md)
+###### [環境設定](linux-preferences.md)
+###### [望ましくない可能性のあるアプリケーションを検出してブロックする](linux-pua.md)
+###### [Linux 用 Microsoft Defender for Endpoint でスキャンをスケジュールする](linux-schedule-scan-atp.md)
+###### [Microsoft Defender for Endpoint (Linux) の更新をスケジュールする](linux-update-MDE-Linux.md)
+###### [Chef を使用して Linux 用 Microsoft Defender for Endpoint を展開する](linux-deploy-defender-for-endpoint-with-chef.md)
+ 
+##### [トラブルシューティング]()
+###### [インストールに関する問題のトラブルシューティング](linux-support-install.md)
+###### [クラウド接続に関する問題のトラブルシューティング](linux-support-connectivity.md)
+###### [パフォーマンスに関する問題のトラブルシューティング](linux-support-perf.md)
+###### [欠落しているイベントに関する問題のトラブルシューティング](linux-support-events.md)
+ 
+##### [プライバシー](linux-privacy.md)
+##### [リソース](linux-resources.md)
+ 
+#### [Android 用 Microsoft Defender for Endpoint]()
+##### [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
+ 
+##### [展開]()
+###### [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)
+ 
+##### [構成]()
+###### [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)
+ 
+##### [プライバシー]()
+###### [Android 用 Microsoft Defender for Endpoint - プライバシー情報](android-privacy.md)
+ 
+##### [トラブルシューティング]()
+###### [問題のトラブルシューティング](android-support-signin.md)
+
+### [オンボーディングに関する問題のトラブルシューティング]()
+#### [オンボーディング中の問題のトラブルシューティング](troubleshoot-onboarding.md)
+#### [サブスクリプションとポータル アクセスの問題のトラブルシューティング](troubleshoot-onboarding-error-messages.md)
+
+
+
+
+### [ポータル設定を構成する]()
+#### [環境設定](preferences-setup.md)
+#### [全般]()
+##### [データの保管場所を確認し、データ保持設定を更新する](data-retention-settings.md)
+##### [アラート通知を構成する](configure-email-notifications.md)
+##### [高度な機能を構成する](advanced-features.md)
+
+#### [アクセス許可]()
+##### [基本的なアクセス許可を使用してポータルにアクセスする](basic-permissions.md)
+##### [RBAC を使用してポータル アクセスを管理する](rbac.md)
+###### [役割の作成と管理](user-roles.md)
+###### [デバイス グループの作成と管理](machine-groups.md)
+###### [デバイス タグの作成と管理](machine-tags.md)
+
+#### [ルール]()
+##### [抑制ルールの管理](manage-suppression-rules.md)
+##### [インジケーターの作成](manage-indicators.md)
+###### [ファイルのインジケーターを作成 ](indicator-file.md)
+###### [IP および URL/ドメインのインジケーターを作成](indicator-ip-domain.md)
+###### [証明書のインジケーターを作成 ](indicator-certificates.md)
+###### [インジケーターの管理](indicator-manage.md)
+##### [自動化ファイルのアップロードを管理する](manage-automation-file-uploads.md)
+##### [自動化フォルダーの除外を管理する](manage-automation-folder-exclusions.md)
+
+#### [デバイスの管理]()
+##### [デバイスのオンボーディング](onboard-configure.md)
+##### [デバイスのオフボーディング](offboard-machines.md)
+##### [デバイスが正しく構成されていることを確認する](configure-machines.md)
+##### [デバイスのオンボーディングを監視および強化する](configure-machines-onboarding.md)
+
+#### [Microsoft Defender セキュリティ センターのタイム ゾーン設定を構成する](time-settings.md)
+
+## [脅威の検出とエンドポイントの保護]()
 ### [脅威と脆弱性の管理]()
 #### [概要](next-gen-threat-and-vuln-mgt.md)
 #### [はじめに]()
@@ -73,6 +229,13 @@
 ##### [脆弱なデバイスのレポート](tvm-vulnerable-devices-report.md)
 ##### [露出したデバイスの追求](tvm-hunt-exposed-devices.md)
 
+### [デバイス検出]()
+#### [デバイス検出の概要](device-discovery.md)
+#### [デバイス検出の構成](configure-device-discovery.md)
+#### [デバイス検出に関する FAQ](device-discovery-faq.md)
+
+### [ネットワークデバイス](network-devices.md)
+
 ### [攻撃面の減少]()
 #### [攻撃面の減少の概要](overview-attack-surface-reduction.md)
 #### [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
@@ -84,6 +247,8 @@
 ##### [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
 ##### [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)
 ##### [攻撃面の減少イベントを表示する](event-views.md)
+
+#### [監査モードを使用する](audit-windows-defender.md)
 
 ### 次世代の保護
 #### [Microsoft Defender ウイルス対策の概要](microsoft-defender-antivirus-in-windows-10.md)
@@ -179,112 +344,21 @@
 ##### [デバイス コントロールのレポート](device-control-report.md)
 ##### [USB デバイスの制御](control-usb-devices-using-intune.md)
 
-### [デバイス検出]()
-#### [デバイス検出の概要](device-discovery.md)
-#### [デバイス検出の構成](configure-device-discovery.md)
-#### [デバイス検出に関する FAQ](device-discovery-faq.md)
+#### [動作ブロックと封じ込め]()
+##### [動作ブロックと封じ込め](behavioral-blocking-containment.md)
+##### [クライアントの動作ブロック](client-behavioral-blocking.md)
+##### [フィードバック ループのブロック](feedback-loop-blocking.md)
 
 
-### [ネットワークデバイス](network-devices.md)
-
-### [macOS 用 Microsoft Defender for Endpoint]()
-#### [macOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-mac.md)
-#### [新機能](mac-whatsnew.md)
-
-#### [展開]()
-##### [Microsoft Intune ベースの展開](mac-install-with-intune.md)
-##### [JAMF Pro ベースの展開]()
-###### [Jamf Pro を使用した macOS 用 Microsoft Defender for Endpoint の展開](mac-install-with-jamf.md)
-###### [Jamf Pro へのログイン](mac-install-jamfpro-login.md)
-###### [デバイス グループを設定する](mac-jamfpro-device-groups.md)
-###### [ポリシーを設定する](mac-jamfpro-policies.md)
-###### [デバイスを登録する](mac-jamfpro-enroll-devices.md)
-
-##### [別のモバイル デバイス管理 (MDM) システムを使用した展開](mac-install-with-other-mdm.md)
-##### [手動展開](mac-install-manually.md)
-#### [更新](mac-updates.md)
-
-#### [構成]()
-##### [除外を構成および検証する](mac-exclusions.md)
-##### [環境設定](mac-preferences.md)
-##### [望ましくない可能性のあるアプリケーションを検出してブロックする](mac-pua.md)
-##### [デバイス コントロール]()
-###### [デバイス コントロールの概要](mac-device-control-overview.md)
-###### [JAMF の例](mac-device-control-jamf.md)
-###### [Intune の例](mac-device-control-intune.md)
-##### [スキャンのスケジュール](mac-schedule-scan.md)
-
-#### [トラブルシューティング]()
-##### [インストールに関する問題のトラブルシューティング](mac-support-install.md)
-##### [パフォーマンスに関する問題のトラブルシューティング](mac-support-perf.md)
-##### [クラウド接続に関する問題のトラブルシューティング](troubleshoot-cloud-connect-mdemac.md)
-##### [カーネル拡張に関する問題のトラブルシューティング](mac-support-kext.md)
-##### [ライセンスに関する問題のトラブルシューティング](mac-support-license.md)
-
-#### [プライバシー](mac-privacy.md)
-#### [リソース](mac-resources.md)
-
-### [iOS 用 Microsoft Defender for Endpoint API]()
-#### [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
-#### [新機能](ios-whatsnew.md)
-
-#### [展開]()
-##### [Intune を介した iOS 用 Microsoft Defender for Endpoint の展開](ios-install.md)
-
-#### [構成]()
-##### [iOS 機能の構成](ios-configure-features.md)
-#### [プライバシー](ios-privacy.md)
+### [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](defender-endpoint-false-positives-negatives.md)
 
 
-### [Linux 用 Microsoft Defender for Endpoint]()
-#### [Linux 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-linux.md)
-#### [新機能](linux-whatsnew.md)
-#### [展開]()
-##### [手動展開](linux-install-manually.md)
-##### [Puppet ベースの展開](linux-install-with-puppet.md)
-##### [Ansible ベースの展開](linux-install-with-ansible.md)
-##### [Chef を使用して Linux 用 Microsoft Defender for Endpoint を展開する](linux-deploy-defender-for-endpoint-with-chef.md)
+### [デバイス構成の管理]()
 
+#### [セキュリティ ベースラインへの準拠を強化する](configure-machines-security-baseline.md)
+#### [攻撃面の減少ルールの展開と検出を最適化する](configure-machines-asr.md)
 
-#### [更新](linux-updates.md)
-
-#### [構成]()
-##### [除外を構成および検証する](linux-exclusions.md)
-##### [静的プロキシの構成](linux-static-proxy-configuration.md)
-##### [環境設定](linux-preferences.md)
-##### [望ましくない可能性のあるアプリケーションを検出してブロックする](linux-pua.md)
-##### [Linux 用 Microsoft Defender for Endpoint でスキャンをスケジュールする](linux-schedule-scan-atp.md)
-##### [Microsoft Defender for Endpoint (Linux) の更新をスケジュールする](linux-update-MDE-Linux.md)
-
-#### [トラブルシューティング]()
-##### [インストールに関する問題のトラブルシューティング](linux-support-install.md)
-##### [クラウド接続に関する問題のトラブルシューティング](linux-support-connectivity.md)
-##### [パフォーマンスに関する問題のトラブルシューティング](linux-support-perf.md)
-##### [欠落しているイベントに関する問題のトラブルシューティング](linux-support-events.md)
-
-#### [プライバシー](linux-privacy.md)
-#### [リソース](linux-resources.md)
-
-### [Android 用 Microsoft Defender for Endpoint]()
-#### [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
-
-#### [展開]()
-##### [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)
-
-#### [構成]()
-##### [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)
-
-#### [プライバシー]()
-##### [Android 用 Microsoft Defender for Endpoint - プライバシー情報](android-privacy.md)
-
-#### [トラブルシューティング]()
-##### [問題のトラブルシューティング](android-support-signin.md)
-
-
-### [Microsoft 脅威エキスパートの機能を構成および管理する](configure-microsoft-threat-experts.md)
-
-## [セキュリティ運用]()
-
+## [脅威の調査と対応]()
 ### [エンドポイントでの検出と対応]()
 #### [エンドポイントでの検出と対応の概要](overview-endpoint-detection-response.md)
 #### [セキュリティ運用ダッシュボード](security-operations-dashboard.md)
@@ -347,96 +421,31 @@
 ##### [脅威に対する保護のレポート](threat-protection-reports.md)
 #### [デバイスの正常性とコンプライアンスのレポート](machine-reports.md)
 
-### [動作ブロックと封じ込め]()
-#### [動作ブロックと封じ込め](behavioral-blocking-containment.md)
-#### [クライアントの動作ブロック](client-behavioral-blocking.md)
-#### [フィードバック ループのブロック](feedback-loop-blocking.md)
-#### [ブロック モードの EDR](edr-in-block-mode.md)
+### [高度な追求]()
+#### [高度な追求の概要](advanced-hunting-overview.md)
+#### [スキーマを理解する](advanced-hunting-schema-reference.md)
+#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+
+### [脅威の分析の概要](threat-analytics.md)
+#### [アナリスト レポートを読む](threat-analytics-analyst-reports.md)
+
+### [ブロック モードの EDR](edr-in-block-mode.md)
 
 ### [自動調査と応答 (AIR) ]()
 #### [AIR の概要](automated-investigations.md)
 #### [AIR の自動化レベル](automation-levels.md)
 #### [AIR 機能の構成](configure-automated-investigations-remediation.md)
 
-### [高度な追求]()
-#### [高度な追求の概要](advanced-hunting-overview.md)
-#### [スキーマを理解する](advanced-hunting-schema-reference.md)
-#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+### [Microsoft 脅威エキスパート]()
+#### [Microsoft 脅威エキスパートの概要](microsoft-threat-experts.md)
+#### [Microsoft 脅威エキスパートの機能を構成および管理する](configure-microsoft-threat-experts.md)
 
-### [Microsoft 脅威エキスパート](microsoft-threat-experts.md)
 
-### [脅威の分析の概要](threat-analytics.md)
-#### [アナリスト レポートを読む](threat-analytics-analyst-reports.md)
 
-## [使い方に関する情報]()
-### [デバイスをサービスにオンボードする]()
-#### [デバイスを Microsoft Defender for Endpoint にオンボードする](onboard-configure.md)
-#### [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
-#### [Windows 10 デバイスのオンボード]()
-##### [オンボーディング ツールとメソッド](configure-endpoints.md)
-##### [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
-##### [Microsoft Endpoint Configuration Manager を使用したデバイスのオンボード](configure-endpoints-sccm.md)
-##### [モバイル デバイス管理ツールを使用したデバイスのオンボード](configure-endpoints-mdm.md)
-##### [ローカル スクリプトを使用したデバイスのオンボード](configure-endpoints-script.md)
-##### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
-##### [Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード](Onboard-Windows-10-multi-session-device.md)
-#### [Windows サーバーのオンボード](configure-server-endpoints.md)
-#### [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)
-#### [インターネット アクセスなしでデバイスをオンボードする](onboard-offline-machines.md)
-#### [新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)
-#### [デバイスに対してシミュレートされた攻撃を実行する](attack-simulations.md)
-#### [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
-#### [オンボーディングまたはオフボーディングの通知ルールを作成する](onboarding-notification.md)
- 
-#### [オンボーディングに関する問題のトラブルシューティング]()
-##### [オンボーディング中の問題のトラブルシューティング](troubleshoot-onboarding.md)
-##### [サブスクリプションとポータル アクセスの問題のトラブルシューティング](troubleshoot-onboarding-error-messages.md)
-
-### [デバイス構成の管理]()
-#### [デバイスが正しく構成されていることを確認する](configure-machines.md)
-#### [デバイスのオンボーディングを監視および強化する](configure-machines-onboarding.md)
-#### [セキュリティ ベースラインへの準拠を強化する](configure-machines-security-baseline.md)
-#### [攻撃面の減少ルールの展開と検出を最適化する](configure-machines-asr.md)
-
-### [ポータル設定を構成する]()
-#### [環境設定](preferences-setup.md)
-#### [全般]()
-##### [データの保管場所を確認し、データ保持設定を更新する](data-retention-settings.md)
-##### [アラート通知を構成する](configure-email-notifications.md)
-##### [高度な機能を構成する](advanced-features.md)
-
-#### [アクセス許可]()
-##### [基本的なアクセス許可を使用してポータルにアクセスする](basic-permissions.md)
-##### [RBAC を使用してポータル アクセスを管理する](rbac.md)
-###### [役割の作成と管理](user-roles.md)
-###### [デバイス グループの作成と管理](machine-groups.md)
-###### [デバイス タグの作成と管理](machine-tags.md)
-
-#### [ルール]()
-##### [抑制ルールの管理](manage-suppression-rules.md)
-##### [インジケーターの作成](manage-indicators.md)
-###### [ファイルのインジケーターを作成 ](indicator-file.md)
-###### [IP および URL/ドメインのインジケーターを作成](indicator-ip-domain.md)
-###### [証明書のインジケーターを作成 ](indicator-certificates.md)
-###### [インジケーターの管理](indicator-manage.md)
-##### [自動化ファイルのアップロードを管理する](manage-automation-file-uploads.md)
-##### [自動化フォルダーの除外を管理する](manage-automation-folder-exclusions.md)
-
-#### [デバイスの管理]()
-##### [デバイスのオンボーディング](onboard-configure.md)
-##### [デバイスのオフボーディング](offboard-machines.md)
-
-#### [Microsoft Defender Security Center のタイム ゾーン設定を構成する](time-settings.md)
-
-### [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](defender-endpoint-false-positives-negatives.md)
-
+## 参照
 ### [他の Microsoft ソリューションとの統合を構成する]()
 #### [条件付きアクセスを構成する](configure-conditional-access.md)
 #### [Microsoft Cloud App Security との統合を構成する](microsoft-cloud-app-security-config.md)
-
-### [監査モードを使用する](audit-windows-defender.md)
-
-## リファレンス
 ### [管理と API]()
 #### [管理と API の概要](management-apis.md)
 #### [API リリースノート](api-release-notes.md)
