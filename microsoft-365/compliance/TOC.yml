@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 概要
+- name: 作業の開始
   items:
     - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
@@ -362,7 +362,7 @@
         - name: PST ファイルをインポートするときに、データをフィルター処理する
           href: filter-data-when-importing-pst-files.md
         - name: PST ファイルのインポートに関する FAQ
-          href: faqimporting-pst-files-to-office-365.md
+          href: faqimporting-pst-files-to-office-365.yml
     - name: サード パーティのデータをアーカイブする
       items:
         - name: サード パーティのデータのアーカイブの概要
