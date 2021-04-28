@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する場合の事前作業。'
-ms.openlocfilehash: ce7aad932482d7a9d1681957c06b85ab22a82149
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9c3aff56f5d85cd1b98747ef5b747720af74fe02
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760394"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073939"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
@@ -33,7 +33,7 @@ ms.locfileid: "51760394"
 
 - **Office 365 in Microsoft Cloud Deutschland,** do these [steps](#general-tenant-migration-considerations).
 - **カスタム ドメインは、** この [手順を実行します](#dns-entries-for-custom-domains)。
-
+- **Officeの場合は**、この [手順を検討してください](#office-apps)。
 - **SharePoint Online 、** この手順 [を実行します](#sharepoint-online)。
 - **Exchange Online または** **Exchange ハイブリッド 、** この手順 [を実行します](#exchange-online)。
 - **Skype for Business Online 、** この手順 [を実行します](#skype-for-business-online)。
@@ -83,6 +83,19 @@ nslookup -querytype=CNAME msoid.contoso.com
 
 > [!NOTE]
 > Exchange Online 用のカスタム ドメインを使用している場合は、DNS ホスティング プロバイダーにアクセスする必要があります。 DNS 設定にアクセスして編集できる場合は、移行中に DNS レコードを変更します。
+
+## <a name="office-apps"></a>Office アプリ
+
+**適用対象**: 特に Windows クライアントOfficeアプリを使用しているお客様 <br>
+**適用時**: フェーズ 9 が開始される前の任意の時間
+
+Office "ドイツ" に移行する 365 テナントでは、テナント移行がフェーズ 9 に達した後、すべてのユーザーが Office 365 からサインアウトし、すべての Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントに戻る必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンを取得できます。
+
+これは、すべてのクライアントに必要です。 スムーズな移行エクスペリエンスを実現するには、影響を受けるすべてのユーザーに、この今後のアクティビティについて事前に、また早期に通知し、指示を行う必要があります。
+
+管理された Windows クライアントをお持ちのお客様は、クライアント カットオーバー [Office (OCCT)](https://github.com/microsoft/OCCT)を使用して Windows コンピューターを準備できます。 OCCT は、テナントが移行のフェーズ 9 に達するまで、Windows クライアントで定期的に実行するように設計されています。 フェーズ 9 に達すると、OCCT はユーザーの操作なしで自動的にコンピューター上で必要なすべての変更を実行します。
+
+OCCT は、フェーズ 9 の前にいつでも Windows クライアントに展開できます。 OCCT が移行エクスペリエンスをサポートする場合は、できるだけ早く展開を開始し、最大数のクライアントを装備することをお勧めします。
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory フェデレーション サービス (AD FS)
 

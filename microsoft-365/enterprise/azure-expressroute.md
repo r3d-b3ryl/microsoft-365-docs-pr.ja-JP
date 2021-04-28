@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Azure ExpressRoute を 365 で使用Office、展開する場合はネットワーク実装プロジェクトを計画する方法について説明します。
-ms.openlocfilehash: d4c14d97cff2952f5f7052a8aa2940f05d644737
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8047cdaa1325df487709660b558420609afffd42
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023727"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073951"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 
@@ -39,9 +39,7 @@ Office 365 で Azure ExpressRoute を使用する方法と、Azure ExpressRoute 
 > Microsoft Defender for Endpoint は Azure Express Route ではサポートされていません。
 
 > [!NOTE]
-> Microsoft の承認は、ExpressRoute を 365 にOfficeです。 Microsoft は、お客様の規制要件に直接接続が義務付Office場合、すべての顧客要求を確認し、ExpressRoute に対して 365 回の使用を承認します。 そのような要件がある場合は、Microsoft アカウント担当者に問い合わせ、Microsoft レビューを開始してください。 365 のルート フィルターを作成しようとしている未承認のサブスクリプションOfficeエラー メッセージが [表示されます](https://support.microsoft.com/kb/3181709)。
-
-これで、選択した 365 ネットワーク トラフィックOffice 365 にOffice追加できます。 Azure ExpressRoute は直接接続、予測可能なパフォーマンスを提供し、Microsoft ネットワーク コンポーネントのアップタイム SLA は 99.95% です。 Azure ExpressRoute でサポートされていないサービスには、引き続きインターネット接続が必要です。
+> ほとんどの場合、サービスに最適な接続モデルを提供していないので、Microsoft 365 の ExpressRoute はお勧めしません。 そのため、Microsoft 365 に対してこの接続モデルを使用するには、Microsoft の承認が必要です。 Microsoft 365 のすべての顧客要求を確認し、必要なまれなシナリオでのみ ExpressRoute を承認します。 [詳細については、ExpressRoute for Microsoft 365](https://aka.ms/erguide)ガイドを参照し、生産性、ネットワーク、およびセキュリティ チームを含むドキュメントの包括的なレビューに従って、必要に応じて Microsoft アカウント チームと一緒に例外を提出してください。 365 のルート フィルターを作成しようとしている未承認のサブスクリプションOfficeエラー メッセージが [表示されます](https://support.microsoft.com/kb/3181709)。
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>Azure ExpressRoute for Office 365
 
@@ -64,7 +62,7 @@ Office 365、Windows Update、TechNet などのすべての Microsoft アプリ�
 
 次の表に、ExpressRoute でOfficeされている 365 サービスの一覧を示します。 これらのアプリケーションに [対するOfficeインターネット](./urls-and-ip-address-ranges.md) 接続が必要なネットワーク要求を理解するには、365 エンドポイントに関する記事を参照してください。
 
-|**含まれるアプリケーション**|
+| 含まれるアプリケーション |
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
