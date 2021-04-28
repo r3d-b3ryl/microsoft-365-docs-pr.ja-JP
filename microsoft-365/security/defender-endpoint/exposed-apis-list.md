@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab3d3aa9a13b71f65d3d4335646e32a7e4270242
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061051"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073831"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>サポート対象 Microsoft Defender for Endpoint API
 
@@ -69,7 +69,6 @@ API 呼び出しを実行できる個々のサポートされるエンティテ�
 [マシン メソッドとプロパティ](machine.md) | デバイスの取得、ID によるデバイスの取得、ログオンしているユーザーに関する情報、タグの編集などの API 呼び出 \- しを実行します。
 [マシン アクション メソッドとプロパティ](machineaction.md) | 分離、ウイルス対策スキャンの実行などの API 呼び出し \- を実行します。
 [推奨メソッドとプロパティ](recommendation.md) | ID による推奨事項の取得などの \- API 呼び出しを実行します。
-[修復アクティビティのメソッドとプロパティ](get-remediation-methods-properties.md) | すべての修復タスクの取得、公開されたデバイス修復タスクの取得、ID による 1 つの修復タスクの取得などの API \- 呼び出しを実行します。
 [スコア メソッドとプロパティ](score.md) | 露出スコアの取得やデバイス \- のセキュリティで保護されたスコアの取得などの API 呼び出しを実行します。
 [ソフトウェア メソッドとプロパティ](software.md) | ソフトウェアによるリストの脆弱性などの API \- 呼び出しを実行します。
 [ユーザー メソッド](user.md) | ユーザー関連の通知やユーザー関連 \- デバイスの取得などの API 呼び出しを実行します。

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 354ca55bae7704c011af5a76a1112e4d2ecb47ca
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061087"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073927"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -264,18 +264,26 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 ## <a name="phase-9-office-apps"></a>フェーズ 9: Office アプリ
 
-**適用対象:** デスクトップ アプリケーションをOfficeしているすべてのお客様 (Word、Excel、PowerPoint、Outlook、...)
+**適用対象:** デスクトップ アプリケーションをOfficeしているすべてのお客様 (Word、Excel、PowerPoint、Outlook、OneDrive ..))
+
+このフェーズでは、すべてのクライアント アプリケーションと Office Online がクライアント カットオーバーを実行しています。 Azure AD 365 サービスと関連するエンドポイントをポイントOfficeテナント スコープを終了します。
 
 Office "ドイツ" に移行する 365 テナントでは、テナント移行がフェーズ 9 に達した後、すべてのユーザーが Office 365 からサインアウトし、すべての Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントに戻る必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンを取得できます。
+
+Office デスクトップ アプリケーションがアプリケーションからのサインアウトとサインインを実行した後で動作しない場合は、影響を受けるコンピューターで [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) を実行して問題を解決することを強く推奨します。
+
+Windows クライアントOfficeクライアント カットオーバー ツール [(OCCT)](https://github.com/microsoft/OCCT) が事前に展開およびスケジュールされている場合は、サインアウト/サインイン手順は必要ありません。
 
 最新のアプリケーションを使用して、最適なユーザー エクスペリエンスOfficeできます。 企業は、月次エンタープライズ チャネルの使用を検討する必要があります。
 
 モバイル デバイスの手順の事前 [作業が完了済みである必要](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) があります。
 
-| Step(s) | 説明 | 影響 |
-|:-------|:-------|:-------|
-| クライアントはOffice切りOffice、Azure ADは、365 サービスを指すテナント スコープをOfficeします。 | この構成変更により、Office 365 サービス エンドポイントを更新し、Officeポイントできます。 | <ul><li>すべての Office _アプリを_ 閉じてからサインイン (またはクライアントの再起動とユーザーのサインインを強制する) をユーザーに通知して、Office クライアントが変更を受け取るのを有効にします。 </li><li>カットオーバーから 72時間以内に、Office アプリの再アクティブ化を求める Office バナーが表示される可能性があるユーザーとヘルプ デスク スタッフに通知します。 </li><li>個人用Office上のすべてのアプリケーションを閉じ、ユーザーはサインアウトしてからもう一度サインインする必要があります。 [黄色のライセンス認証] バーでサインインし、365 サービスOffice再アクティブ化します。</li><li>共有コンピューターでは、個人用のコンピューターに似たアクションが必要であり、特別な手順は必要とします。 </li><li>モバイル デバイスでは、ユーザーはアプリからサインアウトして閉じてから、もう一度サインインする必要があります。</li></ul>|
-||||
+その他の考慮事項:
+- Office クライアントが変更を受け取るのを有効にするには、すべての Office アプリを閉じてからサインイン (またはクライアントの再起動とユーザーへのサインインを強制する) をユーザーに通知します。
+- カットオーバーから 72 時間以内に、Office アプリの再アクティブ化を求める Office バナーが表示される可能性があるユーザーとヘルプ デスク スタッフに通知します。
+- 個人用Office上のすべてのアプリケーションを閉じ、ユーザーはサインアウトしてからもう一度サインインする必要があります。 [黄色のライセンス認証] バーでサインインし、365 サービスOffice再アクティブ化します。
+- 共有コンピューターでは、個人用のコンピューターに似たアクションが必要であり、特別な手順は必要とします。
+- モバイル デバイスでは、ユーザーはアプリからサインアウトして閉じてから、もう一度サインインする必要があります。
 
 ## <a name="phase-9-line-of-business-apps"></a>フェーズ 9: Line-of-business アプリ
 

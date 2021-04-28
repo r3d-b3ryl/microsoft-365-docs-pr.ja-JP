@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: df48ec921dee7d8f3b441ed3f68ed148c5c6c857
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f43d3bf9575f00649a2b5015a8be16351bebd11b
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932979"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073963"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Microsoft 365 Defender で高度な狩猟を行って脅威を積極的に探す
 
@@ -40,7 +40,7 @@ ms.locfileid: "51932979"
 >
 
 高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを特定できます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対する拘束されていない検出が可能です。
-<p></p>
+<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
@@ -55,17 +55,6 @@ ms.locfileid: "51932979"
 
 高度な検索を使用するには [、Microsoft 365 Defender をオンにしてください](m365d-enable.md)。
 
-### <a name="before-you-begin"></a>開始する前に
-
-ユーザーが Microsoft Defender にアクセスするには、次のいずれかのレベルのアクセス許可が必要です。
-
-- フル アクセス (読み取りおよび書き込み)
-- 読み取り専用アクセス
-
-**フル アクセス**: フル アクセスを持つユーザーは、クエリを保存、変更、および共有できます。 フル アクセス権を割り当てるには、Azure Active Directory (AAD) の "セキュリティ管理者" または "グローバル管理者" 組み込みの役割にユーザーを追加する必要があります。
-
-**読み取り専用アクセス**: 読み取り専用アクセス権を持つユーザーは、ログインしてすべてのアラートと関連情報を表示できます。 クエリを保存、変更、または共有できない。 読み取り専用アクセス権を割り当てるには、AAD の "Security Reader" 組み込みロールにユーザーを追加する必要があります。
-
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 
 高度な検索をすぐに開始するには、いくつかの手順を実行することをお勧めします。
@@ -73,14 +62,17 @@ ms.locfileid: "51932979"
 | 学習目標 | 説明 | リソース |
 |--|--|--|
 | **言語を学ぶ** | 高度な検索は [、同じ構文と](/azure/kusto/query/)演算子をサポートする Kusto クエリ言語に基づいて行います。 最初のクエリを実行して、クエリ言語を学習します。 | [クエリ言語の概要](advanced-hunting-query-language.md) |
-| **クエリ結果を使用する方法について** | グラフと、結果を表示またはエクスポートするさまざまな方法について学習します。 クエリをすばやく調整し、詳細な情報を取得するためにドリルダウンし、応答アクションを実行する方法について説明します。 | - [クエリ結果の処理](advanced-hunting-query-results.md)<br>- [クエリ結果に対してアクションを実行する](advanced-hunting-take-action.md) |
-| **スキーマを理解する** | スキーマとその列のテーブルについて、高レベルで十分に理解してください。 クエリを作成するときにデータを検索する場所について説明します。 | - [スキーマ参照](advanced-hunting-schema-tables.md)<br>- [Microsoft Defender for Endpoint からの移行](advanced-hunting-migrate-from-mde.md) |
-| **エキスパートのヒントと例を取得する** | Microsoft の専門家からのガイドを使用して無料でトレーニングします。 さまざまな脅威の捜索シナリオを網羅する定義済みクエリのコレクションを調べます。 | - [専門家のトレーニングを受け取る](advanced-hunting-expert-training.md)<br>- [共有クエリの使用](advanced-hunting-shared-queries.md)<br>- [Go hunt](advanced-hunting-go-hunt.md)<br>- [デバイス、電子メール、アプリ、および ID 間の脅威を検出する](advanced-hunting-query-emails-devices.md) |
-| **クエリを最適化し、エラーを処理する** | 効率的でエラーフリーのクエリを作成する方法を理解します。 | - [クエリのベスト プラクティス](advanced-hunting-best-practices.md)<br>- [エラーの処理](advanced-hunting-errors.md) |
-| **検出ルールの作成** | 高度な検索クエリを使用してアラートをトリガーし、応答アクションを自動的に実行する方法について説明します。 | - [カスタム検出の概要](custom-detections-overview.md)<br>- [カスタム検出ルール](custom-detection-rules.md) |
+| **クエリ結果を使用する方法について** | グラフと、結果を表示またはエクスポートするさまざまな方法について学習します。 クエリをすばやく調整し、詳細な情報を取得するためにドリルダウンし、応答アクションを実行する方法について説明します。 | - [クエリ結果の処理](advanced-hunting-query-results.md)<br /> - [クエリ結果に対してアクションを実行する](advanced-hunting-take-action.md) |
+| **スキーマを理解する** | スキーマとその列のテーブルについて、高レベルで十分に理解してください。 クエリを作成するときにデータを検索する場所について説明します。 | - [スキーマ参照](advanced-hunting-schema-tables.md) <br />- [Microsoft Defender for Endpoint からの移行](advanced-hunting-migrate-from-mde.md) |
+| **エキスパートのヒントと例を取得する** | Microsoft の専門家からのガイドを使用して無料でトレーニングします。 さまざまな脅威の捜索シナリオを網羅する定義済みクエリのコレクションを調べます。 | - [専門家のトレーニングを受け取る](advanced-hunting-expert-training.md) <br />- [共有クエリの使用](advanced-hunting-shared-queries.md) <br />- [Go hunt](advanced-hunting-go-hunt.md) <br />- [デバイス、電子メール、アプリ、および ID 間の脅威を検出する](advanced-hunting-query-emails-devices.md) |
+| **クエリを最適化し、エラーを処理する** | 効率的でエラーフリーのクエリを作成する方法を理解します。 | - [クエリのベスト プラクティス](advanced-hunting-best-practices.md)<br />- [エラーの処理](advanced-hunting-errors.md) |
+| **検出ルールの作成** | 高度な検索クエリを使用してアラートをトリガーし、応答アクションを自動的に実行する方法について説明します。 | - [カスタム検出の概要](custom-detections-overview.md) <br />- [カスタム検出ルール](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>アクセス権の取得
-高度なハンティングまたは他の [Microsoft 365 Defender](microsoft-365-defender.md) 機能を使用するには、Azure Active Directory で適切な役割が必要です。 また、エンドポイント データへのアクセスは、Microsoft Defender for Endpoint の役割ベースのアクセス制御 (RBAC) 設定によって決まります。 [Microsoft 365 Defender へのアクセスの管理について](m365d-permissions.md)
+高度なハンティングまたは他の [Microsoft 365 Defender](microsoft-365-defender.md) 機能を使用するには、Azure Active Directory で適切な役割が必要です。 [高度な検索に必要な役割とアクセス許可についてお読みください](custom-roles.md)。
+
+また、エンドポイント データへのアクセスは、Microsoft Defender for Endpoint の役割ベースのアクセス制御 (RBAC) 設定によって決まります。 [Microsoft 365 Defender へのアクセスの管理について説明します](m365d-permissions.md)。
+
 
 ## <a name="data-freshness-and-update-frequency"></a>データの鮮度と更新頻度
 高度な狩猟データは、それぞれ異なる方法で統合された 2 つの異なる種類に分類できます。
