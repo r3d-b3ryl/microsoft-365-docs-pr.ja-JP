@@ -1,5 +1,5 @@
 ---
-title: 改ざん防止でセキュリティ設定を保護する
+title: 改ざん防止機能を使用してセキュリティ設定を保護する
 ms.reviewer: shwjha, hayhov
 manager: dansimp
 description: タンパープロテクションを使用して、悪意のあるアプリが重要なセキュリティ設定を変更するのを防ぐ。
@@ -15,14 +15,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 84864965d7a18902a01307c1dcf373fa7c0534e8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ff98b78d113a67ad6bd816753c691e8afe71dd77
+ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765577"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52065075"
 ---
-# <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止でセキュリティ設定を保護する
+# <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "51765577"
 - クラウド配信の保護の無効化
 - セキュリティ インテリジェンスの更新プログラムの削除
 
-### <a name="how-it-works"></a>メカニズム
+### <a name="how-it-works"></a>しくみ
 
 タンパープロテクションは基本的に Microsoft Defender ウイルス対策をロックし、次のようなアプリやメソッドを通じてセキュリティ設定が変更されるのを防ぐ。
 
@@ -60,6 +60,8 @@ ms.locfileid: "51765577"
 - グループ ポリシーによるセキュリティ設定の編集または削除
 
 改ざん防止では、セキュリティ設定を表示できない場合があります。 また、改ざん防止は、サードパーティのウイルス対策アプリが Windows セキュリティ アプリに登録する方法には影響を与えかねない。 組織で Windows 10 Enterprise E5 を使用している場合、個々のユーザーは改ざん防止設定を変更できます。このような場合、改ざん防止はセキュリティ チームによって管理されます。
+
+
 
 ### <a name="what-do-you-want-to-do"></a>目的に合ったトピックをクリックしてください
 
@@ -73,6 +75,19 @@ ms.locfileid: "51765577"
 | セキュリティに関する推奨事項を確認する | [セキュリティに関する推奨事項を確認する](#review-your-security-recommendations) |
 | よく寄せられる質問 (FAQ) の一覧を確認する | [FAQ を参照する](#view-information-about-tampering-attempts) |
 
+タンパープロテクションを有効にするために使用する方法や管理ツールによっては、MAPS (クラウド配信保護) に依存している可能性があります。 
+
+次の表に、メソッド、ツール、依存関係の詳細を示します。
+
+
+
+|     タンパープロテクションを有効にする方法                                         |     MAPS への依存 (クラウドによる保護)    |
+|------------------------------------------------------------------------------|--------------------------------------------------------|
+|     Microsoft Intune                                                         |     いいえ                                                 |
+| Microsoft Endpoint Configuration Manager + テナント接続                     |     いいえ                                                 |
+|     Microsoft Defender for Endpoint portal (securitycenter.microsoft.com)    |     はい                                                |
+|     Microsoft 365 Defender ポータル (security.microsoft.com)                   |     はい                                                |
+
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターを使用して組織の改ざん防止を管理する
 
 Microsoft Defender セキュリティ センター ( ) を使用して、テナントのタンパープロテクションを有効または無効にできます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 以下に注意点を示します。
@@ -84,6 +99,9 @@ Microsoft Defender セキュリティ センター ( ) を使用して、テナ�
 - Microsoft Defender セキュリティ センターで改ざん防止を管理する場合、この設定はテナント全体に適用され、Windows 10、Windows Server 2016、または Windows Server 2019 を実行しているすべてのデバイスに影響を与えます。 タンパープロテクションを微調整するには (一部のデバイスではタンパープロテクションをオンにし、他のデバイスではオフにするなど [)、Intune](#manage-tamper-protection-for-your-organization-using-intune) または Configuration Manager をテナント接続で [使用します](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
 
 - ハイブリッド環境がある場合、Intune で構成されたタンパープロテクション設定は、Microsoft Defender セキュリティ センターで構成された設定よりも優先されます。 
+
+
+
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターでタンパープロテクションを管理するための要件
 
@@ -297,4 +315,4 @@ Intune または Microsoft Endpoint Manager でタンパープロテクション
 
 [Microsoft Defender for Endpoint の概要を確認する](/microsoft-365/security/defender-endpoint)
 
-[より良い一緒に:Microsoft Defender Antivirus と Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+[ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 全体に脅威保護機能を展開する
 description: Microsoft 365 E5 の脅威保護サービスとセキュリティ機能の概要を確認します。 Microsoft 365 E5 を使用して、ユーザー アカウント、デバイス、メール コンテンツを保護します。
-keywords: 高度な脅威保護、セキュリティ、Microsoft 365 E5、ソリューション、デバイスの保護、防御
+keywords: ソリューション, セットアップ, 高度な脅威保護, atp, セキュリティ, microsoft 365 E5, protect devices, defender, m365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0edc3847d6b832f254c6f289355570a3a044b1f4
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 04e9ed3d108fa68bdfbf3b34de618d904e3f2cba
+ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061039"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52065099"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Microsoft 365 E5 全体に脅威保護機能を展開する
 
-このソリューションでは、Microsoft 365 E5 全体の強力な脅威保護機能と、これらの機能が重要な理由について説明します。 このソリューションを参照して、Microsoft 365 E5 に含まれる機能、脅威保護機能の機能、組織で脅威保護を設定および構成する方法の概要を確認します。
+このソリューションでは、Microsoft 365 E5 全体の強力な脅威保護機能について説明し、脅威保護が重要な理由について説明します。 この記事では、Microsoft 365 E5 の脅威保護の概要と、組織のセットアップと構成にアプローチする方法について説明します。
 
 ## <a name="why-threat-protection-is-important"></a>脅威の保護が重要な理由 
 
@@ -60,7 +60,7 @@ Microsoft 365 Defender は、信号とデータを統合された [Microsoft 365
 |ソリューション/機能  |説明  |
 |---------|---------|
 |多要素認証と条件付きアクセス     |侵害された ID とデバイスから保護します。 この保護は基礎なので、まずこの保護から始めましょう。 このガイダンスで推奨される構成には、前提条件として Azure AD Id Protection が含まれています。     |
-|Microsoft Defender for Identity     |  オンプレミスの Active Directory ドメイン サービス (AD DS) 信号を活用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、調査するクラウドベースのセキュリティ ソリューション。 オンプレミスおよびクラウド インフラストラクチャを保護し、依存関係や前提条件を持たないので、Microsoft Defender for Identity に次に集中し、すぐにセキュリティ上の利点を提供できます。 | 
+|Microsoft Defender for Identity     |  オンプレミスの Active Directory ドメイン サービス (AD DS) 信号を使用して、組織に向けられた高度な脅威、侵害された ID、悪意のある内部者のアクションを特定、検出、および調査するクラウドベースのセキュリティ ソリューション。 オンプレミスおよびクラウド インフラストラクチャを保護し、依存関係や前提条件を持たないので、Microsoft Defender for Identity に次に集中し、すぐにセキュリティ上の利点を提供できます。 | 
 |Microsoft Defender for Office 365     | 電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによる悪意のある脅威から組織を保護します。 マルウェア、フィッシング、スプーフィング、その他の攻撃の種類に対する保護。 次に、Office 365 用の Microsoft Defender の構成をお勧めします。変更制御、既存のシステムからの設定の移行など、展開に時間がかかる場合があります。 <p>**注**: すべての 365 サブスクリプション (Exchange Online Protection) に含まれるOffice保護機能を構成してください。       |
 |Microsoft Defender for Endpoint    | 高度な脅威を防止、検出、調査、および対応するのに役立つエンドポイント保護プラットフォーム。  Defender for Endpoint の展開には時間がかかる場合がありますが、構成は他の機能と並行して実行できます。   |
 |Microsoft Cloud App Security     |   検出、調査、ガバナンスのためのクラウド アクセス セキュリティ ブローカー。 Microsoft Cloud App Security を早期に有効にして、データと分析情報の収集を開始できます。 SaaS アプリ全体で情報や他の対象を絞った保護を実装するには、計画が必要であり、時間がかかる場合があります。       | 
@@ -74,7 +74,7 @@ Microsoft 365 Defender は、信号とデータを統合された [Microsoft 365
 
 ![脅威保護機能を展開するプロセス](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
-組織で可能な限り最高の保護を提供するには、次の手順を含むプロセスを使用してセキュリティ ソリューションをセットアップして展開します。
+組織が可能な限り最高の保護を提供するには、次の手順を含むプロセスを使用してセキュリティ ソリューションをセットアップして展開します。
 
 1. [多要素認証と条件付きアクセス ポリシーを設定します](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)。
 2. [Id の Microsoft Defender を構成します](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)。
@@ -89,6 +89,6 @@ Microsoft 365 Defender は、信号とデータを統合された [Microsoft 365
 
 ## <a name="next-step"></a>次の手順
 
-「Microsoft [365 全体で脅威保護機能を構成する」に進みます](deploy-threat-protection-configure.md)。
+Microsoft [365 全体の脅威保護機能の構成に進む](deploy-threat-protection-configure.md)。
 
 

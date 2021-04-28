@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939488"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060969"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -62,7 +62,7 @@ ms.locfileid: "51939488"
 
 支払い後約 3 日で、発票要求を[発票管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465)に送信できます。
 
-1. <a href=”https://go.microsoft.com/fwlink/p/?linkid=850627” target=”_blank”>管理センター</a>で、[**課金情報**]  >  [**請求と支払い**] ページの順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金情報**]  >  [**請求と支払い**] ページの順に移動します。
 
 2. 必要な請求書を見つけて、**[発票]** を選択します。
 
