@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 4c55010508f2b5bde1641b9b7552e4acb95a12d3
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: b3a3978bc166f9c302fe9c28b016d56742acd9de
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760238"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028958"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -813,7 +813,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Workplace Analytics | 米国 |
 </p></details>
 
-## <a name="bosnia"></a>ボスニア
+## <a name="bosnia-and-herzegovina"></a>ボスニア・ヘルツェゴビナ
 <details><summary>クリックして展開</summary><p>
 
 | サービス | 場所 |
