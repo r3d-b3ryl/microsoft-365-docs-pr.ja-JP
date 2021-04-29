@@ -21,12 +21,12 @@ description: Microsoft 365 管理センター - 今月追加された機能に�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024195"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077313"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -83,7 +83,7 @@ Microsoft Ignite へようこそ。 Microsoft [Ignite 2021](https://myignite.mic
 
 :::image type="content" source="../media/message-center.png" alt-text="スクリーンショット: 受信トレイとメッセージを示すメッセージ センターのホーム ページ":::
 
-新機能の詳細については、「メッセージ センターでメッセージを [管理する」を参照してください](manage/manage-messages.md)。
+新機能の詳細については、「メッセージ センター」を [参照してください](manage/message-center.md)。
 
 ### <a name="whats-new-features"></a>新機能
 
