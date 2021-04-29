@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: ドキュメント フィンガープリンティング
           href: document-fingerprinting.md
-        - name: 機密情報の DLP 関数
-          href: what-the-dlp-functions-look-for.md
     - name: トレーニング可能な分類子
       items:
         - name: トレーニング可能な分類子の詳細

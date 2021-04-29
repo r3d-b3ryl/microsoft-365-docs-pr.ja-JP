@@ -127,6 +127,8 @@
           href: act-on-report.md
         - name: 別のドメインを追加する
           href: add-domain.md
+        - name: 新しいビジネス メール アドレスを設定する
+          href: set-up-a-new-business-email-address.md
     - name: デバイスの管理
       items:
         - name: Windows 10 Pro デバイスをセキュリティで保護する
