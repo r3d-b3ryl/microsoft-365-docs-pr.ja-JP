@@ -376,7 +376,7 @@
             - name: スタンドアロン EOP で役割グループを管理する
               href: manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 Defender
-      href: ../index.yml
+      href: ../defender/index.yml
     - name: Microsoft Defender for Endpoint
       href: ../defender-endpoint/index.yml
     - name: Microsoft Defender for Identity

@@ -539,12 +539,6 @@
 ####### [推奨事項によるマシンの一覧表示](get-recommendation-machines.md)
 ####### [推奨事項による脆弱性の一覧表示](get-recommendation-vulnerabilities.md)
 
-###### [修復アクティビティ]()
-####### [修復アクティビティのメソッドとプロパティ](get-remediation-methods-properties.md)
-####### [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
-####### [すべての修復作業を一覧表示する](get-remediation-all-activities.md)
-####### [1 つの修復アクティビティの暴露デバイスを一覧表示する](get-remediation-exposed-devices-activities.md)
-
 ###### [スコア]()
 ####### [スコア メソッドとプロパティ](score.md)
 ####### [マシン グループごとの暴露スコアを一覧表示する](get-machine-group-exposure-score.md)
