@@ -6,7 +6,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,14 +16,15 @@ ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+recommendations: false
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加する方法について、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 36e4d4f96146b51e0b31731c9e93222eed767045
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0c42569da3fcac40d3121a59f7dc004f25dd3f74
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903804"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086761"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>データ損失防止ポリシーヒントのリファレンス
 
@@ -71,11 +72,11 @@ Outlook Web Access の DLP ポリシー ヒントは、以下を除き、DLP ポ
 - コンテンツが含まれる (機密情報の種類に対してのみ機能します)。 感度ラベルはサポートされていません)
 - コンテンツが共有されている
 
-Outlook クライアント アプリで作成された電子メールでは、コンテンツと一致し、コンテンツに対して保護アクションを適用する場合、すべての条件が機能します。 ただし、ユーザーにポリシー ヒントを表示する方法は、上記の条件とは別に使用される条件ではサポートされていません。
+すべての条件は、コンテンツと一致し、コンテンツに対して保護アクションを適用Outlookクライアント アプリで作成された電子メールに対して機能します。 ただし、ユーザーにポリシー ヒントを表示する方法は、上記の条件とは別に使用される条件ではサポートされていません。
 
-## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 以降およびデスクトップOfficeアプリでは、一部の機密情報の種類についてのみポリシー ヒントを表示できます。
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 以降およびデスクトップ上Officeアプリの一部の機密情報の種類についてのみポリシー ヒントを表示するサポート
 
-デスクトップ上の Outlook on Desktop (2013 以降) および Office アプリ (Word、Excel、PowerPoint) で DLP ポリシー ヒントを表示するために検出される、既定の機密情報の種類の一覧は次のとおりです。
+デスクトップ上の Outlook (2013 以降) および Office アプリ (Word、Excel、PowerPoint) で DLP ポリシー ヒントをデスクトップに表示するために検出される、既定の機密情報の種類の一覧を次に示します。
 
 - ABA ルーティング番号
 - アルゼンチンの国民識別 (DNI) 番号
@@ -85,13 +86,13 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - オーストラリアの納税者番号
 - Azure DocumentDB Auth Key  
 - Azure IAAS データベース接続文字列と Azure SQL接続文字列  
-- Azure IoT 接続文字列  
+- Azure IoT接続文字列  
 - Azure 発行設定パスワード  
 - Azure Redis キャッシュ接続文字列  
 - Azure SAS  
-- Azure Service Bus 接続文字列  
-- Azure ストレージ アカウント キー  
-- Azure ストレージ アカウント キー (汎用)  
+- Azure Service Bus接続文字列  
+- Azure Storageアカウント キー  
+- Azure Storageアカウント キー (汎用)  
 - ベルギーの国民番号
 - ブラジルの CPF 番号
 - Brazil Legal Entity Number (CNPJ)
@@ -171,7 +172,7 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - 英国の選挙登録番号
 - 英国の国民健康保険番号
 - 英国の国民保険番号 (NINO)
-- 米国/英国 Passport Number
+- 米国/英国のパスポート番号
 - 米国の銀行口座番号
 - 米国の運転免許証番号
 - 米国の個人納税者識別番号 (ITIN)
@@ -199,13 +200,13 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - オーストリア付加価値税 (VAT) 番号 
 - Azure DocumentDB Auth Key 
 - Azure IAAS データベース接続文字列と Azure SQL接続文字列 
-- Azure IoT 接続文字列 
+- Azure IoT接続文字列 
 - Azure 発行設定パスワード 
 - Azure Redis キャッシュ接続文字列 
 - Azure SAS 
-- Azure Service Bus 接続文字列 
-- Azure ストレージ アカウント キー 
-- Azure ストレージ アカウント キー (汎用) 
+- Azure Service Bus接続文字列 
+- Azure Storageアカウント キー 
+- Azure Storageアカウント キー (汎用) 
 - ベルギーの運転免許証番号 
 - ベルギーの国民番号 
 - ベルギーのパスポート番号 
@@ -230,7 +231,7 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - クロアチアの国民 ID カード番号 
 - クロアチアのパスポート番号 
 - クロアチアの個人識別 (OIB) 番号 
-- CSCAN-AZURE0060 Azure Storage Account Shared Access Signature 
+- CSCAN-AZURE0060 Azure Storage共有アクセス署名 
 - CSCAN-GENERAL0140 一般対称キー 
 - キプロス の運転免許証番号 
 - キプロスの ID カード 
@@ -379,7 +380,7 @@ Outlook クライアント アプリで作成された電子メールでは、�
 - 英国の国民健康保険番号 
 - 英国の国民保険番号 (NINO) 
 - 英国 一意の納税者参照番号 
-- 米国/英国 Passport Number 
+- 米国/英国のパスポート番号 
 - 米国の銀行口座番号 
 - 米国の運転免許証番号 
 - 米国の個人納税者識別番号 (ITIN) 
@@ -393,17 +394,17 @@ Outlook クライアント アプリで作成された電子メールでは、�
 
 |**アプリとプラットフォーム**|**DLP ポリシー ヒントのサポート**|**サポートされる機密情報の種類**|**サポートされる述語とアクション**|**コメント**|
 |:--|:--|:--|:--|:--|
-|**Outlook Web Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべて|Subset|「 [データ損失防止ポリシー のヒントリファレンス」を参照してください。](#data-loss-prevention-policy-tips-reference)|
-|**Outlook Win32 (Outlook 2013 以降)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|Outlook [2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) 以降では、一部の条件と例外に関するポリシー ヒントの表示と、Outlook [2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) 以降およびデスクトップ上の Office アプリのポリシー ヒントの表示を参照してください。Outlook Win32 で DLP ポリシー ヒントを表示するためにサポートされている機密情報の種類と DLP の状態とアクションのサポートの詳細については、一部の機密情報の種類についてのみポリシー ヒントを表示します。|
-|**Outlook Mobile (iOS、Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|なし|なし|DLP ポリシー のヒントは Outlook モバイルではサポートされていません|
+|**OutlookWeb アクセス**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべて|Subset|「 [データ損失防止ポリシー のヒントリファレンス」を参照してください。](#data-loss-prevention-policy-tips-reference)|
+|**OutlookWin32 (Outlook 2013 以降)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|Outlook Win32 での DLP ポリシー ヒントの表示にサポートされる機密情報の種類と DLP の条件とアクションのサポートの詳細については[、「Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions)以降では、一部の条件と例外に関するポリシー ヒントの表示と[Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)以降およびデスクトップ上の Office アプリのサポート」を参照してください。|
+|**Outlookモバイル (iOS、Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|なし|なし|DLP ポリシー のヒントは、モバイルではOutlookされません|
 |**Sharepoint Online/One Drive for Business Web クライアント**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべて|DLP のすべての SPO/ODB 述語とアクション||
-|**Sharepoint Win32/ One Drive for Business Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|なし|なし|Sharepoint または OneDrive デスクトップ クライアント アプリでは DLP ポリシーのヒントはサポートされていません|
+|**Sharepoint Win32/ One Drive for Business Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|なし|なし|SHAREpoint またはデスクトップ クライアント アプリでは DLP ポリシーのヒントOneDriveサポートされていません|
 |**Word、Excel、PowerPoint Web クライアント**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべて|DLP のすべての SPO/ODB 述語とアクション|DLP ポリシー ヒントは、ドキュメントが SPO または ODB Web アプリでホストされ、DLP ポリシーが既にスタンプされている場合にサポートされます。|
-|**Word、Excel、PowerPoint モバイル クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|なし|なし|DLP ポリシー のヒントは、モバイル アプリではサポートされていません。Office。|
-|**Teams Web/ Teams デスクトップ/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべて|DLP ポリシーのすべての Teams 述語|ポリシー ヒントは、メッセージに "このメッセージのフラグが設定されています" というフラグが付けらた場合に表示されます。 何が可能ですか? リンクをクリックすると、ユーザーは検出された機密情報の種類を確認し、管理者が許可した場合に問題を上書きまたは報告できます。ファイルに関するポリシー ヒントは表示されません。 受信者がドキュメントにアクセスしようとすると、許可されていない場合にアクセスが拒否される可能性があります。|
+|**Word、Excel、PowerPoint Mobile クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|なし|なし|DLP ポリシー のヒントは、モバイル アプリではサポートされていません。Office。|
+|**TeamsWeb/ Teams デスクトップ/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべて|DLP ポリシー Teams述語のすべて|ポリシー ヒントは、メッセージに "このメッセージのフラグが設定されています" というフラグが付けらた場合に表示されます。 何が可能ですか? リンクをクリックすると、ユーザーは検出された機密情報の種類を確認し、管理者が許可した場合に問題を上書きまたは報告できます。ファイルに関するポリシー ヒントは表示されません。 受信者がドキュメントにアクセスしようとすると、許可されていない場合にアクセスが拒否される可能性があります。|
 |**Win32 Endpoint Devices**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|DLP ポリシーのすべてのエンドポイント DLP 述語とアクション|「 [エンドポイントのデータ損失防止は、一部の機密情報の種類についてのみポリシー ヒントをサポートしています」を参照してください。](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
 |**Mac デバイス**|:::image type="icon" source="../media/crsmrk.png" border="false":::|なし|なし|データ損失防止ポリシーは、今日の Mac デバイスでは適用できません|
 |**サードパーティのクラウド アプリ**|:::image type="icon" source="../media/crsmrk.png" border="false":::|なし|なし|データ損失防止ポリシーのヒントは、サードパーティのクラウド アプリではサポートされていません|
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|なし|なし||
-|**Word、Excel、PowerPoint Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|サポートされる機密情報の種類の一覧については、一部の機密情報の種類に関するポリシー ヒントのみを示す Outlook [2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) 以降およびデスクトップ上の Office アプリのサポートを参照してください。</br></br>WXP クライアント アプリのポリシー ヒントは、以下または DLP ポリシー内の条件またはアクションのサブセットを正確に持つすべての DLP ポリシーについて、Sharepoint Online または One Drive for Business Sites に保存されているドキュメントで機能します。</br> <ul><li>コンテンツには機密情報の種類が含まれる</li><li>Access Scope (コンテンツは内部/外部で共有されます)</li><li>ユーザーに通知する (ポリシー ヒント/ユーザー通知)</li><li>すべてのユーザーをブロックする</li><li>インシデント レポート</li></ul></br> その他の条件またはアクションが存在する場合、そのポリシーの DLP ポリシー ヒントは、Word、Excel、または PowerPoint のデスクトップ アプリには表示されません。</br>詳細 [については、「Excel、PowerPoint、および Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) のポリシー ヒント」を参照してください。|
+|**Word、Excel、Win32 PowerPointクライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|サポートされる[機密情報Outlook一](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)覧については、一部の機密情報の種類に関するポリシー ヒントのみを示すデスクトップ 上の Office アプリとデスクトップ 上の Office アプリのサポートを参照してください。</br></br>WXP クライアント アプリのポリシー ヒントは、以下または DLP ポリシー内の条件またはアクションのサブセットを正確に持つすべての DLP ポリシーについて、Sharepoint Online または One Drive for Business Sites に保存されているドキュメントで機能します。</br> <ul><li>コンテンツには機密情報の種類が含まれる</li><li>Access Scope (コンテンツは内部/外部で共有されます)</li><li>ユーザーに通知する (ポリシー ヒント/ユーザー通知)</li><li>すべてのユーザーをブロックする</li><li>インシデント レポート</li></ul></br> その他の条件やアクションが存在する場合、そのポリシーの DLP ポリシー ヒントは Word、Excel、または PowerPoint のデスクトップ アプリには表示されません。</br>詳細[については、「Excel、PowerPoint、Word のポリシー ヒント」](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)を参照してください。|
 ||||||

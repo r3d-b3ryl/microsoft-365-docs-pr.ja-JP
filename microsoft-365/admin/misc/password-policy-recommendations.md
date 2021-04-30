@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化する方法と、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にする理由について説明します。
-ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914728"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073867"
 ---
 # <a name="password-policy-recommendations"></a>パスワード ポリシーの推奨事項
 
@@ -34,7 +34,15 @@ ms.locfileid: "50914728"
   
 組織で Microsoft 365 パスワードが期限切れとなる頻度を決める場合は、「[Microsoft 365 のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md)」を参照してください。
 
-Microsoft 365 パスワードの詳細については、これらの[関連記事](#related-articles)を参照してください。
+Microsoft 365 パスワードの詳細については、以下を参照してください。
+
+[パスワードをリセットする](../add-users/reset-passwords.md) (記事)
+
+[個別のユーザーのパスワードを無期限に設定する](../add-users/set-password-to-never-expire.md) (記事)
+
+[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)
+
+[ユーザーのパスワードを再送信する - 管理者向けヘルプ](../add-users/resend-user-password.md) (記事)
   
 ## <a name="understanding-password-recommendations"></a>パスワードの推奨事項について
 
@@ -135,12 +143,12 @@ Microsoft 365 パスワードの詳細については、これらの[関連記�
 
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020) (2015 年のワースト パスワード)
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[パスワードをリセットする](../add-users/reset-passwords.md)
+[パスワードをリセットする](../add-users/reset-passwords.md) (記事)
 
-[個別のユーザーのパスワードを無期限に設定する](../add-users/set-password-to-never-expire.md)
+[個別のユーザーのパスワードを無期限に設定する](../add-users/set-password-to-never-expire.md) (記事)
 
-[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md)
+[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)
 
-[ユーザーのパスワードを再送信する - 管理者向けヘルプ](../add-users/resend-user-password.md)
+[ユーザーのパスワードを再送信する - 管理者向けヘルプ](../add-users/resend-user-password.md) (記事)
