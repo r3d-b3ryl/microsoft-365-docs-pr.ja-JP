@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4d305e952d48d42afffe91466121c67621aa9d85
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042688"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113404"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -60,8 +60,8 @@ ms.locfileid: "51042688"
 ## <a name="initial-protections"></a>初期保護
 
 チームおよび基になる SharePoint サイトへのアクセスを保護するためには、次のベスト プラクティスを確認します。
-- [ID とデバイスのアクセス ポリシー](../security/defender-365-security/identity-access-policies.md)
-- [SharePoint Online アクセス ポリシー](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)
+- [SharePoint Online アクセス ポリシー](../security/office-365-security/sharepoint-file-access-policies.md)
 - [ベースライン保護を使用してチームを展開する](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>ゲスト共有
@@ -148,7 +148,7 @@ ms.locfileid: "51042688"
 6. [ユーザーとグループに発行] ページで、**[ユーザーとグループの選択]** をクリックします。
 7. **[追加]** をクリックし、作成したチームを選びます。
 8. **[追加]** をクリックし、**[完了]** をクリックします。
-9. **[次へ]** をクリックします。
+9. [**次へ**] をクリックします。
 10. [ポリシーの設定] ページで、**[ユーザーはラベルを削除するか、分類ラベルを下げるために正当な理由を提供する必要がある]** チェック ボックスをオンにし、**[次へ]** をクリックします。
 11. ポリシーの名前を入力し、**[次へ]** をクリックします。
 12. **[送信]** をクリックしてから、**[完了]** をクリックします。
@@ -231,7 +231,7 @@ Microsoft 365 は、コンテンツを保護するための追加の方法を提
 
 - ゲストを[使用条件](/azure/active-directory/conditional-access/terms-of-use)に同意させる。
 - ゲストに[セッション タイムアウト ポリシー](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を構成する。
-- [機密情報の種類](../compliance/sensitive-information-type-learn-about.md)を作成し、[データ損失防止](../compliance/data-loss-prevention-policies.md)を使用して、機密情報にアクセスするポリシーを設定する。
+- [機密情報の種類](../compliance/sensitive-information-type-learn-about.md)を作成し、[データ損失防止](../compliance/dlp-learn-about-dlp.md)を使用して、機密情報にアクセスするポリシーを設定する。
 - [Azure Active Directory アクセス](/azure/active-directory/governance/access-reviews-overview) レビューを使用して、チームのアクセス権とメンバーシップを定期的に確認する。
 
 ## <a name="drive-user-adoption-for-team-members"></a>チーム メンバーのユーザーによる導入を促す

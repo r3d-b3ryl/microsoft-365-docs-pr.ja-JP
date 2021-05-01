@@ -10,25 +10,31 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: 課金アカウントについて、およびアカウントを管理する方法について学習します。
-ms.openlocfilehash: c2cf7584148bb846541328396885d20c00e2712a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911424"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107582"
 ---
 # <a name="manage-billing-accounts"></a>請求アカウントを管理する
 
-Microsoft 製品を試用または購入するためにサインアップすると、課金アカウントが作成されます。 課金アカウントを使用して、アカウント設定、請求書、支払い方法、購入を管理します。 複数の請求アカウントにアクセスできます。 たとえば、Microsoft 365 に直接サインアップした場合、または組織の マイクロソフトエンタープライズ契約、Microsoft 製品 & サービス契約、または Microsoft カスタマー 契約にアクセスできます。 これらのシナリオごとに、個別の請求アカウントを持つ必要があります。
+Microsoft 製品を試用または購入するためにサインアップすると、課金アカウントが作成されます。 課金アカウントを使用して、アカウント設定、請求書、支払い方法、購入を管理します。 複数の請求アカウントにアクセスできます。 たとえば、Microsoft 365 に直接サインアップした場合、または組織の Enterprise Agreement、Microsoft 製品 & サービス契約、または Microsoft カスタマー 契約にアクセスできます。 これらのシナリオごとに、個別の請求アカウントを持つ必要があります。
 
-Microsoft 365 管理センターは現在、次の種類の請求アカウントをサポートしています。
+現在Microsoft 365管理センターは、次の種類の請求アカウントをサポートしています。
 
-- Microsoft Online Servicesプログラム: この課金アカウントは、Microsoft 365 サブスクリプションに直接サインアップするときに作成されます。
+- Microsoft Online Servicesプログラム: この課金アカウントは、サブスクリプションに直接サインアップするときにMicrosoft 365されます。
 - Microsoft Products & サービス契約 (MPSA) プログラム: この請求アカウントは、組織がソフトウェアおよびオンライン サービスを購入するために MPSA ボリューム ライセンス契約に署名するときに作成されます。
 - Microsoft カスタマー 契約: この請求アカウントは、組織が Microsoft 担当者、認定パートナー、または個別に購入するときに作成されます。
 
@@ -63,14 +69,14 @@ Microsoft 365 管理センターは現在、次の種類の請求アカウント
 
 ## <a name="understand-access-to-billing-accounts"></a>課金アカウントへのアクセスを理解する
 
-役割とアクセス許可を使用して、Microsoft 365 管理センターの課金アカウントへのアクセス権を他のユーザーに提供できます。 課金アカウントへのアクセスを許可できるのは、請求アカウントの所有者のみです。 次のいずれかの役割をユーザーに割り当てることができます。
+他のユーザーに、役割とアクセス許可を通じて、Microsoft 365アカウントへのアクセス権を提供できます。 課金アカウントへのアクセスを許可できるのは、請求アカウントの所有者のみです。 次のいずれかの役割をユーザーに割り当てることができます。
 
 - **課金アカウントの所有者** &mdash; アクセス許可の割り当て、アカウントの編集、契約の署名、アカウントの表示を行えます。
 - **課金アカウントの投稿者** &mdash; アカウントの編集、契約への署名、アカウントの表示を行えます。
 - **課金アカウント リーダー** &mdash; アカウントを表示できます。
 
 > [!Note]
-> 課金アカウントの役割は請求アカウントにのみ適用され、他の Microsoft 365 管理センターのシナリオには適用されません。
+> 課金アカウントの役割は課金アカウントにのみ適用され、管理センターの他のシナリオMicrosoft 365適用されません。
 
 ## <a name="related-content"></a>関連コンテンツ
 

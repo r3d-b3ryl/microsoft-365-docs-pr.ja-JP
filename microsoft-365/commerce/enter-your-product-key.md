@@ -12,21 +12,23 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_NonTOC
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: 小売店で購入した Microsoft 365 Busines sStandard のプロダクト キーを利用する方法を学びます。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
-ms.translationtype: HT
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: 小売店で購入した Microsoft 365 Busines sStandard のプロダクト キーを利用する方法を学びます。
+ms.date: 11/13/2020
+ms.openlocfilehash: 0e647b8d52d024750b3944a03133755c1257ee4c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072749"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107450"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 

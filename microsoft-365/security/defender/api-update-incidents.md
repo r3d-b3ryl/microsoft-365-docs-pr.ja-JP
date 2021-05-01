@@ -1,6 +1,6 @@
 ---
 title: インシデント API の更新
-description: Microsoft 365 Defender API を使用してインシデントを更新する方法について説明します。
+description: Defender API を使用してインシデントを更新Microsoft 365する方法
 keywords: update, api, Incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 549f9bf2b9dc2ea5d1c734a809ad10a168c8123e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060801"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107606"
 ---
 # <a name="update-incidents-api"></a>インシデント API の更新
 
@@ -51,7 +51,7 @@ ms.locfileid: "51060801"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Access the Microsoft 365 Defender API」を参照してください](api-access.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Access the Defender API Microsoft 365参照してください](api-access.md)。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
@@ -69,21 +69,21 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 -|-|-
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 Content-Type | 文字列 | application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、更新するフィールドの値を指定します。 要求本文に含まれていない既存のプロパティは、関連する値の変更のために再計算する必要がない限り、値を維持します。 最適なパフォーマンスを得る場合は、変更していない既存の値を省略する必要があります。
 
-プロパティ | 種類 | 説明
+プロパティ | 型 | 説明
 -|-|-
-status | 列挙 | アラートの現在の状態を指定します。 使用できる値は ```Active``` ```Resolved``` 、、、および ```Redirected``` です。
-assignedTo | string | インシデントの所有者。
-classification | 列挙 | アラートの仕様。 可能な値は、```Unknown```、```FalsePositive```、```TruePositive``` です。
-決定 | 列挙 | アラートの決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
+status | 列挙 | インシデントの現在の状態を指定します。 使用できる値は ```Active``` ```Resolved``` 、、、および ```Redirected``` です。
+assignedTo | 文字列 | インシデントの所有者。
+classification | 列挙 | インシデントの仕様。 可能な値は、```Unknown```、```FalsePositive```、```TruePositive``` です。
+決定 | 列挙 | インシデントの決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
 tags | string List | インシデント タグの一覧。
 
 ## <a name="response"></a>応答
@@ -114,7 +114,7 @@ tags | string List | インシデント タグの一覧。
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [Defender API Microsoft 365アクセスする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)
 - [インシデント API](api-incident.md)

@@ -1,5 +1,5 @@
 ---
-title: Contoso Corporation のエンタープライズ セキュリティ向け Microsoft 365 の概要
+title: Contoso Corporation のMicrosoft 365セキュリティの概要
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso がエンタープライズ向け Microsoft 365 のセキュリティ機能を使用する方法。
-ms.openlocfilehash: 1bcbaad2409df81121a92e8ad01f794ae28d8dc6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: Contoso 社がエンタープライズ向けサービスのセキュリティMicrosoft 365使用する方法。
+ms.openlocfilehash: 59eed0b7e08aae8397bb037e6d1b515bf6aa0ba8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051486"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113452"
 ---
-# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のエンタープライズ セキュリティ向け Microsoft 365 の概要
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のMicrosoft 365セキュリティの概要
 
-Microsoft 365 for enterprise を展開する承認を得るに当たって、Contoso IT セキュリティ部門は徹底的なセキュリティ レビューを実施しました。 クラウドの次のセキュリティ要件を特定しました。
+Contoso IT セキュリティ部門は、エンタープライズ向Microsoft 365展開の承認を得るに当たって、徹底的なセキュリティ レビューを実施しました。 クラウドの次のセキュリティ要件を特定しました。
 
 - 従業員がクラウド リソースにアクセスするには、最も強力な認証方法を使用します。
 - PC とモバイル デバイスが安全な方法でアプリケーションに接続してアクセスする必要があります。
@@ -34,9 +34,9 @@ Microsoft 365 for enterprise を展開する承認を得るに当たって、Con
 - 高度に規制されたデジタル資産は、追加の暗号化とアクセス許可で保護されます。
 - IT セキュリティ スタッフは、中央ダッシュボードから現在のセキュリティ態勢を監視し、迅速な対応と軽減のためにセキュリティ イベントの通知を受け取ります。
 
-## <a name="the-contoso-path-to-microsoft-365-security-readiness"></a>Microsoft 365 セキュリティ準備への Contoso パス
+## <a name="the-contoso-path-to-microsoft-365-security-readiness"></a>セキュリティの準備をMicrosoft 365 Contoso パス
 
-Contoso 社は、エンタープライズ向け Microsoft 365 の展開に向けてセキュリティを準備するために、次の手順に従いました。
+Contoso 社は、次の手順に従って、エンタープライズ向けサービスの展開にMicrosoft 365準備しました。
 
 1. クラウドの管理者アカウントを制限する
 
@@ -44,7 +44,7 @@ Contoso 社は、エンタープライズ向け Microsoft 365 の展開に向け
 
 2. データを 3 つのセキュリティ レベルに分類する
 
-   Contoso 社は、最も価値の高いデータを保護するために Microsoft 365 のエンタープライズ機能を特定するために使用された 3 つのレベルを慎重に検討し、決定しました。
+   Contoso 社は、最も価値の高いデータを保護するためのエンタープライズ機能のMicrosoft 365を特定するために使用される 3 つのレベルを慎重に検討し、決定しました。
 
 3. 各データ レベルについてアクセス、保持、情報保護ポリシーを決定する
 
@@ -56,7 +56,7 @@ Contoso 社は、エンタープライズ向け Microsoft 365 の展開に向け
 
 - MFA および PIM を設定した全体管理者専用アカウント
 
-  Contoso 社は、グローバル管理者の役割を日常のユーザー アカウントに割り当てるのではなく、強力なパスワードを持つ 3 つの専用のグローバル管理者アカウントを作成しました。 アカウントは、Azure AD多要素認証 (MFA) と Azure Active Directory (Azure AD) 特権 ID 管理 (PIM) によって保護されます。 *PIM は、Microsoft 365 E5 でのみ使用可能です。*
+  Contoso 社は、グローバル管理者の役割を日常のユーザー アカウントに割り当てるのではなく、強力なパスワードを持つ 3 つの専用のグローバル管理者アカウントを作成しました。 アカウントは、Azure AD多要素認証 (MFA) と Azure Active Directory (Azure AD) Privileged Identity Management (PIM) によって保護されます。 *PIM は、Microsoft 365 E5 でのみ使用可能です。*
 
   グローバル管理者アカウントでのサインインは、特定の管理タスクに対して行われます。 パスワードは、指定されたスタッフにのみ知られているので、Azure AD PIM で構成されている期間中にのみ使用できます。
 
@@ -68,20 +68,20 @@ Contoso 社は、エンタープライズ向け Microsoft 365 の展開に向け
 
   MFA は、サインイン プロセスに追加の保護層を追加します。 ユーザーは、パスワードを正しく入力した後、スマートフォンで電話、テキスト メッセージ、アプリ通知を確認する必要があります。 MFA を使用すると、アカウントADパスワードが侵害された場合でも、Azure ユーザー アカウントは承認されていないサインインから保護されます。
 
-   - Microsoft 365 サブスクリプションの侵害から保護するには、すべてのグローバル管理者アカウントで MFA が必要です。
+   - サブスクリプションの侵害から保護Microsoft 365 Contoso では、すべてのグローバル管理者アカウントで MFA が必要です。
    - 組織内の信頼されている人の資格情報が漏えいし、攻撃者が悪意のある電子メールを送信するというフィッシング攻撃からの保護を目的として、Contoso 社ではマネージャーや経営幹部を含むすべてのユーザー アカウントで MFA を有効にしました。
 
 - 条件付きアクセス ポリシーを使用したデバイスとアプリケーションへの安全なアクセス
 
-  Contoso 社では、ID、デバイス、Exchange Online、および SharePoint に[条件付きアクセス ポリシー](../security/defender-365-security/microsoft-365-policies-configurations.md)を使用しています。ID の条件付きアクセス ポリシーには、リスクの高いユーザーに対するパスワード変更の要求や、クライアントに対する最新の認証をサポートしていないアプリの使用禁止が含まれます。デバイスのポリシーには、承認されたアプリを定義することや、準拠している PC とモバイル デバイスが必要になることが含まれます。Exchange Online の条件付きアクセス ポリシーには、ActiveSync クライアントのブロックと、Office 365 のメッセージ暗号化の設定が含まれます。SharePoint の条件付きアクセス ポリシーには、機密性の高い厳しく規制されたサイトに対する追加の保護が含まれます。
+  Contoso 社では、ID、デバイス、Exchange Online、および SharePoint に[条件付きアクセス ポリシー](../security/office-365-security/microsoft-365-policies-configurations.md)を使用しています。ID の条件付きアクセス ポリシーには、リスクの高いユーザーに対するパスワード変更の要求や、クライアントに対する最新の認証をサポートしていないアプリの使用禁止が含まれます。デバイスのポリシーには、承認されたアプリを定義することや、準拠している PC とモバイル デバイスが必要になることが含まれます。Exchange Online の条件付きアクセス ポリシーには、ActiveSync クライアントのブロックと、Office 365 のメッセージ暗号化の設定が含まれます。SharePoint の条件付きアクセス ポリシーには、機密性の高い厳しく規制されたサイトに対する追加の保護が含まれます。
 
 - Windows Hello for Business
 
-  Contoso 社は [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification) を展開し、Windows 10 Enterprise を実行している PC とモバイル デバイスでの強力な 2 要素認証を通じて、最終的にパスワードの必要性を排除しました。
+  Contoso 社Windows [Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification)を展開し、最終的には、パスワードを実行している PC とモバイル デバイスで強力な 2 要素認証を使用してパスワードをWindows 10 Enterprise。
 
 - Windows Defender Credential Guard
 
-  管理特権を持つオペレーティング システムで実行されているターゲット攻撃とマルウェアをブロックするために、Contoso は DS グループ ポリシーを使用Windows Defender [Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) ADを有効にしました。
+  管理特権を持つオペレーティング システムで実行されている標的型攻撃とマルウェアをブロックするために[](/windows/security/identity-protection/credential-guard/credential-guard)、Contoso は DS グループ Windows Defender Credential GuardをADを有効にしました。
 
 ## <a name="threat-protection"></a>脅威保護
 
@@ -91,13 +91,13 @@ Contoso 社は、エンタープライズ向け Microsoft 365 の展開に向け
 
 - Microsoft Defender を使用してメール フローとメールボックス監査ログをセキュリティで保護Office 365 
 
-  Contoso 社は Exchange Online Protection と [Defender for Office 365](/office365/securitycompliance/office-365-atp) を使用して、電子メールを介して送信される未知のマルウェア、ウイルス、悪意のある URL から保護しています。
+  Contoso 社は、Exchange Online Protectionおよび Defender を[使用](/office365/securitycompliance/office-365-atp)Office 365メールを介して送信される未知のマルウェア、ウイルス、悪意のある URL から保護しています。
 
   Contoso では、メールボックス監査ログを有効にし、ユーザー のメールボックスへのログイン、メッセージの送信、メールボックス所有者、委任されたユーザー、または管理者によって実行されるその他のアクティビティを識別しました。
 
 - Office 365 脅威の調査および対応を使用した攻撃の監視と防止
 
-  Contoso は [、Office 365](/office365/securitycompliance/office-365-ti) の脅威調査と対応を使用して、攻撃の特定と対処を容易にし、将来の攻撃を防止することでユーザーを保護します。
+  Contoso では[、Office 365の](/office365/securitycompliance/office-365-ti)調査と対応を使用して、攻撃の特定と対処を容易にし、将来の攻撃を防止することで、ユーザーを保護します。
 
 - Advanced Threat Analytics を使用した高度な攻撃からの保護
 
@@ -107,15 +107,15 @@ Contoso 社は、エンタープライズ向け Microsoft 365 の展開に向け
 
 - Azure Information Protection ラベルを使用した機密性の高い厳しく規制されたデジタル資産の保護
 
-  Contoso 社は、3 つのレベルのデータ保護を決定し、ユーザーがデジタル資産に適用する [Microsoft 365](../compliance/sensitivity-labels.md) の感度ラベルを展開しました。 企業秘密とその他の知的財産のために、Contoso は高度に規制されたデータに対して秘密度サブラベルを使用します。 このプロセスは、コンテンツを暗号化し、特定のユーザー アカウントとグループへのアクセスを制限します。
+  Contoso 社は、3 つのレベルのデータ保護を決定し、Microsoft 365[デジタル](../compliance/sensitivity-labels.md)資産に適用する感度ラベルを使用して展開しました。 企業秘密とその他の知的財産のために、Contoso は高度に規制されたデータに対して秘密度サブラベルを使用します。 このプロセスは、コンテンツを暗号化し、特定のユーザー アカウントとグループへのアクセスを制限します。
 
 - データ損失防止機能を使用したイントラネット データの漏洩防止
 
-  Contoso は [、ユーザー](../compliance/data-loss-prevention-policies.md) が誤ってまたは意図的に機密データを共有しないように、Exchange Online、SharePoint、OneDrive for Business のデータ損失防止ポリシーを構成しました。
+  Contoso は[、ユーザー](../compliance/dlp-learn-about-dlp.md)が誤ってまたは意図的に機密データを共有しないようにExchange Online、SharePoint、および OneDrive for Business のデータ損失防止ポリシーを構成しました。
 
 - デバイスのデータ漏洩を防止する Windows 情報保護
 
-  Contoso 社は [、Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) を使用して、インターネット ベースのアプリやサービス、エンタープライズ アプリ、および従業員が仕事に持ち込む企業所有のデバイスおよび個人デバイス上のデータを通じてデータ漏洩から保護しています。
+  Contoso 社は[、Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)を使用して、インターネット ベースのアプリやサービス、企業向けアプリ、および従業員が仕事に持ち込む企業所有のデバイスおよび個人デバイス上のデータを通じてデータ漏洩から保護しています。
 
 - Microsoft Cloud App Security を使用したクラウドの監視
 
@@ -133,4 +133,4 @@ Contoso 社は、エンタープライズ向け Microsoft 365 の展開に向け
 
 - Windows Defender セキュリティ センターを使用したユーザー向けの中心となるセキュリティ ダッシュボード
 
-  Contoso 社は [、Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) 10 Enterprise を実行している PC とデバイスに Windows セキュリティ アプリを展開し、ユーザーがセキュリティの状態を一目で確認してアクションを実行できるようにします。
+  Contoso 社は[](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)、Windows セキュリティを実行している pc やデバイスに Windows 10 Enterprise アプリを展開し、ユーザーがセキュリティの状態を一目で確認し、アクションを実行できるようにします。

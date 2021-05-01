@@ -12,50 +12,49 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - TRN_SMB
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_signup
+- PPM_pablom
+ms.reviewer: seemg
 search.appverid:
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: '365 のサインアップ プロセスを実行する前に知る必要Officeします。 '
-ms.openlocfilehash: f2a4f555540b801441644af28435170f82229909
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: ユーザーのサインアップ プロセスを実行する前に知る必要があるOffice 365。
+ms.date: 03/17/2021
+ms.openlocfilehash: 37cbe20a5cc1a7506e8db218c3e9ffe2b4e64478
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023919"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107028"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
 ::: moniker range="o365-worldwide"
 
-Microsoft 365 for business にサインアップして、チームが Word、Excel、PowerPoint、その他の最新バージョンのプログラムの使用を開始Officeします。
+チームが最新Microsoft 365バージョンの Word、Excel、PowerPoint、その他のプログラムの使用を開始Officeします。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Microsoft 365 for business にサインアップして、チームが Word、Excel、PowerPoint、その他の最新バージョンのプログラムを使用Officeできます。
+チームが最新Microsoft 365バージョンの Word、Excel、PowerPoint、その他のプログラムの使用を開始Office。
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Office 21Vianet が運用する 365 は、中国のセキュリティで保護され、信頼性が高く、拡張性の高いクラウド サービスのニーズに対応するように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet は、サービスの配信を運用、提供、および管理します。 21Vianet は、ホスティング、管理されたネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データセンター サービス プロバイダーです。 Microsoft テクノロジをライセンスすることで、21Vianet はローカルの Microsoft データセンターを運用し、中国内のデータを保持しながら Microsoft サービスを使用できます。 21Vianet は、サブスクリプションサービスと課金サービス、およびサポートも提供します。
+Office 365 21Vianet が運用するサービスは、中国のセキュリティで保護され、信頼性が高く、スケーラブルなクラウド サービスのニーズに対応するように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet は、サービスの配信を運用、提供、および管理します。 21Vianet は、ホスティング、管理されたネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データセンター サービス プロバイダーです。 Microsoft テクノロジをライセンスすることで、21Vianet はローカルの Microsoft データセンターを運用し、中国内のデータを保持しながら、Microsoft サービスを使用できます。 21Vianet は、サブスクリプションサービスと課金サービス、およびサポートも提供します。
   
 > [!NOTE]
 > これらのサービスは中国の法律に従います。
   
-21Vianet Office 365 にサインアップして、チームが Word、Excel、PowerPoint、その他の最新バージョンのプログラムの使用を開始Officeします。
+チームが最新バージョンの Word、Excel、PowerPoint、その他の Office プログラムの使用を開始できるよう、21Vianet が運営する Office 365 にサインアップします。
   
 サインアップする準備はできましたか? [プランを選択します](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -66,7 +65,7 @@ Office 21Vianet が運用する 365 は、中国のセキュリティで保護�
 
 購入する前に、サインアップする計画にいくつかの考えをお入れください。 これにより、後で発生する問題を防ぐことができます。
 
-Microsoft 365 for business プランの選択に関する短いビデオをご覧ください。<br><br>
+ビジネス プランの選択に関する短いMicrosoft 365ビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -120,9 +119,9 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
   - サブスクリプションに関する確認など、Microsoft から管理者に連絡する場合に使用する、 **メール アドレス** と **電話番号** 。管理者がパスワードを忘れた場合などに、この情報を使って仮のパスワードが送信されます。また、指定したメール アドレスに課金情報が送信されます。
 
     > [!NOTE]
-    > ここで入力する電子メール アドレスは、Microsoft 365 の電子メール アドレス (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
+    > ここで入力する電子メール アドレスは、ユーザーのメール Microsoft 365 (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
   
-- **サインイン名 (ユーザー ID):** このユーザー ID は、すぐに開始するために、最初の Microsoft 365 メール アドレスになります。
+- **サインイン名 (ユーザー ID):** このユーザー ID は、Microsoft 365開始するために、最初のメール アドレスになります。
 
     このユーザー ID は、サインインに使用する電子メール アドレスです。 たとえば会社名が「Fourth Coffee」の場合には、ユーザー ID として rob@fourthcoffee.onmicrosoft.com を選ぶことができます。
 
@@ -137,4 +136,4 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (リンク)
+[Microsoft 365トレーニング ビデオの詳細 (](../../business-video/index.yml)リンク)

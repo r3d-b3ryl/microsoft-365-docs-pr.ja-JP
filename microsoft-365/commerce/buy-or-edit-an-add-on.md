@@ -14,21 +14,24 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: Microsoft 365 for business サブスクリプションのアドオンを購入および管理する方法について説明します。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: ビジネス サブスクリプション用のアドオンを購入および管理するMicrosoft 365を確認します。
+ms.date: 04/02/2021
+ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576927"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107438"
 ---
 # <a name="buy-or-manage-add-ons"></a>アドオンを購入するか、管理します
 
-多くの Microsoft 365 for business プランには、サブスクリプション用に購入できるアドオンがあります。 アドオンは、サブスクリプションエクスペリエンスを向上させるより多くの機能を提供します。
+ビジネス プランMicrosoft 365には、サブスクリプション用に購入できるアドオンが多数含されています。 アドオンは、サブスクリプションエクスペリエンスを向上させるより多くの機能を提供します。
 
 アドオンには次の 2 種類があります。
 
@@ -58,7 +61,7 @@ Skype for Business アドオンの詳細については、「[Skype for Business
 
 従来のアドオンを管理するには、それを含むサブスクリプションにアクセスし、そこに変更を加えます。 従来のアドオンを管理するには、次の手順を使用します。
   
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. [製品 **] タブ** で、更新するアドオンを含むサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの **[アドオン] セクションに** 、購入したアドオンが一覧表示されます。 [アドオン **の管理] を選択します**。
 4. [アドオン **の管理] ウィンドウ** の [アドオン] ドロップダウン リストから、変更するアドオンを選択します。

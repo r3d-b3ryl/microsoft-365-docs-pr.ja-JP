@@ -15,16 +15,19 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
-description: ビジネス向け Microsoft 365 の請求先住所を更新する方法について説明します。 請求通知の受信に使用するメール アドレスを更新することもできます。
-ms.openlocfilehash: 5d6e9eac3ef1caccb2672bfc7f46e8e5b9ac3721
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+description: ビジネス向けサービスの請求先住所を更新するMicrosoft 365を確認します。 請求通知の受信に使用するメール アドレスを更新することもできます。
+ms.date: 04/07/2021
+ms.openlocfilehash: ea212d79ef28d5d387bdb5503c267d7cd5113786
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615413"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107196"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
@@ -94,19 +97,19 @@ ms.locfileid: "51615413"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 
     中国の 21Vianet が運営する Office 365 を使用している場合は、「[21Vianet で運用されている Office 365 での請求書の表示または Fapiaos の取得](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)」を参照してください。
 
@@ -122,7 +125,7 @@ ms.locfileid: "51615413"
 
 既定では、組織の請求通知は Microsoft の電子メール アドレスと、組織内のすべてのグローバル管理者および請求管理者の代替メール アドレスに送信されます。 各管理者は、自身のプロファイル情報を更新することによって、連絡用メール アドレスを変更できます。
   
-1. 仕事または学校のアカウントをグローバル管理者として Microsoft 365 にサインインします。 [サインインする方法について説明します](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. グローバル管理者としてMicrosoft 365または学校のアカウントを使用してサインインします。[サインインする方法について説明します](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. [**ユーザー アイコン**] を選択し、[**マイ アカウント**] を選択します。
   

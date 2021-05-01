@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 12ff9834e2853c1745c20847f869bc2cba4e082e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934779"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114272"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 
@@ -49,13 +49,13 @@ ms.locfileid: "51934779"
 
 さらに、Ansible 展開では、Ansible 管理タスクを理解し、Ansible を構成し、プレイブックとタスクを展開する方法を理解する必要があります。 Ansible には、同じタスクを実行する多くの方法があります。 これらの手順では、パッケージの展開に役立つ *apt* や *unarchive* など、サポートされている Ansible モジュールの可用性を前提とします。 組織で別のワークフローを使用する場合があります。 詳細については [、Ansible のドキュメント](https://docs.ansible.com/) を参照してください。
 
-- Ansible は、少なくとも 1 つのコンピューターにインストールする必要があります (プライマリ コンピューターと呼ぶ)。
-- プライマリ コンピューターとすべてのクライアントの間で管理者アカウント用に SSH を構成する必要があります。公開キー認証を使用して構成する必要があります。
-- 次のソフトウェアをすべてのクライアントにインストールする必要があります。
+- Ansible は少なくとも 1 つのコンピューターにインストールする必要があります (Ansible はこれをコントロール ノードと呼び出します)。
+- コントロール ノードとすべての管理ノード (Defender for Endpoint がインストールされているデバイス) の間の管理者アカウント用に SSH を構成する必要があります。公開キー認証を使用して構成する必要があります。
+- 次のソフトウェアをすべての管理ノードにインストールする必要があります。
   - curl
   - python-apt
 
-- すべてのホストは、関連するファイルに次の形式 `/etc/ansible/hosts` で一覧表示する必要があります。
+- すべての管理ノードは、関連するファイルに次の形式 `/etc/ansible/hosts` で一覧表示する必要があります。
 
     ```bash
     [servers]
@@ -71,13 +71,13 @@ ms.locfileid: "51934779"
 
 ## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
 
-Microsoft Defender セキュリティ センターからオンボーディング パッケージをダウンロードします。
+次の方法でオンボーディング パッケージをMicrosoft Defender セキュリティ センター。
 
-1. Microsoft Defender セキュリティ センターで、[デバイス管理とオンボード **>設定>移動します**。
+1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
 2. 最初のドロップダウン メニューで、オペレーティング システム **として [Linux Server]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [優先する Linux 構成管理ツール** ] を選択します。
 3. [オンボード **パッケージのダウンロード] を選択します**。 ファイルを [ファイル名] WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender セキュリティ センターのスクリーンショット](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft Defender セキュリティ センタースクリーンショット](images/atp-portal-onboarding-linux-2.png)
 
 4. コマンド プロンプトから、ファイルが存在するように確認します。 アーカイブの内容を抽出します。
 

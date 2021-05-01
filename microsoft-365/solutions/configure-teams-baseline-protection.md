@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: db1a58fd06a62240cbcfcc74f83ba6196f33df80
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222745"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114296"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -96,7 +96,7 @@ Microsoft 365 は、コンテンツを保護するための追加の方法を提
 
 - ゲストを[使用条件](/azure/active-directory/conditional-access/terms-of-use)に同意させる。
 - ゲストに[セッション タイムアウト ポリシー](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を構成する。
-- [機密情報の種類](../compliance/sensitive-information-type-learn-about.md)を作成し、[データ損失防止](../compliance/data-loss-prevention-policies.md)を使用して、機密情報にアクセスするポリシーを設定する。
+- [機密情報の種類](../compliance/sensitive-information-type-learn-about.md)を作成し、[データ損失防止](../compliance/dlp-learn-about-dlp.md)を使用して、機密情報にアクセスするポリシーを設定する。
 
 ## <a name="see-also"></a>関連項目
 

@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターの Submits ポータルを使用して、疑わしいメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、ファイルを Microsoft に送信してスキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: d0b91808aa9008f467f66b8200f2c05a120fbcd9
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599877"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107232"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -35,7 +35,7 @@ ms.locfileid: "51599877"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
 
-Exchange Online のメールボックスを持つ Microsoft 365 組織では、管理者はセキュリティ & コンプライアンス センターの Submits ポータルを使用して、電子メール メッセージ、URL、添付ファイルをスキャンのために Microsoft に送信できます。
+Exchange Online のメールボックスを持つ組織では、管理者はセキュリティ & コンプライアンス センターの申請ポータルを使用して、電子メール メッセージ、URL、添付ファイルを Microsoft に送信してスキャンできます。 Microsoft 365
 
 電子メール メッセージを送信すると、次の情報が表示されます。
 
@@ -57,7 +57,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
   - **セキュリティ センター** の **組織の** 管理 [またはセキュリティ &リーダー](permissions-in-the-security-and-compliance-center.md)です。
 
-  - Exchange **Online の**[組織の管理](/Exchange/permissions-exo/permissions-exo#role-groups)。
+  - **[組織の** 管理] [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)。
 
     この記事で後述するように、カスタム メールボックスへの[](#view-user-submissions-to-the-custom-mailbox)ユーザー申請を表示するには、この役割グループのメンバーシップが必要です。
 
@@ -73,12 +73,12 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 1. [オブジェクトの **種類] セクションで** 、[メール] を **選択します**。 [提出 **形式] セクション** で、次のいずれかのオプションを使用します。
 
-   - **ネットワーク メッセージ ID**: これは、メッセージの **X-MS-Exchange-Organization-Network-Message-Id** ヘッダー、または検疫済みメッセージの **X-MS-Office365-Filtering-Correlation-Id** ヘッダーで使用できる GUID 値です。
+   - **ネットワーク** メッセージ ID : これは、メッセージの **X-MS-Exchange-Organization-Network-Message-Id** ヘッダー、または検疫済みメッセージの **X-MS-Office365-Filtering-Correlation-Id** ヘッダーで使用できる GUID 値です。
 
    - **ファイル**: [ファイルの **選択] をクリックします**。 開いたダイアログで、.eml ファイルまたは .msg ファイルを見つけて選択し、[開く] を **クリックします**。
 
    > [!NOTE]
-   > 30 日間の古いメッセージを送信する機能は、365 人のユーザーに対して Defender Office中断されています。 管理者は 7 日間だけ戻って行くことができます。
+   > 30 日という古いメッセージを送信する機能は、ユーザーのユーザーに対して Defender Office 365されています。 管理者は 7 日間だけ戻って行くことができます。
 
 2. [受信者 **] セクション** で、ポリシー チェックを実行する 1 つ以上の受信者を指定します。 ポリシー チェックは、ユーザーまたは組織のポリシーが原因で電子メールがスキャンをバイパスしたかどうかを判断します。
 
@@ -90,7 +90,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 4. 完了したら、[送信] ボタン **をクリック** します。
 
-   ![URL 申請の例](../../media/submission-flyout-email.PNG)
+   ![新しい URL 申請の例](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>疑わしい URL を Microsoft に送信する
 
@@ -104,7 +104,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 3. 完了したら、[送信] ボタン **をクリック** します。
 
-   ![電子メール送信の例](../../media/submission-url-flyout.png)
+   ![新しいメール送信の例](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>疑わしいファイルを Microsoft に提出する
 
@@ -120,7 +120,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 4. 完了したら、[送信] ボタン **をクリック** します。
 
-   ![添付ファイルの提出例](../../media/submission-file-flyout.PNG)
+   ![新しい添付ファイルの申請の例](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-items-submitted-for-analysis"></a>分析のために提出されたアイテムの表示
 
@@ -136,9 +136,9 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 - **申請の種類**
 - **状態**
 
-![管理者申請のフィルター オプション](../../media/admin-submission-email-filter-options.png)
+![管理者申請の新しいフィルター オプション](../../media/admin-submission-email-filter-options.png)
 
-結果をエクスポートするには、ページの上部 **にある [エクスポート** ] をクリックし、[グラフ データ] または [ **テーブル** ] を **選択します**。 表示されるダイアログで、.csv ファイルを保存します。
+結果をエクスポートするには、ページの上部 **にある [エクスポート** ] をクリックし、[グラフ データ] または [ **テーブル** ] を **選択します**。 表示されるダイアログで、ファイルを保存.csvします。
 
 グラフの下には、メール **(既定****)、URL、** 添付ファイルの 3 つのタブ **があります**。
 
@@ -148,7 +148,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューに列を追加または削除できます。
 
-- **日付**
+- **Date**
 - **申請 ID**: すべての申請に割り当てられている GUID 値。
 - **提出者**<sup>\*</sup>
 - **[件名]**<sup>\*</sup>
@@ -177,7 +177,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューに列を追加または削除できます。
 
-- **日付**
+- **Date**
 - **申請 ID**
 - **提出者**<sup>\*</sup>
 - [**URL**<sup>\*</sup>]
@@ -192,7 +192,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 ページの下部にある **[列のオプション** ] ボタンをクリックすると、ビューに列を追加または削除できます。
 
-- **日付**
+- **Date**
 - **申請 ID**
 - **提出者**<sup>\*</sup>
 - **ファイル名**<sup>\*</sup>
@@ -203,7 +203,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 ## <a name="view-user-submissions-to-microsoft"></a>Microsoft へのユーザー申請の表示
 
-レポート メッセージ アドイン、レポート[](enable-the-report-message-add-in.md)フィッシング アドイン、またはユーザー[](enable-the-report-phish-add-in.md)が[Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)で組み込みのレポートを使用している場合は、[ユーザーの申請] タブでユーザーが報告している情報を確認できます。
+レポート メッセージ アドイン、レポート[](enable-the-report-message-add-in.md)フィッシング アドイン、またはユーザー[](enable-the-report-phish-add-in.md)が web 上[の Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)で組み込みのレポートを使用している場合は、[ユーザーの申請] タブでユーザーが報告している情報を確認できます。
 
 1. セキュリティ 管理コンプライアンス センター&、脅威管理 **の申請に** \> **移動します**。
 
@@ -225,14 +225,14 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 フィルター条件を変更するには、[送信者] ボタン **を** クリックし、次のいずれかの値を選択します。
 
 - **送信元ドメイン**
-- **[件名]**
+- **Subject**
 - **提出者**
 - **申請の種類**
 - [**Sender IP (送信者の IP)**]
 
-![ユーザー申請のフィルター オプション](../../media/user-submissions-filter-options.png)
+![ユーザー申請の新しいフィルター オプション](../../media/user-submissions-filter-options.png)
 
-結果をエクスポートするには、ページの上部 **にある [エクスポート** ] をクリックし、[グラフ データ] または [ **テーブル** ] を **選択します**。 表示されるダイアログで、.csv ファイルを保存します。
+結果をエクスポートするには、ページの上部 **にある [エクスポート** ] をクリックし、[グラフ データ] または [ **テーブル** ] を **選択します**。 表示されるダイアログで、ファイルを保存.csvします。
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>カスタム メールボックスへのユーザー申請の表示
 
@@ -253,7 +253,7 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 ページの上部の近くに開始日、終了日を入力し、ボックスに値を入力し、[更新]ボタンをクリックして[送信済み] でフィルター ![ 処理できます ](../../media/scc-quarantine-refresh.png) 。 Update
 
-結果をエクスポートするには、ページの上部 **にある [エクスポート** ] をクリックし、[グラフ データ] または [ **テーブル** ] を **選択します**。 表示されるダイアログで、.csv ファイルを保存します。
+結果をエクスポートするには、ページの上部 **にある [エクスポート** ] をクリックし、[グラフ データ] または [ **テーブル** ] を **選択します**。 表示されるダイアログで、ファイルを保存.csvします。
 
 > [!NOTE]
 > 組織がカスタム メールボックスにのみ送信するように構成されている場合、報告されたメッセージは再スキャンのために送信されません。ユーザーレポートメッセージ ポータルの結果は常に空になります。
@@ -266,11 +266,11 @@ Exchange Online のメールボックスを持つ Microsoft 365 組織では、�
 
 Microsoft にメッセージを送信せずにユーザーが報告したメッセージを傍受するようにカスタム メールボックスを構成している場合は、特定のメッセージを見つけて分析のために Microsoft に送信できます。 これにより、ユーザーの申請が管理者申請に効果的に移動されます。
 
-[カスタム **メールボックス] タブ** で、一覧でメッセージを選択し、[アクション] ボタンをクリックして、次のいずれかの選択を行います。
+[ユーザー **が報告したメッセージ**] タブで、一覧でメッセージを選択し、[アクション] ボタンをクリックして、次のいずれかの選択を行います。
 
 - **クリーンレポート**
 - **フィッシングの報告**
 - **マルウェアの報告**
 - **スパムを報告する**
 
-![[操作] ボタンのオプション](../../media/user-submission-custom-mailbox-action-button.png)
+![[アクション] ボタンの [新しいオプション]](../../media/user-submission-custom-mailbox-action-button.png)

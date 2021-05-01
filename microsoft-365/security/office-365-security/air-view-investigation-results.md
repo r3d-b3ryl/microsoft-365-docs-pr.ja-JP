@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 での自動調査の結果を表示する
+title: '[自動調査の結果を表示する] をクリックMicrosoft 365'
 keywords: AIR、autoIR、Microsoft Defender for Endpoint、自動化、調査、修復、アクション
 f1.keywords:
 - NOCSH
@@ -15,27 +15,27 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft 365 の自動調査中および後に、結果と主要な結果を表示できます。
+description: ワークフローの自動調査中およびMicrosoft 365結果と主要な結果を表示できます。
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ebdd25e9bddf53682f747fff7477d49dd1c94755
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b6ec188f37faeed283d49f68b0cb381fcb1af86e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933495"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114206"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 での自動調査の詳細と結果
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>自動調査の詳細と結果Microsoft 365
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender [for](office-365-air.md) Office [365](defender-for-office-365.md)で自動調査が行われる場合、その調査に関する詳細は、自動調査プロセスの中および後で利用できます。 必要なアクセス許可がある場合は、Microsoft 365 セキュリティ センターでこれらの詳細を表示できます。 調査の詳細は、最新の状態と、保留中のアクションを承認する機能を提供します。
+Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[われる場合、](defender-for-office-365.md)その調査に関する詳細は、自動調査プロセス中および自動調査後に利用できます。 必要なアクセス許可がある場合は、セキュリティ センターでこれらの詳細Microsoft 365表示できます。 調査の詳細は、最新の状態と、保留中のアクションを承認する機能を提供します。
 
 > [!TIP]
-> Microsoft 365 セキュリティ センターの新しい統合調査ページをご覧ください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
+> セキュリティ センターの新しい統合調査ページMicrosoft 365確認してください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
 
 ## <a name="investigation-status"></a>調査の状態
 
@@ -46,7 +46,7 @@ Microsoft Defender [for](office-365-air.md) Office [365](defender-for-office-365
 |**開始中**|調査がトリガーされ、実行の開始を待っています。|
 |**実行中**|調査プロセスが開始され、進行中です。 この状態は、保留中の [アクションが承認された場合](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) にも発生します。|
 |**脅威が見つかりません**|調査が完了し、脅威 (ユーザー アカウント、電子メール メッセージ、URL、またはファイル) が特定されていない。 <p> **ヒント**: 何かが見つからないと思われる場合 (偽陰性など)、Threat Explorer を使用して [アクションを実行できます](threat-explorer.md)。|
-|**脅威が検出されました**|自動調査で問題が見つかりましたが、これらの問題を解決するための特定の修復アクションはありません。 <p> 脅威 **が見つかった状態** は、何らかの種類のユーザー アクティビティが特定されたが、クリーンアップアクションが利用できない場合に発生する可能性があります。 例としては、次のユーザー アクティビティが含まれます。 <br/>- データ [損失防止](../../compliance/data-loss-prevention-policies.md) (DLP) イベント<br/>- 異常を送信する電子メール<br/>- 送信されたマルウェア<br/>- 送信されたフィッシング <p> 調査では、修復する悪意のある URL、ファイル、または電子メール メッセージが見つかりませんでした。また、転送ルールや委任をオフにするなどのメールボックスアクティビティも修正されませんでした。 <p> **ヒント**: 何かが見つからない (偽陰性など) 疑われる場合は、Threat Explorer を使用して調査して [アクションを実行できます](threat-explorer.md)。|
+|**脅威が検出されました**|自動調査で問題が見つかりましたが、これらの問題を解決するための特定の修復アクションはありません。 <p> 脅威 **が見つかった状態** は、何らかの種類のユーザー アクティビティが特定されたが、クリーンアップアクションが利用できない場合に発生する可能性があります。 例としては、次のユーザー アクティビティが含まれます。 <br/>- データ [損失防止](../../compliance/dlp-learn-about-dlp.md) イベント<br/>- 異常を送信する電子メール<br/>- 送信されたマルウェア<br/>- 送信されたフィッシング <p> 調査では、修復する悪意のある URL、ファイル、または電子メール メッセージが見つかりませんでした。また、転送ルールや委任をオフにするなどのメールボックスアクティビティも修正されませんでした。 <p> **ヒント**: 何かが見つからない (偽陰性など) 疑われる場合は、Threat Explorer を使用して調査して [アクションを実行できます](threat-explorer.md)。|
 |**システムによって終了**|調査が停止しました。 調査は、いくつかの理由で停止する可能性があります。 <br/>- 調査の保留中のアクションの有効期限が切れています。 保留中のアクションは、承認を 1 週間待った後にタイム アウトします。<br/>- アクションが多すぎます。 たとえば、悪意のある URL をクリックするユーザーが多すぎると、すべてのアナライザーを実行する調査の機能を超える可能性があります。そのため、調査は停止します。<p> **ヒント**: アクションが実行される前に調査が停止した場合は [、Threat Explorer](threat-explorer.md) を使用して脅威を見つけて対処してみてください。|
 |**保留中のアクション**|調査では、悪意のある電子メール、悪意のある URL、危険なメールボックス設定などの脅威、および承認を待っている脅威を修復するアクションが [検出されました](air-review-approve-pending-completed-actions.md)。 <p> 保留中 **のアクション状態は** 、対応するアクションを持つ脅威が見つかったときにトリガーされます。 ただし、保留中のアクションの一覧は、調査の実行に合って増加する可能性があります。 調査の詳細を表示して、他のアイテムがまだ保留中の完了を確認します。|
 |**修復済み**|調査が完了し、すべての修復アクションが承認されました (完全に修復されたと示されています)。 <p> **メモ**: 承認済みの修復アクションには、アクションが実行されるのを妨げるエラーが発生する可能性があります。 修復アクションが正常に完了したかどうかに関係なく、調査の状態は変更されません。 調査の詳細を表示します。|
@@ -58,7 +58,7 @@ Microsoft Defender [for](office-365-air.md) Office [365](defender-for-office-365
 
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 
-1. Microsoft 365 セキュリティ センター ( ) に移動し <https://security.microsoft.com> 、サインインします。
+1. セキュリティ センター ( ) Microsoft 365に移動し <https://security.microsoft.com> 、サインインします。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中] **タブまたは [履歴** ] **タブで** 、アクションを選択します。 そのフライアウト ウィンドウが開きます。
 4. フライアウト ウィンドウで、[調査ページを開 **く] を選択します**。 
@@ -66,9 +66,9 @@ Microsoft Defender [for](office-365-air.md) Office [365](defender-for-office-365
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>調査に関連するアラートの詳細を表示する
 
-特定の種類のアラートは、Microsoft 365 で自動調査をトリガーします。 詳細については、「自動調査 [をトリガーするアラート ポリシー」を参照してください](office-365-air.md#which-alert-policies-trigger-automated-investigations)。
+特定の種類のアラートは、自動調査をトリガー Microsoft 365。 詳細については、「自動調査 [をトリガーするアラート ポリシー」を参照してください](office-365-air.md#which-alert-policies-trigger-automated-investigations)。
 
-1. Microsoft 365 セキュリティ センター ( ) に移動し <https://security.microsoft.com> 、サインインします。
+1. セキュリティ センター ( ) Microsoft 365に移動し <https://security.microsoft.com> 、サインインします。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中] **タブまたは [履歴** ] **タブで** 、アクションを選択します。 そのフライアウト ウィンドウが開きます。
 4. フライアウト ウィンドウで、[調査ページを開 **く] を選択します**。 
@@ -83,7 +83,7 @@ Microsoft Defender [for](office-365-air.md) Office [365](defender-for-office-365
 
 - 電子メール クラスターのフライアウトの[電子メール] タブの下部に表示される電子メール数と、エクスプローラーに表示される電子メール メッセージの数は、調査の最初の分析後に受信した電子メール メッセージを反映します。
 
-  したがって、元の数が 10 個の電子メール メッセージを示す電子メール クラスターは、調査分析フェーズと管理者が調査をレビューする間に、さらに 5 つの電子メール メッセージが到着すると、合計 15 の電子メール リストを表示します。 同様に、Office 365 プラン 2 の Microsoft Defender のデータは、試用版で 7 日後、有料ライセンスの場合は 30 日後に期限切れになるので、古い調査ではエクスプローラー クエリが示す数よりも多く表示され始める可能性があります。
+  したがって、元の数が 10 個の電子メール メッセージを示す電子メール クラスターは、調査分析フェーズと管理者が調査をレビューする間に、さらに 5 つの電子メール メッセージが到着すると、合計 15 の電子メール リストを表示します。 同様に、Office 365 プラン 2 の Microsoft Defender のデータは、試用版で 7 日後、有料ライセンスの場合は 30 日後に期限切れになるため、古い調査ではエクスプローラー クエリが表示する数よりも多く表示され始める可能性があります。
 
   調査時のメールの影響と、修復が実行されるまでの現在の影響を示すために、さまざまなビューでカウント履歴と現在のカウントの両方を表示します。
 

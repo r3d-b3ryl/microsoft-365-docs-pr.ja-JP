@@ -14,17 +14,20 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: Microsoft 製品またはサービスを購入する際の登録番号とレビュー中の通知について説明します。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: drjones
+description: Microsoft 製品またはサービスを購入する際の登録番号とレビュー中の通知について説明します。
+ms.date: 03/17/2021
+ms.openlocfilehash: 25302ce9481fba146d4fcda5fe72c31b5126fd08
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930235"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107402"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>登録番号とレビュー中の通知について
 

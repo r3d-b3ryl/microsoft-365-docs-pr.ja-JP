@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 グループ、Teams、および SharePoint コラボレーションのコンプライアンス オプション
+title: グループ、グループ、Microsoft 365、およびTeamsのコンプライアンス SharePointオプション
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,31 +14,31 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Microsoft 365 グループ、Teams、および SharePoint コラボレーションのコンプライアンス オプションについて説明します。
-ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+description: グループ、グループ、グループMicrosoft 365、およびTeamsのコンプライアンス オプションSharePointします。
+ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899354"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114030"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 グループ、Teams、および SharePoint コラボレーションのコンプライアンス オプション
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>グループ、グループ、Microsoft 365、およびTeamsのコンプライアンス SharePointオプション
 
-Microsoft 365 には、ユーザーの共同作業に合ったコンプライアンスを維持するためのツールが用意されています。 これらのオプションを確認し、ビジネス ニーズ、データの感度、ユーザーが共同作業に必要なユーザーの範囲にマップする方法を検討します。
+Microsoft 365共同作業時にコンプライアンスを維持するためのツールの完全なスイートを提供しています。 これらのオプションを確認し、ビジネス ニーズ、データの感度、ユーザーが共同作業に必要なユーザーの範囲にマップする方法を検討します。
 
-次の表に、Microsoft 365 で使用できるコンプライアンスコントロールのクイック リファレンスを示します。 詳細については、次のセクションで説明します。
+次の表に、コンプライアンス コントロールのクイック リファレンスを示します。Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|Reference|
+|カテゴリ|説明|参照|
 |:-------|:----------|:--------|
 |情報の保持|||
-||グループ メールと SharePoint コンテンツを保持する|[SharePoint と OneDrive のアイテム保持ポリシーの詳細](../compliance/retention-policies-sharepoint.md)|
+||グループのメールとコンテンツSharePoint保持する|[SharePoint と OneDrive のアイテム保持ポリシーの詳細](../compliance/retention-policies-sharepoint.md)|
 ||チャットとメッセージを保持する|[Microsoft Teams のアイテム保持ポリシーの詳細](../compliance/retention-policies-teams.md)|
 |情報の分類|||
 ||グループとチームを分類する|[秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||機密コンテンツを自動的に分類する|[秘密度ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)|
 ||機密性の高いコンテンツを暗号化する|[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)|
 |情報保護|||
-||機密情報の損失を防止する|[データ損失防止の概要](../compliance/data-loss-prevention-policies.md)|
+||機密情報の損失を防止する|[データ損失防止の詳細](../compliance/dlp-learn-about-dlp.md)|
 ||チャット内の機密情報を保護します。|[データ損失防止と Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||組織の機密情報を定義する|[カスタムの機密情報の種類](../compliance/sensitive-information-type-learn-about.md)|
 |ユーザーのセグメント化|||
@@ -48,11 +48,11 @@ Microsoft 365 には、ユーザーの共同作業に合ったコンプライア
 
 アイテム保持ポリシーを使用すると、グループやチームでの共同作業に使用されるアイテム (ファイル、メッセージ、メールなど) を保持または削除できます。 ポリシーは、保持と削除、保持のみ、または削除専用に設定できます。 アイテム保持ポリシーの対象となる情報は、グループまたはチームの有効期限が切れた場合、または削除された場合に保護されます。
 
-Microsoft 365 グループのアイテム保持ポリシーを構成するには、グループ メールボックスと、関連付けられた SharePoint サイトとファイルについて説明します。
+グループ グループのアイテム保持ポリシー Microsoft 365、グループ メールボックスと関連付けられているサイトとSharePointをカバーします。
 
 - [SharePoint と OneDrive のアイテム保持ポリシーの詳細](../compliance/retention-policies-sharepoint.md)
 
-Teams のアイテム保持ポリシーでは、チャット メッセージとチャネル メッセージが保持されます。 チャット メッセージとチャネル メッセージは Exchange メールボックスに格納されますが、Exchange アイテム保持ポリシーの影響を受け取る必要があります。 Teams チャットおよび Teams チャネル メッセージに適用するアイテム保持ポリシーを設定する必要があります。 
+チャットおよびチャネル メッセージTeams保持するアイテム保持ポリシー。 チャット メッセージとチャネル メッセージは、Exchangeメールボックスに保存されます。チャット メッセージとチャネル メッセージは、Exchange影響を受け取る必要があります。 アイテム保持ポリシーを設定して、チャットやチャネル メッセージTeams適用Teams必要があります。 
 
 ユーザー アカウントが削除された場合でも、ユーザー チャットは無期限に保持されます。 このデータを無期限に保持しない場合は、保持ポリシーを使用して、指定した時間後にユーザー チャットを削除するか、この削除をユーザー削除プロセスに含めるか検討してください。
 
@@ -60,13 +60,13 @@ Teams のアイテム保持ポリシーでは、チャット メッセージと�
 
 - [Microsoft Teams のアイテム保持ポリシー](/microsoftteams/retention-policies)
 
-1 つのアイテム保持ポリシーを設定して、Teams チャットメッセージと Teams チャネル メッセージに適用できます。 
+1 つのアイテム保持ポリシーを設定して、チャットやチャネル TeamsメッセージTeams適用できます。 
 
 追加情報:
 
 - [アイテム保持ポリシーの詳細を見る](../compliance/retention.md)
 
-- Exchange[での保持タグと保持](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)ポリシー
+- [アイテム保持タグとアイテム保持](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)ポリシー Exchange
 
 ## <a name="information-classification"></a>情報の分類
 
@@ -74,7 +74,7 @@ Teams のアイテム保持ポリシーでは、チャット メッセージと�
 
 - [秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)
 
-Microsoft 365 は、指定した条件に基づいてファイルや電子メールに機密ラベルを自動適用する構成 (機密情報の種類の検出やトレーニング可能な分類子とのパターンマッチングなど) を構成できます。
+機密情報の種類の検出やトレーニング可能な分類子とのパターンマッチングなど、指定した条件に基づいてファイルや電子メールに機密ラベルを自動適用する Microsoft 365 を構成できます。
 
 - [秘密度ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)
 
@@ -91,11 +91,11 @@ Microsoft 365 は、指定した条件に基づいてファイルや電子メー
 
 ## <a name="information-protection"></a>情報保護
 
-DLP ポリシーを使用すると、SharePoint、Exchange、Teams 間で機密情報が偶発的に共有されるのを防ぐ可能性があります。 一連のルールに基づいて実行するアクション (アクセスのブロックなど) を指定するポリシーを作成できます。
+DLP ポリシーを使用すると、ユーザー、およびユーザー間でSharePoint情報Exchange共有Teams。 一連のルールに基づいて実行するアクション (アクセスのブロックなど) を指定するポリシーを作成できます。
 
-- [データ損失防止の概要](../compliance/data-loss-prevention-policies.md)
+- [データ損失防止の詳細](../compliance/dlp-learn-about-dlp.md)
 
-Teams の DLP は、機密情報を含むメッセージを削除することで、Teams チャットおよびチャネル メッセージの機密情報を保護するのに役立ちます。
+このページTeams DLP は、機密情報を含むTeamsを削除することで、チャットおよびチャネル メッセージの機密情報を保護するのに役立ちます。
 
 - [データ損失防止と Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
@@ -111,7 +111,7 @@ Teams の DLP は、機密情報を含むメッセージを削除することで
 
 - [Microsoft Teams の情報バリア](/microsoftteams/information-barriers-in-teams)
 
-- [SharePoint で情報バリアを使用する](/sharepoint/information-barriers)
+- [情報バリアを使用してSharePoint](/sharepoint/information-barriers)
 
 ## <a name="related-topics"></a>関連項目
 
@@ -119,6 +119,6 @@ Teams の DLP は、機密情報を含むメッセージを削除することで
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 
-[Exchange Online のセキュリティとコンプライアンス](/exchange/security-and-compliance/security-and-compliance)
+[セキュリティとコンプライアンスのExchange Online](/exchange/security-and-compliance/security-and-compliance)
 
 [情報を保護する](../compliance/information-protection.md)

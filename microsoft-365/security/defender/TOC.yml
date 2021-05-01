@@ -100,6 +100,24 @@
                   href: investigate-alerts.md
                 - name: ユーザーを分析する
                   href: investigate-users.md
+                - name: 最初のインシデントに対応する
+                  items:
+                    - name: はじめに
+                      href: first-incident-overview.md
+                    - name: 準備
+                      href: first-incident-prepare.md
+                    - name: 手順 1. トリアージと分析
+                      href: first-incident-analyze.md
+                    - name: 手順 2. 修復する
+                      href: first-incident-remediate.md
+                    - name: 手順 3. 確認
+                      href: first-incident-post.md
+                    - name: その他のインシデントの例
+                      items:
+                        - name: フィッシング詐欺メール
+                          href: first-incident-path-phishing.md
+                        - name: ID
+                          href: first-incident-path-identity.md
             - name: メール通知を取得する
               href: get-incident-notifications.md
         - name: 自動調査および対応

@@ -1,5 +1,5 @@
 ---
-title: メキシコでのビジネス向け Microsoft 365 の請求情報
+title: メキシコのビジネスMicrosoft 365請求情報
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,56 +12,58 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
 search.appverid:
 - MET150
-description: 特に、メキシコでのビジネス向け Microsoft 365 に関する情報について説明します。
+description: メキシコのビジネス向けMicrosoft 365情報について説明します。
 ms.custom:
 - AdminSurgePortfolio
-- Commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jkinma
 monikerRange: o365-worldwide
-ms.openlocfilehash: ea6a60d205c7fbe91b35b22b7ec7b3ee51715444
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.date: 11/20/2020
+ms.openlocfilehash: ace8712718dc960f846bd366c8e8dbb7b074f428
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376295"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107184"
 ---
-# <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>メキシコでのビジネス向け Microsoft 365 の請求情報
+# <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>メキシコのビジネスMicrosoft 365請求情報
 
-## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. Microsoft 365 for business の購入に関する請求書はどこで入手できますか?
+## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. ビジネス購入の請求書はどこでMicrosoft 365受け取れるのですか?
 
-請求書は、購入が確認された24時間後に、登録されている請求通知の電子メールアドレスに送信されます。 Microsoft 365 管理センターで請求書をダウンロードする **には、** 請求書  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& の支払い</a>ページに移動します。
+請求書は、購入が確認された 24 時間後に、登録された請求通知メール アドレスに送信されます。 管理センターで請求書をダウンロードするにはMicrosoft 365支払いページの [請求請求書]  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">&移動</a>します。
 
 > [!IMPORTANT]
-> 請求書に RFC を含める場合は、購入の確認の前に追加する必要があります。
+> 請求書に RFC を含める場合は、購入確認の前に追加する必要があります。
 
-## <a name="2-how-can-i-add-my-rfc-registro-federal-de-contribuyentes-to-the-invoice-i-get-for-the-purchase-of-microsoft-365-for-business"></a>2. Microsoft 365 for business を購入したときに取得した請求書に RFC (Registro 連邦 de Contribuyentes) を追加するにはどうすればよいですか?
+## <a name="2-how-can-i-add-my-rfc-registro-federal-de-contribuyentes-to-the-invoice-i-get-for-the-purchase-of-microsoft-365-for-business"></a>2. RFC (Registro Federal de Contribuyentes) をビジネス向けサービスの購入に関して取得する請求書にMicrosoft 365できますか?
 
-### <a name="during-the-purchase-process-checkout"></a>購入プロセス (チェックアウト)
+### <a name="during-the-purchase-process-checkout"></a>購入プロセス中 (チェックアウト)
 
-支払いの購入プロセスで、手順4に進み **ます。[支払いと請求**] で、RFC を入力するためのボックスを選択します。 この手順は、購入請求書に反映されていることを確認するために必要です。
+チェックアウトの購入プロセス中に、手順 **4 に進みます。[支払と請求**] で、RFC を入力するボックスを選択します。 この手順は、購入請求書に反映されているのを確認するために必要です。
 
-### <a name="for-your-future-purchases"></a>今後の購入
+### <a name="for-your-future-purchases"></a>将来の購入に関して
 
-RFC を追加または変更して、Microsoft 365 for business の購入に関する情報が反映されるようにすることができます。 RFC を追加または変更するには、 **[課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">アカウント</a>] ページに移動します。
+RFC を追加または変更して、ビジネスの購入に関する情報が将来のMicrosoft 365反映するようにすることができます。 RFC を追加または変更するには、[課金アカウント]  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">ページに移動</a>します。
 
 > [!NOTE]
-> 月次または年ごとの課金のサブスクリプションの場合、RFC の追加または変更は、次の請求書に反映されます。
+> 月次または年次の繰り返し請求サブスクリプションを使用している場合、RFC の追加または変更は、次の請求の請求書に反映されます。
 
-## <a name="3-can-i-add-or-modify-my-rfc-to-an-invoice-that-was-already-generated"></a>3. 既に生成された請求書に対して、自分の RFC を追加または変更できますか?
+## <a name="3-can-i-add-or-modify-my-rfc-to-an-invoice-that-was-already-generated"></a>3. 既に生成された請求書に RFC を追加または変更できますか?
 
-購入を行う前に、RFC を追加または変更することが重要です。 Microsoft 365 for business の請求書を生成した後、RFC 情報を追加または変更することはできません。
+購入する前に RFC を追加または変更することが重要です。 ビジネス用請求書のMicrosoft 365した後、RFC 情報を追加または変更できます。
 
-## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. CFDI (Comprobante 会計デジタル por はインターネット) を取得できませんか?
+## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. CFDI (Comprobante Fiscal Digital por Internet) を取得しない理由
 
-米国で米国の税に居住している Microsoft Corporation は、管轄区の法律に準拠した請求書のみを発行でき、CFDI 電子請求書を提供する義務はありません。
+Microsoft Corporation は、米国の税居住者として、管轄法に基く請求書を発行することしかできないので、CFDI 電子請求書を提供する義務を負う必要があります。
 
-## <a name="5-is-the-invoice-i-receive-valid-for-my-accounting-operations-in-mexico"></a>5. メキシコの経理業務では、請求書は有効ですか?
+## <a name="5-is-the-invoice-i-receive-valid-for-my-accounting-operations-in-mexico"></a>5. 受け取った請求書は、メキシコでの会計業務に有効ですか?
 
-各 RFC を含む外部エンティティ (この場合は Microsoft Corporation) によって生成された請求書は、メキシコの税のために有効です。 (詳細については、accountant に相談することをお勧めします)。
+それぞれの RFC を含む外部エンティティ (この場合は Microsoft Corporation) によって生成された請求書は、メキシコの税目的で有効です。 (詳細については、会計士に相談することをお勧めします)。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-請求[書または請求書を表示する](view-your-bill-or-invoice.md)(記事) \
-[Microsoft 365 for business の請求書または請求書を理解](understand-your-invoice2.md) する (記事)
+[課金内容または請求書を表示する](view-your-bill-or-invoice.md) (article)\
+[ビジネス向け請求書または請求書をMicrosoft 365する](understand-your-invoice2.md)(記事)
