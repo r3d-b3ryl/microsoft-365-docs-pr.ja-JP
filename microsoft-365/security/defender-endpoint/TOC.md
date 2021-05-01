@@ -647,6 +647,6 @@
 ##### [攻撃面の減少ルール](troubleshoot-asr.md)
 ##### [攻撃面の減少ルールに以降する](migrating-asr-rules.md)
 
-# [Microsoft 365 Defender](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)
 # [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
