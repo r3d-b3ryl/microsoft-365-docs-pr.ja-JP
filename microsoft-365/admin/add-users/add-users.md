@@ -12,46 +12,65 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365_Setup
-- Adm_O365_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-- manage_licenses
 search.appverid:
 - MET150
 description: ユーザーを追加して、同時に Microsoft 365 にライセンスを割り当てる方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 97b7118f4052d4ab4e0ffe8ecec96f32e4042108
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 6a1361d9cfebd2b305a71248fcbb461d0a68a052
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024015"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107088"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して同時にライセンスを割り当てる
 
-[一般法人向け Microsoft 365](https://www.microsoft.com/microsoft-365/business) にサインインしてアクセスする前に、チームの各ユーザーにはユーザー アカウントが必要です。 ユーザー アカウントを追加する最も簡単な方法は、Microsoft 365 管理センターで 1 人ずつ追加する方法です。 この手順を実行すると、Microsoft 365 ライセンス、サインイン用の資格情報、および Microsoft 365 メールボックスがユーザーに付与されます。
+チームのメンバーそれぞれに、[一般法人向け Microsoft 365](https://www.microsoft.com/microsoft-365/business) にサインインしてアクセスするためのユーザー アカウントが必要です。ユーザー アカウントを追加する最も簡単な方法は、Microsoft 365 管理センターで 1 人ずつ追加することです。この作業が完了すると、ユーザーに Microsoft 365 のライセンス、サインイン資格情報、および Microsoft 365 メールボックスが与えられます。
 
 ## <a name="before-you-begin"></a>開始する前に
 
 ユーザーを追加してライセンスを割り当てるには、グローバル管理者、ライセンス管理者、またはユーザー管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
-## <a name="watch-add-users-in-the-admin-center"></a>視聴: 管理センターでユーザーを追加する
+## <a name="add-a-user-in-the-admin-simplified-view"></a>管理者簡易ビューでユーザーを追加する
+
+管理センターにこのページが表示されている場合は、**管理者簡易ビュー** が表示されています。 以下の手順に従って、ユーザーを追加します。
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="スクリーンショット: 簡易管理センター ビュー":::
+
+1. <https://admin.microsoft.com> で管理センターに移動します。
+2. [**別のユーザーのアカウントを作成する**] を選択します。
+3. [**ユーザー アカウントの追加**] ページで、サインインに使用する姓名、表示名、ユーザー名を入力します。
+4. [**最大 5 つのメール アドレス...**] テキスト ボックスにユーザーのメール アドレスを追加します。 これにより、新しいユーザーは Microsoft 365 サービスにサインインするために必要な情報を確実に取得できます。
+5. この情報を保存する場合は、[**ユーザーの追加**] と [**サインイン情報のダウンロード**] を選択します。
+
+## <a name="watch-add-users-in-the-dashboard-view"></a>視聴: ダッシュボード ビューでユーザーを追加する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 > [!NOTE]
 > 動画で使用されている手順では、ユーザーを追加するための出発点が異なっていますが、残りの手順は以下の手順と同じです。
 
-## <a name="add-users-one-at-a-time"></a>ユーザーを 1 人ずつ追加する
+## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>ダッシュボード ビューで 1 人ずつユーザーを追加する
 
  ::: moniker range="o365-worldwide"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
+:::image type="content" source="../../media/classic-admin-center.png" alt-text="スクリーンショット: 管理センターのダッシュボード ビュー":::
 
-::: moniker-end
+1. <https://admin.microsoft.com> で管理センターに移動します。
+2. [**ユーザー**] > [**アクティブなユーザー**] の順に移動し、[**ユーザーの追加**] を選択します。
+3. [**基本設定**] ウィンドウにユーザーの基本情報を入力し、[**次へ**] を選択します。
+    - [**名前**] 姓、名、表示名、ユーザー名を入力します。
+    - [**ドメイン**] ユーザーのアカウントのドメインを選択します。たとえば、ユーザー名が Jakob、そのドメインが contoso.com の場合、「jakob@contoso.com」と入力してサインインします。
+    - [**パスワードの設定**] ユーザー用のパスワードとして、自動生成されたパスワードを使用するのか独自の強力なパスワードを作成するのかを選択します。
+    - ユーザーは、90 日後にパスワードを変更する必要があります。または、[**初回サインイン時にこのユーザーにパスワードの変更を要求する**] を選択することもできます。
+    - ユーザーが追加されたときに、パスワードをメールで送信するかどうかを選択します。
+4. [**製品ライセンスの割り当て**] ウィンドウで、ユーザーの場所と適切なライセンスを選択します。 利用可能なライセンスがない場合でも、ユーザーを追加し、追加のライセンスを購入できます。 [**アプリ**] を展開し、アプリを選択または選択解除して、ユーザーにライセンスが付与されるアプリを制限します。 [**次へ**] を選択します。
+5. [**オプションの設定**] ウィンドウで、このユーザーを管理者にする場合は [**役割**] を展開します。ユーザーに関する追加情報を入力する場合は、[**プロファイル情報**] を展開します。
+6. [**次へ**] を選択し、新しいユーザーの設定を確認し、必要に応じて変更を行い、[**追加の完了**] を選択し、**[閉じる]** をクリックします。
 
-::: moniker range="o365-germany"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> から管理センターにアクセスします。
 
@@ -66,9 +85,9 @@ ms.locfileid: "52024015"
 2. [**ユーザー**]  >  [**アクティブなユーザー**] の順に移動し、[**ユーザーの追加**] を選択します。
 3. [**基本設定**] ウィンドウにユーザーの基本情報を入力し、[**次へ**] を選択します。
     - [**名前**] 姓、名、表示名、ユーザー名を入力します。
-    - [**ドメイン**] ユーザーのアカウントのドメインを選びます。 たとえば、ユーザー名が Jakob、そのドメインが contoso.com の場合、「jakob@contoso.com」と入力してサインインします。
+    - [**ドメイン**] ユーザーのアカウントのドメインを選択します。たとえば、ユーザー名が Jakob、そのドメインが contoso.com の場合、「jakob@contoso.com」と入力してサインインします。
     - [**パスワードの設定**] ユーザー用のパスワードとして、自動生成されたパスワードを使用するのか独自の強力なパスワードを作成するのかを選択します。
-    - ユーザーは 90 日後にパスワードを変更する必要があります。 または、[**初回サインイン時にこのユーザーにパスワードの変更を要求する**] を選択することもできます。
+    - ユーザーは、90 日後にパスワードを変更する必要があります。または、[**初回サインイン時にこのユーザーにパスワードの変更を要求する**] を選択することもできます。
     - ユーザーが追加されたときに、パスワードをメールで送信するかどうかを選択します。
 4. [**製品ライセンスの割り当て**] ウィンドウで、ユーザーの場所と適切なライセンスを選択します。 利用可能なライセンスがない場合でも、ユーザーを追加し、追加のライセンスを購入できます。 [**アプリ**] を展開し、アプリを選択または選択解除して、ユーザーにライセンスが付与されるアプリを制限します。 [**次へ**] を選択します。
 5. [**オプションの設定**] ウィンドウで、このユーザーを管理者にする場合は [**役割**] を展開します。ユーザーに関する追加情報を入力する場合は、[**プロファイル情報**] を展開します。
@@ -79,8 +98,8 @@ ms.locfileid: "52024015"
 複数のユーザーを同時に追加するには、次のいずれかの方法を使用します。
 
 - **ユーザーをまとめて追加するには、スプレッドシートを使用します。** 「[同時に複数のユーザーを追加する](../../enterprise/add-several-users-at-the-same-time.md)」を参照してください。
-- **アカウントの追加とライセンスの割り当てを自動化します。** 「[Microsoft 365 の PowerShell を使用してユーザー アカウントを作成する](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md)」を参照してください。 この方法は、Windows PowerShell コマンドレットについて詳しい知識のある場合に選んでください。
-- **ActiveDirectory を使用する場合** [Microsoft 365 のディレクトリ同期をセットアップ](../../enterprise/set-up-directory-synchronization.md)します。 Azure AD Connect ツールを使用し、Microsoft 365 で Active Directory ユーザー アカウント (およびその他の Active Directory オブジェクト) を複製します。 同期では、ユーザー アカウントのみが追加されます。 同期されているユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。
+- **アカウントの追加とライセンスの割り当てを自動化します。** 「[Microsoft 365 PowerShell を使用したユーザー アカウントの作成](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md)」を参照してください。この方法は、Windows PowerShell コマンドレットについて詳しい知識のある場合に選んでください。
+- **ActiveDirectory を使用している場合** [Microsoft 365 のディレクトリ同期を設定します](../../enterprise/set-up-directory-synchronization.md)。Azure AD Connect ツールを使用し、Microsoft 365 で Active Directory ユーザー アカウント (およびその他の Active Directory オブジェクト) を複製します。同期では、ユーザー アカウントのみが追加されます。同期されているユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。
 - **Exchange Server から移行する場合** 「[複数のメール アカウントを Office 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。 カットオーバー、段階的方法、またはハイブリッド Exchange による方法のいずれかを使って、複数のメールボックスを Microsoft 365 に移行するときは、移行の一部としてユーザーが自動的に追加されます。 移行では、ユーザー アカウントのみが追加されます。 ユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。 ユーザーにライセンスを割り当てない場合、30 日間の猶予期間が過ぎるとユーザーのメールボックスが無効になります。 Microsoft 365 管理センターで[ユーザーにライセンスを割り当てる](../manage/assign-licenses-to-users.md)方法を確認してください。
 
 ## <a name="next-steps"></a>次の手順

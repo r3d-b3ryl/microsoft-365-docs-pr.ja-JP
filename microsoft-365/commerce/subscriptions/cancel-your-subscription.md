@@ -12,20 +12,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: 一般法人向け Microsoft 365 または有料版サブスクリプションをキャンセルする方法について説明します。
-ms.date: ''
-ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.date: 04/08/2021
+ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644646"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107004"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -101,9 +102,9 @@ ms.locfileid: "51644646"
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>ドメインのネームサーバー レコードを変更する (必要な場合)
 
-カスタム ドメインをセットアップすると、ドメインが Microsoft 365 サービスで機能するように、DNS レコードが追加されます。 ドメインを削除する前に、DNS ホストでドメイン MX レコードなどの DNS レコードを更新してください。
+カスタム ドメインをセットアップすると、ドメインが Microsoft 365 サービスで機能するように、DNS レコードが追加されます。ドメインを削除する前に、DNS ホストでドメインの MX レコードなどの DNS レコードを更新してください。
 
-たとえば、DNS ホストで MX レコードを変更します。 自分のドメインに送信されたメールは、Microsoft のアドレスに届かなくなり、代わりに新しいメール プロバイダーに送信されます (MX レコードは、ドメインの電子メールの送信先を決定します)。
+たとえば、DNS ホストで MX レコードを変更します。ドメインに送信される電子メールは、Microsoft アドレスに送信されなくなり、代わりに新しいメール プロバイダーに送信されます。(MX レコードは、ドメインの電子メールがどこに送信されるかを決定します。)
 
 - ネームサーバー (NS) レコードが [Microsoft 365 ネームサーバーをポイントしている](../../admin/setup/add-domain.md)場合、新しい DNS ホストをポイントするように NS レコードを変更するまでは、MX レコードの変更は有効になりません (手順 2 を参照)。
 
@@ -121,7 +122,7 @@ NS レコードを変更する方法については、「[ドメインを削除�
 
 ### <a name="save-your-data"></a>データを保存する
 
-キャンセルが有効になると、ユーザーはデータにアクセスできなくなります。 サブスクリプションをキャンセルする前に、OneDrive for Business または SharePoint Online のファイルを別の場所に保存するように伝えます。 残された顧客データは 30 日後に削除され、キャンセル後、180 日以内に削除されます。
+キャンセルが有効になると、ユーザーはデータにアクセスできなくなります。サブスクリプションをキャンセルする前に、ユーザーに OneDrive for Business または SharePoint Online ファイルを別の場所に保存するよう伝えます。残された顧客データは 30 日を過ぎると削除される可能性があり、キャンセル後、180 日以内に削除されます。
 
 - メール、連絡先、タスク、予定表などの情報を別のアカウントに移動するには、「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)」を参照してください。
 
