@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a04ee4a96b5e9124ca94a4ece16c32ccc6b072d1
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918468"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114308"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -72,7 +72,7 @@ ms.locfileid: "50918468"
 
 ゲストは、お客様の組織との機密保持契約その他の法的契約に署名していないことがよくあります。 ゲストが共有ファイルにアクセスできるようにする前に、利用規約への同意をゲストに要求することができます。 この利用規約は、ゲストが初めて共有ファイルやサイトにアクセスしようとしたときに表示されるようにできます。
 
-利用規約を作成するには、そのドキュメントを Word などのオーサリング プログラムでまず作成し、.pdf ファイルとして保存する必要があります。 次に、このファイルを Azure AD にアップロードします。
+利用規約を作成するには、そのドキュメントを Word などのオーサリング プログラムでまず作成し、.pdf ファイルとして保存する必要があります。このファイルは Azure AD にアップロードできます。
 
 Azure AD の利用規約を作成するには
 
@@ -256,7 +256,7 @@ SharePoint 管理センターのこの設定では、Azure AD の条件付きア
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>高度な機密ファイルへのゲスト アクセスを削除するDLPポリシーを作成する
 
-[データ損失防止 (DLP)](../compliance/data-loss-prevention-policies.md) を使用して、機密コンテンツの不要なゲスト共有を防ぐことができます。 データ損失防止は、ファイルの機密情報ラベルに基づき、ゲストアクセスを削除することができます。
+[データ損失防止 (DLP)](../compliance/dlp-learn-about-dlp.md) を使用して、機密コンテンツの不要なゲスト共有を防ぐことができます。 データ損失防止は、ファイルの機密情報ラベルに基づき、ゲストアクセスを削除することができます。
 
 DLP ルールを作成するには
 
