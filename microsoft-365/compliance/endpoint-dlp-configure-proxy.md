@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント DLP のデバイス プロキシとインターネット接続の構成方法について説明します。
-ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5da9161f2f59ef8a40ca8a7d302dc7de578dba39
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199276"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114125"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>エンドポイント DLP のデバイス プロキシとインターネット接続の構成
 
@@ -142,7 +142,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)
-- [データ損失防止の概要](data-loss-prevention-policies.md)
+- [データ損失防止について](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)

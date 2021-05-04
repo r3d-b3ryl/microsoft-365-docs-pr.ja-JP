@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウド アプリで dlp ポリシーを使用する方法について説明します。
-ms.openlocfilehash: 6787add3ef8b2d6ded22bd05c0ff9658c4b7fbfc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4c5170cab01b1ca22701b13c7afbf4f2e0ba7da
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922083"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114135"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する (プレビュー)
 
-Microsoft 以外のクラウド アプリに対するデータ損失防止 (DLP) ポリシーは、Microsoft 365 DLP スイートの機能の一部です。これらの機能を使用すると、Microsoft 365 サービス全体で機密性の高いアイテムを検出して保護できます。 すべての Microsoft DLP 製品の詳細については、「データ損失防止の [概要」を参照してください](./data-loss-prevention-policies.md?view=o365-worldwide)。
+Microsoft 以外のクラウド アプリに対するデータ損失防止 (DLP) ポリシーは、DLP Microsoft 365機能の一部です。これらの機能を使用すると、セキュリティ サービス全体で機密アイテムをMicrosoft 365できます。 すべての Microsoft DLP 製品の詳細については、「データ損失防止について」 [を参照してください](dlp-learn-about-dlp.md)。
 
 DLP ポリシーを Microsoft 以外のクラウド アプリに使用して、機密アイテムが Microsoft 以外のクラウド アプリを介して使用および共有される場合の監視と検出を行います。 これらのポリシーを使用すると、それらのポリシーが正しく使用され保護されていることを確認するために必要な可視性と制御が提供され、危険な動作が危険にさらされるのを防ぐのに役立ちます。
 
@@ -37,37 +37,37 @@ DLP ポリシーを Microsoft 以外のクラウド アプリに使用して、�
 
 ### <a name="skusubscriptions-licensing"></a>SKU /サブスクリプションライセンス
 
-DLP ポリシーを Microsoft 以外のクラウド アプリに使用する前に [、Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) サブスクリプションとアドオンを確認してください。 この機能にアクセスして使用するには、次のいずれかのサブスクリプションまたはアドオンが必要です。
+DLP ポリシーを Microsoft 以外のクラウド アプリに使用する前に、サブスクリプションMicrosoft 365[アドオン](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)を確認してください。 この機能にアクセスして使用するには、次のいずれかのサブスクリプションまたはアドオンが必要です。
 
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance 
 - Microsoft 365 E5 Security
 
-### <a name="prepare-your-cloud-app-security-environment"></a>クラウド アプリのセキュリティ環境を準備する
+### <a name="prepare-your-cloud-app-security-environment"></a>環境をCloud App Securityする
 
-Microsoft 以外のクラウド アプリに対する DLP ポリシーでは、Cloud App Security DLP 機能を使用します。 それを使用するには、Cloud App Security 環境を準備する必要があります。 手順については、「アプリの即時表示、保護、ガバナンスアクションの設定 [」を参照してください](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)。
+Microsoft 以外のクラウド アプリに対する DLP ポリシーでは、DLP Cloud App Securityを使用します。 この環境を使用するには、環境を準備Cloud App Security必要があります。 手順については、「アプリの即時表示、保護、ガバナンスアクションの設定 [」を参照してください](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)。
 
-### <a name="connect-a-non-microsoft-cloud-app"></a>Microsoft 以外のクラウド アプリを接続する
+### <a name="connect-a-non-microsoft-cloud-app"></a>Connect Microsoft 以外のクラウド アプリを使用する
 
-特定の Microsoft 以外のクラウド アプリに DLP ポリシーを使用するには、アプリを Cloud App Security に接続する必要があります。 詳細については、次を参照してください。
+DLP ポリシーを Microsoft 以外の特定のクラウド アプリに使用するには、アプリをアプリに接続する必要Cloud App Security。 詳細については、次を参照してください。
 
-- [Connect Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
-- [Dropbox の接続](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connect G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
-- [Salesforce の接続](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
-- [Cisco Webex の接続](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
+- [ConnectBox](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
+- [Connect Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
+- [ConnectG-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [ConnectSalesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
+- [ConnectCisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
-クラウド アプリを Cloud App Security に接続した後、Microsoft 365 DLP ポリシーを作成できます。
+クラウド アプリをクラウド アプリに接続Cloud App Security、クラウド アプリMicrosoft 365 DLP ポリシーを作成できます。
 
 >[!NOTE]
->Microsoft Cloud App Security を使用して、Microsoft クラウド アプリに DLP ポリシーを作成することもできます。 ただし、Microsoft 365 を使用して、Microsoft クラウド アプリに対する DLP ポリシーを作成および管理する方法をお勧めします。
+>また、Microsoft クラウド アプリに DLP Microsoft Cloud App Securityを作成するために、このポリシーを使用することもできます。 ただし、Microsoft クラウド アプリに対して DLP Microsoft 365を作成および管理するには、このポリシーを使用する必要があります。
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>Microsoft 以外のクラウド アプリに DLP ポリシーを作成する
 
-DLP ポリシーの場所を選択する場合は **、Microsoft Cloud App Security の場所をオン** にしてください。
+DLP ポリシーの場所を選択する場合は、その場所 **Microsoft Cloud App Securityします**。
 
 - 特定のアプリまたはインスタンスを選択するには、[インスタンスの選択] **を選択します**。
-- インスタンスを選択しない場合、ポリシーは Microsoft Cloud App Security テナント内のすべての接続アプリを使用します。
+- インスタンスを選択しない場合、ポリシーは、テナント内のすべての接続アプリMicrosoft Cloud App Securityします。
 
    ![ポリシーを適用する場所](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
 

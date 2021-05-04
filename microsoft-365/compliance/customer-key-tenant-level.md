@@ -3,7 +3,6 @@ title: テナント レベルの Microsoft 365 の [カスタマー]キー (パ�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 3/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,65 +13,65 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: テナント レベルで Microsoft 365 内のデータの顧客キーを設定する方法について説明します。
-ms.openlocfilehash: 811b153d5b0a472c6e542851fec45f1f42bca59b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+description: テナント レベルでデータの顧客キーをMicrosoft 365する方法について学習します。
+ms.openlocfilehash: 90ad08059d6b71583850368a70e32167b9defe88
+ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394705"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100796"
 ---
-# <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>テナント レベルでの Microsoft 365 のカスタマー キーの概要 (パブリック プレビュー)
+# <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>テナント レベルでの顧客キー Microsoft 365の概要 (パブリック プレビュー)
 
 指定したキーを使用して、データ暗号化ポリシー (DEP) を作成し、テナントに割り当てできます。 作成するテナント全体の DEP は、次のデータを暗号化します。
 
-- Teams チャット メッセージ (1:1 チャット、グループ チャット、会議チャット、チャネル会話)
-- Teams メディア メッセージ (画像、コード スニペット、ビデオ メッセージ、オーディオ メッセージ、Wiki イメージ)
-- Teams の通話と Teams ストレージに保存されている会議の記録
-- Teams チャット通知
-- Cortana による Teams チャットの提案
-- Teams の状態メッセージ
-- Exchange Online のユーザー情報とシグナル情報
-- アプリケーション レベルでまだ暗号化されていない Exchange Online メールボックス
+- Teamsチャット メッセージ (1:1 チャット、グループ チャット、会議チャット、チャネル会話)
+- Teamsメディア メッセージ (画像、コード スニペット、ビデオ メッセージ、オーディオ メッセージ、Wiki イメージ)
+- Teamsストレージに保存されている通話と会議のTeams記録
+- Teamsチャット通知
+- Teams Cortana によるチャットの提案
+- Teams状態メッセージ
+- ユーザーとシグナルの情報をExchange Online
+- Exchange Onlineレベルでまだ暗号化されていない顧客キー DEP のメールボックス
 - MIP 完全データ一致 (EDM) データ – (データ ファイル スキーマ、ルール パッケージ、および機密データのハッシュに使用される塩)
 
-Microsoft Information Protection および Microsoft Teams の場合、テナント レベルの顧客キーは、DEP をテナントに割り当てる時点から新しいデータを暗号化します。 パブリック プレビューでは、過去のデータの暗号化はサポートされていません。 Exchange Online の場合、顧客キーは既存のデータと新しいデータを暗号化します。
+Microsoft Information Protection および Microsoft Teams、テナント レベルの顧客キーは、DEP をテナントに割り当てる時点から新しいデータを暗号化します。 パブリック プレビューでは、過去のデータの暗号化はサポートされていません。 たとえばExchange Online、顧客キーは既存のデータと新しいデータを暗号化します。
 
 テナントごとに複数の DEP を作成できますが、一度に割り当てできる DEP は 1 つのみです。 DEP を割り当てると、暗号化は自動的に開始されますが、テナントのサイズに応じて完了に時間がかかっています。
 
-## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>テナント レベルのポリシーは、Microsoft 365 の顧客キーに広範な制御を追加します。
+## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>テナント レベルのポリシーは、顧客キーに対するより広範な制御を追加Microsoft 365
 
-Exchange Online と Sharepoint Online 用に顧客キーが既に設定されている場合は、新しいテナント レベルのパブリック プレビューがどのように適合しているかについて説明します。
+顧客キーが Exchange Onlineおよび Sharepoint Online に対して既に設定されている場合は、新しいテナント レベルのパブリック プレビューがどのように適合しているかについて説明します。
 
-作成するテナント レベルの暗号化ポリシーは、Microsoft 365 の Microsoft Teams ワークロードおよび Exchange Online ワークロードのすべてのデータを暗号化します。 ただし、Exchange Online では、顧客キー DEP を個々のメールボックスに既に割り当て済みの場合、テナント レベルのポリシーはそれらの DEP を上書きされません。 テナント レベルのポリシーは、メールボックス レベルの Customer Key DEP が既に割り当てられていないメールボックスのみを暗号化します。 テナント レベルの DEP を使用してユーザー メールボックスを暗号化すると、そのすべてのコンテンツが暗号化されます。 アプリケーション レベルで DEP で暗号化される情報については、「顧客キーを使用した [サービス暗号化」を参照してください](customer-key-overview.md)。
+作成するテナント レベルの暗号化ポリシーは、Microsoft TeamsワークロードとExchange Onlineのすべてのデータを暗号化Microsoft 365。 ただし、Exchange Online、顧客キー DEP を個々のメールボックスに既に割り当て済みの場合、テナント レベルのポリシーはそれらの DEP を上書きされません。 テナント レベルのポリシーは、メールボックス レベルの Customer Key DEP が既に割り当てられていないメールボックスのみを暗号化します。 テナント レベルの DEP を使用してユーザー メールボックスを暗号化すると、そのすべてのコンテンツが暗号化されます。 アプリケーション レベルで DEP で暗号化される情報については、「顧客キーを使用した [サービス暗号化」を参照してください](customer-key-overview.md)。
 
 ## <a name="data-that-isnt-encrypted-with-customer-key-at-the-tenant-level"></a>テナント レベルの顧客キーで暗号化されていないデータ
 
-顧客キーは、テナント レベルで次の種類のデータを暗号化します。 代わりに、Microsoft 365 は他の種類の暗号化を使用してこのデータを保護します。
+顧客キーは、テナント レベルで次の種類のデータを暗号化します。 代わりに、Microsoft 365他の種類の暗号化を使用してこのデータを保護します。
 
-- アプリケーション レベルで顧客キー DEP を使用して既に暗号化されている Exchange オンライン メールボックス。 顧客キー DEP が割り当てられていないメールボックスは、テナント レベルの DEP を使用して暗号化されます。 この配置は、一部のメールボックスがテナント レベルの DEP で暗号化され、一部のメールボックスがアプリケーション レベルの DEP で暗号化される可能性があります。
-- SharePoint と OneDrive for Business は、アプリケーション レベルで顧客キーを使用します。 1 つの DEP が SharePoint のコンテンツを 1 つの geo で暗号化します。
-- Microsoft Teams ファイルと、OneDrive for Business および SharePoint に保存されている一部の Teams 通話および会議記録は、SharePoint Online DEP によって暗号化されます。
+- Exchangeレベルで Customer Key DEP を使用して暗号化済みのオンライン メールボックスを作成します。 顧客キー DEP が割り当てられていないメールボックスは、テナント レベルの DEP を使用して暗号化されます。 この配置は、一部のメールボックスがテナント レベルの DEP で暗号化され、一部のメールボックスがアプリケーション レベルの DEP で暗号化される可能性があります。
+- SharePointおよびOneDrive for Businessアプリケーション レベルで顧客キーを使用します。 1 つの DEP は、1 つの地域SharePointコンテンツを暗号化します。
+- Microsoft Teams および Teams および OneDrive for Business および SharePoint に保存された一部の通話および会議の記録は、SharePoint オンライン DEP によって暗号化されます。
 
-Microsoft 365 のカスタマー キーで現在サポートされていないワークロードまたはシナリオ。
+顧客キーで現在サポートされていないワークロードまたはシナリオは、Microsoft 365。
 
-- その他の Microsoft 365 ワークロード (Yammerプランナーなど)。
-- Teams Live イベントと Q&で A を選択します。 Teams の場合、テナント レベルで顧客キーによって暗号化されていないのは、このシナリオのみです。
+- その他Microsoft 365ワークロード (Yammer、Planner など)。
+- Teamsライブ イベントと Q&で A を選択します。 このTeamsシナリオは、テナント レベルで顧客キーによって暗号化されていない唯一のシナリオです。
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>テナント レベルで顧客キーを設定する (パブリック プレビュー)
 
-これらの手順は類似していますが、アプリケーション レベルで顧客キーを設定する手順と同じではありません。 このパブリック プレビューは、テスト テナントのテスト データでのみ使用します。 このリリースは、実稼働データや実稼働環境では使用しない。 顧客キーの実稼働展開が既にある場合は、次の手順を使用して、テスト環境のテナント レベルで顧客キーを設定します。 テナント レベルの DEP をテナントに割り当てたら、検証プロセスを開始し、質問や懸念事項 m365ck@microsoft.com 問い合わせできます。 ドキュメントの検証手順については [、「Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation)のデータ保存時暗号化の検証手順」のパブリック プレビューで確認できます。
+これらの手順は類似していますが、アプリケーション レベルで顧客キーを設定する手順と同じではありません。 このパブリック プレビューは、テスト テナントのテスト データでのみ使用します。 このリリースは、実稼働データや実稼働環境では使用しない。 顧客キーの実稼働展開が既にある場合は、次の手順を使用して、テスト環境のテナント レベルで顧客キーを設定します。 テナント レベルの DEP をテナントに割り当てたら、検証プロセスを開始し、質問や懸念事項 m365ck@microsoft.com 問い合わせできます。 ドキュメントの検証手順については、「データ保存時の暗号化の検証手順」のパブリック[プレビュー](https://aka.ms/CustomerKey/PublicPreviewValidation)Microsoft 365。
 
-これらのほとんどのタスクは、Azure PowerShell にリモートで接続して完了します。 最適な結果を得る場合は、バージョン 4.4.0 以降の Azure PowerShell を使用します。
+これらのタスクのほとんどを完了するには、リモートでユーザーに接続Azure PowerShell。 最適な結果を得る場合は、バージョン 4.4.0 以降のバージョンを使用Azure PowerShell。
 
 開始する前に:
 
 - テナント レベルで顧客キーを設定するには、コンプライアンス管理者の役割を持つ仕事または学校のアカウントを使用する必要があります。
-- 組織に適切なライセンスを持っている必要があります。 クラウド サービス プロバイダーまたはクラウド サービス プロバイダーを使用して、支払マイクロソフトエンタープライズ契約 Azure サブスクリプションを使用します。 Pay As You Go プランまたはクレジット カードを使用して購入した Azure サブスクリプションは、顧客キーではサポートされていません。 2020 年 4 月 1 日から、Office 365 のカスタマー キーは、Office 365 E5、Microsoft 365 E5、Microsoft 365 E5 コンプライアンス、および Microsoft 365 E5 Information Protection & ガバナンス SKU で提供されます。 Office 365 Advanced Compliance SKU は、新しいライセンスでは使用できなくなりました。 既存のOffice 365 Advanced Compliance ライセンスは引き続きサポートされます。 テナントの下で少なくとも 1 人の適切なライセンスを持つユーザーでサービスを有効にできますが、サービスの恩恵を受けるすべてのユーザーが適切なライセンスを持っている必要があります。
+- 組織に適切なライセンスを持っている必要があります。 クラウド サービス プロバイダーまたはクラウド サービス プロバイダーを使用して、支払Enterprise Agreement Azure サブスクリプションを使用します。 Pay As You Go プランまたはクレジット カードを使用して購入した Azure サブスクリプションは、顧客キーではサポートされていません。 2020 年 4 月 1 日より、Office 365 のカスタマー キーは Office 365 E5、Microsoft 365 E5、Microsoft 365 E5 Compliance、Microsoft 365 E5 の情報保護 & SKU で提供されます。 Office 365 Advanced ComplianceSKU は、新しいライセンスでは使用できなくなりました。 既存のOffice 365 Advanced Complianceライセンスは引き続きサポートされます。 テナントの下で少なくとも 1 人の適切なライセンスを持つユーザーでサービスを有効にできますが、サービスの恩恵を受けるすべてのユーザーが適切なライセンスを持っている必要があります。
 
 ### <a name="create-two-new-azure-subscriptions"></a>2 つの新しい Azure サブスクリプションを作成する
 
-顧客キーには、データ暗号化ポリシー (DEP) ごとに 2 つのキーが必要です。 2 つのキーを作成するには、2 つの Azure サブスクリプションを作成する必要があります。 ベスト プラクティスとして、組織の個別のメンバーが各サブスクリプションで 1 つのキーを構成する必要があります。 Microsoft 365 の暗号化キーを管理するには、これらの Azure サブスクリプションのみを使用します。 これらのガイドラインに従って、オペレーターの 1 人が誤って、意図的に、または悪意を持って削除したり、その他の方法で責任を負うキーを誤って管理したりした場合に、組織を保護するのに役立ちます。
+顧客キーには、データ暗号化ポリシー (DEP) ごとに 2 つのキーが必要です。 2 つのキーを作成するには、2 つの Azure サブスクリプションを作成する必要があります。 ベスト プラクティスとして、組織の個別のメンバーが各サブスクリプションで 1 つのキーを構成する必要があります。 これらの Azure サブスクリプションのみを使用して、暗号化キーを管理Microsoft 365。 これらのガイドラインに従って、オペレーターの 1 人が誤って、意図的に、または悪意を持って削除したり、その他の方法で責任を負うキーを誤って管理したりした場合に、組織を保護するのに役立ちます。
 
 組織に対して作成できる Azure サブスクリプションの数に実際的な制限はありません。 このベスト プラクティスに従って、カスタマー キーで使用されるリソースを管理しながら、人的エラーの影響を最小限に抑えるのに役立ちます。
 
@@ -80,9 +79,9 @@ Microsoft 365 のカスタマー キーで現在サポートされていない�
 
 ルート暗号化キーが一時的または永続的に失われると、サービス操作が中断したり、壊滅的な操作を受け入れ、データが失われる可能性があります。 このため、Customer Key で使用されるリソースには強力な保護が必要です。 Customer Key で使用される Azure リソースはすべて、既定の構成を超える保護メカニズムを提供します。 Azure サブスクリプションは、即時で取り消し可能な取り消しを防ぐ方法でタグ付けまたは登録できます。 このプロセスは、必須の保持期間の登録と呼ばれます。 必須の保持期間に Azure サブスクリプションを登録するために必要な手順では、Microsoft とのコラボレーションが必要です。 このプロセスには最大 5 営業日かかる場合があります。 以前は、このプロセスを "キャンセルしない" と呼ばれる場合があります。
   
-Microsoft 365 チームに連絡する前に、カスタマー キーで使用する Azure サブスクリプションごとに次の手順を実行する必要があります。 開始する前に [、Azure PowerShell Az](/powershell/azure/new-azureps-module-az) モジュールがインストールされていることを確認してください。
+チームに連絡するMicrosoft 365、顧客キーで使用する Azure サブスクリプションごとに次の手順を実行する必要があります。 開始する前に、Azure PowerShell [Az](/powershell/azure/new-azureps-module-az)モジュールがインストールされていることを確認します。
 
-1. Azure PowerShell でサインインします。 手順については [、「Azure PowerShell でサインインする」を参照してください](/powershell/azure/authenticate-azureps)。
+1. サインインするには、Azure PowerShell。 手順については、「サインインする」[を参照Azure PowerShell。](/powershell/azure/authenticate-azureps)
 
 2. 必須の保持Register-AzProviderFeature使用するサブスクリプションを登録するには、Register-AzProviderFeatureコマンドレットを実行します。 サブスクリプションごとにこのアクションを実行します。
 
@@ -116,12 +115,12 @@ Microsoft 365 チームに連絡する前に、カスタマー キーで使用�
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>各サブスクリプションにプレミアム Azure Key Vault を作成する
 
-キー コンテナーを作成する手順については、「Azure Key Vault の使用を開始する」に記載されています。このガイドでは [、Azure](/azure/key-vault/general/overview)PowerShell のインストールと起動、Azure サブスクリプションへの接続、リソース グループの作成、そのリソース グループ内のキー コンテナーの作成について説明します。
+キー コンテナーを作成する手順については[、「Azure Key Vault](/azure/key-vault/general/overview)の使用を開始する」に記載されています。このガイドでは、Azure PowerShell のインストールと起動、Azure サブスクリプションへの接続、リソース グループの作成、そのリソース グループ内のキー コンテナーの作成について説明します。
   
-キー コンテナーを作成する場合は、SKU (Standard または Premium) を選択する必要があります。 Standard SKU を使用すると、Azure Key Vault キーをソフトウェアで保護できます 。ハードウェア セキュリティ モジュール (HSM) キー保護はありません。また、Premium SKU では、キー コンテナー キーの保護のために HSM を使用できます。 カスタマー キーは、いずれかの SKU を使用するキー コンテナーを受け入れ、プレミアム SKU のみを使用する必要があります。 どちらの種類のキーを使用する操作のコストも同じなので、コストの唯一の違いは、各 HSM で保護されたキーの 1 か月あたりのコストです。 詳細については [、「Key Vault の価格」](https://azure.microsoft.com/pricing/details/key-vault/) を参照してください。
+キー コンテナーを作成する場合は、SKU (標準または標準) を選択プレミアム。 標準 SKU を使用すると、Azure Key Vault キーをソフトウェアで保護できます 。ハードウェア セキュリティ モジュール (HSM) キー保護はありません)、プレミアム SKU では、キー コンテナー キーの保護のために HSM を使用できます。 顧客キーは、いずれかの SKU を使用するキー コンテナーを受け入れるが、MICROSOFT では、SKU の一部のみを使用プレミアム強く推奨しています。 どちらの種類のキーを使用する操作のコストも同じなので、コストの唯一の違いは、各 HSM で保護されたキーの 1 か月あたりのコストです。 詳細については [、「Key Vault の価格」](https://azure.microsoft.com/pricing/details/key-vault/) を参照してください。
   
 > [!IMPORTANT]
-> 実稼働データには Premium SKU キー コンテナーと HSM で保護されたキーを使用し、テストおよび検証の目的で標準 SKU キー コンテナーとキーのみを使用します。
+> 実稼働データプレミアム SKU キー コンテナーと HSM で保護されたキーを使用し、テストおよび検証の目的で標準 SKU キー コンテナーとキーのみを使用します。
 
 キー コンテナーに共通のプレフィックスを使用し、キー コンテナーとキーの使用とスコープの省略形を含める。 たとえば、コンテナーが北アメリカにある Contoso サービスの場合、名前の可能なペアは Contoso-O365-NA-VaultA1 と Contoso-O365-NA-VaultA2 です。 コンテナー名は Azure 内でグローバルに一意の文字列なので、目的の名前が既に他の Azure ユーザーによって要求されている場合に、目的の名前のバリエーションを試す必要がある場合があります。 構成が完了すると、コンテナー名を変更できないので、ベスト プラクティスは、セットアップ用の計画を作成し、2 人目を使用して計画が正しく実行されていることを確認する方法です。
 
@@ -136,7 +135,7 @@ Microsoft 365 チームに連絡する前に、カスタマー キーで使用�
   > [!IMPORTANT]
   > キー コンテナー管理者に割り当てられた一連のアクセス許可には、キーを削除するアクセス許可は含められていない。 これは意図的で重要なプラクティスです。 暗号化キーを削除すると、データが完全に破棄されるので、通常は実行しません。 ベスト プラクティスとして、このアクセス許可をキー コンテナー管理者に既定で付与しない。 代わりに、これを重要なコンテナーの投稿者に予約し、結果の明確な理解が得られると、短期間で管理者に割り当てる必要があります。
   
-  これらのアクセス許可を組織内のユーザーに割り当てるには、Azure PowerShell を使用して Azure サブスクリプションにサインインします。 手順については [、「Azure PowerShell でサインインする」を参照してください](/powershell/azure/authenticate-azureps)。
+  これらのアクセス許可を組織内のユーザーに割り当てるには、Azure サブスクリプションにサインインし、Azure PowerShell。 手順については、「サインインする」[を参照Azure PowerShell。](/powershell/azure/authenticate-azureps)
 
    必要なアクセスSet-AzKeyVaultAccessPolicy割り当てるには、このコマンドレットを実行します。
 
@@ -152,7 +151,7 @@ Microsoft 365 チームに連絡する前に、カスタマー キーで使用�
 
 - Azure **Key Vault 自体の** アクセス許可を変更できるキー コンテナーの投稿者。 従業員がチームを離れる、またはチームに参加する場合、またはキー コンテナー管理者がキーを削除または復元するためのアクセス許可を正当に必要とするまれな状況では、これらのアクセス許可を変更する必要があります。 この一連のキー コンテナー投稿者には、キー コンテナーの共同作成者ロールを付与する必要があります。 このロールは、Azure リソース マネージャーを使用して割り当てできます。 詳細な手順については [、「Use Role-Based アクセス制御を使用](/azure/active-directory/role-based-access-control-configure) して Azure サブスクリプション リソースへのアクセスを管理する」を参照してください。 サブスクリプションを作成する管理者は、既定でこのアクセス権を持ち、他の管理者を共同作成者ロールに割り当てる機能を持っています。
 
-- **テナント レベルで顧客キーの** 作業を行う、保存時の Microsoft 365 データ暗号化サービス。 Microsoft 365 にアクセス許可を付与するには、次の構文を使用して **Set-AzKeyVaultAccessPolicy** コマンドレットを実行します。
+- **Microsoft 365の作業を** テナント レベルで実行する保存時のデータ暗号化サービスを提供します。 アクセス許可を付与するにはMicrosoft 365構文を使用して **Set-AzKeyVaultAccessPolicy** コマンドレットを実行します。
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Microsoft 365 appID>
@@ -162,7 +161,7 @@ Microsoft 365 チームに連絡する前に、カスタマー キーで使用�
 
   - *コンテナー名* は、作成したキー コンテナーの名前です。
 
-  例: 保存時の Microsoft 365 データ暗号化サービスの場合は  *、Microsoft 365 appID* を `c066d759-24ae-40e7-a56f-027002b5d3e4`
+  例: Rest Encryption サービスMicrosoft 365データの場合は、appID Microsoft 365 *に置き換* える`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   ```powershell
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
@@ -174,7 +173,7 @@ Microsoft 365 チームに連絡する前に、カスタマー キーで使用�
   
 キー コンテナーで Soft Delete を有効にするには、次の手順を実行します。
   
-1. Azure サブスクリプションにサインインし、Windows PowerShell。 手順については [、「Azure PowerShell でサインインする」を参照してください](/powershell/azure/authenticate-azureps)。
+1. Azure サブスクリプションにサインインするには、Windows PowerShell。 手順については、「サインインする」[を参照Azure PowerShell。](/powershell/azure/authenticate-azureps)
 
 2. [Get-AzKeyVault コマンドレットを実行](/powershell/module/az.keyvault/get-azkeyvault)します。 この例では、 *コンテナー名* は、ソフト削除を有効にするキー コンテナーの名前です。
 
@@ -220,9 +219,9 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>キーの回復レベルを確認する
 
-Microsoft 365 では、Azure Key Vault サブスクリプションが [キャンセルしない] に設定され、顧客キーで使用されるキーの削除が有効になっている必要があります。 これらの設定を確認するには、キーの回復レベルを確認します。
+Microsoft 365 Azure Key Vault サブスクリプションが [キャンセルしない] に設定され、顧客キーで使用されるキーの削除が有効になっている必要があります。 これらの設定を確認するには、キーの回復レベルを確認します。
   
-キーの回復レベルを確認するには、Azure PowerShell で、次のように Get-AzKeyVaultKeyコマンドレットを実行します。
+キーの回復レベルを確認するには、次Azure PowerShell、Get-AzKeyVaultKeyコマンドレットを実行します。
   
 ```powershell
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
@@ -263,7 +262,7 @@ DEP でキーを使用する前に検証を実行する方法はオプション�
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-出力で、アクセス ポリシーと、必要に応じて Microsoft 365 アプリ ID (GUID) を探します。 get、wrapKey、unwrapKey の 3 つの操作はすべて、[キーへのアクセス許可] の下に表示する必要があります。
+出力で、アクセス ポリシーを探し、必要にMicrosoft 365アプリ ID (GUID) を探します。 get、wrapKey、unwrapKey の 3 つの操作はすべて、[キーへのアクセス許可] の下に表示する必要があります。
   
 アクセス ポリシーの構成が正しくない場合は、次のように Set-AzKeyVaultAccessPolicyコマンドレットを実行します。
   
@@ -271,7 +270,7 @@ Get-AzKeyVault -VaultName <vault name>
 Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Microsoft 365 appID>
 ```
 
-例: 保存時の Microsoft 365 データ暗号化サービスの場合は  *、Microsoft 365 appID* を `c066d759-24ae-40e7-a56f-027002b5d3e4`
+例: Rest Encryption サービスMicrosoft 365データの場合は、appID Microsoft 365 *に置き換* える`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   ```powershell
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
@@ -283,7 +282,7 @@ Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,un
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-期限切れのキーは顧客キーでは使用できません。また、期限切れのキーで試行された操作は失敗し、サービスが停止する可能性があります。 顧客キーで使用するキーには有効期限が設定されていないことを強く推奨します。 有効期限を設定すると、削除できませんが、別の日付に変更できます。 有効期限が設定されているキーを使用する必要がある場合は、有効期限の値を 12/31/9999 に変更します。 有効期限が 12/31/9999 以外の日付に設定されているキーは、Microsoft 365 検証に合格しません。
+期限切れのキーは顧客キーでは使用できません。また、期限切れのキーで試行された操作は失敗し、サービスが停止する可能性があります。 顧客キーで使用するキーには有効期限が設定されていないことを強く推奨します。 有効期限を設定すると、削除できませんが、別の日付に変更できます。 有効期限が設定されているキーを使用する必要がある場合は、有効期限の値を 12/31/9999 に変更します。 有効期限が 12/31/9999 以外の日付に設定されているキーは、Microsoft 365渡しません。
   
 12/31/9999 以外の値に設定されている有効期限を変更するには、次のように [Update-AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey) コマンドレットを実行します。
   
@@ -295,7 +294,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
 
 Azure のすべての手順を完了してキー コンテナーをセットアップし、キーを追加したら、次のコマンドを実行して、各キー コンテナーのキーの URI を取得します。 後で各 DEP を作成して割り当てる場合は、これらの URI を使用する必要があります。そのため、この情報を安全な場所に保存します。 キー コンテナーごとにこのコマンドを 1 回実行してください。
   
-Azure PowerShell では、次の情報を使用します。
+次のAzure PowerShell。
   
 ```powershell
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
@@ -417,12 +416,12 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 
 ## <a name="offboarding-from-customer-key-at-the-tenant-level"></a>テナント レベルでの顧客キーからのオフボーディング
 
-Microsoft で管理されているキーに戻す必要がある場合は、可能です。 オフボードの場合、データは、個々のワークロードでサポートされる既定の暗号化を使用して再暗号化されます。 たとえば、Exchange Online では、Microsoft 管理キーを使用した既定の暗号化がサポートされています。
+Microsoft で管理されているキーに戻す必要がある場合は、可能です。 オフボードの場合、データは、個々のワークロードでサポートされる既定の暗号化を使用して再暗号化されます。 たとえば、Microsoft Exchange Onlineキーを使用した既定の暗号化がサポートされている場合です。
 
 テナント レベルで顧客キーからテナントをオフボードする場合は、m365ck@microsoft.com[](mailto:m365ck@microsoft.com)サービスを "無効にする" 要求をメールで送信します。
 
 > [!IMPORTANT]
-> オフボードは、データ削除と同じではありません。 データの削除は、Microsoft 365 から組織のデータを完全に暗号化削除しますが、オフボードは削除を行います。 テナント レベルのポリシーに対してデータ削除を実行できません。 データ削除パスの詳細については、「キーを取り消して、データ削除パス [プロセスを開始する」を参照してください](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)。
+> オフボードは、データ削除と同じではありません。 データの削除は、組織のデータを完全に暗号化削除し、Microsoft 365オフボードから削除します。 テナント レベルのポリシーに対してデータ削除を実行できません。 データ削除パスの詳細については、「キーを取り消して、データ削除パス [プロセスを開始する」を参照してください](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)。
 
 ## <a name="about-the-availability-key"></a>可用性キーについて
 
@@ -431,10 +430,6 @@ Microsoft で管理されているキーに戻す必要がある場合は、可�
 ## <a name="key-rotation"></a>キーの回転
 
 顧客キーで使用するキーの回転またはローリングの詳細については、「顧客キーまたは可用性キーのロールまたはローテーション」 [を参照してください](customer-key-availability-key-roll.md)。 DEP を更新して新しいバージョンのキーを使用する場合は、この記事で前述したように、Set-M365DataAtRestEncryptionPolicy コマンドレットを実行します。
-
-## <a name="known-issues"></a>既知の問題
-
-テナント レベルで顧客キーを有効にした場合、Microsoft Teams で新しいチームを作成できません。
 
 ## <a name="related-articles"></a>関連記事
 

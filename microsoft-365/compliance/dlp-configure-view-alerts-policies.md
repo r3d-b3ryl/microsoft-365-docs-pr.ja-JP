@@ -1,5 +1,5 @@
 ---
-title: DLP ポリシーの警告を構成および表示する (プレビュー)
+title: データ損失防止ポリシーのアラートの構成と表示
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,44 +19,46 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: DLP ポリシーのアラートを定義および管理する方法について説明します。
-ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: データ損失防止ポリシーのアラートを定義および管理する方法について説明します。
+ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917863"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750039"
 ---
-# <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>DLP ポリシーのアラートの構成と表示 (プレビュー)
+# <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>データ損失防止ポリシーのアラートを構成および表示する
 
-この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 [Microsoft 365](https://compliance.microsoft.com/)コンプライアンス センターの新しい DLP アラート管理ダッシュボードを使用して、DLP ポリシー違反のアラート、イベント、および関連するメタデータを表示する方法について説明します。
+データ損失防止 (DLP) ポリシーは、機密アイテムの意図しない共有を防止するために保護措置を取る場合があります。 機密性の高いアイテムに対してアクションが実行された場合は、DLP のアラートを構成することで通知を受け取る可能性があります。 この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 新しい DLP アラート管理ダッシュボードを Microsoft 365 コンプライアンス センターで使用して、DLP ポリシー違反のアラート、[イベント、および](https://compliance.microsoft.com/)関連するメタデータを表示する方法について説明します。
+
+<!-- LEFT OFF HERE-->
 
 ## <a name="features"></a>機能
 
-次の機能は、このプレビューの一部です。
+次の機能は、この一部です。
 
--   **DLP アラート管理ダッシュボード**: [Microsoft 365 コンプライアンス](https://compliance.microsoft.com/)センターでは、このダッシュボードには、次のワークロードに適用される DLP ポリシーのアラートが表示されます。
+-   **DLP アラート管理ダッシュボード**: コンプライアンス センター [Microsoft 365、](https://compliance.microsoft.com/)このダッシュボードには、次のワークロードに適用される DLP ポリシーのアラートが表示されます。
 
     -   Exchange
     -   SharePoint
     -   OneDrive
     -   Teams
-    -   デバイス
+    -   Devices
 -   **高度なアラート構成オプション**: これらのオプションは、DLP ポリシー作成フローの一部です。 それらを使用して、リッチ アラート構成を作成します。 イベントの数または漏洩したデータのサイズに基づいて、単一イベントアラートまたは集約アラートを作成できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 開始する前に、必要な前提条件が満たされていることを確認してください。
 
 -   DLP アラート管理ダッシュボードのライセンス
 -   アラート構成オプションのライセンス
--   ロール
+-   Roles
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP アラート管理ダッシュボードのライセンス
 
-365 DLP Office対象テナントはすべて、新しい DLP アラート管理ダッシュボードにアクセスできます。 開始するには、Exchange Online、SharePoint Online、および OneDrive for Business Office 365 DLP の対象となる必要があります。 Office 365 DLP のライセンス要件の詳細については、「どのライセンスがユーザーにサービスの恩恵を受ける権限を提供するのか」 [を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
+DLP の対象となるテナントOffice 365、新しい DLP アラート管理ダッシュボードにアクセスできます。 開始するには、オンライン、オンライン、およびOffice 365の DLP のExchange Online対象SharePoint必要OneDrive for Business。 OFFICE 365 DLP のライセンス要件の詳細については、「どのライセンスがユーザーにサービスの恩恵を受ける権利を提供するか」[を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
 
-[エンドポイント](./endpoint-dlp-learn-about.md?view=o365-worldwide)DLP パブリック プレビューに参加しているお客様、または[Teams DLP](./dlp-microsoft-teams.md?view=o365-worldwide)の対象となるお客様には、DLP アラート管理ダッシュボードにエンドポイント DLP ポリシーアラートと Teams DLP ポリシーアラートが表示されます。
+Teams [DLP](dlp-microsoft-teams.md)の対象となるエンドポイント[DLP](endpoint-dlp-learn-about.md)を使用しているお客様は、DLP アラート管理ダッシュボードにエンドポイント DLP ポリシーアラートと Teams DLP ポリシーアラートを表示します。
 
 ### <a name="licensing-for-alert-configuration-options"></a>アラート構成オプションのライセンス
 
@@ -66,9 +68,9 @@ ms.locfileid: "50917863"
     -   E1、F1、または G1 サブスクリプション、または次のいずれかの機能を含む E3 または G3 サブスクリプション。
         -   Office 365 Advanced Threat Protection プラン 2
         -   Microsoft 365 E5 Compliance 
-        -   Microsoft 365 電子情報開示と監査アドオン ライセンス
+        -   Microsoft 365証拠開示と監査アドオン ライセンス
 
-### <a name="roles"></a>ロール
+### <a name="roles"></a>Roles
 
 DLP アラート管理ダッシュボードを表示する場合、または DLP ポリシーでアラート構成オプションを編集する場合は、次のいずれかの役割グループのメンバーである必要があります。
 
@@ -99,7 +101,7 @@ DLP アラート管理ダッシュボードにアクセスするには、[アラ
 
 DLP アラート管理ダッシュボードを操作するには、次の操作を行います。
 
-1.  Microsoft [365 コンプライアンス センターで、[](https://www.compliance.microsoft.com)データ損失防止 **] に移動します**。
+1.  コンプライアンス センター [Microsoft 365、](https://www.compliance.microsoft.com)データ損失防止 **に移動します**。
 
 2.  [アラート] **タブを** 選択して、DLP アラート ダッシュボードを表示します。
 
@@ -115,22 +117,22 @@ DLP アラート管理ダッシュボードを操作するには、次の操作�
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
     |*イベントの詳細*||
     |      | ID                            | イベントに関連付けられた一意の ID                                        | すべてのイベント                               |
-    |                   | Location                      | イベントが検出されたワークロード                                      | すべてのイベント                               |
+    |                   | 場所                      | イベントが検出されたワークロード                                      | すべてのイベント                               |
     |                   | アクティビティの時間              | DLP 違反を引き起こしたユーザー アクティビティの時間                    | すべてのイベント                               |
     |*影響を受け取ったエンティティ*||
     |  | User                          | DLP 違反を引き起こしたユーザー                                          | すべてのイベント                               |
     |                   | ホスト名                      | DLP 違反が検出されたコンピューターのホスト名              | デバイス イベント                           |
     |                   | IP アドレス                    | コンピューターの IP アドレス                                                  | デバイス イベント                           |
-    |                   | ファイル パス                     | 違反に関連するファイルの絶対パス                        | SharePoint イベント、OneDrive イベント、デバイス イベント |
-    |                   | 電子メール受信者              | DLP ポリシーに違反した電子メールの受信者                       | Exchange イベント                          |
-    |                   | メールの件名                 | DLP ポリシーに違反した電子メールの件名                          | Exchange イベント                          |
-    |                   | メールの添付ファイル             | DLP ポリシーに違反した電子メール内の添付ファイルの名前         | Exchange イベント                          |
-    |                   | サイト所有者                    | サイト所有者の名前                                                     | SharePoint イベントと OneDrive イベント           |
-    |                   | サイトの URL                      | SharePoint または OneDrive サイトの完全な URL                                | SharePoint イベントと OneDrive イベント           |
-    |                   | ファイルが作成されました                  | ファイルの作成時間                                                      | SharePoint イベントと OneDrive イベント           |
-    |                   | 最後に変更されたファイル            | ファイルの最後の変更時刻                                  | SharePoint イベントと OneDrive イベント           |
-    |                   | ファイルのサイズ                     | ファイルのサイズ                                                           | SharePoint イベントと OneDrive イベント           |
-    |                   | ファイルの所有者                    | ファイルの所有者                                                          | SharePoint イベントと OneDrive イベント           |
+    |                   | ファイル パス                     | 違反に関連するファイルの絶対パス                        | SharePoint、OneDrive、デバイスイベント |
+    |                   | 電子メール受信者              | DLP ポリシーに違反した電子メールの受信者                       | Exchangeイベント                          |
+    |                   | メールの件名                 | DLP ポリシーに違反した電子メールの件名                          | Exchangeイベント                          |
+    |                   | メールの添付ファイル             | DLP ポリシーに違反した電子メール内の添付ファイルの名前         | Exchangeイベント                          |
+    |                   | サイト所有者                    | サイト所有者の名前                                                     | SharePointイベントOneDriveイベント           |
+    |                   | サイトの URL                      | サイトまたはサイトSharePointのOneDrive URL                                | SharePointイベントOneDriveイベント           |
+    |                   | ファイルが作成されました                  | ファイルの作成時間                                                      | SharePointイベントOneDriveイベント           |
+    |                   | 最後に変更されたファイル            | ファイルの最後の変更時刻                                  | SharePointイベントOneDriveイベント           |
+    |                   | ファイルのサイズ                     | ファイルのサイズ                                                           | SharePointイベントOneDriveイベント           |
+    |                   | ファイルの所有者                    | ファイルの所有者                                                          | SharePointイベントOneDriveイベント           |
     |*ポリシーの詳細*||
     |     | DLP ポリシーの一致            | 一致した DLP ポリシーの名前                                    | すべてのイベント                               |
     |                   | 一致するルール                  | 一致した DLP ポリシーの DLP ルールの名前                    | すべてのイベント                               |

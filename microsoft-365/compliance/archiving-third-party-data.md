@@ -21,21 +21,21 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームから Microsoft 365 メールボックスにサードパーティのデータをインポートする方法について説明します。
-ms.openlocfilehash: 83ba81907a9db8dd1f4e95e5df3306366838c1ba
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
+ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163652"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764112"
 ---
 # <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 
-Microsoft 365 では、管理者はデータ コネクタを使用して、ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームから Microsoft 365 組織のメールボックスにサードパーティのデータをインポートおよびアーカイブできます。 Microsoft 365 でデータ コネクタを使用してサード パーティ製のデータをインポートおよびアーカイブする主な利点の 1 つは、インポート後にさまざまな Microsoft 365 コンプライアンス ソリューションを適用できる点です。 これにより、組織の Microsoft 以外のデータが、組織に影響を与える規制と標準に準拠しているのを確認できます。
+Microsoft 365を使用すると、管理者はデータ コネクタを使用して、ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームから、Microsoft 365 組織内のメールボックスにサードパーティのデータをインポートおよびアーカイブできます。 Microsoft 365 でデータ コネクタを使用してサード パーティ製のデータをインポートおよびアーカイブする主な利点の 1 つは、インポート後にさまざまな Microsoft 365 コンプライアンス ソリューションを適用できる点です。 これにより、組織の Microsoft 以外のデータが、組織に影響を与える規制と標準に準拠しているのを確認できます。
 
 ## <a name="third-party-data-connectors"></a>サードパーティのデータ コネクタ
 
-次の表に、Microsoft 365 コンプライアンス センターで使用できるサード パーティ製のデータ コネクタを示します。 この表では、Microsoft 365 でインポートおよびアーカイブした後にサード パーティのデータに適用できるコンプライアンス ソリューションの概要も示しています。 各コンプライアンス [ソリューションの詳細](#overview-of-compliance-solutions-that-support-third-party-data) と、サード パーティのデータに対するメリットの詳細については、次のセクションを参照してください。
+次の表に、コンプライアンス センターで使用できるサード パーティMicrosoft 365示します。 また、この表では、サードパーティのデータをインポートおよびアーカイブした後に、サードパーティのデータに適用できるコンプライアンス ソリューションMicrosoft 365。 各コンプライアンス [ソリューションの詳細](#overview-of-compliance-solutions-that-support-third-party-data) と、サード パーティのデータに対するメリットの詳細については、次のセクションを参照してください。
 
 > [!TIP]
 > [サード パーティ製データ] **列** のリンクをクリックして、そのデータ型のコネクタを作成するための手順を実行します。
@@ -47,9 +47,11 @@ Microsoft 365 では、管理者はデータ コネクタを使用して、ソ�
 |[Bell Network <sup>1</sup>](archive-bell-network-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Bloomberg メッセージ](archive-bloomberg-message-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
-|[Cisco Jabber <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Cisco Jabber on MS SQL <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Cisco Jabber on Oracle <sup>2</sup>](archive-ciscojabberonoracle-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[PostgreSQL <sup>2</sup>の Cisco Jabber](archive-ciscojabberonpostgresql-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[EML <sup>2</sup>](archive-eml-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
-|[エンタープライズ番号 <sup>1</sup>](archive-enterprise-number-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Enterprise番号<sup>1</sup>](archive-enterprise-number-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[FX Connect <sup>2</sup>](archive-fxconnect-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[人事 (HR)](import-hr-data.md) ||||||![チェック マーク](../media/checkmark.png)
@@ -57,7 +59,7 @@ Microsoft 365 では、管理者はデータ コネクタを使用して、ソ�
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Jive <sup>2</sup>](archive-jive-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
-|[MS SQL データベース <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
+|[MS SQL Database <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[O2 ネットワーク <sup>1</sup>](archive-o2-network-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[物理バッド](import-physical-badging-data.md) ||||||![チェック マーク](../media/checkmark.png)|
 |[ピボット <sup>2</sup>](archive-pivot-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -84,13 +86,13 @@ Microsoft 365 では、管理者はデータ コネクタを使用して、ソ�
 ||||||||
 
 > [!NOTE]
-> <sup>1</sup> TeleMessage によって提供されるデータ コネクタ。 Microsoft 365 でデータをアーカイブする前に、組織のアーカイブ サービスをセットアップするには、TeleMessage を使用する必要があります。 詳細については、このデータ型の手順の「前提条件」セクションを参照してください。<br/><br/><sup>2</sup> Veritas が提供するデータ コネクタ。 Microsoft 365 でデータをアーカイブする前に、Veritas と作業して組織のアーカイブ サービスをセットアップする必要があります。 詳細については、このデータ型の手順の「前提条件」セクションを参照してください。
+> <sup>1</sup> TeleMessage によって提供されるデータ コネクタ。 データをアーカイブする前Microsoft 365、組織のアーカイブ サービスをセットアップするには、TeleMessage を使用する必要があります。 詳細については、このデータ型の手順の「前提条件」セクションを参照してください。<br/><br/><sup>2</sup> Veritas が提供するデータ コネクタ。 データをアーカイブする前に、Microsoft 365 Veritas を使用して組織のアーカイブ サービスをセットアップする必要があります。 詳細については、このデータ型の手順の「前提条件」セクションを参照してください。
 
 前の表にリストされているサード パーティのデータ (HR データと物理的な不良データを除く) は、ユーザー メールボックスにインポートされます。 サード パーティのデータをサポートする対応するコンプライアンス ソリューションは、データが格納されているユーザー メールボックスに適用されます。
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>サードパーティのデータをサポートするコンプライアンス ソリューションの概要
 
-次のセクションでは、Microsoft 365 コンプライアンス ソリューションが前の表に示したサード パーティデータの管理に役立ついくつかの点について説明します。
+以下のセクションでは、コンプライアンス ソリューションMicrosoft 365前の表に示したサード パーティのデータを管理するのに役立ついくつかの点について説明します。
 
 ### <a name="litigation-hold"></a>訴訟ホールド
 
@@ -98,15 +100,15 @@ Microsoft 365 では、管理者はデータ コネクタを使用して、ソ�
 
 ### <a name="ediscovery"></a>電子情報開示
 
-Microsoft 365 の 3 つの主要な電子情報開示ツールは、コンテンツ検索、コア電子情報開示、および高度な電子情報開示です。
+コンテンツ検索、コア電子情報開示、Microsoft 365の 3 つの主要な電子情報開示Advanced eDiscovery。
 
 - **[コンテンツ検索](content-search.md)。** コンテンツ検索ツールを使用して、インポートしたサード パーティデータのメールボックスを検索できます。 検索クエリと条件を使用して検索結果を絞り込み、検索結果をエクスポートできます。
 
 - **[Core eDiscovery](get-started-core-ediscovery.md).** このツールは、ケース データへのアクセス、ユーザー メールボックスの保持、または検索条件に一致するメールボックス コンテンツの保持を制御できるケースを作成することで、基本的な検索およびエクスポート機能に基づいて構築されます。 つまり、ユーザー のメールボックスにインポートされたサード パーティのデータに電子情報開示ホールドを配置できます。
 
-- **[高度な電子情報開示](overview-ediscovery-20.md).** この強力なツールは、ケースにカストディアンを追加し、保管担当者のデータを保留にし、その後、カストディアンのサードパーティ データをレビューに読み込み、テーマや重複検出などの詳細な分析を行って、Core eDiscovery のケース機能を拡張します。 サード パーティ製のデータをレビュー セットに読み込むと、クエリを実行して絞り込み結果セットにフィルター処理できます。
+- **[Advanced eDiscovery](overview-ediscovery-20.md).** この強力なツールは、ケースにカストディアンを追加し、保管担当者のデータを保留にし、その後、カストディアンのサードパーティ データをレビューに読み込み、テーマや重複検出などの詳細な分析を行って、Core eDiscovery のケース機能を拡張します。 サード パーティ製のデータをレビュー セットに読み込むと、クエリを実行して絞り込み結果セットにフィルター処理できます。
 
-   Core eDiscovery と Advanced eDiscovery の両方を使用すると、組織の法的または内部的な調査に関連する可能性のあるサードパーティのデータを管理できます。
+   Core eDiscovery と Advanced eDiscovery、組織の法的または内部調査に関連する可能性のあるサード パーティのデータを管理できます。
 
 ### <a name="retention-settings"></a>保持設定
 
@@ -114,7 +116,7 @@ Microsoft 365 の 3 つの主要な電子情報開示ツールは、コンテン
 
 ### <a name="records-management"></a>レコード管理
 
-Microsoft [](records-management.md) 365 のレコード管理機能を使用すると、サードパーティのデータをレコードとして宣言できます。 これは、メールボックス内のサードパーティ データをレコードとしてマークするアイテム保持ラベルを適用するユーザーが手動で行うことができます。 または、サードパーティ データ内の機密情報、キーワード、またはコンテンツ タイプを識別して、保持ラベルを自動適用することもできます。
+この[ページの](records-management.md)レコード管理機能Microsoft 365、サード パーティのデータをレコードとして宣言できます。 これは、メールボックス内のサードパーティ データをレコードとしてマークするアイテム保持ラベルを適用するユーザーが手動で行うことができます。 または、サードパーティ データ内の機密情報、キーワード、またはコンテンツ タイプを識別して、保持ラベルを自動適用することもできます。
 
 ### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
 
@@ -126,6 +128,6 @@ Microsoft [](records-management.md) 365 のレコード管理機能を使用す�
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする
 
-サードパーティのデータをインポートおよびアーカイブするもう 1 つのオプションは、組織が Microsoft パートナーと作業することです。 Microsoft コンプライアンス センターで使用できるデータ コネクタでサード パーティのデータ型がサポートされていない場合は、サードパーティのデータ ソースからアイテムを定期的に抽出し、サード パーティ API によって Microsoft クラウドに接続し、それらのアイテムを Microsoft 365 にインポートするように構成されるカスタム コネクタを提供できるパートナーと作業できます。 パートナー コネクタは、アイテムのコンテンツをサードパーティのデータ ソースから電子メール メッセージに変換し、Microsoft 365 のメールボックスにインポートします。
+サードパーティのデータをインポートおよびアーカイブするもう 1 つのオプションは、組織が Microsoft パートナーと作業することです。 Microsoft コンプライアンス センターで使用できるデータ コネクタでサード パーティのデータ型がサポートされていない場合は、サードパーティのデータ ソースからアイテムを定期的に抽出し、サード パーティ製 API によって Microsoft クラウドに接続し、それらのアイテムを Microsoft 365 にインポートするように構成されるカスタム コネクタを提供できるパートナーと作業できます。 パートナー コネクタは、アイテムのコンテンツをサード パーティのデータ ソースから電子メール メッセージに変換し、そのアイテムをメール メッセージにMicrosoft 365。
 
-使用できるパートナーの一覧と、このメソッドのステップ バイ ステップ プロセスについては [、「Microsoft 365](work-with-partner-to-archive-third-party-data.md)でパートナーと協力してサード パーティのデータをアーカイブする」を参照してください。
+使用できるパートナーの一覧と、このメソッドのステップ バイ ステップ プロセスについては、「パートナーと協力して、Microsoft 365 でサード パーティのデータをアーカイブする」[を参照してください](work-with-partner-to-archive-third-party-data.md)。

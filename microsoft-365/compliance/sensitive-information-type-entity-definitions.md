@@ -17,33 +17,22 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: セキュリティ コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーで使用できる &amp; 80 種類の機密情報が含まれています。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。
-ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: セキュリティ コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーで使用できる 200 を超える機密情報の種類 &amp; が含まれています。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。
+ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919713"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086730"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
-コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーで使用できる多くの機密情報の種類が含まれています。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。 機密情報タイプはパターンで定義され、正規表現または関数で識別できます。 キーワードやチェックサムなどの詳細な証拠を使用して、機密情報の種類を特定できます。 また、評価プロセスでは信頼度や近接度も使用されます。
-
-機密情報の種類には、次のいずれかのサブスクリプションが必要です。
-- Microsoft 365 E3
-- Microsoft 365 E5
-
-機密情報の種類は、次の場所で使用されます。
-
-- [データ損失防止ポリシー](data-loss-prevention-policies.md) 
-- [機密ラベル](sensitivity-labels.md)
-- [保持ラベル](retention.md)
-- [通信コンプライアンス](communication-compliance.md)
-- [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーで使用できる多くの機密情報の種類が含まれています。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。 機密情報の種類の詳細については、「機密情報の [種類」を参照してください。](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>ABA ルーティング番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 書式付きまたは書式設定されていないパターンに含め得る 9 桁の数字
 
@@ -108,7 +97,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 ID (DNI) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 ピリオドの付きまたは指定のない 8 桁の数字
 
@@ -155,9 +144,92 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - registro nacional de las personas 
 - rnp 
    
+## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>アルゼンチン固有の税識別キー (CUIT/CUIL)
+
+### <a name="format"></a>Format
+
+ダッシュ付き 11 桁の数字
+
+### <a name="pattern"></a>パターン
+
+ダッシュ付き 11 桁の数字:
+- 20、23、24、27、30、33、34 の 2 桁
+- ハイフン (-)
+- 8 桁
+- ハイフン (-)
+- 1 つのチェックディジット
+
+### <a name="checksum"></a>チェックサム
+
+はい
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数 `Func_Argentina_Unique_Tax_Key` は、パターンに一致するコンテンツを検索します。
+- キーワードが `Keyword_Argentina_Unique_Tax_Key` 見つかりました。
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数 `Func_Argentina_Unique_Tax_Key` は、パターンに一致するコンテンツを検索します。
+
+```xml
+    <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
+      <Entity id="98da3da1-9199-4571-b7c4-b6522980b507" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+          <Match idRef="Keyword_Argentina_Unique_Tax_Key" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
+
+- Clave Unica de Identificacion Tributaria
+- CUIT
+- 一意の労働識別コード 
+- Clave Única de Identificación Tributaria
+- 一意の労働識別コード
+- CUIL
+- 一意の税の識別キー
+- 一意の労働識別キー
+- 労働識別の一意のキー
+- 一意の作業識別コード
+- 一意の作業コードの識別
+- 一意の作業識別キー
+- 作業識別の一意のキー
+- 一意の税の識別コード
+- 納税者識別の一意のキー
+- 一意の労働識別コード
+- 固有の労働識別コード
+- 一意の作業識別キー
+- 労働識別の一意のキー
+- 税 ID
+- taxID#
+- taxId
+- taxidnumber
+- 税番号
+- tax no
+- tax#
+- tax#
+- 納税者 ID
+- 納税者番号
+- 納税者なし
+- 納税者#
+- 納税者#
+- 税金の ID
+- tax identification
+- Número de Identificación Fiscal
+- número de contribuyente
+   
+   
 ## <a name="australia-bank-account-number"></a>オーストラリアの銀行口座番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 銀行の状態分岐番号の付きまたは指定なしの 6 ~ 10 桁の数字
 
@@ -228,7 +300,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - Microsoft クラウド アプリのセキュリティ
 
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字 (オプションの区切り記号付き)
 
@@ -289,7 +361,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 区切り記号付き 9 桁
 
@@ -343,7 +415,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="australia-drivers-license-number"></a>オーストラリアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 文字と数字
 
@@ -494,7 +566,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="australia-medical-account-number"></a>オーストラリアの医療アカウント番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 ～ 11 桁の数字
 
@@ -545,7 +617,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="australia-passport-number"></a>オーストラリアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 1 桁の文字の後に 7 桁の数字
 
@@ -616,7 +688,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="australia-tax-file-number"></a>オーストラリアの税ファイル番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 桁から 9 桁
 
@@ -666,7 +738,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="austria-drivers-license-number"></a>オーストリアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 8 桁の数字
   
@@ -838,7 +910,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 文字、数字、特殊文字の 24 文字の組み合わせ
   
@@ -881,7 +953,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="austria-passport-number"></a>オーストリアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 1 文字の後にオプションのスペースと 7 桁の数字が続きます。
   
@@ -964,7 +1036,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="austria-social-security-number"></a>オーストリアの社会保障番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 指定した形式の 10 桁
   
@@ -1036,7 +1108,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="austria-tax-identification-number"></a>オーストリアの納税者番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 オプションのハイフンとスラッシュを含む 9 桁の数字
   
@@ -1109,7 +1181,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 文字の英数字パターン
 
@@ -1176,7 +1248,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 認証キー
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 文字列 "DocumentDb" の後に、次のパターンで概説されている文字と文字列が続きます。
 
@@ -1228,7 +1300,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS データベース接続文字列と Azure SQL接続文字列
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 文字列 "Server"、"server"、または "data source" の後に、以下のパターンで概説されている文字列 ("cloudapp.azure" という文字列を含む) が続きます。<!--no-hyperlink-->com" または "cloudapp.azure" を指定します。<!--no-hyperlink-->net" または "database.windows" を指定します。<!--no-hyperlink-->net"、および文字列 "Password" または "password" または "pwd"
 
@@ -1286,9 +1358,9 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - testacs。<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->net
 
-## <a name="azure-iot-connection-string"></a>Azure IoT 接続文字列
+## <a name="azure-iot-connection-string"></a>Azure IoT接続文字列
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 文字列 "HostName" の後に、以下のパターンで概説されている文字列 ("azure-devices" という文字列を含む) が続きます。<!--no-hyperlink-->net」と「SharedAccessKey」。
 
@@ -1348,7 +1420,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="azure-publish-setting-password"></a>Azure 発行設定パスワード
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 文字列 "userpwd=" の後に英数字の文字列が続きます。
 
@@ -1399,7 +1471,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="azure-redis-cache-connection-string"></a>Azure Redis キャッシュ接続文字列
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 文字列 "redis.cache.windows。<!--no-hyperlink-->net" の後に、文字列 "password" または "pwd" を含む、以下のパターンで概説されている文字と文字列が続きます。
 
@@ -1454,7 +1526,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="azure-sas"></a>Azure SAS
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 文字列 "sig" の後に、以下のパターンで概説されている文字と文字列が続きます。
 
@@ -1488,7 +1560,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="azure-service-bus-connection-string"></a>Azure Service バス接続文字列
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 文字列 "EndPoint" の後に、文字列 "servicebus.windows" を含む、以下のパターンで概説されている文字と文字列が続きます。<!--no-hyperlink-->net」および「SharedAccesKey」を参照してください。
 
@@ -1548,7 +1620,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="azure-storage-account-key"></a>Azure ストレージ アカウント キー
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 "DefaultEndpointsProtocol" という文字列の後に、"AccountKey" という文字列を含む、以下のパターンで概説されている文字と文字列が続きます。
 
@@ -1614,7 +1686,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="azure-storage-account-key-generic"></a>Azure Storage アカウント キー (汎用)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 86 文字の小文字または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせで、次のパターンで説明されている文字が先行または続きます。
 
@@ -1643,7 +1715,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 ```
 ## <a name="belgium-drivers-license-number"></a>ベルギーの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 10 桁の数字
   
@@ -1815,7 +1887,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="belgium-national-number"></a>ベルギーの国番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字とオプションの区切り記号
 
@@ -1919,7 +1991,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="belgium-passport-number"></a>ベルギーのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字の後に 6 桁の数字が続き、スペースまたは区切り記号は使用されません。
   
@@ -2009,7 +2081,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 12 文字の英数字パターン
 
@@ -2071,7 +2143,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="brazil-cpf-number"></a>ブラジルの CPF 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 書式設定ありまたは書式設定なしのチェック ディジットを含む 11 桁の数字
 
@@ -2123,7 +2195,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 - CPF
 - ID
-- 登録
+- Registration
 - 収益
 - Cadastro de Pessoas Físicas 
 - Imposto 
@@ -2134,7 +2206,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>ブラジルの法人番号 (CNPJ)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 登録番号、枝番号、チェック ディジット、および区切り文字を含む 14 桁の数字
 
@@ -2193,7 +2265,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - Legal entities 
 - Registration Status 
 - Business 
-- Company
+- 会社名
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -2207,7 +2279,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="brazil-national-identification-card-rg"></a>ブラジルの国民識別カード (RG)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 Registro Geral (旧形式): 9 桁
 
@@ -2267,7 +2339,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="bulgaria-drivers-license-number"></a>ブルガリアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 9 桁の数字
   
@@ -2438,7 +2510,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 10 桁の数字
   
@@ -2531,7 +2603,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="bulgaria-passport-number"></a>ブルガリアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 9 桁の数字
   
@@ -2605,7 +2677,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="canada-bank-account-number"></a>カナダの銀行口座番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 7 桁または 12 桁
 
@@ -2679,7 +2751,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="canada-drivers-license-number"></a>カナダの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 州によって異なります
 
@@ -2897,7 +2969,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="canada-health-service-number"></a>カナダの正常性サービス番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
  10 桁の数字
 
@@ -2944,7 +3016,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
       
 ## <a name="canada-passport-number"></a>カナダのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 つの大文字と 6 桁の数字
 
@@ -3012,7 +3084,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="canada-personal-health-identification-number-phin"></a>カナダの個人の健康識別番号 (PHIN)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁
 
@@ -3083,7 +3155,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="canada-social-insurance-number"></a>カナダの社会保険番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 オプションのハイフンまたはスペースを含む 9 桁の数字
 
@@ -3167,7 +3239,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="chile-identity-card-number"></a>チリの ID カード番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 7 桁から 8 桁の数字と、チェック桁または文字の区切り記号
 
@@ -3252,7 +3324,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="china-resident-identity-card-prc-number"></a>中国在住の ID カード (PRC) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 18 桁の数字
 
@@ -3310,7 +3382,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="credit-card-number"></a>クレジット カード番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 14 ~ 16 桁の数字 (dddddddd
 
@@ -3392,9 +3464,12 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód. segurança
-- cod。 seguranca
-- cod。 segurança
+- 
+cód. segurança
+- cod. seguranca
+
+- cod. segurança
+
 - cód. seguranca
 - cód segurança
 - cod seguranca
@@ -3574,7 +3649,8 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - no do cartão
 - no do cartao
 - 違います。 do cartão
-- 違います。 do cartao
+- no. do cartao
+
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3608,7 +3684,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="croatia-drivers-license-number"></a>クロアチアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 8 桁の数字
   
@@ -3773,7 +3849,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 ## <a name="croatia-identity-card-number"></a>クロアチアの ID カード番号
 この機密情報の種類エンティティは、EU の国民識別番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁
 
@@ -3837,7 +3913,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="croatia-passport-number"></a>クロアチアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 9 桁の数字
   
@@ -3906,7 +3982,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="croatia-personal-identification-oib-number"></a>クロアチアの個人識別 (OIB) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -3979,7 +4055,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="cyprus-drivers-license-number"></a>キプロスのドライバーのライセンス番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 12 桁の数字
   
@@ -4148,7 +4224,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 10 桁の数字
   
@@ -4190,7 +4266,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="cyprus-passport-number"></a>キプロスのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 1 文字の後に 6 ~ 8 桁の数字が続き、スペースや区切り記号はありません。
   
@@ -4280,7 +4356,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 指定したパターンの 8 桁の数字と 1 文字
   
@@ -4351,7 +4427,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="czech-drivers-license-number"></a>チェコの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字の後に 6 桁の数字が続く
   
@@ -4520,7 +4596,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="czech-passport-number"></a>チェコのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号のない 8 桁の数字
   
@@ -4598,7 +4674,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="czech-personal-identity-number"></a>チェコの個人 ID 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 オプションのスラッシュ付き 9 桁 (古い形式) 10 桁 、オプションのスラッシュ (新しい形式)
 
@@ -4698,7 +4774,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="denmark-drivers-license-number"></a>デンマークの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 8 桁の数字
   
@@ -4860,7 +4936,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="denmark-passport-number"></a>デンマークのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 9 桁の数字
   
@@ -4937,7 +5013,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="denmark-personal-identification-number"></a>デンマークの個人識別番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 ハイフンを 1 つ含む 10 桁の数字
 
@@ -5054,7 +5130,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="drug-enforcement-agency-dea-number"></a>麻薬取締局 (DEA) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字の後に 7 桁の数字を付け
 
@@ -5112,7 +5188,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="estonia-drivers-license-number"></a>エストニアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字の後に 6 桁の数字が続く
   
@@ -5285,7 +5361,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 11 桁の数字
   
@@ -5366,7 +5442,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="estonia-passport-number"></a>エストニアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 1 文字の後にスペースまたは区切り記号を付けない 7 桁の数字
   
@@ -5440,7 +5516,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ## <a name="eu-debit-card-number"></a>EU のデビット カード番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 16 桁の数字
 
@@ -5606,11 +5682,15 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - no de tarjeta 
 - no do cartao 
 - no do cartão 
-- 違います。 de tarjeta 
-- 違います。 do cartao 
-- 違います。 do cartão 
+- no. de tarjeta
+ 
+- no. do cartao
+ 
+- no. do cartão
+ 
 - nr carta 
-- nr. carta 
+- nr. carta
+ 
 - numeri di scheda 
 - numero carta 
 - numero de cartao 
@@ -5629,7 +5709,8 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - nº de tarjeta 
 - nº do cartao 
 - nº do cartão 
-- nº。 do cartão 
+- nº. do cartão
+ 
 - número de cartao 
 - número de cartão 
 - número de tarjeta 
@@ -5681,10 +5762,14 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- cod。 seg 
-- cod。 seguranca 
-- cod。 segurança 
-- cod。 sicurezza 
+- cod. seg
+ 
+- cod. seguranca
+ 
+- cod. segurança
+ 
+- cod. sicurezza
+ 
 - codice di sicurezza 
 - codice di verifica 
 - codigo 
@@ -5701,8 +5786,10 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - cvv2 
 - cód seguranca 
 - cód segurança 
-- cód. seguranca 
-- cód. segurança 
+- cód. seguranca
+ 
+- cód. segurança
+ 
 - código 
 - código de seguranca 
 - código de segurança 
@@ -5714,8 +5801,10 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - kreditkartenprufnummer 
 - kreditkartenprüfnummer 
 - kwestieaantal 
-- 違います。 dell'edizione 
-- 違います。 di sicurezza 
+- no. dell'edizione
+ 
+- no. di sicurezza
+ 
 - numero de securite 
 - numero de verificacao 
 - numero dell'edizione 
@@ -5944,7 +6033,7 @@ EU 社会保障番号または同等の ID に含み、機密情報の種類で�
 
 ## <a name="finland-drivers-license-number"></a>フィンランドの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 ハイフンを 1 つ含む 10 桁の数字
   
@@ -6125,7 +6214,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 20 桁の番号
 
@@ -6179,7 +6268,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="finland-national-id"></a>フィンランドの国民 ID
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 6 桁の数字と、1 世紀と 3 桁の数字とチェック桁を示す文字
 
@@ -6274,7 +6363,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 この機密情報の種類エンティティは、EU Passport Number 機密情報の種類で使用できます。スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 9 つの文字と数字の組み合わせ
 
 ### <a name="pattern"></a>パターン
@@ -6354,7 +6443,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類で使用できます。スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 12 桁の数字
 
@@ -6520,7 +6609,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 21 桁の番号
 
@@ -6565,7 +6654,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="france-national-id-card-cni"></a>フランスの国民 ID カード (CNI)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 12 桁の数字
 
@@ -6613,7 +6702,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 ## <a name="france-passport-number"></a>フランスのパスポート番号
 この機密情報の種類エンティティは、EU Passport Number 機密情報の種類で使用できます。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁の数字と文字
 
@@ -6704,7 +6793,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="france-social-security-number-insee"></a>フランスの社会保障番号 (INSEE)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 15 桁の数字
 
@@ -6759,14 +6848,16 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - national id
 - national identification
 - no d'identité
-- 違います。 d'identité
+- 
+no. d'identité
 - numéro d'assurance
 - numéro d'identité
 - numero d'identite
 - numéro de sécu
 - numéro de sécurité sociale
 - no d'identite
-- 違います。 d'identite
+- 
+no. d'identite
 - ssn
 - ssn#
 - sécurité sociale
@@ -6780,7 +6871,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="france-tax-identification-number"></a>フランスの納税者番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 13 桁の数字
   
@@ -6862,7 +6953,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 13 文字の英数字パターン
 
@@ -6925,7 +7016,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字と文字の組み合わせ
 
@@ -7113,7 +7204,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="germany-identity-card-number"></a>ドイツの ID カード番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2010 年 11 月 1 日以降: 9 文字と数字
 
@@ -7171,7 +7262,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 この機密情報の種類エンティティは、EU Passport Number 機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 桁の数字または文字
 
@@ -7249,7 +7340,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="germany-tax-identification-number"></a>ドイツの納税者番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 11 桁の数字
   
@@ -7329,7 +7420,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 文字の英数字パターン
 
@@ -7388,7 +7479,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 9 桁の数字
   
@@ -7553,7 +7644,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="greece-national-id-card"></a>ギリシャの国民 ID カード
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 7 ～ 8 桁の文字と数字の組み合わせとハイフン 1 つ
 
@@ -7611,7 +7702,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="greece-passport-number"></a>ギリシャのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字の後に 7 桁の数字が続き、スペースまたは区切り記号は使用されません。
   
@@ -7688,7 +7779,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 11 桁の数字
   
@@ -7746,7 +7837,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 9 桁の数字
   
@@ -7809,7 +7900,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>香港の ID カード (HKID) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 ～ 9 桁の文字と数字の組み合わせ、最後の文字はかっこで囲むことも可能
 
@@ -7893,7 +7984,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="hungary-drivers-license-number"></a>ハンガリーの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字の後に 6 桁の数字が続く
   
@@ -8066,7 +8157,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字
   
@@ -8126,7 +8217,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="hungary-passport-number"></a>ハンガリーのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 つの文字の後に 6 桁または 7 桁の数字が続き、スペースまたは区切り記号はありません。
   
@@ -8201,7 +8292,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="hungary-social-security-number-taj"></a>ハンガリーの社会保障番号 (TAJ)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 9 桁の数字
   
@@ -8268,7 +8359,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号がない 10 桁
   
@@ -8349,7 +8440,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 文字の英数字パターン
 
@@ -8408,7 +8499,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="india-permanent-account-number-pan"></a>インドの永続的なアカウント番号 (PAN)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 桁の文字または数字
 
@@ -8459,7 +8550,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="india-unique-identification-aadhaar-number"></a>インドの一意の ID (Aadhaar) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 省略可能なスペースまたはハイフンを含む 12 桁の数字
 
@@ -8513,7 +8604,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="indonesia-identity-card-ktp-number"></a>インドネシアの ID カード (KTP) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 省略可能なピリオドを含む 16 桁の数字
 
@@ -8559,7 +8650,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="international-banking-account-number-iban"></a>国際銀行口座番号 (IBAN)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 国コード (2 文字) プラスチェックの数字 (2 桁) プラス bban 番号 (最大 30 文字)
 
@@ -8602,7 +8693,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>病気の国際分類 (ICD-10-CM)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 Dictionary
 
@@ -8644,7 +8735,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>病気の国際分類 (ICD-9-CM)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 Dictionary
 
@@ -8685,7 +8776,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="ip-address"></a>IP アドレス
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 #### <a name="ipv4"></a>IPv4:
 IPv4 アドレスの書式付き (ピリオド) バージョンと書式設定されていない (ピリオドなし) バージョンをアカウントする複雑なパターン
@@ -8749,7 +8840,7 @@ IPv6 の場合、DLP ポリシーは、次の 300 文字に近い場合に、こ
 
 ## <a name="ireland-drivers-license-number"></a>アイルランドの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 6 桁の数字の後に 4 文字
   
@@ -8915,7 +9006,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="ireland-passport-number"></a>アイルランドのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 つの文字または数字の後に、スペースまたは区切り記号がない 7 桁の数字
   
@@ -8998,7 +9089,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="ireland-personal-public-service-pps-number"></a>アイルランドの個人公開サービス (PPS) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 古い形式 (2012 年 12 月 31 日まで):
 - 7 桁の数字の後に 1 ~ 2 文字 
@@ -9095,7 +9186,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="israel-bank-account-number"></a>イスラエルの銀行口座番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 13 桁の数字
 
@@ -9144,7 +9235,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="israel-national-identification-number"></a>イスラエルの国民識別番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁
 
@@ -9201,7 +9292,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 文字と数字の組み合わせ
 
@@ -9376,7 +9467,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 指定したパターンの文字と数字の 16 文字の組み合わせ
   
@@ -9457,7 +9548,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="italy-passport-number"></a>イタリアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 つの文字または数字の後にスペースまたは区切り記号を付けない 7 桁の数字
   
@@ -9546,7 +9637,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 13 文字の英数字パターン (オプションの区切り記号付き)
 
@@ -9598,7 +9689,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="japan-bank-account-number"></a>日本の銀行口座番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 7 桁または 8 桁
 
@@ -9701,7 +9792,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="japan-drivers-license-number"></a>日本の運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 12 桁の数字
 
@@ -9778,7 +9869,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 13 桁の数字
 
@@ -9839,7 +9930,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 12 桁の番号
 
@@ -9897,7 +9988,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="japan-passport-number"></a>日本のパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字の後に 7 桁の数字を付け
 
@@ -9947,7 +10038,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="japan-residence-card-number"></a>日本の在留カード番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 12 文字と数字
 
@@ -9991,7 +10082,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="japan-resident-registration-number"></a>日本居住者登録番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -10037,7 +10128,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="japan-social-insurance-number-sin"></a>日本の社会保険番号 (SIN)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 7～ 12 桁の数字
 
@@ -10103,7 +10194,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="latvia-drivers-license-number"></a>ラトビアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 3 文字の後に 6 桁の数字が続く
   
@@ -10269,7 +10360,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="latvia-personal-code"></a>ラトビアの個人用コード
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字とオプションのハイフン
   
@@ -10400,7 +10491,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="latvia-passport-number"></a>ラトビアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 つの文字または数字の後にスペースまたは区切り記号を付けない 7 桁の数字
   
@@ -10482,7 +10573,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="lithuania-drivers-license-number"></a>リトアニアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 8 桁の数字
   
@@ -10651,7 +10742,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 11 桁の数字
   
@@ -10733,7 +10824,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="lithuania-passport-number"></a>リトアニアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号を含む 8 桁の数字または文字
   
@@ -10809,7 +10900,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="luxemburg-drivers-license-number"></a>ルクセンブルクの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 6 桁の数字
   
@@ -10977,7 +11068,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号がない 13 桁の数字
   
@@ -11046,7 +11137,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="luxemburg-passport-number"></a>ルクセンブルクのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号を含む 8 桁の数字または文字
   
@@ -11133,7 +11224,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a>ルクセンブルクの国民識別番号 (非自然人)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字
   
@@ -11225,7 +11316,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="malaysia-identification-card-number"></a>マレーシアの ID カード番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 省略可能なハイフンを含む 12 桁の数字
 
@@ -11291,7 +11382,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="malta-drivers-license-number"></a>マルタの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 指定したパターンの 2 文字と 6 桁の組み合わせ
   
@@ -11466,7 +11557,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 7 桁の数字の後に 1 文字
   
@@ -11525,7 +11616,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="malta-passport-number"></a>マルタのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号のない 7 桁の数字
   
@@ -11598,7 +11689,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="malta-tax-identification-number"></a>マルタの納税者番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 マルタ国民の場合:
 - 指定したパターンの 7 桁の数字と 1 文字
@@ -11685,9 +11776,135 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 一意の ID 番号
 - uniqueidentityno#
 
+
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>メディケア受益者識別子 (MBI) カード
+
+### <a name="format"></a>Format
+
+11 文字の英数字パターン
+  
+### <a name="pattern"></a>パターン
+
+- 1 ~ 9 の 1 桁
+- S、L、O、I、B、Z を除く 1 文字
+- S、L、O、I、B、Z を除く 1 桁または文字
+- 1 桁
+- オプションのハイフン
+- S、L、O、I、B、Z を除く 1 文字
+- S、L、O、I、B、Z を除く 1 桁または文字
+- 1 桁
+- オプションのハイフン
+- S、L、O、I、B、Z を除く 2 つの文字
+- 2 桁
+    
+### <a name="checksum"></a>チェックサム
+
+いいえ
+  
+### <a name="definition"></a>定義
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、  `Regex_mbi_card` パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keyword_mbi_card` 見つかりました。 
+    
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、  `Regex_mbi_card` パターンに一致するコンテンツを検索します。 
+    
+```xml
+    <!-- Medicare Beneficiary Identifier (MBI) card -->
+      <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_mbi_card" />
+          <Match idRef="Keyword_mbi_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_mbi_card" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keyword_mbi_card"></a>Keyword_mbi_card
+
+- mbi
+- mbi#
+- medicare 受益者#
+- medicare 受益者識別子
+- medicare 受益者なし
+- medicare 受益者番号
+- medicare 受益者#
+
+
+## <a name="mexico-unique-population-registry-code-curp"></a>メキシコ固有の人口レジストリ コード (CURP)
+
+### <a name="format"></a>Format
+
+18 文字の英数字パターン
+  
+### <a name="pattern"></a>パターン
+
+- 4 文字 (大文字と小文字を区別しない)
+- 有効な日付を示す 6 桁の数字
+- 文字 - H/h または M/m
+- 有効なメキシコの州コードを示す 2 文字
+- 3 文字
+- 1 文字または数字
+- 1 桁
+    
+### <a name="checksum"></a>チェックサム
+
+いいえ
+  
+### <a name="definition"></a>定義
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数  `Func_mexico_population_registry_code` は、パターンに一致するコンテンツを検索します。 
+- キーワードが  `Keyword_mexico_population_registry_code` 見つかりました。 
+    
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数  `Func_mexico_population_registry_code` は、パターンに一致するコンテンツを検索します。 
+    
+```xml
+    <!-- Mexico Unique Population Registry Code (CURP) -->
+      <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+          <Match idRef="Keyword_mexico_population_registry_code" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keyword_mexico_population_registry_code"></a>Keyword_mexico_population_registry_code
+
+- Clave Única de Registro de Población
+- Clave Unica de Registro de Poblacion
+- 一意の母集団レジストリ コード 
+- 一意の母集団コード
+- CURP
+- 個人用 ID
+- 一意の ID
+- personalid
+- personalidnumber
+- uniqueidkey
+- uniqueidnumber
+- clave única
+- clave unica
+- clave 個人用 Identidad
+- 個人用 Identidad Clave
+- ClaveÚnica
+- claveunica
+- clavepersonalIdentidad
+
+
 ## <a name="netherlands-citizens-service-bsn-number"></a>オランダの市民サービス (BSN) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 オプションのスペースを含む 8 桁または 9 桁の数字
 
@@ -11749,7 +11966,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="netherlands-drivers-license-number"></a>オランダの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 10 桁の数字
   
@@ -11916,7 +12133,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="netherlands-passport-number"></a>オランダのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号がない 9 文字または数字
   
@@ -11990,7 +12207,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号のない 9 桁の数字
   
@@ -12073,7 +12290,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 14 文字の英数字パターン
 
@@ -12135,7 +12352,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 14 桁から 16 桁のパターン (オプションの区切り文字付き)
 
@@ -12197,7 +12414,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 文字の英数字パターン
 
@@ -12312,7 +12529,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 桁または 9 桁の数字 (オプションの区切り記号付き)
 
@@ -12366,7 +12583,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="new-zealand-ministry-of-health-number"></a>ニュージーランド保健省番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 3 文字、スペース (省略可能)、および 4 桁の数字
 
@@ -12429,7 +12646,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁
 
@@ -12483,7 +12700,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="norway-identification-number"></a>ノルウェーの ID 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -12536,7 +12753,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>フィリピンの統合多目的識別番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 ハイフンで区切られた 12 桁の数字
 
@@ -12580,7 +12797,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="poland-drivers-license-number"></a>ポーランドの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 つのスラッシュを含む 14 桁
   
@@ -12748,7 +12965,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="poland-identity-card"></a>ポーランドの ID カード
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 3 文字と 6 桁の数字
 
@@ -12787,12 +13004,13 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - Nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 - Dowód Tożsamości
-- dow. os。
+- dow. os.
+
 
    
 ## <a name="poland-national-id-pesel"></a>ポーランドの国民 ID (PESEL)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -12848,7 +13066,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 ## <a name="poland-passport-number"></a>ポーランドのパスポート番号
 この機密情報の種類エンティティは、EU Passport Number 機密情報の種類に含まれています。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字と 7 桁
 
@@ -12941,7 +13159,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁または 14 桁の番号
 
@@ -13007,7 +13225,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号がない 11 桁の数字
   
@@ -13071,7 +13289,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="portugal-citizen-card-number"></a>ポルトガルの市民カード番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 桁
 
@@ -13124,7 +13342,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="portugal-drivers-license-number"></a>ポルトガルの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 つのパターン - 2 文字の後に特殊文字を含む 5 ~ 8 桁の数字
   
@@ -13307,7 +13525,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="portugal-passport-number"></a>ポルトガルのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 1 文字の後にスペースまたは区切り記号がない 6 桁の数字
   
@@ -13393,7 +13611,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="portugal-tax-identification-number"></a>ポルトガルの納税者番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 オプションのスペースを含む 9 桁の数字
   
@@ -13461,7 +13679,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="romania-drivers-license-number"></a>ルーマニアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 1 文字の後に 8 桁の数字を付け
   
@@ -13635,7 +13853,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 13 桁の数字
   
@@ -13727,7 +13945,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="romania-passport-number"></a>ルーマニアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 8 桁または 9 桁の数字
   
@@ -13807,7 +14025,7 @@ numărul paărul paăaportului numarul pasaportului numerele pa ăaportului Paă
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 桁の番号
 
@@ -13869,7 +14087,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁の数字
 
@@ -13923,7 +14141,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="saudi-arabia-national-id"></a>サウジアラビアの国民 ID
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 桁の数字
 
@@ -13965,7 +14183,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>シンガポールの国民登録 ID カード (NRIC) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 文字と数字
 
@@ -14019,7 +14237,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="slovakia-drivers-license-number"></a>スロバキアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 1 文字の後に 7 桁の数字を付け
   
@@ -14192,7 +14410,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 オプションの円記号を含む 9 桁または 10 桁の数字
   
@@ -14281,7 +14499,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="slovakia-passport-number"></a>スロバキアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 1 桁または文字の後にスペースまたは区切り記号を付けない 7 桁の数字
   
@@ -14359,7 +14577,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="slovenia-drivers-license-number"></a>スロベニアの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 9 桁の数字
   
@@ -14530,7 +14748,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号のない 13 桁の数字
   
@@ -14601,7 +14819,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="slovenia-passport-number"></a>スロベニアのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字の後に 7 桁の数字が続き、スペースまたは区切り記号は使用されません。
   
@@ -14690,7 +14908,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたは区切り記号がない 8 桁の数字
   
@@ -14755,7 +14973,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="south-africa-identification-number"></a>南アフリカの ID 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 省略可能なスペースを含む 13 桁の数字
 
@@ -14799,7 +15017,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="south-korea-resident-registration-number"></a>韓国居住者登録番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 ハイフンを 1 つ含む 13 桁の数字
 
@@ -14853,7 +15071,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="spain-drivers-license-number"></a>スペインの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 桁の数字の後に 1 文字
   
@@ -15050,7 +15268,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 桁の数字の後に 1 文字
   
@@ -15124,7 +15342,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="spain-passport-number"></a>スペインのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 文字または 9 文字の文字と数字の組み合わせで、スペースや区切り記号はありません。
   
@@ -15214,7 +15432,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 ## <a name="spain-social-security-number-ssn"></a>スペインの社会保障番号 (SSN)
 
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 ～ 12 桁の数字
 
@@ -15274,7 +15492,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 指定したパターンの 7 桁または 8 桁の数字と 1 文字または 2 文字
   
@@ -15378,7 +15596,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="sql-server-connection-string"></a>SQL Server接続文字列
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 文字列 "User Id"、"User ID"、"uid"、または "UserId" の後に、以下のパターンで概説されている文字と文字列が続きます。
 
@@ -15454,7 +15672,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="sweden-drivers-license-number"></a>スウェーデンの運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 ハイフンを含む 10 桁の数字
   
@@ -15629,7 +15847,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="sweden-national-id"></a>スウェーデンの国民 ID
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 桁または 12 桁の数字とオプションの区切り記号 1 つ
 
@@ -15693,7 +15911,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="sweden-passport-number"></a>スウェーデンのパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 桁
 
@@ -15792,7 +16010,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 桁の数字と指定したパターンの記号
   
@@ -15868,7 +16086,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="swift-code"></a>SWIFT コード
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 4 文字の後に 5 ~ 31 文字または数字
 
@@ -15947,7 +16165,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 13 桁の数字
 
@@ -16015,7 +16233,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="taiwan-national-identification-number"></a>台湾の国民識別番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 1 文字 (英語) の後に 9 桁
 
@@ -16075,7 +16293,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="taiwan-passport-number"></a>台湾のパスポート番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 - 生体認証パスポート番号: 9 桁
 - 生体認証以外のパスポート番号: 9 桁
@@ -16123,7 +16341,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>台湾在住証明書 (ARC/TARC) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 10 桁の文字と数字
 
@@ -16171,7 +16389,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="thai-population-identification-code"></a>タイの人口識別コード
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 13 桁の数字
 
@@ -16220,7 +16438,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
   
 ## <a name="turkish-national-identification-number"></a>トルコの国民識別番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -16265,7 +16483,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="uk-drivers-license-number"></a>英国 運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 指定の形式で組み合わせた 18 桁の文字と数字
 
@@ -16432,7 +16650,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="uk-electoral-roll-number"></a>英国 選挙ロール番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 2 文字の後に 1 ~ 4 桁の数字が続く
 
@@ -16474,7 +16692,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="uk-national-health-service-number"></a>英国 国民保健サービス番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースで区切られた 10 ～ 17 桁の数字
 
@@ -16542,7 +16760,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 ## <a name="uk-national-insurance-number-nino"></a>英国 国民保険番号 (NINO)
 この機密情報の種類エンティティは、EU の国民識別番号の機密情報の種類に含まれています。 スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースまたはダッシュで区切られた 7 文字または 9 文字
 
@@ -16625,7 +16843,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 スペースと区切り記号のない 10 桁の数字
  
@@ -16678,7 +16896,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="us-bank-account-number"></a>米国の銀行口座番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 6 ~ 17 桁
 
@@ -16740,7 +16958,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="us-drivers-license-number"></a>米国の運転免許証番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 州に応じて異なる
 
@@ -16892,7 +17110,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>米国の個人納税者 ID 番号 (ITIN)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 "9" で始まる 9 桁の数字で、4 桁目として "7" または "8" を含み、必要に応じてスペースまたはダッシュで書式設定されます。
 
@@ -16970,7 +17188,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="us-social-security-number-ssn"></a>米国の社会保障番号 (SSN)
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁の数字 (書式付きまたは書式設定されていないパターンの場合があります)
 
@@ -17050,7 +17268,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
    
 ## <a name="us--uk-passport-number"></a>米国/英国 passport number
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁
 
@@ -17123,7 +17341,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 9 桁
 
@@ -17171,7 +17389,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - レコード管理
 - Microsoft クラウド アプリのセキュリティ
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 8 文字の英数字パターン
 

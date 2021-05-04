@@ -16,15 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 365 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティングOffice説明します。
+description: 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順Office 365説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a867ed2e55c73fe4bbd890273d78cf57f4bfbd2c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926547"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060992"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、解決する
 
@@ -38,7 +38,7 @@ ms.locfileid: "50926547"
 
 同じユーザー ID を持つ重複ユーザーまたは配布リストを確認します。
 
-1. コンプライアンス センター [PowerShell &に接続します](/powershell/exchange/connect-to-scc-powershell)。
+1. Connect[コンプライアンス センター PowerShell &にアクセスします](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 次のコマンドを実行して、ユーザー名のすべてのインスタンスを取得します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "50926547"
 
 このエラーが表示された場合は、検索で失敗した場所を確認してから、失敗した場所でのみ検索を再実行することをお勧めします。
 
-1. コンプライアンス センター [PowerShell &に接続し、](/powershell/exchange/connect-to-scc-powershell) 次のコマンドを実行します。
+1. Connectコンプライアンス センター [powerShell &に移動し、](/powershell/exchange/connect-to-scc-powershell)次のコマンドを実行します。
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -80,9 +80,9 @@ ms.locfileid: "50926547"
 
 ## <a name="errorissue-file-not-found"></a>エラー/問題: ファイルが見つかりません
 
-SharePoint Online と One Drive For Business の場所を含む電子情報開示検索を実行すると、ファイルがサイト上にありますが、エラー `File Not Found` が表示される場合があります。 このエラーは、エクスポートの警告に表示され、errors.csvまたはスキップitems.csv。 これは、サイトでファイルが見つからない場合、またはインデックスが最新の日付でなかった場合に発生する可能性があります。 実際のエラーのテキストを次に示します (強調が追加されています)。
+オンラインとビジネス向け 1 つのドライブの場所SharePoint含む電子情報開示検索を実行すると、ファイルがサイト上にありますが、エラー `File Not Found` が表示される場合があります。 このエラーは、エクスポートの警告に表示され、errors.csvまたはスキップitems.csv。 これは、サイトでファイルが見つからない場合、またはインデックスが最新の日付でなかった場合に発生する可能性があります。 実際のエラーのテキストを次に示します (強調が追加されています)。
 
-> 28.06.2019 10:02:19_FailedToExportItem_Failedダウンロードします。 その他の診断情報 : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Document タイプのコンテンツ 6ea52149-91cd-4965-b5bb-82ca6a3ec9be からダウンロードできなかった。 相関 ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 --->.SharePoint.Client.ServerException: ***ファイルが見つかりません***。 at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---
+> 28.06.2019 10:02:19_FailedToExportItem_Failedダウンロードします。 その他の診断情報 : Microsoft。Office。Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Document 型のコンテンツ 6ea52149-91cd-4965-b5bb-82ca6a3ec9be からのダウンロードに失敗しました。 相関 ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint。Client.ServerException:***ファイルが見つかりません***。 at Microsoft.SharePoint。Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint。Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---
 
 ### <a name="resolution"></a>解決方法
 
@@ -92,13 +92,13 @@ SharePoint Online と One Drive For Business の場所を含む電子情報開�
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>エラー/問題: 受信者が見つからないため、検索が失敗する
 
-電子情報開示の検索が失敗し、エラーが発生しました `recipient not found` 。 このエラーは、オブジェクトが同期されていないため、ユーザー オブジェクトが Exchange Online Protection (EOP) で見つからない場合に発生する可能性があります。
+電子情報開示の検索が失敗し、エラーが発生しました `recipient not found` 。 このエラーは、オブジェクトが同期されていないので、Exchange Online Protection (EOP) でユーザー オブジェクトが見つからない場合に発生することがあります。
 
 ### <a name="resolution"></a>解決方法
 
 1. [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) に接続する
 
-2. 次のコマンドを実行して、ユーザーが Exchange Online Protection と同期されている場合は、次のコマンドを実行します。
+2. 次のコマンドを実行して、ユーザーが同期されている場所を確認Exchange Online Protection。
 
    ```powershell
    Get-Recipient <userId> | FL
@@ -112,7 +112,7 @@ SharePoint Online と One Drive For Business の場所を含む電子情報開�
 
 ### <a name="resolution"></a>解決方法
 
-1. コンプライアンス センター [PowerShell &に接続し、](/powershell/exchange/connect-to-scc-powershell) 次のコマンドを実行します。
+1. Connectコンプライアンス センター [powerShell &に移動し、](/powershell/exchange/connect-to-scc-powershell)次のコマンドを実行します。
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -142,7 +142,7 @@ SharePoint Online と One Drive For Business の場所を含む電子情報開�
 
 1. 検索を小さな検索に分割し、もう一度検索を実行します。  日付範囲を小さくするか、検索する場所の数を制限してみてください。
 
-2. コンプライアンス センター [PowerShell &に接続し、](/powershell/exchange/connect-to-scc-powershell) 次のコマンドを実行します。
+2. Connectコンプライアンス センター [powerShell &に移動し、](/powershell/exchange/connect-to-scc-powershell)次のコマンドを実行します。
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -162,7 +162,7 @@ SharePoint Online と One Drive For Business の場所を含む電子情報開�
 
 ### <a name="resolution"></a>解決方法
 
-1. コンプライアンス センター [PowerShell &に接続](/powershell/exchange/connect-to-scc-powershell) し、電子情報開示ケースホールドに対して次のコマンドを実行します。
+1. Connectコンプライアンス センター [powerShell &に](/powershell/exchange/connect-to-scc-powershell)移動し、電子情報開示ケースホールドに対して次のコマンドを実行します。
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -196,7 +196,7 @@ SharePoint Online と One Drive For Business の場所を含む電子情報開�
 
 ## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>エラー: "HTTP 条件付きヘッダーを使用して指定された条件が満たされていません"
 
-電子情報開示エクスポート ツールを使用して検索結果をダウンロードすると、次のエラーが表示される可能性があります。これは一時的なエラーであり、通常は Azure Storage の場所で `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 発生します。
+電子情報開示エクスポート ツールを使用して検索結果をダウンロードすると、次のエラーが表示される可能性があります。これは一時的なエラーで、通常は電子情報開示の場所Azure Storage `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` です。
 
 ### <a name="resolution"></a>解決方法
 
@@ -212,12 +212,14 @@ SharePoint Online と One Drive For Business の場所を含む電子情報開�
 
 1. 別のクライアント/コンピューターを使用してダウンロードしてみてください。
 
-2. 必ずローカル ドライブにダウンロードしてください。
+2. [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch] コマンドレットを使用して、不要になった古い検索を削除します。
 
-3. ウイルス スキャナーが実行されていないか確認します。
+3. 必ずローカル ドライブにダウンロードしてください。
 
-4. 同じフォルダーまたは任意の親フォルダーに他のエクスポートがダウンロードしなかからなことを確認します。
+4. ウイルス スキャナーが実行されていないか確認します。
 
-5. 前の手順が機能しない場合は、zipping と重複除外を無効にします。
+5. 同じフォルダーまたは任意の親フォルダーに他のエクスポートがダウンロードしなかからなことを確認します。
 
-6. これが機能する場合は、ローカル ウイルス スキャナーまたはディスクの問題が原因で問題が発生します。
+6. 前の手順が機能しない場合は、zipping と重複除外を無効にします。
+
+7. これが機能する場合は、ローカル ウイルス スキャナーまたはディスクの問題が原因で問題が発生します。

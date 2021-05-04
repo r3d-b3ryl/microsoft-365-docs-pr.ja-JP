@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: ユーザーを別のサブスクリプションに移動する
       href: subscriptions/move-users-different-subscription.md
+    - name: サードパーティ製アプリのライセンスを管理する
+      href: licenses/manage-third-party-app-licenses.md
     - name: 自動請求ポリシーを管理する
       href: licenses/manage-auto-claim-policies.md
     - name: サブスクリプションとライセンスを理解する

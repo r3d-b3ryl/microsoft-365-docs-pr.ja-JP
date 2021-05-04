@@ -12,27 +12,27 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
 localization_priority: Normal
-description: Microsoft 365 でのコンプライアンスの迅速な開始に役立つタスクについて説明します。
-ms.openlocfilehash: 503e15c8b363dcd63c010d31384565f6e1a8af61
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+description: コンプライアンスを迅速に開始するのに役立つタスクについては、Microsoft 365。
+ms.openlocfilehash: 3f93eb31800d158a33b1f3c0acdd48d650b2153e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197924"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113393"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 
-Microsoft 365 コンプライアンスを初め、どこから始めるのか疑問に思う場合は、この記事では、基本に関するガイダンスを提供し、重要なコンプライアンス タスクの優先順位を設定します。 この記事では、データの管理と監視、情報の保護、インサイダー リスクの最小化を迅速に開始するのに役立ちます。
+コンプライアンスを初め、どこからMicrosoft 365を開始する必要がある場合は、この記事で基本に関するガイダンスを提供し、重要なコンプライアンス タスクの優先順位を設定します。 この記事では、データの管理と監視、情報の保護、インサイダー リスクの最小化を迅速に開始するのに役立ちます。
 
 この記事は、リスクを管理し、データを保護し、新たにリモートの従業員と規制と標準に準拠し続けるために最善の方法を考える場合にも役立ちます。 従業員は新しい方法で共同作業を行い、互いに接続しています。つまり、既存のコンプライアンス プロセスとコントロールに適応する必要がある場合があります。 組織内でこれらの新しいコンプライアンス リスクを特定および管理するには、データを保護し、脅威とリスクを最小限に抑える上で重要です。
 
-これらの基本的なコンプライアンス タスクを完了したら、追加の Microsoft 365 コンプライアンス ソリューションを実装して、組織内のコンプライアンス範囲を拡大する検討してください。
+これらの基本的なコンプライアンス タスクを完了したら、追加のコンプライアンス ソリューションを実装して、組織内のコンプライアンス範囲を拡大Microsoft 365検討してください。
 
 ## <a name="task-1-configure-compliance-permissions"></a>タスク 1: コンプライアンスのアクセス許可を構成する
 
-コンテンツを表示して管理タスクを実行するには、組織内で Microsoft 365 コンプライアンス センターにアクセスできるユーザーを管理することが重要です。 Microsoft 365 は、コンプライアンスに固有の管理役割を提供し、Microsoft 365 コンプライアンス センターに含まれるツールを使用します。
+コンテンツを表示し、管理タスクを実行するには、組織内のユーザーがコンプライアンス センター Microsoft 365アクセスできるユーザーを管理することが重要です。 Microsoft 365は、コンプライアンスに固有の管理役割と、コンプライアンス センターに含まれるツールMicrosoft 365提供します。
 
-まず、組織内のユーザーにコンプライアンスアクセス許可を割り当て、これらのタスクを実行し、権限のないユーザーが自分の責任外の領域にアクセスするのを防ぐことから始める。 Microsoft 365 に含まれるコンプライアンス ソリューションの構成と実装を開始する前に、コンプライアンス データ管理者とコンプライアンス管理者の役割に適切なユーザーが割り当てられている必要があります。 また、コンプライアンス マネージャーでデータを表示するには、Azure Active Directory グローバル リーダー ロールにユーザーを割り当てる必要があります。
+まず、組織内のユーザーにコンプライアンスアクセス許可を割り当て、これらのタスクを実行し、権限のないユーザーが自分の責任外の領域にアクセスするのを防ぐことから始める。 Microsoft 365 に含まれるコンプライアンス ソリューションの構成と実装を開始する前に、コンプライアンス データ管理者とコンプライアンス管理者の役割に適切なユーザーを割り当て済みである必要があります。 また、コンプライアンス マネージャーでデータを表示するには、グローバル リーダー Azure Active Directoryにユーザーを割り当てる必要があります。
 
 アクセス許可を構成し、管理者の役割にユーザーを割り当てる手順については、「Security & コンプライアンス センターのアクセス許可」 [を参照してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
@@ -47,7 +47,7 @@ Microsoft 365 コンプライアンスを初め、どこから始めるのか疑
 >[!IMPORTANT]
 >セキュリティとコンプライアンスは、ほとんどの組織で緊密に統合されています。 セキュリティとコンプライアンスの両方に対する防御の詳細なアプローチを提供するために、組織が基本的なセキュリティ、脅威保護、ID およびアクセス管理領域に対応することが重要です。
 >
->Microsoft [365](../security/defender/microsoft-secure-score.md) セキュリティ センターで Microsoft 365 Secure Score を確認し、次の記事に示すタスクを完了します。
+>セキュリティ センター[でMicrosoft 365スコア](../security/defender/microsoft-secure-score.md)を確認Microsoft 365、次の記事で説明されているタスクを完了します。
 >
 > - [セキュリティロードマップ - 最初の 30 日間、90 日間、それ以降の最優先事項](../security/office-365-security/security-roadmap.md)
 > - [自宅での作業をサポートするセキュリティ チームの上位 12 のタスク](../security/top-security-tasks-for-remote-work.md)
@@ -74,7 +74,7 @@ Microsoft では、管理アクセス許可の悪用、マルウェアアクテ�
 
 [感度ラベルを](sensitivity-labels.md) 使用すると、組織のデータを分類して保護できます。一方で、ユーザーの生産性と共同作業能力に支障が生じなかねない。 暗号化と使用制限を適用するには、感度ラベルを使用して視覚的なマーキングを適用し、プラットフォームやデバイス、オンプレミス、クラウドの間で情報を保護します。
 
-感度ラベルを構成して使用する手順については、「感度ラベルの使用を開始する [」を参照してください](get-started-with-sensitivity-labels.md)。 感度ラベルのライセンス情報については [、「Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)ライセンス ガイダンス」を参照して、セキュリティとコンプライアンス&してください。
+感度ラベルを構成して使用する手順については、「感度ラベルの使用を開始する [」を参照してください](get-started-with-sensitivity-labels.md)。 感度ラベルのライセンス情報については、「セキュリティとコンプライアンス[Microsoft 365ライセンス ガイダンス」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 ## <a name="task-6-configure-a-retention-policy"></a>タスク 6: アイテム保持ポリシーを構成する
 
@@ -88,17 +88,17 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>タスク 7: 機密情報と不快な言語ポリシーを構成する
 
-機密情報を保護し、職場のハラスメント インシデントを検出して行動することが、内部のポリシーと標準の遵守の重要な部分です。 [](communication-compliance-feature-reference.md) Microsoft 365 の通信コンプライアンスは、電子メールと Microsoft Teams 通信の修復アクションをすばやく検出、キャプチャ、実行することで、これらのリスクを最小限に抑えるのに役立ちます。 これには、組織の内部および外部で機密情報を共有する不適切な情報、脅威、ハラスメントやコミュニケーションを含む不適切なコミュニケーションが含まれます。
+機密情報を保護し、職場のハラスメント インシデントを検出して行動することが、内部のポリシーと標準の遵守の重要な部分です。 [電子メールや](communication-compliance-feature-reference.md)Microsoft 365の修復アクションを迅速に検出、キャプチャ、実行することで、これらのリスクを最小限に抑えるために、Microsoft Teams役立ちます。 これには、組織の内部および外部で機密情報を共有する不適切な情報、脅威、ハラスメントやコミュニケーションを含む不適切なコミュニケーションが含まれます。
 
 定義済みの不快な *言語と* ハラスメント対策ポリシー テンプレートを使用すると、ポリシーの一致について内部および外部の通信をスキャンして、指定されたレビュー担当者が確認できます。 レビュー担当者は、組織内のスキャンされた電子メール、Microsoft Teams、Yammer、またはサードパーティの通信を調査し、組織の標準に準拠しているか確認するために適切な修復アクションを実行できます。
 
-定義済みの機密情報ポリシーテンプレートを使用すると、電子メールをスキャンするポリシーと、定義された機密情報の種類またはキーワードを含む Microsoft Teams 通信をすばやく作成し、重要なデータがアクセスできないユーザーと共有されるのを確実にするのに役立ちます。 これらのアクティビティには、機密プロジェクトに関する不正なコミュニケーションや、インサイダー取引や他の共謀活動に関する業界固有のルールが含まれる場合があります。
+定義済みの機密情報ポリシーテンプレートを使用すると、定義された機密情報の種類またはキーワードを含む電子メールと Microsoft Teams 通信をスキャンするポリシーをすばやく作成し、重要なデータがアクセスできないユーザーと共有されるのを確実にするのに役立ちます。 これらのアクティビティには、機密プロジェクトに関する不正なコミュニケーションや、インサイダー取引や他の共謀活動に関する業界固有のルールが含まれる場合があります。
 
-通信コンプライアンスを計画および構成する手順については、「通信コンプライアンスの計画」[](communication-compliance-plan.md)および「通信コンプライアンスの概要[」を参照してください](communication-compliance-configure.md)。 通信コンプライアンス のライセンス情報については [、「Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)ライセンス ガイダンス」を参照してください。セキュリティ コンプライアンス&参照してください。
+通信コンプライアンスを計画および構成する手順については、「通信コンプライアンスの計画」[](communication-compliance-plan.md)および「通信コンプライアンスの概要[」を参照してください](communication-compliance-configure.md)。 通信コンプライアンス のライセンス情報については、「セキュリティMicrosoft 365コンプライアンスに関する[&参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)。
 
 ## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>タスク 8: 機密性の高いアイテムで何が起こっているかを確認する
 
-機密ラベル、機密情報の種類、保持ラベルとポリシー、トレーニング可能な分類子を使用して、以前のタスクで見た Exchange、SharePoint、OneDrive 全体で機密アイテムを分類およびラベル付けできます。 クイック タスクの最後の手順は、ラベルが付けられているアイテムと、ユーザーがそれらの機密性の高いアイテムに対して実行しているアクションを確認します。 [コンテンツ エクスプローラーと](data-classification-content-explorer.md)[アクティビティ エクスプローラーは、](data-classification-activity-explorer.md)この可視性を提供します。
+機密ラベル、機密情報の種類、保持ラベルとポリシー、トレーニング可能な分類子を使用して、Exchange、SharePoint、および OneDrive 全体で、前のタスクで見た機密アイテムを分類およびラベル付けできます。 クイック タスクの最後の手順は、ラベルが付けられているアイテムと、ユーザーがそれらの機密性の高いアイテムに対して実行しているアクションを確認します。 [コンテンツ エクスプローラーと](data-classification-content-explorer.md)[アクティビティ エクスプローラーは、](data-classification-activity-explorer.md)この可視性を提供します。
 
 ### <a name="content-explorer"></a>コンテンツ エクスプローラー
  コンテンツ エクスプローラーを使用すると、機密情報の種類として分類された、またはトレーニング可能な分類子によって特定の分類に属するすべてのアイテムと、機密性または保持ラベルが適用されているすべてのアイテムをネイティブ形式で表示できます。
@@ -126,11 +126,11 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 ## <a name="next-steps"></a>次の手順
 
-組織のコンプライアンス管理の基本を構成しましたので、機密情報を保護し、追加のインサイダー リスクを検出して行動するために、Microsoft 365 の次のコンプライアンス ソリューションを検討してください。
+組織のコンプライアンス管理の基本を構成しましたので、Microsoft 365 で次のコンプライアンス ソリューションを検討して、機密情報を保護し、追加のインサイダー リスクを検出して行動します。
 
 ### <a name="configure-retention-labels"></a>保持ラベルを構成する
 
-アイテム保持ポリシーは、SharePoint サイトや Exchange メールボックスなどの場所にコンテナー レベルで適用[](retention.md#retention-labels)しますが、保持ラベルを使用すると、保持ポリシーと削除ポリシーに対するより具体的なターゲット設定が可能になります。 たとえば、管理者による自動アプリケーションに加えて、エンド ユーザーが手動で適用できるドキュメントまたは電子メール メッセージ レベルの場合です。 SharePoint のドキュメント ライブラリ、フォルダー、またはドキュメント セットに保持ラベルを適用して、その場所に保存されているすべてのドキュメントが既定の保持ラベルを継承することもできます。
+アイテム保持ポリシーはコンテナー レベルで SharePoint サイトや Exchange メールボックスなどの場所に適用されます。保持ラベルを使用[](retention.md#retention-labels)すると、保持ポリシーと削除ポリシーに対するより具体的なターゲット設定が可能になります。 たとえば、管理者による自動アプリケーションに加えて、エンド ユーザーが手動で適用できるドキュメントまたは電子メール メッセージ レベルの場合です。 SharePoint のドキュメント ライブラリ、フォルダー、またはドキュメント セットに保持ラベルを適用して、その場所に保存されているすべてのドキュメントが既定の保持ラベルを継承することもできます。
 
 さらに、保持ラベルは、コンテンツ [をレコードとしてマーク](records-management.md) するレコード管理をサポートします。 この場合、ラベルは、組織が規制要件を遵守するために必要になる可能性のあるコンテンツに追加の制限を設定します。
 
@@ -148,14 +148,14 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 ### <a name="prevent-data-loss"></a>データの損失を防止する
 
-[データ損失防止 (DLP)](data-loss-prevention-policies.md) ポリシーを使用すると、Microsoft 365 組織全体で機密情報を特定、監視、および自動的に保護できます。 DLP ポリシーを使用して、Microsoft サービス全体で機密性の高いアイテムを識別し、機密性の高いアイテムを誤って共有しないようにし、ユーザーがワークフローを中断することなくコンプライアンスを維持する方法を学ぶのに役立ちます。
+[データ損失防止 (DLP)](dlp-learn-about-dlp.md)ポリシーを使用すると、組織全体で機密情報を特定、監視、およびMicrosoft 365できます。 DLP ポリシーを使用して、Microsoft サービス 間で機密性の高いアイテムを識別し、機密性の高いアイテムを偶発的に共有しないようにし、ユーザーがワークフローを中断することなくコンプライアンスを維持する方法を学ぶのに役立ちます。
 
-DLP ポリシーを構成する手順については、DLP ポリシーの作成、 [テスト、調整を行います](create-test-tune-dlp-policy.md)。 データ損失管理のライセンス情報については [、「Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)ライセンス ガイダンス」を参照して、セキュリティとコンプライアンス&してください。
+DLP ポリシーを構成する手順については、DLP ポリシーの作成、 [テスト、調整を行います](create-test-tune-dlp-policy.md)。 データ損失管理のライセンス情報については、「セキュリティMicrosoft 365コンプライアンスに関する[&参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
 
 ### <a name="detect-and-act-on-insider-risks"></a>インサイダー リスクの検出と対応
 
 従業員は、幅広いプラットフォームとサービスでデータを作成、管理、共有するためのアクセスを増やしています。 ほとんどの場合、組織には、コンプライアンス要件と従業員のプライバシー基準を満たしながら、組織全体のリスクを特定および軽減するためのリソースとツールが限られています。 これらのリスクには、従業員を退出してデータを盗み、偶発的な過剰共有や悪意のある意図による組織外の情報のデータ漏洩が含まれる場合があります。
 
-[](insider-risk-management-policies.md) Microsoft 365 の Insider リスク管理では、サービスとサードパーティのインジケーターの全幅を使用して、リスクの高いユーザー アクティビティをすばやく特定し、トリアージし、行動するのに役立ちます。 Microsoft 365 および Microsoft Graph のログを使用すると、インサイダー リスク管理を使用して、リスク インジケーターを特定し、これらのリスクを軽減するためのアクションを実行するための特定のポリシーを定義できます。
+[Microsoft 365](insider-risk-management-policies.md)の Insider リスク管理は、サービスとサードパーティのインジケーターの全幅を使用して、リスクの高いユーザー アクティビティをすばやく特定し、トリアージし、行動するのに役立ちます。 Microsoft 365 および Microsoft Graph のログを使用すると、インサイダー リスク管理を使用して、リスク インジケーターを特定し、これらのリスクを軽減するためのアクションを実行するための特定のポリシーを定義できます。
 
-インサイダー リスク管理ポリシーを計画および構成する手順については、「インサイダー[](insider-risk-management-plan.md)リスク管理の計画」および「インサイダー リスク管理の概要」を[参照してください](insider-risk-management-configure.md)。 インサイダー リスク管理のライセンス情報については [、「Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)ライセンス ガイダンス」を参照して、セキュリティとコンプライアンス&してください。
+インサイダー リスク管理ポリシーを計画および構成する手順については、「インサイダー[](insider-risk-management-plan.md)リスク管理の計画」および「インサイダー リスク管理の概要」を[参照してください](insider-risk-management-configure.md)。 インサイダー リスク管理のライセンス情報については、「セキュリティMicrosoft 365コンプライアンスに関する[ライセンス ガイダンス&参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)。

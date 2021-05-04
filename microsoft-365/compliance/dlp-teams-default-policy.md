@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams の既定のデータ損失防止ポリシー (プレビュー) について説明します。
+title: Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Microsoft Teams の既定のデータ損失防止ポリシーについて説明します。
-ms.openlocfilehash: 3992daf9431dbd87ed5e947a1e5a2b0acd20edce
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+description: このページの既定のデータ損失防止ポリシーについてMicrosoft Teams
+ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826248"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114145"
 ---
-# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Microsoft Teams の既定のデータ損失防止ポリシー (プレビュー) について説明します。
+# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)
 
-[データ損失防止](data-loss-prevention-policies.md) (DLP) 機能が拡張され、Microsoft Teams のチャット メッセージとチャネル メッセージ (プライベート チャネル メッセージを含む) が含まれます。 このリリースの一環として、コンプライアンス センターに初めてお客様向け既定の DLP ポリシーを作成しました。
+[データ損失防止機能](dlp-learn-about-dlp.md)は、プライベート チャネル メッセージを含むMicrosoft Teamsチャネル メッセージを含む拡張されました。 このリリースの一環として、コンプライアンス センターに初めてお客様向け既定の DLP ポリシーを作成しました。
 
 ## <a name="applies-to"></a>適用対象
 
-以下の 1 つ以上のライセンスでライセンスを取得し、アクティブな Teams ユーザーを持つテナント
+以下の 1 つ以上のライセンスでライセンスを取得し、アクティブなユーザーを持Teamsテナント
  
 - ME5, 
 - MA5, 
@@ -47,7 +47,7 @@ ms.locfileid: "50826248"
 
 
 > [!div class="mx-imgBorder"]
-> ![既定の Teams DLP ポリシー](../media/default-teams-dlp-policy.png)
+> ![既定Teams DLP ポリシー](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>既定のポリシーを編集または削除する
 

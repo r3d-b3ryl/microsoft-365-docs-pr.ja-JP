@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 の検索ツールとeDiscovery ツールを使用して検索できるメールとファイルのプロパティについて説明します。
-ms.openlocfilehash: b3b2410c899ec98f39a4f89e5ea0a86537e5b666
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 10b2af333d5eeef6dd70541a86b9114929c0c94c
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488302"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114019"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>コンテンツ検索と eDiscovery のキーワード クエリと検索条件
 
@@ -171,7 +171,7 @@ Microsoft 365 コンプライアンス センターの eDiscovery 検索機能�
 
   次に、`SensitiveType` 検索プロパティで ID を使用して、カスタムの機密データ型を含むドキュメントを返します。例えば `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
   
-- 機密性のある情報の種類と `SensitiveType` 検索プロパティは、Exchange Online メールボックスに保管されている機密性の高いデータの検索には使用できません。 これには、1 対 1 のチャット メッセージ、1:N のグループ チャット メッセージ、Microsoft Teams のチーム チャネルの会話が含まれます。これらのコンテンツはすべてメールボックスに保存されているからです。 ただし、データ損失防止 (DLP) ポリシーを使用して、転送中の機密性の高いメール データを保護できます。 詳細については、「[データ損失防止ポリシーの概要](data-loss-prevention-policies.md)」と「[個人データの検索](/compliance/regulatory/gdpr)」を参照してください。
+- 機密性のある情報の種類と `SensitiveType` 検索プロパティは、Exchange Online メールボックスに保管されている機密性の高いデータの検索には使用できません。 これには、1 対 1 のチャット メッセージ、1:N のグループ チャット メッセージ、Microsoft Teams のチーム チャネルの会話が含まれます。これらのコンテンツはすべてメールボックスに保存されているからです。 ただし、データ損失防止 (DLP) ポリシーを使用して、転送中の機密性の高いメール データを保護できます。 詳細については、「データ損失防止 [について」および「個人データ](dlp-learn-about-dlp.md) の検索と検索 [」を参照してください](/compliance/regulatory/gdpr)。
   
 ## <a name="search-operators"></a>検索演算子
 
@@ -239,7 +239,7 @@ Microsoft 365 コンプライアンス センターの eDiscovery 検索機能�
 |メッセージの種類| 検索するメッセージの種類。 これは、Kind メール プロパティと同じプロパティです。 可能な値:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |Participants|メール メッセージのすべての送受信者フィールド。 すなわち、[差出人]、[宛先]、[Cc]、[Bcc] の各フィールドです。|
 |Type|メール アイテムのメッセージ クラス プロパティ。 これは、ItemClass メール プロパティと同じプロパティです。 また、複数値の条件です。 複数のメッセージ クラスを選ぶには、**Ctrl** キーを押したまま、ドロップダウン リストで条件に追加する複数のメッセージ クラスをクリックします。 リストで選んだ各メッセージ クラスは、対応する検索クエリでは **OR** 演算子によって論理的に接続されます。  <br/> Exchange によって使われていて **メッセージ クラス** リストで選ぶことができるメッセージ クラス (およびそれに対応するメッセージ クラス ID) のリストについては、「[アイテムの種類とメッセージ クラス](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)」をご覧ください。|
-|受信済み|電子メール メッセージが受信者によって受信された日付。 これは、Received メール プロパティと同じプロパティです。|
+|受信済み|メール メッセージが受信者によって受信された日付。これは、Received メール プロパティと同じプロパティです。|
 |Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。|
 |Sender|電子メール メッセージの差出人。|
 |送信日時|送信者によって電子メール メッセージが送信された日付。 これは、Sent メール プロパティと同じプロパティです。|
@@ -270,7 +270,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 |Before|`property<date`|日付の条件で使用されます。指定された日付の前に送信、受信、変更された項目を返します。|
 |Between|`date..date`|日付条件およびサイズ条件で使用します。 日付条件で使用すると、指定された日付範囲内に送信、受信、変更された項目を返します。 サイズ条件で使用すると、サイズが指定範囲内にある項目を返します。|
 |Contains any of|`(property:value) OR (property:value)`|文字列値を指定するプロパティの条件で使用されます。 1 つ以上の指定された文字列の値の任意の部分が含まれる項目を返します。|
-|Doesn't contain any of|`-property:value`  <br/> `NOT property:value`|文字列値を指定するプロパティの条件で使用されます。 指定された文字列のどの部分も含まれない項目を返します。|
+|Doesn't contain any of|`-property:value`  <br/> `NOT property:value`|文字列値を指定するプロパティの条件で使用されます。指定された文字列のどの部分も含まれない項目を返します。|
 |Doesn't equal any of|`-property=value`  <br/> `NOT property=value`|文字列値を指定するプロパティの条件で使用されます。特定の文字列が含まれない項目を返します。|
 |Equals|`size=value`|指定されたサイズに等しい項目を返します。<sup>1</sup>|
 |次のいずれかと等しい|`(property=value) OR (property=value)`|文字列値を指定するプロパティの条件で使用されます。1 つ以上の指定された文字列の値と完全に一致する項目を返します。|

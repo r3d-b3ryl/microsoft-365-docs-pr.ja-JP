@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 3/13/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ description: メールボックスを訴訟ホールドの対象にし、調査�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 046ee6fdc7c42026b1a69805883175982e3100b7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 81d3bf7bba0aadbcd2d52b5f7707caeea96e26c1
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908401"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750061"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
 
@@ -30,17 +30,19 @@ ms.locfileid: "50908401"
 訴訟ホールドを作成すると、次のようになります。
   
 - ユーザーによって完全に削除されたアイテムは、保持期間中ユーザーのメールボックス内にある回復可能なアイテム フォルダーに保持されます。
-    
+
 - ユーザーによって回復可能なアイテム フォルダーからパージされたアイテムは、保持期間中は保持されます。
-    
+
 - ユーザーのプライマリ メールボックスにある回復可能なアイテム フォルダーのストレージ クォータは、30 GB から 110 GB へと増加します。
-    
+
 - ユーザーのプライマリ メールボックスおよびアーカイブ メールボックス内にあるアイテムは保持されます
-    
+
 ## <a name="assign-an-exchange-online-plan-2-license"></a>Exchange Online (プラン 2) ライセンスを割り当てる
 
-- Exchange Online メールボックスを訴訟ホールドの対象にするには、Exchange Online (プラン 2) ライセンスを割り当てる必要があります。 メールボックスに Exchange Online (プラン 1) ライセンスが割り当てられている場合は、別の Exchange Online Archiving ライセンスをメールボックスに割り当てて、メールボックスを保持の対象にする必要があります。
-    
+Exchange Online メールボックスを訴訟ホールドの対象にするには、Exchange Online (プラン 2) ライセンスを割り当てる必要があります。 メールボックスに Exchange Online (プラン 1) ライセンスが割り当てられている場合は、別の Exchange Online Archiving ライセンスをメールボックスに割り当てて、メールボックスを保持の対象にする必要があります。
+
+> [!NOTE]
+> 組織Office 365 Education訴訟ホールドは、補足機能を備えた Office 365 A1 プラン 1 ライセンスを含むExchange Onlineサブスクリプションでサポートされます。 詳細については、「サービスの説明」の「Exchange Online機能」[セクションOffice 365 Education参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)。
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>メールボックスを訴訟ホールドの対象にする
 
@@ -74,7 +76,7 @@ ms.locfileid: "50908401"
 Set-Mailbox <username> -LitigationHoldEnabled $true
 ```
 
-前のコマンドでは保持時間が指定されていないため、アイテムを無期限に保持します。 時間ベースの保持を作成するには、次のコマンドを使用します。
+前のコマンドでは保持時間が指定されていないため、アイテムを無期限に保持します。 タイム ベースのホールドを作成するには、次のコマンドを使用します。
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>

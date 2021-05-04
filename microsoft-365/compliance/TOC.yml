@@ -235,8 +235,8 @@
       items:
         - name: データ損失防止 (DLP) について
           items:
-            - name: データ損失防止 (DLP) について
-              href: data-loss-prevention-policies.md
+            - name: データ損失防止について
+              href: dlp-learn-about-dlp.md
             - name: エンドポイント データ損失防止について
               href: endpoint-dlp-learn-about.md
             - name: Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)

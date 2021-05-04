@@ -15,23 +15,23 @@ search.appverid:
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 ms.custom:
 - seo-marvel-apr2020
-description: 組織の要件を満たすためにオンプレミスの Active Directory Rights Management Service (AD RMS) を使用する Exchange Online IRM を構成する方法について説明します。
-ms.openlocfilehash: 6a9759fce102c60dd766dd86ba8c9e6d4a02d85b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 組織の要件を満たすためにExchange Online Active Directory Rights Management Service (AD RMS) を使用する IRM を構成する方法について説明します。
+ms.openlocfilehash: d98cf5c762cd4dac0cbad6d25a3cc766d5c5310a
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924991"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876276"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>AD RMS による Exchange Online のメールの暗号化
 
-情報漏洩を防止するために、Exchange Online には、電子メール メッセージおよび添付ファイルをオンラインおよびオフラインで保護する Information Rights Management (IRM) 機能が搭載されています。 組織の要件を満たすために、必要に応じて、オンプレミスの Active Directory Rights Management Service (AD RMS) を使用する Exchange Online IRM を構成できます。 これは一般的ではありません。 RMS を使用する必要がAD場合は、代Office [365 Message Encryption を](ome.md) 使用します。 
+情報漏洩を防止するために、Exchange Online には、電子メール メッセージおよび添付ファイルをオンラインおよびオフラインで保護する Information Rights Management (IRM) 機能が搭載されています。 組織の要件Exchange Online満たすために、必要に応じてオンプレミスの Active Directory Rights Management Service (AD RMS) を使用する IRM を構成できます。 これは一般的ではありません。 RMS を使用する要件が満たされていない場合は[AD代わりに](ome.md)Office 365 Message Encryptionしてください。 
 
 IRM 保護は、ユーザーが Microsoft Outlook や Outlook on the web で適用したり、管理者がトランスポート保護ルールや Outlook の保護ルールを使用して適用したりできます。 IRM を使用すると、管理者とユーザーは、電子メールに含まれている機密性の高いデータのアクセス、転送、印刷、コピーをだれに許可するかを管理できるようになります。
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>IRM と Office 365 Message Encryption (OME) および Azure Active Directory が協働する方法に関する変更点
 
-2017 年 9 月以後、組織で Office 365 Message Encryption の新機能をセットアップすると、IRM を Azure Rights Management (Azure RMS) と使用するためのセットアップも行われます。IRM および Azure RMS を別個にセットアップすることはなくなりました。そのセットアップなしで、OME とアクセス権管理がシームレスに協働します。新機能の詳細については、「[Office 365 Message Encryption のよくあるご質問](./ome-faq.md)」を参照してください。組織内で OME 新機能を使用する準備ができたら、「[Azure Information Protection の上に構築された Office 365 Message Encryption の新機能をセットアップする](./set-up-new-message-encryption-capabilities.md)」を参照してください。
+2017 年 9 月以後、組織で Office 365 Message Encryption の新機能をセットアップすると、IRM を Azure Rights Management (Azure RMS) と使用するためのセットアップも行われます。IRM および Azure RMS を別個にセットアップすることはなくなりました。そのセットアップなしで、OME とアクセス権管理がシームレスに協働します。新機能の詳細については、「[Office 365 Message Encryption のよくあるご質問](./ome-faq.yml)」を参照してください。組織内で OME 新機能を使用する準備ができたら、「[Azure Information Protection の上に構築された Office 365 Message Encryption の新機能をセットアップする](./set-up-new-message-encryption-capabilities.md)」を参照してください。
   
 ## <a name="how-irm-works-with-exchange-online-and-active-directory-rights-management-services"></a>IRM が Exchange Online および Active Directory Rights Management サービスと協働する方法
 

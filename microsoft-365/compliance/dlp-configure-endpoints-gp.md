@@ -13,37 +13,37 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: グループ ポリシーを使用して、構成パッケージを Windows 10 デバイスに展開して、サービスにオンボードします。
-ms.openlocfilehash: b786d011a46f69e7bcac846e726e2aeb3031ae08
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: グループ ポリシーを使用して、サービスにオンボードWindows 10デバイスに構成パッケージを展開します。
+ms.openlocfilehash: 284de5169324b6da4038cfe0b50b2f2ffa40e3fd
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918023"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893288"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシーを使用した Windows 10 デバイスのオンボード 
+# <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシー Windows 10デバイスのオンボード 
 
 **適用対象:**
 
-- [Microsoft 365 Endpoint データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
+- [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
 - グループ ポリシー
 
 > [!NOTE]
-> グループ ポリシー (GP) 更新プログラムを使用してパッケージを展開するには、グループ ポリシー以降Windows Server 2008 R2必要があります。
+> グループ ポリシー (GP) 更新プログラムを使用してパッケージを展開するには、サーバー 2008 R2 以降Windowsする必要があります。
 
-> Windows Server 2019 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
+> サーバー Windows 2019 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
 
-## <a name="onboard-devices-using-group-policy"></a>グループ ポリシーを使用したオンボード デバイス
+## <a name="onboard-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする
 
-1. サービス オンボーディング ウィザードからダウンロードした GP *構成パッケージ*.zip ファイル (DeviceComplianceOnboardingPackage.zip) を開きます。 また、Microsoft コンプライアンス センターからパッケージ [を取得できます。](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
+1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(DeviceComplianceOnboardingPackage.zip) を開きます。 また、Microsoft コンプライアンス センターからパッケージ [を取得できます。](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
 
-2. ナビゲーション ウィンドウで、[設定] [デバイスオン **ボーディング**  >  **] を選択します**。
+2. ナビゲーション ウィンドウで、[デバイス オンボーディング]**設定**  >  **を選択します**。
 
 3. [展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。
 
-4. [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。
+4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-5. .zip ファイルの内容を、デバイスがアクセスできる共有の読み取り専用の場所に展開します。 *OptionalParamsPolicy* というフォルダーと *DeviceComplianceLocalOnboardingScript.cmd というファイルが必要です*。
+5. デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 *OptionalParamsPolicy* というフォルダーと *DeviceComplianceLocalOnboardingScript.cmd というファイルが必要です*。
 
 6. グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。
 
@@ -68,13 +68,13 @@ ms.locfileid: "50918023"
 
 1. Microsoft コンプライアンス センターからオフボード パッケージ [を取得します](https://compliance.microsoft.com/compliancesettings/deviceonboarding)。
 
-2. ナビゲーション ウィンドウで、[設定 **]**  >  **//[デバイスオンボーディングオフ**  >  **ボード] を選択します**。
+2. ナビゲーション ウィンドウで、[オンボーディング **/設定**  >  **オンボーディング]**  >  **を選択します**。
 
 3. [展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。
 
-4. [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。
+4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-5. .zip ファイルの内容を、デバイスがアクセスできる共有の読み取り専用の場所に展開します。 *-MM-DD.cmd DeviceComplianceOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
+5. デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 *-MM-DD.cmd DeviceComplianceOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
 
 6. グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。
 
@@ -107,9 +107,9 @@ ms.locfileid: "50918023"
 
 
 ## <a name="related-topics"></a>関連項目
-- [Microsoft Endpoint Configuration Manager を使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-sccm.md)
+- [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](dlp-configure-endpoints-vdi.md)
-- [新しくオンボードされた Microsoft Defender ATP デバイスで検出テストを実行する](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Microsoft Defender Advanced Threat Protection オンボーディングの問題のトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [オンボーディングMicrosoft Defender Advanced Threat Protectionのトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
