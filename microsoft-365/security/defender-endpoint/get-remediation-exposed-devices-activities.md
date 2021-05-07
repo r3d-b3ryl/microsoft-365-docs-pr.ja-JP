@@ -1,7 +1,7 @@
 ---
-title: 1 つの修復アクティビティの公開デバイスを一覧表示する
+title: 1 つの修復アクティビティの暴露デバイスを一覧表示する
 description: 指定した修復タスクの公開されているデバイスに関する情報を返します。
-keywords: apis、修復、修復 API、get、修復タスク、
+keywords: apis、修復、修復 API、取得、修復タスク、公開されているデバイスの修復
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,23 +15,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061199"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241714"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a><span data-ttu-id="573d5-104">1 つの修復アクティビティの公開デバイスを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="573d5-104">List exposed devices of one remediation activity</span></span>
+# <a name="list-exposed-devices-of-one-remediation-activity"></a><span data-ttu-id="88428-104">1 つの修復アクティビティの暴露デバイスを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="88428-104">List exposed devices of one remediation activity</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="573d5-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="573d5-105">**Applies to:**</span></span>
+<span data-ttu-id="88428-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="88428-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="573d5-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="573d5-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="573d5-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="573d5-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="88428-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="88428-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="88428-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="88428-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="573d5-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="573d5-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="573d5-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="573d5-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="88428-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="88428-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="88428-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="88428-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -39,34 +39,43 @@ ms.locfileid: "52061199"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="573d5-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="573d5-110">API Description</span></span>
+## <a name="api-description"></a><span data-ttu-id="88428-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="88428-110">API Description</span></span>
 
-<span data-ttu-id="573d5-111">指定した修復タスクの公開されているデバイスに関する情報を返します。</span><span class="sxs-lookup"><span data-stu-id="573d5-111">Returns information about exposed devices for the specified remediation task.</span></span>
+<span data-ttu-id="88428-111">指定した修復タスクの公開されているデバイスに関する情報を返します。</span><span class="sxs-lookup"><span data-stu-id="88428-111">Returns information about exposed devices for the specified remediation task.</span></span>
 
-<span data-ttu-id="573d5-112">[修復アクティビティの詳細については、次の情報を参照してください](tvm-remediation.md)。</span><span class="sxs-lookup"><span data-stu-id="573d5-112">[Learn more about remediation activities](tvm-remediation.md).</span></span>
+<span data-ttu-id="88428-112">[修復アクティビティの詳細については、次の情報を参照してください](tvm-remediation.md)。</span><span class="sxs-lookup"><span data-stu-id="88428-112">[Learn more about remediation activities](tvm-remediation.md).</span></span>
 
-## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a><span data-ttu-id="573d5-113">修復タスクに関連付けられている公開されているデバイスの一覧 (ID)</span><span class="sxs-lookup"><span data-stu-id="573d5-113">List exposed devices associated with a remediation task (id)</span></span>
+## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a><span data-ttu-id="88428-113">修復タスクに関連付けられている公開されているデバイスの一覧 (ID)</span><span class="sxs-lookup"><span data-stu-id="88428-113">List exposed devices associated with a remediation task (id)</span></span>
 
-<span data-ttu-id="573d5-114">**URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences</span><span class="sxs-lookup"><span data-stu-id="573d5-114">**URL:** GET: /api/remediationTasks/\{id\}/machineReferences</span></span>
+<span data-ttu-id="88428-114">**URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences</span><span class="sxs-lookup"><span data-stu-id="88428-114">**URL:** GET: /api/remediationTasks/\{id\}/machineReferences</span></span>
 
-<span data-ttu-id="573d5-115">**プロパティの** 詳細</span><span class="sxs-lookup"><span data-stu-id="573d5-115">**Properties** details</span></span>
+## <a name="permissions"></a><span data-ttu-id="88428-115">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="88428-115">Permissions</span></span>
 
-<span data-ttu-id="573d5-116">プロパティ (id)</span><span class="sxs-lookup"><span data-stu-id="573d5-116">Property (id)</span></span> | <span data-ttu-id="573d5-117">データ型</span><span class="sxs-lookup"><span data-stu-id="573d5-117">Data type</span></span> | <span data-ttu-id="573d5-118">説明</span><span class="sxs-lookup"><span data-stu-id="573d5-118">Description</span></span> | <span data-ttu-id="573d5-119">例</span><span class="sxs-lookup"><span data-stu-id="573d5-119">Example</span></span>
+<span data-ttu-id="88428-116">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="88428-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="88428-117">アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="88428-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)</span></span>
+
+<span data-ttu-id="88428-118">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="88428-118">Permission type</span></span> | <span data-ttu-id="88428-119">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="88428-119">Permission</span></span> | <span data-ttu-id="88428-120">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="88428-120">Permission display name</span></span>
+:---|:---|:---
+<span data-ttu-id="88428-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="88428-121">Application</span></span> | <span data-ttu-id="88428-122">RemediationTask.Read.All</span><span class="sxs-lookup"><span data-stu-id="88428-122">RemediationTask.Read.All</span></span> | <span data-ttu-id="88428-123">\'脅威と脆弱性管理の脆弱性情報の読み取り\'</span><span class="sxs-lookup"><span data-stu-id="88428-123">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
+<span data-ttu-id="88428-124">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="88428-124">Delegated (work or school account)</span></span> | <span data-ttu-id="88428-125">RemediationTask.Read.Read</span><span class="sxs-lookup"><span data-stu-id="88428-125">RemediationTask.Read.Read</span></span> | <span data-ttu-id="88428-126">\'脅威と脆弱性管理の脆弱性情報の読み取り\'</span><span class="sxs-lookup"><span data-stu-id="88428-126">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
+
+## <a name="properties-details"></a><span data-ttu-id="88428-127">プロパティの詳細</span><span class="sxs-lookup"><span data-stu-id="88428-127">Properties details</span></span>
+
+<span data-ttu-id="88428-128">プロパティ (id)</span><span class="sxs-lookup"><span data-stu-id="88428-128">Property (id)</span></span> | <span data-ttu-id="88428-129">データ型</span><span class="sxs-lookup"><span data-stu-id="88428-129">Data type</span></span> | <span data-ttu-id="88428-130">説明</span><span class="sxs-lookup"><span data-stu-id="88428-130">Description</span></span> | <span data-ttu-id="88428-131">例</span><span class="sxs-lookup"><span data-stu-id="88428-131">Example</span></span>
 :---|:---|:---|:---
-<span data-ttu-id="573d5-120">id</span><span class="sxs-lookup"><span data-stu-id="573d5-120">id</span></span> | <span data-ttu-id="573d5-121">String</span><span class="sxs-lookup"><span data-stu-id="573d5-121">String</span></span> | <span data-ttu-id="573d5-122">デバイス ID</span><span class="sxs-lookup"><span data-stu-id="573d5-122">Device ID</span></span> | <span data-ttu-id="573d5-123">w2957837fwda8w9ae7f023dba081059dw8d94503</span><span class="sxs-lookup"><span data-stu-id="573d5-123">w2957837fwda8w9ae7f023dba081059dw8d94503</span></span>
-<span data-ttu-id="573d5-124">computerDnsName</span><span class="sxs-lookup"><span data-stu-id="573d5-124">computerDnsName</span></span> | <span data-ttu-id="573d5-125">String</span><span class="sxs-lookup"><span data-stu-id="573d5-125">String</span></span> | <span data-ttu-id="573d5-126">デバイス名</span><span class="sxs-lookup"><span data-stu-id="573d5-126">Device name</span></span> | <span data-ttu-id="573d5-127">PC-SRV2012R2Foo.UserNameVldNet.local</span><span class="sxs-lookup"><span data-stu-id="573d5-127">PC-SRV2012R2Foo.UserNameVldNet.local</span></span>
-<span data-ttu-id="573d5-128">osPlatform</span><span class="sxs-lookup"><span data-stu-id="573d5-128">osPlatform</span></span> | <span data-ttu-id="573d5-129">String</span><span class="sxs-lookup"><span data-stu-id="573d5-129">String</span></span> | <span data-ttu-id="573d5-130">デバイス オペレーティング システム</span><span class="sxs-lookup"><span data-stu-id="573d5-130">Device operating system</span></span> | <span data-ttu-id="573d5-131">WindowsServer2012R2</span><span class="sxs-lookup"><span data-stu-id="573d5-131">WindowsServer2012R2</span></span>
-<span data-ttu-id="573d5-132">rbacGroupName</span><span class="sxs-lookup"><span data-stu-id="573d5-132">rbacGroupName</span></span> | <span data-ttu-id="573d5-133">String</span><span class="sxs-lookup"><span data-stu-id="573d5-133">String</span></span> | <span data-ttu-id="573d5-134">このデバイスが関連付けられているデバイス グループの名前</span><span class="sxs-lookup"><span data-stu-id="573d5-134">Name of the device group this device is associated with</span></span> | <span data-ttu-id="573d5-135">Servers</span><span class="sxs-lookup"><span data-stu-id="573d5-135">Servers</span></span>
+<span data-ttu-id="88428-132">id</span><span class="sxs-lookup"><span data-stu-id="88428-132">id</span></span> | <span data-ttu-id="88428-133">String</span><span class="sxs-lookup"><span data-stu-id="88428-133">String</span></span> | <span data-ttu-id="88428-134">デバイス ID</span><span class="sxs-lookup"><span data-stu-id="88428-134">Device ID</span></span> | <span data-ttu-id="88428-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span><span class="sxs-lookup"><span data-stu-id="88428-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span></span>
+<span data-ttu-id="88428-136">computerDnsName</span><span class="sxs-lookup"><span data-stu-id="88428-136">computerDnsName</span></span> | <span data-ttu-id="88428-137">String</span><span class="sxs-lookup"><span data-stu-id="88428-137">String</span></span> | <span data-ttu-id="88428-138">デバイス名</span><span class="sxs-lookup"><span data-stu-id="88428-138">Device name</span></span> | <span data-ttu-id="88428-139">PC-SRV2012R2Foo.UserNameVldNet.local</span><span class="sxs-lookup"><span data-stu-id="88428-139">PC-SRV2012R2Foo.UserNameVldNet.local</span></span>
+<span data-ttu-id="88428-140">osPlatform</span><span class="sxs-lookup"><span data-stu-id="88428-140">osPlatform</span></span> | <span data-ttu-id="88428-141">String</span><span class="sxs-lookup"><span data-stu-id="88428-141">String</span></span> | <span data-ttu-id="88428-142">デバイス オペレーティング システム</span><span class="sxs-lookup"><span data-stu-id="88428-142">Device operating system</span></span> | <span data-ttu-id="88428-143">WindowsServer2012R2</span><span class="sxs-lookup"><span data-stu-id="88428-143">WindowsServer2012R2</span></span>
+<span data-ttu-id="88428-144">rbacGroupName</span><span class="sxs-lookup"><span data-stu-id="88428-144">rbacGroupName</span></span> | <span data-ttu-id="88428-145">String</span><span class="sxs-lookup"><span data-stu-id="88428-145">String</span></span> | <span data-ttu-id="88428-146">このデバイスが関連付けられているデバイス グループの名前</span><span class="sxs-lookup"><span data-stu-id="88428-146">Name of the device group this device is associated with</span></span> | <span data-ttu-id="88428-147">Servers</span><span class="sxs-lookup"><span data-stu-id="88428-147">Servers</span></span>
 
-## <a name="example"></a><span data-ttu-id="573d5-136">例</span><span class="sxs-lookup"><span data-stu-id="573d5-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="88428-148">例</span><span class="sxs-lookup"><span data-stu-id="88428-148">Example</span></span>
 
-<span data-ttu-id="573d5-137">**要求の** 例</span><span class="sxs-lookup"><span data-stu-id="573d5-137">**Request** example</span></span>
+### <a name="request-example"></a><span data-ttu-id="88428-149">要求の例</span><span class="sxs-lookup"><span data-stu-id="88428-149">Request example</span></span>
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-<span data-ttu-id="573d5-138">**応答** の例</span><span class="sxs-lookup"><span data-stu-id="573d5-138">**Response** example</span></span>
+### <a name="response-example"></a><span data-ttu-id="88428-150">応答の例</span><span class="sxs-lookup"><span data-stu-id="88428-150">Response example</span></span>
 
 ```json
 {
@@ -104,14 +113,14 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="573d5-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="573d5-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="88428-151">こちらもご覧ください</span><span class="sxs-lookup"><span data-stu-id="88428-151">See also</span></span>
 
-- [<span data-ttu-id="573d5-140">修復方法とプロパティ</span><span class="sxs-lookup"><span data-stu-id="573d5-140">Remediation methods and properties</span></span>](get-remediation-methods-properties.md)
+- [<span data-ttu-id="88428-152">修復方法とプロパティ</span><span class="sxs-lookup"><span data-stu-id="88428-152">Remediation methods and properties</span></span>](get-remediation-methods-properties.md)
 
-- [<span data-ttu-id="573d5-141">Id で 1 つの修復アクティビティを取得する</span><span class="sxs-lookup"><span data-stu-id="573d5-141">Get one remediation activity by Id</span></span>](get-remediation-one-activity.md)
+- [<span data-ttu-id="88428-153">ID による 1 つの修復アクティビティを取得する</span><span class="sxs-lookup"><span data-stu-id="88428-153">Get one remediation activity by Id</span></span>](get-remediation-one-activity.md)
 
-- [<span data-ttu-id="573d5-142">すべての修復アクティビティを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="573d5-142">List all remediation activities</span></span>](get-remediation-all-activities.md)
+- [<span data-ttu-id="88428-154">すべての修復作業を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="88428-154">List all remediation activities</span></span>](get-remediation-all-activities.md)
 
-- [<span data-ttu-id="573d5-143">リスクベースの脅威と&管理</span><span class="sxs-lookup"><span data-stu-id="573d5-143">Risk-based threat & vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="88428-155">リスクベースの脅威& 脆弱性の管理</span><span class="sxs-lookup"><span data-stu-id="88428-155">Risk-based threat & vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
 
-- [<span data-ttu-id="573d5-144">組織の脆弱性</span><span class="sxs-lookup"><span data-stu-id="573d5-144">Vulnerabilities in your organization</span></span>](tvm-weaknesses.md)
+- [<span data-ttu-id="88428-156">組織の脆弱性</span><span class="sxs-lookup"><span data-stu-id="88428-156">Vulnerabilities in your organization</span></span>](tvm-weaknesses.md)
