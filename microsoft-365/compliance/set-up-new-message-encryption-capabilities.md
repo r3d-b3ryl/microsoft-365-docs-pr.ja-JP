@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の内外のユーザーと保護されたメールでのコミュニケーションを可能にする新しい Office 365 Message Encryption 機能についてご確認ください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919393"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876306"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>新しい Message Encryption 機能を設定する
 
@@ -44,7 +44,7 @@ ms.locfileid: "50919393"
 
 詳しくは、次のトピックを参照してください。
 
-- [新しい OME 機能を使用するには、どのサブスクリプションが必要か](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)については、サブスクリプションプランに Azure Information Protection (Azure RMS 機能を含む) が含まれているかどうかを確認します。
+- [新しい OME 機能を使用するには、どのサブスクリプションが必要か](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-)については、サブスクリプションプランに Azure Information Protection (Azure RMS 機能を含む) が含まれているかどうかを確認します。
 - 対象となるサブスクリプションの購入に関する情報については、「[Azure Information Protection](https://azure.microsoft.com/services/information-protection/)」を参照してください。  
 
 ### <a name="manually-activating-azure-rights-management"></a>Azure Rights Management を手動で有効化する
@@ -112,7 +112,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
 
 ## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>次の手順: 新しい OME 機能を使用するためのメール フロー ルールを定義する
 
-組織のメールを暗号化するために以前に構成されたメール フロー ルールがある場合は、新しい OME 機能を使用するために既存のルールを更新する必要があります。 新しい展開の場合、新しいメール フロー ルールを作成する必要があります。
+組織のメールを暗号化するために以前に構成されたメール フロー ルールがある場合は、新しい OME 機能を使用するために既存のルールを更新する必要があります。新しい展開の場合、新しいメール フローのルールを作成する必要があります。
 
 >[!IMPORTANT]
 >既存のメール フロー ルールを更新しない場合、ユーザーは新しい、シームレスな OME の操作環境ではなく、以前の HTML 添付ファイルの形式を使用する暗号化されたメールを引き続き受信します。

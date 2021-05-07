@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
-ms.openlocfilehash: 63909be2f88ef5f9c42dcd07e127309b4b5b17e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c9756c9ebfc39427d665a6fc83d73070f8cdf52d
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925473"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114353"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -45,13 +45,13 @@ ms.locfileid: "50925473"
     
   - Outlook on the web および Outlook 2013 以降のメールの場合は、メッセージの作成中、受信者の上のメッセージの上部にポリシー ヒントが表示されます。
     
-  - OneDrive for Business アカウントまたは SharePoint Online サイト内のドキュメントの場合、ポリシー ヒントはアイテムに表示される警告アイコンで示されます。 詳細情報を表示するには、アイテムを選択し、ページの右上隅にある [情報] ウィンドウ アイコンを選択して詳細ウィンドウ ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) を開きます。 
+  - OneDrive for Business アカウントまたは SharePoint Online サイトのドキュメントの場合、ポリシー ヒントはアイテムに表示される警告アイコンで示されます。 詳細情報を表示するには、アイテムを選択し、ページの右上隅にある [情報] ウィンドウ アイコンを選択して詳細ウィンドウ ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) を開きます。 
     
-  - DLP ポリシーに含まれる OneDrive for Business サイトまたは SharePoint Online サイトに保存されている Excel、PowerPoint、および Word のドキュメントの場合、ポリシー ヒントはメッセージ バーと Backstage ビュー **(ファイル** メニュー \> **情報**) に表示されます。
+  - DLP ポリシーに含まれる OneDrive for Business サイトまたは SharePoint Online サイトに保存されている Excel、PowerPoint、および Word のドキュメントの場合、ポリシー ヒントはメッセージ バーと Backstage ビュー (**ファイル** メニュー \> **情報**) に表示されます。
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>ユーザー通知を DLP ポリシーに追加する
 
-DLP ポリシーを作成すると、ユーザー通知を **有効にできます**。 ユーザー通知を有効にすると、Microsoft 365 は電子メール通知とポリシー ヒントの両方を送信します。 通知メールの送信先、電子メール テキスト、ポリシー ヒント テキストをカスタマイズできます。
+DLP ポリシーを作成すると、ユーザー通知を **有効にできます**。 ユーザー通知を有効にすると、Microsoft 365通知とポリシー ヒントの両方が送信されます。 通知メールの送信先、電子メール テキスト、ポリシー ヒント テキストをカスタマイズできます。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
@@ -220,13 +220,13 @@ Outlook on the web および Outlook 2013 以降で新しいメールを作成�
 
 例外は条件と見なされ、これらの条件はすべて Outlook で動作し、コンテンツと一致し、コンテンツに保護アクションを適用します。 ただし、ユーザーにポリシー ヒントを表示する方法はまだサポートされていません。 
   
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Exchange 管理センターとセキュリティ コンプライアンス センターのポリシー &amp; ヒント
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>管理センターとセキュリティ Exchangeセンター &amp; のポリシー ヒント
 
-ポリシー ヒントは、Exchange 管理センターで作成された DLP ポリシーとメール フロー ルール、またはセキュリティ コンプライアンス センターで作成された DLP ポリシーで動作できますが、両方は使用 &amp; できません。 これは、これらのポリシーは異なる場所に保存されますが、ポリシー ヒントは 1 つの場所からのみ描画できるためです。
+ポリシー ヒントは、Exchange 管理センターで作成された DLP ポリシーとメール フロー ルール、またはセキュリティ コンプライアンス センターで作成された DLP ポリシーを使用して動作できますが、両方を使用 &amp; することはできません。 これは、これらのポリシーは異なる場所に保存されますが、ポリシー ヒントは 1 つの場所からのみ描画できるためです。
   
-Exchange 管理センターでポリシー ヒントを構成した場合、Exchange 管理センターでヒントをオフにするまで、セキュリティ コンプライアンス センターで構成したポリシー ヒントは、Outlook on the web および Outlook 2013 以降のユーザーには表示されません。 &amp; これにより、セキュリティ コンプライアンス センターに切り替えるまで、現在の Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) が引き続き &amp; 機能します。
+Exchange 管理センターでポリシー ヒントを構成した場合、セキュリティ コンプライアンス センターで構成したポリシー ヒントは、Exchange 管理センターでヒントをオフにするまで、web および &amp; Outlook 2013 以降の Outlook のユーザーには表示されません。 これにより、セキュリティ コンプライアンス センターにExchangeするまで、現在のメール フロー ルール (トランスポート ルールとも呼ばれる) が引き続き &amp; 機能します。
   
-ポリシー ヒントは 1 つの場所からしか描画されませんが、セキュリティ コンプライアンス センターと Exchange 管理センターの両方で DLP ポリシーを使用している場合でも、電子メール通知は常に &amp; 送信されます。
+ポリシー ヒントは 1 つの場所からしか描画されませんが、セキュリティ コンプライアンス センターと Exchange 管理センターの両方で DLP ポリシーを使用している場合でも、電子 &amp; メール通知は常に送信されます。
   
 ### <a name="default-text-for-policy-tips-in-email"></a>メールのポリシー ヒントの既定のテキスト
 
@@ -240,16 +240,16 @@ Exchange 管理センターでポリシー ヒントを構成した場合、Exch
    
 ## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Excel、PowerPoint、Word のポリシー ヒント
 
-ユーザーがデスクトップ バージョンの Excel、PowerPoint、および Word で機密性の高いコンテンツを操作する場合、ポリシー ヒントは、コンテンツが DLP ポリシーと競合するリアルタイムで通知できます。 そのためには以下のことが必要となります。
+ユーザーがデスクトップ バージョンの Excel、PowerPoint、および Word で機密コンテンツを操作する場合、ポリシー ヒントは、コンテンツが DLP ポリシーと競合するリアルタイムで通知できます。 そのためには以下のことが必要となります。
   
 - Office ドキュメントが OneDrive for Business サイトまたは SharePoint Online サイトに保存されていること。
     
 - サイトが、ポリシー ヒントを使用するように構成された DLP ポリシーに含まれていること。
     
-Office プログラムは、Office 365 から DLP ポリシーを自動的に直接同期し、ドキュメントをスキャンして、DLP ポリシーと競合し、リアルタイムでポリシー ヒントを表示します。
+Office デスクトップ プログラムは、Office 365 から DLP ポリシーを自動的に直接同期し、ドキュメントをスキャンして、DLP ポリシーと競合し、リアルタイムでポリシー ヒントを表示します。
 
 > [!NOTE]
-> Officeデスクトップ アプリはドキュメント自体をスキャンして、DLP ポリシー ヒントを表示する必要があるかどうかを判断します。SharePoint Online サイトまたは OneDrive for Business サイトがファイルに表示する必要が既に決定されているポリシー ヒントは表示されません。 そのため、SharePoint Online サイトまたは OneDrive for Business サイトに表示されるデスクトップ アプリに DLP ポリシー ヒントが常に表示されない場合があります。 これに対し、web 上Officeアプリケーションは、SharePoint Online サイトまたは OneDrive for Business サイトが既に決定している DLP ポリシー ヒントのみを表示します。
+> Officeアプリはドキュメント自体をスキャンして、DLP ポリシー ヒントを表示する必要があるかどうかを判断します。オンライン サイトまたはオンライン サイトSharePointがOneDrive for Businessファイルに表示する必要があるポリシー ヒントは表示されません。 その結果、オンライン サイトまたはオンライン サイトに表示されるデスクトップ アプリに DLP ポリシー ヒントが表示SharePoint場合がありますOneDrive for Businessがあります。 これに対し、web 上Officeアプリケーションには、オンライン サイトまたはオンライン サイトSharePointが既に決定OneDrive for Business示す DLP ポリシー ヒントだけが表示されます。
   
 DLP ポリシーにおけるポリシー ヒントの構成法によっては、ユーザーがポリシー ヒントを単に無視すること、業務上の理由を提供してまたは提供せずにポリシーを上書きすること、誤検知を報告することを選択できます。
   
@@ -277,19 +277,15 @@ DLP ポリシーのポリシー ヒントにこれらのオプションが設定
 |アクセスをブロックし、通知を送信し、上書きを許可する  <br/> |このファイルは組織内のポリシーと競合します。この競合を解決しないと、このファイルへのアクセスがブロックされる可能性があります。詳細については、**[ファイル]** メニューに移動します。<br/> |
 |アクセスをブロックして、通知を送信する  <br/> |このファイルは組織内のポリシーと競合します。この競合を解決しないと、このファイルへのアクセスがブロックされる可能性があります。詳細については、**[ファイル]** メニューに移動します。<br/> |
    
-### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Excel、PowerPoint、Word のポリシー ヒントのカスタム テキスト
+### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>ポリシー ヒントのカスタム テキスト (Excel、PowerPoint、Word)
 
 メール通知とは別に、ポリシー ヒントのテキストをカスタマイズすることができます。メール通知のユーザー設定テキストとは異なり (上のセクションを参照)、ポリシー ヒントのユーザー設定テキストでは HTML もトークンも使用できません。代わりに、ポリシー ヒントのユーザー設定テキストは、プレーン テキストで、256 文字の制限があります。
   
 ## <a name="more-information"></a>詳細情報
 
-- [データ損失防止ポリシーの概要](data-loss-prevention-policies.md)
-    
+- [データ損失防止について](dlp-learn-about-dlp.md)    
 - [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)
-- [DLP ポリシーの条件、例外、およびアクション (プレビュー)](./dlp-microsoft-teams.md?view=o365-worldwide)
-    
+- [DLP ポリシーの条件、例外、およびアクション (プレビュー)](./dlp-microsoft-teams.md) 
 - [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
-    
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
-    
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)

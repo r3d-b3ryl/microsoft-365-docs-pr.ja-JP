@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 91e8a25c2a15e82cd7f286d1110b1c87bedf31d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b918346467f9878582dfb301f48e530bfb400f8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926435"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114095"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -122,7 +122,8 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 > [!IMPORTANT]
 > これらのエンドポイント DLP シナリオは、DLP ポリシーの作成と調整に関する公式な手順ではありません。 一般的な状況で DLP ポリシーを使用する必要がある場合は、次のトピックを参照してください。
->- [データ損失防止の概要](data-loss-prevention-policies.md)
+
+>- [データ損失防止について](dlp-learn-about-dlp.md)
 >- [DLP の既定ポリシーの概要](get-started-with-the-default-dlp-policy.md)
 >- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
 >- [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
@@ -216,7 +217,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
 - [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md)
-- [データ損失防止の概要](data-loss-prevention-policies.md)
+- [データ損失防止について](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: グループ、グループ、グループMicrosoft 365、およびTeamsのコンプライアンス オプションSharePointします。
-ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114030"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241678"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>グループ、グループ、Microsoft 365、およびTeamsのコンプライアンス SharePointオプション
 
@@ -28,7 +28,7 @@ Microsoft 365共同作業時にコンプライアンスを維持するための�
 
 次の表に、コンプライアンス コントロールのクイック リファレンスを示します。Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|参照|
+|カテゴリ|説明|リファレンス|
 |:-------|:----------|:--------|
 |情報の保持|||
 ||グループのメールとコンテンツSharePoint保持する|[SharePoint と OneDrive のアイテム保持ポリシーの詳細](../compliance/retention-policies-sharepoint.md)|
@@ -38,11 +38,13 @@ Microsoft 365共同作業時にコンプライアンスを維持するための�
 ||機密コンテンツを自動的に分類する|[秘密度ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)|
 ||機密性の高いコンテンツを暗号化する|[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)|
 |情報保護|||
-||機密情報の損失を防止する|[データ損失防止の詳細](../compliance/dlp-learn-about-dlp.md)|
+||機密情報の損失を防止する|[データ損失防止について](../compliance/dlp-learn-about-dlp.md)|
 ||チャット内の機密情報を保護します。|[データ損失防止と Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||組織の機密情報を定義する|[カスタムの機密情報の種類](../compliance/sensitive-information-type-learn-about.md)|
 |ユーザーのセグメント化|||
 ||ユーザー セグメント間の通信を制限する|[情報障壁](../compliance/information-barriers.md)|
+|データの保存場所|||
+||特定の地域の場所にデータを保存する|[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## <a name="information-retention"></a>情報の保持
 
@@ -93,7 +95,7 @@ Microsoft 365共同作業時にコンプライアンスを維持するための�
 
 DLP ポリシーを使用すると、ユーザー、およびユーザー間でSharePoint情報Exchange共有Teams。 一連のルールに基づいて実行するアクション (アクセスのブロックなど) を指定するポリシーを作成できます。
 
-- [データ損失防止の詳細](../compliance/dlp-learn-about-dlp.md)
+- [データ損失防止について](../compliance/dlp-learn-about-dlp.md)
 
 このページTeams DLP は、機密情報を含むTeamsを削除することで、チャットおよびチャネル メッセージの機密情報を保護するのに役立ちます。
 
@@ -112,6 +114,14 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 - [Microsoft Teams の情報バリア](/microsoftteams/information-barriers-in-teams)
 
 - [情報バリアを使用してSharePoint](/sharepoint/information-barriers)
+
+## <a name="data-residency"></a>データの保存場所
+
+複数地域Microsoft 365を使用すると、データ常駐の要件を満たすために選択した地域の場所にデータをプロビジョニングして保存できます。 複数地域環境では、Microsoft 365 テナントは中央の場所 (Microsoft 365 サブスクリプションが最初にプロビジョニングされた場所) と、データを格納できる 1 つ以上のサテライトの場所で構成されます。
+
+- [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)
+
+- [Microsoft 365 Multi-Geo の計画](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>関連項目
 

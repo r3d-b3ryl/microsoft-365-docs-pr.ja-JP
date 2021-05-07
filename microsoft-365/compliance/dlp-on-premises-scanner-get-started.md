@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを設定する
-ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917833"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114175"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>データ損失防止のオンプレミス スキャナー (プレビュー) を開始する
 
@@ -55,7 +55,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>DLP オンプレミス スキャナーの前提条件
 
-- Azure Information Protection (AIP) スキャナーは、DLP ポリシーの一致とポリシーの適用を実装します。 スキャナーは AIP クライアントの一部としてインストールされるため、インストールは AIP、AIP クライアント、および AIP 統合ラベル スキャナーのすべての前提条件を満たしている必要があります。
+- Azure Information Protection (AIP) スキャナーは、DLP ポリシーの一致とポリシーの適用を実装します。スキャナーは AIP クライアントの一部としてインストールされるため、インストールは AIP、AIP クライアント、および AIP 統合ラベル スキャナーのすべての前提条件を満たしている必要があります。
 - AIP クライアントとスキャナーを展開します。 [AIP 統合ラベル クライアントのインストール](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)と [] の詳細については、「[Azure Information Protection 統合ラベルスキャナーの構成とインストール](/azure/information-protection/deploy-aip-scanner-configure-install)」を参照してください。
 - すべての検出ルールが機密情報タイプのみに基づいている場合でも、テナントには少なくとも 1 つのラベルとポリシーが公開されている必要があります。
 
@@ -66,7 +66,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
     1. ネットワーク検出ジョブの構成はオプションの手順です。 これをスキップして、コンテンツ スキャン ジョブでスキャンする特定のリポジトリを定義できます。
     2. コンテンツ スキャン ジョブを作成し、DLP エンジンによる評価が必要なファイルをホストするリポジトリを指定する必要があります。
     3. 作成したコンテンツ スキャン ジョブで DLP ルールを有効にし、DLP 有効化段階に直接進む場合を除いて、**[有効にする]** オプションを **[オフ]** に設定します。
-3. コンテンツ スキャン ジョブが適切なクラスターに割り当てられていることを確認します。 それでもコンテンツ スキャン ジョブを作成しなかった場合は、新しいジョブを作成して、パブリック プレビュー バージョンを実行するスキャナー ノードを含むクラスターに割り当てます。
+3. コンテンツ スキャン ジョブが適切なクラスターに割り当てられていることを確認します。それでもコンテンツ スキャン ジョブを作成しなかった場合は、新しいジョブを作成して、パブリック プレビュー バージョンを実行するスキャナー ノードを含むクラスターに割り当てます。
 
 4. [Azure ポータルの Azure Information Protection](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) 拡張機能に接続し、スキャンを実行するコンテンツ スキャン ジョブにリポジトリを追加します。
 
@@ -127,7 +127,7 @@ DLP オンプレミス の場所のテスト ポリシーを展開し、アク�
 
 - [DLP オンプレミス スキャナーの前提条件 (プレビュー)](dlp-on-premises-scanner-learn.md)
 - [DLP オンプレミス スキャナーを使用する (プレビュー)](dlp-on-premises-scanner-use.md)
-- [データ損失防止の概要](data-loss-prevention-policies.md)
+- [データ損失防止について](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
 - [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

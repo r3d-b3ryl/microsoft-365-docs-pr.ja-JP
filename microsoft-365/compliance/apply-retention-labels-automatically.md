@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 6b7e8f91706a9d12135069f0a6753c76eaff1fb4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920020"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107639"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -44,7 +44,7 @@ ms.locfileid: "50920020"
 コンテンツに機密情報、キーワード、検索可能なプロパティ、または[トレーニング可能な分類子](classifier-get-started-with.md)のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
 
 > [!TIP]
-> プレビューでは、検索可能なプロパティを使用して [Teams 会議のレコーディング](#microsoft-teams-meeting-recordings)を特定できるようになりました。
+> [Teams 会議のレコーディング](#microsoft-teams-meeting-recordings)を特定でするのに使用する検索可能なプロパティが最近リリースされました。
 
 保持ラベルを自動的に適用するプロセスは、次の条件に基づいています。
 
@@ -134,11 +134,11 @@ ms.locfileid: "50920020"
 
 機密情報用に自動適用の保持ラベル ポリシーを作成するときに、データ損失防止 (DLP) ポリシーを作成するときと同じポリシー テンプレートの一覧が表示されます。 各テンプレートは、特定の種類の機密情報を見つけるように事前に設定されています。 たとえば、ここに示されているテンプレートは、**プライバシー** カテゴリからの U.S. ITIN、SSN、パスポート番号、および **U.S 個人を特定できる情報 (PII) データ テンプレート** を検索します。
 
-![機密情報の種類によるポリシー テンプレート](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![機密情報の種類によるポリシー テンプレート](../media/sensitive-info-configuration.png)
 
-機密情報の種類の詳細については、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」を参照してください。
+機密情報の種類の詳細については、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」を参照してください。 現在、このシナリオでは、[完全なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)と[ドキュメント フィンガープリンティング](document-fingerprinting.md)はサポートされていません。
 
-ポリシー テンプレートを選択すると、機密情報の任意の種類を追加または削除できます。また、インスタンス数や一致精度を変更できます。 次に示すスクリーンショットの例では、保持ラベルは次の場合にのみ自動的に適用されます。
+ポリシー テンプレートを選択すると、すべての種類の機密情報を追加または削除したり、インスタンス数と一致精度を変更したりできます。次に示すスクリーンショットの例では、保持ラベルは次の場合にのみ自動的に適用されます。
   
 - 検出される機密情報の種類には、一致精度 (または信頼度) が少なくとも 75 はあります。 機密情報の種類の多くは、複数のパターンで定義されています。高い一致精度が指定されたパターンにはより多くの証拠 (キーワード、日付、アドレスなど) が見つかることが必要とされるのに対して、低い一致精度が指定されたパターンでは必要とされる証拠は少なくなります。 **最小** 一致精度が低いほど、コンテンツは条件に一致しやすくなります。
 
@@ -228,7 +228,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams 会議のレコーディング
 
 > [!NOTE]
-> Teams 会議のレコーディングを保持したり削除したりする機能はプレビュー段階にあり、レコーディングを OneDrive や SharePoint に保存する前には機能しません。 詳細については、「[OneDrive for Business と SharePoint または Stream を使用して会議の記録を行う](/MicrosoftTeams/tmr-meeting-recording-change)」を参照してください。
+> Teams 会議のレコーディングを保持したり削除したりする機能は、レコーディングを OneDrive や SharePoint に保存する前には機能しません。 詳細については、「[OneDrive for Business と SharePoint または Stream を使用して会議の記録を行う](/MicrosoftTeams/tmr-meeting-recording-change)」を参照してください。
 
 ユーザーの OneDrive アカウントまたは SharePoint に保存されている Microsoft Teams 会議のレコーディングを特定するには、**キーワード クエリ エディター** で次のように指定します。
 
@@ -236,7 +236,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ProgID:Media AND ProgID:Meeting
 ```
 
-ほとんどの場合、会議のレコーディングは OneDrive に保存されます。 ただしチャネル会議については、SharePoint に保存されます。
+会議のレコーディングは OneDrive に保存されている場合がほとんどですが、チャネル会議の場合は SharePoint に保存されています。
 
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
@@ -285,7 +285,7 @@ ProgID:Media AND ProgID:Meeting
 
 ### <a name="deleting-retention-labels"></a>保持ラベルの削除
 
-どの保持ラベル ポリシーにも現在含まれていない保持ラベルや、イベントベースの保持用に構成されていない保持ラベルを削除したり、アイテムを規制レコードとしてマークしたりできます。 アイテムをレコードとしてマークする保持ラベルを削除する機能は、現在プレビューで展開しています。
+どの保持ラベル ポリシーにも現在含まれていない保持ラベルや、イベントベースの保持用に構成されていない保持ラベルを削除したり、アイテムを規制レコードとしてマークしたりできます。
 
 削除可能な保持ラベルについては、アイテムに適用されている場合、削除に失敗し、ラベル付きアイテムを識別するためのコンテンツ エクスプローラーへのリンクが表示されます。
 

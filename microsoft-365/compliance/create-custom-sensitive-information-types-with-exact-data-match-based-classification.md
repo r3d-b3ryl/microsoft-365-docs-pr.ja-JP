@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: a6e4429718de05362bd6bd3336c9d19ceeec64b9
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408646"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113999"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -48,7 +48,7 @@ ms.locfileid: "51408646"
 
 ![EDM ベースの分類](../media/EDMClassification.png)
 
-EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、EDM ベースの分類は、[データ損失防止ポリシー](data-loss-prevention-policies.md) (DLP) や [Microsoft Cloud App Security ファイル ポリシー](/cloud-app-security/data-protection-policies) などのポリシーと共に使用できます。
+EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、EDM ベースの分類は、[データ損失防止ポリシー](dlp-learn-about-dlp.md)や [Microsoft Cloud App Security ファイル ポリシー](/cloud-app-security/data-protection-policies) などのポリシーと共に使用できます。
 
 > [!NOTE]
 > Microsoft 365 Information Protection は、次のような場合に 2 バイト文字セットの言語をプレビューでサポートします。
@@ -167,7 +167,7 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 - \~
 - \; 
 
-- `ignoredDelimiters`フラグは以下をサポートしていません:
+`ignoredDelimiters`フラグは以下をサポートしていません:
 - 0 から 9 の文字
 - A から Z
 - a から z
@@ -301,6 +301,8 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
 > [!NOTE]
 > 追加機能を使用して EDMSchema を更新するには、10 から 60 分かかることがあります。 追加機能を使用する手順を実行する前に、更新プログラムを完了する必要があります。
+ 
+EDM 機密情報タイプを使用してルール パッケージをインポートし、機密データテーブルをインポートした後、コンプライアンス センターの EDM ウィザードのテスト機能を使用して、新しく作成したタイプを **テスト** することができます。 この機能の使用方法については、「[完全一致スキーマと機密情報の種類ウィザードを使用する](sit-edm-wizard.md)」を参照してください。
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>EDM ベースの分類のスキーマを編集する
 
@@ -369,7 +371,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 1 台のコンピューターでハッシュ化とアップロードを行う場合は、ご利用の Microsoft 365 テナントに直接接続可能なコンピューターから行う必要があります。 そのためには、ハッシュ化のためにクリア テキストの機密データ ファイルがそのコンピューター上にある必要があります。
 
-クリア テキストの機密データ ファイルを公開したくない場合は、安全な場所にあるコンピューターでハッシュ化し、ハッシュ ファイルとソルト ファイルをご利用の Microsoft 365 テナントに直接接続可能なコンピューターにコピーしてアップロードすることができます。 このシナリオでは、両方のコンピューターに EDMUploadAgent が必要です。
+クリア テキストの機密データ ファイルを公開したくない場合は、安全な場所にあるコンピューターでハッシュ化し、ハッシュ ファイルとソルト ファイルをご利用の Microsoft 365 テナントに直接接続可能なコンピューターにコピーしてアップロードすることができます。このシナリオでは、両方のコンピューターにEDMUploadAgentが必要になります。
 
 > [!IMPORTANT]
 > 完全一致スキーマと機密情報の種類ウィザードを使用してスキーマ ファイルおよびパターン ファイルの作成する場合、この手順のスキーマをダウンロードする ***必要があります***。
@@ -427,7 +429,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
    > EDMUploadAgent を使用して特定のデータ ストアにデータをアップロードできるのは、1 日に 2 回だけです。
 
    > [!TIP]
-   > サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
+   > サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。たとえば、'EdmUploadAgent.exe' などです。
 
 2. EDM アップロード エージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き、**C:\EDM\Data** ディレクトリに切り替え、次のコマンドを実行します。
 
@@ -655,7 +657,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [機密情報の種類に関する詳細情報](sensitive-information-type-learn-about.md)
-- [DLP ポリシーの概要](data-loss-prevention-policies.md)
+- [データ損失防止について](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [構成可能な一致を使用するために完全一致スキーマを変更する](sit-modify-edm-schema-configurable-match.md)

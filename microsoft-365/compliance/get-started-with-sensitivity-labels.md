@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: d685b050d32ea7bf482a39ad8d72abe3ee74567d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 08ecf97e3cb45896390c3dac9074c54a2b0bbe96
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499685"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994774"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -56,7 +56,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>機密ラベルの作成と管理に必要なアクセス許可
 
-秘密度ラベルを作成するコンプライアンス チームのメンバーは、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、またはセキュリティ/コンプライアンス センターへのアクセス許可を持っている必要があります。 
+秘密度ラベルを作成するコンプライアンス チームのメンバーは、Microsoft 365 コンプライアンス センター、または以前のバージョンのセキュリティ/コンプライアンス センターへのアクセス許可を持っている必要があります。 
 
 既定では、テナントのグローバル管理者はこれらの管理センターへのアクセス権を所有し、コンプライアンス責任者や他のユーザーにアクセス権を付与できます (テナント管理者が持つすべての権限を付与する必要はありません)。この委任された制限付き管理者アクセス許可については、ユーザーを [**コンプライアンス データ管理者**]、[**コンプライアンス管理者**]、または [**セキュリティ管理者**] 役割グループに追加します。 
 

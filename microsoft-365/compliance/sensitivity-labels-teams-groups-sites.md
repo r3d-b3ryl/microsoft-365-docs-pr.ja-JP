@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 501df9b167e917d79957d8b156597af67e6240af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919583"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860876"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -51,7 +51,7 @@ ms.locfileid: "50919583"
 
 ![Word デスクトップ アプリに表示される機密ラベル](../media/sensitivity-label-word.png)
 
-コンテナーの秘密度ラベルを有効にして構成すると、ユーザーは追加で秘密度ラベルを表示し、Microsoft チーム サイト、Microsoft 365 グループ、および SharePoint サイトに適用することができます。 たとえば、SharePoint から新しいチーム サイトを作成する場合:
+コンテナーの秘密度ラベルを有効にして構成すると、ユーザーは追加で秘密度ラベルを表示し、Microsoft チーム サイト、Microsoft 365 グループ、および SharePoint サイトに適用することができます。たとえば、SharePoint から新しいチーム サイトを作成する場合:
 
 ![SharePoint でチーム サイトを作成するときの機密ラベル](../media/sensitivity-labels-new-team-site.png)
 
@@ -144,13 +144,13 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 
 また、**外部ユーザーのアクセス** 設定を含む変更は、次のようになります。
 
-- 新しい設定は新しいユーザーに適用されますが、既存のユーザーには適用されません。 たとえば、この設定は以前に選択されていて、その結果、ゲスト ユーザーがサイトにアクセスした場合、この設定をラベル構成で解除した後も、これらのゲスト ユーザーはサイトにアクセスできます。
+- 新しい設定は新しいユーザーに適用されますが、既存のユーザーには適用されません。たとえば、この設定は以前に選択されていて、その結果、ゲスト ユーザーがサイトにアクセスした場合、この設定をラベル構成で解除した後も、これらのゲスト ユーザーはサイトにアクセスできます。
 
 - HiddenMembership および roleEnabled グループ プロパティのプライバシー設定は更新されません。
 
 ### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>サイトとグループに対して構成されている発行済みラベルを削除する
 
-サイトとグループの設定を有効にして秘密度ラベルの削除を行い、そのラベルが 1 つ以上のラベル ポリシーに含まれている場合、新しいチーム、グループ、サイトの作成に失敗してしまう可能性があります。 この状況を回避するには、以下のガイダンスを使用してください。
+サイトとグループの設定を有効にして秘密度ラベルの削除を行い、そのラベルが 1 つ以上のラベル ポリシーに含まれている場合、新しいチーム、グループ、サイトの作成に失敗してしまう可能性があります。この状況を回避するには、次のガイダンスを使用してください。
 
 1. ラベルを含むすべてのラベル ポリシーから、機密ラベルを削除します。
 
@@ -233,19 +233,19 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
    ```
 
-4. URL に共通の識別文字列が含まれる複数のサイトを特定する新しい変数を作成します。 例:
+4. URL に共通の識別文字列が含まれる複数のサイトを特定する新しい変数を作成します。例:
 
    ```powershell
    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
    ```
 
-5. これらのサイトにラベルを適用するには、次のコマンドを実行します。 サンプルを使用します。
+5. これらのサイトにラベルを適用するには、次のコマンドを実行します。例:
 
    ```powershell
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
    ```
 
-異なるサイトに異なるラベルを適用するには、各サイトで次のコマンドを繰り返します。 `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
+この一連のコマンドを使用すると、テナント全体の複数のサイトに同じ秘密度ラベルを付けることができます。そのため、サイトごとの構成用の Set-SPOSite コマンドレットではなく、Set-SPOTenant コマンドレットを使用します。 ただし、特定のサイトに異なるラベルを適用する必要がある場合は、サイトごとに次のコマンドを繰り返して、Set-SPOSite コマンドレットを使用します。`Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>SharePoint 管理センターで秘密度ラベルを表示し管理する
 
@@ -317,7 +317,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 その後で以下の手順に従います。
 
-1. PowerShell を使用し、既存の Microsoft 365 グループおよび SharePoint サイトに名前のマッピングを使用して秘密度ラベルを適用します。 手順については、次のセクションを参照してください。
+1. PowerShell を使用し、既存の Microsoft 365 グループおよび SharePoint サイトに名前のマッピングを使用して秘密度ラベルを適用します。手順については、次のセクションを参照してください。
 
 2. 既存のグループおよびサイトから古い分類を削除します。
 
@@ -347,7 +347,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. グループごとに、新しい機密ラベル GUID を追加します。 以下に例を示します。
+6. グループごとに、新しい機密ラベル GUID を追加します。例:
 
     ```PowerShell
     foreach ($g in $groups)

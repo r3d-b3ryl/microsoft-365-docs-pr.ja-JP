@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838350"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113865"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>Microsoft Compliance Extension (プレビュー) を開始する
 
@@ -35,7 +35,7 @@ ms.locfileid: "50838350"
 Microsoft Compliance Extension を使用するには、デバイスがエンドポイント DLP に搭載されている必要があります。 DLP やエンドポイント DLP に慣れていない場合は、これらの記事をレビューします
 
 - [Microsoft Compliance Extension の詳細](dlp-chrome-learn-about.md)
-- [データ損失防止の概要](data-loss-prevention-policies.md)
+- [データ損失防止について](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
@@ -76,7 +76,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 ### <a name="overall-installation-workflow"></a>インストールの全体的なワークフロー
 
-Microsoft Compliance Extension の導入は、複数の手順を踏まえて行われます。 一度に 1 台のマシンにインストールするか、Microsoft エンドポイント マネージャーやグループ ポリシーを使用して組織全体に展開するかを選択できます。
+Microsoft Compliance Extension の展開は、多段階のプロセスです。一度に 1 台のマシンにインストールするか、Microsoft エンドポイント マネージャーやグループ ポリシーを使用して組織全体に展開するかを選択できます。
 
 1. [デバイスを準備します](#prepare-your-devices)。
 2. [基本的なセットアップ シングル マシンのセルフホスト](#basic-setup-single-machine-selfhost)
@@ -274,7 +274,7 @@ Microsoft エンドポイント マネージャーを使用しない場合は、
 
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)
-- [データ損失防止の概要](data-loss-prevention-policies.md)
+- [データ損失防止について](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)

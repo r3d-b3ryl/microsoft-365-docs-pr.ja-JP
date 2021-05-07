@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574656"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892908"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -41,7 +41,7 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 また、監査ログを 10 年間保持する機能もリリースしています。 監査ログを 10 年間保持することで、長期間にわたる調査や、規制、法律、社内の義務への対応をサポートします。
 
 > [!NOTE]
-> 監査ログを 10 年間保持するには、追加のアドオン ライセンスが必要です。 この新しいライセンスは、2021 年初頭より利用可能になります。 詳細については、この記事の「[高度な監査についてよく寄せられる質問](#faqs-for-advanced-audit)」セクションを参照してください。
+> 監査ログを 10 年間保持するには、追加のアドオン ライセンスが必要です。 詳細については、この記事の「[高度な監査についてよく寄せられる質問](#faqs-for-advanced-audit)」セクションを参照してください。
 
 ### <a name="audit-log-retention-policies"></a>監査ログの保持ポリシー
 
@@ -63,9 +63,12 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+> [!NOTE]
+> <sup>*</sup> 現時点では、このイベントは Office 365 および Microsoft 365 政府機関環境では利用できません。 これには、GCC、GCC High、および DoD 環境が含まれます。
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
@@ -77,7 +80,7 @@ MailItemsAccessed メールボックス アクションは、Exchange Online の
 
 - MessageBind は、メール クライアントによるアクセスのみを対象としています。 同期アクティビティには適用されませんでした。 MailItemsAccessed イベントは、バインド アクセスの種類と同期アクセスの種類の両方によってトリガーされます。
 
-- MessageBind アクションによって、同じメール メッセージにアクセスしたときに複数の監査レコードが作成され、「ノイズ」が監査されます。 一方、MailItemsAccessed イベントは、少数の監査レコードに集約されます。
+- MessageBind アクションによって、同じメール メッセージにアクセスしたときに複数の監査レコードが作成され、「ノイズ」が監査されます。一方、MailItemsAccessed イベントは、少数の監査レコードに集約されます。
 
 MailItemsAccessed アクティビティの監査レコードの詳細については、「[高度な監査を使用して、侵害されたアカウントを調査する](mailitemsaccessed-forensics-investigations.md)」を参照してください。
 
@@ -197,17 +200,13 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 
 適切なライセンスが割り当てられている対象のお客様とユーザーには、重要な監査イベントにアクセスするためのアクションはありません。
 
-**新しい 10 年間の監査ログ保持アドオン ライセンスはいつ利用できるようになりますか?**
+**機能が一般提供リリースされたときに 10 年間の監査ログ保持ポリシーを作成しているものの、必要なアドオン ライセンスが利用可能となる前である場合、組織の監査ログ データはどうなりますか?**
 
-新しい 10 年間の監査ログ保持アドオンは、E5 サブスクリプションをお持ちのお客様を対象として購入可能になりました。
+2020 年の第 4 四半期に機能が一般提供リリースされた後に作成された 10 年間の監査ログ保持ポリシーの対象となる任意の監査ログ データについては、10 年間にわたって保持されます。 これには、必要なアドオン ライセンスが購入のためにリリースされる前に作成された 10 年間の監査ログ保持ポリシーが含まれます。 ただし、10 年間の監査ログ保持アドオン ライセンスが利用可能になったため、監査データが 10 年間の監査保持ポリシーの対象となるすべてのユーザーに対して、これらのアドオン ライセンスを購入して割り当てる必要があります。
 
-**機能が一般提供リリースされたときに 10 年間の監査ログ保持ポリシーを作成しているものの、必要なアドオン ライセンスが 2021 年 2 月に利用可能となる前である場合、組織の監査ログ データはどうなりますか?**
+**高度な監査の新しいイベントは、Office 365 マネージメント アクティビティ API で利用できますか ?**
 
-一般提供された後に作成された 10 年間の監査ログ保持ポリシーの対象となる任意の監査ログ データについては、10 年間にわたって保持されます。 2021 年初頭に 10 年間の監査ログ保持アドオン ライセンスが利用可能になったときには、既存の 10 年間の監査データ保持ポリシーによって監査データを保持しているユーザーのためのアドオン ライセンスを購入する必要があります。
-
-**高度な監査の新しいイベントは、Office 365 管理アクティビティ API で利用できますか ?**
-
-はい。 適切なライセンスを持つユーザーの監査レコードが生成されている限り、Office 365 管理アクティビティ API を介してこれらのレコードにアクセスできます。
+はい。適切なライセンスを持つユーザーの監査レコードが生成されている限り、Office 365 マネージメント アクティビティ API を介してこれらのレコードにアクセスできます。
 
 **より高い帯域幅は、遅延の改善やより高い SLA を意味しますか ?**
 

@@ -1,7 +1,7 @@
 ---
-title: 1 つの修復アクティビティの公開デバイスを一覧表示する
+title: 1 つの修復アクティビティの暴露デバイスを一覧表示する
 description: 指定した修復タスクの公開されているデバイスに関する情報を返します。
-keywords: apis、修復、修復 API、get、修復タスク、
+keywords: apis、修復、修復 API、取得、修復タスク、公開されているデバイスの修復
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061199"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241714"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a>1 つの修復アクティビティの公開デバイスを一覧表示する
+# <a name="list-exposed-devices-of-one-remediation-activity"></a>1 つの修復アクティビティの暴露デバイスを一覧表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,7 +49,16 @@ ms.locfileid: "52061199"
 
 **URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences
 
-**プロパティの** 詳細
+## <a name="permissions"></a>アクセス許可
+
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+
+アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+:---|:---|:---
+アプリケーション | RemediationTask.Read.All | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント) | RemediationTask.Read.Read | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
+
+## <a name="properties-details"></a>プロパティの詳細
 
 プロパティ (id) | データ型 | 説明 | 例
 :---|:---|:---|:---
@@ -60,13 +69,13 @@ rbacGroupName | String | このデバイスが関連付けられているデバ�
 
 ## <a name="example"></a>例
 
-**要求の** 例
+### <a name="request-example"></a>要求の例
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-**応答** の例
+### <a name="response-example"></a>応答の例
 
 ```json
 {
@@ -104,14 +113,14 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [修復方法とプロパティ](get-remediation-methods-properties.md)
 
-- [Id で 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
+- [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
 
-- [すべての修復アクティビティを一覧表示する](get-remediation-all-activities.md)
+- [すべての修復作業を一覧表示する](get-remediation-all-activities.md)
 
-- [リスクベースの脅威と&管理](next-gen-threat-and-vuln-mgt.md)
+- [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 
 - [組織の脆弱性](tvm-weaknesses.md)

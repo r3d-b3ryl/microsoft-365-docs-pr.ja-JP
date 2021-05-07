@@ -25,24 +25,24 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービス のパスワード リセット ツールを使用してパスワードをリセットする方法について学習します。
-ms.openlocfilehash: 0842430eda8c96647dd12d0da6d0c9e0481346dc
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: d24e826287f69f867fdaf9a5c8b424dbad4e0ebb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023763"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241834"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
-Microsoft 365 管理者は、セルフサービス のパスワード[](https://go.microsoft.com/fwlink/p/?LinkId=522677)リセット ツールを使用して、パスワードをリセットする必要がなさそう。 仕事が少ない!
+管理者Microsoft 365、ユーザーがセルフサービス のパスワードリセット ツールを使用[](https://go.microsoft.com/fwlink/p/?LinkId=522677)して、パスワードをリセットする必要がなさそう。 仕事が少ない!
   
 ## <a name="before-you-begin"></a>はじめに
   
-- Microsoft 365 のビジネス、教育、または非営利の有料プランで、クラウド ユーザーのセルフサービス パスワードリセットを無料で受け取る。 Microsoft 365 試用版では動作しません。
+- クラウド ユーザーのセルフサービス パスワード リセットは、ビジネス、教育、または非営利の有料プランMicrosoft 365無料で取得できます。 この機能は、試用版ではMicrosoft 365しません。
 
 - この操作には Azure を使用します。これらの手順を行うときに、自動的に **無料** で Azure にあるこの機能を取得できます。その他の Azure 機能を使用しない場合は、セルフサービスによるパスワード リセットをオンにするために費用はかかりません。
 
-- **オンプレミスの Active Directory を使用** している場合、上記の 2 つの点は適用されません。 むしろ、これを設定できますが、 **有料のサブスクリプションが必要** です Azure AD Premium .
+- **オンプレミスの Active Directory を使用** している場合、上記の 2 つの点は適用されません。 むしろ、これを設定できますが **、Azure** サービスへの有料サブスクリプションが必要AD プレミアム。
 
 この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
 
@@ -57,24 +57,8 @@ Microsoft 365 管理者は、セルフサービス のパスワード[](https://
 ## <a name="steps-let-people-reset-their-own-passwords"></a>手順: ユーザーが自分のパスワードをリセットする
 
 次の手順を行うと、社内のすべてのユーザーに対してセルフサービスによるパスワードのリセットがオンになります。
-  
-::: moniker range="o365-worldwide"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">で、[</a>設定組織の設定 **]** > **ページに移動** します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>設定セキュリティのプライバシー **]** \> **ページ &amp; に移動** します。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>設定] [セキュリティのプライバシー **]** \>  \> **ページ &amp; に移動** します。
-
-::: moniker-end
+1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">で、[</a>組織の設定]**ページ設定**  >  **移動** します。
 
 2. [組織の設定] ページ **の上部で** 、[セキュリティ] タブ **&選択** します。
   

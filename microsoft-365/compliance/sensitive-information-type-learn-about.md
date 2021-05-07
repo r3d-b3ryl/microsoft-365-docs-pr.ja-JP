@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919673"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114227"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
-組織の管理下にある機密性の高いアイテムを識別および分類する方法は、情報保護の分野の最初の [ステップです](./information-protection.md)。  Microsoft 365 には、分類できるアイテムを識別する 3 つの方法があります。
+組織の管理下にある機密性の高いアイテムを識別および分類する方法は、情報保護の分野の最初の [ステップです](./information-protection.md)。  Microsoft 365には、分類可能なアイテムを識別する 3 つの方法があります。
 
 - ユーザーが手動で行う
 - 機密情報の種類などの自動パターン認識
@@ -35,9 +35,10 @@ ms.locfileid: "50919673"
 
 ## <a name="sensitive-information-types-are-used-in"></a>機密情報の種類は、
 
-- [データ損失防止ポリシー](data-loss-prevention-policies.md) 
+- [データ損失防止ポリシー](dlp-learn-about-dlp.md) 
 - [機密ラベル](sensitivity-labels.md)
 - [保持ラベル](retention.md)
+- [インサイダー リスクの管理](insider-risk-management.md)
 - [通信コンプライアンス](communication-compliance.md)
 - [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -65,7 +66,7 @@ ms.locfileid: "50919673"
 
 ## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 ID (DNI) 番号
 
-### <a name="format"></a>フォーマット
+### <a name="format"></a>Format
 
 ピリオドで区切られた 8 桁の数字
 
@@ -143,7 +144,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 
 > [!NOTE]
-> Microsoft 365 サービスのデータ損失防止、Microsoft 365 サービスの Microsoft Information Protection、コミュニケーション コンプライアンス、情報ガバナンス、およびレコード管理内で、信頼性レベルの向上がすぐに使用できます。
+> Microsoft 365 サービスのデータ損失防止、Microsoft 365 サービスの Microsoft Information Protection、コミュニケーション コンプライアンス、情報ガバナンス、およびレコード管理内ですぐに使用できる信頼レベルの向上。
 
 > Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。
 > - 中国語 (簡体字)
@@ -151,7 +152,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 > - 韓国語
 > - 日本語
 
->このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
+>このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポー](mip-dbcs-relnotes.md)」を参照してください。
 
 ## <a name="for-further-information"></a>詳細については、次の情報を参照してください。
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)

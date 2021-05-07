@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: オンプレミスのスキャナーで Microsoft 365 データ損失防止を使用して、保存されているデータをスキャンし、オンプレミスのファイル共有とオンプレミスの SharePoint フォルダーとドキュメント ライブラリに保護アクションを実装する方法について説明します。
-ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0abe36af5588c1828da106779a144b6e7f37d6a8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917823"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114155"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) を使用する
 
@@ -32,7 +32,7 @@ DLP オンプレミス機能、および DLP ポリシーで表示される方�
 
 > [!IMPORTANT]
 > これらの DLP オンプレミス シナリオは、DLP ポリシーの作成と調整に関する公式な手順ではありません。 一般的な状況で DLP ポリシーを使用する必要がある場合は、次のトピックを参照してください。
->- [データ損失防止の概要](data-loss-prevention-policies.md)
+>- [データ損失防止について](dlp-learn-about-dlp.md)
 >- [DLP の既定ポリシーの概要](get-started-with-the-default-dlp-policy.md)
 >- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
 >- [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
@@ -80,6 +80,6 @@ DLP オンプレミス スキャナーのデータが複数の領域に表示さ
 
 - [DLP オンプレミス スキャナーの前提条件 (プレビュー)](dlp-on-premises-scanner-learn.md)
 - [DLP オンプレミス スキャナーの使用を開始する (プレビュー)](dlp-on-premises-scanner-get-started.md)
-- [データ損失防止の概要](data-loss-prevention-policies.md)
+- [データ損失防止について](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)

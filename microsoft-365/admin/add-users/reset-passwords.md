@@ -26,17 +26,17 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Microsoft 365 for business サブスクリプションのユーザーのパスワードをリセットする方法について説明します。
-ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: ビジネス サブスクリプションのユーザーのパスワードをMicrosoft 365する方法について学習します。
+ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023979"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241702"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
-この記事では、Microsoft 365 for Business サブスクリプションを使用している場合に、自分とユーザーのパスワードをリセットする方法について説明します。
+この記事では、ビジネス サブスクリプション用のパスワードを使用している場合に、自分とユーザーのパスワードMicrosoft 365説明します。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -54,23 +54,7 @@ ms.locfileid: "52023979"
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>手順: ユーザーのビジネス パスワードをリセットする
 
-::: moniker range="o365-worldwide"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-::: moniker-end
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [**アクティブ ユーザー**] ページでユーザーを選択し、[**パスワードのリセット**] を選択します。
 
@@ -126,13 +110,13 @@ PowerShell を使用しましょう。Eyal Doron による次の投稿を確認�
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-概要については [、「Manage Microsoft 365 with PowerShell」を参照してください](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
+概要については[、「Manage Microsoft 365 PowerShell 」を参照してください](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>社内のすべてのユーザーに対してパスワードの変更を強制する
 
 Vasil Michev (Microsoft MVP) による次のブログ投稿を確認してください: [Office 365 のすべてのユーザーのパスワードの変更を強制する](https://go.microsoft.com/fwlink/?linkid=853693)
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Microsoft 365 for business サブスクリプションを持ってない
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>ビジネス サブスクリプションのMicrosoft 365を持ってない
 
 この記事、「[Office で使用するアカウントまたはパスワードを忘れてしまった](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)」を参照してください。
   

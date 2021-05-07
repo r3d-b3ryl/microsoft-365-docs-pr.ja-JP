@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'ビジネス アカウントに関連付けられたメール エイリアスと呼ばれる複数の電子メール アドレスをMicrosoft 365する方法について説明します。 '
-ms.openlocfilehash: 00e1c55edfcfa9937ab6a18b4bf268adb858b775
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: fd5fe2906335c8c2d1f41ac7643b7312138e15f5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107124"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241690"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>ユーザーに別のメール エイリアスを追加する
   
@@ -44,12 +44,8 @@ ms.locfileid: "52107124"
 > 複数のユーザーが 1 つの電子メール アドレスに送信されるメールを管理する場合 (info@NodPublishers.com、sales@NodPublishers.com メールボックスを作成します。 詳細については、「共有メールボックスの [作成」を参照してください](create-a-shared-mailbox.md)。
   
 ## <a name="add-email-aliases-to-a-user"></a>ユーザーにメール エイリアスを追加する
-<a name="AddEmailPreview"> </a>
 
 これを行うには [、管理者のアクセス許可](../add-users/about-admin-roles.md) が必要です。 
-
-  
-::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
@@ -77,73 +73,7 @@ ms.locfileid: "52107124"
   
 7. **ユーザーが返信すると *、From* アドレスはユーザーのクライアントOutlookされます。Outlookは、電子メールが受信されたエイリアスを使用します (これを ping-pong の原則と呼ぶ)。Outlookデスクトップは、プライマリ メール エイリアスを使用します。** たとえば、メッセージがメールに送信され、Sales@NodPublishers.com 受信トレイに届いたとします。 Eliza がデスクトップを使用してメッセージに返信Outlook、メインの電子メール アドレスは、Eliza@NodPublishers.com として表示 Sales@NodPublishers.com。
     
-::: moniker-end
-
-::: moniker range="o365-germany"
-    
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。 
-    
-    
-2. [**アクティブなユーザー**] ページで、編集するユーザー名を選びます。
-
-3. [ユーザー名 **/ メール エイリアス] の横にある [** 編集] を **選択します**。
-
-    > [!Important] 
-    > エラー メッセージが表示された場合は、パラメーター名 **'EmailAddresses,"** と一致するパラメーターが見つかりません。これは、テナントのセットアップを終了するにはもう少し時間がかかるか、最近追加した場合はカスタム ドメインを使用します。 セットアップ プロセスが完了するには、最大 4 時間かかります。 しばらく待って、セットアップ プロセスが完了するまでの時間を持ち、もう一度やり直してください。 問題が解決しない場合は、サポートにご連絡ください。サポートでは完全な同期を行います。
-
-4. [エイリアス] の下 **のテキスト ボックス** に、新しいメール エイリアスの最初の部分を入力します。 独自のドメインを Microsoft 365 に追加した場合は、ドロップダウン リストを使って新しいメール エイリアスにそのドメインを選択することができます。 次に **[追加]** を選択します。
-
-    > [!IMPORTANT]
-    > GoDaddy または別のパートナーからサブスクリプションを購入した場合、新しいエイリアスをプライマリとして設定するには、GoDaddy またはパートナーの管理コンソールに移動する必要があります。 
-  
-    > [!TIP]
-    > メール エイリアスは、ドロップダウン リストにあるドメインで終了する必要があります。 リストに別のドメイン名を追加するには、「[ドメインをリストに追加する」をMicrosoft 365。](../setup/add-domain.md) 
-
-5. 完了したら、[**保存**] を選択します。
-
-6. 新しいエイリアスが新しいエイリアスに設定されるまで 24 時間Microsoft 365。 
-    
-    これで、ユーザーはプライマリ アドレスとエイリアスを持つ必要があります。 たとえば、Eliza Hoffman のプライマリ アドレス Eliza@NodPublishers.com とエイリアス Sales@NodPublishers.com に送信されたメールはすべて、Eliza の受信トレイに移動します。
-    
-  
-7. **ユーザーが返信すると *、From* アドレスはユーザーのクライアントOutlookされます。Outlookは、電子メールが受信されたエイリアスを使用します (これを ping-pong の原則と呼ぶ)。Outlookデスクトップは、プライマリ メール エイリアスを使用します。** たとえば、メッセージがメールに送信され、Sales@NodPublishers.com 受信トレイに届いたとします。 Eliza がデスクトップを使用してメッセージに返信Outlook、メインの電子メール アドレスは、Eliza@NodPublishers.com として表示 Sales@NodPublishers.com。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。 
-
-    
-2. [**アクティブなユーザー**] ページで、編集するユーザー名を選びます。
-
-3. [ユーザー名 **/ メール エイリアス] の横にある [** 編集] を **選択します**。
-
-    > [!Important] 
-    > エラー メッセージが表示された場合は、パラメーター名 **'EmailAddresses,"** と一致するパラメーターが見つかりません。これは、テナントのセットアップを終了するにはもう少し時間がかかるか、最近追加した場合はカスタム ドメインを使用します。 セットアップ プロセスが完了するには、最大 4 時間かかります。 しばらく待って、セットアップ プロセスが完了するまでの時間を持ち、もう一度やり直してください。 問題が解決しない場合は、サポートにご連絡ください。サポートでは完全な同期を行います。
-
-4. [エイリアス] の下 **のテキスト ボックス** に、新しいメール エイリアスの最初の部分を入力します。 独自のドメインを Microsoft 365 に追加した場合は、ドロップダウン リストを使って新しいメール エイリアスにそのドメインを選択することができます。 次に **[追加]** を選択します。
-
-    > [!IMPORTANT]
-    > GoDaddy または別のパートナーからサブスクリプションを購入した場合、新しいエイリアスをプライマリとして設定するには、GoDaddy またはパートナーの管理コンソールに移動する必要があります。 
-  
-    > [!TIP]
-    > メール エイリアスは、ドロップダウン リストにあるドメインで終了する必要があります。 リストに別のドメイン名を追加するには、「[ドメインをリストに追加する」をMicrosoft 365。](../setup/add-domain.md) 
-
-5. 完了したら、[**保存**] を選択します。
-
-6. 新しいエイリアスが新しいエイリアスに設定されるまで 24 時間Microsoft 365。 
-    
-    これで、ユーザーはプライマリ アドレスとエイリアスを持つ必要があります。 たとえば、Eliza Hoffman のプライマリ アドレス Eliza@NodPublishers.com とエイリアス Sales@NodPublishers.com に送信されたメールはすべて、Eliza の受信トレイに移動します。
-    
-  
-7. **ユーザーが返信すると *、From* アドレスはユーザーのクライアントOutlookされます。Outlookは、電子メールが受信されたエイリアスを使用します (これを ping-pong の原則と呼ぶ)。Outlookデスクトップは、プライマリ メール エイリアスを使用します。** たとえば、メッセージがメールに送信され、Sales@NodPublishers.com 受信トレイに届いたとします。 Eliza がデスクトップを使用してメッセージに返信Outlook、メインの電子メール アドレスは、Eliza@NodPublishers.com として表示 Sales@NodPublishers.com。
-
-::: moniker-end
-
-
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"パラメーター名 EmailAddresses に一致するパラメーターが見つかりません" を取得しましたか?
-
 
 "パラメーター名 **EmailAddresses** に一致するパラメーターが見つかりません" というエラー メッセージが表示された場合は、テナントのセットアップを完了するにはもう少し時間がかかっています。最近追加した場合は、カスタム ドメインが表示されます。 セットアップ プロセスが完了するには、最大 4 時間かかります。 しばらく待って、セットアップ プロセスが完了するまでの時間を持ち、もう一度やり直してください。 問題が解決しない場合は、サポートにご連絡ください。サポートでは完全な同期を行います。
   

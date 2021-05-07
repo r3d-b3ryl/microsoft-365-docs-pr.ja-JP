@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理センターを使用して、クラウドでの組織の設定、ユーザーおよびサブスクリプションの管理を行います。 管理者アクセス許可によるアカウントへのサインインから始めます。
-ms.openlocfilehash: 8dcd806318bad4aed37aa8cccce4bf90c32e824c
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: f2b8a22019e3292c93d07161f3825dfe90629ccc
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023955"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241750"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
@@ -47,23 +47,7 @@ ms.locfileid: "52023955"
 
 ## <a name="how-to-get-to-the-admin-center"></a>管理センターにアクセスする方法
 
-::: moniker range="o365-worldwide"
-
 1. 管理者アカウントを使用して <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a> からサインインします。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理者アカウントを使用して <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank"> 管理センター</a>にサインインします。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理者アカウントを使用して <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> 管理センター</a>にサインインします。
-
-::: moniker-end
 
 2. 左上にあるアプリ起動ツールのアイコンを選択して、**[管理]** をクリックします。
 
@@ -101,4 +85,4 @@ ms.locfileid: "52023955"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (リンク)
+[Microsoft 365トレーニング ビデオの詳細](../../business-video/index.yml)(リンク ページ)

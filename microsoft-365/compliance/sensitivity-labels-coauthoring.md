@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 34c674dc5fb9be9cb5572ce1f14e11a0f8ab14ae
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034226"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764366"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -60,7 +60,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 - オープン仕様: [2.6.3 LabelInfo とユーザー設定のドキュメントのプロパティ]](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-これらの変このため、ラベルのメタデータを使用しない場所へ読み書きするアプリ、サービス、スクリプト、またはツールが組織内にある場合は、この設定を有効にしないでください。 有効にした場合には、サンプルのような結果になることがあります。
+これらの変このため、ラベルのメタデータを使用しない場所へ読み書きするアプリ、サービス、スクリプト、またはツールが組織内にある場合は、この設定を有効にしないでください。そうした場合、結果の例は次のとおりです。
 
 - ラベル付きドキュメントが、ユーザーにはラベル無しと表示される
 
@@ -104,7 +104,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
     - **Microsoft Information Protection SDK を使用するアプリとサービス:** 
         - 最小バージョン 1.7 
 
-この機能を有効にすると、Microsoft 365 サービスで自動的に新しいラベルのメタデータがサポートされます。 例えば:
+この機能を有効にすると、Microsoft 365 サービスで自動的に新しいラベルのメタデータがサポートされます。以下のような例があります。
 
 - [自動ラベル作成ポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [秘密度レベルを条件として使用する DLP ポリシー](dlp-sensitivity-label-as-condition.md)
@@ -140,7 +140,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>機密度ラベルを使用したファイルの共同編集を有効にする方法
 
 > [!CAUTION]
-> この設定をオンにできるのは、一方向の操作によります。 この機能がプレビュー中には、メタデータの変更、前提条件、制限事項、このページに記載されている既知の問題を確認して理解した上で、非稼働環境でのみテストを行ってください。
+> この設定をオンにすることは一方向のアクションです。この機能がプレビュー中には、メタデータの変更、前提条件、制限事項、このページに記載されている既知の問題を確認して理解した上で、非稼働環境でのみテストを行ってください。
 
 プレビュー中には、特定の URL を使用して、Microsoft 365 コンプライアンス センターのこの設定にアクセスする必要があります。
 
@@ -179,6 +179,6 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 - この設定を有効にしていた間に使用された Office ドキュメントの新しいメタデータ形式と場所は、元の形式と場所にはコピーされません。 そのため、暗号化されていない Word、Excel、PowerPoint のファイルに関するこのラベル情報は失われます。
 
-- テナントでは共同編集と自動保存が機能しなくなります。
+- ラベル付きおよび暗号化されたドキュメントの共同編集と自動保存は、テナントでは機能しなくなりました。
 
 - OneDrive、SharePoint の Office ファイルへの機密度ラベルは有効なままです。

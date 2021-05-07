@@ -1,5 +1,5 @@
 ---
-title: 管理センターの Microsoft 365 レポート - Dynamics 365 Customer Voice アクティビティ
+title: Microsoft 365管理センターのレポート - Dynamics 365 Customer Voice アクティビティ
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,25 +14,24 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: Microsoft 365 管理センターの Microsoft 365 レポート ダッシュボードを使用して、Microsoft Dynamics 365 Customer Voice アクティビティ レポートを取得する方法について説明します。
-ms.openlocfilehash: 1647379216d5021ab3fa6b55f1c5f32f57cdac91
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 管理センターの [レポート] ダッシュボードを使用して Microsoft Dynamics 365 Customer Voice アクティビティ Microsoft 365を取得するMicrosoft 365説明します。
+ms.openlocfilehash: 7975db1f3681ab0823e222f017f6addb514dafd7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579664"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242062"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>管理センターの Microsoft 365 レポート - Dynamics 365 Customer Voice アクティビティ
+# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365管理センターのレポート - Dynamics 365 Customer Voice アクティビティ
 
 Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
   
-たとえば、Dynamics 365 Customer Voice との対話を見て、Microsoft Dynamics 365 Customer Voice を使用するライセンスを持つすべてのユーザーのアクティビティを理解できます。 また、作成された Pro サーベイの数と、ユーザーが回答した Pro サーベイを確認することで、共同作業のレベルを理解するのにも役立ちます。 
+たとえば、Dynamics 365 Customer Voice との対話を見て、Microsoft Dynamics 365 Customer Voice を使用するライセンスを持つすべてのユーザーのアクティビティを理解できます。 また、作成された Pro サーベイの数と、ユーザーが回答した Pro アンケートの数を確認することで、共同作業のレベルを理解するのにも役立ちます。 
   
 > [!NOTE]
 > レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。  
@@ -44,7 +43,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
   
 ## <a name="interpret-the-dynamics-365-customer-voice-activity-report"></a>Dynamics 365 Customer Voice アクティビティ レポートの解釈
 
-[アクティビティ] タブを選択すると、Dynamics 365 Customer Voice レポートでアクティビティを **表示** できます。<br/>![Microsoft 365 レポート - Microsoft Dynamics 365 Customer Voice アクティビティ レポート。](../../media/a7e57d18-1ac8-4d4b-bd70-83361505dc3e.png)
+[アクティビティ] タブを選択すると、Dynamics 365 Customer Voice レポートでアクティビティを **表示** できます。<br/>![Microsoft 365レポート - Microsoft Dynamics 365 Customer Voice アクティビティ レポート。](../../media/a7e57d18-1ac8-4d4b-bd70-83361505dc3e.png)
 
 [列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Dynamics 365 Customer Voice アクティビティ レポート - 列の選択](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
@@ -53,7 +52,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |アイテム|説明|
 |:-----|:-----|
 |**測定基準**|**定義**|
-|ユーザー名  <br/> |Microsoft Forms でアクティビティを実行したユーザーの電子メール アドレス。  <br/> |
+|Username  <br/> |Microsoft Forms でアクティビティを実行したユーザーの電子メール アドレス。  <br/> |
 |最終アクティビティ日 (UTC)  <br/> |選択した日付範囲に対してユーザーがフォーム アクティビティを実行した最新の日付。 特定の日付に発生したアクティビティを表示するには、直接グラフ内の日付を選択します。<br/>これにより、テーブルをフィルター処理して、その特定の日にアクティビティを実行したユーザーのファイル アクティビティ データのみを表示します。  <br/> |
 |作成されたアンケートの数  <br/> |ユーザーが作成したアンケートの数。   <br/> |
 |アンケート回答数  <br/> |アンケートの配布先である応答者からの回答の数。|

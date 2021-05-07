@@ -1,5 +1,5 @@
 ---
-title: 秘密度ラベルを DLP ポリシーの条件として使用する (プレビュー)
+title: DLP ポリシーで秘密度ラベルを条件として使用する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 秘密度ラベルを DLP ポリシーの条件として使用できるサービスやアイテムの種類について説明します。
-ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649636"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876296"
 ---
-# <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>秘密度ラベルを DLP ポリシーの条件として使用する (プレビュー)
+# <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>DLP ポリシーで秘密度ラベルを条件として使用する
 
 次の場所の DLP ポリシーでは、[秘密度ラベル](sensitivity-labels.md)を条件として使用できます。
 
@@ -36,13 +36,13 @@ ms.locfileid: "48649636"
 - OneDrive for Business サイト
 - Windows 10 デバイス
 
-秘密度ラベルは、**コンテンツに含まれている**一覧にオプションとして表示されます。
+秘密度ラベルは、**コンテンツに含まれている** 一覧にオプションとして表示されます。
 
 > [!div class="mx-imgBorder"]
 > ![条件としての秘密度ラベル](../media/dlp-sensitivity-label-as-a-condition.png)
 
 > [!IMPORTANT]
-> DLP ポリシーを適用する場所として **Teams チャットとチャネル メッセージ**を選択している場合、条件としての**秘密度ラベル**は使用できません。
+> DLP ポリシーを適用する場所として **Teams チャットとチャネル メッセージ** を選択している場合、条件としての **秘密度ラベル** は使用できません。
 
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>サポートされているアイテム、シナリオ、ポリシー ヒント
@@ -54,15 +54,15 @@ ms.locfileid: "48649636"
 |サービス  |アイテムの種類  |ポリシー ヒントに利用可能  |強制可能  |
 |---------|---------|---------|---------|
 |Exchange    |メール メッセージ         |はい         |はい         |
-|Exchange    |メールの添付ファイル         |いいえ *         |いいえ *         |
+|Exchange    |メールの添付ファイル         |いいえ *         |はい *         |
 |SharePoint Online     |SharePoint Online 内のアイテム         |はい         |はい         |
 |OneDrive for Business     |アイテム         |はい         |はい         |
 |Teams     |Teams とチャネル メッセージ         |該当なし         |該当なし         |
 |Teams     |attachments         |はい **         |はい **         |
-|Windows 10 デバイス (プレビュー)     |アイテム         |はい         |はい         |
+|Windows 10 デバイス     |アイテム         |はい         |はい         |
 |MCAS (プレビュー) |アイテム         |はい         |はい         |
 
-\* メールの秘密度ラベルの DLP 検出がサポートされました。 秘密度ラベル付きのメールの添付ファイルの DLP 検出はサポートされていません。
+\* 電子メールと添付ファイルの DLP 検出と機密ラベルの適用は、転送中にサポートされます。 機密性のラベルが付いた電子メールの添付ファイルに関する DLP ポリシーのヒントはそうではありません。
 
 \** 1:1 チャットまたはチャネルを介して Teams で送信された添付ファイルは、OneDrive for Business や SharePoint に自動的にアップロードされます。 そのため、SharePoint Online や OneDrive for Business が DLP ポリシー内の場所として含まれている場合、Teams で送信されたラベル付きの添付ファイルは自動的にこの条件の範囲に含まれます。 場所としての Teams は、DLP ポリシーで選択する必要はありません。
 
