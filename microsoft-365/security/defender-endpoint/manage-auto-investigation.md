@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 48674292e5a72ccc371ff4bf43dc499f19b3886d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064052"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274930"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションの確認
 
@@ -61,7 +61,7 @@ ms.locfileid: "51064052"
 
 ## <a name="review-pending-actions"></a>保留中のアクションを確認する
 
-1. Microsoft 365 セキュリティ センター ( ) に移動し [https://security.microsoft.com](https://security.microsoft.com) 、サインインします。
+1. セキュリティ センター ( ) Microsoft 365に移動し [https://security.microsoft.com](https://security.microsoft.com) 、サインインします。
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
 3. [保留中] タブの **アイテムを確認** します。 
 4. アクションを選択して、そのフライアウト ウィンドウを開きます。
@@ -73,7 +73,7 @@ ms.locfileid: "51064052"
 
 ## <a name="review-completed-actions"></a>完了したアクションを確認する
 
-1. Microsoft 365 セキュリティ センター ( ) に移動し [https://security.microsoft.com](https://security.microsoft.com) 、サインインします。
+1. セキュリティ センター ( ) Microsoft 365に移動し [https://security.microsoft.com](https://security.microsoft.com) 、サインインします。
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
 3. [履歴] タブのアイテム **を確認** します。 
 4. アイテムを選択すると、その修復アクションの詳細が表示されます。
@@ -107,7 +107,7 @@ ms.locfileid: "51064052"
 |**完全 - 脅威を自動的に修復** する (推奨設定) |証拠の一部に *対して悪意* のあるという評決に達します。 <br/><br/>適切な修復アクションが自動的に実行されます。 |[完了したアクションを確認する](#review-completed-actions) |
 |**完全 - 脅威を自動的に修復する** |証拠の一部に *対して疑* わしいという評決に達します。 <br/><br/>修復アクションは、続行するための承認待ちです。 | [保留中のアクションを承認 (または拒否) する](#review-pending-actions) |
 |**Semi - 修復の承認が必要**  |証拠の一部に対 *して、悪意のあるか**疑わしい* かの評決に達します。 <br/><br/>修復アクションは、続行するための承認待ちです。  |[保留中のアクションを承認 (または拒否) する](#review-pending-actions) |
-|**Semi - コア フォルダー修復の承認が必要** |証拠の一部に *対して悪意* のあるという評決に達します。 <br/><br/>成果物がファイルまたは実行可能ファイルであり、Windows フォルダーや Program files フォルダーなどのオペレーティング システム ディレクトリにある場合、修復アクションは承認待ちです。 <br/><br/>成果物がオペレーティング *システム ディレクトリに* 存在しない場合は、修復アクションが自動的に実行されます。 |1. [保留中のアクションを承認 (または拒否) する](#review-pending-actions)<br/><br/>2. [完了したアクションを確認する](#review-completed-actions) |
+|**Semi - コア フォルダー修復の承認が必要** |証拠の一部に *対して悪意* のあるという評決に達します。 <br/><br/>成果物がファイルまたは実行可能ファイルであり、オペレーティング システム ディレクトリ (Windows フォルダーや Program files フォルダーなど) にある場合、修復アクションは承認待ちです。 <br/><br/>成果物がオペレーティング *システム ディレクトリに* 存在しない場合は、修復アクションが自動的に実行されます。 |1. [保留中のアクションを承認 (または拒否) する](#review-pending-actions)<br/><br/>2. [完了したアクションを確認する](#review-completed-actions) |
 |**Semi - コア フォルダー修復の承認が必要** |証拠の一部に *対して疑* わしいという評決に達します。 <br/><br/>修復アクションは承認待ちです。  |[保留中のアクションを承認 (または拒否) します](#review-pending-actions)。|
 |**Semi - 一時フォルダー以外の修復の承認が必要** |証拠の一部に *対して悪意* のあるという評決に達します。 <br/><br/>成果物が、ユーザーのダウンロード フォルダーや一時フォルダーなど、一時フォルダーに含されていないファイルまたは実行可能ファイルである場合、修復アクションは承認待ちです。 <br/><br/>成果物が一時フォルダー内 *のファイルまたは* 実行可能ファイルである場合、修復アクションは自動的に実行されます。  |1. [保留中のアクションを承認 (または拒否) する](#review-pending-actions)<br/><br/>2. [完了したアクションを確認する](#review-completed-actions)  |
 |**Semi - 一時フォルダー以外の修復の承認が必要** |証拠の一部に *対して疑* わしいという評決に達します。 <br/><br/>修復アクションは承認待ちです。 |[保留中のアクションを承認 (または拒否) する](#review-pending-actions)  | 
@@ -120,7 +120,7 @@ Microsoft Defender for Endpoint では、すべての評決がアクション �
 
 - [ライブ応答機能の詳細](live-response.md)
 - [高度な狩猟で脅威を積極的に探す](advanced-hunting-overview.md)
-- [エンドポイント向け Microsoft Defender で誤検知/負に対処する](defender-endpoint-false-positives-negatives.md)
+- [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="see-also"></a>関連項目
 

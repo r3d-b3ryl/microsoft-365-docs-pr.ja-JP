@@ -1,7 +1,7 @@
 ---
 title: Microsoft Viva トピックの概要
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva トピックの概要。
-ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488159"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275200"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva トピックの概要 
 
@@ -40,8 +40,12 @@ Viva トピックは、AI を使って組織内の **トピック** を自動的
 
 SharePoint ニュースやページのコンテンツでトピックがメンションされると、そのトピックが強調表示されます。 強調表示からトピック サマリーを開くことができます。 サマリーのタイトルからトピックの詳細を開きます。 メンションされたトピックは、自動的に特定されたか、またはページ作成者がトピックを直接参照してページに追加された可能性があります。 
 
-   ![トピックの強調表示](../media/knowledge-management/saturn.png) </br> 
+   ![トピックの強調表示](../media/knowledge-management/saturn.png) 
 
+
+   ![[検索] ボックスを使用して Word で検索を示すスクリーンショット。](../media/knowledge-management/word-search-2.png)
+
+   ![[検索] コンテキスト メニューを使用して Word で検索を示すスクリーンショット。](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>知識のインデックス化
 
@@ -99,7 +103,7 @@ Microsoft 365 環境で Viva・トピックを使用する場合、ユーザー�
 
 ## <a name="admin-controls"></a>管理制御
 
-Microsoft 365 管理センターの管理コントロールを使用すると、ビバ トピックを管理できます。 これらにより、Microsoft 365 グローバル管理者や SharePoint サービス管理者は次のことができます。
+管理センターのMicrosoft 365コントロールを使用すると、ビバ トピックを管理できます。 これらにより、Microsoft 365 グローバル管理者や SharePoint サービス管理者は次のことができます。
 
 - 組織内のどのユーザーが SharePoint の最新ページや SharePoint 検索結果でトピックを見ることができるかを制御します。
 - トピックを特定するためにどの SharePoint サイトをクロールするかを制御します。

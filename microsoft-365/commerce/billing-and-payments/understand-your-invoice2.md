@@ -25,14 +25,17 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Microsoft 365 for Business の課金内容または請求書の請求内容および課金情報についての詳細、および発注書番号を変更する方法について説明します。
-ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615377"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245018"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
+
+> [!IMPORTANT]
+> 2021 年 1 月 26 日現在、ベルギー、フランス、イタリア、ルクセンブルク、ポルトガル、スペイン、および米国の顧客に対して新しい銀行口座がサポートされなくなりました。 これらの国の既存の顧客である場合は、既存の銀行口座を使用してサブスクリプションの支払いを続け、新しいサブスクリプションを追加できますが、銀行口座が良好な位置にある限り、そのサブスクリプションを追加できます。
 
 月次または年次 (サブスクリプションの購入時に選択したオプションに応じて) のいずれかで、新しい請求明細が管理センターで利用可能であることを通知するメールを受信します。 「[一般法人向け Office 365 の課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
   

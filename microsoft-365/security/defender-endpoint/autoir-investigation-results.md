@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 8ecf39090d368427c103c7ec78e22bc13f7c339f
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: c593dfe384649b1599d5c0bab8fa6a8204d105dc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591770"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274834"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
@@ -37,7 +37,7 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 
 ## <a name="new-unified-investigation-page"></a>(NEW!)統合された調査ページ
 
-調査ページが最近更新され、デバイス、電子メール、およびコラボレーション コンテンツ全体の情報が含まれます。 新しい統合された調査ページでは、共通言語が定義され [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  および Microsoft Defender for Office 365 全体で自動調査 [を行う一元的なエクスペリエンスが](/microsoft-365/security/office-365-security/office-365-atp)提供されます。 
+調査ページが最近更新され、デバイス、電子メール、およびコラボレーション コンテンツ全体の情報が含まれます。 新しい統合された調査ページでは、共通言語を定義し[、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)および Microsoft Defender for Office 365 全体で自動調査を行う一元[的なエクスペリエンスを提供します](/microsoft-365/security/office-365-security/office-365-atp)。 
 
 > [!TIP]
 > 変更の詳細については [、「(NEW!) 」を参照してください。統合された調査ページ](/microsoft-365/security/mtp/mtp-autoir-results)。
@@ -78,12 +78,12 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 調査の詳細ビューでは、次の表で説明する [**Investigation graph (調査のグラフ)**]、[**Alerts (警告)**]、[**Device (デバイス)**]、[**Identities (ID)**]、[**Key findings (主な検出事項)**]、[**Entities (エンティティ)**]、[**Log (ログ)**]、[**Pending actions (保留中のアクション)**] の各タブに情報が表示されます。
 
 > [!NOTE]
-> 調査の詳細ページに表示される特定のタブは、サブスクリプションに含まれる内容によって異なります。 たとえば、サブスクリプションに Microsoft Defender for Office 365 プラン 2 が含まれる場合、[メールボックス] タブ **は表示** されません。
+> 調査の詳細ページに表示される特定のタブは、サブスクリプションに含まれる内容によって異なります。 たとえば、サブスクリプションに Microsoft Defender for Office 365プラン 2 が含まれる場合、[メールボックス] タブ **は表示** されません。
 
 | タブ | 説明 |
 |:--------|:--------|
 | **Investigation graph (調査グラフ)**   | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。 |
-| **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、Office アプリ、Cloud App Security、その他の Microsoft 365 Defender 機能の脅威保護機能から発生する可能性があります。|
+| **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、アプリ、Office、その他の Defender 機能Cloud App Security脅威Microsoft 365発生します。|
 | **デバイス** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、デバイス グループ [のオートメーション レベルに対応します](automation-levels.md)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
 | **Users**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |

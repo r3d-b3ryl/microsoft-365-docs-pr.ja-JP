@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 Small Business のトレーニング
-summary: ビジネス向け Microsoft 365 をセットアップして管理する方法について説明します。
+summary: ビジネス向けアプリの設定と管理Microsoft 365する方法について学習します。
 brand: m365
 metadata:
   title: Microsoft 365 Small Business のトレーニング
-  description: Microsoft 365 管理センターで Microsoft 365 を設定および管理します。
+  description: 管理センターでMicrosoft 365をMicrosoft 365管理します。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -17,7 +17,7 @@ productDirectory:
   items:
     - title: 作業の開始
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: ビジネス向け Microsoft 365 への移行を計画します。
+      summary: ビジネス向けサービスへの移行Microsoft 365計画します。
       url: what-is-microsoft-365.md
     - title: 一般法人向け Microsoft 365 をセットアップする
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
@@ -25,7 +25,7 @@ productDirectory:
       url: sign-up.md
     - title: コンピューターのセットアップ
       imageSrc: 'https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg'
-      summary: ファイルOfficeインストール、メールのセットアップ、ファイルの移行を行います。
+      summary: ファイルOffice、メールのセットアップ、ファイルの移行を行います。
       url: upgrade.md
     - title: モバイル デバイスをセットアップする
       imageSrc: 'https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg'
@@ -33,7 +33,7 @@ productDirectory:
       url: work-from-anywhere.md
     - title: 他のユーザーとの共同作業
       imageSrc: 'https://docs.microsoft.com/office/media/icons/collaborate-blue.svg'
-      summary: Teams の従業員と顧客と一緒に作業します。
+      summary: 従業員と顧客と一緒にTeams。
       url: collab-outlook-teams.md
     - title: ファイルの保存と共有
       imageSrc: 'https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg'
@@ -61,18 +61,18 @@ productDirectory:
       url: overview-m365-security.md
     - title: サポートを受ける
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
-      summary: Microsoft 365 for business に関するヘルプを参照してください。
-      url: find-help-answers.md
+      summary: ビジネス向けMicrosoft 365ヘルプを表示します。
+      url: get-help-support.md
 additionalContent:
   sections:
     - title: 詳細情報
       items:
         - title: 詳細については、Office
-          summary: Word、Excel、PowerPoint、その他のアプリを使用するOfficeします。
+          summary: Word、Excel、PowerPointアプリのOfficeします。
           url: 'https://support.microsoft.com/training'
         - title: ITPros のトレーニングを受け取る
           summary: 中堅企業およびエンタープライズ 企業向け学習パスを完了します。
           url: 'https://docs.microsoft.com/learn/m365/'
         - title: その他の管理リソースを検索する
-          summary: Microsoft 365 管理センターのヘルプ サイトに移動します。
+          summary: 管理センターのMicrosoft 365に移動します。
           url: ../admin/index.yml

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 一般法人向け Microsoft 365 または有料版サブスクリプションをキャンセルする方法について説明します。
 ms.date: 04/08/2021
-ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107004"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244662"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -126,7 +126,7 @@ NS レコードを変更する方法については、「[ドメインを削除�
 
 - メール、連絡先、タスク、予定表などの情報を別のアカウントに移動するには、「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)」を参照してください。
 
-- SharePoint Online 環境 (OneDrive for Business またはチーム サイト) からドキュメント ライブラリやリスト コンテンツ (連絡先など) を保存するには、「[SharePoint Online コンテンツの手動移行に関する情報](https://support.microsoft.com/kb/2783484)」を参照してください。
+- SharePoint Online 環境 (OneDrive for Business またはチーム サイト) からドキュメント ライブラリやリスト コンテンツ (連絡先など) を保存するには、「[SharePoint Online コンテンツの手動移行に関する情報](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration)」を参照してください。
 
 ### <a name="uninstall-office-optional"></a>Office をアンインストールする (省略可能)
 

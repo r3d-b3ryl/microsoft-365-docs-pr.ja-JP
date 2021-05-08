@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止ポリシーとツールを使用Microsoft 365機密情報を保護し、DLP ライフサイクルを通じてツアーを行う方法について説明します。
-ms.openlocfilehash: 451622d15b1f422304dd498264ff2fe4a343bb6c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52127791"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244614"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
@@ -212,3 +212,5 @@ DLP の詳細についてはMicrosoft 365参照してください。
 - [Microsoft 365 のエンドポイントのデータ損失防止について学ぶ (プレビュー) ](dlp-on-premises-scanner-learn.md)
 - [Microsoft Compliance Extension (プレビュー) の詳細情報](dlp-chrome-learn-about.md)
 - [データ損失防止の警告ダッシュボードについて](dlp-alerts-dashboard-learn.md)
+
+データ損失防止を使用してデータ プライバシー規制に準拠する方法については、「[](../solutions/information-protection-deploy.md)データプライバシー規制に関する情報保護を展開する (Microsoft 365 (aka.ms/m365dataprivacy)」を参照してください。

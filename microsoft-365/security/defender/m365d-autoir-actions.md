@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: e3e842f812c5675334cc25fa35544165129db2b4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245890"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274654"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>アクション センターでのアクションの表示と管理
 
@@ -36,25 +36,26 @@ ms.locfileid: "52245890"
 **適用対象:**
 - Microsoft 365 Defender
 
-Defender の脅威保護機能Microsoft 365特定の修復アクションが発生する可能性があります。 次に例を示します。
+Microsoft 365 Defender の脅威保護機能により、特定の修復アクションが発生する可能性があります。 次に例を示します。
+
 - [自動調査によって、](m365d-autoir.md) 修復アクションが自動的に実行される、または承認を待つ可能性があります。
 - ウイルス対策、マルウェア対策、その他の脅威保護機能により、ファイル、URL、プロセスのブロック、検疫への成果物の送信など、修復アクションが発生する可能性があります。
 - セキュリティ運用チームは、高度な検索中やアラートやインシデント[](advanced-hunting-overview.md)の調査中など、手動で修復[アクション](investigate-alerts.md)を[実行できます](investigate-incidents.md)。
 
 > [!NOTE]
-> 修復アクションを承認または拒否するには、[適切なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)が必要です。 詳細については、「Defender の自動調査と対応の前提条件」[をMicrosoft 365してください](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
+> 修復アクションを承認または拒否するには、[適切なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)が必要です。 詳細については、「前提条件」を [参照してください](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
 
 ## <a name="review-pending-actions-in-the-action-center"></a>アクション センターで保留中のアクションを確認する
 
 自動調査を続行し適時完了できるよう、保留中のアクションはできるだけ早く承認 (または拒否) することが重要です。 
 
-![アクションを承認または拒否する](../../media/air-actioncenter-itemselected.png)
-
 1. [https://security.microsoft.com](https://security.microsoft.com) に移動し、サインインします。 
 
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
 
-3. アクション センターの [**Pending (保留中)**] タブで、リスト内のアイテムを選択します。 そのフライアウト ウィンドウが開きます。
+3. アクション センターの [**Pending (保留中)**] タブで、リスト内のアイテムを選択します。 そのフライアウト ウィンドウが開きます。 次に例を示します。
+
+   ![アクションを承認または拒否する](../../media/air-actioncenter-itemselected.png)
 
 4. フライアウト ウィンドウで情報を確認し、次のいずれかの手順を実行します。
    - [ **調査ページを開く]** を選択して、調査の詳細を表示します。
@@ -90,11 +91,11 @@ Defender の脅威保護機能Microsoft 365特定の修復アクションが発�
 
 1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。
 
-2. [履歴 **] タブ** で、アクションの種類が [検疫ファイル] のファイルを **選択します**。
+2. [履歴 **] タブ** で、検疫ファイルのアクションの **種類を持つファイルを** 選択します。
 
 3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を **選択します**。
 
 ## <a name="next-steps"></a>次の手順
 
 - [自動調査の詳細と結果を表示する](m365d-autoir-results.md)
-- [誤検知/負の処理方法について (取得した場合)](m365d-autoir-report-false-positives-negatives.md)
+- [誤検知または誤検知に対処する)](m365d-autoir-report-false-positives-negatives.md)

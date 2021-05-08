@@ -9,18 +9,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
-ms.openlocfilehash: 507edb980f671b2f39403cc41e540150f5e82891
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: f82da8eb0dcba39404c2b7f191e166aa78357cee
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764343"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274762"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Windows Server で Microsoft Defender ウイルス対策の除外を構成する
 
@@ -336,9 +337,9 @@ or フォルダーとすべてのサブフォルダーの現在の場所は、�
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Defender ウイルス対策スキャンの除外を構成および検証する](configure-exclusions-microsoft-defender-antivirus.md)
+- [スキャンの除外を構成およびMicrosoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md)
 - [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [除外を定義するときに回避する一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策スキャンと修復の結果をカスタマイズ、開始、および確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
+- [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)

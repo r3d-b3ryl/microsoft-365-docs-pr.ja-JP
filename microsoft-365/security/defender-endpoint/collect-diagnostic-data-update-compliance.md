@@ -1,13 +1,13 @@
 ---
-title: 更新コンプライアンスと Microsoft Defender ウイルス対策の診断Windows Defender収集する
-description: Microsoft Defender ウイルス対策評価アドインを使用する場合は、ツールを使用してデータを収集して更新コンプライアンスの問題をトラブルシューティングする
+title: 更新コンプライアンスと更新プログラムの診断データをWindows Defender Microsoft Defender ウイルス対策
+description: ツールを使用してデータを収集し、更新プログラムのコンプライアンスに関する問題のトラブルシューティングを行う場合は、Microsoft Defender ウイルス対策を使用します。
 keywords: トラブルシューティング、エラー、修正、更新コンプライアンス、oms、モニター、レポート、Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f2b3060d7f0d9daf0f923c674f2fe45ba976fdfc
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 2aaf3d1c650713a7f6cfb7b9abb9f2232013d6db
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764737"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274798"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a>Microsoft Defender AV 評価の更新コンプライアンス診断データを収集する
 
@@ -33,9 +34,9 @@ ms.locfileid: "51764737"
 
 この記事では、Microsoft サポートチームとエンジニアリング チームが使用できる診断データを収集して、更新コンプライアンス アドインの Microsoft Defender AV Assessment セクションを使用するときに発生する可能性がある問題のトラブルシューティングに役立つ方法について説明します。
 
-このプロセスを試す前に [、「Microsoft Defender ウイルス](troubleshoot-reporting.md)対策レポートのトラブルシューティング」を読み、すべての必須コンポーネントを満たしていることを確認し、その他の推奨されるトラブルシューティング手順を実行してください。
+このプロセスを試す前に、「レポートのトラブルシューティング」[を](troubleshoot-reporting.md)Microsoft Defender ウイルス対策、すべての必須コンポーネントを満たしていることを確認し、その他の推奨されるトラブルシューティング手順を実行してください。
 
-Update Compliance でレポートまたは表示されていない少なくとも 2 つのデバイスで、次の手順を実行して .cab 診断ファイルを取得します。
+Update Compliance でレポートまたは表示されていない少なくとも 2 つのデバイスで、次の手順を実行して、.cab診断ファイルを取得します。
 
 1. 次のように、管理者レベルのバージョンのコマンド プロンプトを開きます。
         
@@ -53,9 +54,9 @@ Update Compliance でレポートまたは表示されていない少なくと�
     mpcmdrun -getfiles
     ```
     
-4. さまざまな診断ログを含む .cab ファイルが生成されます。 ファイルの場所は、コマンド プロンプトの出力で指定されます。 既定では、場所は `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .
+4. さまざまな.cabを含むファイルが生成されます。 ファイルの場所は、コマンド プロンプトの出力で指定されます。 既定では、場所は `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .
 
-5. これらの .cab ファイルを、Microsoft サポートからアクセスできる場所にコピーします。 たとえば、パスワードで保護された OneDrive フォルダーを使用して共有できます。
+5. これらのファイル.cab、Microsoft サポートからアクセスできる場所にコピーします。 たとえば、パスワードで保護されたフォルダー OneDrive共有できるフォルダーがあります。
 
 6. [コンプライアンスの更新] サポート メール テンプレートを使用して電子メールを <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">送信し</a>、テンプレートに次の情報を入力します。
   
@@ -71,4 +72,4 @@ Update Compliance でレポートまたは表示されていない少なくと�
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Defender ウイルスWindows Defenderレポートのトラブルシューティング](troubleshoot-reporting.md)
+- [レポートのWindows Defender Microsoft Defender ウイルス対策トラブルシューティング](troubleshoot-reporting.md)

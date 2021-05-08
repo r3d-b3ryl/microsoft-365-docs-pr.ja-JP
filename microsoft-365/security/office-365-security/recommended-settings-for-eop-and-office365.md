@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) と Defender for Office 365 セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳密にしたい場合は、何を使用する必要がありますか? また、Defender を 365 で使用する場合、どのようなOfficeしますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ba88f9b9ebcc34e0ea146a74c01dea8f200ee0b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3a4447d6eaeeb907eb750d2ad668fdbb9031c28b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206650"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274870"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP と Microsoft Defender の 365 セキュリティOffice設定
 
@@ -57,9 +57,11 @@ ms.locfileid: "51206650"
 
 スパム対策ポリシーを作成および構成するには [、「Configure anti-spam policies in Office 365」を参照してください](configure-your-spam-filter-policies.md)。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**スパム** 検出アクション <p> _SpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
 |**信頼度の高いスパム** 検出アクション <p> _HighConfidenceSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
@@ -84,9 +86,11 @@ ms.locfileid: "51206650"
 
 標準レベルと厳密レベルの両方でこれらの ASF 設定 **を****オフにすることをお****勧** めします。 ASF 設定の詳細については、「Advanced [Spam Filter (ASF) settings in Office 365 」 を参照してください](advanced-spam-filtering-asf-options.md)。
 
+<br>
+
 ****
 
-|セキュリティ機能名|コメント|
+|セキュリティ機能名|Comment|
 |---|---|
 |**リモート サイトへのイメージ リンク** (_IncreaseScoreWithImageLinks_)||
 |**URL の数値 IP アドレス** (_IncreaseScoreWithNumericIps_)||
@@ -111,9 +115,11 @@ ms.locfileid: "51206650"
 
 サービスの既定の送信制限の詳細については、「送信制限」 [を参照してください](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**ユーザーあたりの最大受信者数: 外部時間制限** <p> _RecipientLimitExternalPerHour_|0|500|400|既定値 0 は、サービスの既定値を使用します。|
 |**ユーザーあたりの最大受信者数: 内部時間制限** <p> _RecipientLimitInternalPerHour_|0|1000|800|既定値 0 は、サービスの既定値を使用します。|
@@ -125,11 +131,13 @@ ms.locfileid: "51206650"
 
 マルウェア対策ポリシーを作成および構成するには [、「Configure anti-malware policies in Office 365」を参照してください](configure-anti-malware-policies.md)。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**メッセージが検疫された場合、受信者に通知しますか?** <p> _操作_|いいえ <p> _DeleteMessage_|いいえ <p> _DeleteMessage_|いいえ <p> _DeleteMessage_|電子メールの添付ファイルでマルウェアが検出された場合、メッセージは検疫され、管理者だけが解放できます。|
+|**メッセージが検疫された場合、受信者に通知しますか?** <p> _Action_|いいえ <p> _DeleteMessage_|いいえ <p> _DeleteMessage_|いいえ <p> _DeleteMessage_|電子メールの添付ファイルでマルウェアが検出された場合、メッセージは検疫され、管理者だけが解放できます。|
 |**共通の添付ファイルの種類フィルター** <p> _EnableFileFilter_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`|この設定は、添付ファイルの内容に関係なく、ファイルの種類に基づいて実行可能な添付ファイルを含むメッセージを検疫します。|
 |**マルウェアゼロ時間自動削除** <p> _ZapEnabled_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |**未配信メッセージの** 内部送信者に通知する <p> _EnableInternalSenderNotifications_|無効 <p> `$false`|無効 <p> `$false`|無効 <p> `$false`||
@@ -140,9 +148,11 @@ ms.locfileid: "51206650"
 
 これらの設定の詳細については、「スプーフィング設定」 [を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。 これらの設定を構成するには [、「EOP でフィッシング対策ポリシーを構成する」を参照してください](configure-anti-phishing-policies-eop.md)。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**スプーフィング対策の保護を有効にする** <p> _EnableSpoofIntelligence_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |**認証されていない送信者を有効にする** <p> _EnableUnauthenticatedSender_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|不明なスプーフィングされた送信者の Outlook の送信者の写真に疑問符 (?) を追加します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md)。|
@@ -171,13 +181,15 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 
 これらの設定の詳細については、「Microsoft Defender for microsoft Defender for Office [365」](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)の「偽装設定」を参照してください。 これらの設定を構成するには [、「Defender for Office 365」を参照してください](configure-atp-anti-phishing-policies.md)。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|保護されたユーザー: **保護するユーザーを追加する** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Off <p> `$false` <p> none|オン <p> `$true` <p> \<list of users\>|オン <p> `$true` <p> \<list of users\>|組織によっては、主要な役割にユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、その他の上級リーダーである可能性があります。 外部的には、保護された送信者には、評議会のメンバーまたは取締役会が含まれる可能性があります。|
+|保護されたユーザー: **保護するユーザーを追加する** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|オフ <p> `$false` <p> none|オン <p> `$true` <p> \<list of users\>|オン <p> `$true` <p> \<list of users\>|組織によっては、主要な役割にユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、その他の上級リーダーである可能性があります。 外部的には、保護された送信者には、評議会のメンバーまたは取締役会が含まれる可能性があります。|
 |保護されたドメイン: **所有するドメインを自動的に含める** <p> _EnableOrganizationDomainsProtection_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
-|保護されたドメイン: **カスタム ドメインを含める** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> none|オン <p> `$true` <p> \<list of domains\>|オン <p> `$true` <p> \<list of domains\>|組織によっては、所有しているが頻繁に操作するドメイン (送信者ドメイン) を追加することをお勧めします。|
+|保護されたドメイン: **カスタム ドメインを含める** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|オフ <p> `$false` <p> none|オン <p> `$true` <p> \<list of domains\>|オン <p> `$true` <p> \<list of domains\>|組織によっては、所有しているが頻繁に操作するドメイン (送信者ドメイン) を追加することをお勧めします。|
 |保護されたユーザー: **偽装ユーザーから電子メールが送信される場合** <p> _TargetedUserProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
 |保護されたドメイン: **偽装ドメインからメールが送信される場合** <p> _TargetedDomainProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
 |**偽装ユーザーのヒントを表示する** <p> _EnableSimilarUsersSafetyTips_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
@@ -194,9 +206,11 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 
 これらは、EOP のスパム対策ポリシー設定で使用できるのと同 [じ設定です](#eop-anti-spam-policy-settings)。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|---|---|---|---|
 |**スプーフィング対策の保護を有効にする** <p> _EnableSpoofIntelligence_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |**認証されていない送信者を有効にする** <p> _EnableUnauthenticatedSender_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|不明なスプーフィングされた送信者の Outlook の送信者の写真に疑問符 (?) を追加します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md)。|
@@ -207,9 +221,11 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 
 この設定の詳細については、「Microsoft Defender for microsoft Defender for Office [365」](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)を参照してください。 この設定を構成するには [、「Defender for Office 365」を参照](configure-atp-anti-phishing-policies.md)してください。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**高度なフィッシングのしきい値** <p> _PhishThresholdLevel_|**1 - Standard** <p> `1`|**2 - アグレッシブ** <p> `2`|**3 - より積極的** <p> `3`||
 |
@@ -224,12 +240,14 @@ defender for Office 365 のセーフ リンクには、アクティブなセー�
 
 PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) コマンドレットを使用します。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**安全なリンクを使用する: Office 365 アプリケーション** <p> _EnableSafeLinksForO365Clients_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|365 デスクトップおよびモバイル (iOS と Android) Officeサポートされているアプリで安全なリンクを使用します。 詳細については、「セーフ リンクの [設定」を参照Office 365 アプリを参照してください](safe-links.md#safe-links-settings-for-office-365-apps)。|
-|**ユーザーが [安全なリンク] をクリックしても追跡しない** <p> _TrackClicks_|オン <p> `$false`|オフ <p> `$true`|Off <p> `$true`|この設定をオフにすると _(TrackClicks_ に設定)、サポートされている 365 アプリのユーザークリック `$true` Office追跡します。|
+|**ユーザーが [安全なリンク] をクリックしても追跡しない** <p> _TrackClicks_|オン <p> `$false`|オフ <p> `$true`|オフ <p> `$true`|この設定をオフにすると _(TrackClicks_ に設定)、サポートされている 365 アプリのユーザークリック `$true` Office追跡します。|
 |**ユーザーが元の URL への安全なリンクをクリックさせない** <p> _AllowClickThrough_|オン <p> `$false`|オン <p> `$false`|オン <p> `$false`|この設定 _(AllowClickThrough_ をに設定) をオンにすると、サポートされている 365 アプリで元の URL をクリックOffice `$false` 表示されません。|
 |
 
@@ -242,16 +260,18 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 > [!NOTE]
 > 前述したように、既定のセーフ リンク ポリシーはありません。 [既定] 列の値は、作成する新しいセーフ リンク ポリシーの既定値です。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**メッセージ内の不明な潜在的に悪意のある URL のアクションを選択する** <p> _IsEnabled_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**Microsoft Teams 内の不明または潜在的に悪意のある URL のアクションを選択する** <p> _EnableSafeLinksForTeams_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**ファイルを指す疑わしいリンクやリンクに対してリアルタイムの URL スキャンを適用する** <p> _ScanUrls_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**メッセージを配信する前に URL のスキャンが完了するのを待ちます** <p> _DeliverMessageAfterScan_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**組織内で送信された電子メール メッセージに安全なリンクを適用する** <p> _EnableForInternalSenders_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
-|**ユーザーのクリックを追跡しない** <p> _DoNotTrackUserClicks_|Off <p> `$false`|Off <p> `$false`|Off <p> `$false`|この設定をオフにします _(DoNotTrackUserClicks_ を設定 `$false` ) は、ユーザーのクリックを追跡します。|
+|**ユーザーのクリックを追跡しない** <p> _DoNotTrackUserClicks_|オフ <p> `$false`|オフ <p> `$false`|オフ <p> `$false`|この設定をオフにします _(DoNotTrackUserClicks_ を設定 `$false` ) は、ユーザーのクリックを追跡します。|
 |**ユーザーに元の URL へのクリックを許可しない** <p> _DoNotAllowClickThrough_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`|この設定 _(DoNotAllowClickThrough_ をに設定) をオンにすると `$true` 、元の URL へのクリックスルーが禁止されます。|
 |
 
@@ -265,13 +285,15 @@ Microsoft Defender for Office 365 の安全な添付ファイルには、安全�
 
 PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) コマンドレットを使用します。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする** <p> _EnableATPForSPOTeamsODB_|オン <p> `$true`|オン <p> `$true`||
 |**クライアントの安全なドキュメントを有効Officeする** <p> _EnableSafeDocs_|オン <p> `$true`|オン <p> `$true`|この設定は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティ ライセンスでのみ使用できます。 詳細については [、「Safe Documents in Microsoft Defender for Office 365」を参照してください](safe-docs.md)。|
-|**安全なドキュメントがファイルを悪意のあるファイルとして識別した場合でも、保護されたビューをクリックするユーザーを許可する** <p> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|この設定は、安全なドキュメントに関連しています。|
+|**安全なドキュメントがファイルを悪意のあるファイルとして識別した場合でも、保護されたビューをクリックするユーザーを許可する** <p> _AllowSafeDocsOpen_|オフ <p> `$false`|オフ <p> `$false`|この設定は、安全なドキュメントに関連しています。|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>安全な添付ファイルポリシーの設定
@@ -283,12 +305,14 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](/powershell
 > [!NOTE]
 > 前述したように、既定の安全な添付ファイル ポリシーはありません。 [既定] 列の値は、作成する新しい安全な添付ファイル ポリシーの既定値です。
 
+<br>
+
 ****
 
-|セキュリティ機能名|既定値|標準|Strict|コメント|
+|セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**安全な添付ファイル不明のマルウェアの応答** <p> _操作_|ブロック <p> `Block`|ブロック <p> `Block`|ブロック <p> `Block`||
-|**検出時に添付ファイルをリダイレクト** する: **リダイレクトを有効にする** <p> _リダイレクトする_ <p> _RedirectAddress_|オフで、電子メール アドレスが指定されていません。 <p> `$true` <p> none|をオンにし、電子メール アドレスを指定します。 <p> `$true` <p> 電子メール アドレス|をオンにし、電子メール アドレスを指定します。 <p> `$true` <p> 電子メール アドレス|メッセージをセキュリティ管理者にリダイレクトして確認します。|
+|**安全な添付ファイル不明のマルウェアの応答** <p> _Action_|ブロック <p> `Block`|ブロック <p> `Block`|ブロック <p> `Block`||
+|**検出時に添付ファイルをリダイレクト** する: **リダイレクトを有効にする** <p> _リダイレクト_ <p> _RedirectAddress_|オフで、電子メール アドレスが指定されていません。 <p> `$true` <p> none|をオンにし、電子メール アドレスを指定します。 <p> `$true` <p> 電子メール アドレス|をオンにし、電子メール アドレスを指定します。 <p> `$true` <p> 電子メール アドレス|メッセージをセキュリティ管理者にリダイレクトして確認します。|
 |**添付ファイルのマルウェア スキャンが時間切れまたはエラーが発生した場合は、上記の選択を適用します。** <p> _ActionOnError_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |
 

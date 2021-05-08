@@ -20,18 +20,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーが行ったセルフサービス購入を管理する方法について学習できます。
-ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398183"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244994"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
 
 管理者は、組織内のユーザーが行ったセルフサービス購入を確認できます。 セルフサービス購入ごとに、製品名、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーが表示されます。 組織で必要な場合は、PowerShell を介して製品ごとにセルフサービス購入をオフにできます。 セルフサービス購入または一般購入で購入した製品と同じデータ管理ポリシーとアクセス ポリシーがあります。
 
-組織内のユーザーがセルフサービス購入を行うかどうかを制御することもできます。 詳細については [、「Use AllowSelfServicePurchase for the MSCommerce PowerShell モジュール」を参照してください](allowselfservicepurchase-powershell.md)。
+組織内のユーザーがセルフサービス購入を行うかどうかを制御することもできます。 詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。
 
 ## <a name="view-self-service-subscriptions"></a>セルフサービス サブスクリプションの表示
 
@@ -43,14 +43,13 @@ ms.locfileid: "51398183"
 
 ::: moniker range="o365-germany"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
-
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
 
 2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
@@ -59,7 +58,7 @@ ms.locfileid: "51398183"
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>セルフサービス購入サブスクリプションのライセンスを持っているユーザーを表示する
 
 > [!NOTE]
-> 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てまたは割り当て解除できない。 セルフサービス購入 [サブスクリプションを引き](#take-over-a-self-service-purchase-subscription)継ぎ、ライセンスの割り当てまたは割り当てを解除できます。
+> 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てたり割り当て解除したりすることはできません。 [セルフサービス購入サブスクリプションを引き継ぐと](#take-over-a-self-service-purchase-subscription)、ライセンスの割り当てまたは割り当て解除を行うことができるようになります。
 
 ::: moniker range="o365-worldwide"
 
@@ -69,12 +68,13 @@ ms.locfileid: "51398183"
 
 ::: moniker range="o365-germany"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金ライセンス] **ページ** > **に移動** します。
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金ライセンス] **ページ** > **に移動** します。
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
@@ -95,7 +95,7 @@ ms.locfileid: "51398183"
 - 該当する製品の一覧とセルフサービス購入が有効か無効かを表示する
 - 特定の製品の現在の設定を表示または変更して、有効または無効にする
 
-詳細については [、「Use AllowSelfServicePurchase for the MSCommerce PowerShell モジュール」を参照してください](allowselfservicepurchase-powershell.md)。
+詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。
 
 ## <a name="centralize-licenses-under-a-single-subscription"></a>1 つのサブスクリプションでライセンスを一元化する
 

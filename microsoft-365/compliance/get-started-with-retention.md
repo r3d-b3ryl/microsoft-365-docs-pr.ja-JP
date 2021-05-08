@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 65c196f8838378a10263370b1377b3eb43b14915
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051909"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244590"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-保持する必要のあるコンテンツを保持し、その必要のないコンテンツを削除することにより、組織のデータの管理を開始する用意はできていますか? 開始するために、次の概要ガイダンスを参考にできます。
+保持する必要のあるコンテンツを保持し、その必要のないコンテンツを削除することにより、組織のデータの管理を開始する用意はできていますか? 開始するには、次のガイダンスを使用してください。
 
 1. Microsoft 365 の **保持のしくみを理解** し、アイテム保持ポリシーと保持ラベルのどちらを使用するか、または組み合わせて使用するかを決定します。[保持の詳細](retention.md)に関する記事を参照してください。
 
@@ -56,9 +56,9 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 この既定の役割を使用する代わりに、新しい役割グループを作成し、このグループに **保持管理** 役割を追加することもできます。 読み取り専用の役割の場合は、**閲覧限定の保持管理** を使用します。 
 
-役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
-ユーザーを役割グループに追加して役割を割り当てる手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
+ユーザーを役割グループに追加して役割を割り当てる手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
 
 これらのアクセス許可は、アイテム保持ポリシーと保持ラベルの作成、構成、適用にのみ必要です。 これらのポリシーとラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
 
@@ -86,8 +86,6 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 ほとんどのアイテム保持ポリシーは、ユーザーの操作なしでバック グラウンドで目立たないように機能するため、ユーザー向けのドキュメントをほとんど必要としません。 Teams のアイテム保持ポリシーは、メッセージが削除されたときに、[アイテム保持ポリシーに関する Teams メッセージ](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)へのリンクとともにユーザーに通知します。
 
-保持ラベルは Microsoft 365 アプリに UI が存在するため、これらのラベルを運用ネットワークに展開する前に、エンドユーザーとヘルプ デスクにガイダンスを提供するようにしてください。
+保持ラベルは Microsoft 365 アプリに UI が存在するため、これらのラベルを運用ネットワークに展開する前に、エンドユーザーとヘルプ デスクにガイダンスを提供するようにしてください。 ユーザーが SharePoint および OneDrive で保持ラベルを適用できるようにするには、「[SharePoint または OneDrive のファイルに保持ラベルを適用する](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)」を参照してください。
 
-最も効果的なエンド ユーザー向けのドキュメントは、選択した保持ラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ユーザーのトレーニングと導入の促進に使用できるダウンロード パッケージについては、次のブログ記事を参照してください: [M365 の保持ラベルのエンド ユーザー トレーニング – 導入を加速する方法](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
-
-また、次のセクションでは、基本的なユーザーの手順について説明します: [保持ラベルを手動で適用する](create-apply-retention-labels.md#manually-apply-retention-labels)。
+ただし、最も効果的なエンド ユーザー向けのドキュメントは、選択した保持ラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ユーザーのトレーニングと導入の促進に使用できるダウンロード パッケージについては、次のブログ記事を参照してください: [M365 の保持ラベルのエンド ユーザー トレーニング – 導入を加速する方法](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 93cd6331099c5c89aec2e0706f79ec7fb305b42a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 06ee2f1cb68df0a957818e1fccb45628487c39fd
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765553"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274918"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーが Microsoft Defender ウイルス対策ユーザー インターフェイスを表示または操作するのを防ぐ
 
@@ -62,7 +63,7 @@ Windows 10 バージョン 1703 では、インターフェイスを非表示に
 
 4. Microsoft Defender Antivirus > **クライアント インターフェイス>ツリーを展開します**。
 
-5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 **[OK]** をクリックします。 
+5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 [**OK**] をクリックします。 
 
 ユーザー [が PC の保護を](configure-local-policy-overrides-microsoft-defender-antivirus.md) 変更する方法の詳細については、「ユーザーがポリシー設定をローカルで変更するのを防ぐ」を参照してください。
 
@@ -83,7 +84,7 @@ Windows 10 バージョン 1703 では、インターフェイスを非表示に
 
 4. ツリーを Windows コンポーネントの Microsoft Defender ウイルス **対策**  >  **スキャンに展開**  >  **します**。
 
-5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 **[OK]** をクリックします。 
+5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。 
 
 ## <a name="related-articles"></a>関連記事
 

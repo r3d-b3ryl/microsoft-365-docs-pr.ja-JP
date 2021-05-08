@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Office の生産性向上アプリと、サイバーの脅威に対応をするビジネスの高度な保護を含むサブスクリプション サービスの、Microsoft 365 Business Premium について説明します。
-ms.openlocfilehash: d6b0ded25e0478f85e73b807789463e4d55b1bb0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578349"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244858"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の概要
 
@@ -46,7 +46,7 @@ Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、従業員�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。 
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。 
 
 Microsoft 365 Business Premium は、最大300ライセンスを対象としています。 ライセンスの追加が必要な場合は、[Microsoft 365 Enterprise](../enterprise/index.yml) のドキュメントで詳細を参照してください。
 
@@ -71,11 +71,11 @@ Microsoft 365 Business Premium は、これらの各インスタンスでデー�
 
 Microsoft 365 Business Premium を使用すると、次のような **脅威から保護** に役立ちます。
 
-- メールやドキュメント内のリンクをリアルタイムでスキャンして、安全でない Web サイト (セーフ リンク) をブロックします。
+- メールやドキュメント内のリンクをリアルタイムでスキャンして、安全でない Web サイト (セーフリンク) をブロックします。
 
-- サンドボックス環境で電子メール添付ファイルの高度な分析を実行して、新しく開発されたマルウェア (安全な添付ファイル) を検出します。 
+- サンドボックス環境で電子メール添付ファイルの高度な分析を実行して、新しく開発されたマルウェア (添付ファイルセーフ検出します。 
 
-- 機械学習モデルと偽装検出を使用して高度な攻撃に対する保護を提供するフィッシング対策ポリシーを有効にする (365 インテリジェンス用 Defender のフィッシングOffice)。 
+- 機械学習モデルと偽装検出を使用して高度な攻撃に対する保護を提供するフィッシング対策ポリシーを有効にします (セキュリティ インテリジェンス用 Defender のフィッシングOffice 365します)。 
 
 - 信頼されていない場所からのアクセスを無効にする高度なポリシーを設定する、またはOffice ネットワークなどの信頼できる場所 から多要素認証をバイパスを設定します。(信頼できる IP を含むAzure MFA、条件付きアクセス)  
 
@@ -111,6 +111,6 @@ Microsoft 365 Business Premium を使用すると、次のような **脅威か�
 
 - パートナーはいないが、Microsoft 365 Business Premium を取得したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business) をし、[サインイン](sign-up.md) の指示に従ってください。
 
-## <a name="see-also"></a>関連項目
+## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 Business Premium のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business Premiumトレーニング ビデオ](../business-video/index.yml)(リンク ページ)

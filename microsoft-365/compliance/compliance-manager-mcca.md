@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5d74d9980daf7f6ff7f013578cb11be83d18948e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570376"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244638"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -27,13 +27,13 @@ ms.locfileid: "51570376"
 
 ## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Microsoft コンプライアンス構成アナライザー (MCCA) (プレビュー) の概要
 
-Microsoft コンプライアンス構成アナライザー (MCCA) は [、Microsoft](compliance-manager.md)コンプライアンス マネージャーの開始に役立つプレビュー ツールです。 MCCA は、組織の現在の構成をフェッチし、Microsoft 365 推奨ベスト プラクティスに対して検証する PowerShell ベースのユーティリティです。 これらのベスト プラクティスは、データ保護とデータ ガバナンスの主要な規制と標準を含む一連のコントロールに基づいて行います。
+Microsoft コンプライアンス構成アナライザー (MCCA) は [、Microsoft](compliance-manager.md)コンプライアンス マネージャーの開始に役立つプレビュー ツールです。 MCCA は PowerShell ベースのユーティリティで、組織の現在の構成をフェッチし、推奨されるベスト プラクティスにMicrosoft 365検証します。 これらのベスト プラクティスは、データ保護とデータ ガバナンスの主要な規制と標準を含む一連のコントロールに基づいて行います。
 
-MCCA を使用すると、コンプライアンス 管理の改善アクションが現在の Microsoft 365 環境に適用される状況をすばやく確認できます。 MCCA によって識別される各アクションには、コンプライアンス マネージャーへの直接リンクと、修正アクションの実行を開始する適切なソリューションを含む、実装に関する推奨事項が示されます。
+MCCA を使用すると、コンプライアンス マネージャーでどの改善アクションが現在の環境に適用Microsoft 365できます。 MCCA によって識別される各アクションには、コンプライアンス マネージャーへの直接リンクと、修正アクションの実行を開始する適切なソリューションを含む、実装に関する推奨事項が示されます。
 
-MCCA を理解するもう 1 つのリソースは [、GitHub の README の指示にアクセスする方法です](https://github.com/OfficeDev/MCCA#overview)。 このページでは、前提条件に関する詳細な情報を提供し、完全なインストール手順を示します。 このページにアクセスするには、GitHub アカウントは必要ない。
+MCCA を理解するもう 1 つのリソースは、MCCA の README の手順[にアクセスGitHub。](https://github.com/OfficeDev/MCCA#overview) このページでは、前提条件に関する詳細な情報を提供し、完全なインストール手順を示します。 このページにアクセスするには、GitHubアカウントは必要ない。
 
-**可用性**: MCCA は、Office 365 および Microsoft 365 ライセンスと米国政府機関コミュニティ (GCC) モデレート、GCC High、および国防総省 (DoD) のお客様のすべての組織で利用できます。
+**可用性**: MCCA は、Office 365 ライセンスおよび Microsoft 365 ライセンスと米国政府機関 Community (GCC) モデレート、GCC High、および国防総省 (DoD) のお客様のすべての組織で利用できます。
 
 ## <a name="install-mcca-and-run-a-report"></a>MCCA をインストールしてレポートを実行する
 
@@ -46,7 +46,7 @@ MCCA ツールは、次のコマンドを使用Windows PowerShell。 ツール�
 
 MCCA をインストールするには、まず管理者モードで PowerShell を使用します。 以下の手順に従います。
 
-1. [Windows スタート] **ボタンを選択** します。
+1. [スタート] ボタンWindows **選択** します。
 2. **「PowerShell」と** 入力し、[**管理者として実行** Windows PowerShellを選択します **。**
 1. コマンド プロンプトで、次のコマンドを入力します。
 
@@ -65,7 +65,7 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
     Get-MCCAReport
     ```
 
-   GCC High のお客様の場合は、レポートを実行するために追加の入力パラメーターを指定する必要があります。
+   高い顧客の場合GCCレポートを実行するには、追加の入力パラメーターを指定する必要があります。
 
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
@@ -129,11 +129,11 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
 ![MCCA - ロール](../media/compliance-manager-mcca-roles.png "MCCA の役割")
 
 例外:
-1. [Exchange Online で IRM を使用する] セクション以外では、ユーザーは IP のレポートを生成することはできません。
-2. ユーザーは、[Exchange Online で IRM を使用する] セクション以外の IP のレポートを生成できます。
+1. ユーザーは、[IRM を使用する] セクション以外の IP のレポートExchange Online表示されます。
+2. ユーザーは、[IP の IRM を使用する] セクション以外の IP のExchange Onlineできます。
 3. ユーザーは、[O365 で通信コンプライアンスを有効にする] セクションとは別に、IP のレポートを生成できます。
-4. ユーザーは、[365 で監査を有効にする] セクション以外の IP Office生成できない。
-5. ユーザーは、[365 で監査を有効にする] セクション以外の IP Office生成できます。
+4. ユーザーは、[監査を有効にする] セクション以外の IP のレポートOffice 365表示されます。
+5. ユーザーは、[監査を有効にする] セクション以外の IP のOffice 365できます。
 
 #### <a name="solutions-summary-section"></a>[ソリューションの概要] セクション
 
@@ -153,7 +153,7 @@ MCCA は、コンプライアンス マネージャーで推奨される改善�
 
 **[改善] 状態のアイテム**
 
-改善アクションの右側にある **[改善** ] ラベルの横にあるドロップダウンを選択します。 現在の設定と推奨される改善アクションに関する簡単な概要と詳細が表示されます。 概要には、コンプライアンス マネージャーへの直接リンク、Microsoft 365 コンプライアンス センターの該当するソリューション、および関連するドキュメントが含まれます。
+改善アクションの右側にある **[改善** ] ラベルの横にあるドロップダウンを選択します。 現在の設定と推奨される改善アクションに関する簡単な概要と詳細が表示されます。 概要には、コンプライアンス マネージャーへの直接リンク、コンプライアンス センターの該当するMicrosoft 365、関連するドキュメントが含まれます。
 
 [コンプライアンス マネージャー] リンクをクリックすると、まだ実装していないソリューション内のすべての改善アクションのフィルタービューが表示されます。 そこから、コンプライアンス スコアを上げ、適用する評価、適用される規制[](compliance-score-calculation.md)と認定を増やして得るポイントの数を確認できます。
 
@@ -161,10 +161,10 @@ DLP の場合、推奨される情報に基づいて事前に生成された Pow
 
 **推奨事項の状態を持つアイテム**
 
-改善アクションの右側にある **[おすすめ** ] ラベルの横にあるドロップダウンを選択します。 組織の現在の Microsoft 365 環境の概要と、推奨されるベスト プラクティスが表示されます。
+改善アクションの右側にある **[おすすめ** ] ラベルの横にあるドロップダウンを選択します。 改善アクションに関連する組織の現在のMicrosoft 365の概要と、推奨されるベスト プラクティスが表示されます。
 
 ## <a name="resources"></a>リソース
 
-MCCA のインストール、セットアップ、および使用の詳細については、GitHub の README の手順 [(GitHub](https://github.com/OfficeDev/MCCA#overview) アカウントは必要ありません) を参照してください。
+MCCA のインストール、セットアップ、および使用の詳細については、「GitHub」の[README](https://github.com/OfficeDev/MCCA#overview) GitHub参照してください。
 
-詳細については、「PowerShell Windows PowerShell [の使い方」を参照してください](/powershell/scripting/how-to-use-docs?view=powershell-7)。 [「Starting Windows PowerShell」も参照してください](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)。
+詳細については、「PowerShell Windows PowerShell[の使い方」を参照してください](/powershell/scripting/how-to-use-docs?view=powershell-7)。 [「Starting Windows PowerShell」も参照してください](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)。

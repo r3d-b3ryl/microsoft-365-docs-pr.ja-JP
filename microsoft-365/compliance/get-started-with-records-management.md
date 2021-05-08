@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 2ab5eaa494094dcbf0723f426fcbd644901c22bb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051899"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244346"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-Microsoft 365 のレコード管理ソリューションを使用して、組織内の法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツの管理を開始する準備はできましたか? 開始するために、次の高水準なガイダンスを参考にできます。
+Microsoft 365 のレコード管理ソリューションを使用して、組織内の法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツの管理を開始する準備はできましたか? 開始するには、次のガイダンスを使用してください。
 
 1. **レコード管理ソリューションの理解** と、ドキュメントやメールがレコード宣言される場合にどのようなアクションが許可されたり禁止されたりするかについて説明します。[レコード管理に関する詳細情報](records-management.md)。 
 
@@ -53,9 +53,9 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 読み取り専用の役割の場合は、新しい役割グループを作成し、このグループに **閲覧限定レコード管理** の役割を追加することができます。 
 
-役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
-ユーザーを役割グループに追加して役割を割り当てる手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
+ユーザーを役割グループに追加して役割を割り当てる手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
 
 これらの権限は、レコードを宣言し、処理を管理する保持ラベルを作成、構成、適用するためにのみ必要です。 保持ラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
 
@@ -84,8 +84,8 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 ## <a name="end-user-documentation-for-records"></a>レコードに関するエンド ユーザー向けのドキュメント
 
-レコード管理に使用されている保持ラベルは、Microsoft 365 アプリで UI に存在します。 保持ラベルを運用ネットワークに展開する前に、エンド ユーザーとヘルプ デスクに必ずガイダンスを提供してください。
+レコード管理に使用される保持ラベルは、Microsoft 365 アプリに UI が存在します。保持ラベルを運用ネットワークに展開する前に、エンド ユーザーとヘルプ デスクにガイダンスを提供するようにしてください。
 
-最も効果的なエンド ユーザー向けのドキュメントは、選択した保持ラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ユーザーのトレーニングと導入の促進に使用できるダウンロード パッケージについては、次の投稿を参照してください: [M365 の保持ラベルのエンド ユーザー トレーニング – 導入を加速する方法](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
+ユーザーが SharePoint および OneDrive で保持ラベルを適用できるようにするには、編集用のレコードのロック解除に関する情報が含まれている、「[SharePoint または OneDrive のファイルに保持ラベルを適用する](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)」を参照してください。
 
-また、次のセクションでは、基本的なユーザーの手順について説明します: [保持ラベルを手動で適用する](create-apply-retention-labels.md#manually-apply-retention-labels)。
+ただし、最も効果的なエンド ユーザー向けのドキュメントは、選択した保持ラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ユーザーのトレーニングと導入の促進に使用できるダウンロード パッケージについては、次のブログ記事を参照してください: [M365 の保持ラベルのエンド ユーザー トレーニング – 導入を加速する方法](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。

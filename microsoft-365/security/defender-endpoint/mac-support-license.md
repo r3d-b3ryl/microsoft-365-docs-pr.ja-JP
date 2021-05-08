@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1f8428c2995eec2dece290049eda67a3683b4c1e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934263"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244982"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上の Microsoft Defender for Endpoint のライセンスの問題のトラブルシューティング
 
@@ -46,15 +46,14 @@ ms.locfileid: "51934263"
 
 ライセンスが見つかりません
 
-組織が Microsoft 365 Enterprise サブスクリプションのライセンスを持たしていないように見えます。
+組織がサブスクリプションのライセンスを持Microsoft 365 Enterpriseします。
 
 ヘルプについては、管理者に問い合わせてください。
 
 **原因:** 
 
-Microsoft Defender for Endpoint on macOS パッケージ ("Download installation package") を展開またはインストールしましたが、構成スクリプト (「オンボード パッケージのダウンロード」) を実行している可能性があります。
+Microsoft Defender for Endpoint for macOS パッケージ ("Download installation package") を展開またはインストールしましたが、構成スクリプト ("オンボード パッケージのダウンロード") を実行している可能性があります。またはユーザーにライセンスが割り当てられていない可能性があります。
 
 **解決方法:**
 
 ここに記載されている MicrosoftDefenderATPOnboardingMacOs.py 手順に従います。クライアント [構成](mac-install-manually.md#client-configuration)
-

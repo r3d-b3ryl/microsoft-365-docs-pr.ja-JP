@@ -1,10 +1,10 @@
 ---
-title: Microsoft Defender for Office 365 での自動調査と対応
+title: Microsoft Defender での自動調査と対応が可能Office 365
 keywords: AIR、autoIR、Microsoft Defender for Endpoint、自動化、調査、対応、修復、脅威、高度、脅威、保護
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,18 +16,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender の自動調査および応答機能を使用して、365 Office開始します。
+description: Microsoft Defender の自動調査と対応機能を使用して、ユーザーにOffice 365。
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89421348d858a869e033380802e402465949c554
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c9cd9ef649ec60fc8d880ae525469980a00f69b2
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935175"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275002"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "51935175"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender for Office 365](defender-for-office-365.md) には、セキュリティ運用チームの時間と労力を節約できる強力な自動調査と応答 (AIR) 機能が含まれています。 アラートがトリガーされると、セキュリティ運用チームがそれらのアラートを確認、優先順位付け、応答する必要があります。 受信アラートの量に合うのは、圧倒的な可能性があります。 これらのタスクの一部を自動化すると役立ちます。
+[Microsoft Defender for Office 365](defender-for-office-365.md)には、セキュリティ運用チームの時間と労力を節約できる強力な自動調査と応答 (AIR) 機能が含まれています。 アラートがトリガーされると、セキュリティ運用チームがそれらのアラートを確認、優先順位付け、応答する必要があります。 受信アラートの量に合うのは、圧倒的な可能性があります。 これらのタスクの一部を自動化すると役立ちます。
 
 AIR を使用すると、セキュリティ運用チームは、より効率的かつ効果的に運用できます。 AIR 機能には、現在存在する既知の脅威に対応する自動調査プロセスが含まれます。 適切な修復アクションは承認を待ち、セキュリティ運用チームが検出された脅威に効果的に対応できます。 AIR を使用すると、セキュリティ運用チームは、トリガーされる重要なアラートを見失わずに優先度の高いタスクに集中できます。
 
@@ -62,7 +62,7 @@ AIR を使用すると、セキュリティ運用チームは、より効率的�
 4. セキュリティ運用チームは、 [調査結果と](air-view-investigation-results.md)推奨事項を確認し、修復アクションを承認または [拒否します](air-review-approve-pending-completed-actions.md)。
 5. 保留中の修復アクションが承認 (または拒否) されると、自動調査が完了します。
 
-Microsoft Defender for Office 365 では、修復アクションは自動的に実行されません。 修復処理は、組織のセキュリティ チームが承認した場合にのみ実行されます。 AIR 機能は、修復アクションを特定し、情報に基づいた意思決定に必要な詳細を提供することで、セキュリティ運用チームの時間を節約します。
+Microsoft Defender for Office 365修復アクションは自動的に実行されません。 修復処理は、組織のセキュリティ チームが承認した場合にのみ実行されます。 AIR 機能は、修復アクションを特定し、情報に基づいた意思決定に必要な詳細を提供することで、セキュリティ運用チームの時間を節約します。
 
 各自動調査の間と後に、セキュリティ運用チームは次の操作を実行できます。
 
@@ -75,13 +75,13 @@ Microsoft Defender for Office 365 では、修復アクションは自動的に�
 
 ## <a name="how-to-get-air"></a>AIR の入手方法
 
-ポリシーとアラートが構成されている場合、AIR 機能は [Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)に含まれます。 いくつかのヘルプが必要ですか? 「脅威から保護 [する」のガイダンスに](protect-against-threats.md) 従って、次の保護設定を設定または構成します。
+ポリシーとアラートが構成されている場合[、AIR 機能](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)Office 365 Microsoft Defender に含まれています。 いくつかのヘルプが必要ですか? 「脅威から保護 [する」のガイダンスに](protect-against-threats.md) 従って、次の保護設定を設定または構成します。
 
 - [監査ログ](../../compliance/turn-audit-log-search-on-or-off.md) (有効にする必要があります)
 - [マルウェア対策ポリシー](protect-against-threats.md#part-1---anti-malware-protection)
 - [アンチフィッシュ保護](protect-against-threats.md#part-2---anti-phishing-protection)
 - [スパム対策保護](protect-against-threats.md#part-3---anti-spam-protection)
-- [安全なリンクと安全な添付ファイル](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [セーフリンクとセーフ添付ファイル](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [電子メールの 0 時間自動削除](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
@@ -89,20 +89,20 @@ Microsoft Defender for Office 365 では、修復アクションは自動的に�
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>自動調査をトリガーするアラート ポリシー
 
-Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マルウェアアクティビティ、外部および内部の潜在的な脅威、情報ガバナンスのリスクを特定するのに役立つ、多くの組み込みのアラート ポリシーが提供されています。 既定のアラート [ポリシーのいくつかは、](../../compliance/alert-policies.md#default-alert-policies) 自動調査をトリガーできます。 次の表に、自動調査をトリガーするアラート、Microsoft 365 セキュリティ センターでの重大度、および生成方法について説明します。
+Microsoft 365には、管理者のアクセス許可の悪用、マルウェアアクティビティ、外部および内部の潜在的な脅威、および情報ガバナンスのリスクを特定するのに役立つ多くの組み込みアラート ポリシーがExchange提供されます。 既定のアラート [ポリシーのいくつかは、](../../compliance/alert-policies.md#default-alert-policies) 自動調査をトリガーできます。 次の表では、自動調査をトリガーするアラート、Microsoft 365 セキュリティ センターでの重大度、および生成方法について説明します。
 
 |通知|重要度|アラートの生成方法|
 |---|---|---|
-|悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次の場合に生成されます。 <ul><li>組織内の安全なリンク [によって保護](safe-links.md) されたユーザーが悪意のあるリンクをクリックする</li><li>URL の評決の変更は、Microsoft Defender によって 365 のOfficeされます。</li><li>ユーザーは、安全なリンクの警告ページ (組織のセーフ リンク ポリシーに基づく) [を上書きします](set-up-safe-links-policies.md)。</li></ul> <p> このアラートをトリガーするイベントの詳細については、「安全なリンク ポリシーを設定 [する」を参照してください](set-up-safe-links-policies.md)。|
+|悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次の場合に生成されます。 <ul><li>組織のリンクで保護[セーフユーザー](safe-links.md)が悪意のあるリンクをクリックする</li><li>URL の評決の変更は、Microsoft Defender によって特定Office 365</li><li>ユーザーはセーフリンクの警告ページを上書きします (組織の [リンク][セーフに基づく](set-up-safe-links-policies.md))。</li></ul> <p> このアラートをトリガーするイベントの詳細については[、「Set up セーフリンク ポリシー」を参照してください](set-up-safe-links-policies.md)。|
 |電子メール メッセージがマルウェアまたはフィッシングとしてユーザーによって報告される|**情報**|このアラートは、組織のユーザーがレポート メッセージ アドインまたはレポートフィッシング[](enable-the-report-message-add-in.md)アドインを使用してフィッシングメールとしてメッセージを[報告するときに生成されます](enable-the-report-phish-add-in.md)。|
-|配信後にマルウェアを含む電子メール メッセージが削除される|**情報**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して Exchange Online メールボックスから感染したメッセージ [を削除します](zero-hour-auto-purge.md)。|
-|配信後にフィッシング URL を含む電子メール メッセージが削除される|**情報**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して Exchange Online メールボックスから感染したメッセージ [を削除します](zero-hour-auto-purge.md)。|
+|配信後にマルウェアを含む電子メール メッセージが削除される|**情報**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](zero-hour-auto-purge.md)。|
+|配信後にフィッシング URL を含む電子メール メッセージが削除される|**情報**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](zero-hour-auto-purge.md)。|
 |不審なメール送信パターンが検出される|**Medium**|このアラートは、組織内の誰かが不審なメールを送信し、電子メールの送信を制限される危険性がある場合に生成されます。 このアラートは、アカウントが侵害されたが、ユーザーを制限するのに十分な重大性を示す可能性がある動作に関する早期の警告です。 <p> まれですが、このポリシーによって生成されるアラートは異常である可能性があります。 ただし、ユーザー アカウントが侵害されているかどうかを確認する [方が良い方法です](responding-to-a-compromised-email-account.md)。|
-|ユーザーが電子メールの送信を制限されている|**High**|このアラートは、組織内のユーザーが送信メールの送信を制限されている場合に生成されます。 このアラートは、通常、電子メール アカウント [が侵害された場合に発生します](responding-to-a-compromised-email-account.md)。 <p> 制限付きユーザーの詳細については [、「Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md)の制限付きユーザー ポータルからブロックされたユーザーを削除する」を参照してください。|
+|ユーザーが電子メールの送信を制限されている|**High**|このアラートは、組織内のユーザーが送信メールの送信を制限されている場合に生成されます。 このアラートは、通常、電子メール アカウント [が侵害された場合に発生します](responding-to-a-compromised-email-account.md)。 <p> 制限付きユーザーの詳細については、「[制限](removing-user-from-restricted-users-portal-after-spam.md)付きユーザーポータルからブロックされたユーザーを削除する」を参照Microsoft 365。|
 |
 
 > [!TIP]
-> アラート ポリシーの詳細や既定の設定の編集については [、「Microsoft 365](../../compliance/alert-policies.md)コンプライアンス センターのアラート ポリシー」を参照してください。
+> アラート ポリシーの詳細や既定の設定の編集については、「コンプライアンス センター」の「アラート ポリシー [Microsoft 365参照してください](../../compliance/alert-policies.md)。
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>AIR 機能を使用するために必要なアクセス許可
 
@@ -110,12 +110,12 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 
 |Task|必要な役割|
 |---|---|
-|AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は [、Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) またはセキュリティ コンプライアンス センター [&割り当てることができます](permissions-in-the-security-and-compliance-center.md)。|
-|自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)またはセキュリティ コンプライアンス センターで割り当てられた次[&のいずれかを指定します](permissions-in-the-security-and-compliance-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、コンプライアンス センターのセキュリティ & [割り当てられます](permissions-in-the-security-and-compliance-center.md)。 そこに新しい役割グループを作成し、その新しい役割グループに Search and Purge 役割を追加する必要がある場合があります。</li></ul>|
+|AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は、コンプライアンス[センター](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Azure Active Directoryセキュリティ センター [&割り当てることができます](permissions-in-the-security-and-compliance-center.md)。|
+|自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|コンプライアンス センターまたはセキュリティ コンプライアンス センター [Azure Active Directory割り](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)当てられた次[&の 1 つ](permissions-in-the-security-and-compliance-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、コンプライアンス センターのセキュリティ & [割り当てられます](permissions-in-the-security-and-compliance-center.md)。 そこに新しい役割グループを作成し、その新しい役割グループに Search and Purge 役割を追加する必要がある場合があります。</li></ul>|
 
 ## <a name="required-licenses"></a>必須のライセンス
 
-[Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) ライセンスを割り当てる必要があります。
+[Microsoft Defender for Office 365プラン 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)ライセンスを割り当てる必要があります。
 
 - セキュリティ管理者 (グローバル管理者を含む)
 - 組織のセキュリティ操作チーム (セキュリティ リーダーと検索と削除の役割を持 **つユーザーを含** む)
@@ -123,25 +123,25 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>セキュリティ センターで変更が近日公開される
 
-microsoft Defender で Office 365 用の AIR 機能を既に使用している場合は、改善された Microsoft [365](../defender/overview-security-center.md)セキュリティ センターにいくつかの変更点が表示されます。
+Microsoft Defender で既に AIR 機能を Office 365 に使用している場合は、セキュリティ センターの強化されたセキュリティ センターに変更Microsoft 365[しています](../defender/overview-security-center.md)。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター":::
 
-新しいセキュリティ センターと強化されたセキュリティ センターには、Microsoft Defender for Office [365](defender-for-office-365.md) と Microsoft Defender for Endpoint の AIR 機能が [統合されています](../defender-endpoint/automated-investigations.md)。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。
+新しいセキュリティ センターと強化されたセキュリティ センターには[、Microsoft Defender](defender-for-office-365.md) for Office 365 Microsoft Defender for Endpoint の AIR 機能[が統合されています](../defender-endpoint/automated-investigations.md)。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。
 
 > [!TIP]
-> 新しい Microsoft 365 セキュリティ センター ( <https://security.microsoft.com> ) は、次のセンターに置き換まれます。
+> 新しいセキュリティ Microsoft 365 ( <https://security.microsoft.com> ) は、次のセンターに置き換まれます。
 >
-> - Office 365 セキュリティ & コンプライアンス センター ( <https://protection.office.com> )
+> - Office 365セキュリティ & コンプライアンス センター ( <https://protection.office.com> )
 > - Microsoft Defender セキュリティ センター ( <https://securitycenter.windows.com> )
 >
 > URL の変更に加えて、セキュリティ チームにより合理化されたエクスペリエンスを提供するように設計された新しい外観が提供され、1 か所で脅威検出が多く表示されます。
 
 ### <a name="what-to-expect"></a>想定される変化
 
-次の表に、Microsoft Defender 365 の AIR に加わる変更とOffice示します。
+次の表に、Microsoft Defender の AIR に加わる変更と改善点を示Office 365。
 
-|アイテム|何が変わるのか?|
+|Item|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|

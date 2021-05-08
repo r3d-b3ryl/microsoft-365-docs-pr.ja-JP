@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 038818b711400eb16fea89573dc70664a442fc1d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1748a33be2c27123eb0437784dcdb2cb7905616a
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245902"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274690"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>スケジュールされたクイックまたは完全な Microsoft Defender ウイルス スキャンを構成する
 
@@ -98,7 +98,7 @@ ms.locfileid: "52245902"
 
 ### <a name="use-group-policy-to-schedule-scans"></a>グループ ポリシーを使用してスキャンをスケジュールする
 
-|場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+|Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 |スキャン | スケジュールされたスキャンに使用するスキャンの種類を指定する | クイック スキャン |
 |スキャン | スケジュールされたスキャンを実行する週の日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
@@ -143,7 +143,7 @@ RandomizeScheduleTaskTimes
 
 ### <a name="use-group-policy-to-schedule-scans"></a>グループ ポリシーを使用してスキャンをスケジュールする
 
-|場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+|Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 |スキャン | コンピューターがオンで、使用されていない場合にのみ、スケジュールされたスキャンを開始する | コンピューターがオンで使用されていない場合、スケジュールされたスキャンは実行されません。 | 有効 |
 
@@ -174,7 +174,7 @@ API と許可パラメーターの詳細については[、「WMIv2 API](/previo
 
 ### <a name="use-group-policy-to-schedule-remediation-required-scans"></a>グループ ポリシーを使用して修復に必要なスキャンをスケジュールする
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |---|---|---|---|
 |修復 | スケジュールされたフル スキャンを実行して修復を完了する日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
 |修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
@@ -208,7 +208,7 @@ RemediationScheduleTime
 
 ### <a name="use-group-policy-to-schedule-daily-scans"></a>グループ ポリシーを使用して毎日のスキャンをスケジュールする
 
-|場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+|Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 |スキャン | 1 日あたりのクイック スキャンを実行する間隔を指定する | 次のクイック スキャンの前に経過する時間を指定します。 たとえば、2 時間ごとに実行するには **、「2」と入力し、1** 日 1 回は **24 と入力します**。 **0 と入力** すると、毎日のクイック スキャンは実行されません。 | Never |
 |スキャン | 毎日のクイック スキャンの時間を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
@@ -240,11 +240,11 @@ ScanScheduleQuickScanTime
 
 ### <a name="use-group-policy-to-schedule-scans-after-protection-updates"></a>グループ ポリシーを使用して保護の更新後にスキャンをスケジュールする
 
-|場所 | 設定 | 説明 | 既定の設定 (構成されていない場合)|
+|Location | Setting | 説明 | 既定の設定 (構成されていない場合)|
 |:---|:---|:---|:---|
 |署名の更新 | セキュリティ インテリジェンスの更新後にスキャンを有効にする | 新しい保護更新プログラムがダウンロードされた直後にスキャンが実行されます | 有効 |
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 - [オンデマンドの Microsoft Defender ウイルス対策スキャンを構成して実行する](run-scan-microsoft-defender-antivirus.md)

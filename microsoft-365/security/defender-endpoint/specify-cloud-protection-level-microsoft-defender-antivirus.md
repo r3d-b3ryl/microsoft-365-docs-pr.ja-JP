@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 10/26/2020
@@ -15,14 +15,15 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: a0c73c8dd341c4940e3eddd4ede75240e57502d6
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: f441b1bd444cd70fb5b00dfcb5ebcddadf62b220
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764123"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274906"
 ---
-# <a name="specify-the-cloud-delivered-protection-level"></a>クラウド配信の保護レベルを指定する
+# <a name="specify-the-cloud-delivered-protection-level"></a>クラウドによる保護レベルを指定する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -81,7 +82,7 @@ Microsoft Defender Antivirus が提供するクラウド配信保護のレベル
     > [!WARNING]
     > このスイッチを High またはHigh **+** に設定すると、一部の正当なファイルが検出される可能性があります (ただし、その検出のブロックを解除または争うオプションがあります)。
 
-6. **[OK]** をクリックします。
+6. [**OK**] をクリックします。
 
 7. 更新されたグループ ポリシー オブジェクトを展開します。 「 [グループ ポリシー管理コンソール」を参照してください。](/windows/win32/srvnodes/group-policy)
 

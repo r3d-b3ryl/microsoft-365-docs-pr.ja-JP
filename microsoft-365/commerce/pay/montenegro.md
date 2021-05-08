@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a11bb6e5f05937da48eafb944aaed2efd0bb1b03
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a73e7123fe33c6e114fa17dc28e8b742145c8dbb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543066"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273250"
 ---
 # <a name="payment-information-for-montenegro"></a>モンテネグロの支払い情報
 

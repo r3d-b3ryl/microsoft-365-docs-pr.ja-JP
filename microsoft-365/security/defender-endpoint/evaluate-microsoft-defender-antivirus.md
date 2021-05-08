@@ -1,12 +1,12 @@
 ---
-title: Microsoft Defender ウイルス対策の評価
-description: すべてのサイズの企業は、このガイドを使用して、Windows 10 で Microsoft Defender Antivirus が提供する保護を評価およびテストできます。
-keywords: Microsoft Defender Antivirus, クラウド保護, クラウド, マルウェア対策, セキュリティ, 防御者, 評価, テスト, 保護, 比較, リアルタイム保護
+title: Microsoft Defender ウイルス対策を評価する
+description: すべてのサイズの企業は、このガイドを使用して、ユーザーが提供する保護を評価し、Microsoft Defender ウイルス対策テストWindows 10。
+keywords: Microsoft Defender ウイルス対策、クラウド保護、クラウド、マルウェア対策、セキュリティ、防御者、評価、テスト、保護、比較、リアルタイム保護
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,14 +14,15 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 7f3fa1ca854a75025f850c85637cd3e08678bdbc
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4f789ab80d48966d4cf922811d05d74882d728fe
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764833"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274738"
 ---
-# <a name="evaluate-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策の評価
+# <a name="evaluate-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "51764833"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-このガイドを使用して、ウイルス、マルウェア、望ましくない可能性のあるアプリケーションから Microsoft Defender ウイルス対策がどのように保護されるのか確認します。
+このガイドを使用して、ウイルス、マルウェアMicrosoft Defender ウイルス対策望ましくない可能性のあるアプリケーションからユーザーを保護する方法を判断します。
 
 >[!TIP]
 >Microsoft Defender for Endpoint のデモ Web サイト demo.wd.microsoft.com、次 [の機能が](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 動作し、動作を確認できます。
@@ -38,7 +39,7 @@ ms.locfileid: "51764833"
 >- 高速学習 (一目でブロックを含む)
 >- 望ましくない可能性があるアプリケーションのブロック
 
-これは、小規模企業と大企業の両方で利用できる Microsoft Defender Antivirus の重要な次世代保護機能と、ネットワーク全体でマルウェアの検出と保護を強化する方法について説明します。
+小規模企業と大規模企業の両方で利用できる Microsoft Defender ウイルス対策の重要な次世代保護機能と、ネットワーク全体でマルウェアの検出と保護を強化する方法について説明します。
 
 各設定を個別に構成して評価するか、一度にすべて構成するか選択できます。 一般的な評価シナリオに基づいて同様の設定をグループ化し、PowerShell を使用して設定を有効にする手順が含まれています。
 
@@ -51,11 +52,11 @@ ms.locfileid: "51764833"
 - [PowerShell スクリプトをダウンロードして、設定を自動的に構成する](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings)
 
 > [!IMPORTANT]
-> このガイドは現在、Microsoft Defender Antivirus の単一コンピューター評価を対象としています。 このガイドのすべての設定を有効にすると、実際の展開に適していない場合があります。
+> このガイドは現在、コンピューターの単一コンピューター評価を目的Microsoft Defender ウイルス対策。 このガイドのすべての設定を有効にすると、実際の展開に適していない場合があります。
 >
-> ネットワーク全体での Microsoft Defender ウイルス対策の実際の展開と監視に関する最新の推奨事項については [、「Deploy Microsoft Defender Antivirus」を参照してください](deploy-manage-report-microsoft-defender-antivirus.md)。
+> ネットワーク全体での実際の展開と監視に関する最新の推奨事項については、「deploy Microsoft Defender ウイルス対策」を[参照Microsoft Defender ウイルス対策。](deploy-manage-report-microsoft-defender-antivirus.md)
 
 ## <a name="related-topics"></a>関連項目
 
-- [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender ウイルス対策の展開](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)

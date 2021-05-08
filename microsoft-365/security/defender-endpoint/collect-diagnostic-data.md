@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 06/29/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d74a8921af677f6ed66580bd00830440d59cf1aa
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764725"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274786"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Microsoft Defender AV 診断データの収集
 
@@ -36,7 +37,7 @@ ms.locfileid: "51764725"
 > [!NOTE]
 > 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 次の方法: デバイスから [調査パッケージを収集します](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)。
 
-同じ問題が発生している少なくとも 2 つのデバイスで、次の手順を実行して .cab 診断ファイルを取得します。
+同じ問題が発生している少なくとも 2 つのデバイスで、次.cabを実行して診断ファイルを取得します。
 
 1. 次のように、管理者レベルのバージョンのコマンド プロンプトを開きます。
 
@@ -57,12 +58,12 @@ ms.locfileid: "51764725"
     mpcmdrun.exe -GetFiles
     ```
   
-4. さまざまな診断ログを含む .cab ファイルが生成されます。 ファイルの場所は、コマンド プロンプトの出力で指定されます。 既定では、場所は `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
+4. さまざまな.cabを含むファイルが生成されます。 ファイルの場所は、コマンド プロンプトの出力で指定されます。 既定では、場所は `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
 > [!NOTE]
 > cab ファイルを別のパスまたは UNC 共有にリダイレクトするには、次のコマンドを使用します。 `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>詳細については、「診断データ [を UNC 共有にリダイレクトする」を参照してください](#redirect-diagnostic-data-to-a-unc-share)。
 
-5. これらの .cab ファイルを、Microsoft サポートからアクセスできる場所にコピーします。 たとえば、パスワードで保護された OneDrive フォルダーを使用して共有できます。
+5. これらのファイル.cab、Microsoft サポートからアクセスできる場所にコピーします。 たとえば、パスワードで保護された OneDrive フォルダーを使用して共有できます。
 
 > [!NOTE]
 >更新コンプライアンスに問題がある場合は、更新コンプライアンス サポート メール<a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a"></a>テンプレートを使用して電子メールを送信し、テンプレートに次の情報を入力します。
@@ -102,7 +103,7 @@ SupportLogLocation パラメーターを使用すると、次のようなフォ�
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>診断データの作成場所を指定する
 
-グループ ポリシー オブジェクト (GPO) を使用して、診断 .cab ファイルを作成する場所を指定することもできます。 
+グループ ポリシー オブジェクト (GPO) を使用.cabファイルを作成する場所を指定することもできます。 
 
 1. ローカル グループ ポリシー エディターを開き、SupportLogLocation GPO を次の場所で検索します。 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`
    

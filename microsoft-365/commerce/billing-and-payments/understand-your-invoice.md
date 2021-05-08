@@ -19,16 +19,23 @@ search.appverid:
 - MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579760"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244710"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
 請求書には、請求の概要と支払い方法が記載されています。 Microsoft 365 管理センターで[オンライン請求書を表示](#view-your-online-invoice)できます。 また、Portable Document Format (.pdf) でダウンロードして、メールで送信することもできます。
+
+請求書を表示および印刷するには、次の方法を使用します。
+
+1. [**課金情報**]  >  [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページで、請求書の日付範囲を選択します。
+2. 請求書を PDF 形式で印刷または保存するには、[**請求書 PDF のダウンロード**] を選択し、PDF を印刷します。
+
+詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
 
 Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 365 for Business の課金内容または請求書の内容を理解する](understand-your-invoice2.md)」を参照してください。
 
@@ -133,13 +140,6 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 
 - **サービス期間:** サービスの利用について請求される期間。
 - **請求期間:** 前回の請求日を起点とする期間。
-
-### <a name="how-do-i-view-and-print-my-bill"></a>請求書はどのように表示または印刷するのですか?
-
-1. [**課金情報**]  >  [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページで、請求書の日付範囲を選択します。
-2. 請求書を PDF 形式で印刷または保存するには、[**請求書 PDF のダウンロード**] を選択し、PDF を印刷します。
-
-詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>お支払い方法として Azure の前払いが表示されないのはなぜですか?
 

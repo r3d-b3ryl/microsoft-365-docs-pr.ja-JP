@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 組織を入力または退出するすべての電子メール メッセージに関する法的免責事項や開示ステートメントを含む、電子メール署名の管理について説明します。
-ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914236"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244529"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
@@ -40,7 +40,7 @@ ms.locfileid: "50914236"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>すべてのメッセージに適用される署名を作成する
 
@@ -49,7 +49,7 @@ ms.locfileid: "50914236"
     
 ::: moniker range="o365-worldwide"
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ ms.locfileid: "50914236"
    
     お探しのアプリが見つかりませんか? アプリ 起動ツールから [すべてのアプリ] **を** 選択すると、利用できるアプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
     
-2. [管理 **センター] を** 選択し **、[Exchange] を選択します**。
+2. [**管理センター] を** 選択し、[管理センター]**をExchange。**
     
 3. [メール フロー] で、[ルール] **を選択します**。
     
@@ -80,14 +80,14 @@ ms.locfileid: "50914236"
 6. [この **ルールを適用する] で**、[ **すべてのメッセージに適用] を選択します**。
     
     > [!TIP]
-    > [こちら](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)を参照してください。 (このスコープの記事は、Exchange Server用ですが、Microsoft 365 にも適用されます)。 
+    > [こちら](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)を参照してください。 (このスコープの記事は、Exchange Server用ですが、この記事はMicrosoft 365)。 
   
 7. [実行する処理] の [ **免責事項を追加する**] はオンのままにします。 
     
 8.  [テキスト **の入力] を選択** し、免責事項を入力します。 
     
     > [!TIP]
-    > [免責事項の書式設定の詳細](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)をご確認ください。 (この書式設定に関する記事Exchange Server、Microsoft 365 にも適用されます。 
+    > [免責事項の書式設定の詳細](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)をご確認ください。 (この書式設定の記事は、Exchange Server用ですが、この記事はMicrosoft 365)。 
 
 9. **[1 つ選択] を** 選択し、[**フォールバックとして折り** 返す] オプションを選択します。 [ **OK**] を選択します。 これは、暗号化や別のメール設定のために免責事項を追加できない場合に、メッセージ エンベロープで免責事項がラップされることを意味します。
     
@@ -101,7 +101,7 @@ ms.locfileid: "50914236"
     
 ## <a name="limitations-of-organization-wide-signatures"></a>組織全体の署名の制限
 
-Microsoft 365 で電子メール署名を管理する場合は、次の操作を実行できます。
+メール署名を管理するときに、次の操作を実行Microsoft 365。
   
 - 最新のメール返信または転送の下に署名を直接挿入する
     
@@ -115,4 +115,4 @@ Microsoft 365 で電子メール署名を管理する場合は、次の操作を
   
 ## <a name="more-resources"></a>その他のリソース
 
-- [PowerShell の使用については、「Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)の組織全体のメッセージの免責事項、署名、フッター、またはヘッダー」を参照してください。
+- PowerShell[の使用の詳細については](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)、「組織全体のメッセージの免責事項、署名、フッター、またはヘッダー」を参照Exchange Onlineを参照してください。

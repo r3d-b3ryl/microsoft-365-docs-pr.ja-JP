@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Basic サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: 409d2fd4698452a1694d39c4ca3cc7f378d355e8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580788"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244469"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Microsoft 365 Business Basic のセットアップ
 
@@ -37,7 +37,7 @@ ms.locfileid: "51580788"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>ドメインを追加してサインインをカスタマイズする
 
@@ -85,7 +85,7 @@ Microsoft 365 Business Basic を購入するときに、所有するドメイン
 
 ウィザードで追加したユーザーには、Microsoft 365 Business Basic ライセンスが自動的に割り当てられます。
 
-1. Microsoft 365 Business Basic のサブスクリプションに既存のユーザーがいる場合 (たとえば、Azure AD Connect を使用した場合) には、今すぐにこれらのユーザーにライセンスを割り当てるオプションが表示されます。 続行して、これらのユーザーにもライセンスを追加します。
+1. Microsoft 365 Business Basic のサブスクリプションに既存ユーザーがいる場合 (たとえば、Azure AD Connect を使用した場合)、今すぐこれらのユーザーにライセンスを割り当てるオプションが表示されます。続行して、これらのユーザーにもライセンスを追加します。
 
 2. ユーザーを追加すると、追加した新しいユーザーと資格情報を共有するためのオプションも表示されます。 それらを印刷したり、メールで送信したり、ダウンロードしたりすることができます。
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ウイルス対策の更新プログラムをスケジュールする
+title: 保護Microsoft Defender ウイルス対策のスケジュールを設定する
 description: 保護更新プログラムをダウンロードする日、時刻、間隔をスケジュールする
 keywords: 更新プログラム、セキュリティ基準、更新プログラムのスケジュール
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,20 @@ search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 327974c4db4166301820cf148811aceda1700513
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 26b88b8677c27a5d6615776a371326e37034afd4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765349"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275038"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>保護更新プログラムをダウンロードして適用するスケジュールを管理する
 
@@ -43,22 +44,22 @@ Microsoft Defender ウイルス対策では、更新プログラムを探して�
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>Configuration Manager を使用して保護更新プログラムをスケジュールする
 
-1.  Microsoft Endpoint Manager コンソールで、変更するマルウェア対策ポリシーを開きます (左側のナビゲーション ウィンドウで [アセットとコンプライアンス] をクリックし、ツリーを [Overview  >  **Endpoint Protection**  >  **Antimalware Policies]** に展開します)。
+1.  Microsoft エンドポイント マネージャー コンソールで、変更するマルウェア対策ポリシーを開きます (左側のナビゲーションウィンドウで [アセットとコンプライアンス] をクリックし、ツリーを[概要] Endpoint Protection マルウェア対策ポリシー  >    >  ) に展開します。
 
 2.  [セキュリティ インテリジェンスの **更新プログラム] セクションに移動** します。
 
 3. 特定の時間に更新プログラムを確認してダウンロードするには、次の方法を実行します。
-      1. [ **エンドポイント保護のセキュリティ インテリジェンス更新プログラムの確認]** を特定の間隔で設定します。. **に 0 を設定します**。
-      2. [ **エンドポイント保護のセキュリティ インテリジェンス更新プログラム** を毎日チェックする] を設定します。更新プログラムをチェックする必要がある時刻に設定します。
+      1. セキュリティ **インテリジェンス更新プログラムEndpoint Protectionを特定の間隔で確認する...** を **0 に設定します**。
+      2. セキュリティ **インテリジェンスの更新Endpoint Protectionを毎日チェックします。更新** プログラムをチェックする必要がある時刻に設定します。
       3
-4. 継続的な間隔で更新プログラムを確認してダウンロードするには、特定の間隔でエンドポイント保護セキュリティ インテリジェンス更新プログラムのチェックを設定 **します** 。更新プログラムの間に発生する時間数を指定します。
+4. 継続的な間隔で更新プログラムを確認してダウンロードするには、特定の間隔で Endpoint Protection セキュリティ インテリジェンス更新プログラムのチェックを設定 **します**。更新プログラムの間に発生する必要がある時間数を指定します。
 
 5.  [更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
 ## <a name="use-group-policy-to-schedule-protection-updates"></a>グループ ポリシーを使用して保護更新プログラムをスケジュールする
 
 > [!IMPORTANT]
-> 既定では、Microsoft Defender ウイルス対策は、スケジュールされたスキャンの 15 分前に更新プログラムをチェックします。 これらの設定を有効にすると、既定の設定は上書きされます。
+> 既定では、Microsoft Defender ウイルス対策スキャンの時刻の 15 分前に更新プログラムがチェックされます。 これらの設定を有効にすると、既定の設定は上書きされます。
 
 1.  グループ ポリシー管理マシンで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。
 
@@ -66,11 +67,11 @@ Microsoft Defender ウイルス対策では、更新プログラムを探して�
 
 4.  [ポリシー **] をクリックし** 、[ **管理用テンプレート] をクリックします**。
 
-5.  ツリーを Windows コンポーネント **の Microsoft** Defender  >  **ウイルス対策シグネチャ** インテリジェンス更新プログラムに展開  >  **し、** 次の設定を構成します。
+5.  ツリーを展開して **、[署名インテリジェンスWindows更新** Microsoft Defender ウイルス対策  >    >  **コンポーネントを追加し**、次の設定を構成します。
 
-    1. [セキュリティ インテリジェンスの更新 **プログラム** を確認する週の日を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムを確認する週の日を入力します。 **[OK]** をクリックします。
-    2. [セキュリティ インテリジェンスの更新 **プログラム** を確認する間隔を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新間の時間数を入力します。 **[OK]** をクリックします。
-    3. [セキュリティ インテリジェンスの更新 **プログラム** を確認する時間を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムをチェックする時刻を入力します。 時刻は、エンドポイントのローカル時刻に基づいて行います。 **[OK]** をクリックします。
+    1. [セキュリティ インテリジェンスの更新 **プログラム** を確認する週の日を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムを確認する週の日を入力します。 [**OK**] をクリックします。
+    2. [セキュリティ インテリジェンスの更新 **プログラム** を確認する間隔を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新間の時間数を入力します。 [**OK**] をクリックします。
+    3. [セキュリティ インテリジェンスの更新 **プログラム** を確認する時間を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムをチェックする時刻を入力します。 時刻は、エンドポイントのローカル時刻に基づいて行います。 [**OK**] をクリックします。
 
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>PowerShell コマンドレットを使用して保護更新プログラムをスケジュールする
@@ -83,9 +84,9 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-[Microsoft Defender ウイルス対策で PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)を使用する方法の詳細については、「Use PowerShell コマンドレットを使用して Microsoft Defender Antivirus コマンドレットと[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照してください。
+PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
 
-## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>Windows 管理命令 (WMI) を使用して保護更新プログラムをスケジュールする
+## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>保護Windowsスケジュールを設定するには、WMI 管理命令 (WMI) を使用します。
 
 次の [**プロパティ** に対して **、MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) クラスの Set メソッドを使用します。
 
@@ -96,14 +97,14 @@ SignatureUpdateInterval
 ```
 
 詳細と許可されるパラメーターについては、以下を参照してください。
-- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft Defender ウイルス対策の展開](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策の更新プログラムを管理し、ベースラインを適用する](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)
+- [更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [最新のエンドポイントの更新プログラムを管理する](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [イベントベースの強制的な更新の管理](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [イベントベースの強制更新プログラムを管理する](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)

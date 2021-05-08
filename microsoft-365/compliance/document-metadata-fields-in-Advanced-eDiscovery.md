@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、レビュー セット内のドキュメントのメタデータ フィールドを、レビュー セット内の Advanced eDiscovery定義Microsoft 365。
-ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259465"
+ms.locfileid: "52244602"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Advanced eDiscovery のドキュメントメタデータフィールド
 
@@ -119,7 +119,7 @@ ms.locfileid: "52259465"
 |会議の終了日|MeetingEndDate|Meeting_end_date|会議の会議終了日。|
 |会議の開始日|MeetingStartDate|Meeting_start_date|会議の会議の開始日。|
 |メッセージの種類|MessageKind|Message_kind|検索するメッセージの種類。 可能な値: 連絡先ドキュメントメール外部データ FAX im journals 会議 **<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> microsoftteams** (Microsoft Teams のチャット、会議、通話からアイテムを返す) メモ投稿 **<br /> <br /> <br /> rssfeeds <br /> タスク <br /> ボイス** メール| 
-|モダン添付ファイルの親 ID||ModernAttachment_ParentId|ドキュメントの親の変更できない ID。|
+|ModernAttachment_ParentId||ModernAttachment_ParentId||
 |ネイティブ拡張機能|NativeExtension|Native_extension|アイテムのネイティブ拡張。|
 |ネイティブ ファイル名|NativeFileName|Native_file_name|アイテムのネイティブ ファイル名。|
 |NativeMD5||Native_MD5|ファイル ストリームの MD5 ハッシュ (128 ビット ハッシュ値)。|
@@ -164,7 +164,6 @@ ms.locfileid: "52259465"
 |タイトル|タイトル|Doc_title|ドキュメント メタデータのタイトル。|
 |へ|へ|Email_to|メッセージの種類をフィールドに指定します。 Format is **DisplayName \<SmtpAddress>**|
 |メール セットで一意|UniqueInEmailSet||**メール** セットに添付ファイルが重複している場合は False。|
-|バージョン グループ ID||Version_Group_Id|同じドキュメントの異なるバージョンをグループ分けします。|
 |修復された|WasRemediated|Was_Remediated|**True** の場合は、アイテムが修復され、それ以外の場合は **False です**。|
 |文字カウント|WordCount|Word_count|アイテム内の単語の数。|
 |||||

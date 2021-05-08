@@ -48,6 +48,8 @@
           href: service-description/support.md
         - name: 運用と監視
           href: service-description/operations-and-monitoring.md
+        - name: 診断ログ
+          href: service-description/diagnostic-logs.md
         - name: アプリケーションの要件
           href: service-description/mmd-app-requirements.md
         - name: アプリケーション制御

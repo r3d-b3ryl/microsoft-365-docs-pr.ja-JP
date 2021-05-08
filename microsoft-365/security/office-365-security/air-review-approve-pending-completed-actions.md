@@ -1,10 +1,10 @@
 ---
-title: Microsoft Defender for microsoft Defender の修復アクションを確認および管理Office 365
+title: Microsoft Defender で修復アクションを確認および管理Office 365
 keywords: AIR、autoIR、Microsoft Defender for Endpoint、自動化、調査、対応、修復、脅威、高度、脅威、保護
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -15,20 +15,20 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender for microsoft Defender for 365 Plan 2 のOffice修復アクションについて説明します。
+description: Microsoft Defender for microsoft Defender for Office 365プラン 2 の自動調査および応答機能の修復アクションについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: ce6cfd920845f5a85dbc7d7d48cfefdd6209ec3a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933651"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275074"
 ---
-# <a name="review-and-manage-remediation-actions-in-office-365"></a>365 で修復アクションを確認Officeする
+# <a name="review-and-manage-remediation-actions-in-office-365"></a>修復アクションを確認および管理Office 365
 
-電子メール の自動調査や&コンテンツの結果として、悪意のある、疑わしいなど、特定の修復アクションが作成されます。 Microsoft Defender for Office 365 では、修復アクションには次のものが含まれます。
+電子メール の自動調査や&コンテンツの結果として、悪意のある、疑わしいなど、特定の修復アクションが作成されます。 Microsoft Defender for Office 365修復アクションには、次のものが含まれます。
 - URL のブロック (クリック時)
 - 電子メール メッセージまたはクラスターのソフト削除
 - メールまたはメールの添付ファイルを Quarantining する
@@ -42,7 +42,7 @@ ms.locfileid: "51933651"
 
 ## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) する
 
-1. Microsoft 365 セキュリティ センター ( ) に移動し <https://security.microsoft.com> 、サインインします。
+1. セキュリティ センター ( ) Microsoft 365に移動し <https://security.microsoft.com> 、サインインします。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中 **] タブ** で、承認を待っているアクションの一覧を確認します。
 4. リストからアイテムを選択します。 そのフライアウト ウィンドウが開きます。 
@@ -76,4 +76,4 @@ ms.locfileid: "51933651"
 
 ## <a name="see-also"></a>関連項目
 
-- [365 で自動調査の詳細と結果Officeする](air-view-investigation-results.md)
+- [自動調査の詳細と結果を表示Office 365](air-view-investigation-results.md)

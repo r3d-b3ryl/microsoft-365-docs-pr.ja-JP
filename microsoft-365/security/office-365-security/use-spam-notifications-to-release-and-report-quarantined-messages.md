@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のエンド ユーザースパム通知
+title: エンド ユーザーのスパム通知 (Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,15 +18,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) で検疫されたメッセージに対するエンド ユーザーのスパム通知について学習できます。
+description: 管理者は、検疫済みメッセージ (EOP) で検疫されたメッセージに対するエンド Exchange Online Protectionについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9cff91be399bd98eb7e6e5a2a6d91a4a8bb602ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3f5eafbb51cd0ff32c69fa0cff85729ef95d3d1f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206082"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274990"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>ユーザーのスパム通知を使用して検疫済みメッセージを解放および報告する
 
@@ -56,7 +56,7 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 - **日付**: メッセージが検疫された日付と時刻 (UTC)。
 
-- **[送信者のブロック**] : このリンクをクリックして、送信者を [受信拒否] リストに追加します。 詳細については、「メール送信者を [ブロックする」を参照してください](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- **[送信者のブロック**] : このリンクをクリックして、メールボックスの [受信拒否] リストに送信者を追加します。 詳細については、「メール送信者を [ブロックする」を参照してください](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 - **リリース**: スパム (フィッシングではない) メッセージの場合は、[セキュリティ とコンプライアンス センターの検疫] に移動せずに、ここで&できます。
 

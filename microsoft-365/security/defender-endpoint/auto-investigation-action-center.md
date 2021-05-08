@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: f8dd48364f60da789ac95638018245cf46434822
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e51cc1d613e6f9e7ab96653692362ed7fe239e3e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197639"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274846"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>アクション センターにアクセスして修復アクションを確認する
 
@@ -82,13 +82,13 @@ ms.locfileid: "51197639"
 - 表示する列を選択します。
 - データの各ページに含めるアイテムの数を指定します。
 - フィルターを使用して、表示するアイテムを表示します。
-- [エクスポート **] を** 選択して、結果を .csv ファイルにエクスポートします。 
+- [エクスポート **] を** 選択して、結果を.csvします。 
 
 ## <a name="next-steps"></a>次の手順
 
-- [修復アクションの表示と承認](manage-auto-investigation.md)
+- [修復アクションを表示および承認する](manage-auto-investigation.md)
 - [対話型ガイドを参照してください。 Microsoft Defender for Endpoint を使用して脅威を調査して修復する](https://aka.ms/MDATP-IR-Interactive-Guide)
  
 ## <a name="see-also"></a>関連項目
 
-- [エンドポイント向け Microsoft Defender で誤検知/負に対処する](defender-endpoint-false-positives-negatives.md)
+- [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](defender-endpoint-false-positives-negatives.md)
