@@ -1,6 +1,6 @@
 ---
-title: Microsoft マネージドデスクトップでのデバイスの注文
-description: ''
+title: デバイスを注文Microsoft マネージド デスクトップ
+description: デバイスの注文方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,18 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 75514dfc3c5de3c579cc051b830ebdc92a93e531
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 693ee9e6c9835c73c10ced059b627a902daa523e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529531"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245410"
 ---
-# <a name="order-microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイスの注文
+# <a name="order-microsoft-managed-desktop-devices"></a>デバイスMicrosoft マネージド デスクトップ注文する
 
-承認済みデバイスパートナーの1つを使用することをお勧めします。 デバイスのパートナーシップを設定する詳細については、Microsoft アカウントの連絡先をご利用ください。
+承認済みのデバイス パートナーの 1 つを操作することをお勧めします。 Microsoft アカウントの連絡先と連携して、デバイスパートナーシップの設定に関する詳細なヘルプを確認できます。
 
-その間に、Microsoft マネージドデスクトップでの使用がサポートされている、[現在承認](../service-description/device-list.md)されているデバイスの一覧を確認できます。
-
-
+Microsoft マネージド デスクトップ、デバイス モデルが現在承認されているデバイスの一覧[からである必要がなくなりました](../service-description/device-list.md)。 2021 年 5 月 3 日現在、承認済み製造元のすべてのデバイスが、投稿されたハードウェアおよびソフトウェア要件を満たす必要があります。 引き続きその一覧でデバイスを使用できますが、ビジネス デバイスサイトの Shop Microsoft マネージド デスクトップサイトで、Microsoft マネージド デスクトップデバイス[Windows 10 Pro見](https://www.microsoft.com/windowsforbusiness/view-all-devices)つけられます。 そのサイトで、[フィルター] 領域で [機能]を展開し、[デバイス] を選択して、推奨される **デバイスMicrosoft マネージド デスクトップ。** サービスに初めて特定のデバイス モデルを登録する予定がある場合は、そのモデルが期待するユーザー エクスペリエンスを提供するための例をテストする必要があります。 詳細については、「新しいデバイスの [検証」を参照してください](../get-started/validate-device.md)。
 

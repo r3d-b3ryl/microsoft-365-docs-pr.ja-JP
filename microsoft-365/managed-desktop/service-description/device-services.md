@@ -1,6 +1,6 @@
 ---
-title: Microsoft マネージドデスクトップデバイスサービス
-description: このトピックでは、Microsoft マネージドデスクトップのデバイスサービスと制限の一覧を示します。
+title: Microsoft マネージド デスクトップデバイス サービス
+description: このトピックでは、デバイス サービスと制限の一覧をMicrosoft マネージド デスクトップ。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,42 +9,42 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8048a26fd24697f9df77ff439e6bd3883f34f5aa
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 4d7101899a204d1785d94c2475bcd433b0b99e98
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529459"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245290"
 ---
-# <a name="microsoft-managed-desktop-device-services"></a>Microsoft マネージドデスクトップデバイスサービス
+# <a name="microsoft-managed-desktop-device-services"></a>Microsoft マネージド デスクトップデバイス サービス
 
-このトピックでは、Microsoft マネージドデスクトップデバイスのサービスとサービスの制限事項を示します。
+このトピックでは、デバイスのサービスとサービスのMicrosoft マネージド デスクトップします。
 
 ## <a name="device-services"></a>デバイス サービス
 
-Microsoft は、Microsoft マネージドデスクトップデバイスにこれらのサービスを提供します。 Microsoft マネージドデスクトッププログラムデバイスの詳細については、「 [Microsoft Managed desktop devices](device-list.md)」を参照してください。
+Microsoft は、これらのサービスを他のデバイスMicrosoft マネージド デスクトップします。 推奨されるプログラム デバイスの一覧Microsoft マネージド デスクトップ、ビジネス デバイス サイトの [ショップ Microsoft マネージド デスクトップ] Windows 10 Pro[フィルターします](https://www.microsoft.com/windowsforbusiness/view-all-devices)。
 
  | 
  --- | ---
-サポート | サポートエージェントは、デバイス機能に直接関連する質問に回答し、デバイスの問題を診断します。
-インベントリ | すべてのデバイスは、Microsoft Managed Desktop Admin portal でインベントリおよび状態追跡用に追跡されます。
-ファームウェア/ドライバーの更新プログラム | 既定では、Microsoft マネージドデスクトップデバイスは Windows Update からのファームウェアとドライバーの更新プログラムを受け取ります。 すべてのハードウェアパートナーが Windows Update を通じて更新を展開するわけではありません。 更新プログラムが自動で公開されていない場合は、例外が必要であり、顧客が展開する必要があります。
-備品 | デバイスに付属するアクセサリは、デバイス自体と同じサービスでカバーされますが、保証条項は異なる場合があります。 デバイスを選択する際に選択した保証条件を参照してください。 
-デバイスのセットアップ    | デバイスは、現在のバージョンの Windows で事前構成され、クラウド経由でアプリと構成を受け取ります。 
+サポート | サポート エージェントは、デバイスの機能に直接関連する質問に回答し、デバイスの問題を診断します。
+インベントリ | すべてのデバイスは、インベントリと状態Microsoft マネージド デスクトップ管理ポータルで追跡されます。
+ファームウェア/ドライバーの更新 | 既定では、デバイスMicrosoft マネージド デスクトップ更新プログラムからファームウェアとドライバーの更新Windowsされます。 すべてのハードウェア パートナーが更新プログラムを更新プログラム経由で展開Windowsではありません。 自動として公開されていない更新プログラムには例外が必要であり、お客様が展開する必要があります。
+アクセサリ | デバイスに付属するアクセサリは、デバイス自体と同じサービスでカバーされますが、保証条件が異なる場合があります。 デバイスを選択する際に選択した保証条項を参照してください。 
+デバイスのセットアップ    | デバイスは、現在のバージョンのデバイスで事前構成されWindows、クラウド経由でアプリと構成を受信します。 
 
-デバイスの交換、アップグレード、サポートの条項の詳細については、ご使用のデバイスプロバイダーと保証条件についてご許諾ください。
+デバイスの交換、アップグレード、およびサポート条件については、デバイス プロバイダーとの契約と保証条件を参照してください。
 
-Surface の保証と修理については、以下を参照してください。
-- [ビジネスヘルプセンターの Surface](https://support.microsoft.com/hub/4339296/surface-for-business-help)
-- [お客様のデバイスの保証、拡張サービスプラン、諸条件](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
+Surface の保証と修理の詳細については、次の情報を参照してください。
+- [Surface for Business ヘルプ センター](https://support.microsoft.com/hub/4339296/surface-for-business-help)
+- [デバイスの保証、拡張サービス プラン、および利用規約](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 
 
-## <a name="device-service-limitations"></a>デバイスサービスの制限
+## <a name="device-service-limitations"></a>デバイス サービスの制限
 
-Microsoft は、これらのアイテムにサービスを提供しません。
+Microsoft は、これらのアイテムのサービスを提供しない。
 
  | 
  --- | ---
-パーソナル | サービスで提供されているデバイスとアクセサリをカスタマイズすることはできません。 すべてのデバイスとアクセサリには、標準のブランド化、仕様、および色の組み合わせが用意されています。 アプリケーションの展開とポリシーの構成は、サービスとして処理されます。
-データの回復 | ユーザーおよびチームのデータ (個人用設定を含む) は、OneDrive for Business に保存されます。これには、キャッシュデータのみがローカルに存在します。 データがデバイスの内部ストレージシステムに意図的に格納されている場合は、デバイスを Microsoft に返す前に、データの回復を実行して完了する必要があります。
-デバイスのセットアップ | デバイスは顧客のアドレスに配信され、顧客が電源をオンにして設定する必要があります。
+個人用設定 | サービスで提供されるデバイスとアクセサリをカスタマイズできません。 すべてのデバイスとアクセサリには、標準的なブランド化、仕様、色の組み合わせが用意されています。 アプリケーションの展開とポリシー構成は、IT-as-a-Service によって処理されます。
+データ復旧 | 個人用設定を含むユーザーとチームのデータは、ローカルOneDrive for Businessキャッシュ データのみを使用して、ユーザー設定に格納されます。 データが意図的にデバイスの内部ストレージ システムに格納されている場合は、デバイスを Microsoft に返す前に、データ復旧を試行して完了する必要があります。
+デバイスのセットアップ | デバイスは顧客の住所に配信されます。そこで、デバイスの電源をオンにし、顧客が設定する必要があります。

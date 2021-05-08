@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 834ce13917237dd822bdfbb7b88967dcac4bc0f8
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dab72da02927c3fff6025eb2d0fa9ed0fdf1d0d7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929015"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245278"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS の機能で Microsoft Defender for Endpoint を構成する
 
@@ -38,9 +38,12 @@ ms.locfileid: "51929015"
 > iOS 上のエンドポイントの Defender は、Web 保護機能を提供するために VPN を使用します。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>iOS 上のエンドポイント用 Defender を使用した条件付きアクセス  
-Microsoft Defender for Endpoint on iOS、Microsoft Intune、Azure Active Directory を使用すると、デバイスのリスク レベルに基づいてデバイスコンプライアンスと条件付きアクセス ポリシーを適用できます。 Defender for Endpoint は、Intune を介してこの機能を活用するために展開できるモバイル脅威防御 (MTD) ソリューションです。
+Microsoft Defender for Endpoint on iOS および Microsoft Intune および Azure Active Directory を使用すると、デバイス のリスク スコアに基づいてデバイスコンプライアンスと条件付きアクセス ポリシーを適用できます。 Defender for Endpoint は、Intune を介してこの機能を活用するために展開できるモバイル脅威防御 (MTD) ソリューションです。
 
 iOS 上の Defender for Endpoint で条件付きアクセスを設定する方法の詳細については [、「Defender for Endpoint and Intune」を参照してください](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)。
+
+> [!NOTE]
+> **iOS 上の Microsoft Defender for Endpoint による脱獄検出は現在プレビュー中です**。 Microsoft Defender for Endpoint によってデバイスが脱獄されたと検出された場合、高リスクアラートがセキュリティ センターに報告され、条件付きアクセスがデバイス リスク スコアに基づいてセットアップされている場合、デバイスは企業データへのアクセスをブロックされます。
 
 ## <a name="web-protection-and-vpn"></a>Web 保護と VPN
 
@@ -48,9 +51,9 @@ iOS 上の Defender for Endpoint で条件付きアクセスを設定する方�
 
 既定で有効になっている場合は、VPN を無効にする必要がある場合があります。 たとえば、VPN が構成されているときに動作しないアプリを実行する場合です。 このような場合は、次の手順に従って、デバイス上のアプリから VPN を無効にできます。
 
-1. iOS デバイスで、[設定]**アプリを開** き、[全般] をクリックまたはタップ **し****、[VPN] をタップします**。
+1. iOS デバイスで、アプリを開き **設定[全般**] をクリック **またはタップ** し **、[VPN] をタップします**。
 1. Microsoft Defender for Endpoint の "i" ボタンをクリックまたはタップします。
-1. [オンデマンド接続 **] をオフにして** VPN を無効にします。
+1. VPN を無効 **にするにはConnectをオフ** にします。
 
     > [!div class="mx-imgBorder"]
     > ![VPN 構成はオンデマンドで接続します](images/ios-vpn-config.png)
@@ -68,11 +71,11 @@ Apple iOS では、同時にアクティブになる複数のデバイス全体�
 企業データが脱獄された iOS デバイスでアクセスされるのを保護するには、Intune で次のコンプライアンス ポリシーを設定することをお勧めします。
 
 > [!NOTE]
-> 現時点では、Microsoft Defender for Endpoint on iOS では、脱獄シナリオに対する保護は提供されません。 脱獄されたデバイスで使用する場合、特定のシナリオで、企業の電子メール ID や企業プロファイル画像 (利用可能な場合) など、アプリケーションで使用されるデータをローカルで公開できます
+> 現時点では、iOS 上の Microsoft Defender for Endpoint による脱獄検出はプレビュー中です。 脱獄シナリオに対する追加の防御層としてこのポリシーをセットアップすることをお勧めします。
 
 以下の手順に従って、脱獄されたデバイスに対するコンプライアンス ポリシーを作成します。
 
-1. [Microsoft Endpoint Manager 管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)デバイス コンプライアンス ポリシー  ->  **の作成ポリシー**  ->  **] に移動します**。 プラットフォームとして [iOS/iPadOS] を選択し、[作成] を **クリックします**。
+1. 管理 [Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)デバイス コンプライアンス ポリシー  ->  **の作成ポリシー**]  ->  **に移動します**。 プラットフォームとして [iOS/iPadOS] を選択し、[作成] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
     > ![ポリシーの作成](images/ios-jb-policy.png)
@@ -104,6 +107,6 @@ iOS のエンドポイントの Defender を使用すると、管理者は iOS �
 
 ## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>Microsoft Defender for Endpoint がインストールされている場合の iOS でのバッテリー消費の問題
 
-アプリによるバッテリー使用量は、CPU やネットワークの使用状況など、さまざまな要因に基づいて Apple によって計算されます。 Microsoft Defender for Endpoint では、バックグラウンドでローカル/ループバック VPN を使用して、悪意のある Web サイトや接続の Web トラフィックを確認します。 任意のアプリからのネットワーク パケットは、このチェックを通過し、Microsoft Defender for Endpoint のバッテリー使用量が不正確に計算される原因になります。 これは、ユーザーに誤った印象を与えます。 Microsoft Defender for Endpoint の実際のバッテリー消費量は、デバイスの [バッテリーの設定] ページに表示される値よりも少ない値です。 これは、バッテリー消費を理解するために Microsoft Defender for Endpoint アプリで実施されたテストに基づいて行われます。
+アプリによるバッテリー使用量は、CPU やネットワークの使用状況など、さまざまな要因に基づいて Apple によって計算されます。 Microsoft Defender for Endpoint では、バックグラウンドでローカル/ループバック VPN を使用して、悪意のある Web サイトや接続の Web トラフィックを確認します。 任意のアプリからのネットワーク パケットは、このチェックを通過し、Microsoft Defender for Endpoint のバッテリー使用量が不正確に計算される原因になります。 これは、ユーザーに誤った印象を与えます。 Microsoft Defender for Endpoint の実際のバッテリー消費量は、デバイスの [バッテリー] ページに表示設定より小さいです。 これは、バッテリー消費を理解するために Microsoft Defender for Endpoint アプリで実施されたテストに基づいて行われます。
 
 また、使用される VPN はローカル VPN であり、従来の VPN とは異なり、ネットワーク トラフィックはデバイスの外部に送信されません。

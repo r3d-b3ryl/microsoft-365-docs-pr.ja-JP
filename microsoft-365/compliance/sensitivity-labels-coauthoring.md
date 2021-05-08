@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 990ab13508565fb910abe0d5e759a93e54766915
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764366"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245722"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -134,6 +134,8 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 - Office for the web で 300 MB 以上の Word ファイル、Excel ファイル、PowerPoint ファイルにラベルを適用できない。 これらのファイルでは、Office デスクトップ アプリを使用してラベルを適用できますが、ファイルを開いているのが自分だけである必要があります。
 
 - [秘密度レベルを条件として使用する DLP ポリシー](dlp-sensitivity-label-as-condition.md) を使用する場合、暗号化されていないメールへの添付ファイルはサポートされません。
+
+- 一部のドキュメントは、[パスワード保護](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643)、[共有ブック](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534)、または ActiveX コントロールを含むコンテンツなどの機能のため、秘密度ラベルと互換性がありません。 その他の理由は、「[Office の共同編集のトラブルシューティング](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7)」に記載されています。 これらのドキュメントには、「**アップロードに失敗しました**」というメッセージが表示され、**[変更を破棄する]** オプションを選択する必要があります。 この問題が解決されるまで、この失敗メッセージで識別されるこれらのドキュメントにラベルを付けないでください。
 
 - iOS 用 Office アプリと Android 用 Office アプリがサポートされていない。
 

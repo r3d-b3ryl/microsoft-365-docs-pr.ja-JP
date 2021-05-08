@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender の修復アクション
-description: Microsoft 365 Defender の自動調査に従う修復アクションの概要を確認する
+title: Defender での修復Microsoft 365操作
+description: Defender の自動調査に従う修復アクションの概要をMicrosoft 365する
 keywords: 自動化、調査、警告、トリガー、アクション、修復
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,14 +21,14 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 41d8b91cbc905da982f8a344392398635f8d3632
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 31162944f4728f2c84efbe2cd5eafbd0c70e00f6
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591854"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245854"
 ---
-# <a name="remediation-actions-in-microsoft-365-defender"></a>Microsoft 365 Defender の修復アクション
+# <a name="remediation-actions-in-microsoft-365-defender"></a>Defender での修復Microsoft 365操作
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "51591854"
 
 ## <a name="remediation-actions"></a>修復アクション
 
-Microsoft 365 Defender での自動調査中および後に、悪意のあるアイテムや疑わしいアイテムに対する修復アクションが識別されます。 一部の種類の修復アクションは、エンドポイントとも呼ばれるデバイスで実行されます。 その他の修復アクションは、メール コンテンツに対して実行されます。 修復アクションを実行、承認、または拒否した後、自動調査が完了します。
+Defender での自動調査中およびMicrosoft 365、悪意のあるアイテムまたは不審なアイテムに対する修復アクションが識別されます。 一部の種類の修復アクションは、エンドポイントとも呼ばれるデバイスで実行されます。 その他の修復アクションは、メール コンテンツに対して実行されます。 修復アクションを実行、承認、または拒否した後、自動調査が完了します。
 
 > [!IMPORTANT]
 > 修復アクションが自動的に実行されるのか、承認時にのみ実行されるのかは、オートメーション レベルなどの特定の設定によって異なります。 詳細については、次の記事を参照してください。
-> - [Microsoft 365 Defender で自動調査と対応機能を構成する](m365d-configure-auto-investigation-response.md)
+> - [Defender で自動調査と応答機能をMicrosoft 365する](m365d-configure-auto-investigation-response.md)
 > - [デバイスでの脅威の修復方法](../defender-endpoint/automated-investigations.md)
 > - [コラボレーション コンテンツに対する電子メール&修復アクション](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-次の表に、Microsoft 365 Defender で現在サポートされている修復アクションの概要を示します。 
+次の表に、Defender で現在サポートされている修復アクションMicrosoft 365示します。 
 
 |デバイス (エンドポイント) 修復アクション  |メールの修復アクション  |
 |:---------|:---------|

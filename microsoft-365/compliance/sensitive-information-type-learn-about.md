@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 7d23230ebe4321f355128d1f3268e967a35a0a89
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114227"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245650"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
@@ -38,7 +38,7 @@ ms.locfileid: "52114227"
 - [データ損失防止ポリシー](dlp-learn-about-dlp.md) 
 - [機密ラベル](sensitivity-labels.md)
 - [保持ラベル](retention.md)
-- [インサイダー リスクの管理](insider-risk-management.md)
+- [Insider リスク管理](insider-risk-management.md)
 - [通信コンプライアンス](communication-compliance.md)
 - [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -158,5 +158,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
 - [PowerShell でカスタム機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+
+機密情報の種類を使用してデータプライバシー規制に準拠する方法については、「データ[](../solutions/information-protection-deploy.md)プライバシー規制に関する情報保護を展開する (Microsoft 365 (aka.ms/m365dataprivacy)」を参照してください。
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

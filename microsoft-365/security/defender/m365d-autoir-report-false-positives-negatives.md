@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender で AIR で誤検知または誤検知を処理する
-description: Microsoft 365 Defender で AIR によって何かが見つからないか、誤って検出されましたか? 分析のために誤検知または誤検知を Microsoft に提出する方法について説明します。
+title: Defender で AIR で誤検知または誤検知をMicrosoft 365する
+description: Defender の AIR で何かが見つからないか、誤Microsoft 365されましたか? 分析のために誤検知または誤検知を Microsoft に提出する方法について説明します。
 keywords: 自動化、調査、アラート、修復、誤検知、偽陰性
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f57e68ba88879ed78170e6348ecdbce4db82b668
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 727ca529dc1a16af778e01a08c9adcfe42b9b974
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592062"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245470"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能で誤検知/負を処理する
 
@@ -35,7 +35,7 @@ ms.locfileid: "51592062"
 **適用対象:**
 - Microsoft 365 Defender
 
-誤検知/陰性は、脅威保護ソリューションで発生する場合があります。 Microsoft [](m365d-autoir.md) 365 Defender の自動調査と対応機能で何かが検出された場合、セキュリティ運用チームが実行できる手順は次のとおりです。
+誤検知/陰性は、脅威保護ソリューションで発生する場合があります。 Defender[の自動調査と対応機能](m365d-autoir.md)がMicrosoft 365検出された場合、セキュリティ運用チームが実行できる手順は次のとおりです。
 
 - [Microsoft に誤検知/陰性を報告する](#report-a-false-positivenegative-to-microsoft-for-analysis)。
 - [アラートを調整](#adjust-an-alert-to-prevent-false-positives-from-recurring) する (必要な場合)。そして 
@@ -54,7 +54,7 @@ ms.locfileid: "51592062"
 
 |シナリオ |サービス |操作 |
 |--------|--------|--------|
-|- アラートは正当な使用によってトリガーされます <br/>- アラートが不正確    |[Microsoft Cloud App Security](/cloud-app-security)<br/> または <br/>[Azure Advanced Threat Detection](/azure/security/fundamentals/threat-detection)         |[Cloud App Security ポータルでアラートを管理する](/cloud-app-security/managing-alerts)         |
+|- アラートは正当な使用によってトリガーされます <br/>- アラートが不正確    |[Microsoft Cloud App Security](/cloud-app-security)<br/> または <br/>[Azure Advanced Threat Detection](/azure/security/fundamentals/threat-detection)         |[ポータルでアラートをCloud App Securityする](/cloud-app-security/managing-alerts)         |
 |ファイル、IP アドレス、URL、またはドメインは、安全なデバイス上のマルウェアとして扱われる|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |["許可" アクションを使用してカスタム インジケーターを作成する](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>デバイスで実行された修復アクションを元に戻す
@@ -69,8 +69,8 @@ ms.locfileid: "51592062"
 > [!TIP]
 > 「完了 [した操作を元に戻す」を参照してください](m365d-autoir-actions.md#undo-completed-actions)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [自動調査の詳細と結果を表示する](m365d-autoir-results.md)
-- [Microsoft 365 Defender で高度な狩猟を行って脅威を積極的に探す](advanced-hunting-overview.md)
+- [Defender で高度な狩猟を行って脅威を積極的にMicrosoft 365する](advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

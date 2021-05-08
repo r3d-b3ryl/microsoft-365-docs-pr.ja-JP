@@ -1,7 +1,7 @@
 ---
-title: すべての修復アクティビティを一覧表示する
+title: すべての修復作業を一覧表示する
 description: すべての修復アクティビティに関する情報を返します。
-keywords: apis、修復、修復 API、get、修復タスク、
+keywords: apis、修復、修復 API、get、修復タスク、すべての修復、
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac4a777136dcdfc5d7ab61ddc8d496b7452f69e2
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: cf7c79cb6cc76af88ce0293a013ba6edbf435d8c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061163"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245494"
 ---
-# <a name="list-all-remediation-activities"></a>すべての修復アクティビティを一覧表示する
+# <a name="list-all-remediation-activities"></a>すべての修復作業を一覧表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,7 +47,16 @@ ms.locfileid: "52061163"
 
 **URL:** GET: /api/remediationTasks
 
-**プロパティの** 詳細
+## <a name="permissions"></a>アクセス許可
+
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+
+アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+:---|:---|:---
+アプリケーション | RemediationTask.Read.All | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント) | RemediationTask.Read.Read | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
+
+## <a name="properties"></a>プロパティ
 
 プロパティ (id) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
@@ -56,19 +65,19 @@ completerEmail | String | 修復アクティビティが手動で誰かが完了
 completerId | String | 修復アクティビティが手動で誰かが完了した場合、この列にはオブジェクト ID が含まれる | null
 completionMethod | String | 修復アクティビティは、"完了としてマーク" を選択したユーザーが "自動的に" (すべてのデバイスにパッチが適用されている場合) または "手動" で完了できます。 | 自動
 createdOn | DateTime | この修復アクティビティが作成された時刻 | 2021-01-12T18:54:11.5499478Z
-説明 | String | この修復アクティビティの説明 | Chrome を新しいバージョンに更新して、デバイスに影響を与える既知の 1248 件の脆弱性を軽減します。
+説明 | String | この修復アクティビティの説明 | デバイスに影響を与える既知の脆弱性を軽減するために、Microsoft Silverlight を新しいバージョンに更新します。
 dueOn | DateTime | この修復アクティビティの作成者セットの期限 | 2021-01-13T00:00:00Z
 fixedDevices | . | 固定されているデバイスの数 | 2
 id | String | この修復アクティビティの ID | 097d9735-5479-4899-b1b7-77398899df92
-nameId | String | 関連する製品名 | クロム
-priority | String | この修復アクティビティの作成者セットの優先度 (High\Medium\Low) | 高
-productId | String | 関連する製品 ID | google-_-chrome
+nameId | String | 関連する製品名 | Microsoft Silverlight
+priority | String | この修復アクティビティの作成者セットの優先度 (High\Medium\Low) | 高い
+productId | String | 関連する製品 ID | microsoft-_-silverlight
 productivityImpactRemediationType | String | いくつかの構成変更は、ユーザーに影響がないデバイスに対してだけ要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。 | AllExposedAssets
 rbacGroupNames | String | 関連するデバイス グループ名 | [ "Windows サーバー", "Windows 10" ]
 recommendedProgram | String | にアップグレードする推奨プログラム | null
 recommendedVendor | String | アップグレードの推奨ベンダー | null
 recommendedVersion | String | 更新/アップグレードの推奨バージョン | null
-relatedComponent | String | この修復アクティビティの関連コンポーネント (セキュリティ推奨事項の関連コンポーネントと同様) | Google Chrome
+relatedComponent | String | この修復アクティビティの関連コンポーネント (セキュリティ推奨事項の関連コンポーネントと同様) | Microsoft Silverlight
 requesterEmail | String | 作成者の電子メール アドレス | globaladmin@UserName.contoso.com
 requesterId | String | Creator オブジェクト ID | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | String | この修復アクティビティに作成者が追加したメモ (フリー テキスト) | null
@@ -76,19 +85,19 @@ scid | String | 関連するセキュリティ推奨事項の SCID | null
 status | String | 修復アクティビティの状態 (アクティブ/完了) | Active
 statusLastModifiedOn | DateTime | 状態フィールドが更新された日付 | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | この修復が適用される公開デバイスの数 | 43
-title | String | この修復アクティビティのタイトル | Google Chrome を更新する
+title | String | この修復アクティビティのタイトル | Microsoft Silverlight の更新
 type | String | 修復の種類 | Update
-vendorId | String | 関連ベンダー名 | google
+vendorId | String | 関連ベンダー名 | Microsoft
 
 ## <a name="example"></a>例
 
-**要求の** 例
+### <a name="request-example"></a>要求の例
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 ```
 
-**応答** の例
+### <a name="response-example"></a>応答の例
 
 ```json
 {
@@ -131,14 +140,14 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [修復方法とプロパティ](get-remediation-methods-properties.md)
 
-- [Id で 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
+- [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
 
-- [1 つの修復アクティビティの公開デバイスを一覧表示する](get-remediation-exposed-devices-activities.md)
+- [1 つの修復アクティビティの暴露デバイスを一覧表示する](get-remediation-exposed-devices-activities.md)
 
-- [リスクベースの脅威と&管理](next-gen-threat-and-vuln-mgt.md)
+- [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 
 - [組織の脆弱性](tvm-weaknesses.md)

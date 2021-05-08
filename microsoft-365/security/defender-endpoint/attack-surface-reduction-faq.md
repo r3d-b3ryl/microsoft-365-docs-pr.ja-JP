@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cf41dda4ff61137d6b60b2fc735227f15418477e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3ca429ca1fea125450fdbb8d1f3a0e3a745513d8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935595"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245698"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 
@@ -32,19 +32,19 @@ ms.locfileid: "51935595"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-## <a name="is-attack-surface-reduction-asr-part-of-windows"></a>攻撃表面の縮小 (ASR) は Windows の一部ですか?
+## <a name="is-attack-surface-reduction-asr-part-of-windows"></a>攻撃表面の縮小 (ASR) は、攻撃の一部Windows?
 
-ASR はもともと、Windows 10 バージョン 1709 で、Microsoft Defender Antivirus のメジャー更新プログラムとして導入されたエクスプロイト ガード機能のスイートの機能でした。 Microsoft Defender Antivirus は、Windows のネイティブマルウェア対策コンポーネントです。 ただし、完全な ASR 機能セットは、Windows エンタープライズ ライセンスでのみ使用できます。 また、ASR ルールの除外は、Microsoft Defender ウイルス対策の除外とは別に管理されます。
+ASR はもともと、Microsoft Defender ウイルス対策 バージョン 1709 の Microsoft Defender ウイルス対策 Windows 10 の主要な更新プログラムとして導入されたエクスプロイト ガード機能のスイートの機能でした。 Microsoft Defender ウイルス対策は、マルウェア対策のネイティブ コンポーネントWindows。 ただし、完全な ASR 機能セットは、エンタープライズ ライセンスWindows使用できます。 また、ASR ルールの除外は、ユーザーの除外とは別Microsoft Defender ウイルス対策注意してください。
 
 ## <a name="do-i-need-to-have-an-enterprise-license-to-run-asr-rules"></a>ASR ルールを実行するには、エンタープライズ ライセンスが必要ですか?
 
-ASR ルールと機能の完全なセットは、Windows 10 のエンタープライズ ライセンスを持っている場合にのみサポートされます。 限られた数のルールは、エンタープライズ ライセンスなしで動作する場合があります。 Microsoft 365 Business をお持ちの場合は、Microsoft Defender Antivirus をプライマリ セキュリティ ソリューションとして設定し、PowerShell を使用してルールを有効にしてください。 エンタープライズ ライセンスなしで ASR を使用しても、正式にはサポートされていないので、ASR の完全な機能を使用することはできません。
+ASR ルールと機能の完全なセットは、エンタープライズ ライセンスを使用している場合にのみサポートWindows 10。 限られた数のルールは、エンタープライズ ライセンスなしで動作する場合があります。 必要な情報Microsoft 365 Business、Microsoft Defender ウイルス対策セキュリティ ソリューションとして設定し、PowerShell を使用してルールを有効にしてください。 エンタープライズ ライセンスなしで ASR を使用しても、正式にはサポートされていないので、ASR の完全な機能を使用することはできません。
 
-Windows ライセンスの詳細については [、「Windows 10 Licensing」](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) を参照し [、Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)のボリューム ライセンス ガイドを参照してください。
+ライセンスの詳細については、「Windows ライセンス」を参照し[](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)Windows 10ボリューム ライセンス ガイド[を](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)参照Windows 10。
 
 ## <a name="is-asr-supported-if-i-have-an-e3-license"></a>E3 ライセンスを持っている場合、ASR はサポートされていますか?
 
-はい。 ASR は、Windows Enterprise E3 以上でサポートされています。 
+はい。 ASR は E3 以上Windows Enterpriseサポートされています。 
 
 ## <a name="which-features-are-supported-with-an-e5-license"></a>E5 ライセンスでサポートされている機能は何ですか?
 
@@ -74,17 +74,15 @@ ASR ルールの除外に関する次の項目 (ワイルドカードや env を
 - ASR ルールの除外は、Defender AV の除外とは独立しています
 - ワイルドカードを使用してドライブ文字を定義することはできません
 - 複数のフォルダーをパスで除外する場合は、\ の複数のインスタンスを使用して、複数の入れ子になったフォルダーを示します \* (たとえば、c:\Folder \* \* \Test)
-- Microsoft Endpoint Configuration Manager *はワイルドカード (** または ?) をサポートしていない
-- ランダムな文字 (自動ファイル生成) を含むファイルを除外する場合は、'?' 記号 (たとえば、C:\Folder\fileversion?) を使用できます。docx)
+- Microsoft Endpoint Configuration Manager *ワイルドカード (** または ?) をサポートしていない場合
+- ランダムな文字 (自動ファイル生成) を含むファイルを除外する場合は、'?' 記号を使用できます (たとえば、C:\Folder\fileversion?.docx)
 - グループ ポリシーの ASR 除外では引用符はサポートされていません (エンジンは長いパス、スペースなどをネイティブに処理しますので、引用符を使用する必要はありません)
 - ASR ルールは NT AUTHORITY\SYSTEM アカウントで実行されます。そのため、環境変数はコンピューター変数に制限されます。
-
-
 
 ## <a name="how-do-i-know-what-i-need-to-exclude"></a>除外する必要がある情報を知る方法
 ASR ルールが異なると、保護フローが異なります。 構成する ASR ルールが保護する機能と、実際の実行フローがどのようにパンアウトされるのかを常に考えておきます。
 
-例: **Windows** ローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする ローカル セキュリティ機関サブシステム (LSASS) プロセスからの直接読み取りは、企業の資格情報を公開する可能性があるから、セキュリティ リスクになる可能性があります。
+例: Windows ローカル セキュリティ機関サブシステム **から** 直接読み取るローカル セキュリティ機関サブシステム (LSASS) プロセスからの資格情報の盗用をブロックすると、企業の資格情報が公開される可能性があります。
 
 このルールにより、信頼されていないプロセスは LSASS メモリに直接アクセスできます。 プロセスが OpenProcess() 関数を使用して LSASS にアクセスしようとするたびに、PROCESS_VM_READ のアクセス権を持つルールは、そのアクセス権を特にブロックします。
 
@@ -96,20 +94,20 @@ ASR ルールが異なると、保護フローが異なります。 構成する
 
 ## <a name="what-are-the-rules-microsoft-recommends-enabling"></a>Microsoft が有効に推奨するルールは何ですか?
 
-可能な限りすべてのルールを有効にすることをお勧めします。 ただし、ルールを有効にしない場合があります。 たとえば、Microsoft Endpoint Configuration Manager (または System Center Configuration Manager - SCCM) を使用してエンドポイントを管理する場合は、PSExec コマンドおよび WMI コマンド ルールから発生するプロセス作成をブロックすることを有効にすることをお勧めしません。
+可能な限りすべてのルールを有効にすることをお勧めします。 ただし、ルールを有効にしない場合があります。 たとえば、エンドポイントを管理するために Microsoft Endpoint Configuration Manager (または System Center Configuration Manager - SCCM) を使用している場合は、PSExec コマンドおよび WMI コマンドルールから発生するプロセス作成をブロックすることを有効にすることをお勧めしません。
 
 ルール固有の各情報や警告については、パブリック ドキュメントで確認することを強 [くお勧めします](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md)。
-保護の複数の柱にまたがって、Office、資格情報、スクリプト、電子メールなど。WMI イベント サブスクリプションによる永続化のブロックを除くすべての ASR ルールは、Windows 1709 以降でサポートされます。
+保護の複数の柱にまたがって、Office、資格情報、スクリプト、電子メールなど。WMI イベント サブスクリプションによる永続化のブロックを除くすべての ASR ルールは、1709 以降Windowsサポートされます。
 
 * [メール クライアントと Web メールから実行可能なコンテンツをブロックする](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 * [すべてのアプリケーションOffice子プロセスの作成をブロックする](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
-* [実行可能Office作成するアプリケーションをブロックする](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)
+* [実行可能Office作成するアプリケーションのブロック](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)
 * [アプリケーションOffice他のプロセスへのコードの挿入をブロックする](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)
 * [JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](attack-surface-reduction.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 * [難読化される可能性のあるスクリプトの実行をブロックする](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
 * [Win32 API 呼び出しをブロックOfficeマクロ](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
 * [ランサムウェアに対する高度な保護の使用](attack-surface-reduction.md#use-advanced-protection-against-ransomware)
-* [Windows ローカル セキュリティ機関サブシステムからの資格情報の](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) 盗用をブロックする (lsass.exe)
+* [ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロック](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)する (lsass.exe)
 * [PSExec および WMI コマンドから発生するプロセス作成をブロックする](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 * [USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 * [有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
@@ -141,21 +139,21 @@ Defender for Endpoint 内から、カスタム インジケーターを使用し
 
 ## <a name="do-asr-rules-cover-all-applications-by-default"></a>ASR ルールは既定ですべてのアプリケーションをカバーしますか?
 
-ルールによって異なります。 ほとんどの ASR ルールは、Word、Excel、PowerPoint、OneNote、Outlook など、Microsoft Officeサービスの動作をカバーします。 難読化される可能性のあるスクリプトの実行をブロックするなどの特定の ASR ルールは、スコープ内で一般的です。
+ルールによって異なります。 ほとんどの ASR ルールは、Word、Microsoft Office、Excel、PowerPoint、OneNote、またはサービスなどのOutlook。 難読化される可能性のあるスクリプトの実行をブロックするなどの特定の ASR ルールは、スコープ内で一般的です。
 
 ## <a name="does-asr-support-third-party-security-solutions"></a>ASR はサードパーティのセキュリティ ソリューションをサポートしていますか?
 
-ASR は、Microsoft Defender ウイルス対策を使用してアプリケーションをブロックします。 現時点では、ブロックに別のセキュリティ ソリューションを使用する ASR を構成することはできません。
+ASR は、Microsoft Defender ウイルス対策をブロックするために使用します。 現時点では、ブロックに別のセキュリティ ソリューションを使用する ASR を構成することはできません。
 
 ## <a name="i-have-an-e5-license-and-enabled-some-asr-rules-in-conjunction-with-defender-for-endpoint-is-it-possible-for-an-asr-event-to-not-show-up-at-all-in-defender-for-endpoints-event-timeline"></a>E5 ライセンスを持ち、Defender for Endpoint と組み合わせていくつかの ASR ルールを有効にしました。 エンドポイントのイベント タイムラインの Defender に ASR イベントが一向に表示されない可能性はありますか?
 
 ASR ルールによって通知がローカルでトリガーされるたびに、イベントに関するレポートも Defender for Endpoint ポータルに送信されます。 イベントを見つけるのに問題がある場合は、検索ボックスを使用してイベントのタイムラインをフィルター処理できます。 [セキュリティ センター] タスク バーの[構成管理] アイコンから、[攻撃表面の管理に移動] にアクセスして ASR イベントを表示することもできます。 攻撃表面の管理ページには、Defender for Endpoint に報告された ASR ルール イベントの完全な一覧を含む、レポート検出用のタブが含まれています。
 
-## <a name="i-applied-a-rule-using-gpo-now-when-i-try-to-check-the-indexing-options-for-the-rule-in-microsoft-outlook-i-get-a-message-stating-access-denied"></a>GPO を使用してルールを適用しました。 これで、Microsoft Outlook でルールのインデックス オプションを確認すると、"アクセスが拒否されました" というメッセージが表示されます。
+## <a name="i-applied-a-rule-using-gpo-now-when-i-try-to-check-the-indexing-options-for-the-rule-in-microsoft-outlook-i-get-a-message-stating-access-denied"></a>GPO を使用してルールを適用しました。 Microsoft Outlook でルールのインデックス オプションを確認すると、"アクセスが拒否されました" というメッセージが表示されます。
 
-Windows 10 から直接インデックス オプションを開いてみろ。
+インデックス作成オプションを直接開く方法は、Windows 10。
 
-1. Windows タスク **バーの [** 検索] アイコンを選択します。
+1. タスク バー **の [** 検索] アイコンWindowsします。
 
 1. 検索 **ボックスに「インデックス オプション** 」と入力します。
 
@@ -171,7 +169,7 @@ Windows 10 から直接インデックス オプションを開いてみろ。
 
 ## <a name="i-recently-enabled-the-asr-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-and-i-am-getting-a-large-number-of-notifications-what-is-going-on"></a>最近、ASR ルールを有効にしました。Windows ローカル セキュリティ機関サブシステム *(lsass.exe)* からの資格情報の盗用をブロックし、多数の通知を受け取っています。 どうなっているのですか。
 
-このルールによって生成された通知は、必ずしも悪意のあるアクティビティを示すとは限りません。ただし、このルールは、マルウェアがアカウントへの不正なアクセスを取得lsass.exeをターゲットにしている場合が多いため、悪意のあるアクティビティをブロックする場合に役立ちます。 このlsass.exeは、ユーザーがログインした後、ユーザー資格情報をメモリに格納します。 Windows では、これらの資格情報を使用してユーザーを検証し、ローカル セキュリティ ポリシーを適用します。
+このルールによって生成された通知は、必ずしも悪意のあるアクティビティを示すとは限りません。ただし、このルールは、マルウェアがアカウントへの不正なアクセスを取得lsass.exeをターゲットにしている場合が多いため、悪意のあるアクティビティをブロックする場合に役立ちます。 このlsass.exeは、ユーザーがログインした後、ユーザー資格情報をメモリに格納します。 Windows資格情報を使用してユーザーを検証し、ローカル セキュリティ ポリシーを適用します。
 
 一般的な 1 日を通じて多くの正当なプロセスが資格情報を要求lsass.exe呼び出すので、このルールは特にノイズが多い場合があります。 既知の正当なアプリケーションによってこのルールが過剰な数の通知を生成する場合は、除外リストに追加できます。 他のほとんどの ASR ルールでは、lsass.exe を呼び出すのは多くのアプリケーションの通常の機能の一般的な動作のため、このルールと比較して、比較的少ない数の通知が生成されます。
 
@@ -179,10 +177,12 @@ Windows 10 から直接インデックス オプションを開いてみろ。
 
 このルールを有効にすると [、LSA](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) 保護も有効になっている場合、追加の保護は提供されません。 ルールと LSA 保護の両方が同じ方法で動作し、両方を同時に実行すると冗長になります。 ただし、LSA 保護を有効にできない場合があります。 このような場合は、このルールを有効にして、マルウェアを対象とするマルウェアに対して同等の保護lsass.exe。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 * [攻撃表面の縮小の概要](attack-surface-reduction.md)
 * [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
 * [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)
 * [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
 * [Microsoft Defender と他のウイルス対策/マルウェア対策との互換性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+
+

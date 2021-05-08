@@ -1,5 +1,5 @@
 ---
-title: 管理センターの Microsoft 365 レポート - フォーム アクティビティ
+title: Microsoft 365管理センターのレポート - フォーム アクティビティ
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,21 +14,20 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: Microsoft 365 管理センターの Microsoft 365 レポート ダッシュボードを使用して Microsoft Forms アクティビティ レポートを取得する方法について説明します。
-ms.openlocfilehash: f4cd021003ad9d9bca4f986a33f49e62e2df1889
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 管理センターの [レポート] ダッシュボードを使用して Microsoft Forms アクティビティ Microsoft 365を取得するMicrosoft 365説明します。
+ms.openlocfilehash: 977ee360d91df0b15e25e86d052d852f9acafe6c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579688"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242326"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>管理センターの Microsoft 365 レポート - フォーム アクティビティ
+# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理センターのレポート - フォーム アクティビティ
 
 Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
   
@@ -44,7 +43,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
   
 ## <a name="interpret-the-forms-activity-report"></a>フォーム アクティビティ レポートの解釈
 
-[アクティビティ] タブを選択すると、フォーム レポートでアクティビティ **を表示** できます。<br/>![Microsoft 365 レポート - Microsoft Forms アクティビティ レポート。](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
+[アクティビティ] タブを選択すると、フォーム レポートでアクティビティ **を表示** できます。<br/>![Microsoft 365レポート - Microsoft Forms アクティビティ レポート。](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
 
 [列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![フォーム アクティビティ レポート - 列の選択](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
@@ -53,7 +52,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |アイテム|説明|
 |:-----|:-----|
 |**測定基準**|**定義**|
-|ユーザー名  <br/> |Microsoft Forms でアクティビティを実行したユーザーの電子メール アドレス。  <br/> |
+|Username  <br/> |Microsoft Forms でアクティビティを実行したユーザーの電子メール アドレス。  <br/> |
 |最終アクティビティ日 (UTC)  <br/> |選択した日付範囲に対してユーザーがフォーム アクティビティを実行した最新の日付。 特定の日付に発生したアクティビティを表示するには、直接グラフ内の日付を選択します。<br/><br/>これにより、テーブルをフィルター処理して、その特定の日にアクティビティを実行したユーザーのファイル アクティビティ データのみを表示します。  <br/> |
 |作成されたフォームの数  <br/> |ユーザーが作成したフォームの数。   <br/> |
 |応答されたフォームの数  <br/> |ユーザーが応答を送信したフォームの数。|

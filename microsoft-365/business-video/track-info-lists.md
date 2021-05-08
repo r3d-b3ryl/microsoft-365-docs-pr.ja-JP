@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Microsoft リストについて説明します。 Microsoft リストを使用すると、顧客の種類、注文のフルフィルメント、注文の進捗状況など、顧客の詳細を追跡できます。
-ms.openlocfilehash: 79094c6b039e62ba88720424985814354bd299b4
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509431"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245194"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>Microsoft リストを使用してビジネス情報を追跡する
 
@@ -29,13 +29,13 @@ ms.locfileid: "50509431"
 
 ## <a name="try-it"></a>試してみる
 
-Microsoft リストを使用して情報を追跡し、作業を整理します。 ゼロから、Excel から、既存のリストから、またはテンプレートからリストを作成します。 Microsoft 365、Microsoft Teams、または SharePoint から開始できます。
+Microsoft リストを使用して情報を追跡し、作業を整理します。 リストを最初から、Excel、既存のリストから、またはテンプレートから作成します。 ユーザーは、Microsoft 365、Microsoft Teams、またはSharePoint。
 
 ### <a name="add-an-item-to-the-list"></a>リストにアイテムを追加する
 
 1. [**新規**]を選択します。
 1. 注文に関する詳細を追加します。
-1. **[保存]** を選択します。
+1. [**保存**] を選択します。
 
 ### <a name="share-the-list-with-partners-or-coworkers"></a>パートナーまたは同僚とリストを共有する
 
@@ -72,6 +72,6 @@ Microsoft リストを使用して情報を追跡し、作業を整理します�
 
 - アイテムをダブルクリックして開き、注文の進行状況を更新します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-content"></a>関連コンテンツ
 
 [リスト アプリからリストを作成する](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)

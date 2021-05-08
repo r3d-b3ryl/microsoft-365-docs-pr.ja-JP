@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ea37ad4302eedf7d43e3ad03e94357a146c2216c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861061"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245578"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
@@ -44,7 +44,7 @@ Defender for Endpoint サービスは常に更新され、新機能の強化と�
 Defender for Endpoint プレビュー リリースの新機能について説明し、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみてください。
 
 >[!TIP]
->次の URL をフィード リーダーにコピーして貼り付け、このページが更新された場合に通知を受け取ります。 `https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+preview+features%22&locale=en-us`
+>次の URL をフィード リーダーにコピーして貼り付け、このページが更新された場合に通知を受け取ります。 `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 一般に利用可能な新機能の詳細については、「Defender for Endpoint の新機能 [」を参照してください](whats-new-in-microsoft-defender-atp.md)。
 
@@ -54,7 +54,7 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
-1. ナビゲーション ウィンドウで、[設定] [高度 **な**  >  **機能] [**  >  **プレビュー機能] を選択します**。
+1. ナビゲーション ウィンドウで、[高度な **機能設定**  >  **プレビュー機能]**  >  **を選択します**。
 
 2. [オン] と [オフ]**の間で設定を****切り替え**、[基本設定の保存]**を選択します**。
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765001"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245962"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>デバイスの検出に関するよく寄せられる質問
 
@@ -49,13 +49,17 @@ ms.locfileid: "51765001"
  このモードでは、Microsoft Defender for Endpoint にオンボードされたエンドポイントは、ネットワーク内の監視されたデバイスをアクティブにプローブして、収集されたデータを強化できます (ネットワーク トラフィックの量はごくわずかです)。 このモードは、信頼性の高い一貫性のあるデバイス インベントリを構築する場合に強くお勧めします。 このモードを無効にし、[基本検出モード] を選択すると、ネットワーク内の管理されていないエンドポイントの表示が制限される可能性があります。
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>標準検出を実行するデバイスを制御できますか?
- Standard Discovery の実行に使用されるデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在は Windows 10 デバイスのみ) で Standard Discovery を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。 この場合、他のすべてのデバイスは基本検出のみを実行するように構成されます。 構成は、[デバイスの検出設定] ページで使用できます。
+ Standard Discovery の実行に使用されるデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在の Windows 10 デバイスのみ) で Standard Discovery を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。 この場合、他のすべてのデバイスは基本検出のみを実行するように構成されます。 構成は、[デバイスの検出設定] ページで使用できます。
+
+## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>管理されていないデバイスをデバイス インベントリ リストから除外できますか?
+はい、フィルターを適用すると、デバイス インベントリ リストから管理されていないデバイスを除外できます。 また、API クエリのオンボーディング状態列を使用して、管理されていないデバイスをフィルター処理することもできます。 
+
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>検出を実行できるオンボード デバイス
- Windows 10 バージョン 1809 以降で実行されているオンボード デバイスは、検出を実行できます。
+ バージョン 1809 以降Windows 10オンボーディングされたデバイスは、検出を実行できます。
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>オンボード デバイスがホーム ネットワークまたはパブリック アクセス ポイントに接続されている場合は、どうなるでしょうか。
- 検出エンジンは、企業ネットワークで受信されるネットワーク イベントと企業ネットワーク外のネットワーク イベントを区別します。 すべてのテナントのクライアント間でネットワーク識別子を関連付け、プライベート ネットワークから受信したイベントと企業ネットワークの間でイベントが区別されます。 プライベート ネットワーク デバイスはインベントリに表示され、アクティブにプローブされません。
+ 検出エンジンは、企業ネットワークで受信されるネットワーク イベントと企業ネットワーク外のネットワーク イベントを区別します。 すべてのテナントのクライアント間でネットワーク識別子を関連付け、プライベート ネットワークから受信したイベントと企業ネットワークの間でイベントが区別されます。 たとえば、ネットワーク内のデバイスの大部分が、同じ既定のゲートウェイと DHCP サーバー アドレスを持つ同じネットワーク名に接続されていることを報告する場合、このネットワークは企業ネットワークである可能性が高いとみなされます。 プライベート ネットワーク デバイスはインベントリに表示され、アクティブにプローブされません。
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>キャプチャと分析を行うプロトコルは何ですか?
  既定では、Windows 10 バージョン 1809 以降で実行されているオンボード デバイスはすべて、ARP、CDP、DHCP、DHCPv6、IP (ヘッダー)、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (ヘッダー)、UDP (ヘッダー)、WSD のプロトコルをキャプチャおよび分析しています。

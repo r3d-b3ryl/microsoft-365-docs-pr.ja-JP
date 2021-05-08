@@ -19,12 +19,12 @@ description: セキュリティ コンプライアンス センターでエク�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6bea6cb60579263515d21e159c4032fe4281cad
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 810b5c99aa239f295fd930c1d13a6a817012b18b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024183"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245566"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -32,13 +32,13 @@ ms.locfileid: "52024183"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-組織に microsoft [Defender for Office 365](defender-for-office-365.md)がある場合、必要 [](#required-licenses-and-permissions)なアクセス許可がある場合は、エクスプローラーまたはリアルタイム検出 **(以前** のリアルタイム レポート *-* 新機能 [](#new-features-in-threat-explorer-and-real-time-detections)を参照してください)。 セキュリティ コンプライアンス センター&に移動し、[脅威の管理] に移動し、[**エクスプローラー**  ] または [リアルタイム検出 **] を選択します**。
+組織が microsoft [Defender for Office 365](defender-for-office-365.md)を持ち、必要 [](#required-licenses-and-permissions)なアクセス許可を持っている場合は、エクスプローラーまたはリアルタイム検出 **(以前** のリアルタイム レポート *-* 新機能を参照してください)。 [](#new-features-in-threat-explorer-and-real-time-detections) セキュリティ コンプライアンス センター&に移動し、[脅威の管理] に移動し、[**エクスプローラー**  ] または [リアルタイム検出 **] を選択します**。
 
 <br>
 
 ****
 
-|Microsoft Defender for Office 365 プラン 2 では、次の情報が表示されます。|Microsoft Defender for Office 365 プラン 1 では、次の情報が表示されます。|
+|Microsoft Defender for Office 365プラン 2 では、次の情報が表示されます。|Microsoft Defender for Office 365プラン 1 では、次の情報が表示されます。|
 |---|---|
 |![脅威エクスプローラー](../../media/threatmgmt-explorer.png)|![リアルタイムの検出](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -49,9 +49,9 @@ ms.locfileid: "52024183"
 
 このレポートでは、次の機能を使用できます。
 
-- [Microsoft 365 のセキュリティ機能によって検出されたマルウェアを確認する](#see-malware-detected-in-email-by-technology)
+- [セキュリティ機能によって検出されたマルウェアMicrosoft 365表示する](#see-malware-detected-in-email-by-technology)
 - [フィッシング URL を表示し、[評決データ] をクリックする](#view-phishing-url-and-click-verdict-data)
-- [エクスプローラーでビューから自動調査と](#start-automated-investigation-and-response) 応答プロセスを開始する (Defender for Office 365 プラン 2 のみ)
+- [エクスプローラーでビューから自動調査と](#start-automated-investigation-and-response)応答プロセスを開始する (Defender for Office 365プラン 2 のみ)
 - [悪意のあるメールの調査など](#more-ways-to-use-explorer-and-real-time-detections)
 
 ## <a name="improvements-to-threat-hunting-experience"></a>脅威ハンティング エクスペリエンスの改善
@@ -81,9 +81,9 @@ ms.locfileid: "52024183"
 ### <a name="tags-in-threat-explorer"></a>脅威エクスプローラーのタグ
 
 > [!NOTE]
-> ユーザー タグ機能は [ *プレビュー] で*、すべてのユーザーが利用できるとは言え、変更される可能性があります。 リリース スケジュールの詳細については、Microsoft 365 ロードマップを参照してください。
+> ユーザー タグ機能は [ *プレビュー] で*、すべてのユーザーが利用できるとは言え、変更される可能性があります。 リリース スケジュールの詳細については、次のロードマップMicrosoft 365してください。
 
-ユーザー タグは、Microsoft Defender のユーザーの特定のグループを 365 Officeします。 ライセンスや構成などのタグの詳細については、「User tags」 [を参照してください](user-tags.md)。
+ユーザー タグは、Microsoft Defender のユーザーの特定のグループを特定Office 365。 ライセンスや構成などのタグの詳細については、「User tags」 [を参照してください](user-tags.md)。
 
 Threat Explorer では、次のエクスペリエンスでユーザー タグに関する情報を確認できます。
 
@@ -179,17 +179,14 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 *電子メールの* 配信後に追加のアクションが適用された。 *ZAP、* 手動修復 *(ソフト* 削除などの管理者が実行したアクション)、動的配信、および再処理 *(さかのぼ* って良好と検出された電子メールの場合) が含まれます。
 
 > [!NOTE]
->
-> - 保留中の変更の一環として、[配信アクション] フィルターに現在表示されている "削除済み" の値は削除されます。 追加アクションを通じて ZAP の試行ですべてのメールを **検索する方法があります**。
->
-> - 検出テクノロジと追加アクション (特に ZAP シナリオの場合) には、新しいフィールドと値が追加されます。  既存の保存済みクエリと追跡されたクエリを評価して、新しい値を使用する必要があります。
+> 保留中の変更の一環として、[配信アクション] フィルターに現在表示されている "削除済み" の値は削除されます。 追加アクションを通じて ZAP の試行ですべてのメールを **検索する方法があります**。
 
 > [!div class="mx-imgBorder"]
 > ![エクスプローラーのその他のアクション](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>システムオーバーライド
 
-*システムオーバーライドを使用* すると、メッセージの意図した配信場所に対して例外を作成できます。 システムによって提供される配信場所は、フィルター スタックによって識別される脅威や他の検出に基づいて上書きします。 システムの上書きは、テナントまたはユーザー ポリシーを使用して設定して、ポリシーによって提案されているメッセージを配信できます。 オーバーライドは、ユーザーが設定した過剰に広範な差出人セーフ 送信者ポリシーなど、構成のギャップによる悪意のあるメッセージの意図しない配信を識別できます。 これらのオーバーライド値には、次の値を指定できます。
+*システムオーバーライドを使用* すると、メッセージの意図した配信場所に対して例外を作成できます。 システムによって提供される配信場所は、フィルター スタックによって識別される脅威や他の検出に基づいて上書きします。 システムの上書きは、テナントまたはユーザー ポリシーを使用して設定して、ポリシーによって提案されているメッセージを配信できます。 上書きでは、ユーザーが設定した送信者ポリシーセットの範囲が広いなど、構成のギャップによる悪意のあるメッセージの意図しない配信セーフ識別できます。 これらのオーバーライド値には、次の値を指定できます。
 
 - ユーザー ポリシーで許可: ユーザーがメールボックス レベルでポリシーを作成し、ドメインまたは送信者を許可します。
 
@@ -212,7 +209,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 - URL フライアウトの [クリック] セクションに、クリックされた完全な URL  (URL の一部であるクエリ パラメーターを含む) を表示します。 現在、URL ドメインとパスはタイトル バーに表示されます。 その情報を拡張して、完全な URL を表示します。
 
-- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 例:
+- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 次に例を示します。
   - URL、URL ドメイン、URL ドメイン、および URL の [ドメイン] および [パス] フィルター フィールドで、プレフィックスの付きまたは指定 `http://` **なしで** 検索します。   検索は同じ結果を表示する必要があります。
   - URL でプレフィックス `https://` を検索 **します**。 値を指定しない場合、プレフィックス `http://` が使用されます。
   - `/` URL パス **、URL** ドメイン **、URL** ドメイン、およびパス フィールドの先頭と末尾 **で無視** されます。 `/` URL フィールドの末尾 **は無視** されます。
@@ -285,9 +282,9 @@ ZAP URL シグナルは、通常、メールがフィッシングとして識別
 > [!div class="mx-imgBorder"]
 > ![上位の対象ユーザー](../../media/Top_Targeted_Users.png)
 
-### <a name="exchange-transport-rules"></a>Exchange トランスポート ルール
+### <a name="exchange-transport-rules"></a>Exchangeトランスポート ルール
 
-データエンリッチメントの一環として、メッセージに適用されたさまざまな Exchange トランスポート ルール (ETR) を確認できます。 この情報は、[メール] グリッド ビューで使用できます。 表示するには、グリッドで **[列のオプション** ] を選択し、列オプションから **[Exchange トランスポート ルール** の追加] を選択します。 また、メールの [詳細] **フライ** アウトにも表示されます。
+データエンリッチメントの一環として、メッセージに適用Exchangeさまざまなトランスポート ルール (ETR) を表示できます。 この情報は、[メール] グリッド ビューで使用できます。 表示するには、グリッドで **[列のオプション**] を選択し、列 **Exchangeから**[トランスポート ルールの追加] を選択します。 また、メールの [詳細] **フライ** アウトにも表示されます。
 
 GUID と、メッセージに適用されたトランスポート ルールの名前の両方を確認できます。 トランスポート ルールの名前を使用してメッセージを検索できます。 これは"Contains" 検索で、部分的な検索も実行できます。
 
@@ -296,7 +293,7 @@ GUID と、メッセージに適用されたトランスポート ルールの�
 >
 > - EXO のみ - データ損失防止: すべて
 > - EXO のみ - O365SupportViewConfig: All
-> - Microsoft Azure Active Directory または EXO - セキュリティ管理者: All
+> - Microsoft Azure Active Directoryまたは EXO - セキュリティ管理者: すべて
 > - AAD または EXO - セキュリティ リーダー: All
 > - EXO のみ - トランスポート ルール: All
 > - EXO のみ - View-Only構成: すべて
@@ -304,11 +301,11 @@ GUID と、メッセージに適用されたトランスポート ルールの�
 > 電子メール グリッド、詳細フライアウト、およびエクスポート CSV 内で、ETRs には、次に示すように名前/GUID が表示されます。
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange トランスポート ルール](../../media/ETR_Details.png)
+> > ![Exchangeトランスポート ルール](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>受信コネクタ
 
-コネクタは、Microsoft 365 または 365 組織との間で電子メールが流れる方法をカスタマイズするOfficeです。 この機能を使用すると、セキュリティ制限またはコントロールを適用できます。 Threat Explorer 内で、電子メールに関連するコネクタを表示し、コネクタ名を使用して電子メールを検索できます。
+コネクタは、電子メールが組織または組織との間でどのように流れるMicrosoft 365のOffice 365です。 この機能を使用すると、セキュリティ制限またはコントロールを適用できます。 Threat Explorer 内で、電子メールに関連するコネクタを表示し、コネクタ名を使用して電子メールを検索できます。
 
 コネクタの検索は、実際には "contains" で、部分的なキーワード検索も機能する必要があります。 メイン グリッド ビュー、詳細フライアウト、およびエクスポート CSV 内で、コネクタは次のように Name/GUID 形式で表示されます。
 
@@ -375,7 +372,7 @@ GUID と、メッセージに適用されたトランスポート ルールの�
 
 |配信|迷惑メール|Blocked|置換|
 |---|---|---|---|
-|メールはユーザーの受信トレイまたはフォルダーに配信され、ユーザーはメールにアクセスできます。|電子メールはユーザーの迷惑メールまたは削除済みフォルダーに送信され、ユーザーはアクセスできます。|検疫されたメール、失敗したメール、または削除されたメール。 これらのメールには、ユーザーがアクセスできません。|メールには、悪意のある添付ファイルが .txt ファイルに置き換え、添付ファイルが悪意のある状態に置き換えられた。|
+|メールはユーザーの受信トレイまたはフォルダーに配信され、ユーザーはメールにアクセスできます。|電子メールはユーザーの迷惑メールまたは削除済みフォルダーに送信され、ユーザーはアクセスできます。|検疫されたメール、失敗したメール、または削除されたメール。 これらのメールには、ユーザーがアクセスできません。|電子メールには、悪意のある添付ファイル.txt悪意のあるファイルに置き換えがありました。|
 |
 
 ユーザーが表示できる機能と表示できない機能を次に示します。
@@ -404,15 +401,15 @@ GUID と、メッセージに適用されたトランスポート ルールの�
 
 メール **タイムラインは、** 管理者の検索エクスペリエンスを向上させる新しいエクスプローラー機能です。 イベントの理解を試みるさまざまな場所のチェックに費やされる時間を削減します。 電子メールが到着すると同時に複数のイベントが発生または近い場合、それらのイベントはタイムライン ビューに表示されます。 メールの配信後に発生する一部のイベントは、[特別なアクション] **列にキャプチャ** されます。 管理者は、タイムラインの情報と、配信後のメールに対して実行される特別なアクションを組み合わせて、ポリシーの動作、メールが最終的にルーティングされた場所、場合によっては最終的な評価の結果を把握できます。
 
-詳細については [、「365](investigate-malicious-email-that-was-delivered.md)で配信された悪意のある電子メールの調査と修復Office参照してください。
+詳細については、「ネットワークで配信された悪意のある電子メールを調査して修復[する」を参照](investigate-malicious-email-that-was-delivered.md)Office 365。
 
 ### <a name="export-url-click-data"></a>URL クリック データのエクスポート
 
-URL クリックのレポートを Microsoft Excel にエクスポートして、ネットワーク メッセージ **ID** を表示し、[評決] をクリックすると、URL クリック トラフィックの発生場所を説明できます。 動作方法は次のとおりです。 [脅威の管理] Office 365 クイック起動バーで、次のチェーンに従います。
+URL クリックのレポートを Microsoft Excelにエクスポートして、ネットワーク メッセージ **ID** を表示し、[評決] をクリックし、URL クリック トラフィックの発生場所を説明できます。 動作方法は次のとおりです。 [クイック起動バーの脅威Office 365で、次のチェーンに従います。
 
 **エクスプローラー** \>**フィッシングの表示** \>**クリック数** \>**トップ URL または** **URL トップ クリックは** \> 、任意のレコードを選択して URL フライアウトを開きます。
 
-リストで URL を選択すると、フライアウト パネルに新しい **[** エクスポート] ボタンが表示されます。 レポートを簡単にするために、このボタンを使用して Excel スプレッドシートにデータを移動します。
+リストで URL を選択すると、フライアウト パネルに新しい **[** エクスポート] ボタンが表示されます。 レポートを簡単にするために、このボタンを使用して、Excelスプレッドシートにデータを移動します。
 
 リアルタイム検出レポートで同じ場所に移動するには、次のパスに従います。
 
@@ -426,7 +423,7 @@ URL クリックのレポートを Microsoft Excel にエクスポートして�
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによって電子メールで検出されたマルウェアを確認する
 
-Microsoft 365 テクノロジで並べ替えた電子メールでマルウェアが検出されたとします。 これを行うには、エクスプローラーの [[電子>マルウェア](threat-explorer-views.md#email--malware) ] ビュー (またはリアルタイム検出) を使用します。
+電子メールで検出されたマルウェアが、電子メール テクノロジによって並べ替Microsoft 365します。 これを行うには、エクスプローラーの [[電子>マルウェア](threat-explorer-views.md#email--malware) ] ビュー (またはリアルタイム検出) を使用します。
 
 1. セキュリティ コンプライアンス センター ( &) で <https://protection.office.com> 、[脅威 **管理** \> **エクスプローラー** ] (または [ **リアルタイムの検出] ) を選択します**。 (この例では、エクスプローラーを使用します)。
 
@@ -451,7 +448,7 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>フィッシング URL を表示し、[評決データ] をクリックする
 
-許可、ブロック、およびオーバーライドされた URL の一覧を含む、メール内の URL を介したフィッシング詐欺の試行を確認するとします。 クリックされた URL を識別するには、 [セーフ リンクを構成](safe-links.md) する必要があります。 クリック時の保護とセーフ[](set-up-safe-links-policies.md)リンクによるクリックの評決のログ記録に対して、セーフ リンク ポリシーを設定してください。
+許可、ブロック、およびオーバーライドされた URL の一覧を含む、メール内の URL を介したフィッシング詐欺の試行を確認するとします。 クリックされた URL を識別するには、セーフ[リンクを](safe-links.md)構成する必要があります。 [リンク] でクリック[セーフの](set-up-safe-links-policies.md)保護とログ記録を行う場合は、必ずリンク ポリシーをセーフしてください。
 
 メッセージ内のフィッシング URL を確認し、フィッシング メッセージ内の URL[  >  ](threat-explorer-views.md#email--phish)をクリックするには、エクスプローラーまたはリアルタイム検出の [メール フィッシング] ビューを使用します。
 
@@ -473,7 +470,7 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
 
    - **上位 URL は** 、フィルター処理したメッセージ内の URL であり、メール配信アクションは URL ごとにカウントされます。 [フィッシング メール] ビューでは、通常、この一覧には正当な URL が含まれる。 攻撃者は、メッセージに良い URL と悪い URL を組み合わせ、配信を試みているが、悪意のあるリンクをより面白く見せている。 URL のテーブルはメールの総数で並べ替えされますが、この列は非表示に設定され、ビューが簡略化されます。
 
-   - **トップ クリックは** 、クリックされた安全なリンクでラップされた URL で、クリック総数で並べ替えされます。 ビューを簡略化するために、この列も表示されません。 列別の総数は、クリックされた URL ごとに [安全なリンク] クリックの評決カウントを示します。 [フィッシング メール] ビューでは、通常、疑わしい URL または悪意のある URL です。 ただし、このビューには、脅威ではないがフィッシング メッセージに含まれる URL が含まれる可能性があります。 ラップされていないリンクの URL クリックはここに表示されません。
+   - **トップ クリックは**、クリックセーフクリック数で並べ替えたリンクでラップされた URL の一覧です。 ビューを簡略化するために、この列も表示されません。 列別の合計カウントは、クリックセーフ URL の [リンク] クリックの評決カウントを示します。 [フィッシング メール] ビューでは、通常、疑わしい URL または悪意のある URL です。 ただし、このビューには、脅威ではないがフィッシング メッセージに含まれる URL が含まれる可能性があります。 ラップされていないリンクの URL クリックはここに表示されません。
 
    2 つの URL テーブルには、配信アクションと場所別のフィッシングメール メッセージの上位 URL が表示されます。 この表には、警告にもかかわらずブロックまたはアクセスされた URL クリックが表示されます。そのため、ユーザーに表示された潜在的な不良リンクと、ユーザーがクリックした可能性のあるリンクを確認できます。 ここから、さらに分析を実行できます。 たとえば、グラフの下には、組織の環境でブロックされた電子メール メッセージの上位 URL が表示されます。
 
@@ -516,12 +513,12 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
    > [!div class="mx-imgBorder"]
    > ![ユーザーが報告したフィッシング](../../media/EmailUserReportedReportType.png)
 
-レポートが更新され、組織内のユーザーがフィッシング詐欺の試みとして報告した電子メール メッセージに関するデータが表示されます。 この情報を使用して、さらに分析を行い、必要に応じて Microsoft Defender のフィッシング対策ポリシーを [365](configure-atp-anti-phishing-policies.md)用に調整Officeできます。
+レポートが更新され、組織内のユーザーがフィッシング詐欺の試みとして報告した電子メール メッセージに関するデータが表示されます。 この情報を使用して、詳細な分析を行い、必要に応じて[Microsoft Defender](configure-atp-anti-phishing-policies.md)でフィッシング対策ポリシーを調整Office 365。
 
 ## <a name="start-automated-investigation-and-response"></a>自動調査と対応を開始する
 
 > [!NOTE]
-> Microsoft Defender では、365 プラン 2 および *365* *E5* のOfficeの自動調査と対応Office利用できます。
+> 自動調査と対応機能は *、Microsoft Defender* でプラン 2 および *E5* Office 365でOffice 365できます。
 
 [自動調査と対応により](automated-investigation-response-office.md) 、セキュリティ運用チームがサイバー攻撃の調査と軽減に費やした時間と労力を節約できます。 セキュリティ プレイブックをトリガーできるアラートの構成に加えて、エクスプローラーのビューから自動調査と応答プロセスを開始できます。 詳細については、「例 [: セキュリティ管理者がエクスプローラーから調査をトリガーする」を参照してください](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 
@@ -530,28 +527,28 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
 この記事で説明するシナリオに加えて、エクスプローラー (またはリアルタイム検出) で使用できるレポート オプションも多数用意されています。 次の記事をご覧ください。
 
 - [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
-- [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイルを表示する](./mdo-for-spo-odb-and-teams.md)
+- [オンライン、オンライン、SharePoint、およびOneDriveで検出された悪意のあるMicrosoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [脅威エクスプローラー (およびリアルタイム検出) のビューの概要を取得する](threat-explorer-views.md)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft 365 Defender での自動調査と対応](../defender/m365d-autoir.md)
+- [Defender での自動調査Microsoft 365対応](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
-エクスプローラーまたは [リアルタイム検出を使用するには、Office 365](defender-for-office-365.md) 用の Microsoft Defender が必要です。
+エクスプローラーまたは[リアルタイム検出を使用するにはOffice 365](defender-for-office-365.md) Microsoft Defender が必要です。
 
-- Explorer は Defender for Office 365 プラン 2 に含まれています。
-- リアルタイム検出レポートは、Defender for Office 365 プラン 1 に含まれています。
-- 365 用に Defender によって保護される必要があるすべてのユーザーにライセンスを割り当Officeします。 エクスプローラーとリアルタイム検出では、ライセンスを取得したユーザーの検出データが表示されます。
+- エクスプローラーは、Defender for Office 365プラン 2 に含まれています。
+- リアルタイム検出レポートは、Defender for Office 365プラン 1 に含まれています。
+- Defender によって保護される必要があるすべてのユーザーにライセンスを割り当てる計画をOffice 365。 エクスプローラーとリアルタイム検出では、ライセンスを取得したユーザーの検出データが表示されます。
 
 エクスプローラーまたはリアルタイム検出を表示および使用するには、セキュリティ管理者やセキュリティ リーダーに付与されたアクセス許可など、適切なアクセス許可が必要です。
 
 - セキュリティ コンプライアンス センター&、次のいずれかの役割が割り当てられている必要があります。
 
   - 組織の管理
-  - セキュリティ管理者 (これは Azure Active Directory 管理センター ( ) で割り当 <https://aad.portal.azure.com> てることができます。
+  - セキュリティ管理者 (この管理者は、管理者センター Azure Active Directory割り当てることができます ( <https://aad.portal.azure.com> )
   - セキュリティ閲覧者
 
-- Exchange Online の場合は、Exchange 管理センター ( ) または Exchange Online PowerShell で次のいずれかの役割が割り <https://admin.protection.outlook.com/ecp/> [当てられている必要があります](/powershell/exchange/exchange-online-powershell)。
+- たとえば、Exchange Online管理センター ( ) または PowerShell で割り当てられている次Exchange役割 <https://admin.protection.outlook.com/ecp/> [Exchange Onlineがあります](/powershell/exchange/exchange-online-powershell)。
 
   - 組織の管理
   - 表示専用組織の管理
@@ -565,10 +562,10 @@ Microsoft 365 テクノロジで並べ替えた電子メールでマルウェア
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出の違い
 
-- リアルタイム *検出レポートは* 、Defender で 365 プラン 1 Office使用できます。 *脅威エクスプローラー* は、Defender for Office 365 プラン 2 で利用できます。
+- リアルタイム *検出レポートは、Defender* でプラン 1 のOffice 365できます。 *脅威エクスプローラー* は、Defender for Office 365プラン 2 で利用できます。
 - リアルタイム検出レポートを使用すると、リアルタイムで検出を表示できます。 脅威エクスプローラーも同様にこれを実行しますが、特定の攻撃に関する追加の詳細も提供します。
 - すべての *電子メール ビュー* は脅威エクスプローラーで使用できますが、リアルタイム検出レポートでは使用できません。
-- 脅威エクスプローラーには、より多くのフィルター機能と使用可能なアクションが含まれています。 詳細については [、「Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 プラン」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 脅威エクスプローラーには、より多くのフィルター機能と使用可能なアクションが含まれています。 詳細については[、「Microsoft Defender for Office 365 サービスの説明:](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)Defender 全体の機能の可用性」を参照してください。Office 365してください。
 
 ## <a name="other-articles"></a>その他の記事
 

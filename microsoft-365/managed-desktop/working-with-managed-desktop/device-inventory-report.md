@@ -1,5 +1,5 @@
 ---
-title: デバイスインベントリレポート
+title: デバイス一覧レポート
 description: ''
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -9,37 +9,40 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0ae2952337c2b7dd6f056f637fdcf295776ab404
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 3ebbb4359e460c0e8ddd6d353ce70057ed352212
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46613064"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245338"
 ---
-# <a name="device-inventory-report"></a>デバイスインベントリレポート
+# <a name="device-inventory-report"></a>デバイス一覧レポート
 
-[**デバイス**] ビューで、[すべてを**エクスポート**] を選択して、次の情報を含むコンマ区切りファイルをダウンロードできます。
+[デバイス **] ビュー** で、[すべてエクスポート] タブ **を** 選択して、次の情報を含むコンマ区切りファイルをダウンロードできます。
 
 - シリアル番号
 - デバイス名
-- 最後にチェックインしたデバイス
+- Device Last check-in
 - 管理者
-- 製造
+- 製造元
 - モデル
-- HP-UX
+- OS
 - OS ライセンス
-- OS のバージョン
-- Ownership
+- OS バージョン
+- 所有権
 - 登録日
 - リング名
-- ストレージの容量 (GB)
-- 記憶域-合計 (GB)
-- ユーザー UPN による登録
+- Storage - GB で無料
+- Storage - GB の合計
+- ユーザー UPN によって登録される
 - 割り当てられたユーザー
 - 状態
-- 保存期間 (月数)
+- 年齢 (月)
 - プロファイル
-- ログインしているユーザー
+- ログインユーザー
+- TPM のバージョン
+- セキュア ブートが有効
+- プライマリ ディスクの種類
+- 物理メモリの合計 
 
-
-![デバイスの一覧と関連する詳細が表示されているデバイスビュー。 [アクティビティ]、[登録の状態] の順に選択して、上部のチェックボックスをオンにします。 その上に検索ボックスがあります。 新しいデバイスを登録し、ビューを更新し、エラーをエクスポートし、データをエクスポートするための上部のタブ。 ](../../media/mmd-devices-view.png)
+![[デバイス] ビューには、デバイスの一覧と関連する詳細が表示されます。 アクティビティ、登録状態のトップ 選択フィルターの近くのチェック ボックスをオンにします。 上記は検索ボックスです。 上部のタブで、新しいデバイスの登録、ビューの更新、エラーのエクスポート、データのエクスポートを行います。 ](../../media/mmd-devices-view.png)

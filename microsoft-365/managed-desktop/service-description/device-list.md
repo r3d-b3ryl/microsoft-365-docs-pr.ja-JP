@@ -1,6 +1,6 @@
 ---
-title: Microsoft Managed Desktop デバイス
-description: この記事では、Microsoft Managed Desktop で承認されたデバイスの仕様を示します。
+title: Microsoft マネージド デスクトップデバイス
+description: この記事では、デバイスが承認されたデバイスの仕様をMicrosoft マネージド デスクトップ。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -8,30 +8,35 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218666"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245938"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop デバイス 
+# <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップデバイス
 
-Microsoft Managed Desktop は、サービスに含まれるデバイスを定期的に評価します。 この記事では、現在サポートされている特定のデバイスの一覧を示します。 デバイス要件に関するより一般的なステートメントについては、「デバイス要件 [」を参照してください](device-requirements.md)。
+> [!NOTE]
+> Microsoft マネージド デスクトップリストからデバイス モデルを作成する必要がなくなりました。 2021 年 5 月 3 日現在、承認済み製造元のすべてのデバイスが、投稿されたハードウェアおよびソフトウェア要件を満たす必要があります。 このリストのデバイスは、引き続き安心して使用できます。 その他のデバイスについては、ビジネス Microsoft マネージド デスクトップ[サイトのショップWindows 10 Pro確認](https://www.microsoft.com/windowsforbusiness/view-all-devices)できます。 そのサイトで、[フィルター] 領域で [機能]を展開し、[デバイス] を選択して、推奨される **デバイスMicrosoft マネージド デスクトップ。** サービスに初めて特定のデバイス モデルを登録する予定がある場合は、そのモデルが期待するユーザー エクスペリエンスを提供するための例をテストする必要があります。 詳細については、「新しいデバイスの [検証」を参照してください](../get-started/validate-device.md)。
 
-Microsoft Managed Desktop の詳細については [、「Microsoft Managed Desktop のドキュメントとリソース」を参照してください](../index.yml)。 
+Microsoft マネージド デスクトップに含めるデバイスを定期的に評価します。 この記事では、現在サポートされている特定のデバイスの一覧を示します。 デバイス要件に関するより一般的なステートメントについては、「デバイス要件 [」を参照してください](device-requirements.md)。
+
+このドキュメントの詳細については、「Microsoft マネージド デスクトップドキュメント[Microsoft マネージド デスクトップリソース」を参照してください](../index.yml)。 
+
+[新しいデバイスの選択と検証](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Microsoft Managed Desktop に登録するには、デバイスが次のモデルの 1 つで、RAM、プロセッサ ファミリ、およびディスク領域の一覧に記載されている仕様を満たすか超過している必要があります。 
+Microsoft マネージド デスクトップに登録するには、デバイスが次のいずれかのモデルで、RAM、プロセッサ ファミリ、およびディスク領域の一覧に記載されている仕様を満たすか、超えている必要があります。 
 
-ここでのデバイスへのリンクは、参照専用です。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業して、正しい構成を選択してください。 この表では、アーカイブ *日付* は、これらのモデルが Microsoft Managed Desktop の短いサービス寿命の対象となる日付です。この日付以降にオンボードされたそのようなデバイスは、Microsoft Managed Desktop から完全な 3 年間のサポート期間を受け取る予定はありません。 アーカイブされたデバイスは [、Microsoft Managed Desktop アーカイブ デバイスにも表示されます](archived-device-list.md)。 *退職日* とは、このモデルが Microsoft マネージ デスクトップでサポートされなくなる日付です。 この日付で、このモデルのすべての登録済みデバイスは、いつ登録されたかに関係なく、Microsoft Managed Desktop から削除されます。
+ここでのデバイスへのリンクは、参照専用です。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業して、正しい構成を選択してください。 この表では、アーカイブ *日付* は、これらのモデルの寿命が短くなる日付Microsoft マネージド デスクトップです。この日付以降にオンボードされたそのようなデバイスは、Microsoft マネージド デスクトップ から完全な 3 年間のサポート期間を受け取Microsoft マネージド デスクトップ。 アーカイブされたデバイスは、アーカイブ済[みデバイスMicrosoft マネージド デスクトップ一覧表示されます](archived-device-list.md)。 *退職日* は、このモデルがサポートされなくなった日付をMicrosoft マネージド デスクトップです。 この日付に、このモデルのすべての登録デバイスは、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
 
 >[!NOTE]
 >デバイスは、いつでもこのテーブルに追加できますが、アーカイブまたは削除日に影響を与える変更については、90 日間の通知を提供します。 最近追加されたデバイスには、 とマークが付けられます **\*** 。
 
 
-## <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop Devices
+## <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップデバイス
 
 ### <a name="dell"></a>Dell
 
@@ -69,20 +74,20 @@ Microsoft Managed Desktop に登録するには、デバイスが次のモデル
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | なし | 2022 年 5 月 21 日 | 2027 年 5 月 21 日 |
 | [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB RAM | なし | 2022 年 5 月 21 日 | 2027 年 5 月 21 日 |
-| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | なし | 2022 年 10 月 12 日 | 2025 年 10 月 12 日 |
+| [Surface LaptopGo](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | なし | 2022 年 10 月 12 日 | 2025 年 10 月 12 日 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | なし | 2021 年 10 月 22 日 | 2024 年 10 月 22 日 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | なし | 2021 年 10 月 22 日 | 2024 年 10 月 22 日 |
 | **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | なし | 2022 年 1 月 15 日 | 2025 年 1 月 15 日 |
 
 さらに、デバイスは次の条件も満たしている必要があります。     
 
-- 特定の SKU がデバイス要件に一覧表示されている場合は、注文時に必ず使用してください。 これにより、デバイスが Microsoft Managed Desktop ソフトウェア要件に準拠します。 
-- Windows の初回実行エクスペリエンスが完了していない。
-- デバイス登録機能を使用して Microsoft Managed [Desktop に登録](../get-started/register-devices-self.md) する
+- 特定の SKU がデバイス要件に一覧表示されている場合は、注文時に必ず使用してください。 これにより、デバイスがソフトウェア要件に準拠Microsoft マネージド デスクトップします。 
+- 初回実行エクスペリエンスWindows完了していない。
+- デバイス登録機能をMicrosoft マネージド デスクトップデバイスに[登録](../get-started/register-devices-self.md)する
 
 >[!NOTE]
 >2.0 GHz 以上のプロセッサを搭載したデバイスは、次のアクティビティに関わるユーザーに優れたエクスペリエンスを提供します。
->- Teams でビデオ会議を使用する。 詳細については [、「Microsoft Teams のハードウェア要件」](/microsoftteams/hardware-requirements-for-the-teams-app) を参照してください。
+>- ビデオ会議とビデオ会議のTeams。 詳細[については、「ハードウェア要件」をMicrosoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app)参照してください。
 >-  複数の異なるワークロードに 1 つのデバイスを使用する。
 >- 複数のモニターを使用する。
 

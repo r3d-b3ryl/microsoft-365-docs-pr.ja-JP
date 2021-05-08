@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Microsoft Viva Learning (プレビュー) の学習コンテンツ ソースを管理センターで構成するMicrosoft 365説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1bbe65db9dee028f57849de8a5538c996c3e2a4
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: b2e6ab6306db9a5ac9d91226431e5876cc244499
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100975"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245422"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>管理センターで Microsoft Viva Learning (プレビュー) の学習コンテンツ ソースMicrosoft 365構成する
 
@@ -35,7 +35,7 @@ Microsoft 365 管理センターの管理者は、組織内の選択した個人
 > [!NOTE]
 >  ユーザーは、ブラウザーまたは埋め込みビューアーで、Microsoft 以外Pro LinkedIn Learning にサインインします。 この構成済みの学習は、組織と第三者の間の個別のライセンス、プライバシー、およびサービス条項の対象であり、ビバ ラーニング (プレビュー) の用語には適用されません。 この種類の学習を選択する前に、組織とユーザーに契約があることを確認してください。
 
-## <a name="assign-the-knowledge-admin-role-optional"></a>ナレッジ管理者の役割を割り当てる [オプション]
+## <a name="assign-the-knowledge-admin-role-optional"></a>ナレッジ管理者の役割を割り当てる (オプション)
 
 これらのタスクを実行するにはMicrosoft 365管理者である必要があります。
 
@@ -78,11 +78,11 @@ Viva Learning で学習コンテンツ ソースの設定を構成するには�
 
 1.  管理センターの左側のナビゲーションMicrosoft 365、[組織の設定]**設定**  >  **移動します**。
 
-2.  [組織の **設定] ページ** の [サービス] タブ **で** 、[学習アプリ (プレビュー) **] を選択します**。
+2.  [組織の **設定] ページ** の [サービス] **タブで** 、[ビバ ラーニング **(プレビュー) ] を選択します**。
 
      ![設定管理センターの [Microsoft 365] ページに、ラーニング アプリが一覧表示されます。](../media/learning/learning-sharepoint-configure1.png)
 
-3.  [ラーニング アプリ **(プレビュー)]** パネルで、組織用に構成する学習コンテンツ ソースを選択し、[保存] を **選択します**。
+3.  [ビバ **ラーニング (プレビュー)]** パネルで、組織用に構成する学習コンテンツ ソースを選択し、[保存] を **選択します**。
 
      ![コンテンツ ソースのオプションをMicrosoft 365管理センターの [学習] パネル。](../media/learning/learning-sharepoint-configure2.png)
 

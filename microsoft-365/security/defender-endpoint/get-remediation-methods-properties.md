@@ -1,7 +1,7 @@
 ---
 title: 修復アクティビティのメソッドとプロパティ
-description: API 応答には、テナントで作成&管理修復アクティビティに関する脅威が含まれる。 選択した修復タスクに対して、すべての修復アクティビティ、1 つの修復アクティビティ、または公開されているデバイスに関する情報を要求できます。
-keywords: apis、修復、修復 API、get、修復タスク、
+description: API 応答には、テナントで作成& 脆弱性の管理修復アクティビティの脅威が含まれる。 選択した修復タスクに対して、すべての修復アクティビティ、1 つの修復アクティビティ、または公開されているデバイスに関する情報を要求できます。
+keywords: apis、修復、修復 API、get、修復タスク、修復方法、修復プロパティ、
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f720d638ec469523a1d567dee9c01fa0974b0090
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 4c0ecd89c45ec2c91dc37f0c9cd0bfb868c0474e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061154"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245542"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>修復アクティビティのメソッドとプロパティ
 
@@ -39,15 +39,15 @@ ms.locfileid: "52061154"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-API 応答には、テナント [&された脆弱性管理](next-gen-threat-and-vuln-mgt.md)   修復アクティビティの脅威が含まれる。  
+API 応答には、テナント [& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)   された脅威と修復アクティビティが含まれる。  
 
 ## <a name="methods"></a>メソッド
 
 メソッド | データ型 | 説明
 :---|:---|:---
-[すべての修復アクティビティを一覧表示する](get-remediation-all-activities.md) | 調査コレクション | すべての修復アクティビティに関する情報を返します。
-[1 つの修復アクティビティの公開デバイスを一覧表示する](get-remediation-exposed-devices-activities.md) | 調査エンティティ | 指定した修復アクティビティの公開デバイスに関する情報を返します。
-[Id で 1 つの修復アクティビティを取得する](get-remediation-one-activity.md) | 調査エンティティ | 指定した修復アクティビティの情報を返します。
+[すべての修復作業を一覧表示する](get-remediation-all-activities.md) | 調査コレクション | すべての修復アクティビティに関する情報を返します。
+[1 つの修復アクティビティの暴露デバイスを一覧表示する](get-remediation-exposed-devices-activities.md) | 調査エンティティ | 指定した修復アクティビティの公開デバイスに関する情報を返します。
+[ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md) | 調査エンティティ | 指定した修復アクティビティの情報を返します。
 
 修復アクティビティの [詳細については、次の情報を参照してください](tvm-remediation.md)。
 
@@ -84,14 +84,14 @@ title | String | この修復アクティビティのタイトル
 type | String | 修復の種類
 vendorId | String | 関連ベンダー名
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [Id で 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
+- [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
 
-- [すべての修復アクティビティを一覧表示する](get-remediation-all-activities.md)
+- [すべての修復作業を一覧表示する](get-remediation-all-activities.md)
 
-- [1 つの修復アクティビティの公開デバイスを一覧表示する](get-remediation-exposed-devices-activities.md)
+- [1 つの修復アクティビティの暴露デバイスを一覧表示する](get-remediation-exposed-devices-activities.md)
 
-- [リスクベースの脅威と&管理](next-gen-threat-and-vuln-mgt.md)
+- [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 
 - [組織の脆弱性](tvm-weaknesses.md)

@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender での自動調査と対応
-description: Microsoft 365 Defender の自動調査および応答機能 (自己修復とも呼ばれる) の概要を確認する
+title: Defender での自動調査Microsoft 365対応
+description: Defender の自動調査および応答機能 (自己修復とも呼ばれる) の概要をMicrosoft 365する
 keywords: 自動化、調査、アラート、トリガー、アクション、修復、自己修復
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,21 +21,21 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 356d843420856c8e7ec4f00ff0f6f0781cfed6b5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591925"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245458"
 ---
-# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender での自動調査と対応
+# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Defender での自動調査Microsoft 365対応
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-組織で Microsoft [365 Defender を](microsoft-365-defender.md)使用している場合、悪意のあるアーティファクトや疑わしいアーティファクトが検出されると、セキュリティ運用チームは警告を受け取ります。 一見終わりのない脅威の流れを考えると、セキュリティ チームは多くの場合、アラートの量が多い場合に対処する上で課題に直面します。 幸いなことに、Microsoft 365 Defender には自動調査と修復 (AIR) 機能が含まれています。
+組織が Defender を使用している[Microsoft 365、](microsoft-365-defender.md)悪意のあるアーティファクトや疑わしいアーティファクトが検出されるたびに、セキュリティ運用チームが警告を受け取ります。 一見終わりのない脅威の流れを考えると、セキュリティ チームは多くの場合、アラートの量が多い場合に対処する上で課題に直面します。 幸いMicrosoft 365 Defender には、セキュリティ運用チームが脅威に効率的かつ効果的に対処するのに役立つ自動調査と修復 (AIR) 機能が含まれています。
 
 この記事では、AIR の概要を説明し、次の手順と追加のリソースへのリンクを含みます。
 
@@ -44,20 +44,20 @@ ms.locfileid: "51591925"
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>自動調査と自己修復の仕組み
 
-セキュリティアラートがトリガーされると、セキュリティ運用チームがこれらのアラートを確認し、組織を保護するための手順を実行する必要があります。 警告の優先順位付けと調査には、多くの時間がかかる場合があります。調査実行中に新しい警告が出されるような状況では、この傾向が特に強くなります。 セキュリティ運用チームは、監視および保護を必要とする脅威の膨大さに圧倒されてしまう可能性があります。 Microsoft 365 Defender では、自己修復機能を使用した自動調査と対応機能が役立ちます。
+セキュリティアラートがトリガーされると、セキュリティ運用チームがこれらのアラートを確認し、組織を保護するための手順を実行する必要があります。 警告の優先順位付けと調査には、多くの時間がかかる場合があります。調査実行中に新しい警告が出されるような状況では、この傾向が特に強くなります。 セキュリティ運用チームは、監視および保護を必要とする脅威の膨大さに圧倒されてしまう可能性があります。 自動調査と応答機能(自己修復機能付き)は、Defender Microsoft 365役立ちます。
 
 自己修復のしくみについては、次のビデオをご覧ください。 <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-Microsoft 365 Defender では、自己修復機能を備えた自動調査と応答は、デバイス、電子メール、コンテンツ、および id 間&機能します。
+Defender Microsoft 365、自己修復機能を使用した自動調査と応答は、デバイス、電子メール、コンテンツ、および id 間&機能します。
  
 > [!TIP]
-> この記事では、自動調査と対応のしくみについて説明します。 これらの機能を構成するには [、「Configure automated investigation and response capabilitis in Microsoft 365 Defender」を参照してください](m365d-configure-auto-investigation-response.md)。
+> この記事では、自動調査と対応のしくみについて説明します。 これらの機能を構成するには、「Defender で自動調査と応答機能を構成する」[をMicrosoft 365してください](m365d-configure-auto-investigation-response.md)。
 
 ## <a name="your-own-virtual-analyst"></a>独自の仮想アナリスト
 
-Tier 1 または Tier 2 のセキュリティ運用チームに仮想アナリストを持つことを想像してください。 仮想アナリストは、セキュリティ運用チームであれば実行するであろう脅威の調査と修復の最適な手順を模倣して実行します。 仮想アシスタントは、処理能力の制限なしに24時間年中無休で作業することが可能で、調査と脅威の修復を大量に処理することができます。 このような仮想アシスタントを使用すると、対応するまでの時間を大幅に短縮できます。その結果、セキュリティ運用チームでは、その他の重要な戦略的プロジェクトに取り組むための時間的余裕が生まれます。 このシナリオが SF のように聞こえる場合は、そうではありません。 このような仮想アナリストは、Microsoft 365 Defender スイートの一部であり、その名前は自動 *調査と応答です*。
+Imagine第 1 層または第 2 層のセキュリティ運用チームに仮想アナリストが含まれます。 仮想アナリストは、セキュリティ運用チームであれば実行するであろう脅威の調査と修復の最適な手順を模倣して実行します。 仮想アシスタントは、処理能力の制限なしに24時間年中無休で作業することが可能で、調査と脅威の修復を大量に処理することができます。 このような仮想アシスタントを使用すると、対応するまでの時間を大幅に短縮できます。その結果、セキュリティ運用チームでは、その他の重要な戦略的プロジェクトに取り組むための時間的余裕が生まれます。 このシナリオが SF のように聞こえる場合は、そうではありません。 このような仮想アナリストは、Defender Microsoft 365の一部であり、その名前は自動 *調査と応答です*。
 
 自動調査と対応機能により、セキュリティ運用チームは、セキュリティアラートやインシデントに対処する組織の能力を大幅に向上できます。 自動調査と対応により、調査と修復の処理コストを削減し、脅威保護スイートを有効に利用できます。 自動調査と対応機能は、次の方法でセキュリティ運用チームを支援します。
 
@@ -78,13 +78,13 @@ Tier 1 または Tier 2 のセキュリティ運用チームに仮想アナリ�
 - プロセスの停止。
 - デバイスの分離。
 - URL をブロックする。そして 
-- その他のアクション。 [(「Microsoft 365 Defender での修復アクション」を参照](m365d-remediation-actions.md)してください。
+- その他のアクション。 [(「Defender の修復アクションMicrosoft 365」を参照](m365d-remediation-actions.md)してください。
 
 組織の [自動調査](m365d-configure-auto-investigation-response.md) および対応機能の構成方法に応じて、修復アクションは自動的に実行するか、セキュリティ運用チームによる承認を受けた場合にのみ実行されます。 保留中か完了かのアクションはすべて、アクション センターに [一覧表示されます](m365d-action-center.md)。
 
 調査の実行中にその他の関連する警告が発生した場合は、それらの警告は調査が完了するまで調査に追加され続けます。 犯罪を起こしているエンティティが他の場所に表示される場合、自動化された調査はスコープを拡大してそのエンティティを含め、調査プロセスが繰り返されます。 
 
-Microsoft 365 Defender では、次の表にまとめると、各自動調査は、Microsoft Defender for Identity、Microsoft Defender for Endpoint、Defender for Office 365 の信号を相互に関連付けします。 
+次Microsoft 365表に示す Office 365 では、各自動調査は、Microsoft Defender for Identity、Microsoft Defender for Endpoint、Defender for Office 365 の信号を相互に関連付けします。 
 
 |エンティティ |脅威対策サービス  |
 |:---------|:---------|
@@ -92,7 +92,7 @@ Microsoft 365 Defender では、次の表にまとめると、各自動調査は
 |電子メール コンテンツ (ファイルと URL を含む電子メール メッセージ)     |[Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
-> すべてのアラートによって自動調査がトリガーされるのではなく、すべての調査によって自動修復アクションが発生する場合はそうではありません。組織の自動調査と対応の構成方法によって異なります。 「Microsoft [365 Defender で自動](m365d-configure-auto-investigation-response.md)調査と応答機能を構成する」を参照してください。
+> すべてのアラートによって自動調査がトリガーされるのではなく、すべての調査によって自動修復アクションが発生する場合はそうではありません。組織の自動調査と対応の構成方法によって異なります。 「Defender[で自動調査と応答機能を構成する」をMicrosoft 365してください](m365d-configure-auto-investigation-response.md)。
 
 ## <a name="viewing-a-list-of-investigations"></a>調査の一覧の表示
 
@@ -101,6 +101,6 @@ Microsoft 365 Defender では、次の表にまとめると、各自動調査は
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft 365 Defender での自動調査と対応の前提条件を参照してください。](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
+- [Defender の自動調査と対応の前提条件をMicrosoft 365する](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [組織の自動調査と対応を構成する](m365d-configure-auto-investigation-response.md)
 - [アクション センターの詳細](m365d-action-center.md)

@@ -1,6 +1,6 @@
 ---
 title: デバイスの要件
-description: Microsoft Managed Desktop で動作するデバイスの最小ハードウェア要件とソフトウェア要件の概要
+description: デバイスがデバイスで動作する最小ハードウェア要件とソフトウェア要件の概要Microsoft マネージド デスクトップ
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768892"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245794"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 
-Microsoft Managed Desktop は、サービスに含めるデバイス要件を定期的に評価します。 この記事では、Microsoft Managed Desktop を使用するためにデバイスが満たす必要があるハードウェア要件とソフトウェア要件について説明します。 これらの要件に基づいて、サービス[](device-list.md)での使用が既に承認されている特定のデバイスの一覧を確認できます。
+Microsoft マネージド デスクトップに含めるデバイス要件を定期的に評価します。 この記事では、デバイスがデバイスで動作するために満たす必要があるハードウェア要件とソフトウェア要件Microsoft マネージド デスクトップ。 これらの要件に基づいて、サービスでの使用が既に承認されている特定のデバイスの一覧を確認できます。 ビジネス デバイス サイトMicrosoft マネージド デスクトップ[のサイトWindows 10 Proフィルター](https://www.microsoft.com/windowsforbusiness/view-all-devices)
 
 > [!NOTE]
 > これらの要件は、いつでも変更できますが、ハードウェア要件の変更に関する 30 日間の通知を提供します。 最近変更された要件は、 でマークされます **\*** 。 
@@ -29,7 +29,7 @@ Microsoft Managed Desktop は、サービスに含めるデバイス要件を定
 
 ## <a name="minimum-requirements"></a>最小要件
 
-Microsoft Managed Desktop に登録するには、デバイスがこれらの要件のすべてを満たすか、または超える必要があります。
+デバイスは、これらの要件Microsoft マネージド デスクトップ以上の要件を満たす必要があります。
 
 ### <a name="manufacturer"></a>製造元
 
@@ -46,7 +46,7 @@ Microsoft Managed Desktop に登録するには、デバイスがこれらの要
 デバイスには、次のソフトウェアがプレインストールされている必要があります。
 
 - Windows 10 Enterprise、Pro、または Pro ワークステーション エディション
-- エンタープライズ向け Microsoft 365 Apps の 64 ビット バージョン 
+- 64 ビット バージョンの Microsoft 365 Apps for enterprise 
 - 適用可能なすべてのデバイス ドライバー
 
 
@@ -59,7 +59,7 @@ Microsoft Managed Desktop に登録するには、デバイスがこれらの要
 - 仮想化ベースのセキュリティが可能 
 - [BIOS でサポートされるハイパーバイザー](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) で保護されたコード整合性
 
-これらの機能とサービスが使用するテクノロジの詳細については [、「Microsoft Managed Desktop テクノロジ」を参照してください](../intro/technologies.md)。
+これらの機能とサービスが使用するテクノロジの詳細については[、「Microsoft マネージド デスクトップ」を参照してください](../intro/technologies.md)。
 
 > [!NOTE]
 > ARMプロセッサはサポートされていません。
@@ -70,13 +70,13 @@ Microsoft Managed Desktop に登録するには、デバイスがこれらの要
 - ブート ドライブの容量は 128 GB 以上である必要があります。
 - 内部デバイス メモリ (RAM) は 8 GB 以上である必要があります。
 
-デバイスが 2020 年 7 月 1 日以降に作成された場合は [、Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)をサポートするために、IR カメラ、指紋リーダー、または両方が必要です。
+デバイスが 2020 年 7 月 1 日より後に作成された場合は、IR カメラ、指紋リーダー、または両方を使用して、Windows Hello を[サポートする必要があります](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)。
 
 ## <a name="recommended-features"></a>推奨される機能
 
 次の機能を備えたデバイスを選択すると、ユーザーのエクスペリエンスが向上します。
 
-- Intel vPro-platform プロセッサまたは AMD Ryzen Pro プロセッサ
+- Intel vPro-platform プロセッサまたは AMD Ryzen Proプロセッサ
 - 容量が 256 GB 以上の SSD タイプのブート ドライブ
 - 16 GB 以上の内部デバイス メモリ (RAM)
 - モダン スタンバイのサポート

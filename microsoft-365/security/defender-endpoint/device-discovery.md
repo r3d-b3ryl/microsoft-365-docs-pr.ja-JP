@@ -1,6 +1,6 @@
 ---
 title: デバイス検出の概要
-description: Microsoft 365 Defender のエンドポイント検出を活用してネットワーク内の管理されていないデバイスを検索する方法について説明します。
+description: ネットワーク内の管理されていないデバイスを見つけるために、Microsoft 365 Defender でエンドポイントの検出を活用する方法について説明します。
 keywords: デバイスの検出、検出、パッシブ、プロアクティブ、ネットワーク、可視性、サーバー、ワークステーション、オンボード、管理されていないデバイス
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c549d5d2a7c30892a9272b4ac3e03cb8979bc1a5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764989"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245950"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -96,7 +96,8 @@ Microsoft Defender for Endpoint によって検出されたが、まだオンボ
 
 ![デバイス インベントリ ダッシュボードのイメージ](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
-
+> [!TIP]
+> フィルターをいつでも適用して、デバイス インベントリ リストから管理されていないデバイスを除外できます。 また、API クエリのオンボーディング状態列を使用して、管理されていないデバイスをフィルター処理することもできます。 
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>検出されたデバイスの脆弱性評価
 デバイスの脆弱性とリスク、およびネットワーク内で検出された他の管理されていないデバイスは、"セキュリティ推奨事項" の下にある現在の TVM フローの一部であり、ポータル全体のエンティティ ページに表示されます。 "SSH" 関連のセキュリティ推奨事項を検索して、管理されていないデバイスと管理対象デバイスに関連する SSH の脆弱性を検索します。 
@@ -131,7 +132,7 @@ DeviceNetworkEvents
 ```
 
 
-## <a name="changed-behaviour"></a>変更された動作
+## <a name="changed-behavior"></a>変更された動作
 次のセクションでは、この機能が有効になっているときに Microsoft Defender for Endpoint または Microsoft 365 セキュリティ センターで確認する変更点を示します。 
  
 1.  Microsoft Defender to Endpoint にオンボードされていないデバイスは、デバイス インベントリ、高度なハンティング、API クエリに表示される必要があります。 これにより、クエリ結果のサイズが大幅に増加する可能性があります。 
@@ -144,6 +145,6 @@ DeviceNetworkEvents
 
 
 
-## <a name="next-steps"></a>次のステップ
-- [デバイスの検出を構成する](configure-device-discovery.md)
+## <a name="next-steps"></a>次の手順
+- [デバイス検出の構成](configure-device-discovery.md)
 - [デバイスの検出に関するよくある質問](device-discovery-faq.md)

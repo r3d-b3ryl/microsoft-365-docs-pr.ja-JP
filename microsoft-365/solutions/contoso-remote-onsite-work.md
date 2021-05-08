@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso Corporation が COVID-19 パンデミックに対応し、リモートおよびオンサイト作業用のソフトウェア インストールと更新インフラストラクチャを設計した方法を理解します。
-ms.openlocfilehash: 0bded43f03dd529ffdf463818a93af70e10eed89
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 0bc7bc0e457b51e2f65337e355bcf9fced52274d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028982"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245446"
 ---
 # <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contoso 社の COVID-19 応答とリモートおよびオンサイト作業のサポート
 
@@ -27,17 +27,17 @@ Contoso 社は、常にリモート ワーカーをサポートし、パリ本�
 
 ## <a name="contosos-response-to-covid-19"></a>COVID-19 に対する Contoso の応答
 
-COVID-19 パンデミックが始め、突然、不可欠な労働者を含むすべてがリモート ワーカーでした。 Contoso 社は、従業員を自宅から仕事に移行し、Microsoft 365 クラウド サービスを使用してオンプレミスのリソースへのリモート アクセスとオンラインを通じて主要なアクティビティを実施することで対応しました。
+COVID-19 パンデミックが始め、突然、不可欠な労働者を含むすべてがリモート ワーカーでした。 Contoso 社は、従業員を自宅から仕事に移行し、オンプレミスのリソースへのリモート アクセスとクラウド サービスを使用したオンラインによる主要なアクティビティMicrosoft 365しました。
 
 Contoso 社は、既にリモートワークフォースの 25% をサポートするためにパリ本社オフィスにリモート アクセス VPN サーバーを持っていたが、従業員の 90% をサポートするリモート アクセス容量を拡大するために迅速に移行しました。 Contoso 社は、リモート ワーカーが Contoso イントラネットへのアクセスに地域的に近いエントリ ポイントを使用するために、各サテライト オフィスにリモート アクセス VPN サーバーを展開しました。
 
-Contoso 社は、スプリット トンネリング用のラップトップ、タブレット、およびスマートフォンにインストールされている VPN クライアントの構成を更新し、Office 365 エンドポイントのオプティマイズ セットのトラフィックが VPN 接続をバイパスし、インターネット上で直接送信された。 詳細については、「VPN スプリット トン [ネリングを使用Office 365](../enterprise/microsoft-365-vpn-split-tunnel.md)接続を最適化する」を参照してください。
+Contoso 社は、スプリット トンネリング用のノート PC、タブレット、スマートフォンにインストールされている VPN クライアントの構成を更新し、Office 365 エンドポイントのオプティマイズ セットのトラフィックが VPN 接続をバイパスし、インターネット上で直接送信されました。 詳細については、「VPN スプリット トン[ネリングを使用Office 365ユーザーの接続を最適化する」を参照してください](../enterprise/microsoft-365-vpn-split-tunnel.md)。
 
 パリ本社と各サテライト オフィスに VPN デバイスをインストールした結果の構成を次に示します。 
 
 ![Contoso 社の VPN インフラストラクチャ](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
-インストールされた VPN クライアントを持つリモート ワーカーは、DNS を使用して地域に最も近いオフィスを検索し、そこにインストールされている VPN デバイスに接続します。 分割トンネリングを使用すると、Microsoft 365 Optimize エンドポイントへのトラフィックは、地域的に最も近い Microsoft 365 ネットワークの場所に直接送信されます。 その他のすべてのトラフィックは、VPN 接続を通して VPN デバイスに送信されます。
+インストールされた VPN クライアントを持つリモート ワーカーは、DNS を使用して地域に最も近いオフィスを検索し、そこにインストールされている VPN デバイスに接続します。 スプリット トンネリングを使用すると、オプティマイズ エンドポイントMicrosoft 365へのトラフィックは、ネットワークの場所に最も近い地域にMicrosoft 365されます。 その他のすべてのトラフィックは、VPN 接続を通して VPN デバイスに送信されます。
 
 ## <a name="contosos-support-for-remote-and-onsite-work"></a>Contoso のリモート作業とオンサイト作業のサポート
 
@@ -47,7 +47,7 @@ Contoso 社は、スプリット トンネリング用のラップトップ、�
 - 常にオンサイト。
 - オンサイトとリモートの組み合わせ。
 
-Microsoft 365 ID、セキュリティ、コンプライアンス機能は、ゼロトラスト用に設計され、ユーザーとそのデバイスの場所に関係なく動作するように設計されています。 詳細については、「Zero [Trust」を参照してください](https://www.microsoft.com/security/business/zero-trust)。
+Microsoft 365、セキュリティ、コンプライアンス機能は、ゼロトラスト用に設計され、ユーザーとそのデバイスの場所に関係なく動作するように設計されています。 詳細については、「Zero [Trust」を参照してください](https://www.microsoft.com/security/business/zero-trust)。
 
 ただし、ソフトウェアの新しいインストールと更新プログラムの管理は、インストールするソフトウェアがオンプレミスまたはインターネット ソースから提供される可能性があるため、デバイスの場所に依存します。 Contoso IT アーキテクトは、ワーカーではなく、デバイスの場所に基づいて新しいインストールと更新インフラストラクチャを設計しました。
 
@@ -55,13 +55,13 @@ Microsoft 365 ID、セキュリティ、コンプライアンス機能は、ゼ�
 
 ### <a name="dedicated-on-premises"></a>専用のオンプレミス
 
-専用のオンプレミス デバイスは、Contoso イントラネットから離れたことがないデスクトップまたはサーバー コンピューターであり、VPN クライアントがインストールされていません。 これらのオンプレミス デバイスは、引き続き Microsoft Endpoint Configuration Manager とその配布ポイントを Windows 10、Microsoft 365 Apps for enterprise、Edge ブラウザーのインストールと更新に使用します。
+専用のオンプレミス デバイスは、Contoso イントラネットから離れたことがないデスクトップまたはサーバー コンピューターであり、VPN クライアントがインストールされていません。 これらのオンプレミス デバイスは、Microsoft Endpoint Configuration Manager、Microsoft 365 Apps for enterprise、エッジ ブラウザーのインストールと更新に引き続き Windows 10 とその配布ポイントを使用します。
 
 ### <a name="roaming"></a>ローミング
 
 ローミング デバイスは Contoso イントラネットから離れ、Contoso VPN クライアントがインストールされたスマートフォンやタブレットなど、多くのオフィス ワーカーとすべてのリモート ワーカー、その他の組織が所有するデバイスに発行されたラップトップを含む場合があります。 
 
-これらのデバイスは、いつでもインターネットに接続できるので、Windows 10、Microsoft 365 Apps for enterprise、および Edge のインストールと更新に Intune または他のクラウドベースのサービスを使用します。 既存のオンプレミスの Configuration Manager 配布ポイントは使用しない。
+これらのデバイスは、いつでもインターネットに接続できるので、intune または他のクラウドベースのサービスを使用して、Windows 10、Microsoft 365 Apps for enterprise、および Edge のインストールと更新を行います。 既存のオンプレミスの Configuration Manager 配布ポイントは使用しない。
 
 つまり、ローミング デバイスのインストールと更新の一部は、オンプレミスでイントラネットに接続されている間、インターネット上で行われます。 しかし、Contoso IT アーキテクトは、特にほとんどのリモート ワーカーがイントラネットにほとんど接続されていない場合、インターネットへのイントラネット帯域幅の最適化よりも、構成の簡素化が重要だと決定しました。
 
@@ -77,14 +77,14 @@ Microsoft 365 ID、セキュリティ、コンプライアンス機能は、ゼ�
 
 - RoamingDevices
 
-  Intune およびデバイス上の他の設定では、インストールと更新に Microsoft 365 ネットワークを使用する方法を指定します。
+  Intune およびデバイス上の他の設定では、インストールと更新にMicrosoft 365ネットワークの使用を指定します。
 
 ## <a name="new-onboarding-process"></a>新しいオンボーディング プロセス
 
-新しいワーカーまたはデータセンター内の新しいサーバーに発行された新しい専用のオンプレミス デバイスの場合、ワーカーがサインインすると、OnPremDevices グループのデバイスのメンバーシップに基づいて Configuration Manager クライアントは、Windows 10、Microsoft 365 Apps for enterprise、および Edge の最新の更新プログラムをオンプレミス構成マネージャー配布ポイントからダウンロードしてインストールします。 完了すると、専用のオンプレミス デバイスを使用する準備が整い、これらの配布ポイントを継続的な更新に使用します。
+新しいワーカーまたはデータセンター内の新しいサーバーに発行された新しい専用のオンプレミス デバイスの場合、ワーカーがサインインすると、OnPremDevices グループのデバイスのメンバーシップに基づいて Configuration Manager クライアントが、Windows 10、Microsoft 365 Apps for enterprise、および Edge の最新の更新プログラムをオンプレミス構成マネージャー配布ポイントからダウンロードしてインストールします。 完了すると、専用のオンプレミス デバイスを使用する準備が整い、これらの配布ポイントを継続的な更新に使用します。
 
-新しいワーカーに発行された新しいリモート デバイスの場合、ワーカーがサインインすると、デバイスは RoamingDevices グループのメンバーシップに基づいて Intune クラウド サービスや他のサービスに連絡し、Windows 10、Microsoft 365 Apps for enterprise、Edge の最新の更新プログラムをダウンロードしてインストールします。 完了すると、リモート デバイスを使用する準備が整い、インストールされた VPN クライアントを使用してオンプレミスのリソースにアクセスし、継続的な更新のために Microsoft 365 ネットワークを使用します。
+新しいワーカーに発行された新しいリモート デバイスの場合、ワーカーがサインインすると、RoamingDevices グループのメンバーシップに基づいてデバイスが Intune クラウド サービスや他のサービスに連絡し、Windows 10、Microsoft 365 Apps for enterprise、および Edge の最新の更新プログラムをダウンロードしてインストールします。 完了すると、リモート デバイスを使用する準備が整い、インストールされた VPN クライアントを使用してオンプレミス のリソースにアクセスし、継続的な更新のためにMicrosoft 365ネットワークを使用します。
 
 ## <a name="next-step"></a>次の手順
 
-[組織内のリモート ワーカーに](empower-people-to-work-remotely.md) 権限を与える。
+[組織内のリモート作業用にインフラストラクチャ](empower-people-to-work-remotely.md) をセットアップします。

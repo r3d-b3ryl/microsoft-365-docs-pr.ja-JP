@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4b2b581d570bd0924970a845c66a599495ff9829
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 355561936642b1fa38228bfa07ad59269c48d817
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933711"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245482"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>脆弱なデバイス レポート - 脅威と脆弱性の管理
 
@@ -37,16 +37,16 @@ ms.locfileid: "51933711"
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-レポートには、脆弱なデバイスの傾向と現在の統計を含むグラフと棒グラフが表示されます。 目標は、デバイスの露出の呼吸と範囲を理解する目的です。 
+レポートには、脆弱なデバイスの傾向と現在の統計を含むグラフと棒グラフが表示されます。 目標は、デバイスの露出の呼吸と範囲を理解する目的です。
 
-[脆弱なデバイスのレポート] にアクセスして、Microsoft Defender **セキュリティ センター>アクセスします。**
+[脆弱なデバイスのレポート] Microsoft Defender セキュリティ センターにアクセスして、>**レポートにアクセスします。**
 
 次の 2 つの列があります。
 
 - 傾向 (時間の流れる)。 過去 30 日間、3 か月、6 か月、またはカスタムの日付範囲を表示できます。
 - 今日 (現在の情報)
 
-**フィルター**: 脆弱性の重大度レベル、悪用の可用性、脆弱性の年齢、オペレーティング システム プラットフォーム、Windows 10 バージョン、またはデバイス グループによってデータをフィルター処理できます。
+**フィルター**: 脆弱性の重大度レベル、悪用の可用性、脆弱性の年齢、オペレーティング システム プラットフォーム、Windows 10 バージョン、またはデバイス グループでデータをフィルター処理できます。
 
 **ドリルダウン:** さらに詳しい分析情報がある場合は、関連する棒グラフを選択して、[デバイス インベントリ] ページにフィルター処理されたデバイスの一覧を表示します。 そこからリストをエクスポートできます。
 
@@ -74,13 +74,13 @@ ms.locfileid: "51933711"
 
 ![オペレーティング システム プラットフォーム別の現在の脆弱なデバイスの 1 つのグラフと、OS プラットフォームによる脆弱なデバイスの時間の経時を示す 1 つのグラフ。](images/tvm-report-os.png)
 
-## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>Windows 10 バージョン グラフによる脆弱なデバイス
+## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>バージョン グラフによるWindows 10デバイス
 
-脆弱なアプリケーションまたは OS が原因で公開される各 Windows 10 バージョンのデバイスの数。
+脆弱なアプリケーションまたは OS Windows 10される各バージョンのデバイスの数。
 
-![Windows 10 バージョンによる現在の脆弱なデバイスの 1 つのグラフと、Windows 10 バージョンによる脆弱なデバイスの時間の経時を示す 1 つのグラフ。](images/tvm-report-version.png)
+![現在の脆弱なデバイスのバージョン別の 1 つのグラフWindows 10、1 つのグラフは、Windows 10バージョンで脆弱なデバイスを示します。](images/tvm-report-version.png)
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

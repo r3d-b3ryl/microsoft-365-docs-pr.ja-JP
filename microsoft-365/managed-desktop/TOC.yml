@@ -104,6 +104,8 @@
           href: get-started/enterprise-state-roaming.md
         - name: ユーザー エクスペリエンスをローカライズ
           href: get-started/localization.md
+        - name: 新しいデバイスを検証する
+          href: get-started/validate-device.md
         - name: デバイスをセットアップする
           href: get-started/set-up-devices.md
           items:

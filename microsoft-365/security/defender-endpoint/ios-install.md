@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 62eefbd17b826aa2cfb541c04ba206d0f58f9bbf
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a3711018034bcabdde10c21b3c968c3e813d0565
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935055"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245259"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -35,9 +35,9 @@ ms.locfileid: "51935055"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-このトピックでは、Intune ポータル サイト登録デバイスでの iOS での Defender for Endpoint の展開について説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
+このトピックでは、登録されているデバイス上の iOS での Defender for Endpoint の展開Intune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -48,14 +48,14 @@ ms.locfileid: "51935055"
 
 ## <a name="deployment-steps"></a>展開手順
 
-Intune ポータル サイトを介して iOS に Defender for Endpoint を展開します。
+iOS 上の Defender for Endpoint を展開するには、Intune ポータル サイト。
 
 ### <a name="add-ios-store-app"></a>iOS ストア アプリの追加
 
 1. [Microsoft Endpoint manager 管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)  ->  **アプリ] iOS/iPadOS [iOS** ストア アプリの追加] に移動し、[  ->    ->  選択] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager Admin Center1 のイメージ](images/ios-deploy-1.png)
+    > ![管理センター 1 Microsoft エンドポイント マネージャーのイメージ](images/ios-deploy-1.png)
 
 1. [アプリの追加] ページで、[アプリ ストアの検索] をクリック **し** 、検索バーに **「Microsoft Defender Endpoint」** と入力します。 [検索結果] セクションで *、[Microsoft Defender Endpoint]* をクリックし、[選択] を **クリックします**。
 
@@ -67,14 +67,39 @@ Intune ポータル サイトを介して iOS に Defender for Endpoint を展�
     > 選択したユーザー グループは、Intune に登録されたユーザーで構成する必要があります。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager Admin Center2 のイメージ](images/ios-deploy-2.png)
+    > ![管理センター 2 Microsoft エンドポイント マネージャーのイメージ](images/ios-deploy-2.png)
 
 1. [確認 *と作成] セクション* で、入力された情報が正しいか確認し、[作成] を **選択します**。 しばらくすると、Defender for Endpoint アプリが正常に作成され、ページの右上隅に通知が表示されます。
 
 1. 表示されるアプリ情報ページの [モニター]セクションで、[デバイスのインストール状態] を選択して、デバイスのインストールが正常に完了したと確認します。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager Admin Center3 のイメージ](images/ios-deploy-3.png)
+    > ![管理センター 3 Microsoft エンドポイント マネージャーのイメージ](images/ios-deploy-3.png)
+
+## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>VPN プロファイルの自動オンボーディング (簡易オンボーディング)
+
+> [!NOTE]
+> VPN プロファイルの自動オンボーディングは現在プレビュー中であり、このセクションに記載されている手順は、商用リリース前に大幅に変更される可能性があります。
+
+管理者は VPN プロファイルの自動セットアップを構成できます。 これにより、オンボーディング中にユーザーに設定せずに Defender for Endpoint VPN プロファイルが自動的にセットアップされます。 Web Protection 機能を提供するために VPN が使用されます。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。
+
+1. [Microsoft Endpoint manager 管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)デバイス構成プロファイル iOS ストア アプリの作成] に移動し、[  ->    ->    ->  選択] を **クリックします**。
+1. **[iOS/iPadOS としてプラットフォーム] を選択し、[VPN** **としてプロファイルの種類**] を **選択します**。 **[作成]** をクリックします。
+1. プロファイルの名前を入力し、[次へ] を **クリックします**。
+1. [ **接続の種類]** で [カスタム VPN] を選択し、[ **基本 VPN]** セクションで、次の値を入力します。
+    - 接続名 = エンドポイント用 Microsoft Defender
+    - VPN サーバー のアドレス = 127.0.0.1
+    - Auth メソッド = "ユーザー名とパスワード"
+    - スプリット トンネリング = 無効
+    - VPN 識別子 = com.microsoft.scmx
+    - キーと値のペアで、キー **AutoOnboard を入力し** 、値を True に設定 **します**。
+    - 自動 VPN の種類 = オンデマンド VPN
+    - [ **オンデマンド ルール** の **追加]** をクリックし、[次の操作を行う] **= [VPN** の確立] を選択します。[すべてのドメイン **] に制限します**。
+
+    ![VPN プロファイル構成のスクリーン ショット](images/ios-deploy-8.png)
+
+1. [次へ] をクリックし、対象ユーザーにプロファイルを割り当てる。
+1. [確認 *と作成] セクション* で、入力された情報が正しいか確認し、[作成] を **選択します**。
 
 ## <a name="complete-onboarding-and-check-status"></a>オンボーディングとチェックの状態を完了する
 
@@ -84,7 +109,7 @@ Intune ポータル サイトを介して iOS に Defender for Endpoint を展�
 
 2. [Defender for Endpoint] アプリ アイコンをタップし、画面の指示に従ってオンボーディングの手順を完了します。 詳細には、iOS 上の Defender for Endpoint で必要な iOS アクセス許可のエンド ユーザーによる承諾が含まれます。
 
-3. オンボードが成功すると、デバイスは Microsoft Defender セキュリティ センターの [デバイス] リストに表示されます。
+3. オンボードが正常に完了すると、デバイスはデバイス の [デバイス] リストに表示Microsoft Defender セキュリティ センター。
 
     > [!div class="mx-imgBorder"]
     > ![自動的に生成された携帯電話の説明のスクリーンショット](images/e07f270419f7b1e5ee6744f8b38ddeaf.png)
@@ -100,18 +125,18 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
    > [!NOTE]
    > 監視対象デバイスのこのアプリ構成ポリシーは、管理対象デバイスにのみ適用され、ベスト プラクティスとしてすべての管理対象 iOS デバイスを対象とする必要があります。
 
-1. Microsoft Endpoint [Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理センターにサインインし、[アプリ アプリ構成ポリシーの追加]  >  **に**  >  **移動します**。 [管理対象デバイス **] をクリックします**。
+1. 管理センターにサインインし [Microsoft エンドポイント マネージャーアプリ](https://go.microsoft.com/fwlink/?linkid=2109431)の構成ポリシー **[** 追加]  >  **に**  >  **移動します**。 [管理対象デバイス **] をクリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager Admin Center4 のイメージ](images/ios-deploy-4.png)
+    > ![管理センター Microsoft エンドポイント マネージャーのイメージ 4](images/ios-deploy-4.png)
 
 1. [アプリ構成 *ポリシーの作成] ページ* で、次の情報を入力します。
     - ポリシー名
     - プラットフォーム: iOS/iPadOS を選択する
-    - 対象アプリ: リスト **から Microsoft Defender ATP** を選択する
+    - 対象アプリ: リスト **Microsoft Defender ATP** を選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager Admin Center5 のイメージ](images/ios-deploy-5.png)
+    > ![管理センター Microsoft エンドポイント マネージャーの画像 5](images/ios-deploy-5.png)
 
 1. 次の画面で、[構成デザイナー **を形式として使用** する] を選択します。 次のプロパティを指定します。
     - 構成キー: issupervised
@@ -119,7 +144,7 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
     - 構成値: {{issupervised}}
     
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager Admin Center6 のイメージ](images/ios-deploy-6.png)
+    > ![管理センター 6 Microsoft エンドポイント マネージャーの画像](images/ios-deploy-6.png)
 
 1. [次 **へ] を** クリックして [スコープ タグ **] ページを** 開きます。 スコープ タグはオプションです。 続行するには、**[次へ]** をクリックします。
 
@@ -127,7 +152,7 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
 
    ユーザー グループに展開する場合、ユーザーはポリシーが適用される前にデバイスにサインインする必要があります。
 
-   [ **次へ**] をクリックします。
+   **[次へ]** をクリックします。
 
 1. [レビュー **と作成] ページ** で、完了したら、[作成] を **選択します**。 新しいプロファイルが構成プロファイルの一覧に表示されます。
 
@@ -136,10 +161,10 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
     - [デバイス  ->  **] iOS/iPadOS**  ->  **構成プロファイルの [プロファイルの**  ->  **作成] に移動します。**
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager Admin Center7 のイメージ](images/ios-deploy-7.png)
+    > ![管理センター 7 Microsoft エンドポイント マネージャーの画像](images/ios-deploy-7.png)
 
     - プロファイルの名前を指定します。 構成プロファイル ファイルのインポートを求めるメッセージが表示されたら、上記でダウンロードしたファイルを選択します。
-    - [割 **り当て** ] セクションで、このプロファイルを適用するデバイス グループを選択します。 ベスト プラクティスとして、これはすべての管理対象 iOS デバイスに適用する必要があります。 [ **次へ**] をクリックします。
+    - [割 **り当て** ] セクションで、このプロファイルを適用するデバイス グループを選択します。 ベスト プラクティスとして、これはすべての管理対象 iOS デバイスに適用する必要があります。 **[次へ]** をクリックします。
     - [レビュー **と作成] ページ** で、完了したら、[作成] を **選択します**。 新しいプロファイルが構成プロファイルの一覧に表示されます。
 
 ## <a name="next-steps"></a>次の手順
