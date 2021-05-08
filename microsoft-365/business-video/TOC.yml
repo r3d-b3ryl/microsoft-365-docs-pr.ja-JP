@@ -161,10 +161,10 @@
           href: create-sensitivity-labels.md
     - name: サポート
       items:
-        - name: 回答とヘルプを見つける
-          href: find-help-answers.md
         - name: ヘルプまたはサポートを利用する
           href: get-help-support.md
+        - name: ドキュメントやトレーニングを探す
+          href: find-help-answers.md
         - name: 従業員のクイック セットアップ
           href: employee-quick-setup.md
     - name: Google Workspace から切り替える

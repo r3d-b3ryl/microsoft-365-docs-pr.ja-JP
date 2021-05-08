@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051689"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245434"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-すべての種類の組織では、企業データ全体にわたって規制、法務およびビジネスに不可欠なレコードを管理するためにレコード管理ソリューションが必要です。 Microsoft 365 のレコード管理は、組織が法的義務を管理できるようにし、規制の遵守を実証する機能を提供します。これにより、ビジネス上、保持する必要がなくなった、価値がなくなった、または不要になったアイテムを定期的に処分することができて効率が向上します。
+規制や法律上、および事業運営上重要な記録を企業データ全体で管理するためのレコード管理ソリューションはあらゆる組織で必要です。Microsoft 365 のレコード管理は、組織が法的な義務行為を管理できるようにし、規制を遵守できる機能を提供します。これにより、事業運営上、保持する必要がなくなった、価値がなくなった、または不要になったアイテムを定期的に処分することができ、効率向上につながります。
 
 Microsoft 365 のレコード管理ソリューションをサポートするには、次の機能を使用します。
 
@@ -48,7 +48,7 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 
 - [[エクスポート] オプション](disposition.md#filter-and-export-the-views)を使用して、**廃棄されたすべてのアイテムに関する情報をエクスポートします**。
 
-- [適切なアクセス権を取得する](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)ために、組織内のレコード管理機能に **特定のアクセス許可** を設定します。
+- [適切なアクセス権を取得する](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)ために、組織内のレコード管理機能に **特定のアクセス許可** を設定します。
 
 これらの機能を使用すると、組織の保持スケジュールと要件をレコード管理ソリューションに反映させ、保持、レコード宣言、廃棄を管理して、コンテンツのライフサイクル全体をサポートすることができます。
 
@@ -111,6 +111,4 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-詳細については、「[レコード管理の概要](get-started-with-records-management.md)」を参照してください。
-
-コンテンツをレコードとしてマークするには、[[保持ラベルを使用してレコードを宣言する](declare-records.md)] を参照してください。
+詳細については、「[レコード管理の概要](get-started-with-records-management.md)」を参照してください。 この記事には、サブスクリプション、アクセス許可についての説明、およびレコード管理を行う際のエンド ツー エンド構成を行う方法についてのリンクがあります。

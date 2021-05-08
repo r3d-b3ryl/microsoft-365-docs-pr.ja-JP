@@ -19,19 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860956"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245590"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> アプリのアイテム保持ポリシーに関するメッセージが表示される場合は、IT 部門に連絡して、ポリシーがどのように構成されているかを確認します。 これらのメッセージが Teams チャットまたはチャネル メッセージ用である場合は、「[アイテム保持ポリシーに関する Teams メッセージ](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)」を参照してください。
+> Teams でアイテム保持ポリシーに関するメッセージが表示される場合、あるいはアプリ内の保持ラベルについて質問がある場合は、IT 部門に連絡して、ポリシーがどのように構成されているかを確認します。 その際、次の記事も参考にしてください。
+> -  [Teams のアイテム保持ポリシーに関するメッセージ](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [SharePoint または OneDrive のファイルに保持ラベルをつける](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > このページの情報は、コンプライアンス上の理由からアイテム保持ポリシーと保持ラベルを作成できる IT 管理者向けです。
 
@@ -62,7 +64,7 @@ ms.locfileid: "51860956"
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保持設定が所定の場所にあるコンテンツに作用するしくみ
 
-コンテンツに保持設定が割り当てられるとき、そのコンテンツは元の場所にそのまま残ります。 ユーザーは何事もなかったかのように、ドキュメントやメールで作業を続けることができます。 ただし、アイテム保持ポリシーに含まれているコンテンツをユーザーが編集または削除すると、そのコンテンツのコピーが自動的に保持されます。
+コンテンツに保持設定が割り当てられるとき、そのコンテンツは元の場所にそのまま残ります。このため、ユーザーは何事もなかったかのように、ドキュメントやメールで作業を続けることができます。ただし、アイテム保持ポリシーに含まれているコンテンツをユーザーが編集または削除すると、そのコンテンツのコピーが自動的に保持されます。
   
 - SharePoint および OneDrive サイトの場合: コピーは、**アイテム保管** ライブラリに保持されます。
 
@@ -193,7 +195,7 @@ SharePoint のドキュメントのデータ損失防止 (DLP) ポリシーの�
 |機密情報の種類またはトレーニング可能な分類子に基づいて自動適用されたラベル  <br/> |Exchange (すべてのメールボックスのみ)、SharePoint、OneDrive  <br/> |
 |クエリに基づいて自動適用されたラベル  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 グループ  <br/> |
    
-Exchange では、自動適用する保持ラベルは、新しく送信されたメッセージ (転送中のデータ) にのみ適用され、現在メールボックスにあるすべてのアイテム (保存データ) には適用されません。 また、機密情報の種類やトレーニング可能な分類子の自動適用保持ラベルはすべてのメールボックスのみに適用でき、特定のメールボックスを選択することはできません。
+Exchange で自動で付けることができる保持ラベルは、新しく送信されたメッセージ (送信中のデータ) にのみ適用され、現在メールボックスにあるすべてのアイテム (保存データ) には適用されません。また、機密情報の種類やトレーニング可能な分類子向けの自動適用の保持ラベルは、すべてのメールボックスにのみ適用されます。特定のメールボックスを選択することはできません。
   
 Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージは保持ラベルをサポートしていません。 これらの場所のコンテンツを保持または削除するには、代わりにアイテム保持ポリシーを使用します。
 
@@ -470,8 +472,4 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-アイテム保持ポリシーを作成する準備ができている場合は、「[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)」を参照してください。
-
-保持ラベルを作成して適用するには:
-- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
-- [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
+[アイテム保持ポリシーおよび保持ラベルの使用をはじめる](get-started-with-retention.md)をご参照ください。 この記事には、サブスクリプション、アクセス許可についての説明、および保持を行う際のエンド ツー エンド構成を行う方法についてのリンクがあります。

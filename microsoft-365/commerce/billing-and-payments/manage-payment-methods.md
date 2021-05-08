@@ -23,14 +23,17 @@ search.appverid:
 - MET150
 description: Microsoft 365 管理センターで支払方法を管理する方法を説明します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107041"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244722"
 ---
 # <a name="manage-payment-methods"></a>支払方法を管理する
+
+> [!IMPORTANT]
+> 2021 年 1 月 26 日より、ベルギー、フランス、イタリア、ルクセンブルク、ポルトガル、スペイン、米国のお客様の新しい銀行口座はサポートされなくなりました。 いずれかの国にお住まいのお客様は、既存の銀行口座でサブスクリプションの支払いを行い、新しいサブスクリプションを追加することができますが、銀行口座が有効な場合に限ります。
 
 Microsoft からビジネス製品またはサービスを購入する場合、既存の支払方法を使用することも、新しい支払方法を追加することもできます。 クレジット カード、デビット カード、または銀行口座を使用して、購入したものの支払いを行うことができます。
 

@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Apps for business サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: 56eb3eb0f28ee99aab1c50a970626c61514335cd
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579100"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244481"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for business をセットアップする
 
@@ -57,7 +57,7 @@ ms.locfileid: "51579100"
 
 2. [**セットアップに移動**] を選択して、ウィザードを開始します。
 
-3. 最初のページでは、ご利用のコンピューターに Office アプリをインストールするオプションが表示されます。 このタスクは後で行うこともできます。
+3. 最初のページでは、ご利用のコンピューターに Office アプリをインストールするオプションが表示されます。この操作は後からでも可能です。
 
 3. 次のページでユーザーを追加することができ、追加すると自動的に Microsoft Apps for Business ライセンスが割り当てられます。 ユーザーを追加すると、追加した新しいユーザーと資格情報を共有するためのオプションも表示されます。 それらを印刷したり、メールで送信したり、ダウンロードしたりすることができます。
 
@@ -89,17 +89,17 @@ Office 365 Germany を使用している場合は、[https://portal.office.de/OL
 
 2. [**インストール**] を選択します。
 
-より詳細な手順が必要な場合、または 64 ビット バージョンの Office をインストールする場合は、 「[ステップ バイ ステップのインストール手順](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps)」を参照してください。
+詳細な手順が必要な場合、または 64 ビット版の Office をインストールする場合は、「[ステップ バイ ステップのインストール手順](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps)」を参照してください。
   
-## <a name="set-up-mobile"></a>モバイルをセットアップする
+## <a name="set-up-mobile"></a>モバイル デバイスをセットアップする
 
-モバイル デバイスに Office をインストールし、新しい Microsoft メールボックスを使用するための Outlook のセットアップを行います。 チーム全員がそれぞれ次の手順を実行する必要があります。 各ユーザーは、最大 5 台のスマートフォンと 5 台のタブレットに、Office モバイル アプリをインストールできます。
+モバイル デバイスに Office をインストールし、新しい Microsoft メールボックスを使用するための Outlook のセットアップを行います。チーム全員がそれぞれ次の手順を実行する必要があります。各ユーザーは、最大 5 台のスマートフォンと 5 台のタブレットに、Office モバイル アプリをインストールできます。
   
 お使いのデバイスの手順が表示されます。[Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f) | [Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ## <a name="store-files-online"></a>オンラインでファイルを保存する
 
-Microsoft では、ファイルを簡単にオンラインで保存できます。ビジネスに最適な保存場所については、「[Office 365 でファイルを保存する場所](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)」を参照してください。
+Microsoft では、ファイルを簡単にオンラインで保存できます。ビジネスに最適な保存場所については、「[Office 365 でファイルを保存する場所](../../business-video/store-files.md)」を参照してください。
   
 管理者がユーザーの Microsoft アカウントを作成すると、ユーザーには自動的に **OneDrive** クラウド ストレージの場所が付与されます。OneDrive を使用すると、コンピューター、スマートフォン、タブレットのどのデバイスでもファイルにアクセスすることができます。
   
