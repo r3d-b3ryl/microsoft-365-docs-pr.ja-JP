@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2a2720bb700416b1a1d55ea8c48cd2aba6bec80a
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c9901a9587e3f1e94dbd1fa4b7d2b91b3bf3fca1
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50550530"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273425"
 ---
-# <a name="payment-information-for-lebanon"></a><span data-ttu-id="a1e48-103">レバノンのお支払い情報</span><span class="sxs-lookup"><span data-stu-id="a1e48-103">Payment information for Lebanon</span></span>
+# <a name="payment-information-for-lebanon"></a><span data-ttu-id="49323-103">レバノンのお支払い情報</span><span class="sxs-lookup"><span data-stu-id="49323-103">Payment information for Lebanon</span></span>
 
-<span data-ttu-id="a1e48-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="a1e48-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="49323-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="49323-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="a1e48-105">お支払いは USD でのみ行い、支払い送金の請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a1e48-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="49323-105">お支払いは USD でのみ行い、支払い送金の請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="49323-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="a1e48-106">電子決済</span><span class="sxs-lookup"><span data-stu-id="a1e48-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="49323-106">電子決済</span><span class="sxs-lookup"><span data-stu-id="49323-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="a1e48-107">**Bank:** シティバンク(ロンドン)</span><span class="sxs-lookup"><span data-stu-id="a1e48-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="a1e48-108">**SWIFT コード:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="a1e48-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="a1e48-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="a1e48-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="a1e48-110">**アカウント番号:** 12510049</span><span class="sxs-lookup"><span data-stu-id="a1e48-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="a1e48-111">**アカウント名:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="a1e48-111">**Account Name:** MICROSOFT</span></span> 
+<span data-ttu-id="49323-107">**Bank:** シティバンク(ロンドン)</span><span class="sxs-lookup"><span data-stu-id="49323-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="49323-108">**SWIFT コード:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="49323-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="49323-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="49323-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="49323-110">**アカウント番号:** 12510049</span><span class="sxs-lookup"><span data-stu-id="49323-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="49323-111">**アカウント名:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="49323-111">**Account Name:** MICROSOFT</span></span> 

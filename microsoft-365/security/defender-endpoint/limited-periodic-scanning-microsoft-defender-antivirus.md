@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,43 +14,44 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 82c4bc1feec1556dc864558a843ed5e911c3ef3d
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: b2ae56c0f67501eb8603d5d28c4ed0c4af01a8c9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764485"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274598"
 ---
-# <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a><span data-ttu-id="a45e8-104">Microsoft Defender ウイルス対策で限定的な定期的なスキャンを使用する</span><span class="sxs-lookup"><span data-stu-id="a45e8-104">Use limited periodic scanning in Microsoft Defender Antivirus</span></span>
+# <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a><span data-ttu-id="67016-104">Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する</span><span class="sxs-lookup"><span data-stu-id="67016-104">Use limited periodic scanning in Microsoft Defender Antivirus</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="a45e8-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="a45e8-105">**Applies to:**</span></span>
+<span data-ttu-id="67016-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="67016-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="a45e8-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="a45e8-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="67016-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="67016-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="a45e8-107">限定的な定期的なスキャンは、Windows 10 デバイスに別のウイルス対策製品をインストールした場合に有効にできる特別な種類の脅威の検出と修復です。</span><span class="sxs-lookup"><span data-stu-id="a45e8-107">Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 device.</span></span>
+<span data-ttu-id="67016-107">限定的な定期的なスキャンは、Windows 10 デバイスに別のウイルス対策製品をインストールした場合に有効にできる特別な種類の脅威の検出と修復です。</span><span class="sxs-lookup"><span data-stu-id="67016-107">Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 device.</span></span>
 
-<span data-ttu-id="a45e8-108">特定の状況でのみ有効にできます。</span><span class="sxs-lookup"><span data-stu-id="a45e8-108">It can only be enabled in certain situations.</span></span> <span data-ttu-id="a45e8-109">限定的な定期的なスキャンの詳細と、Microsoft Defender Antivirus が他のウイルス対策製品とどのように動作するのかについては、「Microsoft Defender Antivirus の互換性」 [を参照してください](microsoft-defender-antivirus-compatibility.md)。</span><span class="sxs-lookup"><span data-stu-id="a45e8-109">For more information about limited periodic scanning and how Microsoft Defender Antivirus works with other antivirus products, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).</span></span>
+<span data-ttu-id="67016-108">特定の状況でのみ有効にできます。</span><span class="sxs-lookup"><span data-stu-id="67016-108">It can only be enabled in certain situations.</span></span> <span data-ttu-id="67016-109">限定的な定期的なスキャンの詳細と、Microsoft Defender Antivirus が他のウイルス対策製品とどのように動作するのかについては、「Microsoft Defender Antivirus の互換性」 [を参照してください](microsoft-defender-antivirus-compatibility.md)。</span><span class="sxs-lookup"><span data-stu-id="67016-109">For more information about limited periodic scanning and how Microsoft Defender Antivirus works with other antivirus products, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).</span></span>
 
-<span data-ttu-id="a45e8-110">**Microsoft では、この機能をエンタープライズ環境で使用することをお勧めしません。これは主にコンシューマー向け機能です。**</span><span class="sxs-lookup"><span data-stu-id="a45e8-110">**Microsoft does not recommend using this feature in enterprise environments. This is a feature primarily intended for consumers.**</span></span> <span data-ttu-id="a45e8-111">この機能では、Microsoft Defender Antivirus 機能の限られたサブセットのみを使用してマルウェアを検出し、ほとんどのマルウェアや望ましくない可能性のあるソフトウェアを検出することは可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="a45e8-111">This feature only uses a limited subset of the Microsoft Defender Antivirus capabilities to detect malware, and will not be able to detect most malware and potentially unwanted software.</span></span> <span data-ttu-id="a45e8-112">また、管理およびレポート機能は制限されます。</span><span class="sxs-lookup"><span data-stu-id="a45e8-112">Also, management and reporting capabilities will be limited.</span></span> <span data-ttu-id="a45e8-113">Microsoft では、企業がプライマリ ウイルス対策ソリューションを選択し、排他的に使用する方法をお勧めします。</span><span class="sxs-lookup"><span data-stu-id="a45e8-113">Microsoft recommends enterprises choose their primary antivirus solution and use it exclusively.</span></span>
+<span data-ttu-id="67016-110">**Microsoft では、この機能をエンタープライズ環境で使用することをお勧めしません。これは主にコンシューマー向け機能です。**</span><span class="sxs-lookup"><span data-stu-id="67016-110">**Microsoft does not recommend using this feature in enterprise environments. This is a feature primarily intended for consumers.**</span></span> <span data-ttu-id="67016-111">この機能では、Microsoft Defender Antivirus 機能の限られたサブセットのみを使用してマルウェアを検出し、ほとんどのマルウェアや望ましくない可能性のあるソフトウェアを検出することは可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="67016-111">This feature only uses a limited subset of the Microsoft Defender Antivirus capabilities to detect malware, and will not be able to detect most malware and potentially unwanted software.</span></span> <span data-ttu-id="67016-112">また、管理およびレポート機能は制限されます。</span><span class="sxs-lookup"><span data-stu-id="67016-112">Also, management and reporting capabilities will be limited.</span></span> <span data-ttu-id="67016-113">Microsoft では、企業がプライマリ ウイルス対策ソリューションを選択し、排他的に使用する方法をお勧めします。</span><span class="sxs-lookup"><span data-stu-id="67016-113">Microsoft recommends enterprises choose their primary antivirus solution and use it exclusively.</span></span>
 
-## <a name="how-to-enable-limited-periodic-scanning"></a><span data-ttu-id="a45e8-114">制限付き定期的なスキャンを有効にする方法</span><span class="sxs-lookup"><span data-stu-id="a45e8-114">How to enable limited periodic scanning</span></span>
+## <a name="how-to-enable-limited-periodic-scanning"></a><span data-ttu-id="67016-114">制限付き定期的なスキャンを有効にする方法</span><span class="sxs-lookup"><span data-stu-id="67016-114">How to enable limited periodic scanning</span></span>
 
-<span data-ttu-id="a45e8-115">既定では、他のウイルス対策製品がインストールされていない場合、または他の製品が期限切れ、期限切れ、または正しく動作していない場合、Microsoft Defender Antivirus は Windows 10 デバイス上で自身を有効にします。</span><span class="sxs-lookup"><span data-stu-id="a45e8-115">By default, Microsoft Defender Antivirus will enable itself on a Windows 10 device if there is no other antivirus product installed, or if the other product is out-of-date, expired, or not working correctly.</span></span>
+<span data-ttu-id="67016-115">既定では、他のウイルス対策製品がインストールされていない場合、または他の製品が期限切れ、期限切れ、または正しく動作していない場合、Microsoft Defender Antivirus は Windows 10 デバイス上で自身を有効にします。</span><span class="sxs-lookup"><span data-stu-id="67016-115">By default, Microsoft Defender Antivirus will enable itself on a Windows 10 device if there is no other antivirus product installed, or if the other product is out-of-date, expired, or not working correctly.</span></span>
 
-<span data-ttu-id="a45e8-116">Microsoft Defender Antivirus が有効になっている場合、通常のオプションが表示され、そのデバイスで構成されます。</span><span class="sxs-lookup"><span data-stu-id="a45e8-116">If Microsoft Defender Antivirus is enabled, the usual options will appear to configure it on that device:</span></span>
+<span data-ttu-id="67016-116">Microsoft Defender Antivirus が有効になっている場合、通常のオプションが表示され、そのデバイスで構成されます。</span><span class="sxs-lookup"><span data-stu-id="67016-116">If Microsoft Defender Antivirus is enabled, the usual options will appear to configure it on that device:</span></span>
 
 ![スキャン オプション、設定、更新オプションなど、Microsoft Defender AV オプションを表示する Windows セキュリティ アプリ](images/vtp-wdav.png)
 
-<span data-ttu-id="a45e8-118">別のウイルス対策製品がインストールされ、正しく動作している場合、Microsoft Defender Antivirus はそれ自体を無効にします。</span><span class="sxs-lookup"><span data-stu-id="a45e8-118">If another antivirus product is installed and working correctly, Microsoft Defender Antivirus will disable itself.</span></span> <span data-ttu-id="a45e8-119">Windows セキュリティ アプリは、[ウイルス対策&] セクションを変更して、AV 製品に関する状態を表示し、製品の構成オプションへのリンクを提供します。</span><span class="sxs-lookup"><span data-stu-id="a45e8-119">The Windows Security app will change the **Virus & threat protection** section to show status about the AV product, and provide a link to the product's configuration options.</span></span>
+<span data-ttu-id="67016-118">別のウイルス対策製品がインストールされ、正しく動作している場合、Microsoft Defender Antivirus はそれ自体を無効にします。</span><span class="sxs-lookup"><span data-stu-id="67016-118">If another antivirus product is installed and working correctly, Microsoft Defender Antivirus will disable itself.</span></span> <span data-ttu-id="67016-119">Windows セキュリティ アプリは、[ウイルス対策&] セクションを変更して、AV 製品に関する状態を表示し、製品の構成オプションへのリンクを提供します。</span><span class="sxs-lookup"><span data-stu-id="67016-119">The Windows Security app will change the **Virus & threat protection** section to show status about the AV product, and provide a link to the product's configuration options.</span></span>
 
-<span data-ttu-id="a45e8-120">サードパーティの AV 製品の下に、Microsoft Defender ウイルス対策オプションとして新しい **リンクが表示されます**。</span><span class="sxs-lookup"><span data-stu-id="a45e8-120">Underneath any third party AV products, a new link will appear as **Microsoft Defender Antivirus options**.</span></span> <span data-ttu-id="a45e8-121">このリンクをクリックすると、制限付き定期的なスキャンを有効にするトグルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a45e8-121">Clicking this link will expand to show the toggle that enables limited periodic scanning.</span></span> <span data-ttu-id="a45e8-122">制限された定期的なオプションは、定期的なスキャンを有効または無効にするトグルです。</span><span class="sxs-lookup"><span data-stu-id="a45e8-122">Note that the limited periodic option is a toggle to enable or disable periodic scanning.</span></span> 
+<span data-ttu-id="67016-120">サードパーティの AV 製品の下に、Microsoft Defender ウイルス対策オプションとして新しい **リンクが表示されます**。</span><span class="sxs-lookup"><span data-stu-id="67016-120">Underneath any third party AV products, a new link will appear as **Microsoft Defender Antivirus options**.</span></span> <span data-ttu-id="67016-121">このリンクをクリックすると、制限付き定期的なスキャンを有効にするトグルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="67016-121">Clicking this link will expand to show the toggle that enables limited periodic scanning.</span></span> <span data-ttu-id="67016-122">制限された定期的なオプションは、定期的なスキャンを有効または無効にするトグルです。</span><span class="sxs-lookup"><span data-stu-id="67016-122">Note that the limited periodic option is a toggle to enable or disable periodic scanning.</span></span> 
 
-<span data-ttu-id="a45e8-123">スイッチを On に **スライドすると** 、サードパーティの AV 製品の下に標準の Microsoft Defender AV オプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a45e8-123">Sliding the switch to **On** will show the standard Microsoft Defender AV options underneath the third party AV product.</span></span> <span data-ttu-id="a45e8-124">制限された定期的なスキャン オプションがページの下部に表示されます。</span><span class="sxs-lookup"><span data-stu-id="a45e8-124">The limited periodic scanning option will appear at the bottom of the page.</span></span>
+<span data-ttu-id="67016-123">スイッチを On に **スライドすると** 、サードパーティの AV 製品の下に標準の Microsoft Defender AV オプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="67016-123">Sliding the switch to **On** will show the standard Microsoft Defender AV options underneath the third party AV product.</span></span> <span data-ttu-id="67016-124">制限された定期的なスキャン オプションがページの下部に表示されます。</span><span class="sxs-lookup"><span data-stu-id="67016-124">The limited periodic scanning option will appear at the bottom of the page.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="a45e8-125">関連記事</span><span class="sxs-lookup"><span data-stu-id="a45e8-125">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="67016-125">関連記事</span><span class="sxs-lookup"><span data-stu-id="67016-125">Related articles</span></span>
 
-- [<span data-ttu-id="a45e8-126">動作、ヒューリスティック、およびリアルタイムの保護を構成する</span><span class="sxs-lookup"><span data-stu-id="a45e8-126">Configure behavioral, heuristic, and real-time protection</span></span>](configure-protection-features-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="a45e8-127">Windows 10 の Microsoft Defender ウイルス対策</span><span class="sxs-lookup"><span data-stu-id="a45e8-127">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
+- [<span data-ttu-id="67016-126">行動、ヒューリスティック、リアルタイム保護を構成する</span><span class="sxs-lookup"><span data-stu-id="67016-126">Configure behavioral, heuristic, and real-time protection</span></span>](configure-protection-features-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="67016-127">Windows 10 の Microsoft Defender ウイルス対策</span><span class="sxs-lookup"><span data-stu-id="67016-127">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
