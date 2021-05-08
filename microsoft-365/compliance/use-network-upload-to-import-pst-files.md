@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf7f471a4323c4c03f232e93d2f00b930e53aefe
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 6ff645589337260cd8e29d1e1d066abdf60c1f1a
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114343"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280923"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -173,7 +173,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
 - 各 PST ファイルのファイル名 (およびファイル名が含まれている場合はサブフォルダーのパス名) が Azure BLOB にアップロードされたことを確認します。 次の手順で PST マッピング ファイルを作成する際、各 PST ファイルに対しファイル名とフォルダーのパス名の両方を指定する必要があるため、この機能は便利です。 この名前を確認すると、PST マッピング ファイル内の潜在的なエラーを削減できます。
 
-Microsoft Azure Storage Explorer はプレビュー中です。 
+通常、Azure Storage Explorer のスタンドアロン アプリケーションが使用できます。 次の手続きでリンクを使用して、最新バージョンをダウンロードできます。
   
 > [!IMPORTANT]
 > Azure Storage Explorer で PST ファイルをアップロードまたは変更することはできません。 PST ファイルをインポートするには、AzCopy を使用する方法のみがサポートされています。 また、Azure BLOB にアップロードした PST ファイルを削除することはできません。 PST ファイルを削除しようとすると、必要なアクセス許可がないというエラーが表示されます。 なお、すべての PST ファイルは Azure 記憶域から自動的に削除されます。 進捗中のインポート ジョブがない場合、一番新しいインポート ジョブの作成から 30 日後に **ingestiondata** コンテナーのすべての PST ファイルが削除されます。

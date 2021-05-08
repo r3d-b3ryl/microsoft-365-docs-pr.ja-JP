@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva トピックの概要。
-ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275200"
+ms.locfileid: "52281031"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva トピックの概要 
 
-Viva トピックでは、Microsoft の AI 技術、Microsoft 365、Microsoft Graph、Search などのコンポーネントやサービスを利用して、SharePoint の最新のページや Microsoft Search をはじめとする、日常的に使用する Microsoft 365 アプリでユーザーは知識を得られます。
+ビバ トピックでは、Microsoft AI テクノロジ、Microsoft 365、Microsoft Graph、検索、その他のコンポーネントとサービスを使用して、SharePoint モダン ページ、Microsoft Search、Search in Word および PowerPoint から始まる、日常的に使用する Microsoft 365 アプリのユーザーに知識を提供します。
 
 </br>
 
@@ -42,6 +42,7 @@ SharePoint ニュースやページのコンテンツでトピックがメンシ
 
    ![トピックの強調表示](../media/knowledge-management/saturn.png) 
 
+Word または PowerPoint で検索を使用する場合は、検索ボックスを使用するか、コンテキストメニューで [検索] を選択すると、表示される結果にトピックの概要が表示される場合があります。
 
    ![[検索] ボックスを使用して Word で検索を示すスクリーンショット。](../media/knowledge-management/word-search-2.png)
 

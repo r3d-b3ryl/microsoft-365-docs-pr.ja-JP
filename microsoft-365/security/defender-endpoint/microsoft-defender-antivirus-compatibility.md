@@ -16,12 +16,12 @@ ms.topic: article
 manager: dansimp
 ms.technology: mde
 ms.date: 05/06/2021
-ms.openlocfilehash: 866a36828c5c83d833d66bd7ed7d32b3499cbbdf
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 885844b46d603dc318dbaf877cd445b5caaa4e46
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275158"
+ms.locfileid: "52280983"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender ウイルス対策互換性
 
@@ -80,7 +80,7 @@ Windows Server、バージョン 1803 以降、または Windows Server 2019 を
 - 値: `1`
 
 > [!NOTE]
-> パッシブ モードは、デバイスでWindows Server 2016。 レジストリ `ForcePassiveMode` キーは、レジストリ キーにはWindows Server 2016。 
+> パッシブ モードは、デバイスでWindows Server 2016。 レジストリ `ForcePassiveMode` キーは、Windows Server、バージョン 1803 以降、または Windows Server 2019 で使用できますが、Windows Server 2016。 
 
 (<a id="fn2">2</a>) Windows Server 2016 Microsoft 以外のウイルス対策製品を使用している場合は、パッシブ モードまたはアクティブ モードMicrosoft Defender ウイルス対策を実行できません。 このような場合は、サーバー[に](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016)複数Microsoft Defender ウイルス対策ウイルス対策製品がインストールされている場合に発生する問題を防ぐために、手動でインストールを無効またはアンインストールします。
 
@@ -135,7 +135,7 @@ Windows Server、バージョン 1803 以降、または Windows Server 2019 を
 > Microsoft Defender ウイルス対策、Microsoft Defender for Endpoint、またはアプリで使用される関連サービスを無効、停止、またはWindows セキュリティしない。 この推奨事項には、wscsvc、SecurityHealthService、MsSense、Sense、WinDefend、または *MsMpEng* サービスとプロセスが含まれます。     これらのサービスを手動で変更すると、デバイスに重大な不安定性が生じ、ネットワークが脆弱になる可能性があります。 これらのサービスを無効にしたり、停止したり、変更したりすると、Microsoft 以外のウイルス対策ソリューションを使用する場合や、それらの情報が Windows セキュリティ アプリに表示される場合にも問題が[発生する可能性があります](microsoft-defender-security-center-antivirus.md)。
 
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)

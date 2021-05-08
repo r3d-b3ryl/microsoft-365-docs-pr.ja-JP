@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a59d09aa4de2644e9904eb854c183d0352aa65c9
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 00e57d03ae636837120b53c0de16861ad142ef76
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861169"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280935"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開を準備する
 
@@ -60,7 +60,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 -   I = このプロジェクトの通知
 
-| 名前                 | Role                                                                                                                                                                                                          | Action |
+| 名前                 | Role                                                                                                                                                                                                          | アクション |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 名前とメールを入力する | **最高情報セキュリティ責任者 (CISO)** 新しいテクノロジ展開の組織の内部でスポンサーを務め、役員 *の代表者。*                                                  | だから     |
 | 名前とメールを入力する | **サイバー防御運用センター (CDOC)** の代表は *、CDOC* チームの担当者で、この変更が顧客のセキュリティ運用チームのプロセスとどのように一致するのか定義します。       | だから     |
@@ -76,16 +76,16 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 | 内容                                  | 説明 |
 |---------------------------------------|-------------|
-| エンドポイント数                        |             |
-| サーバー数                          |             |
-| 管理エンジン                     |             |
-| CDOC 配布                     |             |
-| セキュリティ情報とイベント (SIEM) |             |
+| エンドポイント数                        |    オペレーティング システム別のエンドポイントの総数。         |
+| サーバー数                          |    オペレーティング システムのバージョン別のサーバーの総数。    |
+| 管理エンジン                     |    管理エンジンの名前とバージョン (たとえば、現在System Center Configuration Manager 1803)。         |
+| CDOC 配布                     |    高レベルの CDOC 構造 (たとえば、Contoso にアウトソーシングされた Tier 1、ヨーロッパとアジアに分散した Tier 2、Tier 3 のインハウス)。         |
+| セキュリティ情報とイベント (SIEM) |    SIEM テクノロジが使用されています。         |
 
 
 ## <a name="role-based-access-control"></a>役割ベースのアクセス制御
 
-最小特権の概念の使用をお勧めします。 Defender for Endpoint は、Azure Active Directory 内の組み込みロールを活用します。 Microsoft では [、利用可能なさまざまな役割を確認](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) し、このアプリケーションの各ペルサのニーズを解決するために適切な役割を選択してください。 一部の役割は、展開が完了した後に一時的に適用して削除する必要がある場合があります。
+最小特権の概念の使用をお勧めします。 Defender for Endpoint は、アプリケーション内の組み込みの役割Azure Active Directory。 Microsoft では [、利用可能なさまざまな役割を確認](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) し、このアプリケーションの各ペルサのニーズを解決するために適切な役割を選択してください。 一部の役割は、展開が完了した後に一時的に適用して削除する必要がある場合があります。
 
 | Personas                     | Roles | Azure ADロール (必要に応じて) | に割り当てる |
 |------------------------------|-------|-----------------------------|-----------|
@@ -95,11 +95,11 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 | インフラストラクチャ管理者 |       |                             |           |
 | ビジネス所有者/利害関係者   |       |                             |           |
 
-ディレクトリアクセス許可を [持つユーザーに](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) 対して追加の監査、制御、およびアクセスレビューを提供するために、Privileged Identity Management を使用して役割を管理することはお勧めします。
+Microsoft では[、Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)を使用して、ディレクトリアクセス許可を持つユーザーに対して追加の監査、制御、およびアクセスレビューを提供するために、ロールを管理します。
 
 Defender for Endpoint では、アクセス許可を管理する 2 つの方法がサポートされています。
 
--   **基本的なアクセス許可の管理**: アクセス許可をフル アクセスまたは読み取り専用に設定します。 Azure Active Directory のグローバル管理者またはセキュリティ管理者の役割を持つ基本的なアクセス許可管理ユーザーの場合、セキュリティ リーダーの役割には読み取り専用アクセス権があります。
+-   **基本的なアクセス許可の管理**: アクセス許可をフル アクセスまたは読み取り専用に設定します。 基本的なアクセス許可管理ユーザーがグローバル管理者またはセキュリティ管理者の役割を持つ場合、Azure Active Directory 閲覧者の役割には読み取り専用アクセス権があります。
 
 -   **役割ベースのアクセス制御 (RBAC)**: 役割を定義し、Azure AD ユーザー グループをロールに割り当て、ユーザー グループにデバイス グループへのアクセス権を付与することで、詳細なアクセス許可を設定します。 詳細については、次の情報を参照してください。 「役割 [ベースのアクセス制御を使用したポータル アクセスの管理」を参照してください](rbac.md)。
 
@@ -118,7 +118,7 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 
 
 ## <a name="adoption-order"></a>導入順序
-多くの場合、組織には既存のエンドポイント セキュリティ製品が配置されます。 すべての組織がウイルス対策ソリューションである必要があります。 ただし、組織が既に EDR ソリューションを埋め込み済みである場合があります。
+多くの場合、組織には既存のエンドポイント セキュリティ製品が配置されます。 すべての組織がウイルス対策ソリューションである必要があります。 ただし、組織が既にソリューションを埋め込EDR場合があります。
 
 以前は、アプリケーション層とインフラストラクチャの依存関係が厳しいので、時間がかかり、達成が困難であったセキュリティ ソリューションを置き換えるのは困難でした。 ただし、Defender for Endpoint はオペレーティング システムに組み込むため、サード パーティ製ソリューションの置き換えは簡単に実現できます。
 
@@ -127,11 +127,11 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 | コンポーネント                               | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 導入順序ランク |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | エンドポイント検出&応答 (EDR)     | Defender for Endpoint endpoint detection and response capabilitis provide advanced attack detections are near real-time and actionable. セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 <br> [詳細情報](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
-|脅威&脆弱性管理 (TVM)|脅威&脆弱性管理は、Microsoft Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次の固有の値を提供します。 <br> - エンドポイントの脆弱性と関連するリアルタイムのエンドポイント検出と応答 (EDR) の分析情報 <br> - インシデント調査中の貴重なデバイスの脆弱性コンテキスト <br> - Microsoft Intune と Microsoft System Center Configuration Manager による組み込みの修復プロセス <br> [詳細については、こちらを参照してください](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845)。| 2 |
-| 次世代保護 (NGP)        | Microsoft Defender Antivirus は、デスクトップ、ポータブル コンピューター、およびサーバーに次世代の保護を提供する組み込みのマルウェア対策ソリューションです。 Microsoft Defender ウイルス対策には、次のものが含まれます。 <br> -クラウドによって提供される、新しい脅威や新しい脅威のほぼ瞬時の検出とブロックに対する保護。 機械学習やインテリジェント セキュリティ グラフに加えて、クラウドによる保護は Microsoft Defender ウイルス対策を強化する次世代テクノロジの一部です。   <br> - 高度なファイルとプロセスの動作監視、その他のヒューリスティック ("リアルタイム保護" とも呼ばれる) を使用した常時スキャン。 <br> - 機械学習、人間および自動化されたビッグ データ分析、および詳細な脅威耐性の調査に基づく専用の保護更新プログラム。 <br> [詳細については、こちらを参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
+|脅威&脆弱性管理 (TVM)|脅威&脆弱性管理は、Microsoft Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次の固有の値を提供します。 <br> - エンドポイントの脆弱性と関連するリアルタイムEDR検出と応答 (EDR) 分析情報 <br> - インシデント調査中の貴重なデバイスの脆弱性コンテキスト <br> - 組み込みの修復プロセスは、Microsoft Intuneおよび Microsoft System Center Configuration Manager <br> [詳細情報](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845) を参照してください。| 2 |
+| 次世代保護 (NGP)        | Microsoft Defender ウイルス対策は、デスクトップ、ポータブル コンピューター、およびサーバーに次世代の保護を提供する組み込みのマルウェア対策ソリューションです。 Microsoft Defender ウイルス対策には、次のものが含まれます。 <br> -クラウドによって提供される、新しい脅威や新しい脅威のほぼ瞬時の検出とブロックに対する保護。 機械学習やインテリジェント セキュリティ グラフに加えて、クラウドによる保護は Microsoft Defender ウイルス対策を強化する次世代テクノロジの一部です。   <br> - 高度なファイルとプロセスの動作監視、その他のヒューリスティック ("リアルタイム保護" とも呼ばれる) を使用した常時スキャン。 <br> - 機械学習、人間および自動化されたビッグ データ分析、および詳細な脅威耐性の調査に基づく専用の保護更新プログラム。 <br> [詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) を参照してください。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 | 攻撃表面の縮小 (ASR)          | Microsoft Defender for Endpoint の攻撃表面の縮小機能は、新しい脅威や新たな脅威から組織内のデバイスとアプリケーションを保護するのに役立ちます。 <br> [詳細情報](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                   |
 | 自動調査&修復 (AIR)  | Microsoft Defender for Endpoint では、自動調査を使用して、個別に調査する必要があるアラートの量を大幅に削減します。 自動調査機能は、さまざまな検査アルゴリズムと、アナリストが使用するプロセス (プレイブックなど) を活用してアラートを調べ、違反を解決するために直ちに修復アクションを実行します。 これにより、アラート量が大幅に削減され、セキュリティ運用の専門家は、より高度な脅威やその他の価値の高い業務に集中できるようになります。 <br>[詳細情報](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | 該当なし      |
-| Microsoft Threat Experts (MTE)          | Microsoft Threat Experts は、セキュリティ オペレーション センター (SOC) にエキスパート レベルの監視と分析を提供するマネージ ハンティング サービスで、固有の環境における重大な脅威を見逃すのを防いでお手伝いします。 <br>[詳細情報](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | 該当なし      |
+| Microsoft 脅威エキスパート (MTE)          | Microsoft 脅威エキスパートは、セキュリティ オペレーション センター (SOC) にエキスパート レベルの監視と分析を提供するマネージ ハンティング サービスで、固有の環境における重大な脅威を見逃すのを防いでお手伝いします。 <br>[詳細情報](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | 該当なし      |
 
 ## <a name="next-step"></a>次の手順
 |||
