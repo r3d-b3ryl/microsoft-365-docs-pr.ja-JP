@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 04/30/2021
@@ -14,12 +14,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 5fcbd30eca3a6d0965fe65e13d2623ff54d1ff5f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.topic: article
+ms.openlocfilehash: 2b3d22fc50335516e6c50a9dfef9f7835c00a95b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114250"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275266"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>クラウドによる保護を有効にする
 
@@ -96,7 +97,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 4. ツリーを展開して **、MAPS Windowsコンポーネント> Microsoft Defender ウイルス対策 >します。**
 
-5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 [**OK**] を選択します。
+5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 **[OK]** をクリックします。
 
 6. 詳細な分析が **必要な場合は、[ファイル サンプルの送信] をダブルクリックします**。 最初のオプションが [有効] に設定 **され** 、他のオプションが次のどちらかに設定されている必要があります。
 
@@ -107,7 +108,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
         > [ **安全なサンプルを送信する** (1)] オプションは、ほとんどのサンプルが自動的に送信されるという意味です。 個人情報が含まれている可能性があるファイルは、引き続きプロンプトが表示され、追加の確認が必要です。
         > オプションを Always **Prompt** (0) に設定すると、デバイスの保護状態が低下します。 [送信しない **]** (2) に設定 [](configure-block-at-first-sight-microsoft-defender-antivirus.md)すると、Microsoft Defender for Endpoint の一目でブロック機能が機能しません。
 
-7. [**OK**] を選択します。
+7. **[OK]** をクリックします。
 
 ## <a name="use-powershell-cmdlets-to-turn-on-cloud-delivered-protection"></a>PowerShell コマンドレットを使用してクラウド配信の保護を有効にする
 

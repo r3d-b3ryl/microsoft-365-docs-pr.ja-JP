@@ -5,35 +5,31 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
-- BCS160
-- MET150
-- MOE150
-- BEA160
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060969"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280825"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -49,25 +45,39 @@ ms.locfileid: "52060969"
   
 ## <a name="view-a-bill-or-invoice"></a>課金内容または請求書を表示する
 
+::: moniker range="o365-worldwide"
+
 1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページの順に移動します。
-    - Office 365 Germany を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">請求と支払い</a>] ページに移動します。
-    - 21Vianet が運営する Office 365 を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">請求と支払い</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">請求と支払い</a>] ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">請求と支払い</a>] ページの順に移動します。
+
+::: moniker-end
+
 2. [**請求書**] タブで、ドロップダウン リストから日付範囲を選択し、次に表示する注文を選択します。
 3. [概要] ページには、請求書のアイテム、数量、価格、割引、全アイテムの合計が表示されます。
 4. 請求書を PDF 形式で印刷または保存するには、[**PDF のダウンロード**] を選択します。
 
-::: moniker region="o365-21vianet"
+::: moniker range="o365-21vianet"
 
 ## <a name="request-a-fapiao"></a>発票を要求する
 
 支払い後約 3 日で、発票要求を[発票管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465)に送信できます。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金情報**]  >  [**請求と支払い**] ページの順に移動します。
-
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金情報**]>、<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">[**請求と支払い**] </a> ページの順に移動します。
 2. 必要な請求書を見つけて、**[発票]** を選択します。
 
 > [!NOTE]
-
+>
 > [発票管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465)にアクセスするには、登録済みのアカウントが必要です。 アカウントをまだ設定していない場合は、「[21Vianet が運営する Office 365 の発票の申請](../../admin/services-in-china/apply-for-a-fapiao.md)」を参照してください。
 
 ::: moniker-end

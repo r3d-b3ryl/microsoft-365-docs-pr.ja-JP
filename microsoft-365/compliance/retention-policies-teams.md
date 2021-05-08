@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: b7bc84307f0db580995e039618cb01d25d6ecd66
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932860"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280801"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -163,13 +163,13 @@ Teams のチャットとチャネル メッセージからのこのデータは�
 
 ユーザーがメッセージを編集または削除しない場合の保持結果の例:
 
-- 5 日目 (通常、3 日目の保持期間の開始後 1 - 7 日):
+- 5 日目 (通常、2 日目の保持期間の開始後 1 - 7 日):
     - メッセージは SubstrateHolds フォルダーに移動し、少なくとも 1 日間そこに残り、電子情報開示ツールで検索できます。
 
 - 9 日目 (通常、SubstrateHolds フォルダー内の最低 1 日後 1 - 7 日):
     - メッセージは完全に削除され、電子情報開示検索では返されません。
 
-この例が示すように、アイテム保持ポリシーを構成して 1 日後にメッセージを削除することはできますが、サービスは複数のプロセスを経て、ポリシーに準拠した削除を行います。 その結果、1 日後の削除アクションは、メッセージが完全に削除されるまでに 18 日かかる可能性があり、メッセージは電子情報開示検索で返されなくなります。
+この例が示すように、アイテム保持ポリシーを構成して 1 日後にメッセージを削除することはできますが、サービスは複数のプロセスを経て、ポリシーに準拠した削除を行います。 その結果、1 日後の削除アクションは、メッセージが完全に削除されるまでに 16 日かかる可能性があり、メッセージは電子情報開示検索で返されなくなります。
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Skype for Business および Teams の相互運用チャット
 

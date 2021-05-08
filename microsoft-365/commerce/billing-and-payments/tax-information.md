@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,29 +13,30 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
-search.appverid:
-- MET150
-description: '異なる地域のビジネス サブスクリプションに対して Microsoft 365 に対して請求される税金の金額を確認します。 '
+search.appverid: MET150
+description: 'さまざまな地域のビジネス サブスクリプションに対して請求される税金Microsoft 365を確認します。 '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a7aa1e1825e41f463de17eebd676d8168a56d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- commerce_billing
+- PPM_jmueller
+ms.date: 03/17/2021
+ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911712"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280597"
 ---
 # <a name="tax-information"></a>税金情報
 
-Microsoft 365 製品およびサービスを購入する場合、支払う税金は、ビジネス アドレスと配送先住所の 2 つ (異なる場合) の 1 つによって決まります。 組織が米国にある場合は、連邦雇用者識別番号 (FEIN) を指定する必要があります。
+Microsoft 365製品とサービスを購入する場合、支払う税金は、ビジネス アドレスと配送先住所の 2 つ (異なる場合) の 1 つによって決まります。 組織が米国にある場合は、連邦雇用者識別番号 (FEIN) を指定する必要があります。
 
 次の国の企業は、VAT 番号または現地の同等の番号を提供できます。
 
 :::row:::
     :::column:::
+
 - アルメニア
 - オーストラリア
 - オーストリア
@@ -99,13 +101,13 @@ Microsoft 365 製品およびサービスを購入する場合、支払う税金
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>ヨーロッパ、中東、アフリカ (EMEA)
 
-EMEA 地域で Microsoft 365 サービスを購入する場合、この購入は税 (VAT) のValue-Addedされる可能性があります。
+EMEA 地域でMicrosoft 365サービスを購入する場合、この購入は税 (VAT) のValue-Addedされる可能性があります。
   
 - EU 加盟国、アルメニア、ベラルーシ、ノルウェー、トルコ、またはアラブ首長国連邦に在住し、有効な現地 VAT ID を提供しない場合、Microsoft アイルランド Operations Ltd. は、アカウントが設定されている請求国に基づいて、現在の現地 VAT レートを適用します。
 
 - リヒテンシュタイン、ロシア、セルビア、南アフリカ、スイスに住む場合は、VAT ID を提供するかどうかに関係ない VAT が適用されます。
 
-- EU のお客様の場合、VAT ID を検証する前に、VAT Information Exchange System (VIES) で確認できる必要があります。 VAT ID を確認できない場合は、現地の税務当局にお問い合わせください。
+- EU のお客様の場合、VAT ID を検証する前に、VAT 情報システム (VIES) で確認Exchange必要があります。 VAT ID を確認できない場合は、現地の税務当局にお問い合わせください。
 
 次の場合は、VAT ゼロ評価の対象となる場合があります。
   
@@ -135,7 +137,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 ## <a name="add-your-vat-id"></a>VAT ID を追加する
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. **[製品]** タブで、更新するサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの [サービス利用状況アドレス **] セクションで** 、[サービス使用状況アドレスの **編集] を選択します**。
 4. [サービス利用状況 **アドレスの編集** ] ウィンドウの **[VAT** 番号] ボックスに、プレフィックスを含む VAT ID を入力し、スペースを使用せずに入力します。
@@ -155,7 +157,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 ## <a name="apply-for-tax-exempt-status"></a>免税ステータスを申請する
 
-市場で免税ステータスの対象となる場合は、サービス要求[](/office365/admin/contact-support-for-business-products)を開始して、組織の免税ステータスを確立します。
+市場で免税ステータスの対象となる場合は、サービス要求[](../../business-video/get-help-support.md)を開始して、組織の免税ステータスを確立します。
 
 |国またはロケール | ドキュメント |
 |------------------|----------------|

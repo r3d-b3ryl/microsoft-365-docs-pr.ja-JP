@@ -5,27 +5,33 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
 search.appverid: MET150
-description: Microsoft 365 管理センターでサード パーティ製アプリをアクティブ化および管理する方法について説明します。
-ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: 管理センターでサード パーティ製アプリをアクティブ化および管理するMicrosoft 365します。
+ms.date: 04/15/2021
+ms.openlocfilehash: eece8154640dcdd55239511ed099abcdca39e807
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860537"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280525"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサード パーティ製アプリのサブスクリプションを管理する
 
-新しい Microsoft 365 管理センターでは、サード パーティ製アプリのライセンスと課金を管理できます。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
+新しい管理センターでサード パーティ製アプリのライセンスと請求をMicrosoft 365できます。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
 
-プレビュー モードを有効にした状態で、Microsoft 365 管理センターでサード パーティ製アプリのライセンスと課金を管理できます。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
+プレビュー モードを有効にした状態で、Microsoft 365アプリのライセンスと課金を管理できます。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>サービスとしてのソフトウェア アプリを取得する方法
 
@@ -35,7 +41,7 @@ ms.locfileid: "51860537"
 - **パートナー購入** – パートナー センターを通じてパートナーと一緒にサブスクリプションを購入します。
 - **Microsoft の提案** – サード パーティ製アプリを含む Microsoft Sales からの提案に応答します。
 
-お客様がアプリを購入し、Microsoft カスタマー 契約に同意すると、Microsoft 365 管理センターまたは Microsoft Store for Business で管理できます。
+お客様がアプリを購入し、Microsoft カスタマー 契約に同意すると、管理センターまたは管理センター Microsoft 365で管理ビジネス向け Microsoft Store。
 
 アプリ プロバイダーは、アプリを一定額で販売するか、ユーザーのライセンスを購入します。
 
@@ -65,13 +71,13 @@ ms.locfileid: "51860537"
 
 1. 管理センターで、[製品アプリの請求 **]**  >  **ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">に移動</a>します。
 2. 管理するアプリを検索して選択します。
-3. [ **設定と&] で**、[発行元 **のポータルで管理] を選択します**。
+3. **[設定 &] で**、[発行元 **のポータルで管理] を選択します**。
 
 アプリの発行元のサイトにアクセスし、アプリをアクティブ化できます。
 
 ## <a name="manage-third-party-apps"></a>サードパーティ製のアプリを管理する
 
-管理者は、Microsoft 365 管理センターとサード パーティ アプリ プロバイダーのポータルの 2 つの場所でサード パーティ 製アプリを管理します。
+管理者は、管理センターとサード パーティ アプリ プロバイダーのポータルの 2 つの場所Microsoft 365サードパーティ アプリを管理します。
 
 各ポータルで実行できる操作を次に示します。
 
@@ -83,7 +89,7 @@ ms.locfileid: "51860537"
 
 ## <a name="assign-licenses"></a>ライセンスを割り当てる
 
-管理者は、ユーザーに割り当てる前にサード パーティ製アプリをアクティブにする必要があります。 サード パーティの発行元のポータルでアクティブ化されます。 アプリ ページの [設定] の **[&]** で、ライセンスを割り当てるリンクを選択します。
+管理者は、ユーザーに割り当てる前にサード パーティ製アプリをアクティブにする必要があります。 サード パーティの発行元のポータルでアクティブ化されます。 [アプリ] ページの [ライセンスの **設定 &]** で、ライセンスを割り当てるリンクを選択します。
 
 1. 管理センターで、[製品アプリの請求 **]**  >  **ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">に移動</a>します。
 2. 管理するアプリを検索して選択します。

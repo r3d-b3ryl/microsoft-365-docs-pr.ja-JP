@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: 別のプランにアップグレードする方法について学習します。
-ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.date: 04/21/2021
+ms.openlocfilehash: d9adf8bb18279d5057278a7c55cd751838325bc2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939174"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280441"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
@@ -36,20 +37,13 @@ ms.locfileid: "51939174"
 [アップグレード] タブ **を使用** すると、新しいプランを購入するプロセスが開始されます。 すべてのユーザーに新しいプランのライセンスが自動的に割り当てされ、古いプランがキャンセルされます。
 
 1. 管理センターで、[製品の請求]  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ページに移動</a>します。
-
 2. アップグレードするサブスクリプションを選択します。
-
 3. [サブスクリプションの詳細] ページで、[**アップグレード**] を選択します。
-
 4. アップグレードする計画を見つけ、[**アップグレード**] ボタンを選択します。
-
 5. 必要なライセンス数を入力し、毎月または年間支払いを行うかどうかを選択し、[チェックアウトに移動] **を選択します**。
-
     > [!NOTE]
     > すべてのユーザーをカバーするのに十分なライセンスを購入してください。
-
 6. 次のページでは、**販売先** 住所、**請求先** 情報、**この注文の品目** を確認します。 この手順では、既定の支払い方法を変更できます。 変更が必要な場合は、該当するセクションの横にある [**変更**] を選択します。
-
 7. 完了したら、[注文の配置] **を選択します**。
 
 チェックアウトが完了すると、アップグレードの完了に数分かかる場合があります。 すぐに新しいサブスクリプションの使用を開始することができます。 [ **アップグレードの状態を確認する** ] を選択して、アップグレードの進行状況を確認します。 アップグレードが完了すると通知されます。 通知は、新しいサブスクリプション **の横にある** [製品] ページに表示されます。
@@ -62,7 +56,7 @@ ms.locfileid: "51939174"
 
 [アップグレード] タブ **を使用** すると、現在のプランのサービスに基づいてアップグレードできるプランが表示されます。 [アップグレード] タブを **使用して** 、同じデータ関連サービスを持つプラン、または上位バージョンにのみ移動できます。 これにより、変更中にユーザーがそれらのサービスに関連するデータを失わない。
 
-サービスの数が少ないプランに移行する場合は、手動で[](change-plans-manually.md)プランを変更するか、サポート[を呼](../../admin/contact-support-for-business-products.md)び出します。
+サービスの数が少ないプランに移行する場合は、手動で[](change-plans-manually.md)プランを変更するか、サポート[を呼](../../business-video/get-help-support.md)び出します。
 
 ## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>一部のユーザーのみをアップグレードします。 これを行う方法
 
@@ -80,43 +74,43 @@ ms.locfileid: "51939174"
 
 ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>アップグレードするプランが一覧に表示される理由
 
-#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>ライセンスよりも多くのユーザーを持つため、サブスクリプションを今すぐアップグレードできない。
+#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>ライセンスより多くのユーザーを持つため、サブスクリプションを今すぐアップグレードできない
 
-プランを自動的にアップグレードするには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決した後、[アップグレード] タブにプランが **表示されます。** ない場合は、手動 [でプランを変更するか](change-plans-manually.md)、サポート [を呼び出します](../../admin/contact-support-for-business-products.md)。
+プランを自動的にアップグレードするには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決した後、[アップグレード] タブにプランが **表示されます。** ない場合は、手動 [でプランを変更するか](change-plans-manually.md)、サポート [を呼び出します](../../business-video/get-help-support.md)。
 
-#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>このサブスクリプションが完全にセットアップされていないか、サービスが利用できないので、今すぐサブスクリプションをアップグレードできません。
+#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>このサブスクリプションが完全にセットアップされていないか、サービスが利用できないので、今すぐサブスクリプションをアップグレードできません
 
 たとえば、サービスの 1 つにインシデントが発生した場合、すべてのサービスが正常になるまでアップグレードを行う必要があります。 プロビジョニングまたはサービスの正常性の問題が発生した場合は、管理センターで [正常性サービスの正常性] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">に移動</a> します。
 
-サービスが完全にはプロビジョニングされていないか、サービス正常性に問題があることがわかった場合は、サービスが利用可能になるまで数時間待ってから、もう一度試してください。 それでも問題が解決しない場合は、サポートにお [問い合わせください](../../admin/contact-support-for-business-products.md)。
+サービスが完全にはプロビジョニングされていないか、サービス正常性に問題があることがわかった場合は、サービスが利用可能になるまで数時間待ってから、もう一度試してください。 それでも問題が解決しない場合は、サポートにお [問い合わせください](../../business-video/get-help-support.md)。
 
-#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>別のプランがアップグレード中か、クレジット チェックを保留中のため、プランをアップグレードできない。
+#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>別のプランがアップグレード中か、クレジット チェックを保留中のため、プランをアップグレードできない
 
 プランをアップグレードする前に、クレジット チェックが完了するまで待ちます。 与信審査の完了には、最大で 2 営業日かかる場合があります。
 
-#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>現時点では、このサブスクリプションはアップグレードの対象ではありません。
+#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>現在、このサブスクリプションはアップグレードの対象ではありません
 
-手動で[プランを変更するか、サポート](change-plans-manually.md)[に電話することができます](../../admin/contact-support-for-business-products.md)。
+手動で[プランを変更するか、サポート](change-plans-manually.md)[に電話することができます](../../business-video/get-help-support.md)。
 
-#### <a name="i-see-a-different-message-than-whats-listed-here"></a>ここで挙がっているものとは別のメッセージが表示されます。
+#### <a name="i-see-a-different-message-than-whats-listed-here"></a>ここに記載されているメッセージとは異なるメッセージが表示される
 
-手動で[プランを変更するか、サポート](change-plans-manually.md)[に電話することができます](../../admin/contact-support-for-business-products.md)。
+手動で[プランを変更するか、サポート](change-plans-manually.md)[に電話することができます](../../business-video/get-help-support.md)。
 
 ### <a name="additional-reasons-you-cant-upgrade"></a>アップグレードできないその他の理由
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>同じ製品に対して 2 つ以上のプランがある
 
-[アップグレード] タブは、 **すべてのユーザーが** 同じプランを購読している場合にのみ使用できます。 たとえば、Microsoft 365 Business Standard プランが 2 つある場合は、そのうちの 1 つを別のプランに自動的にアップグレードする必要はありません。
+[アップグレード] タブは、 **すべてのユーザーが** 同じプランを購読している場合にのみ使用できます。 たとえば、2 つのプランMicrosoft 365 Business Standard場合、そのプランの 1 つを別のプランに自動的にアップグレードできない場合です。
 
 #### <a name="you-have-a-prepaid-plan"></a>プリペイド (先払い) プランを使用している
 
 サブスクリプションの支払いを事前に済ませた場合は、手動でプラン [を変更できる場合があります](change-plans-manually.md)。 ただし、現在のプランの有効期限が切れる前にプランをアップグレードした場合、現在のサブスクリプションに残っている未使用時間のクレジットは受け取れなくなっています。
 
-サポートを呼 [び出してヘルプ](../../admin/contact-support-for-business-products.md) を呼び出す方法も可能です。
+サポートを呼 [び出してヘルプ](../../business-video/get-help-support.md) を呼び出す方法も可能です。
 
 #### <a name="you-have-a-government-or-non-profit-plan"></a>政府機関向けプランまたは非営利団体向けプランに加入している
 
-政府または非営利のプランをお持ちのお客様は、手動[](change-plans-manually.md)でプランを変更するか、サポート[にお電話ください](../../admin/contact-support-for-business-products.md)。
+政府または非営利のプランをお持ちのお客様は、手動[](change-plans-manually.md)でプランを変更するか、サポート[にお電話ください](../../business-video/get-help-support.md)。
 
 #### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>アップグレードするサブスクリプションに一時的な問題がある
 
@@ -124,9 +118,9 @@ ms.locfileid: "51939174"
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>アップグレードするプランがサポートされていないオプション
 
-プランをアップグレードすると、アップグレードできるプランが、現在のプランのサービスに基づいて表示されます。 同じデータ関連サービス (Exchange Online、SharePoint Online など) を持つプラン、または上位バージョンのプランにのみアップグレードできます。 これにより、アップグレード中にユーザー \' がそれらのサービスに関連するデータを失うのを確認できます。
+プランをアップグレードすると、アップグレードできるプランが、現在のプランのサービスに基づいて表示されます。 同じデータ関連サービス (Exchange Online や SharePoint Online など) を持つプラン、または上位バージョンのプランにのみアップグレードできます。 これにより、アップグレード中にユーザー \' がそれらのサービスに関連するデータを失うのを確認できます。
 
-プランを自動的にアップグレードできない場合は、代わりに手動でプラン [を変更できる](change-plans-manually.md)場合があります。 サポートを呼 [び出してヘルプ](../../admin/contact-support-for-business-products.md) を呼び出す方法も可能です。
+プランを自動的にアップグレードできない場合は、代わりに手動でプラン [を変更できる](change-plans-manually.md)場合があります。 サポートを呼 [び出してヘルプ](../../business-video/get-help-support.md) を呼び出す方法も可能です。
 
 #### <a name="your-subscription-has-an-add-on"></a>サブスクリプションにアドオンがある
 
@@ -142,19 +136,19 @@ ms.locfileid: "51939174"
 
 ### <a name="access-to-services"></a>サービスへのアクセス
 
- **プランの** アップグレード中に管理者は管理センターを使用することはできません。 これには最大 1 時間かかります。
+**プランの** アップグレード中に管理者は管理センターを使用することはできません。 これには最大 1 時間かかります。
   
- **ユーザー** がサービスの中断を経験することはありません。 アップグレードが完全に完了するまで、既存のサービスが引き続き提供されます。
+**ユーザー** がサービスの中断を経験することはありません。 アップグレードが完全に完了するまで、既存のサービスが引き続き提供されます。
   
 ### <a name="users-and-licenses"></a>ユーザーとライセンス
 
 古いサブスクリプションのユーザーは、自動的に新しいサブスクリプションに移ります。
   
-古いサブスクリプションに複数のサービスが含まれる場合、ユーザーが割り当てられているサービスを変更した場合は、プランをアップグレードする前にこの点に注意して、後で変更を再作成することができます。 すべてのユーザーには、新しいサブスクリプションのすべてのサービスへのアクセス権が与えられます。 たとえば、以前に Microsoft 365 Business Premium を 100 人のユーザー全員に対して購入したが、SharePoint Online サービスを 50 人から割り当て解除した場合、プランをアップグレードした後も、この変更は保持されません。
+古いサブスクリプションに複数のサービスが含まれる場合、ユーザーが割り当てられているサービスを変更した場合は、プランをアップグレードする前にこの点に注意して、後で変更を再作成することができます。 すべてのユーザーには、新しいサブスクリプションのすべてのサービスへのアクセス権が与えられます。 たとえば、以前に 100 人のユーザー全員に対して Microsoft 365 Business Premium を購入したが、SharePoint Online サービスを 50 人から割り当て解除した場合、プランをアップグレードした後も、この変更は保持されません。
   
 プランをアップグレードする前に複数のサブスクリプションを持ち、ユーザーに複数のサブスクリプションにライセンスを割り当てる場合、この割り当てパターンは新しいサブスクリプションで可能な限り保持されます。
   
-すべてのユーザー データは、Exchange メールボックス、SharePoint Online ドキュメント、リスト、その他の情報など、アップグレード中に保持されます。
+すべてのユーザー データは、アップグレード中に保持されます(メールボックス、Exchangeオンライン ドキュメントSharePoint、その他の情報を含む)。
   
 ### <a name="billing"></a>請求
 
@@ -167,10 +161,9 @@ ms.locfileid: "51939174"
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>プランのアップグレードに役立つ通話サポート
 
-[Microsoft サポートへのお問い合わせください](../../admin/contact-support-for-business-products.md)
+[Microsoft サポートへのお問い合わせください](../../business-video/get-help-support.md)
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[手動でプランを変更する](change-plans-manually.md)
-
-[Microsoft 365 for business プランを切り替える前にデータをバックアップする](back-up-data-before-switching-plans.md)
+[手動でプランを変更](change-plans-manually.md) する (記事)\
+[ビジネス プランのデータを切りMicrosoft 365する前にデータをバックアップする](back-up-data-before-switching-plans.md)(記事)

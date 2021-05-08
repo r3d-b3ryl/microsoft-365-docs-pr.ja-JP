@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,16 +17,17 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- Commerce
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: 請求プロファイルが請求書をサポートする方法について学習します。
-ms.openlocfilehash: 7f4c0aed1bccd0e5df5b09e15e6201933e937993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 57786df370246c2b4fda556a9c48eb828db1cb4f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576951"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280789"
 ---
 # <a name="understand-billing-profiles"></a>課金プロファイルを理解する
 
@@ -47,32 +49,28 @@ Microsoft から製品やサービスを購入する商用顧客の場合、請�
 
 課金プロファイルのロールには、購入を制御し、請求書を表示および管理するためのアクセス許可があります。 組織内の調達チームのメンバーなど、請求書を追跡、整理、支払うユーザーにこれらの役割を割り当てます。
 
-| Role                          | 説明                                                                       |
-|-----------------------------  |---------------------------------------------------------------------------------  |
-| 課金プロファイルの所有者         | 課金プロファイルに関するすべてを管理する                                           |
-| 課金プロファイル投稿者   | 課金プロファイルのアクセス許可を除くすべてを管理する                         |
-| 課金プロファイル リーダー        | 課金プロファイル内のすべてのデータの読み取り専用ビュー                                 |
-| 請求書マネージャー               | 請求書の表示と支払い、および請求プロファイル内のすべての情報の読み取り専用ビュー   |
+| Role                         | 説明                                                                      |
+|----------------------------- |--------------------------------------------------------------------------------- |
+| 課金プロファイルの所有者        | 課金プロファイルに関するすべてを管理する                                          |
+| 課金プロファイル投稿者  | 課金プロファイルのアクセス許可を除くすべてを管理する                        |
+| 課金プロファイル リーダー       | 課金プロファイル内のすべてのデータの読み取り専用ビュー                                |
+| 請求書マネージャー              | 請求書の表示と支払い、および請求プロファイル内のすべての情報の読み取り専用ビュー  |
 
 ## <a name="view-billing-profiles"></a>請求プロファイルの表示
 
 1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページの順に移動します。
-
 2. [ **課金プロファイル] を** 選択し、一覧から請求プロファイルを選択します。
 
     - [概要 **] タブ** で、請求プロファイルの詳細を編集し、電子メールによる請求書の送信をオンまたはオフにできます。
-
     - [アクセス許可 **] タブ** で、請求書を支払う役割をユーザーに割り当てることができます。
-
     - [Azure クレジット **残高] タブ** で、Azure のお客様は、その請求プロファイルで使用される Azure クレジットのトランザクション残高履歴を確認できます。
-
     - Azure の **[クレジット] タブ** で、Azure のお客様は、その請求プロファイルに関連付けられている Azure クレジットの一覧と有効期限を確認できます。
 
     > [!NOTE]
     > Azure クレジットを持ってない場合は、[Azure クレジット残高] タブまたは **[Azure** クレジット] **タブは表示** されません。
 
-## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートに問い合わせてください。
+## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートに連絡する
 
 Azure の料金に関する質問やサポートが必要な場合は、Azure サポートを <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">使用してサポート 要求を作成します</a>。
 
-Microsoft 365 管理センターで請求プロファイルに関する質問やヘルプが必要な場合は、ビジネス [製品のサポートにお問い合わせください](/office365/admin/contact-support-for-business-products)。
+管理センターで請求プロファイルに関する質問やサポートが必要なMicrosoft 365、ビジネス製品の[サポートにお問い合わせください](../../business-video/get-help-support.md)。

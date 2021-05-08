@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 05/20/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3de9ddfc0cab12d2eea717c5d6b01e5b70b21213
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: e0253c4ac7d92c91e3fda45681568d721645f2b0
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765793"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275386"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-av"></a>Microsoft Defender AV で検疫済みファイルを復元する
 
@@ -31,9 +32,9 @@ ms.locfileid: "51765793"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender ウイルス対策がデバイス上の脅威を検出して修復するように構成されている場合、Microsoft Defender ウイルス対策は疑わしいファイルを検疫します。 検疫済みファイルが脅威ではないと思う場合は、復元できます。
+デバイスMicrosoft Defender ウイルス対策脅威を検出して修復するように構成されている場合は、疑わしいMicrosoft Defender ウイルス対策を検疫します。 検疫済みファイルが脅威ではないと思う場合は、復元できます。
 
-1. **Windows セキュリティを開きます**。
+1. [ファイル **Windows セキュリティ] を開きます**。
 2. [ **ウイルス対策&保護] を選択し、[** 保護の履歴] **をクリックします**。
 3. 最近使用したアイテムの一覧で、[検疫済みアイテム **] をフィルター処理します**。
 4. 保持するアイテムを選択し、復元などのアクションを実行します。
@@ -47,4 +48,4 @@ Microsoft Defender ウイルス対策がデバイス上の脅威を検出して�
 - [スキャン結果の確認](review-scan-results-microsoft-defender-antivirus.md)
 - [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Windows Server で Microsoft Defender ウイルス対策の除外を構成する](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [サーバー Microsoft Defender ウイルス対策の除外をWindowsする](configure-server-exclusions-microsoft-defender-antivirus.md)

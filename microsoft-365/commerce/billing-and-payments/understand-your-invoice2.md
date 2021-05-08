@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,30 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Microsoft 365 for Business の課金内容または請求書の請求内容および課金情報についての詳細、および発注書番号を変更する方法について説明します。
-ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 9eb9d063b3634269600d5f6566e9e5f373ab08c2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245018"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280489"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
 > [!IMPORTANT]
-> 2021 年 1 月 26 日現在、ベルギー、フランス、イタリア、ルクセンブルク、ポルトガル、スペイン、および米国の顧客に対して新しい銀行口座がサポートされなくなりました。 これらの国の既存の顧客である場合は、既存の銀行口座を使用してサブスクリプションの支払いを続け、新しいサブスクリプションを追加できますが、銀行口座が良好な位置にある限り、そのサブスクリプションを追加できます。
+> 2021 年 1 月 26 日をもって、ベルギー、フランス、イタリア、ルクセンブルグ、ポルトガル、スペイン、および米国のお客様に、新しい銀行口座をサポートしなくなりました。 これらの国のいずれかの既存のお客様である場合、既存の銀行口座で引き続きサブスクリプションの支払いを行い、新しいサブスクリプションを追加できますが、銀行口座が良好な状態である場合に限ります。
 
 月次または年次 (サブスクリプションの購入時に選択したオプションに応じて) のいずれかで、新しい請求明細が管理センターで利用可能であることを通知するメールを受信します。 「[一般法人向け Office 365 の課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
   
@@ -96,7 +93,7 @@ ms.locfileid: "52245018"
 |サービスの利用先住所|サービスを利用している住所です。通常は販売先の住所と同じです。 サービスの利用先住所を更新する場合は、「[請求先住所を変更する](change-your-billing-addresses.md)」を参照してください。|
 |販売先|自分の会社名と住所です。この情報を更新する場合は、「[組織の住所およびその他のプロファイル情報を変更する](../../admin/manage/change-address-contact-and-more.md)」を参照してください。  |
 |小計|請求書に記載されている各サブスクリプションには、そのサブスクリプションのすべての料金、割引、クレジット、小計、税、合計列の個別の小計行があります。|
-|税|請求書の 1 ページ目には、税の合計が表示されます。2 ページ目には、適用される税率と、各明細の合計税額が表示されます。請求書に税金が含まれているが、会社が免税である場合は[サポートにお問い合わせください](../../admin/contact-support-for-business-products.md)。  |
+|税|請求書の 1 ページ目には、税の合計が表示されます。2 ページ目には、適用される税率と、各明細の合計税額が表示されます。請求書に税金が含まれているが、会社が免税である場合は[サポートにお問い合わせください](../../business-video/get-help-support.md)。  |
 |合計|請求書の課金期間の請求額です。|
 
 ## <a name="change-your-purchase-order-number"></a>発注書番号を変更する
@@ -109,27 +106,28 @@ ms.locfileid: "52245018"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+
 ::: moniker-end
 
 1. **[製品]** タブで、変更するサブスクリプションを選択します。
 
-1. [サブスクリプションの詳細] ページの [ **サブスクリプションと支払** いの設定] セクションで、[請求書の編集] **を選択します**。 
+1. [サブスクリプションの詳細] ページの [ **サブスクリプションと支払** いの設定] セクションで、[請求書の編集] **を選択します**。
 
 1. [音声で支払う詳細の編集 **]** ウィンドウの下部で、PO 番号を入力し、[保存] を **選択します**。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 for business サブスクリプションを支払う](pay-for-your-subscription.md)
-
-[Minecraft: Education Edition の支払いオプション](/education/windows/school-get-minecraft)
+[ビジネス サブスクリプションのMicrosoft 365支払い](pay-for-your-subscription.md)(記事)\
+[Minecraft: Education Edition の支払いオプション](/education/windows/school-get-minecraft) (記事) \

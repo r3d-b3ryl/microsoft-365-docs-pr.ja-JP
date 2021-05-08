@@ -20,12 +20,12 @@ search.appverid:
 description: Microsoft 365 Business Premium の機能について説明します。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f4c41e86f3a98c2af076a58e311aa14be79704e9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580332"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245182"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -45,5 +45,7 @@ Microsoft 365 Business Premium にサインアップすると、Microsoft 365 Bu
 | セキュリティで保護されたビジネス データ | 個人用データは PIN アクセス、制限付きコピーや保存によって個人のデバイスで保護されます。 情報保護を追加して、認証されたユーザーのみが機密情報にアクセスできるようにすることもできます。 |
 | デバイスをセキュリティで保護する | コピーや貼り付けなどのモバイルアクセスを制限することで、デバイス上の作業ファイルを保護することができます。 登録されているモバイル デバイスの紛失または盗難があった場合は、ビジネス データを選択的にデバイスからワイプすることもできます。 |
 | その他のセキュリティ機能 | Microsoft 365 Business Premium の高度な機能を使用すると、サイバー アタックからビジネスを保護し、機密情報を保護できます。 この機能には、Office 365 Advanced Threat Protection、データ損失防止ポリシー (DLP)、Exchange Online アーカイブ、Azure Information Protection、および Intune が含まれます。 |
+
+Microsoft Business Premium を使用している場合、以下のライブラリのガイダンスに従うと、最も手早くセキュリティ設定を行い安全に共同作業ができるでしょう: [中小企業向け Microsoft 365 およびキャンペーン ](../campaigns/index.md)。 このガイダンスは、Microsoft Defending Democracy チームと協力して開発され、高度なハッカーによるサイバー攻撃から中小企業のユーザーを保護します。 
 
 詳細については、「[Microsoft 365 Business コンテンツ](../business/index.yml)」を参照してください。

@@ -1,12 +1,12 @@
 ---
-title: Microsoft Defender ウイルス対策仮想デスクトップ インフラストラクチャ展開ガイド
-description: 保護とパフォーマンスの最適なバランスを保つには、仮想デスクトップ環境に Microsoft Defender ウイルス対策を展開する方法について説明します。
+title: Microsoft Defender ウイルス対策仮想デスクトップ インフラストラクチャの展開ガイド
+description: 仮想デスクトップ環境にMicrosoft Defender ウイルス対策、保護とパフォーマンスの最適なバランスを保つ方法について説明します。
 keywords: vdi、hyper-v、vm、仮想マシン、Windows Defender、ウイルス対策、av、仮想デスクトップ、rds、リモート デスクトップ
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,13 @@ ms.date: 12/28/2020
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: fed66586dc0607989e407ecd790d2af8c40e2939
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765733"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275254"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -30,11 +31,11 @@ ms.locfileid: "51765733"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-標準のオンプレミスまたはハードウェア構成に加えて、リモート デスクトップ (RDS) または仮想デスクトップ インフラストラクチャ (VDI) 環境でも Microsoft Defender Antivirus を使用できます。
+標準のオンプレミスまたはハードウェア構成に加えて、リモート デスクトップ (RDS) または仮想デスクトップ インフラストラクチャ (VDI) 環境でも Microsoft Defender ウイルス対策 を使用できます。
 
-[Microsoft リモート デスクトップ サービスと](/azure/virtual-desktop)VDI のサポートの詳細については、「Windows Virtual Desktop のドキュメント」を参照してください。
+サービス[Windows VDI サポート](/azure/virtual-desktop)の詳細については、「仮想デスクトップ のドキュメントMicrosoft リモート デスクトップ参照してください。
 
-Azure ベースの仮想マシンについては [、「Install Endpoint Protection in Azure Defender」を参照してください](/azure/security-center/security-center-install-endpoint-protection)。
+Azure ベースの仮想マシンについては[、「Install Endpoint Protection In Azure Defender」を参照してください](/azure/security-center/security-center-install-endpoint-protection)。
 
 VDIs で実行されている VM に更新プログラムを簡単に展開する機能により、このガイドを短縮して、コンピューターの更新プログラムをすばやく簡単に取得する方法に焦点を当ててください。 更新プログラムはホスト サーバー上のコンポーネント ビットに展開され、有効になったときに VM に直接ダウンロードされるので、定期的にゴールデン イメージを作成してシールする必要がなくなりました。
 
@@ -48,14 +49,14 @@ VDIs で実行されている VM に更新プログラムを簡単に展開す�
 - [しばらくオフラインだった古いコンピューターまたはコンピューターをスキャンする](#scan-vms-that-have-been-offline)
 - [除外を適用する](#exclusions)
 
-また、新しい共有セキュリティ インテリジェンス更新機能を参照する仮想デスクトップ インフラストラクチャ上のホワイトペーパー [Microsoft Defender Antivirus](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)をダウンロードし、独自の VDI でウイルス対策のパフォーマンスをテストする方法に関するパフォーマンス テストとガイダンスを参照できます。
+また、新しい共有セキュリティ インテリジェンス更新機能を参照する仮想デスクトップ インフラストラクチャのホワイトペーパー [Microsoft Defender ウイルス対策](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)をダウンロードし、独自の VDI でウイルス対策のパフォーマンスをテストする方法に関するパフォーマンス テストとガイダンスを参照できます。
 
 > [!IMPORTANT]
-> VDI は Windows Server 2012 または Windows Server 2016 でホストすることができますが、以前のバージョンの Windows では使用できない保護テクノロジと機能が強化されたので、仮想マシン (VM) は少なくとも Windows 10、1607 を実行している必要があります。<br/>Windows 10 Insider Preview の仮想マシンで Microsoft Defender AV が動作する方法には、パフォーマンスと機能の改善点があります。ビルド 18323 (以降)。 Insider Preview ビルドを使用する必要がある場合は、このガイドで確認します。指定されていない場合、最適な保護とパフォーマンスを実現するために必要な最小バージョンは Windows 10 1607 です。
+> VDI は Windows Server 2012 または Windows Server 2016 でホストすることができますが、以前のバージョンの Windows では使用できない保護テクノロジと機能が強化されたので、仮想マシン (VM) は少なくとも 1607 の Windows 10 を実行している必要があります。<br/>microsoft Defender AV が Windows 10 Insider Preview の仮想マシンで動作する方法には、パフォーマンスと機能の改善点があります。ビルド 18323 (以降)。 Insider Preview ビルドを使用する必要がある場合は、このガイドで確認します。指定されていない場合、最適な保護とパフォーマンスを実現するために必要な最小バージョンは 1607 Windows 10です。
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>専用の VDI ファイル共有をセットアップする
 
-Windows 10 バージョン 1903 では、共有セキュリティ インテリジェンス機能が導入され、ダウンロードしたセキュリティ インテリジェンス更新プログラムのアンパック処理がホスト コンピューターにオフロードされ、以前の CPU、ディスク、メモリ リソースが個々のコンピューターに保存されました。 この機能はバックポートされ、Windows 10 バージョン 1703 以上で動作します。 この機能は、グループ ポリシーまたは PowerShell で設定できます。
+Windows 10 バージョン 1903 では、共有セキュリティ インテリジェンス機能が導入され、ダウンロードしたセキュリティ インテリジェンス更新プログラムのアンパック処理がホスト コンピューターにオフロードされ、以前の CPU、ディスク、メモリ リソースが個々のコンピューターに保存されました。 この機能はバックポートされ、バージョン 1703 Windows 10で動作します。 この機能は、グループ ポリシーまたは PowerShell で設定できます。
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>グループ ポリシーを使用して、共有セキュリティ インテリジェンス機能を有効にします。
 
@@ -65,13 +66,13 @@ Windows 10 バージョン 1903 では、共有セキュリティ インテリ�
 
 3. [管理 **用テンプレート] をクリックします**。
 
-4. ツリーを Windows コンポーネントの Microsoft Defender ウイルス **対策**  >  **セキュリティ**  >  **インテリジェンス更新プログラムに展開します**。
+4. ツリーを展開して、**セキュリティ Windows更新**  >  **Microsoft Defender ウイルス対策**  >  **コンポーネントを展開します**。
 
 5. [VDI クライアント **のセキュリティ インテリジェンスの場所** を定義する] をダブルクリックし、オプションを [有効] に **設定します**。 フィールドが自動的に表示されます。
 
 6. Enter `\\<sharedlocation\>\wdav-update` (この値のヘルプについては、「ダウンロードとアンパック [」を参照してください](#download-and-unpackage-the-latest-updates))。
 
-7. **[OK]** をクリックします。
+7. [**OK**] をクリックします。
 
 8. テストする VM に GPO を展開します。
 
@@ -112,7 +113,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 2. 名前をセキュリティ インテリジェンス **アンパックとして入力します**。 [トリガー] タブ **に移動** します。[ **新規...] を選択します。** > **[日**] を選択し **、[OK] を選択します**。
 
-3. [操作] タブ **に移動** します。[ **新規...] を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [ `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` 引数の追加 **] フィールドに入力** します。 **[OK]** を選択します。
+3. [操作] タブ **に移動** します。[ **新規...] を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [ `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` 引数の追加 **] フィールドに入力** します。 **[OK]** をクリックします。
 
 4. 必要に応じて、追加の設定を構成できます。
 
@@ -144,7 +145,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 スケジュールされたスキャンは、リアルタイムの保護 [とスキャンに加えて実行されます](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
-スキャン自体の開始時刻は、スケジュールされたスキャン ポリシー **(ScheduleDay、ScheduleTime、****および** **ScheduleQuickScanTime) に基づいて引き続き実行されます**。 ランダム化によって、Microsoft Defender Antivirus は、スケジュールされたスキャンに設定された時間から 4 時間以内に各コンピューターでスキャンを開始します。
+スキャン自体の開始時刻は、スケジュールされたスキャン ポリシー **(ScheduleDay、ScheduleTime、****および** **ScheduleQuickScanTime) に基づいて引き続き実行されます**。 ランダム化を行Microsoft Defender ウイルス対策、スケジュールされたスキャンに設定された時刻から 4 時間以内に各コンピューターでスキャンを開始します。
 
 「スケジュール [されたスキャンで](scheduled-catch-up-scans-microsoft-defender-antivirus.md) 使用できるその他の構成オプションについては、スキャンをスケジュールする」を参照してください。
 
@@ -152,21 +153,21 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 スケジュールされたスキャン中に実行するスキャンの種類を指定できます。 クイック スキャンは、マルウェアをアクティブにする必要があるすべての場所を検索するように設計された、優先的な方法です。 次の手順では、グループ ポリシーを使用してクイック スキャンを設定する方法について説明します。
 
-1. グループ ポリシー エディターで、[管理用テンプレート] Windows **コンポーネント**  >    >  **[Microsoft Defender ウイルス対策スキャン] に**  >  **移動します**。
+1. グループ ポリシー エディターで、[スキャン] の **[** 管理  >  **用Windows]**  >  **Microsoft Defender ウイルス対策**  >  **移動します**。
 
 2. [ **スケジュールされたスキャンに使用するスキャンの種類を指定する] を選択** し、ポリシー設定を編集します。
 
 3. ポリシーを [有効] **に設定し**、[オプション] で **[クイック** スキャン]  **を選択します**。
 
-4. **[OK]** を選択します。 
+4. **[OK]** をクリックします。 
 
 5. グループ ポリシー オブジェクトは、通常と同じ方法で展開します。
 
 ## <a name="prevent-notifications"></a>通知を防止する
 
-Microsoft Defender ウイルス対策通知が複数のセッションに送信または保持される場合があります。 この問題を最小限に抑えるために、Microsoft Defender ウイルス対策ユーザー インターフェイスをロックダウンできます。 次の手順では、グループ ポリシーを使用して通知を抑制する方法について説明します。
+場合によっては、Microsoft Defender ウイルス対策通知が複数のセッションに送信または保持される場合があります。 この問題を最小限に抑えるために、ユーザー インターフェイスのMicrosoft Defender ウイルス対策できます。 次の手順では、グループ ポリシーを使用して通知を抑制する方法について説明します。
 
-1. グループ ポリシー エディターで **、[Windows** コンポーネント]  >  **[Microsoft Defender ウイルス対策クライアント** インターフェイス]  >  **に移動します**。
+1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネント**  >  **Microsoft Defender ウイルス対策**  >  **移動します**。
 
 2. [すべての **通知を非表示にする] を** 選択し、ポリシー設定を編集します。 
 
@@ -174,12 +175,12 @@ Microsoft Defender ウイルス対策通知が複数のセッションに送信�
 
 4. グループ ポリシー オブジェクトは、通常と同じ方法で展開します。
 
-通知を抑制すると、スキャンが行われたり、修復アクションが実行された場合、Microsoft Defender Antivirus からの通知が Windows 10 のアクション センターに表示されません。 ただし、セキュリティ運用チームは、スキャンの結果を Microsoft Defender セキュリティ センター () に表示します [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
+通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、スキャンの結果を [ファイル] () にMicrosoft Defender セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) します。
 
 > [!TIP]
-> Windows 10 でアクション センターを開く場合は、次のいずれかの手順を実行します。
+> [アクション センター] を開Windows 10、次のいずれかの手順を実行します。
 > - タスク バーの右側にある [アクション センター] アイコンを選択します。
-> - Windows ロゴ キー ボタン + A を押します。
+> - [ロゴ] Windows + A を押します。
 > - タッチスクリーン デバイスで、画面の右端からスワイプします。
 
 ## <a name="disable-scans-after-an-update"></a>更新後にスキャンを無効にする
@@ -189,13 +190,13 @@ Microsoft Defender ウイルス対策通知が複数のセッションに送信�
 > [!IMPORTANT]
 > 更新後にスキャンを実行すると、最新のセキュリティ インテリジェンス更新プログラムで VM が保護されます。 このオプションを無効にすると、VM の保護レベルが低下し、基本イメージを最初に作成または展開するときにのみ使用する必要があります。
 
-1. グループ ポリシー エディターで **、[Windows** コンポーネント]  >  **[Microsoft Defender ウイルス対策セキュリティ** インテリジェンス更新プログラム  >  **] に移動します**。
+1. グループ ポリシー エディターで、[セキュリティ インテリジェンス **の更新WindowsのMicrosoft Defender ウイルス対策**  >    >  **に移動します**。
 
 2. [ **セキュリティ インテリジェンスの更新後にスキャンを有効にする] を選択** し、ポリシー設定を編集します。
 
 3. ポリシーを [無効] に **設定します**。
 
-4. **[OK]** を選択します。
+4. **[OK]** をクリックします。
 
 5. グループ ポリシー オブジェクトは、通常と同じ方法で展開します。
 
@@ -203,13 +204,13 @@ Microsoft Defender ウイルス対策通知が複数のセッションに送信�
 
 ## <a name="scan-vms-that-have-been-offline"></a>オフラインの VM をスキャンする
 
-1. グループ ポリシー エディターで **、[Windows コンポーネント] [Microsoft** Defender ウイルス対策スキャン]  >  **に**  >  **移動します**。
+1. グループ ポリシー エディターで、[スキャン] の [Windows **コンポーネント**  >  **Microsoft Defender ウイルス対策**  >  **移動します**。
 
 2. [ **キャッチアップ クイック スキャンを有効にする] を選択** し、ポリシー設定を編集します。
 
 3. ポリシーを [有効] に **設定します**。
 
-4. **[OK]** を選択します。
+4. **[OK]** をクリックします。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
 
@@ -217,26 +218,26 @@ Microsoft Defender ウイルス対策通知が複数のセッションに送信�
 
 ## <a name="enable-headless-ui-mode"></a>ヘッドレス UI モードを有効にする
 
-1. グループ ポリシー エディターで **、[Windows** コンポーネント]  >  **[Microsoft Defender ウイルス対策クライアント** インターフェイス]  >  **に移動します**。
+1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネント**  >  **Microsoft Defender ウイルス対策**  >  **移動します**。
 
 2. [ヘッド **レス UI モードを有効にする] を選択** し、ポリシーを編集します。
 
 3. ポリシーを [有効] に **設定します**。
 
-4. **[OK]** をクリックします。
+4. [**OK**] をクリックします。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
  
-このポリシーは、組織内のエンド ユーザーから Microsoft Defender ウイルス対策ユーザー インターフェイス全体を非表示にします。
+このポリシーは、組織内のエンド Microsoft Defender ウイルス対策ユーザー インターフェイス全体を非表示にします。
 
 ## <a name="exclusions"></a>除外
 
 除外は、ニーズに合わせて追加、削除、またはカスタマイズできます。
 
-詳細については [、「Windows Server で Microsoft Defender ウイルス対策の除外を構成する」を参照してください](configure-exclusions-microsoft-defender-antivirus.md)。
+詳細については、「Configure [Microsoft Defender ウイルス対策 サーバー」をWindowsしてください](configure-exclusions-microsoft-defender-antivirus.md)。
 
 ## <a name="additional-resources"></a>その他のリソース
 
-- [Tech Community Blog: 非永続的な VDI マシン用の Microsoft Defender ウイルス対策の構成](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
+- [Tech Communityブログ: 非永続的な VDI Microsoft Defender ウイルス対策の構成](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [リモート デスクトップ サービスと VDI の TechNet フォーラム](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell スクリプト](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)

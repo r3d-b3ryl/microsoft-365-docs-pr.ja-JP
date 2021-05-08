@@ -3,6 +3,7 @@ title: Microsoft 自宅使用プログラムよく寄せられる質問 (FAQ)
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -10,21 +11,24 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: このページに関するよく寄せられる質問 (FAQ) Microsoft 自宅使用プログラム。
-ms.openlocfilehash: e4940460501da94960cb82eb311a1d1d6470cc63
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/01/2021
+ms.openlocfilehash: 5f10e5fb313ec7b48605975a7e03f262fd742801
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244698"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280813"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft 自宅使用プログラムよく寄せられる質問 (FAQ)
 
-ボリューム ライセンスのお客様は、Microsoft 自宅使用プログラム Web サイトで ビジネス向け Microsoft Store (HUP)[を使用します](https://go.microsoft.com/fwlink/?linkid=2139192)。 
+ボリューム ライセンスのお客様は、Microsoft 自宅使用プログラム Web サイトで ビジネス向け Microsoft Store (HUP)[を使用します](https://go.microsoft.com/fwlink/?linkid=2139192)。
 
 他のすべてのユーザーは、次の手順を使用して HUP にアクセスします。
 
@@ -46,12 +50,9 @@ ms.locfileid: "52244698"
 
 従業員が割引を利用するにはMicrosoft 自宅使用プログラム有効な会社の電子メール アドレスとアクティブな Microsoft アカウントが必要であり、組織は次のいずれかの条件を満たしている必要があります。
 
-- ソフトウェア アシュアランスがアクティブで、アプリケーションのOfficeしているお客様 
-
+- ソフトウェア アシュアランスがアクティブで、アプリケーションのOfficeしているお客様
 - ソフトウェア アシュアランスMicrosoft 365/Microsoft 365 E3/E5 をお持ちのお客様
-
 - 1 つ以上のライセンスを 2,000 ライセンス≥購入した商用および政府機関のお客様Microsoft 365 E3/E5
-
 - 教育および非営利の顧客
 
 ## <a name="why-do-i-have-to-create-an-azure-active-directory-aad-account-to-use-the-home-use-program-microsoft-store-for-business"></a>Home Use Program/Azure Active Directoryを使用するために、Azure Active Directory (AAD) アカウントを作成する必要があるビジネス向け Microsoft Store。
@@ -73,11 +74,8 @@ Home Use Program を、より広範なライセンスおよび製品の利点に
 ## <a name="what-are-the-steps-for-an-eligible-employee-to-make-a-microsoft-home-use-program-purchase"></a>資格を持つ従業員が購入を行う手順Microsoft 自宅使用プログラムですか?
 
 1. **サインアップ**[ユーザー] ページ [にMicrosoft 自宅使用プログラムし](https://www.microsoft.com/home-use-program)、[選択] ボタンをはじめにします。 従業員は会社の電子メール アドレスを入力します。
-
 2. **確認する**  電子メールは、プログラムの適格性を認証するリンクを含む企業の電子メール アドレス受信トレイに送信されます。
-
 3. **サインイン** 認証が完了すると、個人の電子メール アドレスに関連付けられている Microsoft アカウントを提供して購入プロセスを開始し、組織のホーム使用プログラムの特典に基づいて、ユーザーが利用できる製品の割引を表示できます。 詳細については [、「Microsoft アカウントにサインインする方法」を参照してください](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)。
-
 4. **ショップ** 購入が処理され、購入が完了した場合は、Microsoft Store。
 
 ## <a name="if-an-employee-subscribes-to-microsoft-365-through-the-microsoft-home-use-program-how-does-this-impact-our-organizations-microsoft-365-business-subscription-and-device-limit"></a>従業員が組織のMicrosoft 365を購読Microsoft 自宅使用プログラム、組織のビジネス サブスクリプションとデバイスの制限にMicrosoft 365影響しますか?
@@ -105,23 +103,15 @@ Home Use Program を、より広範なライセンスおよび製品の利点に
  技術的な問題のヘルプについては [、「Microsoft サポート」を参照してください](https://support.microsoft.com/)。 次のヘルプが表示されます。
 
 - 注文の状態
-
 - 請求
-
 - インストールOffice
-
 - ユーザーにサインインOffice
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365サブスクリプション](https://www.microsoft.com/home-use-program/). (リンク ページ)
-
-[Microsoft ボリューム ライセンス サービス センター](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (リンク ページ)
-
-[ビジネス向け Microsoft Storeサポート (リンク](/microsoft-store/)ページ)
-
-[ビジネス向け Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2139192) (リンク ページ)
-
-[Home Use Program employee store](https://www.microsoft.com/home-use-program) (リンク ページ)
-
+[Microsoft 365サブスクリプション](https://www.microsoft.com/home-use-program/). (リンク ページ)\
+[Microsoft ボリューム ライセンス サービス センター](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (リンク ページ)\
+[ビジネス向け Microsoft Storeサポート](/microsoft-store/)(リンク ページ)\
+[ビジネス向け Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2139192) (リンク ページ)\
+[Home Use Program employee store](https://www.microsoft.com/home-use-program) (リンク ページ)\
 [Microsoft ライセンス: ホーム使用プログラムの概要](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (リンク ページ)

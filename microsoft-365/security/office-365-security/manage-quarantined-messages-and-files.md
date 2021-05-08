@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について学習できます。 Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫済みファイルを管理することもできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599537"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272206"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -196,7 +196,7 @@ Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online�
 
 - **[メッセージをダウンロード]**: 表示されるポップアップ ウィンドウで、**[このメッセージをダウンロードするリスクを理解しています]** を選択して、メッセージのローカル コピーを .eml 形式で保存します。
 
-- **[送信者のブロック**] : 送信者が組織内の受信者にメッセージを送信するのを防ぐ。
+- **[送信者のブロック**]: メールボックスの [受信拒否] リストに送信者を追加します。 詳細については、「メール送信者を [ブロックする」を参照してください](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 - **送信メッセージ**: 表示されるフライアウト ウィンドウで、次のオプションを選択します。
 

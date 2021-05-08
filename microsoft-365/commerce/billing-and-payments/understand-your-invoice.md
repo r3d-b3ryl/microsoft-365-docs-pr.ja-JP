@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,19 +13,22 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 819db7eb999344d2736015dd766453c07f2ed86f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244710"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280837"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
@@ -103,17 +107,13 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 請求書はオンラインで利用可能です。 オンライン請求書へのリンクは、PDF 請求書およびメール通知から利用できます。 オンライン請求書は拡張可能であるため、請求書の料金を表示したり、各項目の詳細を確認したりできます。 オンライン請求書には次のものが含まれます:
 
 - **価格の詳細**&mdash;割引や製品の価格に関する詳細を含む追加情報。
-
 - **オンラインの支払い**&mdash;請求書からオンラインで支払いを行うことを選択できます。
-
 - **Azure のコスト管理**&mdash;Azure のお客様の場合、オンライン請求書には Azure のコスト管理へのリンクが含まれています。
 
 ### <a name="to-view-your-online-invoice"></a>オンライン請求書を表示するには
 
 1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページの順に移動します。
-
 2. 請求書の .pdf バージョンをダウンロードするには、表示する請求書の行にある [**請求書 PDF のダウンロード**] を選択します。
-
 3. オンライン請求書を表示するには、リストから請求書を選択します。 請求書の詳細ページから .pdf をダウンロードすることもできます。
 
 ## <a name="invoice-faq"></a>請求書の FAQ
@@ -145,8 +145,8 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 
 Azure の前払いは、対象となる Azure 製品およびサービスのお支払い方法としてのみ利用できます。
 
-## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートに問い合わせてください。
+## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートに連絡する
 
 Azure クレジットについて質問がある場合、またはサポートが必要な場合は、<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Azure サポートを使用してサポート要求を作成してください</a>。
 
-Microsoft 365 管理センターの請求書について質問がある場合、またはサポートが必要な場合は、[ビジネス製品のサポートにお問い合わせください](../../admin/contact-support-for-business-products.md)。
+Microsoft 365 管理センターの請求書について質問がある場合、またはサポートが必要な場合は、[ビジネス製品のサポートにお問い合わせください](../../business-video/get-help-support.md)。
