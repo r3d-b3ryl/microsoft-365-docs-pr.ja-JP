@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスを作成したら、電子メール転送や自動返信など、ユーザーに対していくつかの設定を構成する必要があります。 後で、メールボックス名やメンバーなどの他の設定を変更することもできます。
-ms.openlocfilehash: 2d0998ba2bdc95a9f78f59527bd9bd6fa98b4c45
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915916"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243974"
 ---
 # <a name="configure-shared-mailbox-settings"></a>共有メールボックスの設定を構成する
 
@@ -34,87 +34,39 @@ ms.locfileid: "50915916"
 
 ## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a>共有メールボックスの名前またはメール エイリアスを変更するか、プライマリ メール アドレスを変更する
 
-::: moniker range="o365-worldwide"
-
 1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
 
 2. 編集する共有メールボックスを選択し、[名前]、[メール]、[メール エイリアス] の横にある [編集 **] を選択します**。
 
 3. 新しい名前を入力するか、別のエイリアスを追加します。 プライマリ メール アドレスを変更する場合は、メールボックスに複数のメール エイリアスが必要です。
 
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>共有メールボックスに送信されたメールを転送する
 
 共有メールボックスに送信されるメールを転送するために、共有メールボックスにライセンスを割り当てる必要はない。 メッセージは、有効な電子メール アドレスまたは配布リストに転送できます。
 
-::: moniker range="o365-worldwide"
-
 1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
 
 2. 編集する共有メールボックスを選択し、[メール転送の編集 **] を** \> **選択します**。
     
 3. トグルを [ **オン] に設定** し、メッセージを転送するメール アドレスを 1 つ入力します。 有効な電子メール アドレスを指定できます。 複数のアドレスに転送するには、アドレスの[](/office365/admin/setup/create-distribution-lists)配布グループを作成し、このボックスにグループの名前を入力する必要があります。
     
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>共有メールボックスから自動応答を送信する
 
-::: moniker range="o365-worldwide"
-
 1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
 
 2. 編集する共有メールボックスを選択し、[自動返信の編集 **] を** \> **選択します**。
     
 3. トグルを **[オン] に** 設定し、組織内または組織外のユーザーに返信を送信するかどうかを選択します。
 
-4. 組織内のユーザーに送信する返信を入力します。 画像は追加できない、テキストのみ。
+4. 組織内部のユーザーに送信する返信を入力します。画像は追加できません。テキストのみを入力できます。
 
 5. 組織外のユーザー *にも* 返信を送信する場合は、チェック ボックスをオンにして、返信を取得するユーザーを選択し、テキストを入力します。 組織内のユーザーには送信せず、組織外のユーザーにのみ送信する方法はありません。
 
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>送信済みメール (返信) の表示を全員に許可する
 
@@ -125,52 +77,20 @@ ms.locfileid: "50915916"
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>共有メールボックスが Microsoft メールへのアクセスに使用できるアプリを選択する
 
-::: moniker range="o365-worldwide"
-
 1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
 
 2. 編集する共有メールボックスを選択し、[メール アプリの編集] **を** \> **選択します**。
 
 3. メンバーが共有 **メールボックスに** アクセスするために使用できるすべてのアプリのトグルを [オン] に設定します。 使用しないアプリのトグルを **[オフ** ] に設定します。 
 
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>訴訟ホールドに共有メールボックスを置く
 
 訴訟ホールドの詳細については、「訴訟ホールドの [作成」を参照してください](../../compliance/create-a-litigation-hold.md)。
 
-::: moniker range="o365-worldwide"
-
 1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
 
 2. 編集する共有メールボックスを選択し、[訴訟ホールドの編集 **] を** \> **選択します**。
 
@@ -178,28 +98,12 @@ ms.locfileid: "50915916"
 
 4. 必要に応じて、期間、保留に関するメモ、および詳細を示す URL を入力します。  
 
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 
 
 ## <a name="add-or-remove-members"></a>メンバーの追加または削除
 
-::: moniker range="o365-worldwide"
-
 1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
 
 2. 編集する共有メールボックスを選択し、[メンバーの編集] **を** \> **選択します**。
 
@@ -211,23 +115,7 @@ ms.locfileid: "50915916"
 
 ## <a name="add-or-remove-permissions-of-members"></a>メンバーのアクセス許可を追加または削除する
 
-::: moniker range="o365-worldwide"
-
 1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
 
 2. 編集する共有メールボックスを選択し、[メンバーのカスタマイズ] \> **アクセス許可を選択します**。
 
@@ -243,41 +131,25 @@ ms.locfileid: "50915916"
 
 共有メールボックスをグローバル アドレス一覧に表示しない場合、メールボックスは組織のアドレス一覧には表示されませんが、送信された電子メールは引き続き受信されます。 
 
-::: moniker range="o365-worldwide"
-
 1. 管理センターで、**[グループ]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共有メールボックス]</a> ページの順に移動します。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[管理センター]</a> で、**[グループ]** > **[共有メールボックス]** ページの順に移動します。 
-
-::: moniker-end
 
 2. 編集する共有メールボックスを選択し、[グローバル アドレス一覧に表示する]**を選択** \> **します。**
 
 3. トグルを [オン] または **[オフ] に****設定します**。 
 
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 > [!NOTE]
-> 共有メールボックスをアドレス一覧から非表示にすると、共有メールボックスがアドレス一覧に再び表示されるまで、新しい共有メールボックスメンバーが非表示のメールボックスを Outlook プロファイルに追加することは不可能になります。 
+> 共有メールボックスをアドレス一覧から非表示にすると、新しい共有メールボックスメンバーが、共有メールボックスがアドレス一覧に再び表示されるまで、非表示のメールボックスを Outlook プロファイルに追加できません。 
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[共有メールボックスについて](about-shared-mailboxes.md)
+[共有メールボックスについて](about-shared-mailboxes.md) (記事)
 
-[共有メールボックスを作成する](create-a-shared-mailbox.md)
+[共有メールボックスの作成](create-a-shared-mailbox.md) (記事)
 
-[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md)
+[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)
 
-[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md)
+[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)
 
-[共有メールボックスの問題を解決する](resolve-issues-with-shared-mailboxes.md)
+[共有メールボックスの問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)
