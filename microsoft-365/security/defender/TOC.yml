@@ -130,11 +130,11 @@
               href: m365d-remediation-actions.md
             - name: アクション センターにアクセスする
               href: m365d-action-center.md
-            - name: 保留中の修復アクションを承認または拒否する
+            - name: 修復アクションの表示と管理
               href: m365d-autoir-actions.md
             - name: 自動調査の詳細と結果を表示する
               href: m365d-autoir-results.md
-            - name: 誤検知/検出漏れを報告する
+            - name: 誤検知/負のアドレス
               href: m365d-autoir-report-false-positives-negatives.md
         - name: 高度な検出
           items:
