@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 31162944f4728f2c84efbe2cd5eafbd0c70e00f6
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 80546d44bc1ba222c736b397a272f9f1f1a01d4a
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245854"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269470"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Defender での修復Microsoft 365操作
 
@@ -36,8 +36,6 @@ ms.locfileid: "52245854"
 **適用対象:**
 - Microsoft 365 Defender
 
-## <a name="remediation-actions"></a>修復アクション
-
 Defender での自動調査中およびMicrosoft 365、悪意のあるアイテムまたは不審なアイテムに対する修復アクションが識別されます。 一部の種類の修復アクションは、エンドポイントとも呼ばれるデバイスで実行されます。 その他の修復アクションは、メール コンテンツに対して実行されます。 修復アクションを実行、承認、または拒否した後、自動調査が完了します。
 
 > [!IMPORTANT]
@@ -46,7 +44,7 @@ Defender での自動調査中およびMicrosoft 365、悪意のあるアイテ�
 > - [デバイスでの脅威の修復方法](../defender-endpoint/automated-investigations.md)
 > - [コラボレーション コンテンツに対する電子メール&修復アクション](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-次の表に、Defender で現在サポートされている修復アクションMicrosoft 365示します。 
+次の表に、Defender で現在サポートされている修復Microsoft 365示します。 
 
 |デバイス (エンドポイント) 修復アクション  |メールの修復アクション  |
 |:---------|:---------|
@@ -60,7 +58,7 @@ Defender での自動調査中およびMicrosoft 365、悪意のあるアイテ�
 
 考えられる判定と結果を次の表に示します。
 
-| 判定    | 分野    | 結果|
+| 判定    | 影響を受けるエンティティ    | 結果|
 |------|------|------|
 | Malicious (悪意のある)    | デバイス (エンドポイント)    | 修復アクションは自動的に実行されます (組織の [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)デバイス グループが完全に設定されている場合 - 脅威 **を自動的に修復する**)|
 | Malicious (悪意のある)    | メールのコンテンツ (URL または添付ファイル) | 推奨される修復アクションが承認待ちになります|
@@ -70,17 +68,17 @@ Defender での自動調査中およびMicrosoft 365、悪意のあるアイテ�
 
 ## <a name="remediation-actions-that-are-taken-manually"></a>手動で実行される修復アクション
 
-自動調査に続く修復アクションに加えて、セキュリティ運用チームは特定の修復アクションを手動で実行できます。 これには、次のアクションが含まれます。
+自動調査に続く修復アクションに加えて、セキュリティ運用チームは特定の修復アクションを手動で実行できます。 これらには次のコマンドレットがあります。
 
-- デバイスの分離やファイル検疫などのデバイスの手動操作。
-- 電子メール メッセージのソフト削除など、手動の電子メール アクション。 
-- [デバイスまたは電子メール](../defender-endpoint/advanced-hunting-overview.md) での高度なハンティング アクション。
-- [迷惑](../office-365-security/threat-explorer.md) メールへのメールの移動、メールのソフト削除、メールのハード削除など、電子メール コンテンツに対するエクスプローラー アクション。
-- ファイル [の削除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) 、プロセスの停止、スケジュールされたタスクの削除などの手動のライブ応答アクション。
-- Microsoft Defender [for Endpoint API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)を使用したライブ応答アクション (デバイスの分離、ウイルス対策スキャンの実行、ファイルに関する情報の取得など)。 
+- デバイスの分離やファイル検疫などのデバイスの手動操作
+- 電子メール メッセージのソフト削除などの手動の電子メール アクション 
+- [デバイスまたは電子](../defender-endpoint/advanced-hunting-overview.md) メールでの高度なハンティング アクション
+- [迷惑](../office-365-security/threat-explorer.md) メールへのメールの移動、メールのソフト削除、メールのハード削除など、電子メール コンテンツに対するエクスプローラー アクション
+- ファイル [の削除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) 、プロセスの停止、スケジュールされたタスクの削除などの手動のライブ応答アクション
+- Microsoft Defender [for Endpoint API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)を使用したライブ応答アクション (デバイスの分離、ウイルス対策スキャンの実行、ファイルに関する情報の取得など)
 
 ## <a name="next-steps"></a>次の手順
 
 - [アクション センターにアクセスする](m365d-action-center.md)
-- [修復アクションの表示と管理]( m365d-autoir-actions.md)
-- [自動調査および応答機能で誤検知/負を処理する](m365d-autoir-report-false-positives-negatives.md)
+- [修復アクションの表示と管理](m365d-autoir-actions.md)
+- [誤検知または誤検知に対処する](m365d-autoir-report-false-positives-negatives.md)

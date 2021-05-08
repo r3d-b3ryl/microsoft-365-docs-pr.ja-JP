@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender でのインシデントの優先順位付け
-description: Microsoft 365 Defender のインシデント キューからインシデントをフィルター処理する方法について説明します。
+title: Defender でのインシデントのMicrosoft 365する
+description: Defender のインシデント キューからインシデントをフィルター処理するMicrosoft 365する
 keywords: インシデント、キュー、概要、デバイス、ID、ユーザー、メールボックス、電子メール、インシデント、分析、応答
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,29 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 47d066fa20abe963f7afaa3b88cecc96fa6e87fc
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939708"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259591"
 ---
-# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの優先順位付け
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Defender でのインシデントのMicrosoft 365する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender は、相関分析を適用し、関連するアラートと、さまざまな製品からの自動調査をインシデントに集約します。 Microsoft 365 Defender は、製品スイート全体で Microsoft 365 Defender が持っているエンドツーエンドの可視性を考えると、悪意のあるアクティビティとしてのみ識別できるアクティビティに対する一意のアラートをトリガーします。 このビューは、セキュリティ アナリストに広範な攻撃ストーリーを提供し、組織全体の複雑な脅威をよりよく理解し、対処するのに役立ちます。
+Microsoft 365Defender は相関分析を適用し、関連するアラートと、さまざまな製品からの自動調査をインシデントに集約します。 Microsoft 365また、defender は、Microsoft 365 Defender が製品のスイート全体で持っているエンドツーエンドの可視性を考えると、悪意のあるアクティビティとしてのみ識別できるアクティビティに対する一意のアラートをトリガーします。 このビューは、セキュリティ アナリストに広範な攻撃ストーリーを提供し、組織全体の複雑な脅威をよりよく理解し、対処するのに役立ちます。
 
 インシデント **キューには、** デバイス、ユーザー、メールボックス間で作成されたインシデントのコレクションが表示されます。 これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。 
 
-インシデント キューにアクセスするには、Microsoft 365 セキュリティ センター (& >) のクイック 起動時にインシデント に関する通知を[security.microsoft.com。](https://security.microsoft.com) 
+インシデント キューにアクセスするには、インシデント & > セキュリティ センター (security.microsoft.com) のクイック 起動時にインシデント Microsoft 365アラート[を表示します](https://security.microsoft.com)。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例":::
 
-既定では、Microsoft 365 セキュリティ センターのインシデント キューには、過去 6 か月間に発生したインシデントが表示されます。 最新のインシデントはリストの一番上にあるので、最初に確認できます。
+[ **最新のインシデントと** 通知] セクションには、過去 24 時間に受信したアラートとインシデントが作成された数のグラフが表示されます。
+
+既定では、セキュリティ センター内のインシデント キュー Microsoft 365過去 6 か月間に発生したインシデントが表示されます。 最新のインシデントはリストの一番上にあるので、最初に確認できます。
 
 インシデント キューには、インシデントの異なる特性や影響を受けたエンティティを表示できるカスタマイズ可能な列 ([列の選択] を選択) があります。 これにより、分析のためのインシデントの事前設定に関する情報に基づいた意思決定を行う際に役立ちます。
 
@@ -68,7 +70,7 @@ Microsoft 365 Defender は、相関分析を適用し、関連するアラート
 | フィルター名 | 説明 |
 |:-------|:-----|
 | 割り当て先 | 自分に割り当てられているアラート、または自動化によって処理されたアラートを表示できます。 |
-| Categories | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
+| カテゴリ | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
 | 分類 | 関連するアラートの一連の分類に基づいてインシデントをフィルター処理します。 値には、true アラート、false アラート、または設定されていないが含まれます。 |
 | データの機密性 | 一部の攻撃では、機密データや貴重なデータを排除することを目的としています。 機密データがインシデントに関与しているかどうかを確認するためにフィルター処理を適用することにより、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントへの対処に優先順位を付けることができます。 <br><br> Microsoft Information Protection が有効になっている場合にのみ適用されます。|
 | デバイス グループ | 定義済みのデバイス グループでフィルター処理します。 |
@@ -87,5 +89,5 @@ Microsoft 365 Defender は、相関分析を適用し、関連するアラート
 
 ## <a name="see-also"></a>関連項目
 - [インシデントの概要](incidents-overview.md)
-- [インシデントの分析](investigate-incidents.md)
+- [インシデントを分析する](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)

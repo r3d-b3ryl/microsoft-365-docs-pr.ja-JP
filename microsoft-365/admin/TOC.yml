@@ -107,16 +107,30 @@
               href: create-groups/manage-guest-access-in-groups.md
             - name: ユーザー名とメール アドレスを変更する
               href: add-users/change-a-user-name-and-email-address.md
-            - name: 元従業員を削除する
-              href: add-users/remove-former-employee.md
-            - name: 元ユーザーのデータにアクセスしてバックアップを作成する
-              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: ユーザーを復元する
               href: add-users/restore-user.md
             - name: テンプレートを作成してユーザーを追加する
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: 最新のアプリにユーザーをアップグレードする
               href: setup/upgrade-users-to-latest-office-client.md
+        - name: 元従業員を削除する
+          items:
+            - name: 概要
+              href: add-users/remove-former-employee.md
+            - name: 手順 1. 従業員がログインできないようにし、Microsoft 365 サービスへのアクセスをブロックする
+              href: add-users/remove-former-employee-step-1.md
+            - name: 手順 2. 元従業員のメールボックスの内容を保存する
+              href: add-users/remove-former-employee-step-2.md
+            - name: 手順 3. 元従業員のメールを別の従業員に転送するか、または元従業員のメールボックスを共有メールボックスに変換する
+              href: add-users/remove-former-employee-step-3.md
+            - name: 手順 4. 別の従業員に OneDrive および Outlook データへのアクセスを許可する
+              href: add-users/remove-former-employee-step-4.md
+            - name: 手順 5. 元従業員のモバイル デバイスをワイプし、ブロックする
+              href: add-users/remove-former-employee-step-5.md
+            - name: 手順 6. 元従業員から Microsoft 365 ライセンスを削除する
+              href: add-users/remove-former-employee-step-6.md
+            - name: 手順 7. 元従業員のユーザー アカウントを削除する
+              href: add-users/remove-former-employee-step-7.md
         - name: グループ
           items:
             - name: グループの概要

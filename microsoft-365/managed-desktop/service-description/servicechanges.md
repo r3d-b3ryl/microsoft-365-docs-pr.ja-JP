@@ -1,28 +1,31 @@
 ---
 title: サービスの変更とコミュニケーション
-description: ''
+description: サービスに対する変更が発生して通信される方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 879e5dc96cf19c8070769b62f59cca0e409bf1df
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+manager: laurawi
+ms.topic: article
+audience: Admin
+ms.openlocfilehash: 20af244d14f8f29e0175fb5e8efdabff94ff9a2b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917760"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244106"
 ---
 # <a name="service-changes-and-communication"></a>サービスの変更とコミュニケーション
 
-場合によっては、Microsoft Managed Desktop の動作方法に関する詳細を変更する必要がある場合があります。 同様に、サービスにも影響を与える変更を加える必要があります。 このような変更は、重要な内容に応じて異なる方法で処理されます。 このトピックでは、メジャーと見なす変更を定義し、その変更と他の変更の処理方法について説明します。
+Microsoft では、アプリケーションの動作方法に関する詳細を変更Microsoft マネージド デスクトップ場合があります。 同様に、サービスにも影響を与える変更を加える必要があります。 このような変更は、重要な内容に応じて異なる方法で処理されます。 このトピックでは、メジャーと見なす変更を定義し、その変更と他の変更の処理方法について説明します。
 
 
 
 ## <a name="changes-made-by-microsoft"></a>Microsoft によって行われた変更
 
-アクションが必要な大きな変更については、少なくとも 30 日前に通知します。 Microsoft Managed Desktop Admin ポータル メッセージング システムを使用してお知らせします。
+アクションが必要な大きな変更については、少なくとも 30 日前に通知します。 管理者ポータル メッセージング システムを使用してMicrosoft マネージド デスクトップお知らせします。
 
 **主な変更** 点は、次の領域に影響を与える可能性がある変更点です。
 - 毎日の生産性に影響を与える変更
@@ -40,19 +43,19 @@ ms.locfileid: "50917760"
 
 ユーザー エクスペリエンス、セキュリティ、信頼性、レポートを向上させるために、サービスに対して他の変更を定期的に行います。 これらの変更の例を次に示します。
 
-- Windows のインストールと更新プログラムOfficeインストールする
+- 更新プログラムWindowsインストールOfficeする
 - デバイスに適用されるセキュリティ 基準の更新
-- [Supported devices](device-list.md)
+- サポートされているデバイス。 推奨されるデバイスを表示するには、ビジネス Microsoft マネージド デスクトップサイトで[Windows 10 Proをフィルター](https://www.microsoft.com/windowsforbusiness/view-all-devices)処理します。
 
-これらの変更については、確立されたチャネルを使用して伝達します。 変更について質問がある場合は、Microsoft Managed Desktop Operations チームにお [問い合わせください](../working-with-managed-desktop/admin-support.md)。 サービスへの変更は、必要に応じて変更履歴にも [記録されます](../change-history-managed-desktop.md)。
+これらの変更については、確立されたチャネルを使用して伝達します。 変更に関する質問がある場合は、運用チームMicrosoft マネージド デスクトップ[問い合わせください](../working-with-managed-desktop/admin-support.md)。 サービスへの変更は、必要に応じて変更履歴にも [記録されます](../change-history-managed-desktop.md)。
 
-Microsoft Managed Desktop の変更と通信は、次の 2 つの Microsoft ポリシーによって管理されます。
+Microsoft マネージド デスクトップ変更と通信は、次の 2 つの Microsoft ポリシーによって管理されます。
 - [最新のライフサイクル ポリシー](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
-- [Microsoft 365 変更通信ポリシー](/office365/admin/manage/message-center?view=o365-worldwide)
+- [Microsoft 365通信ポリシーの変更](/office365/admin/manage/message-center)
 
 ## <a name="changes-you-make"></a>加えた変更
 
-環境で行う変更の中には、Microsoft Managed Desktop に影響を与える可能性があります。 これらの大きな変更については、Microsoft Managed Desktop Admin ポータルでサービス要求を送信して、少なくとも 30 日後に通知をお願いします。 手順 [については、「Microsoft Managed Desktop の管理者サポート」](../working-with-managed-desktop/admin-support.md) を参照してください。 これにより、中断を回避するために、変更を計画して準備するための十分な時間を確保できます。
+環境で行う可能性がある一部の変更は、環境に影響をMicrosoft マネージド デスクトップ。 これらの大きな変更については、管理者ポータルでサービス要求を送信して、少なくとも 30 日後に通知Microsoft マネージド デスクトップします。 手順については[、「管理者向けサポートMicrosoft マネージド デスクトップ」](../working-with-managed-desktop/admin-support.md)を参照してください。 これにより、中断を回避するために、変更を計画して準備するための十分な時間を確保できます。
 
 主な変更点は、次の領域に影響を与える可能性がある変更点です。
 
@@ -62,11 +65,11 @@ Microsoft Managed Desktop の変更と通信は、次の 2 つの Microsoft ポ�
 - ネットワーク サービスの ID またはセキュリティ保護に使用されるユーザー証明書またはデバイス証明書
 - サービスと対話する管理システム
 - サービスと対話するセキュリティ システムまたはエージェント
-- サービスに関連付けられている、またはサービスによって使用される Microsoft 365 クラウド サービスの構成
+- サービスに関連付けられているMicrosoft 365、またはサービスによって使用されるクラウド サービスの構成
 
 これらの変更は中断される可能性が高くないので、前もってそれらの変更についてお知らせする必要はありません。
 
 - 孤立したオブジェクトのクリーンアップ
 - サービスへのユーザーの追加または削除
-- Microsoft Managed Desktop の配信に大きな影響を与えるシステムの構成
+- システムの配信に大きな影響を与えるシステムの構成Microsoft マネージド デスクトップ
 - VPN またはプロキシ アプリケーションを除く、アプリケーションのバージョンの更新

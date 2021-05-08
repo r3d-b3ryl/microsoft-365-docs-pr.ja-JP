@@ -1,0 +1,66 @@
+---
+title: FAQ のMicrosoft 365スケジューラ
+ms.author: v-aiyengar
+author: AshaIyengar21
+manager: serdars
+audience: Admin
+ms.topic: article
+ms.service: scheduler
+localization_priority: Normal
+description: FAQ のMicrosoft 365スケジューラ
+ms.openlocfilehash: 12c2c00761b9a10fac6c62bc4d7ff5909ac935a7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52286203"
+---
+# <a name="scheduler-for-microsoft-365-faqs"></a>FAQ のMicrosoft 365スケジューラ
+
+**質問:** スケジューラは、Cortana for Windows、毎日のブリーフィング メール、マイメールの再生など、他の *Cortana* 機能とどのように *統合しますか*。</br>
+スケジューラは、他の Cortana 機能とは独立したサービスです。 その他の Cortana 機能はテナント レベルで無効にできます。また、スケジューラはユーザーのメール アドレスを使用 cortana@yourdomain.com できます。 現時点では、ユーザーは電子メールを介してスケジューラーとのみ対話できます。
+
+**質問:** この機能は、ユーザーのOutlook? 他の電子メール製品はサポートされていますか?</br>
+ライセンスを持っている限り、上記の 3 つの要件以外のユーザーは、任意のデバイス cortana@yourdomain.com メール クライアントから電子メールを送信できます。
+
+**質問:** 連絡先は、連絡先と GAL または他の会社Outlook連絡先リストに含めできますか?</br>
+会議の出席者には、会社の内部または外部に電子メール アドレスを持つユーザーを指定できます。 残念ながら、Scheduler は、今日の GAL で名前を参照して、名前を電子メール アドレス/エイリアスに自動的に変換することはできません。
+
+**質問:** インストールされているバージョンの (オンプレミス) バージョンのスケジューラを使用Outlook?</br>
+スケジューラには、Exchange Onlineが必要です。 (On-Prem) Exchange Server機能しません。 任意の電子メール クライアント、Outlook、OWA、iOS、android、gmail などと連携します。
+
+**質問:** バックグラウンドOutlook開く必要がありますか?</br>
+Outlookで開く必要はない。 必要なのは、Cortana にメールを送信し、そのメールを利用して作業の大部分を行う必要があります。
+
+## <a name="frequently-asked-trust-and-privacy-questions"></a>よく寄せられる信頼とプライバシーに関する質問
+
+**質問:** スケジューラの動作方法</br>
+スケジューラは、人間のアシスタントで拡張されたスケジューリング インテリジェンス (AI) を使用します。 AI モデルが Cortana との自然なコミュニケーション言語でサポートを必要とする場合、会議出席依頼はレビューと完了のために人間にエスカレートします。
+
+**質問:** Who要求を確認する人はいますか? </br>
+スケジューラ アシスタントは、Microsoft Supplier Security and Privacy Assurance (SSPA) の認定を受けた個人および機密性の高い情報です。 
+
+**質問:** SSPA アシスタントは何を表示できますか?</br>
+スケジューラと SSPA アシスタントは、Cortana にアドレス指定されているメールを表示できます。 スレッド化された電子メール交換では、Cortana の電子メール アドレスを含むメールだけが処理され、Cortana が追加される前のスレッド内の以前のメールは処理されません。   
+
+**質問:** 顧客データはスケジューラのデータ 管理に保持Flow? </br>
+スケジューラは、テナント境界内のすべての顧客コンテンツを格納し、GDPR ガイドライン、Microsoft 365 Trust & プライバシー ポリシー、およびテナントの電子メール ポリシーに従ってデータを保持します。
+
+**質問:** スケジューラーは、内部出席者の空き時間情報を処理する方法を説明します。 </br>
+スケジューラの自動化では *、findMeetingTimes* サービスを使用して、出席者と開催者が相互に利用できる時間を特定します。 このサービスは、Outlookフォームの *[* 推奨された時間] などの他のOutlook機能します。 空き時間情報は、空き時間情報ブロックとして明示的に使用されません。 
+
+**質問:** Scheduler GDPR は準拠していますか? </br>
+はい。
+
+**質問:** Who Cortana メールボックスにアクセスできますか? </br>
+スケジューラは、テナントの Cortana メールボックスに送信される会議出席依頼と関連する電子メールを処理します。 Microsoft は、テナント管理者の要求に応じてロックボックスの承認を通じて、Cortana メールボックスに他のアクセス権を持つ必要があります。  
+
+**質問:** 顧客データは AI モデルのトレーニングに使用されますか?</br>
+データ トレーニング セットに使用Microsoft 365スケジューラの顧客コンテンツは使用できません。 すべての顧客コンテンツは、顧客テナントに存在します。  
+
+**質問:** スケジューラは暗号化されたメールを処理しますか?</br>
+いいえ、暗号化されたメールはスケジューラ ワークフローによって拒否されます。 
+
+
+
+

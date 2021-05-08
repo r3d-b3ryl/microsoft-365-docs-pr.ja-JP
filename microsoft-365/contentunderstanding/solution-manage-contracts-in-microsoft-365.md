@@ -1,0 +1,77 @@
+---
+title: ソリューションを使用して契約Microsoft 365する
+ms.author: chucked
+author: chuckedmonson
+manager: pamgreen
+ms.reviewer: ssquires
+audience: admin
+ms.topic: article
+ms.date: 05/10/2021
+ms.prod: microsoft-365-enterprise
+ms.collection: m365solution-managecontracts
+search.appverid: ''
+localization_priority: None
+ROBOTS: NOINDEX, NOFOLLOW
+description: Syntex、Microsoft 365、およびSharePointのソリューションをMicrosoft Teams契約を管理するPower Automate。
+ms.openlocfilehash: 806ea9fd048dec198a19fa79f3b60f3f3cb81018
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281186"
+---
+# <a name="manage-contracts-using-a-microsoft-365-solution"></a>ソリューションを使用して契約Microsoft 365する
+
+この記事では、Syntex と組織のコンポーネントを使用して、組織の契約管理SharePointする方法についてMicrosoft 365。 独自のビジネス ニーズに合ったソリューションの計画と作成に役立つフレームワークを提供します。 このソリューションがビジネス ニーズ全体に合わない場合でも、カスタム契約管理ソリューションを作成する計画で、その一部を採用できます。
+
+## <a name="identify-the-business-problem"></a>ビジネス上の問題を特定する
+
+契約管理システムを計画する最初の手順は、解決しようとしている問題を理解する方法です。 このソリューションでは、次の 4 つの重要な問題に対処する必要があります。
+
+- **コントラクトを識別します**。 組織は、請求書、契約、作業明細書など、多くのドキュメントを処理します。  電子メールで送信されるデジタルアセットと、従来のメールを介して送信される紙のアセットがあります。 他のすべてのドキュメントからすべての顧客契約を識別し、それらを分類する方法が必要です。
+
+- **契約承認の履歴を追跡します**。 組織では、契約が承認または却下されたかどうか、および支払いが処理されたかどうかを確認するための信頼性の高い方法が必要です。 
+
+- **契約の承認を管理するサイト**。 組織では、必要なすべての関係者が契約を簡単に確認できる共同作業サイトをセットアップする必要があります。 利害関係者は、必要に応じて契約全体を確認できる必要がありますが、主に各契約の主要なフィールド (顧客名、PO 番号、総コストなど) を確認する必要があります。 関係者は、受信した契約を簡単に承認または拒否できる必要があります。
+
+- **レビューされた契約をルーティングします**。 承認済みおよび却下された契約は、特定のワークフローを通じてルーティングする必要があります。 承認された契約は、支払い処理のためにサードパーティアプリケーションにルーティングする必要があります。 拒否された契約は、追加のレビューのためにルーティングする必要があります。
+
+## <a name="overview-of-the-solution"></a>ソリューションの概要
+
+  ![Syntex、SharePointリストSharePoint、Teams、およびPower Automate。](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+
+この契約管理ソリューション のガイダンスには、次の 4 つのコンポーネントMicrosoft 365。
+
+- **Microsoft SharePoint Syntex**: コントラクト ファイルを識別して分類し、そこから適切なデータを抽出するモデルを作成します。
+
+- **Microsoft SharePointリスト**: モダン リストで使用できる書式を使用SharePointビジネスに優しい形式で契約を提示します。
+
+- **Microsoft Teams**: 関係者が契約を確認および管理Teams、チャネルと関連付けられたタブの機能を使用します。
+
+- **Power Automate:** フローを使用して、承認プロセスを通じて契約をガイドし、その後、支払いのためにサードパーティ製のアプリケーションに案内します。
+
+### <a name="how-it-all-works"></a>すべての動作方法
+
+  ![ドキュメントのアップロード、データの抽出、関係者への通知、契約の承認または却下を行うワークフローを示すソリューションの図。](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
+
+1. ドキュメントは、ドキュメント ライブラリSharePointアップロードされます。 Syntex SharePoint理解モデルがドキュメント ライブラリに適用されています。 各ファイルをチェックして、探すトレーニングを受けた "コントラクト" コンテンツ タイプと一致するコンテンツ タイプが一致する場合を確認します。 一致が見つかった場合は、ファイルを "コントラクト" として分類し、ドキュメントのコンテンツ タイプを更新します。
+
+2. また、このモデルは、関係者が関心を持つ各契約ファイル (クライアント、請負業者、手数料の金額など) から特定のデータを *引き出します*。
+
+    次のページは、モデルが識別するためにトレーニングされる契約の例です。
+
+      ![コントラクトの例。](../media/content-understanding/contract.png)
+
+3. このMicrosoft Teams、すべての関係者は、ドキュメント ライブラリ内Teams承認または却下のために表示されるセキュリティで保護されたチャネルのメンバーです。 新しいTeamsを使用すると、すべての関係者に新しい契約を確認する必要があるときに通知されます。
+ 
+4. 契約を使用Power Automate、契約は、契約チャネルの承認プロセスをTeamsされます。 メンバーが契約を承認すると、契約の状態が承認に変更され、すべてのメンバーに Teams 投稿を通じて通知され、契約が支払いの準備ができていることを示す行アイテムが作成されます。 このプロセスは、支払いのためにサードパーティの金融アプリケーションに直接書き込むまで拡張できます。
+
+5.  メンバーが契約を拒否すると、ステータスが拒否に変更され、すべてのメンバーに通知が投稿Teamsされます。
+
+## <a name="create-the-solution"></a>ソリューションの作成
+
+次のセクションでは、契約管理ソリューションを構成する方法について詳しく説明します。 次の 3 つの手順に分かれています。
+
+- [手順 1.Syntex SharePointを使用してコントラクト ファイルを識別し、データを抽出する](solution-manage-contracts-step1.md)
+- [手順 2.契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。](solution-manage-contracts-step2.md)
+- [手順 3.契約Power Automate処理するフローを作成するには、次の情報を使用します。](solution-manage-contracts-step3.md)

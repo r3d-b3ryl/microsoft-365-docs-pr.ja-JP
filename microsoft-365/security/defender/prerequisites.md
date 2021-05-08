@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender の前提条件
-description: Microsoft 365 Defender のライセンス、ハードウェアとソフトウェアの要件、その他の構成設定について説明します。
+title: Microsoft 365Defender の前提条件
+description: Defender のライセンス、ハードウェアとソフトウェアの要件、その他の構成設定Microsoft 365する
 keywords: 要件、前提条件、ハードウェア、ソフトウェア、ブラウザー、Microsoft 365 Defender、M365、ライセンス、E5、A5、EMS、購入
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 930a3de078d6d003241bb6fcd5df71bc9f301962
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 69345a0db42ec838dc0758cdb0e93a49a8ba6cfd
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935607"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259405"
 ---
-# <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender の前提条件
+# <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365Defender の前提条件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,13 +35,14 @@ ms.locfileid: "51935607"
 **適用対象:**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md)のプロビジョニングと使用に関するライセンスその他の要件について説明します。
+Defender のプロビジョニングと使用に関するライセンスその他の[要件Microsoft 365します](microsoft-365-defender.md)。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
-これらのライセンスは、追加コストなしで Microsoft 365 セキュリティ センターの Microsoft 365 Defender 機能にアクセスできます。
+これらのライセンスを使用すると、セキュリティ センター Microsoft 365 Defender 機能Microsoft 365追加コストなしでアクセスできます。
 
 - Microsoft 365 E5 または A5
-- Microsoft 365 E5 Security または A5 Security
+- Microsoft 365 E3アドオンMicrosoft 365 E5 Securityを使用する
+- Microsoft 365A5 セキュリティ アドオンMicrosoft 365 A3
 - Windows 10 Enterprise E5 または A5
 - Enterprise Mobility + Security (EMS) E5 または A5 
 - Office 365 E5 または A5
@@ -50,30 +51,30 @@ ms.locfileid: "51935607"
 - Microsoft Cloud App Security
 - Defender for Office 365 (プラン 2)
 
-詳細については [、Microsoft 365 Enterprise サービス プランを参照してください](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
+詳細については、サービス[プランのMicrosoft 365 Enterpriseしてください](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
 
-> まだライセンスがありませんか? [Microsoft 365 サブスクリプションを試用する/購入する](../../commerce/try-or-buy-microsoft-365.md?view=o365-worldwide)
+> まだライセンスがありませんか? [Microsoft 365 サブスクリプションを試用する/購入する](../../commerce/try-or-buy-microsoft-365.md)
 
 ### <a name="check-your-existing--licenses"></a>既存のライセンスを確認する
-既存のライセンスを表示するには、Microsoft 365 管理センター[(admin.microsoft.com](https://admin.microsoft.com/)) に移動します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。
+既存のMicrosoft 365を表示するには、admin.microsoft.com[管理センター](https://admin.microsoft.com/)( admin.microsoft.com ) に移動します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。
 
 >[!NOTE]
 > ライセンス情報を表示するには[、Azure](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)サーバーで課金管理者またはグローバル リーダー AD割り当てる必要があります。  アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
-Microsoft 365 Defenderを有効 **にするには**、Azure Active Directory のグローバル管理者またはセキュリティ管理者である必要があります。 Microsoft 365 Defender の使用に必要な役割の一覧と、データへのアクセスが規制される方法に関する情報については [、「Microsoft 365 Defender](m365d-permissions.md)へのアクセスの管理」を参照してください。
+Defender を有効に **するには、** グローバル管理者またはセキュリティAzure Active Directory管理者Microsoft 365があります。 Microsoft 365 Defender を使用するために必要な役割の一覧と、データへのアクセスが規制される方法に関する情報については、「Defender へのアクセスの管理」[をMicrosoft 365してください](m365d-permissions.md)。
 
 ## <a name="browser-requirements"></a>ブラウザー要件
-Microsoft Edge、Internet Explorer 11、または HTML 5 準拠の Web ブラウザーを使用して、Microsoft 365 セキュリティ センターの Microsoft 365 Defender にアクセスします。
+Microsoft 365、Microsoft 365 11、または HTML 5 準拠の web ブラウザーを使用Microsoft Edgeセキュリティ センター Internet Explorer Defender にアクセスします。
 
-## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国の GCC、GCC High、その他の米国政府機関への可用性
-現在、Microsoft 365 Defender は *次の機能を* 使用できません。
-- 米国政府機関コミュニティ クラウド (GCC)
-- US Government Community Cloud High (GCC High)
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国の政府機関GCC、GCC、その他の米国政府機関への可用性
+現時点では、Microsoft 365 Defender *を使用* できません。
+- US Government Community Cloud (GCC)
+- 米国 Government Community Cloud高 (GCC高)
 - 米国国防総省
 - 商用ライセンスを持つすべての米国政府機関
 
 ## <a name="related-topics"></a>関連項目
-- [Microsoft 365 Defender の概要](microsoft-365-defender.md)
+- [Microsoft 365Defender の概要](microsoft-365-defender.md)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 - [アクセスとアクセス許可の管理](m365d-permissions.md)

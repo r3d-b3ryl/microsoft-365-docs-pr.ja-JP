@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: f48b6e8b43f65a6ee919095ea299bd80c81e01c9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687253"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259513"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>インサイダーリスク管理設定の使用を開始する
 
@@ -83,7 +83,7 @@ Insider リスク ポリシー テンプレートは、検出して調査する�
 インサイダー リスク管理Windows 10計画しているデバイスが、これらの要件を満たしていることを確認します。
 
 1. Windows 10 x64 ビルド 1809 以降を実行し、2020 年 2 月 20 日から Windows 10 更新プログラム[(OS ビルド 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)をインストールしている必要があります。
-2. すべてのデバイスは[Azure Active Directory (AAD) に参加する ](/azure/active-directory/devices/concept-azure-ad-join)か、Hybrid Azure AD に参加する必要があります。
+2. デバイスへのログインに使用するユーザー アカウントWindows 10アクティブなアカウント (AAD) Azure Active Directoryである必要があります。 デバイスWindows 10 [AAD、](/azure/active-directory/devices/concept-azure-ad-join)ハイブリッド AAD、または Active Directory に参加している場合、または AAD が登録されている場合があります。
 3. Microsoft Chromium エッジ ブラウザーをエンドポイント デバイスにインストールして、クラウド アップロード アクティビティのアクションを監視します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
 
 #### <a name="step-2-onboarding-devices"></a>手順 2: デバイスのオンボーディング
@@ -425,7 +425,7 @@ Microsoft 365 で物理不良データ コネクタを有効にして、物理�
 
 次の手順を実行して、フローを共有Power Automateします。
 
-1. コンプライアンス センターで [Microsoft 365イン](htttps://compliance.microsoft.com)サイダー リスク管理に **移動** し、[インサイダー リスク設定] を選択してPower Automate  >  **します**。 [ケース] または [**ユーザー]** ダッシュボード ページからアクセスするには、フローの管理を自動化  >  **Power Automate選択します**。
+1. コンプライアンス センターで [Microsoft 365イン](https://compliance.microsoft.com)サイダー リスク管理に **移動** し、[インサイダー リスク設定] を選択してPower Automate  >  **します**。 [ケース] または [**ユーザー]** ダッシュボード ページからアクセスするには、フローの管理を自動化  >  **Power Automate選択します**。
 2. [フローの **Power Automate] ページで**、[マイ フロー] タブまたは [チーム **フロー** **] タブを選択** します。
 3. 共有するフローを選択し、[フロー オプション] メニュー **から** [共有] を選択します。
 4. フロー共有ページで、フローの所有者として追加するユーザーまたはグループの名前を入力します。
@@ -439,7 +439,7 @@ Microsoft 365 で物理不良データ コネクタを有効にして、物理�
 
 次の手順を実行して、フローを編集Power Automateします。
 
-1. コンプライアンス センターで [Microsoft 365イン](htttps://compliance.microsoft.com)サイダー リスク管理に **移動** し、[インサイダー リスク設定] を選択してPower Automate  >  **します**。 [ケース] または [**ユーザー]** ダッシュボード ページからアクセスするには、フローの管理を自動化  >  **Power Automate選択します**。
+1. コンプライアンス センターで [Microsoft 365イン](https://compliance.microsoft.com)サイダー リスク管理に **移動** し、[インサイダー リスク設定] を選択してPower Automate  >  **します**。 [ケース] または [**ユーザー]** ダッシュボード ページからアクセスするには、フローの管理を自動化  >  **Power Automate選択します**。
 2. [フローの **Power Automate] ページ** で、編集するフローを選択し、フロー制御メニューから **[編集**] を選択します。
 3. フロー コンポーネント **の設定を** 変更設定省略記号を選択するか、または省略記号 Delete を選択してフロー  >    >  コンポーネントを削除します。
 4. [保存 **] を** 選択し、[ **閉じる** ] を選択して、フローの編集を完了します。
@@ -452,7 +452,7 @@ Microsoft 365 で物理不良データ コネクタを有効にして、物理�
 
 次の手順を実行して、フローを削除Power Automateします。
 
-1. コンプライアンス センターで [Microsoft 365イン](htttps://compliance.microsoft.com)サイダー リスク管理に **移動** し、[インサイダー リスク設定] を選択してPower Automate  >  **します**。 [ケース] または [**ユーザー]** ダッシュボード ページからアクセスするには、フローの管理を自動化  >  **Power Automate選択します**。
+1. コンプライアンス センターで [Microsoft 365イン](https://compliance.microsoft.com)サイダー リスク管理に **移動** し、[インサイダー リスク設定] を選択してPower Automate  >  **します**。 [ケース] または [**ユーザー]** ダッシュボード ページからアクセスするには、フローの管理を自動化  >  **Power Automate選択します**。
 2. [フローの **Power Automate] ページ** で、削除するフローを選択し、フロー制御メニューから **[削除**] を選択します。
 3. 削除確認ダイアログで、[削除] **を選択** してフローを削除するか、[ **キャンセル** ] を選択して削除アクションを終了します。
 
@@ -470,7 +470,7 @@ Microsoft 365 で物理不良データ コネクタを有効にして、物理�
 
 ケースMicrosoft Teamsサポートを有効にするのは、迅速かつ簡単に構成できます。 インサイダー リスクMicrosoft Teamsを有効にするには、次の手順を実行します。
 
-1. コンプライアンス センターで [Microsoft 365インサイダー](htttps://compliance.microsoft.com)リスク管理 **Insider リスク設定**  >  **に移動します**。
+1. コンプライアンス センターで [Microsoft 365インサイダー](https://compliance.microsoft.com)リスク管理 **Insider リスク設定**  >  **に移動します**。
 2. [選択]**タブMicrosoft Teams** 選択します。
 3. インサイMicrosoft Teamsの統合を有効にする。
 4. [保存 **] を選択** して構成して終了します。
@@ -485,7 +485,7 @@ Microsoft 365 で物理不良データ コネクタを有効にして、物理�
 
 ケースのチームを作成するには、既存のケースで直接作業するときに、Microsoft チームの作成コントロールを使用します。 新しいチームを作成するには、次の手順を実行します。
 
-1. コンプライアンス センター [Microsoft 365イン](htttps://compliance.microsoft.com)サイダー **リスク管理** ケースに移動し  >  、既存のケースを選択します。
+1. コンプライアンス センター [Microsoft 365イン](https://compliance.microsoft.com)サイダー **リスク管理** ケースに移動し  >  、既存のケースを選択します。
 2. ケース アクション メニューで、[Microsoft チームの作成 **] を選択します**。
 3. [チーム **名] フィールド** に、新しいチームの名前Microsoft Teamsします。
 4. [Microsoft **チームの作成] を選択** し、[閉じる] **を選択します**。
@@ -516,7 +516,7 @@ Insider Risk [Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk)
 インサイダー リスク分析を有効にするには、Insider Risk Management、Insider Risk Management Admin、またはグローバル管理者Microsoft 365メンバーである必要があります。
 インサイダー リスク分析を有効にするには、次の手順を実行します。
 
-1. コンプライアンス センター [でMicrosoft 365 Insider](htttps://compliance.microsoft.com)リスク管理 **に移動します**。
+1. コンプライアンス センター [でMicrosoft 365 Insider](https://compliance.microsoft.com)リスク管理 **に移動します**。
 2. [ **インサイダー リスク管理** の **概要]** タブの [組織のインサイダー リスクをスキャンする] カードの [スキャンの実行] **を選択** します。これにより、組織の分析スキャンが有効になります。 また、Insider リスク設定Analytics に移動し、テナントのユーザー アクティビティをスキャンして潜在的なインサイダー リスクを特定することで、組織内のスキャンを  >  **有効にすることもできます**。
 3. [分析 **の詳細] ウィンドウで** 、[スキャンの実行 **] を** 選択して、組織のスキャンを開始します。 分析スキャン結果は、分析情報がレポートとして確認できるまで最大 24 時間かかる場合があります。
 
@@ -546,6 +546,6 @@ Insider Risk [Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk)
 
 インサイダー リスク分析をオフにする手順は次のとおりです。
 
-1. コンプライアンス センター [でMicrosoft 365 Insider](htttps://compliance.microsoft.com)リスク管理 **に移動します**。
+1. コンプライアンス センター [でMicrosoft 365 Insider](https://compliance.microsoft.com)リスク管理 **に移動します**。
 2. [Insider **risk settings Analytics]**  >  **ページを選択** します。
 3. [分析 **] ページで、[** テナントのユーザー アクティビティのスキャン] をオフにし、潜在的なインサイダー **リスクを特定します**。

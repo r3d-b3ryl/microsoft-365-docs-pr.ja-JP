@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: パスワードをリセットし、新しい Microsoft 365 ユーザーに電子メールを送信する方法について説明します。
-ms.openlocfilehash: 2b2c8657a4bbd4745a3fee34fc259244b83640d3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: パスワードをリセットし、新しいユーザーに電子メールを送信するMicrosoft 365します。
+ms.openlocfilehash: 17db9a61dc12c349f0aea032655b56c2a448653f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222101"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244046"
 ---
 # <a name="resend-a-users-password---admin-help"></a>ユーザーのパスワードを再送信する - 管理者向けヘルプ
 
@@ -39,23 +39,7 @@ ms.locfileid: "51222101"
 
 ## <a name="resend-user-password"></a>ユーザーのパスワードを再送信する
   
-::: moniker range="o365-worldwide"  
-  
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
-
-::: moniker-end
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [**アクティブ ユーザー**] ページでユーザーを選択し、[**パスワードのリセット**] を選択します。
 

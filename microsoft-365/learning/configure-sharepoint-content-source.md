@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Microsoft Viva Learning (プレビュー) SharePointコンテンツ ソースとしてコンテンツ を構成する方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da75ec0573519ed73507994afeac995c0461de0c
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: fc702f57b75b78ab523226ba7d8a8eb6505f2975
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100960"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244129"
 ---
 # <a name="coming-soon-configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>近日公開予定: Microsoft Viva Learning SharePointコンテンツ ソースとしてコンテンツ を構成する (プレビュー)
 
@@ -40,11 +40,11 @@ Viva Learning (プレビュー) では、次のドキュメントの種類がサ
 - オーディオ (.m4a)
 - ビデオ (.mov、.mp4、.avi)
 
-詳細については、「オンライン」SharePoint[を参照してください](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)。 
+詳細については、「制限値[SharePoint参照してください](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)。 
 
 ## <a name="permissions"></a>アクセス許可
 
-ドキュメント ライブラリ フォルダー URL は、組織内の任意のSharePointから収集できます。 Viva Learning (プレビュー) は、既存のすべてのコンテンツアクセス許可に従います。 したがって、ユーザーがアクセス許可を持つコンテンツだけが、ビバ ラーニング (プレビュー) 内で検索および表示可能になります。 これらのフォルダー内のコンテンツは検索可能ですが、個々の従業員がアクセス許可を持つコンテンツのみを使用できます。
+ドキュメント ライブラリ フォルダー URL は、組織内の任意のSharePointから収集できます。 Viva Learning (プレビュー) は、既存のすべてのコンテンツアクセス許可に従います。 したがって、ユーザーがアクセス許可を持つコンテンツだけが検索可能で、ビバ ラーニング (プレビュー) 内で表示されます。 これらのフォルダー内のコンテンツは検索可能ですが、個々の従業員がアクセス許可を持つコンテンツのみを使用できます。
 
 組織のリポジトリからのコンテンツの削除は現在サポートされていません。
 
@@ -70,11 +70,11 @@ Viva Learning (プレビュー) では、次のドキュメントの種類がサ
 
 1.  管理センターの左側のナビゲーションMicrosoft 365、[組織の設定]**設定**  >  **移動します**。
  
-2.  [組織の **設定] ページ** の [サービス] タブ **で** 、[学習アプリ (プレビュー) **] を選択します**。
+2.  [組織の **設定] ページ** の [サービス] **タブで** 、[ビバ ラーニング **(プレビュー) ] を選択します**。
 
      ![設定ビバラーニングが表示Microsoft 365管理センターのページを開きます。](../media/learning/learning-sharepoint-configure1.png)
 
-3.  [ラーニング アプリ **(プレビュー)]** パネルの [SharePoint] で、サイト URL を SharePoint サイトに提供し、ビバ ラーニングで一元的なリポジトリを作成します。
+3.  [**ビバ ラーニング (プレビュー)]** パネルの SharePoint で、サイト URL を SharePoint サイトに提供します。このサイトでは、ビバ ラーニング (プレビュー) で一元的なリポジトリを作成します。
 
      ![[管理センター] の [Microsoft 365] パネルに、選択SharePoint表示されます。](../media/learning/learning-sharepoint-configure2.png)
 
@@ -92,7 +92,7 @@ Viva Learning (プレビュー) では、次のドキュメントの種類がサ
 
        ![[新しい] オプションをSharePointの [コンテンツ リポジトリの学習] ページ。](../media/learning/learning-sharepoint-configure5.png)
  
-   2. [新しい **アイテム]** パネルの [ **タイトル** ] フィールドに、選択したディレクトリ名を追加します。 [フォルダー **URL]** フィールドで、URL を学習コンテンツ フォルダーに追加します。 **[保存]** を選択します。
+   2. [新しい **アイテム]** パネルの [ **タイトル** ] フィールドに、選択したディレクトリ名を追加します。 [フォルダー **URL]** フィールドで、URL を学習コンテンツ フォルダーに追加します。 [**保存**] を選択します。
 
        ![[タイトル] フィールドと [SharePoint URL] フィールドが表示される新しいアイテム パネル。](../media/learning/learning-sharepoint-configure6.png)
 
@@ -117,7 +117,7 @@ Viva Learning (プレビュー) では、次のドキュメントの種類がサ
 
      ![[ドキュメント] ページSharePoint[アクションの表示] オプションが表示され、1 行のテキストが強調表示されます。](../media/learning/learning-sharepoint-curation1.png)
 
-3. [列 **の作成] パネル** の [ **名前** ] フィールドに、列のわかりやすい名前を追加します。 **[保存]** を選択します。
+3. [列 **の作成] パネル** の [ **名前** ] フィールドに、列のわかりやすい名前を追加します。 [**保存**] を選択します。
 
      ![[名前] などのフィールドをSharePoint列パネルを作成します。](../media/learning/learning-sharepoint-curation2.png)
  

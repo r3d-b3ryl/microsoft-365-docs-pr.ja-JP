@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c13138f3d80a95dbda3a899507f662c081831d94
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929087"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259681"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
@@ -166,10 +166,10 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
     たとえば、prod チャネル *を選択した* 場合は、次のようになります。
-    
+
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```   
+    ```
 
 - まだインストール `gpg` されていない場合は、パッケージをインストールします。
 
@@ -266,13 +266,13 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
 
 ## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
 
-Microsoft Defender セキュリティ センターからオンボーディング パッケージをダウンロードします。
+次の方法でオンボーディング パッケージをMicrosoft Defender セキュリティ センター。
 
-1. Microsoft Defender セキュリティ センターで、[デバイス管理とオンボード **>設定>移動します**。
+1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
 2. 最初のドロップダウン メニューで、オペレーティング システム **として [Linux Server]** を選択します。 2 番目のドロップダウン メニューで、展開方法として [ローカル スクリプト] **(最大 10** 台のデバイス) を選択します。
 3. [オンボード **パッケージのダウンロード] を選択します**。 ファイルを [ファイル名] WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender セキュリティ センターのスクリーンショット](images/atp-portal-onboarding-linux.png)
+    ![Microsoft Defender セキュリティ センタースクリーンショット](images/atp-portal-onboarding-linux.png)
 
 4. コマンド プロンプトから、ファイルが存在するように確認します。
     アーカイブの内容を抽出します。
@@ -341,7 +341,7 @@ Microsoft Defender セキュリティ センターからオンボーディング
     - ターミナル ウィンドウを開きます。 次のコマンドをコピーして実行します。
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
     - このファイルは、Linux 上の Defender for Endpoint によって検疫されている必要があります。 次のコマンドを使用して、検出された脅威の一覧を表示します。
@@ -352,7 +352,7 @@ Microsoft Defender セキュリティ センターからオンボーディング
 
 ## <a name="installer-script"></a>インストーラー スクリプト
 
-または、公開 GitHub リポジトリで提供されている自動インストーラー [bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) [スクリプトを使用することもできます](https://github.com/microsoft/mdatp-xplat/)。
+または、パブリック リポジトリで提供されている自動[](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh)インストーラー bash[スクリプトGitHubすることもできます](https://github.com/microsoft/mdatp-xplat/)。
 スクリプトは配布とバージョンを識別し、最新のパッケージをプルしてインストールするデバイスをセットアップします。
 指定されたスクリプトを使用してオンボードすることもできます。
 
