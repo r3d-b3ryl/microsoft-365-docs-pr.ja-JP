@@ -7,19 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 94375bc843c6512616d49345bcc9e7f63899a708
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 2fdc646cf616ff6a6fa36a83be3d2b1dd0432fbe
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765085"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274618"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開いたファイルの除外を構成する
 
@@ -30,7 +31,7 @@ ms.locfileid: "51765085"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-特定のプロセスで開いたファイルは、Microsoft Defender ウイルス対策スキャンから除外できます。 除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 定義するための推奨事項」を参照してください。
+特定のプロセスによって開いたファイルを、特定のスキャンからMicrosoft Defender ウイルス対策できます。 除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 定義するための推奨事項」を参照してください。
 
 この記事では、除外リストを構成する方法について説明します。 
 
@@ -43,11 +44,11 @@ ms.locfileid: "51765085"
 |特定のフォルダー内の特定のプロセスによって開いたコンピューター上のすべてのファイル | 指定すると `c:\test\process.exe` 、開いたファイルだけが除外されます。 `c:\test\process.exe` |
 
 
-プロセス除外リストにプロセスを追加しても、ファイルの場所に関係なく、そのプロセスで開いたファイルはスキャンされません。 ただし、ファイル除外リストにも追加されていない限り、プロセス自体 [がスキャンされます](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
+プロセス除外リストにプロセスを追加すると、Microsoft Defender ウイルス対策場所に関係なく、そのプロセスで開いたファイルはスキャンされません。 ただし、ファイル除外リストにも追加されていない限り、プロセス自体 [がスキャンされます](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
 除外は、常時オン [のリアルタイム保護と監視にのみ適用されます](configure-real-time-protection-microsoft-defender-antivirus.md)。 スケジュールされたスキャンやオンデマンド スキャンには適用されません。
 
-グループ ポリシーを使用して除外リストに加えた変更 **は、Windows** セキュリティ アプリのリスト [に表示されます](microsoft-defender-security-center-antivirus.md)。 ただし、Windows セキュリティ アプリで行われた変更 **は、グループ** ポリシー リストには表示されない。
+グループ ポリシーを使用して除外リストに加えた変更は **、** アプリのリストに [Windows セキュリティされます](microsoft-defender-security-center-antivirus.md)。 ただし、アプリで行われた変更 **Windows セキュリティグループ** ポリシー の一覧には表示されない。
 
 グループ ポリシー、Microsoft Endpoint Configuration Manager、Microsoft Intune、および Windows セキュリティ アプリで除外リストの追加、削除、および確認を行い、ワイルドカードを使用してリストをさらにカスタマイズできます。
 
@@ -59,13 +60,13 @@ PowerShell コマンドレットと WMI を使用して、リストの確認な�
 
 ## <a name="configure-the-list-of-exclusions-for-files-opened-by-specified-processes"></a>指定したプロセスによって開いたファイルの除外の一覧を構成する
 
-### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Microsoft Intune を使用して、指定したプロセスで開いたファイルをスキャンから除外する
+### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>指定Microsoft Intuneによって開いたファイルをスキャンから除外するには、次のコマンドを使用します。
 
-詳細 [については、「Configure device Restriction settings in Microsoft Intune」](/intune/device-restrictions-configure) および [「Microsoft Defender Antivirus device Restriction settings for Windows 10 in Intune」](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) を参照してください。
+詳細[については、「デバイス制限](/intune/device-restrictions-configure)設定の構成」を参照Microsoft Intune Intune Microsoft Defender ウイルス対策デバイス制限設定Windows 10[デバイス](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)制限設定を参照してください。
 
-### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Microsoft Endpoint Manager を使用して、指定したプロセスで開いたファイルをスキャンから除外する
+### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>指定Microsoft エンドポイント マネージャーによって開いたファイルをスキャンから除外するには、次のコマンドを使用します。
 
-Microsoft Endpoint Manager ( [現在の](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) ブランチ) の構成の詳細については、「マルウェア対策ポリシーを作成して展開する方法: 除外設定」を参照してください。
+詳細[については、「マルウェア対策ポリシーを作成](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)して展開する方法: 除外設定」を参照Microsoft エンドポイント マネージャー (現在のブランチ)。
 
 ### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>グループ ポリシーを使用して、指定したプロセスで開いたファイルをスキャンから除外する
 
@@ -73,7 +74,7 @@ Microsoft Endpoint Manager ( [現在の](/configmgr/protect/deploy-use/endpoint-
 
 2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に **移動し、[** 管理用 **テンプレート] をクリックします**。
 
-3. ツリーを **Microsoft Defender ウイルス対策と除外> Windows コンポーネント>展開します**。
+3. ツリーを展開して、**除外Windowsコンポーネント> Microsoft Defender ウイルス対策 >展開します**。
 
 4. [除外の処理 **] をダブルクリックし** 、除外を追加します。
 
@@ -81,7 +82,7 @@ Microsoft Endpoint Manager ( [現在の](/configmgr/protect/deploy-use/endpoint-
     2. [オプション] **セクションで** 、[ **表示.... をクリックします**。
     3. [値名] 列の下に、各プロセス **を独自の行に入力** します。 さまざまな種類のプロセスの除外については、例の表を参照してください。  すべての **プロセスの [** 値] **列に 0** を入力します。
 
-5. **[OK]** をクリックします。
+5. [**OK**] をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>PowerShell コマンドレットを使用して、指定したプロセスで開いたファイルをスキャンから除外する
 
@@ -110,9 +111,9 @@ PowerShell を使用してプロセスによって開いたファイルの除外
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-Microsoft Defender Antivirus で PowerShell を使用する方法の詳細については、「Manage antivirus with PowerShell コマンドレット」および [「Microsoft Defender Antivirus コマンドレット」を参照してください](/powershell/module/defender)。
+PowerShell と一緒に PowerShell を使用する方法Microsoft Defender ウイルス対策、「Manage antivirus with PowerShell コマンドレット」および「Microsoft Defender ウイルス対策[コマンドレット」を参照してください](/powershell/module/defender)。
 
-### <a name="use-windows-management-instruction-wmi-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Windows 管理命令 (WMI) を使用して、指定したプロセスで開いたファイルをスキャンから除外する
+### <a name="use-windows-management-instruction-wmi-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>[Windows管理命令 (WMI) を使用して、指定したプロセスで開いたファイルをスキャンから除外する
 
 次の [**プロパティの****クラスの** **Set メソッド、Add** **メソッド、Remove**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))メソッドMSFT_MpPreference使用します。
 
@@ -122,11 +123,11 @@ ExclusionProcess
 
 **Set、Add、****および** **Remove** の使用は、PowerShell の対応するユーザーと類似 `Set-MpPreference` しています。 `Add-MpPreference` `Remove-MpPreference`
 
-詳細および許可されるパラメーターについては  [、「WMIv2 API のWindows Defender参照してください](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)。
+詳細および許可されるパラメーターについては[、「WMIv2 API Windows Defender参照してください](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)。
 
-### <a name="use-the-windows-security-app-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Windows セキュリティ アプリを使用して、指定したプロセスで開いたファイルをスキャンから除外する
+### <a name="use-the-windows-security-app-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>指定したプロセスWindows セキュリティ開いたファイルをスキャンから除外するには、アプリアプリを使用します。
 
-手順 [については、「Windows セキュリティ アプリで除外を追加する」](microsoft-defender-security-center-antivirus.md) を参照してください。
+手順[については、「アプリの除外をWindows セキュリティする」](microsoft-defender-security-center-antivirus.md)を参照してください。
 
 ## <a name="use-wildcards-in-the-process-exclusion-list"></a>プロセス除外リストでワイルドカードを使用する
 
@@ -143,11 +144,11 @@ ExclusionProcess
 
 ## <a name="review-the-list-of-exclusions"></a>除外の一覧を確認する
 
-除外リスト内のアイテムは、MpCmdRun、PowerShell、Microsoft [Endpoint Configuration Manager、Intune、](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)または[Windows セキュリティ アプリで取得できます](microsoft-defender-security-center-antivirus.md)。 [](/intune/device-restrictions-configure)
+除外リストのアイテムは、MpCmdRun、PowerShell、Microsoft Endpoint Configuration Manager、Intune、またはアプリWindows セキュリティ[できます](microsoft-defender-security-center-antivirus.md)。 [](/intune/device-restrictions-configure) [](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)
 
 PowerShell を使用する場合は、次の 2 つの方法でリストを取得できます。
 
-- すべての Microsoft Defender ウイルス対策の基本設定の状態を取得します。 各リストは別々の行に表示されますが、各リスト内のアイテムは同じ行に結合されます。
+- すべてのユーザー設定のMicrosoft Defender ウイルス対策します。 各リストは別々の行に表示されますが、各リスト内のアイテムは同じ行に結合されます。
 - すべての基本設定の状態を変数に書き込み、その変数を使用して、関心のある特定のリストのみを呼び出します。 各使用は `Add-MpPreference` 、新しい行に書き込まれます。
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>MpCmdRun を使用して除外リストを検証する
@@ -159,10 +160,10 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> MpCmdRun で除外をチェックするには、Microsoft Defender Antivirus CAMP バージョン 4.18.1812.3 (2018 年 12 月リリース) 以降が必要です。
+> MpCmdRun で除外をチェックするには、Microsoft Defender ウイルス対策 CAMP バージョン 4.18.1812.3 (2018 年 12 月にリリース) 以降が必要です。
 
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>PowerShell を使用して、他のすべての Microsoft Defender ウイルス対策の基本設定と一緒に除外の一覧を確認する
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>PowerShell を使用して、他のすべてのユーザー設定とMicrosoft Defender ウイルス対策一覧を確認する
 
 次のコマンドレットを使用します。
 
@@ -170,7 +171,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 Get-MpPreference
 ```
 
-[Microsoft Defender ウイルス対策で PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)を使用する方法の詳細については、「Use PowerShell コマンドレットを使用して Microsoft Defender Antivirus コマンドレットと[Defender](/powershell/module/defender)コマンドレットを構成および実行する」を参照してください。
+PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>PowerShell を使用して特定の除外リストを取得する
 
@@ -181,13 +182,13 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-[Microsoft Defender ウイルス対策で PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)を使用する方法の詳細については、「Use PowerShell コマンドレットを使用して Microsoft Defender Antivirus コマンドレットと[Defender](/powershell/module/defender)コマンドレットを構成および実行する」を参照してください。
+PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft Defender ウイルス対策スキャンで除外を構成および検証する](configure-exclusions-microsoft-defender-antivirus.md)
+- [カスタム スキャンで除外を構成Microsoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md)
 - [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Windows Server で Microsoft Defender ウイルス対策の除外を構成する](configure-server-exclusions-microsoft-defender-antivirus.md)
-- [除外を定義するときに回避する一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策スキャンと修復の結果をカスタマイズ、開始、および確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [サーバー Microsoft Defender ウイルス対策の除外をWindowsする](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 21Vianet がOfficeする 365 の詳細については、中国のセキュリティで保護され、信頼性と拡張性に優れたクラウド サービスのニーズを満たします。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 92b69cc77f5c48af63651f2fd37761981ca45ad5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1ee7ba7be2e350195350a5c00e92ed10924657ac
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914344"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274366"
 ---
 # <a name="office-365-operated-by-21vianet"></a>21 Vianet が運用している Office 365
 
@@ -233,3 +233,11 @@ GDPR は、個人データの処理に関連して、個人 (またはデータ�
 - 21Vianet が運用する Microsoft サービスのシステム生成ログは、データ ログエクスポートを使用してテナント管理者がエクスポートできます。
     
 詳細と手順については、「データ主体 [要求 (DSR) for GDPR」を参照してください](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Microsoft 365 for business サブスクリプションの試用または購入](../../commerce/try-or-buy-microsoft-365.md) (記事)
+
+[21Vianet Office 365](parity-between-azure-information-protection.md) の Azure Information Protection サポート (記事)
+
+[請求書を表示するか、Fapiao を取得する](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (記事)

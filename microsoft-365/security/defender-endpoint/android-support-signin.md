@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f57d14427ef68280a065489e068955db9e5045a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18afd4aa160ec345839d23719d1b3fcce21654ec
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934803"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246358"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -51,11 +51,11 @@ ms.locfileid: "51934803"
 
 **原因:**
 
-デバイスに古いバージョンの "Microsoft Authenticator" アプリがインストールされています。
+古いバージョンの "Microsoft Authenticator" アプリがデバイスにインストールされています。
 
 **解決方法:**
 
-Google Play ストアから最新バージョンの [Microsoft Authenticator を](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) インストールし、もう一度やり直す
+Google Play ストアから最新バージョン[とMicrosoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)をインストールし、もう一度やり直してください
 
 ## <a name="sign-in-failed---invalid-license"></a>サインインに失敗しました - 無効なライセンス
 
@@ -67,11 +67,15 @@ Google Play ストアから最新バージョンの [Microsoft Authenticator を
 
 **原因:**
 
-Microsoft 365 ライセンスが割り当てられていないか、組織に Microsoft 365 Enterprise サブスクリプションのライセンスが割り当てられていない。
+ライセンスが割りMicrosoft 365されていないか、組織にサブスクリプションのライセンスMicrosoft 365 Enterpriseです。
 
 **解決方法:**
 
 ヘルプについては、管理者に問い合わせてください。
+
+## <a name="report-unsafe-site"></a>安全でないサイトを報告する
+
+フィッシング Web サイトは、お客様の個人情報または財務情報を取得する目的で信頼できる Web サイトになりすます。 フィッシング サイト [の可能性がある Web サイトを報告](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) する場合は、[ネットワーク保護に関するフィードバックを提供する] ページをご覧ください。
 
 ## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a>一部の OEM デバイスでフィッシング ページがブロックされない
 

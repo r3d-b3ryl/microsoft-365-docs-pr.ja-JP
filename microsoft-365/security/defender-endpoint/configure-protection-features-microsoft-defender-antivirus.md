@@ -7,21 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 9fc51682b659670a21c3c293ea8996beb228802a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 53b1e1474e0870388ec1cfaf214190eb0bdf7beb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765073"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274610"
 ---
-# <a name="configure-behavioral-heuristic-and-real-time-protection"></a>動作、ヒューリスティック、およびリアルタイムの保護を構成する
+# <a name="configure-behavioral-heuristic-and-real-time-protection"></a>行動、ヒューリスティック、リアルタイム保護を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,5 +47,5 @@ Microsoft Defender ウイルス [対策クラウド配信](cloud-protection-micr
 
  トピック | 説明
 ---|---
-[望ましくない可能性のあるアプリケーションの検出とブロック](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | アドウェア、ブラウザー修飾子、ツール バー、不正なウイルス対策アプリや偽のウイルス対策アプリなど、ネットワークで望ましくない可能性があるアプリを検出してブロックする
+[望ましくない可能性のあるアプリケーションを検出してブロックする](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | アドウェア、ブラウザー修飾子、ツール バー、不正なウイルス対策アプリや偽のウイルス対策アプリなど、ネットワークで望ましくない可能性があるアプリを検出してブロックする
 [Microsoft Defender ウイルス対策保護機能を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md) | リアルタイム保護、ヒューリスティック、その他の常時オンの Microsoft Defender ウイルス対策監視機能を有効にして構成する

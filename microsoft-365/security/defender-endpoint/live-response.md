@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860799"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246467"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -44,15 +44,15 @@ ms.locfileid: "51860799"
 - 基本的なコマンドと高度なコマンドを実行して、デバイスで調査作業を実行します。
 - PowerShell スクリプトのマルウェア サンプルや結果などのファイルをダウンロードします。
 - バックグラウンドでファイルをダウンロードする (new!)。
-- PowerShell スクリプトまたは実行可能ファイルをライブラリにアップロードし、テナント レベルからデバイスで実行します。
+- アップロード PowerShell スクリプトまたは実行可能ファイルをライブラリに追加し、テナント レベルからデバイスで実行します。
 - 修復アクションを実行または元に戻します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 デバイスでセッションを開始する前に、次の要件を満たしていることを確認してください。
 
-- **サポートされているバージョンの Windows を実行しているのを確認します**。 <br/>
-デバイスは、次のいずれかのバージョンの Windows を実行している必要があります。
+- **サポートされているバージョンのファイルを** 実行Windows。 <br/>
+デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows
 
   - **Windows 10**
     - [バージョン 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) 以降  
@@ -61,7 +61,7 @@ ms.locfileid: "51860799"
     - [バージョン 1803 (RS 4)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [バージョン 1709 (RS 3)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
-  - **Windows Server 2019 - パブリック プレビューにのみ適用**
+  - **WindowsServer 2019 - パブリック プレビューにのみ適用**
     - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)を使用) 
     - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818)き)
 
@@ -101,20 +101,20 @@ ms.locfileid: "51860799"
 ## <a name="live-response-dashboard-overview"></a>ライブ応答ダッシュボードの概要
 デバイスでライブ応答セッションを開始すると、ダッシュボードが開きます。 ダッシュボードには、次のようなセッションに関する情報が表示されます。 
 
-- セッションを作成したユーザー
+- Who作成されたセッション
 - セッションが開始された場合
 - セッションの期間
 
 ダッシュボードでは、次の情報にアクセスすることもできます。
 - セッションを切断する
-- ライブラリへのファイルのアップロード 
+- アップロードライブラリにファイルを追加する 
 - コマンド コンソール
 - コマンド ログ
 
 
 ## <a name="initiate-a-live-response-session-on-a-device"></a>デバイスでライブ応答セッションを開始する 
 
-1. Microsoft Defender セキュリティ センターにサインインします。
+1. サインインしてMicrosoft Defender セキュリティ センター。
 
 2. [デバイス] リスト ページに移動し、調査するデバイスを選択します。 [デバイス] ページが開きます。
 
@@ -143,7 +143,6 @@ ms.locfileid: "51860799"
 |`connect` | デバイスへのライブ応答セッションを開始します。 |
 |`connections` | すべてのアクティブな接続を表示します。 |
 |`dir` | ディレクトリ内のファイルとサブディレクトリの一覧を表示します。 |
-|`download <file_path> &` | バックグラウンドでファイルをダウンロードします。 |
 |`drivers` |  デバイスにインストールされているすべてのドライバーを表示します。 |
 |`fg <command ID>` | 指定したジョブをフォアグラウンドのフォアグラウンドに配置し、現在のジョブに設定します。 <br> メモ: fg は、PID ではなくジョブから使用できる "コマンド ID" を受け取る |
 |`fileinfo` | ファイルに関する情報を取得します。 |
@@ -173,7 +172,7 @@ ms.locfileid: "51860799"
 
 ## <a name="use-live-response-commands"></a>ライブ応答コマンドの使用
 
-コンソールで使用できるコマンドは、Windows コマンドと同様の原則 [に従います](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
+コンソールで使用できるコマンドは、「コマンド」と同様の原則[Windows従います](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
 
 高度なコマンドは、ファイルのダウンロードとアップロード、デバイスでのスクリプトの実行、エンティティに対する修復アクションの実行など、より強力なアクションを実行できる、より堅牢なアクションセットを提供します。
 
@@ -198,9 +197,9 @@ ms.locfileid: "51860799"
 次に例を示します。
 
 
-|コマンド  |目的  |
+|Command  |目的  |
 |---------|---------|
-|`Download "C:\windows\some_file.exe" &`     |バックグラウンドで *some_file.exeダウンロードを* 開始します。         |
+|`getfile "C:\windows\some_file.exe" &`     |バックグラウンドで *some_file.exeダウンロードを* 開始します。         |
 |`fg 1234`     |コマンド ID *1234* のダウンロードをフォアグラウンドに返します。         |
 
 
@@ -214,7 +213,7 @@ ms.locfileid: "51860799"
 
 #### <a name="to-upload-a-file-in-the-library"></a>ライブラリ内のファイルをアップロードするには
 
-1. [ファイル **をライブラリにアップロード] をクリックします**。 
+1. [ファイル **アップロードライブラリ] をクリックします**。 
 
 2. [参照 **] をクリック** し、ファイルを選択します。
 
@@ -234,16 +233,6 @@ ms.locfileid: "51860799"
 
 >[!WARNING]
 >このショートカットを使用すると、エージェント側でコマンドが停止しない。 このコマンドは、ポータル内のコマンドのみを取り消します。 したがって、"修復" などの操作を変更すると、コマンドが取り消される間、続行される場合があります。 
-
-### <a name="automatically-run-prerequisite-commands"></a>前提条件コマンドを自動的に実行する
-
-一部のコマンドには、実行する前提条件のコマンドがあります。 前提条件コマンドを実行しない場合は、エラーが発生します。 たとえば、コマンドを実行せずに `download` 実行 `fileinfo` すると、エラーが返されます。
-
-自動フラグを使用すると、次に示す前提条件コマンドを自動的に実行できます。
-
-```console
-getfile c:\Users\user\Desktop\work.txt -auto
-```
 
 ## <a name="run-a-powershell-script"></a>PowerShell スクリプトを実行する 
 
@@ -286,7 +275,7 @@ PowerShell スクリプトを実行する前に、まずライブラリにアッ
 
 ## <a name="supported-output-pipes"></a>サポートされている出力パイプ
 
-ライブ応答は、CLI とファイルへの出力パイプをサポートします。 CLI は既定の出力動作です。 [command] コマンドと [filename].txt を使用して、出力をファイル>パイプ処理できます。  
+ライブ応答は、CLI とファイルへの出力パイプをサポートします。 CLI は既定の出力動作です。 [command] コマンドと [filename]コマンドを使用して、出力をファイル>パイプ.txt。  
 
 例:
 

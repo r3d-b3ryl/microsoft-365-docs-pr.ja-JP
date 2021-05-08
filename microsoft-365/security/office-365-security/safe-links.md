@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、管理者は、フィッシングや悪意のある URL を使用する他の攻撃から組織を保護するために、Office 365 の Defender のセーフ リンク保護について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644778"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274438"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全なリンク
 
@@ -57,9 +57,9 @@ ms.locfileid: "51644778"
 
   Teams のセーフ リンク保護の詳細については、この記事の後半の [「Microsoft Teams](#safe-links-settings-for-microsoft-teams) の安全なリンク設定」セクションを参照してください。
 
-- **Office 365** アプリ : 365 アプリOfficeセーフ リンク保護は、サポートされているデスクトップ、モバイル、および Web aps で利用できます。 セーフ **リンク** ポリシーの外部にあるグローバルOffice 365 アプリに対してセーフ リンク保護を構成します。 手順については、「Configure global settings for Safe Links settings [in Microsoft Defender for microsoft Defender for Office 365」 を参照してください](configure-global-settings-for-safe-links.md)。
+- **Office 365** アプリ : 365 アプリOfficeのセーフ リンク保護は、サポートされているデスクトップ アプリ、モバイル アプリ、および Web アプリで利用できます。 セーフ **リンク** ポリシーの外部にあるグローバルOffice 365 アプリに対してセーフ リンク保護を構成します。 手順については、「Configure global settings for Safe Links settings [in Microsoft Defender for microsoft Defender for Office 365」 を参照してください](configure-global-settings-for-safe-links.md)。
 
-  ただし、365 のアプリOfficeリンク保護は、アクティブなセーフリンク ポリシーに含まれるユーザーにのみ適用されます。 ユーザーがアクティブなセーフ リンク ポリシーに含まれていない場合、ユーザーはサポートされている 365 アプリでセーフ リンクOfficeされません。
+  Office 365 アプリの安全なリンク保護は、ユーザーがアクティブなセーフ リンク ポリシーに含まれているかどうかに関係なく、Office 365 の Defender のライセンスを取得している組織内のすべてのユーザーに適用されます。
 
   Office 365 アプリのセーフ リンク保護の詳細については、この記事の「Office [365](#safe-links-settings-for-office-365-apps) アプリのセーフ リンク設定」セクションを参照してください。
 
@@ -78,6 +78,8 @@ ms.locfileid: "51644778"
 
 次の表では、Microsoft 365 および Office 365 の Defender for Office 365 を含む組織のセーフ リンクのシナリオについて説明します (つまり、ライセンスの不足は、例では決して問題ではありません)。
 
+<br>
+
 ****
 
 |シナリオ|結果|
@@ -87,6 +89,7 @@ ms.locfileid: "51644778"
 |Pat の組織では、管理者はセーフ リンク ポリシーを作成していなかっていますが、365 アプリのセーフ Office保護が有効になります。 Pat は Word ドキュメントを開き、ファイル内の URL をクリックします。|Pat はセーフ リンクで保護されません。 <p> Office 365 アプリの安全なリンク保護はグローバルに有効になりますが、Pat はアクティブなセーフ リンク ポリシーには含まれていないので、保護を適用できます。|
 |Lee の組織では、セーフ リンクのグローバル設定の [次の URL をブロックする] `https://tailspintoys.com` リストで構成されます。  Lee を含むセーフ リンク ポリシーが既に存在します。 Lee は URL を含む電子メール メッセージを受信します `https://tailspintoys.com/aboutus/trythispage` 。 Lee が URL をクリックします。|Lee の URL が自動的にブロックされる場合があります。リスト内の URL エントリと、使用するメール クライアント Lee によって異なります。 詳細については、この記事の [後半](#block-the-following-urls-list-for-safe-links) の「安全なリンク」セクションの「次の URL をブロックする」の一覧を参照してください。|
 |Jamie と Julia は両方とも、contoso.com。 長い時間前、管理者は Jamie と Julia の両方に適用されるセーフ リンク ポリシーを構成しました。 Jamie は、電子メールに悪意のある URL が含まれていることを知らずに、電子メールを Julia に送信します。|Julia は、内部受信者間のメッセージに適用するセーフ リンク ポリシーが構成されている場合、セーフ リンクによって保護されます。 詳細については、この記事の後半の「電子メール メッセージの安全 [なリンク設定](#safe-links-settings-for-email-messages) 」セクションを参照してください。|
+|
 
 ## <a name="safe-links-settings-for-email-messages"></a>電子メール メッセージの安全なリンク設定
 
@@ -104,9 +107,7 @@ ms.locfileid: "51644778"
   - 有効な評価を持つ URL は、バックグラウンドで非同期的に無効になります。
 
 - **ファイルを指** す疑わしいリンクやリンクのリアルタイム URL スキャンを適用する: ダウンロード可能なコンテンツを指す電子メール メッセージ内のリンクを含む、リンクのリアルタイム スキャンを有効にする。 推奨される値は有効です。
-
   - **メッセージを配信する前に URL のスキャンが完了するのを待ちます**。
-
     - 有効: URL を含むメッセージは、スキャンが完了するまで保持されます。 メッセージは、URL が安全と確認された後にのみ配信されます。 これは推奨される値です。
     - 無効: URL スキャンを完了できない場合は、メッセージを配信します。
 
@@ -125,7 +126,6 @@ ms.locfileid: "51644778"
   安全なリンク ポリシーの Standard および Strict ポリシー設定の推奨値の詳細については、「セーフ リンク ポリシー設定 [」を参照してください](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
 - **受信者フィルター**: ポリシーが適用されるユーザーを決定する受信者の条件と例外を指定する必要があります。 条件や例外には次のプロパティを使用できます。
-
   - **受信者が次の場合**
   - **受信者ドメインは、**
   - **受信者が次のメンバーの場合**
@@ -207,7 +207,7 @@ Office 365 アプリの安全なリンク保護は、電子メール メッセ�
 
 - ユーザーは、自分の仕事または学校のアカウントを使用してサインインします。 詳細については、「サインインしてサインイン[する」を参照Office。](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)
 
-セーフ リンクポリシーではなく、Officeリンクのグローバル設定で、365 アプリのセーフ リンク保護を構成します。 ただし、Office 365 アプリのセーフ リンク保護を適用するには、Office ドキュメントを開いてリンクをクリックするユーザーは、アクティブなセーフ リンク ポリシーに含める必要があります。
+セーフ リンクポリシーではなく、Officeリンクのグローバル設定で、365 アプリのセーフ リンク保護を構成します。 この保護は、アクティブなセーフ リンク ポリシーにユーザーが含まれているかどうかに関係なく、Office 365 の Defender のライセンスを取得している組織内のすべてのユーザーに適用されます。
 
 次のセーフ リンク設定は、365 アプリOffice使用できます。
 
@@ -256,26 +256,23 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 セーフ リンクのグローバル設定で URL の一覧を構成します。 手順については [、「Configure the Configure the following URL」リストを参照してください](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)。
 
-> [!NOTE]
-> 
-> - あらゆる場所でブロックされている URL の本当に汎用的なリストについては、「Manage [the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
-> 
-> - 制限:
->   - エントリの最大数は 500 です。
->   - エントリの最大長は 128 文字です。
->   - すべてのエントリは、10,000 文字を超えることはできません。
-> 
-> - URL の末尾にスラッシュ ( ) を `/` 含めない。 たとえば、 を `https://www.contoso.com` 使用します `https://www.contoso.com/` 。
-> 
-> - ドメイン専用 URL (たとえば、または) は、ドメインを含む `contoso.com` `tailspintoys.com` すべての URL をブロックします。
-> 
-> - 完全なドメインをブロックせずにサブドメインをブロックできます。 たとえば、サブドメインを含む URL をブロックしますが、完全なドメインを含む `toys.contoso.com*` URL はブロックしない `contoso.com` 。
-> 
-> - URL エントリごとに最大 3 つのワイルドカード ( `*` ) を含めできます。
+**注**:
+
+- あらゆる場所でブロックされている URL の本当に汎用的なリストについては、「Manage [the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
+- [次の URL を **ブロックする] リストの制限** 。
+  - エントリの最大数は 500 です。
+  - エントリの最大長は 128 文字です。
+  - すべてのエントリは、10,000 文字を超えることはできません。
+- URL の末尾にスラッシュ ( ) を `/` 含めない。 たとえば、 を `https://www.contoso.com` 使用します `https://www.contoso.com/` 。
+- ドメイン専用 URL (たとえば、または) は、ドメインを含む `contoso.com` `tailspintoys.com` すべての URL をブロックします。
+- 完全なドメインをブロックせずにサブドメインをブロックできます。 たとえば、サブドメインを含む URL をブロックしますが、完全なドメインを含む `toys.contoso.com*` URL はブロックしない `contoso.com` 。
+- URL エントリごとに最大 3 つのワイルドカード ( `*` ) を含めできます。
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>"次の URL をブロックする" リストのエントリ構文
 
 入力できる値とその結果の例を次の表に示します。
+
+<br>
 
 ****
 
@@ -296,24 +293,24 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 新規または既存のセーフ リンク ポリシーのリストにエントリを追加するには、「Create Safe [Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) or [Modify Safe Links policies」を参照してください](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
 
-> [!NOTE]
-> 
-> - 次のクライアントは、セーフ リンク ポリシーの [次の URL を書き **換** えない] リストを認識しません。 ポリシーに含まれるユーザーは、次のクライアントでのセーフ リンク スキャンの結果に基づいて URL へのアクセスをブロックできます。
-> 
->   - Microsoft Teams
->   - Office Web アプリ
-> 
->   すべての場所で許可されている URL の本当に汎用的なリストについては [、「Manage the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
-> 
-> - ユーザー エクスペリエンスを向上させるために、一般的に使用される内部 URL をリストに追加する方法を検討してください。 たとえば、Skype for Business や SharePoint などのオンプレミス サービスがある場合は、それらの URL を追加してスキャンから除外できます。
-> 
-> - [セーフ リンク] ポリシーで次の **URL** エントリを書き換えない場合は、リストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、リストには次のようなエントリが含まれるので、後で次のような `https://contoso.com/a` サブパスを含めることにしました `https://contoso.com/a/b` 。 新しいエントリを追加する代わりに、既存のエントリにワイルドカードを追加して、 `https://contoso.com/a/*` になります。
-> 
-> - URL エントリごとに最大 3 つのワイルドカード ( `*` ) を含めできます。 ワイルドカードには、プレフィックスまたはサブドメインが明示的に含まれます。 たとえば、指定したドメイン内のサブドメインとパスをユーザーがアクセスできるので、エントリは同 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` じではありません。
+**注**:
+
+- 次のクライアントは、セーフ リンク ポリシーの [次の URL を書き **換** えない] リストを認識しません。 ポリシーに含まれるユーザーは、次のクライアントでのセーフ リンク スキャンの結果に基づいて URL へのアクセスをブロックできます。
+  - Microsoft Teams
+  - Office Web アプリ
+
+  すべての場所で許可されている URL の本当に汎用的なリストについては [、「Manage the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
+
+- ユーザー エクスペリエンスを向上させるために、一般的に使用される内部 URL をリストに追加する方法を検討してください。 たとえば、Skype for Business や SharePoint などのオンプレミス サービスがある場合は、それらの URL を追加してスキャンから除外できます。
+- [セーフ リンク] ポリシーで次の **URL** エントリを書き換えない場合は、リストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、リストには次のようなエントリが含まれるので、後で次のような `https://contoso.com/a` サブパスを含めることにしました `https://contoso.com/a/b` 。 新しいエントリを追加する代わりに、既存のエントリにワイルドカードを追加して、 `https://contoso.com/a/*` になります。
+- URL エントリごとに最大 3 つのワイルドカード ( `*` ) を含めできます。 ワイルドカードには、プレフィックスまたはサブドメインが明示的に含まれます。 たとえば、指定したドメイン内のサブドメインとパスをユーザーがアクセスできるので、エントリは同 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` じではありません。
+- URL で HTTP から HTTPS への自動リダイレクト (302 リダイレクトなど) を使用し、同じ URL の HTTP エントリと HTTPS エントリの両方をリストに入力すると、2 番目の URL エントリが最初の URL エントリに置き換わる可能性があります。 `http://www.contoso.com` `https://www.contoso.com` この動作は、HTTP バージョンと HTTPS バージョンの URL が完全に分離されている場合は発生しません。
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>"次の URL を書き換えない" リストのエントリ構文
 
 入力できる値とその結果の例を次の表に示します。
+
+<br>
 
 ****
 

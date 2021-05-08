@@ -3,7 +3,7 @@ title: セキュリティ ダッシュボードの概要
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 新しいセキュリティ ダッシュボードを使用して、365 脅威Office状態を確認し、セキュリティアラートを表示して処理します。
+description: 新しいセキュリティ ダッシュボードを使用して、脅威Office 365状態を確認し、セキュリティアラートを表示して処理します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7114776f686d25808c141a07b8cb2868cc67615d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205643"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274414"
 ---
 # <a name="security-dashboard"></a>セキュリティ ダッシュボード
 
@@ -52,13 +52,13 @@ ms.locfileid: "51205643"
 
 ![セキュリティ ダッシュボード - 脅威管理の概要ウィジェット](../../media/SecDash-ThreatMgmtSummary.png)
 
-脅威管理の概要に表示される情報は、サブスクリプションに含まれる内容によって異なります。 次の表に、365 E3 および 365 E5 にOffice情報Office示します。
+脅威管理の概要に表示される情報は、サブスクリプションに含まれる内容によって異なります。 次の表に、E3 および E5 に含Office 365情報Office 365します。
 
 |Office 365 E3|Office 365 E5|
 |---|---|
 |マルウェア メッセージがブロックされている<br>フィッシング メッセージがブロックされる<br>ユーザーによって報告されたメッセージ<br><br><br><br>|マルウェア メッセージがブロックされている<br>フィッシング メッセージがブロックされる<br>ユーザーによって報告されたメッセージ<br>ゼロデイマルウェアがブロックされる<br>高度なフィッシング メッセージが検出されました<br>ブロックされた悪意のある URL|
 
-脅威管理の概要ウィジェットを表示またはアクセスするには、365 レポートの Defender を表示Office必要があります。 詳細については、「365 レポートの Defender を表示するために必要なアクセス許可 [Office」を参照してください](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)。
+脅威管理の概要ウィジェットを表示またはアクセスするには、レポートの Defender を表示するためのアクセス許可Office 365があります。 詳細については、「レポートの Defender を表示するために必要なアクセス許可[Office 365」を参照してください](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)。
 
 ## <a name="threat-protection-status"></a>脅威保護の状態
 
@@ -66,14 +66,14 @@ ms.locfileid: "51205643"
 
 ![脅威保護状態ウィジェット](../../media/tpswidget.png)
 
-詳細は、Microsoft 365 サブスクリプションに Microsoft [Defender 365](defender-for-office-365.md)の Exchange [Online Protection](exchange-online-protection-overview.md) (EOP) が含まれるかどうかOfficeです。
+詳細は、Microsoft Defender のMicrosoft 365のMicrosoft 365 [](exchange-online-protection-overview.md) (EOP) Exchange Online Protectionが含まれるかどうか[によって異Office 365。](defender-for-office-365.md)
 
 |サブスクリプションに含まれる場合。.|これらの詳細が表示されます|
 |---|---|
 |EOP ではなく Microsoft Defender for Office 365|EOP によって検出およびブロックされた悪意のある電子メール。<p> 「Threat [Protection Status report (EOP)」を参照してください](view-email-security-reports.md#threat-protection-status-report)。|
-|Microsoft Defender for Office 365|悪意のあるコンテンツと悪意のある電子メールが EOP と Defender によって検出され、ブロックOffice 365 <p> マルウェア対策エンジン、0 時間自動削除、および Office 365[](zero-hour-auto-purge.md)の機能 (セーフ リンク、安全な添付ファイル、および Office [365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)[](safe-attachments.md)のフィッシング対策を含む) の Defender によってブロックされた悪意のあるコンテンツを含む一意の電子メール メッセージの集計数。 [](safe-links.md) <p> 「 [脅威保護の状態レポート」を参照してください](view-reports-for-mdo.md#threat-protection-status-report)。|
+|Microsoft Defender for Office 365|悪意のあるコンテンツと悪意のある電子メールが EOP と Defender によって検出およびブロックOffice 365 <p> マルウェア対策エンジン、ゼロ時間自動削除、および Office 365 機能[(セーフ](safe-links.md)リンク[](zero-hour-auto-purge.md)[、セーフ 添付](safe-attachments.md)ファイル、および Office 365 の Defender でのフィッシング対策を含む) によってブロックされた悪意のあるコンテンツを含む一意の電子メール メッセージの集計[数](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 <p> 「 [脅威保護の状態レポート」を参照してください](view-reports-for-mdo.md#threat-protection-status-report)。|
 
-脅威保護状態ウィジェットを表示またはアクセスするには、365 レポートの Defender を表示するためのアクセスOffice必要があります。 詳細については、「365 レポートの Defender を表示するために必要なアクセス許可 [Office」を参照してください。](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+脅威保護状態ウィジェットを表示またはアクセスするには、レポートの Defender を表示するためのアクセス許可Office 365があります。 詳細については、「レポートの Defender を表示するために必要なアクセス許可[Office 365してください。](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
 ## <a name="global-weekly-threat-detections"></a>グローバル週次脅威検出
 
@@ -87,7 +87,7 @@ ms.locfileid: "51205643"
 |---|---|
 |スキャンされたメッセージ|スキャンされた電子メール メッセージの数に受信者の数を掛けた数|
 |脅威の停止|マルウェアが含まれていると識別された電子メール メッセージの数に受信者の数を掛けた数|
-|Defender によって[365 Officeブロック](defender-for-office-365.md)される|Defender が 365 でブロックOffice受信者の数を乗算した電子メール メッセージの数|
+|Defender によって[ブロックOffice 365](defender-for-office-365.md)|Defender によってブロックされた電子メール メッセージの数Office 365受信者の数を乗算します。|
 |配信後に削除|0 時間自動削除 [によって削除](zero-hour-auto-purge.md) されたメッセージの数に受信者の数を掛けた数|
 
 ## <a name="malware"></a>マルウェア
@@ -96,7 +96,7 @@ ms.locfileid: "51205643"
 
 ![マルウェアの傾向とファミリの種類](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>洞察力
+## <a name="insights"></a>分析情報
 
 分析情報には、確認する必要がある重要な問題だけでなく、考慮すべき推奨事項やアクションも含まれます。
 
@@ -106,9 +106,9 @@ ms.locfileid: "51205643"
 
 ## <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
-組織のサブスクリプションに Microsoft  [Defender for Office 365 プラン 2](office-365-ti.md)が含まれる場合、セキュリティ ダッシュボードには高度な脅威調査と対応ツールを含むセクションがあります。 これらのツールには、 [自動調査および応答機能が含まれます](automated-investigation-response-office.md)。 侵害されたユーザー アカウントに迅速に対処するなどのシナリオでは、自動調査と対応 [が役立ちます](address-compromised-users-quickly.md)。
+組織のサブスクリプションに Microsoft [Defender for Office 365プラン 2](office-365-ti.md)が含まれる場合、セキュリティ ダッシュボードには高度な脅威調査と対応ツールを含むセクションがあります。 これらのツールには、 [自動調査および応答機能が含まれます](automated-investigation-response-office.md)。 侵害されたユーザー アカウントに迅速に対処するなどのシナリオでは、自動調査と対応 [が役立ちます](address-compromised-users-quickly.md)。
 
-詳細については [、「365](office-365-air.md)の自動調査と応答 (AIR) の使用を開始する」を参照Officeしてください。
+詳細については、「自動調査と応答[(AIR)](office-365-air.md)の使用を開始する」を参照Office 365。
 
 ## <a name="trends"></a>傾向
 
@@ -116,9 +116,9 @@ ms.locfileid: "51205643"
 
 ![[傾向] セクションでは、組織の電子メール フローの傾向を要約します。](../../media/trends.png)
 
-また、組織のサブスクリプションに defender [for Office 365 Plan 2](office-365-ti.md)が含まれる場合は、セキュリティ チームが優先度の高いセキュリティ アラートを表示してアクションを実行できる、このセクションの [最近の脅威管理アラート] レポートも表示されます。
+また、組織のサブスクリプションに defender [for Office 365 Plan 2](office-365-ti.md)が含まれる場合は、セキュリティ チームが優先度の高いセキュリティ アラートを表示してアクションを実行できる[最近の脅威管理アラート] レポートもこのセクションに表示されます。
 
-送信電子メール ウィジェットと受信メール ウィジェットを表示またはアクセスするには、365 レポートの Defender を表示Office必要があります。 詳細については、「365 レポートの Defender を表示するために必要なアクセス許可 [Office」を参照してください](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)。
+送信電子メール ウィジェットと受信メール ウィジェットを表示またはアクセスするには、レポートの Defender を表示するためのアクセス許可Office 365があります。 詳細については、「レポートの Defender を表示するために必要なアクセス許可[Office 365」を参照してください](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)。
 
 最近の脅威管理アラート ウィジェットを表示またはアクセスするには、アラートを表示するためのアクセス許可が必要です。 詳細については、「アラートを表示するために [必要な RBAC アクセス許可」を参照してください](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)。
 
@@ -130,4 +130,4 @@ ms.locfileid: "51205643"
 
 [Defender for Office 365](defender-for-office-365.md)
 
-[Office 365 脅威の調査と対応](office-365-ti.md)
+[Office 365脅威の調査と対応](office-365-ti.md)

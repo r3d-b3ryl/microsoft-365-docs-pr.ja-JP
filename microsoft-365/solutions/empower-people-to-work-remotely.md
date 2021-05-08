@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 でリモート ワーカーを支援する
+title: Microsoft 365 を使用したリモート ワーク用のインフラストラクチャを設定する
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,17 +17,20 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: リモート ワーカーの生産性を最大化して、サーバー、データ、およびクラウドへの安全なアクセスを維持するために、Microsoft 365 のすべての機能が有効になっていることを確認します。
-ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
+description: リモート ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
+ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029124"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246322"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
+# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>Microsoft 365 を使用したリモート ワーク用のインフラストラクチャを設定する
 
-組織のオンプレミスおよびクラウドベースの情報、ツール、リソースに、ワーカーが自宅から安全にアクセスできるようにすることが必要になる場合があります。 多くの組織にとって、ワーカーがオフィスから離れて仕事ができるようにすることは、以下のために重要です。
+リモート ワーカーの生産性とコラボレーションを保護および最適化するには、IT とクラウドのインフラストラクチャを構成して、リモート ワークを可能にし、組織のオンプレミスおよびクラウドベースの情報、ツール、およびリソースへのアクセスを提供する必要があります。 このソリューションは、従業員がどこにいても最高の仕事を行えるようにするインフラストラクチャの主要なレイヤーの展開を段階的に実行します。
+
+多くの組織にとって、ワーカーがオフィスから離れて仕事ができるようにすることは、以下のために重要です。
 
 - オフィス スペースの節約。
 - 配置転換を望まないワーカーを雇用し、維持する。
@@ -125,8 +128,6 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 5. [リモート ワーカー向けの生産性向上アプリとサービスを展開する](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [リモート ワーカーをトレーニングし、使用状況のフィードバックに対処する](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Microsoft 365 でリモート ワーカーを支援するための手順](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![Microsoft 365 を使用したリモート ワーク用のインフラストラクチャを設定する手順](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-リモート ワーカーのサポートに関して Microsoft が提供する最新情報については、「[Enabling hybrid work with Microsoft Teams site (Microsoft Teams サイトによるハイブリッド作業の有効化)](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)」を参照してください。
-
-架空ではあるものの、代表的な多国籍組織がリモート ワーカーをどのように支援したかについて確認するには、「[リモート ワークやオンサイト ワーク向けの Contoso の COVID-19 対応とインフラストラクチャ](contoso-remote-onsite-work.md)」を参照してください。
+架空ではあるものの、代表的な多国籍組織がリモート ワーク用のインフラストラクチャをどのように設定したかを確認するには、「[リモート ワークやオンサイト ワーク向けの Contoso の COVID-19 対応とインフラストラクチャ](contoso-remote-onsite-work.md)」を参照してください。

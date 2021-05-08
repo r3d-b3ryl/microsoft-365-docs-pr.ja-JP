@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f3c2b7ae70f42cb7ffc2deef1786ad43e65f33b6
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4a35c6717fd7a1834364df32cf5570c83a5b776e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764641"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274522"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーによる Microsoft Defender ウイルス対策ポリシー設定のローカル変更を防止または許可する
 
@@ -55,7 +56,7 @@ ms.locfileid: "51764641"
 
 5. グループ ポリシー オブジェクトを通常どおり展開します。
 
-場所 | 設定 | 記事
+Location | Setting | 記事
 ---|---|---|---
 MAPS | Microsoft MAPS へのレポート用にローカル設定の上書きを構成する | [クラウドによる保護を有効にする](enable-cloud-protection-microsoft-defender-antivirus.md)
 検疫する | 検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する | [スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
@@ -89,7 +90,7 @@ MAPS | Microsoft MAPS へのレポート用にローカル設定の上書きを�
 
 3. ツリーを **Microsoft Defender ウイルス対策の Windows コンポーネント>展開します**。
 
-4. [リストのローカル **管理者の差し込み動作を構成** する] をダブルクリックし、オプションを [無効] に **設定します**。 **[OK]** をクリックします。
+4. [リストのローカル **管理者の差し込み動作を構成** する] をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。
 
 > [!NOTE]
 > ローカル リストの結合を無効にすると、フォルダー アクセスの制御設定が上書きされます。 また、ローカル管理者が設定した保護されたフォルダーまたは許可されたアプリも上書きされます。 フォルダー アクセスの制御設定の詳細については [、「Windows セキュリティでブロックされたアプリを許可する」を参照してください](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)。

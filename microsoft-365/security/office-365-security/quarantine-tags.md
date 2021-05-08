@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 管理者は、検疫タグを使用して、検疫済みメッセージに対してユーザーが実行できる操作を制御する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 580cf2bad690d0fc6508d11178527ad218df763b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 512c589572502deacb5529ca9d6f2876861bf050
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205787"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274462"
 ---
 # <a name="quarantine-tags"></a>検疫タグ
 
@@ -43,6 +43,10 @@ EOP は、従来、検疫およびエンド ユーザーのスパム通知のメ
 
 使用可能な個々のアクセス許可と、事前設定されたアクセス許可グループに含まれているか含まれていないかについて、次の表で説明します。
 
+<br>
+
+****
+
 |アクセス許可|アクセスなし|制限付きアクセス|フル アクセス|
 |---|:---:|:---:|:---:|
 |**送信者を許可** する (_PermissionToAllowSender_)|||![チェック マーク](../../media/checkmark.png)|
@@ -55,7 +59,7 @@ EOP は、従来、検疫およびエンド ユーザーのスパム通知のメ
 
 事前設定されたアクセス許可グループの既定のアクセス許可が気に入らない場合は、カスタム検疫タグを作成または変更するときにカスタムアクセス許可を使用できます。 各アクセス許可の動作の詳細については、この記事の後半の「 [検疫タグのアクセス許可の詳細](#quarantine-tag-permission-details) 」セクションを参照してください。
 
-検疫タグは、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online メールボックスを使用する Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない EOP 組織のスタンドアロン EOP PowerShell) で作成および割り当てる。
+検疫タグは、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online メールボックスを持つ Microsoft 365 組織用の Exchange Online PowerShell、Exchange Online メールボックスのない EOP 組織のスタンドアロン EOP PowerShell) で作成および割り当てる。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -126,6 +130,8 @@ _EndUserQuarantinePermissionsValue_ パラメーターは、バイナリ値か�
 
 事前設定されたアクセス許可グループの各アクセス許可に必要な順序と値を次の表に示します。
 
+<br>
+
 ****
 
 |アクセス許可|アクセスなし|制限付きアクセス|フル アクセス|
@@ -140,6 +146,7 @@ _EndUserQuarantinePermissionsValue_ パラメーターは、バイナリ値か�
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |バイナリ値|00000000|01101010|11101100|
 |使用する 10 進値|0|106|236|
+|
 
 <sup>\*</sup> 現在、この値は常に 0 です。 PermissionToViewHeader の場合、値 0 は検疫済みメッセージの詳細で [メッセージ ヘッダーの表示] ボタンを非表示にできません (ボタンは常に使用できます)。
 
@@ -225,9 +232,11 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 メッセージ _またはファイルを_ 検疫するサポートされている保護機能 (自動的に、または構成可能なアクションとして) では、検疫タグを使用可能な検疫アクションに割り当てることもできます。 メッセージを検疫する機能と検疫タグの可用性については、次の表で説明します。
 
+<br>
+
 ****
 
-|機能|検疫タグがサポートされていますか?|使用される既定の検疫タグ|
+|特徴|検疫タグがサポートされていますか?|使用される既定の検疫タグ|
 |---|:---:|---|
 |[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**高信頼スパム** (_HighConfidenceSpamAction_)</li><li>**フィッシングメール** (_PhishSpamAction_)</li><li>**高信頼フィッシング メール** (_HighConfidencePhishAction_)</li><li>**バルク メール** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultSpamTag (フル アクセス)</li><li>DefaultHighConfSpamTag (フル アクセス)</li><li>DefaultPhishTag (フル アクセス)</li><li>DefaultHighConfPhishTag (アクセスなし)</li><li>DefaultBulkTag (フル アクセス)</li></ul>
 |フィッシング対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装ユーザーによって電子メールが送信** された場合 (_TargetedUserProtectionAction_)</li><li>**偽装ドメイン**_(TargetedDomainProtectionAction) によって電子メールが送信される場合_</li><li>**メールボックス インテリジェンス** \>**偽装ユーザーからメールが送信された場合**(_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|いいえ|該当なし|

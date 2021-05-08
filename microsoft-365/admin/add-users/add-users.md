@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: ユーザーを追加して、同時に Microsoft 365 にライセンスを割り当てる方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6a1361d9cfebd2b305a71248fcbb461d0a68a052
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 3efa32d21a21ed12041f5731296c1b033374712f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107088"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274390"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して同時にライセンスを割り当てる
 
@@ -40,7 +40,24 @@ ms.locfileid: "52107088"
 
 :::image type="content" source="../../media/vsb-add-user-view.png" alt-text="スクリーンショット: 簡易管理センター ビュー":::
 
+::: moniker range="o365-worldwide"
+
 1. <https://admin.microsoft.com> で管理センターに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> から管理センターにアクセスします。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> から管理センターにアクセスします。
+
+::: moniker-end 
+
 2. [**別のユーザーのアカウントを作成する**] を選択します。
 3. [**ユーザー アカウントの追加**] ページで、サインインに使用する姓名、表示名、ユーザー名を入力します。
 4. [**最大 5 つのメール アドレス...**] テキスト ボックスにユーザーのメール アドレスを追加します。 これにより、新しいユーザーは Microsoft 365 サービスにサインインするために必要な情報を確実に取得できます。
@@ -55,22 +72,15 @@ ms.locfileid: "52107088"
 
 ## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>ダッシュボード ビューで 1 人ずつユーザーを追加する
 
- ::: moniker range="o365-worldwide"
-
 :::image type="content" source="../../media/classic-admin-center.png" alt-text="スクリーンショット: 管理センターのダッシュボード ビュー":::
 
-1. <https://admin.microsoft.com> で管理センターに移動します。
-2. [**ユーザー**] > [**アクティブなユーザー**] の順に移動し、[**ユーザーの追加**] を選択します。
-3. [**基本設定**] ウィンドウにユーザーの基本情報を入力し、[**次へ**] を選択します。
-    - [**名前**] 姓、名、表示名、ユーザー名を入力します。
-    - [**ドメイン**] ユーザーのアカウントのドメインを選択します。たとえば、ユーザー名が Jakob、そのドメインが contoso.com の場合、「jakob@contoso.com」と入力してサインインします。
-    - [**パスワードの設定**] ユーザー用のパスワードとして、自動生成されたパスワードを使用するのか独自の強力なパスワードを作成するのかを選択します。
-    - ユーザーは、90 日後にパスワードを変更する必要があります。または、[**初回サインイン時にこのユーザーにパスワードの変更を要求する**] を選択することもできます。
-    - ユーザーが追加されたときに、パスワードをメールで送信するかどうかを選択します。
-4. [**製品ライセンスの割り当て**] ウィンドウで、ユーザーの場所と適切なライセンスを選択します。 利用可能なライセンスがない場合でも、ユーザーを追加し、追加のライセンスを購入できます。 [**アプリ**] を展開し、アプリを選択または選択解除して、ユーザーにライセンスが付与されるアプリを制限します。 [**次へ**] を選択します。
-5. [**オプションの設定**] ウィンドウで、このユーザーを管理者にする場合は [**役割**] を展開します。ユーザーに関する追加情報を入力する場合は、[**プロファイル情報**] を展開します。
-6. [**次へ**] を選択し、新しいユーザーの設定を確認し、必要に応じて変更を行い、[**追加の完了**] を選択し、**[閉じる]** をクリックします。
+::: moniker range="o365-worldwide"
 
+1. <https://admin.microsoft.com> で管理センターに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> から管理センターにアクセスします。
 
