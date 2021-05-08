@@ -20,185 +20,185 @@ ms.custom:
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーが行ったセルフサービス購入を管理する方法について学習できます。
-ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398183"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244994"
 ---
-# <a name="manage-self-service-purchases-admin"></a><span data-ttu-id="c0621-103">セルフサービスによる購入を管理する (管理者)</span><span class="sxs-lookup"><span data-stu-id="c0621-103">Manage self-service purchases (Admin)</span></span>
+# <a name="manage-self-service-purchases-admin"></a><span data-ttu-id="58efd-103">セルフサービスによる購入を管理する (管理者)</span><span class="sxs-lookup"><span data-stu-id="58efd-103">Manage self-service purchases (Admin)</span></span>
 
-<span data-ttu-id="c0621-104">管理者は、組織内のユーザーが行ったセルフサービス購入を確認できます。</span><span class="sxs-lookup"><span data-stu-id="c0621-104">As an admin, you can see self-service purchases made by people in your organization.</span></span> <span data-ttu-id="c0621-105">セルフサービス購入ごとに、製品名、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c0621-105">You see the product name, purchaser name, subscriptions purchased, expiration date, purchase price, and assigned users for each self-service purchase.</span></span> <span data-ttu-id="c0621-106">組織で必要な場合は、PowerShell を介して製品ごとにセルフサービス購入をオフにできます。</span><span class="sxs-lookup"><span data-stu-id="c0621-106">If required by your organization, you can turn off self-service purchasing on a per product basis via PowerShell.</span></span> <span data-ttu-id="c0621-107">セルフサービス購入または一般購入で購入した製品と同じデータ管理ポリシーとアクセス ポリシーがあります。</span><span class="sxs-lookup"><span data-stu-id="c0621-107">You have the same data management and access policies over products bought through self-service purchase or centrally.</span></span>
+<span data-ttu-id="58efd-104">管理者は、組織内のユーザーが行ったセルフサービス購入を確認できます。</span><span class="sxs-lookup"><span data-stu-id="58efd-104">As an admin, you can see self-service purchases made by people in your organization.</span></span> <span data-ttu-id="58efd-105">セルフサービス購入ごとに、製品名、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="58efd-105">You see the product name, purchaser name, subscriptions purchased, expiration date, purchase price, and assigned users for each self-service purchase.</span></span> <span data-ttu-id="58efd-106">組織で必要な場合は、PowerShell を介して製品ごとにセルフサービス購入をオフにできます。</span><span class="sxs-lookup"><span data-stu-id="58efd-106">If required by your organization, you can turn off self-service purchasing on a per product basis via PowerShell.</span></span> <span data-ttu-id="58efd-107">セルフサービス購入または一般購入で購入した製品と同じデータ管理ポリシーとアクセス ポリシーがあります。</span><span class="sxs-lookup"><span data-stu-id="58efd-107">You have the same data management and access policies over products bought through self-service purchase or centrally.</span></span>
 
-<span data-ttu-id="c0621-108">組織内のユーザーがセルフサービス購入を行うかどうかを制御することもできます。</span><span class="sxs-lookup"><span data-stu-id="c0621-108">You can also control whether users in your organization can make self-service purchases.</span></span> <span data-ttu-id="c0621-109">詳細については [、「Use AllowSelfServicePurchase for the MSCommerce PowerShell モジュール」を参照してください](allowselfservicepurchase-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="c0621-109">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
+<span data-ttu-id="58efd-108">組織内のユーザーがセルフサービス購入を行うかどうかを制御することもできます。</span><span class="sxs-lookup"><span data-stu-id="58efd-108">You can also control whether users in your organization can make self-service purchases.</span></span> <span data-ttu-id="58efd-109">詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58efd-109">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
 
-## <a name="view-self-service-subscriptions"></a><span data-ttu-id="c0621-110">セルフサービス サブスクリプションの表示</span><span class="sxs-lookup"><span data-stu-id="c0621-110">View self-service subscriptions</span></span>
+## <a name="view-self-service-subscriptions"></a><span data-ttu-id="58efd-110">セルフサービス サブスクリプションの表示</span><span class="sxs-lookup"><span data-stu-id="58efd-110">View self-service subscriptions</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c0621-111">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="c0621-111">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="58efd-111">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="58efd-111">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="c0621-112">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-112">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
+1. <span data-ttu-id="58efd-112">管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="58efd-112">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="c0621-113">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-113">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
-
+1. <span data-ttu-id="58efd-113">管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="58efd-113">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.</span></span>
 ::: moniker-end
 
-2. <span data-ttu-id="c0621-114">[製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-114">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
-3. <span data-ttu-id="c0621-115">サブスクリプションの詳細を表示するには、一覧から 1 つを選択します。</span><span class="sxs-lookup"><span data-stu-id="c0621-115">To view more details about a subscription, choose one from the list.</span></span>
+2. <span data-ttu-id="58efd-114">[製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-114">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
+3. <span data-ttu-id="58efd-115">サブスクリプションの詳細を表示するには、一覧から 1 つを選択します。</span><span class="sxs-lookup"><span data-stu-id="58efd-115">To view more details about a subscription, choose one from the list.</span></span>
 
-## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a><span data-ttu-id="c0621-116">セルフサービス購入サブスクリプションのライセンスを持っているユーザーを表示する</span><span class="sxs-lookup"><span data-stu-id="c0621-116">View who has licenses for a self-service purchase subscription</span></span>
+## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a><span data-ttu-id="58efd-116">セルフサービス購入サブスクリプションのライセンスを持っているユーザーを表示する</span><span class="sxs-lookup"><span data-stu-id="58efd-116">View who has licenses for a self-service purchase subscription</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c0621-117">管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てまたは割り当て解除できない。</span><span class="sxs-lookup"><span data-stu-id="c0621-117">As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization.</span></span> <span data-ttu-id="c0621-118">セルフサービス購入 [サブスクリプションを引き](#take-over-a-self-service-purchase-subscription)継ぎ、ライセンスの割り当てまたは割り当てを解除できます。</span><span class="sxs-lookup"><span data-stu-id="c0621-118">You can [take over a self-service purchase subscription](#take-over-a-self-service-purchase-subscription), and then assign or unassign licenses.</span></span>
+> <span data-ttu-id="58efd-117">管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てたり割り当て解除したりすることはできません。</span><span class="sxs-lookup"><span data-stu-id="58efd-117">As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization.</span></span> <span data-ttu-id="58efd-118">[セルフサービス購入サブスクリプションを引き継ぐと](#take-over-a-self-service-purchase-subscription)、ライセンスの割り当てまたは割り当て解除を行うことができるようになります。</span><span class="sxs-lookup"><span data-stu-id="58efd-118">You can [take over a self-service purchase subscription](#take-over-a-self-service-purchase-subscription), and then assign or unassign licenses.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c0621-119">管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="c0621-119">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
+1. <span data-ttu-id="58efd-119">管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="58efd-119">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="c0621-120">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金ライセンス] **ページ** > **に移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.</span></span>
+ 1. <span data-ttu-id="58efd-120">管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="58efd-120">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.</span></span>
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="c0621-121">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金ライセンス] **ページ** > **に移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-121">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.</span></span>
+ 1. <span data-ttu-id="58efd-121">管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="58efd-121">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="c0621-122">フィルター アイコンを選択し、[セルフサービス] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-122">Select the filter icon, then choose **Self-service**.</span></span>
-3. <span data-ttu-id="c0621-123">製品を選択すると、ユーザーに割り当てられたライセンスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c0621-123">Select a product to see licenses assigned to people.</span></span>
+2. <span data-ttu-id="58efd-122">フィルター アイコンを選択し、[セルフサービス] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-122">Select the filter icon, then choose **Self-service**.</span></span>
+3. <span data-ttu-id="58efd-123">製品を選択すると、ユーザーに割り当てられたライセンスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="58efd-123">Select a product to see licenses assigned to people.</span></span>
     > [!NOTE]
-    > <span data-ttu-id="c0621-124">製品に複数の購入がある場合、その製品は 1 回だけ表示され、[利用可能な数量] 列には、その製品に対して購入されたサブスクリプションの合計が表示されます。</span><span class="sxs-lookup"><span data-stu-id="c0621-124">If there are multiple purchases for a product, that product is only listed once, and the **Available quantity** column shows the total of all subscriptions bought for that product.</span></span>
-4. <span data-ttu-id="c0621-125">[ **ユーザー]** リストは、セルフサービス購入を行ったユーザーの名前でグループ化されます。</span><span class="sxs-lookup"><span data-stu-id="c0621-125">The **Users** list is grouped by the names of people who made self-service purchases.</span></span>
-5. <span data-ttu-id="c0621-126">これらのサブスクリプションのライセンスを持つユーザーの一覧をエクスポートするには、エクスポートするサブスクリプションを選択し、[ユーザーのエクスポート] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-126">To export a list of users with licenses for these subscriptions, choose the subscriptions that you want to export, then choose **Export users**.</span></span>
+    > <span data-ttu-id="58efd-124">製品に複数の購入がある場合、その製品は 1 回だけ表示され、[利用可能な数量] 列には、その製品に対して購入されたサブスクリプションの合計が表示されます。</span><span class="sxs-lookup"><span data-stu-id="58efd-124">If there are multiple purchases for a product, that product is only listed once, and the **Available quantity** column shows the total of all subscriptions bought for that product.</span></span>
+4. <span data-ttu-id="58efd-125">[ **ユーザー]** リストは、セルフサービス購入を行ったユーザーの名前でグループ化されます。</span><span class="sxs-lookup"><span data-stu-id="58efd-125">The **Users** list is grouped by the names of people who made self-service purchases.</span></span>
+5. <span data-ttu-id="58efd-126">これらのサブスクリプションのライセンスを持つユーザーの一覧をエクスポートするには、エクスポートするサブスクリプションを選択し、[ユーザーのエクスポート] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-126">To export a list of users with licenses for these subscriptions, choose the subscriptions that you want to export, then choose **Export users**.</span></span>
 
-## <a name="disable-or-enable-self-service-purchases"></a><span data-ttu-id="c0621-127">セルフサービス購入を無効または有効にする</span><span class="sxs-lookup"><span data-stu-id="c0621-127">Disable or enable self-service purchases</span></span>
+## <a name="disable-or-enable-self-service-purchases"></a><span data-ttu-id="58efd-127">セルフサービス購入を無効または有効にする</span><span class="sxs-lookup"><span data-stu-id="58efd-127">Disable or enable self-service purchases</span></span>
 
-<span data-ttu-id="c0621-128">組織内のユーザーに対してセルフサービス購入を無効または有効にできます。</span><span class="sxs-lookup"><span data-stu-id="c0621-128">You can disable or enable self-service purchases for users in your organization.</span></span> <span data-ttu-id="c0621-129">**MSCommerce** PowerShell モジュールには **AllowSelfServicePurchase** の **PolicyID** パラメーター値が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c0621-129">The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases, and for which products.</span></span>
+<span data-ttu-id="58efd-128">組織内のユーザーに対してセルフサービス購入を無効または有効にできます。</span><span class="sxs-lookup"><span data-stu-id="58efd-128">You can disable or enable self-service purchases for users in your organization.</span></span> <span data-ttu-id="58efd-129">**MSCommerce** PowerShell モジュールには **AllowSelfServicePurchase** の **PolicyID** パラメーター値が含まれています。</span><span class="sxs-lookup"><span data-stu-id="58efd-129">The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases, and for which products.</span></span>
 
-<span data-ttu-id="c0621-130">**MSCommerce PowerShell** モジュールを使用すると、次の目的で使用できます。</span><span class="sxs-lookup"><span data-stu-id="c0621-130">You can use the **MSCommerce** PowerShell module to:</span></span>
+<span data-ttu-id="58efd-130">**MSCommerce PowerShell** モジュールを使用すると、次の目的で使用できます。</span><span class="sxs-lookup"><span data-stu-id="58efd-130">You can use the **MSCommerce** PowerShell module to:</span></span>
 
-- <span data-ttu-id="c0621-131">**AllowSelfServicePurchase** パラメーター値の既定の状態を表示する (製品によって有効または無効になっているかどうか)</span><span class="sxs-lookup"><span data-stu-id="c0621-131">View the default state of the **AllowSelfServicePurchase** parameter value—whether it's enabled or disabled by product</span></span>
-- <span data-ttu-id="c0621-132">該当する製品の一覧とセルフサービス購入が有効か無効かを表示する</span><span class="sxs-lookup"><span data-stu-id="c0621-132">View a list of applicable products and whether self-service purchase is enabled or disabled</span></span>
-- <span data-ttu-id="c0621-133">特定の製品の現在の設定を表示または変更して、有効または無効にする</span><span class="sxs-lookup"><span data-stu-id="c0621-133">View or modify the current setting for a specific product to either enable or disable it</span></span>
+- <span data-ttu-id="58efd-131">**AllowSelfServicePurchase** パラメーター値の既定の状態を表示する (製品によって有効または無効になっているかどうか)</span><span class="sxs-lookup"><span data-stu-id="58efd-131">View the default state of the **AllowSelfServicePurchase** parameter value—whether it's enabled or disabled by product</span></span>
+- <span data-ttu-id="58efd-132">該当する製品の一覧とセルフサービス購入が有効か無効かを表示する</span><span class="sxs-lookup"><span data-stu-id="58efd-132">View a list of applicable products and whether self-service purchase is enabled or disabled</span></span>
+- <span data-ttu-id="58efd-133">特定の製品の現在の設定を表示または変更して、有効または無効にする</span><span class="sxs-lookup"><span data-stu-id="58efd-133">View or modify the current setting for a specific product to either enable or disable it</span></span>
 
-<span data-ttu-id="c0621-134">詳細については [、「Use AllowSelfServicePurchase for the MSCommerce PowerShell モジュール」を参照してください](allowselfservicepurchase-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="c0621-134">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
+<span data-ttu-id="58efd-134">詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58efd-134">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
 
-## <a name="centralize-licenses-under-a-single-subscription"></a><span data-ttu-id="c0621-135">1 つのサブスクリプションでライセンスを一元化する</span><span class="sxs-lookup"><span data-stu-id="c0621-135">Centralize licenses under a single subscription</span></span>
+## <a name="centralize-licenses-under-a-single-subscription"></a><span data-ttu-id="58efd-135">1 つのサブスクリプションでライセンスを一元化する</span><span class="sxs-lookup"><span data-stu-id="58efd-135">Centralize licenses under a single subscription</span></span>
 
-<span data-ttu-id="c0621-136">セルフサービス購入に割り当てられたユーザーに対して、既存のライセンスを割り当てたり、既存の契約を通じて追加のサブスクリプションを購入することができます。</span><span class="sxs-lookup"><span data-stu-id="c0621-136">You can assign existing licenses or purchase additional subscriptions through existing agreements for users assigned to self-service purchases.</span></span> <span data-ttu-id="c0621-137">これらの一般購入ライセンスを割り当てると、購入者に既存のサブスクリプションのキャンセルを要求できます。</span><span class="sxs-lookup"><span data-stu-id="c0621-137">After you assign these centrally purchased licenses, you can request that purchasers cancel their existing subscriptions.</span></span>
+<span data-ttu-id="58efd-136">セルフサービス購入に割り当てられたユーザーに対して、既存のライセンスを割り当てたり、既存の契約を通じて追加のサブスクリプションを購入することができます。</span><span class="sxs-lookup"><span data-stu-id="58efd-136">You can assign existing licenses or purchase additional subscriptions through existing agreements for users assigned to self-service purchases.</span></span> <span data-ttu-id="58efd-137">これらの一般購入ライセンスを割り当てると、購入者に既存のサブスクリプションのキャンセルを要求できます。</span><span class="sxs-lookup"><span data-stu-id="58efd-137">After you assign these centrally purchased licenses, you can request that purchasers cancel their existing subscriptions.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c0621-138">管理センターで、[課金の購入サービス **]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">ページに移動</a> します。</span><span class="sxs-lookup"><span data-stu-id="c0621-138">In the admin center go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
+1. <span data-ttu-id="58efd-138">管理センターで、[課金の購入サービス **]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">ページに移動</a> します。</span><span class="sxs-lookup"><span data-stu-id="58efd-138">In the admin center go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="c0621-139">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金の購入サービス **]** > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-139">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.</span></span>
+1. <span data-ttu-id="58efd-139">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金の購入サービス **]** > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="58efd-139">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="c0621-140">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金の購入サービス **]** > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-140">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.</span></span>
+1. <span data-ttu-id="58efd-140">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金の購入サービス **]** > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="58efd-140">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="c0621-141">購入する製品を見つけて選択し、[購入] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-141">Find and choose the product that you want to buy, then choose **Buy**.</span></span>
-3. <span data-ttu-id="c0621-142">残りの手順を完了して購入を完了します。</span><span class="sxs-lookup"><span data-stu-id="c0621-142">Complete the remaining steps to complete your purchase.</span></span>
-4. <span data-ttu-id="c0621-143">「セルフサービス購入サブスクリプション[](#view-who-has-licenses-for-a-self-service-purchase-subscription)のライセンスを持っているユーザーを表示する」の手順に従って、次の手順で参照するユーザーのリストをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="c0621-143">Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in the next step.</span></span>
-5. <span data-ttu-id="c0621-144">他のサブスクリプションでライセンスを持っているすべてのユーザーにライセンスを割り当てる。</span><span class="sxs-lookup"><span data-stu-id="c0621-144">Assign licenses to everyone who has a license in the other subscription.</span></span> <span data-ttu-id="c0621-145">完全な手順については、「ユーザーにライセンスを [割り当てる」を参照してください](../../admin/manage/assign-licenses-to-users.md)。</span><span class="sxs-lookup"><span data-stu-id="c0621-145">For full steps, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</span></span>
-6. <span data-ttu-id="c0621-146">セルフサービス購入サブスクリプションを購入したユーザーに問い合わせ、キャンセルを [求める](manage-self-service-purchases-users.md#cancel-a-subscription)。</span><span class="sxs-lookup"><span data-stu-id="c0621-146">Contact the person who bought the self-service purchase subscription and ask them to [cancel it](manage-self-service-purchases-users.md#cancel-a-subscription).</span></span>
+2. <span data-ttu-id="58efd-141">購入する製品を見つけて選択し、[購入] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-141">Find and choose the product that you want to buy, then choose **Buy**.</span></span>
+3. <span data-ttu-id="58efd-142">残りの手順を完了して購入を完了します。</span><span class="sxs-lookup"><span data-stu-id="58efd-142">Complete the remaining steps to complete your purchase.</span></span>
+4. <span data-ttu-id="58efd-143">「セルフサービス購入サブスクリプション[](#view-who-has-licenses-for-a-self-service-purchase-subscription)のライセンスを持っているユーザーを表示する」の手順に従って、次の手順で参照するユーザーのリストをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="58efd-143">Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in the next step.</span></span>
+5. <span data-ttu-id="58efd-144">他のサブスクリプションでライセンスを持っているすべてのユーザーにライセンスを割り当てる。</span><span class="sxs-lookup"><span data-stu-id="58efd-144">Assign licenses to everyone who has a license in the other subscription.</span></span> <span data-ttu-id="58efd-145">完全な手順については、「ユーザーにライセンスを [割り当てる」を参照してください](../../admin/manage/assign-licenses-to-users.md)。</span><span class="sxs-lookup"><span data-stu-id="58efd-145">For full steps, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</span></span>
+6. <span data-ttu-id="58efd-146">セルフサービス購入サブスクリプションを購入したユーザーに問い合わせ、キャンセルを [求める](manage-self-service-purchases-users.md#cancel-a-subscription)。</span><span class="sxs-lookup"><span data-stu-id="58efd-146">Contact the person who bought the self-service purchase subscription and ask them to [cancel it](manage-self-service-purchases-users.md#cancel-a-subscription).</span></span>
 
-## <a name="take-over-a-self-service-purchase-subscription"></a><span data-ttu-id="c0621-147">セルフサービス購入サブスクリプションの引き継ぎ</span><span class="sxs-lookup"><span data-stu-id="c0621-147">Take over a self-service purchase subscription</span></span>
+## <a name="take-over-a-self-service-purchase-subscription"></a><span data-ttu-id="58efd-147">セルフサービス購入サブスクリプションの引き継ぎ</span><span class="sxs-lookup"><span data-stu-id="58efd-147">Take over a self-service purchase subscription</span></span>
 
-<span data-ttu-id="c0621-148">組織内のユーザーが作成したセルフサービス購入サブスクリプションを引き継ぐ方法があります。</span><span class="sxs-lookup"><span data-stu-id="c0621-148">You can take over a self-service purchase subscription made by a user in your organization.</span></span> <span data-ttu-id="c0621-149">セルフサービス購入サブスクリプションを引き継ぐ場合は、次の 2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="c0621-149">When you take over a self-service purchase subscription, you have two options:</span></span>
+<span data-ttu-id="58efd-148">組織内のユーザーが作成したセルフサービス購入サブスクリプションを引き継ぐ方法があります。</span><span class="sxs-lookup"><span data-stu-id="58efd-148">You can take over a self-service purchase subscription made by a user in your organization.</span></span> <span data-ttu-id="58efd-149">セルフサービス購入サブスクリプションを引き継ぐ場合は、次の 2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="58efd-149">When you take over a self-service purchase subscription, you have two options:</span></span>
 
-1. <span data-ttu-id="c0621-150">ユーザーを別のサブスクリプションに移動し、元のサブスクリプションをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="c0621-150">Move the users to a different subscription and cancel the original subscription.</span></span>
-2. <span data-ttu-id="c0621-151">セルフサービス購入サブスクリプションをキャンセルし、割り当てられたユーザーからライセンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="c0621-151">Cancel the self-service purchase subscription and remove licenses from assigned users.</span></span>
+1. <span data-ttu-id="58efd-150">ユーザーを別のサブスクリプションに移動し、元のサブスクリプションをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="58efd-150">Move the users to a different subscription and cancel the original subscription.</span></span>
+2. <span data-ttu-id="58efd-151">セルフサービス購入サブスクリプションをキャンセルし、割り当てられたユーザーからライセンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="58efd-151">Cancel the self-service purchase subscription and remove licenses from assigned users.</span></span>
 
-### <a name="move-users-to-a-different-subscription"></a><span data-ttu-id="c0621-152">ユーザーを別のサブスクリプションに移動する</span><span class="sxs-lookup"><span data-stu-id="c0621-152">Move users to a different subscription</span></span>
+### <a name="move-users-to-a-different-subscription"></a><span data-ttu-id="58efd-152">ユーザーを別のサブスクリプションに移動する</span><span class="sxs-lookup"><span data-stu-id="58efd-152">Move users to a different subscription</span></span>
 
-<span data-ttu-id="c0621-153">ユーザーを別のサブスクリプションに移動すると、古いサブスクリプションは自動的に取り消されます。</span><span class="sxs-lookup"><span data-stu-id="c0621-153">When you move users to a different subscription, the old subscription is automatically canceled.</span></span> <span data-ttu-id="c0621-154">最初にセルフサービス購入サブスクリプションを購入したユーザーは、サブスクリプションがキャンセルされたというメールを受信します。</span><span class="sxs-lookup"><span data-stu-id="c0621-154">The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.</span></span>
+<span data-ttu-id="58efd-153">ユーザーを別のサブスクリプションに移動すると、古いサブスクリプションは自動的に取り消されます。</span><span class="sxs-lookup"><span data-stu-id="58efd-153">When you move users to a different subscription, the old subscription is automatically canceled.</span></span> <span data-ttu-id="58efd-154">最初にセルフサービス購入サブスクリプションを購入したユーザーは、サブスクリプションがキャンセルされたというメールを受信します。</span><span class="sxs-lookup"><span data-stu-id="58efd-154">The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c0621-155">ユーザーを移動するサブスクリプションで移動するユーザーごとに使用可能なライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="c0621-155">You must have an available license for each user you’re moving in the subscription that you’re moving users to.</span></span>
+> <span data-ttu-id="58efd-155">ユーザーを移動するサブスクリプションで移動するユーザーごとに使用可能なライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="58efd-155">You must have an available license for each user you’re moving in the subscription that you’re moving users to.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c0621-156">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="c0621-156">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="58efd-156">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="58efd-156">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="c0621-157">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-157">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
+1. <span data-ttu-id="58efd-157">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="58efd-157">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="c0621-158">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-158">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
+1. <span data-ttu-id="58efd-158">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="58efd-158">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="c0621-159">[製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-159">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
-3. <span data-ttu-id="c0621-160">引き継ぐサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="c0621-160">Select the subscription that you want to take over.</span></span>
-4. <span data-ttu-id="c0621-161">[サブスクリプションの詳細] ページの [ **サブスクリプションと設定** ] セクションで、[このサブスクリプションを制御 **する] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-161">On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.</span></span>
-5. <span data-ttu-id="c0621-162">右側のウィンドウで、[ユーザーの移動] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-162">In the right pane, select **Move users**.</span></span>
-6. <span data-ttu-id="c0621-163">ユーザーを移動する製品を選択し、[ユーザーの移動] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-163">Select the product that you want to move the users to, then select **Move users**.</span></span>
-7. <span data-ttu-id="c0621-164">[ユーザーの **移動] ボックスで** 、[ユーザーの移動 **] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-164">In the **Move users to** box, select **Move users**.</span></span> <span data-ttu-id="c0621-165">移動プロセスには数分かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="c0621-165">The move process might take several minutes.</span></span> <span data-ttu-id="c0621-166">プロセスの実行中にブラウザーを閉じない。</span><span class="sxs-lookup"><span data-stu-id="c0621-166">Don’t close your browser while the process runs.</span></span>
-8. <span data-ttu-id="c0621-167">移動プロセスが完了したら、[完了した移動] **ウィンドウを閉じます**。</span><span class="sxs-lookup"><span data-stu-id="c0621-167">When the move process is finished, close the **Move completed pane**.</span></span>
-9. <span data-ttu-id="c0621-168">[サブスクリプションの詳細] ページで、セルフサービス購入サブスクリプションのサブスクリプションの状態が [削除済み]**と表示されます**。</span><span class="sxs-lookup"><span data-stu-id="c0621-168">On the subscription details page, the **Subscription status** for the self-service purchased subscription shows as **Deleted**.</span></span>
+2. <span data-ttu-id="58efd-159">[製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-159">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
+3. <span data-ttu-id="58efd-160">引き継ぐサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="58efd-160">Select the subscription that you want to take over.</span></span>
+4. <span data-ttu-id="58efd-161">[サブスクリプションの詳細] ページの [ **サブスクリプションと設定** ] セクションで、[このサブスクリプションを制御 **する] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-161">On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.</span></span>
+5. <span data-ttu-id="58efd-162">右側のウィンドウで、[ユーザーの移動] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-162">In the right pane, select **Move users**.</span></span>
+6. <span data-ttu-id="58efd-163">ユーザーを移動する製品を選択し、[ユーザーの移動] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-163">Select the product that you want to move the users to, then select **Move users**.</span></span>
+7. <span data-ttu-id="58efd-164">[ユーザーの **移動] ボックスで** 、[ユーザーの移動 **] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-164">In the **Move users to** box, select **Move users**.</span></span> <span data-ttu-id="58efd-165">移動プロセスには数分かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="58efd-165">The move process might take several minutes.</span></span> <span data-ttu-id="58efd-166">プロセスの実行中にブラウザーを閉じない。</span><span class="sxs-lookup"><span data-stu-id="58efd-166">Don’t close your browser while the process runs.</span></span>
+8. <span data-ttu-id="58efd-167">移動プロセスが完了したら、[完了した移動] **ウィンドウを閉じます**。</span><span class="sxs-lookup"><span data-stu-id="58efd-167">When the move process is finished, close the **Move completed pane**.</span></span>
+9. <span data-ttu-id="58efd-168">[サブスクリプションの詳細] ページで、セルフサービス購入サブスクリプションのサブスクリプションの状態が [削除済み]**と表示されます**。</span><span class="sxs-lookup"><span data-stu-id="58efd-168">On the subscription details page, the **Subscription status** for the self-service purchased subscription shows as **Deleted**.</span></span>
 
-### <a name="cancel-a-self-service-purchase-subscription"></a><span data-ttu-id="c0621-169">セルフサービス購入サブスクリプションをキャンセルする</span><span class="sxs-lookup"><span data-stu-id="c0621-169">Cancel a self-service purchase subscription</span></span>
+### <a name="cancel-a-self-service-purchase-subscription"></a><span data-ttu-id="58efd-169">セルフサービス購入サブスクリプションをキャンセルする</span><span class="sxs-lookup"><span data-stu-id="58efd-169">Cancel a self-service purchase subscription</span></span>
 
-<span data-ttu-id="c0621-170">セルフサービス購入サブスクリプションをキャンセルすると、ライセンスを持つユーザーは製品へのアクセスを失います。</span><span class="sxs-lookup"><span data-stu-id="c0621-170">When you choose to cancel a self-service purchase subscription, users with licenses lose access to the product.</span></span> <span data-ttu-id="c0621-171">最初にセルフサービス購入サブスクリプションを購入したユーザーは、サブスクリプションがキャンセルされたというメールを受信します。</span><span class="sxs-lookup"><span data-stu-id="c0621-171">The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.</span></span>
+<span data-ttu-id="58efd-170">セルフサービス購入サブスクリプションをキャンセルすると、ライセンスを持つユーザーは製品へのアクセスを失います。</span><span class="sxs-lookup"><span data-stu-id="58efd-170">When you choose to cancel a self-service purchase subscription, users with licenses lose access to the product.</span></span> <span data-ttu-id="58efd-171">最初にセルフサービス購入サブスクリプションを購入したユーザーは、サブスクリプションがキャンセルされたというメールを受信します。</span><span class="sxs-lookup"><span data-stu-id="58efd-171">The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c0621-172">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="c0621-172">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="58efd-172">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="58efd-172">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="c0621-173">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-173">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
+1. <span data-ttu-id="58efd-173">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="58efd-173">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="c0621-174">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="c0621-174">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
+1. <span data-ttu-id="58efd-174">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。</span><span class="sxs-lookup"><span data-stu-id="58efd-174">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="c0621-175">[製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-175">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
-3. <span data-ttu-id="c0621-176">キャンセルするサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="c0621-176">Select the subscription that you want to cancel.</span></span>
-4. <span data-ttu-id="c0621-177">[サブスクリプションの詳細] ページの [ **サブスクリプションと設定** ] セクションで、[このサブスクリプションを制御 **する] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-177">On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.</span></span>
-5. <span data-ttu-id="c0621-178">右側のウィンドウで、[サブスクリプションのキャンセル] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-178">In the right pane, select **Cancel subscription**.</span></span>
-6. <span data-ttu-id="c0621-179">ドロップダウン リストからキャンセルの理由を選択し、[サブスクリプションのキャンセル] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-179">Select a reason for your cancellation from the drop-down list, then select **Cancel subscription**.</span></span>
-7. <span data-ttu-id="c0621-180">[キャンセル **しますか? ] ボックスで** 、[サブスクリプションのキャンセル] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="c0621-180">In the **Are you sure you want to cancel?** box, select **Cancel subscription**.</span></span>
-8. <span data-ttu-id="c0621-181">右側のウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="c0621-181">Close the right pane.</span></span>
-9. <span data-ttu-id="c0621-182">[サブスクリプションの詳細] ページで、[サブスクリプションの状態 **] が [** 削除済み] **と表示されます**。</span><span class="sxs-lookup"><span data-stu-id="c0621-182">On the subscription details page, the **Subscription status** shows as **Deleted**.</span></span>
+2. <span data-ttu-id="58efd-175">[製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-175">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
+3. <span data-ttu-id="58efd-176">キャンセルするサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="58efd-176">Select the subscription that you want to cancel.</span></span>
+4. <span data-ttu-id="58efd-177">[サブスクリプションの詳細] ページの [ **サブスクリプションと設定** ] セクションで、[このサブスクリプションを制御 **する] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-177">On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.</span></span>
+5. <span data-ttu-id="58efd-178">右側のウィンドウで、[サブスクリプションのキャンセル] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-178">In the right pane, select **Cancel subscription**.</span></span>
+6. <span data-ttu-id="58efd-179">ドロップダウン リストからキャンセルの理由を選択し、[サブスクリプションのキャンセル] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-179">Select a reason for your cancellation from the drop-down list, then select **Cancel subscription**.</span></span>
+7. <span data-ttu-id="58efd-180">[キャンセル **しますか? ] ボックスで** 、[サブスクリプションのキャンセル] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="58efd-180">In the **Are you sure you want to cancel?** box, select **Cancel subscription**.</span></span>
+8. <span data-ttu-id="58efd-181">右側のウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="58efd-181">Close the right pane.</span></span>
+9. <span data-ttu-id="58efd-182">[サブスクリプションの詳細] ページで、[サブスクリプションの状態 **] が [** 削除済み] **と表示されます**。</span><span class="sxs-lookup"><span data-stu-id="58efd-182">On the subscription details page, the **Subscription status** shows as **Deleted**.</span></span>
 
-## <a name="need-help-contact-us"></a><span data-ttu-id="c0621-183">サポートが必要な場合</span><span class="sxs-lookup"><span data-stu-id="c0621-183">Need help?</span></span> <span data-ttu-id="c0621-184">お問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="c0621-184">Contact us.</span></span>
+## <a name="need-help-contact-us"></a><span data-ttu-id="58efd-183">サポートが必要な場合</span><span class="sxs-lookup"><span data-stu-id="58efd-183">Need help?</span></span> <span data-ttu-id="58efd-184">お問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="58efd-184">Contact us.</span></span>
 
-<span data-ttu-id="c0621-185">セルフサービス購入に関する一般的な質問については、「セルフサービス購入に関する [よく寄せられる質問」を参照してください](self-service-purchase-faq.md)。</span><span class="sxs-lookup"><span data-stu-id="c0621-185">For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).</span></span>
+<span data-ttu-id="58efd-185">セルフサービス購入に関する一般的な質問については、「セルフサービス購入に関する [よく寄せられる質問」を参照してください](self-service-purchase-faq.md)。</span><span class="sxs-lookup"><span data-stu-id="58efd-185">For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).</span></span>
 
-<span data-ttu-id="c0621-186">セルフサービス購入に関するご質問やサポートが必要な場合は、サポート [にお問い合わせください](../../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="c0621-186">If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="58efd-186">セルフサービス購入に関するご質問やサポートが必要な場合は、サポート [にお問い合わせください](../../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="58efd-186">If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).</span></span>

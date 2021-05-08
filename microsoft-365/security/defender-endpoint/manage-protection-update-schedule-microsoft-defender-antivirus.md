@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ウイルス対策の更新プログラムをスケジュールする
+title: 保護Microsoft Defender ウイルス対策のスケジュールを設定する
 description: 保護更新プログラムをダウンロードする日、時刻、間隔をスケジュールする
 keywords: 更新プログラム、セキュリティ基準、更新プログラムのスケジュール
 search.product: eADQiWindows 10XVcnh
@@ -8,74 +8,75 @@ search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 327974c4db4166301820cf148811aceda1700513
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 26b88b8677c27a5d6615776a371326e37034afd4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765349"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275038"
 ---
-# <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a><span data-ttu-id="611cf-104">保護更新プログラムをダウンロードして適用するスケジュールを管理する</span><span class="sxs-lookup"><span data-stu-id="611cf-104">Manage the schedule for when protection updates should be downloaded and applied</span></span>
+# <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a><span data-ttu-id="a30de-104">保護更新プログラムをダウンロードして適用するスケジュールを管理する</span><span class="sxs-lookup"><span data-stu-id="a30de-104">Manage the schedule for when protection updates should be downloaded and applied</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="611cf-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="611cf-105">**Applies to:**</span></span>
+<span data-ttu-id="a30de-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="a30de-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="611cf-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="611cf-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="a30de-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="a30de-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="611cf-107">Microsoft Defender ウイルス対策では、更新プログラムを探してダウンロードする必要がある場合に判断できます。</span><span class="sxs-lookup"><span data-stu-id="611cf-107">Microsoft Defender Antivirus lets you determine when it should look for and download updates.</span></span>
+<span data-ttu-id="a30de-107">Microsoft Defender ウイルス対策では、更新プログラムを探してダウンロードする必要がある場合に判断できます。</span><span class="sxs-lookup"><span data-stu-id="a30de-107">Microsoft Defender Antivirus lets you determine when it should look for and download updates.</span></span>
 
-<span data-ttu-id="611cf-108">エンドポイントの更新プログラムは、次の方法でスケジュールできます。</span><span class="sxs-lookup"><span data-stu-id="611cf-108">You can schedule updates for your endpoints by:</span></span> 
+<span data-ttu-id="a30de-108">エンドポイントの更新プログラムは、次の方法でスケジュールできます。</span><span class="sxs-lookup"><span data-stu-id="a30de-108">You can schedule updates for your endpoints by:</span></span> 
 
-- <span data-ttu-id="611cf-109">保護更新プログラムを確認する週の日を指定する</span><span class="sxs-lookup"><span data-stu-id="611cf-109">Specifying the day of the week to check for protection updates</span></span> 
-- <span data-ttu-id="611cf-110">保護更新プログラムを確認する間隔を指定する</span><span class="sxs-lookup"><span data-stu-id="611cf-110">Specifying the interval to check for protection updates</span></span>
-- <span data-ttu-id="611cf-111">保護更新プログラムを確認する時間を指定する</span><span class="sxs-lookup"><span data-stu-id="611cf-111">Specifying the time to check for protection updates</span></span>
+- <span data-ttu-id="a30de-109">保護更新プログラムを確認する週の日を指定する</span><span class="sxs-lookup"><span data-stu-id="a30de-109">Specifying the day of the week to check for protection updates</span></span> 
+- <span data-ttu-id="a30de-110">保護更新プログラムを確認する間隔を指定する</span><span class="sxs-lookup"><span data-stu-id="a30de-110">Specifying the interval to check for protection updates</span></span>
+- <span data-ttu-id="a30de-111">保護更新プログラムを確認する時間を指定する</span><span class="sxs-lookup"><span data-stu-id="a30de-111">Specifying the time to check for protection updates</span></span>
 
-<span data-ttu-id="611cf-112">また、各エンドポイントが保護更新プログラムをチェックしてダウンロードする時間をランダム化できます。</span><span class="sxs-lookup"><span data-stu-id="611cf-112">You can also randomize the times when each endpoint checks and downloads protection updates.</span></span> <span data-ttu-id="611cf-113">詳細については、「 [スキャンのスケジュール」](scheduled-catch-up-scans-microsoft-defender-antivirus.md) のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="611cf-113">See the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) topic for more information.</span></span>
+<span data-ttu-id="a30de-112">また、各エンドポイントが保護更新プログラムをチェックしてダウンロードする時間をランダム化できます。</span><span class="sxs-lookup"><span data-stu-id="a30de-112">You can also randomize the times when each endpoint checks and downloads protection updates.</span></span> <span data-ttu-id="a30de-113">詳細については、「 [スキャンのスケジュール」](scheduled-catch-up-scans-microsoft-defender-antivirus.md) のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="a30de-113">See the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) topic for more information.</span></span>
 
-## <a name="use-configuration-manager-to-schedule-protection-updates"></a><span data-ttu-id="611cf-114">Configuration Manager を使用して保護更新プログラムをスケジュールする</span><span class="sxs-lookup"><span data-stu-id="611cf-114">Use Configuration Manager to schedule protection updates</span></span>
+## <a name="use-configuration-manager-to-schedule-protection-updates"></a><span data-ttu-id="a30de-114">Configuration Manager を使用して保護更新プログラムをスケジュールする</span><span class="sxs-lookup"><span data-stu-id="a30de-114">Use Configuration Manager to schedule protection updates</span></span>
 
-1.  <span data-ttu-id="611cf-115">Microsoft Endpoint Manager コンソールで、変更するマルウェア対策ポリシーを開きます (左側のナビゲーション ウィンドウで [アセットとコンプライアンス] をクリックし、ツリーを [Overview  >  **Endpoint Protection**  >  **Antimalware Policies]** に展開します)。</span><span class="sxs-lookup"><span data-stu-id="611cf-115">On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)</span></span>
+1.  <span data-ttu-id="a30de-115">Microsoft エンドポイント マネージャー コンソールで、変更するマルウェア対策ポリシーを開きます (左側のナビゲーションウィンドウで [アセットとコンプライアンス] をクリックし、ツリーを[概要] Endpoint Protection マルウェア対策ポリシー  >    >  ) に展開します。</span><span class="sxs-lookup"><span data-stu-id="a30de-115">On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)</span></span>
 
-2.  <span data-ttu-id="611cf-116">[セキュリティ インテリジェンスの **更新プログラム] セクションに移動** します。</span><span class="sxs-lookup"><span data-stu-id="611cf-116">Go to the **Security intelligence updates** section.</span></span>
+2.  <span data-ttu-id="a30de-116">[セキュリティ インテリジェンスの **更新プログラム] セクションに移動** します。</span><span class="sxs-lookup"><span data-stu-id="a30de-116">Go to the **Security intelligence updates** section.</span></span>
 
-3. <span data-ttu-id="611cf-117">特定の時間に更新プログラムを確認してダウンロードするには、次の方法を実行します。</span><span class="sxs-lookup"><span data-stu-id="611cf-117">To check and download updates at a certain time:</span></span>
-      1. <span data-ttu-id="611cf-118">[ **エンドポイント保護のセキュリティ インテリジェンス更新プログラムの確認]** を特定の間隔で設定します。. **に 0 を設定します**。</span><span class="sxs-lookup"><span data-stu-id="611cf-118">Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.</span></span>
-      2. <span data-ttu-id="611cf-119">[ **エンドポイント保護のセキュリティ インテリジェンス更新プログラム** を毎日チェックする] を設定します。更新プログラムをチェックする必要がある時刻に設定します。</span><span class="sxs-lookup"><span data-stu-id="611cf-119">Set **Check for Endpoint Protection security intelligence updates daily at...** to the time when updates should be checked.</span></span>
-      <span data-ttu-id="611cf-120">3</span><span class="sxs-lookup"><span data-stu-id="611cf-120">3</span></span>
-4. <span data-ttu-id="611cf-121">継続的な間隔で更新プログラムを確認してダウンロードするには、特定の間隔でエンドポイント保護セキュリティ インテリジェンス更新プログラムのチェックを設定 **します** 。更新プログラムの間に発生する時間数を指定します。</span><span class="sxs-lookup"><span data-stu-id="611cf-121">To check and download updates on a continual interval, Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to the number of hours that should occur between updates.</span></span>
+3. <span data-ttu-id="a30de-117">特定の時間に更新プログラムを確認してダウンロードするには、次の方法を実行します。</span><span class="sxs-lookup"><span data-stu-id="a30de-117">To check and download updates at a certain time:</span></span>
+      1. <span data-ttu-id="a30de-118">セキュリティ **インテリジェンス更新プログラムEndpoint Protectionを特定の間隔で確認する...** を **0 に設定します**。</span><span class="sxs-lookup"><span data-stu-id="a30de-118">Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.</span></span>
+      2. <span data-ttu-id="a30de-119">セキュリティ **インテリジェンスの更新Endpoint Protectionを毎日チェックします。更新** プログラムをチェックする必要がある時刻に設定します。</span><span class="sxs-lookup"><span data-stu-id="a30de-119">Set **Check for Endpoint Protection security intelligence updates daily at...** to the time when updates should be checked.</span></span>
+      <span data-ttu-id="a30de-120">3</span><span class="sxs-lookup"><span data-stu-id="a30de-120">3</span></span>
+4. <span data-ttu-id="a30de-121">継続的な間隔で更新プログラムを確認してダウンロードするには、特定の間隔で Endpoint Protection セキュリティ インテリジェンス更新プログラムのチェックを設定 **します**。更新プログラムの間に発生する必要がある時間数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a30de-121">To check and download updates on a continual interval, Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to the number of hours that should occur between updates.</span></span>
 
-5.  <span data-ttu-id="611cf-122">[更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。</span><span class="sxs-lookup"><span data-stu-id="611cf-122">[Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).</span></span>
+5.  <span data-ttu-id="a30de-122">[更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。</span><span class="sxs-lookup"><span data-stu-id="a30de-122">[Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).</span></span>
 
-## <a name="use-group-policy-to-schedule-protection-updates"></a><span data-ttu-id="611cf-123">グループ ポリシーを使用して保護更新プログラムをスケジュールする</span><span class="sxs-lookup"><span data-stu-id="611cf-123">Use Group Policy to schedule protection updates</span></span>
+## <a name="use-group-policy-to-schedule-protection-updates"></a><span data-ttu-id="a30de-123">グループ ポリシーを使用して保護更新プログラムをスケジュールする</span><span class="sxs-lookup"><span data-stu-id="a30de-123">Use Group Policy to schedule protection updates</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="611cf-124">既定では、Microsoft Defender ウイルス対策は、スケジュールされたスキャンの 15 分前に更新プログラムをチェックします。</span><span class="sxs-lookup"><span data-stu-id="611cf-124">By default, Microsoft Defender Antivirus will check for an update 15 minutes before the time of any scheduled scans.</span></span> <span data-ttu-id="611cf-125">これらの設定を有効にすると、既定の設定は上書きされます。</span><span class="sxs-lookup"><span data-stu-id="611cf-125">Enabling these settings will override that default.</span></span>
+> <span data-ttu-id="a30de-124">既定では、Microsoft Defender ウイルス対策スキャンの時刻の 15 分前に更新プログラムがチェックされます。</span><span class="sxs-lookup"><span data-stu-id="a30de-124">By default, Microsoft Defender Antivirus will check for an update 15 minutes before the time of any scheduled scans.</span></span> <span data-ttu-id="a30de-125">これらの設定を有効にすると、既定の設定は上書きされます。</span><span class="sxs-lookup"><span data-stu-id="a30de-125">Enabling these settings will override that default.</span></span>
 
-1.  <span data-ttu-id="611cf-126">グループ ポリシー管理マシンで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。</span><span class="sxs-lookup"><span data-stu-id="611cf-126">On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.</span></span>
+1.  <span data-ttu-id="a30de-126">グループ ポリシー管理マシンで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。</span><span class="sxs-lookup"><span data-stu-id="a30de-126">On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.</span></span>
 
-3.  <span data-ttu-id="611cf-127">グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="611cf-127">In the **Group Policy Management Editor** go to **Computer configuration**.</span></span>
+3.  <span data-ttu-id="a30de-127">グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="a30de-127">In the **Group Policy Management Editor** go to **Computer configuration**.</span></span>
 
-4.  <span data-ttu-id="611cf-128">[ポリシー **] をクリックし** 、[ **管理用テンプレート] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="611cf-128">Click **Policies** then **Administrative templates**.</span></span>
+4.  <span data-ttu-id="a30de-128">[ポリシー **] をクリックし** 、[ **管理用テンプレート] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="a30de-128">Click **Policies** then **Administrative templates**.</span></span>
 
-5.  <span data-ttu-id="611cf-129">ツリーを Windows コンポーネント **の Microsoft** Defender  >  **ウイルス対策シグネチャ** インテリジェンス更新プログラムに展開  >  **し、** 次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="611cf-129">Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Intelligence Updates** and configure the following settings:</span></span>
+5.  <span data-ttu-id="a30de-129">ツリーを展開して **、[署名インテリジェンスWindows更新** Microsoft Defender ウイルス対策  >    >  **コンポーネントを追加し**、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="a30de-129">Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Intelligence Updates** and configure the following settings:</span></span>
 
-    1. <span data-ttu-id="611cf-130">[セキュリティ インテリジェンスの更新 **プログラム** を確認する週の日を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。</span><span class="sxs-lookup"><span data-stu-id="611cf-130">Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**.</span></span> <span data-ttu-id="611cf-131">更新プログラムを確認する週の日を入力します。</span><span class="sxs-lookup"><span data-stu-id="611cf-131">Enter the day of the week to check for updates.</span></span> <span data-ttu-id="611cf-132">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611cf-132">Click **OK**.</span></span>
-    2. <span data-ttu-id="611cf-133">[セキュリティ インテリジェンスの更新 **プログラム** を確認する間隔を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。</span><span class="sxs-lookup"><span data-stu-id="611cf-133">Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**.</span></span> <span data-ttu-id="611cf-134">更新間の時間数を入力します。</span><span class="sxs-lookup"><span data-stu-id="611cf-134">Enter the number of hours between updates.</span></span> <span data-ttu-id="611cf-135">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611cf-135">Click **OK**.</span></span>
-    3. <span data-ttu-id="611cf-136">[セキュリティ インテリジェンスの更新 **プログラム** を確認する時間を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。</span><span class="sxs-lookup"><span data-stu-id="611cf-136">Double-click the **Specify the time to check for security intelligence updates** setting and set the option to **Enabled**.</span></span> <span data-ttu-id="611cf-137">更新プログラムをチェックする時刻を入力します。</span><span class="sxs-lookup"><span data-stu-id="611cf-137">Enter the time when updates should be checked.</span></span> <span data-ttu-id="611cf-138">時刻は、エンドポイントのローカル時刻に基づいて行います。</span><span class="sxs-lookup"><span data-stu-id="611cf-138">The time is based on the local time of the endpoint.</span></span> <span data-ttu-id="611cf-139">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611cf-139">Click **OK**.</span></span>
+    1. <span data-ttu-id="a30de-130">[セキュリティ インテリジェンスの更新 **プログラム** を確認する週の日を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。</span><span class="sxs-lookup"><span data-stu-id="a30de-130">Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**.</span></span> <span data-ttu-id="a30de-131">更新プログラムを確認する週の日を入力します。</span><span class="sxs-lookup"><span data-stu-id="a30de-131">Enter the day of the week to check for updates.</span></span> <span data-ttu-id="a30de-132">[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a30de-132">Click **OK**.</span></span>
+    2. <span data-ttu-id="a30de-133">[セキュリティ インテリジェンスの更新 **プログラム** を確認する間隔を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。</span><span class="sxs-lookup"><span data-stu-id="a30de-133">Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**.</span></span> <span data-ttu-id="a30de-134">更新間の時間数を入力します。</span><span class="sxs-lookup"><span data-stu-id="a30de-134">Enter the number of hours between updates.</span></span> <span data-ttu-id="a30de-135">[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a30de-135">Click **OK**.</span></span>
+    3. <span data-ttu-id="a30de-136">[セキュリティ インテリジェンスの更新 **プログラム** を確認する時間を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。</span><span class="sxs-lookup"><span data-stu-id="a30de-136">Double-click the **Specify the time to check for security intelligence updates** setting and set the option to **Enabled**.</span></span> <span data-ttu-id="a30de-137">更新プログラムをチェックする時刻を入力します。</span><span class="sxs-lookup"><span data-stu-id="a30de-137">Enter the time when updates should be checked.</span></span> <span data-ttu-id="a30de-138">時刻は、エンドポイントのローカル時刻に基づいて行います。</span><span class="sxs-lookup"><span data-stu-id="a30de-138">The time is based on the local time of the endpoint.</span></span> <span data-ttu-id="a30de-139">[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a30de-139">Click **OK**.</span></span>
 
 
-## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a><span data-ttu-id="611cf-140">PowerShell コマンドレットを使用して保護更新プログラムをスケジュールする</span><span class="sxs-lookup"><span data-stu-id="611cf-140">Use PowerShell cmdlets to schedule protection updates</span></span>
+## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a><span data-ttu-id="a30de-140">PowerShell コマンドレットを使用して保護更新プログラムをスケジュールする</span><span class="sxs-lookup"><span data-stu-id="a30de-140">Use PowerShell cmdlets to schedule protection updates</span></span>
 
-<span data-ttu-id="611cf-141">次のコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="611cf-141">Use the following cmdlets:</span></span>
+<span data-ttu-id="a30de-141">次のコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="a30de-141">Use the following cmdlets:</span></span>
 
 ```PowerShell
 Set-MpPreference -SignatureScheduleDay
@@ -83,11 +84,11 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-<span data-ttu-id="611cf-142">[Microsoft Defender ウイルス対策で PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)を使用する方法の詳細については、「Use PowerShell コマンドレットを使用して Microsoft Defender Antivirus コマンドレットと[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="611cf-142">See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.</span></span>
+<span data-ttu-id="a30de-142">PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。</span><span class="sxs-lookup"><span data-stu-id="a30de-142">See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.</span></span>
 
-## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a><span data-ttu-id="611cf-143">Windows 管理命令 (WMI) を使用して保護更新プログラムをスケジュールする</span><span class="sxs-lookup"><span data-stu-id="611cf-143">Use Windows Management Instruction (WMI) to schedule protection updates</span></span>
+## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a><span data-ttu-id="a30de-143">保護Windowsスケジュールを設定するには、WMI 管理命令 (WMI) を使用します。</span><span class="sxs-lookup"><span data-stu-id="a30de-143">Use Windows Management Instruction (WMI) to schedule protection updates</span></span>
 
-<span data-ttu-id="611cf-144">次の [**プロパティ** に対して **、MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) クラスの Set メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="611cf-144">Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:</span></span>
+<span data-ttu-id="a30de-144">次の [**プロパティ** に対して **、MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) クラスの Set メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="a30de-144">Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:</span></span>
 
 ```WMI
 SignatureScheduleDay
@@ -95,15 +96,15 @@ SignatureScheduleTime
 SignatureUpdateInterval
 ```
 
-<span data-ttu-id="611cf-145">詳細と許可されるパラメーターについては、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="611cf-145">See the following for more information and allowed parameters:</span></span>
-- [<span data-ttu-id="611cf-146">Windows Defender WMIv2 API</span><span class="sxs-lookup"><span data-stu-id="611cf-146">Windows Defender WMIv2 APIs</span></span>](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+<span data-ttu-id="a30de-145">詳細と許可されるパラメーターについては、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a30de-145">See the following for more information and allowed parameters:</span></span>
+- [<span data-ttu-id="a30de-146">Windows DefenderWMIv2 API</span><span class="sxs-lookup"><span data-stu-id="a30de-146">Windows Defender WMIv2 APIs</span></span>](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
-## <a name="related-articles"></a><span data-ttu-id="611cf-147">関連記事</span><span class="sxs-lookup"><span data-stu-id="611cf-147">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="a30de-147">関連記事</span><span class="sxs-lookup"><span data-stu-id="a30de-147">Related articles</span></span>
 
-- [<span data-ttu-id="611cf-148">Microsoft Defender ウイルス対策の展開</span><span class="sxs-lookup"><span data-stu-id="611cf-148">Deploy Microsoft Defender Antivirus</span></span>](deploy-manage-report-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="611cf-149">Microsoft Defender ウイルス対策の更新プログラムを管理し、ベースラインを適用する</span><span class="sxs-lookup"><span data-stu-id="611cf-149">Manage Microsoft Defender Antivirus updates and apply baselines</span></span>](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="611cf-150">最新のエンドポイントの更新プログラムを管理する</span><span class="sxs-lookup"><span data-stu-id="611cf-150">Manage updates for endpoints that are out of date</span></span>](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="611cf-151">イベントベースの強制的な更新の管理</span><span class="sxs-lookup"><span data-stu-id="611cf-151">Manage event-based forced updates</span></span>](manage-event-based-updates-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="611cf-152">モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する</span><span class="sxs-lookup"><span data-stu-id="611cf-152">Manage updates for mobile devices and virtual machines (VMs)</span></span>](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="611cf-153">Windows 10 の Microsoft Defender ウイルス対策</span><span class="sxs-lookup"><span data-stu-id="611cf-153">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
+- [<span data-ttu-id="a30de-148">展開Microsoft Defender ウイルス対策</span><span class="sxs-lookup"><span data-stu-id="a30de-148">Deploy Microsoft Defender Antivirus</span></span>](deploy-manage-report-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="a30de-149">更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する</span><span class="sxs-lookup"><span data-stu-id="a30de-149">Manage Microsoft Defender Antivirus updates and apply baselines</span></span>](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="a30de-150">最新のエンドポイントの更新プログラムを管理する</span><span class="sxs-lookup"><span data-stu-id="a30de-150">Manage updates for endpoints that are out of date</span></span>](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="a30de-151">イベントベースの強制更新プログラムを管理する</span><span class="sxs-lookup"><span data-stu-id="a30de-151">Manage event-based forced updates</span></span>](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="a30de-152">モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する</span><span class="sxs-lookup"><span data-stu-id="a30de-152">Manage updates for mobile devices and virtual machines (VMs)</span></span>](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="a30de-153">Microsoft Defender ウイルス対策のWindows 10</span><span class="sxs-lookup"><span data-stu-id="a30de-153">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
