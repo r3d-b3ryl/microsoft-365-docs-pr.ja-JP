@@ -144,6 +144,7 @@
  
 ##### [トラブルシューティング]()
 ###### [インストールに関する問題のトラブルシューティング](linux-support-install.md)
+###### [エージェントの正常性に関する問題の調査](health-status.md)
 ###### [クラウド接続に関する問題のトラブルシューティング](linux-support-connectivity.md)
 ###### [パフォーマンスに関する問題のトラブルシューティング](linux-support-perf.md)
 ###### [欠落しているイベントに関する問題のトラブルシューティング](linux-support-events.md)
