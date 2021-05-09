@@ -22,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: ユーザーにライセンスを割り当てる方法を説明します。
-ms.openlocfilehash: 9fa8981949215c4cf7779a21ff7089d7534e1ef0
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: ae088ab5c26df9b782bd4433bbd0c9f2d0ed9348
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023751"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274378"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
@@ -44,6 +44,7 @@ ms.locfileid: "52023751"
 - [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)ことができます。
 - グループ ベースのライセンスを使用するには、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
 - Sway などの一部のサービスでは、ユーザーに自動的に割り当てられるため、個別に割り当てる必要はありません。
+
 
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>[ライセンス] ページを使用して、ユーザーにライセンスを割り当てる
 
@@ -128,6 +129,10 @@ ms.locfileid: "52023751"
 5. [**既存の製品に追加**] ウィンドウで、選択したユーザーに付与するライセンスのトグルを [**オン**] の位置に切り替えます。\
     既定では、それらのライセンスに関連付けられているすべてのサービスがユーザーに自動的に割り当てられます。 ユーザーが利用できるサービスを制限できます。 ユーザーに設定しないサービスのトグルを [**オフ**] の位置に切り替えます。
 6. ウィンドウの下部で、[**追加**] \> [**閉じる**] の順に選択します。  
+
+
+> [!NOTE]
+> 多数のユーザーにライセンスを割り当てる場合は、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](/azure/active-directory/enterprise-users/licensing-groups-assign)」を使用します
 
 ### <a name="assign-licenses-to-one-user"></a>1 人のユーザーにライセンスを割り当てる
 

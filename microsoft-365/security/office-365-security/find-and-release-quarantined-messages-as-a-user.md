@@ -20,12 +20,12 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9a9da170dc0d3effba495c29672fb8f6bb02031
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 036aa164b8b77efd2365d56c07d26870eac243f5
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599937"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274450"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -156,7 +156,9 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 - **[検疫から削除]**: 表示される警告で **[はい]** をクリックすると、メッセージは直ちに削除されます。
 
-- **[送信者のブロック]**: 送信者があなたにメッセージを送信できなくなります。
+- **送信者のブロック**: メールボックスの [ブロックされた送信者] リストに送信者を追加します。 詳細については、「[メール送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
+
+メールボックスの [ブロックされた送信者] リストに送信者を追加します。 詳細については、「[メール送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
 
 完了したら、**[閉じる]** をクリックします。
 
