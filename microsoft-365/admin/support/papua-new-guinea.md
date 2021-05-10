@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd8b4dff08c7a8f11299e29503487e5eb570bc64
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: aaf783902301243b6265139cddb6e5d55f25817c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545166"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297886"
 ---
-# <a name="contact-support-for-papua-new-guinea"></a><span data-ttu-id="e9ce7-103">パプアニューギニアのサポートへのお問い合わせ</span><span class="sxs-lookup"><span data-stu-id="e9ce7-103">Contact support for Papua New Guinea</span></span>
+# <a name="contact-support-for-papua-new-guinea"></a><span data-ttu-id="f0686-103">パプアニューギニアのサポートへのお問い合わせ</span><span class="sxs-lookup"><span data-stu-id="f0686-103">Contact support for Papua New Guinea</span></span>
 
-<span data-ttu-id="e9ce7-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="e9ce7-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="f0686-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="f0686-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="e9ce7-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="e9ce7-105">Phone number</span></span>
-<span data-ttu-id="e9ce7-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="e9ce7-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f0686-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="f0686-105">Phone number</span></span>
+<span data-ttu-id="f0686-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="f0686-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="e9ce7-107">時間</span><span class="sxs-lookup"><span data-stu-id="e9ce7-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="e9ce7-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="e9ce7-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f0686-107">時間</span><span class="sxs-lookup"><span data-stu-id="f0686-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f0686-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="f0686-108">Billing Support:</span></span>
 
-<span data-ttu-id="e9ce7-109">英語: Mon-Fri午前 11 時から午後 7 時</span><span class="sxs-lookup"><span data-stu-id="e9ce7-109">English: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="f0686-109">英語: Mon-Fri午前 11 時から午後 7 時</span><span class="sxs-lookup"><span data-stu-id="f0686-109">English: Mon-Fri 11 AM-7 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="e9ce7-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="e9ce7-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f0686-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="f0686-110">Technical Support:</span></span>
 
-<span data-ttu-id="e9ce7-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="e9ce7-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f0686-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="f0686-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="e9ce7-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="e9ce7-112">International call charges apply</span></span>
+<span data-ttu-id="f0686-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="f0686-112">International call charges apply</span></span>
