@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e57d03ae636837120b53c0de16861ad142ef76
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: e3df1286c69132c960c412f6f74512bb49c32b28
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280935"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291045"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開を準備する
 
@@ -60,7 +60,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 -   I = このプロジェクトの通知
 
-| 名前                 | Role                                                                                                                                                                                                          | アクション |
+| 名前                 | 役割                                                                                                                                                                                                          | アクション |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 名前とメールを入力する | **最高情報セキュリティ責任者 (CISO)** 新しいテクノロジ展開の組織の内部でスポンサーを務め、役員 *の代表者。*                                                  | だから     |
 | 名前とメールを入力する | **サイバー防御運用センター (CDOC)** の代表は *、CDOC* チームの担当者で、この変更が顧客のセキュリティ運用チームのプロセスとどのように一致するのか定義します。       | だから     |
@@ -134,7 +134,6 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 | Microsoft 脅威エキスパート (MTE)          | Microsoft 脅威エキスパートは、セキュリティ オペレーション センター (SOC) にエキスパート レベルの監視と分析を提供するマネージ ハンティング サービスで、固有の環境における重大な脅威を見逃すのを防いでお手伝いします。 <br>[詳細情報](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | 該当なし      |
 
 ## <a name="next-step"></a>次の手順
-|||
-|:-------|:-----|
-|![フェーズ 2: セットアップ](images/setup.png) <br>[フェーズ 2: セットアップ](production-deployment.md) | Microsoft Defender for Endpoint の展開をセットアップする
+
+![フェーズ 2: セットアップ](images/setup.png) <br>[フェーズ 2: セットアップ](production-deployment.md) |Microsoft Defender for Endpoint の展開をセットアップする
 

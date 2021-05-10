@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理センターを使用して、クラウドでの組織の設定、ユーザーおよびサブスクリプションの管理を行います。 管理者アクセス許可によるアカウントへのサインインから始めます。
-ms.openlocfilehash: f2b8a22019e3292c93d07161f3825dfe90629ccc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: db88904e16cf9410d3eb4e4aac161f714993150b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241750"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52290985"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
@@ -64,7 +64,7 @@ ms.locfileid: "52241750"
 |**Groups** <br/> |Microsoft 365 グループ、配布グループ、セキュリティ グループ、または共有メールボックスなど、組織内のグループを作成して管理します。 グループを[作成](../create-groups/create-groups.md)して[管理](../create-groups/manage-groups.md)する方法については、こちらを参照してください。  <br/> |
 |**リソース** <br/> |SharePoint サイト コレクションなどのリソースを作成して管理します。 サイト コレクションを作成する方法については、[こちら](/sharepoint/create-site-collection)を参照してください。  <br/> |
 |**支払い** <br/> |組織のサブスクリプションの表示、購入、キャンセルを行います。 過去の請求書を確認したり、個別のユーザーに割り当て済みのライセンス数を確認したりすることもできます。 請求の管理方法については、[こちら](../../commerce/index.yml)を参照してください。  <br/> |
-|**サポート** <br/> | 既存のサービス リクエストを表示するか、新しく作成します。 詳細については、「[ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](../contact-support-for-business-products.md)」を参照してください。 |
+|**サポート** <br/> | 既存のサービス リクエストを表示するか、新しく作成します。 詳細については、「[ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](../../business-video/get-help-support.md)」を参照してください。 |
 |[**設定**] <br/> |メール、サイト、および Office スイートなどのアプリのグローバル設定を管理します。 パスワード ポリシーと有効期限を変更します。 contoso.com などのドメイン名を追加して更新します。 組織プロファイルとリリース設定を変更します。 また、パートナーが管理センターにアクセスできるかどうかを選択します。  <br/> |
 |**セットアップ** <br/> |既存のドメインの管理、多要素認証の有効化と管理、管理者のアクセス権の管理、Office 365 へのユーザー メールボックスの移行、機能の更新プログラムの管理を行ったり、ユーザーによる Office アプリのインストールを支援したりします。 |
 |**レポート** <br/> |電子メールの使用や Office ライセンス認証数などに関する詳細レポートでは、組織で Microsoft 365 がどのように使われているかが一目でわかります。新しいアクティビティ レポートの使用方法については、[こちら](../activity-reports/activity-reports.md)を参照してください。  <br/> |

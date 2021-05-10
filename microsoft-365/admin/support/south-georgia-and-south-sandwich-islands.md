@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7da79d5cdd4766b1c0a6b3f0fc4010ec70cd955e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 70b640939e888095d0df647466595a95a40a902d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544278"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295357"
 ---
 # <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>南ジョージア島とサウス サンドウィッチ諸島の連絡先のサポート
 
-[別の国または地域を検索します](../contact-support-for-business-products.md)。
+[別の国または地域を検索します](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 +1 312 843 5145

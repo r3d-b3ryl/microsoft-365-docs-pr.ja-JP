@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 47d066fa20abe963f7afaa3b88cecc96fa6e87fc
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: a3b6edda36d2872177d9a88f3259220dcf2e76f3
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259591"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291317"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Defender でのインシデントのMicrosoft 365する
 
@@ -70,7 +70,7 @@ Microsoft 365Defender は相関分析を適用し、関連するアラートと�
 | フィルター名 | 説明 |
 |:-------|:-----|
 | 割り当て先 | 自分に割り当てられているアラート、または自動化によって処理されたアラートを表示できます。 |
-| カテゴリ | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
+| Categories | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
 | 分類 | 関連するアラートの一連の分類に基づいてインシデントをフィルター処理します。 値には、true アラート、false アラート、または設定されていないが含まれます。 |
 | データの機密性 | 一部の攻撃では、機密データや貴重なデータを排除することを目的としています。 機密データがインシデントに関与しているかどうかを確認するためにフィルター処理を適用することにより、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントへの対処に優先順位を付けることができます。 <br><br> Microsoft Information Protection が有効になっている場合にのみ適用されます。|
 | デバイス グループ | 定義済みのデバイス グループでフィルター処理します。 |
@@ -83,11 +83,14 @@ Microsoft 365Defender は相関分析を適用し、関連するアラートと�
 | 状態 | 状態に基づいて表示されるインシデントのリストを制限して、アクティブなインシデントまたは解決されたインシデントを確認できます。 |
 |||
 
-## <a name="next-step"></a>次の手順
+## <a name="next-steps"></a>次の手順
 
-優先度が最も高いインシデントを決定した後、それを選択して分析を開始 [します](investigate-incidents.md)。
+優先度が最も高いインシデントを決定した後、そのインシデントを選択し、次の操作を行います。
+
+- [タグ](manage-incidents.md) 、セキュリティ アナリストへの割り当て、コメントのインシデントのプロパティを管理します。
+- 調査を開始 [します](investigate-incidents.md)。
 
 ## <a name="see-also"></a>関連項目
 - [インシデントの概要](incidents-overview.md)
-- [インシデントを分析する](investigate-incidents.md)
+- [インシデントの調査](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)
