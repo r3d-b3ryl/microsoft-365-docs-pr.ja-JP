@@ -12,31 +12,31 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 46f596d3782940f5fbf7c04e2ff9a30e560afe6d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: f6f5c843d095875689a9af1a772af3de0f8e5083
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548370"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296409"
 ---
-# <a name="contact-support-for-burundi"></a><span data-ttu-id="e2004-103">ブルンジのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="e2004-103">Contact support for Burundi</span></span>
+# <a name="contact-support-for-burundi"></a><span data-ttu-id="14a04-103">ブルンジのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="14a04-103">Contact support for Burundi</span></span>
 
-<span data-ttu-id="e2004-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="e2004-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="14a04-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="14a04-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="e2004-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="e2004-105">Phone number</span></span>
-<span data-ttu-id="e2004-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="e2004-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="14a04-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="14a04-105">Phone number</span></span>
+<span data-ttu-id="14a04-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="14a04-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="e2004-107">時間</span><span class="sxs-lookup"><span data-stu-id="e2004-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="e2004-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="e2004-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="14a04-107">時間</span><span class="sxs-lookup"><span data-stu-id="14a04-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="14a04-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="14a04-108">Billing Support:</span></span>
 
-<span data-ttu-id="e2004-109">フランス語: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="e2004-109">French: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="14a04-109">フランス語: Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="14a04-109">French: Mon-Fri 10 AM-6 PM</span></span>
 
-<span data-ttu-id="e2004-110">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="e2004-110">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="14a04-110">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="14a04-110">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="e2004-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="e2004-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="14a04-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="14a04-111">Technical Support:</span></span>
 
-<span data-ttu-id="e2004-112">フランス語: Mon-Fri 9 AM-10 PM</span><span class="sxs-lookup"><span data-stu-id="e2004-112">French: Mon-Fri 9 AM-10 PM</span></span>
+<span data-ttu-id="14a04-112">フランス語: Mon-Fri 9 AM-10 PM</span><span class="sxs-lookup"><span data-stu-id="14a04-112">French: Mon-Fri 9 AM-10 PM</span></span>
 
-<span data-ttu-id="e2004-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="e2004-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="14a04-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="14a04-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="e2004-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="e2004-114">International call charges apply</span></span>
+<span data-ttu-id="14a04-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="14a04-114">International call charges apply</span></span>
