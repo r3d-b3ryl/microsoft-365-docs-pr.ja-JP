@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/07/2021
+ms.date: 05/08/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296733"
+ms.locfileid: "52302102"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策
 
@@ -55,7 +55,7 @@ ms.locfileid: "52296733"
 このトピックの次の表に、Windows 10 バージョン 1703 で使用できるグループ ポリシー設定の一覧を示し、このドキュメント ライブラリの該当するトピック (該当する場合) へのリンクを示します。 
 
 > [!TIP]
-> [2020 年 5 設定更新プログラム (2004)](https://www.microsoft.com/download/101451)Windows 10グループ ポリシー のリファレンス スプレッドシートをダウンロードします。 このスプレッドシートには、Windows 10 2020 年 5 月更新プログラム (2004) 用に提供される管理用テンプレート ファイルに含まれるコンピューターとユーザー構成のポリシー設定が一覧表示されます。 グループ ポリシー オブジェクトを編集するときに、これらのポリシー設定を構成できます。
+> [2020 年 5 設定更新プログラム (2004)](https://www.microsoft.com/download/101451)Windows 10グループ ポリシー のリファレンス スプレッドシートをダウンロードします。 このスプレッドシートには、Windows 10 2020 年 5 月更新プログラム (2004) 用に提供される管理用テンプレート ファイルに含まれるコンピューターとユーザー構成のポリシー設定が一覧表示されます。 グループ ポリシー オブジェクトを編集するときに、スプレッドシートを参照して構成できます。
 
 | 場所 | Setting | 記事 |
 |:---|:---|:---|

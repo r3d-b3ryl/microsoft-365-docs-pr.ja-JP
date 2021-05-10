@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 76abde885aa16c174bb81d22e5939d47894a59bf
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 64a96256ff4bb4b77ec634195f6d89b92252142a
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934971"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301766"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -37,11 +37,13 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ## <a name="1115140101"></a>1.1.15140101
 
-- Microsoft Defender ATP 製品名が、アプリ ストアの Microsoft Defender for Endpoint に更新されました。
+- **脱獄検出は** プレビュー中です。 詳細については、「デバイス リスク信号 [に基づく条件付きアクセス ポリシーのセットアップ」を参照してください](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
+- **VPN プロファイルの自動セットアップは、** 登録されたデバイスのプレビューで、アプリ (Intune) Microsoft エンドポイント マネージャーされます。 詳細については、「登録済み [iOS デバイスの自動セットアップ VPN プロファイル」を参照してください](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
+- これでMicrosoft Defender ATP製品名がアプリ ストアの Microsoft Defender for Endpoint に更新されました。
 - サインイン エクスペリエンスが向上しました。
 - バグ修正。
 
 ## <a name="1115010101"></a>1.1.15010101
 
-- このバージョンでは、iPadOS/iPad デバイスのサポートを発表しています。
+- このバージョンでは、iPadOS/iPadを発表しています。
 - バグ修正。

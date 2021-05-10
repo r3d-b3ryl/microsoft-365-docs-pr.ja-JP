@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b5af93e82f72bac900682b2e231453e448b267d9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934191"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301778"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934191"
 このトピックでは、Mac 上で Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 > [!CAUTION]
-> Microsoft Defender for Endpoint on Mac で他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しない副作用につながる可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、パッシブ モードで実行するウイルス対策機能を構成した後も、Defender for Endpoint on Mac EDR 機能を安全に利用できます。 [](mac-preferences.md#enable--disable-passive-mode)
+> Microsoft Defender for Endpoint on Mac で他のサード パーティ製のエンドポイント保護製品を実行すると、パフォーマンスの問題や予期しない副作用につながる可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、パッシブ モードで実行するウイルス対策機能を構成した後も、Defender for Endpoint on Mac EDR[](mac-preferences.md#enable--disable-passive-mode)の機能を安全に利用できます。
 
 ## <a name="whats-new-in-the-latest-release"></a>最新リリースの新機能
 
@@ -56,7 +56,7 @@ ms.locfileid: "51934191"
 
 ### <a name="prerequisites"></a>前提条件
 
-- Defender for Endpoint サブスクリプションと Microsoft Defender セキュリティ センター ポータルへのアクセス
+- Defender for Endpoint サブスクリプションとポータルへのアクセスMicrosoft Defender セキュリティ センターする
 - macOS と BASH スクリプトの初心者レベルのエクスペリエンス
 - デバイスの管理特権 (手動展開の場合)
 
@@ -97,11 +97,13 @@ Microsoft Defender for Endpoint on Mac では、次のいずれかの Microsoft 
 
 - Microsoft 365 E5 (M365 E5)
 - Microsoft 365 E5 Security
-- Microsoft 365 A5 (M365 A5)
+- Microsoft 365A5 (M365 A5)
+- Windows 10 EnterpriseE5
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
 > 対象となるライセンスユーザーは、最大 5 つの同時デバイスで Microsoft Defender for Endpoint を使用できます。
-> Microsoft Defender for Endpoint は、クラウド ソリューション プロバイダー (CSP) から購入できます。 CSP を介して購入した場合、Microsoft ボリューム ライセンスの提供は必要とされません。
+> Microsoft Defender for Endpoint は、ユーザー (CSP) から購入クラウド ソリューション プロバイダー利用できます。 CSP を介して購入した場合、Microsoft ボリューム ライセンスの提供は必要とされません。
 
 ### <a name="network-connections"></a>ネットワーク接続
 
@@ -159,7 +161,7 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 macOS の進化に合わせ、カーネル拡張機能の代わりにシステム拡張機能を活用する Microsoft Defender for Endpoint on Mac 更新プログラムを準備しています。 関連する詳細については [、「Microsoft Defender for Endpoint on Mac の新機能」を参照してください](mac-whatsnew.md)。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - ログ記録、アンインストール、その他のトピックの詳細については [、「Resources for Microsoft Defender for Endpoint on Mac」を参照してください](mac-resources.md)。
 

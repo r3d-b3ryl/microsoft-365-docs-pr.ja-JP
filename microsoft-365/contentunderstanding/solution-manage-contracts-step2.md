@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: カスタム ソリューションを使用してMicrosoft Teams管理チャネルを作成する方法について説明Microsoft 365します。
-ms.openlocfilehash: a97f6a77818fc53aa28a5924b97e3c7309d01e3a
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281194"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301802"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>手順 2. 契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。
 
@@ -42,6 +42,9 @@ Contracts **Management チャネルで [契約]** タブを作成した後、ド
    ![リスト ビュー。](../media/content-understanding/list-view.png) 
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>[契約] タブのタイル ビューをカスタマイズする
+
+> [!NOTE]
+> このセクションでは、ソリューション ファイル zip ファイルに含まれるContractCard.jsに含まれるコード例 **を** 参照します。
 
 このTeamsタイル ビューで契約を表示することができますが、それをカスタマイズして、契約カードに表示する契約データを表示できます。 たとえば、[ **契約]** タブでは、メンバーが契約カードのクライアント、請負業者、および手数料の金額を確認することが重要です。 これらのフィールドはすべて、ドキュメント ライブラリに適用SharePoint Syntex モデルを通じて各コントラクトから抽出されました。 また、タイル ヘッダー バーを各ステータスの異なる色に変更して、メンバーが承認プロセス内の契約の場所を簡単に確認できます。 たとえば、承認済みのすべての契約には青色のヘッダー バーが表示されます。
 

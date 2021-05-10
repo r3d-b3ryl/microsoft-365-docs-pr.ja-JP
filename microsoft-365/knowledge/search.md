@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Microsoft Viva でトピックを検索する方法について説明します。
-ms.openlocfilehash: 15b42c9d3689a73c865be53bb29f298fcbf896bd
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281044"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301718"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Microsoft Search を使用して Microsoft Viva のトピックを検索する
 
@@ -36,7 +36,7 @@ Microsoft Search で特定のトピック ("Saturn" など) を検索すると�
 
 トピック の応答カードが表示されない場合でも、トピック ページを検索結果に表示できます。
 
-Word と Word の検索結果PowerPoint、見つかったときにトピックの回答も表示されます。
+Word、PowerPoint、Outlook、Excel検索結果には、見つかったときにトピックの回答も表示されます。
 
 
 ## <a name="acronyms"></a>頭字語

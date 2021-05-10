@@ -12,19 +12,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: bdb49af4ac43976a1ad734e507902781d63c5670
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904072"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301790"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva Topics のトピック センターの概要
 
-
-Microsoft Viva Topics では、トピック センターは、組織の知識の中心として機能する最新の SharePoint サイトです。 Microsoft 365 管理 [センターの Viva Topics](set-up-topic-experiences.md) セットアップ中に作成されます。
+Microsoft Viva Topics では、トピック センターは、組織SharePoint知識の中心として役立つ最新のサイトです。 これは、管理センター[でビ](set-up-topic-experiences.md)バ トピックのセットアップ中Microsoft 365作成されます。
 
 トピック センターには、ライセンスを取得したユーザー全員が、接続先のトピックを表示できる Topics Web パーツを含む既定のホーム ページがあります。 
 
@@ -35,10 +34,10 @@ Microsoft Viva Topics では、トピック センターは、組織の知識の
 トピック センターは、Viva Topics のセットアップ中に作成されます。 セットアップが完了すると、管理者は [トピック センターの管理] ページで URL [を検索できます](./topic-experiences-administration.md#to-access-topics-management-settings)。
 
 
-1. Microsoft 365 管理センターで、[設定] を選択し、[組織の設定]**を選択します**。
+1. 管理センターでMicrosoft 365を選択し、[組織設定]**を選択します**。 
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **を選択します**。
 
-    ![ユーザーをナレッジに接続する](../media/admin-org-knowledge-options-completed.png) </br>
+    ![Connectを知る](../media/admin-org-knowledge-options-completed.png) </br>
 
 3. [トピック センター **] タブを選択** します。[ **サイト アドレス]** の下に、トピック センターへのリンクがあります。
 
@@ -57,25 +56,25 @@ Microsoft Viva Topics では、トピック センターは、組織の知識の
 
 トピック センターのホーム ページでは、接続している組織のトピックを確認できます。
 
-- 推奨される接続 - [これらのトピックに関して一覧表示しました] の下に **トピックが表示されます。私たちはそれを正しいと思いましたか?** これらは、トピックへの接続が AI を介して提案されているトピックです。 たとえば、関連するファイルまたはサイトの作成者である可能性があります。 トピックの関連人物としてリストを表示する必要がある場合は、確認を求めるメッセージが表示されます。
+- 推奨される接続 - [これらのトピックに関して一覧表示しました] の下に **トピックが表示されます。正しいと思いましたか?** これらは、トピックへの接続が AI を介して提案されているトピックです。 たとえば、関連するファイルまたはサイトの作成者である可能性があります。 トピックの関連人物としてリストを表示する必要がある場合は、確認を求めるメッセージが表示されます。
 
    ![推奨される接続](../media/knowledge-management/my-topics.png) </br>
  
 - 確認済み接続 - トピック ページにピン留めされているトピック、またはトピックへの推奨される接続を確認したトピックです。 推奨される接続を確認すると、トピックが [推奨] セクションから [確認済み] セクションに移動します。
  
-   ![確認済みトピック](../media/knowledge-management/my-topics-confirmed.png) </br>
+   ![承認済みトピック](../media/knowledge-management/my-topics-confirmed.png) </br>
 
 ユーザーがトピックへの接続を確認すると、ユーザーはトピック ページを編集して接続を管理できます。 たとえば、トピックへの接続に関する詳細を提供できます。
 
 
 ## <a name="manage-topics-page"></a>[トピックの管理] ページ
 
-トピック センターの [ **トピックの管理]** セクションで作業するには、ナレッジ マネージャーの役割に必要な [トピックの管理] 権限が必要です。 管理者は、ナレッジ管理のセットアップ中にこれらの[](set-up-topic-experiences.md)アクセス許可をユーザーに割り当て[](topic-experiences-knowledge-rules.md)、または Microsoft 365 管理センターを通じて管理者が後で新しいユーザーを追加できます。
+トピック センターの [ **トピックの管理]** セクションで作業するには、ナレッジ マネージャーの役割に必要な [トピックの管理] 権限が必要です。 管理者は、ナレッジ管理のセットアップ中にこれらの[](set-up-topic-experiences.md)アクセス許可をユーザーに割り当て[](topic-experiences-knowledge-rules.md)、新しいユーザーを管理者が管理センターから後で追加Microsoft 365できます。
 
 [トピックの管理] ページで、トピック ダッシュボードには、指定したソースの場所から識別された、アクセス権を持つすべてのトピックが表示されます。 各トピックには、トピックが検出された日付が表示されます。 [トピックの管理] アクセス許可が割り当てられたユーザーは、未確認のトピックを確認し、次の項目を選択できます。
 - トピックを確認する: AI が推奨するトピックが人間のキュレーターによって検証されたことをユーザーに示します。 
 - トピックを発行する: トピック情報を編集して、最初に特定されたトピックの品質を向上し、トピックへのビュー アクセス権を持つすべてのユーザーにトピックを強調表示します。 
-- トピックを拒否する: トピックをエンド ユーザーに検出不可にする。 トピックは [拒否] タブ **に移動** され、必要に応じて後で確認できます。 
+- トピックを削除する: トピックをエンド ユーザーに検出不可にする。 トピックは [削除済み] **タブに移動** され、必要に応じて後で確認できます。 
 
 > [!Note] 
 > 「 [トピックの管理」ページ](manage-topics.md) のトピック管理トピックの詳細については、「トピックの管理」を参照してください。

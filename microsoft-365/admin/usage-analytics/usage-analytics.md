@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織がコミュニケーションと共同作業を行うMicrosoft 365サービスを採用する方法の概要を確認します。
-ms.openlocfilehash: 7d267dcbbb35a03794567991fddb2e3a573d47dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ac54e8bbc24393b7140fbc32efd48047beca2a1c
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297394"
+ms.locfileid: "52301742"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 
@@ -89,6 +89,9 @@ Microsoft 365分析には、次のセクションで詳細なレポートが多�
 無料ではなく、ライセンスをPower BI Proします。 詳細については、「 [テンプレート アプリの](/power-bi/service-template-apps-install-distribute#prerequisites) インストール、カスタマイズ、配布の前提条件」を参照してください。
 
 ダッシュボードを他のユーザーと共有するには、「Share ダッシュボードとレポート」 [を参照してください](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)。
+### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>利用状況の分析を表示するには、利用状況の概要レポート リーダーの役割が十分ですか?
+
+利用状況の概要レポート 閲覧者の役割では、使用状況分析でテナント レベルの集計Microsoft 365アクセスできます。  変更管理と導入を担当しているが、必ずしも IT 管理者とは限らないすべてのユーザーに対して、レポート リーダーまたは利用状況概要レポート リーダーの役割をお勧めします。
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>誰が Microsoft 365 利用状況分析に接続できますか。
 

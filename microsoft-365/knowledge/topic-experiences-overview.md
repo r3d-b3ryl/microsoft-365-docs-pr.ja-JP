@@ -14,22 +14,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva トピックの概要。
-ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281031"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302126"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva トピックの概要 
 
-ビバ トピックでは、Microsoft AI テクノロジ、Microsoft 365、Microsoft Graph、検索、その他のコンポーネントとサービスを使用して、SharePoint モダン ページ、Microsoft Search、Search in Word および PowerPoint から始まる、日常的に使用する Microsoft 365 アプリのユーザーに知識を提供します。
+ビバ トピックでは、Microsoft AI テクノロジ、Microsoft 365、Microsoft Graph、検索、その他のコンポーネントとサービスを使用して、SharePoint モダン ページ、Microsoft Search、Search in Word、PowerPoint、Outlook、Excel から始まる、日常的に使用する Microsoft 365 アプリでユーザーに知識を提供します。
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
 
-</br>
+<br/>
 
 Viva トピックは、多くの会社にとって主要な経営課題である、必要な時に必要な情報をユーザーに提供することに貢献しています。 たとえば、新入社員は多くの新しい情報を素早く学ばなければならず、会社情報を読んでいてもまったく知らない言葉に出会うことがあります。 たとえば、その用語が何なのか、組織内の誰が専門家なのか、その用語に関連するサイトやドキュメントがあるのかなど、詳細を調べるために、ユーザーは自分の作業を離れて、貴重な時間を費やす必要があります。
 
@@ -42,7 +42,7 @@ SharePoint ニュースやページのコンテンツでトピックがメンシ
 
    ![トピックの強調表示](../media/knowledge-management/saturn.png) 
 
-Word または PowerPoint で検索を使用する場合は、検索ボックスを使用するか、コンテキストメニューで [検索] を選択すると、表示される結果にトピックの概要が表示される場合があります。
+Word、PowerPoint、Outlook、Excel で検索を使用する場合、またはコンテキスト メニューで [検索] を選択すると、表示される結果にトピックの概要が表示される場合があります。
 
    ![[検索] ボックスを使用して Word で検索を示すスクリーンショット。](../media/knowledge-management/word-search-2.png)
 
@@ -71,7 +71,7 @@ Viva トピックは、Microsoft の AI 技術を用いて、Microsoft 365 環�
 
 知識管理者は、テナント内のすべての SharePoint サイトをクロールしてトピックを探すことも、特定のサイトだけを選択することもできます。
 
-[トピックの検出とキュレーション](./topic-experiences-discovery-curation.md)を参照してください。
+「 [トピックの検出とキュレーション」を参照してください](./topic-experiences-discovery-curation.md)。
 
 ## <a name="roles"></a>ロール
 
@@ -97,7 +97,7 @@ Microsoft 365 環境で Viva・トピックを使用する場合、ユーザー�
 
 - テナントで検出されたトピックを確認または削除します。
 - 必要に応じて手動で新しいトピックを作成する (たとえば、AI で検出できるほど十分な情報が提供されなかった場合など)。
-- 既存のトピック ページの編集。</br>
+- 既存のトピック ページの編集。<br/>
 
 詳細については、「[トピック センターでのトピック管理](manage-topics.md)」を参照してください。  
 
@@ -125,7 +125,8 @@ AI は、お客様の環境の変化に合わせて、トピックを改善す�
 
 さらに、適切なアクセス許可を持つユーザーは、トピックに関連する Yammer の会話などのアイテムにタグを付け、特定のトピックに追加することができます。 
 
-[トピックの検出とキュレーション](./topic-experiences-discovery-curation.md)を参照してください。
+「 [トピックの検出とキュレーション」を参照してください](./topic-experiences-discovery-curation.md)。
 
-
-## <a name="see-also"></a>関連項目
+<!--
+## See also
+-->

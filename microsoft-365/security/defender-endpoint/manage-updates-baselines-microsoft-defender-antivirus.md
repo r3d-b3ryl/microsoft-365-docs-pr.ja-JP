@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ウイルス対策の更新プログラムを管理し、ベースラインを適用する
-description: Microsoft Defender Antivirus が保護と製品の更新プログラムを受け取る方法を管理します。
+title: 更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
+description: 保護と製品Microsoft Defender ウイルス対策受け取る方法を管理します。
 keywords: 更新プログラム、セキュリティ 基準、保護、更新のスケジュール、強制的な更新、モバイル更新、wsus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,66 +16,66 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/06/2021
-ms.openlocfilehash: 22a173d39c3ab8d1afd91a33b05e02e58da24aaa
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/08/2021
+ms.openlocfilehash: 4f2b931018d49affa2d94ddf1a147c4fd2e02085
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274558"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302078"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理し、ベースラインを適用する
+# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender ウイルス対策
 
-Microsoft Defender ウイルス対策を最新の状態に保つことに関連する更新プログラムには、次の 2 種類があります。
+更新プログラムには、最新の状態を維持Microsoft Defender ウイルス対策 2 種類があります。
 
 - セキュリティ インテリジェンスの更新プログラム
 - 製品の更新
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策を最新の状態に保つことは、新しいマルウェアや攻撃の手法から保護するために必要な最新のテクノロジと機能をデバイスに提供するために重要です。
+> 最新Microsoft Defender ウイルス対策維持は、新しいマルウェアや攻撃の手法から保護するために必要な最新のテクノロジと機能をデバイスに提供するために重要です。
 > 
-> Microsoft Defender Antivirus がパッシブ モードで実行されている場合でも、ウイルス対策保護を [更新してください](./microsoft-defender-antivirus-compatibility.md)。
+> パッシブ モードで実行されている場合でも、Microsoft Defender ウイルス対策保護を[更新してください](./microsoft-defender-antivirus-compatibility.md)。
 > 
-> 最新のエンジン、プラットフォーム、署名の日付を確認するには、Microsoft Defender Antivirus および他の Microsoft マルウェア対策のセキュリティ インテリジェンス更新プログラム [を参照してください](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
+> 最新のエンジン、プラットフォーム、署名日を確認するには、セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策その他の Microsoft マルウェア対策に関する[ページをご覧ください](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
 
 ## <a name="security-intelligence-updates"></a>セキュリティ インテリジェンスの更新プログラム
 
-Microsoft Defender Antivirus は、 [クラウド](cloud-protection-microsoft-defender-antivirus.md) 配信の保護 (Microsoft Advanced Protection Service または MAPS とも呼ばれる) を使用し、セキュリティ インテリジェンス更新プログラムを定期的にダウンロードして保護を提供します。
+Microsoft Defender ウイルス対策[は、](cloud-protection-microsoft-defender-antivirus.md)クラウド配信の保護 (Microsoft Advanced Protection Service または MAPS とも呼ばれる) を使用し、セキュリティ インテリジェンス更新プログラムを定期的にダウンロードして保護を提供します。
 
 > [!NOTE]
 > 更新プログラムは、次の KB 番号の下でリリースされます。  
-> Microsoft Defender ウイルス対策: KB2267602  
-> System Center Endpoint Protection: KB2461484
+> - Microsoft Defender ウイルス対策: KB2267602  
+> - System Center Endpoint Protection: KB2461484
 
-クラウドによる保護は常にオンであり、インターネットへのアクティブな接続が機能する必要があります。 セキュリティ インテリジェンスの更新は、スケジュールされたケイデンス (ポリシーを介して構成可能) で行われます。 詳細については [、「Use Microsoft cloud-provided protection in Microsoft Defender Antivirus」を参照してください](cloud-protection-microsoft-defender-antivirus.md)。 
+クラウドによる保護は常にオンであり、インターネットへのアクティブな接続が機能する必要があります。 セキュリティ インテリジェンスの更新は、スケジュールされたケイデンス (ポリシーを介して構成可能) で行われます。 詳細については、「Microsoft クラウド提供の保護を使用する」を参照[Microsoft Defender ウイルス対策。](cloud-protection-microsoft-defender-antivirus.md) 
 
-最近のセキュリティ インテリジェンス更新プログラムの一覧については、「Microsoft Defender Antivirus および他の Microsoft マルウェア対策のセキュリティ インテリジェンス更新プログラム」 [を参照してください](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
+最近のセキュリティ インテリジェンス更新プログラムの一覧については、「セキュリティ インテリジェンスの更新プログラム 」および「Microsoft Defender ウイルス対策 Microsoft マルウェア対策」[を参照してください](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
 
 エンジンの更新プログラムは、セキュリティ インテリジェンスの更新プログラムに含まれており、毎月リリースされます。
 
 ## <a name="product-updates"></a>製品の更新
 
-Microsoft Defender ウイルス対策では、月次更新[プログラム (KB4052623) (](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)プラットフォーム更新プログラムと呼ばれる) が必要であり、Windows 10 リリースと共に主要な機能更新プログラムを受け取る予定です。 
+Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)プラットフォーム更新プログラムと呼ばれる) が必要であり、各リリースと共に主要な機能更新プログラムWindows 10されます。
 
 更新プログラムの配布は、次のいずれかの方法で管理できます。 
 
-- [Windows Server Update Service (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [Windowsサーバー更新サービス (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
-- ネットワーク内のエンドポイントに Microsoft および Windows の更新プログラムを展開するために使用する通常の方法。
+- Microsoft を展開し、ネットワーク内のエンドポイントWindows更新プログラムを展開するために使用する通常の方法です。
 
-詳細については [、「Microsoft Defender ウイルス対策保護更新プログラムのソースを管理する」を参照してください](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
+詳細については、「保護更新プログラム[のソースを管理するMicrosoft Defender ウイルス対策を参照してください](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
 
 > [!NOTE]
 > 月次更新プログラムは段階的にリリースされ、Window Server Update Services に複数のパッケージ [が表示されます](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)。
 
 ## <a name="monthly-platform-and-engine-versions"></a>月次プラットフォームとエンジンのバージョン
 
-プラットフォーム更新プログラムを更新またはインストールする方法については [、「Update for Windows Defenderマルウェア対策プラットフォーム」を参照してください](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)。
+プラットフォーム更新プログラムを更新またはインストールする方法については[、「Update for Windows Defenderマルウェア対策プラットフォーム」を参照してください](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)。
 
 すべての更新プログラムに含まれるもの 
 - パフォーマンスの向上。
@@ -83,11 +83,11 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
 - 統合の改善 (クラウド、Microsoft 365 Defender)。
 <br/>
 <details>
-<summary> 2021 年 4 月 (プラットフォーム: 4.19.2104.9|エンジン: 1.1.18100.5)</summary>
+<summary> 2021 年 4 月 (プラットフォーム: 4.18.2104.9|エンジン: 1.1.18100.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.337.2.0**  
 &ensp;リリース: **2021** 年 4 月 1 日  
-&ensp;プラットフォーム: **4.19.2104.9**  
+&ensp;プラットフォーム: **4.18.2104.9**  
 &ensp;エンジン: **1.1.18100.5**  
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
     
@@ -101,11 +101,11 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
 </details>
 
 <details>
-<summary> 2021 年 3 月 (プラットフォーム: 4.19.2103.7 |エンジン: 1.1.18000.5)</summary>
+<summary> 2021 年 3 月 (プラットフォーム: 4.18.2103.7 |エンジン: 1.1.18000.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.335.36.0**  
 &ensp;リリース: **2021** 年 4 月 1 日  
-&ensp;プラットフォーム: **4.19.2103.7**  
+&ensp;プラットフォーム: **4.18.2103.7**  
 &ensp;エンジン: **1.1.18000.5**  
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
     
@@ -119,11 +119,11 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
 既知の問題はありません  
 <br/>
 </details><details>
-<summary> 2021 年 2 月 (プラットフォーム: 4.19.2102.3 |エンジン: 1.1.17900.7)</summary>
+<summary> 2021 年 2 月 (プラットフォーム: 4.18.2102.3 |エンジン: 1.1.17900.7)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.333.7.0**  
 &ensp;リリース: **2021** 年 3 月 9 日  
-&ensp;プラットフォーム: **4.19.2102.3**  
+&ensp;プラットフォーム: **4.18.2102.3**  
 &ensp;エンジン: **1.1.17900.7**  
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
     
@@ -154,9 +154,9 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
 
 - シェルコードの悪用検出の改善
 - 資格情報の盗用の試行の可視性の向上
-- Microsoft Defender ウイルス対策サービスのスパム対策機能の改善点
+- サービスのスパム対策機能Microsoft Defender ウイルス対策強化
 - x64 エミュレーションのARM強化
-- 修正: EDR ブロック通知は、リアルタイム保護が初期検出を実行した後も脅威の履歴に残ります
+- 修正: EDRの保護が最初の検出を実行した後、ブロック通知が脅威履歴に残る
 
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  
@@ -239,7 +239,7 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
 - メモリ スキャンの動作監視の改善
 - マクロ ストリームのスキャンの改善
 - `AMRunningMode`PowerShell コマンドレットGet-MpComputerStatus追加
-- [DisableAntiSpyware は](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) 無視されます。 Microsoft Defender ウイルス対策は、別のウイルス対策プログラムを検出すると自動的に無効になります。
+- [DisableAntiSpyware は](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) 無視されます。 Microsoft Defender ウイルス対策ウイルス対策プログラムが検出されると、自動的にオフになります。
 
 
 ### <a name="known-issues"></a>既知の問題
@@ -353,7 +353,7 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
 - プロセスブロックの通知を改善する
    
 ### <a name="known-issues"></a>既知の問題
-[**固定**]Microsoft Defender ウイルス対策は、スキャンを実行するときにファイルをスキップしています。
+[**固定**]Microsoft Defender ウイルス対策実行中にファイルをスキップしている場合。
 
 <br/>
 </details>
@@ -389,7 +389,7 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
      
 ### <a name="whats-new"></a>新機能
 
-- Exchange を使用した WS2016 の固定 BSOD
+- WS2016 の固定 BSOD とExchange
 - TMP がネットワーク パスにリダイレクトされる場合のプラットフォームの更新をサポートする
 - プラットフォームとエンジンのバージョンが [WDSI に追加される](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - 緊急署名の更新をパッシブ モード [に拡張する](./microsoft-defender-antivirus-compatibility.md)
@@ -397,7 +397,7 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
    
 ### <a name="known-issues"></a>既知の問題
 
-[**固定**] 最新の [](/windows-hardware/design/device-experiences/modern-standby)スタンバイ モードを利用するデバイスでは、保護のギャップWindows Defenderフィルター ドライバーでハングが発生する可能性があります。  影響を受けるコンピューターは、最新のマルウェア対策プラットフォームに更新されていないと顧客に表示されます。  
+[**固定**] モダン [](/windows-hardware/design/device-experiences/modern-standby)スタンバイ モードを利用するデバイスでは、保護のギャップWindows Defenderフィルター ドライバーでハングが発生する可能性があります。  影響を受けるコンピューターは、最新のマルウェア対策プラットフォームに更新されていないと顧客に表示されます。  
 <br/>
 > [!IMPORTANT]
 > この更新プログラムは次の場合です。
@@ -405,7 +405,7 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
 > - ハングの問題があるシステムの再起動フラグがあります。
 > - は 2020 年 4 月に再リリースされ、将来の可用性を維持するために新しい更新プログラムに置き換えされません。  
 > - は、再起動要件による更新プログラムとして分類されます。そして
-> - は Windows Update でのみ [提供されます](https://support.microsoft.com/help/4027667/windows-10-update)。
+> - は、更新プログラムでのみ[Windowsされます](https://support.microsoft.com/help/4027667/windows-10-update)。
 <br/>
 </details>
 
@@ -431,21 +431,21 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
 </details>
 
 
-## <a name="microsoft-defender-antivirus-platform-support"></a>Microsoft Defender ウイルス対策プラットフォームのサポート
+## <a name="microsoft-defender-antivirus-platform-support"></a>Microsoft Defender ウイルス対策サポート
 プラットフォームとエンジンの更新プログラムは、毎月提供されます。 完全にサポートするには、最新のプラットフォーム更新プログラムを最新の状態に保つ必要があります。 サポート構造は動的で、最新のプラットフォーム バージョンの可用性に応じて 2 つのフェーズに進化しています。
 
 - **セキュリティと重要な更新** プログラムのサービス フェーズ - 最新のプラットフォーム バージョンを実行すると、マルウェア対策プラットフォームに対するセキュリティ更新プログラムと重要な更新プログラムの両方を受け取る資格があります。
  
 - **テクニカル サポート (のみ)** フェーズ - 新しいプラットフォーム バージョンがリリースされると、以前のバージョン (N-2) のサポートはテクニカル サポートにのみ減少します。 N-2 より古いプラットフォーム バージョンはサポートされなくなりました。*
 
-\* Windows 10 リリース バージョン (Windows [10](#platform-version-included-with-windows-10-releases)リリースに含まれるプラットフォーム バージョンを参照) から最新のプラットフォーム バージョンへのアップグレードについては、引き続きテクニカル サポートが提供されます。
+\*Windows 10 リリース バージョン (Windows 10 リリースに含まれるプラットフォーム バージョンを参照) から最新のプラットフォーム バージョンへのアップグレードについては、引[き続き](#platform-version-included-with-windows-10-releases)テクニカル サポートが提供されます。
 
 テクニカル サポート (のみ) フェーズでは、Microsoft Customer Service & サポートと Microsoft のマネージ サポートサービス (プレミア サポートなど) を通じて、商業的に合理的なサポート インシデントが提供されます。 サポート インシデントで、さらなるガイダンスのために開発へのエスカレーションが必要な場合、セキュリティ以外の更新プログラムが必要な場合、またはセキュリティ更新プログラムが必要な場合は、最新のプラットフォーム バージョンまたは中間更新プログラム (*)へのアップグレードを求める要求が表示されます。
 
-### <a name="platform-version-included-with-windows-10-releases"></a>Windows 10 リリースに含まれるプラットフォームのバージョン
-次の表に、最新の Windows 10 リリースに同梱されている Microsoft Defender ウイルス対策プラットフォームとエンジン のバージョンを示します。    
+### <a name="platform-version-included-with-windows-10-releases"></a>プラットフォームのバージョンは、Windows 10リリースに含まれています
+次の表に、最新Microsoft Defender ウイルス対策リリースに同梱されているプラットフォームとエンジンのWindows 10示します。    
 
-|Windows 10 リリース  |プラットフォームのバージョン  |エンジンのバージョン |サポート フェーズ |
+|Windows 10リリース  |プラットフォームのバージョン  |エンジンのバージョン |サポート フェーズ |
 |:---|:---|:---|:---|
 |2004 (20H1/20H2) |4.18.1909.6 |1.1.17000.2 | テクニカル アップグレード のサポート (のみ) |
 |1909 (19H2) |4.18.1902.5 |1.1.16700.3 | テクニカル アップグレード のサポート (のみ) |
@@ -456,13 +456,13 @@ Microsoft Defender ウイルス対策では、月次更新[プログラム (KB40
 |1703 (RS2) |4.11.15603.2 |1.1.13504.0 | テクニカル アップグレード のサポート (のみ) |
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | テクニカル アップグレード のサポート (のみ) |  
 
-Windows 10 リリース情報については、「Windows ライフサイクル ファクト シート [」を参照してください](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
+リリースWindows 10については、「ライフサイクル ファクト[シートWindowsを参照してください](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>展開イメージのサービスと管理 (DISM) の更新プログラム
 
-Windows 10 (Enterprise、Pro、および Home エディション)、Windows Server 2019、および Windows Server 2016 OS インストール イメージを最新のウイルス対策およびマルウェア対策更新プログラムで更新することをお勧めします。 OS のインストール イメージを最新の状態に保つことは、保護のギャップを回避するのに役立ちます。 
+Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 2019、Windows Server 2016 OS インストール イメージを最新のウイルス対策およびマルウェア対策更新プログラムで更新することをお勧めします。 OS のインストール イメージを最新の状態に保つことは、保護のギャップを回避するのに役立ちます。 
 
-詳細については、「Microsoft Defender update for Windows オペレーティング システム [インストール イメージ」を参照してください](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
+詳細については、「Microsoft Defender update for Windows オペレーティング システムのインストール[イメージ」を参照してください](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
 <summary>1.1.2105.01</summary>
@@ -560,7 +560,7 @@ Windows 10 (Enterprise、Pro、および Home エディション)、Windows Serv
 - なし
 
 ### <a name="additional-information"></a>追加情報
-- Microsoft Defender ウイルス対策署名の更新  
+- 更新されたMicrosoft Defender ウイルス対策署名  
 <br/>
 </details><details>
 <summary>1.1.2011.01</summary>
@@ -588,7 +588,7 @@ Windows 10 (Enterprise、Pro、および Home エディション)、Windows Serv
 - なし
 
 ### <a name="additional-information"></a>追加情報
-- Windows 10 RS1 以降の OS インストール イメージのサポートが追加されました。  
+- RS1 以降の OS Windows 10インストール イメージのサポートが追加されました。  
 <br/>
 </details>
 
@@ -596,7 +596,7 @@ Windows 10 (Enterprise、Pro、および Home エディション)、Windows Serv
 
 | 記事 | 説明  |
 |:---|:---|
-|[Windows オペレーティング システムのインストール イメージ用の Microsoft Defender 更新プログラム](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | OS インストール イメージ (WIM ファイルと VHD ファイル) のマルウェア対策更新プログラム パッケージを確認します。 Windows 10 (Enterprise、Pro、および Home エディション)、Windows Server 2019、および Windows Server 2016 インストール イメージの Microsoft Defender ウイルス対策更新プログラムを取得します。  |
+|[Microsoft Defender のオペレーティング システムインストール イメージWindows更新プログラム](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | OS インストール イメージ (WIM ファイルと VHD ファイル) のマルウェア対策更新プログラム パッケージを確認します。 Microsoft Defender ウイルス対策 (Enterprise Windows 10、Pro、およびホーム エディション)、Windows Server 2019、およびインストール イメージWindows Server 2016更新プログラムを取得します。  |
 |[保護更新プログラムのダウンロードと適用方法を管理する](manage-protection-updates-microsoft-defender-antivirus.md) | 保護更新プログラムは、多くのソースを介して配信できます。 |
 |[保護更新プログラムをダウンロードして適用する場合の管理](manage-protection-update-schedule-microsoft-defender-antivirus.md) | 保護更新プログラムをダウンロードするスケジュールを設定できます。 |
 |[最新のエンドポイントの更新プログラムを管理する](manage-outdated-endpoints-microsoft-defender-antivirus.md) | エンドポイントが更新またはスケジュールされたスキャンを見逃した場合は、ユーザーが次回サインインする場合に、強制的に更新またはスキャンを実行できます。 |

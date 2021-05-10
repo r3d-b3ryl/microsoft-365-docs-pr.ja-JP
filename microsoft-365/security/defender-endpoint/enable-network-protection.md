@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a2bc36f9d3a3e9179f07662da8d97f4c55e72a24
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769000"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302054"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -43,7 +43,7 @@ ms.locfileid: "51769000"
 
 2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択する
 
-3. 入れ子になったメニューから **ソフトウェア** ポリシーへの移動 Microsoft  >  **Windows Defender Windows Defender**  >    >    >  **Exploit Guard**  >  **ネットワーク保護**
+3. 入れ子になったメニューを [**ソフトウェア** ポリシー] Microsoft ポリシー マネージャー Windows Defender  >    >    >    >  **移動します。** 
 
 4. デバイス上のネットワーク保護の現在の状態を表示するには **、[EnableNetworkProtection]** を選択します。
 
@@ -59,12 +59,12 @@ ms.locfileid: "51769000"
 
 * [PowerShell](#powershell)
 * [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
-* [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+* [Microsoft エンドポイント マネージャー / Intune](#microsoft-endpoint-manager-formerly-intune)
 * [グループ ポリシー](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
 
-1. [ **スタート] メニューに「powershell」** と入力し、[管理者 **Windows PowerShellを右** クリックし、[管理者として **実行] を選択します。**
+1. [**スタート] メニューに「powershell」** と入力し、[管理者 **Windows PowerShellを右** クリックし、[管理者として **実行] を選択します。**
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -83,13 +83,13 @@ ms.locfileid: "51769000"
 
 [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)構成サービス プロバイダー (CSP) を使用して、ネットワーク保護を有効または無効にするか、監査モードを有効にします。
 
-### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (旧 Intune)
+### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft エンドポイント マネージャー (以前は Intune)
 
-1. Microsoft Endpoint Manager 管理センターにサインインします (https://endpoint.microsoft.com)
+1. 管理センターにサインインMicrosoft エンドポイント マネージャー (https://endpoint.microsoft.com)
 
 2. エンドポイント保護構成プロファイル [の作成または編集](/mem/intune/protect/endpoint-protection-configure)
 
-3. プロファイル **フローの [構成** 設定] で **、[Microsoft Defender Exploit Guard Network** filtering Network protection Enable or Audit  >    >    >   only] に **移動します。**
+3. [**プロファイル フロー設定** 構成] で、[ネットワーク フィルターネットワークMicrosoft Defender Exploit Guard有効または監査のみ]  >    >    >  に **移動します。**
 
 ### <a name="group-policy"></a>グループ ポリシー
 
@@ -101,17 +101,17 @@ ms.locfileid: "51769000"
 
     ドメインに参加しているグループ ポリシー管理コンピューターで、グループ [](https://technet.microsoft.com/library/cc731212.aspx)ポリシー管理コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に移動 **し、[** 管理用 **テンプレート] を選択します**。
+2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを Windows コンポーネント **の Microsoft** Defender Antivirus  >  **Windows Defender** Exploit  >  **Guard ネットワーク保護に**  >  **展開します**。
+3. ツリーを展開して **、Exploit Guard ネットワークWindows保護**  >  **Microsoft Defender ウイルス対策Windows Defender**  >  **コンポーネント**  >  **を展開します**。
 
 > [!NOTE]
-> 以前のバージョンの Windows では、グループ ポリシー パスに "Microsoft Defender ウイルス対策" の代わりにWindows Defenderウイルス対策プログラムが表示される場合があります。
+> 以前のバージョンの Windowsでは、グループ ポリシー パスは "Windows Defender ウイルス対策" ではなく "Microsoft Defender ウイルス対策" と表示Microsoft Defender ウイルス対策。
 
 4. [ユーザーとアプリによる **危険** な Web サイトへのアクセスを防止する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [オプション] セクションで、次のいずれかのオプションを指定する必要があります。
     * **ブロック** - ユーザーが悪意のある IP アドレスとドメインにアクセスできない
     * **無効 (既定)** - ネットワーク保護機能が機能しません。 ユーザーが悪意のあるドメインにアクセスできない
-    * **監査モード** - ユーザーが悪意のある IP アドレスまたはドメインにアクセスすると、Windows イベント ログにイベントが記録されます。 ただし、ユーザーはアドレスへのアクセスをブロックされません。
+    * **監査モード**- ユーザーが悪意のある IP アドレスまたはドメインにアクセスした場合、イベントはイベント ログWindowsされます。 ただし、ユーザーはアドレスへのアクセスをブロックされません。
 
 > [!IMPORTANT]
 > ネットワーク保護を完全に有効にするには、[グループ ポリシー] オプションを[有効]に設定し、[オプション] ドロップダウン メニューの [ブロック] を選択する必要があります。
