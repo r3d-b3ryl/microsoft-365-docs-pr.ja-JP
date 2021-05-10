@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b13e310d08cc158ff70861c18c7ea47ac82fcfa7
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6e2f347b2ff2d82365fa9271d0553653650c3db3
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545022"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297862"
 ---
-# <a name="contact-support-for-pitcairn-islands"></a><span data-ttu-id="3056d-103">ピトケアン諸島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="3056d-103">Contact support for Pitcairn Islands</span></span>
+# <a name="contact-support-for-pitcairn-islands"></a><span data-ttu-id="07032-103">ピトケアン諸島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="07032-103">Contact support for Pitcairn Islands</span></span>
 
-<span data-ttu-id="3056d-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="3056d-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="07032-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="07032-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="3056d-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="3056d-105">Phone number</span></span>
-<span data-ttu-id="3056d-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="3056d-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="07032-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="07032-105">Phone number</span></span>
+<span data-ttu-id="07032-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="07032-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="3056d-107">時間</span><span class="sxs-lookup"><span data-stu-id="3056d-107">Hours</span></span>
-<span data-ttu-id="3056d-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="3056d-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="07032-107">時間</span><span class="sxs-lookup"><span data-stu-id="07032-107">Hours</span></span>
+<span data-ttu-id="07032-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="07032-108">Billing Support:</span></span>
 
-<span data-ttu-id="3056d-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="3056d-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="07032-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="07032-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="3056d-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="3056d-110">Technical Support:</span></span>
+<span data-ttu-id="07032-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="07032-110">Technical Support:</span></span>
 
-<span data-ttu-id="3056d-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="3056d-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="07032-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="07032-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="3056d-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="3056d-112">International call charges apply</span></span>
+<span data-ttu-id="07032-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="07032-112">International call charges apply</span></span>
