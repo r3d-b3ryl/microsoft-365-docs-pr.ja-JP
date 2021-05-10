@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5e0278ee3ffdbc9c761f319db9b42d4a9c43548d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: be090977141c1b0be8c863b6a1f4de14fccb10c6
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545982"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295869"
 ---
 # <a name="contact-support-for-maldives"></a>モルディブのサポートに問い合わせ
 
-[別の国または地域を検索します](../contact-support-for-business-products.md)。
+[別の国または地域を検索します](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 +1 312 843 5148

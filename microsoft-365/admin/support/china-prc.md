@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: af17314f94d7e6085f3d579870ded5f85058856e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a881ff4f5ed844282b36a573639a253c07bea2f4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548118"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296373"
 ---
 # <a name="contact-support-for-china-prc"></a>中国 (PRC) のサポートに問い合わせ
 
-[別の国または地域を検索します](../contact-support-for-business-products.md)。
+[別の国または地域を検索します](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 800 988 0365
@@ -44,7 +44,7 @@ ms.locfileid: "50548118"
 ## <a name="follow-us-on-wechat"></a>WeChat でフォローしてください
 ![WeChat QR コード](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
-## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>21Vianet Office 365 のサポートに問い合わせ
+## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>21Vianet Office 365サポートへの問い合わせ
 ## <a name="phone-number"></a>電話番号
 +86 4000 890 365
 

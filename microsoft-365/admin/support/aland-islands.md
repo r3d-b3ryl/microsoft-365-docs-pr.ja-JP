@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dc43559640aeeb6beb089a4212a202ba4b41ff06
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e3481b8adab6e5c777f6ba3eb4ad46a92a838a2d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549138"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296685"
 ---
 # <a name="contact-support-for-aland-islands"></a>Aland Islands のサポートに問い合わせ
 
-[別の国または地域を検索します](../contact-support-for-business-products.md)。
+[別の国または地域を検索します](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 08009 8462

@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止リファレンス 資料
-ms.openlocfilehash: a94dde0bba3fdfc869746f51687ed7709a96639a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114403"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296770"
 ---
 # <a name="data-loss-prevention-reference"></a>データ損失防止リファレンス
  
@@ -385,7 +385,7 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーで秘密度ラベルを条件として使用する
 
-DLP ポリシーの条件としての秘密度ラベルは現在プレビュー中です。 [詳細情報を参照してください](./dlp-sensitivity-label-as-condition.md)。
+[DLP ポリシーの](./dlp-sensitivity-label-as-condition.md) 条件として Sensitivity ラベルを使用する方法について説明します。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>この機能と他の機能の関係
 

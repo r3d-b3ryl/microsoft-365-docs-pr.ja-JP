@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 41ff35009ea33b5011d0bf2e97c210a9435da531
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: b9485364997c6ef824516e4a8fa1b576c33bbbee
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547362"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296205"
 ---
 # <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>フランス南方地域 (南極地域) の連絡先のサポート
 
-[別の国または地域を検索します](../contact-support-for-business-products.md)。
+[別の国または地域を検索します](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 +1 312 843 5147

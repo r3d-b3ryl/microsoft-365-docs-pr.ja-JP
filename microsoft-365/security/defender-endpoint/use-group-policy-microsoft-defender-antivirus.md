@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 04/13/2021
+ms.date: 05/07/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 8db14b016491ac10872f29f04b8166e548d6c63b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275338"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296733"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策
 
@@ -33,6 +33,8 @@ ms.locfileid: "52275338"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 グループ ポリシーを[使用して](/windows/win32/srvnodes/group-policy)、エンドポイントのMicrosoft Defender ウイルス対策管理できます。
+
+## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>グループ Microsoft Defender ウイルス対策を使用して構成する
 
 一般に、次の手順を使用して、グループ ポリシー設定を構成Microsoft Defender ウイルス対策変更できます。
 
@@ -48,9 +50,14 @@ ms.locfileid: "52275338"
 
 6. [通常と同じ方法で更新された GPO を展開します](/windows/win32/srvnodes/group-policy)。 
 
-このトピックの次の表に、Windows 10 バージョン 1703 で使用できるグループ ポリシー設定の一覧を示し、このドキュメント ライブラリの該当するトピック (該当する場合) へのリンクを示します。
+## <a name="group-policy-settings-and-resources"></a>グループ ポリシーの設定とリソース
 
-| Location | Setting | 記事 |
+このトピックの次の表に、Windows 10 バージョン 1703 で使用できるグループ ポリシー設定の一覧を示し、このドキュメント ライブラリの該当するトピック (該当する場合) へのリンクを示します。 
+
+> [!TIP]
+> [2020 年 5 設定更新プログラム (2004)](https://www.microsoft.com/download/101451)Windows 10グループ ポリシー のリファレンス スプレッドシートをダウンロードします。 このスプレッドシートには、Windows 10 2020 年 5 月更新プログラム (2004) 用に提供される管理用テンプレート ファイルに含まれるコンピューターとユーザー構成のポリシー設定が一覧表示されます。 グループ ポリシー オブジェクトを編集するときに、これらのポリシー設定を構成できます。
+
+| 場所 | Setting | 記事 |
 |:---|:---|:---|
 | クライアント インターフェイス | ヘッドレス UI モードを有効にする | [ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
 | クライアント インターフェイス | アクションを実行する必要がある場合にクライアントに追加のテキストを表示する | [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md) |
@@ -61,14 +68,14 @@ ms.locfileid: "52275338"
 | 除外 | プロセスの除外 | [カスタム スキャンで除外を構成Microsoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md) | 
 | 除外 | 自動除外をオフにする | [カスタム スキャンで除外を構成Microsoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md) |
 | MAPS | '一目でブロックする' 機能を構成する | [一目でブロックを有効にする](configure-block-at-first-sight-microsoft-defender-antivirus.md) |
-| MAPS | Microsoft MAPS に参加する | [クラウドによる保護を有効にする](enable-cloud-protection-microsoft-defender-antivirus.md) |
-| MAPS | 詳細な分析が必要な場合にファイル サンプルを送信する | [クラウドによる保護を有効にする](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| MAPS | Microsoft MAPS に参加する | [クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| MAPS | 詳細な分析が必要な場合にファイル サンプルを送信する | [クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | MAPS | Microsoft MAPS へのレポート用にローカル設定の上書きを構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | MpEngine | 拡張クラウド チェックの構成 | [クラウド ブロックのタイムアウト期間の構成](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
 | MpEngine | クラウド保護レベルの選択 | [クラウドによる保護レベルを指定する](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
-| ネットワーク検査システム | ネットワーク トラフィック検査用の追加の定義セットを指定する | 関連性がなくなった |
-| ネットワーク検査システム | 定義の削除を有効にする | 関連性がなくなった |
-| ネットワーク検査システム | プロトコル認識を有効にする | 関連性がなくなった |
+| ネットワーク検査システム | ネットワーク トラフィック検査用の追加の定義セットを指定する | [ネットワーク トラフィック検査用の追加の定義セットを指定する](specify-additional-definitions-network-traffic-inspection-mdav.md) |
+| ネットワーク検査システム | 定義の削除を有効にする | [定義の削除を構成する](turn-on-definition-retirement.md)  |
+| ネットワーク検査システム | プロトコル認識を有効にする | [プロトコル認識を有効にする](turn-on-protocol-recognition.md)  |
 | 検疫する | 検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 検疫する | 検疫フォルダーからのアイテムの削除を構成する | [スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md) |
 | リアルタイム保護 | コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -144,8 +151,7 @@ ms.locfileid: "52275338"
 | Threats | 検出時に既定のアクションを実行しない脅威アラート レベルを指定する | [スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md) |
 | Threats | 検出時に既定のアクションを実行しない脅威を指定する | [スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md) |
 
-
-## <a name="related-articles"></a>関連記事
+## <a name="see-also"></a>関連項目
 
 - [管理および構成ツールのリファレンス トピック](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2527389634cda9912f45ecdcd3213f7d987b7bb8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221873"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296697"
 ---
 # <a name="what-is-a-domain"></a>ドメインとは
 
@@ -57,6 +57,6 @@ Microsoft 365 を使用して新しいドメインを購入します。すべて
   
 ## <a name="feeling-stuck"></a>困ったときは
 
-Microsoft サポートに連絡する - [ドメインの設定についてサポートを受ける](../contact-support-for-business-products.md)
+Microsoft サポートに連絡する - [ドメインの設定についてサポートを受ける](../../business-video/get-help-support.md)
   
 

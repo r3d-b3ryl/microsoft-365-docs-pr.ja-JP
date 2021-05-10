@@ -58,7 +58,7 @@
               href: m365d-pilot-simulate.md
             - name: 閉じて要約する
               href: m365d-pilot-close.md
-    - name: 作業の開始
+    - name: 概要
       items:
         - name: 概要
           href: get-started.md
@@ -94,12 +94,14 @@
               href: manage-incidents.md
             - name: インシデント対応
               items:
-                - name: インシデントを分析する
+                - name: インシデントを調査する
                   href: investigate-incidents.md
-                - name: アラートを分析する
+                - name: アラートを調査する
                   href: investigate-alerts.md
-                - name: ユーザーを分析する
+                - name: ユーザーを調査する
                   href: investigate-users.md
+                - name: インシデント対応プレイブック
+                  href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
                 - name: 最初のインシデントに対応する
                   items:
                     - name: はじめに
