@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender でのインシデントの管理
+title: Defender でインシデントをMicrosoft 365する
 description: 状態の割り当てと更新を行う方法について説明します。
 keywords: インシデント、インシデント、分析、応答、アラート、相関アラート、割り当て、更新、状態、管理、分類、microsoft、365、m365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939756"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300003"
 ---
-# <a name="manage-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの管理
+# <a name="manage-incidents-in-microsoft-365-defender"></a>Defender でインシデントをMicrosoft 365する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51939756"
 
 インシデント管理は、脅威を確実に含め、対処する上で重要です。
 
-Microsoft 365 セキュリティ センター (& >) のクイック 起動時に、インシデント とアラートのインシデントを[管理 security.microsoft.com。](https://security.microsoft.com)  次に例を示します。
+インシデント &**アラート>** インシデントを管理するには、Microsoft 365 セキュリティ センター (security.microsoft.com) を [security.microsoft.com。](https://security.microsoft.com) 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例":::
 
@@ -65,7 +65,7 @@ Microsoft 365 セキュリティ センター (& >) のクイック 起動時に
 
 ## <a name="edit-the-incident-name"></a>インシデント名を編集する
 
-Microsoft 365 Defender は、影響を受けるエンドポイントの数、影響を受けるユーザー、検出元、カテゴリなどのアラート属性に基づいて名前を自動的に割り当てる。 これにより、インシデントの範囲をすばやく理解できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
+Microsoft 365Defender は、影響を受けるエンドポイントの数、影響を受けるユーザー、検出ソース、カテゴリなどのアラート属性に基づいて名前を自動的に割り当てる。 これにより、インシデントの範囲をすばやく理解できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
 
 インシデント名は、[インシデントの管理] ウィンドウの **[インシデント名** ] フィールド **から編集** できます。
 
@@ -98,8 +98,16 @@ Microsoft 365 Defender は、影響を受けるエンドポイントの数、影
 
 [コメント] フィールドを使用して、インシデントに複数のコメント **を追加** できます。 各コメントは、インシデントの履歴イベントに追加されます。 インシデントのコメントと履歴は、[概要] ページの[コメントと履歴] リンク **から確認** できます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="next-steps"></a>次の手順
+
+新しいインシデントについては、調査を開始 [します](investigate-incidents.md)。
+
+インプロセス インシデントの場合は、調査を続行 [します](investigate-incidents.md)。
+
+解決されたインシデントの場合は、インシデント後 [のレビューを実行します](first-incident-post.md)。
+
+## <a name="see-also"></a>関連項目
 
 - [インシデントの概要](incidents-overview.md)
 - [インシデントの優先度設定](incident-queue.md)
-- [インシデントの分析](investigate-incidents.md)
+- [インシデントの調査](investigate-incidents.md)

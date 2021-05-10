@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e2e29015d4cb5e04510577118eb847b9b596a6c5
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114284"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300015"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender のインシデント
 
@@ -62,7 +62,7 @@ Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご�
 - 攻撃の範囲 (影響を受けたデバイス、ユーザー、メールボックスの数など)。 
 - 攻撃に関連付けられているすべてのデータ。
 
-有効[にした場合](m365d-enable.md)、Microsoft 365 Defender は自動化と人工知能を通じてアラートを自動的に調査および解決できます。 また、追加の修復手順を実行して攻撃を解決することもできます。 
+有効[にした場合](m365d-enable.md)、Microsoft 365 Defender は自動化[と](m365d-autoir.md)人工知能を通じてアラートを自動的に調査および解決できます。 また、追加の修復手順を実行して攻撃を解決することもできます。 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>セキュリティ センターでのインシデントMicrosoft 365アラート
 
@@ -94,11 +94,15 @@ Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご�
 
 - 調査
 
-  インシデント内のアラートによってトリガーされる、すべての自動調査。
+  インシデント内 [のアラートによって](m365d-autoir.md) トリガーされる、すべての自動調査。
 
 - 証拠と対応
 
   インシデント内のアラートでサポートされているイベントと疑わしいエンティティすべて。
+
+- Graph (プレビューで)
+
+  組織内の影響を受け取った資産へのアラートの接続を示す図。
 
 インシデントとそのデータと、セキュリティ センター内のインシデントのタブとのMicrosoft 365します。
 
@@ -115,7 +119,7 @@ Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご�
 - [インシデント キューの](incident-queue.md) フィルター処理と並べ替えを通じて、優先度の高いインシデントを特定するトリアージ。
 - [タイトルを](manage-incidents.md) 変更し、アナリストに割り当て、タグとコメントを追加してインシデントを管理します。
 
-1. インシデントごとに、攻撃とアラート [の分析を開始します](investigate-incidents.md)。
+1. インシデントごとに、攻撃とアラート [の調査と分析を開始します](investigate-incidents.md)。
  
    a. インシデントの概要を表示して、インシデントの範囲と重大度、および影響を受けるエンティティ ([概要] タブ) **を理解** します。
 
@@ -123,7 +127,7 @@ Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご�
 
    c. 必要に応じて、影響を受け取ったデバイス、ユーザー、およびメールボックス([デバイス]、[ユーザー]、および [メールボックス] タブ) に関する **情報を収集** します。
 
-   d. Defender が一部Microsoft 365を自動的に解決した方法 ([調査] タブ)**を参照** してください。
+   d. Defender が一部Microsoft 365自動的に解決した方法 [([](m365d-autoir.md)調査] タブ)**を参照** してください。
    
    e. 必要に応じて、インシデントのデータ セットの情報を使用して詳細を確認します ([証拠と応答] **タブ** )。
 
@@ -149,7 +153,7 @@ Defender のセキュリティ操作の例をMicrosoft 365します。
 毎日のタスクには、次のものが含まれます。
 
 - [インシデントの](manage-incidents.md) 管理
-- 自動調査 [と応答 (AIR)](m365d-action-center.md) アクションの確認
+- アクション センター [での自動調査と応答 (AIR)](m365d-action-center.md) アクションの確認
 - 最新の脅威分析 [の確認](threat-analytics.md)
 - [インシデントへの](investigate-incidents.md) 対応
 
@@ -167,8 +171,19 @@ Defender のセキュリティ操作の例をMicrosoft 365します。
 
 ## <a name="next-steps"></a>次の手順
 
-[インシデント] ページの **インシデント キュー** には、最新のインシデントが一覧表示されます。 ここから、以下の操作を行うことができます。
+**セキュリティ分析とインシデント** 対応に関する情報が必要な場合は、次の情報を参照してください。
 
-- 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 
-- [インシデント管理ワークフローの](manage-incidents.md)名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。
-- インシデントの [分析](investigate-incidents.md) を実行します。
+- Microsoft 365[](first-incident-overview.md)セキュリティ センターの分析、修復、インシデント後の一般的なプロセスのガイド付きツアーについては、「最初のインシデントに対応する」のチュートリアルを参照してください。攻撃の例を示します。
+
+**セキュリティ分析とインシデント** 対応に関する経験がある場合:
+
+- セキュリティ センターの [インシデント]ページからインシデント キュー Microsoft 365開始します。 ここから、以下の操作を行うことができます。
+
+  - 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 
+
+  - [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。
+
+  - インシデント [の調査](investigate-incidents.md) を実行します。
+
+- フィッシング攻撃 [、パスワード スプレー攻撃](https://docs.microsoft.com/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。
+

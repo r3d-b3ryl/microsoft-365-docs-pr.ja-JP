@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5859adec666fc8cd957ab0b199a1bd600279288f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205403"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298030"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 
@@ -29,25 +29,25 @@ ms.locfileid: "51205403"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスのない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、この記事に記載されているテクニカル サポート リソースは、EOP に問題がある場合の回答を見つけるのに役立ちます。 Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、この記事に記載されているテクニカル サポート リソースは、EOP に問題がある場合の回答を見つけるのに役立ちます。 Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
 
 ## <a name="self-support-options"></a>サポート サービス オプション
 
-ログインすると、Microsoft 365 管理センターは組織のサービスの状態に関する情報を提供します。 また、[サービス正常性] セクションには、サービスの現在の状態、中断と停止に関する詳細、および計画されたメンテナンス時間の一覧が表示されます。 Microsoft 365 管理センターには、既知の問題と予想される解決策に関する情報も提供されています。 サービス全体のイベントによる影響を受けている場合は、通信アラートが (通常はベルのアイコンと共に) 表示されます。 その項目を参照して、適切に対応することをお勧めします。 サービス正常性領域の詳細については、「サービスの正常性と継続 [性」を参照してください](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 ここに示すツール、フォーラム、コミュニティ サイトを使用して、自分でさらにヘルプを見つけ出す可能性があります。
+ログインすると、Microsoft 365管理センターは組織のサービスの状態に関する情報を提供します。 また、[サービス正常性] セクションには、サービスの現在の状態、中断と停止に関する詳細、および計画されたメンテナンス時間の一覧が表示されます。 管理者Microsoft 365、既知の問題と予想される解決策に関する情報も提供します。 サービス全体のイベントによる影響を受けている場合は、通信アラートが (通常はベルのアイコンと共に) 表示されます。 その項目を参照して、適切に対応することをお勧めします。 サービス正常性領域の詳細については、「サービスの正常性と継続 [性」を参照してください](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 ここに示すツール、フォーラム、コミュニティ サイトを使用して、自分でさらにヘルプを見つけ出す可能性があります。
 
 [Exchange Online Protection の製品概要](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](../../admin/contact-support-for-business-products.md)
+[ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](../../business-video/get-help-support.md)
 
-[Microsoft 365 コミュニティ](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365コミュニティ](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft サポートおよび回復アシスタント (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft サポート/回復アシスタント (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [メール フローのトラブルシューティング ツール](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Microsoft のアシスト サポート
 
-Microsoft のヘルプは、Microsoft 365 管理センター内で新しいサービス要求を開始するか、電話で呼び出すことによって取得できます。 Premier Support サブスクライバーには、追加のサポート オプションがあります。
+Microsoft からヘルプを受け取る方法は、管理センター内で新しいサービス要求を開始するかMicrosoft 365電話で呼び出すことによって行います。 Premier Support サブスクライバーには、追加のサポート オプションがあります。
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Microsoft プレミア サポート サブスクライバーのサポート
 
@@ -57,7 +57,7 @@ EOP のユーザーで、Microsoft プレミア サポート契約もしてい�
 
 ### <a name="ask-for-help-on-the-web"></a>Web で支援を依頼する
 
-1. Microsoft 365 管理センターにログインします。
+1. 管理者センターにMicrosoft 365します。
 
 2. **[サポート]** \> **[カスタマー サポートを要求する]** \> **[新しいサービス リクエスト]** の順に移動します。
 
@@ -65,7 +65,7 @@ EOP のユーザーで、Microsoft プレミア サポート契約もしてい�
 
 ### <a name="ask-for-help-on-the-telephone"></a>電話で支援を依頼する
 
-1. Microsoft 365 管理センターにログインします。
+1. 管理者センターにMicrosoft 365します。
 
 2. 一般的な製品の問題については **、「Support** \> **Ask for Customer Support** Call \> **technical support」を参照してください**。
 
