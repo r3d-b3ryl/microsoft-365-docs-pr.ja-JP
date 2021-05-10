@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: ビジネス向けサービスへの移行に関する要件と考慮事項Microsoft 365説明します。
-ms.openlocfilehash: ba97253beed1544d8f993a462559037a0a1a4281
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244505"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297034"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>ビジネス向けMicrosoft 365のセットアップを計画する
 
@@ -56,7 +56,7 @@ ms.locfileid: "52244505"
   
 セットアップ ウィザードを完了しない場合は、管理センターのセットアップからいつでもセットアップ [タスクを完了](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **できます**。 ここから、別のメール サービスからメールと連絡先を移行したり、管理者アカウントのドメインを変更したり、請求情報を管理したり、ユーザーを追加または削除したり、パスワードをリセットしたり、その他のビジネス機能を実行できます。 セットアップ ウィザードと [セットアップ] ページの違いの詳細については、「セットアップ ウィザードとセットアップ ページMicrosoft 365違い」を[参照してください](o365-setup-wizard-and-setup-page.md)。
 
-お困りの場合は、Microsoft にご連絡ください。[お役に立つことができれば幸いです。](../contact-support-for-business-products.md)
+お困りの場合は、Microsoft にご連絡ください。[お役に立つことができれば幸いです。](../../business-video/get-help-support.md)
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>セットアップ ウィザードを使用しない場合 Active Directory 同期とハイブリッド環境
 
@@ -138,7 +138,7 @@ Microsoft 365、小規模組織、および企業向けクラウド ストレー
 - **従業員が 50 名未満の場合:**
 
   - **ヘルプを求め、お電話します**。 アプリを購入Microsoft 365管理センターにアクセスできます (セットアップを実行して管理センターにアクセスする必要があります)。 管理センターの下部で、[ヘルプが必要] **を選択します。** 問題を説明し、お客様に電話します。 
-  - **ご質問 [Microsoft 365、ビジネス サポートに問い](../contact-support-for-business-products.md)合わせください**。 We're here to help! 
+  - **ご質問 [Microsoft 365、ビジネス サポートに問い](../../business-video/get-help-support.md)合わせください**。 We're here to help! 
   - **[Microsoft パートナー](https://go.microsoft.com/fwlink/?linkid=391089)の採用をご検討ください** 。 時間が短い場合や、高度な要件 (何千ものファイルを Microsoft 365 クラウド ストレージに移動したり、他のソフトウェアと統合したり) がある場合は、経験豊富なパートナーが大きな助けになります。 
 
 - **50 名以上の従業員がいる場合** 、 [FastTrack オンボーディング センター](https://go.microsoft.com/fwlink/?LinkId=517115)が展開をサポートします。

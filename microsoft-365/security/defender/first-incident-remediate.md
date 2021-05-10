@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2fe6c5b1b0feea2163c0a2bcc871921a885abb85
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ed597c55a646eb00d6e6d256c287b22c119f8148
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114991"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297346"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>手順 2. 最初のインシデントを修復する
 
@@ -36,7 +36,7 @@ ms.locfileid: "52114991"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365Defender は、検出および分析機能を提供するだけでなく、マルウェアの格納と根絶も提供します。 Containment には、攻撃の影響を軽減する手順が含まれていますが、根絶によって、攻撃者のアクティビティのすべての痕跡がネットワークから削除されます。  Microsoft 365Defender には、オペレーティング システムと攻撃の種類に応じて自動修復するように構成できる修復アクションがいくつか用意されています。
+Microsoft 365Defender は、検出および分析機能を提供するだけでなく、マルウェアの格納と根絶も提供します。 Containment には、攻撃の影響を軽減する手順が含まれていますが、根絶によって、攻撃者のアクティビティのすべての痕跡がネットワークから削除されます。  Microsoft 365Defender には、オペレーティング システムと攻撃の[](m365d-autoir.md)種類に応じて自動修復するように構成できる修復アクションがいくつか用意されています。
 
 Microsoft 365Defender には、アナリストが手動で開始できる修復アクションがいくつか用意されています。 アクションは、デバイス上のアクションとファイルのアクションという 2 つのカテゴリに分けられます。 一部のアクションを使用して脅威を直ちに停止し、他のアクションはさらに法医学分析を支援します。
 
@@ -98,5 +98,5 @@ Playbooks は、Power Automateを使用して、特定の条件がトリガー�
 ## <a name="see-also"></a>関連項目
 
 - [インシデントの概要](incidents-overview.md)
-- [インシデントを分析する](investigate-incidents.md)
+- [インシデントの調査](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)

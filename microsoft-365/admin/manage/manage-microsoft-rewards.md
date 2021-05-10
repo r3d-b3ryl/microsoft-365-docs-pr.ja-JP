@@ -1,5 +1,5 @@
 ---
-title: Microsoft リワードの管理
+title: Microsoft Rewards を管理する
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 description: 個人用 Microsoft アカウントを持つユーザーは、リンク AAD with Rewards 機能が有効になっている場合、仕事の検索に関連して Microsoft リワード ポイントを獲得できます。
-ms.openlocfilehash: 7ae88c9fd355251c47747ef8460bab1f0b30bbaa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929492"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297070"
 ---
-# <a name="manage-microsoft-rewards"></a>Microsoft リワードの管理
+# <a name="manage-microsoft-rewards"></a>Microsoft Rewards を管理する
 
-個人用 Microsoft アカウントを持つ [](https://www.microsoft.com/rewards)ユーザーは、リワード機能を使用して Microsoft Azure *Active Directory (Azure AD)* をリンクする機能が有効になっている場合、仕事の検索に関連して Microsoft リワード ポイントを獲得できます。
+個人用 Microsoft アカウントを持つ [](https://www.microsoft.com/rewards)ユーザーは、リワード機能を使用したリンク *Microsoft Azure Active Directory (Azure AD)* が有効になっている場合、仕事の検索に関連して Microsoft リワード ポイントを獲得できます。
 
 ユーザーがこの機能をオプトアウトしない限り、個人用の Microsoft アカウントは職場の Azure ADされます。 Microsoft Rewards は、検索が発生した情報を受信してログに記録しますが、検索の内容に関する情報は受け取らない。 組織からのクエリの内容は、この機能の一部として Microsoft Rewards と共有されない。
 

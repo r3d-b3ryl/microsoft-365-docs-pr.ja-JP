@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 51261d0adfc9821d9e02a856cfb9890ee2e4e1cc
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: dfda4cefba8dda11e91d6175634e7050cd5c9e14
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544086"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297610"
 ---
 # <a name="contact-support-for-svalbard"></a>Sbarbard のサポートに問い合わせ
 
-[別の国または地域を検索します](../contact-support-for-business-products.md)。
+[別の国または地域を検索します](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 +1 312 843 5149

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 88001dc7126a55539213d4c560127d573a09f4bd
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 76bead8fd855e4119db6297d2ab1a3d08d64a48c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114804"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297166"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>最初のインシデントのセキュリティ態勢を準備する
 
@@ -53,7 +53,7 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 
 デバイスリスクは、そのデバイスのユーザーがアクセスできるリソースに直接影響します。 特定の条件に基づくリソースへのアクセス拒否は、ゼロ信頼の主なテーマであり、信頼レベルの基準を決定するためにMicrosoft 365 Defender が必要な情報を提供します。 たとえば、Microsoft 365 Defender は[脅威と脆弱性の管理] ページを通じてデバイスのソフトウェア バージョン レベルを提供し、条件付きアクセス ポリシーでは古いバージョンまたは脆弱なバージョンのデバイスを制限します。
 
-自動化は、ゼロトラスト環境を実装して維持する上で重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数も減らします。 Microsoft 365 Defender のコンポーネントは、修復アクション (Microsoft 365 セキュリティ センターでのインシデントの調査と呼ばれる)、通知アクション[、ServiceNow](https://microsoft.service-now.com/sp/)などのサポート チケットの作成など、自動化できます。
+自動化は、ゼロトラスト環境を実装して維持する上で重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数も減らします。 Microsoft 365 Defender のコンポーネントは、修復アクション[(Microsoft 365](m365d-autoir.md)セキュリティ センターでのインシデントの調査と呼ばれる)、通知アクション[、ServiceNow](https://microsoft.service-now.com/sp/)などのサポート チケットの作成など、自動化できます。
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2. 組織のセキュリティ体制を決定する
 
@@ -92,5 +92,5 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 ## <a name="see-also"></a>関連項目
 
 - [インシデントの概要](incidents-overview.md)
-- [インシデントを分析する](investigate-incidents.md)
+- [インシデントの調査](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)

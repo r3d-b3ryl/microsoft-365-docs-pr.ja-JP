@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学習できます。
-ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920194"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297298"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50920194"
 
 ::: moniker-end
 
-ユーザーは、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てできます。 セルフサービス購入の支払いは、お客様が行う責任があります。 サブスクリプションは、Microsoft 365 管理センター (microsoft 365 管理センター)<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">で admin.microsoft.com。</a>
+ユーザーは、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てできます。 セルフサービス購入の支払いは、お客様が行う責任があります。 サブスクリプションは、管理センターの Microsoft 365で管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
 
 管理者は、購入したサブスクリプションに対する読み取り専用ビューを持っています。 購入したサブスクリプションごとに、製品、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーを確認できます。
 
@@ -107,4 +107,4 @@ ms.locfileid: "50920194"
 
 セルフサービス購入に関する一般的な質問については、「セルフサービス購入に関する [よく寄せられる質問」を参照してください](self-service-purchase-faq.md)。
 
-セルフサービス購入に関するご質問やサポートが必要な場合は、サポート [にお問い合わせください](../../admin/contact-support-for-business-products.md)。
+セルフサービス購入に関するご質問やサポートが必要な場合は、サポート [にお問い合わせください](../../business-video/get-help-support.md)。

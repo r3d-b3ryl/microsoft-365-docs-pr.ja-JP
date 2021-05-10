@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 description: サブスクリプション内のファイル ストレージを追加および削減Microsoft 365します。 追加のファイル ストレージを使用すると、オンラインおよびサーバーにSharePointコンテンツをOneDrive。
 ms.date: 04/02/2021
-ms.openlocfilehash: 576efee4ba0e1ad8fb43b3d8475d6c3a949ee1e8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107390"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293681"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>サブスクリプションに容量を追加する
 
@@ -38,7 +38,7 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 > [!NOTE]
 > ボリューム ライセンスまたは CSP を使用してサブスクリプションを購入した場合、Microsoftから直接組織Office 365追加Storageを購入することはできません。 サポートが必要な場合は、担当者またはパートナーにお問い合わせください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 この記事のタスクを実行するにはSharePointまたは管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
@@ -71,7 +71,7 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 ## <a name="increase-or-decrease-storage"></a>容量を増やす、または減らす
 
-**Office 365 Extra File Storage** アドオンを使用して追加のファイル ストレージを既に購入している場合は、次の手順を使用して、サブスクリプションの余分なストレージ領域を増減できます。 ストレージを 1 ギガバイトまで減らします。 余分な記憶域を削除するには、サポート [にお問い合わせください](../admin/contact-support-for-business-products.md)。
+**Office 365 Extra File Storage** アドオンを使用して追加のファイル ストレージを既に購入している場合は、次の手順を使用して、サブスクリプションの余分なストレージ領域を増減できます。 ストレージを 1 ギガバイトまで減らします。 余分な記憶域を削除するには、サポート [にお問い合わせください](../business-video/get-help-support.md)。
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. [製品 **] タブ** で、アドオンの追加ファイルを含Office 365 **サブスクリプションStorage** 選択します。

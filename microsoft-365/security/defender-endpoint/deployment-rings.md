@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 5aeaa51e5ab8974c8ca26453534396dac14b5853
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893487"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297216"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Microsoft Defender for Endpoint をリングに展開する
 
@@ -81,7 +81,7 @@ Microsoft Defender for Endpoint は、サービスにオンボードできるさ
 
 | Endpoint     | 展開ツール                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br> 注: 10 台を超えるデバイスを実稼働環境に展開する場合は、代わりに Group Policy メソッドを使用するか、以下に示す他のサポートされているツールを使用します。<br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md)   |
+| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br> 注: 10 台を超えるデバイスを実稼働環境に展開する場合は、代わりに Group Policy メソッドを使用するか、以下に示す他のサポートされているツールを使用します。<br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md)   |
 | **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
 | **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [アプリベース](ios-install.md)                                |
@@ -96,7 +96,7 @@ Microsoft Defender for Endpoint は、サービスにオンボードできるさ
 
 次の資料を使用して、組織に最適な Microsoft Defender for Endpoint アーキテクチャを選択します。
 
-|**Item**|**説明**|
+|**項目**|**説明**|
 |:-----|:-----|
 |[![Microsoft Defender for Endpoint 展開戦略のサム イメージ](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
 
@@ -105,25 +105,25 @@ Microsoft Defender for Endpoint は、サービスにオンボードできるさ
 
 ## <a name="existing-deployments"></a>既存の展開
 
-### <a name="windows-endpoints"></a>Windows エンドポイント
-Windows サーバーまたは Windows サーバーの場合は、セキュリティ更新プログラム検証プログラム **(SUVP)** を使用して、(パッチが火曜日に更新される前に) テストする複数のコンピューターを選択します。
+### <a name="windows-endpoints"></a>Windowsエンドポイント
+サーバー Windowsおよび/または Windows サーバーの場合は、セキュリティ更新プログラム検証プログラム **(SUVP)** を使用して、(パッチ火曜日の前に) テストする複数のコンピューターを選択します。
 
 詳細については、以下を参照してください。
 - [セキュリティ更新プログラムの検証プログラムとは](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [ソフトウェア更新プログラムの検証プログラムとマイクロソフト マルウェア プロテクション センター設定 - TwC 対話型タイムライン パート 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [ソフトウェア更新プログラムの検証プログラムとMicrosoft マルウェア プロテクション センター設定 - TwC 対話型タイムライン パート 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 
-### <a name="non-windows-endpoints"></a>Windows 以外のエンドポイント
-macOS と Linux を使用すると、いくつかのシステムを使用して "InsidersFast" チャネルで実行できます。
+### <a name="non-windows-endpoints"></a>非エンドポイントWindowsエンドポイント
+macOS と Linux を使用すると、いくつかのシステムを使用してベータ チャネルで実行できます。
 
 >[!NOTE]
->ビルドが "実稼働" チャネルに入る前に互換性、パフォーマンス、および信頼性の問題を見つけ出せそうとして、少なくとも 1 人のセキュリティ管理者と 1 人の開発者が理想的です。
+>ビルドが現在のチャネルに入る前に互換性、パフォーマンス、および信頼性の問題を見つけ出せそうとして、少なくとも 1 人のセキュリティ管理者と 1 人の開発者が理想的です。
 
-チャネルの選択によって、デバイスに提供される更新プログラムの種類と頻度が決されます。 insiders-fast のデバイスは、更新プログラムと新機能を受け取る最初のデバイスで、後で insiders-slow と最後に prod が続きます。
+チャネルの選択によって、デバイスに提供される更新プログラムの種類と頻度が決されます。 ベータ版のデバイスは、更新プログラムと新機能を最初に受け取ったデバイスで、後でプレビュー、最後に現在のデバイスが続きます。
 
 ![インサイダー リングのイメージ](images/insider-rings.png)
 
-新機能をプレビューし、早期のフィードバックを提供するために、インサイダーが高速またはインサイダーが遅い場合に使用するデバイスを企業内で構成する必要があります。
+新機能をプレビューし、早期のフィードバックを提供するには、ベータ版またはプレビュー版を使用する一部のデバイスをエンタープライズで構成する必要があります。
 
 >[!WARNING]
 >最初のインストール後にチャネルを切り替える場合は、製品を再インストールする必要があります。 製品チャネルを切り替える: 既存のパッケージをアンインストールし、新しいチャネルを使用するデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。

@@ -22,12 +22,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: サブスクリプションを手動で変更するには、新しいサブスクリプションを購入し、両方のサブスクリプションがリストされアクティブに設定されます。
 ms.date: 03/17/2021
-ms.openlocfilehash: 1dc7ff8cd6b8a43db7d70ab6c17aec16a020baac
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 7361b459e61961efbb729d80dcbb55dfdad65933
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107682"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293621"
 ---
 # <a name="change-plans-manually"></a>手動でプランを変更する
 
@@ -74,7 +74,7 @@ OR
 
 - **2 つのサブスクリプションを購入し、両方とも一覧に表示されない場合** 、異なる組織 (異なるドメイン) 用に購入した可能性があります。 サブスクリプションは組織の境界を超えることはできません。
 
-- **サブスクリプションが追加で、** ここに記載されていない場合、またはアクティブではない場合は [、Microsoft サポートにお問い合わせください](../../admin/contact-support-for-business-products.md)。
+- **サブスクリプションが追加で、** ここに記載されていない場合、またはアクティブではない場合は [、Microsoft サポートにお問い合わせください](../../business-video/get-help-support.md)。
 
 ### <a name="what-about-the-old-licenses"></a>古いライセンスの処理
 
@@ -115,4 +115,4 @@ OR
 一部のユーザーのみを別のサブスクリプションに移動した場合は、不要になった[ライセンスを削除](../licenses/buy-licenses.md)します。
 
 ## <a name="call-support-to-help-you-change-plans"></a>プランの変更に役立つサポートを呼び出す
-[Microsoft サポートへのお問い合わせください](../../admin/contact-support-for-business-products.md)
+[Microsoft サポートへのお問い合わせください](../../business-video/get-help-support.md)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66c9821e5db00cc3da5718f52b8aaaeff5a431e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5ea847e822e094049dd8f0b941f22f3bb4f7eff4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114756"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297178"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>最初のインシデントへの対応の概要
 
@@ -58,6 +58,17 @@ Defender のインシデントMicrosoft 365分析とインシデント対応の�
 
 ## <a name="see-also"></a>関連項目
 
+Defender のインシデント対応Microsoft 365:
+
 - [インシデントの概要](incidents-overview.md)
-- [インシデントを分析する](investigate-incidents.md)
+- [インシデントの調査](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)
+
+最初のインシデント対応のその他の例:
+
+- [フィッシング詐欺メール](first-incident-path-phishing.md)
+- [IDENTITY-base 攻撃](first-incident-path-identity.md)
+
+[インシデント対応の詳細なプレイブック](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+
+

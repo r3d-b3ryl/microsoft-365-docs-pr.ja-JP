@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1890b4f9b4c71efebe833ebaee62debedbf0fb72
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114922"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297226"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>手順 1. 最初のインシデントをトリアージして分析する
 
@@ -97,7 +97,7 @@ Defender で優先度を設定するインシデントを決定するための�
 
 アラートを取り巻くコンテキストを理解するのも同様に重要です。 多くの場合、アラートは 1 つの独立したイベントではありません。 同時に発生していない可能性があるプロセス、コマンド、およびアクションのチェーンがあります。 そのため、アナリストは、アラートのコンテキストを理解するために、デバイスのタイムラインで不審なエンティティの最初と最後のアクティビティを探す必要があります。
 
-Microsoft 365 Defender を使用してデータを読み取り、分析する方法は複数ありますが、アナリストの最後の目標は、インシデントに可能な限り迅速に対応することです。 このMicrosoft 365 Defender は、業界をリードする自動修復機能を通じて平均修復時間[(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)を大幅に短縮することができますが、手動分析が必要な場合は常に生じています。 
+Microsoft 365 Defender を使用してデータを読み取り、分析する方法は複数ありますが、アナリストの最後の目標は、インシデントに可能な限り迅速に対応することです。 このMicrosoft 365 Defender は、業界をリードする自動調査と対応機能を通じて平均修復時間[(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)を大幅に短縮することができますが、手動分析が必要な場合は常に存在します。 [](m365d-autoir.md) 
 
 次に例を示します:
 
@@ -136,5 +136,5 @@ Microsoft 365 Defender を使用してデータを読み取り、分析する方
 ## <a name="see-also"></a>関連項目
 
 - [インシデントの概要](incidents-overview.md)
-- [インシデントを分析する](investigate-incidents.md)
+- [インシデントの調査](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)

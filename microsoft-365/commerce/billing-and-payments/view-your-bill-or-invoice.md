@@ -24,12 +24,12 @@ ms.custom:
 - PPM_jmueller
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: eff193689817c1c89fff7c8ffbc5335fff64ee0f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280825"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297358"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -37,7 +37,7 @@ ms.locfileid: "52280825"
   
 課金内容を表示した場合に料金について説明が必要な場合は、「[課金または請求書の内容を理解する](understand-your-invoice2.md)」 のページで詳細な解説を参照してください。
   
-**請求書に関して問題がある場合**: [一般法人向け製品のサポートにお問い合わせください](../../admin/contact-support-for-business-products.md)。
+**請求書に関して問題がある場合**: [一般法人向け製品のサポートにお問い合わせください](../../business-video/get-help-support.md)。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -73,7 +73,7 @@ ms.locfileid: "52280825"
 
 支払い後約 3 日で、発票要求を[発票管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465)に送信できます。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金情報**]>、<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">[**請求と支払い**] </a> ページの順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金情報**]>、<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">[**請求と支払い**]</a> ページの順に移動します。
 2. 必要な請求書を見つけて、**[発票]** を選択します。
 
 > [!NOTE]

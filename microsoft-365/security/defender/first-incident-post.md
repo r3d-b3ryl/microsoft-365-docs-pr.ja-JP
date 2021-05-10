@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1ceea1dbdb3f9d149f4e5a0bd892eda2bb9128aa
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114780"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297154"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>手順 3. 最初のインシデントのインシデント後レビューを実行する
 
@@ -61,5 +61,5 @@ Microsoft 365Defender は[、MITRE ATT](https://attack.mitre.org/)および CK F
 ## <a name="see-also"></a>関連項目
 
 - [インシデントの概要](incidents-overview.md)
-- [インシデントを分析する](investigate-incidents.md)
+- [インシデントの調査](investigate-incidents.md)
 - [インシデントの管理](manage-incidents.md)

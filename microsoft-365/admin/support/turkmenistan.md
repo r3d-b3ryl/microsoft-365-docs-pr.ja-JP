@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: acff7dd180233fe4c7ff9ca76ee6c0d573d9e34f
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 923e3ed22b00b95f751f140397c22631ba3025b5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543762"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297514"
 ---
 # <a name="contact-support-for-turkmenistan"></a>トルクメニスタンのサポートに問い合わせ
 
-[別の国または地域を検索します](../contact-support-for-business-products.md)。
+[別の国または地域を検索します](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 +7 499 922 86 23

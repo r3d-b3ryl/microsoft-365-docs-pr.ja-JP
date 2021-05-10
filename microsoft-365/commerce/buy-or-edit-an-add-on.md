@@ -22,12 +22,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: ビジネス サブスクリプション用のアドオンを購入および管理するMicrosoft 365を確認します。
 ms.date: 04/02/2021
-ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: d60503cd7ab7be219c3ed813dd1d9aef480cd4dc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107438"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297334"
 ---
 # <a name="buy-or-manage-add-ons"></a>アドオンを購入するか、管理します
 
@@ -71,7 +71,7 @@ Skype for Business アドオンの詳細については、「[Skype for Business
 
 スタンドアロン アドオン サブスクリプションを削除するには [、他の](subscriptions/cancel-your-subscription.md)サブスクリプションと同様に、サブスクリプションをキャンセルします。 または、定期的 [な請求をオフにできます](subscriptions/renew-your-subscription.md)。
 
-従来のアドオンは削除できない。 従来のアドオンを削除する場合は、サポート [にお問い合わせください](../admin/contact-support-for-business-products.md)。
+従来のアドオンは削除できない。 従来のアドオンを削除する場合は、サポート [にお問い合わせください](../business-video/get-help-support.md)。
   
 ## <a name="related-content"></a>関連コンテンツ
 

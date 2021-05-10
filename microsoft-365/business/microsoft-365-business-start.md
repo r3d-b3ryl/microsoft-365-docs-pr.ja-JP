@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: ビジネス向けMicrosoft 365、セットアップ方法、ユーザーのデバイスと PC を準備して、ユーザーがビジネス向けデバイスで保護Microsoft 365します。
-ms.openlocfilehash: cc54147e75a27fbb93255d6f706b4f9044c75858
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245126"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293709"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>ビジネス向けMicrosoft 365を開始する
 
@@ -65,7 +65,7 @@ Microsoft 365は、最大 300 ライセンスを使用します。 ライセン�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: ビジネス向Microsoft 365を設定する (管理者)
@@ -99,13 +99,13 @@ Microsoft 365は、最大 300 ライセンスを使用します。 ライセン�
 一部のオンプレミス リソース (ファイル共有やプリンターなど) を含むローカル Active Directory を保持する場合は、Azure AD に参加しているデバイスにこれらのリソースへのアクセス権を与えることができます。次の手順を実行します。ビジネス向け Microsoft 365 で [Azure](access-resources.md) **AD** に参加しているデバイスからオンプレミス リソースにアクセスします。
   
   
-## <a name="contact-support"></a>サポートに連絡する
+## <a name="contact-support"></a>サポートに連絡
 
  **サポートに連絡する場合:**
   
 - パートナーにお問い合わせください。
     
-- ビジネス管理者Microsoft 365、カスタマー サポート チームにアクセスできます。ビジネス製品のサポートへの問い合わせ **[- 管理者ヘルプ](../admin/contact-support-for-business-products.md)**
+- ビジネス管理者Microsoft 365、カスタマー サポート チームにアクセスできます。ビジネス製品のサポートへの問い合わせ **[- 管理者ヘルプ](../business-video/get-help-support.md)**
     
 ## <a name="related-content"></a>関連コンテンツ
 

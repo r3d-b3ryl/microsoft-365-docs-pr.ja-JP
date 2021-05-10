@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーが行ったセルフサービス購入を管理する方法について学習できます。
-ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5378d14affd074bfad356fea4bb2adbd6ca104dd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244994"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293573"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
 
@@ -37,19 +37,19 @@ ms.locfileid: "52244994"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
@@ -141,7 +141,7 @@ ms.locfileid: "52244994"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
@@ -172,7 +172,7 @@ ms.locfileid: "52244994"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
@@ -201,4 +201,4 @@ ms.locfileid: "52244994"
 
 セルフサービス購入に関する一般的な質問については、「セルフサービス購入に関する [よく寄せられる質問」を参照してください](self-service-purchase-faq.md)。
 
-セルフサービス購入に関するご質問やサポートが必要な場合は、サポート [にお問い合わせください](../../admin/contact-support-for-business-products.md)。
+セルフサービス購入に関するご質問やサポートが必要な場合は、サポート [にお問い合わせください](../../business-video/get-help-support.md)。
