@@ -12,31 +12,31 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9e0b2614012e8a9b122cadd2771fb5006550aee0
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6ae5bf729ebfd4cde6886fe0ef627d6a40dedca5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549318"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52294961"
 ---
-# <a name="contact-support-for-wallis-and-futuna"></a><span data-ttu-id="18153-103">Wallis と Futuna のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="18153-103">Contact support for Wallis and Futuna</span></span>
+# <a name="contact-support-for-wallis-and-futuna"></a><span data-ttu-id="7322d-103">Wallis と Futuna のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="7322d-103">Contact support for Wallis and Futuna</span></span>
 
-<span data-ttu-id="18153-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="18153-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="7322d-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="7322d-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="18153-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="18153-105">Phone number</span></span>
-<span data-ttu-id="18153-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="18153-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="7322d-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="7322d-105">Phone number</span></span>
+<span data-ttu-id="7322d-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="7322d-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="18153-107">時間</span><span class="sxs-lookup"><span data-stu-id="18153-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="18153-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="18153-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="7322d-107">時間</span><span class="sxs-lookup"><span data-stu-id="7322d-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="7322d-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="7322d-108">Billing Support:</span></span>
 
-<span data-ttu-id="18153-109">フランス語: Sun-Fri 8 PM-4 AM</span><span class="sxs-lookup"><span data-stu-id="18153-109">French: Sun-Fri 8 PM-4 AM</span></span>
+<span data-ttu-id="7322d-109">フランス語: Sun-Fri 8 PM-4 AM</span><span class="sxs-lookup"><span data-stu-id="7322d-109">French: Sun-Fri 8 PM-4 AM</span></span>
 
-<span data-ttu-id="18153-110">英語: Sun-Fri 8 PM-4 AM</span><span class="sxs-lookup"><span data-stu-id="18153-110">English: Sun-Fri 8 PM-4 AM</span></span>
+<span data-ttu-id="7322d-110">英語: Sun-Fri 8 PM-4 AM</span><span class="sxs-lookup"><span data-stu-id="7322d-110">English: Sun-Fri 8 PM-4 AM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="18153-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="18153-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="7322d-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="7322d-111">Technical Support:</span></span>
 
-<span data-ttu-id="18153-112">フランス語: Mon-Fri 7 PM-8 AM</span><span class="sxs-lookup"><span data-stu-id="18153-112">French: Mon-Fri 7 PM-8 AM</span></span>
+<span data-ttu-id="7322d-112">フランス語: Mon-Fri 7 PM-8 AM</span><span class="sxs-lookup"><span data-stu-id="7322d-112">French: Mon-Fri 7 PM-8 AM</span></span>
 
-<span data-ttu-id="18153-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="18153-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="7322d-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="7322d-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="18153-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="18153-114">International call charges apply</span></span>
+<span data-ttu-id="7322d-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="7322d-114">International call charges apply</span></span>
