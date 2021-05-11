@@ -1,139 +1,129 @@
 ---
-title: コンテンツ検索結果のキーワード統計の表示
+title: 電子情報開示検索結果の統計情報を表示する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/30/2017
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.search: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: 検索統計機能を使用して、セキュリティ コンプライアンス センターで複数のコンテンツ検索の統計を表示および比較する&します。
+description: 検索統計機能を使用して、コア電子情報開示ケースに関連付けられたコンテンツ検索と検索の統計をコンプライアンス センターで表示するMicrosoft 365説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f12c51c47045996e450772c081bd26ef4a520b5f
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: a0e543c89b91560520a4e4bf31feb8471c91da4a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838700"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311115"
 ---
-# <a name="view-keyword-statistics-for-content-search-results"></a><span data-ttu-id="5d46e-103">コンテンツ検索結果のキーワード統計の表示</span><span class="sxs-lookup"><span data-stu-id="5d46e-103">View keyword statistics for Content Search results</span></span>
+# <a name="view-statistics-for-ediscovery-search-results"></a><span data-ttu-id="39c7f-103">電子情報開示検索結果の統計情報を表示する</span><span class="sxs-lookup"><span data-stu-id="39c7f-103">View statistics for eDiscovery search results</span></span>
 
-<span data-ttu-id="5d46e-p101">コンテンツ検索を作成して実行した後は、予想される検索結果の統計情報を表示できます。これには、検索結果の概要 (詳細ウィンドウに表示される予想検索結果のサマリーと同様)、アイテムが検索クエリと一致したコンテンツの場所の数などのクエリ統計情報、最も多くのアイテムが一致したコンテンツの場所の名前が含まれます。1 つまたは複数のコンテンツ検索に対して統計情報を表示できます。これにより、複数の検索の結果を簡単に比較して、検索クエリの有効性を判断できます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p101">After you create and run a Content Search, you can view statistics about the estimated search results. This includes a summary of the search results (similar to the summary of the estimated search results displayed in the details pane), the query statistics such as the number of content locations with items that match the search query, and the name of content locations that have the most matching items. You can display statistics for one or more content searches. This lets you to quickly compare the results for multiple searches and make decisions about the effectiveness of your search queries.</span></span>
+<span data-ttu-id="39c7f-104">コンテンツ検索または Core 電子情報開示ケースに関連付けられた検索を作成して実行した後、推定検索結果に関する統計情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-104">After you create and run a Content search or a search associated with a Core eDiscovery case, you can view statistics about the estimated search results.</span></span> <span data-ttu-id="39c7f-105">これには、検索結果の概要 (検索フライアウト ページに表示される推定検索結果の概要と同様)、検索クエリに一致するアイテムを含むコンテンツの場所の数、最も一致するアイテムがあるコンテンツの場所の ID などのクエリ統計が含まれます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-105">This includes a summary of the search results (similar to the summary of the estimated search results displayed on the search flyout page), the query statistics such as the number of content locations with items that match the search query, and the identity of content locations that have the most matching items.</span></span>
   
-<span data-ttu-id="5d46e-p102">さらに、検索クエリ内の各キーワードに対する統計情報を返すように、新規および既存の検索を構成することができます。これにより、クエリ内の各キーワードの結果の数をすばやく比較したり、複数の検索のキーワード統計を比較したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p102">Additionally, you can configure new and existing searches to return statistics for each keyword in a search query. This lets you compare the number of results for each keyword in a query and to compare the keyword statistics from multiple searches.</span></span>
+<span data-ttu-id="39c7f-106">さらに、キーワード リストを使用して、検索クエリ内の各キーワードの統計情報を返す検索を構成できます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-106">Additionally, you can use the keywords list to configure a search to return statistics for each keyword in a search query.</span></span> <span data-ttu-id="39c7f-107">これにより、クエリ内の各キーワードによって返される結果の数を比較できます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-107">This lets you compare the number of results returned by each keyword in a query.</span></span>
   
-<span data-ttu-id="5d46e-p103">また、検索の統計情報とキーワードの統計情報を CSV ファイルにダウンロードできます。これにより、Excel のフィルター機能や並べ替え機能を使用して結果を比較し、検索結果のレポートを準備できます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p103">You can also download the search statistics and keyword statistics to a CSV file. This lets you use the filtering and sorting features in Excel to compare results, and prepare reports for your search results.</span></span>
+<span data-ttu-id="39c7f-108">検索統計を CSV ファイルにダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-108">You can also download search statistics to a CSV file.</span></span> <span data-ttu-id="39c7f-109">これにより、フィルター処理と並べ替え機能を使用して、Excelを比較し、検索結果のレポートを準備できます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-109">This lets you use the filtering and sorting features in Excel to compare results, and prepare reports for your search results.</span></span>
   
-## <a name="get-statistics-for-content-searches"></a><span data-ttu-id="5d46e-112">コンテンツ検索の統計情報を取得する</span><span class="sxs-lookup"><span data-stu-id="5d46e-112">Get statistics for Content Searches</span></span>
+## <a name="get-statistics-for-searches"></a><span data-ttu-id="39c7f-110">検索の統計情報を取得する</span><span class="sxs-lookup"><span data-stu-id="39c7f-110">Get statistics for searches</span></span>
 
-<span data-ttu-id="5d46e-113">コンテンツ検索の統計情報を表示するには、次の方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="5d46e-113">To display statistics for Content searches:</span></span>
+<span data-ttu-id="39c7f-111">コンテンツ検索またはコア電子情報開示ケースに関連付けられた検索の統計情報を表示するには、次の方法を実行します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-111">To display statistics for a Content search or a search associated with a Core eDiscovery case.:</span></span>
   
-1. <span data-ttu-id="5d46e-114">Microsoft 365 コンプライアンス センターで、[すべてのコンテンツ検索を **表示する]**  >  **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="5d46e-114">In the Microsoft 365 compliance center, go to **Show all** > **Content search**.</span></span>
+1. <span data-ttu-id="39c7f-112">[コンプライアンス センター Microsoft 365で、[すべて **表示]** をクリックし、次のいずれかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="39c7f-112">In the Microsoft 365 compliance center, click **Show all**, and then do one of the following:</span></span>
 
-2. <span data-ttu-id="5d46e-115">検索の一覧で、2 つ以上の検索を選択し、[一括操作] フライアウト ページの [統計情報の検索 **]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5d46e-115">In the list of searches, select two or more searches, and then click **Search statistics** on the **Bulk actions** flyout page.</span></span>
-    
-    ![複数の検索を選択してから [検索の統計] をクリックする](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
-  
-3. <span data-ttu-id="5d46e-117">**[検索の統計]** ページで、次のリンクのいずれかをクリックして、選択した検索の統計情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="5d46e-117">On the **Search statistics** page, click one of the following links to display statistics about the selected searches.</span></span> 
-    
-    <span data-ttu-id="5d46e-118">**概要**</span><span class="sxs-lookup"><span data-stu-id="5d46e-118">**Summary**</span></span>
-    
-    <span data-ttu-id="5d46e-p104">このページには、**[コンテンツ検索]** ページの詳細ウィンドウに表示されるものと似た統計情報が表示されます。選択したすべての検索の統計情報が表示されます。このページから選択した検索を再実行し、統計情報を更新できることにご注意ください。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p104">This page displays statistics similar to the ones displayed in the details pane on the **Content search** page. Statistics for all selected searches are displayed. Note that you can also re-run the selected searches from this page to update the statistics.</span></span> 
-    
-    ![選択した検索の統計情報のサマリー](../media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
-  
-    <span data-ttu-id="5d46e-p105">a. コンテンツ検索の名前。前に説明したように、複数の検索の統計情報を表示して比較できます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p105">a.  The name of the Content Search. As previously stated, you can display and compare statistics for multiple searches.</span></span>
-    
-    <span data-ttu-id="5d46e-p106">b. 検索されたコンテンツの場所の種類。各行には、指定した検索に関するメールボックス、サイト、パブリック フォルダーの統計情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p106">b. The type of content location that was searched. Each row displays statistics for mailboxes, sites, and public folders from the specified search.</span></span>
-    
-    <span data-ttu-id="5d46e-p107">c. 検索クエリに一致したアイテムが含まれるコンテンツの場所の数。メールボックスの場合、この統計情報には、検索クエリに一致するアイテムが含まれるアーカイブ メールボックスの数も含まれます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p107">c. The number of content locations containing items that match the search query. For mailboxes, this statistic also includes the number of archive mailboxes that contain items that match the search query.</span></span>
-    
-    <span data-ttu-id="5d46e-p108">d. 指定したすべてのコンテンツの場所で、検索クエリと一致するアイテムの合計数。アイテムの種類の例には、メール メッセージ、予定表アイテム、ドキュメントなどが含まれます。アイテムに検索対象のキーワードの複数のインスタンスが含まれている場合は、アイテムの合計数を 1 度カウントするのみです。たとえば、「stock」または「fraud」という単語を検索しており、さらに「stock」という単語の 3 つのインスタンスがメール メッセージに含まれている場合は、**[アイテム]** 列を 1 回カウントするのみです。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p108">d. The total number of items of all specified content locations that match the search query. Examples of item types include email messages, calendar items, and documents. If an item contains multiple instances of a keyword that is being searched for, it's only counted once in the total number of items. For example, if you're searching for words "stock" or "fraud" and an email message contains three instances of the word "stock", it's only counted once in the **Items** column.</span></span> 
-    
-    <span data-ttu-id="5d46e-p109">e. 指定したコンテンツの場所で見つかった、検索クエリに一致するすべてのアイテムの合計サイズ。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p109">e. The total size of all items that were found in the specified content location that match the search query.</span></span> 
-    
-    <span data-ttu-id="5d46e-139">**クエリ**</span><span class="sxs-lookup"><span data-stu-id="5d46e-139">**Queries**</span></span>
-    
-    <span data-ttu-id="5d46e-140">このページには、検索クエリに関する統計情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-140">This page displays statistics about the search query.</span></span>
-    
-    ![選択した検索の検索クエリ統計情報](../media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
-  
-    <span data-ttu-id="5d46e-p110">a. その行のクエリ統計情報に対するコンテンツ検索の名前。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p110">a. The name of the Content Search that the row contains query statistics for.</span></span>
-    
-    <span data-ttu-id="5d46e-p111">b. クエリ統計情報の対象となるコンテンツの場所の種類。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p111">b. The type of content location that the query statistics are applicable to.</span></span>
-    
-    <span data-ttu-id="5d46e-p112">c. この列には、統計情報が該当する検索クエリの部分が示されます。**[プライマリ]** は、検索クエリ全体を示します。検索クエリを作成または編集するときにキーワード リストを使用した場合は、クエリの各コンポーネントの統計情報がこの表に含まれます。詳細については、この記事の「[コンテンツ検索のキーワード統計情報を取得する](#get-keyword-statistics-for-content-searches)」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p112">c. This column indicates which part of the search query the statistics are applicable to. **Primary** indicates the entire search query. If you use a keyword list when you create or edit a search query, statistics for each component of the query are included in this table. See the [Get keyword statistics for Content Searches](#get-keyword-statistics-for-content-searches) section in this article for more information.</span></span> 
-    
-    <span data-ttu-id="5d46e-p113">d. この列には、コンテンツ検索ツールによって実行された実際の検索クエリが表示されます。クエリにはツールによっていくつかの追加コンポーネントが自動的に追加されることにご注意ください。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p113">d. This column contains the actual search query that run by the Content Search tool. Note that the tool automatically adds a few additional components to the query that you create.</span></span> 
+   - <span data-ttu-id="39c7f-113">[ **コンテンツ検索] を** クリックし、検索を選択して、フライアウト ページを表示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-113">Click **Content search** and then select a search to display the flyout page.</span></span>
 
-    - <span data-ttu-id="5d46e-154">キーワードを指定せず、メールボックス内のすべてのコンテンツを検索すると、すべてのアイテムが返されるように、実際のキーワード クエリは `size>=0` のようになります。</span><span class="sxs-lookup"><span data-stu-id="5d46e-154">When you search for all content in mailboxes (by not specifying any keywords), the actual key word query is  `size>=0` so that all items are returned.</span></span> 
-    
-     - <span data-ttu-id="5d46e-155">SharePoint Online と OneDrive for Business サイトを検索すると、次の 2 つのコンポーネントが追加されます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-155">When you search SharePoint Online and OneDrive for Business sites, the two following components are added:</span></span>
-    
-          <span data-ttu-id="5d46e-156">**NOT IsExternalContent:1** - オンプレミスの SharePoint 組織のコンテンツを除外します。</span><span class="sxs-lookup"><span data-stu-id="5d46e-156">**NOT IsExternalContent:1** - Excludes any content from an on-premises SharePoint organization.</span></span> 
-    
-          <span data-ttu-id="5d46e-157">**NOT IsOneNotePage:1** - すべての OneNote ファイルを除外します。これは、これらのファイルは検索クエリと一致するドキュメントと重複するためです。</span><span class="sxs-lookup"><span data-stu-id="5d46e-157">**NOT IsOneNotePage:1** - Excludes all OneNote files because these would be duplicates of any document that matches the search query.</span></span> 
+     <span data-ttu-id="39c7f-114">OR</span><span class="sxs-lookup"><span data-stu-id="39c7f-114">OR</span></span>
 
-    
-    <span data-ttu-id="5d46e-p114">e. **[クエリ]** 列で示されている検索クエリと一致するアイテムを含むコンテンツの場所 ([\*\* コンテンツの場所 \*\*] 列で指定されているもの) の数。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p114">e. The number of the content locations (specified by the \*\* Location type \*\* column) that contain items that match the search query listed in the **Query** column.</span></span> 
-    
-    <span data-ttu-id="5d46e-p115">f. **[クエリ]** 列で示されている検索クエリと一致する (指定されたコンテンツの場所の) アイテムの数。前に説明したように、アイテムに検索対象のキーワードの複数のインスタンスが含まれている場合、この列では 1 回だけカウントされます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p115">f. The number of items (from the specified content location) that match the search query listed in the **Query** column. As previously explained, if an item contains multiple instances of a keyword that is being searched for, it's only counted once in the this column.</span></span> 
-    
-    <span data-ttu-id="5d46e-p116">g. 指定したコンテンツの場所で見つかった、**[クエリ]** 列の検索クエリに一致するすべてのアイテムの合計サイズ。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p116">g. The total size of all items that were found (in the specified content location) that match the search query in the **Query** column.</span></span> 
-    
-    <span data-ttu-id="5d46e-165">**トップの場所**</span><span class="sxs-lookup"><span data-stu-id="5d46e-165">**Top locations**</span></span>
-    
-    <span data-ttu-id="5d46e-p117">このページには、検索された各コンテンツの場所で検索クエリに一致したアイテムの数に関する統計情報が表示されます。上位 1,000 の場所が表示されます。複数の検索の統計情報を表示する場合、各検索の上位 1,000 の場所が表示されます。検索クエリに一致する項目が含まれない場合、このページにはコンテンツの場所が含まれないことにご注意ください。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p117">This page displays statistics about the number of items that match the search query in each content location that was searched. The top 1,000 locations are displayed. If you view statistics for multiple searches, the top 1,000 locations for each search are displayed. Note that a content location isn't included on this page if it doesn't contain any items that match the search query.</span></span>
-    
-    ![検索されたコンテンツの場所で見つかったアイテムの数に関する統計情報](../media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
+   - <span data-ttu-id="39c7f-115">[**電子情報開示**  >  **コア]** をクリックし、ケースを選択し、[検索] タブで検索を **選択** して、フライアウト ページを表示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-115">Click **eDiscovery** > **Core**, select a case, and then select a search on the **Searches** tab to display the flyout page.</span></span>
+
+2. <span data-ttu-id="39c7f-116">選択した検索のフライアウト ページで、[検索の統計情報] **タブをクリック** します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-116">On the flyout page of the selected search, click the **Search statistics** tab.</span></span>
   
-    <span data-ttu-id="5d46e-p118">a. コンテンツの場所の名前。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p118">a. The name of the content location.</span></span>
-    
-    <span data-ttu-id="5d46e-p119">b. 場所の統計情報の対象となるコンテンツの場所の種類。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p119">b. The type of content location that the location statistics are applicable to.</span></span>
-    
-    <span data-ttu-id="5d46e-p120">c. 統計情報を表示している検索ごとに列があります。この列には、各コンテンツの場所で検索クエリに一致したアイテムの数 (および合計サイズ) が表示されます。複数の検索の統計情報を表示している場合は、コンテンツの場所がその検索に含まれなかったことを示す "NA" がこの列に表示されることにご注意ください。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p120">c. There are columns for each search that you're displaying statistics for. This column shows the number (and total size) of items that match the search query in each content location. Note that when you're displaying statistics for multiple searches, the "NA" in this column indicates that the content location wasn't included in that search.</span></span> 
+   ![[検索の統計情報] タブ](../media/SearchStatistics1.png)
 
-## <a name="get-keyword-statistics-for-content-searches"></a><span data-ttu-id="5d46e-179">コンテンツ検索のキーワード統計情報を取得する</span><span class="sxs-lookup"><span data-stu-id="5d46e-179">Get keyword statistics for Content Searches</span></span>
+<span data-ttu-id="39c7f-118">[ **検索の統計情報]** タブには、検索に関するさまざまな種類の統計情報を含む次のセクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-118">The **Search statistics** tab contains for following sections that contain different types of statistics about the search.</span></span>
 
-<span data-ttu-id="5d46e-p121">前に説明したように、[**クエリ**] ページには、検索クエリと、クエリに一致したアイテムの数 (およびサイズ) が表示されます。検索クエリを作成または編集するときにキーワード リストを使用した場合は、各キーワードやキーワード語句に一致するアイテムの数を表示する拡張統計を取得できます。これは、クエリの最も有効な (または最も有効でない) 部分をすばやく識別するのに役立ちます。たとえば、多数のアイテムを返すキーワードがある場合は、キーワード クエリを修正して検索結果を絞り込むことができます。コンテンツ検索を作成または編集するときに、キーワード リストを設定できます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p121">As previous explained, the **Queries** page shows the search query and the number (and size) of items that match the query. If you use a keyword list when you create or edit a search query, you can get enhanced statistics that show how many items match each keyword or keyword phrase. This can help you quickly identify which parts of the query are the most (and least) effective. For example, if a keyword returns a large number of items, you might choose to refine the keyword query to narrow the search results. You can set up a keyword list when you create or edit a Content Search.</span></span> 
+### <a name="search-content"></a><span data-ttu-id="39c7f-119">検索コンテンツ</span><span class="sxs-lookup"><span data-stu-id="39c7f-119">Search content</span></span>
 
-<span data-ttu-id="5d46e-185">キーワード リストを作成して、コンテンツ検索のキーワード統計情報を表示するには:</span><span class="sxs-lookup"><span data-stu-id="5d46e-185">To create a keyword list and view keyword statistics for a Content Search:</span></span>
+<span data-ttu-id="39c7f-120">このセクションでは、検索によって返される推定アイテムの概要をグラフィカルに表示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-120">This section displays a graphical summary of the estimated items returned by the search.</span></span> <span data-ttu-id="39c7f-121">これは、検索条件に一致するアイテムの数を示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-121">This indicates the number of items that match the search criteria.</span></span> <span data-ttu-id="39c7f-122">この情報は、検索によって返されるアイテムの推定数に関するアイデアを提供します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-122">This information gives you an idea about the estimated number of items returned by the search.</span></span>
+
+![検索の見積もりを検索する](../media/SearchContentReport.png)
+
+- <span data-ttu-id="39c7f-124">**場所別の推定アイテム**: 検索によって返される推定アイテムの総数。</span><span class="sxs-lookup"><span data-stu-id="39c7f-124">**Estimated items by locations**: The total number of estimated items returned by the search.</span></span> <span data-ttu-id="39c7f-125">メールボックスとサイト内にあるアイテムの特定の数も表示されます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-125">The specific number of items located in mailboxes and located in sites is also displayed.</span></span>
+
+- <span data-ttu-id="39c7f-126">**ヒットの推定場所**: 検索によって返されるアイテムを含むコンテンツの場所の総数。</span><span class="sxs-lookup"><span data-stu-id="39c7f-126">**Estimated locations with hits**: The total number of content locations that contain items returned by the search.</span></span> <span data-ttu-id="39c7f-127">メールボックスとサイトの場所の特定の数も表示されます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-127">The specific number of mailbox and site locations is also displayed.</span></span>
+
+- <span data-ttu-id="39c7f-128">**場所別のデータボリューム (MB 単位)**: 検索によって返される推定アイテムの合計サイズ。</span><span class="sxs-lookup"><span data-stu-id="39c7f-128">**Data volume by location (in MB)**: The total size of all estimated items returned by the search.</span></span> <span data-ttu-id="39c7f-129">メールボックス アイテムとサイト アイテムの特定のサイズも表示されます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-129">The specific size of mailbox items and site items is also displayed.</span></span>
+
+### <a name="condition-report"></a><span data-ttu-id="39c7f-130">条件レポート</span><span class="sxs-lookup"><span data-stu-id="39c7f-130">Condition report</span></span>
+
+<span data-ttu-id="39c7f-131">このセクションでは、検索クエリに関する統計情報と、検索クエリの異なる部分に一致した推定アイテムの数を表示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-131">This section displays statistics about the search query and the number of estimated items that matched different parts of the search query.</span></span> <span data-ttu-id="39c7f-132">これらの統計を使用して、検索クエリの各コンポーネントに一致するアイテムの数を分析できます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-132">You can use these statistics to analyze the number of items that match each component of search query.</span></span> <span data-ttu-id="39c7f-133">これにより、検索条件を絞り込み、必要に応じて範囲を絞り込むのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-133">This can help you refine the search criteria and if necessary narrow the scope of the scope.</span></span> <span data-ttu-id="39c7f-134">このレポートのコピーを CSV 形式でダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-134">You can also download a copy of this report in CSV format.</span></span>
+
+![条件レポート](../media/SearchContentReportNoKeywordList.png)
+
+- <span data-ttu-id="39c7f-136">**場所の** 種類: クエリ統計が適用されるコンテンツの場所の種類。</span><span class="sxs-lookup"><span data-stu-id="39c7f-136">**Location type**: The type of content location that the query statistics are applicable to.</span></span> <span data-ttu-id="39c7f-137">この値は **Exchange** メールボックスの場所を示します。サイトの場所 **SharePoint** 値を指定します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-137">The value of **Exchange** indicates a mailbox location; a value of **SharePoint** indicates a site location.</span></span>
+
+- <span data-ttu-id="39c7f-138">**Part**: 統計が適用される検索クエリの一部。</span><span class="sxs-lookup"><span data-stu-id="39c7f-138">**Part**: The part of the search query the statistics are applicable to.</span></span> <span data-ttu-id="39c7f-139">**Primary は** 、検索クエリ全体を示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-139">**Primary** indicates the entire search query.</span></span> <span data-ttu-id="39c7f-140">**キーワード** は、行内の統計情報が特定のキーワードに対する値を示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-140">**Keyword** indicates the statistics in the row are for a specific keyword.</span></span> <span data-ttu-id="39c7f-141">検索クエリにキーワード リストを使用する場合は、クエリの各コンポーネントの統計情報が次の表に含まれます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-141">If you use a keyword list for search query, statistics for each component of the query are included in this table.</span></span> <span data-ttu-id="39c7f-142">詳細については、「検索の [キーワード統計を取得する」を参照してください](#get-keyword-statistics-for-searches)。</span><span class="sxs-lookup"><span data-stu-id="39c7f-142">For more information, see [Get keyword statistics for searches](#get-keyword-statistics-for-searches).</span></span>
+
+- <span data-ttu-id="39c7f-143">**Condition**: 対応する行に表示される統計情報を返した検索クエリの実際のコンポーネント (キーワードまたは条件)。</span><span class="sxs-lookup"><span data-stu-id="39c7f-143">**Condition**: The actual component (keyword or condition) of the search query that returned the statistics displayed in the corresponding row.</span></span>
+
+- <span data-ttu-id="39c7f-144">**ヒットのある場所**: [条件] 列にリストされているプライマリクエリまたはキーワード クエリに一致するアイテムを含むコンテンツの場所 ([場所の種類] 列で指定) の **数**。</span><span class="sxs-lookup"><span data-stu-id="39c7f-144">**Locations with hits**: The number of the content locations (specified by the **Location type** column) that contain items that match the primary or keyword query listed in the **Condition** column.</span></span>
+
+- <span data-ttu-id="39c7f-145">**アイテム**: [条件] 列に一覧表示されているクエリに一致するアイテムの数 (指定したコンテンツの場所 **から** )。</span><span class="sxs-lookup"><span data-stu-id="39c7f-145">**Items**: The number of items (from the specified content location) that match the query listed in the **Condition** column.</span></span> <span data-ttu-id="39c7f-146">前に説明したように、検索中のキーワードの複数のインスタンスがアイテムに含まれている場合、この列には 1 回だけカウントされます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-146">As previously explained, if an item contains multiple instances of a keyword that is being searched for, it's only counted once in this column.</span></span>
+
+- <span data-ttu-id="39c7f-147">**サイズ (MB)**: [条件] 列の検索クエリに一致する (指定したコンテンツの場所で) 見つかったすべてのアイテムの **合計サイズ。**</span><span class="sxs-lookup"><span data-stu-id="39c7f-147">**Size (MB)**: The total size of all items that were found (in the specified content location) that match the search query in the **Condition** column.</span></span>
+
+### <a name="top-locations"></a><span data-ttu-id="39c7f-148">トップの場所</span><span class="sxs-lookup"><span data-stu-id="39c7f-148">Top locations</span></span>
+
+<span data-ttu-id="39c7f-149">このセクションでは、検索によって返されるアイテムが最も多い特定のコンテンツの場所に関する統計情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-149">This section displays statistics about the specific content locations with the most items returned by the search.</span></span> <span data-ttu-id="39c7f-150">上位 1,000 の場所が表示されます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-150">The top 1,000 locations are displayed.</span></span> <span data-ttu-id="39c7f-151">このレポートのコピーを CSV 形式でダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-151">You can also download a copy of this report in CSV format.</span></span>
+
+- <span data-ttu-id="39c7f-152">場所名 (メールボックスの電子メール アドレスとサイトの URL) の名前。</span><span class="sxs-lookup"><span data-stu-id="39c7f-152">The name of the location name (the email address of mailboxes and the URL for sites).</span></span>
+
+- <span data-ttu-id="39c7f-153">場所の種類 (メールボックスまたはサイト)。</span><span class="sxs-lookup"><span data-stu-id="39c7f-153">Location type (a mailbox or site).</span></span>
+
+- <span data-ttu-id="39c7f-154">検索によって返されるコンテンツの場所のアイテムの推定数。</span><span class="sxs-lookup"><span data-stu-id="39c7f-154">Estimated number of items in the content location returned by the search.</span></span>
+
+- <span data-ttu-id="39c7f-155">各コンテンツの場所の推定アイテムの合計サイズ。</span><span class="sxs-lookup"><span data-stu-id="39c7f-155">The total size of estimated items in each content location.</span></span>
+
+## <a name="get-keyword-statistics-for-searches"></a><span data-ttu-id="39c7f-156">検索のキーワード統計を取得する</span><span class="sxs-lookup"><span data-stu-id="39c7f-156">Get keyword statistics for searches</span></span>
+
+<span data-ttu-id="39c7f-157">前に説明したように、[ **条件] レポート** セクションには、検索クエリと、クエリに一致するアイテムの数 (およびサイズ) が表示されます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-157">As previous explained, the **Condition report** section shows the search query and the number (and size) of items that match the query.</span></span> <span data-ttu-id="39c7f-158">検索クエリを作成または編集するときにキーワード リストを使用する場合は、各キーワードまたはキーワード フレーズに一致するアイテムの数を示す拡張統計情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-158">If you use a keyword list when you create or edit a search query, you can get enhanced statistics that show how many items match each keyword or keyword phrase.</span></span> <span data-ttu-id="39c7f-159">これにより、クエリの最も有効な部分 (および最も少ない) を迅速に特定できます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-159">This can help you quickly identify which parts of the query are the most (and least) effective.</span></span> <span data-ttu-id="39c7f-160">たとえば、キーワードが多数のアイテムを返す場合は、キーワード クエリを絞り込んで検索結果を絞り込む場合があります。</span><span class="sxs-lookup"><span data-stu-id="39c7f-160">For example, if a keyword returns a large number of items, you might choose to refine the keyword query to narrow the search results.</span></span>
+
+<span data-ttu-id="39c7f-161">キーワード リストを作成し、検索のキーワード統計を表示するには、次の方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-161">To create a keyword list and view keyword statistics for a search:</span></span>
   
-1. <span data-ttu-id="5d46e-186">Microsoft 365 コンプライアンス センターで、[すべてのコンテンツ検索を **表示する]**  >  **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="5d46e-186">In the Microsoft 365 compliance center, go to **Show all** > **Content search**.</span></span>
-    
-2. <span data-ttu-id="5d46e-187">コンテンツ検索の一覧で、検索をクリックし、[編集] アイコン **を** ![ クリックします ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。</span><span class="sxs-lookup"><span data-stu-id="5d46e-187">In the list of content searches, click and a search, and then click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).</span></span>
-    
-3. <span data-ttu-id="5d46e-188">**[クエリ]** をクリックして、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="5d46e-188">Click **Query** and then do the following things:</span></span> 
-    
-    ![[キーワード リストの表示] チェック ボックスをオンにして、各行にキーワードを入力する](../media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
-  
-    <span data-ttu-id="5d46e-p122">a. **[キーワード リストの表示]** チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p122">a. Click the **Show keyword list** check box.</span></span> 
-    
-    <span data-ttu-id="5d46e-p123">b. キーワード テーブルの行に、キーワードまたはキーワード句を入力します。たとえば、1 行目に「**予算**」と入力し、2 行目に「**セキュリティ**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p123">b. Type a keyword or keyword phase in a row in the keywords table. For example, type **budget** in the first row and then type **security** in the second row.</span></span> 
-    
-4. <span data-ttu-id="5d46e-195">検索して統計情報を取得するキーワードを追加した後、**[検索]** をクリックして修正した検索を実行します。</span><span class="sxs-lookup"><span data-stu-id="5d46e-195">After adding the keywords that you want to search and get statistics for, click **Search** to run the revised search.</span></span> 
-    
-5. <span data-ttu-id="5d46e-p124">検索が完了したら、検索の一覧でそれを選択し、**[検索の統計]** ![[検索の統計] ボタン](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) をクリックします。複数の検索のキーワード統計情報を表示して比較することもできます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p124">When the search is completed, select it in the list of searches, and then click **Search statistics** ![Search Statistics button](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png). You can also display and compare keyword statistics for multiple searches.</span></span>
-    
-6. <span data-ttu-id="5d46e-198">**[検索の統計]** ページで、**[クエリ]** をクリックして選択した検索のキーワード統計情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="5d46e-198">On the **Search statistics** page, click **Query** to display the keyword statistics for the selected searches.</span></span> 
-    
-    ![選択した検索の各キーワードの統計情報が表示される](../media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
-  
-    <span data-ttu-id="5d46e-200">前のスクリーンショットで示したように、各キーワードの統計情報が表示されます。次の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-200">As shown in the previous screenshot, the statistics for each keyword are displayed; this includes:</span></span> 
-    
-    - <span data-ttu-id="5d46e-201">検索に含まれるコンテンツの場所の各種類に対するキーワード統計。</span><span class="sxs-lookup"><span data-stu-id="5d46e-201">The keyword statistics for each type of content location included in the search.</span></span>
-    
-    - <span data-ttu-id="5d46e-202">各キーワードの実際の検索クエリ。これには、検索クエリのすべての条件が含まれます。</span><span class="sxs-lookup"><span data-stu-id="5d46e-202">The actual search query for each keyword, which includes any conditions from the search query.</span></span> 
-    
-    - <span data-ttu-id="5d46e-p125">完全な検索クエリ (**[部分]** 列には **[プライマリ]** と表示されます) および完全なクエリの統計情報。これらは **[概要]** ページに表示されるものと同じ統計情報であることにご注意ください。</span><span class="sxs-lookup"><span data-stu-id="5d46e-p125">The complete search query (identified as **Primary** in the **Part** column) and the statistics for the complete query. Note these are the same statistics displayed on the **Summary** page.</span></span> 
+1. <span data-ttu-id="39c7f-162">コンプライアンス センター Microsoft 365、新しいコンテンツ検索または Core 電子情報開示ケースに関連付けられた検索を作成します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-162">In the Microsoft 365 compliance center, create a new Content search or a search associated with a Core eDiscovery case.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="5d46e-205">大規模なキーワード リストによって生じる問題を軽減するため、検索クエリのキーワード リストの行は最大 20 行に設定されています。</span><span class="sxs-lookup"><span data-stu-id="5d46e-205">To help reduce issues caused by large keyword lists, you're now limited to a maximum of 20 rows in the keyword list of a search query.</span></span>
+2. <span data-ttu-id="39c7f-163">検索ウィザード **の [** 条件] ページで、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-163">On the **Conditions** page of the search wizard.</span></span> <span data-ttu-id="39c7f-164">[キーワード リスト **の表示] チェック ボックスを** オンにします。</span><span class="sxs-lookup"><span data-stu-id="39c7f-164">select the **Show keyword list** checkbox.</span></span>
+
+   ![[キーワード一覧を表示する] チェック ボックス](../media/SearchKeywordsList1.png)
+
+3. <span data-ttu-id="39c7f-166">キーワード テーブルの行にキーワードまたはキーワード フェーズを入力します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-166">Type a keyword or keyword phase in a row in the keywords table.</span></span> <span data-ttu-id="39c7f-167">たとえば、最初の行 **に「budget」** と入力し、2 行目に **「security」** と入力し、3 行目に **「FY2021」** と入力します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-167">For example, type **budget** in the first row, type **security** in the second row, and type **FY2021** in the third row.</span></span>
+
+   ![リストに最大 20 のキーワードまたはキーワード フレーズを入力する](../media/SearchKeywordsList2.png)
+
+   > [!NOTE]
+   > <span data-ttu-id="39c7f-169">大規模なキーワード リストによって発生する問題を軽減するために、検索クエリのキーワード リストの最大 20 行に制限されています。</span><span class="sxs-lookup"><span data-stu-id="39c7f-169">To help reduce issues caused by large keyword lists, you're limited to a maximum of 20 rows in the keyword list of a search query.</span></span>
+
+4. <span data-ttu-id="39c7f-170">検索して統計情報を取得するキーワードをリストに追加した後、検索を実行します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-170">After adding the keywords to the list that you want to search and get statistics for, run the search.</span></span>
+
+5. <span data-ttu-id="39c7f-171">検索が完了したら、それを選択して、フライアウト ページを表示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-171">When the search is completed, select it to display the flyout page.</span></span>
+
+6. <span data-ttu-id="39c7f-172">[検索の **統計情報] タブ** で、[条件] レポート **をクリックして** 、検索のキーワード統計を表示します。</span><span class="sxs-lookup"><span data-stu-id="39c7f-172">On the **Search statistics** tab, click the **Condition report** to display the keyword statistics for the search.</span></span>
+
+    ![各キーワードの統計情報が表示されます](../media/SearchKeywordsList3.png)
+  
+    <span data-ttu-id="39c7f-174">前のスクリーンショットで示したように、各キーワードの統計情報が表示されます。次の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="39c7f-174">As shown in the previous screenshot, the statistics for each keyword are displayed; this includes:</span></span>
+
+    - <span data-ttu-id="39c7f-175">検索に含まれるコンテンツの場所の各種類に対するキーワード統計。</span><span class="sxs-lookup"><span data-stu-id="39c7f-175">The keyword statistics for each type of content location included in the search.</span></span>
+
+    - <span data-ttu-id="39c7f-176">インデックスが作成されていないメールボックス アイテムの数。</span><span class="sxs-lookup"><span data-stu-id="39c7f-176">The number of unindexed mailbox items.</span></span>
+
+    - <span data-ttu-id="39c7f-177">各キーワードの実際の検索クエリと結果 ([パーツ] 列の **[** キーワード] として識別されます) (検索クエリの条件を含む)。</span><span class="sxs-lookup"><span data-stu-id="39c7f-177">The actual search query and results for each keyword (identified as **Keyword** in the **Part** column), which includes any conditions from the search query.</span></span>
+
+    - <span data-ttu-id="39c7f-178">完全な検索クエリ ([パーツ] 列 **でプライマリ** として識別) と、場所の種類ごとに完全なクエリの統計情報。</span><span class="sxs-lookup"><span data-stu-id="39c7f-178">The complete search query (identified as **Primary** in the **Part** column) and the statistics for the complete query for each location type.</span></span> <span data-ttu-id="39c7f-179">これらは、[概要] タブに表示される統計 **と同じ点に注意** してください。</span><span class="sxs-lookup"><span data-stu-id="39c7f-179">Note these are the same statistics displayed on the **Summary** tab.</span></span>
