@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9c4f3da57796903fc22314574f389bcdd92ca4b3
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689451"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311990"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM ツール統合に関する問題のトラブルシューティング
 
@@ -51,7 +51,7 @@ SIEM ツールで検出を引き出す際に問題のトラブルシューティ
 
 4. [アプリ **の登録] をクリックします**。 次に、アプリケーションの一覧で、アプリケーションを選択します。
 
-5. [ **キー] セクション** を選択し、キーの説明を入力し、キーの有効期間を指定します。
+5. [ **証明書と&] セクション、[** 新しいクライアント シークレット] をクリックし、説明を入力し、有効期間を指定します。
 
 6. **[保存]** をクリックします。 キー値が表示されます。
 
@@ -59,7 +59,7 @@ SIEM ツールで検出を引き出す際に問題のトラブルシューティ
 
 
 ## <a name="error-when-getting-a-refresh-access-token"></a>更新アクセス トークンを取得するときにエラーが発生する
-脅威インテリジェンス API または SIEM ツールを使用するときに更新トークンを取得しようとするときにエラーが発生した場合は、Azure Active Directory で関連するアプリケーションの返信 URL を追加する必要があります。
+脅威インテリジェンス API または SIEM ツールを使用するときに更新トークンを取得しようとするときにエラーが発生した場合は、関連するアプリケーションの返信 URL を Azure Active Directory に追加する必要があります。
 
 1. Azure 管理ポータル [にログインします](https://ms.portal.azure.com)。
 

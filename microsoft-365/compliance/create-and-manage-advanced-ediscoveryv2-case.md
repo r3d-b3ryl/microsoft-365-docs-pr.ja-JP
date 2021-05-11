@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 で高度な電子情報開示ケースを作成および管理する
+title: アプリ内でAdvanced eDiscoveryケースを作成および管理Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,69 +18,67 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: この記事では、高度な電子情報開示ケースを作成および管理する方法について説明します。 最初の手順は、ケースを作成し、高度な電子情報開示機能の使用を開始します。
-ms.openlocfilehash: d0f63bca90945c3dfe13b08fa0f1d139da8a9189
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: この記事では、特定のケースを作成および管理するAdvanced eDiscovery説明します。 最初の手順は、ケースを作成し、新しい機能Advanced eDiscovery使用を開始します。
+ms.openlocfilehash: 95e88bb071476de1ed66b3ffaa8942f0a9df89c2
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908367"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311642"
 ---
-# <a name="create-and-manage-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースの作成と管理
+# <a name="create-and-manage-an-advanced-ediscovery-case"></a>ケースの作成と管理Advanced eDiscoveryする
 
-高度な電子情報開示を設定し[](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)、ケースを管理する組織内の電子情報開示マネージャーにアクセス許可を割り当て、次の手順では、ケースの作成と管理を行います。
+サポート案件をAdvanced eDiscovery、ケースを管理する組織内の[電子](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)情報開示管理者にアクセス許可を割り当てると、次の手順では、ケースを作成して管理します。
 
-この記事では、ケースを使用して、法的ケースや他の種類の調査の高度な電子情報開示ワークフローを管理する概要も示します。
+この記事では、ケースを使用して、法的ケースや他の種類の調査Advanced eDiscoveryワークフローを管理するための概要も示します。
 
 ## <a name="create-a-case"></a>ケースを作成する
 
-ケースを作成し、メンバーを追加するには、次の手順を実行します。 ケースを作成するユーザーは、メンバーとして自動的に追加されます。 ケースのメンバーは、Microsoft 365 コンプライアンス センターのケースにアクセスし、高度な電子情報開示タスクを実行できます。
+ケースを作成し、メンバーを追加するには、次の手順を実行します。 ケースを作成するユーザーは、メンバーとして自動的に追加されます。 ケースのメンバーは、コンプライアンス センターのケースにMicrosoft 365し、Advanced eDiscoveryできます。
 
-1. 電子情報開示 <https://compliance.microsoft.com> のアクセス許可が割り当てられているユーザー アカウントの資格情報を使用して、アクセスしてサインインします。 組織の管理役割グループのメンバーは、高度な電子情報開示ケースを作成することもできます。
+1. 電子情報開示 <https://compliance.microsoft.com> のアクセス許可が割り当てられているユーザー アカウントの資格情報を使用して、アクセスしてサインインします。 組織の管理役割グループのメンバーは、組織のケースAdvanced eDiscovery作成することもできます。
 
 2. Microsoft 365 コンプライアンス センターの左側のナビゲーション ウィンドウで、[**すべてを表示**] をクリックし、**[eDiscovery] > [Advanced]** をクリックします。
 
-3. [高度な **電子情報開示] ページ** で、[ケース] **タブを** クリックし、[ケースの作成 **] をクリックします**。
+3. [ケースの **Advanced eDiscovery]** ページで、[ケース] タブをクリックし、[ケースの作成 **] をクリックします**。
 
 4. [ **新しい電子情報開示ケース] フライ** アウト ページで、ケースに名前 (必須) を付け、オプションのケース番号と説明を入力します。 ケース名は、組織内で一意である必要があります。
 
 5. [保存 **] を** クリックしてケースを作成します。
 
-   新しいケースが作成され、 **新しいケース** の [設定] タブが表示されます。
+   新しいケースが作成され、**新設定** の [大文字と小文字] タブが表示されます。
 
-6. [設定]**タブ&アクセス** 許可タイルで、[選択] をクリックし、[更新] を **クリックします**。
+6. [アクセス許可 **] &タブの**[アクセス許可] タイル **設定選択]** を **クリックします**。
 
-7. **[更新]** をクリックします。
+7. [このケース **の管理] フライ** アウト ページの **[メンバーの** 管理] で、[追加] **をクリックして** ケースにメンバーを追加します。
 
-8. [このケース **の管理] フライ** アウト ページの **[メンバーの** 管理] で、[追加] **をクリックして** ケースにメンバーを追加します。
+8. ユーザーの一覧で、ケースに追加するユーザーの名前の横にあるチェック ボックスをオンにします。 前に説明したように、ケースに追加するユーザーに適切な電子情報開示アクセス許可が割り当てられている必要があります。
 
-9. ユーザーの一覧で、ケースに追加するユーザーの名前の横にあるチェック ボックスをオンにします。 前に説明したように、ケースに追加するユーザーに適切な電子情報開示アクセス許可が割り当てられている必要があります。
+9. ケースのメンバーとして追加するユーザーを選択した後、[追加] を **クリックします**。
 
-10. ケースのメンバーとして追加するユーザーを選択した後、[追加] を **クリックします**。
+10. [**このケースを管理**] で、[**保存**] をクリックして、ケース メンバーの新しいリストを保存します。
 
-11. [**このケースを管理**] で、[**保存**] をクリックして、ケース メンバーの新しいリストを保存します。
-
-12. [ホーム **] タブを** クリックして、ケースのホーム ページに移動します。
+11. [ホーム **] タブを** クリックして、ケースのホーム ページに移動します。
 
 ## <a name="manage-the-workflow"></a>ワークフローの管理
 
-高度な電子情報開示の使用を開始するには、一般的な電子情報開示のプラクティスに合った基本的な [ワークフローを次に示します](advanced-ediscovery-edrm.md)。 これらの各手順では、詳細な高度な電子情報開示機能について説明します。
+電子情報開示の使用をAdvanced eDiscovery、電子情報開示の一般的なプラクティスに合った基本的な[ワークフローを次に示します](advanced-ediscovery-edrm.md)。 これらの各手順では、探索できるいくつかの拡張Advanced eDiscovery機能も強調表示します。
 
-![高度な電子情報開示ワークフロー](../media/AeDWorkflow.png)
+![Advanced eDiscoveryワークフロー](../media/AeDWorkflow.png)
 
 1. **[保管担当者と非](add-custodians-to-case.md)[保管データ](non-custodial-data-sources.md)** ソースをケースに追加します。 ケースを作成した後の最初の手順は、保管担当者を追加します。 保管 *担当者とは* 、ケースに関連する可能性のあるドキュメントまたは電子ファイルの管理制御を持つ人物です。 さらに、特定のユーザーに関連付けられているのではなく、ケースに関連する可能性があるデータ ソースを追加できます。
 
    カストディアンをケースに追加するときに発生する (または実行できる) いくつかの操作を次に示します。
 
-   - 保管担当者の Exchange メールボックス、OneDrive アカウント、および保管担当者がメンバーである Microsoft Teams または Yammer グループ内のデータは、ケース内の保管データとして "マーク" できます。
+   - 保管担当者がメンバーである保管担当者の Exchange メールボックス、OneDrive アカウント、および Microsoft Teams または Yammer グループ内のデータは、ケース内の保管データとして "マーク" できます。
   
    - 保管担当者のデータは、(Advanced indexing と呼ばれるプロセスによって) *インデックスが再作成されます*。 これにより、次の手順で検索を最適化できます。
   
    - 保管担当者データを保留にできます。 これにより、調査中にケースに関連する可能性のあるデータが保持されます。
   
-   - 他のデータ ソースを保管担当者に関連付けることができます (たとえば、SharePoint サイトまたは Microsoft 365 グループを保管担当者に関連付けることができます)。
+   - 他のデータ ソースを保管担当者に関連付けることができます (たとえば、SharePoint サイトまたは Microsoft 365 OneDrive グループを保管担当者に関連付けることができます)。
 
-   - Advanced eDiscovery [の通信ワークフロー](managing-custodian-communications.md) を使用して、保管担当者に法的ホールド通知を送信できます。
+   - 管理者の通信ワークフロー[を使用](managing-custodian-communications.md)Advanced eDiscovery保管担当者に法的保留通知を送信できます。
 
 2. **[データ ソースから関連するコンテンツを収集します](create-draft-collection.md)**。 保管担当者と保管されていないデータ ソースをケースに追加した後、組み込みのコレクション ツールを使用して、ケースに関連する可能性のあるコンテンツについてこれらのデータ ソースを検索します。 キーワード、プロパティ、および条件を使用して、[](building-search-queries.md)ケースに最も関連性の高いデータを含む検索結果を返す検索クエリを作成します。 以下のことも実行できます。
 
@@ -90,9 +88,9 @@ ms.locfileid: "50908367"
 
    - クエリを修正し、コレクションを再実行します。
 
-3. **[コレクションをレビュー セットにコミットします](commit-draft-collection.md)**。 検索で目的のデータが返されていることを構成して確認したら、次に、検索結果をレビュー セットに追加します。 レビュー セットにデータを追加すると、アイテムは元の場所から安全な Azure Storage の場所にコピーされます。 レビュー セット内のアイテムを確認および分析する際に、データのインデックスを再作成して、徹底的かつ迅速な検索を最適化します。 さらに、レビュー セットに [365 以外Office 365 データを追加できます](load-non-office-365-data-into-a-review-set.md)。
+3. **[コレクションをレビュー セットにコミットします](commit-draft-collection.md)**。 検索で目的のデータが返されていることを構成して確認したら、次に、検索結果をレビュー セットに追加します。 レビュー セットにデータを追加すると、アイテムは元の場所から安全な場所にAzure Storageされます。 レビュー セット内のアイテムを確認および分析する際に、データのインデックスを再作成して、徹底的かつ迅速な検索を最適化します。 さらに、レビュー セット[にOffice 365データを追加できます](load-non-office-365-data-into-a-review-set.md)。
 
-   また、会話レビュー セットと呼ばれる、データを追加できる特別な *種類のレビュー セットがあります*。 これらの種類のレビュー セットは、Microsoft Teams のようなスレッド会話を再構築、レビュー、エクスポートする会話再構成機能を提供します。 詳細については、「Advanced [eDiscovery での会話の確認」を参照してください](conversation-review-sets.md)。
+   また、会話レビュー セットと呼ばれる、データを追加できる特別な *種類のレビュー セットがあります*。 これらの種類のレビュー セットは、スレッド会話を再構築、レビュー、およびエクスポートする会話再構成機能を提供します。Microsoft Teams。 詳細については、「Review [conversations in Advanced eDiscovery」 を参照してください](conversation-review-sets.md)。
 
 4. **レビュー セット内のデータを確認および分析します**。 データがレビュー セットに追加されたので、さまざまなツールと機能を使用してケース データを表示および分析し、調査するケースに最も関連性の高いデータ セットを削減できます。 このプロセスで使用できるツールと機能の一覧を次に示します。
 
@@ -104,18 +102,18 @@ ms.locfileid: "50908367"
 
    - [ドキュメントに注釈を付け、やり直します](view-documents-in-review-set.md#annotate-view)。 レビューで注釈ツールを使用して、ドキュメントに注釈を付け、ドキュメント内のコンテンツを作業製品として編集できます。 レビュー中に注釈付きまたは編集されたドキュメントの PDF バージョンを生成し、未編集のネイティブ バージョンのドキュメントをエクスポートするリスクを軽減します。
 
-   - [ケース データを分析します](analyzing-data-in-review-set.md)。 Advanced eDiscovery の分析機能は強力です。 レビュー セット内のデータに対して分析を実行した後、ほぼ重複検出、電子メール スレッド、および確認する必要があるドキュメントの量を減らすのに役立つテーマなどの分析を実行します。 また、分析の実行結果を要約した分析レポートも生成します。 前に説明したように、分析を実行すると、 [弁護士クライアント特権検出モデルも実行されます](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
+   - [ケース データを分析します](analyzing-data-in-review-set.md)。 分析機能は、Advanced eDiscovery強力です。 レビュー セット内のデータに対して分析を実行した後、ほぼ重複検出、電子メール スレッド、および確認する必要があるドキュメントの量を減らすのに役立つテーマなどの分析を実行します。 また、分析の実行結果を要約した分析レポートも生成します。 前に説明したように、分析を実行すると、 [弁護士クライアント特権検出モデルも実行されます](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
 
-5. **ケース データをエクスポートおよびダウンロードします**。 ケース データを収集、レビュー、分析した後の最後の手順は、外部レビュー用の Advanced eDiscovery からエクスポートするか、調査チーム外のユーザーによるレビューを行う方法です。 データのエクスポートは 2 段階のプロセスです。 最初の手順は、[](export-documents-from-review-set.md)レビュー セットからデータをエクスポートし、別の Azure Storage の場所 (Microsoft または組織が管理する Azure Storage の場所) にコピーすることです。 次に、Azure Storage Explorer を使用 [してデータ](download-export-jobs.md) をローカル コンピューターにダウンロードします。 エクスポートされたデータ ファイルに加えて、エクスポート パッケージの格納には、エクスポート レポート、概要レポート、およびエラー レポートも含まれます。
+5. **ケース データをエクスポートおよびダウンロードします**。 ケース データを収集、レビュー、分析した後の最後の手順は、Advanced eDiscovery からエクスポートして外部レビューを行う場合や、調査チーム外のユーザーによるレビューを行う方法です。 データのエクスポートは 2 段階のプロセスです。 最初の手順は、[](export-documents-from-review-set.md)レビュー セットからデータをエクスポートし、別の場所 (Microsoft が提供Azure Storage組織が管理する場所) にコピーすることです。 次に、Azure Storage Explorer[を使用して、](download-export-jobs.md)ローカル コンピューターにデータをダウンロードします。 エクスポートされたデータ ファイルに加えて、エクスポート パッケージの格納には、エクスポート レポート、概要レポート、およびエラー レポートも含まれます。
 
-## <a name="advanced-ediscovery-architecture"></a>高度な電子情報開示アーキテクチャ
+## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscoveryアーキテクチャ
 
-単一地域環境と複数地域環境での高度な電子情報開示のエンドツーエンドワークフローと、電子探索参照モデルに合わせて配置されたエンドツーエンドのデータ フローを示すアーキテクチャ図を [次に示](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)します。
+単一地域環境と複数地域環境での Advanced eDiscovery エンド to エンド のワークフローと、電子探索参照モデルに合わせて配置されたエンドツーエンドのデータ フローを示すアーキテクチャ図を[次に示](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)します。
 
-[![モデル ポスター: Microsoft 365 の高度な電子情報開示アーキテクチャ](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![モデル ポスター: Advanced eDiscovery アーキテクチャ Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [PDF ファイルとしてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
-[Visio ファイルとしてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+[ファイルとしてVisioする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

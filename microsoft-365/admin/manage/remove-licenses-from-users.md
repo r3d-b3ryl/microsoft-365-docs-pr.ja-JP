@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: ユーザー アカウントからのライセンスの割り当てを解除する方法について学習します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 550136c2cfa8d81a31e52a4313dc9c967a55d56e
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 87bb8f6fe0e85fc4ac832f2bc4ad746e8d6386eb
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398195"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310994"
 ---
 # <a name="unassign-licenses-from-users"></a>ユーザーからライセンスの割り当てを解除する
 
 ユーザーからのライセンスの割り当てを解除するには、[アクティブなユーザー] ページまたは [ライセンス] ページ **を使用** します。 使用する方法は、特定のユーザーからの製品ライセンスの割り当てを解除するか、特定の製品からのユーザー ライセンスの割り当てを解除するかによって異なります。
 
 > [!NOTE]
-> 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てまたは割り当て解除できない。 セルフサービス購入 [サブスクリプションを引き](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)継ぎ、ライセンスの割り当てまたは割り当てを解除できます。
+> 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てたり割り当て解除したりすることはできません。 [セルフサービス購入サブスクリプションを引き継ぐと](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)、ライセンスの割り当てまたは割り当て解除を行うことができるようになります。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -53,12 +53,12 @@ ms.locfileid: "51398195"
 
 ::: moniker range="o365-germany"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金ライセンス] **ページ** > **に移動** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**課金**] > [**ライセンス**] ページに移動します。
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金ライセンス] **ページ** > **に移動** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金**] > [**ライセンス**] ページに移動します。
 
 ::: moniker-end
 
@@ -75,19 +75,19 @@ ms.locfileid: "51398195"
   
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>アクティブユーザーの課金] > **ページに移動** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**課金**] > [**アクティブなユーザー**] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>アクティブユーザーの課金] > **ページに移動** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金**] > [**アクティブなユーザー**] の順に選択します。
 
 ::: moniker-end
 
@@ -99,19 +99,19 @@ ms.locfileid: "51398195"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>アクティブユーザーの課金] > **ページに移動** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**課金**] > [**アクティブなユーザー**] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>アクティブユーザーの課金] > **ページに移動** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金**] > [**アクティブなユーザー**] の順に選択します。
 
 ::: moniker-end
 
@@ -123,11 +123,11 @@ ms.locfileid: "51398195"
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>ライセンスを削除すると、ユーザーのデータは何が起こりますか?
 
 - ユーザーからライセンスが削除されると、そのアカウントに関連付けられたデータは 30 日間保持されます。 30 日間の猶予期間の後、データは削除され、回復できません。
-- OneDrive for Business に保存されたファイルは、ユーザーが Microsoft 365 管理センターから削除されたか、Active Directory 同期によって削除されない限り、削除されません。 詳細については [、「OneDrive の保持と削除」を参照してください](/onedrive/retention-and-deletion)。
-- ライセンスが削除されると、ユーザーのメールボックスは、コンテンツ検索や高度な電子情報開示などの電子情報開示ツールを使用して検索できなくなりました。 詳細については [、「Microsoft 365](../../compliance/content-search.md#searching-disconnected-or-de-licensed-mailboxes)のコンテンツ検索」の「切断されたメールボックスまたはライセンス解除されたメールボックスの検索」を参照してください。
-- エンタープライズ サブスクリプション (Office 365 Enterprise E3 など) がある場合、Exchange Online を使用すると、非アクティブなメールボックスを使用して、削除されたユーザー アカウントのメールボックス データを [保持できます](../../compliance/inactive-mailboxes-in-office-365.md)。 詳細については、「Exchange Online で非アクティブなメールボックスを [作成および管理する」を参照してください](../../compliance/create-and-manage-inactive-mailboxes.md)。
-- ライセンスが削除された後でユーザーの Microsoft 365 データへのアクセスをブロックする方法、および後でデータにアクセスする方法については、「元従業員を削除する」を [参照してください](../add-users/remove-former-employee.md)。
-- ユーザーのライセンスを削除し、Office アプリがまだインストールされている場合は、Office アプリを使用[](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)するときに Office でライセンスされていない製品とライセンス認証エラーが表示されます。
+- ユーザーが OneDrive for Business Microsoft 365管理センターから削除されたか、Active Directory 同期によって削除されない限り、OneDrive for Businessに保存されたファイルは削除されません。 詳細については、「保持と[削除OneDriveを参照してください](/onedrive/retention-and-deletion)。
+- ライセンスが削除されると、ユーザーのメールボックスは、コンテンツ検索や電子情報開示ツールなどの電子情報開示ツールを使用してAdvanced eDiscovery。 詳細については、「コンテンツ検索リファレンス」の「切断されたメールボックスまたはライセンス解除されたメールボックスの検索 [」を参照してください](../../compliance/content-search-reference.md#searching-disconnected-or-de-licensed-mailboxes)。
+- Office 365 Enterprise E3 のような Enterprise サブスクリプションがある場合、Exchange Online を使用すると、非アクティブなメールボックスを使用して、削除されたユーザー アカウントのメールボックス データを[保持できます](../../compliance/inactive-mailboxes-in-office-365.md)。 詳細については、「アクティブでないメールボックスを作成して管理する」を参照[Exchange Online。](../../compliance/create-and-manage-inactive-mailboxes.md)
+- ライセンスが削除された後でユーザーの Microsoft 365 データへのアクセスをブロックする方法、および後でデータにアクセスする方法については、「元従業員を削除する」を[参照してください](../add-users/remove-former-employee.md)。
+- ユーザーのライセンスを削除し、Office アプリがまだインストールされている場合は、Office でライセンス[](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)認証されていない製品とライセンス認証エラーが表示され、Office アプリを使用します。
 
 ## <a name="next-steps"></a>次の手順
 
@@ -137,4 +137,4 @@ ms.locfileid: "51398195"
 
 [サブスクリプションからライセンスを削除](../../commerce/licenses/buy-licenses.md) する (記事)\
 [ユーザーにライセンスを割り当てる](assign-licenses-to-users.md)(記事)\
-[Microsoft 365 for business](../../commerce/licenses/subscriptions-and-licenses.md) のサブスクリプションとライセンスについて (記事)
+[ビジネス向けサブスクリプションとライセンスMicrosoft 365理解](../../commerce/licenses/subscriptions-and-licenses.md)する (記事)

@@ -16,16 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: コンプライアンス センターのコンテンツ検索機能の有効な制限 (同時検索の最大数などMicrosoft 365について学習します。 これらの検索制限は、コア電子情報開示ケースに関連付けられた検索にも適用されます。
-ms.openlocfilehash: e4cfc79d35b4dc6a22e8e7a872699d906b39a901
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: コンテンツ検索およびコア電子情報開示機能の有効な制限について、コンプライアンス センター Microsoft 365説明します。
+ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244322"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311414"
 ---
-# <a name="limits-for-content-search"></a>コンテンツ検索の制限 
-コンプライアンス センターのコンテンツ検索ツールには、さまざまな制限Microsoft 365適用されます。 これには、コンテンツ検索ページで実行される検索と、コア電子情報開示ページの電子情報開示ケースに関連付けられた **検索が含** まれます。 これらの制限は、組織に提供されるサービスの正常性と品質を維持するのに役立ちます。 また、検索用のメール メッセージのインデックス作成に関連するExchange Onlineがあります。 コンテンツ検索または電子メール インデックス作成の制限は変更できますが、コンテンツ検索の計画、実行、およびトラブルシューティングを行う際にこれらの制限を考慮に入れ得る点に注意する必要があります。
+# <a name="limits-for-ediscovery-search"></a>電子情報開示検索の制限 
+
+コンプライアンス センターの電子情報開示検索ツールには、さまざまな制限Microsoft 365適用されます。 これには、コンテンツ検索ページで実行される検索と、コア電子情報開示ページの電子情報開示ケースに関連付けられた **検索が含** まれます。 これらの制限は、組織に提供されるサービスの正常性と品質を維持するのに役立ちます。 また、検索用のメール メッセージのインデックス作成に関連するExchange Onlineがあります。 電子情報開示検索や電子メール インデックス作成の制限は変更できますが、電子情報開示検索の計画、実行、およびトラブルシューティングを行う際にこれらの制限を考慮に入れ得る点に注意する必要があります。
+
+このツールに関連する制限については、「Advanced eDiscoveryの[制限」を参照Advanced eDiscovery](limits-ediscovery20.md)
   
 ## <a name="search-limits"></a>検索の制限
 

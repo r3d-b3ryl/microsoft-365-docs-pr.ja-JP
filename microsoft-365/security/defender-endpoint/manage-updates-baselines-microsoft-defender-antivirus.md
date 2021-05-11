@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/08/2021
-ms.openlocfilehash: 4f2b931018d49affa2d94ddf1a147c4fd2e02085
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.date: 05/10/2021
+ms.openlocfilehash: 5b599e9d5a5c3d098033af1f1df96ee9f26025ee
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302078"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52312014"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -83,7 +83,7 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 - 統合の改善 (クラウド、Microsoft 365 Defender)。
 <br/>
 <details>
-<summary> 2021 年 4 月 (プラットフォーム: 4.18.2104.9|エンジン: 1.1.18100.5)</summary>
+<summary> 2021 年 4 月 (プラットフォーム: 4.18.2104.9 |エンジン: 1.1.18100.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.337.2.0**  
 &ensp;リリース: **2021** 年 4 月 1 日  

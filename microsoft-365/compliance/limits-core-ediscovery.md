@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: この記事では、Microsoft 365 のコア電子情報開示ケースの制限について説明します。
-ms.openlocfilehash: e18e1e6c1d9d7ecd78deaf267be72ccdc9d1ba5d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: この記事では、電子情報開示のコア ケースの制限について説明Microsoft 365。
+ms.openlocfilehash: e7b1013abd9fd94748baf3b83dd04efbc3831a1d
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905889"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311426"
 ---
 # <a name="limits-in-core-ediscovery"></a>コア電子情報開示の制限
 
@@ -32,7 +32,7 @@ ms.locfileid: "50905889"
   |:-----|:-----|
   |組織のケースの最大数。  <br/> |制限なし  <br/> |
   |組織のケースホールドの最大数。  <br/> |10,000  <br/> |
-  |1 つのケースホールド内のメールボックスの最大数。 この制限には、ユーザー メールボックスの合計と、Microsoft 365 グループ、Microsoft Teams、およびグループグループに関連付けられたメールボックスYammer含まれます。  <br/> |1,000  <br/> |
+  |1 つのケースホールド内のメールボックスの最大数。 この制限には、ユーザー メールボックスの合計と、グループ、グループ、およびグループに関連Microsoft 365メールボックスMicrosoft TeamsがYammerされます。  <br/> |1,000  <br/> |
   |1 つのケースホールド内のサイトの最大数。 この制限には、OneDrive for Business サイト、SharePoint サイト、および Microsoft 365 グループ、Microsoft Teams、および Yammer グループに関連付けられたサイトの合計が含まれます。  <br/> |100  <br/> |
   |コアの電子情報開示ホーム ページに表示されるケースの最大数と、ケース内の [保持] タブ、[検索] タブ、および [エクスポート] タブに表示されるアイテムの最大数。 <sup>1</sup> |1,000|
   |||
@@ -45,4 +45,4 @@ ms.locfileid: "50905889"
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-Core eDiscovery ケースに関連付けられたコンテンツ検索とエクスポートに関連する制限の詳細については、「Limits for Content [Search and Core eDiscovery」を参照してください](limits-for-content-search.md)。
+Core 電子情報開示ケースに関連付けられた検索とエクスポートに関連する制限の詳細については、「コンテンツ検索の制限」および [「Core eDiscovery」を参照してください](limits-for-content-search.md)。

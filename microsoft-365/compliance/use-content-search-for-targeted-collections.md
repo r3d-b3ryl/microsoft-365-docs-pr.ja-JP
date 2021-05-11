@@ -1,5 +1,5 @@
 ---
-title: コンテンツ検索を使用して対象コレクションを検索する
+title: 対象のコレクションにコンテンツ検索を使用する
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: コンテンツ検索は、Microsoft 365コンプライアンス センターで使用して、対象となるコレクションを実行し、アイテムが特定のメールボックスまたはサイト フォルダーに確実に格納されます。
-ms.openlocfilehash: ea01386b7e52c05f8116caacddd6dec7baf12272
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+description: コンプライアンス センターでコンテンツMicrosoft 365を使用して、特定のメールボックスまたはサイト フォルダー内のアイテムを検索する対象のコレクションを実行します。
+ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994764"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311908"
 ---
-# <a name="use-content-search-for-targeted-collections"></a>コンテンツ検索を使用して対象コレクションを検索する
+# <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
 
-Microsoft 365 コンプライアンス センターのコンテンツ検索機能は、UI で Exchange メールボックスまたは SharePoint サイトおよび OneDrive for Business サイト内の特定のフォルダーを検索するための直接的な方法を提供します。 ただし、実際の検索クエリ構文でサイトのメールまたはパス (DocumentLink) プロパティのフォルダー ID プロパティを指定することで、特定のフォルダー (ターゲット *コレクションと呼* ばれる) を検索できます。 コンテンツ検索を使用して対象のコレクションを実行すると、ケースや特権アイテムに対応するアイテムが特定のメールボックスまたはサイト フォルダーにあると確信している場合に便利です。 この記事のスクリプトを使用して、メールボックス フォルダーのフォルダー ID を取得したり、SharePoint サイトおよびサイト上のフォルダーのパス (DocumentLink) をOneDrive for Businessできます。 次に、検索クエリのフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返します。
+Microsoft 365 コンプライアンス センターのコンテンツ検索ツールは、UI で Exchange メールボックスまたは SharePoint サイトおよび OneDrive for Business サイト内の特定のフォルダーを検索するための直接的な方法を提供します。 ただし、実際の検索クエリ構文でサイトのメールまたはパス (DocumentLink) プロパティのフォルダー ID プロパティを指定することで、特定のフォルダー (ターゲット *コレクションと呼* ばれる) を検索できます。 コンテンツ検索を使用して対象のコレクションを実行すると、ケースや特権アイテムに対応するアイテムが特定のメールボックスまたはサイト フォルダーにあると確信している場合に便利です。 この記事のスクリプトを使用して、メールボックス フォルダーのフォルダー ID を取得したり、SharePoint サイトおよびサイト上のフォルダーのパス (DocumentLink) をOneDrive for Businessできます。 次に、検索クエリのフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返します。
 
 > [!NOTE]
 > SharePoint または OneDrive for Business サイトのフォルダーにあるコンテンツを返す場合、このトピックのスクリプトでは Path プロパティの代わりに DocumentLink 管理プロパティを使用します。 DocumentLink プロパティはフォルダー内のすべてのコンテンツを返すのに対し、Path プロパティは一部のメディア ファイルを返さないので、Path プロパティよりも堅牢です。
@@ -37,7 +37,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索機�
 
 - 手順 1 でスクリプトを実行するには、セキュリティ コンプライアンス センターの電子情報開示マネージャー役割グループ&メンバーである必要があります。 詳細については、「Assign [eDiscovery permissions 」を参照してください](assign-ediscovery-permissions.md)。
 
-    さらに、組織でメール受信者の役割を割り当Exchange Onlineがあります。 これは、スクリプトに含まれる **Get-MailboxFolderStatistics** コマンドレットを実行するために必要です。 既定では、メール受信者の役割は、組織の [組織の管理] 役割グループと [受信者の管理] 役割グループに割りExchange Online。 アクセス許可の割り当て方法の詳細については、「Exchange Onlineグループメンバーの管理[」を参照してください](/exchange/manage-role-group-members-exchange-2013-help)。 カスタム役割グループを作成し、その役割にメール受信者の役割を割り当て、手順 1 でスクリプトを実行する必要があるメンバーを追加することもできます。 詳細については、「役割グループの [管理」を参照してください](/Exchange/permissions-exo/role-groups)。
+- また、組織でメール受信者の役割を割り当Exchange Onlineがあります。 これは、スクリプトに含まれる **Get-MailboxFolderStatistics** コマンドレットを実行するために必要です。 既定では、メール受信者の役割は、組織の [組織の管理] 役割グループと [受信者の管理] 役割グループに割りExchange Online。 アクセス許可の割り当て方法の詳細については、「Exchange Onlineグループメンバーの管理[」を参照してください](/exchange/manage-role-group-members-exchange-2013-help)。 カスタム役割グループを作成し、その役割にメール受信者の役割を割り当て、手順 1 でスクリプトを実行する必要があるメンバーを追加することもできます。 詳細については、「役割グループの [管理」を参照してください](/Exchange/permissions-exo/role-groups)。
 
 - この記事のスクリプトは、最新の認証をサポートしています。 スクリプトは、ユーザーまたは組織のMicrosoft 365使用Microsoft 365 GCCできます。 ドイツの Office 365、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行を編集し `Connect-ExchangeOnline` *、ExchangeEnvironmentName* パラメーター (および組織の種類に適した値) を使用して、PowerShell に接続Exchange Onlineがあります。  また、行を編集し `Connect-IPPSSession` *、ConnectionUri* パラメーターと *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、セキュリティ & コンプライアンス センター PowerShell に接続する必要があります。 詳細については[、「PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa)を使用するConnectの例Exchange Onlineセキュリティ Connectコンプライアンス センター [PowerShell &を参照してください](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
 
@@ -57,7 +57,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索機�
 
 この最初の手順で実行するスクリプトは、メールボックス フォルダーまたは SharePoint フォルダーと OneDrive for Business フォルダーの一覧、および各フォルダーの対応するフォルダー ID またはパスを返します。 このスクリプトを実行すると、次の情報を求めるメッセージが表示されます。
 
-- **電子メール アドレスまたはサイト URL**: 保管担当者の電子メール アドレスを入力して、メールボックス フォルダーとフォルダーのExchange一覧を返します。 または、指定したサイトのパスSharePointリストをOneDrive for Businessサイトの URL を入力します。 次に例を示します。
+- **電子メール アドレスまたはサイト URL**: 保管担当者の電子メール アドレスを入力して、メールボックス フォルダーとフォルダーのExchange一覧を返します。 または、指定したサイトのパスSharePointリストをOneDrive for Businessサイトの URL を入力します。 次に、いくつかの例を示します:
 
   - **Exchange**: stacig@contoso.onmicrosoft <spam> <spam> .com
 

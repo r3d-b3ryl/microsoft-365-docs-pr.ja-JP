@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12f648ce476f6e29cbb6b038cc42f2e744d77104
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dc1e8707dc0810c0986698674a64e969792b5fb8
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933303"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311234"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のインストールに関する問題のトラブルシューティング
 
@@ -40,8 +40,8 @@ ms.locfileid: "51933303"
 
 インストール時にエラーが発生した場合と、パッケージ マネージャーによる意味のあるエラー メッセージが表示されない場合があります。 インストールが成功した場合は、以下を使用してインストール ログを取得して確認します。
 
- ```bash
- sudo journalctl | grep 'microsoft-mdatp'  > installation.log
+```bash
+ sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -50,7 +50,7 @@ ms.locfileid: "51933303"
 
 ```Output
  microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
- ```
+```
 
 正しい日付とインストール時刻を持つ前のコマンドからの出力は、成功を示します。
 
@@ -63,8 +63,8 @@ ms.locfileid: "51933303"
 | package                       | 配布                             |
 |-------------------------------|------------------------------------------|
 | mdatp-rhel8。Linux.x86_64.rpm  | Oracle、RHEL、CentOS 8.x              |
-| mdatp-sles12.Linux.x86_64.rpm | SuSE Linux Enterprise Server 12.x        |
-| mdatp-sles15.Linux.x86_64.rpm | SuSE Linux Enterprise Server 15.x        |
+| mdatp-sles12.Linux.x86_64.rpm | SuSE Linux Enterprise サーバー 12.x        |
+| mdatp-sles15.Linux.x86_64.rpm | SuSE Linux Enterprise サーバー 15.x        |
 | mdatp。Linux.x86_64.rpm        | Oracle、RHEL、CentOS 7.x              |
 | mdatp。Linux.x86_64.deb        | Debian と Ubuntu 16.04、18.04、20.04 |
 
@@ -77,6 +77,7 @@ mdatp サービスが実行されている場合は、次のチェックを行�
 ```bash
 systemctl status mdatp
 ```
+
 ```Output
  ● mdatp.service - Microsoft Defender for Endpoint
    Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
@@ -119,7 +120,7 @@ systemctl status mdatp
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
     ```
 
-    Ubuntu ```<systemd_path>``` ```/lib/systemd/system``` と Debian の配布と ```/usr/lib/systemd/system``` 、Rhel、CentOS、Oracle、SLES の場合です。
+    Ubuntu `<systemd_path>` `/lib/systemd/system` と Debian の配布と `/usr/lib/systemd/system` 、Rhel、CentOS、Oracle、SLES の場合です。
    次に、手順 2 を再実行します。
 
 4. 上記の手順が機能しない場合は、SELinux がインストールされ、エンフォースモードになっているか確認してください。 その場合は、これを制限モード (できれば) または無効モードに設定してみてください。 これは、パラメーターをファイル内で "permissive" または "disabled" に設定し、その後再起動 `SELINUX` `/etc/selinux/config` することで実行できます。 詳細については、selinux のマン ページを確認してください。
