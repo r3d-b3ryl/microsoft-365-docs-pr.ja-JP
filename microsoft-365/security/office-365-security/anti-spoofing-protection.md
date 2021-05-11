@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769024"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291033"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -80,7 +80,7 @@ EOP は、標準のメール認証方法と送信者評価手法の組み合わ�
 
   ![Microsoft の正当なパスワード リセット](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-  メッセージは実際には Microsoft から送信されたものですが、ユーザーは疑っています。 本物と偽物のパスワード リセット メッセージを見分けることが難しいため、ユーザーは、メッセージを無視したり、スパムとして報告したり、フィッシング詐欺として Microsoft に不要な報告を返したりすることがあります。
+  このメッセージは Microsoft から本当に送信されたものですが、ユーザーには疑う習慣がついています。本物と偽物のパスワード リセット メッセージを見分けることが難しいため、ユーザーは、メッセージを無視したり、スパムとして報告したり、フィッシング詐欺として Microsoft に不要な報告を返したりしてしまう可能性があります。
 
 ## <a name="different-types-of-spoofing"></a>スプーフィングのさまざまな種類
 
@@ -139,11 +139,11 @@ Microsoft Defender for Office 365 組織は、セキュリティ/コンプライ
 
 たとえば、Gabriela Laureano (glaureano @ contoso.com) はバード ウォッチングに興味があり、メーリングリスト birdwatchers @ fabrikam.com に参加し、リストに次のメッセージを送信します。
 
-> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **件名:** 今週、レーニア山からアオカケス を見ることができます <p> 今週、レーニア山からの風景を 眺めてみませんか?
+> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **件名:** 今週、レーニア山からアオカケス を見ることができます <p> 今週のレーニア山からの風景を眺めてみませんか?
 
 メーリングリスト サーバーはメッセージを受信し、その内容を変更して、リストのメンバーにリプレイします。 リプレイされたメッセージの From アドレス (glaureano @ contoso.com) は同じですが、件名行にタグを追加して、メッセージの下側にフッターを追加します。 この種の変更は、メーリング リストでは一般的なものですが、スプーフィングの誤検出の原因になることがあります。
 
-> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **件名:** [BIRDWATCHERS] 今週、レーニア山からアオカケス を見ることができます <p> 今週、レーニア山からの風景を 眺めてみませんか? <p> このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
+> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **件名:** [BIRDWATCHERS] 今週、レーニア山からアオカケス を見ることができます <p> 今週のレーニア山からの風景を眺めてみませんか? <p> このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
 
 メーリング リストのメッセージがスプーフィング対策チェックにパスできるようにするには、メーリングリストを制御するかどうかに応じて、次の手順を実行します。
 
@@ -163,7 +163,7 @@ Microsoft Defender for Office 365 組織は、セキュリティ/コンプライ
 
   - メール クライアントで、メッセージを受信トレイに移動する受信トレイ ルールを作成してください。 「[スプーフィング インテリジェンスを使用して、認証されていないメールの許可された送信者を構成する](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email)」で説明されているように、管理者にオーバーライドの構成を依頼することもできます。
 
-  - Microsoft 365 でサポート チケットを作成して、メーリング リストを正当なものとして扱うためのオーバーライドを作成します。 詳細については、「[一般法人向けサポートへのお問い合わせ - 管理者向けヘルプ](../../admin/contact-support-for-business-products.md)」を参照してください。
+  - Microsoft 365 でサポート チケットを作成して、メーリング リストを正当なものとして扱うためのオーバーライドを作成します。 詳細については、「[一般法人向けサポートへのお問い合わせ - 管理者向けヘルプ](../../business-video/get-help-support.md)」を参照してください。
 
 他のすべてが失敗した場合は、Microsoft に対してメッセージを誤検知として報告できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
