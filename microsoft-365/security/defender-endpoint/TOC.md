@@ -344,6 +344,8 @@
 #### [デバイス コントロール]()
 ##### [デバイス コントロールのレポート](device-control-report.md)
 ##### [USB デバイスの制御](control-usb-devices-using-intune.md)
+##### [リムーバブル記憶域の保護](device-control-removable-storage-protection.md)
+##### [リムーバブル記憶域のアクセス制御](device-control-removable-storage-access-control.md)
 
 #### [動作ブロックと封じ込め]()
 ##### [動作ブロックと封じ込め](behavioral-blocking-containment.md)

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Microsoft 365 の電子情報開示ツールを使用して、Exchange ハイブリッド環境のオンプレミス ユーザーの Teams チャット データを検索してエクスポートします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5053eb54b59d55c428290987bcc8b2a8ce26b5b
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: ab59c179b62903dd5f1ddd9b718f81a1ac78923a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471026"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311803"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>オンプレミス ユーザーの Teams チャット データを検索する
 
@@ -40,7 +40,7 @@ ms.locfileid: "51471026"
 - オンプレミス ユーザーに関連付けられた Teams チャット データのみがクラウドベースのストレージ領域に保存されます。 オンプレミス ユーザーは、このストレージ領域にアクセスすることはできません。
 
 > [!NOTE]
-> Teams チャネルに含まれる会話は、チームに関連付けられているクラウドベースのメールボックスに常に保存されます。つまり、チャネルの会話を検索できます。 Teams チャネルの会話の検索の詳細については、「[Microsoft Teams と Microsoft 365 グループの検索」](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)を参照してください。
+> Teams チャネルに含まれる会話は、チームに関連付けられているクラウドベースのメールボックスに常に保存されます。つまり、チャネルの会話を検索できます。 Teams チャネルの会話の検索の詳細については、「[Microsoft Teams と Microsoft 365 グループの検索」](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups)を参照してください。
   
 ## <a name="how-it-works"></a>メカニズム
 
@@ -56,11 +56,11 @@ Microsoft Teams 対応のユーザーがオンプレミスのメールボック�
 
 Microsoft 365 コンプライアンス センターのコア電子情報開示ケースに関連付けられているコンテンツ検索および検索ツールの UI 要素:
   
-- [**オンプレミス ユーザー向けの Office アプリ コンテンツの追加**] が、コンテンツ検索の [**場所**] の下に表示されます。 このチェック ボックスをオンにして、コンテンツ検索のオンプレミス ユーザーのクラウドベースのストレージを含めます。
+- [**のユーザー用アプリ コンテンツの追加**] チェックボックスは、コンテンツ検索ツールの **Locations** ウィザード ページに表示され、既定でオンになっています。 このチェック ボックスをオンにしておくと、コンテンツ検索でオンプレミス ユーザーのクラウド ベースのストレージが含まれます。
 
-    ![[オンプレミス ユーザー向けの Office アプリ コンテンツの追加] チェックボックスが、コンテンツ 検索 UI に追加されます。](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![[オンプレミス ユーザー向けの Office アプリ コンテンツの追加] チェックボックスが、コンテンツ 検索 UI に追加されます。](../media/EHAMShardCheckBox.png)
   
-- オンプレミス ユーザーは、検索するユーザー メールボックスを選択するために使用するコンテンツの場所選択ツールに表示されます。
+- 検索する特定のユーザーを選択すると、オンプレミス ユーザーを検索できます。
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>オンプレミス ユーザーの Teams チャット コンテンツの検索
 
@@ -68,29 +68,25 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索を�
   
 1. Microsoft 365 コンプライアンス センターで、[**コンテンツ検索**] に移動します。
 
-2. [**検索**] タブで、[![追加アイコン](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **新しい検索**] をクリックします。
+2. [**検索**] タブ、[**新しい 検索**] をクリックし、新しい検索に名前を付えます。
 
-    前に説明したように、[**オンプレミス ユーザー向けの Office アプリ コンテンツの追加**] チェックボックスが、[**場所**] の下に表示されます。 既定では、オンになっています。
+3. [**場所**] ページで、 Exchange メールボックスのトグルを [**オン**] に切り替えます。 [**オンプレミス のユーザー アプリ コンテンツを追加する**] チェック ボックスが既定で 表示およびオンになっていることを確認します。
 
-3. キーワード クエリを作成し、必要に応じて検索クエリに条件を追加します。 Team チャット データのみを検索するには、[**キーワード]** ボックスに次のクエリを追加します。
+4. 特定のユーザーの Teams コンテンツを検索するには、[**ユーザー、グループ、またはチームを選ぶ**] 選択し、検索に含める特定のユーザーを選択します。 それ以外の場合は、[**次へ**] クリックして、オンプレミスユーザーを含むすべてのユーザーの Teams コンテンツを検索します。
+
+5. [**検索条件の定義**] ページで、キーワード クエリを作成し、必要に応じて検索クエリに条件を追加します。 Team チャット データのみを検索するには、[**キーワード**] ボックスに次のクエリを追加します。
 
     ```text
     kind:im AND kind:microsoftteams
     ```
 
-4. この時点で、[**場所**] の下で、次のいずれかのオプションを選択できます。
+6. 検索を送信して実行します。 オンプレミス ユーザーの検索結果は、他の検索結果と同様にプレビューできます。 検索結果 (Teams チャット データを含む) を PST ファイルにエクスポートすることもできます。 詳細については、以下を参照してください。
 
-    - **[すべての場所]:** 組織内のすべてのユーザーのメールボックスを検索するには、このオプションを選択します。 チェックボックスを選択すると、オンプレミス ユーザーの Teams チャット データのすべてのクラウドベースのストレージも検索されます。
+    - [検索を作成する](content-search.md)
 
-    - **特定の場所:** このオプションを選択し、[**変更**\>] をクリックし、ユーザー、グループ、チームを選択して、特定のメールボックスを検索します。 前に説明したように、場所の選択ツールを使用して、オンプレミス ユーザーの Teams チャット データをを検索できます。
+    - [検索結果をプレビューする](preview-ediscovery-search-results.md)
 
-5. 検索を保存して実行します。 オンプレミス ユーザーの検索結果は、他の検索結果と同様にプレビューできます。 検索結果 (Teams チャット データを含む) を PST ファイルにエクスポートすることもできます。 詳細については、以下を参照してください。
-
-    - [検索を作成する](content-search.md#create-a-search)
-
-    - [検索結果をプレビューする](content-search.md#preview-search-results)
-
-    - [コンテンツ検索の結果をエクスポートする](export-search-results.md)
+    - [検索結果をエクスポートする](export-search-results.md)
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>PowerShell を使用してオンプレミス ユーザーの Teams チャット データを検索する
 
@@ -106,13 +102,13 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索を�
 
     *IncludeUserAppContent* パラメーターを使用して、*ExchangeLocation* パラメーターで指定されたユーザーのクラウドベースのストレージを指定します。 *AllowNotFoundExchangeLocationsEnabled* を使用すると、オンプレミス ユーザーのクラウドベースのストレージを検索できます。 このパラメーターに `$true` 値を使用すると、検索はメールボックスの存在を検証してから実行されます。 このクラウドベースのストレージは通常のクラウドベースのメールボックスとして解決されないため、これはオンプレミス ユーザーのクラウドベースのストレージを検索するために必要です。
 
-    次の例では、Contoso 組織のオンプレミス ユーザーである Sara Davis のクラウドベースのストレージで、キーワード "redstone" を含む Teams チャット (インスタント メッセージ) を検索します。
+    次の例では、Contoso 組織のオンプレミス ユーザーである Sara Davis のクラウドベースのストレージで、キーワード "redstone" を含む Teams チャットを検索します。
   
     ```powershell
-    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
+    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND (kind:im AND kind:microsoftteams)" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   検索を作成したら、必ず **Get-compliancesearch** コマンドレットを使用して、検索を実行してください。 
+   検索を作成したら、必ず **Get-compliancesearch** コマンドレットを使用して、検索を実行してください。
   
 これらのコマンドレットの詳細については、以下を参照してください。
   
@@ -134,11 +130,11 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索を�
   
  **すべての組織でこの機能が既定で有効になる前の、オンプレミス ユーザーの古い Teams チャット データを、電子情報開示ツールで検索できますか?**
   
-Microsoft は、2018 年 1 月 31 日にオンプレミス ユーザー向け Teams チャット データの保存を開始しました。 オンプレミスの Teams ユーザーの ID が、この日付以降に Microsoft 365 のオンプレミスの Active Directory と Azure Active Directory 間で同期されている場合、Teams チャット データはクラウドに保存され、電子情報開示ツールを使用して検索することができます。
+Microsoft では 2018 年 1 月 31 日にオンプレミス ユーザーの Teams チャット データを保存し始めました。オンプレミスの Teams ユーザーの ID が、この日付以降に Microsoft 365 のオンプレミスの Active Directory と Azure Active Directory 間で同期されている場合、Teams チャット データはクラウドに保存され、電子情報開示ツールを使用して検索することができます。
 
  **オンプレミス ユーザーは、クラウドに Teams チャット データを保存するためにライセンスが必要ですか?**
   
-はい。 クラウドベースのストレージにオンプレミス ユーザーの Teams チャット データを保存するには、そのユーザーに Office 365 (または Microsoft 365) の Microsoft Teams ライセンスと Exchange Online Plan ライセンスが割り当てられている必要があります。
+必要です。クラウドベースのストレージにオンプレミス ユーザーの Teams チャット データを保存するには、そのユーザーに Office 365 (または Microsoft 365) の Microsoft Teams ライセンスと Exchange Online Plan ライセンスが割り当てられている必要があります。
 
 **オンプレミス ユーザー向けのクラウドベースのストレージはどこにありますか?**
   
@@ -146,7 +142,7 @@ Teams のチャット データは、オンプレミスのユーザーのデー�
 
 **ユーザーのオンプレミス メールボックスがクラウドに移行された場合、Teams チャット データが失われるリスクはありますか?**
   
-いいえ。 オンプレミス ユーザーのプライマリ メールボックスをクラウドに移行すると、そのユーザーの Teams チャット データは、新しいクラウドベースのプライマリ メールボックスに移行されます。
+ありません。オンプレミス ユーザーのプライマリ メールボックスをクラウドに移行すると、そのユーザーの Teams チャット データは、新しいクラウドベースのプライマリ メールボックスに移行されます。
   
  **電子情報開示の保留ポリシーまたはアイテム保持ポリシーをオンプレミス ユーザーに適用することはできますか?**
   
