@@ -38,8 +38,14 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 セキュリティ センターの概要
           href: ../defender/overview-security-center.md
-        - name: 脅威エクスプローラー (およびリアルタイムの検出)
-          href: threat-explorer.md
+        - name: Defender for Office 365 用脅威エクスプローラー
+          items:
+            - name: 脅威エクスプローラーでの脅威の捜索
+              href: threat-hunting-in-threat-explorer.md
+            - name: 脅威エクスプローラーを使用したメール セキュリティ
+              href: email-security-in-microsoft-defender.md
+            - name: 脅威エクスプローラーおよびリアルタイムの検出の基本
+              href: real-time-detections.md
         - name: メール エンティティ ページ
           href: mdo-email-entity-page.md
         - name: AIR の概要
@@ -188,6 +194,8 @@
           href: message-trace-scc.md
         - name: メッセージとファイルを Microsoft に報告する
           href: report-junk-email-messages-to-microsoft.md
+        - name: レポート メッセージ アドインおよびレポート フィッシング アドインを有効にする
+          href: enable-the-report-message-add-in.md
         - name: メール フロー ルールを使用して EOP で実行可能な添付ファイルを含むメッセージをブロックする
           href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
         - name: メール フロー ルールを使用して EOP でバルク メールをフィルタリングする

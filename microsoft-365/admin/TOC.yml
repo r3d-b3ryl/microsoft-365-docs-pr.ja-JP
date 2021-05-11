@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 作業の開始
+    - name: 概要
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -123,7 +123,7 @@
               href: add-users/remove-former-employee-step-2.md
             - name: 手順 3. 元従業員のメールを別の従業員に転送するか、または元従業員のメールボックスを共有メールボックスに変換する
               href: add-users/remove-former-employee-step-3.md
-            - name: 手順 4. 別の従業員に OneDrive および Outlook データへのアクセスを許可する
+            - name: 手順 4. 別の従業員に OneDrive および Outlook のデータへのアクセスを許可する
               href: add-users/remove-former-employee-step-4.md
             - name: 手順 5. 元従業員のモバイル デバイスをワイプし、ブロックする
               href: add-users/remove-former-employee-step-5.md
@@ -273,8 +273,6 @@
           href: manage/manage-office-scripts-settings.md
         - name: パートナーやリセラーを探す
           href: manage/find-your-partner-or-reseller.md
-        - name: Microsoft Rewards を管理する
-          href: manage/manage-microsoft-rewards.md
         - name: 組織に対する Microsoft フィードバックを管理する
           href: /admin/manage/manage-feedback-ms-org.md
         - name: リリース オプションをセットアップする
@@ -422,4 +420,4 @@
     - name: トラブルシューティング
       href: /office/troubleshoot/
     - name: サポートに連絡
-      href: contact-support-for-business-products.md
+      href: ../business-video/get-help-support.md
