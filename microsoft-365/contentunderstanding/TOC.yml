@@ -42,6 +42,16 @@
   items:
     - name: 導入を開始する
       href: adoption-getstarted.md
+    - name: Microsoft 365 で契約を管理する
+      items:
+        - name: 概要
+          href: solution-manage-contracts-in-microsoft-365.md
+        - name: 手順 1. SharePoint Syntex を使う
+          href: solution-manage-contracts-step1.md
+        - name: 手順 2. Microsoft Teams を使う
+          href: solution-manage-contracts-step2.md
+        - name: 手順 3. Power Automate
+          href: solution-manage-contracts-step3.md
 - name: 設定と管理
   items:
     - name: コンテンツの理解をセットアップする
