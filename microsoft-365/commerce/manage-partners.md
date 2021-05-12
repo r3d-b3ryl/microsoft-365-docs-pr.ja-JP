@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理する方法について説明します。
 ms.date: 04/13/2021
-ms.openlocfilehash: e225fa0c525d484e8c5a3887b82277a1da5861b0
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 63c5595d14ca0a531f50875ea8058663b626bb89
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107570"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331576"
 ---
 # <a name="manage-partner-relationships"></a>パートナー関係の管理
 
@@ -34,9 +32,9 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 1. 管理者は、次のフォームを使用してパートナーを検索して連絡します <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> 。
 2. パートナーは、パートナー関係を確立するために顧客に電子メール要求を送信します。
-3. 顧客は管理センターで招待Microsoft 365、パートナーとの作業を開始します。
+3. お客様は、Microsoft 365 管理センターで招待を受け入れ、パートナーとの作業を開始します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
@@ -47,9 +45,9 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 | パートナーの種類 | 説明 |
 | ------ | ------------------- |
 | リセラー | 組織または学校に Microsoft 製品を販売するパートナー。 |
-| 委任された管理者 | 組織または学校の製品とサービスを管理するパートナー。 [Azure Active Directory (AD) では、パートナーはテナントのグローバル管理者です。 この役割を使用すると、ユーザー アカウントの作成、ライセンスの割り当てと管理、パスワードのリセットなど、サービスを管理できます。 |
+| 委任された管理者 | 組織または学校の製品とサービスを管理するパートナー。 Azure Active Directory (AD) では、パートナーはテナントのグローバル管理者です。 この役割を使用すると、ユーザー アカウントの作成、ライセンスの割り当てと管理、パスワードのリセットなど、サービスを管理できます。 |
 | リセラー &委任された管理者 | 組織または学校に対して Microsoft 製品およびサービスを販売および管理するパートナー。 |
-| パートナー | パートナーにテナント内のユーザー アカウントを与え、他のユーザー アカウントMicrosoft サービス代わりに使用します。 |
+| パートナー | パートナーにテナント内のユーザー アカウントを与え、パートナーが代理で他の Microsoft サービスと作業します。 |
 | Advisor | パートナーは、パスワードをリセットし、サポート インシデントを処理できます。 |
 | Microsoft Products & サービス契約 (MPSA) パートナー | MPSA プログラムを通じて複数のパートナーと協力した場合は、お互いに購入した情報を表示できます。 |
 | LINE-of-business (LOB) パートナー | パートナーは、組織または学校に固有の LOB アプリを開発、提出、および管理できます。 |
@@ -67,7 +65,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 パートナーを見つけて、パートナーと一緒に作業すると、招待メールが送信されます。
 
-1. 電子メールで、リンクを選択して管理センター Microsoft 365移動します。
+1. 電子メールで、リンクを選択して Microsoft 365 管理センターに移動します。
 2. [パートナー **の承認&同意** する] ページで **、Microsoft カスタマー** 契約のリンクを選択し、ドキュメントを読み取ります。
 3. このボックスをオンにして、契約を読んだと確認します。
 4. [承認 **する] &を選択します**。
@@ -77,7 +75,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 パートナーが既に存在するが、Microsoft カスタマー 契約にまだ署名していない場合は、契約に同意してから、そのパートナーが代わりにサブスクリプションを購入または管理する必要があります。
 
-1. パートナーからメールを受け取った場合は、リンクを選択して管理センター Microsoft 365同意するページ<a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">に移動</a>します。
+1. パートナーからメールを受け取った場合は、リンクを選択して Microsoft 365 管理センターに移動するか、[契約の承諾] <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">ページに移動</a> します。
 2. Microsoft Customer Agreement のリンクを **選択し** 、ドキュメントを読み取る。
 3. このボックスをオンにして、契約を読んだと確認します。
 4. **[同意する]** を選択します。
@@ -91,7 +89,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 管理者の役割は、パートナーからいつでも削除できます。 管理者ロールを削除しても、パートナー関係は削除されます。 リセラーなど、別の容量で引き続き作業できます。 パートナーと仕事をしなくなった場合は、パートナーに問い合わせ、関係を終了してください。
 
-1. 管理センターで、[パートナーの関係]**ページ設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">移動</a>します。
+1. 管理センターで、[設定パートナーの関係 **]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">ページに移動</a>します。
 2. [パートナー **の関係] ページ** で、削除するパートナーの名前を含む行を選択します。
 3. パートナーの名前を含む行を選択します。
 4. パートナー ページで、[役割の削除] **を選択します**。

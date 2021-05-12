@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,17 +15,18 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_ssp
 search.appverid:
 - MET150
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用してセルフサービス購入をオンまたはオフにする方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9fb5593855f9523198a3d70548e444a831e82c80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/18/2021
+ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918244"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333376"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する
 
@@ -36,7 +38,7 @@ ms.locfileid: "50918244"
 - 該当する製品の一覧とセルフサービス購入が有効か無効かを表示する
 - 特定の製品の現在の設定を表示または変更して、有効または無効にする
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 **MSCommerce PowerShell モジュール** を使用するには、次が必要です。
 
@@ -99,8 +101,8 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Power BI Pro | CFQ7TTC0L3PB |
 | Project Plan 1 | CFQ7TTC0KXND |
 | Project Plan 3 | CFQ7TTC0KXNC |
-| Visio プラン 1 | CFQ7TTC0KXN9 |
-| Visio プラン 2 | CFQ7TTC0KXN8 |
+| Visio Plan 1 | CFQ7TTC0KXN9 |
+| Visio Plan 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>AllowSelfServicePurchase の状態を表示または設定する
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 管理センター - 概要
+title: Microsoft 365管理センター - 概要
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,23 +20,50 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 管理センターの詳細について説明します。
-ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: 管理センターの詳細Microsoft 365確認してください。
+ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221763"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332248"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
+- [簡易表示の管理センター](#the-admin-center-in-simplified-view)
+- [ダッシュボード ビューの管理センター](#the-admin-center-in-dashboard-view)
+
+## <a name="the-admin-center-in-simplified-view"></a>簡易表示の管理センター
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
+
+管理者センター Microsoft 365、パスワードのリセット、請求書の表示、ユーザーの追加または削除など、すべて 1 か所で行えます。
+
+仕事用アカウントで Office.com にサインインし、アプリ起動ツールを選択します。 
+
+管理センターにアクセスする権限がある場合は、一覧に **[管理者]** と表示されます。 選択します。 
+
+管理センターの上部で、自分のトップ アクションを確認します。 新しいアカウントの作成、Teams の使用、電子メールのセットアップ、アプリのインストールなど、セットアップ済みの内容に応じて異なるアクションOfficeがあります。 
+ 
+[ **ユーザー] タブ** の **[** 組織] には、アプリやサービスにアクセスしたり、新しいユーザーを追加したり、パスワードをリセットしたり、[その他の操作] メニューを使用したりできるユーザーの一覧が **表示** されます。 自分の情報と設定を表示または編集するユーザーを選択します。  
+
+[新しい **Teams]** タブで、新しいチームを作成するか、既存のチームを管理します。 チームのメンバーを管理するか、[その他のアクション] を選択して他のユーザー設定Teamsできます。 
+
+[サブスクリプション **] タブで**、製品の追加、ライセンスの追加、または[その他の操作] メニューを使用して、ライセンスまたは支払い方法を変更します。
+
+[学習 **] タブ** で、管理センターに関するビデオや記事、その他の機能Microsoft 365します。 管理センターの高度な機能を確認するには、ナビゲーション メニューを開き、見出しを展開して詳細を表示します。 [ **すべて表示]** を選択して、ナビゲーション メニュー内のすべてを表示するか、検索バーを使用して探している項目をすばやく見つける。
+
+サポートが必要な場合は、[ヘルプ] **を選択&します**。 ヘルプが必要なトピックを検索し、推奨されるソリューションを表示するか、サポートに連絡するヘッドセットを選択し、質問と連絡先情報を入力します。 
+
+## <a name="the-admin-center-in-dashboard-view"></a>ダッシュボード ビューの管理センター
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-Microsoft 365 管理センターは、クラウドでビジネスを管理する場所です。 ユーザーの追加と削除、ライセンスの変更、パスワードのリセットなどのタスクを実行できます。 
+管理Microsoft 365は、クラウドでビジネスを管理する場所です。 ユーザーの追加と削除、ライセンスの変更、パスワードのリセットなどのタスクを実行できます。 
 
-セキュリティやデバイス管理などの専門的なワークスペースを使用すると、きめ細かな制御を行えます。 管理センターの機能の詳細については、この記事の「セキュリティ、デバイス管理 [、Exchange](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) などの特定の種類の IT ロールと他のワークスペースについて」を参照してください。
+セキュリティやデバイス管理などの専門的なワークスペースを使用すると、きめ細かな制御を行えます。 管理センターの機能の詳細については、この記事の「セキュリティ、デバイス管理、Exchange など、特定の種類の[IT](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange)ロールと他のワークスペースについて」を参照してください。
 
-Microsoft 365 管理センターにアクセスするには、[admin.microsoft.com] に移動するか、既にサインインしている場合はアプリ 起動ツールを選択し、[管理] を選択 **します**。 [](https://admin.microsoft.com)
+管理センターにMicrosoft 365するには、[admin.microsoft.com] に移動するか、[](https://admin.microsoft.com)既にサインインしている場合はアプリ起動ツールを選択し、[管理] を選択 **します**。
 
 ホーム ページでは、頻繁に実行するタスクのカードを作成できます。 新しいカードを追加するには、[ **カードの追加**] を選択し、追加するカードの横にあるプラス記号を選択します。 終了したら、ウィンドウを閉じます。 カードを選択してドラッグして、必要な場所にドラッグすることで、カードを再配置できます。 カードを削除するには、[その他の操作] **を選択し**、[削除] を **選択します**。
 
@@ -54,13 +81,11 @@ Microsoft 365 管理センターにアクセスするには、[admin.microsoft.c
 
 課金、パスワード、ユーザー、および管理者の管理の詳細については、このコースの他のレッスンを参照してください。
 
-## <a name="who-is-an-admin"></a>管理者は誰ですか? 
+## <a name="who-is-an-admin"></a>Whoは管理者ですか? 
 
-既定では、Microsoft 365 for business サブスクリプションに登録して購入するユーザーは、管理者のアクセス許可を取得します。 そのユーザーは、組織の Microsoft 365 の管理に役立つ管理者アクセス許可を他のユーザーに割り当てできます。
+既定では、ビジネス サブスクリプションに登録して購入するユーザーはMicrosoft 365アクセス許可を取得します。 そのユーザーは、他のユーザーに管理者のアクセス許可を割り当て、組織のMicrosoft 365管理できます。
 
 "このページにアクセスしたり、このアクションを実行したりするためのアクセス許可はありません"というメッセージが表示された場合は、管理者ではありません。
-<br><br>    
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
   
 ### <a name="who-has-admin-permissions-in-my-business"></a>社内の管理者アカウントをお持ちの場合
 <a name="bkmk_admin"> </a>
@@ -116,7 +141,7 @@ Microsoft 365 管理センターは、Microsoft 365 を管理するすべての�
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>管理センターで使用できる言語オプションは何ですか?
 
-Microsoft 365 管理センターは、40 の言語に完全にローカライズされています。
+管理Microsoft 365は、40 の言語で完全にローカライズされています。
 
 |言語 |Locale |
 |---------|---------|

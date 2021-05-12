@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: presharm
+ms.reviewer: presharm, jmueller
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,17 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
 description: Microsoft 製品とサービスの購入に役立つ提案について説明します。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: a3c91168c90b91d83a9aa116c1ff57d103b3c48c
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: c61fa53267f2fdb60e78a05cd89aa6f364cb2395
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280873"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332956"
 ---
 # <a name="understand-the-proposal-workflow"></a>提案ワークフローの理解
 
@@ -64,7 +63,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 
 - 提案で名前が付けられた人物か\
     OR
-- 組織のAzure Active Directory[管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)である
+- 組織の [Azure Active Directory グローバル管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) が既に存在する
 
 ## <a name="what-is-the-overall-workflow"></a>全体的なワークフローは何ですか?
 
@@ -86,7 +85,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 課金アカウント | アカウント設定、請求書、支払い方法、および製品の管理に使用されるアカウント。 |
 | 課金プロファイル | 請求書に含まれるアイテムや請求書の支払い方法をカスタマイズできる組織に関する情報。 請求プロファイルには、請求アカウント名、特定の請求プロファイルに使用される支払い方法、連絡先情報、請求書設定、および請求プロファイルの変更、請求書の支払い、製品とサービスの購入を行う権限が含まれます。 |
-| 既存の契約 | 組織が既に Microsoft と締結している契約。 これには、サービス契約、Microsoft 製品Enterprise Agreementサービス契約& Microsoft カスタマー契約が含まれますが、これらに限定される場合があります。 |
+| 既存の契約 | 組織が既に Microsoft と締結している契約。 これには、サービス契約、Microsoft 製品サービス契約、マイクロソフトエンタープライズ契約 Microsoft カスタマー契約&が含まれますが、これらに限定されない場合があります。 |
 | Microsoft カスタマー 契約 (MCA) | Microsoft と組織が保持するアカウントの契約条件を概説する契約。 |
 | Microsoft 担当者 | お客様と組織の提案を準備する、承認された Microsoft 担当者。 |
 | 組織 | Microsoft 製品、テクノロジ、またはサービスを使用する法人。 |
@@ -101,7 +100,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 
 [ **組織] セクション** には、関連付けられた請求アカウントが表示されます。 課金アカウント情報は、既存の請求アカウントから取得するか、Microsoft 担当者が作成します。 組織が別の組織の関連会社である場合は、その組織の名前と住所を含む [リード組織] セクションも表示されます。
 
-組織が Microsoft との商用関係を初めて確立し、まだ MCA に署名していない場合は、組織またはリード組織の下の情報が正しくない場合は、担当者に連絡して変更を加えます。 MCA を受け入れてから、組織の住所と連絡先情報を確認および変更するには、管理センターの[](https://go.microsoft.com/fwlink/p/?linkid=2084771)[請求アカウント] ページMicrosoft 365できます。 組織名が変更された場合は、サービス要求を開き、更新します。 [サービス要求を開く方法について](../business-video/get-help-support.md)
+組織が Microsoft との商用関係を初めて確立し、まだ MCA に署名していない場合は、組織またはリード組織の下の情報が正しくない場合は、担当者に連絡して変更を加えます。 MCA を承諾した後、Microsoft 365 管理センターの [課金アカウント] ページ[](https://go.microsoft.com/fwlink/p/?linkid=2084771)で組織の住所と連絡先情報を確認および変更できます。 組織名が変更された場合は、サービス要求を開き、更新します。 [サービス要求を開く方法について](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>お客様の情報
 

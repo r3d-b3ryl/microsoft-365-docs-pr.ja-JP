@@ -5,22 +5,25 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.collection: M365-subscription-management
+ms.custom:
+- AdminSurgePortfolio
+- commerce_ssp
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学習できます。
-ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 03/17/2021
+ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297298"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333256"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
@@ -31,7 +34,7 @@ ms.locfileid: "52297298"
 
 ::: moniker-end
 
-ユーザーは、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てできます。 セルフサービス購入の支払いは、お客様が行う責任があります。 サブスクリプションは、管理センターの Microsoft 365で管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
+ユーザーは、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てできます。 セルフサービス購入の支払いは、お客様が行う責任があります。 サブスクリプションは、Microsoft 365 管理センター (microsoft 365 管理センター)<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">で admin.microsoft.com。</a>
 
 管理者は、購入したサブスクリプションに対する読み取り専用ビューを持っています。 購入したサブスクリプションごとに、製品、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーを確認できます。
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,26 +13,23 @@ localization_priority: None
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 支払った源泉徴収税のアカウントでクレジットを要求する方法について説明します。 この記事は、インドの顧客にのみ適用されます。
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_melmar
-ms.reviewer: martinl
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 3965127bb30777f26dc04a3861167955163cd827
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4866bcd07cb4a54088d230166f9b04f8258d7185
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246095"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331792"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>アカウントの源泉徴収税のクレジットを要求する (インドのお客様)
 
-インドのお客様は、Microsoft Regional Sales Pte Ltd. シンガポール (MRS) が請求する Web ダイレクト (Azure および Microsoft 365) の請求書を受け取り、請求書を決済するためにシンガポールへのクロスボーダー支払いを行います。 支払いを実行するときに税金を差し控える場合、この記事では、MRS を使用してアカウントで源泉徴収税 (WHT) のクレジットを請求するプロセスについて説明します。
+インドのお客様は、Microsoft Regional Sales Pte Ltd. シンガポール (MRS) が請求する Web ダイレクト (Azure と Microsoft 365) の請求書を受け取り、請求書を決済するためにシンガポールに対してクロスボーダー支払いを行います。 支払いを実行するときに税金を差し控える場合、この記事では、MRS を使用してアカウントで源泉徴収税 (WHT) のクレジットを請求するプロセスについて説明します。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-and-wire"></a>チェックとワイヤーで支払う請求書支払いのお客様向け
 

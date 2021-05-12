@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 組織の無料セルフサービス サインアップ サブスクリプションを管理する方法について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 64648151d7761bd8bb0d2301d59fb093de98b127
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b469515a649399c71ef64ba2567dfa376f21e9a7
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107618"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333220"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>セルフサービス サインアップ サブスクリプションの管理
 
@@ -41,7 +39,7 @@ ms.locfileid: "52107618"
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>これらのサブスクリプションとセルフサービス購入サブスクリプションの違いは何ですか?
 
-セルフサービス サインアップ サブスクリプションは無料で、セルフサービス購入サブスクリプションよりも大きな製品リストで利用できます。 ユーザーがセルフサービス購入サブスクリプションに登録すると、ユーザーは支払いを行う責任があります。 セルフサービス購入サブスクリプションは、Power Platform 製品 (Power BI、Power Apps、および Power Automate)、Project、および Visio でのみ利用できます。 詳細については、「セルフサービス購入 [に関するよく寄せられる質問」を参照してください](self-service-purchase-faq.md)。
+セルフサービス サインアップ サブスクリプションは無料で、セルフサービス購入サブスクリプションよりも大きな製品リストで利用できます。 ユーザーがセルフサービス購入サブスクリプションに登録すると、ユーザーは支払いを行う責任があります。 セルフサービス購入サブスクリプションは、Power Platform 製品 (Power BI、Power Apps、Power Automate)、Project、Visio でのみ利用できます。 詳細については、「セルフサービス購入 [に関するよく寄せられる質問」を参照してください](self-service-purchase-faq.md)。
 
 ## <a name="block-users-from-signing-up"></a>ユーザーのサインアップをブロックする
 
@@ -60,4 +58,4 @@ ms.locfileid: "52107618"
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>ディレクトリの削除をブロックするセルフサービス サインアップ サブスクリプションがある
 
-個々のユーザーがサインアップできるセルフサービスサインアップ製品は、Azure AD ディレクトリに認証用のゲスト ユーザーを作成します。 データの損失を回避するために、これらのセルフサービス製品は、ディレクトリから完全に削除されるまで、ディレクトリの削除をブロックします。 削除できるのは、Azure 管理者ADのみです。詳細については、「ディレクトリを削除[する」を参照Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-delete-howto)
+個々のユーザーがサインアップできるセルフサービスサインアップ製品は、Azure AD ディレクトリに認証用のゲスト ユーザーを作成します。 データの損失を回避するために、これらのセルフサービス製品は、ディレクトリから完全に削除されるまで、ディレクトリの削除をブロックします。 削除できるのは、Azure 管理者ADのみです。詳細については [、「Azure Active Directory のディレクトリを削除する」を参照してください](/azure/active-directory/users-groups-roles/directory-delete-howto)。

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,27 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 description: デバイスで使用するグループにライセンスを割り当てる方法について学習します。
 ms.custom:
-- okr_SMB
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.openlocfilehash: a316810e3e6ddb1373697dc56b2fccb5a32cf0b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- okr_SMB
+- commerce_licensing
+search.appverid: MET150
+ms.date: 03/17/2021
+ms.openlocfilehash: 67bd0734953c64f51390aac949a7da477914c7b4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911484"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331660"
 ---
 # <a name="manage-licenses-for-devices"></a>デバイスのライセンスを管理する
 
 Microsoft 365 Apps for enterprise (device) または Microsoft 365 Apps for Education (device) をお持ちのお客様は、Azure AD グループを使用してデバイスにライセンスを割り当てできます。 デバイスにライセンスがある場合、そのデバイスを使用するユーザーは、Microsoft 365 Apps for enterprise (以前は 365 ProPlus という名前Office使用できます。 たとえば、組織内のユーザーが使用する 20 台のノート PC とタブレットがあるとします。 各デバイスにライセンスを割り当てると、1 つのデバイスにログインする各ユーザーは、独自のライセンスを必要とせずに Microsoft 365 Apps for enterprise を使用します。
 
 > [!IMPORTANT]
-> Microsoft 365 Apps for enterprise のデバイス ベースのライセンスは、一部の商用ユーザーおよび一部の教育ユーザー向けアドオン ライセンスとしてのみ利用できます。 商用ユーザーの場合、ライセンスは *Microsoft 365 Apps for enterprise (device)* であり、サブスクリプションのマイクロソフトエンタープライズ契約/マイクロソフトエンタープライズ契約利用できます。 教育のお客様の場合、ライセンスは *Microsoft 365 Apps for Education (デバイス)* であり、Education ソリューション (EES) の登録でのみ利用できます。 詳細については、教育の可用性に関するブログ投稿 [を参照してください](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/)。 商用利用の場合は、Microsoft アカウント担当者にお問い合わせください。
+> Microsoft 365 Apps for enterprise のデバイス ベースのライセンスは、一部の商用ユーザーおよび一部の教育ユーザー向けアドオン ライセンスとしてのみ利用できます。 商用ユーザーの場合、ライセンスは *Microsoft 365 Apps for enterprise (device)* であり、サブスクリプションのマイクロソフトエンタープライズ契約/マイクロソフトエンタープライズ契約利用できます。 教育のお客様の場合、ライセンスは *Microsoft 365 Apps for Education (デバイス)* であり、Education ソリューション (EES) の登録でのみ利用できます。 詳細については、教育の可用性に関するブログ投稿 [を参照してください](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education)。 商用利用の場合は、Microsoft アカウント担当者にお問い合わせください。
 
 まず、Azure Active Directory 管理センターでグループを作成し、そのグループにデバイスを割り当てる必要があります。 デバイスの要件、使用できるグループの種類、およびデバイス ライセンスを使用する Microsoft 365 Apps for enterprise を構成する方法など、デバイス ライセンスの詳細については [、「Microsoft 365 Apps for](/deployoffice/device-based-licensing)enterprise 用デバイス ベースのライセンス」を参照してください。
 

@@ -1,40 +1,40 @@
 ---
-title: Microsoft 365 for business のサブスクリプションとライセンスについて
+title: ビジネス向けサブスクリプションとライセンスMicrosoft 365理解する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
-- commerce
+- Adm_O365
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-search.appverid:
-- MET150
-description: Microsoft 365 for business のサブスクリプションとライセンスについて説明します。
+- commerce_licensing
+search.appverid: MET150
+description: ビジネス向けサブスクリプションとライセンスについてMicrosoft 365確認します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6310b3e48c59da3243746cceca2d0516f511b827
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a8ec5b0716a5ceaa02526520e76dc390a6fba0f7
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911436"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331492"
 ---
-# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Microsoft 365 for business のサブスクリプションとライセンスについて
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>ビジネス向けサブスクリプションとライセンスMicrosoft 365理解する
 
-Microsoft 365 for business のサブスクリプションを購入する場合は、月単位または年単位で支払う一連のアプリとサービスにサインアップします。 サブスクリプションの一部として受け取るアプリケーションとサービスは、Microsoft 365 Apps for business や Microsoft 365 Business Standard など、購入した製品によって異なっています。 各製品に付属する内容は [、Microsoft 365 の](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) 中小企業向けページで確認できます。
+ビジネス向け Microsoft 365 サブスクリプションを購入する場合は、月単位または年単位で支払う一連のアプリとサービスにサインアップします。 サブスクリプションの一部として受け取るアプリケーションとサービスは、購入した製品 (サブスクリプションやサービスなど) によってMicrosoft 365 Apps for business Microsoft 365 Business Standard。 各製品に付属する内容は、Microsoft 365中規模のビジネス向けページ[で確認](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)できます。
 
 サブスクリプションを購入する場合、組織の人数に基づいて、必要なライセンス数を指定します。 サブスクリプションを購入した後、組織内のユーザーのアカウントを作成し、各ユーザーにライセンスを割り当てる。 組織のニーズの変化に応じて、新しいユーザーに対応するためにライセンスを追加購入したり、組織を離れるユーザーのライセンスを他のユーザーに再割り当てしたりできます。
 
-複数のサブスクリプションがある場合、各サブスクリプションを使って異なるユーザーにライセンスを割り当てることができます。 たとえば、Microsoft 365 Business Standard サブスクリプションの一部として、すべてのユーザーをすべての Microsoft 365 アプリケーションおよびサービスに割り当てできます。 また、別の Visio サブスクリプションを使用して、ユーザーのサブセットを Visio Online に割り当てできます。
+複数のサブスクリプションがある場合、各サブスクリプションを使って異なるユーザーにライセンスを割り当てることができます。 たとえば、すべてのユーザーをすべてのユーザーに、Microsoft 365サブスクリプションの一部としてMicrosoft 365 Business Standardできます。 また、ユーザーのサブセットを別のサブスクリプションVisioオンラインに割りVisioできます。
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>ユーザーが Office をインストールできるデバイスは何台ですか?
 
@@ -55,10 +55,10 @@ Microsoft 365 for business のサブスクリプションを購入する場合�
   
 |**サブスクリプションにこのサービスがある場合**|**自動的に行われます**|
 |:-----|:-----|
-|Exchange Online  <br/> |そのユーザーのメールボックスが作成されます。 <br/> このタスクを完了する SLA の詳細については、「 [セットアップ..」を参照してください。Microsoft 365 管理](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)センターのメッセージ 。 |
+|Exchange Online  <br/> |そのユーザーのメールボックスが作成されます。 <br/> このタスクを完了する SLA の詳細については、「[セットアップ..」を参照してください。管理センターのMicrosoft 365メッセージを表示します](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |既定の SharePoint Online チーム サイトの編集権限がそのユーザーに割り当てられます。  <br/> |
 |Skype for Business Online  <br/> |ユーザーは、ライセンスに関連付けられている機能にアクセスできます。  <br/> |
-|エンタープライズ向け Microsoft  365 アプリ  <br/> |このユーザーは、Office最大 5 つの Mac または PC、5 つのタブレット、および 5 つのスマートフォンでアプリをダウンロードできます。  <br/> |
+|Microsoft 365 Apps for Enterprise  <br/> |ユーザーは、最大 5 Officeの Mac または PC、5 つのタブレット、および 5 つのスマートフォンでアプリをダウンロードできます。  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>ユーザー以外のメールボックスのライセンスについて
 
@@ -66,11 +66,11 @@ Microsoft 365 for business のサブスクリプションを購入する場合�
   
 - [共有メールボックスを作成する](../../admin/email/create-a-shared-mailbox.md)
 - [共有メールボックスからライセンスを削除する](../../admin/email/remove-license-from-shared-mailbox.md)
-- [他のすべての Microsoft](/exchange/collaboration-exo/shared-mailboxes) 365 プランの Exchange Online の共有メールボックス。
+- [他のすべてのプランExchange Online](/exchange/collaboration-exo/shared-mailboxes)共有メールボックスMicrosoft 365します。
 - [会議室メールボックスの作成と管理](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
 - [備品用メールボックスの管理](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
 
-## <a name="who-can-assign-licenses"></a>ライセンスを割り当てできるユーザー
+## <a name="who-can-assign-licenses"></a>Who割り当て可能ですか?
 
 個々の管理者が実行できるライセンスに関する作業は、その役割によって異なります。以下の表は、最も一般的なオプションをまとめたものです。管理者の役割と権限の詳細については、「[Office 365 の管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   

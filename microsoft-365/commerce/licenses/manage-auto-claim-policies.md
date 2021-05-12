@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-description: 特定のアプリのユーザーにライセンスを自動的に割り当てる自動クレーム ポリシーを作成および管理する方法について説明します。
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
+description: 特定のアプリのユーザーにライセンスを自動的に割り当てる自動クレーム ポリシーを作成および管理する方法について説明します。
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: c89c8114c9a71a315d5876a0edf55d269ed2b12d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: b104700905b3753466036411368951f12a7012d8
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327108"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331648"
 ---
 # <a name="manage-auto-claim-policies"></a>自動請求ポリシーを管理する
 

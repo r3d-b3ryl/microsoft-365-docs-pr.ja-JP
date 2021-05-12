@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +13,19 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
+- commerce_subscriptions
+search.appverid: MET150
 description: 継続請求をオフまたはオンにして Microsoft 365 を更新する方法について説明します。
-ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: e24f7301f6229e76b86f19594526e3ed84689221
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244650"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333184"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 
@@ -49,17 +48,19 @@ ms.locfileid: "52244650"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+
 ::: moniker-end
 
 2. 継続請求を管理するサブスクリプションを選択します。
@@ -68,17 +69,15 @@ ms.locfileid: "52244650"
 5. **[保存]** を選択します。
 
     > [!NOTE]
+    >
     > - **継続請求** 設定の変更は、アクティブなサブスクリプションに対してのみ行うことができます。 サブスクリプションが既に期限切れになっていたり、無効であったりする場合に、**継続請求** をオンまたはオフにするには、 サブスクリプションを [再アクティブ化](reactivate-your-subscription.md)するする必要があります。
     > - **継続請求** を無効にしても、サブスクリプションはキャンセルされません。 サブスクリプションを有効にし続ける場合には、請求書の支払いを手動で行う必要があります。
     > - **継続請求** をオフにすると、サブスクリプションは有効期限が切れるまで有効になります。 有効期限は、**[サブスクリプションと支払いの設定]** セクションのサブスクリプションの詳細情報ページで確認できます。
     > - サブスクリプションをただちにキャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[サブスクリプションを再度有効にする](reactivate-your-subscription.md)
-  
-[サブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)
-
-[プロダクト キーを入力する](../enter-your-product-key.md)
-  
-[Microsoft 365 for business の試用版を購入する](../try-or-buy-microsoft-365.md)
+[サブスクリプションを再度有効にする](reactivate-your-subscription.md) (記事)
+[サブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md) (記事)\
+[プロダクト キーの入力](../enter-your-product-key.md) (記事)\
+[Microsoft 365 for business の試用版を購入する](../try-or-buy-microsoft-365.md) (記事)

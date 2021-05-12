@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: '[製品] ページに移動して、組織が持つサブスクリプションを確認する方法について学習します。'
 ms.date: 01/21/2021
-ms.openlocfilehash: c54b9795487f1cfc5902c2c761fdd65b78109bcf
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: e1f7ebecafa5edff1ccc3d6eb4e4dc143054996a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327236"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332668"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 
 管理者の場合は、管理センターに移動して、組織が持つサブスクリプションを確認できます。
   
- **管理者ではない場合**: 「Microsoft [365 for business 製品またはライセンスについて」を参照してください。](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**管理者ではない場合**: 「[ビジネスMicrosoft 365ライセンスに関する情報」を参照してください。](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. [製品 **] タブ** に、すべてのサブスクリプションが表示されます。 各サブスクリプション 行には、ライセンス、サブスクリプションの状態、請求に関する情報が含まれます。

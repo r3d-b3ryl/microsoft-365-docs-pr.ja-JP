@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Microsoft 365 で配布リストとして電子メールを送信する方法について説明します。
-ms.openlocfilehash: 379f2471fd38da5098bf8f2ca82f4f76ee82bd8e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb1d5a62d2b1a3bbfae87849e8aa96cef14c173e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915160"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332428"
 ---
 # <a name="send-email-as-a-distribution-list"></a>配布リストとして電子メールを送信する
 
@@ -38,6 +38,8 @@ Microsoft 365 では、電子メールを配布リストとして送信できま
   
  **管理者**: [「Microsoft 365](../email/add-user-or-contact-to-distribution-list.md) ユーザーまたは連絡先をリストに追加する」および「メンバーが [Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) グループ トピックとしてメールを送信できる」の手順に従い、配布リストに正しいユーザーを追加していることを確認します。
   
+## <a name="outlook-on-the-web"></a>Outlook on the web
+
 1. Outlook on the web を開き、受信トレイに移動します。 
     
 2. 配布リストに送信されたメッセージを開きます。 
@@ -49,3 +51,13 @@ Microsoft 365 では、電子メールを配布リストとして送信できま
 5. From アドレス (など) を右クリックし、[ `Ina@weewalter.me` 削除] を **選択します**。<br/> ![FROM エイリアスを削除する](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. 次に、support@contoso.com などの配布リストを入力して、メッセージを送信します。 次に配布リストから返信すると、そのアドレスが [From] リストにオプションとして **表示** されます。<br/>![共有メールボックスのエイリアスが表示される](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+
+## <a name="outlook"></a>Outlook
+
+1. Outlook デスクトップ クライアントを開きます。
+
+2. 新しいメールを作成します。 [From] **フィールドをクリック** し、[その他の **メール アドレス] を選択します**。 [From] フィールドが表示されない場合は、[オプション] に移動し、[フィールドの表示] セクションで **[From]** を選択します。
+
+3. グローバル アドレス **一覧から** 配布リスト アドレスを選択します。
+
+4. 電子メールを送信します。

@@ -1,5 +1,5 @@
 ---
-title: ビジネス向けMicrosoft Teams無料Microsoft 365アップグレード
+title: Microsoft Teams Free からビジネス向け Microsoft 365 へのアップグレード
 f1.keywords:
 - NOCSH
 - fwlink 2135143
@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: drjones
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,30 +17,29 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
-description: '[無料] からビジネス サブスクリプションMicrosoft Teams新しいMicrosoft 365アップグレードする方法について学習します。'
+description: Microsoft Teams Free から新しい Microsoft 365 for business サブスクリプションにアップグレードする方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 75639666aec322e66cd3a529d415ee09b86c9b9f
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 3f8c188055a9ec7c048921f7d5ee030407854616
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280885"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333108"
 ---
-# <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>ビジネス向けMicrosoft Teams無料Microsoft 365アップグレード
+# <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Microsoft Teams Free からビジネス向け Microsoft 365 へのアップグレード
 
 > [!IMPORTANT]
-> この記事は、インドのMicrosoft Teams組織にのみ適用されます。
+> この記事は、インドの Microsoft Teams Free 組織にのみ適用されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-無料の組織をアップグレードするにはMicrosoft Teams無料の管理者Microsoft Teams必要があります。 無料の組織を作成した場合は、自動的に管理者Microsoft Teamsされます。
+Microsoft Teams Free 組織をアップグレードするには、Microsoft Teams Free 管理者である必要があります。 Microsoft Teams Free 組織を作成した場合、管理者は自動的に管理者になります。
 
 ## <a name="step-1-get-your-work-or-school-account-id"></a>手順 1: 仕事または学校のアカウント ID を取得する
 
-プロセスを開始するには、基礎となる仕事または学校のアカウント ID を取得します。 このアカウント ID は、無料のアカウントにアクセスするために使用する電子メール Microsoft Teamsです。
+プロセスを開始するには、基礎となる仕事または学校のアカウント ID を取得します。 このアカウント ID は、Microsoft Teams Free へのアクセスに使用する電子メール アドレスとは異なります。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank"><https://account.activedirectory.windowsazure.com></a> に移動します。
 2. ヘッダーで、プロファイル アイコンを選択します。 アカウント ID は名前の下に表示され *、.onmicrosoft.com*.\ で終わります。
@@ -48,7 +47,7 @@ ms.locfileid: "52280885"
 
 ## <a name="step-2-reset-your-password"></a>手順 2: パスワードをリセットする
 
-無料組織の基礎となる仕事または学校のアカウントMicrosoft Teams、アカウントのパスワードをリセットする必要があります。
+Microsoft Teams Free 組織の基礎となる作業時間または学校アカウントを取得した後、アカウントのパスワードをリセットする必要があります。
 
 1. 
             <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に戻ります。 サインインを求めるメッセージが表示されたら、[パスワードを忘 **れた] を選択します**。
@@ -58,28 +57,28 @@ ms.locfileid: "52280885"
 
 ## <a name="step-3-buy-your-new-subscription"></a>手順 3: 新しいサブスクリプションを購入する
 
-回復した基になる仕事または学校のアカウントと、新しい管理者パスワードを使用して、ビジネス サブスクリプションMicrosoft 365購入します。
+回復した基になる仕事または学校のアカウントと新しい管理者パスワードを使用して、新しい Microsoft 365 for business サブスクリプションを購入します。
 
 1. Microsoft 365 管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスの購入</a>] の順に移動します。
-2. 購入するMicrosoft 365製品の製品を検索します。
+2. 購入する Microsoft 365 for business 製品を探します。
     > [!IMPORTANT]
-    > このオプションを含む 1 つを必ずMicrosoft Teams。
-3. 購入を完了します。 ビジネス向けサイトに移動する無料Microsoft Teamsのすべてのユーザーに十分なライセンスをMicrosoft 365してください。
+    > 必ず Microsoft Teams を含む 1 つを選択してください。
+3. 購入を完了します。 ビジネス向け Microsoft 365 に移行する Microsoft Teams Free 組織のすべてのユーザーに十分なライセンスを購入してください。
 
 ## <a name="step-4-assign-new-licenses-to-users"></a>手順 4: ユーザーに新しいライセンスを割り当てる
 
-ビジネス サブスクリプション用の新しいMicrosoft 365が作成されたので、無料の組織の既存のユーザーにライセンスMicrosoft Teamsできます。
+新しい Microsoft 365 for business サブスクリプションが作成されたので、Microsoft Teams Free 組織の既存のユーザーにライセンスを割り当てできます。
 
 1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に移動します。
-2. ビジネス ライセンスに割り当てるユーザーをMicrosoft 365、[製品ライセンスの管理]**を選択します**。
+2. ビジネス ライセンスに Microsoft 365 を割り当てるユーザーを選択し、[製品ライセンスの管理 **] を選択します**。
 3. [製品ライセンス **の管理] ウィンドウで** 、[既存のライセンス割り当 **てを置き換える] を選択します**。
-4. [既存の **製品を置き** 換える] ウィンドウで、購入Microsoft 365ビジネス製品の製品を検索し、トグルを [オン] に切り替 **えます**。
+4. [既存 **の製品を置き換** える] ウィンドウで、購入した Microsoft 365 for business 製品を見つけて、トグルを [オン] に **切り替えます**。
 5. [置換 **] を選択** し、[閉じる] **を選択します**。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[無料のMicrosoft Teamsへようこそ](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)(記事)\
-[サブスクリプションMicrosoft Teams無料でアップグレード](/microsoftteams/upgrade-freemium)する (記事)\
+[Microsoft Teams へようこそ](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (記事)\
+[Microsoft Teams をサブスクリプション バージョンに無料でアップグレード](/microsoftteams/upgrade-freemium) する (記事)\
 [サブスクリプション ライセンスの購入または削除](../licenses/buy-licenses.md) (記事)\
 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)(記事)\
 [ユーザーからのライセンスの割り当てを解除する](../../admin/manage/remove-licenses-from-users.md) (記事)

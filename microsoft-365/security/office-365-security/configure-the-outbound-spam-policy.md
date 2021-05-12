@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) で送信スパム ポリシーを表示、作成、変更、および削除する方法について説明します。
+description: 管理者は、電子メール (EOP) で送信スパム ポリシーを表示、作成、変更、および削除するExchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ceaf0d276aff4504dd34aa3229c28c9cb042742d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206375"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331672"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパム フィルターを構成する
 
@@ -35,9 +35,9 @@ ms.locfileid: "51206375"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスのない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、EOP を介して送信される送信電子メール メッセージが自動的にスパムと異常な送信アクティビティをチェックされます。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、EOP を介して送信される送信電子メール メッセージが自動的にスパムや異常な送信アクティビティをチェックされます。
 
-通常、組織内のユーザーからの送信スパムは、侵害されたアカウントを示します。 不審な送信メッセージはスパム (スパム信頼レベルまたは SCL に関係なく) としてマークされ、サービス[](high-risk-delivery-pool-for-outbound-messages.md)の評判を保護するために危険度の高い配信プールを経由してルーティングされます (つまり、Microsoft 365 送信元メール サーバーを IP ブロック リストから保護します)。 管理者は、警告ポリシーを介して、不審な送信メール アクティビティとブロックされたユーザーに自動的 [に通知されます](../../compliance/alert-policies.md)。
+通常、組織内のユーザーからの送信スパムは、侵害されたアカウントを示します。 不審な送信メッセージはスパム (スパム信頼レベルまたは SCL に関係なく) としてマークされ、サービス[](high-risk-delivery-pool-for-outbound-messages.md)の評判を保護するために危険度の高い配信プールを経由してルーティングされます (つまり、Microsoft 365 送信元電子メール サーバーを IP ブロック リストからオフにします)。 管理者は、警告ポリシーを介して、不審な送信メール アクティビティとブロックされたユーザーに自動的 [に通知されます](../../compliance/alert-policies.md)。
 
 EOP は、スパムに対する組織の全体的な防御の一環として、送信スパム ポリシーを使用します。 詳細については、「[スパム対策保護](anti-spam-protection.md)」を参照してください。
 
@@ -56,7 +56,7 @@ EOP の送信スパム ポリシーの基本的な要素は次のとおりです
 - ポリシーを変更すると、名前、優先度、有効または無効、および受信者フィルターに関連する設定によって、送信スパム フィルター ルールが変更されます。 その他の設定はすべて、関連付けられた送信スパム フィルター ポリシーを変更します。
 - ポリシーを削除すると、送信スパム フィルター ルールと関連付けられた送信スパム フィルター ポリシーが削除されます。
 
-Exchange Online PowerShell またはスタンドアロン EOP PowerShell では、ポリシーとルールを個別に管理します。 詳細については、この記事の後半の [「Exchange Online PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) またはスタンドアロン EOP PowerShell を使用して送信スパム ポリシーを構成する」セクションを参照してください。
+Exchange Online PowerShell またはスタンドアロン EOP PowerShell では、ポリシーとルールを個別に管理します。 詳細については、この記事の後半[Exchange Online「PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies)またはスタンドアロン EOP PowerShell を使用して送信スパム ポリシーを構成する」を参照してください。
 
 すべての組織には、次のプロパティを持つ Default という名前の組み込みの送信スパム ポリシーがあります。
 
@@ -175,7 +175,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
    使用できる値は次のとおりです:
 
-   - **自動 - システム制御**: 送信スパム フィルターを使用して、外部メールの自動転送を制御できます。 これは既定の値です。
+   - **自動 - システム制御**: 送信スパム フィルターを使用して、外部メールの自動転送を制御できます。 これが既定値です。
    - **On**: ポリシーによって外部メールの自動転送は無効にされません。
    - **オフ**: ポリシーによってすべての自動外部メール転送が無効になります。
 
@@ -515,6 +515,6 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
 
-[スパム対策保護に関してよく寄せられる質問](anti-spam-protection-faq.md)
+[スパム対策保護に関してよく寄せられる質問](anti-spam-protection-faq.yml)
 
 [自動転送済みメッセージレポート](mfi-auto-forwarded-messages-report.md)

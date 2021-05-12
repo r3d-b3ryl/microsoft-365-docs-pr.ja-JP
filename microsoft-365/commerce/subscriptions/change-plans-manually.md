@@ -1,10 +1,11 @@
 ---
-title: ビジネス プランMicrosoft 365手動で変更する
+title: Microsoft 365 for business プランを手動で変更する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,19 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 ROBOTS: NOINDEX
 description: サブスクリプションを手動で変更するには、新しいサブスクリプションを購入し、両方のサブスクリプションがリストされアクティブに設定されます。
 ms.date: 03/17/2021
-ms.openlocfilehash: 7361b459e61961efbb729d80dcbb55dfdad65933
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 99bb732405d6420e430adad3ece7ea7f0c93579b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293621"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333304"
 ---
 # <a name="change-plans-manually"></a>手動でプランを変更する
 
@@ -52,7 +50,7 @@ ms.locfileid: "52293621"
 
 OR
 
-**新しいサブスクリプションとライセンスを購入します。**「ビジネス サブスクリプション用に別 [のMicrosoft 365を購入する」の](../try-or-buy-microsoft-365.md)手順に従って、新しいサブスクリプションを購入します。
+**新しいサブスクリプションとライセンスを購入します。** 「別の [Microsoft 365 for business](../try-or-buy-microsoft-365.md) サブスクリプションを購入する」の手順に従って、新しいサブスクリプションを購入します。
 
 必ずユーザーが現在所属している組織と同じ組織のサブスクリプションを購入してください。 たとえば、移動するユーザーのメール アドレスを確認します。 電子メール アドレスにメール アドレスが contoso.com 場合は、新しいサブスクリプションを購入する \@ 必要 contoso.com。
 移動する各ユーザーのライセンスを含めます。
@@ -63,7 +61,7 @@ OR
 
 2. **両方のサブスクリプションが一覧表示され、アクティブな状態を確認する** ユーザーを移動するサブスクリプションと、ユーザーを移動するサブスクリプションを一緒に一覧表示する必要があります。 最初に確認したときに新しいサブスクリプションが表示されない場合は、後でもう一度確認してみてください。 両方のサブスクリプションがアクティブな状態を確認します。 新しいサブスクリプションが一覧に表示されない、またはアクティブではない場合は[新しいサブスクリプションが一覧に表示されない、またはアクティブではない](#the-new-subscription-isnt-listed-or-isnt-active)を参照してください。
 
-3. **ユーザーごとに十分なライセンスを持っているか確認する** 各ユーザーには、サブスクリプションに一致するライセンスが必要です。 したがって、10 人のユーザーを 10 人のユーザーに移動Microsoft 365 Business Premium、10 個のライセンスが使用可能なライセンスを使用できる必要があります。
+3. **ユーザーごとに十分なライセンスを持っているか確認する** 各ユーザーには、サブスクリプションに一致するライセンスが必要です。 したがって、10 人のユーザーを Microsoft 365 Business Premium に移行する場合は、10 個のライセンスが使用可能な必要があります。
 
 4. **新しいサブスクリプションのライセンスが必要な場合**
    [製品] ページ **に移動し** 、その他 [のライセンスを購入します](../licenses/buy-licenses.md)。
@@ -84,7 +82,7 @@ OR
 
 ### <a name="reassign-a-license-for-one-user"></a>1 人のユーザーのライセンスを再割り当てする
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [アクティブ **ユーザー] ページ** で、ライセンスを割り当てるユーザーを選択します。
 
@@ -92,7 +90,7 @@ OR
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>複数のユーザーのライセンスを一度に再割り当てする
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. 既存のライセンスを置き換えるユーザーの名前の横にある円を選択します。
 

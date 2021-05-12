@@ -11,17 +11,19 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.collection: ''
+ms.collection:
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - commerce_licensing
 description: 新しいアロットメント機能について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 949e06d4bf54405e0045f8c7512a04b1b5cc22c0
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 0910673ce54f3f977ed8ecbc3d6c77ac2ebad0cc
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327132"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331696"
 ---
 # <a name="allotment-basics"></a>Allotment の基本
 
@@ -38,12 +40,12 @@ Allotments は、グループ ベースのライセンスを使用して、ユ�
 ユーザーが使用できる任意の製品で割り当てを使用できます。
 
 - Officeスイートとスタンドアロン製品
-- Enterpriseモビリティ製品
+- エンタープライズおよびモビリティ製品
 - Dynamics 365 製品
 
 次の製品は、アロットメントでは使用できません。
 
-- Microsoft Storeアプリ
+- Microsoft Store アプリ
 - 永続的なソフトウェア、またはライセンスがない場合にユーザーに直接割り当てられるソフトウェア。
 - Azure リソース
 

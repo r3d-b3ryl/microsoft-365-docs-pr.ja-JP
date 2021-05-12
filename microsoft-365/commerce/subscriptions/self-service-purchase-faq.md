@@ -5,25 +5,26 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- commerce
+ms.collection: M365-subscription-management
 ms.custom:
 - AdminSurgePortfolio
 - aka.ms/self-service-purchase-faq
+- commerce_ssp
 search.appverid:
 - MET150
 description: セルフサービス購入についてよく寄せられる質問への回答を紹介します。
 ms.date: 09/15/2020
-ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
-ms.translationtype: HT
+ms.openlocfilehash: 964eca8e94f64fd2f212745abfff0cf25d45bfca
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816927"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333196"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入に関するよくあるご質問
 

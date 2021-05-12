@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
 ms.date: 04/08/2021
-ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d0821214f9a8c242306685db2ee7faf3779cecff
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326800"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333028"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
@@ -50,6 +50,7 @@ ms.locfileid: "52326800"
 *ほとんどの国と地域で、ほとんどのオファーについて。
   
 > [!NOTE]
+>
 > **"顧客データ" とは何ですか?** [Microsoft オンライン サービス使用条件](https://go.microsoft.com/fwlink/p/?LinkId=613649)に定義されている顧客データとは、お客様自身が Microsoft 365 サービスを使用することによって、または代理によって Microsoft に提供されるすべてのテキスト、サウンド、または画像ファイルを含むすべてのデータを指します。 顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](../../compliance/get-started-with-service-trust-portal.md)」を参照してください。
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
@@ -68,6 +69,7 @@ ms.locfileid: "52326800"
 > 一般的な無効ステージが終了する前にサブスクリプション データを削除する場合は、[アカウントの使用を停止する](../close-your-account.md)ことができます。
   
 > [!NOTE]
+>
 > サブスクリプションを明示的に削除すると、期限切れや無効なステージはスキップされ、OneDrive を含む SharePoint Online のデータやコンテンツは直ちに削除されます。
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>サブスクリプションの有効期限切れが近い場合

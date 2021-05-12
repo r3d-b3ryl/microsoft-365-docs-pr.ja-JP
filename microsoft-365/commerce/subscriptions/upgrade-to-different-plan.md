@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: 別のプランにアップグレードする方法について学習します。
 ms.date: 04/21/2021
-ms.openlocfilehash: d9adf8bb18279d5057278a7c55cd751838325bc2
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 2cfb5c3c6c5052a813e7dd078f15b6c0c943b004
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280441"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333106"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
@@ -100,7 +99,7 @@ ms.locfileid: "52280441"
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>同じ製品に対して 2 つ以上のプランがある
 
-[アップグレード] タブは、 **すべてのユーザーが** 同じプランを購読している場合にのみ使用できます。 たとえば、2 つのプランMicrosoft 365 Business Standard場合、そのプランの 1 つを別のプランに自動的にアップグレードできない場合です。
+[アップグレード] タブは、 **すべてのユーザーが** 同じプランを購読している場合にのみ使用できます。 たとえば、Microsoft 365 Business Standard プランが 2 つある場合は、そのうちの 1 つを別のプランに自動的にアップグレードする必要はありません。
 
 #### <a name="you-have-a-prepaid-plan"></a>プリペイド (先払い) プランを使用している
 
@@ -118,7 +117,7 @@ ms.locfileid: "52280441"
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>アップグレードするプランがサポートされていないオプション
 
-プランをアップグレードすると、アップグレードできるプランが、現在のプランのサービスに基づいて表示されます。 同じデータ関連サービス (Exchange Online や SharePoint Online など) を持つプラン、または上位バージョンのプランにのみアップグレードできます。 これにより、アップグレード中にユーザー \' がそれらのサービスに関連するデータを失うのを確認できます。
+プランをアップグレードすると、アップグレードできるプランが、現在のプランのサービスに基づいて表示されます。 同じデータ関連サービス (Exchange Online、SharePoint Online など) を持つプラン、または上位バージョンのプランにのみアップグレードできます。 これにより、アップグレード中にユーザー \' がそれらのサービスに関連するデータを失うのを確認できます。
 
 プランを自動的にアップグレードできない場合は、代わりに手動でプラン [を変更できる](change-plans-manually.md)場合があります。 サポートを呼 [び出してヘルプ](../../business-video/get-help-support.md) を呼び出す方法も可能です。
 
@@ -144,11 +143,11 @@ ms.locfileid: "52280441"
 
 古いサブスクリプションのユーザーは、自動的に新しいサブスクリプションに移ります。
   
-古いサブスクリプションに複数のサービスが含まれる場合、ユーザーが割り当てられているサービスを変更した場合は、プランをアップグレードする前にこの点に注意して、後で変更を再作成することができます。 すべてのユーザーには、新しいサブスクリプションのすべてのサービスへのアクセス権が与えられます。 たとえば、以前に 100 人のユーザー全員に対して Microsoft 365 Business Premium を購入したが、SharePoint Online サービスを 50 人から割り当て解除した場合、プランをアップグレードした後も、この変更は保持されません。
+古いサブスクリプションに複数のサービスが含まれる場合、ユーザーが割り当てられているサービスを変更した場合は、プランをアップグレードする前にこの点に注意して、後で変更を再作成することができます。 すべてのユーザーには、新しいサブスクリプションのすべてのサービスへのアクセス権が与えられます。 たとえば、以前に Microsoft 365 Business Premium を 100 人のユーザー全員に対して購入したが、SharePoint Online サービスを 50 人から割り当て解除した場合、プランをアップグレードした後も、この変更は保持されません。
   
 プランをアップグレードする前に複数のサブスクリプションを持ち、ユーザーに複数のサブスクリプションにライセンスを割り当てる場合、この割り当てパターンは新しいサブスクリプションで可能な限り保持されます。
   
-すべてのユーザー データは、アップグレード中に保持されます(メールボックス、Exchangeオンライン ドキュメントSharePoint、その他の情報を含む)。
+すべてのユーザー データは、Exchange メールボックス、SharePoint Online ドキュメント、リスト、その他の情報など、アップグレード中に保持されます。
   
 ### <a name="billing"></a>請求
 
@@ -166,4 +165,4 @@ ms.locfileid: "52280441"
 ## <a name="related-content"></a>関連コンテンツ
 
 [手動でプランを変更](change-plans-manually.md) する (記事)\
-[ビジネス プランのデータを切りMicrosoft 365する前にデータをバックアップする](back-up-data-before-switching-plans.md)(記事)
+[Microsoft 365 for](back-up-data-before-switching-plans.md) business プランを切り替える前にデータをバックアップする (記事)

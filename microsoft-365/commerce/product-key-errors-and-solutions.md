@@ -1,11 +1,11 @@
 ---
-title: ビジネス プロダクト キーのMicrosoft 365問題
+title: Microsoft 365 for business プロダクト キーに関する問題
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,44 +15,43 @@ ms.collection:
 - Adm_O365
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: 'ビジネス向けプロダクト キーを入力するときに直面する問題を解決するMicrosoft 365説明します。 '
+description: 'ビジネス向け Microsoft 365 のプロダクト キーを入力するときに発生する問題を解決する方法について説明します。 '
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
 ms.date: 05/01/2021
-ms.openlocfilehash: 5c830af2beca702c15f8c4023c3d3e0fc59a0f51
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: d93b45258b9004d0ae19795886d31ce1e7141601
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280561"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333364"
 ---
-# <a name="problems-with-your-microsoft-365-for-business-product-key"></a>ビジネス プロダクト キーのMicrosoft 365問題
+# <a name="problems-with-your-microsoft-365-for-business-product-key"></a>Microsoft 365 for business プロダクト キーに関する問題
 
-プロダクト キーをビジネス用に使用しようとするときにエラー Microsoft 365がある場合は、**次の** 一般的なソリューションを試してください。
+**Microsoft 365** for business のプロダクト キーを引き換える際にエラー メッセージが表示される場合は、次の一般的なソリューションを試してください。
   
  **すぐにヘルプが必要な場合** [Microsoft サポートを呼び出します](../business-video/get-help-support.md)。
   
- **プロダクト キーまたはプロダクト キーのMicrosoft 365 FamilyについてはMicrosoft 365 Personalプロダクト** キーを使用するを参照 [Office。](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)
+ **Microsoft 365 ファミリまたは Microsoft 365 個人用** プロダクト キーのヘルプについては、「Microsoft 365 ファミリまたは Microsoft 365 個人用プロダクト キーを使用する」を [参照](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)Office。
   
-## <a name="product-key-error-help-with-microsoft-365-for-business"></a>ビジネス向けプロダクト キー Microsoft 365ヘルプ
+## <a name="product-key-error-help-with-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 のプロダクト キー エラー ヘルプ
 
 | プロダクト キーを入力したときに表示されるエラー メッセージ | これを試してみてください。.. |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "申し訳ありませんが、これは無効なプロダクト キーです。 もう一度入力してみてください。 プロダクト キーがユーザー向けMicrosoft 365 PersonalまたはMicrosoft 365 Family場合は、office.com/setup。 <br/><br/>日本で使用しているOffice 365 Solo: "申し訳ありませんが、これは無効なプロダクト キーです。 もう一度入力してみてください。 プロダクト キーを使用する場合は、Office 365 Soloで引き換 office.com/setup。 | ユーザー設定または個人Microsoft 365 Family[場合](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx)は、 でプロダクト キーを引き換える必要があります [https://www.office.com/setup](https://www.office.com/setup) 。 一般法人のお客様の場合は、入力する数字と文字を慎重に確認してください。 |
+| "申し訳ありませんが、これは無効なプロダクト キーです。 もう一度入力してみてください。 プロダクト キーが Microsoft 365 Personal または Microsoft 365 ファミリ用の場合は、office.com/setup。 <br/><br/>日本で 365 Solo Office使用している場合:"申し訳ありませんが、これは無効なプロダクト キーです。 もう一度入力してみてください。 プロダクト キーが 365 Solo Officeの場合は、次の office.com/setup。 | [Microsoft 365 ファミリまたは個人用](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx)を設定する場合は、 でプロダクト キーを引き換える必要があります [https://www.office.com/setup](https://www.office.com/setup) 。 一般法人のお客様の場合は、入力する数字と文字を慎重に確認してください。 |
 | "入力されたプロダクト キーは有効ではありません。もう一度入力してください。" または "このプロダクト キーは有効ではありません。別のプロダクト キーを入力してください。" | 入力する数字と文字をお確かめください。0 と o、5 と S、l と I などを間違うことがよくあります。問題が解決しない場合、プロダクト キーのご購入元の販売店にお問い合わせください。 |
 | "このプロダクト キーは既に入力されています。別のプロダクト キーを入力してください。" | キーがまだ追加されていないことを確認するため、入力済みのプロダクト キーを確認してください。 プロダクト キーを使ってサブスクリプションの更新する場合、新しい未使用のプロダクト キーを使用する必要があります。  <br/><br/>新しいキーを購入する必要がありますか? [Microsoft ストア](https://go.microsoft.com/fwlink/p/?LinkId=529160)またはサードパーティの販売店にアクセスするか、パートナーと契約している場合は、パートナーに連絡してください。  <br/><br/>問題が解決しない場合は、サポート [にお問い合わせください](../business-video/get-help-support.md)。 パートナーと契約している場合は、パートナーに連絡して、プロダクト キーのサポートを受けてください。 |
 | "入力されたプロダクト キーは期限切れです。別のプロダクト キーを入力してください。" | 現在のサブスクリプションを更新するか、新しいサブスクリプションをアクティブにするには、新しい未使用のプロダクト キーを使用する必要があります。<br/><br/>新しいキーを購入する必要がありますか? [Microsoft ストア](https://go.microsoft.com/fwlink/p/?LinkId=529160)またはサードパーティの販売店にアクセスするか、パートナーと契約している場合は、パートナーに連絡してください。   |
 | "このプロダクト キーは既に使用されています。別のプロダクト キーを入力してください。" | キーをあなたか組織内のメンバーが既に使っていないことをご確認ください。 キーがまだ使われていない場合、パートナーまたはプロダクト キーのご購入元の販売店にお問い合わせください。 |
 | "申し訳ございません。お客様のリクエストを処理できません。しばらく待ってからやり直してください。" | 以降の試行で 15 分以上同じエラー メッセージが表示される場合は、サポート [にお問い合わせください](../business-video/get-help-support.md)。 |
 | 「要求されたサブスクリプションは使用できません。次のいずれかの理由による可能性があります。このプランの対象ではありません - お客様の国でサービスが提供されていません - 同じ試用版を 2 回使ったり選んだりすることはできません。問題が解決しない場合は、Microsoft のサポートにお問い合わせください。」 | サポート [にお問い合わせください](../business-video/get-help-support.md)。 パートナーと契約している場合は、パートナーに連絡して、サポートを受けてください。 |
-| 「このオファーで許可されている数よりも多くのユーザー ライセンスが追加されました。 最大数はユーザー \<x\> ライセンスです。 このプロダクト キーを削除し、ユーザー ライセンスを少なくするプロダクト キーを入力します。 | 販売店またはパートナーに問い合わせてください。 このサブスクリプションで使用できる数を超えるライセンスを購入Microsoft 365しています。 |
-| "プロダクト キーを使うには全体管理者または課金管理者でなければいけません。" | アクセス許可が課金またはグローバル管理者として設定されている必要があります。これを確認するには、[サインインして、Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)または学校のアカウントを使用して管理センターに移動します。 <br/><br/>In the admin center, select **Users** \> **Active users**. In **Filters**, choose **Global admins** or **Billing admins**.  <br/><br/>結果の一覧に表示されていることを確認します。 |
+| 「このオファーで許可されている数よりも多くのユーザー ライセンスが追加されました。 最大数はユーザー \<x\> ライセンスです。 このプロダクト キーを削除し、ユーザー ライセンスを少なくするプロダクト キーを入力します。 | 販売店またはパートナーに問い合わせてください。 この Microsoft 365 サブスクリプションで使用できる数を超えるライセンスを購入しました。 |
+| "プロダクト キーを使うには全体管理者または課金管理者でなければいけません。" | アクセス許可が課金またはグローバル管理者として設定されている必要があります。これを確認するには、仕事または学校のアカウントで  [Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) にサインインし、管理センターに移動します。 <br/><br/>In the admin center, select **Users** \> **Active users**. In **Filters**, choose **Global admins** or **Billing admins**.  <br/><br/>結果の一覧に表示されていることを確認します。 |
 
 > [!NOTE]
-> パートナーをMicrosoft 365購入すると、Microsoft から、ボリューム ライセンス サービス センターでプロダクト キーを取得してサブスクリプションをアクティブ化する手順が記載された電子メールが[送信されます](https://go.microsoft.com/fwlink/p/?LinkID=282016)。 ボリューム ライセンスの詳細については、「[既存のボリューム ライセンスのお客様のヘルプ](https://go.microsoft.com/fwlink/p/?LinkId=534992)」を参照してください。
+> パートナーを通じて Microsoft 365 を購入すると、Microsoft から、ボリューム ライセンス サービス センターでプロダクト キーを取得してサブスクリプションをアクティブ化する手順が記載された電子メールが [送信されます](https://go.microsoft.com/fwlink/p/?LinkID=282016)。 ボリューム ライセンスの詳細については、「[既存のボリューム ライセンスのお客様のヘルプ](https://go.microsoft.com/fwlink/p/?LinkId=534992)」を参照してください。
   
 ## <a name="related-content"></a>関連コンテンツ
 

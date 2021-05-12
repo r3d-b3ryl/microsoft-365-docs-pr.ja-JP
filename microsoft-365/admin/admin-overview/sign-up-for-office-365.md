@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,42 +20,40 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_signup
-- PPM_pablom
-ms.reviewer: seemg
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: ユーザーのサインアップ プロセスを実行する前に知る必要があるOffice 365。
+description: 365 のサインアップ プロセスを実行する前に知る必要Officeします。
 ms.date: 03/17/2021
-ms.openlocfilehash: 77fe0252a267b13fda19a6842ce0e07b1b8307b1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 12262a2165392b9dca699605f0b86fd7f3129ef0
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244010"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332692"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
 ::: moniker range="o365-worldwide"
 
-チームが最新Microsoft 365バージョンの Word、Excel、PowerPoint、その他のプログラムの使用を開始Officeします。
+Microsoft 365 for business にサインアップして、チームが Word、Excel、PowerPoint、その他の最新バージョンのプログラムの使用を開始Officeします。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-チームが最新Microsoft 365バージョンの Word、Excel、PowerPoint、その他のプログラムの使用を開始Office。
+Microsoft 365 for business にサインアップして、チームが Word、Excel、PowerPoint、その他の最新バージョンのプログラムを使用Officeできます。
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Office 365 21Vianet が運用するサービスは、中国のセキュリティで保護され、信頼性が高く、スケーラブルなクラウド サービスのニーズに対応するように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet は、サービスの配信を運用、提供、および管理します。 21Vianet は、ホスティング、管理されたネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データセンター サービス プロバイダーです。 Microsoft テクノロジをライセンスすることで、21Vianet はローカルの Microsoft データセンターを運用し、中国内のデータを保持しながら、Microsoft サービスを使用できます。 21Vianet は、サブスクリプションサービスと課金サービス、およびサポートも提供します。
+Office 21Vianet が運用する 365 は、中国のセキュリティで保護され、信頼性が高く、拡張性の高いクラウド サービスのニーズに対応するように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet は、サービスの配信を運用、提供、および管理します。 21Vianet は、ホスティング、管理されたネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データセンター サービス プロバイダーです。 Microsoft テクノロジをライセンスすることで、21Vianet はローカルの Microsoft データセンターを運用し、中国内のデータを保持しながら Microsoft サービスを使用できます。 21Vianet は、サブスクリプションサービスと課金サービス、およびサポートも提供します。
   
 > [!NOTE]
 > これらのサービスは中国の法律に従います。
   
-チームが最新バージョンの Word、Excel、PowerPoint、その他の Office プログラムの使用を開始できるよう、21Vianet が運営する Office 365 にサインアップします。
+21Vianet Office 365 にサインアップして、チームが Word、Excel、PowerPoint、その他の最新バージョンのプログラムの使用を開始Officeします。
   
 サインアップする準備はできましたか? [プランを選択します](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -65,11 +64,11 @@ Office 365 21Vianet が運用するサービスは、中国のセキュリティ
 
 購入する前に、サインアップする計画にいくつかの考えをお入れください。 これにより、後で発生する問題を防ぐことができます。
 
-ビジネス プランの選択に関する短いMicrosoft 365ビデオをご覧ください。<br><br>
+Microsoft 365 for business プランの選択に関する短いビデオをご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [すべての製品 [を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。
   
@@ -119,9 +118,9 @@ Office 365 21Vianet が運用するサービスは、中国のセキュリティ
   - サブスクリプションに関する確認など、Microsoft から管理者に連絡する場合に使用する、 **メール アドレス** と **電話番号** 。管理者がパスワードを忘れた場合などに、この情報を使って仮のパスワードが送信されます。また、指定したメール アドレスに課金情報が送信されます。
 
     > [!NOTE]
-    > ここで入力する電子メール アドレスは、ユーザーのメール Microsoft 365 (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
+    > ここで入力する電子メール アドレスは、Microsoft 365 の電子メール アドレス (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
   
-- **サインイン名 (ユーザー ID):** このユーザー ID は、Microsoft 365開始するために、最初のメール アドレスになります。
+- **サインイン名 (ユーザー ID):** このユーザー ID は、すぐに開始するために、最初の Microsoft 365 メール アドレスになります。
 
     このユーザー ID は、サインインに使用する電子メール アドレスです。 たとえば会社名が「Fourth Coffee」の場合には、ユーザー ID として rob@fourthcoffee.onmicrosoft.com を選ぶことができます。
 
@@ -136,4 +135,4 @@ Office 365 21Vianet が運用するサービスは、中国のセキュリティ
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365トレーニング ビデオの詳細](../../business-video/index.yml)(リンク ページ)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (リンク ページ)
