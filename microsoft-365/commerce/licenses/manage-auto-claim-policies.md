@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.review: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,15 +16,15 @@ ms.collection:
 description: 特定のアプリのユーザーにライセンスを自動的に割り当てる自動クレーム ポリシーを作成および管理する方法について説明します。
 ms.custom:
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+- commerce_licensing
+search.appverid: MET150
+ms.date: 04/06/2021
+ms.openlocfilehash: c89c8114c9a71a315d5876a0edf55d269ed2b12d
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599453"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327108"
 ---
 # <a name="manage-auto-claim-policies"></a>自動請求ポリシーを管理する
 

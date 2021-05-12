@@ -1,7 +1,7 @@
 ---
-title: 脅威と脆弱性の管理でサポートされているオペレーティング システムとプラットフォーム
-description: 脅威と脆弱性の管理に必要なオペレーティング システムまたはプラットフォームを満たして、すべてのデバイスのアクティビティが適切に考慮されていることを確認します。
-keywords: 脅威&の管理、脅威と脆弱性の管理、オペレーティング システム、プラットフォーム要件、前提条件、Microsoft Defender for Endpoint-tvm サポート os、Microsoft Defender for Endpoint-tvm、
+title: サポートされているオペレーティング システム のプラットフォームと機能
+description: すべてのデバイスのアクティビティが適切に考慮される脅威と脆弱性の管理のオペレーティング システムまたはプラットフォームの要件を満たしてください。
+keywords: threat & 脆弱性の管理, 脅威と脆弱性の管理, オペレーティング システム, プラットフォーム要件, 前提条件, Microsoft Defender for Endpoint-tvm サポート os, Microsoft Defender for Endpoint-tvm, サポートされるオペレーティング システム, サポートされるプラットフォーム, Linux サポート, mac サポート
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 55322d238839d347882ec1d74b767c68fd2be2b3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3c9c96c73a6d1843f2e7aa626cafac0860887a65
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935523"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327344"
 ---
-# <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>サポートされているオペレーティング システムとプラットフォーム - 脅威と脆弱性の管理
+# <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,23 +37,32 @@ ms.locfileid: "51935523"
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-開始する前に、次のオペレーティング システムまたはプラットフォームで脅威と脆弱性の管理に必要な要件を満たして、デバイス内のアクティビティが適切に説明されていることを確認してください。
+開始する前に、デバイス内のアクティビティが適切に説明脅威と脆弱性の管理のオペレーティング システムまたはプラットフォームの要件を満たしてください。
 
 >[!NOTE]
->脅威および脆弱性管理でサポートされるシステムとプラットフォームは、Microsoft Defender for Endpoint リストの最小要件とは [異なる場合](minimum-requirements.md) があります。
+>サポートされているシステムとプラットフォームは脅威と脆弱性の管理 Microsoft Defender for Endpoint リストの最小要件とは[異なる場合](minimum-requirements.md)があります。
 
-オペレーティング システム | セキュリティ評価のサポート
-:---|:---
-Windows 7 | オペレーティング システム (OS) の脆弱性
-Windows 8.1 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性<br/>オペレーティング システム (OS) 構成評価<br/>セキュリティ制御の構成評価<br/>ソフトウェア製品構成の評価 |
-Windows 10 バージョン 1607-1703 | オペレーティング システム (OS) の脆弱性
-Windows 10 バージョン 1709 以降 |オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性<br/>オペレーティング システム (OS) 構成評価<br/>セキュリティ制御の構成評価<br/>ソフトウェア製品構成の評価
-Windows Server 2008 R2 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性<br/>オペレーティング システム (OS) 構成評価<br/>セキュリティ制御の構成評価<br/>ソフトウェア製品構成の評価
-Windows Server 2012 R2 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性<br/>オペレーティング システム (OS) 構成評価<br/>セキュリティ制御の構成評価<br/>ソフトウェア製品構成の評価
-Windows Server 2016 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性<br/>オペレーティング システム (OS) 構成評価<br/>セキュリティ制御の構成評価<br/>ソフトウェア製品構成の評価
-Windows Server 2019 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性<br/>オペレーティング システム (OS) 構成評価<br/>セキュリティ制御の構成評価<br/>ソフトウェア製品構成の評価
-macOS 10.14 "Mojave" 以上 | オペレーティング システム (OS) の脆弱性<br/>ソフトウェア製品の脆弱性 
-Linux | サポートされていません (計画済み)
+## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>サポートされているオペレーティング システム (OS) とプラットフォームごとの機能
+
+次の表の "Yes" は、その行の OS またはプラットフォーム脅威と脆弱性の管理サポートされている機能を示しています。
+
+サポートされている OS またはプラットフォーム | OS の脆弱性 | ソフトウェア製品の脆弱性 | OS 構成の評価 | セキュリティ制御の構成評価 | ソフトウェア製品構成の評価
+:---|:---|:---|:---|:---|:---
+Windows 7 | はい | 非サポート | 非サポート | 非サポート | 非サポート
+Windows 8.1 | はい | はい | はい | はい| はい
+Windows 10バージョン 1607-1703 | はい  | 非サポート | 非サポート | 非サポート | 非サポート
+Windows 10バージョン 1709 以降 | はい | はい | はい | はい | はい
+Windows Server 2008 R2 | はい | はい | はい | はい | はい
+Windows Server 2012 R2 | はい | はい | はい | はい | はい
+Windows Server 2016 | はい | はい | はい | はい | はい
+Windows Server 2019 | はい | はい | はい | はい | はい
+macOS 10.14 "Mojave" 以上 | はい | はい | はい \( プレビュー\) | はい \( プレビュー\) | はい \( プレビュー\)
+Red Hat Enterprise Linux 7.2 以上 ( \* 以下の「重要な」通知を参照) | はい | はい | はい | はい | はい
+CentOS 7.2 以上 | はい | はい | はい | はい | はい
+Ubuntu 16.04 LTS 以上の LTS | はい | はい | はい | はい | はい
+
+>[!IMPORTANT]
+> \*Red Hat Enterprise Linux: "Microsoft Defender for Endpoint サービスの一部として提供され、表示される脆弱性データは、Red Hat, Inc.から"AS IS" という生の形式で提供され、最新の状態ではない可能性があります。 Red Hat Security Data API でアクセス可能なデータは、クリエイティブ コモンズ アトリビューション 4.0 インターナショナル ライセンスの下でライセンスされています。 このデータを使用する場合は、リスクを負います。 Microsoft およびサード パーティのサプライヤーは、非侵害、商品性、特定の目的への適性に関する黙示の保証を含む、結果的および他の間接的損害に対する一切の責任および黙示的保証を否認します。 © 2020 Red Hat. All rights reserved。 © 2020 Microsoft。 すべての権限が予約されています。
 
 ## <a name="related-articles"></a>関連記事
 

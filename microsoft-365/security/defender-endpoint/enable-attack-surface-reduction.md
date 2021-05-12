@@ -15,18 +15,19 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: df77a3d6c1f66882600a200b83b3b2585473f42b
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: fc04db0c9fe8ee6d09efc9802ab4a747af0b3e9c
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995071"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326708"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -35,14 +36,14 @@ ms.locfileid: "51995071"
 
 [攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。
 
-**要件** 次のエディションとバージョンの Windows を実行しているデバイスに対して攻撃表面の縮小ルールを設定できます。
+**要件** 次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールをWindows。
 
-- Windows 10 Pro [バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
-- Windows 10 Enterprise バージョン [1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
-- Windows Server バージョン [1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803) 以降
+- Windows 10 Proバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
+- Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
+- Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-攻撃表面の縮小ルールは [Windows E5](/windows/deployment/deploy-enterprise-licenses)ライセンスを必要としますが、Windows E5 を使用している場合は、高度な管理機能を利用できます。 Windows E5 でのみ使用できるこれらの機能には [、Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)で使用できる監視、分析、ワークフロー、 [および Microsoft 365](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)セキュリティ センターのレポート機能と構成機能が含まれます。 これらの高度な機能は、Windows Professional または Windows E3 ライセンスでは使用できません。ただし、これらのライセンスがある場合は、イベント ビューアーと Microsoft Defender ウイルス対策ログを使用して攻撃表面の縮小ルール イベントを確認できます。
+攻撃表面の縮小ルールでは[E5](/windows/deployment/deploy-enterprise-licenses)ライセンスをWindows必要とWindows、高度な管理機能を利用できます。 Windows E5 でのみ使用できるこれらの機能には[、Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)で使用できる監視、分析、ワークフロー、および Microsoft 365 セキュリティ センターのレポート機能と構成[機能が含まれます](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)。 これらの高度な機能は、E3 ライセンスWindows ProfessionalまたはWindows使用できません。ただし、これらのライセンスを持っている場合は、イベント ビューアーとログMicrosoft Defender ウイルス対策を使用して、攻撃表面の縮小ルール イベントを確認できます。
 
 各 ASR ルールには、次の 4 つの設定のいずれかを含む。
 
@@ -52,12 +53,12 @@ ms.locfileid: "51995071"
 - **警告**: ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスできる
 
 > [!IMPORTANT]
-> 現在、Microsoft Endpoint Manager (MEM) で ASR ルールを構成する場合、3 つの ASR ルールでは警告モードはサポートされていません。 詳細については、「警告モード [がサポートされていないケース」を参照してください](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
+> 現在、警告モードは、3 つの ASR ルール (MEM) で ASR ルールを構成するときにMicrosoft エンドポイント マネージャーサポートされていません。 詳細については、「警告モード [がサポートされていないケース」を参照してください](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
-Microsoft Defender for Endpoint (Defender [for Endpoint)](https://docs.microsoft.com/windows/security/threat-protection) で使用できる高度な監視およびレポート機能を利用するには、Windows E5 ライセンス (または類似のライセンス SKU) で ASR ルールを使用することを強くお勧めします。 ただし、高度な監視およびレポート機能にアクセスできない Windows Professional や E3 などの他のライセンスの場合は、ASR ルールがトリガーされる際に各エンドポイントで生成されるイベント (イベント転送など) の上に独自の監視およびレポート ツールを開発できます。
+microsoft [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender for Endpoint) で利用可能な高度な監視およびレポート機能を利用するには、Windows E5 ライセンス (または類似のライセンス SKU) で ASR ルールを使用することを強くお勧めします。 ただし、高度な監視およびレポート機能にアクセスできない Windows Professional や E3 などの他のライセンスの場合は、ASR ルールがトリガーされる際に各エンドポイントで生成されるイベント (イベント転送など) の上に独自の監視およびレポート ツールを開発できます。
 
 > [!TIP]
-> Windows ライセンスの詳細については [、「Windows 10 Licensing」](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) を参照し [、Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)のボリューム ライセンス ガイドを参照してください。
+> ライセンスの詳細については、「Windows ライセンス」を参照し[](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)Windows 10ボリューム ライセンス ガイド[を](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)参照Windows 10。
 
 攻撃表面の縮小ルールは、次の方法で有効にできます。
 
@@ -67,7 +68,7 @@ Microsoft Defender for Endpoint (Defender [for Endpoint)](https://docs.microsoft
 - [グループ ポリシー](#group-policy)
 - [PowerShell](#powershell)
 
-Intune や Microsoft Endpoint Manager などのエンタープライズ レベルの管理をお勧めします。 エンタープライズ レベルの管理では、起動時に競合するグループ ポリシーまたは PowerShell 設定が上書きされます。
+Enterprise、Intune などのレベルのMicrosoft エンドポイント マネージャーをお勧めします。 Enterpriseレベルの管理では、起動時に競合するグループ ポリシーまたは PowerShell 設定が上書きされます。
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>ASR ルールからファイルとフォルダーを除外する
 
@@ -79,7 +80,6 @@ Intune や Microsoft Endpoint Manager などのエンタープライズ レベ�
 > ファイルまたはフォルダーを除外すると、ASR ルールによって提供される保護が大幅に低下する可能性があります。 除外されたファイルの実行が許可され、レポートやイベントは記録されません。
 > ASR ルールで検出すべきではないと思うファイルを検出する場合は、まず監査モードを使用して [ルールをテストする必要があります](evaluate-attack-surface-reduction.md)。
 
-
 個々のファイルまたはフォルダー (フォルダー パスまたは完全修飾リソース名を使用) を指定できますが、除外が適用されるルールを指定することはできません。 除外は、除外されたアプリケーションまたはサービスが開始された場合にのみ適用されます。 たとえば、既に実行されている更新サービスの除外を追加すると、サービスが停止して再起動されるまで、更新サービスはイベントをトリガーし続ける。
 
 ASR ルールは、環境変数とワイルドカードをサポートします。 ワイルドカードの使用の詳細については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用する」 [を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)。
@@ -88,9 +88,9 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ## <a name="intune"></a>Intune
 
-1. [デバイス **構成プロファイル**  >  **] を選択します**。 既存のエンドポイント保護プロファイルを選択するか、新しいエンドポイント保護プロファイルを作成します。 新しいプロファイルを作成するには、[プロファイルの作成] **を選択し** 、このプロファイルの情報を入力します。 [プロファイル **の種類] で**、[ **エンドポイント保護] を選択します**。 既存のプロファイルを選択した場合は、[プロパティ] を選択 **し、[設定** ] を **選択します**。
+1. [デバイス **構成プロファイル**  >  **] を選択します**。 既存のエンドポイント保護プロファイルを選択するか、新しいエンドポイント保護プロファイルを作成します。 新しいプロファイルを作成するには、[プロファイルの作成] **を選択し** 、このプロファイルの情報を入力します。 [プロファイル **の種類] で**、[ **エンドポイント保護] を選択します**。 既存のプロファイルを選択した場合は、[プロパティ] を選択 **し、[プロパティ**] を選択 **設定。**
 
-2. [エンドポイント保護 **] ウィンドウで** 、[Exploit **Guard] をWindows Defenderし**、[攻撃表面の縮小 **] を選択します**。 各 ASR ルールの目的の設定を選択します。
+2. [エンドポイント保護 **] ウィンドウで**、[Exploit **Guard] をWindows Defenderし**、[攻撃表面の縮小 **] を選択します**。 各 ASR ルールの目的の設定を選択します。
 
 3. [ **攻撃表面の縮小の例外] で**、個々のファイルとフォルダーを入力します。 [インポート] を **選択して** 、ASR ルールから除外するファイルとフォルダーを含む CSV ファイルをインポートすることもできます。 CSV ファイルの各行は、次のように書式設定する必要があります。
 
@@ -128,7 +128,7 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. Microsoft Endpoint Configuration Manager で、[アセットとコンプライアンス エンドポイント保護] に移動 **し**、[Exploit  >    >  **Guard Windows Defenderに移動します**。
+1. この **Microsoft Endpoint Configuration Manager、Exploit** Guard の [アセットと  >  **コンプライアンス] Endpoint Protection Windows Defender**  >  **移動します**。
 
 2. [ホーム **エクスプ**  >  **ロイト ガード ポリシーの作成] を選択します**。
 
@@ -145,11 +145,11 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
 > [!WARNING]
 > Intune、Configuration Manager、または他のエンタープライズ レベルの管理プラットフォームを使用してコンピューターとデバイスを管理する場合、管理ソフトウェアは起動時に競合するグループ ポリシー設定を上書きします。
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー [管理](https://technet.microsoft.com/library/cc731212.aspx)コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
+1. グループ ポリシー管理コンピューターで、[[グループ ポリシー管理コンソール]](https://technet.microsoft.com/library/cc731212.aspx) を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に移動 **し、[** 管理用 **テンプレート] を選択します**。
+2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを Windows コンポーネント **に展開**  >  **する Microsoft Defender ウイルス** 対策  >  **Microsoft Defender Exploit Guard**  >  **攻撃表面の縮小**。
+3. ツリーを展開して **、攻撃Windows縮小**  >  **Microsoft Defender ウイルス対策Microsoft Defender Exploit Guard**  >    >  **コンポーネントを表示します**。
 
 4. [攻撃 **表面縮小ルールの構成] を選択し、[** 有効] を **選択します**。 その後、[オプション] セクションで各ルールの個別の状態を設定できます。
 
@@ -166,6 +166,75 @@ ASR ルールに GUID 値を使用して参照 [するサンプルを次に示�
 
    > [!WARNING]
    > [値の名前] 列または [値] 列でサポートされていない引用符は **使用** しません。
+
+## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager のカスタム プロシージャ
+
+Microsoft Endpoint Manager (MEM) 管理センターを使用して、カスタム ASR ルールを構成できます。
+
+1. Microsoft Endpoint Manager (MEM) 管理センターを開きます。 [ホーム] **メニューの [** デバイス] を  **クリックし**、[構成プロファイル] **を** 選択し、[プロファイルの作成] **をクリックします**。
+
+   ![MEM Create Profile](images/mem01-create-profile.png)
+
+2. [ **プロファイルの作成]** で、次の 2 つのドロップダウン リストで、次の項目を選択します。
+
+   - [**プラットフォーム] で****、[Windows 10 以降] を選択します。**
+   - [ **プロファイルの種類] で**、[ **テンプレート] を選択します。**
+
+   [カスタム **] を** 選択し、[作成] **をクリックします**。
+
+   ![MEM ルール プロファイルの属性](images/mem02-profile-attributes.png)
+
+3. [カスタム テンプレート] ツールが開き、手順 **1 [基本] に進みます**。 **[1 基本]** の [**名前]** にテンプレートの名前を入力し、[**説明]** にオプションの説明を入力できます。
+
+   ![MEM の基本的な属性](images/mem03-1-basics.png)
+
+4. **[次へ]** をクリックします。 手順 **2 構成設定が開** きます。 [OMA-URI の設定] で、[追加] を **クリックします**。 2 つのオプションが表示 **されます。**
+
+   ![MEM 構成の設定](images/mem04-2-configuration-settings.png)
+
+5. [追加 **] を再度クリック** します。 [ **行 OMA-URI 設定の追加] が開** きます。 [ **行の追加]** で、次の操作を行います。
+
+   - [ **名前]** に、ルールの名前を入力します。
+   - [ **説明]** に簡単な説明を入力します。
+   - **OMA-URI で**、追加するルールの特定の OMA-URI リンクを入力または貼り付けます。
+   - [ **データ型] で**、[文字列] を **選択します**。
+   - [ **値]** で、GUID 値、記号、およびスペースを含む State 値 \= _(GUID=StateValue) を入力または貼り付けます_。 Where: {0 : Disable (DISABLE the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (有効な場合は ASR ルールが組織に与える影響を評価する)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
+
+   ![MEM OMA URI 構成](images/mem05-add-row-oma-uri.png)
+
+6. **[保存]** をクリックします。 **[行の追加]** が閉じます。 [カスタム **] で**、[次へ] **をクリックします**。 手順 **3 スコープ タグでは、** スコープ タグは省略可能です。 次のいずれかの操作を行います。
+
+   - [ **スコープ タグの選択]** をクリックし、スコープ タグ (オプション) を選択し、[次へ] を **クリックします**。
+   - または、[次へ] **をクリックします。**
+
+7. 手順 **4 [割り当** て] の **[含** まれるグループ] で、このルールを適用するグループの場合は、次のオプションから選択します。
+
+   - **グループの追加**
+   - **すべてのユーザーを追加する**
+   - **すべてのデバイスを追加する**
+
+   ![MEM の割り当て](images/mem06-4-assignments.png)
+
+8. [ **除外グループ] で**、このルールから除外するグループを選択し、[次へ] を **クリックします**。
+
+9. 手順 **5 次の設定の** 適用ルールで、次の操作を行います。
+
+   - [ **ルール] で**、[プロファイルを **割り当てる場合**] または [プロファイルを割り当 **てない場合] を選択します。**
+   - [ **プロパティ**] で、このルールを適用するプロパティを選択します。
+   - [ **値]** に、該当する値または値の範囲を入力します。
+
+   ![MEM 適用ルール](images/mem07-5-applicability -rules.png)
+
+10. **[次へ]** をクリックします。 手順 **6 [レビュー] + [作成**] で、選択して入力した設定と情報を確認し、[作成] を **クリックします**。
+
+   ![MEM レビューと作成](images/mem08-6-review-create.png)
+
+>[!NOTE]
+> ルールはアクティブで、数分以内に有効です。
+
+>[!NOTE]
+> 競合の処理: デバイスに 2 つの異なる ASR ポリシーを割り当てる場合、競合の処理方法は、異なる状態が割り当てられているルールであり、競合管理が行われるので、結果はエラーになります。
+> 競合しないルールではエラーが発生し、ルールが正しく適用されます。 その結果、最初のルールが適用され、それ以降の競合しないルールがポリシーにマージされます。
 
 ## <a name="powershell"></a>PowerShell
 

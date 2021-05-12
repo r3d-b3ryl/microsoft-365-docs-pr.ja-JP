@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 3c91a388bc01a5531309b556a5a8532cb2efbaa6
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892908"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311762"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
 Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compliance.md)を使用すると、組織は Microsoft 365 のさまざまなサービスにわたって、さまざまな種類の監査済みアクティビティを可視化できます。 高度な監査は、侵害の範囲の決定に役立つ重要なイベントへのアクセスを提供し、Office 365 管理アクティビティ API への迅速なアクセスを提供することで、調査の実施に必要な監査ログの保持を高め、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。
 
 > [!NOTE]
-> 高度な監査は、Office 365 E5/G5 または Microsoft 365 Enterprise E5/G5のサブスクリプションを持つ組織で利用できます。 さらに、Microsoft 365 E5 コンプライアンス アドオン ライセンスや Microsoft 365 E5 eDiscovery and Audit アドオン ライセンスは、監査ログの長期保持や調査のための重要なイベントへのアクセスと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。 ライセンスの詳細については、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)」を参照してください。
+> 高度な監査は、Office 365 E5/A5/G5 または Microsoft 365 Enterprise E5/A5/G5 のサブスクリプションを登録している組織で利用できます。 さらに、Microsoft 365 E5/A5/G5 コンプライアンスや E5/A5/G5 電子情報開示および監査アドオン ライセンスは、監査ログの長期保持や調査のための重要なイベントへのアクセスと同様に、高度な監査機能にユーザーごとのライセンスが必要な場合に、ユーザーに割り当てることができます。 ライセンスの詳細については、次をご覧ください。<br/>- [高度な監査のライセンスの必要条件](auditing-solutions-overview.md#licensing-requirements)<br/>- [セキュリティとコンプライアンスのための Microsoft 365 ライセンスの要件](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
 この記事では、高度な監査機能の概要を説明し、高度な監査用にユーザーを設定する方法を示します。
 
@@ -131,9 +131,7 @@ SearchQueryInitiatedExchange 監査レコードを検索するには、コンプ
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
-> (特定の E5 ユーザーによって実行された) SearchQueryInitiatedExchange イベントが監査ログの検索結果に含まれるように、Exchange Online PowerShell で次のコマンドを実行する必要があります: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
-複数地域環境では、ユーザーのメールボックスが配置されているフォレストで **Set-Mailbox** コマンドを実行する必要があります。 ユーザーのメールボックスの場所を特定するには、次のコマンドを実行します: `Get-Mailbox <user identity> | FL MailboxLocations`。
-以前に、ユーザーのメールボックスが配置されているフォレストとは異なるフォレストで `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` コマンドが実行された場合は、ユーザーのメールボックスから (`Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` を実行して) SearchQueryInitiated 値を削除し、その後でユーザーのメールボックスが配置されているフォレスト内のユーザーのメールボックスに追加する必要があります。
+> 監査ログでこのイベントを検索するには、SearchQueryInitiatedExchange を有効にして記録する必要があります。 方法については、[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-crucial-events) を参照してください。
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -156,47 +154,25 @@ SearchQueryInitiatedSharePoint 監査レコードを検索するには、コン�
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
-> (特定の E5 ユーザーによって実行された) SearchQueryInitiatedSharePoint イベントが監査ログの検索結果に含まれるように、Exchange Online PowerShell で次のコマンドを実行する必要があります: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
-複数地域環境では、ユーザーのメールボックスが配置されているフォレストで **Set-Mailbox** コマンドを実行する必要があります。 ユーザーのメールボックスの場所を特定するには、次のコマンドを実行します: `Get-Mailbox <user identity> | FL MailboxLocations`。
-以前に、ユーザーのメールボックスが配置されているフォレストとは異なるフォレストで `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` コマンドが実行された場合は、ユーザーのメールボックスから (`Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` を実行して) SearchQueryInitiated 値を削除し、その後でユーザーのメールボックスが配置されているフォレスト内のユーザーのメールボックスに追加する必要があります。
+> 監査ログでこのイベントを検索するには、SearchQueryInitiatedSharePoint を有効にして記録する必要があります。 方法については、[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-crucial-events) を参照してください。
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Office 365 管理アクティビティ API への高帯域幅アクセス
 
 Office 365 管理アクティビティ API を使用して監査ログにアクセスする組織は、発行者レベルの調整制限により制限されていました。 つまり、発行者が複数のお客様に代わってデータをプルする場合、制限はそれらすべてのお客様で共有されていました。
 
-高度な監査のリリースにより、発行者レベルの制限からテナント レベルの制限に移行します。 その結果、各組織は、監査データにアクセスするために独自に完全に割り当てられた帯域幅を取得します。 帯域幅は静的な定義済みの制限ではありませんが、組織内のシート数などの要因の組み合わせでモデル化され、E5 組織は E5 以外よりも多くの帯域幅を利用できます。
+高度な監査のリリースにより、発行者レベルの制限からテナント レベルの制限に移行します。 その結果、各組織は、監査データにアクセスするために独自に完全に割り当てられた帯域幅を取得します。 帯域幅は静的な定義済みの制限ではありませんが、組織内のシート数などの要因の組み合わせでモデル化され、E5/A5/G5 組織は E5/A5/G5 以外よりも多くの帯域幅を利用できます。
 
-すべての組織には、最初に 1 分あたり 2,000 件の要求のベースラインが割り当てられます。 この制限は、組織のシート数とライセンス サブスクリプションに応じて動的に増加します。 E5 組織は、E5 以外の組織の約 2 倍の帯域幅を利用できます。 また、サービスの正常性を保護するために、最大帯域幅の上限も設定されます。
+すべての組織には、最初に 1 分あたり 2,000 件の要求のベースラインが割り当てられます。 この制限は、組織のシート数とライセンス サブスクリプションに応じて動的に増加します。 E5/A5/G5 組織は、E5/A5/G5 以外の組織の約 2 倍の帯域幅を利用できます。 また、サービスの正常性を保護するために、最大帯域幅の上限も設定されます。
 
 詳細については、「[Office 365 管理アクティビティ API リファレンス](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)」の「API 調整」のセクションを参照してください。
 
-## <a name="set-up-advanced-audit-for-users"></a>ユーザーの高度な監査のセットアップを行う
-
-MailItemsAccessed や Send などの重要なイベントをログに記録する機能などの高度な監査機能を使用するには、ユーザーに適切な E5 ライセンスが割り当てられている必要があります。 さらに、それらのユーザーに対して高度な監査アプリ/サービス プランを有効にする必要があります。 高度な監査アプリがユーザーに割り当てられていることを確認するには、ユーザーごとに次の手順を実行します。
-
-1. [Microsoft 365 管理センター](https://admin.microsoft.com/Adminportal)で、**[ユーザー]** > **[アクティブなユーザー]** の順に移動し、ユーザーを選択します。
-
-2. ユーザー プロパティのポップアップ ページで、**[ライセンスとアプリ]** をクリックします。
-
-3. **[ライセンス]** セクションで、ユーザーに E5 ライセンスが割り当てられていることを確認します。
-
-4. **[アプリ]** セクションを展開して、**[Microsoft 365 高度な監査]** チェック ボックスが選択されていることを確認します。
-
-5. そのチェック ボックスが選択されていない場合は、選択して **[変更の保存]** をクリックします。
-
-   ユーザーの MailItemsAccessed、送信、およびその他の重要なイベントの監査レコードのログ記録は、24  時間以内に開始されます。
-
-グループ ベースのライセンスを使用してユーザーのグループにライセンスを割り当てている組織では、グループに対する Microsoft 365 Advanced Auditing のライセンス割り当てをオフにする必要があります。 変更を保存したら、Microsoft 365 Advanced Auditing がグループに対してオフになっていることを確認します。 その後、グループに対するライセンス割り当てをもう一度オンにします。 グループ ベースのライセンスの手順については、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
-
-ユーザー メールボックスまたは共有メールボックスについてログに記録されるメールボックス操作をカスタマイズしている場合、MailItemsAccessed などの新しい既定のメールボックス操作は、これらのメールボックスでは自動的に監査されません。 ログオンの種類ごとに監査されるメールボックス操作の変更については、 「[メールボックスの監査を管理する](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)」の「既定でログに記録されるメールボックスの操作を変更または復元する」セクションを参照してください。
-
 ## <a name="faqs-for-advanced-audit"></a>高度な監査についてよく寄せられる質問
 
-**高度な監査を利用するには、すべてのユーザーに E5 ライセンスが必要ですか ?**
+**高度な監査を利用するには、すべてのユーザーに E5/A5/G5 ライセンスが必要ですか ?**
 
-ユーザーレベルの高度な監査機能を利用するには、ユーザーに E5 ライセンスを割り当てる必要があります。 適切なライセンスをチェックして、ユーザーに機能を公開するための機能がいくつかあります。 たとえば、90 日を超えて E5 ライセンスが割り当てられていないユーザーの監査レコードを保持しようとすると、システムはエラー メッセージを返します。
+ユーザー レベルの高度な監査機能を利用するには、ユーザーに E5/A5/G5 ライセンスを割り当てる必要があります。 適切なライセンスをチェックして、ユーザーに機能を公開するための機能がいくつかあります。 たとえば、90 日を超えて適切なライセンスが割り当てられていないユーザーの監査レコードを保持しようとすると、システムはエラー メッセージを返します。
 
-**組織に E5 サブスクリプションがある場合、重要なイベントの監査レコードにアクセスするために何かをする必要はありますか?**
+**組織が E5/A5/G5 サブスクリプションを持っている場合、重要なイベントの監査レコードにアクセスするために何かをする必要はありますか?**
 
 適切なライセンスが割り当てられている対象のお客様とユーザーには、重要な監査イベントにアクセスするためのアクションはありません。
 

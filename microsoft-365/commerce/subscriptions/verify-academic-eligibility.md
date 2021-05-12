@@ -1,11 +1,12 @@
 ---
-title: サブスクリプションの学業Microsoft 365 Education確認する
+title: Microsoft 365 Education サブスクリプションの教育機関向け資格を確認する
 f1.keywords:
 - CSH
 - FWLink 2135711
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,35 +14,35 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-ms.custom: ''
-search.appverid:
-- MET150
-description: 教育機関向け価格に対する学校の適格性をMicrosoft 365 Educationする方法について学習します。
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+search.appverid: MET150
+description: Microsoft 365 Education 学術価格に対する学校の適格性を確認する方法について説明します。
 ms.date: 07/21/2020
-ms.openlocfilehash: ad014cd72d82413073e1e645484f2a7fd0090b3c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e0e85e53ed00c1c7c23e86f380a6440038d775c9
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293489"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326880"
 ---
-# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>サブスクリプションの学業Microsoft 365 Education確認する
+# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Microsoft 365 Education サブスクリプションの教育機関向け資格を確認する
 
-教育機関の一部である場合は、無料の試用版にサインアップMicrosoft 365 Education。 Microsoft が学校の教育機関の資格を確認した後、教育機関向けMicrosoft 365を購入できます。 これには、教職員向けや学生向けOffice 365 A1など、無料Office 365 A1含まれます。 無料試用版が終了するまで、学術価格で有料サブスクリプションに変換できます。
+教育機関の一部である場合は、Microsoft 365 Education の無料試用版にサインアップできます。 Microsoft が学校の教育機関の資格を確認した後、Microsoft 365 製品を学術価格で購入できます。 これには、教職員向け Office 365 A1、学生Office 365 A1 など、無料で利用できる製品が含まれます。 無料試用版が終了するまで、学術価格で有料サブスクリプションに変換できます。
 
 この記事では、学校の教育機関の資格を確認し、資格の状態を確認し、学校が承認された後に学術価格でサブスクリプションを購入する方法について説明します。
 
 ## <a name="before-you-begin"></a>はじめに
 
-試用版サブスクリプションが既Microsoft 365 Education必要です。 試用版サブスクリプションをお持ちでない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
+Microsoft 365 Education 試用版サブスクリプションが既に必要です。 試用版サブスクリプションをお持ちでない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>試用版サブスクリプションを持っているのを確認する
 
-試用版サブスクリプションを使用している場合は、Microsoft 365 Education手順を使用して確認してください。
+Microsoft 365 Education 試用版サブスクリプションを持っている場合は、次の手順を使用して、そのサブスクリプションを確認してください。
 
 1. Microsoft 365 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページに移動します。
-2. 学生向 **けOffice 365 A1試用版と学生向** けOffice 365 A1 **を探します**。 これらのサブスクリプションが見当たらない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
+2. 教員試用版 **Office 365 A1** を探し、学生 **Office 365 A1 を探します**。 これらのサブスクリプションが見当たらない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
 
 ## <a name="verify-your-schools-academic-eligibility"></a>学校の学業資格を確認する
 
@@ -56,7 +57,7 @@ ms.locfileid: "52293489"
 
 ## <a name="check-the-status-of-your-schools-academic-eligibility"></a>学校の学業資格の状態を確認する
 
-試験を受けたMicrosoft 365 Education、学校の学業資格の状況をいつでも確認できます。
+Microsoft 365 Education 試用版を取得した後は、学校の教育機関の資格の状態をいつでも確認できます。
 
 1. 
             [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)に戻ります。
@@ -64,13 +65,13 @@ ms.locfileid: "52293489"
     課金 **カード** は、検証プロセスの状態を示します。 カードには、承認済み、保留中、拒否、またはドメインの追加のいずれかの状態が表示されます。
 
     > [!NOTE]
-    > これらの状態が 1 つも表示しない場合は、試用版サブスクリプションMicrosoft 365 Education意味します。 無料試用版を開始するには、この [Web ページにアクセスし、[](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 無料で **開始する] を選択します**。
+    > これらの状態が 1 つも表示しない場合は、Microsoft 365 Education 試用版サブスクリプションを持たなかったという意味です。 無料試用版を開始するには、この [Web ページにアクセスし、[](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 無料で **開始する] を選択します**。
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>学術価格でサブスクリプションを購入する
 
 学校の資格が確認された後は、学術価格でサブスクリプションを購入できます。 無料試用版 [を有料サブスクリプションに変換できます](../try-or-buy-microsoft-365.md)。 試用版サブスクリプションを変換する場合は、試用期間の終了前にこれを行う必要があります。
 
-1. 管理センター Microsoft 365、[課金の購入サービス] \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">ページに移動</a>します。
+1. Microsoft 365 管理センターで、[課金の購入サービス] \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">ページに移動</a>します。
 2. 学術的なオファーを表示するには、[教育機関] タブ **を選択** します。
 
     > [!NOTE]
@@ -96,13 +97,13 @@ ms.locfileid: "52293489"
 
 ## <a name="next-steps"></a>次の手順
 
-学校用にアプリを展開するMicrosoft 365については、「ドキュメントとリソースMicrosoft 365 Education[を参照してください](/microsoft-365/education/deploy/)。 次に、ユーザー [を追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。 必要に応じて、サブスクリプションの [ライセンスを購入できます](../licenses/buy-licenses.md)。
+学校用に Microsoft 365 を展開する方法については [、「Microsoft 365 Education](/microsoft-365/education/deploy/)のドキュメントとリソース」を参照してください。 次に、ユーザー [を追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。 必要に応じて、サブスクリプションの [ライセンスを購入できます](../licenses/buy-licenses.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 Education IT 管理者向けドキュメント](/education/itadmins)(記事リンク)\
-[Microsoft Teams (製品](https://microsoft.com/education/products/teams/default.aspx)ページ)\
-[ビジネス向けサービスのサブスクリプションMicrosoft 365ライセンス](../licenses/subscriptions-and-licenses.md)について (記事)\
+[Microsoft 365 Education Documentation for IT Admins](/education/itadmins) (記事リンク)\
+[Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (製品ページ)\
+[Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) のサブスクリプションとライセンスについて (記事)\
 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)(記事)\
 [サブスクリプション ライセンスの購入または削除](../licenses/buy-licenses.md) (記事)\
 [ユーザーを別のサブスクリプションに移動する](move-users-different-subscription.md) (記事)

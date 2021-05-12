@@ -16,21 +16,22 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 461bc7c8d4d8d5c9bb8c905f3b160d0af226b077
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 56ab6c6c11bd2c0786c0d797e5302a1f06f9bd53
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023227"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327260"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>攻撃表面の縮小ルールを使用してマルウェアの感染を防止する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>攻撃表面の縮小ルールが重要な理由
 
@@ -48,7 +49,7 @@ ms.locfileid: "52023227"
 
 ## <a name="assess-rule-impact-before-deployment"></a>展開前にルールへの影響を評価する
 
-攻撃表面の縮小ルールがネットワークに与える影響を評価するには、脅威と脆弱性の管理で、そのルールのセキュリティ推奨事項 [を開きます](https://docs.microsoft.com/windows/security/threat-protection/#tvm)。
+攻撃表面の縮小ルールがネットワークに与える影響を評価するには、このルールのセキュリティに関する推奨事項を [脅威と脆弱性の管理][で開きます](https://docs.microsoft.com/windows/security/threat-protection/#tvm)。
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="攻撃表面の縮小ルールのセキュリティ reco":::
 
@@ -66,14 +67,14 @@ ms.locfileid: "52023227"
 
 ### <a name="requirements-for-warn-mode-to-work"></a>警告モードが機能する要件
 
-警告モードは、次のバージョンの Windows を実行しているデバイスでサポートされています。
+警告モードは、次のバージョンの警告を実行しているデバイスWindows。
 
-- [Windows 10 バージョン 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) 以降
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) 以降
+- [Windows 10バージョン 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)以降
+- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)以降
 
-Microsoft Defender ウイルス対策は、アクティブ モードでリアルタイム保護を使用して [実行されている必要があります](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
+Microsoft Defender ウイルス対策モードでリアルタイム保護を実行している[必要があります](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
 
-さらに [、Microsoft Defender ウイルス対策とマルウェア対策の更新プログラムがインストールされていることを](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) 確認します。
+さらに、マルウェア対策[Microsoft Defender ウイルス対策更新プログラムがインストールされていることを](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)確認します。
 
 - プラットフォームリリースの最小要件: `4.18.2008.9`
 - エンジンリリースの最小要件: `1.1.17400.5`
@@ -82,13 +83,13 @@ Microsoft Defender ウイルス対策は、アクティブ モードでリアル
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>警告モードがサポートされていない場合
 
-警告モードは、Microsoft Endpoint Manager で構成する 3 つの攻撃表面縮小ルールではサポートされていません。 (グループ ポリシーを使用して攻撃表面の縮小ルールを構成する場合は、警告モードがサポートされます)。Microsoft Endpoint Manager で構成するときに警告モードをサポートしない 3 つのルールは次のとおりです。
+警告モードは、3 つの攻撃表面の縮小ルールを構成するときにサポートMicrosoft エンドポイント マネージャー。 (グループ ポリシーを使用して攻撃表面の縮小ルールを構成する場合は、警告モードがサポートされます)。警告モードを構成するときに警告モードをサポートしない 3 つのMicrosoft エンドポイント マネージャーは次のとおりです。
 
 - [ダウンロードした実行可能コンテンツ (GUID)](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)の起動から JavaScript または VBScript をブロックする `d3e037e1-3eb8-44c8-a917-57927947596d`
 - [WMI イベント サブスクリプション (GUID) による永続](#block-persistence-through-wmi-event-subscription) 化をブロック `e6db77e5-3df2-4cf1-b95a-636979351e5b` する
 - [ランサムウェアに対する高度な保護を使用](#use-advanced-protection-against-ransomware) する `c1db55ab-c21a-4637-bb3f-a12568109d35` (GUID)
 
-また、以前のバージョンの Windows を実行しているデバイスでは、警告モードはサポートされていません。 このような場合、警告モードで実行するように構成された攻撃表面の縮小ルールは、ブロック モードで実行されます。
+さらに、以前のバージョンのバージョンのデバイスで警告モードはサポートWindows。 このような場合、警告モードで実行するように構成された攻撃表面の縮小ルールは、ブロック モードで実行されます。
 
 ## <a name="notifications-and-alerts"></a>通知とアラート
 
@@ -96,7 +97,7 @@ Microsoft Defender ウイルス対策は、アクティブ モードでリアル
 
 さらに、特定の攻撃表面の縮小ルールがトリガーされると、アラートが生成されます。
 
-通知と生成されるアラートは、Microsoft Defender セキュリティ センター ( ) と Microsoft 365 セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) ( ) で表示できます [https://security.microsoft.com](https://security.microsoft.com) 。
+通知と生成されるアラートは、Microsoft Defender セキュリティ センター ( ) および Microsoft 365 セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) ( ) で表示できます [https://security.microsoft.com](https://security.microsoft.com) 。
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高度な狩猟と攻撃表面の縮小イベント
 
@@ -106,18 +107,18 @@ Microsoft Defender ウイルス対策は、アクティブ モードでリアル
 
 高度な狩猟の詳細については、「高度な狩猟 [を使用して脅威を事前に検出する」を参照してください](advanced-hunting-overview.md)。
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>Windows バージョン全体の攻撃表面の縮小機能
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>複数のバージョンの攻撃表面Windows機能
 
-次のエディションとバージョンの Windows を実行しているデバイスに対して攻撃表面の縮小ルールを設定できます。
+次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールをWindows。
 
-- Windows 10 Pro [バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 以降
-- Windows 10 Enterprise バージョン [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 以降
-- Windows Server バージョン [1803 (半期チャネル)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 以降
+- Windows 10 Proバージョン[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)以降
+- Windows 10 Enterpriseバージョン[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)以降
+- Windowsサーバー、[バージョン 1803 (半期チャネル)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-攻撃表面の縮小ルールは [Windows E5](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)ライセンスを必要としますが、Windows E5 を使用している場合は、高度な管理機能を利用できます。 Windows E5 でのみ使用できるこれらの機能には [、Defender for Endpoint](microsoft-defender-endpoint.md)で使用できる監視、分析、ワークフロー、 [および Microsoft 365](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center)セキュリティ センターのレポート機能と構成機能が含まれます。 これらの高度な機能は、Windows Professional または Windows E3 ライセンスでは使用できません。ただし、これらのライセンスがある場合は、イベント ビューアーと Microsoft Defender ウイルス対策ログを使用して攻撃表面の縮小ルール イベントを確認できます。
+攻撃表面の縮小ルールでは[E5](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)ライセンスをWindows必要とWindows、高度な管理機能を利用できます。 Windows E5 でのみ使用できるこれらの機能には[、Defender for Endpoint](microsoft-defender-endpoint.md)で使用できる監視、分析、ワークフロー、および Microsoft 365 セキュリティ センターのレポート機能と構成[機能が含まれます](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center)。 これらの高度な機能は、E3 ライセンスWindows ProfessionalまたはWindows使用できません。ただし、これらのライセンスを持っている場合は、イベント ビューアーとログMicrosoft Defender ウイルス対策を使用して、攻撃表面の縮小ルール イベントを確認できます。
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターで攻撃表面の縮小イベントを確認する
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>攻撃表面の縮小イベントを確認Microsoft Defender セキュリティ センター
 
 Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックの詳細なレポートを提供します。
 
@@ -130,15 +131,15 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Windows イベント ビューアーで攻撃表面の縮小イベントを確認する
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>イベント ビューアーで攻撃表面の縮小イベントWindows確認する
 
-Windows イベント ログを確認して、攻撃表面の縮小ルールによって生成されたイベントを表示できます。
+次のイベント ログをWindowsして、攻撃表面の縮小ルールによって生成されたイベントを表示できます。
 
 1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlアクセスしやすい* 場所にファイルを抽出します。
-2. [スタート] メニューに *「イベント ビューアー*」という単語を入力して、Windows イベント ビューアーを開きます。
+2. [スタート] メニューに「*イベント ビューアー*」という単語を入力し、イベント ビューアー Windows開きます。
 3. [アクション **] で**、[カスタム **ビューのインポート.... を選択します**。
 4. 抽出された場所 *cfa-events.xml* ファイルを選択します。 または [、XML を直接コピーします](event-views.md)。
-5. [**OK**] を選択します。
+5. **[OK]** を選択します。
 
 イベントをフィルター処理して、次のイベントのみを表示するカスタム ビューを作成できます。そのすべては、フォルダー アクセスの制御に関連しています。
 
@@ -149,32 +150,60 @@ Windows イベント ログを確認して、攻撃表面の縮小ルールに�
 |1122|監査モードでルールが発生した場合のイベント|
 |
 
-イベント ログの攻撃表面の縮小イベント用にリストされている "エンジンバージョン" は、オペレーティング システムではなく Defender for Endpoint によって生成されます。 Defender for Endpoint は Windows 10 と統合されています。そのため、この機能は Windows 10 がインストールされているすべてのデバイスで動作します。
+イベント ログの攻撃表面の縮小イベント用にリストされている "エンジンバージョン" は、オペレーティング システムではなく Defender for Endpoint によって生成されます。 Defender for Endpoint は、Windows 10と統合されています。そのため、この機能は、インストールされているすべてのデバイスWindows 10します。
 
 ## <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
 次の表とサブセクションでは、15 の攻撃表面の縮小ルールのそれぞれについて説明します。 攻撃表面の縮小ルールは、ルール名によってアルファベット順に表示されます。
 
-グループ ポリシーまたは PowerShell を使用して攻撃表面の縮小ルールを構成する場合は、GUID が必要です。 一方、Microsoft Endpoint Manager または Microsoft Intune を使用する場合は、GUID は必要とされません。
+グループ ポリシーまたは PowerShell を使用して攻撃表面の縮小ルールを構成する場合は、GUID が必要です。 一方、ユーザー設定またはMicrosoft エンドポイント マネージャーをMicrosoft Intune GUID は必要とされません。
 
 |ルールの名前|GUID|ファイル&フォルダーの除外|サポートされる最小 OS|
 |---|:---:|---|---|
-|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[Windows ローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[実行可能Office作成するアプリケーションをブロックする](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[通信Office子プロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|非サポート|[Windows 10 バージョン 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (ビルド 18362) 以上|
-|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|サポート|[Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
+|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|非サポート|[Windows 10バージョン 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (ビルド 18362) 以上|
+|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|サポート|[Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
 |
+
+### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>悪用された脆弱な署名済みドライバーの悪用をブロックする
+
+このルールは、アプリケーションが脆弱な署名済みドライバーをディスクに書き込むのを防ぐためです。 インザワイルドで脆弱な署名済みドライバーは、カーネルにアクセスするのに十分な特権を持つローカル アプリケーション \-  \- によって悪用される可能性があります。 脆弱な署名付きドライバーを使用すると、攻撃者はセキュリティ ソリューションを無効または回避し、最終的にはシステムの侵害につながる可能性があります。
+
+このルールは、システム上に既に存在するドライバーが読み込まれるのをブロックしない。
+
+このルールは、ASR がサポートされているすべてのバージョンでサポートされます。これは次の場合です。
+
+- [Windows 10 Proバージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)以降
+- [Windows 10 Enterpriseバージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)以降
+- [Windows Server バージョン 1803 (半期チャネル)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)以降
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+Intune 名: `Block abuse of exploited vulnerable signed drivers`
+
+GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
+
+MEM[カスタム Microsoft エンドポイント マネージャー手順の詳細については](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure)、「カスタム プロシージャ」を参照してください。
+
+次のコマンドをコマンド ラインで実行して、ASR ルールを有効にできます。
+
+```powershell
+"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+```
+
+この Web サイトを使用して、 [分析用にドライバーを送信できます](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Adobe Reader の子プロセスの作成をブロックする
 
@@ -184,8 +213,8 @@ Windows イベント ログを確認して、攻撃表面の縮小ルールに�
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 Intune 名: `Process creation from Adobe Reader (beta)`
@@ -198,12 +227,12 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 このルールは、Officeプロセスの作成をブロックします。 Officeには、Word、Excel、PowerPoint、OneNote、Access が含まれます。
 
-悪意のある子プロセスを作成する方法は、一般的なマルウェア戦略です。 マルウェアがベクターとしてOfficeマルウェアは、VBA マクロを実行し、コードを悪用して、より多くのペイロードをダウンロードして実行しようとする場合が多い。 ただし、一部の正当な業務行アプリケーションでは、コマンド プロンプトの生成や PowerShell を使用してレジストリ設定を構成するなどの、適切な目的で子プロセスを生成する場合があります。
+悪意のある子プロセスを作成する方法は、一般的なマルウェア戦略です。 マルウェアがベクターとしてOffice、VBA マクロを実行し、コードを悪用して、より多くのペイロードをダウンロードして実行しようとする場合があります。 ただし、一部の正当な業務行アプリケーションでは、コマンド プロンプトの生成や PowerShell を使用してレジストリ設定を構成するなどの、適切な目的で子プロセスを生成する場合があります。
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -213,11 +242,11 @@ Configuration Manager 名: `Block Office application from creating child process
 
 GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
-### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Windows ローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする
+### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする
 
 このルールは、ローカル セキュリティ機関サブシステム サービス (LSASS) をロックダウンすることで、資格情報の盗用を防ぐのに役立ちます。
 
-LSASS は、Windows コンピューターでサインインするユーザーを認証します。 Windows 10 の Microsoft Defender Credential Guard は、通常、LSASS から資格情報を抽出しようとする試みを防止します。 ただし、一部の組織では、カスタム スマートカード ドライバーやローカル セキュリティ機関 (LSA) に読み込む他のプログラムとの互換性の問題により、すべてのコンピューターで Credential Guard を有効にできない場合があります。 このような場合、攻撃者は Mimikatz のようなハッキング ツールを使用して、LSASS からクリアテキスト パスワードと NTLM ハッシュをスクレイピングできます。
+LSASS は、コンピューターにサインインするユーザーをWindowsします。 Microsoft Defender Credential Guard in Windows 10は、通常、LSASS から資格情報を抽出しようとして防止します。 ただし、一部の組織では、カスタム スマートカード ドライバーやローカル セキュリティ機関 (LSA) に読み込む他のプログラムとの互換性の問題により、すべてのコンピューターで Credential Guard を有効にできない場合があります。 このような場合、攻撃者は Mimikatz のようなハッキング ツールを使用して、LSASS からクリアテキスト パスワードと NTLM ハッシュをスクレイピングできます。
 
 > [!NOTE]
 > 一部のアプリでは、実行中のすべてのプロセスを列挙し、網羅的なアクセス許可を使用して開きます。 このルールは、アプリのプロセスのオープン アクションを拒否し、詳細をセキュリティ イベント ログに記録します。 このルールでは、多くのノイズが発生する可能性があります。 LSASS を列挙するだけで、機能に実際の影響がないアプリがある場合は、除外リストに追加する必要はありません。 それ自体では、このイベント ログ エントリは必ずしも悪意のある脅威を示すとは限りません。
@@ -239,8 +268,8 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 このルールは、次のファイルの種類が、Microsoft Outlook アプリケーション内で開いた電子メール、または他の一般的な webmail プロバイダー Outlook.com から起動をブロックします。
 
-- 実行可能ファイル (.exe、.dll、.scr など)
-- スクリプト ファイル (PowerShell .ps、Visual Basic .vbs、JavaScript .js ファイルなど)
+- 実行可能ファイル (.exe、.dll.scr など)
+- スクリプト ファイル (PowerShell .ps、Visual Basic .vbs、JavaScript ファイル.jsなど)
 
 このルールは次の中で導入されました。
 
@@ -266,7 +295,7 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 このルールは、有病率や年齢の条件を満たしたり、信頼できるリストまたは除外リストに含めない限り、次の種類のファイルの起動をブロックします。
 
-- 実行可能ファイル (.exe、.dll、.scr など)
+- 実行可能ファイル (.exe、.dll.scr など)
 
 信頼されていない実行可能ファイルまたは不明な実行可能ファイルを起動すると、ファイルが悪意のある場合、最初は明確にできない可能性があります。
 
@@ -432,7 +461,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする
 
-このルールを使用すると、管理者は、SD カードを含む USB リムーバブル ドライブから署名されていない実行可能ファイルまたは信頼されていない実行可能ファイルを実行できません。 ブロックされたファイルの種類には、実行可能ファイル (.exe、.dll、.scr など) が含まれます。
+このルールを使用すると、管理者は、SD カードを含む USB リムーバブル ドライブから署名されていない実行可能ファイルまたは信頼されていない実行可能ファイルを実行できません。 ブロックされたファイルの種類には、実行可能ファイル (.exe、.dll.scr など) が含まれます。
 
 このルールは次の中で導入されました。
 

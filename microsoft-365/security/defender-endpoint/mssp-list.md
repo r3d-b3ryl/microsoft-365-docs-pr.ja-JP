@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 48e45385fb138c19b76dc2d672566cf2ad0fb3cc
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862153"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327310"
 ---
 # <a name="supported-managed-security-service-providers"></a>サポート対象マネージド セキュリティ サービス プロバイダー
 
@@ -36,6 +36,7 @@ ms.locfileid: "51862153"
 
 ロゴ |パートナー名   | 説明 
 :---|:---|:---
+![Aujas ロゴの画像](images/aujas-logo.png) | [Aujas マネージ MDE サービス](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas のサイバーセキュリティは、Microsoft Defender をサイバー 防御センターを通じてエンドポイントに対して Microsoft Defender を使用して、企業全体にわたって 24*7 のマネージド セキュリティ サービスを提供します。
 ![BDO デジタル ロゴの画像](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO Digital の Managed Defense は、ベスト プラクティス ツール、AI、および 24/7/365 ID 保護のためのセキュリティ専門家を活用します
 ![BlueVoyant ロゴの画像](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR for Microsoft Defender for Endpoint は、エンドポイントに対する高度な攻撃の監視、調査、および軽減をサポートします。
 ![クラウド セキュリティ センターのロゴの画像](images/cloudsecuritycenter-logo.png)| [クラウド セキュリティ センター](https://go.microsoft.com/fwlink/?linkid=2099315) | InSpark のクラウド セキュリティ センターは、24 時間 365 日の管理サービスで、保護を提供し、応答機能&検出します。
@@ -44,6 +45,7 @@ ms.locfileid: "51862153"
 ![Dell Technologies Advanced Threat Protection ロゴの画像](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | 24 時間 365 日の機能を備え、悪意のある動作と異常を監視するプロフェッショナル な監視サービス
 ![エンドポイント脅威DXC-Managed応答ロゴの画像](images/dxc-logo.png)| [DXC-Managed エンドポイントの脅威の検出と応答](https://go.microsoft.com/fwlink/?linkid=2090395) | 従来のセキュリティ防御を回避し、数日ではなく数時間または数分でエンドポイントの脅威を特定する
 ![eSentire ログのイメージ](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | Microsoft Defender for Endpoint を介した 24 時間 365 日の脅威の調査と対応。
+![追放ロゴの画像](images/expel-logo.png)| [Microsoft Defender Endpoint のマネージ検出と応答を削除する](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel は、Microsoft Defender Endpoint でセキュリティ リスクを検出することで、セキュリティを維持するのに役立ちます。
 ![NTT セキュリティ ロゴの画像](images/ntt-logo.png)| [NTT セキュリティ](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT の EDR サービスは、エンドポイントとネットワーク全体& 24 時間 365 日のセキュリティ監視を提供します
 ![OneVinn ロゴの画像](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24 時間 365 日、Microsoft Defender と Azure Sentinel 上に構築されたマネージ検出と応答。Onevinn の脅威インテリジェンスが強化されています。
 ![クォーラム サイバー ロゴのイメージ](images/quorum-logo.png) | [クォーラム サイバー](https://go.microsoft.com/fwlink/?linkid=2155202)| セキュリティ エンジニアリング サービス&最先端の脅威ハンティング。

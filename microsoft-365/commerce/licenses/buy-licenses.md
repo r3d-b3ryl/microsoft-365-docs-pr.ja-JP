@@ -5,27 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_o365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
-description: Microsoft 365 for business サブスクリプションのライセンス数を増やしたり、ライセンス数を減らしたりする方法について説明します。
-ms.date: ''
-ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+- commerce_licensing
+search.appverid: MET150
+description: ビジネス サブスクリプションのライセンス数を増やしたり、ライセンス数を減らMicrosoft 365を確認します。
+ms.date: 04/07/2021
+ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615137"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327120"
 ---
 # <a name="buy-or-remove-licenses"></a>「ライセンスの購入または削除」
 
@@ -33,9 +34,9 @@ ms.locfileid: "51615137"
 
 ## <a name="before-you-begin"></a>はじめに
 
-- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 - ユーザーを [追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。
-- Microsoft 365 for business または Office 365 Enterprise プランをサード パーティパートナーを通じて購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。
+- ビジネス向けまたはMicrosoft 365プランOffice 365 Enterprise購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。
 
 ## <a name="watch-buy-new-licenses"></a>ウォッチ: 新しいライセンスを購入する
 
@@ -53,18 +54,18 @@ ms.locfileid: "51615137"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 2. **[製品]** タブで、ライセンスを購入または削除するサブスクリプションを見つけます。 **[その他の操作]** (3 つのドット) を選択してから、**[ライセンスの購入]** を選択します。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -83,7 +84,7 @@ ms.locfileid: "51615137"
 |---------|---------|---------|
 |与信審査が保留中。 |クレジット チェックが保留中の場合は、クレジット チェックが完了するまでライセンスを購入または削除できます。  | 与信審査が完了しているかどうかをしばらく待ってから確認してください。 通常、与信審査が完了するまで 2 営業日かかります。<br/>クレジット チェックが完了すると、[ライセンスの購入] ボタンと [ **ライセンスの削除** ] ボタン **が** 表示されます。 |
 |プロダクト キーを使用してサブスクリプションをアクティブ化しました。| 25 文字のプロダクト キーを使用してサブスクリプションを購入してアクティブ化した場合は、[製品] ページの[購入チャネル] 列に"プリペイド" という単語 **が表示** されます。  |「[プロダクト キーを使って支払われたサブスクリプションにライセンスを追加する](add-licenses-using-product-key.md)」を参照してください。 |
-|再販業者を通じてサブスクリプションを購入した。| [製品] ページの [購入チャネル] 列に「リセラー **」という単語が表示** されます。 | サブスクリプションがクラウド ソリューション プロバイダー (CSP) パートナーを介して購入された場合は、CSP パートナーに問い合わせ、より多くのライセンスを購入してください。        |
+|再販業者を通じてサブスクリプションを購入した。| [製品] ページの [購入チャネル] 列に「リセラー **」という単語が表示** されます。 | サブスクリプションが CSP (CSP) パートナークラウド ソリューション プロバイダー購入された場合は、CSP パートナーに連絡してライセンスを購入してください。        |
 |試用版サブスクリプションを使用している。 | 試用版サブスクリプションを表示するには、フィルター ボタンを選択し、[試用版] を **選択します**。 | まず試用版サブスクリプションを購入し、さらにライセンスを購入できます。|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>新しいライセンスが割り当て可能になるのは、いつですか?
@@ -107,4 +108,4 @@ ms.locfileid: "51615137"
 
 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)(記事)\
 [サブスクリプションとライセンスを理解する](subscriptions-and-licenses.md) (記事)\
-[Microsoft 365 サブスクリプションの試用または購入](../try-or-buy-microsoft-365.md) (記事)
+[サブスクリプションの試用Microsoft 365購入](../try-or-buy-microsoft-365.md)する (記事)

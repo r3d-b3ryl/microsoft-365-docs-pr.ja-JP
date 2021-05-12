@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: 電子情報開示検索ツールを使用して検索できる電子メールとファイルのプロパティについてMicrosoft 365。
-ms.openlocfilehash: a9a178eb9b139cacd803c8ab168b3143b75b5f92
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: Microsoft 365 の電子情報開示検索ツールを使用して検索できる電子メールとファイルのプロパティについて説明します。
+ms.openlocfilehash: cbd3969e9936df3dc82c364d804dbcd366b0e07a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311870"
+ms.locfileid: "52326596"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
 
-このトピックでは、Exchange Online の電子メール アイテムと Microsoft Teams チャットの会話で検索できる電子メールおよびドキュメントのプロパティと、Microsoft 365 コンプライアンス センターの電子情報開示検索ツールを使用して SharePoint および OneDrive for Business サイトに保存されているドキュメントについて説明します。 これには、コンテンツ検索、Core eDiscovery、および Advanced eDiscovery (Advanced eDiscoveryと呼ばれる電子情報開示検索) が *含まれます*。 また、セキュリティ/コンプライアンス センター PowerShell の **\*-ComplianceSearch** コマンドレットを使用してこれらのプロパティを検索することもできます。 このトピックでは以下についても説明します。
+このトピックでは、Exchange Online の電子メール アイテムと Microsoft Teams チャットの会話で検索できる電子メールおよびドキュメントのプロパティ、および Microsoft 365 コンプライアンス センターの電子情報開示検索ツールを使用して SharePoint および OneDrive for Business サイトに保存されているドキュメントについて説明します。 これには、コンテンツ検索、Core eDiscovery、Advanced eDiscovery (Advanced eDiscovery での電子情報開示検索はコレクションと呼ばれる) が *含まれます*。 また、セキュリティ/コンプライアンス センター PowerShell の **\*-ComplianceSearch** コマンドレットを使用してこれらのプロパティを検索することもできます。 このトピックでは以下についても説明します。
   
 - ブール検索演算子、検索条件、およびその他の検索クエリ技法を使用して、検索結果を絞り込む。
 
@@ -45,10 +45,10 @@ ms.locfileid: "52311870"
 
 - [コア電子情報開示でコンテンツを検索する](search-for-content-in-core-ediscovery.md)
 
-- [下書きコレクションを作成Advanced eDiscovery](create-draft-collection.md)
+- [Advanced eDiscovery で下書きコレクションを作成する](create-draft-collection.md)
 
 > [!NOTE]
-> 電子情報開示は、Microsoft 365 コンプライアンス センターで検索し、セキュリティ & コンプライアンス センター PowerShell の対応する **\* -ComplianceSearch** コマンドレットでは、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
+> Microsoft 365 コンプライアンス センターの電子情報開示検索と、セキュリティ & コンプライアンス センター PowerShell の対応する **\* -ComplianceSearch** コマンドレットでは、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
   
 ## <a name="searchable-email-properties"></a>検索可能なメール プロパティ
 
@@ -68,13 +68,13 @@ ms.locfileid: "52311870"
 |HasAttachment|メッセージに添付ファイルがあるかどうかを示します。 値 **true** または **false** を使用します。|`from:pilar@contoso.com AND hasattachment:true`|指定したユーザーによって送信された添付ファイルを含むメッセージ。|
 |Importance|送信者がメッセージを送信するときに指定できる電子メール メッセージの重要度。既定では、送信者が重要度を **high** または **low** に設定していない限り、メッセージは普通の重要度で送信されます。|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|高重要度、中重要度、または低重要度とマークされているメッセージ。|
 |IsRead|メッセージが既読か未読かを示します。 値 **true** または **false** を使用します。|`isread:true`  <br/> `isread:false`|最初の例では、IsRead プロパティを **True** に設定されているメッセージが返されます。 2 番目の例では、IsRead プロパティが **False** に設定されているメッセージが返されます。|
-|ItemClass|このプロパティは、組織が Office 365 にインポートした特定のサード パーティのデータ型を検索するときに使います。 このプロパティでは、次の構文を使います:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|最初の例では、Subject プロパティに "contoso" という単語が含まれる Facebook アイテムが返されます。 2 番目の例では、Ann Beebe によって投稿された、"Northwind Traders" というキーワード語句を含む Twitter アイテムが返されます。  <br/> ItemClass プロパティのサード パーティのデータ型に使用する値の完全な一覧については、「コンテンツ検索を使用して、コンテンツ にインポートされたサード パーティのデータを検索する」を[参照](use-content-search-to-search-third-party-data-that-was-imported.md)Office 365。|
+|ItemClass|このプロパティは、組織が Office 365 にインポートした特定のサード パーティのデータ型を検索するときに使います。 このプロパティでは、次の構文を使います:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|最初の例では、Subject プロパティに "contoso" という単語が含まれる Facebook アイテムが返されます。 2 番目の例では、Ann Beebe によって投稿された、"Northwind Traders" というキーワード語句を含む Twitter アイテムが返されます。  <br/> ItemClass プロパティのサード パーティのデータ型に使用する値の完全な一覧については、「コンテンツ検索を使用して [、365](use-content-search-to-search-third-party-data-that-was-imported.md)にインポートされたサード パーティのデータを検索する」を参照Officeしてください。|
 |Kind| 検索するメール メッセージの種類。 可能な値:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (Microsoft Teams のチャット、会議、通話のアイテムが返されます)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|最初の例では、検索条件に一致するメール メッセージが返されます。 2 番目の例では、検索条件に一致するメール メッセージ、インスタント メッセージ、会話 (Skype for Business の会話と Microsoft Teams のチャットを含みます) ボイス メッセージが返されます。 3 番目の例は、サード パーティのデータ ソース (Twitter、Facebook、Cisco Jabber など) から Office 365 のメールボックスにインポートされたアイテムのうち、検索条件に一致して、返されたアイテムです。 詳細については、「[Office 365 でサードパーティのデータをアーカイブする](https://www.microsoft.com/?ref=go)」を参照してください。|
 |Participants|メール メッセージのすべての送受信者フィールド。 すなわち、[差出人]、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|garthf@contoso.com が送信元または送信先のメッセージ。2 番目の例は、contoso.com ドメイン内のユーザーが送信元または送信先のすべてのメッセージを返します。|
 |Received|電子メール メッセージが受信者によって受信された日付。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016 年 4 月 15 日に受信したメッセージ。 2 番目の例は、2016 年 1 月 1 日から 2016 年 3 月 31 日までの間に受信したすべてのメッセージを返します。|
 |Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。|
 |Sent|送信者によって電子メール メッセージが送信された日付。|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|指定された日付に送信された、または指定された日付範囲内に送信されたメッセージ。|
-|Size|アイテムのサイズ (バイト数)。|`size>26214400`  <br/> `size:1..1048567`|25 MB を超えるメッセージ。 2 番目の例では、1 ～ 1,048,567 バイト (1 MB) のサイズのメッセージが返されます。|
+|Size|アイテムのサイズ (バイト数)。|`size>26214400`  <br/> `size:1..1048567`|25 MB を超えるメッセージ。2 番目の例は 1 ～ 1,048,567 バイト (1 MB) のサイズのメッセージを返します。|
 |Subject|電子メール メッセージの件名行に含まれるテキスト。  <br/> **注:** クエリで Subject プロパティを使用すると、検索するテキストが件名に含まれているすべてのメッセージが返されます。 つまり、完全一致のメッセージのみがクエリで返されるわけではありません。 たとえば、 `subject:"Quarterly Financials"` を検索した場合の結果には、件名が "Quarterly Financials 2018" のメッセージが含まれることになります。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|件名行のテキストのいずれかの箇所に "Quarterly Financials" を含むメッセージ。 2 番目の例では、件名行に「northwind」の語が含まれているすべてのメッセージを返します。|
 |To|メール メッセージの To フィールド。<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|いずれの例も、To: 行に "Ann Beebe" が指定されているメッセージを返します。|
 |||||
@@ -125,7 +125,7 @@ ms.locfileid: "52311870"
 > [!TIP]
 > スペースまたは特殊文字を含む値を検索するには、二重引用符 ("  ") で語句を囲みます。例: `businessaddress:"123 Main Street"`
   
-| プロパティ | プロパティの説明 |
+|プロパティ |プロパティの説明 |
 |:-----|:-----|
 |BusinessAddress|**会社住所** プロパティの住所。 このプロパティは連絡先のプロパティ ページでは **勤務先** 住所とも呼ばれます。|
 |BusinessPhone|
@@ -183,7 +183,7 @@ Microsoft 365 コンプライアンス センターの eDiscovery 検索機能�
 
 **AND**、**OR**、**NOT** などのブール演算子は、検索クエリで特定の語を含めたり除去したりすることにより、検索をより詳細に定義するために役立ちます。 プロパティ演算子 (`>=` や `..`など)、引用符、かっこ、ワイルドカードを使用するといった他の技法も、検索クエリを調整するのに役立ちます。 検索結果を絞り込んだり、その範囲を広げたりするために使用できる演算子を次の表に示します。 
   
-| 演算子 | 用途 | 説明 |
+|演算子 |用途 |説明 |
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|指定されたすべてのキーワードまたは  `property:value` 式が含まれる項目を返します。 たとえば、 `from:"Ann Beebe" AND subject:northwind` は、Ann Beebe によって送信され、件名の行に "northwind" という単語が含まれるすべてのメッセージを返します。 <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> クエリ `keyword1 + keyword2` ( **+** 記号の後にスペースがあります) は、**AND** 演算子を使用する場合と同じではありません。 This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
@@ -321,7 +321,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
   
 #### <a name="example-1"></a>例 1
 
-この例では、クレジット カード番号SharePoint、OneDrive for Business 2021 年 1 月 1 日より前に最後に変更されたサイトのドキュメントを返します。
+この例では、クレジット カード番号を含み、2021 年 1 月 1 日より前に最後に変更された SharePoint サイトおよび OneDrive for Business サイトのドキュメントを返します。
   
  **GUI**
   
@@ -443,6 +443,22 @@ Skype for Business の会話は 件名が "Conversation" という単語で始�
 ```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
+
+## <a name="character-limits-for-searches"></a>検索の文字制限
+
+SharePoint サイトと OneDrive アカウントでコンテンツを検索する場合、検索クエリには 4,000 文字の制限があります。  
+検索クエリの合計文字数の計算方法を次に示します。
+
+- キーワード検索クエリの文字 (ユーザー フィールドとフィルター フィールドの両方を含む) は、この制限に対してカウントされます。
+
+- 任意の場所プロパティの文字 (すべての SharePoint サイトの URL、検索する OneDrive の場所など) は、この制限に対してカウントされます。
+
+- 検索カウントを実行しているユーザーに適用される、すべての検索アクセス許可フィルター内の文字が制限に対してカウントされます。
+
+文字制限の詳細については、「電子情報開示の検索制限 [」を参照してください](limits-for-content-search.md#search-limits)。
+
+> [!NOTE]
+> 4,000 文字の制限は、コンテンツ検索、コア電子情報開示、および高度な電子情報開示に適用されます。
 
 ## <a name="search-tips-and-tricks"></a>検索のヒントと秘訣
 
