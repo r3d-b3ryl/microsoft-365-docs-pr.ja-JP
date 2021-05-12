@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: グループ、チーム、およびグループのライフサイクルのYammer。
-ms.openlocfilehash: 405d87c645118cf0ef318d4d68802d17da8c5673
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f1f91e64af7e16016398a7c326feec5a9b073ca9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916132"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333784"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>グループ、チーム、およびグループのライフサイクルのYammer
 
@@ -34,7 +34,7 @@ Microsoft 365 グループと Microsoft Teams は、さまざまな接続サー�
 |:------|:---------------|
 |Teams|チャネルの会話、チャネル内のファイル|
 |フォーム|アンケートの構造と結果|
-|OneNote|ノートブック|
+|OneNote|Notebook|
 |Outlook|メールと予定表|
 |Planner|プロジェクトの状態とタスク情報|
 |Power Automate|ワークフロー|
@@ -79,7 +79,8 @@ Teams 固有のコンテンツは、主に会話の形式です。
 
 チャネル内の会話は、Microsoft Teams のネイティブ機能を使用してコピーまたは移動することはできません。 ただし、Graph API を使用してエクスポートすることもできます。
 
-さらに、アイテム保持ポリシーが Teams に適用されている場合、会話は保持され、電子情報開示検索によって利用できます。 (電子情報開示検索で見つかったアイテムはエクスポートすることができますが、元のソースからのコンテキストや構造は残っていないので、単なる個別のメッセージです)。
+さらに、アイテム保持ポリシーが Teams に適用されている場合、会話は保持され、電子情報開示検索によって利用できます。 高度な電子情報開示を使用すると [、Teams チャットの会話を再構築できます](/microsoft-365/compliance/conversation-review-sets)。
+
 
 ### <a name="archiving-a-team"></a>チームのアーカイブ
 
@@ -193,7 +194,7 @@ Power BI データとワークスペースは、グループやチームとは�
 
 または、レポートをアクティブにする必要がなくなったが、データを保持する必要がある場合は、Excel に [エクスポートできます](/power-bi/visuals/power-bi-visualization-export-data)。
 
-## <a name="project"></a>Project
+## <a name="project"></a>プロジェクト
 
 Project on the web で作成されたプロジェクトとロードマップは、Microsoft 365 グループに関連付け、Power BI と同様のオフボードへのアプローチを提供します。
 

@@ -13,12 +13,12 @@ ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ff3c889f3e4d6779b08584ba6537da36d6f2660e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b30608b858f06951a8f4c250f288a8d44bd84b08
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205511"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333832"
 ---
 # <a name="eop-features"></a>EOP の機能
 
@@ -98,6 +98,6 @@ ms.locfileid: "51205511"
 |1 日 24 時間、週 7 日の電話および Web テクニカル サポート|EOP ヘルプおよびサポート オプションの詳細については、「[EOP のヘルプとサポート](help-and-support-for-eop.md)」を参照してください。|
 |**その他の機能**||
 |サーバーの地域冗長グローバル ネットワーク|EOP は、最適な可用性を提供するよう設計された、複数のデータ センターから成る世界規模のネットワーク上で稼働します。詳細については、「[Exchange Online Protection の概要](exchange-online-protection-overview.md)」の「EOP データセンター」セクションを参照してください。  |
-|社内サーバーでメールが受信できない場合のメッセージ キュー|遅延中のメッセージは、キューに 1 日残ります。 メッセージの再試行は、受信者のメールシステムから返されたエラーに基づいて行われます。 平均では、5 分ごとにメッセージの送信が再試行されます。 詳細については、「[EOP のキューイング、保留、返送されるメッセージに関する FAQ](eop-queued-deferred-and-bounced-messages-faq.md)」を参照してください。|
+|社内サーバーでメールが受信できない場合のメッセージ キュー|遅延中のメッセージは、キューに 1 日残ります。 メッセージの再試行は、受信者のメールシステムから返されたエラーに基づいて行われます。 平均では、5 分ごとにメッセージの送信が再試行されます。 詳細については、「[EOP のキューイング、保留、返送されるメッセージに関する FAQ](eop-queued-deferred-and-bounced-messages-faq.yml)」を参照してください。|
 |アドオン サービスとして利用可能な Office 365 Message Encryption|詳細については、「[Office 365 での暗号化](../../compliance/encryption.md)」をご覧ください。|
 |

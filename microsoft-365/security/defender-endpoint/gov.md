@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1f0005ed4614a8d01d2a64e8853be99a204825c8
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 189cb574a436a457cce312f6cb02ca1bf7863a18
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086817"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333496"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -78,7 +78,7 @@ Windows 10バージョン 1909 [(KB4586819](https://support.microsoft.com/help/4
 Windows 10バージョン 1903 [(KB4586819](https://support.microsoft.com/help/4586819)付き) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
 Windows 10バージョン 1809 [(KB4586839](https://support.microsoft.com/help/4586839)付き) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
 Windows 10バージョン 1803 [(KB4598245 付](https://support.microsoft.com/help/4598245)き) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
-Windows 10バージョン 1709 | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません | ![は ](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147)<br />注: [非推奨 、](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません
+Windows 10バージョン 1709 | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません | ![は ](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147)<br />注: [非推奨 、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません
 Windows 10バージョン 1703 以前 | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません | ![いいえ](images/svg/check-no.svg)<br />注: サポートされません
 WindowsServer 2019 [(KB4586839 を使用](https://support.microsoft.com/help/4586839)) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
 Windows Server 2016 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
@@ -86,10 +86,10 @@ Windows Server 2012 R2 | ![はい](images/svg/check-yes.svg) | ![はい](images/
 Windows Server 2008 R2 SP1 | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
 Windows 8.1 Enterprise | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
 Windows 8 Pro | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
-Windows 7 SP1 Enterprise | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+Windows 7 SP1エンタープライズ | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
-Linux | ![はい](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。 | ![はい](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。 | ![はい](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。
-macOS | ![はい](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。 | ![はい](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。 | ![はい](images/svg/check-yes.svg) プレビューで<br />以下のメモを参照してください。
+Linux | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
+macOS | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
 Android | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
 iOS | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて | ![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて
 
@@ -97,13 +97,10 @@ iOS | ![いいえ](images/svg/check-no.svg) エンジニアリング バック�
 > パッチが指定されている場合、Defender for Endpoint を正しい環境に構成するには、デバイスオンボーディングの前に展開する必要があります。
 
 > [!NOTE]
-> サーバーまたはサーバー 2019 Windowsより古いデバイスWindows 10オンボードWindowsサーバー 2019 を使用[Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) セットアップ ウィザードを使用する場合、またはコマンド ラインまたはスクリプトを使用する場合は、[Azure Cloud] で[](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)[Azure [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) US Government] を選択する必要があります。"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" パラメーターを 1 に設定します。 [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
-
-> [!NOTE]
-> Linux ではバージョン 101.25.72 以上、macOS ではバージョン 101.25.69 以上が必要です。
+> Microsoft Monitoring Agent を使用して Windows 10 または Windows Server 2019 より古い Windows デバイス[をオンボードしようとしている場合](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) セットアップ ウィザードを使用する場合、またはコマンド ラインまたはスクリプトを使用する場合は、[Azure Cloud] で[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)[Azure [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) US Government] を選択する必要があります。"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" パラメーターを 1 に設定します。 [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Azure Defender for Servers を使用する場合の OS のバージョン
-Azure Defender for Servers を使用する場合は、次の [OS バージョンがサポートされます](https://docs.microsoft.com/azure/security-center/security-center-wdatp)。
+Azure Defender for Servers を使用する場合は、次の [OS バージョンがサポートされます](/azure/security-center/security-center-wdatp)。
 
 OS のバージョン | GCC | GCC High | DoD
 :---|:---|:---|:---
@@ -149,7 +146,7 @@ Azure IP 範囲とサービス タグ – US Government Cloud で Azure IP 範�
 ## <a name="api"></a>API
 API ドキュメントに記載されているパブリック URI の代わりに、次の [URI](apis-intro.md)を使用する必要があります。
 
-エンドポイントの種類 | GCC | GCC高& DoD
+エンドポイントの種類 | GCC | GCC High & DoD
 :---|:---|:---
 ログイン | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
@@ -160,11 +157,11 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 ## <a name="feature-parity-with-commercial"></a>商用機能と機能のパリティ
 米国政府機関のお客様向けエンドポイントの Defender は、商用サービスと完全に同一性を持つ必要があります。 すべての商用機能と機能を米国政府機関のお客様に提供しますが、まだ利用できない機能がいくつか用意されています。
 
-これらは、2021 年 4 月の既知のギャップです。
+既知のギャップは次のとおりです。
 
 フィーチャー名 | GCC | GCC High | DoD
 :---|:---|:---|:---
-管理と API: ストリーミング API | ![はい](images/svg/check-yes.svg) | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
+管理と API: ストリーミング API | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg)
 Web コンテンツ フィルタリング | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中
 統合: Azure Sentinel | ![はい](images/svg/check-yes.svg) | ![はい](images/svg/check-yes.svg) アラート <br /> ![いいえ](images/svg/check-no.svg) インシデント&生データ: 開発中 | ![はい](images/svg/check-yes.svg) アラート <br /> ![いいえ](images/svg/check-no.svg) インシデント&生データ: 開発中
 統合: Microsoft Cloud App Security | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中 | ![いいえ](images/svg/check-no.svg) 開発中

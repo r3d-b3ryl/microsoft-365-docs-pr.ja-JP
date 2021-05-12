@@ -2,9 +2,10 @@
 title: 新しいライセンスを購入する
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- commerce_purchase
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 一般法人向け Microsoft 365 の新しいライセンスを購入する方法について説明します。
-ms.openlocfilehash: 3ca503abdf35e1bef95f784b7fc19c70a8de84bd
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
-ms.translationtype: HT
+ms.openlocfilehash: c9077dbb4c653d162df97e7f7bda47d929eb67ce
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422977"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332212"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Microsoft 365 のライセンスを購入する
 

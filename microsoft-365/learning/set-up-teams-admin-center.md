@@ -1,10 +1,10 @@
 ---
-title: 管理センターで Microsoft Viva Learning (プレビュー) をTeamsする
+title: Teams 管理センターで Microsoft Viva Learning (プレビュー) を設定する
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 05/12/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -14,43 +14,42 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: 管理センターで Microsoft Viva Learning (プレビュー) を構成するTeams説明します。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c1427ae9fceab38046b53b31540e08d726815bda
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+description: Teams 管理センターで Microsoft Viva Learning (プレビュー) を構成する方法について説明します。
+ms.openlocfilehash: 40e659796b22097f42515c0cbb704bdaa4ccc972
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100967"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333520"
 ---
-# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センターで Microsoft Viva Learning (プレビュー) をTeamsする
+# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Teams 管理センターで Microsoft Viva Learning (プレビュー) を設定する
 
 > [!NOTE]
 > この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 
 
-管理者Teamsビバ ラーニング (プレビュー) をインストールし、管理者センターからアクセス許可ポリシー Teams適用します。
+Teams 管理者は、ビバ ラーニング (プレビュー) をインストールし、Teams 管理センターを通じてアクセス許可ポリシーを適用します。
 
 ## <a name="manage-settings-for-viva-learning-preview"></a>ビバラーニングの設定を管理する (プレビュー)
 
-これらのタスクを実行するには、管理センター Teams管理者である必要があります。
+これらのタスクを実行するには、Teams 管理センターの管理者である必要があります。
 
 組織内のユーザーがビバ ラーニング (プレビュー) を利用するには、次の手順を実行します。
 
-1. 管理センターの左側のナビゲーションTeams、[アプリの管理 **Teams]**  >  **に移動します**。
+1. Teams 管理センターの左側のナビゲーションで、[Teams アプリのアプリの **管理]**  >  **に移動します**。
 
-   ![[アプリとアプリのTeams管理] セクションをTeams管理センターの左側のナビゲーション。](../media/learning/learning-app-teams-manage-apps-nav.png)
+   ![[Teams アプリ] と [アプリの管理] セクションを表示する Teams 管理センターの左側のナビゲーション。](../media/learning/learning-app-teams-manage-apps-nav.png)
 
 2. [アプリの **管理] ページ** の検索ボックスに「 *ビ* バ ラーニング」と入力し、[ビバ ラーニング (プレビュー) ] **を選択します**。
 
-   ![[アプリの管理] ページで、Teamsを表示する管理センターで管理します。](../media/learning/learning-app-teams-manage-apps-page.png)
+   ![検索ボックスを表示する Teams 管理センターの [アプリの管理] ページ。](../media/learning/learning-app-teams-manage-apps-page.png)
 
 3. [ビバ **ラーニング (プレビュー)] ページで、次の設定を行** います。
 
    1. [ **状態] で**、[ **ビバ ラーニング (** プレビュー) を有効にする許可] を選択します。
 
-   2. [アプリの **設定]** タブの **[アプリ** の設定] で、Microsoft 365管理センターに移動して、学習コンテンツ ソース [を構成します](content-sources-365-admin-center.md)。
+   2. [設定 **] タブの****[アプリ** の設定] で、Microsoft 365 管理センターに移動して学習コンテンツ [ソースを構成します](content-sources-365-admin-center.md)。
 
-   ![[状態とアプリの設定] セクションTeams管理センターの [学習] ページ。](../media/learning/learning-app-teams-learning-page.png)
+   ![[状態とアプリの設定] セクションを表示する Teams 管理センターの [学習] ページ。](../media/learning/learning-app-teams-learning-page.png)
 
 4. [**アプリ設定の管理**]の後、[アクセス許可ポリシーとセットアップ ポリシー] に移動して、組織のプレビューへの参加の一環として、ビバ ラーニング (プレビュー) にアクセスできる必要がある従業員にアクセス許可を付与します。
 
@@ -59,4 +58,4 @@ ms.locfileid: "52100967"
 
 ## <a name="next-step"></a>次の手順
 
-[管理センターで、ビバ ラーニング (プレビュー) の学習コンテンツ ソースMicrosoft 365構成する](content-sources-365-admin-center.md)
+[Microsoft 365 管理センターで、ビバ ラーニング (プレビュー) の学習コンテンツ ソースを構成する](content-sources-365-admin-center.md)

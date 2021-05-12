@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,21 +18,20 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: Microsoft 365 for Business の課金内容または請求書の請求内容および課金情報についての詳細、および発注書番号を変更する方法について説明します。
 ms.date: 05/04/2021
-ms.openlocfilehash: 9eb9d063b3634269600d5f6566e9e5f373ab08c2
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 3b183c219e25bcef21add70e2c704a7a0f3fe354
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280489"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331960"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
 > [!IMPORTANT]
-> 2021 年 1 月 26 日をもって、ベルギー、フランス、イタリア、ルクセンブルグ、ポルトガル、スペイン、および米国のお客様に、新しい銀行口座をサポートしなくなりました。 これらの国のいずれかの既存のお客様である場合、既存の銀行口座で引き続きサブスクリプションの支払いを行い、新しいサブスクリプションを追加できますが、銀行口座が良好な状態である場合に限ります。
+> 2021 年 1 月 26 日より、ベルギー、フランス、イタリア、ルクセンブルク、ポルトガル、スペイン、米国のお客様の新しい銀行口座はサポートされなくなりました。 いずれかの国にお住まいのお客様は、既存の銀行口座でサブスクリプションの支払いを行い、新しいサブスクリプションを追加することができますが、銀行口座が有効な場合に限ります。
 
 月次または年次 (サブスクリプションの購入時に選択したオプションに応じて) のいずれかで、新しい請求明細が管理センターで利用可能であることを通知するメールを受信します。 「[一般法人向け Office 365 の課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
   
@@ -129,5 +128,5 @@ ms.locfileid: "52280489"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ビジネス サブスクリプションのMicrosoft 365支払い](pay-for-your-subscription.md)(記事)\
+[Microsoft 365 for business サブスクリプションの支払](pay-for-your-subscription.md) い (記事)\
 [Minecraft: Education Edition の支払いオプション](/education/windows/school-get-minecraft) (記事) \

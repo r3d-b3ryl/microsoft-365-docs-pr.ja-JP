@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +16,17 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: 請求通知メールと請求書添付ファイルを受け取るユーザーを管理する方法について学習します。
-ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911856"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332140"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>請求通知と請求書の添付ファイルを管理する
 
@@ -32,7 +34,7 @@ ms.locfileid: "50911856"
 
 ## <a name="before-you-begin"></a>はじめに
 
-この記事で説明する手順を実行するには、グローバル管理者である必要があります。 課金管理者は、以下のセクションで説明されている通り、これらの変更の一部を行えます。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事で説明する手順を実行するには、グローバル管理者である必要があります。 課金管理者は、以下のセクションで説明されている通り、これらの変更の一部を行えます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="change-the-language-you-receive-email-in"></a>メールを受信する言語を変更する
 

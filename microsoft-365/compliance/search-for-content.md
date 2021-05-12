@@ -13,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: セキュリティ & コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business でのインスタント メッセージングの会話をすばやく見つける。
-ms.openlocfilehash: a6aa416768e7910e546b39d5866f884d2d532732
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927593"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333688"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
 
@@ -28,7 +28,9 @@ ms.locfileid: "50927593"
 
 最初の手順は、コンテンツ検索ツールを使用してコンテンツの場所を選択し、特定のアイテムを検索するキーワード クエリを検索して構成します。 または、クエリを空白のままにして、ターゲットの場所のすべてのアイテムを返す方法があります。
   
-- [コンテンツ検索の作成](content-search.md) と実行 
+- [コンテンツ検索の](content-search.md) 作成と実行
+
+- [機能参照] for Content search (content-search-reference.md)
 
 - [検索クエリを作成し、条件を使用して](keyword-queries-and-search-conditions.md) 検索を絞り込む 
 

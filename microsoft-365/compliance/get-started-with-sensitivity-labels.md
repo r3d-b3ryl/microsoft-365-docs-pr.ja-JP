@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 08ecf97e3cb45896390c3dac9074c54a2b0bbe96
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994774"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302114"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -97,7 +97,10 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>機密度ラベルのエンド ユーザー向けのドキュメント
 
-最も効果的なエンド ユーザー向けのドキュメントは、選択したラベル名と構成に関するカスタマイズされたガイダンスと手順です。 組み込みのラベル付けについては、ラベル ポリシー設定を使用して、このドキュメントへの内部リンクを指定するための **カスタム ヘルプ ページへのリンクをユーザーに提供する** ことができます。 ユーザーは、Word、PowerPoint、Excel、および Outlook の Office リボン上にある **[秘密度]** ボタンから **[詳細情報]** を選択することで、簡単にアクセスできます。
+最も効果的なエンド ユーザー向けのドキュメントは、選択したラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ラベル ポリシー設定を使用して、このドキュメントへの内部リンクを指定するための **カスタム ヘルプ ページへのリンクをユーザーに提供する** ことができます。 ユーザーは、**[秘密度]** ボタンから簡単にアクセスすることができます。
+
+- 組み込みのラベル付けの場合: **[詳細]** メニュー オプション。
+- Azure Information Protection 統合ラベル付けクライアントの場合: **[ヘルプとフィードバック]** メニューオプション > [Microsoft Azure Information Protection] ダイアログボックスの **[詳細情報]** リンク。
 
 カスタマイズされたドキュメントの作成のサポートには、ユーザーのトレーニングと導入の促進に使用できるダウンロード パッケージに関する次のブログ記事を参照してください: 「[M365 の秘密度ラベルのエンド ユーザー トレーニング – 導入を加速する方法](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)」。 
 
