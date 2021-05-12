@@ -303,19 +303,19 @@
     - name: FAQ
       items:
         - name: 代理管理に関する FAQ
-          href: delegated-administration-faq.md
+          href: delegated-administration-faq.yml
         - name: EOP の一般的な FAQ
-          href: eop-general-faq.md
+          href: eop-general-faq.yml
         - name: EOP のキューイング、保留、返送されるメッセージに関する FAQ
-          href: eop-queued-deferred-and-bounced-messages-faq.md
+          href: eop-queued-deferred-and-bounced-messages-faq.yml
         - name: マルウェア対策保護に関する FAQ
-          href: anti-malware-protection-faq-eop.md
+          href: anti-malware-protection-faq-eop.yml
         - name: スパム対策保護に関する FAQ
-          href: anti-spam-protection-faq.md
+          href: anti-spam-protection-faq.yml
         - name: スプーフィング対策保護に関する FAQ
-          href: anti-spoofing-protection-faq.md
+          href: anti-spoofing-protection-faq.yml
         - name: 検疫に関する FAQ
-          href: quarantine-faq.md
+          href: quarantine-faq.yml
     - name: 参照
       items:
         - name: セキュリティ ロードマップ
