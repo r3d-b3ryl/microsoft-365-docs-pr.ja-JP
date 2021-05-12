@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,73 +13,71 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
+- commerce_subscriptions
+search.appverid: MET150
 description: 継続請求をオフまたはオンにして Microsoft 365 を更新する方法について説明します。
-ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: e24f7301f6229e76b86f19594526e3ed84689221
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244650"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333184"
 ---
-# <a name="renew-microsoft-365-for-business"></a><span data-ttu-id="fc4f7-103">Microsoft 365 for business の更新</span><span class="sxs-lookup"><span data-stu-id="fc4f7-103">Renew Microsoft 365 for business</span></span>
+# <a name="renew-microsoft-365-for-business"></a><span data-ttu-id="f4774-103">Microsoft 365 for business の更新</span><span class="sxs-lookup"><span data-stu-id="f4774-103">Renew Microsoft 365 for business</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="fc4f7-104">2021 年 1 月 26 日をもって、ベルギー、フランス、イタリア、ルクセンブルグ、ポルトガル、スペイン、および米国のお客様に、新しい銀行口座をサポートしなくなりました。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-104">As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States.</span></span> <span data-ttu-id="fc4f7-105">これらの国のいずれかの既存のお客様である場合、既存の銀行口座で引き続きサブスクリプションの支払いを行い、新しいサブスクリプションを追加できますが、銀行口座が良好な状態である場合に限ります。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-105">If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.</span></span>
+> <span data-ttu-id="f4774-104">2021 年 1 月 26 日をもって、ベルギー、フランス、イタリア、ルクセンブルグ、ポルトガル、スペイン、および米国のお客様に、新しい銀行口座をサポートしなくなりました。</span><span class="sxs-lookup"><span data-stu-id="f4774-104">As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States.</span></span> <span data-ttu-id="f4774-105">これらの国のいずれかの既存のお客様である場合、既存の銀行口座で引き続きサブスクリプションの支払いを行い、新しいサブスクリプションを追加できますが、銀行口座が良好な状態である場合に限ります。</span><span class="sxs-lookup"><span data-stu-id="f4774-105">If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.</span></span>
 
-<span data-ttu-id="fc4f7-106">この記事の情報は、大部分の Microsoft 365 for business の憂慮サブスクリプションに該当します。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-106">This article applies to most paid Microsoft 365 for business subscriptions.</span></span>
+<span data-ttu-id="f4774-106">この記事の情報は、大部分の Microsoft 365 for business の憂慮サブスクリプションに該当します。</span><span class="sxs-lookup"><span data-stu-id="f4774-106">This article applies to most paid Microsoft 365 for business subscriptions.</span></span>
   
-<span data-ttu-id="fc4f7-107">小売店または Microsoft パートナーから購入したプロダクト キーを使用して更新する場合は、「[プロダクト キーを見つけて入力する](../enter-your-product-key.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-107">To renew by using a product key that you bought from a retail store or Microsoft partner, see [Find and enter your product key](../enter-your-product-key.md).</span></span>
+<span data-ttu-id="f4774-107">小売店または Microsoft パートナーから購入したプロダクト キーを使用して更新する場合は、「[プロダクト キーを見つけて入力する](../enter-your-product-key.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f4774-107">To renew by using a product key that you bought from a retail store or Microsoft partner, see [Find and enter your product key](../enter-your-product-key.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="fc4f7-108">一部の国または地域では、銀行口座引き落としによる支払いを利用できません。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-108">Paying by bank account isn't available in some countries or regions.</span></span>
+> <span data-ttu-id="f4774-108">一部の国または地域では、銀行口座引き落としによる支払いを利用できません。</span><span class="sxs-lookup"><span data-stu-id="f4774-108">Paying by bank account isn't available in some countries or regions.</span></span>
   
-## <a name="turn-recurring-billing-off-or-on"></a><span data-ttu-id="fc4f7-109">継続請求をオフまたはオンにする</span><span class="sxs-lookup"><span data-stu-id="fc4f7-109">Turn Recurring billing off or on</span></span>
+## <a name="turn-recurring-billing-off-or-on"></a><span data-ttu-id="f4774-109">継続請求をオフまたはオンにする</span><span class="sxs-lookup"><span data-stu-id="f4774-109">Turn Recurring billing off or on</span></span>
 
-<span data-ttu-id="fc4f7-110">クレジット カードまたは銀行口座で支払いを行う場合、既定では、**継続請求** はオンになっています。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-110">If you pay by credit card or bank account, **Recurring billing** is turned on by default.</span></span> <span data-ttu-id="fc4f7-111">**継続請求** がオンの場合は、毎年登録日にサブスクリプションに対する課金が行われます。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-111">When **Recurring billing** is on, your subscription will continue to be billed each year on the day you subscribed.</span></span> <span data-ttu-id="fc4f7-112">サブスクリプションがアクティブな場合は、管理センターでオフにしたりもう一度オンにしたりできます。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-112">You can turn it off or back on again in the admin center if your subscription is active.</span></span>
+<span data-ttu-id="f4774-110">クレジット カードまたは銀行口座で支払いを行う場合、既定では、**継続請求** はオンになっています。</span><span class="sxs-lookup"><span data-stu-id="f4774-110">If you pay by credit card or bank account, **Recurring billing** is turned on by default.</span></span> <span data-ttu-id="f4774-111">**継続請求** がオンの場合は、毎年登録日にサブスクリプションに対する課金が行われます。</span><span class="sxs-lookup"><span data-stu-id="f4774-111">When **Recurring billing** is on, your subscription will continue to be billed each year on the day you subscribed.</span></span> <span data-ttu-id="f4774-112">サブスクリプションがアクティブな場合は、管理センターでオフにしたりもう一度オンにしたりできます。</span><span class="sxs-lookup"><span data-stu-id="f4774-112">You can turn it off or back on again in the admin center if your subscription is active.</span></span>
   
-<span data-ttu-id="fc4f7-113">プロダクト キーを使用してサブスクリプションを前払いした場合、サブスクリプション期間の終了時にサブスクリプションの有効期限が切れます。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-113">If you prepaid for your subscription with a product key, your subscription will expire at the end of subscription term.</span></span> <span data-ttu-id="fc4f7-114">**継続請求** をオンにしてクレジット カードまたは銀行口座の情報を提供すると、毎年登録日にサブスクリプションに対する課金が行われます。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-114">You can turn on **Recurring billing** and provide credit card or bank account information so that your subscription will continue to be billed every year on the day you subscribed.</span></span> <span data-ttu-id="fc4f7-115">支払いは月ごとに行うことも、1 年分を前払いすることもできます。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-115">You also have the option to pay every month, or to pay for the entire year up front.</span></span> <span data-ttu-id="fc4f7-116">最初のサブスクリプション期間が終了するまで、クレジット カードや銀行口座への請求は行われません。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-116">Your credit card or bank account will not be charged until your initial subscription term has expired.</span></span>
+<span data-ttu-id="f4774-113">プロダクト キーを使用してサブスクリプションを前払いした場合、サブスクリプション期間の終了時にサブスクリプションの有効期限が切れます。</span><span class="sxs-lookup"><span data-stu-id="f4774-113">If you prepaid for your subscription with a product key, your subscription will expire at the end of subscription term.</span></span> <span data-ttu-id="f4774-114">**継続請求** をオンにしてクレジット カードまたは銀行口座の情報を提供すると、毎年登録日にサブスクリプションに対する課金が行われます。</span><span class="sxs-lookup"><span data-stu-id="f4774-114">You can turn on **Recurring billing** and provide credit card or bank account information so that your subscription will continue to be billed every year on the day you subscribed.</span></span> <span data-ttu-id="f4774-115">支払いは月ごとに行うことも、1 年分を前払いすることもできます。</span><span class="sxs-lookup"><span data-stu-id="f4774-115">You also have the option to pay every month, or to pay for the entire year up front.</span></span> <span data-ttu-id="f4774-116">最初のサブスクリプション期間が終了するまで、クレジット カードや銀行口座への請求は行われません。</span><span class="sxs-lookup"><span data-stu-id="f4774-116">Your credit card or bank account will not be charged until your initial subscription term has expired.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="fc4f7-117">管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-117">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="f4774-117">管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f4774-117">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="fc4f7-118">管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-118">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="f4774-118">管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f4774-118">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="fc4f7-119">管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-119">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="f4774-119">管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f4774-119">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.</span></span>
+
 ::: moniker-end
 
-2. <span data-ttu-id="fc4f7-120">継続請求を管理するサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-120">Select the subscription for which you want to manage recurring billing.</span></span>
-3. <span data-ttu-id="fc4f7-121">サブスクリプションの詳細情報ページの **[サブスクリプションと支払い設定]** の下で、**[継続請求の編集]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-121">On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.</span></span>
-4. <span data-ttu-id="fc4f7-122">**[継続請求の設定の編集]**  ウィンドウで、**[オン]**、**[オン、ただし一度更新]**、または **[オフにする]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-122">In the **Edit recurring billing settings** pane, select **On**, **On, but renew once**, or **Turn off**.</span></span>
-5. <span data-ttu-id="fc4f7-123">**[保存]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-123">Select **Save**.</span></span>
+2. <span data-ttu-id="f4774-120">継続請求を管理するサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="f4774-120">Select the subscription for which you want to manage recurring billing.</span></span>
+3. <span data-ttu-id="f4774-121">サブスクリプションの詳細情報ページの **[サブスクリプションと支払い設定]** の下で、**[継続請求の編集]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f4774-121">On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.</span></span>
+4. <span data-ttu-id="f4774-122">**[継続請求の設定の編集]**  ウィンドウで、**[オン]**、**[オン、ただし一度更新]**、または **[オフにする]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f4774-122">In the **Edit recurring billing settings** pane, select **On**, **On, but renew once**, or **Turn off**.</span></span>
+5. <span data-ttu-id="f4774-123">**[保存]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f4774-123">Select **Save**.</span></span>
 
     > [!NOTE]
-    > - <span data-ttu-id="fc4f7-124">**継続請求** 設定の変更は、アクティブなサブスクリプションに対してのみ行うことができます。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-124">You can only change the **Recurring billing** setting for active subscriptions.</span></span> <span data-ttu-id="fc4f7-125">サブスクリプションが既に期限切れになっていたり、無効であったりする場合に、**継続請求** をオンまたはオフにするには、 サブスクリプションを [再アクティブ化](reactivate-your-subscription.md)するする必要があります。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-125">If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.</span></span>
-    > - <span data-ttu-id="fc4f7-126">**継続請求** を無効にしても、サブスクリプションはキャンセルされません。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-126">When **Recurring billing** is turned off, the subscription isn't cancelled.</span></span> <span data-ttu-id="fc4f7-127">サブスクリプションを有効にし続ける場合には、請求書の支払いを手動で行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-127">If you want to keep the subscription active, you must pay the bill manually.</span></span>
-    > - <span data-ttu-id="fc4f7-128">**継続請求** をオフにすると、サブスクリプションは有効期限が切れるまで有効になります。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-128">If you turn off **Recurring billing**, the subscription remains active until it expires.</span></span> <span data-ttu-id="fc4f7-129">有効期限は、**[サブスクリプションと支払いの設定]** セクションのサブスクリプションの詳細情報ページで確認できます。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-129">You can view the expiration date on the subscription details page in the **Subscription and payment settings** section.</span></span>
-    > - <span data-ttu-id="fc4f7-130">サブスクリプションをただちにキャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc4f7-130">To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).</span></span>
+    >
+    > - <span data-ttu-id="f4774-124">**継続請求** 設定の変更は、アクティブなサブスクリプションに対してのみ行うことができます。</span><span class="sxs-lookup"><span data-stu-id="f4774-124">You can only change the **Recurring billing** setting for active subscriptions.</span></span> <span data-ttu-id="f4774-125">サブスクリプションが既に期限切れになっていたり、無効であったりする場合に、**継続請求** をオンまたはオフにするには、 サブスクリプションを [再アクティブ化](reactivate-your-subscription.md)するする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4774-125">If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.</span></span>
+    > - <span data-ttu-id="f4774-126">**継続請求** を無効にしても、サブスクリプションはキャンセルされません。</span><span class="sxs-lookup"><span data-stu-id="f4774-126">When **Recurring billing** is turned off, the subscription isn't cancelled.</span></span> <span data-ttu-id="f4774-127">サブスクリプションを有効にし続ける場合には、請求書の支払いを手動で行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4774-127">If you want to keep the subscription active, you must pay the bill manually.</span></span>
+    > - <span data-ttu-id="f4774-128">**継続請求** をオフにすると、サブスクリプションは有効期限が切れるまで有効になります。</span><span class="sxs-lookup"><span data-stu-id="f4774-128">If you turn off **Recurring billing**, the subscription remains active until it expires.</span></span> <span data-ttu-id="f4774-129">有効期限は、**[サブスクリプションと支払いの設定]** セクションのサブスクリプションの詳細情報ページで確認できます。</span><span class="sxs-lookup"><span data-stu-id="f4774-129">You can view the expiration date on the subscription details page in the **Subscription and payment settings** section.</span></span>
+    > - <span data-ttu-id="f4774-130">サブスクリプションをただちにキャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f4774-130">To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="fc4f7-131">関連記事</span><span class="sxs-lookup"><span data-stu-id="fc4f7-131">Related articles</span></span>
+## <a name="related-content"></a><span data-ttu-id="f4774-131">関連コンテンツ</span><span class="sxs-lookup"><span data-stu-id="f4774-131">Related content</span></span>
 
-[<span data-ttu-id="fc4f7-132">サブスクリプションを再度有効にする</span><span class="sxs-lookup"><span data-stu-id="fc4f7-132">Reactivate your subscription</span></span>](reactivate-your-subscription.md)
-  
-[<span data-ttu-id="fc4f7-133">サブスクリプションが終了したとき、データとアクセスはどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="fc4f7-133">What happens to my data and access when my subscription ends?</span></span>](what-if-my-subscription-expires.md)
-
-[<span data-ttu-id="fc4f7-134">プロダクト キーを入力する</span><span class="sxs-lookup"><span data-stu-id="fc4f7-134">Enter your product key</span></span>](../enter-your-product-key.md)
-  
-[<span data-ttu-id="fc4f7-135">Microsoft 365 for business の試用版を購入する</span><span class="sxs-lookup"><span data-stu-id="fc4f7-135">Buy your trial version of Microsoft 365 for business</span></span>](../try-or-buy-microsoft-365.md)
+<span data-ttu-id="f4774-132">[サブスクリプションを再度有効にする](reactivate-your-subscription.md) (記事)</span><span class="sxs-lookup"><span data-stu-id="f4774-132">[Reactivate your subscription](reactivate-your-subscription.md) (article)\</span></span>
+[<span data-ttu-id="f4774-133">サブスクリプションが終了したとき、データとアクセスはどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="f4774-133">What happens to my data and access when my subscription ends?</span></span>](what-if-my-subscription-expires.md) <span data-ttu-id="f4774-134">(記事)</span><span class="sxs-lookup"><span data-stu-id="f4774-134">(article)</span></span>\
+<span data-ttu-id="f4774-135">[プロダクト キーの入力](../enter-your-product-key.md) (記事)</span><span class="sxs-lookup"><span data-stu-id="f4774-135">[Enter your product key](../enter-your-product-key.md) (article)</span></span>\
+<span data-ttu-id="f4774-136">[Microsoft 365 for business の試用版を購入する](../try-or-buy-microsoft-365.md) (記事)</span><span class="sxs-lookup"><span data-stu-id="f4774-136">[Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md) (article)</span></span>
