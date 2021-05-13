@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55c22c9901f163fdf64e6148d5b2c19e51136bc1
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086804"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326620"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -89,7 +89,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[ユーザーに権限の割り当てをさせる: <br /> - 転送不可](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[ユーザーに権限の割り当てをさせる: <br /> - 暗号化のみ](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011 以上 | 16.48 以上 | 4.2112.0 以上  | 4.2112.0 以上 | はい |
-|[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101 以上                        | 16.43 以上 <sup>\*</sup>                    | ロール アウト: 4.2111 以上            | ロール アウト: 4.2111 以上                | はい                |
+|[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101 以上                        | 16.43 以上 <sup>\*</sup>                    | 4.2111 以上            | 4.2111 以上                | はい                |
 |[ラベル関連のユーザー アクティビティを監査する](data-classification-activity-explorer.md) | 2011 以上 | レビュー中 | レビュー中           | レビュー中               | レビュー中 |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009 以上                      | 16.44 以上 <sup>\*</sup>                    | レビュー中           | レビュー中               | はい |
 |[既定ラベルと必須ラベルのさまざまな設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | プレビューでのロール アウト: [ベータ チャネル](https://office.com/insider)                      | 16.43.1108 以上                   | 4.2111 以上           | 4.2111 以上               | はい |
@@ -134,7 +134,7 @@ Microsoft Word 2016、Excel 2016、PowerPoint 2016、Outlook 2016 の場合は�
 | | | 
 
 
-グループ ポリシーを使用するか、[Office クラウド ポリシー サービス](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)を使用して、この設定を展開します。
+グループ ポリシーを使用するか、[Office クラウド ポリシー サービス](/DeployOffice/overview-office-cloud-policy-service)を使用して、この設定を展開します。
 
 > [!NOTE]
 > グループ ポリシー設定 **Office の機密度機能を使用して、機密度ラベルを表示する** を使用して、これを **1** に設定する場合、Azure Information Protection クライアントが Office アプリに読み込まれる可能性があります。 アドインが各アプリで読み込まれるのをブロックすると、このような問題が防止されます。
@@ -419,7 +419,7 @@ Outlook に別のデフォルトのラベルを指定するには、ラベル GU
 Get-Label | Format-Table -Property DisplayName, Name, Guid
 ````
 
-これらの詳細設定のいずれかをラベル ポリシーから削除するには、同じ Advanced Settings パラメータ構文を使用しますが、null 文字列値を指定します。 次に例を示します。
+これらの詳細設定のいずれかをラベル ポリシーから削除するには、同じ AdvancedSettings パラメータ構文を使用しますが、null 文字列値を指定します。例:
 
 ````powershell
 Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}

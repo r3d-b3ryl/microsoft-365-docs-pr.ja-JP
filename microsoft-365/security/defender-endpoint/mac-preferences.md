@@ -18,17 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b706cb8dbd43d545768c1c573021b5ef401e3c09
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934563"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346404"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -106,6 +105,7 @@ ms.locfileid: "51934563"
 #### <a name="scan-exclusions"></a>スキャンの除外
 
 スキャン対象から除外されるエンティティを指定します。 除外は、完全パス、拡張子、またはファイル名で指定できます。
+(除外はアイテムの配列として指定されます。管理者は必要な数の要素を任意の順序で指定できます)。
 
 |Section|値|
 |:---|:---|
@@ -136,6 +136,27 @@ ms.locfileid: "51934563"
 | **データ型** | String |
 | **指定可能な値** | 有効なパス |
 | **コメント** | 適用 *できるのは、$type**が excludedPath である場合のみです。* |
+
+## <a name="supported-exclusion-types"></a>サポートされる除外の種類
+
+次の表に、Defender for Endpoint on Mac でサポートされている除外の種類を示します。
+
+除外 | 定義 | 例
+---|---|---
+ファイル拡張子 | 拡張子が付いたすべてのファイル(デバイス上の任意の場所) | `.test`
+File | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Folder | 指定したフォルダーの下のすべてのファイル (再帰的) | `/var/log/`<br/>`/var/*/`
+プロセス | 特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル | `/bin/cat`<br/>`cat`<br/>`c?t`
+
+> [!IMPORTANT]
+> 正常に除外するには、上記のパスは、シンボリック リンクではなくハード リンクである必要があります。 パスがシンボリック リンクである場合は、実行して確認できます `file <path-name>` 。
+
+ファイル、フォルダー、およびプロセスの除外は、次のワイルドカードをサポートします。
+
+ワイルドカード | 説明 | 例 | 一致 | 一致しない
+---|---|---|---|---
+\* |    none を含む任意の数の文字と一致します (パス内でこのワイルドカードを使用すると、1 つのフォルダーのみを置き換える点に注意してください) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
+? | 任意の 1 文字に一致する | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
 
 ##### <a name="path-type-file--directory"></a>パスの種類 (ファイル/ディレクトリ)
 
@@ -416,7 +437,7 @@ tag の値を指定します。
   - **望ましくない可能性のあるアプリケーション (PUA) が** ブロックされる
   - **アーカイブボム** (圧縮率が高いファイル) が Microsoft Defender for Endpoint ログに監査される
 - セキュリティ インテリジェンスの自動更新を有効にする
-- クラウドによる保護を有効にする
+- クラウドによる保護の有効化
 - 自動サンプル申請を有効にする
 
 ### <a name="property-list-for-jamf-configuration-profile"></a>JAMF 構成プロファイルのプロパティ 一覧
@@ -577,6 +598,14 @@ tag の値を指定します。
             </dict>
             <dict>
                 <key>$type</key>
+                <string>excludedPath</string>
+                <key>isDirectory</key>
+                <true/>
+                <key>path</key>
+                <string>/Users/*/git</string>
+            </dict>
+            <dict>
+                <key>$type</key>
                 <string>excludedFileExtension</string>
                 <key>extension</key>
                 <string>pdf</string>
@@ -719,6 +748,14 @@ tag の値を指定します。
                         </dict>
                         <dict>
                             <key>$type</key>
+                            <string>excludedPath</string>
+                            <key>isDirectory</key>
+                            <true/>
+                            <key>path</key>
+                            <string>/Users/*/git</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
                             <string>excludedFileExtension</string>
                             <key>extension</key>
                             <string>pdf</string>
@@ -812,7 +849,7 @@ com.microsoft.wdav.plist: OK
 
 ### <a name="jamf-deployment"></a>JAMF の展開
 
-JAMF コンソールで、[**コンピューター** 構成プロファイル] を開き、使用する構成プロファイルに移動し、[カスタム設定  >  ]**を選択します**。 優先ドメインとしてエントリ `com.microsoft.wdav` を作成し、前に作成した *.plist を* アップロードします。
+JAMF コンソールで、[**コンピューター** 構成プロファイル] を開き、使用する構成プロファイルに移動し、[カスタム 構成プロファイル] を  >  設定。  優先ドメインとしてエントリ `com.microsoft.wdav` を作成し、前に作成した *.plist を* アップロードします。
 
 >[!CAUTION]
 >正しい基本設定ドメイン ( ) を入力する必要があります。それ以外の場合、設定は `com.microsoft.wdav` Microsoft Defender for Endpoint によって認識されません。
@@ -829,13 +866,13 @@ JAMF コンソールで、[**コンピューター** 構成プロファイル] �
 
 5. 構成プロファイルを開き、ファイルを `com.microsoft.wdav.xml` アップロードします。 (このファイルは手順 3 で作成されました。
 
-6. [**OK**] を選択します。
+6. **[OK]** を選択します。
 
 7. [割 **り当**  >  **ての管理] を選択します**。 [含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。
 
 >[!CAUTION]
 >正しいカスタム構成プロファイル名を入力する必要があります。それ以外の場合、これらの基本設定は Microsoft Defender for Endpoint によって認識されません。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - [プロファイル構成リファレンス (Apple 開発者向けドキュメント)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)

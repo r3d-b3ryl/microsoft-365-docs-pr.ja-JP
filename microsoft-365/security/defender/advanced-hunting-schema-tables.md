@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender Advanced Hunting スキーマのデータ テーブル
+title: Defender の高度なMicrosoft 365スキーマ内のデータ テーブル
 description: 高度な捜索スキーマのテーブルについて学習し、脅威の捜索クエリを実行できるデータを理解します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0313d1e95682d52e44cf90360c8ef322f0cad5db
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932919"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470582"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
@@ -58,9 +58,8 @@ ms.locfileid: "51932919"
 | テーブル名 | 説明 |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | アラートに関連付けられたファイル、IP アドレス、URL、ユーザー、またはデバイス |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、Microsoft Defender for Identity からのアラート (重大度情報と脅威の分類を含む)  |
-| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | クラウド アプリとサービスでのファイル関連のアクティビティ |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | 365 および他のクラウド アプリとサービスOfficeアカウントとオブジェクトを含むイベント |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity からのアラート (重大度情報と脅威の分類を含む)  |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | アプリや他のクラウド アプリやサービスOffice 365アカウントとオブジェクトを含むイベント |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Windows Defender ウイルス対策や Exploit Protection などのセキュリティ制御によりトリガーされたイベントを含むさまざまな種類のイベント  |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | エンドポイント上の証明書検証イベントから取得した署名済みファイルの証明書情報 |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | ファイルの作成、変更、およびその他のファイル システム イベント |
@@ -77,11 +76,11 @@ ms.locfileid: "51932919"
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | デバイスで見つかったソフトウェアの脆弱性と、各脆弱性に対処する利用可能なセキュリティ更新プログラムの一覧 |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | 悪用コードが公開されているかどうかなど、公開されている脆弱性のサポート技術情報 |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | メールに添付されているファイルに関する情報 |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 の電子メール イベント (メール配信イベントやブロック イベントを含む) |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Microsoft 365 が受信者メールボックスにメールを配信した後に配信後に発生するセキュリティ イベント |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365配信イベントやブロック イベントを含む電子メール イベントの管理 |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | 受信者メールボックスに電子メールを配信した後Microsoft 365配信後に発生するセキュリティ イベント |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | メールの URL に関する情報 |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Active Directory を実行しているオンプレミスのドメイン コントローラーに関連するイベント (AD)。 次の表では、ドメイン コントローラー上の ID 関連イベントとシステム イベントの範囲について説明します。 |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Azure Active Directory を含むさまざまなソースからのアカウント情報 |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | さまざまなソースからのアカウント情報 (Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory および Microsoft オンライン サービスでの認証イベント |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | ユーザー、グループ、デバイス、ドメインなどの Active Directory オブジェクトのクエリ |
 

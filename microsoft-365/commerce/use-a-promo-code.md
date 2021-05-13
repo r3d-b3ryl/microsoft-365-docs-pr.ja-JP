@@ -17,15 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-search.appverid: MET150
-description: 価格を下らすためにプロモーション コードを Microsoft 365 サブスクリプションに適用する方法と、エラーが発生した場合のプロモーション コードのトラブルシューティング方法について説明します。
+search.appverid: MET150 S
+description: 価格を下Microsoft 365プロモーション コードを Microsoft 365する方法と、エラーが発生した場合のプロモーション コードのトラブルシューティング方法について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 2a75f3e31a417e505c0f91044c61270f8bad8bae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332920"
+ms.locfileid: "52344652"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>プロモーション コードを使用して価格を下
 
@@ -42,7 +42,7 @@ ms.locfileid: "52332920"
   
 ## <a name="promo-code-terms"></a>プロモーション コードの用語
 
-次のガイドラインは、Microsoft 365 for business サブスクリプションのプロモーション コードに適用されます。
+次のガイドラインは、ビジネス サブスクリプションのプロモーション Microsoft 365適用されます。
   
 - **各サブスクリプションのプロモーション コードの数** 同じ注文の複数のサブスクリプションに 1 つのプロモーション コードを使用できますが、同じサブスクリプションに複数のプロモーション コードを使用することはできません。
 - **割引期間** プロモーション コード割引は、注文に適用されると、サブスクリプションの期間だけ続きます。サブスクリプションの期間が月単位の場合、プロモーション コード割引は、プロモーション コードを入力した請求月の終わりまで続きます。サブスクリプションの期間が年単位の場合 (支払いが月単位でも)、プロモーション コード割引はプロモーション コードを入力した請求年の終わりまで続きます。

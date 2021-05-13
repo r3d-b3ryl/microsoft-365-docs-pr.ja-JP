@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42b15edd933d80dd397f4681c4f0fdb035f030f2
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943019"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346380"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -105,6 +105,7 @@ ms.locfileid: "51943019"
 #### <a name="scan-exclusions"></a>スキャンの除外
 
 スキャンから除外されたエンティティ。 除外は、完全パス、拡張子、またはファイル名で指定できます。
+(除外はアイテムの配列として指定されます。管理者は必要な数の要素を任意の順序で指定できます)。
 
 |||
 |:---|:---|
@@ -305,7 +306,7 @@ ms.locfileid: "51943019"
 疑わしいサンプル (脅威を含む可能性が高い) を Microsoft に送信するかどうかを決定します。 サンプル申請を制御するには、次の 3 つのレベルがあります。
 
 - **なし**: 疑わしいサンプルは Microsoft に送信されません。
-- **安全**: 個人を特定できる情報 (PII) を含む疑わしいサンプルだけが自動的に送信されます。 これは、この設定の既定値です。
+- **セーフ**: 個人を特定できる情報 (PII) を含む疑わしいサンプルだけが自動的に送信されます。 これは、この設定の既定値です。
 - **すべて**: すべての疑わしいサンプルが Microsoft に送信されます。
 
 |||
@@ -337,7 +338,7 @@ ms.locfileid: "51943019"
   - **望ましくない可能性のあるアプリケーション (PUA) が** ブロックされる
   - **アーカイブボム** (圧縮率が高いファイル) は、製品ログに対して監査されます
 - セキュリティ インテリジェンスの自動更新を有効にする
-- クラウドによる保護を有効にする
+- クラウドによる保護の有効化
 - レベルで自動サンプル提出を `safe` 有効にする
 
 ### <a name="sample-profile"></a>サンプル プロファイル
@@ -387,7 +388,12 @@ ms.locfileid: "51943019"
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home"
+            "path":"/run"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home/*/git"
          },
          {
             "$type":"excludedFileExtension",

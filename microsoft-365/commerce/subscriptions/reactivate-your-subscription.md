@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: サブスクリプションが期限切れになったり、無効になったり、キャンセルされた場合にサブスクリプションを再アクティブ化する方法について学習します。
 ms.date: 04/07/2021
-ms.openlocfilehash: 7f77a9782e9028521cbcefbdbffc49bc28db8e9c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333172"
+ms.locfileid: "52345144"
 ---
 # <a name="reactivate-your-subscription"></a>サブスクリプションを再度有効にする
 
 サブスクリプションの有効期限が切れている場合、Microsoft が無効にした場合、またはサブスクリプション期間の途中でサブスクリプションをキャンセルした場合は、管理センターでサブスクリプションを再アクティブ化できます。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 サブスクリプションを再アクティブ化するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 

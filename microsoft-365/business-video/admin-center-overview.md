@@ -21,17 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理センターの詳細Microsoft 365確認してください。
-ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332248"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470426"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
 - [簡易表示の管理センター](#the-admin-center-in-simplified-view)
 - [ダッシュボード ビューの管理センター](#the-admin-center-in-dashboard-view)
+
+管理Microsoft 365には 2 つのビューがあります。簡略化されたビューは、小規模な組織が最も一般的なタスクを管理するのに役立ちます。 ダッシュボード ビューには、より複雑な設定とタスクが含まれます。 管理センターの上部にあるボタンから切り替えできます。
 
 ## <a name="the-admin-center-in-simplified-view"></a>簡易表示の管理センター
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: 8f73deb1059097640946fcf7dad1ca97cb2831b1
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296721"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464407"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -155,5 +155,16 @@ web 用の Office アプリ (Word、Excel など) の使用中にアドインの
   
 |**プラットフォーム**|**デバッグ情報**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler ログ  <br/>  テナント ID ( [詳細情報](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 1 つの Office ページのソースを表示し、相関 ID の値を探してサポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler ログ  <br/>  テナント ID ( [詳細情報](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID。 1 つの Office ページのソースを表示し、相関 ID の値を探してサポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |リッチ クライアント (Windows、Mac)  <br/> | Charles/Fiddler ログ  <br/>  クライアント アプリのビルド番号 (できれば **File/Account** のスクリーンショットとして)  <br/> |
+
+## <a name="related-content"></a>関連コンテンツ
+
+[管理センターにアドインを展開する](../manage/manage-deployment-of-add-ins.md) (記事)
+
+[管理センターでアドインを管理する](manage-addins-in-the-admin-center.md) (記事)
+
+[集中展開に関する FAQ](../manage/centralized-deployment-faq.md) (記事)
+
+[ビジネス ユーザー Microsoft 365最新の Officeクライアント](../setup/upgrade-users-to-latest-office-client.md)にアップグレードする (記事)
+ 

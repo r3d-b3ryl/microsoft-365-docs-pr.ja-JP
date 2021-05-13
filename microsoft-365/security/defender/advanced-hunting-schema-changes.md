@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender Advanced Hunting スキーマの名前付け変更
+title: Defender の高度なMicrosoft 365スキーマの名前付け変更
 description: 高度な検索スキーマの名前付け変更テーブルと列を追跡および確認する
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data、名前付け変更、名前の変更
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023787"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470498"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前付けの変更
 
@@ -43,7 +43,7 @@ ms.locfileid: "52023787"
 - API を使用して実行されるクエリ
 - セキュリティ センター外の別の場所に保存されるクエリ
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 
 | テーブル名 | 元の列名 | 新しい列名 | 変更の理由
 |--|--|--|--|
@@ -78,12 +78,12 @@ ms.locfileid: "52023787"
 
 1. [EmailAttachmentInfo テーブル](advanced-hunting-emailattachmentinfo-table.md)と[EmailEvents](advanced-hunting-emailevents-table.md)テーブルでは、列と列が `MalwareFilterVerdict` `PhishFilterVerdict` 列に置き換 `ThreatTypes` えされています。 列 `MalwareDetectionMethod` と `PhishDetectionMethod` 列も列に置き換 `DetectionMethods` えました。 この合理化により、新しい列の下に詳細な情報を提供できます。 マッピングは以下に示します。
 
-| テーブル名 | 元の列名 | 新しい列名 | 変更の理由
-|--|--|--|--|
-| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | その他の検出方法を含める |
-| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 脅威の種類を追加する |
-| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | その他の検出方法を含める |
-| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 脅威の種類を追加する |
+    | テーブル名 | 元の列名 | 新しい列名 | 変更の理由
+    |--|--|--|--|
+    | `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | その他の検出方法を含める |
+    | `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 脅威の種類を追加する |
+    | `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | その他の検出方法を含める |
+    | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 脅威の種類を追加する |
 
 
 2. 列とテーブルに、電子メールの脅威に関する詳細を示す列 `EmailAttachmentInfo` `EmailEvents` `ThreatNames` が追加されました。 この列には、スパムやフィッシングのような値が含まれます。
@@ -92,18 +92,20 @@ ms.locfileid: "52023787"
 
 4. [DeviceEvents テーブルでは](advanced-hunting-deviceevents-table.md)、アクションの説明を反映するようにいくつかの ActionType 名が変更されました。 変更の詳細については、以下を参照してください。
 
-| テーブル名 | 元の ActionType 名 | 新しい ActionType 名 | 変更の理由
-|--|--|--|--|
-| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | お客様のフィードバック |
-| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | お客様のフィードバック |
-| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | お客様のフィードバック |
-| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | お客様のフィードバック |
+    | テーブル名 | 元の ActionType 名 | 新しい ActionType 名 | 変更の理由
+    |--|--|--|--|
+    | `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | お客様のフィードバック |
+    | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | お客様のフィードバック |
+    | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | お客様のフィードバック |
+    | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | お客様のフィードバック |
 
 ## <a name="march-2021"></a>2021 年 3 月
 
 テーブル `DeviceTvmSoftwareInventoryVulnerabilities` は廃止されました。 テーブルとテーブルを置 `DeviceTvmSoftwareInventory` き換 `DeviceTvmSoftwareVulnerabilities` える。
 
+## <a name="may-2021"></a>2021 年 5 月
 
+テーブル `AppFileEvents` は廃止されました。 この表には、以前は表に含まれる情報と、クラウド サービス内の `CloudAppEvents` `AppFileEvents` 他のアクティビティが含まれています。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

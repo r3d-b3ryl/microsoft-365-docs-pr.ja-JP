@@ -1,5 +1,5 @@
 ---
-title: 管理センターでのネットワークMicrosoft 365 (プレビュー)
+title: 管理センターでのネットワークMicrosoft 365接続
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,15 +14,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: 管理センターでのネットワーク接続Microsoft 365概要 (プレビュー)
-ms.openlocfilehash: 4f88b3ad5bf8f0c32059a26348a651a6024ad544
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 管理センターでのネットワーク接続Microsoft 365概要
+ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245770"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470670"
 ---
-# <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>管理センターでのネットワークMicrosoft 365 (プレビュー)
+# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>管理センターでのネットワークMicrosoft 365接続
 
 このMicrosoft 365管理センターには、Microsoft 365 テナントから収集され、テナント内の管理ユーザーだけが表示できる集約されたネットワーク接続メトリックが含まれます。
 

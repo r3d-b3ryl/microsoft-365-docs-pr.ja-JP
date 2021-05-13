@@ -18,18 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934527"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346392"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のリソース
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,7 +52,7 @@ ms.locfileid: "51934527"
 
 2. 問題を再現する
 
-3. Microsoft `sudo mdatp diagnostic create` Defender for Endpoint ログをバックアップするために実行します。 ファイルは .zip アーカイブ内に格納されます。 このコマンドは、操作が成功した後、バックアップへのファイル パスも出力します。
+3. Microsoft `sudo mdatp diagnostic create` Defender for Endpoint ログをバックアップするために実行します。 ファイルは、アーカイブ内に.zipされます。 このコマンドは、操作が成功した後、バックアップへのファイル パスも出力します。
 
    > [!TIP]
    > 既定では、診断ログはに保存されます `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。 診断ログが保存されているディレクトリを変更するには、次のコマンドに渡し、目的の `--path [directory]` `[directory]` ディレクトリに置き換わります。
@@ -59,6 +60,7 @@ ms.locfileid: "51934527"
    ```bash
    sudo mdatp diagnostic create
    ```
+
    ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
@@ -68,6 +70,7 @@ ms.locfileid: "51934527"
    ```bash
    mdatp log level set --level info
    ```
+
    ```console
    Log level configured successfully
    ```
@@ -80,7 +83,7 @@ ms.locfileid: "51934527"
 
 ## <a name="uninstalling"></a>アンインストール
 
-macOS で Microsoft Defender for Endpoint をアンインストールするには、いくつかの方法があります。 中央管理アンインストールは JAMF で使用できるが、Microsoft Intune ではまだ利用できない点に注意してください。
+macOS で Microsoft Defender for Endpoint をアンインストールするには、いくつかの方法があります。 JAMF では一般に管理されたアンインストールは使用できませんが、このアンインストールはMicrosoft Intune。
 
 ### <a name="interactive-uninstallation"></a>対話型アンインストール
 
@@ -88,14 +91,13 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 
 ### <a name="from-the-command-line"></a>コマンド ラインから
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
-- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
+- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
 
 ## <a name="configuring-from-the-command-line"></a>コマンド ラインからの構成
 
 製品設定の制御やオンデマンド スキャンのトリガーなどの重要なタスクは、コマンド ラインから実行できます。
 
-|Group        |シナリオ                                   |コマンド                                                                           |
+|Group        |シナリオ                                   |command                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
 |構成|リアルタイム保護のオン/オフ           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |構成|クラウド保護のオン/オフ               |`mdatp config cloud --value [enabled/disabled]`                                   |
@@ -117,7 +119,7 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 |Protection   |フル スキャンを実行する                             |`mdatp scan full`                                                                 |
 |Protection   |進行中のオンデマンド スキャンをキャンセルする           |`mdatp scan cancel`                                                               |
 |Protection   |セキュリティ インテリジェンス更新プログラムの要求     |`mdatp definitions update`                                                        |
-|EDR          |デバイスにグループ タグを追加します。 EDR タグは、デバイス グループの管理に使用されます。 詳細については、次のページをご覧ください。 https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|EDR          |デバイスにグループ タグを追加します。 EDRタグは、デバイス グループの管理に使用されます。 詳細については、次のページをご覧ください。 https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |デバイスからグループ タグを削除する               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |グループ ID の追加                               |`mdatp edr group-ids --group-id [group]`                                          |
 
@@ -158,4 +160,4 @@ zsh でオートコンプリートを有効にするには、次の方法を実�
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Microsoft Defender for Endpoint ポータル情報
 
-[macOS の EDR](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)機能が、Microsoft Defender for Endpoint ブログに届き、Microsoft Defender for Endpoint Security Center で何を期待する必要があるかについての詳細なガイダンスが提供されています。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)の機能が到着しました。Microsoft Defender for Endpoint ブログでは、Microsoft Defender for Endpoint Security Center で何を期待するのかについて詳細なガイダンスが提供されています。

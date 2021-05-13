@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/10/2021
+ms.date: 05/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: cdf73ba8b97db06537785dff6e2b3f017d47023d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 265f32f5a24b982933ac6a876b244b10802cdd60
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327356"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345814"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -41,14 +41,18 @@ ms.locfileid: "52327356"
 **エンドポイント用 Microsoft Defender への切 [り替えの準備フェーズへようこそ](switch-to-microsoft-defender-migration.md#the-migration-process)**。 
 
 この移行フェーズには、次の手順が含まれます。
+
 1. [組織のデバイス全体で更新プログラムを取得して展開する](#get-and-deploy-updates-across-your-organizations-devices)
+
 2. [エンドポイントの Microsoft Defender を取得します](#get-microsoft-defender-for-endpoint)。
-3. [Microsoft Defender セキュリティ センターへのアクセスを許可します](#grant-access-to-the-microsoft-defender-security-center)。
+
+3. [サーバーへのアクセスを許可Microsoft Defender セキュリティ センター。](#grant-access-to-the-microsoft-defender-security-center)
+
 4. [デバイス プロキシとインターネット接続の設定を構成します](#configure-device-proxy-and-internet-connectivity-settings)。
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>組織のデバイス全体で更新プログラムを取得して展開する
 
-ベスト プラクティスとして、組織のデバイスとエンドポイントを最新の状態に保ちます。 既存のエンドポイント保護とウイルス対策ソリューションが最新であり、組織のオペレーティング システムとアプリにも最新の更新プログラムが含まれています。 これで、後で Microsoft Defender for Endpoint および Microsoft Defender Antivirus に移行する際に問題を防ぐのに役立ちます。
+ベスト プラクティスとして、組織のデバイスとエンドポイントを最新の状態に保ちます。 既存のエンドポイント保護とウイルス対策ソリューションが最新であり、組織のオペレーティング システムとアプリにも最新の更新プログラムが含まれています。 これで、後で Microsoft Defender for Endpoint に移行して問題を回避Microsoft Defender ウイルス対策。
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>既存のソリューションが最新の情報を提供する
 
@@ -64,7 +68,7 @@ ms.locfileid: "52327356"
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|
-|iOS |[iPhone、iPad、または iPod touch を更新する](https://support.apple.com/HT204204)|
+|iOS |[iPod touch iPhone、iPad、または iPod touch を更新する](https://support.apple.com/HT204204)|
 |Android |[Android &更新する方法を確認する](https://support.google.com/android/answer/7680439) |
 |Linux | [Linux 101: システムの更新](https://www.linux.com/training-tutorials/linux-101-updating-your-system) |
 
@@ -73,28 +77,37 @@ ms.locfileid: "52327356"
 組織のデバイスを更新したので、次の手順は、Microsoft Defender for Endpoint を取得し、ライセンスを割り当て、サービスがプロビジョニングされているのを確認します。
 
 1. Microsoft Defender for Endpoint を今すぐ購入または試してみてください。 [無料試用版を開始するか、見積もりを要求します](https://aka.ms/mdatp)。 
-2. ライセンスが適切にプロビジョニングされていることを確認します。 [ライセンスの状態を確認します](/microsoft-365/security/defender-endpoint/production-deployment#check-license-state)。
-3. グローバル管理者またはセキュリティ管理者として、Microsoft Defender for Endpoint の専用クラウド インスタンスをセットアップします。 「Microsoft [Defender for Endpoint setup: Tenant configuration」を参照してください](/microsoft-365/security/defender-endpoint/production-deployment#tenant-configuration)。
-4. 組織内のエンドポイント (デバイスなど) がプロキシを使用してインターネットにアクセスする場合は [、「Microsoft Defender for Endpoint setup: Network configuration」を参照してください](/microsoft-365/security/defender-endpoint/production-deployment#network-configuration)。
+
+2. ライセンスが適切にプロビジョニングされていることを確認します。 [ライセンスの状態を確認します](production-deployment.md#check-license-state)。
+
+3. グローバル管理者またはセキュリティ管理者として、Microsoft Defender for Endpoint の専用クラウド インスタンスをセットアップします。 「Microsoft [Defender for Endpoint setup: Tenant configuration」を参照してください](production-deployment.md#tenant-configuration)。
+
+4. 組織内のエンドポイント (デバイスなど) がプロキシを使用してインターネットにアクセスする場合は [、「Microsoft Defender for Endpoint setup: Network configuration」を参照してください](production-deployment.md#network-configuration)。
  
-この時点で、Microsoft Defender セキュリティ センター () を使用するセキュリティ管理者およびセキュリティオペレーターにアクセス権を付与する準備ができました [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
+この時点で、セキュリティ管理者 Microsoft Defender セキュリティ センターとセキュリティオペレーターにアクセス権を付与する準備が整いました。 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 
 
 > [!NOTE]
-> Microsoft Defender セキュリティ センターは、Microsoft Defender for Endpoint ポータルと呼ばれる場合があります。 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 
+> このMicrosoft Defender セキュリティ センター Microsoft Defender for Endpoint ポータルと呼ばれる場合があります。. [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 
 
-## <a name="grant-access-to-the-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターへのアクセスを許可する
+## <a name="grant-access-to-the-microsoft-defender-security-center"></a>サーバーへのアクセスを許可Microsoft Defender セキュリティ センター
 
-Microsoft Defender セキュリティ センター ( ) は、Microsoft Defender for Endpoint の機能にアクセスして構成 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) する場所です。 詳細については [、「Microsoft Defender セキュリティ センターの概要」を参照してください](use.md)。
+このMicrosoft Defender セキュリティ センター ( ) は、Microsoft Defender for Endpoint の機能にアクセスして構成 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) する場所です。 詳細については、「概要」[を参照Microsoft Defender セキュリティ センター。](use.md)
 
-Microsoft Defender セキュリティ センターへのアクセス許可は、基本的なアクセス許可または役割ベースのアクセス制御 (RBAC) を使用して付与できます。 アクセス許可を細かく制御するには、RBAC を使用することをお勧めします。
+アクセス許可は、Microsoft Defender セキュリティ センターアクセス許可または役割ベースのアクセス制御 (RBAC) を使用して付与できます。 アクセス許可を細かく制御するには、RBAC を使用することをお勧めします。
 
 1. セキュリティ管理者とセキュリティオペレーターの役割とアクセス許可を計画します。 「 [役割ベースのアクセス制御」を参照してください](prepare-deployment.md#role-based-access-control)。
-2. RBAC を設定して構成します。 Intune を使用 [して RBAC](/mem/intune/fundamentals/what-is-intune) を構成することをお勧めします。特に、組織で Windows 10、macOS、iOS、および Android デバイスの組み合わせを使用している場合。 Intune を [使用した RBAC のセットアップを参照してください](/mem/intune/fundamentals/role-based-access-control)。
+
+2. RBAC を設定して構成します。 Intune を使用[して RBAC](/mem/intune/fundamentals/what-is-intune)を構成することをお勧めします。特に、組織で、Windows 10、macOS、iOS、および Android デバイスの組み合わせを使用している場合。 Intune を [使用した RBAC のセットアップを参照してください](/mem/intune/fundamentals/role-based-access-control)。
+
     組織で Intune 以外の方法が必要な場合は、次のいずれかのオプションを選択します。
+
     - [構成マネージャー](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
+
     - [高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm)
-    - [Windows 管理センター](/windows-server/manage/windows-admin-center/overview)
-3. Microsoft Defender セキュリティ センターへのアクセスを許可します。 (ヘルプが必要ですか? 「RBAC [を使用したポータル アクセスの管理」を参照](rbac.md)してください。
+
+    - [Windows管理センター](/windows-server/manage/windows-admin-center/overview)
+
+3. ユーザーにアクセス権を付与Microsoft Defender セキュリティ センター。 (ヘルプが必要ですか? 「RBAC [を使用したポータル アクセスの管理」を参照](rbac.md)してください。
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -102,10 +115,10 @@ Microsoft Defender セキュリティ センターへのアクセス許可は、
 
 |機能  | オペレーティング システム | 関連情報 |
 |--|--|--|
-|[エンドポイントの検出と応答](overview-endpoint-detection-response.md) (EDR) |- [Windows 10](/windows/release-health/release-information) <br/>- [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)  |[コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md) |
-|EDR |- [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>- [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS: <br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra)  |[macOS のエンドポイント用 Microsoft Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)  |
-|[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md) |- [Windows 10](/windows/release-health/release-information) <br/>- [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <br/>- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
+|[エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)  |[コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md) |
+|EDR |[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+|EDR  |macOS: <br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)   |[macOS のエンドポイント用 Microsoft Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)  |
+|[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
 |ウイルス対策 |macOS: <br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave) |[macOS のエンドポイント用 Microsoft Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections) |
 |ウイルス対策 |Linux: <br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS 以上の LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Microsoft Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections) |
 

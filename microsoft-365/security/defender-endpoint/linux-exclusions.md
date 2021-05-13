@@ -17,19 +17,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934299"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346416"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +38,7 @@ ms.locfileid: "51934299"
 この記事では、オンデマンド スキャンに適用される除外を定義する方法、およびリアルタイムの保護と監視について情報を提供します。
 
 > [!IMPORTANT]
-> この記事で説明する除外は、エンドポイントの検出と応答 (EDR) を含む、他の Defender for Endpoint on Linux 機能には適用されません。 この記事で説明する方法を使用して除外するファイルは、EDR アラートなどの検出を引き続きトリガーできます。
+> この記事で説明する除外は、エンドポイントの検出と応答 (EDR) を含む、他の Defender for Endpoint on Linux 機能には適用EDR。 この記事で説明する方法を使用して除外するファイルは、アラートや他の検出EDRトリガーできます。
 
 特定のファイル、フォルダー、プロセス、およびプロセスが開いたファイルは、Defender for Endpoint on Linux スキャンから除外できます。
 
@@ -55,7 +55,7 @@ ms.locfileid: "51934299"
 ---|---|---
 ファイル拡張子 | 拡張子が付いたすべてのファイル(デバイス上の任意の場所) | `.test`
 File | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-フォルダー | 指定したフォルダーの下のすべてのファイル (再帰的) | `/var/log/`<br/>`/var/*/`
+Folder | 指定したフォルダーの下のすべてのファイル (再帰的) | `/var/log/`<br/>`/var/*/`
 プロセス | 特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]

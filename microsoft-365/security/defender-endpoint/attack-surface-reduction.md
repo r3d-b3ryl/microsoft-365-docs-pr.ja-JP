@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 56ab6c6c11bd2c0786c0d797e5302a1f06f9bd53
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 3ca8f5234f90624c8570cbfb10e75bd0ee9380ae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327260"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345838"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>攻撃表面の縮小ルールを使用してマルウェアの感染を防止する
 
@@ -180,7 +180,7 @@ DeviceEvents
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>悪用された脆弱な署名済みドライバーの悪用をブロックする
 
-このルールは、アプリケーションが脆弱な署名済みドライバーをディスクに書き込むのを防ぐためです。 インザワイルドで脆弱な署名済みドライバーは、カーネルにアクセスするのに十分な特権を持つローカル アプリケーション \-  \- によって悪用される可能性があります。 脆弱な署名付きドライバーを使用すると、攻撃者はセキュリティ ソリューションを無効または回避し、最終的にはシステムの侵害につながる可能性があります。
+このルールは、アプリケーションが脆弱で署名されたドライバーをディスクに書き込むのを防ぐためです。 インザワイルドで脆弱な署名済みドライバーは、カーネルにアクセスするのに十分な特権を持つローカル アプリケーション \-  \- によって悪用される可能性があります。 脆弱な署名付きドライバーを使用すると、攻撃者はセキュリティ ソリューションを無効または回避し、最終的にはシステムの侵害につながる可能性があります。
 
 このルールは、システム上に既に存在するドライバーが読み込まれるのをブロックしない。
 
@@ -253,8 +253,8 @@ LSASS は、コンピューターにサインインするユーザーをWindows�
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -266,21 +266,21 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>メール クライアントと Web メールから実行可能なコンテンツをブロックする
 
-このルールは、次のファイルの種類が、Microsoft Outlook アプリケーション内で開いた電子メール、または他の一般的な webmail プロバイダー Outlook.com から起動をブロックします。
+このルールは、Microsoft Outlook アプリケーション、または Outlook.com や他の一般的な Web メール プロバイダー内で開いた電子メールから、次の種類のファイルの起動をブロックします。
 
 - 実行可能ファイル (.exe、.dll.scr など)
-- スクリプト ファイル (PowerShell .ps、Visual Basic .vbs、JavaScript ファイル.jsなど)
+- スクリプト ファイル (PowerShell .ps、Visual Basic .vbs、JavaScript .js ファイルなど)
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Microsoft Endpoint Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Microsoft エンドポイント マネージャーCB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune 名: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager 名: `Block executable content from email client and webmail`
+Microsoft エンドポイント マネージャー名:`Block executable content from email client and webmail`
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
@@ -288,7 +288,7 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 > [メール **クライアントと Web メールからの** 実行可能なコンテンツをブロックする] というルールには、使用するアプリケーションに応じて、次の別の説明があります。
 >
 > - Intune (構成プロファイル): 電子メール (Web メール/メール クライアント) から削除された実行可能コンテンツ (exe、dll、ps、js、vbs など) の実行 (例外なし)。
-> - エンドポイント マネージャー: 電子メールおよび Web メール クライアントからの実行可能なコンテンツのダウンロードをブロックします。
+> - エンドポイント マネージャー: メールおよび Web メール クライアントからの実行可能コンテンツのダウンロードをブロックします。
 > - グループ ポリシー: 電子メール クライアントと Web メールから実行可能なコンテンツをブロックします。
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする
@@ -308,8 +308,8 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -327,8 +327,8 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -346,8 +346,8 @@ GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -357,18 +357,18 @@ Configuration Manager 名: `Block JavaScript or VBScript from launching download
 
 GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
-### <a name="block-office-applications-from-creating-executable-content"></a>実行可能Office作成するアプリケーションをブロックする
+### <a name="block-office-applications-from-creating-executable-content"></a>実行可能Office作成するアプリケーションのブロック
 
-このルールは、悪意のあるOfficeコードがディスクに書き込まれるのをブロックすることで、Word、Excel、PowerPoint などのアプリによる悪意のある実行可能コンテンツの作成を防止します。
+このルール Officeは、悪意のあるコードがディスクに書き込まれるのをブロックすることで、Word、Excel、PowerPoint などのアプリが悪意のある実行可能コンテンツを作成するのを防ぐためです。
 
 マルウェアは、Officeとして悪用され、悪意のあるOfficeをディスクに保存しようとする可能性があります。 これらの悪意のあるコンポーネントは、コンピューターの再起動後も存続し、システム上で保持されます。 したがって、このルールは一般的な永続化手法に対して防御します。
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM は現在 Microsoft Endpoint Configuration Manager)
+- [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM がMicrosoft Endpoint Configuration Manager)
 
 Intune 名: `Office apps/macros creating executable content`
 
@@ -384,12 +384,12 @@ GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 コードインジェクションを使用する正当なビジネス上の目的はありません。
 
-このルールは、Word、Excel、および PowerPoint に適用されます。
+このルールは、Word、Excel、およびPowerPoint。
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -399,19 +399,19 @@ Configuration Manager 名: `Block Office applications from injecting code into o
 
 GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
-### <a name="block-office-communication-application-from-creating-child-processes"></a>通信Office子プロセスの作成をブロックする
+### <a name="block-office-communication-application-from-creating-child-processes"></a>通信Officeプロセスの作成をブロックする
 
-このルールは、Outlook が子プロセスを作成することを妨げる一方で、正当な Outlook 関数を許可します。
+このルールは、Outlookプロセスを作成する一方で、正当なプロセス機能Outlookします。
 
-このルールは、ソーシャル エンジニアリング攻撃から保護し、Outlook の脆弱性を悪用するコードの悪用を防止します。 また、ユーザーの [資格情報が侵害された](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) 場合に攻撃者が使用できる Outlook ルールやフォームの悪用から保護します。
+このルールは、ソーシャル エンジニアリング攻撃から保護し、コードを悪用して、セキュリティ上の脆弱性を悪用Outlook。 また、ユーザーのOutlook[が](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)侵害された場合に攻撃者が使用する可能性のある、特定のルールやフォームの悪用から保護します。
 
 > [!NOTE]
-> このルールは、Outlook および Outlook Outlook.com 適用されます。
+> このルールは、Outlookおよび Outlook.com にのみ適用されます。
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 Intune 名: `Process creation from Office communication products (beta)`
@@ -431,8 +431,8 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows 10バージョン 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
+- [Windowsサーバー 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Intune 名: 使用できません
 
@@ -445,12 +445,12 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 このルールは [、PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) および WMI を介して作成 [されたプロセスの実行](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) をブロックします。 PsExec と WMI の両方がコードをリモートで実行できるので、コマンドと制御の目的でこの機能を不正に使用したり、組織のネットワーク全体に感染を広げる危険性があります。
 
 > [!WARNING]
-> Intune または別の MDM ソリューションを使用してデバイスを管理する場合にのみ、 [このルールを](https://docs.microsoft.com/intune) 使用します。 このルールは [、Configuration Manager](https://docs.microsoft.com/configmgr) クライアントが正しく機能するために使用する WMI コマンドをブロックする Microsoft Endpoint Configuration Manager による管理と互換性がありません。
+> Intune または別の MDM ソリューションを使用してデバイスを管理する場合にのみ、 [このルールを](https://docs.microsoft.com/intune) 使用します。 このルールは、Configuration Manager クライアント[が正しく機能するために使用Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) WMI コマンドをブロックします。
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 Intune 名: `Process creation from PSExec and WMI commands`
@@ -465,8 +465,8 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -480,12 +480,12 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 このルールは、VBA マクロが Win32 API を呼び出すのを防止します。
 
-Office VBA では、Win32 API 呼び出しが有効です。 マルウェアは [、Win32 API](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) を呼び出してディスクに直接何も書き込みせずに悪意のあるシェルコードを起動するなど、この機能を悪用する可能性があります。 ほとんどの組織では、他の方法でマクロを使用している場合でも、Win32 API を毎日の機能で呼び出す機能に依存しません。
+OfficeVBA では、Win32 API 呼び出しが有効です。 マルウェアは [、Win32 API](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) を呼び出してディスクに直接何も書き込みせずに悪意のあるシェルコードを起動するなど、この機能を悪用する可能性があります。 ほとんどの組織では、他の方法でマクロを使用している場合でも、Win32 API を毎日の機能で呼び出す機能に依存しません。
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -510,8 +510,8 @@ GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 
 このルールは次の中で導入されました。
 
-- [Windows 10 バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10バージョン 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windowsサーバー、バージョン 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -526,4 +526,4 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 - [攻撃面の減少の FAQ](attack-surface-reduction-faq.md)
 - [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
 - [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
-- [Microsoft Defender Antivirus と他のウイルス対策/マルウェア対策ソリューションとの互換性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- [他のMicrosoft Defender ウイルス対策/マルウェア対策ソリューションとの互換性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

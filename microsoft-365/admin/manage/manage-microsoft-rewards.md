@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 個人用 Microsoft アカウントを持つユーザーは、リンク AAD with Rewards 機能が有効になっている場合、仕事の検索に関連して Microsoft リワード ポイントを獲得できます。
-ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8cbd88de530ec4aa566962bb74715dc9c417f296
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297070"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464344"
 ---
 # <a name="manage-microsoft-rewards"></a>Microsoft Rewards を管理する
 
@@ -33,3 +33,13 @@ ms.locfileid: "52297070"
 未成年の子供を持つ教育機関の管理者は、子供が Microsoft リワードに参加するには、保護者の Microsoft アカウントが必要です。 親アカウントは、学生の組織アカウントに関連付けされません。 子の Microsoft アカウントの詳細については、「保護者の同意」 [および「Microsoft 子アカウント」を参照してください](https://support.microsoft.com/account-billing/c6951746-8ee5-8461-0809-fbd755cd902e)。
 
 この機能は、政府機関のユーザーには使用できません。 管理者は、組織のコンプライアンス ポリシーで、仕事の検索で個人の Microsoft Rewards アカウントの使用を許可する必要があります。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Microsoft Search のセットアップ](/microsoftsearch/setup-microsoft-search.md) (記事)
+
+[自宅での作業をサポートするセキュリティ](../../security/top-security-tasks-for-remote-work.md) チームの上位 12 のタスク (記事)
+
+[新しい機能 (Microsoft 365)](https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426)
+
+

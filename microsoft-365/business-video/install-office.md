@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アプリをインストールするMicrosoft Officeします。
-ms.openlocfilehash: 4970fa2698c413aad24aa94c16031823a16e9001
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3626b21a3c98fba1830350568440467869577ccb
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578869"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464371"
 ---
 # <a name="install-office-apps"></a>Office アプリのインストール 
 
@@ -36,9 +36,20 @@ ms.locfileid: "51578869"
 Microsoft Officeスタート メニューに **アプリがあります。** 表示しない&#39;、自分でインストールできます。
 
 1. [次へ] office.com。 作業用アカウントでサインインする必要がある場合があります。
-2. [Microsoft    >   **365 Office実行]** の順に選択し、[は   >   い] を **選択します**。
+2. [アプリ **の実行**   >   **Office Microsoft 365をインストールする] を**   >   選択し、[はい] を **選択します**。
 3. アプリOfficeインストールされます。 プロセスには数分かかる場合があります。 完了したら、[閉じる] を  **選択します**。
-4. Microsoft Teams をインストールするには、[チーム] ページに移動 office.com Teams を選択  **します**。
-5. Windows アプリを取得し、[実行] を  **選択します**。 インストールが完了すると、Teams にプロンプトが表示されます。
+4. インストールするにはMicrosoft Teamsページに移動し **、[office.com]** を選択Teams。
+5. アプリをWindowsし、[実行] を **選択します**。 Teams完了すると、プロンプトが表示されます。
 
-インストールOfficeアプリが [スタート] メニューに  **表示** されます。
+インストールOfficeアプリが [スタート] メニューに **表示** されます。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[コンテンツをユーザーに移行Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md)する (記事)
+
+[電話に Microsoft 365管理モバイル アプリをインストールする](admin-mobile.md)(ビデオ)
+
+[小規模ビジネスのMicrosoft Teamsを開始する](get-started-teams-small-business.md)(ビデオ)
+
+[ファイルを外部で簡単に共有](share-files-externally.md) する (ビデオ)
+
