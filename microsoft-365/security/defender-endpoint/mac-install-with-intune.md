@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint on Mac の Intune ベースの展開
-description: Microsoft Intune を使用して、Microsoft Defender for Endpoint を Mac にインストールします。
+description: Mac に Microsoft Defender for Endpoint をインストールします。Microsoft Intune。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,85 +18,62 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c98ce17b7b71f2d05aeffe66dbb1e08f9046f463
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: da82b24b8a6bb6aa22028615bb3dd0c9d45acfa1
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933147"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345986"
 ---
-# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="2b1d8-104">MacOS での Microsoft Defender for Endpoint の Intune ベースの展開</span><span class="sxs-lookup"><span data-stu-id="2b1d8-104">Intune-based deployment for Microsoft Defender for Endpoint on macOS</span></span>
-
+# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="84d36-104">MacOS での Microsoft Defender for Endpoint の Intune ベースの展開</span><span class="sxs-lookup"><span data-stu-id="84d36-104">Intune-based deployment for Microsoft Defender for Endpoint on macOS</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+<span data-ttu-id="84d36-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="84d36-105">**Applies to:**</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="2b1d8-105">このドキュメントでは、macOS デバイスで Microsoft Defender for Endpoint を展開および構成するための従来の方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-105">This documentation explains the legacy method for deploying and configuring Microsoft Defender for Endpoint on macOS devices.</span></span> <span data-ttu-id="2b1d8-106">ネイティブ エクスペリエンスは MEM コンソールで利用できます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-106">The native experience is now available in the MEM console.</span></span> <span data-ttu-id="2b1d8-107">MEM コンソールでネイティブ UI をリリースすると、管理者はアプリケーションを構成して展開し、macOS デバイスに送信する方法がはるかに簡単になります。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-107">The release of the native UI in the MEM console provide admins with a much simpler way to configure and deploy the application and send it down to macOS devices.</span></span> <br> <br>
-><span data-ttu-id="2b1d8-108">ブログ投稿 [MEM は、Microsoft Defender for Endpoint for macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) の展開を簡略化し、新機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-108">The blog post [MEM simplifies deployment of Microsoft Defender for Endpoint for macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) explains the new features.</span></span> <span data-ttu-id="2b1d8-109">アプリを構成するには [、「Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos)の macOS 上の Microsoft Defender for Endpoint の設定」に移動します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-109">To configure the app, go to [Settings for Microsoft Defender for Endpoint on macOS in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos).</span></span> <span data-ttu-id="2b1d8-110">アプリを展開するには、「Microsoft Intune を使用して [Microsoft Defender for Endpoint を macOS デバイスに追加する」に移動します](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-110">To deploy the app, go to [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos).</span></span>
+- [<span data-ttu-id="84d36-106">macOS 用 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="84d36-106">Microsoft Defender for Endpoint on macOS</span></span>](microsoft-defender-endpoint-mac.md)
 
-<span data-ttu-id="2b1d8-111">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="2b1d8-111">**Applies to:**</span></span>
+<span data-ttu-id="84d36-107">このトピックでは、Intune を介して macOS に Microsoft Defender for Endpoint を展開する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="84d36-107">This topic describes how to deploy Microsoft Defender for Endpoint on macOS through Intune.</span></span> <span data-ttu-id="84d36-108">展開が成功するには、次のすべての手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="84d36-108">A successful deployment requires the completion of all of the following steps:</span></span>
 
-- [<span data-ttu-id="2b1d8-112">macOS 用 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="2b1d8-112">Microsoft Defender for Endpoint on macOS</span></span>](microsoft-defender-endpoint-mac.md)
+1. [<span data-ttu-id="84d36-109">オンボーディング パッケージをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="84d36-109">Download the onboarding package</span></span>](#download-the-onboarding-package)
+1. [<span data-ttu-id="84d36-110">クライアント デバイスのセットアップ</span><span class="sxs-lookup"><span data-stu-id="84d36-110">Client device setup</span></span>](#client-device-setup)
+1. [<span data-ttu-id="84d36-111">システム拡張機能の承認</span><span class="sxs-lookup"><span data-stu-id="84d36-111">Approve system extensions</span></span>](#approve-system-extensions)
+1. [<span data-ttu-id="84d36-112">システム構成プロファイルの作成</span><span class="sxs-lookup"><span data-stu-id="84d36-112">Create System Configuration profiles</span></span>](#create-system-configuration-profiles)
+1. [<span data-ttu-id="84d36-113">アプリケーションの発行</span><span class="sxs-lookup"><span data-stu-id="84d36-113">Publish application</span></span>](#publish-application)
 
-<span data-ttu-id="2b1d8-113">このトピックでは、Intune を介して macOS に Microsoft Defender for Endpoint を展開する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-113">This topic describes how to deploy Microsoft Defender for Endpoint on macOS through Intune.</span></span> <span data-ttu-id="2b1d8-114">展開が成功するには、次のすべての手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-114">A successful deployment requires the completion of all of the following steps:</span></span>
+## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="84d36-114">前提条件とシステム要件</span><span class="sxs-lookup"><span data-stu-id="84d36-114">Prerequisites and system requirements</span></span>
 
-1. [<span data-ttu-id="2b1d8-115">インストール パッケージとオンボーディング パッケージのダウンロード</span><span class="sxs-lookup"><span data-stu-id="2b1d8-115">Download installation and onboarding packages</span></span>](#download-installation-and-onboarding-packages)
-1. [<span data-ttu-id="2b1d8-116">クライアント デバイスのセットアップ</span><span class="sxs-lookup"><span data-stu-id="2b1d8-116">Client device setup</span></span>](#client-device-setup)
-1. [<span data-ttu-id="2b1d8-117">システム拡張機能の承認</span><span class="sxs-lookup"><span data-stu-id="2b1d8-117">Approve system extensions</span></span>](#approve-system-extensions)
-1. [<span data-ttu-id="2b1d8-118">システム構成プロファイルの作成</span><span class="sxs-lookup"><span data-stu-id="2b1d8-118">Create System Configuration profiles</span></span>](#create-system-configuration-profiles)
-1. [<span data-ttu-id="2b1d8-119">アプリケーションの発行</span><span class="sxs-lookup"><span data-stu-id="2b1d8-119">Publish application</span></span>](#publish-application)
+<span data-ttu-id="84d36-115">開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="84d36-115">Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.</span></span>
 
-## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="2b1d8-120">前提条件とシステム要件</span><span class="sxs-lookup"><span data-stu-id="2b1d8-120">Prerequisites and system requirements</span></span>
+## <a name="overview"></a><span data-ttu-id="84d36-116">概要</span><span class="sxs-lookup"><span data-stu-id="84d36-116">Overview</span></span>
 
-<span data-ttu-id="2b1d8-121">開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) ページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-121">Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.</span></span>
+<span data-ttu-id="84d36-117">次の表は、Intune 経由で Microsoft Defender for Endpoint on Mac を展開および管理するために必要な手順の概要を示しています。</span><span class="sxs-lookup"><span data-stu-id="84d36-117">The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender for Endpoint on Macs, via Intune.</span></span> <span data-ttu-id="84d36-118">詳細な手順については、以下をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="84d36-118">More detailed steps are available below.</span></span>
 
-
-## <a name="overview"></a><span data-ttu-id="2b1d8-122">概要</span><span class="sxs-lookup"><span data-stu-id="2b1d8-122">Overview</span></span>
-
-<span data-ttu-id="2b1d8-123">次の表は、Intune 経由で Microsoft Defender for Endpoint on Mac を展開および管理するために必要な手順の概要を示しています。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-123">The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender for Endpoint on Macs, via Intune.</span></span> <span data-ttu-id="2b1d8-124">詳細な手順については、以下をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-124">More detailed steps are available below.</span></span>
-
-| <span data-ttu-id="2b1d8-125">手順</span><span class="sxs-lookup"><span data-stu-id="2b1d8-125">Step</span></span> | <span data-ttu-id="2b1d8-126">サンプル ファイル名</span><span class="sxs-lookup"><span data-stu-id="2b1d8-126">Sample file names</span></span> | <span data-ttu-id="2b1d8-127">BundleIdentifier</span><span class="sxs-lookup"><span data-stu-id="2b1d8-127">BundleIdentifier</span></span> |
+| <span data-ttu-id="84d36-119">手順</span><span class="sxs-lookup"><span data-stu-id="84d36-119">Step</span></span> | <span data-ttu-id="84d36-120">サンプル ファイル名</span><span class="sxs-lookup"><span data-stu-id="84d36-120">Sample file names</span></span> | <span data-ttu-id="84d36-121">BundleIdentifier</span><span class="sxs-lookup"><span data-stu-id="84d36-121">BundleIdentifier</span></span> |
 |-|-|-|
-| [<span data-ttu-id="2b1d8-128">インストール パッケージとオンボーディング パッケージのダウンロード</span><span class="sxs-lookup"><span data-stu-id="2b1d8-128">Download installation and onboarding packages</span></span>](#download-installation-and-onboarding-packages) | <span data-ttu-id="2b1d8-129">WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml</span><span class="sxs-lookup"><span data-stu-id="2b1d8-129">WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml</span></span> | <span data-ttu-id="2b1d8-130">com.microsoft.wdav.atp</span><span class="sxs-lookup"><span data-stu-id="2b1d8-130">com.microsoft.wdav.atp</span></span> |
-| [<span data-ttu-id="2b1d8-131">エンドポイント用 Microsoft Defender のシステム拡張機能を承認する</span><span class="sxs-lookup"><span data-stu-id="2b1d8-131">Approve System Extension for Microsoft Defender for Endpoint</span></span>](#approve-system-extensions) | <span data-ttu-id="2b1d8-132">MDATP_SysExt.xml</span><span class="sxs-lookup"><span data-stu-id="2b1d8-132">MDATP_SysExt.xml</span></span> | <span data-ttu-id="2b1d8-133">該当なし</span><span class="sxs-lookup"><span data-stu-id="2b1d8-133">N/A</span></span> |
-| [<span data-ttu-id="2b1d8-134">Microsoft Defender for Endpoint のカーネル拡張機能の承認</span><span class="sxs-lookup"><span data-stu-id="2b1d8-134">Approve Kernel Extension for Microsoft Defender for Endpoint</span></span>](#download-installation-and-onboarding-packages) | <span data-ttu-id="2b1d8-135">MDATP_KExt.xml</span><span class="sxs-lookup"><span data-stu-id="2b1d8-135">MDATP_KExt.xml</span></span> | <span data-ttu-id="2b1d8-136">該当なし</span><span class="sxs-lookup"><span data-stu-id="2b1d8-136">N/A</span></span> |
-| [<span data-ttu-id="2b1d8-137">Microsoft Defender for Endpoint へのフル ディスク アクセスを許可する</span><span class="sxs-lookup"><span data-stu-id="2b1d8-137">Grant full disk access to Microsoft Defender for Endpoint</span></span>](#create-system-configuration-profiles-step-8) | <span data-ttu-id="2b1d8-138">MDATP_tcc_Catalina_or_newer.xml</span><span class="sxs-lookup"><span data-stu-id="2b1d8-138">MDATP_tcc_Catalina_or_newer.xml</span></span> | <span data-ttu-id="2b1d8-139">com.microsoft.wdav.tcc</span><span class="sxs-lookup"><span data-stu-id="2b1d8-139">com.microsoft.wdav.tcc</span></span> |
-| [<span data-ttu-id="2b1d8-140">ネットワーク拡張ポリシー</span><span class="sxs-lookup"><span data-stu-id="2b1d8-140">Network Extension policy</span></span>](#create-system-configuration-profiles-step-9) | <span data-ttu-id="2b1d8-141">MDATP_NetExt.xml</span><span class="sxs-lookup"><span data-stu-id="2b1d8-141">MDATP_NetExt.xml</span></span> | <span data-ttu-id="2b1d8-142">該当なし</span><span class="sxs-lookup"><span data-stu-id="2b1d8-142">N/A</span></span> |
-| [<span data-ttu-id="2b1d8-143">Microsoft AutoUpdate (MAU) の構成</span><span class="sxs-lookup"><span data-stu-id="2b1d8-143">Configure Microsoft AutoUpdate (MAU)</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-updates#intune) | <span data-ttu-id="2b1d8-144">MDATP_Microsoft_AutoUpdate.xml</span><span class="sxs-lookup"><span data-stu-id="2b1d8-144">MDATP_Microsoft_AutoUpdate.xml</span></span> | <span data-ttu-id="2b1d8-145">com.microsoft.autoupdate2</span><span class="sxs-lookup"><span data-stu-id="2b1d8-145">com.microsoft.autoupdate2</span></span> |
-| [<span data-ttu-id="2b1d8-146">Microsoft Defender for Endpoint 構成設定</span><span class="sxs-lookup"><span data-stu-id="2b1d8-146">Microsoft Defender for Endpoint configuration settings</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-preferences#intune-profile-1)<br/><br/> <span data-ttu-id="2b1d8-147">**注:** macOS 用のサード パーティ製 AV の実行を計画している場合は、 に設定 `passiveMode` します `true` 。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-147">**Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`.</span></span> | <span data-ttu-id="2b1d8-148">MDATP_WDAV_and_exclusion_settings_Preferences.xml</span><span class="sxs-lookup"><span data-stu-id="2b1d8-148">MDATP_WDAV_and_exclusion_settings_Preferences.xml</span></span> | <span data-ttu-id="2b1d8-149">com.microsoft.wdav</span><span class="sxs-lookup"><span data-stu-id="2b1d8-149">com.microsoft.wdav</span></span> |
-| [<span data-ttu-id="2b1d8-150">エンドポイントおよび MS AutoUpdate (MAU) 通知の Microsoft Defender の構成</span><span class="sxs-lookup"><span data-stu-id="2b1d8-150">Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications</span></span>](#create-system-configuration-profiles-step-10) | <span data-ttu-id="2b1d8-151">MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig</span><span class="sxs-lookup"><span data-stu-id="2b1d8-151">MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig</span></span> | <span data-ttu-id="2b1d8-152">com.microsoft.autoupdate2 または com.microsoft.wdav.tray</span><span class="sxs-lookup"><span data-stu-id="2b1d8-152">com.microsoft.autoupdate2 or com.microsoft.wdav.tray</span></span> |
+| [<span data-ttu-id="84d36-122">オンボーディング パッケージをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="84d36-122">Download the onboarding package</span></span>](#download-the-onboarding-package) | <span data-ttu-id="84d36-123">WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml</span><span class="sxs-lookup"><span data-stu-id="84d36-123">WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml</span></span> | <span data-ttu-id="84d36-124">com.microsoft.wdav.atp</span><span class="sxs-lookup"><span data-stu-id="84d36-124">com.microsoft.wdav.atp</span></span> |
+| [<span data-ttu-id="84d36-125">エンドポイント用 Microsoft Defender のシステム拡張機能を承認する</span><span class="sxs-lookup"><span data-stu-id="84d36-125">Approve System Extension for Microsoft Defender for Endpoint</span></span>](#approve-system-extensions) | <span data-ttu-id="84d36-126">MDATP_SysExt.xml</span><span class="sxs-lookup"><span data-stu-id="84d36-126">MDATP_SysExt.xml</span></span> | <span data-ttu-id="84d36-127">該当なし</span><span class="sxs-lookup"><span data-stu-id="84d36-127">N/A</span></span> |
+| [<span data-ttu-id="84d36-128">Microsoft Defender for Endpoint のカーネル拡張機能の承認</span><span class="sxs-lookup"><span data-stu-id="84d36-128">Approve Kernel Extension for Microsoft Defender for Endpoint</span></span>](#download-the-onboarding-package) | <span data-ttu-id="84d36-129">MDATP_KExt.xml</span><span class="sxs-lookup"><span data-stu-id="84d36-129">MDATP_KExt.xml</span></span> | <span data-ttu-id="84d36-130">該当なし</span><span class="sxs-lookup"><span data-stu-id="84d36-130">N/A</span></span> |
+| [<span data-ttu-id="84d36-131">Microsoft Defender for Endpoint へのフル ディスク アクセスを許可する</span><span class="sxs-lookup"><span data-stu-id="84d36-131">Grant full disk access to Microsoft Defender for Endpoint</span></span>](#full-disk-access) | <span data-ttu-id="84d36-132">MDATP_tcc_Catalina_or_newer.xml</span><span class="sxs-lookup"><span data-stu-id="84d36-132">MDATP_tcc_Catalina_or_newer.xml</span></span> | <span data-ttu-id="84d36-133">com.microsoft.wdav.tcc</span><span class="sxs-lookup"><span data-stu-id="84d36-133">com.microsoft.wdav.tcc</span></span> |
+| [<span data-ttu-id="84d36-134">ネットワーク拡張ポリシー</span><span class="sxs-lookup"><span data-stu-id="84d36-134">Network Extension policy</span></span>](#network-filter) | <span data-ttu-id="84d36-135">MDATP_NetExt.xml</span><span class="sxs-lookup"><span data-stu-id="84d36-135">MDATP_NetExt.xml</span></span> | <span data-ttu-id="84d36-136">該当なし</span><span class="sxs-lookup"><span data-stu-id="84d36-136">N/A</span></span> |
+| [<span data-ttu-id="84d36-137">Microsoft AutoUpdate (MAU) の構成</span><span class="sxs-lookup"><span data-stu-id="84d36-137">Configure Microsoft AutoUpdate (MAU)</span></span>](mac-updates.md#intune) | <span data-ttu-id="84d36-138">MDATP_Microsoft_AutoUpdate.xml</span><span class="sxs-lookup"><span data-stu-id="84d36-138">MDATP_Microsoft_AutoUpdate.xml</span></span> | <span data-ttu-id="84d36-139">com.microsoft.autoupdate2</span><span class="sxs-lookup"><span data-stu-id="84d36-139">com.microsoft.autoupdate2</span></span> |
+| [<span data-ttu-id="84d36-140">Microsoft Defender for Endpoint 構成設定</span><span class="sxs-lookup"><span data-stu-id="84d36-140">Microsoft Defender for Endpoint configuration settings</span></span>](mac-preferences.md#intune-profile-1)<br/><br/> <span data-ttu-id="84d36-141">**注:** macOS 用のサード パーティ製 AV の実行を計画している場合は、 に設定 `passiveMode` します `true` 。</span><span class="sxs-lookup"><span data-stu-id="84d36-141">**Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`.</span></span> | <span data-ttu-id="84d36-142">MDATP_WDAV_and_exclusion_settings_Preferences.xml</span><span class="sxs-lookup"><span data-stu-id="84d36-142">MDATP_WDAV_and_exclusion_settings_Preferences.xml</span></span> | <span data-ttu-id="84d36-143">com.microsoft.wdav</span><span class="sxs-lookup"><span data-stu-id="84d36-143">com.microsoft.wdav</span></span> |
+| [<span data-ttu-id="84d36-144">エンドポイントおよび MS AutoUpdate (MAU) 通知の Microsoft Defender の構成</span><span class="sxs-lookup"><span data-stu-id="84d36-144">Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications</span></span>](mac-updates.md) | <span data-ttu-id="84d36-145">MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig</span><span class="sxs-lookup"><span data-stu-id="84d36-145">MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig</span></span> | <span data-ttu-id="84d36-146">com.microsoft.autoupdate2 または com.microsoft.wdav.tray</span><span class="sxs-lookup"><span data-stu-id="84d36-146">com.microsoft.autoupdate2 or com.microsoft.wdav.tray</span></span> |
 
-## <a name="download-installation-and-onboarding-packages"></a><span data-ttu-id="2b1d8-153">インストール パッケージとオンボーディング パッケージのダウンロード</span><span class="sxs-lookup"><span data-stu-id="2b1d8-153">Download installation and onboarding packages</span></span>
 
-<span data-ttu-id="2b1d8-154">Microsoft Defender セキュリティ センターからインストールパッケージとオンボーディング パッケージをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-154">Download the installation and onboarding packages from Microsoft Defender Security Center:</span></span>
+## <a name="download-the-onboarding-package"></a><span data-ttu-id="84d36-147">オンボーディング パッケージをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="84d36-147">Download the onboarding package</span></span>
 
-1. <span data-ttu-id="2b1d8-155">Microsoft Defender セキュリティ センターで、[設定] **[デバイス** 管理  >  **オンボーディング]**  >  **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-155">In Microsoft Defender Security Center, go to **Settings** > **Device Management** > **Onboarding**.</span></span>
+<span data-ttu-id="84d36-148">次の方法でオンボーディング パッケージをMicrosoft Defender セキュリティ センター。</span><span class="sxs-lookup"><span data-stu-id="84d36-148">Download the onboarding packages from Microsoft Defender Security Center:</span></span>
 
-2. <span data-ttu-id="2b1d8-156">オペレーティング システムを **macOS** に設定し、展開方法を **[モバイル デバイス管理] / [Microsoft Intune] に設定します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-156">Set the operating system to **macOS** and the deployment method to **Mobile Device Management / Microsoft Intune**.</span></span>
+1. <span data-ttu-id="84d36-149">[Microsoft Defender セキュリティ センター] で、[デバイス設定  >  **オンボーディング]**  >  **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-149">In Microsoft Defender Security Center, go to **Settings** > **Device Management** > **Onboarding**.</span></span>
+
+2. <span data-ttu-id="84d36-150">オペレーティング システムを **macOS** に設定し、展開方法を [Mobile Device Management / Microsoft Intune]**に設定します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-150">Set the operating system to **macOS** and the deployment method to **Mobile Device Management / Microsoft Intune**.</span></span>
 
     ![オンボーディング設定のスクリーンショット](images/atp-mac-install.png)
 
-3. <span data-ttu-id="2b1d8-158">[インストール **パッケージのダウンロード] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-158">Select **Download installation package**.</span></span> <span data-ttu-id="2b1d8-159">_wdav.pkg としてローカル ディレクトリ_ に保存します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-159">Save it as _wdav.pkg_ to a local directory.</span></span>
+3. <span data-ttu-id="84d36-152">[オンボード **パッケージのダウンロード] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-152">Select **Download onboarding package**.</span></span> <span data-ttu-id="84d36-153">同 _じディレクトリWindowsDefenderATPOnboardingPackage.zip_ として保存します。</span><span class="sxs-lookup"><span data-stu-id="84d36-153">Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.</span></span>
 
-4. <span data-ttu-id="2b1d8-160">[オンボード **パッケージのダウンロード] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-160">Select **Download onboarding package**.</span></span> <span data-ttu-id="2b1d8-161">同 _じディレクトリWindowsDefenderATPOnboardingPackage.zip_ として保存します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-161">Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.</span></span>
-
-5. <span data-ttu-id="2b1d8-162">**IntuneAppUtil を** ダウンロードします [https://docs.microsoft.com/intune/lob-apps-macos](https://docs.microsoft.com/intune/lob-apps-macos) 。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-162">Download **IntuneAppUtil** from [https://docs.microsoft.com/intune/lob-apps-macos](https://docs.microsoft.com/intune/lob-apps-macos).</span></span>
-
-6. <span data-ttu-id="2b1d8-163">コマンド プロンプトから、3 つのファイルが存在するように確認します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-163">From a command prompt, verify that you have the three files.</span></span>
-  
-
-    ```bash
-    ls -l
-    ```
-
-    ```Output
-    total 721688
-    -rw-r--r--  1 test  staff     269280 Mar 15 11:25 IntuneAppUtil
-    -rw-r--r--  1 test  staff      11821 Mar 15 09:23 WindowsDefenderATPOnboardingPackage.zip
-    -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
-    ```
-7. <span data-ttu-id="2b1d8-164">.zip ファイルの内容を抽出します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-164">Extract the contents of the .zip files:</span></span>
+4. <span data-ttu-id="84d36-154">ファイルの内容を.zipします。</span><span class="sxs-lookup"><span data-stu-id="84d36-154">Extract the contents of the .zip file:</span></span>
 
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
@@ -109,179 +86,203 @@ ms.locfileid: "51933147"
       inflating: jamf/WindowsDefenderATPOnboarding.plist
     ```
 
-8. <span data-ttu-id="2b1d8-165">IntuneAppUtil を実行可能にする:</span><span class="sxs-lookup"><span data-stu-id="2b1d8-165">Make IntuneAppUtil an executable:</span></span>
+## <a name="create-system-configuration-profiles"></a><span data-ttu-id="84d36-155">システム構成プロファイルの作成</span><span class="sxs-lookup"><span data-stu-id="84d36-155">Create System Configuration profiles</span></span>
 
-    ```bash
-    chmod +x IntuneAppUtil
-    ```
+<span data-ttu-id="84d36-156">次の手順では、Microsoft Defender for Endpoint が必要とするシステム構成プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="84d36-156">The next step is to create system configuration profiles that Microsoft Defender for Endpoint needs.</span></span>
+<span data-ttu-id="84d36-157">管理センター [でMicrosoft エンドポイント マネージャーデバイス](https://endpoint.microsoft.com/)構成 **プロファイル**  >  **を開きます**。</span><span class="sxs-lookup"><span data-stu-id="84d36-157">In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Devices** > **Configuration profiles**.</span></span>
 
-9. <span data-ttu-id="2b1d8-166">wdav.pkg から wdav.pkg.intunemac パッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-166">Create the wdav.pkg.intunemac package from wdav.pkg:</span></span>
+### <a name="onboarding-blob"></a><span data-ttu-id="84d36-158">BLOB のオンボーディング</span><span class="sxs-lookup"><span data-stu-id="84d36-158">Onboarding blob</span></span>
 
-    ```bash
-    ./IntuneAppUtil -c wdav.pkg -o . -i "com.microsoft.wdav" -n "1.0.0"
-    ```
-    ```Output
-    Microsoft Intune Application Utility for Mac OS X
-    Version: 1.0.0.0
-    Copyright 2018 Microsoft Corporation
+<span data-ttu-id="84d36-159">このプロファイルには、Microsoft Defender for Endpoint のライセンス情報が含まれているので、ライセンスされていないと報告されます。</span><span class="sxs-lookup"><span data-stu-id="84d36-159">This profile contains a license information for Microsoft Defender for Endpoint, without it it will report that it is not licensed.</span></span>
 
-    Creating intunemac file for /Users/test/Downloads/wdav.pkg
-    Composing the intunemac file output
-    Output written to ./wdav.pkg.intunemac.
+1. <span data-ttu-id="84d36-160">[構成 **プロファイル] で [\*\*\*\*プロファイルの作成] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-160">Select **Create Profile** under **Configuration Profiles**.</span></span>
+1. <span data-ttu-id="84d36-161">[**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-161">Select **Platform**=**macOS**, **Profile type**=**Templates**.</span></span> <span data-ttu-id="84d36-162">**テンプレート名** =**カスタム**.</span><span class="sxs-lookup"><span data-stu-id="84d36-162">**Template name**=**Custom**.</span></span> <span data-ttu-id="84d36-163">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84d36-163">Click **Create**.</span></span>
 
-    IntuneAppUtil successfully processed "wdav.pkg",
-    to deploy refer to the product documentation.
-    ```
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-164">![カスタム構成プロファイルの作成](images/mdatp-6-systemconfigurationprofiles-1.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-164">![Custom Configuration Profile creation](images/mdatp-6-systemconfigurationprofiles-1.png)</span></span>
 
-## <a name="client-device-setup"></a><span data-ttu-id="2b1d8-167">クライアント デバイスのセットアップ</span><span class="sxs-lookup"><span data-stu-id="2b1d8-167">Client device setup</span></span>
+1. <span data-ttu-id="84d36-165">プロファイルの名前を選択します。たとえば、「macOS のオンボーディングMDATPを選択します。</span><span class="sxs-lookup"><span data-stu-id="84d36-165">Choose a name for the profile, e.g., "MDATP onboarding for macOS".</span></span> <span data-ttu-id="84d36-166">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84d36-166">Click **Next**.</span></span>
 
-<span data-ttu-id="2b1d8-168">標準のポータル サイトインストールを超えて Mac デバイスに対する特別なプロビジョニング [は必要ない](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-168">You don't need any special provisioning for a Mac device beyond a standard [Company Portal installation](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).</span></span>
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-167">![カスタム構成プロファイル - 名前](images/mdatp-6-systemconfigurationprofiles-2.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-167">![Custom Configuration Profile - name](images/mdatp-6-systemconfigurationprofiles-2.png)</span></span>
 
-1. <span data-ttu-id="2b1d8-169">デバイスの管理を確認します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-169">Confirm device management.</span></span>
+1. <span data-ttu-id="84d36-168">構成プロファイル名の名前を選択します。たとえば、「macOS のオンボーディングMDATPを選択します。</span><span class="sxs-lookup"><span data-stu-id="84d36-168">Choose a name for the configuration profile name, e.g., "MDATP onboarding for macOS".</span></span>
+1. <span data-ttu-id="84d36-169">構成プロファイル ファイルとしてWindowsDefenderATPOnboarding.xmlオンボーディング パッケージから抽出した intune/WindowsDefenderATPOnboarding.xmlを選択します。</span><span class="sxs-lookup"><span data-stu-id="84d36-169">Select intune/WindowsDefenderATPOnboarding.xml that you extracted from the onboarding package above as configuration profile file.</span></span>
 
-   ![デバイス管理のスクリーンショットを確認する](images/mdatp-3-confirmdevicemgmt.png)
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-170">![カスタム構成プロファイルのファイルから構成をインポートする](images/mdatp-6-systemconfigurationprofiles.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-170">![Import a configuration from a file for Custom Configuration Profile](images/mdatp-6-systemconfigurationprofiles.png)</span></span>
 
-    <span data-ttu-id="2b1d8-171">[ **システム環境設定を開く]** を選択し、一 **覧で [管理プロファイル** ] を探し、[ **承認...] を選択します**。管理プロファイルが [確認済み] **と表示されます**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-171">Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:</span></span>
+1. <span data-ttu-id="84d36-171">**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84d36-171">Click **Next**.</span></span>
+1. <span data-ttu-id="84d36-172">[割り当て] タブでデバイス **を割り当** てる。[次へ] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="84d36-172">Assign devices on the **Assignment** tab. Click **Next**.</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-173">![カスタム構成プロファイル - 割り当て](images/mdatp-6-systemconfigurationprofiles-2.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-173">![Custom Configuration Profile - assignment](images/mdatp-6-systemconfigurationprofiles-2.png)</span></span>
+
+1. <span data-ttu-id="84d36-174">レビューと **作成**.</span><span class="sxs-lookup"><span data-stu-id="84d36-174">Review and **Create**.</span></span>
+1. <span data-ttu-id="84d36-175">[**デバイス**  >  **構成プロファイル] を開** きます。作成したプロファイルを確認できます。</span><span class="sxs-lookup"><span data-stu-id="84d36-175">Open **Devices** > **Configuration profiles**, you can see your created profile there.</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-176">![カスタム構成プロファイル - 完了](images/mdatp-6-systemconfigurationprofiles-3.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-176">![Custom Configuration Profile - done](images/mdatp-6-systemconfigurationprofiles-3.png)</span></span>
+
+### <a name="approve-system-extensions"></a><span data-ttu-id="84d36-177">システム拡張機能の承認</span><span class="sxs-lookup"><span data-stu-id="84d36-177">Approve System Extensions</span></span>
+
+<span data-ttu-id="84d36-178">このプロファイルは、macOS 10.15 (Catalina) 以降に必要です。</span><span class="sxs-lookup"><span data-stu-id="84d36-178">This profile is needed for macOS 10.15 (Catalina) or newer.</span></span> <span data-ttu-id="84d36-179">古い macOS では無視されます。</span><span class="sxs-lookup"><span data-stu-id="84d36-179">It will be ignored on older macOS.</span></span>
+
+1. <span data-ttu-id="84d36-180">[構成 **プロファイル] で [\*\*\*\*プロファイルの作成] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-180">Select **Create Profile** under **Configuration Profiles**.</span></span>
+1. <span data-ttu-id="84d36-181">[**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-181">Select **Platform**=**macOS**, **Profile type**=**Templates**.</span></span> <span data-ttu-id="84d36-182">**テンプレート名** =**拡張機能**.</span><span class="sxs-lookup"><span data-stu-id="84d36-182">**Template name**=**Extensions**.</span></span> <span data-ttu-id="84d36-183">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84d36-183">Click **Create**.</span></span>
+1. <span data-ttu-id="84d36-184">[基本 **] タブ** で、この新しいプロファイルに名前を付きます。</span><span class="sxs-lookup"><span data-stu-id="84d36-184">In the **Basics** tab, give a name to this new profile.</span></span>
+1. <span data-ttu-id="84d36-185">[構成 **設定] タブで** 、[システム拡張機能] **を展開し、[** 許可されたシステム拡張機能] セクションに次 **のエントリを追加** します。</span><span class="sxs-lookup"><span data-stu-id="84d36-185">In the **Configuration settings** tab, expand **System Extensions** add the following entries in the **Allowed system extensions** section:</span></span>
+
+    <span data-ttu-id="84d36-186">バンドル識別子</span><span class="sxs-lookup"><span data-stu-id="84d36-186">Bundle identifier</span></span>         | <span data-ttu-id="84d36-187">チーム識別子</span><span class="sxs-lookup"><span data-stu-id="84d36-187">Team identifier</span></span>
+    --------------------------|----------------
+    <span data-ttu-id="84d36-188">com.microsoft.wdav.epsext</span><span class="sxs-lookup"><span data-stu-id="84d36-188">com.microsoft.wdav.epsext</span></span> | <span data-ttu-id="84d36-189">UBF8T346G9</span><span class="sxs-lookup"><span data-stu-id="84d36-189">UBF8T346G9</span></span>
+    <span data-ttu-id="84d36-190">com.microsoft.wdav.netext</span><span class="sxs-lookup"><span data-stu-id="84d36-190">com.microsoft.wdav.netext</span></span> | <span data-ttu-id="84d36-191">UBF8T346G9</span><span class="sxs-lookup"><span data-stu-id="84d36-191">UBF8T346G9</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-192">![システム拡張機能の設定](images/mac-system-extension-intune2.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-192">![System extension settings](images/mac-system-extension-intune2.png)</span></span>
+
+1. <span data-ttu-id="84d36-193">[割り **当て] タブ** で、このプロファイルを [すべてのユーザー] または **[すべての&に割り当てる] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="84d36-193">In the **Assignments** tab, assign this profile to **All Users & All devices**.</span></span>
+1. <span data-ttu-id="84d36-194">この構成プロファイルを確認して作成します。</span><span class="sxs-lookup"><span data-stu-id="84d36-194">Review and create this configuration profile.</span></span>
+
+### <a name="kernel-extensions"></a><span data-ttu-id="84d36-195">カーネル拡張機能</span><span class="sxs-lookup"><span data-stu-id="84d36-195">Kernel Extensions</span></span>
+
+<span data-ttu-id="84d36-196">このプロファイルは、macOS 10.15 (Catalina) 以上で必要です。</span><span class="sxs-lookup"><span data-stu-id="84d36-196">This profile is needed for macOS 10.15 (Catalina) or older.</span></span> <span data-ttu-id="84d36-197">新しい macOS では無視されます。</span><span class="sxs-lookup"><span data-stu-id="84d36-197">It will be ignored on newer macOS.</span></span>
+
+> [!CAUTION]
+> <span data-ttu-id="84d36-198">Apple Silicon (M1) デバイスは KEXT をサポートしていない。</span><span class="sxs-lookup"><span data-stu-id="84d36-198">Apple Silicon (M1) devices do not support KEXT.</span></span> <span data-ttu-id="84d36-199">KEXT ポリシーからなる構成プロファイルのインストールは、これらのデバイスで失敗します。</span><span class="sxs-lookup"><span data-stu-id="84d36-199">Installation of a configuration profile consisting KEXT policies will fail on these devices.</span></span>
+
+1. <span data-ttu-id="84d36-200">[構成 **プロファイル] で [\*\*\*\*プロファイルの作成] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-200">Select **Create Profile** under **Configuration Profiles**.</span></span>
+1. <span data-ttu-id="84d36-201">[**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-201">Select **Platform**=**macOS**, **Profile type**=**Templates**.</span></span> <span data-ttu-id="84d36-202">**テンプレート名** =**拡張機能**.</span><span class="sxs-lookup"><span data-stu-id="84d36-202">**Template name**=**Extensions**.</span></span> <span data-ttu-id="84d36-203">**[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84d36-203">Click **Create**.</span></span>
+1. <span data-ttu-id="84d36-204">[基本 **] タブ** で、この新しいプロファイルに名前を付きます。</span><span class="sxs-lookup"><span data-stu-id="84d36-204">In the **Basics** tab, give a name to this new profile.</span></span>
+1. <span data-ttu-id="84d36-205">[構成設定 **] タブで** 、[カーネル拡張機能 **] を展開します**。</span><span class="sxs-lookup"><span data-stu-id="84d36-205">In the **Configuration settings** tab, expand **Kernel Extensions**.</span></span>
+1. <span data-ttu-id="84d36-206">チーム **識別子を** **UBF8T346G9** に設定し、[次へ] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="84d36-206">Set **Team identifier** to **UBF8T346G9** and click **Next**.</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-207">![カーネル拡張機能の設定](images/mac-kernel-extension-intune2.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-207">![Kernel extension settings](images/mac-kernel-extension-intune2.png)</span></span>
+
+1. <span data-ttu-id="84d36-208">[割り **当て] タブ** で、このプロファイルを [すべてのユーザー] または **[すべての&に割り当てる] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="84d36-208">In the **Assignments** tab, assign this profile to **All Users & All devices**.</span></span>
+1. <span data-ttu-id="84d36-209">この構成プロファイルを確認して作成します。</span><span class="sxs-lookup"><span data-stu-id="84d36-209">Review and create this configuration profile.</span></span>
+
+### <a name="full-disk-access"></a><span data-ttu-id="84d36-210">フル ディスク アクセス</span><span class="sxs-lookup"><span data-stu-id="84d36-210">Full Disk Access</span></span>
+
+   > [!CAUTION]
+   > <span data-ttu-id="84d36-211">macOS 10.15 (Catalina) には、新しいセキュリティとプライバシーの強化が含まれている。</span><span class="sxs-lookup"><span data-stu-id="84d36-211">macOS 10.15 (Catalina) contains new security and privacy enhancements.</span></span> <span data-ttu-id="84d36-212">このバージョンでは、既定では、アプリケーションは明示的な同意なしにディスク上の特定の場所 (ドキュメント、ダウンロード、デスクトップなど) にアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="84d36-212">Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent.</span></span> <span data-ttu-id="84d36-213">この同意がない場合、Microsoft Defender for Endpoint はデバイスを完全に保護できません。</span><span class="sxs-lookup"><span data-stu-id="84d36-213">In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.</span></span>
+   >
+   > <span data-ttu-id="84d36-214">この構成プロファイルは、エンドポイント用 Microsoft Defender へのフル ディスク アクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="84d36-214">This configuration profile grants Full Disk Access to Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="84d36-215">以前に Intune を使用して Microsoft Defender for Endpoint を構成した場合は、この構成プロファイルを使用して展開を更新することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="84d36-215">If you previously configured Microsoft Defender for Endpoint through Intune, we recommend you update the deployment with this configuration profile.</span></span>
+
+<span data-ttu-id="84d36-216">[**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig)を [、GitHubリポジトリからダウンロードします](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)。</span><span class="sxs-lookup"><span data-stu-id="84d36-216">Download [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).</span></span>
+
+<span data-ttu-id="84d36-217">プロファイル名として "MDATP フル ディスク アクセス" を使用し、fulldisk.mobileconfig を構成プロファイル名としてダウンロードして、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)</span><span class="sxs-lookup"><span data-stu-id="84d36-217">Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDATP Full Disk Access" as profile name, and downloaded **fulldisk.mobileconfig** as Configuration profile name.</span></span>
+
+### <a name="network-filter"></a><span data-ttu-id="84d36-218">ネットワーク フィルター</span><span class="sxs-lookup"><span data-stu-id="84d36-218">Network Filter</span></span>
+
+<span data-ttu-id="84d36-219">エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft Defender セキュリティ センターします。</span><span class="sxs-lookup"><span data-stu-id="84d36-219">As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal.</span></span> <span data-ttu-id="84d36-220">次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。</span><span class="sxs-lookup"><span data-stu-id="84d36-220">The following policy allows the network extension to perform this functionality.</span></span>
+
+<span data-ttu-id="84d36-221">[**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig)を [、GitHubリポジトリからダウンロードします](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)。</span><span class="sxs-lookup"><span data-stu-id="84d36-221">Download [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).</span></span>
+
+<span data-ttu-id="84d36-222">プロファイル名として "MDATP ネットワーク フィルター" を使用し、構成プロファイル名としてダウンロードした **netfilter.mobileconfig** を使用して、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)</span><span class="sxs-lookup"><span data-stu-id="84d36-222">Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDATP Network Filter" as profile name, and downloaded **netfilter.mobileconfig** as Configuration profile name.</span></span>
+
+### <a name="notifications"></a><span data-ttu-id="84d36-223">通知</span><span class="sxs-lookup"><span data-stu-id="84d36-223">Notifications</span></span>
+
+<span data-ttu-id="84d36-224">このプロファイルは、macOS 上の Microsoft Defender for Endpoint と Microsoft Auto Update が macOS 10.15 (Catalina) 以降の UI で通知を表示するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="84d36-224">This profile is used to allow Microsoft Defender for Endpoint on macOS and Microsoft Auto Update to display notifications in UI on macOS 10.15 (Catalina) or newer.</span></span>
+
+<span data-ttu-id="84d36-225">ダウンロード [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) from [our GitHub リポジトリ](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).</span><span class="sxs-lookup"><span data-stu-id="84d36-225">Download [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).</span></span>
+
+<span data-ttu-id="84d36-226">プロファイル名として "MDATP ネットワーク フィルター" を使用し、構成プロファイル名として **notif.mobileconfig** をダウンロードして、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)</span><span class="sxs-lookup"><span data-stu-id="84d36-226">Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDATP Network Filter" as profile name, and downloaded **notif.mobileconfig** as Configuration profile name.</span></span>
+
+### <a name="view-status"></a><span data-ttu-id="84d36-227">状態の表示</span><span class="sxs-lookup"><span data-stu-id="84d36-227">View Status</span></span>
+
+<span data-ttu-id="84d36-228">Intune の変更が登録済みデバイスに反映された後は、[デバイスの状態の監視]の下に表示  >  **されます**。</span><span class="sxs-lookup"><span data-stu-id="84d36-228">Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:</span></span>
+
+> [!div class="mx-imgBorder"]
+> <span data-ttu-id="84d36-229">![モニターでのデバイスの状態の表示](images/mdatp-7-devicestatusblade.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-229">![View of Device Status in Monitor](images/mdatp-7-devicestatusblade.png)</span></span>
+
+## <a name="publish-application"></a><span data-ttu-id="84d36-230">アプリケーションの発行</span><span class="sxs-lookup"><span data-stu-id="84d36-230">Publish application</span></span>
+
+<span data-ttu-id="84d36-231">この手順では、登録済みコンピューターに Microsoft Defender for Endpoint を展開できます。</span><span class="sxs-lookup"><span data-stu-id="84d36-231">This step enables deploying Microsoft Defender for Endpoint to enrolled machines.</span></span>
+
+1. <span data-ttu-id="84d36-232">管理センター [でMicrosoft エンドポイント マネージャーを](https://endpoint.microsoft.com/)開 **きます**。</span><span class="sxs-lookup"><span data-stu-id="84d36-232">In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Apps**.</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-233">![アプリケーションを作成する準備ができました](images/mdatp-8-app-before.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-233">![Ready to create application](images/mdatp-8-app-before.png)</span></span>
+
+1. <span data-ttu-id="84d36-234">[プラットフォーム別] を> macOS >追加します。</span><span class="sxs-lookup"><span data-stu-id="84d36-234">Select By platform > macOS > Add.</span></span>
+1. <span data-ttu-id="84d36-235">[アプリ **の種類** = **] macOS を選択し、[** 選択]**をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="84d36-235">Choose **App type**=**macOS**, click **Select**.</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-236">![アプリケーションの種類を指定する](images/mdatp-9-app-type.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-236">![Specify application type](images/mdatp-9-app-type.png)</span></span>
+
+1. <span data-ttu-id="84d36-237">既定値を保持し、[次へ] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="84d36-237">Keep default values, click **Next**.</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-238">![アプリケーションのプロパティ](images/mdatp-10-properties.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-238">![Application properties](images/mdatp-10-properties.png)</span></span>
+
+1. <span data-ttu-id="84d36-239">割り当てを追加し、[次へ] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="84d36-239">Add assignments, click **Next**.</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-240">![Intune の割り当て情報のスクリーンショット](images/mdatp-11-assignments.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-240">![Intune assignments info screenshot](images/mdatp-11-assignments.png)</span></span>
+
+1. <span data-ttu-id="84d36-241">レビューと **作成**.</span><span class="sxs-lookup"><span data-stu-id="84d36-241">Review and **Create**.</span></span>
+1. <span data-ttu-id="84d36-242">App By   >  platform macOS **に**  >  **アクセスして**、すべてのアプリケーションの一覧に表示できます。</span><span class="sxs-lookup"><span data-stu-id="84d36-242">You can visit **Apps** > **By platform** > **macOS** to see it on the list of all applications.</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-243">![アプリケーションの一覧](images/mdatp-12-applications.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-243">![Applications list](images/mdatp-12-applications.png)</span></span>
+
+<span data-ttu-id="84d36-244">(詳細については、Intune の Defender 展開用ページ [をご覧ください](/mem/intune/apps/apps-advanced-threat-protection-macos)。)</span><span class="sxs-lookup"><span data-stu-id="84d36-244">(You can find detailed information on the [Intune's page for Defender deployment](/mem/intune/apps/apps-advanced-threat-protection-macos).)</span></span>
+
+   > [!CAUTION]
+   > <span data-ttu-id="84d36-245">上記で説明したように、必要なすべての構成プロファイルを作成し、すべてのコンピューターにプッシュする必要があります。</span><span class="sxs-lookup"><span data-stu-id="84d36-245">You have to create all required configuration profiles and push them to all machines, as explained above.</span></span>
+
+## <a name="client-device-setup"></a><span data-ttu-id="84d36-246">クライアント デバイスのセットアップ</span><span class="sxs-lookup"><span data-stu-id="84d36-246">Client device setup</span></span>
+
+<span data-ttu-id="84d36-247">標準インストール以外の Mac デバイスに対する特別なプロビジョニング[はポータル サイト必要ない](/intune-user-help/enroll-your-device-in-intune-macos-cp)。</span><span class="sxs-lookup"><span data-stu-id="84d36-247">You don't need any special provisioning for a Mac device beyond a standard [Company Portal installation](/intune-user-help/enroll-your-device-in-intune-macos-cp).</span></span>
+
+1. <span data-ttu-id="84d36-248">デバイスの管理を確認します。</span><span class="sxs-lookup"><span data-stu-id="84d36-248">Confirm device management.</span></span>
+
+    > [!div class="mx-imgBorder"]
+    > <span data-ttu-id="84d36-249">![デバイス管理のスクリーンショットを確認する](images/mdatp-3-confirmdevicemgmt.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-249">![Confirm device management screenshot](images/mdatp-3-confirmdevicemgmt.png)</span></span>
+
+    <span data-ttu-id="84d36-250">[ **システム環境設定を開く]** を選択し、一 **覧で [管理プロファイル** ] を探し、[ **承認...] を選択します**。管理プロファイルが [確認済み] **と表示されます**。</span><span class="sxs-lookup"><span data-stu-id="84d36-250">Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:</span></span>
 
     ![管理プロファイルのスクリーンショット](images/mdatp-4-managementprofile.png)
 
-2. <span data-ttu-id="2b1d8-173">[続行 **] を** 選択し、登録を完了します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-173">Select **Continue** and complete the enrollment.</span></span>
+2. <span data-ttu-id="84d36-252">[続行 **] を** 選択し、登録を完了します。</span><span class="sxs-lookup"><span data-stu-id="84d36-252">Select **Continue** and complete the enrollment.</span></span>
 
-   <span data-ttu-id="2b1d8-174">これで、より多くのデバイスを登録できます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-174">You may now enroll more devices.</span></span> <span data-ttu-id="2b1d8-175">システム構成とアプリケーション パッケージのプロビジョニングが完了したら、後で登録することもできます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-175">You can also enroll them later, after you have finished provisioning system configuration and application packages.</span></span>
+   <span data-ttu-id="84d36-253">これで、より多くのデバイスを登録できます。</span><span class="sxs-lookup"><span data-stu-id="84d36-253">You may now enroll more devices.</span></span> <span data-ttu-id="84d36-254">システム構成とアプリケーション パッケージのプロビジョニングが完了したら、後で登録することもできます。</span><span class="sxs-lookup"><span data-stu-id="84d36-254">You can also enroll them later, after you have finished provisioning system configuration and application packages.</span></span>
 
-3. <span data-ttu-id="2b1d8-176">Intune で、[デバイスの管理 **] [**  >  **すべての**  >  **デバイス] を開きます**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-176">In Intune, open **Manage** > **Devices** > **All devices**.</span></span> <span data-ttu-id="2b1d8-177">ここにリストされているデバイスの中からデバイスを確認できます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-177">Here you can see your device among those listed:</span></span>
+3. <span data-ttu-id="84d36-255">Intune で、[デバイスの管理 **] [**  >  **すべての**  >  **デバイス] を開きます**。</span><span class="sxs-lookup"><span data-stu-id="84d36-255">In Intune, open **Manage** > **Devices** > **All devices**.</span></span> <span data-ttu-id="84d36-256">ここにリストされているデバイスの中からデバイスを確認できます。</span><span class="sxs-lookup"><span data-stu-id="84d36-256">Here you can see your device among those listed:</span></span>
 
    > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="2b1d8-178">![デバイスの追加スクリーンショット](images/mdatp-5-alldevices.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-178">![Add Devices screenshot](images/mdatp-5-alldevices.png)</span></span>
+   > <span data-ttu-id="84d36-257">![デバイスの追加スクリーンショット](images/mdatp-5-alldevices.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-257">![Add Devices screenshot](images/mdatp-5-alldevices.png)</span></span>
 
-## <a name="approve-system-extensions"></a><span data-ttu-id="2b1d8-179">システム拡張機能の承認</span><span class="sxs-lookup"><span data-stu-id="2b1d8-179">Approve System Extensions</span></span>
+## <a name="verify-client-device-state"></a><span data-ttu-id="84d36-258">クライアント デバイスの状態を確認する</span><span class="sxs-lookup"><span data-stu-id="84d36-258">Verify client device state</span></span>
 
-<span data-ttu-id="2b1d8-180">システム拡張機能を承認するには、次の方法を実行します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-180">To approve the system extensions:</span></span>
-
-1. <span data-ttu-id="2b1d8-181">Intune で、[デバイス構成の **管理**  >  **] を開きます**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-181">In Intune, open **Manage** > **Device configuration**.</span></span> <span data-ttu-id="2b1d8-182">[プロファイル **の**  >  **管理] [プロファイルの**  >  **作成] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-182">Select **Manage** > **Profiles** > **Create Profile**.</span></span>
-
-2. <span data-ttu-id="2b1d8-183">プロファイルの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-183">Choose a name for the profile.</span></span> <span data-ttu-id="2b1d8-184">**Platform=macOS を Profile** **type=Extensions に変更します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-184">Change **Platform=macOS** to **Profile type=Extensions**.</span></span> <span data-ttu-id="2b1d8-185">[**作成**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-185">Select **Create**.</span></span>
-
-3. <span data-ttu-id="2b1d8-186">[基本 **] タブ** で、この新しいプロファイルに名前を付きます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-186">In the **Basics** tab, give a name to this new profile.</span></span>
-
-4. <span data-ttu-id="2b1d8-187">[構成 **設定] タブ** で、[許可されたシステム拡張機能] セクションに次 **のエントリを追加** します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-187">In the **Configuration settings** tab, add the following entries in the **Allowed system extensions** section:</span></span>
-
-    <span data-ttu-id="2b1d8-188">バンドル識別子</span><span class="sxs-lookup"><span data-stu-id="2b1d8-188">Bundle identifier</span></span>         | <span data-ttu-id="2b1d8-189">チーム識別子</span><span class="sxs-lookup"><span data-stu-id="2b1d8-189">Team identifier</span></span>
-    --------------------------|----------------
-    <span data-ttu-id="2b1d8-190">com.microsoft.wdav.epsext</span><span class="sxs-lookup"><span data-stu-id="2b1d8-190">com.microsoft.wdav.epsext</span></span> | <span data-ttu-id="2b1d8-191">UBF8T346G9</span><span class="sxs-lookup"><span data-stu-id="2b1d8-191">UBF8T346G9</span></span>
-    <span data-ttu-id="2b1d8-192">com.microsoft.wdav.netext</span><span class="sxs-lookup"><span data-stu-id="2b1d8-192">com.microsoft.wdav.netext</span></span> | <span data-ttu-id="2b1d8-193">UBF8T346G9</span><span class="sxs-lookup"><span data-stu-id="2b1d8-193">UBF8T346G9</span></span>
+1. <span data-ttu-id="84d36-259">構成プロファイルをデバイスに展開した後、Mac デバイス **で [System Preferences**  >  **Profiles]** を開きます。</span><span class="sxs-lookup"><span data-stu-id="84d36-259">After the configuration profiles are deployed to your devices, open **System Preferences** > **Profiles** on your Mac device.</span></span>
 
     > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="2b1d8-194">![[基本] タブの [構成設定] の拡張機能設定のスクリーンショット](images/mac-system-extension-intune2.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-194">![Screenshot of the extension settings in Configuration settings on the Basics tab](images/mac-system-extension-intune2.png)</span></span>
+    > <span data-ttu-id="84d36-260">![System Preferences のスクリーンショット](images/mdatp-13-systempreferences.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-260">![System Preferences screenshot](images/mdatp-13-systempreferences.png)</span></span>
 
-5. <span data-ttu-id="2b1d8-195">[割り **当て] タブ** で、このプロファイルを [すべてのユーザー] または **[すべての&に割り当てる] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-195">In the **Assignments** tab, assign this profile to **All Users & All devices**.</span></span>
+    ![System Preferences Profiles スクリーンショット](images/mdatp-14-systempreferencesprofiles.png)
 
-6. <span data-ttu-id="2b1d8-196">この構成プロファイルを確認して作成します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-196">Review and create this configuration profile.</span></span>
+2. <span data-ttu-id="84d36-262">次の構成プロファイルが存在し、インストールされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="84d36-262">Verify that the following configuration profiles are present and installed.</span></span> <span data-ttu-id="84d36-263">管理 **プロファイルは** Intune システム プロファイルである必要があります。</span><span class="sxs-lookup"><span data-stu-id="84d36-263">The **Management Profile** should be the Intune system profile.</span></span> <span data-ttu-id="84d36-264">_Wdav-config_ と _wdav-kext_ は、Intune で追加されたシステム構成プロファイルです。</span><span class="sxs-lookup"><span data-stu-id="84d36-264">_Wdav-config_ and _wdav-kext_ are system configuration profiles that were added in Intune:</span></span>
 
-## <a name="create-system-configuration-profiles"></a><span data-ttu-id="2b1d8-197">システム構成プロファイルの作成</span><span class="sxs-lookup"><span data-stu-id="2b1d8-197">Create System Configuration profiles</span></span>
+    ![プロファイルのスクリーンショット](images/mdatp-15-managementprofileconfig.png)
 
-1. <span data-ttu-id="2b1d8-198">Intune で、[デバイス構成の **管理**  >  **] を開きます**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-198">In Intune, open **Manage** > **Device configuration**.</span></span> <span data-ttu-id="2b1d8-199">[プロファイル **の**  >  **管理] [プロファイルの**  >  **作成] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-199">Select **Manage** > **Profiles** > **Create Profile**.</span></span>
-
-2. <span data-ttu-id="2b1d8-200">プロファイルの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-200">Choose a name for the profile.</span></span> <span data-ttu-id="2b1d8-201">**Platform=macOS をプロファイル\*\*\*\*の種類=カスタム に変更します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-201">Change **Platform=macOS** to **Profile type=Custom**.</span></span> <span data-ttu-id="2b1d8-202">[構成 **] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-202">Select **Configure**.</span></span>
-
-3. <span data-ttu-id="2b1d8-203">構成プロファイルを開き、intune/kext.xml。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-203">Open the configuration profile and upload intune/kext.xml.</span></span> <span data-ttu-id="2b1d8-204">このファイルは、前のセクションの 1 つで作成されました。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-204">This file was created in one of the preceding sections.</span></span>
-
-4. <span data-ttu-id="2b1d8-205">[**OK**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-205">Select **OK**.</span></span>
-
-    ![カスタム構成プロファイルのファイルから構成をインポートする](images/mdatp-6-systemconfigurationprofiles.png)
-
-5. <span data-ttu-id="2b1d8-207">[割 **り当**  >  **ての管理] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-207">Select **Manage** > **Assignments**.</span></span> <span data-ttu-id="2b1d8-208">[含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-208">In the **Include** tab, select **Assign to All Users & All devices**.</span></span>
-
-6. <span data-ttu-id="2b1d8-209">その他のプロファイルについては、手順 1 ~ 5 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-209">Repeat steps 1 through 5 for more profiles.</span></span>
-
-7. <span data-ttu-id="2b1d8-210">別のプロファイルを作成し、名前を付け、intune/WindowsDefenderATPOnboarding.xmlファイルをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-210">Create another profile, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.</span></span>
-
-8. <span data-ttu-id="2b1d8-211">**GitHub リポジトリから fulldisk.mobileconfig** を [ダウンロードし](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)、そのリポジトリ **としてtcc.xml。**</span><span class="sxs-lookup"><span data-stu-id="2b1d8-211">Download **fulldisk.mobileconfig** from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and save it as **tcc.xml**.</span></span> <span data-ttu-id="2b1d8-212">別のプロファイルを作成し、任意の名前を付け、このファイルをアップロードします。<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a></span><span class="sxs-lookup"><span data-stu-id="2b1d8-212">Create another profile, give it any name and upload this file to it.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a></span></span>
-
-   > [!CAUTION]
-   > <span data-ttu-id="2b1d8-213">macOS 10.15 (Catalina) には、新しいセキュリティとプライバシーの強化が含まれている。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-213">macOS 10.15 (Catalina) contains new security and privacy enhancements.</span></span> <span data-ttu-id="2b1d8-214">このバージョンでは、既定では、アプリケーションは明示的な同意なしにディスク上の特定の場所 (ドキュメント、ダウンロード、デスクトップなど) にアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-214">Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent.</span></span> <span data-ttu-id="2b1d8-215">この同意がない場合、Microsoft Defender for Endpoint はデバイスを完全に保護できません。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-215">In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.</span></span>
-   >
-   > <span data-ttu-id="2b1d8-216">この構成プロファイルは、エンドポイント用 Microsoft Defender へのフル ディスク アクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-216">This configuration profile grants Full Disk Access to Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="2b1d8-217">以前に Intune を使用して Microsoft Defender for Endpoint を構成した場合は、この構成プロファイルを使用して展開を更新することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-217">If you previously configured Microsoft Defender for Endpoint through Intune, we recommend you update the deployment with this configuration profile.</span></span>
-
-9. <span data-ttu-id="2b1d8-218">エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-218">As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal.</span></span> <span data-ttu-id="2b1d8-219">次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-219">The following policy allows the network extension to perform this functionality.</span></span> <span data-ttu-id="2b1d8-220">[GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)リポジトリから **netfilter.mobileconfig** をダウンロードし、netext.xmlとして保存し、前のセクションと同じ手順で展開します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-220">Download **netfilter.mobileconfig** from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig), save it as netext.xml and deploy it using the same steps as in the previous sections.</span></span> <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
-
-10. <span data-ttu-id="2b1d8-221">microsoft Defender for Endpoint on macOS および Microsoft Auto Update が macOS 10.15 (Catalina) の UI に通知を表示するには `notif.mobileconfig` [、GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) リポジトリからダウンロードし、カスタム ペイロードとしてインポートします。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-221">To allow Microsoft Defender for Endpoint on macOS and Microsoft Auto Update to display notifications in UI on macOS 10.15 (Catalina), download `notif.mobileconfig` from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) and import it as a custom payload.</span></span> <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
-
-11. <span data-ttu-id="2b1d8-222">[ **割り当ての>する] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-222">Select **Manage > Assignments**.</span></span>  <span data-ttu-id="2b1d8-223">[含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-223">In the **Include** tab, select **Assign to All Users & All devices**.</span></span>
-
-<span data-ttu-id="2b1d8-224">Intune の変更が登録済みデバイスに反映された後は、[デバイスの状態の監視]の下に表示  >  **されます**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-224">Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:</span></span>
-
-> [!div class="mx-imgBorder"]
-> <span data-ttu-id="2b1d8-225">![モニターでのデバイスの状態の表示](images/mdatp-7-devicestatusblade.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-225">![View of Device Status in Monitor](images/mdatp-7-devicestatusblade.png)</span></span>
-
-## <a name="publish-application"></a><span data-ttu-id="2b1d8-226">アプリケーションの発行</span><span class="sxs-lookup"><span data-stu-id="2b1d8-226">Publish application</span></span>
-
-1. <span data-ttu-id="2b1d8-227">Intune で、[クライアント アプリの **管理] ブレード>開** きます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-227">In Intune, open the **Manage > Client apps** blade.</span></span> <span data-ttu-id="2b1d8-228">[アプリ **と追加>を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-228">Select **Apps > Add**.</span></span>
-
-2. <span data-ttu-id="2b1d8-229">[ **アプリの種類]=[その他]/[Line-of-business アプリ]を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-229">Select **App type=Other/Line-of-business app**.</span></span>
-
-3. <span data-ttu-id="2b1d8-230">**file=wdav.pkg.intunemac を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-230">Select **file=wdav.pkg.intunemac**.</span></span> <span data-ttu-id="2b1d8-231">**[OK] を選択** してアップロードします。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-231">Select **OK** to upload.</span></span>
-
-4. <span data-ttu-id="2b1d8-232">[構成 **] を** 選択し、必要な情報を追加します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-232">Select **Configure** and add the required information.</span></span>
-
-5. <span data-ttu-id="2b1d8-233">**最小 OS として macOS High Sierra 10.14** を使用します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-233">Use **macOS High Sierra 10.14** as the minimum OS.</span></span>
-
-6. <span data-ttu-id="2b1d8-234">[アプリ *のバージョンを無視する] を* [はい] **に設定します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-234">Set *Ignore app version* to **Yes**.</span></span> <span data-ttu-id="2b1d8-235">その他の設定には任意の値を指定できます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-235">Other settings can be any arbitrary value.</span></span>
-
-    > [!CAUTION]
-    > <span data-ttu-id="2b1d8-236">[ *アプリのバージョンを無視する* ] **を [いいえ** ] に設定すると、アプリケーションが Microsoft AutoUpdate を通じて更新プログラムを受け取る機能に影響します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-236">Setting *Ignore app version* to **No** impacts the ability of the application to receive updates through Microsoft AutoUpdate.</span></span> <span data-ttu-id="2b1d8-237">製品 [の更新方法の詳細については、「MacOS](mac-updates.md) での Microsoft Defender for Endpoint の更新プログラムの展開」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-237">See [Deploy updates for Microsoft Defender for Endpoint on macOS](mac-updates.md) for additional information about how the product is updated.</span></span>
-    >
-    > <span data-ttu-id="2b1d8-238">Intune によってアップロードされたバージョンがデバイスのバージョンより低い場合は、下位バージョンがインストールされ、Microsoft Defender for Endpoint が効果的にダウングレードされます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-238">If the version uploaded by Intune is lower than the version on the device, then the lower version will be installed, effectively downgrading Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="2b1d8-239">これにより、機能しないアプリケーションが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-239">This could result in a non-functioning application.</span></span> <span data-ttu-id="2b1d8-240">製品 [の更新方法の詳細については、「MacOS](mac-updates.md) での Microsoft Defender for Endpoint の更新プログラムの展開」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-240">See [Deploy updates for Microsoft Defender for Endpoint on macOS](mac-updates.md) for additional information about how the product is updated.</span></span> <span data-ttu-id="2b1d8-241">[アプリのバージョンを無視する] が [いいえ] に設定 *されている* Microsoft Defender for Endpoint を展開した場合 **は、[は** い] に変更 **してください**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-241">If you deployed Microsoft Defender for Endpoint with *Ignore app version* set to **No**, please change it to **Yes**.</span></span> <span data-ttu-id="2b1d8-242">Microsoft Defender for Endpoint がまだクライアント デバイスにインストールできない場合は、Microsoft Defender for Endpoint をアンインストールし、更新されたポリシーをプッシュします。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-242">If Microsoft Defender for Endpoint still cannot be installed on a client device, then uninstall Microsoft Defender for Endpoint and push the updated policy.</span></span>
-     
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="2b1d8-243">![アプリの追加でのアプリ情報の表示](images/mdatp-8-intuneappinfo.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-243">![Display of App information in App add](images/mdatp-8-intuneappinfo.png)</span></span>
-
-7. <span data-ttu-id="2b1d8-244">**[OK] と [** 追加]**を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-244">Select **OK** and **Add**.</span></span>
+3. <span data-ttu-id="84d36-266">右上隅には、Microsoft Defender for Endpoint アイコンも表示されます。</span><span class="sxs-lookup"><span data-stu-id="84d36-266">You should also see the Microsoft Defender for Endpoint icon in the top-right corner:</span></span>
 
     > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="2b1d8-245">![[通知] ウィンドウに表示されるデバイスの状態](images/mdatp-9-intunepkginfo.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-245">![Device status shown in Notifications window](images/mdatp-9-intunepkginfo.png)</span></span>
+    > <span data-ttu-id="84d36-267">![ステータス バーのスクリーンショットの Microsoft Defender for Endpoint アイコン](images/mdatp-icon-bar.png)</span><span class="sxs-lookup"><span data-stu-id="84d36-267">![Microsoft Defender for Endpoint icon in status bar screenshot](images/mdatp-icon-bar.png)</span></span>
 
-8. <span data-ttu-id="2b1d8-246">パッケージのアップロードに少し時間がかかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-246">It may take a few moments to upload the package.</span></span> <span data-ttu-id="2b1d8-247">完了したら、一覧からパッケージを選択し、[割り当て] と [ **グループの追加** ] **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-247">After it's done, select the package from the list and go to **Assignments** and **Add group**.</span></span>
+## <a name="troubleshooting"></a><span data-ttu-id="84d36-268">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="84d36-268">Troubleshooting</span></span>
 
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="2b1d8-248">![クライアント アプリのスクリーンショット](images/mdatp-10-clientapps.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-248">![Client apps screenshot](images/mdatp-10-clientapps.png)</span></span>
+<span data-ttu-id="84d36-269">問題: ライセンスが見つかりません。</span><span class="sxs-lookup"><span data-stu-id="84d36-269">Issue: No license found.</span></span>
 
-9. <span data-ttu-id="2b1d8-249">[割 **り当ての種類] を [** 必須] **に変更します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-249">Change **Assignment type** to **Required**.</span></span>
+<span data-ttu-id="84d36-270">解決策: 上記の手順に従って、デバイス プロファイルを作成するには、WindowsDefenderATPOnboarding.xml。</span><span class="sxs-lookup"><span data-stu-id="84d36-270">Solution: Follow the steps above to create a device profile using WindowsDefenderATPOnboarding.xml.</span></span>
 
-10. <span data-ttu-id="2b1d8-250">[含 **まれるグループ] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-250">Select **Included Groups**.</span></span> <span data-ttu-id="2b1d8-251">[すべての **デバイスにこのアプリを必須にする]=[はい]を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-251">Select **Make this app required for all devices=Yes**.</span></span> <span data-ttu-id="2b1d8-252">[ **グループの選択] を選択** して、対象とするユーザーを含むグループを追加します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-252">Select **Select group to include** and add a group that contains the users you want to target.</span></span> <span data-ttu-id="2b1d8-253">**[OK] と [** 保存]**を選択します**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-253">Select **OK** and **Save**.</span></span>
+## <a name="logging-installation-issues"></a><span data-ttu-id="84d36-271">インストールの問題をログに記録する</span><span class="sxs-lookup"><span data-stu-id="84d36-271">Logging installation issues</span></span>
 
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="2b1d8-254">![Intune の割り当て情報のスクリーンショット](images/mdatp-11-assignments.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-254">![Intune assignments info screenshot](images/mdatp-11-assignments.png)</span></span>
+<span data-ttu-id="84d36-272">エラーが発生した場合にインストーラーによって作成される自動的に生成されたログを検索する方法の詳細については、「Logging [installation issues」を参照してください](mac-resources.md#logging-installation-issues)。</span><span class="sxs-lookup"><span data-stu-id="84d36-272">For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Logging installation issues](mac-resources.md#logging-installation-issues).</span></span>
 
-11. <span data-ttu-id="2b1d8-255">しばらくすると、アプリケーションは登録済みのすべてのデバイスに公開されます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-255">After some time the application will be published to all enrolled devices.</span></span> <span data-ttu-id="2b1d8-256">[デバイスの監視] の [**デバイスのインストール** 状態]  >  **に表示されます**。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-256">You can see it listed in **Monitor** > **Device**, under **Device install status**:</span></span>
+## <a name="uninstallation"></a><span data-ttu-id="84d36-273">アンインストール</span><span class="sxs-lookup"><span data-stu-id="84d36-273">Uninstallation</span></span>
 
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="2b1d8-257">![Intune デバイスの状態のスクリーンショット](images/mdatp-12-deviceinstall.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-257">![Intune device status screenshot](images/mdatp-12-deviceinstall.png)</span></span>
-
-## <a name="verify-client-device-state"></a><span data-ttu-id="2b1d8-258">クライアント デバイスの状態を確認する</span><span class="sxs-lookup"><span data-stu-id="2b1d8-258">Verify client device state</span></span>
-
-1. <span data-ttu-id="2b1d8-259">構成プロファイルをデバイスに展開した後、Mac デバイス **で [System Preferences**  >  **Profiles]** を開きます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-259">After the configuration profiles are deployed to your devices, open **System Preferences** > **Profiles** on your Mac device.</span></span>
-
-    <span data-ttu-id="2b1d8-260">![System Preferences のスクリーンショット](images/mdatp-13-systempreferences.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-260">![System Preferences screenshot](images/mdatp-13-systempreferences.png)</span></span><br/>
-    <span data-ttu-id="2b1d8-261">![System Preferences Profiles スクリーンショット](images/mdatp-14-systempreferencesprofiles.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-261">![System Preferences Profiles screenshot](images/mdatp-14-systempreferencesprofiles.png)</span></span>
-
-2. <span data-ttu-id="2b1d8-262">次の構成プロファイルが存在し、インストールされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-262">Verify that the following configuration profiles are present and installed.</span></span> <span data-ttu-id="2b1d8-263">管理 **プロファイルは** Intune システム プロファイルである必要があります。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-263">The **Management Profile** should be the Intune system profile.</span></span> <span data-ttu-id="2b1d8-264">_Wdav-config_ と _wdav-kext_ は、Intune で追加されたシステム構成プロファイルです。 ![ プロファイルのスクリーンショット](images/mdatp-15-managementprofileconfig.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-264">_Wdav-config_ and _wdav-kext_ are system configuration profiles that were added in Intune: ![Profiles screenshot](images/mdatp-15-managementprofileconfig.png)</span></span>
-
-3. <span data-ttu-id="2b1d8-265">右上隅に Microsoft Defender アイコンも表示されます。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-265">You should also see the Microsoft Defender icon in the top-right corner:</span></span>
-
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="2b1d8-266">![ステータス バーのスクリーンショットの Microsoft Defender アイコン](images/mdatp-icon-bar.png)</span><span class="sxs-lookup"><span data-stu-id="2b1d8-266">![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)</span></span>
-
-## <a name="troubleshooting"></a><span data-ttu-id="2b1d8-267">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="2b1d8-267">Troubleshooting</span></span>
-
-<span data-ttu-id="2b1d8-268">問題: ライセンスが見つかりません</span><span class="sxs-lookup"><span data-stu-id="2b1d8-268">Issue: No license found</span></span>
-
-<span data-ttu-id="2b1d8-269">解決策: 上記の手順に従って、デバイス プロファイルを作成しますWindowsDefenderATPOnboarding.xml</span><span class="sxs-lookup"><span data-stu-id="2b1d8-269">Solution: Follow the steps above to create a device profile using WindowsDefenderATPOnboarding.xml</span></span>
-
-## <a name="logging-installation-issues"></a><span data-ttu-id="2b1d8-270">インストールの問題をログに記録する</span><span class="sxs-lookup"><span data-stu-id="2b1d8-270">Logging installation issues</span></span>
-
-<span data-ttu-id="2b1d8-271">エラーが発生した場合にインストーラーによって作成される自動的に生成されたログを検索する方法の詳細については、「Logging [installation issues」を参照してください](mac-resources.md#logging-installation-issues)。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-271">For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Logging installation issues](mac-resources.md#logging-installation-issues).</span></span>
-
-## <a name="uninstallation"></a><span data-ttu-id="2b1d8-272">アンインストール</span><span class="sxs-lookup"><span data-stu-id="2b1d8-272">Uninstallation</span></span>
-
-<span data-ttu-id="2b1d8-273">クライアント デバイス [から](mac-resources.md#uninstalling) macOS 上の Microsoft Defender for Endpoint を削除する方法の詳細については、「アンインストール」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2b1d8-273">See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.</span></span>
+<span data-ttu-id="84d36-274">クライアント デバイス [から](mac-resources.md#uninstalling) macOS 上の Microsoft Defender for Endpoint を削除する方法の詳細については、「アンインストール」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="84d36-274">See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.</span></span>
