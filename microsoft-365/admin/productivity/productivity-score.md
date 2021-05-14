@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876133"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345240"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -63,7 +63,7 @@ ms.locfileid: "51876133"
 - Microsoft 365 アプリの正常性 (100 ポイント)
 - **最高合計得点 = 800 ポイント**
  
- 各スコア カテゴリで、組織がデジタル変革への過程において Microsoft 365 をどのように使用しているかに関するキー インジケーターを定量化します。 主要な活動の 28 日と 180 日のビューを提供します。 また、スコア計算には含まれないものの、対処すべき基本的な使用状況の統計や構成を特定するのに役立つ重要な指標も提供します。
+各スコア カテゴリで、組織がデジタル変革への過程において Microsoft 365 をどのように使用しているかに関するキー インジケーターを定量化します。 主要な活動の 28 日と 180 日のビューを提供します。 また、スコア計算には含まれないものの、対処すべき基本的な使用状況の統計や構成を特定するのに役立つ重要な指標も提供します。
 
 ### <a name="products-included-in-productivity-score"></a>生産性スコアに含まれる製品 
 
@@ -74,7 +74,7 @@ ms.locfileid: "51876133"
 
 ## <a name="prerequisites"></a>前提条件 
 
-ユーザーがデータを体験するには、Microsoft 365 for Business または Office 365 for enterprise サブスクリプションが必要です。 テナントのエンドポイント分析データについては、サブスクリプションに Microsoft Intune を追加する必要があります。 Intune は、デバイスとアプリを管理することで、組織のデータを保護するのに役立ちます。 Intune を入手したら、Intune エクスペリエンス内でエンドポイント分析を有効にできます。 [Microsoft Intune](/mem/intune/) の詳細をご覧ください。 
+ユーザーがデータを体験するには、Microsoft 365 for Business または Office 365 for enterprise サブスクリプションが必要です。 テナントのエンドポイント分析データについては、サブスクリプションに Microsoft Intune を追加する必要があります。 Intune を使用してデバイスとアプリを管理することで、組織のデータを保護できます。 Intune を入手したら、Intune エクスペリエンス内でエンドポイント分析を有効にできます。 Microsoft Intune の詳細については、「[Microsoft Intune documentation](/mem/intune/)」 を参照してください。 
 
 > [!NOTE]
 > 生産性スコア機能を取得するために、Workplace Analytics のライセンスは必要ありません。
@@ -107,7 +107,10 @@ Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** �
 
 **組織のスコア** は、パーセント値とポイントで表示されます。 分子でポイントを、分母で取得可能な最大ポイントを確認できます。
 
-**ピア ベンチマーク** を使用すると、組織のスコアを類似する別の組織と比較できます。 ユーザー エクスペリエンス カテゴリのピア ベンチマークは、同様の組織のセットでの平均測定値として計算されます。 組織のセットは、同様のライセンス ユーザー、ライセンスの種類、業界、Microsoft 365 の保有期間を持つ、同じ地域に位置する組織で構成されています。 
+**ピア ベンチマーク** を使用すると、組織のスコアを類似する別の組織と比較できます。 ユーザー エクスペリエンス カテゴリのピア ベンチマークは、同様の組織のセットでの平均測定値として計算されます。 組織のセットは、同様のライセンス ユーザー、ライセンスの種類、業界、Microsoft 365 の保有期間を持つ、同じ地域に位置する組織で構成されています。
+
+> [!NOTE]
+> Microsoft では、内部データを使用して、組織のマップ先の業界を決定します。 親組織のテナントは、親組織と同じ業界にマップされます。 組織は業界のマッピングを表示または変更できません。
 
 エンドポイント分析ピア ベンチマークには、デバイスの起動パフォーマンスの目標と、すべてのテナントから集計された中央値に基づく推奨ソフトウェア構成が含まれます。
 
@@ -158,8 +161,6 @@ Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** �
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[レポートを使用して Microsoft 365 のアクティビティを監視する](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (記事)
-
-[Microsoft 365 利用状況分析を有効にする](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (記事)
-
-[Microsoft 365 管理センターの概要](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (ビデオ)
+[レポートを使用して Microsoft 365 のアクティビティを監視する](/microsoft-365/admin/activity-reports/activity-reports) (記事)\
+[Microsoft 365 利用状況分析を有効にする](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (記事)\
+[Microsoft 365 管理センターの概要](/microsoft-365/business-video/admin-center-overview) (ビデオ)
