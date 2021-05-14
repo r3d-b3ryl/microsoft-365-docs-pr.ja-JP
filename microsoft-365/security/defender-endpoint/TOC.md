@@ -211,7 +211,7 @@
 #### [概要](next-gen-threat-and-vuln-mgt.md)
 #### [はじめに]()
 ##### [アクセス許可と前提条件](tvm-prerequisites.md)
-##### [サポート対象オペレーティング システムとプラットフォーム](tvm-supported-os.md)
+##### [サポート対象オペレーティング システムのプラットフォームと機能](tvm-supported-os.md)
 ##### [デバイス値の割り当て](tvm-assign-device-value.md)
 #### [セキュリティ体制にアクセス]()
 ##### [ダッシュボード インサイト](tvm-dashboard-insights.md)

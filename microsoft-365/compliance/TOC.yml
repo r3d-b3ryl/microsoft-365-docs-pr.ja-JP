@@ -501,9 +501,11 @@
       items:
         - name: コンテンツ検索の概要
           href: search-for-content.md
-        - name: コンテンツ検索を使う
+        - name: コンテンツを検索する
           href: content-search.md
           items:
+            - name: コンテンツ検索の機能のリファレンス
+              href: content-search-reference.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
             - name: 電子情報開示検索結果をプレビューする
@@ -663,32 +665,20 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: 単一アイテムのエラーの修復
               href: single-item-error-remediation.md
-        - name: ケースのコンテンツを収集する (プレビュー)
+        - name: ケースのコンテンツを収集する
           items:
-            - name: コレクションについて学ぶ (プレビュー)
+            - name: コレクションについて学ぶ
               href: collections-overview.md
-            - name: ドラフト コレクションを作成する (プレビュー)
+            - name: ドラフト コレクションを作成する
               href: create-draft-collection.md
-            - name: ドラフト コレクションをレビュー セットにコミットする (プレビュー)
+            - name: ドラフト コレクションをレビュー セットにコミットする
               href: commit-draft-collection.md
-            - name: コレクションの統計とレポート (プレビュー)
+            - name: コレクションの統計とレポート
               href: collection-statistics-reports.md
             - name: コレクションの検索クエリを作成する
               href: building-search-queries.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
-        - name: ケースのデータの収集
-          items:
-            - name: 検索を作成する
-              href: create-search-to-collect-data.md
-            - name: 検索クエリのビルド
-              href: building-search-queries.md
-            - name: キーワード クエリと検索条件
-              href: keyword-queries-and-search-conditions.md
-            - name: 検索の統計
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: 検索結果をレビュー セットに追加する
-              href: add-data-to-review-set.md
         - name: レビュー セットを管理する
           href: managing-review-sets.md
           items:
@@ -840,6 +830,8 @@
       items:
         - name: コンプライアンスマネージャーの詳細
           href: compliance-manager.md
+        - name: コンプライアンス マネージャーの新機能
+          href: compliance-manager-whats-new.md
         - name: コンプライアンスマネージャー用クイックスタート
           href: compliance-manager-quickstart.md
         - name: コンプライアンス マネージャーの使用を開始する
