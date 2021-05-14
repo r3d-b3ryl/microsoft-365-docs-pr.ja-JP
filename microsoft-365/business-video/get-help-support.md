@@ -21,7 +21,7 @@ search.appverid:
 description: Microsoft 365 Business Premium で管理者向けヘルプやサポートを受ける方法について説明します。
 ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
 ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/11/2021
 ms.locfileid: "52327188"
@@ -43,7 +43,7 @@ ms.locfileid: "52327188"
 
 オンラインでのお問い合わせを開始すると、時間が節約されます。ここでは、解決策の検索やテクニカル サポートへの連絡をお手伝いします。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 このページにアクセスしたり、このアクションを実行したりするためのアクセス許可が付与されていないというメッセージが表示された場合は、管理者ではない(詳細については、「自分のビジネスで管理者のアクセス許可を持っているユーザー」 [を参照](admin-center-overview.md#who-has-admin-permissions-in-my-business)してください。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーが管理者ではないことを意味します。(詳細については、「[Who has admin permissions in my business? (社内の管理者アクセス許可の所有者)](admin-center-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。)
 
 2. [**ヘルプが必要ですか?**] ボタンを選択します。 
 
@@ -215,7 +215,7 @@ Office 365 では、複数の異なる役割を持つ複数のタイプの管理
 
 ## <a name="feature-availability"></a>機能の可用性
 
-365 プラン全体で機能Officeを表示するには、「Office [365 サービスの説明」を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)。
+さまざまな Office 365 のプランで利用できる機能を確認するには、「[Office 365 サービスの説明](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)」を参照してください。
 
 ## <a name="follow-us-on-wechat"></a>WeChat でフォローしてください
 
