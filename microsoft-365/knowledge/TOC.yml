@@ -42,6 +42,8 @@
       href: topic-experiences-security-trimming.md
     - name: トピックを検索する
       href: search.md
+    - name: トピックを規模に応じて管理する
+      href: scale-topics.md
 - name: 導入
   items:
     - name: 採用の推進を開始する

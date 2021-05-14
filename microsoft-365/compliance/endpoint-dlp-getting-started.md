@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259501"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332812"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -147,7 +147,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
     - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
     - モバイルデバイス管理ツールを使用した Windows 10 マシンのオンボード
     - ローカルスクリプトを使用した Windows 10 マシンのオンボード
-    - 非永続的な仮想デスクトップインフラストラクチャ (VDI) マシンをオンボーディングします。
+    - シングル セッション シナリオでの非永続的な仮想デスクトップ インフラストラクチャ (VDI) マシンのオンボード
 
 完了後、エンドポイントがオンボードされ、デバイスリストに表示され、監査アクティビティログのActivity エクスプローラーへの報告も開始されます。
 

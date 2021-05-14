@@ -1,5 +1,5 @@
 ---
-title: コンテンツ検索の参照
+title: コンテンツ検索の機能のリファレンス
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事には、Microsoft 365 コンプライアンス センターのコンテンツ検索電子情報開示ツールに関する参照情報が含まれており、コンテンツ検索に関する多くの詳細情報を知ることができます。
-ms.openlocfilehash: c345cf00bddba30cb543ad9682a2a332607d31fe
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314317"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332896"
 ---
-# <a name="content-search-reference"></a>コンテンツ検索の参照
+# <a name="feature-reference-for-content-search"></a>コンテンツ検索の機能のリファレンス
+
+この記事では、コンテンツ検索の機能について説明します。
 
 ## <a name="content-search-limits"></a>コンテンツ検索の制限
 
@@ -71,6 +73,10 @@ ms.locfileid: "52314317"
     
 - 英語以外の文字 (中国語の文字など) のキーワードを含む検索クエリがある場合は、[**クエリ言語-国/地域**] ![コンテンツ検索のクエリ言語-国/地域アイコン](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)をクリックし、言語-国の文化コード値を選択して検索できます。 デフォルトの言語/地域はニュートラルです。 コンテンツ検索の言語設定を変更する必要があるかどうかをどのように確認できますか。 特定のコンテンツの場所に検索対象の英語以外の文字が含まれているにも関わらず検索で結果が返されない場合は、言語設定が原因である可能性があります。 
   
+## <a name="partially-indexed-items"></a>部分的にインデックスが作成されたアイテム
+
+- 予想される検索結果には、メールボックス内の部分的にインデックスが作成されたアイテムが含まれます。 SharePoint と OneDrive からの部分的にインデックスが作成されたアイテムは、予想される検索結果に含まれません。 詳細については、「[電子情報開示で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)」を参照してください。
+
 ## <a name="searching-onedrive-accounts"></a>OneDrive アカウントの検索
 
 - 組織内の OneDrive サイトの URL のリストを収集するには、「[Create a list of all OneDrive locations in your organization (組織内のすべてのOneDriveロケーションのリストを作成する)](/onedrive/list-onedrive-urls)」を参照してください。 この記事内のスクリプトは、すべての OneDrive サイトのリストを含むテキスト ファイルを作成します。 このスクリプトを実行するには、SharePoint Online 管理シェルをインストールして使用する必要があります。 検索する各 OneDrive サイトに組織の個人用サイト ドメインの URL を必ず追加してください。 これは、すべての OneDrive を含むドメインです。例: `https://contoso-my.sharepoint.com` ユーザーの OneDrive サイトの URL の例は次のとおりです。`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`
@@ -228,12 +234,6 @@ Exchange Online ライセンス (または Microsoft 365 ライセンス全体) 
 - 検索するための Exchange コンテンツの場所として、コンテンツ検索を作成して切断されたメールボックスを指定するのに **New-ComplianceSearch** コマンドレットを使用する場合は、コンテンツ検索からは切断されたメールボックスの検索結果が一切返されません。
 
 検索できるように切断されたメールボックスにデータを保持する必要がある場合は、ライセンスを削除する前に、メールボックスに保留を適用する必要があります。 これによりデータが保持され、保留が削除されるまで、切断されたメールボックスを検索できます。 保留に関する詳細情報については、[Exchange Online メールボックスに適用されている保留の種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md)をご確認ください。
-
-## <a name="partially-indexed-items"></a>部分的にインデックスが作成されたアイテム
-
-- 前述のように、メールボックス内の一部のインデックス付きアイテムは、予想される検索結果に含まれます。SharePoint サイトおよび OneDrive のサイトからの部分的にインデックスが作成されたアイテムは、予想される検索結果には含まれません。
-
-- (メッセージまたはドキュメントの他のプロパティが検索条件と一致するため) 部分的にインデックスが作成されたアイテムが検索クエリと一致する場合、そのアイテムはインデックスなしアイテムの推定数には含まれません。 部分的にインデックスが作成されたアイテムが検索条件によって除外された場合は、そのアイテムはインデックスなしアイテムの推定数には含まれません。 詳細については、「[Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)」を参照してください。
 
 ## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>SharePoint Multi-Geo 環境のコンテンツを検索する
 
