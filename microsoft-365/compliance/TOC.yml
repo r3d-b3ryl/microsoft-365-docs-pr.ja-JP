@@ -172,13 +172,11 @@
           href: office-365-service-encryption.md
         - name: 顧客キー
           items:
-            - name: 'テナント レベルの Microsoft 365 の [カスタマー]キー (パブリック プレビュー)'
-              href: customer-key-tenant-level.md
-            - name: Office 365 のカスタマー キーによるサービスの暗号化
+            - name: Microsoft 365 のカスタマー キー
               href: customer-key-overview.md
-            - name: Office 365 のカスタマー キーを設定する
+            - name: Microsoft 365 のカスタマー キーを設定する
               href: customer-key-set-up.md
-            - name: Office 365 のカスタマー キーを管理する
+            - name: Microsoft 365 のカスタマー キーを管理する
               href: customer-key-manage.md
             - name: カスタマー キーまたは可用性キーをローリングまたはローテーションする
               href: customer-key-availability-key-roll.md
