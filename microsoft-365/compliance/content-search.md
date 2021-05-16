@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用すると、さまざまな Microsoft 365 サービスでコンテンツを検索できます。
-ms.openlocfilehash: a058c07d080962723e9f6bc7a150cbfb5074e7db
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 5f48418882d5d4c7589b3ef394a0a306c0675f34
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311665"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332848"
 ---
 # <a name="create-a-content-search"></a>コンテンツ検索の作成
 
@@ -88,7 +88,7 @@ Microsoft 365 コンプライアンス センターの [**コンテンツ検索*
 7. 検索の設定を確認し (必要に応じて編集し)、検索を送信して開始します。
   
 このコンテンツ検索に再度アクセスするか、**コンテンツ検索** ページにリストされている他のコンテンツ検索にアクセスするには、検索を選択し、**[開く]** をクリックします。
-  
+
 ## <a name="next-steps"></a>次の手順
 
 コンテンツ検索を作成して実行した後に行う手順の一覧を示します。
@@ -100,3 +100,7 @@ Microsoft 365 コンプライアンス センターの [**コンテンツ検索*
 - [検索結果をエクスポートする](export-search-results.md)
 
 - [検索レポートをエクスポートする](export-a-content-search-report.md)
+
+## <a name="more-information"></a>詳細情報
+
+さまざまな Microsoft 365 サービスのコンテンツの検索といったコンテンツ検索に関する詳細情報については、「[コンテンツ検索機能のリファレンス](content-search-reference.md)」 をご覧ください。
