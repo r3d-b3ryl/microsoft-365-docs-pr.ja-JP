@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 サービスへのセキュリティで保護されたアクセスを構成する
+title: サービスへのセキュリティで保護されたアクセスMicrosoft 365構成する
 description: ベースライン、機密性の高い、機密性の高い 3 つの保護層に対して MFA、条件付きアクセス、および関連するポリシーを実装するための基準ガイダンスを見つける。
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050888"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="4053a-103">Microsoft 365 サービスへのセキュリティで保護されたアクセスを構成する</span><span class="sxs-lookup"><span data-stu-id="4053a-103">Configure secure access to Microsoft 365 services</span></span>
+# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="33e2a-103">サービスへのセキュリティで保護されたアクセスMicrosoft 365構成する</span><span class="sxs-lookup"><span data-stu-id="33e2a-103">Configure secure access to Microsoft 365 services</span></span>
 
-<span data-ttu-id="4053a-104">このソリューションは、ベースライン、機密性の高い、機密性の高い 3 つの保護層に対して MFA、条件付きアクセス、および関連するポリシーを実装するための[、"M365 ゴールデン](../security/defender-365-security/microsoft-365-policies-configurations.md)構成" に基づいて作成されています。</span><span class="sxs-lookup"><span data-stu-id="4053a-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
+<span data-ttu-id="33e2a-104">このソリューションは、ベースライン、機密性の高い、機密性の高い 3 つの保護層に対して MFA、条件付きアクセス、および関連するポリシーを実装するための[、"M365 ゴールデン](../security/defender-365-security/microsoft-365-policies-configurations.md)構成" に基づいて作成されています。</span><span class="sxs-lookup"><span data-stu-id="33e2a-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
