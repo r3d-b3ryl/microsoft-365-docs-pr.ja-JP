@@ -23,38 +23,38 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51198673"
 ---
-# <a name="advanced-hunting-using-powershell"></a><span data-ttu-id="dda10-104">PowerShell を使用した高度なハンティング</span><span class="sxs-lookup"><span data-stu-id="dda10-104">Advanced Hunting using PowerShell</span></span>
+# <a name="advanced-hunting-using-powershell"></a><span data-ttu-id="f5795-104">PowerShell を使用した高度な追求</span><span class="sxs-lookup"><span data-stu-id="f5795-104">Advanced Hunting using PowerShell</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="dda10-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="dda10-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="f5795-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="f5795-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-> <span data-ttu-id="dda10-106">Microsoft Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="dda10-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="dda10-107">無料試用版にサインアップします。</span><span class="sxs-lookup"><span data-stu-id="dda10-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="f5795-106">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="f5795-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f5795-107">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="f5795-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="dda10-108">PowerShell を使用して高度なクエリを実行する方法については [、「Advanced Hunting API」を参照してください](run-advanced-query-api.md)。</span><span class="sxs-lookup"><span data-stu-id="dda10-108">Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).</span></span>
+<span data-ttu-id="f5795-108">PowerShell を使用して高度なクエリを実行する方法については [、「Advanced Hunting API」を参照してください](run-advanced-query-api.md)。</span><span class="sxs-lookup"><span data-stu-id="f5795-108">Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).</span></span>
 
-<span data-ttu-id="dda10-109">このセクションでは、PowerShell サンプルを共有してトークンを取得し、それを使用してクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="dda10-109">In this section, we share PowerShell samples to retrieve a token and use it to run a query.</span></span>
+<span data-ttu-id="f5795-109">このセクションでは、PowerShell サンプルを共有してトークンを取得し、それを使用してクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="f5795-109">In this section, we share PowerShell samples to retrieve a token and use it to run a query.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="dda10-110">はじめに</span><span class="sxs-lookup"><span data-stu-id="dda10-110">Before you begin</span></span>
-<span data-ttu-id="dda10-111">最初にアプリを [作成する必要があります](apis-intro.md)。</span><span class="sxs-lookup"><span data-stu-id="dda10-111">You first need to [create an app](apis-intro.md).</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="f5795-110">はじめに</span><span class="sxs-lookup"><span data-stu-id="f5795-110">Before you begin</span></span>
+<span data-ttu-id="f5795-111">最初にアプリを [作成する必要があります](apis-intro.md)。</span><span class="sxs-lookup"><span data-stu-id="f5795-111">You first need to [create an app](apis-intro.md).</span></span>
 
-## <a name="preparation-instructions"></a><span data-ttu-id="dda10-112">準備手順</span><span class="sxs-lookup"><span data-stu-id="dda10-112">Preparation instructions</span></span>
+## <a name="preparation-instructions"></a><span data-ttu-id="f5795-112">準備手順</span><span class="sxs-lookup"><span data-stu-id="f5795-112">Preparation instructions</span></span>
 
-- <span data-ttu-id="dda10-113">PowerShell のウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="dda10-113">Open a PowerShell window.</span></span>
-- <span data-ttu-id="dda10-114">ポリシーで PowerShell コマンドを実行できない場合は、次のコマンドを実行できます。</span><span class="sxs-lookup"><span data-stu-id="dda10-114">If your policy does not allow you to run the PowerShell commands, you can run the below command:</span></span>
+- <span data-ttu-id="f5795-113">PowerShell のウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="f5795-113">Open a PowerShell window.</span></span>
+- <span data-ttu-id="f5795-114">ポリシーで PowerShell コマンドを実行できない場合は、次のコマンドを実行できます。</span><span class="sxs-lookup"><span data-stu-id="f5795-114">If your policy does not allow you to run the PowerShell commands, you can run the below command:</span></span>
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-><span data-ttu-id="dda10-115">詳細については [、「PowerShell のドキュメント」を参照してください。](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)</span><span class="sxs-lookup"><span data-stu-id="dda10-115">For more information, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)</span></span>
+><span data-ttu-id="f5795-115">詳細については [、「PowerShell のドキュメント」を参照してください。](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)</span><span class="sxs-lookup"><span data-stu-id="f5795-115">For more information, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)</span></span>
 
-## <a name="get-token"></a><span data-ttu-id="dda10-116">トークンの取得</span><span class="sxs-lookup"><span data-stu-id="dda10-116">Get token</span></span>
+## <a name="get-token"></a><span data-ttu-id="f5795-116">トークンの取得</span><span class="sxs-lookup"><span data-stu-id="f5795-116">Get token</span></span>
 
-- <span data-ttu-id="dda10-117">次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="dda10-117">Run the following:</span></span>
+- <span data-ttu-id="f5795-117">次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="f5795-117">Run the following:</span></span>
 
 ```
 $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID here
@@ -73,14 +73,14 @@ $response = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $body -ErrorActi
 $aadToken = $response.access_token
 ```
 
-<span data-ttu-id="dda10-118">どこ</span><span class="sxs-lookup"><span data-stu-id="dda10-118">where</span></span>
-- <span data-ttu-id="dda10-119">$tenantId: クエリを実行するテナントの ID (つまり、このテナントのデータに対してクエリが実行されます)</span><span class="sxs-lookup"><span data-stu-id="dda10-119">$tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)</span></span>
-- <span data-ttu-id="dda10-120">$appId: Azure AD アプリの ID (アプリに Defender for Endpoint への 「高度なクエリの実行」 アクセス許可が必要)</span><span class="sxs-lookup"><span data-stu-id="dda10-120">$appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)</span></span>
-- <span data-ttu-id="dda10-121">$appSecret: Azure AD アプリの秘密</span><span class="sxs-lookup"><span data-stu-id="dda10-121">$appSecret: Secret of your Azure AD app</span></span>
+<span data-ttu-id="f5795-118">どこ</span><span class="sxs-lookup"><span data-stu-id="f5795-118">where</span></span>
+- <span data-ttu-id="f5795-119">$tenantId: クエリを実行するテナントの ID (つまり、このテナントのデータに対してクエリが実行されます)</span><span class="sxs-lookup"><span data-stu-id="f5795-119">$tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)</span></span>
+- <span data-ttu-id="f5795-120">$appId: Azure AD アプリの ID (アプリに Defender for Endpoint への 「高度なクエリの実行」 アクセス許可が必要)</span><span class="sxs-lookup"><span data-stu-id="f5795-120">$appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)</span></span>
+- <span data-ttu-id="f5795-121">$appSecret: Azure AD アプリの秘密</span><span class="sxs-lookup"><span data-stu-id="f5795-121">$appSecret: Secret of your Azure AD app</span></span>
 
-## <a name="run-query"></a><span data-ttu-id="dda10-122">クエリの実行</span><span class="sxs-lookup"><span data-stu-id="dda10-122">Run query</span></span>
+## <a name="run-query"></a><span data-ttu-id="f5795-122">クエリの実行</span><span class="sxs-lookup"><span data-stu-id="f5795-122">Run query</span></span>
 
-<span data-ttu-id="dda10-123">次のクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="dda10-123">Run the following query:</span></span>
+<span data-ttu-id="f5795-123">次のクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="f5795-123">Run the following query:</span></span>
 
 ```
 $query = 'RegistryEvents | limit 10' # Paste your own query here
@@ -98,35 +98,35 @@ $results = $response.Results
 $schema = $response.Schema
 ```
 
-- <span data-ttu-id="dda10-124">$resultsクエリの結果を含む</span><span class="sxs-lookup"><span data-stu-id="dda10-124">$results contain the results of your query</span></span>
-- <span data-ttu-id="dda10-125">$schemaクエリの結果のスキーマが含まれている場合</span><span class="sxs-lookup"><span data-stu-id="dda10-125">$schema contains the schema of the results of your query</span></span>
+- <span data-ttu-id="f5795-124">$resultsクエリの結果を含む</span><span class="sxs-lookup"><span data-stu-id="f5795-124">$results contain the results of your query</span></span>
+- <span data-ttu-id="f5795-125">$schemaクエリの結果のスキーマが含まれている場合</span><span class="sxs-lookup"><span data-stu-id="f5795-125">$schema contains the schema of the results of your query</span></span>
 
-### <a name="complex-queries"></a><span data-ttu-id="dda10-126">複雑なクエリ</span><span class="sxs-lookup"><span data-stu-id="dda10-126">Complex queries</span></span>
+### <a name="complex-queries"></a><span data-ttu-id="f5795-126">複雑なクエリ</span><span class="sxs-lookup"><span data-stu-id="f5795-126">Complex queries</span></span>
 
-<span data-ttu-id="dda10-127">複雑なクエリ (または複数行クエリ) を実行する場合は、クエリをファイルに保存し、上記のサンプルの最初の行ではなく、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="dda10-127">If you want to run complex queries (or multilines queries), save your query in a file and, instead of the first line in the above sample, run the below command:</span></span>
+<span data-ttu-id="f5795-127">複雑なクエリ (または複数行クエリ) を実行する場合は、クエリをファイルに保存し、上記のサンプルの最初の行ではなく、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="f5795-127">If you want to run complex queries (or multilines queries), save your query in a file and, instead of the first line in the above sample, run the below command:</span></span>
 
 ```
 $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to your file
 ```
 
-## <a name="work-with-query-results"></a><span data-ttu-id="dda10-128">クエリ結果を操作する</span><span class="sxs-lookup"><span data-stu-id="dda10-128">Work with query results</span></span>
+## <a name="work-with-query-results"></a><span data-ttu-id="f5795-128">クエリ結果を操作する</span><span class="sxs-lookup"><span data-stu-id="f5795-128">Work with query results</span></span>
 
-<span data-ttu-id="dda10-129">これで、クエリ結果を使用できます。</span><span class="sxs-lookup"><span data-stu-id="dda10-129">You can now use the query results.</span></span>
+<span data-ttu-id="f5795-129">これで、クエリ結果を使用できます。</span><span class="sxs-lookup"><span data-stu-id="f5795-129">You can now use the query results.</span></span>
 
-<span data-ttu-id="dda10-130">クエリの結果を CSV 形式でファイル形式で出力するにはfile1.csvを実行します。</span><span class="sxs-lookup"><span data-stu-id="dda10-130">To output the results of the query in CSV format in file file1.csv do the below:</span></span>
+<span data-ttu-id="f5795-130">クエリの結果を CSV 形式でファイル形式で出力するにはfile1.csvを実行します。</span><span class="sxs-lookup"><span data-stu-id="f5795-130">To output the results of the query in CSV format in file file1.csv do the below:</span></span>
 
 ```
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-<span data-ttu-id="dda10-131">クエリの結果を JSON 形式でファイル形式で出力するには、file1.jsを実行します。</span><span class="sxs-lookup"><span data-stu-id="dda10-131">To output the results of the query in JSON format in file file1.json do the below:</span></span>
+<span data-ttu-id="f5795-131">クエリの結果を JSON 形式でファイル形式で出力するには、file1.jsを実行します。</span><span class="sxs-lookup"><span data-stu-id="f5795-131">To output the results of the query in JSON format in file file1.json do the below:</span></span>
 
 ```
 $results | ConvertTo-Json | Set-Content file1.json
 ```
 
 
-## <a name="related-topic"></a><span data-ttu-id="dda10-132">関連トピック</span><span class="sxs-lookup"><span data-stu-id="dda10-132">Related topic</span></span>
-- [<span data-ttu-id="dda10-133">エンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="dda10-133">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
-- [<span data-ttu-id="dda10-134">高度な追及 API</span><span class="sxs-lookup"><span data-stu-id="dda10-134">Advanced Hunting API</span></span>](run-advanced-query-api.md)
-- [<span data-ttu-id="dda10-135">Python を使用した高度なハンティング</span><span class="sxs-lookup"><span data-stu-id="dda10-135">Advanced Hunting using Python</span></span>](run-advanced-query-sample-python.md)
+## <a name="related-topic"></a><span data-ttu-id="f5795-132">関連トピック</span><span class="sxs-lookup"><span data-stu-id="f5795-132">Related topic</span></span>
+- [<span data-ttu-id="f5795-133">エンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="f5795-133">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
+- [<span data-ttu-id="f5795-134">高度な追及 API</span><span class="sxs-lookup"><span data-stu-id="f5795-134">Advanced Hunting API</span></span>](run-advanced-query-api.md)
+- [<span data-ttu-id="f5795-135">Python を使用した高度な追求</span><span class="sxs-lookup"><span data-stu-id="f5795-135">Advanced Hunting using Python</span></span>](run-advanced-query-sample-python.md)

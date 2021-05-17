@@ -19,16 +19,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52273022"
 ---
-# <a name="payment-information-for-qatar"></a><span data-ttu-id="f5031-103">カタールのお支払い情報</span><span class="sxs-lookup"><span data-stu-id="f5031-103">Payment information for Qatar</span></span>
+# <a name="payment-information-for-qatar"></a><span data-ttu-id="5b947-103">カタールのお支払い情報</span><span class="sxs-lookup"><span data-stu-id="5b947-103">Payment information for Qatar</span></span>
 
-<span data-ttu-id="f5031-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="f5031-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="5b947-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="5b947-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="f5031-105">請求書の送金には、USD のみ、参照請求書番号を入力してください。</span><span class="sxs-lookup"><span data-stu-id="f5031-105">Please pay in USD only and reference invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="5b947-105">請求書の送金には、USD のみ、参照請求書番号を入力してください。</span><span class="sxs-lookup"><span data-stu-id="5b947-105">Please pay in USD only and reference invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="f5031-106">電子決済</span><span class="sxs-lookup"><span data-stu-id="f5031-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="5b947-106">電子決済</span><span class="sxs-lookup"><span data-stu-id="5b947-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="f5031-107">**Bank:** シティバンク(ロンドン)</span><span class="sxs-lookup"><span data-stu-id="f5031-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="f5031-108">**SWIFT コード:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="f5031-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="f5031-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="f5031-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="f5031-110">**アカウント番号:** 12510049</span><span class="sxs-lookup"><span data-stu-id="f5031-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="f5031-111">**アカウント名:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="f5031-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="5b947-107">**Bank:** シティバンク(ロンドン)</span><span class="sxs-lookup"><span data-stu-id="5b947-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="5b947-108">**SWIFT コード:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="5b947-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="5b947-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="5b947-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="5b947-110">**アカウント番号:** 12510049</span><span class="sxs-lookup"><span data-stu-id="5b947-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="5b947-111">**アカウント名:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="5b947-111">**Account Name:** MICROSOFT</span></span>  

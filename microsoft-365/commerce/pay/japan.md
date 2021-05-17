@@ -19,18 +19,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52273514"
 ---
-# <a name="payment-information-for-japan"></a><span data-ttu-id="3903f-103">日本のお支払い情報</span><span class="sxs-lookup"><span data-stu-id="3903f-103">Payment information for Japan</span></span>
+# <a name="payment-information-for-japan"></a><span data-ttu-id="6aa75-103">日本のお支払い情報</span><span class="sxs-lookup"><span data-stu-id="6aa75-103">Payment information for Japan</span></span>
 
-<span data-ttu-id="3903f-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="3903f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="6aa75-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="6aa75-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="3903f-105">お支払いは、お支払い時にJPYのみ、請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3903f-105">Please pay in JPY only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="6aa75-105">お支払いは、お支払い時にJPYのみ、請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6aa75-105">Please pay in JPY only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="3903f-106">電子決済</span><span class="sxs-lookup"><span data-stu-id="3903f-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="6aa75-106">電子決済</span><span class="sxs-lookup"><span data-stu-id="6aa75-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="3903f-107">**Bank:** シティバンク、N.A</span><span class="sxs-lookup"><span data-stu-id="3903f-107">**Bank:** Citibank, N.A</span></span>  
-<span data-ttu-id="3903f-108">**銀行 ID:** 0401</span><span class="sxs-lookup"><span data-stu-id="3903f-108">**Bank ID:** 0401</span></span>  
-<span data-ttu-id="3903f-109">**ブランチ:** 東京支店</span><span class="sxs-lookup"><span data-stu-id="3903f-109">**Branch:** Tokyo Branch</span></span>  
-<span data-ttu-id="3903f-110">**ブランチ コード:** 730</span><span class="sxs-lookup"><span data-stu-id="3903f-110">**Branch code:** 730</span></span>  
-<span data-ttu-id="3903f-111">**SWIFT コード:** CITIJPJT</span><span class="sxs-lookup"><span data-stu-id="3903f-111">**SWIFT Code:** CITIJPJT</span></span>  
-<span data-ttu-id="3903f-112">**アカウント番号:** 160609028</span><span class="sxs-lookup"><span data-stu-id="3903f-112">**Account Number:** 160609028</span></span>  
-<span data-ttu-id="3903f-113">**アカウント名:** Microsoft Japan Co., Ltd.</span><span class="sxs-lookup"><span data-stu-id="3903f-113">**Account Name:** Microsoft Japan Co., Ltd.</span></span>
+<span data-ttu-id="6aa75-107">**Bank:** シティバンク、N.A</span><span class="sxs-lookup"><span data-stu-id="6aa75-107">**Bank:** Citibank, N.A</span></span>  
+<span data-ttu-id="6aa75-108">**銀行 ID:** 0401</span><span class="sxs-lookup"><span data-stu-id="6aa75-108">**Bank ID:** 0401</span></span>  
+<span data-ttu-id="6aa75-109">**ブランチ:** 東京支店</span><span class="sxs-lookup"><span data-stu-id="6aa75-109">**Branch:** Tokyo Branch</span></span>  
+<span data-ttu-id="6aa75-110">**ブランチ コード:** 730</span><span class="sxs-lookup"><span data-stu-id="6aa75-110">**Branch code:** 730</span></span>  
+<span data-ttu-id="6aa75-111">**SWIFT コード:** CITIJPJT</span><span class="sxs-lookup"><span data-stu-id="6aa75-111">**SWIFT Code:** CITIJPJT</span></span>  
+<span data-ttu-id="6aa75-112">**アカウント番号:** 160609028</span><span class="sxs-lookup"><span data-stu-id="6aa75-112">**Account Number:** 160609028</span></span>  
+<span data-ttu-id="6aa75-113">**アカウント名:** Microsoft Japan Co., Ltd.</span><span class="sxs-lookup"><span data-stu-id="6aa75-113">**Account Name:** Microsoft Japan Co., Ltd.</span></span>

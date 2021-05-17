@@ -22,57 +22,57 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51200367"
 ---
-# <a name="get-machines-security-states-collection-api"></a><span data-ttu-id="ad1a1-104">Get Machines セキュリティ状態コレクション API</span><span class="sxs-lookup"><span data-stu-id="ad1a1-104">Get Machines security states collection API</span></span>
+# <a name="get-machines-security-states-collection-api"></a><span data-ttu-id="aaed0-104">Get Machines セキュリティ状態コレクション API</span><span class="sxs-lookup"><span data-stu-id="aaed0-104">Get Machines security states collection API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="ad1a1-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="ad1a1-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="aaed0-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="aaed0-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="ad1a1-106">Microsoft Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="ad1a1-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="ad1a1-107">無料試用版にサインアップします。</span><span class="sxs-lookup"><span data-stu-id="ad1a1-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="aaed0-106">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="aaed0-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="aaed0-107">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="aaed0-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="ad1a1-108">デバイスのセキュリティ状態のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="ad1a1-108">Retrieves a collection of devices security states.</span></span>
+<span data-ttu-id="aaed0-108">デバイスのセキュリティ状態のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="aaed0-108">Retrieves a collection of devices security states.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ad1a1-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ad1a1-109">Permissions</span></span>
-<span data-ttu-id="ad1a1-110">ユーザーには読み取りアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="ad1a1-110">User needs read permissions.</span></span>
+## <a name="permissions"></a><span data-ttu-id="aaed0-109">権限</span><span class="sxs-lookup"><span data-stu-id="aaed0-109">Permissions</span></span>
+<span data-ttu-id="aaed0-110">ユーザーには読み取りアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="aaed0-110">User needs read permissions.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ad1a1-111">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ad1a1-111">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aaed0-111">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="aaed0-111">HTTP request</span></span>
 ```
 GET /testwdatppreview/machinesecuritystates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ad1a1-112">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ad1a1-112">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="aaed0-112">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="aaed0-112">Request headers</span></span>
 
-<span data-ttu-id="ad1a1-113">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ad1a1-113">Header</span></span> | <span data-ttu-id="ad1a1-114">値</span><span class="sxs-lookup"><span data-stu-id="ad1a1-114">Value</span></span> 
+<span data-ttu-id="aaed0-113">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="aaed0-113">Header</span></span> | <span data-ttu-id="aaed0-114">値</span><span class="sxs-lookup"><span data-stu-id="aaed0-114">Value</span></span> 
 :---|:---
-<span data-ttu-id="ad1a1-115">Authorization</span><span class="sxs-lookup"><span data-stu-id="ad1a1-115">Authorization</span></span> | <span data-ttu-id="ad1a1-116">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="ad1a1-116">Bearer {token}.</span></span> <span data-ttu-id="ad1a1-117">**必須**</span><span class="sxs-lookup"><span data-stu-id="ad1a1-117">**Required**.</span></span>
-<span data-ttu-id="ad1a1-118">コンテンツ タイプ</span><span class="sxs-lookup"><span data-stu-id="ad1a1-118">Content type</span></span> | <span data-ttu-id="ad1a1-119">application/json</span><span class="sxs-lookup"><span data-stu-id="ad1a1-119">application/json</span></span>
+<span data-ttu-id="aaed0-115">Authorization</span><span class="sxs-lookup"><span data-stu-id="aaed0-115">Authorization</span></span> | <span data-ttu-id="aaed0-116">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="aaed0-116">Bearer {token}.</span></span> <span data-ttu-id="aaed0-117">**必須**</span><span class="sxs-lookup"><span data-stu-id="aaed0-117">**Required**.</span></span>
+<span data-ttu-id="aaed0-118">コンテンツ タイプ</span><span class="sxs-lookup"><span data-stu-id="aaed0-118">Content type</span></span> | <span data-ttu-id="aaed0-119">application/json</span><span class="sxs-lookup"><span data-stu-id="aaed0-119">application/json</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="ad1a1-120">要求本文</span><span class="sxs-lookup"><span data-stu-id="ad1a1-120">Request body</span></span>
-<span data-ttu-id="ad1a1-121">Empty</span><span class="sxs-lookup"><span data-stu-id="ad1a1-121">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="aaed0-120">要求本文</span><span class="sxs-lookup"><span data-stu-id="aaed0-120">Request body</span></span>
+<span data-ttu-id="aaed0-121">Empty</span><span class="sxs-lookup"><span data-stu-id="aaed0-121">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="ad1a1-122">応答</span><span class="sxs-lookup"><span data-stu-id="ad1a1-122">Response</span></span>
-<span data-ttu-id="ad1a1-123">成功した場合 - 200 OK。</span><span class="sxs-lookup"><span data-stu-id="ad1a1-123">If successful - 200 OK.</span></span>
+## <a name="response"></a><span data-ttu-id="aaed0-122">応答</span><span class="sxs-lookup"><span data-stu-id="aaed0-122">Response</span></span>
+<span data-ttu-id="aaed0-123">成功した場合 - 200 OK。</span><span class="sxs-lookup"><span data-stu-id="aaed0-123">If successful - 200 OK.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ad1a1-124">例</span><span class="sxs-lookup"><span data-stu-id="ad1a1-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aaed0-124">例</span><span class="sxs-lookup"><span data-stu-id="aaed0-124">Example</span></span>
 
-<span data-ttu-id="ad1a1-125">**要求**</span><span class="sxs-lookup"><span data-stu-id="ad1a1-125">**Request**</span></span>
+<span data-ttu-id="aaed0-125">**要求**</span><span class="sxs-lookup"><span data-stu-id="aaed0-125">**Request**</span></span>
 
-<span data-ttu-id="ad1a1-126">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ad1a1-126">Here is an example of the request.</span></span>
+<span data-ttu-id="aaed0-126">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="aaed0-126">Here is an example of the request.</span></span>
 
 ```
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
 Content-type: application/json
 ```
 
-<span data-ttu-id="ad1a1-127">**応答**</span><span class="sxs-lookup"><span data-stu-id="ad1a1-127">**Response**</span></span>
+<span data-ttu-id="aaed0-127">**応答**</span><span class="sxs-lookup"><span data-stu-id="aaed0-127">**Response**</span></span>
 
-<span data-ttu-id="ad1a1-128">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="ad1a1-128">Here is an example of the response.</span></span>
-<span data-ttu-id="ad1a1-129">フィールド *ID には* デバイス ID が含まれるので、デバイス情報のフィールド *ID*\* と等しくなります。</span><span class="sxs-lookup"><span data-stu-id="ad1a1-129">Field *id* contains device id and equal to the field *id*\* in devices info.</span></span> 
+<span data-ttu-id="aaed0-128">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="aaed0-128">Here is an example of the response.</span></span>
+<span data-ttu-id="aaed0-129">フィールド *ID には* デバイス ID が含まれるので、デバイス情報のフィールド *ID*\* と等しくなります。</span><span class="sxs-lookup"><span data-stu-id="aaed0-129">Field *id* contains device id and equal to the field *id*\* in devices info.</span></span> 
 
 ```
 HTTP/1.1 200 OK

@@ -22,25 +22,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51206555"
 ---
-# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="60dde-103">EOP 設定を複数のテナントに適用するスクリプトのサンプル</span><span class="sxs-lookup"><span data-stu-id="60dde-103">Sample script for applying EOP settings to multiple tenants</span></span>
+# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="f0083-103">EOP 設定を複数のテナントに適用するスクリプトのサンプル</span><span class="sxs-lookup"><span data-stu-id="f0083-103">Sample script for applying EOP settings to multiple tenants</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-<span data-ttu-id="60dde-104">**適用対象**</span><span class="sxs-lookup"><span data-stu-id="60dde-104">**Applies to**</span></span>
--  [<span data-ttu-id="60dde-105">Exchange Online Protection スタンドアロン</span><span class="sxs-lookup"><span data-stu-id="60dde-105">Exchange Online Protection standalone</span></span>](exchange-online-protection-overview.md)
+<span data-ttu-id="f0083-104">**適用対象**</span><span class="sxs-lookup"><span data-stu-id="f0083-104">**Applies to**</span></span>
+-  [<span data-ttu-id="f0083-105">Exchange Online Protectionスタンドアロン</span><span class="sxs-lookup"><span data-stu-id="f0083-105">Exchange Online Protection standalone</span></span>](exchange-online-protection-overview.md)
 
-<span data-ttu-id="60dde-106">次のサンプル スクリプトでは、複数のテナント (企業) を管理する Microsoft Exchange Online Protection (EOP) 管理者が Exchange Online PowerShell を使用して、テナントに構成設定を表示および/または適用できます。</span><span class="sxs-lookup"><span data-stu-id="60dde-106">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Exchange Online PowerShell to view and/or apply configuration settings to their tenants.</span></span>
+<span data-ttu-id="f0083-106">次のサンプル スクリプトでは、複数のテナント (企業) を管理する Microsoft Exchange Online Protection (EOP) 管理者が Exchange Online PowerShell を使用して、テナントに構成設定を表示および/または適用できます。</span><span class="sxs-lookup"><span data-stu-id="f0083-106">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Exchange Online PowerShell to view and/or apply configuration settings to their tenants.</span></span>
 
-## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="60dde-107">複数のテナントでスクリプトまたはコマンドレットを実行するには</span><span class="sxs-lookup"><span data-stu-id="60dde-107">To run a script or cmdlet on multiple tenants</span></span>
+## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="f0083-107">複数のテナントでスクリプトまたはコマンドレットを実行するには</span><span class="sxs-lookup"><span data-stu-id="f0083-107">To run a script or cmdlet on multiple tenants</span></span>
 
-1. <span data-ttu-id="60dde-108">まだインストールしていない場合は [、Exchange Online V2 モジュールをインストールします](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。</span><span class="sxs-lookup"><span data-stu-id="60dde-108">If you haven't already, [install the Exchange Online V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).</span></span>
+1. <span data-ttu-id="f0083-108">まだインストールしていない場合は[、V2 モジュールExchange Onlineインストールします](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。</span><span class="sxs-lookup"><span data-stu-id="f0083-108">If you haven't already, [install the Exchange Online V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).</span></span>
 
-2. <span data-ttu-id="60dde-109">スプレッドシート アプリ (Excel など) を使用して、次の詳細を含む .csv ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="60dde-109">Using an spreadsheet app (for example, Excel), create a .csv file with the following details:</span></span>
+2. <span data-ttu-id="f0083-109">スプレッドシート アプリ (たとえば、Excel) を使用して、次.csvファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f0083-109">Using an spreadsheet app (for example, Excel), create a .csv file with the following details:</span></span>
 
-   - <span data-ttu-id="60dde-110">[UserName] 列: 接続に使用するアカウント (たとえば `admin@contoso.onmicrosoft.com` )。</span><span class="sxs-lookup"><span data-stu-id="60dde-110">UserName column: The account that you'll use to connect (for example, `admin@contoso.onmicrosoft.com`).</span></span>
-   - <span data-ttu-id="60dde-111">コマンドレット列: 実行するコマンドレットまたはコマンド (たとえば、 `Get-AcceptedDomain` または `Get-AcceptedDomain | FT Name` )。</span><span class="sxs-lookup"><span data-stu-id="60dde-111">Cmdlet column: The cmdlet or command to run (for example, `Get-AcceptedDomain` or `Get-AcceptedDomain | FT Name`).</span></span>
+   - <span data-ttu-id="f0083-110">[UserName] 列: 接続に使用するアカウント (たとえば `admin@contoso.onmicrosoft.com` )。</span><span class="sxs-lookup"><span data-stu-id="f0083-110">UserName column: The account that you'll use to connect (for example, `admin@contoso.onmicrosoft.com`).</span></span>
+   - <span data-ttu-id="f0083-111">コマンドレット列: 実行するコマンドレットまたはコマンド (たとえば、 `Get-AcceptedDomain` または `Get-AcceptedDomain | FT Name` )。</span><span class="sxs-lookup"><span data-stu-id="f0083-111">Cmdlet column: The cmdlet or command to run (for example, `Get-AcceptedDomain` or `Get-AcceptedDomain | FT Name`).</span></span>
 
-   <span data-ttu-id="60dde-112">ファイルは次のように表示されます。</span><span class="sxs-lookup"><span data-stu-id="60dde-112">The file will look like this:</span></span>
+   <span data-ttu-id="f0083-112">ファイルは次のように表示されます。</span><span class="sxs-lookup"><span data-stu-id="f0083-112">The file will look like this:</span></span>
 
    ```text
    UserName,Cmdlet
@@ -48,28 +48,28 @@ ms.locfileid: "51206555"
    admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
    ```
 
-3. <span data-ttu-id="60dde-113">.csv ファイルを見つけやすい場所に保存します (たとえば、c:\scripts\inputfile.csv)。</span><span class="sxs-lookup"><span data-stu-id="60dde-113">Save the .csv file in a location that's easy to find (for example, c:\scripts\inputfile.csv).</span></span>
+3. <span data-ttu-id="f0083-113">ファイルを.csv簡単に見つけることができる場所に保存します (たとえば、c:\scripts\inputfile.csv)。</span><span class="sxs-lookup"><span data-stu-id="f0083-113">Save the .csv file in a location that's easy to find (for example, c:\scripts\inputfile.csv).</span></span>
 
-4. <span data-ttu-id="60dde-114">メモ帳 [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) スクリプトをコピーし、ファイルを見つけやすい場所 (c:\scripts など) に保存します。</span><span class="sxs-lookup"><span data-stu-id="60dde-114">Copy the [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) script into Notepad, and then save the file to a location that's easy to find (for example, c:\scripts).</span></span>
+4. <span data-ttu-id="f0083-114">RunCmdletOnMultipleTenants.ps1スクリプト[を](#runcmdletonmultipletenantsps1)メモ帳にコピーし、ファイルを見つけやすい場所 (c:\scripts など) に保存します。</span><span class="sxs-lookup"><span data-stu-id="f0083-114">Copy the [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) script into Notepad, and then save the file to a location that's easy to find (for example, c:\scripts).</span></span>
 
-5. <span data-ttu-id="60dde-115">次の構文を使用して、スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="60dde-115">Run the script by using the following syntax:</span></span>
+5. <span data-ttu-id="f0083-115">次の構文を使用して、スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="f0083-115">Run the script by using the following syntax:</span></span>
 
    ```powershell
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
    ```
 
-   <span data-ttu-id="60dde-116">次に例を示します:</span><span class="sxs-lookup"><span data-stu-id="60dde-116">Here's an example:</span></span>
+   <span data-ttu-id="f0083-116">次に例を示します:</span><span class="sxs-lookup"><span data-stu-id="f0083-116">Here's an example:</span></span>
 
    ```powershell
    & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. <span data-ttu-id="60dde-117">各テナントにログオンし、スクリプトが実行されます。</span><span class="sxs-lookup"><span data-stu-id="60dde-117">Each tenant will be logged on to, and the script will be run.</span></span>
+6. <span data-ttu-id="f0083-117">各テナントにログオンし、スクリプトが実行されます。</span><span class="sxs-lookup"><span data-stu-id="f0083-117">Each tenant will be logged on to, and the script will be run.</span></span>
 
-## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="60dde-118">RunCmdletOnMultipleTenants.ps1</span><span class="sxs-lookup"><span data-stu-id="60dde-118">RunCmdletOnMultipleTenants.ps1</span></span>
+## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="f0083-118">RunCmdletOnMultipleTenants.ps1</span><span class="sxs-lookup"><span data-stu-id="f0083-118">RunCmdletOnMultipleTenants.ps1</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="60dde-119">環境に合わせてスクリプト内 `Connect-IPPSSession` の行を変更する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="60dde-119">You might need to modify the `Connect-IPPSSession` line in the script to match your environment.</span></span> <span data-ttu-id="60dde-120">たとえば、Office 365 ドイツでは、スクリプトの現在の値とは異なる _ConnectionUri_ 値が必要です。</span><span class="sxs-lookup"><span data-stu-id="60dde-120">For example, Office 365 Germany requires a different _ConnectionUri_ value than the current value in a script.</span></span> <span data-ttu-id="60dde-121">詳細については、「Connect to [Exchange Online Powershell」を参照してください](/powershell/exchange/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="60dde-121">For details, see Connect to [Exchange Online Powershell](/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
+> <span data-ttu-id="f0083-119">環境に合わせてスクリプト内 `Connect-IPPSSession` の行を変更する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="f0083-119">You might need to modify the `Connect-IPPSSession` line in the script to match your environment.</span></span> <span data-ttu-id="f0083-120">たとえば、ドイツOffice 365スクリプトの現在の値とは異なる _ConnectionUri_ 値が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0083-120">For example, Office 365 Germany requires a different _ConnectionUri_ value than the current value in a script.</span></span> <span data-ttu-id="f0083-121">詳細については、「Powershell のConnectをExchange Online[する」を参照してください](/powershell/exchange/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="f0083-121">For details, see Connect to [Exchange Online Powershell](/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
