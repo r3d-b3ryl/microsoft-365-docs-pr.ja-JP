@@ -19,24 +19,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296145"
 ---
-# <a name="contact-support-for-guadeloupe"></a><span data-ttu-id="7484c-103">グアドループのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="7484c-103">Contact support for Guadeloupe</span></span>
+# <a name="contact-support-for-guadeloupe"></a><span data-ttu-id="1884a-103">グアドループのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="1884a-103">Contact support for Guadeloupe</span></span>
 
-<span data-ttu-id="7484c-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="7484c-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="1884a-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="1884a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-### <a name="phone-number"></a><span data-ttu-id="7484c-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="7484c-105">Phone number</span></span>
-<span data-ttu-id="7484c-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="7484c-106">+1 312 843 5147</span></span>
+### <a name="phone-number"></a><span data-ttu-id="1884a-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="1884a-105">Phone number</span></span>
+<span data-ttu-id="1884a-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="1884a-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="7484c-107">時間</span><span class="sxs-lookup"><span data-stu-id="7484c-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="7484c-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="7484c-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1884a-107">時間</span><span class="sxs-lookup"><span data-stu-id="1884a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1884a-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="1884a-108">Billing Support:</span></span>
 
-<span data-ttu-id="7484c-109">フランス語: Mon-Fri午前 6 時</span><span class="sxs-lookup"><span data-stu-id="7484c-109">French: Mon-Fri 6 AM-noon</span></span>
+<span data-ttu-id="1884a-109">フランス語: Mon-Fri午前 6 時</span><span class="sxs-lookup"><span data-stu-id="1884a-109">French: Mon-Fri 6 AM-noon</span></span>
 
-<span data-ttu-id="7484c-110">英語: Mon-Fri午前 6 時から午後 1 時</span><span class="sxs-lookup"><span data-stu-id="7484c-110">English: Mon-Fri 6 AM-1 PM</span></span>
+<span data-ttu-id="1884a-110">英語: Mon-Fri午前 6 時から午後 1 時</span><span class="sxs-lookup"><span data-stu-id="1884a-110">English: Mon-Fri 6 AM-1 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="7484c-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="7484c-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1884a-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="1884a-111">Technical Support:</span></span>
 
-<span data-ttu-id="7484c-112">フランス語: Mon-Fri 6 AM-1 PM</span><span class="sxs-lookup"><span data-stu-id="7484c-112">French: Mon-Fri 6 AM-1 PM</span></span>
+<span data-ttu-id="1884a-112">フランス語: Mon-Fri 6 AM-1 PM</span><span class="sxs-lookup"><span data-stu-id="1884a-112">French: Mon-Fri 6 AM-1 PM</span></span>
 
-<span data-ttu-id="7484c-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="7484c-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1884a-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="1884a-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="7484c-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="7484c-114">International call charges apply</span></span>
+<span data-ttu-id="1884a-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="1884a-114">International call charges apply</span></span>

@@ -19,24 +19,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296061"
 ---
-# <a name="contact-support-for-indonesia"></a><span data-ttu-id="bd6d1-103">インドネシアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="bd6d1-103">Contact support for Indonesia</span></span>
+# <a name="contact-support-for-indonesia"></a><span data-ttu-id="b1bc5-103">インドネシアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="b1bc5-103">Contact support for Indonesia</span></span>
 
-<span data-ttu-id="bd6d1-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="bd6d1-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="b1bc5-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="b1bc5-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="bd6d1-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="bd6d1-105">Phone number</span></span>
-<span data-ttu-id="bd6d1-106">007 803 011 0882 (Telkom)</span><span class="sxs-lookup"><span data-stu-id="bd6d1-106">007 803 011 0882 (Telkom)</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b1bc5-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="b1bc5-105">Phone number</span></span>
+<span data-ttu-id="b1bc5-106">007 803 011 0882 (Telkom)</span><span class="sxs-lookup"><span data-stu-id="b1bc5-106">007 803 011 0882 (Telkom)</span></span>
 
-<span data-ttu-id="bd6d1-107">001 803 442 304 (Indosat)</span><span class="sxs-lookup"><span data-stu-id="bd6d1-107">001 803 442 304 (Indosat)</span></span>
+<span data-ttu-id="b1bc5-107">001 803 442 304 (Indosat)</span><span class="sxs-lookup"><span data-stu-id="b1bc5-107">001 803 442 304 (Indosat)</span></span>
 
-## <a name="hours"></a><span data-ttu-id="bd6d1-108">時間</span><span class="sxs-lookup"><span data-stu-id="bd6d1-108">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="bd6d1-109">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="bd6d1-109">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b1bc5-108">時間</span><span class="sxs-lookup"><span data-stu-id="b1bc5-108">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b1bc5-109">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="b1bc5-109">Billing Support:</span></span>
 
-<span data-ttu-id="bd6d1-110">Bahasa インドネシア: Mon-Fri 8 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="bd6d1-110">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
+<span data-ttu-id="b1bc5-110">Bahasa インドネシア: Mon-Fri 8 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="b1bc5-110">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
 
-<span data-ttu-id="bd6d1-111">英語: Mon-Fri午前 9 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="bd6d1-111">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="b1bc5-111">英語: Mon-Fri午前 9 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="b1bc5-111">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="bd6d1-112">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="bd6d1-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b1bc5-112">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="b1bc5-112">Technical Support:</span></span>
 
-<span data-ttu-id="bd6d1-113">Bahasa インドネシア: Mon-Fri 8 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="bd6d1-113">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
+<span data-ttu-id="b1bc5-113">Bahasa インドネシア: Mon-Fri 8 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="b1bc5-113">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
 
-<span data-ttu-id="bd6d1-114">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="bd6d1-114">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b1bc5-114">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="b1bc5-114">English: 24 hours a day, 7 days a week</span></span>

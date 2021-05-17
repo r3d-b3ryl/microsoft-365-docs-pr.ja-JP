@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296133"
 ---
-# <a name="contact-support-for-guatemala"></a><span data-ttu-id="f4e7c-103">グアテマラのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="f4e7c-103">Contact support for Guatemala</span></span>
+# <a name="contact-support-for-guatemala"></a><span data-ttu-id="1076b-103">グアテマラのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="1076b-103">Contact support for Guatemala</span></span>
 
-<span data-ttu-id="f4e7c-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="f4e7c-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="1076b-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="1076b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f4e7c-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="f4e7c-105">Phone number</span></span>
-<span data-ttu-id="f4e7c-106">1 800 300 0069</span><span class="sxs-lookup"><span data-stu-id="f4e7c-106">1 800 300 0069</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1076b-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="1076b-105">Phone number</span></span>
+<span data-ttu-id="1076b-106">1 800 300 0069</span><span class="sxs-lookup"><span data-stu-id="1076b-106">1 800 300 0069</span></span>
 
-<span data-ttu-id="f4e7c-107">オプション 4 を選択する</span><span class="sxs-lookup"><span data-stu-id="f4e7c-107">Select option 4</span></span>
+<span data-ttu-id="1076b-107">オプション 4 を選択する</span><span class="sxs-lookup"><span data-stu-id="1076b-107">Select option 4</span></span>
 
-<span data-ttu-id="f4e7c-108">コード 5002 を入力する</span><span class="sxs-lookup"><span data-stu-id="f4e7c-108">Enter code 5002</span></span>
+<span data-ttu-id="1076b-108">コード 5002 を入力する</span><span class="sxs-lookup"><span data-stu-id="1076b-108">Enter code 5002</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f4e7c-109">時間</span><span class="sxs-lookup"><span data-stu-id="f4e7c-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f4e7c-110">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="f4e7c-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1076b-109">時間</span><span class="sxs-lookup"><span data-stu-id="1076b-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1076b-110">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="1076b-110">Billing Support:</span></span>
 
-<span data-ttu-id="f4e7c-111">スペイン語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="f4e7c-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="1076b-111">スペイン語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="1076b-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f4e7c-112">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="f4e7c-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1076b-112">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="1076b-112">Technical Support:</span></span>
 
-<span data-ttu-id="f4e7c-113">スペイン語: 24 時間、週 7 日</span><span class="sxs-lookup"><span data-stu-id="f4e7c-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1076b-113">スペイン語: 24 時間、週 7 日</span><span class="sxs-lookup"><span data-stu-id="1076b-113">Spanish: 24 hours a day, 7 days a week</span></span>

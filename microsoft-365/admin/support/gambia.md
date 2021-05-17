@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296193"
 ---
-# <a name="contact-support-for-gambia"></a><span data-ttu-id="6f690-103">ガンビアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="6f690-103">Contact support for Gambia</span></span>
+# <a name="contact-support-for-gambia"></a><span data-ttu-id="f69c3-103">ガンビアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="f69c3-103">Contact support for Gambia</span></span>
 
-<span data-ttu-id="6f690-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="6f690-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="f69c3-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="f69c3-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6f690-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="6f690-105">Phone number</span></span>
-<span data-ttu-id="6f690-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="6f690-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f69c3-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="f69c3-105">Phone number</span></span>
+<span data-ttu-id="f69c3-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="f69c3-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6f690-107">時間</span><span class="sxs-lookup"><span data-stu-id="6f690-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6f690-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="6f690-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f69c3-107">時間</span><span class="sxs-lookup"><span data-stu-id="f69c3-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f69c3-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="f69c3-108">Billing Support:</span></span>
 
-<span data-ttu-id="6f690-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="6f690-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="f69c3-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="f69c3-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6f690-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="6f690-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f69c3-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="f69c3-110">Technical Support:</span></span>
 
-<span data-ttu-id="6f690-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="6f690-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f69c3-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="f69c3-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="6f690-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="6f690-112">International call charges apply</span></span>
+<span data-ttu-id="f69c3-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="f69c3-112">International call charges apply</span></span>

@@ -21,71 +21,71 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2021
 ms.locfileid: "51893343"
 ---
-# <a name="get-package-sas-uri-api"></a><span data-ttu-id="c2f3f-104">パッケージ SAS URI API の取得</span><span class="sxs-lookup"><span data-stu-id="c2f3f-104">Get package SAS URI API</span></span>
+# <a name="get-package-sas-uri-api"></a><span data-ttu-id="299c2-104">パッケージ SAS URI API の取得</span><span class="sxs-lookup"><span data-stu-id="299c2-104">Get package SAS URI API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="c2f3f-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="c2f3f-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="299c2-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="299c2-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="c2f3f-106">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="c2f3f-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="c2f3f-107">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="c2f3f-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="299c2-106">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="299c2-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="299c2-107">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="299c2-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="c2f3f-108">API の説明</span><span class="sxs-lookup"><span data-stu-id="c2f3f-108">API description</span></span>
-<span data-ttu-id="c2f3f-109">調査パッケージのダウンロードを許可する [URI を取得します](collect-investigation-package.md)。</span><span class="sxs-lookup"><span data-stu-id="c2f3f-109">Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).</span></span>
+## <a name="api-description"></a><span data-ttu-id="299c2-108">API の説明</span><span class="sxs-lookup"><span data-stu-id="299c2-108">API description</span></span>
+<span data-ttu-id="299c2-109">調査パッケージのダウンロードを許可する [URI を取得します](collect-investigation-package.md)。</span><span class="sxs-lookup"><span data-stu-id="299c2-109">Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="c2f3f-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c2f3f-110">Permissions</span></span>
-<span data-ttu-id="c2f3f-111">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="c2f3f-111">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="c2f3f-112">アクセス許可の選択方法など、詳細については [、「Access the Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="c2f3f-112">To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="299c2-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="299c2-110">Permissions</span></span>
+<span data-ttu-id="299c2-111">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="299c2-111">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="299c2-112">アクセス許可の選択方法など、詳細については [、「Access the Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="299c2-112">To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="c2f3f-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c2f3f-113">Permission type</span></span> |   <span data-ttu-id="c2f3f-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c2f3f-114">Permission</span></span>  |   <span data-ttu-id="c2f3f-115">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="c2f3f-115">Permission display name</span></span>
+<span data-ttu-id="299c2-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="299c2-113">Permission type</span></span> |   <span data-ttu-id="299c2-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="299c2-114">Permission</span></span>  |   <span data-ttu-id="299c2-115">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="299c2-115">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="c2f3f-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c2f3f-116">Application</span></span> |   <span data-ttu-id="c2f3f-117">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="c2f3f-117">Machine.CollectForensics</span></span> |  <span data-ttu-id="c2f3f-118">'collect forensics'</span><span class="sxs-lookup"><span data-stu-id="c2f3f-118">'Collect forensics'</span></span>
-<span data-ttu-id="c2f3f-119">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c2f3f-119">Delegated (work or school account)</span></span> | <span data-ttu-id="c2f3f-120">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="c2f3f-120">Machine.CollectForensics</span></span> | <span data-ttu-id="c2f3f-121">'collect forensics'</span><span class="sxs-lookup"><span data-stu-id="c2f3f-121">'Collect forensics'</span></span>
+<span data-ttu-id="299c2-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="299c2-116">Application</span></span> |   <span data-ttu-id="299c2-117">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="299c2-117">Machine.CollectForensics</span></span> |  <span data-ttu-id="299c2-118">'collect forensics'</span><span class="sxs-lookup"><span data-stu-id="299c2-118">'Collect forensics'</span></span>
+<span data-ttu-id="299c2-119">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="299c2-119">Delegated (work or school account)</span></span> | <span data-ttu-id="299c2-120">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="299c2-120">Machine.CollectForensics</span></span> | <span data-ttu-id="299c2-121">'collect forensics'</span><span class="sxs-lookup"><span data-stu-id="299c2-121">'Collect forensics'</span></span>
 
 >[!Note]
-> <span data-ttu-id="c2f3f-122">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="c2f3f-122">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="c2f3f-123">ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Alerts Investigation' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="c2f3f-123">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="c2f3f-124">ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="c2f3f-124">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="299c2-122">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="299c2-122">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="299c2-123">ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Alerts Investigation' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="299c2-123">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="299c2-124">ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="299c2-124">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c2f3f-125">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c2f3f-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="299c2-125">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="299c2-125">HTTP request</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action id}/getPackageUri
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c2f3f-126">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c2f3f-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="299c2-126">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="299c2-126">Request headers</span></span>
 
-<span data-ttu-id="c2f3f-127">名前</span><span class="sxs-lookup"><span data-stu-id="c2f3f-127">Name</span></span> | <span data-ttu-id="c2f3f-128">型</span><span class="sxs-lookup"><span data-stu-id="c2f3f-128">Type</span></span> | <span data-ttu-id="c2f3f-129">説明</span><span class="sxs-lookup"><span data-stu-id="c2f3f-129">Description</span></span>
+<span data-ttu-id="299c2-127">名前</span><span class="sxs-lookup"><span data-stu-id="299c2-127">Name</span></span> | <span data-ttu-id="299c2-128">型</span><span class="sxs-lookup"><span data-stu-id="299c2-128">Type</span></span> | <span data-ttu-id="299c2-129">説明</span><span class="sxs-lookup"><span data-stu-id="299c2-129">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="c2f3f-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="c2f3f-130">Authorization</span></span> | <span data-ttu-id="c2f3f-131">String</span><span class="sxs-lookup"><span data-stu-id="c2f3f-131">String</span></span> | <span data-ttu-id="c2f3f-132">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="c2f3f-132">Bearer {token}.</span></span> <span data-ttu-id="c2f3f-133">**必須**</span><span class="sxs-lookup"><span data-stu-id="c2f3f-133">**Required**.</span></span>
+<span data-ttu-id="299c2-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="299c2-130">Authorization</span></span> | <span data-ttu-id="299c2-131">String</span><span class="sxs-lookup"><span data-stu-id="299c2-131">String</span></span> | <span data-ttu-id="299c2-132">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="299c2-132">Bearer {token}.</span></span> <span data-ttu-id="299c2-133">**必須**</span><span class="sxs-lookup"><span data-stu-id="299c2-133">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="c2f3f-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="c2f3f-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="299c2-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="299c2-134">Request body</span></span>
 
-<span data-ttu-id="c2f3f-135">Empty</span><span class="sxs-lookup"><span data-stu-id="c2f3f-135">Empty</span></span>
+<span data-ttu-id="299c2-135">Empty</span><span class="sxs-lookup"><span data-stu-id="299c2-135">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="c2f3f-136">応答</span><span class="sxs-lookup"><span data-stu-id="c2f3f-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="299c2-136">応答</span><span class="sxs-lookup"><span data-stu-id="299c2-136">Response</span></span>
 
-<span data-ttu-id="c2f3f-137">成功した場合、このメソッドは、パッケージへのリンクを "value" パラメーターに保持するオブジェクトを持つ 200 Ok 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="c2f3f-137">If successful, this method returns 200, Ok response code with object that holds the link to the package in the “value” parameter.</span></span> <span data-ttu-id="c2f3f-138">このリンクは非常に短い時間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c2f3f-138">This link is valid for a very short time and should be used immediately for downloading the package to a local storage.</span></span>
+<span data-ttu-id="299c2-137">成功した場合、このメソッドは、パッケージへのリンクを "value" パラメーターに保持するオブジェクトを持つ 200 Ok 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="299c2-137">If successful, this method returns 200, Ok response code with object that holds the link to the package in the “value” parameter.</span></span> <span data-ttu-id="299c2-138">このリンクは非常に短い時間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="299c2-138">This link is valid for a very short time and should be used immediately for downloading the package to a local storage.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="c2f3f-139">例</span><span class="sxs-lookup"><span data-stu-id="c2f3f-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="299c2-139">例</span><span class="sxs-lookup"><span data-stu-id="299c2-139">Example</span></span>
 
-<span data-ttu-id="c2f3f-140">**要求**</span><span class="sxs-lookup"><span data-stu-id="c2f3f-140">**Request**</span></span>
+<span data-ttu-id="299c2-140">**要求**</span><span class="sxs-lookup"><span data-stu-id="299c2-140">**Request**</span></span>
 
-<span data-ttu-id="c2f3f-141">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c2f3f-141">Here is an example of the request.</span></span>
+<span data-ttu-id="299c2-141">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="299c2-141">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
 
 ```
 
-<span data-ttu-id="c2f3f-142">**応答**</span><span class="sxs-lookup"><span data-stu-id="c2f3f-142">**Response**</span></span>
+<span data-ttu-id="299c2-142">**応答**</span><span class="sxs-lookup"><span data-stu-id="299c2-142">**Response**</span></span>
 
-<span data-ttu-id="c2f3f-143">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="c2f3f-143">Here is an example of the response.</span></span>
+<span data-ttu-id="299c2-143">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="299c2-143">Here is an example of the response.</span></span>
 
 ```http
 HTTP/1.1 200 Ok
