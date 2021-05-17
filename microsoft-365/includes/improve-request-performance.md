@@ -22,7 +22,7 @@ ms.lasthandoff: 03/23/2021
 ms.locfileid: "51166750"
 ---
 >[!TIP]
-><span data-ttu-id="df8d6-104">パフォーマンスを向上するために、地理的な場所に近いサーバーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="df8d6-104">For better performance, you can use server closer to your geo location:</span></span>
-> - <span data-ttu-id="df8d6-105">api-us.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="df8d6-105">api-us.securitycenter.microsoft.com</span></span>
-> - <span data-ttu-id="df8d6-106">api-eu.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="df8d6-106">api-eu.securitycenter.microsoft.com</span></span>
-> - <span data-ttu-id="df8d6-107">api-uk.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="df8d6-107">api-uk.securitycenter.microsoft.com</span></span>
+><span data-ttu-id="c9b48-104">パフォーマンスを向上するために、地理的な場所に近いサーバーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="c9b48-104">For better performance, you can use server closer to your geo location:</span></span>
+> - <span data-ttu-id="c9b48-105">api-us.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="c9b48-105">api-us.securitycenter.microsoft.com</span></span>
+> - <span data-ttu-id="c9b48-106">api-eu.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="c9b48-106">api-eu.securitycenter.microsoft.com</span></span>
+> - <span data-ttu-id="c9b48-107">api-uk.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="c9b48-107">api-uk.securitycenter.microsoft.com</span></span>

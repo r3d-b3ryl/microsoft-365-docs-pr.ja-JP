@@ -22,22 +22,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51197959"
 ---
-# <a name="user-resource-type"></a><span data-ttu-id="d8da5-104">ユーザー リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d8da5-104">User resource type</span></span>
+# <a name="user-resource-type"></a><span data-ttu-id="9bf31-104">ユーザー リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9bf31-104">User resource type</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="d8da5-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="d8da5-105">**Applies to:**</span></span>
-- [<span data-ttu-id="d8da5-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="d8da5-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [<span data-ttu-id="d8da5-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d8da5-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="9bf31-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="9bf31-105">**Applies to:**</span></span>
+- [<span data-ttu-id="9bf31-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="9bf31-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [<span data-ttu-id="9bf31-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9bf31-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="d8da5-108">Microsoft Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="d8da5-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="d8da5-109">無料試用版にサインアップします。</span><span class="sxs-lookup"><span data-stu-id="d8da5-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="9bf31-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="9bf31-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="9bf31-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="9bf31-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-<span data-ttu-id="d8da5-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="d8da5-110">Method</span></span>|<span data-ttu-id="d8da5-111">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="d8da5-111">Return Type</span></span> |<span data-ttu-id="d8da5-112">説明</span><span class="sxs-lookup"><span data-stu-id="d8da5-112">Description</span></span>
+<span data-ttu-id="9bf31-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="9bf31-110">Method</span></span>|<span data-ttu-id="9bf31-111">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="9bf31-111">Return Type</span></span> |<span data-ttu-id="9bf31-112">説明</span><span class="sxs-lookup"><span data-stu-id="9bf31-112">Description</span></span>
 :---|:---|:---
-[<span data-ttu-id="d8da5-113">ユーザー関連のアラートの一覧表示</span><span class="sxs-lookup"><span data-stu-id="d8da5-113">List User related alerts</span></span>](get-user-related-alerts.md) | <span data-ttu-id="d8da5-114">[alert](alerts.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="d8da5-114">[alert](alerts.md) collection</span></span> |  <span data-ttu-id="d8da5-115">ユーザーに関連付けられているすべてのアラートを一覧表示 [します](user.md)。</span><span class="sxs-lookup"><span data-stu-id="d8da5-115">List all the alerts that are associated with a [user](user.md).</span></span>
-[<span data-ttu-id="d8da5-116">リスト ユーザー関連のデバイス</span><span class="sxs-lookup"><span data-stu-id="d8da5-116">List User related devices</span></span>](get-user-related-machines.md) | <span data-ttu-id="d8da5-117">[machine](machine.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="d8da5-117">[machine](machine.md) collection</span></span> | <span data-ttu-id="d8da5-118">ユーザーがログオンしていたすべてのデバイスを一覧表示 [します](user.md)。</span><span class="sxs-lookup"><span data-stu-id="d8da5-118">List all the devices that were logged on by a [user](user.md).</span></span>
+[<span data-ttu-id="9bf31-113">ユーザー関連のアラートの一覧表示</span><span class="sxs-lookup"><span data-stu-id="9bf31-113">List User related alerts</span></span>](get-user-related-alerts.md) | <span data-ttu-id="9bf31-114">[alert](alerts.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="9bf31-114">[alert](alerts.md) collection</span></span> |  <span data-ttu-id="9bf31-115">ユーザーに関連付けられているすべてのアラートを一覧表示 [します](user.md)。</span><span class="sxs-lookup"><span data-stu-id="9bf31-115">List all the alerts that are associated with a [user](user.md).</span></span>
+[<span data-ttu-id="9bf31-116">リスト ユーザー関連のデバイス</span><span class="sxs-lookup"><span data-stu-id="9bf31-116">List User related devices</span></span>](get-user-related-machines.md) | <span data-ttu-id="9bf31-117">[machine](machine.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="9bf31-117">[machine](machine.md) collection</span></span> | <span data-ttu-id="9bf31-118">ユーザーがログオンしていたすべてのデバイスを一覧表示 [します](user.md)。</span><span class="sxs-lookup"><span data-stu-id="9bf31-118">List all the devices that were logged on by a [user](user.md).</span></span>

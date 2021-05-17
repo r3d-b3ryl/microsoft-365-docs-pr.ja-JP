@@ -28,15 +28,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51064595"
 ---
-# <a name="remove-existing-licenses"></a><span data-ttu-id="643ce-103">既存のライセンスを削除する</span><span class="sxs-lookup"><span data-stu-id="643ce-103">Remove existing licenses</span></span>
+# <a name="remove-existing-licenses"></a><span data-ttu-id="1f869-103">既存のライセンスを削除する</span><span class="sxs-lookup"><span data-stu-id="1f869-103">Remove existing licenses</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r?autoplay=false]
 
-<span data-ttu-id="643ce-104">サブスクリプションに必要な数を超えるライセンスがある場合は、ライセンス数と毎月のコストを削減できます。</span><span class="sxs-lookup"><span data-stu-id="643ce-104">If you have more licenses than you need for your subscription, you can reduce the number of licenses and your monthly costs.</span></span> 
+<span data-ttu-id="1f869-104">サブスクリプションに必要な数を超えるライセンスがある場合は、ライセンス数と毎月のコストを削減できます。</span><span class="sxs-lookup"><span data-stu-id="1f869-104">If you have more licenses than you need for your subscription, you can reduce the number of licenses and your monthly costs.</span></span> 
 
-## <a name="try-it"></a><span data-ttu-id="643ce-105">お試しください!</span><span class="sxs-lookup"><span data-stu-id="643ce-105">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="1f869-105">お試しください!</span><span class="sxs-lookup"><span data-stu-id="1f869-105">Try it!</span></span>
  
-1. <span data-ttu-id="643ce-106">管理センター [で、[製品](https://admin.microsoft.com)の **請求**]  >  **を選択** し、サブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="643ce-106">In the [admin center](https://admin.microsoft.com), choose **Billing** > **Your products**, and then select your subscription.</span></span>
-1. <span data-ttu-id="643ce-107">[ライセンス **の削除] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="643ce-107">Choose **Remove licenses**.</span></span>
-1. <span data-ttu-id="643ce-108">下矢印を使用してライセンス数を減らします。</span><span class="sxs-lookup"><span data-stu-id="643ce-108">Use the down arrow to reduce the number of licenses.</span></span>
-1. <span data-ttu-id="643ce-109">[保存 **] を** 選択し、ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="643ce-109">Select **Save**, and then close the window.</span></span>
+1. <span data-ttu-id="1f869-106">管理センター [で、[製品](https://admin.microsoft.com)の **請求**]  >  **を選択** し、サブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="1f869-106">In the [admin center](https://admin.microsoft.com), choose **Billing** > **Your products**, and then select your subscription.</span></span>
+1. <span data-ttu-id="1f869-107">[ライセンス **の削除] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="1f869-107">Choose **Remove licenses**.</span></span>
+1. <span data-ttu-id="1f869-108">下矢印を使用してライセンス数を減らします。</span><span class="sxs-lookup"><span data-stu-id="1f869-108">Use the down arrow to reduce the number of licenses.</span></span>
+1. <span data-ttu-id="1f869-109">[保存 **] を** 選択し、ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="1f869-109">Select **Save**, and then close the window.</span></span>

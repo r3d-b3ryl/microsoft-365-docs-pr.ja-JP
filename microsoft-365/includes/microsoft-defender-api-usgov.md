@@ -22,4 +22,4 @@ ms.lasthandoff: 03/25/2021
 ms.locfileid: "51197791"
 ---
 >[!NOTE]
-><span data-ttu-id="d2eda-104">米国政府機関のお客様の場合は、Microsoft Defender for Endpoint for US Government のお客様に記載されている URI [を使用してください](/microsoft-365/security/defender-endpoint/gov#api)。</span><span class="sxs-lookup"><span data-stu-id="d2eda-104">If you are a US Government customer, please use the URIs listed in [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov#api).</span></span>
+><span data-ttu-id="1cfb3-104">米国政府機関のお客様の場合は、Microsoft Defender for Endpoint for US Government のお客様に記載されている URI [を使用してください](/microsoft-365/security/defender-endpoint/gov#api)。</span><span class="sxs-lookup"><span data-stu-id="1cfb3-104">If you are a US Government customer, please use the URIs listed in [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov#api).</span></span>
