@@ -14,7 +14,7 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 365 で不正な同意許可攻撃を認識して修復するMicrosoft Officeします。
+description: 不正な同意が攻撃を許可することを認識して修復する方法については、Microsoft Office 365。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -33,9 +33,9 @@ ms.locfileid: "51644682"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-**概要**  365 で不正な同意許可攻撃を認識して修復する方法Officeします。
+**概要** 不正な同意が攻撃を許可することを認識して修復する方法については、Office 365。
 
-## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>365 の不正な同意付与攻撃Office。
+## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>不正な同意許可攻撃とは何Office 365?
 
 不正な同意許可攻撃では、攻撃者は連絡先情報、電子メール、ドキュメントなどのデータへのアクセスを要求する Azure 登録アプリケーションを作成します。 その後、攻撃者はエンド ユーザーに対して、フィッシング攻撃を通じて、または信頼できる Web サイトに不正なコードを挿入することで、アプリケーションが自分のデータにアクセスする同意を与える方法を悪用します。 不正なアプリケーションに同意が付与された後、組織のアカウントを必要とせずに、アカウント レベルでデータにアクセスできます。 侵害されたアカウントのパスワードのリセットやアカウントでの多要素認証 (MFA) の要求など、通常の修復手順は、サード パーティ製のアプリケーションであり、組織の外部であるため、この種類の攻撃に対して有効ではありません。
 
@@ -44,7 +44,7 @@ ms.locfileid: "51644682"
 > [!IMPORTANT]
 > アプリからの不正な同意許可に問題が発生している疑いはありますか。 Microsoft Cloud App Security (MCAS) には、OAuth アプリを検出、調査、修復するためのツールがあります。 この MCAS の記事には、リスクの高い [OAuth](/cloud-app-security/investigate-risky-oauth)アプリの調査について説明するチュートリアルがあります。 [また、OAuth](/cloud-app-security/app-permission-policy)アプリ ポリシーを設定して、これらのアプリを承認しているアプリ要求のアクセス許可を調査し、これらのアクセス許可要求を広く承認または禁止することもできます。
 
-## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>365 の不正な同意付与攻撃Office。
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>不正な同意許可攻撃は、このサイトでどのようなOffice 365。
 
 監査ログを **検索して、** この攻撃の侵害のインジケーター (IOC) とも呼ばれる兆候を見つける必要があります。 多くの Azure 登録アプリケーションと大規模なユーザー ベースを持つ組織の場合、ベスト プラクティスは、組織の同意許可を毎週確認する方法です。
 
@@ -64,7 +64,7 @@ ms.locfileid: "51644682"
 >
 > イベントが発生した後、対応する監査ログ エントリが検索結果に表示されるには、最大 30 分から 24 時間かかる場合があります。
 >
-> 監査レコードが監査ログに保持および検索可能な期間は、Microsoft 365 サブスクリプション、特に特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「監査ログ」 [を参照してください](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> 監査レコードが保持され、監査ログで検索できる時間の長さは、Microsoft 365 サブスクリプション、特に特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「監査ログ」 [を参照してください](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 >
 > この値が true の場合、グローバル管理者アクセス権を持つユーザーがデータへの広範なアクセスを許可した可能性があります。 予期しない場合は、攻撃を確認 [する手順を実行します](#how-to-confirm-an-attack)。
 
@@ -72,7 +72,7 @@ ms.locfileid: "51644682"
 
 上記の IOC のインスタンスが 1 つ以上ある場合は、攻撃が発生したことを肯定的に確認するために、さらに調査を行う必要があります。 攻撃を確認するには、次の 3 つの方法を使用できます。
 
-- Azure Active Directory ポータルを使用したインベントリ アプリケーションとそのアクセス許可。 この方法は十分ですが、一度に確認できるユーザーは 1 人のみです。多くのユーザーが確認できる場合は、非常に時間がかかる場合があります。
+- ポータルを使用してアプリケーションとそのアクセス許可をインベントリAzure Active Directoryします。 この方法は十分ですが、一度に確認できるユーザーは 1 人のみです。多くのユーザーが確認できる場合は、非常に時間がかかる場合があります。
 
 - PowerShell を使用してアプリケーションとそのアクセス許可をインベントリします。 これは最も速く、最も徹底的な方法であり、オーバーヘッドは最小です。
 
@@ -80,15 +80,15 @@ ms.locfileid: "51644682"
 
 ## <a name="inventory-apps-with-access-in-your-organization"></a>組織内のアクセス権を持つインベントリ アプリ
 
-Azure Active Directory Portal または PowerShell を使用してユーザーに対してこれを行うか、ユーザーにアプリケーション アクセスを個別に列挙することができます。
+この操作は、Azure Active Directory ポータルまたは PowerShell を使用してユーザーに対して実行するか、ユーザーにアプリケーション アクセスを個別に列挙することができます。
 
-### <a name="steps-for-using-the-azure-active-directory-portal"></a>Azure Active Directory ポータルを使用する手順
+### <a name="steps-for-using-the-azure-active-directory-portal"></a>ポータルを使用Azure Active Directory手順
 
-Azure Active Directory Portal を使用して、個々のユーザーがアクセス許可を付与したアプリケーション [を検索できます](https://portal.azure.com/)。
+ユーザーポータルを使用して、個々のユーザーがアクセス許可を付与したアプリケーション[をAzure Active Directoryできます](https://portal.azure.com/)。
 
 1. 管理者権限を持つ Azure portal にサインインします。
 
-2. [Azure Active Directory] ブレードを選択します。
+2. [選択] ブレードAzure Active Directory選択します。
 
 3. [**ユーザー**] を選択します。
 
@@ -119,11 +119,11 @@ Illicit Consent Grant 攻撃を確認する最も簡単な方法は [ 、Get-Azu
 
 1. ローカル管理者権限でスクリプトを実行するコンピューターにサインインします。
 
-2. GitHub からスクリプト [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) スクリプトを実行するフォルダーにダウンロードまたはコピーします。 これは、出力 "permissions.csv" ファイルが書き込まれるのと同じフォルダーです。
+2. スクリプトを実行する[フォルダー](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)Get-AzureADPSPermissions.ps1からGitHubスクリプトをダウンロードまたはコピーします。 これは、出力 "permissions.csv" ファイルが書き込まれるのと同じフォルダーです。
 
 3. PowerShell インスタンスを管理者として開き、スクリプトを保存したフォルダーを開きます。
 
-4. [Connect-AzureAD コマンドレットを使用してディレクトリに接続](/powershell/module/azuread/connect-azuread)します。
+4. Connect-AzureAD コマンドレットを使用してConnect[ディレクトリに移動](/powershell/module/azuread/connect-azuread)します。
 
 5. 次の PowerShell コマンドを実行します。
 
@@ -133,7 +133,7 @@ Illicit Consent Grant 攻撃を確認する最も簡単な方法は [ 、Get-Azu
 
 スクリプトは、1 つのファイルを Permissions.csv。 次の手順に従って、不正なアプリケーションのアクセス許可の付与を探します。
 
-1. ConsentType 列 (列 G) で値 "AllPrinciples" を検索します。 AllPrincipals アクセス許可を使用すると、クライアント アプリケーションはテナンシー内のすべてのユーザーのコンテンツにアクセスできます。 ネイティブ Microsoft 365 アプリケーションでは、このアクセス許可を正しく動作する必要があります。 このアクセス許可を持つ Microsoft 以外のすべてのアプリケーションは、慎重に確認する必要があります。
+1. ConsentType 列 (列 G) で値 "AllPrinciples" を検索します。 AllPrincipals アクセス許可を使用すると、クライアント アプリケーションはテナンシー内のすべてのユーザーのコンテンツにアクセスできます。 ネイティブ Microsoft 365アプリケーションは、このアクセス許可を正しく動作する必要があります。 このアクセス許可を持つ Microsoft 以外のすべてのアプリケーションは、慎重に確認する必要があります。
 
 2. [アクセス許可] 列 (列 F) で、委任された各アプリケーションがコンテンツに対して持つアクセス許可を確認します。 "読み取り" および "書き込み" アクセス許可または "*" を探します。[すべて] アクセス許可を使用し、適切ではない可能性があるから、これらを慎重に確認します。
 
@@ -143,7 +143,7 @@ Illicit Consent Grant 攻撃を確認する最も簡単な方法は [ 、Get-Azu
 
 ## <a name="determine-the-scope-of-the-attack"></a>攻撃の範囲を特定する
 
-アプリケーション アクセスのインベントリが完了したら、監査ログを **確認して** 侵害の全範囲を特定します。 影響を受けるユーザー、不正なアプリケーションが組織にアクセスしたタイム フレーム、およびアプリが持っていたアクセス許可を検索します。 監査ログは **、Microsoft** [365 セキュリティ/コンプライアンス センターで検索できます](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+アプリケーション アクセスのインベントリが完了したら、監査ログを **確認して** 侵害の全範囲を特定します。 影響を受けるユーザー、不正なアプリケーションが組織にアクセスしたタイム フレーム、およびアプリが持っていたアクセス許可を検索します。 監査ログ **は、[セキュリティ** とコンプライアンス センター] Microsoft 365 [で検索できます](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 
 > [!IMPORTANT]
 > [この情報を取得](../../compliance/enable-mailbox-auditing.md)するには、管理者とユーザーのメールボックス監査とアクティビティ監査が攻撃の前に有効になっている必要があります。 [](../../compliance/turn-audit-log-search-on-or-off.md)
@@ -152,9 +152,9 @@ Illicit Consent Grant 攻撃を確認する最も簡単な方法は [ 、Get-Azu
 
 不正なアクセス許可を持つアプリケーションを特定した後、そのアクセスを削除する方法がいくつかあります。
 
-- Azure Active Directory Portal でアプリケーションのアクセス許可を取り消す方法は、次の方法で行います。
+- 次の方法で、アプリケーションのアクセス許可を Azure Active Directory取り消します。
 
-  - [Azure Active Directory ユーザー] ブレードで、影響 **を受けるユーザーに移動** します。
+  - [ユーザー] ブレードで、影響 **を受けるAzure Active Directory移動** します。
 
   - [アプリケーション **] を選択します**。
 
@@ -184,10 +184,10 @@ Microsoft 365 サブスクリプションには、データとユーザーを保
 
 - [[アプリケーション] リストの予期しない](/azure/active-directory/application-access-unexpected-application) アプリケーションは、データにアクセスできる予期しないアプリケーションが発生した後に、管理者が実行する必要があるさまざまなアクションを実行します。
 
-- [アプリケーションと Azure Active Directory の統合](/azure/active-directory/active-directory-apps-permissions-consent) は、同意とアクセス許可の概要です。
+- [アプリケーションとアプリケーションAzure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent)は、同意とアクセス許可の概要です。
 
 - [アプリケーションの開発に関する問題は、](/azure/active-directory/active-directory-application-dev-development-content-map) さまざまな同意関連記事へのリンクを提供します。
 
-- [Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) のアプリケーション プリンシパル オブジェクトとサービス プリンシパル オブジェクトは、アプリケーション モデルの中核となる Application および Service プリンシパル オブジェクトの概要を示します。
+- [Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects)のアプリケーション プリンシパル オブジェクトとサービス プリンシパル オブジェクトは、アプリケーション モデルの中核となる Application および Service プリンシパル オブジェクトの概要を示します。
 
 - [アプリへのアクセスの管理](/azure/active-directory/active-directory-managing-access-to-apps) は、管理者がアプリへのユーザー アクセスを管理する必要がある機能の概要です。

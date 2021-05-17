@@ -62,12 +62,12 @@ ms.locfileid: "51687413"
 5. コピーしたファイルに対して実行するアクションを実行します。
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>ライブ応答セッションが遅い、または初期接続中の遅延
-ライブ応答は、Windows の WNS サービスを使用した Defender for Endpoint センサー登録を活用します。 ライブ応答で接続の問題が発生している場合は、次の詳細を確認します。
+ライブ応答では、Defender for Endpoint センサーの登録と WNS サービスWindows。 ライブ応答で接続の問題が発生している場合は、次の詳細を確認します。
 1. `notify.windows.com` 環境でブロックされません。 詳細については、「デバイス プロキシと [インターネット接続の設定を構成する」を参照してください](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
-2. WpnService (Windows プッシュ通知システム サービス) は無効にされません。
+2. WpnService (Windowsプッシュ通知システム サービス) は無効ではありません。
 
 WpnService サービスの動作と要件を完全に理解するには、以下の記事を参照してください。
-- [Windows プッシュ Notification Services (WNS) の概要](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [WNS トラフィックをサポートするエンタープライズ ファイアウォールとプロキシの構成](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windowsプッシュ Notification Services (WNS) の概要](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [EnterpriseWNS トラフィックをサポートするファイアウォールとプロキシの構成](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Microsoft プッシュ通知サービス (MPNS) パブリック IP 範囲](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

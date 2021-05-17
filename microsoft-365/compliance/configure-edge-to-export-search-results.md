@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge で電子情報開示エクスポートツールを使用する
+title: '[電子情報開示のエクスポート ツール] を使用Microsoft Edge'
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,7 +12,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Edge の最新バージョンを使用して、セキュリティ/コンプライアンスセンターでコンテンツ検索と電子情報開示から検索結果をダウンロードするには、ClickOnce サポートを有効にする必要があります。
+description: セキュリティとコンプライアンス センター ClickOnceコンテンツ検索と電子情報開示から検索結果をダウンロードするには、Microsoft Edge の最新バージョンを使用するサポートを有効にする必要があります。
 ms.openlocfilehash: 60f42d2884c56aaff40bc0a6a979e99698a3cd2e
 ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
@@ -20,44 +20,44 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 09/12/2020
 ms.locfileid: "47546821"
 ---
-# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Microsoft Edge で電子情報開示エクスポートツールを使用する
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>[電子情報開示のエクスポート ツール] を使用Microsoft Edge
 
-最新バージョンの Microsoft Edge に対する最近の変更の結果として、ClickOnce サポートは既定で有効になりません。 コンテンツ検索や電子情報開示の検索結果をダウンロードするために電子情報開示のエクスポートツールを引き続き使用するには、microsoft [Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) を使用するか、microsoft Edge の最新バージョンで ClickOnce サポートを有効にする必要があります。
+最新バージョンのバージョンに対する最近の変更の結果Microsoft Edge、ClickOnceサポートは既定で有効になっていません。 引き続き電子情報開示エクスポート ツールを使用してコンテンツ検索または電子情報開示検索結果をダウンロードするには[、Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)を使用するか、最新バージョンの Microsoft Edge で ClickOnce サポートを有効にする必要があります。
 
-## <a name="enable-clickonce-support-in-microsoft-edge"></a>Microsoft Edge で ClickOnce サポートを有効にする
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>[ClickOnceでサポートを有効Microsoft Edge
 
-1. Microsoft Edge で、 **[edge://flags/#edge]** に移動します。
+1. [Microsoft Edge] に移動し、[edge://flags/#edge-click-once]**に移動します**。
 
-2. ドロップダウンリストで既存の値が **Default** または **Disabled** に設定されている場合は、[ **有効**] に変更します。
+2. ドロップダウン リストで既存の値が [ **既定** ] または [ **無効** ] に設定されている場合は、[有効] に **変更します**。
 
-   ![[有効] ドロップダウンリスト](../media/ClickOnceimage1.png)
+   ![ドロップダウン リストから [有効] を選択します。](../media/ClickOnceimage1.png)
 
-3. ブラウザーウィンドウの一番下までスクロールし、[ **再起動** ] をクリックして、エッジを再起動します。
+3. ブラウザー ウィンドウの下部まで下にスクロールし、[再起動] を **クリックしてエッジ** を再起動します。
 
-   ![[再起動] をクリックします](../media/ClickOnceimage2.png)
+   ![[再起動] をクリックします。](../media/ClickOnceimage2.png)
 
-**注:** 組織は、グループポリシーを使用して ClickOnce サポートを無効にすることができます。 ClickOnce サポート用の組織ポリシーがあるかどうかを確認するには、 **edge://policy**に移動します。 次のスクリーンショットは、組織全体で ClickOnce が有効になっていることを示しています。 このポリシー値が **false**に設定されている場合は、組織の管理者に連絡する必要があります。
+**注:** 組織では、グループ ポリシーを使用して、サポートClickOnce無効にできます。 サポートに関する組織ポリシーがClickOnce、次の **edge://policy。** 次のスクリーンショットは、組織ClickOnceで有効になっているデータを示しています。 このポリシー値が false に **設定されている** 場合は、組織内の管理者に連絡する必要があります。
 
 ![エッジ組織ポリシーの一覧](../media/ClickOnceimage3.png)
 
-## <a name="install-and-run-the-ediscovery-export-tool"></a>電子情報開示エクスポートツールをインストールして実行する
+## <a name="install-and-run-the-ediscovery-export-tool"></a>電子情報開示エクスポート ツールのインストールと実行
 
-1. コンテンツ検索または電子情報開示ケースのエクスポートのポップアップページにある [ **結果のダウンロード** ] をクリックします。
+1. コンテンツ **検索または電子** 情報開示ケースのエクスポートのフライアウト ページで、[結果のダウンロード] をクリックします。
 
-   ![検索結果をダウンロードするには、ポップアップページの [結果のダウンロード] をクリックします。](../media/ClickOnceExport1.png)
+   ![[フライアウト] ページの [結果のダウンロード] をクリックして検索結果をダウンロードする](../media/ClickOnceExport1.png)
 
-2. ツールを起動するかどうかを確認するメッセージが表示されたら、[ **開く**] をクリックします。
+2. ツールを起動する確認メッセージが表示されます。[開く] を **クリックします**。
 
-   ![[開く] をクリックして電子情報開示エクスポートツールを起動します。](../media/ClickOnceimage4.png)
+   ![[開く] をクリックして電子情報開示エクスポート ツールを起動する](../media/ClickOnceimage4.png)
 
-   電子情報開示エクスポートツールがインストールされていない場合は、セキュリティの警告が表示されます。 
+   電子情報開示エクスポート ツールがインストールされていない場合は、セキュリティ警告が表示されます。 
 
-   ![[インストール] をクリックして電子情報開示エクスポートツールをインストールします。](../media/ClickOnceimage5.png)
+   ![[インストール] をクリックして電子情報開示エクスポート ツールをインストールする](../media/ClickOnceimage5.png)
 
-3. **[インストール]** をクリックします。 インストール後、エクスポートツールが自動的に起動します。
+3. **[インストール]** をクリックします。 インストール後、エクスポート ツールが自動的に起動します。
 
 詳細については、次のトピックをご覧ください。
 
 - [コンテンツ検索の結果をエクスポートする](export-search-results.md)
 
-- [Microsoft Edge で実験フラグを有効にする方法](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [テスト フラグを有効にするMicrosoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)

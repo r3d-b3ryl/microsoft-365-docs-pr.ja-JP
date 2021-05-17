@@ -28,21 +28,21 @@ ms.locfileid: "49073214"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 の PowerShell を microsoft 365 管理センターの代わりとして使用して、Microsoft 365 でパスワードを管理することができます。 
+PowerShell を使用して、Microsoft 365管理センターの代わりに、Microsoft 365でパスワードを管理Microsoft 365。 
 
-この記事のコマンドブロックで変数の値を指定する必要がある場合は、次の手順を実行します。
+この記事のコマンド ブロックで変数値を指定する必要がある場合は、次の手順を使用します。
 
-1. コマンドブロックをクリップボードにコピーして、メモ帳または PowerShell 統合スクリプト環境 (ISE) に貼り付けます。
-2. 変数の値を入力し、"<" と ">" の文字を削除します。
+1. コマンド ブロックをクリップボードにコピーし、コマンド ブロックメモ帳 PowerShell 統合スクリプト環境 (ISE) に貼り付けます。
+2. 変数の値を入力し、"<" 文字と ">" 文字を削除します。
 3. PowerShell ウィンドウまたは PowerShell ISE でコマンドを実行します。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 ### <a name="set-a-password"></a>パスワードを設定する
 
-ユーザーアカウントのパスワードを指定するには、次のコマンドを使用します。
+ユーザー アカウントのパスワードを指定するには、次のコマンドを使用します。
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
@@ -52,7 +52,7 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword
 ```
 ### <a name="force-a-user-to-change-their-password"></a>ユーザーにパスワードの変更を強制する
 
-次のコマンドを使用してパスワードを設定し、ユーザーに新しいパスワードの変更を強制します。
+次のコマンドを使用して、パスワードを設定し、ユーザーに新しいパスワードを強制的に変更します。
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
@@ -61,7 +61,7 @@ $secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
 Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -EnforceChangePasswordPolicy $true
 ```
 
-次のコマンドを使用して、パスワードを設定し、ユーザーが次回サインインしたときに新しいパスワードを強制的に変更するようにします。
+次のコマンドを使用して、パスワードを設定し、ユーザーが次回サインインする時に新しいパスワードを強制的に変更します。
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
@@ -72,11 +72,11 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -ForceChangeP
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ### <a name="set-a-password"></a>パスワードを設定する
 
-ユーザーアカウントのパスワードを指定するには、次のコマンドを使用します。
+ユーザー アカウントのパスワードを指定するには、次のコマンドを使用します。
 
 ```powershell
 $userUPN="<user account sign in name>"
@@ -86,7 +86,7 @@ Set-MsolUserPassword -UserPrincipalName $userUPN -NewPassword $newPassword
 
 ### <a name="force-a-user-to-change-their-password"></a>ユーザーにパスワードの変更を強制する
 
-ユーザーが自分のパスワードを変更するように強制するには、次のコマンドを使用します。
+ユーザーに強制的にパスワードを変更するには、次のコマンドを使用します。
 
 ```powershell
 $userUPN="<user account sign in name>"

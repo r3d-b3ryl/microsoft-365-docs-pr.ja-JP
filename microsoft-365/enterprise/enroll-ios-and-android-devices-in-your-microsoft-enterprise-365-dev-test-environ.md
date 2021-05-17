@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for enterprise テスト環境に iOS/iPadOS と Android デバイスを登録する
+title: iOS/iPadOS デバイスと Android デバイスをエンタープライズ テスト環境Microsoft 365に登録する
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
-description: このテストラボガイドを使用して、Microsoft 365 テスト環境にデバイスを登録し、リモートで管理します。
+description: このテスト ラボ ガイドを使用して、デバイスをテスト環境に登録Microsoft 365リモートで管理します。
 ms.openlocfilehash: 06f83d1ed61bcc530b6aa974d7730f1aadc0ecbd
 ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
@@ -21,63 +21,63 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/20/2020
 ms.locfileid: "49367085"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Microsoft 365 のエンタープライズテスト環境に iOS および Android デバイスを登録する
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境用に iOS Microsoft 365 Android デバイスを登録する
 
-*このテストラボガイドは、エンタープライズテスト環境の Microsoft 365 にのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
 
-この記事では、Microsoft 365 for enterprise テスト環境で iOS/iPadOS と Android デバイス用の基本的なモバイルデバイス管理機能を登録してテストする方法について説明します。
+この記事では、エンタープライズ テスト環境用に、iOS/iPadOS および Android デバイスの基本的なモバイル デバイス管理機能を登録およびテストするMicrosoft 365説明します。
 
-テスト環境で iOS/iPadOS と Android デバイスを登録するには、3つのフェーズが含まれます。
-- [フェーズ 1: Microsoft 365 for enterprise テスト環境を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [フェーズ 2: iOS/iPadOS と Android デバイスを登録する](#phase-2-enroll-your-ios-and-android-devices)
-- [フェーズ 3: iOS/iPadOS と Android デバイスをリモートで管理する](#phase-3-manage-your-ios-and-android-devices-remotely)
+テスト環境での iOS/iPadOS デバイスと Android デバイスの登録には、次の 3 つのフェーズがあります。
+- [フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [フェーズ 2: iOS/iPadOS および Android デバイスを登録する](#phase-2-enroll-your-ios-and-android-devices)
+- [フェーズ 3: iOS/iPadOS デバイスと Android デバイスをリモートで管理する](#phase-3-manage-your-ios-and-android-devices-remotely)
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Microsoft 365 for enterprise のテストラボガイドスタックに含まれるすべての記事のビジュアルマップについては、「 [microsoft 365 for enterprise のテストラボガイドスタック](../downloads/Microsoft365EnterpriseTLGStack.pdf)」を参照してください。
+> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 for enterprise テスト環境を構築する
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する
 
-最小要件を持つ軽量な方法で iOS/iPadOS と Android デバイスを登録する場合は、「 [軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
+最小要件で iOS/iPadOS デバイスと Android デバイスを軽量な方法で登録する場合は、「Lightweight 基本構成」の手順 [に従います](lightweight-base-configuration-microsoft-365-enterprise.md)。
   
-シミュレートされたエンタープライズに iOS/iPadOS と Android デバイスを登録する場合は、 [パススルー認証](pass-through-auth-m365-ent-test-environment.md)の指示に従ってください。
+iOS/iPadOS デバイスと Android デバイスをシミュレートされたエンタープライズに登録する場合は、「パススルー認証」の手順 [に従います](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 自動ライセンスおよびグループメンバーシップをテストするには、シミュレートされたエンタープライズテスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動ライセンスおよびグループメンバーシップをテストできるようにするためのオプションとして提供されており、一般的な組織を表す環境で試してみることができます。
+> ライセンスとグループ の自動メンバーシップをテストするには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメイン サービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズ テスト環境は必要とされません。 このオプションは、ライセンスとグループ の自動メンバーシップをテストし、一般的な組織を表す環境で試してみることができます。
 
-## <a name="phase-2-enroll-your-ios-and-android-devices"></a>フェーズ 2: iOS および Android デバイスを登録する
+## <a name="phase-2-enroll-your-ios-and-android-devices"></a>フェーズ 2: iOS デバイスと Android デバイスを登録する
 
-デバイスを管理するためにモバイルデバイス管理 (MDM) ソリューションを検討している場合は、Microsoft Intune を使用できます。 Intune を含む MDM プロバイダーを使用している場合、デバイスは "登録済み" です。 登録すると、構成した機能と設定が表示されます。 
+デバイスを管理するためのモバイル デバイス管理 (MDM) ソリューションを検討している場合は、モバイル デバイス管理Microsoft Intune。 Intune を含む MDM プロバイダーを操作する場合、デバイスは "登録" されます。 登録すると、構成した機能と設定が受け取されます。 
 
-Intune では、iOS/iPadOS と Android デバイスを登録する方法がいくつかあります。 組織にとって最適な登録オプションを選択できます。 詳細とガイダンスについては、次の記事を参照してください。
+Intune では、iOS/iPadOS および Android デバイスを登録する方法がいくつかあります。 組織に最適な登録オプションを選択できます。 詳細とガイダンスについては、次の記事を参照してください。
 
-- [展開ガイド: Microsoft Intune での iOS と iPadOS デバイスの登録](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados)
-- [展開ガイド: Android デバイスを Microsoft Intune に登録する](/mem/intune/fundamentals/deployment-guide-enrollment-android)
+- [展開ガイド: iOS デバイスと iPadOS デバイスをデバイスに登録Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados)
+- [展開ガイド: Android デバイスをデバイスに登録Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
 
-Intune をデバイスの管理に使用する準備ができていて、何らかのガイダンスが必要な場合は、次の情報が役に立つことがあります。
+Intune をデバイス管理に使用する準備が整い、ガイダンスが必要な場合は、次の情報が役立つ場合があります。
 
 - [デバイス管理の概要](/mem/intune/fundamentals/what-is-device-management)
-- [チュートリアル: Microsoft エンドポイントマネージャーのチュートリアル Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
-- [展開ガイド: セットアップまたは Microsoft Intune への移動](/mem/intune/fundamentals/deployment-guide-intune-setup)
+- [チュートリアル: チュートリアル Intune in Microsoft エンドポイント マネージャー](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
+- [展開ガイド: セットアップまたは移行Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
-## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>フェーズ 3: iOS および Android デバイスをリモートで管理する
+## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>フェーズ 3: iOS デバイスと Android デバイスをリモートで管理する
 
-Microsoft Intune は、リモートロックとパスコードのリセット機能を提供します。 他のユーザーがデバイスを失った場合は、デバイスをリモートでロックすることができます。 他のユーザーがパスコードを忘れた場合は、リモートでリセットできます。
+Microsoft Intune、リモート ロックとパスコードのリセット機能を提供します。 ユーザーがデバイスを紛失した場合は、リモートでデバイスをロックできます。 パスコードを忘れた場合は、リモートでリセットできます。
 
-- IOS/iPadOS または Android デバイスをリモートでロックするには、「 [Intune でデバイスをリモートロック](/mem/intune/remote-actions/device-remote-lock)する」を参照してください。
-- パスコードをリモートでリセットするには、「 [Intune でデバイスのパスコードをリセットまたは削除](/mem/intune/remote-actions/device-passcode-reset)する」を参照してください。
+- iOS/iPadOS または Android デバイスをリモートでロックするには、「Intune でデバイスをリモートでロック [する」を参照してください](/mem/intune/remote-actions/device-remote-lock)。
+- パスコードをリモートでリセットするには、「Intune でデバイス パスコードをリセット [または削除する」を参照してください](/mem/intune/remote-actions/device-passcode-reset)。
 
-リモートで実行できるその他のタスクについては、「 [使用可能なデバイスの操作](/mem/intune/remote-actions/device-management#available-device-actions)」を参照してください。
+リモートで実行できるその他のタスクについては、「使用可能なデバイスアクション [」を参照してください](/mem/intune/remote-actions/device-management#available-device-actions)。
     
 ## <a name="next-step"></a>次の手順
 
-テスト環境での [モバイルデバイス管理](m365-enterprise-test-lab-guides.md#mobile-device-management) 機能とその他の機能について説明します。
+テスト環境 [で、その他の](m365-enterprise-test-lab-guides.md#mobile-device-management) モバイル デバイス管理機能を確認します。
 
 ## <a name="see-also"></a>関連項目
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
   
-[Microsoft 365 for enterprise テスト環境のデバイスコンプライアンスポリシー](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[エンタープライズ テスト環境Microsoft 365デバイス コンプライアンス ポリシー](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)

@@ -16,7 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: ゲストとのコラボレーションのために SharePoint サイトをセットアップするために必要な Microsoft 365 構成手順について説明します。
+description: ゲストとのコラボレーションMicrosoft 365サイトをセットアップするために必要なSharePoint構成手順について説明します。
 ms.openlocfilehash: fd3cf55b3d95a5c79b9bd4d7c55855f7d73fc0d2
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,9 +26,9 @@ ms.locfileid: "50904650"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
-ドキュメント、データ、リスト間でゲストと共同作業する必要がある場合は、SharePoint サイトを使用できます。 最新の SharePoint サイトは Microsoft 365 グループに接続され、サイト メンバーシップを管理し、共有メールボックスや予定表などの追加のコラボレーション ツールを提供できます。
+ドキュメント、データ、リストをまたがってゲストと共同作業する必要がある場合は、ユーザーのサイトSharePointできます。 モダン SharePointサイトは Microsoft 365 グループに接続され、サイト メンバーシップを管理し、共有メールボックスや予定表などの追加のコラボレーション ツールを提供できます。
 
-この記事では、ゲストとのコラボレーションのために SharePoint サイトをセットアップするために必要な Microsoft 365 構成手順について説明します。
+この記事では、ゲストとのコラボレーションのためにMicrosoft 365サイトをセットアップするために必要なSharePoint手順について説明します。
 
 ## <a name="video-demonstration"></a>ビデオ デモンストレーション
 
@@ -42,7 +42,7 @@ Microsoft 365 での共有は、[Azure Active Directory における B2B 外部�
 
 B2B 外部コラボレーション設定を確認して、ゲストとの共有がブロックされないか確認します。
 
-![[Azure Active Directory 外部コラボレーション設定] ページのスクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
+![[外部Azure Active Directory] ページ設定スクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
 
 外部コラボレーションを設定するには
 
@@ -59,7 +59,7 @@ B2B 外部コラボレーション設定を確認して、ゲストとの共有�
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 グループのゲスト設定
 
-最新の SharePoint サイトでは、Microsoft 365 グループを使用してサイト アクセスを制御します。 SharePoint サイトのゲスト アクセスを機能するには、Microsoft 365 グループのゲスト設定を有効にする必要があります。
+モダン SharePointサイトでは、Microsoft 365グループを使用してサイト アクセスを制御します。 [Microsoft 365 グループ] のゲスト設定を有効にし、サイト内のゲスト アクセスを機能SharePointする必要があります。
 
 ![Microsoft 365 管理センターにおける Microsoft 365 グループのゲスト設定のスクリーンショット](../media/office-365-groups-guest-settings.png)
 
@@ -71,9 +71,9 @@ Microsoft 365 グループのゲスト設定を行うには
 4. **[組織外のグループ所有者に Microsoft 365 グループへのアクセスを許可する]** と **[グループ メンバーにグループ コンテンツへのアクセスを許可する]** チェック ボックスが両方ともオンになっていることを確認します。
 5. 変更を加えた場合は、**[変更の保存]** をクリックします。
 
-## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 組織レベルの共有設定
+## <a name="sharepoint-organization-level-sharing-settings"></a>SharePointレベルの共有設定
 
-ゲストが SharePoint サイトにアクセスするには、SharePoint 組織レベルの共有設定でゲストとの共有を許可する必要があります。
+ゲストが他のサイトにアクセスSharePoint、組織SharePoint共有設定でゲストとの共有を許可する必要があります。
 
 組織レベルの設定によって、個々のサイトで使用できる設定が決定されます。 サイトの設定は、組織レベルの設定よりも制限を緩和することはできません。
 
@@ -85,7 +85,7 @@ Microsoft 365 グループのゲスト設定を行うには
 SharePoint 組織レベルの共有設定を設定するには
 
 1. Microsoft 365 管理センターの左側のナビゲーション ウィンドウの **[管理センター]** で、**[SharePoint]** をクリックします。
-2. SharePoint 管理センターの左側のナビゲーション ウィンドウの [ポリシー] で、[ **共有]** を **クリックします**。
+2. 管理センター SharePoint左側のナビゲーション ウィンドウの [ポリシー] で、[**共有]** を **クリックします**。
 3. SharePoint の外部共有が **[全員]** または **[新規および既存のゲスト]** に設定されていることを確認します。
 4. 変更を加えた場合は、**[保存]** をクリックします。
 
@@ -110,7 +110,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 サイトを認証されていないユーザー **([** すべてのユーザー] 設定) と共有することはできませんが、個々のファイルとフォルダーは共有できます。
 
-また、感度ラベル [を使用して、SharePoint サイトの外部共有設定を制御することもできます](../compliance/sensitivity-labels-teams-groups-sites.md)。
+また、感度ラベル[を使用して、サイトの外部共有設定をSharePointすることもできます](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 ![SharePoint サイトの外部共有設定のスクリーンショット](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -123,7 +123,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 ## <a name="invite-users"></a>ユーザーを招待する
 
-ゲスト共有設定が構成され、内部ユーザーとゲストをサイトに追加できます。 サイト へのアクセスは、関連付けられた Microsoft 365 グループを介して制御されます。そのため、そこにユーザーを追加します。
+ゲスト共有設定が構成され、内部ユーザーとゲストをサイトに追加できます。 サイト へのアクセスは、関連付けられたグループMicrosoft 365によって制御されます。そのため、そこにユーザーを追加します。
 
 内部ユーザーをグループに招待するには
 1. ユーザーを追加するサイトに移動します。
@@ -131,7 +131,7 @@ SharePoint 組織レベルの共有設定を設定するには
 3. **[メンバーの追加]** をクリックします。
 4. サイトに招待するユーザーの名前または電子メール アドレスを入力し、[保存] を **クリックします**。
 
-ゲストはサイトから追加できない。 Outlook on the web を使用して追加する必要があります。 そのため、グループにゲストを追加して招待する前提条件として **、[URL]**  列のサイトの URL をクリックして、サイト固有のページに移動します。 このページで、[アプリ起動ツール] **アイコンをクリック** し **、[Outlook] を選択します**。 これは、グループにゲストを招待できる画面です。この手順については、以下で説明します。
+ゲストはサイトから追加できない。 Web 上のユーザー設定を使用してOutlookする必要があります。 そのため、グループにゲストを追加して招待する前提条件として **、[URL]**  列のサイトの URL をクリックして、サイト固有のページに移動します。 このページで、[アプリ起動ツール]**アイコンを** クリックし、[アプリ起動ツール]**をOutlook。** これは、グループにゲストを招待できる画面です。この手順については、以下で説明します。
 
 グループにゲストを招待するには
 1. [ **グループ]** で、ゲストを招待するグループをクリックします。

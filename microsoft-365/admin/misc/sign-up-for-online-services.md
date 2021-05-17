@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: '職場または学校のメールを使用して、IT 部門を伴わずに Microsoft online services にサインアップする方法について説明します。 '
+description: 'IT 部門を含めずに、仕事や学校のメールを使用して Microsoft オンライン サービスにサインアップする方法について説明します。 '
 ms.openlocfilehash: ad46d698398da32d88d0c1617499b326e8fcb163
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644869"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>ドメインは、他のユーザーがサインアップした場合に使用されている可能性があります。
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>他のユーザーがサインアップした場合、ドメインが使用されている可能性があります
 
 仕事用または学校のメールを使用するユーザーは、IT 部門に対応を依頼しなくても、[一部の Microsoft Online Services にサインアップ](self-service-sign-up.md)できます。 使用できるのは、Office 365、Power BI、Rights Management Services などのサービスです。 セルフサービス サインアップ (仕事用または学校のメール アドレスで登録します) を完了すると、サービスで提供される機能を利用できるようになります。ただし、(ユーザーの追加、ライセンスの追加、ドメインの管理など) サービスの管理はできません。 
   

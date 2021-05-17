@@ -15,7 +15,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: この記事では、ピアに接続して Microsoft 365 の PowerShell のヘルプを取得するためのコミュニティリソースを提供します。
+description: この記事では、ピアに接続するためのコミュニティ リソースを提供し、PowerShell for Microsoft 365。
 ms.openlocfilehash: 36130d3e0f32f73836698cfb276e2aca5d20de83
 ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
@@ -25,11 +25,11 @@ ms.locfileid: "48754694"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>PowerShell の Microsoft 365 コミュニティリソース
 
-これらのコミュニティに接続して、Microsoft 365 の質問については、お客様との間で自分の PowerShell に関する回答を得ることができます。 
+Connectコミュニティに問い合わせ、同僚に問い合わせ、PowerShell の回答を得Microsoft 365します。 
   
-- [Microsoft 365 Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
+- [Microsoft 365Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
-- [Exchange Server TechNet コミュニティフォーラム](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
+- [Exchange ServerTechNet コミュニティ フォーラム](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 ## <a name="see-also"></a>関連項目
 

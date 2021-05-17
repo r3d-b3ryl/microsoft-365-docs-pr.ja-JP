@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ユーザー アカウントのパスワードを管理する
+title: ユーザー Microsoft 365パスワードの管理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Microsoft 365 ユーザー アカウントのパスワードを管理する方法について説明します。
+description: ユーザー アカウントのパスワードをMicrosoft 365する方法について説明します。
 ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905094"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>Microsoft 365 ユーザー アカウントのパスワードを管理する
+# <a name="manage-microsoft-365-user-account-passwords"></a>ユーザー Microsoft 365パスワードの管理
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Id の構成に応じて、Microsoft 365 ユーザー アカウントのパスワードをさまざまな方法で管理できます。 ユーザー アカウントは [、Microsoft 365](../admin/add-users/index.yml)管理センター、Active Directory ドメイン サービス (AD DS)、または Azure Active Directory (Azure AD) 管理センターで管理できます。
+ID 構成にMicrosoft 365、ユーザー アカウント のパスワードを管理できます。 ユーザー アカウントは[、Microsoft 365](../admin/add-users/index.yml)管理センター、Active Directory ドメイン サービス (AD DS)、または Azure Active Directory (Azure AD) 管理センターで管理できます。
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>ユーザー アカウントのパスワードを管理する場所と方法を計画する
 
-ユーザー アカウントを管理する場所と方法は、Microsoft 365 で使用する ID モデルによって異なります。 2 つのモデルは、クラウド専用とハイブリッドです。
+ユーザー アカウントを管理する場所と方法は、ユーザー アカウントに使用する id モデルによってMicrosoft 365。 2 つのモデルは、クラウド専用とハイブリッドです。
   
 ### <a name="cloud-only"></a>クラウド専用
 

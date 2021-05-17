@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Enterprise アーキテクチャ設計原則
-description: Id、cybersecurity、およびネットワークの専門家からの Microsoft エンタープライズアーキテクチャについて説明します。
+title: Microsoft 365 Enterprise設計原則
+description: ID、サイバーセキュリティEnterpriseネットワークの専門家による Microsoft のセキュリティ アーキテクチャについて説明します。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -20,13 +20,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "48906955"
 ---
-# <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365 Enterprise アーキテクチャ設計原則
+# <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365 Enterprise設計原則
 
 ネットワーク、アイデンティティ、セキュリティ、および多国籍アーキテクチャについて理解するために必要な重要な原則を理解します。
 
-| 習熟 | 件名 | エキスパートについて |
+| エキスパート | Subject | エキスパートについて |
 |---------|---------|---------|
-|![エンタープライズ id アーキテクチャの Alex Shteynberg](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)   |    [ID](identity-design-principles.md)     | Alex Shteynberg、Principal Technical アーキテクトは、microsoft の新しいテクノロジセンターで、microsoft 365 と Azure を [id およびそれ](identity-design-principles.md)を使用して採用しているエンタープライズ組織の id についてのガイド原則とベースライントピックについて説明するステップに戻ります。 |
-| ![Kozetta Garrett on security design 原則](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [セキュリティ](security-design-principles.md)    |  Garrett は、Microsoft の Cybersecurity アーキテクトとして、企業組織で発生する主なセキュリティ上の問題を説明し、 [sail オーバーできるセキュリティ](security-design-principles.md)上の問題に対処するためのアプローチを推奨しています。  |
-| ![ネットワーク設計原則に関する Ed フィッシャー](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [ネットワーク](networking-design-principles.md)  |   Ed フィッシャー、Security & Microsoft のコンプライアンスアーキテクトは、ネットワーク上での一般的な落とし穴 [(クラウドへ)](networking-design-principles.md)を回避することで、クラウド接続のためにネットワークを最適化する方法について説明します。       |
+|![Alex Shteynberg on enterprise identity architecture](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)   |    [ID](identity-design-principles.md)     | Microsoft のニューヨーク Microsoft テクノロジ センターのプリンシパル テクニカル アーキテクトである Alex Shteynberg 氏は、Microsoft 365 と Azure を採用しているエンタープライズ組織の ID[](identity-design-principles.md)に関する指針とベースライン トピックについて説明します。 |
+| ![セキュリティ設計の原則に関する Kozetta Garrett](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [セキュリティ](security-design-principles.md)    |  Microsoft のサイバーセキュリティ アーキテクトである Kozeta Garrett 氏は、企業組織で遭遇するセキュリティ上のトップの課題について説明し、お客様が直面するセキュリティのハードルに対処できるアプローチをお勧 [めします](security-design-principles.md)。  |
+| ![Ed Fisher on networking design principles](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [ネットワーク](networking-design-principles.md)  |   Microsoft のセキュリティ & コンプライアンス アーキテクトである Ed Fisher は、ネットワークの最も一般的な落とし穴 (クラウド [への)](networking-design-principles.md)を回避して、クラウド接続のためにネットワークを最適化する方法について説明します。       |
 |    |         |         |

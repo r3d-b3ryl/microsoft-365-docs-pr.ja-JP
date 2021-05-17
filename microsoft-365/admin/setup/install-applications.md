@@ -51,6 +51,6 @@ Azure Active Directory Premium (AADP) プラン 1 またはプラン 2 を購入
 
 ::: moniker-end
 
-問題が発生する場合 次のトラブルシューティング リソースが役立つ可能性があります。
+問題が起こる場合次のトラブルシューティングのリソースが役立ちます。
   
 - [Office と Microsoft 365 を両方インストールする場合のトラブルシューティング](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)

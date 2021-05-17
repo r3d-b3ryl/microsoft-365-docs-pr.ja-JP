@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示でのレビューセットの管理
+title: レビュー セットを管理Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 高度な電子情報開示ケースでデータを分析、クエリ、表示、タグ付け、およびエクスポートできるように、校閲セットを管理する方法について説明します。
+description: レビュー セットを管理して、データの分析、クエリ、表示、タグ付け、エクスポートを行う方法についてAdvanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: c489fa77c8e2d40d4f50275848465d5e8334c7a1
 ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
@@ -24,11 +24,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/05/2020
 ms.locfileid: "44034169"
 ---
-# <a name="manage-review-sets-in-advanced-ediscovery"></a>高度な電子情報開示でのレビューセットの管理
+# <a name="manage-review-sets-in-advanced-ediscovery"></a>レビュー セットを管理Advanced eDiscovery
 
-Review sets は、データの分析、クエリ、表示、タグ付け、およびエクスポートを行うことができる、一連の静的なドキュメントです。 これらのタスクの実行の詳細については、以下を参照してください。
+レビュー セットは、ケースのデータを分析、クエリ、表示、確認、タグ付け、エクスポートできるドキュメントの静的セットです。 これらのタスクの実行の詳細については、以下を参照してください。
 
-- [レビューセット内のデータを分析する](analyzing-data-in-review-set.md)
+- [レビュー セット内のデータを分析する](analyzing-data-in-review-set.md)
 
 - [レビュー セット内のデータをクエリする](review-set-search.md)
 
@@ -38,22 +38,22 @@ Review sets は、データの分析、クエリ、表示、タグ付け、お�
 
 - [ケース データをエクスポートする](exporting-data-ediscover20.md)
 
-## <a name="create-a-review-set"></a>レビューセットを作成する
+## <a name="create-a-review-set"></a>レビュー セットを作成する
 
-[レビュー**セット] タブ**で [ **+ レビューセットの追加**] をクリックして、レビューセットを作成できます。
+[レビュー セット] タブで [+ レビュー セットの追加] をクリックすると、レビュー **セットを作成できます**。
 
-![レビューセットを追加する](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![レビュー セットの追加](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-[**レビュー設定の追加**] ページで、レビューセットの名前を入力し、[**保存**] をクリックします。 新しいレビューセットが [**確認セット**] タブの一覧に表示されます。
+[レビュー セット **の追加] フライ** アウト ページで、レビュー セットの名前を入力し、[保存] を **クリックします**。 新しいレビュー セットが [レビュー セット] タブの一 **覧に表示** されます。
 
-![[レビューセット] タブに新しいレビューセットが表示されている](../media/AeDnewreviewset.png)
+![[レビュー セット] タブに表示される新しいレビュー セット](../media/AeDnewreviewset.png)
 
-高度な電子情報開示ケースのレビューセットにデータを追加するには、3種類の方法があります。
+1 つのケースでレビュー セットにデータを追加するには、3 Advanced eDiscoveryがあります。
 
-![レビューセットに追加する3つの方法](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![レビュー セットに追加する 3 つの方法](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [検索結果をレビュー セットに追加する](add-data-to-review-set.md)
 
-2. [Microsoft 以外の365データをレビューセットに読み込む](load-non-Office-365-data-into-a-review-set.md)
+2. [レビューセットにMicrosoft 365 以外のデータを読み込む](load-non-Office-365-data-into-a-review-set.md)
 
-3. [別のレビューセットからのレビューセットへのデータの追加](add-data-to-review-set-from-another-review-set.md)
+3. [別のレビュー セットからレビュー セットにデータを追加](add-data-to-review-set-from-another-review-set.md)

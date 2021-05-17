@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: '新しい Microsoft 365 パートナーを見つける方法、または過去に作業したパートナーの連絡先情報を取得する方法について説明します。 '
+description: '新しいパートナーを見つけるMicrosoft 365、過去に作業したパートナーの連絡先情報を取得する方法について学習します。 '
 ms.openlocfilehash: 189eda83f3eca957e6f9fa720e2f6ccdd07db171
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,13 +32,13 @@ ms.locfileid: "51580944"
 ---
 # <a name="find-your-partner-or-reseller"></a>パートナーまたは販売店を検索する
 
-管理者は、パートナーと一緒に Microsoft Open Volume Licensing プログラムを通じて Microsoft 365 サブスクリプションを購入、ライセンス認証、更新できます。 
+管理者は、パートナーと一緒に Microsoft Open Volume Licensing プログラムを使用して、Microsoft 365サブスクリプションを購入、アクティブ化、更新できます。 
   
- **Open Volume Licensing が自分用か分からないか。** Microsoft Open [Programs の概要を確認してください](https://go.microsoft.com/fwlink/p/?LinkId=613298)。
+ **オープン ボリューム ライセンスが自分の組織に適しているかどうかわからない場合は、** 「 [Microsoft オープン プログラム概要](https://go.microsoft.com/fwlink/p/?LinkId=613298)」を参照してください。
   
 ## <a name="find-a-new-partner-or-reseller"></a>新しいパートナーまたは販売店をさがす
 
-Open Volume Licensing を使用して Microsoft 365 を購入または更新する準備ができている場合、またはパートナーとの作業に関する詳細が必要な場合は、以下のオプションを選択してください。 
+Open Volume Licensing を使用して Microsoft 365を購入または更新する準備ができている場合や、パートナーとの作業に関する詳細が必要な場合は、以下のオプションを選択してください。 
   
 - [Microsoft PinPoint を使用してパートナーを検索する](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
@@ -47,11 +47,11 @@ Open Volume Licensing を使用して Microsoft 365 を購入または更新す�
 ## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a>過去に協力したことのあるパートナーの連絡先情報をさがす
 
 > [!NOTE]
-> 場合によっては、過去に作業したパートナー向け Microsoft 365 管理センターで情報を見つける場合があります。 ただし、このような情報は古い場合があります。 ベスト プラクティスとしては、組織内で購入の担当者または担当部署に連絡して、協力するパートナーを見つけることをお勧めします。 
+> 場合によっては、過去に作業したパートナー Microsoft 365管理センターで情報を見つける場合があります。 ただし、このような情報は古い場合があります。 ベスト プラクティスとしては、組織内で購入の担当者または担当部署に連絡して、協力するパートナーを見つけることをお勧めします。 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>管理センターでパートナー情報を取得する
 
-1. 管理センターで、[設定パートナーの関係 **]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">ページに移動</a>します。
+1. 管理センターで、[パートナーの関係]**ページ設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">移動</a>します。
   
 2. パートナーがいる場合は、パートナーの名前と、組織との関係がここに表示されます。 パートナーの連絡先情報 (電話番号とメール アドレス) を表示するには、パートナー名を選択します。
     

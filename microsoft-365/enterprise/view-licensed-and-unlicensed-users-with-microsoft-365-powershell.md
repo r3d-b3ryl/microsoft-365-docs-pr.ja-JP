@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用してライセンスを付与された Microsoft 365 ユーザーを表示する
+title: PowerShell を使用して、ライセンスMicrosoft 365ライセンスされていないユーザーを表示する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: この記事では、PowerShell を使用してライセンスを付与された Microsoft 365 ユーザーアカウントを表示する方法について説明します。
+description: この記事では、PowerShell を使用してライセンスおよびライセンスのないユーザー アカウントを表示するMicrosoft 365説明します。
 ms.openlocfilehash: b38ee7674abaea6b63d0661ba79a9814f8c54229
 ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
@@ -27,37 +27,37 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48651386"
 ---
-# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>PowerShell を使用してライセンスを付与された Microsoft 365 ユーザーを表示する
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>PowerShell を使用して、ライセンスMicrosoft 365ライセンスされていないユーザーを表示する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 組織のユーザーアカウントには、組織で使用可能なライセンスプランから割り当てられている利用可能なライセンスの一部、またはすべてがある場合があります。 Microsoft 365 の PowerShell を使用して、組織内のライセンスを取得したユーザーとライセンスのないユーザーをすばやく見つけることができます。
+組織のユーザー アカウントMicrosoft 365、組織内で利用可能なライセンス プランから、利用可能なライセンスの一部、すべて、または割り当てられていない可能性があります。 PowerShell を使用して、Microsoft 365ライセンスユーザーとライセンスのないユーザーをすばやく検索できます。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
  
-ライセンスプラン (ライセンスのないユーザー) が割り当てられていない組織内のすべてのユーザーアカウントの一覧を表示するには、次のコマンドを実行します。
+ライセンス プラン (ライセンスのないユーザー) が割り当てられていない組織内のすべてのユーザー アカウントの一覧を表示するには、次のコマンドを実行します。
   
 ```powershell
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-ライセンスプラン (ライセンスユーザー) のいずれかが割り当てられている組織内のすべてのユーザーアカウントの一覧を表示するには、次のコマンドを実行します。
+ライセンス プラン (ライセンス ユーザー) が割り当てられている組織内のすべてのユーザー アカウントの一覧を表示するには、次のコマンドを実行します。
   
 ```powershell
 Get-AzureAdUser | ForEach { $licensed=$True ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 >[!Note]
->サブスクリプション内のすべてのユーザーを一覧表示するには、コマンドを使用し `Get-AzureAdUser -All $true` ます。
+>サブスクリプション内のすべてのユーザーを一覧表示するには、コマンドを使用 `Get-AzureAdUser -All $true` します。
 >
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-組織内のすべてのユーザーアカウントとライセンスの状態の一覧を表示するには、PowerShell で次のコマンドを実行します。
+組織内のすべてのユーザー アカウントとそのライセンス状態の一覧を表示するには、PowerShell で次のコマンドを実行します。
   
 ```powershell
 Get-MsolUser -All

@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して Microsoft 365 ユーザー アカウントに役割を割り当てる
+title: PowerShell を使用してユーザー Microsoft 365に役割を割り当てる
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: この記事では、PowerShell for Microsoft 365 を使用して管理者の役割をユーザー アカウントに割り当てる方法について説明します。
+description: この記事では、管理者ロールをユーザー アカウントに割り当てるMicrosoft 365 PowerShell を使用する方法について説明します。
 ms.openlocfilehash: 84e785052c970ca15487540c3904eacdd0e9ca28
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,28 +27,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905382"
 ---
-# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザー アカウントに管理者の役割を割り当てる
+# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して管理者の役割Microsoft 365ユーザー アカウントに割り当てる
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-PowerShell for Microsoft 365 を使用すると、ユーザー アカウントに役割を簡単に割り当てることができます。
+PowerShell を使用してユーザー アカウントに役割を簡単に割り当Microsoft 365。
 
 >[!Note]
->Microsoft 365 管理センター  [で](../admin/add-users/assign-admin-roles.md) ユーザー アカウントに管理者ロールを割り当てる方法について説明します。
+>管理者の役割を[管理センターで](../admin/add-users/assign-admin-roles.md)ユーザー アカウントに割り当てるMicrosoft 365します。
 >
 >その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に、グローバル管理者アカウントを使用して [Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に、グローバル管理者アカウントを使用してテナント[にMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 次に、役割に追加するユーザー アカウントのサインイン名を特定します (例: fredsm \@ contoso.com)。 これは、ユーザー プリンシパル名 (UPN) とも呼ばれています。
 
-次に、ロールの名前を決めます。 [Azure Active Directory の管理者ロールのアクセス許可を参照してください](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+次に、ロールの名前を決めます。 「[管理者ロールのアクセス許可」を参照Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 >[!Note]
->この記事のメモに注意してください。 一部の役割名は、Azure Active Directory (Azure Active Directory AD) PowerShell で異なります。 たとえば、Microsoft 365 管理センターの *SharePoint Administrator* の役割は、Azure AD PowerShell の *SharePoint* サービス管理者です。
+>この記事のメモに注意してください。 一部の役割名は、Azure Active Directory (Azure AD) PowerShell で異なります。 たとえば、管理者センター SharePoint *管理者* ロールは、Azure Microsoft 365 PowerShell SharePointサービス管理者ADです。
 >
 
 次に、サインイン名と役割名を入力し、次のコマンドを実行します。
@@ -65,7 +65,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-SharePoint Service Administrator の役割を *belindan \@* アカウントに割り当てる完了したコマンド セットの contoso.com します。
+次に、サービス管理者の役割を *belindan \@* アカウントに割り当SharePoint完了したコマンド セット contoso.com 示します。
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -88,7 +88,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に、グローバル管理者アカウントを使用して [Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に、グローバル管理者アカウントを使用してテナント[にMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
 ### <a name="for-a-single-role-change"></a>単一ロールの変更の場合
 
@@ -134,7 +134,7 @@ $roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-メモ帳にコマンドを貼り付けます。 変数と *$dispName* 変数 *$roleName、* 説明テキストを値に置き換える必要があります。 文字を \< and > 削除しますが、二重引用符は保持します。 変更した行を Microsoft Azure Active Directory モジュールに貼り付Windows PowerShellウィンドウで実行します。 または、統合スクリプト環境 (ISE) Windows PowerShellを使用することもできます。
+コマンドを別のメモ帳。 変数と *$dispName* 変数 *$roleName、* 説明テキストを値に置き換える必要があります。 文字を \< and > 削除しますが、二重引用符は保持します。 変更した行を [モジュール] ウィンドウMicrosoft Azure Active Directoryに貼りWindows PowerShellして実行します。 または、統合スクリプト環境 (ISE) Windows PowerShellを使用することもできます。
   
 完了したコマンド セットの例を次に示します。
   
@@ -180,7 +180,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-コマンドをコピーし、メモ帳に貼り付けます。 変数の **$upnName** 変数 **$roleName** します。 説明テキストを値に置き換える。 文字を \< and > 削除しますが、二重引用符は保持します。 変更した行を Microsoft Azure Active Directory モジュールに貼り付Windows PowerShellウィンドウで実行します。 または、ISE のWindows PowerShell使用できます。
+コマンドをコピーし、コマンドに貼りメモ帳。 変数の **$upnName** 変数 **$roleName** します。 説明テキストを値に置き換える。 文字を \< and > 削除しますが、二重引用符は保持します。 変更した行を [モジュール] ウィンドウMicrosoft Azure Active Directoryに貼りWindows PowerShell実行します。 または、ISE のWindows PowerShell使用できます。
   
 完了したコマンド セットの例を次に示します。
   
@@ -202,7 +202,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-次に、表示名または UPN フィールドと役割名フィールドを持つコンマ区切り値 (CSV) テキスト ファイルを作成します。 これは、Microsoft Excel で簡単に実行できます。
+次に、表示名または UPN フィールドと役割名フィールドを持つコンマ区切り値 (CSV) テキスト ファイルを作成します。 この操作は、次の手順で簡単Microsoft Excel。
 
 表示名の例を次に示します。
   

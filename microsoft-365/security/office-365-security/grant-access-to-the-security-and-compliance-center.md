@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: ユーザーは、セキュリティまたはコンプライアンス機能を管理する前に、Microsoft 365 Security & コンプライアンス センターでアクセス許可を割り当てる必要があります。
+description: セキュリティ機能またはコンプライアンス機能を管理するには、Microsoft 365 セキュリティ & コンプライアンス センターでアクセス許可を割り当てる必要があります。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -40,13 +40,13 @@ ms.locfileid: "51599925"
 
 セキュリティ & コンプライアンス センターでユーザーに付与できるさまざまなアクセス許可の詳細については、「セキュリティ & コンプライアンス センター」 [を参照してください](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - この記事の手順を完了するには、グローバル管理者またはセキュリティ & コンプライアンス センターの OrganizationManagement 役割グループのメンバーである必要があります。
 
-- セキュリティ コンプライアンス センターの役割グループ& Exchange Online の役割グループと同じ名前を持つ場合がありますが、同じではありません。
+- セキュリティ & コンプライアンス センターの役割グループは、Exchange Online の役割グループと似ていますが、同じではありません。
 
-- 役割グループのメンバーシップは、Exchange Online とセキュリティ グループ コンプライアンス センター&共有されない。
+- 役割グループのメンバーシップは、コンプライアンス センター Exchange Onlineセキュリティ グループ&共有されない。
 
 - 代理アクセス許可 (DAP) パートナーが [代理で管理] (AOBO) アクセス許可を持つ場合、セキュリティ &アクセスできません。
 

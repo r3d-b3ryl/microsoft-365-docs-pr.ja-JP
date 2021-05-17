@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for enterprise テスト環境のデバイスコンプライアンスポリシー
+title: エンタープライズ テスト環境Microsoft 365デバイス コンプライアンス ポリシー
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: このテストラボガイドを使用して、Microsoft 365 for enterprise テスト環境に Intune デバイスコンプライアンスポリシーを追加します。
+description: このテスト ラボ ガイドを使用して、Intune デバイス コンプライアンス ポリシーをエンタープライズ テスト環境Microsoft 365に追加します。
 ms.openlocfilehash: d42c9a603ca581941cb5a8f30b9ecd9d6f780759
 ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
@@ -21,62 +21,62 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/20/2020
 ms.locfileid: "49367097"
 ---
-# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Microsoft 365 for enterprise テスト環境のデバイスコンプライアンスポリシー
+# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365デバイス コンプライアンス ポリシー
 
-*このテストラボガイドは、エンタープライズテスト環境の Microsoft 365 にのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
 
-この記事では、Windows 10 365 デバイスの Intune デバイスコンプライアンスポリシーを Microsoft 365 for enterprise テスト環境に追加する方法について説明します。
+この記事では、エンタープライズ テスト環境用に、デバイスとデバイスの Intune Windows 10ポリシー Microsoft 365 Apps for enterpriseをMicrosoft 365する方法について説明します。
 
-Intune デバイスコンプライアンスポリシーを追加するには、次の2つのフェーズが必要です。
-- [フェーズ 1: Microsoft 365 for enterprise テスト環境を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [フェーズ 2: Windows 10 デバイスのデバイスコンプライアンスポリシーを作成する](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
+Intune デバイスコンプライアンス ポリシーを追加するには、次の 2 つのフェーズが必要です。
+- [フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [フェーズ 2: デバイスコンプライアンス ポリシーを作成して、Windows 10する](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Microsoft 365 for enterprise のテストラボガイドスタックに含まれるすべての記事のビジュアルマップについては、「 [microsoft 365 for enterprise のテストラボガイドスタック](../downloads/Microsoft365EnterpriseTLGStack.pdf)」を参照してください。
+> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 for enterprise テスト環境を構築する
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する
 
-最小要件での軽量な方法で MAM ポリシーを構成する場合は、「 [簡易基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
+最小要件で軽量な方法でのみ MAM ポリシーを構成する場合は、「Lightweight 基本構成」の手順 [に従います](lightweight-base-configuration-microsoft-365-enterprise.md)。
   
-シミュレートされたエンタープライズで MAM ポリシーを構成する場合は、 [パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
+シミュレートされたエンタープライズで MAM ポリシーを構成する場合は、「パススルー認証」の [手順に従います](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 自動ライセンスおよびグループメンバーシップをテストするには、シミュレートされたエンタープライズテスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、自動化されたライセンスとグループメンバーシップをテストし、一般的な組織を表す環境で試してみるためのオプションとして提供されています。
+> ライセンスとグループ の自動メンバーシップをテストするには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメイン サービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズ テスト環境は必要とされません。 ここではオプションとして提供され、一般的な組織を表す環境で、自動ライセンスとグループ メンバーシップをテストして実験できます。
 >  
 
-## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>フェーズ 2: Windows 10 デバイスのデバイスコンプライアンスポリシーを作成する
+## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>フェーズ 2: デバイスコンプライアンス ポリシーを作成して、Windows 10する
 
-このフェーズでは、Windows 10 デバイスのデバイスコンプライアンスポリシーを作成します。 このフェーズでは、Microsoft Intune と [Microsoft エンドポイント管理センター](https://go.microsoft.com/fwlink/?linkid=2109431) を使用して、グループを追加し、コンプライアンスポリシーを作成します。
+このフェーズでは、デバイスのコンプライアンス ポリシーを作成し、Windows 10します。 このフェーズでは、Microsoft Intune管理センター Microsoft エンドポイント マネージャー[を使用](https://go.microsoft.com/fwlink/?linkid=2109431)してグループを追加し、コンプライアンス ポリシーを作成します。
 
-1. [Microsoft 365 管理センター](https://admin.microsoft.com)に移動し、全体管理者アカウントを使用して microsoft 365 テストラボサブスクリプションにサインインします。 **エンドポイントマネージャー** 管理センターを選択します。 [エンドポイントマネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)が開きます。
+1. 管理者センターに[Microsoft 365](https://admin.microsoft.com)し、グローバル管理者アカウントでテスト ラボMicrosoft 365にサインインします。 管理センター **エンドポイント マネージャー** 選択します。 管理[エンドポイント マネージャーが開](https://go.microsoft.com/fwlink/?linkid=2109431)きます。
 
-    [デバイス管理] が [ **有効になってい** ません] というメッセージが表示されている場合は、MDM authority として [Intune] を選択します。 具体的な手順については、「 [モバイルデバイス管理機関を設定する](/mem/intune/fundamentals/mdm-authority-set)」を参照してください。
+    [デバイス管理を有効にしていない] に似たメッセージがまだ表示 **されている** 場合は、MDM 機関として [Intune] を選択します。 具体的な手順については、「モバイル デバイス管理 [機関の設定」を参照してください](/mem/intune/fundamentals/mdm-authority-set)。
 
-    エンドポイントマネージャー管理センターは、デバイスの管理とアプリの管理に重点を置いています。 この管理センターのツアーについては、「 [チュートリアル: Microsoft エンドポイントマネージャーのチュートリアル Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)」を参照してください。
+    管理エンドポイント マネージャーは、デバイス管理とアプリ管理に重点を当て、 この管理センターのツアーについては、「チュートリアル: チュートリアル Intune in Microsoft エンドポイント マネージャー」[を参照してください](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。
 
-2. [**グループ**] で、メンバーシップの種類が **割り当てられ** た、新しい **Microsoft 365** または **Managed Windows 10 デバイスユーザー** という名前の **セキュリティ** グループを追加します。 次の手順では、コンプライアンスポリシーをこのグループに割り当てます。 
+2. [**グループ]** で、[割り当てられたMicrosoft 365の種類を持つ **、Managed** Windows 10という名前の新しいグループまたはセキュリティ グループ **を** 追加します。 次の手順では、コンプライアンス ポリシーをこのグループに割り当てします。 
 
-    特定の手順、および **マイクロソフトの 365** または **セキュリティ** グループの詳細については、「 [ユーザーとデバイスを整理するためにグループを追加する](/mem/intune/fundamentals/groups-add)」を参照してください。
+    特定の手順、およびセキュリティ グループまたはセキュリティ **Microsoft 365については**、「グループを追加してユーザー **とデバイスを** 整理する [」を参照してください](/mem/intune/fundamentals/groups-add)。
 
-3. [ **デバイス**] で、Windows 10 コンプライアンスポリシーを作成します。 作成した **管理 Windows 10 デバイスユーザー** グループにこのポリシーを割り当てます。
+3. [**デバイス]** で、コンプライアンス ポリシー Windows 10作成します。 作成したデバイス ユーザー グループの **管理Windows 10に** このポリシーを割り当てる。
 
-    ポリシーでは、単純なパスワードをブロックしたり、ファイアウォールを必要としたり、Microsoft Defender マルウェア対策サービスを実行する必要があります。 通常、コンプライアンスポリシーには、すべてのデバイスに必要な基本設定、または最小限の要件が含まれています。
+    ポリシーでは、単純なパスワードをブロックし、ファイアウォールを要求し、Microsoft Defender Antimalware サービスを実行する必要があります。 コンプライアンス ポリシーには、通常、すべてのデバイスに必要な基本設定または最低限の設定が含まれます。
 
-    具体的な手順、および構成できるコンプライアンス設定の詳細については、「 [コンプライアンスポリシーを使用して、管理するデバイスのルールを設定する](/mem/intune/protect/device-compliance-get-started)」を参照してください。
+    具体的な手順、および構成できるコンプライアンス設定の詳細については、「コンプライアンス ポリシーを使用して管理するデバイスのルールを設定する」 [を参照してください](/mem/intune/protect/device-compliance-get-started)。
 
-完了したら、管理された **Windows 10 デバイスユーザー** グループのメンバーをテストするためのデバイスコンプライアンスポリシーが用意されています。
+完了すると、Managed Windows 10デバイス ユーザー グループのメンバー **をテストするデバイス コンプライアンス ポリシーがあります**。
   
 ## <a name="next-step"></a>次の手順
 
-テスト環境での [モバイルデバイス管理](m365-enterprise-test-lab-guides.md#mobile-device-management) 機能とその他の機能について説明します。
+テスト環境 [で、その他の](m365-enterprise-test-lab-guides.md#mobile-device-management) モバイル デバイス管理機能を確認します。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for enterprise のテストラボガイド](m365-enterprise-test-lab-guides.md)。
+[Microsoft 365テスト ラボ ガイドの詳細](m365-enterprise-test-lab-guides.md)
   
-[Microsoft 365 のエンタープライズテスト環境に iOS および Android デバイスを登録する](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[エンタープライズ テスト環境用に iOS Microsoft 365 Android デバイスを登録する](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 

@@ -1,5 +1,5 @@
 ---
-title: レポート ダッシュボードで Office 365 レポートの Defender を表示する
+title: '[レポート] ダッシュボードでOffice 365レポートの Defender を表示する'
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,7 +16,7 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: セキュリティ コンプライアンス センターで Microsoft Defender for Office 365 のレポート&使用します。
+description: セキュリティ コンプライアンス センターで Microsoft Defender for Office 365レポートを&使用します。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51599901"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センター Officeレポート ダッシュボードで Defender for & 365 レポートを表示する
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センター Office 365レポート ダッシュボードで Defender for &レポートを表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,41 +35,41 @@ ms.locfileid: "51599901"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブスクリプションまたは microsoft Defender for Office 365 Plan 1 または Microsoft Defender for Office 365 Plan 2 アドオン) には、さまざまなセキュリティ関連レポートが含まれる。 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)場合は、[レポート ダッシュボード] に移動して、セキュリティ & コンプライアンス センターでこれらのレポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://protection.office.com/insightdashboard> 。
+Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプション、Office 365 プラン 1 の Microsoft Defender、Office 365 プラン 2 アドオンの Microsoft Defender など) には、さまざまなセキュリティ関連レポートが含まれる。 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)場合は、[レポート ダッシュボード] に移動して、セキュリティ & コンプライアンス センターでこれらのレポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://protection.office.com/insightdashboard> 。
 
 ![セキュリティ コンプライアンス センターの [レポート] &ダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="defender-for-office-365-file-types-report"></a>Defender for Office 365 のファイル型レポート
 
-**365 種類Officeレポート** レポートの Defender には、安全な添付ファイルによって悪意のあるファイルとして検出されたファイルの種類 [が表示されます](safe-attachments.md)。
+[**ファイルの種類Office 365の** Defender レポートには、添付ファイルによって悪意のあるファイルとして検出されたファイルセーフ [表示されます](safe-attachments.md)。
 
  レポートの集計ビューでは 90 日間のフィルター処理が可能ですが、詳細ビューでは 10 日間のフィルター処理のみ可能です。
 
-レポートを表示するには、セキュリティ & コンプライアンス センターを [開き、[](https://protection.office.com)レポートダッシュボード] に移動し \> **、365** 種類のファイルOffice Defender を選択します。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ATPFileReport> 。
+レポートを表示するには、セキュリティ & コンプライアンス センターを開き [、[](https://protection.office.com)レポートダッシュボード] に移動し、[ファイルの種類] で \> **[Defender] Office 365選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ATPFileReport> 。
 
-![レポート ダッシュボードOffice 365 ファイルの種類ウィジェットの Defender](../../media/atp-file-types-report-widget.png)
+![レポート ダッシュボードOffice 365ファイルの種類ウィジェットの Defender](../../media/atp-file-types-report-widget.png)
 
 > [!NOTE]
-> このレポートの情報は、365 メッセージ廃棄レポートの [Defender でもOffice参照できます](#defender-for-office-365-message-disposition-report)。
+> このレポートの情報は、メッセージ廃棄レポートの[Defender でもOffice 365使用できます](#defender-for-office-365-message-disposition-report)。
 
-### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>365 ファイルの種類レポートOffice Defender のレポート ビュー
+### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>[ファイルの種類] レポートの Defender Office 365ビュー
 
 次のビューを利用できます。
 
 - **データの表示方法: ファイル**: グラフには、次の情報が含まれます。
 
-  - **悪意のある Excel の添付ファイル**
+  - **悪意のあるExcel添付ファイル**
   - **悪意のあるフラッシュの添付ファイル**
   - **悪意のある PDF 添付ファイル**
-  - **悪意のある PowerPoint 添付ファイル**
+  - **悪意のあるPowerPoint添付ファイル**
   - **悪意のある URL**
   - **悪意のある Word の添付ファイル**
   - **悪意のある実行可能ファイルの添付ファイル**
   - **Others**
 
-  特定の日 (データ ポイント) にカーソルを合わせると[、EOP](anti-malware-protection.md)で安全な添付ファイルと[](safe-attachments.md)マルウェア対策保護によって検出された悪意のあるファイルの種類の内訳を確認できます。
+  特定の日 (データ ポイント) にカーソルを合わせると[、EOP](safe-attachments.md)の セーフ 添付ファイルとマルウェア対策保護によって検出された悪意のあるファイルの種類の内訳を[確認できます](anti-malware-protection.md)。
 
-  ![365 ファイルの種類レポートOffice Defender のファイル ビュー](../../media/atp-file-types-report-file-view.png)
+  ![[ファイルの種類] レポートの [Defender Office 365ビュー]](../../media/atp-file-types-report-file-view.png)
 
   [フィルター] **をクリック** すると、次のフィルターを使用してレポートを変更できます。
 
@@ -81,22 +81,22 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
   - **アクセスをブロックする**
   - **置き換えられたメッセージ**
   - **監視対象のメッセージ**
-  - **動的メール配信に置き換えられる**: 詳細については、「安全な添付ファイルポリシー [での動的配信」を参照してください](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
+  - **動的メール配信に置き換えられる**: 詳細については、「添付ファイル ポリシーの [動的配信セーフを参照してください](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
 
-  ![365 ファイルの種類レポートOffice Defender のメッセージ ビュー](../../media/atp-file-types-report-message-view.png)
+  ![[ファイルの種類] レポートの Defender Office 365表示](../../media/atp-file-types-report-message-view.png)
 
   [フィルター] **をクリック** すると、次のフィルターを使用してレポートを変更できます。
 
   - **開始日と****終了日**
   - グラフで使用できるのと同じメッセージ廃棄値と、その他の **メッセージ渡し値** 。
 
-### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>365 種類のファイルの種類レポートOffice Defender の詳細テーブル ビュー
+### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>[ファイルの種類] レポートの Defender Office 365ビュー
 
 [詳細テーブル **の表示]** をクリックすると、過去 10 日間組織内で発生したすべてのクリックのほぼリアルタイム ビューがレポートに表示されます。 表示される情報は、表示されているグラフによって異なります。
 
 - **データの表示方法: ファイル**:
 
-  - **日付**
+  - **Date**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **メッセージ ID**: メッセージ ヘッダーの **[Message-ID** ヘッダー] フィールドで使用できます。一意である必要があります。 値の例は `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 次のようになります (角かっこに注意してください)。
@@ -109,7 +109,7 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 - **データの表示方法: メッセージ**:
 
-  - **日付**
+  - **Date**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
@@ -127,14 +127,14 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 **ATP メッセージ廃棄レポート** には、悪意のあるコンテンツが検出された電子メール メッセージに対して実行されたアクションが表示されます。
 
-レポートを表示するには、セキュリティ & コンプライアンス センターを [開き、[](https://protection.office.com)レポートダッシュボード] に移動し、[365 メッセージの廃棄] で [Defender] \>  **Office選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ATPMessageReport> 。
+レポートを表示するには、セキュリティ & コンプライアンス センターを開き [、[](https://protection.office.com)レポートダッシュボード] に移動し、[Defender] を選択Office 365 \> **します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ATPMessageReport> 。
 
-![レポート ダッシュボードOffice 365 メッセージ廃棄ウィジェットの Defender](../../media/atp-message-disposition-report-widget.png)
+![レポート ダッシュボードOffice 365メッセージ廃棄ウィジェットの Defender](../../media/atp-message-disposition-report-widget.png)
 
 > [!NOTE]
-> このレポートの情報は [、365](#defender-for-office-365-file-types-report)種類のファイルの種類レポートOffice Defender でも使用できます。
+> このレポートの情報は、ファイルの種類レポートの[Defender でもOffice 365参照できます](#defender-for-office-365-file-types-report)。
 
-### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>365 メッセージ廃棄レポートOffice Defender のレポート ビュー
+### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>メッセージ廃棄レポートの Defender Office 365ビュー
 
 次のビューを利用できます。
 
@@ -143,9 +143,9 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
   - **アクセスをブロックする**
   - **置き換えられたメッセージ**
   - **監視対象のメッセージ**
-  - **動的メール配信に置き換えられる**: 詳細については、「安全な添付ファイルポリシー [での動的配信」を参照してください](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
+  - **動的メール配信に置き換えられる**: 詳細については、「添付ファイル ポリシーの [動的配信セーフを参照してください](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
 
-  ![365 ファイルの種類レポートOffice Defender のメッセージ ビュー](../../media/atp-file-types-report-message-view.png)
+  ![[ファイルの種類] レポートの Defender Office 365表示](../../media/atp-file-types-report-message-view.png)
 
   [フィルター] **をクリック** すると、次のフィルターを使用してレポートを変更できます。
 
@@ -154,31 +154,31 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 - **データの表示方法: ファイル**: グラフには、次の情報が含まれます。
 
-  - **悪意のある Excel の添付ファイル**
+  - **悪意のあるExcel添付ファイル**
   - **悪意のあるフラッシュの添付ファイル**
   - **悪意のある PDF 添付ファイル**
-  - **悪意のある PowerPoint 添付ファイル**
+  - **悪意のあるPowerPoint添付ファイル**
   - **悪意のある URL**
   - **悪意のある Word の添付ファイル**
   - **悪意のある実行可能ファイルの添付ファイル**
   - **Others**
 
-  特定の日 (データ ポイント) にカーソルを合わせると[、EOP](anti-malware-protection.md)で安全な添付ファイルと[](safe-attachments.md)マルウェア対策保護によって検出された悪意のあるファイルの種類の内訳を確認できます。
+  特定の日 (データ ポイント) にカーソルを合わせると[、EOP](safe-attachments.md)の セーフ 添付ファイルとマルウェア対策保護によって検出された悪意のあるファイルの種類の内訳を[確認できます](anti-malware-protection.md)。
 
-  ![365 ファイルの種類レポートOffice Defender のファイル ビュー](../../media/atp-file-types-report-file-view.png)
+  ![[ファイルの種類] レポートの [Defender Office 365ビュー]](../../media/atp-file-types-report-file-view.png)
 
   [フィルター] **をクリック** すると、次のフィルターを使用してレポートを変更できます。
 
   - **開始日と****終了日**
   - グラフに表示されるのと同じファイルの種類の値。
 
-### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>365 メッセージ廃棄レポートの Defender Office詳細テーブル ビュー
+### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>メッセージ廃棄レポートの Defender の詳細Office 365ビュー
 
 [詳細テーブル **の表示]** をクリックすると、過去 10 日間組織内で発生したすべてのクリックのほぼリアルタイム ビューがレポートに表示されます。 表示される情報は、表示されているグラフによって異なります。
 
 - **データの表示方法: メッセージ**:
 
-  - **日付**
+  - **Date**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
@@ -192,7 +192,7 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 - **データの表示方法: ファイル**:
 
-  - **日付**
+  - **Date**
   - **受信者のアドレス**
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
@@ -249,7 +249,7 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 詳細テーブル ビューには、次の情報が表示されます。
 
-- **日付**
+- **Date**
 - **パーセント**
 - **メッセージ数**
 - **全体的な待機時間**
@@ -262,11 +262,11 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-脅威保護の状態レポートは[、Exchange Online Protection](exchange-online-protection-overview.md) (EOP) と Microsoft Defender for Office 365 で検出およびブロックされた悪意のあるコンテンツと悪意のある電子メールに関する情報をまとめる単一のビューです。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。
+脅威 **保護の状態** レポートは [、Exchange Online Protection](exchange-online-protection-overview.md) (EOP) と Microsoft Defender for Office 365 によって検出およびブロックされた悪意のあるコンテンツと悪意のある電子メールに関する情報をまとめる単一のビューです。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。
 
 ## <a name="url-threat-protection-report"></a>URL 脅威保護レポート
 
-**URL 脅威保護レポートは、** 検出された脅威の概要と傾向ビュー、およびセーフ リンクの一部として URL クリックで実行されるアクション [を提供します](safe-links.md)。 このレポートには、セーフ リンク ポリシーが適用されているユーザーからのクリック データが表示されません。[ユーザーのクリックを追跡しない] オプション **が** 選択されています。
+**URL 脅威保護レポートには、** 検出された脅威の概要と傾向ビュー、および URL クリックに対するアクションが[リンク] リンクの一部としてセーフ [されます](safe-links.md)。 このレポートには、[リンク] ポリシーが適用されているユーザーセーフクリックデータが含まれる場合は、[ユーザーのクリックを追跡しない]**オプションが** 選択されています。
 
 レポートを表示するには、コンプライアンス センターのセキュリティ &[開き、[](https://protection.office.com)レポート **ダッシュボード]** に移動し \> 、[URL 保護レポート **] を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
 
@@ -285,7 +285,7 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
   - **ブロックおよびクリックスルー (** ユーザーが URL への引き続き移動を選択しました)
   - **スキャン中にクリックスルー** (ユーザーがスキャンが完了する前にリンクをクリックしました)
 
-  クリックすると、ユーザーがブロック ページをクリックして悪意のある Web サイトに移動した (管理者はセーフ リンク ポリシーでクリックスルーを無効にできます)。
+  クリックすると、ユーザーがブロック ページをクリックして悪意のある Web サイトに移動した (管理者は、[リンク] ポリシーでクリックセーフ無効にできます)。
 
   [フィルター] **をクリック** すると、次のフィルターを使用してレポートを変更できます。
 
@@ -294,7 +294,7 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 
   ![URL 脅威保護レポートの URL クリック保護アクション ビュー](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **アプリケーション別 URL クリック**: セーフ リンクをサポートするアプリケーション別の URL クリック数を示します。
+- **アプリケーション別 URL クリック**: リンクをサポートするアプリケーション別の URL クリック数セーフします。
 
   - **電子メール クライアント**
   - **PowerPoint**
@@ -317,8 +317,8 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 - **クリック時間**
 - **ユーザー**
 - **URL**
-- **操作**
-- **App**
+- **Action**
+- **アプリ**
 
 詳細テーブル ビュー **で [フィルター** ] をクリックすると、レポート ビューと同じ条件でフィルター処理したり、ドメインまたは受信者をコンマで区切ってフィルター処理できます。
 
@@ -338,27 +338,27 @@ microsoft Defender for Office 365 組織 (たとえば、Microsoft 365 E5 サブ
 |**エクスプローラー** (Microsoft Defender for Office 365 プラン 2) またはリアルタイム検出 **(Microsoft** Defender for Office 365 プラン 1)|[脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)|
 |**[上位の送信者** と受信者] レポート、スプーフィング メール レポート、スパム検出レポートなどの電子メール セキュリティ レポート。|[セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)|
 |**転送レポート、** メールフロー状態レポート、上位送信者と受信者レポートなどのメール フロー レポート。|[セキュリティ コンプライアンス センターでメール フロー レポート&表示する](view-mail-flow-reports.md)|
-|**安全なリンクの URL トレース** (PowerShell のみ)。 このコマンドレットの出力には、過去 7 日間のセーフ リンク アクションの結果が表示されます。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
-|EOP および Microsoft Defender のメール トラフィック結果は、Office **365** (PowerShell のみ) です。 このコマンドレットの出力には、ドメイン、日付、イベントの種類、方向、アクション、およびメッセージ数に関する情報が含まれる。|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
-|**EOP と Defender のメール詳細レポート (365** Officeの詳細レポート (PowerShell のみ)。 このコマンドレットの出力には、悪意のあるファイルまたは URL、フィッシングの試み、偽装、電子メールまたはファイル内のその他の潜在的な脅威に関する詳細が含まれる。|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|**[リンク] リンクセーフ URL トレース**(PowerShell のみ)。 このコマンドレットの出力には、過去 7 日間セーフリンク アクションの結果が表示されます。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
+|**EOP および Microsoft Defender for Office 365** トラフィックの結果 (PowerShell のみ)。 このコマンドレットの出力には、ドメイン、日付、イベントの種類、方向、アクション、およびメッセージ数に関する情報が含まれる。|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
+|**EOP と Defender のメール詳細レポート (powerShell Office 365)** このコマンドレットの出力には、悪意のあるファイルまたは URL、フィッシングの試み、偽装、電子メールまたはファイル内のその他の潜在的な脅威に関する詳細が含まれる。|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>365 レポートの Defender を表示するために必要Officeアクセス許可は何ですか?
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>レポートの Defender を表示するために必要なアクセス許可Office 365ですか?
 
 この記事で説明するレポートを表示および使用するには、セキュリティ コンプライアンス センターで次のいずれかの役割グループの&必要があります。
 
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ リーダー**
-- **グローバル閲覧者**
+- **グローバル リーダー**
 
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンスセンターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンス センターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 
-365 レポートのデータが Defender にOffice場合は、ポリシーが正しく設定されていることを確認してください。 365[](set-up-safe-links-policies.md)の保護を有効[](set-up-safe-attachments-policies.md)にするために、Defender に対して安全なリンク ポリシーと安全な添付Officeポリシーが定義されている必要があります。 「スパム [対策とマルウェア対策の保護」も参照してください](anti-spam-and-anti-malware-protection.md)。
+レポートのデータが Defender に表示されない場合Office 365ポリシーが正しく設定されていることを確認してください。 Defender for セーフ[保護](set-up-safe-links-policies.md)を有効セーフするために、[](set-up-safe-attachments-policies.md)組織にリンク ポリシーと添付ファイル Office 365が定義されている必要があります。 「スパム [対策とマルウェア対策の保護」も参照してください](anti-spam-and-anti-malware-protection.md)。
 
 ## <a name="related-topics"></a>関連項目
 

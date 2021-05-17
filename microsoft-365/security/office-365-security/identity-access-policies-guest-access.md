@@ -1,5 +1,5 @@
 ---
-title: ゲストユーザーと外部ユーザー B2B アクセスを許可する ID およびデバイス アクセス ポリシー - Microsoft 365 for enterprise |Microsoft Docs
+title: ゲストおよび外部ユーザー B2B アクセスを許可する ID およびデバイス アクセス ポリシー - エンタープライズ Microsoft 365の|Microsoft Docs
 description: ゲストと外部ユーザーのアクセスを保護するための推奨される条件付きアクセスと関連するポリシーについて説明します。
 ms.prod: m365-security
 ms.topic: article
@@ -54,9 +54,9 @@ B2B アカウントが Azure ADテナントで認証するためのパスを提�
 
 ## <a name="more-information"></a>詳細情報
 
-### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Microsoft Teams を使用したゲストと外部ユーザー アクセス
+### <a name="guests-and-external-user-access-with-microsoft-teams"></a>ゲストと外部ユーザー アクセス (Microsoft Teams
 
-Microsoft Teams では、次のユーザーを定義します。
+Microsoft Teamsユーザーを定義します。
 
 - **ゲスト アクセス** では、Azure AD B2B アカウントを使用し、チームのメンバーとして追加し、チームの通信とリソースにアクセスできます。
 
@@ -64,7 +64,7 @@ Microsoft Teams では、次のユーザーを定義します。
 
 詳細については、「チームのゲストと外部ユーザー アクセスの [比較」を参照してください](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
 
-Teams の ID とデバイス アクセス ポリシーのセキュリティ保護の詳細については、「Teams のチャット、グループ、およびファイルをセキュリティ保護するためのポリシーの推奨事項」を [参照してください](teams-access-policies.md)。
+Teams の ID およびデバイス アクセス ポリシーのセキュリティ保護の詳細については、「Teams チャット、グループ、およびファイルのセキュリティ保護に関するポリシーの推奨事項」を[参照してください](teams-access-policies.md)。
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>ゲストユーザーと外部ユーザーに対して常に MFA を要求する
 
@@ -82,7 +82,7 @@ Teams の ID とデバイス アクセス ポリシーのセキュリティ保�
 
 ## <a name="next-step"></a>次の手順
 
-![手順 4: Microsoft 365 クラウド アプリと Microsoft Cloud App Security のポリシー](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![手順 4: クラウド アプリMicrosoft 365ポリシー Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 次の条件付きアクセス ポリシーを構成します。
 

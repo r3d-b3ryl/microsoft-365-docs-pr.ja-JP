@@ -1,7 +1,7 @@
 ---
 title: Insider リスク管理 ユーザー ダッシュボード
-description: Insider リスク管理について Microsoft 365 のユーザー ダッシュボード
-keywords: Microsoft 365、Insider リスク管理、リスク管理、コンプライアンス
+description: インサイダーリスク管理について詳しくは、Microsoft 365
+keywords: Microsoft 365、インサイダーリスク管理、リスク管理、コンプライアンス
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -79,7 +79,7 @@ Users **ダッシュボードには、** インサイダー リスク管理ワ�
 ユーザーのリスク アクティビティの詳細を表示するには、[ユーザー] ダッシュボードでユーザーをダブルクリックして、ユーザーの詳細ウィンドウ **を開きます**。 詳細ウィンドウで、次の情報を表示できます。
 
 - **[ユーザー プロファイル]** タブ
-    - **名前とタイトル**: Azure Active Directory のユーザーの名前と位置のタイトル。 インサイダー リスク管理のグローバル匿名化設定が有効になっている場合、これらのユーザー フィールドは匿名化または空になります。
+    - **名前とタイトル**: ユーザーの名前と位置のタイトルをAzure Active Directory。 インサイダー リスク管理のグローバル匿名化設定が有効になっている場合、これらのユーザー フィールドは匿名化または空になります。
     - **ユーザーの電子** メール: ユーザーの電子メール アドレス。
     - **Alias**: ユーザーのネットワーク エイリアス。
     - **組織または部署**: ユーザーの組織または部署。
@@ -96,22 +96,22 @@ Users **ダッシュボードには、** インサイダー リスク管理ワ�
 
 すべてのインサイダー リスク管理ポリシーでスコープ内の状態からユーザーを手動で削除するには、次の手順を実行します。
 
-1. Microsoft [365 コンプライアンス センターで、[Insider](https://compliance.microsoft.com)リスク管理] に **移動** し、[ユーザー] タブ **を選択** します。
+1. [コンプライアンス センター [Microsoft 365インサイダー](https://compliance.microsoft.com)リスク管理] に **移動** し、[ユーザー] タブ **を選択** します。
 2. [ユーザー **] ダッシュボードで**、インサイダー リスク管理ポリシーでスコープ内から削除するユーザーまたはユーザーを選択します。
 3. [ユーザー **の削除] を選択します**。
 4. [ユーザーの **削除] ウィンドウで****、[削除]** または [キャンセル]**を選択して** 変更を破棄し、ダイアログを閉じます。
 5. 確認 **ウィンドウで [** 削除] を選択して、ユーザーを削除します。
 
-## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>ユーザーの Power Automat フローを使用して自動化されたタスクを実行する
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>ユーザーのワークフロー フローを使用Power Automateタスクを実行する
 
-推奨される Power Automate フローを使用すると、リスク調査担当者とアナリストは次の操作を迅速に実行できます。
+推奨されるデータ Power Automateを使用すると、リスク調査担当者とアナリストは次の操作を迅速に実行できます。
 
 - インサイダー リスク ポリシーに追加されたユーザーに通知する
 
-インサイダー リスク管理ユーザーの Power Automate フローを実行、管理、または作成するには、次の操作を行います。
+インサイダー リスク管理ユーザーのPower Automateを実行、管理、または作成するには、次のコマンドを実行します。
 
 1. ユーザー 操作 **ツール バー** の [自動化] を選択します。
-2. 実行する Power Automate フローを選択し、[フローの実行] **を選択します**。
+2. 実行するPower Automateを選択し、[フローの実行]**を選択します**。
 3. フローが完了したら、[完了] を **選択します**。
 
-インサイダー リスク管理の Power Automate フローの詳細については、「Insider リスク管理設定の概要 [」を参照してください](insider-risk-management-settings.md#power-automate-flows-preview)。
+インサイダー リスク管理のPower Automate詳細については、「Insider リスク管理設定の概要」[を参照してください](insider-risk-management-settings.md#power-automate-flows-preview)。

@@ -17,7 +17,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50904854"
 ---
-# <a name="microsoft-365-apps-for-enterprise"></a>エンタープライズ向け Microsoft  365 アプリ
+# <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
 ## <a name="initial-deployment"></a>初期展開
 

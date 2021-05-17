@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender セキュリティ センターの概要
-description: Microsoft Defender セキュリティ センターの機能 (アラートの動作方法など) と、侵害や攻撃の可能性を調査する方法に関する提案について説明します。
+description: アラートの動作など、Microsoft Defender セキュリティ センターの機能、および侵害や攻撃の可能性を調査する方法に関する提案について学習します。
 keywords: ダッシュボード、アラート キュー、アラートの管理、調査、アラートの調査、デバイスの調査、ファイルの送信、深い分析、高、中、低、重大度、ioc、ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -46,7 +46,7 @@ Microsoft Defender セキュリティ センターは、Microsoft Defender for E
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Microsoft Defender for Endpoint 対話型ガイド
 この対話型ガイドでは、Microsoft Defender for Endpoint を使用して組織に対する脅威を調査する方法について説明します。 Microsoft Defender for Endpoint が、疑わしいアクティビティの特定、組織のリスクの調査、脅威の修復に役立つ方法について説明します。
 
-[対話型ガイドを確認する](https://aka.ms/MSDE-IG)
+[対話型のガイドをチェックしてください](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>このセクションの内容
 

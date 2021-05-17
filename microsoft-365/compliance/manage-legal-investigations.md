@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: 組織の法的調査を管理するには、& 365 のセキュリティ Office コンプライアンス センターで電子情報開示ケースを使用します。
+description: 組織の法的調査を管理するには、&コンプライアンス センター Office 365電子情報開示ケースを使用します。
 ms.openlocfilehash: c052daab8de33e21cccc3c638ab4995a007f60fb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -48,19 +48,19 @@ ms.locfileid: "50903461"
   
 - [組織内の電子情報開示ケースに](create-a-report-on-holds-in-ediscovery-cases.md) 関連付けられているすべてのホールドに関する情報を含む電子情報開示ホールド レポートを作成します。
 
-- [電子情報開示ホールドにユーザーの](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) 一覧のメールボックスと OneDrive の場所を追加します。
+- [電子情報開示ホールドにOneDriveの](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)メールボックスと場所を追加します。
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示ソリューションを使用して法的調査を管理する
+## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>ソリューションを使用して法的Advanced eDiscoveryを管理Microsoft 365
 
-Microsoft 365 の高度な電子情報開示ソリューションは、Microsoft 365 の既存の電子情報開示と分析機能Officeしています。 *Advanced eDiscovery* と呼ばれるこの新しいソリューションは、組織の内部調査および外部調査に対応するコンテンツを保存、収集、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務チームが法的ホールド通知ワークフロー全体を管理して、ケースに関係する保管担当者と通信できます。
+このAdvanced eDiscoveryソリューションはMicrosoft 365既存の電子情報開示と分析機能に基Office 365。 *Advanced eDiscovery と* 呼ばれるこの新しいソリューションは、組織の内部および外部調査に対応するコンテンツを保存、収集、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務チームが法的ホールド通知ワークフロー全体を管理して、ケースに関係する保管担当者と通信できます。
 
-高度な電子情報開示には、Microsoft 365 組織または 365 組織Office E5 サブスクリプションが必要です。 ライセンスの詳細については、「Advanced [eDiscovery のセットアップ」を参照してください](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
+Advanced eDiscovery組織に E5 サブスクリプションがMicrosoft 365必要Office 365です。 ライセンスの詳細については、「Set [up Advanced eDiscovery」 を参照してください](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
 
-Advanced eDiscovery の組み込みワークフローの概要を次に示します。 詳細については、「Advanced [eDiscovery ワークフローの管理」を参照してください](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)。
+次に、ワークフロー内の組み込みワークフローの概要をAdvanced eDiscovery。 詳細については、「Manage [the Advanced eDiscovery ワークフロー」を参照してください](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)。
 
 - [開始するケースを](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) 作成します。
 
-- [カストディアンを](managing-custodians.md) ケースに追加し、自分のメールボックス、OneDrive アカウント、およびメンバーである Microsoft Teams のコンテンツを法的に保持することで、保管担当者を管理します。
+- [保管担当者を](managing-custodians.md)ケースに追加し、メールボックス、OneDrive アカウント、およびメンバーのコンテンツを法的に保持Microsoft Teams管理します。
 
 - [法的ホールド通知](managing-custodian-communications.md) プロセスを自動化して、保管担当者との通信を管理します。
 
@@ -74,4 +74,4 @@ Advanced eDiscovery の組み込みワークフローの概要を次に示しま
 
 - [外部弁護士によるレビュー](exporting-data-ediscover20.md) 用のケース データをエクスポートします。
 
-- Advanced eDiscovery[で長時間実行される](managing-jobs-ediscovery20.md)ジョブを管理します。
+- [サーバーで長時間実行されている](managing-jobs-ediscovery20.md)ジョブをAdvanced eDiscovery。

@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: グループ メンバーが Microsoft 365 グループとして電子メールを送信したり、Microsoft 365 グループに代わって電子メールを送信したりする方法について説明します。
+description: グループ メンバーがグループとして電子メールを送信したり、Microsoft 365グループに代わって電子メールを送信Microsoft 365する方法についてMicrosoft 365します。
 ms.openlocfilehash: cc0a9472f127fae94d77f618ed7347d844879ba8
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,23 +26,23 @@ ms.locfileid: "50904746"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>グループの代理として送信または送信するメンバーを許可する
 
-Send **as** または Send **onhalf** permissions が付与されている Microsoft 365 グループのメンバーは、グループとして、またはグループの代わりに電子メールを送信できます。 (グループ内のゲストにこれらのアクセス許可を付与することはできません)。
+Send **as** または send onhalf permissions が付与されているMicrosoft 365 グループのメンバーは、グループとして、またはグループの代わりに電子メールを送信できます。 (グループ内のゲストにこれらのアクセス許可を付与することはできません)。
 
-この記事では、グローバル管理者または Exchange 管理者がこれらのアクセス許可を設定する方法について説明します。
+この記事では、グローバル管理者または管理者がExchangeアクセス許可を設定する方法について説明します。
   
-たとえば **、Megan** Bowen がトレーニング Microsoft 365 グループの一部であり、グループに対するアクセス許可として送信を持つ場合、グループとして電子メールを送信すると、トレーニング グループがメールを送信したのようになります。 
+たとえば、Megan Bowen が Training **Microsoft 365** グループの一部であり、グループに対するアクセス許可として送信を持つ場合、そのユーザーがグループとして電子メールを送信すると、トレーニング グループが電子メールを送信したのようになります。 
   
-[ **代理で送信] アクセス** 許可を使用すると、ユーザーは Microsoft 365 グループに代わって電子メールを送信できます。 たとえば **、Alex** Wilber がマーケティング Microsoft 365 グループの一部であり、代理で送信権限を持ち、グループとして電子メールを送信する場合、電子メールは、マーケティングに代わって **Alex Wilber** によって送信されたように見えます。
+[**代理で送信] アクセス** 許可を使用すると、ユーザーはユーザーグループに代わって電子Microsoft 365できます。 たとえば、Alex Wilber がマーケティング Microsoft 365グループの一部であり、Send **on Behalf** アクセス許可を持ち、グループとして電子メールを送信する場合、電子メールは、マーケティングに代わって **Alex Wilber** によって送信されたように見えます。
 
 > [!IMPORTANT]
 > 指定したユーザー **に代わって** [送信] **または** [代理送信] を構成できますが、両方は構成できません。 両方を構成すると、既定で [として送信] **になります**。
 
 > [!TIP]
-> Outlook と Outlook on the Web を使用してグループから電子メールを送信する方法については [、「Microsoft 365](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) グループからまたは Microsoft 365 グループに代わって電子メールを送信する」を参照してください。
+> [グループから電子](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)メールを送信する方法については、「Microsoft 365 グループから電子メールを送信する」を参照してください。web 上で Outlook と Outlook を使用してグループから電子メールを送信する方法について説明します。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>メンバーがグループとして電子メールを送信するを許可する
 
-このセクションでは、ユーザーが Exchange Online の [Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) 管理センター (EAC) でグループとして電子メールを送信する方法について説明します。
+このセクションでは、ユーザーがグループとして電子メールを送信する方法について、Exchange管理センター [](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) でExchange Online。
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
@@ -60,7 +60,7 @@ Send **as** または Send **onhalf** permissions が付与されている Micro
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>メンバーがグループに代わって電子メールを送信するを許可する
 
-このセクションでは、ユーザーが Exchange Online の Exchange 管理センター (EAC) 内のグループに代わって電子メールを送信する方法について説明します。
+このセクションでは、ユーザーが組織の管理センター (EAC) のグループに代わって電子メールを送信Exchangeする方法についてExchange Online。
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
@@ -82,7 +82,7 @@ Send **as** または Send **onhalf** permissions が付与されている Micro
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 
-[Microsoft 365 グループの詳細](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[グループの詳細Microsoft 365する](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 

@@ -56,7 +56,7 @@ ms.locfileid: "51604371"
 
 アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
 :---|:---|:---
-Application |   AdvancedQuery.Read.All |    '高度なクエリを実行する'
+アプリケーション |   AdvancedQuery.Read.All |    '高度なクエリを実行する'
 委任 (職場または学校のアカウント) | AdvancedQuery.Read | '高度なクエリを実行する'
 
 >[!Note]

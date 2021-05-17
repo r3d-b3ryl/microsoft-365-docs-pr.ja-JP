@@ -21,12 +21,12 @@ ID | カテゴリ | ER | 住所 | ポート
 9 | 既定値<BR>必須 | いいえ | `odc.osi.office.de` | **TCP:** 443、80
 10 | 既定値<BR>必須 | いいえ | `*.wns.windows.com` | **TCP:** 443、80
 11 | 既定値<BR>必須 | いいえ | `officeapps.live.com` | **TCP:** 443、80
-12 | 既定値<BR>必須 | いいえ | `shellprod.msocdn.de, spoprod-a.akamaihd.net, static.sharepointonline.com` | **TCP:** 443、80
+12  | 既定値<BR>必須 | いいえ | `shellprod.msocdn.de, spoprod-a.akamaihd.net, static.sharepointonline.com` | **TCP:** 443、80
 13 | 既定値<BR>必須 | いいえ | `*.search.production.de.azuretrafficmanager.de` | **TCP:** 443
-14 | 既定値<BR>必須 | いいえ | `odc.officeapps.live.com, officeclient.microsoft.com` | **TCP:** 443、80
-15 | 既定値<BR>必須 | いいえ | `mobile.pipe.aria.microsoft.com, ssw.live.com, watson.telemetry.microsoft.com` | **TCP:** 443、80
-16 | 既定値<BR>必須 | いいえ | `oneclient.sfx.ms` | **TCP:** 443、80
-17 | 既定値<BR>必須 | いいえ | `*.svc.ms` | **TCP:** 443、80
+14  | 既定値<BR>必須 | いいえ | `odc.officeapps.live.com, officeclient.microsoft.com` | **TCP:** 443、80
+15  | 既定値<BR>必須 | いいえ | `mobile.pipe.aria.microsoft.com, ssw.live.com, watson.telemetry.microsoft.com` | **TCP:** 443、80
+16  | 既定値<BR>必須 | いいえ | `oneclient.sfx.ms` | **TCP:** 443、80
+17  | 既定値<BR>必須 | いいえ | `*.svc.ms` | **TCP:** 443、80
 
 ## <a name="skype-for-business-online-and-microsoft-teams"></a>Skype for Business Online および Microsoft Teams
 
@@ -39,16 +39,16 @@ ID | カテゴリ | ER | 住所 | ポート
 
 ID | カテゴリ | ER | 住所 | ポート
 -- | ------------------- | -- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------
-18 | 許可<BR>必須 | いいえ | `*.online.office.de`<BR>`51.4.144.200/32, 51.5.149.3/32, 51.18.16.0/23` | **TCP:** 443
+18  | 許可<BR>必須 | いいえ | `*.online.office.de`<BR>`51.4.144.200/32, 51.5.149.3/32, 51.18.16.0/23` | **TCP:** 443
 19 | 既定値<BR>必須 | いいえ | `*.cdn.office.net` | **TCP:** 443
 20 | 許可<BR>必須 | いいえ | `adminwebservice.microsoftonline.de, becws.microsoftonline.de, companymanager.microsoftonline.de, device.login.microsoftonline.de, directoryprovisioning.cloudapi.de, graph.cloudapi.de, graph.microsoft.de, login.microsoftonline.de, logincert.microsoftonline.de, pas.cloudapi.de, passwordreset.activedirectory.microsoftazure.de, provisioningapi.microsoftonline.de, syncservice.microsoftonline.de`<BR>`51.4.2.10/32, 51.4.71.61/32, 51.4.136.38/31, 51.4.136.40/31, 51.4.136.42/32, 51.4.146.38/32, 51.4.146.206/32, 51.5.16.7/32, 51.5.71.22/32, 51.5.136.32/30, 51.5.136.36/32, 51.5.145.29/32, 51.5.145.122/32` | **TCP:** 443、80
-× | 既定値<BR>必須 | いいえ | `*.msauth.net, *.msauthimages.de, *.msftauth.net, *.msftauthimages.de, secure.aadcdn.microsoftonline-p.com, secure.aadcdn.microsoftonline-p.de` | **TCP:** 443、80
-まで | 既定値<BR>必須 | いいえ | `*.de.msods.nsatc.net, *.office.de.akadns.net, *.windows.de.nsatc.net, officehome.msocdn.de, shellprod.msocdn.com` | **TCP:** 443、80
-日 | 既定値<BR>必須 | いいえ | `*.d-trust.net` | **TCP:** 443、80
+22 | 既定値<BR>必須 | いいえ | `*.msauth.net, *.msauthimages.de, *.msftauth.net, *.msftauthimages.de, secure.aadcdn.microsoftonline-p.com, secure.aadcdn.microsoftonline-p.de` | **TCP:** 443、80
+25 | 既定値<BR>必須 | いいえ | `*.de.msods.nsatc.net, *.office.de.akadns.net, *.windows.de.nsatc.net, officehome.msocdn.de, shellprod.msocdn.com` | **TCP:** 443、80
+26 | 既定値<BR>必須 | いいえ | `*.d-trust.net` | **TCP:** 443、80
 27 | 許可<BR>必須 | いいえ | `*.onmicrosoft.de, *.osi.office.de, office.de, portal.office.de, webshell.suite.office.de, www.office.de`<BR>`51.4.70.0/24, 51.4.71.0/24, 51.4.226.115/32, 51.4.227.178/32, 51.4.230.178/32, 51.5.70.0/24, 51.5.71.0/24, 51.5.147.48/32, 51.5.242.163/32, 51.5.245.67/32, 2a01:4180:2001::2/128, 2a01:4180:2001::3/128, 2a01:4180:2001::92/128, 2a01:4180:2001::234/128, 2a01:4180:2001::3b8/128, 2a01:4180:2401::5/128, 2a01:4180:2401::11e/128, 2a01:4180:2401::11f/128, 2a01:4180:2401::33b/128, 2a01:4180:2401::55b/128` | **TCP:** 443、80
-個 | 既定値<BR>必須 | いいえ | `*.cloudfront.net, prod.msocdn.de, r1.res.office365.com, shellprod.msocdn.de` | **TCP:** 443、80
+28 | 既定値<BR>必須 | いいえ | `*.cloudfront.net, prod.msocdn.de, r1.res.office365.com, shellprod.msocdn.de` | **TCP:** 443、80
 29 | 許可<BR>必須 | いいえ | `51.4.144.41/32, 51.4.144.174/32, 51.4.145.38/32, 51.4.147.81/32, 51.4.147.233/32, 51.4.148.12/32, 51.4.150.145/32, 51.5.147.242/32, 51.5.149.100/32, 51.5.149.119/32, 51.5.149.123/32, 51.5.149.180/32, 51.5.149.186/32, 51.18.0.0/21` | **TCP:** 443、80
-31 | 既定値<BR>必須 | いいえ | `sharepoint.de` | **TCP:** 443、80
+30 | 既定値<BR>必須 | いいえ | `sharepoint.de` | **TCP:** 443、80
 31 | 既定値<BR>必須 | いいえ | `o15.officeredir.microsoft.com, odc.officeapps.live.com, odcsm.officeapps.live.com, office.microsoft.com, office15client.microsoft.com, officeimg.vo.msecnd.net, roaming.officeapps.live.com` | **TCP:** 443、80
 33 | 既定値<BR>必須 | いいえ | `res.delve.office.com` | **TCP:** 443
 34 | 既定値<BR>必須 | いいえ | `lpcres.delve.office.com` | **TCP:** 443

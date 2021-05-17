@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のユーザーアカウントに PowerShell を使用することを禁止する
+title: PowerShell Microsoft 365ユーザー アカウントをブロックする
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: PowerShell を使用して、Microsoft 365 アカウントへのアクセスをブロックおよびブロック解除する方法について説明します。
+description: PowerShell を使用して、アカウントへのアクセスをブロックおよびブロック解除するMicrosoft 365方法。
 ms.openlocfilehash: c1a79d925965fafd796033182098e68e26a81473
 ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
@@ -26,28 +26,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/24/2020
 ms.locfileid: "48754682"
 ---
-# <a name="block-microsoft-365-user-accounts-with-powershell"></a>Microsoft 365 のユーザーアカウントに PowerShell を使用することを禁止する
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントをブロックする
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 アカウントへのアクセスをブロックする場合は、ユーザーがアカウントを使用して Microsoft 365 組織のサービスとデータにサインインしてアクセスするのを防ぐことができます。 PowerShell を使用して、個別のまたは複数のユーザーアカウントへのアクセスをブロックすることができます。
+Microsoft 365 アカウントへのアクセスをブロックすると、だれもがアカウントを使用してサインインし、組織のサービスとデータにアクセスMicrosoft 365します。 PowerShell を使用して、個々のユーザー アカウントまたは複数のユーザー アカウントへのアクセスをブロックできます。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
  
-### <a name="block-access-to-individual-user-accounts"></a>個別のユーザーアカウントへのアクセスをブロックする
+### <a name="block-access-to-individual-user-accounts"></a>個々のユーザー アカウントへのアクセスをブロックする
 
-個々のユーザーアカウントをブロックするには、次の構文を使用します。
+次の構文を使用して、個々のユーザー アカウントをブロックします。
   
 ```powershell
 Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $false
 ```
 
 > [!NOTE]
-> **AzureAD**コマンドレットの *-ObjectID*パラメーターは、アカウントのサインイン名 (ユーザープリンシパル名とも呼ばれる)、またはアカウントのオブジェクト ID のいずれかを受け入れます。
+> *Set-AzureAD* コマンドレットの **-ObjectID** パラメーターは、アカウントサインイン名 (ユーザー プリンシパル名とも呼ばれる) またはアカウントのオブジェクト ID を受け入れる。
   
-この例では、ユーザーアカウント *fabricec@litwareinc.com*へのアクセスをブロックします。
+次の使用例は、ユーザー アカウントへの *アクセスをブロック* fabricec@litwareinc.com。
   
 ```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
@@ -59,7 +59,7 @@ Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $true
 ```
 
-ユーザーの表示名に基づいてユーザーアカウント UPN を表示するには、次のコマンドを使用します。
+ユーザーの表示名に基づいてユーザー アカウント UPN を表示するには、次のコマンドを使用します。
   
 ```powershell
 $userName="<display name>"
@@ -67,7 +67,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-この例では、ユーザー  *Caleb*のユーザーアカウント UPN を表示します。
+次の使用例は、ユーザー  *Caleb Sills のユーザー アカウント UPN を表示します*。
   
 ```powershell
 $userName="Caleb Sills"
@@ -82,15 +82,15 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 
 ```
 
-ユーザーアカウントのブロックされた状態を確認するには、次のコマンドを使用します。
+ユーザー アカウントのブロックされた状態を確認するには、次のコマンドを使用します。
   
 ```powershell
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
-### <a name="block-multiple-user-accounts"></a>複数のユーザーアカウントをブロックする
+### <a name="block-multiple-user-accounts"></a>複数のユーザー アカウントをブロックする
 
-複数のユーザーアカウントのアクセスをブロックするには、次のように各行に1つのアカウントサインイン名を含むテキストファイルを作成します。
+複数のユーザー アカウントのアクセスをブロックするには、次のように各行に 1 つのアカウント サインイン名を含むテキスト ファイルを作成します。
     
   ```powershell
 akol@contoso.com
@@ -98,7 +98,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-次のコマンドでは、サンプルテキストファイルは *C:\My Documents\Accounts.txt*です。 このファイル名を、テキストファイルのパスとファイル名に置き換えます。
+次のコマンドでは、テキスト ファイルの例は *C:\My Documents\Accounts.txtです*。 このファイル名をテキスト ファイルのパスとファイル名に置き換える。
   
 テキスト ファイルに記載されているアカウントへのアクセスをブロックするには、次のコマンドを実行します。
     
@@ -106,7 +106,7 @@ kakers@contoso.com
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $false }
 ```
 
-テキストファイルに記載されているアカウントのブロックを解除するには、次のコマンドを実行します。
+テキスト ファイルに一覧表示されているアカウントのブロックを解除するには、次のコマンドを実行します。
     
 ```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
@@ -114,20 +114,20 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
     
-### <a name="block-individual-user-accounts"></a>個別のユーザーアカウントをブロックする
+### <a name="block-individual-user-accounts"></a>個々のユーザー アカウントをブロックする
 
-個別のユーザーアカウントのアクセスをブロックするには、次の構文を使用します。
+個々のユーザー アカウントのアクセスをブロックするには、次の構文を使用します。
   
 ```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
 ```
 
 >[!Note]
->PowerShell Core は、Windows PowerShell モジュールの Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 これらのコマンドレットは、Windows PowerShell から実行する必要があります。
+>PowerShell Core では、Msol を名前に含Microsoft Azure Active DirectoryモジュールWindows PowerShellコマンドレットのモジュール *モジュールは* サポートされていません。 これらのコマンドレットは、次の手順で実行Windows PowerShell。
 
-この例では、ユーザーアカウント *fabricec \@ litwareinc.com*へのアクセスをブロックします。
+この例では、ユーザー アカウント *fabricec \@* へのアクセスをブロック litwareinc.com。
   
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
@@ -139,15 +139,15 @@ Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $false
 ```
 
-ユーザーアカウントのブロック状態を確認するには、次のコマンドを実行します。
+ユーザー アカウントのブロックされた状態を確認するには、次のコマンドを実行します。
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayName,BlockCredential
 ```
 
-### <a name="block-access-for-multiple-user-accounts"></a>複数のユーザーアカウントのアクセスをブロックする
+### <a name="block-access-for-multiple-user-accounts"></a>複数のユーザー アカウントのアクセスをブロックする
 
-最初に、次のような各行に1つのアカウントを含むテキストファイルを作成します。
+最初に、次のように各行に 1 つのアカウントを含むテキスト ファイルを作成します。
     
 ```powershell
 akol@contoso.com
@@ -155,9 +155,9 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-次のコマンドでは、サンプルテキストファイルは *C:\My Documents\Accounts.txt*です。 このファイル名を、テキストファイルのパスとファイル名に置き換えます。
+次のコマンドでは、テキスト ファイルの例は *C:\My Documents\Accounts.txtです*。 このファイル名をテキスト ファイルのパスとファイル名に置き換える。
     
-テキストファイルに記載されているアカウントのアクセスをブロックするには、次のコマンドを実行します。
+テキスト ファイルに一覧表示されているアカウントのアクセスをブロックするには、次のコマンドを実行します。
     
   ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }

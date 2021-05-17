@@ -25,7 +25,7 @@ ms.locfileid: "50904758"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>管理されたゲストで B2B エクストラネットを作成する
 
-Azure Active Directory のエンタイトルメント [管理を使用](/azure/active-directory/governance/entitlement-management-overview) して、B2B エクストラネットを作成して、Azure Active Directory を使用するパートナー組織と共同作業できます。 これにより、ユーザーはエクストラネット サイトまたはチームに自己登録し、承認ワークフローを介してアクセスを受け取るできます。
+エンタイトルメント[管理Azure Active Directory使用](/azure/active-directory/governance/entitlement-management-overview)して、B2B エクストラネットを作成して、このサービスを使用するパートナー組織とAzure Active Directory。 これにより、ユーザーはエクストラネット サイトまたはチームに自己登録し、承認ワークフローを介してアクセスを受け取るできます。
 
 このグループ作業のリソースを共有する方法により、パートナー組織はゲストの維持と承認を支援し、IT 部門の負担を軽減し、コラボレーション契約に精通しているユーザーがユーザー アクセスを管理できるようにすることができます。
 
@@ -35,7 +35,7 @@ Azure Active Directory のエンタイトルメント [管理を使用](/azure/a
 
 ## <a name="license-requirements"></a>ライセンス要件
 
-この機能を使用するには、Azure ADプレミアム P2 ライセンスが必要です。 
+この機能を使用するには、Azure AD プレミアム P2 ライセンスが必要です。 
 
 Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現在使用できません。
 
@@ -45,45 +45,45 @@ Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
-## <a name="connect-the-partner-organization"></a>パートナー組織を接続する
+## <a name="connect-the-partner-organization"></a>Connect組織を管理する
 
-パートナー組織からゲストを招待するには、パートナーのドメインを Azure Active Directory の接続組織として追加する必要があります。
+パートナー組織からゲストを招待するには、パートナーのドメインを接続組織として追加する必要Azure Active Directory。
 
 接続された組織を追加するには
-1. [Azure Active Directory で、[ID ガバナンス](https://aad.portal.azure.com)]**をクリックします**。
+1. [Azure Active Directory] で [、[ID](https://aad.portal.azure.com)ガバナンス]**をクリックします**。
 2. [接続 **された組織] をクリックします**。
 4. [接続 **された組織の追加] をクリックします**。
 5. 組織の名前と説明を入力し、[次へ **: ディレクトリとドメイン] をクリックします**。
 6. [ディレクトリ **とドメインの追加] をクリックします**。
 7. 接続する組織のドメインを入力し、[追加] を **クリックします**。
-8. [ **接続] を** クリックし、[次へ **: スポンサー] をクリックします**。
+8. **[Connect]** をクリックし、[次へ:**スポンサー] をクリックします**。
 9. ゲストのアクセスを承認するユーザーに接続する組織または組織のユーザーを追加します。
 10. **[次へ: 確認 + 作成]** をクリックします。
 11. 選択した設定を確認し、[作成] を **クリックします**。
 
-    ![Azure Active Directory の接続組織ページのスクリーンショット](../media/identity-governance-connected-organizations.png)
+    ![[組織の接続] ページのスクリーンショット (Azure Active Directory](../media/identity-governance-connected-organizations.png)
 
 ## <a name="choose-the-resources-to-share"></a>共有するリソースを選択する
 
 パートナー組織と共有するリソースを選択する最初の手順は、それらを含むカタログを作成します。
 
 カタログを作成するには
-1. [Azure Active Directory で、[ID ガバナンス](https://aad.portal.azure.com)]**をクリックします**。
+1. [Azure Active Directory] で [、[ID](https://aad.portal.azure.com)ガバナンス]**をクリックします**。
 2. [カタログ **] をクリックします**。
 3. [新 **しいカタログ] をクリックします**。
 4. カタログの名前と説明を入力し、外部ユーザーに対して **有効** と有効の両方が [はい]**に設定されています**。
 5. **[作成]** をクリックします。
 
-   ![Azure Active Directory Identity Governance のカタログ ページのスクリーンショット](../media/identity-governance-catalogs.png)
+   ![ID ガバナンスのカタログ ページAzure Active Directoryスクリーンショット](../media/identity-governance-catalogs.png)
 
-カタログを作成したら、パートナー組織と共有する SharePoint サイトまたはチームを追加します。
+カタログを作成したら、パートナー組織とSharePointするサイトまたはチームを追加します。
 
 カタログにリソースを追加するには
 1. Azure AD ID ガバナンスで、[カタログ] をクリックし、リソースを追加するカタログをクリックします。
 2. [リソース **] をクリック** し、[リソースの **追加] をクリックします**。
-3. エクストラネットに含めるチームまたは SharePoint サイトを選択し、[追加] を **クリックします**。
+3. エクストラネットに含SharePointチームまたはサイトを選択し、[追加] を **クリックします**。
 
-   ![Azure Active Directory Identity Governance のカタログ リソース ページのスクリーンショット](../media/identity-governance-catalog-resource.png)
+   ![ID ガバナンスのカタログ リソース ページAzure Active Directoryスクリーンショット](../media/identity-governance-catalog-resource.png)
 
 共有するリソースを定義したら、次に、パートナー ユーザーに付与されるアクセスの種類と、アクセスを要求する新しいパートナー ユーザーの承認プロセスを定義するアクセス パッケージを作成します。
 
@@ -105,7 +105,7 @@ Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現�
 15. 使用する有効期限とアクセスレビュー設定を選択し、[次へ: レビュー+ 作成] **をクリックします**。
 16. 設定を確認し、[作成] を **クリックします**。
 
-    ![Azure Active Directory Identity Governance の [アクセス パッケージ] 画面のスクリーンショット](../media/identity-governance-access-packages.png)
+    ![Id ガバナンスの [アクセス パッケージ] 画面Azure Active Directoryスクリーンショット](../media/identity-governance-access-packages.png)
 
 大規模な組織と提携している場合は、アクセス パッケージを非表示にできます。 パッケージが非表示の場合、パートナー組織のユーザーは自分のマイ アクセス ポータルにパッケージ *を表示* されません。 代わりに、パッケージにサインアップするために直接リンクを送信する必要があります。 アクセス パッケージを非表示にすると、不適切なアクセス要求の数が減り、パートナー組織のポータルで利用可能なアクセス パッケージを整理し続けるのに役立ちます。
 

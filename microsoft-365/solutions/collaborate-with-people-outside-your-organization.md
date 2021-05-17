@@ -34,7 +34,7 @@ Microsoft 365 の外部共有機能により、組織内のユーザーはディ
 - **共有を有効にする** - Azure Active Directory、Teams、Microsoft 365 グループ、および SharePoint 全体で共有コントロールを構成して、組織に必要な共有レベルを許可します。
 - **追加のセキュリティを有効にする** - 組織外のユーザーに認証を要求するように基本的な共有機能を構成することができると同時に、Microsoft 365 には、データを保護し、外部と共有しながらガバナンス ポリシーを維持するのに役立つ多くの追加のセキュリティとコンプライアンス機能があります。
 
-[「Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams)および Microsoft Teams との安全なコラボレーションのセットアップ」を参照して、外部共有が Microsoft 365 の全体的なコラボレーション ガイダンスとどのように結び付くのかについて説明します。
+外部[共有がコラボレーション](/microsoft-365/solutions/setup-secure-collaboration-with-teams)ガイダンス全体とどのように結びMicrosoft 365、Microsoft Teamsとセキュリティで保護されたコラボレーションをセットアップするMicrosoft 365参照してください。
 
 ## <a name="enable-sharing"></a>共有を有効にする
 

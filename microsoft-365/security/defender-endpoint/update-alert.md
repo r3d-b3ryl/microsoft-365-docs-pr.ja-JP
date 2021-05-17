@@ -68,7 +68,7 @@ PATCH /api/alerts/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | 文字列 | application/json. **必須**
@@ -79,7 +79,7 @@ Content-Type | 文字列 | application/json. **必須**
 <br>要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 
 <br>最適なパフォーマンスを得る場合は、変更していない既存の値を含めてはならない。
 
-プロパティ | 種類 | 説明
+プロパティ | 型 | 説明
 :---|:---|:---
 status | String | アラートの現在の状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。
 assignedTo | String | アラートの所有者

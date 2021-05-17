@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 データセンターの電子メール サーバーの評判を保護するために、配信プールがどのように使用されるのかについて説明します。
+description: 配信プールを使用して、データ センター内の電子メール サーバーの評判を保護するMicrosoft 365します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
@@ -33,12 +33,12 @@ ms.locfileid: "51599913"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 データセンター内の電子メール サーバーは、スパムの送信について一時的に有罪になる可能性があります。 たとえば、Microsoft 365 経由で送信メールを送信するオンプレミスの電子メール組織でのマルウェアや悪意のあるスパム攻撃、または Microsoft 365 アカウントの侵害などです。 また、攻撃者は Microsoft 365 転送を介してメッセージを中継して検出を回避しようとする。
+データセンター内のMicrosoft 365サーバーは、スパムの送信を一時的に有罪にしている可能性があります。 たとえば、オンプレミスの電子メール組織でマルウェアや悪意のあるスパム攻撃が発生し、Microsoft 365アカウントを介して送信Microsoft 365します。 攻撃者は、転送を介してメッセージを中継して検出Microsoft 365します。
 
-これらのシナリオでは、影響を受ける Microsoft 365 データセンター サーバーの IP アドレスがサード パーティのブロックリストに表示される可能性があります。 これらのブロックリストを使用する宛先電子メール組織は、これらのメッセージ ソースからの電子メールを拒否します。
+これらのシナリオでは、影響を受けるデータセンター サーバーの IP Microsoft 365サード パーティのブロックリストに表示される可能性があります。 これらのブロックリストを使用する宛先電子メール組織は、これらのメッセージ ソースからの電子メールを拒否します。
 
 ## <a name="high-risk-delivery-pool"></a>リスクの高い配信プール
-これを防止するために、スパムと判断された Microsoft 365 データセンター サーバーからの送信メッセージ、またはサービスまたは送信スパム ポリシーの送信制限 [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)を超えている [](configure-the-outbound-spam-policy.md)すべての送信メッセージは、リスクの高い配信プールを介して _送信されます_。
+これを防止するために、スパムと判断された、またはサービスまたは送信スパム ポリシーの送信制限を超えている Microsoft 365 データセンター サーバーからの送信メッセージはすべて [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)、リスクの [](configure-the-outbound-spam-policy.md)高い配信プールを介して _送信されます_。
 
 リスクの高い配信プールは、"低品質" メッセージ (スパムやバックスカッターなど) の送信にのみ使用される送信メール用の個別の IP アドレス [プールです](backscatter-messages-and-eop.md)。 リスクの高い配信プールを使用すると、送信メールの通常の IP アドレス プールがスパムを送信するのを防ぐのに役立ちます。 送信電子メールの通常の IP アドレス プールは、"高品質" メッセージを送信する評判を維持し、IP ブロックリストにこれらの IP アドレスが表示される可能性を低減します。
 

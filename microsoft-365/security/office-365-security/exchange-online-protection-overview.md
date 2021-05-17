@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
-description: Exchange Online Protection (EOP) がスタンドアロン環境とハイブリッド環境でオンプレミスの電子メール組織を保護する方法について説明します。
+description: スタンドアロン環境Exchange Online Protectionハイブリッド環境で、EOP (EOP) がオンプレミスの電子メール組織を保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: b699c0d6353d725b8d03cf4cf556a3e2ac798041
@@ -31,9 +31,9 @@ ms.locfileid: "51687055"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online Protection (EOP) は、スパムやマルウェアから組織を保護するのに役立つクラウドベースのフィルター サービスです。 EOP は、Exchange Online メールボックスを持つすべての Microsoft 365 組織に含まれています。 ただし、EOP は、次のオンプレミスシナリオでも使用できます。
+Exchange Online Protection (EOP) は、スパムやマルウェアから組織を保護するのに役立つクラウドベースのフィルター サービスです。 EOP は、すべての組織Microsoft 365メールボックスExchange Onlineされます。 ただし、EOP は、次のオンプレミスシナリオでも使用できます。
 
-- **スタンドアロンシナリオ:** EOP は、オンプレミスの Exchange 組織または他のオンプレミス SMTP 電子メール ソリューションに対してクラウドベースの電子メール保護を提供します。
+- **スタンドアロン シナリオ:** EOP は、オンプレミスの組織または他のオンプレミス SMTP 電子メール ソリューションExchangeクラウドベースの電子メール保護を提供します。
 
 - **ハイブリッド展開では**、EOP を構成して、オンプレミスメールボックスとクラウド メールボックスが混在している場合にメール環境を保護し、メール ルーティングを制御できます。
 
@@ -51,7 +51,7 @@ EOP の仕組みを理解すると、受信メールの処理方法がわかり�
 
 - 次に、メッセージがマルウェアの兆候を検査します。 メッセージまたは添付ファイルにマルウェアが見つかった場合、メッセージは管理者専用の検疫ストアにルーティングされます。 マルウェア対策の構成の詳細については、こちらを参照 [してください](configure-anti-malware-policies.md)。
 
-- メッセージはポリシー フィルター処理を続け、テンプレートから作成または適用するカスタム メール フロー ルール (トランスポート ルールとも呼ばれる) に対して評価されます。 たとえば、特定の送信者からメールが届いたときにマネージャーに通知を送信するルールを設定できます。 データ損失防止 (DLP) チェックもこの時点で行います (Exchange Enterprise CAL with Services)。
+- メッセージはポリシー フィルター処理を続け、テンプレートから作成または適用するカスタム メール フロー ルール (トランスポート ルールとも呼ばれる) に対して評価されます。 たとえば、特定の送信者からメールが届いたときにマネージャーに通知を送信するルールを設定できます。 データ損失防止 (DLP) チェックは、この時点でも発生します (Exchange Enterprise CAL with Services)。
 
 - 次に、メッセージはコンテンツ フィルター (スパム対策とも呼ばれる) を通過します。 このフィルターがスパムまたはフィッシングと判断したメッセージは、検疫、またはユーザーの迷惑メール フォルダーなど、他のオプションに送信できます。 詳細については、「 [スパム対策ポリシーを構成する](configure-your-spam-filter-policies.md) 」および「フィッシング対策ポリシーを構成 [する」を参照してください](configure-anti-phishing-policies-eop.md)。
 
@@ -65,14 +65,14 @@ EOP の仕組みを理解すると、受信メールの処理方法がわかり�
 
 - **EOP スタンドアロン**: オンプレミスの電子メール組織を保護するために EOP に登録します。
 
-- **Exchange Online の EOP** 機能: Exchange Online (スタンドアロンまたは Microsoft 365 の一部として) を含むサブスクリプションは、EOP を使用して Exchange Online メールボックスを保護します。
+- **Exchange Online の EOP** 機能: Exchange Online (スタンドアロンまたは Microsoft 365 の一部として) を含むサブスクリプションでは、EOP を使用して、Exchange Online メールボックスを保護します。
 
 - **Exchange Enterprise CAL with Services**: 追加の Exchange Enterprise CAL with Services ライセンスを購入したオンプレミスの Exchange 組織がある場合、EOP は付属のサービスの一部です。
 
-すべての EOP サブスクリプション プランの要件、重要な制限、および機能の可用性については、「Exchange Online Protection サービスの説明」 [を参照してください](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+すべての EOP サブスクリプション プランの要件、重要な制限、および機能の可用性については[、「Exchange Online Protection」を参照してください](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
 > [!NOTE]
-> **365 E3 サブスクリプションOffice EOP が含まれています**。 サブスクリプションで EOP セキュリティ機能をセットアップする手順と、microsoft Defender for Office 365 サブスクリプションが提供するセキュリティの追加に関する情報については、「脅威から保護する」を参照[してください。](protect-against-threats.md) セットアップ用の EOP 機能の推奨設定については、「推奨事項[](best-practices-for-configuring-eop.md)」の記事を参照してください。EOP 設定は特に呼び出されます。
+> E3 サブスクリプションに **E3 Office 365 EOP が含まれています**。 サブスクリプションで EOP セキュリティ機能をセットアップする手順と、microsoft Defender for Office 365 サブスクリプションが提供できる追加のセキュリティに関する情報については、「脅威から保護する」を[参照してください](protect-against-threats.md)。 セットアップ用の EOP 機能の推奨設定については、「推奨事項[](best-practices-for-configuring-eop.md)」の記事を参照してください。EOP 設定は特に呼び出されます。
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>オンプレミスの電子メール組織の EOP のセットアップ
 
@@ -88,15 +88,15 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 
 - ヨーロッパ、中東、およびアフリカ (EMEA) では、すべての Exchange Online メールボックスが EMEA データセンターに配置され、すべてのメッセージが EOP フィルター処理のために EMEA データセンター経由でルーティングされます。
 
-- このAsia-Pacific (APAC) では、すべての Exchange Online メールボックスが APAC データセンターに配置され、メッセージは現在、EOP フィルター処理のために APAC データセンターを介してルーティングされます。
+- APAC Asia-Pacificでは、すべての Exchange Online メールボックスは APAC データセンターにあり、メッセージは現在、EOP フィルター処理のために APAC データセンターを介してルーティングされます。
 
 - 南北アメリカでは、サービスは次の場所に配布されます。
 
-  - 南アメリカ: Exchange Online メールボックスは、ブラジルとチリのデータセンターに配置されます。 すべてのメッセージは、EOP フィルター処理のためにローカル データセンター経由でルーティングされます。 検疫されたメッセージは、テナントが配置されているデータセンターに格納されます。
+  - 南アメリカ: Exchange Onlineは、ブラジルとチリのデータセンターに配置されます。 すべてのメッセージは、EOP フィルター処理のためにローカル データセンター経由でルーティングされます。 検疫されたメッセージは、テナントが配置されているデータセンターに格納されます。
 
-  - カナダ: Exchange Online メールボックスは、カナダのデータセンターに配置されます。 すべてのメッセージは、EOP フィルター処理のためにローカル データセンター経由でルーティングされます。 検疫されたメッセージは、テナントが配置されているデータセンターに格納されます。
+  - カナダ: Exchange Onlineメールボックスはカナダのデータセンターに配置されます。 すべてのメッセージは、EOP フィルター処理のためにローカル データセンター経由でルーティングされます。 検疫されたメッセージは、テナントが配置されているデータセンターに格納されます。
 
-  - 米国: Exchange Online メールボックスは、米国のデータセンターに配置されます。 すべてのメッセージは、EOP フィルター処理のためにローカル データセンター経由でルーティングされます。 検疫されたメッセージは、テナントが配置されているデータセンターに格納されます。
+  - 米国: Exchange Onlineメールボックスは米国のデータセンターに配置されます。 すべてのメッセージは、EOP フィルター処理のためにローカル データセンター経由でルーティングされます。 検疫されたメッセージは、テナントが配置されているデータセンターに格納されます。
 
 - Government Community Cloud (GCC) では、すべての Exchange Online メールボックスが米国データセンターに配置され、すべてのメッセージが EOP フィルター処理のために米国データセンター経由でルーティングされます。
 
@@ -104,7 +104,7 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 
 EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリで構成されます。
 
-- [Office 365](protect-against-threats.md)管理者向け Microsoft Defender の EOP、第 1 日の構成 : Office 365 の Microsoft Defender の中核となる EOP 保護と検出ツールの構成。
+- Microsoft Defender for Office 365 管理者向け[EOP、Day 1](protect-against-threats.md)を構成する : Microsoft Defender for Office 365 の中核となる EOP 保護と検出ツールの構成。
 
 - [EOP 機能: EOP](eop-features.md)で使用できる機能の一覧を提供します。
 
@@ -122,9 +122,9 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
 
 - [EOP でのスパム](anti-spam-and-anti-malware-protection.md)対策とマルウェア対策の保護: スパム フィルターとマルウェア フィルターについて説明し、組織のニーズに最も合わせてカスタマイズする方法を示します。 また、管理者とエンド ユーザーが検疫済みメッセージに対して実行可能なタスクについても説明しています。
 
-- [Exchange Online Protection でのレポートとメッセージの追跡](reporting-and-message-trace-in-exchange-online-protection.md): 使用可能なレポートとトラブルシューティング ツールについて説明します。
+- [[レポートとメッセージの追跡](reporting-and-message-trace-in-exchange-online-protection.md)Exchange Online Protection: 使用可能なレポートとトラブルシューティング ツールについて説明します。
 
-- [スタンドアロン EOP](exchange-admin-center-in-exchange-online-protection-eop.md)の Exchange 管理センター : EOP サービスを管理するために Exchange 管理センター (EAC) 管理インターフェイスにアクセスして移動する方法について説明します。
+- [Exchange EOP](exchange-admin-center-in-exchange-online-protection-eop.md)で管理センターを管理する : EOP サービスを管理するために、Exchange 管理センター (EAC) 管理インターフェイスにアクセスして移動する方法について説明します。
 
 - [Exchange Online Protection PowerShell](/powershell/exchange/exchange-online-protection-powershell): リモート PowerShell に関する情報を提供します。これにより、コマンド ラインから EOP サービスを管理できます。
 

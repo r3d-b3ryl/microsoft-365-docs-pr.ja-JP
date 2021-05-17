@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for microsoft Defender for Office 365
+title: Microsoft Defender for microsoft Defender の手順に合った脅威保護Office 365
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -10,7 +10,7 @@ ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
-description: Microsoft Defender の脅威フィルター スタックを通じて受信メッセージのパスに従って、Officeします。
+description: Microsoft Defender の脅威フィルター スタックを通じて受信メッセージのパスに従って、Office 365。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 0760bd7a67f175e4af114324ccc729355ad5f593
@@ -20,12 +20,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51601391"
 ---
-# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender for Office 365
+# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
 
-Microsoft Defender for Office 365 保護またはフィルター 処理スタックは、この記事のように 4 つのフェーズに分割できます。 一般的に、受信メールは配信前にこれらすべてのフェーズを通過しますが、実際のパスは、Office 365 構成の組織の Defender の対象になります。
+Microsoft Defender for Office 365保護またはフィルター 処理スタックは、この記事のように 4 つのフェーズに分割できます。 一般的に、受信メールは配信前にこれらすべてのフェーズを通過しますが、実際のパスは、組織の Defender Office 365 構成の対象になります。
 
 > [!TIP]
-> この記事の最後まで、365保護のための Defender のすべての 4 つのフェーズの統合グラフィックをOfficeしてください。
+> この記事の最後まで、すべての 4つのフェーズの Defender の統合グラフィックを確認し、Office 365してください。
 
 ## <a name="phase-1---edge-protection"></a>フェーズ 1 - エッジ保護
 
@@ -33,9 +33,9 @@ Microsoft Defender for Office 365 保護またはフィルター 処理スタッ
 
 エッジ ブロックは自動的に設計されています。 誤検知の場合、送信者に通知され、問題に対処する方法が通知されます。 信頼できるパートナーからの評価が制限されているコネクタは、新しいエンドポイントのオンボーディング時に、配信性を確保したり、一時的な上書きを行う可能性があります。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="365 の Defender でのフィルター処理Officeフェーズ 1 はエッジ保護です。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Defender for Office 365のフェーズ 1 はエッジ保護です。":::
 
-1. **ネットワーク調整は** 、Office 365 インフラストラクチャと顧客をサービス拒否 (DOS) 攻撃から保護します。特定のインフラストラクチャ セットによって送信できるメッセージの数を制限します。
+1. **ネットワーク調整は** Office 365一連のインフラストラクチャによって送信できるメッセージの数を制限することで、サービス拒否 (DOS) 攻撃からインフラストラクチャと顧客を保護します。
 
 2. **IP レピュテーションと調整によって** 、既知の不良接続 IP アドレスから送信されるメッセージがブロックされます。 特定の IP が短時間で多数のメッセージを送信すると、そのメッセージは調整されます。
 
@@ -45,7 +45,7 @@ Microsoft Defender for Office 365 保護またはフィルター 処理スタッ
 
 5. **Backscatter 検出により** 、無効な配信不可レポート (NDRs) を通じて組織が攻撃されるのを防ぐ。
 
-6. **コネクタの拡張フィルターは** 、トラフィックが 365 から 365 に達する前に別のデバイスを通過した場合でも、Officeします。 これにより、複雑なルーティングシナリオやハイブリッド ルーティング シナリオの場合でも、ヒューリスティック クラスタリング、スプーフィング防止、フィッシング対策機械学習モデルなどのフィルタリング スタックの精度が向上します。
+6. **コネクタの拡張フィルター処理では、** トラフィックが別のデバイスを通過した場合でも、そのデバイスが別のデバイスに到達する前にOffice 365。 これにより、複雑なルーティングシナリオやハイブリッド ルーティング シナリオの場合でも、ヒューリスティック クラスタリング、スプーフィング防止、フィッシング対策機械学習モデルなどのフィルタリング スタックの精度が向上します。
 
 ## <a name="phase-2---sender-intelligence"></a>フェーズ 2 - 送信者インテリジェンス
 
@@ -83,13 +83,13 @@ Microsoft Defender for Office 365 保護またはフィルター 処理スタッ
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="MDO でのフィルター処理のフェーズ 3 は、コンテンツ フィルターです。":::
 
-1. **トランスポート ルール** (メール フロー ルールまたは Exchange トランスポート ルールとも呼ばれる) を使用すると、管理者は、メッセージに対して同様に幅広い条件が満たされた場合に、さまざまなアクションを実行できます。 組織を流れるすべてのメッセージは、有効なメール フロー ルール/トランスポート ルールに対して評価されます。
+1. **トランスポート ルール**(メール フロー ルールまたは Exchange トランスポート ルールとも呼ばれる) を使用すると、メッセージに対して同様に幅広い条件が満たされた場合に、管理者は幅広いアクションを実行できます。 組織を流れるすべてのメッセージは、有効なメール フロー ルール/トランスポート ルールに対して評価されます。
 
-2. **Microsoft Defender Antivirus と** 2 *つのサード パーティ製ウイルス対策エンジン* を使用して、添付ファイル内のすべての既知のマルウェアを検出します。
+2. **Microsoft Defender ウイルス対策** 2 つの *サード パーティ製ウイルス* 対策エンジンを使用して、添付ファイル内のすべての既知のマルウェアを検出します。
 
 3. ウイルス対策 (AV) エンジンは、すべての添付ファイルを true 型に設定するためにも使用されます。そのため、タイプ ブロックは管理者が指定した種類のすべての添付ファイルをブロックできます。
 
-4. microsoft Defender for Office 365 が悪意のある添付ファイルを検出するたびに、ファイルのハッシュとアクティブ なコンテンツのハッシュが Exchange Online Protection (EOP) 評価に追加されます。 **添付ファイル評価ブロック** は、MSAV クラウド呼び出しをOffice 365 からエンドポイント上のすべてのファイルをブロックします。
+4. Microsoft Defender for Office 365が悪意のある添付ファイルを検出するたびに、ファイルのハッシュとアクティブ コンテンツのハッシュが Exchange Online Protection (EOP) 評価に追加されます。 **添付ファイル評価ブロック** は、MSAV クラウド呼び出しをOffice 365、エンドポイント上のすべてのファイルをブロックします。
 
 5. **ヒューリスティック クラスタリングでは** 、ファイルが配信ヒューリスティックに基づいて疑わしいと判断できます。 疑わしい添付ファイルが見つかると、キャンペーン全体が一時停止し、ファイルがサンドボックス化されます。 ファイルが悪意のあるファイルである場合、キャンペーン全体がブロックされます。
 
@@ -99,7 +99,7 @@ Microsoft Defender for Office 365 保護またはフィルター 処理スタッ
 
 8. **コンテンツ ヒューリスティックは** 、機械学習モデルを使用して、メッセージの本文内の構造と単語の頻度に基づいて疑わしいメッセージを検出できます。
 
-9. **安全な添付** ファイルは、365 人のユーザー Office Defender のすべての添付ファイルをサンドボックス化し、動的分析を使用して、過去に見たことのない脅威を検出します。
+9. **セーフ添付ファイルは**、動的分析を使用して、Office 365前に見えたことがない脅威を検出するために、Defender 用のすべての添付ファイルをサンドボックス化します。
 
 10. **リンクされたコンテンツの削除** は、メール内のファイルにリンクしているすべての URL を添付ファイルとして扱い、配信時にファイルを非同期的にサンドボックス化します。
 
@@ -107,25 +107,25 @@ Microsoft Defender for Office 365 保護またはフィルター 処理スタッ
 
 ## <a name="phase-4---post-delivery-protection"></a>フェーズ 4 - 配信後の保護
 
-最後のステージは、メールまたはファイルの配信後に行い、Microsoft Teams のようなクライアントに表示されるさまざまなメールボックスやファイルやリンクにあるメールに基きます。
+最後のステージは、メールまたはファイルの配信後に行い、さまざまなメールボックス内のメールや、Microsoft Teams のようなクライアントに表示されるファイルやリンクに基Microsoft Teams。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365 のフィルター処理のフェーズ 4 は、配信後の保護です。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365のフェーズ 4 は、配信後の保護です。":::
 
-1. **セーフ リンク** は、MDO のクリック時保護です。 すべてのメッセージ内のすべての URL は、Microsoft Safe Links サーバーをポイントするためにラップされます。 URL をクリックすると、ユーザーがターゲット サイトにリダイレクトされる前に、最新の評価に対してチェックされます。 URL は、評判を更新するために非同期的にサンドボックス化されます。
+1. **セーフリンクは**、MDO のクリック時保護です。 すべてのメッセージのすべての URL は、Microsoft のリンク サーバーをポイントセーフされます。 URL をクリックすると、ユーザーがターゲット サイトにリダイレクトされる前に、最新の評価に対してチェックされます。 URL は、評判を更新するために非同期的にサンドボックス化されます。
 
-2. **フィッシング Zero-Hour自動パージ (ZAP)** は、既に Exchange Online メールボックスに配信されている悪意のあるフィッシング メッセージをさかのぼって検出し、中和します。
+2. **フィッシング Zero-Hour自動パージ (ZAP)** は、既にメールボックスに配信されている悪意のあるフィッシング メッセージをさかのぼって検出Exchange Onlineします。
 
-3. **マルウェア ZAP は** 、既に Exchange Online メールボックスに配信されている悪意のあるマルウェア メッセージをさかのぼって検出し、中和します。
+3. **マルウェア ZAP は**、既にメールボックスに配信されている悪意のあるマルウェア メッセージをさかのぼって検出Exchange Onlineします。
 
-4. **Spam ZAP** は、既に Exchange Online メールボックスに配信されている悪意のあるスパム メッセージをさかのぼって検出し、中和します。
+4. **Spam ZAP は**、既にメールボックスに配信されている悪意のあるスパム メッセージをさかのぼって検出Exchange Onlineします。
 
 5. **キャンペーン ビューを** 使用すると、管理者は自動化を行わずに、どのチームよりも速く、より完全に攻撃の大きな画像を見ることができます。 Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用してキャンペーンを特定し、管理者がターゲット、影響、フローなど、ダウンロード可能なキャンペーンの書き込みにも使用できるデータを最初から最後まで調査できます。
 
 6. **レポート メッセージ** アドインを使用すると、ユーザーは誤検知 (良い電子メール、誤って悪いと *マークされている)* または誤検知 (良いとマークされた悪い *メール)* を Microsoft に簡単に報告し、さらに分析できます。
 
-7. **セーフ** リンク Office クライアントは、Word、PowerPoint、Excel など、Office クライアントの内部で、同じセーフ リンクのクリック時保護を提供します。
+7. **セーフ** Office クライアントのリンクは、Word、PowerPoint、および Excel のような Office クライアントの内部で、ネイティブで同じ セーフ リンクのクリック時保護を提供します。
 
-8. **OneDrive、SharePoint、** および Teams の保護は、OneDrive、SharePoint、および Microsoft Teams の内部で、悪意のあるファイルに対して同じ安全な添付ファイル保護を提供します。
+8. **OneDrive、SharePoint、および Teams** の保護は、OneDrive、SharePoint、および Microsoft Teams の内部で、ネイティブで、悪意のあるファイルに対して同じ セーフ 添付ファイル保護を提供します。
 
 9. ファイルをポイントする URL が配信後に選択されている場合、リンクされたコンテンツの削除は、ファイルのサンドボックスが完了し、URL が安全である場合まで警告ページを表示します。
 
@@ -138,6 +138,6 @@ Microsoft Defender for Office 365 保護またはフィルター 処理スタッ
 
 ## <a name="more-information"></a>詳細情報
 
-Microsoft Defender for Office 365 ***now** _? このスタック (_now*) を使用して[](protect-against-threats.md)、組織の保護を開始します。
+Microsoft Defender for Office 365 * 今すぐ _を **設定する必要** がありますか? このスタック (_now*) を使用して[](protect-against-threats.md)、組織の保護を開始します。
 
 *MSFTTracyP と* ドキュメント作成チームからこのコンテンツに対する Giulian Garruba への特別な感謝。

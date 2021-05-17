@@ -1,5 +1,5 @@
 ---
-title: PowerShell for Microsoft 365 でユーザーごとの Skype for Business Online ポリシーを割り当てる
+title: PowerShell を使用してユーザー Skype for Businessオンライン ポリシーを割り当Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: '概要: PowerShell for Microsoft 365 を使用して、Skype for Business Online ポリシーでユーザー単位の通信設定を割り当てる。'
+description: '概要: PowerShell を使用Microsoft 365オンライン ポリシーでユーザー単位の通信設定を割りSkype for Businessします。'
 ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905406"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>PowerShell for Microsoft 365 でユーザーごとの Skype for Business Online ポリシーを割り当てる
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>PowerShell を使用してユーザー Skype for Businessオンライン ポリシーを割り当Microsoft 365
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-PowerShell for Microsoft 365 を使用すると、Skype for Business Online ポリシーを使用してユーザー単位の通信設定を効率的に割り当てできます。
+PowerShell を使用Microsoft 365オンライン ポリシーを使用してユーザー単位の通信設定を割り当てるSkype for Businessです。
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>PowerShell コマンドの実行の準備
 

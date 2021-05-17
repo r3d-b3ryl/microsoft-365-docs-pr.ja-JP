@@ -35,17 +35,17 @@ ms.locfileid: "51587589"
 > [!NOTE]
 > 現時点 **では、テナント** 許可/ブロック一覧で許可アイテムを構成できません。
 
-Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない Microsoft 365 組織では、EOP フィルターの評決に同意しない可能性があります。 たとえば、メッセージが正しい (誤検知) とマークされている場合や、悪いメッセージが許可される場合があります (偽陰性)。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、EOP フィルターの評決に同意しない可能性があります。 たとえば、メッセージが正しい (誤検知) とマークされている場合や、悪いメッセージが許可される場合があります (偽陰性)。
 
-セキュリティ コンプライアンス センターのテナント許可/ブロック一覧&、Microsoft 365 フィルターの評決を手動で上書きする方法が提供されます。 テナント許可/ブロック一覧は、メール フロー中およびユーザークリック時に使用されます。 常にブロックする URL またはファイルを指定できます。
+セキュリティ コンプライアンス センターのテナント許可/ブロック一覧&を使用すると、フィルター処理のMicrosoft 365を手動で上書きできます。 テナント許可/ブロック一覧は、メール フロー中およびユーザークリック時に使用されます。 常にブロックする URL またはファイルを指定できます。
 
-この記事では、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織向け Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) のテナント許可/ブロック一覧のエントリを構成する方法について説明します。
+この記事では、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) のテナント許可/ブロック一覧のエントリを構成する方法について説明します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [テナントの許可/ブロック **リスト] ページに直接移動するには** 、 を使用します <https://protection.office.com/tenantAllowBlockList> 。
 
-- ファイルを指定するには、ファイルの SHA256 ハッシュ値を使用します。 Windows でファイルの SHA256 ハッシュ値を検索するには、コマンド プロンプトで次のコマンドを実行します。
+- ファイルを指定するには、ファイルの SHA256 ハッシュ値を使用します。 ファイルの SHA256 ハッシュ値をWindowsコマンド プロンプトで次のコマンドを実行します。
 
   ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
@@ -185,7 +185,7 @@ URL エントリの構文の詳細については、この記事の後半の「�
 
 4. 表示される警告ダイアログで、[削除] を **クリックします**。
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Exchange Online PowerShell またはスタンドアロン EOP PowerShell を使用してテナントの許可/ブロックリストを構成する
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>PowerShell Exchange Onlineスタンドアロン EOP PowerShell を使用してテナント許可/ブロック一覧を構成する
 
 ### <a name="use-powershell-to-add-block-entries-to-the-tenant-allowblock-list"></a>PowerShell を使用してテナント許可/ブロック一覧にブロック エントリを追加する
 

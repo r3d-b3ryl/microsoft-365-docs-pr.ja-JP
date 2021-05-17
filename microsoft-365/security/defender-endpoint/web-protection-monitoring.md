@@ -33,7 +33,7 @@ ms.locfileid: "51687425"
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web 保護を使用すると、Microsoft Defender セキュリティ センターの [レポートと Web 保護] の>を使用して、組織の **Web** 閲覧セキュリティを監視できます。 レポートには、Web 脅威検出の統計情報を提供するカードが含まれます。
+Web 保護を使用すると、組織の Web 閲覧のセキュリティを監視するために、組織の Web > **Web 保護** の下にあるレポートをMicrosoft Defender セキュリティ センター。 レポートには、Web 脅威検出の統計情報を提供するカードが含まれます。
 
 - **Web 脅威保護の** 検出時間の推移 - この傾向カードには、選択した期間中に種類別に検出された Web 脅威の数が表示されます (過去 30 日間、過去 3 か月、過去 6 か月)
  

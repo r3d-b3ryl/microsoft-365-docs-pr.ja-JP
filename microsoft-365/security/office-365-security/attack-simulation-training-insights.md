@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理者は、Microsoft 365 セキュリティ センターでの攻撃シミュレーション トレーニングが従業員に与える影響と、シミュレーションとトレーニングの結果から分析情報を得る方法について説明します。
+description: 管理者は、セキュリティ センターでの攻撃シミュレーション トレーニングMicrosoft 365従業員に影響を与え、シミュレーションとトレーニングの結果から分析情報を得る方法について説明します。
 ms.technology: mdo
 ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
 ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
@@ -23,7 +23,7 @@ ms.locfileid: "51600009"
 
 攻撃シミュレーション トレーニングでは、従業員が行ったシミュレーションとトレーニングの結果に基づいて分析情報を提供します。 これらの分析情報は、従業員の脅威の準備状況に関する情報を提供し続けるのに役立ちます。また、従業員と環境を攻撃に備える次の手順を推奨します。
 
-お客様が利用できる分析情報の拡大に継続的に取り組み続けます。 動作への影響と推奨されるアクションは現在利用できます。 まず、Microsoft 365 セキュリティ センターの攻撃シミュレーション [トレーニングに進む必要があります](https://security.microsoft.com/attacksimulator?viewid=overview)。
+お客様が利用できる分析情報の拡大に継続的に取り組み続けます。 動作への影響と推奨されるアクションは現在利用できます。 まず、セキュリティ センターの[攻撃](https://security.microsoft.com/attacksimulator?viewid=overview)シミュレーション トレーニングにMicrosoft 365します。
 
 ## <a name="behavior-impact-on-compromise-rate"></a>侵害率に対する動作の影響
 
@@ -31,7 +31,7 @@ ms.locfileid: "51600009"
 
 グラフには、次の情報が表示されます。
 
-- **攻撃シミュレーション トレーニングを** 使用する他の Microsoft 365 テナントで同じ種類のペイロードを使用したシミュレーションの平均妥協率を反映する予測妥協率。
+- **攻撃シミュレーション トレーニングを** 使用する他のテナント間で同じ種類のペイロードを使用するシミュレーションの平均妥協率を反映Microsoft 365予測された妥協率。
 - **実際の妥協率** は、シミュレーションで低下した従業員の割合を反映します。
 
 さらに、攻撃によって侵害された従業員の実際の数と予想される妥協率の `<number> less susceptible to phishing` 違いを反映しています。 この数の従業員は、将来同様の攻撃によって侵害される可能性は低く、従業員が予想される妥協率とは対照的に全体的にどのように行ったか `<percent%> better than predicted rate` 示しています。

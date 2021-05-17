@@ -29,7 +29,7 @@ ms.locfileid: "51599513"
 > [!NOTE]
 > この記事で説明する機能は、現在プレビュー中であり、すべてのユーザーが利用できる機能ではなく、変更される可能性があります。
 
-ユーザーは [、「EOP](find-and-release-quarantined-messages-as-a-user.md)で検疫済みメッセージをユーザーとして検索して解放する」の説明に従って、検疫済みメッセージを受信者の 1 つとして管理できます。 ただし [、「Exchange Online](/exchange/collaboration-exo/shared-mailboxes)の共有メールボックス」の説明に従って、ユーザーがフル アクセスおよび Send As または Send on Behalf のアクセス許可を持つ共有メールボックスについて説明します。
+ユーザーは [、「EOP](find-and-release-quarantined-messages-as-a-user.md)で検疫済みメッセージをユーザーとして検索して解放する」の説明に従って、検疫済みメッセージを受信者の 1 つとして管理できます。 しかし、「共有メールボックス」の説明に従って、ユーザーがフル アクセスおよび Send As または Send on Behalf のアクセス許可を持つ共有メールボックス[については、Exchange Online?](/exchange/collaboration-exo/shared-mailboxes)
 
 以前は、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するには、管理者が共有メールボックスの自動マッピングを有効のままにする必要がありました (管理者がユーザーに別のメールボックスへのアクセス権を与える場合、既定で有効になっています)。 ただし、ユーザーがアクセスできるメールボックスのサイズと数に応じて、Outlook がユーザーがアクセスできるすべてのメールボックスを開くしようとすると、パフォーマンスが低下する可能性があります。 このため、多くの管理者が共有メールボックス [の自動マップを削除する選択をします](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "51599513"
 
 - 共有メールボックスの検疫操作について、入れ子になったセキュリティ グループを使用して共有メールボックスへのアクセスを許可する場合は、入れ子になったグループのレベルを 2 つ以下にすることをお勧めします。 たとえば、グループ A はグループ B のメンバーで、グループ C のメンバーです。共有メールボックスにアクセス許可を割り当てるには、ユーザーをグループ A に追加してから、グループ C を共有メールボックスに割り当てない。  
 
-- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーが _RecipientAddress_ パラメーターの値に対して共有メールボックスの電子メール アドレスを持つ [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)コマンドレットを使用してメッセージを識別する必要があります。 例:
+- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーが _RecipientAddress_ パラメーターの値に対して共有メールボックスの電子メール アドレスを持つ [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)コマンドレットを使用してメッセージを識別する必要があります。 以下に例を示します。
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com

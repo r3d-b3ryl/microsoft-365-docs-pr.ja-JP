@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 の情報バリア
-description: Microsoft 365 で情報バリアを構成する方法について説明します。
+title: データの情報Microsoft 365
+description: 情報バリアを構成する方法については、Microsoft 365。
 keywords: Microsoft 365、インサイダー リスク、コンプライアンス
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -23,24 +23,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50423598"
 ---
-# <a name="information-barriers-in-microsoft-365"></a>Microsoft 365 の情報バリア
+# <a name="information-barriers-in-microsoft-365"></a>データの情報Microsoft 365
 
-Microsoft 365 は、グループや組織間のコミュニケーションとコラボレーションを可能にし、必要に応じて特定のユーザー グループ間の通信とコラボレーションを制限する方法をサポートします。 これには、組織内で利益相反が発生しないように、2 つのグループ間の通信とコラボレーションを制限する状況やシナリオが含まれる場合があります。 また、内部情報を保護するために組織内の特定のユーザー間の通信と共同作業を制限する必要がある場合も含まれます。
+Microsoft 365グループや組織間のコミュニケーションとコラボレーションを可能にし、必要に応じて特定のユーザー グループ間の通信とコラボレーションを制限する方法をサポートします。 これには、組織内で利益相反が発生しないように、2 つのグループ間の通信とコラボレーションを制限する状況やシナリオが含まれる場合があります。 また、内部情報を保護するために組織内の特定のユーザー間の通信と共同作業を制限する必要がある場合も含まれます。
 
-情報バリアは、Microsoft Teams、SharePoint Online、OneDrive for Business でサポートされています。 コンプライアンス管理者または情報バリア管理者は、Microsoft Teams のユーザー グループ間の通信を許可または防止するポリシーを定義できます。 情報バリア ポリシーは、次のような状況で使用できます。
+情報バリアは、オンライン、Microsoft Teams、SharePointでサポートOneDrive for Business。 コンプライアンス管理者または情報バリア管理者は、グループ内のユーザーグループ間の通信を許可または防止するポリシーを定義Microsoft Teams。 情報バリア ポリシーは、次のような状況で使用できます。
 
 - 当日のトレーダー グループのユーザーは、マーケティング チームとファイルの通信や共有を行う必要があります。
 - 会社の機密情報に取り組む財務担当者は、組織内の特定のグループとファイルを通信したり共有したりしな
 - 営業秘密資料を持つ内部チームは、組織内の特定のグループのユーザーとオンラインで通話したりチャットしたりしな
 - リサーチ チームは、製品開発チームとオンラインでのみ通話またはチャットする必要があります。
 
-## <a name="configure-information-barriers-for-microsoft-365"></a>Microsoft 365 の情報バリアを構成する
+## <a name="configure-information-barriers-for-microsoft-365"></a>ユーザーの情報バリアを構成Microsoft 365
 
 組織の情報バリアを構成するには、次の手順を使用します。
 
 ![Insider リスク ソリューション情報の障壁の手順](../media/ir-solution-ib-steps.png)
 
-1. Microsoft 365 の [情報バリアの](information-barriers.md) 詳細
+1. 情報バリアについて[詳しくは](information-barriers.md)、Microsoft 365
 2. 前提条件 [とアクセス許可を構成する](information-barriers-policies.md#prerequisites)
 3. 組織内 [のユーザーをセグメント化する](information-barriers-policies.md#part-1-segment-users)
 4. 情報バリア ポリシー [の作成と構成](information-barriers-policies.md#part-2-define-information-barrier-policies)

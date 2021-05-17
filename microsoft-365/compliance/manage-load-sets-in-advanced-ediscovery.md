@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示でのロードセットの管理
+title: 読み込みセットを管理Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Advanced eDiscovery での負荷セットの管理について説明します。
+description: 読み込みセットの管理について詳しくは、Advanced eDiscovery。
 ms.openlocfilehash: 38eb0e19c7e62a42df85343d3328b941332adc03
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
@@ -23,6 +23,6 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285603"
 ---
-# <a name="manage-load-sets-in-advanced-ediscovery"></a>高度な電子情報開示でのロードセットの管理
+# <a name="manage-load-sets-in-advanced-ediscovery"></a>読み込みセットを管理Advanced eDiscovery
 
 コンテンツ準備中です。

@@ -1,5 +1,5 @@
 ---
-title: 組織の Microsoft フィードバックを管理する
+title: 組織に対する Microsoft フィードバックを管理する
 f1.keywords:
 - NOCSH
 ms.author: Kwekua
@@ -26,9 +26,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/09/2021
 ms.locfileid: "51657009"
 ---
-# <a name="manage-microsoft-feedback-for-your-organization"></a>組織の Microsoft フィードバックを管理する
+# <a name="manage-microsoft-feedback-for-your-organization"></a>組織に対する Microsoft フィードバックを管理する
 
-Microsoft 365 組織の管理者として、Microsoft 365 アプリケーションを使用する際にユーザーのフィードバック コレクションとカスタマー エンゲージメント エクスペリエンスを管理するためのいくつかのポリシーが追加されました。 これらのポリシーごとに、組織内の既存の Azure Active directory グループを作成して使用できます。 これらの警察では、組織内の異なる部署が Microsoft にフィードバックを送信する方法を制御できます。 Microsoft は、お客様から送信されたフィードバックを確認し、このフィードバックを使用して製品を改善します。 フィードバック エクスペリエンスを **オンに保** つことで、ユーザーが使用している Microsoft 製品についてユーザーが何を言っているのかを確認できます。 ユーザーから収集したフィードバックは、Microsoft 365 管理センターですぐに利用できます。
+Microsoft 365 組織の管理者として、Microsoft 365 アプリケーションを使用する際にユーザーのフィードバック コレクションとカスタマー エンゲージメント エクスペリエンスを管理するのに役立ついくつかのポリシーが追加されました。 これらのポリシーごとに、組織内の既存の Azure Active directory グループを作成して使用できます。 これらの警察では、組織内の異なる部署が Microsoft にフィードバックを送信する方法を制御できます。 Microsoft は、お客様から送信されたフィードバックを確認し、このフィードバックを使用して製品を改善します。 フィードバック エクスペリエンスを **オンに保** つことで、ユーザーが使用している Microsoft 製品についてユーザーが何を言っているのかを確認できます。 ユーザーから収集したフィードバックは、すぐに管理センター Microsoft 365されます。
 
 フィードバックの種類と Microsoft がユーザー フィードバックを使用する方法の詳細については、「組織の Microsoft フィードバックについて [」を参照してください](../misc/feedback-user-control.md)。
 
@@ -88,13 +88,13 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 1. グローバル管理者 [https://config.office.com](https://config.office.com) アクセス許可を持つユーザーとしてアクセスしてログインします。
 1. [カスタマイズ **] を選択** し **、[ポリシーの管理] を選択します**。
-1. **[作成]** を選択します。
+1. [**作成**] を選択します。
 1. 名前 **と説明を****入力します**。
 1. 構成する Azure Active directory グループを選択します。
 1. フィードバックと **アンケートを****検索します**。
 1. リストされているポリシーごとに、必要な値を設定します。
 
-詳細については、「クラウド ポリシー [サービスの概要」Office参照してください](/deployoffice/overview-office-cloud-policy-service)。
+詳細については、「クラウド ポリシー[サービスの概要」Office参照してください](/deployoffice/overview-office-cloud-policy-service)。
 
 これらのポリシー設定は、グループ ポリシーを使用する場合にも使用できます。 これらのポリシー設定を使用するには、2021 年 3 月 22 日にリリースされた管理用テンプレート ファイル [(ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030)の少なくともバージョン 5146.1000 をダウンロードします。
 

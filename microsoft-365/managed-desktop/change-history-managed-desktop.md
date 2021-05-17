@@ -59,7 +59,7 @@ ms.locfileid: "51587529"
 [管理ポータルへのアクセス](get-started/access-admin-portal.md) | 更新された記事
 
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 新しい記事または変更された記事 | 説明
 --- | ---
 [Microsoft マネージド デスクトップとは](./intro/index.md) | 更新された記事
@@ -124,7 +124,7 @@ ms.locfileid: "51587529"
 [Microsoft 365 Apps for enterprise](get-started/m365-apps.md) | 新しい記事
 [プライバシーと個人データ](service-description/privacy-personal-data.md) | 新しい記事
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 新しい記事または変更された記事 | 説明
 --- | ---
 [Microsoft Managed Desktop アプリの要件](service-description/mmd-app-requirements.md) | 更新された記事
@@ -289,7 +289,7 @@ ms.locfileid: "51587529"
 --- | ---
 [Microsoft Managed Desktop デバイスに Intune ポータルをインストールする](get-started/company-portal.md) | 新しい記事
 [Microsoft マネージ デスクトップ デバイスに Microsoft Project と Microsoft Visio をインストールする](get-started/project-visio.md) | 新しい記事 
-[Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](get-ready/authentication.md) | 新しい記事
+[Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](get-ready/authentication.md) | 新しい記事
 [Microsoft Managed Desktop にデバイスを登録する](get-started/register-devices-self.md) | 新しい記事
 [Microsoft Managed Desktop for Partners にデバイスを登録する](get-started/register-devices-partner.md) | 新しい記事
 [Microsoft Managed Desktop デバイスへのアプリの展開](get-started/deploy-apps.md) | 更新された記事

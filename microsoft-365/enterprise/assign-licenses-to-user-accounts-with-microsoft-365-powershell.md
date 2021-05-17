@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して Microsoft 365 ライセンスをユーザー アカウントに割り当てる
+title: PowerShell Microsoft 365アカウントにライセンスを割り当てる
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: この記事では、PowerShell を使用して、ライセンスのないユーザーに Microsoft 365 ライセンスを割り当てる方法について説明します。
+description: この記事では、PowerShell を使用してライセンスのないユーザーにライセンス Microsoft 365割り当てる方法について説明します。
 ms.openlocfilehash: 5fb5f9095d4f732b0bf23f26eebb22eff608b48c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,13 +28,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905466"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ライセンスをユーザー アカウントに割り当てる
+# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell Microsoft 365アカウントにライセンスを割り当てる
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-アカウントにライセンス プランからライセンスが割り当てられるまで、ユーザーは Microsoft 365 サービスを使用できません。 PowerShell を使用すると、ライセンスのないアカウントにライセンスをすばやく割り当てできます。 
+ユーザーは、アカウントにライセンス プランMicrosoft 365が割り当てられるまで、すべてのサービスを使用できません。 PowerShell を使用すると、ライセンスのないアカウントにライセンスをすばやく割り当てできます。 
 
-ユーザー アカウントには、最初に場所を割り当てる必要があります。 場所の指定は [、Microsoft 365](../admin/add-users/add-users.md)管理センターで新しいユーザー アカウントを作成する際に必要な部分です。 
+ユーザー アカウントには、最初に場所を割り当てる必要があります。 場所の指定は、管理センターで新しいユーザー アカウントを作成するMicrosoft 365[です](../admin/add-users/add-users.md)。 
 
 オンプレミスの Active Directory ドメイン サービスから同期されたアカウントは、既定では場所が指定されていません。 これらのアカウントの場所は、次の場所から構成できます。
 
@@ -43,12 +43,12 @@ ms.locfileid: "50905466"
  - [Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) ( Active **Directory Users**  >  **>** プロファイル連絡先>**国**  >    >  または地域)
 
 >[!Note]
->Microsoft 365 管理[センターで](../admin/manage/assign-licenses-to-users.md)ユーザー アカウントにライセンスを割り当てる方法について説明します。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
+>[管理者センターでユーザー アカウントに](../admin/manage/assign-licenses-to-users.md)ライセンスを割り当てるMicrosoft 365します。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 
 次に、このコマンドを使用してテナントのライセンス プランを一覧表示します。
@@ -87,7 +87,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 このコマンドを実行して、利用可能なライセンス プランと、組織内の各プランで使用可能な `Get-MsolAccountSku` ライセンスの数を表示します。 各プランで利用可能なライセンスの数は、 **ActiveUnits** - **WarningUnits** - **ConsumedUnits** です。 ライセンス プラン、ライセンス、およびサービスの詳細については、「PowerShell でライセンスとサービスを表示 [する」を参照してください](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
@@ -101,7 +101,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-**UsageLocation** プロパティが有効な ISO 3166-1 α-2 の国コードに設定されているユーザー アカウントにのみライセンスを割り当てできます。 たとえば、米国は US、フランスは FR です。 一部の Microsoft 365 サービスは、特定の国では利用できません。 詳細については、「ライセンス制限 [について」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=691730)。
+**UsageLocation** プロパティが有効な ISO 3166-1 α-2 の国コードに設定されているユーザー アカウントにのみライセンスを割り当てできます。 たとえば、米国は US、フランスは FR です。 一部Microsoft 365一部のサービスは、一部の国では利用できません。 詳細については、「ライセンス制限 [について」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=691730)。
     
 **UsageLocation** 値を持つアカウントを検索するには、次のコマンドを実行します。
 
@@ -115,7 +115,7 @@ Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-次に例を示します。
+以下に例を示します。
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
@@ -131,7 +131,7 @@ Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-次の使用例は **、litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンス プランのライセンスを、ライセンスのないユーザーの belindan litwareinc.com に **\@ 割り当 litwareinc.com。**
+次の使用例は **、litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンスプランのライセンスを、ライセンスのないユーザーの belindan litwareinc.com に割り **\@ 当 litwareinc.com。**
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -147,7 +147,7 @@ Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLi
 >複数のライセンスを同じライセンス プランのユーザーに割り当てることはできません。 十分な数の利用可能なライセンスをお持ちでない場合は、使用可能なライセンスがなくなるまで、ライセンスは **Get-MsolUser** コマンドレットによって返される順序でユーザーに割り当てられます。
 >
 
-次の使用例は **、litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) のライセンスプランからすべてのライセンスのないユーザーにライセンスを割り当てる。
+この例では **、litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンス プランからすべてのライセンスのないユーザーにライセンスを割り当てる。
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -159,9 +159,9 @@ Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwa
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell for Graph モジュールを使用してユーザーを別のサブスクリプション (ライセンス プラン) に移動する
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>PowerShell を使用して別のサブスクリプション (ライセンス プラン) にユーザーを移動Azure Active Directory PowerShell Graphします。
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 次に、サブスクリプションの切り替えに使用するユーザー アカウントのサインイン名 (ユーザー プリンシパル名 (UPN) とも呼ばれる) を取得します。
 

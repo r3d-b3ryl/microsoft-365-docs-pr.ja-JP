@@ -1,5 +1,5 @@
 ---
-title: Microsoft マネージド デスクトップ アプリの要件
+title: Microsoft Managed Desktop アプリの要件
 description: ''
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -16,29 +16,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49659716"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft マネージド デスクトップ アプリの要件
+# <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Managed Desktop アプリの要件
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-Microsoft マネージド デスクトップでは、デバイスのパフォーマンス、信頼性、およびサービス性を保証するために、特定の方法でデバイスを管理する必要があります。
+Microsoft Managed Desktop では、デバイスのパフォーマンス、信頼性、およびサービス性を保証するために、特定の方法を使用してデバイスを管理する必要があります。
 
 
-|管理領域  |Microsoft マネージド デスクトップのアプローチ  |
+|管理領域  |Microsoft Managed Desktop のアプローチ  |
 |---------|---------|
 |デバイスの構成またはポリシーの管理     |  Microsoft Intune       |
 |アプリケーションの管理     | Microsoft Intune とポータル サイト        |
-|ドライバーの展開     |  デバイス、Windows Update、または Intune に含まれているドライバー       |
-|デバイスのセキュリティ     | 「デバイス [のセキュリティ」を参照](security.md#device-security)      |
-|ID およびアクセス管理     | 「ID [とアクセスの管理」を参照](security.md#identity-and-access-management)        |
-|ネットワーク セキュリティ     | 「ネットワーク [セキュリティ」を参照](security.md#network-security)        |
-|情報セキュリティ     |  「情報 [セキュリティ」を参照](security.md#information-security)       |
-|データ回復     | OneDrive for Business        |
+|ドライバーの展開     |  デバイス、Windows Update、Intune に含まれるドライバー       |
+|デバイスのセキュリティ     | 「デバイス [のセキュリティ」を参照してください。](security.md#device-security)      |
+|ID およびアクセス管理     | 「Identity [and access management」を参照してください。](security.md#identity-and-access-management)        |
+|ネットワーク セキュリティ     | 「 [ネットワーク セキュリティ」を参照してください。](security.md#network-security)        |
+|情報セキュリティ     |  「 [情報セキュリティ」を参照してください。](security.md#information-security)       |
+|データ復旧     | OneDrive for Business        |
 |コア生産性     | Microsoft 365 Apps for enterprise    |
 |ブラウザー     | Microsoft Edge        |
 
 
 
 
-Microsoft マネージド デスクトップは、管理対象デバイスで実行されている他のソフトウェアを監視する場合があります。 デバイス管理、デバイスのセキュリティ、パフォーマンス、または信頼性に悪影響を及ぼす場合は、サービス プランに例外を要求する [必要があります](customizing.md)。
+Microsoft Managed Desktop は、管理対象デバイスで実行されている他のソフトウェアを監視する場合があります。 デバイスの管理、デバイスのセキュリティ、パフォーマンス、または信頼性に悪影響を及ぼす場合は、サービス プランに例外を要求 [する必要があります](customizing.md)。

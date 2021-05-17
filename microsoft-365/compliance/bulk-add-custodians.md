@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示ケースへの保管担当者のインポート
+title: 保管担当者をケースにAdvanced eDiscoveryする
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: インポート ツール d を使用して、Advanced eDiscovery のケースに複数の保管担当者とその関連データ ソースをすばやく追加します。
+description: インポート ツール d を使用して、複数の保管担当者と関連付けられたデータ ソースをすばやくケースに追加Advanced eDiscovery。
 ms.openlocfilehash: 98ff3690fe7fd8c956fce436585014ef0db82a26
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -22,13 +22,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50421614"
 ---
-# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースへの保管担当者のインポート
+# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>保管担当者をケースにAdvanced eDiscoveryする
 
-多くの保管担当者を含む高度な電子情報開示ケースでは、ケースに追加するために必要な情報を含む CSV ファイルを使用して、複数の保管担当者を一度にインポートできます。
+多Advanced eDiscoveryが関係する場合は、ケースに追加するために必要な情報を含む CSV ファイルを使用して、複数の保管担当者を一度にインポートできます。
 
 ## <a name="import-custodians"></a>保管担当者のインポート
 
-1. 高度な電子情報開示ケースを開き、[データ ソース **] タブを選択** します。
+1. [データ ソース] Advanced eDiscoveryを開き、[**データ ソース] タブを選択** します。
 
 2. [データ **ソースのインポート**  >  **保管担当者の追加] をクリックします**。
 
@@ -51,19 +51,19 @@ CSV カストディアン テンプレートをダウンロードした後、各
 | 列名|説明|
 |:------- |:------------------------------------------------------------|
 |**Custodian contactEmail**     |保管担当者の UPN メール アドレス。 たとえば、sarad@contoso.onmicrosoft.com。           |
-|**Exchange が有効** | 保管担当者のメールボックスを含めるか含めない場合の TRUE/FALSE 値。      |
-|**OneDrive Enabled** | 保管担当者の OneDrive for Business アカウントを含めるか含まれていない場合の TRUE/FALSE 値。 |
+|**Exchange有効** | 保管担当者のメールボックスを含めるか含めない場合の TRUE/FALSE 値。      |
+|**OneDrive有効** | 保管担当者のアカウントを含めるか含めない場合は TRUE/FALSE OneDrive for Businessします。 |
 |**Is OnHold**        | 保管担当者データ ソースを保留にするかどうかを示す TRUE/FALSE 値。 <sup>1</sup>     |
 |**ワークロード 1 の種類**         |保管担当者に関連付けるデータ ソースの種類を示す文字列値。 次の値を指定できます。 <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
-|**ワークロード 1 の場所**     | ワークロードの種類に応じて、これはデータ ソースの場所です。 たとえば、Exchange メールボックスの電子メール アドレス、または SharePoint サイトの URL などです。 |
+|**ワークロード 1 の場所**     | ワークロードの種類に応じて、これはデータ ソースの場所です。 たとえば、メールボックスの電子メール アドレスExchangeサイトの URL SharePointします。 |
 |||
 
 > [!NOTE]
-> <sup>1</sup> 保管担当者のインポート プロセスと CSV ファイルを使用して、最大 1,000 のメールボックスと 100 のサイトを保留にできます。 このプロセスを使用して、ケースに 1,000 人を超える保管担当者を追加できますが、保留の制限は引き続き適用されます。 ホールド制限の詳細については、「Advanced [eDiscovery の制限」を参照してください](limits-ediscovery20.md#hold-limits)。
+> <sup>1</sup> 保管担当者のインポート プロセスと CSV ファイルを使用して、最大 1,000 のメールボックスと 100 のサイトを保留にできます。 このプロセスを使用して、ケースに 1,000 人を超える保管担当者を追加できますが、保留の制限は引き続き適用されます。 ホールド制限の詳細については、「制限」を参照[Advanced eDiscovery。](limits-ediscovery20.md#hold-limits)
 
 保管担当者情報を含む CSV ファイルの例を次に示します。<br/><br/>
 
-|Custodian contactEmail      | Exchange が有効 | OneDrive Enabled | Is OnHold | ワークロード 1 の種類 | ワークロード 1 の場所             |
+|Custodian contactEmail      | Exchange有効 | OneDrive有効 | Is OnHold | ワークロード 1 の種類 | ワークロード 1 の場所             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
 |robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
@@ -71,7 +71,7 @@ CSV カストディアン テンプレートをダウンロードした後、各
 
 ## <a name="custodian-and-data-source-validation"></a>保管担当者とデータ ソースの検証
 
-保管担当者の CSV ファイルをアップロードした後、Advanced eDiscovery は次のことを行います。
+保管担当者の CSV ファイルをアップロードした後、Advanced eDiscoveryを実行します。
 
 1. 保管担当者とそのデータ ソースを検証します。
 
@@ -79,7 +79,7 @@ CSV カストディアン テンプレートをダウンロードした後、各
 
 ### <a name="custodian-validation"></a>カストディアン検証
 
-現時点では、組織の Azure Active Directory (Azure Active Directory) に含まれるカストディアンのインポートのみをサポートAD。
+現時点では、組織の管理者 (Azure Azure Active Directory) に含まれるカストディアンAD。
 
 保管担当者のインポート ツールは、CSV ファイルの **[Custodian contactEmail]** 列の UPN 値を使用して、保管担当者を検索して検証します。 検証された保管担当者は、ケースに自動的に追加され、ケースの [データ **ソース]** タブに表示されます。 保管担当者を検証できない場合は、ケースの [ジョブ] タブに表示される BulkAddCustodian ジョブのエラー ログに一覧表示されます。 未確認の保管担当者は、ケースに追加されないか、[データ ソース] タブ **に表示** されません。
 
@@ -87,7 +87,7 @@ CSV カストディアン テンプレートをダウンロードした後、各
 
 保管担当者が検証され、ケースに追加された後、保管担当者に関連付けられている各プライマリ メールボックスと OneDrive アカウントが追加されます。
 
-ただし、保管担当者に関連付けられている他のデータ ソース (SharePoint サイト、Microsoft Teams、Microsoft 365 グループ、または Yammer グループなど) が見つからない場合、それらのデータ ソースはいずれも保管担当者に割り当てられていないので、[データソース] タブの保管担当者の横にある [状態] 列に値が表示されます。 
+ただし、保管担当者に関連付けられた他のデータ ソース (SharePoint サイト、Microsoft Teams、Microsoft 365 グループ、Yammer グループなど) が見つからない場合、それらのデータ ソースはいずれも保管担当者に割り当てられていないので、[データ ソース] タブの [カストディアン]の横にある [状態] 列に値が表示されます。 
 
 カストディアンの検証済みデータ ソースを追加するには、次の方法を実行します。
 
@@ -105,7 +105,7 @@ CSV カストディアン テンプレートをダウンロードした後、各
 
 1. [データ **ソース] タブで** 、以前は無効だったデータ ソースを手動で追加して関連付ける保管担当者を選択します。
 
-2. フライ **アウト ページ** の上部にある [編集] をクリックして、メールボックス、サイト、Teams、または Yammerをカストディアンに関連付ける。 これを行うには、適切なデータ **の場所** の種類の横にある [編集] をクリックします。
+2. フライ **アウト ページ** の上部にある [編集] をクリックして、メールボックス、サイト、Teams、Yammerグループをカストディアンに関連付ける。 これを行うには、適切なデータ **の場所** の種類の横にある [編集] をクリックします。
 
 3. [ **次へ** ] をクリック **して [保留** 設定] ページを表示し、追加したデータ ソースの保留設定を構成します。
 

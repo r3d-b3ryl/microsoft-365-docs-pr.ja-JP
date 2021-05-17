@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Voice を購入する
+title: 購入Microsoft 365 Business Voice
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 Business Voice アドオンを購入する方法について説明します。
+description: 新しいアドオンを購入Microsoft 365 Business Voiceする方法について学習します。
 ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -32,15 +32,15 @@ ms.locfileid: "50422989"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Gryk?autoplay=false]
 
-Microsoft 365 Business Voice を使用すると、電話の送受信、電話会議の使用、通話メニュー システムのセットアップを行って、顧客を適切な部署にルーティングできます。 開始するには、Business Voice アドオンを購入する必要があります。
+このMicrosoft 365 Business Voice、電話の送受信、電話会議の使用、通話メニュー システムのセットアップを行って、顧客を適切な部署にルーティングできます。 開始するには、Business Voice アドオンを購入する必要があります。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
-1. Microsoft 365 管理センターで、[課金] に移動し、[サービスの購入]**を選択します**。
+1. 管理センターでMicrosoft 365に移動し、[サービスの購入]**を選択します**。
 1. 下にスクロールして、[ **アドオン] を選択します**。 
-1. [Microsoft **365 Business Voice] を選択します**。
+1. [Microsoft 365 Business Voice]**を選択します**。
 
-    表示しない場合は、まず Microsoft Teams を含むビジネス サブスクリプションを購入する必要があります。
+    表示しない場合は、最初にビジネス サブスクリプションを購入する必要Microsoft Teams。
 1. ライセンスを取得するユーザーの数を入力し、[今すぐチェックアウト] **を選択します**。
 1. [ **自動再充電] を選択** して、必要に応じて通信クレジットを購入し、サービスの中断を回避します。
 

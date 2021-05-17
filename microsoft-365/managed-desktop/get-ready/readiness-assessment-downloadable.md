@@ -32,19 +32,19 @@ Microsoft Managed Desktop とうまく機能するには、デバイスがハー
 
 ## <a name="obtain-the-checker"></a>チェッカーを取得する
 
-から .zip ファイルをダウンロードします https://aka.ms/mmddratoolv0 。
+から.zipファイルをダウンロードします https://aka.ms/mmddratoolv0 。
 
 > [!NOTE]
 > ツールを実行しているユーザーは、そのツールを実行しているデバイスに対するローカル管理者権限を持っている必要があります。
 
  次に、次の手順に従ってツールを実行します。
 
-1. ダウンロードした .zip ファイルを、確認する各デバイスにコピーします。
+1. ダウンロードしたファイルを.zipする各デバイスにコピーします。
 2. 圧縮されたダウンロード内のすべてのファイルを抽出します。
 3. [実行 **Microsoft.MMD.DeviceReadinessAssessmentTool.exe] をクリックします**。
 4. [ユーザー アクセス制御] プロンプトが表示されたら、[はい] を **選択します**。 ツールが実行され、既定のブラウザーでレポートが開きます。
 
-また、.zip アーカイブをダウンロードして共有の場所に抽出し、Microsoft.MMD.DeviceReadinessAssessmentTool.exeからアクセスし、ローカルで実行することもできます。 
+また、共有の場所に.zipアーカイブをダウンロードして抽出し、各Microsoft.MMD.DeviceReadinessAssessmentTool.exeからアクセスし、ローカルで実行することもできます。
 
 
 ## <a name="checks"></a>チェック

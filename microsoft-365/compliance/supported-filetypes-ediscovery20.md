@@ -1,5 +1,5 @@
 ---
-title: Advanced eDiscovery でサポートされるファイルの種類
+title: サポートされているファイルの種類 (Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 Advanced eDiscovery でサポートされているファイルの種類の一覧 (Advanced eDiscovery の OCR 機能でサポートされるイメージ ファイルの種類を含む)。
+description: サポートされているファイルの種類の一覧 (Microsoft 365 Advanced eDiscovery の OCR 機能でサポートされるイメージ ファイルの種類をAdvanced eDiscovery。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 719a0474d45825114cf4ea3fbd19082bb8df7622
 ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
@@ -23,9 +23,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51599832"
 ---
-# <a name="supported-file-types-in-advanced-ediscovery"></a>Advanced eDiscovery でサポートされるファイルの種類
+# <a name="supported-file-types-in-advanced-ediscovery"></a>サポートされているファイルの種類 (Advanced eDiscovery
 
-高度な電子情報開示は、さまざまなレベルで多くのファイルの種類をサポートしています。 サポート ファイルの種類については、この記事の次の表で説明します。 このリストは完成していません。検証テストを続行する場合は、新しいファイルの種類を追加します。 これらの表は、ファイルの種類がテキスト抽出 (および画像ファイルの光学式文字認識または OCR テキスト抽出) でサポートされるかどうかを示します。ネイティブ ビューアーで表示可能で、Advanced eDiscovery の Annotate ビューアーでもサポートされます。
+Advanced eDiscoveryさまざまなレベルで多数のファイルの種類をサポートしています。 サポート ファイルの種類については、この記事の次の表で説明します。 このリストは完成していません。検証テストを続行する場合は、新しいファイルの種類を追加します。 これらの表は、ファイルの種類がテキスト抽出 (および画像ファイルの光学式文字認識または OCR テキスト抽出) でサポートされるかどうかを示します。ネイティブ ビューアーで表示可能で、Advanced eDiscovery の Annotate ビューアーでもサポートされます。
 
 ## <a name="archive--container"></a>アーカイブ/コンテナー
 
@@ -41,7 +41,7 @@ ms.locfileid: "51599832"
 
 | Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-| application/mp4 | はい | はい | いいえ | はい | いいえ | .f4v; .m4a; .m4v; .mp4; .mp4v; .mpeg; .mpeg4 |
+| application/mp4 | はい | はい | いいえ | はい | いいえ | .f4v; .m4a; .m4v;.mp4; .mp4v;.mpeg; .mpeg4 |
 |audio/mpeg | はい | はい | いいえ | はい | いいえ | .mpeg |
 |video/3gpp | はい | はい | いいえ | はい | いいえ | .3gp |
 |video/3gpp2 | はい | はい | いいえ | はい | いいえ | .3g2; .3gp2 |
@@ -79,7 +79,7 @@ ms.locfileid: "51599832"
 |:------| :------| :------| :------| :------| :------| :------|
 |application/xhtml+xml | はい | はい | はい | はい | はい | .xhtml |
 |application/xml | はい | はい | はい | はい | はい | .xml |
-|text/html | はい | はい | はい | はい | はい | .htm; .html; .shtml |
+|text/html | はい | はい | はい | はい | はい | .htm;.html; .shtml |
 ||||||||
 
 ## <a name="image"></a>Image
@@ -89,7 +89,7 @@ ms.locfileid: "51599832"
 |image/bmp | はい | はい | はい | はい | はい | .bmp |
 |image/emf | はい | はい | はい | はい | はい | .emf |
 |image/gif | はい | はい | はい | はい | はい | .gif |
-|image/jpeg | はい | はい | はい | はい | はい | .jpeg; .jpg |
+|image/jpeg | はい | はい | はい | はい | はい | .jpeg;.jpg |
 |image/png | はい | はい | はい | はい | はい | .png |
 |image/svg+xml | はい | はい | はい | はい | いいえ | .svg |
 |image/tiff | はい | はい | はい | はい | はい | .tif |
@@ -101,7 +101,7 @@ ms.locfileid: "51599832"
 
 | Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd.ms-excel | はい | はい | はい | はい | はい | .dat; .xls |
+|application/vnd.ms-excel | はい | はい | はい | はい | はい | .dat;.xls |
 |application/vnd.ms-excel.sheet.binary.macroenabled.12 | はい | はい | はい | はい | いいえ | .xlsb |
 |application/vnd.ms-excel.sheet.macroenabled.12 | はい | はい | はい | はい | はい | .xlsm |
 |application/vnd.ms-excel.template.macroenabled.12 | はい | はい | はい | いいえ | いいえ | .xltm |
@@ -120,7 +120,7 @@ ms.locfileid: "51599832"
 
 | Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd.ms-powerpoint | はい | はい | はい | はい | はい | .pot; .pps; .ppt |
+|application/vnd.ms-powerpoint | はい | はい | はい | はい | はい | .pot; .pps;.ppt |
 |application/vnd.openxmlformats-officedocument.presentationml.presentation | はい | はい | はい | はい | はい | .pptx |
 |application/vnd.openxmlformats-officedocument.presentationml.slideshow | はい | はい | はい | はい | はい | .ppsx |
 |application/vnd.openxmlformats-officedocument.presentationml.template | はい | はい | はい | はい | はい | .potx |
@@ -152,7 +152,7 @@ ms.locfileid: "51599832"
 
 | Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/msword | はい | はい | はい | はい | はい | .dat; .doc |
+|application/msword | はい | はい | はい | はい | はい | .dat;.doc |
 | application/rtf | はい | はい | はい | はい | はい | .doc; .rtf |
 |application/vnd.ms-word.document.macroenabled.12 | はい | はい | はい | はい | はい | .docm |
 |application/vnd.ms-word.template.macroenabled.12 | はい | はい | はい | はい | はい | .dotm |
@@ -190,7 +190,7 @@ ms.locfileid: "51599832"
 | Mime の種類 | ファイルの識別 | メタデータの抽出 | テキスト抽出 | ネイティブ ビューアー | 注釈ビューアー | 可能な拡張機能 |
 |:------| :------| :------| :------| :------| :------| :------|
 |text/csv | はい | はい | はい | はい | はい | .csv |
-|text/plain | はい | はい | はい | はい | はい | .con; .css; .csv; .dat; .pl; .txt |
+|text/plain | はい | はい | はい | はい | はい | .con; .css;.csv; .dat; .pl;.txt |
 ||||||||
 
 ## <a name="portable-document-format"></a>Portable Document Format

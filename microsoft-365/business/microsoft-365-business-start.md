@@ -65,7 +65,7 @@ Microsoft 365は、最大 300 ライセンスを使用します。 ライセン�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../business-video/index.yml)」をご覧ください。
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: ビジネス向Microsoft 365を設定する (管理者)

@@ -18,7 +18,7 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) でスパムを防止するのに役立つスパム対策設定とフィルターについて学習できます。
+description: 管理者は、スパム対策 (EOP) でスパムを防止するのに役立つスパム対策設定とフィルター Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
@@ -40,7 +40,7 @@ ms.locfileid: "51650268"
 > [!NOTE]
 > このトピックは、管理者向けです。 エンド ユーザーのトピックについては、「 [迷惑](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) メール フィルターの概要」および「迷惑メールとフィッシングについて [」を参照してください](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31)。
 
-Exchange Online メールボックスのない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、電子メール メッセージは EOP によってスパム (迷惑メール) から自動的に保護されます。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、電子メール メッセージは EOP によってスパム (迷惑メール) から自動的に保護されます。
 
 Microsoft のメールの安全性ロードマップには、他に例を見ない製品間のアプローチが含まれます。 EOP スパム対策およびフィッシング対策テクノロジは、メール プラットフォーム全体に適用され、ネットワーク全体で最新のスパム対策およびフィッシング対策ツールとイノベーションをユーザーに提供します。 EOP の目標は、包括的で使用可能なメール サービスを提供し、迷惑メール、詐欺目的のメールの脅威 (フィッシング)、マルウェアを検出し、それらからユーザーを保護することです。
 
@@ -51,23 +51,23 @@ Microsoft のメールの安全性ロードマップには、他に例を見な�
 
 ## <a name="anti-spam-technologies-in-eop"></a>EOP のスパム対策テクノロジ
 
-迷惑メールの削減に役立つ EOP には、独自のスパム フィルターテクノロジを使用して迷惑メールを識別し、正当な電子メールから分離する迷惑メール保護が含まれています。 EOP スパム フィルターは、既知のスパムやフィッシングの脅威、およびコンシューマー プラットフォームのユーザー フィードバック Outlook.com。 迷惑メール分類プログラムの EOP ユーザーからの継続的なフィードバックは、EOP テクノロジが継続的にトレーニングされ、改善されるのに役立ちます。
+迷惑メールの削減に役立つ EOP には、独自のスパム フィルターテクノロジを使用して迷惑メールを識別し、正当な電子メールから分離する迷惑メール保護が含まれています。 EOP スパム フィルターは、既知のスパムやフィッシングの脅威、およびコンシューマー プラットフォーム Outlook.com からのユーザー フィードバックから学習します。 迷惑メール分類プログラムの EOP ユーザーからの継続的なフィードバックは、EOP テクノロジが継続的にトレーニングされ、改善されるのに役立ちます。
 
 EOP のスパム対策設定は、次のテクノロジで構成されています。
 
 - **接続フィルター**: IP 許可一覧、IP ブロック一覧、およびセーフ リスト *(Microsoft* が管理する信頼できる送信者の動的で編集できないリスト) を使用して、受信メール接続の初期の良いメール ソース サーバーと悪いメール ソース サーバーを識別します。 これらの設定は、接続フィルター ポリシーで構成します。 詳細については、「 [接続フィルターの構成」を参照してください](configure-the-connection-filter-policy.md)。
 
   > [!NOTE]
-  > スプーフィング インテリジェンスは、接続フィルターを使用して、メール ドメインをスプーフィングしている送信者の許可リストとブロックリストを作成します。 詳細については [、「Microsoft 365 の](learn-about-spoof-intelligence.md)スプーフィング インテリジェンスの詳細」を参照してください。
+  > スプーフィング インテリジェンスは、接続フィルターを使用して、メール ドメインをスプーフィングしている送信者の許可リストとブロックリストを作成します。 詳細については、「スプーフィング[インテリジェンスの詳細」](learn-about-spoof-intelligence.md)を参照Microsoft 365。
 
-- **スパム フィルター (** コンテンツ フィルター) : EOP は、スパム フィルターの評決スパム、高信頼スパム、**バルク** メール、フィッシング メール、高信頼フィッシング メールを使用してメッセージを分類します。 これらの評決に基づいて実行するアクションを構成し、配信ではなく検疫されたメッセージのエンドユーザー通知オプションを構成できます。 詳細については [、「Microsoft 365 でスパム対策ポリシーを構成する」を参照してください](configure-your-spam-filter-policies.md)。
+- **スパム フィルター (** コンテンツ フィルター) : EOP は、スパム フィルターの評決スパム、高信頼スパム、**バルク** メール、フィッシング メール、高信頼フィッシング メールを使用してメッセージを分類します。 これらの評決に基づいて実行するアクションを構成し、配信ではなく検疫されたメッセージのエンドユーザー通知オプションを構成できます。 詳細については、「スパム対策ポリシーを[構成する」を参照Microsoft 365。](configure-your-spam-filter-policies.md)
 
   > [!NOTE]
-  > 既定では、スパムフィルターは、スパムとしてマークされたメッセージを受信者の迷惑メール フォルダーに送信するように構成されています。 ただし、EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド環境では、メッセージに追加される EOP スパム ヘッダーを認識するために、オンプレミスの Exchange 組織で 2 つのメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
+  > 既定では、スパムフィルターは、スパムとしてマークされたメッセージを受信者の迷惑メール フォルダーに送信するように構成されています。 ただし、EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド環境では、メッセージに追加される EOP スパム ヘッダーを認識するために、オンプレミス Exchange 組織で 2 つのメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
 
-- **送信スパム フィルター**: EOP は、ユーザーが送信メッセージコンテンツまたは送信メッセージの制限を超えてスパムを送信しないかも確認します。 詳細については [、「Configure outbound spam filtering in Microsoft 365」を参照してください](configure-the-outbound-spam-policy.md)。
+- **送信スパム フィルター**: EOP は、ユーザーが送信メッセージコンテンツまたは送信メッセージの制限を超えてスパムを送信しないかも確認します。 詳細については、「Configure [outbound spam filtering in Microsoft 365 」 を参照してください](configure-the-outbound-spam-policy.md)。
 
-- **スプーフィン** グ インテリジェンス : 詳細については [、「Microsoft 365](learn-about-spoof-intelligence.md)のスプーフィング インテリジェンスの詳細」を参照してください。
+- **スプーフィン** グ インテリジェンス : 詳細については、「スプーフィング インテリジェンス [の](learn-about-spoof-intelligence.md)詳細」を参照Microsoft 365。
 
 ## <a name="manage-errors-in-spam-filtering"></a>スパム フィルターのエラーを管理する
 
@@ -79,49 +79,49 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
 - **スパム対策メッセージ ヘッダーを調べる**: これらの値は、メッセージがスパムとしてマークされた理由、またはスパム フィルター処理をスキップした理由を示します。 詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
 
-- **MX レコードを Microsoft 365** にポイントします。EOP が最高の保護を提供するには、まず Microsoft 365 に電子メールを配信することをお勧めします。 手順については [、「Microsoft 365 の任意](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)の DNS ホスティング プロバイダーで DNS レコードを作成する」を参照してください。
+- **MX レコードを [Microsoft 365:** EOP で最高の保護を提供するために、電子メールを最初に配信することをMicrosoft 365します。 手順については、「任意の DNS ホスティング プロバイダーで DNS レコードを作成[する」を参照Microsoft 365。](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
-  MX レコードが他の場所 (サードパーティのスパム対策ソリューションやアプライアンスなど) をポイントしている場合、EOP が正確なスパム フィルターを提供することは困難です。 このシナリオでは、コネクタの拡張フィルター (スキップ リストとも呼ばれる) を _構成する必要があります_。 手順については [、「Enhanced Filtering for Connectors in Exchange Online」を参照してください](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  MX レコードが他の場所 (サードパーティのスパム対策ソリューションやアプライアンスなど) をポイントしている場合、EOP が正確なスパム フィルターを提供することは困難です。 このシナリオでは、コネクタの拡張フィルター (スキップ リストとも呼ばれる) を _構成する必要があります_。 手順については、「拡張フィルタリング[for Connectors in Exchange Online」 を参照してください](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
 - **電子メール認証を使用** する : 電子メール ドメインを所有している場合は、DNS を使用して、そのドメインの送信者からのメッセージが正当なメッセージであると確認できます。 EOP でスパムや不要なスプーフィングを防止するには、次のすべての電子メール認証方法を使用します。
 
   - **SPF**: 送信者ポリシー フレームワークは、メッセージの送信元 IP アドレスを送信側ドメインの所有者と検証します。 SPF の概要と構成をすばやく行う方法については、「SPF をセットアップしてスプーフィングを防止する [」を参照してください](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 Microsoft 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。
 
-  - **DKIM**: DomainKeys Identified Mail は、ドメインから送信されたメッセージのメッセージ ヘッダーにデジタル署名を追加します。 詳細については [、「DKIM を使用して Microsoft 365](use-dkim-to-validate-outbound-email.md)のカスタム ドメインから送信される送信メールを検証する」を参照してください。
+  - **DKIM**: DomainKeys Identified Mail は、ドメインから送信されたメッセージのメッセージ ヘッダーにデジタル署名を追加します。 詳細については[、「DKIM を使用して、](use-dkim-to-validate-outbound-email.md)カスタム ドメインから送信された送信メールを検証する」を参照Microsoft 365。
 
-  - **DMARC**: ドメイン ベースのメッセージ認証、レポート、および準拠は、宛先電子メール システムが SPF または DKIM チェックに失敗し、電子メール パートナーに別のレベルの信頼を提供するメッセージを処理する方法を決定するのに役立ちます。 詳細については [、「Use DMARC to validate email in Microsoft 365」を参照してください](use-dmarc-to-validate-email.md)。
+  - **DMARC**: ドメイン ベースのメッセージ認証、レポート、および準拠は、宛先電子メール システムが SPF または DKIM チェックに失敗し、電子メール パートナーに別のレベルの信頼を提供するメッセージを処理する方法を決定するのに役立ちます。 詳細については[、「DMARC を使用してメールを検証する」を参照Microsoft 365。](use-dmarc-to-validate-email.md)
 
-- **バルク メール設定を確認** する: スパム対策ポリシーで構成するバルク 苦情レベル (BCL) のしきい値によって、バルク メール (グレー _メールとも呼_ ばれる) がスパムとしてマークされるかどうかを決定します。 既定でオンの PowerShell 専用設定 _MarkAsSpamBulkMail_ も結果に貢献します。 詳細については [、「Microsoft 365 でスパム対策ポリシーを構成する」を参照してください](configure-your-spam-filter-policies.md)。
+- **バルク メール設定を確認** する: スパム対策ポリシーで構成するバルク 苦情レベル (BCL) のしきい値によって、バルク メール (グレー _メールとも呼_ ばれる) がスパムとしてマークされるかどうかを決定します。 既定でオンの PowerShell 専用設定 _MarkAsSpamBulkMail_ も結果に貢献します。 詳細については、「スパム対策ポリシーを[構成する」を参照Microsoft 365。](configure-your-spam-filter-policies.md)
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>受信トレイへのスパムの配信を防止する
 
-- **組織の設定を** 確認する: メッセージがスパム フィルター処理をスキップできる設定に注意してください (たとえば、スパム対策ポリシーで許可されたドメイン リストに自分のドメインを追加する場合)。 推奨される設定については、「EOP および Microsoft Defender の推奨設定 [for Office 365 セキュリティ](recommended-settings-for-eop-and-office365.md) と差出人セーフ リストの作成」 [を参照してください](create-safe-sender-lists-in-office-365.md)。
+- **組織の設定を** 確認する: メッセージがスパム フィルター処理をスキップできる設定に注意してください (たとえば、スパム対策ポリシーで許可されたドメイン リストに自分のドメインを追加する場合)。 推奨される設定については[、「EOP](recommended-settings-for-eop-and-office365.md)と Microsoft Defender のセキュリティに関する推奨設定」および「Office 365リストの作成」[を参照してください](create-safe-sender-lists-in-office-365.md)。
 
-- **ユーザーのメールボックスで** 迷惑メール ルールが有効になっているか確認します。既定では有効になっていますが、無効になっている場合は、迷惑メールとしてマークされたメッセージを迷惑メール フォルダーに移動できません。 詳細については [、「Microsoft 365 の Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)メールボックスで迷惑メール設定を構成する」を参照してください。
+- **ユーザーのメールボックスで** 迷惑メール ルールが有効になっているか確認します。既定では有効になっていますが、無効になっている場合は、迷惑メールとしてマークされたメッセージを迷惑メール フォルダーに移動できません。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
 
 - **使用可能な受信拒否リストを使用する**: 詳細については、「受信拒否リストの作成 [」を参照してください](create-block-sender-lists-in-office-365.md)。
 
 - **バルク メールからの登録解除** メッセージがユーザーがサインアップしたメッセージ (ニュースレター、製品のお知らせなど) で、評判の良いソースからの購読解除リンクが含まれている場合は、単に購読解除を求めるのを検討してください。
 
-- スタンドアロン **EOP: EOP** スパム フィルターの評決を行うオンプレミス Exchange でメール フロー ルールを作成する : EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、迷惑メール ルールが迷惑メール フォルダーにメッセージを移動できるよう、EOP スパム フィルターの評決を変換するために、オンプレミス Exchange でメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
+- スタンドアロン **EOP: EOP** スパム フィルターの評決に対してオンプレミス Exchange でメール フロー ルールを作成する : EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、EOP スパム フィルター処理の評決を変換して迷惑メール ルールが迷惑メール フォルダーにメッセージを移動できるよう、オンプレミス Exchange でメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>優れたメールがスパムとして識別されるのを防ぐ
 
 誤検知を防止するために実行できる手順を次に示します。
 
-- **ユーザーの Outlook 迷惑メール フィルター設定を確認します**。
+- **ユーザーの迷惑メール フィルター Outlook確認します**。
 
-  - **Outlook 迷惑メール フィルター** が無効になっているを確認する : Outlook 迷惑メール フィルターが既定値に設定されている場合自動フィルター **なし、Outlook** はマッサージをスパムとして分類しようとしません。  Low または **High** に設定されている場合、Outlook 迷惑メール フィルターは独自の SmartScreen フィルター テクノロジを使用して迷惑メール フォルダーを識別して移動します。そのため、誤検知を受け取る可能性があります。 Microsoft は、2016 年 11 月に Exchange および Outlook の SmartScreen フィルターのスパム定義更新プログラムの作成を停止しました。 既存の SmartScreen スパム定義は残されたが、その有効性は時間の流れる間に低下する可能性が高い。
+  - Outlook 迷惑メール フィルターが無効になっているを確認 **する:** Outlook 迷惑メール フィルターが既定値に設定されている場合自動フィルターなし、Outlook はマッサージをスパムとして分類しようとしません。  低または高に設定されている場合、Outlook 迷惑メール フィルターは独自の SmartScreen フィルター テクノロジを使用して迷惑メール フォルダーを識別し、迷惑メール フォルダーに移動します。誤検知を受け取る可能性があります。  Microsoft は、2016 年 11 月に、Exchange および Outlook SmartScreen フィルターのスパム定義更新プログラムの作成を停止しました。 既存の SmartScreen スパム定義は残されたが、その有効性は時間の流れる間に低下する可能性が高い。
 
-  - **Outlook の [セーフ** リストのみ] 設定が無効になっている場合: この設定を有効にすると、ユーザーの [差出人セーフ リスト] または [安全な受信者] リストの送信者からのメッセージだけが受信トレイに配信されます。他のユーザーからのメールは自動的に迷惑メール フォルダーに移動されます。
+  - **[Outlook セーフ リストのみ]** 設定が無効になっている場合: この設定を有効にすると、ユーザーの セーフ 送信者リストまたは セーフ 受信者リストの送信者からのメッセージだけが受信トレイに配信されます。他のユーザーからのメールは自動的に迷惑メール フォルダーに移動されます。
 
-  これらの設定の詳細については [、「Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)の Exchange Online メールボックスで迷惑メール設定を構成する」を参照してください。
+  これらの設定の詳細については、「迷惑メール設定を構成する」を参照[Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)を参照Microsoft 365。
 
 - **利用可能な差出人セーフ リストを使用** する: 詳細については、「差出人セーフ リストの作成 [」を参照してください](create-safe-sender-lists-in-office-365.md)。
 
-- **「Exchange** Online サービスの説明の受信と送信の制限」[](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)の説明に従って、ユーザーが送受信制限内にあるか確認します。
+- **「サービスの説明」の**「受信と送信の制限」の説明 [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)に従って、ユーザーが送受信制限内Exchange Online確認します。
 
-- **スタンドアロン EOP: ディレクトリ同期を** 使用する: スタンドアロン EOP を使用してオンプレミスの Exchange 組織を保護する場合は、ディレクトリ同期を使用してユーザー設定をサービスと同期する必要があります。 こうすることで、ユーザーの信頼できる差出人のリストが EOP に適用されます。 詳しくは、「[ディレクトリ同期を使用してメール ユーザーを管理する](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users)」 を参照してください。
+- **スタンドアロン EOP: ディレクトリ** 同期を使用する: スタンドアロン EOP を使用してオンプレミスの Exchange 組織を保護する場合は、ディレクトリ同期を使用してユーザー設定をサービスと同期する必要があります。 こうすることで、ユーザーの信頼できる差出人のリストが EOP に適用されます。 詳しくは、「[ディレクトリ同期を使用してメール ユーザーを管理する](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users)」 を参照してください。
 
 ## <a name="anti-spam-legislation"></a>スパム対策の法律
 

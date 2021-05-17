@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 の Insider リスク管理
-description: Microsoft 365 でインサイダー リスク管理を構成する方法について説明します。
+title: インサイダーリスクMicrosoft 365
+description: インサイダー リスク管理を構成する方法については、Microsoft 365。
 keywords: Microsoft 365、インサイダー リスク、コンプライアンス
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -23,19 +23,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "50819749"
 ---
-# <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 の Insider リスク管理
+# <a name="insider-risk-management-in-microsoft-365"></a>インサイダーリスクMicrosoft 365
 
 従業員は、幅広いプラットフォームとサービスでデータを作成、管理、共有するためのアクセスが増えています。 ほとんどの場合、組織には、コンプライアンス要件と従業員のプライバシー基準を満たしながら、組織全体のリスクを特定および軽減するためのリソースとツールが限られています。 これらのリスクには、従業員を退出してデータを盗み、偶発的な過剰共有や悪意のある意図による組織外の情報のデータ漏洩が含まれる場合があります。
 
-Microsoft 365 の Insider リスク管理では、サービスとサードパーティのインジケーターの全幅を使用して、リスクの高いユーザー アクティビティをすばやく特定し、トリアージし、行動するのに役立ちます。 Microsoft 365 および Microsoft Graph のログを使用すると、インサイダー リスク管理を使用して、リスク インジケーターを特定し、これらのリスクを軽減するためのアクションを実行するための特定のポリシーを定義できます。
+Microsoft 365の Insider リスク管理は、サービスとサードパーティのインジケーターの全幅を使用して、リスクの高いユーザー アクティビティをすばやく特定し、トリアージし、行動するのに役立ちます。 Microsoft 365 および Microsoft Graph のログを使用すると、インサイダー リスク管理を使用して、リスク インジケーターを特定し、これらのリスクを軽減するためのアクションを実行するための特定のポリシーを定義できます。
 
-## <a name="configure-insider-risk-management-for-microsoft-365"></a>Microsoft 365 のインサイダー リスク管理を構成する
+## <a name="configure-insider-risk-management-for-microsoft-365"></a>インサイダー リスク管理を構成Microsoft 365
 
 組織のインサイダー リスク管理を構成するには、次の手順を使用します。
 
 ![Insider リスク ソリューションのインサイダー リスク管理手順](../media/ir-solution-ir-steps.png)
 
-1. Microsoft 365 [のイン](insider-risk-management.md) サイダー リスク管理の詳細
+1. インサイダー[リスク管理の詳細については](insider-risk-management.md)、Microsoft 365
 2. インサイ [ダー リスク管理を計画し、ライセンスを確認する](insider-risk-management-plan.md)
 3. 内部 [リスク管理の設定を構成する](insider-risk-management-settings.md)
 4. アクセス [許可とポリシー](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) の [前提条件をコネクタ&構成する](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)

@@ -27,13 +27,13 @@ ms.locfileid: "51649964"
 
 Microsoft の Bing 検索エンジンの機能を活用して、業界の更新プログラムは、Web の周りから最も重要な作業ニュースのコレクションです。
 
-## <a name="how-does-it-work"></a>どのような仕組みですか?
+## <a name="how-does-it-work"></a>どのような仕組みなのか。
 
 トピックと興味に従ってエクスペリエンスをカスタマイズします。 会社に関するニュースを取得し、業界の傾向を追跡し、主要な製品の立ち上げについて最初に知る。 さらに、キャリアを成長させるのに必要なスキルと情報に追い付く。
 
 ## <a name="how-do-i-customize-my-industry-updates-email"></a>業界更新プログラムのメールをカスタマイズする方法
 
-エクスペリエンスをカスタマイズするには、設定ページにアクセスして、自分にとって重要なトピックや関心事に従います。 [個人用設定] ページにアクセスするには [、[Bing、Edge、](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) および Industry Updates ニュースレターでコンテンツをカスタマイズする]、または [業界の更新プログラム] メールの [設定] ボタンをクリックします。
+エクスペリエンスをカスタマイズするには、設定ページにアクセスして、自分にとって重要なトピックや関心事に従います。 [個人用設定] ページにアクセスするには[、[Bing、](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1)エッジ、業界の更新プログラムのニュースレターでコンテンツをカスタマイズする]、または [業界の更新プログラム] メールの [設定] ボタンをクリックします。
 
 [今日、受信](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form=BAWLOG&frb=1) トレイに配信された業界の更新メールを購読して取得します。
 
