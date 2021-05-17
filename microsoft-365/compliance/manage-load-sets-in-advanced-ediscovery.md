@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示でのロードセットの管理
+title: 読み込みセットを管理Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Advanced eDiscovery での負荷セットの管理について説明します。
+description: 読み込みセットの管理について詳しくは、Advanced eDiscovery。
 ms.openlocfilehash: 38eb0e19c7e62a42df85343d3328b941332adc03
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
@@ -23,6 +23,6 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285603"
 ---
-# <a name="manage-load-sets-in-advanced-ediscovery"></a><span data-ttu-id="cb9b9-103">高度な電子情報開示でのロードセットの管理</span><span class="sxs-lookup"><span data-stu-id="cb9b9-103">Manage load sets in Advanced eDiscovery</span></span>
+# <a name="manage-load-sets-in-advanced-ediscovery"></a><span data-ttu-id="392ab-103">読み込みセットを管理Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="392ab-103">Manage load sets in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="cb9b9-104">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="cb9b9-104">Content coming soon.</span></span>
+<span data-ttu-id="392ab-104">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="392ab-104">Content coming soon.</span></span>

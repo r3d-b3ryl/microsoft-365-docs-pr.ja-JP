@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295665"
 ---
-# <a name="contact-support-for-new-zealand"></a><span data-ttu-id="15e14-103">ニュージーランドのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="15e14-103">Contact support for New Zealand</span></span>
+# <a name="contact-support-for-new-zealand"></a><span data-ttu-id="4a9df-103">ニュージーランドのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="4a9df-103">Contact support for New Zealand</span></span>
 
-<span data-ttu-id="15e14-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="15e14-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="4a9df-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="4a9df-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="15e14-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="15e14-105">Phone number</span></span>
-<span data-ttu-id="15e14-106">0800 194 197</span><span class="sxs-lookup"><span data-stu-id="15e14-106">0800 194 197</span></span>
+## <a name="phone-number"></a><span data-ttu-id="4a9df-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="4a9df-105">Phone number</span></span>
+<span data-ttu-id="4a9df-106">0800 194 197</span><span class="sxs-lookup"><span data-stu-id="4a9df-106">0800 194 197</span></span>
 
-## <a name="hours"></a><span data-ttu-id="15e14-107">時間</span><span class="sxs-lookup"><span data-stu-id="15e14-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="15e14-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="15e14-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="4a9df-107">時間</span><span class="sxs-lookup"><span data-stu-id="4a9df-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="4a9df-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="4a9df-108">Billing Support:</span></span>
 
-<span data-ttu-id="15e14-109">英語: Mon-Fri午前 9 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="15e14-109">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="4a9df-109">英語: Mon-Fri午前 9 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="4a9df-109">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="15e14-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="15e14-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="4a9df-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="4a9df-110">Technical Support:</span></span>
 
-<span data-ttu-id="15e14-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="15e14-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="4a9df-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="4a9df-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="15e14-112">代替電話番号: 09 912 7298</span><span class="sxs-lookup"><span data-stu-id="15e14-112">Alternative Phone Number: 09 912 7298</span></span>
+<span data-ttu-id="4a9df-112">代替電話番号: 09 912 7298</span><span class="sxs-lookup"><span data-stu-id="4a9df-112">Alternative Phone Number: 09 912 7298</span></span>
 
-<span data-ttu-id="15e14-113">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="15e14-113">Local call charges apply</span></span>
+<span data-ttu-id="4a9df-113">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="4a9df-113">Local call charges apply</span></span>

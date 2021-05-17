@@ -19,18 +19,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295561"
 ---
-# <a name="contact-support-for-paraguay"></a><span data-ttu-id="016c9-103">パラグアイのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="016c9-103">Contact support for Paraguay</span></span>
+# <a name="contact-support-for-paraguay"></a><span data-ttu-id="0b497-103">パラグアイのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="0b497-103">Contact support for Paraguay</span></span>
 
-<span data-ttu-id="016c9-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="016c9-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="0b497-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="0b497-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="016c9-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="016c9-105">Phone number</span></span>
-<span data-ttu-id="016c9-106">009 800 441 0088</span><span class="sxs-lookup"><span data-stu-id="016c9-106">009 800 441 0088</span></span>
+## <a name="phone-number"></a><span data-ttu-id="0b497-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="0b497-105">Phone number</span></span>
+<span data-ttu-id="0b497-106">009 800 441 0088</span><span class="sxs-lookup"><span data-stu-id="0b497-106">009 800 441 0088</span></span>
 
-## <a name="hours"></a><span data-ttu-id="016c9-107">時間</span><span class="sxs-lookup"><span data-stu-id="016c9-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="016c9-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="016c9-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="0b497-107">時間</span><span class="sxs-lookup"><span data-stu-id="0b497-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="0b497-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="0b497-108">Billing Support:</span></span>
 
-<span data-ttu-id="016c9-109">スペイン語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="016c9-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="0b497-109">スペイン語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="0b497-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="016c9-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="016c9-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="0b497-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="0b497-110">Technical Support:</span></span>
 
-<span data-ttu-id="016c9-111">スペイン語: 24 時間、週 7 日</span><span class="sxs-lookup"><span data-stu-id="016c9-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="0b497-111">スペイン語: 24 時間、週 7 日</span><span class="sxs-lookup"><span data-stu-id="0b497-111">Spanish: 24 hours a day, 7 days a week</span></span>

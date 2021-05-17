@@ -19,24 +19,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295009"
 ---
-# <a name="contact-support-for-uae-united-arab-emirates"></a><span data-ttu-id="5e7ce-103">UAE (アラブ首長国連邦) のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="5e7ce-103">Contact support for UAE (United Arab Emirates)</span></span>
+# <a name="contact-support-for-uae-united-arab-emirates"></a><span data-ttu-id="8dfcd-103">UAE (アラブ首長国連邦) のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="8dfcd-103">Contact support for UAE (United Arab Emirates)</span></span>
 
-<span data-ttu-id="5e7ce-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="5e7ce-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="8dfcd-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="8dfcd-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5e7ce-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="5e7ce-105">Phone number</span></span>
-<span data-ttu-id="5e7ce-106">8000 444 1578</span><span class="sxs-lookup"><span data-stu-id="5e7ce-106">8000 444 1578</span></span>
+## <a name="phone-number"></a><span data-ttu-id="8dfcd-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="8dfcd-105">Phone number</span></span>
+<span data-ttu-id="8dfcd-106">8000 444 1578</span><span class="sxs-lookup"><span data-stu-id="8dfcd-106">8000 444 1578</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5e7ce-107">時間</span><span class="sxs-lookup"><span data-stu-id="5e7ce-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5e7ce-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="5e7ce-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="8dfcd-107">時間</span><span class="sxs-lookup"><span data-stu-id="8dfcd-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="8dfcd-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="8dfcd-108">Billing Support:</span></span>
 
-<span data-ttu-id="5e7ce-109">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="5e7ce-109">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="8dfcd-109">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="8dfcd-109">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="5e7ce-110">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="5e7ce-110">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="8dfcd-110">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="8dfcd-110">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5e7ce-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="5e7ce-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="8dfcd-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="8dfcd-111">Technical Support:</span></span>
 
-<span data-ttu-id="5e7ce-112">アラビア語: Sun-Thu午前 11 時から午後 8 時</span><span class="sxs-lookup"><span data-stu-id="5e7ce-112">Arabic: Sun-Thu 11 AM-8 PM</span></span>
+<span data-ttu-id="8dfcd-112">アラビア語: Sun-Thu午前 11 時から午後 8 時</span><span class="sxs-lookup"><span data-stu-id="8dfcd-112">Arabic: Sun-Thu 11 AM-8 PM</span></span>
 
-<span data-ttu-id="5e7ce-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="5e7ce-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="8dfcd-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="8dfcd-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="5e7ce-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="5e7ce-114">International call charges apply</span></span>
+<span data-ttu-id="8dfcd-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="8dfcd-114">International call charges apply</span></span>

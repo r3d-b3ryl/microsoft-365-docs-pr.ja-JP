@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295585"
 ---
-# <a name="contact-support-for-palau"></a><span data-ttu-id="65202-103">Palau のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="65202-103">Contact support for Palau</span></span>
+# <a name="contact-support-for-palau"></a><span data-ttu-id="858a9-103">Palau のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="858a9-103">Contact support for Palau</span></span>
 
-<span data-ttu-id="65202-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="65202-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="858a9-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="858a9-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="65202-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="65202-105">Phone number</span></span>
-<span data-ttu-id="65202-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="65202-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="858a9-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="858a9-105">Phone number</span></span>
+<span data-ttu-id="858a9-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="858a9-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="65202-107">時間</span><span class="sxs-lookup"><span data-stu-id="65202-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="65202-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="65202-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="858a9-107">時間</span><span class="sxs-lookup"><span data-stu-id="858a9-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="858a9-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="858a9-108">Billing Support:</span></span>
 
-<span data-ttu-id="65202-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="65202-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="858a9-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="858a9-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="65202-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="65202-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="858a9-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="858a9-110">Technical Support:</span></span>
 
-<span data-ttu-id="65202-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="65202-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="858a9-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="858a9-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="65202-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="65202-112">International call charges apply</span></span>
+<span data-ttu-id="858a9-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="858a9-112">International call charges apply</span></span>

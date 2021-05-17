@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295725"
 ---
-# <a name="contact-support-for-montenegro"></a><span data-ttu-id="06fae-103">モンテネグロのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="06fae-103">Contact support for Montenegro</span></span>
+# <a name="contact-support-for-montenegro"></a><span data-ttu-id="d20f6-103">モンテネグロのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="d20f6-103">Contact support for Montenegro</span></span>
 
-<span data-ttu-id="06fae-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="06fae-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="d20f6-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="d20f6-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="06fae-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="06fae-105">Phone number</span></span>
-<span data-ttu-id="06fae-106">080 081 110</span><span class="sxs-lookup"><span data-stu-id="06fae-106">080 081 110</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d20f6-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="d20f6-105">Phone number</span></span>
+<span data-ttu-id="d20f6-106">080 081 110</span><span class="sxs-lookup"><span data-stu-id="d20f6-106">080 081 110</span></span>
 
-<span data-ttu-id="06fae-107">オプション 9 を選択する</span><span class="sxs-lookup"><span data-stu-id="06fae-107">Select option 9</span></span>
+<span data-ttu-id="d20f6-107">オプション 9 を選択する</span><span class="sxs-lookup"><span data-stu-id="d20f6-107">Select option 9</span></span>
 
-<span data-ttu-id="06fae-108">コード 7708 を入力する</span><span class="sxs-lookup"><span data-stu-id="06fae-108">Enter code 7708</span></span>
+<span data-ttu-id="d20f6-108">コード 7708 を入力する</span><span class="sxs-lookup"><span data-stu-id="d20f6-108">Enter code 7708</span></span>
 
-## <a name="hours"></a><span data-ttu-id="06fae-109">時間</span><span class="sxs-lookup"><span data-stu-id="06fae-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="06fae-110">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="06fae-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d20f6-109">時間</span><span class="sxs-lookup"><span data-stu-id="d20f6-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d20f6-110">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="d20f6-110">Billing Support:</span></span>
 
-<span data-ttu-id="06fae-111">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="06fae-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="d20f6-111">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="d20f6-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="06fae-112">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="06fae-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d20f6-112">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="d20f6-112">Technical Support:</span></span>
 
-<span data-ttu-id="06fae-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="06fae-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d20f6-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="d20f6-113">English: 24 hours a day, 7 days a week</span></span>

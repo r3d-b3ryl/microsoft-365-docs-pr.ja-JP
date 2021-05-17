@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295417"
 ---
-# <a name="contact-support-for-seychelles"></a><span data-ttu-id="73264-103">Seychelles のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="73264-103">Contact support for Seychelles</span></span>
+# <a name="contact-support-for-seychelles"></a><span data-ttu-id="74d77-103">Seychelles のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="74d77-103">Contact support for Seychelles</span></span>
 
-<span data-ttu-id="73264-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="73264-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="74d77-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="74d77-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="73264-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="73264-105">Phone number</span></span>
-<span data-ttu-id="73264-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="73264-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="74d77-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="74d77-105">Phone number</span></span>
+<span data-ttu-id="74d77-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="74d77-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="73264-107">時間</span><span class="sxs-lookup"><span data-stu-id="73264-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="73264-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="73264-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="74d77-107">時間</span><span class="sxs-lookup"><span data-stu-id="74d77-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="74d77-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="74d77-108">Billing Support:</span></span>
 
-<span data-ttu-id="73264-109">英語: Mon-Fri午後 1 時から午後 9 時</span><span class="sxs-lookup"><span data-stu-id="73264-109">English: Mon-Fri 1 PM-9 PM</span></span>
+<span data-ttu-id="74d77-109">英語: Mon-Fri午後 1 時から午後 9 時</span><span class="sxs-lookup"><span data-stu-id="74d77-109">English: Mon-Fri 1 PM-9 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="73264-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="73264-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="74d77-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="74d77-110">Technical Support:</span></span>
 
-<span data-ttu-id="73264-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="73264-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="74d77-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="74d77-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="73264-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="73264-112">International call charges apply</span></span>
+<span data-ttu-id="74d77-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="74d77-112">International call charges apply</span></span>

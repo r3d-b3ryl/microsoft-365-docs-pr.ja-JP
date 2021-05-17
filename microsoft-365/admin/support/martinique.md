@@ -19,24 +19,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295845"
 ---
-# <a name="contact-support-for-martinique"></a><span data-ttu-id="8d28e-103">マルティニークのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="8d28e-103">Contact support for Martinique</span></span>
+# <a name="contact-support-for-martinique"></a><span data-ttu-id="1ca31-103">マルティニークのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="1ca31-103">Contact support for Martinique</span></span>
 
-<span data-ttu-id="8d28e-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="8d28e-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="1ca31-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="1ca31-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="8d28e-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="8d28e-105">Phone number</span></span>
-<span data-ttu-id="8d28e-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="8d28e-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1ca31-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="1ca31-105">Phone number</span></span>
+<span data-ttu-id="1ca31-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="1ca31-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="8d28e-107">時間</span><span class="sxs-lookup"><span data-stu-id="8d28e-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="8d28e-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="8d28e-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1ca31-107">時間</span><span class="sxs-lookup"><span data-stu-id="1ca31-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1ca31-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="1ca31-108">Billing Support:</span></span>
 
-<span data-ttu-id="8d28e-109">フランスMon-Fri午前 6 時</span><span class="sxs-lookup"><span data-stu-id="8d28e-109">French Mon-Fri 6 AM-noon</span></span>
+<span data-ttu-id="1ca31-109">フランスMon-Fri午前 6 時</span><span class="sxs-lookup"><span data-stu-id="1ca31-109">French Mon-Fri 6 AM-noon</span></span>
 
-<span data-ttu-id="8d28e-110">英語: Mon-Fri午前 6 時から午後 1 時</span><span class="sxs-lookup"><span data-stu-id="8d28e-110">English: Mon-Fri 6 AM-1 PM</span></span>
+<span data-ttu-id="1ca31-110">英語: Mon-Fri午前 6 時から午後 1 時</span><span class="sxs-lookup"><span data-stu-id="1ca31-110">English: Mon-Fri 6 AM-1 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="8d28e-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="8d28e-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1ca31-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="1ca31-111">Technical Support:</span></span>
 
-<span data-ttu-id="8d28e-112">フランス語: Mon-Fri 6 AM-1 PM</span><span class="sxs-lookup"><span data-stu-id="8d28e-112">French: Mon-Fri 6 AM-1 PM</span></span>
+<span data-ttu-id="1ca31-112">フランス語: Mon-Fri 6 AM-1 PM</span><span class="sxs-lookup"><span data-stu-id="1ca31-112">French: Mon-Fri 6 AM-1 PM</span></span>
 
-<span data-ttu-id="8d28e-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="8d28e-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1ca31-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="1ca31-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="8d28e-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="8d28e-114">International call charges apply</span></span>
+<span data-ttu-id="1ca31-114">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="1ca31-114">International call charges apply</span></span>
