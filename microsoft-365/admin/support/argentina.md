@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296637"
 ---
-# <a name="contact-support-for-argentina"></a><span data-ttu-id="17f18-103">アルゼンチンのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="17f18-103">Contact support for Argentina</span></span>
+# <a name="contact-support-for-argentina"></a><span data-ttu-id="13a4a-103">アルゼンチンのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="13a4a-103">Contact support for Argentina</span></span>
 
-<span data-ttu-id="17f18-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="17f18-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="13a4a-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="13a4a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="17f18-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="17f18-105">Phone number</span></span>
-<span data-ttu-id="17f18-106">0800 266 1512</span><span class="sxs-lookup"><span data-stu-id="17f18-106">0800 266 1512</span></span>
+## <a name="phone-number"></a><span data-ttu-id="13a4a-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="13a4a-105">Phone number</span></span>
+<span data-ttu-id="13a4a-106">0800 266 1512</span><span class="sxs-lookup"><span data-stu-id="13a4a-106">0800 266 1512</span></span>
 
-## <a name="hours"></a><span data-ttu-id="17f18-107">時間</span><span class="sxs-lookup"><span data-stu-id="17f18-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="17f18-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="17f18-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="13a4a-107">時間</span><span class="sxs-lookup"><span data-stu-id="13a4a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="13a4a-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="13a4a-108">Billing Support:</span></span>
 
-<span data-ttu-id="17f18-109">スペイン語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="17f18-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="13a4a-109">スペイン語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="13a4a-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="17f18-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="17f18-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="13a4a-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="13a4a-110">Technical Support:</span></span>
 
-<span data-ttu-id="17f18-111">スペイン語: 24 時間、週 7 日</span><span class="sxs-lookup"><span data-stu-id="17f18-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="13a4a-111">スペイン語: 24 時間、週 7 日</span><span class="sxs-lookup"><span data-stu-id="13a4a-111">Spanish: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="17f18-112">代替電話番号: 011 5354 2347</span><span class="sxs-lookup"><span data-stu-id="17f18-112">Alternative Phone Number: 011 5354 2347</span></span>
+<span data-ttu-id="13a4a-112">代替電話番号: 011 5354 2347</span><span class="sxs-lookup"><span data-stu-id="13a4a-112">Alternative Phone Number: 011 5354 2347</span></span>
 
-<span data-ttu-id="17f18-113">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="17f18-113">Local call charges apply</span></span>
+<span data-ttu-id="13a4a-113">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="13a4a-113">Local call charges apply</span></span>

@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298916"
 ---
-# <a name="contact-support-for-egypt"></a><span data-ttu-id="9df93-103">エジプトのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="9df93-103">Contact support for Egypt</span></span>
+# <a name="contact-support-for-egypt"></a><span data-ttu-id="33f64-103">エジプトのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="33f64-103">Contact support for Egypt</span></span>
 
-<span data-ttu-id="9df93-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="9df93-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="33f64-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="33f64-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="9df93-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="9df93-105">Phone number</span></span>
-<span data-ttu-id="9df93-106">0800 000 0325</span><span class="sxs-lookup"><span data-stu-id="9df93-106">0800 000 0325</span></span>
+## <a name="phone-number"></a><span data-ttu-id="33f64-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="33f64-105">Phone number</span></span>
+<span data-ttu-id="33f64-106">0800 000 0325</span><span class="sxs-lookup"><span data-stu-id="33f64-106">0800 000 0325</span></span>
 
-## <a name="hours"></a><span data-ttu-id="9df93-107">時間</span><span class="sxs-lookup"><span data-stu-id="9df93-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="9df93-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="9df93-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="33f64-107">時間</span><span class="sxs-lookup"><span data-stu-id="33f64-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="33f64-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="33f64-108">Billing Support:</span></span>
 
-<span data-ttu-id="9df93-109">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="9df93-109">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="33f64-109">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="33f64-109">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="9df93-110">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="9df93-110">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="33f64-110">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="33f64-110">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="9df93-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="9df93-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="33f64-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="33f64-111">Technical Support:</span></span>
 
-<span data-ttu-id="9df93-112">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="9df93-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="33f64-112">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="33f64-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="9df93-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="9df93-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="33f64-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="33f64-113">English: 24 hours a day, 7 days a week</span></span>

@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298988"
 ---
-# <a name="contact-support-for-curacao"></a><span data-ttu-id="9442d-103">キュラソー島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="9442d-103">Contact support for Curacao</span></span>
+# <a name="contact-support-for-curacao"></a><span data-ttu-id="79ccc-103">キュラソー島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="79ccc-103">Contact support for Curacao</span></span>
 
-<span data-ttu-id="9442d-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="9442d-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="79ccc-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="79ccc-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="9442d-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="9442d-105">Phone number</span></span>
-<span data-ttu-id="9442d-106">+1 377 302 1308</span><span class="sxs-lookup"><span data-stu-id="9442d-106">+1 377 302 1308</span></span>
+## <a name="phone-number"></a><span data-ttu-id="79ccc-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="79ccc-105">Phone number</span></span>
+<span data-ttu-id="79ccc-106">+1 377 302 1308</span><span class="sxs-lookup"><span data-stu-id="79ccc-106">+1 377 302 1308</span></span>
 
-## <a name="hours"></a><span data-ttu-id="9442d-107">時間</span><span class="sxs-lookup"><span data-stu-id="9442d-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="9442d-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="9442d-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="79ccc-107">時間</span><span class="sxs-lookup"><span data-stu-id="79ccc-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="79ccc-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="79ccc-108">Billing Support:</span></span>
 
-<span data-ttu-id="9442d-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="9442d-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="79ccc-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="79ccc-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="9442d-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="9442d-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="79ccc-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="79ccc-110">Technical Support:</span></span>
 
-<span data-ttu-id="9442d-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="9442d-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="79ccc-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="79ccc-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="9442d-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="9442d-112">International call charges apply</span></span>
+<span data-ttu-id="79ccc-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="79ccc-112">International call charges apply</span></span>

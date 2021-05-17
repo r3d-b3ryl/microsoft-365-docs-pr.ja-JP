@@ -1,8 +1,8 @@
 ---
-title: Power BI へのエンドポイント API 接続用 Microsoft Defender
+title: Microsoft Defender for Endpoint API 接続とエンドポイント API Power BI
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint API の上に Power Business Intelligence (BI) レポートを作成します。
-keywords: apis、サポートされている API、Power BI、レポート
+keywords: apis、サポートされている api、Power BI、レポート
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,38 +23,38 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935043"
 ---
-# <a name="create-custom-reports-using-power-bi"></a><span data-ttu-id="a6371-104">Power BI を使用してカスタム レポートを作成する</span><span class="sxs-lookup"><span data-stu-id="a6371-104">Create custom reports using Power BI</span></span>
+# <a name="create-custom-reports-using-power-bi"></a><span data-ttu-id="e09bb-104">ユーザー設定を使用してカスタム レポートをPower BI</span><span class="sxs-lookup"><span data-stu-id="e09bb-104">Create custom reports using Power BI</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="a6371-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="a6371-105">**Applies to:**</span></span>
-- [<span data-ttu-id="a6371-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="a6371-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="a6371-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a6371-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="e09bb-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="e09bb-105">**Applies to:**</span></span>
+- [<span data-ttu-id="e09bb-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="e09bb-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="e09bb-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e09bb-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- <span data-ttu-id="a6371-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="a6371-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="a6371-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="a6371-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="e09bb-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="e09bb-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="e09bb-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="e09bb-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="a6371-110">このセクションでは、Defender for Endpoint API の上に Power BI レポートを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a6371-110">In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.</span></span>
+<span data-ttu-id="e09bb-110">このセクションでは、Defender for Endpoint API の上にPower BIレポートを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e09bb-110">In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.</span></span>
 
-<span data-ttu-id="a6371-111">最初の例は、Power BI を Advanced Hunting API に接続する方法を示し、2 番目の例では、マシン アクションやアラートなどの OData API への接続を示しています。</span><span class="sxs-lookup"><span data-stu-id="a6371-111">The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.</span></span>
+<span data-ttu-id="e09bb-111">最初の例は、Power BI を Advanced Hunting API に接続する方法を示し、2 番目の例では、マシン アクションやアラートなどの OData API への接続を示しています。</span><span class="sxs-lookup"><span data-stu-id="e09bb-111">The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.</span></span>
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a><span data-ttu-id="a6371-112">Power BI を高度なハンティング API に接続する</span><span class="sxs-lookup"><span data-stu-id="a6371-112">Connect Power BI to Advanced Hunting API</span></span>
+## <a name="connect-power-bi-to-advanced-hunting-api"></a><span data-ttu-id="e09bb-112">Connect Power BI高度なハンティング API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="e09bb-112">Connect Power BI to Advanced Hunting API</span></span>
 
-- <span data-ttu-id="a6371-113">Microsoft Power BI を開く</span><span class="sxs-lookup"><span data-stu-id="a6371-113">Open Microsoft Power BI</span></span>
+- <span data-ttu-id="e09bb-113">Microsoft ファイルを開Power BI</span><span class="sxs-lookup"><span data-stu-id="e09bb-113">Open Microsoft Power BI</span></span>
 
-- <span data-ttu-id="a6371-114">[データ **の空のクエリ**  >  **の取得] をクリックします。**</span><span class="sxs-lookup"><span data-stu-id="a6371-114">Click **Get Data** > **Blank Query**</span></span>
+- <span data-ttu-id="e09bb-114">[データ **の空のクエリ**  >  **の取得] をクリックします。**</span><span class="sxs-lookup"><span data-stu-id="e09bb-114">Click **Get Data** > **Blank Query**</span></span>
 
     ![空のクエリを作成するイメージ](images/power-bi-create-blank-query.png)
 
-- <span data-ttu-id="a6371-116">[高度 **なエディター] をクリックします。**</span><span class="sxs-lookup"><span data-stu-id="a6371-116">Click **Advanced Editor**</span></span>
+- <span data-ttu-id="e09bb-116">[高度 **なエディター] をクリックします。**</span><span class="sxs-lookup"><span data-stu-id="e09bb-116">Click **Advanced Editor**</span></span>
 
     ![開いている高度なエディターのイメージ](images/power-bi-open-advanced-editor.png)
 
-- <span data-ttu-id="a6371-118">以下をコピーし、エディターに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="a6371-118">Copy the below and paste it in the editor:</span></span>
+- <span data-ttu-id="e09bb-118">以下をコピーし、エディターに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="e09bb-118">Copy the below and paste it in the editor:</span></span>
 
 ```
     let 
@@ -95,31 +95,31 @@ ms.locfileid: "51935043"
 
 ```
 
-- <span data-ttu-id="a6371-119">[完了] を **クリックします。**</span><span class="sxs-lookup"><span data-stu-id="a6371-119">Click **Done**</span></span>
+- <span data-ttu-id="e09bb-119">[完了] を **クリックします。**</span><span class="sxs-lookup"><span data-stu-id="e09bb-119">Click **Done**</span></span>
 
-- <span data-ttu-id="a6371-120">[資格情報 **の編集] をクリックします。**</span><span class="sxs-lookup"><span data-stu-id="a6371-120">Click **Edit Credentials**</span></span>
+- <span data-ttu-id="e09bb-120">[資格情報 **の編集] をクリックします。**</span><span class="sxs-lookup"><span data-stu-id="e09bb-120">Click **Edit Credentials**</span></span>
 
     ![編集資格情報のイメージ0](images/power-bi-edit-credentials.png)
 
-- <span data-ttu-id="a6371-122">[**組織アカウント]**  >  **[サインイン] の選択**</span><span class="sxs-lookup"><span data-stu-id="a6371-122">Select **Organizational account** > **Sign in**</span></span>
+- <span data-ttu-id="e09bb-122">[**組織アカウント]**  >  **[サインイン] の選択**</span><span class="sxs-lookup"><span data-stu-id="e09bb-122">Select **Organizational account** > **Sign in**</span></span>
 
     ![set credentials1 のイメージ](images/power-bi-set-credentials-organizational.png)
 
-- <span data-ttu-id="a6371-124">資格情報を入力し、サインインを待つ</span><span class="sxs-lookup"><span data-stu-id="a6371-124">Enter your credentials and wait to be signed in</span></span>
+- <span data-ttu-id="e09bb-124">資格情報を入力し、サインインを待つ</span><span class="sxs-lookup"><span data-stu-id="e09bb-124">Enter your credentials and wait to be signed in</span></span>
 
-- <span data-ttu-id="a6371-125">[接続 **] をクリックします。**</span><span class="sxs-lookup"><span data-stu-id="a6371-125">Click **Connect**</span></span>
+- <span data-ttu-id="e09bb-125">[次 **Connect**</span><span class="sxs-lookup"><span data-stu-id="e09bb-125">Click **Connect**</span></span>
 
     ![set credentials2 のイメージ](images/power-bi-set-credentials-organizational-cont.png)
 
-- <span data-ttu-id="a6371-127">これでクエリの結果がテーブルとして表示され、その上にビジュアライゼーションのビルドを開始できます。</span><span class="sxs-lookup"><span data-stu-id="a6371-127">Now the results of your query will appear as table and you can start build visualizations on top of it!</span></span>
+- <span data-ttu-id="e09bb-127">これでクエリの結果がテーブルとして表示され、その上にビジュアライゼーションのビルドを開始できます。</span><span class="sxs-lookup"><span data-stu-id="e09bb-127">Now the results of your query will appear as table and you can start build visualizations on top of it!</span></span>
 
-- <span data-ttu-id="a6371-128">このテーブルを複製し、名前を変更し、高度な検索クエリを内部で編集して、必要なデータを取得できます。</span><span class="sxs-lookup"><span data-stu-id="a6371-128">You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.</span></span>
+- <span data-ttu-id="e09bb-128">このテーブルを複製し、名前を変更し、高度な検索クエリを内部で編集して、必要なデータを取得できます。</span><span class="sxs-lookup"><span data-stu-id="e09bb-128">You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.</span></span>
 
-## <a name="connect-power-bi-to-odata-apis"></a><span data-ttu-id="a6371-129">Power BI を OData API に接続する</span><span class="sxs-lookup"><span data-stu-id="a6371-129">Connect Power BI to OData APIs</span></span>
+## <a name="connect-power-bi-to-odata-apis"></a><span data-ttu-id="e09bb-129">Connect Power BI OData API へのアクセス</span><span class="sxs-lookup"><span data-stu-id="e09bb-129">Connect Power BI to OData APIs</span></span>
 
-- <span data-ttu-id="a6371-130">上記の例との唯一の違いは、エディター内のクエリです。</span><span class="sxs-lookup"><span data-stu-id="a6371-130">The only difference from the above example is the query inside the editor.</span></span> 
+- <span data-ttu-id="e09bb-130">上記の例との唯一の違いは、エディター内のクエリです。</span><span class="sxs-lookup"><span data-stu-id="e09bb-130">The only difference from the above example is the query inside the editor.</span></span> 
 
-- <span data-ttu-id="a6371-131">以下をコピーしてエディターに貼り付け、組織から **すべての Machine Actions** をプルします。</span><span class="sxs-lookup"><span data-stu-id="a6371-131">Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:</span></span>
+- <span data-ttu-id="e09bb-131">以下をコピーしてエディターに貼り付け、組織から **すべての Machine Actions** をプルします。</span><span class="sxs-lookup"><span data-stu-id="e09bb-131">Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:</span></span>
 
 ```
     let
@@ -132,19 +132,19 @@ ms.locfileid: "51935043"
 
 ```
 
-- <span data-ttu-id="a6371-132">アラートとコンピューターでも同 **じ操作** を **実行できます**。</span><span class="sxs-lookup"><span data-stu-id="a6371-132">You can do the same for **Alerts** and **Machines**.</span></span>
+- <span data-ttu-id="e09bb-132">アラートとコンピューターでも同 **じ操作** を **実行できます**。</span><span class="sxs-lookup"><span data-stu-id="e09bb-132">You can do the same for **Alerts** and **Machines**.</span></span>
 
-- <span data-ttu-id="a6371-133">クエリ フィルターに OData クエリを使用することもできます [。「Using OData Queries」を参照してください。](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="a6371-133">You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)</span></span>
-
-
-## <a name="power-bi-dashboard-samples-in-github"></a><span data-ttu-id="a6371-134">GitHub の Power BI ダッシュボードのサンプル</span><span class="sxs-lookup"><span data-stu-id="a6371-134">Power BI dashboard samples in GitHub</span></span>
-<span data-ttu-id="a6371-135">詳細については、「Power BI レポート テンプレート [」を参照してください](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。</span><span class="sxs-lookup"><span data-stu-id="a6371-135">For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).</span></span>
-
-## <a name="sample-reports"></a><span data-ttu-id="a6371-136">サンプル レポート</span><span class="sxs-lookup"><span data-stu-id="a6371-136">Sample reports</span></span>
-<span data-ttu-id="a6371-137">Microsoft Defender for Endpoint Power BI レポートサンプルを表示します。</span><span class="sxs-lookup"><span data-stu-id="a6371-137">View the Microsoft Defender for Endpoint Power BI report samples.</span></span> <span data-ttu-id="a6371-138">詳細については、「Browse [code samples 」を参照してください](https://docs.microsoft.com/samples/browse/?products=mdatp)。</span><span class="sxs-lookup"><span data-stu-id="a6371-138">For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).</span></span>
+- <span data-ttu-id="e09bb-133">クエリ フィルターに OData クエリを使用することもできます [。「Using OData Queries」を参照してください。](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="e09bb-133">You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)</span></span>
 
 
-## <a name="related-topic"></a><span data-ttu-id="a6371-139">関連トピック</span><span class="sxs-lookup"><span data-stu-id="a6371-139">Related topic</span></span>
-- [<span data-ttu-id="a6371-140">エンドポイント API の Defender</span><span class="sxs-lookup"><span data-stu-id="a6371-140">Defender for Endpoint APIs</span></span>](apis-intro.md)
-- [<span data-ttu-id="a6371-141">高度な追及 API</span><span class="sxs-lookup"><span data-stu-id="a6371-141">Advanced Hunting API</span></span>](run-advanced-query-api.md)
-- [<span data-ttu-id="a6371-142">OData クエリの使用</span><span class="sxs-lookup"><span data-stu-id="a6371-142">Using OData Queries</span></span>](exposed-apis-odata-samples.md)
+## <a name="power-bi-dashboard-samples-in-github"></a><span data-ttu-id="e09bb-134">Power BIダッシュボードのサンプルをGitHub</span><span class="sxs-lookup"><span data-stu-id="e09bb-134">Power BI dashboard samples in GitHub</span></span>
+<span data-ttu-id="e09bb-135">詳細については、「レポート テンプレートのPower BI[を参照してください](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。</span><span class="sxs-lookup"><span data-stu-id="e09bb-135">For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).</span></span>
+
+## <a name="sample-reports"></a><span data-ttu-id="e09bb-136">サンプル レポート</span><span class="sxs-lookup"><span data-stu-id="e09bb-136">Sample reports</span></span>
+<span data-ttu-id="e09bb-137">レポート サンプルの Microsoft Defender for Endpoint Power BI表示します。</span><span class="sxs-lookup"><span data-stu-id="e09bb-137">View the Microsoft Defender for Endpoint Power BI report samples.</span></span> <span data-ttu-id="e09bb-138">詳細については、「Browse [code samples 」を参照してください](https://docs.microsoft.com/samples/browse/?products=mdatp)。</span><span class="sxs-lookup"><span data-stu-id="e09bb-138">For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).</span></span>
+
+
+## <a name="related-topic"></a><span data-ttu-id="e09bb-139">関連トピック</span><span class="sxs-lookup"><span data-stu-id="e09bb-139">Related topic</span></span>
+- [<span data-ttu-id="e09bb-140">エンドポイント API の Defender</span><span class="sxs-lookup"><span data-stu-id="e09bb-140">Defender for Endpoint APIs</span></span>](apis-intro.md)
+- [<span data-ttu-id="e09bb-141">高度な追及 API</span><span class="sxs-lookup"><span data-stu-id="e09bb-141">Advanced Hunting API</span></span>](run-advanced-query-api.md)
+- [<span data-ttu-id="e09bb-142">OData クエリの使用</span><span class="sxs-lookup"><span data-stu-id="e09bb-142">Using OData Queries</span></span>](exposed-apis-odata-samples.md)

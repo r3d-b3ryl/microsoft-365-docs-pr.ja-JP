@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296337"
 ---
-# <a name="contact-support-for-comoros"></a><span data-ttu-id="a3a96-103">Comoros のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="a3a96-103">Contact support for Comoros</span></span>
+# <a name="contact-support-for-comoros"></a><span data-ttu-id="121f5-103">Comoros のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="121f5-103">Contact support for Comoros</span></span>
 
-<span data-ttu-id="a3a96-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="a3a96-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="121f5-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="121f5-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a3a96-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="a3a96-105">Phone number</span></span>
-<span data-ttu-id="a3a96-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="a3a96-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="121f5-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="121f5-105">Phone number</span></span>
+<span data-ttu-id="121f5-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="121f5-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a3a96-107">時間</span><span class="sxs-lookup"><span data-stu-id="a3a96-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a3a96-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="a3a96-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="121f5-107">時間</span><span class="sxs-lookup"><span data-stu-id="121f5-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="121f5-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="121f5-108">Billing Support:</span></span>
 
-<span data-ttu-id="a3a96-109">フランス語: Mon-Fri午前 11 時から午後 7 時</span><span class="sxs-lookup"><span data-stu-id="a3a96-109">French: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="121f5-109">フランス語: Mon-Fri午前 11 時から午後 7 時</span><span class="sxs-lookup"><span data-stu-id="121f5-109">French: Mon-Fri 11 AM-7 PM</span></span>
 
-<span data-ttu-id="a3a96-110">英語: Mon-Fri午前 11 時から午後 7 時</span><span class="sxs-lookup"><span data-stu-id="a3a96-110">English: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="121f5-110">英語: Mon-Fri午前 11 時から午後 7 時</span><span class="sxs-lookup"><span data-stu-id="121f5-110">English: Mon-Fri 11 AM-7 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a3a96-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="a3a96-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="121f5-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="121f5-111">Technical Support:</span></span>
 
-<span data-ttu-id="a3a96-112">フランス語: Mon-Fri 10 AM-11 PM</span><span class="sxs-lookup"><span data-stu-id="a3a96-112">French: Mon-Fri 10 AM-11 PM</span></span>
+<span data-ttu-id="121f5-112">フランス語: Mon-Fri 10 AM-11 PM</span><span class="sxs-lookup"><span data-stu-id="121f5-112">French: Mon-Fri 10 AM-11 PM</span></span>
 
-<span data-ttu-id="a3a96-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="a3a96-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="121f5-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="121f5-113">English: 24 hours a day, 7 days a week</span></span>

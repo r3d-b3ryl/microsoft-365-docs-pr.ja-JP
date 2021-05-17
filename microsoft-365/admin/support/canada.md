@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296818"
 ---
-# <a name="contact-support-for-canada"></a><span data-ttu-id="3bbff-103">カナダのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="3bbff-103">Contact support for Canada</span></span>
+# <a name="contact-support-for-canada"></a><span data-ttu-id="49b9a-103">カナダのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="49b9a-103">Contact support for Canada</span></span>
 
-<span data-ttu-id="3bbff-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="3bbff-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="49b9a-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="49b9a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="3bbff-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="3bbff-105">Phone number</span></span>
-<span data-ttu-id="3bbff-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="3bbff-106">1 800 865 9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="49b9a-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="49b9a-105">Phone number</span></span>
+<span data-ttu-id="49b9a-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="49b9a-106">1 800 865 9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="3bbff-107">時間</span><span class="sxs-lookup"><span data-stu-id="3bbff-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="3bbff-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="3bbff-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="49b9a-107">時間</span><span class="sxs-lookup"><span data-stu-id="49b9a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="49b9a-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="49b9a-108">Billing Support:</span></span>
 
-<span data-ttu-id="3bbff-109">英語: Mon-Fri午前 9 時から午後 5 時 (ローカル)</span><span class="sxs-lookup"><span data-stu-id="3bbff-109">English: Mon-Fri 9 AM-5 PM Local</span></span>
+<span data-ttu-id="49b9a-109">英語: Mon-Fri午前 9 時から午後 5 時 (ローカル)</span><span class="sxs-lookup"><span data-stu-id="49b9a-109">English: Mon-Fri 9 AM-5 PM Local</span></span>
 
-<span data-ttu-id="3bbff-110">フランス語: Mon-Fri午前 9 時から午後 5 時 (ET)</span><span class="sxs-lookup"><span data-stu-id="3bbff-110">French: Mon-Fri 9 AM-5 PM ET</span></span>
+<span data-ttu-id="49b9a-110">フランス語: Mon-Fri午前 9 時から午後 5 時 (ET)</span><span class="sxs-lookup"><span data-stu-id="49b9a-110">French: Mon-Fri 9 AM-5 PM ET</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="3bbff-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="3bbff-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="49b9a-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="49b9a-111">Technical Support:</span></span>
 
-<span data-ttu-id="3bbff-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="3bbff-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="49b9a-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="49b9a-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="3bbff-113">フランス語: Mon-Fri午前 9 時から午後 5 時 (ET)</span><span class="sxs-lookup"><span data-stu-id="3bbff-113">French: Mon-Fri 9 AM-5 PM ET</span></span>
+<span data-ttu-id="49b9a-113">フランス語: Mon-Fri午前 9 時から午後 5 時 (ET)</span><span class="sxs-lookup"><span data-stu-id="49b9a-113">French: Mon-Fri 9 AM-5 PM ET</span></span>

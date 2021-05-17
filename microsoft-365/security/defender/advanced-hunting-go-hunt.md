@@ -27,38 +27,38 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2021
 ms.locfileid: "51952658"
 ---
-# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a><span data-ttu-id="13525-104">go hunt を使用してエンティティまたはイベント情報をすばやく検索する</span><span class="sxs-lookup"><span data-stu-id="13525-104">Quickly hunt for entity or event information with go hunt</span></span>
+# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a><span data-ttu-id="9d086-104">go hunt を使用してエンティティまたはイベント情報をすばやく検索する</span><span class="sxs-lookup"><span data-stu-id="9d086-104">Quickly hunt for entity or event information with go hunt</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="13525-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="13525-105">**Applies to:**</span></span>
-- <span data-ttu-id="13525-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="13525-106">Microsoft 365 Defender</span></span>
-- <span data-ttu-id="13525-107">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="13525-107">Microsoft Defender for Endpoint</span></span>
+<span data-ttu-id="9d086-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="9d086-105">**Applies to:**</span></span>
+- <span data-ttu-id="9d086-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9d086-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="9d086-107">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="9d086-107">Microsoft Defender for Endpoint</span></span>
 
-<span data-ttu-id="13525-108">Go *Hunt アクションを使用* すると、強力なクエリ ベースの高度なハンティング機能を使用して、イベントやさまざまなエンティティの種類 [をすばやく調査](advanced-hunting-overview.md) できます。</span><span class="sxs-lookup"><span data-stu-id="13525-108">With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities.</span></span> <span data-ttu-id="13525-109">このアクションでは、選択したイベントまたはエンティティに関する関連情報を検索する高度な検索クエリが自動的に実行されます。</span><span class="sxs-lookup"><span data-stu-id="13525-109">This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.</span></span>
+<span data-ttu-id="9d086-108">Go *Hunt アクションを使用* すると、強力なクエリ ベースの高度なハンティング機能を使用して、イベントやさまざまなエンティティの種類 [をすばやく調査](advanced-hunting-overview.md) できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-108">With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities.</span></span> <span data-ttu-id="9d086-109">このアクションでは、選択したイベントまたはエンティティに関する関連情報を検索する高度な検索クエリが自動的に実行されます。</span><span class="sxs-lookup"><span data-stu-id="9d086-109">This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.</span></span>
 
-<span data-ttu-id="13525-110">go *hunt アクション* は、イベントまたはエンティティの詳細が表示されるたびに、セキュリティ センターのさまざまなセクションで使用できます。</span><span class="sxs-lookup"><span data-stu-id="13525-110">The *go hunt* action is available in various sections of the security center whenever event or entity details are displayed.</span></span> <span data-ttu-id="13525-111">たとえば、次のセクション *から go hunt* を使用できます。</span><span class="sxs-lookup"><span data-stu-id="13525-111">For example, you can use *go hunt* from the following sections:</span></span>
+<span data-ttu-id="9d086-110">go *hunt アクション* は、イベントまたはエンティティの詳細が表示されるたびに、セキュリティ センターのさまざまなセクションで使用できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-110">The *go hunt* action is available in various sections of the security center whenever event or entity details are displayed.</span></span> <span data-ttu-id="9d086-111">たとえば、次のセクション *から go hunt* を使用できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-111">For example, you can use *go hunt* from the following sections:</span></span>
 
-- <span data-ttu-id="13525-112">インシデント ページ [では、](investigate-incidents.md#summary)インシデントに関連付けられているユーザー、デバイス、その他多くのエンティティに関する詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="13525-112">In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident.</span></span> <span data-ttu-id="13525-113">エンティティを選択すると、追加の情報と、そのエンティティに対して実行できるさまざまなアクションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="13525-113">As you select an entity, you get additional information as well as various actions you could take on that entity.</span></span> <span data-ttu-id="13525-114">次の例では、メールボックスが選択され、メールボックスに関する詳細と、メールボックスの詳細を検索するオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="13525-114">In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.</span></span>
+- <span data-ttu-id="9d086-112">インシデント ページ [では、](investigate-incidents.md#summary)インシデントに関連付けられているユーザー、デバイス、その他多くのエンティティに関する詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-112">In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident.</span></span> <span data-ttu-id="9d086-113">エンティティを選択すると、追加の情報と、そのエンティティに対して実行できるさまざまなアクションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9d086-113">As you select an entity, you get additional information as well as various actions you could take on that entity.</span></span> <span data-ttu-id="9d086-114">次の例では、メールボックスが選択され、メールボックスに関する詳細と、メールボックスの詳細を検索するオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9d086-114">In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.</span></span>
 
     ![移動ハント オプションを使用してメールボックスの詳細を示す画像](../../media/mtp-ah/go-hunt-email.png)
 
-- <span data-ttu-id="13525-116">インシデント ページでは、[証拠] タブの下のエンティティの一覧にアクセスすることもできます。これらのエンティティのいずれかを選択すると、そのエンティティに関する情報をすばやく検索できます。</span><span class="sxs-lookup"><span data-stu-id="13525-116">In the incident page, you can also access a list of entities under the evidence tab. Selecting one of those entities provides an option to quickly hunt for information about that entity.</span></span>
+- <span data-ttu-id="9d086-116">インシデント ページでは、[証拠] タブの下のエンティティの一覧にアクセスすることもできます。これらのエンティティのいずれかを選択すると、そのエンティティに関する情報をすばやく検索できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-116">In the incident page, you can also access a list of entities under the evidence tab. Selecting one of those entities provides an option to quickly hunt for information about that entity.</span></span>
 
     ![[証拠] タブの [移動ハント] オプションを使用して選択したファイルを示す画像](../../media/mtp-ah/go-hunt-evidence-file.png)
 
 
-- <span data-ttu-id="13525-118">デバイスのタイムラインを表示する場合は、タイムラインでイベントを選択して、そのイベントに関する追加情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="13525-118">When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event.</span></span> <span data-ttu-id="13525-119">イベントを選択すると、高度な検索で他の関連イベントを探すオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="13525-119">Once an event is selected, you get the option to hunt for other relevant events in advanced hunting.</span></span>
+- <span data-ttu-id="9d086-118">デバイスのタイムラインを表示する場合は、タイムラインでイベントを選択して、そのイベントに関する追加情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-118">When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event.</span></span> <span data-ttu-id="9d086-119">イベントを選択すると、高度な検索で他の関連イベントを探すオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9d086-119">Once an event is selected, you get the option to hunt for other relevant events in advanced hunting.</span></span>
 
     ![Go hunt オプションを使用してイベントの詳細を示す画像](../../media/mtp-ah/go-hunt-event.png)
 
-<span data-ttu-id="13525-121">関連イベント **に対して** [Go hunt] または **[ハント** ] を選択すると、エンティティまたはイベントを選択したかどうかに応じて、さまざまなクエリが渡されます。</span><span class="sxs-lookup"><span data-stu-id="13525-121">Selecting **Go hunt** or **Hunt for related events** passes different queries, depending on whether you've selected an entity or an event.</span></span>
+<span data-ttu-id="9d086-121">関連イベント **に対して** [Go hunt] または **[ハント** ] を選択すると、エンティティまたはイベントを選択したかどうかに応じて、さまざまなクエリが渡されます。</span><span class="sxs-lookup"><span data-stu-id="9d086-121">Selecting **Go hunt** or **Hunt for related events** passes different queries, depending on whether you've selected an entity or an event.</span></span>
 
-## <a name="query-for-entity-information"></a><span data-ttu-id="13525-122">エンティティ情報のクエリ</span><span class="sxs-lookup"><span data-stu-id="13525-122">Query for entity information</span></span>
-<span data-ttu-id="13525-123">ユーザー、 *デバイス、その* 他の種類のエンティティに関する情報を検索するために移動ハントを使用する場合、クエリは関連するすべてのスキーマ テーブルで、そのエンティティに関連するすべてのイベントをチェックします。</span><span class="sxs-lookup"><span data-stu-id="13525-123">When using *go hunt* to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity.</span></span> <span data-ttu-id="13525-124">結果を管理可能に保つために、クエリの対象範囲は、エンティティを含み、インシデントに関連付けられた過去 30 日間の最も早いアクティビティと同じ期間です。</span><span class="sxs-lookup"><span data-stu-id="13525-124">To keep the results manageable, the query is scoped to around the same time period as the earliest activity in the past 30 days that involves the entity and is associated with the incident.</span></span>
+## <a name="query-for-entity-information"></a><span data-ttu-id="9d086-122">エンティティ情報のクエリ</span><span class="sxs-lookup"><span data-stu-id="9d086-122">Query for entity information</span></span>
+<span data-ttu-id="9d086-123">ユーザー、 *デバイス、その* 他の種類のエンティティに関する情報を検索するために移動ハントを使用する場合、クエリは関連するすべてのスキーマ テーブルで、そのエンティティに関連するすべてのイベントをチェックします。</span><span class="sxs-lookup"><span data-stu-id="9d086-123">When using *go hunt* to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity.</span></span> <span data-ttu-id="9d086-124">結果を管理可能に保つために、クエリの対象範囲は、エンティティを含み、インシデントに関連付けられた過去 30 日間の最も早いアクティビティと同じ期間です。</span><span class="sxs-lookup"><span data-stu-id="9d086-124">To keep the results manageable, the query is scoped to around the same time period as the earliest activity in the past 30 days that involves the entity and is associated with the incident.</span></span>
 
-<span data-ttu-id="13525-125">デバイスの移動ハント クエリの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="13525-125">Here is an example of the go hunt query for a device:</span></span>
+<span data-ttu-id="9d086-125">デバイスの移動ハント クエリの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9d086-125">Here is an example of the go hunt query for a device:</span></span>
 
 ```kusto
 let selectedTimestamp = datetime(2020-06-02T02:06:47.1167157Z);
@@ -71,20 +71,20 @@ and DeviceName == deviceName
 // or DeviceId == deviceId
 | take 100
 ```
-### <a name="supported-entity-types"></a><span data-ttu-id="13525-126">サポートされているエンティティの種類</span><span class="sxs-lookup"><span data-stu-id="13525-126">Supported entity types</span></span>
-<span data-ttu-id="13525-127">次のエンティティ *の種類を選択* した後で、go hunt を使用できます。</span><span class="sxs-lookup"><span data-stu-id="13525-127">You can use *go hunt* after selecting any of these entity types:</span></span>
+### <a name="supported-entity-types"></a><span data-ttu-id="9d086-126">サポートされているエンティティの種類</span><span class="sxs-lookup"><span data-stu-id="9d086-126">Supported entity types</span></span>
+<span data-ttu-id="9d086-127">次のエンティティ *の種類を選択* した後で、go hunt を使用できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-127">You can use *go hunt* after selecting any of these entity types:</span></span>
 
-- <span data-ttu-id="13525-128">ファイル</span><span class="sxs-lookup"><span data-stu-id="13525-128">Files</span></span>
-- <span data-ttu-id="13525-129">メール</span><span class="sxs-lookup"><span data-stu-id="13525-129">Emails</span></span>
-- <span data-ttu-id="13525-130">電子メール クラスター</span><span class="sxs-lookup"><span data-stu-id="13525-130">Email clusters</span></span>
-- <span data-ttu-id="13525-131">メールボックス</span><span class="sxs-lookup"><span data-stu-id="13525-131">Mailboxes</span></span>
-- <span data-ttu-id="13525-132">ユーザー</span><span class="sxs-lookup"><span data-stu-id="13525-132">Users</span></span>
-- <span data-ttu-id="13525-133">デバイス</span><span class="sxs-lookup"><span data-stu-id="13525-133">Devices</span></span>
-- <span data-ttu-id="13525-134">IP アドレス</span><span class="sxs-lookup"><span data-stu-id="13525-134">IP addresses</span></span>
-- <span data-ttu-id="13525-135">URL</span><span class="sxs-lookup"><span data-stu-id="13525-135">URLs</span></span>
+- <span data-ttu-id="9d086-128">ファイル</span><span class="sxs-lookup"><span data-stu-id="9d086-128">Files</span></span>
+- <span data-ttu-id="9d086-129">メール</span><span class="sxs-lookup"><span data-stu-id="9d086-129">Emails</span></span>
+- <span data-ttu-id="9d086-130">電子メール クラスター</span><span class="sxs-lookup"><span data-stu-id="9d086-130">Email clusters</span></span>
+- <span data-ttu-id="9d086-131">メールボックス</span><span class="sxs-lookup"><span data-stu-id="9d086-131">Mailboxes</span></span>
+- <span data-ttu-id="9d086-132">ユーザー</span><span class="sxs-lookup"><span data-stu-id="9d086-132">Users</span></span>
+- <span data-ttu-id="9d086-133">デバイス</span><span class="sxs-lookup"><span data-stu-id="9d086-133">Devices</span></span>
+- <span data-ttu-id="9d086-134">IP アドレス</span><span class="sxs-lookup"><span data-stu-id="9d086-134">IP addresses</span></span>
+- <span data-ttu-id="9d086-135">URL</span><span class="sxs-lookup"><span data-stu-id="9d086-135">URLs</span></span>
 
-## <a name="query-for-event-information"></a><span data-ttu-id="13525-136">イベント情報のクエリ</span><span class="sxs-lookup"><span data-stu-id="13525-136">Query for event information</span></span>
-<span data-ttu-id="13525-137">go *hunt を使用して* タイムライン イベントに関する情報を照会する場合、クエリは、選択したイベントの時刻に関連するすべてのスキーマ テーブルで他のイベントをチェックします。</span><span class="sxs-lookup"><span data-stu-id="13525-137">When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for other events around the time of the selected event.</span></span> <span data-ttu-id="13525-138">たとえば、次のクエリは、同じデバイスで同じ期間に発生したさまざまなスキーマ テーブルのイベントを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="13525-138">For example, the following query lists events in various schema tables that occurred around the same time period on the same device:</span></span>
+## <a name="query-for-event-information"></a><span data-ttu-id="9d086-136">イベント情報のクエリ</span><span class="sxs-lookup"><span data-stu-id="9d086-136">Query for event information</span></span>
+<span data-ttu-id="9d086-137">go *hunt を使用して* タイムライン イベントに関する情報を照会する場合、クエリは、選択したイベントの時刻に関連するすべてのスキーマ テーブルで他のイベントをチェックします。</span><span class="sxs-lookup"><span data-stu-id="9d086-137">When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for other events around the time of the selected event.</span></span> <span data-ttu-id="9d086-138">たとえば、次のクエリは、同じデバイスで同じ期間に発生したさまざまなスキーマ テーブルのイベントを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="9d086-138">For example, the following query lists events in various schema tables that occurred around the same time period on the same device:</span></span>
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
@@ -97,22 +97,22 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 | project-reorder Relevance
 ```
 
-## <a name="adjust-the-query"></a><span data-ttu-id="13525-139">クエリを調整する</span><span class="sxs-lookup"><span data-stu-id="13525-139">Adjust the query</span></span>
-<span data-ttu-id="13525-140">クエリ言語に関する知識 [がある](advanced-hunting-query-language.md)場合は、クエリを好みに合わせて調整できます。</span><span class="sxs-lookup"><span data-stu-id="13525-140">With some knowledge of the [query language](advanced-hunting-query-language.md), you can adjust the query to your preference.</span></span> <span data-ttu-id="13525-141">たとえば、タイム ウィンドウのサイズを決定する次の行を調整できます。</span><span class="sxs-lookup"><span data-stu-id="13525-141">For example, you can adjust this line, which determines the size of the time window:</span></span>
+## <a name="adjust-the-query"></a><span data-ttu-id="9d086-139">クエリを調整する</span><span class="sxs-lookup"><span data-stu-id="9d086-139">Adjust the query</span></span>
+<span data-ttu-id="9d086-140">クエリ言語に関する知識 [がある](advanced-hunting-query-language.md)場合は、クエリを好みに合わせて調整できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-140">With some knowledge of the [query language](advanced-hunting-query-language.md), you can adjust the query to your preference.</span></span> <span data-ttu-id="9d086-141">たとえば、タイム ウィンドウのサイズを決定する次の行を調整できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-141">For example, you can adjust this line, which determines the size of the time window:</span></span>
 
 ```kusto
 Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 ```
 
-<span data-ttu-id="13525-142">より関連性の高い結果を得るクエリの変更に加えて、次の処理も実行できます。</span><span class="sxs-lookup"><span data-stu-id="13525-142">In addition to modifying the query to get more relevant results, you can also:</span></span>
-- [<span data-ttu-id="13525-143">結果をグラフとして表示する</span><span class="sxs-lookup"><span data-stu-id="13525-143">View the results as charts</span></span>](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
-- [<span data-ttu-id="13525-144">カスタム検出ルールの作成</span><span class="sxs-lookup"><span data-stu-id="13525-144">Create a custom detection rule</span></span>](custom-detection-rules.md)
+<span data-ttu-id="9d086-142">より関連性の高い結果を得るクエリの変更に加えて、次の処理も実行できます。</span><span class="sxs-lookup"><span data-stu-id="9d086-142">In addition to modifying the query to get more relevant results, you can also:</span></span>
+- [<span data-ttu-id="9d086-143">結果をグラフとして表示する</span><span class="sxs-lookup"><span data-stu-id="9d086-143">View the results as charts</span></span>](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
+- [<span data-ttu-id="9d086-144">カスタム検出ルールの作成</span><span class="sxs-lookup"><span data-stu-id="9d086-144">Create a custom detection rule</span></span>](custom-detection-rules.md)
 
 >[!NOTE]
-><span data-ttu-id="13525-145">この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="13525-145">Some tables in this article might not be available in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="13525-146">[Microsoft 365 Defender をオンに](m365d-enable.md) し、より多くのデータ ソースを使用して脅威を検出します。</span><span class="sxs-lookup"><span data-stu-id="13525-146">[Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources.</span></span> <span data-ttu-id="13525-147">「Advanced [Hunting queries](advanced-hunting-migrate-from-mde.md)from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動できます。</span><span class="sxs-lookup"><span data-stu-id="13525-147">You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).</span></span>
+><span data-ttu-id="9d086-145">この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="9d086-145">Some tables in this article might not be available in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="9d086-146">[Defender を有効Microsoft 365、](m365d-enable.md)より多くのデータ ソースを使用して脅威を探します。</span><span class="sxs-lookup"><span data-stu-id="9d086-146">[Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources.</span></span> <span data-ttu-id="9d086-147">「Advanced Hunting queries from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に[移動できます](advanced-hunting-migrate-from-mde.md)。</span><span class="sxs-lookup"><span data-stu-id="9d086-147">You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="13525-148">関連項目</span><span class="sxs-lookup"><span data-stu-id="13525-148">Related topics</span></span>
-- [<span data-ttu-id="13525-149">高度な追求の概要</span><span class="sxs-lookup"><span data-stu-id="13525-149">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="13525-150">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="13525-150">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="13525-151">クエリ結果を操作する</span><span class="sxs-lookup"><span data-stu-id="13525-151">Work with query results</span></span>](advanced-hunting-query-results.md)
-- [<span data-ttu-id="13525-152">カスタム検出ルール</span><span class="sxs-lookup"><span data-stu-id="13525-152">Custom detection rules</span></span>](custom-detection-rules.md)
+## <a name="related-topics"></a><span data-ttu-id="9d086-148">関連項目</span><span class="sxs-lookup"><span data-stu-id="9d086-148">Related topics</span></span>
+- [<span data-ttu-id="9d086-149">高度な追求の概要</span><span class="sxs-lookup"><span data-stu-id="9d086-149">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="9d086-150">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="9d086-150">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="9d086-151">クエリ結果を操作する</span><span class="sxs-lookup"><span data-stu-id="9d086-151">Work with query results</span></span>](advanced-hunting-query-results.md)
+- [<span data-ttu-id="9d086-152">カスタム検出ルール</span><span class="sxs-lookup"><span data-stu-id="9d086-152">Custom detection rules</span></span>](custom-detection-rules.md)

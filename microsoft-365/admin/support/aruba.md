@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296625"
 ---
-# <a name="contact-support-for-aruba"></a><span data-ttu-id="bd78b-103">アルバのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="bd78b-103">Contact support for Aruba</span></span>
+# <a name="contact-support-for-aruba"></a><span data-ttu-id="5c742-103">アルバのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="5c742-103">Contact support for Aruba</span></span>
 
-<span data-ttu-id="bd78b-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="bd78b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="5c742-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="5c742-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="bd78b-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="bd78b-105">Phone number</span></span>
-<span data-ttu-id="bd78b-106">+1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="bd78b-106">+1 312 843 5146</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5c742-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="5c742-105">Phone number</span></span>
+<span data-ttu-id="5c742-106">+1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="5c742-106">+1 312 843 5146</span></span>
 
-## <a name="hours"></a><span data-ttu-id="bd78b-107">時間</span><span class="sxs-lookup"><span data-stu-id="bd78b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="bd78b-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="bd78b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5c742-107">時間</span><span class="sxs-lookup"><span data-stu-id="5c742-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5c742-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="5c742-108">Billing Support:</span></span>
 
-<span data-ttu-id="bd78b-109">オランダ語: Mon-Fri午前 4 時</span><span class="sxs-lookup"><span data-stu-id="bd78b-109">Dutch: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="5c742-109">オランダ語: Mon-Fri午前 4 時</span><span class="sxs-lookup"><span data-stu-id="5c742-109">Dutch: Mon-Fri 4 AM-noon</span></span>
 
-<span data-ttu-id="bd78b-110">英語: Mon-Fri午前 4 時</span><span class="sxs-lookup"><span data-stu-id="bd78b-110">English: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="5c742-110">英語: Mon-Fri午前 4 時</span><span class="sxs-lookup"><span data-stu-id="5c742-110">English: Mon-Fri 4 AM-noon</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="bd78b-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="bd78b-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5c742-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="5c742-111">Technical Support:</span></span>
 
-<span data-ttu-id="bd78b-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="bd78b-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5c742-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="5c742-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="bd78b-113">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="bd78b-113">International call charges apply</span></span>
+<span data-ttu-id="5c742-113">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="5c742-113">International call charges apply</span></span>

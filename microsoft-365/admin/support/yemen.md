@@ -19,30 +19,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297418"
 ---
-# <a name="contact-support-for-yemen"></a><span data-ttu-id="2d63a-103">イエメンのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="2d63a-103">Contact support for Yemen</span></span>
+# <a name="contact-support-for-yemen"></a><span data-ttu-id="c04dc-103">イエメンのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="c04dc-103">Contact support for Yemen</span></span>
 
-<span data-ttu-id="2d63a-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="2d63a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="c04dc-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="c04dc-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2d63a-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="2d63a-105">Phone number</span></span>
-<span data-ttu-id="2d63a-106">+974 44 119418</span><span class="sxs-lookup"><span data-stu-id="2d63a-106">+974 44 119418</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c04dc-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="c04dc-105">Phone number</span></span>
+<span data-ttu-id="c04dc-106">+974 44 119418</span><span class="sxs-lookup"><span data-stu-id="c04dc-106">+974 44 119418</span></span>
 
-<span data-ttu-id="2d63a-107">オプション 2 を選択する</span><span class="sxs-lookup"><span data-stu-id="2d63a-107">Select option 2</span></span>
+<span data-ttu-id="c04dc-107">オプション 2 を選択する</span><span class="sxs-lookup"><span data-stu-id="c04dc-107">Select option 2</span></span>
 
-<span data-ttu-id="2d63a-108">オプション 9 を選択する</span><span class="sxs-lookup"><span data-stu-id="2d63a-108">Select option 9</span></span>
+<span data-ttu-id="c04dc-108">オプション 9 を選択する</span><span class="sxs-lookup"><span data-stu-id="c04dc-108">Select option 9</span></span>
 
-<span data-ttu-id="2d63a-109">コード 7700 を入力する</span><span class="sxs-lookup"><span data-stu-id="2d63a-109">Enter code 7700</span></span>
+<span data-ttu-id="c04dc-109">コード 7700 を入力する</span><span class="sxs-lookup"><span data-stu-id="c04dc-109">Enter code 7700</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2d63a-110">時間</span><span class="sxs-lookup"><span data-stu-id="2d63a-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2d63a-111">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="2d63a-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c04dc-110">時間</span><span class="sxs-lookup"><span data-stu-id="c04dc-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c04dc-111">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="c04dc-111">Billing Support:</span></span>
 
-<span data-ttu-id="2d63a-112">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="2d63a-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="c04dc-112">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="c04dc-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="2d63a-113">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="2d63a-113">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="c04dc-113">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="c04dc-113">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2d63a-114">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="2d63a-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c04dc-114">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="c04dc-114">Technical Support:</span></span>
 
-<span data-ttu-id="2d63a-115">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="2d63a-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="c04dc-115">アラビア語: Sun-Thu 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="c04dc-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="2d63a-116">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="2d63a-116">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c04dc-116">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="c04dc-116">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="2d63a-117">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="2d63a-117">International call charges apply</span></span>
+<span data-ttu-id="c04dc-117">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="c04dc-117">International call charges apply</span></span>

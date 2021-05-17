@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297718"
 ---
-# <a name="contact-support-for-sint-eustatius"></a><span data-ttu-id="c5cc6-103">Sint Eustatius のサポートにお問い合わせください</span><span class="sxs-lookup"><span data-stu-id="c5cc6-103">Contact support for Sint Eustatius</span></span>
+# <a name="contact-support-for-sint-eustatius"></a><span data-ttu-id="694d7-103">Sint Eustatius のサポートにお問い合わせください</span><span class="sxs-lookup"><span data-stu-id="694d7-103">Contact support for Sint Eustatius</span></span>
 
-<span data-ttu-id="c5cc6-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="c5cc6-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="694d7-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="694d7-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c5cc6-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="c5cc6-105">Phone number</span></span>
-<span data-ttu-id="c5cc6-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="c5cc6-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="694d7-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="694d7-105">Phone number</span></span>
+<span data-ttu-id="694d7-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="694d7-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c5cc6-107">時間</span><span class="sxs-lookup"><span data-stu-id="c5cc6-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c5cc6-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="c5cc6-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="694d7-107">時間</span><span class="sxs-lookup"><span data-stu-id="694d7-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="694d7-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="694d7-108">Billing Support:</span></span>
 
-<span data-ttu-id="c5cc6-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="c5cc6-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="694d7-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="694d7-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c5cc6-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="c5cc6-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="694d7-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="694d7-110">Technical Support:</span></span>
 
-<span data-ttu-id="c5cc6-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="c5cc6-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="694d7-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="694d7-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="c5cc6-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="c5cc6-112">International call charges apply</span></span>
+<span data-ttu-id="694d7-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="694d7-112">International call charges apply</span></span>

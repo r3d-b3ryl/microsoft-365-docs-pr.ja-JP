@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender の高度な検索での FileProfile() 関数
+title: Defender の高度な検索での FileProfile() Microsoft 365
 description: FileProfile() を使用して高度な検索クエリ結果のファイルに関する情報を強化する方法について説明します。
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、FileProfile、ファイル プロファイル、関数、エンリッチメント
 search.product: eADQiWindows 10XVcnh
@@ -27,54 +27,54 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935847"
 ---
-# <a name="fileprofile"></a><span data-ttu-id="d2803-104">FileProfile()</span><span class="sxs-lookup"><span data-stu-id="d2803-104">FileProfile()</span></span>
+# <a name="fileprofile"></a><span data-ttu-id="042df-104">FileProfile()</span><span class="sxs-lookup"><span data-stu-id="042df-104">FileProfile()</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="d2803-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="d2803-105">**Applies to:**</span></span>
-- <span data-ttu-id="d2803-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d2803-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="042df-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="042df-105">**Applies to:**</span></span>
+- <span data-ttu-id="042df-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="042df-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="d2803-107">この `FileProfile()` 関数は、高度な検索の[](advanced-hunting-overview.md)エンリッチメント関数で、クエリで見つかったファイルに次のデータを追加します。</span><span class="sxs-lookup"><span data-stu-id="d2803-107">The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by the query.</span></span>
+<span data-ttu-id="042df-107">この `FileProfile()` 関数は、高度な検索の[](advanced-hunting-overview.md)エンリッチメント関数で、クエリで見つかったファイルに次のデータを追加します。</span><span class="sxs-lookup"><span data-stu-id="042df-107">The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by the query.</span></span>
 
-| <span data-ttu-id="d2803-108">Column</span><span class="sxs-lookup"><span data-stu-id="d2803-108">Column</span></span> | <span data-ttu-id="d2803-109">データ型</span><span class="sxs-lookup"><span data-stu-id="d2803-109">Data type</span></span> | <span data-ttu-id="d2803-110">説明</span><span class="sxs-lookup"><span data-stu-id="d2803-110">Description</span></span> |
+| <span data-ttu-id="042df-108">Column</span><span class="sxs-lookup"><span data-stu-id="042df-108">Column</span></span> | <span data-ttu-id="042df-109">データ型</span><span class="sxs-lookup"><span data-stu-id="042df-109">Data type</span></span> | <span data-ttu-id="042df-110">説明</span><span class="sxs-lookup"><span data-stu-id="042df-110">Description</span></span> |
 |------------|---------------|-------------|
-| `SHA1` | <span data-ttu-id="d2803-111">string</span><span class="sxs-lookup"><span data-stu-id="d2803-111">string</span></span> | <span data-ttu-id="d2803-112">記録されたアクションが適用されたファイルの SHA-1</span><span class="sxs-lookup"><span data-stu-id="d2803-112">SHA-1 of the file that the recorded action was applied to</span></span> |
-| `SHA256` | <span data-ttu-id="d2803-113">文字列</span><span class="sxs-lookup"><span data-stu-id="d2803-113">string</span></span> | <span data-ttu-id="d2803-114">記録されたアクションが適用されたファイルの SHA-256</span><span class="sxs-lookup"><span data-stu-id="d2803-114">SHA-256 of the file that the recorded action was applied to</span></span> |
-| `MD5` | <span data-ttu-id="d2803-115">string</span><span class="sxs-lookup"><span data-stu-id="d2803-115">string</span></span> | <span data-ttu-id="d2803-116">記録されたアクションが適用されたファイルの MD5 ハッシュ</span><span class="sxs-lookup"><span data-stu-id="d2803-116">MD5 hash of the file that the recorded action was applied to</span></span> |
-| `FileSize` | <span data-ttu-id="d2803-117">int</span><span class="sxs-lookup"><span data-stu-id="d2803-117">int</span></span> | <span data-ttu-id="d2803-118">ファイルのサイズ (バイト単位)</span><span class="sxs-lookup"><span data-stu-id="d2803-118">Size of the file in bytes</span></span> |
-| `GlobalPrevalence` | <span data-ttu-id="d2803-119">int</span><span class="sxs-lookup"><span data-stu-id="d2803-119">int</span></span> | <span data-ttu-id="d2803-120">Microsoft がグローバルに観察したエンティティのインスタンス数</span><span class="sxs-lookup"><span data-stu-id="d2803-120">Number of instances of the entity observed by Microsoft globally</span></span> |
-| `GlobalFirstSeen` | <span data-ttu-id="d2803-121">日付型</span><span class="sxs-lookup"><span data-stu-id="d2803-121">datetime</span></span> | <span data-ttu-id="d2803-122">エンティティが最初に Microsoft によってグローバルに観察された日時</span><span class="sxs-lookup"><span data-stu-id="d2803-122">Date and time when the entity was first observed by Microsoft globally</span></span> |
-| `GlobalLastSeen` | <span data-ttu-id="d2803-123">日付型</span><span class="sxs-lookup"><span data-stu-id="d2803-123">datetime</span></span> | <span data-ttu-id="d2803-124">エンティティが Microsoft によってグローバルに最後に観察された日時</span><span class="sxs-lookup"><span data-stu-id="d2803-124">Date and time when the entity was last observed by Microsoft globally</span></span> |
-| `Signer` | <span data-ttu-id="d2803-125">string</span><span class="sxs-lookup"><span data-stu-id="d2803-125">string</span></span> | <span data-ttu-id="d2803-126">ファイルの署名者に関する情報</span><span class="sxs-lookup"><span data-stu-id="d2803-126">Information about the signer of the file</span></span> |
-| `Issuer` | <span data-ttu-id="d2803-127">string</span><span class="sxs-lookup"><span data-stu-id="d2803-127">string</span></span> | <span data-ttu-id="d2803-128">発行元証明機関 (CA) に関する情報</span><span class="sxs-lookup"><span data-stu-id="d2803-128">Information about the issuing certificate authority (CA)</span></span> |
-| `SignerHash` | <span data-ttu-id="d2803-129">string</span><span class="sxs-lookup"><span data-stu-id="d2803-129">string</span></span> | <span data-ttu-id="d2803-130">署名者を識別する一意のハッシュ値</span><span class="sxs-lookup"><span data-stu-id="d2803-130">Unique hash value identifying the signer</span></span> |
-| `IsCertificateValid` | <span data-ttu-id="d2803-131">ブール値</span><span class="sxs-lookup"><span data-stu-id="d2803-131">boolean</span></span> | <span data-ttu-id="d2803-132">ファイルの署名に使用する証明書が有効かどうか</span><span class="sxs-lookup"><span data-stu-id="d2803-132">Whether the certificate used to sign the file is valid</span></span> |
-| `IsRootSignerMicrosoft` | <span data-ttu-id="d2803-133">ブール値</span><span class="sxs-lookup"><span data-stu-id="d2803-133">boolean</span></span> | <span data-ttu-id="d2803-134">ルート証明書の署名者が Microsoft であるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="d2803-134">Indicates whether the signer of the root certificate is Microsoft</span></span> |
-| `SignatureState` | <span data-ttu-id="d2803-135">string</span><span class="sxs-lookup"><span data-stu-id="d2803-135">string</span></span> | <span data-ttu-id="d2803-136">ファイル署名の状態: SignedValid - ファイルは有効な署名で署名されています。SignedInvalid - ファイルは署名されますが、証明書は無効です。Signeded - ファイルは署名されていない、不明 - ファイルに関する情報を取得できません</span><span class="sxs-lookup"><span data-stu-id="d2803-136">State of the file signature: SignedValid - the file is signed with a valid signature, SignedInvalid - the file is signed but the certificate is invalid, Unsigned - the file is not signed, Unknown - information about the file cannot be retrieved</span></span>
-| `IsExecutable` | <span data-ttu-id="d2803-137">ブール値</span><span class="sxs-lookup"><span data-stu-id="d2803-137">boolean</span></span> | <span data-ttu-id="d2803-138">ファイルがポータブル実行可能ファイル (PE) ファイルかどうか</span><span class="sxs-lookup"><span data-stu-id="d2803-138">Whether the file is a Portable Executable (PE) file</span></span> |
-| `ThreatName` | <span data-ttu-id="d2803-139">string</span><span class="sxs-lookup"><span data-stu-id="d2803-139">string</span></span> | <span data-ttu-id="d2803-140">マルウェアまたは検出された他の脅威の検出名</span><span class="sxs-lookup"><span data-stu-id="d2803-140">Detection name for any malware or other threats found</span></span> |
-| `Publisher` | <span data-ttu-id="d2803-141">string</span><span class="sxs-lookup"><span data-stu-id="d2803-141">string</span></span> | <span data-ttu-id="d2803-142">ファイルを発行した組織の名前</span><span class="sxs-lookup"><span data-stu-id="d2803-142">Name of the organization that published the file</span></span> |
-| `SoftwareName` | <span data-ttu-id="d2803-143">string</span><span class="sxs-lookup"><span data-stu-id="d2803-143">string</span></span> | <span data-ttu-id="d2803-144">ソフトウェア製品の名前</span><span class="sxs-lookup"><span data-stu-id="d2803-144">Name of the software product</span></span> |
+| `SHA1` | <span data-ttu-id="042df-111">string</span><span class="sxs-lookup"><span data-stu-id="042df-111">string</span></span> | <span data-ttu-id="042df-112">記録されたアクションが適用されたファイルの SHA-1</span><span class="sxs-lookup"><span data-stu-id="042df-112">SHA-1 of the file that the recorded action was applied to</span></span> |
+| `SHA256` | <span data-ttu-id="042df-113">文字列</span><span class="sxs-lookup"><span data-stu-id="042df-113">string</span></span> | <span data-ttu-id="042df-114">記録されたアクションが適用されたファイルの SHA-256</span><span class="sxs-lookup"><span data-stu-id="042df-114">SHA-256 of the file that the recorded action was applied to</span></span> |
+| `MD5` | <span data-ttu-id="042df-115">string</span><span class="sxs-lookup"><span data-stu-id="042df-115">string</span></span> | <span data-ttu-id="042df-116">記録されたアクションが適用されたファイルの MD5 ハッシュ</span><span class="sxs-lookup"><span data-stu-id="042df-116">MD5 hash of the file that the recorded action was applied to</span></span> |
+| `FileSize` | <span data-ttu-id="042df-117">int</span><span class="sxs-lookup"><span data-stu-id="042df-117">int</span></span> | <span data-ttu-id="042df-118">ファイルのサイズ (バイト単位)</span><span class="sxs-lookup"><span data-stu-id="042df-118">Size of the file in bytes</span></span> |
+| `GlobalPrevalence` | <span data-ttu-id="042df-119">int</span><span class="sxs-lookup"><span data-stu-id="042df-119">int</span></span> | <span data-ttu-id="042df-120">Microsoft がグローバルに観察したエンティティのインスタンス数</span><span class="sxs-lookup"><span data-stu-id="042df-120">Number of instances of the entity observed by Microsoft globally</span></span> |
+| `GlobalFirstSeen` | <span data-ttu-id="042df-121">日付型</span><span class="sxs-lookup"><span data-stu-id="042df-121">datetime</span></span> | <span data-ttu-id="042df-122">エンティティが最初に Microsoft によってグローバルに観察された日時</span><span class="sxs-lookup"><span data-stu-id="042df-122">Date and time when the entity was first observed by Microsoft globally</span></span> |
+| `GlobalLastSeen` | <span data-ttu-id="042df-123">日付型</span><span class="sxs-lookup"><span data-stu-id="042df-123">datetime</span></span> | <span data-ttu-id="042df-124">エンティティが Microsoft によってグローバルに最後に観察された日時</span><span class="sxs-lookup"><span data-stu-id="042df-124">Date and time when the entity was last observed by Microsoft globally</span></span> |
+| `Signer` | <span data-ttu-id="042df-125">string</span><span class="sxs-lookup"><span data-stu-id="042df-125">string</span></span> | <span data-ttu-id="042df-126">ファイルの署名者に関する情報</span><span class="sxs-lookup"><span data-stu-id="042df-126">Information about the signer of the file</span></span> |
+| `Issuer` | <span data-ttu-id="042df-127">string</span><span class="sxs-lookup"><span data-stu-id="042df-127">string</span></span> | <span data-ttu-id="042df-128">発行元証明機関 (CA) に関する情報</span><span class="sxs-lookup"><span data-stu-id="042df-128">Information about the issuing certificate authority (CA)</span></span> |
+| `SignerHash` | <span data-ttu-id="042df-129">string</span><span class="sxs-lookup"><span data-stu-id="042df-129">string</span></span> | <span data-ttu-id="042df-130">署名者を識別する一意のハッシュ値</span><span class="sxs-lookup"><span data-stu-id="042df-130">Unique hash value identifying the signer</span></span> |
+| `IsCertificateValid` | <span data-ttu-id="042df-131">boolean</span><span class="sxs-lookup"><span data-stu-id="042df-131">boolean</span></span> | <span data-ttu-id="042df-132">ファイルの署名に使用する証明書が有効かどうか</span><span class="sxs-lookup"><span data-stu-id="042df-132">Whether the certificate used to sign the file is valid</span></span> |
+| `IsRootSignerMicrosoft` | <span data-ttu-id="042df-133">boolean</span><span class="sxs-lookup"><span data-stu-id="042df-133">boolean</span></span> | <span data-ttu-id="042df-134">ルート証明書の署名者が Microsoft であるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="042df-134">Indicates whether the signer of the root certificate is Microsoft</span></span> |
+| `SignatureState` | <span data-ttu-id="042df-135">string</span><span class="sxs-lookup"><span data-stu-id="042df-135">string</span></span> | <span data-ttu-id="042df-136">ファイル署名の状態: SignedValid - ファイルは有効な署名で署名されています。SignedInvalid - ファイルは署名されますが、証明書は無効です。Signeded - ファイルは署名されていない、不明 - ファイルに関する情報を取得できません</span><span class="sxs-lookup"><span data-stu-id="042df-136">State of the file signature: SignedValid - the file is signed with a valid signature, SignedInvalid - the file is signed but the certificate is invalid, Unsigned - the file is not signed, Unknown - information about the file cannot be retrieved</span></span>
+| `IsExecutable` | <span data-ttu-id="042df-137">boolean</span><span class="sxs-lookup"><span data-stu-id="042df-137">boolean</span></span> | <span data-ttu-id="042df-138">ファイルがポータブル実行可能ファイル (PE) ファイルかどうか</span><span class="sxs-lookup"><span data-stu-id="042df-138">Whether the file is a Portable Executable (PE) file</span></span> |
+| `ThreatName` | <span data-ttu-id="042df-139">string</span><span class="sxs-lookup"><span data-stu-id="042df-139">string</span></span> | <span data-ttu-id="042df-140">マルウェアまたは検出された他の脅威の検出名</span><span class="sxs-lookup"><span data-stu-id="042df-140">Detection name for any malware or other threats found</span></span> |
+| `Publisher` | <span data-ttu-id="042df-141">string</span><span class="sxs-lookup"><span data-stu-id="042df-141">string</span></span> | <span data-ttu-id="042df-142">ファイルを発行した組織の名前</span><span class="sxs-lookup"><span data-stu-id="042df-142">Name of the organization that published the file</span></span> |
+| `SoftwareName` | <span data-ttu-id="042df-143">string</span><span class="sxs-lookup"><span data-stu-id="042df-143">string</span></span> | <span data-ttu-id="042df-144">ソフトウェア製品の名前</span><span class="sxs-lookup"><span data-stu-id="042df-144">Name of the software product</span></span> |
 
-## <a name="syntax"></a><span data-ttu-id="d2803-145">構文</span><span class="sxs-lookup"><span data-stu-id="d2803-145">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="042df-145">構文</span><span class="sxs-lookup"><span data-stu-id="042df-145">Syntax</span></span>
 
 ```kusto
 invoke FileProfile(x,y)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="d2803-146">引数</span><span class="sxs-lookup"><span data-stu-id="d2803-146">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="042df-146">引数</span><span class="sxs-lookup"><span data-stu-id="042df-146">Arguments</span></span>
 
-- <span data-ttu-id="d2803-147">**x**—使用するファイル ID 列: 、、 を使用する関数は `SHA1` `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` 、指定されていない場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="d2803-147">**x**—file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1`, or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified</span></span>
-- <span data-ttu-id="d2803-148">**y**—エンリッチするレコードの数に制限、1 ~ 1000。指定されていない場合、関数は 100 を使用します。</span><span class="sxs-lookup"><span data-stu-id="d2803-148">**y**—limit to the number of records to enrich, 1-1000; function uses 100 if unspecified</span></span>
+- <span data-ttu-id="042df-147">**x**—使用するファイル ID 列: 、、 を使用する関数は `SHA1` `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` 、指定されていない場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="042df-147">**x**—file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1`, or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified</span></span>
+- <span data-ttu-id="042df-148">**y**—エンリッチするレコードの数に制限、1 ~ 1000。指定されていない場合、関数は 100 を使用します。</span><span class="sxs-lookup"><span data-stu-id="042df-148">**y**—limit to the number of records to enrich, 1-1000; function uses 100 if unspecified</span></span>
 
 
 >[!TIP]
-> <span data-ttu-id="d2803-149">エンリッチメント関数は、利用可能な場合にのみ補足情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="d2803-149">Enrichment functions will show supplemental information only when they are available.</span></span> <span data-ttu-id="d2803-150">情報の可用性はさまざまで、多くの要因に依存します。</span><span class="sxs-lookup"><span data-stu-id="d2803-150">Availability of information is varied and depends on a lot of factors.</span></span> <span data-ttu-id="d2803-151">クエリで FileProfile() を使用する場合、またはカスタム検出を作成する場合は、この点を考慮してください。</span><span class="sxs-lookup"><span data-stu-id="d2803-151">Make sure to consider this when using FileProfile() in your queries or in creating custom detections.</span></span> <span data-ttu-id="d2803-152">最良の結果を得る場合は、SHA1 で FileProfile() 関数を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="d2803-152">For best results, we recommend using the FileProfile() function with SHA1.</span></span>
+> <span data-ttu-id="042df-149">エンリッチメント関数は、利用可能な場合にのみ補足情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="042df-149">Enrichment functions will show supplemental information only when they are available.</span></span> <span data-ttu-id="042df-150">情報の可用性はさまざまで、多くの要因に依存します。</span><span class="sxs-lookup"><span data-stu-id="042df-150">Availability of information is varied and depends on a lot of factors.</span></span> <span data-ttu-id="042df-151">クエリで FileProfile() を使用する場合、またはカスタム検出を作成する場合は、この点を考慮してください。</span><span class="sxs-lookup"><span data-stu-id="042df-151">Make sure to consider this when using FileProfile() in your queries or in creating custom detections.</span></span> <span data-ttu-id="042df-152">最良の結果を得る場合は、SHA1 で FileProfile() 関数を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="042df-152">For best results, we recommend using the FileProfile() function with SHA1.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d2803-153">例</span><span class="sxs-lookup"><span data-stu-id="d2803-153">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="042df-153">例</span><span class="sxs-lookup"><span data-stu-id="042df-153">Examples</span></span>
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a><span data-ttu-id="d2803-154">SHA1 列のみを投影してエンリッチする</span><span class="sxs-lookup"><span data-stu-id="d2803-154">Project only the SHA1 column and enrich it</span></span>
+### <a name="project-only-the-sha1-column-and-enrich-it"></a><span data-ttu-id="042df-154">Project SHA1 列のみを選択してエンリッチする</span><span class="sxs-lookup"><span data-stu-id="042df-154">Project only the SHA1 column and enrich it</span></span>
 
 ```kusto
 DeviceFileEvents
@@ -84,7 +84,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a><span data-ttu-id="d2803-155">最初の 500 レコードを強化し、低普及率のファイルを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="d2803-155">Enrich the first 500 records and list low-prevalence files</span></span>
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a><span data-ttu-id="042df-155">最初の 500 レコードを強化し、低普及率のファイルを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="042df-155">Enrich the first 500 records and list low-prevalence files</span></span>
 
 ```kusto
 DeviceFileEvents
@@ -94,8 +94,8 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="d2803-156">関連項目</span><span class="sxs-lookup"><span data-stu-id="d2803-156">Related topics</span></span>
-- [<span data-ttu-id="d2803-157">高度な追求の概要</span><span class="sxs-lookup"><span data-stu-id="d2803-157">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="d2803-158">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="d2803-158">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="d2803-159">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="d2803-159">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="d2803-160">クエリの例を追加する</span><span class="sxs-lookup"><span data-stu-id="d2803-160">Get more query examples</span></span>](advanced-hunting-shared-queries.md)
+## <a name="related-topics"></a><span data-ttu-id="042df-156">関連項目</span><span class="sxs-lookup"><span data-stu-id="042df-156">Related topics</span></span>
+- [<span data-ttu-id="042df-157">高度な追求の概要</span><span class="sxs-lookup"><span data-stu-id="042df-157">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="042df-158">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="042df-158">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="042df-159">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="042df-159">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="042df-160">クエリの例を追加する</span><span class="sxs-lookup"><span data-stu-id="042df-160">Get more query examples</span></span>](advanced-hunting-shared-queries.md)

@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298880"
 ---
-# <a name="contact-support-for-falkland-islands"></a><span data-ttu-id="52b70-103">フォークランド諸島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="52b70-103">Contact support for Falkland Islands</span></span>
+# <a name="contact-support-for-falkland-islands"></a><span data-ttu-id="586aa-103">フォークランド諸島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="586aa-103">Contact support for Falkland Islands</span></span>
 
-<span data-ttu-id="52b70-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="52b70-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="586aa-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="586aa-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="52b70-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="52b70-105">Phone number</span></span>
-<span data-ttu-id="52b70-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="52b70-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="586aa-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="586aa-105">Phone number</span></span>
+<span data-ttu-id="586aa-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="586aa-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="52b70-107">時間</span><span class="sxs-lookup"><span data-stu-id="52b70-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="52b70-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="52b70-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="586aa-107">時間</span><span class="sxs-lookup"><span data-stu-id="586aa-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="586aa-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="586aa-108">Billing Support:</span></span>
 
-<span data-ttu-id="52b70-109">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="52b70-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="586aa-109">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="586aa-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="52b70-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="52b70-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="586aa-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="586aa-110">Technical Support:</span></span>
 
-<span data-ttu-id="52b70-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="52b70-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="586aa-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="586aa-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="52b70-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="52b70-112">International call charges apply</span></span>
+<span data-ttu-id="586aa-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="586aa-112">International call charges apply</span></span>

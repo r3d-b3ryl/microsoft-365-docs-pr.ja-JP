@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297826"
 ---
-# <a name="contact-support-for-romania"></a><span data-ttu-id="64e40-103">ルーマニアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="64e40-103">Contact support for Romania</span></span>
+# <a name="contact-support-for-romania"></a><span data-ttu-id="cc267-103">ルーマニアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="cc267-103">Contact support for Romania</span></span>
 
-<span data-ttu-id="64e40-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="64e40-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="cc267-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="cc267-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="64e40-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="64e40-105">Phone number</span></span>
-<span data-ttu-id="64e40-106">0800 896 956</span><span class="sxs-lookup"><span data-stu-id="64e40-106">0800 896 956</span></span>
+## <a name="phone-number"></a><span data-ttu-id="cc267-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="cc267-105">Phone number</span></span>
+<span data-ttu-id="cc267-106">0800 896 956</span><span class="sxs-lookup"><span data-stu-id="cc267-106">0800 896 956</span></span>
 
-## <a name="hours"></a><span data-ttu-id="64e40-107">時間</span><span class="sxs-lookup"><span data-stu-id="64e40-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="64e40-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="64e40-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="cc267-107">時間</span><span class="sxs-lookup"><span data-stu-id="cc267-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="cc267-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="cc267-108">Billing Support:</span></span>
 
-<span data-ttu-id="64e40-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="64e40-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="cc267-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="cc267-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="64e40-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="64e40-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="cc267-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="cc267-110">Technical Support:</span></span>
 
-<span data-ttu-id="64e40-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="64e40-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="cc267-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="cc267-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="64e40-112">代替電話番号: 372 741 961</span><span class="sxs-lookup"><span data-stu-id="64e40-112">Alternative Phone Number: 372 741 961</span></span>
+<span data-ttu-id="cc267-112">代替電話番号: 372 741 961</span><span class="sxs-lookup"><span data-stu-id="cc267-112">Alternative Phone Number: 372 741 961</span></span>
 
-<span data-ttu-id="64e40-113">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="64e40-113">Local call charges apply</span></span>
+<span data-ttu-id="cc267-113">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="cc267-113">Local call charges apply</span></span>

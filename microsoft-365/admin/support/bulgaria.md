@@ -19,18 +19,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296421"
 ---
-# <a name="contact-support-for-bulgaria"></a><span data-ttu-id="ac19b-103">ブルガリアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="ac19b-103">Contact support for Bulgaria</span></span>
+# <a name="contact-support-for-bulgaria"></a><span data-ttu-id="6a8be-103">ブルガリアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="6a8be-103">Contact support for Bulgaria</span></span>
 
-<span data-ttu-id="ac19b-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="ac19b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="6a8be-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="6a8be-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="ac19b-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="ac19b-105">Phone number</span></span>
-<span data-ttu-id="ac19b-106">00800 118 4446</span><span class="sxs-lookup"><span data-stu-id="ac19b-106">00800 118 4446</span></span>
+## <a name="phone-number"></a><span data-ttu-id="6a8be-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="6a8be-105">Phone number</span></span>
+<span data-ttu-id="6a8be-106">00800 118 4446</span><span class="sxs-lookup"><span data-stu-id="6a8be-106">00800 118 4446</span></span>
 
-## <a name="hours"></a><span data-ttu-id="ac19b-107">時間</span><span class="sxs-lookup"><span data-stu-id="ac19b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="ac19b-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="ac19b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="6a8be-107">時間</span><span class="sxs-lookup"><span data-stu-id="6a8be-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="6a8be-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="6a8be-108">Billing Support:</span></span>
 
-<span data-ttu-id="ac19b-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="ac19b-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="6a8be-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="6a8be-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="ac19b-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="ac19b-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="6a8be-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="6a8be-110">Technical Support:</span></span>
 
-<span data-ttu-id="ac19b-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="ac19b-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="6a8be-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="6a8be-111">English: 24 hours a day, 7 days a week</span></span>

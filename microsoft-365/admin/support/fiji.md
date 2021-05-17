@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298868"
 ---
-# <a name="contact-support-for-fiji"></a><span data-ttu-id="95fef-103">フィジーのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="95fef-103">Contact support for Fiji</span></span>
+# <a name="contact-support-for-fiji"></a><span data-ttu-id="c99cd-103">フィジーのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="c99cd-103">Contact support for Fiji</span></span>
 
-<span data-ttu-id="95fef-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="95fef-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="c99cd-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="c99cd-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="95fef-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="95fef-105">Phone number</span></span>
-<span data-ttu-id="95fef-106">004 890 1001</span><span class="sxs-lookup"><span data-stu-id="95fef-106">004 890 1001</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c99cd-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="c99cd-105">Phone number</span></span>
+<span data-ttu-id="c99cd-106">004 890 1001</span><span class="sxs-lookup"><span data-stu-id="c99cd-106">004 890 1001</span></span>
 
-<span data-ttu-id="95fef-107">ダイヤル後に、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="95fef-107">After dialing, enter</span></span>
+<span data-ttu-id="c99cd-107">ダイヤル後に、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="c99cd-107">After dialing, enter</span></span>
 
-<span data-ttu-id="95fef-108">877 860 4596</span><span class="sxs-lookup"><span data-stu-id="95fef-108">877 860 4596</span></span>
+<span data-ttu-id="c99cd-108">877 860 4596</span><span class="sxs-lookup"><span data-stu-id="c99cd-108">877 860 4596</span></span>
 
-## <a name="hours"></a><span data-ttu-id="95fef-109">時間</span><span class="sxs-lookup"><span data-stu-id="95fef-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="95fef-110">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="95fef-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c99cd-109">時間</span><span class="sxs-lookup"><span data-stu-id="c99cd-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c99cd-110">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="c99cd-110">Billing Support:</span></span>
 
-<span data-ttu-id="95fef-111">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="95fef-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c99cd-111">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="c99cd-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="95fef-112">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="95fef-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c99cd-112">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="c99cd-112">Technical Support:</span></span>
 
-<span data-ttu-id="95fef-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="95fef-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c99cd-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="c99cd-113">English: 24 hours a day, 7 days a week</span></span>

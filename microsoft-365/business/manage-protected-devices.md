@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premium で保護されたデバイスを管理する
+title: 保護されたデバイスを管理するには、Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: 保護ポリシーによって管理されるデバイスから会社のデータを削除し、Windows 10 デバイスを工場出荷時の設定にリセットする方法について説明します。
+description: 保護ポリシーによって管理されるデバイスから会社のデータを削除する方法と、デバイスを工場出荷時のWindows 10にリセットする方法について説明します。
 ms.openlocfilehash: fdd92e797774a47455d6b4163dfe399bf74d41f3
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,14 +34,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580156"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a><span data-ttu-id="4afe3-103">Microsoft 365 Business Premium で保護されたデバイスを管理する</span><span class="sxs-lookup"><span data-stu-id="4afe3-103">Manage protected devices with Microsoft 365 Business Premium</span></span>
+# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a><span data-ttu-id="1f722-103">保護されたデバイスを管理するには、Microsoft 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="1f722-103">Manage protected devices with Microsoft 365 Business Premium</span></span>
 
-<span data-ttu-id="4afe3-104">ユーザーが自分の仕事用アカウントでデバイスにサインインするか、デバイス上の Office アプリにサインインしてデバイスを組織に接続した後、セットアップしたポリシーでデバイスを保護できます。</span><span class="sxs-lookup"><span data-stu-id="4afe3-104">After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up.</span></span> <span data-ttu-id="4afe3-105">接続されているデバイスは、[デバイス] ページ **に表示** されます。</span><span class="sxs-lookup"><span data-stu-id="4afe3-105">Connected devices are listed on the **Devices** page.</span></span> <span data-ttu-id="4afe3-106">デバイスが紛失または盗難に遭った場合は、このページからデバイスを管理して、会社のデータを削除できます。</span><span class="sxs-lookup"><span data-stu-id="4afe3-106">If a device is lost or stolen, you can manage it from this page to remove any company data.</span></span> <span data-ttu-id="4afe3-107">また、Windows 10 デバイスを工場出荷時の設定にリセットして、カスタム設定を消去することもできます。</span><span class="sxs-lookup"><span data-stu-id="4afe3-107">You can also reset Windows 10 devices to their factory settings to wipe out any custom settings.</span></span> 
+<span data-ttu-id="1f722-104">ユーザーが自分の仕事用アカウントでデバイスにサインインするか、デバイス上の Office アプリにサインインしてデバイスを組織に接続した後、セットアップしたポリシーでデバイスを保護できます。</span><span class="sxs-lookup"><span data-stu-id="1f722-104">After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up.</span></span> <span data-ttu-id="1f722-105">接続されているデバイスは、[デバイス] ページ **に表示** されます。</span><span class="sxs-lookup"><span data-stu-id="1f722-105">Connected devices are listed on the **Devices** page.</span></span> <span data-ttu-id="1f722-106">デバイスが紛失または盗難に遭った場合は、このページからデバイスを管理して、会社のデータを削除できます。</span><span class="sxs-lookup"><span data-stu-id="1f722-106">If a device is lost or stolen, you can manage it from this page to remove any company data.</span></span> <span data-ttu-id="1f722-107">また、デバイスのWindows 10工場出荷時の設定にリセットして、カスタム設定を消去することもできます。</span><span class="sxs-lookup"><span data-stu-id="1f722-107">You can also reset Windows 10 devices to their factory settings to wipe out any custom settings.</span></span> 
 
-<span data-ttu-id="4afe3-108">デバイスの管理に使用できるタスクの詳細については、次の記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4afe3-108">For more information on the tasks you can use to manage devices, see these articles:</span></span> 
+<span data-ttu-id="1f722-108">デバイスの管理に使用できるタスクの詳細については、次の記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f722-108">For more information on the tasks you can use to manage devices, see these articles:</span></span> 
   
-[<span data-ttu-id="4afe3-109">デバイスから会社のデータを削除する</span><span class="sxs-lookup"><span data-stu-id="4afe3-109">Remove company data from devices</span></span>](remove-company-data.md)
+[<span data-ttu-id="1f722-109">デバイスから会社のデータを削除する</span><span class="sxs-lookup"><span data-stu-id="1f722-109">Remove company data from devices</span></span>](remove-company-data.md)
   
-[<span data-ttu-id="4afe3-110">Windows 10 デバイスを出荷時の設定にリセットする</span><span class="sxs-lookup"><span data-stu-id="4afe3-110">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
+[<span data-ttu-id="1f722-110">Windows 10 デバイスを出荷時の設定にリセットする</span><span class="sxs-lookup"><span data-stu-id="1f722-110">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
 
-[<span data-ttu-id="4afe3-111">管理対象デバイスの追加</span><span class="sxs-lookup"><span data-stu-id="4afe3-111">Add a managed device</span></span>](./app-protection-settings-for-android-and-ios.md)
+[<span data-ttu-id="1f722-111">管理対象デバイスの追加</span><span class="sxs-lookup"><span data-stu-id="1f722-111">Add a managed device</span></span>](./app-protection-settings-for-android-and-ios.md)

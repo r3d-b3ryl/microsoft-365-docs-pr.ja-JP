@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296685"
 ---
-# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="bdd32-103">Aland Islands のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="bdd32-103">Contact support for Aland Islands</span></span>
+# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="0c683-103">Aland Islands のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="0c683-103">Contact support for Aland Islands</span></span>
 
-<span data-ttu-id="bdd32-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="bdd32-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="0c683-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="0c683-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="bdd32-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="bdd32-105">Phone number</span></span>
-<span data-ttu-id="bdd32-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="bdd32-106">08009 8462</span></span>
+## <a name="phone-number"></a><span data-ttu-id="0c683-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="0c683-105">Phone number</span></span>
+<span data-ttu-id="0c683-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="0c683-106">08009 8462</span></span>
 
-## <a name="hours"></a><span data-ttu-id="bdd32-107">時間</span><span class="sxs-lookup"><span data-stu-id="bdd32-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="bdd32-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="bdd32-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="0c683-107">時間</span><span class="sxs-lookup"><span data-stu-id="0c683-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="0c683-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="0c683-108">Billing Support:</span></span>
 
-<span data-ttu-id="bdd32-109">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="bdd32-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="0c683-109">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="0c683-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="bdd32-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="bdd32-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="0c683-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="0c683-110">Technical Support:</span></span>
 
-<span data-ttu-id="bdd32-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="bdd32-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="0c683-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="0c683-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="bdd32-112">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="bdd32-112">Local call charges apply</span></span>
+<span data-ttu-id="0c683-112">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="0c683-112">Local call charges apply</span></span>

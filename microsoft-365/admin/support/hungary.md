@@ -19,24 +19,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298649"
 ---
-# <a name="contact-support-for-hungary"></a><span data-ttu-id="ec58b-103">ハンガリーのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="ec58b-103">Contact support for Hungary</span></span>
+# <a name="contact-support-for-hungary"></a><span data-ttu-id="5faa1-103">ハンガリーのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="5faa1-103">Contact support for Hungary</span></span>
 
-<span data-ttu-id="ec58b-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="ec58b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="5faa1-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="5faa1-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="ec58b-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="ec58b-105">Phone number</span></span>
-<span data-ttu-id="ec58b-106">+36 80 983 899</span><span class="sxs-lookup"><span data-stu-id="ec58b-106">+36 80 983 899</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5faa1-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="5faa1-105">Phone number</span></span>
+<span data-ttu-id="5faa1-106">+36 80 983 899</span><span class="sxs-lookup"><span data-stu-id="5faa1-106">+36 80 983 899</span></span>
 
-## <a name="hours"></a><span data-ttu-id="ec58b-107">時間</span><span class="sxs-lookup"><span data-stu-id="ec58b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="ec58b-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="ec58b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5faa1-107">時間</span><span class="sxs-lookup"><span data-stu-id="5faa1-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5faa1-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="5faa1-108">Billing Support:</span></span>
 
-<span data-ttu-id="ec58b-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="ec58b-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="5faa1-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="5faa1-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="ec58b-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="ec58b-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5faa1-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="5faa1-110">Technical Support:</span></span>
 
-<span data-ttu-id="ec58b-111">ハンガリー: Mon-Fri午前 8 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="ec58b-111">Hungarian: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="5faa1-111">ハンガリー: Mon-Fri午前 8 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="5faa1-111">Hungarian: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="ec58b-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="ec58b-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5faa1-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="5faa1-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="ec58b-113">代替電話番号: +36 1 778 9292</span><span class="sxs-lookup"><span data-stu-id="ec58b-113">Alternative Phone Number: +36 1 778 9292</span></span>
+<span data-ttu-id="5faa1-113">代替電話番号: +36 1 778 9292</span><span class="sxs-lookup"><span data-stu-id="5faa1-113">Alternative Phone Number: +36 1 778 9292</span></span>
 
-<span data-ttu-id="ec58b-114">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="ec58b-114">Local call charges apply</span></span>
+<span data-ttu-id="5faa1-114">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="5faa1-114">Local call charges apply</span></span>

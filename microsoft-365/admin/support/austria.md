@@ -19,26 +19,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296601"
 ---
-# <a name="contact-support-for-austria"></a><span data-ttu-id="bd8bf-103">オーストリアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="bd8bf-103">Contact support for Austria</span></span>
+# <a name="contact-support-for-austria"></a><span data-ttu-id="403a1-103">オーストリアのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="403a1-103">Contact support for Austria</span></span>
 
-<span data-ttu-id="bd8bf-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="bd8bf-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="403a1-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="403a1-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="bd8bf-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="bd8bf-105">Phone number</span></span>
-<span data-ttu-id="bd8bf-106">0800 080 650</span><span class="sxs-lookup"><span data-stu-id="bd8bf-106">0800 080 650</span></span>
+## <a name="phone-number"></a><span data-ttu-id="403a1-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="403a1-105">Phone number</span></span>
+<span data-ttu-id="403a1-106">0800 080 650</span><span class="sxs-lookup"><span data-stu-id="403a1-106">0800 080 650</span></span>
 
-## <a name="hours"></a><span data-ttu-id="bd8bf-107">時間</span><span class="sxs-lookup"><span data-stu-id="bd8bf-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="bd8bf-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="bd8bf-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="403a1-107">時間</span><span class="sxs-lookup"><span data-stu-id="403a1-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="403a1-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="403a1-108">Billing Support:</span></span>
 
-<span data-ttu-id="bd8bf-109">ドイツ語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="bd8bf-109">German: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="403a1-109">ドイツ語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="403a1-109">German: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="bd8bf-110">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="bd8bf-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="403a1-110">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="403a1-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="bd8bf-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="bd8bf-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="403a1-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="403a1-111">Technical Support:</span></span>
 
-<span data-ttu-id="bd8bf-112">ドイツ語: Mon-Fri午前 8 時から午後 9 時</span><span class="sxs-lookup"><span data-stu-id="bd8bf-112">German: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="403a1-112">ドイツ語: Mon-Fri午前 8 時から午後 9 時</span><span class="sxs-lookup"><span data-stu-id="403a1-112">German: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="bd8bf-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="bd8bf-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="403a1-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="403a1-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="bd8bf-114">代替電話番号: 01 206 09 15 78</span><span class="sxs-lookup"><span data-stu-id="bd8bf-114">Alternative Phone Number: 01 206 09 15 78</span></span>
+<span data-ttu-id="403a1-114">代替電話番号: 01 206 09 15 78</span><span class="sxs-lookup"><span data-stu-id="403a1-114">Alternative Phone Number: 01 206 09 15 78</span></span>
 
-<span data-ttu-id="bd8bf-115">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="bd8bf-115">Local call charges apply</span></span>
+<span data-ttu-id="403a1-115">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="403a1-115">Local call charges apply</span></span>

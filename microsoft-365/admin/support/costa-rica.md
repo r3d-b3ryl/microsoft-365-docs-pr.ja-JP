@@ -19,18 +19,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296313"
 ---
-# <a name="contact-support-for-costa-rica"></a><span data-ttu-id="92044-103">コスタリカのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="92044-103">Contact support for Costa Rica</span></span>
+# <a name="contact-support-for-costa-rica"></a><span data-ttu-id="a2512-103">コスタリカのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="a2512-103">Contact support for Costa Rica</span></span>
 
-<span data-ttu-id="92044-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="92044-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="a2512-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="a2512-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="92044-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="92044-105">Phone number</span></span>
-<span data-ttu-id="92044-106">0800 012 1447</span><span class="sxs-lookup"><span data-stu-id="92044-106">0800 012 1447</span></span>
+## <a name="phone-number"></a><span data-ttu-id="a2512-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="a2512-105">Phone number</span></span>
+<span data-ttu-id="a2512-106">0800 012 1447</span><span class="sxs-lookup"><span data-stu-id="a2512-106">0800 012 1447</span></span>
 
-## <a name="hours"></a><span data-ttu-id="92044-107">時間</span><span class="sxs-lookup"><span data-stu-id="92044-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="92044-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="92044-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="a2512-107">時間</span><span class="sxs-lookup"><span data-stu-id="a2512-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="a2512-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="a2512-108">Billing Support:</span></span>
 
-<span data-ttu-id="92044-109">スペイン語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="92044-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="a2512-109">スペイン語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="a2512-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="92044-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="92044-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="a2512-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="a2512-110">Technical Support:</span></span>
 
-<span data-ttu-id="92044-111">スペイン語: 24 時間、週 7 日</span><span class="sxs-lookup"><span data-stu-id="92044-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="a2512-111">スペイン語: 24 時間、週 7 日</span><span class="sxs-lookup"><span data-stu-id="a2512-111">Spanish: 24 hours a day, 7 days a week</span></span>

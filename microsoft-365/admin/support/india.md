@@ -19,24 +19,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298637"
 ---
-# <a name="contact-support-for-india"></a><span data-ttu-id="fa8af-103">インドのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="fa8af-103">Contact support for India</span></span>
+# <a name="contact-support-for-india"></a><span data-ttu-id="f13a4-103">インドのサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="f13a4-103">Contact support for India</span></span>
 
-<span data-ttu-id="fa8af-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="fa8af-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="f13a4-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="f13a4-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="fa8af-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="fa8af-105">Phone number</span></span>
-<span data-ttu-id="fa8af-106">000 800 440 2038</span><span class="sxs-lookup"><span data-stu-id="fa8af-106">000 800 440 2038</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f13a4-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="f13a4-105">Phone number</span></span>
+<span data-ttu-id="f13a4-106">000 800 440 2038</span><span class="sxs-lookup"><span data-stu-id="f13a4-106">000 800 440 2038</span></span>
 
-<span data-ttu-id="fa8af-107">地域のフリーダイヤル</span><span class="sxs-lookup"><span data-stu-id="fa8af-107">Local toll-free</span></span>
+<span data-ttu-id="f13a4-107">地域のフリーダイヤル</span><span class="sxs-lookup"><span data-stu-id="f13a4-107">Local toll-free</span></span>
 
-## <a name="hours"></a><span data-ttu-id="fa8af-108">時間</span><span class="sxs-lookup"><span data-stu-id="fa8af-108">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="fa8af-109">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="fa8af-109">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f13a4-108">時間</span><span class="sxs-lookup"><span data-stu-id="f13a4-108">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f13a4-109">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="f13a4-109">Billing Support:</span></span>
 
-<span data-ttu-id="fa8af-110">英語: Mon-Fri午前 9 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="fa8af-110">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="f13a4-110">英語: Mon-Fri午前 9 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="f13a4-110">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="fa8af-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="fa8af-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f13a4-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="f13a4-111">Technical Support:</span></span>
 
-<span data-ttu-id="fa8af-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="fa8af-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f13a4-112">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="f13a4-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="fa8af-113">代替電話番号: 1800 200 2052</span><span class="sxs-lookup"><span data-stu-id="fa8af-113">Alternative Phone Number: 1800 200 2052</span></span>
+<span data-ttu-id="f13a4-113">代替電話番号: 1800 200 2052</span><span class="sxs-lookup"><span data-stu-id="f13a4-113">Alternative Phone Number: 1800 200 2052</span></span>
 
-<span data-ttu-id="fa8af-114">地域のフリーダイヤル</span><span class="sxs-lookup"><span data-stu-id="fa8af-114">Local toll-free</span></span>
+<span data-ttu-id="f13a4-114">地域のフリーダイヤル</span><span class="sxs-lookup"><span data-stu-id="f13a4-114">Local toll-free</span></span>

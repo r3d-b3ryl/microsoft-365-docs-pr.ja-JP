@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298018"
 ---
-# <a name="contact-support-for-montserrat"></a><span data-ttu-id="e8610-103">Montserrat のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="e8610-103">Contact support for Montserrat</span></span>
+# <a name="contact-support-for-montserrat"></a><span data-ttu-id="15563-103">Montserrat のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="15563-103">Contact support for Montserrat</span></span>
 
-<span data-ttu-id="e8610-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="e8610-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="15563-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="15563-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="e8610-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="e8610-105">Phone number</span></span>
-<span data-ttu-id="e8610-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="e8610-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="15563-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="15563-105">Phone number</span></span>
+<span data-ttu-id="15563-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="15563-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="e8610-107">時間</span><span class="sxs-lookup"><span data-stu-id="e8610-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="e8610-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="e8610-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="15563-107">時間</span><span class="sxs-lookup"><span data-stu-id="15563-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="15563-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="15563-108">Billing Support:</span></span>
 
-<span data-ttu-id="e8610-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="e8610-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="15563-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="15563-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="e8610-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="e8610-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="15563-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="15563-110">Technical Support:</span></span>
 
-<span data-ttu-id="e8610-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="e8610-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="15563-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="15563-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="e8610-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="e8610-112">International call charges apply</span></span>
+<span data-ttu-id="15563-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="15563-112">International call charges apply</span></span>

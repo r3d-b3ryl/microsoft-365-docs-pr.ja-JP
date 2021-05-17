@@ -19,18 +19,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296529"
 ---
-# <a name="contact-support-for-bermuda"></a><span data-ttu-id="1aadb-103">バミューダ諸島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="1aadb-103">Contact support for Bermuda</span></span>
+# <a name="contact-support-for-bermuda"></a><span data-ttu-id="4a68f-103">バミューダ諸島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="4a68f-103">Contact support for Bermuda</span></span>
 
-<span data-ttu-id="1aadb-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="1aadb-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="4a68f-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="4a68f-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="1aadb-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="1aadb-105">Phone number</span></span>
-<span data-ttu-id="1aadb-106">1 877 639 9636</span><span class="sxs-lookup"><span data-stu-id="1aadb-106">1 877 639 9636</span></span>
+## <a name="phone-number"></a><span data-ttu-id="4a68f-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="4a68f-105">Phone number</span></span>
+<span data-ttu-id="4a68f-106">1 877 639 9636</span><span class="sxs-lookup"><span data-stu-id="4a68f-106">1 877 639 9636</span></span>
 
-## <a name="hours"></a><span data-ttu-id="1aadb-107">時間</span><span class="sxs-lookup"><span data-stu-id="1aadb-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="1aadb-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="1aadb-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="4a68f-107">時間</span><span class="sxs-lookup"><span data-stu-id="4a68f-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="4a68f-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="4a68f-108">Billing Support:</span></span>
 
-<span data-ttu-id="1aadb-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="1aadb-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="4a68f-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="4a68f-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="1aadb-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="1aadb-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="4a68f-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="4a68f-110">Technical Support:</span></span>
 
-<span data-ttu-id="1aadb-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="1aadb-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="4a68f-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="4a68f-111">English: 24 hours a day, 7 days a week</span></span>

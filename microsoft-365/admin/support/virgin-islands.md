@@ -19,18 +19,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297430"
 ---
-# <a name="contact-support-for-virgin-islands-us"></a><span data-ttu-id="e94b2-103">米国領バージン諸島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="e94b2-103">Contact support for Virgin Islands, US</span></span>
+# <a name="contact-support-for-virgin-islands-us"></a><span data-ttu-id="b247d-103">米国領バージン諸島のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="b247d-103">Contact support for Virgin Islands, US</span></span>
 
-<span data-ttu-id="e94b2-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="e94b2-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="b247d-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="b247d-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="e94b2-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="e94b2-105">Phone number</span></span>
-<span data-ttu-id="e94b2-106">800 865 9408</span><span class="sxs-lookup"><span data-stu-id="e94b2-106">800 865 9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b247d-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="b247d-105">Phone number</span></span>
+<span data-ttu-id="b247d-106">800 865 9408</span><span class="sxs-lookup"><span data-stu-id="b247d-106">800 865 9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="e94b2-107">時間</span><span class="sxs-lookup"><span data-stu-id="e94b2-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="e94b2-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="e94b2-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b247d-107">時間</span><span class="sxs-lookup"><span data-stu-id="b247d-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b247d-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="b247d-108">Billing Support:</span></span>
 
-<span data-ttu-id="e94b2-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="e94b2-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="b247d-109">英語: Mon-Fri午前 9 時から午後 5 時</span><span class="sxs-lookup"><span data-stu-id="b247d-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="e94b2-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="e94b2-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b247d-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="b247d-110">Technical Support:</span></span>
 
-<span data-ttu-id="e94b2-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="e94b2-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b247d-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="b247d-111">English: 24 hours a day, 7 days a week</span></span>

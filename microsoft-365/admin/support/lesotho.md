@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298435"
 ---
-# <a name="contact-support-for-lesotho"></a><span data-ttu-id="b06d5-103">Lesotho のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="b06d5-103">Contact support for Lesotho</span></span>
+# <a name="contact-support-for-lesotho"></a><span data-ttu-id="5c951-103">Lesotho のサポートに問い合わせ</span><span class="sxs-lookup"><span data-stu-id="5c951-103">Contact support for Lesotho</span></span>
 
-<span data-ttu-id="b06d5-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="b06d5-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="5c951-104">[別の国または地域を検索します](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="5c951-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b06d5-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="b06d5-105">Phone number</span></span>
-<span data-ttu-id="b06d5-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="b06d5-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5c951-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="5c951-105">Phone number</span></span>
+<span data-ttu-id="5c951-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="5c951-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b06d5-107">時間</span><span class="sxs-lookup"><span data-stu-id="b06d5-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b06d5-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="b06d5-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5c951-107">時間</span><span class="sxs-lookup"><span data-stu-id="5c951-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5c951-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="5c951-108">Billing Support:</span></span>
 
-<span data-ttu-id="b06d5-109">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="b06d5-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="5c951-109">英語: Mon-Fri午前 10 時から午後 6 時</span><span class="sxs-lookup"><span data-stu-id="5c951-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b06d5-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="b06d5-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5c951-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="5c951-110">Technical Support:</span></span>
 
-<span data-ttu-id="b06d5-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="b06d5-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5c951-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="5c951-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b06d5-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="b06d5-112">International call charges apply</span></span>
+<span data-ttu-id="5c951-112">国際通話料が適用される</span><span class="sxs-lookup"><span data-stu-id="5c951-112">International call charges apply</span></span>
